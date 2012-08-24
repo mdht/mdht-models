@@ -101,7 +101,6 @@ public class SubjectElementOperations extends ClinicalStatementOperations
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.23.17')
    * @param subjectElement The receiving '<em><b>Subject Element</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -111,6 +110,7 @@ public class SubjectElementOperations extends ClinicalStatementOperations
   
   public static  boolean validateSubjectElementTemplateId(SubjectElement subjectElement, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
+  	  
     if (VALIDATE_SUBJECT_ELEMENT_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(SdtmPackage.Literals.SUBJECT_ELEMENT);
@@ -135,6 +135,7 @@ public class SubjectElementOperations extends ClinicalStatementOperations
              org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "SubjectElementTemplateId", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(subjectElement, context) }),
              new Object [] { subjectElement }));
       }
+       
       return false;
     }
     return true;
@@ -166,7 +167,6 @@ public class SubjectElementOperations extends ClinicalStatementOperations
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.classCode=vocab::x_ActClassDocumentEntryAct::ACT
    * @param subjectElement The receiving '<em><b>Subject Element</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -176,6 +176,7 @@ public class SubjectElementOperations extends ClinicalStatementOperations
   
   public static  boolean validateSubjectElementClassCode(SubjectElement subjectElement, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
+  	  
     if (VALIDATE_SUBJECT_ELEMENT_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(SdtmPackage.Literals.SUBJECT_ELEMENT);
@@ -200,6 +201,7 @@ public class SubjectElementOperations extends ClinicalStatementOperations
              org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "SubjectElementClassCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(subjectElement, context) }),
              new Object [] { subjectElement }));
       }
+       
       return false;
     }
     return true;
@@ -231,7 +233,6 @@ public class SubjectElementOperations extends ClinicalStatementOperations
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * (self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined())
    * @param subjectElement The receiving '<em><b>Subject Element</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -241,6 +242,7 @@ public class SubjectElementOperations extends ClinicalStatementOperations
   
   public static  boolean validateSubjectElementCodeP(SubjectElement subjectElement, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
+  	  
     if (VALIDATE_SUBJECT_ELEMENT_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(SdtmPackage.Literals.SUBJECT_ELEMENT);
@@ -265,6 +267,7 @@ public class SubjectElementOperations extends ClinicalStatementOperations
              org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "SubjectElementCodeP", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(subjectElement, context) }),
              new Object [] { subjectElement }));
       }
+       
       return false;
     }
     return true;
@@ -298,9 +301,6 @@ public class SubjectElementOperations extends ClinicalStatementOperations
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * (self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and 
-   * let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in 
-   * value.codeSystem = '2.16.840.1.113883.3.26.1.1')
    * @param subjectElement The receiving '<em><b>Subject Element</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -310,6 +310,7 @@ public class SubjectElementOperations extends ClinicalStatementOperations
   
   public static  boolean validateSubjectElementCode(SubjectElement subjectElement, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
+  	  
     if (VALIDATE_SUBJECT_ELEMENT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(SdtmPackage.Literals.SUBJECT_ELEMENT);
@@ -334,6 +335,7 @@ public class SubjectElementOperations extends ClinicalStatementOperations
              org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "SubjectElementCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(subjectElement, context) }),
              new Object [] { subjectElement }));
       }
+       
       return false;
     }
     return true;
@@ -365,7 +367,6 @@ public class SubjectElementOperations extends ClinicalStatementOperations
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * (self.effectiveTime.oclIsUndefined() or self.effectiveTime.isNullFlavorUndefined()) implies (not self.effectiveTime.oclIsUndefined())
    * @param subjectElement The receiving '<em><b>Subject Element</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -375,6 +376,7 @@ public class SubjectElementOperations extends ClinicalStatementOperations
   
   public static  boolean validateSubjectElementEffectiveTime(SubjectElement subjectElement, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
+  	  
     if (VALIDATE_SUBJECT_ELEMENT_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(SdtmPackage.Literals.SUBJECT_ELEMENT);
@@ -399,6 +401,7 @@ public class SubjectElementOperations extends ClinicalStatementOperations
              org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "SubjectElementEffectiveTime", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(subjectElement, context) }),
              new Object [] { subjectElement }));
       }
+       
       return false;
     }
     return true;
@@ -430,7 +433,6 @@ public class SubjectElementOperations extends ClinicalStatementOperations
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * (self.id->isEmpty() or self.id->exists(element | element.isNullFlavorUndefined())) implies (self.id->size() = 1)
    * @param subjectElement The receiving '<em><b>Subject Element</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -440,6 +442,7 @@ public class SubjectElementOperations extends ClinicalStatementOperations
   
   public static  boolean validateSubjectElementId(SubjectElement subjectElement, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
+  	  
     if (VALIDATE_SUBJECT_ELEMENT_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(SdtmPackage.Literals.SUBJECT_ELEMENT);
@@ -464,6 +467,7 @@ public class SubjectElementOperations extends ClinicalStatementOperations
              org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "SubjectElementId", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(subjectElement, context) }),
              new Object [] { subjectElement }));
       }
+       
       return false;
     }
     return true;
@@ -495,7 +499,6 @@ public class SubjectElementOperations extends ClinicalStatementOperations
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.moodCode=vocab::x_DocumentActMood::EVN
    * @param subjectElement The receiving '<em><b>Subject Element</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -505,6 +508,7 @@ public class SubjectElementOperations extends ClinicalStatementOperations
   
   public static  boolean validateSubjectElementMoodCode(SubjectElement subjectElement, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
+  	  
     if (VALIDATE_SUBJECT_ELEMENT_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(SdtmPackage.Literals.SUBJECT_ELEMENT);
@@ -529,6 +533,7 @@ public class SubjectElementOperations extends ClinicalStatementOperations
              org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "SubjectElementMoodCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(subjectElement, context) }),
              new Object [] { subjectElement }));
       }
+       
       return false;
     }
     return true;
@@ -560,7 +565,6 @@ public class SubjectElementOperations extends ClinicalStatementOperations
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.entryRelationship->one(entryRelationship : cda::EntryRelationship | not entryRelationship.act.oclIsUndefined() and entryRelationship.act.oclIsKindOf(sdtm::Study Epoch) and entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::COMP)
    * @param subjectElement The receiving '<em><b>Subject Element</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -570,6 +574,7 @@ public class SubjectElementOperations extends ClinicalStatementOperations
   
   public static  boolean validateSubjectElementStudyEpoch(SubjectElement subjectElement, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
+  	  
     if (VALIDATE_SUBJECT_ELEMENT_STUDY_EPOCH__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(SdtmPackage.Literals.SUBJECT_ELEMENT);
@@ -594,6 +599,7 @@ public class SubjectElementOperations extends ClinicalStatementOperations
              org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "SubjectElementStudyEpoch", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(subjectElement, context) }),
              new Object [] { subjectElement }));
       }
+       
       return false;
     }
     return true;
@@ -625,7 +631,6 @@ public class SubjectElementOperations extends ClinicalStatementOperations
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.entryRelationship->one(entryRelationship : cda::EntryRelationship | not entryRelationship.oclIsUndefined() and entryRelationship.oclIsKindOf(cda::EntryRelationship))
    * @param subjectElement The receiving '<em><b>Subject Element</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -635,6 +640,7 @@ public class SubjectElementOperations extends ClinicalStatementOperations
   
   public static  boolean validateSubjectElementElementOrderAssociation(SubjectElement subjectElement, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
+  	  
     if (VALIDATE_SUBJECT_ELEMENT_ELEMENT_ORDER_ASSOCIATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(SdtmPackage.Literals.SUBJECT_ELEMENT);
@@ -659,6 +665,7 @@ public class SubjectElementOperations extends ClinicalStatementOperations
              org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "SubjectElementElementOrderAssociation", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(subjectElement, context) }),
              new Object [] { subjectElement }));
       }
+       
       return false;
     }
     return true;
@@ -690,7 +697,6 @@ public class SubjectElementOperations extends ClinicalStatementOperations
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.entryRelationship->excluding(null).observation->excluding(null)->reject(isDefined('classCode'))
    * @param subjectElement The receiving '<em><b>Subject Element</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -700,6 +706,7 @@ public class SubjectElementOperations extends ClinicalStatementOperations
   
   public static  boolean validateSubjectElementelementOrderAssociationelementOrderClassCode(SubjectElement subjectElement, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
+  	  
     if (VALIDATE_SUBJECT_ELEMENTELEMENT_ORDER_ASSOCIATIONELEMENT_ORDER_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(SdtmPackage.Literals.SUBJECT_ELEMENT);
@@ -724,6 +731,7 @@ public class SubjectElementOperations extends ClinicalStatementOperations
              org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "SubjectElementelementOrderAssociationelementOrderClassCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(subjectElement, context) }),
              new Object [] { subjectElement }));
       }
+       
       return false;
     }
     return true;
@@ -755,7 +763,6 @@ public class SubjectElementOperations extends ClinicalStatementOperations
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.entryRelationship->excluding(null).observation->excluding(null)->reject((code.oclIsUndefined() or code.isNullFlavorUndefined()) implies (not code.oclIsUndefined()))
    * @param subjectElement The receiving '<em><b>Subject Element</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -765,6 +772,7 @@ public class SubjectElementOperations extends ClinicalStatementOperations
   
   public static  boolean validateSubjectElementelementOrderAssociationelementOrderCodeP(SubjectElement subjectElement, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
+  	  
     if (VALIDATE_SUBJECT_ELEMENTELEMENT_ORDER_ASSOCIATIONELEMENT_ORDER_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(SdtmPackage.Literals.SUBJECT_ELEMENT);
@@ -789,6 +797,7 @@ public class SubjectElementOperations extends ClinicalStatementOperations
              org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "SubjectElementelementOrderAssociationelementOrderCodeP", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(subjectElement, context) }),
              new Object [] { subjectElement }));
       }
+       
       return false;
     }
     return true;
@@ -822,9 +831,6 @@ public class SubjectElementOperations extends ClinicalStatementOperations
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.entryRelationship->excluding(null).observation->excluding(null)->reject((code.oclIsUndefined() or code.isNullFlavorUndefined()) implies (not code.oclIsUndefined() and code.oclIsKindOf(datatypes::CD) and 
-   * let value : datatypes::CD = code.oclAsType(datatypes::CD) in 
-   * value.codeSystem = '2.16.840.1.113883.3.26.1.1'))
    * @param subjectElement The receiving '<em><b>Subject Element</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -834,6 +840,7 @@ public class SubjectElementOperations extends ClinicalStatementOperations
   
   public static  boolean validateSubjectElementelementOrderAssociationelementOrderCode(SubjectElement subjectElement, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
+  	  
     if (VALIDATE_SUBJECT_ELEMENTELEMENT_ORDER_ASSOCIATIONELEMENT_ORDER_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(SdtmPackage.Literals.SUBJECT_ELEMENT);
@@ -858,6 +865,7 @@ public class SubjectElementOperations extends ClinicalStatementOperations
              org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "SubjectElementelementOrderAssociationelementOrderCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(subjectElement, context) }),
              new Object [] { subjectElement }));
       }
+       
       return false;
     }
     return true;
@@ -889,7 +897,6 @@ public class SubjectElementOperations extends ClinicalStatementOperations
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.entryRelationship->excluding(null).observation->excluding(null)->reject(moodCode=vocab::x_ActMoodDocumentObservation::EVN)
    * @param subjectElement The receiving '<em><b>Subject Element</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -899,6 +906,7 @@ public class SubjectElementOperations extends ClinicalStatementOperations
   
   public static  boolean validateSubjectElementelementOrderAssociationelementOrderMoodCode(SubjectElement subjectElement, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
+  	  
     if (VALIDATE_SUBJECT_ELEMENTELEMENT_ORDER_ASSOCIATIONELEMENT_ORDER_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(SdtmPackage.Literals.SUBJECT_ELEMENT);
@@ -923,6 +931,7 @@ public class SubjectElementOperations extends ClinicalStatementOperations
              org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "SubjectElementelementOrderAssociationelementOrderMoodCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(subjectElement, context) }),
              new Object [] { subjectElement }));
       }
+       
       return false;
     }
     return true;
@@ -954,7 +963,6 @@ public class SubjectElementOperations extends ClinicalStatementOperations
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.entryRelationship->excluding(null).observation->excluding(null)->reject((value->isEmpty() or value->exists(element | element.isNullFlavorUndefined())) implies (value->forAll(element | element.oclIsTypeOf(datatypes::INT))))
    * @param subjectElement The receiving '<em><b>Subject Element</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -964,6 +972,7 @@ public class SubjectElementOperations extends ClinicalStatementOperations
   
   public static  boolean validateSubjectElementelementOrderAssociationelementOrderValue(SubjectElement subjectElement, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
+  	  
     if (VALIDATE_SUBJECT_ELEMENTELEMENT_ORDER_ASSOCIATIONELEMENT_ORDER_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(SdtmPackage.Literals.SUBJECT_ELEMENT);
@@ -988,6 +997,7 @@ public class SubjectElementOperations extends ClinicalStatementOperations
              org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "SubjectElementelementOrderAssociationelementOrderValue", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(subjectElement, context) }),
              new Object [] { subjectElement }));
       }
+       
       return false;
     }
     return true;
@@ -1019,7 +1029,6 @@ public class SubjectElementOperations extends ClinicalStatementOperations
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.entryRelationship->excluding(null)->reject(typeCode=vocab::x_ActRelationshipEntryRelationship::COMP)
    * @param subjectElement The receiving '<em><b>Subject Element</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -1029,6 +1038,7 @@ public class SubjectElementOperations extends ClinicalStatementOperations
   
   public static  boolean validateSubjectElementelementOrderAssociationTypeCode(SubjectElement subjectElement, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
+  	  
     if (VALIDATE_SUBJECT_ELEMENTELEMENT_ORDER_ASSOCIATION_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(SdtmPackage.Literals.SUBJECT_ELEMENT);
@@ -1053,6 +1063,7 @@ public class SubjectElementOperations extends ClinicalStatementOperations
              org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "SubjectElementelementOrderAssociationTypeCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(subjectElement, context) }),
              new Object [] { subjectElement }));
       }
+       
       return false;
     }
     return true;
@@ -1084,7 +1095,6 @@ public class SubjectElementOperations extends ClinicalStatementOperations
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.entryRelationship->excluding(null)->reject(observation->one(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(cda::Observation)))
    * @param subjectElement The receiving '<em><b>Subject Element</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -1094,6 +1104,7 @@ public class SubjectElementOperations extends ClinicalStatementOperations
   
   public static  boolean validateSubjectElementelementOrderAssociationElementOrder(SubjectElement subjectElement, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
+  	  
     if (VALIDATE_SUBJECT_ELEMENTELEMENT_ORDER_ASSOCIATION_ELEMENT_ORDER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(SdtmPackage.Literals.SUBJECT_ELEMENT);
@@ -1118,6 +1129,7 @@ public class SubjectElementOperations extends ClinicalStatementOperations
              org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "SubjectElementelementOrderAssociationElementOrder", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(subjectElement, context) }),
              new Object [] { subjectElement }));
       }
+       
       return false;
     }
     return true;
@@ -1149,7 +1161,6 @@ public class SubjectElementOperations extends ClinicalStatementOperations
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.entryRelationship->excluding(null)->reject(observation->excluding(null)->reject(isDefined('classCode')))
    * @param subjectElement The receiving '<em><b>Subject Element</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -1159,6 +1170,7 @@ public class SubjectElementOperations extends ClinicalStatementOperations
   
   public static  boolean validateSubjectElementelementOrderAssociationelementOrderClassCodeSubjectElementelementOrderAssociationelementOrderClassCode1(SubjectElement subjectElement, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
+  	  
     if (VALIDATE_SUBJECT_ELEMENTELEMENT_ORDER_ASSOCIATIONELEMENT_ORDER_CLASS_CODE_SUBJECT_ELEMENTELEMENT_ORDER_ASSOCIATIONELEMENT_ORDER_CLASS_CODE1__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(SdtmPackage.Literals.SUBJECT_ELEMENT);
@@ -1183,6 +1195,7 @@ public class SubjectElementOperations extends ClinicalStatementOperations
              org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "SubjectElementelementOrderAssociationelementOrderClassCodeSubjectElementelementOrderAssociationelementOrderClassCode1", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(subjectElement, context) }),
              new Object [] { subjectElement }));
       }
+       
       return false;
     }
     return true;
@@ -1214,7 +1227,6 @@ public class SubjectElementOperations extends ClinicalStatementOperations
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.entryRelationship->excluding(null)->reject(observation->excluding(null)->reject((code.oclIsUndefined() or code.isNullFlavorUndefined()) implies (not code.oclIsUndefined())))
    * @param subjectElement The receiving '<em><b>Subject Element</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -1224,6 +1236,7 @@ public class SubjectElementOperations extends ClinicalStatementOperations
   
   public static  boolean validateSubjectElementelementOrderAssociationelementOrderCodePSubjectElementelementOrderAssociationelementOrderCodeP1(SubjectElement subjectElement, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
+  	  
     if (VALIDATE_SUBJECT_ELEMENTELEMENT_ORDER_ASSOCIATIONELEMENT_ORDER_CODE_PSUBJECT_ELEMENTELEMENT_ORDER_ASSOCIATIONELEMENT_ORDER_CODE_P1__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(SdtmPackage.Literals.SUBJECT_ELEMENT);
@@ -1248,6 +1261,7 @@ public class SubjectElementOperations extends ClinicalStatementOperations
              org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "SubjectElementelementOrderAssociationelementOrderCodePSubjectElementelementOrderAssociationelementOrderCodeP1", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(subjectElement, context) }),
              new Object [] { subjectElement }));
       }
+       
       return false;
     }
     return true;
@@ -1281,9 +1295,6 @@ public class SubjectElementOperations extends ClinicalStatementOperations
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.entryRelationship->excluding(null)->reject(observation->excluding(null)->reject((code.oclIsUndefined() or code.isNullFlavorUndefined()) implies (not code.oclIsUndefined() and code.oclIsKindOf(datatypes::CD) and 
-   * let value : datatypes::CD = code.oclAsType(datatypes::CD) in 
-   * value.codeSystem = '2.16.840.1.113883.3.26.1.1')))
    * @param subjectElement The receiving '<em><b>Subject Element</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -1293,6 +1304,7 @@ public class SubjectElementOperations extends ClinicalStatementOperations
   
   public static  boolean validateSubjectElementelementOrderAssociationelementOrderCodeSubjectElementelementOrderAssociationelementOrderCode1(SubjectElement subjectElement, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
+  	  
     if (VALIDATE_SUBJECT_ELEMENTELEMENT_ORDER_ASSOCIATIONELEMENT_ORDER_CODE_SUBJECT_ELEMENTELEMENT_ORDER_ASSOCIATIONELEMENT_ORDER_CODE1__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(SdtmPackage.Literals.SUBJECT_ELEMENT);
@@ -1317,6 +1329,7 @@ public class SubjectElementOperations extends ClinicalStatementOperations
              org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "SubjectElementelementOrderAssociationelementOrderCodeSubjectElementelementOrderAssociationelementOrderCode1", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(subjectElement, context) }),
              new Object [] { subjectElement }));
       }
+       
       return false;
     }
     return true;
@@ -1348,7 +1361,6 @@ public class SubjectElementOperations extends ClinicalStatementOperations
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.entryRelationship->excluding(null)->reject(observation->excluding(null)->reject(moodCode=vocab::x_ActMoodDocumentObservation::EVN))
    * @param subjectElement The receiving '<em><b>Subject Element</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -1358,6 +1370,7 @@ public class SubjectElementOperations extends ClinicalStatementOperations
   
   public static  boolean validateSubjectElementelementOrderAssociationelementOrderMoodCodeSubjectElementelementOrderAssociationelementOrderMoodCode1(SubjectElement subjectElement, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
+  	  
     if (VALIDATE_SUBJECT_ELEMENTELEMENT_ORDER_ASSOCIATIONELEMENT_ORDER_MOOD_CODE_SUBJECT_ELEMENTELEMENT_ORDER_ASSOCIATIONELEMENT_ORDER_MOOD_CODE1__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(SdtmPackage.Literals.SUBJECT_ELEMENT);
@@ -1382,6 +1395,7 @@ public class SubjectElementOperations extends ClinicalStatementOperations
              org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "SubjectElementelementOrderAssociationelementOrderMoodCodeSubjectElementelementOrderAssociationelementOrderMoodCode1", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(subjectElement, context) }),
              new Object [] { subjectElement }));
       }
+       
       return false;
     }
     return true;
@@ -1413,7 +1427,6 @@ public class SubjectElementOperations extends ClinicalStatementOperations
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.entryRelationship->excluding(null)->reject(observation->excluding(null)->reject((value->isEmpty() or value->exists(element | element.isNullFlavorUndefined())) implies (value->forAll(element | element.oclIsTypeOf(datatypes::INT)))))
    * @param subjectElement The receiving '<em><b>Subject Element</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -1423,6 +1436,7 @@ public class SubjectElementOperations extends ClinicalStatementOperations
   
   public static  boolean validateSubjectElementelementOrderAssociationelementOrderValueSubjectElementelementOrderAssociationelementOrderValue1(SubjectElement subjectElement, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
+  	  
     if (VALIDATE_SUBJECT_ELEMENTELEMENT_ORDER_ASSOCIATIONELEMENT_ORDER_VALUE_SUBJECT_ELEMENTELEMENT_ORDER_ASSOCIATIONELEMENT_ORDER_VALUE1__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(SdtmPackage.Literals.SUBJECT_ELEMENT);
@@ -1447,6 +1461,7 @@ public class SubjectElementOperations extends ClinicalStatementOperations
              org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "SubjectElementelementOrderAssociationelementOrderValueSubjectElementelementOrderAssociationelementOrderValue1", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(subjectElement, context) }),
              new Object [] { subjectElement }));
       }
+       
       return false;
     }
     return true;
@@ -1460,7 +1475,7 @@ public class SubjectElementOperations extends ClinicalStatementOperations
    * @generated
    * @ordered
    */
-  protected static final String GET_STUDY_EPOCH__EOCL_EXP = "self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(sdtm::Study Epoch))->asSequence()->first().oclAsType(sdtm::Study Epoch)";
+  protected static final String GET_STUDY_EPOCH__EOCL_EXP = "self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(sdtm::Study Epoch))->asSequence()->any(true).oclAsType(sdtm::Study Epoch)";
 
   /**
    * The cached OCL query for the '{@link #getStudyEpoch(SubjectElement) <em>Get Study Epoch</em>}' query operation.
@@ -1475,10 +1490,6 @@ public class SubjectElementOperations extends ClinicalStatementOperations
   /**
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * <!-- begin-model-doc -->
-   * self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(sdtm::Study Epoch))->asSequence()->first().oclAsType(sdtm::Study Epoch)
-   * @param subjectElement The receiving '<em><b>Subject Element</b></em>' model object.
-   * <!-- end-model-doc -->
    * @generated
    */
   
@@ -1487,7 +1498,7 @@ public class SubjectElementOperations extends ClinicalStatementOperations
     if (GET_STUDY_EPOCH__EOCL_QRY == null)
     {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
-      helper.setOperationContext(SdtmPackage.Literals.SUBJECT_ELEMENT, SdtmPackage.Literals.SUBJECT_ELEMENT.getEAllOperations().get(70));
+      helper.setOperationContext(SdtmPackage.Literals.SUBJECT_ELEMENT, SdtmPackage.Literals.SUBJECT_ELEMENT.getEAllOperations().get(72));
       try
       {
         GET_STUDY_EPOCH__EOCL_QRY = helper.createQuery(GET_STUDY_EPOCH__EOCL_EXP);

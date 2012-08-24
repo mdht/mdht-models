@@ -78,675 +78,704 @@ import org.openhealthtools.mdht.uml.cda.phmr.util.PhmrValidator;
  */
 public class PersonalHealthcareMonitoringReportOperations extends GeneralHeaderConstraintsOperations {
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	protected PersonalHealthcareMonitoringReportOperations() {
-		super();
-	}
+    super();
+  }
 
 	/**
-	 * The cached OCL expression body for the '{@link #validatePersonalHealthcareMonitoringReportTemplateId(PersonalHealthcareMonitoringReport, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Personal Healthcare Monitoring Report Template Id</em>}' operation.
-	 * <!-- begin-user-doc -->
+   * The cached OCL expression body for the '{@link #validatePersonalHealthcareMonitoringReportTemplateId(PersonalHealthcareMonitoringReport, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Personal Healthcare Monitoring Report Template Id</em>}' operation.
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validatePersonalHealthcareMonitoringReportTemplateId(PersonalHealthcareMonitoringReport, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
+   * @see #validatePersonalHealthcareMonitoringReportTemplateId(PersonalHealthcareMonitoringReport, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+   * @generated
+   * @ordered
+   */
 	protected static final String VALIDATE_PERSONAL_HEALTHCARE_MONITORING_REPORT_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.9')";
 
 	/**
-	 * The cached OCL invariant for the '{@link #validatePersonalHealthcareMonitoringReportTemplateId(PersonalHealthcareMonitoringReport, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Personal Healthcare Monitoring Report Template Id</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
+   * The cached OCL invariant for the '{@link #validatePersonalHealthcareMonitoringReportTemplateId(PersonalHealthcareMonitoringReport, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Personal Healthcare Monitoring Report Template Id</em>}' invariant operation.
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validatePersonalHealthcareMonitoringReportTemplateId(PersonalHealthcareMonitoringReport, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
+   * @see #validatePersonalHealthcareMonitoringReportTemplateId(PersonalHealthcareMonitoringReport, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+   * @generated
+   * @ordered
+   */
 	protected static Constraint VALIDATE_PERSONAL_HEALTHCARE_MONITORING_REPORT_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.9')
-	 * @param personalHealthcareMonitoringReport The receiving '<em><b>Personal Healthcare Monitoring Report</b></em>' model object.
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
+   * <!-- begin-model-doc -->
+   * @param personalHealthcareMonitoringReport The receiving '<em><b>Personal Healthcare Monitoring Report</b></em>' model object.
+   * @param diagnostics The chain of diagnostics to which problems are to be appended.
+   * @param context The cache of context-specific information.
+   * <!-- end-model-doc -->
+   * @generated
+   */
 	public static  boolean validatePersonalHealthcareMonitoringReportTemplateId(PersonalHealthcareMonitoringReport personalHealthcareMonitoringReport, DiagnosticChain diagnostics, Map<Object, Object> context) {
-		if (VALIDATE_PERSONAL_HEALTHCARE_MONITORING_REPORT_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setContext(PhmrPackage.Literals.PERSONAL_HEALTHCARE_MONITORING_REPORT);
-			try {
-				VALIDATE_PERSONAL_HEALTHCARE_MONITORING_REPORT_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PERSONAL_HEALTHCARE_MONITORING_REPORT_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
-				throw new UnsupportedOperationException(pe.getLocalizedMessage());
-			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PERSONAL_HEALTHCARE_MONITORING_REPORT_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(personalHealthcareMonitoringReport)) {
-			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 PhmrValidator.DIAGNOSTIC_SOURCE,
-						 PhmrValidator.PERSONAL_HEALTHCARE_MONITORING_REPORT__PERSONAL_HEALTHCARE_MONITORING_REPORT_TEMPLATE_ID,
-						 PhmrPlugin.INSTANCE.getString("PersonalHealthcareMonitoringReportTemplateId"),
-						 new Object [] { personalHealthcareMonitoringReport }));
-			}
-			return false;
-		}
-		return true;
-	}
+  	  
+    if (VALIDATE_PERSONAL_HEALTHCARE_MONITORING_REPORT_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+      OCL.Helper helper = EOCL_ENV.createOCLHelper();
+      helper.setContext(PhmrPackage.Literals.PERSONAL_HEALTHCARE_MONITORING_REPORT);
+      try
+      {
+        VALIDATE_PERSONAL_HEALTHCARE_MONITORING_REPORT_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PERSONAL_HEALTHCARE_MONITORING_REPORT_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+      }
+      catch (ParserException pe)
+      {
+        throw new UnsupportedOperationException(pe.getLocalizedMessage());
+      }
+    }
+    if (!EOCL_ENV.createQuery(VALIDATE_PERSONAL_HEALTHCARE_MONITORING_REPORT_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(personalHealthcareMonitoringReport))
+    {
+      if (diagnostics != null)
+      {
+        diagnostics.add
+          (new BasicDiagnostic
+            (Diagnostic.ERROR,
+             PhmrValidator.DIAGNOSTIC_SOURCE,
+             PhmrValidator.PERSONAL_HEALTHCARE_MONITORING_REPORT__PERSONAL_HEALTHCARE_MONITORING_REPORT_TEMPLATE_ID,
+             PhmrPlugin.INSTANCE.getString("PersonalHealthcareMonitoringReportTemplateId"),
+             new Object [] { personalHealthcareMonitoringReport }));
+      }
+       
+      return false;
+    }
+    return true;
+  }
 
 	/**
-	 * The cached OCL expression body for the '{@link #validatePersonalHealthcareMonitoringReportVitalSigns(PersonalHealthcareMonitoringReport, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Personal Healthcare Monitoring Report Vital Signs</em>}' operation.
-	 * <!-- begin-user-doc -->
+   * The cached OCL expression body for the '{@link #validatePersonalHealthcareMonitoringReportVitalSigns(PersonalHealthcareMonitoringReport, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Personal Healthcare Monitoring Report Vital Signs</em>}' operation.
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validatePersonalHealthcareMonitoringReportVitalSigns(PersonalHealthcareMonitoringReport, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
+   * @see #validatePersonalHealthcareMonitoringReportVitalSigns(PersonalHealthcareMonitoringReport, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+   * @generated
+   * @ordered
+   */
 	protected static final String VALIDATE_PERSONAL_HEALTHCARE_MONITORING_REPORT_VITAL_SIGNS__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(phmr::VitalSigns))";
 
 	/**
-	 * The cached OCL invariant for the '{@link #validatePersonalHealthcareMonitoringReportVitalSigns(PersonalHealthcareMonitoringReport, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Personal Healthcare Monitoring Report Vital Signs</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
+   * The cached OCL invariant for the '{@link #validatePersonalHealthcareMonitoringReportVitalSigns(PersonalHealthcareMonitoringReport, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Personal Healthcare Monitoring Report Vital Signs</em>}' invariant operation.
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validatePersonalHealthcareMonitoringReportVitalSigns(PersonalHealthcareMonitoringReport, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
+   * @see #validatePersonalHealthcareMonitoringReportVitalSigns(PersonalHealthcareMonitoringReport, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+   * @generated
+   * @ordered
+   */
 	protected static Constraint VALIDATE_PERSONAL_HEALTHCARE_MONITORING_REPORT_VITAL_SIGNS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(phmr::VitalSigns))
-	 * @param personalHealthcareMonitoringReport The receiving '<em><b>Personal Healthcare Monitoring Report</b></em>' model object.
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
+   * <!-- begin-model-doc -->
+   * @param personalHealthcareMonitoringReport The receiving '<em><b>Personal Healthcare Monitoring Report</b></em>' model object.
+   * @param diagnostics The chain of diagnostics to which problems are to be appended.
+   * @param context The cache of context-specific information.
+   * <!-- end-model-doc -->
+   * @generated
+   */
 	public static  boolean validatePersonalHealthcareMonitoringReportVitalSigns(PersonalHealthcareMonitoringReport personalHealthcareMonitoringReport, DiagnosticChain diagnostics, Map<Object, Object> context) {
-		if (VALIDATE_PERSONAL_HEALTHCARE_MONITORING_REPORT_VITAL_SIGNS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setContext(PhmrPackage.Literals.PERSONAL_HEALTHCARE_MONITORING_REPORT);
-			try {
-				VALIDATE_PERSONAL_HEALTHCARE_MONITORING_REPORT_VITAL_SIGNS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PERSONAL_HEALTHCARE_MONITORING_REPORT_VITAL_SIGNS__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
-				throw new UnsupportedOperationException(pe.getLocalizedMessage());
-			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PERSONAL_HEALTHCARE_MONITORING_REPORT_VITAL_SIGNS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(personalHealthcareMonitoringReport)) {
-			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 PhmrValidator.DIAGNOSTIC_SOURCE,
-						 PhmrValidator.PERSONAL_HEALTHCARE_MONITORING_REPORT__PERSONAL_HEALTHCARE_MONITORING_REPORT_VITAL_SIGNS,
-						 PhmrPlugin.INSTANCE.getString("PersonalHealthcareMonitoringReportVitalSigns"),
-						 new Object [] { personalHealthcareMonitoringReport }));
-			}
-			return false;
-		}
-		return true;
-	}
+  	  
+    if (VALIDATE_PERSONAL_HEALTHCARE_MONITORING_REPORT_VITAL_SIGNS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+      OCL.Helper helper = EOCL_ENV.createOCLHelper();
+      helper.setContext(PhmrPackage.Literals.PERSONAL_HEALTHCARE_MONITORING_REPORT);
+      try
+      {
+        VALIDATE_PERSONAL_HEALTHCARE_MONITORING_REPORT_VITAL_SIGNS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PERSONAL_HEALTHCARE_MONITORING_REPORT_VITAL_SIGNS__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+      }
+      catch (ParserException pe)
+      {
+        throw new UnsupportedOperationException(pe.getLocalizedMessage());
+      }
+    }
+    if (!EOCL_ENV.createQuery(VALIDATE_PERSONAL_HEALTHCARE_MONITORING_REPORT_VITAL_SIGNS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(personalHealthcareMonitoringReport))
+    {
+      if (diagnostics != null)
+      {
+        diagnostics.add
+          (new BasicDiagnostic
+            (Diagnostic.ERROR,
+             PhmrValidator.DIAGNOSTIC_SOURCE,
+             PhmrValidator.PERSONAL_HEALTHCARE_MONITORING_REPORT__PERSONAL_HEALTHCARE_MONITORING_REPORT_VITAL_SIGNS,
+             PhmrPlugin.INSTANCE.getString("PersonalHealthcareMonitoringReportVitalSigns"),
+             new Object [] { personalHealthcareMonitoringReport }));
+      }
+       
+      return false;
+    }
+    return true;
+  }
 
 	/**
-	 * The cached OCL expression body for the '{@link #validatePersonalHealthcareMonitoringReportResults(PersonalHealthcareMonitoringReport, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Personal Healthcare Monitoring Report Results</em>}' operation.
-	 * <!-- begin-user-doc -->
+   * The cached OCL expression body for the '{@link #validatePersonalHealthcareMonitoringReportResults(PersonalHealthcareMonitoringReport, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Personal Healthcare Monitoring Report Results</em>}' operation.
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validatePersonalHealthcareMonitoringReportResults(PersonalHealthcareMonitoringReport, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
+   * @see #validatePersonalHealthcareMonitoringReportResults(PersonalHealthcareMonitoringReport, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+   * @generated
+   * @ordered
+   */
 	protected static final String VALIDATE_PERSONAL_HEALTHCARE_MONITORING_REPORT_RESULTS__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(phmr::Results))";
 
 	/**
-	 * The cached OCL invariant for the '{@link #validatePersonalHealthcareMonitoringReportResults(PersonalHealthcareMonitoringReport, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Personal Healthcare Monitoring Report Results</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
+   * The cached OCL invariant for the '{@link #validatePersonalHealthcareMonitoringReportResults(PersonalHealthcareMonitoringReport, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Personal Healthcare Monitoring Report Results</em>}' invariant operation.
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validatePersonalHealthcareMonitoringReportResults(PersonalHealthcareMonitoringReport, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
+   * @see #validatePersonalHealthcareMonitoringReportResults(PersonalHealthcareMonitoringReport, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+   * @generated
+   * @ordered
+   */
 	protected static Constraint VALIDATE_PERSONAL_HEALTHCARE_MONITORING_REPORT_RESULTS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(phmr::Results))
-	 * @param personalHealthcareMonitoringReport The receiving '<em><b>Personal Healthcare Monitoring Report</b></em>' model object.
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
+   * <!-- begin-model-doc -->
+   * @param personalHealthcareMonitoringReport The receiving '<em><b>Personal Healthcare Monitoring Report</b></em>' model object.
+   * @param diagnostics The chain of diagnostics to which problems are to be appended.
+   * @param context The cache of context-specific information.
+   * <!-- end-model-doc -->
+   * @generated
+   */
 	public static  boolean validatePersonalHealthcareMonitoringReportResults(PersonalHealthcareMonitoringReport personalHealthcareMonitoringReport, DiagnosticChain diagnostics, Map<Object, Object> context) {
-		if (VALIDATE_PERSONAL_HEALTHCARE_MONITORING_REPORT_RESULTS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setContext(PhmrPackage.Literals.PERSONAL_HEALTHCARE_MONITORING_REPORT);
-			try {
-				VALIDATE_PERSONAL_HEALTHCARE_MONITORING_REPORT_RESULTS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PERSONAL_HEALTHCARE_MONITORING_REPORT_RESULTS__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
-				throw new UnsupportedOperationException(pe.getLocalizedMessage());
-			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PERSONAL_HEALTHCARE_MONITORING_REPORT_RESULTS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(personalHealthcareMonitoringReport)) {
-			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 PhmrValidator.DIAGNOSTIC_SOURCE,
-						 PhmrValidator.PERSONAL_HEALTHCARE_MONITORING_REPORT__PERSONAL_HEALTHCARE_MONITORING_REPORT_RESULTS,
-						 PhmrPlugin.INSTANCE.getString("PersonalHealthcareMonitoringReportResults"),
-						 new Object [] { personalHealthcareMonitoringReport }));
-			}
-			return false;
-		}
-		return true;
-	}
+  	  
+    if (VALIDATE_PERSONAL_HEALTHCARE_MONITORING_REPORT_RESULTS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+      OCL.Helper helper = EOCL_ENV.createOCLHelper();
+      helper.setContext(PhmrPackage.Literals.PERSONAL_HEALTHCARE_MONITORING_REPORT);
+      try
+      {
+        VALIDATE_PERSONAL_HEALTHCARE_MONITORING_REPORT_RESULTS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PERSONAL_HEALTHCARE_MONITORING_REPORT_RESULTS__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+      }
+      catch (ParserException pe)
+      {
+        throw new UnsupportedOperationException(pe.getLocalizedMessage());
+      }
+    }
+    if (!EOCL_ENV.createQuery(VALIDATE_PERSONAL_HEALTHCARE_MONITORING_REPORT_RESULTS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(personalHealthcareMonitoringReport))
+    {
+      if (diagnostics != null)
+      {
+        diagnostics.add
+          (new BasicDiagnostic
+            (Diagnostic.ERROR,
+             PhmrValidator.DIAGNOSTIC_SOURCE,
+             PhmrValidator.PERSONAL_HEALTHCARE_MONITORING_REPORT__PERSONAL_HEALTHCARE_MONITORING_REPORT_RESULTS,
+             PhmrPlugin.INSTANCE.getString("PersonalHealthcareMonitoringReportResults"),
+             new Object [] { personalHealthcareMonitoringReport }));
+      }
+       
+      return false;
+    }
+    return true;
+  }
 
 	/**
-	 * The cached OCL expression body for the '{@link #validatePersonalHealthcareMonitoringReportMedicalEquipment(PersonalHealthcareMonitoringReport, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Personal Healthcare Monitoring Report Medical Equipment</em>}' operation.
-	 * <!-- begin-user-doc -->
+   * The cached OCL expression body for the '{@link #validatePersonalHealthcareMonitoringReportMedicalEquipment(PersonalHealthcareMonitoringReport, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Personal Healthcare Monitoring Report Medical Equipment</em>}' operation.
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validatePersonalHealthcareMonitoringReportMedicalEquipment(PersonalHealthcareMonitoringReport, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
+   * @see #validatePersonalHealthcareMonitoringReportMedicalEquipment(PersonalHealthcareMonitoringReport, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+   * @generated
+   * @ordered
+   */
 	protected static final String VALIDATE_PERSONAL_HEALTHCARE_MONITORING_REPORT_MEDICAL_EQUIPMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(phmr::MedicalEquipment))";
 
 	/**
-	 * The cached OCL invariant for the '{@link #validatePersonalHealthcareMonitoringReportMedicalEquipment(PersonalHealthcareMonitoringReport, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Personal Healthcare Monitoring Report Medical Equipment</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
+   * The cached OCL invariant for the '{@link #validatePersonalHealthcareMonitoringReportMedicalEquipment(PersonalHealthcareMonitoringReport, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Personal Healthcare Monitoring Report Medical Equipment</em>}' invariant operation.
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validatePersonalHealthcareMonitoringReportMedicalEquipment(PersonalHealthcareMonitoringReport, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
+   * @see #validatePersonalHealthcareMonitoringReportMedicalEquipment(PersonalHealthcareMonitoringReport, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+   * @generated
+   * @ordered
+   */
 	protected static Constraint VALIDATE_PERSONAL_HEALTHCARE_MONITORING_REPORT_MEDICAL_EQUIPMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(phmr::MedicalEquipment))
-	 * @param personalHealthcareMonitoringReport The receiving '<em><b>Personal Healthcare Monitoring Report</b></em>' model object.
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
+   * <!-- begin-model-doc -->
+   * @param personalHealthcareMonitoringReport The receiving '<em><b>Personal Healthcare Monitoring Report</b></em>' model object.
+   * @param diagnostics The chain of diagnostics to which problems are to be appended.
+   * @param context The cache of context-specific information.
+   * <!-- end-model-doc -->
+   * @generated
+   */
 	public static  boolean validatePersonalHealthcareMonitoringReportMedicalEquipment(PersonalHealthcareMonitoringReport personalHealthcareMonitoringReport, DiagnosticChain diagnostics, Map<Object, Object> context) {
-		if (VALIDATE_PERSONAL_HEALTHCARE_MONITORING_REPORT_MEDICAL_EQUIPMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setContext(PhmrPackage.Literals.PERSONAL_HEALTHCARE_MONITORING_REPORT);
-			try {
-				VALIDATE_PERSONAL_HEALTHCARE_MONITORING_REPORT_MEDICAL_EQUIPMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PERSONAL_HEALTHCARE_MONITORING_REPORT_MEDICAL_EQUIPMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
-				throw new UnsupportedOperationException(pe.getLocalizedMessage());
-			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PERSONAL_HEALTHCARE_MONITORING_REPORT_MEDICAL_EQUIPMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(personalHealthcareMonitoringReport)) {
-			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 PhmrValidator.DIAGNOSTIC_SOURCE,
-						 PhmrValidator.PERSONAL_HEALTHCARE_MONITORING_REPORT__PERSONAL_HEALTHCARE_MONITORING_REPORT_MEDICAL_EQUIPMENT,
-						 PhmrPlugin.INSTANCE.getString("PersonalHealthcareMonitoringReportMedicalEquipment"),
-						 new Object [] { personalHealthcareMonitoringReport }));
-			}
-			return false;
-		}
-		return true;
-	}
+  	  
+    if (VALIDATE_PERSONAL_HEALTHCARE_MONITORING_REPORT_MEDICAL_EQUIPMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+      OCL.Helper helper = EOCL_ENV.createOCLHelper();
+      helper.setContext(PhmrPackage.Literals.PERSONAL_HEALTHCARE_MONITORING_REPORT);
+      try
+      {
+        VALIDATE_PERSONAL_HEALTHCARE_MONITORING_REPORT_MEDICAL_EQUIPMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PERSONAL_HEALTHCARE_MONITORING_REPORT_MEDICAL_EQUIPMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+      }
+      catch (ParserException pe)
+      {
+        throw new UnsupportedOperationException(pe.getLocalizedMessage());
+      }
+    }
+    if (!EOCL_ENV.createQuery(VALIDATE_PERSONAL_HEALTHCARE_MONITORING_REPORT_MEDICAL_EQUIPMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(personalHealthcareMonitoringReport))
+    {
+      if (diagnostics != null)
+      {
+        diagnostics.add
+          (new BasicDiagnostic
+            (Diagnostic.ERROR,
+             PhmrValidator.DIAGNOSTIC_SOURCE,
+             PhmrValidator.PERSONAL_HEALTHCARE_MONITORING_REPORT__PERSONAL_HEALTHCARE_MONITORING_REPORT_MEDICAL_EQUIPMENT,
+             PhmrPlugin.INSTANCE.getString("PersonalHealthcareMonitoringReportMedicalEquipment"),
+             new Object [] { personalHealthcareMonitoringReport }));
+      }
+       
+      return false;
+    }
+    return true;
+  }
 
 	/**
-	 * The cached OCL expression body for the '{@link #validatePersonalHealthcareMonitoringReportFunctionalStatus(PersonalHealthcareMonitoringReport, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Personal Healthcare Monitoring Report Functional Status</em>}' operation.
-	 * <!-- begin-user-doc -->
+   * The cached OCL expression body for the '{@link #validatePersonalHealthcareMonitoringReportFunctionalStatus(PersonalHealthcareMonitoringReport, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Personal Healthcare Monitoring Report Functional Status</em>}' operation.
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validatePersonalHealthcareMonitoringReportFunctionalStatus(PersonalHealthcareMonitoringReport, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
+   * @see #validatePersonalHealthcareMonitoringReportFunctionalStatus(PersonalHealthcareMonitoringReport, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+   * @generated
+   * @ordered
+   */
 	protected static final String VALIDATE_PERSONAL_HEALTHCARE_MONITORING_REPORT_FUNCTIONAL_STATUS__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(ccd::FunctionalStatusSection))";
 
 	/**
-	 * The cached OCL invariant for the '{@link #validatePersonalHealthcareMonitoringReportFunctionalStatus(PersonalHealthcareMonitoringReport, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Personal Healthcare Monitoring Report Functional Status</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
+   * The cached OCL invariant for the '{@link #validatePersonalHealthcareMonitoringReportFunctionalStatus(PersonalHealthcareMonitoringReport, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Personal Healthcare Monitoring Report Functional Status</em>}' invariant operation.
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validatePersonalHealthcareMonitoringReportFunctionalStatus(PersonalHealthcareMonitoringReport, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
+   * @see #validatePersonalHealthcareMonitoringReportFunctionalStatus(PersonalHealthcareMonitoringReport, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+   * @generated
+   * @ordered
+   */
 	protected static Constraint VALIDATE_PERSONAL_HEALTHCARE_MONITORING_REPORT_FUNCTIONAL_STATUS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(ccd::FunctionalStatusSection))
-	 * @param personalHealthcareMonitoringReport The receiving '<em><b>Personal Healthcare Monitoring Report</b></em>' model object.
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
+   * <!-- begin-model-doc -->
+   * @param personalHealthcareMonitoringReport The receiving '<em><b>Personal Healthcare Monitoring Report</b></em>' model object.
+   * @param diagnostics The chain of diagnostics to which problems are to be appended.
+   * @param context The cache of context-specific information.
+   * <!-- end-model-doc -->
+   * @generated
+   */
 	public static  boolean validatePersonalHealthcareMonitoringReportFunctionalStatus(PersonalHealthcareMonitoringReport personalHealthcareMonitoringReport, DiagnosticChain diagnostics, Map<Object, Object> context) {
-		if (VALIDATE_PERSONAL_HEALTHCARE_MONITORING_REPORT_FUNCTIONAL_STATUS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setContext(PhmrPackage.Literals.PERSONAL_HEALTHCARE_MONITORING_REPORT);
-			try {
-				VALIDATE_PERSONAL_HEALTHCARE_MONITORING_REPORT_FUNCTIONAL_STATUS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PERSONAL_HEALTHCARE_MONITORING_REPORT_FUNCTIONAL_STATUS__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
-				throw new UnsupportedOperationException(pe.getLocalizedMessage());
-			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PERSONAL_HEALTHCARE_MONITORING_REPORT_FUNCTIONAL_STATUS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(personalHealthcareMonitoringReport)) {
-			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.INFO,
-						 PhmrValidator.DIAGNOSTIC_SOURCE,
-						 PhmrValidator.PERSONAL_HEALTHCARE_MONITORING_REPORT__PERSONAL_HEALTHCARE_MONITORING_REPORT_FUNCTIONAL_STATUS,
-						 PhmrPlugin.INSTANCE.getString("PersonalHealthcareMonitoringReportFunctionalStatus"),
-						 new Object [] { personalHealthcareMonitoringReport }));
-			}
-			return false;
-		}
-		return true;
-	}
+  	  
+    if (VALIDATE_PERSONAL_HEALTHCARE_MONITORING_REPORT_FUNCTIONAL_STATUS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+      OCL.Helper helper = EOCL_ENV.createOCLHelper();
+      helper.setContext(PhmrPackage.Literals.PERSONAL_HEALTHCARE_MONITORING_REPORT);
+      try
+      {
+        VALIDATE_PERSONAL_HEALTHCARE_MONITORING_REPORT_FUNCTIONAL_STATUS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PERSONAL_HEALTHCARE_MONITORING_REPORT_FUNCTIONAL_STATUS__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+      }
+      catch (ParserException pe)
+      {
+        throw new UnsupportedOperationException(pe.getLocalizedMessage());
+      }
+    }
+    if (!EOCL_ENV.createQuery(VALIDATE_PERSONAL_HEALTHCARE_MONITORING_REPORT_FUNCTIONAL_STATUS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(personalHealthcareMonitoringReport))
+    {
+      if (diagnostics != null)
+      {
+        diagnostics.add
+          (new BasicDiagnostic
+            (Diagnostic.INFO,
+             PhmrValidator.DIAGNOSTIC_SOURCE,
+             PhmrValidator.PERSONAL_HEALTHCARE_MONITORING_REPORT__PERSONAL_HEALTHCARE_MONITORING_REPORT_FUNCTIONAL_STATUS,
+             PhmrPlugin.INSTANCE.getString("PersonalHealthcareMonitoringReportFunctionalStatus"),
+             new Object [] { personalHealthcareMonitoringReport }));
+      }
+       
+      return false;
+    }
+    return true;
+  }
 
 	/**
-	 * The cached OCL expression body for the '{@link #validatePersonalHealthcareMonitoringReportMedication(PersonalHealthcareMonitoringReport, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Personal Healthcare Monitoring Report Medication</em>}' operation.
-	 * <!-- begin-user-doc -->
+   * The cached OCL expression body for the '{@link #validatePersonalHealthcareMonitoringReportMedication(PersonalHealthcareMonitoringReport, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Personal Healthcare Monitoring Report Medication</em>}' operation.
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validatePersonalHealthcareMonitoringReportMedication(PersonalHealthcareMonitoringReport, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
+   * @see #validatePersonalHealthcareMonitoringReportMedication(PersonalHealthcareMonitoringReport, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+   * @generated
+   * @ordered
+   */
 	protected static final String VALIDATE_PERSONAL_HEALTHCARE_MONITORING_REPORT_MEDICATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(ccd::MedicationsSection))";
 
 	/**
-	 * The cached OCL invariant for the '{@link #validatePersonalHealthcareMonitoringReportMedication(PersonalHealthcareMonitoringReport, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Personal Healthcare Monitoring Report Medication</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
+   * The cached OCL invariant for the '{@link #validatePersonalHealthcareMonitoringReportMedication(PersonalHealthcareMonitoringReport, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Personal Healthcare Monitoring Report Medication</em>}' invariant operation.
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validatePersonalHealthcareMonitoringReportMedication(PersonalHealthcareMonitoringReport, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
+   * @see #validatePersonalHealthcareMonitoringReportMedication(PersonalHealthcareMonitoringReport, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+   * @generated
+   * @ordered
+   */
 	protected static Constraint VALIDATE_PERSONAL_HEALTHCARE_MONITORING_REPORT_MEDICATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(ccd::MedicationsSection))
-	 * @param personalHealthcareMonitoringReport The receiving '<em><b>Personal Healthcare Monitoring Report</b></em>' model object.
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
+   * <!-- begin-model-doc -->
+   * @param personalHealthcareMonitoringReport The receiving '<em><b>Personal Healthcare Monitoring Report</b></em>' model object.
+   * @param diagnostics The chain of diagnostics to which problems are to be appended.
+   * @param context The cache of context-specific information.
+   * <!-- end-model-doc -->
+   * @generated
+   */
 	public static  boolean validatePersonalHealthcareMonitoringReportMedication(PersonalHealthcareMonitoringReport personalHealthcareMonitoringReport, DiagnosticChain diagnostics, Map<Object, Object> context) {
-		if (VALIDATE_PERSONAL_HEALTHCARE_MONITORING_REPORT_MEDICATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setContext(PhmrPackage.Literals.PERSONAL_HEALTHCARE_MONITORING_REPORT);
-			try {
-				VALIDATE_PERSONAL_HEALTHCARE_MONITORING_REPORT_MEDICATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PERSONAL_HEALTHCARE_MONITORING_REPORT_MEDICATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
-				throw new UnsupportedOperationException(pe.getLocalizedMessage());
-			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PERSONAL_HEALTHCARE_MONITORING_REPORT_MEDICATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(personalHealthcareMonitoringReport)) {
-			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.INFO,
-						 PhmrValidator.DIAGNOSTIC_SOURCE,
-						 PhmrValidator.PERSONAL_HEALTHCARE_MONITORING_REPORT__PERSONAL_HEALTHCARE_MONITORING_REPORT_MEDICATION,
-						 PhmrPlugin.INSTANCE.getString("PersonalHealthcareMonitoringReportMedication"),
-						 new Object [] { personalHealthcareMonitoringReport }));
-			}
-			return false;
-		}
-		return true;
-	}
+  	  
+    if (VALIDATE_PERSONAL_HEALTHCARE_MONITORING_REPORT_MEDICATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+      OCL.Helper helper = EOCL_ENV.createOCLHelper();
+      helper.setContext(PhmrPackage.Literals.PERSONAL_HEALTHCARE_MONITORING_REPORT);
+      try
+      {
+        VALIDATE_PERSONAL_HEALTHCARE_MONITORING_REPORT_MEDICATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PERSONAL_HEALTHCARE_MONITORING_REPORT_MEDICATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+      }
+      catch (ParserException pe)
+      {
+        throw new UnsupportedOperationException(pe.getLocalizedMessage());
+      }
+    }
+    if (!EOCL_ENV.createQuery(VALIDATE_PERSONAL_HEALTHCARE_MONITORING_REPORT_MEDICATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(personalHealthcareMonitoringReport))
+    {
+      if (diagnostics != null)
+      {
+        diagnostics.add
+          (new BasicDiagnostic
+            (Diagnostic.INFO,
+             PhmrValidator.DIAGNOSTIC_SOURCE,
+             PhmrValidator.PERSONAL_HEALTHCARE_MONITORING_REPORT__PERSONAL_HEALTHCARE_MONITORING_REPORT_MEDICATION,
+             PhmrPlugin.INSTANCE.getString("PersonalHealthcareMonitoringReportMedication"),
+             new Object [] { personalHealthcareMonitoringReport }));
+      }
+       
+      return false;
+    }
+    return true;
+  }
 
 	/**
-	 * The cached OCL expression body for the '{@link #validatePersonalHealthcareMonitoringReportPurpose(PersonalHealthcareMonitoringReport, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Personal Healthcare Monitoring Report Purpose</em>}' operation.
-	 * <!-- begin-user-doc -->
+   * The cached OCL expression body for the '{@link #validatePersonalHealthcareMonitoringReportPurpose(PersonalHealthcareMonitoringReport, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Personal Healthcare Monitoring Report Purpose</em>}' operation.
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validatePersonalHealthcareMonitoringReportPurpose(PersonalHealthcareMonitoringReport, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
+   * @see #validatePersonalHealthcareMonitoringReportPurpose(PersonalHealthcareMonitoringReport, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+   * @generated
+   * @ordered
+   */
 	protected static final String VALIDATE_PERSONAL_HEALTHCARE_MONITORING_REPORT_PURPOSE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(ccd::PurposeSection))";
 
 	/**
-	 * The cached OCL invariant for the '{@link #validatePersonalHealthcareMonitoringReportPurpose(PersonalHealthcareMonitoringReport, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Personal Healthcare Monitoring Report Purpose</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
+   * The cached OCL invariant for the '{@link #validatePersonalHealthcareMonitoringReportPurpose(PersonalHealthcareMonitoringReport, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Personal Healthcare Monitoring Report Purpose</em>}' invariant operation.
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validatePersonalHealthcareMonitoringReportPurpose(PersonalHealthcareMonitoringReport, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
+   * @see #validatePersonalHealthcareMonitoringReportPurpose(PersonalHealthcareMonitoringReport, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+   * @generated
+   * @ordered
+   */
 	protected static Constraint VALIDATE_PERSONAL_HEALTHCARE_MONITORING_REPORT_PURPOSE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(ccd::PurposeSection))
-	 * @param personalHealthcareMonitoringReport The receiving '<em><b>Personal Healthcare Monitoring Report</b></em>' model object.
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
+   * <!-- begin-model-doc -->
+   * @param personalHealthcareMonitoringReport The receiving '<em><b>Personal Healthcare Monitoring Report</b></em>' model object.
+   * @param diagnostics The chain of diagnostics to which problems are to be appended.
+   * @param context The cache of context-specific information.
+   * <!-- end-model-doc -->
+   * @generated
+   */
 	public static  boolean validatePersonalHealthcareMonitoringReportPurpose(PersonalHealthcareMonitoringReport personalHealthcareMonitoringReport, DiagnosticChain diagnostics, Map<Object, Object> context) {
-		if (VALIDATE_PERSONAL_HEALTHCARE_MONITORING_REPORT_PURPOSE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setContext(PhmrPackage.Literals.PERSONAL_HEALTHCARE_MONITORING_REPORT);
-			try {
-				VALIDATE_PERSONAL_HEALTHCARE_MONITORING_REPORT_PURPOSE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PERSONAL_HEALTHCARE_MONITORING_REPORT_PURPOSE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
-				throw new UnsupportedOperationException(pe.getLocalizedMessage());
-			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PERSONAL_HEALTHCARE_MONITORING_REPORT_PURPOSE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(personalHealthcareMonitoringReport)) {
-			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.INFO,
-						 PhmrValidator.DIAGNOSTIC_SOURCE,
-						 PhmrValidator.PERSONAL_HEALTHCARE_MONITORING_REPORT__PERSONAL_HEALTHCARE_MONITORING_REPORT_PURPOSE,
-						 PhmrPlugin.INSTANCE.getString("PersonalHealthcareMonitoringReportPurpose"),
-						 new Object [] { personalHealthcareMonitoringReport }));
-			}
-			return false;
-		}
-		return true;
-	}
+  	  
+    if (VALIDATE_PERSONAL_HEALTHCARE_MONITORING_REPORT_PURPOSE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+      OCL.Helper helper = EOCL_ENV.createOCLHelper();
+      helper.setContext(PhmrPackage.Literals.PERSONAL_HEALTHCARE_MONITORING_REPORT);
+      try
+      {
+        VALIDATE_PERSONAL_HEALTHCARE_MONITORING_REPORT_PURPOSE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PERSONAL_HEALTHCARE_MONITORING_REPORT_PURPOSE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+      }
+      catch (ParserException pe)
+      {
+        throw new UnsupportedOperationException(pe.getLocalizedMessage());
+      }
+    }
+    if (!EOCL_ENV.createQuery(VALIDATE_PERSONAL_HEALTHCARE_MONITORING_REPORT_PURPOSE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(personalHealthcareMonitoringReport))
+    {
+      if (diagnostics != null)
+      {
+        diagnostics.add
+          (new BasicDiagnostic
+            (Diagnostic.INFO,
+             PhmrValidator.DIAGNOSTIC_SOURCE,
+             PhmrValidator.PERSONAL_HEALTHCARE_MONITORING_REPORT__PERSONAL_HEALTHCARE_MONITORING_REPORT_PURPOSE,
+             PhmrPlugin.INSTANCE.getString("PersonalHealthcareMonitoringReportPurpose"),
+             new Object [] { personalHealthcareMonitoringReport }));
+      }
+       
+      return false;
+    }
+    return true;
+  }
 
 	/**
-	 * The cached OCL expression body for the '{@link #getVitalSigns(PersonalHealthcareMonitoringReport) <em>Get Vital Signs</em>}' operation.
-	 * <!-- begin-user-doc -->
+   * The cached OCL expression body for the '{@link #getVitalSigns(PersonalHealthcareMonitoringReport) <em>Get Vital Signs</em>}' operation.
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getVitalSigns(PersonalHealthcareMonitoringReport)
-	 * @generated
-	 * @ordered
-	 */
-	protected static final String GET_VITAL_SIGNS__EOCL_EXP = "self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(phmr::VitalSigns))->asSequence()->first().oclAsType(phmr::VitalSigns)";
+   * @see #getVitalSigns(PersonalHealthcareMonitoringReport)
+   * @generated
+   * @ordered
+   */
+	protected static final String GET_VITAL_SIGNS__EOCL_EXP = "self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(phmr::VitalSigns))->asSequence()->any(true).oclAsType(phmr::VitalSigns)";
 
 	/**
-	 * The cached OCL query for the '{@link #getVitalSigns(PersonalHealthcareMonitoringReport) <em>Get Vital Signs</em>}' query operation.
-	 * <!-- begin-user-doc -->
+   * The cached OCL query for the '{@link #getVitalSigns(PersonalHealthcareMonitoringReport) <em>Get Vital Signs</em>}' query operation.
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getVitalSigns(PersonalHealthcareMonitoringReport)
-	 * @generated
-	 * @ordered
-	 */
+   * @see #getVitalSigns(PersonalHealthcareMonitoringReport)
+   * @generated
+   * @ordered
+   */
 	protected static OCLExpression<EClassifier> GET_VITAL_SIGNS__EOCL_QRY;
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(phmr::VitalSigns))->asSequence()->first().oclAsType(phmr::VitalSigns)
-	 * @param personalHealthcareMonitoringReport The receiving '<em><b>Personal Healthcare Monitoring Report</b></em>' model object.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public static  VitalSigns getVitalSigns(PersonalHealthcareMonitoringReport personalHealthcareMonitoringReport) {
-		if (GET_VITAL_SIGNS__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(PhmrPackage.Literals.PERSONAL_HEALTHCARE_MONITORING_REPORT, PhmrPackage.Literals.PERSONAL_HEALTHCARE_MONITORING_REPORT.getEAllOperations().get(61));
-			try {
-				GET_VITAL_SIGNS__EOCL_QRY = helper.createQuery(GET_VITAL_SIGNS__EOCL_EXP);
-			}
-			catch (ParserException pe) {
-				throw new UnsupportedOperationException(pe.getLocalizedMessage());
-			}
-		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_VITAL_SIGNS__EOCL_QRY);
-		return (VitalSigns) query.evaluate(personalHealthcareMonitoringReport);
-	}
+    if (GET_VITAL_SIGNS__EOCL_QRY == null)
+    {
+      OCL.Helper helper = EOCL_ENV.createOCLHelper();
+      helper.setOperationContext(PhmrPackage.Literals.PERSONAL_HEALTHCARE_MONITORING_REPORT, PhmrPackage.Literals.PERSONAL_HEALTHCARE_MONITORING_REPORT.getEAllOperations().get(62));
+      try
+      {
+        GET_VITAL_SIGNS__EOCL_QRY = helper.createQuery(GET_VITAL_SIGNS__EOCL_EXP);
+      }
+      catch (ParserException pe)
+      {
+        throw new UnsupportedOperationException(pe.getLocalizedMessage());
+      }
+    }
+    OCL.Query query = EOCL_ENV.createQuery(GET_VITAL_SIGNS__EOCL_QRY);
+    return (VitalSigns) query.evaluate(personalHealthcareMonitoringReport);
+  }
 
 	/**
-	 * The cached OCL expression body for the '{@link #getResults(PersonalHealthcareMonitoringReport) <em>Get Results</em>}' operation.
-	 * <!-- begin-user-doc -->
+   * The cached OCL expression body for the '{@link #getResults(PersonalHealthcareMonitoringReport) <em>Get Results</em>}' operation.
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getResults(PersonalHealthcareMonitoringReport)
-	 * @generated
-	 * @ordered
-	 */
-	protected static final String GET_RESULTS__EOCL_EXP = "self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(phmr::Results))->asSequence()->first().oclAsType(phmr::Results)";
+   * @see #getResults(PersonalHealthcareMonitoringReport)
+   * @generated
+   * @ordered
+   */
+	protected static final String GET_RESULTS__EOCL_EXP = "self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(phmr::Results))->asSequence()->any(true).oclAsType(phmr::Results)";
 
 	/**
-	 * The cached OCL query for the '{@link #getResults(PersonalHealthcareMonitoringReport) <em>Get Results</em>}' query operation.
-	 * <!-- begin-user-doc -->
+   * The cached OCL query for the '{@link #getResults(PersonalHealthcareMonitoringReport) <em>Get Results</em>}' query operation.
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getResults(PersonalHealthcareMonitoringReport)
-	 * @generated
-	 * @ordered
-	 */
+   * @see #getResults(PersonalHealthcareMonitoringReport)
+   * @generated
+   * @ordered
+   */
 	protected static OCLExpression<EClassifier> GET_RESULTS__EOCL_QRY;
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(phmr::Results))->asSequence()->first().oclAsType(phmr::Results)
-	 * @param personalHealthcareMonitoringReport The receiving '<em><b>Personal Healthcare Monitoring Report</b></em>' model object.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public static  Results getResults(PersonalHealthcareMonitoringReport personalHealthcareMonitoringReport) {
-		if (GET_RESULTS__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(PhmrPackage.Literals.PERSONAL_HEALTHCARE_MONITORING_REPORT, PhmrPackage.Literals.PERSONAL_HEALTHCARE_MONITORING_REPORT.getEAllOperations().get(62));
-			try {
-				GET_RESULTS__EOCL_QRY = helper.createQuery(GET_RESULTS__EOCL_EXP);
-			}
-			catch (ParserException pe) {
-				throw new UnsupportedOperationException(pe.getLocalizedMessage());
-			}
-		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_RESULTS__EOCL_QRY);
-		return (Results) query.evaluate(personalHealthcareMonitoringReport);
-	}
+    if (GET_RESULTS__EOCL_QRY == null)
+    {
+      OCL.Helper helper = EOCL_ENV.createOCLHelper();
+      helper.setOperationContext(PhmrPackage.Literals.PERSONAL_HEALTHCARE_MONITORING_REPORT, PhmrPackage.Literals.PERSONAL_HEALTHCARE_MONITORING_REPORT.getEAllOperations().get(63));
+      try
+      {
+        GET_RESULTS__EOCL_QRY = helper.createQuery(GET_RESULTS__EOCL_EXP);
+      }
+      catch (ParserException pe)
+      {
+        throw new UnsupportedOperationException(pe.getLocalizedMessage());
+      }
+    }
+    OCL.Query query = EOCL_ENV.createQuery(GET_RESULTS__EOCL_QRY);
+    return (Results) query.evaluate(personalHealthcareMonitoringReport);
+  }
 
 	/**
-	 * The cached OCL expression body for the '{@link #getMedicalEquipment(PersonalHealthcareMonitoringReport) <em>Get Medical Equipment</em>}' operation.
-	 * <!-- begin-user-doc -->
+   * The cached OCL expression body for the '{@link #getMedicalEquipment(PersonalHealthcareMonitoringReport) <em>Get Medical Equipment</em>}' operation.
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getMedicalEquipment(PersonalHealthcareMonitoringReport)
-	 * @generated
-	 * @ordered
-	 */
-	protected static final String GET_MEDICAL_EQUIPMENT__EOCL_EXP = "self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(phmr::MedicalEquipment))->asSequence()->first().oclAsType(phmr::MedicalEquipment)";
+   * @see #getMedicalEquipment(PersonalHealthcareMonitoringReport)
+   * @generated
+   * @ordered
+   */
+	protected static final String GET_MEDICAL_EQUIPMENT__EOCL_EXP = "self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(phmr::MedicalEquipment))->asSequence()->any(true).oclAsType(phmr::MedicalEquipment)";
 
 	/**
-	 * The cached OCL query for the '{@link #getMedicalEquipment(PersonalHealthcareMonitoringReport) <em>Get Medical Equipment</em>}' query operation.
-	 * <!-- begin-user-doc -->
+   * The cached OCL query for the '{@link #getMedicalEquipment(PersonalHealthcareMonitoringReport) <em>Get Medical Equipment</em>}' query operation.
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getMedicalEquipment(PersonalHealthcareMonitoringReport)
-	 * @generated
-	 * @ordered
-	 */
+   * @see #getMedicalEquipment(PersonalHealthcareMonitoringReport)
+   * @generated
+   * @ordered
+   */
 	protected static OCLExpression<EClassifier> GET_MEDICAL_EQUIPMENT__EOCL_QRY;
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(phmr::MedicalEquipment))->asSequence()->first().oclAsType(phmr::MedicalEquipment)
-	 * @param personalHealthcareMonitoringReport The receiving '<em><b>Personal Healthcare Monitoring Report</b></em>' model object.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public static  MedicalEquipment getMedicalEquipment(PersonalHealthcareMonitoringReport personalHealthcareMonitoringReport) {
-		if (GET_MEDICAL_EQUIPMENT__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(PhmrPackage.Literals.PERSONAL_HEALTHCARE_MONITORING_REPORT, PhmrPackage.Literals.PERSONAL_HEALTHCARE_MONITORING_REPORT.getEAllOperations().get(63));
-			try {
-				GET_MEDICAL_EQUIPMENT__EOCL_QRY = helper.createQuery(GET_MEDICAL_EQUIPMENT__EOCL_EXP);
-			}
-			catch (ParserException pe) {
-				throw new UnsupportedOperationException(pe.getLocalizedMessage());
-			}
-		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_MEDICAL_EQUIPMENT__EOCL_QRY);
-		return (MedicalEquipment) query.evaluate(personalHealthcareMonitoringReport);
-	}
+    if (GET_MEDICAL_EQUIPMENT__EOCL_QRY == null)
+    {
+      OCL.Helper helper = EOCL_ENV.createOCLHelper();
+      helper.setOperationContext(PhmrPackage.Literals.PERSONAL_HEALTHCARE_MONITORING_REPORT, PhmrPackage.Literals.PERSONAL_HEALTHCARE_MONITORING_REPORT.getEAllOperations().get(64));
+      try
+      {
+        GET_MEDICAL_EQUIPMENT__EOCL_QRY = helper.createQuery(GET_MEDICAL_EQUIPMENT__EOCL_EXP);
+      }
+      catch (ParserException pe)
+      {
+        throw new UnsupportedOperationException(pe.getLocalizedMessage());
+      }
+    }
+    OCL.Query query = EOCL_ENV.createQuery(GET_MEDICAL_EQUIPMENT__EOCL_QRY);
+    return (MedicalEquipment) query.evaluate(personalHealthcareMonitoringReport);
+  }
 
 	/**
-	 * The cached OCL expression body for the '{@link #getFunctionalStatus(PersonalHealthcareMonitoringReport) <em>Get Functional Status</em>}' operation.
-	 * <!-- begin-user-doc -->
+   * The cached OCL expression body for the '{@link #getFunctionalStatus(PersonalHealthcareMonitoringReport) <em>Get Functional Status</em>}' operation.
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getFunctionalStatus(PersonalHealthcareMonitoringReport)
-	 * @generated
-	 * @ordered
-	 */
-	protected static final String GET_FUNCTIONAL_STATUS__EOCL_EXP = "self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(ccd::FunctionalStatusSection))->asSequence()->first().oclAsType(ccd::FunctionalStatusSection)";
+   * @see #getFunctionalStatus(PersonalHealthcareMonitoringReport)
+   * @generated
+   * @ordered
+   */
+	protected static final String GET_FUNCTIONAL_STATUS__EOCL_EXP = "self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(ccd::FunctionalStatusSection))->asSequence()->any(true).oclAsType(ccd::FunctionalStatusSection)";
 
 	/**
-	 * The cached OCL query for the '{@link #getFunctionalStatus(PersonalHealthcareMonitoringReport) <em>Get Functional Status</em>}' query operation.
-	 * <!-- begin-user-doc -->
+   * The cached OCL query for the '{@link #getFunctionalStatus(PersonalHealthcareMonitoringReport) <em>Get Functional Status</em>}' query operation.
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getFunctionalStatus(PersonalHealthcareMonitoringReport)
-	 * @generated
-	 * @ordered
-	 */
+   * @see #getFunctionalStatus(PersonalHealthcareMonitoringReport)
+   * @generated
+   * @ordered
+   */
 	protected static OCLExpression<EClassifier> GET_FUNCTIONAL_STATUS__EOCL_QRY;
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(ccd::FunctionalStatusSection))->asSequence()->first().oclAsType(ccd::FunctionalStatusSection)
-	 * @param personalHealthcareMonitoringReport The receiving '<em><b>Personal Healthcare Monitoring Report</b></em>' model object.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public static  FunctionalStatusSection getFunctionalStatus(PersonalHealthcareMonitoringReport personalHealthcareMonitoringReport) {
-		if (GET_FUNCTIONAL_STATUS__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(PhmrPackage.Literals.PERSONAL_HEALTHCARE_MONITORING_REPORT, PhmrPackage.Literals.PERSONAL_HEALTHCARE_MONITORING_REPORT.getEAllOperations().get(64));
-			try {
-				GET_FUNCTIONAL_STATUS__EOCL_QRY = helper.createQuery(GET_FUNCTIONAL_STATUS__EOCL_EXP);
-			}
-			catch (ParserException pe) {
-				throw new UnsupportedOperationException(pe.getLocalizedMessage());
-			}
-		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_FUNCTIONAL_STATUS__EOCL_QRY);
-		return (FunctionalStatusSection) query.evaluate(personalHealthcareMonitoringReport);
-	}
+    if (GET_FUNCTIONAL_STATUS__EOCL_QRY == null)
+    {
+      OCL.Helper helper = EOCL_ENV.createOCLHelper();
+      helper.setOperationContext(PhmrPackage.Literals.PERSONAL_HEALTHCARE_MONITORING_REPORT, PhmrPackage.Literals.PERSONAL_HEALTHCARE_MONITORING_REPORT.getEAllOperations().get(65));
+      try
+      {
+        GET_FUNCTIONAL_STATUS__EOCL_QRY = helper.createQuery(GET_FUNCTIONAL_STATUS__EOCL_EXP);
+      }
+      catch (ParserException pe)
+      {
+        throw new UnsupportedOperationException(pe.getLocalizedMessage());
+      }
+    }
+    OCL.Query query = EOCL_ENV.createQuery(GET_FUNCTIONAL_STATUS__EOCL_QRY);
+    return (FunctionalStatusSection) query.evaluate(personalHealthcareMonitoringReport);
+  }
 
 	/**
-	 * The cached OCL expression body for the '{@link #getMedication(PersonalHealthcareMonitoringReport) <em>Get Medication</em>}' operation.
-	 * <!-- begin-user-doc -->
+   * The cached OCL expression body for the '{@link #getMedication(PersonalHealthcareMonitoringReport) <em>Get Medication</em>}' operation.
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getMedication(PersonalHealthcareMonitoringReport)
-	 * @generated
-	 * @ordered
-	 */
-	protected static final String GET_MEDICATION__EOCL_EXP = "self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(ccd::MedicationsSection))->asSequence()->first().oclAsType(ccd::MedicationsSection)";
+   * @see #getMedication(PersonalHealthcareMonitoringReport)
+   * @generated
+   * @ordered
+   */
+	protected static final String GET_MEDICATION__EOCL_EXP = "self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(ccd::MedicationsSection))->asSequence()->any(true).oclAsType(ccd::MedicationsSection)";
 
 	/**
-	 * The cached OCL query for the '{@link #getMedication(PersonalHealthcareMonitoringReport) <em>Get Medication</em>}' query operation.
-	 * <!-- begin-user-doc -->
+   * The cached OCL query for the '{@link #getMedication(PersonalHealthcareMonitoringReport) <em>Get Medication</em>}' query operation.
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getMedication(PersonalHealthcareMonitoringReport)
-	 * @generated
-	 * @ordered
-	 */
+   * @see #getMedication(PersonalHealthcareMonitoringReport)
+   * @generated
+   * @ordered
+   */
 	protected static OCLExpression<EClassifier> GET_MEDICATION__EOCL_QRY;
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(ccd::MedicationsSection))->asSequence()->first().oclAsType(ccd::MedicationsSection)
-	 * @param personalHealthcareMonitoringReport The receiving '<em><b>Personal Healthcare Monitoring Report</b></em>' model object.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public static  MedicationsSection getMedication(PersonalHealthcareMonitoringReport personalHealthcareMonitoringReport) {
-		if (GET_MEDICATION__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(PhmrPackage.Literals.PERSONAL_HEALTHCARE_MONITORING_REPORT, PhmrPackage.Literals.PERSONAL_HEALTHCARE_MONITORING_REPORT.getEAllOperations().get(65));
-			try {
-				GET_MEDICATION__EOCL_QRY = helper.createQuery(GET_MEDICATION__EOCL_EXP);
-			}
-			catch (ParserException pe) {
-				throw new UnsupportedOperationException(pe.getLocalizedMessage());
-			}
-		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_MEDICATION__EOCL_QRY);
-		return (MedicationsSection) query.evaluate(personalHealthcareMonitoringReport);
-	}
+    if (GET_MEDICATION__EOCL_QRY == null)
+    {
+      OCL.Helper helper = EOCL_ENV.createOCLHelper();
+      helper.setOperationContext(PhmrPackage.Literals.PERSONAL_HEALTHCARE_MONITORING_REPORT, PhmrPackage.Literals.PERSONAL_HEALTHCARE_MONITORING_REPORT.getEAllOperations().get(66));
+      try
+      {
+        GET_MEDICATION__EOCL_QRY = helper.createQuery(GET_MEDICATION__EOCL_EXP);
+      }
+      catch (ParserException pe)
+      {
+        throw new UnsupportedOperationException(pe.getLocalizedMessage());
+      }
+    }
+    OCL.Query query = EOCL_ENV.createQuery(GET_MEDICATION__EOCL_QRY);
+    return (MedicationsSection) query.evaluate(personalHealthcareMonitoringReport);
+  }
 
 	/**
-	 * The cached OCL expression body for the '{@link #getPurpose(PersonalHealthcareMonitoringReport) <em>Get Purpose</em>}' operation.
-	 * <!-- begin-user-doc -->
+   * The cached OCL expression body for the '{@link #getPurpose(PersonalHealthcareMonitoringReport) <em>Get Purpose</em>}' operation.
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getPurpose(PersonalHealthcareMonitoringReport)
-	 * @generated
-	 * @ordered
-	 */
-	protected static final String GET_PURPOSE__EOCL_EXP = "self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(ccd::PurposeSection))->asSequence()->first().oclAsType(ccd::PurposeSection)";
+   * @see #getPurpose(PersonalHealthcareMonitoringReport)
+   * @generated
+   * @ordered
+   */
+	protected static final String GET_PURPOSE__EOCL_EXP = "self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(ccd::PurposeSection))->asSequence()->any(true).oclAsType(ccd::PurposeSection)";
 
 	/**
-	 * The cached OCL query for the '{@link #getPurpose(PersonalHealthcareMonitoringReport) <em>Get Purpose</em>}' query operation.
-	 * <!-- begin-user-doc -->
+   * The cached OCL query for the '{@link #getPurpose(PersonalHealthcareMonitoringReport) <em>Get Purpose</em>}' query operation.
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getPurpose(PersonalHealthcareMonitoringReport)
-	 * @generated
-	 * @ordered
-	 */
+   * @see #getPurpose(PersonalHealthcareMonitoringReport)
+   * @generated
+   * @ordered
+   */
 	protected static OCLExpression<EClassifier> GET_PURPOSE__EOCL_QRY;
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(ccd::PurposeSection))->asSequence()->first().oclAsType(ccd::PurposeSection)
-	 * @param personalHealthcareMonitoringReport The receiving '<em><b>Personal Healthcare Monitoring Report</b></em>' model object.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public static  PurposeSection getPurpose(PersonalHealthcareMonitoringReport personalHealthcareMonitoringReport) {
-		if (GET_PURPOSE__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(PhmrPackage.Literals.PERSONAL_HEALTHCARE_MONITORING_REPORT, PhmrPackage.Literals.PERSONAL_HEALTHCARE_MONITORING_REPORT.getEAllOperations().get(66));
-			try {
-				GET_PURPOSE__EOCL_QRY = helper.createQuery(GET_PURPOSE__EOCL_EXP);
-			}
-			catch (ParserException pe) {
-				throw new UnsupportedOperationException(pe.getLocalizedMessage());
-			}
-		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_PURPOSE__EOCL_QRY);
-		return (PurposeSection) query.evaluate(personalHealthcareMonitoringReport);
-	}
+    if (GET_PURPOSE__EOCL_QRY == null)
+    {
+      OCL.Helper helper = EOCL_ENV.createOCLHelper();
+      helper.setOperationContext(PhmrPackage.Literals.PERSONAL_HEALTHCARE_MONITORING_REPORT, PhmrPackage.Literals.PERSONAL_HEALTHCARE_MONITORING_REPORT.getEAllOperations().get(67));
+      try
+      {
+        GET_PURPOSE__EOCL_QRY = helper.createQuery(GET_PURPOSE__EOCL_EXP);
+      }
+      catch (ParserException pe)
+      {
+        throw new UnsupportedOperationException(pe.getLocalizedMessage());
+      }
+    }
+    OCL.Query query = EOCL_ENV.createQuery(GET_PURPOSE__EOCL_QRY);
+    return (PurposeSection) query.evaluate(personalHealthcareMonitoringReport);
+  }
 
 } // PersonalHealthcareMonitoringReportOperations

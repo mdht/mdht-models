@@ -29,30 +29,31 @@ import org.openhealthtools.mdht.uml.cda.phcr.cocci.CocciPackage;
 public class CocciXMLProcessor extends XMLProcessor {
 
 	/**
-	 * Public constructor to instantiate the helper.
-	 * <!-- begin-user-doc -->
+   * Public constructor to instantiate the helper.
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public CocciXMLProcessor() {
-		super((EPackage.Registry.INSTANCE));
-		CocciPackage.eINSTANCE.eClass();
-	}
+    super((EPackage.Registry.INSTANCE));
+    CocciPackage.eINSTANCE.eClass();
+  }
 	
 	/**
-	 * Register for "*" and "xml" file extensions the CocciResourceFactoryImpl factory.
-	 * <!-- begin-user-doc -->
+   * Register for "*" and "xml" file extensions the CocciResourceFactoryImpl factory.
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	@Override
 	protected Map<String, Resource.Factory> getRegistrations() {
-		if (registrations == null) {
-			super.getRegistrations();
-			registrations.put(XML_EXTENSION, new CocciResourceFactoryImpl());
-			registrations.put(STAR_EXTENSION, new CocciResourceFactoryImpl());
-		}
-		return registrations;
-	}
+    if (registrations == null)
+    {
+      super.getRegistrations();
+      registrations.put(XML_EXTENSION, new CocciResourceFactoryImpl());
+      registrations.put(STAR_EXTENSION, new CocciResourceFactoryImpl());
+    }
+    return registrations;
+  }
 
 } //CocciXMLProcessor

@@ -6,12 +6,15 @@
  */
 package org.openhealthtools.mdht.uml.cda.emspcr.impl;
 
+import java.lang.Iterable;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
 
 import org.eclipse.emf.ecore.EClass;
 
+import org.eclipse.emf.ecore.EObject;
+import org.openhealthtools.mdht.emf.runtime.util.Initializer;
 import org.openhealthtools.mdht.uml.cda.consol.impl.GeneralHeaderConstraintsImpl;
 
 import org.openhealthtools.mdht.uml.cda.emspcr.EMSAdvanceDirectivesSection;
@@ -92,6 +95,16 @@ public class PatientCareReportImpl extends GeneralHeaderConstraintsImpl implemen
   public boolean validatePatientCareReportMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context)
   {
     return PatientCareReportOperations.validatePatientCareReportMoodCode(this, diagnostics, context);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public boolean validatePatientCareReportCodeP(DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+    return PatientCareReportOperations.validatePatientCareReportCodeP(this, diagnostics, context);
   }
 
   /**
@@ -660,19 +673,17 @@ public class PatientCareReportImpl extends GeneralHeaderConstraintsImpl implemen
    * <!-- end-user-doc -->
    * @generated
    */
-  @Override
-  public boolean validateGeneralHeaderConstraintsCode(DiagnosticChain diagnostics, Map<Object, Object> context)
-  {
-    return PatientCareReportOperations.validateGeneralHeaderConstraintsCode(this, diagnostics, context);
+  public PatientCareReport init() {
+      return Initializer.Util.init(this);
   }
 
   /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public PatientCareReport init() {
-    	CDAUtil.init(this);
-    	return this;
-  }
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    public PatientCareReport init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
 } //PatientCareReportImpl

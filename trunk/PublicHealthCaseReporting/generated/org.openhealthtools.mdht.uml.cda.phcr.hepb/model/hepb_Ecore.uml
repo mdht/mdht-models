@@ -20,44 +20,44 @@
       <importedPackage href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_KnCD4CFjEd-3s7f6mWX-3A"/>
     </packageImport>
     <packagedElement xmi:type="uml:Class" xmi:id="_S8IT4U6GEeG_dcj91TvCTg" name="AcuteHepatitisBCaseReport">
-      <ownedRule xmi:id="_ZV04QcHyEeGQ1oYRXtYJxg" name="PublicHealthCaseReportTemplateId" constrainedElement="_S8IT4U6GEeG_dcj91TvCTg">
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_ZV04QsHyEeGQ1oYRXtYJxg">
+      <ownedRule xmi:id="_lc9poO1qEeGeHKjzItayOg" name="PublicHealthCaseReportTemplateId" constrainedElement="_S8IT4U6GEeG_dcj91TvCTg">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_lc9poe1qEeGeHKjzItayOg">
           <language>OCL</language>
           <body>self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.15.1.2')</body>
         </specification>
       </ownedRule>
-      <ownedRule xmi:id="_ZV04RMHyEeGQ1oYRXtYJxg" name="AcuteHepatitisBCaseReportTitle" constrainedElement="_S8IT4U6GEeG_dcj91TvCTg">
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_ZV04RcHyEeGQ1oYRXtYJxg">
+      <ownedRule xmi:id="_lc-3wO1qEeGeHKjzItayOg" name="AcuteHepatitisBCaseReportTitle" constrainedElement="_S8IT4U6GEeG_dcj91TvCTg">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_lc-3we1qEeGeHKjzItayOg">
           <language>OCL</language>
           <body>(self.title.oclIsUndefined() or self.title.isNullFlavorUndefined()) implies (not self.title.oclIsUndefined() and self.title.getText() = 'Public Health Case Report - Acute Hepatitis B')</body>
         </specification>
       </ownedRule>
-      <ownedRule xmi:id="_ZZ2cqMHyEeGQ1oYRXtYJxg" name="AcuteHepatitisBCaseReportAcuteHepatitisBSocialHistorySection" constrainedElement="_S8IT4U6GEeG_dcj91TvCTg">
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_ZZ2cqcHyEeGQ1oYRXtYJxg">
+      <ownedRule xmi:id="_le_C4O1qEeGeHKjzItayOg" name="AcuteHepatitisBCaseReportAcuteHepatitisBSocialHistorySection" constrainedElement="_S8IT4U6GEeG_dcj91TvCTg">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_le_C4e1qEeGeHKjzItayOg">
           <language>OCL</language>
           <body>self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hepb::AcuteHepatitisBSocialHistorySection))</body>
         </specification>
       </ownedRule>
-      <ownedRule xmi:id="_ZaANpcHyEeGQ1oYRXtYJxg" name="AcuteHepatitisBCaseReportAcuteHepatitisBPHCRClinicalInformationSection" constrainedElement="_S8IT4U6GEeG_dcj91TvCTg">
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_ZaANpsHyEeGQ1oYRXtYJxg">
+      <ownedRule xmi:id="_lfA4EO1qEeGeHKjzItayOg" name="AcuteHepatitisBCaseReportAcuteHepatitisBPHCRClinicalInformationSection" constrainedElement="_S8IT4U6GEeG_dcj91TvCTg">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_lfA4Ee1qEeGeHKjzItayOg">
           <language>OCL</language>
           <body>self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hepb::AcuteHepatitisBPHCRClinicalInformationSection))</body>
         </specification>
       </ownedRule>
-      <ownedRule xmi:id="_ZaJXlcHyEeGQ1oYRXtYJxg" name="AcuteHepatitisBCaseReportAcuteHepatitisBImmunizationSection" constrainedElement="_S8IT4U6GEeG_dcj91TvCTg">
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_ZaJXlsHyEeGQ1oYRXtYJxg">
+      <ownedRule xmi:id="_lfCtQO1qEeGeHKjzItayOg" name="AcuteHepatitisBCaseReportAcuteHepatitisBImmunizationSection" constrainedElement="_S8IT4U6GEeG_dcj91TvCTg">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_lfCtQe1qEeGeHKjzItayOg">
           <language>OCL</language>
           <body>self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hepb::AcuteHepatitisBImmunizationSection))</body>
         </specification>
       </ownedRule>
-      <ownedRule xmi:id="_ZaJXnMHyEeGQ1oYRXtYJxg" name="AcuteHepatitisBCaseReportAcuteHepatitisBPHCRTreatmentInformationSection" constrainedElement="_S8IT4U6GEeG_dcj91TvCTg">
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_ZaJXncHyEeGQ1oYRXtYJxg">
+      <ownedRule xmi:id="_lfD7Ze1qEeGeHKjzItayOg" name="AcuteHepatitisBCaseReportAcuteHepatitisBPHCRTreatmentInformationSection" constrainedElement="_S8IT4U6GEeG_dcj91TvCTg">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_lfEicO1qEeGeHKjzItayOg">
           <language>OCL</language>
           <body>self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hepb::AcuteHepatitisBPHCRTreatmentInformationSection))</body>
         </specification>
       </ownedRule>
-      <ownedRule xmi:id="_ZamDhcHyEeGQ1oYRXtYJxg" name="AcuteHepatitisBCaseReportAcuteHepatitisBPHCRRelevantDiagnosticTestsAndOrLaboratoryDataSection" constrainedElement="_S8IT4U6GEeG_dcj91TvCTg">
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_ZamDhsHyEeGQ1oYRXtYJxg">
+      <ownedRule xmi:id="_lfNFUO1qEeGeHKjzItayOg" name="AcuteHepatitisBCaseReportAcuteHepatitisBPHCRRelevantDiagnosticTestsAndOrLaboratoryDataSection" constrainedElement="_S8IT4U6GEeG_dcj91TvCTg">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_lfNFUe1qEeGeHKjzItayOg">
           <language>OCL</language>
           <body>self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hepb::AcuteHepatitisBPHCRRelevantDiagnosticTestsAndOrLaboratoryDataSection))</body>
         </specification>
@@ -65,95 +65,111 @@
       <generalization xmi:id="_S8IT406GEeG_dcj91TvCTg">
         <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.phcr/model/phcr_Ecore.uml#_6PmAIcgnEeCI5ZpfyBisiQ"/>
       </generalization>
-      <ownedOperation xmi:id="_ZaANoMHyEeGQ1oYRXtYJxg" name="getAcuteHepatitisBSocialHistorySection" isQuery="true" bodyCondition="_ZaANo8HyEeGQ1oYRXtYJxg">
-        <ownedRule xmi:id="_ZaANo8HyEeGQ1oYRXtYJxg" name="body" constrainedElement="_ZaANoMHyEeGQ1oYRXtYJxg">
-          <specification xmi:type="uml:OpaqueExpression" xmi:id="_ZaANpMHyEeGQ1oYRXtYJxg">
+      <ownedOperation xmi:id="_lfARAO1qEeGeHKjzItayOg" name="getAcuteHepatitisBSocialHistorySection" isQuery="true" bodyCondition="_lfARA-1qEeGeHKjzItayOg">
+        <ownedRule xmi:id="_lfARA-1qEeGeHKjzItayOg" name="body" constrainedElement="_lfARAO1qEeGeHKjzItayOg">
+          <specification xmi:type="uml:OpaqueExpression" xmi:id="_lfARBO1qEeGeHKjzItayOg">
             <language>OCL</language>
-            <body>self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hepb::AcuteHepatitisBSocialHistorySection))->asSequence()->first().oclAsType(hepb::AcuteHepatitisBSocialHistorySection)</body>
+            <body>self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hepb::AcuteHepatitisBSocialHistorySection))->asSequence()->any(true).oclAsType(hepb::AcuteHepatitisBSocialHistorySection)</body>
           </specification>
         </ownedRule>
-        <ownedParameter xmi:id="_ZaANocHyEeGQ1oYRXtYJxg" type="_hVP04JyuEeG50volhed9tg" direction="return">
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ZaANosHyEeGQ1oYRXtYJxg" value="1"/>
+        <ownedParameter xmi:id="_lfARAe1qEeGeHKjzItayOg" type="_hVP04JyuEeG50volhed9tg" direction="return">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_lfARAu1qEeGeHKjzItayOg" value="1"/>
         </ownedParameter>
       </ownedOperation>
-      <ownedOperation xmi:id="_ZaJXkMHyEeGQ1oYRXtYJxg" name="getAcuteHepatitisBPHCRClinicalInformationSection" isQuery="true" bodyCondition="_ZaJXk8HyEeGQ1oYRXtYJxg">
-        <ownedRule xmi:id="_ZaJXk8HyEeGQ1oYRXtYJxg" name="body" constrainedElement="_ZaJXkMHyEeGQ1oYRXtYJxg">
-          <specification xmi:type="uml:OpaqueExpression" xmi:id="_ZaJXlMHyEeGQ1oYRXtYJxg">
+      <ownedOperation xmi:id="_lfCGMO1qEeGeHKjzItayOg" name="getAcuteHepatitisBPHCRClinicalInformationSection" isQuery="true" bodyCondition="_lfCGM-1qEeGeHKjzItayOg">
+        <ownedRule xmi:id="_lfCGM-1qEeGeHKjzItayOg" name="body" constrainedElement="_lfCGMO1qEeGeHKjzItayOg">
+          <specification xmi:type="uml:OpaqueExpression" xmi:id="_lfCGNO1qEeGeHKjzItayOg">
             <language>OCL</language>
-            <body>self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hepb::AcuteHepatitisBPHCRClinicalInformationSection))->asSequence()->first().oclAsType(hepb::AcuteHepatitisBPHCRClinicalInformationSection)</body>
+            <body>self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hepb::AcuteHepatitisBPHCRClinicalInformationSection))->asSequence()->any(true).oclAsType(hepb::AcuteHepatitisBPHCRClinicalInformationSection)</body>
           </specification>
         </ownedRule>
-        <ownedParameter xmi:id="_ZaJXkcHyEeGQ1oYRXtYJxg" type="_UhAFQJ19EeG50volhed9tg" direction="return">
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ZaJXksHyEeGQ1oYRXtYJxg" value="1"/>
+        <ownedParameter xmi:id="_lfCGMe1qEeGeHKjzItayOg" type="_UhAFQJ19EeG50volhed9tg" direction="return">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_lfCGMu1qEeGeHKjzItayOg" value="1"/>
         </ownedParameter>
       </ownedOperation>
-      <ownedOperation xmi:id="_ZaJXl8HyEeGQ1oYRXtYJxg" name="getAcuteHepatitisBImmunizationSection" isQuery="true" bodyCondition="_ZaJXmsHyEeGQ1oYRXtYJxg">
-        <ownedRule xmi:id="_ZaJXmsHyEeGQ1oYRXtYJxg" name="body" constrainedElement="_ZaJXl8HyEeGQ1oYRXtYJxg">
-          <specification xmi:type="uml:OpaqueExpression" xmi:id="_ZaJXm8HyEeGQ1oYRXtYJxg">
+      <ownedOperation xmi:id="_lfD7YO1qEeGeHKjzItayOg" name="getAcuteHepatitisBImmunizationSection" isQuery="true" bodyCondition="_lfD7Y-1qEeGeHKjzItayOg">
+        <ownedRule xmi:id="_lfD7Y-1qEeGeHKjzItayOg" name="body" constrainedElement="_lfD7YO1qEeGeHKjzItayOg">
+          <specification xmi:type="uml:OpaqueExpression" xmi:id="_lfD7ZO1qEeGeHKjzItayOg">
             <language>OCL</language>
-            <body>self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hepb::AcuteHepatitisBImmunizationSection))->asSequence()->first().oclAsType(hepb::AcuteHepatitisBImmunizationSection)</body>
+            <body>self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hepb::AcuteHepatitisBImmunizationSection))->asSequence()->any(true).oclAsType(hepb::AcuteHepatitisBImmunizationSection)</body>
           </specification>
         </ownedRule>
-        <ownedParameter xmi:id="_ZaJXmMHyEeGQ1oYRXtYJxg" type="_gD9zMJyuEeG50volhed9tg" direction="return">
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ZaJXmcHyEeGQ1oYRXtYJxg" value="1"/>
+        <ownedParameter xmi:id="_lfD7Ye1qEeGeHKjzItayOg" type="_gD9zMJyuEeG50volhed9tg" direction="return">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_lfD7Yu1qEeGeHKjzItayOg" value="1"/>
         </ownedParameter>
       </ownedOperation>
-      <ownedOperation xmi:id="_ZaTIkMHyEeGQ1oYRXtYJxg" name="getAcuteHepatitisBPHCRTreatmentInformationSection" isQuery="true" bodyCondition="_ZaTIk8HyEeGQ1oYRXtYJxg">
-        <ownedRule xmi:id="_ZaTIk8HyEeGQ1oYRXtYJxg" name="body" constrainedElement="_ZaTIkMHyEeGQ1oYRXtYJxg">
-          <specification xmi:type="uml:OpaqueExpression" xmi:id="_ZaTIlMHyEeGQ1oYRXtYJxg">
+      <ownedOperation xmi:id="_lfFJgO1qEeGeHKjzItayOg" name="getAcuteHepatitisBPHCRTreatmentInformationSection" isQuery="true" bodyCondition="_lfFJg-1qEeGeHKjzItayOg">
+        <ownedRule xmi:id="_lfFJg-1qEeGeHKjzItayOg" name="body" constrainedElement="_lfFJgO1qEeGeHKjzItayOg">
+          <specification xmi:type="uml:OpaqueExpression" xmi:id="_lfFJhO1qEeGeHKjzItayOg">
             <language>OCL</language>
-            <body>self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hepb::AcuteHepatitisBPHCRTreatmentInformationSection))->asSequence()->first().oclAsType(hepb::AcuteHepatitisBPHCRTreatmentInformationSection)</body>
+            <body>self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hepb::AcuteHepatitisBPHCRTreatmentInformationSection))->asSequence()->any(true).oclAsType(hepb::AcuteHepatitisBPHCRTreatmentInformationSection)</body>
           </specification>
         </ownedRule>
-        <ownedParameter xmi:id="_ZaTIkcHyEeGQ1oYRXtYJxg" type="_8AQCkJ2YEeG50volhed9tg" direction="return">
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ZaTIksHyEeGQ1oYRXtYJxg" value="1"/>
+        <ownedParameter xmi:id="_lfFJge1qEeGeHKjzItayOg" type="_8AQCkJ2YEeG50volhed9tg" direction="return">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_lfFJgu1qEeGeHKjzItayOg" value="1"/>
         </ownedParameter>
       </ownedOperation>
-      <ownedOperation xmi:id="_ZamDh8HyEeGQ1oYRXtYJxg" name="getAcuteHepatitisBPHCRRelevantDiagnosticTestsAndOrLaboratoryDataSection" isQuery="true" bodyCondition="_ZamDisHyEeGQ1oYRXtYJxg">
-        <ownedRule xmi:id="_ZamDisHyEeGQ1oYRXtYJxg" name="body" constrainedElement="_ZamDh8HyEeGQ1oYRXtYJxg">
-          <specification xmi:type="uml:OpaqueExpression" xmi:id="_ZamDi8HyEeGQ1oYRXtYJxg">
+      <ownedOperation xmi:id="_lfNsYO1qEeGeHKjzItayOg" name="getAcuteHepatitisBPHCRRelevantDiagnosticTestsAndOrLaboratoryDataSection" isQuery="true" bodyCondition="_lfNsY-1qEeGeHKjzItayOg">
+        <ownedRule xmi:id="_lfNsY-1qEeGeHKjzItayOg" name="body" constrainedElement="_lfNsYO1qEeGeHKjzItayOg">
+          <specification xmi:type="uml:OpaqueExpression" xmi:id="_lfOTcO1qEeGeHKjzItayOg">
             <language>OCL</language>
-            <body>self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hepb::AcuteHepatitisBPHCRRelevantDiagnosticTestsAndOrLaboratoryDataSection))->asSequence()->first().oclAsType(hepb::AcuteHepatitisBPHCRRelevantDiagnosticTestsAndOrLaboratoryDataSection)</body>
+            <body>self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hepb::AcuteHepatitisBPHCRRelevantDiagnosticTestsAndOrLaboratoryDataSection))->asSequence()->any(true).oclAsType(hepb::AcuteHepatitisBPHCRRelevantDiagnosticTestsAndOrLaboratoryDataSection)</body>
           </specification>
         </ownedRule>
-        <ownedParameter xmi:id="_ZamDiMHyEeGQ1oYRXtYJxg" type="_a6mTgJ2cEeG50volhed9tg" direction="return">
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ZamDicHyEeGQ1oYRXtYJxg" value="1"/>
+        <ownedParameter xmi:id="_lfNsYe1qEeGeHKjzItayOg" type="_a6mTgJ2cEeG50volhed9tg" direction="return">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_lfNsYu1qEeGeHKjzItayOg" value="1"/>
         </ownedParameter>
       </ownedOperation>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_cugTQJyuEeG50volhed9tg" name="AcuteHepatitisBActualBloodAndOrBodyFluidExposureObservation ">
-      <ownedRule xmi:id="_ZV-pQMHyEeGQ1oYRXtYJxg" name="AcuteHepatitisBActualBloodAndOrBodyFluidExposureObservation TemplateId" constrainedElement="_cugTQJyuEeG50volhed9tg">
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_ZV-pQcHyEeGQ1oYRXtYJxg">
+      <ownedRule xmi:id="_ldAs8O1qEeGeHKjzItayOg" name="AcuteHepatitisBActualBloodAndOrBodyFluidExposureObservation TemplateId" constrainedElement="_cugTQJyuEeG50volhed9tg">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_ldAs8e1qEeGeHKjzItayOg">
           <language>OCL</language>
           <body>self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.15.3.26')</body>
         </specification>
       </ownedRule>
-      <ownedRule xmi:id="_ZWIaQMHyEeGQ1oYRXtYJxg" name="AcuteHepatitisBActualBloodAndOrBodyFluidExposureObservation Code" constrainedElement="_cugTQJyuEeG50volhed9tg">
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_ZWIaQcHyEeGQ1oYRXtYJxg">
+      <ownedRule xmi:id="_ldE-YO1qEeGeHKjzItayOg" name="AcuteHepatitisBActualBloodAndOrBodyFluidExposureObservation CodeP" constrainedElement="_cugTQJyuEeG50volhed9tg">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_ldE-Ye1qEeGeHKjzItayOg">
           <language>OCL</language>
-          <body>(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and &#xD;&#xA;let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in (&#xD;&#xA;value.codeSystem = '2.16.840.1.113883.6.1' and (value.code = '55218-2' or value.code = '55214-1' or value.code = '55213-3' or value.code = '55216-6' or value.code = '55217-4' or value.code = '55215-8')))</body>
+          <body>(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined())</body>
         </specification>
       </ownedRule>
-      <ownedRule xmi:id="_ZWIaQsHyEeGQ1oYRXtYJxg" name="AcuteHepatitisBActualBloodAndOrBodyFluidExposureObservation StatusCode" constrainedElement="_cugTQJyuEeG50volhed9tg">
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_ZWIaQ8HyEeGQ1oYRXtYJxg">
+      <ownedRule xmi:id="_ldDJMO1qEeGeHKjzItayOg" name="AcuteHepatitisBActualBloodAndOrBodyFluidExposureObservation Code" constrainedElement="_cugTQJyuEeG50volhed9tg">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_ldDJMe1qEeGeHKjzItayOg">
           <language>OCL</language>
-          <body>(self.statusCode.oclIsUndefined() or self.statusCode.isNullFlavorUndefined()) implies (not self.statusCode.oclIsUndefined() and self.statusCode.oclIsKindOf(datatypes::CS) and &#xD;&#xA;let value : datatypes::CS = self.statusCode.oclAsType(datatypes::CS) in (&#xD;&#xA;value.code = 'completed'))</body>
+          <body>(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and 
+let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in 
+value.codeSystem = '2.16.840.1.113883.6.1' and (value.code = '55218-2' or value.code = '55214-1' or value.code = '55213-3' or value.code = '55216-6' or value.code = '55217-4' or value.code = '55215-8'))</body>
         </specification>
       </ownedRule>
-      <ownedRule xmi:id="_ZWRkMMHyEeGQ1oYRXtYJxg" name="AcuteHepatitisBActualBloodAndOrBodyFluidExposureObservation ClassCode" constrainedElement="_cugTQJyuEeG50volhed9tg">
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_ZWRkMcHyEeGQ1oYRXtYJxg">
+      <ownedRule xmi:id="_ldIBsO1qEeGeHKjzItayOg" name="AcuteHepatitisBActualBloodAndOrBodyFluidExposureObservation StatusCode" constrainedElement="_cugTQJyuEeG50volhed9tg">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_ldIBse1qEeGeHKjzItayOg">
+          <language>OCL</language>
+          <body>(self.statusCode.oclIsUndefined() or self.statusCode.isNullFlavorUndefined()) implies (not self.statusCode.oclIsUndefined() and self.statusCode.oclIsKindOf(datatypes::CS) and 
+let value : datatypes::CS = self.statusCode.oclAsType(datatypes::CS) in 
+value.code = 'completed')</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_ldKd8O1qEeGeHKjzItayOg" name="AcuteHepatitisBActualBloodAndOrBodyFluidExposureObservation StatusCodeP" constrainedElement="_cugTQJyuEeG50volhed9tg">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_ldKd8e1qEeGeHKjzItayOg">
+          <language>OCL</language>
+          <body>(self.statusCode.oclIsUndefined() or self.statusCode.isNullFlavorUndefined()) implies (not self.statusCode.oclIsUndefined())</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_ldMTIO1qEeGeHKjzItayOg" name="AcuteHepatitisBActualBloodAndOrBodyFluidExposureObservation ClassCode" constrainedElement="_cugTQJyuEeG50volhed9tg">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_ldMTIe1qEeGeHKjzItayOg">
           <language>OCL</language>
           <body>isDefined('classCode')</body>
         </specification>
       </ownedRule>
-      <ownedRule xmi:id="_ZWRkMsHyEeGQ1oYRXtYJxg" name="AcuteHepatitisBActualBloodAndOrBodyFluidExposureObservation Id" constrainedElement="_cugTQJyuEeG50volhed9tg">
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_ZWRkM8HyEeGQ1oYRXtYJxg">
+      <ownedRule xmi:id="_ldOIUO1qEeGeHKjzItayOg" name="AcuteHepatitisBActualBloodAndOrBodyFluidExposureObservation Id" constrainedElement="_cugTQJyuEeG50volhed9tg">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_ldOIUe1qEeGeHKjzItayOg">
           <language>OCL</language>
           <body>(self.id->isEmpty() or self.id->exists(element | element.isNullFlavorUndefined())) implies (not self.id->isEmpty())</body>
         </specification>
       </ownedRule>
-      <ownedRule xmi:id="_ZWbVMMHyEeGQ1oYRXtYJxg" name="AcuteHepatitisBActualBloodAndOrBodyFluidExposureObservation MoodCode" constrainedElement="_cugTQJyuEeG50volhed9tg">
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_ZWbVMcHyEeGQ1oYRXtYJxg">
+      <ownedRule xmi:id="_ldPWcO1qEeGeHKjzItayOg" name="AcuteHepatitisBActualBloodAndOrBodyFluidExposureObservation MoodCode" constrainedElement="_cugTQJyuEeG50volhed9tg">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_ldP9gO1qEeGeHKjzItayOg">
           <language>OCL</language>
           <body>isDefined('moodCode')</body>
         </specification>
@@ -163,14 +179,14 @@
       </generalization>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_gD9zMJyuEeG50volhed9tg" name="AcuteHepatitisBImmunizationSection">
-      <ownedRule xmi:id="_ZWbVMsHyEeGQ1oYRXtYJxg" name="ImmunizationsSectionTemplateId" constrainedElement="_gD9zMJyuEeG50volhed9tg">
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_ZWbVM8HyEeGQ1oYRXtYJxg">
+      <ownedRule xmi:id="_ldRLoO1qEeGeHKjzItayOg" name="ImmunizationsSectionTemplateId" constrainedElement="_gD9zMJyuEeG50volhed9tg">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_ldRysO1qEeGeHKjzItayOg">
           <language>OCL</language>
           <body>self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.15.2.9')</body>
         </specification>
       </ownedRule>
-      <ownedRule xmi:id="_ZaTIlcHyEeGQ1oYRXtYJxg" name="AcuteHepatitisBImmunizationSectionAcuteHepatitisBImmunizationActivity" constrainedElement="_gD9zMJyuEeG50volhed9tg">
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_ZaTIlsHyEeGQ1oYRXtYJxg">
+      <ownedRule xmi:id="_lfFwkO1qEeGeHKjzItayOg" name="AcuteHepatitisBImmunizationSectionAcuteHepatitisBImmunizationActivity" constrainedElement="_gD9zMJyuEeG50volhed9tg">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_lfFwke1qEeGeHKjzItayOg">
           <language>OCL</language>
           <body>self.entry->exists(entry : cda::Entry | not entry.substanceAdministration.oclIsUndefined() and entry.substanceAdministration.oclIsKindOf(hepb::AcuteHepatitisBImmunizationActivity) and entry.typeCode = vocab::x_ActRelationshipEntry::DRIV)</body>
         </specification>
@@ -178,45 +194,45 @@
       <generalization xmi:id="_gD9zMZyuEeG50volhed9tg">
         <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.ccd/model/ccd_Ecore.uml#_CinbMHDPEd6eItyqb1FoWg"/>
       </generalization>
-      <ownedOperation xmi:id="_ZaTIl8HyEeGQ1oYRXtYJxg" name="getAcuteHepatitisBImmunizationActivities" isQuery="true" bodyCondition="_ZaTImsHyEeGQ1oYRXtYJxg">
-        <ownedRule xmi:id="_ZaTImsHyEeGQ1oYRXtYJxg" name="body" constrainedElement="_ZaTIl8HyEeGQ1oYRXtYJxg">
-          <specification xmi:type="uml:OpaqueExpression" xmi:id="_ZaTIm8HyEeGQ1oYRXtYJxg">
+      <ownedOperation xmi:id="_lfG-sO1qEeGeHKjzItayOg" name="getAcuteHepatitisBImmunizationActivities" isQuery="true" bodyCondition="_lfG-s-1qEeGeHKjzItayOg">
+        <ownedRule xmi:id="_lfG-s-1qEeGeHKjzItayOg" name="body" constrainedElement="_lfG-sO1qEeGeHKjzItayOg">
+          <specification xmi:type="uml:OpaqueExpression" xmi:id="_lfG-tO1qEeGeHKjzItayOg">
             <language>OCL</language>
             <body>self.getSubstanceAdministrations()->select(substanceAdministration : cda::SubstanceAdministration | not substanceAdministration.oclIsUndefined() and substanceAdministration.oclIsKindOf(hepb::AcuteHepatitisBImmunizationActivity)).oclAsType(hepb::AcuteHepatitisBImmunizationActivity)</body>
           </specification>
         </ownedRule>
-        <ownedParameter xmi:id="_ZaTImMHyEeGQ1oYRXtYJxg" type="_bmCZAJ2jEeG50volhed9tg" direction="return">
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ZaTImcHyEeGQ1oYRXtYJxg" value="*"/>
+        <ownedParameter xmi:id="_lfG-se1qEeGeHKjzItayOg" type="_bmCZAJ2jEeG50volhed9tg" direction="return">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_lfG-su1qEeGeHKjzItayOg" value="*"/>
         </ownedParameter>
       </ownedOperation>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_hVP04JyuEeG50volhed9tg" name="AcuteHepatitisBSocialHistorySection">
-      <ownedRule xmi:id="_ZWkfIsHyEeGQ1oYRXtYJxg" name="SocialHistorySectionTemplateId" constrainedElement="_hVP04JyuEeG50volhed9tg">
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_ZWkfI8HyEeGQ1oYRXtYJxg">
+      <ownedRule xmi:id="_ldTA0u1qEeGeHKjzItayOg" name="SocialHistorySectionTemplateId" constrainedElement="_hVP04JyuEeG50volhed9tg">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_ldTn4O1qEeGeHKjzItayOg">
           <language>OCL</language>
           <body>self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.15.2.11')</body>
         </specification>
       </ownedRule>
-      <ownedRule xmi:id="_ZW4BJMHyEeGQ1oYRXtYJxg" name="AcuteHepatitisBSocialHistorySectionJobRelatedBodyFluidExposureRiskFrequencyObservation" constrainedElement="_hVP04JyuEeG50volhed9tg">
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_ZW4BJcHyEeGQ1oYRXtYJxg">
+      <ownedRule xmi:id="_ldi4cO1qEeGeHKjzItayOg" name="AcuteHepatitisBSocialHistorySectionJobRelatedBodyFluidExposureRiskFrequencyObservation" constrainedElement="_hVP04JyuEeG50volhed9tg">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_ldi4ce1qEeGeHKjzItayOg">
           <language>OCL</language>
           <body>self.entry->exists(entry : cda::Entry | not entry.observation.oclIsUndefined() and entry.observation.oclIsKindOf(hepb::JobRelatedBodyFluidExposureRiskFrequencyObservation) and entry.typeCode = vocab::x_ActRelationshipEntry::DRIV)</body>
         </specification>
       </ownedRule>
-      <ownedRule xmi:id="_ZaTInMHyEeGQ1oYRXtYJxg" name="AcuteHepatitisBSocialHistorySectionAcuteHepatitisBPossibleExposureLocationAndTypeAct" constrainedElement="_hVP04JyuEeG50volhed9tg">
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_ZaTIncHyEeGQ1oYRXtYJxg">
+      <ownedRule xmi:id="_lfHlwO1qEeGeHKjzItayOg" name="AcuteHepatitisBSocialHistorySectionAcuteHepatitisBPossibleExposureLocationAndTypeAct" constrainedElement="_hVP04JyuEeG50volhed9tg">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_lfHlwe1qEeGeHKjzItayOg">
           <language>OCL</language>
           <body>self.entry->exists(entry : cda::Entry | not entry.act.oclIsUndefined() and entry.act.oclIsKindOf(hepb::AcuteHepatitisBPossibleExposureLocationAndTypeAct) and entry.typeCode = vocab::x_ActRelationshipEntry::DRIV)</body>
         </specification>
       </ownedRule>
-      <ownedRule xmi:id="_Zac5kMHyEeGQ1oYRXtYJxg" name="AcuteHepatitisBSocialHistorySectionAcuteHepatitisBSocioBehavioralBooleanRiskFactorObservation" constrainedElement="_hVP04JyuEeG50volhed9tg">
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_Zac5kcHyEeGQ1oYRXtYJxg">
+      <ownedRule xmi:id="_lfIz4O1qEeGeHKjzItayOg" name="AcuteHepatitisBSocialHistorySectionAcuteHepatitisBSocioBehavioralBooleanRiskFactorObservation" constrainedElement="_hVP04JyuEeG50volhed9tg">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_lfIz4e1qEeGeHKjzItayOg">
           <language>OCL</language>
           <body>self.entry->exists(entry : cda::Entry | not entry.observation.oclIsUndefined() and entry.observation.oclIsKindOf(hepb::AcuteHepatitisBSocioBehavioralBooleanRiskFactorObservation) and entry.typeCode = vocab::x_ActRelationshipEntry::DRIV)</body>
         </specification>
       </ownedRule>
-      <ownedRule xmi:id="_ZamDjMHyEeGQ1oYRXtYJxg" name="AcuteHepatitisBSocialHistorySectionAcuteHepatitisBActualBloodAndOrBodyFluidExposureObservation " constrainedElement="_hVP04JyuEeG50volhed9tg">
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_ZamDjcHyEeGQ1oYRXtYJxg">
+      <ownedRule xmi:id="_lfOTce1qEeGeHKjzItayOg" name="AcuteHepatitisBSocialHistorySectionAcuteHepatitisBActualBloodAndOrBodyFluidExposureObservation " constrainedElement="_hVP04JyuEeG50volhed9tg">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_lfOTcu1qEeGeHKjzItayOg">
           <language>OCL</language>
           <body>self.entry->exists(entry : cda::Entry | not entry.observation.oclIsUndefined() and entry.observation.oclIsKindOf(hepb::AcuteHepatitisBActualBloodAndOrBodyFluidExposureObservation ) and entry.typeCode = vocab::x_ActRelationshipEntry::DRIV)</body>
         </specification>
@@ -224,78 +240,94 @@
       <generalization xmi:id="_QkeEMJ3_EeGFifiMpnccVA">
         <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.phcr/model/phcr_Ecore.uml#_Fw7f4MgpEeCI5ZpfyBisiQ"/>
       </generalization>
-      <ownedOperation xmi:id="_ZXK8EMHyEeGQ1oYRXtYJxg" name="getJobRelatedBodyFluidExposureRiskFrequencyObservations" isQuery="true" bodyCondition="_ZXK8E8HyEeGQ1oYRXtYJxg">
-        <ownedRule xmi:id="_ZXK8E8HyEeGQ1oYRXtYJxg" name="body" constrainedElement="_ZXK8EMHyEeGQ1oYRXtYJxg">
-          <specification xmi:type="uml:OpaqueExpression" xmi:id="_ZXK8FMHyEeGQ1oYRXtYJxg">
+      <ownedOperation xmi:id="_ldkGkO1qEeGeHKjzItayOg" name="getJobRelatedBodyFluidExposureRiskFrequencyObservations" isQuery="true" bodyCondition="_ldkGk-1qEeGeHKjzItayOg">
+        <ownedRule xmi:id="_ldkGk-1qEeGeHKjzItayOg" name="body" constrainedElement="_ldkGkO1qEeGeHKjzItayOg">
+          <specification xmi:type="uml:OpaqueExpression" xmi:id="_ldkGlO1qEeGeHKjzItayOg">
             <language>OCL</language>
             <body>self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(hepb::JobRelatedBodyFluidExposureRiskFrequencyObservation)).oclAsType(hepb::JobRelatedBodyFluidExposureRiskFrequencyObservation)</body>
           </specification>
         </ownedRule>
-        <ownedParameter xmi:id="_ZXK8EcHyEeGQ1oYRXtYJxg" type="_lEbcYJyuEeG50volhed9tg" direction="return">
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ZXK8EsHyEeGQ1oYRXtYJxg" value="*"/>
+        <ownedParameter xmi:id="_ldkGke1qEeGeHKjzItayOg" type="_lEbcYJyuEeG50volhed9tg" direction="return">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ldkGku1qEeGeHKjzItayOg" value="*"/>
         </ownedParameter>
       </ownedOperation>
-      <ownedOperation xmi:id="_ZaTInsHyEeGQ1oYRXtYJxg" name="getAcuteHepatitisBPossibleExposureLocationAndTypeActs" isQuery="true" bodyCondition="_ZaTIocHyEeGQ1oYRXtYJxg">
-        <ownedRule xmi:id="_ZaTIocHyEeGQ1oYRXtYJxg" name="body" constrainedElement="_ZaTInsHyEeGQ1oYRXtYJxg">
-          <specification xmi:type="uml:OpaqueExpression" xmi:id="_ZaTIosHyEeGQ1oYRXtYJxg">
+      <ownedOperation xmi:id="_lfIM0O1qEeGeHKjzItayOg" name="getAcuteHepatitisBPossibleExposureLocationAndTypeActs" isQuery="true" bodyCondition="_lfIM0-1qEeGeHKjzItayOg">
+        <ownedRule xmi:id="_lfIM0-1qEeGeHKjzItayOg" name="body" constrainedElement="_lfIM0O1qEeGeHKjzItayOg">
+          <specification xmi:type="uml:OpaqueExpression" xmi:id="_lfIM1O1qEeGeHKjzItayOg">
             <language>OCL</language>
             <body>self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(hepb::AcuteHepatitisBPossibleExposureLocationAndTypeAct)).oclAsType(hepb::AcuteHepatitisBPossibleExposureLocationAndTypeAct)</body>
           </specification>
         </ownedRule>
-        <ownedParameter xmi:id="_ZaTIn8HyEeGQ1oYRXtYJxg" type="_7KszsJ0hEeG50volhed9tg" direction="return">
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ZaTIoMHyEeGQ1oYRXtYJxg" value="*"/>
+        <ownedParameter xmi:id="_lfIM0e1qEeGeHKjzItayOg" type="_7KszsJ0hEeG50volhed9tg" direction="return">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_lfIM0u1qEeGeHKjzItayOg" value="*"/>
         </ownedParameter>
       </ownedOperation>
-      <ownedOperation xmi:id="_Zac5ksHyEeGQ1oYRXtYJxg" name="getAcuteHepatitisBSocioBehavioralBooleanRiskFactorObservations" isQuery="true" bodyCondition="_Zac5lcHyEeGQ1oYRXtYJxg">
-        <ownedRule xmi:id="_Zac5lcHyEeGQ1oYRXtYJxg" name="body" constrainedElement="_Zac5ksHyEeGQ1oYRXtYJxg">
-          <specification xmi:type="uml:OpaqueExpression" xmi:id="_Zac5lsHyEeGQ1oYRXtYJxg">
+      <ownedOperation xmi:id="_lfJa8O1qEeGeHKjzItayOg" name="getAcuteHepatitisBSocioBehavioralBooleanRiskFactorObservations" isQuery="true" bodyCondition="_lfJa8-1qEeGeHKjzItayOg">
+        <ownedRule xmi:id="_lfJa8-1qEeGeHKjzItayOg" name="body" constrainedElement="_lfJa8O1qEeGeHKjzItayOg">
+          <specification xmi:type="uml:OpaqueExpression" xmi:id="_lfJa9O1qEeGeHKjzItayOg">
             <language>OCL</language>
             <body>self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(hepb::AcuteHepatitisBSocioBehavioralBooleanRiskFactorObservation)).oclAsType(hepb::AcuteHepatitisBSocioBehavioralBooleanRiskFactorObservation)</body>
           </specification>
         </ownedRule>
-        <ownedParameter xmi:id="_Zac5k8HyEeGQ1oYRXtYJxg" type="_jv4EQJyuEeG50volhed9tg" direction="return">
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Zac5lMHyEeGQ1oYRXtYJxg" value="*"/>
+        <ownedParameter xmi:id="_lfJa8e1qEeGeHKjzItayOg" type="_jv4EQJyuEeG50volhed9tg" direction="return">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_lfJa8u1qEeGeHKjzItayOg" value="*"/>
         </ownedParameter>
       </ownedOperation>
-      <ownedOperation xmi:id="_ZamDjsHyEeGQ1oYRXtYJxg" name="getAcuteHepatitisBActualBloodAndOrBodyFluidExposureObservation s" isQuery="true" bodyCondition="_ZamDkcHyEeGQ1oYRXtYJxg">
-        <ownedRule xmi:id="_ZamDkcHyEeGQ1oYRXtYJxg" name="body" constrainedElement="_ZamDjsHyEeGQ1oYRXtYJxg">
-          <specification xmi:type="uml:OpaqueExpression" xmi:id="_ZamDksHyEeGQ1oYRXtYJxg">
+      <ownedOperation xmi:id="_lfPhkO1qEeGeHKjzItayOg" name="getAcuteHepatitisBActualBloodAndOrBodyFluidExposureObservation s" isQuery="true" bodyCondition="_lfPhk-1qEeGeHKjzItayOg">
+        <ownedRule xmi:id="_lfPhk-1qEeGeHKjzItayOg" name="body" constrainedElement="_lfPhkO1qEeGeHKjzItayOg">
+          <specification xmi:type="uml:OpaqueExpression" xmi:id="_lfPhlO1qEeGeHKjzItayOg">
             <language>OCL</language>
             <body>self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(hepb::AcuteHepatitisBActualBloodAndOrBodyFluidExposureObservation )).oclAsType(hepb::AcuteHepatitisBActualBloodAndOrBodyFluidExposureObservation )</body>
           </specification>
         </ownedRule>
-        <ownedParameter xmi:id="_ZamDj8HyEeGQ1oYRXtYJxg" type="_cugTQJyuEeG50volhed9tg" direction="return">
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ZamDkMHyEeGQ1oYRXtYJxg" value="*"/>
+        <ownedParameter xmi:id="_lfPhke1qEeGeHKjzItayOg" type="_cugTQJyuEeG50volhed9tg" direction="return">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_lfPhku1qEeGeHKjzItayOg" value="*"/>
         </ownedParameter>
       </ownedOperation>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_jv4EQJyuEeG50volhed9tg" name="AcuteHepatitisBSocioBehavioralBooleanRiskFactorObservation">
-      <ownedRule xmi:id="_ZWkfJsHyEeGQ1oYRXtYJxg" name="SocialHistoryObservationTemplateId" constrainedElement="_jv4EQJyuEeG50volhed9tg">
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_ZWkfJ8HyEeGQ1oYRXtYJxg">
+      <ownedRule xmi:id="_ldU2AO1qEeGeHKjzItayOg" name="SocialHistoryObservationTemplateId" constrainedElement="_jv4EQJyuEeG50volhed9tg">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_ldU2Ae1qEeGeHKjzItayOg">
           <language>OCL</language>
           <body>self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.15.3.28')</body>
         </specification>
       </ownedRule>
-      <ownedRule xmi:id="_ZWkfKcHyEeGQ1oYRXtYJxg" name="AcuteHepatitisBSocioBehavioralBooleanRiskFactorObservationNegationInd" constrainedElement="_jv4EQJyuEeG50volhed9tg">
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_ZWkfKsHyEeGQ1oYRXtYJxg">
+      <ownedRule xmi:id="_ldWEIO1qEeGeHKjzItayOg" name="AcuteHepatitisBSocioBehavioralBooleanRiskFactorObservationNegationInd" constrainedElement="_jv4EQJyuEeG50volhed9tg">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_ldWEIe1qEeGeHKjzItayOg">
           <language>OCL</language>
           <body>not self.negationInd.oclIsUndefined()</body>
         </specification>
       </ownedRule>
-      <ownedRule xmi:id="_ZWuQIMHyEeGQ1oYRXtYJxg" name="AcuteHepatitisBSocioBehavioralBooleanRiskFactorObservationValue" constrainedElement="_jv4EQJyuEeG50volhed9tg">
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_ZWuQIcHyEeGQ1oYRXtYJxg">
+      <ownedRule xmi:id="_ldX5UO1qEeGeHKjzItayOg" name="AcuteHepatitisBSocioBehavioralBooleanRiskFactorObservationValue" constrainedElement="_jv4EQJyuEeG50volhed9tg">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_ldX5Ue1qEeGeHKjzItayOg">
           <language>OCL</language>
-          <body>(self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (self.value->size() = 1 and self.value->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and &#xD;&#xA;let value : datatypes::CD = element.oclAsType(datatypes::CD) in &#xD;&#xA;value.codeSystem = '2.16.840.1.113883.6.96' and (value.code = '160592001' or value.code = '32911000' or value.code = '45361006' or value.code = '226034001' or value.code = '413096007' or value.code = '55211-7' or value.code = '228395002')))</body>
+          <body>(self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (self.value->size() = 1 and self.value->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and 
+let value : datatypes::CD = element.oclAsType(datatypes::CD) in 
+value.codeSystem = '2.16.840.1.113883.6.96' and (value.code = '160592001' or value.code = '32911000' or value.code = '45361006' or value.code = '226034001' or value.code = '413096007' or value.code = '55211-7' or value.code = '228395002')))</body>
         </specification>
       </ownedRule>
-      <ownedRule xmi:id="_ZW4BIMHyEeGQ1oYRXtYJxg" name="AcuteHepatitisBSocioBehavioralBooleanRiskFactorObservationCode" constrainedElement="_jv4EQJyuEeG50volhed9tg">
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_ZW4BIcHyEeGQ1oYRXtYJxg">
+      <ownedRule xmi:id="_ldaVkO1qEeGeHKjzItayOg" name="AcuteHepatitisBSocioBehavioralBooleanRiskFactorObservationValueP" constrainedElement="_jv4EQJyuEeG50volhed9tg">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_ldaVke1qEeGeHKjzItayOg">
           <language>OCL</language>
-          <body>(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and &#xD;&#xA;let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in (&#xD;&#xA;value.code = 'ASSERTION' and value.codeSystem = '2.16.840.1.113883.5.4'))</body>
+          <body>(self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (self.value->size() = 1 and self.value->forAll(element | element.oclIsTypeOf(datatypes::CD)))</body>
         </specification>
       </ownedRule>
-      <ownedRule xmi:id="_ZW4BIsHyEeGQ1oYRXtYJxg" name="AcuteHepatitisBSocioBehavioralBooleanRiskFactorObservationEffectiveTime" constrainedElement="_jv4EQJyuEeG50volhed9tg">
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_ZW4BI8HyEeGQ1oYRXtYJxg">
+      <ownedRule xmi:id="_ldf1IO1qEeGeHKjzItayOg" name="AcuteHepatitisBSocioBehavioralBooleanRiskFactorObservationCodeP" constrainedElement="_jv4EQJyuEeG50volhed9tg">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_ldf1Ie1qEeGeHKjzItayOg">
+          <language>OCL</language>
+          <body>(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined())</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_lddY4O1qEeGeHKjzItayOg" name="AcuteHepatitisBSocioBehavioralBooleanRiskFactorObservationCode" constrainedElement="_jv4EQJyuEeG50volhed9tg">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_lddY4e1qEeGeHKjzItayOg">
+          <language>OCL</language>
+          <body>(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and 
+let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in 
+value.code = 'ASSERTION' and value.codeSystem = '2.16.840.1.113883.5.4')</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_ldhqUO1qEeGeHKjzItayOg" name="AcuteHepatitisBSocioBehavioralBooleanRiskFactorObservationEffectiveTime" constrainedElement="_jv4EQJyuEeG50volhed9tg">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_ldhqUe1qEeGeHKjzItayOg">
           <language>OCL</language>
           <body>(self.effectiveTime.oclIsUndefined() or self.effectiveTime.isNullFlavorUndefined()) implies (not self.effectiveTime.oclIsUndefined())</body>
         </specification>
@@ -305,32 +337,34 @@
       </generalization>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_7KszsJ0hEeG50volhed9tg" name="AcuteHepatitisBPossibleExposureLocationAndTypeAct">
-      <ownedRule xmi:id="_ZXK8FcHyEeGQ1oYRXtYJxg" name="AcuteHepatitisBPossibleExposureLocationAndTypeActTemplateId" constrainedElement="_7KszsJ0hEeG50volhed9tg">
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_ZXK8FsHyEeGQ1oYRXtYJxg">
+      <ownedRule xmi:id="_ldktoO1qEeGeHKjzItayOg" name="AcuteHepatitisBPossibleExposureLocationAndTypeActTemplateId" constrainedElement="_7KszsJ0hEeG50volhed9tg">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_ldktoe1qEeGeHKjzItayOg">
           <language>OCL</language>
           <body>self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.15.3.27')</body>
         </specification>
       </ownedRule>
-      <ownedRule xmi:id="_ZXK8GMHyEeGQ1oYRXtYJxg" name="AcuteHepatitisBPossibleExposureLocationAndTypeActClassCode" constrainedElement="_7KszsJ0hEeG50volhed9tg">
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_ZXK8GcHyEeGQ1oYRXtYJxg">
+      <ownedRule xmi:id="_ldnJ4O1qEeGeHKjzItayOg" name="AcuteHepatitisBPossibleExposureLocationAndTypeActClassCode" constrainedElement="_7KszsJ0hEeG50volhed9tg">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_ldnJ4e1qEeGeHKjzItayOg">
           <language>OCL</language>
           <body>isDefined('classCode')</body>
         </specification>
       </ownedRule>
-      <ownedRule xmi:id="_ZXUtEMHyEeGQ1oYRXtYJxg" name="AcuteHepatitisBPossibleExposureLocationAndTypeActCode" constrainedElement="_7KszsJ0hEeG50volhed9tg">
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_ZXUtEcHyEeGQ1oYRXtYJxg">
+      <ownedRule xmi:id="_ldo_EO1qEeGeHKjzItayOg" name="AcuteHepatitisBPossibleExposureLocationAndTypeActCode" constrainedElement="_7KszsJ0hEeG50volhed9tg">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_ldo_Ee1qEeGeHKjzItayOg">
           <language>OCL</language>
-          <body>(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and &#xD;&#xA;let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in (&#xD;&#xA;value.code = '413350009' and value.codeSystem = '2.16.840.1.113883.6.96'))</body>
+          <body>(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and 
+let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in 
+value.code = '413350009' and value.codeSystem = '2.16.840.1.113883.6.96')</body>
         </specification>
       </ownedRule>
-      <ownedRule xmi:id="_ZXUtEsHyEeGQ1oYRXtYJxg" name="AcuteHepatitisBPossibleExposureLocationAndTypeActMoodCode" constrainedElement="_7KszsJ0hEeG50volhed9tg">
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_ZXUtE8HyEeGQ1oYRXtYJxg">
+      <ownedRule xmi:id="_ldq0QO1qEeGeHKjzItayOg" name="AcuteHepatitisBPossibleExposureLocationAndTypeActMoodCode" constrainedElement="_7KszsJ0hEeG50volhed9tg">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_ldq0Qe1qEeGeHKjzItayOg">
           <language>OCL</language>
           <body>isDefined('moodCode')</body>
         </specification>
       </ownedRule>
-      <ownedRule xmi:id="_ZXd3AMHyEeGQ1oYRXtYJxg" name="AcuteHepatitisBPossibleExposureLocationAndTypeActStatusCode" constrainedElement="_7KszsJ0hEeG50volhed9tg">
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_ZXd3AcHyEeGQ1oYRXtYJxg">
+      <ownedRule xmi:id="_ldspcO1qEeGeHKjzItayOg" name="AcuteHepatitisBPossibleExposureLocationAndTypeActStatusCode" constrainedElement="_7KszsJ0hEeG50volhed9tg">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_ldspce1qEeGeHKjzItayOg">
           <language>OCL</language>
           <body>(self.statusCode.oclIsUndefined() or self.statusCode.isNullFlavorUndefined()) implies (not self.statusCode.oclIsUndefined())</body>
         </specification>
@@ -340,32 +374,32 @@
       </generalization>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_UhAFQJ19EeG50volhed9tg" name="AcuteHepatitisBPHCRClinicalInformationSection">
-      <ownedRule xmi:id="_ZXd3A8HyEeGQ1oYRXtYJxg" name="PhcrClinicalInformationSectionTemplateId" constrainedElement="_UhAFQJ19EeG50volhed9tg">
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_ZXd3BMHyEeGQ1oYRXtYJxg">
+      <ownedRule xmi:id="_ldt3ke1qEeGeHKjzItayOg" name="PhcrClinicalInformationSectionTemplateId" constrainedElement="_UhAFQJ19EeG50volhed9tg">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_ldt3ku1qEeGeHKjzItayOg">
           <language>OCL</language>
           <body>self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.15.2.12')</body>
         </specification>
       </ownedRule>
-      <ownedRule xmi:id="_ZXwx8MHyEeGQ1oYRXtYJxg" name="AcuteHepatitisBPHCRClinicalInformationSectionAcuteHepatitisBCaseObservation" constrainedElement="_UhAFQJ19EeG50volhed9tg">
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_ZXwx8cHyEeGQ1oYRXtYJxg">
+      <ownedRule xmi:id="_ld1zYO1qEeGeHKjzItayOg" name="AcuteHepatitisBPHCRClinicalInformationSectionAcuteHepatitisBCaseObservation" constrainedElement="_UhAFQJ19EeG50volhed9tg">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_ld1zYe1qEeGeHKjzItayOg">
           <language>OCL</language>
           <body>self.entry->one(entry : cda::Entry | not entry.observation.oclIsUndefined() and entry.observation.oclIsKindOf(hepb::AcuteHepatitisBCaseObservation) and entry.typeCode = vocab::x_ActRelationshipEntry::DRIV)</body>
         </specification>
       </ownedRule>
-      <ownedRule xmi:id="_ZYXO4MHyEeGQ1oYRXtYJxg" name="AcuteHepatitisBPHCRClinicalInformationSectionAcuteHepatitisBRiskAssociatedProcedure" constrainedElement="_UhAFQJ19EeG50volhed9tg">
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_ZYXO4cHyEeGQ1oYRXtYJxg">
+      <ownedRule xmi:id="_leKjgO1qEeGeHKjzItayOg" name="AcuteHepatitisBPHCRClinicalInformationSectionAcuteHepatitisBRiskAssociatedProcedure" constrainedElement="_UhAFQJ19EeG50volhed9tg">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_leKjge1qEeGeHKjzItayOg">
           <language>OCL</language>
           <body>self.entry->exists(entry : cda::Entry | not entry.procedure.oclIsUndefined() and entry.procedure.oclIsKindOf(hepb::AcuteHepatitisBRiskAssociatedProcedure) and entry.typeCode = vocab::x_ActRelationshipEntry::DRIV)</body>
         </specification>
       </ownedRule>
-      <ownedRule xmi:id="_ZYqJ1MHyEeGQ1oYRXtYJxg" name="AcuteHepatitisBPHCRClinicalInformationSectionViralHepatitisHistoryObservation" constrainedElement="_UhAFQJ19EeG50volhed9tg">
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_ZYqJ1cHyEeGQ1oYRXtYJxg">
+      <ownedRule xmi:id="_leXX0O1qEeGeHKjzItayOg" name="AcuteHepatitisBPHCRClinicalInformationSectionViralHepatitisHistoryObservation" constrainedElement="_UhAFQJ19EeG50volhed9tg">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_leX-4O1qEeGeHKjzItayOg">
           <language>OCL</language>
           <body>self.entry->exists(entry : cda::Entry | not entry.observation.oclIsUndefined() and entry.observation.oclIsKindOf(hepb::ViralHepatitisHistoryObservation) and entry.typeCode = vocab::x_ActRelationshipEntry::DRIV)</body>
         </specification>
       </ownedRule>
-      <ownedRule xmi:id="_ZZZwtcHyEeGQ1oYRXtYJxg" name="AcuteHepatitisBPHCRClinicalInformationSectionSTDHistoryObservation" constrainedElement="_UhAFQJ19EeG50volhed9tg">
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_ZZZwtsHyEeGQ1oYRXtYJxg">
+      <ownedRule xmi:id="_lesvAO1qEeGeHKjzItayOg" name="AcuteHepatitisBPHCRClinicalInformationSectionSTDHistoryObservation" constrainedElement="_UhAFQJ19EeG50volhed9tg">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_lesvAe1qEeGeHKjzItayOg">
           <language>OCL</language>
           <body>self.entry->exists(entry : cda::Entry | not entry.observation.oclIsUndefined() and entry.observation.oclIsKindOf(hepb::STDHistoryObservation) and entry.typeCode = vocab::x_ActRelationshipEntry::DRIV)</body>
         </specification>
@@ -373,66 +407,74 @@
       <generalization xmi:id="_UhAsUJ19EeG50volhed9tg">
         <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.phcr/model/phcr_Ecore.uml#_84uJEMqZEeCRBIG_Gkv9FQ"/>
       </generalization>
-      <ownedOperation xmi:id="_ZXwx8sHyEeGQ1oYRXtYJxg" name="getAcuteHepatitisBCaseObservation" isQuery="true" bodyCondition="_ZXwx9cHyEeGQ1oYRXtYJxg">
-        <ownedRule xmi:id="_ZXwx9cHyEeGQ1oYRXtYJxg" name="body" constrainedElement="_ZXwx8sHyEeGQ1oYRXtYJxg">
-          <specification xmi:type="uml:OpaqueExpression" xmi:id="_ZXwx9sHyEeGQ1oYRXtYJxg">
+      <ownedOperation xmi:id="_ld3BgO1qEeGeHKjzItayOg" name="getAcuteHepatitisBCaseObservation" isQuery="true" bodyCondition="_ld3Bg-1qEeGeHKjzItayOg">
+        <ownedRule xmi:id="_ld3Bg-1qEeGeHKjzItayOg" name="body" constrainedElement="_ld3BgO1qEeGeHKjzItayOg">
+          <specification xmi:type="uml:OpaqueExpression" xmi:id="_ld3BhO1qEeGeHKjzItayOg">
             <language>OCL</language>
-            <body>self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(hepb::AcuteHepatitisBCaseObservation))->asSequence()->first().oclAsType(hepb::AcuteHepatitisBCaseObservation)</body>
+            <body>self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(hepb::AcuteHepatitisBCaseObservation))->asSequence()->any(true).oclAsType(hepb::AcuteHepatitisBCaseObservation)</body>
           </specification>
         </ownedRule>
-        <ownedParameter xmi:id="_ZXwx88HyEeGQ1oYRXtYJxg" type="_n59eAJ19EeG50volhed9tg" direction="return">
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ZXwx9MHyEeGQ1oYRXtYJxg" value="1"/>
+        <ownedParameter xmi:id="_ld3Bge1qEeGeHKjzItayOg" type="_n59eAJ19EeG50volhed9tg" direction="return">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ld3Bgu1qEeGeHKjzItayOg" value="1"/>
         </ownedParameter>
       </ownedOperation>
-      <ownedOperation xmi:id="_ZYXO4sHyEeGQ1oYRXtYJxg" name="getAcuteHepatitisBRiskAssociatedProcedures" isQuery="true" bodyCondition="_ZYXO5cHyEeGQ1oYRXtYJxg">
-        <ownedRule xmi:id="_ZYXO5cHyEeGQ1oYRXtYJxg" name="body" constrainedElement="_ZYXO4sHyEeGQ1oYRXtYJxg">
-          <specification xmi:type="uml:OpaqueExpression" xmi:id="_ZYXO5sHyEeGQ1oYRXtYJxg">
+      <ownedOperation xmi:id="_leLKkO1qEeGeHKjzItayOg" name="getAcuteHepatitisBRiskAssociatedProcedures" isQuery="true" bodyCondition="_leLKk-1qEeGeHKjzItayOg">
+        <ownedRule xmi:id="_leLKk-1qEeGeHKjzItayOg" name="body" constrainedElement="_leLKkO1qEeGeHKjzItayOg">
+          <specification xmi:type="uml:OpaqueExpression" xmi:id="_leLKlO1qEeGeHKjzItayOg">
             <language>OCL</language>
             <body>self.getProcedures()->select(procedure : cda::Procedure | not procedure.oclIsUndefined() and procedure.oclIsKindOf(hepb::AcuteHepatitisBRiskAssociatedProcedure)).oclAsType(hepb::AcuteHepatitisBRiskAssociatedProcedure)</body>
           </specification>
         </ownedRule>
-        <ownedParameter xmi:id="_ZYXO48HyEeGQ1oYRXtYJxg" type="_ekI9IJ2IEeG50volhed9tg" direction="return">
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ZYXO5MHyEeGQ1oYRXtYJxg" value="*"/>
+        <ownedParameter xmi:id="_leLKke1qEeGeHKjzItayOg" type="_ekI9IJ2IEeG50volhed9tg" direction="return">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_leLKku1qEeGeHKjzItayOg" value="*"/>
         </ownedParameter>
       </ownedOperation>
-      <ownedOperation xmi:id="_ZYz60MHyEeGQ1oYRXtYJxg" name="getViralHepatitisHistoryObservations" isQuery="true" bodyCondition="_ZYz608HyEeGQ1oYRXtYJxg">
-        <ownedRule xmi:id="_ZYz608HyEeGQ1oYRXtYJxg" name="body" constrainedElement="_ZYz60MHyEeGQ1oYRXtYJxg">
-          <specification xmi:type="uml:OpaqueExpression" xmi:id="_ZYz61MHyEeGQ1oYRXtYJxg">
+      <ownedOperation xmi:id="_leYl8O1qEeGeHKjzItayOg" name="getViralHepatitisHistoryObservations" isQuery="true" bodyCondition="_leYl8-1qEeGeHKjzItayOg">
+        <ownedRule xmi:id="_leYl8-1qEeGeHKjzItayOg" name="body" constrainedElement="_leYl8O1qEeGeHKjzItayOg">
+          <specification xmi:type="uml:OpaqueExpression" xmi:id="_leYl9O1qEeGeHKjzItayOg">
             <language>OCL</language>
             <body>self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(hepb::ViralHepatitisHistoryObservation)).oclAsType(hepb::ViralHepatitisHistoryObservation)</body>
           </specification>
         </ownedRule>
-        <ownedParameter xmi:id="_ZYz60cHyEeGQ1oYRXtYJxg" type="_ds3koJ2NEeG50volhed9tg" direction="return">
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ZYz60sHyEeGQ1oYRXtYJxg" value="*"/>
+        <ownedParameter xmi:id="_leYl8e1qEeGeHKjzItayOg" type="_ds3koJ2NEeG50volhed9tg" direction="return">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_leYl8u1qEeGeHKjzItayOg" value="*"/>
         </ownedParameter>
       </ownedOperation>
-      <ownedOperation xmi:id="_ZZZwt8HyEeGQ1oYRXtYJxg" name="getSTDHistoryObservations" isQuery="true" bodyCondition="_ZZZwusHyEeGQ1oYRXtYJxg">
-        <ownedRule xmi:id="_ZZZwusHyEeGQ1oYRXtYJxg" name="body" constrainedElement="_ZZZwt8HyEeGQ1oYRXtYJxg">
-          <specification xmi:type="uml:OpaqueExpression" xmi:id="_ZZZwu8HyEeGQ1oYRXtYJxg">
+      <ownedOperation xmi:id="_letWEO1qEeGeHKjzItayOg" name="getSTDHistoryObservations" isQuery="true" bodyCondition="_letWE-1qEeGeHKjzItayOg">
+        <ownedRule xmi:id="_letWE-1qEeGeHKjzItayOg" name="body" constrainedElement="_letWEO1qEeGeHKjzItayOg">
+          <specification xmi:type="uml:OpaqueExpression" xmi:id="_letWFO1qEeGeHKjzItayOg">
             <language>OCL</language>
             <body>self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(hepb::STDHistoryObservation)).oclAsType(hepb::STDHistoryObservation)</body>
           </specification>
         </ownedRule>
-        <ownedParameter xmi:id="_ZZZwuMHyEeGQ1oYRXtYJxg" type="_0cr8wJ2TEeG50volhed9tg" direction="return">
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ZZZwucHyEeGQ1oYRXtYJxg" value="*"/>
+        <ownedParameter xmi:id="_letWEe1qEeGeHKjzItayOg" type="_0cr8wJ2TEeG50volhed9tg" direction="return">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_letWEu1qEeGeHKjzItayOg" value="*"/>
         </ownedParameter>
       </ownedOperation>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_n59eAJ19EeG50volhed9tg" name="AcuteHepatitisBCaseObservation">
-      <ownedRule xmi:id="_ZXd3CMHyEeGQ1oYRXtYJxg" name="ProblemObservationTemplateId" constrainedElement="_n59eAJ19EeG50volhed9tg">
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_ZXnoAMHyEeGQ1oYRXtYJxg">
+      <ownedRule xmi:id="_ldvswe1qEeGeHKjzItayOg" name="ProblemObservationTemplateId" constrainedElement="_n59eAJ19EeG50volhed9tg">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_ldvswu1qEeGeHKjzItayOg">
           <language>OCL</language>
           <body>self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.15.3.30')</body>
         </specification>
       </ownedRule>
-      <ownedRule xmi:id="_ZXnoAsHyEeGQ1oYRXtYJxg" name="CaseObservationValue" constrainedElement="_n59eAJ19EeG50volhed9tg">
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_ZXnoA8HyEeGQ1oYRXtYJxg">
+      <ownedRule xmi:id="_ldz-MO1qEeGeHKjzItayOg" name="AcuteHepatitisBCaseObservationValueP" constrainedElement="_n59eAJ19EeG50volhed9tg">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_ldz-Me1qEeGeHKjzItayOg">
           <language>OCL</language>
-          <body>(self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (self.value->size() = 1 and self.value->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and &#xD;&#xA;let value : datatypes::CD = element.oclAsType(datatypes::CD) in &#xD;&#xA;value.codeSystem = '2.16.840.1.113883.6.96' and (value.code = '13265006' or value.code = '186624004' or value.code = '186626002' or value.code = '424099008' or value.code = '235864009' or value.code = '76795007')))</body>
+          <body>(self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (not self.value->isEmpty())</body>
         </specification>
       </ownedRule>
-      <ownedRule xmi:id="_Zac5l8HyEeGQ1oYRXtYJxg" name="AcuteHepatitisBCaseObservationAcuteHepatitisBSignsAndSymptomsObservation" constrainedElement="_n59eAJ19EeG50volhed9tg">
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_Zac5mMHyEeGQ1oYRXtYJxg">
+      <ownedRule xmi:id="_ldxh8O1qEeGeHKjzItayOg" name="AcuteHepatitisBCaseObservationValue" constrainedElement="_n59eAJ19EeG50volhed9tg">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_ldxh8e1qEeGeHKjzItayOg">
+          <language>OCL</language>
+          <body>(self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (self.value->size() = 1 and self.value->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and 
+let value : datatypes::CD = element.oclAsType(datatypes::CD) in 
+value.codeSystem = '2.16.840.1.113883.6.96' and (value.code = '13265006' or value.code = '186624004' or value.code = '186626002' or value.code = '424099008' or value.code = '235864009' or value.code = '76795007')))</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_lfKCAO1qEeGeHKjzItayOg" name="AcuteHepatitisBCaseObservationAcuteHepatitisBSignsAndSymptomsObservation" constrainedElement="_n59eAJ19EeG50volhed9tg">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_lfKCAe1qEeGeHKjzItayOg">
           <language>OCL</language>
           <body>self.entryRelationship->exists(entryRelationship : cda::EntryRelationship | not entryRelationship.observation.oclIsUndefined() and entryRelationship.observation.oclIsKindOf(hepb::AcuteHepatitisBSignsAndSymptomsObservation) and entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::MFST)</body>
         </specification>
@@ -440,29 +482,37 @@
       <generalization xmi:id="_n5-FEJ19EeG50volhed9tg">
         <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.phcr/model/phcr_Ecore.uml#_p8bDQNTCEeC18pmrrt-Mbg"/>
       </generalization>
-      <ownedOperation xmi:id="_Zac5mcHyEeGQ1oYRXtYJxg" name="getAcuteHepatitisBSignsAndSymptomsObservations" isQuery="true" bodyCondition="_Zac5nMHyEeGQ1oYRXtYJxg">
-        <ownedRule xmi:id="_Zac5nMHyEeGQ1oYRXtYJxg" name="body" constrainedElement="_Zac5mcHyEeGQ1oYRXtYJxg">
-          <specification xmi:type="uml:OpaqueExpression" xmi:id="_Zac5ncHyEeGQ1oYRXtYJxg">
+      <ownedOperation xmi:id="_lfLQIO1qEeGeHKjzItayOg" name="getAcuteHepatitisBSignsAndSymptomsObservations" isQuery="true" bodyCondition="_lfLQI-1qEeGeHKjzItayOg">
+        <ownedRule xmi:id="_lfLQI-1qEeGeHKjzItayOg" name="body" constrainedElement="_lfLQIO1qEeGeHKjzItayOg">
+          <specification xmi:type="uml:OpaqueExpression" xmi:id="_lfLQJO1qEeGeHKjzItayOg">
             <language>OCL</language>
             <body>self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(hepb::AcuteHepatitisBSignsAndSymptomsObservation)).oclAsType(hepb::AcuteHepatitisBSignsAndSymptomsObservation)</body>
           </specification>
         </ownedRule>
-        <ownedParameter xmi:id="_Zac5msHyEeGQ1oYRXtYJxg" type="_xAbPEJ2EEeG50volhed9tg" direction="return">
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Zac5m8HyEeGQ1oYRXtYJxg" value="*"/>
+        <ownedParameter xmi:id="_lfLQIe1qEeGeHKjzItayOg" type="_xAbPEJ2EEeG50volhed9tg" direction="return">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_lfLQIu1qEeGeHKjzItayOg" value="*"/>
         </ownedParameter>
       </ownedOperation>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_xAbPEJ2EEeG50volhed9tg" name="AcuteHepatitisBSignsAndSymptomsObservation">
-      <ownedRule xmi:id="_ZXwx-MHyEeGQ1oYRXtYJxg" name="SignsAndSymptomsObservationTemplateId" constrainedElement="_xAbPEJ2EEeG50volhed9tg">
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_ZXwx-cHyEeGQ1oYRXtYJxg">
+      <ownedRule xmi:id="_ld3okO1qEeGeHKjzItayOg" name="SignsAndSymptomsObservationTemplateId" constrainedElement="_xAbPEJ2EEeG50volhed9tg">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_ld3oke1qEeGeHKjzItayOg">
           <language>OCL</language>
           <body>self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.15.3.22')</body>
         </specification>
       </ownedRule>
-      <ownedRule xmi:id="_ZX6i8MHyEeGQ1oYRXtYJxg" name="SignsAndSymptomsObservationValue" constrainedElement="_xAbPEJ2EEeG50volhed9tg">
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_ZX6i8cHyEeGQ1oYRXtYJxg">
+      <ownedRule xmi:id="_ld7S8O1qEeGeHKjzItayOg" name="AcuteHepatitisBSignsAndSymptomsObservationValueP" constrainedElement="_xAbPEJ2EEeG50volhed9tg">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_ld7S8e1qEeGeHKjzItayOg">
           <language>OCL</language>
-          <body>(self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (self.value->size() = 1 and self.value->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and &#xD;&#xA;let value : datatypes::CD = element.oclAsType(datatypes::CD) in &#xD;&#xA;value.codeSystem = '2.16.840.1.113883.6.96' and (value.code = '84387000' or value.code = '18165001')))</body>
+          <body>(self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (not self.value->isEmpty())</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_ld5dwO1qEeGeHKjzItayOg" name="AcuteHepatitisBSignsAndSymptomsObservationValue" constrainedElement="_xAbPEJ2EEeG50volhed9tg">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_ld5dwe1qEeGeHKjzItayOg">
+          <language>OCL</language>
+          <body>(self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (self.value->size() = 1 and self.value->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and 
+let value : datatypes::CD = element.oclAsType(datatypes::CD) in 
+value.codeSystem = '2.16.840.1.113883.6.96' and (value.code = '84387000' or value.code = '18165001')))</body>
         </specification>
       </ownedRule>
       <generalization xmi:id="_xAb2IJ2EEeG50volhed9tg">
@@ -470,38 +520,48 @@
       </generalization>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_ekI9IJ2IEeG50volhed9tg" name="AcuteHepatitisBRiskAssociatedProcedure">
-      <ownedRule xmi:id="_ZX6i8sHyEeGQ1oYRXtYJxg" name="AcuteHepatitisBRiskAssociatedProcedureTemplateId" constrainedElement="_ekI9IJ2IEeG50volhed9tg">
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_ZX6i88HyEeGQ1oYRXtYJxg">
+      <ownedRule xmi:id="_ld9vMO1qEeGeHKjzItayOg" name="AcuteHepatitisBRiskAssociatedProcedureTemplateId" constrainedElement="_ekI9IJ2IEeG50volhed9tg">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_ld9vMe1qEeGeHKjzItayOg">
           <language>OCL</language>
           <body>self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.15.3.31')</body>
         </specification>
       </ownedRule>
-      <ownedRule xmi:id="_ZX6i9cHyEeGQ1oYRXtYJxg" name="AcuteHepatitisBRiskAssociatedProcedureClassCode" constrainedElement="_ekI9IJ2IEeG50volhed9tg">
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_ZX6i9sHyEeGQ1oYRXtYJxg">
+      <ownedRule xmi:id="_ld-9UO1qEeGeHKjzItayOg" name="AcuteHepatitisBRiskAssociatedProcedureClassCode" constrainedElement="_ekI9IJ2IEeG50volhed9tg">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_ld-9Ue1qEeGeHKjzItayOg">
           <language>OCL</language>
           <body>self.classCode=vocab::ActClass::PROC</body>
         </specification>
       </ownedRule>
-      <ownedRule xmi:id="_ZYET8MHyEeGQ1oYRXtYJxg" name="AcuteHepatitisBRiskAssociatedProcedureCode" constrainedElement="_ekI9IJ2IEeG50volhed9tg">
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_ZYET8cHyEeGQ1oYRXtYJxg">
+      <ownedRule xmi:id="_leAygO1qEeGeHKjzItayOg" name="AcuteHepatitisBRiskAssociatedProcedureCode" constrainedElement="_ekI9IJ2IEeG50volhed9tg">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_leAyge1qEeGeHKjzItayOg">
           <language>OCL</language>
-          <body>(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and &#xD;&#xA;let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in (&#xD;&#xA;value.codeSystem = '2.16.840.1.113883.6.96' and (value.code = '44868003' or value.code = '302497006' or value.code = '14152002' or value.code = '177594004' or value.code = '200849007' or value.code = '428898005' or value.code = '6712008' or value.code = '428324008' or value.code = '428985000' or value.code = '118817003' or value.code = '85921004' or value.code = '387713003' or value.code = '14792009' or value.code = '116859006' or value.code = '77465005')))</body>
+          <body>(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and 
+let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in 
+value.codeSystem = '2.16.840.1.113883.6.96' and (value.code = '44868003' or value.code = '302497006' or value.code = '14152002' or value.code = '177594004' or value.code = '200849007' or value.code = '428898005' or value.code = '6712008' or value.code = '428324008' or value.code = '428985000' or value.code = '118817003' or value.code = '85921004' or value.code = '387713003' or value.code = '14792009' or value.code = '116859006' or value.code = '77465005'))</body>
         </specification>
       </ownedRule>
-      <ownedRule xmi:id="_ZYET8sHyEeGQ1oYRXtYJxg" name="AcuteHepatitisBRiskAssociatedProcedureMoodCode" constrainedElement="_ekI9IJ2IEeG50volhed9tg">
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_ZYET88HyEeGQ1oYRXtYJxg">
+      <ownedRule xmi:id="_leCnsO1qEeGeHKjzItayOg" name="AcuteHepatitisBRiskAssociatedProcedureMoodCode" constrainedElement="_ekI9IJ2IEeG50volhed9tg">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_leDOwO1qEeGeHKjzItayOg">
           <language>OCL</language>
           <body>self.moodCode=vocab::x_DocumentProcedureMood::EVN</body>
         </specification>
       </ownedRule>
-      <ownedRule xmi:id="_ZYNd4MHyEeGQ1oYRXtYJxg" name="AcuteHepatitisBRiskAssociatedProcedureStatusCode" constrainedElement="_ekI9IJ2IEeG50volhed9tg">
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_ZYNd4cHyEeGQ1oYRXtYJxg">
+      <ownedRule xmi:id="_leFD8O1qEeGeHKjzItayOg" name="AcuteHepatitisBRiskAssociatedProcedureStatusCode" constrainedElement="_ekI9IJ2IEeG50volhed9tg">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_leFD8e1qEeGeHKjzItayOg">
           <language>OCL</language>
-          <body>(self.statusCode.oclIsUndefined() or self.statusCode.isNullFlavorUndefined()) implies (not self.statusCode.oclIsUndefined() and self.statusCode.oclIsKindOf(datatypes::CS) and &#xD;&#xA;let value : datatypes::CS = self.statusCode.oclAsType(datatypes::CS) in (&#xD;&#xA;value.code = 'completed'))</body>
+          <body>(self.statusCode.oclIsUndefined() or self.statusCode.isNullFlavorUndefined()) implies (not self.statusCode.oclIsUndefined() and self.statusCode.oclIsKindOf(datatypes::CS) and 
+let value : datatypes::CS = self.statusCode.oclAsType(datatypes::CS) in 
+value.code = 'completed')</body>
         </specification>
       </ownedRule>
-      <ownedRule xmi:id="_ZYNd4sHyEeGQ1oYRXtYJxg" name="AcuteHepatitisBRiskAssociatedProcedureEffectiveTime" constrainedElement="_ekI9IJ2IEeG50volhed9tg">
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_ZYNd48HyEeGQ1oYRXtYJxg">
+      <ownedRule xmi:id="_leG5IO1qEeGeHKjzItayOg" name="AcuteHepatitisBRiskAssociatedProcedureStatusCodeP" constrainedElement="_ekI9IJ2IEeG50volhed9tg">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_leG5Ie1qEeGeHKjzItayOg">
+          <language>OCL</language>
+          <body>(self.statusCode.oclIsUndefined() or self.statusCode.isNullFlavorUndefined()) implies (not self.statusCode.oclIsUndefined())</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_leIuUO1qEeGeHKjzItayOg" name="AcuteHepatitisBRiskAssociatedProcedureEffectiveTime" constrainedElement="_ekI9IJ2IEeG50volhed9tg">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_leIuUe1qEeGeHKjzItayOg">
           <language>OCL</language>
           <body>(self.effectiveTime.oclIsUndefined() or self.effectiveTime.isNullFlavorUndefined()) implies (not self.effectiveTime.oclIsUndefined())</body>
         </specification>
@@ -511,26 +571,36 @@
       </generalization>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_ds3koJ2NEeG50volhed9tg" name="ViralHepatitisHistoryObservation">
-      <ownedRule xmi:id="_ZYXO6MHyEeGQ1oYRXtYJxg" name="ProblemObservationTemplateId" constrainedElement="_ds3koJ2NEeG50volhed9tg">
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_ZYXO6cHyEeGQ1oYRXtYJxg">
+      <ownedRule xmi:id="_leLxoe1qEeGeHKjzItayOg" name="ProblemObservationTemplateId" constrainedElement="_ds3koJ2NEeG50volhed9tg">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_leLxou1qEeGeHKjzItayOg">
           <language>OCL</language>
           <body>self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.15.3.32')</body>
         </specification>
       </ownedRule>
-      <ownedRule xmi:id="_ZYg_4MHyEeGQ1oYRXtYJxg" name="ProblemObservationCode" constrainedElement="_ds3koJ2NEeG50volhed9tg">
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_ZYg_4cHyEeGQ1oYRXtYJxg">
+      <ownedRule xmi:id="_leNm0O1qEeGeHKjzItayOg" name="ViralHepatitisHistoryObservationCode" constrainedElement="_ds3koJ2NEeG50volhed9tg">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_leNm0e1qEeGeHKjzItayOg">
           <language>OCL</language>
-          <body>(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and &#xD;&#xA;let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in (&#xD;&#xA;value.code = 'ASSERTION' and value.codeSystem = '2.16.840.1.113883.5.4'))</body>
+          <body>(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and 
+let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in 
+value.code = 'ASSERTION' and value.codeSystem = '2.16.840.1.113883.5.4')</body>
         </specification>
       </ownedRule>
-      <ownedRule xmi:id="_ZYqJ0MHyEeGQ1oYRXtYJxg" name="ViralHepatitisHistoryObservationValue" constrainedElement="_ds3koJ2NEeG50volhed9tg">
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_ZYqJ0cHyEeGQ1oYRXtYJxg">
+      <ownedRule xmi:id="_leR4QO1qEeGeHKjzItayOg" name="ViralHepatitisHistoryObservationValue" constrainedElement="_ds3koJ2NEeG50volhed9tg">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_leSfUO1qEeGeHKjzItayOg">
           <language>OCL</language>
-          <body>(self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (self.value->size() = 1 and self.value->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and &#xD;&#xA;let value : datatypes::CD = element.oclAsType(datatypes::CD) in &#xD;&#xA;value.codeSystem = '2.16.840.1.113883.6.96' and not value.code.oclIsUndefined()))</body>
+          <body>(self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (self.value->size() = 1 and self.value->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and 
+let value : datatypes::CD = element.oclAsType(datatypes::CD) in 
+value.codeSystem = '2.16.840.1.113883.6.96' and not value.code.oclIsUndefined()))</body>
         </specification>
       </ownedRule>
-      <ownedRule xmi:id="_ZYqJ0sHyEeGQ1oYRXtYJxg" name="ViralHepatitisHistoryObservationId" constrainedElement="_ds3koJ2NEeG50volhed9tg">
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_ZYqJ08HyEeGQ1oYRXtYJxg">
+      <ownedRule xmi:id="_leUUgO1qEeGeHKjzItayOg" name="ViralHepatitisHistoryObservationValueP" constrainedElement="_ds3koJ2NEeG50volhed9tg">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_leUUge1qEeGeHKjzItayOg">
+          <language>OCL</language>
+          <body>(self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (self.value->size() = 1 and self.value->forAll(element | element.oclIsTypeOf(datatypes::CD)))</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_leWJsO1qEeGeHKjzItayOg" name="ViralHepatitisHistoryObservationId" constrainedElement="_ds3koJ2NEeG50volhed9tg">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_leWJse1qEeGeHKjzItayOg">
           <language>OCL</language>
           <body>(self.id->isEmpty() or self.id->exists(element | element.isNullFlavorUndefined())) implies (not self.id->isEmpty())</body>
         </specification>
@@ -540,50 +610,60 @@
       </generalization>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_0cr8wJ2TEeG50volhed9tg" name="STDHistoryObservation">
-      <ownedRule xmi:id="_ZYz61sHyEeGQ1oYRXtYJxg" name="ProblemObservationTemplateId" constrainedElement="_0cr8wJ2TEeG50volhed9tg">
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_ZYz618HyEeGQ1oYRXtYJxg">
+      <ownedRule xmi:id="_leZNAe1qEeGeHKjzItayOg" name="ProblemObservationTemplateId" constrainedElement="_0cr8wJ2TEeG50volhed9tg">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_leZNAu1qEeGeHKjzItayOg">
           <language>OCL</language>
           <body>self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.15.3.33')</body>
         </specification>
       </ownedRule>
-      <ownedRule xmi:id="_ZYz62cHyEeGQ1oYRXtYJxg" name="STDHistoryObservationClassCode" constrainedElement="_0cr8wJ2TEeG50volhed9tg">
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_ZYz62sHyEeGQ1oYRXtYJxg">
+      <ownedRule xmi:id="_lebCMO1qEeGeHKjzItayOg" name="STDHistoryObservationClassCode" constrainedElement="_0cr8wJ2TEeG50volhed9tg">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_lebCMe1qEeGeHKjzItayOg">
           <language>OCL</language>
           <body>self.classCode=vocab::ActClassObservation::OBS</body>
         </specification>
       </ownedRule>
-      <ownedRule xmi:id="_ZY9EwMHyEeGQ1oYRXtYJxg" name="ProblemObservationCode" constrainedElement="_0cr8wJ2TEeG50volhed9tg">
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_ZY9EwcHyEeGQ1oYRXtYJxg">
+      <ownedRule xmi:id="_ledecO1qEeGeHKjzItayOg" name="STDHistoryObservationCode" constrainedElement="_0cr8wJ2TEeG50volhed9tg">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_ledece1qEeGeHKjzItayOg">
           <language>OCL</language>
-          <body>(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and &#xD;&#xA;let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in (&#xD;&#xA;value.code = 'ASSERTION' and value.codeSystem = '2.16.840.1.113883.5.6'))</body>
+          <body>(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and 
+let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in 
+value.code = 'ASSERTION' and value.codeSystem = '2.16.840.1.113883.5.6')</body>
         </specification>
       </ownedRule>
-      <ownedRule xmi:id="_ZY9EwsHyEeGQ1oYRXtYJxg" name="STDHistoryObservationEffectiveTime" constrainedElement="_0cr8wJ2TEeG50volhed9tg">
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_ZY9Ew8HyEeGQ1oYRXtYJxg">
+      <ownedRule xmi:id="_lehI0O1qEeGeHKjzItayOg" name="STDHistoryObservationEffectiveTime" constrainedElement="_0cr8wJ2TEeG50volhed9tg">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_lehI0e1qEeGeHKjzItayOg">
           <language>OCL</language>
           <body>(self.effectiveTime.oclIsUndefined() or self.effectiveTime.isNullFlavorUndefined()) implies (not self.effectiveTime.oclIsUndefined())</body>
         </specification>
       </ownedRule>
-      <ownedRule xmi:id="_ZZG1wMHyEeGQ1oYRXtYJxg" name="STDHistoryObservationId" constrainedElement="_0cr8wJ2TEeG50volhed9tg">
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_ZZG1wcHyEeGQ1oYRXtYJxg">
+      <ownedRule xmi:id="_leiW8O1qEeGeHKjzItayOg" name="STDHistoryObservationId" constrainedElement="_0cr8wJ2TEeG50volhed9tg">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_leiW8e1qEeGeHKjzItayOg">
           <language>OCL</language>
           <body>(self.id->isEmpty() or self.id->exists(element | element.isNullFlavorUndefined())) implies (not self.id->isEmpty())</body>
         </specification>
       </ownedRule>
-      <ownedRule xmi:id="_ZZG1wsHyEeGQ1oYRXtYJxg" name="STDHistoryObservationMoodCode" constrainedElement="_0cr8wJ2TEeG50volhed9tg">
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_ZZG1w8HyEeGQ1oYRXtYJxg">
+      <ownedRule xmi:id="_lekMIO1qEeGeHKjzItayOg" name="STDHistoryObservationMoodCode" constrainedElement="_0cr8wJ2TEeG50volhed9tg">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_lekMIe1qEeGeHKjzItayOg">
           <language>OCL</language>
           <body>self.moodCode=vocab::x_ActMoodDocumentObservation::EVN</body>
         </specification>
       </ownedRule>
-      <ownedRule xmi:id="_ZZQmwMHyEeGQ1oYRXtYJxg" name="ProblemObservationStatusCode" constrainedElement="_0cr8wJ2TEeG50volhed9tg">
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_ZZQmwcHyEeGQ1oYRXtYJxg">
+      <ownedRule xmi:id="_lemBUO1qEeGeHKjzItayOg" name="STDHistoryObservationStatusCode" constrainedElement="_0cr8wJ2TEeG50volhed9tg">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_lemBUe1qEeGeHKjzItayOg">
           <language>OCL</language>
-          <body>(self.statusCode.oclIsUndefined() or self.statusCode.isNullFlavorUndefined()) implies (not self.statusCode.oclIsUndefined() and self.statusCode.oclIsKindOf(datatypes::CS) and &#xD;&#xA;let value : datatypes::CS = self.statusCode.oclAsType(datatypes::CS) in (&#xD;&#xA;value.code = 'completed'))</body>
+          <body>(self.statusCode.oclIsUndefined() or self.statusCode.isNullFlavorUndefined()) implies (not self.statusCode.oclIsUndefined() and self.statusCode.oclIsKindOf(datatypes::CS) and 
+let value : datatypes::CS = self.statusCode.oclAsType(datatypes::CS) in 
+value.code = 'completed')</body>
         </specification>
       </ownedRule>
-      <ownedRule xmi:id="_ZZQmwsHyEeGQ1oYRXtYJxg" name="STDHistoryObservationProblemStatus" constrainedElement="_0cr8wJ2TEeG50volhed9tg">
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_ZZQmw8HyEeGQ1oYRXtYJxg">
+      <ownedRule xmi:id="_lepEoO1qEeGeHKjzItayOg" name="STDHistoryObservationValue" constrainedElement="_0cr8wJ2TEeG50volhed9tg">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_lepEoe1qEeGeHKjzItayOg">
+          <language>OCL</language>
+          <body>(self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (self.value->size() = 1 and self.value->forAll(element | element.oclIsTypeOf(datatypes::CD)))</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_leq50O1qEeGeHKjzItayOg" name="STDHistoryObservationProblemStatus" constrainedElement="_0cr8wJ2TEeG50volhed9tg">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_leq50e1qEeGeHKjzItayOg">
           <language>OCL</language>
           <body>self.entryRelationship->one(entryRelationship : cda::EntryRelationship | not entryRelationship.observation.oclIsUndefined() and entryRelationship.observation.oclIsKindOf(ccd::ProblemStatusObservation) and entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::REFR)</body>
         </specification>
@@ -591,28 +671,28 @@
       <generalization xmi:id="_0cr8wZ2TEeG50volhed9tg">
         <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.ccd/model/ccd_Ecore.uml#_IjIO0DxbEd6JwqSGecoePg"/>
       </generalization>
-      <ownedOperation xmi:id="_ZZZwsMHyEeGQ1oYRXtYJxg" name="gethepbProblemStatus" isQuery="true" bodyCondition="_ZZZws8HyEeGQ1oYRXtYJxg">
-        <ownedRule xmi:id="_ZZZws8HyEeGQ1oYRXtYJxg" name="body" constrainedElement="_ZZZwsMHyEeGQ1oYRXtYJxg">
-          <specification xmi:type="uml:OpaqueExpression" xmi:id="_ZZZwtMHyEeGQ1oYRXtYJxg">
+      <ownedOperation xmi:id="_lesH8O1qEeGeHKjzItayOg" name="gethepbProblemStatus" isQuery="true" bodyCondition="_lesH8-1qEeGeHKjzItayOg">
+        <ownedRule xmi:id="_lesH8-1qEeGeHKjzItayOg" name="body" constrainedElement="_lesH8O1qEeGeHKjzItayOg">
+          <specification xmi:type="uml:OpaqueExpression" xmi:id="_lesH9O1qEeGeHKjzItayOg">
             <language>OCL</language>
-            <body>self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(ccd::ProblemStatusObservation))->asSequence()->first().oclAsType(ccd::ProblemStatusObservation)</body>
+            <body>self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(ccd::ProblemStatusObservation))->asSequence()->any(true).oclAsType(ccd::ProblemStatusObservation)</body>
           </specification>
         </ownedRule>
-        <ownedParameter xmi:id="_ZZZwscHyEeGQ1oYRXtYJxg" direction="return">
+        <ownedParameter xmi:id="_lesH8e1qEeGeHKjzItayOg" direction="return">
           <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.ccd/model/ccd_Ecore.uml#_TrwngGaJEd6Hk_bPOfEjYA"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ZZZwssHyEeGQ1oYRXtYJxg" value="1"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_lesH8u1qEeGeHKjzItayOg" value="1"/>
         </ownedParameter>
       </ownedOperation>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_8AQCkJ2YEeG50volhed9tg" name="AcuteHepatitisBPHCRTreatmentInformationSection">
-      <ownedRule xmi:id="_ZZZwvcHyEeGQ1oYRXtYJxg" name="PhcrTreatmentInformationSectionTemplateId" constrainedElement="_8AQCkJ2YEeG50volhed9tg">
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_ZZZwvsHyEeGQ1oYRXtYJxg">
+      <ownedRule xmi:id="_let9Ie1qEeGeHKjzItayOg" name="PhcrTreatmentInformationSectionTemplateId" constrainedElement="_8AQCkJ2YEeG50volhed9tg">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_let9Iu1qEeGeHKjzItayOg">
           <language>OCL</language>
           <body>self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.15.2.10')</body>
         </specification>
       </ownedRule>
-      <ownedRule xmi:id="_Zac5nsHyEeGQ1oYRXtYJxg" name="AcuteHepatitisBPHCRTreatmentInformationSectionAcuteHepatitisBTherapeuticRegimenAct" constrainedElement="_8AQCkJ2YEeG50volhed9tg">
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_Zac5n8HyEeGQ1oYRXtYJxg">
+      <ownedRule xmi:id="_lfL3MO1qEeGeHKjzItayOg" name="AcuteHepatitisBPHCRTreatmentInformationSectionAcuteHepatitisBTherapeuticRegimenAct" constrainedElement="_8AQCkJ2YEeG50volhed9tg">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_lfL3Me1qEeGeHKjzItayOg">
           <language>OCL</language>
           <body>self.entry->one(entry : cda::Entry | not entry.act.oclIsUndefined() and entry.act.oclIsKindOf(hepb::AcuteHepatitisBTherapeuticRegimenAct) and entry.typeCode = vocab::x_ActRelationshipEntry::DRIV)</body>
         </specification>
@@ -620,21 +700,21 @@
       <generalization xmi:id="_8AQpoJ2YEeG50volhed9tg">
         <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.phcr/model/phcr_Ecore.uml#_XTjpIMqaEeCRBIG_Gkv9FQ"/>
       </generalization>
-      <ownedOperation xmi:id="_ZamDgMHyEeGQ1oYRXtYJxg" name="getAcuteHepatitisBTherapeuticRegimenAct" isQuery="true" bodyCondition="_ZamDg8HyEeGQ1oYRXtYJxg">
-        <ownedRule xmi:id="_ZamDg8HyEeGQ1oYRXtYJxg" name="body" constrainedElement="_ZamDgMHyEeGQ1oYRXtYJxg">
-          <specification xmi:type="uml:OpaqueExpression" xmi:id="_ZamDhMHyEeGQ1oYRXtYJxg">
+      <ownedOperation xmi:id="_lfMeQO1qEeGeHKjzItayOg" name="getAcuteHepatitisBTherapeuticRegimenAct" isQuery="true" bodyCondition="_lfMeQ-1qEeGeHKjzItayOg">
+        <ownedRule xmi:id="_lfMeQ-1qEeGeHKjzItayOg" name="body" constrainedElement="_lfMeQO1qEeGeHKjzItayOg">
+          <specification xmi:type="uml:OpaqueExpression" xmi:id="_lfMeRO1qEeGeHKjzItayOg">
             <language>OCL</language>
-            <body>self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(hepb::AcuteHepatitisBTherapeuticRegimenAct))->asSequence()->first().oclAsType(hepb::AcuteHepatitisBTherapeuticRegimenAct)</body>
+            <body>self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(hepb::AcuteHepatitisBTherapeuticRegimenAct))->asSequence()->any(true).oclAsType(hepb::AcuteHepatitisBTherapeuticRegimenAct)</body>
           </specification>
         </ownedRule>
-        <ownedParameter xmi:id="_ZamDgcHyEeGQ1oYRXtYJxg" type="_PKYVIJ2ZEeG50volhed9tg" direction="return">
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ZamDgsHyEeGQ1oYRXtYJxg" value="1"/>
+        <ownedParameter xmi:id="_lfMeQe1qEeGeHKjzItayOg" type="_PKYVIJ2ZEeG50volhed9tg" direction="return">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_lfMeQu1qEeGeHKjzItayOg" value="1"/>
         </ownedParameter>
       </ownedOperation>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_PKYVIJ2ZEeG50volhed9tg" name="AcuteHepatitisBTherapeuticRegimenAct">
-      <ownedRule xmi:id="_ZZZwwMHyEeGQ1oYRXtYJxg" name="TherapeuticRegimenActTemplateId" constrainedElement="_PKYVIJ2ZEeG50volhed9tg">
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_ZZjhsMHyEeGQ1oYRXtYJxg">
+      <ownedRule xmi:id="_levLQO1qEeGeHKjzItayOg" name="TherapeuticRegimenActTemplateId" constrainedElement="_PKYVIJ2ZEeG50volhed9tg">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_levLQe1qEeGeHKjzItayOg">
           <language>OCL</language>
           <body>self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.15.3.23')</body>
         </specification>
@@ -644,14 +724,14 @@
       </generalization>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_a6mTgJ2cEeG50volhed9tg" name="AcuteHepatitisBPHCRRelevantDiagnosticTestsAndOrLaboratoryDataSection">
-      <ownedRule xmi:id="_ZZjhs8HyEeGQ1oYRXtYJxg" name="ResultsSectionTemplateId" constrainedElement="_a6mTgJ2cEeG50volhed9tg">
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_ZZjhtMHyEeGQ1oYRXtYJxg">
+      <ownedRule xmi:id="_lexAce1qEeGeHKjzItayOg" name="ResultsSectionTemplateId" constrainedElement="_a6mTgJ2cEeG50volhed9tg">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_lexAcu1qEeGeHKjzItayOg">
           <language>OCL</language>
           <body>self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.15.2.13')</body>
         </specification>
       </ownedRule>
-      <ownedRule xmi:id="_ZZtSscHyEeGQ1oYRXtYJxg" name="AcuteHepatitisBPHCRRelevantDiagnosticTestsAndOrLaboratoryDataSectionAcuteHepatitisBResultObservation" constrainedElement="_a6mTgJ2cEeG50volhed9tg">
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_ZZtSssHyEeGQ1oYRXtYJxg">
+      <ownedRule xmi:id="_le6KYO1qEeGeHKjzItayOg" name="AcuteHepatitisBPHCRRelevantDiagnosticTestsAndOrLaboratoryDataSectionAcuteHepatitisBResultObservation" constrainedElement="_a6mTgJ2cEeG50volhed9tg">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_le6KYe1qEeGeHKjzItayOg">
           <language>OCL</language>
           <body>self.entry->exists(entry : cda::Entry | not entry.observation.oclIsUndefined() and entry.observation.oclIsKindOf(hepb::AcuteHepatitisBResultObservation) and entry.typeCode = vocab::x_ActRelationshipEntry::DRIV)</body>
         </specification>
@@ -659,23 +739,35 @@
       <generalization xmi:id="_a6mTgZ2cEeG50volhed9tg">
         <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.phcr/model/phcr_Ecore.uml#_2dxgkNM5EeCbJdgmSYxI0g"/>
       </generalization>
-      <ownedOperation xmi:id="_ZZtSs8HyEeGQ1oYRXtYJxg" name="getAcuteHepatitisBResultObservations" isQuery="true" bodyCondition="_ZZtStsHyEeGQ1oYRXtYJxg">
-        <ownedRule xmi:id="_ZZtStsHyEeGQ1oYRXtYJxg" name="body" constrainedElement="_ZZtSs8HyEeGQ1oYRXtYJxg">
-          <specification xmi:type="uml:OpaqueExpression" xmi:id="_ZZtSt8HyEeGQ1oYRXtYJxg">
+      <ownedOperation xmi:id="_le6xcO1qEeGeHKjzItayOg" name="getAcuteHepatitisBResultObservations" isQuery="true" bodyCondition="_le7YgO1qEeGeHKjzItayOg">
+        <ownedRule xmi:id="_le7YgO1qEeGeHKjzItayOg" name="body" constrainedElement="_le6xcO1qEeGeHKjzItayOg">
+          <specification xmi:type="uml:OpaqueExpression" xmi:id="_le7Yge1qEeGeHKjzItayOg">
             <language>OCL</language>
             <body>self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(hepb::AcuteHepatitisBResultObservation)).oclAsType(hepb::AcuteHepatitisBResultObservation)</body>
           </specification>
         </ownedRule>
-        <ownedParameter xmi:id="_ZZtStMHyEeGQ1oYRXtYJxg" type="_KJbm8J2dEeG50volhed9tg" direction="return">
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ZZtStcHyEeGQ1oYRXtYJxg" value="*"/>
+        <ownedParameter xmi:id="_le6xce1qEeGeHKjzItayOg" type="_KJbm8J2dEeG50volhed9tg" direction="return">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_le6xcu1qEeGeHKjzItayOg" value="*"/>
         </ownedParameter>
       </ownedOperation>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_KJbm8J2dEeG50volhed9tg" name="AcuteHepatitisBResultObservation">
-      <ownedRule xmi:id="_ZZjhuMHyEeGQ1oYRXtYJxg" name="ResultObservationTemplateId" constrainedElement="_KJbm8J2dEeG50volhed9tg">
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_ZZjhucHyEeGQ1oYRXtYJxg">
+      <ownedRule xmi:id="_ley1oO1qEeGeHKjzItayOg" name="ResultObservationTemplateId" constrainedElement="_KJbm8J2dEeG50volhed9tg">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_ley1oe1qEeGeHKjzItayOg">
           <language>OCL</language>
           <body>self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.15.3.34')</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_le0q0O1qEeGeHKjzItayOg" name="AcuteHepatitisBResultObservationCode" constrainedElement="_KJbm8J2dEeG50volhed9tg">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_le0q0e1qEeGeHKjzItayOg">
+          <language>OCL</language>
+          <body>(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined())</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_le3uIO1qEeGeHKjzItayOg" name="AcuteHepatitisBResultObservationInterpretationCode" constrainedElement="_KJbm8J2dEeG50volhed9tg">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_le3uIe1qEeGeHKjzItayOg">
+          <language>OCL</language>
+          <body>(self.interpretationCode->isEmpty() or self.interpretationCode->exists(element | element.isNullFlavorUndefined())) implies (not self.interpretationCode->isEmpty())</body>
         </specification>
       </ownedRule>
       <generalization xmi:id="_KJbm8Z2dEeG50volhed9tg">
@@ -683,8 +775,8 @@
       </generalization>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_bmCZAJ2jEeG50volhed9tg" name="AcuteHepatitisBImmunizationActivity">
-      <ownedRule xmi:id="_ZZ2cocHyEeGQ1oYRXtYJxg" name="MedicationActivityTemplateId" constrainedElement="_bmCZAJ2jEeG50volhed9tg">
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_ZZ2cosHyEeGQ1oYRXtYJxg">
+      <ownedRule xmi:id="_le7_kO1qEeGeHKjzItayOg" name="MedicationActivityTemplateId" constrainedElement="_bmCZAJ2jEeG50volhed9tg">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_le7_ke1qEeGeHKjzItayOg">
           <language>OCL</language>
           <body>self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.15.3.25')</body>
         </specification>
@@ -694,8 +786,8 @@
       </generalization>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="__D6m4J2jEeG50volhed9tg" name="AcuteHepatitisBImmunizationProduct">
-      <ownedRule xmi:id="_ZZ2cpcHyEeGQ1oYRXtYJxg" name="ProductTemplateId" constrainedElement="__D6m4J2jEeG50volhed9tg">
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_ZZ2cpsHyEeGQ1oYRXtYJxg">
+      <ownedRule xmi:id="_le90wO1qEeGeHKjzItayOg" name="ProductTemplateId" constrainedElement="__D6m4J2jEeG50volhed9tg">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_le90we1qEeGeHKjzItayOg">
           <language>OCL</language>
           <body>self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.15.3.24')</body>
         </specification>
@@ -705,38 +797,56 @@
       </generalization>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_lEbcYJyuEeG50volhed9tg" name="JobRelatedBodyFluidExposureRiskFrequencyObservation">
-      <ownedRule xmi:id="_ZamDk8HyEeGQ1oYRXtYJxg" name="JobRelatedBodyFluidExposureRiskFrequencyObservationTemplateId" constrainedElement="_lEbcYJyuEeG50volhed9tg">
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_ZamDlMHyEeGQ1oYRXtYJxg">
+      <ownedRule xmi:id="_lfPhle1qEeGeHKjzItayOg" name="JobRelatedBodyFluidExposureRiskFrequencyObservationTemplateId" constrainedElement="_lEbcYJyuEeG50volhed9tg">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_lfQIoO1qEeGeHKjzItayOg">
           <language>OCL</language>
           <body>self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.15.3.29')</body>
         </specification>
       </ownedRule>
-      <ownedRule xmi:id="_Zav0gcHyEeGQ1oYRXtYJxg" name="JobRelatedBodyFluidExposureRiskFrequencyObservationCode" constrainedElement="_lEbcYJyuEeG50volhed9tg">
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_Zav0gsHyEeGQ1oYRXtYJxg">
+      <ownedRule xmi:id="_lfRWwO1qEeGeHKjzItayOg" name="JobRelatedBodyFluidExposureRiskFrequencyObservationCode" constrainedElement="_lEbcYJyuEeG50volhed9tg">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_lfRWwe1qEeGeHKjzItayOg">
           <language>OCL</language>
-          <body>(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and &#xD;&#xA;let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in (&#xD;&#xA;value.code = '55212-5' and value.codeSystem = '2.16.840.1.113883.6.1'))</body>
+          <body>(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and 
+let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in 
+value.code = '55212-5' and value.codeSystem = '2.16.840.1.113883.6.1')</body>
         </specification>
       </ownedRule>
-      <ownedRule xmi:id="_Za5lgMHyEeGQ1oYRXtYJxg" name="JobRelatedBodyFluidExposureRiskFrequencyObservationStatusCode" constrainedElement="_lEbcYJyuEeG50volhed9tg">
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_Za5lgcHyEeGQ1oYRXtYJxg">
+      <ownedRule xmi:id="_lfTzAO1qEeGeHKjzItayOg" name="JobRelatedBodyFluidExposureRiskFrequencyObservationStatusCode" constrainedElement="_lEbcYJyuEeG50volhed9tg">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_lfTzAe1qEeGeHKjzItayOg">
           <language>OCL</language>
-          <body>(self.statusCode.oclIsUndefined() or self.statusCode.isNullFlavorUndefined()) implies (not self.statusCode.oclIsUndefined() and self.statusCode.oclIsKindOf(datatypes::CS) and &#xD;&#xA;let value : datatypes::CS = self.statusCode.oclAsType(datatypes::CS) in (&#xD;&#xA;value.code = 'completed'))</body>
+          <body>(self.statusCode.oclIsUndefined() or self.statusCode.isNullFlavorUndefined()) implies (not self.statusCode.oclIsUndefined() and self.statusCode.oclIsKindOf(datatypes::CS) and 
+let value : datatypes::CS = self.statusCode.oclAsType(datatypes::CS) in 
+value.code = 'completed')</body>
         </specification>
       </ownedRule>
-      <ownedRule xmi:id="_ZbCvcMHyEeGQ1oYRXtYJxg" name="JobRelatedBodyFluidExposureRiskFrequencyObservationValue" constrainedElement="_lEbcYJyuEeG50volhed9tg">
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_ZbCvccHyEeGQ1oYRXtYJxg">
+      <ownedRule xmi:id="_lfWPQO1qEeGeHKjzItayOg" name="JobRelatedBodyFluidExposureRiskFrequencyObservationStatusCodeP" constrainedElement="_lEbcYJyuEeG50volhed9tg">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_lfWPQe1qEeGeHKjzItayOg">
           <language>OCL</language>
-          <body>(self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (self.value->size() = 1 and self.value->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and &#xD;&#xA;let value : datatypes::CD = element.oclAsType(datatypes::CD) in &#xD;&#xA;value.codeSystem = '2.16.840.1.113883.6.96' and (value.code = '70232002' or value.code = '27789000')))</body>
+          <body>(self.statusCode.oclIsUndefined() or self.statusCode.isNullFlavorUndefined()) implies (not self.statusCode.oclIsUndefined())</body>
         </specification>
       </ownedRule>
-      <ownedRule xmi:id="_ZbMgcMHyEeGQ1oYRXtYJxg" name="JobRelatedBodyFluidExposureRiskFrequencyObservationClassCode" constrainedElement="_lEbcYJyuEeG50volhed9tg">
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_ZbMgccHyEeGQ1oYRXtYJxg">
+      <ownedRule xmi:id="_lfYrgO1qEeGeHKjzItayOg" name="JobRelatedBodyFluidExposureRiskFrequencyObservationValue" constrainedElement="_lEbcYJyuEeG50volhed9tg">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_lfYrge1qEeGeHKjzItayOg">
+          <language>OCL</language>
+          <body>(self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (self.value->size() = 1 and self.value->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and 
+let value : datatypes::CD = element.oclAsType(datatypes::CD) in 
+value.codeSystem = '2.16.840.1.113883.6.96' and (value.code = '70232002' or value.code = '27789000')))</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_lfagsO1qEeGeHKjzItayOg" name="JobRelatedBodyFluidExposureRiskFrequencyObservationValueP" constrainedElement="_lEbcYJyuEeG50volhed9tg">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_lfagse1qEeGeHKjzItayOg">
+          <language>OCL</language>
+          <body>(self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (self.value->size() = 1 and self.value->forAll(element | element.oclIsTypeOf(datatypes::CD)))</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_lfc88O1qEeGeHKjzItayOg" name="JobRelatedBodyFluidExposureRiskFrequencyObservationClassCode" constrainedElement="_lEbcYJyuEeG50volhed9tg">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_lfc88e1qEeGeHKjzItayOg">
           <language>OCL</language>
           <body>isDefined('classCode')</body>
         </specification>
       </ownedRule>
-      <ownedRule xmi:id="_ZbVqYMHyEeGQ1oYRXtYJxg" name="JobRelatedBodyFluidExposureRiskFrequencyObservationMoodCode" constrainedElement="_lEbcYJyuEeG50volhed9tg">
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_ZbVqYcHyEeGQ1oYRXtYJxg">
+      <ownedRule xmi:id="_lfeyIO1qEeGeHKjzItayOg" name="JobRelatedBodyFluidExposureRiskFrequencyObservationMoodCode" constrainedElement="_lEbcYJyuEeG50volhed9tg">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_lfeyIe1qEeGeHKjzItayOg">
           <language>OCL</language>
           <body>isDefined('moodCode')</body>
         </specification>
@@ -757,8 +867,8 @@
       </eAnnotations>
       <appliedProfile href="pathmap://CDA_PROFILES/CDA.profile.uml#_cxOJEIEVEd6H8o-hO3-B4Q"/>
     </profileApplication>
-    <profileApplication xmi:id="_ZVruUMHyEeGQ1oYRXtYJxg">
-      <eAnnotations xmi:id="_ZVruUcHyEeGQ1oYRXtYJxg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+    <profileApplication xmi:id="_lc3jAO1qEeGeHKjzItayOg">
+      <eAnnotations xmi:id="_lc4KEO1qEeGeHKjzItayOg" source="http://www.eclipse.org/uml2/2.0.0/UML">
         <references xmi:type="ecore:EPackage" href="pathmap://UML_PROFILES/Ecore.profile.uml#_z1OFcHjqEdy8S4Cr8Rc_NA"/>
       </eAnnotations>
       <appliedProfile href="pathmap://UML_PROFILES/Ecore.profile.uml#_0"/>
@@ -1182,73 +1292,75 @@
   <CDA:ValueSetConstraint xmi:id="_cvzQQK8kEeGSWrCbTVkD3A">
     <reference href="../../org.openhealthtools.mdht.uml.cda.phcr.hepb.model/model/hepb-vocab.uml#_ez8T4Z2tEeG50volhed9tg"/>
   </CDA:ValueSetConstraint>
-  <Ecore:EPackage xmi:id="_ZV04QMHyEeGQ1oYRXtYJxg" base_Package="_S4slYE6GEeG_dcj91TvCTg" packageName="hepb" nsPrefix="hepb" nsURI="http://www.openhealthtools.org/mdht/uml/cda/phcr/hepb" basePackage="org.openhealthtools.mdht.uml.cda.phcr" prefix="hepb"/>
-  <Ecore:EClass xmi:id="_ZV04Q8HyEeGQ1oYRXtYJxg" base_Class="_S8IT4U6GEeG_dcj91TvCTg">
-    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation title.mixed='Public Health Case Report - Acute Hepatitis B' templateId.root='2.16.840.1.113883.10.20.15.1.2' constraints.validation.error='AcuteHepatitisBCaseReportTemplateId AcuteHepatitisBCaseReportTitle AcuteHepatitisBCaseReportAcuteHepatitisBPHCRClinicalInformationSection' constraints.validation.warning='AcuteHepatitisBCaseReportAcuteHepatitisBSocialHistorySection AcuteHepatitisBCaseReportAcuteHepatitisBImmunizationSection AcuteHepatitisBCaseReportAcuteHepatitisBPHCRTreatmentInformationSection AcuteHepatitisBCaseReportAcuteHepatitisBPHCRRelevantDiagnosticTestsAndOrLaboratoryDataSection'</annotation>
+  <Ecore:EPackage xmi:id="_lc8bgO1qEeGeHKjzItayOg" base_Package="_S4slYE6GEeG_dcj91TvCTg" packageName="hepb" nsPrefix="hepb" nsURI="http://www.openhealthtools.org/mdht/uml/cda/phcr/hepb" basePackage="org.openhealthtools.mdht.uml.cda.phcr" prefix="hepb">
+    <annotation>http://www.openhealthtools.org/mdht/uml initializers='org.openhealthtools.mdht.uml.cda.phcr.hepb'</annotation>
+  </Ecore:EPackage>
+  <Ecore:EClass xmi:id="_lc-QsO1qEeGeHKjzItayOg" base_Class="_S8IT4U6GEeG_dcj91TvCTg">
+    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='AcuteHepatitisBCaseReportTemplateId AcuteHepatitisBCaseReportTitle AcuteHepatitisBCaseReportAcuteHepatitisBPHCRClinicalInformationSection' templateId.root='2.16.840.1.113883.10.20.15.1.2' title.mixed='Public Health Case Report - Acute Hepatitis B' constraints.validation.warning='AcuteHepatitisBCaseReportAcuteHepatitisBSocialHistorySection AcuteHepatitisBCaseReportAcuteHepatitisBImmunizationSection AcuteHepatitisBCaseReportAcuteHepatitisBPHCRTreatmentInformationSection AcuteHepatitisBCaseReportAcuteHepatitisBPHCRRelevantDiagnosticTestsAndOrLaboratoryDataSection'</annotation>
   </Ecore:EClass>
-  <Ecore:EClass xmi:id="_ZV-pQsHyEeGQ1oYRXtYJxg" base_Class="_cugTQJyuEeG50volhed9tg">
-    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation statusCode.code='completed' code.codeSystem='2.16.840.1.113883.6.1' templateId.root='2.16.840.1.113883.10.20.15.3.26' constraints.validation.error='AcuteHepatitisBActualBloodAndOrBodyFluidExposureObservation TemplateId AcuteHepatitisBActualBloodAndOrBodyFluidExposureObservation Code AcuteHepatitisBActualBloodAndOrBodyFluidExposureObservation StatusCode AcuteHepatitisBActualBloodAndOrBodyFluidExposureObservation ClassCode AcuteHepatitisBActualBloodAndOrBodyFluidExposureObservation Id AcuteHepatitisBActualBloodAndOrBodyFluidExposureObservation MoodCode' code.codeSystemName='LOINC' classCode='OBS' moodCode='EVN'</annotation>
+  <Ecore:EClass xmi:id="_ldBUAO1qEeGeHKjzItayOg" base_Class="_cugTQJyuEeG50volhed9tg">
+    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='AcuteHepatitisBActualBloodAndOrBodyFluidExposureObservation TemplateId AcuteHepatitisBActualBloodAndOrBodyFluidExposureObservation Code AcuteHepatitisBActualBloodAndOrBodyFluidExposureObservation CodeP AcuteHepatitisBActualBloodAndOrBodyFluidExposureObservation StatusCode AcuteHepatitisBActualBloodAndOrBodyFluidExposureObservation StatusCodeP AcuteHepatitisBActualBloodAndOrBodyFluidExposureObservation ClassCode AcuteHepatitisBActualBloodAndOrBodyFluidExposureObservation Id AcuteHepatitisBActualBloodAndOrBodyFluidExposureObservation MoodCode' templateId.root='2.16.840.1.113883.10.20.15.3.26' code.codeSystem='2.16.840.1.113883.6.1' code.codeSystemName='LOINC' constraints.validation.dependOn.AcuteHepatitisBActualBloodAndOrBodyFluidExposureObservation Code='AcuteHepatitisBActualBloodAndOrBodyFluidExposureObservation CodeP' statusCode.code='completed' classCode='OBS' moodCode='EVN'</annotation>
   </Ecore:EClass>
-  <Ecore:EClass xmi:id="_ZWbVNMHyEeGQ1oYRXtYJxg" base_Class="_gD9zMJyuEeG50volhed9tg">
-    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation templateId.root='2.16.840.1.113883.10.20.15.2.9' constraints.validation.error='AcuteHepatitisBImmunizationSectionTemplateId AcuteHepatitisBImmunizationSectionAcuteHepatitisBImmunizationActivity'</annotation>
+  <Ecore:EClass xmi:id="_ldRyse1qEeGeHKjzItayOg" base_Class="_gD9zMJyuEeG50volhed9tg">
+    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='AcuteHepatitisBImmunizationSectionTemplateId AcuteHepatitisBImmunizationSectionAcuteHepatitisBImmunizationActivity' templateId.root='2.16.840.1.113883.10.20.15.2.9'</annotation>
   </Ecore:EClass>
-  <CDA:ConformsTo xmi:id="_ZWkfIMHyEeGQ1oYRXtYJxg" base_Generalization="_QkeEMJ3_EeGFifiMpnccVA"/>
-  <Ecore:EClass xmi:id="_ZWkfJMHyEeGQ1oYRXtYJxg" base_Class="_hVP04JyuEeG50volhed9tg">
-    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation templateId.root='2.16.840.1.113883.10.20.15.2.11' constraints.validation.error='AcuteHepatitisBSocialHistorySectionTemplateId' constraints.validation.warning='AcuteHepatitisBSocialHistorySectionJobRelatedBodyFluidExposureRiskFrequencyObservation AcuteHepatitisBSocialHistorySectionAcuteHepatitisBSocioBehavioralBooleanRiskFactorObservation' constraints.validation.info='AcuteHepatitisBSocialHistorySectionAcuteHepatitisBPossibleExposureLocationAndTypeAct AcuteHepatitisBSocialHistorySectionAcuteHepatitisBActualBloodAndOrBodyFluidExposureObservation '</annotation>
+  <CDA:ConformsTo xmi:id="_ldTA0O1qEeGeHKjzItayOg" base_Generalization="_QkeEMJ3_EeGFifiMpnccVA"/>
+  <Ecore:EClass xmi:id="_ldTn4e1qEeGeHKjzItayOg" base_Class="_hVP04JyuEeG50volhed9tg">
+    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='AcuteHepatitisBSocialHistorySectionTemplateId' templateId.root='2.16.840.1.113883.10.20.15.2.11' constraints.validation.warning='AcuteHepatitisBSocialHistorySectionJobRelatedBodyFluidExposureRiskFrequencyObservation AcuteHepatitisBSocialHistorySectionAcuteHepatitisBSocioBehavioralBooleanRiskFactorObservation' constraints.validation.info='AcuteHepatitisBSocialHistorySectionAcuteHepatitisBPossibleExposureLocationAndTypeAct AcuteHepatitisBSocialHistorySectionAcuteHepatitisBActualBloodAndOrBodyFluidExposureObservation '</annotation>
   </Ecore:EClass>
-  <CDA:ConformsTo xmi:id="_ZWkfJcHyEeGQ1oYRXtYJxg" base_Generalization="_jv4EQZyuEeG50volhed9tg"/>
-  <Ecore:EClass xmi:id="_ZWkfKMHyEeGQ1oYRXtYJxg" base_Class="_jv4EQJyuEeG50volhed9tg">
-    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation value.codeSystemName='SNOMEDCT' code.codeSystem='2.16.840.1.113883.5.4' templateId.root='2.16.840.1.113883.10.20.15.3.28' constraints.validation.error='AcuteHepatitisBSocioBehavioralBooleanRiskFactorObservationTemplateId AcuteHepatitisBSocioBehavioralBooleanRiskFactorObservationNegationInd AcuteHepatitisBSocioBehavioralBooleanRiskFactorObservationValue AcuteHepatitisBSocioBehavioralBooleanRiskFactorObservationCode' code.codeSystemName='HL7ActCode' constraints.validation.warning='AcuteHepatitisBSocioBehavioralBooleanRiskFactorObservationEffectiveTime' code.code='ASSERTION' value.codeSystem='2.16.840.1.113883.6.96'</annotation>
+  <CDA:ConformsTo xmi:id="_ldUO8O1qEeGeHKjzItayOg" base_Generalization="_jv4EQZyuEeG50volhed9tg"/>
+  <Ecore:EClass xmi:id="_ldVdEO1qEeGeHKjzItayOg" base_Class="_jv4EQJyuEeG50volhed9tg">
+    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='AcuteHepatitisBSocioBehavioralBooleanRiskFactorObservationTemplateId AcuteHepatitisBSocioBehavioralBooleanRiskFactorObservationNegationInd AcuteHepatitisBSocioBehavioralBooleanRiskFactorObservationValue AcuteHepatitisBSocioBehavioralBooleanRiskFactorObservationValueP AcuteHepatitisBSocioBehavioralBooleanRiskFactorObservationCode AcuteHepatitisBSocioBehavioralBooleanRiskFactorObservationCodeP' templateId.root='2.16.840.1.113883.10.20.15.3.28' value.codeSystem='2.16.840.1.113883.6.96' value.codeSystemName='SNOMEDCT' code.code='ASSERTION' code.codeSystem='2.16.840.1.113883.5.4' code.codeSystemName='HL7ActCode' constraints.validation.dependOn.AcuteHepatitisBSocioBehavioralBooleanRiskFactorObservationCode='AcuteHepatitisBSocioBehavioralBooleanRiskFactorObservationCodeP' constraints.validation.warning='AcuteHepatitisBSocioBehavioralBooleanRiskFactorObservationEffectiveTime'</annotation>
   </Ecore:EClass>
-  <Ecore:EClass xmi:id="_ZXK8F8HyEeGQ1oYRXtYJxg" base_Class="_7KszsJ0hEeG50volhed9tg">
-    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation code.codeSystem='2.16.840.1.113883.6.96' templateId.root='2.16.840.1.113883.10.20.15.3.27' constraints.validation.error='AcuteHepatitisBPossibleExposureLocationAndTypeActTemplateId AcuteHepatitisBPossibleExposureLocationAndTypeActClassCode AcuteHepatitisBPossibleExposureLocationAndTypeActCode AcuteHepatitisBPossibleExposureLocationAndTypeActMoodCode AcuteHepatitisBPossibleExposureLocationAndTypeActStatusCode' code.codeSystemName='SNOMEDCT' classCode='ACT' code.code='413350009' moodCode='EVN'</annotation>
+  <Ecore:EClass xmi:id="_ldktou1qEeGeHKjzItayOg" base_Class="_7KszsJ0hEeG50volhed9tg">
+    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='AcuteHepatitisBPossibleExposureLocationAndTypeActTemplateId AcuteHepatitisBPossibleExposureLocationAndTypeActClassCode AcuteHepatitisBPossibleExposureLocationAndTypeActCode AcuteHepatitisBPossibleExposureLocationAndTypeActMoodCode AcuteHepatitisBPossibleExposureLocationAndTypeActStatusCode' templateId.root='2.16.840.1.113883.10.20.15.3.27' classCode='ACT' code.code='413350009' code.codeSystem='2.16.840.1.113883.6.96' code.codeSystemName='SNOMEDCT' moodCode='EVN'</annotation>
   </Ecore:EClass>
-  <CDA:ConformsTo xmi:id="_ZXd3AsHyEeGQ1oYRXtYJxg" base_Generalization="_UhAsUJ19EeG50volhed9tg"/>
-  <Ecore:EClass xmi:id="_ZXd3BcHyEeGQ1oYRXtYJxg" base_Class="_UhAFQJ19EeG50volhed9tg">
-    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation templateId.root='2.16.840.1.113883.10.20.15.2.12' constraints.validation.error='AcuteHepatitisBPHCRClinicalInformationSectionTemplateId AcuteHepatitisBPHCRClinicalInformationSectionAcuteHepatitisBCaseObservation' constraints.validation.warning='AcuteHepatitisBPHCRClinicalInformationSectionAcuteHepatitisBRiskAssociatedProcedure AcuteHepatitisBPHCRClinicalInformationSectionViralHepatitisHistoryObservation AcuteHepatitisBPHCRClinicalInformationSectionSTDHistoryObservation'</annotation>
+  <CDA:ConformsTo xmi:id="_ldt3kO1qEeGeHKjzItayOg" base_Generalization="_UhAsUJ19EeG50volhed9tg"/>
+  <Ecore:EClass xmi:id="_ldueoO1qEeGeHKjzItayOg" base_Class="_UhAFQJ19EeG50volhed9tg">
+    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='AcuteHepatitisBPHCRClinicalInformationSectionTemplateId AcuteHepatitisBPHCRClinicalInformationSectionAcuteHepatitisBCaseObservation' templateId.root='2.16.840.1.113883.10.20.15.2.12' constraints.validation.warning='AcuteHepatitisBPHCRClinicalInformationSectionAcuteHepatitisBRiskAssociatedProcedure AcuteHepatitisBPHCRClinicalInformationSectionViralHepatitisHistoryObservation AcuteHepatitisBPHCRClinicalInformationSectionSTDHistoryObservation'</annotation>
   </Ecore:EClass>
-  <CDA:ConformsTo xmi:id="_ZXd3BsHyEeGQ1oYRXtYJxg" base_Generalization="_n5-FEJ19EeG50volhed9tg"/>
-  <Ecore:EClass xmi:id="_ZXnoAcHyEeGQ1oYRXtYJxg" base_Class="_n59eAJ19EeG50volhed9tg">
-    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation value.codeSystemName='SNOMEDCT' templateId.root='2.16.840.1.113883.10.20.15.3.30' constraints.validation.error='AcuteHepatitisBCaseObservationTemplateId CaseObservationValue AcuteHepatitisBCaseObservationAcuteHepatitisBSignsAndSymptomsObservation' value.codeSystem='2.16.840.1.113883.6.96'</annotation>
+  <CDA:ConformsTo xmi:id="_ldvFsO1qEeGeHKjzItayOg" base_Generalization="_n5-FEJ19EeG50volhed9tg"/>
+  <Ecore:EClass xmi:id="_ldwT0O1qEeGeHKjzItayOg" base_Class="_n59eAJ19EeG50volhed9tg">
+    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='AcuteHepatitisBCaseObservationTemplateId AcuteHepatitisBCaseObservationValue AcuteHepatitisBCaseObservationValueP AcuteHepatitisBCaseObservationAcuteHepatitisBSignsAndSymptomsObservation' templateId.root='2.16.840.1.113883.10.20.15.3.30' value.codeSystem='2.16.840.1.113883.6.96' value.codeSystemName='SNOMEDCT' constraints.validation.dependOn.AcuteHepatitisBCaseObservationValue='AcuteHepatitisBCaseObservationValueP'</annotation>
   </Ecore:EClass>
-  <CDA:ConformsTo xmi:id="_ZXwx98HyEeGQ1oYRXtYJxg" base_Generalization="_xAb2IJ2EEeG50volhed9tg"/>
-  <Ecore:EClass xmi:id="_ZXwx-sHyEeGQ1oYRXtYJxg" base_Class="_xAbPEJ2EEeG50volhed9tg">
-    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation value.codeSystemName='SNOMEDCT' templateId.root='2.16.840.1.113883.10.20.15.3.22' constraints.validation.error='AcuteHepatitisBSignsAndSymptomsObservationTemplateId SignsAndSymptomsObservationValue' value.codeSystem='2.16.840.1.113883.6.96'</annotation>
+  <CDA:ConformsTo xmi:id="_ld3Bhe1qEeGeHKjzItayOg" base_Generalization="_xAb2IJ2EEeG50volhed9tg"/>
+  <Ecore:EClass xmi:id="_ld3oku1qEeGeHKjzItayOg" base_Class="_xAbPEJ2EEeG50volhed9tg">
+    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='AcuteHepatitisBSignsAndSymptomsObservationTemplateId AcuteHepatitisBSignsAndSymptomsObservationValue AcuteHepatitisBSignsAndSymptomsObservationValueP' templateId.root='2.16.840.1.113883.10.20.15.3.22' value.codeSystem='2.16.840.1.113883.6.96' value.codeSystemName='SNOMEDCT' constraints.validation.dependOn.AcuteHepatitisBSignsAndSymptomsObservationValue='AcuteHepatitisBSignsAndSymptomsObservationValueP'</annotation>
   </Ecore:EClass>
-  <Ecore:EClass xmi:id="_ZX6i9MHyEeGQ1oYRXtYJxg" base_Class="_ekI9IJ2IEeG50volhed9tg">
-    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation statusCode.code='completed' code.codeSystem='2.16.840.1.113883.6.96' templateId.root='2.16.840.1.113883.10.20.15.3.31' constraints.validation.error='AcuteHepatitisBRiskAssociatedProcedureTemplateId AcuteHepatitisBRiskAssociatedProcedureClassCode AcuteHepatitisBRiskAssociatedProcedureCode AcuteHepatitisBRiskAssociatedProcedureMoodCode AcuteHepatitisBRiskAssociatedProcedureStatusCode' code.codeSystemName='SNOMEDCT' constraints.validation.warning='AcuteHepatitisBRiskAssociatedProcedureEffectiveTime' classCode='PROC' moodCode='EVN'</annotation>
+  <Ecore:EClass xmi:id="_ld9vMu1qEeGeHKjzItayOg" base_Class="_ekI9IJ2IEeG50volhed9tg">
+    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='AcuteHepatitisBRiskAssociatedProcedureTemplateId AcuteHepatitisBRiskAssociatedProcedureClassCode AcuteHepatitisBRiskAssociatedProcedureCode AcuteHepatitisBRiskAssociatedProcedureMoodCode AcuteHepatitisBRiskAssociatedProcedureStatusCode AcuteHepatitisBRiskAssociatedProcedureStatusCodeP' templateId.root='2.16.840.1.113883.10.20.15.3.31' classCode='PROC' code.codeSystem='2.16.840.1.113883.6.96' code.codeSystemName='SNOMEDCT' moodCode='EVN' statusCode.code='completed' constraints.validation.warning='AcuteHepatitisBRiskAssociatedProcedureEffectiveTime'</annotation>
   </Ecore:EClass>
-  <CDA:ConformsTo xmi:id="_ZYXO58HyEeGQ1oYRXtYJxg" base_Generalization="_ds4LsJ2NEeG50volhed9tg"/>
-  <Ecore:EClass xmi:id="_ZYXO6sHyEeGQ1oYRXtYJxg" base_Class="_ds3koJ2NEeG50volhed9tg">
-    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation value.codeSystemName='SNOMEDCT' code.codeSystem='2.16.840.1.113883.5.4' code.displayName='ASSERTION' templateId.root='2.16.840.1.113883.10.20.15.3.32' constraints.validation.error='ViralHepatitisHistoryObservationTemplateId ProblemObservationCode ViralHepatitisHistoryObservationValue' code.codeSystemName='HL7ActCode' code.code='ASSERTION' constraints.validation.info='ViralHepatitisHistoryObservationId' value.codeSystem='2.16.840.1.113883.6.96'</annotation>
+  <CDA:ConformsTo xmi:id="_leLxoO1qEeGeHKjzItayOg" base_Generalization="_ds4LsJ2NEeG50volhed9tg"/>
+  <Ecore:EClass xmi:id="_leMYsO1qEeGeHKjzItayOg" base_Class="_ds3koJ2NEeG50volhed9tg">
+    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='ViralHepatitisHistoryObservationTemplateId ViralHepatitisHistoryObservationCode ViralHepatitisHistoryObservationValue ViralHepatitisHistoryObservationValueP' templateId.root='2.16.840.1.113883.10.20.15.3.32' code.code='ASSERTION' code.codeSystem='2.16.840.1.113883.5.4' code.codeSystemName='HL7ActCode' code.displayName='ASSERTION' value.codeSystem='2.16.840.1.113883.6.96' value.codeSystemName='SNOMEDCT' constraints.validation.info='ViralHepatitisHistoryObservationId'</annotation>
   </Ecore:EClass>
-  <CDA:ConformsTo xmi:id="_ZYz61cHyEeGQ1oYRXtYJxg" base_Generalization="_0cr8wZ2TEeG50volhed9tg"/>
-  <Ecore:EClass xmi:id="_ZYz62MHyEeGQ1oYRXtYJxg" base_Class="_0cr8wJ2TEeG50volhed9tg">
-    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation statusCode.code='completed' code.codeSystem='2.16.840.1.113883.5.6' code.displayName='ASSERTION' templateId.root='2.16.840.1.113883.10.20.15.3.33' constraints.validation.error='STDHistoryObservationTemplateId STDHistoryObservationClassCode ProblemObservationCode STDHistoryObservationMoodCode ProblemObservationStatusCode' code.codeSystemName='HL7ActClass' constraints.validation.warning='STDHistoryObservationEffectiveTime' classCode='OBS' code.code='ASSERTION' moodCode='EVN' constraints.validation.info='STDHistoryObservationId STDHistoryObservationProblemStatus'</annotation>
+  <CDA:ConformsTo xmi:id="_leZNAO1qEeGeHKjzItayOg" base_Generalization="_0cr8wZ2TEeG50volhed9tg"/>
+  <Ecore:EClass xmi:id="_leZ0EO1qEeGeHKjzItayOg" base_Class="_0cr8wJ2TEeG50volhed9tg">
+    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='STDHistoryObservationTemplateId STDHistoryObservationClassCode STDHistoryObservationCode STDHistoryObservationMoodCode STDHistoryObservationStatusCode STDHistoryObservationValue' templateId.root='2.16.840.1.113883.10.20.15.3.33' classCode='OBS' code.code='ASSERTION' code.codeSystem='2.16.840.1.113883.5.6' code.codeSystemName='HL7ActClass' code.displayName='ASSERTION' constraints.validation.warning='STDHistoryObservationEffectiveTime' constraints.validation.info='STDHistoryObservationId STDHistoryObservationProblemStatus' moodCode='EVN' statusCode.code='completed'</annotation>
   </Ecore:EClass>
-  <CDA:ConformsTo xmi:id="_ZZZwvMHyEeGQ1oYRXtYJxg" base_Generalization="_8AQpoJ2YEeG50volhed9tg"/>
-  <Ecore:EClass xmi:id="_ZZZwv8HyEeGQ1oYRXtYJxg" base_Class="_8AQCkJ2YEeG50volhed9tg">
-    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation templateId.root='2.16.840.1.113883.10.20.15.2.10' constraints.validation.error='AcuteHepatitisBPHCRTreatmentInformationSectionTemplateId AcuteHepatitisBPHCRTreatmentInformationSectionAcuteHepatitisBTherapeuticRegimenAct'</annotation>
+  <CDA:ConformsTo xmi:id="_let9IO1qEeGeHKjzItayOg" base_Generalization="_8AQpoJ2YEeG50volhed9tg"/>
+  <Ecore:EClass xmi:id="_leukMO1qEeGeHKjzItayOg" base_Class="_8AQCkJ2YEeG50volhed9tg">
+    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='AcuteHepatitisBPHCRTreatmentInformationSectionTemplateId AcuteHepatitisBPHCRTreatmentInformationSectionAcuteHepatitisBTherapeuticRegimenAct' templateId.root='2.16.840.1.113883.10.20.15.2.10'</annotation>
   </Ecore:EClass>
-  <Ecore:EClass xmi:id="_ZZjhscHyEeGQ1oYRXtYJxg" base_Class="_PKYVIJ2ZEeG50volhed9tg">
-    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation templateId.root='2.16.840.1.113883.10.20.15.3.23' constraints.validation.error='AcuteHepatitisBTherapeuticRegimenActTemplateId'</annotation>
+  <Ecore:EClass xmi:id="_levyUO1qEeGeHKjzItayOg" base_Class="_PKYVIJ2ZEeG50volhed9tg">
+    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='AcuteHepatitisBTherapeuticRegimenActTemplateId' templateId.root='2.16.840.1.113883.10.20.15.3.23'</annotation>
   </Ecore:EClass>
-  <Ecore:EClass xmi:id="_ZZjhtcHyEeGQ1oYRXtYJxg" base_Class="_a6mTgJ2cEeG50volhed9tg">
-    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation templateId.root='2.16.840.1.113883.10.20.15.2.13' constraints.validation.error='AcuteHepatitisBPHCRRelevantDiagnosticTestsAndOrLaboratoryDataSectionTemplateId' constraints.validation.warning='AcuteHepatitisBPHCRRelevantDiagnosticTestsAndOrLaboratoryDataSectionAcuteHepatitisBResultObservation'</annotation>
+  <Ecore:EClass xmi:id="_lexngO1qEeGeHKjzItayOg" base_Class="_a6mTgJ2cEeG50volhed9tg">
+    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='AcuteHepatitisBPHCRRelevantDiagnosticTestsAndOrLaboratoryDataSectionTemplateId' templateId.root='2.16.840.1.113883.10.20.15.2.13' constraints.validation.warning='AcuteHepatitisBPHCRRelevantDiagnosticTestsAndOrLaboratoryDataSectionAcuteHepatitisBResultObservation'</annotation>
   </Ecore:EClass>
-  <CDA:ConformsTo xmi:id="_ZZjhtsHyEeGQ1oYRXtYJxg" base_Generalization="_KJbm8Z2dEeG50volhed9tg"/>
-  <Ecore:EClass xmi:id="_ZZtSsMHyEeGQ1oYRXtYJxg" base_Class="_KJbm8J2dEeG50volhed9tg">
-    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation templateId.root='2.16.840.1.113883.10.20.15.3.34' constraints.validation.error='AcuteHepatitisBResultObservationTemplateId'</annotation>
+  <CDA:ConformsTo xmi:id="_leyOkO1qEeGeHKjzItayOg" base_Generalization="_KJbm8Z2dEeG50volhed9tg"/>
+  <Ecore:EClass xmi:id="_ley1ou1qEeGeHKjzItayOg" base_Class="_KJbm8J2dEeG50volhed9tg">
+    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='AcuteHepatitisBResultObservationTemplateId AcuteHepatitisBResultObservationCode' templateId.root='2.16.840.1.113883.10.20.15.3.34' constraints.validation.warning='AcuteHepatitisBResultObservationInterpretationCode'</annotation>
   </Ecore:EClass>
-  <CDA:ConformsTo xmi:id="_ZZ2coMHyEeGQ1oYRXtYJxg" base_Generalization="_bmCZAZ2jEeG50volhed9tg"/>
-  <Ecore:EClass xmi:id="_ZZ2co8HyEeGQ1oYRXtYJxg" base_Class="_bmCZAJ2jEeG50volhed9tg">
-    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation templateId.root='2.16.840.1.113883.10.20.15.3.25' constraints.validation.error='AcuteHepatitisBImmunizationActivityTemplateId'</annotation>
+  <CDA:ConformsTo xmi:id="_le7Ygu1qEeGeHKjzItayOg" base_Generalization="_bmCZAZ2jEeG50volhed9tg"/>
+  <Ecore:EClass xmi:id="_le8moO1qEeGeHKjzItayOg" base_Class="_bmCZAJ2jEeG50volhed9tg">
+    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='AcuteHepatitisBImmunizationActivityTemplateId' templateId.root='2.16.840.1.113883.10.20.15.3.25'</annotation>
   </Ecore:EClass>
-  <CDA:ConformsTo xmi:id="_ZZ2cpMHyEeGQ1oYRXtYJxg" base_Generalization="__D6m4Z2jEeG50volhed9tg"/>
-  <Ecore:EClass xmi:id="_ZZ2cp8HyEeGQ1oYRXtYJxg" base_Class="__D6m4J2jEeG50volhed9tg">
-    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation templateId.root='2.16.840.1.113883.10.20.15.3.24' constraints.validation.error='AcuteHepatitisBImmunizationProductTemplateId'</annotation>
+  <CDA:ConformsTo xmi:id="_le9NsO1qEeGeHKjzItayOg" base_Generalization="__D6m4Z2jEeG50volhed9tg"/>
+  <Ecore:EClass xmi:id="_le-b0O1qEeGeHKjzItayOg" base_Class="__D6m4J2jEeG50volhed9tg">
+    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='AcuteHepatitisBImmunizationProductTemplateId' templateId.root='2.16.840.1.113883.10.20.15.3.24'</annotation>
   </Ecore:EClass>
-  <Ecore:EClass xmi:id="_Zav0gMHyEeGQ1oYRXtYJxg" base_Class="_lEbcYJyuEeG50volhed9tg">
-    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation statusCode.code='completed' value.codeSystemName='SNOMEDCT' code.codeSystem='2.16.840.1.113883.6.1' templateId.root='2.16.840.1.113883.10.20.15.3.29' code.displayName='Occupation related direct blood or body fluid exposure frequencyOccupation related direct blood or body fluid exposure frequency' constraints.validation.error='JobRelatedBodyFluidExposureRiskFrequencyObservationTemplateId JobRelatedBodyFluidExposureRiskFrequencyObservationCode JobRelatedBodyFluidExposureRiskFrequencyObservationStatusCode JobRelatedBodyFluidExposureRiskFrequencyObservationValue JobRelatedBodyFluidExposureRiskFrequencyObservationClassCode JobRelatedBodyFluidExposureRiskFrequencyObservationMoodCode' code.codeSystemName='LOINC' classCode='OBS' code.code='55212-5' moodCode='EVN' value.codeSystem='2.16.840.1.113883.6.96'</annotation>
+  <Ecore:EClass xmi:id="_lfQIoe1qEeGeHKjzItayOg" base_Class="_lEbcYJyuEeG50volhed9tg">
+    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='JobRelatedBodyFluidExposureRiskFrequencyObservationTemplateId JobRelatedBodyFluidExposureRiskFrequencyObservationCode JobRelatedBodyFluidExposureRiskFrequencyObservationStatusCode JobRelatedBodyFluidExposureRiskFrequencyObservationStatusCodeP JobRelatedBodyFluidExposureRiskFrequencyObservationValue JobRelatedBodyFluidExposureRiskFrequencyObservationValueP JobRelatedBodyFluidExposureRiskFrequencyObservationClassCode JobRelatedBodyFluidExposureRiskFrequencyObservationMoodCode' templateId.root='2.16.840.1.113883.10.20.15.3.29' code.code='55212-5' code.codeSystem='2.16.840.1.113883.6.1' code.codeSystemName='LOINC' code.displayName='Occupation related direct blood or body fluid exposure frequencyOccupation related direct blood or body fluid exposure frequency' statusCode.code='completed' value.codeSystem='2.16.840.1.113883.6.96' value.codeSystemName='SNOMEDCT' classCode='OBS' moodCode='EVN'</annotation>
   </Ecore:EClass>
 </xmi:XMI>

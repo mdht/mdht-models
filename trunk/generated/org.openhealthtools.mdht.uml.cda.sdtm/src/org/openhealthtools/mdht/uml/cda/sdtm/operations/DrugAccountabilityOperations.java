@@ -52,8 +52,17 @@ import org.openhealthtools.mdht.uml.cda.sdtm.util.SdtmValidator;
  *   <li>{@link org.openhealthtools.mdht.uml.cda.sdtm.DrugAccountability#validateDrugAccountabilityDrugAccountabilitySubCategoryAssociation(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Drug Accountability Drug Accountability Sub Category Association</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.sdtm.DrugAccountability#validateDrugAccountabilityNonPerformanceReason(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Drug Accountability Non Performance Reason</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.sdtm.DrugAccountability#validateDrugAccountabilityEventStudyDay(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Drug Accountability Event Study Day</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.sdtm.DrugAccountability#validateDrugAccountabilitydrugAccountabilityCategoryAssociationdrugAccountabilityCategoryClassCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Drug Accountabilitydrug Accountability Category Associationdrug Accountability Category Class Code</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.sdtm.DrugAccountability#validateDrugAccountabilitydrugAccountabilityCategoryAssociationdrugAccountabilityCategoryCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Drug Accountabilitydrug Accountability Category Associationdrug Accountability Category Code</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.sdtm.DrugAccountability#validateDrugAccountabilitydrugAccountabilityCategoryAssociationdrugAccountabilityCategoryMoodCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Drug Accountabilitydrug Accountability Category Associationdrug Accountability Category Mood Code</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.sdtm.DrugAccountability#validateDrugAccountabilitydrugAccountabilityCategoryAssociationdrugAccountabilityCategoryValue(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Drug Accountabilitydrug Accountability Category Associationdrug Accountability Category Value</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.sdtm.DrugAccountability#validateDrugAccountabilitydrugAccountabilityCategoryAssociationTypeCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Drug Accountabilitydrug Accountability Category Association Type Code</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.sdtm.DrugAccountability#validateDrugAccountabilitydrugAccountabilitySubCategoryAssociationTypeCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Drug Accountabilitydrug Accountability Sub Category Association Type Code</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.sdtm.DrugAccountability#validateDrugAccountabilitydrugAccountabilityCategoryAssociationDrugAccountabilityCategory(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Drug Accountabilitydrug Accountability Category Association Drug Accountability Category</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.sdtm.DrugAccountability#validateDrugAccountabilitydrugAccountabilitySubCategoryAssociationdrugAccountabilitySubCategoryClassCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Drug Accountabilitydrug Accountability Sub Category Associationdrug Accountability Sub Category Class Code</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.sdtm.DrugAccountability#validateDrugAccountabilitydrugAccountabilitySubCategoryAssociationdrugAccountabilitySubCategoryCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Drug Accountabilitydrug Accountability Sub Category Associationdrug Accountability Sub Category Code</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.sdtm.DrugAccountability#validateDrugAccountabilitydrugAccountabilitySubCategoryAssociationdrugAccountabilitySubCategoryMoodCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Drug Accountabilitydrug Accountability Sub Category Associationdrug Accountability Sub Category Mood Code</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.sdtm.DrugAccountability#validateDrugAccountabilitydrugAccountabilitySubCategoryAssociationdrugAccountabilitySubCategoryValue(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Drug Accountabilitydrug Accountability Sub Category Associationdrug Accountability Sub Category Value</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.sdtm.DrugAccountability#validateDrugAccountabilitydrugAccountabilitySubCategoryAssociationDrugAccountabilitySubCategory(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Drug Accountabilitydrug Accountability Sub Category Association Drug Accountability Sub Category</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.sdtm.DrugAccountability#getGroupIdentifier() <em>Get Group Identifier</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.sdtm.DrugAccountability#getNonPerformanceReason() <em>Get Non Performance Reason</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.sdtm.DrugAccountability#getEventStudyDay() <em>Get Event Study Day</em>}</li>
@@ -99,7 +108,6 @@ public class DrugAccountabilityOperations extends ClinicalStatementOperations
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.23.37')
    * @param drugAccountability The receiving '<em><b>Drug Accountability</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -109,6 +117,7 @@ public class DrugAccountabilityOperations extends ClinicalStatementOperations
   
   public static  boolean validateDrugAccountabilityTemplateId(DrugAccountability drugAccountability, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
+  	  
     if (VALIDATE_DRUG_ACCOUNTABILITY_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(SdtmPackage.Literals.DRUG_ACCOUNTABILITY);
@@ -133,6 +142,7 @@ public class DrugAccountabilityOperations extends ClinicalStatementOperations
              org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "DrugAccountabilityTemplateId", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(drugAccountability, context) }),
              new Object [] { drugAccountability }));
       }
+       
       return false;
     }
     return true;
@@ -164,7 +174,6 @@ public class DrugAccountabilityOperations extends ClinicalStatementOperations
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.classCode=vocab::ActClassObservation::OBS
    * @param drugAccountability The receiving '<em><b>Drug Accountability</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -174,6 +183,7 @@ public class DrugAccountabilityOperations extends ClinicalStatementOperations
   
   public static  boolean validateDrugAccountabilityClassCode(DrugAccountability drugAccountability, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
+  	  
     if (VALIDATE_DRUG_ACCOUNTABILITY_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(SdtmPackage.Literals.DRUG_ACCOUNTABILITY);
@@ -198,6 +208,7 @@ public class DrugAccountabilityOperations extends ClinicalStatementOperations
              org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "DrugAccountabilityClassCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(drugAccountability, context) }),
              new Object [] { drugAccountability }));
       }
+       
       return false;
     }
     return true;
@@ -229,7 +240,6 @@ public class DrugAccountabilityOperations extends ClinicalStatementOperations
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * (self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined())
    * @param drugAccountability The receiving '<em><b>Drug Accountability</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -239,6 +249,7 @@ public class DrugAccountabilityOperations extends ClinicalStatementOperations
   
   public static  boolean validateDrugAccountabilityCode(DrugAccountability drugAccountability, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
+  	  
     if (VALIDATE_DRUG_ACCOUNTABILITY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(SdtmPackage.Literals.DRUG_ACCOUNTABILITY);
@@ -263,6 +274,7 @@ public class DrugAccountabilityOperations extends ClinicalStatementOperations
              org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "DrugAccountabilityCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(drugAccountability, context) }),
              new Object [] { drugAccountability }));
       }
+       
       return false;
     }
     return true;
@@ -294,7 +306,6 @@ public class DrugAccountabilityOperations extends ClinicalStatementOperations
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * (self.id->isEmpty() or self.id->exists(element | element.isNullFlavorUndefined())) implies (not self.id->isEmpty())
    * @param drugAccountability The receiving '<em><b>Drug Accountability</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -304,6 +315,7 @@ public class DrugAccountabilityOperations extends ClinicalStatementOperations
   
   public static  boolean validateDrugAccountabilityId(DrugAccountability drugAccountability, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
+  	  
     if (VALIDATE_DRUG_ACCOUNTABILITY_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(SdtmPackage.Literals.DRUG_ACCOUNTABILITY);
@@ -328,6 +340,7 @@ public class DrugAccountabilityOperations extends ClinicalStatementOperations
              org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "DrugAccountabilityId", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(drugAccountability, context) }),
              new Object [] { drugAccountability }));
       }
+       
       return false;
     }
     return true;
@@ -359,7 +372,6 @@ public class DrugAccountabilityOperations extends ClinicalStatementOperations
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.moodCode=vocab::x_ActMoodDocumentObservation::EVN
    * @param drugAccountability The receiving '<em><b>Drug Accountability</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -369,6 +381,7 @@ public class DrugAccountabilityOperations extends ClinicalStatementOperations
   
   public static  boolean validateDrugAccountabilityMoodCode(DrugAccountability drugAccountability, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
+  	  
     if (VALIDATE_DRUG_ACCOUNTABILITY_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(SdtmPackage.Literals.DRUG_ACCOUNTABILITY);
@@ -393,6 +406,7 @@ public class DrugAccountabilityOperations extends ClinicalStatementOperations
              org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "DrugAccountabilityMoodCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(drugAccountability, context) }),
              new Object [] { drugAccountability }));
       }
+       
       return false;
     }
     return true;
@@ -424,7 +438,6 @@ public class DrugAccountabilityOperations extends ClinicalStatementOperations
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * (self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (not self.value->isEmpty())
    * @param drugAccountability The receiving '<em><b>Drug Accountability</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -434,6 +447,7 @@ public class DrugAccountabilityOperations extends ClinicalStatementOperations
   
   public static  boolean validateDrugAccountabilityValue(DrugAccountability drugAccountability, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
+  	  
     if (VALIDATE_DRUG_ACCOUNTABILITY_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(SdtmPackage.Literals.DRUG_ACCOUNTABILITY);
@@ -458,6 +472,7 @@ public class DrugAccountabilityOperations extends ClinicalStatementOperations
              org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "DrugAccountabilityValue", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(drugAccountability, context) }),
              new Object [] { drugAccountability }));
       }
+       
       return false;
     }
     return true;
@@ -489,7 +504,6 @@ public class DrugAccountabilityOperations extends ClinicalStatementOperations
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * (self.statusCode.oclIsUndefined() or self.statusCode.isNullFlavorUndefined()) implies (not self.statusCode.oclIsUndefined())
    * @param drugAccountability The receiving '<em><b>Drug Accountability</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -499,6 +513,7 @@ public class DrugAccountabilityOperations extends ClinicalStatementOperations
   
   public static  boolean validateDrugAccountabilityStatusCode(DrugAccountability drugAccountability, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
+  	  
     if (VALIDATE_DRUG_ACCOUNTABILITY_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(SdtmPackage.Literals.DRUG_ACCOUNTABILITY);
@@ -523,6 +538,7 @@ public class DrugAccountabilityOperations extends ClinicalStatementOperations
              org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "DrugAccountabilityStatusCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(drugAccountability, context) }),
              new Object [] { drugAccountability }));
       }
+       
       return false;
     }
     return true;
@@ -554,7 +570,6 @@ public class DrugAccountabilityOperations extends ClinicalStatementOperations
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * (self.effectiveTime.oclIsUndefined() or self.effectiveTime.isNullFlavorUndefined()) implies (not self.effectiveTime.oclIsUndefined())
    * @param drugAccountability The receiving '<em><b>Drug Accountability</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -564,6 +579,7 @@ public class DrugAccountabilityOperations extends ClinicalStatementOperations
   
   public static  boolean validateDrugAccountabilityEffectiveTime(DrugAccountability drugAccountability, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
+  	  
     if (VALIDATE_DRUG_ACCOUNTABILITY_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(SdtmPackage.Literals.DRUG_ACCOUNTABILITY);
@@ -588,6 +604,7 @@ public class DrugAccountabilityOperations extends ClinicalStatementOperations
              org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "DrugAccountabilityEffectiveTime", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(drugAccountability, context) }),
              new Object [] { drugAccountability }));
       }
+       
       return false;
     }
     return true;
@@ -619,7 +636,6 @@ public class DrugAccountabilityOperations extends ClinicalStatementOperations
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.entryRelationship->one(entryRelationship : cda::EntryRelationship | not entryRelationship.act.oclIsUndefined() and entryRelationship.act.oclIsKindOf(sdtm::Group Identifier) and entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::COMP)
    * @param drugAccountability The receiving '<em><b>Drug Accountability</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -629,6 +645,7 @@ public class DrugAccountabilityOperations extends ClinicalStatementOperations
   
   public static  boolean validateDrugAccountabilityGroupIdentifier(DrugAccountability drugAccountability, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
+  	  
     if (VALIDATE_DRUG_ACCOUNTABILITY_GROUP_IDENTIFIER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(SdtmPackage.Literals.DRUG_ACCOUNTABILITY);
@@ -653,6 +670,7 @@ public class DrugAccountabilityOperations extends ClinicalStatementOperations
              org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "DrugAccountabilityGroupIdentifier", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(drugAccountability, context) }),
              new Object [] { drugAccountability }));
       }
+       
       return false;
     }
     return true;
@@ -684,7 +702,6 @@ public class DrugAccountabilityOperations extends ClinicalStatementOperations
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.entryRelationship->one(entryRelationship : cda::EntryRelationship | not entryRelationship.oclIsUndefined() and entryRelationship.oclIsKindOf(cda::EntryRelationship))
    * @param drugAccountability The receiving '<em><b>Drug Accountability</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -694,6 +711,7 @@ public class DrugAccountabilityOperations extends ClinicalStatementOperations
   
   public static  boolean validateDrugAccountabilityDrugAccountabilityCategoryAssociation(DrugAccountability drugAccountability, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
+  	  
     if (VALIDATE_DRUG_ACCOUNTABILITY_DRUG_ACCOUNTABILITY_CATEGORY_ASSOCIATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(SdtmPackage.Literals.DRUG_ACCOUNTABILITY);
@@ -718,6 +736,7 @@ public class DrugAccountabilityOperations extends ClinicalStatementOperations
              org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "DrugAccountabilityDrugAccountabilityCategoryAssociation", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(drugAccountability, context) }),
              new Object [] { drugAccountability }));
       }
+       
       return false;
     }
     return true;
@@ -749,7 +768,6 @@ public class DrugAccountabilityOperations extends ClinicalStatementOperations
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.entryRelationship->one(entryRelationship : cda::EntryRelationship | not entryRelationship.oclIsUndefined() and entryRelationship.oclIsKindOf(cda::EntryRelationship))
    * @param drugAccountability The receiving '<em><b>Drug Accountability</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -759,6 +777,7 @@ public class DrugAccountabilityOperations extends ClinicalStatementOperations
   
   public static  boolean validateDrugAccountabilityDrugAccountabilitySubCategoryAssociation(DrugAccountability drugAccountability, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
+  	  
     if (VALIDATE_DRUG_ACCOUNTABILITY_DRUG_ACCOUNTABILITY_SUB_CATEGORY_ASSOCIATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(SdtmPackage.Literals.DRUG_ACCOUNTABILITY);
@@ -783,6 +802,7 @@ public class DrugAccountabilityOperations extends ClinicalStatementOperations
              org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "DrugAccountabilityDrugAccountabilitySubCategoryAssociation", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(drugAccountability, context) }),
              new Object [] { drugAccountability }));
       }
+       
       return false;
     }
     return true;
@@ -814,7 +834,6 @@ public class DrugAccountabilityOperations extends ClinicalStatementOperations
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.entryRelationship->one(entryRelationship : cda::EntryRelationship | not entryRelationship.observation.oclIsUndefined() and entryRelationship.observation.oclIsKindOf(sdtm::Non Performance Reason) and entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::COMP)
    * @param drugAccountability The receiving '<em><b>Drug Accountability</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -824,6 +843,7 @@ public class DrugAccountabilityOperations extends ClinicalStatementOperations
   
   public static  boolean validateDrugAccountabilityNonPerformanceReason(DrugAccountability drugAccountability, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
+  	  
     if (VALIDATE_DRUG_ACCOUNTABILITY_NON_PERFORMANCE_REASON__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(SdtmPackage.Literals.DRUG_ACCOUNTABILITY);
@@ -848,6 +868,7 @@ public class DrugAccountabilityOperations extends ClinicalStatementOperations
              org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "DrugAccountabilityNonPerformanceReason", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(drugAccountability, context) }),
              new Object [] { drugAccountability }));
       }
+       
       return false;
     }
     return true;
@@ -879,7 +900,6 @@ public class DrugAccountabilityOperations extends ClinicalStatementOperations
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.entryRelationship->one(entryRelationship : cda::EntryRelationship | not entryRelationship.observation.oclIsUndefined() and entryRelationship.observation.oclIsKindOf(sdtm::Event Study Day))
    * @param drugAccountability The receiving '<em><b>Drug Accountability</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -889,6 +909,7 @@ public class DrugAccountabilityOperations extends ClinicalStatementOperations
   
   public static  boolean validateDrugAccountabilityEventStudyDay(DrugAccountability drugAccountability, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
+  	  
     if (VALIDATE_DRUG_ACCOUNTABILITY_EVENT_STUDY_DAY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(SdtmPackage.Literals.DRUG_ACCOUNTABILITY);
@@ -913,6 +934,271 @@ public class DrugAccountabilityOperations extends ClinicalStatementOperations
              org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "DrugAccountabilityEventStudyDay", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(drugAccountability, context) }),
              new Object [] { drugAccountability }));
       }
+       
+      return false;
+    }
+    return true;
+  }
+
+  /**
+   * The cached OCL expression body for the '{@link #validateDrugAccountabilitydrugAccountabilityCategoryAssociationdrugAccountabilityCategoryClassCode(DrugAccountability, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Drug Accountabilitydrug Accountability Category Associationdrug Accountability Category Class Code</em>}' operation.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #validateDrugAccountabilitydrugAccountabilityCategoryAssociationdrugAccountabilityCategoryClassCode(DrugAccountability, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+   * @generated
+   * @ordered
+   */
+  protected static final String VALIDATE_DRUG_ACCOUNTABILITYDRUG_ACCOUNTABILITY_CATEGORY_ASSOCIATIONDRUG_ACCOUNTABILITY_CATEGORY_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entryRelationship->excluding(null).observation->excluding(null)->reject(classCode=vocab::ActClassObservation::OBS)";
+
+  /**
+   * The cached OCL invariant for the '{@link #validateDrugAccountabilitydrugAccountabilityCategoryAssociationdrugAccountabilityCategoryClassCode(DrugAccountability, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Drug Accountabilitydrug Accountability Category Associationdrug Accountability Category Class Code</em>}' invariant operation.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #validateDrugAccountabilitydrugAccountabilityCategoryAssociationdrugAccountabilityCategoryClassCode(DrugAccountability, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+   * @generated
+   * @ordered
+   */
+  
+  protected static Constraint VALIDATE_DRUG_ACCOUNTABILITYDRUG_ACCOUNTABILITY_CATEGORY_ASSOCIATIONDRUG_ACCOUNTABILITY_CATEGORY_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * <!-- begin-model-doc -->
+   * @param drugAccountability The receiving '<em><b>Drug Accountability</b></em>' model object.
+   * @param diagnostics The chain of diagnostics to which problems are to be appended.
+   * @param context The cache of context-specific information.
+   * <!-- end-model-doc -->
+   * @generated
+   */
+  
+  public static  boolean validateDrugAccountabilitydrugAccountabilityCategoryAssociationdrugAccountabilityCategoryClassCode(DrugAccountability drugAccountability, DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+  	  
+    if (VALIDATE_DRUG_ACCOUNTABILITYDRUG_ACCOUNTABILITY_CATEGORY_ASSOCIATIONDRUG_ACCOUNTABILITY_CATEGORY_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+      OCL.Helper helper = EOCL_ENV.createOCLHelper();
+      helper.setContext(SdtmPackage.Literals.DRUG_ACCOUNTABILITY);
+      try
+      {
+        VALIDATE_DRUG_ACCOUNTABILITYDRUG_ACCOUNTABILITY_CATEGORY_ASSOCIATIONDRUG_ACCOUNTABILITY_CATEGORY_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_DRUG_ACCOUNTABILITYDRUG_ACCOUNTABILITY_CATEGORY_ASSOCIATIONDRUG_ACCOUNTABILITY_CATEGORY_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+      }
+      catch (ParserException pe)
+      {
+        throw new UnsupportedOperationException(pe.getLocalizedMessage());
+      }
+    }
+    if (!EOCL_ENV.createQuery(VALIDATE_DRUG_ACCOUNTABILITYDRUG_ACCOUNTABILITY_CATEGORY_ASSOCIATIONDRUG_ACCOUNTABILITY_CATEGORY_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(drugAccountability))
+    {
+      if (diagnostics != null)
+      {
+        diagnostics.add
+          (new BasicDiagnostic
+            (Diagnostic.ERROR,
+             SdtmValidator.DIAGNOSTIC_SOURCE,
+             SdtmValidator.DRUG_ACCOUNTABILITY__DRUG_ACCOUNTABILITYDRUG_ACCOUNTABILITY_CATEGORY_ASSOCIATIONDRUG_ACCOUNTABILITY_CATEGORY_CLASS_CODE,
+             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "DrugAccountabilitydrugAccountabilityCategoryAssociationdrugAccountabilityCategoryClassCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(drugAccountability, context) }),
+             new Object [] { drugAccountability }));
+      }
+       
+      return false;
+    }
+    return true;
+  }
+
+  /**
+   * The cached OCL expression body for the '{@link #validateDrugAccountabilitydrugAccountabilityCategoryAssociationdrugAccountabilityCategoryCode(DrugAccountability, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Drug Accountabilitydrug Accountability Category Associationdrug Accountability Category Code</em>}' operation.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #validateDrugAccountabilitydrugAccountabilityCategoryAssociationdrugAccountabilityCategoryCode(DrugAccountability, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+   * @generated
+   * @ordered
+   */
+  protected static final String VALIDATE_DRUG_ACCOUNTABILITYDRUG_ACCOUNTABILITY_CATEGORY_ASSOCIATIONDRUG_ACCOUNTABILITY_CATEGORY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entryRelationship->excluding(null).observation->excluding(null)->reject((code.oclIsUndefined() or code.isNullFlavorUndefined()) implies (not code.oclIsUndefined()))";
+
+  /**
+   * The cached OCL invariant for the '{@link #validateDrugAccountabilitydrugAccountabilityCategoryAssociationdrugAccountabilityCategoryCode(DrugAccountability, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Drug Accountabilitydrug Accountability Category Associationdrug Accountability Category Code</em>}' invariant operation.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #validateDrugAccountabilitydrugAccountabilityCategoryAssociationdrugAccountabilityCategoryCode(DrugAccountability, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+   * @generated
+   * @ordered
+   */
+  
+  protected static Constraint VALIDATE_DRUG_ACCOUNTABILITYDRUG_ACCOUNTABILITY_CATEGORY_ASSOCIATIONDRUG_ACCOUNTABILITY_CATEGORY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * <!-- begin-model-doc -->
+   * @param drugAccountability The receiving '<em><b>Drug Accountability</b></em>' model object.
+   * @param diagnostics The chain of diagnostics to which problems are to be appended.
+   * @param context The cache of context-specific information.
+   * <!-- end-model-doc -->
+   * @generated
+   */
+  
+  public static  boolean validateDrugAccountabilitydrugAccountabilityCategoryAssociationdrugAccountabilityCategoryCode(DrugAccountability drugAccountability, DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+  	  
+    if (VALIDATE_DRUG_ACCOUNTABILITYDRUG_ACCOUNTABILITY_CATEGORY_ASSOCIATIONDRUG_ACCOUNTABILITY_CATEGORY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+      OCL.Helper helper = EOCL_ENV.createOCLHelper();
+      helper.setContext(SdtmPackage.Literals.DRUG_ACCOUNTABILITY);
+      try
+      {
+        VALIDATE_DRUG_ACCOUNTABILITYDRUG_ACCOUNTABILITY_CATEGORY_ASSOCIATIONDRUG_ACCOUNTABILITY_CATEGORY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_DRUG_ACCOUNTABILITYDRUG_ACCOUNTABILITY_CATEGORY_ASSOCIATIONDRUG_ACCOUNTABILITY_CATEGORY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+      }
+      catch (ParserException pe)
+      {
+        throw new UnsupportedOperationException(pe.getLocalizedMessage());
+      }
+    }
+    if (!EOCL_ENV.createQuery(VALIDATE_DRUG_ACCOUNTABILITYDRUG_ACCOUNTABILITY_CATEGORY_ASSOCIATIONDRUG_ACCOUNTABILITY_CATEGORY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(drugAccountability))
+    {
+      if (diagnostics != null)
+      {
+        diagnostics.add
+          (new BasicDiagnostic
+            (Diagnostic.ERROR,
+             SdtmValidator.DIAGNOSTIC_SOURCE,
+             SdtmValidator.DRUG_ACCOUNTABILITY__DRUG_ACCOUNTABILITYDRUG_ACCOUNTABILITY_CATEGORY_ASSOCIATIONDRUG_ACCOUNTABILITY_CATEGORY_CODE,
+             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "DrugAccountabilitydrugAccountabilityCategoryAssociationdrugAccountabilityCategoryCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(drugAccountability, context) }),
+             new Object [] { drugAccountability }));
+      }
+       
+      return false;
+    }
+    return true;
+  }
+
+  /**
+   * The cached OCL expression body for the '{@link #validateDrugAccountabilitydrugAccountabilityCategoryAssociationdrugAccountabilityCategoryMoodCode(DrugAccountability, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Drug Accountabilitydrug Accountability Category Associationdrug Accountability Category Mood Code</em>}' operation.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #validateDrugAccountabilitydrugAccountabilityCategoryAssociationdrugAccountabilityCategoryMoodCode(DrugAccountability, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+   * @generated
+   * @ordered
+   */
+  protected static final String VALIDATE_DRUG_ACCOUNTABILITYDRUG_ACCOUNTABILITY_CATEGORY_ASSOCIATIONDRUG_ACCOUNTABILITY_CATEGORY_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entryRelationship->excluding(null).observation->excluding(null)->reject(moodCode=vocab::x_ActMoodDocumentObservation::EVN)";
+
+  /**
+   * The cached OCL invariant for the '{@link #validateDrugAccountabilitydrugAccountabilityCategoryAssociationdrugAccountabilityCategoryMoodCode(DrugAccountability, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Drug Accountabilitydrug Accountability Category Associationdrug Accountability Category Mood Code</em>}' invariant operation.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #validateDrugAccountabilitydrugAccountabilityCategoryAssociationdrugAccountabilityCategoryMoodCode(DrugAccountability, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+   * @generated
+   * @ordered
+   */
+  
+  protected static Constraint VALIDATE_DRUG_ACCOUNTABILITYDRUG_ACCOUNTABILITY_CATEGORY_ASSOCIATIONDRUG_ACCOUNTABILITY_CATEGORY_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * <!-- begin-model-doc -->
+   * @param drugAccountability The receiving '<em><b>Drug Accountability</b></em>' model object.
+   * @param diagnostics The chain of diagnostics to which problems are to be appended.
+   * @param context The cache of context-specific information.
+   * <!-- end-model-doc -->
+   * @generated
+   */
+  
+  public static  boolean validateDrugAccountabilitydrugAccountabilityCategoryAssociationdrugAccountabilityCategoryMoodCode(DrugAccountability drugAccountability, DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+  	  
+    if (VALIDATE_DRUG_ACCOUNTABILITYDRUG_ACCOUNTABILITY_CATEGORY_ASSOCIATIONDRUG_ACCOUNTABILITY_CATEGORY_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+      OCL.Helper helper = EOCL_ENV.createOCLHelper();
+      helper.setContext(SdtmPackage.Literals.DRUG_ACCOUNTABILITY);
+      try
+      {
+        VALIDATE_DRUG_ACCOUNTABILITYDRUG_ACCOUNTABILITY_CATEGORY_ASSOCIATIONDRUG_ACCOUNTABILITY_CATEGORY_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_DRUG_ACCOUNTABILITYDRUG_ACCOUNTABILITY_CATEGORY_ASSOCIATIONDRUG_ACCOUNTABILITY_CATEGORY_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+      }
+      catch (ParserException pe)
+      {
+        throw new UnsupportedOperationException(pe.getLocalizedMessage());
+      }
+    }
+    if (!EOCL_ENV.createQuery(VALIDATE_DRUG_ACCOUNTABILITYDRUG_ACCOUNTABILITY_CATEGORY_ASSOCIATIONDRUG_ACCOUNTABILITY_CATEGORY_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(drugAccountability))
+    {
+      if (diagnostics != null)
+      {
+        diagnostics.add
+          (new BasicDiagnostic
+            (Diagnostic.ERROR,
+             SdtmValidator.DIAGNOSTIC_SOURCE,
+             SdtmValidator.DRUG_ACCOUNTABILITY__DRUG_ACCOUNTABILITYDRUG_ACCOUNTABILITY_CATEGORY_ASSOCIATIONDRUG_ACCOUNTABILITY_CATEGORY_MOOD_CODE,
+             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "DrugAccountabilitydrugAccountabilityCategoryAssociationdrugAccountabilityCategoryMoodCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(drugAccountability, context) }),
+             new Object [] { drugAccountability }));
+      }
+       
+      return false;
+    }
+    return true;
+  }
+
+  /**
+   * The cached OCL expression body for the '{@link #validateDrugAccountabilitydrugAccountabilityCategoryAssociationdrugAccountabilityCategoryValue(DrugAccountability, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Drug Accountabilitydrug Accountability Category Associationdrug Accountability Category Value</em>}' operation.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #validateDrugAccountabilitydrugAccountabilityCategoryAssociationdrugAccountabilityCategoryValue(DrugAccountability, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+   * @generated
+   * @ordered
+   */
+  protected static final String VALIDATE_DRUG_ACCOUNTABILITYDRUG_ACCOUNTABILITY_CATEGORY_ASSOCIATIONDRUG_ACCOUNTABILITY_CATEGORY_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entryRelationship->excluding(null).observation->excluding(null)->reject((value->isEmpty() or value->exists(element | element.isNullFlavorUndefined())) implies (value->size() = 1 and value->forAll(element | element.oclIsTypeOf(datatypes::CE))))";
+
+  /**
+   * The cached OCL invariant for the '{@link #validateDrugAccountabilitydrugAccountabilityCategoryAssociationdrugAccountabilityCategoryValue(DrugAccountability, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Drug Accountabilitydrug Accountability Category Associationdrug Accountability Category Value</em>}' invariant operation.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #validateDrugAccountabilitydrugAccountabilityCategoryAssociationdrugAccountabilityCategoryValue(DrugAccountability, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+   * @generated
+   * @ordered
+   */
+  
+  protected static Constraint VALIDATE_DRUG_ACCOUNTABILITYDRUG_ACCOUNTABILITY_CATEGORY_ASSOCIATIONDRUG_ACCOUNTABILITY_CATEGORY_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * <!-- begin-model-doc -->
+   * @param drugAccountability The receiving '<em><b>Drug Accountability</b></em>' model object.
+   * @param diagnostics The chain of diagnostics to which problems are to be appended.
+   * @param context The cache of context-specific information.
+   * <!-- end-model-doc -->
+   * @generated
+   */
+  
+  public static  boolean validateDrugAccountabilitydrugAccountabilityCategoryAssociationdrugAccountabilityCategoryValue(DrugAccountability drugAccountability, DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+  	  
+    if (VALIDATE_DRUG_ACCOUNTABILITYDRUG_ACCOUNTABILITY_CATEGORY_ASSOCIATIONDRUG_ACCOUNTABILITY_CATEGORY_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+      OCL.Helper helper = EOCL_ENV.createOCLHelper();
+      helper.setContext(SdtmPackage.Literals.DRUG_ACCOUNTABILITY);
+      try
+      {
+        VALIDATE_DRUG_ACCOUNTABILITYDRUG_ACCOUNTABILITY_CATEGORY_ASSOCIATIONDRUG_ACCOUNTABILITY_CATEGORY_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_DRUG_ACCOUNTABILITYDRUG_ACCOUNTABILITY_CATEGORY_ASSOCIATIONDRUG_ACCOUNTABILITY_CATEGORY_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+      }
+      catch (ParserException pe)
+      {
+        throw new UnsupportedOperationException(pe.getLocalizedMessage());
+      }
+    }
+    if (!EOCL_ENV.createQuery(VALIDATE_DRUG_ACCOUNTABILITYDRUG_ACCOUNTABILITY_CATEGORY_ASSOCIATIONDRUG_ACCOUNTABILITY_CATEGORY_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(drugAccountability))
+    {
+      if (diagnostics != null)
+      {
+        diagnostics.add
+          (new BasicDiagnostic
+            (Diagnostic.ERROR,
+             SdtmValidator.DIAGNOSTIC_SOURCE,
+             SdtmValidator.DRUG_ACCOUNTABILITY__DRUG_ACCOUNTABILITYDRUG_ACCOUNTABILITY_CATEGORY_ASSOCIATIONDRUG_ACCOUNTABILITY_CATEGORY_VALUE,
+             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "DrugAccountabilitydrugAccountabilityCategoryAssociationdrugAccountabilityCategoryValue", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(drugAccountability, context) }),
+             new Object [] { drugAccountability }));
+      }
+       
       return false;
     }
     return true;
@@ -944,7 +1230,6 @@ public class DrugAccountabilityOperations extends ClinicalStatementOperations
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.entryRelationship->excluding(null)->reject(typeCode=vocab::x_ActRelationshipEntryRelationship::COMP)
    * @param drugAccountability The receiving '<em><b>Drug Accountability</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -954,6 +1239,7 @@ public class DrugAccountabilityOperations extends ClinicalStatementOperations
   
   public static  boolean validateDrugAccountabilitydrugAccountabilityCategoryAssociationTypeCode(DrugAccountability drugAccountability, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
+  	  
     if (VALIDATE_DRUG_ACCOUNTABILITYDRUG_ACCOUNTABILITY_CATEGORY_ASSOCIATION_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(SdtmPackage.Literals.DRUG_ACCOUNTABILITY);
@@ -978,38 +1264,38 @@ public class DrugAccountabilityOperations extends ClinicalStatementOperations
              org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "DrugAccountabilitydrugAccountabilityCategoryAssociationTypeCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(drugAccountability, context) }),
              new Object [] { drugAccountability }));
       }
+       
       return false;
     }
     return true;
   }
 
   /**
-   * The cached OCL expression body for the '{@link #validateDrugAccountabilitydrugAccountabilitySubCategoryAssociationTypeCode(DrugAccountability, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Drug Accountabilitydrug Accountability Sub Category Association Type Code</em>}' operation.
+   * The cached OCL expression body for the '{@link #validateDrugAccountabilitydrugAccountabilityCategoryAssociationDrugAccountabilityCategory(DrugAccountability, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Drug Accountabilitydrug Accountability Category Association Drug Accountability Category</em>}' operation.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @see #validateDrugAccountabilitydrugAccountabilitySubCategoryAssociationTypeCode(DrugAccountability, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+   * @see #validateDrugAccountabilitydrugAccountabilityCategoryAssociationDrugAccountabilityCategory(DrugAccountability, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
    * @generated
    * @ordered
    */
-  protected static final String VALIDATE_DRUG_ACCOUNTABILITYDRUG_ACCOUNTABILITY_SUB_CATEGORY_ASSOCIATION_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entryRelationship->excluding(null)->reject(typeCode=vocab::x_ActRelationshipEntryRelationship::COMP)";
+  protected static final String VALIDATE_DRUG_ACCOUNTABILITYDRUG_ACCOUNTABILITY_CATEGORY_ASSOCIATION_DRUG_ACCOUNTABILITY_CATEGORY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entryRelationship->excluding(null)->reject(observation->one(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(cda::Observation)))";
 
   /**
-   * The cached OCL invariant for the '{@link #validateDrugAccountabilitydrugAccountabilitySubCategoryAssociationTypeCode(DrugAccountability, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Drug Accountabilitydrug Accountability Sub Category Association Type Code</em>}' invariant operation.
+   * The cached OCL invariant for the '{@link #validateDrugAccountabilitydrugAccountabilityCategoryAssociationDrugAccountabilityCategory(DrugAccountability, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Drug Accountabilitydrug Accountability Category Association Drug Accountability Category</em>}' invariant operation.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @see #validateDrugAccountabilitydrugAccountabilitySubCategoryAssociationTypeCode(DrugAccountability, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+   * @see #validateDrugAccountabilitydrugAccountabilityCategoryAssociationDrugAccountabilityCategory(DrugAccountability, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
    * @generated
    * @ordered
    */
   
-  protected static Constraint VALIDATE_DRUG_ACCOUNTABILITYDRUG_ACCOUNTABILITY_SUB_CATEGORY_ASSOCIATION_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-  
+  protected static Constraint VALIDATE_DRUG_ACCOUNTABILITYDRUG_ACCOUNTABILITY_CATEGORY_ASSOCIATION_DRUG_ACCOUNTABILITY_CATEGORY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+
 
   /**
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.entryRelationship->excluding(null)->reject(typeCode=vocab::x_ActRelationshipEntryRelationship::COMP)
    * @param drugAccountability The receiving '<em><b>Drug Accountability</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -1017,21 +1303,22 @@ public class DrugAccountabilityOperations extends ClinicalStatementOperations
    * @generated
    */
   
-  public static  boolean validateDrugAccountabilitydrugAccountabilitySubCategoryAssociationTypeCode(DrugAccountability drugAccountability, DiagnosticChain diagnostics, Map<Object, Object> context)
+  public static  boolean validateDrugAccountabilitydrugAccountabilityCategoryAssociationDrugAccountabilityCategory(DrugAccountability drugAccountability, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
-    if (VALIDATE_DRUG_ACCOUNTABILITYDRUG_ACCOUNTABILITY_SUB_CATEGORY_ASSOCIATION_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+  	  
+    if (VALIDATE_DRUG_ACCOUNTABILITYDRUG_ACCOUNTABILITY_CATEGORY_ASSOCIATION_DRUG_ACCOUNTABILITY_CATEGORY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(SdtmPackage.Literals.DRUG_ACCOUNTABILITY);
       try
       {
-        VALIDATE_DRUG_ACCOUNTABILITYDRUG_ACCOUNTABILITY_SUB_CATEGORY_ASSOCIATION_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_DRUG_ACCOUNTABILITYDRUG_ACCOUNTABILITY_SUB_CATEGORY_ASSOCIATION_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+        VALIDATE_DRUG_ACCOUNTABILITYDRUG_ACCOUNTABILITY_CATEGORY_ASSOCIATION_DRUG_ACCOUNTABILITY_CATEGORY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_DRUG_ACCOUNTABILITYDRUG_ACCOUNTABILITY_CATEGORY_ASSOCIATION_DRUG_ACCOUNTABILITY_CATEGORY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
       }
       catch (ParserException pe)
       {
         throw new UnsupportedOperationException(pe.getLocalizedMessage());
       }
     }
-    if (!EOCL_ENV.createQuery(VALIDATE_DRUG_ACCOUNTABILITYDRUG_ACCOUNTABILITY_SUB_CATEGORY_ASSOCIATION_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(drugAccountability))
+    if (!EOCL_ENV.createQuery(VALIDATE_DRUG_ACCOUNTABILITYDRUG_ACCOUNTABILITY_CATEGORY_ASSOCIATION_DRUG_ACCOUNTABILITY_CATEGORY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(drugAccountability))
     {
       if (diagnostics != null)
       {
@@ -1039,10 +1326,341 @@ public class DrugAccountabilityOperations extends ClinicalStatementOperations
           (new BasicDiagnostic
             (Diagnostic.ERROR,
              SdtmValidator.DIAGNOSTIC_SOURCE,
-             SdtmValidator.DRUG_ACCOUNTABILITY__DRUG_ACCOUNTABILITYDRUG_ACCOUNTABILITY_SUB_CATEGORY_ASSOCIATION_TYPE_CODE,
-             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "DrugAccountabilitydrugAccountabilitySubCategoryAssociationTypeCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(drugAccountability, context) }),
+             SdtmValidator.DRUG_ACCOUNTABILITY__DRUG_ACCOUNTABILITYDRUG_ACCOUNTABILITY_CATEGORY_ASSOCIATION_DRUG_ACCOUNTABILITY_CATEGORY,
+             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "DrugAccountabilitydrugAccountabilityCategoryAssociationDrugAccountabilityCategory", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(drugAccountability, context) }),
              new Object [] { drugAccountability }));
       }
+       
+      return false;
+    }
+    return true;
+  }
+
+  /**
+   * The cached OCL expression body for the '{@link #validateDrugAccountabilitydrugAccountabilitySubCategoryAssociationdrugAccountabilitySubCategoryClassCode(DrugAccountability, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Drug Accountabilitydrug Accountability Sub Category Associationdrug Accountability Sub Category Class Code</em>}' operation.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #validateDrugAccountabilitydrugAccountabilitySubCategoryAssociationdrugAccountabilitySubCategoryClassCode(DrugAccountability, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+   * @generated
+   * @ordered
+   */
+  protected static final String VALIDATE_DRUG_ACCOUNTABILITYDRUG_ACCOUNTABILITY_SUB_CATEGORY_ASSOCIATIONDRUG_ACCOUNTABILITY_SUB_CATEGORY_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entryRelationship->excluding(null).observation->excluding(null)->reject(classCode=vocab::ActClassObservation::OBS)";
+
+  /**
+   * The cached OCL invariant for the '{@link #validateDrugAccountabilitydrugAccountabilitySubCategoryAssociationdrugAccountabilitySubCategoryClassCode(DrugAccountability, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Drug Accountabilitydrug Accountability Sub Category Associationdrug Accountability Sub Category Class Code</em>}' invariant operation.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #validateDrugAccountabilitydrugAccountabilitySubCategoryAssociationdrugAccountabilitySubCategoryClassCode(DrugAccountability, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+   * @generated
+   * @ordered
+   */
+  
+  protected static Constraint VALIDATE_DRUG_ACCOUNTABILITYDRUG_ACCOUNTABILITY_SUB_CATEGORY_ASSOCIATIONDRUG_ACCOUNTABILITY_SUB_CATEGORY_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * <!-- begin-model-doc -->
+   * @param drugAccountability The receiving '<em><b>Drug Accountability</b></em>' model object.
+   * @param diagnostics The chain of diagnostics to which problems are to be appended.
+   * @param context The cache of context-specific information.
+   * <!-- end-model-doc -->
+   * @generated
+   */
+  
+  public static  boolean validateDrugAccountabilitydrugAccountabilitySubCategoryAssociationdrugAccountabilitySubCategoryClassCode(DrugAccountability drugAccountability, DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+  	  
+    if (VALIDATE_DRUG_ACCOUNTABILITYDRUG_ACCOUNTABILITY_SUB_CATEGORY_ASSOCIATIONDRUG_ACCOUNTABILITY_SUB_CATEGORY_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+      OCL.Helper helper = EOCL_ENV.createOCLHelper();
+      helper.setContext(SdtmPackage.Literals.DRUG_ACCOUNTABILITY);
+      try
+      {
+        VALIDATE_DRUG_ACCOUNTABILITYDRUG_ACCOUNTABILITY_SUB_CATEGORY_ASSOCIATIONDRUG_ACCOUNTABILITY_SUB_CATEGORY_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_DRUG_ACCOUNTABILITYDRUG_ACCOUNTABILITY_SUB_CATEGORY_ASSOCIATIONDRUG_ACCOUNTABILITY_SUB_CATEGORY_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+      }
+      catch (ParserException pe)
+      {
+        throw new UnsupportedOperationException(pe.getLocalizedMessage());
+      }
+    }
+    if (!EOCL_ENV.createQuery(VALIDATE_DRUG_ACCOUNTABILITYDRUG_ACCOUNTABILITY_SUB_CATEGORY_ASSOCIATIONDRUG_ACCOUNTABILITY_SUB_CATEGORY_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(drugAccountability))
+    {
+      if (diagnostics != null)
+      {
+        diagnostics.add
+          (new BasicDiagnostic
+            (Diagnostic.ERROR,
+             SdtmValidator.DIAGNOSTIC_SOURCE,
+             SdtmValidator.DRUG_ACCOUNTABILITY__DRUG_ACCOUNTABILITYDRUG_ACCOUNTABILITY_SUB_CATEGORY_ASSOCIATIONDRUG_ACCOUNTABILITY_SUB_CATEGORY_CLASS_CODE,
+             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "DrugAccountabilitydrugAccountabilitySubCategoryAssociationdrugAccountabilitySubCategoryClassCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(drugAccountability, context) }),
+             new Object [] { drugAccountability }));
+      }
+       
+      return false;
+    }
+    return true;
+  }
+
+  /**
+   * The cached OCL expression body for the '{@link #validateDrugAccountabilitydrugAccountabilitySubCategoryAssociationdrugAccountabilitySubCategoryCode(DrugAccountability, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Drug Accountabilitydrug Accountability Sub Category Associationdrug Accountability Sub Category Code</em>}' operation.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #validateDrugAccountabilitydrugAccountabilitySubCategoryAssociationdrugAccountabilitySubCategoryCode(DrugAccountability, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+   * @generated
+   * @ordered
+   */
+  protected static final String VALIDATE_DRUG_ACCOUNTABILITYDRUG_ACCOUNTABILITY_SUB_CATEGORY_ASSOCIATIONDRUG_ACCOUNTABILITY_SUB_CATEGORY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entryRelationship->excluding(null).observation->excluding(null)->reject((code.oclIsUndefined() or code.isNullFlavorUndefined()) implies (not code.oclIsUndefined()))";
+
+  /**
+   * The cached OCL invariant for the '{@link #validateDrugAccountabilitydrugAccountabilitySubCategoryAssociationdrugAccountabilitySubCategoryCode(DrugAccountability, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Drug Accountabilitydrug Accountability Sub Category Associationdrug Accountability Sub Category Code</em>}' invariant operation.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #validateDrugAccountabilitydrugAccountabilitySubCategoryAssociationdrugAccountabilitySubCategoryCode(DrugAccountability, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+   * @generated
+   * @ordered
+   */
+  
+  protected static Constraint VALIDATE_DRUG_ACCOUNTABILITYDRUG_ACCOUNTABILITY_SUB_CATEGORY_ASSOCIATIONDRUG_ACCOUNTABILITY_SUB_CATEGORY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * <!-- begin-model-doc -->
+   * @param drugAccountability The receiving '<em><b>Drug Accountability</b></em>' model object.
+   * @param diagnostics The chain of diagnostics to which problems are to be appended.
+   * @param context The cache of context-specific information.
+   * <!-- end-model-doc -->
+   * @generated
+   */
+  
+  public static  boolean validateDrugAccountabilitydrugAccountabilitySubCategoryAssociationdrugAccountabilitySubCategoryCode(DrugAccountability drugAccountability, DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+  	  
+    if (VALIDATE_DRUG_ACCOUNTABILITYDRUG_ACCOUNTABILITY_SUB_CATEGORY_ASSOCIATIONDRUG_ACCOUNTABILITY_SUB_CATEGORY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+      OCL.Helper helper = EOCL_ENV.createOCLHelper();
+      helper.setContext(SdtmPackage.Literals.DRUG_ACCOUNTABILITY);
+      try
+      {
+        VALIDATE_DRUG_ACCOUNTABILITYDRUG_ACCOUNTABILITY_SUB_CATEGORY_ASSOCIATIONDRUG_ACCOUNTABILITY_SUB_CATEGORY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_DRUG_ACCOUNTABILITYDRUG_ACCOUNTABILITY_SUB_CATEGORY_ASSOCIATIONDRUG_ACCOUNTABILITY_SUB_CATEGORY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+      }
+      catch (ParserException pe)
+      {
+        throw new UnsupportedOperationException(pe.getLocalizedMessage());
+      }
+    }
+    if (!EOCL_ENV.createQuery(VALIDATE_DRUG_ACCOUNTABILITYDRUG_ACCOUNTABILITY_SUB_CATEGORY_ASSOCIATIONDRUG_ACCOUNTABILITY_SUB_CATEGORY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(drugAccountability))
+    {
+      if (diagnostics != null)
+      {
+        diagnostics.add
+          (new BasicDiagnostic
+            (Diagnostic.ERROR,
+             SdtmValidator.DIAGNOSTIC_SOURCE,
+             SdtmValidator.DRUG_ACCOUNTABILITY__DRUG_ACCOUNTABILITYDRUG_ACCOUNTABILITY_SUB_CATEGORY_ASSOCIATIONDRUG_ACCOUNTABILITY_SUB_CATEGORY_CODE,
+             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "DrugAccountabilitydrugAccountabilitySubCategoryAssociationdrugAccountabilitySubCategoryCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(drugAccountability, context) }),
+             new Object [] { drugAccountability }));
+      }
+       
+      return false;
+    }
+    return true;
+  }
+
+  /**
+   * The cached OCL expression body for the '{@link #validateDrugAccountabilitydrugAccountabilitySubCategoryAssociationdrugAccountabilitySubCategoryMoodCode(DrugAccountability, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Drug Accountabilitydrug Accountability Sub Category Associationdrug Accountability Sub Category Mood Code</em>}' operation.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #validateDrugAccountabilitydrugAccountabilitySubCategoryAssociationdrugAccountabilitySubCategoryMoodCode(DrugAccountability, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+   * @generated
+   * @ordered
+   */
+  protected static final String VALIDATE_DRUG_ACCOUNTABILITYDRUG_ACCOUNTABILITY_SUB_CATEGORY_ASSOCIATIONDRUG_ACCOUNTABILITY_SUB_CATEGORY_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entryRelationship->excluding(null).observation->excluding(null)->reject(moodCode=vocab::x_ActMoodDocumentObservation::EVN)";
+
+  /**
+   * The cached OCL invariant for the '{@link #validateDrugAccountabilitydrugAccountabilitySubCategoryAssociationdrugAccountabilitySubCategoryMoodCode(DrugAccountability, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Drug Accountabilitydrug Accountability Sub Category Associationdrug Accountability Sub Category Mood Code</em>}' invariant operation.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #validateDrugAccountabilitydrugAccountabilitySubCategoryAssociationdrugAccountabilitySubCategoryMoodCode(DrugAccountability, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+   * @generated
+   * @ordered
+   */
+  
+  protected static Constraint VALIDATE_DRUG_ACCOUNTABILITYDRUG_ACCOUNTABILITY_SUB_CATEGORY_ASSOCIATIONDRUG_ACCOUNTABILITY_SUB_CATEGORY_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * <!-- begin-model-doc -->
+   * @param drugAccountability The receiving '<em><b>Drug Accountability</b></em>' model object.
+   * @param diagnostics The chain of diagnostics to which problems are to be appended.
+   * @param context The cache of context-specific information.
+   * <!-- end-model-doc -->
+   * @generated
+   */
+  
+  public static  boolean validateDrugAccountabilitydrugAccountabilitySubCategoryAssociationdrugAccountabilitySubCategoryMoodCode(DrugAccountability drugAccountability, DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+  	  
+    if (VALIDATE_DRUG_ACCOUNTABILITYDRUG_ACCOUNTABILITY_SUB_CATEGORY_ASSOCIATIONDRUG_ACCOUNTABILITY_SUB_CATEGORY_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+      OCL.Helper helper = EOCL_ENV.createOCLHelper();
+      helper.setContext(SdtmPackage.Literals.DRUG_ACCOUNTABILITY);
+      try
+      {
+        VALIDATE_DRUG_ACCOUNTABILITYDRUG_ACCOUNTABILITY_SUB_CATEGORY_ASSOCIATIONDRUG_ACCOUNTABILITY_SUB_CATEGORY_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_DRUG_ACCOUNTABILITYDRUG_ACCOUNTABILITY_SUB_CATEGORY_ASSOCIATIONDRUG_ACCOUNTABILITY_SUB_CATEGORY_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+      }
+      catch (ParserException pe)
+      {
+        throw new UnsupportedOperationException(pe.getLocalizedMessage());
+      }
+    }
+    if (!EOCL_ENV.createQuery(VALIDATE_DRUG_ACCOUNTABILITYDRUG_ACCOUNTABILITY_SUB_CATEGORY_ASSOCIATIONDRUG_ACCOUNTABILITY_SUB_CATEGORY_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(drugAccountability))
+    {
+      if (diagnostics != null)
+      {
+        diagnostics.add
+          (new BasicDiagnostic
+            (Diagnostic.ERROR,
+             SdtmValidator.DIAGNOSTIC_SOURCE,
+             SdtmValidator.DRUG_ACCOUNTABILITY__DRUG_ACCOUNTABILITYDRUG_ACCOUNTABILITY_SUB_CATEGORY_ASSOCIATIONDRUG_ACCOUNTABILITY_SUB_CATEGORY_MOOD_CODE,
+             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "DrugAccountabilitydrugAccountabilitySubCategoryAssociationdrugAccountabilitySubCategoryMoodCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(drugAccountability, context) }),
+             new Object [] { drugAccountability }));
+      }
+       
+      return false;
+    }
+    return true;
+  }
+
+  /**
+   * The cached OCL expression body for the '{@link #validateDrugAccountabilitydrugAccountabilitySubCategoryAssociationdrugAccountabilitySubCategoryValue(DrugAccountability, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Drug Accountabilitydrug Accountability Sub Category Associationdrug Accountability Sub Category Value</em>}' operation.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #validateDrugAccountabilitydrugAccountabilitySubCategoryAssociationdrugAccountabilitySubCategoryValue(DrugAccountability, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+   * @generated
+   * @ordered
+   */
+  protected static final String VALIDATE_DRUG_ACCOUNTABILITYDRUG_ACCOUNTABILITY_SUB_CATEGORY_ASSOCIATIONDRUG_ACCOUNTABILITY_SUB_CATEGORY_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entryRelationship->excluding(null).observation->excluding(null)->reject((value->isEmpty() or value->exists(element | element.isNullFlavorUndefined())) implies (value->size() = 1 and value->forAll(element | element.oclIsTypeOf(datatypes::CE))))";
+
+  /**
+   * The cached OCL invariant for the '{@link #validateDrugAccountabilitydrugAccountabilitySubCategoryAssociationdrugAccountabilitySubCategoryValue(DrugAccountability, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Drug Accountabilitydrug Accountability Sub Category Associationdrug Accountability Sub Category Value</em>}' invariant operation.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #validateDrugAccountabilitydrugAccountabilitySubCategoryAssociationdrugAccountabilitySubCategoryValue(DrugAccountability, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+   * @generated
+   * @ordered
+   */
+  
+  protected static Constraint VALIDATE_DRUG_ACCOUNTABILITYDRUG_ACCOUNTABILITY_SUB_CATEGORY_ASSOCIATIONDRUG_ACCOUNTABILITY_SUB_CATEGORY_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * <!-- begin-model-doc -->
+   * @param drugAccountability The receiving '<em><b>Drug Accountability</b></em>' model object.
+   * @param diagnostics The chain of diagnostics to which problems are to be appended.
+   * @param context The cache of context-specific information.
+   * <!-- end-model-doc -->
+   * @generated
+   */
+  
+  public static  boolean validateDrugAccountabilitydrugAccountabilitySubCategoryAssociationdrugAccountabilitySubCategoryValue(DrugAccountability drugAccountability, DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+  	  
+    if (VALIDATE_DRUG_ACCOUNTABILITYDRUG_ACCOUNTABILITY_SUB_CATEGORY_ASSOCIATIONDRUG_ACCOUNTABILITY_SUB_CATEGORY_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+      OCL.Helper helper = EOCL_ENV.createOCLHelper();
+      helper.setContext(SdtmPackage.Literals.DRUG_ACCOUNTABILITY);
+      try
+      {
+        VALIDATE_DRUG_ACCOUNTABILITYDRUG_ACCOUNTABILITY_SUB_CATEGORY_ASSOCIATIONDRUG_ACCOUNTABILITY_SUB_CATEGORY_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_DRUG_ACCOUNTABILITYDRUG_ACCOUNTABILITY_SUB_CATEGORY_ASSOCIATIONDRUG_ACCOUNTABILITY_SUB_CATEGORY_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+      }
+      catch (ParserException pe)
+      {
+        throw new UnsupportedOperationException(pe.getLocalizedMessage());
+      }
+    }
+    if (!EOCL_ENV.createQuery(VALIDATE_DRUG_ACCOUNTABILITYDRUG_ACCOUNTABILITY_SUB_CATEGORY_ASSOCIATIONDRUG_ACCOUNTABILITY_SUB_CATEGORY_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(drugAccountability))
+    {
+      if (diagnostics != null)
+      {
+        diagnostics.add
+          (new BasicDiagnostic
+            (Diagnostic.ERROR,
+             SdtmValidator.DIAGNOSTIC_SOURCE,
+             SdtmValidator.DRUG_ACCOUNTABILITY__DRUG_ACCOUNTABILITYDRUG_ACCOUNTABILITY_SUB_CATEGORY_ASSOCIATIONDRUG_ACCOUNTABILITY_SUB_CATEGORY_VALUE,
+             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "DrugAccountabilitydrugAccountabilitySubCategoryAssociationdrugAccountabilitySubCategoryValue", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(drugAccountability, context) }),
+             new Object [] { drugAccountability }));
+      }
+       
+      return false;
+    }
+    return true;
+  }
+
+  /**
+   * The cached OCL expression body for the '{@link #validateDrugAccountabilitydrugAccountabilitySubCategoryAssociationDrugAccountabilitySubCategory(DrugAccountability, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Drug Accountabilitydrug Accountability Sub Category Association Drug Accountability Sub Category</em>}' operation.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #validateDrugAccountabilitydrugAccountabilitySubCategoryAssociationDrugAccountabilitySubCategory(DrugAccountability, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+   * @generated
+   * @ordered
+   */
+  protected static final String VALIDATE_DRUG_ACCOUNTABILITYDRUG_ACCOUNTABILITY_SUB_CATEGORY_ASSOCIATION_DRUG_ACCOUNTABILITY_SUB_CATEGORY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entryRelationship->excluding(null)->reject(observation->one(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(cda::Observation)))";
+
+  /**
+   * The cached OCL invariant for the '{@link #validateDrugAccountabilitydrugAccountabilitySubCategoryAssociationDrugAccountabilitySubCategory(DrugAccountability, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Drug Accountabilitydrug Accountability Sub Category Association Drug Accountability Sub Category</em>}' invariant operation.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #validateDrugAccountabilitydrugAccountabilitySubCategoryAssociationDrugAccountabilitySubCategory(DrugAccountability, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+   * @generated
+   * @ordered
+   */
+  
+  protected static Constraint VALIDATE_DRUG_ACCOUNTABILITYDRUG_ACCOUNTABILITY_SUB_CATEGORY_ASSOCIATION_DRUG_ACCOUNTABILITY_SUB_CATEGORY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * <!-- begin-model-doc -->
+   * @param drugAccountability The receiving '<em><b>Drug Accountability</b></em>' model object.
+   * @param diagnostics The chain of diagnostics to which problems are to be appended.
+   * @param context The cache of context-specific information.
+   * <!-- end-model-doc -->
+   * @generated
+   */
+  
+  public static  boolean validateDrugAccountabilitydrugAccountabilitySubCategoryAssociationDrugAccountabilitySubCategory(DrugAccountability drugAccountability, DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+  	  
+    if (VALIDATE_DRUG_ACCOUNTABILITYDRUG_ACCOUNTABILITY_SUB_CATEGORY_ASSOCIATION_DRUG_ACCOUNTABILITY_SUB_CATEGORY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+      OCL.Helper helper = EOCL_ENV.createOCLHelper();
+      helper.setContext(SdtmPackage.Literals.DRUG_ACCOUNTABILITY);
+      try
+      {
+        VALIDATE_DRUG_ACCOUNTABILITYDRUG_ACCOUNTABILITY_SUB_CATEGORY_ASSOCIATION_DRUG_ACCOUNTABILITY_SUB_CATEGORY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_DRUG_ACCOUNTABILITYDRUG_ACCOUNTABILITY_SUB_CATEGORY_ASSOCIATION_DRUG_ACCOUNTABILITY_SUB_CATEGORY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+      }
+      catch (ParserException pe)
+      {
+        throw new UnsupportedOperationException(pe.getLocalizedMessage());
+      }
+    }
+    if (!EOCL_ENV.createQuery(VALIDATE_DRUG_ACCOUNTABILITYDRUG_ACCOUNTABILITY_SUB_CATEGORY_ASSOCIATION_DRUG_ACCOUNTABILITY_SUB_CATEGORY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(drugAccountability))
+    {
+      if (diagnostics != null)
+      {
+        diagnostics.add
+          (new BasicDiagnostic
+            (Diagnostic.ERROR,
+             SdtmValidator.DIAGNOSTIC_SOURCE,
+             SdtmValidator.DRUG_ACCOUNTABILITY__DRUG_ACCOUNTABILITYDRUG_ACCOUNTABILITY_SUB_CATEGORY_ASSOCIATION_DRUG_ACCOUNTABILITY_SUB_CATEGORY,
+             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "DrugAccountabilitydrugAccountabilitySubCategoryAssociationDrugAccountabilitySubCategory", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(drugAccountability, context) }),
+             new Object [] { drugAccountability }));
+      }
+       
       return false;
     }
     return true;
@@ -1056,7 +1674,7 @@ public class DrugAccountabilityOperations extends ClinicalStatementOperations
    * @generated
    * @ordered
    */
-  protected static final String GET_GROUP_IDENTIFIER__EOCL_EXP = "self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(sdtm::Group Identifier))->asSequence()->first().oclAsType(sdtm::Group Identifier)";
+  protected static final String GET_GROUP_IDENTIFIER__EOCL_EXP = "self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(sdtm::Group Identifier))->asSequence()->any(true).oclAsType(sdtm::Group Identifier)";
 
   /**
    * The cached OCL query for the '{@link #getGroupIdentifier(DrugAccountability) <em>Get Group Identifier</em>}' query operation.
@@ -1071,10 +1689,6 @@ public class DrugAccountabilityOperations extends ClinicalStatementOperations
   /**
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * <!-- begin-model-doc -->
-   * self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(sdtm::Group Identifier))->asSequence()->first().oclAsType(sdtm::Group Identifier)
-   * @param drugAccountability The receiving '<em><b>Drug Accountability</b></em>' model object.
-   * <!-- end-model-doc -->
    * @generated
    */
   
@@ -1083,7 +1697,7 @@ public class DrugAccountabilityOperations extends ClinicalStatementOperations
     if (GET_GROUP_IDENTIFIER__EOCL_QRY == null)
     {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
-      helper.setOperationContext(SdtmPackage.Literals.DRUG_ACCOUNTABILITY, SdtmPackage.Literals.DRUG_ACCOUNTABILITY.getEAllOperations().get(64));
+      helper.setOperationContext(SdtmPackage.Literals.DRUG_ACCOUNTABILITY, SdtmPackage.Literals.DRUG_ACCOUNTABILITY.getEAllOperations().get(75));
       try
       {
         GET_GROUP_IDENTIFIER__EOCL_QRY = helper.createQuery(GET_GROUP_IDENTIFIER__EOCL_EXP);
@@ -1105,7 +1719,7 @@ public class DrugAccountabilityOperations extends ClinicalStatementOperations
    * @generated
    * @ordered
    */
-  protected static final String GET_NON_PERFORMANCE_REASON__EOCL_EXP = "self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(sdtm::Non Performance Reason))->asSequence()->first().oclAsType(sdtm::Non Performance Reason)";
+  protected static final String GET_NON_PERFORMANCE_REASON__EOCL_EXP = "self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(sdtm::Non Performance Reason))->asSequence()->any(true).oclAsType(sdtm::Non Performance Reason)";
 
   /**
    * The cached OCL query for the '{@link #getNonPerformanceReason(DrugAccountability) <em>Get Non Performance Reason</em>}' query operation.
@@ -1120,10 +1734,6 @@ public class DrugAccountabilityOperations extends ClinicalStatementOperations
   /**
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * <!-- begin-model-doc -->
-   * self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(sdtm::Non Performance Reason))->asSequence()->first().oclAsType(sdtm::Non Performance Reason)
-   * @param drugAccountability The receiving '<em><b>Drug Accountability</b></em>' model object.
-   * <!-- end-model-doc -->
    * @generated
    */
   
@@ -1132,7 +1742,7 @@ public class DrugAccountabilityOperations extends ClinicalStatementOperations
     if (GET_NON_PERFORMANCE_REASON__EOCL_QRY == null)
     {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
-      helper.setOperationContext(SdtmPackage.Literals.DRUG_ACCOUNTABILITY, SdtmPackage.Literals.DRUG_ACCOUNTABILITY.getEAllOperations().get(65));
+      helper.setOperationContext(SdtmPackage.Literals.DRUG_ACCOUNTABILITY, SdtmPackage.Literals.DRUG_ACCOUNTABILITY.getEAllOperations().get(76));
       try
       {
         GET_NON_PERFORMANCE_REASON__EOCL_QRY = helper.createQuery(GET_NON_PERFORMANCE_REASON__EOCL_EXP);
@@ -1154,7 +1764,7 @@ public class DrugAccountabilityOperations extends ClinicalStatementOperations
    * @generated
    * @ordered
    */
-  protected static final String GET_EVENT_STUDY_DAY__EOCL_EXP = "self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(sdtm::Event Study Day))->asSequence()->first().oclAsType(sdtm::Event Study Day)";
+  protected static final String GET_EVENT_STUDY_DAY__EOCL_EXP = "self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(sdtm::Event Study Day))->asSequence()->any(true).oclAsType(sdtm::Event Study Day)";
 
   /**
    * The cached OCL query for the '{@link #getEventStudyDay(DrugAccountability) <em>Get Event Study Day</em>}' query operation.
@@ -1169,10 +1779,6 @@ public class DrugAccountabilityOperations extends ClinicalStatementOperations
   /**
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * <!-- begin-model-doc -->
-   * self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(sdtm::Event Study Day))->asSequence()->first().oclAsType(sdtm::Event Study Day)
-   * @param drugAccountability The receiving '<em><b>Drug Accountability</b></em>' model object.
-   * <!-- end-model-doc -->
    * @generated
    */
   
@@ -1181,7 +1787,7 @@ public class DrugAccountabilityOperations extends ClinicalStatementOperations
     if (GET_EVENT_STUDY_DAY__EOCL_QRY == null)
     {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
-      helper.setOperationContext(SdtmPackage.Literals.DRUG_ACCOUNTABILITY, SdtmPackage.Literals.DRUG_ACCOUNTABILITY.getEAllOperations().get(66));
+      helper.setOperationContext(SdtmPackage.Literals.DRUG_ACCOUNTABILITY, SdtmPackage.Literals.DRUG_ACCOUNTABILITY.getEAllOperations().get(77));
       try
       {
         GET_EVENT_STUDY_DAY__EOCL_QRY = helper.createQuery(GET_EVENT_STUDY_DAY__EOCL_EXP);

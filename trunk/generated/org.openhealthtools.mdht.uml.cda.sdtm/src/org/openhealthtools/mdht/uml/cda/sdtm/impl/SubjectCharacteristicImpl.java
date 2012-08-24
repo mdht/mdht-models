@@ -6,12 +6,15 @@
  */
 package org.openhealthtools.mdht.uml.cda.sdtm.impl;
 
+import java.lang.Iterable;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
 
 import org.eclipse.emf.ecore.EClass;
 
+import org.eclipse.emf.ecore.EObject;
+import org.openhealthtools.mdht.emf.runtime.util.Initializer;
 import org.openhealthtools.mdht.uml.cda.impl.ObservationImpl;
 
 import org.openhealthtools.mdht.uml.cda.sdtm.DataCollection;
@@ -171,6 +174,56 @@ public class SubjectCharacteristicImpl extends ObservationImpl implements Subjec
    * <!-- end-user-doc -->
    * @generated
    */
+  public boolean validateSubjectCharacteristicSubjectCharateristicSubCategoryAssociation(DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+    return SubjectCharacteristicOperations.validateSubjectCharacteristicSubjectCharateristicSubCategoryAssociation(this, diagnostics, context);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public boolean validateSubjectCharacteristicsubjectCharateristicCategoryAssociationsubjectCharacteristicCategoryClassCode(DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+    return SubjectCharacteristicOperations.validateSubjectCharacteristicsubjectCharateristicCategoryAssociationsubjectCharacteristicCategoryClassCode(this, diagnostics, context);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public boolean validateSubjectCharacteristicsubjectCharateristicCategoryAssociationsubjectCharacteristicCategoryCode(DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+    return SubjectCharacteristicOperations.validateSubjectCharacteristicsubjectCharateristicCategoryAssociationsubjectCharacteristicCategoryCode(this, diagnostics, context);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public boolean validateSubjectCharacteristicsubjectCharateristicCategoryAssociationsubjectCharacteristicCategoryMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+    return SubjectCharacteristicOperations.validateSubjectCharacteristicsubjectCharateristicCategoryAssociationsubjectCharacteristicCategoryMoodCode(this, diagnostics, context);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public boolean validateSubjectCharacteristicsubjectCharateristicCategoryAssociationsubjectCharacteristicCategoryValue(DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+    return SubjectCharacteristicOperations.validateSubjectCharacteristicsubjectCharateristicCategoryAssociationsubjectCharacteristicCategoryValue(this, diagnostics, context);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
   public boolean validateSubjectCharacteristicsubjectCharateristicCategoryAssociationTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context)
   {
     return SubjectCharacteristicOperations.validateSubjectCharacteristicsubjectCharateristicCategoryAssociationTemplateId(this, diagnostics, context);
@@ -191,9 +244,69 @@ public class SubjectCharacteristicImpl extends ObservationImpl implements Subjec
    * <!-- end-user-doc -->
    * @generated
    */
+  public boolean validateSubjectCharacteristicsubjectCharateristicCategoryAssociationSubjectCharacteristicCategory(DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+    return SubjectCharacteristicOperations.validateSubjectCharacteristicsubjectCharateristicCategoryAssociationSubjectCharacteristicCategory(this, diagnostics, context);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public boolean validateSubjectCharacteristicsubjectCharateristicSubCategoryAssociationsubjectCharateristicSubCategoryClassCode(DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+    return SubjectCharacteristicOperations.validateSubjectCharacteristicsubjectCharateristicSubCategoryAssociationsubjectCharateristicSubCategoryClassCode(this, diagnostics, context);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public boolean validateSubjectCharacteristicsubjectCharateristicSubCategoryAssociationsubjectCharateristicSubCategoryCode(DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+    return SubjectCharacteristicOperations.validateSubjectCharacteristicsubjectCharateristicSubCategoryAssociationsubjectCharateristicSubCategoryCode(this, diagnostics, context);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public boolean validateSubjectCharacteristicsubjectCharateristicSubCategoryAssociationsubjectCharateristicSubCategoryMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+    return SubjectCharacteristicOperations.validateSubjectCharacteristicsubjectCharateristicSubCategoryAssociationsubjectCharateristicSubCategoryMoodCode(this, diagnostics, context);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public boolean validateSubjectCharacteristicsubjectCharateristicSubCategoryAssociationsubjectCharateristicSubCategoryValue(DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+    return SubjectCharacteristicOperations.validateSubjectCharacteristicsubjectCharateristicSubCategoryAssociationsubjectCharateristicSubCategoryValue(this, diagnostics, context);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
   public boolean validateSubjectCharacteristicsubjectCharateristicSubCategoryAssociationTypeCode(DiagnosticChain diagnostics, Map<Object, Object> context)
   {
     return SubjectCharacteristicOperations.validateSubjectCharacteristicsubjectCharateristicSubCategoryAssociationTypeCode(this, diagnostics, context);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public boolean validateSubjectCharacteristicsubjectCharateristicSubCategoryAssociationSubjectCharateristicSubCategory(DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+    return SubjectCharacteristicOperations.validateSubjectCharacteristicsubjectCharateristicSubCategoryAssociationSubjectCharateristicSubCategory(this, diagnostics, context);
   }
 
   /**
@@ -232,7 +345,16 @@ public class SubjectCharacteristicImpl extends ObservationImpl implements Subjec
    * @generated
    */
   public SubjectCharacteristic init() {
-    	CDAUtil.init(this);
-    	return this;
+      return Initializer.Util.init(this);
   }
+
+  /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    public SubjectCharacteristic init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
 } //SubjectCharacteristicImpl

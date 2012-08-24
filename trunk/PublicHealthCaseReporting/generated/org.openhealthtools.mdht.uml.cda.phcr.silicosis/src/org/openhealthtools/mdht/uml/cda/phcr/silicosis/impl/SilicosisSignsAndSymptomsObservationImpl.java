@@ -10,10 +10,13 @@
  *******************************************************************************/
 package org.openhealthtools.mdht.uml.cda.phcr.silicosis.impl;
 
+import java.lang.Iterable;
 import java.util.Map;
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.ecore.EClass;
 
+import org.eclipse.emf.ecore.EObject;
+import org.openhealthtools.mdht.emf.runtime.util.Initializer;
 import org.openhealthtools.mdht.uml.cda.phcr.impl.SignsAndSymptomsObservationImpl;
 
 import org.openhealthtools.mdht.uml.cda.phcr.silicosis.SilicosisPackage;
@@ -32,52 +35,61 @@ import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
  */
 public class SilicosisSignsAndSymptomsObservationImpl extends SignsAndSymptomsObservationImpl implements SilicosisSignsAndSymptomsObservation {
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	protected SilicosisSignsAndSymptomsObservationImpl() {
-		super();
-	}
+    super();
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	@Override
 	protected EClass eStaticClass() {
-		return SilicosisPackage.Literals.SILICOSIS_SIGNS_AND_SYMPTOMS_OBSERVATION;
-	}
+    return SilicosisPackage.Literals.SILICOSIS_SIGNS_AND_SYMPTOMS_OBSERVATION;
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateSilicosisSignsAndSymptomsObservationValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return SilicosisSignsAndSymptomsObservationOperations.validateSilicosisSignsAndSymptomsObservationValue(this, diagnostics, context);
-	}
+    return SilicosisSignsAndSymptomsObservationOperations.validateSilicosisSignsAndSymptomsObservationValue(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   @Override
   public boolean validateSignsAndSymptomsObservationTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context)
   {
-		return SilicosisSignsAndSymptomsObservationOperations.validateSignsAndSymptomsObservationTemplateId(this, diagnostics, context);
-	}
+    return SilicosisSignsAndSymptomsObservationOperations.validateSignsAndSymptomsObservationTemplateId(this, diagnostics, context);
+  }
 
   /**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public SilicosisSignsAndSymptomsObservation init() {
-    	CDAUtil.init(this);
-    	return this;
-	}
+      return Initializer.Util.init(this);
+  }
+
+  /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    public SilicosisSignsAndSymptomsObservation init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
 
 } //SilicosisSignsAndSymptomsObservationImpl

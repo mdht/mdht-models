@@ -56,19 +56,30 @@ import org.openhealthtools.mdht.uml.cda.sdtm.util.SdtmValidator;
  *   <li>{@link org.openhealthtools.mdht.uml.cda.sdtm.HumanClinicalExposure#validateHumanClinicalExposureConsumableMaterial(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Human Clinical Exposure Consumable Material</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.sdtm.HumanClinicalExposure#validateHumanClinicalExposureExposureCategoryAssociation(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Human Clinical Exposure Exposure Category Association</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.sdtm.HumanClinicalExposure#validateHumanClinicalExposureExposureSubCategoryAssociation(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Human Clinical Exposure Exposure Sub Category Association</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.sdtm.HumanClinicalExposure#validateHumanClinicalExposureExposureIndication(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Human Clinical Exposure Exposure Indication</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.sdtm.HumanClinicalExposure#validateHumanClinicalExposureDoseAdjustmentReasonAssociation(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Human Clinical Exposure Dose Adjustment Reason Association</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.sdtm.HumanClinicalExposure#validateHumanClinicalExposureStudyEpoch(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Human Clinical Exposure Study Epoch</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.sdtm.HumanClinicalExposure#validateHumanClinicalExposureElementOrderAssociation(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Human Clinical Exposure Element Order Association</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.sdtm.HumanClinicalExposure#validateHumanClinicalExposureTimingReference(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Human Clinical Exposure Timing Reference</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.sdtm.HumanClinicalExposure#validateHumanClinicalExposureStudyDayPeriod(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Human Clinical Exposure Study Day Period</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.sdtm.HumanClinicalExposure#validateHumanClinicalExposureExposureRegimenAssociation(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Human Clinical Exposure Exposure Regimen Association</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.sdtm.HumanClinicalExposure#validateHumanClinicalExposureexposureCategoryAssociationexposureEventCategoryClassCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Human Clinical Exposureexposure Category Associationexposure Event Category Class Code</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.sdtm.HumanClinicalExposure#validateHumanClinicalExposureexposureCategoryAssociationexposureEventCategoryCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Human Clinical Exposureexposure Category Associationexposure Event Category Code</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.sdtm.HumanClinicalExposure#validateHumanClinicalExposureexposureCategoryAssociationexposureEventCategoryMoodCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Human Clinical Exposureexposure Category Associationexposure Event Category Mood Code</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.sdtm.HumanClinicalExposure#validateHumanClinicalExposureexposureCategoryAssociationexposureEventCategoryValue(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Human Clinical Exposureexposure Category Associationexposure Event Category Value</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.sdtm.HumanClinicalExposure#validateHumanClinicalExposureexposureCategoryAssociationTypeCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Human Clinical Exposureexposure Category Association Type Code</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.sdtm.HumanClinicalExposure#validateHumanClinicalExposureexposureCategoryAssociationExposureEventCategory(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Human Clinical Exposureexposure Category Association Exposure Event Category</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.sdtm.HumanClinicalExposure#validateHumanClinicalExposureexposureSubCategoryAssociationexposureEventSubCategoryClassCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Human Clinical Exposureexposure Sub Category Associationexposure Event Sub Category Class Code</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.sdtm.HumanClinicalExposure#validateHumanClinicalExposureexposureSubCategoryAssociationexposureEventSubCategoryCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Human Clinical Exposureexposure Sub Category Associationexposure Event Sub Category Code</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.sdtm.HumanClinicalExposure#validateHumanClinicalExposureexposureSubCategoryAssociationexposureEventSubCategoryMoodCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Human Clinical Exposureexposure Sub Category Associationexposure Event Sub Category Mood Code</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.sdtm.HumanClinicalExposure#validateHumanClinicalExposureexposureSubCategoryAssociationexposureEventSubCategoryValue(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Human Clinical Exposureexposure Sub Category Associationexposure Event Sub Category Value</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.sdtm.HumanClinicalExposure#validateHumanClinicalExposureexposureSubCategoryAssociationTypeCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Human Clinical Exposureexposure Sub Category Association Type Code</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.sdtm.HumanClinicalExposure#validateHumanClinicalExposureexposureIntendedRegimenClassCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Human Clinical Exposureexposure Intended Regimen Class Code</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.sdtm.HumanClinicalExposure#validateHumanClinicalExposureexposureIntendedRegimenMoodCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Human Clinical Exposureexposure Intended Regimen Mood Code</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.sdtm.HumanClinicalExposure#validateHumanClinicalExposureexposureIntendedRegimenCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Human Clinical Exposureexposure Intended Regimen Code</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.sdtm.HumanClinicalExposure#validateHumanClinicalExposureexposureIntendedRegimenValue(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Human Clinical Exposureexposure Intended Regimen Value</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.sdtm.HumanClinicalExposure#validateHumanClinicalExposureexposureSubCategoryAssociationExposureEventSubCategory(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Human Clinical Exposureexposure Sub Category Association Exposure Event Sub Category</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.sdtm.HumanClinicalExposure#validateHumanClinicalExposuredoseAdjustmentReasonAssociationdoseAdjustmentReasonClassCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Human Clinical Exposuredose Adjustment Reason Associationdose Adjustment Reason Class Code</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.sdtm.HumanClinicalExposure#validateHumanClinicalExposuredoseAdjustmentReasonAssociationdoseAdjustmentReasonCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Human Clinical Exposuredose Adjustment Reason Associationdose Adjustment Reason Code P</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.sdtm.HumanClinicalExposure#validateHumanClinicalExposuredoseAdjustmentReasonAssociationdoseAdjustmentReasonCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Human Clinical Exposuredose Adjustment Reason Associationdose Adjustment Reason Code</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.sdtm.HumanClinicalExposure#validateHumanClinicalExposuredoseAdjustmentReasonAssociationdoseAdjustmentReasonValue(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Human Clinical Exposuredose Adjustment Reason Associationdose Adjustment Reason Value</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.sdtm.HumanClinicalExposure#validateHumanClinicalExposuredoseAdjustmentReasonAssociationTypeCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Human Clinical Exposuredose Adjustment Reason Association Type Code</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.sdtm.HumanClinicalExposure#validateHumanClinicalExposuredoseAdjustmentReasonAssociationDoseAdjustmentReason(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Human Clinical Exposuredose Adjustment Reason Association Dose Adjustment Reason</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.sdtm.HumanClinicalExposure#validateHumanClinicalExposureelementOrderAssociationelementOrderClassCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Human Clinical Exposureelement Order Associationelement Order Class Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.sdtm.HumanClinicalExposure#validateHumanClinicalExposureelementOrderAssociationelementOrderCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Human Clinical Exposureelement Order Associationelement Order Code P</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.sdtm.HumanClinicalExposure#validateHumanClinicalExposureelementOrderAssociationelementOrderCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Human Clinical Exposureelement Order Associationelement Order Code</em>}</li>
@@ -76,8 +87,13 @@ import org.openhealthtools.mdht.uml.cda.sdtm.util.SdtmValidator;
  *   <li>{@link org.openhealthtools.mdht.uml.cda.sdtm.HumanClinicalExposure#validateHumanClinicalExposureelementOrderAssociationelementOrderValue(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Human Clinical Exposureelement Order Associationelement Order Value</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.sdtm.HumanClinicalExposure#validateHumanClinicalExposureelementOrderAssociationTypeCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Human Clinical Exposureelement Order Association Type Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.sdtm.HumanClinicalExposure#validateHumanClinicalExposureelementOrderAssociationElementOrder(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Human Clinical Exposureelement Order Association Element Order</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.sdtm.HumanClinicalExposure#validateHumanClinicalExposureexposureRegimenAssociationexposureIntendedRegimenClassCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Human Clinical Exposureexposure Regimen Associationexposure Intended Regimen Class Code</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.sdtm.HumanClinicalExposure#validateHumanClinicalExposureexposureRegimenAssociationexposureIntendedRegimenMoodCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Human Clinical Exposureexposure Regimen Associationexposure Intended Regimen Mood Code</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.sdtm.HumanClinicalExposure#validateHumanClinicalExposureexposureRegimenAssociationexposureIntendedRegimenCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Human Clinical Exposureexposure Regimen Associationexposure Intended Regimen Code</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.sdtm.HumanClinicalExposure#validateHumanClinicalExposureexposureRegimenAssociationexposureIntendedRegimenValue(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Human Clinical Exposureexposure Regimen Associationexposure Intended Regimen Value</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.sdtm.HumanClinicalExposure#validateHumanClinicalExposureexposureRegimenAssociationTypeCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Human Clinical Exposureexposure Regimen Association Type Code</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.sdtm.HumanClinicalExposure#validateHumanClinicalExposureexposureRegimenAssociationExposureIntendedRegimen(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Human Clinical Exposureexposure Regimen Association Exposure Intended Regimen</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.sdtm.HumanClinicalExposure#getGroupIdentifier() <em>Get Group Identifier</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.sdtm.HumanClinicalExposure#getExposureIndication() <em>Get Exposure Indication</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.sdtm.HumanClinicalExposure#getStudyEpoch() <em>Get Study Epoch</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.sdtm.HumanClinicalExposure#getTimingReference() <em>Get Timing Reference</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.sdtm.HumanClinicalExposure#getStudyDayPeriod() <em>Get Study Day Period</em>}</li>
@@ -123,7 +139,6 @@ public class HumanClinicalExposureOperations extends SubstanceAdministrationOper
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.23.20')
    * @param humanClinicalExposure The receiving '<em><b>Human Clinical Exposure</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -133,6 +148,7 @@ public class HumanClinicalExposureOperations extends SubstanceAdministrationOper
   
   public static  boolean validateHumanClinicalExposureTemplateId(HumanClinicalExposure humanClinicalExposure, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
+  	  
     if (VALIDATE_HUMAN_CLINICAL_EXPOSURE_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(SdtmPackage.Literals.HUMAN_CLINICAL_EXPOSURE);
@@ -157,6 +173,7 @@ public class HumanClinicalExposureOperations extends SubstanceAdministrationOper
              org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "HumanClinicalExposureTemplateId", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(humanClinicalExposure, context) }),
              new Object [] { humanClinicalExposure }));
       }
+       
       return false;
     }
     return true;
@@ -188,7 +205,6 @@ public class HumanClinicalExposureOperations extends SubstanceAdministrationOper
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.classCode=vocab::ActClass::SBADM
    * @param humanClinicalExposure The receiving '<em><b>Human Clinical Exposure</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -198,6 +214,7 @@ public class HumanClinicalExposureOperations extends SubstanceAdministrationOper
   
   public static  boolean validateHumanClinicalExposureClassCode(HumanClinicalExposure humanClinicalExposure, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
+  	  
     if (VALIDATE_HUMAN_CLINICAL_EXPOSURE_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(SdtmPackage.Literals.HUMAN_CLINICAL_EXPOSURE);
@@ -222,6 +239,7 @@ public class HumanClinicalExposureOperations extends SubstanceAdministrationOper
              org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "HumanClinicalExposureClassCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(humanClinicalExposure, context) }),
              new Object [] { humanClinicalExposure }));
       }
+       
       return false;
     }
     return true;
@@ -253,7 +271,6 @@ public class HumanClinicalExposureOperations extends SubstanceAdministrationOper
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * (self.doseQuantity.oclIsUndefined() or self.doseQuantity.isNullFlavorUndefined()) implies (not self.doseQuantity.oclIsUndefined())
    * @param humanClinicalExposure The receiving '<em><b>Human Clinical Exposure</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -263,6 +280,7 @@ public class HumanClinicalExposureOperations extends SubstanceAdministrationOper
   
   public static  boolean validateHumanClinicalExposureDoseQuantity(HumanClinicalExposure humanClinicalExposure, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
+  	  
     if (VALIDATE_HUMAN_CLINICAL_EXPOSURE_DOSE_QUANTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(SdtmPackage.Literals.HUMAN_CLINICAL_EXPOSURE);
@@ -287,6 +305,7 @@ public class HumanClinicalExposureOperations extends SubstanceAdministrationOper
              org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "HumanClinicalExposureDoseQuantity", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(humanClinicalExposure, context) }),
              new Object [] { humanClinicalExposure }));
       }
+       
       return false;
     }
     return true;
@@ -318,7 +337,6 @@ public class HumanClinicalExposureOperations extends SubstanceAdministrationOper
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * (self.effectiveTime->isEmpty() or self.effectiveTime->exists(element | element.isNullFlavorUndefined())) implies (not self.effectiveTime->isEmpty())
    * @param humanClinicalExposure The receiving '<em><b>Human Clinical Exposure</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -328,6 +346,7 @@ public class HumanClinicalExposureOperations extends SubstanceAdministrationOper
   
   public static  boolean validateHumanClinicalExposureEffectiveTime(HumanClinicalExposure humanClinicalExposure, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
+  	  
     if (VALIDATE_HUMAN_CLINICAL_EXPOSURE_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(SdtmPackage.Literals.HUMAN_CLINICAL_EXPOSURE);
@@ -352,6 +371,7 @@ public class HumanClinicalExposureOperations extends SubstanceAdministrationOper
              org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "HumanClinicalExposureEffectiveTime", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(humanClinicalExposure, context) }),
              new Object [] { humanClinicalExposure }));
       }
+       
       return false;
     }
     return true;
@@ -383,7 +403,6 @@ public class HumanClinicalExposureOperations extends SubstanceAdministrationOper
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * (self.id->isEmpty() or self.id->exists(element | element.isNullFlavorUndefined())) implies (not self.id->isEmpty())
    * @param humanClinicalExposure The receiving '<em><b>Human Clinical Exposure</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -393,6 +412,7 @@ public class HumanClinicalExposureOperations extends SubstanceAdministrationOper
   
   public static  boolean validateHumanClinicalExposureId(HumanClinicalExposure humanClinicalExposure, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
+  	  
     if (VALIDATE_HUMAN_CLINICAL_EXPOSURE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(SdtmPackage.Literals.HUMAN_CLINICAL_EXPOSURE);
@@ -417,6 +437,7 @@ public class HumanClinicalExposureOperations extends SubstanceAdministrationOper
              org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "HumanClinicalExposureId", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(humanClinicalExposure, context) }),
              new Object [] { humanClinicalExposure }));
       }
+       
       return false;
     }
     return true;
@@ -448,7 +469,6 @@ public class HumanClinicalExposureOperations extends SubstanceAdministrationOper
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.moodCode=vocab::x_DocumentSubstanceMood::EVN
    * @param humanClinicalExposure The receiving '<em><b>Human Clinical Exposure</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -458,6 +478,7 @@ public class HumanClinicalExposureOperations extends SubstanceAdministrationOper
   
   public static  boolean validateHumanClinicalExposureMoodCode(HumanClinicalExposure humanClinicalExposure, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
+  	  
     if (VALIDATE_HUMAN_CLINICAL_EXPOSURE_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(SdtmPackage.Literals.HUMAN_CLINICAL_EXPOSURE);
@@ -482,6 +503,7 @@ public class HumanClinicalExposureOperations extends SubstanceAdministrationOper
              org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "HumanClinicalExposureMoodCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(humanClinicalExposure, context) }),
              new Object [] { humanClinicalExposure }));
       }
+       
       return false;
     }
     return true;
@@ -513,7 +535,6 @@ public class HumanClinicalExposureOperations extends SubstanceAdministrationOper
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * (self.routeCode.oclIsUndefined() or self.routeCode.isNullFlavorUndefined()) implies (not self.routeCode.oclIsUndefined())
    * @param humanClinicalExposure The receiving '<em><b>Human Clinical Exposure</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -523,6 +544,7 @@ public class HumanClinicalExposureOperations extends SubstanceAdministrationOper
   
   public static  boolean validateHumanClinicalExposureRouteCode(HumanClinicalExposure humanClinicalExposure, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
+  	  
     if (VALIDATE_HUMAN_CLINICAL_EXPOSURE_ROUTE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(SdtmPackage.Literals.HUMAN_CLINICAL_EXPOSURE);
@@ -547,6 +569,7 @@ public class HumanClinicalExposureOperations extends SubstanceAdministrationOper
              org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "HumanClinicalExposureRouteCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(humanClinicalExposure, context) }),
              new Object [] { humanClinicalExposure }));
       }
+       
       return false;
     }
     return true;
@@ -578,7 +601,6 @@ public class HumanClinicalExposureOperations extends SubstanceAdministrationOper
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * (self.maxDoseQuantity.oclIsUndefined() or self.maxDoseQuantity.isNullFlavorUndefined()) implies (not self.maxDoseQuantity.oclIsUndefined())
    * @param humanClinicalExposure The receiving '<em><b>Human Clinical Exposure</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -588,6 +610,7 @@ public class HumanClinicalExposureOperations extends SubstanceAdministrationOper
   
   public static  boolean validateHumanClinicalExposureMaxDoseQuantity(HumanClinicalExposure humanClinicalExposure, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
+  	  
     if (VALIDATE_HUMAN_CLINICAL_EXPOSURE_MAX_DOSE_QUANTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(SdtmPackage.Literals.HUMAN_CLINICAL_EXPOSURE);
@@ -612,6 +635,7 @@ public class HumanClinicalExposureOperations extends SubstanceAdministrationOper
              org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "HumanClinicalExposureMaxDoseQuantity", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(humanClinicalExposure, context) }),
              new Object [] { humanClinicalExposure }));
       }
+       
       return false;
     }
     return true;
@@ -643,7 +667,6 @@ public class HumanClinicalExposureOperations extends SubstanceAdministrationOper
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * (self.text.oclIsUndefined() or self.text.isNullFlavorUndefined()) implies (not self.text.oclIsUndefined())
    * @param humanClinicalExposure The receiving '<em><b>Human Clinical Exposure</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -653,6 +676,7 @@ public class HumanClinicalExposureOperations extends SubstanceAdministrationOper
   
   public static  boolean validateHumanClinicalExposureText(HumanClinicalExposure humanClinicalExposure, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
+  	  
     if (VALIDATE_HUMAN_CLINICAL_EXPOSURE_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(SdtmPackage.Literals.HUMAN_CLINICAL_EXPOSURE);
@@ -677,6 +701,7 @@ public class HumanClinicalExposureOperations extends SubstanceAdministrationOper
              org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "HumanClinicalExposureText", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(humanClinicalExposure, context) }),
              new Object [] { humanClinicalExposure }));
       }
+       
       return false;
     }
     return true;
@@ -708,7 +733,6 @@ public class HumanClinicalExposureOperations extends SubstanceAdministrationOper
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * (self.approachSiteCode->isEmpty() or self.approachSiteCode->exists(element | element.isNullFlavorUndefined())) implies (self.approachSiteCode->forAll(element | element.oclIsTypeOf(datatypes::CE)))
    * @param humanClinicalExposure The receiving '<em><b>Human Clinical Exposure</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -718,6 +742,7 @@ public class HumanClinicalExposureOperations extends SubstanceAdministrationOper
   
   public static  boolean validateHumanClinicalExposureApproachSiteCode(HumanClinicalExposure humanClinicalExposure, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
+  	  
     if (VALIDATE_HUMAN_CLINICAL_EXPOSURE_APPROACH_SITE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(SdtmPackage.Literals.HUMAN_CLINICAL_EXPOSURE);
@@ -742,6 +767,7 @@ public class HumanClinicalExposureOperations extends SubstanceAdministrationOper
              org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "HumanClinicalExposureApproachSiteCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(humanClinicalExposure, context) }),
              new Object [] { humanClinicalExposure }));
       }
+       
       return false;
     }
     return true;
@@ -773,7 +799,6 @@ public class HumanClinicalExposureOperations extends SubstanceAdministrationOper
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.entryRelationship->one(entryRelationship : cda::EntryRelationship | not entryRelationship.act.oclIsUndefined() and entryRelationship.act.oclIsKindOf(sdtm::Group Identifier) and entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::COMP)
    * @param humanClinicalExposure The receiving '<em><b>Human Clinical Exposure</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -783,6 +808,7 @@ public class HumanClinicalExposureOperations extends SubstanceAdministrationOper
   
   public static  boolean validateHumanClinicalExposureGroupIdentifier(HumanClinicalExposure humanClinicalExposure, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
+  	  
     if (VALIDATE_HUMAN_CLINICAL_EXPOSURE_GROUP_IDENTIFIER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(SdtmPackage.Literals.HUMAN_CLINICAL_EXPOSURE);
@@ -807,6 +833,7 @@ public class HumanClinicalExposureOperations extends SubstanceAdministrationOper
              org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "HumanClinicalExposureGroupIdentifier", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(humanClinicalExposure, context) }),
              new Object [] { humanClinicalExposure }));
       }
+       
       return false;
     }
     return true;
@@ -838,7 +865,6 @@ public class HumanClinicalExposureOperations extends SubstanceAdministrationOper
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.consumable->one(consumable : cda::Consumable | not consumable.oclIsUndefined() and consumable.oclIsKindOf(sdtm::Consumable Material))
    * @param humanClinicalExposure The receiving '<em><b>Human Clinical Exposure</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -848,6 +874,7 @@ public class HumanClinicalExposureOperations extends SubstanceAdministrationOper
   
   public static  boolean validateHumanClinicalExposureConsumableMaterial(HumanClinicalExposure humanClinicalExposure, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
+  	  
     if (VALIDATE_HUMAN_CLINICAL_EXPOSURE_CONSUMABLE_MATERIAL__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(SdtmPackage.Literals.HUMAN_CLINICAL_EXPOSURE);
@@ -872,6 +899,7 @@ public class HumanClinicalExposureOperations extends SubstanceAdministrationOper
              org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "HumanClinicalExposureConsumableMaterial", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(humanClinicalExposure, context) }),
              new Object [] { humanClinicalExposure }));
       }
+       
       return false;
     }
     return true;
@@ -903,7 +931,6 @@ public class HumanClinicalExposureOperations extends SubstanceAdministrationOper
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.entryRelationship->one(entryRelationship : cda::EntryRelationship | not entryRelationship.oclIsUndefined() and entryRelationship.oclIsKindOf(cda::EntryRelationship))
    * @param humanClinicalExposure The receiving '<em><b>Human Clinical Exposure</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -913,6 +940,7 @@ public class HumanClinicalExposureOperations extends SubstanceAdministrationOper
   
   public static  boolean validateHumanClinicalExposureExposureCategoryAssociation(HumanClinicalExposure humanClinicalExposure, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
+  	  
     if (VALIDATE_HUMAN_CLINICAL_EXPOSURE_EXPOSURE_CATEGORY_ASSOCIATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(SdtmPackage.Literals.HUMAN_CLINICAL_EXPOSURE);
@@ -937,6 +965,7 @@ public class HumanClinicalExposureOperations extends SubstanceAdministrationOper
              org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "HumanClinicalExposureExposureCategoryAssociation", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(humanClinicalExposure, context) }),
              new Object [] { humanClinicalExposure }));
       }
+       
       return false;
     }
     return true;
@@ -968,7 +997,6 @@ public class HumanClinicalExposureOperations extends SubstanceAdministrationOper
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.entryRelationship->one(entryRelationship : cda::EntryRelationship | not entryRelationship.oclIsUndefined() and entryRelationship.oclIsKindOf(cda::EntryRelationship))
    * @param humanClinicalExposure The receiving '<em><b>Human Clinical Exposure</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -978,6 +1006,7 @@ public class HumanClinicalExposureOperations extends SubstanceAdministrationOper
   
   public static  boolean validateHumanClinicalExposureExposureSubCategoryAssociation(HumanClinicalExposure humanClinicalExposure, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
+  	  
     if (VALIDATE_HUMAN_CLINICAL_EXPOSURE_EXPOSURE_SUB_CATEGORY_ASSOCIATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(SdtmPackage.Literals.HUMAN_CLINICAL_EXPOSURE);
@@ -1002,71 +1031,7 @@ public class HumanClinicalExposureOperations extends SubstanceAdministrationOper
              org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "HumanClinicalExposureExposureSubCategoryAssociation", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(humanClinicalExposure, context) }),
              new Object [] { humanClinicalExposure }));
       }
-      return false;
-    }
-    return true;
-  }
-
-  /**
-   * The cached OCL expression body for the '{@link #validateHumanClinicalExposureExposureIndication(HumanClinicalExposure, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Human Clinical Exposure Exposure Indication</em>}' operation.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @see #validateHumanClinicalExposureExposureIndication(HumanClinicalExposure, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-   * @generated
-   * @ordered
-   */
-  protected static final String VALIDATE_HUMAN_CLINICAL_EXPOSURE_EXPOSURE_INDICATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entryRelationship->one(entryRelationship : cda::EntryRelationship | not entryRelationship.observation.oclIsUndefined() and entryRelationship.observation.oclIsKindOf(cda::Observation) and entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::REFR)";
-
-  /**
-   * The cached OCL invariant for the '{@link #validateHumanClinicalExposureExposureIndication(HumanClinicalExposure, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Human Clinical Exposure Exposure Indication</em>}' invariant operation.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @see #validateHumanClinicalExposureExposureIndication(HumanClinicalExposure, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-   * @generated
-   * @ordered
-   */
-  
-  protected static Constraint VALIDATE_HUMAN_CLINICAL_EXPOSURE_EXPOSURE_INDICATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-  
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * <!-- begin-model-doc -->
-   * self.entryRelationship->one(entryRelationship : cda::EntryRelationship | not entryRelationship.observation.oclIsUndefined() and entryRelationship.observation.oclIsKindOf(cda::Observation) and entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::REFR)
-   * @param humanClinicalExposure The receiving '<em><b>Human Clinical Exposure</b></em>' model object.
-   * @param diagnostics The chain of diagnostics to which problems are to be appended.
-   * @param context The cache of context-specific information.
-   * <!-- end-model-doc -->
-   * @generated
-   */
-  
-  public static  boolean validateHumanClinicalExposureExposureIndication(HumanClinicalExposure humanClinicalExposure, DiagnosticChain diagnostics, Map<Object, Object> context)
-  {
-    if (VALIDATE_HUMAN_CLINICAL_EXPOSURE_EXPOSURE_INDICATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-      OCL.Helper helper = EOCL_ENV.createOCLHelper();
-      helper.setContext(SdtmPackage.Literals.HUMAN_CLINICAL_EXPOSURE);
-      try
-      {
-        VALIDATE_HUMAN_CLINICAL_EXPOSURE_EXPOSURE_INDICATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_HUMAN_CLINICAL_EXPOSURE_EXPOSURE_INDICATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-      }
-      catch (ParserException pe)
-      {
-        throw new UnsupportedOperationException(pe.getLocalizedMessage());
-      }
-    }
-    if (!EOCL_ENV.createQuery(VALIDATE_HUMAN_CLINICAL_EXPOSURE_EXPOSURE_INDICATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(humanClinicalExposure))
-    {
-      if (diagnostics != null)
-      {
-        diagnostics.add
-          (new BasicDiagnostic
-            (Diagnostic.ERROR,
-             SdtmValidator.DIAGNOSTIC_SOURCE,
-             SdtmValidator.HUMAN_CLINICAL_EXPOSURE__HUMAN_CLINICAL_EXPOSURE_EXPOSURE_INDICATION,
-             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "HumanClinicalExposureExposureIndication", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(humanClinicalExposure, context) }),
-             new Object [] { humanClinicalExposure }));
-      }
+       
       return false;
     }
     return true;
@@ -1098,7 +1063,6 @@ public class HumanClinicalExposureOperations extends SubstanceAdministrationOper
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.entryRelationship->one(entryRelationship : cda::EntryRelationship | not entryRelationship.oclIsUndefined() and entryRelationship.oclIsKindOf(cda::EntryRelationship))
    * @param humanClinicalExposure The receiving '<em><b>Human Clinical Exposure</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -1108,6 +1072,7 @@ public class HumanClinicalExposureOperations extends SubstanceAdministrationOper
   
   public static  boolean validateHumanClinicalExposureDoseAdjustmentReasonAssociation(HumanClinicalExposure humanClinicalExposure, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
+  	  
     if (VALIDATE_HUMAN_CLINICAL_EXPOSURE_DOSE_ADJUSTMENT_REASON_ASSOCIATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(SdtmPackage.Literals.HUMAN_CLINICAL_EXPOSURE);
@@ -1132,6 +1097,7 @@ public class HumanClinicalExposureOperations extends SubstanceAdministrationOper
              org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "HumanClinicalExposureDoseAdjustmentReasonAssociation", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(humanClinicalExposure, context) }),
              new Object [] { humanClinicalExposure }));
       }
+       
       return false;
     }
     return true;
@@ -1163,7 +1129,6 @@ public class HumanClinicalExposureOperations extends SubstanceAdministrationOper
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.entryRelationship->one(entryRelationship : cda::EntryRelationship | not entryRelationship.act.oclIsUndefined() and entryRelationship.act.oclIsKindOf(sdtm::Study Epoch) and entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::COMP)
    * @param humanClinicalExposure The receiving '<em><b>Human Clinical Exposure</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -1173,6 +1138,7 @@ public class HumanClinicalExposureOperations extends SubstanceAdministrationOper
   
   public static  boolean validateHumanClinicalExposureStudyEpoch(HumanClinicalExposure humanClinicalExposure, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
+  	  
     if (VALIDATE_HUMAN_CLINICAL_EXPOSURE_STUDY_EPOCH__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(SdtmPackage.Literals.HUMAN_CLINICAL_EXPOSURE);
@@ -1197,6 +1163,7 @@ public class HumanClinicalExposureOperations extends SubstanceAdministrationOper
              org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "HumanClinicalExposureStudyEpoch", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(humanClinicalExposure, context) }),
              new Object [] { humanClinicalExposure }));
       }
+       
       return false;
     }
     return true;
@@ -1228,7 +1195,6 @@ public class HumanClinicalExposureOperations extends SubstanceAdministrationOper
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.entryRelationship->one(entryRelationship : cda::EntryRelationship | not entryRelationship.oclIsUndefined() and entryRelationship.oclIsKindOf(cda::EntryRelationship))
    * @param humanClinicalExposure The receiving '<em><b>Human Clinical Exposure</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -1238,6 +1204,7 @@ public class HumanClinicalExposureOperations extends SubstanceAdministrationOper
   
   public static  boolean validateHumanClinicalExposureElementOrderAssociation(HumanClinicalExposure humanClinicalExposure, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
+  	  
     if (VALIDATE_HUMAN_CLINICAL_EXPOSURE_ELEMENT_ORDER_ASSOCIATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(SdtmPackage.Literals.HUMAN_CLINICAL_EXPOSURE);
@@ -1262,6 +1229,7 @@ public class HumanClinicalExposureOperations extends SubstanceAdministrationOper
              org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "HumanClinicalExposureElementOrderAssociation", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(humanClinicalExposure, context) }),
              new Object [] { humanClinicalExposure }));
       }
+       
       return false;
     }
     return true;
@@ -1293,7 +1261,6 @@ public class HumanClinicalExposureOperations extends SubstanceAdministrationOper
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.entryRelationship->one(entryRelationship : cda::EntryRelationship | not entryRelationship.act.oclIsUndefined() and entryRelationship.act.oclIsKindOf(sdtm::Timing Reference) and entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::REFR)
    * @param humanClinicalExposure The receiving '<em><b>Human Clinical Exposure</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -1303,6 +1270,7 @@ public class HumanClinicalExposureOperations extends SubstanceAdministrationOper
   
   public static  boolean validateHumanClinicalExposureTimingReference(HumanClinicalExposure humanClinicalExposure, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
+  	  
     if (VALIDATE_HUMAN_CLINICAL_EXPOSURE_TIMING_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(SdtmPackage.Literals.HUMAN_CLINICAL_EXPOSURE);
@@ -1327,6 +1295,7 @@ public class HumanClinicalExposureOperations extends SubstanceAdministrationOper
              org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "HumanClinicalExposureTimingReference", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(humanClinicalExposure, context) }),
              new Object [] { humanClinicalExposure }));
       }
+       
       return false;
     }
     return true;
@@ -1358,7 +1327,6 @@ public class HumanClinicalExposureOperations extends SubstanceAdministrationOper
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.entryRelationship->one(entryRelationship : cda::EntryRelationship | not entryRelationship.observation.oclIsUndefined() and entryRelationship.observation.oclIsKindOf(sdtm::Study Day Period) and entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::REFR)
    * @param humanClinicalExposure The receiving '<em><b>Human Clinical Exposure</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -1368,6 +1336,7 @@ public class HumanClinicalExposureOperations extends SubstanceAdministrationOper
   
   public static  boolean validateHumanClinicalExposureStudyDayPeriod(HumanClinicalExposure humanClinicalExposure, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
+  	  
     if (VALIDATE_HUMAN_CLINICAL_EXPOSURE_STUDY_DAY_PERIOD__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(SdtmPackage.Literals.HUMAN_CLINICAL_EXPOSURE);
@@ -1392,6 +1361,337 @@ public class HumanClinicalExposureOperations extends SubstanceAdministrationOper
              org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "HumanClinicalExposureStudyDayPeriod", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(humanClinicalExposure, context) }),
              new Object [] { humanClinicalExposure }));
       }
+       
+      return false;
+    }
+    return true;
+  }
+
+  /**
+   * The cached OCL expression body for the '{@link #validateHumanClinicalExposureExposureRegimenAssociation(HumanClinicalExposure, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Human Clinical Exposure Exposure Regimen Association</em>}' operation.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #validateHumanClinicalExposureExposureRegimenAssociation(HumanClinicalExposure, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+   * @generated
+   * @ordered
+   */
+  protected static final String VALIDATE_HUMAN_CLINICAL_EXPOSURE_EXPOSURE_REGIMEN_ASSOCIATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entryRelationship->one(entryRelationship : cda::EntryRelationship | not entryRelationship.oclIsUndefined() and entryRelationship.oclIsKindOf(cda::EntryRelationship))";
+
+  /**
+   * The cached OCL invariant for the '{@link #validateHumanClinicalExposureExposureRegimenAssociation(HumanClinicalExposure, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Human Clinical Exposure Exposure Regimen Association</em>}' invariant operation.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #validateHumanClinicalExposureExposureRegimenAssociation(HumanClinicalExposure, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+   * @generated
+   * @ordered
+   */
+  
+  protected static Constraint VALIDATE_HUMAN_CLINICAL_EXPOSURE_EXPOSURE_REGIMEN_ASSOCIATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * <!-- begin-model-doc -->
+   * @param humanClinicalExposure The receiving '<em><b>Human Clinical Exposure</b></em>' model object.
+   * @param diagnostics The chain of diagnostics to which problems are to be appended.
+   * @param context The cache of context-specific information.
+   * <!-- end-model-doc -->
+   * @generated
+   */
+  
+  public static  boolean validateHumanClinicalExposureExposureRegimenAssociation(HumanClinicalExposure humanClinicalExposure, DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+  	  
+    if (VALIDATE_HUMAN_CLINICAL_EXPOSURE_EXPOSURE_REGIMEN_ASSOCIATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+      OCL.Helper helper = EOCL_ENV.createOCLHelper();
+      helper.setContext(SdtmPackage.Literals.HUMAN_CLINICAL_EXPOSURE);
+      try
+      {
+        VALIDATE_HUMAN_CLINICAL_EXPOSURE_EXPOSURE_REGIMEN_ASSOCIATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_HUMAN_CLINICAL_EXPOSURE_EXPOSURE_REGIMEN_ASSOCIATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+      }
+      catch (ParserException pe)
+      {
+        throw new UnsupportedOperationException(pe.getLocalizedMessage());
+      }
+    }
+    if (!EOCL_ENV.createQuery(VALIDATE_HUMAN_CLINICAL_EXPOSURE_EXPOSURE_REGIMEN_ASSOCIATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(humanClinicalExposure))
+    {
+      if (diagnostics != null)
+      {
+        diagnostics.add
+          (new BasicDiagnostic
+            (Diagnostic.ERROR,
+             SdtmValidator.DIAGNOSTIC_SOURCE,
+             SdtmValidator.HUMAN_CLINICAL_EXPOSURE__HUMAN_CLINICAL_EXPOSURE_EXPOSURE_REGIMEN_ASSOCIATION,
+             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "HumanClinicalExposureExposureRegimenAssociation", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(humanClinicalExposure, context) }),
+             new Object [] { humanClinicalExposure }));
+      }
+       
+      return false;
+    }
+    return true;
+  }
+
+  /**
+   * The cached OCL expression body for the '{@link #validateHumanClinicalExposureexposureCategoryAssociationexposureEventCategoryClassCode(HumanClinicalExposure, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Human Clinical Exposureexposure Category Associationexposure Event Category Class Code</em>}' operation.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #validateHumanClinicalExposureexposureCategoryAssociationexposureEventCategoryClassCode(HumanClinicalExposure, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+   * @generated
+   * @ordered
+   */
+  protected static final String VALIDATE_HUMAN_CLINICAL_EXPOSUREEXPOSURE_CATEGORY_ASSOCIATIONEXPOSURE_EVENT_CATEGORY_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entryRelationship->excluding(null).observation->excluding(null)->reject(classCode=vocab::ActClassObservation::OBS)";
+
+  /**
+   * The cached OCL invariant for the '{@link #validateHumanClinicalExposureexposureCategoryAssociationexposureEventCategoryClassCode(HumanClinicalExposure, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Human Clinical Exposureexposure Category Associationexposure Event Category Class Code</em>}' invariant operation.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #validateHumanClinicalExposureexposureCategoryAssociationexposureEventCategoryClassCode(HumanClinicalExposure, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+   * @generated
+   * @ordered
+   */
+  
+  protected static Constraint VALIDATE_HUMAN_CLINICAL_EXPOSUREEXPOSURE_CATEGORY_ASSOCIATIONEXPOSURE_EVENT_CATEGORY_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * <!-- begin-model-doc -->
+   * @param humanClinicalExposure The receiving '<em><b>Human Clinical Exposure</b></em>' model object.
+   * @param diagnostics The chain of diagnostics to which problems are to be appended.
+   * @param context The cache of context-specific information.
+   * <!-- end-model-doc -->
+   * @generated
+   */
+  
+  public static  boolean validateHumanClinicalExposureexposureCategoryAssociationexposureEventCategoryClassCode(HumanClinicalExposure humanClinicalExposure, DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+  	  
+    if (VALIDATE_HUMAN_CLINICAL_EXPOSUREEXPOSURE_CATEGORY_ASSOCIATIONEXPOSURE_EVENT_CATEGORY_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+      OCL.Helper helper = EOCL_ENV.createOCLHelper();
+      helper.setContext(SdtmPackage.Literals.HUMAN_CLINICAL_EXPOSURE);
+      try
+      {
+        VALIDATE_HUMAN_CLINICAL_EXPOSUREEXPOSURE_CATEGORY_ASSOCIATIONEXPOSURE_EVENT_CATEGORY_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_HUMAN_CLINICAL_EXPOSUREEXPOSURE_CATEGORY_ASSOCIATIONEXPOSURE_EVENT_CATEGORY_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+      }
+      catch (ParserException pe)
+      {
+        throw new UnsupportedOperationException(pe.getLocalizedMessage());
+      }
+    }
+    if (!EOCL_ENV.createQuery(VALIDATE_HUMAN_CLINICAL_EXPOSUREEXPOSURE_CATEGORY_ASSOCIATIONEXPOSURE_EVENT_CATEGORY_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(humanClinicalExposure))
+    {
+      if (diagnostics != null)
+      {
+        diagnostics.add
+          (new BasicDiagnostic
+            (Diagnostic.ERROR,
+             SdtmValidator.DIAGNOSTIC_SOURCE,
+             SdtmValidator.HUMAN_CLINICAL_EXPOSURE__HUMAN_CLINICAL_EXPOSUREEXPOSURE_CATEGORY_ASSOCIATIONEXPOSURE_EVENT_CATEGORY_CLASS_CODE,
+             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "HumanClinicalExposureexposureCategoryAssociationexposureEventCategoryClassCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(humanClinicalExposure, context) }),
+             new Object [] { humanClinicalExposure }));
+      }
+       
+      return false;
+    }
+    return true;
+  }
+
+  /**
+   * The cached OCL expression body for the '{@link #validateHumanClinicalExposureexposureCategoryAssociationexposureEventCategoryCode(HumanClinicalExposure, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Human Clinical Exposureexposure Category Associationexposure Event Category Code</em>}' operation.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #validateHumanClinicalExposureexposureCategoryAssociationexposureEventCategoryCode(HumanClinicalExposure, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+   * @generated
+   * @ordered
+   */
+  protected static final String VALIDATE_HUMAN_CLINICAL_EXPOSUREEXPOSURE_CATEGORY_ASSOCIATIONEXPOSURE_EVENT_CATEGORY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entryRelationship->excluding(null).observation->excluding(null)->reject((code.oclIsUndefined() or code.isNullFlavorUndefined()) implies (not code.oclIsUndefined()))";
+
+  /**
+   * The cached OCL invariant for the '{@link #validateHumanClinicalExposureexposureCategoryAssociationexposureEventCategoryCode(HumanClinicalExposure, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Human Clinical Exposureexposure Category Associationexposure Event Category Code</em>}' invariant operation.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #validateHumanClinicalExposureexposureCategoryAssociationexposureEventCategoryCode(HumanClinicalExposure, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+   * @generated
+   * @ordered
+   */
+  
+  protected static Constraint VALIDATE_HUMAN_CLINICAL_EXPOSUREEXPOSURE_CATEGORY_ASSOCIATIONEXPOSURE_EVENT_CATEGORY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * <!-- begin-model-doc -->
+   * @param humanClinicalExposure The receiving '<em><b>Human Clinical Exposure</b></em>' model object.
+   * @param diagnostics The chain of diagnostics to which problems are to be appended.
+   * @param context The cache of context-specific information.
+   * <!-- end-model-doc -->
+   * @generated
+   */
+  
+  public static  boolean validateHumanClinicalExposureexposureCategoryAssociationexposureEventCategoryCode(HumanClinicalExposure humanClinicalExposure, DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+  	  
+    if (VALIDATE_HUMAN_CLINICAL_EXPOSUREEXPOSURE_CATEGORY_ASSOCIATIONEXPOSURE_EVENT_CATEGORY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+      OCL.Helper helper = EOCL_ENV.createOCLHelper();
+      helper.setContext(SdtmPackage.Literals.HUMAN_CLINICAL_EXPOSURE);
+      try
+      {
+        VALIDATE_HUMAN_CLINICAL_EXPOSUREEXPOSURE_CATEGORY_ASSOCIATIONEXPOSURE_EVENT_CATEGORY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_HUMAN_CLINICAL_EXPOSUREEXPOSURE_CATEGORY_ASSOCIATIONEXPOSURE_EVENT_CATEGORY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+      }
+      catch (ParserException pe)
+      {
+        throw new UnsupportedOperationException(pe.getLocalizedMessage());
+      }
+    }
+    if (!EOCL_ENV.createQuery(VALIDATE_HUMAN_CLINICAL_EXPOSUREEXPOSURE_CATEGORY_ASSOCIATIONEXPOSURE_EVENT_CATEGORY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(humanClinicalExposure))
+    {
+      if (diagnostics != null)
+      {
+        diagnostics.add
+          (new BasicDiagnostic
+            (Diagnostic.ERROR,
+             SdtmValidator.DIAGNOSTIC_SOURCE,
+             SdtmValidator.HUMAN_CLINICAL_EXPOSURE__HUMAN_CLINICAL_EXPOSUREEXPOSURE_CATEGORY_ASSOCIATIONEXPOSURE_EVENT_CATEGORY_CODE,
+             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "HumanClinicalExposureexposureCategoryAssociationexposureEventCategoryCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(humanClinicalExposure, context) }),
+             new Object [] { humanClinicalExposure }));
+      }
+       
+      return false;
+    }
+    return true;
+  }
+
+  /**
+   * The cached OCL expression body for the '{@link #validateHumanClinicalExposureexposureCategoryAssociationexposureEventCategoryMoodCode(HumanClinicalExposure, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Human Clinical Exposureexposure Category Associationexposure Event Category Mood Code</em>}' operation.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #validateHumanClinicalExposureexposureCategoryAssociationexposureEventCategoryMoodCode(HumanClinicalExposure, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+   * @generated
+   * @ordered
+   */
+  protected static final String VALIDATE_HUMAN_CLINICAL_EXPOSUREEXPOSURE_CATEGORY_ASSOCIATIONEXPOSURE_EVENT_CATEGORY_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entryRelationship->excluding(null).observation->excluding(null)->reject(moodCode=vocab::x_ActMoodDocumentObservation::EVN)";
+
+  /**
+   * The cached OCL invariant for the '{@link #validateHumanClinicalExposureexposureCategoryAssociationexposureEventCategoryMoodCode(HumanClinicalExposure, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Human Clinical Exposureexposure Category Associationexposure Event Category Mood Code</em>}' invariant operation.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #validateHumanClinicalExposureexposureCategoryAssociationexposureEventCategoryMoodCode(HumanClinicalExposure, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+   * @generated
+   * @ordered
+   */
+  
+  protected static Constraint VALIDATE_HUMAN_CLINICAL_EXPOSUREEXPOSURE_CATEGORY_ASSOCIATIONEXPOSURE_EVENT_CATEGORY_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * <!-- begin-model-doc -->
+   * @param humanClinicalExposure The receiving '<em><b>Human Clinical Exposure</b></em>' model object.
+   * @param diagnostics The chain of diagnostics to which problems are to be appended.
+   * @param context The cache of context-specific information.
+   * <!-- end-model-doc -->
+   * @generated
+   */
+  
+  public static  boolean validateHumanClinicalExposureexposureCategoryAssociationexposureEventCategoryMoodCode(HumanClinicalExposure humanClinicalExposure, DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+  	  
+    if (VALIDATE_HUMAN_CLINICAL_EXPOSUREEXPOSURE_CATEGORY_ASSOCIATIONEXPOSURE_EVENT_CATEGORY_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+      OCL.Helper helper = EOCL_ENV.createOCLHelper();
+      helper.setContext(SdtmPackage.Literals.HUMAN_CLINICAL_EXPOSURE);
+      try
+      {
+        VALIDATE_HUMAN_CLINICAL_EXPOSUREEXPOSURE_CATEGORY_ASSOCIATIONEXPOSURE_EVENT_CATEGORY_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_HUMAN_CLINICAL_EXPOSUREEXPOSURE_CATEGORY_ASSOCIATIONEXPOSURE_EVENT_CATEGORY_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+      }
+      catch (ParserException pe)
+      {
+        throw new UnsupportedOperationException(pe.getLocalizedMessage());
+      }
+    }
+    if (!EOCL_ENV.createQuery(VALIDATE_HUMAN_CLINICAL_EXPOSUREEXPOSURE_CATEGORY_ASSOCIATIONEXPOSURE_EVENT_CATEGORY_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(humanClinicalExposure))
+    {
+      if (diagnostics != null)
+      {
+        diagnostics.add
+          (new BasicDiagnostic
+            (Diagnostic.ERROR,
+             SdtmValidator.DIAGNOSTIC_SOURCE,
+             SdtmValidator.HUMAN_CLINICAL_EXPOSURE__HUMAN_CLINICAL_EXPOSUREEXPOSURE_CATEGORY_ASSOCIATIONEXPOSURE_EVENT_CATEGORY_MOOD_CODE,
+             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "HumanClinicalExposureexposureCategoryAssociationexposureEventCategoryMoodCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(humanClinicalExposure, context) }),
+             new Object [] { humanClinicalExposure }));
+      }
+       
+      return false;
+    }
+    return true;
+  }
+
+  /**
+   * The cached OCL expression body for the '{@link #validateHumanClinicalExposureexposureCategoryAssociationexposureEventCategoryValue(HumanClinicalExposure, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Human Clinical Exposureexposure Category Associationexposure Event Category Value</em>}' operation.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #validateHumanClinicalExposureexposureCategoryAssociationexposureEventCategoryValue(HumanClinicalExposure, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+   * @generated
+   * @ordered
+   */
+  protected static final String VALIDATE_HUMAN_CLINICAL_EXPOSUREEXPOSURE_CATEGORY_ASSOCIATIONEXPOSURE_EVENT_CATEGORY_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entryRelationship->excluding(null).observation->excluding(null)->reject((value->isEmpty() or value->exists(element | element.isNullFlavorUndefined())) implies (value->size() = 1 and value->forAll(element | element.oclIsTypeOf(datatypes::CE))))";
+
+  /**
+   * The cached OCL invariant for the '{@link #validateHumanClinicalExposureexposureCategoryAssociationexposureEventCategoryValue(HumanClinicalExposure, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Human Clinical Exposureexposure Category Associationexposure Event Category Value</em>}' invariant operation.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #validateHumanClinicalExposureexposureCategoryAssociationexposureEventCategoryValue(HumanClinicalExposure, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+   * @generated
+   * @ordered
+   */
+  
+  protected static Constraint VALIDATE_HUMAN_CLINICAL_EXPOSUREEXPOSURE_CATEGORY_ASSOCIATIONEXPOSURE_EVENT_CATEGORY_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * <!-- begin-model-doc -->
+   * @param humanClinicalExposure The receiving '<em><b>Human Clinical Exposure</b></em>' model object.
+   * @param diagnostics The chain of diagnostics to which problems are to be appended.
+   * @param context The cache of context-specific information.
+   * <!-- end-model-doc -->
+   * @generated
+   */
+  
+  public static  boolean validateHumanClinicalExposureexposureCategoryAssociationexposureEventCategoryValue(HumanClinicalExposure humanClinicalExposure, DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+  	  
+    if (VALIDATE_HUMAN_CLINICAL_EXPOSUREEXPOSURE_CATEGORY_ASSOCIATIONEXPOSURE_EVENT_CATEGORY_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+      OCL.Helper helper = EOCL_ENV.createOCLHelper();
+      helper.setContext(SdtmPackage.Literals.HUMAN_CLINICAL_EXPOSURE);
+      try
+      {
+        VALIDATE_HUMAN_CLINICAL_EXPOSUREEXPOSURE_CATEGORY_ASSOCIATIONEXPOSURE_EVENT_CATEGORY_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_HUMAN_CLINICAL_EXPOSUREEXPOSURE_CATEGORY_ASSOCIATIONEXPOSURE_EVENT_CATEGORY_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+      }
+      catch (ParserException pe)
+      {
+        throw new UnsupportedOperationException(pe.getLocalizedMessage());
+      }
+    }
+    if (!EOCL_ENV.createQuery(VALIDATE_HUMAN_CLINICAL_EXPOSUREEXPOSURE_CATEGORY_ASSOCIATIONEXPOSURE_EVENT_CATEGORY_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(humanClinicalExposure))
+    {
+      if (diagnostics != null)
+      {
+        diagnostics.add
+          (new BasicDiagnostic
+            (Diagnostic.ERROR,
+             SdtmValidator.DIAGNOSTIC_SOURCE,
+             SdtmValidator.HUMAN_CLINICAL_EXPOSURE__HUMAN_CLINICAL_EXPOSUREEXPOSURE_CATEGORY_ASSOCIATIONEXPOSURE_EVENT_CATEGORY_VALUE,
+             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "HumanClinicalExposureexposureCategoryAssociationexposureEventCategoryValue", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(humanClinicalExposure, context) }),
+             new Object [] { humanClinicalExposure }));
+      }
+       
       return false;
     }
     return true;
@@ -1423,7 +1723,6 @@ public class HumanClinicalExposureOperations extends SubstanceAdministrationOper
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.entryRelationship->excluding(null)->reject(typeCode=vocab::x_ActRelationshipEntryRelationship::COMP)
    * @param humanClinicalExposure The receiving '<em><b>Human Clinical Exposure</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -1433,6 +1732,7 @@ public class HumanClinicalExposureOperations extends SubstanceAdministrationOper
   
   public static  boolean validateHumanClinicalExposureexposureCategoryAssociationTypeCode(HumanClinicalExposure humanClinicalExposure, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
+  	  
     if (VALIDATE_HUMAN_CLINICAL_EXPOSUREEXPOSURE_CATEGORY_ASSOCIATION_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(SdtmPackage.Literals.HUMAN_CLINICAL_EXPOSURE);
@@ -1457,6 +1757,337 @@ public class HumanClinicalExposureOperations extends SubstanceAdministrationOper
              org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "HumanClinicalExposureexposureCategoryAssociationTypeCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(humanClinicalExposure, context) }),
              new Object [] { humanClinicalExposure }));
       }
+       
+      return false;
+    }
+    return true;
+  }
+
+  /**
+   * The cached OCL expression body for the '{@link #validateHumanClinicalExposureexposureCategoryAssociationExposureEventCategory(HumanClinicalExposure, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Human Clinical Exposureexposure Category Association Exposure Event Category</em>}' operation.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #validateHumanClinicalExposureexposureCategoryAssociationExposureEventCategory(HumanClinicalExposure, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+   * @generated
+   * @ordered
+   */
+  protected static final String VALIDATE_HUMAN_CLINICAL_EXPOSUREEXPOSURE_CATEGORY_ASSOCIATION_EXPOSURE_EVENT_CATEGORY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entryRelationship->excluding(null)->reject(observation->one(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(cda::Observation)))";
+
+  /**
+   * The cached OCL invariant for the '{@link #validateHumanClinicalExposureexposureCategoryAssociationExposureEventCategory(HumanClinicalExposure, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Human Clinical Exposureexposure Category Association Exposure Event Category</em>}' invariant operation.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #validateHumanClinicalExposureexposureCategoryAssociationExposureEventCategory(HumanClinicalExposure, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+   * @generated
+   * @ordered
+   */
+  
+  protected static Constraint VALIDATE_HUMAN_CLINICAL_EXPOSUREEXPOSURE_CATEGORY_ASSOCIATION_EXPOSURE_EVENT_CATEGORY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * <!-- begin-model-doc -->
+   * @param humanClinicalExposure The receiving '<em><b>Human Clinical Exposure</b></em>' model object.
+   * @param diagnostics The chain of diagnostics to which problems are to be appended.
+   * @param context The cache of context-specific information.
+   * <!-- end-model-doc -->
+   * @generated
+   */
+  
+  public static  boolean validateHumanClinicalExposureexposureCategoryAssociationExposureEventCategory(HumanClinicalExposure humanClinicalExposure, DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+  	  
+    if (VALIDATE_HUMAN_CLINICAL_EXPOSUREEXPOSURE_CATEGORY_ASSOCIATION_EXPOSURE_EVENT_CATEGORY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+      OCL.Helper helper = EOCL_ENV.createOCLHelper();
+      helper.setContext(SdtmPackage.Literals.HUMAN_CLINICAL_EXPOSURE);
+      try
+      {
+        VALIDATE_HUMAN_CLINICAL_EXPOSUREEXPOSURE_CATEGORY_ASSOCIATION_EXPOSURE_EVENT_CATEGORY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_HUMAN_CLINICAL_EXPOSUREEXPOSURE_CATEGORY_ASSOCIATION_EXPOSURE_EVENT_CATEGORY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+      }
+      catch (ParserException pe)
+      {
+        throw new UnsupportedOperationException(pe.getLocalizedMessage());
+      }
+    }
+    if (!EOCL_ENV.createQuery(VALIDATE_HUMAN_CLINICAL_EXPOSUREEXPOSURE_CATEGORY_ASSOCIATION_EXPOSURE_EVENT_CATEGORY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(humanClinicalExposure))
+    {
+      if (diagnostics != null)
+      {
+        diagnostics.add
+          (new BasicDiagnostic
+            (Diagnostic.ERROR,
+             SdtmValidator.DIAGNOSTIC_SOURCE,
+             SdtmValidator.HUMAN_CLINICAL_EXPOSURE__HUMAN_CLINICAL_EXPOSUREEXPOSURE_CATEGORY_ASSOCIATION_EXPOSURE_EVENT_CATEGORY,
+             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "HumanClinicalExposureexposureCategoryAssociationExposureEventCategory", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(humanClinicalExposure, context) }),
+             new Object [] { humanClinicalExposure }));
+      }
+       
+      return false;
+    }
+    return true;
+  }
+
+  /**
+   * The cached OCL expression body for the '{@link #validateHumanClinicalExposureexposureSubCategoryAssociationexposureEventSubCategoryClassCode(HumanClinicalExposure, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Human Clinical Exposureexposure Sub Category Associationexposure Event Sub Category Class Code</em>}' operation.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #validateHumanClinicalExposureexposureSubCategoryAssociationexposureEventSubCategoryClassCode(HumanClinicalExposure, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+   * @generated
+   * @ordered
+   */
+  protected static final String VALIDATE_HUMAN_CLINICAL_EXPOSUREEXPOSURE_SUB_CATEGORY_ASSOCIATIONEXPOSURE_EVENT_SUB_CATEGORY_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entryRelationship->excluding(null).observation->excluding(null)->reject(classCode=vocab::ActClassObservation::OBS)";
+
+  /**
+   * The cached OCL invariant for the '{@link #validateHumanClinicalExposureexposureSubCategoryAssociationexposureEventSubCategoryClassCode(HumanClinicalExposure, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Human Clinical Exposureexposure Sub Category Associationexposure Event Sub Category Class Code</em>}' invariant operation.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #validateHumanClinicalExposureexposureSubCategoryAssociationexposureEventSubCategoryClassCode(HumanClinicalExposure, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+   * @generated
+   * @ordered
+   */
+  
+  protected static Constraint VALIDATE_HUMAN_CLINICAL_EXPOSUREEXPOSURE_SUB_CATEGORY_ASSOCIATIONEXPOSURE_EVENT_SUB_CATEGORY_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * <!-- begin-model-doc -->
+   * @param humanClinicalExposure The receiving '<em><b>Human Clinical Exposure</b></em>' model object.
+   * @param diagnostics The chain of diagnostics to which problems are to be appended.
+   * @param context The cache of context-specific information.
+   * <!-- end-model-doc -->
+   * @generated
+   */
+  
+  public static  boolean validateHumanClinicalExposureexposureSubCategoryAssociationexposureEventSubCategoryClassCode(HumanClinicalExposure humanClinicalExposure, DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+  	  
+    if (VALIDATE_HUMAN_CLINICAL_EXPOSUREEXPOSURE_SUB_CATEGORY_ASSOCIATIONEXPOSURE_EVENT_SUB_CATEGORY_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+      OCL.Helper helper = EOCL_ENV.createOCLHelper();
+      helper.setContext(SdtmPackage.Literals.HUMAN_CLINICAL_EXPOSURE);
+      try
+      {
+        VALIDATE_HUMAN_CLINICAL_EXPOSUREEXPOSURE_SUB_CATEGORY_ASSOCIATIONEXPOSURE_EVENT_SUB_CATEGORY_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_HUMAN_CLINICAL_EXPOSUREEXPOSURE_SUB_CATEGORY_ASSOCIATIONEXPOSURE_EVENT_SUB_CATEGORY_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+      }
+      catch (ParserException pe)
+      {
+        throw new UnsupportedOperationException(pe.getLocalizedMessage());
+      }
+    }
+    if (!EOCL_ENV.createQuery(VALIDATE_HUMAN_CLINICAL_EXPOSUREEXPOSURE_SUB_CATEGORY_ASSOCIATIONEXPOSURE_EVENT_SUB_CATEGORY_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(humanClinicalExposure))
+    {
+      if (diagnostics != null)
+      {
+        diagnostics.add
+          (new BasicDiagnostic
+            (Diagnostic.ERROR,
+             SdtmValidator.DIAGNOSTIC_SOURCE,
+             SdtmValidator.HUMAN_CLINICAL_EXPOSURE__HUMAN_CLINICAL_EXPOSUREEXPOSURE_SUB_CATEGORY_ASSOCIATIONEXPOSURE_EVENT_SUB_CATEGORY_CLASS_CODE,
+             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "HumanClinicalExposureexposureSubCategoryAssociationexposureEventSubCategoryClassCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(humanClinicalExposure, context) }),
+             new Object [] { humanClinicalExposure }));
+      }
+       
+      return false;
+    }
+    return true;
+  }
+
+  /**
+   * The cached OCL expression body for the '{@link #validateHumanClinicalExposureexposureSubCategoryAssociationexposureEventSubCategoryCode(HumanClinicalExposure, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Human Clinical Exposureexposure Sub Category Associationexposure Event Sub Category Code</em>}' operation.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #validateHumanClinicalExposureexposureSubCategoryAssociationexposureEventSubCategoryCode(HumanClinicalExposure, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+   * @generated
+   * @ordered
+   */
+  protected static final String VALIDATE_HUMAN_CLINICAL_EXPOSUREEXPOSURE_SUB_CATEGORY_ASSOCIATIONEXPOSURE_EVENT_SUB_CATEGORY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entryRelationship->excluding(null).observation->excluding(null)->reject((code.oclIsUndefined() or code.isNullFlavorUndefined()) implies (not code.oclIsUndefined()))";
+
+  /**
+   * The cached OCL invariant for the '{@link #validateHumanClinicalExposureexposureSubCategoryAssociationexposureEventSubCategoryCode(HumanClinicalExposure, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Human Clinical Exposureexposure Sub Category Associationexposure Event Sub Category Code</em>}' invariant operation.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #validateHumanClinicalExposureexposureSubCategoryAssociationexposureEventSubCategoryCode(HumanClinicalExposure, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+   * @generated
+   * @ordered
+   */
+  
+  protected static Constraint VALIDATE_HUMAN_CLINICAL_EXPOSUREEXPOSURE_SUB_CATEGORY_ASSOCIATIONEXPOSURE_EVENT_SUB_CATEGORY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * <!-- begin-model-doc -->
+   * @param humanClinicalExposure The receiving '<em><b>Human Clinical Exposure</b></em>' model object.
+   * @param diagnostics The chain of diagnostics to which problems are to be appended.
+   * @param context The cache of context-specific information.
+   * <!-- end-model-doc -->
+   * @generated
+   */
+  
+  public static  boolean validateHumanClinicalExposureexposureSubCategoryAssociationexposureEventSubCategoryCode(HumanClinicalExposure humanClinicalExposure, DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+  	  
+    if (VALIDATE_HUMAN_CLINICAL_EXPOSUREEXPOSURE_SUB_CATEGORY_ASSOCIATIONEXPOSURE_EVENT_SUB_CATEGORY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+      OCL.Helper helper = EOCL_ENV.createOCLHelper();
+      helper.setContext(SdtmPackage.Literals.HUMAN_CLINICAL_EXPOSURE);
+      try
+      {
+        VALIDATE_HUMAN_CLINICAL_EXPOSUREEXPOSURE_SUB_CATEGORY_ASSOCIATIONEXPOSURE_EVENT_SUB_CATEGORY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_HUMAN_CLINICAL_EXPOSUREEXPOSURE_SUB_CATEGORY_ASSOCIATIONEXPOSURE_EVENT_SUB_CATEGORY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+      }
+      catch (ParserException pe)
+      {
+        throw new UnsupportedOperationException(pe.getLocalizedMessage());
+      }
+    }
+    if (!EOCL_ENV.createQuery(VALIDATE_HUMAN_CLINICAL_EXPOSUREEXPOSURE_SUB_CATEGORY_ASSOCIATIONEXPOSURE_EVENT_SUB_CATEGORY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(humanClinicalExposure))
+    {
+      if (diagnostics != null)
+      {
+        diagnostics.add
+          (new BasicDiagnostic
+            (Diagnostic.ERROR,
+             SdtmValidator.DIAGNOSTIC_SOURCE,
+             SdtmValidator.HUMAN_CLINICAL_EXPOSURE__HUMAN_CLINICAL_EXPOSUREEXPOSURE_SUB_CATEGORY_ASSOCIATIONEXPOSURE_EVENT_SUB_CATEGORY_CODE,
+             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "HumanClinicalExposureexposureSubCategoryAssociationexposureEventSubCategoryCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(humanClinicalExposure, context) }),
+             new Object [] { humanClinicalExposure }));
+      }
+       
+      return false;
+    }
+    return true;
+  }
+
+  /**
+   * The cached OCL expression body for the '{@link #validateHumanClinicalExposureexposureSubCategoryAssociationexposureEventSubCategoryMoodCode(HumanClinicalExposure, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Human Clinical Exposureexposure Sub Category Associationexposure Event Sub Category Mood Code</em>}' operation.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #validateHumanClinicalExposureexposureSubCategoryAssociationexposureEventSubCategoryMoodCode(HumanClinicalExposure, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+   * @generated
+   * @ordered
+   */
+  protected static final String VALIDATE_HUMAN_CLINICAL_EXPOSUREEXPOSURE_SUB_CATEGORY_ASSOCIATIONEXPOSURE_EVENT_SUB_CATEGORY_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entryRelationship->excluding(null).observation->excluding(null)->reject(moodCode=vocab::x_ActMoodDocumentObservation::EVN)";
+
+  /**
+   * The cached OCL invariant for the '{@link #validateHumanClinicalExposureexposureSubCategoryAssociationexposureEventSubCategoryMoodCode(HumanClinicalExposure, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Human Clinical Exposureexposure Sub Category Associationexposure Event Sub Category Mood Code</em>}' invariant operation.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #validateHumanClinicalExposureexposureSubCategoryAssociationexposureEventSubCategoryMoodCode(HumanClinicalExposure, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+   * @generated
+   * @ordered
+   */
+  
+  protected static Constraint VALIDATE_HUMAN_CLINICAL_EXPOSUREEXPOSURE_SUB_CATEGORY_ASSOCIATIONEXPOSURE_EVENT_SUB_CATEGORY_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * <!-- begin-model-doc -->
+   * @param humanClinicalExposure The receiving '<em><b>Human Clinical Exposure</b></em>' model object.
+   * @param diagnostics The chain of diagnostics to which problems are to be appended.
+   * @param context The cache of context-specific information.
+   * <!-- end-model-doc -->
+   * @generated
+   */
+  
+  public static  boolean validateHumanClinicalExposureexposureSubCategoryAssociationexposureEventSubCategoryMoodCode(HumanClinicalExposure humanClinicalExposure, DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+  	  
+    if (VALIDATE_HUMAN_CLINICAL_EXPOSUREEXPOSURE_SUB_CATEGORY_ASSOCIATIONEXPOSURE_EVENT_SUB_CATEGORY_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+      OCL.Helper helper = EOCL_ENV.createOCLHelper();
+      helper.setContext(SdtmPackage.Literals.HUMAN_CLINICAL_EXPOSURE);
+      try
+      {
+        VALIDATE_HUMAN_CLINICAL_EXPOSUREEXPOSURE_SUB_CATEGORY_ASSOCIATIONEXPOSURE_EVENT_SUB_CATEGORY_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_HUMAN_CLINICAL_EXPOSUREEXPOSURE_SUB_CATEGORY_ASSOCIATIONEXPOSURE_EVENT_SUB_CATEGORY_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+      }
+      catch (ParserException pe)
+      {
+        throw new UnsupportedOperationException(pe.getLocalizedMessage());
+      }
+    }
+    if (!EOCL_ENV.createQuery(VALIDATE_HUMAN_CLINICAL_EXPOSUREEXPOSURE_SUB_CATEGORY_ASSOCIATIONEXPOSURE_EVENT_SUB_CATEGORY_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(humanClinicalExposure))
+    {
+      if (diagnostics != null)
+      {
+        diagnostics.add
+          (new BasicDiagnostic
+            (Diagnostic.ERROR,
+             SdtmValidator.DIAGNOSTIC_SOURCE,
+             SdtmValidator.HUMAN_CLINICAL_EXPOSURE__HUMAN_CLINICAL_EXPOSUREEXPOSURE_SUB_CATEGORY_ASSOCIATIONEXPOSURE_EVENT_SUB_CATEGORY_MOOD_CODE,
+             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "HumanClinicalExposureexposureSubCategoryAssociationexposureEventSubCategoryMoodCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(humanClinicalExposure, context) }),
+             new Object [] { humanClinicalExposure }));
+      }
+       
+      return false;
+    }
+    return true;
+  }
+
+  /**
+   * The cached OCL expression body for the '{@link #validateHumanClinicalExposureexposureSubCategoryAssociationexposureEventSubCategoryValue(HumanClinicalExposure, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Human Clinical Exposureexposure Sub Category Associationexposure Event Sub Category Value</em>}' operation.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #validateHumanClinicalExposureexposureSubCategoryAssociationexposureEventSubCategoryValue(HumanClinicalExposure, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+   * @generated
+   * @ordered
+   */
+  protected static final String VALIDATE_HUMAN_CLINICAL_EXPOSUREEXPOSURE_SUB_CATEGORY_ASSOCIATIONEXPOSURE_EVENT_SUB_CATEGORY_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entryRelationship->excluding(null).observation->excluding(null)->reject((value->isEmpty() or value->exists(element | element.isNullFlavorUndefined())) implies (value->size() = 1 and value->forAll(element | element.oclIsTypeOf(datatypes::CE))))";
+
+  /**
+   * The cached OCL invariant for the '{@link #validateHumanClinicalExposureexposureSubCategoryAssociationexposureEventSubCategoryValue(HumanClinicalExposure, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Human Clinical Exposureexposure Sub Category Associationexposure Event Sub Category Value</em>}' invariant operation.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #validateHumanClinicalExposureexposureSubCategoryAssociationexposureEventSubCategoryValue(HumanClinicalExposure, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+   * @generated
+   * @ordered
+   */
+  
+  protected static Constraint VALIDATE_HUMAN_CLINICAL_EXPOSUREEXPOSURE_SUB_CATEGORY_ASSOCIATIONEXPOSURE_EVENT_SUB_CATEGORY_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * <!-- begin-model-doc -->
+   * @param humanClinicalExposure The receiving '<em><b>Human Clinical Exposure</b></em>' model object.
+   * @param diagnostics The chain of diagnostics to which problems are to be appended.
+   * @param context The cache of context-specific information.
+   * <!-- end-model-doc -->
+   * @generated
+   */
+  
+  public static  boolean validateHumanClinicalExposureexposureSubCategoryAssociationexposureEventSubCategoryValue(HumanClinicalExposure humanClinicalExposure, DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+  	  
+    if (VALIDATE_HUMAN_CLINICAL_EXPOSUREEXPOSURE_SUB_CATEGORY_ASSOCIATIONEXPOSURE_EVENT_SUB_CATEGORY_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+      OCL.Helper helper = EOCL_ENV.createOCLHelper();
+      helper.setContext(SdtmPackage.Literals.HUMAN_CLINICAL_EXPOSURE);
+      try
+      {
+        VALIDATE_HUMAN_CLINICAL_EXPOSUREEXPOSURE_SUB_CATEGORY_ASSOCIATIONEXPOSURE_EVENT_SUB_CATEGORY_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_HUMAN_CLINICAL_EXPOSUREEXPOSURE_SUB_CATEGORY_ASSOCIATIONEXPOSURE_EVENT_SUB_CATEGORY_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+      }
+      catch (ParserException pe)
+      {
+        throw new UnsupportedOperationException(pe.getLocalizedMessage());
+      }
+    }
+    if (!EOCL_ENV.createQuery(VALIDATE_HUMAN_CLINICAL_EXPOSUREEXPOSURE_SUB_CATEGORY_ASSOCIATIONEXPOSURE_EVENT_SUB_CATEGORY_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(humanClinicalExposure))
+    {
+      if (diagnostics != null)
+      {
+        diagnostics.add
+          (new BasicDiagnostic
+            (Diagnostic.ERROR,
+             SdtmValidator.DIAGNOSTIC_SOURCE,
+             SdtmValidator.HUMAN_CLINICAL_EXPOSURE__HUMAN_CLINICAL_EXPOSUREEXPOSURE_SUB_CATEGORY_ASSOCIATIONEXPOSURE_EVENT_SUB_CATEGORY_VALUE,
+             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "HumanClinicalExposureexposureSubCategoryAssociationexposureEventSubCategoryValue", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(humanClinicalExposure, context) }),
+             new Object [] { humanClinicalExposure }));
+      }
+       
       return false;
     }
     return true;
@@ -1488,7 +2119,6 @@ public class HumanClinicalExposureOperations extends SubstanceAdministrationOper
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.entryRelationship->excluding(null)->reject(typeCode=vocab::x_ActRelationshipEntryRelationship::COMP)
    * @param humanClinicalExposure The receiving '<em><b>Human Clinical Exposure</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -1498,6 +2128,7 @@ public class HumanClinicalExposureOperations extends SubstanceAdministrationOper
   
   public static  boolean validateHumanClinicalExposureexposureSubCategoryAssociationTypeCode(HumanClinicalExposure humanClinicalExposure, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
+  	  
     if (VALIDATE_HUMAN_CLINICAL_EXPOSUREEXPOSURE_SUB_CATEGORY_ASSOCIATION_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(SdtmPackage.Literals.HUMAN_CLINICAL_EXPOSURE);
@@ -1522,38 +2153,38 @@ public class HumanClinicalExposureOperations extends SubstanceAdministrationOper
              org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "HumanClinicalExposureexposureSubCategoryAssociationTypeCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(humanClinicalExposure, context) }),
              new Object [] { humanClinicalExposure }));
       }
+       
       return false;
     }
     return true;
   }
 
   /**
-   * The cached OCL expression body for the '{@link #validateHumanClinicalExposureexposureIntendedRegimenClassCode(HumanClinicalExposure, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Human Clinical Exposureexposure Intended Regimen Class Code</em>}' operation.
+   * The cached OCL expression body for the '{@link #validateHumanClinicalExposureexposureSubCategoryAssociationExposureEventSubCategory(HumanClinicalExposure, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Human Clinical Exposureexposure Sub Category Association Exposure Event Sub Category</em>}' operation.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @see #validateHumanClinicalExposureexposureIntendedRegimenClassCode(HumanClinicalExposure, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+   * @see #validateHumanClinicalExposureexposureSubCategoryAssociationExposureEventSubCategory(HumanClinicalExposure, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
    * @generated
    * @ordered
    */
-  protected static final String VALIDATE_HUMAN_CLINICAL_EXPOSUREEXPOSURE_INTENDED_REGIMEN_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.->reject(classCode=vocab::ActClassObservation::OBS)";
+  protected static final String VALIDATE_HUMAN_CLINICAL_EXPOSUREEXPOSURE_SUB_CATEGORY_ASSOCIATION_EXPOSURE_EVENT_SUB_CATEGORY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entryRelationship->excluding(null)->reject(observation->one(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(cda::Observation)))";
 
   /**
-   * The cached OCL invariant for the '{@link #validateHumanClinicalExposureexposureIntendedRegimenClassCode(HumanClinicalExposure, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Human Clinical Exposureexposure Intended Regimen Class Code</em>}' invariant operation.
+   * The cached OCL invariant for the '{@link #validateHumanClinicalExposureexposureSubCategoryAssociationExposureEventSubCategory(HumanClinicalExposure, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Human Clinical Exposureexposure Sub Category Association Exposure Event Sub Category</em>}' invariant operation.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @see #validateHumanClinicalExposureexposureIntendedRegimenClassCode(HumanClinicalExposure, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+   * @see #validateHumanClinicalExposureexposureSubCategoryAssociationExposureEventSubCategory(HumanClinicalExposure, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
    * @generated
    * @ordered
    */
   
-  protected static Constraint VALIDATE_HUMAN_CLINICAL_EXPOSUREEXPOSURE_INTENDED_REGIMEN_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-  
+  protected static Constraint VALIDATE_HUMAN_CLINICAL_EXPOSUREEXPOSURE_SUB_CATEGORY_ASSOCIATION_EXPOSURE_EVENT_SUB_CATEGORY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+
 
   /**
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.->reject(classCode=vocab::ActClassObservation::OBS)
    * @param humanClinicalExposure The receiving '<em><b>Human Clinical Exposure</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -1561,21 +2192,22 @@ public class HumanClinicalExposureOperations extends SubstanceAdministrationOper
    * @generated
    */
   
-  public static  boolean validateHumanClinicalExposureexposureIntendedRegimenClassCode(HumanClinicalExposure humanClinicalExposure, DiagnosticChain diagnostics, Map<Object, Object> context)
+  public static  boolean validateHumanClinicalExposureexposureSubCategoryAssociationExposureEventSubCategory(HumanClinicalExposure humanClinicalExposure, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
-    if (VALIDATE_HUMAN_CLINICAL_EXPOSUREEXPOSURE_INTENDED_REGIMEN_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+  	  
+    if (VALIDATE_HUMAN_CLINICAL_EXPOSUREEXPOSURE_SUB_CATEGORY_ASSOCIATION_EXPOSURE_EVENT_SUB_CATEGORY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(SdtmPackage.Literals.HUMAN_CLINICAL_EXPOSURE);
       try
       {
-        VALIDATE_HUMAN_CLINICAL_EXPOSUREEXPOSURE_INTENDED_REGIMEN_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_HUMAN_CLINICAL_EXPOSUREEXPOSURE_INTENDED_REGIMEN_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+        VALIDATE_HUMAN_CLINICAL_EXPOSUREEXPOSURE_SUB_CATEGORY_ASSOCIATION_EXPOSURE_EVENT_SUB_CATEGORY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_HUMAN_CLINICAL_EXPOSUREEXPOSURE_SUB_CATEGORY_ASSOCIATION_EXPOSURE_EVENT_SUB_CATEGORY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
       }
       catch (ParserException pe)
       {
         throw new UnsupportedOperationException(pe.getLocalizedMessage());
       }
     }
-    if (!EOCL_ENV.createQuery(VALIDATE_HUMAN_CLINICAL_EXPOSUREEXPOSURE_INTENDED_REGIMEN_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(humanClinicalExposure))
+    if (!EOCL_ENV.createQuery(VALIDATE_HUMAN_CLINICAL_EXPOSUREEXPOSURE_SUB_CATEGORY_ASSOCIATION_EXPOSURE_EVENT_SUB_CATEGORY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(humanClinicalExposure))
     {
       if (diagnostics != null)
       {
@@ -1583,42 +2215,42 @@ public class HumanClinicalExposureOperations extends SubstanceAdministrationOper
           (new BasicDiagnostic
             (Diagnostic.ERROR,
              SdtmValidator.DIAGNOSTIC_SOURCE,
-             SdtmValidator.HUMAN_CLINICAL_EXPOSURE__HUMAN_CLINICAL_EXPOSUREEXPOSURE_INTENDED_REGIMEN_CLASS_CODE,
-             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "HumanClinicalExposureexposureIntendedRegimenClassCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(humanClinicalExposure, context) }),
+             SdtmValidator.HUMAN_CLINICAL_EXPOSURE__HUMAN_CLINICAL_EXPOSUREEXPOSURE_SUB_CATEGORY_ASSOCIATION_EXPOSURE_EVENT_SUB_CATEGORY,
+             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "HumanClinicalExposureexposureSubCategoryAssociationExposureEventSubCategory", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(humanClinicalExposure, context) }),
              new Object [] { humanClinicalExposure }));
       }
+       
       return false;
     }
     return true;
   }
 
   /**
-   * The cached OCL expression body for the '{@link #validateHumanClinicalExposureexposureIntendedRegimenMoodCode(HumanClinicalExposure, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Human Clinical Exposureexposure Intended Regimen Mood Code</em>}' operation.
+   * The cached OCL expression body for the '{@link #validateHumanClinicalExposuredoseAdjustmentReasonAssociationdoseAdjustmentReasonClassCode(HumanClinicalExposure, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Human Clinical Exposuredose Adjustment Reason Associationdose Adjustment Reason Class Code</em>}' operation.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @see #validateHumanClinicalExposureexposureIntendedRegimenMoodCode(HumanClinicalExposure, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+   * @see #validateHumanClinicalExposuredoseAdjustmentReasonAssociationdoseAdjustmentReasonClassCode(HumanClinicalExposure, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
    * @generated
    * @ordered
    */
-  protected static final String VALIDATE_HUMAN_CLINICAL_EXPOSUREEXPOSURE_INTENDED_REGIMEN_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.->reject(moodCode=vocab::x_ActMoodDocumentObservation::EVN)";
+  protected static final String VALIDATE_HUMAN_CLINICAL_EXPOSUREDOSE_ADJUSTMENT_REASON_ASSOCIATIONDOSE_ADJUSTMENT_REASON_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entryRelationship->excluding(null).observation->excluding(null)->reject(classCode=vocab::ActClassObservation::OBS)";
 
   /**
-   * The cached OCL invariant for the '{@link #validateHumanClinicalExposureexposureIntendedRegimenMoodCode(HumanClinicalExposure, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Human Clinical Exposureexposure Intended Regimen Mood Code</em>}' invariant operation.
+   * The cached OCL invariant for the '{@link #validateHumanClinicalExposuredoseAdjustmentReasonAssociationdoseAdjustmentReasonClassCode(HumanClinicalExposure, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Human Clinical Exposuredose Adjustment Reason Associationdose Adjustment Reason Class Code</em>}' invariant operation.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @see #validateHumanClinicalExposureexposureIntendedRegimenMoodCode(HumanClinicalExposure, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+   * @see #validateHumanClinicalExposuredoseAdjustmentReasonAssociationdoseAdjustmentReasonClassCode(HumanClinicalExposure, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
    * @generated
    * @ordered
    */
   
-  protected static Constraint VALIDATE_HUMAN_CLINICAL_EXPOSUREEXPOSURE_INTENDED_REGIMEN_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-  
+  protected static Constraint VALIDATE_HUMAN_CLINICAL_EXPOSUREDOSE_ADJUSTMENT_REASON_ASSOCIATIONDOSE_ADJUSTMENT_REASON_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+
 
   /**
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.->reject(moodCode=vocab::x_ActMoodDocumentObservation::EVN)
    * @param humanClinicalExposure The receiving '<em><b>Human Clinical Exposure</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -1626,21 +2258,22 @@ public class HumanClinicalExposureOperations extends SubstanceAdministrationOper
    * @generated
    */
   
-  public static  boolean validateHumanClinicalExposureexposureIntendedRegimenMoodCode(HumanClinicalExposure humanClinicalExposure, DiagnosticChain diagnostics, Map<Object, Object> context)
+  public static  boolean validateHumanClinicalExposuredoseAdjustmentReasonAssociationdoseAdjustmentReasonClassCode(HumanClinicalExposure humanClinicalExposure, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
-    if (VALIDATE_HUMAN_CLINICAL_EXPOSUREEXPOSURE_INTENDED_REGIMEN_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+  	  
+    if (VALIDATE_HUMAN_CLINICAL_EXPOSUREDOSE_ADJUSTMENT_REASON_ASSOCIATIONDOSE_ADJUSTMENT_REASON_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(SdtmPackage.Literals.HUMAN_CLINICAL_EXPOSURE);
       try
       {
-        VALIDATE_HUMAN_CLINICAL_EXPOSUREEXPOSURE_INTENDED_REGIMEN_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_HUMAN_CLINICAL_EXPOSUREEXPOSURE_INTENDED_REGIMEN_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+        VALIDATE_HUMAN_CLINICAL_EXPOSUREDOSE_ADJUSTMENT_REASON_ASSOCIATIONDOSE_ADJUSTMENT_REASON_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_HUMAN_CLINICAL_EXPOSUREDOSE_ADJUSTMENT_REASON_ASSOCIATIONDOSE_ADJUSTMENT_REASON_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
       }
       catch (ParserException pe)
       {
         throw new UnsupportedOperationException(pe.getLocalizedMessage());
       }
     }
-    if (!EOCL_ENV.createQuery(VALIDATE_HUMAN_CLINICAL_EXPOSUREEXPOSURE_INTENDED_REGIMEN_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(humanClinicalExposure))
+    if (!EOCL_ENV.createQuery(VALIDATE_HUMAN_CLINICAL_EXPOSUREDOSE_ADJUSTMENT_REASON_ASSOCIATIONDOSE_ADJUSTMENT_REASON_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(humanClinicalExposure))
     {
       if (diagnostics != null)
       {
@@ -1648,42 +2281,42 @@ public class HumanClinicalExposureOperations extends SubstanceAdministrationOper
           (new BasicDiagnostic
             (Diagnostic.ERROR,
              SdtmValidator.DIAGNOSTIC_SOURCE,
-             SdtmValidator.HUMAN_CLINICAL_EXPOSURE__HUMAN_CLINICAL_EXPOSUREEXPOSURE_INTENDED_REGIMEN_MOOD_CODE,
-             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "HumanClinicalExposureexposureIntendedRegimenMoodCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(humanClinicalExposure, context) }),
+             SdtmValidator.HUMAN_CLINICAL_EXPOSURE__HUMAN_CLINICAL_EXPOSUREDOSE_ADJUSTMENT_REASON_ASSOCIATIONDOSE_ADJUSTMENT_REASON_CLASS_CODE,
+             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "HumanClinicalExposuredoseAdjustmentReasonAssociationdoseAdjustmentReasonClassCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(humanClinicalExposure, context) }),
              new Object [] { humanClinicalExposure }));
       }
+       
       return false;
     }
     return true;
   }
 
   /**
-   * The cached OCL expression body for the '{@link #validateHumanClinicalExposureexposureIntendedRegimenCode(HumanClinicalExposure, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Human Clinical Exposureexposure Intended Regimen Code</em>}' operation.
+   * The cached OCL expression body for the '{@link #validateHumanClinicalExposuredoseAdjustmentReasonAssociationdoseAdjustmentReasonCodeP(HumanClinicalExposure, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Human Clinical Exposuredose Adjustment Reason Associationdose Adjustment Reason Code P</em>}' operation.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @see #validateHumanClinicalExposureexposureIntendedRegimenCode(HumanClinicalExposure, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+   * @see #validateHumanClinicalExposuredoseAdjustmentReasonAssociationdoseAdjustmentReasonCodeP(HumanClinicalExposure, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
    * @generated
    * @ordered
    */
-  protected static final String VALIDATE_HUMAN_CLINICAL_EXPOSUREEXPOSURE_INTENDED_REGIMEN_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.->reject((code.oclIsUndefined() or code.isNullFlavorUndefined()) implies (not code.oclIsUndefined()))";
+  protected static final String VALIDATE_HUMAN_CLINICAL_EXPOSUREDOSE_ADJUSTMENT_REASON_ASSOCIATIONDOSE_ADJUSTMENT_REASON_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entryRelationship->excluding(null).observation->excluding(null)->reject((code.oclIsUndefined() or code.isNullFlavorUndefined()) implies (not code.oclIsUndefined()))";
 
   /**
-   * The cached OCL invariant for the '{@link #validateHumanClinicalExposureexposureIntendedRegimenCode(HumanClinicalExposure, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Human Clinical Exposureexposure Intended Regimen Code</em>}' invariant operation.
+   * The cached OCL invariant for the '{@link #validateHumanClinicalExposuredoseAdjustmentReasonAssociationdoseAdjustmentReasonCodeP(HumanClinicalExposure, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Human Clinical Exposuredose Adjustment Reason Associationdose Adjustment Reason Code P</em>}' invariant operation.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @see #validateHumanClinicalExposureexposureIntendedRegimenCode(HumanClinicalExposure, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+   * @see #validateHumanClinicalExposuredoseAdjustmentReasonAssociationdoseAdjustmentReasonCodeP(HumanClinicalExposure, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
    * @generated
    * @ordered
    */
   
-  protected static Constraint VALIDATE_HUMAN_CLINICAL_EXPOSUREEXPOSURE_INTENDED_REGIMEN_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-  
+  protected static Constraint VALIDATE_HUMAN_CLINICAL_EXPOSUREDOSE_ADJUSTMENT_REASON_ASSOCIATIONDOSE_ADJUSTMENT_REASON_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+
 
   /**
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.->reject((code.oclIsUndefined() or code.isNullFlavorUndefined()) implies (not code.oclIsUndefined()))
    * @param humanClinicalExposure The receiving '<em><b>Human Clinical Exposure</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -1691,21 +2324,22 @@ public class HumanClinicalExposureOperations extends SubstanceAdministrationOper
    * @generated
    */
   
-  public static  boolean validateHumanClinicalExposureexposureIntendedRegimenCode(HumanClinicalExposure humanClinicalExposure, DiagnosticChain diagnostics, Map<Object, Object> context)
+  public static  boolean validateHumanClinicalExposuredoseAdjustmentReasonAssociationdoseAdjustmentReasonCodeP(HumanClinicalExposure humanClinicalExposure, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
-    if (VALIDATE_HUMAN_CLINICAL_EXPOSUREEXPOSURE_INTENDED_REGIMEN_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+  	  
+    if (VALIDATE_HUMAN_CLINICAL_EXPOSUREDOSE_ADJUSTMENT_REASON_ASSOCIATIONDOSE_ADJUSTMENT_REASON_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(SdtmPackage.Literals.HUMAN_CLINICAL_EXPOSURE);
       try
       {
-        VALIDATE_HUMAN_CLINICAL_EXPOSUREEXPOSURE_INTENDED_REGIMEN_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_HUMAN_CLINICAL_EXPOSUREEXPOSURE_INTENDED_REGIMEN_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+        VALIDATE_HUMAN_CLINICAL_EXPOSUREDOSE_ADJUSTMENT_REASON_ASSOCIATIONDOSE_ADJUSTMENT_REASON_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_HUMAN_CLINICAL_EXPOSUREDOSE_ADJUSTMENT_REASON_ASSOCIATIONDOSE_ADJUSTMENT_REASON_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
       }
       catch (ParserException pe)
       {
         throw new UnsupportedOperationException(pe.getLocalizedMessage());
       }
     }
-    if (!EOCL_ENV.createQuery(VALIDATE_HUMAN_CLINICAL_EXPOSUREEXPOSURE_INTENDED_REGIMEN_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(humanClinicalExposure))
+    if (!EOCL_ENV.createQuery(VALIDATE_HUMAN_CLINICAL_EXPOSUREDOSE_ADJUSTMENT_REASON_ASSOCIATIONDOSE_ADJUSTMENT_REASON_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(humanClinicalExposure))
     {
       if (diagnostics != null)
       {
@@ -1713,42 +2347,44 @@ public class HumanClinicalExposureOperations extends SubstanceAdministrationOper
           (new BasicDiagnostic
             (Diagnostic.ERROR,
              SdtmValidator.DIAGNOSTIC_SOURCE,
-             SdtmValidator.HUMAN_CLINICAL_EXPOSURE__HUMAN_CLINICAL_EXPOSUREEXPOSURE_INTENDED_REGIMEN_CODE,
-             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "HumanClinicalExposureexposureIntendedRegimenCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(humanClinicalExposure, context) }),
+             SdtmValidator.HUMAN_CLINICAL_EXPOSURE__HUMAN_CLINICAL_EXPOSUREDOSE_ADJUSTMENT_REASON_ASSOCIATIONDOSE_ADJUSTMENT_REASON_CODE_P,
+             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "HumanClinicalExposuredoseAdjustmentReasonAssociationdoseAdjustmentReasonCodeP", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(humanClinicalExposure, context) }),
              new Object [] { humanClinicalExposure }));
       }
+       
       return false;
     }
     return true;
   }
 
   /**
-   * The cached OCL expression body for the '{@link #validateHumanClinicalExposureexposureIntendedRegimenValue(HumanClinicalExposure, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Human Clinical Exposureexposure Intended Regimen Value</em>}' operation.
+   * The cached OCL expression body for the '{@link #validateHumanClinicalExposuredoseAdjustmentReasonAssociationdoseAdjustmentReasonCode(HumanClinicalExposure, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Human Clinical Exposuredose Adjustment Reason Associationdose Adjustment Reason Code</em>}' operation.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @see #validateHumanClinicalExposureexposureIntendedRegimenValue(HumanClinicalExposure, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+   * @see #validateHumanClinicalExposuredoseAdjustmentReasonAssociationdoseAdjustmentReasonCode(HumanClinicalExposure, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
    * @generated
    * @ordered
    */
-  protected static final String VALIDATE_HUMAN_CLINICAL_EXPOSUREEXPOSURE_INTENDED_REGIMEN_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.->reject((value->isEmpty() or value->exists(element | element.isNullFlavorUndefined())) implies (value->size() = 1 and value->forAll(element | element.oclIsTypeOf(datatypes::ED))))";
+  protected static final String VALIDATE_HUMAN_CLINICAL_EXPOSUREDOSE_ADJUSTMENT_REASON_ASSOCIATIONDOSE_ADJUSTMENT_REASON_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entryRelationship->excluding(null).observation->excluding(null)->reject((code.oclIsUndefined() or code.isNullFlavorUndefined()) implies (not code.oclIsUndefined() and code.oclIsKindOf(datatypes::CD) and "+
+"let value : datatypes::CD = code.oclAsType(datatypes::CD) in "+
+"value.codeSystem = '2.16.840.1.113883.3.26.1.1'))";
 
   /**
-   * The cached OCL invariant for the '{@link #validateHumanClinicalExposureexposureIntendedRegimenValue(HumanClinicalExposure, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Human Clinical Exposureexposure Intended Regimen Value</em>}' invariant operation.
+   * The cached OCL invariant for the '{@link #validateHumanClinicalExposuredoseAdjustmentReasonAssociationdoseAdjustmentReasonCode(HumanClinicalExposure, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Human Clinical Exposuredose Adjustment Reason Associationdose Adjustment Reason Code</em>}' invariant operation.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @see #validateHumanClinicalExposureexposureIntendedRegimenValue(HumanClinicalExposure, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+   * @see #validateHumanClinicalExposuredoseAdjustmentReasonAssociationdoseAdjustmentReasonCode(HumanClinicalExposure, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
    * @generated
    * @ordered
    */
   
-  protected static Constraint VALIDATE_HUMAN_CLINICAL_EXPOSUREEXPOSURE_INTENDED_REGIMEN_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-  
+  protected static Constraint VALIDATE_HUMAN_CLINICAL_EXPOSUREDOSE_ADJUSTMENT_REASON_ASSOCIATIONDOSE_ADJUSTMENT_REASON_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+
 
   /**
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.->reject((value->isEmpty() or value->exists(element | element.isNullFlavorUndefined())) implies (value->size() = 1 and value->forAll(element | element.oclIsTypeOf(datatypes::ED))))
    * @param humanClinicalExposure The receiving '<em><b>Human Clinical Exposure</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -1756,21 +2392,22 @@ public class HumanClinicalExposureOperations extends SubstanceAdministrationOper
    * @generated
    */
   
-  public static  boolean validateHumanClinicalExposureexposureIntendedRegimenValue(HumanClinicalExposure humanClinicalExposure, DiagnosticChain diagnostics, Map<Object, Object> context)
+  public static  boolean validateHumanClinicalExposuredoseAdjustmentReasonAssociationdoseAdjustmentReasonCode(HumanClinicalExposure humanClinicalExposure, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
-    if (VALIDATE_HUMAN_CLINICAL_EXPOSUREEXPOSURE_INTENDED_REGIMEN_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+  	  
+    if (VALIDATE_HUMAN_CLINICAL_EXPOSUREDOSE_ADJUSTMENT_REASON_ASSOCIATIONDOSE_ADJUSTMENT_REASON_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(SdtmPackage.Literals.HUMAN_CLINICAL_EXPOSURE);
       try
       {
-        VALIDATE_HUMAN_CLINICAL_EXPOSUREEXPOSURE_INTENDED_REGIMEN_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_HUMAN_CLINICAL_EXPOSUREEXPOSURE_INTENDED_REGIMEN_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+        VALIDATE_HUMAN_CLINICAL_EXPOSUREDOSE_ADJUSTMENT_REASON_ASSOCIATIONDOSE_ADJUSTMENT_REASON_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_HUMAN_CLINICAL_EXPOSUREDOSE_ADJUSTMENT_REASON_ASSOCIATIONDOSE_ADJUSTMENT_REASON_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
       }
       catch (ParserException pe)
       {
         throw new UnsupportedOperationException(pe.getLocalizedMessage());
       }
     }
-    if (!EOCL_ENV.createQuery(VALIDATE_HUMAN_CLINICAL_EXPOSUREEXPOSURE_INTENDED_REGIMEN_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(humanClinicalExposure))
+    if (!EOCL_ENV.createQuery(VALIDATE_HUMAN_CLINICAL_EXPOSUREDOSE_ADJUSTMENT_REASON_ASSOCIATIONDOSE_ADJUSTMENT_REASON_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(humanClinicalExposure))
     {
       if (diagnostics != null)
       {
@@ -1778,10 +2415,77 @@ public class HumanClinicalExposureOperations extends SubstanceAdministrationOper
           (new BasicDiagnostic
             (Diagnostic.ERROR,
              SdtmValidator.DIAGNOSTIC_SOURCE,
-             SdtmValidator.HUMAN_CLINICAL_EXPOSURE__HUMAN_CLINICAL_EXPOSUREEXPOSURE_INTENDED_REGIMEN_VALUE,
-             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "HumanClinicalExposureexposureIntendedRegimenValue", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(humanClinicalExposure, context) }),
+             SdtmValidator.HUMAN_CLINICAL_EXPOSURE__HUMAN_CLINICAL_EXPOSUREDOSE_ADJUSTMENT_REASON_ASSOCIATIONDOSE_ADJUSTMENT_REASON_CODE,
+             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "HumanClinicalExposuredoseAdjustmentReasonAssociationdoseAdjustmentReasonCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(humanClinicalExposure, context) }),
              new Object [] { humanClinicalExposure }));
       }
+       
+      return false;
+    }
+    return true;
+  }
+
+  /**
+   * The cached OCL expression body for the '{@link #validateHumanClinicalExposuredoseAdjustmentReasonAssociationdoseAdjustmentReasonValue(HumanClinicalExposure, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Human Clinical Exposuredose Adjustment Reason Associationdose Adjustment Reason Value</em>}' operation.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #validateHumanClinicalExposuredoseAdjustmentReasonAssociationdoseAdjustmentReasonValue(HumanClinicalExposure, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+   * @generated
+   * @ordered
+   */
+  protected static final String VALIDATE_HUMAN_CLINICAL_EXPOSUREDOSE_ADJUSTMENT_REASON_ASSOCIATIONDOSE_ADJUSTMENT_REASON_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entryRelationship->excluding(null).observation->excluding(null)->reject((value->isEmpty() or value->exists(element | element.isNullFlavorUndefined())) implies (value->size() = 1 and value->forAll(element | element.oclIsTypeOf(datatypes::ED))))";
+
+  /**
+   * The cached OCL invariant for the '{@link #validateHumanClinicalExposuredoseAdjustmentReasonAssociationdoseAdjustmentReasonValue(HumanClinicalExposure, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Human Clinical Exposuredose Adjustment Reason Associationdose Adjustment Reason Value</em>}' invariant operation.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #validateHumanClinicalExposuredoseAdjustmentReasonAssociationdoseAdjustmentReasonValue(HumanClinicalExposure, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+   * @generated
+   * @ordered
+   */
+  
+  protected static Constraint VALIDATE_HUMAN_CLINICAL_EXPOSUREDOSE_ADJUSTMENT_REASON_ASSOCIATIONDOSE_ADJUSTMENT_REASON_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * <!-- begin-model-doc -->
+   * @param humanClinicalExposure The receiving '<em><b>Human Clinical Exposure</b></em>' model object.
+   * @param diagnostics The chain of diagnostics to which problems are to be appended.
+   * @param context The cache of context-specific information.
+   * <!-- end-model-doc -->
+   * @generated
+   */
+  
+  public static  boolean validateHumanClinicalExposuredoseAdjustmentReasonAssociationdoseAdjustmentReasonValue(HumanClinicalExposure humanClinicalExposure, DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+  	  
+    if (VALIDATE_HUMAN_CLINICAL_EXPOSUREDOSE_ADJUSTMENT_REASON_ASSOCIATIONDOSE_ADJUSTMENT_REASON_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+      OCL.Helper helper = EOCL_ENV.createOCLHelper();
+      helper.setContext(SdtmPackage.Literals.HUMAN_CLINICAL_EXPOSURE);
+      try
+      {
+        VALIDATE_HUMAN_CLINICAL_EXPOSUREDOSE_ADJUSTMENT_REASON_ASSOCIATIONDOSE_ADJUSTMENT_REASON_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_HUMAN_CLINICAL_EXPOSUREDOSE_ADJUSTMENT_REASON_ASSOCIATIONDOSE_ADJUSTMENT_REASON_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+      }
+      catch (ParserException pe)
+      {
+        throw new UnsupportedOperationException(pe.getLocalizedMessage());
+      }
+    }
+    if (!EOCL_ENV.createQuery(VALIDATE_HUMAN_CLINICAL_EXPOSUREDOSE_ADJUSTMENT_REASON_ASSOCIATIONDOSE_ADJUSTMENT_REASON_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(humanClinicalExposure))
+    {
+      if (diagnostics != null)
+      {
+        diagnostics.add
+          (new BasicDiagnostic
+            (Diagnostic.ERROR,
+             SdtmValidator.DIAGNOSTIC_SOURCE,
+             SdtmValidator.HUMAN_CLINICAL_EXPOSURE__HUMAN_CLINICAL_EXPOSUREDOSE_ADJUSTMENT_REASON_ASSOCIATIONDOSE_ADJUSTMENT_REASON_VALUE,
+             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "HumanClinicalExposuredoseAdjustmentReasonAssociationdoseAdjustmentReasonValue", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(humanClinicalExposure, context) }),
+             new Object [] { humanClinicalExposure }));
+      }
+       
       return false;
     }
     return true;
@@ -1813,7 +2517,6 @@ public class HumanClinicalExposureOperations extends SubstanceAdministrationOper
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.entryRelationship->excluding(null)->reject(typeCode=vocab::x_ActRelationshipEntryRelationship::CAUS)
    * @param humanClinicalExposure The receiving '<em><b>Human Clinical Exposure</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -1823,6 +2526,7 @@ public class HumanClinicalExposureOperations extends SubstanceAdministrationOper
   
   public static  boolean validateHumanClinicalExposuredoseAdjustmentReasonAssociationTypeCode(HumanClinicalExposure humanClinicalExposure, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
+  	  
     if (VALIDATE_HUMAN_CLINICAL_EXPOSUREDOSE_ADJUSTMENT_REASON_ASSOCIATION_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(SdtmPackage.Literals.HUMAN_CLINICAL_EXPOSURE);
@@ -1847,6 +2551,73 @@ public class HumanClinicalExposureOperations extends SubstanceAdministrationOper
              org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "HumanClinicalExposuredoseAdjustmentReasonAssociationTypeCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(humanClinicalExposure, context) }),
              new Object [] { humanClinicalExposure }));
       }
+       
+      return false;
+    }
+    return true;
+  }
+
+  /**
+   * The cached OCL expression body for the '{@link #validateHumanClinicalExposuredoseAdjustmentReasonAssociationDoseAdjustmentReason(HumanClinicalExposure, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Human Clinical Exposuredose Adjustment Reason Association Dose Adjustment Reason</em>}' operation.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #validateHumanClinicalExposuredoseAdjustmentReasonAssociationDoseAdjustmentReason(HumanClinicalExposure, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+   * @generated
+   * @ordered
+   */
+  protected static final String VALIDATE_HUMAN_CLINICAL_EXPOSUREDOSE_ADJUSTMENT_REASON_ASSOCIATION_DOSE_ADJUSTMENT_REASON__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entryRelationship->excluding(null)->reject(observation->one(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(cda::Observation)))";
+
+  /**
+   * The cached OCL invariant for the '{@link #validateHumanClinicalExposuredoseAdjustmentReasonAssociationDoseAdjustmentReason(HumanClinicalExposure, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Human Clinical Exposuredose Adjustment Reason Association Dose Adjustment Reason</em>}' invariant operation.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #validateHumanClinicalExposuredoseAdjustmentReasonAssociationDoseAdjustmentReason(HumanClinicalExposure, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+   * @generated
+   * @ordered
+   */
+  
+  protected static Constraint VALIDATE_HUMAN_CLINICAL_EXPOSUREDOSE_ADJUSTMENT_REASON_ASSOCIATION_DOSE_ADJUSTMENT_REASON__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * <!-- begin-model-doc -->
+   * @param humanClinicalExposure The receiving '<em><b>Human Clinical Exposure</b></em>' model object.
+   * @param diagnostics The chain of diagnostics to which problems are to be appended.
+   * @param context The cache of context-specific information.
+   * <!-- end-model-doc -->
+   * @generated
+   */
+  
+  public static  boolean validateHumanClinicalExposuredoseAdjustmentReasonAssociationDoseAdjustmentReason(HumanClinicalExposure humanClinicalExposure, DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+  	  
+    if (VALIDATE_HUMAN_CLINICAL_EXPOSUREDOSE_ADJUSTMENT_REASON_ASSOCIATION_DOSE_ADJUSTMENT_REASON__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+      OCL.Helper helper = EOCL_ENV.createOCLHelper();
+      helper.setContext(SdtmPackage.Literals.HUMAN_CLINICAL_EXPOSURE);
+      try
+      {
+        VALIDATE_HUMAN_CLINICAL_EXPOSUREDOSE_ADJUSTMENT_REASON_ASSOCIATION_DOSE_ADJUSTMENT_REASON__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_HUMAN_CLINICAL_EXPOSUREDOSE_ADJUSTMENT_REASON_ASSOCIATION_DOSE_ADJUSTMENT_REASON__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+      }
+      catch (ParserException pe)
+      {
+        throw new UnsupportedOperationException(pe.getLocalizedMessage());
+      }
+    }
+    if (!EOCL_ENV.createQuery(VALIDATE_HUMAN_CLINICAL_EXPOSUREDOSE_ADJUSTMENT_REASON_ASSOCIATION_DOSE_ADJUSTMENT_REASON__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(humanClinicalExposure))
+    {
+      if (diagnostics != null)
+      {
+        diagnostics.add
+          (new BasicDiagnostic
+            (Diagnostic.ERROR,
+             SdtmValidator.DIAGNOSTIC_SOURCE,
+             SdtmValidator.HUMAN_CLINICAL_EXPOSURE__HUMAN_CLINICAL_EXPOSUREDOSE_ADJUSTMENT_REASON_ASSOCIATION_DOSE_ADJUSTMENT_REASON,
+             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "HumanClinicalExposuredoseAdjustmentReasonAssociationDoseAdjustmentReason", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(humanClinicalExposure, context) }),
+             new Object [] { humanClinicalExposure }));
+      }
+       
       return false;
     }
     return true;
@@ -1878,7 +2649,6 @@ public class HumanClinicalExposureOperations extends SubstanceAdministrationOper
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.entryRelationship->excluding(null).observation->excluding(null)->reject(isDefined('classCode'))
    * @param humanClinicalExposure The receiving '<em><b>Human Clinical Exposure</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -1888,6 +2658,7 @@ public class HumanClinicalExposureOperations extends SubstanceAdministrationOper
   
   public static  boolean validateHumanClinicalExposureelementOrderAssociationelementOrderClassCode(HumanClinicalExposure humanClinicalExposure, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
+  	  
     if (VALIDATE_HUMAN_CLINICAL_EXPOSUREELEMENT_ORDER_ASSOCIATIONELEMENT_ORDER_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(SdtmPackage.Literals.HUMAN_CLINICAL_EXPOSURE);
@@ -1912,6 +2683,7 @@ public class HumanClinicalExposureOperations extends SubstanceAdministrationOper
              org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "HumanClinicalExposureelementOrderAssociationelementOrderClassCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(humanClinicalExposure, context) }),
              new Object [] { humanClinicalExposure }));
       }
+       
       return false;
     }
     return true;
@@ -1943,7 +2715,6 @@ public class HumanClinicalExposureOperations extends SubstanceAdministrationOper
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.entryRelationship->excluding(null).observation->excluding(null)->reject((code.oclIsUndefined() or code.isNullFlavorUndefined()) implies (not code.oclIsUndefined()))
    * @param humanClinicalExposure The receiving '<em><b>Human Clinical Exposure</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -1953,6 +2724,7 @@ public class HumanClinicalExposureOperations extends SubstanceAdministrationOper
   
   public static  boolean validateHumanClinicalExposureelementOrderAssociationelementOrderCodeP(HumanClinicalExposure humanClinicalExposure, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
+  	  
     if (VALIDATE_HUMAN_CLINICAL_EXPOSUREELEMENT_ORDER_ASSOCIATIONELEMENT_ORDER_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(SdtmPackage.Literals.HUMAN_CLINICAL_EXPOSURE);
@@ -1977,6 +2749,7 @@ public class HumanClinicalExposureOperations extends SubstanceAdministrationOper
              org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "HumanClinicalExposureelementOrderAssociationelementOrderCodeP", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(humanClinicalExposure, context) }),
              new Object [] { humanClinicalExposure }));
       }
+       
       return false;
     }
     return true;
@@ -2010,9 +2783,6 @@ public class HumanClinicalExposureOperations extends SubstanceAdministrationOper
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.entryRelationship->excluding(null).observation->excluding(null)->reject((code.oclIsUndefined() or code.isNullFlavorUndefined()) implies (not code.oclIsUndefined() and code.oclIsKindOf(datatypes::CD) and 
-   * let value : datatypes::CD = code.oclAsType(datatypes::CD) in 
-   * value.codeSystem = '2.16.840.1.113883.3.26.1.1'))
    * @param humanClinicalExposure The receiving '<em><b>Human Clinical Exposure</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -2022,6 +2792,7 @@ public class HumanClinicalExposureOperations extends SubstanceAdministrationOper
   
   public static  boolean validateHumanClinicalExposureelementOrderAssociationelementOrderCode(HumanClinicalExposure humanClinicalExposure, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
+  	  
     if (VALIDATE_HUMAN_CLINICAL_EXPOSUREELEMENT_ORDER_ASSOCIATIONELEMENT_ORDER_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(SdtmPackage.Literals.HUMAN_CLINICAL_EXPOSURE);
@@ -2046,6 +2817,7 @@ public class HumanClinicalExposureOperations extends SubstanceAdministrationOper
              org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "HumanClinicalExposureelementOrderAssociationelementOrderCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(humanClinicalExposure, context) }),
              new Object [] { humanClinicalExposure }));
       }
+       
       return false;
     }
     return true;
@@ -2077,7 +2849,6 @@ public class HumanClinicalExposureOperations extends SubstanceAdministrationOper
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.entryRelationship->excluding(null).observation->excluding(null)->reject(moodCode=vocab::x_ActMoodDocumentObservation::EVN)
    * @param humanClinicalExposure The receiving '<em><b>Human Clinical Exposure</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -2087,6 +2858,7 @@ public class HumanClinicalExposureOperations extends SubstanceAdministrationOper
   
   public static  boolean validateHumanClinicalExposureelementOrderAssociationelementOrderMoodCode(HumanClinicalExposure humanClinicalExposure, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
+  	  
     if (VALIDATE_HUMAN_CLINICAL_EXPOSUREELEMENT_ORDER_ASSOCIATIONELEMENT_ORDER_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(SdtmPackage.Literals.HUMAN_CLINICAL_EXPOSURE);
@@ -2111,6 +2883,7 @@ public class HumanClinicalExposureOperations extends SubstanceAdministrationOper
              org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "HumanClinicalExposureelementOrderAssociationelementOrderMoodCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(humanClinicalExposure, context) }),
              new Object [] { humanClinicalExposure }));
       }
+       
       return false;
     }
     return true;
@@ -2142,7 +2915,6 @@ public class HumanClinicalExposureOperations extends SubstanceAdministrationOper
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.entryRelationship->excluding(null).observation->excluding(null)->reject((value->isEmpty() or value->exists(element | element.isNullFlavorUndefined())) implies (value->forAll(element | element.oclIsTypeOf(datatypes::INT))))
    * @param humanClinicalExposure The receiving '<em><b>Human Clinical Exposure</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -2152,6 +2924,7 @@ public class HumanClinicalExposureOperations extends SubstanceAdministrationOper
   
   public static  boolean validateHumanClinicalExposureelementOrderAssociationelementOrderValue(HumanClinicalExposure humanClinicalExposure, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
+  	  
     if (VALIDATE_HUMAN_CLINICAL_EXPOSUREELEMENT_ORDER_ASSOCIATIONELEMENT_ORDER_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(SdtmPackage.Literals.HUMAN_CLINICAL_EXPOSURE);
@@ -2176,6 +2949,7 @@ public class HumanClinicalExposureOperations extends SubstanceAdministrationOper
              org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "HumanClinicalExposureelementOrderAssociationelementOrderValue", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(humanClinicalExposure, context) }),
              new Object [] { humanClinicalExposure }));
       }
+       
       return false;
     }
     return true;
@@ -2207,7 +2981,6 @@ public class HumanClinicalExposureOperations extends SubstanceAdministrationOper
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.entryRelationship->excluding(null)->reject(typeCode=vocab::x_ActRelationshipEntryRelationship::COMP)
    * @param humanClinicalExposure The receiving '<em><b>Human Clinical Exposure</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -2217,6 +2990,7 @@ public class HumanClinicalExposureOperations extends SubstanceAdministrationOper
   
   public static  boolean validateHumanClinicalExposureelementOrderAssociationTypeCode(HumanClinicalExposure humanClinicalExposure, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
+  	  
     if (VALIDATE_HUMAN_CLINICAL_EXPOSUREELEMENT_ORDER_ASSOCIATION_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(SdtmPackage.Literals.HUMAN_CLINICAL_EXPOSURE);
@@ -2241,6 +3015,7 @@ public class HumanClinicalExposureOperations extends SubstanceAdministrationOper
              org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "HumanClinicalExposureelementOrderAssociationTypeCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(humanClinicalExposure, context) }),
              new Object [] { humanClinicalExposure }));
       }
+       
       return false;
     }
     return true;
@@ -2272,7 +3047,6 @@ public class HumanClinicalExposureOperations extends SubstanceAdministrationOper
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.entryRelationship->excluding(null)->reject(observation->one(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(cda::Observation)))
    * @param humanClinicalExposure The receiving '<em><b>Human Clinical Exposure</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -2282,6 +3056,7 @@ public class HumanClinicalExposureOperations extends SubstanceAdministrationOper
   
   public static  boolean validateHumanClinicalExposureelementOrderAssociationElementOrder(HumanClinicalExposure humanClinicalExposure, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
+  	  
     if (VALIDATE_HUMAN_CLINICAL_EXPOSUREELEMENT_ORDER_ASSOCIATION_ELEMENT_ORDER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(SdtmPackage.Literals.HUMAN_CLINICAL_EXPOSURE);
@@ -2306,6 +3081,403 @@ public class HumanClinicalExposureOperations extends SubstanceAdministrationOper
              org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "HumanClinicalExposureelementOrderAssociationElementOrder", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(humanClinicalExposure, context) }),
              new Object [] { humanClinicalExposure }));
       }
+       
+      return false;
+    }
+    return true;
+  }
+
+  /**
+   * The cached OCL expression body for the '{@link #validateHumanClinicalExposureexposureRegimenAssociationexposureIntendedRegimenClassCode(HumanClinicalExposure, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Human Clinical Exposureexposure Regimen Associationexposure Intended Regimen Class Code</em>}' operation.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #validateHumanClinicalExposureexposureRegimenAssociationexposureIntendedRegimenClassCode(HumanClinicalExposure, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+   * @generated
+   * @ordered
+   */
+  protected static final String VALIDATE_HUMAN_CLINICAL_EXPOSUREEXPOSURE_REGIMEN_ASSOCIATIONEXPOSURE_INTENDED_REGIMEN_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entryRelationship->excluding(null).observation->excluding(null)->reject(classCode=vocab::ActClassObservation::OBS)";
+
+  /**
+   * The cached OCL invariant for the '{@link #validateHumanClinicalExposureexposureRegimenAssociationexposureIntendedRegimenClassCode(HumanClinicalExposure, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Human Clinical Exposureexposure Regimen Associationexposure Intended Regimen Class Code</em>}' invariant operation.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #validateHumanClinicalExposureexposureRegimenAssociationexposureIntendedRegimenClassCode(HumanClinicalExposure, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+   * @generated
+   * @ordered
+   */
+  
+  protected static Constraint VALIDATE_HUMAN_CLINICAL_EXPOSUREEXPOSURE_REGIMEN_ASSOCIATIONEXPOSURE_INTENDED_REGIMEN_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * <!-- begin-model-doc -->
+   * @param humanClinicalExposure The receiving '<em><b>Human Clinical Exposure</b></em>' model object.
+   * @param diagnostics The chain of diagnostics to which problems are to be appended.
+   * @param context The cache of context-specific information.
+   * <!-- end-model-doc -->
+   * @generated
+   */
+  
+  public static  boolean validateHumanClinicalExposureexposureRegimenAssociationexposureIntendedRegimenClassCode(HumanClinicalExposure humanClinicalExposure, DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+  	  
+    if (VALIDATE_HUMAN_CLINICAL_EXPOSUREEXPOSURE_REGIMEN_ASSOCIATIONEXPOSURE_INTENDED_REGIMEN_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+      OCL.Helper helper = EOCL_ENV.createOCLHelper();
+      helper.setContext(SdtmPackage.Literals.HUMAN_CLINICAL_EXPOSURE);
+      try
+      {
+        VALIDATE_HUMAN_CLINICAL_EXPOSUREEXPOSURE_REGIMEN_ASSOCIATIONEXPOSURE_INTENDED_REGIMEN_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_HUMAN_CLINICAL_EXPOSUREEXPOSURE_REGIMEN_ASSOCIATIONEXPOSURE_INTENDED_REGIMEN_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+      }
+      catch (ParserException pe)
+      {
+        throw new UnsupportedOperationException(pe.getLocalizedMessage());
+      }
+    }
+    if (!EOCL_ENV.createQuery(VALIDATE_HUMAN_CLINICAL_EXPOSUREEXPOSURE_REGIMEN_ASSOCIATIONEXPOSURE_INTENDED_REGIMEN_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(humanClinicalExposure))
+    {
+      if (diagnostics != null)
+      {
+        diagnostics.add
+          (new BasicDiagnostic
+            (Diagnostic.ERROR,
+             SdtmValidator.DIAGNOSTIC_SOURCE,
+             SdtmValidator.HUMAN_CLINICAL_EXPOSURE__HUMAN_CLINICAL_EXPOSUREEXPOSURE_REGIMEN_ASSOCIATIONEXPOSURE_INTENDED_REGIMEN_CLASS_CODE,
+             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "HumanClinicalExposureexposureRegimenAssociationexposureIntendedRegimenClassCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(humanClinicalExposure, context) }),
+             new Object [] { humanClinicalExposure }));
+      }
+       
+      return false;
+    }
+    return true;
+  }
+
+  /**
+   * The cached OCL expression body for the '{@link #validateHumanClinicalExposureexposureRegimenAssociationexposureIntendedRegimenMoodCode(HumanClinicalExposure, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Human Clinical Exposureexposure Regimen Associationexposure Intended Regimen Mood Code</em>}' operation.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #validateHumanClinicalExposureexposureRegimenAssociationexposureIntendedRegimenMoodCode(HumanClinicalExposure, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+   * @generated
+   * @ordered
+   */
+  protected static final String VALIDATE_HUMAN_CLINICAL_EXPOSUREEXPOSURE_REGIMEN_ASSOCIATIONEXPOSURE_INTENDED_REGIMEN_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entryRelationship->excluding(null).observation->excluding(null)->reject(moodCode=vocab::x_ActMoodDocumentObservation::EVN)";
+
+  /**
+   * The cached OCL invariant for the '{@link #validateHumanClinicalExposureexposureRegimenAssociationexposureIntendedRegimenMoodCode(HumanClinicalExposure, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Human Clinical Exposureexposure Regimen Associationexposure Intended Regimen Mood Code</em>}' invariant operation.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #validateHumanClinicalExposureexposureRegimenAssociationexposureIntendedRegimenMoodCode(HumanClinicalExposure, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+   * @generated
+   * @ordered
+   */
+  
+  protected static Constraint VALIDATE_HUMAN_CLINICAL_EXPOSUREEXPOSURE_REGIMEN_ASSOCIATIONEXPOSURE_INTENDED_REGIMEN_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * <!-- begin-model-doc -->
+   * @param humanClinicalExposure The receiving '<em><b>Human Clinical Exposure</b></em>' model object.
+   * @param diagnostics The chain of diagnostics to which problems are to be appended.
+   * @param context The cache of context-specific information.
+   * <!-- end-model-doc -->
+   * @generated
+   */
+  
+  public static  boolean validateHumanClinicalExposureexposureRegimenAssociationexposureIntendedRegimenMoodCode(HumanClinicalExposure humanClinicalExposure, DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+  	  
+    if (VALIDATE_HUMAN_CLINICAL_EXPOSUREEXPOSURE_REGIMEN_ASSOCIATIONEXPOSURE_INTENDED_REGIMEN_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+      OCL.Helper helper = EOCL_ENV.createOCLHelper();
+      helper.setContext(SdtmPackage.Literals.HUMAN_CLINICAL_EXPOSURE);
+      try
+      {
+        VALIDATE_HUMAN_CLINICAL_EXPOSUREEXPOSURE_REGIMEN_ASSOCIATIONEXPOSURE_INTENDED_REGIMEN_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_HUMAN_CLINICAL_EXPOSUREEXPOSURE_REGIMEN_ASSOCIATIONEXPOSURE_INTENDED_REGIMEN_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+      }
+      catch (ParserException pe)
+      {
+        throw new UnsupportedOperationException(pe.getLocalizedMessage());
+      }
+    }
+    if (!EOCL_ENV.createQuery(VALIDATE_HUMAN_CLINICAL_EXPOSUREEXPOSURE_REGIMEN_ASSOCIATIONEXPOSURE_INTENDED_REGIMEN_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(humanClinicalExposure))
+    {
+      if (diagnostics != null)
+      {
+        diagnostics.add
+          (new BasicDiagnostic
+            (Diagnostic.ERROR,
+             SdtmValidator.DIAGNOSTIC_SOURCE,
+             SdtmValidator.HUMAN_CLINICAL_EXPOSURE__HUMAN_CLINICAL_EXPOSUREEXPOSURE_REGIMEN_ASSOCIATIONEXPOSURE_INTENDED_REGIMEN_MOOD_CODE,
+             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "HumanClinicalExposureexposureRegimenAssociationexposureIntendedRegimenMoodCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(humanClinicalExposure, context) }),
+             new Object [] { humanClinicalExposure }));
+      }
+       
+      return false;
+    }
+    return true;
+  }
+
+  /**
+   * The cached OCL expression body for the '{@link #validateHumanClinicalExposureexposureRegimenAssociationexposureIntendedRegimenCode(HumanClinicalExposure, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Human Clinical Exposureexposure Regimen Associationexposure Intended Regimen Code</em>}' operation.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #validateHumanClinicalExposureexposureRegimenAssociationexposureIntendedRegimenCode(HumanClinicalExposure, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+   * @generated
+   * @ordered
+   */
+  protected static final String VALIDATE_HUMAN_CLINICAL_EXPOSUREEXPOSURE_REGIMEN_ASSOCIATIONEXPOSURE_INTENDED_REGIMEN_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entryRelationship->excluding(null).observation->excluding(null)->reject((code.oclIsUndefined() or code.isNullFlavorUndefined()) implies (not code.oclIsUndefined()))";
+
+  /**
+   * The cached OCL invariant for the '{@link #validateHumanClinicalExposureexposureRegimenAssociationexposureIntendedRegimenCode(HumanClinicalExposure, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Human Clinical Exposureexposure Regimen Associationexposure Intended Regimen Code</em>}' invariant operation.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #validateHumanClinicalExposureexposureRegimenAssociationexposureIntendedRegimenCode(HumanClinicalExposure, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+   * @generated
+   * @ordered
+   */
+  
+  protected static Constraint VALIDATE_HUMAN_CLINICAL_EXPOSUREEXPOSURE_REGIMEN_ASSOCIATIONEXPOSURE_INTENDED_REGIMEN_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * <!-- begin-model-doc -->
+   * @param humanClinicalExposure The receiving '<em><b>Human Clinical Exposure</b></em>' model object.
+   * @param diagnostics The chain of diagnostics to which problems are to be appended.
+   * @param context The cache of context-specific information.
+   * <!-- end-model-doc -->
+   * @generated
+   */
+  
+  public static  boolean validateHumanClinicalExposureexposureRegimenAssociationexposureIntendedRegimenCode(HumanClinicalExposure humanClinicalExposure, DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+  	  
+    if (VALIDATE_HUMAN_CLINICAL_EXPOSUREEXPOSURE_REGIMEN_ASSOCIATIONEXPOSURE_INTENDED_REGIMEN_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+      OCL.Helper helper = EOCL_ENV.createOCLHelper();
+      helper.setContext(SdtmPackage.Literals.HUMAN_CLINICAL_EXPOSURE);
+      try
+      {
+        VALIDATE_HUMAN_CLINICAL_EXPOSUREEXPOSURE_REGIMEN_ASSOCIATIONEXPOSURE_INTENDED_REGIMEN_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_HUMAN_CLINICAL_EXPOSUREEXPOSURE_REGIMEN_ASSOCIATIONEXPOSURE_INTENDED_REGIMEN_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+      }
+      catch (ParserException pe)
+      {
+        throw new UnsupportedOperationException(pe.getLocalizedMessage());
+      }
+    }
+    if (!EOCL_ENV.createQuery(VALIDATE_HUMAN_CLINICAL_EXPOSUREEXPOSURE_REGIMEN_ASSOCIATIONEXPOSURE_INTENDED_REGIMEN_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(humanClinicalExposure))
+    {
+      if (diagnostics != null)
+      {
+        diagnostics.add
+          (new BasicDiagnostic
+            (Diagnostic.ERROR,
+             SdtmValidator.DIAGNOSTIC_SOURCE,
+             SdtmValidator.HUMAN_CLINICAL_EXPOSURE__HUMAN_CLINICAL_EXPOSUREEXPOSURE_REGIMEN_ASSOCIATIONEXPOSURE_INTENDED_REGIMEN_CODE,
+             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "HumanClinicalExposureexposureRegimenAssociationexposureIntendedRegimenCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(humanClinicalExposure, context) }),
+             new Object [] { humanClinicalExposure }));
+      }
+       
+      return false;
+    }
+    return true;
+  }
+
+  /**
+   * The cached OCL expression body for the '{@link #validateHumanClinicalExposureexposureRegimenAssociationexposureIntendedRegimenValue(HumanClinicalExposure, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Human Clinical Exposureexposure Regimen Associationexposure Intended Regimen Value</em>}' operation.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #validateHumanClinicalExposureexposureRegimenAssociationexposureIntendedRegimenValue(HumanClinicalExposure, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+   * @generated
+   * @ordered
+   */
+  protected static final String VALIDATE_HUMAN_CLINICAL_EXPOSUREEXPOSURE_REGIMEN_ASSOCIATIONEXPOSURE_INTENDED_REGIMEN_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entryRelationship->excluding(null).observation->excluding(null)->reject((value->isEmpty() or value->exists(element | element.isNullFlavorUndefined())) implies (value->size() = 1 and value->forAll(element | element.oclIsTypeOf(datatypes::ED))))";
+
+  /**
+   * The cached OCL invariant for the '{@link #validateHumanClinicalExposureexposureRegimenAssociationexposureIntendedRegimenValue(HumanClinicalExposure, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Human Clinical Exposureexposure Regimen Associationexposure Intended Regimen Value</em>}' invariant operation.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #validateHumanClinicalExposureexposureRegimenAssociationexposureIntendedRegimenValue(HumanClinicalExposure, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+   * @generated
+   * @ordered
+   */
+  
+  protected static Constraint VALIDATE_HUMAN_CLINICAL_EXPOSUREEXPOSURE_REGIMEN_ASSOCIATIONEXPOSURE_INTENDED_REGIMEN_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * <!-- begin-model-doc -->
+   * @param humanClinicalExposure The receiving '<em><b>Human Clinical Exposure</b></em>' model object.
+   * @param diagnostics The chain of diagnostics to which problems are to be appended.
+   * @param context The cache of context-specific information.
+   * <!-- end-model-doc -->
+   * @generated
+   */
+  
+  public static  boolean validateHumanClinicalExposureexposureRegimenAssociationexposureIntendedRegimenValue(HumanClinicalExposure humanClinicalExposure, DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+  	  
+    if (VALIDATE_HUMAN_CLINICAL_EXPOSUREEXPOSURE_REGIMEN_ASSOCIATIONEXPOSURE_INTENDED_REGIMEN_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+      OCL.Helper helper = EOCL_ENV.createOCLHelper();
+      helper.setContext(SdtmPackage.Literals.HUMAN_CLINICAL_EXPOSURE);
+      try
+      {
+        VALIDATE_HUMAN_CLINICAL_EXPOSUREEXPOSURE_REGIMEN_ASSOCIATIONEXPOSURE_INTENDED_REGIMEN_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_HUMAN_CLINICAL_EXPOSUREEXPOSURE_REGIMEN_ASSOCIATIONEXPOSURE_INTENDED_REGIMEN_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+      }
+      catch (ParserException pe)
+      {
+        throw new UnsupportedOperationException(pe.getLocalizedMessage());
+      }
+    }
+    if (!EOCL_ENV.createQuery(VALIDATE_HUMAN_CLINICAL_EXPOSUREEXPOSURE_REGIMEN_ASSOCIATIONEXPOSURE_INTENDED_REGIMEN_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(humanClinicalExposure))
+    {
+      if (diagnostics != null)
+      {
+        diagnostics.add
+          (new BasicDiagnostic
+            (Diagnostic.ERROR,
+             SdtmValidator.DIAGNOSTIC_SOURCE,
+             SdtmValidator.HUMAN_CLINICAL_EXPOSURE__HUMAN_CLINICAL_EXPOSUREEXPOSURE_REGIMEN_ASSOCIATIONEXPOSURE_INTENDED_REGIMEN_VALUE,
+             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "HumanClinicalExposureexposureRegimenAssociationexposureIntendedRegimenValue", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(humanClinicalExposure, context) }),
+             new Object [] { humanClinicalExposure }));
+      }
+       
+      return false;
+    }
+    return true;
+  }
+
+  /**
+   * The cached OCL expression body for the '{@link #validateHumanClinicalExposureexposureRegimenAssociationTypeCode(HumanClinicalExposure, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Human Clinical Exposureexposure Regimen Association Type Code</em>}' operation.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #validateHumanClinicalExposureexposureRegimenAssociationTypeCode(HumanClinicalExposure, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+   * @generated
+   * @ordered
+   */
+  protected static final String VALIDATE_HUMAN_CLINICAL_EXPOSUREEXPOSURE_REGIMEN_ASSOCIATION_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entryRelationship->excluding(null)->reject(typeCode=vocab::x_ActRelationshipEntryRelationship::CAUS)";
+
+  /**
+   * The cached OCL invariant for the '{@link #validateHumanClinicalExposureexposureRegimenAssociationTypeCode(HumanClinicalExposure, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Human Clinical Exposureexposure Regimen Association Type Code</em>}' invariant operation.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #validateHumanClinicalExposureexposureRegimenAssociationTypeCode(HumanClinicalExposure, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+   * @generated
+   * @ordered
+   */
+  
+  protected static Constraint VALIDATE_HUMAN_CLINICAL_EXPOSUREEXPOSURE_REGIMEN_ASSOCIATION_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * <!-- begin-model-doc -->
+   * @param humanClinicalExposure The receiving '<em><b>Human Clinical Exposure</b></em>' model object.
+   * @param diagnostics The chain of diagnostics to which problems are to be appended.
+   * @param context The cache of context-specific information.
+   * <!-- end-model-doc -->
+   * @generated
+   */
+  
+  public static  boolean validateHumanClinicalExposureexposureRegimenAssociationTypeCode(HumanClinicalExposure humanClinicalExposure, DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+  	  
+    if (VALIDATE_HUMAN_CLINICAL_EXPOSUREEXPOSURE_REGIMEN_ASSOCIATION_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+      OCL.Helper helper = EOCL_ENV.createOCLHelper();
+      helper.setContext(SdtmPackage.Literals.HUMAN_CLINICAL_EXPOSURE);
+      try
+      {
+        VALIDATE_HUMAN_CLINICAL_EXPOSUREEXPOSURE_REGIMEN_ASSOCIATION_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_HUMAN_CLINICAL_EXPOSUREEXPOSURE_REGIMEN_ASSOCIATION_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+      }
+      catch (ParserException pe)
+      {
+        throw new UnsupportedOperationException(pe.getLocalizedMessage());
+      }
+    }
+    if (!EOCL_ENV.createQuery(VALIDATE_HUMAN_CLINICAL_EXPOSUREEXPOSURE_REGIMEN_ASSOCIATION_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(humanClinicalExposure))
+    {
+      if (diagnostics != null)
+      {
+        diagnostics.add
+          (new BasicDiagnostic
+            (Diagnostic.ERROR,
+             SdtmValidator.DIAGNOSTIC_SOURCE,
+             SdtmValidator.HUMAN_CLINICAL_EXPOSURE__HUMAN_CLINICAL_EXPOSUREEXPOSURE_REGIMEN_ASSOCIATION_TYPE_CODE,
+             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "HumanClinicalExposureexposureRegimenAssociationTypeCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(humanClinicalExposure, context) }),
+             new Object [] { humanClinicalExposure }));
+      }
+       
+      return false;
+    }
+    return true;
+  }
+
+  /**
+   * The cached OCL expression body for the '{@link #validateHumanClinicalExposureexposureRegimenAssociationExposureIntendedRegimen(HumanClinicalExposure, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Human Clinical Exposureexposure Regimen Association Exposure Intended Regimen</em>}' operation.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #validateHumanClinicalExposureexposureRegimenAssociationExposureIntendedRegimen(HumanClinicalExposure, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+   * @generated
+   * @ordered
+   */
+  protected static final String VALIDATE_HUMAN_CLINICAL_EXPOSUREEXPOSURE_REGIMEN_ASSOCIATION_EXPOSURE_INTENDED_REGIMEN__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entryRelationship->excluding(null)->reject(observation->one(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(cda::Observation)))";
+
+  /**
+   * The cached OCL invariant for the '{@link #validateHumanClinicalExposureexposureRegimenAssociationExposureIntendedRegimen(HumanClinicalExposure, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Human Clinical Exposureexposure Regimen Association Exposure Intended Regimen</em>}' invariant operation.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #validateHumanClinicalExposureexposureRegimenAssociationExposureIntendedRegimen(HumanClinicalExposure, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+   * @generated
+   * @ordered
+   */
+  
+  protected static Constraint VALIDATE_HUMAN_CLINICAL_EXPOSUREEXPOSURE_REGIMEN_ASSOCIATION_EXPOSURE_INTENDED_REGIMEN__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * <!-- begin-model-doc -->
+   * @param humanClinicalExposure The receiving '<em><b>Human Clinical Exposure</b></em>' model object.
+   * @param diagnostics The chain of diagnostics to which problems are to be appended.
+   * @param context The cache of context-specific information.
+   * <!-- end-model-doc -->
+   * @generated
+   */
+  
+  public static  boolean validateHumanClinicalExposureexposureRegimenAssociationExposureIntendedRegimen(HumanClinicalExposure humanClinicalExposure, DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+  	  
+    if (VALIDATE_HUMAN_CLINICAL_EXPOSUREEXPOSURE_REGIMEN_ASSOCIATION_EXPOSURE_INTENDED_REGIMEN__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+      OCL.Helper helper = EOCL_ENV.createOCLHelper();
+      helper.setContext(SdtmPackage.Literals.HUMAN_CLINICAL_EXPOSURE);
+      try
+      {
+        VALIDATE_HUMAN_CLINICAL_EXPOSUREEXPOSURE_REGIMEN_ASSOCIATION_EXPOSURE_INTENDED_REGIMEN__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_HUMAN_CLINICAL_EXPOSUREEXPOSURE_REGIMEN_ASSOCIATION_EXPOSURE_INTENDED_REGIMEN__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+      }
+      catch (ParserException pe)
+      {
+        throw new UnsupportedOperationException(pe.getLocalizedMessage());
+      }
+    }
+    if (!EOCL_ENV.createQuery(VALIDATE_HUMAN_CLINICAL_EXPOSUREEXPOSURE_REGIMEN_ASSOCIATION_EXPOSURE_INTENDED_REGIMEN__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(humanClinicalExposure))
+    {
+      if (diagnostics != null)
+      {
+        diagnostics.add
+          (new BasicDiagnostic
+            (Diagnostic.ERROR,
+             SdtmValidator.DIAGNOSTIC_SOURCE,
+             SdtmValidator.HUMAN_CLINICAL_EXPOSURE__HUMAN_CLINICAL_EXPOSUREEXPOSURE_REGIMEN_ASSOCIATION_EXPOSURE_INTENDED_REGIMEN,
+             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "HumanClinicalExposureexposureRegimenAssociationExposureIntendedRegimen", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(humanClinicalExposure, context) }),
+             new Object [] { humanClinicalExposure }));
+      }
+       
       return false;
     }
     return true;
@@ -2319,7 +3491,7 @@ public class HumanClinicalExposureOperations extends SubstanceAdministrationOper
    * @generated
    * @ordered
    */
-  protected static final String GET_GROUP_IDENTIFIER__EOCL_EXP = "self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(sdtm::Group Identifier))->asSequence()->first().oclAsType(sdtm::Group Identifier)";
+  protected static final String GET_GROUP_IDENTIFIER__EOCL_EXP = "self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(sdtm::Group Identifier))->asSequence()->any(true).oclAsType(sdtm::Group Identifier)";
 
   /**
    * The cached OCL query for the '{@link #getGroupIdentifier(HumanClinicalExposure) <em>Get Group Identifier</em>}' query operation.
@@ -2334,10 +3506,6 @@ public class HumanClinicalExposureOperations extends SubstanceAdministrationOper
   /**
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * <!-- begin-model-doc -->
-   * self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(sdtm::Group Identifier))->asSequence()->first().oclAsType(sdtm::Group Identifier)
-   * @param humanClinicalExposure The receiving '<em><b>Human Clinical Exposure</b></em>' model object.
-   * <!-- end-model-doc -->
    * @generated
    */
   
@@ -2346,7 +3514,7 @@ public class HumanClinicalExposureOperations extends SubstanceAdministrationOper
     if (GET_GROUP_IDENTIFIER__EOCL_QRY == null)
     {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
-      helper.setOperationContext(SdtmPackage.Literals.HUMAN_CLINICAL_EXPOSURE, SdtmPackage.Literals.HUMAN_CLINICAL_EXPOSURE.getEAllOperations().get(84));
+      helper.setOperationContext(SdtmPackage.Literals.HUMAN_CLINICAL_EXPOSURE, SdtmPackage.Literals.HUMAN_CLINICAL_EXPOSURE.getEAllOperations().get(103));
       try
       {
         GET_GROUP_IDENTIFIER__EOCL_QRY = helper.createQuery(GET_GROUP_IDENTIFIER__EOCL_EXP);
@@ -2361,55 +3529,6 @@ public class HumanClinicalExposureOperations extends SubstanceAdministrationOper
   }
 
   /**
-   * The cached OCL expression body for the '{@link #getExposureIndication(HumanClinicalExposure) <em>Get Exposure Indication</em>}' operation.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @see #getExposureIndication(HumanClinicalExposure)
-   * @generated
-   * @ordered
-   */
-  protected static final String GET_EXPOSURE_INDICATION__EOCL_EXP = "self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(cda::Observation))->asSequence()->first().oclAsType(cda::Observation)";
-
-  /**
-   * The cached OCL query for the '{@link #getExposureIndication(HumanClinicalExposure) <em>Get Exposure Indication</em>}' query operation.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @see #getExposureIndication(HumanClinicalExposure)
-   * @generated
-   * @ordered
-   */
-  protected static OCLExpression<EClassifier> GET_EXPOSURE_INDICATION__EOCL_QRY;
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * <!-- begin-model-doc -->
-   * self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(cda::Observation))->asSequence()->first().oclAsType(cda::Observation)
-   * @param humanClinicalExposure The receiving '<em><b>Human Clinical Exposure</b></em>' model object.
-   * <!-- end-model-doc -->
-   * @generated
-   */
-  
-  public static  Observation getExposureIndication(HumanClinicalExposure humanClinicalExposure)
-  {
-    if (GET_EXPOSURE_INDICATION__EOCL_QRY == null)
-    {
-      OCL.Helper helper = EOCL_ENV.createOCLHelper();
-      helper.setOperationContext(SdtmPackage.Literals.HUMAN_CLINICAL_EXPOSURE, SdtmPackage.Literals.HUMAN_CLINICAL_EXPOSURE.getEAllOperations().get(85));
-      try
-      {
-        GET_EXPOSURE_INDICATION__EOCL_QRY = helper.createQuery(GET_EXPOSURE_INDICATION__EOCL_EXP);
-      }
-      catch (ParserException pe)
-      {
-        throw new UnsupportedOperationException(pe.getLocalizedMessage());
-      }
-    }
-    OCL.Query query = EOCL_ENV.createQuery(GET_EXPOSURE_INDICATION__EOCL_QRY);
-    return (Observation) query.evaluate(humanClinicalExposure);
-  }
-
-  /**
    * The cached OCL expression body for the '{@link #getStudyEpoch(HumanClinicalExposure) <em>Get Study Epoch</em>}' operation.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
@@ -2417,7 +3536,7 @@ public class HumanClinicalExposureOperations extends SubstanceAdministrationOper
    * @generated
    * @ordered
    */
-  protected static final String GET_STUDY_EPOCH__EOCL_EXP = "self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(sdtm::Study Epoch))->asSequence()->first().oclAsType(sdtm::Study Epoch)";
+  protected static final String GET_STUDY_EPOCH__EOCL_EXP = "self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(sdtm::Study Epoch))->asSequence()->any(true).oclAsType(sdtm::Study Epoch)";
 
   /**
    * The cached OCL query for the '{@link #getStudyEpoch(HumanClinicalExposure) <em>Get Study Epoch</em>}' query operation.
@@ -2432,10 +3551,6 @@ public class HumanClinicalExposureOperations extends SubstanceAdministrationOper
   /**
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * <!-- begin-model-doc -->
-   * self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(sdtm::Study Epoch))->asSequence()->first().oclAsType(sdtm::Study Epoch)
-   * @param humanClinicalExposure The receiving '<em><b>Human Clinical Exposure</b></em>' model object.
-   * <!-- end-model-doc -->
    * @generated
    */
   
@@ -2444,7 +3559,7 @@ public class HumanClinicalExposureOperations extends SubstanceAdministrationOper
     if (GET_STUDY_EPOCH__EOCL_QRY == null)
     {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
-      helper.setOperationContext(SdtmPackage.Literals.HUMAN_CLINICAL_EXPOSURE, SdtmPackage.Literals.HUMAN_CLINICAL_EXPOSURE.getEAllOperations().get(86));
+      helper.setOperationContext(SdtmPackage.Literals.HUMAN_CLINICAL_EXPOSURE, SdtmPackage.Literals.HUMAN_CLINICAL_EXPOSURE.getEAllOperations().get(104));
       try
       {
         GET_STUDY_EPOCH__EOCL_QRY = helper.createQuery(GET_STUDY_EPOCH__EOCL_EXP);
@@ -2466,7 +3581,7 @@ public class HumanClinicalExposureOperations extends SubstanceAdministrationOper
    * @generated
    * @ordered
    */
-  protected static final String GET_TIMING_REFERENCE__EOCL_EXP = "self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(sdtm::Timing Reference))->asSequence()->first().oclAsType(sdtm::Timing Reference)";
+  protected static final String GET_TIMING_REFERENCE__EOCL_EXP = "self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(sdtm::Timing Reference))->asSequence()->any(true).oclAsType(sdtm::Timing Reference)";
 
   /**
    * The cached OCL query for the '{@link #getTimingReference(HumanClinicalExposure) <em>Get Timing Reference</em>}' query operation.
@@ -2481,10 +3596,6 @@ public class HumanClinicalExposureOperations extends SubstanceAdministrationOper
   /**
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * <!-- begin-model-doc -->
-   * self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(sdtm::Timing Reference))->asSequence()->first().oclAsType(sdtm::Timing Reference)
-   * @param humanClinicalExposure The receiving '<em><b>Human Clinical Exposure</b></em>' model object.
-   * <!-- end-model-doc -->
    * @generated
    */
   
@@ -2493,7 +3604,7 @@ public class HumanClinicalExposureOperations extends SubstanceAdministrationOper
     if (GET_TIMING_REFERENCE__EOCL_QRY == null)
     {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
-      helper.setOperationContext(SdtmPackage.Literals.HUMAN_CLINICAL_EXPOSURE, SdtmPackage.Literals.HUMAN_CLINICAL_EXPOSURE.getEAllOperations().get(87));
+      helper.setOperationContext(SdtmPackage.Literals.HUMAN_CLINICAL_EXPOSURE, SdtmPackage.Literals.HUMAN_CLINICAL_EXPOSURE.getEAllOperations().get(105));
       try
       {
         GET_TIMING_REFERENCE__EOCL_QRY = helper.createQuery(GET_TIMING_REFERENCE__EOCL_EXP);
@@ -2515,7 +3626,7 @@ public class HumanClinicalExposureOperations extends SubstanceAdministrationOper
    * @generated
    * @ordered
    */
-  protected static final String GET_STUDY_DAY_PERIOD__EOCL_EXP = "self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(sdtm::Study Day Period))->asSequence()->first().oclAsType(sdtm::Study Day Period)";
+  protected static final String GET_STUDY_DAY_PERIOD__EOCL_EXP = "self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(sdtm::Study Day Period))->asSequence()->any(true).oclAsType(sdtm::Study Day Period)";
 
   /**
    * The cached OCL query for the '{@link #getStudyDayPeriod(HumanClinicalExposure) <em>Get Study Day Period</em>}' query operation.
@@ -2530,10 +3641,6 @@ public class HumanClinicalExposureOperations extends SubstanceAdministrationOper
   /**
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * <!-- begin-model-doc -->
-   * self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(sdtm::Study Day Period))->asSequence()->first().oclAsType(sdtm::Study Day Period)
-   * @param humanClinicalExposure The receiving '<em><b>Human Clinical Exposure</b></em>' model object.
-   * <!-- end-model-doc -->
    * @generated
    */
   
@@ -2542,7 +3649,7 @@ public class HumanClinicalExposureOperations extends SubstanceAdministrationOper
     if (GET_STUDY_DAY_PERIOD__EOCL_QRY == null)
     {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
-      helper.setOperationContext(SdtmPackage.Literals.HUMAN_CLINICAL_EXPOSURE, SdtmPackage.Literals.HUMAN_CLINICAL_EXPOSURE.getEAllOperations().get(88));
+      helper.setOperationContext(SdtmPackage.Literals.HUMAN_CLINICAL_EXPOSURE, SdtmPackage.Literals.HUMAN_CLINICAL_EXPOSURE.getEAllOperations().get(106));
       try
       {
         GET_STUDY_DAY_PERIOD__EOCL_QRY = helper.createQuery(GET_STUDY_DAY_PERIOD__EOCL_EXP);

@@ -56,126 +56,136 @@ import org.openhealthtools.mdht.uml.cda.phmr.util.PhmrValidator;
  */
 public class ParticipantRoleOperations extends org.openhealthtools.mdht.uml.cda.operations.ParticipantRoleOperations {
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	protected ParticipantRoleOperations() {
-		super();
-	}
+    super();
+  }
 
 	/**
-	 * The cached OCL expression body for the '{@link #validatePhmrParticipantRoleTemplateId(ParticipantRole, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Phmr Participant Role Template Id</em>}' operation.
-	 * <!-- begin-user-doc -->
+   * The cached OCL expression body for the '{@link #validatePhmrParticipantRoleTemplateId(ParticipantRole, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Phmr Participant Role Template Id</em>}' operation.
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validatePhmrParticipantRoleTemplateId(ParticipantRole, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
+   * @see #validatePhmrParticipantRoleTemplateId(ParticipantRole, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+   * @generated
+   * @ordered
+   */
 	protected static final String VALIDATE_PHMR_PARTICIPANT_ROLE_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.templateId->exists(id : datatypes::II | id.root = 'null')";
 
 	/**
-	 * The cached OCL invariant for the '{@link #validatePhmrParticipantRoleTemplateId(ParticipantRole, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Phmr Participant Role Template Id</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
+   * The cached OCL invariant for the '{@link #validatePhmrParticipantRoleTemplateId(ParticipantRole, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Phmr Participant Role Template Id</em>}' invariant operation.
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validatePhmrParticipantRoleTemplateId(ParticipantRole, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
+   * @see #validatePhmrParticipantRoleTemplateId(ParticipantRole, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+   * @generated
+   * @ordered
+   */
 	protected static Constraint VALIDATE_PHMR_PARTICIPANT_ROLE_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.templateId->exists(id : datatypes::II | id.root = 'null')
-	 * @param participantRole The receiving '<em><b>Participant Role</b></em>' model object.
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
+   * <!-- begin-model-doc -->
+   * @param participantRole The receiving '<em><b>Participant Role</b></em>' model object.
+   * @param diagnostics The chain of diagnostics to which problems are to be appended.
+   * @param context The cache of context-specific information.
+   * <!-- end-model-doc -->
+   * @generated
+   */
 	public static  boolean validatePhmrParticipantRoleTemplateId(ParticipantRole participantRole, DiagnosticChain diagnostics, Map<Object, Object> context) {
-		if (VALIDATE_PHMR_PARTICIPANT_ROLE_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setContext(PhmrPackage.Literals.PARTICIPANT_ROLE);
-			try {
-				VALIDATE_PHMR_PARTICIPANT_ROLE_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PHMR_PARTICIPANT_ROLE_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
-				throw new UnsupportedOperationException(pe.getLocalizedMessage());
-			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PHMR_PARTICIPANT_ROLE_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(participantRole)) {
-			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 PhmrValidator.DIAGNOSTIC_SOURCE,
-						 PhmrValidator.PARTICIPANT_ROLE__PHMR_PARTICIPANT_ROLE_TEMPLATE_ID,
-						 PhmrPlugin.INSTANCE.getString("PhmrParticipantRoleTemplateId"),
-						 new Object [] { participantRole }));
-			}
-			return false;
-		}
-		return true;
-	}
+  	  
+    if (VALIDATE_PHMR_PARTICIPANT_ROLE_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+      OCL.Helper helper = EOCL_ENV.createOCLHelper();
+      helper.setContext(PhmrPackage.Literals.PARTICIPANT_ROLE);
+      try
+      {
+        VALIDATE_PHMR_PARTICIPANT_ROLE_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PHMR_PARTICIPANT_ROLE_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+      }
+      catch (ParserException pe)
+      {
+        throw new UnsupportedOperationException(pe.getLocalizedMessage());
+      }
+    }
+    if (!EOCL_ENV.createQuery(VALIDATE_PHMR_PARTICIPANT_ROLE_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(participantRole))
+    {
+      if (diagnostics != null)
+      {
+        diagnostics.add
+          (new BasicDiagnostic
+            (Diagnostic.ERROR,
+             PhmrValidator.DIAGNOSTIC_SOURCE,
+             PhmrValidator.PARTICIPANT_ROLE__PHMR_PARTICIPANT_ROLE_TEMPLATE_ID,
+             PhmrPlugin.INSTANCE.getString("PhmrParticipantRoleTemplateId"),
+             new Object [] { participantRole }));
+      }
+       
+      return false;
+    }
+    return true;
+  }
 
 	/**
-	 * The cached OCL expression body for the '{@link #validatePhmrParticipantRoleId(ParticipantRole, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Phmr Participant Role Id</em>}' operation.
-	 * <!-- begin-user-doc -->
+   * The cached OCL expression body for the '{@link #validatePhmrParticipantRoleId(ParticipantRole, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Phmr Participant Role Id</em>}' operation.
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validatePhmrParticipantRoleId(ParticipantRole, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
+   * @see #validatePhmrParticipantRoleId(ParticipantRole, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+   * @generated
+   * @ordered
+   */
 	protected static final String VALIDATE_PHMR_PARTICIPANT_ROLE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.id->isEmpty() or self.id->exists(element | element.isNullFlavorUndefined())) implies (self.id->size() = 1)";
 
 	/**
-	 * The cached OCL invariant for the '{@link #validatePhmrParticipantRoleId(ParticipantRole, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Phmr Participant Role Id</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
+   * The cached OCL invariant for the '{@link #validatePhmrParticipantRoleId(ParticipantRole, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Phmr Participant Role Id</em>}' invariant operation.
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validatePhmrParticipantRoleId(ParticipantRole, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
+   * @see #validatePhmrParticipantRoleId(ParticipantRole, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+   * @generated
+   * @ordered
+   */
 	protected static Constraint VALIDATE_PHMR_PARTICIPANT_ROLE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * (self.id->isEmpty() or self.id->exists(element | element.isNullFlavorUndefined())) implies (self.id->size() = 1)
-	 * @param participantRole The receiving '<em><b>Participant Role</b></em>' model object.
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
+   * <!-- begin-model-doc -->
+   * @param participantRole The receiving '<em><b>Participant Role</b></em>' model object.
+   * @param diagnostics The chain of diagnostics to which problems are to be appended.
+   * @param context The cache of context-specific information.
+   * <!-- end-model-doc -->
+   * @generated
+   */
 	public static  boolean validatePhmrParticipantRoleId(ParticipantRole participantRole, DiagnosticChain diagnostics, Map<Object, Object> context) {
-		if (VALIDATE_PHMR_PARTICIPANT_ROLE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setContext(PhmrPackage.Literals.PARTICIPANT_ROLE);
-			try {
-				VALIDATE_PHMR_PARTICIPANT_ROLE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PHMR_PARTICIPANT_ROLE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
-				throw new UnsupportedOperationException(pe.getLocalizedMessage());
-			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PHMR_PARTICIPANT_ROLE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(participantRole)) {
-			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 PhmrValidator.DIAGNOSTIC_SOURCE,
-						 PhmrValidator.PARTICIPANT_ROLE__PHMR_PARTICIPANT_ROLE_ID,
-						 PhmrPlugin.INSTANCE.getString("PhmrParticipantRoleId"),
-						 new Object [] { participantRole }));
-			}
-			return false;
-		}
-		return true;
-	}
+  	  
+    if (VALIDATE_PHMR_PARTICIPANT_ROLE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+      OCL.Helper helper = EOCL_ENV.createOCLHelper();
+      helper.setContext(PhmrPackage.Literals.PARTICIPANT_ROLE);
+      try
+      {
+        VALIDATE_PHMR_PARTICIPANT_ROLE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PHMR_PARTICIPANT_ROLE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+      }
+      catch (ParserException pe)
+      {
+        throw new UnsupportedOperationException(pe.getLocalizedMessage());
+      }
+    }
+    if (!EOCL_ENV.createQuery(VALIDATE_PHMR_PARTICIPANT_ROLE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(participantRole))
+    {
+      if (diagnostics != null)
+      {
+        diagnostics.add
+          (new BasicDiagnostic
+            (Diagnostic.ERROR,
+             PhmrValidator.DIAGNOSTIC_SOURCE,
+             PhmrValidator.PARTICIPANT_ROLE__PHMR_PARTICIPANT_ROLE_ID,
+             PhmrPlugin.INSTANCE.getString("PhmrParticipantRoleId"),
+             new Object [] { participantRole }));
+      }
+       
+      return false;
+    }
+    return true;
+  }
 
 } // ParticipantRoleOperations

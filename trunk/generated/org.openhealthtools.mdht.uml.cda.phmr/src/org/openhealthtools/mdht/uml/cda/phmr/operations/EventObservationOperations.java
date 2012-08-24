@@ -54,6 +54,7 @@ import org.openhealthtools.mdht.uml.cda.phmr.util.PhmrValidator;
  *   <li>{@link org.openhealthtools.mdht.uml.cda.phmr.EventObservation#validateEventObservationCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Event Observation Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.phmr.EventObservation#validateEventObservationMoodCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Event Observation Mood Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.phmr.EventObservation#validateEventObservationValue(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Event Observation Value</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.phmr.EventObservation#validateEventObservationPHMRProductInstanceReference(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Event Observation PHMR Product Instance Reference</em>}</li>
  * </ul>
  * </p>
  *
@@ -61,301 +62,389 @@ import org.openhealthtools.mdht.uml.cda.phmr.util.PhmrValidator;
  */
 public class EventObservationOperations extends ClinicalStatementOperations {
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	protected EventObservationOperations() {
-		super();
-	}
+    super();
+  }
 
 	/**
-	 * The cached OCL expression body for the '{@link #validateEventObservationTemplateId(EventObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Event Observation Template Id</em>}' operation.
-	 * <!-- begin-user-doc -->
+   * The cached OCL expression body for the '{@link #validateEventObservationTemplateId(EventObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Event Observation Template Id</em>}' operation.
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateEventObservationTemplateId(EventObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
+   * @see #validateEventObservationTemplateId(EventObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+   * @generated
+   * @ordered
+   */
 	protected static final String VALIDATE_EVENT_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.9.7')";
 
 	/**
-	 * The cached OCL invariant for the '{@link #validateEventObservationTemplateId(EventObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Event Observation Template Id</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
+   * The cached OCL invariant for the '{@link #validateEventObservationTemplateId(EventObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Event Observation Template Id</em>}' invariant operation.
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateEventObservationTemplateId(EventObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
+   * @see #validateEventObservationTemplateId(EventObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+   * @generated
+   * @ordered
+   */
 	protected static Constraint VALIDATE_EVENT_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.9.7')
-	 * @param eventObservation The receiving '<em><b>Event Observation</b></em>' model object.
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
+   * <!-- begin-model-doc -->
+   * @param eventObservation The receiving '<em><b>Event Observation</b></em>' model object.
+   * @param diagnostics The chain of diagnostics to which problems are to be appended.
+   * @param context The cache of context-specific information.
+   * <!-- end-model-doc -->
+   * @generated
+   */
 	public static  boolean validateEventObservationTemplateId(EventObservation eventObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
-		if (VALIDATE_EVENT_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setContext(PhmrPackage.Literals.EVENT_OBSERVATION);
-			try {
-				VALIDATE_EVENT_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_EVENT_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
-				throw new UnsupportedOperationException(pe.getLocalizedMessage());
-			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_EVENT_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(eventObservation)) {
-			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 PhmrValidator.DIAGNOSTIC_SOURCE,
-						 PhmrValidator.EVENT_OBSERVATION__EVENT_OBSERVATION_TEMPLATE_ID,
-						 PhmrPlugin.INSTANCE.getString("EventObservationTemplateId"),
-						 new Object [] { eventObservation }));
-			}
-			return false;
-		}
-		return true;
-	}
+  	  
+    if (VALIDATE_EVENT_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+      OCL.Helper helper = EOCL_ENV.createOCLHelper();
+      helper.setContext(PhmrPackage.Literals.EVENT_OBSERVATION);
+      try
+      {
+        VALIDATE_EVENT_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_EVENT_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+      }
+      catch (ParserException pe)
+      {
+        throw new UnsupportedOperationException(pe.getLocalizedMessage());
+      }
+    }
+    if (!EOCL_ENV.createQuery(VALIDATE_EVENT_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(eventObservation))
+    {
+      if (diagnostics != null)
+      {
+        diagnostics.add
+          (new BasicDiagnostic
+            (Diagnostic.ERROR,
+             PhmrValidator.DIAGNOSTIC_SOURCE,
+             PhmrValidator.EVENT_OBSERVATION__EVENT_OBSERVATION_TEMPLATE_ID,
+             PhmrPlugin.INSTANCE.getString("EventObservationTemplateId"),
+             new Object [] { eventObservation }));
+      }
+       
+      return false;
+    }
+    return true;
+  }
 
 	/**
-	 * The cached OCL expression body for the '{@link #validateEventObservationClassCode(EventObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Event Observation Class Code</em>}' operation.
-	 * <!-- begin-user-doc -->
+   * The cached OCL expression body for the '{@link #validateEventObservationClassCode(EventObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Event Observation Class Code</em>}' operation.
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateEventObservationClassCode(EventObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
+   * @see #validateEventObservationClassCode(EventObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+   * @generated
+   * @ordered
+   */
 	protected static final String VALIDATE_EVENT_OBSERVATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.classCode=vocab::ActClassObservation::OBS";
 
 	/**
-	 * The cached OCL invariant for the '{@link #validateEventObservationClassCode(EventObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Event Observation Class Code</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
+   * The cached OCL invariant for the '{@link #validateEventObservationClassCode(EventObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Event Observation Class Code</em>}' invariant operation.
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateEventObservationClassCode(EventObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
+   * @see #validateEventObservationClassCode(EventObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+   * @generated
+   * @ordered
+   */
 	protected static Constraint VALIDATE_EVENT_OBSERVATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.classCode=vocab::ActClassObservation::OBS
-	 * @param eventObservation The receiving '<em><b>Event Observation</b></em>' model object.
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
+   * <!-- begin-model-doc -->
+   * @param eventObservation The receiving '<em><b>Event Observation</b></em>' model object.
+   * @param diagnostics The chain of diagnostics to which problems are to be appended.
+   * @param context The cache of context-specific information.
+   * <!-- end-model-doc -->
+   * @generated
+   */
 	public static  boolean validateEventObservationClassCode(EventObservation eventObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
-		if (VALIDATE_EVENT_OBSERVATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setContext(PhmrPackage.Literals.EVENT_OBSERVATION);
-			try {
-				VALIDATE_EVENT_OBSERVATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_EVENT_OBSERVATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
-				throw new UnsupportedOperationException(pe.getLocalizedMessage());
-			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_EVENT_OBSERVATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(eventObservation)) {
-			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 PhmrValidator.DIAGNOSTIC_SOURCE,
-						 PhmrValidator.EVENT_OBSERVATION__EVENT_OBSERVATION_CLASS_CODE,
-						 PhmrPlugin.INSTANCE.getString("EventObservationClassCode"),
-						 new Object [] { eventObservation }));
-			}
-			return false;
-		}
-		return true;
-	}
+  	  
+    if (VALIDATE_EVENT_OBSERVATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+      OCL.Helper helper = EOCL_ENV.createOCLHelper();
+      helper.setContext(PhmrPackage.Literals.EVENT_OBSERVATION);
+      try
+      {
+        VALIDATE_EVENT_OBSERVATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_EVENT_OBSERVATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+      }
+      catch (ParserException pe)
+      {
+        throw new UnsupportedOperationException(pe.getLocalizedMessage());
+      }
+    }
+    if (!EOCL_ENV.createQuery(VALIDATE_EVENT_OBSERVATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(eventObservation))
+    {
+      if (diagnostics != null)
+      {
+        diagnostics.add
+          (new BasicDiagnostic
+            (Diagnostic.ERROR,
+             PhmrValidator.DIAGNOSTIC_SOURCE,
+             PhmrValidator.EVENT_OBSERVATION__EVENT_OBSERVATION_CLASS_CODE,
+             PhmrPlugin.INSTANCE.getString("EventObservationClassCode"),
+             new Object [] { eventObservation }));
+      }
+       
+      return false;
+    }
+    return true;
+  }
 
 	/**
-	 * The cached OCL expression body for the '{@link #validateEventObservationCode(EventObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Event Observation Code</em>}' operation.
-	 * <!-- begin-user-doc -->
+   * The cached OCL expression body for the '{@link #validateEventObservationCode(EventObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Event Observation Code</em>}' operation.
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateEventObservationCode(EventObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
+   * @see #validateEventObservationCode(EventObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+   * @generated
+   * @ordered
+   */
 	protected static final String VALIDATE_EVENT_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and "+
-"let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in ("+
-"value.codeSystem = '2.16.840.1.113883.6.24'))";
+"let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in "+
+"value.codeSystem = '2.16.840.1.113883.6.24')";
 
 	/**
-	 * The cached OCL invariant for the '{@link #validateEventObservationCode(EventObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Event Observation Code</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
+   * The cached OCL invariant for the '{@link #validateEventObservationCode(EventObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Event Observation Code</em>}' invariant operation.
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateEventObservationCode(EventObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
+   * @see #validateEventObservationCode(EventObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+   * @generated
+   * @ordered
+   */
 	protected static Constraint VALIDATE_EVENT_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * (self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and 
-	 * let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in (
-	 * value.codeSystem = '2.16.840.1.113883.6.24'))
-	 * @param eventObservation The receiving '<em><b>Event Observation</b></em>' model object.
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
+   * <!-- begin-model-doc -->
+   * @param eventObservation The receiving '<em><b>Event Observation</b></em>' model object.
+   * @param diagnostics The chain of diagnostics to which problems are to be appended.
+   * @param context The cache of context-specific information.
+   * <!-- end-model-doc -->
+   * @generated
+   */
 	public static  boolean validateEventObservationCode(EventObservation eventObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
-		if (VALIDATE_EVENT_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setContext(PhmrPackage.Literals.EVENT_OBSERVATION);
-			try {
-				VALIDATE_EVENT_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_EVENT_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
-				throw new UnsupportedOperationException(pe.getLocalizedMessage());
-			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_EVENT_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(eventObservation)) {
-			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 PhmrValidator.DIAGNOSTIC_SOURCE,
-						 PhmrValidator.EVENT_OBSERVATION__EVENT_OBSERVATION_CODE,
-						 PhmrPlugin.INSTANCE.getString("EventObservationCode"),
-						 new Object [] { eventObservation }));
-			}
-			return false;
-		}
-		return true;
-	}
+  	  
+    if (VALIDATE_EVENT_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+      OCL.Helper helper = EOCL_ENV.createOCLHelper();
+      helper.setContext(PhmrPackage.Literals.EVENT_OBSERVATION);
+      try
+      {
+        VALIDATE_EVENT_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_EVENT_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+      }
+      catch (ParserException pe)
+      {
+        throw new UnsupportedOperationException(pe.getLocalizedMessage());
+      }
+    }
+    if (!EOCL_ENV.createQuery(VALIDATE_EVENT_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(eventObservation))
+    {
+      if (diagnostics != null)
+      {
+        diagnostics.add
+          (new BasicDiagnostic
+            (Diagnostic.ERROR,
+             PhmrValidator.DIAGNOSTIC_SOURCE,
+             PhmrValidator.EVENT_OBSERVATION__EVENT_OBSERVATION_CODE,
+             PhmrPlugin.INSTANCE.getString("EventObservationCode"),
+             new Object [] { eventObservation }));
+      }
+       
+      return false;
+    }
+    return true;
+  }
 
 	/**
-	 * The cached OCL expression body for the '{@link #validateEventObservationMoodCode(EventObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Event Observation Mood Code</em>}' operation.
-	 * <!-- begin-user-doc -->
+   * The cached OCL expression body for the '{@link #validateEventObservationMoodCode(EventObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Event Observation Mood Code</em>}' operation.
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateEventObservationMoodCode(EventObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
+   * @see #validateEventObservationMoodCode(EventObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+   * @generated
+   * @ordered
+   */
 	protected static final String VALIDATE_EVENT_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.moodCode=vocab::x_ActMoodDocumentObservation::EVN";
 
 	/**
-	 * The cached OCL invariant for the '{@link #validateEventObservationMoodCode(EventObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Event Observation Mood Code</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
+   * The cached OCL invariant for the '{@link #validateEventObservationMoodCode(EventObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Event Observation Mood Code</em>}' invariant operation.
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateEventObservationMoodCode(EventObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
+   * @see #validateEventObservationMoodCode(EventObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+   * @generated
+   * @ordered
+   */
 	protected static Constraint VALIDATE_EVENT_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.moodCode=vocab::x_ActMoodDocumentObservation::EVN
-	 * @param eventObservation The receiving '<em><b>Event Observation</b></em>' model object.
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
+   * <!-- begin-model-doc -->
+   * @param eventObservation The receiving '<em><b>Event Observation</b></em>' model object.
+   * @param diagnostics The chain of diagnostics to which problems are to be appended.
+   * @param context The cache of context-specific information.
+   * <!-- end-model-doc -->
+   * @generated
+   */
 	public static  boolean validateEventObservationMoodCode(EventObservation eventObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
-		if (VALIDATE_EVENT_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setContext(PhmrPackage.Literals.EVENT_OBSERVATION);
-			try {
-				VALIDATE_EVENT_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_EVENT_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
-				throw new UnsupportedOperationException(pe.getLocalizedMessage());
-			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_EVENT_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(eventObservation)) {
-			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 PhmrValidator.DIAGNOSTIC_SOURCE,
-						 PhmrValidator.EVENT_OBSERVATION__EVENT_OBSERVATION_MOOD_CODE,
-						 PhmrPlugin.INSTANCE.getString("EventObservationMoodCode"),
-						 new Object [] { eventObservation }));
-			}
-			return false;
-		}
-		return true;
-	}
+  	  
+    if (VALIDATE_EVENT_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+      OCL.Helper helper = EOCL_ENV.createOCLHelper();
+      helper.setContext(PhmrPackage.Literals.EVENT_OBSERVATION);
+      try
+      {
+        VALIDATE_EVENT_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_EVENT_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+      }
+      catch (ParserException pe)
+      {
+        throw new UnsupportedOperationException(pe.getLocalizedMessage());
+      }
+    }
+    if (!EOCL_ENV.createQuery(VALIDATE_EVENT_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(eventObservation))
+    {
+      if (diagnostics != null)
+      {
+        diagnostics.add
+          (new BasicDiagnostic
+            (Diagnostic.ERROR,
+             PhmrValidator.DIAGNOSTIC_SOURCE,
+             PhmrValidator.EVENT_OBSERVATION__EVENT_OBSERVATION_MOOD_CODE,
+             PhmrPlugin.INSTANCE.getString("EventObservationMoodCode"),
+             new Object [] { eventObservation }));
+      }
+       
+      return false;
+    }
+    return true;
+  }
 
 	/**
-	 * The cached OCL expression body for the '{@link #validateEventObservationValue(EventObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Event Observation Value</em>}' operation.
-	 * <!-- begin-user-doc -->
+   * The cached OCL expression body for the '{@link #validateEventObservationValue(EventObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Event Observation Value</em>}' operation.
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateEventObservationValue(EventObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
+   * @see #validateEventObservationValue(EventObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+   * @generated
+   * @ordered
+   */
 	protected static final String VALIDATE_EVENT_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (self.value->size() = 1)";
 
 	/**
-	 * The cached OCL invariant for the '{@link #validateEventObservationValue(EventObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Event Observation Value</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
+   * The cached OCL invariant for the '{@link #validateEventObservationValue(EventObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Event Observation Value</em>}' invariant operation.
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateEventObservationValue(EventObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
+   * @see #validateEventObservationValue(EventObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+   * @generated
+   * @ordered
+   */
 	protected static Constraint VALIDATE_EVENT_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * (self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (self.value->size() = 1)
-	 * @param eventObservation The receiving '<em><b>Event Observation</b></em>' model object.
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
+   * <!-- begin-model-doc -->
+   * @param eventObservation The receiving '<em><b>Event Observation</b></em>' model object.
+   * @param diagnostics The chain of diagnostics to which problems are to be appended.
+   * @param context The cache of context-specific information.
+   * <!-- end-model-doc -->
+   * @generated
+   */
 	public static  boolean validateEventObservationValue(EventObservation eventObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
-		if (VALIDATE_EVENT_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setContext(PhmrPackage.Literals.EVENT_OBSERVATION);
-			try {
-				VALIDATE_EVENT_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_EVENT_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
-				throw new UnsupportedOperationException(pe.getLocalizedMessage());
-			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_EVENT_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(eventObservation)) {
-			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 PhmrValidator.DIAGNOSTIC_SOURCE,
-						 PhmrValidator.EVENT_OBSERVATION__EVENT_OBSERVATION_VALUE,
-						 PhmrPlugin.INSTANCE.getString("EventObservationValue"),
-						 new Object [] { eventObservation }));
-			}
-			return false;
-		}
-		return true;
-	}
+  	  
+    if (VALIDATE_EVENT_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+      OCL.Helper helper = EOCL_ENV.createOCLHelper();
+      helper.setContext(PhmrPackage.Literals.EVENT_OBSERVATION);
+      try
+      {
+        VALIDATE_EVENT_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_EVENT_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+      }
+      catch (ParserException pe)
+      {
+        throw new UnsupportedOperationException(pe.getLocalizedMessage());
+      }
+    }
+    if (!EOCL_ENV.createQuery(VALIDATE_EVENT_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(eventObservation))
+    {
+      if (diagnostics != null)
+      {
+        diagnostics.add
+          (new BasicDiagnostic
+            (Diagnostic.ERROR,
+             PhmrValidator.DIAGNOSTIC_SOURCE,
+             PhmrValidator.EVENT_OBSERVATION__EVENT_OBSERVATION_VALUE,
+             PhmrPlugin.INSTANCE.getString("EventObservationValue"),
+             new Object [] { eventObservation }));
+      }
+       
+      return false;
+    }
+    return true;
+  }
+
+  /**
+   * The cached OCL expression body for the '{@link #validateEventObservationPHMRProductInstanceReference(EventObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Event Observation PHMR Product Instance Reference</em>}' operation.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #validateEventObservationPHMRProductInstanceReference(EventObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+   * @generated
+   * @ordered
+   */
+  protected static final String VALIDATE_EVENT_OBSERVATION_PHMR_PRODUCT_INSTANCE_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.participant->one(participant : cda::Participant2 | not participant.oclIsUndefined() and participant.oclIsKindOf(cda::Participant2))";
+
+  /**
+   * The cached OCL invariant for the '{@link #validateEventObservationPHMRProductInstanceReference(EventObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Event Observation PHMR Product Instance Reference</em>}' invariant operation.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #validateEventObservationPHMRProductInstanceReference(EventObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+   * @generated
+   * @ordered
+   */
+  
+  protected static Constraint VALIDATE_EVENT_OBSERVATION_PHMR_PRODUCT_INSTANCE_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * <!-- begin-model-doc -->
+   * @param eventObservation The receiving '<em><b>Event Observation</b></em>' model object.
+   * @param diagnostics The chain of diagnostics to which problems are to be appended.
+   * @param context The cache of context-specific information.
+   * <!-- end-model-doc -->
+   * @generated
+   */
+  
+  public static  boolean validateEventObservationPHMRProductInstanceReference(EventObservation eventObservation, DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+  	  
+    if (VALIDATE_EVENT_OBSERVATION_PHMR_PRODUCT_INSTANCE_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+      OCL.Helper helper = EOCL_ENV.createOCLHelper();
+      helper.setContext(PhmrPackage.Literals.EVENT_OBSERVATION);
+      try
+      {
+        VALIDATE_EVENT_OBSERVATION_PHMR_PRODUCT_INSTANCE_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_EVENT_OBSERVATION_PHMR_PRODUCT_INSTANCE_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+      }
+      catch (ParserException pe)
+      {
+        throw new UnsupportedOperationException(pe.getLocalizedMessage());
+      }
+    }
+    if (!EOCL_ENV.createQuery(VALIDATE_EVENT_OBSERVATION_PHMR_PRODUCT_INSTANCE_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(eventObservation))
+    {
+      if (diagnostics != null)
+      {
+        diagnostics.add
+          (new BasicDiagnostic
+            (Diagnostic.WARNING,
+             PhmrValidator.DIAGNOSTIC_SOURCE,
+             PhmrValidator.EVENT_OBSERVATION__EVENT_OBSERVATION_PHMR_PRODUCT_INSTANCE_REFERENCE,
+             PhmrPlugin.INSTANCE.getString("EventObservationPHMRProductInstanceReference"),
+             new Object [] { eventObservation }));
+      }
+       
+      return false;
+    }
+    return true;
+  }
 
 } // EventObservationOperations

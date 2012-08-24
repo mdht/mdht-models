@@ -6,11 +6,14 @@
  */
 package org.openhealthtools.mdht.uml.cda.sdtm;
 
+import java.lang.Iterable;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.common.util.EList;
 
+import org.eclipse.emf.ecore.EObject;
+import org.openhealthtools.mdht.emf.runtime.util.Initializer;
 import org.openhealthtools.mdht.uml.cda.Section;
 
 /**
@@ -20,8 +23,8 @@ import org.openhealthtools.mdht.uml.cda.Section;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.sdtm.SdtmPackage#getHumanClinicalSubjectDataDocumentBody()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation code.codeSystem='2.16.840.1.113883.6.1' templateId.root='2.16.840.1.113883.10.20.23.13' constraints.validation.error='Human Clinical Subject Data Document BodyTemplateId Human Clinical Subject Data Document BodyClassCode Human Clinical Subject Data Document BodyCode Human Clinical Subject Data Document BodyCodeP Human Clinical Subject Data Document BodyMoodCode Human Clinical Subject Data Document BodyHuman Clinical Subject Demographics Human Clinical Subject Data Document BodyHuman Clinical Study Arm Human Clinical Subject Data Document BodyexposureAssociationTypeCode Human Clinical Subject Data Document BodyexposureAssociationExposure Substance Administration' code.codeSystemName='LOINC' constraints.validation.warning='Human Clinical Subject Data Document BodyHuman Clinical Visit Human Clinical Subject Data Document BodySubject Element Human Clinical Subject Data Document BodyDisposition Human Clinical Subject Data Document BodyMedical History Human Clinical Subject Data Document BodyPharmacokinetic Parameter Finding' classCode='DOCSECT' code.code='TBD' constraints.validation.query='Human Clinical Subject Data Document BodyexposureAssociationTypeCode Human Clinical Subject Data Document BodyexposureAssociationExposure Substance Administration' constraints.validation.info='Human Clinical Subject Data Document BodySubstance Use Human Clinical Subject Data Document BodyProtocol Deviation Human Clinical Subject Data Document BodyClinical Event Human Clinical Subject Data Document BodyECG Test Result Human Clinical Subject Data Document BodySubject Characteristic' moodCode='EVN'"
- *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/sdtmHumanClinicalSubjectDataDocumentBodyexposureAssociation constraints.validation.error='exposureAssociationTypeCode exposureAssociationExposure Substance Administration' typeCode='COMP'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='Human Clinical Subject Data Document BodyTemplateId Human Clinical Subject Data Document BodyClassCode Human Clinical Subject Data Document BodyCode Human Clinical Subject Data Document BodyCodeP Human Clinical Subject Data Document BodyMoodCode Human Clinical Subject Data Document BodyHuman Clinical Subject Demographics Human Clinical Subject Data Document BodyStudy Arm Human Clinical Subject Data Document BodyexposureAssociationTypeCode Human Clinical Subject Data Document BodyexposureAssociationExposure Substance Administration' templateId.root='2.16.840.1.113883.10.20.23.13' classCode='DOCSECT' code.code='TBD' code.codeSystem='2.16.840.1.113883.6.1' code.codeSystemName='LOINC' moodCode='EVN' constraints.validation.warning='Human Clinical Subject Data Document BodyHuman Clinical Visit Human Clinical Subject Data Document BodySubject Element Human Clinical Subject Data Document BodyDisposition Human Clinical Subject Data Document BodyMedical History Human Clinical Subject Data Document BodyPharmacokinetic Parameter Finding' constraints.validation.info='Human Clinical Subject Data Document BodySubstance Use Human Clinical Subject Data Document BodyProtocol Deviation Human Clinical Subject Data Document BodyClinical Event Human Clinical Subject Data Document BodyECG Test Result Human Clinical Subject Data Document BodySubject Characteristic' constraints.validation.query='Human Clinical Subject Data Document BodyexposureAssociationTypeCode Human Clinical Subject Data Document BodyexposureAssociationExposure Substance Administration'"
+ *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/sdtmHumanClinicalSubjectDataDocumentBodyexposureAssociation typeCode='COMP' constraints.validation.error='exposureAssociationTypeCode exposureAssociationExposure Substance Administration'"
  * @generated
  */
 public interface HumanClinicalSubjectDataDocumentBody extends Section
@@ -30,7 +33,6 @@ public interface HumanClinicalSubjectDataDocumentBody extends Section
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.23.13')
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
    * <!-- end-model-doc -->
@@ -43,7 +45,6 @@ public interface HumanClinicalSubjectDataDocumentBody extends Section
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * isDefined('classCode') and self.classCode=vocab::ActClass::DOCSECT
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
    * <!-- end-model-doc -->
@@ -56,13 +57,10 @@ public interface HumanClinicalSubjectDataDocumentBody extends Section
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * (self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and 
-   * let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in 
-   * value.code = 'TBD' and value.codeSystem = '2.16.840.1.113883.6.1')
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
    * <!-- end-model-doc -->
-   * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and \r\nlet value : datatypes::CE = self.code.oclAsType(datatypes::CE) in \r\nvalue.code = \'TBD\' and value.codeSystem = \'2.16.840.1.113883.6.1\')'"
+   * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and \nlet value : datatypes::CE = self.code.oclAsType(datatypes::CE) in \nvalue.code = \'TBD\' and value.codeSystem = \'2.16.840.1.113883.6.1\')'"
    * @generated
    */
   boolean validateHumanClinicalSubjectDataDocumentBodyCode(DiagnosticChain diagnostics, Map<Object, Object> context);
@@ -71,7 +69,6 @@ public interface HumanClinicalSubjectDataDocumentBody extends Section
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * (self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined())
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
    * <!-- end-model-doc -->
@@ -84,7 +81,6 @@ public interface HumanClinicalSubjectDataDocumentBody extends Section
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.moodCode=vocab::ActMood::EVN
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
    * <!-- end-model-doc -->
@@ -97,7 +93,6 @@ public interface HumanClinicalSubjectDataDocumentBody extends Section
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.entry->one(entry : cda::Entry | not entry.organizer.oclIsUndefined() and entry.organizer.oclIsKindOf(sdtm::Human Clinical Subject Demographics) and entry.typeCode = vocab::x_ActRelationshipEntry::COMP)
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
    * <!-- end-model-doc -->
@@ -110,7 +105,6 @@ public interface HumanClinicalSubjectDataDocumentBody extends Section
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.entry->exists(entry : cda::Entry | not entry.encounter.oclIsUndefined() and entry.encounter.oclIsKindOf(sdtm::Visit) and entry.typeCode = vocab::x_ActRelationshipEntry::COMP)
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
    * <!-- end-model-doc -->
@@ -123,20 +117,18 @@ public interface HumanClinicalSubjectDataDocumentBody extends Section
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.entry->one(entry : cda::Entry | not entry.act.oclIsUndefined() and entry.act.oclIsKindOf(sdtm::Study Arm) and entry.typeCode = vocab::x_ActRelationshipEntry::COMP)
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
    * <!-- end-model-doc -->
    * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entry->one(entry : cda::Entry | not entry.act.oclIsUndefined() and entry.act.oclIsKindOf(sdtm::Study Arm) and entry.typeCode = vocab::x_ActRelationshipEntry::COMP)'"
    * @generated
    */
-  boolean validateHumanClinicalSubjectDataDocumentBodyHumanClinicalStudyArm(DiagnosticChain diagnostics, Map<Object, Object> context);
+  boolean validateHumanClinicalSubjectDataDocumentBodyStudyArm(DiagnosticChain diagnostics, Map<Object, Object> context);
 
   /**
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.entry->exists(entry : cda::Entry | not entry.act.oclIsUndefined() and entry.act.oclIsKindOf(sdtm::Subject Element) and entry.typeCode = vocab::x_ActRelationshipEntry::COMP)
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
    * <!-- end-model-doc -->
@@ -149,7 +141,6 @@ public interface HumanClinicalSubjectDataDocumentBody extends Section
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.entry->exists(entry : cda::Entry | not entry.substanceAdministration.oclIsUndefined() and entry.substanceAdministration.oclIsKindOf(sdtm::Substance Use) and entry.typeCode = vocab::x_ActRelationshipEntry::COMP)
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
    * <!-- end-model-doc -->
@@ -162,7 +153,6 @@ public interface HumanClinicalSubjectDataDocumentBody extends Section
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.entry->exists(entry : cda::Entry | not entry.act.oclIsUndefined() and entry.act.oclIsKindOf(sdtm::Human Clinical Disposition) and entry.typeCode = vocab::x_ActRelationshipEntry::COMP)
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
    * <!-- end-model-doc -->
@@ -175,7 +165,6 @@ public interface HumanClinicalSubjectDataDocumentBody extends Section
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.entry->exists(entry : cda::Entry | not entry.observation.oclIsUndefined() and entry.observation.oclIsKindOf(sdtm::Medical History Item) and entry.typeCode = vocab::x_ActRelationshipEntry::COMP)
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
    * <!-- end-model-doc -->
@@ -188,7 +177,6 @@ public interface HumanClinicalSubjectDataDocumentBody extends Section
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.entry->exists(entry : cda::Entry | not entry.observation.oclIsUndefined() and entry.observation.oclIsKindOf(sdtm::Protocol Deviation) and entry.typeCode = vocab::x_ActRelationshipEntry::COMP)
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
    * <!-- end-model-doc -->
@@ -201,7 +189,6 @@ public interface HumanClinicalSubjectDataDocumentBody extends Section
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.entry->exists(entry : cda::Entry | not entry.observation.oclIsUndefined() and entry.observation.oclIsKindOf(sdtm::Clinical Event) and entry.typeCode = vocab::x_ActRelationshipEntry::COMP)
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
    * <!-- end-model-doc -->
@@ -214,7 +201,6 @@ public interface HumanClinicalSubjectDataDocumentBody extends Section
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.entry->exists(entry : cda::Entry | not entry.observation.oclIsUndefined() and entry.observation.oclIsKindOf(sdtm::ECG Test Result) and entry.typeCode = vocab::x_ActRelationshipEntry::COMP)
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
    * <!-- end-model-doc -->
@@ -227,7 +213,6 @@ public interface HumanClinicalSubjectDataDocumentBody extends Section
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.entry->one(entry : cda::Entry | not entry.observation.oclIsUndefined() and entry.observation.oclIsKindOf(sdtm::Subject Characteristic) and entry.typeCode = vocab::x_ActRelationshipEntry::COMP)
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
    * <!-- end-model-doc -->
@@ -240,7 +225,6 @@ public interface HumanClinicalSubjectDataDocumentBody extends Section
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.entry->one(entry : cda::Entry | not entry.observation.oclIsUndefined() and entry.observation.oclIsKindOf(sdtm::Pharmacokinetic Parameter Finding) and entry.typeCode = vocab::x_ActRelationshipEntry::COMP)
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
    * <!-- end-model-doc -->
@@ -253,7 +237,6 @@ public interface HumanClinicalSubjectDataDocumentBody extends Section
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.->reject(isDefined('typeCode'))
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
    * <!-- end-model-doc -->
@@ -266,7 +249,6 @@ public interface HumanClinicalSubjectDataDocumentBody extends Section
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.->reject(substanceAdministration->one(substanceAdministration : cda::SubstanceAdministration | not substanceAdministration.oclIsUndefined() and substanceAdministration.oclIsKindOf(sdtm::Human Clinical Exposure)))
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
    * <!-- end-model-doc -->
@@ -278,11 +260,8 @@ public interface HumanClinicalSubjectDataDocumentBody extends Section
   /**
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * <!-- begin-model-doc -->
-   * self.getOrganizers()->select(organizer : cda::Organizer | not organizer.oclIsUndefined() and organizer.oclIsKindOf(sdtm::Human Clinical Subject Demographics))->asSequence()->first().oclAsType(sdtm::Human Clinical Subject Demographics)
-   * <!-- end-model-doc -->
    * @model kind="operation" required="true" ordered="false"
-   *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getOrganizers()->select(organizer : cda::Organizer | not organizer.oclIsUndefined() and organizer.oclIsKindOf(sdtm::Human Clinical Subject Demographics))->asSequence()->first().oclAsType(sdtm::Human Clinical Subject Demographics)'"
+   *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getOrganizers()->select(organizer : cda::Organizer | not organizer.oclIsUndefined() and organizer.oclIsKindOf(sdtm::Human Clinical Subject Demographics))->asSequence()->any(true).oclAsType(sdtm::Human Clinical Subject Demographics)'"
    * @generated
    */
   HumanClinicalSubjectDemographics getHumanClinicalSubjectDemographics();
@@ -290,9 +269,6 @@ public interface HumanClinicalSubjectDataDocumentBody extends Section
   /**
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * <!-- begin-model-doc -->
-   * self.getEncounters()->select(encounter : cda::Encounter | not encounter.oclIsUndefined() and encounter.oclIsKindOf(sdtm::Visit)).oclAsType(sdtm::Visit)
-   * <!-- end-model-doc -->
    * @model kind="operation" required="true" ordered="false"
    *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getEncounters()->select(encounter : cda::Encounter | not encounter.oclIsUndefined() and encounter.oclIsKindOf(sdtm::Visit)).oclAsType(sdtm::Visit)'"
    * @generated
@@ -302,21 +278,15 @@ public interface HumanClinicalSubjectDataDocumentBody extends Section
   /**
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * <!-- begin-model-doc -->
-   * self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(sdtm::Study Arm))->asSequence()->first().oclAsType(sdtm::Study Arm)
-   * <!-- end-model-doc -->
    * @model kind="operation" required="true" ordered="false"
-   *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(sdtm::Study Arm))->asSequence()->first().oclAsType(sdtm::Study Arm)'"
+   *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(sdtm::Study Arm))->asSequence()->any(true).oclAsType(sdtm::Study Arm)'"
    * @generated
    */
-  StudyArm getHumanClinicalStudyArm();
+  StudyArm getStudyArm();
 
   /**
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * <!-- begin-model-doc -->
-   * self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(sdtm::Subject Element)).oclAsType(sdtm::Subject Element)
-   * <!-- end-model-doc -->
    * @model kind="operation" required="true" ordered="false"
    *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(sdtm::Subject Element)).oclAsType(sdtm::Subject Element)'"
    * @generated
@@ -326,9 +296,6 @@ public interface HumanClinicalSubjectDataDocumentBody extends Section
   /**
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * <!-- begin-model-doc -->
-   * self.getSubstanceAdministrations()->select(substanceAdministration : cda::SubstanceAdministration | not substanceAdministration.oclIsUndefined() and substanceAdministration.oclIsKindOf(sdtm::Substance Use)).oclAsType(sdtm::Substance Use)
-   * <!-- end-model-doc -->
    * @model kind="operation" required="true" ordered="false"
    *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getSubstanceAdministrations()->select(substanceAdministration : cda::SubstanceAdministration | not substanceAdministration.oclIsUndefined() and substanceAdministration.oclIsKindOf(sdtm::Substance Use)).oclAsType(sdtm::Substance Use)'"
    * @generated
@@ -338,9 +305,6 @@ public interface HumanClinicalSubjectDataDocumentBody extends Section
   /**
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * <!-- begin-model-doc -->
-   * self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(sdtm::Human Clinical Disposition)).oclAsType(sdtm::Human Clinical Disposition)
-   * <!-- end-model-doc -->
    * @model kind="operation" required="true" ordered="false"
    *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(sdtm::Human Clinical Disposition)).oclAsType(sdtm::Human Clinical Disposition)'"
    * @generated
@@ -350,9 +314,6 @@ public interface HumanClinicalSubjectDataDocumentBody extends Section
   /**
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * <!-- begin-model-doc -->
-   * self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(sdtm::Medical History Item)).oclAsType(sdtm::Medical History Item)
-   * <!-- end-model-doc -->
    * @model kind="operation" required="true" ordered="false"
    *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(sdtm::Medical History Item)).oclAsType(sdtm::Medical History Item)'"
    * @generated
@@ -362,9 +323,6 @@ public interface HumanClinicalSubjectDataDocumentBody extends Section
   /**
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * <!-- begin-model-doc -->
-   * self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(sdtm::Protocol Deviation)).oclAsType(sdtm::Protocol Deviation)
-   * <!-- end-model-doc -->
    * @model kind="operation" required="true" ordered="false"
    *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(sdtm::Protocol Deviation)).oclAsType(sdtm::Protocol Deviation)'"
    * @generated
@@ -374,9 +332,6 @@ public interface HumanClinicalSubjectDataDocumentBody extends Section
   /**
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * <!-- begin-model-doc -->
-   * self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(sdtm::Clinical Event)).oclAsType(sdtm::Clinical Event)
-   * <!-- end-model-doc -->
    * @model kind="operation" required="true" ordered="false"
    *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(sdtm::Clinical Event)).oclAsType(sdtm::Clinical Event)'"
    * @generated
@@ -386,9 +341,6 @@ public interface HumanClinicalSubjectDataDocumentBody extends Section
   /**
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * <!-- begin-model-doc -->
-   * self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(sdtm::ECG Test Result)).oclAsType(sdtm::ECG Test Result)
-   * <!-- end-model-doc -->
    * @model kind="operation" required="true" ordered="false"
    *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(sdtm::ECG Test Result)).oclAsType(sdtm::ECG Test Result)'"
    * @generated
@@ -398,11 +350,8 @@ public interface HumanClinicalSubjectDataDocumentBody extends Section
   /**
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * <!-- begin-model-doc -->
-   * self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(sdtm::Subject Characteristic))->asSequence()->first().oclAsType(sdtm::Subject Characteristic)
-   * <!-- end-model-doc -->
    * @model kind="operation" required="true" ordered="false"
-   *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(sdtm::Subject Characteristic))->asSequence()->first().oclAsType(sdtm::Subject Characteristic)'"
+   *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(sdtm::Subject Characteristic))->asSequence()->any(true).oclAsType(sdtm::Subject Characteristic)'"
    * @generated
    */
   SubjectCharacteristic getSubjectCharacteristic();
@@ -410,11 +359,8 @@ public interface HumanClinicalSubjectDataDocumentBody extends Section
   /**
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * <!-- begin-model-doc -->
-   * self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(sdtm::Pharmacokinetic Parameter Finding))->asSequence()->first().oclAsType(sdtm::Pharmacokinetic Parameter Finding)
-   * <!-- end-model-doc -->
    * @model kind="operation" required="true" ordered="false"
-   *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(sdtm::Pharmacokinetic Parameter Finding))->asSequence()->first().oclAsType(sdtm::Pharmacokinetic Parameter Finding)'"
+   *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(sdtm::Pharmacokinetic Parameter Finding))->asSequence()->any(true).oclAsType(sdtm::Pharmacokinetic Parameter Finding)'"
    * @generated
    */
   PharmacokineticParameterFinding getPharmacokineticParameterFinding();
@@ -425,4 +371,11 @@ public interface HumanClinicalSubjectDataDocumentBody extends Section
    * @generated
    */
   public HumanClinicalSubjectDataDocumentBody init();
+
+  /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    public HumanClinicalSubjectDataDocumentBody init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // HumanClinicalSubjectDataDocumentBody

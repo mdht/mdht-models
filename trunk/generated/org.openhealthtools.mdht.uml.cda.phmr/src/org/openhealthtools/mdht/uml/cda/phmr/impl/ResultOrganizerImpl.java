@@ -22,6 +22,7 @@
  */
 package org.openhealthtools.mdht.uml.cda.phmr.impl;
 
+import java.lang.Iterable;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
@@ -29,6 +30,8 @@ import org.eclipse.emf.common.util.EList;
 
 import org.eclipse.emf.ecore.EClass;
 
+import org.eclipse.emf.ecore.EObject;
+import org.openhealthtools.mdht.emf.runtime.util.Initializer;
 import org.openhealthtools.mdht.uml.cda.phmr.NumericObservation;
 import org.openhealthtools.mdht.uml.cda.phmr.PhmrPackage;
 import org.openhealthtools.mdht.uml.cda.phmr.ResultOrganizer;
@@ -49,77 +52,86 @@ import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
  */
 public class ResultOrganizerImpl extends org.openhealthtools.mdht.uml.cda.ccd.impl.ResultOrganizerImpl implements ResultOrganizer {
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	protected ResultOrganizerImpl() {
-		super();
-	}
+    super();
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	@Override
 	protected EClass eStaticClass() {
-		return PhmrPackage.Literals.RESULT_ORGANIZER;
-	}
+    return PhmrPackage.Literals.RESULT_ORGANIZER;
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validatePhmrResultOrganizerNumericObservation(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ResultOrganizerOperations.validatePhmrResultOrganizerNumericObservation(this, diagnostics, context);
-	}
+    return ResultOrganizerOperations.validatePhmrResultOrganizerNumericObservation(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validatePhmrResultOrganizerWaveformSeriesObservation(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ResultOrganizerOperations.validatePhmrResultOrganizerWaveformSeriesObservation(this, diagnostics, context);
-	}
+    return ResultOrganizerOperations.validatePhmrResultOrganizerWaveformSeriesObservation(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public EList<NumericObservation> getNumericObservations() {
-		return ResultOrganizerOperations.getNumericObservations(this);
-	}
+    return ResultOrganizerOperations.getNumericObservations(this);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public EList<WaveformSeriesObservation> getWaveformSeriesObservations() {
-		return ResultOrganizerOperations.getWaveformSeriesObservations(this);
-	}
+    return ResultOrganizerOperations.getWaveformSeriesObservations(this);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	@Override
 	public boolean validateResultOrganizerTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ResultOrganizerOperations.validateResultOrganizerTemplateId(this, diagnostics, context);
-	}
+    return ResultOrganizerOperations.validateResultOrganizerTemplateId(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public ResultOrganizer init() {
-    	CDAUtil.init(this);
-    	return this;
-	}
+      return Initializer.Util.init(this);
+  }
+
+  /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    public ResultOrganizer init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
 } //ResultOrganizerImpl

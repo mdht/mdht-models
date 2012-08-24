@@ -51,6 +51,8 @@ import org.openhealthtools.mdht.uml.cda.phmr.util.PhmrValidator;
  * <ul>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.phmr.PHMRProductInstance#validatePHMRProductInstanceCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate PHMR Product Instance Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.phmr.PHMRProductInstance#validatePHMRProductInstanceId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate PHMR Product Instance Id</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.phmr.PHMRProductInstance#validatePHMRProductInstanceScopingEntity(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate PHMR Product Instance Scoping Entity</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.phmr.PHMRProductInstance#validatePHMRProductInstancePlayingDevice(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate PHMR Product Instance Playing Device</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.phmr.PHMRProductInstance#validateProductInstanceTemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Product Instance Template Id</em>}</li>
  * </ul>
  * </p>
@@ -59,183 +61,328 @@ import org.openhealthtools.mdht.uml.cda.phmr.util.PhmrValidator;
  */
 public class PHMRProductInstanceOperations extends ProductInstanceOperations {
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	protected PHMRProductInstanceOperations() {
-		super();
-	}
+    super();
+  }
 
 	/**
-	 * The cached OCL expression body for the '{@link #validatePHMRProductInstanceCode(PHMRProductInstance, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate PHMR Product Instance Code</em>}' operation.
-	 * <!-- begin-user-doc -->
+   * The cached OCL expression body for the '{@link #validatePHMRProductInstanceCode(PHMRProductInstance, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate PHMR Product Instance Code</em>}' operation.
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validatePHMRProductInstanceCode(PHMRProductInstance, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
+   * @see #validatePHMRProductInstanceCode(PHMRProductInstance, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+   * @generated
+   * @ordered
+   */
 	protected static final String VALIDATE_PHMR_PRODUCT_INSTANCE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined())";
 
 	/**
-	 * The cached OCL invariant for the '{@link #validatePHMRProductInstanceCode(PHMRProductInstance, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate PHMR Product Instance Code</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
+   * The cached OCL invariant for the '{@link #validatePHMRProductInstanceCode(PHMRProductInstance, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate PHMR Product Instance Code</em>}' invariant operation.
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validatePHMRProductInstanceCode(PHMRProductInstance, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
+   * @see #validatePHMRProductInstanceCode(PHMRProductInstance, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+   * @generated
+   * @ordered
+   */
 	protected static Constraint VALIDATE_PHMR_PRODUCT_INSTANCE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * (self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined())
-	 * @param phmrProductInstance The receiving '<em><b>PHMR Product Instance</b></em>' model object.
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
+   * <!-- begin-model-doc -->
+   * @param phmrProductInstance The receiving '<em><b>PHMR Product Instance</b></em>' model object.
+   * @param diagnostics The chain of diagnostics to which problems are to be appended.
+   * @param context The cache of context-specific information.
+   * <!-- end-model-doc -->
+   * @generated
+   */
 	public static  boolean validatePHMRProductInstanceCode(PHMRProductInstance phmrProductInstance, DiagnosticChain diagnostics, Map<Object, Object> context) {
-		if (VALIDATE_PHMR_PRODUCT_INSTANCE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setContext(PhmrPackage.Literals.PHMR_PRODUCT_INSTANCE);
-			try {
-				VALIDATE_PHMR_PRODUCT_INSTANCE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PHMR_PRODUCT_INSTANCE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
-				throw new UnsupportedOperationException(pe.getLocalizedMessage());
-			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PHMR_PRODUCT_INSTANCE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(phmrProductInstance)) {
-			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.INFO,
-						 PhmrValidator.DIAGNOSTIC_SOURCE,
-						 PhmrValidator.PHMR_PRODUCT_INSTANCE__PHMR_PRODUCT_INSTANCE_CODE,
-						 PhmrPlugin.INSTANCE.getString("PHMRProductInstanceCode"),
-						 new Object [] { phmrProductInstance }));
-			}
-			return false;
-		}
-		return true;
-	}
+  	  
+    if (VALIDATE_PHMR_PRODUCT_INSTANCE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+      OCL.Helper helper = EOCL_ENV.createOCLHelper();
+      helper.setContext(PhmrPackage.Literals.PHMR_PRODUCT_INSTANCE);
+      try
+      {
+        VALIDATE_PHMR_PRODUCT_INSTANCE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PHMR_PRODUCT_INSTANCE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+      }
+      catch (ParserException pe)
+      {
+        throw new UnsupportedOperationException(pe.getLocalizedMessage());
+      }
+    }
+    if (!EOCL_ENV.createQuery(VALIDATE_PHMR_PRODUCT_INSTANCE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(phmrProductInstance))
+    {
+      if (diagnostics != null)
+      {
+        diagnostics.add
+          (new BasicDiagnostic
+            (Diagnostic.INFO,
+             PhmrValidator.DIAGNOSTIC_SOURCE,
+             PhmrValidator.PHMR_PRODUCT_INSTANCE__PHMR_PRODUCT_INSTANCE_CODE,
+             PhmrPlugin.INSTANCE.getString("PHMRProductInstanceCode"),
+             new Object [] { phmrProductInstance }));
+      }
+       
+      return false;
+    }
+    return true;
+  }
 
 	/**
-	 * The cached OCL expression body for the '{@link #validatePHMRProductInstanceId(PHMRProductInstance, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate PHMR Product Instance Id</em>}' operation.
-	 * <!-- begin-user-doc -->
+   * The cached OCL expression body for the '{@link #validatePHMRProductInstanceId(PHMRProductInstance, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate PHMR Product Instance Id</em>}' operation.
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validatePHMRProductInstanceId(PHMRProductInstance, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
+   * @see #validatePHMRProductInstanceId(PHMRProductInstance, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+   * @generated
+   * @ordered
+   */
 	protected static final String VALIDATE_PHMR_PRODUCT_INSTANCE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.id->isEmpty() or self.id->exists(element | element.isNullFlavorUndefined())) implies (self.id->size() = 1)";
 
 	/**
-	 * The cached OCL invariant for the '{@link #validatePHMRProductInstanceId(PHMRProductInstance, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate PHMR Product Instance Id</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
+   * The cached OCL invariant for the '{@link #validatePHMRProductInstanceId(PHMRProductInstance, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate PHMR Product Instance Id</em>}' invariant operation.
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validatePHMRProductInstanceId(PHMRProductInstance, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
+   * @see #validatePHMRProductInstanceId(PHMRProductInstance, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+   * @generated
+   * @ordered
+   */
 	protected static Constraint VALIDATE_PHMR_PRODUCT_INSTANCE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * (self.id->isEmpty() or self.id->exists(element | element.isNullFlavorUndefined())) implies (self.id->size() = 1)
-	 * @param phmrProductInstance The receiving '<em><b>PHMR Product Instance</b></em>' model object.
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
+   * <!-- begin-model-doc -->
+   * @param phmrProductInstance The receiving '<em><b>PHMR Product Instance</b></em>' model object.
+   * @param diagnostics The chain of diagnostics to which problems are to be appended.
+   * @param context The cache of context-specific information.
+   * <!-- end-model-doc -->
+   * @generated
+   */
 	public static  boolean validatePHMRProductInstanceId(PHMRProductInstance phmrProductInstance, DiagnosticChain diagnostics, Map<Object, Object> context) {
-		if (VALIDATE_PHMR_PRODUCT_INSTANCE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setContext(PhmrPackage.Literals.PHMR_PRODUCT_INSTANCE);
-			try {
-				VALIDATE_PHMR_PRODUCT_INSTANCE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PHMR_PRODUCT_INSTANCE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
-				throw new UnsupportedOperationException(pe.getLocalizedMessage());
-			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PHMR_PRODUCT_INSTANCE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(phmrProductInstance)) {
-			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 PhmrValidator.DIAGNOSTIC_SOURCE,
-						 PhmrValidator.PHMR_PRODUCT_INSTANCE__PHMR_PRODUCT_INSTANCE_ID,
-						 PhmrPlugin.INSTANCE.getString("PHMRProductInstanceId"),
-						 new Object [] { phmrProductInstance }));
-			}
-			return false;
-		}
-		return true;
-	}
+  	  
+    if (VALIDATE_PHMR_PRODUCT_INSTANCE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+      OCL.Helper helper = EOCL_ENV.createOCLHelper();
+      helper.setContext(PhmrPackage.Literals.PHMR_PRODUCT_INSTANCE);
+      try
+      {
+        VALIDATE_PHMR_PRODUCT_INSTANCE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PHMR_PRODUCT_INSTANCE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+      }
+      catch (ParserException pe)
+      {
+        throw new UnsupportedOperationException(pe.getLocalizedMessage());
+      }
+    }
+    if (!EOCL_ENV.createQuery(VALIDATE_PHMR_PRODUCT_INSTANCE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(phmrProductInstance))
+    {
+      if (diagnostics != null)
+      {
+        diagnostics.add
+          (new BasicDiagnostic
+            (Diagnostic.ERROR,
+             PhmrValidator.DIAGNOSTIC_SOURCE,
+             PhmrValidator.PHMR_PRODUCT_INSTANCE__PHMR_PRODUCT_INSTANCE_ID,
+             PhmrPlugin.INSTANCE.getString("PHMRProductInstanceId"),
+             new Object [] { phmrProductInstance }));
+      }
+       
+      return false;
+    }
+    return true;
+  }
 
 	/**
-	 * The cached OCL expression body for the '{@link #validateProductInstanceTemplateId(PHMRProductInstance, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Product Instance Template Id</em>}' operation.
-	 * <!-- begin-user-doc -->
+   * The cached OCL expression body for the '{@link #validatePHMRProductInstanceScopingEntity(PHMRProductInstance, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate PHMR Product Instance Scoping Entity</em>}' operation.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #validatePHMRProductInstanceScopingEntity(PHMRProductInstance, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+   * @generated
+   * @ordered
+   */
+  protected static final String VALIDATE_PHMR_PRODUCT_INSTANCE_SCOPING_ENTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.scopingEntity->one(scopingEntity : cda::Entity | not scopingEntity.oclIsUndefined() and scopingEntity.oclIsKindOf(cda::Entity))";
+
+  /**
+   * The cached OCL invariant for the '{@link #validatePHMRProductInstanceScopingEntity(PHMRProductInstance, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate PHMR Product Instance Scoping Entity</em>}' invariant operation.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #validatePHMRProductInstanceScopingEntity(PHMRProductInstance, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+   * @generated
+   * @ordered
+   */
+  
+  protected static Constraint VALIDATE_PHMR_PRODUCT_INSTANCE_SCOPING_ENTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * <!-- begin-model-doc -->
+   * @param phmrProductInstance The receiving '<em><b>PHMR Product Instance</b></em>' model object.
+   * @param diagnostics The chain of diagnostics to which problems are to be appended.
+   * @param context The cache of context-specific information.
+   * <!-- end-model-doc -->
+   * @generated
+   */
+  
+  public static  boolean validatePHMRProductInstanceScopingEntity(PHMRProductInstance phmrProductInstance, DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+  	  
+    if (VALIDATE_PHMR_PRODUCT_INSTANCE_SCOPING_ENTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+      OCL.Helper helper = EOCL_ENV.createOCLHelper();
+      helper.setContext(PhmrPackage.Literals.PHMR_PRODUCT_INSTANCE);
+      try
+      {
+        VALIDATE_PHMR_PRODUCT_INSTANCE_SCOPING_ENTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PHMR_PRODUCT_INSTANCE_SCOPING_ENTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+      }
+      catch (ParserException pe)
+      {
+        throw new UnsupportedOperationException(pe.getLocalizedMessage());
+      }
+    }
+    if (!EOCL_ENV.createQuery(VALIDATE_PHMR_PRODUCT_INSTANCE_SCOPING_ENTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(phmrProductInstance))
+    {
+      if (diagnostics != null)
+      {
+        diagnostics.add
+          (new BasicDiagnostic
+            (Diagnostic.WARNING,
+             PhmrValidator.DIAGNOSTIC_SOURCE,
+             PhmrValidator.PHMR_PRODUCT_INSTANCE__PHMR_PRODUCT_INSTANCE_SCOPING_ENTITY,
+             PhmrPlugin.INSTANCE.getString("PHMRProductInstanceScopingEntity"),
+             new Object [] { phmrProductInstance }));
+      }
+       
+      return false;
+    }
+    return true;
+  }
+
+  /**
+   * The cached OCL expression body for the '{@link #validatePHMRProductInstancePlayingDevice(PHMRProductInstance, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate PHMR Product Instance Playing Device</em>}' operation.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #validatePHMRProductInstancePlayingDevice(PHMRProductInstance, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+   * @generated
+   * @ordered
+   */
+  protected static final String VALIDATE_PHMR_PRODUCT_INSTANCE_PLAYING_DEVICE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.playingDevice->one(playingDevice : cda::Device | not playingDevice.oclIsUndefined() and playingDevice.oclIsKindOf(cda::Device))";
+
+  /**
+   * The cached OCL invariant for the '{@link #validatePHMRProductInstancePlayingDevice(PHMRProductInstance, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate PHMR Product Instance Playing Device</em>}' invariant operation.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #validatePHMRProductInstancePlayingDevice(PHMRProductInstance, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+   * @generated
+   * @ordered
+   */
+  
+  protected static Constraint VALIDATE_PHMR_PRODUCT_INSTANCE_PLAYING_DEVICE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * <!-- begin-model-doc -->
+   * @param phmrProductInstance The receiving '<em><b>PHMR Product Instance</b></em>' model object.
+   * @param diagnostics The chain of diagnostics to which problems are to be appended.
+   * @param context The cache of context-specific information.
+   * <!-- end-model-doc -->
+   * @generated
+   */
+  
+  public static  boolean validatePHMRProductInstancePlayingDevice(PHMRProductInstance phmrProductInstance, DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+  	  
+    if (VALIDATE_PHMR_PRODUCT_INSTANCE_PLAYING_DEVICE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+      OCL.Helper helper = EOCL_ENV.createOCLHelper();
+      helper.setContext(PhmrPackage.Literals.PHMR_PRODUCT_INSTANCE);
+      try
+      {
+        VALIDATE_PHMR_PRODUCT_INSTANCE_PLAYING_DEVICE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PHMR_PRODUCT_INSTANCE_PLAYING_DEVICE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+      }
+      catch (ParserException pe)
+      {
+        throw new UnsupportedOperationException(pe.getLocalizedMessage());
+      }
+    }
+    if (!EOCL_ENV.createQuery(VALIDATE_PHMR_PRODUCT_INSTANCE_PLAYING_DEVICE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(phmrProductInstance))
+    {
+      if (diagnostics != null)
+      {
+        diagnostics.add
+          (new BasicDiagnostic
+            (Diagnostic.ERROR,
+             PhmrValidator.DIAGNOSTIC_SOURCE,
+             PhmrValidator.PHMR_PRODUCT_INSTANCE__PHMR_PRODUCT_INSTANCE_PLAYING_DEVICE,
+             PhmrPlugin.INSTANCE.getString("PHMRProductInstancePlayingDevice"),
+             new Object [] { phmrProductInstance }));
+      }
+       
+      return false;
+    }
+    return true;
+  }
+
+  /**
+   * The cached OCL expression body for the '{@link #validateProductInstanceTemplateId(PHMRProductInstance, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Product Instance Template Id</em>}' operation.
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateProductInstanceTemplateId(PHMRProductInstance, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
+   * @see #validateProductInstanceTemplateId(PHMRProductInstance, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+   * @generated
+   * @ordered
+   */
 	protected static final String VALIDATE_PRODUCT_INSTANCE_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.9.9')";
 
 	/**
-	 * The cached OCL invariant for the '{@link #validateProductInstanceTemplateId(PHMRProductInstance, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Product Instance Template Id</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
+   * The cached OCL invariant for the '{@link #validateProductInstanceTemplateId(PHMRProductInstance, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Product Instance Template Id</em>}' invariant operation.
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateProductInstanceTemplateId(PHMRProductInstance, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
+   * @see #validateProductInstanceTemplateId(PHMRProductInstance, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+   * @generated
+   * @ordered
+   */
 	protected static Constraint VALIDATE_PRODUCT_INSTANCE_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.9.9')
-	 * @param phmrProductInstance The receiving '<em><b>PHMR Product Instance</b></em>' model object.
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
+   * <!-- begin-model-doc -->
+   * @param phmrProductInstance The receiving '<em><b>PHMR Product Instance</b></em>' model object.
+   * @param diagnostics The chain of diagnostics to which problems are to be appended.
+   * @param context The cache of context-specific information.
+   * <!-- end-model-doc -->
+   * @generated
+   */
 	public static  boolean validateProductInstanceTemplateId(PHMRProductInstance phmrProductInstance, DiagnosticChain diagnostics, Map<Object, Object> context) {
-		if (VALIDATE_PRODUCT_INSTANCE_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setContext(PhmrPackage.Literals.PHMR_PRODUCT_INSTANCE);
-			try {
-				VALIDATE_PRODUCT_INSTANCE_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PRODUCT_INSTANCE_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
-				throw new UnsupportedOperationException(pe.getLocalizedMessage());
-			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PRODUCT_INSTANCE_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(phmrProductInstance)) {
-			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 PhmrValidator.DIAGNOSTIC_SOURCE,
-						 PhmrValidator.PHMR_PRODUCT_INSTANCE__PRODUCT_INSTANCE_TEMPLATE_ID,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "ProductInstanceTemplateId", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(phmrProductInstance, context) }),
-						 new Object [] { phmrProductInstance }));
-			}
-			return false;
-		}
-		return true;
-	}
+  	  
+    if (VALIDATE_PRODUCT_INSTANCE_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+      OCL.Helper helper = EOCL_ENV.createOCLHelper();
+      helper.setContext(PhmrPackage.Literals.PHMR_PRODUCT_INSTANCE);
+      try
+      {
+        VALIDATE_PRODUCT_INSTANCE_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PRODUCT_INSTANCE_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+      }
+      catch (ParserException pe)
+      {
+        throw new UnsupportedOperationException(pe.getLocalizedMessage());
+      }
+    }
+    if (!EOCL_ENV.createQuery(VALIDATE_PRODUCT_INSTANCE_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(phmrProductInstance))
+    {
+      if (diagnostics != null)
+      {
+        diagnostics.add
+          (new BasicDiagnostic
+            (Diagnostic.ERROR,
+             PhmrValidator.DIAGNOSTIC_SOURCE,
+             PhmrValidator.PHMR_PRODUCT_INSTANCE__PRODUCT_INSTANCE_TEMPLATE_ID,
+             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "ProductInstanceTemplateId", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(phmrProductInstance, context) }),
+             new Object [] { phmrProductInstance }));
+      }
+       
+      return false;
+    }
+    return true;
+  }
 
 } // PHMRProductInstanceOperations

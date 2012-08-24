@@ -6,10 +6,13 @@
  */
 package org.openhealthtools.mdht.uml.cda.sdtm;
 
+import java.lang.Iterable;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
 
+import org.eclipse.emf.ecore.EObject;
+import org.openhealthtools.mdht.emf.runtime.util.Initializer;
 import org.openhealthtools.mdht.uml.cda.Observation;
 
 /**
@@ -19,11 +22,11 @@ import org.openhealthtools.mdht.uml.cda.Observation;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.sdtm.SdtmPackage#getPharmacokineticParameterFinding()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation templateId.root='2.16.840.1.113883.10.20.23.40' constraints.validation.error='Pharmacokinetic Parameter FindingTemplateId Pharmacokinetic Parameter FindingClassCode Pharmacokinetic Parameter FindingCode Pharmacokinetic Parameter FindingId Pharmacokinetic Parameter FindingMoodCode Pharmacokinetic Parameter FindingpharmacokineticsParameterCategoryAssociationTypeCode Pharmacokinetic Parameter FindingpharmacokineticsParameterSubCategoryAssociationTypeCode' constraints.validation.warning='Pharmacokinetic Parameter FindingValue Pharmacokinetic Parameter FindingTiming Reference' classCode='OBS' constraints.validation.query='Pharmacokinetic Parameter FindingpharmacokineticsParameterCategoryAssociationTypeCode Pharmacokinetic Parameter FindingpharmacokineticsParameterSubCategoryAssociationTypeCode' constraints.validation.info='Pharmacokinetic Parameter FindingStatusCode Pharmacokinetic Parameter FindingGroup Identifier Pharmacokinetic Parameter FindingSpecimen Information Pharmacokinetic Parameter FindingPharmacokineticsParameterCategoryAssociation Pharmacokinetic Parameter FindingPharmacokineticsParameterSubCategoryAssociation Pharmacokinetic Parameter FindingNon Performance Reason' moodCode='EVN'"
- *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/sdtmPharmacokineticParameterFindingpharmacokineticsParameterCategoryAssociation constraints.validation.error='pharmacokineticsParameterCategoryAssociationTypeCode' typeCode='COMP'"
- *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/sdtmPharmacokineticParameterFindingpharmacokineticsParameterCategoryAssociationpharmacokineticsParameterCategory constraints.validation.error='pharmacokineticsParameterCategoryClassCode pharmacokineticsParameterCategoryCode pharmacokineticsParameterCategoryMoodCode pharmacokineticsParameterCategoryValue' classCode='OBS' moodCode='EVN'"
- *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/sdtmPharmacokineticParameterFindingpharmacokineticsParameterSubCategoryAssociation constraints.validation.error='pharmacokineticsParameterSubCategoryAssociationTypeCode' typeCode='COMP'"
- *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/sdtmPharmacokineticParameterFindingpharmacokineticsParameterSubCategoryAssociationpharmacokineticsParameterSubCategory constraints.validation.error='pharmacokineticsParameterSubCategoryClassCode pharmacokineticsParameterSubCategoryCode pharmacokineticsParameterSubCategoryMoodCode pharmacokineticsParameterSubCategoryValue' classCode='OBS' moodCode='EVN'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='Pharmacokinetic Parameter FindingTemplateId Pharmacokinetic Parameter FindingClassCode Pharmacokinetic Parameter FindingCode Pharmacokinetic Parameter FindingId Pharmacokinetic Parameter FindingMoodCode Pharmacokinetic Parameter FindingpharmacokineticsParameterCategoryAssociationpharmacokineticsParameterCategoryClassCode Pharmacokinetic Parameter FindingpharmacokineticsParameterCategoryAssociationpharmacokineticsParameterCategoryCode Pharmacokinetic Parameter FindingpharmacokineticsParameterCategoryAssociationpharmacokineticsParameterCategoryMoodCode Pharmacokinetic Parameter FindingpharmacokineticsParameterCategoryAssociationpharmacokineticsParameterCategoryValue Pharmacokinetic Parameter FindingpharmacokineticsParameterCategoryAssociationTypeCode Pharmacokinetic Parameter FindingpharmacokineticsParameterCategoryAssociationPharmacokineticsParameterCategory Pharmacokinetic Parameter FindingpharmacokineticsParameterSubCategoryAssociationpharmacokineticsParameterSubCategoryClassCode Pharmacokinetic Parameter FindingpharmacokineticsParameterSubCategoryAssociationpharmacokineticsParameterSubCategoryCode Pharmacokinetic Parameter FindingpharmacokineticsParameterSubCategoryAssociationpharmacokineticsParameterSubCategoryMoodCode Pharmacokinetic Parameter FindingpharmacokineticsParameterSubCategoryAssociationpharmacokineticsParameterSubCategoryValue Pharmacokinetic Parameter FindingpharmacokineticsParameterSubCategoryAssociationTypeCode Pharmacokinetic Parameter FindingpharmacokineticsParameterSubCategoryAssociationPharmacokineticsParameterSubCategory' templateId.root='2.16.840.1.113883.10.20.23.40' classCode='OBS' moodCode='EVN' constraints.validation.info='Pharmacokinetic Parameter FindingStatusCode Pharmacokinetic Parameter FindingGroup Identifier Pharmacokinetic Parameter FindingSpecimen Information Pharmacokinetic Parameter FindingPharmacokineticsParameterCategoryAssociation Pharmacokinetic Parameter FindingPharmacokineticsParameterSubCategoryAssociation Pharmacokinetic Parameter FindingNon Performance Reason' constraints.validation.warning='Pharmacokinetic Parameter FindingValue Pharmacokinetic Parameter FindingTiming Reference' constraints.validation.query='Pharmacokinetic Parameter FindingpharmacokineticsParameterCategoryAssociationpharmacokineticsParameterCategoryClassCode Pharmacokinetic Parameter FindingpharmacokineticsParameterCategoryAssociationpharmacokineticsParameterCategoryCode Pharmacokinetic Parameter FindingpharmacokineticsParameterCategoryAssociationpharmacokineticsParameterCategoryMoodCode Pharmacokinetic Parameter FindingpharmacokineticsParameterCategoryAssociationpharmacokineticsParameterCategoryValue Pharmacokinetic Parameter FindingpharmacokineticsParameterCategoryAssociationTypeCode Pharmacokinetic Parameter FindingpharmacokineticsParameterCategoryAssociationPharmacokineticsParameterCategory Pharmacokinetic Parameter FindingpharmacokineticsParameterSubCategoryAssociationpharmacokineticsParameterSubCategoryClassCode Pharmacokinetic Parameter FindingpharmacokineticsParameterSubCategoryAssociationpharmacokineticsParameterSubCategoryCode Pharmacokinetic Parameter FindingpharmacokineticsParameterSubCategoryAssociationpharmacokineticsParameterSubCategoryMoodCode Pharmacokinetic Parameter FindingpharmacokineticsParameterSubCategoryAssociationpharmacokineticsParameterSubCategoryValue Pharmacokinetic Parameter FindingpharmacokineticsParameterSubCategoryAssociationTypeCode Pharmacokinetic Parameter FindingpharmacokineticsParameterSubCategoryAssociationPharmacokineticsParameterSubCategory'"
+ *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/sdtmPharmacokineticParameterFindingpharmacokineticsParameterCategoryAssociation typeCode='COMP' constraints.validation.error='pharmacokineticsParameterCategoryAssociationTypeCode pharmacokineticsParameterCategoryAssociationPharmacokineticsParameterCategory pharmacokineticsParameterCategoryAssociationpharmacokineticsParameterCategoryClassCode pharmacokineticsParameterCategoryAssociationpharmacokineticsParameterCategoryCode pharmacokineticsParameterCategoryAssociationpharmacokineticsParameterCategoryMoodCode pharmacokineticsParameterCategoryAssociationpharmacokineticsParameterCategoryValue' constraints.validation.query='pharmacokineticsParameterCategoryAssociationpharmacokineticsParameterCategoryClassCode pharmacokineticsParameterCategoryAssociationpharmacokineticsParameterCategoryCode pharmacokineticsParameterCategoryAssociationpharmacokineticsParameterCategoryMoodCode pharmacokineticsParameterCategoryAssociationpharmacokineticsParameterCategoryValue'"
+ *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/sdtmPharmacokineticParameterFindingpharmacokineticsParameterCategoryAssociationpharmacokineticsParameterCategory classCode='OBS' constraints.validation.error='pharmacokineticsParameterCategoryClassCode pharmacokineticsParameterCategoryCode pharmacokineticsParameterCategoryMoodCode pharmacokineticsParameterCategoryValue' moodCode='EVN'"
+ *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/sdtmPharmacokineticParameterFindingpharmacokineticsParameterSubCategoryAssociation typeCode='COMP' constraints.validation.error='pharmacokineticsParameterSubCategoryAssociationTypeCode pharmacokineticsParameterSubCategoryAssociationPharmacokineticsParameterSubCategory pharmacokineticsParameterSubCategoryAssociationpharmacokineticsParameterSubCategoryClassCode pharmacokineticsParameterSubCategoryAssociationpharmacokineticsParameterSubCategoryCode pharmacokineticsParameterSubCategoryAssociationpharmacokineticsParameterSubCategoryMoodCode pharmacokineticsParameterSubCategoryAssociationpharmacokineticsParameterSubCategoryValue' constraints.validation.query='pharmacokineticsParameterSubCategoryAssociationpharmacokineticsParameterSubCategoryClassCode pharmacokineticsParameterSubCategoryAssociationpharmacokineticsParameterSubCategoryCode pharmacokineticsParameterSubCategoryAssociationpharmacokineticsParameterSubCategoryMoodCode pharmacokineticsParameterSubCategoryAssociationpharmacokineticsParameterSubCategoryValue'"
+ *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/sdtmPharmacokineticParameterFindingpharmacokineticsParameterSubCategoryAssociationpharmacokineticsParameterSubCategory classCode='OBS' constraints.validation.error='pharmacokineticsParameterSubCategoryClassCode pharmacokineticsParameterSubCategoryCode pharmacokineticsParameterSubCategoryMoodCode pharmacokineticsParameterSubCategoryValue' moodCode='EVN'"
  * @generated
  */
 public interface PharmacokineticParameterFinding extends Observation
@@ -32,7 +35,6 @@ public interface PharmacokineticParameterFinding extends Observation
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.23.40')
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
    * <!-- end-model-doc -->
@@ -45,7 +47,6 @@ public interface PharmacokineticParameterFinding extends Observation
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.classCode=vocab::ActClassObservation::OBS
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
    * <!-- end-model-doc -->
@@ -58,7 +59,6 @@ public interface PharmacokineticParameterFinding extends Observation
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * (self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined())
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
    * <!-- end-model-doc -->
@@ -71,7 +71,6 @@ public interface PharmacokineticParameterFinding extends Observation
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * (self.id->isEmpty() or self.id->exists(element | element.isNullFlavorUndefined())) implies (self.id->size() = 1)
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
    * <!-- end-model-doc -->
@@ -84,7 +83,6 @@ public interface PharmacokineticParameterFinding extends Observation
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.moodCode=vocab::x_ActMoodDocumentObservation::EVN
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
    * <!-- end-model-doc -->
@@ -97,7 +95,6 @@ public interface PharmacokineticParameterFinding extends Observation
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * (self.statusCode.oclIsUndefined() or self.statusCode.isNullFlavorUndefined()) implies (not self.statusCode.oclIsUndefined())
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
    * <!-- end-model-doc -->
@@ -110,11 +107,10 @@ public interface PharmacokineticParameterFinding extends Observation
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * (self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (self.value->forAll(element | element.oclIsTypeOf(datatypes::CD)))
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
    * <!-- end-model-doc -->
-   * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (self.value->forAll(element | element.oclIsTypeOf(datatypes::CD)))'"
+   * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (not self.value->isEmpty())'"
    * @generated
    */
   boolean validatePharmacokineticParameterFindingValue(DiagnosticChain diagnostics, Map<Object, Object> context);
@@ -123,7 +119,6 @@ public interface PharmacokineticParameterFinding extends Observation
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.entryRelationship->one(entryRelationship : cda::EntryRelationship | not entryRelationship.act.oclIsUndefined() and entryRelationship.act.oclIsKindOf(sdtm::Group Identifier) and entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::COMP)
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
    * <!-- end-model-doc -->
@@ -136,7 +131,6 @@ public interface PharmacokineticParameterFinding extends Observation
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.entryRelationship->one(entryRelationship : cda::EntryRelationship | not entryRelationship.procedure.oclIsUndefined() and entryRelationship.procedure.oclIsKindOf(sdtm::Specimen Information) and entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::COMP)
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
    * <!-- end-model-doc -->
@@ -149,7 +143,6 @@ public interface PharmacokineticParameterFinding extends Observation
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.entryRelationship->one(entryRelationship : cda::EntryRelationship | not entryRelationship.oclIsUndefined() and entryRelationship.oclIsKindOf(cda::EntryRelationship))
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
    * <!-- end-model-doc -->
@@ -162,7 +155,6 @@ public interface PharmacokineticParameterFinding extends Observation
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.entryRelationship->one(entryRelationship : cda::EntryRelationship | not entryRelationship.oclIsUndefined() and entryRelationship.oclIsKindOf(cda::EntryRelationship))
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
    * <!-- end-model-doc -->
@@ -175,7 +167,6 @@ public interface PharmacokineticParameterFinding extends Observation
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.entryRelationship->one(entryRelationship : cda::EntryRelationship | not entryRelationship.observation.oclIsUndefined() and entryRelationship.observation.oclIsKindOf(sdtm::Non Performance Reason))
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
    * <!-- end-model-doc -->
@@ -188,7 +179,6 @@ public interface PharmacokineticParameterFinding extends Observation
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.entryRelationship->one(entryRelationship : cda::EntryRelationship | not entryRelationship.act.oclIsUndefined() and entryRelationship.act.oclIsKindOf(sdtm::Timing Reference) and entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::COMP)
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
    * <!-- end-model-doc -->
@@ -201,7 +191,54 @@ public interface PharmacokineticParameterFinding extends Observation
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.entryRelationship->excluding(null)->reject(typeCode=vocab::x_ActRelationshipEntryRelationship::COMP)
+   * @param diagnostics The chain of diagnostics to which problems are to be appended.
+   * @param context The cache of context-specific information.
+   * <!-- end-model-doc -->
+   * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship->excluding(null).observation->excluding(null)->reject(classCode=vocab::ActClassObservation::OBS)'"
+   * @generated
+   */
+  boolean validatePharmacokineticParameterFindingpharmacokineticsParameterCategoryAssociationpharmacokineticsParameterCategoryClassCode(DiagnosticChain diagnostics, Map<Object, Object> context);
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * <!-- begin-model-doc -->
+   * @param diagnostics The chain of diagnostics to which problems are to be appended.
+   * @param context The cache of context-specific information.
+   * <!-- end-model-doc -->
+   * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship->excluding(null).observation->excluding(null)->reject((code.oclIsUndefined() or code.isNullFlavorUndefined()) implies (not code.oclIsUndefined()))'"
+   * @generated
+   */
+  boolean validatePharmacokineticParameterFindingpharmacokineticsParameterCategoryAssociationpharmacokineticsParameterCategoryCode(DiagnosticChain diagnostics, Map<Object, Object> context);
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * <!-- begin-model-doc -->
+   * @param diagnostics The chain of diagnostics to which problems are to be appended.
+   * @param context The cache of context-specific information.
+   * <!-- end-model-doc -->
+   * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship->excluding(null).observation->excluding(null)->reject(moodCode=vocab::x_ActMoodDocumentObservation::EVN)'"
+   * @generated
+   */
+  boolean validatePharmacokineticParameterFindingpharmacokineticsParameterCategoryAssociationpharmacokineticsParameterCategoryMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context);
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * <!-- begin-model-doc -->
+   * @param diagnostics The chain of diagnostics to which problems are to be appended.
+   * @param context The cache of context-specific information.
+   * <!-- end-model-doc -->
+   * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship->excluding(null).observation->excluding(null)->reject((value->isEmpty() or value->exists(element | element.isNullFlavorUndefined())) implies (value->size() = 1 and value->forAll(element | element.oclIsTypeOf(datatypes::CE))))'"
+   * @generated
+   */
+  boolean validatePharmacokineticParameterFindingpharmacokineticsParameterCategoryAssociationpharmacokineticsParameterCategoryValue(DiagnosticChain diagnostics, Map<Object, Object> context);
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * <!-- begin-model-doc -->
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
    * <!-- end-model-doc -->
@@ -214,7 +251,66 @@ public interface PharmacokineticParameterFinding extends Observation
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.entryRelationship->excluding(null)->reject(typeCode=vocab::x_ActRelationshipEntryRelationship::COMP)
+   * @param diagnostics The chain of diagnostics to which problems are to be appended.
+   * @param context The cache of context-specific information.
+   * <!-- end-model-doc -->
+   * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship->excluding(null)->reject(observation->one(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(cda::Observation)))'"
+   * @generated
+   */
+  boolean validatePharmacokineticParameterFindingpharmacokineticsParameterCategoryAssociationPharmacokineticsParameterCategory(DiagnosticChain diagnostics, Map<Object, Object> context);
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * <!-- begin-model-doc -->
+   * @param diagnostics The chain of diagnostics to which problems are to be appended.
+   * @param context The cache of context-specific information.
+   * <!-- end-model-doc -->
+   * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship->excluding(null).observation->excluding(null)->reject(classCode=vocab::ActClassObservation::OBS)'"
+   * @generated
+   */
+  boolean validatePharmacokineticParameterFindingpharmacokineticsParameterSubCategoryAssociationpharmacokineticsParameterSubCategoryClassCode(DiagnosticChain diagnostics, Map<Object, Object> context);
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * <!-- begin-model-doc -->
+   * @param diagnostics The chain of diagnostics to which problems are to be appended.
+   * @param context The cache of context-specific information.
+   * <!-- end-model-doc -->
+   * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship->excluding(null).observation->excluding(null)->reject((code.oclIsUndefined() or code.isNullFlavorUndefined()) implies (not code.oclIsUndefined()))'"
+   * @generated
+   */
+  boolean validatePharmacokineticParameterFindingpharmacokineticsParameterSubCategoryAssociationpharmacokineticsParameterSubCategoryCode(DiagnosticChain diagnostics, Map<Object, Object> context);
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * <!-- begin-model-doc -->
+   * @param diagnostics The chain of diagnostics to which problems are to be appended.
+   * @param context The cache of context-specific information.
+   * <!-- end-model-doc -->
+   * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship->excluding(null).observation->excluding(null)->reject(moodCode=vocab::x_ActMoodDocumentObservation::EVN)'"
+   * @generated
+   */
+  boolean validatePharmacokineticParameterFindingpharmacokineticsParameterSubCategoryAssociationpharmacokineticsParameterSubCategoryMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context);
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * <!-- begin-model-doc -->
+   * @param diagnostics The chain of diagnostics to which problems are to be appended.
+   * @param context The cache of context-specific information.
+   * <!-- end-model-doc -->
+   * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship->excluding(null).observation->excluding(null)->reject((value->isEmpty() or value->exists(element | element.isNullFlavorUndefined())) implies (value->size() = 1 and value->forAll(element | element.oclIsTypeOf(datatypes::CE))))'"
+   * @generated
+   */
+  boolean validatePharmacokineticParameterFindingpharmacokineticsParameterSubCategoryAssociationpharmacokineticsParameterSubCategoryValue(DiagnosticChain diagnostics, Map<Object, Object> context);
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * <!-- begin-model-doc -->
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
    * <!-- end-model-doc -->
@@ -227,10 +323,19 @@ public interface PharmacokineticParameterFinding extends Observation
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(sdtm::Group Identifier))->asSequence()->first().oclAsType(sdtm::Group Identifier)
+   * @param diagnostics The chain of diagnostics to which problems are to be appended.
+   * @param context The cache of context-specific information.
    * <!-- end-model-doc -->
+   * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship->excluding(null)->reject(observation->one(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(cda::Observation)))'"
+   * @generated
+   */
+  boolean validatePharmacokineticParameterFindingpharmacokineticsParameterSubCategoryAssociationPharmacokineticsParameterSubCategory(DiagnosticChain diagnostics, Map<Object, Object> context);
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
    * @model kind="operation" required="true" ordered="false"
-   *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(sdtm::Group Identifier))->asSequence()->first().oclAsType(sdtm::Group Identifier)'"
+   *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(sdtm::Group Identifier))->asSequence()->any(true).oclAsType(sdtm::Group Identifier)'"
    * @generated
    */
   GroupIdentifier getGroupIdentifier();
@@ -238,11 +343,8 @@ public interface PharmacokineticParameterFinding extends Observation
   /**
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * <!-- begin-model-doc -->
-   * self.getProcedures()->select(procedure : cda::Procedure | not procedure.oclIsUndefined() and procedure.oclIsKindOf(sdtm::Specimen Information))->asSequence()->first().oclAsType(sdtm::Specimen Information)
-   * <!-- end-model-doc -->
    * @model kind="operation" required="true" ordered="false"
-   *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getProcedures()->select(procedure : cda::Procedure | not procedure.oclIsUndefined() and procedure.oclIsKindOf(sdtm::Specimen Information))->asSequence()->first().oclAsType(sdtm::Specimen Information)'"
+   *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getProcedures()->select(procedure : cda::Procedure | not procedure.oclIsUndefined() and procedure.oclIsKindOf(sdtm::Specimen Information))->asSequence()->any(true).oclAsType(sdtm::Specimen Information)'"
    * @generated
    */
   SpecimenInformation getSpecimenInformation();
@@ -250,11 +352,8 @@ public interface PharmacokineticParameterFinding extends Observation
   /**
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * <!-- begin-model-doc -->
-   * self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(sdtm::Non Performance Reason))->asSequence()->first().oclAsType(sdtm::Non Performance Reason)
-   * <!-- end-model-doc -->
    * @model kind="operation" required="true" ordered="false"
-   *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(sdtm::Non Performance Reason))->asSequence()->first().oclAsType(sdtm::Non Performance Reason)'"
+   *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(sdtm::Non Performance Reason))->asSequence()->any(true).oclAsType(sdtm::Non Performance Reason)'"
    * @generated
    */
   NonPerformanceReason getNonPerformanceReason();
@@ -262,11 +361,8 @@ public interface PharmacokineticParameterFinding extends Observation
   /**
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * <!-- begin-model-doc -->
-   * self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(sdtm::Timing Reference))->asSequence()->first().oclAsType(sdtm::Timing Reference)
-   * <!-- end-model-doc -->
    * @model kind="operation" required="true" ordered="false"
-   *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(sdtm::Timing Reference))->asSequence()->first().oclAsType(sdtm::Timing Reference)'"
+   *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(sdtm::Timing Reference))->asSequence()->any(true).oclAsType(sdtm::Timing Reference)'"
    * @generated
    */
   TimingReference getTimingReference();
@@ -277,4 +373,11 @@ public interface PharmacokineticParameterFinding extends Observation
    * @generated
    */
   public PharmacokineticParameterFinding init();
+
+  /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    public PharmacokineticParameterFinding init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // PharmacokineticParameterFinding

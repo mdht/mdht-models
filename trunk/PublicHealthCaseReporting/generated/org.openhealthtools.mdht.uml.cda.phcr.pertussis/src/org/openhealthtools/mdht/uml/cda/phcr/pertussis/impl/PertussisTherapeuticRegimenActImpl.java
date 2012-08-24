@@ -10,6 +10,7 @@
  *******************************************************************************/
 package org.openhealthtools.mdht.uml.cda.phcr.pertussis.impl;
 
+import java.lang.Iterable;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
@@ -17,6 +18,8 @@ import org.eclipse.emf.common.util.EList;
 
 import org.eclipse.emf.ecore.EClass;
 
+import org.eclipse.emf.ecore.EObject;
+import org.openhealthtools.mdht.emf.runtime.util.Initializer;
 import org.openhealthtools.mdht.uml.cda.phcr.impl.TherapeuticRegimenActImpl;
 
 import org.openhealthtools.mdht.uml.cda.phcr.pertussis.PertussisPackage;
@@ -39,77 +42,86 @@ import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
  */
 public class PertussisTherapeuticRegimenActImpl extends TherapeuticRegimenActImpl implements PertussisTherapeuticRegimenAct {
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	protected PertussisTherapeuticRegimenActImpl() {
-		super();
-	}
+    super();
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	@Override
 	protected EClass eStaticClass() {
-		return PertussisPackage.Literals.PERTUSSIS_THERAPEUTIC_REGIMEN_ACT;
-	}
+    return PertussisPackage.Literals.PERTUSSIS_THERAPEUTIC_REGIMEN_ACT;
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validatePertussisTherapeuticRegimenActPertussisTreatmentGivenSubstanceAdministration(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return PertussisTherapeuticRegimenActOperations.validatePertussisTherapeuticRegimenActPertussisTreatmentGivenSubstanceAdministration(this, diagnostics, context);
-	}
+    return PertussisTherapeuticRegimenActOperations.validatePertussisTherapeuticRegimenActPertussisTreatmentGivenSubstanceAdministration(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validatePertussisTherapeuticRegimenActPertussisTreatmentNotGivenSubstanceAdministration(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return PertussisTherapeuticRegimenActOperations.validatePertussisTherapeuticRegimenActPertussisTreatmentNotGivenSubstanceAdministration(this, diagnostics, context);
-	}
+    return PertussisTherapeuticRegimenActOperations.validatePertussisTherapeuticRegimenActPertussisTreatmentNotGivenSubstanceAdministration(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public EList<PertussisTreatmentGivenSubstanceAdministration> getPertussisTreatmentGivenSubstanceAdministrations() {
-		return PertussisTherapeuticRegimenActOperations.getPertussisTreatmentGivenSubstanceAdministrations(this);
-	}
+    return PertussisTherapeuticRegimenActOperations.getPertussisTreatmentGivenSubstanceAdministrations(this);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public EList<PertussisTreatmentNotGivenSubstanceAdministration> getPertussisTreatmentNotGivenSubstanceAdministrations() {
-		return PertussisTherapeuticRegimenActOperations.getPertussisTreatmentNotGivenSubstanceAdministrations(this);
-	}
+    return PertussisTherapeuticRegimenActOperations.getPertussisTreatmentNotGivenSubstanceAdministrations(this);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	@Override
 	public boolean validateTherapeuticRegimenActTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return PertussisTherapeuticRegimenActOperations.validateTherapeuticRegimenActTemplateId(this, diagnostics, context);
-	}
+    return PertussisTherapeuticRegimenActOperations.validateTherapeuticRegimenActTemplateId(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public PertussisTherapeuticRegimenAct init() {
-    	CDAUtil.init(this);
-    	return this;
-	}
+      return Initializer.Util.init(this);
+  }
+
+  /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    public PertussisTherapeuticRegimenAct init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
 } //PertussisTherapeuticRegimenActImpl

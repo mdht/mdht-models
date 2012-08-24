@@ -6,12 +6,15 @@
  */
 package org.openhealthtools.mdht.uml.cda.sdtm.impl;
 
+import java.lang.Iterable;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
 
 import org.eclipse.emf.ecore.EClass;
 
+import org.eclipse.emf.ecore.EObject;
+import org.openhealthtools.mdht.emf.runtime.util.Initializer;
 import org.openhealthtools.mdht.uml.cda.impl.ProcedureImpl;
 
 import org.openhealthtools.mdht.uml.cda.sdtm.EventStudyDay;
@@ -120,16 +123,6 @@ public class SpecimenInformationImpl extends ProcedureImpl implements SpecimenIn
    * <!-- end-user-doc -->
    * @generated
    */
-  public boolean validateSpecimenInformationTargetSiteCode(DiagnosticChain diagnostics, Map<Object, Object> context)
-  {
-    return SpecimenInformationOperations.validateSpecimenInformationTargetSiteCode(this, diagnostics, context);
-  }
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
   public boolean validateSpecimenInformationParticipatingSpecimen(DiagnosticChain diagnostics, Map<Object, Object> context)
   {
     return SpecimenInformationOperations.validateSpecimenInformationParticipatingSpecimen(this, diagnostics, context);
@@ -163,6 +156,26 @@ public class SpecimenInformationImpl extends ProcedureImpl implements SpecimenIn
   public boolean validateSpecimenInformationTimingReference(DiagnosticChain diagnostics, Map<Object, Object> context)
   {
     return SpecimenInformationOperations.validateSpecimenInformationTimingReference(this, diagnostics, context);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public boolean validateSpecimenInformationPortionAssociation(DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+    return SpecimenInformationOperations.validateSpecimenInformationPortionAssociation(this, diagnostics, context);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public boolean validateSpecimenInformationUsabilityAssociation(DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+    return SpecimenInformationOperations.validateSpecimenInformationUsabilityAssociation(this, diagnostics, context);
   }
 
   /**
@@ -220,6 +233,16 @@ public class SpecimenInformationImpl extends ProcedureImpl implements SpecimenIn
    * <!-- end-user-doc -->
    * @generated
    */
+  public boolean validateSpecimenInformationparticipatingSpecimenTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+    return SpecimenInformationOperations.validateSpecimenInformationparticipatingSpecimenTemplateId(this, diagnostics, context);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
   public boolean validateSpecimenInformationparticipatingSpecimenTypeCode(DiagnosticChain diagnostics, Map<Object, Object> context)
   {
     return SpecimenInformationOperations.validateSpecimenInformationparticipatingSpecimenTypeCode(this, diagnostics, context);
@@ -233,6 +256,126 @@ public class SpecimenInformationImpl extends ProcedureImpl implements SpecimenIn
   public boolean validateSpecimenInformationparticipatingSpecimenRoleOfSpecimen(DiagnosticChain diagnostics, Map<Object, Object> context)
   {
     return SpecimenInformationOperations.validateSpecimenInformationparticipatingSpecimenRoleOfSpecimen(this, diagnostics, context);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public boolean validateSpecimenInformationportionAssociationportionOrTotalityCodeP(DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+    return SpecimenInformationOperations.validateSpecimenInformationportionAssociationportionOrTotalityCodeP(this, diagnostics, context);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public boolean validateSpecimenInformationportionAssociationportionOrTotalityCode(DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+    return SpecimenInformationOperations.validateSpecimenInformationportionAssociationportionOrTotalityCode(this, diagnostics, context);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public boolean validateSpecimenInformationportionAssociationportionOrTotalityMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+    return SpecimenInformationOperations.validateSpecimenInformationportionAssociationportionOrTotalityMoodCode(this, diagnostics, context);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public boolean validateSpecimenInformationportionAssociationportionOrTotalityValue(DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+    return SpecimenInformationOperations.validateSpecimenInformationportionAssociationportionOrTotalityValue(this, diagnostics, context);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public boolean validateSpecimenInformationportionAssociationTypeCode(DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+    return SpecimenInformationOperations.validateSpecimenInformationportionAssociationTypeCode(this, diagnostics, context);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public boolean validateSpecimenInformationportionAssociationSpecimenCondition(DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+    return SpecimenInformationOperations.validateSpecimenInformationportionAssociationSpecimenCondition(this, diagnostics, context);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public boolean validateSpecimenInformationusabilityAssociationspecimenUsabilityCodeP(DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+    return SpecimenInformationOperations.validateSpecimenInformationusabilityAssociationspecimenUsabilityCodeP(this, diagnostics, context);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public boolean validateSpecimenInformationusabilityAssociationspecimenUsabilityCode(DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+    return SpecimenInformationOperations.validateSpecimenInformationusabilityAssociationspecimenUsabilityCode(this, diagnostics, context);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public boolean validateSpecimenInformationusabilityAssociationspecimenUsabilityMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+    return SpecimenInformationOperations.validateSpecimenInformationusabilityAssociationspecimenUsabilityMoodCode(this, diagnostics, context);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public boolean validateSpecimenInformationusabilityAssociationspecimenUsabilityValue(DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+    return SpecimenInformationOperations.validateSpecimenInformationusabilityAssociationspecimenUsabilityValue(this, diagnostics, context);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public boolean validateSpecimenInformationusabilityAssociationTypeCode(DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+    return SpecimenInformationOperations.validateSpecimenInformationusabilityAssociationTypeCode(this, diagnostics, context);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public boolean validateSpecimenInformationusabilityAssociationSpecimenUsability(DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+    return SpecimenInformationOperations.validateSpecimenInformationusabilityAssociationSpecimenUsability(this, diagnostics, context);
   }
 
   /**
@@ -300,46 +443,6 @@ public class SpecimenInformationImpl extends ProcedureImpl implements SpecimenIn
    * <!-- end-user-doc -->
    * @generated
    */
-  public boolean validateSpecimenInformationconditionAssociationspecimenConditionCodePSpecimenInformationconditionAssociationspecimenConditionCodeP1(DiagnosticChain diagnostics, Map<Object, Object> context)
-  {
-    return SpecimenInformationOperations.validateSpecimenInformationconditionAssociationspecimenConditionCodePSpecimenInformationconditionAssociationspecimenConditionCodeP1(this, diagnostics, context);
-  }
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public boolean validateSpecimenInformationconditionAssociationspecimenConditionCodeSpecimenInformationconditionAssociationspecimenConditionCode1(DiagnosticChain diagnostics, Map<Object, Object> context)
-  {
-    return SpecimenInformationOperations.validateSpecimenInformationconditionAssociationspecimenConditionCodeSpecimenInformationconditionAssociationspecimenConditionCode1(this, diagnostics, context);
-  }
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public boolean validateSpecimenInformationconditionAssociationspecimenConditionMoodCodeSpecimenInformationconditionAssociationspecimenConditionMoodCode1(DiagnosticChain diagnostics, Map<Object, Object> context)
-  {
-    return SpecimenInformationOperations.validateSpecimenInformationconditionAssociationspecimenConditionMoodCodeSpecimenInformationconditionAssociationspecimenConditionMoodCode1(this, diagnostics, context);
-  }
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public boolean validateSpecimenInformationconditionAssociationspecimenConditionValueSpecimenInformationconditionAssociationspecimenConditionValue1(DiagnosticChain diagnostics, Map<Object, Object> context)
-  {
-    return SpecimenInformationOperations.validateSpecimenInformationconditionAssociationspecimenConditionValueSpecimenInformationconditionAssociationspecimenConditionValue1(this, diagnostics, context);
-  }
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
   public EventStudyDay getEventStudyDay()
   {
     return SpecimenInformationOperations.getEventStudyDay(this);
@@ -361,7 +464,16 @@ public class SpecimenInformationImpl extends ProcedureImpl implements SpecimenIn
    * @generated
    */
   public SpecimenInformation init() {
-    	CDAUtil.init(this);
-    	return this;
+      return Initializer.Util.init(this);
   }
+
+  /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    public SpecimenInformation init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
 } //SpecimenInformationImpl

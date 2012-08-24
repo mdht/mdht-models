@@ -76,7 +76,6 @@ public class StudyFindingEvaluatorOperations extends Participant1Operations
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.23.72')
    * @param studyFindingEvaluator The receiving '<em><b>Study Finding Evaluator</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -86,6 +85,7 @@ public class StudyFindingEvaluatorOperations extends Participant1Operations
   
   public static  boolean validateStudyFindingEvaluatorTemplateId(StudyFindingEvaluator studyFindingEvaluator, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
+  	  
     if (VALIDATE_STUDY_FINDING_EVALUATOR_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(SdtmPackage.Literals.STUDY_FINDING_EVALUATOR);
@@ -110,6 +110,7 @@ public class StudyFindingEvaluatorOperations extends Participant1Operations
              org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "StudyFindingEvaluatorTemplateId", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(studyFindingEvaluator, context) }),
              new Object [] { studyFindingEvaluator }));
       }
+       
       return false;
     }
     return true;
@@ -141,7 +142,6 @@ public class StudyFindingEvaluatorOperations extends Participant1Operations
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.typeCode=vocab::ParticipationType::PRF
    * @param studyFindingEvaluator The receiving '<em><b>Study Finding Evaluator</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -151,6 +151,7 @@ public class StudyFindingEvaluatorOperations extends Participant1Operations
   
   public static  boolean validateStudyFindingEvaluatorTypeCode(StudyFindingEvaluator studyFindingEvaluator, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
+  	  
     if (VALIDATE_STUDY_FINDING_EVALUATOR_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(SdtmPackage.Literals.STUDY_FINDING_EVALUATOR);
@@ -175,6 +176,7 @@ public class StudyFindingEvaluatorOperations extends Participant1Operations
              org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "StudyFindingEvaluatorTypeCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(studyFindingEvaluator, context) }),
              new Object [] { studyFindingEvaluator }));
       }
+       
       return false;
     }
     return true;

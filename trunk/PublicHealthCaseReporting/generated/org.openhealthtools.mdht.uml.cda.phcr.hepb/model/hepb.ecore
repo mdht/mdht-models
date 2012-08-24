@@ -3,11 +3,14 @@
     xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="hepb"
     nsURI="http://www.openhealthtools.org/mdht/uml/cda/phcr/hepb" nsPrefix="hepb">
+  <eAnnotations source="http://www.openhealthtools.org/mdht/uml">
+    <details key="initializers" value="org.openhealthtools.mdht.uml.cda.phcr.hepb"/>
+  </eAnnotations>
   <eClassifiers xsi:type="ecore:EClass" name="AcuteHepatitisBCaseReport" eSuperTypes="../../org.openhealthtools.mdht.uml.cda.phcr/model/phcr.ecore#//PublicHealthCaseReport">
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
-      <details key="title.mixed" value="Public Health Case Report - Acute Hepatitis B"/>
-      <details key="templateId.root" value="2.16.840.1.113883.10.20.15.1.2"/>
       <details key="constraints.validation.error" value="AcuteHepatitisBCaseReportTemplateId AcuteHepatitisBCaseReportTitle AcuteHepatitisBCaseReportAcuteHepatitisBPHCRClinicalInformationSection"/>
+      <details key="templateId.root" value="2.16.840.1.113883.10.20.15.1.2"/>
+      <details key="title.mixed" value="Public Health Case Report - Acute Hepatitis B"/>
       <details key="constraints.validation.warning" value="AcuteHepatitisBCaseReportAcuteHepatitisBSocialHistorySection AcuteHepatitisBCaseReportAcuteHepatitisBImmunizationSection AcuteHepatitisBCaseReportAcuteHepatitisBPHCRTreatmentInformationSection AcuteHepatitisBCaseReportAcuteHepatitisBPHCRRelevantDiagnosticTestsAndOrLaboratoryDataSection"/>
     </eAnnotations>
     <eAnnotations source="duplicates">
@@ -15,9 +18,6 @@
           eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
         <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
           <details key="body" value="self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.15.1.2')"/>
-        </eAnnotations>
-        <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-          <details key="documentation" value="self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.15.1.2')"/>
         </eAnnotations>
         <eAnnotations source="redefines" references="../../org.openhealthtools.mdht.uml.cda.phcr/model/phcr.ecore#//PublicHealthCaseReport/PublicHealthCaseReportTemplateId"/>
         <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain">
@@ -40,9 +40,6 @@
       <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
         <details key="body" value="(self.title.oclIsUndefined() or self.title.isNullFlavorUndefined()) implies (not self.title.oclIsUndefined() and self.title.getText() = 'Public Health Case Report - Acute Hepatitis B')"/>
       </eAnnotations>
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="(self.title.oclIsUndefined() or self.title.isNullFlavorUndefined()) implies (not self.title.oclIsUndefined() and self.title.getText() = 'Public Health Case Report - Acute Hepatitis B')"/>
-      </eAnnotations>
       <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain">
         <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
           <details key="documentation" value="The chain of diagnostics to which problems are to be appended."/>
@@ -62,9 +59,6 @@
         eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
       <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
         <details key="body" value="self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hepb::AcuteHepatitisBSocialHistorySection))"/>
-      </eAnnotations>
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hepb::AcuteHepatitisBSocialHistorySection))"/>
       </eAnnotations>
       <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain">
         <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
@@ -86,9 +80,6 @@
       <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
         <details key="body" value="self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hepb::AcuteHepatitisBPHCRClinicalInformationSection))"/>
       </eAnnotations>
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hepb::AcuteHepatitisBPHCRClinicalInformationSection))"/>
-      </eAnnotations>
       <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain">
         <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
           <details key="documentation" value="The chain of diagnostics to which problems are to be appended."/>
@@ -108,9 +99,6 @@
         eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
       <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
         <details key="body" value="self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hepb::AcuteHepatitisBImmunizationSection))"/>
-      </eAnnotations>
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hepb::AcuteHepatitisBImmunizationSection))"/>
       </eAnnotations>
       <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain">
         <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
@@ -132,9 +120,6 @@
       <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
         <details key="body" value="self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hepb::AcuteHepatitisBPHCRTreatmentInformationSection))"/>
       </eAnnotations>
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hepb::AcuteHepatitisBPHCRTreatmentInformationSection))"/>
-      </eAnnotations>
       <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain">
         <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
           <details key="documentation" value="The chain of diagnostics to which problems are to be appended."/>
@@ -155,9 +140,6 @@
       <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
         <details key="body" value="self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hepb::AcuteHepatitisBPHCRRelevantDiagnosticTestsAndOrLaboratoryDataSection))"/>
       </eAnnotations>
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hepb::AcuteHepatitisBPHCRRelevantDiagnosticTestsAndOrLaboratoryDataSection))"/>
-      </eAnnotations>
       <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain">
         <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
           <details key="documentation" value="The chain of diagnostics to which problems are to be appended."/>
@@ -175,55 +157,40 @@
     </eOperations>
     <eOperations name="getAcuteHepatitisBSocialHistorySection" ordered="false" lowerBound="1"
         eType="#//AcuteHepatitisBSocialHistorySection">
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hepb::AcuteHepatitisBSocialHistorySection))->asSequence()->first().oclAsType(hepb::AcuteHepatitisBSocialHistorySection)"/>
-      </eAnnotations>
       <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
-        <details key="body" value="self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hepb::AcuteHepatitisBSocialHistorySection))->asSequence()->first().oclAsType(hepb::AcuteHepatitisBSocialHistorySection)"/>
+        <details key="body" value="self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hepb::AcuteHepatitisBSocialHistorySection))->asSequence()->any(true).oclAsType(hepb::AcuteHepatitisBSocialHistorySection)"/>
       </eAnnotations>
     </eOperations>
     <eOperations name="getAcuteHepatitisBPHCRClinicalInformationSection" ordered="false"
         lowerBound="1" eType="#//AcuteHepatitisBPHCRClinicalInformationSection">
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hepb::AcuteHepatitisBPHCRClinicalInformationSection))->asSequence()->first().oclAsType(hepb::AcuteHepatitisBPHCRClinicalInformationSection)"/>
-      </eAnnotations>
       <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
-        <details key="body" value="self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hepb::AcuteHepatitisBPHCRClinicalInformationSection))->asSequence()->first().oclAsType(hepb::AcuteHepatitisBPHCRClinicalInformationSection)"/>
+        <details key="body" value="self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hepb::AcuteHepatitisBPHCRClinicalInformationSection))->asSequence()->any(true).oclAsType(hepb::AcuteHepatitisBPHCRClinicalInformationSection)"/>
       </eAnnotations>
     </eOperations>
     <eOperations name="getAcuteHepatitisBImmunizationSection" ordered="false" lowerBound="1"
         eType="#//AcuteHepatitisBImmunizationSection">
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hepb::AcuteHepatitisBImmunizationSection))->asSequence()->first().oclAsType(hepb::AcuteHepatitisBImmunizationSection)"/>
-      </eAnnotations>
       <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
-        <details key="body" value="self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hepb::AcuteHepatitisBImmunizationSection))->asSequence()->first().oclAsType(hepb::AcuteHepatitisBImmunizationSection)"/>
+        <details key="body" value="self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hepb::AcuteHepatitisBImmunizationSection))->asSequence()->any(true).oclAsType(hepb::AcuteHepatitisBImmunizationSection)"/>
       </eAnnotations>
     </eOperations>
     <eOperations name="getAcuteHepatitisBPHCRTreatmentInformationSection" ordered="false"
         lowerBound="1" eType="#//AcuteHepatitisBPHCRTreatmentInformationSection">
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hepb::AcuteHepatitisBPHCRTreatmentInformationSection))->asSequence()->first().oclAsType(hepb::AcuteHepatitisBPHCRTreatmentInformationSection)"/>
-      </eAnnotations>
       <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
-        <details key="body" value="self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hepb::AcuteHepatitisBPHCRTreatmentInformationSection))->asSequence()->first().oclAsType(hepb::AcuteHepatitisBPHCRTreatmentInformationSection)"/>
+        <details key="body" value="self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hepb::AcuteHepatitisBPHCRTreatmentInformationSection))->asSequence()->any(true).oclAsType(hepb::AcuteHepatitisBPHCRTreatmentInformationSection)"/>
       </eAnnotations>
     </eOperations>
     <eOperations name="getAcuteHepatitisBPHCRRelevantDiagnosticTestsAndOrLaboratoryDataSection"
         ordered="false" lowerBound="1" eType="#//AcuteHepatitisBPHCRRelevantDiagnosticTestsAndOrLaboratoryDataSection">
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hepb::AcuteHepatitisBPHCRRelevantDiagnosticTestsAndOrLaboratoryDataSection))->asSequence()->first().oclAsType(hepb::AcuteHepatitisBPHCRRelevantDiagnosticTestsAndOrLaboratoryDataSection)"/>
-      </eAnnotations>
       <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
-        <details key="body" value="self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hepb::AcuteHepatitisBPHCRRelevantDiagnosticTestsAndOrLaboratoryDataSection))->asSequence()->first().oclAsType(hepb::AcuteHepatitisBPHCRRelevantDiagnosticTestsAndOrLaboratoryDataSection)"/>
+        <details key="body" value="self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hepb::AcuteHepatitisBPHCRRelevantDiagnosticTestsAndOrLaboratoryDataSection))->asSequence()->any(true).oclAsType(hepb::AcuteHepatitisBPHCRRelevantDiagnosticTestsAndOrLaboratoryDataSection)"/>
       </eAnnotations>
     </eOperations>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="AcuteHepatitisBSocialHistorySection"
       eSuperTypes="../../org.openhealthtools.mdht.uml.cda.phcr/model/phcr.ecore#//PhcrSocialHistorySection">
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
-      <details key="templateId.root" value="2.16.840.1.113883.10.20.15.2.11"/>
       <details key="constraints.validation.error" value="AcuteHepatitisBSocialHistorySectionTemplateId"/>
+      <details key="templateId.root" value="2.16.840.1.113883.10.20.15.2.11"/>
       <details key="constraints.validation.warning" value="AcuteHepatitisBSocialHistorySectionJobRelatedBodyFluidExposureRiskFrequencyObservation AcuteHepatitisBSocialHistorySectionAcuteHepatitisBSocioBehavioralBooleanRiskFactorObservation"/>
       <details key="constraints.validation.info" value="AcuteHepatitisBSocialHistorySectionAcuteHepatitisBPossibleExposureLocationAndTypeAct AcuteHepatitisBSocialHistorySectionAcuteHepatitisBActualBloodAndOrBodyFluidExposureObservation "/>
     </eAnnotations>
@@ -232,9 +199,6 @@
           eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
         <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
           <details key="body" value="self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.15.2.11')"/>
-        </eAnnotations>
-        <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-          <details key="documentation" value="self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.15.2.11')"/>
         </eAnnotations>
         <eAnnotations source="redefines" references="platform:/plugin/org.openhealthtools.mdht.uml.cda.ccd/model/ccd.ecore#//SocialHistorySection/SocialHistorySectionTemplateId ../../org.openhealthtools.mdht.uml.cda.phcr/model/phcr.ecore#//PhcrSocialHistorySection/%duplicates%/SocialHistorySectionTemplateId"/>
         <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain">
@@ -258,9 +222,6 @@
       <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
         <details key="body" value="self.entry->exists(entry : cda::Entry | not entry.observation.oclIsUndefined() and entry.observation.oclIsKindOf(hepb::JobRelatedBodyFluidExposureRiskFrequencyObservation) and entry.typeCode = vocab::x_ActRelationshipEntry::DRIV)"/>
       </eAnnotations>
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="self.entry->exists(entry : cda::Entry | not entry.observation.oclIsUndefined() and entry.observation.oclIsKindOf(hepb::JobRelatedBodyFluidExposureRiskFrequencyObservation) and entry.typeCode = vocab::x_ActRelationshipEntry::DRIV)"/>
-      </eAnnotations>
       <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain">
         <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
           <details key="documentation" value="The chain of diagnostics to which problems are to be appended."/>
@@ -280,9 +241,6 @@
         eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
       <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
         <details key="body" value="self.entry->exists(entry : cda::Entry | not entry.act.oclIsUndefined() and entry.act.oclIsKindOf(hepb::AcuteHepatitisBPossibleExposureLocationAndTypeAct) and entry.typeCode = vocab::x_ActRelationshipEntry::DRIV)"/>
-      </eAnnotations>
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="self.entry->exists(entry : cda::Entry | not entry.act.oclIsUndefined() and entry.act.oclIsKindOf(hepb::AcuteHepatitisBPossibleExposureLocationAndTypeAct) and entry.typeCode = vocab::x_ActRelationshipEntry::DRIV)"/>
       </eAnnotations>
       <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain">
         <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
@@ -304,9 +262,6 @@
       <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
         <details key="body" value="self.entry->exists(entry : cda::Entry | not entry.observation.oclIsUndefined() and entry.observation.oclIsKindOf(hepb::AcuteHepatitisBSocioBehavioralBooleanRiskFactorObservation) and entry.typeCode = vocab::x_ActRelationshipEntry::DRIV)"/>
       </eAnnotations>
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="self.entry->exists(entry : cda::Entry | not entry.observation.oclIsUndefined() and entry.observation.oclIsKindOf(hepb::AcuteHepatitisBSocioBehavioralBooleanRiskFactorObservation) and entry.typeCode = vocab::x_ActRelationshipEntry::DRIV)"/>
-      </eAnnotations>
       <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain">
         <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
           <details key="documentation" value="The chain of diagnostics to which problems are to be appended."/>
@@ -327,9 +282,6 @@
       <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
         <details key="body" value="self.entry->exists(entry : cda::Entry | not entry.observation.oclIsUndefined() and entry.observation.oclIsKindOf(hepb::AcuteHepatitisBActualBloodAndOrBodyFluidExposureObservation ) and entry.typeCode = vocab::x_ActRelationshipEntry::DRIV)"/>
       </eAnnotations>
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="self.entry->exists(entry : cda::Entry | not entry.observation.oclIsUndefined() and entry.observation.oclIsKindOf(hepb::AcuteHepatitisBActualBloodAndOrBodyFluidExposureObservation ) and entry.typeCode = vocab::x_ActRelationshipEntry::DRIV)"/>
-      </eAnnotations>
       <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain">
         <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
           <details key="documentation" value="The chain of diagnostics to which problems are to be appended."/>
@@ -347,36 +299,24 @@
     </eOperations>
     <eOperations name="getJobRelatedBodyFluidExposureRiskFrequencyObservations" ordered="false"
         lowerBound="1" upperBound="-1" eType="#//JobRelatedBodyFluidExposureRiskFrequencyObservation">
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(hepb::JobRelatedBodyFluidExposureRiskFrequencyObservation)).oclAsType(hepb::JobRelatedBodyFluidExposureRiskFrequencyObservation)"/>
-      </eAnnotations>
       <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
         <details key="body" value="self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(hepb::JobRelatedBodyFluidExposureRiskFrequencyObservation)).oclAsType(hepb::JobRelatedBodyFluidExposureRiskFrequencyObservation)"/>
       </eAnnotations>
     </eOperations>
     <eOperations name="getAcuteHepatitisBPossibleExposureLocationAndTypeActs" ordered="false"
         lowerBound="1" upperBound="-1" eType="#//AcuteHepatitisBPossibleExposureLocationAndTypeAct">
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(hepb::AcuteHepatitisBPossibleExposureLocationAndTypeAct)).oclAsType(hepb::AcuteHepatitisBPossibleExposureLocationAndTypeAct)"/>
-      </eAnnotations>
       <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
         <details key="body" value="self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(hepb::AcuteHepatitisBPossibleExposureLocationAndTypeAct)).oclAsType(hepb::AcuteHepatitisBPossibleExposureLocationAndTypeAct)"/>
       </eAnnotations>
     </eOperations>
     <eOperations name="getAcuteHepatitisBSocioBehavioralBooleanRiskFactorObservations"
         ordered="false" lowerBound="1" upperBound="-1" eType="#//AcuteHepatitisBSocioBehavioralBooleanRiskFactorObservation">
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(hepb::AcuteHepatitisBSocioBehavioralBooleanRiskFactorObservation)).oclAsType(hepb::AcuteHepatitisBSocioBehavioralBooleanRiskFactorObservation)"/>
-      </eAnnotations>
       <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
         <details key="body" value="self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(hepb::AcuteHepatitisBSocioBehavioralBooleanRiskFactorObservation)).oclAsType(hepb::AcuteHepatitisBSocioBehavioralBooleanRiskFactorObservation)"/>
       </eAnnotations>
     </eOperations>
     <eOperations name="getAcuteHepatitisBActualBloodAndOrBodyFluidExposureObservations"
         ordered="false" lowerBound="1" upperBound="-1" eType="#//AcuteHepatitisBActualBloodAndOrBodyFluidExposureObservation">
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(hepb::AcuteHepatitisBActualBloodAndOrBodyFluidExposureObservation )).oclAsType(hepb::AcuteHepatitisBActualBloodAndOrBodyFluidExposureObservation )"/>
-      </eAnnotations>
       <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
         <details key="body" value="self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(hepb::AcuteHepatitisBActualBloodAndOrBodyFluidExposureObservation )).oclAsType(hepb::AcuteHepatitisBActualBloodAndOrBodyFluidExposureObservation )"/>
       </eAnnotations>
@@ -385,25 +325,22 @@
   <eClassifiers xsi:type="ecore:EClass" name="JobRelatedBodyFluidExposureRiskFrequencyObservation"
       eSuperTypes="platform:/plugin/org.openhealthtools.mdht.uml.cda/model/cda.ecore#//Observation">
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
-      <details key="statusCode.code" value="completed"/>
-      <details key="value.codeSystemName" value="SNOMEDCT"/>
-      <details key="code.codeSystem" value="2.16.840.1.113883.6.1"/>
+      <details key="constraints.validation.error" value="JobRelatedBodyFluidExposureRiskFrequencyObservationTemplateId JobRelatedBodyFluidExposureRiskFrequencyObservationCode JobRelatedBodyFluidExposureRiskFrequencyObservationStatusCode JobRelatedBodyFluidExposureRiskFrequencyObservationStatusCodeP JobRelatedBodyFluidExposureRiskFrequencyObservationValue JobRelatedBodyFluidExposureRiskFrequencyObservationValueP JobRelatedBodyFluidExposureRiskFrequencyObservationClassCode JobRelatedBodyFluidExposureRiskFrequencyObservationMoodCode"/>
       <details key="templateId.root" value="2.16.840.1.113883.10.20.15.3.29"/>
-      <details key="code.displayName" value="Occupation related direct blood or body fluid exposure frequencyOccupation related direct blood or body fluid exposure frequency"/>
-      <details key="constraints.validation.error" value="JobRelatedBodyFluidExposureRiskFrequencyObservationTemplateId JobRelatedBodyFluidExposureRiskFrequencyObservationCode JobRelatedBodyFluidExposureRiskFrequencyObservationStatusCode JobRelatedBodyFluidExposureRiskFrequencyObservationValue JobRelatedBodyFluidExposureRiskFrequencyObservationClassCode JobRelatedBodyFluidExposureRiskFrequencyObservationMoodCode"/>
-      <details key="code.codeSystemName" value="LOINC"/>
-      <details key="classCode" value="OBS"/>
       <details key="code.code" value="55212-5"/>
-      <details key="moodCode" value="EVN"/>
+      <details key="code.codeSystem" value="2.16.840.1.113883.6.1"/>
+      <details key="code.codeSystemName" value="LOINC"/>
+      <details key="code.displayName" value="Occupation related direct blood or body fluid exposure frequencyOccupation related direct blood or body fluid exposure frequency"/>
+      <details key="statusCode.code" value="completed"/>
       <details key="value.codeSystem" value="2.16.840.1.113883.6.96"/>
+      <details key="value.codeSystemName" value="SNOMEDCT"/>
+      <details key="classCode" value="OBS"/>
+      <details key="moodCode" value="EVN"/>
     </eAnnotations>
     <eOperations name="JobRelatedBodyFluidExposureRiskFrequencyObservationTemplateId"
         eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
       <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
         <details key="body" value="self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.15.3.29')"/>
-      </eAnnotations>
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.15.3.29')"/>
       </eAnnotations>
       <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain">
         <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
@@ -422,10 +359,7 @@
     </eOperations>
     <eOperations name="JobRelatedBodyFluidExposureRiskFrequencyObservationCode" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
       <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
-        <details key="body" value="(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and &#xD;&#xA;let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in (&#xD;&#xA;value.code = '55212-5' and value.codeSystem = '2.16.840.1.113883.6.1'))"/>
-      </eAnnotations>
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and &#xD;&#xA;let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in (&#xD;&#xA;value.code = '55212-5' and value.codeSystem = '2.16.840.1.113883.6.1'))"/>
+        <details key="body" value="(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and &#xA;let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in &#xA;value.code = '55212-5' and value.codeSystem = '2.16.840.1.113883.6.1')"/>
       </eAnnotations>
       <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain">
         <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
@@ -445,10 +379,27 @@
     <eOperations name="JobRelatedBodyFluidExposureRiskFrequencyObservationStatusCode"
         eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
       <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
-        <details key="body" value="(self.statusCode.oclIsUndefined() or self.statusCode.isNullFlavorUndefined()) implies (not self.statusCode.oclIsUndefined() and self.statusCode.oclIsKindOf(datatypes::CS) and &#xD;&#xA;let value : datatypes::CS = self.statusCode.oclAsType(datatypes::CS) in (&#xD;&#xA;value.code = 'completed'))"/>
+        <details key="body" value="(self.statusCode.oclIsUndefined() or self.statusCode.isNullFlavorUndefined()) implies (not self.statusCode.oclIsUndefined() and self.statusCode.oclIsKindOf(datatypes::CS) and &#xA;let value : datatypes::CS = self.statusCode.oclAsType(datatypes::CS) in &#xA;value.code = 'completed')"/>
       </eAnnotations>
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="(self.statusCode.oclIsUndefined() or self.statusCode.isNullFlavorUndefined()) implies (not self.statusCode.oclIsUndefined() and self.statusCode.oclIsKindOf(datatypes::CS) and &#xD;&#xA;let value : datatypes::CS = self.statusCode.oclAsType(datatypes::CS) in (&#xD;&#xA;value.code = 'completed'))"/>
+      <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain">
+        <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+          <details key="documentation" value="The chain of diagnostics to which problems are to be appended."/>
+        </eAnnotations>
+      </eParameters>
+      <eParameters name="context">
+        <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+          <details key="documentation" value="The cache of context-specific information."/>
+        </eAnnotations>
+        <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+        </eGenericType>
+      </eParameters>
+    </eOperations>
+    <eOperations name="JobRelatedBodyFluidExposureRiskFrequencyObservationStatusCodeP"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
+      <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
+        <details key="body" value="(self.statusCode.oclIsUndefined() or self.statusCode.isNullFlavorUndefined()) implies (not self.statusCode.oclIsUndefined())"/>
       </eAnnotations>
       <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain">
         <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
@@ -467,10 +418,27 @@
     </eOperations>
     <eOperations name="JobRelatedBodyFluidExposureRiskFrequencyObservationValue" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
       <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
-        <details key="body" value="(self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (self.value->size() = 1 and self.value->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and &#xD;&#xA;let value : datatypes::CD = element.oclAsType(datatypes::CD) in &#xD;&#xA;value.codeSystem = '2.16.840.1.113883.6.96' and (value.code = '70232002' or value.code = '27789000')))"/>
+        <details key="body" value="(self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (self.value->size() = 1 and self.value->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and &#xA;let value : datatypes::CD = element.oclAsType(datatypes::CD) in &#xA;value.codeSystem = '2.16.840.1.113883.6.96' and (value.code = '70232002' or value.code = '27789000')))"/>
       </eAnnotations>
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="(self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (self.value->size() = 1 and self.value->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and &#xD;&#xA;let value : datatypes::CD = element.oclAsType(datatypes::CD) in &#xD;&#xA;value.codeSystem = '2.16.840.1.113883.6.96' and (value.code = '70232002' or value.code = '27789000')))"/>
+      <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain">
+        <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+          <details key="documentation" value="The chain of diagnostics to which problems are to be appended."/>
+        </eAnnotations>
+      </eParameters>
+      <eParameters name="context">
+        <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+          <details key="documentation" value="The cache of context-specific information."/>
+        </eAnnotations>
+        <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+        </eGenericType>
+      </eParameters>
+    </eOperations>
+    <eOperations name="JobRelatedBodyFluidExposureRiskFrequencyObservationValueP"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
+      <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
+        <details key="body" value="(self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (self.value->size() = 1 and self.value->forAll(element | element.oclIsTypeOf(datatypes::CD)))"/>
       </eAnnotations>
       <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain">
         <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
@@ -492,9 +460,6 @@
       <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
         <details key="body" value="isDefined('classCode')"/>
       </eAnnotations>
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="isDefined('classCode')"/>
-      </eAnnotations>
       <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain">
         <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
           <details key="documentation" value="The chain of diagnostics to which problems are to be appended."/>
@@ -515,9 +480,6 @@
       <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
         <details key="body" value="isDefined('moodCode')"/>
       </eAnnotations>
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="isDefined('moodCode')"/>
-      </eAnnotations>
       <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain">
         <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
           <details key="documentation" value="The chain of diagnostics to which problems are to be appended."/>
@@ -537,21 +499,18 @@
   <eClassifiers xsi:type="ecore:EClass" name="AcuteHepatitisBPossibleExposureLocationAndTypeAct"
       eSuperTypes="platform:/plugin/org.openhealthtools.mdht.uml.cda/model/cda.ecore#//Act">
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
-      <details key="code.codeSystem" value="2.16.840.1.113883.6.96"/>
-      <details key="templateId.root" value="2.16.840.1.113883.10.20.15.3.27"/>
       <details key="constraints.validation.error" value="AcuteHepatitisBPossibleExposureLocationAndTypeActTemplateId AcuteHepatitisBPossibleExposureLocationAndTypeActClassCode AcuteHepatitisBPossibleExposureLocationAndTypeActCode AcuteHepatitisBPossibleExposureLocationAndTypeActMoodCode AcuteHepatitisBPossibleExposureLocationAndTypeActStatusCode"/>
-      <details key="code.codeSystemName" value="SNOMEDCT"/>
+      <details key="templateId.root" value="2.16.840.1.113883.10.20.15.3.27"/>
       <details key="classCode" value="ACT"/>
       <details key="code.code" value="413350009"/>
+      <details key="code.codeSystem" value="2.16.840.1.113883.6.96"/>
+      <details key="code.codeSystemName" value="SNOMEDCT"/>
       <details key="moodCode" value="EVN"/>
     </eAnnotations>
     <eOperations name="AcuteHepatitisBPossibleExposureLocationAndTypeActTemplateId"
         eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
       <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
         <details key="body" value="self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.15.3.27')"/>
-      </eAnnotations>
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.15.3.27')"/>
       </eAnnotations>
       <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain">
         <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
@@ -573,9 +532,6 @@
       <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
         <details key="body" value="isDefined('classCode')"/>
       </eAnnotations>
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="isDefined('classCode')"/>
-      </eAnnotations>
       <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain">
         <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
           <details key="documentation" value="The chain of diagnostics to which problems are to be appended."/>
@@ -593,10 +549,7 @@
     </eOperations>
     <eOperations name="AcuteHepatitisBPossibleExposureLocationAndTypeActCode" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
       <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
-        <details key="body" value="(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and &#xD;&#xA;let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in (&#xD;&#xA;value.code = '413350009' and value.codeSystem = '2.16.840.1.113883.6.96'))"/>
-      </eAnnotations>
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and &#xD;&#xA;let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in (&#xD;&#xA;value.code = '413350009' and value.codeSystem = '2.16.840.1.113883.6.96'))"/>
+        <details key="body" value="(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and &#xA;let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in &#xA;value.code = '413350009' and value.codeSystem = '2.16.840.1.113883.6.96')"/>
       </eAnnotations>
       <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain">
         <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
@@ -618,9 +571,6 @@
       <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
         <details key="body" value="isDefined('moodCode')"/>
       </eAnnotations>
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="isDefined('moodCode')"/>
-      </eAnnotations>
       <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain">
         <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
           <details key="documentation" value="The chain of diagnostics to which problems are to be appended."/>
@@ -641,9 +591,6 @@
       <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
         <details key="body" value="(self.statusCode.oclIsUndefined() or self.statusCode.isNullFlavorUndefined()) implies (not self.statusCode.oclIsUndefined())"/>
       </eAnnotations>
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="(self.statusCode.oclIsUndefined() or self.statusCode.isNullFlavorUndefined()) implies (not self.statusCode.oclIsUndefined())"/>
-      </eAnnotations>
       <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain">
         <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
           <details key="documentation" value="The chain of diagnostics to which problems are to be appended."/>
@@ -663,23 +610,22 @@
   <eClassifiers xsi:type="ecore:EClass" name="AcuteHepatitisBSocioBehavioralBooleanRiskFactorObservation"
       eSuperTypes="platform:/plugin/org.openhealthtools.mdht.uml.cda.ccd/model/ccd.ecore#//SocialHistoryObservation">
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
-      <details key="value.codeSystemName" value="SNOMEDCT"/>
-      <details key="code.codeSystem" value="2.16.840.1.113883.5.4"/>
+      <details key="constraints.validation.error" value="AcuteHepatitisBSocioBehavioralBooleanRiskFactorObservationTemplateId AcuteHepatitisBSocioBehavioralBooleanRiskFactorObservationNegationInd AcuteHepatitisBSocioBehavioralBooleanRiskFactorObservationValue AcuteHepatitisBSocioBehavioralBooleanRiskFactorObservationValueP AcuteHepatitisBSocioBehavioralBooleanRiskFactorObservationCode AcuteHepatitisBSocioBehavioralBooleanRiskFactorObservationCodeP"/>
       <details key="templateId.root" value="2.16.840.1.113883.10.20.15.3.28"/>
-      <details key="constraints.validation.error" value="AcuteHepatitisBSocioBehavioralBooleanRiskFactorObservationTemplateId AcuteHepatitisBSocioBehavioralBooleanRiskFactorObservationNegationInd AcuteHepatitisBSocioBehavioralBooleanRiskFactorObservationValue AcuteHepatitisBSocioBehavioralBooleanRiskFactorObservationCode"/>
-      <details key="code.codeSystemName" value="HL7ActCode"/>
-      <details key="constraints.validation.warning" value="AcuteHepatitisBSocioBehavioralBooleanRiskFactorObservationEffectiveTime"/>
-      <details key="code.code" value="ASSERTION"/>
       <details key="value.codeSystem" value="2.16.840.1.113883.6.96"/>
+      <details key="value.codeSystemName" value="SNOMEDCT"/>
+      <details key="code.code" value="ASSERTION"/>
+      <details key="code.codeSystem" value="2.16.840.1.113883.5.4"/>
+      <details key="code.codeSystemName" value="HL7ActCode"/>
+      <details key="constraints.validation.dependOn.AcuteHepatitisBSocioBehavioralBooleanRiskFactorObservationCode"
+          value="AcuteHepatitisBSocioBehavioralBooleanRiskFactorObservationCodeP"/>
+      <details key="constraints.validation.warning" value="AcuteHepatitisBSocioBehavioralBooleanRiskFactorObservationEffectiveTime"/>
     </eAnnotations>
     <eAnnotations source="duplicates">
       <contents xsi:type="ecore:EOperation" name="SocialHistoryObservationTemplateId"
           eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
         <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
           <details key="body" value="self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.15.3.28')"/>
-        </eAnnotations>
-        <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-          <details key="documentation" value="self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.15.3.28')"/>
         </eAnnotations>
         <eAnnotations source="redefines" references="platform:/plugin/org.openhealthtools.mdht.uml.cda.ccd/model/ccd.ecore#//SocialHistoryObservation/SocialHistoryObservationTemplateId"/>
         <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain">
@@ -703,9 +649,6 @@
       <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
         <details key="body" value="not self.negationInd.oclIsUndefined()"/>
       </eAnnotations>
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="not self.negationInd.oclIsUndefined()"/>
-      </eAnnotations>
       <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain">
         <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
           <details key="documentation" value="The chain of diagnostics to which problems are to be appended."/>
@@ -724,10 +667,47 @@
     <eOperations name="AcuteHepatitisBSocioBehavioralBooleanRiskFactorObservationValue"
         eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
       <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
-        <details key="body" value="(self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (self.value->size() = 1 and self.value->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and &#xD;&#xA;let value : datatypes::CD = element.oclAsType(datatypes::CD) in &#xD;&#xA;value.codeSystem = '2.16.840.1.113883.6.96' and (value.code = '160592001' or value.code = '32911000' or value.code = '45361006' or value.code = '226034001' or value.code = '413096007' or value.code = '55211-7' or value.code = '228395002')))"/>
+        <details key="body" value="(self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (self.value->size() = 1 and self.value->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and &#xA;let value : datatypes::CD = element.oclAsType(datatypes::CD) in &#xA;value.codeSystem = '2.16.840.1.113883.6.96' and (value.code = '160592001' or value.code = '32911000' or value.code = '45361006' or value.code = '226034001' or value.code = '413096007' or value.code = '55211-7' or value.code = '228395002')))"/>
       </eAnnotations>
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="(self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (self.value->size() = 1 and self.value->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and &#xD;&#xA;let value : datatypes::CD = element.oclAsType(datatypes::CD) in &#xD;&#xA;value.codeSystem = '2.16.840.1.113883.6.96' and (value.code = '160592001' or value.code = '32911000' or value.code = '45361006' or value.code = '226034001' or value.code = '413096007' or value.code = '55211-7' or value.code = '228395002')))"/>
+      <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain">
+        <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+          <details key="documentation" value="The chain of diagnostics to which problems are to be appended."/>
+        </eAnnotations>
+      </eParameters>
+      <eParameters name="context">
+        <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+          <details key="documentation" value="The cache of context-specific information."/>
+        </eAnnotations>
+        <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+        </eGenericType>
+      </eParameters>
+    </eOperations>
+    <eOperations name="AcuteHepatitisBSocioBehavioralBooleanRiskFactorObservationValueP"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
+      <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
+        <details key="body" value="(self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (self.value->size() = 1 and self.value->forAll(element | element.oclIsTypeOf(datatypes::CD)))"/>
+      </eAnnotations>
+      <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain">
+        <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+          <details key="documentation" value="The chain of diagnostics to which problems are to be appended."/>
+        </eAnnotations>
+      </eParameters>
+      <eParameters name="context">
+        <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+          <details key="documentation" value="The cache of context-specific information."/>
+        </eAnnotations>
+        <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+        </eGenericType>
+      </eParameters>
+    </eOperations>
+    <eOperations name="AcuteHepatitisBSocioBehavioralBooleanRiskFactorObservationCodeP"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
+      <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
+        <details key="body" value="(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined())"/>
       </eAnnotations>
       <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain">
         <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
@@ -747,10 +727,7 @@
     <eOperations name="AcuteHepatitisBSocioBehavioralBooleanRiskFactorObservationCode"
         eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
       <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
-        <details key="body" value="(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and &#xD;&#xA;let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in (&#xD;&#xA;value.code = 'ASSERTION' and value.codeSystem = '2.16.840.1.113883.5.4'))"/>
-      </eAnnotations>
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and &#xD;&#xA;let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in (&#xD;&#xA;value.code = 'ASSERTION' and value.codeSystem = '2.16.840.1.113883.5.4'))"/>
+        <details key="body" value="(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and &#xA;let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in &#xA;value.code = 'ASSERTION' and value.codeSystem = '2.16.840.1.113883.5.4')"/>
       </eAnnotations>
       <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain">
         <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
@@ -772,9 +749,6 @@
       <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
         <details key="body" value="(self.effectiveTime.oclIsUndefined() or self.effectiveTime.isNullFlavorUndefined()) implies (not self.effectiveTime.oclIsUndefined())"/>
       </eAnnotations>
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="(self.effectiveTime.oclIsUndefined() or self.effectiveTime.isNullFlavorUndefined()) implies (not self.effectiveTime.oclIsUndefined())"/>
-      </eAnnotations>
       <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain">
         <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
           <details key="documentation" value="The chain of diagnostics to which problems are to be appended."/>
@@ -794,21 +768,35 @@
   <eClassifiers xsi:type="ecore:EClass" name="AcuteHepatitisBActualBloodAndOrBodyFluidExposureObservation"
       eSuperTypes="platform:/plugin/org.openhealthtools.mdht.uml.cda/model/cda.ecore#//Observation">
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
-      <details key="statusCode.code" value="completed"/>
-      <details key="code.codeSystem" value="2.16.840.1.113883.6.1"/>
+      <details key="constraints.validation.error" value="AcuteHepatitisBActualBloodAndOrBodyFluidExposureObservation TemplateId AcuteHepatitisBActualBloodAndOrBodyFluidExposureObservation Code AcuteHepatitisBActualBloodAndOrBodyFluidExposureObservation CodeP AcuteHepatitisBActualBloodAndOrBodyFluidExposureObservation StatusCode AcuteHepatitisBActualBloodAndOrBodyFluidExposureObservation StatusCodeP AcuteHepatitisBActualBloodAndOrBodyFluidExposureObservation ClassCode AcuteHepatitisBActualBloodAndOrBodyFluidExposureObservation Id AcuteHepatitisBActualBloodAndOrBodyFluidExposureObservation MoodCode"/>
       <details key="templateId.root" value="2.16.840.1.113883.10.20.15.3.26"/>
-      <details key="constraints.validation.error" value="AcuteHepatitisBActualBloodAndOrBodyFluidExposureObservation TemplateId AcuteHepatitisBActualBloodAndOrBodyFluidExposureObservation Code AcuteHepatitisBActualBloodAndOrBodyFluidExposureObservation StatusCode AcuteHepatitisBActualBloodAndOrBodyFluidExposureObservation ClassCode AcuteHepatitisBActualBloodAndOrBodyFluidExposureObservation Id AcuteHepatitisBActualBloodAndOrBodyFluidExposureObservation MoodCode"/>
+      <details key="code.codeSystem" value="2.16.840.1.113883.6.1"/>
       <details key="code.codeSystemName" value="LOINC"/>
-      <details key="classCode" value="OBS"/>
-      <details key="moodCode" value="EVN"/>
     </eAnnotations>
     <eOperations name="AcuteHepatitisBActualBloodAndOrBodyFluidExposureObservationTemplateId"
         eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
       <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
         <details key="body" value="self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.15.3.26')"/>
       </eAnnotations>
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.15.3.26')"/>
+      <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain">
+        <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+          <details key="documentation" value="The chain of diagnostics to which problems are to be appended."/>
+        </eAnnotations>
+      </eParameters>
+      <eParameters name="context">
+        <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+          <details key="documentation" value="The cache of context-specific information."/>
+        </eAnnotations>
+        <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+        </eGenericType>
+      </eParameters>
+    </eOperations>
+    <eOperations name="AcuteHepatitisBActualBloodAndOrBodyFluidExposureObservationCodeP"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
+      <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
+        <details key="body" value="(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined())"/>
       </eAnnotations>
       <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain">
         <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
@@ -828,10 +816,7 @@
     <eOperations name="AcuteHepatitisBActualBloodAndOrBodyFluidExposureObservationCode"
         eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
       <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
-        <details key="body" value="(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and &#xD;&#xA;let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in (&#xD;&#xA;value.codeSystem = '2.16.840.1.113883.6.1' and (value.code = '55218-2' or value.code = '55214-1' or value.code = '55213-3' or value.code = '55216-6' or value.code = '55217-4' or value.code = '55215-8')))"/>
-      </eAnnotations>
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and &#xD;&#xA;let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in (&#xD;&#xA;value.codeSystem = '2.16.840.1.113883.6.1' and (value.code = '55218-2' or value.code = '55214-1' or value.code = '55213-3' or value.code = '55216-6' or value.code = '55217-4' or value.code = '55215-8')))"/>
+        <details key="body" value="(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and &#xA;let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in &#xA;value.codeSystem = '2.16.840.1.113883.6.1' and (value.code = '55218-2' or value.code = '55214-1' or value.code = '55213-3' or value.code = '55216-6' or value.code = '55217-4' or value.code = '55215-8'))"/>
       </eAnnotations>
       <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain">
         <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
@@ -851,10 +836,27 @@
     <eOperations name="AcuteHepatitisBActualBloodAndOrBodyFluidExposureObservationStatusCode"
         eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
       <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
-        <details key="body" value="(self.statusCode.oclIsUndefined() or self.statusCode.isNullFlavorUndefined()) implies (not self.statusCode.oclIsUndefined() and self.statusCode.oclIsKindOf(datatypes::CS) and &#xD;&#xA;let value : datatypes::CS = self.statusCode.oclAsType(datatypes::CS) in (&#xD;&#xA;value.code = 'completed'))"/>
+        <details key="body" value="(self.statusCode.oclIsUndefined() or self.statusCode.isNullFlavorUndefined()) implies (not self.statusCode.oclIsUndefined() and self.statusCode.oclIsKindOf(datatypes::CS) and &#xA;let value : datatypes::CS = self.statusCode.oclAsType(datatypes::CS) in &#xA;value.code = 'completed')"/>
       </eAnnotations>
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="(self.statusCode.oclIsUndefined() or self.statusCode.isNullFlavorUndefined()) implies (not self.statusCode.oclIsUndefined() and self.statusCode.oclIsKindOf(datatypes::CS) and &#xD;&#xA;let value : datatypes::CS = self.statusCode.oclAsType(datatypes::CS) in (&#xD;&#xA;value.code = 'completed'))"/>
+      <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain">
+        <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+          <details key="documentation" value="The chain of diagnostics to which problems are to be appended."/>
+        </eAnnotations>
+      </eParameters>
+      <eParameters name="context">
+        <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+          <details key="documentation" value="The cache of context-specific information."/>
+        </eAnnotations>
+        <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+        </eGenericType>
+      </eParameters>
+    </eOperations>
+    <eOperations name="AcuteHepatitisBActualBloodAndOrBodyFluidExposureObservationStatusCodeP"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
+      <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
+        <details key="body" value="(self.statusCode.oclIsUndefined() or self.statusCode.isNullFlavorUndefined()) implies (not self.statusCode.oclIsUndefined())"/>
       </eAnnotations>
       <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain">
         <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
@@ -876,9 +878,6 @@
       <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
         <details key="body" value="isDefined('classCode')"/>
       </eAnnotations>
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="isDefined('classCode')"/>
-      </eAnnotations>
       <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain">
         <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
           <details key="documentation" value="The chain of diagnostics to which problems are to be appended."/>
@@ -898,9 +897,6 @@
         eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
       <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
         <details key="body" value="(self.id->isEmpty() or self.id->exists(element | element.isNullFlavorUndefined())) implies (not self.id->isEmpty())"/>
-      </eAnnotations>
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="(self.id->isEmpty() or self.id->exists(element | element.isNullFlavorUndefined())) implies (not self.id->isEmpty())"/>
       </eAnnotations>
       <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain">
         <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
@@ -922,9 +918,6 @@
       <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
         <details key="body" value="isDefined('moodCode')"/>
       </eAnnotations>
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="isDefined('moodCode')"/>
-      </eAnnotations>
       <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain">
         <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
           <details key="documentation" value="The chain of diagnostics to which problems are to be appended."/>
@@ -944,8 +937,8 @@
   <eClassifiers xsi:type="ecore:EClass" name="AcuteHepatitisBPHCRClinicalInformationSection"
       eSuperTypes="../../org.openhealthtools.mdht.uml.cda.phcr/model/phcr.ecore#//PhcrClinicalInformationSection">
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
-      <details key="templateId.root" value="2.16.840.1.113883.10.20.15.2.12"/>
       <details key="constraints.validation.error" value="AcuteHepatitisBPHCRClinicalInformationSectionTemplateId AcuteHepatitisBPHCRClinicalInformationSectionAcuteHepatitisBCaseObservation"/>
+      <details key="templateId.root" value="2.16.840.1.113883.10.20.15.2.12"/>
       <details key="constraints.validation.warning" value="AcuteHepatitisBPHCRClinicalInformationSectionAcuteHepatitisBRiskAssociatedProcedure AcuteHepatitisBPHCRClinicalInformationSectionViralHepatitisHistoryObservation AcuteHepatitisBPHCRClinicalInformationSectionSTDHistoryObservation"/>
     </eAnnotations>
     <eAnnotations source="duplicates">
@@ -953,9 +946,6 @@
           eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
         <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
           <details key="body" value="self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.15.2.12')"/>
-        </eAnnotations>
-        <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-          <details key="documentation" value="self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.15.2.12')"/>
         </eAnnotations>
         <eAnnotations source="redefines" references="../../org.openhealthtools.mdht.uml.cda.phcr/model/phcr.ecore#//PhcrClinicalInformationSection/PhcrClinicalInformationSectionTemplateId"/>
         <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain">
@@ -979,9 +969,6 @@
       <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
         <details key="body" value="self.entry->one(entry : cda::Entry | not entry.observation.oclIsUndefined() and entry.observation.oclIsKindOf(hepb::AcuteHepatitisBCaseObservation) and entry.typeCode = vocab::x_ActRelationshipEntry::DRIV)"/>
       </eAnnotations>
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="self.entry->one(entry : cda::Entry | not entry.observation.oclIsUndefined() and entry.observation.oclIsKindOf(hepb::AcuteHepatitisBCaseObservation) and entry.typeCode = vocab::x_ActRelationshipEntry::DRIV)"/>
-      </eAnnotations>
       <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain">
         <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
           <details key="documentation" value="The chain of diagnostics to which problems are to be appended."/>
@@ -1001,9 +988,6 @@
         eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
       <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
         <details key="body" value="self.entry->exists(entry : cda::Entry | not entry.procedure.oclIsUndefined() and entry.procedure.oclIsKindOf(hepb::AcuteHepatitisBRiskAssociatedProcedure) and entry.typeCode = vocab::x_ActRelationshipEntry::DRIV)"/>
-      </eAnnotations>
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="self.entry->exists(entry : cda::Entry | not entry.procedure.oclIsUndefined() and entry.procedure.oclIsKindOf(hepb::AcuteHepatitisBRiskAssociatedProcedure) and entry.typeCode = vocab::x_ActRelationshipEntry::DRIV)"/>
       </eAnnotations>
       <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain">
         <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
@@ -1025,9 +1009,6 @@
       <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
         <details key="body" value="self.entry->exists(entry : cda::Entry | not entry.observation.oclIsUndefined() and entry.observation.oclIsKindOf(hepb::ViralHepatitisHistoryObservation) and entry.typeCode = vocab::x_ActRelationshipEntry::DRIV)"/>
       </eAnnotations>
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="self.entry->exists(entry : cda::Entry | not entry.observation.oclIsUndefined() and entry.observation.oclIsKindOf(hepb::ViralHepatitisHistoryObservation) and entry.typeCode = vocab::x_ActRelationshipEntry::DRIV)"/>
-      </eAnnotations>
       <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain">
         <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
           <details key="documentation" value="The chain of diagnostics to which problems are to be appended."/>
@@ -1048,9 +1029,6 @@
       <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
         <details key="body" value="self.entry->exists(entry : cda::Entry | not entry.observation.oclIsUndefined() and entry.observation.oclIsKindOf(hepb::STDHistoryObservation) and entry.typeCode = vocab::x_ActRelationshipEntry::DRIV)"/>
       </eAnnotations>
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="self.entry->exists(entry : cda::Entry | not entry.observation.oclIsUndefined() and entry.observation.oclIsKindOf(hepb::STDHistoryObservation) and entry.typeCode = vocab::x_ActRelationshipEntry::DRIV)"/>
-      </eAnnotations>
       <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain">
         <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
           <details key="documentation" value="The chain of diagnostics to which problems are to be appended."/>
@@ -1068,36 +1046,24 @@
     </eOperations>
     <eOperations name="getAcuteHepatitisBCaseObservation" ordered="false" lowerBound="1"
         eType="#//AcuteHepatitisBCaseObservation">
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(hepb::AcuteHepatitisBCaseObservation))->asSequence()->first().oclAsType(hepb::AcuteHepatitisBCaseObservation)"/>
-      </eAnnotations>
       <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
-        <details key="body" value="self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(hepb::AcuteHepatitisBCaseObservation))->asSequence()->first().oclAsType(hepb::AcuteHepatitisBCaseObservation)"/>
+        <details key="body" value="self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(hepb::AcuteHepatitisBCaseObservation))->asSequence()->any(true).oclAsType(hepb::AcuteHepatitisBCaseObservation)"/>
       </eAnnotations>
     </eOperations>
     <eOperations name="getAcuteHepatitisBRiskAssociatedProcedures" ordered="false"
         lowerBound="1" upperBound="-1" eType="#//AcuteHepatitisBRiskAssociatedProcedure">
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="self.getProcedures()->select(procedure : cda::Procedure | not procedure.oclIsUndefined() and procedure.oclIsKindOf(hepb::AcuteHepatitisBRiskAssociatedProcedure)).oclAsType(hepb::AcuteHepatitisBRiskAssociatedProcedure)"/>
-      </eAnnotations>
       <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
         <details key="body" value="self.getProcedures()->select(procedure : cda::Procedure | not procedure.oclIsUndefined() and procedure.oclIsKindOf(hepb::AcuteHepatitisBRiskAssociatedProcedure)).oclAsType(hepb::AcuteHepatitisBRiskAssociatedProcedure)"/>
       </eAnnotations>
     </eOperations>
     <eOperations name="getViralHepatitisHistoryObservations" ordered="false" lowerBound="1"
         upperBound="-1" eType="#//ViralHepatitisHistoryObservation">
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(hepb::ViralHepatitisHistoryObservation)).oclAsType(hepb::ViralHepatitisHistoryObservation)"/>
-      </eAnnotations>
       <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
         <details key="body" value="self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(hepb::ViralHepatitisHistoryObservation)).oclAsType(hepb::ViralHepatitisHistoryObservation)"/>
       </eAnnotations>
     </eOperations>
     <eOperations name="getSTDHistoryObservations" ordered="false" lowerBound="1" upperBound="-1"
         eType="#//STDHistoryObservation">
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(hepb::STDHistoryObservation)).oclAsType(hepb::STDHistoryObservation)"/>
-      </eAnnotations>
       <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
         <details key="body" value="self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(hepb::STDHistoryObservation)).oclAsType(hepb::STDHistoryObservation)"/>
       </eAnnotations>
@@ -1105,18 +1071,17 @@
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="AcuteHepatitisBCaseObservation" eSuperTypes="../../org.openhealthtools.mdht.uml.cda.phcr/model/phcr.ecore#//CaseObservation">
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
-      <details key="value.codeSystemName" value="SNOMEDCT"/>
+      <details key="constraints.validation.error" value="AcuteHepatitisBCaseObservationTemplateId AcuteHepatitisBCaseObservationValue AcuteHepatitisBCaseObservationValueP AcuteHepatitisBCaseObservationAcuteHepatitisBSignsAndSymptomsObservation"/>
       <details key="templateId.root" value="2.16.840.1.113883.10.20.15.3.30"/>
-      <details key="constraints.validation.error" value="AcuteHepatitisBCaseObservationTemplateId CaseObservationValue AcuteHepatitisBCaseObservationAcuteHepatitisBSignsAndSymptomsObservation"/>
       <details key="value.codeSystem" value="2.16.840.1.113883.6.96"/>
+      <details key="value.codeSystemName" value="SNOMEDCT"/>
+      <details key="constraints.validation.dependOn.AcuteHepatitisBCaseObservationValue"
+          value="AcuteHepatitisBCaseObservationValueP"/>
     </eAnnotations>
     <eAnnotations source="duplicates">
       <contents xsi:type="ecore:EOperation" name="ProblemObservationTemplateId" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
         <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
           <details key="body" value="self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.15.3.30')"/>
-        </eAnnotations>
-        <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-          <details key="documentation" value="self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.15.3.30')"/>
         </eAnnotations>
         <eAnnotations source="redefines" references="platform:/plugin/org.openhealthtools.mdht.uml.cda.ccd/model/ccd.ecore#//ProblemObservation/ProblemObservationTemplateId ../../org.openhealthtools.mdht.uml.cda.phcr/model/phcr.ecore#//CaseObservation/%duplicates%/ProblemObservationTemplateId"/>
         <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain">
@@ -1134,37 +1099,49 @@
           </eGenericType>
         </eParameters>
       </contents>
-      <contents xsi:type="ecore:EOperation" name="CaseObservationValue" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
-        <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
-          <details key="body" value="(self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (self.value->size() = 1 and self.value->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and &#xD;&#xA;let value : datatypes::CD = element.oclAsType(datatypes::CD) in &#xD;&#xA;value.codeSystem = '2.16.840.1.113883.6.96' and (value.code = '13265006' or value.code = '186624004' or value.code = '186626002' or value.code = '424099008' or value.code = '235864009' or value.code = '76795007')))"/>
-        </eAnnotations>
-        <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-          <details key="documentation" value="(self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (self.value->size() = 1 and self.value->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and &#xD;&#xA;let value : datatypes::CD = element.oclAsType(datatypes::CD) in &#xD;&#xA;value.codeSystem = '2.16.840.1.113883.6.96' and (value.code = '13265006' or value.code = '186624004' or value.code = '186626002' or value.code = '424099008' or value.code = '235864009' or value.code = '76795007')))"/>
-        </eAnnotations>
-        <eAnnotations source="redefines" references="../../org.openhealthtools.mdht.uml.cda.phcr/model/phcr.ecore#//CaseObservation/CaseObservationValue"/>
-        <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain">
-          <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-            <details key="documentation" value="The chain of diagnostics to which problems are to be appended."/>
-          </eAnnotations>
-        </eParameters>
-        <eParameters name="context">
-          <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-            <details key="documentation" value="The cache of context-specific information."/>
-          </eAnnotations>
-          <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
-            <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
-            <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
-          </eGenericType>
-        </eParameters>
-      </contents>
     </eAnnotations>
+    <eOperations name="AcuteHepatitisBCaseObservationValueP" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
+      <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
+        <details key="body" value="(self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (not self.value->isEmpty())"/>
+      </eAnnotations>
+      <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain">
+        <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+          <details key="documentation" value="The chain of diagnostics to which problems are to be appended."/>
+        </eAnnotations>
+      </eParameters>
+      <eParameters name="context">
+        <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+          <details key="documentation" value="The cache of context-specific information."/>
+        </eAnnotations>
+        <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+        </eGenericType>
+      </eParameters>
+    </eOperations>
+    <eOperations name="AcuteHepatitisBCaseObservationValue" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
+      <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
+        <details key="body" value="(self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (self.value->size() = 1 and self.value->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and &#xA;let value : datatypes::CD = element.oclAsType(datatypes::CD) in &#xA;value.codeSystem = '2.16.840.1.113883.6.96' and (value.code = '13265006' or value.code = '186624004' or value.code = '186626002' or value.code = '424099008' or value.code = '235864009' or value.code = '76795007')))"/>
+      </eAnnotations>
+      <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain">
+        <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+          <details key="documentation" value="The chain of diagnostics to which problems are to be appended."/>
+        </eAnnotations>
+      </eParameters>
+      <eParameters name="context">
+        <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+          <details key="documentation" value="The cache of context-specific information."/>
+        </eAnnotations>
+        <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+        </eGenericType>
+      </eParameters>
+    </eOperations>
     <eOperations name="AcuteHepatitisBCaseObservationAcuteHepatitisBSignsAndSymptomsObservation"
         eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
       <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
         <details key="body" value="self.entryRelationship->exists(entryRelationship : cda::EntryRelationship | not entryRelationship.observation.oclIsUndefined() and entryRelationship.observation.oclIsKindOf(hepb::AcuteHepatitisBSignsAndSymptomsObservation) and entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::MFST)"/>
-      </eAnnotations>
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="self.entryRelationship->exists(entryRelationship : cda::EntryRelationship | not entryRelationship.observation.oclIsUndefined() and entryRelationship.observation.oclIsKindOf(hepb::AcuteHepatitisBSignsAndSymptomsObservation) and entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::MFST)"/>
       </eAnnotations>
       <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain">
         <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
@@ -1183,9 +1160,6 @@
     </eOperations>
     <eOperations name="getAcuteHepatitisBSignsAndSymptomsObservations" ordered="false"
         lowerBound="1" upperBound="-1" eType="#//AcuteHepatitisBSignsAndSymptomsObservation">
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(hepb::AcuteHepatitisBSignsAndSymptomsObservation)).oclAsType(hepb::AcuteHepatitisBSignsAndSymptomsObservation)"/>
-      </eAnnotations>
       <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
         <details key="body" value="self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(hepb::AcuteHepatitisBSignsAndSymptomsObservation)).oclAsType(hepb::AcuteHepatitisBSignsAndSymptomsObservation)"/>
       </eAnnotations>
@@ -1194,19 +1168,18 @@
   <eClassifiers xsi:type="ecore:EClass" name="AcuteHepatitisBSignsAndSymptomsObservation"
       eSuperTypes="../../org.openhealthtools.mdht.uml.cda.phcr/model/phcr.ecore#//SignsAndSymptomsObservation">
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
-      <details key="value.codeSystemName" value="SNOMEDCT"/>
+      <details key="constraints.validation.error" value="AcuteHepatitisBSignsAndSymptomsObservationTemplateId AcuteHepatitisBSignsAndSymptomsObservationValue AcuteHepatitisBSignsAndSymptomsObservationValueP"/>
       <details key="templateId.root" value="2.16.840.1.113883.10.20.15.3.22"/>
-      <details key="constraints.validation.error" value="AcuteHepatitisBSignsAndSymptomsObservationTemplateId SignsAndSymptomsObservationValue"/>
       <details key="value.codeSystem" value="2.16.840.1.113883.6.96"/>
+      <details key="value.codeSystemName" value="SNOMEDCT"/>
+      <details key="constraints.validation.dependOn.AcuteHepatitisBSignsAndSymptomsObservationValue"
+          value="AcuteHepatitisBSignsAndSymptomsObservationValueP"/>
     </eAnnotations>
     <eAnnotations source="duplicates">
       <contents xsi:type="ecore:EOperation" name="SignsAndSymptomsObservationTemplateId"
           eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
         <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
           <details key="body" value="self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.15.3.22')"/>
-        </eAnnotations>
-        <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-          <details key="documentation" value="self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.15.3.22')"/>
         </eAnnotations>
         <eAnnotations source="redefines" references="../../org.openhealthtools.mdht.uml.cda.phcr/model/phcr.ecore#//SignsAndSymptomsObservation/SignsAndSymptomsObservationTemplateId"/>
         <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain">
@@ -1224,50 +1197,61 @@
           </eGenericType>
         </eParameters>
       </contents>
-      <contents xsi:type="ecore:EOperation" name="SignsAndSymptomsObservationValue"
-          eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
-        <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
-          <details key="body" value="(self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (self.value->size() = 1 and self.value->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and &#xD;&#xA;let value : datatypes::CD = element.oclAsType(datatypes::CD) in &#xD;&#xA;value.codeSystem = '2.16.840.1.113883.6.96' and (value.code = '84387000' or value.code = '18165001')))"/>
-        </eAnnotations>
-        <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-          <details key="documentation" value="(self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (self.value->size() = 1 and self.value->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and &#xD;&#xA;let value : datatypes::CD = element.oclAsType(datatypes::CD) in &#xD;&#xA;value.codeSystem = '2.16.840.1.113883.6.96' and (value.code = '84387000' or value.code = '18165001')))"/>
-        </eAnnotations>
-        <eAnnotations source="redefines" references="../../org.openhealthtools.mdht.uml.cda.phcr/model/phcr.ecore#//SignsAndSymptomsObservation/SignsAndSymptomsObservationValue"/>
-        <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain">
-          <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-            <details key="documentation" value="The chain of diagnostics to which problems are to be appended."/>
-          </eAnnotations>
-        </eParameters>
-        <eParameters name="context">
-          <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-            <details key="documentation" value="The cache of context-specific information."/>
-          </eAnnotations>
-          <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
-            <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
-            <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
-          </eGenericType>
-        </eParameters>
-      </contents>
     </eAnnotations>
+    <eOperations name="AcuteHepatitisBSignsAndSymptomsObservationValueP" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
+      <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
+        <details key="body" value="(self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (not self.value->isEmpty())"/>
+      </eAnnotations>
+      <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain">
+        <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+          <details key="documentation" value="The chain of diagnostics to which problems are to be appended."/>
+        </eAnnotations>
+      </eParameters>
+      <eParameters name="context">
+        <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+          <details key="documentation" value="The cache of context-specific information."/>
+        </eAnnotations>
+        <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+        </eGenericType>
+      </eParameters>
+    </eOperations>
+    <eOperations name="AcuteHepatitisBSignsAndSymptomsObservationValue" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
+      <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
+        <details key="body" value="(self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (self.value->size() = 1 and self.value->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and &#xA;let value : datatypes::CD = element.oclAsType(datatypes::CD) in &#xA;value.codeSystem = '2.16.840.1.113883.6.96' and (value.code = '84387000' or value.code = '18165001')))"/>
+      </eAnnotations>
+      <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain">
+        <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+          <details key="documentation" value="The chain of diagnostics to which problems are to be appended."/>
+        </eAnnotations>
+      </eParameters>
+      <eParameters name="context">
+        <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+          <details key="documentation" value="The cache of context-specific information."/>
+        </eAnnotations>
+        <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+        </eGenericType>
+      </eParameters>
+    </eOperations>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="AcuteHepatitisBRiskAssociatedProcedure"
       eSuperTypes="platform:/plugin/org.openhealthtools.mdht.uml.cda/model/cda.ecore#//Procedure">
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
-      <details key="statusCode.code" value="completed"/>
-      <details key="code.codeSystem" value="2.16.840.1.113883.6.96"/>
+      <details key="constraints.validation.error" value="AcuteHepatitisBRiskAssociatedProcedureTemplateId AcuteHepatitisBRiskAssociatedProcedureClassCode AcuteHepatitisBRiskAssociatedProcedureCode AcuteHepatitisBRiskAssociatedProcedureMoodCode AcuteHepatitisBRiskAssociatedProcedureStatusCode AcuteHepatitisBRiskAssociatedProcedureStatusCodeP"/>
       <details key="templateId.root" value="2.16.840.1.113883.10.20.15.3.31"/>
-      <details key="constraints.validation.error" value="AcuteHepatitisBRiskAssociatedProcedureTemplateId AcuteHepatitisBRiskAssociatedProcedureClassCode AcuteHepatitisBRiskAssociatedProcedureCode AcuteHepatitisBRiskAssociatedProcedureMoodCode AcuteHepatitisBRiskAssociatedProcedureStatusCode"/>
-      <details key="code.codeSystemName" value="SNOMEDCT"/>
-      <details key="constraints.validation.warning" value="AcuteHepatitisBRiskAssociatedProcedureEffectiveTime"/>
       <details key="classCode" value="PROC"/>
+      <details key="code.codeSystem" value="2.16.840.1.113883.6.96"/>
+      <details key="code.codeSystemName" value="SNOMEDCT"/>
       <details key="moodCode" value="EVN"/>
+      <details key="statusCode.code" value="completed"/>
+      <details key="constraints.validation.warning" value="AcuteHepatitisBRiskAssociatedProcedureEffectiveTime"/>
     </eAnnotations>
     <eOperations name="AcuteHepatitisBRiskAssociatedProcedureTemplateId" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
       <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
         <details key="body" value="self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.15.3.31')"/>
-      </eAnnotations>
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.15.3.31')"/>
       </eAnnotations>
       <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain">
         <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
@@ -1288,9 +1272,6 @@
       <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
         <details key="body" value="self.classCode=vocab::ActClass::PROC"/>
       </eAnnotations>
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="self.classCode=vocab::ActClass::PROC"/>
-      </eAnnotations>
       <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain">
         <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
           <details key="documentation" value="The chain of diagnostics to which problems are to be appended."/>
@@ -1308,10 +1289,7 @@
     </eOperations>
     <eOperations name="AcuteHepatitisBRiskAssociatedProcedureCode" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
       <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
-        <details key="body" value="(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and &#xD;&#xA;let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in (&#xD;&#xA;value.codeSystem = '2.16.840.1.113883.6.96' and (value.code = '44868003' or value.code = '302497006' or value.code = '14152002' or value.code = '177594004' or value.code = '200849007' or value.code = '428898005' or value.code = '6712008' or value.code = '428324008' or value.code = '428985000' or value.code = '118817003' or value.code = '85921004' or value.code = '387713003' or value.code = '14792009' or value.code = '116859006' or value.code = '77465005')))"/>
-      </eAnnotations>
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and &#xD;&#xA;let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in (&#xD;&#xA;value.codeSystem = '2.16.840.1.113883.6.96' and (value.code = '44868003' or value.code = '302497006' or value.code = '14152002' or value.code = '177594004' or value.code = '200849007' or value.code = '428898005' or value.code = '6712008' or value.code = '428324008' or value.code = '428985000' or value.code = '118817003' or value.code = '85921004' or value.code = '387713003' or value.code = '14792009' or value.code = '116859006' or value.code = '77465005')))"/>
+        <details key="body" value="(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and &#xA;let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in &#xA;value.codeSystem = '2.16.840.1.113883.6.96' and (value.code = '44868003' or value.code = '302497006' or value.code = '14152002' or value.code = '177594004' or value.code = '200849007' or value.code = '428898005' or value.code = '6712008' or value.code = '428324008' or value.code = '428985000' or value.code = '118817003' or value.code = '85921004' or value.code = '387713003' or value.code = '14792009' or value.code = '116859006' or value.code = '77465005'))"/>
       </eAnnotations>
       <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain">
         <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
@@ -1332,9 +1310,6 @@
       <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
         <details key="body" value="self.moodCode=vocab::x_DocumentProcedureMood::EVN"/>
       </eAnnotations>
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="self.moodCode=vocab::x_DocumentProcedureMood::EVN"/>
-      </eAnnotations>
       <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain">
         <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
           <details key="documentation" value="The chain of diagnostics to which problems are to be appended."/>
@@ -1352,10 +1327,26 @@
     </eOperations>
     <eOperations name="AcuteHepatitisBRiskAssociatedProcedureStatusCode" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
       <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
-        <details key="body" value="(self.statusCode.oclIsUndefined() or self.statusCode.isNullFlavorUndefined()) implies (not self.statusCode.oclIsUndefined() and self.statusCode.oclIsKindOf(datatypes::CS) and &#xD;&#xA;let value : datatypes::CS = self.statusCode.oclAsType(datatypes::CS) in (&#xD;&#xA;value.code = 'completed'))"/>
+        <details key="body" value="(self.statusCode.oclIsUndefined() or self.statusCode.isNullFlavorUndefined()) implies (not self.statusCode.oclIsUndefined() and self.statusCode.oclIsKindOf(datatypes::CS) and &#xA;let value : datatypes::CS = self.statusCode.oclAsType(datatypes::CS) in &#xA;value.code = 'completed')"/>
       </eAnnotations>
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="(self.statusCode.oclIsUndefined() or self.statusCode.isNullFlavorUndefined()) implies (not self.statusCode.oclIsUndefined() and self.statusCode.oclIsKindOf(datatypes::CS) and &#xD;&#xA;let value : datatypes::CS = self.statusCode.oclAsType(datatypes::CS) in (&#xD;&#xA;value.code = 'completed'))"/>
+      <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain">
+        <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+          <details key="documentation" value="The chain of diagnostics to which problems are to be appended."/>
+        </eAnnotations>
+      </eParameters>
+      <eParameters name="context">
+        <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+          <details key="documentation" value="The cache of context-specific information."/>
+        </eAnnotations>
+        <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+        </eGenericType>
+      </eParameters>
+    </eOperations>
+    <eOperations name="AcuteHepatitisBRiskAssociatedProcedureStatusCodeP" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
+      <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
+        <details key="body" value="(self.statusCode.oclIsUndefined() or self.statusCode.isNullFlavorUndefined()) implies (not self.statusCode.oclIsUndefined())"/>
       </eAnnotations>
       <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain">
         <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
@@ -1376,9 +1367,6 @@
       <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
         <details key="body" value="(self.effectiveTime.oclIsUndefined() or self.effectiveTime.isNullFlavorUndefined()) implies (not self.effectiveTime.oclIsUndefined())"/>
       </eAnnotations>
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="(self.effectiveTime.oclIsUndefined() or self.effectiveTime.isNullFlavorUndefined()) implies (not self.effectiveTime.oclIsUndefined())"/>
-      </eAnnotations>
       <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain">
         <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
           <details key="documentation" value="The chain of diagnostics to which problems are to be appended."/>
@@ -1397,23 +1385,20 @@
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="ViralHepatitisHistoryObservation" eSuperTypes="platform:/plugin/org.openhealthtools.mdht.uml.cda.ccd/model/ccd.ecore#//ProblemObservation">
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
-      <details key="value.codeSystemName" value="SNOMEDCT"/>
-      <details key="code.codeSystem" value="2.16.840.1.113883.5.4"/>
-      <details key="code.displayName" value="ASSERTION"/>
+      <details key="constraints.validation.error" value="ViralHepatitisHistoryObservationTemplateId ViralHepatitisHistoryObservationCode ViralHepatitisHistoryObservationValue ViralHepatitisHistoryObservationValueP"/>
       <details key="templateId.root" value="2.16.840.1.113883.10.20.15.3.32"/>
-      <details key="constraints.validation.error" value="ViralHepatitisHistoryObservationTemplateId ProblemObservationCode ViralHepatitisHistoryObservationValue"/>
-      <details key="code.codeSystemName" value="HL7ActCode"/>
       <details key="code.code" value="ASSERTION"/>
-      <details key="constraints.validation.info" value="ViralHepatitisHistoryObservationId"/>
+      <details key="code.codeSystem" value="2.16.840.1.113883.5.4"/>
+      <details key="code.codeSystemName" value="HL7ActCode"/>
+      <details key="code.displayName" value="ASSERTION"/>
       <details key="value.codeSystem" value="2.16.840.1.113883.6.96"/>
+      <details key="value.codeSystemName" value="SNOMEDCT"/>
+      <details key="constraints.validation.info" value="ViralHepatitisHistoryObservationId"/>
     </eAnnotations>
     <eAnnotations source="duplicates">
       <contents xsi:type="ecore:EOperation" name="ProblemObservationTemplateId" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
         <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
           <details key="body" value="self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.15.3.32')"/>
-        </eAnnotations>
-        <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-          <details key="documentation" value="self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.15.3.32')"/>
         </eAnnotations>
         <eAnnotations source="redefines" references="platform:/plugin/org.openhealthtools.mdht.uml.cda.ccd/model/ccd.ecore#//ProblemObservation/ProblemObservationTemplateId"/>
         <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain">
@@ -1432,12 +1417,9 @@
         </eParameters>
       </contents>
     </eAnnotations>
-    <eOperations name="ProblemObservationCode" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
+    <eOperations name="ViralHepatitisHistoryObservationCode" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
       <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
-        <details key="body" value="(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and &#xD;&#xA;let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in (&#xD;&#xA;value.code = 'ASSERTION' and value.codeSystem = '2.16.840.1.113883.5.4'))"/>
-      </eAnnotations>
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and &#xD;&#xA;let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in (&#xD;&#xA;value.code = 'ASSERTION' and value.codeSystem = '2.16.840.1.113883.5.4'))"/>
+        <details key="body" value="(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and &#xA;let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in &#xA;value.code = 'ASSERTION' and value.codeSystem = '2.16.840.1.113883.5.4')"/>
       </eAnnotations>
       <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain">
         <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
@@ -1456,10 +1438,26 @@
     </eOperations>
     <eOperations name="ViralHepatitisHistoryObservationValue" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
       <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
-        <details key="body" value="(self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (self.value->size() = 1 and self.value->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and &#xD;&#xA;let value : datatypes::CD = element.oclAsType(datatypes::CD) in &#xD;&#xA;value.codeSystem = '2.16.840.1.113883.6.96' and not value.code.oclIsUndefined()))"/>
+        <details key="body" value="(self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (self.value->size() = 1 and self.value->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and &#xA;let value : datatypes::CD = element.oclAsType(datatypes::CD) in &#xA;value.codeSystem = '2.16.840.1.113883.6.96' and not value.code.oclIsUndefined()))"/>
       </eAnnotations>
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="(self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (self.value->size() = 1 and self.value->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and &#xD;&#xA;let value : datatypes::CD = element.oclAsType(datatypes::CD) in &#xD;&#xA;value.codeSystem = '2.16.840.1.113883.6.96' and not value.code.oclIsUndefined()))"/>
+      <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain">
+        <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+          <details key="documentation" value="The chain of diagnostics to which problems are to be appended."/>
+        </eAnnotations>
+      </eParameters>
+      <eParameters name="context">
+        <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+          <details key="documentation" value="The cache of context-specific information."/>
+        </eAnnotations>
+        <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+        </eGenericType>
+      </eParameters>
+    </eOperations>
+    <eOperations name="ViralHepatitisHistoryObservationValueP" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
+      <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
+        <details key="body" value="(self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (self.value->size() = 1 and self.value->forAll(element | element.oclIsTypeOf(datatypes::CD)))"/>
       </eAnnotations>
       <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain">
         <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
@@ -1480,9 +1478,6 @@
       <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
         <details key="body" value="(self.id->isEmpty() or self.id->exists(element | element.isNullFlavorUndefined())) implies (not self.id->isEmpty())"/>
       </eAnnotations>
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="(self.id->isEmpty() or self.id->exists(element | element.isNullFlavorUndefined())) implies (not self.id->isEmpty())"/>
-      </eAnnotations>
       <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain">
         <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
           <details key="documentation" value="The chain of diagnostics to which problems are to be appended."/>
@@ -1501,50 +1496,24 @@
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="STDHistoryObservation" eSuperTypes="platform:/plugin/org.openhealthtools.mdht.uml.cda.ccd/model/ccd.ecore#//ProblemObservation">
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
-      <details key="statusCode.code" value="completed"/>
-      <details key="code.codeSystem" value="2.16.840.1.113883.5.6"/>
-      <details key="code.displayName" value="ASSERTION"/>
+      <details key="constraints.validation.error" value="STDHistoryObservationTemplateId STDHistoryObservationClassCode STDHistoryObservationCode STDHistoryObservationMoodCode STDHistoryObservationStatusCode STDHistoryObservationValue"/>
       <details key="templateId.root" value="2.16.840.1.113883.10.20.15.3.33"/>
-      <details key="constraints.validation.error" value="STDHistoryObservationTemplateId STDHistoryObservationClassCode ProblemObservationCode STDHistoryObservationMoodCode ProblemObservationStatusCode"/>
-      <details key="code.codeSystemName" value="HL7ActClass"/>
-      <details key="constraints.validation.warning" value="STDHistoryObservationEffectiveTime"/>
       <details key="classCode" value="OBS"/>
       <details key="code.code" value="ASSERTION"/>
-      <details key="moodCode" value="EVN"/>
+      <details key="code.codeSystem" value="2.16.840.1.113883.5.6"/>
+      <details key="code.codeSystemName" value="HL7ActClass"/>
+      <details key="code.displayName" value="ASSERTION"/>
+      <details key="constraints.validation.warning" value="STDHistoryObservationEffectiveTime"/>
       <details key="constraints.validation.info" value="STDHistoryObservationId STDHistoryObservationProblemStatus"/>
+      <details key="moodCode" value="EVN"/>
+      <details key="statusCode.code" value="completed"/>
     </eAnnotations>
     <eAnnotations source="duplicates">
       <contents xsi:type="ecore:EOperation" name="ProblemObservationTemplateId" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
         <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
           <details key="body" value="self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.15.3.33')"/>
         </eAnnotations>
-        <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-          <details key="documentation" value="self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.15.3.33')"/>
-        </eAnnotations>
         <eAnnotations source="redefines" references="platform:/plugin/org.openhealthtools.mdht.uml.cda.ccd/model/ccd.ecore#//ProblemObservation/ProblemObservationTemplateId"/>
-        <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain">
-          <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-            <details key="documentation" value="The chain of diagnostics to which problems are to be appended."/>
-          </eAnnotations>
-        </eParameters>
-        <eParameters name="context">
-          <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-            <details key="documentation" value="The cache of context-specific information."/>
-          </eAnnotations>
-          <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
-            <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
-            <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
-          </eGenericType>
-        </eParameters>
-      </contents>
-      <contents xsi:type="ecore:EOperation" name="ProblemObservationStatusCode" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
-        <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
-          <details key="body" value="(self.statusCode.oclIsUndefined() or self.statusCode.isNullFlavorUndefined()) implies (not self.statusCode.oclIsUndefined() and self.statusCode.oclIsKindOf(datatypes::CS) and &#xD;&#xA;let value : datatypes::CS = self.statusCode.oclAsType(datatypes::CS) in (&#xD;&#xA;value.code = 'completed'))"/>
-        </eAnnotations>
-        <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-          <details key="documentation" value="(self.statusCode.oclIsUndefined() or self.statusCode.isNullFlavorUndefined()) implies (not self.statusCode.oclIsUndefined() and self.statusCode.oclIsKindOf(datatypes::CS) and &#xD;&#xA;let value : datatypes::CS = self.statusCode.oclAsType(datatypes::CS) in (&#xD;&#xA;value.code = 'completed'))"/>
-        </eAnnotations>
-        <eAnnotations source="redefines" references="platform:/plugin/org.openhealthtools.mdht.uml.cda.ccd/model/ccd.ecore#//ProblemObservation/ProblemObservationStatusCode"/>
         <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain">
           <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
             <details key="documentation" value="The chain of diagnostics to which problems are to be appended."/>
@@ -1565,9 +1534,6 @@
       <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
         <details key="body" value="self.classCode=vocab::ActClassObservation::OBS"/>
       </eAnnotations>
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="self.classCode=vocab::ActClassObservation::OBS"/>
-      </eAnnotations>
       <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain">
         <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
           <details key="documentation" value="The chain of diagnostics to which problems are to be appended."/>
@@ -1583,12 +1549,9 @@
         </eGenericType>
       </eParameters>
     </eOperations>
-    <eOperations name="ProblemObservationCode" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
+    <eOperations name="STDHistoryObservationCode" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
       <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
-        <details key="body" value="(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and &#xD;&#xA;let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in (&#xD;&#xA;value.code = 'ASSERTION' and value.codeSystem = '2.16.840.1.113883.5.6'))"/>
-      </eAnnotations>
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and &#xD;&#xA;let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in (&#xD;&#xA;value.code = 'ASSERTION' and value.codeSystem = '2.16.840.1.113883.5.6'))"/>
+        <details key="body" value="(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and &#xA;let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in &#xA;value.code = 'ASSERTION' and value.codeSystem = '2.16.840.1.113883.5.6')"/>
       </eAnnotations>
       <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain">
         <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
@@ -1609,9 +1572,6 @@
       <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
         <details key="body" value="(self.effectiveTime.oclIsUndefined() or self.effectiveTime.isNullFlavorUndefined()) implies (not self.effectiveTime.oclIsUndefined())"/>
       </eAnnotations>
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="(self.effectiveTime.oclIsUndefined() or self.effectiveTime.isNullFlavorUndefined()) implies (not self.effectiveTime.oclIsUndefined())"/>
-      </eAnnotations>
       <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain">
         <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
           <details key="documentation" value="The chain of diagnostics to which problems are to be appended."/>
@@ -1630,9 +1590,6 @@
     <eOperations name="STDHistoryObservationId" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
       <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
         <details key="body" value="(self.id->isEmpty() or self.id->exists(element | element.isNullFlavorUndefined())) implies (not self.id->isEmpty())"/>
-      </eAnnotations>
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="(self.id->isEmpty() or self.id->exists(element | element.isNullFlavorUndefined())) implies (not self.id->isEmpty())"/>
       </eAnnotations>
       <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain">
         <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
@@ -1653,8 +1610,43 @@
       <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
         <details key="body" value="self.moodCode=vocab::x_ActMoodDocumentObservation::EVN"/>
       </eAnnotations>
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="self.moodCode=vocab::x_ActMoodDocumentObservation::EVN"/>
+      <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain">
+        <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+          <details key="documentation" value="The chain of diagnostics to which problems are to be appended."/>
+        </eAnnotations>
+      </eParameters>
+      <eParameters name="context">
+        <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+          <details key="documentation" value="The cache of context-specific information."/>
+        </eAnnotations>
+        <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+        </eGenericType>
+      </eParameters>
+    </eOperations>
+    <eOperations name="STDHistoryObservationStatusCode" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
+      <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
+        <details key="body" value="(self.statusCode.oclIsUndefined() or self.statusCode.isNullFlavorUndefined()) implies (not self.statusCode.oclIsUndefined() and self.statusCode.oclIsKindOf(datatypes::CS) and &#xA;let value : datatypes::CS = self.statusCode.oclAsType(datatypes::CS) in &#xA;value.code = 'completed')"/>
+      </eAnnotations>
+      <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain">
+        <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+          <details key="documentation" value="The chain of diagnostics to which problems are to be appended."/>
+        </eAnnotations>
+      </eParameters>
+      <eParameters name="context">
+        <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+          <details key="documentation" value="The cache of context-specific information."/>
+        </eAnnotations>
+        <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+        </eGenericType>
+      </eParameters>
+    </eOperations>
+    <eOperations name="STDHistoryObservationValue" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
+      <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
+        <details key="body" value="(self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (self.value->size() = 1 and self.value->forAll(element | element.oclIsTypeOf(datatypes::CD)))"/>
       </eAnnotations>
       <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain">
         <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
@@ -1675,9 +1667,6 @@
       <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
         <details key="body" value="self.entryRelationship->one(entryRelationship : cda::EntryRelationship | not entryRelationship.observation.oclIsUndefined() and entryRelationship.observation.oclIsKindOf(ccd::ProblemStatusObservation) and entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::REFR)"/>
       </eAnnotations>
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="self.entryRelationship->one(entryRelationship : cda::EntryRelationship | not entryRelationship.observation.oclIsUndefined() and entryRelationship.observation.oclIsKindOf(ccd::ProblemStatusObservation) and entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::REFR)"/>
-      </eAnnotations>
       <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain">
         <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
           <details key="documentation" value="The chain of diagnostics to which problems are to be appended."/>
@@ -1694,28 +1683,22 @@
       </eParameters>
     </eOperations>
     <eOperations name="gethepbProblemStatus" ordered="false" lowerBound="1" eType="ecore:EClass platform:/plugin/org.openhealthtools.mdht.uml.cda.ccd/model/ccd.ecore#//ProblemStatusObservation">
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(ccd::ProblemStatusObservation))->asSequence()->first().oclAsType(ccd::ProblemStatusObservation)"/>
-      </eAnnotations>
       <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
-        <details key="body" value="self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(ccd::ProblemStatusObservation))->asSequence()->first().oclAsType(ccd::ProblemStatusObservation)"/>
+        <details key="body" value="self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(ccd::ProblemStatusObservation))->asSequence()->any(true).oclAsType(ccd::ProblemStatusObservation)"/>
       </eAnnotations>
     </eOperations>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="AcuteHepatitisBImmunizationSection"
       eSuperTypes="platform:/plugin/org.openhealthtools.mdht.uml.cda.ccd/model/ccd.ecore#//ImmunizationsSection">
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
-      <details key="templateId.root" value="2.16.840.1.113883.10.20.15.2.9"/>
       <details key="constraints.validation.error" value="AcuteHepatitisBImmunizationSectionTemplateId AcuteHepatitisBImmunizationSectionAcuteHepatitisBImmunizationActivity"/>
+      <details key="templateId.root" value="2.16.840.1.113883.10.20.15.2.9"/>
     </eAnnotations>
     <eAnnotations source="duplicates">
       <contents xsi:type="ecore:EOperation" name="ImmunizationsSectionTemplateId"
           eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
         <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
           <details key="body" value="self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.15.2.9')"/>
-        </eAnnotations>
-        <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-          <details key="documentation" value="self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.15.2.9')"/>
         </eAnnotations>
         <eAnnotations source="redefines" references="platform:/plugin/org.openhealthtools.mdht.uml.cda.ccd/model/ccd.ecore#//ImmunizationsSection/ImmunizationsSectionTemplateId"/>
         <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain">
@@ -1739,9 +1722,6 @@
       <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
         <details key="body" value="self.entry->exists(entry : cda::Entry | not entry.substanceAdministration.oclIsUndefined() and entry.substanceAdministration.oclIsKindOf(hepb::AcuteHepatitisBImmunizationActivity) and entry.typeCode = vocab::x_ActRelationshipEntry::DRIV)"/>
       </eAnnotations>
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="self.entry->exists(entry : cda::Entry | not entry.substanceAdministration.oclIsUndefined() and entry.substanceAdministration.oclIsKindOf(hepb::AcuteHepatitisBImmunizationActivity) and entry.typeCode = vocab::x_ActRelationshipEntry::DRIV)"/>
-      </eAnnotations>
       <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain">
         <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
           <details key="documentation" value="The chain of diagnostics to which problems are to be appended."/>
@@ -1759,9 +1739,6 @@
     </eOperations>
     <eOperations name="getAcuteHepatitisBImmunizationActivities" ordered="false" lowerBound="1"
         upperBound="-1" eType="#//AcuteHepatitisBImmunizationActivity">
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="self.getSubstanceAdministrations()->select(substanceAdministration : cda::SubstanceAdministration | not substanceAdministration.oclIsUndefined() and substanceAdministration.oclIsKindOf(hepb::AcuteHepatitisBImmunizationActivity)).oclAsType(hepb::AcuteHepatitisBImmunizationActivity)"/>
-      </eAnnotations>
       <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
         <details key="body" value="self.getSubstanceAdministrations()->select(substanceAdministration : cda::SubstanceAdministration | not substanceAdministration.oclIsUndefined() and substanceAdministration.oclIsKindOf(hepb::AcuteHepatitisBImmunizationActivity)).oclAsType(hepb::AcuteHepatitisBImmunizationActivity)"/>
       </eAnnotations>
@@ -1770,16 +1747,13 @@
   <eClassifiers xsi:type="ecore:EClass" name="AcuteHepatitisBImmunizationActivity"
       eSuperTypes="platform:/plugin/org.openhealthtools.mdht.uml.cda.ccd/model/ccd.ecore#//MedicationActivity">
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
-      <details key="templateId.root" value="2.16.840.1.113883.10.20.15.3.25"/>
       <details key="constraints.validation.error" value="AcuteHepatitisBImmunizationActivityTemplateId"/>
+      <details key="templateId.root" value="2.16.840.1.113883.10.20.15.3.25"/>
     </eAnnotations>
     <eAnnotations source="duplicates">
       <contents xsi:type="ecore:EOperation" name="MedicationActivityTemplateId" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
         <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
           <details key="body" value="self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.15.3.25')"/>
-        </eAnnotations>
-        <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-          <details key="documentation" value="self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.15.3.25')"/>
         </eAnnotations>
         <eAnnotations source="redefines" references="platform:/plugin/org.openhealthtools.mdht.uml.cda.ccd/model/ccd.ecore#//MedicationActivity/MedicationActivityTemplateId"/>
         <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain">
@@ -1802,17 +1776,14 @@
   <eClassifiers xsi:type="ecore:EClass" name="AcuteHepatitisBPHCRTreatmentInformationSection"
       eSuperTypes="../../org.openhealthtools.mdht.uml.cda.phcr/model/phcr.ecore#//PhcrTreatmentInformationSection">
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
-      <details key="templateId.root" value="2.16.840.1.113883.10.20.15.2.10"/>
       <details key="constraints.validation.error" value="AcuteHepatitisBPHCRTreatmentInformationSectionTemplateId AcuteHepatitisBPHCRTreatmentInformationSectionAcuteHepatitisBTherapeuticRegimenAct"/>
+      <details key="templateId.root" value="2.16.840.1.113883.10.20.15.2.10"/>
     </eAnnotations>
     <eAnnotations source="duplicates">
       <contents xsi:type="ecore:EOperation" name="PhcrTreatmentInformationSectionTemplateId"
           eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
         <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
           <details key="body" value="self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.15.2.10')"/>
-        </eAnnotations>
-        <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-          <details key="documentation" value="self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.15.2.10')"/>
         </eAnnotations>
         <eAnnotations source="redefines" references="../../org.openhealthtools.mdht.uml.cda.phcr/model/phcr.ecore#//PhcrTreatmentInformationSection/PhcrTreatmentInformationSectionTemplateId"/>
         <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain">
@@ -1836,9 +1807,6 @@
       <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
         <details key="body" value="self.entry->one(entry : cda::Entry | not entry.act.oclIsUndefined() and entry.act.oclIsKindOf(hepb::AcuteHepatitisBTherapeuticRegimenAct) and entry.typeCode = vocab::x_ActRelationshipEntry::DRIV)"/>
       </eAnnotations>
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="self.entry->one(entry : cda::Entry | not entry.act.oclIsUndefined() and entry.act.oclIsKindOf(hepb::AcuteHepatitisBTherapeuticRegimenAct) and entry.typeCode = vocab::x_ActRelationshipEntry::DRIV)"/>
-      </eAnnotations>
       <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain">
         <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
           <details key="documentation" value="The chain of diagnostics to which problems are to be appended."/>
@@ -1856,28 +1824,22 @@
     </eOperations>
     <eOperations name="getAcuteHepatitisBTherapeuticRegimenAct" ordered="false" lowerBound="1"
         eType="#//AcuteHepatitisBTherapeuticRegimenAct">
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(hepb::AcuteHepatitisBTherapeuticRegimenAct))->asSequence()->first().oclAsType(hepb::AcuteHepatitisBTherapeuticRegimenAct)"/>
-      </eAnnotations>
       <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
-        <details key="body" value="self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(hepb::AcuteHepatitisBTherapeuticRegimenAct))->asSequence()->first().oclAsType(hepb::AcuteHepatitisBTherapeuticRegimenAct)"/>
+        <details key="body" value="self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(hepb::AcuteHepatitisBTherapeuticRegimenAct))->asSequence()->any(true).oclAsType(hepb::AcuteHepatitisBTherapeuticRegimenAct)"/>
       </eAnnotations>
     </eOperations>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="AcuteHepatitisBTherapeuticRegimenAct"
       eSuperTypes="../../org.openhealthtools.mdht.uml.cda.phcr/model/phcr.ecore#//TherapeuticRegimenAct">
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
-      <details key="templateId.root" value="2.16.840.1.113883.10.20.15.3.23"/>
       <details key="constraints.validation.error" value="AcuteHepatitisBTherapeuticRegimenActTemplateId"/>
+      <details key="templateId.root" value="2.16.840.1.113883.10.20.15.3.23"/>
     </eAnnotations>
     <eAnnotations source="duplicates">
       <contents xsi:type="ecore:EOperation" name="TherapeuticRegimenActTemplateId"
           eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
         <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
           <details key="body" value="self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.15.3.23')"/>
-        </eAnnotations>
-        <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-          <details key="documentation" value="self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.15.3.23')"/>
         </eAnnotations>
         <eAnnotations source="redefines" references="../../org.openhealthtools.mdht.uml.cda.phcr/model/phcr.ecore#//TherapeuticRegimenAct/TherapeuticRegimenActTemplateId"/>
         <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain">
@@ -1900,17 +1862,14 @@
   <eClassifiers xsi:type="ecore:EClass" name="AcuteHepatitisBPHCRRelevantDiagnosticTestsAndOrLaboratoryDataSection"
       eSuperTypes="../../org.openhealthtools.mdht.uml.cda.phcr/model/phcr.ecore#//PhcrRelevantDxTestsSection">
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
-      <details key="templateId.root" value="2.16.840.1.113883.10.20.15.2.13"/>
       <details key="constraints.validation.error" value="AcuteHepatitisBPHCRRelevantDiagnosticTestsAndOrLaboratoryDataSectionTemplateId"/>
+      <details key="templateId.root" value="2.16.840.1.113883.10.20.15.2.13"/>
       <details key="constraints.validation.warning" value="AcuteHepatitisBPHCRRelevantDiagnosticTestsAndOrLaboratoryDataSectionAcuteHepatitisBResultObservation"/>
     </eAnnotations>
     <eAnnotations source="duplicates">
       <contents xsi:type="ecore:EOperation" name="ResultsSectionTemplateId" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
         <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
           <details key="body" value="self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.15.2.13')"/>
-        </eAnnotations>
-        <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-          <details key="documentation" value="self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.15.2.13')"/>
         </eAnnotations>
         <eAnnotations source="redefines" references="platform:/plugin/org.openhealthtools.mdht.uml.cda.ccd/model/ccd.ecore#//ResultsSection/ResultsSectionTemplateId ../../org.openhealthtools.mdht.uml.cda.phcr/model/phcr.ecore#//PhcrRelevantDxTestsSection/%duplicates%/ResultsSectionTemplateId"/>
         <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain">
@@ -1934,9 +1893,6 @@
       <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
         <details key="body" value="self.entry->exists(entry : cda::Entry | not entry.observation.oclIsUndefined() and entry.observation.oclIsKindOf(hepb::AcuteHepatitisBResultObservation) and entry.typeCode = vocab::x_ActRelationshipEntry::DRIV)"/>
       </eAnnotations>
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="self.entry->exists(entry : cda::Entry | not entry.observation.oclIsUndefined() and entry.observation.oclIsKindOf(hepb::AcuteHepatitisBResultObservation) and entry.typeCode = vocab::x_ActRelationshipEntry::DRIV)"/>
-      </eAnnotations>
       <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain">
         <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
           <details key="documentation" value="The chain of diagnostics to which problems are to be appended."/>
@@ -1954,9 +1910,6 @@
     </eOperations>
     <eOperations name="getAcuteHepatitisBResultObservations" ordered="false" lowerBound="1"
         upperBound="-1" eType="#//AcuteHepatitisBResultObservation">
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(hepb::AcuteHepatitisBResultObservation)).oclAsType(hepb::AcuteHepatitisBResultObservation)"/>
-      </eAnnotations>
       <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
         <details key="body" value="self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(hepb::AcuteHepatitisBResultObservation)).oclAsType(hepb::AcuteHepatitisBResultObservation)"/>
       </eAnnotations>
@@ -1964,16 +1917,14 @@
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="AcuteHepatitisBResultObservation" eSuperTypes="../../org.openhealthtools.mdht.uml.cda.phcr/model/phcr.ecore#//ResultObservation">
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
+      <details key="constraints.validation.error" value="AcuteHepatitisBResultObservationTemplateId AcuteHepatitisBResultObservationCode"/>
       <details key="templateId.root" value="2.16.840.1.113883.10.20.15.3.34"/>
-      <details key="constraints.validation.error" value="AcuteHepatitisBResultObservationTemplateId"/>
+      <details key="constraints.validation.warning" value="AcuteHepatitisBResultObservationInterpretationCode"/>
     </eAnnotations>
     <eAnnotations source="duplicates">
       <contents xsi:type="ecore:EOperation" name="ResultObservationTemplateId" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
         <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
           <details key="body" value="self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.15.3.34')"/>
-        </eAnnotations>
-        <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-          <details key="documentation" value="self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.15.3.34')"/>
         </eAnnotations>
         <eAnnotations source="redefines" references="platform:/plugin/org.openhealthtools.mdht.uml.cda.ccd/model/ccd.ecore#//ResultObservation/ResultObservationTemplateId ../../org.openhealthtools.mdht.uml.cda.phcr/model/phcr.ecore#//ResultObservation/%duplicates%/ResultObservationTemplateId"/>
         <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain">
@@ -1992,20 +1943,55 @@
         </eParameters>
       </contents>
     </eAnnotations>
+    <eOperations name="AcuteHepatitisBResultObservationCode" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
+      <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
+        <details key="body" value="(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined())"/>
+      </eAnnotations>
+      <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain">
+        <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+          <details key="documentation" value="The chain of diagnostics to which problems are to be appended."/>
+        </eAnnotations>
+      </eParameters>
+      <eParameters name="context">
+        <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+          <details key="documentation" value="The cache of context-specific information."/>
+        </eAnnotations>
+        <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+        </eGenericType>
+      </eParameters>
+    </eOperations>
+    <eOperations name="AcuteHepatitisBResultObservationInterpretationCode" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
+      <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
+        <details key="body" value="(self.interpretationCode->isEmpty() or self.interpretationCode->exists(element | element.isNullFlavorUndefined())) implies (not self.interpretationCode->isEmpty())"/>
+      </eAnnotations>
+      <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain">
+        <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+          <details key="documentation" value="The chain of diagnostics to which problems are to be appended."/>
+        </eAnnotations>
+      </eParameters>
+      <eParameters name="context">
+        <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+          <details key="documentation" value="The cache of context-specific information."/>
+        </eAnnotations>
+        <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+        </eGenericType>
+      </eParameters>
+    </eOperations>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="AcuteHepatitisBImmunizationProduct"
       eSuperTypes="platform:/plugin/org.openhealthtools.mdht.uml.cda.ccd/model/ccd.ecore#//Product">
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
-      <details key="templateId.root" value="2.16.840.1.113883.10.20.15.3.24"/>
       <details key="constraints.validation.error" value="AcuteHepatitisBImmunizationProductTemplateId"/>
+      <details key="templateId.root" value="2.16.840.1.113883.10.20.15.3.24"/>
     </eAnnotations>
     <eAnnotations source="duplicates">
       <contents xsi:type="ecore:EOperation" name="ProductTemplateId" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
         <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
           <details key="body" value="self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.15.3.24')"/>
-        </eAnnotations>
-        <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-          <details key="documentation" value="self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.15.3.24')"/>
         </eAnnotations>
         <eAnnotations source="redefines" references="platform:/plugin/org.openhealthtools.mdht.uml.cda.ccd/model/ccd.ecore#//Product/ProductTemplateId"/>
         <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain">

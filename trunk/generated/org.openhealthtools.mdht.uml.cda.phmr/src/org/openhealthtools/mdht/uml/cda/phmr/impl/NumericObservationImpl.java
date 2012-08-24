@@ -22,12 +22,15 @@
  */
 package org.openhealthtools.mdht.uml.cda.phmr.impl;
 
+import java.lang.Iterable;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
 
 import org.eclipse.emf.ecore.EClass;
 
+import org.eclipse.emf.ecore.EObject;
+import org.openhealthtools.mdht.emf.runtime.util.Initializer;
 import org.openhealthtools.mdht.uml.cda.ccd.impl.ResultObservationImpl;
 
 import org.openhealthtools.mdht.uml.cda.phmr.NumericObservation;
@@ -48,77 +51,96 @@ import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
  */
 public class NumericObservationImpl extends ResultObservationImpl implements NumericObservation {
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	protected NumericObservationImpl() {
-		super();
-	}
+    super();
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	@Override
 	protected EClass eStaticClass() {
-		return PhmrPackage.Literals.NUMERIC_OBSERVATION;
-	}
+    return PhmrPackage.Literals.NUMERIC_OBSERVATION;
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateNumericObservationClassCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return NumericObservationOperations.validateNumericObservationClassCode(this, diagnostics, context);
-	}
+    return NumericObservationOperations.validateNumericObservationClassCode(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateNumericObservationCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return NumericObservationOperations.validateNumericObservationCode(this, diagnostics, context);
-	}
+    return NumericObservationOperations.validateNumericObservationCode(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateNumericObservationMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return NumericObservationOperations.validateNumericObservationMoodCode(this, diagnostics, context);
-	}
+    return NumericObservationOperations.validateNumericObservationMoodCode(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateNumericObservationValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return NumericObservationOperations.validateNumericObservationValue(this, diagnostics, context);
-	}
+    return NumericObservationOperations.validateNumericObservationValue(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public boolean validateNumericObservationPHMRProductInstanceReference(DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+    return NumericObservationOperations.validateNumericObservationPHMRProductInstanceReference(this, diagnostics, context);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	@Override
 	public boolean validateResultObservationTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return NumericObservationOperations.validateResultObservationTemplateId(this, diagnostics, context);
-	}
+    return NumericObservationOperations.validateResultObservationTemplateId(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public NumericObservation init() {
-    	CDAUtil.init(this);
-    	return this;
-	}
+      return Initializer.Util.init(this);
+  }
+
+  /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    public NumericObservation init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
 } //NumericObservationImpl

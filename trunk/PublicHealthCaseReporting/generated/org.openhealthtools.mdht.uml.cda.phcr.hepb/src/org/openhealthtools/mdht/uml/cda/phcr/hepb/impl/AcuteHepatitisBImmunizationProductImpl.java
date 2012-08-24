@@ -10,12 +10,15 @@
  *******************************************************************************/
 package org.openhealthtools.mdht.uml.cda.phcr.hepb.impl;
 
+import java.lang.Iterable;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
 
 import org.eclipse.emf.ecore.EClass;
 
+import org.eclipse.emf.ecore.EObject;
+import org.openhealthtools.mdht.emf.runtime.util.Initializer;
 import org.openhealthtools.mdht.uml.cda.ccd.impl.ProductImpl;
 
 import org.openhealthtools.mdht.uml.cda.phcr.hepb.AcuteHepatitisBImmunizationProduct;
@@ -36,41 +39,50 @@ import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
  */
 public class AcuteHepatitisBImmunizationProductImpl extends ProductImpl implements AcuteHepatitisBImmunizationProduct {
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	protected AcuteHepatitisBImmunizationProductImpl() {
-		super();
-	}
+    super();
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	@Override
 	protected EClass eStaticClass() {
-		return HepbPackage.Literals.ACUTE_HEPATITIS_BIMMUNIZATION_PRODUCT;
-	}
+    return HepbPackage.Literals.ACUTE_HEPATITIS_BIMMUNIZATION_PRODUCT;
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	@Override
 	public boolean validateProductTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return AcuteHepatitisBImmunizationProductOperations.validateProductTemplateId(this, diagnostics, context);
-	}
+    return AcuteHepatitisBImmunizationProductOperations.validateProductTemplateId(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public AcuteHepatitisBImmunizationProduct init() {
-    	CDAUtil.init(this);
-    	return this;
-	}
+      return Initializer.Util.init(this);
+  }
+
+  /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    public AcuteHepatitisBImmunizationProduct init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
 } //AcuteHepatitisBImmunizationProductImpl

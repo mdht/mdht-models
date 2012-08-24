@@ -89,7 +89,6 @@ public class ActivityEndTimingReferenceOperations extends ClinicalStatementOpera
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.23.54')
    * @param activityEndTimingReference The receiving '<em><b>Activity End Timing Reference</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -99,6 +98,7 @@ public class ActivityEndTimingReferenceOperations extends ClinicalStatementOpera
   
   public static  boolean validateActivityEndTimingReferenceTemplateId(ActivityEndTimingReference activityEndTimingReference, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
+  	  
     if (VALIDATE_ACTIVITY_END_TIMING_REFERENCE_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(SdtmPackage.Literals.ACTIVITY_END_TIMING_REFERENCE);
@@ -123,6 +123,7 @@ public class ActivityEndTimingReferenceOperations extends ClinicalStatementOpera
              org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "ActivityEndTimingReferenceTemplateId", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(activityEndTimingReference, context) }),
              new Object [] { activityEndTimingReference }));
       }
+       
       return false;
     }
     return true;
@@ -154,7 +155,6 @@ public class ActivityEndTimingReferenceOperations extends ClinicalStatementOpera
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.classCode=vocab::x_ActClassDocumentEntryAct::ACT
    * @param activityEndTimingReference The receiving '<em><b>Activity End Timing Reference</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -164,6 +164,7 @@ public class ActivityEndTimingReferenceOperations extends ClinicalStatementOpera
   
   public static  boolean validateActivityEndTimingReferenceClassCode(ActivityEndTimingReference activityEndTimingReference, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
+  	  
     if (VALIDATE_ACTIVITY_END_TIMING_REFERENCE_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(SdtmPackage.Literals.ACTIVITY_END_TIMING_REFERENCE);
@@ -188,6 +189,7 @@ public class ActivityEndTimingReferenceOperations extends ClinicalStatementOpera
              org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "ActivityEndTimingReferenceClassCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(activityEndTimingReference, context) }),
              new Object [] { activityEndTimingReference }));
       }
+       
       return false;
     }
     return true;
@@ -219,7 +221,6 @@ public class ActivityEndTimingReferenceOperations extends ClinicalStatementOpera
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * (self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined())
    * @param activityEndTimingReference The receiving '<em><b>Activity End Timing Reference</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -229,6 +230,7 @@ public class ActivityEndTimingReferenceOperations extends ClinicalStatementOpera
   
   public static  boolean validateActivityEndTimingReferenceCodeP(ActivityEndTimingReference activityEndTimingReference, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
+  	  
     if (VALIDATE_ACTIVITY_END_TIMING_REFERENCE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(SdtmPackage.Literals.ACTIVITY_END_TIMING_REFERENCE);
@@ -253,6 +255,7 @@ public class ActivityEndTimingReferenceOperations extends ClinicalStatementOpera
              org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "ActivityEndTimingReferenceCodeP", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(activityEndTimingReference, context) }),
              new Object [] { activityEndTimingReference }));
       }
+       
       return false;
     }
     return true;
@@ -286,9 +289,6 @@ public class ActivityEndTimingReferenceOperations extends ClinicalStatementOpera
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * (self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and 
-   * let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in 
-   * value.codeSystem = '2.16.840.1.113883.3.26.1.1')
    * @param activityEndTimingReference The receiving '<em><b>Activity End Timing Reference</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -298,6 +298,7 @@ public class ActivityEndTimingReferenceOperations extends ClinicalStatementOpera
   
   public static  boolean validateActivityEndTimingReferenceCode(ActivityEndTimingReference activityEndTimingReference, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
+  	  
     if (VALIDATE_ACTIVITY_END_TIMING_REFERENCE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(SdtmPackage.Literals.ACTIVITY_END_TIMING_REFERENCE);
@@ -322,6 +323,7 @@ public class ActivityEndTimingReferenceOperations extends ClinicalStatementOpera
              org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "ActivityEndTimingReferenceCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(activityEndTimingReference, context) }),
              new Object [] { activityEndTimingReference }));
       }
+       
       return false;
     }
     return true;
@@ -353,7 +355,6 @@ public class ActivityEndTimingReferenceOperations extends ClinicalStatementOpera
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * (self.effectiveTime.oclIsUndefined() or self.effectiveTime.isNullFlavorUndefined()) implies (not self.effectiveTime.oclIsUndefined())
    * @param activityEndTimingReference The receiving '<em><b>Activity End Timing Reference</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -363,6 +364,7 @@ public class ActivityEndTimingReferenceOperations extends ClinicalStatementOpera
   
   public static  boolean validateActivityEndTimingReferenceEffectiveTime(ActivityEndTimingReference activityEndTimingReference, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
+  	  
     if (VALIDATE_ACTIVITY_END_TIMING_REFERENCE_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(SdtmPackage.Literals.ACTIVITY_END_TIMING_REFERENCE);
@@ -387,6 +389,7 @@ public class ActivityEndTimingReferenceOperations extends ClinicalStatementOpera
              org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "ActivityEndTimingReferenceEffectiveTime", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(activityEndTimingReference, context) }),
              new Object [] { activityEndTimingReference }));
       }
+       
       return false;
     }
     return true;
@@ -418,7 +421,6 @@ public class ActivityEndTimingReferenceOperations extends ClinicalStatementOpera
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * (self.id->isEmpty() or self.id->exists(element | element.isNullFlavorUndefined())) implies (not self.id->isEmpty())
    * @param activityEndTimingReference The receiving '<em><b>Activity End Timing Reference</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -428,6 +430,7 @@ public class ActivityEndTimingReferenceOperations extends ClinicalStatementOpera
   
   public static  boolean validateActivityEndTimingReferenceId(ActivityEndTimingReference activityEndTimingReference, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
+  	  
     if (VALIDATE_ACTIVITY_END_TIMING_REFERENCE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(SdtmPackage.Literals.ACTIVITY_END_TIMING_REFERENCE);
@@ -452,6 +455,7 @@ public class ActivityEndTimingReferenceOperations extends ClinicalStatementOpera
              org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "ActivityEndTimingReferenceId", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(activityEndTimingReference, context) }),
              new Object [] { activityEndTimingReference }));
       }
+       
       return false;
     }
     return true;
@@ -483,7 +487,6 @@ public class ActivityEndTimingReferenceOperations extends ClinicalStatementOpera
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.moodCode=vocab::x_DocumentActMood::EVN
    * @param activityEndTimingReference The receiving '<em><b>Activity End Timing Reference</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -493,6 +496,7 @@ public class ActivityEndTimingReferenceOperations extends ClinicalStatementOpera
   
   public static  boolean validateActivityEndTimingReferenceMoodCode(ActivityEndTimingReference activityEndTimingReference, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
+  	  
     if (VALIDATE_ACTIVITY_END_TIMING_REFERENCE_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(SdtmPackage.Literals.ACTIVITY_END_TIMING_REFERENCE);
@@ -517,6 +521,7 @@ public class ActivityEndTimingReferenceOperations extends ClinicalStatementOpera
              org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "ActivityEndTimingReferenceMoodCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(activityEndTimingReference, context) }),
              new Object [] { activityEndTimingReference }));
       }
+       
       return false;
     }
     return true;
@@ -548,7 +553,6 @@ public class ActivityEndTimingReferenceOperations extends ClinicalStatementOpera
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.entryRelationship->one(entryRelationship : cda::EntryRelationship | not entryRelationship.oclIsUndefined() and entryRelationship.oclIsKindOf(cda::EntryRelationship))
    * @param activityEndTimingReference The receiving '<em><b>Activity End Timing Reference</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -558,6 +562,7 @@ public class ActivityEndTimingReferenceOperations extends ClinicalStatementOpera
   
   public static  boolean validateActivityEndTimingReferenceActivityEndAnchorAssociation(ActivityEndTimingReference activityEndTimingReference, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
+  	  
     if (VALIDATE_ACTIVITY_END_TIMING_REFERENCE_ACTIVITY_END_ANCHOR_ASSOCIATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(SdtmPackage.Literals.ACTIVITY_END_TIMING_REFERENCE);
@@ -582,6 +587,7 @@ public class ActivityEndTimingReferenceOperations extends ClinicalStatementOpera
              org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "ActivityEndTimingReferenceActivityEndAnchorAssociation", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(activityEndTimingReference, context) }),
              new Object [] { activityEndTimingReference }));
       }
+       
       return false;
     }
     return true;
@@ -613,7 +619,6 @@ public class ActivityEndTimingReferenceOperations extends ClinicalStatementOpera
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.entryRelationship->excluding(null).act->excluding(null)->reject(classCode=vocab::x_ActClassDocumentEntryAct::ACT)
    * @param activityEndTimingReference The receiving '<em><b>Activity End Timing Reference</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -623,6 +628,7 @@ public class ActivityEndTimingReferenceOperations extends ClinicalStatementOpera
   
   public static  boolean validateActivityEndTimingReferenceActivityEndAnchorAssociationActivityEndAnchorTimePointClassCode(ActivityEndTimingReference activityEndTimingReference, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
+  	  
     if (VALIDATE_ACTIVITY_END_TIMING_REFERENCE_ACTIVITY_END_ANCHOR_ASSOCIATION_ACTIVITY_END_ANCHOR_TIME_POINT_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(SdtmPackage.Literals.ACTIVITY_END_TIMING_REFERENCE);
@@ -647,6 +653,7 @@ public class ActivityEndTimingReferenceOperations extends ClinicalStatementOpera
              org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "ActivityEndTimingReferenceActivityEndAnchorAssociationActivityEndAnchorTimePointClassCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(activityEndTimingReference, context) }),
              new Object [] { activityEndTimingReference }));
       }
+       
       return false;
     }
     return true;
@@ -678,7 +685,6 @@ public class ActivityEndTimingReferenceOperations extends ClinicalStatementOpera
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.entryRelationship->excluding(null).act->excluding(null)->reject((code.oclIsUndefined() or code.isNullFlavorUndefined()) implies (not code.oclIsUndefined()))
    * @param activityEndTimingReference The receiving '<em><b>Activity End Timing Reference</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -688,6 +694,7 @@ public class ActivityEndTimingReferenceOperations extends ClinicalStatementOpera
   
   public static  boolean validateActivityEndTimingReferenceActivityEndAnchorAssociationActivityEndAnchorTimePointCodeP(ActivityEndTimingReference activityEndTimingReference, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
+  	  
     if (VALIDATE_ACTIVITY_END_TIMING_REFERENCE_ACTIVITY_END_ANCHOR_ASSOCIATION_ACTIVITY_END_ANCHOR_TIME_POINT_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(SdtmPackage.Literals.ACTIVITY_END_TIMING_REFERENCE);
@@ -712,6 +719,7 @@ public class ActivityEndTimingReferenceOperations extends ClinicalStatementOpera
              org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "ActivityEndTimingReferenceActivityEndAnchorAssociationActivityEndAnchorTimePointCodeP", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(activityEndTimingReference, context) }),
              new Object [] { activityEndTimingReference }));
       }
+       
       return false;
     }
     return true;
@@ -745,9 +753,6 @@ public class ActivityEndTimingReferenceOperations extends ClinicalStatementOpera
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.entryRelationship->excluding(null).act->excluding(null)->reject((code.oclIsUndefined() or code.isNullFlavorUndefined()) implies (not code.oclIsUndefined() and code.oclIsKindOf(datatypes::CD) and 
-   * let value : datatypes::CD = code.oclAsType(datatypes::CD) in 
-   * value.codeSystem = '2.16.840.1.113883.3.26.1.1'))
    * @param activityEndTimingReference The receiving '<em><b>Activity End Timing Reference</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -757,6 +762,7 @@ public class ActivityEndTimingReferenceOperations extends ClinicalStatementOpera
   
   public static  boolean validateActivityEndTimingReferenceActivityEndAnchorAssociationActivityEndAnchorTimePointCode(ActivityEndTimingReference activityEndTimingReference, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
+  	  
     if (VALIDATE_ACTIVITY_END_TIMING_REFERENCE_ACTIVITY_END_ANCHOR_ASSOCIATION_ACTIVITY_END_ANCHOR_TIME_POINT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(SdtmPackage.Literals.ACTIVITY_END_TIMING_REFERENCE);
@@ -781,6 +787,7 @@ public class ActivityEndTimingReferenceOperations extends ClinicalStatementOpera
              org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "ActivityEndTimingReferenceActivityEndAnchorAssociationActivityEndAnchorTimePointCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(activityEndTimingReference, context) }),
              new Object [] { activityEndTimingReference }));
       }
+       
       return false;
     }
     return true;
@@ -812,7 +819,6 @@ public class ActivityEndTimingReferenceOperations extends ClinicalStatementOpera
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.entryRelationship->excluding(null).act->excluding(null)->reject((effectiveTime.oclIsUndefined() or effectiveTime.isNullFlavorUndefined()) implies (not effectiveTime.oclIsUndefined()))
    * @param activityEndTimingReference The receiving '<em><b>Activity End Timing Reference</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -822,6 +828,7 @@ public class ActivityEndTimingReferenceOperations extends ClinicalStatementOpera
   
   public static  boolean validateActivityEndTimingReferenceActivityEndAnchorAssociationActivityEndAnchorTimePointEffectiveTime(ActivityEndTimingReference activityEndTimingReference, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
+  	  
     if (VALIDATE_ACTIVITY_END_TIMING_REFERENCE_ACTIVITY_END_ANCHOR_ASSOCIATION_ACTIVITY_END_ANCHOR_TIME_POINT_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(SdtmPackage.Literals.ACTIVITY_END_TIMING_REFERENCE);
@@ -846,6 +853,7 @@ public class ActivityEndTimingReferenceOperations extends ClinicalStatementOpera
              org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "ActivityEndTimingReferenceActivityEndAnchorAssociationActivityEndAnchorTimePointEffectiveTime", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(activityEndTimingReference, context) }),
              new Object [] { activityEndTimingReference }));
       }
+       
       return false;
     }
     return true;
@@ -877,7 +885,6 @@ public class ActivityEndTimingReferenceOperations extends ClinicalStatementOpera
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.entryRelationship->excluding(null).act->excluding(null)->reject(isDefined('moodCode'))
    * @param activityEndTimingReference The receiving '<em><b>Activity End Timing Reference</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -887,6 +894,7 @@ public class ActivityEndTimingReferenceOperations extends ClinicalStatementOpera
   
   public static  boolean validateActivityEndTimingReferenceActivityEndAnchorAssociationActivityEndAnchorTimePointMoodCode(ActivityEndTimingReference activityEndTimingReference, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
+  	  
     if (VALIDATE_ACTIVITY_END_TIMING_REFERENCE_ACTIVITY_END_ANCHOR_ASSOCIATION_ACTIVITY_END_ANCHOR_TIME_POINT_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(SdtmPackage.Literals.ACTIVITY_END_TIMING_REFERENCE);
@@ -911,6 +919,7 @@ public class ActivityEndTimingReferenceOperations extends ClinicalStatementOpera
              org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "ActivityEndTimingReferenceActivityEndAnchorAssociationActivityEndAnchorTimePointMoodCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(activityEndTimingReference, context) }),
              new Object [] { activityEndTimingReference }));
       }
+       
       return false;
     }
     return true;
@@ -942,7 +951,6 @@ public class ActivityEndTimingReferenceOperations extends ClinicalStatementOpera
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.entryRelationship->excluding(null)->reject(typeCode=vocab::x_ActRelationshipEntryRelationship::COMP)
    * @param activityEndTimingReference The receiving '<em><b>Activity End Timing Reference</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -952,6 +960,7 @@ public class ActivityEndTimingReferenceOperations extends ClinicalStatementOpera
   
   public static  boolean validateActivityEndTimingReferenceActivityEndAnchorAssociationTypeCode(ActivityEndTimingReference activityEndTimingReference, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
+  	  
     if (VALIDATE_ACTIVITY_END_TIMING_REFERENCE_ACTIVITY_END_ANCHOR_ASSOCIATION_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(SdtmPackage.Literals.ACTIVITY_END_TIMING_REFERENCE);
@@ -976,6 +985,7 @@ public class ActivityEndTimingReferenceOperations extends ClinicalStatementOpera
              org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "ActivityEndTimingReferenceActivityEndAnchorAssociationTypeCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(activityEndTimingReference, context) }),
              new Object [] { activityEndTimingReference }));
       }
+       
       return false;
     }
     return true;
@@ -1007,7 +1017,6 @@ public class ActivityEndTimingReferenceOperations extends ClinicalStatementOpera
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.entryRelationship->excluding(null)->reject(act->one(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(cda::Act)))
    * @param activityEndTimingReference The receiving '<em><b>Activity End Timing Reference</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -1017,6 +1026,7 @@ public class ActivityEndTimingReferenceOperations extends ClinicalStatementOpera
   
   public static  boolean validateActivityEndTimingReferenceActivityEndAnchorAssociationActivityEndAnchorTimePoint(ActivityEndTimingReference activityEndTimingReference, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
+  	  
     if (VALIDATE_ACTIVITY_END_TIMING_REFERENCE_ACTIVITY_END_ANCHOR_ASSOCIATION_ACTIVITY_END_ANCHOR_TIME_POINT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(SdtmPackage.Literals.ACTIVITY_END_TIMING_REFERENCE);
@@ -1041,6 +1051,7 @@ public class ActivityEndTimingReferenceOperations extends ClinicalStatementOpera
              org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "ActivityEndTimingReferenceActivityEndAnchorAssociationActivityEndAnchorTimePoint", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(activityEndTimingReference, context) }),
              new Object [] { activityEndTimingReference }));
       }
+       
       return false;
     }
     return true;

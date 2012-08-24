@@ -22,12 +22,15 @@
  */
 package org.openhealthtools.mdht.uml.cda.phmr.impl;
 
+import java.lang.Iterable;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
 
 import org.eclipse.emf.ecore.EClass;
 
+import org.eclipse.emf.ecore.EObject;
+import org.openhealthtools.mdht.emf.runtime.util.Initializer;
 import org.openhealthtools.mdht.uml.cda.impl.ObservationImpl;
 
 import org.openhealthtools.mdht.uml.cda.phmr.EventObservation;
@@ -48,76 +51,95 @@ import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
  */
 public class EventObservationImpl extends ObservationImpl implements EventObservation {
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	protected EventObservationImpl() {
-		super();
-	}
+    super();
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	@Override
 	protected EClass eStaticClass() {
-		return PhmrPackage.Literals.EVENT_OBSERVATION;
-	}
+    return PhmrPackage.Literals.EVENT_OBSERVATION;
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateEventObservationTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return EventObservationOperations.validateEventObservationTemplateId(this, diagnostics, context);
-	}
+    return EventObservationOperations.validateEventObservationTemplateId(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateEventObservationClassCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return EventObservationOperations.validateEventObservationClassCode(this, diagnostics, context);
-	}
+    return EventObservationOperations.validateEventObservationClassCode(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateEventObservationCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return EventObservationOperations.validateEventObservationCode(this, diagnostics, context);
-	}
+    return EventObservationOperations.validateEventObservationCode(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateEventObservationMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return EventObservationOperations.validateEventObservationMoodCode(this, diagnostics, context);
-	}
+    return EventObservationOperations.validateEventObservationMoodCode(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateEventObservationValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return EventObservationOperations.validateEventObservationValue(this, diagnostics, context);
-	}
+    return EventObservationOperations.validateEventObservationValue(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public boolean validateEventObservationPHMRProductInstanceReference(DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+    return EventObservationOperations.validateEventObservationPHMRProductInstanceReference(this, diagnostics, context);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public EventObservation init() {
-    	CDAUtil.init(this);
-    	return this;
-	}
+      return Initializer.Util.init(this);
+  }
+
+  /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    public EventObservation init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
 } //EventObservationImpl

@@ -1,13 +1,9 @@
-/*******************************************************************************
- * Copyright (c) 2012, Public Health Data Standards Consortium (PHDSC)
- * All rights reserved. This program and the accompanying materials
- * are made available under the terms of the Eclipse Public License v1.0
- * which accompanies this distribution, and is available at
- * http://www.eclipse.org/legal/epl-v10.html
+/**
+ * <copyright>
+ * </copyright>
  *
- * Contributors:
- *     PHDSC - initial API and implementation
- *******************************************************************************/
+ * $Id$
+ */
 package org.openhealthtools.mdht.uml.cda.phcr.salmonellosis.operations;
 
 import java.util.Collection;
@@ -45,6 +41,7 @@ import org.openhealthtools.mdht.uml.cda.phcr.salmonellosis.util.SalmonellosisVal
  * <p>
  * The following operations are supported:
  * <ul>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.phcr.salmonellosis.SalmonellosisResultOrganizer#validateSalmonellosisResultOrganizerCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Salmonellosis Result Organizer Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.phcr.salmonellosis.SalmonellosisResultOrganizer#validateSalmonellosisResultOrganizerSalmonellosisResultObservation(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Salmonellosis Result Organizer Salmonellosis Result Observation</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.phcr.salmonellosis.SalmonellosisResultOrganizer#getSalmonellosisResultObservations() <em>Get Salmonellosis Result Observations</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.phcr.salmonellosis.SalmonellosisResultOrganizer#validateResultOrganizerTemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Result Organizer Template Id</em>}</li>
@@ -53,48 +50,118 @@ import org.openhealthtools.mdht.uml.cda.phcr.salmonellosis.util.SalmonellosisVal
  *
  * @generated
  */
-public class SalmonellosisResultOrganizerOperations extends ResultOrganizerOperations {
-	/**
+public class SalmonellosisResultOrganizerOperations extends ResultOrganizerOperations
+{
+  /**
    * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+   * <!-- end-user-doc -->
    * @generated
    */
-	protected SalmonellosisResultOrganizerOperations() {
+  protected SalmonellosisResultOrganizerOperations() {
     super();
   }
 
-	/**
-   * The cached OCL expression body for the '{@link #validateSalmonellosisResultOrganizerSalmonellosisResultObservation(SalmonellosisResultOrganizer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Salmonellosis Result Organizer Salmonellosis Result Observation</em>}' operation.
+  /**
+   * The cached OCL expression body for the '{@link #validateSalmonellosisResultOrganizerCode(SalmonellosisResultOrganizer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Salmonellosis Result Organizer Code</em>}' operation.
    * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-   * @see #validateSalmonellosisResultOrganizerSalmonellosisResultObservation(SalmonellosisResultOrganizer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+   * <!-- end-user-doc -->
+   * @see #validateSalmonellosisResultOrganizerCode(SalmonellosisResultOrganizer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
    * @generated
    * @ordered
    */
-	protected static final String VALIDATE_SALMONELLOSIS_RESULT_ORGANIZER_SALMONELLOSIS_RESULT_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.component->exists(component : cda::Component4 | not component.observation.oclIsUndefined() and component.observation.oclIsKindOf(salmonellosis::SalmonellosisResultObservation))";
+  protected static final String VALIDATE_SALMONELLOSIS_RESULT_ORGANIZER_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined())";
 
-	/**
-   * The cached OCL invariant for the '{@link #validateSalmonellosisResultOrganizerSalmonellosisResultObservation(SalmonellosisResultOrganizer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Salmonellosis Result Organizer Salmonellosis Result Observation</em>}' invariant operation.
+  /**
+   * The cached OCL invariant for the '{@link #validateSalmonellosisResultOrganizerCode(SalmonellosisResultOrganizer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Salmonellosis Result Organizer Code</em>}' invariant operation.
    * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-   * @see #validateSalmonellosisResultOrganizerSalmonellosisResultObservation(SalmonellosisResultOrganizer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+   * <!-- end-user-doc -->
+   * @see #validateSalmonellosisResultOrganizerCode(SalmonellosisResultOrganizer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
    * @generated
    * @ordered
    */
-	protected static Constraint VALIDATE_SALMONELLOSIS_RESULT_ORGANIZER_SALMONELLOSIS_RESULT_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+  
+  protected static Constraint VALIDATE_SALMONELLOSIS_RESULT_ORGANIZER_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+  
 
-	/**
+  /**
    * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+   * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.component->exists(component : cda::Component4 | not component.observation.oclIsUndefined() and component.observation.oclIsKindOf(salmonellosis::SalmonellosisResultObservation))
    * @param salmonellosisResultOrganizer The receiving '<em><b>Result Organizer</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
    * <!-- end-model-doc -->
    * @generated
    */
-	public static  boolean validateSalmonellosisResultOrganizerSalmonellosisResultObservation(SalmonellosisResultOrganizer salmonellosisResultOrganizer, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  
+  public static  boolean validateSalmonellosisResultOrganizerCode(SalmonellosisResultOrganizer salmonellosisResultOrganizer, DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+  	  
+    if (VALIDATE_SALMONELLOSIS_RESULT_ORGANIZER_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+      OCL.Helper helper = EOCL_ENV.createOCLHelper();
+      helper.setContext(SalmonellosisPackage.Literals.SALMONELLOSIS_RESULT_ORGANIZER);
+      try
+      {
+        VALIDATE_SALMONELLOSIS_RESULT_ORGANIZER_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_SALMONELLOSIS_RESULT_ORGANIZER_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+      }
+      catch (ParserException pe)
+      {
+        throw new UnsupportedOperationException(pe.getLocalizedMessage());
+      }
+    }
+    if (!EOCL_ENV.createQuery(VALIDATE_SALMONELLOSIS_RESULT_ORGANIZER_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(salmonellosisResultOrganizer))
+    {
+      if (diagnostics != null)
+      {
+        diagnostics.add
+          (new BasicDiagnostic
+            (Diagnostic.ERROR,
+             SalmonellosisValidator.DIAGNOSTIC_SOURCE,
+             SalmonellosisValidator.SALMONELLOSIS_RESULT_ORGANIZER__SALMONELLOSIS_RESULT_ORGANIZER_CODE,
+             SalmonellosisPlugin.INSTANCE.getString("SalmonellosisResultOrganizerCode"),
+             new Object [] { salmonellosisResultOrganizer }));
+      }
+       
+      return false;
+    }
+    return true;
+  }
+
+  /**
+   * The cached OCL expression body for the '{@link #validateSalmonellosisResultOrganizerSalmonellosisResultObservation(SalmonellosisResultOrganizer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Salmonellosis Result Organizer Salmonellosis Result Observation</em>}' operation.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #validateSalmonellosisResultOrganizerSalmonellosisResultObservation(SalmonellosisResultOrganizer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+   * @generated
+   * @ordered
+   */
+  protected static final String VALIDATE_SALMONELLOSIS_RESULT_ORGANIZER_SALMONELLOSIS_RESULT_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.component->exists(component : cda::Component4 | not component.observation.oclIsUndefined() and component.observation.oclIsKindOf(salmonellosis::SalmonellosisResultObservation))";
+
+  /**
+   * The cached OCL invariant for the '{@link #validateSalmonellosisResultOrganizerSalmonellosisResultObservation(SalmonellosisResultOrganizer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Salmonellosis Result Organizer Salmonellosis Result Observation</em>}' invariant operation.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #validateSalmonellosisResultOrganizerSalmonellosisResultObservation(SalmonellosisResultOrganizer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+   * @generated
+   * @ordered
+   */
+  
+  protected static Constraint VALIDATE_SALMONELLOSIS_RESULT_ORGANIZER_SALMONELLOSIS_RESULT_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+  
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * <!-- begin-model-doc -->
+   * @param salmonellosisResultOrganizer The receiving '<em><b>Result Organizer</b></em>' model object.
+   * @param diagnostics The chain of diagnostics to which problems are to be appended.
+   * @param context The cache of context-specific information.
+   * <!-- end-model-doc -->
+   * @generated
+   */
+  
+  public static  boolean validateSalmonellosisResultOrganizerSalmonellosisResultObservation(SalmonellosisResultOrganizer salmonellosisResultOrganizer, DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
   	  
     if (VALIDATE_SALMONELLOSIS_RESULT_ORGANIZER_SALMONELLOSIS_RESULT_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
@@ -126,40 +193,38 @@ public class SalmonellosisResultOrganizerOperations extends ResultOrganizerOpera
     return true;
   }
 
-	/**
+  /**
    * The cached OCL expression body for the '{@link #getSalmonellosisResultObservations(SalmonellosisResultOrganizer) <em>Get Salmonellosis Result Observations</em>}' operation.
    * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+   * <!-- end-user-doc -->
    * @see #getSalmonellosisResultObservations(SalmonellosisResultOrganizer)
    * @generated
    * @ordered
    */
-	protected static final String GET_SALMONELLOSIS_RESULT_OBSERVATIONS__EOCL_EXP = "self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(salmonellosis::SalmonellosisResultObservation)).oclAsType(salmonellosis::SalmonellosisResultObservation)";
+  protected static final String GET_SALMONELLOSIS_RESULT_OBSERVATIONS__EOCL_EXP = "self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(salmonellosis::SalmonellosisResultObservation)).oclAsType(salmonellosis::SalmonellosisResultObservation)";
 
-	/**
+  /**
    * The cached OCL query for the '{@link #getSalmonellosisResultObservations(SalmonellosisResultOrganizer) <em>Get Salmonellosis Result Observations</em>}' query operation.
    * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+   * <!-- end-user-doc -->
    * @see #getSalmonellosisResultObservations(SalmonellosisResultOrganizer)
    * @generated
    * @ordered
    */
-	protected static OCLExpression<EClassifier> GET_SALMONELLOSIS_RESULT_OBSERVATIONS__EOCL_QRY;
+  protected static OCLExpression<EClassifier> GET_SALMONELLOSIS_RESULT_OBSERVATIONS__EOCL_QRY;
 
-	/**
+  /**
    * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-   * <!-- begin-model-doc -->
-   * self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(salmonellosis::SalmonellosisResultObservation)).oclAsType(salmonellosis::SalmonellosisResultObservation)
-   * @param salmonellosisResultOrganizer The receiving '<em><b>Result Organizer</b></em>' model object.
-   * <!-- end-model-doc -->
+   * <!-- end-user-doc -->
    * @generated
    */
-	public static  EList<SalmonellosisResultObservation> getSalmonellosisResultObservations(SalmonellosisResultOrganizer salmonellosisResultOrganizer) {
+  
+  public static  EList<SalmonellosisResultObservation> getSalmonellosisResultObservations(SalmonellosisResultOrganizer salmonellosisResultOrganizer)
+  {
     if (GET_SALMONELLOSIS_RESULT_OBSERVATIONS__EOCL_QRY == null)
     {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
-      helper.setOperationContext(SalmonellosisPackage.Literals.SALMONELLOSIS_RESULT_ORGANIZER, SalmonellosisPackage.Literals.SALMONELLOSIS_RESULT_ORGANIZER.getEAllOperations().get(73));
+      helper.setOperationContext(SalmonellosisPackage.Literals.SALMONELLOSIS_RESULT_ORGANIZER, SalmonellosisPackage.Literals.SALMONELLOSIS_RESULT_ORGANIZER.getEAllOperations().get(76));
       try
       {
         GET_SALMONELLOSIS_RESULT_OBSERVATIONS__EOCL_QRY = helper.createQuery(GET_SALMONELLOSIS_RESULT_OBSERVATIONS__EOCL_EXP);
@@ -175,7 +240,7 @@ public class SalmonellosisResultOrganizerOperations extends ResultOrganizerOpera
     return new BasicEList.UnmodifiableEList<SalmonellosisResultObservation>(result.size(), result.toArray());
   }
 
-	/**
+  /**
    * The cached OCL expression body for the '{@link #validateResultOrganizerTemplateId(SalmonellosisResultOrganizer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Result Organizer Template Id</em>}' operation.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
@@ -195,12 +260,12 @@ public class SalmonellosisResultOrganizerOperations extends ResultOrganizerOpera
    */
   
   protected static Constraint VALIDATE_RESULT_ORGANIZER_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+  
 
   /**
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.15.3.118')
    * @param salmonellosisResultOrganizer The receiving '<em><b>Result Organizer</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.

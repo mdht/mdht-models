@@ -10,12 +10,15 @@
  *******************************************************************************/
 package org.openhealthtools.mdht.uml.cda.phcr.tuberculosis.impl;
 
+import java.lang.Iterable;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
 
 import org.eclipse.emf.ecore.EClass;
 
+import org.eclipse.emf.ecore.EObject;
+import org.openhealthtools.mdht.emf.runtime.util.Initializer;
 import org.openhealthtools.mdht.uml.cda.impl.ObservationImpl;
 
 import org.openhealthtools.mdht.uml.cda.phcr.tuberculosis.HIVStatusObservation;
@@ -36,77 +39,106 @@ import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
  */
 public class HIVStatusObservationImpl extends ObservationImpl implements HIVStatusObservation {
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	protected HIVStatusObservationImpl() {
-		super();
-	}
+    super();
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	@Override
 	protected EClass eStaticClass() {
-		return TuberculosisPackage.Literals.HIV_STATUS_OBSERVATION;
-	}
+    return TuberculosisPackage.Literals.HIV_STATUS_OBSERVATION;
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateHIVStatusObservationTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return HIVStatusObservationOperations.validateHIVStatusObservationTemplateId(this, diagnostics, context);
-	}
+    return HIVStatusObservationOperations.validateHIVStatusObservationTemplateId(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateHIVStatusObservationClassCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return HIVStatusObservationOperations.validateHIVStatusObservationClassCode(this, diagnostics, context);
-	}
+    return HIVStatusObservationOperations.validateHIVStatusObservationClassCode(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateHIVStatusObservationCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return HIVStatusObservationOperations.validateHIVStatusObservationCode(this, diagnostics, context);
-	}
+    return HIVStatusObservationOperations.validateHIVStatusObservationCode(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateHIVStatusObservationStatusCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return HIVStatusObservationOperations.validateHIVStatusObservationStatusCode(this, diagnostics, context);
-	}
+    return HIVStatusObservationOperations.validateHIVStatusObservationStatusCode(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
-  public boolean validateHIVStatusObservationMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context)
+   * @generated
+   */
+  public boolean validateHIVStatusObservationStatusCodeP(DiagnosticChain diagnostics, Map<Object, Object> context)
   {
-		return HIVStatusObservationOperations.validateHIVStatusObservationMoodCode(this, diagnostics, context);
-	}
+    return HIVStatusObservationOperations.validateHIVStatusObservationStatusCodeP(this, diagnostics, context);
+  }
 
   /**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
+  public boolean validateHIVStatusObservationValue(DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+    return HIVStatusObservationOperations.validateHIVStatusObservationValue(this, diagnostics, context);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public boolean validateHIVStatusObservationMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+    return HIVStatusObservationOperations.validateHIVStatusObservationMoodCode(this, diagnostics, context);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
   public HIVStatusObservation init() {
-    	CDAUtil.init(this);
-    	return this;
-	}
+      return Initializer.Util.init(this);
+  }
+
+  /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    public HIVStatusObservation init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
 } //HIVStatusObservationImpl

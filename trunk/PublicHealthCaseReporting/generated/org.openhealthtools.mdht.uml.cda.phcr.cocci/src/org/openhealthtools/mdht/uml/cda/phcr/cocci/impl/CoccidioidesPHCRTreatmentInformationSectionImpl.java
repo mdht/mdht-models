@@ -10,10 +10,13 @@
  *******************************************************************************/
 package org.openhealthtools.mdht.uml.cda.phcr.cocci.impl;
 
+import java.lang.Iterable;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.ecore.EClass;
+import org.eclipse.emf.ecore.EObject;
+import org.openhealthtools.mdht.emf.runtime.util.Initializer;
 import org.openhealthtools.mdht.uml.cda.phcr.cocci.CocciPackage;
 import org.openhealthtools.mdht.uml.cda.phcr.cocci.CoccidioidesPHCRTreatmentInformationSection;
 import org.openhealthtools.mdht.uml.cda.phcr.cocci.CoccidioidesTherapeuticRegimenAct;
@@ -32,59 +35,68 @@ import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
  */
 public class CoccidioidesPHCRTreatmentInformationSectionImpl extends PhcrTreatmentInformationSectionImpl implements CoccidioidesPHCRTreatmentInformationSection {
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	protected CoccidioidesPHCRTreatmentInformationSectionImpl() {
-		super();
-	}
+    super();
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	@Override
 	protected EClass eStaticClass() {
-		return CocciPackage.Literals.COCCIDIOIDES_PHCR_TREATMENT_INFORMATION_SECTION;
-	}
+    return CocciPackage.Literals.COCCIDIOIDES_PHCR_TREATMENT_INFORMATION_SECTION;
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateCoccidioidesPHCRTreatmentInformationSectionCoccidioidesTherapeuticRegimenAct(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return CoccidioidesPHCRTreatmentInformationSectionOperations.validateCoccidioidesPHCRTreatmentInformationSectionCoccidioidesTherapeuticRegimenAct(this, diagnostics, context);
-	}
+    return CoccidioidesPHCRTreatmentInformationSectionOperations.validateCoccidioidesPHCRTreatmentInformationSectionCoccidioidesTherapeuticRegimenAct(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public CoccidioidesTherapeuticRegimenAct getCoccidioidesTherapeuticRegimenAct() {
-		return CoccidioidesPHCRTreatmentInformationSectionOperations.getCoccidioidesTherapeuticRegimenAct(this);
-	}
+    return CoccidioidesPHCRTreatmentInformationSectionOperations.getCoccidioidesTherapeuticRegimenAct(this);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	@Override
 	public boolean validatePhcrTreatmentInformationSectionTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return CoccidioidesPHCRTreatmentInformationSectionOperations.validatePhcrTreatmentInformationSectionTemplateId(this, diagnostics, context);
-	}
+    return CoccidioidesPHCRTreatmentInformationSectionOperations.validatePhcrTreatmentInformationSectionTemplateId(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public CoccidioidesPHCRTreatmentInformationSection init() {
-    	CDAUtil.init(this);
-    	return this;
-	}
+      return Initializer.Util.init(this);
+  }
+
+  /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    public CoccidioidesPHCRTreatmentInformationSection init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
 } //CoccidioidesPHCRTreatmentInformationSectionImpl

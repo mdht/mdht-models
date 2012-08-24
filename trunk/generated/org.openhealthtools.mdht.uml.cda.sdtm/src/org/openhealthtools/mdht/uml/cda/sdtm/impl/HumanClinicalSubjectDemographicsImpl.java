@@ -6,12 +6,16 @@
  */
 package org.openhealthtools.mdht.uml.cda.sdtm.impl;
 
+import java.lang.Iterable;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
 
+import org.eclipse.emf.common.util.EList;
 import org.eclipse.emf.ecore.EClass;
 
+import org.eclipse.emf.ecore.EObject;
+import org.openhealthtools.mdht.emf.runtime.util.Initializer;
 import org.openhealthtools.mdht.uml.cda.impl.OrganizerImpl;
 
 import org.openhealthtools.mdht.uml.cda.sdtm.DataCollection;
@@ -110,6 +114,26 @@ public class HumanClinicalSubjectDemographicsImpl extends OrganizerImpl implemen
    * <!-- end-user-doc -->
    * @generated
    */
+  public boolean validateHumanClinicalSubjectDemographicsEffectiveTime(DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+    return HumanClinicalSubjectDemographicsOperations.validateHumanClinicalSubjectDemographicsEffectiveTime(this, diagnostics, context);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public boolean validateHumanClinicalSubjectDemographicsAgeAssociation(DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+    return HumanClinicalSubjectDemographicsOperations.validateHumanClinicalSubjectDemographicsAgeAssociation(this, diagnostics, context);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
   public boolean validateHumanClinicalSubjectDemographicsDataCollection(DiagnosticChain diagnostics, Map<Object, Object> context)
   {
     return HumanClinicalSubjectDemographicsOperations.validateHumanClinicalSubjectDemographicsDataCollection(this, diagnostics, context);
@@ -123,6 +147,16 @@ public class HumanClinicalSubjectDemographicsImpl extends OrganizerImpl implemen
   public boolean validateHumanClinicalSubjectDemographicsStudyArm(DiagnosticChain diagnostics, Map<Object, Object> context)
   {
     return HumanClinicalSubjectDemographicsOperations.validateHumanClinicalSubjectDemographicsStudyArm(this, diagnostics, context);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public boolean validateHumanClinicalSubjectDemographicsParticipant(DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+    return HumanClinicalSubjectDemographicsOperations.validateHumanClinicalSubjectDemographicsParticipant(this, diagnostics, context);
   }
 
   /**
@@ -190,6 +224,16 @@ public class HumanClinicalSubjectDemographicsImpl extends OrganizerImpl implemen
    * <!-- end-user-doc -->
    * @generated
    */
+  public boolean validateHumanClinicalSubjectDemographicsAgeAssociationSubjectAge(DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+    return HumanClinicalSubjectDemographicsOperations.validateHumanClinicalSubjectDemographicsAgeAssociationSubjectAge(this, diagnostics, context);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
   public DataCollection getDataCollection()
   {
     return HumanClinicalSubjectDemographicsOperations.getDataCollection(this);
@@ -200,9 +244,9 @@ public class HumanClinicalSubjectDemographicsImpl extends OrganizerImpl implemen
    * <!-- end-user-doc -->
    * @generated
    */
-  public StudyArm getStudyArm()
+  public EList<StudyArm> getStudyArms()
   {
-    return HumanClinicalSubjectDemographicsOperations.getStudyArm(this);
+    return HumanClinicalSubjectDemographicsOperations.getStudyArms(this);
   }
 
   /**
@@ -211,7 +255,16 @@ public class HumanClinicalSubjectDemographicsImpl extends OrganizerImpl implemen
    * @generated
    */
   public HumanClinicalSubjectDemographics init() {
-    	CDAUtil.init(this);
-    	return this;
+      return Initializer.Util.init(this);
   }
+
+  /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    public HumanClinicalSubjectDemographics init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
 } //HumanClinicalSubjectDemographicsImpl

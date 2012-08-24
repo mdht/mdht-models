@@ -80,7 +80,6 @@ public class StudyDayPeriodOperations extends ClinicalStatementOperations
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.23.70')
    * @param studyDayPeriod The receiving '<em><b>Study Day Period</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -90,6 +89,7 @@ public class StudyDayPeriodOperations extends ClinicalStatementOperations
   
   public static  boolean validateStudyDayPeriodTemplateId(StudyDayPeriod studyDayPeriod, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
+  	  
     if (VALIDATE_STUDY_DAY_PERIOD_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(SdtmPackage.Literals.STUDY_DAY_PERIOD);
@@ -114,6 +114,7 @@ public class StudyDayPeriodOperations extends ClinicalStatementOperations
              org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "StudyDayPeriodTemplateId", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(studyDayPeriod, context) }),
              new Object [] { studyDayPeriod }));
       }
+       
       return false;
     }
     return true;
@@ -145,7 +146,6 @@ public class StudyDayPeriodOperations extends ClinicalStatementOperations
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.classCode=vocab::ActClassObservation::OBS
    * @param studyDayPeriod The receiving '<em><b>Study Day Period</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -155,6 +155,7 @@ public class StudyDayPeriodOperations extends ClinicalStatementOperations
   
   public static  boolean validateStudyDayPeriodClassCode(StudyDayPeriod studyDayPeriod, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
+  	  
     if (VALIDATE_STUDY_DAY_PERIOD_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(SdtmPackage.Literals.STUDY_DAY_PERIOD);
@@ -179,6 +180,7 @@ public class StudyDayPeriodOperations extends ClinicalStatementOperations
              org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "StudyDayPeriodClassCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(studyDayPeriod, context) }),
              new Object [] { studyDayPeriod }));
       }
+       
       return false;
     }
     return true;
@@ -210,7 +212,6 @@ public class StudyDayPeriodOperations extends ClinicalStatementOperations
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * (self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined())
    * @param studyDayPeriod The receiving '<em><b>Study Day Period</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -220,6 +221,7 @@ public class StudyDayPeriodOperations extends ClinicalStatementOperations
   
   public static  boolean validateStudyDayPeriodCodeP(StudyDayPeriod studyDayPeriod, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
+  	  
     if (VALIDATE_STUDY_DAY_PERIOD_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(SdtmPackage.Literals.STUDY_DAY_PERIOD);
@@ -244,6 +246,7 @@ public class StudyDayPeriodOperations extends ClinicalStatementOperations
              org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "StudyDayPeriodCodeP", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(studyDayPeriod, context) }),
              new Object [] { studyDayPeriod }));
       }
+       
       return false;
     }
     return true;
@@ -277,9 +280,6 @@ public class StudyDayPeriodOperations extends ClinicalStatementOperations
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * (self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and 
-   * let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in 
-   * value.code = 'TBD' and value.codeSystem = '2.16.840.1.113883.3.26.1.1')
    * @param studyDayPeriod The receiving '<em><b>Study Day Period</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -289,6 +289,7 @@ public class StudyDayPeriodOperations extends ClinicalStatementOperations
   
   public static  boolean validateStudyDayPeriodCode(StudyDayPeriod studyDayPeriod, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
+  	  
     if (VALIDATE_STUDY_DAY_PERIOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(SdtmPackage.Literals.STUDY_DAY_PERIOD);
@@ -313,6 +314,7 @@ public class StudyDayPeriodOperations extends ClinicalStatementOperations
              org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "StudyDayPeriodCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(studyDayPeriod, context) }),
              new Object [] { studyDayPeriod }));
       }
+       
       return false;
     }
     return true;
@@ -344,7 +346,6 @@ public class StudyDayPeriodOperations extends ClinicalStatementOperations
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.moodCode=vocab::x_ActMoodDocumentObservation::EVN
    * @param studyDayPeriod The receiving '<em><b>Study Day Period</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -354,6 +355,7 @@ public class StudyDayPeriodOperations extends ClinicalStatementOperations
   
   public static  boolean validateStudyDayPeriodMoodCode(StudyDayPeriod studyDayPeriod, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
+  	  
     if (VALIDATE_STUDY_DAY_PERIOD_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(SdtmPackage.Literals.STUDY_DAY_PERIOD);
@@ -378,6 +380,7 @@ public class StudyDayPeriodOperations extends ClinicalStatementOperations
              org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "StudyDayPeriodMoodCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(studyDayPeriod, context) }),
              new Object [] { studyDayPeriod }));
       }
+       
       return false;
     }
     return true;
@@ -409,7 +412,6 @@ public class StudyDayPeriodOperations extends ClinicalStatementOperations
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * (self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (self.value->size() = 1 and self.value->forAll(element | element.oclIsTypeOf(datatypes::IVL_INT)))
    * @param studyDayPeriod The receiving '<em><b>Study Day Period</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -419,6 +421,7 @@ public class StudyDayPeriodOperations extends ClinicalStatementOperations
   
   public static  boolean validateStudyDayPeriodValue(StudyDayPeriod studyDayPeriod, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
+  	  
     if (VALIDATE_STUDY_DAY_PERIOD_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(SdtmPackage.Literals.STUDY_DAY_PERIOD);
@@ -443,6 +446,7 @@ public class StudyDayPeriodOperations extends ClinicalStatementOperations
              org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "StudyDayPeriodValue", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(studyDayPeriod, context) }),
              new Object [] { studyDayPeriod }));
       }
+       
       return false;
     }
     return true;

@@ -88,7 +88,6 @@ public class DataCollectionOperations extends ClinicalStatementOperations
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.23.59')
    * @param dataCollection The receiving '<em><b>Data Collection</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -98,6 +97,7 @@ public class DataCollectionOperations extends ClinicalStatementOperations
   
   public static  boolean validateDataCollectionTemplateId(DataCollection dataCollection, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
+  	  
     if (VALIDATE_DATA_COLLECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(SdtmPackage.Literals.DATA_COLLECTION);
@@ -122,6 +122,7 @@ public class DataCollectionOperations extends ClinicalStatementOperations
              org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "DataCollectionTemplateId", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(dataCollection, context) }),
              new Object [] { dataCollection }));
       }
+       
       return false;
     }
     return true;
@@ -153,7 +154,6 @@ public class DataCollectionOperations extends ClinicalStatementOperations
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.classCode=vocab::x_ActClassDocumentEntryAct::ACT
    * @param dataCollection The receiving '<em><b>Data Collection</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -163,6 +163,7 @@ public class DataCollectionOperations extends ClinicalStatementOperations
   
   public static  boolean validateDataCollectionClassCode(DataCollection dataCollection, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
+  	  
     if (VALIDATE_DATA_COLLECTION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(SdtmPackage.Literals.DATA_COLLECTION);
@@ -187,6 +188,7 @@ public class DataCollectionOperations extends ClinicalStatementOperations
              org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "DataCollectionClassCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(dataCollection, context) }),
              new Object [] { dataCollection }));
       }
+       
       return false;
     }
     return true;
@@ -218,7 +220,6 @@ public class DataCollectionOperations extends ClinicalStatementOperations
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * (self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined())
    * @param dataCollection The receiving '<em><b>Data Collection</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -228,6 +229,7 @@ public class DataCollectionOperations extends ClinicalStatementOperations
   
   public static  boolean validateDataCollectionCodeP(DataCollection dataCollection, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
+  	  
     if (VALIDATE_DATA_COLLECTION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(SdtmPackage.Literals.DATA_COLLECTION);
@@ -252,6 +254,7 @@ public class DataCollectionOperations extends ClinicalStatementOperations
              org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "DataCollectionCodeP", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(dataCollection, context) }),
              new Object [] { dataCollection }));
       }
+       
       return false;
     }
     return true;
@@ -285,9 +288,6 @@ public class DataCollectionOperations extends ClinicalStatementOperations
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * (self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and 
-   * let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in 
-   * value.codeSystem = '2.16.840.1.113883.3.26.1.1')
    * @param dataCollection The receiving '<em><b>Data Collection</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -297,6 +297,7 @@ public class DataCollectionOperations extends ClinicalStatementOperations
   
   public static  boolean validateDataCollectionCode(DataCollection dataCollection, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
+  	  
     if (VALIDATE_DATA_COLLECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(SdtmPackage.Literals.DATA_COLLECTION);
@@ -321,6 +322,7 @@ public class DataCollectionOperations extends ClinicalStatementOperations
              org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "DataCollectionCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(dataCollection, context) }),
              new Object [] { dataCollection }));
       }
+       
       return false;
     }
     return true;
@@ -352,7 +354,6 @@ public class DataCollectionOperations extends ClinicalStatementOperations
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * (self.effectiveTime.oclIsUndefined() or self.effectiveTime.isNullFlavorUndefined()) implies (not self.effectiveTime.oclIsUndefined())
    * @param dataCollection The receiving '<em><b>Data Collection</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -362,6 +363,7 @@ public class DataCollectionOperations extends ClinicalStatementOperations
   
   public static  boolean validateDataCollectionEffectiveTime(DataCollection dataCollection, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
+  	  
     if (VALIDATE_DATA_COLLECTION_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(SdtmPackage.Literals.DATA_COLLECTION);
@@ -386,6 +388,7 @@ public class DataCollectionOperations extends ClinicalStatementOperations
              org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "DataCollectionEffectiveTime", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(dataCollection, context) }),
              new Object [] { dataCollection }));
       }
+       
       return false;
     }
     return true;
@@ -417,7 +420,6 @@ public class DataCollectionOperations extends ClinicalStatementOperations
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.moodCode=vocab::x_DocumentActMood::EVN
    * @param dataCollection The receiving '<em><b>Data Collection</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -427,6 +429,7 @@ public class DataCollectionOperations extends ClinicalStatementOperations
   
   public static  boolean validateDataCollectionMoodCode(DataCollection dataCollection, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
+  	  
     if (VALIDATE_DATA_COLLECTION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(SdtmPackage.Literals.DATA_COLLECTION);
@@ -451,6 +454,7 @@ public class DataCollectionOperations extends ClinicalStatementOperations
              org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "DataCollectionMoodCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(dataCollection, context) }),
              new Object [] { dataCollection }));
       }
+       
       return false;
     }
     return true;
@@ -482,7 +486,6 @@ public class DataCollectionOperations extends ClinicalStatementOperations
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * not self.negationInd.oclIsUndefined()
    * @param dataCollection The receiving '<em><b>Data Collection</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -492,6 +495,7 @@ public class DataCollectionOperations extends ClinicalStatementOperations
   
   public static  boolean validateDataCollectionNegationInd(DataCollection dataCollection, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
+  	  
     if (VALIDATE_DATA_COLLECTION_NEGATION_IND__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(SdtmPackage.Literals.DATA_COLLECTION);
@@ -516,6 +520,7 @@ public class DataCollectionOperations extends ClinicalStatementOperations
              org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "DataCollectionNegationInd", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(dataCollection, context) }),
              new Object [] { dataCollection }));
       }
+       
       return false;
     }
     return true;
@@ -547,7 +552,6 @@ public class DataCollectionOperations extends ClinicalStatementOperations
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.entryRelationship->one(entryRelationship : cda::EntryRelationship | not entryRelationship.observation.oclIsUndefined() and entryRelationship.observation.oclIsKindOf(sdtm::Event Study Day) and entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::REFR)
    * @param dataCollection The receiving '<em><b>Data Collection</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -557,6 +561,7 @@ public class DataCollectionOperations extends ClinicalStatementOperations
   
   public static  boolean validateDataCollectionEventStudyDay(DataCollection dataCollection, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
+  	  
     if (VALIDATE_DATA_COLLECTION_EVENT_STUDY_DAY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(SdtmPackage.Literals.DATA_COLLECTION);
@@ -581,6 +586,7 @@ public class DataCollectionOperations extends ClinicalStatementOperations
              org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "DataCollectionEventStudyDay", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(dataCollection, context) }),
              new Object [] { dataCollection }));
       }
+       
       return false;
     }
     return true;
@@ -594,7 +600,7 @@ public class DataCollectionOperations extends ClinicalStatementOperations
    * @generated
    * @ordered
    */
-  protected static final String GET_EVENT_STUDY_DAY__EOCL_EXP = "self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(sdtm::Event Study Day))->asSequence()->first().oclAsType(sdtm::Event Study Day)";
+  protected static final String GET_EVENT_STUDY_DAY__EOCL_EXP = "self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(sdtm::Event Study Day))->asSequence()->any(true).oclAsType(sdtm::Event Study Day)";
 
   /**
    * The cached OCL query for the '{@link #getEventStudyDay(DataCollection) <em>Get Event Study Day</em>}' query operation.
@@ -609,10 +615,6 @@ public class DataCollectionOperations extends ClinicalStatementOperations
   /**
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * <!-- begin-model-doc -->
-   * self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(sdtm::Event Study Day))->asSequence()->first().oclAsType(sdtm::Event Study Day)
-   * @param dataCollection The receiving '<em><b>Data Collection</b></em>' model object.
-   * <!-- end-model-doc -->
    * @generated
    */
   
@@ -621,7 +623,7 @@ public class DataCollectionOperations extends ClinicalStatementOperations
     if (GET_EVENT_STUDY_DAY__EOCL_QRY == null)
     {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
-      helper.setOperationContext(SdtmPackage.Literals.DATA_COLLECTION, SdtmPackage.Literals.DATA_COLLECTION.getEAllOperations().get(57));
+      helper.setOperationContext(SdtmPackage.Literals.DATA_COLLECTION, SdtmPackage.Literals.DATA_COLLECTION.getEAllOperations().get(59));
       try
       {
         GET_EVENT_STUDY_DAY__EOCL_QRY = helper.createQuery(GET_EVENT_STUDY_DAY__EOCL_EXP);

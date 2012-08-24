@@ -10,6 +10,7 @@
  *******************************************************************************/
 package org.openhealthtools.mdht.uml.cda.phcr.chlamydiatrachomatis.impl;
 
+import java.lang.Iterable;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
@@ -17,6 +18,8 @@ import org.eclipse.emf.common.util.EList;
 
 import org.eclipse.emf.ecore.EClass;
 
+import org.eclipse.emf.ecore.EObject;
+import org.openhealthtools.mdht.emf.runtime.util.Initializer;
 import org.openhealthtools.mdht.uml.cda.phcr.chlamydiatrachomatis.ChlamydiatrachomatisPackage;
 import org.openhealthtools.mdht.uml.cda.phcr.chlamydiatrachomatis.ChlamydiatrachomatisTherapeuticRegimenAct;
 import org.openhealthtools.mdht.uml.cda.phcr.chlamydiatrachomatis.ChlamydiatrachomatisTreatmentGivenSubstanceAdministration;
@@ -39,77 +42,86 @@ import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
  */
 public class ChlamydiatrachomatisTherapeuticRegimenActImpl extends TherapeuticRegimenActImpl implements ChlamydiatrachomatisTherapeuticRegimenAct {
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	protected ChlamydiatrachomatisTherapeuticRegimenActImpl() {
-		super();
-	}
+    super();
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	@Override
 	protected EClass eStaticClass() {
-		return ChlamydiatrachomatisPackage.Literals.CHLAMYDIATRACHOMATIS_THERAPEUTIC_REGIMEN_ACT;
-	}
+    return ChlamydiatrachomatisPackage.Literals.CHLAMYDIATRACHOMATIS_THERAPEUTIC_REGIMEN_ACT;
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateChlamydiatrachomatisTherapeuticRegimenActChlamydiatrachomatisTreatmentGivenSubstanceAdministration(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ChlamydiatrachomatisTherapeuticRegimenActOperations.validateChlamydiatrachomatisTherapeuticRegimenActChlamydiatrachomatisTreatmentGivenSubstanceAdministration(this, diagnostics, context);
-	}
+    return ChlamydiatrachomatisTherapeuticRegimenActOperations.validateChlamydiatrachomatisTherapeuticRegimenActChlamydiatrachomatisTreatmentGivenSubstanceAdministration(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateChlamydiatrachomatisTherapeuticRegimenActChlamydiatrachomatisTreatmentNotGivenSubstanceAdministration(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ChlamydiatrachomatisTherapeuticRegimenActOperations.validateChlamydiatrachomatisTherapeuticRegimenActChlamydiatrachomatisTreatmentNotGivenSubstanceAdministration(this, diagnostics, context);
-	}
+    return ChlamydiatrachomatisTherapeuticRegimenActOperations.validateChlamydiatrachomatisTherapeuticRegimenActChlamydiatrachomatisTreatmentNotGivenSubstanceAdministration(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public EList<ChlamydiatrachomatisTreatmentGivenSubstanceAdministration> getChlamydiatrachomatisTreatmentGivenSubstanceAdministrations() {
-		return ChlamydiatrachomatisTherapeuticRegimenActOperations.getChlamydiatrachomatisTreatmentGivenSubstanceAdministrations(this);
-	}
+    return ChlamydiatrachomatisTherapeuticRegimenActOperations.getChlamydiatrachomatisTreatmentGivenSubstanceAdministrations(this);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public EList<ChlamydiatrachomatisTreatmentNotGivenSubstanceAdministration> getChlamydiatrachomatisTreatmentNotGivenSubstanceAdministrations() {
-		return ChlamydiatrachomatisTherapeuticRegimenActOperations.getChlamydiatrachomatisTreatmentNotGivenSubstanceAdministrations(this);
-	}
+    return ChlamydiatrachomatisTherapeuticRegimenActOperations.getChlamydiatrachomatisTreatmentNotGivenSubstanceAdministrations(this);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	@Override
 	public boolean validateTherapeuticRegimenActTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ChlamydiatrachomatisTherapeuticRegimenActOperations.validateTherapeuticRegimenActTemplateId(this, diagnostics, context);
-	}
+    return ChlamydiatrachomatisTherapeuticRegimenActOperations.validateTherapeuticRegimenActTemplateId(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public ChlamydiatrachomatisTherapeuticRegimenAct init() {
-    	CDAUtil.init(this);
-    	return this;
-	}
+      return Initializer.Util.init(this);
+  }
+
+  /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    public ChlamydiatrachomatisTherapeuticRegimenAct init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
 } //ChlamydiatrachomatisTherapeuticRegimenActImpl

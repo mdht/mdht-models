@@ -81,7 +81,6 @@ public class EventSeverityOperations extends ClinicalStatementOperations
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.23.61')
    * @param eventSeverity The receiving '<em><b>Event Severity</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -91,6 +90,7 @@ public class EventSeverityOperations extends ClinicalStatementOperations
   
   public static  boolean validateEventSeverityTemplateId(EventSeverity eventSeverity, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
+  	  
     if (VALIDATE_EVENT_SEVERITY_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(SdtmPackage.Literals.EVENT_SEVERITY);
@@ -115,6 +115,7 @@ public class EventSeverityOperations extends ClinicalStatementOperations
              org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "EventSeverityTemplateId", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(eventSeverity, context) }),
              new Object [] { eventSeverity }));
       }
+       
       return false;
     }
     return true;
@@ -146,7 +147,6 @@ public class EventSeverityOperations extends ClinicalStatementOperations
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.classCode=vocab::ActClassObservation::OBS
    * @param eventSeverity The receiving '<em><b>Event Severity</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -156,6 +156,7 @@ public class EventSeverityOperations extends ClinicalStatementOperations
   
   public static  boolean validateEventSeverityClassCode(EventSeverity eventSeverity, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
+  	  
     if (VALIDATE_EVENT_SEVERITY_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(SdtmPackage.Literals.EVENT_SEVERITY);
@@ -180,6 +181,7 @@ public class EventSeverityOperations extends ClinicalStatementOperations
              org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "EventSeverityClassCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(eventSeverity, context) }),
              new Object [] { eventSeverity }));
       }
+       
       return false;
     }
     return true;
@@ -211,7 +213,6 @@ public class EventSeverityOperations extends ClinicalStatementOperations
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * (self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined())
    * @param eventSeverity The receiving '<em><b>Event Severity</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -221,6 +222,7 @@ public class EventSeverityOperations extends ClinicalStatementOperations
   
   public static  boolean validateEventSeverityCodeP(EventSeverity eventSeverity, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
+  	  
     if (VALIDATE_EVENT_SEVERITY_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(SdtmPackage.Literals.EVENT_SEVERITY);
@@ -245,6 +247,7 @@ public class EventSeverityOperations extends ClinicalStatementOperations
              org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "EventSeverityCodeP", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(eventSeverity, context) }),
              new Object [] { eventSeverity }));
       }
+       
       return false;
     }
     return true;
@@ -278,9 +281,6 @@ public class EventSeverityOperations extends ClinicalStatementOperations
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * (self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and 
-   * let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in 
-   * value.code = 'TBD' and value.codeSystem = '2.16.840.1.113883.3.26.1.1')
    * @param eventSeverity The receiving '<em><b>Event Severity</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -290,6 +290,7 @@ public class EventSeverityOperations extends ClinicalStatementOperations
   
   public static  boolean validateEventSeverityCode(EventSeverity eventSeverity, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
+  	  
     if (VALIDATE_EVENT_SEVERITY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(SdtmPackage.Literals.EVENT_SEVERITY);
@@ -314,6 +315,7 @@ public class EventSeverityOperations extends ClinicalStatementOperations
              org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "EventSeverityCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(eventSeverity, context) }),
              new Object [] { eventSeverity }));
       }
+       
       return false;
     }
     return true;
@@ -345,7 +347,6 @@ public class EventSeverityOperations extends ClinicalStatementOperations
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.moodCode=vocab::x_ActMoodDocumentObservation::EVN
    * @param eventSeverity The receiving '<em><b>Event Severity</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -355,6 +356,7 @@ public class EventSeverityOperations extends ClinicalStatementOperations
   
   public static  boolean validateEventSeverityMoodCode(EventSeverity eventSeverity, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
+  	  
     if (VALIDATE_EVENT_SEVERITY_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(SdtmPackage.Literals.EVENT_SEVERITY);
@@ -379,6 +381,7 @@ public class EventSeverityOperations extends ClinicalStatementOperations
              org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "EventSeverityMoodCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(eventSeverity, context) }),
              new Object [] { eventSeverity }));
       }
+       
       return false;
     }
     return true;
@@ -412,9 +415,6 @@ public class EventSeverityOperations extends ClinicalStatementOperations
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * (self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (self.value->size() = 1 and self.value->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CE) and 
-   * let value : datatypes::CE = element.oclAsType(datatypes::CE) in 
-   * value.codeSystem = '2.16.840.1.113883.3.26.1.1'))
    * @param eventSeverity The receiving '<em><b>Event Severity</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -424,6 +424,7 @@ public class EventSeverityOperations extends ClinicalStatementOperations
   
   public static  boolean validateEventSeverityValue(EventSeverity eventSeverity, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
+  	  
     if (VALIDATE_EVENT_SEVERITY_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(SdtmPackage.Literals.EVENT_SEVERITY);
@@ -448,6 +449,7 @@ public class EventSeverityOperations extends ClinicalStatementOperations
              org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "EventSeverityValue", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(eventSeverity, context) }),
              new Object [] { eventSeverity }));
       }
+       
       return false;
     }
     return true;
@@ -479,7 +481,6 @@ public class EventSeverityOperations extends ClinicalStatementOperations
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * (self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (self.value->size() = 1 and self.value->forAll(element | element.oclIsTypeOf(datatypes::CE)))
    * @param eventSeverity The receiving '<em><b>Event Severity</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -489,6 +490,7 @@ public class EventSeverityOperations extends ClinicalStatementOperations
   
   public static  boolean validateEventSeverityValueP(EventSeverity eventSeverity, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
+  	  
     if (VALIDATE_EVENT_SEVERITY_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(SdtmPackage.Literals.EVENT_SEVERITY);
@@ -513,6 +515,7 @@ public class EventSeverityOperations extends ClinicalStatementOperations
              org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "EventSeverityValueP", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(eventSeverity, context) }),
              new Object [] { eventSeverity }));
       }
+       
       return false;
     }
     return true;

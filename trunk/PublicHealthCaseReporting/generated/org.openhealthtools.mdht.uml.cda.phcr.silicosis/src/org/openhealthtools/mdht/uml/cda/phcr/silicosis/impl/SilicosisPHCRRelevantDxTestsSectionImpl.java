@@ -10,6 +10,7 @@
  *******************************************************************************/
 package org.openhealthtools.mdht.uml.cda.phcr.silicosis.impl;
 
+import java.lang.Iterable;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
@@ -17,6 +18,8 @@ import org.eclipse.emf.common.util.EList;
 
 import org.eclipse.emf.ecore.EClass;
 
+import org.eclipse.emf.ecore.EObject;
+import org.openhealthtools.mdht.emf.runtime.util.Initializer;
 import org.openhealthtools.mdht.uml.cda.phcr.impl.PhcrRelevantDxTestsSectionImpl;
 
 import org.openhealthtools.mdht.uml.cda.phcr.silicosis.SilicosisImagingObservation;
@@ -39,64 +42,73 @@ import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
 public class SilicosisPHCRRelevantDxTestsSectionImpl extends PhcrRelevantDxTestsSectionImpl implements SilicosisPHCRRelevantDxTestsSection
 {
   /**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   protected SilicosisPHCRRelevantDxTestsSectionImpl()
   {
-		super();
-	}
+    super();
+  }
 
   /**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   @Override
   protected EClass eStaticClass()
   {
-		return SilicosisPackage.Literals.SILICOSIS_PHCR_RELEVANT_DX_TESTS_SECTION;
-	}
+    return SilicosisPackage.Literals.SILICOSIS_PHCR_RELEVANT_DX_TESTS_SECTION;
+  }
 
   /**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   public boolean validateSilicosisPHCRRelevantDxTestsSectionSilicosisImagingObservation(DiagnosticChain diagnostics, Map<Object, Object> context)
   {
-		return SilicosisPHCRRelevantDxTestsSectionOperations.validateSilicosisPHCRRelevantDxTestsSectionSilicosisImagingObservation(this, diagnostics, context);
-	}
+    return SilicosisPHCRRelevantDxTestsSectionOperations.validateSilicosisPHCRRelevantDxTestsSectionSilicosisImagingObservation(this, diagnostics, context);
+  }
 
   /**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   public EList<SilicosisImagingObservation> getSilicosisImagingObservations()
   {
-		return SilicosisPHCRRelevantDxTestsSectionOperations.getSilicosisImagingObservations(this);
-	}
+    return SilicosisPHCRRelevantDxTestsSectionOperations.getSilicosisImagingObservations(this);
+  }
 
   /**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   @Override
   public boolean validateResultsSectionTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context)
   {
-		return SilicosisPHCRRelevantDxTestsSectionOperations.validateResultsSectionTemplateId(this, diagnostics, context);
-	}
+    return SilicosisPHCRRelevantDxTestsSectionOperations.validateResultsSectionTemplateId(this, diagnostics, context);
+  }
 
   /**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   public SilicosisPHCRRelevantDxTestsSection init() {
-    	CDAUtil.init(this);
-    	return this;
-	}
+      return Initializer.Util.init(this);
+  }
+
+  /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    public SilicosisPHCRRelevantDxTestsSection init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
 } //SilicosisPHCRRelevantDxTestsSectionImpl

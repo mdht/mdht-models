@@ -22,12 +22,15 @@
  */
 package org.openhealthtools.mdht.uml.cda.phmr.impl;
 
+import java.lang.Iterable;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
 
 import org.eclipse.emf.ecore.EClass;
 
+import org.eclipse.emf.ecore.EObject;
+import org.openhealthtools.mdht.emf.runtime.util.Initializer;
 import org.openhealthtools.mdht.uml.cda.Observation;
 import org.openhealthtools.mdht.uml.cda.ObservationMedia;
 
@@ -51,112 +54,141 @@ import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
  */
 public class WaveformSeriesObservationImpl extends ObservationImpl implements WaveformSeriesObservation {
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	protected WaveformSeriesObservationImpl() {
-		super();
-	}
+    super();
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	@Override
 	protected EClass eStaticClass() {
-		return PhmrPackage.Literals.WAVEFORM_SERIES_OBSERVATION;
-	}
+    return PhmrPackage.Literals.WAVEFORM_SERIES_OBSERVATION;
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateWaveformSeriesObservationTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return WaveformSeriesObservationOperations.validateWaveformSeriesObservationTemplateId(this, diagnostics, context);
-	}
+    return WaveformSeriesObservationOperations.validateWaveformSeriesObservationTemplateId(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateWaveformSeriesObservationClassCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return WaveformSeriesObservationOperations.validateWaveformSeriesObservationClassCode(this, diagnostics, context);
-	}
+    return WaveformSeriesObservationOperations.validateWaveformSeriesObservationClassCode(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public boolean validateWaveformSeriesObservationCodeP(DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+    return WaveformSeriesObservationOperations.validateWaveformSeriesObservationCodeP(this, diagnostics, context);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateWaveformSeriesObservationCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return WaveformSeriesObservationOperations.validateWaveformSeriesObservationCode(this, diagnostics, context);
-	}
+    return WaveformSeriesObservationOperations.validateWaveformSeriesObservationCode(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateWaveformSeriesObservationEffectiveTime(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return WaveformSeriesObservationOperations.validateWaveformSeriesObservationEffectiveTime(this, diagnostics, context);
-	}
+    return WaveformSeriesObservationOperations.validateWaveformSeriesObservationEffectiveTime(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateWaveformSeriesObservationMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return WaveformSeriesObservationOperations.validateWaveformSeriesObservationMoodCode(this, diagnostics, context);
-	}
+    return WaveformSeriesObservationOperations.validateWaveformSeriesObservationMoodCode(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public boolean validateWaveformSeriesObservationPHMRProductInstanceReference(DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+    return WaveformSeriesObservationOperations.validateWaveformSeriesObservationPHMRProductInstanceReference(this, diagnostics, context);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateWaveformSeriesObservationObservationMediaJPG(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return WaveformSeriesObservationOperations.validateWaveformSeriesObservationObservationMediaJPG(this, diagnostics, context);
-	}
+    return WaveformSeriesObservationOperations.validateWaveformSeriesObservationObservationMediaJPG(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateWaveformSeriesObservationObservationNullFlavor(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return WaveformSeriesObservationOperations.validateWaveformSeriesObservationObservationNullFlavor(this, diagnostics, context);
-	}
+    return WaveformSeriesObservationOperations.validateWaveformSeriesObservationObservationNullFlavor(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public ObservationMedia getObservationMediaJPG() {
-		return WaveformSeriesObservationOperations.getObservationMediaJPG(this);
-	}
+    return WaveformSeriesObservationOperations.getObservationMediaJPG(this);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public Observation getObservationNullFlavor() {
-		return WaveformSeriesObservationOperations.getObservationNullFlavor(this);
-	}
+    return WaveformSeriesObservationOperations.getObservationNullFlavor(this);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public WaveformSeriesObservation init() {
-    	CDAUtil.init(this);
-    	return this;
-	}
+      return Initializer.Util.init(this);
+  }
+
+  /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    public WaveformSeriesObservation init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
 } //WaveformSeriesObservationImpl

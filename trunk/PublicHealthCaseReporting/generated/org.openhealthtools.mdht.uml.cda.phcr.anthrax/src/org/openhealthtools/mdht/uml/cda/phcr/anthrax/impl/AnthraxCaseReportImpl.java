@@ -10,10 +10,13 @@
  *******************************************************************************/
 package org.openhealthtools.mdht.uml.cda.phcr.anthrax.impl;
 
+import java.lang.Iterable;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.ecore.EClass;
+import org.eclipse.emf.ecore.EObject;
+import org.openhealthtools.mdht.emf.runtime.util.Initializer;
 import org.openhealthtools.mdht.uml.cda.phcr.anthrax.AnthraxCaseReport;
 import org.openhealthtools.mdht.uml.cda.phcr.anthrax.AnthraxPackage;
 import org.openhealthtools.mdht.uml.cda.phcr.anthrax.AnthraxPhcrClinicalInformationSection;
@@ -35,122 +38,131 @@ import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
  */
 public class AnthraxCaseReportImpl extends PublicHealthCaseReportImpl implements AnthraxCaseReport {
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	protected AnthraxCaseReportImpl() {
-		super();
-	}
+    super();
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	@Override
 	protected EClass eStaticClass() {
-		return AnthraxPackage.Literals.ANTHRAX_CASE_REPORT;
-	}
+    return AnthraxPackage.Literals.ANTHRAX_CASE_REPORT;
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateAnthraxCaseReportTitle(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return AnthraxCaseReportOperations.validateAnthraxCaseReportTitle(this, diagnostics, context);
-	}
+    return AnthraxCaseReportOperations.validateAnthraxCaseReportTitle(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateAnthraxCaseReportAnthraxPhcrClinicalInformationSection(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return AnthraxCaseReportOperations.validateAnthraxCaseReportAnthraxPhcrClinicalInformationSection(this, diagnostics, context);
-	}
+    return AnthraxCaseReportOperations.validateAnthraxCaseReportAnthraxPhcrClinicalInformationSection(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateAnthraxCaseReportAnthraxPhcrRelevantDxTestsSection(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return AnthraxCaseReportOperations.validateAnthraxCaseReportAnthraxPhcrRelevantDxTestsSection(this, diagnostics, context);
-	}
+    return AnthraxCaseReportOperations.validateAnthraxCaseReportAnthraxPhcrRelevantDxTestsSection(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateAnthraxCaseReportAnthraxPhcrSocialHistorySection(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return AnthraxCaseReportOperations.validateAnthraxCaseReportAnthraxPhcrSocialHistorySection(this, diagnostics, context);
-	}
+    return AnthraxCaseReportOperations.validateAnthraxCaseReportAnthraxPhcrSocialHistorySection(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateAnthraxCaseReportAnthraxPhcrTreatmentInformationSection(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return AnthraxCaseReportOperations.validateAnthraxCaseReportAnthraxPhcrTreatmentInformationSection(this, diagnostics, context);
-	}
+    return AnthraxCaseReportOperations.validateAnthraxCaseReportAnthraxPhcrTreatmentInformationSection(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public AnthraxPhcrClinicalInformationSection getAnthraxPhcrClinicalInformationSection() {
-		return AnthraxCaseReportOperations.getAnthraxPhcrClinicalInformationSection(this);
-	}
+    return AnthraxCaseReportOperations.getAnthraxPhcrClinicalInformationSection(this);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public AnthraxPhcrRelevantDxTestsSection getAnthraxPhcrRelevantDxTestsSection() {
-		return AnthraxCaseReportOperations.getAnthraxPhcrRelevantDxTestsSection(this);
-	}
+    return AnthraxCaseReportOperations.getAnthraxPhcrRelevantDxTestsSection(this);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public AnthraxPhcrSocialHistorySection getAnthraxPhcrSocialHistorySection() {
-		return AnthraxCaseReportOperations.getAnthraxPhcrSocialHistorySection(this);
-	}
+    return AnthraxCaseReportOperations.getAnthraxPhcrSocialHistorySection(this);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public AnthraxPhcrTreatmentInformationSection getAnthraxPhcrTreatmentInformationSection() {
-		return AnthraxCaseReportOperations.getAnthraxPhcrTreatmentInformationSection(this);
-	}
+    return AnthraxCaseReportOperations.getAnthraxPhcrTreatmentInformationSection(this);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	@Override
 	public boolean validatePublicHealthCaseReportTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return AnthraxCaseReportOperations.validatePublicHealthCaseReportTemplateId(this, diagnostics, context);
-	}
+    return AnthraxCaseReportOperations.validatePublicHealthCaseReportTemplateId(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public AnthraxCaseReport init() {
-    	CDAUtil.init(this);
-    	return this;
-	}
+      return Initializer.Util.init(this);
+  }
+
+  /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    public AnthraxCaseReport init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
 } //AnthraxCaseReportImpl

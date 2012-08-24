@@ -28,175 +28,179 @@ import org.openhealthtools.mdht.uml.cda.phcr.chlamydiatrachomatis.*;
  */
 public class ChlamydiatrachomatisFactoryImpl extends EFactoryImpl implements ChlamydiatrachomatisFactory {
 	/**
-	 * Creates the default factory implementation.
-	 * <!-- begin-user-doc -->
+   * Creates the default factory implementation.
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public static ChlamydiatrachomatisFactory init() {
-		try {
-			ChlamydiatrachomatisFactory theChlamydiatrachomatisFactory = (ChlamydiatrachomatisFactory)EPackage.Registry.INSTANCE.getEFactory("http://www.openhealthtools.org/mdht/uml/cda/phcr/chlamydiatrachomatis"); 
-			if (theChlamydiatrachomatisFactory != null) {
-				return theChlamydiatrachomatisFactory;
-			}
-		}
-		catch (Exception exception) {
-			EcorePlugin.INSTANCE.log(exception);
-		}
-		return new ChlamydiatrachomatisFactoryImpl();
-	}
+    try
+    {
+      ChlamydiatrachomatisFactory theChlamydiatrachomatisFactory = (ChlamydiatrachomatisFactory)EPackage.Registry.INSTANCE.getEFactory("http://www.openhealthtools.org/mdht/uml/cda/phcr/chlamydiatrachomatis"); 
+      if (theChlamydiatrachomatisFactory != null)
+      {
+        return theChlamydiatrachomatisFactory;
+      }
+    }
+    catch (Exception exception)
+    {
+      EcorePlugin.INSTANCE.log(exception);
+    }
+    return new ChlamydiatrachomatisFactoryImpl();
+  }
 
 	/**
-	 * Creates an instance of the factory.
-	 * <!-- begin-user-doc -->
+   * Creates an instance of the factory.
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public ChlamydiatrachomatisFactoryImpl() {
-		super();
-	}
+    super();
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	@Override
 	public EObject create(EClass eClass) {
-		switch (eClass.getClassifierID()) {
-			case ChlamydiatrachomatisPackage.CHLAMYDIATRACHOMATIS_PUBLIC_HEALTH_CASE_REPORT: return createChlamydiatrachomatisPublicHealthCaseReport();
-			case ChlamydiatrachomatisPackage.CHLAMYDIATRACHOMATIS_PHCR_CLINICAL_INFORMATION_SECTION: return createChlamydiatrachomatisPHCRClinicalInformationSection();
-			case ChlamydiatrachomatisPackage.CHLAMYDIATRACHOMATIS_CASE_OBSERVATION: return createChlamydiatrachomatisCaseObservation();
-			case ChlamydiatrachomatisPackage.CHLAMYDIATRACHOMATIS_PHCR_RELEVANT_DX_TESTS_SECTION: return createChlamydiatrachomatisPHCRRelevantDxTestsSection();
-			case ChlamydiatrachomatisPackage.CHLAMYDIATRACHOMATIS_RESULT_OBSERVATION: return createChlamydiatrachomatisResultObservation();
-			case ChlamydiatrachomatisPackage.CHLAMYDIATRACHOMATIS_RESULT_ORGANIZER: return createchlamydiatrachomatisResultOrganizer();
-			case ChlamydiatrachomatisPackage.CHLAMYDIATRACHOMATIS_PHCR_TREATMENT_INFORMATION_SECTION: return createChlamydiatrachomatisPHCRTreatmentInformationSection();
-			case ChlamydiatrachomatisPackage.CHLAMYDIATRACHOMATIS_THERAPEUTIC_REGIMEN_ACT: return createChlamydiatrachomatisTherapeuticRegimenAct();
-			case ChlamydiatrachomatisPackage.CHLAMYDIATRACHOMATIS_TREATMENT_GIVEN_SUBSTANCE_ADMINISTRATION: return createChlamydiatrachomatisTreatmentGivenSubstanceAdministration();
-			case ChlamydiatrachomatisPackage.CHLAMYDIATRACHOMATIS_TREATMENT_NOT_GIVEN_SUBSTANCE_ADMINISTRATION: return createChlamydiatrachomatisTreatmentNotGivenSubstanceAdministration();
-			default:
-				throw new IllegalArgumentException("The class '" + eClass.getName() + "' is not a valid classifier");
-		}
-	}
+    switch (eClass.getClassifierID())
+    {
+      case ChlamydiatrachomatisPackage.CHLAMYDIATRACHOMATIS_PUBLIC_HEALTH_CASE_REPORT: return createChlamydiatrachomatisPublicHealthCaseReport();
+      case ChlamydiatrachomatisPackage.CHLAMYDIATRACHOMATIS_PHCR_CLINICAL_INFORMATION_SECTION: return createChlamydiatrachomatisPHCRClinicalInformationSection();
+      case ChlamydiatrachomatisPackage.CHLAMYDIATRACHOMATIS_CASE_OBSERVATION: return createChlamydiatrachomatisCaseObservation();
+      case ChlamydiatrachomatisPackage.CHLAMYDIATRACHOMATIS_PHCR_RELEVANT_DX_TESTS_SECTION: return createChlamydiatrachomatisPHCRRelevantDxTestsSection();
+      case ChlamydiatrachomatisPackage.CHLAMYDIATRACHOMATIS_RESULT_OBSERVATION: return createChlamydiatrachomatisResultObservation();
+      case ChlamydiatrachomatisPackage.CHLAMYDIATRACHOMATIS_RESULT_ORGANIZER: return createchlamydiatrachomatisResultOrganizer();
+      case ChlamydiatrachomatisPackage.CHLAMYDIATRACHOMATIS_PHCR_TREATMENT_INFORMATION_SECTION: return createChlamydiatrachomatisPHCRTreatmentInformationSection();
+      case ChlamydiatrachomatisPackage.CHLAMYDIATRACHOMATIS_THERAPEUTIC_REGIMEN_ACT: return createChlamydiatrachomatisTherapeuticRegimenAct();
+      case ChlamydiatrachomatisPackage.CHLAMYDIATRACHOMATIS_TREATMENT_GIVEN_SUBSTANCE_ADMINISTRATION: return createChlamydiatrachomatisTreatmentGivenSubstanceAdministration();
+      case ChlamydiatrachomatisPackage.CHLAMYDIATRACHOMATIS_TREATMENT_NOT_GIVEN_SUBSTANCE_ADMINISTRATION: return createChlamydiatrachomatisTreatmentNotGivenSubstanceAdministration();
+      default:
+        throw new IllegalArgumentException("The class '" + eClass.getName() + "' is not a valid classifier");
+    }
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public ChlamydiatrachomatisPublicHealthCaseReport createChlamydiatrachomatisPublicHealthCaseReport() {
-		ChlamydiatrachomatisPublicHealthCaseReportImpl chlamydiatrachomatisPublicHealthCaseReport = new ChlamydiatrachomatisPublicHealthCaseReportImpl();
-		return chlamydiatrachomatisPublicHealthCaseReport;
-	}
+    ChlamydiatrachomatisPublicHealthCaseReportImpl chlamydiatrachomatisPublicHealthCaseReport = new ChlamydiatrachomatisPublicHealthCaseReportImpl();
+    return chlamydiatrachomatisPublicHealthCaseReport;
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public ChlamydiatrachomatisPHCRClinicalInformationSection createChlamydiatrachomatisPHCRClinicalInformationSection() {
-		ChlamydiatrachomatisPHCRClinicalInformationSectionImpl chlamydiatrachomatisPHCRClinicalInformationSection = new ChlamydiatrachomatisPHCRClinicalInformationSectionImpl();
-		return chlamydiatrachomatisPHCRClinicalInformationSection;
-	}
+    ChlamydiatrachomatisPHCRClinicalInformationSectionImpl chlamydiatrachomatisPHCRClinicalInformationSection = new ChlamydiatrachomatisPHCRClinicalInformationSectionImpl();
+    return chlamydiatrachomatisPHCRClinicalInformationSection;
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public ChlamydiatrachomatisCaseObservation createChlamydiatrachomatisCaseObservation() {
-		ChlamydiatrachomatisCaseObservationImpl chlamydiatrachomatisCaseObservation = new ChlamydiatrachomatisCaseObservationImpl();
-		return chlamydiatrachomatisCaseObservation;
-	}
+    ChlamydiatrachomatisCaseObservationImpl chlamydiatrachomatisCaseObservation = new ChlamydiatrachomatisCaseObservationImpl();
+    return chlamydiatrachomatisCaseObservation;
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public ChlamydiatrachomatisPHCRRelevantDxTestsSection createChlamydiatrachomatisPHCRRelevantDxTestsSection() {
-		ChlamydiatrachomatisPHCRRelevantDxTestsSectionImpl chlamydiatrachomatisPHCRRelevantDxTestsSection = new ChlamydiatrachomatisPHCRRelevantDxTestsSectionImpl();
-		return chlamydiatrachomatisPHCRRelevantDxTestsSection;
-	}
+    ChlamydiatrachomatisPHCRRelevantDxTestsSectionImpl chlamydiatrachomatisPHCRRelevantDxTestsSection = new ChlamydiatrachomatisPHCRRelevantDxTestsSectionImpl();
+    return chlamydiatrachomatisPHCRRelevantDxTestsSection;
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public ChlamydiatrachomatisResultObservation createChlamydiatrachomatisResultObservation() {
-		ChlamydiatrachomatisResultObservationImpl chlamydiatrachomatisResultObservation = new ChlamydiatrachomatisResultObservationImpl();
-		return chlamydiatrachomatisResultObservation;
-	}
+    ChlamydiatrachomatisResultObservationImpl chlamydiatrachomatisResultObservation = new ChlamydiatrachomatisResultObservationImpl();
+    return chlamydiatrachomatisResultObservation;
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public chlamydiatrachomatisResultOrganizer createchlamydiatrachomatisResultOrganizer() {
-		chlamydiatrachomatisResultOrganizerImpl chlamydiatrachomatisResultOrganizer = new chlamydiatrachomatisResultOrganizerImpl();
-		return chlamydiatrachomatisResultOrganizer;
-	}
+    chlamydiatrachomatisResultOrganizerImpl chlamydiatrachomatisResultOrganizer = new chlamydiatrachomatisResultOrganizerImpl();
+    return chlamydiatrachomatisResultOrganizer;
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public ChlamydiatrachomatisPHCRTreatmentInformationSection createChlamydiatrachomatisPHCRTreatmentInformationSection() {
-		ChlamydiatrachomatisPHCRTreatmentInformationSectionImpl chlamydiatrachomatisPHCRTreatmentInformationSection = new ChlamydiatrachomatisPHCRTreatmentInformationSectionImpl();
-		return chlamydiatrachomatisPHCRTreatmentInformationSection;
-	}
+    ChlamydiatrachomatisPHCRTreatmentInformationSectionImpl chlamydiatrachomatisPHCRTreatmentInformationSection = new ChlamydiatrachomatisPHCRTreatmentInformationSectionImpl();
+    return chlamydiatrachomatisPHCRTreatmentInformationSection;
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public ChlamydiatrachomatisTherapeuticRegimenAct createChlamydiatrachomatisTherapeuticRegimenAct() {
-		ChlamydiatrachomatisTherapeuticRegimenActImpl chlamydiatrachomatisTherapeuticRegimenAct = new ChlamydiatrachomatisTherapeuticRegimenActImpl();
-		return chlamydiatrachomatisTherapeuticRegimenAct;
-	}
+    ChlamydiatrachomatisTherapeuticRegimenActImpl chlamydiatrachomatisTherapeuticRegimenAct = new ChlamydiatrachomatisTherapeuticRegimenActImpl();
+    return chlamydiatrachomatisTherapeuticRegimenAct;
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public ChlamydiatrachomatisTreatmentGivenSubstanceAdministration createChlamydiatrachomatisTreatmentGivenSubstanceAdministration() {
-		ChlamydiatrachomatisTreatmentGivenSubstanceAdministrationImpl chlamydiatrachomatisTreatmentGivenSubstanceAdministration = new ChlamydiatrachomatisTreatmentGivenSubstanceAdministrationImpl();
-		return chlamydiatrachomatisTreatmentGivenSubstanceAdministration;
-	}
+    ChlamydiatrachomatisTreatmentGivenSubstanceAdministrationImpl chlamydiatrachomatisTreatmentGivenSubstanceAdministration = new ChlamydiatrachomatisTreatmentGivenSubstanceAdministrationImpl();
+    return chlamydiatrachomatisTreatmentGivenSubstanceAdministration;
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public ChlamydiatrachomatisTreatmentNotGivenSubstanceAdministration createChlamydiatrachomatisTreatmentNotGivenSubstanceAdministration() {
-		ChlamydiatrachomatisTreatmentNotGivenSubstanceAdministrationImpl chlamydiatrachomatisTreatmentNotGivenSubstanceAdministration = new ChlamydiatrachomatisTreatmentNotGivenSubstanceAdministrationImpl();
-		return chlamydiatrachomatisTreatmentNotGivenSubstanceAdministration;
-	}
+    ChlamydiatrachomatisTreatmentNotGivenSubstanceAdministrationImpl chlamydiatrachomatisTreatmentNotGivenSubstanceAdministration = new ChlamydiatrachomatisTreatmentNotGivenSubstanceAdministrationImpl();
+    return chlamydiatrachomatisTreatmentNotGivenSubstanceAdministration;
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public ChlamydiatrachomatisPackage getChlamydiatrachomatisPackage() {
-		return (ChlamydiatrachomatisPackage)getEPackage();
-	}
+    return (ChlamydiatrachomatisPackage)getEPackage();
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @deprecated
-	 * @generated
-	 */
+   * @deprecated
+   * @generated
+   */
 	@Deprecated
 	public static ChlamydiatrachomatisPackage getPackage() {
-		return ChlamydiatrachomatisPackage.eINSTANCE;
-	}
+    return ChlamydiatrachomatisPackage.eINSTANCE;
+  }
 
 } //ChlamydiatrachomatisFactoryImpl

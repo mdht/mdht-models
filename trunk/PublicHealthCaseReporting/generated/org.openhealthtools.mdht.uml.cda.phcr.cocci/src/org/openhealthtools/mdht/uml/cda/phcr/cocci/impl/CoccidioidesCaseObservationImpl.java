@@ -10,11 +10,14 @@
  *******************************************************************************/
 package org.openhealthtools.mdht.uml.cda.phcr.cocci.impl;
 
+import java.lang.Iterable;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.common.util.EList;
 import org.eclipse.emf.ecore.EClass;
+import org.eclipse.emf.ecore.EObject;
+import org.openhealthtools.mdht.emf.runtime.util.Initializer;
 import org.openhealthtools.mdht.uml.cda.phcr.cocci.CocciPackage;
 import org.openhealthtools.mdht.uml.cda.phcr.cocci.CoccidioidesCaseObservation;
 import org.openhealthtools.mdht.uml.cda.phcr.cocci.CoccidioidesSignsAndSymptomsObservation;
@@ -33,60 +36,79 @@ import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
  */
 public class CoccidioidesCaseObservationImpl extends CaseObservationImpl implements CoccidioidesCaseObservation {
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	protected CoccidioidesCaseObservationImpl() {
-		super();
-	}
+    super();
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	@Override
 	protected EClass eStaticClass() {
-		return CocciPackage.Literals.COCCIDIOIDES_CASE_OBSERVATION;
-	}
+    return CocciPackage.Literals.COCCIDIOIDES_CASE_OBSERVATION;
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public boolean validateCoccidioidesCaseObservationValueP(DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+    return CoccidioidesCaseObservationOperations.validateCoccidioidesCaseObservationValueP(this, diagnostics, context);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public boolean validateCoccidioidesCaseObservationValue(DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+    return CoccidioidesCaseObservationOperations.validateCoccidioidesCaseObservationValue(this, diagnostics, context);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public EList<CoccidioidesSignsAndSymptomsObservation> getCoccidioidesSignsAndSymptomsObservations() {
-		return CoccidioidesCaseObservationOperations.getCoccidioidesSignsAndSymptomsObservations(this);
-	}
+    return CoccidioidesCaseObservationOperations.getCoccidioidesSignsAndSymptomsObservations(this);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	@Override
 	public boolean validateProblemObservationTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return CoccidioidesCaseObservationOperations.validateProblemObservationTemplateId(this, diagnostics, context);
-	}
+    return CoccidioidesCaseObservationOperations.validateProblemObservationTemplateId(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public boolean validateCaseObservationValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return CoccidioidesCaseObservationOperations.validateCaseObservationValue(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public CoccidioidesCaseObservation init() {
-    	CDAUtil.init(this);
-    	return this;
-	}
+      return Initializer.Util.init(this);
+  }
+
+  /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    public CoccidioidesCaseObservation init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
 } //CoccidioidesCaseObservationImpl

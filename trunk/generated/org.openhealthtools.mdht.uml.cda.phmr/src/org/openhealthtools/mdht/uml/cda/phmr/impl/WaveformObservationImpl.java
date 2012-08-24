@@ -22,12 +22,15 @@
  */
 package org.openhealthtools.mdht.uml.cda.phmr.impl;
 
+import java.lang.Iterable;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
 
 import org.eclipse.emf.ecore.EClass;
 
+import org.eclipse.emf.ecore.EObject;
+import org.openhealthtools.mdht.emf.runtime.util.Initializer;
 import org.openhealthtools.mdht.uml.cda.impl.ObservationImpl;
 
 import org.openhealthtools.mdht.uml.cda.phmr.PhmrPackage;
@@ -48,76 +51,85 @@ import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
  */
 public class WaveformObservationImpl extends ObservationImpl implements WaveformObservation {
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	protected WaveformObservationImpl() {
-		super();
-	}
+    super();
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	@Override
 	protected EClass eStaticClass() {
-		return PhmrPackage.Literals.WAVEFORM_OBSERVATION;
-	}
+    return PhmrPackage.Literals.WAVEFORM_OBSERVATION;
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateWaveformObservationTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return WaveformObservationOperations.validateWaveformObservationTemplateId(this, diagnostics, context);
-	}
+    return WaveformObservationOperations.validateWaveformObservationTemplateId(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateWaveformObservationClassCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return WaveformObservationOperations.validateWaveformObservationClassCode(this, diagnostics, context);
-	}
+    return WaveformObservationOperations.validateWaveformObservationClassCode(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateWaveformObservationCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return WaveformObservationOperations.validateWaveformObservationCode(this, diagnostics, context);
-	}
+    return WaveformObservationOperations.validateWaveformObservationCode(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateWaveformObservationMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return WaveformObservationOperations.validateWaveformObservationMoodCode(this, diagnostics, context);
-	}
+    return WaveformObservationOperations.validateWaveformObservationMoodCode(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateWaveformObservationValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return WaveformObservationOperations.validateWaveformObservationValue(this, diagnostics, context);
-	}
+    return WaveformObservationOperations.validateWaveformObservationValue(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public WaveformObservation init() {
-    	CDAUtil.init(this);
-    	return this;
-	}
+      return Initializer.Util.init(this);
+  }
+
+  /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    public WaveformObservation init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
 } //WaveformObservationImpl

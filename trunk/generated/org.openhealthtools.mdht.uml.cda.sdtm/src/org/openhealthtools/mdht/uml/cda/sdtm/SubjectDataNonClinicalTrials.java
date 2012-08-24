@@ -6,10 +6,13 @@
  */
 package org.openhealthtools.mdht.uml.cda.sdtm;
 
+import java.lang.Iterable;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
 
+import org.eclipse.emf.ecore.EObject;
+import org.openhealthtools.mdht.emf.runtime.util.Initializer;
 import org.openhealthtools.mdht.uml.cda.ClinicalDocument;
 
 /**
@@ -19,16 +22,16 @@ import org.openhealthtools.mdht.uml.cda.ClinicalDocument;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.sdtm.SdtmPackage#getSubjectDataNonClinicalTrials()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation code.codeSystem='2.16.840.1.113883.6.1' templateId.root='2.16.840.1.113883.10.20.23.12' constraints.validation.error='Subject Data Non-Clinical TrialsTemplateId Subject Data Non-Clinical TrialsClassCode Subject Data Non-Clinical TrialsCode Subject Data Non-Clinical TrialsCodeP Subject Data Non-Clinical TrialsConfidentialityCode Subject Data Non-Clinical TrialsEffectiveTime Subject Data Non-Clinical TrialsId Subject Data Non-Clinical TrialsMoodCode Subject Data Non-Clinical TrialsSetId Subject Data Non-Clinical TrialsVersionNumber' confidentialityCode.codeSystemName='Confidentiality' code.code='TBD' confidentialityCode.codeSystem='2.16.840.1.113883.5.25' constraints.validation.info='Subject Data Non-Clinical TrialsLanguageCode Subject Data Non-Clinical TrialsRealmCode'"
- *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/sdtmSubjectDataNonClinicalTrialsAuthorParticipation constraints.validation.error='AuthorParticipationTypeCode' typeCode='AUT'"
- *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/sdtmSubjectDataNonClinicalTrialsAuthorParticipationAssignedAuthor constraints.validation.error='AssignedAuthorClassCode AssignedAuthorId' classCode='ASSIGNED'"
- *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/sdtmSubjectDataNonClinicalTrialsAuthorParticipationAssignedAuthorAuthorPerson constraints.validation.error='AuthorPersonClassCode AuthorPersonDeterminerCode AuthorPersonName' determinerCode='INSTANCE' classCode='PSN'"
- *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/sdtmSubjectDataNonClinicalTrialsAuthorParticipationAssignedAuthorStudySite constraints.validation.error='StudySiteClassCode StudySiteDeterminerCode StudySiteId StudySiteAddr' determinerCode='INSTANCE' classCode='ORG'"
- *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/sdtmSubjectDataNonClinicalTrialsStudyRelationship constraints.validation.error='StudyRelationshipTypeCode' typeCode='DOC'"
- *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/sdtmSubjectDataNonClinicalTrialsStudyRelationshipStudy constraints.validation.error='StudyClassCode StudyCode StudyId StudyMoodCode' classCode='ACT' moodCode='EVN'"
- *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/sdtmSubjectDataNonClinicalTrialsSubjectParticipation constraints.validation.error='SubjectParticipationTypeCode' typeCode='RCT'"
- *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/sdtmSubjectDataNonClinicalTrialsSubjectParticipationStudySubjectRole constraints.validation.error='StudySubjectRoleClassCode StudySubjectRoleId' classCode='PAT'"
- *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/sdtmSubjectDataNonClinicalTrialsSubjectParticipationStudySubjectRoleStudySubject administrativeGenderCode.codeSystemName='NCI Thesaurus' constraints.validation.error='StudySubjectAdministrativeGenderCode StudySubjectAdministrativeGenderCodeP StudySubjectClassCode StudySubjectDeterminerCode' determinerCode='INSTANCE' constraints.validation.warning='StudySubjectBirthTime StudySubjectEthnicGroupCode StudySubjectRaceCode' classCode='PSN' administrativeGenderCode.codeSystem='2.16.840.1.113883.3.26.1.1'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='Subject Data Non-Clinical TrialsTemplateId Subject Data Non-Clinical TrialsClassCode Subject Data Non-Clinical TrialsCode Subject Data Non-Clinical TrialsCodeP Subject Data Non-Clinical TrialsConfidentialityCode Subject Data Non-Clinical TrialsEffectiveTime Subject Data Non-Clinical TrialsId Subject Data Non-Clinical TrialsMoodCode Subject Data Non-Clinical TrialsSetId Subject Data Non-Clinical TrialsVersionNumber Subject Data Non-Clinical TrialsNon-human Subject Data Document Body Subject Data Non-Clinical TrialsAuthorParticipation2 Subject Data Non-Clinical TrialsStudyRelationship2 Subject Data Non-Clinical TrialsSubjectParticipation2' templateId.root='2.16.840.1.113883.10.20.23.12' classCode='DOCCLIN' code.code='TBD' code.codeSystem='2.16.840.1.113883.6.1' code.codeSystemName='LOINC'"
+ *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/sdtmSubjectDataNonClinicalTrialsAuthorParticipation typeCode='AUT' constraints.validation.error='AuthorParticipationTypeCode AuthorParticipationAssignedAuthor'"
+ *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/sdtmSubjectDataNonClinicalTrialsAuthorParticipationAssignedAuthor classCode='ASSIGNED' constraints.validation.error='AssignedAuthorClassCode AssignedAuthorId AssignedAuthorAuthorPerson AssignedAuthorStudySite'"
+ *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/sdtmSubjectDataNonClinicalTrialsAuthorParticipationAssignedAuthorAuthorPerson classCode='PSN' constraints.validation.error='AuthorPersonClassCode AuthorPersonDeterminerCode AuthorPersonName' determinerCode='INSTANCE'"
+ *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/sdtmSubjectDataNonClinicalTrialsAuthorParticipationAssignedAuthorStudySite classCode='ORG' constraints.validation.error='StudySiteClassCode StudySiteDeterminerCode StudySiteId StudySiteAddr' determinerCode='INSTANCE'"
+ *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/sdtmSubjectDataNonClinicalTrialsStudyRelationship typeCode='DOC' constraints.validation.error='StudyRelationshipTypeCode StudyRelationshipStudy'"
+ *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/sdtmSubjectDataNonClinicalTrialsStudyRelationshipStudy classCode='ACT' constraints.validation.error='StudyClassCode StudyCode StudyId StudyMoodCode StudyEffectiveTime' moodCode='EVN'"
+ *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/sdtmSubjectDataNonClinicalTrialsSubjectParticipation typeCode='RCT' constraints.validation.error='SubjectParticipationTypeCode SubjectParticipationStudySubjectRole'"
+ *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/sdtmSubjectDataNonClinicalTrialsSubjectParticipationStudySubjectRole classCode='PAT' constraints.validation.error='StudySubjectRoleClassCode StudySubjectRoleId'"
+ *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/sdtmSubjectDataNonClinicalTrialsSubjectParticipationStudySubjectRoleStudySubject administrativeGenderCode.codeSystem='2.16.840.1.113883.3.26.1.1' administrativeGenderCode.codeSystemName='NCI Thesaurus' constraints.validation.error='StudySubjectAdministrativeGenderCode StudySubjectAdministrativeGenderCodeP StudySubjectClassCode StudySubjectDeterminerCode' constraints.validation.warning='StudySubjectBirthTime' classCode='PSN' determinerCode='INSTANCE'"
  * @generated
  */
 public interface SubjectDataNonClinicalTrials extends ClinicalDocument
@@ -37,7 +40,6 @@ public interface SubjectDataNonClinicalTrials extends ClinicalDocument
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.23.12')
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
    * <!-- end-model-doc -->
@@ -50,7 +52,6 @@ public interface SubjectDataNonClinicalTrials extends ClinicalDocument
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * isDefined('classCode') and self.classCode=vocab::ActClinicalDocument::DOCCLIN
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
    * <!-- end-model-doc -->
@@ -63,7 +64,6 @@ public interface SubjectDataNonClinicalTrials extends ClinicalDocument
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * (self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined())
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
    * <!-- end-model-doc -->
@@ -76,13 +76,10 @@ public interface SubjectDataNonClinicalTrials extends ClinicalDocument
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * (self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and 
-   * let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in 
-   * value.code = 'TBD' and value.codeSystem = '2.16.840.1.113883.6.1')
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
    * <!-- end-model-doc -->
-   * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and \r\nlet value : datatypes::CE = self.code.oclAsType(datatypes::CE) in \r\nvalue.code = \'TBD\' and value.codeSystem = \'2.16.840.1.113883.6.1\')'"
+   * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and \nlet value : datatypes::CE = self.code.oclAsType(datatypes::CE) in \nvalue.code = \'TBD\' and value.codeSystem = \'2.16.840.1.113883.6.1\')'"
    * @generated
    */
   boolean validateSubjectDataNonClinicalTrialsCode(DiagnosticChain diagnostics, Map<Object, Object> context);
@@ -91,7 +88,6 @@ public interface SubjectDataNonClinicalTrials extends ClinicalDocument
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * (self.confidentialityCode.oclIsUndefined() or self.confidentialityCode.isNullFlavorUndefined()) implies (not self.confidentialityCode.oclIsUndefined())
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
    * <!-- end-model-doc -->
@@ -104,13 +100,10 @@ public interface SubjectDataNonClinicalTrials extends ClinicalDocument
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * (self.confidentialityCode.oclIsUndefined() or self.confidentialityCode.isNullFlavorUndefined()) implies (not self.confidentialityCode.oclIsUndefined() and self.confidentialityCode.oclIsKindOf(datatypes::CE) and 
-   * let value : datatypes::CE = self.confidentialityCode.oclAsType(datatypes::CE) in 
-   * value.codeSystem = '2.16.840.1.113883.5.25')
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
    * <!-- end-model-doc -->
-   * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.confidentialityCode.oclIsUndefined() or self.confidentialityCode.isNullFlavorUndefined()) implies (not self.confidentialityCode.oclIsUndefined() and self.confidentialityCode.oclIsKindOf(datatypes::CE) and \r\nlet value : datatypes::CE = self.confidentialityCode.oclAsType(datatypes::CE) in \r\nvalue.codeSystem = \'2.16.840.1.113883.5.25\')'"
+   * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.confidentialityCode.oclIsUndefined() or self.confidentialityCode.isNullFlavorUndefined()) implies (not self.confidentialityCode.oclIsUndefined() and self.confidentialityCode.oclIsKindOf(datatypes::CE) and \nlet value : datatypes::CE = self.confidentialityCode.oclAsType(datatypes::CE) in \nvalue.codeSystem = \'2.16.840.1.113883.5.25\')'"
    * @generated
    */
   boolean validateSubjectDataNonClinicalTrialsConfidentialityCode(DiagnosticChain diagnostics, Map<Object, Object> context);
@@ -119,7 +112,6 @@ public interface SubjectDataNonClinicalTrials extends ClinicalDocument
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * not self.effectiveTime.oclIsUndefined()
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
    * <!-- end-model-doc -->
@@ -132,7 +124,6 @@ public interface SubjectDataNonClinicalTrials extends ClinicalDocument
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * not self.id.oclIsUndefined()
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
    * <!-- end-model-doc -->
@@ -145,7 +136,6 @@ public interface SubjectDataNonClinicalTrials extends ClinicalDocument
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * (self.languageCode.oclIsUndefined() or self.languageCode.isNullFlavorUndefined()) implies (not self.languageCode.oclIsUndefined())
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
    * <!-- end-model-doc -->
@@ -158,7 +148,6 @@ public interface SubjectDataNonClinicalTrials extends ClinicalDocument
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * isDefined('moodCode') and self.moodCode=vocab::ActMood::EVN
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
    * <!-- end-model-doc -->
@@ -171,7 +160,6 @@ public interface SubjectDataNonClinicalTrials extends ClinicalDocument
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * (self.realmCode->isEmpty() or self.realmCode->exists(element | element.isNullFlavorUndefined())) implies (not self.realmCode->isEmpty())
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
    * <!-- end-model-doc -->
@@ -184,7 +172,6 @@ public interface SubjectDataNonClinicalTrials extends ClinicalDocument
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * (self.setId.oclIsUndefined() or self.setId.isNullFlavorUndefined()) implies (not self.setId.oclIsUndefined())
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
    * <!-- end-model-doc -->
@@ -197,7 +184,6 @@ public interface SubjectDataNonClinicalTrials extends ClinicalDocument
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * (self.versionNumber.oclIsUndefined() or self.versionNumber.isNullFlavorUndefined()) implies (not self.versionNumber.oclIsUndefined())
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
    * <!-- end-model-doc -->
@@ -209,7 +195,71 @@ public interface SubjectDataNonClinicalTrials extends ClinicalDocument
   /**
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
+   * <!-- begin-model-doc -->
+   * @param diagnostics The chain of diagnostics to which problems are to be appended.
+   * @param context The cache of context-specific information.
+   * <!-- end-model-doc -->
+   * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(sdtm::Non-human Subject Data Document Body))'"
+   * @generated
+   */
+  boolean validateSubjectDataNonClinicalTrialsNonhumanSubjectDataDocumentBody(DiagnosticChain diagnostics, Map<Object, Object> context);
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * <!-- begin-model-doc -->
+   * @param diagnostics The chain of diagnostics to which problems are to be appended.
+   * @param context The cache of context-specific information.
+   * <!-- end-model-doc -->
+   * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.author->one(author : cda::Author | not author.oclIsUndefined() and author.oclIsKindOf(cda::Author))'"
+   * @generated
+   */
+  boolean validateSubjectDataNonClinicalTrialsAuthorParticipation2(DiagnosticChain diagnostics, Map<Object, Object> context);
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * <!-- begin-model-doc -->
+   * @param diagnostics The chain of diagnostics to which problems are to be appended.
+   * @param context The cache of context-specific information.
+   * <!-- end-model-doc -->
+   * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.documentationOf->one(documentationOf : cda::DocumentationOf | not documentationOf.oclIsUndefined() and documentationOf.oclIsKindOf(cda::DocumentationOf))'"
+   * @generated
+   */
+  boolean validateSubjectDataNonClinicalTrialsStudyRelationship2(DiagnosticChain diagnostics, Map<Object, Object> context);
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * <!-- begin-model-doc -->
+   * @param diagnostics The chain of diagnostics to which problems are to be appended.
+   * @param context The cache of context-specific information.
+   * <!-- end-model-doc -->
+   * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.recordTarget->one(recordTarget : cda::RecordTarget | not recordTarget.oclIsUndefined() and recordTarget.oclIsKindOf(cda::RecordTarget))'"
+   * @generated
+   */
+  boolean validateSubjectDataNonClinicalTrialsSubjectParticipation2(DiagnosticChain diagnostics, Map<Object, Object> context);
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @model kind="operation" required="true" ordered="false"
+   *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(sdtm::Non-human Subject Data Document Body))->asSequence()->any(true).oclAsType(sdtm::Non-human Subject Data Document Body)'"
+   * @generated
+   */
+  NonhumanSubjectDataDocumentBody getNonhumanSubjectDataDocumentBody();
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
    * @generated
    */
   public SubjectDataNonClinicalTrials init();
+
+  /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    public SubjectDataNonClinicalTrials init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // SubjectDataNonClinicalTrials

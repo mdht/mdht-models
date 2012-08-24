@@ -6,12 +6,15 @@
  */
 package org.openhealthtools.mdht.uml.cda.sdtm.impl;
 
+import java.lang.Iterable;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
 
 import org.eclipse.emf.ecore.EClass;
 
+import org.eclipse.emf.ecore.EObject;
+import org.openhealthtools.mdht.emf.runtime.util.Initializer;
 import org.openhealthtools.mdht.uml.cda.impl.ObservationImpl;
 
 import org.openhealthtools.mdht.uml.cda.sdtm.BaselineIndicator;
@@ -142,6 +145,16 @@ public class FindingAboutImpl extends ObservationImpl implements FindingAbout
    * <!-- end-user-doc -->
    * @generated
    */
+  public boolean validateFindingAboutInterpretationCode(DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+    return FindingAboutOperations.validateFindingAboutInterpretationCode(this, diagnostics, context);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
   public boolean validateFindingAboutGroupIdentifier(DiagnosticChain diagnostics, Map<Object, Object> context)
   {
     return FindingAboutOperations.validateFindingAboutGroupIdentifier(this, diagnostics, context);
@@ -185,16 +198,6 @@ public class FindingAboutImpl extends ObservationImpl implements FindingAbout
   public boolean validateFindingAboutNonPerformanceReason(DiagnosticChain diagnostics, Map<Object, Object> context)
   {
     return FindingAboutOperations.validateFindingAboutNonPerformanceReason(this, diagnostics, context);
-  }
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public boolean validateFindingAboutBaselineIndicator(DiagnosticChain diagnostics, Map<Object, Object> context)
-  {
-    return FindingAboutOperations.validateFindingAboutBaselineIndicator(this, diagnostics, context);
   }
 
   /**
@@ -282,9 +285,9 @@ public class FindingAboutImpl extends ObservationImpl implements FindingAbout
    * <!-- end-user-doc -->
    * @generated
    */
-  public boolean validateFindingAboutfindingObservationObjectAssociationfindingObservationObjectClassCodeFindingAboutfindingObservationObjectAssociationfindingObservationObjectClassCode1(DiagnosticChain diagnostics, Map<Object, Object> context)
+  public boolean validateFindingAboutfindingAboutCategoryAssociationfindingAboutCategoryClassCode(DiagnosticChain diagnostics, Map<Object, Object> context)
   {
-    return FindingAboutOperations.validateFindingAboutfindingObservationObjectAssociationfindingObservationObjectClassCodeFindingAboutfindingObservationObjectAssociationfindingObservationObjectClassCode1(this, diagnostics, context);
+    return FindingAboutOperations.validateFindingAboutfindingAboutCategoryAssociationfindingAboutCategoryClassCode(this, diagnostics, context);
   }
 
   /**
@@ -292,9 +295,9 @@ public class FindingAboutImpl extends ObservationImpl implements FindingAbout
    * <!-- end-user-doc -->
    * @generated
    */
-  public boolean validateFindingAboutfindingObservationObjectAssociationfindingObservationObjectCodePFindingAboutfindingObservationObjectAssociationfindingObservationObjectCodeP1(DiagnosticChain diagnostics, Map<Object, Object> context)
+  public boolean validateFindingAboutfindingAboutCategoryAssociationfindingAboutCategoryCode(DiagnosticChain diagnostics, Map<Object, Object> context)
   {
-    return FindingAboutOperations.validateFindingAboutfindingObservationObjectAssociationfindingObservationObjectCodePFindingAboutfindingObservationObjectAssociationfindingObservationObjectCodeP1(this, diagnostics, context);
+    return FindingAboutOperations.validateFindingAboutfindingAboutCategoryAssociationfindingAboutCategoryCode(this, diagnostics, context);
   }
 
   /**
@@ -302,9 +305,9 @@ public class FindingAboutImpl extends ObservationImpl implements FindingAbout
    * <!-- end-user-doc -->
    * @generated
    */
-  public boolean validateFindingAboutfindingObservationObjectAssociationfindingObservationObjectCodeFindingAboutfindingObservationObjectAssociationfindingObservationObjectCode1(DiagnosticChain diagnostics, Map<Object, Object> context)
+  public boolean validateFindingAboutfindingAboutCategoryAssociationfindingAboutCategoryMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context)
   {
-    return FindingAboutOperations.validateFindingAboutfindingObservationObjectAssociationfindingObservationObjectCodeFindingAboutfindingObservationObjectAssociationfindingObservationObjectCode1(this, diagnostics, context);
+    return FindingAboutOperations.validateFindingAboutfindingAboutCategoryAssociationfindingAboutCategoryMoodCode(this, diagnostics, context);
   }
 
   /**
@@ -312,19 +315,9 @@ public class FindingAboutImpl extends ObservationImpl implements FindingAbout
    * <!-- end-user-doc -->
    * @generated
    */
-  public boolean validateFindingAboutfindingObservationObjectAssociationfindingObservationObjectMoodCodeFindingAboutfindingObservationObjectAssociationfindingObservationObjectMoodCode1(DiagnosticChain diagnostics, Map<Object, Object> context)
+  public boolean validateFindingAboutfindingAboutCategoryAssociationfindingAboutCategoryValue(DiagnosticChain diagnostics, Map<Object, Object> context)
   {
-    return FindingAboutOperations.validateFindingAboutfindingObservationObjectAssociationfindingObservationObjectMoodCodeFindingAboutfindingObservationObjectAssociationfindingObservationObjectMoodCode1(this, diagnostics, context);
-  }
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public boolean validateFindingAboutfindingObservationObjectAssociationfindingObservationObjectValueFindingAboutfindingObservationObjectAssociationfindingObservationObjectValue1(DiagnosticChain diagnostics, Map<Object, Object> context)
-  {
-    return FindingAboutOperations.validateFindingAboutfindingObservationObjectAssociationfindingObservationObjectValueFindingAboutfindingObservationObjectAssociationfindingObservationObjectValue1(this, diagnostics, context);
+    return FindingAboutOperations.validateFindingAboutfindingAboutCategoryAssociationfindingAboutCategoryValue(this, diagnostics, context);
   }
 
   /**
@@ -342,9 +335,69 @@ public class FindingAboutImpl extends ObservationImpl implements FindingAbout
    * <!-- end-user-doc -->
    * @generated
    */
+  public boolean validateFindingAboutfindingAboutCategoryAssociationFindingAboutCategory(DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+    return FindingAboutOperations.validateFindingAboutfindingAboutCategoryAssociationFindingAboutCategory(this, diagnostics, context);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public boolean validateFindingAboutfindingAboutSubCategoryAssociationfindingAboutSubCategoryClassCode(DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+    return FindingAboutOperations.validateFindingAboutfindingAboutSubCategoryAssociationfindingAboutSubCategoryClassCode(this, diagnostics, context);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public boolean validateFindingAboutfindingAboutSubCategoryAssociationfindingAboutSubCategoryCode(DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+    return FindingAboutOperations.validateFindingAboutfindingAboutSubCategoryAssociationfindingAboutSubCategoryCode(this, diagnostics, context);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public boolean validateFindingAboutfindingAboutSubCategoryAssociationfindingAboutSubCategoryMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+    return FindingAboutOperations.validateFindingAboutfindingAboutSubCategoryAssociationfindingAboutSubCategoryMoodCode(this, diagnostics, context);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public boolean validateFindingAboutfindingAboutSubCategoryAssociationfindingAboutSubCategoryValue(DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+    return FindingAboutOperations.validateFindingAboutfindingAboutSubCategoryAssociationfindingAboutSubCategoryValue(this, diagnostics, context);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
   public boolean validateFindingAboutfindingAboutSubCategoryAssociationTypeCode(DiagnosticChain diagnostics, Map<Object, Object> context)
   {
     return FindingAboutOperations.validateFindingAboutfindingAboutSubCategoryAssociationTypeCode(this, diagnostics, context);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public boolean validateFindingAboutfindingAboutSubCategoryAssociationFindingAboutSubCategory(DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+    return FindingAboutOperations.validateFindingAboutfindingAboutSubCategoryAssociationFindingAboutSubCategory(this, diagnostics, context);
   }
 
   /**
@@ -372,16 +425,6 @@ public class FindingAboutImpl extends ObservationImpl implements FindingAbout
    * <!-- end-user-doc -->
    * @generated
    */
-  public BaselineIndicator getBaselineIndicator()
-  {
-    return FindingAboutOperations.getBaselineIndicator(this);
-  }
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
   public DataCollection getDataCollection()
   {
     return FindingAboutOperations.getDataCollection(this);
@@ -393,7 +436,16 @@ public class FindingAboutImpl extends ObservationImpl implements FindingAbout
    * @generated
    */
   public FindingAbout init() {
-    	CDAUtil.init(this);
-    	return this;
+      return Initializer.Util.init(this);
   }
+
+  /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    public FindingAbout init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
 } //FindingAboutImpl

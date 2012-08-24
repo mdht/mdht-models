@@ -10,11 +10,14 @@
  *******************************************************************************/
 package org.openhealthtools.mdht.uml.cda.phcr.silicosis.impl;
 
+import java.lang.Iterable;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.common.util.EList;
 import org.eclipse.emf.ecore.EClass;
+import org.eclipse.emf.ecore.EObject;
+import org.openhealthtools.mdht.emf.runtime.util.Initializer;
 import org.openhealthtools.mdht.uml.cda.phcr.impl.PhcrSocialHistorySectionImpl;
 import org.openhealthtools.mdht.uml.cda.phcr.silicosis.SilicosisPHCRSocialHistorySection;
 import org.openhealthtools.mdht.uml.cda.phcr.silicosis.SilicosisPackage;
@@ -34,79 +37,88 @@ import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
  */
 public class SilicosisPHCRSocialHistorySectionImpl extends PhcrSocialHistorySectionImpl implements SilicosisPHCRSocialHistorySection {
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	protected SilicosisPHCRSocialHistorySectionImpl() {
-		super();
-	}
+    super();
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	@Override
 	protected EClass eStaticClass() {
-		return SilicosisPackage.Literals.SILICOSIS_PHCR_SOCIAL_HISTORY_SECTION;
-	}
+    return SilicosisPackage.Literals.SILICOSIS_PHCR_SOCIAL_HISTORY_SECTION;
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateSilicosisPHCRSocialHistorySectionSilicosisSocioBehavioralBooleanRiskFactorObservation(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return SilicosisPHCRSocialHistorySectionOperations.validateSilicosisPHCRSocialHistorySectionSilicosisSocioBehavioralBooleanRiskFactorObservation(this, diagnostics, context);
-	}
+    return SilicosisPHCRSocialHistorySectionOperations.validateSilicosisPHCRSocialHistorySectionSilicosisSocioBehavioralBooleanRiskFactorObservation(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateSilicosisPHCRSocialHistorySectionSilicosisPossibleExposureLocationAndTypeAct(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return SilicosisPHCRSocialHistorySectionOperations.validateSilicosisPHCRSocialHistorySectionSilicosisPossibleExposureLocationAndTypeAct(this, diagnostics, context);
-	}
+    return SilicosisPHCRSocialHistorySectionOperations.validateSilicosisPHCRSocialHistorySectionSilicosisPossibleExposureLocationAndTypeAct(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public SilicosisSocioBehavioralBooleanRiskFactorObservation getSilicosisSocioBehavioralBooleanRiskFactorObservation() {
-		return SilicosisPHCRSocialHistorySectionOperations.getSilicosisSocioBehavioralBooleanRiskFactorObservation(this);
-	}
+    return SilicosisPHCRSocialHistorySectionOperations.getSilicosisSocioBehavioralBooleanRiskFactorObservation(this);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public EList<SilicosisPossibleExposureLocationAndTypeAct> getSilicosisPossibleExposureLocationAndTypeActs() {
-		return SilicosisPHCRSocialHistorySectionOperations.getSilicosisPossibleExposureLocationAndTypeActs(this);
-	}
+    return SilicosisPHCRSocialHistorySectionOperations.getSilicosisPossibleExposureLocationAndTypeActs(this);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   @Override
   public boolean validateSocialHistorySectionTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context)
   {
-		return SilicosisPHCRSocialHistorySectionOperations.validateSocialHistorySectionTemplateId(this, diagnostics, context);
-	}
+    return SilicosisPHCRSocialHistorySectionOperations.validateSocialHistorySectionTemplateId(this, diagnostics, context);
+  }
 
   /**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public SilicosisPHCRSocialHistorySection init() {
-    	CDAUtil.init(this);
-    	return this;
-	}
+      return Initializer.Util.init(this);
+  }
+
+  /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    public SilicosisPHCRSocialHistorySection init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
 
 } //SilicosisPHCRSocialHistorySectionImpl

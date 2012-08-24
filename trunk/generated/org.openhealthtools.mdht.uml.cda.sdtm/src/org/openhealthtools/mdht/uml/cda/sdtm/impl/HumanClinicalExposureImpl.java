@@ -6,12 +6,15 @@
  */
 package org.openhealthtools.mdht.uml.cda.sdtm.impl;
 
+import java.lang.Iterable;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
 
 import org.eclipse.emf.ecore.EClass;
 
+import org.eclipse.emf.ecore.EObject;
+import org.openhealthtools.mdht.emf.runtime.util.Initializer;
 import org.openhealthtools.mdht.uml.cda.Observation;
 
 import org.openhealthtools.mdht.uml.cda.impl.SubstanceAdministrationImpl;
@@ -204,16 +207,6 @@ public class HumanClinicalExposureImpl extends SubstanceAdministrationImpl imple
    * <!-- end-user-doc -->
    * @generated
    */
-  public boolean validateHumanClinicalExposureExposureIndication(DiagnosticChain diagnostics, Map<Object, Object> context)
-  {
-    return HumanClinicalExposureOperations.validateHumanClinicalExposureExposureIndication(this, diagnostics, context);
-  }
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
   public boolean validateHumanClinicalExposureDoseAdjustmentReasonAssociation(DiagnosticChain diagnostics, Map<Object, Object> context)
   {
     return HumanClinicalExposureOperations.validateHumanClinicalExposureDoseAdjustmentReasonAssociation(this, diagnostics, context);
@@ -264,9 +257,109 @@ public class HumanClinicalExposureImpl extends SubstanceAdministrationImpl imple
    * <!-- end-user-doc -->
    * @generated
    */
+  public boolean validateHumanClinicalExposureExposureRegimenAssociation(DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+    return HumanClinicalExposureOperations.validateHumanClinicalExposureExposureRegimenAssociation(this, diagnostics, context);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public boolean validateHumanClinicalExposureexposureCategoryAssociationexposureEventCategoryClassCode(DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+    return HumanClinicalExposureOperations.validateHumanClinicalExposureexposureCategoryAssociationexposureEventCategoryClassCode(this, diagnostics, context);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public boolean validateHumanClinicalExposureexposureCategoryAssociationexposureEventCategoryCode(DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+    return HumanClinicalExposureOperations.validateHumanClinicalExposureexposureCategoryAssociationexposureEventCategoryCode(this, diagnostics, context);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public boolean validateHumanClinicalExposureexposureCategoryAssociationexposureEventCategoryMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+    return HumanClinicalExposureOperations.validateHumanClinicalExposureexposureCategoryAssociationexposureEventCategoryMoodCode(this, diagnostics, context);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public boolean validateHumanClinicalExposureexposureCategoryAssociationexposureEventCategoryValue(DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+    return HumanClinicalExposureOperations.validateHumanClinicalExposureexposureCategoryAssociationexposureEventCategoryValue(this, diagnostics, context);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
   public boolean validateHumanClinicalExposureexposureCategoryAssociationTypeCode(DiagnosticChain diagnostics, Map<Object, Object> context)
   {
     return HumanClinicalExposureOperations.validateHumanClinicalExposureexposureCategoryAssociationTypeCode(this, diagnostics, context);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public boolean validateHumanClinicalExposureexposureCategoryAssociationExposureEventCategory(DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+    return HumanClinicalExposureOperations.validateHumanClinicalExposureexposureCategoryAssociationExposureEventCategory(this, diagnostics, context);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public boolean validateHumanClinicalExposureexposureSubCategoryAssociationexposureEventSubCategoryClassCode(DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+    return HumanClinicalExposureOperations.validateHumanClinicalExposureexposureSubCategoryAssociationexposureEventSubCategoryClassCode(this, diagnostics, context);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public boolean validateHumanClinicalExposureexposureSubCategoryAssociationexposureEventSubCategoryCode(DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+    return HumanClinicalExposureOperations.validateHumanClinicalExposureexposureSubCategoryAssociationexposureEventSubCategoryCode(this, diagnostics, context);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public boolean validateHumanClinicalExposureexposureSubCategoryAssociationexposureEventSubCategoryMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+    return HumanClinicalExposureOperations.validateHumanClinicalExposureexposureSubCategoryAssociationexposureEventSubCategoryMoodCode(this, diagnostics, context);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public boolean validateHumanClinicalExposureexposureSubCategoryAssociationexposureEventSubCategoryValue(DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+    return HumanClinicalExposureOperations.validateHumanClinicalExposureexposureSubCategoryAssociationexposureEventSubCategoryValue(this, diagnostics, context);
   }
 
   /**
@@ -284,9 +377,9 @@ public class HumanClinicalExposureImpl extends SubstanceAdministrationImpl imple
    * <!-- end-user-doc -->
    * @generated
    */
-  public boolean validateHumanClinicalExposureexposureIntendedRegimenClassCode(DiagnosticChain diagnostics, Map<Object, Object> context)
+  public boolean validateHumanClinicalExposureexposureSubCategoryAssociationExposureEventSubCategory(DiagnosticChain diagnostics, Map<Object, Object> context)
   {
-    return HumanClinicalExposureOperations.validateHumanClinicalExposureexposureIntendedRegimenClassCode(this, diagnostics, context);
+    return HumanClinicalExposureOperations.validateHumanClinicalExposureexposureSubCategoryAssociationExposureEventSubCategory(this, diagnostics, context);
   }
 
   /**
@@ -294,9 +387,9 @@ public class HumanClinicalExposureImpl extends SubstanceAdministrationImpl imple
    * <!-- end-user-doc -->
    * @generated
    */
-  public boolean validateHumanClinicalExposureexposureIntendedRegimenMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context)
+  public boolean validateHumanClinicalExposuredoseAdjustmentReasonAssociationdoseAdjustmentReasonClassCode(DiagnosticChain diagnostics, Map<Object, Object> context)
   {
-    return HumanClinicalExposureOperations.validateHumanClinicalExposureexposureIntendedRegimenMoodCode(this, diagnostics, context);
+    return HumanClinicalExposureOperations.validateHumanClinicalExposuredoseAdjustmentReasonAssociationdoseAdjustmentReasonClassCode(this, diagnostics, context);
   }
 
   /**
@@ -304,9 +397,9 @@ public class HumanClinicalExposureImpl extends SubstanceAdministrationImpl imple
    * <!-- end-user-doc -->
    * @generated
    */
-  public boolean validateHumanClinicalExposureexposureIntendedRegimenCode(DiagnosticChain diagnostics, Map<Object, Object> context)
+  public boolean validateHumanClinicalExposuredoseAdjustmentReasonAssociationdoseAdjustmentReasonCodeP(DiagnosticChain diagnostics, Map<Object, Object> context)
   {
-    return HumanClinicalExposureOperations.validateHumanClinicalExposureexposureIntendedRegimenCode(this, diagnostics, context);
+    return HumanClinicalExposureOperations.validateHumanClinicalExposuredoseAdjustmentReasonAssociationdoseAdjustmentReasonCodeP(this, diagnostics, context);
   }
 
   /**
@@ -314,9 +407,19 @@ public class HumanClinicalExposureImpl extends SubstanceAdministrationImpl imple
    * <!-- end-user-doc -->
    * @generated
    */
-  public boolean validateHumanClinicalExposureexposureIntendedRegimenValue(DiagnosticChain diagnostics, Map<Object, Object> context)
+  public boolean validateHumanClinicalExposuredoseAdjustmentReasonAssociationdoseAdjustmentReasonCode(DiagnosticChain diagnostics, Map<Object, Object> context)
   {
-    return HumanClinicalExposureOperations.validateHumanClinicalExposureexposureIntendedRegimenValue(this, diagnostics, context);
+    return HumanClinicalExposureOperations.validateHumanClinicalExposuredoseAdjustmentReasonAssociationdoseAdjustmentReasonCode(this, diagnostics, context);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public boolean validateHumanClinicalExposuredoseAdjustmentReasonAssociationdoseAdjustmentReasonValue(DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+    return HumanClinicalExposureOperations.validateHumanClinicalExposuredoseAdjustmentReasonAssociationdoseAdjustmentReasonValue(this, diagnostics, context);
   }
 
   /**
@@ -327,6 +430,16 @@ public class HumanClinicalExposureImpl extends SubstanceAdministrationImpl imple
   public boolean validateHumanClinicalExposuredoseAdjustmentReasonAssociationTypeCode(DiagnosticChain diagnostics, Map<Object, Object> context)
   {
     return HumanClinicalExposureOperations.validateHumanClinicalExposuredoseAdjustmentReasonAssociationTypeCode(this, diagnostics, context);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public boolean validateHumanClinicalExposuredoseAdjustmentReasonAssociationDoseAdjustmentReason(DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+    return HumanClinicalExposureOperations.validateHumanClinicalExposuredoseAdjustmentReasonAssociationDoseAdjustmentReason(this, diagnostics, context);
   }
 
   /**
@@ -404,9 +517,9 @@ public class HumanClinicalExposureImpl extends SubstanceAdministrationImpl imple
    * <!-- end-user-doc -->
    * @generated
    */
-  public GroupIdentifier getGroupIdentifier()
+  public boolean validateHumanClinicalExposureexposureRegimenAssociationexposureIntendedRegimenClassCode(DiagnosticChain diagnostics, Map<Object, Object> context)
   {
-    return HumanClinicalExposureOperations.getGroupIdentifier(this);
+    return HumanClinicalExposureOperations.validateHumanClinicalExposureexposureRegimenAssociationexposureIntendedRegimenClassCode(this, diagnostics, context);
   }
 
   /**
@@ -414,9 +527,59 @@ public class HumanClinicalExposureImpl extends SubstanceAdministrationImpl imple
    * <!-- end-user-doc -->
    * @generated
    */
-  public Observation getExposureIndication()
+  public boolean validateHumanClinicalExposureexposureRegimenAssociationexposureIntendedRegimenMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context)
   {
-    return HumanClinicalExposureOperations.getExposureIndication(this);
+    return HumanClinicalExposureOperations.validateHumanClinicalExposureexposureRegimenAssociationexposureIntendedRegimenMoodCode(this, diagnostics, context);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public boolean validateHumanClinicalExposureexposureRegimenAssociationexposureIntendedRegimenCode(DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+    return HumanClinicalExposureOperations.validateHumanClinicalExposureexposureRegimenAssociationexposureIntendedRegimenCode(this, diagnostics, context);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public boolean validateHumanClinicalExposureexposureRegimenAssociationexposureIntendedRegimenValue(DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+    return HumanClinicalExposureOperations.validateHumanClinicalExposureexposureRegimenAssociationexposureIntendedRegimenValue(this, diagnostics, context);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public boolean validateHumanClinicalExposureexposureRegimenAssociationTypeCode(DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+    return HumanClinicalExposureOperations.validateHumanClinicalExposureexposureRegimenAssociationTypeCode(this, diagnostics, context);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public boolean validateHumanClinicalExposureexposureRegimenAssociationExposureIntendedRegimen(DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+    return HumanClinicalExposureOperations.validateHumanClinicalExposureexposureRegimenAssociationExposureIntendedRegimen(this, diagnostics, context);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public GroupIdentifier getGroupIdentifier()
+  {
+    return HumanClinicalExposureOperations.getGroupIdentifier(this);
   }
 
   /**
@@ -455,7 +618,16 @@ public class HumanClinicalExposureImpl extends SubstanceAdministrationImpl imple
    * @generated
    */
   public HumanClinicalExposure init() {
-    	CDAUtil.init(this);
-    	return this;
+      return Initializer.Util.init(this);
   }
+
+  /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    public HumanClinicalExposure init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
 } //HumanClinicalExposureImpl

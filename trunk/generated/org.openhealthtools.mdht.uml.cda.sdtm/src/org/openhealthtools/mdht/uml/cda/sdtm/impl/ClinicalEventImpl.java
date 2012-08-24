@@ -6,12 +6,15 @@
  */
 package org.openhealthtools.mdht.uml.cda.sdtm.impl;
 
+import java.lang.Iterable;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
 
 import org.eclipse.emf.ecore.EClass;
 
+import org.eclipse.emf.ecore.EObject;
+import org.openhealthtools.mdht.emf.runtime.util.Initializer;
 import org.openhealthtools.mdht.uml.cda.impl.ObservationImpl;
 
 import org.openhealthtools.mdht.uml.cda.sdtm.ActivityEndTimingReference;
@@ -235,6 +238,46 @@ public class ClinicalEventImpl extends ObservationImpl implements ClinicalEvent
    * <!-- end-user-doc -->
    * @generated
    */
+  public boolean validateClinicalEventclinicalEventCategoryAssociationclinicalEventCategoryClassCode(DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+    return ClinicalEventOperations.validateClinicalEventclinicalEventCategoryAssociationclinicalEventCategoryClassCode(this, diagnostics, context);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public boolean validateClinicalEventclinicalEventCategoryAssociationclinicalEventCategoryCode(DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+    return ClinicalEventOperations.validateClinicalEventclinicalEventCategoryAssociationclinicalEventCategoryCode(this, diagnostics, context);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public boolean validateClinicalEventclinicalEventCategoryAssociationclinicalEventCategoryMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+    return ClinicalEventOperations.validateClinicalEventclinicalEventCategoryAssociationclinicalEventCategoryMoodCode(this, diagnostics, context);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public boolean validateClinicalEventclinicalEventCategoryAssociationclinicalEventCategoryValue(DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+    return ClinicalEventOperations.validateClinicalEventclinicalEventCategoryAssociationclinicalEventCategoryValue(this, diagnostics, context);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
   public boolean validateClinicalEventclinicalEventCategoryAssociationTypeCode(DiagnosticChain diagnostics, Map<Object, Object> context)
   {
     return ClinicalEventOperations.validateClinicalEventclinicalEventCategoryAssociationTypeCode(this, diagnostics, context);
@@ -245,9 +288,69 @@ public class ClinicalEventImpl extends ObservationImpl implements ClinicalEvent
    * <!-- end-user-doc -->
    * @generated
    */
+  public boolean validateClinicalEventclinicalEventCategoryAssociationClinicalEventCategory(DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+    return ClinicalEventOperations.validateClinicalEventclinicalEventCategoryAssociationClinicalEventCategory(this, diagnostics, context);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public boolean validateClinicalEventclinicalEventSubCategoryAssociationclinicalEventSubCategoryClassCode(DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+    return ClinicalEventOperations.validateClinicalEventclinicalEventSubCategoryAssociationclinicalEventSubCategoryClassCode(this, diagnostics, context);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public boolean validateClinicalEventclinicalEventSubCategoryAssociationclinicalEventSubCategoryCode(DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+    return ClinicalEventOperations.validateClinicalEventclinicalEventSubCategoryAssociationclinicalEventSubCategoryCode(this, diagnostics, context);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public boolean validateClinicalEventclinicalEventSubCategoryAssociationclinicalEventSubCategoryMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+    return ClinicalEventOperations.validateClinicalEventclinicalEventSubCategoryAssociationclinicalEventSubCategoryMoodCode(this, diagnostics, context);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public boolean validateClinicalEventclinicalEventSubCategoryAssociationclinicalEventSubCategoryValue(DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+    return ClinicalEventOperations.validateClinicalEventclinicalEventSubCategoryAssociationclinicalEventSubCategoryValue(this, diagnostics, context);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
   public boolean validateClinicalEventclinicalEventSubCategoryAssociationTypeCode(DiagnosticChain diagnostics, Map<Object, Object> context)
   {
     return ClinicalEventOperations.validateClinicalEventclinicalEventSubCategoryAssociationTypeCode(this, diagnostics, context);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public boolean validateClinicalEventclinicalEventSubCategoryAssociationClinicalEventSubCategory(DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+    return ClinicalEventOperations.validateClinicalEventclinicalEventSubCategoryAssociationClinicalEventSubCategory(this, diagnostics, context);
   }
 
   /**
@@ -326,7 +429,16 @@ public class ClinicalEventImpl extends ObservationImpl implements ClinicalEvent
    * @generated
    */
   public ClinicalEvent init() {
-    	CDAUtil.init(this);
-    	return this;
+      return Initializer.Util.init(this);
   }
+
+  /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    public ClinicalEvent init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
 } //ClinicalEventImpl

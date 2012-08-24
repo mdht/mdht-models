@@ -48,12 +48,12 @@ import org.openhealthtools.mdht.uml.cda.sdtm.util.SdtmValidator;
  *   <li>{@link org.openhealthtools.mdht.uml.cda.sdtm.FindingAbout#validateFindingAboutStatusCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Finding About Status Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.sdtm.FindingAbout#validateFindingAboutTargetSiteCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Finding About Target Site Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.sdtm.FindingAbout#validateFindingAboutValue(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Finding About Value</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.sdtm.FindingAbout#validateFindingAboutInterpretationCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Finding About Interpretation Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.sdtm.FindingAbout#validateFindingAboutGroupIdentifier(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Finding About Group Identifier</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.sdtm.FindingAbout#validateFindingAboutFindingObservationObjectAssociation(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Finding About Finding Observation Object Association</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.sdtm.FindingAbout#validateFindingAboutFindingAboutCategoryAssociation(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Finding About Finding About Category Association</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.sdtm.FindingAbout#validateFindingAboutFindingAboutSubCategoryAssociation(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Finding About Finding About Sub Category Association</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.sdtm.FindingAbout#validateFindingAboutNonPerformanceReason(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Finding About Non Performance Reason</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.sdtm.FindingAbout#validateFindingAboutBaselineIndicator(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Finding About Baseline Indicator</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.sdtm.FindingAbout#validateFindingAboutDataCollection(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Finding About Data Collection</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.sdtm.FindingAbout#validateFindingAboutfindingObservationObjectAssociationfindingObservationObjectClassCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Finding Aboutfinding Observation Object Associationfinding Observation Object Class Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.sdtm.FindingAbout#validateFindingAboutfindingObservationObjectAssociationfindingObservationObjectCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Finding Aboutfinding Observation Object Associationfinding Observation Object Code P</em>}</li>
@@ -62,16 +62,20 @@ import org.openhealthtools.mdht.uml.cda.sdtm.util.SdtmValidator;
  *   <li>{@link org.openhealthtools.mdht.uml.cda.sdtm.FindingAbout#validateFindingAboutfindingObservationObjectAssociationfindingObservationObjectValue(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Finding Aboutfinding Observation Object Associationfinding Observation Object Value</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.sdtm.FindingAbout#validateFindingAboutfindingObservationObjectAssociationTypeCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Finding Aboutfinding Observation Object Association Type Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.sdtm.FindingAbout#validateFindingAboutfindingObservationObjectAssociationObservation(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Finding Aboutfinding Observation Object Association Observation</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.sdtm.FindingAbout#validateFindingAboutfindingObservationObjectAssociationfindingObservationObjectClassCodeFindingAboutfindingObservationObjectAssociationfindingObservationObjectClassCode1(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Finding Aboutfinding Observation Object Associationfinding Observation Object Class Code Finding Aboutfinding Observation Object Associationfinding Observation Object Class Code1</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.sdtm.FindingAbout#validateFindingAboutfindingObservationObjectAssociationfindingObservationObjectCodePFindingAboutfindingObservationObjectAssociationfindingObservationObjectCodeP1(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Finding Aboutfinding Observation Object Associationfinding Observation Object Code PFinding Aboutfinding Observation Object Associationfinding Observation Object Code P1</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.sdtm.FindingAbout#validateFindingAboutfindingObservationObjectAssociationfindingObservationObjectCodeFindingAboutfindingObservationObjectAssociationfindingObservationObjectCode1(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Finding Aboutfinding Observation Object Associationfinding Observation Object Code Finding Aboutfinding Observation Object Associationfinding Observation Object Code1</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.sdtm.FindingAbout#validateFindingAboutfindingObservationObjectAssociationfindingObservationObjectMoodCodeFindingAboutfindingObservationObjectAssociationfindingObservationObjectMoodCode1(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Finding Aboutfinding Observation Object Associationfinding Observation Object Mood Code Finding Aboutfinding Observation Object Associationfinding Observation Object Mood Code1</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.sdtm.FindingAbout#validateFindingAboutfindingObservationObjectAssociationfindingObservationObjectValueFindingAboutfindingObservationObjectAssociationfindingObservationObjectValue1(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Finding Aboutfinding Observation Object Associationfinding Observation Object Value Finding Aboutfinding Observation Object Associationfinding Observation Object Value1</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.sdtm.FindingAbout#validateFindingAboutfindingAboutCategoryAssociationfindingAboutCategoryClassCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Finding Aboutfinding About Category Associationfinding About Category Class Code</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.sdtm.FindingAbout#validateFindingAboutfindingAboutCategoryAssociationfindingAboutCategoryCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Finding Aboutfinding About Category Associationfinding About Category Code</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.sdtm.FindingAbout#validateFindingAboutfindingAboutCategoryAssociationfindingAboutCategoryMoodCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Finding Aboutfinding About Category Associationfinding About Category Mood Code</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.sdtm.FindingAbout#validateFindingAboutfindingAboutCategoryAssociationfindingAboutCategoryValue(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Finding Aboutfinding About Category Associationfinding About Category Value</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.sdtm.FindingAbout#validateFindingAboutfindingAboutCategoryAssociationTypeCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Finding Aboutfinding About Category Association Type Code</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.sdtm.FindingAbout#validateFindingAboutfindingAboutCategoryAssociationFindingAboutCategory(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Finding Aboutfinding About Category Association Finding About Category</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.sdtm.FindingAbout#validateFindingAboutfindingAboutSubCategoryAssociationfindingAboutSubCategoryClassCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Finding Aboutfinding About Sub Category Associationfinding About Sub Category Class Code</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.sdtm.FindingAbout#validateFindingAboutfindingAboutSubCategoryAssociationfindingAboutSubCategoryCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Finding Aboutfinding About Sub Category Associationfinding About Sub Category Code</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.sdtm.FindingAbout#validateFindingAboutfindingAboutSubCategoryAssociationfindingAboutSubCategoryMoodCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Finding Aboutfinding About Sub Category Associationfinding About Sub Category Mood Code</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.sdtm.FindingAbout#validateFindingAboutfindingAboutSubCategoryAssociationfindingAboutSubCategoryValue(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Finding Aboutfinding About Sub Category Associationfinding About Sub Category Value</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.sdtm.FindingAbout#validateFindingAboutfindingAboutSubCategoryAssociationTypeCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Finding Aboutfinding About Sub Category Association Type Code</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.sdtm.FindingAbout#validateFindingAboutfindingAboutSubCategoryAssociationFindingAboutSubCategory(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Finding Aboutfinding About Sub Category Association Finding About Sub Category</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.sdtm.FindingAbout#getGroupIdentifier() <em>Get Group Identifier</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.sdtm.FindingAbout#getNonPerformanceReason() <em>Get Non Performance Reason</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.sdtm.FindingAbout#getBaselineIndicator() <em>Get Baseline Indicator</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.sdtm.FindingAbout#getDataCollection() <em>Get Data Collection</em>}</li>
  * </ul>
  * </p>
@@ -115,7 +119,6 @@ public class FindingAboutOperations extends ClinicalStatementOperations
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.23.42')
    * @param findingAbout The receiving '<em><b>Finding About</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -125,6 +128,7 @@ public class FindingAboutOperations extends ClinicalStatementOperations
   
   public static  boolean validateFindingAboutTemplateId(FindingAbout findingAbout, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
+  	  
     if (VALIDATE_FINDING_ABOUT_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(SdtmPackage.Literals.FINDING_ABOUT);
@@ -149,6 +153,7 @@ public class FindingAboutOperations extends ClinicalStatementOperations
              org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "FindingAboutTemplateId", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(findingAbout, context) }),
              new Object [] { findingAbout }));
       }
+       
       return false;
     }
     return true;
@@ -180,7 +185,6 @@ public class FindingAboutOperations extends ClinicalStatementOperations
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.classCode=vocab::ActClassObservation::OBS
    * @param findingAbout The receiving '<em><b>Finding About</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -190,6 +194,7 @@ public class FindingAboutOperations extends ClinicalStatementOperations
   
   public static  boolean validateFindingAboutClassCode(FindingAbout findingAbout, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
+  	  
     if (VALIDATE_FINDING_ABOUT_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(SdtmPackage.Literals.FINDING_ABOUT);
@@ -214,6 +219,7 @@ public class FindingAboutOperations extends ClinicalStatementOperations
              org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "FindingAboutClassCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(findingAbout, context) }),
              new Object [] { findingAbout }));
       }
+       
       return false;
     }
     return true;
@@ -245,7 +251,6 @@ public class FindingAboutOperations extends ClinicalStatementOperations
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * (self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined())
    * @param findingAbout The receiving '<em><b>Finding About</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -255,6 +260,7 @@ public class FindingAboutOperations extends ClinicalStatementOperations
   
   public static  boolean validateFindingAboutCode(FindingAbout findingAbout, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
+  	  
     if (VALIDATE_FINDING_ABOUT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(SdtmPackage.Literals.FINDING_ABOUT);
@@ -279,6 +285,7 @@ public class FindingAboutOperations extends ClinicalStatementOperations
              org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "FindingAboutCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(findingAbout, context) }),
              new Object [] { findingAbout }));
       }
+       
       return false;
     }
     return true;
@@ -310,7 +317,6 @@ public class FindingAboutOperations extends ClinicalStatementOperations
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * (self.id->isEmpty() or self.id->exists(element | element.isNullFlavorUndefined())) implies (not self.id->isEmpty())
    * @param findingAbout The receiving '<em><b>Finding About</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -320,6 +326,7 @@ public class FindingAboutOperations extends ClinicalStatementOperations
   
   public static  boolean validateFindingAboutId(FindingAbout findingAbout, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
+  	  
     if (VALIDATE_FINDING_ABOUT_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(SdtmPackage.Literals.FINDING_ABOUT);
@@ -344,6 +351,7 @@ public class FindingAboutOperations extends ClinicalStatementOperations
              org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "FindingAboutId", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(findingAbout, context) }),
              new Object [] { findingAbout }));
       }
+       
       return false;
     }
     return true;
@@ -375,7 +383,6 @@ public class FindingAboutOperations extends ClinicalStatementOperations
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.moodCode=vocab::x_ActMoodDocumentObservation::EVN
    * @param findingAbout The receiving '<em><b>Finding About</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -385,6 +392,7 @@ public class FindingAboutOperations extends ClinicalStatementOperations
   
   public static  boolean validateFindingAboutMoodCode(FindingAbout findingAbout, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
+  	  
     if (VALIDATE_FINDING_ABOUT_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(SdtmPackage.Literals.FINDING_ABOUT);
@@ -409,6 +417,7 @@ public class FindingAboutOperations extends ClinicalStatementOperations
              org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "FindingAboutMoodCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(findingAbout, context) }),
              new Object [] { findingAbout }));
       }
+       
       return false;
     }
     return true;
@@ -440,7 +449,6 @@ public class FindingAboutOperations extends ClinicalStatementOperations
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * (self.statusCode.oclIsUndefined() or self.statusCode.isNullFlavorUndefined()) implies (not self.statusCode.oclIsUndefined())
    * @param findingAbout The receiving '<em><b>Finding About</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -450,6 +458,7 @@ public class FindingAboutOperations extends ClinicalStatementOperations
   
   public static  boolean validateFindingAboutStatusCode(FindingAbout findingAbout, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
+  	  
     if (VALIDATE_FINDING_ABOUT_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(SdtmPackage.Literals.FINDING_ABOUT);
@@ -474,6 +483,7 @@ public class FindingAboutOperations extends ClinicalStatementOperations
              org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "FindingAboutStatusCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(findingAbout, context) }),
              new Object [] { findingAbout }));
       }
+       
       return false;
     }
     return true;
@@ -505,7 +515,6 @@ public class FindingAboutOperations extends ClinicalStatementOperations
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * (self.targetSiteCode->isEmpty() or self.targetSiteCode->exists(element | element.isNullFlavorUndefined())) implies (not self.targetSiteCode->isEmpty())
    * @param findingAbout The receiving '<em><b>Finding About</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -515,6 +524,7 @@ public class FindingAboutOperations extends ClinicalStatementOperations
   
   public static  boolean validateFindingAboutTargetSiteCode(FindingAbout findingAbout, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
+  	  
     if (VALIDATE_FINDING_ABOUT_TARGET_SITE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(SdtmPackage.Literals.FINDING_ABOUT);
@@ -539,6 +549,7 @@ public class FindingAboutOperations extends ClinicalStatementOperations
              org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "FindingAboutTargetSiteCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(findingAbout, context) }),
              new Object [] { findingAbout }));
       }
+       
       return false;
     }
     return true;
@@ -570,7 +581,6 @@ public class FindingAboutOperations extends ClinicalStatementOperations
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * (self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (self.value->size() = 1)
    * @param findingAbout The receiving '<em><b>Finding About</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -580,6 +590,7 @@ public class FindingAboutOperations extends ClinicalStatementOperations
   
   public static  boolean validateFindingAboutValue(FindingAbout findingAbout, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
+  	  
     if (VALIDATE_FINDING_ABOUT_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(SdtmPackage.Literals.FINDING_ABOUT);
@@ -604,6 +615,73 @@ public class FindingAboutOperations extends ClinicalStatementOperations
              org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "FindingAboutValue", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(findingAbout, context) }),
              new Object [] { findingAbout }));
       }
+       
+      return false;
+    }
+    return true;
+  }
+
+  /**
+   * The cached OCL expression body for the '{@link #validateFindingAboutInterpretationCode(FindingAbout, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Finding About Interpretation Code</em>}' operation.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #validateFindingAboutInterpretationCode(FindingAbout, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+   * @generated
+   * @ordered
+   */
+  protected static final String VALIDATE_FINDING_ABOUT_INTERPRETATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.interpretationCode->isEmpty() or self.interpretationCode->exists(element | element.isNullFlavorUndefined())) implies (not self.interpretationCode->isEmpty())";
+
+  /**
+   * The cached OCL invariant for the '{@link #validateFindingAboutInterpretationCode(FindingAbout, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Finding About Interpretation Code</em>}' invariant operation.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #validateFindingAboutInterpretationCode(FindingAbout, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+   * @generated
+   * @ordered
+   */
+  
+  protected static Constraint VALIDATE_FINDING_ABOUT_INTERPRETATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * <!-- begin-model-doc -->
+   * @param findingAbout The receiving '<em><b>Finding About</b></em>' model object.
+   * @param diagnostics The chain of diagnostics to which problems are to be appended.
+   * @param context The cache of context-specific information.
+   * <!-- end-model-doc -->
+   * @generated
+   */
+  
+  public static  boolean validateFindingAboutInterpretationCode(FindingAbout findingAbout, DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+  	  
+    if (VALIDATE_FINDING_ABOUT_INTERPRETATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+      OCL.Helper helper = EOCL_ENV.createOCLHelper();
+      helper.setContext(SdtmPackage.Literals.FINDING_ABOUT);
+      try
+      {
+        VALIDATE_FINDING_ABOUT_INTERPRETATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_FINDING_ABOUT_INTERPRETATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+      }
+      catch (ParserException pe)
+      {
+        throw new UnsupportedOperationException(pe.getLocalizedMessage());
+      }
+    }
+    if (!EOCL_ENV.createQuery(VALIDATE_FINDING_ABOUT_INTERPRETATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(findingAbout))
+    {
+      if (diagnostics != null)
+      {
+        diagnostics.add
+          (new BasicDiagnostic
+            (Diagnostic.ERROR,
+             SdtmValidator.DIAGNOSTIC_SOURCE,
+             SdtmValidator.FINDING_ABOUT__FINDING_ABOUT_INTERPRETATION_CODE,
+             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "FindingAboutInterpretationCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(findingAbout, context) }),
+             new Object [] { findingAbout }));
+      }
+       
       return false;
     }
     return true;
@@ -635,7 +713,6 @@ public class FindingAboutOperations extends ClinicalStatementOperations
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.entryRelationship->one(entryRelationship : cda::EntryRelationship | not entryRelationship.act.oclIsUndefined() and entryRelationship.act.oclIsKindOf(sdtm::Group Identifier) and entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::COMP)
    * @param findingAbout The receiving '<em><b>Finding About</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -645,6 +722,7 @@ public class FindingAboutOperations extends ClinicalStatementOperations
   
   public static  boolean validateFindingAboutGroupIdentifier(FindingAbout findingAbout, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
+  	  
     if (VALIDATE_FINDING_ABOUT_GROUP_IDENTIFIER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(SdtmPackage.Literals.FINDING_ABOUT);
@@ -669,6 +747,7 @@ public class FindingAboutOperations extends ClinicalStatementOperations
              org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "FindingAboutGroupIdentifier", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(findingAbout, context) }),
              new Object [] { findingAbout }));
       }
+       
       return false;
     }
     return true;
@@ -700,7 +779,6 @@ public class FindingAboutOperations extends ClinicalStatementOperations
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.entryRelationship->one(entryRelationship : cda::EntryRelationship | not entryRelationship.oclIsUndefined() and entryRelationship.oclIsKindOf(cda::EntryRelationship))
    * @param findingAbout The receiving '<em><b>Finding About</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -710,6 +788,7 @@ public class FindingAboutOperations extends ClinicalStatementOperations
   
   public static  boolean validateFindingAboutFindingObservationObjectAssociation(FindingAbout findingAbout, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
+  	  
     if (VALIDATE_FINDING_ABOUT_FINDING_OBSERVATION_OBJECT_ASSOCIATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(SdtmPackage.Literals.FINDING_ABOUT);
@@ -734,6 +813,7 @@ public class FindingAboutOperations extends ClinicalStatementOperations
              org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "FindingAboutFindingObservationObjectAssociation", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(findingAbout, context) }),
              new Object [] { findingAbout }));
       }
+       
       return false;
     }
     return true;
@@ -765,7 +845,6 @@ public class FindingAboutOperations extends ClinicalStatementOperations
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.entryRelationship->one(entryRelationship : cda::EntryRelationship | not entryRelationship.oclIsUndefined() and entryRelationship.oclIsKindOf(cda::EntryRelationship))
    * @param findingAbout The receiving '<em><b>Finding About</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -775,6 +854,7 @@ public class FindingAboutOperations extends ClinicalStatementOperations
   
   public static  boolean validateFindingAboutFindingAboutCategoryAssociation(FindingAbout findingAbout, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
+  	  
     if (VALIDATE_FINDING_ABOUT_FINDING_ABOUT_CATEGORY_ASSOCIATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(SdtmPackage.Literals.FINDING_ABOUT);
@@ -799,6 +879,7 @@ public class FindingAboutOperations extends ClinicalStatementOperations
              org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "FindingAboutFindingAboutCategoryAssociation", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(findingAbout, context) }),
              new Object [] { findingAbout }));
       }
+       
       return false;
     }
     return true;
@@ -830,7 +911,6 @@ public class FindingAboutOperations extends ClinicalStatementOperations
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.entryRelationship->one(entryRelationship : cda::EntryRelationship | not entryRelationship.oclIsUndefined() and entryRelationship.oclIsKindOf(cda::EntryRelationship))
    * @param findingAbout The receiving '<em><b>Finding About</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -840,6 +920,7 @@ public class FindingAboutOperations extends ClinicalStatementOperations
   
   public static  boolean validateFindingAboutFindingAboutSubCategoryAssociation(FindingAbout findingAbout, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
+  	  
     if (VALIDATE_FINDING_ABOUT_FINDING_ABOUT_SUB_CATEGORY_ASSOCIATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(SdtmPackage.Literals.FINDING_ABOUT);
@@ -864,6 +945,7 @@ public class FindingAboutOperations extends ClinicalStatementOperations
              org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "FindingAboutFindingAboutSubCategoryAssociation", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(findingAbout, context) }),
              new Object [] { findingAbout }));
       }
+       
       return false;
     }
     return true;
@@ -895,7 +977,6 @@ public class FindingAboutOperations extends ClinicalStatementOperations
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.entryRelationship->one(entryRelationship : cda::EntryRelationship | not entryRelationship.observation.oclIsUndefined() and entryRelationship.observation.oclIsKindOf(sdtm::Non Performance Reason) and entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::COMP)
    * @param findingAbout The receiving '<em><b>Finding About</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -905,6 +986,7 @@ public class FindingAboutOperations extends ClinicalStatementOperations
   
   public static  boolean validateFindingAboutNonPerformanceReason(FindingAbout findingAbout, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
+  	  
     if (VALIDATE_FINDING_ABOUT_NON_PERFORMANCE_REASON__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(SdtmPackage.Literals.FINDING_ABOUT);
@@ -929,71 +1011,7 @@ public class FindingAboutOperations extends ClinicalStatementOperations
              org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "FindingAboutNonPerformanceReason", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(findingAbout, context) }),
              new Object [] { findingAbout }));
       }
-      return false;
-    }
-    return true;
-  }
-
-  /**
-   * The cached OCL expression body for the '{@link #validateFindingAboutBaselineIndicator(FindingAbout, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Finding About Baseline Indicator</em>}' operation.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @see #validateFindingAboutBaselineIndicator(FindingAbout, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-   * @generated
-   * @ordered
-   */
-  protected static final String VALIDATE_FINDING_ABOUT_BASELINE_INDICATOR__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entryRelationship->one(entryRelationship : cda::EntryRelationship | not entryRelationship.observation.oclIsUndefined() and entryRelationship.observation.oclIsKindOf(sdtm::Baseline Indicator) and entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::COMP)";
-
-  /**
-   * The cached OCL invariant for the '{@link #validateFindingAboutBaselineIndicator(FindingAbout, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Finding About Baseline Indicator</em>}' invariant operation.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @see #validateFindingAboutBaselineIndicator(FindingAbout, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-   * @generated
-   * @ordered
-   */
-  
-  protected static Constraint VALIDATE_FINDING_ABOUT_BASELINE_INDICATOR__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-  
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * <!-- begin-model-doc -->
-   * self.entryRelationship->one(entryRelationship : cda::EntryRelationship | not entryRelationship.observation.oclIsUndefined() and entryRelationship.observation.oclIsKindOf(sdtm::Baseline Indicator) and entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::COMP)
-   * @param findingAbout The receiving '<em><b>Finding About</b></em>' model object.
-   * @param diagnostics The chain of diagnostics to which problems are to be appended.
-   * @param context The cache of context-specific information.
-   * <!-- end-model-doc -->
-   * @generated
-   */
-  
-  public static  boolean validateFindingAboutBaselineIndicator(FindingAbout findingAbout, DiagnosticChain diagnostics, Map<Object, Object> context)
-  {
-    if (VALIDATE_FINDING_ABOUT_BASELINE_INDICATOR__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-      OCL.Helper helper = EOCL_ENV.createOCLHelper();
-      helper.setContext(SdtmPackage.Literals.FINDING_ABOUT);
-      try
-      {
-        VALIDATE_FINDING_ABOUT_BASELINE_INDICATOR__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_FINDING_ABOUT_BASELINE_INDICATOR__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-      }
-      catch (ParserException pe)
-      {
-        throw new UnsupportedOperationException(pe.getLocalizedMessage());
-      }
-    }
-    if (!EOCL_ENV.createQuery(VALIDATE_FINDING_ABOUT_BASELINE_INDICATOR__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(findingAbout))
-    {
-      if (diagnostics != null)
-      {
-        diagnostics.add
-          (new BasicDiagnostic
-            (Diagnostic.ERROR,
-             SdtmValidator.DIAGNOSTIC_SOURCE,
-             SdtmValidator.FINDING_ABOUT__FINDING_ABOUT_BASELINE_INDICATOR,
-             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "FindingAboutBaselineIndicator", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(findingAbout, context) }),
-             new Object [] { findingAbout }));
-      }
+       
       return false;
     }
     return true;
@@ -1025,7 +1043,6 @@ public class FindingAboutOperations extends ClinicalStatementOperations
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.entryRelationship->one(entryRelationship : cda::EntryRelationship | not entryRelationship.act.oclIsUndefined() and entryRelationship.act.oclIsKindOf(sdtm::Data Collection) and entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::COMP)
    * @param findingAbout The receiving '<em><b>Finding About</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -1035,6 +1052,7 @@ public class FindingAboutOperations extends ClinicalStatementOperations
   
   public static  boolean validateFindingAboutDataCollection(FindingAbout findingAbout, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
+  	  
     if (VALIDATE_FINDING_ABOUT_DATA_COLLECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(SdtmPackage.Literals.FINDING_ABOUT);
@@ -1059,6 +1077,7 @@ public class FindingAboutOperations extends ClinicalStatementOperations
              org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "FindingAboutDataCollection", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(findingAbout, context) }),
              new Object [] { findingAbout }));
       }
+       
       return false;
     }
     return true;
@@ -1090,7 +1109,6 @@ public class FindingAboutOperations extends ClinicalStatementOperations
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.entryRelationship->excluding(null).observation->excluding(null)->reject(classCode=vocab::ActClassObservation::OBS)
    * @param findingAbout The receiving '<em><b>Finding About</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -1100,6 +1118,7 @@ public class FindingAboutOperations extends ClinicalStatementOperations
   
   public static  boolean validateFindingAboutfindingObservationObjectAssociationfindingObservationObjectClassCode(FindingAbout findingAbout, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
+  	  
     if (VALIDATE_FINDING_ABOUTFINDING_OBSERVATION_OBJECT_ASSOCIATIONFINDING_OBSERVATION_OBJECT_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(SdtmPackage.Literals.FINDING_ABOUT);
@@ -1124,6 +1143,7 @@ public class FindingAboutOperations extends ClinicalStatementOperations
              org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "FindingAboutfindingObservationObjectAssociationfindingObservationObjectClassCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(findingAbout, context) }),
              new Object [] { findingAbout }));
       }
+       
       return false;
     }
     return true;
@@ -1155,7 +1175,6 @@ public class FindingAboutOperations extends ClinicalStatementOperations
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.entryRelationship->excluding(null).observation->excluding(null)->reject((code.oclIsUndefined() or code.isNullFlavorUndefined()) implies (not code.oclIsUndefined()))
    * @param findingAbout The receiving '<em><b>Finding About</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -1165,6 +1184,7 @@ public class FindingAboutOperations extends ClinicalStatementOperations
   
   public static  boolean validateFindingAboutfindingObservationObjectAssociationfindingObservationObjectCodeP(FindingAbout findingAbout, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
+  	  
     if (VALIDATE_FINDING_ABOUTFINDING_OBSERVATION_OBJECT_ASSOCIATIONFINDING_OBSERVATION_OBJECT_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(SdtmPackage.Literals.FINDING_ABOUT);
@@ -1189,6 +1209,7 @@ public class FindingAboutOperations extends ClinicalStatementOperations
              org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "FindingAboutfindingObservationObjectAssociationfindingObservationObjectCodeP", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(findingAbout, context) }),
              new Object [] { findingAbout }));
       }
+       
       return false;
     }
     return true;
@@ -1222,9 +1243,6 @@ public class FindingAboutOperations extends ClinicalStatementOperations
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.entryRelationship->excluding(null).observation->excluding(null)->reject((code.oclIsUndefined() or code.isNullFlavorUndefined()) implies (not code.oclIsUndefined() and code.oclIsKindOf(datatypes::CD) and 
-   * let value : datatypes::CD = code.oclAsType(datatypes::CD) in 
-   * value.codeSystem = '2.16.840.1.113883.3.26.1.1'))
    * @param findingAbout The receiving '<em><b>Finding About</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -1234,6 +1252,7 @@ public class FindingAboutOperations extends ClinicalStatementOperations
   
   public static  boolean validateFindingAboutfindingObservationObjectAssociationfindingObservationObjectCode(FindingAbout findingAbout, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
+  	  
     if (VALIDATE_FINDING_ABOUTFINDING_OBSERVATION_OBJECT_ASSOCIATIONFINDING_OBSERVATION_OBJECT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(SdtmPackage.Literals.FINDING_ABOUT);
@@ -1258,6 +1277,7 @@ public class FindingAboutOperations extends ClinicalStatementOperations
              org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "FindingAboutfindingObservationObjectAssociationfindingObservationObjectCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(findingAbout, context) }),
              new Object [] { findingAbout }));
       }
+       
       return false;
     }
     return true;
@@ -1289,7 +1309,6 @@ public class FindingAboutOperations extends ClinicalStatementOperations
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.entryRelationship->excluding(null).observation->excluding(null)->reject(moodCode=vocab::x_ActMoodDocumentObservation::DEF)
    * @param findingAbout The receiving '<em><b>Finding About</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -1299,6 +1318,7 @@ public class FindingAboutOperations extends ClinicalStatementOperations
   
   public static  boolean validateFindingAboutfindingObservationObjectAssociationfindingObservationObjectMoodCode(FindingAbout findingAbout, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
+  	  
     if (VALIDATE_FINDING_ABOUTFINDING_OBSERVATION_OBJECT_ASSOCIATIONFINDING_OBSERVATION_OBJECT_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(SdtmPackage.Literals.FINDING_ABOUT);
@@ -1323,6 +1343,7 @@ public class FindingAboutOperations extends ClinicalStatementOperations
              org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "FindingAboutfindingObservationObjectAssociationfindingObservationObjectMoodCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(findingAbout, context) }),
              new Object [] { findingAbout }));
       }
+       
       return false;
     }
     return true;
@@ -1354,7 +1375,6 @@ public class FindingAboutOperations extends ClinicalStatementOperations
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.entryRelationship->excluding(null).observation->excluding(null)->reject((value->isEmpty() or value->exists(element | element.isNullFlavorUndefined())) implies (value->forAll(element | element.oclIsTypeOf(datatypes::CE))))
    * @param findingAbout The receiving '<em><b>Finding About</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -1364,6 +1384,7 @@ public class FindingAboutOperations extends ClinicalStatementOperations
   
   public static  boolean validateFindingAboutfindingObservationObjectAssociationfindingObservationObjectValue(FindingAbout findingAbout, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
+  	  
     if (VALIDATE_FINDING_ABOUTFINDING_OBSERVATION_OBJECT_ASSOCIATIONFINDING_OBSERVATION_OBJECT_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(SdtmPackage.Literals.FINDING_ABOUT);
@@ -1388,6 +1409,7 @@ public class FindingAboutOperations extends ClinicalStatementOperations
              org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "FindingAboutfindingObservationObjectAssociationfindingObservationObjectValue", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(findingAbout, context) }),
              new Object [] { findingAbout }));
       }
+       
       return false;
     }
     return true;
@@ -1419,7 +1441,6 @@ public class FindingAboutOperations extends ClinicalStatementOperations
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.entryRelationship->excluding(null)->reject(typeCode=vocab::x_ActRelationshipEntryRelationship::REFR)
    * @param findingAbout The receiving '<em><b>Finding About</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -1429,6 +1450,7 @@ public class FindingAboutOperations extends ClinicalStatementOperations
   
   public static  boolean validateFindingAboutfindingObservationObjectAssociationTypeCode(FindingAbout findingAbout, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
+  	  
     if (VALIDATE_FINDING_ABOUTFINDING_OBSERVATION_OBJECT_ASSOCIATION_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(SdtmPackage.Literals.FINDING_ABOUT);
@@ -1453,6 +1475,7 @@ public class FindingAboutOperations extends ClinicalStatementOperations
              org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "FindingAboutfindingObservationObjectAssociationTypeCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(findingAbout, context) }),
              new Object [] { findingAbout }));
       }
+       
       return false;
     }
     return true;
@@ -1484,7 +1507,6 @@ public class FindingAboutOperations extends ClinicalStatementOperations
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.entryRelationship->excluding(null)->reject(observation->one(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(cda::Observation)))
    * @param findingAbout The receiving '<em><b>Finding About</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -1494,6 +1516,7 @@ public class FindingAboutOperations extends ClinicalStatementOperations
   
   public static  boolean validateFindingAboutfindingObservationObjectAssociationObservation(FindingAbout findingAbout, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
+  	  
     if (VALIDATE_FINDING_ABOUTFINDING_OBSERVATION_OBJECT_ASSOCIATION_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(SdtmPackage.Literals.FINDING_ABOUT);
@@ -1518,38 +1541,38 @@ public class FindingAboutOperations extends ClinicalStatementOperations
              org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "FindingAboutfindingObservationObjectAssociationObservation", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(findingAbout, context) }),
              new Object [] { findingAbout }));
       }
+       
       return false;
     }
     return true;
   }
 
   /**
-   * The cached OCL expression body for the '{@link #validateFindingAboutfindingObservationObjectAssociationfindingObservationObjectClassCodeFindingAboutfindingObservationObjectAssociationfindingObservationObjectClassCode1(FindingAbout, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Finding Aboutfinding Observation Object Associationfinding Observation Object Class Code Finding Aboutfinding Observation Object Associationfinding Observation Object Class Code1</em>}' operation.
+   * The cached OCL expression body for the '{@link #validateFindingAboutfindingAboutCategoryAssociationfindingAboutCategoryClassCode(FindingAbout, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Finding Aboutfinding About Category Associationfinding About Category Class Code</em>}' operation.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @see #validateFindingAboutfindingObservationObjectAssociationfindingObservationObjectClassCodeFindingAboutfindingObservationObjectAssociationfindingObservationObjectClassCode1(FindingAbout, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+   * @see #validateFindingAboutfindingAboutCategoryAssociationfindingAboutCategoryClassCode(FindingAbout, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
    * @generated
    * @ordered
    */
-  protected static final String VALIDATE_FINDING_ABOUTFINDING_OBSERVATION_OBJECT_ASSOCIATIONFINDING_OBSERVATION_OBJECT_CLASS_CODE_FINDING_ABOUTFINDING_OBSERVATION_OBJECT_ASSOCIATIONFINDING_OBSERVATION_OBJECT_CLASS_CODE1__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entryRelationship->excluding(null)->reject(observation->excluding(null)->reject(classCode=vocab::ActClassObservation::OBS))";
+  protected static final String VALIDATE_FINDING_ABOUTFINDING_ABOUT_CATEGORY_ASSOCIATIONFINDING_ABOUT_CATEGORY_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entryRelationship->excluding(null).observation->excluding(null)->reject(isDefined('classCode'))";
 
   /**
-   * The cached OCL invariant for the '{@link #validateFindingAboutfindingObservationObjectAssociationfindingObservationObjectClassCodeFindingAboutfindingObservationObjectAssociationfindingObservationObjectClassCode1(FindingAbout, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Finding Aboutfinding Observation Object Associationfinding Observation Object Class Code Finding Aboutfinding Observation Object Associationfinding Observation Object Class Code1</em>}' invariant operation.
+   * The cached OCL invariant for the '{@link #validateFindingAboutfindingAboutCategoryAssociationfindingAboutCategoryClassCode(FindingAbout, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Finding Aboutfinding About Category Associationfinding About Category Class Code</em>}' invariant operation.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @see #validateFindingAboutfindingObservationObjectAssociationfindingObservationObjectClassCodeFindingAboutfindingObservationObjectAssociationfindingObservationObjectClassCode1(FindingAbout, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+   * @see #validateFindingAboutfindingAboutCategoryAssociationfindingAboutCategoryClassCode(FindingAbout, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
    * @generated
    * @ordered
    */
   
-  protected static Constraint VALIDATE_FINDING_ABOUTFINDING_OBSERVATION_OBJECT_ASSOCIATIONFINDING_OBSERVATION_OBJECT_CLASS_CODE_FINDING_ABOUTFINDING_OBSERVATION_OBJECT_ASSOCIATIONFINDING_OBSERVATION_OBJECT_CLASS_CODE1__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-  
+  protected static Constraint VALIDATE_FINDING_ABOUTFINDING_ABOUT_CATEGORY_ASSOCIATIONFINDING_ABOUT_CATEGORY_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+
 
   /**
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.entryRelationship->excluding(null)->reject(observation->excluding(null)->reject(classCode=vocab::ActClassObservation::OBS))
    * @param findingAbout The receiving '<em><b>Finding About</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -1557,21 +1580,22 @@ public class FindingAboutOperations extends ClinicalStatementOperations
    * @generated
    */
   
-  public static  boolean validateFindingAboutfindingObservationObjectAssociationfindingObservationObjectClassCodeFindingAboutfindingObservationObjectAssociationfindingObservationObjectClassCode1(FindingAbout findingAbout, DiagnosticChain diagnostics, Map<Object, Object> context)
+  public static  boolean validateFindingAboutfindingAboutCategoryAssociationfindingAboutCategoryClassCode(FindingAbout findingAbout, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
-    if (VALIDATE_FINDING_ABOUTFINDING_OBSERVATION_OBJECT_ASSOCIATIONFINDING_OBSERVATION_OBJECT_CLASS_CODE_FINDING_ABOUTFINDING_OBSERVATION_OBJECT_ASSOCIATIONFINDING_OBSERVATION_OBJECT_CLASS_CODE1__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+  	  
+    if (VALIDATE_FINDING_ABOUTFINDING_ABOUT_CATEGORY_ASSOCIATIONFINDING_ABOUT_CATEGORY_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(SdtmPackage.Literals.FINDING_ABOUT);
       try
       {
-        VALIDATE_FINDING_ABOUTFINDING_OBSERVATION_OBJECT_ASSOCIATIONFINDING_OBSERVATION_OBJECT_CLASS_CODE_FINDING_ABOUTFINDING_OBSERVATION_OBJECT_ASSOCIATIONFINDING_OBSERVATION_OBJECT_CLASS_CODE1__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_FINDING_ABOUTFINDING_OBSERVATION_OBJECT_ASSOCIATIONFINDING_OBSERVATION_OBJECT_CLASS_CODE_FINDING_ABOUTFINDING_OBSERVATION_OBJECT_ASSOCIATIONFINDING_OBSERVATION_OBJECT_CLASS_CODE1__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+        VALIDATE_FINDING_ABOUTFINDING_ABOUT_CATEGORY_ASSOCIATIONFINDING_ABOUT_CATEGORY_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_FINDING_ABOUTFINDING_ABOUT_CATEGORY_ASSOCIATIONFINDING_ABOUT_CATEGORY_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
       }
       catch (ParserException pe)
       {
         throw new UnsupportedOperationException(pe.getLocalizedMessage());
       }
     }
-    if (!EOCL_ENV.createQuery(VALIDATE_FINDING_ABOUTFINDING_OBSERVATION_OBJECT_ASSOCIATIONFINDING_OBSERVATION_OBJECT_CLASS_CODE_FINDING_ABOUTFINDING_OBSERVATION_OBJECT_ASSOCIATIONFINDING_OBSERVATION_OBJECT_CLASS_CODE1__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(findingAbout))
+    if (!EOCL_ENV.createQuery(VALIDATE_FINDING_ABOUTFINDING_ABOUT_CATEGORY_ASSOCIATIONFINDING_ABOUT_CATEGORY_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(findingAbout))
     {
       if (diagnostics != null)
       {
@@ -1579,42 +1603,42 @@ public class FindingAboutOperations extends ClinicalStatementOperations
           (new BasicDiagnostic
             (Diagnostic.ERROR,
              SdtmValidator.DIAGNOSTIC_SOURCE,
-             SdtmValidator.FINDING_ABOUT__FINDING_ABOUTFINDING_OBSERVATION_OBJECT_ASSOCIATIONFINDING_OBSERVATION_OBJECT_CLASS_CODE_FINDING_ABOUTFINDING_OBSERVATION_OBJECT_ASSOCIATIONFINDING_OBSERVATION_OBJECT_CLASS_CODE1,
-             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "FindingAboutfindingObservationObjectAssociationfindingObservationObjectClassCodeFindingAboutfindingObservationObjectAssociationfindingObservationObjectClassCode1", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(findingAbout, context) }),
+             SdtmValidator.FINDING_ABOUT__FINDING_ABOUTFINDING_ABOUT_CATEGORY_ASSOCIATIONFINDING_ABOUT_CATEGORY_CLASS_CODE,
+             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "FindingAboutfindingAboutCategoryAssociationfindingAboutCategoryClassCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(findingAbout, context) }),
              new Object [] { findingAbout }));
       }
+       
       return false;
     }
     return true;
   }
 
   /**
-   * The cached OCL expression body for the '{@link #validateFindingAboutfindingObservationObjectAssociationfindingObservationObjectCodePFindingAboutfindingObservationObjectAssociationfindingObservationObjectCodeP1(FindingAbout, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Finding Aboutfinding Observation Object Associationfinding Observation Object Code PFinding Aboutfinding Observation Object Associationfinding Observation Object Code P1</em>}' operation.
+   * The cached OCL expression body for the '{@link #validateFindingAboutfindingAboutCategoryAssociationfindingAboutCategoryCode(FindingAbout, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Finding Aboutfinding About Category Associationfinding About Category Code</em>}' operation.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @see #validateFindingAboutfindingObservationObjectAssociationfindingObservationObjectCodePFindingAboutfindingObservationObjectAssociationfindingObservationObjectCodeP1(FindingAbout, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+   * @see #validateFindingAboutfindingAboutCategoryAssociationfindingAboutCategoryCode(FindingAbout, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
    * @generated
    * @ordered
    */
-  protected static final String VALIDATE_FINDING_ABOUTFINDING_OBSERVATION_OBJECT_ASSOCIATIONFINDING_OBSERVATION_OBJECT_CODE_PFINDING_ABOUTFINDING_OBSERVATION_OBJECT_ASSOCIATIONFINDING_OBSERVATION_OBJECT_CODE_P1__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entryRelationship->excluding(null)->reject(observation->excluding(null)->reject((code.oclIsUndefined() or code.isNullFlavorUndefined()) implies (not code.oclIsUndefined())))";
+  protected static final String VALIDATE_FINDING_ABOUTFINDING_ABOUT_CATEGORY_ASSOCIATIONFINDING_ABOUT_CATEGORY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entryRelationship->excluding(null).observation->excluding(null)->reject((code.oclIsUndefined() or code.isNullFlavorUndefined()) implies (not code.oclIsUndefined()))";
 
   /**
-   * The cached OCL invariant for the '{@link #validateFindingAboutfindingObservationObjectAssociationfindingObservationObjectCodePFindingAboutfindingObservationObjectAssociationfindingObservationObjectCodeP1(FindingAbout, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Finding Aboutfinding Observation Object Associationfinding Observation Object Code PFinding Aboutfinding Observation Object Associationfinding Observation Object Code P1</em>}' invariant operation.
+   * The cached OCL invariant for the '{@link #validateFindingAboutfindingAboutCategoryAssociationfindingAboutCategoryCode(FindingAbout, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Finding Aboutfinding About Category Associationfinding About Category Code</em>}' invariant operation.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @see #validateFindingAboutfindingObservationObjectAssociationfindingObservationObjectCodePFindingAboutfindingObservationObjectAssociationfindingObservationObjectCodeP1(FindingAbout, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+   * @see #validateFindingAboutfindingAboutCategoryAssociationfindingAboutCategoryCode(FindingAbout, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
    * @generated
    * @ordered
    */
   
-  protected static Constraint VALIDATE_FINDING_ABOUTFINDING_OBSERVATION_OBJECT_ASSOCIATIONFINDING_OBSERVATION_OBJECT_CODE_PFINDING_ABOUTFINDING_OBSERVATION_OBJECT_ASSOCIATIONFINDING_OBSERVATION_OBJECT_CODE_P1__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-  
+  protected static Constraint VALIDATE_FINDING_ABOUTFINDING_ABOUT_CATEGORY_ASSOCIATIONFINDING_ABOUT_CATEGORY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+
 
   /**
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.entryRelationship->excluding(null)->reject(observation->excluding(null)->reject((code.oclIsUndefined() or code.isNullFlavorUndefined()) implies (not code.oclIsUndefined())))
    * @param findingAbout The receiving '<em><b>Finding About</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -1622,21 +1646,22 @@ public class FindingAboutOperations extends ClinicalStatementOperations
    * @generated
    */
   
-  public static  boolean validateFindingAboutfindingObservationObjectAssociationfindingObservationObjectCodePFindingAboutfindingObservationObjectAssociationfindingObservationObjectCodeP1(FindingAbout findingAbout, DiagnosticChain diagnostics, Map<Object, Object> context)
+  public static  boolean validateFindingAboutfindingAboutCategoryAssociationfindingAboutCategoryCode(FindingAbout findingAbout, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
-    if (VALIDATE_FINDING_ABOUTFINDING_OBSERVATION_OBJECT_ASSOCIATIONFINDING_OBSERVATION_OBJECT_CODE_PFINDING_ABOUTFINDING_OBSERVATION_OBJECT_ASSOCIATIONFINDING_OBSERVATION_OBJECT_CODE_P1__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+  	  
+    if (VALIDATE_FINDING_ABOUTFINDING_ABOUT_CATEGORY_ASSOCIATIONFINDING_ABOUT_CATEGORY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(SdtmPackage.Literals.FINDING_ABOUT);
       try
       {
-        VALIDATE_FINDING_ABOUTFINDING_OBSERVATION_OBJECT_ASSOCIATIONFINDING_OBSERVATION_OBJECT_CODE_PFINDING_ABOUTFINDING_OBSERVATION_OBJECT_ASSOCIATIONFINDING_OBSERVATION_OBJECT_CODE_P1__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_FINDING_ABOUTFINDING_OBSERVATION_OBJECT_ASSOCIATIONFINDING_OBSERVATION_OBJECT_CODE_PFINDING_ABOUTFINDING_OBSERVATION_OBJECT_ASSOCIATIONFINDING_OBSERVATION_OBJECT_CODE_P1__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+        VALIDATE_FINDING_ABOUTFINDING_ABOUT_CATEGORY_ASSOCIATIONFINDING_ABOUT_CATEGORY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_FINDING_ABOUTFINDING_ABOUT_CATEGORY_ASSOCIATIONFINDING_ABOUT_CATEGORY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
       }
       catch (ParserException pe)
       {
         throw new UnsupportedOperationException(pe.getLocalizedMessage());
       }
     }
-    if (!EOCL_ENV.createQuery(VALIDATE_FINDING_ABOUTFINDING_OBSERVATION_OBJECT_ASSOCIATIONFINDING_OBSERVATION_OBJECT_CODE_PFINDING_ABOUTFINDING_OBSERVATION_OBJECT_ASSOCIATIONFINDING_OBSERVATION_OBJECT_CODE_P1__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(findingAbout))
+    if (!EOCL_ENV.createQuery(VALIDATE_FINDING_ABOUTFINDING_ABOUT_CATEGORY_ASSOCIATIONFINDING_ABOUT_CATEGORY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(findingAbout))
     {
       if (diagnostics != null)
       {
@@ -1644,46 +1669,42 @@ public class FindingAboutOperations extends ClinicalStatementOperations
           (new BasicDiagnostic
             (Diagnostic.ERROR,
              SdtmValidator.DIAGNOSTIC_SOURCE,
-             SdtmValidator.FINDING_ABOUT__FINDING_ABOUTFINDING_OBSERVATION_OBJECT_ASSOCIATIONFINDING_OBSERVATION_OBJECT_CODE_PFINDING_ABOUTFINDING_OBSERVATION_OBJECT_ASSOCIATIONFINDING_OBSERVATION_OBJECT_CODE_P1,
-             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "FindingAboutfindingObservationObjectAssociationfindingObservationObjectCodePFindingAboutfindingObservationObjectAssociationfindingObservationObjectCodeP1", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(findingAbout, context) }),
+             SdtmValidator.FINDING_ABOUT__FINDING_ABOUTFINDING_ABOUT_CATEGORY_ASSOCIATIONFINDING_ABOUT_CATEGORY_CODE,
+             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "FindingAboutfindingAboutCategoryAssociationfindingAboutCategoryCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(findingAbout, context) }),
              new Object [] { findingAbout }));
       }
+       
       return false;
     }
     return true;
   }
 
   /**
-   * The cached OCL expression body for the '{@link #validateFindingAboutfindingObservationObjectAssociationfindingObservationObjectCodeFindingAboutfindingObservationObjectAssociationfindingObservationObjectCode1(FindingAbout, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Finding Aboutfinding Observation Object Associationfinding Observation Object Code Finding Aboutfinding Observation Object Associationfinding Observation Object Code1</em>}' operation.
+   * The cached OCL expression body for the '{@link #validateFindingAboutfindingAboutCategoryAssociationfindingAboutCategoryMoodCode(FindingAbout, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Finding Aboutfinding About Category Associationfinding About Category Mood Code</em>}' operation.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @see #validateFindingAboutfindingObservationObjectAssociationfindingObservationObjectCodeFindingAboutfindingObservationObjectAssociationfindingObservationObjectCode1(FindingAbout, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+   * @see #validateFindingAboutfindingAboutCategoryAssociationfindingAboutCategoryMoodCode(FindingAbout, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
    * @generated
    * @ordered
    */
-  protected static final String VALIDATE_FINDING_ABOUTFINDING_OBSERVATION_OBJECT_ASSOCIATIONFINDING_OBSERVATION_OBJECT_CODE_FINDING_ABOUTFINDING_OBSERVATION_OBJECT_ASSOCIATIONFINDING_OBSERVATION_OBJECT_CODE1__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entryRelationship->excluding(null)->reject(observation->excluding(null)->reject((code.oclIsUndefined() or code.isNullFlavorUndefined()) implies (not code.oclIsUndefined() and code.oclIsKindOf(datatypes::CD) and "+
-"let value : datatypes::CD = code.oclAsType(datatypes::CD) in "+
-"value.codeSystem = '2.16.840.1.113883.3.26.1.1')))";
+  protected static final String VALIDATE_FINDING_ABOUTFINDING_ABOUT_CATEGORY_ASSOCIATIONFINDING_ABOUT_CATEGORY_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entryRelationship->excluding(null).observation->excluding(null)->reject(isDefined('moodCode'))";
 
   /**
-   * The cached OCL invariant for the '{@link #validateFindingAboutfindingObservationObjectAssociationfindingObservationObjectCodeFindingAboutfindingObservationObjectAssociationfindingObservationObjectCode1(FindingAbout, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Finding Aboutfinding Observation Object Associationfinding Observation Object Code Finding Aboutfinding Observation Object Associationfinding Observation Object Code1</em>}' invariant operation.
+   * The cached OCL invariant for the '{@link #validateFindingAboutfindingAboutCategoryAssociationfindingAboutCategoryMoodCode(FindingAbout, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Finding Aboutfinding About Category Associationfinding About Category Mood Code</em>}' invariant operation.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @see #validateFindingAboutfindingObservationObjectAssociationfindingObservationObjectCodeFindingAboutfindingObservationObjectAssociationfindingObservationObjectCode1(FindingAbout, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+   * @see #validateFindingAboutfindingAboutCategoryAssociationfindingAboutCategoryMoodCode(FindingAbout, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
    * @generated
    * @ordered
    */
   
-  protected static Constraint VALIDATE_FINDING_ABOUTFINDING_OBSERVATION_OBJECT_ASSOCIATIONFINDING_OBSERVATION_OBJECT_CODE_FINDING_ABOUTFINDING_OBSERVATION_OBJECT_ASSOCIATIONFINDING_OBSERVATION_OBJECT_CODE1__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-  
+  protected static Constraint VALIDATE_FINDING_ABOUTFINDING_ABOUT_CATEGORY_ASSOCIATIONFINDING_ABOUT_CATEGORY_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+
 
   /**
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.entryRelationship->excluding(null)->reject(observation->excluding(null)->reject((code.oclIsUndefined() or code.isNullFlavorUndefined()) implies (not code.oclIsUndefined() and code.oclIsKindOf(datatypes::CD) and 
-   * let value : datatypes::CD = code.oclAsType(datatypes::CD) in 
-   * value.codeSystem = '2.16.840.1.113883.3.26.1.1')))
    * @param findingAbout The receiving '<em><b>Finding About</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -1691,21 +1712,22 @@ public class FindingAboutOperations extends ClinicalStatementOperations
    * @generated
    */
   
-  public static  boolean validateFindingAboutfindingObservationObjectAssociationfindingObservationObjectCodeFindingAboutfindingObservationObjectAssociationfindingObservationObjectCode1(FindingAbout findingAbout, DiagnosticChain diagnostics, Map<Object, Object> context)
+  public static  boolean validateFindingAboutfindingAboutCategoryAssociationfindingAboutCategoryMoodCode(FindingAbout findingAbout, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
-    if (VALIDATE_FINDING_ABOUTFINDING_OBSERVATION_OBJECT_ASSOCIATIONFINDING_OBSERVATION_OBJECT_CODE_FINDING_ABOUTFINDING_OBSERVATION_OBJECT_ASSOCIATIONFINDING_OBSERVATION_OBJECT_CODE1__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+  	  
+    if (VALIDATE_FINDING_ABOUTFINDING_ABOUT_CATEGORY_ASSOCIATIONFINDING_ABOUT_CATEGORY_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(SdtmPackage.Literals.FINDING_ABOUT);
       try
       {
-        VALIDATE_FINDING_ABOUTFINDING_OBSERVATION_OBJECT_ASSOCIATIONFINDING_OBSERVATION_OBJECT_CODE_FINDING_ABOUTFINDING_OBSERVATION_OBJECT_ASSOCIATIONFINDING_OBSERVATION_OBJECT_CODE1__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_FINDING_ABOUTFINDING_OBSERVATION_OBJECT_ASSOCIATIONFINDING_OBSERVATION_OBJECT_CODE_FINDING_ABOUTFINDING_OBSERVATION_OBJECT_ASSOCIATIONFINDING_OBSERVATION_OBJECT_CODE1__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+        VALIDATE_FINDING_ABOUTFINDING_ABOUT_CATEGORY_ASSOCIATIONFINDING_ABOUT_CATEGORY_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_FINDING_ABOUTFINDING_ABOUT_CATEGORY_ASSOCIATIONFINDING_ABOUT_CATEGORY_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
       }
       catch (ParserException pe)
       {
         throw new UnsupportedOperationException(pe.getLocalizedMessage());
       }
     }
-    if (!EOCL_ENV.createQuery(VALIDATE_FINDING_ABOUTFINDING_OBSERVATION_OBJECT_ASSOCIATIONFINDING_OBSERVATION_OBJECT_CODE_FINDING_ABOUTFINDING_OBSERVATION_OBJECT_ASSOCIATIONFINDING_OBSERVATION_OBJECT_CODE1__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(findingAbout))
+    if (!EOCL_ENV.createQuery(VALIDATE_FINDING_ABOUTFINDING_ABOUT_CATEGORY_ASSOCIATIONFINDING_ABOUT_CATEGORY_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(findingAbout))
     {
       if (diagnostics != null)
       {
@@ -1713,42 +1735,42 @@ public class FindingAboutOperations extends ClinicalStatementOperations
           (new BasicDiagnostic
             (Diagnostic.ERROR,
              SdtmValidator.DIAGNOSTIC_SOURCE,
-             SdtmValidator.FINDING_ABOUT__FINDING_ABOUTFINDING_OBSERVATION_OBJECT_ASSOCIATIONFINDING_OBSERVATION_OBJECT_CODE_FINDING_ABOUTFINDING_OBSERVATION_OBJECT_ASSOCIATIONFINDING_OBSERVATION_OBJECT_CODE1,
-             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "FindingAboutfindingObservationObjectAssociationfindingObservationObjectCodeFindingAboutfindingObservationObjectAssociationfindingObservationObjectCode1", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(findingAbout, context) }),
+             SdtmValidator.FINDING_ABOUT__FINDING_ABOUTFINDING_ABOUT_CATEGORY_ASSOCIATIONFINDING_ABOUT_CATEGORY_MOOD_CODE,
+             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "FindingAboutfindingAboutCategoryAssociationfindingAboutCategoryMoodCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(findingAbout, context) }),
              new Object [] { findingAbout }));
       }
+       
       return false;
     }
     return true;
   }
 
   /**
-   * The cached OCL expression body for the '{@link #validateFindingAboutfindingObservationObjectAssociationfindingObservationObjectMoodCodeFindingAboutfindingObservationObjectAssociationfindingObservationObjectMoodCode1(FindingAbout, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Finding Aboutfinding Observation Object Associationfinding Observation Object Mood Code Finding Aboutfinding Observation Object Associationfinding Observation Object Mood Code1</em>}' operation.
+   * The cached OCL expression body for the '{@link #validateFindingAboutfindingAboutCategoryAssociationfindingAboutCategoryValue(FindingAbout, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Finding Aboutfinding About Category Associationfinding About Category Value</em>}' operation.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @see #validateFindingAboutfindingObservationObjectAssociationfindingObservationObjectMoodCodeFindingAboutfindingObservationObjectAssociationfindingObservationObjectMoodCode1(FindingAbout, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+   * @see #validateFindingAboutfindingAboutCategoryAssociationfindingAboutCategoryValue(FindingAbout, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
    * @generated
    * @ordered
    */
-  protected static final String VALIDATE_FINDING_ABOUTFINDING_OBSERVATION_OBJECT_ASSOCIATIONFINDING_OBSERVATION_OBJECT_MOOD_CODE_FINDING_ABOUTFINDING_OBSERVATION_OBJECT_ASSOCIATIONFINDING_OBSERVATION_OBJECT_MOOD_CODE1__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entryRelationship->excluding(null)->reject(observation->excluding(null)->reject(moodCode=vocab::x_ActMoodDocumentObservation::DEF))";
+  protected static final String VALIDATE_FINDING_ABOUTFINDING_ABOUT_CATEGORY_ASSOCIATIONFINDING_ABOUT_CATEGORY_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entryRelationship->excluding(null).observation->excluding(null)->reject((value->isEmpty() or value->exists(element | element.isNullFlavorUndefined())) implies (value->size() = 1 and value->forAll(element | element.oclIsTypeOf(datatypes::CE))))";
 
   /**
-   * The cached OCL invariant for the '{@link #validateFindingAboutfindingObservationObjectAssociationfindingObservationObjectMoodCodeFindingAboutfindingObservationObjectAssociationfindingObservationObjectMoodCode1(FindingAbout, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Finding Aboutfinding Observation Object Associationfinding Observation Object Mood Code Finding Aboutfinding Observation Object Associationfinding Observation Object Mood Code1</em>}' invariant operation.
+   * The cached OCL invariant for the '{@link #validateFindingAboutfindingAboutCategoryAssociationfindingAboutCategoryValue(FindingAbout, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Finding Aboutfinding About Category Associationfinding About Category Value</em>}' invariant operation.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @see #validateFindingAboutfindingObservationObjectAssociationfindingObservationObjectMoodCodeFindingAboutfindingObservationObjectAssociationfindingObservationObjectMoodCode1(FindingAbout, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+   * @see #validateFindingAboutfindingAboutCategoryAssociationfindingAboutCategoryValue(FindingAbout, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
    * @generated
    * @ordered
    */
   
-  protected static Constraint VALIDATE_FINDING_ABOUTFINDING_OBSERVATION_OBJECT_ASSOCIATIONFINDING_OBSERVATION_OBJECT_MOOD_CODE_FINDING_ABOUTFINDING_OBSERVATION_OBJECT_ASSOCIATIONFINDING_OBSERVATION_OBJECT_MOOD_CODE1__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-  
+  protected static Constraint VALIDATE_FINDING_ABOUTFINDING_ABOUT_CATEGORY_ASSOCIATIONFINDING_ABOUT_CATEGORY_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+
 
   /**
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.entryRelationship->excluding(null)->reject(observation->excluding(null)->reject(moodCode=vocab::x_ActMoodDocumentObservation::DEF))
    * @param findingAbout The receiving '<em><b>Finding About</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -1756,21 +1778,22 @@ public class FindingAboutOperations extends ClinicalStatementOperations
    * @generated
    */
   
-  public static  boolean validateFindingAboutfindingObservationObjectAssociationfindingObservationObjectMoodCodeFindingAboutfindingObservationObjectAssociationfindingObservationObjectMoodCode1(FindingAbout findingAbout, DiagnosticChain diagnostics, Map<Object, Object> context)
+  public static  boolean validateFindingAboutfindingAboutCategoryAssociationfindingAboutCategoryValue(FindingAbout findingAbout, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
-    if (VALIDATE_FINDING_ABOUTFINDING_OBSERVATION_OBJECT_ASSOCIATIONFINDING_OBSERVATION_OBJECT_MOOD_CODE_FINDING_ABOUTFINDING_OBSERVATION_OBJECT_ASSOCIATIONFINDING_OBSERVATION_OBJECT_MOOD_CODE1__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+  	  
+    if (VALIDATE_FINDING_ABOUTFINDING_ABOUT_CATEGORY_ASSOCIATIONFINDING_ABOUT_CATEGORY_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(SdtmPackage.Literals.FINDING_ABOUT);
       try
       {
-        VALIDATE_FINDING_ABOUTFINDING_OBSERVATION_OBJECT_ASSOCIATIONFINDING_OBSERVATION_OBJECT_MOOD_CODE_FINDING_ABOUTFINDING_OBSERVATION_OBJECT_ASSOCIATIONFINDING_OBSERVATION_OBJECT_MOOD_CODE1__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_FINDING_ABOUTFINDING_OBSERVATION_OBJECT_ASSOCIATIONFINDING_OBSERVATION_OBJECT_MOOD_CODE_FINDING_ABOUTFINDING_OBSERVATION_OBJECT_ASSOCIATIONFINDING_OBSERVATION_OBJECT_MOOD_CODE1__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+        VALIDATE_FINDING_ABOUTFINDING_ABOUT_CATEGORY_ASSOCIATIONFINDING_ABOUT_CATEGORY_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_FINDING_ABOUTFINDING_ABOUT_CATEGORY_ASSOCIATIONFINDING_ABOUT_CATEGORY_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
       }
       catch (ParserException pe)
       {
         throw new UnsupportedOperationException(pe.getLocalizedMessage());
       }
     }
-    if (!EOCL_ENV.createQuery(VALIDATE_FINDING_ABOUTFINDING_OBSERVATION_OBJECT_ASSOCIATIONFINDING_OBSERVATION_OBJECT_MOOD_CODE_FINDING_ABOUTFINDING_OBSERVATION_OBJECT_ASSOCIATIONFINDING_OBSERVATION_OBJECT_MOOD_CODE1__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(findingAbout))
+    if (!EOCL_ENV.createQuery(VALIDATE_FINDING_ABOUTFINDING_ABOUT_CATEGORY_ASSOCIATIONFINDING_ABOUT_CATEGORY_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(findingAbout))
     {
       if (diagnostics != null)
       {
@@ -1778,75 +1801,11 @@ public class FindingAboutOperations extends ClinicalStatementOperations
           (new BasicDiagnostic
             (Diagnostic.ERROR,
              SdtmValidator.DIAGNOSTIC_SOURCE,
-             SdtmValidator.FINDING_ABOUT__FINDING_ABOUTFINDING_OBSERVATION_OBJECT_ASSOCIATIONFINDING_OBSERVATION_OBJECT_MOOD_CODE_FINDING_ABOUTFINDING_OBSERVATION_OBJECT_ASSOCIATIONFINDING_OBSERVATION_OBJECT_MOOD_CODE1,
-             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "FindingAboutfindingObservationObjectAssociationfindingObservationObjectMoodCodeFindingAboutfindingObservationObjectAssociationfindingObservationObjectMoodCode1", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(findingAbout, context) }),
+             SdtmValidator.FINDING_ABOUT__FINDING_ABOUTFINDING_ABOUT_CATEGORY_ASSOCIATIONFINDING_ABOUT_CATEGORY_VALUE,
+             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "FindingAboutfindingAboutCategoryAssociationfindingAboutCategoryValue", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(findingAbout, context) }),
              new Object [] { findingAbout }));
       }
-      return false;
-    }
-    return true;
-  }
-
-  /**
-   * The cached OCL expression body for the '{@link #validateFindingAboutfindingObservationObjectAssociationfindingObservationObjectValueFindingAboutfindingObservationObjectAssociationfindingObservationObjectValue1(FindingAbout, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Finding Aboutfinding Observation Object Associationfinding Observation Object Value Finding Aboutfinding Observation Object Associationfinding Observation Object Value1</em>}' operation.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @see #validateFindingAboutfindingObservationObjectAssociationfindingObservationObjectValueFindingAboutfindingObservationObjectAssociationfindingObservationObjectValue1(FindingAbout, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-   * @generated
-   * @ordered
-   */
-  protected static final String VALIDATE_FINDING_ABOUTFINDING_OBSERVATION_OBJECT_ASSOCIATIONFINDING_OBSERVATION_OBJECT_VALUE_FINDING_ABOUTFINDING_OBSERVATION_OBJECT_ASSOCIATIONFINDING_OBSERVATION_OBJECT_VALUE1__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entryRelationship->excluding(null)->reject(observation->excluding(null)->reject((value->isEmpty() or value->exists(element | element.isNullFlavorUndefined())) implies (value->forAll(element | element.oclIsTypeOf(datatypes::CE)))))";
-
-  /**
-   * The cached OCL invariant for the '{@link #validateFindingAboutfindingObservationObjectAssociationfindingObservationObjectValueFindingAboutfindingObservationObjectAssociationfindingObservationObjectValue1(FindingAbout, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Finding Aboutfinding Observation Object Associationfinding Observation Object Value Finding Aboutfinding Observation Object Associationfinding Observation Object Value1</em>}' invariant operation.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @see #validateFindingAboutfindingObservationObjectAssociationfindingObservationObjectValueFindingAboutfindingObservationObjectAssociationfindingObservationObjectValue1(FindingAbout, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-   * @generated
-   * @ordered
-   */
-  
-  protected static Constraint VALIDATE_FINDING_ABOUTFINDING_OBSERVATION_OBJECT_ASSOCIATIONFINDING_OBSERVATION_OBJECT_VALUE_FINDING_ABOUTFINDING_OBSERVATION_OBJECT_ASSOCIATIONFINDING_OBSERVATION_OBJECT_VALUE1__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-  
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * <!-- begin-model-doc -->
-   * self.entryRelationship->excluding(null)->reject(observation->excluding(null)->reject((value->isEmpty() or value->exists(element | element.isNullFlavorUndefined())) implies (value->forAll(element | element.oclIsTypeOf(datatypes::CE)))))
-   * @param findingAbout The receiving '<em><b>Finding About</b></em>' model object.
-   * @param diagnostics The chain of diagnostics to which problems are to be appended.
-   * @param context The cache of context-specific information.
-   * <!-- end-model-doc -->
-   * @generated
-   */
-  
-  public static  boolean validateFindingAboutfindingObservationObjectAssociationfindingObservationObjectValueFindingAboutfindingObservationObjectAssociationfindingObservationObjectValue1(FindingAbout findingAbout, DiagnosticChain diagnostics, Map<Object, Object> context)
-  {
-    if (VALIDATE_FINDING_ABOUTFINDING_OBSERVATION_OBJECT_ASSOCIATIONFINDING_OBSERVATION_OBJECT_VALUE_FINDING_ABOUTFINDING_OBSERVATION_OBJECT_ASSOCIATIONFINDING_OBSERVATION_OBJECT_VALUE1__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-      OCL.Helper helper = EOCL_ENV.createOCLHelper();
-      helper.setContext(SdtmPackage.Literals.FINDING_ABOUT);
-      try
-      {
-        VALIDATE_FINDING_ABOUTFINDING_OBSERVATION_OBJECT_ASSOCIATIONFINDING_OBSERVATION_OBJECT_VALUE_FINDING_ABOUTFINDING_OBSERVATION_OBJECT_ASSOCIATIONFINDING_OBSERVATION_OBJECT_VALUE1__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_FINDING_ABOUTFINDING_OBSERVATION_OBJECT_ASSOCIATIONFINDING_OBSERVATION_OBJECT_VALUE_FINDING_ABOUTFINDING_OBSERVATION_OBJECT_ASSOCIATIONFINDING_OBSERVATION_OBJECT_VALUE1__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-      }
-      catch (ParserException pe)
-      {
-        throw new UnsupportedOperationException(pe.getLocalizedMessage());
-      }
-    }
-    if (!EOCL_ENV.createQuery(VALIDATE_FINDING_ABOUTFINDING_OBSERVATION_OBJECT_ASSOCIATIONFINDING_OBSERVATION_OBJECT_VALUE_FINDING_ABOUTFINDING_OBSERVATION_OBJECT_ASSOCIATIONFINDING_OBSERVATION_OBJECT_VALUE1__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(findingAbout))
-    {
-      if (diagnostics != null)
-      {
-        diagnostics.add
-          (new BasicDiagnostic
-            (Diagnostic.ERROR,
-             SdtmValidator.DIAGNOSTIC_SOURCE,
-             SdtmValidator.FINDING_ABOUT__FINDING_ABOUTFINDING_OBSERVATION_OBJECT_ASSOCIATIONFINDING_OBSERVATION_OBJECT_VALUE_FINDING_ABOUTFINDING_OBSERVATION_OBJECT_ASSOCIATIONFINDING_OBSERVATION_OBJECT_VALUE1,
-             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "FindingAboutfindingObservationObjectAssociationfindingObservationObjectValueFindingAboutfindingObservationObjectAssociationfindingObservationObjectValue1", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(findingAbout, context) }),
-             new Object [] { findingAbout }));
-      }
+       
       return false;
     }
     return true;
@@ -1878,7 +1837,6 @@ public class FindingAboutOperations extends ClinicalStatementOperations
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.entryRelationship->excluding(null)->reject(typeCode=vocab::x_ActRelationshipEntryRelationship::COMP)
    * @param findingAbout The receiving '<em><b>Finding About</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -1888,6 +1846,7 @@ public class FindingAboutOperations extends ClinicalStatementOperations
   
   public static  boolean validateFindingAboutfindingAboutCategoryAssociationTypeCode(FindingAbout findingAbout, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
+  	  
     if (VALIDATE_FINDING_ABOUTFINDING_ABOUT_CATEGORY_ASSOCIATION_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(SdtmPackage.Literals.FINDING_ABOUT);
@@ -1912,6 +1871,337 @@ public class FindingAboutOperations extends ClinicalStatementOperations
              org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "FindingAboutfindingAboutCategoryAssociationTypeCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(findingAbout, context) }),
              new Object [] { findingAbout }));
       }
+       
+      return false;
+    }
+    return true;
+  }
+
+  /**
+   * The cached OCL expression body for the '{@link #validateFindingAboutfindingAboutCategoryAssociationFindingAboutCategory(FindingAbout, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Finding Aboutfinding About Category Association Finding About Category</em>}' operation.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #validateFindingAboutfindingAboutCategoryAssociationFindingAboutCategory(FindingAbout, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+   * @generated
+   * @ordered
+   */
+  protected static final String VALIDATE_FINDING_ABOUTFINDING_ABOUT_CATEGORY_ASSOCIATION_FINDING_ABOUT_CATEGORY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entryRelationship->excluding(null)->reject(observation->one(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(cda::Observation)))";
+
+  /**
+   * The cached OCL invariant for the '{@link #validateFindingAboutfindingAboutCategoryAssociationFindingAboutCategory(FindingAbout, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Finding Aboutfinding About Category Association Finding About Category</em>}' invariant operation.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #validateFindingAboutfindingAboutCategoryAssociationFindingAboutCategory(FindingAbout, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+   * @generated
+   * @ordered
+   */
+  
+  protected static Constraint VALIDATE_FINDING_ABOUTFINDING_ABOUT_CATEGORY_ASSOCIATION_FINDING_ABOUT_CATEGORY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * <!-- begin-model-doc -->
+   * @param findingAbout The receiving '<em><b>Finding About</b></em>' model object.
+   * @param diagnostics The chain of diagnostics to which problems are to be appended.
+   * @param context The cache of context-specific information.
+   * <!-- end-model-doc -->
+   * @generated
+   */
+  
+  public static  boolean validateFindingAboutfindingAboutCategoryAssociationFindingAboutCategory(FindingAbout findingAbout, DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+  	  
+    if (VALIDATE_FINDING_ABOUTFINDING_ABOUT_CATEGORY_ASSOCIATION_FINDING_ABOUT_CATEGORY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+      OCL.Helper helper = EOCL_ENV.createOCLHelper();
+      helper.setContext(SdtmPackage.Literals.FINDING_ABOUT);
+      try
+      {
+        VALIDATE_FINDING_ABOUTFINDING_ABOUT_CATEGORY_ASSOCIATION_FINDING_ABOUT_CATEGORY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_FINDING_ABOUTFINDING_ABOUT_CATEGORY_ASSOCIATION_FINDING_ABOUT_CATEGORY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+      }
+      catch (ParserException pe)
+      {
+        throw new UnsupportedOperationException(pe.getLocalizedMessage());
+      }
+    }
+    if (!EOCL_ENV.createQuery(VALIDATE_FINDING_ABOUTFINDING_ABOUT_CATEGORY_ASSOCIATION_FINDING_ABOUT_CATEGORY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(findingAbout))
+    {
+      if (diagnostics != null)
+      {
+        diagnostics.add
+          (new BasicDiagnostic
+            (Diagnostic.ERROR,
+             SdtmValidator.DIAGNOSTIC_SOURCE,
+             SdtmValidator.FINDING_ABOUT__FINDING_ABOUTFINDING_ABOUT_CATEGORY_ASSOCIATION_FINDING_ABOUT_CATEGORY,
+             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "FindingAboutfindingAboutCategoryAssociationFindingAboutCategory", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(findingAbout, context) }),
+             new Object [] { findingAbout }));
+      }
+       
+      return false;
+    }
+    return true;
+  }
+
+  /**
+   * The cached OCL expression body for the '{@link #validateFindingAboutfindingAboutSubCategoryAssociationfindingAboutSubCategoryClassCode(FindingAbout, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Finding Aboutfinding About Sub Category Associationfinding About Sub Category Class Code</em>}' operation.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #validateFindingAboutfindingAboutSubCategoryAssociationfindingAboutSubCategoryClassCode(FindingAbout, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+   * @generated
+   * @ordered
+   */
+  protected static final String VALIDATE_FINDING_ABOUTFINDING_ABOUT_SUB_CATEGORY_ASSOCIATIONFINDING_ABOUT_SUB_CATEGORY_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entryRelationship->excluding(null).observation->excluding(null)->reject(classCode=vocab::ActClassObservation::OBS)";
+
+  /**
+   * The cached OCL invariant for the '{@link #validateFindingAboutfindingAboutSubCategoryAssociationfindingAboutSubCategoryClassCode(FindingAbout, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Finding Aboutfinding About Sub Category Associationfinding About Sub Category Class Code</em>}' invariant operation.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #validateFindingAboutfindingAboutSubCategoryAssociationfindingAboutSubCategoryClassCode(FindingAbout, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+   * @generated
+   * @ordered
+   */
+  
+  protected static Constraint VALIDATE_FINDING_ABOUTFINDING_ABOUT_SUB_CATEGORY_ASSOCIATIONFINDING_ABOUT_SUB_CATEGORY_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * <!-- begin-model-doc -->
+   * @param findingAbout The receiving '<em><b>Finding About</b></em>' model object.
+   * @param diagnostics The chain of diagnostics to which problems are to be appended.
+   * @param context The cache of context-specific information.
+   * <!-- end-model-doc -->
+   * @generated
+   */
+  
+  public static  boolean validateFindingAboutfindingAboutSubCategoryAssociationfindingAboutSubCategoryClassCode(FindingAbout findingAbout, DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+  	  
+    if (VALIDATE_FINDING_ABOUTFINDING_ABOUT_SUB_CATEGORY_ASSOCIATIONFINDING_ABOUT_SUB_CATEGORY_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+      OCL.Helper helper = EOCL_ENV.createOCLHelper();
+      helper.setContext(SdtmPackage.Literals.FINDING_ABOUT);
+      try
+      {
+        VALIDATE_FINDING_ABOUTFINDING_ABOUT_SUB_CATEGORY_ASSOCIATIONFINDING_ABOUT_SUB_CATEGORY_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_FINDING_ABOUTFINDING_ABOUT_SUB_CATEGORY_ASSOCIATIONFINDING_ABOUT_SUB_CATEGORY_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+      }
+      catch (ParserException pe)
+      {
+        throw new UnsupportedOperationException(pe.getLocalizedMessage());
+      }
+    }
+    if (!EOCL_ENV.createQuery(VALIDATE_FINDING_ABOUTFINDING_ABOUT_SUB_CATEGORY_ASSOCIATIONFINDING_ABOUT_SUB_CATEGORY_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(findingAbout))
+    {
+      if (diagnostics != null)
+      {
+        diagnostics.add
+          (new BasicDiagnostic
+            (Diagnostic.ERROR,
+             SdtmValidator.DIAGNOSTIC_SOURCE,
+             SdtmValidator.FINDING_ABOUT__FINDING_ABOUTFINDING_ABOUT_SUB_CATEGORY_ASSOCIATIONFINDING_ABOUT_SUB_CATEGORY_CLASS_CODE,
+             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "FindingAboutfindingAboutSubCategoryAssociationfindingAboutSubCategoryClassCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(findingAbout, context) }),
+             new Object [] { findingAbout }));
+      }
+       
+      return false;
+    }
+    return true;
+  }
+
+  /**
+   * The cached OCL expression body for the '{@link #validateFindingAboutfindingAboutSubCategoryAssociationfindingAboutSubCategoryCode(FindingAbout, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Finding Aboutfinding About Sub Category Associationfinding About Sub Category Code</em>}' operation.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #validateFindingAboutfindingAboutSubCategoryAssociationfindingAboutSubCategoryCode(FindingAbout, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+   * @generated
+   * @ordered
+   */
+  protected static final String VALIDATE_FINDING_ABOUTFINDING_ABOUT_SUB_CATEGORY_ASSOCIATIONFINDING_ABOUT_SUB_CATEGORY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entryRelationship->excluding(null).observation->excluding(null)->reject((code.oclIsUndefined() or code.isNullFlavorUndefined()) implies (not code.oclIsUndefined()))";
+
+  /**
+   * The cached OCL invariant for the '{@link #validateFindingAboutfindingAboutSubCategoryAssociationfindingAboutSubCategoryCode(FindingAbout, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Finding Aboutfinding About Sub Category Associationfinding About Sub Category Code</em>}' invariant operation.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #validateFindingAboutfindingAboutSubCategoryAssociationfindingAboutSubCategoryCode(FindingAbout, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+   * @generated
+   * @ordered
+   */
+  
+  protected static Constraint VALIDATE_FINDING_ABOUTFINDING_ABOUT_SUB_CATEGORY_ASSOCIATIONFINDING_ABOUT_SUB_CATEGORY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * <!-- begin-model-doc -->
+   * @param findingAbout The receiving '<em><b>Finding About</b></em>' model object.
+   * @param diagnostics The chain of diagnostics to which problems are to be appended.
+   * @param context The cache of context-specific information.
+   * <!-- end-model-doc -->
+   * @generated
+   */
+  
+  public static  boolean validateFindingAboutfindingAboutSubCategoryAssociationfindingAboutSubCategoryCode(FindingAbout findingAbout, DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+  	  
+    if (VALIDATE_FINDING_ABOUTFINDING_ABOUT_SUB_CATEGORY_ASSOCIATIONFINDING_ABOUT_SUB_CATEGORY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+      OCL.Helper helper = EOCL_ENV.createOCLHelper();
+      helper.setContext(SdtmPackage.Literals.FINDING_ABOUT);
+      try
+      {
+        VALIDATE_FINDING_ABOUTFINDING_ABOUT_SUB_CATEGORY_ASSOCIATIONFINDING_ABOUT_SUB_CATEGORY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_FINDING_ABOUTFINDING_ABOUT_SUB_CATEGORY_ASSOCIATIONFINDING_ABOUT_SUB_CATEGORY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+      }
+      catch (ParserException pe)
+      {
+        throw new UnsupportedOperationException(pe.getLocalizedMessage());
+      }
+    }
+    if (!EOCL_ENV.createQuery(VALIDATE_FINDING_ABOUTFINDING_ABOUT_SUB_CATEGORY_ASSOCIATIONFINDING_ABOUT_SUB_CATEGORY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(findingAbout))
+    {
+      if (diagnostics != null)
+      {
+        diagnostics.add
+          (new BasicDiagnostic
+            (Diagnostic.ERROR,
+             SdtmValidator.DIAGNOSTIC_SOURCE,
+             SdtmValidator.FINDING_ABOUT__FINDING_ABOUTFINDING_ABOUT_SUB_CATEGORY_ASSOCIATIONFINDING_ABOUT_SUB_CATEGORY_CODE,
+             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "FindingAboutfindingAboutSubCategoryAssociationfindingAboutSubCategoryCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(findingAbout, context) }),
+             new Object [] { findingAbout }));
+      }
+       
+      return false;
+    }
+    return true;
+  }
+
+  /**
+   * The cached OCL expression body for the '{@link #validateFindingAboutfindingAboutSubCategoryAssociationfindingAboutSubCategoryMoodCode(FindingAbout, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Finding Aboutfinding About Sub Category Associationfinding About Sub Category Mood Code</em>}' operation.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #validateFindingAboutfindingAboutSubCategoryAssociationfindingAboutSubCategoryMoodCode(FindingAbout, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+   * @generated
+   * @ordered
+   */
+  protected static final String VALIDATE_FINDING_ABOUTFINDING_ABOUT_SUB_CATEGORY_ASSOCIATIONFINDING_ABOUT_SUB_CATEGORY_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entryRelationship->excluding(null).observation->excluding(null)->reject(moodCode=vocab::x_ActMoodDocumentObservation::EVN)";
+
+  /**
+   * The cached OCL invariant for the '{@link #validateFindingAboutfindingAboutSubCategoryAssociationfindingAboutSubCategoryMoodCode(FindingAbout, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Finding Aboutfinding About Sub Category Associationfinding About Sub Category Mood Code</em>}' invariant operation.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #validateFindingAboutfindingAboutSubCategoryAssociationfindingAboutSubCategoryMoodCode(FindingAbout, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+   * @generated
+   * @ordered
+   */
+  
+  protected static Constraint VALIDATE_FINDING_ABOUTFINDING_ABOUT_SUB_CATEGORY_ASSOCIATIONFINDING_ABOUT_SUB_CATEGORY_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * <!-- begin-model-doc -->
+   * @param findingAbout The receiving '<em><b>Finding About</b></em>' model object.
+   * @param diagnostics The chain of diagnostics to which problems are to be appended.
+   * @param context The cache of context-specific information.
+   * <!-- end-model-doc -->
+   * @generated
+   */
+  
+  public static  boolean validateFindingAboutfindingAboutSubCategoryAssociationfindingAboutSubCategoryMoodCode(FindingAbout findingAbout, DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+  	  
+    if (VALIDATE_FINDING_ABOUTFINDING_ABOUT_SUB_CATEGORY_ASSOCIATIONFINDING_ABOUT_SUB_CATEGORY_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+      OCL.Helper helper = EOCL_ENV.createOCLHelper();
+      helper.setContext(SdtmPackage.Literals.FINDING_ABOUT);
+      try
+      {
+        VALIDATE_FINDING_ABOUTFINDING_ABOUT_SUB_CATEGORY_ASSOCIATIONFINDING_ABOUT_SUB_CATEGORY_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_FINDING_ABOUTFINDING_ABOUT_SUB_CATEGORY_ASSOCIATIONFINDING_ABOUT_SUB_CATEGORY_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+      }
+      catch (ParserException pe)
+      {
+        throw new UnsupportedOperationException(pe.getLocalizedMessage());
+      }
+    }
+    if (!EOCL_ENV.createQuery(VALIDATE_FINDING_ABOUTFINDING_ABOUT_SUB_CATEGORY_ASSOCIATIONFINDING_ABOUT_SUB_CATEGORY_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(findingAbout))
+    {
+      if (diagnostics != null)
+      {
+        diagnostics.add
+          (new BasicDiagnostic
+            (Diagnostic.ERROR,
+             SdtmValidator.DIAGNOSTIC_SOURCE,
+             SdtmValidator.FINDING_ABOUT__FINDING_ABOUTFINDING_ABOUT_SUB_CATEGORY_ASSOCIATIONFINDING_ABOUT_SUB_CATEGORY_MOOD_CODE,
+             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "FindingAboutfindingAboutSubCategoryAssociationfindingAboutSubCategoryMoodCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(findingAbout, context) }),
+             new Object [] { findingAbout }));
+      }
+       
+      return false;
+    }
+    return true;
+  }
+
+  /**
+   * The cached OCL expression body for the '{@link #validateFindingAboutfindingAboutSubCategoryAssociationfindingAboutSubCategoryValue(FindingAbout, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Finding Aboutfinding About Sub Category Associationfinding About Sub Category Value</em>}' operation.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #validateFindingAboutfindingAboutSubCategoryAssociationfindingAboutSubCategoryValue(FindingAbout, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+   * @generated
+   * @ordered
+   */
+  protected static final String VALIDATE_FINDING_ABOUTFINDING_ABOUT_SUB_CATEGORY_ASSOCIATIONFINDING_ABOUT_SUB_CATEGORY_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entryRelationship->excluding(null).observation->excluding(null)->reject((value->isEmpty() or value->exists(element | element.isNullFlavorUndefined())) implies (value->size() = 1 and value->forAll(element | element.oclIsTypeOf(datatypes::CE))))";
+
+  /**
+   * The cached OCL invariant for the '{@link #validateFindingAboutfindingAboutSubCategoryAssociationfindingAboutSubCategoryValue(FindingAbout, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Finding Aboutfinding About Sub Category Associationfinding About Sub Category Value</em>}' invariant operation.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #validateFindingAboutfindingAboutSubCategoryAssociationfindingAboutSubCategoryValue(FindingAbout, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+   * @generated
+   * @ordered
+   */
+  
+  protected static Constraint VALIDATE_FINDING_ABOUTFINDING_ABOUT_SUB_CATEGORY_ASSOCIATIONFINDING_ABOUT_SUB_CATEGORY_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * <!-- begin-model-doc -->
+   * @param findingAbout The receiving '<em><b>Finding About</b></em>' model object.
+   * @param diagnostics The chain of diagnostics to which problems are to be appended.
+   * @param context The cache of context-specific information.
+   * <!-- end-model-doc -->
+   * @generated
+   */
+  
+  public static  boolean validateFindingAboutfindingAboutSubCategoryAssociationfindingAboutSubCategoryValue(FindingAbout findingAbout, DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+  	  
+    if (VALIDATE_FINDING_ABOUTFINDING_ABOUT_SUB_CATEGORY_ASSOCIATIONFINDING_ABOUT_SUB_CATEGORY_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+      OCL.Helper helper = EOCL_ENV.createOCLHelper();
+      helper.setContext(SdtmPackage.Literals.FINDING_ABOUT);
+      try
+      {
+        VALIDATE_FINDING_ABOUTFINDING_ABOUT_SUB_CATEGORY_ASSOCIATIONFINDING_ABOUT_SUB_CATEGORY_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_FINDING_ABOUTFINDING_ABOUT_SUB_CATEGORY_ASSOCIATIONFINDING_ABOUT_SUB_CATEGORY_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+      }
+      catch (ParserException pe)
+      {
+        throw new UnsupportedOperationException(pe.getLocalizedMessage());
+      }
+    }
+    if (!EOCL_ENV.createQuery(VALIDATE_FINDING_ABOUTFINDING_ABOUT_SUB_CATEGORY_ASSOCIATIONFINDING_ABOUT_SUB_CATEGORY_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(findingAbout))
+    {
+      if (diagnostics != null)
+      {
+        diagnostics.add
+          (new BasicDiagnostic
+            (Diagnostic.ERROR,
+             SdtmValidator.DIAGNOSTIC_SOURCE,
+             SdtmValidator.FINDING_ABOUT__FINDING_ABOUTFINDING_ABOUT_SUB_CATEGORY_ASSOCIATIONFINDING_ABOUT_SUB_CATEGORY_VALUE,
+             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "FindingAboutfindingAboutSubCategoryAssociationfindingAboutSubCategoryValue", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(findingAbout, context) }),
+             new Object [] { findingAbout }));
+      }
+       
       return false;
     }
     return true;
@@ -1943,7 +2233,6 @@ public class FindingAboutOperations extends ClinicalStatementOperations
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.entryRelationship->excluding(null)->reject(typeCode=vocab::x_ActRelationshipEntryRelationship::COMP)
    * @param findingAbout The receiving '<em><b>Finding About</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -1953,6 +2242,7 @@ public class FindingAboutOperations extends ClinicalStatementOperations
   
   public static  boolean validateFindingAboutfindingAboutSubCategoryAssociationTypeCode(FindingAbout findingAbout, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
+  	  
     if (VALIDATE_FINDING_ABOUTFINDING_ABOUT_SUB_CATEGORY_ASSOCIATION_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(SdtmPackage.Literals.FINDING_ABOUT);
@@ -1977,6 +2267,73 @@ public class FindingAboutOperations extends ClinicalStatementOperations
              org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "FindingAboutfindingAboutSubCategoryAssociationTypeCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(findingAbout, context) }),
              new Object [] { findingAbout }));
       }
+       
+      return false;
+    }
+    return true;
+  }
+
+  /**
+   * The cached OCL expression body for the '{@link #validateFindingAboutfindingAboutSubCategoryAssociationFindingAboutSubCategory(FindingAbout, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Finding Aboutfinding About Sub Category Association Finding About Sub Category</em>}' operation.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #validateFindingAboutfindingAboutSubCategoryAssociationFindingAboutSubCategory(FindingAbout, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+   * @generated
+   * @ordered
+   */
+  protected static final String VALIDATE_FINDING_ABOUTFINDING_ABOUT_SUB_CATEGORY_ASSOCIATION_FINDING_ABOUT_SUB_CATEGORY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entryRelationship->excluding(null)->reject(observation->one(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(cda::Observation)))";
+
+  /**
+   * The cached OCL invariant for the '{@link #validateFindingAboutfindingAboutSubCategoryAssociationFindingAboutSubCategory(FindingAbout, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Finding Aboutfinding About Sub Category Association Finding About Sub Category</em>}' invariant operation.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #validateFindingAboutfindingAboutSubCategoryAssociationFindingAboutSubCategory(FindingAbout, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+   * @generated
+   * @ordered
+   */
+  
+  protected static Constraint VALIDATE_FINDING_ABOUTFINDING_ABOUT_SUB_CATEGORY_ASSOCIATION_FINDING_ABOUT_SUB_CATEGORY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * <!-- begin-model-doc -->
+   * @param findingAbout The receiving '<em><b>Finding About</b></em>' model object.
+   * @param diagnostics The chain of diagnostics to which problems are to be appended.
+   * @param context The cache of context-specific information.
+   * <!-- end-model-doc -->
+   * @generated
+   */
+  
+  public static  boolean validateFindingAboutfindingAboutSubCategoryAssociationFindingAboutSubCategory(FindingAbout findingAbout, DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+  	  
+    if (VALIDATE_FINDING_ABOUTFINDING_ABOUT_SUB_CATEGORY_ASSOCIATION_FINDING_ABOUT_SUB_CATEGORY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+      OCL.Helper helper = EOCL_ENV.createOCLHelper();
+      helper.setContext(SdtmPackage.Literals.FINDING_ABOUT);
+      try
+      {
+        VALIDATE_FINDING_ABOUTFINDING_ABOUT_SUB_CATEGORY_ASSOCIATION_FINDING_ABOUT_SUB_CATEGORY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_FINDING_ABOUTFINDING_ABOUT_SUB_CATEGORY_ASSOCIATION_FINDING_ABOUT_SUB_CATEGORY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+      }
+      catch (ParserException pe)
+      {
+        throw new UnsupportedOperationException(pe.getLocalizedMessage());
+      }
+    }
+    if (!EOCL_ENV.createQuery(VALIDATE_FINDING_ABOUTFINDING_ABOUT_SUB_CATEGORY_ASSOCIATION_FINDING_ABOUT_SUB_CATEGORY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(findingAbout))
+    {
+      if (diagnostics != null)
+      {
+        diagnostics.add
+          (new BasicDiagnostic
+            (Diagnostic.ERROR,
+             SdtmValidator.DIAGNOSTIC_SOURCE,
+             SdtmValidator.FINDING_ABOUT__FINDING_ABOUTFINDING_ABOUT_SUB_CATEGORY_ASSOCIATION_FINDING_ABOUT_SUB_CATEGORY,
+             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "FindingAboutfindingAboutSubCategoryAssociationFindingAboutSubCategory", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(findingAbout, context) }),
+             new Object [] { findingAbout }));
+      }
+       
       return false;
     }
     return true;
@@ -1990,7 +2347,7 @@ public class FindingAboutOperations extends ClinicalStatementOperations
    * @generated
    * @ordered
    */
-  protected static final String GET_GROUP_IDENTIFIER__EOCL_EXP = "self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(sdtm::Group Identifier))->asSequence()->first().oclAsType(sdtm::Group Identifier)";
+  protected static final String GET_GROUP_IDENTIFIER__EOCL_EXP = "self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(sdtm::Group Identifier))->asSequence()->any(true).oclAsType(sdtm::Group Identifier)";
 
   /**
    * The cached OCL query for the '{@link #getGroupIdentifier(FindingAbout) <em>Get Group Identifier</em>}' query operation.
@@ -2005,10 +2362,6 @@ public class FindingAboutOperations extends ClinicalStatementOperations
   /**
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * <!-- begin-model-doc -->
-   * self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(sdtm::Group Identifier))->asSequence()->first().oclAsType(sdtm::Group Identifier)
-   * @param findingAbout The receiving '<em><b>Finding About</b></em>' model object.
-   * <!-- end-model-doc -->
    * @generated
    */
   
@@ -2017,7 +2370,7 @@ public class FindingAboutOperations extends ClinicalStatementOperations
     if (GET_GROUP_IDENTIFIER__EOCL_QRY == null)
     {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
-      helper.setOperationContext(SdtmPackage.Literals.FINDING_ABOUT, SdtmPackage.Literals.FINDING_ABOUT.getEAllOperations().get(78));
+      helper.setOperationContext(SdtmPackage.Literals.FINDING_ABOUT, SdtmPackage.Literals.FINDING_ABOUT.getEAllOperations().get(85));
       try
       {
         GET_GROUP_IDENTIFIER__EOCL_QRY = helper.createQuery(GET_GROUP_IDENTIFIER__EOCL_EXP);
@@ -2039,7 +2392,7 @@ public class FindingAboutOperations extends ClinicalStatementOperations
    * @generated
    * @ordered
    */
-  protected static final String GET_NON_PERFORMANCE_REASON__EOCL_EXP = "self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(sdtm::Non Performance Reason))->asSequence()->first().oclAsType(sdtm::Non Performance Reason)";
+  protected static final String GET_NON_PERFORMANCE_REASON__EOCL_EXP = "self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(sdtm::Non Performance Reason))->asSequence()->any(true).oclAsType(sdtm::Non Performance Reason)";
 
   /**
    * The cached OCL query for the '{@link #getNonPerformanceReason(FindingAbout) <em>Get Non Performance Reason</em>}' query operation.
@@ -2054,10 +2407,6 @@ public class FindingAboutOperations extends ClinicalStatementOperations
   /**
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * <!-- begin-model-doc -->
-   * self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(sdtm::Non Performance Reason))->asSequence()->first().oclAsType(sdtm::Non Performance Reason)
-   * @param findingAbout The receiving '<em><b>Finding About</b></em>' model object.
-   * <!-- end-model-doc -->
    * @generated
    */
   
@@ -2066,7 +2415,7 @@ public class FindingAboutOperations extends ClinicalStatementOperations
     if (GET_NON_PERFORMANCE_REASON__EOCL_QRY == null)
     {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
-      helper.setOperationContext(SdtmPackage.Literals.FINDING_ABOUT, SdtmPackage.Literals.FINDING_ABOUT.getEAllOperations().get(79));
+      helper.setOperationContext(SdtmPackage.Literals.FINDING_ABOUT, SdtmPackage.Literals.FINDING_ABOUT.getEAllOperations().get(86));
       try
       {
         GET_NON_PERFORMANCE_REASON__EOCL_QRY = helper.createQuery(GET_NON_PERFORMANCE_REASON__EOCL_EXP);
@@ -2081,55 +2430,6 @@ public class FindingAboutOperations extends ClinicalStatementOperations
   }
 
   /**
-   * The cached OCL expression body for the '{@link #getBaselineIndicator(FindingAbout) <em>Get Baseline Indicator</em>}' operation.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @see #getBaselineIndicator(FindingAbout)
-   * @generated
-   * @ordered
-   */
-  protected static final String GET_BASELINE_INDICATOR__EOCL_EXP = "self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(sdtm::Baseline Indicator))->asSequence()->first().oclAsType(sdtm::Baseline Indicator)";
-
-  /**
-   * The cached OCL query for the '{@link #getBaselineIndicator(FindingAbout) <em>Get Baseline Indicator</em>}' query operation.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @see #getBaselineIndicator(FindingAbout)
-   * @generated
-   * @ordered
-   */
-  protected static OCLExpression<EClassifier> GET_BASELINE_INDICATOR__EOCL_QRY;
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * <!-- begin-model-doc -->
-   * self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(sdtm::Baseline Indicator))->asSequence()->first().oclAsType(sdtm::Baseline Indicator)
-   * @param findingAbout The receiving '<em><b>Finding About</b></em>' model object.
-   * <!-- end-model-doc -->
-   * @generated
-   */
-  
-  public static  BaselineIndicator getBaselineIndicator(FindingAbout findingAbout)
-  {
-    if (GET_BASELINE_INDICATOR__EOCL_QRY == null)
-    {
-      OCL.Helper helper = EOCL_ENV.createOCLHelper();
-      helper.setOperationContext(SdtmPackage.Literals.FINDING_ABOUT, SdtmPackage.Literals.FINDING_ABOUT.getEAllOperations().get(80));
-      try
-      {
-        GET_BASELINE_INDICATOR__EOCL_QRY = helper.createQuery(GET_BASELINE_INDICATOR__EOCL_EXP);
-      }
-      catch (ParserException pe)
-      {
-        throw new UnsupportedOperationException(pe.getLocalizedMessage());
-      }
-    }
-    OCL.Query query = EOCL_ENV.createQuery(GET_BASELINE_INDICATOR__EOCL_QRY);
-    return (BaselineIndicator) query.evaluate(findingAbout);
-  }
-
-  /**
    * The cached OCL expression body for the '{@link #getDataCollection(FindingAbout) <em>Get Data Collection</em>}' operation.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
@@ -2137,7 +2437,7 @@ public class FindingAboutOperations extends ClinicalStatementOperations
    * @generated
    * @ordered
    */
-  protected static final String GET_DATA_COLLECTION__EOCL_EXP = "self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(sdtm::Data Collection))->asSequence()->first().oclAsType(sdtm::Data Collection)";
+  protected static final String GET_DATA_COLLECTION__EOCL_EXP = "self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(sdtm::Data Collection))->asSequence()->any(true).oclAsType(sdtm::Data Collection)";
 
   /**
    * The cached OCL query for the '{@link #getDataCollection(FindingAbout) <em>Get Data Collection</em>}' query operation.
@@ -2152,10 +2452,6 @@ public class FindingAboutOperations extends ClinicalStatementOperations
   /**
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * <!-- begin-model-doc -->
-   * self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(sdtm::Data Collection))->asSequence()->first().oclAsType(sdtm::Data Collection)
-   * @param findingAbout The receiving '<em><b>Finding About</b></em>' model object.
-   * <!-- end-model-doc -->
    * @generated
    */
   
@@ -2164,7 +2460,7 @@ public class FindingAboutOperations extends ClinicalStatementOperations
     if (GET_DATA_COLLECTION__EOCL_QRY == null)
     {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
-      helper.setOperationContext(SdtmPackage.Literals.FINDING_ABOUT, SdtmPackage.Literals.FINDING_ABOUT.getEAllOperations().get(81));
+      helper.setOperationContext(SdtmPackage.Literals.FINDING_ABOUT, SdtmPackage.Literals.FINDING_ABOUT.getEAllOperations().get(87));
       try
       {
         GET_DATA_COLLECTION__EOCL_QRY = helper.createQuery(GET_DATA_COLLECTION__EOCL_EXP);

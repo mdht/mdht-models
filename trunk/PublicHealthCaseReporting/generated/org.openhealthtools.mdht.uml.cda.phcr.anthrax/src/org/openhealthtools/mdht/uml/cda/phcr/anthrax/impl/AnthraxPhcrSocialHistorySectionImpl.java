@@ -10,11 +10,14 @@
  *******************************************************************************/
 package org.openhealthtools.mdht.uml.cda.phcr.anthrax.impl;
 
+import java.lang.Iterable;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.common.util.EList;
 import org.eclipse.emf.ecore.EClass;
+import org.eclipse.emf.ecore.EObject;
+import org.openhealthtools.mdht.emf.runtime.util.Initializer;
 import org.openhealthtools.mdht.uml.cda.phcr.anthrax.AnthraxPackage;
 import org.openhealthtools.mdht.uml.cda.phcr.anthrax.AnthraxPhcrSocialHistorySection;
 import org.openhealthtools.mdht.uml.cda.phcr.anthrax.AnthraxPossibleExpossureLocationAndTypeAct;
@@ -33,59 +36,68 @@ import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
  */
 public class AnthraxPhcrSocialHistorySectionImpl extends PhcrSocialHistorySectionImpl implements AnthraxPhcrSocialHistorySection {
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	protected AnthraxPhcrSocialHistorySectionImpl() {
-		super();
-	}
+    super();
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	@Override
 	protected EClass eStaticClass() {
-		return AnthraxPackage.Literals.ANTHRAX_PHCR_SOCIAL_HISTORY_SECTION;
-	}
+    return AnthraxPackage.Literals.ANTHRAX_PHCR_SOCIAL_HISTORY_SECTION;
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateAnthraxPhcrSocialHistorySectionAnthraxPossibleExpossureLocationAndTypeAct(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return AnthraxPhcrSocialHistorySectionOperations.validateAnthraxPhcrSocialHistorySectionAnthraxPossibleExpossureLocationAndTypeAct(this, diagnostics, context);
-	}
+    return AnthraxPhcrSocialHistorySectionOperations.validateAnthraxPhcrSocialHistorySectionAnthraxPossibleExpossureLocationAndTypeAct(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public EList<AnthraxPossibleExpossureLocationAndTypeAct> getAnthraxPossibleExpossureLocationAndTypeActs() {
-		return AnthraxPhcrSocialHistorySectionOperations.getAnthraxPossibleExpossureLocationAndTypeActs(this);
-	}
+    return AnthraxPhcrSocialHistorySectionOperations.getAnthraxPossibleExpossureLocationAndTypeActs(this);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	@Override
 	public boolean validateSocialHistorySectionTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return AnthraxPhcrSocialHistorySectionOperations.validateSocialHistorySectionTemplateId(this, diagnostics, context);
-	}
+    return AnthraxPhcrSocialHistorySectionOperations.validateSocialHistorySectionTemplateId(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public AnthraxPhcrSocialHistorySection init() {
-    	CDAUtil.init(this);
-    	return this;
-	}
+      return Initializer.Util.init(this);
+  }
+
+  /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    public AnthraxPhcrSocialHistorySection init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
 } //AnthraxPhcrSocialHistorySectionImpl

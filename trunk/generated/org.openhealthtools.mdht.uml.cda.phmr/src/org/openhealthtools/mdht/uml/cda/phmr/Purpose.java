@@ -22,6 +22,9 @@
  */
 package org.openhealthtools.mdht.uml.cda.phmr;
 
+import java.lang.Iterable;
+import org.eclipse.emf.ecore.EObject;
+import org.openhealthtools.mdht.emf.runtime.util.Initializer;
 import org.openhealthtools.mdht.uml.cda.ccd.PurposeSection;
 
 /**
@@ -31,14 +34,21 @@ import org.openhealthtools.mdht.uml.cda.ccd.PurposeSection;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.phmr.PhmrPackage#getPurpose()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation templateId.root='null' constraints.validation.error='PurposeTemplateId'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='PurposeTemplateId' templateId.root='null'"
  * @generated
  */
 public interface Purpose extends PurposeSection {
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public Purpose init();
+
+  /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    public Purpose init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // Purpose

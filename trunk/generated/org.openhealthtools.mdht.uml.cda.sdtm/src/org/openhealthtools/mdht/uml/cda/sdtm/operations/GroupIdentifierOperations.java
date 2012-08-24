@@ -80,7 +80,6 @@ public class GroupIdentifierOperations extends ClinicalStatementOperations
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.23.63')
    * @param groupIdentifier The receiving '<em><b>Group Identifier</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -90,6 +89,7 @@ public class GroupIdentifierOperations extends ClinicalStatementOperations
   
   public static  boolean validateGroupIdentifierTemplateId(GroupIdentifier groupIdentifier, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
+  	  
     if (VALIDATE_GROUP_IDENTIFIER_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(SdtmPackage.Literals.GROUP_IDENTIFIER);
@@ -114,6 +114,7 @@ public class GroupIdentifierOperations extends ClinicalStatementOperations
              org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "GroupIdentifierTemplateId", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(groupIdentifier, context) }),
              new Object [] { groupIdentifier }));
       }
+       
       return false;
     }
     return true;
@@ -145,7 +146,6 @@ public class GroupIdentifierOperations extends ClinicalStatementOperations
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.classCode=vocab::x_ActClassDocumentEntryAct::ACT
    * @param groupIdentifier The receiving '<em><b>Group Identifier</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -155,6 +155,7 @@ public class GroupIdentifierOperations extends ClinicalStatementOperations
   
   public static  boolean validateGroupIdentifierClassCode(GroupIdentifier groupIdentifier, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
+  	  
     if (VALIDATE_GROUP_IDENTIFIER_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(SdtmPackage.Literals.GROUP_IDENTIFIER);
@@ -179,6 +180,7 @@ public class GroupIdentifierOperations extends ClinicalStatementOperations
              org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "GroupIdentifierClassCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(groupIdentifier, context) }),
              new Object [] { groupIdentifier }));
       }
+       
       return false;
     }
     return true;
@@ -210,7 +212,6 @@ public class GroupIdentifierOperations extends ClinicalStatementOperations
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * (self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined())
    * @param groupIdentifier The receiving '<em><b>Group Identifier</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -220,6 +221,7 @@ public class GroupIdentifierOperations extends ClinicalStatementOperations
   
   public static  boolean validateGroupIdentifierCodeP(GroupIdentifier groupIdentifier, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
+  	  
     if (VALIDATE_GROUP_IDENTIFIER_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(SdtmPackage.Literals.GROUP_IDENTIFIER);
@@ -244,6 +246,7 @@ public class GroupIdentifierOperations extends ClinicalStatementOperations
              org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "GroupIdentifierCodeP", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(groupIdentifier, context) }),
              new Object [] { groupIdentifier }));
       }
+       
       return false;
     }
     return true;
@@ -277,9 +280,6 @@ public class GroupIdentifierOperations extends ClinicalStatementOperations
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * (self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and 
-   * let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in 
-   * value.code = 'TBD' and value.codeSystem = '2.16.840.1.113883.3.26.1.1')
    * @param groupIdentifier The receiving '<em><b>Group Identifier</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -289,6 +289,7 @@ public class GroupIdentifierOperations extends ClinicalStatementOperations
   
   public static  boolean validateGroupIdentifierCode(GroupIdentifier groupIdentifier, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
+  	  
     if (VALIDATE_GROUP_IDENTIFIER_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(SdtmPackage.Literals.GROUP_IDENTIFIER);
@@ -313,6 +314,7 @@ public class GroupIdentifierOperations extends ClinicalStatementOperations
              org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "GroupIdentifierCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(groupIdentifier, context) }),
              new Object [] { groupIdentifier }));
       }
+       
       return false;
     }
     return true;
@@ -344,7 +346,6 @@ public class GroupIdentifierOperations extends ClinicalStatementOperations
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * (self.id->isEmpty() or self.id->exists(element | element.isNullFlavorUndefined())) implies (self.id->size() = 1)
    * @param groupIdentifier The receiving '<em><b>Group Identifier</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -354,6 +355,7 @@ public class GroupIdentifierOperations extends ClinicalStatementOperations
   
   public static  boolean validateGroupIdentifierId(GroupIdentifier groupIdentifier, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
+  	  
     if (VALIDATE_GROUP_IDENTIFIER_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(SdtmPackage.Literals.GROUP_IDENTIFIER);
@@ -378,6 +380,7 @@ public class GroupIdentifierOperations extends ClinicalStatementOperations
              org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "GroupIdentifierId", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(groupIdentifier, context) }),
              new Object [] { groupIdentifier }));
       }
+       
       return false;
     }
     return true;
@@ -409,7 +412,6 @@ public class GroupIdentifierOperations extends ClinicalStatementOperations
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.moodCode=vocab::x_DocumentActMood::EVN
    * @param groupIdentifier The receiving '<em><b>Group Identifier</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -419,6 +421,7 @@ public class GroupIdentifierOperations extends ClinicalStatementOperations
   
   public static  boolean validateGroupIdentifierMoodCode(GroupIdentifier groupIdentifier, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
+  	  
     if (VALIDATE_GROUP_IDENTIFIER_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(SdtmPackage.Literals.GROUP_IDENTIFIER);
@@ -443,6 +446,7 @@ public class GroupIdentifierOperations extends ClinicalStatementOperations
              org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "GroupIdentifierMoodCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(groupIdentifier, context) }),
              new Object [] { groupIdentifier }));
       }
+       
       return false;
     }
     return true;

@@ -10,10 +10,13 @@
  *******************************************************************************/
 package org.openhealthtools.mdht.uml.cda.phcr.salmonellosis;
 
+import java.lang.Iterable;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
 
+import org.eclipse.emf.ecore.EObject;
+import org.openhealthtools.mdht.emf.runtime.util.Initializer;
 import org.openhealthtools.mdht.uml.cda.phcr.PhcrClinicalInformationSection;
 
 /**
@@ -23,7 +26,7 @@ import org.openhealthtools.mdht.uml.cda.phcr.PhcrClinicalInformationSection;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.phcr.salmonellosis.SalmonellosisPackage#getSalmonellosisPHCRClinicalInformationSection()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation templateId.root='2.16.840.1.113883.10.20.15.2.37' constraints.validation.error='SalmonellosisPHCRClinicalInformationSectionTemplateId SalmonellosisPHCRClinicalInformationSectionSalmonellosisCaseObservation'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='SalmonellosisPHCRClinicalInformationSectionTemplateId SalmonellosisPHCRClinicalInformationSectionSalmonellosisCaseObservation' templateId.root='2.16.840.1.113883.10.20.15.2.37'"
  * @generated
  */
 public interface SalmonellosisPHCRClinicalInformationSection extends PhcrClinicalInformationSection {
@@ -31,7 +34,6 @@ public interface SalmonellosisPHCRClinicalInformationSection extends PhcrClinica
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.entry->one(entry : cda::Entry | not entry.observation.oclIsUndefined() and entry.observation.oclIsKindOf(salmonellosis::SalmonellosisCaseObservation) and entry.typeCode = vocab::x_ActRelationshipEntry::DRIV)
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
    * <!-- end-model-doc -->
@@ -43,11 +45,8 @@ public interface SalmonellosisPHCRClinicalInformationSection extends PhcrClinica
 	/**
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * <!-- begin-model-doc -->
-   * self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(salmonellosis::SalmonellosisCaseObservation))->asSequence()->first().oclAsType(salmonellosis::SalmonellosisCaseObservation)
-   * <!-- end-model-doc -->
    * @model kind="operation" required="true" ordered="false"
-   *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(salmonellosis::SalmonellosisCaseObservation))->asSequence()->first().oclAsType(salmonellosis::SalmonellosisCaseObservation)'"
+   *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(salmonellosis::SalmonellosisCaseObservation))->asSequence()->any(true).oclAsType(salmonellosis::SalmonellosisCaseObservation)'"
    * @generated
    */
 	SalmonellosisCaseObservation getSalmonellosisCaseObservation();
@@ -58,5 +57,12 @@ public interface SalmonellosisPHCRClinicalInformationSection extends PhcrClinica
    * @generated
    */
   public SalmonellosisPHCRClinicalInformationSection init();
+
+  /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    public SalmonellosisPHCRClinicalInformationSection init(Iterable<? extends Initializer<? extends EObject>> initializers);
 
 } // SalmonellosisPHCRClinicalInformationSection

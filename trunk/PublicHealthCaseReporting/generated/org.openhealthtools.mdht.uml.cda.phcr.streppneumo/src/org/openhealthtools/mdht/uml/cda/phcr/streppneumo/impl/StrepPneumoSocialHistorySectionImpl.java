@@ -10,6 +10,7 @@
  *******************************************************************************/
 package org.openhealthtools.mdht.uml.cda.phcr.streppneumo.impl;
 
+import java.lang.Iterable;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
@@ -17,6 +18,8 @@ import org.eclipse.emf.common.util.EList;
 
 import org.eclipse.emf.ecore.EClass;
 
+import org.eclipse.emf.ecore.EObject;
+import org.openhealthtools.mdht.emf.runtime.util.Initializer;
 import org.openhealthtools.mdht.uml.cda.phcr.impl.PhcrSocialHistorySectionImpl;
 
 import org.openhealthtools.mdht.uml.cda.phcr.streppneumo.StrepPneumoPackage;
@@ -38,59 +41,68 @@ import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
  */
 public class StrepPneumoSocialHistorySectionImpl extends PhcrSocialHistorySectionImpl implements StrepPneumoSocialHistorySection {
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	protected StrepPneumoSocialHistorySectionImpl() {
-		super();
-	}
+    super();
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	@Override
 	protected EClass eStaticClass() {
-		return StrepPneumoPackage.Literals.STREP_PNEUMO_SOCIAL_HISTORY_SECTION;
-	}
+    return StrepPneumoPackage.Literals.STREP_PNEUMO_SOCIAL_HISTORY_SECTION;
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateStrepPneumoSocialHistorySectionStrepPneumoPossibleExposureLocationAndTypeAct(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return StrepPneumoSocialHistorySectionOperations.validateStrepPneumoSocialHistorySectionStrepPneumoPossibleExposureLocationAndTypeAct(this, diagnostics, context);
-	}
+    return StrepPneumoSocialHistorySectionOperations.validateStrepPneumoSocialHistorySectionStrepPneumoPossibleExposureLocationAndTypeAct(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public EList<StrepPneumoPossibleExposureLocationAct> getStrepPneumoPossibleExposureLocationAndTypeActs() {
-		return StrepPneumoSocialHistorySectionOperations.getStrepPneumoPossibleExposureLocationAndTypeActs(this);
-	}
+    return StrepPneumoSocialHistorySectionOperations.getStrepPneumoPossibleExposureLocationAndTypeActs(this);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	@Override
 	public boolean validateSocialHistorySectionTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return StrepPneumoSocialHistorySectionOperations.validateSocialHistorySectionTemplateId(this, diagnostics, context);
-	}
+    return StrepPneumoSocialHistorySectionOperations.validateSocialHistorySectionTemplateId(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public StrepPneumoSocialHistorySection init() {
-    	CDAUtil.init(this);
-    	return this;
-	}
+      return Initializer.Util.init(this);
+  }
+
+  /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    public StrepPneumoSocialHistorySection init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
 } //StrepPneumoSocialHistorySectionImpl

@@ -10,10 +10,13 @@
  *******************************************************************************/
 package org.openhealthtools.mdht.uml.cda.phcr.impl;
 
+import java.lang.Iterable;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.ecore.EClass;
+import org.eclipse.emf.ecore.EObject;
+import org.openhealthtools.mdht.emf.runtime.util.Initializer;
 import org.openhealthtools.mdht.uml.cda.ccd.ImmunizationsSection;
 import org.openhealthtools.mdht.uml.cda.impl.ClinicalDocumentImpl;
 import org.openhealthtools.mdht.uml.cda.phcr.PhcrClinicalInformationSection;
@@ -37,310 +40,319 @@ import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
  */
 public class PublicHealthCaseReportImpl extends ClinicalDocumentImpl implements PublicHealthCaseReport {
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	protected PublicHealthCaseReportImpl() {
-		super();
-	}
+    super();
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	@Override
 	protected EClass eStaticClass() {
-		return PhcrPackage.Literals.PUBLIC_HEALTH_CASE_REPORT;
-	}
+    return PhcrPackage.Literals.PUBLIC_HEALTH_CASE_REPORT;
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validatePublicHealthCaseReportPHCRRecordTarget(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return PublicHealthCaseReportOperations.validatePublicHealthCaseReportPHCRRecordTarget(this, diagnostics, context);
-	}
+    return PublicHealthCaseReportOperations.validatePublicHealthCaseReportPHCRRecordTarget(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validatePublicHealthCaseReportPHCRRecordTargetPatientRole(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return PublicHealthCaseReportOperations.validatePublicHealthCaseReportPHCRRecordTargetPatientRole(this, diagnostics, context);
-	}
+    return PublicHealthCaseReportOperations.validatePublicHealthCaseReportPHCRRecordTargetPatientRole(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validatePublicHealthCaseReportPHCRRecordTargetPatientRoleId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return PublicHealthCaseReportOperations.validatePublicHealthCaseReportPHCRRecordTargetPatientRoleId(this, diagnostics, context);
-	}
+    return PublicHealthCaseReportOperations.validatePublicHealthCaseReportPHCRRecordTargetPatientRoleId(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validatePublicHealthCaseReportPHCRAuthor(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return PublicHealthCaseReportOperations.validatePublicHealthCaseReportPHCRAuthor(this, diagnostics, context);
-	}
+    return PublicHealthCaseReportOperations.validatePublicHealthCaseReportPHCRAuthor(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validatePublicHealthCaseReportPHCRAuthorTiime(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return PublicHealthCaseReportOperations.validatePublicHealthCaseReportPHCRAuthorTiime(this, diagnostics, context);
-	}
+    return PublicHealthCaseReportOperations.validatePublicHealthCaseReportPHCRAuthorTiime(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validatePublicHealthCaseReportPHCRAuthorAssignedAuthor(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return PublicHealthCaseReportOperations.validatePublicHealthCaseReportPHCRAuthorAssignedAuthor(this, diagnostics, context);
-	}
+    return PublicHealthCaseReportOperations.validatePublicHealthCaseReportPHCRAuthorAssignedAuthor(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validatePublicHealthCaseReportPHCRAuthorAssignedAuthorId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return PublicHealthCaseReportOperations.validatePublicHealthCaseReportPHCRAuthorAssignedAuthorId(this, diagnostics, context);
-	}
+    return PublicHealthCaseReportOperations.validatePublicHealthCaseReportPHCRAuthorAssignedAuthorId(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validatePublicHealthCaseReportPHCRAuthorAssignedAuthorAddr(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return PublicHealthCaseReportOperations.validatePublicHealthCaseReportPHCRAuthorAssignedAuthorAddr(this, diagnostics, context);
-	}
+    return PublicHealthCaseReportOperations.validatePublicHealthCaseReportPHCRAuthorAssignedAuthorAddr(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validatePublicHealthCaseReportPHCRAuthorAssignedAuthorTelecom(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return PublicHealthCaseReportOperations.validatePublicHealthCaseReportPHCRAuthorAssignedAuthorTelecom(this, diagnostics, context);
-	}
+    return PublicHealthCaseReportOperations.validatePublicHealthCaseReportPHCRAuthorAssignedAuthorTelecom(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validatePublicHealthCaseReportPHCRAuthorAssignedAuthorAssignedPersonName(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return PublicHealthCaseReportOperations.validatePublicHealthCaseReportPHCRAuthorAssignedAuthorAssignedPersonName(this, diagnostics, context);
-	}
+    return PublicHealthCaseReportOperations.validatePublicHealthCaseReportPHCRAuthorAssignedAuthorAssignedPersonName(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validatePublicHealthCaseReportPHCRLegalAuthenticator(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return PublicHealthCaseReportOperations.validatePublicHealthCaseReportPHCRLegalAuthenticator(this, diagnostics, context);
-	}
+    return PublicHealthCaseReportOperations.validatePublicHealthCaseReportPHCRLegalAuthenticator(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validatePublicHealthCaseReportPHCRLegalAuthenticatorTime(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return PublicHealthCaseReportOperations.validatePublicHealthCaseReportPHCRLegalAuthenticatorTime(this, diagnostics, context);
-	}
+    return PublicHealthCaseReportOperations.validatePublicHealthCaseReportPHCRLegalAuthenticatorTime(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validatePublicHealthCaseReportPHCRLegalAuthenticatorAssignedEntity(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return PublicHealthCaseReportOperations.validatePublicHealthCaseReportPHCRLegalAuthenticatorAssignedEntity(this, diagnostics, context);
-	}
+    return PublicHealthCaseReportOperations.validatePublicHealthCaseReportPHCRLegalAuthenticatorAssignedEntity(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validatePublicHealthCaseReportPHCRLegalAuthenticatorAssignedEntityId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return PublicHealthCaseReportOperations.validatePublicHealthCaseReportPHCRLegalAuthenticatorAssignedEntityId(this, diagnostics, context);
-	}
+    return PublicHealthCaseReportOperations.validatePublicHealthCaseReportPHCRLegalAuthenticatorAssignedEntityId(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validatePublicHealthCaseReportPHCRLegalAuthenticatorAssignedEntityAddr(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return PublicHealthCaseReportOperations.validatePublicHealthCaseReportPHCRLegalAuthenticatorAssignedEntityAddr(this, diagnostics, context);
-	}
+    return PublicHealthCaseReportOperations.validatePublicHealthCaseReportPHCRLegalAuthenticatorAssignedEntityAddr(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validatePublicHealthCaseReportPHCRLegalAuthenticatorAssignedEntityAssignedPersonName(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return PublicHealthCaseReportOperations.validatePublicHealthCaseReportPHCRLegalAuthenticatorAssignedEntityAssignedPersonName(this, diagnostics, context);
-	}
+    return PublicHealthCaseReportOperations.validatePublicHealthCaseReportPHCRLegalAuthenticatorAssignedEntityAssignedPersonName(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validatePublicHealthCaseReportTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return PublicHealthCaseReportOperations.validatePublicHealthCaseReportTemplateId(this, diagnostics, context);
-	}
+    return PublicHealthCaseReportOperations.validatePublicHealthCaseReportTemplateId(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validatePublicHealthCaseReportCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return PublicHealthCaseReportOperations.validatePublicHealthCaseReportCodeP(this, diagnostics, context);
-	}
+    return PublicHealthCaseReportOperations.validatePublicHealthCaseReportCodeP(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validatePublicHealthCaseReportCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return PublicHealthCaseReportOperations.validatePublicHealthCaseReportCode(this, diagnostics, context);
-	}
+    return PublicHealthCaseReportOperations.validatePublicHealthCaseReportCode(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validatePublicHealthCaseReportPhcrSocialHistorySection(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return PublicHealthCaseReportOperations.validatePublicHealthCaseReportPhcrSocialHistorySection(this, diagnostics, context);
-	}
+    return PublicHealthCaseReportOperations.validatePublicHealthCaseReportPhcrSocialHistorySection(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validatePublicHealthCaseReportPhcrClinicalInformationSection(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return PublicHealthCaseReportOperations.validatePublicHealthCaseReportPhcrClinicalInformationSection(this, diagnostics, context);
-	}
+    return PublicHealthCaseReportOperations.validatePublicHealthCaseReportPhcrClinicalInformationSection(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validatePublicHealthCaseReportPhcrTreatmentInformationSection(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return PublicHealthCaseReportOperations.validatePublicHealthCaseReportPhcrTreatmentInformationSection(this, diagnostics, context);
-	}
+    return PublicHealthCaseReportOperations.validatePublicHealthCaseReportPhcrTreatmentInformationSection(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validatePublicHealthCaseReportPhcrEncountersSection(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return PublicHealthCaseReportOperations.validatePublicHealthCaseReportPhcrEncountersSection(this, diagnostics, context);
-	}
+    return PublicHealthCaseReportOperations.validatePublicHealthCaseReportPhcrEncountersSection(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validatePublicHealthCaseReportPhcrRelevantDxTestsSection(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return PublicHealthCaseReportOperations.validatePublicHealthCaseReportPhcrRelevantDxTestsSection(this, diagnostics, context);
-	}
+    return PublicHealthCaseReportOperations.validatePublicHealthCaseReportPhcrRelevantDxTestsSection(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validatePublicHealthCaseReportImmunizationsSection(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return PublicHealthCaseReportOperations.validatePublicHealthCaseReportImmunizationsSection(this, diagnostics, context);
-	}
+    return PublicHealthCaseReportOperations.validatePublicHealthCaseReportImmunizationsSection(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public PhcrSocialHistorySection getPhcrSocialHistorySection() {
-		return PublicHealthCaseReportOperations.getPhcrSocialHistorySection(this);
-	}
+    return PublicHealthCaseReportOperations.getPhcrSocialHistorySection(this);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public PhcrClinicalInformationSection getPhcrClinicalInformationSection() {
-		return PublicHealthCaseReportOperations.getPhcrClinicalInformationSection(this);
-	}
+    return PublicHealthCaseReportOperations.getPhcrClinicalInformationSection(this);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public PhcrTreatmentInformationSection getPhcrTreatmentInformationSection() {
-		return PublicHealthCaseReportOperations.getPhcrTreatmentInformationSection(this);
-	}
+    return PublicHealthCaseReportOperations.getPhcrTreatmentInformationSection(this);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public PhcrEncountersSection getPhcrEncountersSection() {
-		return PublicHealthCaseReportOperations.getPhcrEncountersSection(this);
-	}
+    return PublicHealthCaseReportOperations.getPhcrEncountersSection(this);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public PhcrRelevantDxTestsSection getPhcrRelevantDxTestsSection() {
-		return PublicHealthCaseReportOperations.getPhcrRelevantDxTestsSection(this);
-	}
+    return PublicHealthCaseReportOperations.getPhcrRelevantDxTestsSection(this);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public ImmunizationsSection getImmunizationsSection() {
-		return PublicHealthCaseReportOperations.getImmunizationsSection(this);
-	}
+    return PublicHealthCaseReportOperations.getImmunizationsSection(this);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public PublicHealthCaseReport init() {
-    	CDAUtil.init(this);
-    	return this;
-	}
+      return Initializer.Util.init(this);
+  }
+
+  /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    public PublicHealthCaseReport init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
 } //PublicHealthCaseReportImpl

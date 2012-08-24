@@ -22,12 +22,15 @@
  */
 package org.openhealthtools.mdht.uml.cda.phmr.impl;
 
+import java.lang.Iterable;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
 
 import org.eclipse.emf.ecore.EClass;
 
+import org.eclipse.emf.ecore.EObject;
+import org.openhealthtools.mdht.emf.runtime.util.Initializer;
 import org.openhealthtools.mdht.uml.cda.impl.ObservationImpl;
 
 import org.openhealthtools.mdht.uml.cda.phmr.PhmrPackage;
@@ -48,67 +51,86 @@ import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
  */
 public class SamplingFrequencyObservationImpl extends ObservationImpl implements SamplingFrequencyObservation {
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	protected SamplingFrequencyObservationImpl() {
-		super();
-	}
+    super();
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	@Override
 	protected EClass eStaticClass() {
-		return PhmrPackage.Literals.SAMPLING_FREQUENCY_OBSERVATION;
-	}
+    return PhmrPackage.Literals.SAMPLING_FREQUENCY_OBSERVATION;
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateSamplingFrequencyObservationTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return SamplingFrequencyObservationOperations.validateSamplingFrequencyObservationTemplateId(this, diagnostics, context);
-	}
+    return SamplingFrequencyObservationOperations.validateSamplingFrequencyObservationTemplateId(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public boolean validateSamplingFrequencyObservationCodeP(DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+    return SamplingFrequencyObservationOperations.validateSamplingFrequencyObservationCodeP(this, diagnostics, context);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateSamplingFrequencyObservationCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return SamplingFrequencyObservationOperations.validateSamplingFrequencyObservationCode(this, diagnostics, context);
-	}
+    return SamplingFrequencyObservationOperations.validateSamplingFrequencyObservationCode(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateSamplingFrequencyObservationMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return SamplingFrequencyObservationOperations.validateSamplingFrequencyObservationMoodCode(this, diagnostics, context);
-	}
+    return SamplingFrequencyObservationOperations.validateSamplingFrequencyObservationMoodCode(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateSamplingFrequencyObservationValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return SamplingFrequencyObservationOperations.validateSamplingFrequencyObservationValue(this, diagnostics, context);
-	}
+    return SamplingFrequencyObservationOperations.validateSamplingFrequencyObservationValue(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public SamplingFrequencyObservation init() {
-    	CDAUtil.init(this);
-    	return this;
-	}
+      return Initializer.Util.init(this);
+  }
+
+  /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    public SamplingFrequencyObservation init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
 } //SamplingFrequencyObservationImpl

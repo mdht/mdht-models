@@ -10,12 +10,15 @@
  *******************************************************************************/
 package org.openhealthtools.mdht.uml.cda.phcr.hepb.impl;
 
+import java.lang.Iterable;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
 
 import org.eclipse.emf.ecore.EClass;
 
+import org.eclipse.emf.ecore.EObject;
+import org.openhealthtools.mdht.emf.runtime.util.Initializer;
 import org.openhealthtools.mdht.uml.cda.phcr.hepb.AcuteHepatitisBSignsAndSymptomsObservation;
 import org.openhealthtools.mdht.uml.cda.phcr.hepb.HepbPackage;
 
@@ -36,51 +39,70 @@ import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
  */
 public class AcuteHepatitisBSignsAndSymptomsObservationImpl extends SignsAndSymptomsObservationImpl implements AcuteHepatitisBSignsAndSymptomsObservation {
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	protected AcuteHepatitisBSignsAndSymptomsObservationImpl() {
-		super();
-	}
+    super();
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	@Override
 	protected EClass eStaticClass() {
-		return HepbPackage.Literals.ACUTE_HEPATITIS_BSIGNS_AND_SYMPTOMS_OBSERVATION;
-	}
+    return HepbPackage.Literals.ACUTE_HEPATITIS_BSIGNS_AND_SYMPTOMS_OBSERVATION;
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public boolean validateAcuteHepatitisBSignsAndSymptomsObservationValueP(DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+    return AcuteHepatitisBSignsAndSymptomsObservationOperations.validateAcuteHepatitisBSignsAndSymptomsObservationValueP(this, diagnostics, context);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public boolean validateAcuteHepatitisBSignsAndSymptomsObservationValue(DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+    return AcuteHepatitisBSignsAndSymptomsObservationOperations.validateAcuteHepatitisBSignsAndSymptomsObservationValue(this, diagnostics, context);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	@Override
 	public boolean validateSignsAndSymptomsObservationTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return AcuteHepatitisBSignsAndSymptomsObservationOperations.validateSignsAndSymptomsObservationTemplateId(this, diagnostics, context);
-	}
+    return AcuteHepatitisBSignsAndSymptomsObservationOperations.validateSignsAndSymptomsObservationTemplateId(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public boolean validateSignsAndSymptomsObservationValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return AcuteHepatitisBSignsAndSymptomsObservationOperations.validateSignsAndSymptomsObservationValue(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public AcuteHepatitisBSignsAndSymptomsObservation init() {
-    	CDAUtil.init(this);
-    	return this;
-	}
+      return Initializer.Util.init(this);
+  }
+
+  /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    public AcuteHepatitisBSignsAndSymptomsObservation init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
 } //AcuteHepatitisBSignsAndSymptomsObservationImpl

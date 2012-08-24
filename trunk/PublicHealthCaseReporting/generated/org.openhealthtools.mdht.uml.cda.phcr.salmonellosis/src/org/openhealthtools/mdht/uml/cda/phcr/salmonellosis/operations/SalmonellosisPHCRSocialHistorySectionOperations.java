@@ -1,13 +1,9 @@
-/*******************************************************************************
- * Copyright (c) 2012, Public Health Data Standards Consortium (PHDSC)
- * All rights reserved. This program and the accompanying materials
- * are made available under the terms of the Eclipse Public License v1.0
- * which accompanies this distribution, and is available at
- * http://www.eclipse.org/legal/epl-v10.html
+/**
+ * <copyright>
+ * </copyright>
  *
- * Contributors:
- *     PHDSC - initial API and implementation
- *******************************************************************************/
+ * $Id$
+ */
 package org.openhealthtools.mdht.uml.cda.phcr.salmonellosis.operations;
 
 import java.util.Collection;
@@ -18,17 +14,24 @@ import org.eclipse.emf.common.util.BasicEList;
 import org.eclipse.emf.common.util.Diagnostic;
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.common.util.EList;
+
 import org.eclipse.emf.ecore.EClassifier;
+
 import org.eclipse.ocl.ParserException;
+
 import org.eclipse.ocl.ecore.Constraint;
 import org.eclipse.ocl.ecore.OCL;
+
 import org.eclipse.ocl.expressions.OCLExpression;
+
 import org.openhealthtools.mdht.uml.cda.phcr.operations.PhcrSocialHistorySectionOperations;
+
 import org.openhealthtools.mdht.uml.cda.phcr.salmonellosis.HIVStatusObservation;
 import org.openhealthtools.mdht.uml.cda.phcr.salmonellosis.SalmonellosisPHCRSocialHistorySection;
 import org.openhealthtools.mdht.uml.cda.phcr.salmonellosis.SalmonellosisPackage;
 import org.openhealthtools.mdht.uml.cda.phcr.salmonellosis.SalmonellosisPlugin;
 import org.openhealthtools.mdht.uml.cda.phcr.salmonellosis.SalmonellosisPossibleExposureLocationAndTypeAct;
+
 import org.openhealthtools.mdht.uml.cda.phcr.salmonellosis.util.SalmonellosisValidator;
 
 /**
@@ -49,48 +52,52 @@ import org.openhealthtools.mdht.uml.cda.phcr.salmonellosis.util.SalmonellosisVal
  *
  * @generated
  */
-public class SalmonellosisPHCRSocialHistorySectionOperations extends PhcrSocialHistorySectionOperations {
-	/**
+public class SalmonellosisPHCRSocialHistorySectionOperations extends PhcrSocialHistorySectionOperations
+{
+  /**
    * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+   * <!-- end-user-doc -->
    * @generated
    */
-	protected SalmonellosisPHCRSocialHistorySectionOperations() {
+  protected SalmonellosisPHCRSocialHistorySectionOperations() {
     super();
   }
 
-	/**
+  /**
    * The cached OCL expression body for the '{@link #validateSalmonellosisPHCRSocialHistorySectionSalmonellosisPossibleExposureLocationAndTypeAct(SalmonellosisPHCRSocialHistorySection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Salmonellosis PHCR Social History Section Salmonellosis Possible Exposure Location And Type Act</em>}' operation.
    * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+   * <!-- end-user-doc -->
    * @see #validateSalmonellosisPHCRSocialHistorySectionSalmonellosisPossibleExposureLocationAndTypeAct(SalmonellosisPHCRSocialHistorySection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
    * @generated
    * @ordered
    */
-	protected static final String VALIDATE_SALMONELLOSIS_PHCR_SOCIAL_HISTORY_SECTION_SALMONELLOSIS_POSSIBLE_EXPOSURE_LOCATION_AND_TYPE_ACT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entry->exists(entry : cda::Entry | not entry.act.oclIsUndefined() and entry.act.oclIsKindOf(salmonellosis::SalmonellosisPossibleExposureLocationAndTypeAct) and entry.typeCode = vocab::x_ActRelationshipEntry::DRIV)";
+  protected static final String VALIDATE_SALMONELLOSIS_PHCR_SOCIAL_HISTORY_SECTION_SALMONELLOSIS_POSSIBLE_EXPOSURE_LOCATION_AND_TYPE_ACT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entry->exists(entry : cda::Entry | not entry.act.oclIsUndefined() and entry.act.oclIsKindOf(salmonellosis::SalmonellosisPossibleExposureLocationAndTypeAct) and entry.typeCode = vocab::x_ActRelationshipEntry::DRIV)";
 
-	/**
+  /**
    * The cached OCL invariant for the '{@link #validateSalmonellosisPHCRSocialHistorySectionSalmonellosisPossibleExposureLocationAndTypeAct(SalmonellosisPHCRSocialHistorySection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Salmonellosis PHCR Social History Section Salmonellosis Possible Exposure Location And Type Act</em>}' invariant operation.
    * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+   * <!-- end-user-doc -->
    * @see #validateSalmonellosisPHCRSocialHistorySectionSalmonellosisPossibleExposureLocationAndTypeAct(SalmonellosisPHCRSocialHistorySection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
    * @generated
    * @ordered
    */
-	protected static Constraint VALIDATE_SALMONELLOSIS_PHCR_SOCIAL_HISTORY_SECTION_SALMONELLOSIS_POSSIBLE_EXPOSURE_LOCATION_AND_TYPE_ACT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+  
+  protected static Constraint VALIDATE_SALMONELLOSIS_PHCR_SOCIAL_HISTORY_SECTION_SALMONELLOSIS_POSSIBLE_EXPOSURE_LOCATION_AND_TYPE_ACT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+  
 
-	/**
+  /**
    * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+   * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.entry->exists(entry : cda::Entry | not entry.act.oclIsUndefined() and entry.act.oclIsKindOf(salmonellosis::SalmonellosisPossibleExposureLocationAndTypeAct) and entry.typeCode = vocab::x_ActRelationshipEntry::DRIV)
    * @param salmonellosisPHCRSocialHistorySection The receiving '<em><b>PHCR Social History Section</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
    * <!-- end-model-doc -->
    * @generated
    */
-	public static  boolean validateSalmonellosisPHCRSocialHistorySectionSalmonellosisPossibleExposureLocationAndTypeAct(SalmonellosisPHCRSocialHistorySection salmonellosisPHCRSocialHistorySection, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  
+  public static  boolean validateSalmonellosisPHCRSocialHistorySectionSalmonellosisPossibleExposureLocationAndTypeAct(SalmonellosisPHCRSocialHistorySection salmonellosisPHCRSocialHistorySection, DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
   	  
     if (VALIDATE_SALMONELLOSIS_PHCR_SOCIAL_HISTORY_SECTION_SALMONELLOSIS_POSSIBLE_EXPOSURE_LOCATION_AND_TYPE_ACT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
@@ -122,38 +129,41 @@ public class SalmonellosisPHCRSocialHistorySectionOperations extends PhcrSocialH
     return true;
   }
 
-	/**
+  /**
    * The cached OCL expression body for the '{@link #validateSalmonellosisPHCRSocialHistorySectionHIVStatusObservation(SalmonellosisPHCRSocialHistorySection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Salmonellosis PHCR Social History Section HIV Status Observation</em>}' operation.
    * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+   * <!-- end-user-doc -->
    * @see #validateSalmonellosisPHCRSocialHistorySectionHIVStatusObservation(SalmonellosisPHCRSocialHistorySection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
    * @generated
    * @ordered
    */
-	protected static final String VALIDATE_SALMONELLOSIS_PHCR_SOCIAL_HISTORY_SECTION_HIV_STATUS_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entry->one(entry : cda::Entry | not entry.observation.oclIsUndefined() and entry.observation.oclIsKindOf(salmonellosis::HIVStatusObservation) and entry.typeCode = vocab::x_ActRelationshipEntry::DRIV)";
+  protected static final String VALIDATE_SALMONELLOSIS_PHCR_SOCIAL_HISTORY_SECTION_HIV_STATUS_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entry->one(entry : cda::Entry | not entry.observation.oclIsUndefined() and entry.observation.oclIsKindOf(salmonellosis::HIVStatusObservation) and entry.typeCode = vocab::x_ActRelationshipEntry::DRIV)";
 
-	/**
+  /**
    * The cached OCL invariant for the '{@link #validateSalmonellosisPHCRSocialHistorySectionHIVStatusObservation(SalmonellosisPHCRSocialHistorySection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Salmonellosis PHCR Social History Section HIV Status Observation</em>}' invariant operation.
    * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+   * <!-- end-user-doc -->
    * @see #validateSalmonellosisPHCRSocialHistorySectionHIVStatusObservation(SalmonellosisPHCRSocialHistorySection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
    * @generated
    * @ordered
    */
-	protected static Constraint VALIDATE_SALMONELLOSIS_PHCR_SOCIAL_HISTORY_SECTION_HIV_STATUS_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+  
+  protected static Constraint VALIDATE_SALMONELLOSIS_PHCR_SOCIAL_HISTORY_SECTION_HIV_STATUS_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+  
 
-	/**
+  /**
    * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+   * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.entry->one(entry : cda::Entry | not entry.observation.oclIsUndefined() and entry.observation.oclIsKindOf(salmonellosis::HIVStatusObservation) and entry.typeCode = vocab::x_ActRelationshipEntry::DRIV)
    * @param salmonellosisPHCRSocialHistorySection The receiving '<em><b>PHCR Social History Section</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
    * <!-- end-model-doc -->
    * @generated
    */
-	public static  boolean validateSalmonellosisPHCRSocialHistorySectionHIVStatusObservation(SalmonellosisPHCRSocialHistorySection salmonellosisPHCRSocialHistorySection, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  
+  public static  boolean validateSalmonellosisPHCRSocialHistorySectionHIVStatusObservation(SalmonellosisPHCRSocialHistorySection salmonellosisPHCRSocialHistorySection, DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
   	  
     if (VALIDATE_SALMONELLOSIS_PHCR_SOCIAL_HISTORY_SECTION_HIV_STATUS_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
@@ -185,40 +195,38 @@ public class SalmonellosisPHCRSocialHistorySectionOperations extends PhcrSocialH
     return true;
   }
 
-	/**
+  /**
    * The cached OCL expression body for the '{@link #getSalmonellosisPossibleExposureLocationAndTypeActs(SalmonellosisPHCRSocialHistorySection) <em>Get Salmonellosis Possible Exposure Location And Type Acts</em>}' operation.
    * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+   * <!-- end-user-doc -->
    * @see #getSalmonellosisPossibleExposureLocationAndTypeActs(SalmonellosisPHCRSocialHistorySection)
    * @generated
    * @ordered
    */
-	protected static final String GET_SALMONELLOSIS_POSSIBLE_EXPOSURE_LOCATION_AND_TYPE_ACTS__EOCL_EXP = "self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(salmonellosis::SalmonellosisPossibleExposureLocationAndTypeAct)).oclAsType(salmonellosis::SalmonellosisPossibleExposureLocationAndTypeAct)";
+  protected static final String GET_SALMONELLOSIS_POSSIBLE_EXPOSURE_LOCATION_AND_TYPE_ACTS__EOCL_EXP = "self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(salmonellosis::SalmonellosisPossibleExposureLocationAndTypeAct)).oclAsType(salmonellosis::SalmonellosisPossibleExposureLocationAndTypeAct)";
 
-	/**
+  /**
    * The cached OCL query for the '{@link #getSalmonellosisPossibleExposureLocationAndTypeActs(SalmonellosisPHCRSocialHistorySection) <em>Get Salmonellosis Possible Exposure Location And Type Acts</em>}' query operation.
    * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+   * <!-- end-user-doc -->
    * @see #getSalmonellosisPossibleExposureLocationAndTypeActs(SalmonellosisPHCRSocialHistorySection)
    * @generated
    * @ordered
    */
-	protected static OCLExpression<EClassifier> GET_SALMONELLOSIS_POSSIBLE_EXPOSURE_LOCATION_AND_TYPE_ACTS__EOCL_QRY;
+  protected static OCLExpression<EClassifier> GET_SALMONELLOSIS_POSSIBLE_EXPOSURE_LOCATION_AND_TYPE_ACTS__EOCL_QRY;
 
-	/**
+  /**
    * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-   * <!-- begin-model-doc -->
-   * self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(salmonellosis::SalmonellosisPossibleExposureLocationAndTypeAct)).oclAsType(salmonellosis::SalmonellosisPossibleExposureLocationAndTypeAct)
-   * @param salmonellosisPHCRSocialHistorySection The receiving '<em><b>PHCR Social History Section</b></em>' model object.
-   * <!-- end-model-doc -->
+   * <!-- end-user-doc -->
    * @generated
    */
-	public static  EList<SalmonellosisPossibleExposureLocationAndTypeAct> getSalmonellosisPossibleExposureLocationAndTypeActs(SalmonellosisPHCRSocialHistorySection salmonellosisPHCRSocialHistorySection) {
+  
+  public static  EList<SalmonellosisPossibleExposureLocationAndTypeAct> getSalmonellosisPossibleExposureLocationAndTypeActs(SalmonellosisPHCRSocialHistorySection salmonellosisPHCRSocialHistorySection)
+  {
     if (GET_SALMONELLOSIS_POSSIBLE_EXPOSURE_LOCATION_AND_TYPE_ACTS__EOCL_QRY == null)
     {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
-      helper.setOperationContext(SalmonellosisPackage.Literals.SALMONELLOSIS_PHCR_SOCIAL_HISTORY_SECTION, SalmonellosisPackage.Literals.SALMONELLOSIS_PHCR_SOCIAL_HISTORY_SECTION.getEAllOperations().get(81));
+      helper.setOperationContext(SalmonellosisPackage.Literals.SALMONELLOSIS_PHCR_SOCIAL_HISTORY_SECTION, SalmonellosisPackage.Literals.SALMONELLOSIS_PHCR_SOCIAL_HISTORY_SECTION.getEAllOperations().get(83));
       try
       {
         GET_SALMONELLOSIS_POSSIBLE_EXPOSURE_LOCATION_AND_TYPE_ACTS__EOCL_QRY = helper.createQuery(GET_SALMONELLOSIS_POSSIBLE_EXPOSURE_LOCATION_AND_TYPE_ACTS__EOCL_EXP);
@@ -234,40 +242,38 @@ public class SalmonellosisPHCRSocialHistorySectionOperations extends PhcrSocialH
     return new BasicEList.UnmodifiableEList<SalmonellosisPossibleExposureLocationAndTypeAct>(result.size(), result.toArray());
   }
 
-	/**
+  /**
    * The cached OCL expression body for the '{@link #getHIVStatusObservation(SalmonellosisPHCRSocialHistorySection) <em>Get HIV Status Observation</em>}' operation.
    * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+   * <!-- end-user-doc -->
    * @see #getHIVStatusObservation(SalmonellosisPHCRSocialHistorySection)
    * @generated
    * @ordered
    */
-	protected static final String GET_HIV_STATUS_OBSERVATION__EOCL_EXP = "self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(salmonellosis::HIVStatusObservation))->asSequence()->first().oclAsType(salmonellosis::HIVStatusObservation)";
+  protected static final String GET_HIV_STATUS_OBSERVATION__EOCL_EXP = "self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(salmonellosis::HIVStatusObservation))->asSequence()->any(true).oclAsType(salmonellosis::HIVStatusObservation)";
 
-	/**
+  /**
    * The cached OCL query for the '{@link #getHIVStatusObservation(SalmonellosisPHCRSocialHistorySection) <em>Get HIV Status Observation</em>}' query operation.
    * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+   * <!-- end-user-doc -->
    * @see #getHIVStatusObservation(SalmonellosisPHCRSocialHistorySection)
    * @generated
    * @ordered
    */
-	protected static OCLExpression<EClassifier> GET_HIV_STATUS_OBSERVATION__EOCL_QRY;
+  protected static OCLExpression<EClassifier> GET_HIV_STATUS_OBSERVATION__EOCL_QRY;
 
-	/**
+  /**
    * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-   * <!-- begin-model-doc -->
-   * self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(salmonellosis::HIVStatusObservation))->asSequence()->first().oclAsType(salmonellosis::HIVStatusObservation)
-   * @param salmonellosisPHCRSocialHistorySection The receiving '<em><b>PHCR Social History Section</b></em>' model object.
-   * <!-- end-model-doc -->
+   * <!-- end-user-doc -->
    * @generated
    */
-	public static  HIVStatusObservation getHIVStatusObservation(SalmonellosisPHCRSocialHistorySection salmonellosisPHCRSocialHistorySection) {
+  
+  public static  HIVStatusObservation getHIVStatusObservation(SalmonellosisPHCRSocialHistorySection salmonellosisPHCRSocialHistorySection)
+  {
     if (GET_HIV_STATUS_OBSERVATION__EOCL_QRY == null)
     {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
-      helper.setOperationContext(SalmonellosisPackage.Literals.SALMONELLOSIS_PHCR_SOCIAL_HISTORY_SECTION, SalmonellosisPackage.Literals.SALMONELLOSIS_PHCR_SOCIAL_HISTORY_SECTION.getEAllOperations().get(82));
+      helper.setOperationContext(SalmonellosisPackage.Literals.SALMONELLOSIS_PHCR_SOCIAL_HISTORY_SECTION, SalmonellosisPackage.Literals.SALMONELLOSIS_PHCR_SOCIAL_HISTORY_SECTION.getEAllOperations().get(84));
       try
       {
         GET_HIV_STATUS_OBSERVATION__EOCL_QRY = helper.createQuery(GET_HIV_STATUS_OBSERVATION__EOCL_EXP);
@@ -301,12 +307,12 @@ public class SalmonellosisPHCRSocialHistorySectionOperations extends PhcrSocialH
    */
   
   protected static Constraint VALIDATE_SOCIAL_HISTORY_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+  
 
   /**
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.15.2.36')
    * @param salmonellosisPHCRSocialHistorySection The receiving '<em><b>PHCR Social History Section</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.

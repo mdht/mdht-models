@@ -42,6 +42,7 @@ import org.openhealthtools.mdht.uml.cda.phcr.cocci.util.CocciValidator;
  *   <li>{@link org.openhealthtools.mdht.uml.cda.phcr.cocci.CoccidioidesPossibleExposureLocationAct#validateCoccidioidesPossibleExposureLocationActClassCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Coccidioides Possible Exposure Location Act Class Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.phcr.cocci.CoccidioidesPossibleExposureLocationAct#validateCoccidioidesPossibleExposureLocationActCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Coccidioides Possible Exposure Location Act Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.phcr.cocci.CoccidioidesPossibleExposureLocationAct#validateCoccidioidesPossibleExposureLocationActMoodCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Coccidioides Possible Exposure Location Act Mood Code</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.phcr.cocci.CoccidioidesPossibleExposureLocationAct#validateCoccidioidesPossibleExposureLocationActStatusCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Coccidioides Possible Exposure Location Act Status Code P</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.phcr.cocci.CoccidioidesPossibleExposureLocationAct#validateCoccidioidesPossibleExposureLocationActStatusCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Coccidioides Possible Exposure Location Act Status Code</em>}</li>
  * </ul>
  * </p>
@@ -50,330 +51,425 @@ import org.openhealthtools.mdht.uml.cda.phcr.cocci.util.CocciValidator;
  */
 public class CoccidioidesPossibleExposureLocationActOperations extends ClinicalStatementOperations {
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	protected CoccidioidesPossibleExposureLocationActOperations() {
-		super();
-	}
+    super();
+  }
 
 	/**
-	 * The cached OCL expression body for the '{@link #validateCoccidioidesPossibleExposureLocationActTemplateId(CoccidioidesPossibleExposureLocationAct, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Coccidioides Possible Exposure Location Act Template Id</em>}' operation.
-	 * <!-- begin-user-doc -->
+   * The cached OCL expression body for the '{@link #validateCoccidioidesPossibleExposureLocationActTemplateId(CoccidioidesPossibleExposureLocationAct, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Coccidioides Possible Exposure Location Act Template Id</em>}' operation.
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateCoccidioidesPossibleExposureLocationActTemplateId(CoccidioidesPossibleExposureLocationAct, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
+   * @see #validateCoccidioidesPossibleExposureLocationActTemplateId(CoccidioidesPossibleExposureLocationAct, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+   * @generated
+   * @ordered
+   */
 	protected static final String VALIDATE_COCCIDIOIDES_POSSIBLE_EXPOSURE_LOCATION_ACT_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.15.3.86')";
 
 	/**
-	 * The cached OCL invariant for the '{@link #validateCoccidioidesPossibleExposureLocationActTemplateId(CoccidioidesPossibleExposureLocationAct, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Coccidioides Possible Exposure Location Act Template Id</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
+   * The cached OCL invariant for the '{@link #validateCoccidioidesPossibleExposureLocationActTemplateId(CoccidioidesPossibleExposureLocationAct, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Coccidioides Possible Exposure Location Act Template Id</em>}' invariant operation.
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateCoccidioidesPossibleExposureLocationActTemplateId(CoccidioidesPossibleExposureLocationAct, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
+   * @see #validateCoccidioidesPossibleExposureLocationActTemplateId(CoccidioidesPossibleExposureLocationAct, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+   * @generated
+   * @ordered
+   */
 	
 	protected static Constraint VALIDATE_COCCIDIOIDES_POSSIBLE_EXPOSURE_LOCATION_ACT_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 	
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.15.3.86')
-	 * @param coccidioidesPossibleExposureLocationAct The receiving '<em><b>Coccidioides Possible Exposure Location Act</b></em>' model object.
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
+   * <!-- begin-model-doc -->
+   * @param coccidioidesPossibleExposureLocationAct The receiving '<em><b>Coccidioides Possible Exposure Location Act</b></em>' model object.
+   * @param diagnostics The chain of diagnostics to which problems are to be appended.
+   * @param context The cache of context-specific information.
+   * <!-- end-model-doc -->
+   * @generated
+   */
 	
 	public static  boolean validateCoccidioidesPossibleExposureLocationActTemplateId(CoccidioidesPossibleExposureLocationAct coccidioidesPossibleExposureLocationAct, DiagnosticChain diagnostics, Map<Object, Object> context) {
   	  
-		if (VALIDATE_COCCIDIOIDES_POSSIBLE_EXPOSURE_LOCATION_ACT_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setContext(CocciPackage.Literals.COCCIDIOIDES_POSSIBLE_EXPOSURE_LOCATION_ACT);
-			try {
-				VALIDATE_COCCIDIOIDES_POSSIBLE_EXPOSURE_LOCATION_ACT_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_COCCIDIOIDES_POSSIBLE_EXPOSURE_LOCATION_ACT_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
-				throw new UnsupportedOperationException(pe.getLocalizedMessage());
-			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_COCCIDIOIDES_POSSIBLE_EXPOSURE_LOCATION_ACT_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(coccidioidesPossibleExposureLocationAct)) {
-			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 CocciValidator.DIAGNOSTIC_SOURCE,
-						 CocciValidator.COCCIDIOIDES_POSSIBLE_EXPOSURE_LOCATION_ACT__COCCIDIOIDES_POSSIBLE_EXPOSURE_LOCATION_ACT_TEMPLATE_ID,
-						 CocciPlugin.INSTANCE.getString("CoccidioidesPossibleExposureLocationActTemplateId"),
-						 new Object [] { coccidioidesPossibleExposureLocationAct }));
-			}
-			 
-			return false;
-		}
-		return true;
-	}
+    if (VALIDATE_COCCIDIOIDES_POSSIBLE_EXPOSURE_LOCATION_ACT_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+      OCL.Helper helper = EOCL_ENV.createOCLHelper();
+      helper.setContext(CocciPackage.Literals.COCCIDIOIDES_POSSIBLE_EXPOSURE_LOCATION_ACT);
+      try
+      {
+        VALIDATE_COCCIDIOIDES_POSSIBLE_EXPOSURE_LOCATION_ACT_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_COCCIDIOIDES_POSSIBLE_EXPOSURE_LOCATION_ACT_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+      }
+      catch (ParserException pe)
+      {
+        throw new UnsupportedOperationException(pe.getLocalizedMessage());
+      }
+    }
+    if (!EOCL_ENV.createQuery(VALIDATE_COCCIDIOIDES_POSSIBLE_EXPOSURE_LOCATION_ACT_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(coccidioidesPossibleExposureLocationAct))
+    {
+      if (diagnostics != null)
+      {
+        diagnostics.add
+          (new BasicDiagnostic
+            (Diagnostic.ERROR,
+             CocciValidator.DIAGNOSTIC_SOURCE,
+             CocciValidator.COCCIDIOIDES_POSSIBLE_EXPOSURE_LOCATION_ACT__COCCIDIOIDES_POSSIBLE_EXPOSURE_LOCATION_ACT_TEMPLATE_ID,
+             CocciPlugin.INSTANCE.getString("CoccidioidesPossibleExposureLocationActTemplateId"),
+             new Object [] { coccidioidesPossibleExposureLocationAct }));
+      }
+       
+      return false;
+    }
+    return true;
+  }
 
 	/**
-	 * The cached OCL expression body for the '{@link #validateCoccidioidesPossibleExposureLocationActClassCode(CoccidioidesPossibleExposureLocationAct, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Coccidioides Possible Exposure Location Act Class Code</em>}' operation.
-	 * <!-- begin-user-doc -->
+   * The cached OCL expression body for the '{@link #validateCoccidioidesPossibleExposureLocationActClassCode(CoccidioidesPossibleExposureLocationAct, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Coccidioides Possible Exposure Location Act Class Code</em>}' operation.
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateCoccidioidesPossibleExposureLocationActClassCode(CoccidioidesPossibleExposureLocationAct, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
+   * @see #validateCoccidioidesPossibleExposureLocationActClassCode(CoccidioidesPossibleExposureLocationAct, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+   * @generated
+   * @ordered
+   */
 	protected static final String VALIDATE_COCCIDIOIDES_POSSIBLE_EXPOSURE_LOCATION_ACT_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.classCode=vocab::x_ActClassDocumentEntryAct::ACT";
 
 	/**
-	 * The cached OCL invariant for the '{@link #validateCoccidioidesPossibleExposureLocationActClassCode(CoccidioidesPossibleExposureLocationAct, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Coccidioides Possible Exposure Location Act Class Code</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
+   * The cached OCL invariant for the '{@link #validateCoccidioidesPossibleExposureLocationActClassCode(CoccidioidesPossibleExposureLocationAct, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Coccidioides Possible Exposure Location Act Class Code</em>}' invariant operation.
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateCoccidioidesPossibleExposureLocationActClassCode(CoccidioidesPossibleExposureLocationAct, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
+   * @see #validateCoccidioidesPossibleExposureLocationActClassCode(CoccidioidesPossibleExposureLocationAct, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+   * @generated
+   * @ordered
+   */
 	
 	protected static Constraint VALIDATE_COCCIDIOIDES_POSSIBLE_EXPOSURE_LOCATION_ACT_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 	
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.classCode=vocab::x_ActClassDocumentEntryAct::ACT
-	 * @param coccidioidesPossibleExposureLocationAct The receiving '<em><b>Coccidioides Possible Exposure Location Act</b></em>' model object.
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
+   * <!-- begin-model-doc -->
+   * @param coccidioidesPossibleExposureLocationAct The receiving '<em><b>Coccidioides Possible Exposure Location Act</b></em>' model object.
+   * @param diagnostics The chain of diagnostics to which problems are to be appended.
+   * @param context The cache of context-specific information.
+   * <!-- end-model-doc -->
+   * @generated
+   */
 	
 	public static  boolean validateCoccidioidesPossibleExposureLocationActClassCode(CoccidioidesPossibleExposureLocationAct coccidioidesPossibleExposureLocationAct, DiagnosticChain diagnostics, Map<Object, Object> context) {
   	  
-		if (VALIDATE_COCCIDIOIDES_POSSIBLE_EXPOSURE_LOCATION_ACT_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setContext(CocciPackage.Literals.COCCIDIOIDES_POSSIBLE_EXPOSURE_LOCATION_ACT);
-			try {
-				VALIDATE_COCCIDIOIDES_POSSIBLE_EXPOSURE_LOCATION_ACT_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_COCCIDIOIDES_POSSIBLE_EXPOSURE_LOCATION_ACT_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
-				throw new UnsupportedOperationException(pe.getLocalizedMessage());
-			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_COCCIDIOIDES_POSSIBLE_EXPOSURE_LOCATION_ACT_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(coccidioidesPossibleExposureLocationAct)) {
-			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 CocciValidator.DIAGNOSTIC_SOURCE,
-						 CocciValidator.COCCIDIOIDES_POSSIBLE_EXPOSURE_LOCATION_ACT__COCCIDIOIDES_POSSIBLE_EXPOSURE_LOCATION_ACT_CLASS_CODE,
-						 CocciPlugin.INSTANCE.getString("CoccidioidesPossibleExposureLocationActClassCode"),
-						 new Object [] { coccidioidesPossibleExposureLocationAct }));
-			}
-			 
-			return false;
-		}
-		return true;
-	}
+    if (VALIDATE_COCCIDIOIDES_POSSIBLE_EXPOSURE_LOCATION_ACT_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+      OCL.Helper helper = EOCL_ENV.createOCLHelper();
+      helper.setContext(CocciPackage.Literals.COCCIDIOIDES_POSSIBLE_EXPOSURE_LOCATION_ACT);
+      try
+      {
+        VALIDATE_COCCIDIOIDES_POSSIBLE_EXPOSURE_LOCATION_ACT_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_COCCIDIOIDES_POSSIBLE_EXPOSURE_LOCATION_ACT_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+      }
+      catch (ParserException pe)
+      {
+        throw new UnsupportedOperationException(pe.getLocalizedMessage());
+      }
+    }
+    if (!EOCL_ENV.createQuery(VALIDATE_COCCIDIOIDES_POSSIBLE_EXPOSURE_LOCATION_ACT_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(coccidioidesPossibleExposureLocationAct))
+    {
+      if (diagnostics != null)
+      {
+        diagnostics.add
+          (new BasicDiagnostic
+            (Diagnostic.ERROR,
+             CocciValidator.DIAGNOSTIC_SOURCE,
+             CocciValidator.COCCIDIOIDES_POSSIBLE_EXPOSURE_LOCATION_ACT__COCCIDIOIDES_POSSIBLE_EXPOSURE_LOCATION_ACT_CLASS_CODE,
+             CocciPlugin.INSTANCE.getString("CoccidioidesPossibleExposureLocationActClassCode"),
+             new Object [] { coccidioidesPossibleExposureLocationAct }));
+      }
+       
+      return false;
+    }
+    return true;
+  }
 
 	/**
-	 * The cached OCL expression body for the '{@link #validateCoccidioidesPossibleExposureLocationActCode(CoccidioidesPossibleExposureLocationAct, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Coccidioides Possible Exposure Location Act Code</em>}' operation.
-	 * <!-- begin-user-doc -->
+   * The cached OCL expression body for the '{@link #validateCoccidioidesPossibleExposureLocationActCode(CoccidioidesPossibleExposureLocationAct, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Coccidioides Possible Exposure Location Act Code</em>}' operation.
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateCoccidioidesPossibleExposureLocationActCode(CoccidioidesPossibleExposureLocationAct, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
+   * @see #validateCoccidioidesPossibleExposureLocationActCode(CoccidioidesPossibleExposureLocationAct, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+   * @generated
+   * @ordered
+   */
 	protected static final String VALIDATE_COCCIDIOIDES_POSSIBLE_EXPOSURE_LOCATION_ACT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and "+
-"let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in ("+
-"value.code = '413350009' and value.codeSystem = '2.16.840.1.113883.6.96'))";
+"let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in "+
+"value.code = '413350009' and value.codeSystem = '2.16.840.1.113883.6.96')";
 
 	/**
-	 * The cached OCL invariant for the '{@link #validateCoccidioidesPossibleExposureLocationActCode(CoccidioidesPossibleExposureLocationAct, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Coccidioides Possible Exposure Location Act Code</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
+   * The cached OCL invariant for the '{@link #validateCoccidioidesPossibleExposureLocationActCode(CoccidioidesPossibleExposureLocationAct, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Coccidioides Possible Exposure Location Act Code</em>}' invariant operation.
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateCoccidioidesPossibleExposureLocationActCode(CoccidioidesPossibleExposureLocationAct, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
+   * @see #validateCoccidioidesPossibleExposureLocationActCode(CoccidioidesPossibleExposureLocationAct, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+   * @generated
+   * @ordered
+   */
 	
 	protected static Constraint VALIDATE_COCCIDIOIDES_POSSIBLE_EXPOSURE_LOCATION_ACT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 	
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * (self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and 
-	 * let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in (
-	 * value.code = '413350009' and value.codeSystem = '2.16.840.1.113883.6.96'))
-	 * @param coccidioidesPossibleExposureLocationAct The receiving '<em><b>Coccidioides Possible Exposure Location Act</b></em>' model object.
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
+   * <!-- begin-model-doc -->
+   * @param coccidioidesPossibleExposureLocationAct The receiving '<em><b>Coccidioides Possible Exposure Location Act</b></em>' model object.
+   * @param diagnostics The chain of diagnostics to which problems are to be appended.
+   * @param context The cache of context-specific information.
+   * <!-- end-model-doc -->
+   * @generated
+   */
 	
 	public static  boolean validateCoccidioidesPossibleExposureLocationActCode(CoccidioidesPossibleExposureLocationAct coccidioidesPossibleExposureLocationAct, DiagnosticChain diagnostics, Map<Object, Object> context) {
   	  
-		if (VALIDATE_COCCIDIOIDES_POSSIBLE_EXPOSURE_LOCATION_ACT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setContext(CocciPackage.Literals.COCCIDIOIDES_POSSIBLE_EXPOSURE_LOCATION_ACT);
-			try {
-				VALIDATE_COCCIDIOIDES_POSSIBLE_EXPOSURE_LOCATION_ACT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_COCCIDIOIDES_POSSIBLE_EXPOSURE_LOCATION_ACT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
-				throw new UnsupportedOperationException(pe.getLocalizedMessage());
-			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_COCCIDIOIDES_POSSIBLE_EXPOSURE_LOCATION_ACT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(coccidioidesPossibleExposureLocationAct)) {
-			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 CocciValidator.DIAGNOSTIC_SOURCE,
-						 CocciValidator.COCCIDIOIDES_POSSIBLE_EXPOSURE_LOCATION_ACT__COCCIDIOIDES_POSSIBLE_EXPOSURE_LOCATION_ACT_CODE,
-						 CocciPlugin.INSTANCE.getString("CoccidioidesPossibleExposureLocationActCode"),
-						 new Object [] { coccidioidesPossibleExposureLocationAct }));
-			}
-			 
-			return false;
-		}
-		return true;
-	}
+    if (VALIDATE_COCCIDIOIDES_POSSIBLE_EXPOSURE_LOCATION_ACT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+      OCL.Helper helper = EOCL_ENV.createOCLHelper();
+      helper.setContext(CocciPackage.Literals.COCCIDIOIDES_POSSIBLE_EXPOSURE_LOCATION_ACT);
+      try
+      {
+        VALIDATE_COCCIDIOIDES_POSSIBLE_EXPOSURE_LOCATION_ACT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_COCCIDIOIDES_POSSIBLE_EXPOSURE_LOCATION_ACT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+      }
+      catch (ParserException pe)
+      {
+        throw new UnsupportedOperationException(pe.getLocalizedMessage());
+      }
+    }
+    if (!EOCL_ENV.createQuery(VALIDATE_COCCIDIOIDES_POSSIBLE_EXPOSURE_LOCATION_ACT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(coccidioidesPossibleExposureLocationAct))
+    {
+      if (diagnostics != null)
+      {
+        diagnostics.add
+          (new BasicDiagnostic
+            (Diagnostic.ERROR,
+             CocciValidator.DIAGNOSTIC_SOURCE,
+             CocciValidator.COCCIDIOIDES_POSSIBLE_EXPOSURE_LOCATION_ACT__COCCIDIOIDES_POSSIBLE_EXPOSURE_LOCATION_ACT_CODE,
+             CocciPlugin.INSTANCE.getString("CoccidioidesPossibleExposureLocationActCode"),
+             new Object [] { coccidioidesPossibleExposureLocationAct }));
+      }
+       
+      return false;
+    }
+    return true;
+  }
 
 	/**
-	 * The cached OCL expression body for the '{@link #validateCoccidioidesPossibleExposureLocationActMoodCode(CoccidioidesPossibleExposureLocationAct, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Coccidioides Possible Exposure Location Act Mood Code</em>}' operation.
-	 * <!-- begin-user-doc -->
+   * The cached OCL expression body for the '{@link #validateCoccidioidesPossibleExposureLocationActMoodCode(CoccidioidesPossibleExposureLocationAct, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Coccidioides Possible Exposure Location Act Mood Code</em>}' operation.
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateCoccidioidesPossibleExposureLocationActMoodCode(CoccidioidesPossibleExposureLocationAct, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
+   * @see #validateCoccidioidesPossibleExposureLocationActMoodCode(CoccidioidesPossibleExposureLocationAct, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+   * @generated
+   * @ordered
+   */
 	protected static final String VALIDATE_COCCIDIOIDES_POSSIBLE_EXPOSURE_LOCATION_ACT_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.moodCode=vocab::x_DocumentActMood::EVN";
 
 	/**
-	 * The cached OCL invariant for the '{@link #validateCoccidioidesPossibleExposureLocationActMoodCode(CoccidioidesPossibleExposureLocationAct, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Coccidioides Possible Exposure Location Act Mood Code</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
+   * The cached OCL invariant for the '{@link #validateCoccidioidesPossibleExposureLocationActMoodCode(CoccidioidesPossibleExposureLocationAct, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Coccidioides Possible Exposure Location Act Mood Code</em>}' invariant operation.
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateCoccidioidesPossibleExposureLocationActMoodCode(CoccidioidesPossibleExposureLocationAct, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
+   * @see #validateCoccidioidesPossibleExposureLocationActMoodCode(CoccidioidesPossibleExposureLocationAct, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+   * @generated
+   * @ordered
+   */
 	
 	protected static Constraint VALIDATE_COCCIDIOIDES_POSSIBLE_EXPOSURE_LOCATION_ACT_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 	
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.moodCode=vocab::x_DocumentActMood::EVN
-	 * @param coccidioidesPossibleExposureLocationAct The receiving '<em><b>Coccidioides Possible Exposure Location Act</b></em>' model object.
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
+   * <!-- begin-model-doc -->
+   * @param coccidioidesPossibleExposureLocationAct The receiving '<em><b>Coccidioides Possible Exposure Location Act</b></em>' model object.
+   * @param diagnostics The chain of diagnostics to which problems are to be appended.
+   * @param context The cache of context-specific information.
+   * <!-- end-model-doc -->
+   * @generated
+   */
 	
 	public static  boolean validateCoccidioidesPossibleExposureLocationActMoodCode(CoccidioidesPossibleExposureLocationAct coccidioidesPossibleExposureLocationAct, DiagnosticChain diagnostics, Map<Object, Object> context) {
   	  
-		if (VALIDATE_COCCIDIOIDES_POSSIBLE_EXPOSURE_LOCATION_ACT_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setContext(CocciPackage.Literals.COCCIDIOIDES_POSSIBLE_EXPOSURE_LOCATION_ACT);
-			try {
-				VALIDATE_COCCIDIOIDES_POSSIBLE_EXPOSURE_LOCATION_ACT_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_COCCIDIOIDES_POSSIBLE_EXPOSURE_LOCATION_ACT_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
-				throw new UnsupportedOperationException(pe.getLocalizedMessage());
-			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_COCCIDIOIDES_POSSIBLE_EXPOSURE_LOCATION_ACT_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(coccidioidesPossibleExposureLocationAct)) {
-			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 CocciValidator.DIAGNOSTIC_SOURCE,
-						 CocciValidator.COCCIDIOIDES_POSSIBLE_EXPOSURE_LOCATION_ACT__COCCIDIOIDES_POSSIBLE_EXPOSURE_LOCATION_ACT_MOOD_CODE,
-						 CocciPlugin.INSTANCE.getString("CoccidioidesPossibleExposureLocationActMoodCode"),
-						 new Object [] { coccidioidesPossibleExposureLocationAct }));
-			}
-			 
-			return false;
-		}
-		return true;
-	}
+    if (VALIDATE_COCCIDIOIDES_POSSIBLE_EXPOSURE_LOCATION_ACT_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+      OCL.Helper helper = EOCL_ENV.createOCLHelper();
+      helper.setContext(CocciPackage.Literals.COCCIDIOIDES_POSSIBLE_EXPOSURE_LOCATION_ACT);
+      try
+      {
+        VALIDATE_COCCIDIOIDES_POSSIBLE_EXPOSURE_LOCATION_ACT_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_COCCIDIOIDES_POSSIBLE_EXPOSURE_LOCATION_ACT_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+      }
+      catch (ParserException pe)
+      {
+        throw new UnsupportedOperationException(pe.getLocalizedMessage());
+      }
+    }
+    if (!EOCL_ENV.createQuery(VALIDATE_COCCIDIOIDES_POSSIBLE_EXPOSURE_LOCATION_ACT_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(coccidioidesPossibleExposureLocationAct))
+    {
+      if (diagnostics != null)
+      {
+        diagnostics.add
+          (new BasicDiagnostic
+            (Diagnostic.ERROR,
+             CocciValidator.DIAGNOSTIC_SOURCE,
+             CocciValidator.COCCIDIOIDES_POSSIBLE_EXPOSURE_LOCATION_ACT__COCCIDIOIDES_POSSIBLE_EXPOSURE_LOCATION_ACT_MOOD_CODE,
+             CocciPlugin.INSTANCE.getString("CoccidioidesPossibleExposureLocationActMoodCode"),
+             new Object [] { coccidioidesPossibleExposureLocationAct }));
+      }
+       
+      return false;
+    }
+    return true;
+  }
 
 	/**
-	 * The cached OCL expression body for the '{@link #validateCoccidioidesPossibleExposureLocationActStatusCode(CoccidioidesPossibleExposureLocationAct, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Coccidioides Possible Exposure Location Act Status Code</em>}' operation.
-	 * <!-- begin-user-doc -->
+   * The cached OCL expression body for the '{@link #validateCoccidioidesPossibleExposureLocationActStatusCodeP(CoccidioidesPossibleExposureLocationAct, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Coccidioides Possible Exposure Location Act Status Code P</em>}' operation.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #validateCoccidioidesPossibleExposureLocationActStatusCodeP(CoccidioidesPossibleExposureLocationAct, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+   * @generated
+   * @ordered
+   */
+  protected static final String VALIDATE_COCCIDIOIDES_POSSIBLE_EXPOSURE_LOCATION_ACT_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.statusCode.oclIsUndefined() or self.statusCode.isNullFlavorUndefined()) implies (not self.statusCode.oclIsUndefined())";
+
+  /**
+   * The cached OCL invariant for the '{@link #validateCoccidioidesPossibleExposureLocationActStatusCodeP(CoccidioidesPossibleExposureLocationAct, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Coccidioides Possible Exposure Location Act Status Code P</em>}' invariant operation.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #validateCoccidioidesPossibleExposureLocationActStatusCodeP(CoccidioidesPossibleExposureLocationAct, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+   * @generated
+   * @ordered
+   */
+  
+  protected static Constraint VALIDATE_COCCIDIOIDES_POSSIBLE_EXPOSURE_LOCATION_ACT_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * <!-- begin-model-doc -->
+   * @param coccidioidesPossibleExposureLocationAct The receiving '<em><b>Coccidioides Possible Exposure Location Act</b></em>' model object.
+   * @param diagnostics The chain of diagnostics to which problems are to be appended.
+   * @param context The cache of context-specific information.
+   * <!-- end-model-doc -->
+   * @generated
+   */
+  
+  public static  boolean validateCoccidioidesPossibleExposureLocationActStatusCodeP(CoccidioidesPossibleExposureLocationAct coccidioidesPossibleExposureLocationAct, DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+  	  
+    if (VALIDATE_COCCIDIOIDES_POSSIBLE_EXPOSURE_LOCATION_ACT_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+      OCL.Helper helper = EOCL_ENV.createOCLHelper();
+      helper.setContext(CocciPackage.Literals.COCCIDIOIDES_POSSIBLE_EXPOSURE_LOCATION_ACT);
+      try
+      {
+        VALIDATE_COCCIDIOIDES_POSSIBLE_EXPOSURE_LOCATION_ACT_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_COCCIDIOIDES_POSSIBLE_EXPOSURE_LOCATION_ACT_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+      }
+      catch (ParserException pe)
+      {
+        throw new UnsupportedOperationException(pe.getLocalizedMessage());
+      }
+    }
+    if (!EOCL_ENV.createQuery(VALIDATE_COCCIDIOIDES_POSSIBLE_EXPOSURE_LOCATION_ACT_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(coccidioidesPossibleExposureLocationAct))
+    {
+      if (diagnostics != null)
+      {
+        diagnostics.add
+          (new BasicDiagnostic
+            (Diagnostic.ERROR,
+             CocciValidator.DIAGNOSTIC_SOURCE,
+             CocciValidator.COCCIDIOIDES_POSSIBLE_EXPOSURE_LOCATION_ACT__COCCIDIOIDES_POSSIBLE_EXPOSURE_LOCATION_ACT_STATUS_CODE_P,
+             CocciPlugin.INSTANCE.getString("CoccidioidesPossibleExposureLocationActStatusCodeP"),
+             new Object [] { coccidioidesPossibleExposureLocationAct }));
+      }
+      
+      if (context != null) {
+        // generate a pass token for my dependent constraints to short-circuit or filter results
+        @SuppressWarnings("unchecked")
+        Collection<Object> passToken = (Collection<Object>) context.get("org.openhealthtools.mdht.uml.cda.phcr.cocci.CoccidioidesPossibleExposureLocationActStatusCodeP");
+        if (passToken == null) {
+          // anticipate a reasonably healthy model
+          passToken = new java.util.ArrayList<Object>(3);
+          context.put("org.openhealthtools.mdht.uml.cda.phcr.cocci.CoccidioidesPossibleExposureLocationActStatusCodeP", passToken);
+        }
+        passToken.add(coccidioidesPossibleExposureLocationAct);
+      }
+       
+      return false;
+    }
+    return true;
+  }
+
+  /**
+   * The cached OCL expression body for the '{@link #validateCoccidioidesPossibleExposureLocationActStatusCode(CoccidioidesPossibleExposureLocationAct, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Coccidioides Possible Exposure Location Act Status Code</em>}' operation.
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateCoccidioidesPossibleExposureLocationActStatusCode(CoccidioidesPossibleExposureLocationAct, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
-	protected static final String VALIDATE_COCCIDIOIDES_POSSIBLE_EXPOSURE_LOCATION_ACT_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.statusCode.oclIsUndefined() or self.statusCode.isNullFlavorUndefined()) implies (self.statusCode.oclIsKindOf(datatypes::CS) and "+
-"let value : datatypes::CS = self.statusCode.oclAsType(datatypes::CS) in ("+
-"value.code = 'completed'))";
+   * @see #validateCoccidioidesPossibleExposureLocationActStatusCode(CoccidioidesPossibleExposureLocationAct, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+   * @generated
+   * @ordered
+   */
+	protected static final String VALIDATE_COCCIDIOIDES_POSSIBLE_EXPOSURE_LOCATION_ACT_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.statusCode.oclIsUndefined() or self.statusCode.isNullFlavorUndefined()) implies (not self.statusCode.oclIsUndefined() and self.statusCode.oclIsKindOf(datatypes::CS) and "+
+"let value : datatypes::CS = self.statusCode.oclAsType(datatypes::CS) in "+
+"value.code = 'completed')";
 
 	/**
-	 * The cached OCL invariant for the '{@link #validateCoccidioidesPossibleExposureLocationActStatusCode(CoccidioidesPossibleExposureLocationAct, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Coccidioides Possible Exposure Location Act Status Code</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
+   * The cached OCL invariant for the '{@link #validateCoccidioidesPossibleExposureLocationActStatusCode(CoccidioidesPossibleExposureLocationAct, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Coccidioides Possible Exposure Location Act Status Code</em>}' invariant operation.
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateCoccidioidesPossibleExposureLocationActStatusCode(CoccidioidesPossibleExposureLocationAct, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
+   * @see #validateCoccidioidesPossibleExposureLocationActStatusCode(CoccidioidesPossibleExposureLocationAct, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+   * @generated
+   * @ordered
+   */
 	
 	protected static Constraint VALIDATE_COCCIDIOIDES_POSSIBLE_EXPOSURE_LOCATION_ACT_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 	
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * (self.statusCode.oclIsUndefined() or self.statusCode.isNullFlavorUndefined()) implies (self.statusCode.oclIsKindOf(datatypes::CS) and 
-	 * let value : datatypes::CS = self.statusCode.oclAsType(datatypes::CS) in (
-	 * value.code = 'completed'))
-	 * @param coccidioidesPossibleExposureLocationAct The receiving '<em><b>Coccidioides Possible Exposure Location Act</b></em>' model object.
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
+   * <!-- begin-model-doc -->
+   * @param coccidioidesPossibleExposureLocationAct The receiving '<em><b>Coccidioides Possible Exposure Location Act</b></em>' model object.
+   * @param diagnostics The chain of diagnostics to which problems are to be appended.
+   * @param context The cache of context-specific information.
+   * <!-- end-model-doc -->
+   * @generated
+   */
 	
 	public static  boolean validateCoccidioidesPossibleExposureLocationActStatusCode(CoccidioidesPossibleExposureLocationAct coccidioidesPossibleExposureLocationAct, DiagnosticChain diagnostics, Map<Object, Object> context) {
   	  
-		if (VALIDATE_COCCIDIOIDES_POSSIBLE_EXPOSURE_LOCATION_ACT_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setContext(CocciPackage.Literals.COCCIDIOIDES_POSSIBLE_EXPOSURE_LOCATION_ACT);
-			try {
-				VALIDATE_COCCIDIOIDES_POSSIBLE_EXPOSURE_LOCATION_ACT_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_COCCIDIOIDES_POSSIBLE_EXPOSURE_LOCATION_ACT_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
-				throw new UnsupportedOperationException(pe.getLocalizedMessage());
-			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_COCCIDIOIDES_POSSIBLE_EXPOSURE_LOCATION_ACT_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(coccidioidesPossibleExposureLocationAct)) {
-			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 CocciValidator.DIAGNOSTIC_SOURCE,
-						 CocciValidator.COCCIDIOIDES_POSSIBLE_EXPOSURE_LOCATION_ACT__COCCIDIOIDES_POSSIBLE_EXPOSURE_LOCATION_ACT_STATUS_CODE,
-						 CocciPlugin.INSTANCE.getString("CoccidioidesPossibleExposureLocationActStatusCode"),
-						 new Object [] { coccidioidesPossibleExposureLocationAct }));
-			}
-			 
-			return false;
-		}
-		return true;
-	}
+    Object passToken = (context == null) ? null : context.get("org.openhealthtools.mdht.uml.cda.phcr.cocci.CoccidioidesPossibleExposureLocationActStatusCodeP");
+    if ((passToken instanceof Collection<?>) && ((Collection<?>) passToken).contains(coccidioidesPossibleExposureLocationAct)) {
+      // I have a free pass to short-circuit
+      return true;
+    }
+  	  
+    if (VALIDATE_COCCIDIOIDES_POSSIBLE_EXPOSURE_LOCATION_ACT_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+      OCL.Helper helper = EOCL_ENV.createOCLHelper();
+      helper.setContext(CocciPackage.Literals.COCCIDIOIDES_POSSIBLE_EXPOSURE_LOCATION_ACT);
+      try
+      {
+        VALIDATE_COCCIDIOIDES_POSSIBLE_EXPOSURE_LOCATION_ACT_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_COCCIDIOIDES_POSSIBLE_EXPOSURE_LOCATION_ACT_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+      }
+      catch (ParserException pe)
+      {
+        throw new UnsupportedOperationException(pe.getLocalizedMessage());
+      }
+    }
+    if (!EOCL_ENV.createQuery(VALIDATE_COCCIDIOIDES_POSSIBLE_EXPOSURE_LOCATION_ACT_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(coccidioidesPossibleExposureLocationAct))
+    {
+      if (diagnostics != null)
+      {
+        diagnostics.add
+          (new BasicDiagnostic
+            (Diagnostic.ERROR,
+             CocciValidator.DIAGNOSTIC_SOURCE,
+             CocciValidator.COCCIDIOIDES_POSSIBLE_EXPOSURE_LOCATION_ACT__COCCIDIOIDES_POSSIBLE_EXPOSURE_LOCATION_ACT_STATUS_CODE,
+             CocciPlugin.INSTANCE.getString("CoccidioidesPossibleExposureLocationActStatusCode"),
+             new Object [] { coccidioidesPossibleExposureLocationAct }));
+      }
+       
+      return false;
+    }
+    return true;
+  }
 
 } // CoccidioidesPossibleExposureLocationActOperations

@@ -1,20 +1,21 @@
-/*******************************************************************************
- * Copyright (c) 2012, Public Health Data Standards Consortium (PHDSC)
- * All rights reserved. This program and the accompanying materials
- * are made available under the terms of the Eclipse Public License v1.0
- * which accompanies this distribution, and is available at
- * http://www.eclipse.org/legal/epl-v10.html
+/**
+ * <copyright>
+ * </copyright>
  *
- * Contributors:
- *     PHDSC - initial API and implementation
- *******************************************************************************/
+ * $Id$
+ */
 package org.openhealthtools.mdht.uml.cda.phcr.chlamydiatrachomatis.impl;
+
+import java.lang.Iterable;
 
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
 
 import org.eclipse.emf.ecore.EClass;
+import org.eclipse.emf.ecore.EObject;
+
+import org.openhealthtools.mdht.emf.runtime.util.Initializer;
 
 import org.openhealthtools.mdht.uml.cda.phcr.chlamydiatrachomatis.ChlamydiatrachomatisCaseObservation;
 import org.openhealthtools.mdht.uml.cda.phcr.chlamydiatrachomatis.ChlamydiatrachomatisPackage;
@@ -22,8 +23,6 @@ import org.openhealthtools.mdht.uml.cda.phcr.chlamydiatrachomatis.Chlamydiatrach
 import org.openhealthtools.mdht.uml.cda.phcr.chlamydiatrachomatis.operations.ChlamydiatrachomatisCaseObservationOperations;
 
 import org.openhealthtools.mdht.uml.cda.phcr.impl.CaseObservationImpl;
-
-import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
 
 /**
  * <!-- begin-user-doc -->
@@ -34,53 +33,75 @@ import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
  *
  * @generated
  */
-public class ChlamydiatrachomatisCaseObservationImpl extends CaseObservationImpl implements ChlamydiatrachomatisCaseObservation {
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	protected ChlamydiatrachomatisCaseObservationImpl() {
-		super();
-	}
+public class ChlamydiatrachomatisCaseObservationImpl extends CaseObservationImpl implements ChlamydiatrachomatisCaseObservation
+{
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  protected ChlamydiatrachomatisCaseObservationImpl()
+  {
+    super();
+  }
 
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	protected EClass eStaticClass() {
-		return ChlamydiatrachomatisPackage.Literals.CHLAMYDIATRACHOMATIS_CASE_OBSERVATION;
-	}
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  @Override
+  protected EClass eStaticClass()
+  {
+    return ChlamydiatrachomatisPackage.Literals.CHLAMYDIATRACHOMATIS_CASE_OBSERVATION;
+  }
 
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public boolean validateProblemObservationTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ChlamydiatrachomatisCaseObservationOperations.validateProblemObservationTemplateId(this, diagnostics, context);
-	}
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public boolean validateChlamydiatrachomatisCaseObservationValueP(DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+    return ChlamydiatrachomatisCaseObservationOperations.validateChlamydiatrachomatisCaseObservationValueP(this, diagnostics, context);
+  }
 
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public boolean validateCaseObservationValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ChlamydiatrachomatisCaseObservationOperations.validateCaseObservationValue(this, diagnostics, context);
-	}
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public boolean validateChlamydiatrachomatisCaseObservationValue(DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+    return ChlamydiatrachomatisCaseObservationOperations.validateChlamydiatrachomatisCaseObservationValue(this, diagnostics, context);
+  }
 
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public ChlamydiatrachomatisCaseObservation init() {
-    	CDAUtil.init(this);
-    	return this;
-	}
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  @Override
+  public boolean validateProblemObservationTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+    return ChlamydiatrachomatisCaseObservationOperations.validateProblemObservationTemplateId(this, diagnostics, context);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public ChlamydiatrachomatisCaseObservation init() {
+      return Initializer.Util.init(this);
+  }
+    /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    public ChlamydiatrachomatisCaseObservation init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
 } //ChlamydiatrachomatisCaseObservationImpl

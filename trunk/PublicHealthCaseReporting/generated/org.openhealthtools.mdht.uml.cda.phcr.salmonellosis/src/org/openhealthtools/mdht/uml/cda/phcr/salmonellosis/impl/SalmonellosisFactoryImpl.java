@@ -1,32 +1,20 @@
-/*******************************************************************************
- * Copyright (c) 2012, Public Health Data Standards Consortium (PHDSC)
- * All rights reserved. This program and the accompanying materials
- * are made available under the terms of the Eclipse Public License v1.0
- * which accompanies this distribution, and is available at
- * http://www.eclipse.org/legal/epl-v10.html
+/**
+ * <copyright>
+ * </copyright>
  *
- * Contributors:
- *     PHDSC - initial API and implementation
- *******************************************************************************/
+ * $Id$
+ */
 package org.openhealthtools.mdht.uml.cda.phcr.salmonellosis.impl;
 
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EObject;
 import org.eclipse.emf.ecore.EPackage;
+
 import org.eclipse.emf.ecore.impl.EFactoryImpl;
+
 import org.eclipse.emf.ecore.plugin.EcorePlugin;
-import org.openhealthtools.mdht.uml.cda.phcr.salmonellosis.HIVStatusObservation;
-import org.openhealthtools.mdht.uml.cda.phcr.salmonellosis.SalmonellosisCaseObservation;
-import org.openhealthtools.mdht.uml.cda.phcr.salmonellosis.SalmonellosisCaseReport;
-import org.openhealthtools.mdht.uml.cda.phcr.salmonellosis.SalmonellosisFactory;
-import org.openhealthtools.mdht.uml.cda.phcr.salmonellosis.SalmonellosisPHCRClinicalInformationSection;
-import org.openhealthtools.mdht.uml.cda.phcr.salmonellosis.SalmonellosisPHCRRelevantDxTestsSection;
-import org.openhealthtools.mdht.uml.cda.phcr.salmonellosis.SalmonellosisPHCRSocialHistorySection;
-import org.openhealthtools.mdht.uml.cda.phcr.salmonellosis.SalmonellosisPackage;
-import org.openhealthtools.mdht.uml.cda.phcr.salmonellosis.SalmonellosisPossibleExposureLocationAndTypeAct;
-import org.openhealthtools.mdht.uml.cda.phcr.salmonellosis.SalmonellosisResultObservation;
-import org.openhealthtools.mdht.uml.cda.phcr.salmonellosis.SalmonellosisResultOrganizer;
-import org.openhealthtools.mdht.uml.cda.phcr.salmonellosis.SalmonellosisSignsAndSymptomsObservation;
+
+import org.openhealthtools.mdht.uml.cda.phcr.salmonellosis.*;
 
 /**
  * <!-- begin-user-doc -->
@@ -34,14 +22,16 @@ import org.openhealthtools.mdht.uml.cda.phcr.salmonellosis.SalmonellosisSignsAnd
  * <!-- end-user-doc -->
  * @generated
  */
-public class SalmonellosisFactoryImpl extends EFactoryImpl implements SalmonellosisFactory {
-	/**
+public class SalmonellosisFactoryImpl extends EFactoryImpl implements SalmonellosisFactory
+{
+  /**
    * Creates the default factory implementation.
    * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+   * <!-- end-user-doc -->
    * @generated
    */
-	public static SalmonellosisFactory init() {
+  public static SalmonellosisFactory init()
+  {
     try
     {
       SalmonellosisFactory theSalmonellosisFactory = (SalmonellosisFactory)EPackage.Registry.INSTANCE.getEFactory("http://www.openhealthtools.org/mdht/uml/cda/phcr/salmonellosis"); 
@@ -57,23 +47,25 @@ public class SalmonellosisFactoryImpl extends EFactoryImpl implements Salmonello
     return new SalmonellosisFactoryImpl();
   }
 
-	/**
+  /**
    * Creates an instance of the factory.
    * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+   * <!-- end-user-doc -->
    * @generated
    */
-	public SalmonellosisFactoryImpl() {
+  public SalmonellosisFactoryImpl()
+  {
     super();
   }
 
-	/**
+  /**
    * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+   * <!-- end-user-doc -->
    * @generated
    */
-	@Override
-	public EObject create(EClass eClass) {
+  @Override
+  public EObject create(EClass eClass)
+  {
     switch (eClass.getClassifierID())
     {
       case SalmonellosisPackage.SALMONELLOSIS_CASE_REPORT: return createSalmonellosisCaseReport();
@@ -91,123 +83,135 @@ public class SalmonellosisFactoryImpl extends EFactoryImpl implements Salmonello
     }
   }
 
-	/**
+  /**
    * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+   * <!-- end-user-doc -->
    * @generated
    */
-	public SalmonellosisCaseReport createSalmonellosisCaseReport() {
+  public SalmonellosisCaseReport createSalmonellosisCaseReport()
+  {
     SalmonellosisCaseReportImpl salmonellosisCaseReport = new SalmonellosisCaseReportImpl();
     return salmonellosisCaseReport;
   }
 
-	/**
+  /**
    * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+   * <!-- end-user-doc -->
    * @generated
    */
-	public SalmonellosisPHCRSocialHistorySection createSalmonellosisPHCRSocialHistorySection() {
+  public SalmonellosisPHCRSocialHistorySection createSalmonellosisPHCRSocialHistorySection()
+  {
     SalmonellosisPHCRSocialHistorySectionImpl salmonellosisPHCRSocialHistorySection = new SalmonellosisPHCRSocialHistorySectionImpl();
     return salmonellosisPHCRSocialHistorySection;
   }
 
-	/**
+  /**
    * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+   * <!-- end-user-doc -->
    * @generated
    */
-	public SalmonellosisPHCRRelevantDxTestsSection createSalmonellosisPHCRRelevantDxTestsSection() {
-    SalmonellosisPHCRRelevantDxTestsSectionImpl salmonellosisPHCRRelevantDxTestsSection = new SalmonellosisPHCRRelevantDxTestsSectionImpl();
-    return salmonellosisPHCRRelevantDxTestsSection;
-  }
-
-	/**
-   * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-   * @generated
-   */
-	public SalmonellosisResultOrganizer createSalmonellosisResultOrganizer() {
-    SalmonellosisResultOrganizerImpl salmonellosisResultOrganizer = new SalmonellosisResultOrganizerImpl();
-    return salmonellosisResultOrganizer;
-  }
-
-	/**
-   * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-   * @generated
-   */
-	public SalmonellosisResultObservation createSalmonellosisResultObservation() {
-    SalmonellosisResultObservationImpl salmonellosisResultObservation = new SalmonellosisResultObservationImpl();
-    return salmonellosisResultObservation;
-  }
-
-	/**
-   * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-   * @generated
-   */
-	public SalmonellosisPHCRClinicalInformationSection createSalmonellosisPHCRClinicalInformationSection() {
-    SalmonellosisPHCRClinicalInformationSectionImpl salmonellosisPHCRClinicalInformationSection = new SalmonellosisPHCRClinicalInformationSectionImpl();
-    return salmonellosisPHCRClinicalInformationSection;
-  }
-
-	/**
-   * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-   * @generated
-   */
-	public SalmonellosisCaseObservation createSalmonellosisCaseObservation() {
-    SalmonellosisCaseObservationImpl salmonellosisCaseObservation = new SalmonellosisCaseObservationImpl();
-    return salmonellosisCaseObservation;
-  }
-
-	/**
-   * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-   * @generated
-   */
-	public SalmonellosisSignsAndSymptomsObservation createSalmonellosisSignsAndSymptomsObservation() {
-    SalmonellosisSignsAndSymptomsObservationImpl salmonellosisSignsAndSymptomsObservation = new SalmonellosisSignsAndSymptomsObservationImpl();
-    return salmonellosisSignsAndSymptomsObservation;
-  }
-
-	/**
-   * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-   * @generated
-   */
-	public SalmonellosisPossibleExposureLocationAndTypeAct createSalmonellosisPossibleExposureLocationAndTypeAct() {
+  public SalmonellosisPossibleExposureLocationAndTypeAct createSalmonellosisPossibleExposureLocationAndTypeAct()
+  {
     SalmonellosisPossibleExposureLocationAndTypeActImpl salmonellosisPossibleExposureLocationAndTypeAct = new SalmonellosisPossibleExposureLocationAndTypeActImpl();
     return salmonellosisPossibleExposureLocationAndTypeAct;
   }
 
-	/**
+  /**
    * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+   * <!-- end-user-doc -->
    * @generated
    */
-	public HIVStatusObservation createHIVStatusObservation() {
+  public HIVStatusObservation createHIVStatusObservation()
+  {
     HIVStatusObservationImpl hivStatusObservation = new HIVStatusObservationImpl();
     return hivStatusObservation;
   }
 
-	/**
+  /**
    * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+   * <!-- end-user-doc -->
    * @generated
    */
-	public SalmonellosisPackage getSalmonellosisPackage() {
+  public SalmonellosisPHCRRelevantDxTestsSection createSalmonellosisPHCRRelevantDxTestsSection()
+  {
+    SalmonellosisPHCRRelevantDxTestsSectionImpl salmonellosisPHCRRelevantDxTestsSection = new SalmonellosisPHCRRelevantDxTestsSectionImpl();
+    return salmonellosisPHCRRelevantDxTestsSection;
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public SalmonellosisResultOrganizer createSalmonellosisResultOrganizer()
+  {
+    SalmonellosisResultOrganizerImpl salmonellosisResultOrganizer = new SalmonellosisResultOrganizerImpl();
+    return salmonellosisResultOrganizer;
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public SalmonellosisResultObservation createSalmonellosisResultObservation()
+  {
+    SalmonellosisResultObservationImpl salmonellosisResultObservation = new SalmonellosisResultObservationImpl();
+    return salmonellosisResultObservation;
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public SalmonellosisPHCRClinicalInformationSection createSalmonellosisPHCRClinicalInformationSection()
+  {
+    SalmonellosisPHCRClinicalInformationSectionImpl salmonellosisPHCRClinicalInformationSection = new SalmonellosisPHCRClinicalInformationSectionImpl();
+    return salmonellosisPHCRClinicalInformationSection;
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public SalmonellosisCaseObservation createSalmonellosisCaseObservation()
+  {
+    SalmonellosisCaseObservationImpl salmonellosisCaseObservation = new SalmonellosisCaseObservationImpl();
+    return salmonellosisCaseObservation;
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public SalmonellosisSignsAndSymptomsObservation createSalmonellosisSignsAndSymptomsObservation()
+  {
+    SalmonellosisSignsAndSymptomsObservationImpl salmonellosisSignsAndSymptomsObservation = new SalmonellosisSignsAndSymptomsObservationImpl();
+    return salmonellosisSignsAndSymptomsObservation;
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public SalmonellosisPackage getSalmonellosisPackage()
+  {
     return (SalmonellosisPackage)getEPackage();
   }
 
-	/**
+  /**
    * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+   * <!-- end-user-doc -->
    * @deprecated
    * @generated
    */
-	@Deprecated
-	public static SalmonellosisPackage getPackage() {
+  @Deprecated
+  public static SalmonellosisPackage getPackage()
+  {
     return SalmonellosisPackage.eINSTANCE;
   }
 

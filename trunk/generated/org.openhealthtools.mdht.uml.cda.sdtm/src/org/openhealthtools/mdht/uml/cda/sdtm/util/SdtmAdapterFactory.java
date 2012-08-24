@@ -20,6 +20,7 @@ import org.openhealthtools.mdht.uml.cda.Encounter;
 import org.openhealthtools.mdht.uml.cda.Observation;
 import org.openhealthtools.mdht.uml.cda.Organizer;
 import org.openhealthtools.mdht.uml.cda.Participant1;
+import org.openhealthtools.mdht.uml.cda.Participant2;
 import org.openhealthtools.mdht.uml.cda.Procedure;
 import org.openhealthtools.mdht.uml.cda.Section;
 import org.openhealthtools.mdht.uml.cda.SubstanceAdministration;
@@ -164,11 +165,6 @@ public class SdtmAdapterFactory extends AdapterFactoryImpl
         return createVitalSignAdapter();
       }
       @Override
-      public Adapter casePlannedStudyDay(PlannedStudyDay object)
-      {
-        return createPlannedStudyDayAdapter();
-      }
-      @Override
       public Adapter caseTimingReference(TimingReference object)
       {
         return createTimingReferenceAdapter();
@@ -179,19 +175,19 @@ public class SdtmAdapterFactory extends AdapterFactoryImpl
         return createNonPerformanceReasonAdapter();
       }
       @Override
+      public Adapter casePlannedStudyDay(PlannedStudyDay object)
+      {
+        return createPlannedStudyDayAdapter();
+      }
+      @Override
+      public Adapter caseExclusionReason(ExclusionReason object)
+      {
+        return createExclusionReasonAdapter();
+      }
+      @Override
       public Adapter caseECGTestResult(ECGTestResult object)
       {
         return createECGTestResultAdapter();
-      }
-      @Override
-      public Adapter caseBaselineIndicator(BaselineIndicator object)
-      {
-        return createBaselineIndicatorAdapter();
-      }
-      @Override
-      public Adapter caseDerivedDataIndicator(DerivedDataIndicator object)
-      {
-        return createDerivedDataIndicatorAdapter();
       }
       @Override
       public Adapter caseInclusionorExclusionCriteriaNotMet(InclusionorExclusionCriteriaNotMet object)
@@ -199,9 +195,9 @@ public class SdtmAdapterFactory extends AdapterFactoryImpl
         return createInclusionorExclusionCriteriaNotMetAdapter();
       }
       @Override
-      public Adapter caseNonHumanLaboratoryTestResult(NonHumanLaboratoryTestResult object)
+      public Adapter caseNonhumanLaboratoryTestResult(NonhumanLaboratoryTestResult object)
       {
-        return createNonHumanLaboratoryTestResultAdapter();
+        return createNonhumanLaboratoryTestResultAdapter();
       }
       @Override
       public Adapter caseSpecimenInformation(SpecimenInformation object)
@@ -309,9 +305,9 @@ public class SdtmAdapterFactory extends AdapterFactoryImpl
         return createHumanClinicalExposureAdapter();
       }
       @Override
-      public Adapter caseStudyTestPerformer(StudyTestPerformer object)
+      public Adapter caseStudyTestOrganization(StudyTestOrganization object)
       {
-        return createStudyTestPerformerAdapter();
+        return createStudyTestOrganizationAdapter();
       }
       @Override
       public Adapter caseQuestionnaireFinding(QuestionnaireFinding object)
@@ -329,24 +325,24 @@ public class SdtmAdapterFactory extends AdapterFactoryImpl
         return createSubjectDataNonClinicalTrialsAdapter();
       }
       @Override
-      public Adapter caseNonHumanSubjectDataDocumentBody(NonHumanSubjectDataDocumentBody object)
+      public Adapter caseNonhumanSubjectDataDocumentBody(NonhumanSubjectDataDocumentBody object)
       {
-        return createNonHumanSubjectDataDocumentBodyAdapter();
+        return createNonhumanSubjectDataDocumentBodyAdapter();
       }
       @Override
-      public Adapter caseNonHumanExposure(NonHumanExposure object)
+      public Adapter caseNonhumanSubjectDemographics(NonhumanSubjectDemographics object)
       {
-        return createNonHumanExposureAdapter();
+        return createNonhumanSubjectDemographicsAdapter();
       }
       @Override
-      public Adapter caseNonHumanDisposition(NonHumanDisposition object)
+      public Adapter caseNonhumanDisposition(NonhumanDisposition object)
       {
-        return createNonHumanDispositionAdapter();
+        return createNonhumanDispositionAdapter();
       }
       @Override
-      public Adapter caseHumanClinicalLaboratoryTestResult(HumanClinicalLaboratoryTestResult object)
+      public Adapter caseNonhumanExposure(NonhumanExposure object)
       {
-        return createHumanClinicalLaboratoryTestResultAdapter();
+        return createNonhumanExposureAdapter();
       }
       @Override
       public Adapter caseBodyWeight(BodyWeight object)
@@ -379,9 +375,9 @@ public class SdtmAdapterFactory extends AdapterFactoryImpl
         return createMacroscopicFindingAdapter();
       }
       @Override
-      public Adapter caseMicroscopicFindings(MicroscopicFindings object)
+      public Adapter caseMicroscopicFinding(MicroscopicFinding object)
       {
-        return createMicroscopicFindingsAdapter();
+        return createMicroscopicFindingAdapter();
       }
       @Override
       public Adapter caseOrganMeasurement(OrganMeasurement object)
@@ -399,9 +395,34 @@ public class SdtmAdapterFactory extends AdapterFactoryImpl
         return createTumorFindingAdapter();
       }
       @Override
+      public Adapter caseHumanClinicalLaboratoryTestResult(HumanClinicalLaboratoryTestResult object)
+      {
+        return createHumanClinicalLaboratoryTestResultAdapter();
+      }
+      @Override
       public Adapter caseSubjectPool(SubjectPool object)
       {
         return createSubjectPoolAdapter();
+      }
+      @Override
+      public Adapter caseMassIdentification(MassIdentification object)
+      {
+        return createMassIdentificationAdapter();
+      }
+      @Override
+      public Adapter caseStudySubjectIntervention(StudySubjectIntervention object)
+      {
+        return createStudySubjectInterventionAdapter();
+      }
+      @Override
+      public Adapter caseStudySubjectEvent(StudySubjectEvent object)
+      {
+        return createStudySubjectEventAdapter();
+      }
+      @Override
+      public Adapter caseStudySubjectFinding(StudySubjectFinding object)
+      {
+        return createStudySubjectFindingAdapter();
       }
       @Override
       public Adapter caseInfrastructureRoot(InfrastructureRoot object)
@@ -472,6 +493,11 @@ public class SdtmAdapterFactory extends AdapterFactoryImpl
       public Adapter caseParticipant1(Participant1 object)
       {
         return createParticipant1Adapter();
+      }
+      @Override
+      public Adapter caseParticipant2(Participant2 object)
+      {
+        return createParticipant2Adapter();
       }
       @Override
       public Adapter defaultCase(EObject object)
@@ -721,6 +747,21 @@ public class SdtmAdapterFactory extends AdapterFactoryImpl
   }
 
   /**
+   * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.sdtm.ExclusionReason <em>Exclusion Reason</em>}'.
+   * <!-- begin-user-doc -->
+   * This default implementation returns null so that we can easily ignore cases;
+   * it's useful to ignore a case when inheritance will catch all the cases anyway.
+   * <!-- end-user-doc -->
+   * @return the new adapter.
+   * @see org.openhealthtools.mdht.uml.cda.sdtm.ExclusionReason
+   * @generated
+   */
+  public Adapter createExclusionReasonAdapter()
+  {
+    return null;
+  }
+
+  /**
    * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.sdtm.TimingReference <em>Timing Reference</em>}'.
    * <!-- begin-user-doc -->
    * This default implementation returns null so that we can easily ignore cases;
@@ -766,36 +807,6 @@ public class SdtmAdapterFactory extends AdapterFactoryImpl
   }
 
   /**
-   * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.sdtm.BaselineIndicator <em>Baseline Indicator</em>}'.
-   * <!-- begin-user-doc -->
-   * This default implementation returns null so that we can easily ignore cases;
-   * it's useful to ignore a case when inheritance will catch all the cases anyway.
-   * <!-- end-user-doc -->
-   * @return the new adapter.
-   * @see org.openhealthtools.mdht.uml.cda.sdtm.BaselineIndicator
-   * @generated
-   */
-  public Adapter createBaselineIndicatorAdapter()
-  {
-    return null;
-  }
-
-  /**
-   * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.sdtm.DerivedDataIndicator <em>Derived Data Indicator</em>}'.
-   * <!-- begin-user-doc -->
-   * This default implementation returns null so that we can easily ignore cases;
-   * it's useful to ignore a case when inheritance will catch all the cases anyway.
-   * <!-- end-user-doc -->
-   * @return the new adapter.
-   * @see org.openhealthtools.mdht.uml.cda.sdtm.DerivedDataIndicator
-   * @generated
-   */
-  public Adapter createDerivedDataIndicatorAdapter()
-  {
-    return null;
-  }
-
-  /**
    * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.sdtm.InclusionorExclusionCriteriaNotMet <em>Inclusionor Exclusion Criteria Not Met</em>}'.
    * <!-- begin-user-doc -->
    * This default implementation returns null so that we can easily ignore cases;
@@ -811,16 +822,16 @@ public class SdtmAdapterFactory extends AdapterFactoryImpl
   }
 
   /**
-   * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.sdtm.NonHumanLaboratoryTestResult <em>Non Human Laboratory Test Result</em>}'.
+   * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.sdtm.NonhumanLaboratoryTestResult <em>Nonhuman Laboratory Test Result</em>}'.
    * <!-- begin-user-doc -->
    * This default implementation returns null so that we can easily ignore cases;
    * it's useful to ignore a case when inheritance will catch all the cases anyway.
    * <!-- end-user-doc -->
    * @return the new adapter.
-   * @see org.openhealthtools.mdht.uml.cda.sdtm.NonHumanLaboratoryTestResult
+   * @see org.openhealthtools.mdht.uml.cda.sdtm.NonhumanLaboratoryTestResult
    * @generated
    */
-  public Adapter createNonHumanLaboratoryTestResultAdapter()
+  public Adapter createNonhumanLaboratoryTestResultAdapter()
   {
     return null;
   }
@@ -1141,16 +1152,16 @@ public class SdtmAdapterFactory extends AdapterFactoryImpl
   }
 
   /**
-   * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.sdtm.StudyTestPerformer <em>Study Test Performer</em>}'.
+   * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.sdtm.StudyTestOrganization <em>Study Test Organization</em>}'.
    * <!-- begin-user-doc -->
    * This default implementation returns null so that we can easily ignore cases;
    * it's useful to ignore a case when inheritance will catch all the cases anyway.
    * <!-- end-user-doc -->
    * @return the new adapter.
-   * @see org.openhealthtools.mdht.uml.cda.sdtm.StudyTestPerformer
+   * @see org.openhealthtools.mdht.uml.cda.sdtm.StudyTestOrganization
    * @generated
    */
-  public Adapter createStudyTestPerformerAdapter()
+  public Adapter createStudyTestOrganizationAdapter()
   {
     return null;
   }
@@ -1201,46 +1212,61 @@ public class SdtmAdapterFactory extends AdapterFactoryImpl
   }
 
   /**
-   * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.sdtm.NonHumanSubjectDataDocumentBody <em>Non Human Subject Data Document Body</em>}'.
+   * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.sdtm.NonhumanSubjectDataDocumentBody <em>Nonhuman Subject Data Document Body</em>}'.
    * <!-- begin-user-doc -->
    * This default implementation returns null so that we can easily ignore cases;
    * it's useful to ignore a case when inheritance will catch all the cases anyway.
    * <!-- end-user-doc -->
    * @return the new adapter.
-   * @see org.openhealthtools.mdht.uml.cda.sdtm.NonHumanSubjectDataDocumentBody
+   * @see org.openhealthtools.mdht.uml.cda.sdtm.NonhumanSubjectDataDocumentBody
    * @generated
    */
-  public Adapter createNonHumanSubjectDataDocumentBodyAdapter()
+  public Adapter createNonhumanSubjectDataDocumentBodyAdapter()
   {
     return null;
   }
 
   /**
-   * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.sdtm.NonHumanExposure <em>Non Human Exposure</em>}'.
+   * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.sdtm.NonhumanSubjectDemographics <em>Nonhuman Subject Demographics</em>}'.
    * <!-- begin-user-doc -->
    * This default implementation returns null so that we can easily ignore cases;
    * it's useful to ignore a case when inheritance will catch all the cases anyway.
    * <!-- end-user-doc -->
    * @return the new adapter.
-   * @see org.openhealthtools.mdht.uml.cda.sdtm.NonHumanExposure
+   * @see org.openhealthtools.mdht.uml.cda.sdtm.NonhumanSubjectDemographics
    * @generated
    */
-  public Adapter createNonHumanExposureAdapter()
+  public Adapter createNonhumanSubjectDemographicsAdapter()
   {
     return null;
   }
 
   /**
-   * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.sdtm.NonHumanDisposition <em>Non Human Disposition</em>}'.
+   * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.sdtm.NonhumanDisposition <em>Nonhuman Disposition</em>}'.
    * <!-- begin-user-doc -->
    * This default implementation returns null so that we can easily ignore cases;
    * it's useful to ignore a case when inheritance will catch all the cases anyway.
    * <!-- end-user-doc -->
    * @return the new adapter.
-   * @see org.openhealthtools.mdht.uml.cda.sdtm.NonHumanDisposition
+   * @see org.openhealthtools.mdht.uml.cda.sdtm.NonhumanDisposition
    * @generated
    */
-  public Adapter createNonHumanDispositionAdapter()
+  public Adapter createNonhumanDispositionAdapter()
+  {
+    return null;
+  }
+
+  /**
+   * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.sdtm.NonhumanExposure <em>Nonhuman Exposure</em>}'.
+   * <!-- begin-user-doc -->
+   * This default implementation returns null so that we can easily ignore cases;
+   * it's useful to ignore a case when inheritance will catch all the cases anyway.
+   * <!-- end-user-doc -->
+   * @return the new adapter.
+   * @see org.openhealthtools.mdht.uml.cda.sdtm.NonhumanExposure
+   * @generated
+   */
+  public Adapter createNonhumanExposureAdapter()
   {
     return null;
   }
@@ -1351,16 +1377,16 @@ public class SdtmAdapterFactory extends AdapterFactoryImpl
   }
 
   /**
-   * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.sdtm.MicroscopicFindings <em>Microscopic Findings</em>}'.
+   * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.sdtm.MicroscopicFinding <em>Microscopic Finding</em>}'.
    * <!-- begin-user-doc -->
    * This default implementation returns null so that we can easily ignore cases;
    * it's useful to ignore a case when inheritance will catch all the cases anyway.
    * <!-- end-user-doc -->
    * @return the new adapter.
-   * @see org.openhealthtools.mdht.uml.cda.sdtm.MicroscopicFindings
+   * @see org.openhealthtools.mdht.uml.cda.sdtm.MicroscopicFinding
    * @generated
    */
-  public Adapter createMicroscopicFindingsAdapter()
+  public Adapter createMicroscopicFindingAdapter()
   {
     return null;
   }
@@ -1421,6 +1447,66 @@ public class SdtmAdapterFactory extends AdapterFactoryImpl
    * @generated
    */
   public Adapter createSubjectPoolAdapter()
+  {
+    return null;
+  }
+
+  /**
+   * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.sdtm.MassIdentification <em>Mass Identification</em>}'.
+   * <!-- begin-user-doc -->
+   * This default implementation returns null so that we can easily ignore cases;
+   * it's useful to ignore a case when inheritance will catch all the cases anyway.
+   * <!-- end-user-doc -->
+   * @return the new adapter.
+   * @see org.openhealthtools.mdht.uml.cda.sdtm.MassIdentification
+   * @generated
+   */
+  public Adapter createMassIdentificationAdapter()
+  {
+    return null;
+  }
+
+  /**
+   * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.sdtm.StudySubjectIntervention <em>Study Subject Intervention</em>}'.
+   * <!-- begin-user-doc -->
+   * This default implementation returns null so that we can easily ignore cases;
+   * it's useful to ignore a case when inheritance will catch all the cases anyway.
+   * <!-- end-user-doc -->
+   * @return the new adapter.
+   * @see org.openhealthtools.mdht.uml.cda.sdtm.StudySubjectIntervention
+   * @generated
+   */
+  public Adapter createStudySubjectInterventionAdapter()
+  {
+    return null;
+  }
+
+  /**
+   * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.sdtm.StudySubjectEvent <em>Study Subject Event</em>}'.
+   * <!-- begin-user-doc -->
+   * This default implementation returns null so that we can easily ignore cases;
+   * it's useful to ignore a case when inheritance will catch all the cases anyway.
+   * <!-- end-user-doc -->
+   * @return the new adapter.
+   * @see org.openhealthtools.mdht.uml.cda.sdtm.StudySubjectEvent
+   * @generated
+   */
+  public Adapter createStudySubjectEventAdapter()
+  {
+    return null;
+  }
+
+  /**
+   * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.sdtm.StudySubjectFinding <em>Study Subject Finding</em>}'.
+   * <!-- begin-user-doc -->
+   * This default implementation returns null so that we can easily ignore cases;
+   * it's useful to ignore a case when inheritance will catch all the cases anyway.
+   * <!-- end-user-doc -->
+   * @return the new adapter.
+   * @see org.openhealthtools.mdht.uml.cda.sdtm.StudySubjectFinding
+   * @generated
+   */
+  public Adapter createStudySubjectFindingAdapter()
   {
     return null;
   }
@@ -1631,6 +1717,21 @@ public class SdtmAdapterFactory extends AdapterFactoryImpl
    * @generated
    */
   public Adapter createParticipant1Adapter()
+  {
+    return null;
+  }
+
+  /**
+   * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.Participant2 <em>Participant2</em>}'.
+   * <!-- begin-user-doc -->
+   * This default implementation returns null so that we can easily ignore cases;
+   * it's useful to ignore a case when inheritance will catch all the cases anyway.
+   * <!-- end-user-doc -->
+   * @return the new adapter.
+   * @see org.openhealthtools.mdht.uml.cda.Participant2
+   * @generated
+   */
+  public Adapter createParticipant2Adapter()
   {
     return null;
   }

@@ -10,12 +10,15 @@
  *******************************************************************************/
 package org.openhealthtools.mdht.uml.cda.phcr.pertussis.impl;
 
+import java.lang.Iterable;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
 
 import org.eclipse.emf.ecore.EClass;
 
+import org.eclipse.emf.ecore.EObject;
+import org.openhealthtools.mdht.emf.runtime.util.Initializer;
 import org.openhealthtools.mdht.uml.cda.phcr.impl.PublicHealthCaseReportImpl;
 
 import org.openhealthtools.mdht.uml.cda.phcr.pertussis.PertussisCaseReport;
@@ -42,144 +45,153 @@ import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
 public class PertussisCaseReportImpl extends PublicHealthCaseReportImpl implements PertussisCaseReport
 {
   /**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   protected PertussisCaseReportImpl()
   {
-		super();
-	}
+    super();
+  }
 
   /**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   @Override
   protected EClass eStaticClass()
   {
-		return PertussisPackage.Literals.PERTUSSIS_CASE_REPORT;
-	}
+    return PertussisPackage.Literals.PERTUSSIS_CASE_REPORT;
+  }
 
   /**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validatePertussisCaseReportTitle(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return PertussisCaseReportOperations.validatePertussisCaseReportTitle(this, diagnostics, context);
-	}
+    return PertussisCaseReportOperations.validatePertussisCaseReportTitle(this, diagnostics, context);
+  }
 
 		/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validatePertussisCaseReportPertussisSocialHistorySection(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return PertussisCaseReportOperations.validatePertussisCaseReportPertussisSocialHistorySection(this, diagnostics, context);
-	}
+    return PertussisCaseReportOperations.validatePertussisCaseReportPertussisSocialHistorySection(this, diagnostics, context);
+  }
 
 		/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validatePertussisCaseReportPertussisClinicalInformationSection(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return PertussisCaseReportOperations.validatePertussisCaseReportPertussisClinicalInformationSection(this, diagnostics, context);
-	}
+    return PertussisCaseReportOperations.validatePertussisCaseReportPertussisClinicalInformationSection(this, diagnostics, context);
+  }
 
 		/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validatePertussisCaseReportPertussisTreatmentInformationSection(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return PertussisCaseReportOperations.validatePertussisCaseReportPertussisTreatmentInformationSection(this, diagnostics, context);
-	}
+    return PertussisCaseReportOperations.validatePertussisCaseReportPertussisTreatmentInformationSection(this, diagnostics, context);
+  }
 
 		/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validatePertussisCaseReportPertussisRelevantDxTestsSection(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return PertussisCaseReportOperations.validatePertussisCaseReportPertussisRelevantDxTestsSection(this, diagnostics, context);
-	}
+    return PertussisCaseReportOperations.validatePertussisCaseReportPertussisRelevantDxTestsSection(this, diagnostics, context);
+  }
 
 		/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validatePertussisCaseReportPertussisImmunizationsSection(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return PertussisCaseReportOperations.validatePertussisCaseReportPertussisImmunizationsSection(this, diagnostics, context);
-	}
+    return PertussisCaseReportOperations.validatePertussisCaseReportPertussisImmunizationsSection(this, diagnostics, context);
+  }
 
 		/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   public PertussisSocialHistorySection getPertussisSocialHistorySection()
   {
-		return PertussisCaseReportOperations.getPertussisSocialHistorySection(this);
-	}
+    return PertussisCaseReportOperations.getPertussisSocialHistorySection(this);
+  }
 
   /**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public PertussisClinicalInformationSection getPertussisClinicalInformationSection() {
-		return PertussisCaseReportOperations.getPertussisClinicalInformationSection(this);
-	}
+    return PertussisCaseReportOperations.getPertussisClinicalInformationSection(this);
+  }
 
 		/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public PertussisTreatmentInformationSection getPertussisTreatmentInformationSection() {
-		return PertussisCaseReportOperations.getPertussisTreatmentInformationSection(this);
-	}
+    return PertussisCaseReportOperations.getPertussisTreatmentInformationSection(this);
+  }
 
 		/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public PertussisRelevantDxTestsSection getPertussisRelevantDxTestsSection() {
-		return PertussisCaseReportOperations.getPertussisRelevantDxTestsSection(this);
-	}
+    return PertussisCaseReportOperations.getPertussisRelevantDxTestsSection(this);
+  }
 
 		/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public PertussisImmunizationsSection getPertussisImmunizationsSection() {
-		return PertussisCaseReportOperations.getPertussisImmunizationsSection(this);
-	}
+    return PertussisCaseReportOperations.getPertussisImmunizationsSection(this);
+  }
 
 		/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   @Override
   public boolean validatePublicHealthCaseReportTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context)
   {
-		return PertussisCaseReportOperations.validatePublicHealthCaseReportTemplateId(this, diagnostics, context);
-	}
+    return PertussisCaseReportOperations.validatePublicHealthCaseReportTemplateId(this, diagnostics, context);
+  }
 
   /**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   public PertussisCaseReport init() {
-    	CDAUtil.init(this);
-    	return this;
-	}
+      return Initializer.Util.init(this);
+  }
+
+  /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    public PertussisCaseReport init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
 } //PertussisCaseReportImpl

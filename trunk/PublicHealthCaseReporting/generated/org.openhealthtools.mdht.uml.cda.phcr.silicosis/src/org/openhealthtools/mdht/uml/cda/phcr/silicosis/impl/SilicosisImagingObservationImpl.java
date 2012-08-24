@@ -10,12 +10,15 @@
  *******************************************************************************/
 package org.openhealthtools.mdht.uml.cda.phcr.silicosis.impl;
 
+import java.lang.Iterable;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
 
 import org.eclipse.emf.ecore.EClass;
 
+import org.eclipse.emf.ecore.EObject;
+import org.openhealthtools.mdht.emf.runtime.util.Initializer;
 import org.openhealthtools.mdht.uml.cda.phcr.impl.ImagingObservationImpl;
 
 import org.openhealthtools.mdht.uml.cda.phcr.silicosis.SilicosisImagingObservation;
@@ -37,53 +40,62 @@ import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
 public class SilicosisImagingObservationImpl extends ImagingObservationImpl implements SilicosisImagingObservation
 {
   /**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   protected SilicosisImagingObservationImpl()
   {
-		super();
-	}
+    super();
+  }
 
   /**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   @Override
   protected EClass eStaticClass()
   {
-		return SilicosisPackage.Literals.SILICOSIS_IMAGING_OBSERVATION;
-	}
+    return SilicosisPackage.Literals.SILICOSIS_IMAGING_OBSERVATION;
+  }
 
   /**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateSilicosisImagingObservationValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return SilicosisImagingObservationOperations.validateSilicosisImagingObservationValue(this, diagnostics, context);
-	}
+    return SilicosisImagingObservationOperations.validateSilicosisImagingObservationValue(this, diagnostics, context);
+  }
 
 		/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   @Override
   public boolean validateProblemObservationTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context)
   {
-		return SilicosisImagingObservationOperations.validateProblemObservationTemplateId(this, diagnostics, context);
-	}
+    return SilicosisImagingObservationOperations.validateProblemObservationTemplateId(this, diagnostics, context);
+  }
 
   /**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   public SilicosisImagingObservation init() {
-    	CDAUtil.init(this);
-    	return this;
-	}
+      return Initializer.Util.init(this);
+  }
+
+  /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    public SilicosisImagingObservation init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
 } //SilicosisImagingObservationImpl

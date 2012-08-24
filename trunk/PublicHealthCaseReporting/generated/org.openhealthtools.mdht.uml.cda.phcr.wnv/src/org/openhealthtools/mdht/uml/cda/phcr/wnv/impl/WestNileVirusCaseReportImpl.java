@@ -10,10 +10,13 @@
  *******************************************************************************/
 package org.openhealthtools.mdht.uml.cda.phcr.wnv.impl;
 
+import java.lang.Iterable;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.ecore.EClass;
+import org.eclipse.emf.ecore.EObject;
+import org.openhealthtools.mdht.emf.runtime.util.Initializer;
 import org.openhealthtools.mdht.uml.cda.phcr.impl.PublicHealthCaseReportImpl;
 import org.openhealthtools.mdht.uml.cda.phcr.wnv.WestNileVirusCaseReport;
 import org.openhealthtools.mdht.uml.cda.phcr.wnv.WnvPackage;
@@ -34,94 +37,103 @@ import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
 public class WestNileVirusCaseReportImpl extends PublicHealthCaseReportImpl implements WestNileVirusCaseReport
 {
   /**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   protected WestNileVirusCaseReportImpl()
   {
-		super();
-	}
+    super();
+  }
 
   /**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   @Override
   protected EClass eStaticClass()
   {
-		return WnvPackage.Literals.WEST_NILE_VIRUS_CASE_REPORT;
-	}
+    return WnvPackage.Literals.WEST_NILE_VIRUS_CASE_REPORT;
+  }
 
   /**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   public boolean validateWestNileVirusCaseReportTitle(DiagnosticChain diagnostics, Map<Object, Object> context)
   {
-		return WestNileVirusCaseReportOperations.validateWestNileVirusCaseReportTitle(this, diagnostics, context);
-	}
+    return WestNileVirusCaseReportOperations.validateWestNileVirusCaseReportTitle(this, diagnostics, context);
+  }
 
   /**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   public boolean validateWestNileVirusCaseReportWnvPhcrClinicalInformationSection(DiagnosticChain diagnostics, Map<Object, Object> context)
   {
-		return WestNileVirusCaseReportOperations.validateWestNileVirusCaseReportWnvPhcrClinicalInformationSection(this, diagnostics, context);
-	}
+    return WestNileVirusCaseReportOperations.validateWestNileVirusCaseReportWnvPhcrClinicalInformationSection(this, diagnostics, context);
+  }
 
   /**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   public boolean validateWestNileVirusCaseReportWnvPhcrRelevantDxTestsSection(DiagnosticChain diagnostics, Map<Object, Object> context)
   {
-		return WestNileVirusCaseReportOperations.validateWestNileVirusCaseReportWnvPhcrRelevantDxTestsSection(this, diagnostics, context);
-	}
+    return WestNileVirusCaseReportOperations.validateWestNileVirusCaseReportWnvPhcrRelevantDxTestsSection(this, diagnostics, context);
+  }
 
   /**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   public WnvPhcrClinicalInformationSection getWnvPhcrClinicalInformationSection()
   {
-		return WestNileVirusCaseReportOperations.getWnvPhcrClinicalInformationSection(this);
-	}
+    return WestNileVirusCaseReportOperations.getWnvPhcrClinicalInformationSection(this);
+  }
 
   /**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   public WnvPhcrRelevantDxTestsSection getWnvPhcrRelevantDxTestsSection()
   {
-		return WestNileVirusCaseReportOperations.getWnvPhcrRelevantDxTestsSection(this);
-	}
+    return WestNileVirusCaseReportOperations.getWnvPhcrRelevantDxTestsSection(this);
+  }
 
   /**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   @Override
   public boolean validatePublicHealthCaseReportTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context)
   {
-		return WestNileVirusCaseReportOperations.validatePublicHealthCaseReportTemplateId(this, diagnostics, context);
-	}
+    return WestNileVirusCaseReportOperations.validatePublicHealthCaseReportTemplateId(this, diagnostics, context);
+  }
 
   /**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   public WestNileVirusCaseReport init() {
-    	CDAUtil.init(this);
-    	return this;
-	}
+      return Initializer.Util.init(this);
+  }
+
+  /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    public WestNileVirusCaseReport init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
 } //WestNileVirusCaseReportImpl

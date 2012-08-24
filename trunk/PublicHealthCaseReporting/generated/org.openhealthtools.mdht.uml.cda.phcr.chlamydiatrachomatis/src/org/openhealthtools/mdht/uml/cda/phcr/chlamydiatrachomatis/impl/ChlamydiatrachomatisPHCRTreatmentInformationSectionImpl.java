@@ -10,12 +10,15 @@
  *******************************************************************************/
 package org.openhealthtools.mdht.uml.cda.phcr.chlamydiatrachomatis.impl;
 
+import java.lang.Iterable;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
 
 import org.eclipse.emf.ecore.EClass;
 
+import org.eclipse.emf.ecore.EObject;
+import org.openhealthtools.mdht.emf.runtime.util.Initializer;
 import org.openhealthtools.mdht.uml.cda.phcr.chlamydiatrachomatis.ChlamydiatrachomatisPHCRTreatmentInformationSection;
 import org.openhealthtools.mdht.uml.cda.phcr.chlamydiatrachomatis.ChlamydiatrachomatisPackage;
 import org.openhealthtools.mdht.uml.cda.phcr.chlamydiatrachomatis.ChlamydiatrachomatisTherapeuticRegimenAct;
@@ -37,59 +40,68 @@ import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
  */
 public class ChlamydiatrachomatisPHCRTreatmentInformationSectionImpl extends PhcrTreatmentInformationSectionImpl implements ChlamydiatrachomatisPHCRTreatmentInformationSection {
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	protected ChlamydiatrachomatisPHCRTreatmentInformationSectionImpl() {
-		super();
-	}
+    super();
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	@Override
 	protected EClass eStaticClass() {
-		return ChlamydiatrachomatisPackage.Literals.CHLAMYDIATRACHOMATIS_PHCR_TREATMENT_INFORMATION_SECTION;
-	}
+    return ChlamydiatrachomatisPackage.Literals.CHLAMYDIATRACHOMATIS_PHCR_TREATMENT_INFORMATION_SECTION;
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateChlamydiatrachomatisPHCRTreatmentInformationSectionChlamydiatrachomatisTherapeuticRegimenAct(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ChlamydiatrachomatisPHCRTreatmentInformationSectionOperations.validateChlamydiatrachomatisPHCRTreatmentInformationSectionChlamydiatrachomatisTherapeuticRegimenAct(this, diagnostics, context);
-	}
+    return ChlamydiatrachomatisPHCRTreatmentInformationSectionOperations.validateChlamydiatrachomatisPHCRTreatmentInformationSectionChlamydiatrachomatisTherapeuticRegimenAct(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public ChlamydiatrachomatisTherapeuticRegimenAct getChlamydiatrachomatisTherapeuticRegimenAct() {
-		return ChlamydiatrachomatisPHCRTreatmentInformationSectionOperations.getChlamydiatrachomatisTherapeuticRegimenAct(this);
-	}
+    return ChlamydiatrachomatisPHCRTreatmentInformationSectionOperations.getChlamydiatrachomatisTherapeuticRegimenAct(this);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	@Override
 	public boolean validatePhcrTreatmentInformationSectionTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ChlamydiatrachomatisPHCRTreatmentInformationSectionOperations.validatePhcrTreatmentInformationSectionTemplateId(this, diagnostics, context);
-	}
+    return ChlamydiatrachomatisPHCRTreatmentInformationSectionOperations.validatePhcrTreatmentInformationSectionTemplateId(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public ChlamydiatrachomatisPHCRTreatmentInformationSection init() {
-    	CDAUtil.init(this);
-    	return this;
-	}
+      return Initializer.Util.init(this);
+  }
+
+  /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    public ChlamydiatrachomatisPHCRTreatmentInformationSection init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
 } //ChlamydiatrachomatisPHCRTreatmentInformationSectionImpl

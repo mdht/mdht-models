@@ -6,12 +6,15 @@
  */
 package org.openhealthtools.mdht.uml.cda.sdtm.impl;
 
+import java.lang.Iterable;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
 
 import org.eclipse.emf.ecore.EClass;
 
+import org.eclipse.emf.ecore.EObject;
+import org.openhealthtools.mdht.emf.runtime.util.Initializer;
 import org.openhealthtools.mdht.uml.cda.impl.SubstanceAdministrationImpl;
 
 import org.openhealthtools.mdht.uml.cda.sdtm.ActivityEndTimingReference;
@@ -254,6 +257,56 @@ public class SubstanceUseImpl extends SubstanceAdministrationImpl implements Sub
    * <!-- end-user-doc -->
    * @generated
    */
+  public boolean validateSubstanceUsesubstanceUseCategoryAssociationsubstanceUseCategoryClassCode(DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+    return SubstanceUseOperations.validateSubstanceUsesubstanceUseCategoryAssociationsubstanceUseCategoryClassCode(this, diagnostics, context);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public boolean validateSubstanceUsesubstanceUseCategoryAssociationsubstanceUseCategoryCode(DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+    return SubstanceUseOperations.validateSubstanceUsesubstanceUseCategoryAssociationsubstanceUseCategoryCode(this, diagnostics, context);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public boolean validateSubstanceUsesubstanceUseCategoryAssociationsubstanceUseCategoryMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+    return SubstanceUseOperations.validateSubstanceUsesubstanceUseCategoryAssociationsubstanceUseCategoryMoodCode(this, diagnostics, context);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public boolean validateSubstanceUsesubstanceUseCategoryAssociationsubstanceUseCategoryValue(DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+    return SubstanceUseOperations.validateSubstanceUsesubstanceUseCategoryAssociationsubstanceUseCategoryValue(this, diagnostics, context);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public boolean validateSubstanceUsesubstanceUseCategoryAssociationsubstanceUseCategoryValueP(DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+    return SubstanceUseOperations.validateSubstanceUsesubstanceUseCategoryAssociationsubstanceUseCategoryValueP(this, diagnostics, context);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
   public boolean validateSubstanceUsesubstanceUseCategoryAssociationTypeCode(DiagnosticChain diagnostics, Map<Object, Object> context)
   {
     return SubstanceUseOperations.validateSubstanceUsesubstanceUseCategoryAssociationTypeCode(this, diagnostics, context);
@@ -264,9 +317,69 @@ public class SubstanceUseImpl extends SubstanceAdministrationImpl implements Sub
    * <!-- end-user-doc -->
    * @generated
    */
+  public boolean validateSubstanceUsesubstanceUseCategoryAssociationSubstanceUseCategory(DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+    return SubstanceUseOperations.validateSubstanceUsesubstanceUseCategoryAssociationSubstanceUseCategory(this, diagnostics, context);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public boolean validateSubstanceUsesubstanceUseSubCategoryAssociationsubstanceUseSubCategoryClassCode(DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+    return SubstanceUseOperations.validateSubstanceUsesubstanceUseSubCategoryAssociationsubstanceUseSubCategoryClassCode(this, diagnostics, context);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public boolean validateSubstanceUsesubstanceUseSubCategoryAssociationsubstanceUseSubCategoryCode(DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+    return SubstanceUseOperations.validateSubstanceUsesubstanceUseSubCategoryAssociationsubstanceUseSubCategoryCode(this, diagnostics, context);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public boolean validateSubstanceUsesubstanceUseSubCategoryAssociationsubstanceUseSubCategoryMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+    return SubstanceUseOperations.validateSubstanceUsesubstanceUseSubCategoryAssociationsubstanceUseSubCategoryMoodCode(this, diagnostics, context);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public boolean validateSubstanceUsesubstanceUseSubCategoryAssociationsubstanceUseSubCategoryValue(DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+    return SubstanceUseOperations.validateSubstanceUsesubstanceUseSubCategoryAssociationsubstanceUseSubCategoryValue(this, diagnostics, context);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
   public boolean validateSubstanceUsesubstanceUseSubCategoryAssociationTypeCode(DiagnosticChain diagnostics, Map<Object, Object> context)
   {
     return SubstanceUseOperations.validateSubstanceUsesubstanceUseSubCategoryAssociationTypeCode(this, diagnostics, context);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public boolean validateSubstanceUsesubstanceUseSubCategoryAssociationSubstanceUseSubCategory(DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+    return SubstanceUseOperations.validateSubstanceUsesubstanceUseSubCategoryAssociationSubstanceUseSubCategory(this, diagnostics, context);
   }
 
   /**
@@ -335,7 +448,16 @@ public class SubstanceUseImpl extends SubstanceAdministrationImpl implements Sub
    * @generated
    */
   public SubstanceUse init() {
-    	CDAUtil.init(this);
-    	return this;
+      return Initializer.Util.init(this);
   }
+
+  /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    public SubstanceUse init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
 } //SubstanceUseImpl

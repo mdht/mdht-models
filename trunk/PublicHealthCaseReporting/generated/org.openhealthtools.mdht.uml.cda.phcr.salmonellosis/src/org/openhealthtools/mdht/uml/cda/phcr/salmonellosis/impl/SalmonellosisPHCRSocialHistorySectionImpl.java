@@ -1,27 +1,31 @@
-/*******************************************************************************
- * Copyright (c) 2012, Public Health Data Standards Consortium (PHDSC)
- * All rights reserved. This program and the accompanying materials
- * are made available under the terms of the Eclipse Public License v1.0
- * which accompanies this distribution, and is available at
- * http://www.eclipse.org/legal/epl-v10.html
+/**
+ * <copyright>
+ * </copyright>
  *
- * Contributors:
- *     PHDSC - initial API and implementation
- *******************************************************************************/
+ * $Id$
+ */
 package org.openhealthtools.mdht.uml.cda.phcr.salmonellosis.impl;
+
+import java.lang.Iterable;
 
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.common.util.EList;
+
 import org.eclipse.emf.ecore.EClass;
+import org.eclipse.emf.ecore.EObject;
+
+import org.openhealthtools.mdht.emf.runtime.util.Initializer;
+
 import org.openhealthtools.mdht.uml.cda.phcr.impl.PhcrSocialHistorySectionImpl;
+
 import org.openhealthtools.mdht.uml.cda.phcr.salmonellosis.HIVStatusObservation;
 import org.openhealthtools.mdht.uml.cda.phcr.salmonellosis.SalmonellosisPHCRSocialHistorySection;
 import org.openhealthtools.mdht.uml.cda.phcr.salmonellosis.SalmonellosisPackage;
 import org.openhealthtools.mdht.uml.cda.phcr.salmonellosis.SalmonellosisPossibleExposureLocationAndTypeAct;
+
 import org.openhealthtools.mdht.uml.cda.phcr.salmonellosis.operations.SalmonellosisPHCRSocialHistorySectionOperations;
-import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
 
 /**
  * <!-- begin-user-doc -->
@@ -32,59 +36,66 @@ import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
  *
  * @generated
  */
-public class SalmonellosisPHCRSocialHistorySectionImpl extends PhcrSocialHistorySectionImpl implements SalmonellosisPHCRSocialHistorySection {
-	/**
+public class SalmonellosisPHCRSocialHistorySectionImpl extends PhcrSocialHistorySectionImpl implements SalmonellosisPHCRSocialHistorySection
+{
+  /**
    * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+   * <!-- end-user-doc -->
    * @generated
    */
-	protected SalmonellosisPHCRSocialHistorySectionImpl() {
+  protected SalmonellosisPHCRSocialHistorySectionImpl()
+  {
     super();
   }
 
-	/**
+  /**
    * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+   * <!-- end-user-doc -->
    * @generated
    */
-	@Override
-	protected EClass eStaticClass() {
+  @Override
+  protected EClass eStaticClass()
+  {
     return SalmonellosisPackage.Literals.SALMONELLOSIS_PHCR_SOCIAL_HISTORY_SECTION;
   }
 
-	/**
+  /**
    * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+   * <!-- end-user-doc -->
    * @generated
    */
-	public boolean validateSalmonellosisPHCRSocialHistorySectionSalmonellosisPossibleExposureLocationAndTypeAct(DiagnosticChain diagnostics, Map<Object, Object> context) {
+  public boolean validateSalmonellosisPHCRSocialHistorySectionSalmonellosisPossibleExposureLocationAndTypeAct(DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
     return SalmonellosisPHCRSocialHistorySectionOperations.validateSalmonellosisPHCRSocialHistorySectionSalmonellosisPossibleExposureLocationAndTypeAct(this, diagnostics, context);
   }
 
-	/**
+  /**
    * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+   * <!-- end-user-doc -->
    * @generated
    */
-	public boolean validateSalmonellosisPHCRSocialHistorySectionHIVStatusObservation(DiagnosticChain diagnostics, Map<Object, Object> context) {
+  public boolean validateSalmonellosisPHCRSocialHistorySectionHIVStatusObservation(DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
     return SalmonellosisPHCRSocialHistorySectionOperations.validateSalmonellosisPHCRSocialHistorySectionHIVStatusObservation(this, diagnostics, context);
   }
 
-	/**
+  /**
    * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+   * <!-- end-user-doc -->
    * @generated
    */
-	public EList<SalmonellosisPossibleExposureLocationAndTypeAct> getSalmonellosisPossibleExposureLocationAndTypeActs() {
+  public EList<SalmonellosisPossibleExposureLocationAndTypeAct> getSalmonellosisPossibleExposureLocationAndTypeActs()
+  {
     return SalmonellosisPHCRSocialHistorySectionOperations.getSalmonellosisPossibleExposureLocationAndTypeActs(this);
   }
 
-	/**
+  /**
    * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+   * <!-- end-user-doc -->
    * @generated
    */
-	public HIVStatusObservation getHIVStatusObservation() {
+  public HIVStatusObservation getHIVStatusObservation()
+  {
     return SalmonellosisPHCRSocialHistorySectionOperations.getHIVStatusObservation(this);
   }
 
@@ -105,8 +116,15 @@ public class SalmonellosisPHCRSocialHistorySectionImpl extends PhcrSocialHistory
    * @generated
    */
   public SalmonellosisPHCRSocialHistorySection init() {
-    	CDAUtil.init(this);
-    	return this;
+      return Initializer.Util.init(this);
   }
-
+    /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    public SalmonellosisPHCRSocialHistorySection init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
 } //SalmonellosisPHCRSocialHistorySectionImpl

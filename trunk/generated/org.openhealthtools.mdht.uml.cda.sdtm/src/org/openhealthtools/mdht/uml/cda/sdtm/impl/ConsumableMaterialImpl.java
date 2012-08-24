@@ -6,12 +6,15 @@
  */
 package org.openhealthtools.mdht.uml.cda.sdtm.impl;
 
+import java.lang.Iterable;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
 
 import org.eclipse.emf.ecore.EClass;
 
+import org.eclipse.emf.ecore.EObject;
+import org.openhealthtools.mdht.emf.runtime.util.Initializer;
 import org.openhealthtools.mdht.uml.cda.impl.ConsumableImpl;
 
 import org.openhealthtools.mdht.uml.cda.sdtm.ConsumableMaterial;
@@ -88,6 +91,66 @@ public class ConsumableMaterialImpl extends ConsumableImpl implements Consumable
    * <!-- end-user-doc -->
    * @generated
    */
+  public boolean validateConsumableMaterialMedicationMedicationMaterialasSpecializedKindsubstanceClassClassCode(DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+    return ConsumableMaterialOperations.validateConsumableMaterialMedicationMedicationMaterialasSpecializedKindsubstanceClassClassCode(this, diagnostics, context);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public boolean validateConsumableMaterialMedicationMedicationMaterialasSpecializedKindsubstanceClassDeterminerCode(DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+    return ConsumableMaterialOperations.validateConsumableMaterialMedicationMedicationMaterialasSpecializedKindsubstanceClassDeterminerCode(this, diagnostics, context);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public boolean validateConsumableMaterialMedicationMedicationMaterialasSpecializedKindsubstanceClassName(DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+    return ConsumableMaterialOperations.validateConsumableMaterialMedicationMedicationMaterialasSpecializedKindsubstanceClassName(this, diagnostics, context);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public boolean validateConsumableMaterialMedicationMedicationMaterialasSpecializedKindClassCode(DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+    return ConsumableMaterialOperations.validateConsumableMaterialMedicationMedicationMaterialasSpecializedKindClassCode(this, diagnostics, context);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public boolean validateConsumableMaterialMedicationMedicationMaterialasSpecializedKindCode(DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+    return ConsumableMaterialOperations.validateConsumableMaterialMedicationMedicationMaterialasSpecializedKindCode(this, diagnostics, context);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public boolean validateConsumableMaterialMedicationMedicationMaterialasSpecializedKindRepresentedOrganization(DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+    return ConsumableMaterialOperations.validateConsumableMaterialMedicationMedicationMaterialasSpecializedKindRepresentedOrganization(this, diagnostics, context);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
   public boolean validateConsumableMaterialMedicationMedicationMaterialClassCode(DiagnosticChain diagnostics, Map<Object, Object> context)
   {
     return ConsumableMaterialOperations.validateConsumableMaterialMedicationMedicationMaterialClassCode(this, diagnostics, context);
@@ -128,38 +191,17 @@ public class ConsumableMaterialImpl extends ConsumableImpl implements Consumable
    * <!-- end-user-doc -->
    * @generated
    */
-  public boolean validateConsumableMaterialMedicationMedicationMaterialClassCodeConsumableMaterialMedicationMedicationMaterialClassCode1(DiagnosticChain diagnostics, Map<Object, Object> context)
-  {
-    return ConsumableMaterialOperations.validateConsumableMaterialMedicationMedicationMaterialClassCodeConsumableMaterialMedicationMedicationMaterialClassCode1(this, diagnostics, context);
-  }
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public boolean validateConsumableMaterialMedicationMedicationMaterialCodeConsumableMaterialMedicationMedicationMaterialCode1(DiagnosticChain diagnostics, Map<Object, Object> context)
-  {
-    return ConsumableMaterialOperations.validateConsumableMaterialMedicationMedicationMaterialCodeConsumableMaterialMedicationMedicationMaterialCode1(this, diagnostics, context);
-  }
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public boolean validateConsumableMaterialMedicationMedicationMaterialLotNumberTextConsumableMaterialMedicationMedicationMaterialLotNumberText1(DiagnosticChain diagnostics, Map<Object, Object> context)
-  {
-    return ConsumableMaterialOperations.validateConsumableMaterialMedicationMedicationMaterialLotNumberTextConsumableMaterialMedicationMedicationMaterialLotNumberText1(this, diagnostics, context);
-  }
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
   public ConsumableMaterial init() {
-    	CDAUtil.init(this);
-    	return this;
+      return Initializer.Util.init(this);
   }
+
+  /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    public ConsumableMaterial init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
 } //ConsumableMaterialImpl

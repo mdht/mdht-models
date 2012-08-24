@@ -10,11 +10,14 @@
  *******************************************************************************/
 package org.openhealthtools.mdht.uml.cda.phcr.impl;
 
+import java.lang.Iterable;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.common.util.EList;
 import org.eclipse.emf.ecore.EClass;
+import org.eclipse.emf.ecore.EObject;
+import org.openhealthtools.mdht.emf.runtime.util.Initializer;
 import org.openhealthtools.mdht.uml.cda.ccd.impl.ResultsSectionImpl;
 import org.openhealthtools.mdht.uml.cda.phcr.ImagingObservation;
 import org.openhealthtools.mdht.uml.cda.phcr.PhcrPackage;
@@ -35,133 +38,142 @@ import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
  */
 public class PhcrRelevantDxTestsSectionImpl extends ResultsSectionImpl implements PhcrRelevantDxTestsSection {
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	protected PhcrRelevantDxTestsSectionImpl() {
-		super();
-	}
+    super();
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	@Override
 	protected EClass eStaticClass() {
-		return PhcrPackage.Literals.PHCR_RELEVANT_DX_TESTS_SECTION;
-	}
+    return PhcrPackage.Literals.PHCR_RELEVANT_DX_TESTS_SECTION;
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public boolean validatePhcrRelevantDxTestsSectionCodeP(DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+    return PhcrRelevantDxTestsSectionOperations.validatePhcrRelevantDxTestsSectionCodeP(this, diagnostics, context);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validatePhcrRelevantDxTestsSectionCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return PhcrRelevantDxTestsSectionOperations.validatePhcrRelevantDxTestsSectionCode(this, diagnostics, context);
-	}
+    return PhcrRelevantDxTestsSectionOperations.validatePhcrRelevantDxTestsSectionCode(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validatePhcrRelevantDxTestsSectionTitle(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return PhcrRelevantDxTestsSectionOperations.validatePhcrRelevantDxTestsSectionTitle(this, diagnostics, context);
-	}
+    return PhcrRelevantDxTestsSectionOperations.validatePhcrRelevantDxTestsSectionTitle(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validatePhcrRelevantDxTestsSectionText(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return PhcrRelevantDxTestsSectionOperations.validatePhcrRelevantDxTestsSectionText(this, diagnostics, context);
-	}
+    return PhcrRelevantDxTestsSectionOperations.validatePhcrRelevantDxTestsSectionText(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validatePhcrRelevantDxTestsSectionResultOrganizer(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return PhcrRelevantDxTestsSectionOperations.validatePhcrRelevantDxTestsSectionResultOrganizer(this, diagnostics, context);
-	}
+    return PhcrRelevantDxTestsSectionOperations.validatePhcrRelevantDxTestsSectionResultOrganizer(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validatePhcrRelevantDxTestsSectionResultObservation(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return PhcrRelevantDxTestsSectionOperations.validatePhcrRelevantDxTestsSectionResultObservation(this, diagnostics, context);
-	}
+    return PhcrRelevantDxTestsSectionOperations.validatePhcrRelevantDxTestsSectionResultObservation(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validatePhcrRelevantDxTestsSectionImagingObservation(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return PhcrRelevantDxTestsSectionOperations.validatePhcrRelevantDxTestsSectionImagingObservation(this, diagnostics, context);
-	}
+    return PhcrRelevantDxTestsSectionOperations.validatePhcrRelevantDxTestsSectionImagingObservation(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public EList<ResultOrganizer> getPHCRResultOrganizers() {
-		return PhcrRelevantDxTestsSectionOperations.getPHCRResultOrganizers(this);
-	}
+    return PhcrRelevantDxTestsSectionOperations.getPHCRResultOrganizers(this);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public EList<ResultObservation> getResultObservations() {
-		return PhcrRelevantDxTestsSectionOperations.getResultObservations(this);
-	}
+    return PhcrRelevantDxTestsSectionOperations.getResultObservations(this);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public EList<ImagingObservation> getImagingObservations() {
-		return PhcrRelevantDxTestsSectionOperations.getImagingObservations(this);
-	}
+    return PhcrRelevantDxTestsSectionOperations.getImagingObservations(this);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	@Override
 	public boolean validateResultsSectionTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return PhcrRelevantDxTestsSectionOperations.validateResultsSectionTemplateId(this, diagnostics, context);
-	}
+    return PhcrRelevantDxTestsSectionOperations.validateResultsSectionTemplateId(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public boolean validateResultsSectionCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return PhcrRelevantDxTestsSectionOperations.validateResultsSectionCode(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public PhcrRelevantDxTestsSection init() {
-    	CDAUtil.init(this);
-    	return this;
-	}
+      return Initializer.Util.init(this);
+  }
+
+  /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    public PhcrRelevantDxTestsSection init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
 	
 } //PhcrRelevantDxTestsSectionImpl

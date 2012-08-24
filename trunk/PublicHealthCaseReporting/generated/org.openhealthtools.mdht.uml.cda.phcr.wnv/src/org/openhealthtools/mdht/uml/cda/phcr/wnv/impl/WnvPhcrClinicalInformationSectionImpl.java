@@ -10,10 +10,13 @@
  *******************************************************************************/
 package org.openhealthtools.mdht.uml.cda.phcr.wnv.impl;
 
+import java.lang.Iterable;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.ecore.EClass;
+import org.eclipse.emf.ecore.EObject;
+import org.openhealthtools.mdht.emf.runtime.util.Initializer;
 import org.openhealthtools.mdht.uml.cda.phcr.impl.PhcrClinicalInformationSectionImpl;
 import org.openhealthtools.mdht.uml.cda.phcr.wnv.WnvCaseObservation;
 import org.openhealthtools.mdht.uml.cda.phcr.wnv.WnvPackage;
@@ -33,61 +36,70 @@ import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
 public class WnvPhcrClinicalInformationSectionImpl extends PhcrClinicalInformationSectionImpl implements WnvPhcrClinicalInformationSection
 {
   /**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   protected WnvPhcrClinicalInformationSectionImpl()
   {
-		super();
-	}
+    super();
+  }
 
   /**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   @Override
   protected EClass eStaticClass()
   {
-		return WnvPackage.Literals.WNV_PHCR_CLINICAL_INFORMATION_SECTION;
-	}
+    return WnvPackage.Literals.WNV_PHCR_CLINICAL_INFORMATION_SECTION;
+  }
 
   /**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateWnvPhcrClinicalInformationSectionWnvCaseObservation(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return WnvPhcrClinicalInformationSectionOperations.validateWnvPhcrClinicalInformationSectionWnvCaseObservation(this, diagnostics, context);
-	}
+    return WnvPhcrClinicalInformationSectionOperations.validateWnvPhcrClinicalInformationSectionWnvCaseObservation(this, diagnostics, context);
+  }
 
 		/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public WnvCaseObservation getWnvCaseObservation() {
-		return WnvPhcrClinicalInformationSectionOperations.getWnvCaseObservation(this);
-	}
+    return WnvPhcrClinicalInformationSectionOperations.getWnvCaseObservation(this);
+  }
 
 		/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	@Override
 	public boolean validatePhcrClinicalInformationSectionTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return WnvPhcrClinicalInformationSectionOperations.validatePhcrClinicalInformationSectionTemplateId(this, diagnostics, context);
-	}
+    return WnvPhcrClinicalInformationSectionOperations.validatePhcrClinicalInformationSectionTemplateId(this, diagnostics, context);
+  }
 
 		/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   public WnvPhcrClinicalInformationSection init() {
-    	CDAUtil.init(this);
-    	return this;
-	}
+      return Initializer.Util.init(this);
+  }
+
+    /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    public WnvPhcrClinicalInformationSection init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
 } //WnvPhcrClinicalInformationSectionImpl

@@ -10,10 +10,13 @@
  *******************************************************************************/
 package org.openhealthtools.mdht.uml.cda.phcr.impl;
 
+import java.lang.Iterable;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.ecore.EClass;
+import org.eclipse.emf.ecore.EObject;
+import org.openhealthtools.mdht.emf.runtime.util.Initializer;
 import org.openhealthtools.mdht.uml.cda.impl.ObservationImpl;
 import org.openhealthtools.mdht.uml.cda.phcr.PatientConditionAliveObservation;
 import org.openhealthtools.mdht.uml.cda.phcr.PhcrPackage;
@@ -31,121 +34,130 @@ import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
  */
 public class PatientConditionAliveObservationImpl extends ObservationImpl implements PatientConditionAliveObservation {
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	protected PatientConditionAliveObservationImpl() {
-		super();
-	}
+    super();
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	@Override
 	protected EClass eStaticClass() {
-		return PhcrPackage.Literals.PATIENT_CONDITION_ALIVE_OBSERVATION;
-	}
+    return PhcrPackage.Literals.PATIENT_CONDITION_ALIVE_OBSERVATION;
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validatePatientConditionAliveObservationTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return PatientConditionAliveObservationOperations.validatePatientConditionAliveObservationTemplateId(this, diagnostics, context);
-	}
+    return PatientConditionAliveObservationOperations.validatePatientConditionAliveObservationTemplateId(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validatePatientConditionAliveObservationClassCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return PatientConditionAliveObservationOperations.validatePatientConditionAliveObservationClassCode(this, diagnostics, context);
-	}
+    return PatientConditionAliveObservationOperations.validatePatientConditionAliveObservationClassCode(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validatePatientConditionAliveObservationCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return PatientConditionAliveObservationOperations.validatePatientConditionAliveObservationCode(this, diagnostics, context);
-	}
+    return PatientConditionAliveObservationOperations.validatePatientConditionAliveObservationCode(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validatePatientConditionAliveObservationMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return PatientConditionAliveObservationOperations.validatePatientConditionAliveObservationMoodCode(this, diagnostics, context);
-	}
+    return PatientConditionAliveObservationOperations.validatePatientConditionAliveObservationMoodCode(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validatePatientConditionAliveObservationCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return PatientConditionAliveObservationOperations.validatePatientConditionAliveObservationCodeP(this, diagnostics, context);
-	}
+    return PatientConditionAliveObservationOperations.validatePatientConditionAliveObservationCodeP(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validatePatientConditionAliveObservationStatusCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return PatientConditionAliveObservationOperations.validatePatientConditionAliveObservationStatusCode(this, diagnostics, context);
-	}
+    return PatientConditionAliveObservationOperations.validatePatientConditionAliveObservationStatusCode(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validatePatientConditionAliveObservationStatusCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return PatientConditionAliveObservationOperations.validatePatientConditionAliveObservationStatusCodeP(this, diagnostics, context);
-	}
+    return PatientConditionAliveObservationOperations.validatePatientConditionAliveObservationStatusCodeP(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validatePatientConditionAliveObservationValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return PatientConditionAliveObservationOperations.validatePatientConditionAliveObservationValue(this, diagnostics, context);
-	}
+    return PatientConditionAliveObservationOperations.validatePatientConditionAliveObservationValue(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validatePatientConditionAliveObservationValueP(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return PatientConditionAliveObservationOperations.validatePatientConditionAliveObservationValueP(this, diagnostics, context);
-	}
+    return PatientConditionAliveObservationOperations.validatePatientConditionAliveObservationValueP(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validatePatientConditionAliveObservationEffectiveTime(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return PatientConditionAliveObservationOperations.validatePatientConditionAliveObservationEffectiveTime(this, diagnostics, context);
-	}
+    return PatientConditionAliveObservationOperations.validatePatientConditionAliveObservationEffectiveTime(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public PatientConditionAliveObservation init() {
-    	CDAUtil.init(this);
-    	return this;
-	}
+      return Initializer.Util.init(this);
+  }
+
+  /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    public PatientConditionAliveObservation init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
 } //PatientConditionAliveObservationImpl

@@ -10,10 +10,13 @@
  *******************************************************************************/
 package org.openhealthtools.mdht.uml.cda.phcr.impl;
 
+import java.lang.Iterable;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.ecore.EClass;
+import org.eclipse.emf.ecore.EObject;
+import org.openhealthtools.mdht.emf.runtime.util.Initializer;
 import org.openhealthtools.mdht.uml.cda.impl.ObservationImpl;
 import org.openhealthtools.mdht.uml.cda.phcr.MostRecentTimeArrivedInUSAObservation;
 import org.openhealthtools.mdht.uml.cda.phcr.PhcrPackage;
@@ -31,105 +34,114 @@ import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
  */
 public class MostRecentTimeArrivedInUSAObservationImpl extends ObservationImpl implements MostRecentTimeArrivedInUSAObservation {
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	protected MostRecentTimeArrivedInUSAObservationImpl() {
-		super();
-	}
+    super();
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	@Override
 	protected EClass eStaticClass() {
-		return PhcrPackage.Literals.MOST_RECENT_TIME_ARRIVED_IN_USA_OBSERVATION;
-	}
+    return PhcrPackage.Literals.MOST_RECENT_TIME_ARRIVED_IN_USA_OBSERVATION;
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateMostRecentTimeArrivedInUSAObservationTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return MostRecentTimeArrivedInUSAObservationOperations.validateMostRecentTimeArrivedInUSAObservationTemplateId(this, diagnostics, context);
-	}
+    return MostRecentTimeArrivedInUSAObservationOperations.validateMostRecentTimeArrivedInUSAObservationTemplateId(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateMostRecentTimeArrivedInUSAObservationClassCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return MostRecentTimeArrivedInUSAObservationOperations.validateMostRecentTimeArrivedInUSAObservationClassCode(this, diagnostics, context);
-	}
+    return MostRecentTimeArrivedInUSAObservationOperations.validateMostRecentTimeArrivedInUSAObservationClassCode(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateMostRecentTimeArrivedInUSAObservationMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return MostRecentTimeArrivedInUSAObservationOperations.validateMostRecentTimeArrivedInUSAObservationMoodCode(this, diagnostics, context);
-	}
+    return MostRecentTimeArrivedInUSAObservationOperations.validateMostRecentTimeArrivedInUSAObservationMoodCode(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateMostRecentTimeArrivedInUSAObservationCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return MostRecentTimeArrivedInUSAObservationOperations.validateMostRecentTimeArrivedInUSAObservationCodeP(this, diagnostics, context);
-	}
+    return MostRecentTimeArrivedInUSAObservationOperations.validateMostRecentTimeArrivedInUSAObservationCodeP(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateMostRecentTimeArrivedInUSAObservationStatusCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return MostRecentTimeArrivedInUSAObservationOperations.validateMostRecentTimeArrivedInUSAObservationStatusCode(this, diagnostics, context);
-	}
+    return MostRecentTimeArrivedInUSAObservationOperations.validateMostRecentTimeArrivedInUSAObservationStatusCode(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateMostRecentTimeArrivedInUSAObservationStatusCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return MostRecentTimeArrivedInUSAObservationOperations.validateMostRecentTimeArrivedInUSAObservationStatusCodeP(this, diagnostics, context);
-	}
+    return MostRecentTimeArrivedInUSAObservationOperations.validateMostRecentTimeArrivedInUSAObservationStatusCodeP(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateMostRecentTimeArrivedInUSAObservationValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return MostRecentTimeArrivedInUSAObservationOperations.validateMostRecentTimeArrivedInUSAObservationValue(this, diagnostics, context);
-	}
+    return MostRecentTimeArrivedInUSAObservationOperations.validateMostRecentTimeArrivedInUSAObservationValue(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateMostRecentTimeArrivedInUSAObservationCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return MostRecentTimeArrivedInUSAObservationOperations.validateMostRecentTimeArrivedInUSAObservationCode(this, diagnostics, context);
-	}
+    return MostRecentTimeArrivedInUSAObservationOperations.validateMostRecentTimeArrivedInUSAObservationCode(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public MostRecentTimeArrivedInUSAObservation init() {
-    	CDAUtil.init(this);
-    	return this;
-	}
+      return Initializer.Util.init(this);
+  }
+
+  /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    public MostRecentTimeArrivedInUSAObservation init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
 	
 	
 } //MostRecentTimeArrivedInUSAObservationImpl

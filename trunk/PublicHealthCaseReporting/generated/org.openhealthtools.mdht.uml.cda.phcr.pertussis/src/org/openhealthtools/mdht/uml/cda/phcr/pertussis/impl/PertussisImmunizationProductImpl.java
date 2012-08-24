@@ -10,12 +10,15 @@
  *******************************************************************************/
 package org.openhealthtools.mdht.uml.cda.phcr.pertussis.impl;
 
+import java.lang.Iterable;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
 
 import org.eclipse.emf.ecore.EClass;
 
+import org.eclipse.emf.ecore.EObject;
+import org.openhealthtools.mdht.emf.runtime.util.Initializer;
 import org.openhealthtools.mdht.uml.cda.ccd.impl.ProductImpl;
 
 import org.openhealthtools.mdht.uml.cda.phcr.pertussis.PertussisImmunizationProduct;
@@ -36,41 +39,50 @@ import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
  */
 public class PertussisImmunizationProductImpl extends ProductImpl implements PertussisImmunizationProduct {
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	protected PertussisImmunizationProductImpl() {
-		super();
-	}
+    super();
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	@Override
 	protected EClass eStaticClass() {
-		return PertussisPackage.Literals.PERTUSSIS_IMMUNIZATION_PRODUCT;
-	}
+    return PertussisPackage.Literals.PERTUSSIS_IMMUNIZATION_PRODUCT;
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	@Override
 	public boolean validateProductTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return PertussisImmunizationProductOperations.validateProductTemplateId(this, diagnostics, context);
-	}
+    return PertussisImmunizationProductOperations.validateProductTemplateId(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public PertussisImmunizationProduct init() {
-    	CDAUtil.init(this);
-    	return this;
-	}
+      return Initializer.Util.init(this);
+  }
+
+  /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    public PertussisImmunizationProduct init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
 } //PertussisImmunizationProductImpl

@@ -10,11 +10,14 @@
  *******************************************************************************/
 package org.openhealthtools.mdht.uml.cda.phcr.salmonellosis;
 
+import java.lang.Iterable;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.common.util.EList;
 
+import org.eclipse.emf.ecore.EObject;
+import org.openhealthtools.mdht.emf.runtime.util.Initializer;
 import org.openhealthtools.mdht.uml.cda.phcr.PhcrRelevantDxTestsSection;
 
 /**
@@ -24,7 +27,7 @@ import org.openhealthtools.mdht.uml.cda.phcr.PhcrRelevantDxTestsSection;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.phcr.salmonellosis.SalmonellosisPackage#getSalmonellosisPHCRRelevantDxTestsSection()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation templateId.root='2.16.840.1.113883.10.20.15.2.38' constraints.validation.error='SalmonellosisPHCRRelevantDxTestsSectionTemplateId' constraints.validation.warning='SalmonellosisPHCRRelevantDxTestsSectionSalmonellosisResultObservation' constraints.validation.info='SalmonellosisPHCRRelevantDxTestsSectionSalmonellosisResultOrganizer'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='SalmonellosisPHCRRelevantDxTestsSectionTemplateId' templateId.root='2.16.840.1.113883.10.20.15.2.38' constraints.validation.info='SalmonellosisPHCRRelevantDxTestsSectionSalmonellosisResultOrganizer' constraints.validation.warning='SalmonellosisPHCRRelevantDxTestsSectionSalmonellosisResultObservation'"
  * @generated
  */
 public interface SalmonellosisPHCRRelevantDxTestsSection extends PhcrRelevantDxTestsSection {
@@ -32,7 +35,6 @@ public interface SalmonellosisPHCRRelevantDxTestsSection extends PhcrRelevantDxT
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.entry->exists(entry : cda::Entry | not entry.organizer.oclIsUndefined() and entry.organizer.oclIsKindOf(salmonellosis::SalmonellosisResultOrganizer) and entry.typeCode = vocab::x_ActRelationshipEntry::DRIV)
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
    * <!-- end-model-doc -->
@@ -45,7 +47,6 @@ public interface SalmonellosisPHCRRelevantDxTestsSection extends PhcrRelevantDxT
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.entry->exists(entry : cda::Entry | not entry.observation.oclIsUndefined() and entry.observation.oclIsKindOf(salmonellosis::SalmonellosisResultObservation) and entry.typeCode = vocab::x_ActRelationshipEntry::DRIV)
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
    * <!-- end-model-doc -->
@@ -57,9 +58,6 @@ public interface SalmonellosisPHCRRelevantDxTestsSection extends PhcrRelevantDxT
 	/**
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * <!-- begin-model-doc -->
-   * self.getOrganizers()->select(organizer : cda::Organizer | not organizer.oclIsUndefined() and organizer.oclIsKindOf(salmonellosis::SalmonellosisResultOrganizer)).oclAsType(salmonellosis::SalmonellosisResultOrganizer)
-   * <!-- end-model-doc -->
    * @model kind="operation" required="true" ordered="false"
    *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getOrganizers()->select(organizer : cda::Organizer | not organizer.oclIsUndefined() and organizer.oclIsKindOf(salmonellosis::SalmonellosisResultOrganizer)).oclAsType(salmonellosis::SalmonellosisResultOrganizer)'"
    * @generated
@@ -69,9 +67,6 @@ public interface SalmonellosisPHCRRelevantDxTestsSection extends PhcrRelevantDxT
 	/**
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * <!-- begin-model-doc -->
-   * self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(salmonellosis::SalmonellosisResultObservation)).oclAsType(salmonellosis::SalmonellosisResultObservation)
-   * <!-- end-model-doc -->
    * @model kind="operation" required="true" ordered="false"
    *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(salmonellosis::SalmonellosisResultObservation)).oclAsType(salmonellosis::SalmonellosisResultObservation)'"
    * @generated
@@ -84,5 +79,12 @@ public interface SalmonellosisPHCRRelevantDxTestsSection extends PhcrRelevantDxT
    * @generated
    */
   public SalmonellosisPHCRRelevantDxTestsSection init();
+
+  /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    public SalmonellosisPHCRRelevantDxTestsSection init(Iterable<? extends Initializer<? extends EObject>> initializers);
 
 } // SalmonellosisPHCRRelevantDxTestsSection

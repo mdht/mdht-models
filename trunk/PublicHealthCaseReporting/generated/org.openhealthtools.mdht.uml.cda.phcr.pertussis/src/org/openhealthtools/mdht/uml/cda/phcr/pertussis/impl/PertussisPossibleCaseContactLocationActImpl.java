@@ -10,12 +10,15 @@
  *******************************************************************************/
 package org.openhealthtools.mdht.uml.cda.phcr.pertussis.impl;
 
+import java.lang.Iterable;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
 
 import org.eclipse.emf.ecore.EClass;
 
+import org.eclipse.emf.ecore.EObject;
+import org.openhealthtools.mdht.emf.runtime.util.Initializer;
 import org.openhealthtools.mdht.uml.cda.impl.ActImpl;
 
 import org.openhealthtools.mdht.uml.cda.phcr.pertussis.PertussisPackage;
@@ -36,76 +39,105 @@ import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
  */
 public class PertussisPossibleCaseContactLocationActImpl extends ActImpl implements PertussisPossibleCaseContactLocationAct {
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	protected PertussisPossibleCaseContactLocationActImpl() {
-		super();
-	}
+    super();
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	@Override
 	protected EClass eStaticClass() {
-		return PertussisPackage.Literals.PERTUSSIS_POSSIBLE_CASE_CONTACT_LOCATION_ACT;
-	}
+    return PertussisPackage.Literals.PERTUSSIS_POSSIBLE_CASE_CONTACT_LOCATION_ACT;
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validatePertussisPossibleCaseContactLocationActTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return PertussisPossibleCaseContactLocationActOperations.validatePertussisPossibleCaseContactLocationActTemplateId(this, diagnostics, context);
-	}
+    return PertussisPossibleCaseContactLocationActOperations.validatePertussisPossibleCaseContactLocationActTemplateId(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validatePertussisPossibleCaseContactLocationActClassCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return PertussisPossibleCaseContactLocationActOperations.validatePertussisPossibleCaseContactLocationActClassCode(this, diagnostics, context);
-	}
+    return PertussisPossibleCaseContactLocationActOperations.validatePertussisPossibleCaseContactLocationActClassCode(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public boolean validatePertussisPossibleCaseContactLocationActCodeP(DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+    return PertussisPossibleCaseContactLocationActOperations.validatePertussisPossibleCaseContactLocationActCodeP(this, diagnostics, context);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validatePertussisPossibleCaseContactLocationActCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return PertussisPossibleCaseContactLocationActOperations.validatePertussisPossibleCaseContactLocationActCode(this, diagnostics, context);
-	}
+    return PertussisPossibleCaseContactLocationActOperations.validatePertussisPossibleCaseContactLocationActCode(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validatePertussisPossibleCaseContactLocationActMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return PertussisPossibleCaseContactLocationActOperations.validatePertussisPossibleCaseContactLocationActMoodCode(this, diagnostics, context);
-	}
+    return PertussisPossibleCaseContactLocationActOperations.validatePertussisPossibleCaseContactLocationActMoodCode(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validatePertussisPossibleCaseContactLocationActStatusCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return PertussisPossibleCaseContactLocationActOperations.validatePertussisPossibleCaseContactLocationActStatusCode(this, diagnostics, context);
-	}
+    return PertussisPossibleCaseContactLocationActOperations.validatePertussisPossibleCaseContactLocationActStatusCode(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public boolean validatePertussisPossibleCaseContactLocationActStatusCodeP(DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+    return PertussisPossibleCaseContactLocationActOperations.validatePertussisPossibleCaseContactLocationActStatusCodeP(this, diagnostics, context);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public PertussisPossibleCaseContactLocationAct init() {
-    	CDAUtil.init(this);
-    	return this;
-	}
+      return Initializer.Util.init(this);
+  }
+
+  /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    public PertussisPossibleCaseContactLocationAct init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
 } //PertussisPossibleCaseContactLocationActImpl

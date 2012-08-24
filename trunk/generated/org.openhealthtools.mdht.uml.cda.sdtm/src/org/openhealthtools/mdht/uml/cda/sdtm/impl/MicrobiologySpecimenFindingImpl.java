@@ -6,12 +6,15 @@
  */
 package org.openhealthtools.mdht.uml.cda.sdtm.impl;
 
+import java.lang.Iterable;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
 
 import org.eclipse.emf.ecore.EClass;
 
+import org.eclipse.emf.ecore.EObject;
+import org.openhealthtools.mdht.emf.runtime.util.Initializer;
 import org.openhealthtools.mdht.uml.cda.impl.ObservationImpl;
 
 import org.openhealthtools.mdht.uml.cda.sdtm.BaselineIndicator;
@@ -143,6 +146,16 @@ public class MicrobiologySpecimenFindingImpl extends ObservationImpl implements 
    * <!-- end-user-doc -->
    * @generated
    */
+  public boolean validateMicrobiologySpecimenFindingInterpretationCode(DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+    return MicrobiologySpecimenFindingOperations.validateMicrobiologySpecimenFindingInterpretationCode(this, diagnostics, context);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
   public boolean validateMicrobiologySpecimenFindingGroupIdentifier(DiagnosticChain diagnostics, Map<Object, Object> context)
   {
     return MicrobiologySpecimenFindingOperations.validateMicrobiologySpecimenFindingGroupIdentifier(this, diagnostics, context);
@@ -193,9 +206,9 @@ public class MicrobiologySpecimenFindingImpl extends ObservationImpl implements 
    * <!-- end-user-doc -->
    * @generated
    */
-  public boolean validateMicrobiologySpecimenFindingBaselineIndicator(DiagnosticChain diagnostics, Map<Object, Object> context)
+  public boolean validateMicrobiologySpecimenFindingMicrobiologyResultCategoryAssociation(DiagnosticChain diagnostics, Map<Object, Object> context)
   {
-    return MicrobiologySpecimenFindingOperations.validateMicrobiologySpecimenFindingBaselineIndicator(this, diagnostics, context);
+    return MicrobiologySpecimenFindingOperations.validateMicrobiologySpecimenFindingMicrobiologyResultCategoryAssociation(this, diagnostics, context);
   }
 
   /**
@@ -203,9 +216,39 @@ public class MicrobiologySpecimenFindingImpl extends ObservationImpl implements 
    * <!-- end-user-doc -->
    * @generated
    */
-  public boolean validateMicrobiologySpecimenFindingDerivedDataIndicator(DiagnosticChain diagnostics, Map<Object, Object> context)
+  public boolean validateMicrobiologySpecimenFindingmicrobiologySpecimenFindingCategoryAssociationmicrobiologySpecimenFindingCategoryClassCode(DiagnosticChain diagnostics, Map<Object, Object> context)
   {
-    return MicrobiologySpecimenFindingOperations.validateMicrobiologySpecimenFindingDerivedDataIndicator(this, diagnostics, context);
+    return MicrobiologySpecimenFindingOperations.validateMicrobiologySpecimenFindingmicrobiologySpecimenFindingCategoryAssociationmicrobiologySpecimenFindingCategoryClassCode(this, diagnostics, context);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public boolean validateMicrobiologySpecimenFindingmicrobiologySpecimenFindingCategoryAssociationmicrobiologySpecimenFindingCategoryCode(DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+    return MicrobiologySpecimenFindingOperations.validateMicrobiologySpecimenFindingmicrobiologySpecimenFindingCategoryAssociationmicrobiologySpecimenFindingCategoryCode(this, diagnostics, context);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public boolean validateMicrobiologySpecimenFindingmicrobiologySpecimenFindingCategoryAssociationmicrobiologySpecimenFindingCategoryMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+    return MicrobiologySpecimenFindingOperations.validateMicrobiologySpecimenFindingmicrobiologySpecimenFindingCategoryAssociationmicrobiologySpecimenFindingCategoryMoodCode(this, diagnostics, context);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public boolean validateMicrobiologySpecimenFindingmicrobiologySpecimenFindingCategoryAssociationmicrobiologySpecimenFindingCategoryValue(DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+    return MicrobiologySpecimenFindingOperations.validateMicrobiologySpecimenFindingmicrobiologySpecimenFindingCategoryAssociationmicrobiologySpecimenFindingCategoryValue(this, diagnostics, context);
   }
 
   /**
@@ -223,6 +266,56 @@ public class MicrobiologySpecimenFindingImpl extends ObservationImpl implements 
    * <!-- end-user-doc -->
    * @generated
    */
+  public boolean validateMicrobiologySpecimenFindingmicrobiologySpecimenFindingCategoryAssociationMicrobiologySpecimenFindingCategory(DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+    return MicrobiologySpecimenFindingOperations.validateMicrobiologySpecimenFindingmicrobiologySpecimenFindingCategoryAssociationMicrobiologySpecimenFindingCategory(this, diagnostics, context);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public boolean validateMicrobiologySpecimenFindingmicrobiologySpecimenFindingSubCategoryAssociationmicrobiologySpecimenFindingSubCategoryClassCode(DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+    return MicrobiologySpecimenFindingOperations.validateMicrobiologySpecimenFindingmicrobiologySpecimenFindingSubCategoryAssociationmicrobiologySpecimenFindingSubCategoryClassCode(this, diagnostics, context);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public boolean validateMicrobiologySpecimenFindingmicrobiologySpecimenFindingSubCategoryAssociationmicrobiologySpecimenFindingSubCategoryCode(DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+    return MicrobiologySpecimenFindingOperations.validateMicrobiologySpecimenFindingmicrobiologySpecimenFindingSubCategoryAssociationmicrobiologySpecimenFindingSubCategoryCode(this, diagnostics, context);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public boolean validateMicrobiologySpecimenFindingmicrobiologySpecimenFindingSubCategoryAssociationmicrobiologySpecimenFindingSubCategoryMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+    return MicrobiologySpecimenFindingOperations.validateMicrobiologySpecimenFindingmicrobiologySpecimenFindingSubCategoryAssociationmicrobiologySpecimenFindingSubCategoryMoodCode(this, diagnostics, context);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public boolean validateMicrobiologySpecimenFindingmicrobiologySpecimenFindingSubCategoryAssociationmicrobiologySpecimenFindingSubCategoryValue(DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+    return MicrobiologySpecimenFindingOperations.validateMicrobiologySpecimenFindingmicrobiologySpecimenFindingSubCategoryAssociationmicrobiologySpecimenFindingSubCategoryValue(this, diagnostics, context);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
   public boolean validateMicrobiologySpecimenFindingmicrobiologySpecimenFindingSubCategoryAssociationTypeCode(DiagnosticChain diagnostics, Map<Object, Object> context)
   {
     return MicrobiologySpecimenFindingOperations.validateMicrobiologySpecimenFindingmicrobiologySpecimenFindingSubCategoryAssociationTypeCode(this, diagnostics, context);
@@ -233,9 +326,69 @@ public class MicrobiologySpecimenFindingImpl extends ObservationImpl implements 
    * <!-- end-user-doc -->
    * @generated
    */
+  public boolean validateMicrobiologySpecimenFindingmicrobiologySpecimenFindingSubCategoryAssociationMicrobiologySpecimenFindingSubCategory(DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+    return MicrobiologySpecimenFindingOperations.validateMicrobiologySpecimenFindingmicrobiologySpecimenFindingSubCategoryAssociationMicrobiologySpecimenFindingSubCategory(this, diagnostics, context);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public boolean validateMicrobiologySpecimenFindingmicrobiologyResultCategoryAssociationmicrobiologyResultCategoryClassCode(DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+    return MicrobiologySpecimenFindingOperations.validateMicrobiologySpecimenFindingmicrobiologyResultCategoryAssociationmicrobiologyResultCategoryClassCode(this, diagnostics, context);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public boolean validateMicrobiologySpecimenFindingmicrobiologyResultCategoryAssociationmicrobiologyResultCategoryCode(DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+    return MicrobiologySpecimenFindingOperations.validateMicrobiologySpecimenFindingmicrobiologyResultCategoryAssociationmicrobiologyResultCategoryCode(this, diagnostics, context);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public boolean validateMicrobiologySpecimenFindingmicrobiologyResultCategoryAssociationmicrobiologyResultCategoryMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+    return MicrobiologySpecimenFindingOperations.validateMicrobiologySpecimenFindingmicrobiologyResultCategoryAssociationmicrobiologyResultCategoryMoodCode(this, diagnostics, context);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public boolean validateMicrobiologySpecimenFindingmicrobiologyResultCategoryAssociationmicrobiologyResultCategoryValue(DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+    return MicrobiologySpecimenFindingOperations.validateMicrobiologySpecimenFindingmicrobiologyResultCategoryAssociationmicrobiologyResultCategoryValue(this, diagnostics, context);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
   public boolean validateMicrobiologySpecimenFindingmicrobiologyResultCategoryAssociationTypeCode(DiagnosticChain diagnostics, Map<Object, Object> context)
   {
     return MicrobiologySpecimenFindingOperations.validateMicrobiologySpecimenFindingmicrobiologyResultCategoryAssociationTypeCode(this, diagnostics, context);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public boolean validateMicrobiologySpecimenFindingmicrobiologyResultCategoryAssociationMicrobiologyResultCategory(DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+    return MicrobiologySpecimenFindingOperations.validateMicrobiologySpecimenFindingmicrobiologyResultCategoryAssociationMicrobiologyResultCategory(this, diagnostics, context);
   }
 
   /**
@@ -273,28 +426,17 @@ public class MicrobiologySpecimenFindingImpl extends ObservationImpl implements 
    * <!-- end-user-doc -->
    * @generated
    */
-  public BaselineIndicator getBaselineIndicator()
-  {
-    return MicrobiologySpecimenFindingOperations.getBaselineIndicator(this);
-  }
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public DerivedDataIndicator getDerivedDataIndicator()
-  {
-    return MicrobiologySpecimenFindingOperations.getDerivedDataIndicator(this);
-  }
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
   public MicrobiologySpecimenFinding init() {
-    	CDAUtil.init(this);
-    	return this;
+      return Initializer.Util.init(this);
   }
+
+  /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    public MicrobiologySpecimenFinding init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
 } //MicrobiologySpecimenFindingImpl

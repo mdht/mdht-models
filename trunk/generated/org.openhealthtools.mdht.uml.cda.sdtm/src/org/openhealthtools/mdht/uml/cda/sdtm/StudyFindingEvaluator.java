@@ -6,10 +6,13 @@
  */
 package org.openhealthtools.mdht.uml.cda.sdtm;
 
+import java.lang.Iterable;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
 
+import org.eclipse.emf.ecore.EObject;
+import org.openhealthtools.mdht.emf.runtime.util.Initializer;
 import org.openhealthtools.mdht.uml.cda.Participant1;
 
 /**
@@ -19,8 +22,8 @@ import org.openhealthtools.mdht.uml.cda.Participant1;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.sdtm.SdtmPackage#getStudyFindingEvaluator()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation templateId.root='2.16.840.1.113883.10.20.23.72' constraints.validation.error='Study Finding EvaluatorTemplateId Study Finding EvaluatorTypeCode' typeCode='PRF'"
- *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/sdtmStudyFindingEvaluatorroleOfEvaluator templateId.root='null' constraints.validation.error='roleOfEvaluatorTemplateId roleOfEvaluatorClassCode roleOfEvaluatorCode' classCode='ASSIGNED'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='Study Finding EvaluatorTemplateId Study Finding EvaluatorTypeCode' templateId.root='2.16.840.1.113883.10.20.23.72' typeCode='PRF'"
+ *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/sdtmStudyFindingEvaluatorroleOfEvaluator constraints.validation.error='roleOfEvaluatorTemplateId roleOfEvaluatorClassCode roleOfEvaluatorCode' templateId.root='null' classCode='ASSIGNED'"
  * @generated
  */
 public interface StudyFindingEvaluator extends Participant1
@@ -29,7 +32,6 @@ public interface StudyFindingEvaluator extends Participant1
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.23.72')
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
    * <!-- end-model-doc -->
@@ -42,7 +44,6 @@ public interface StudyFindingEvaluator extends Participant1
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.typeCode=vocab::ParticipationType::PRF
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
    * <!-- end-model-doc -->
@@ -57,4 +58,11 @@ public interface StudyFindingEvaluator extends Participant1
    * @generated
    */
   public StudyFindingEvaluator init();
+
+  /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    public StudyFindingEvaluator init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // StudyFindingEvaluator

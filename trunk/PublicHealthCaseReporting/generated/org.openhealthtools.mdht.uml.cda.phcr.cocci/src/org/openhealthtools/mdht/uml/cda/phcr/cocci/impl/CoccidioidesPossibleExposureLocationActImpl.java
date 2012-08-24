@@ -10,10 +10,13 @@
  *******************************************************************************/
 package org.openhealthtools.mdht.uml.cda.phcr.cocci.impl;
 
+import java.lang.Iterable;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.ecore.EClass;
+import org.eclipse.emf.ecore.EObject;
+import org.openhealthtools.mdht.emf.runtime.util.Initializer;
 import org.openhealthtools.mdht.uml.cda.impl.ActImpl;
 import org.openhealthtools.mdht.uml.cda.phcr.cocci.CocciPackage;
 import org.openhealthtools.mdht.uml.cda.phcr.cocci.CoccidioidesPossibleExposureLocationAct;
@@ -31,76 +34,95 @@ import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
  */
 public class CoccidioidesPossibleExposureLocationActImpl extends ActImpl implements CoccidioidesPossibleExposureLocationAct {
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	protected CoccidioidesPossibleExposureLocationActImpl() {
-		super();
-	}
+    super();
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	@Override
 	protected EClass eStaticClass() {
-		return CocciPackage.Literals.COCCIDIOIDES_POSSIBLE_EXPOSURE_LOCATION_ACT;
-	}
+    return CocciPackage.Literals.COCCIDIOIDES_POSSIBLE_EXPOSURE_LOCATION_ACT;
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateCoccidioidesPossibleExposureLocationActTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return CoccidioidesPossibleExposureLocationActOperations.validateCoccidioidesPossibleExposureLocationActTemplateId(this, diagnostics, context);
-	}
+    return CoccidioidesPossibleExposureLocationActOperations.validateCoccidioidesPossibleExposureLocationActTemplateId(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateCoccidioidesPossibleExposureLocationActClassCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return CoccidioidesPossibleExposureLocationActOperations.validateCoccidioidesPossibleExposureLocationActClassCode(this, diagnostics, context);
-	}
+    return CoccidioidesPossibleExposureLocationActOperations.validateCoccidioidesPossibleExposureLocationActClassCode(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateCoccidioidesPossibleExposureLocationActCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return CoccidioidesPossibleExposureLocationActOperations.validateCoccidioidesPossibleExposureLocationActCode(this, diagnostics, context);
-	}
+    return CoccidioidesPossibleExposureLocationActOperations.validateCoccidioidesPossibleExposureLocationActCode(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateCoccidioidesPossibleExposureLocationActMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return CoccidioidesPossibleExposureLocationActOperations.validateCoccidioidesPossibleExposureLocationActMoodCode(this, diagnostics, context);
-	}
+    return CoccidioidesPossibleExposureLocationActOperations.validateCoccidioidesPossibleExposureLocationActMoodCode(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public boolean validateCoccidioidesPossibleExposureLocationActStatusCodeP(DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+    return CoccidioidesPossibleExposureLocationActOperations.validateCoccidioidesPossibleExposureLocationActStatusCodeP(this, diagnostics, context);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateCoccidioidesPossibleExposureLocationActStatusCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return CoccidioidesPossibleExposureLocationActOperations.validateCoccidioidesPossibleExposureLocationActStatusCode(this, diagnostics, context);
-	}
+    return CoccidioidesPossibleExposureLocationActOperations.validateCoccidioidesPossibleExposureLocationActStatusCode(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public CoccidioidesPossibleExposureLocationAct init() {
-    	CDAUtil.init(this);
-    	return this;
-	}
+      return Initializer.Util.init(this);
+  }
+
+  /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    public CoccidioidesPossibleExposureLocationAct init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
 } //CoccidioidesPossibleExposureLocationActImpl

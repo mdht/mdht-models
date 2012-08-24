@@ -51,410 +51,424 @@ import org.openhealthtools.mdht.uml.cda.phcr.silicosis.util.SilicosisValidator;
  */
 public class SilicosisSocioBehavioralBooleanRiskFactorObservationOperations extends SocialHistoryObservationOperations {
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	protected SilicosisSocioBehavioralBooleanRiskFactorObservationOperations() {
-		super();
-	}
+    super();
+  }
 
 	/**
-	 * The cached OCL expression body for the '{@link #validateSilicosisSocioBehavioralBooleanRiskFactorObservationCodeP(SilicosisSocioBehavioralBooleanRiskFactorObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Silicosis Socio Behavioral Boolean Risk Factor Observation Code P</em>}' operation.
-	 * <!-- begin-user-doc -->
+   * The cached OCL expression body for the '{@link #validateSilicosisSocioBehavioralBooleanRiskFactorObservationCodeP(SilicosisSocioBehavioralBooleanRiskFactorObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Silicosis Socio Behavioral Boolean Risk Factor Observation Code P</em>}' operation.
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateSilicosisSocioBehavioralBooleanRiskFactorObservationCodeP(SilicosisSocioBehavioralBooleanRiskFactorObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
+   * @see #validateSilicosisSocioBehavioralBooleanRiskFactorObservationCodeP(SilicosisSocioBehavioralBooleanRiskFactorObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+   * @generated
+   * @ordered
+   */
 	protected static final String VALIDATE_SILICOSIS_SOCIO_BEHAVIORAL_BOOLEAN_RISK_FACTOR_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined())";
 
 	/**
-	 * The cached OCL invariant for the '{@link #validateSilicosisSocioBehavioralBooleanRiskFactorObservationCodeP(SilicosisSocioBehavioralBooleanRiskFactorObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Silicosis Socio Behavioral Boolean Risk Factor Observation Code P</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
+   * The cached OCL invariant for the '{@link #validateSilicosisSocioBehavioralBooleanRiskFactorObservationCodeP(SilicosisSocioBehavioralBooleanRiskFactorObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Silicosis Socio Behavioral Boolean Risk Factor Observation Code P</em>}' invariant operation.
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateSilicosisSocioBehavioralBooleanRiskFactorObservationCodeP(SilicosisSocioBehavioralBooleanRiskFactorObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
+   * @see #validateSilicosisSocioBehavioralBooleanRiskFactorObservationCodeP(SilicosisSocioBehavioralBooleanRiskFactorObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+   * @generated
+   * @ordered
+   */
 	
 	protected static Constraint VALIDATE_SILICOSIS_SOCIO_BEHAVIORAL_BOOLEAN_RISK_FACTOR_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * (self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined())
-	 * @param silicosisSocioBehavioralBooleanRiskFactorObservation The receiving '<em><b>Socio Behavioral Boolean Risk Factor Observation</b></em>' model object.
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
+   * <!-- begin-model-doc -->
+   * @param silicosisSocioBehavioralBooleanRiskFactorObservation The receiving '<em><b>Socio Behavioral Boolean Risk Factor Observation</b></em>' model object.
+   * @param diagnostics The chain of diagnostics to which problems are to be appended.
+   * @param context The cache of context-specific information.
+   * <!-- end-model-doc -->
+   * @generated
+   */
 	
 	public static  boolean validateSilicosisSocioBehavioralBooleanRiskFactorObservationCodeP(SilicosisSocioBehavioralBooleanRiskFactorObservation silicosisSocioBehavioralBooleanRiskFactorObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
   	  
-		if (VALIDATE_SILICOSIS_SOCIO_BEHAVIORAL_BOOLEAN_RISK_FACTOR_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setContext(SilicosisPackage.Literals.SILICOSIS_SOCIO_BEHAVIORAL_BOOLEAN_RISK_FACTOR_OBSERVATION);
-			try {
-				VALIDATE_SILICOSIS_SOCIO_BEHAVIORAL_BOOLEAN_RISK_FACTOR_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_SILICOSIS_SOCIO_BEHAVIORAL_BOOLEAN_RISK_FACTOR_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
-				throw new UnsupportedOperationException(pe.getLocalizedMessage());
-			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_SILICOSIS_SOCIO_BEHAVIORAL_BOOLEAN_RISK_FACTOR_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(silicosisSocioBehavioralBooleanRiskFactorObservation)) {
-			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 SilicosisValidator.DIAGNOSTIC_SOURCE,
-						 SilicosisValidator.SILICOSIS_SOCIO_BEHAVIORAL_BOOLEAN_RISK_FACTOR_OBSERVATION__SILICOSIS_SOCIO_BEHAVIORAL_BOOLEAN_RISK_FACTOR_OBSERVATION_CODE_P,
-						 SilicosisPlugin.INSTANCE.getString("SilicosisSocioBehavioralBooleanRiskFactorObservationCodeP"),
-						 new Object [] { silicosisSocioBehavioralBooleanRiskFactorObservation }));
-			}
-			
-			if (context != null) {
-				// generate a pass token for my dependent constraints to short-circuit or filter results
-				@SuppressWarnings("unchecked")
-				Collection<Object> passToken = (Collection<Object>) context.get("org.openhealthtools.mdht.uml.cda.phcr.silicosis.SilicosisSocioBehavioralBooleanRiskFactorObservationCodeP");
-				if (passToken == null) {
-					// anticipate a reasonably healthy model
-					passToken = new java.util.ArrayList<Object>(3);
-					context.put("org.openhealthtools.mdht.uml.cda.phcr.silicosis.SilicosisSocioBehavioralBooleanRiskFactorObservationCodeP", passToken);
-				}
-				passToken.add(silicosisSocioBehavioralBooleanRiskFactorObservation);
-			}
-			 
-			return false;
-		}
-		return true;
-	}
+    if (VALIDATE_SILICOSIS_SOCIO_BEHAVIORAL_BOOLEAN_RISK_FACTOR_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+      OCL.Helper helper = EOCL_ENV.createOCLHelper();
+      helper.setContext(SilicosisPackage.Literals.SILICOSIS_SOCIO_BEHAVIORAL_BOOLEAN_RISK_FACTOR_OBSERVATION);
+      try
+      {
+        VALIDATE_SILICOSIS_SOCIO_BEHAVIORAL_BOOLEAN_RISK_FACTOR_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_SILICOSIS_SOCIO_BEHAVIORAL_BOOLEAN_RISK_FACTOR_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+      }
+      catch (ParserException pe)
+      {
+        throw new UnsupportedOperationException(pe.getLocalizedMessage());
+      }
+    }
+    if (!EOCL_ENV.createQuery(VALIDATE_SILICOSIS_SOCIO_BEHAVIORAL_BOOLEAN_RISK_FACTOR_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(silicosisSocioBehavioralBooleanRiskFactorObservation))
+    {
+      if (diagnostics != null)
+      {
+        diagnostics.add
+          (new BasicDiagnostic
+            (Diagnostic.ERROR,
+             SilicosisValidator.DIAGNOSTIC_SOURCE,
+             SilicosisValidator.SILICOSIS_SOCIO_BEHAVIORAL_BOOLEAN_RISK_FACTOR_OBSERVATION__SILICOSIS_SOCIO_BEHAVIORAL_BOOLEAN_RISK_FACTOR_OBSERVATION_CODE_P,
+             SilicosisPlugin.INSTANCE.getString("SilicosisSocioBehavioralBooleanRiskFactorObservationCodeP"),
+             new Object [] { silicosisSocioBehavioralBooleanRiskFactorObservation }));
+      }
+      
+      if (context != null) {
+        // generate a pass token for my dependent constraints to short-circuit or filter results
+        @SuppressWarnings("unchecked")
+        Collection<Object> passToken = (Collection<Object>) context.get("org.openhealthtools.mdht.uml.cda.phcr.silicosis.SilicosisSocioBehavioralBooleanRiskFactorObservationCodeP");
+        if (passToken == null) {
+          // anticipate a reasonably healthy model
+          passToken = new java.util.ArrayList<Object>(3);
+          context.put("org.openhealthtools.mdht.uml.cda.phcr.silicosis.SilicosisSocioBehavioralBooleanRiskFactorObservationCodeP", passToken);
+        }
+        passToken.add(silicosisSocioBehavioralBooleanRiskFactorObservation);
+      }
+       
+      return false;
+    }
+    return true;
+  }
 
 	/**
-	 * The cached OCL expression body for the '{@link #validateSilicosisSocioBehavioralBooleanRiskFactorObservationCode(SilicosisSocioBehavioralBooleanRiskFactorObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Silicosis Socio Behavioral Boolean Risk Factor Observation Code</em>}' operation.
-	 * <!-- begin-user-doc -->
+   * The cached OCL expression body for the '{@link #validateSilicosisSocioBehavioralBooleanRiskFactorObservationCode(SilicosisSocioBehavioralBooleanRiskFactorObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Silicosis Socio Behavioral Boolean Risk Factor Observation Code</em>}' operation.
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateSilicosisSocioBehavioralBooleanRiskFactorObservationCode(SilicosisSocioBehavioralBooleanRiskFactorObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
+   * @see #validateSilicosisSocioBehavioralBooleanRiskFactorObservationCode(SilicosisSocioBehavioralBooleanRiskFactorObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+   * @generated
+   * @ordered
+   */
 	protected static final String VALIDATE_SILICOSIS_SOCIO_BEHAVIORAL_BOOLEAN_RISK_FACTOR_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and "+
 "let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in "+
 "value.code = 'ASSERTION' and value.codeSystem = '2.16.840.1.113883.5.4')";
 
 	/**
-	 * The cached OCL invariant for the '{@link #validateSilicosisSocioBehavioralBooleanRiskFactorObservationCode(SilicosisSocioBehavioralBooleanRiskFactorObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Silicosis Socio Behavioral Boolean Risk Factor Observation Code</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
+   * The cached OCL invariant for the '{@link #validateSilicosisSocioBehavioralBooleanRiskFactorObservationCode(SilicosisSocioBehavioralBooleanRiskFactorObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Silicosis Socio Behavioral Boolean Risk Factor Observation Code</em>}' invariant operation.
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateSilicosisSocioBehavioralBooleanRiskFactorObservationCode(SilicosisSocioBehavioralBooleanRiskFactorObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
+   * @see #validateSilicosisSocioBehavioralBooleanRiskFactorObservationCode(SilicosisSocioBehavioralBooleanRiskFactorObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+   * @generated
+   * @ordered
+   */
 	
 	protected static Constraint VALIDATE_SILICOSIS_SOCIO_BEHAVIORAL_BOOLEAN_RISK_FACTOR_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 	
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * (self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and 
-	 * let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in 
-	 * value.code = 'ASSERTION' and value.codeSystem = '2.16.840.1.113883.5.4')
-	 * @param silicosisSocioBehavioralBooleanRiskFactorObservation The receiving '<em><b>Socio Behavioral Boolean Risk Factor Observation</b></em>' model object.
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
+   * <!-- begin-model-doc -->
+   * @param silicosisSocioBehavioralBooleanRiskFactorObservation The receiving '<em><b>Socio Behavioral Boolean Risk Factor Observation</b></em>' model object.
+   * @param diagnostics The chain of diagnostics to which problems are to be appended.
+   * @param context The cache of context-specific information.
+   * <!-- end-model-doc -->
+   * @generated
+   */
 	
 	public static  boolean validateSilicosisSocioBehavioralBooleanRiskFactorObservationCode(SilicosisSocioBehavioralBooleanRiskFactorObservation silicosisSocioBehavioralBooleanRiskFactorObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
   	  
-		Object passToken = (context == null) ? null : context.get("org.openhealthtools.mdht.uml.cda.phcr.silicosis.SilicosisSocioBehavioralBooleanRiskFactorObservationCodeP");
-		if ((passToken instanceof Collection<?>) && ((Collection<?>) passToken).contains(silicosisSocioBehavioralBooleanRiskFactorObservation)) {
-			// I have a free pass to short-circuit
-			return true;
-		}
+    Object passToken = (context == null) ? null : context.get("org.openhealthtools.mdht.uml.cda.phcr.silicosis.SilicosisSocioBehavioralBooleanRiskFactorObservationCodeP");
+    if ((passToken instanceof Collection<?>) && ((Collection<?>) passToken).contains(silicosisSocioBehavioralBooleanRiskFactorObservation)) {
+      // I have a free pass to short-circuit
+      return true;
+    }
   	  
-		if (VALIDATE_SILICOSIS_SOCIO_BEHAVIORAL_BOOLEAN_RISK_FACTOR_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setContext(SilicosisPackage.Literals.SILICOSIS_SOCIO_BEHAVIORAL_BOOLEAN_RISK_FACTOR_OBSERVATION);
-			try {
-				VALIDATE_SILICOSIS_SOCIO_BEHAVIORAL_BOOLEAN_RISK_FACTOR_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_SILICOSIS_SOCIO_BEHAVIORAL_BOOLEAN_RISK_FACTOR_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
-				throw new UnsupportedOperationException(pe.getLocalizedMessage());
-			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_SILICOSIS_SOCIO_BEHAVIORAL_BOOLEAN_RISK_FACTOR_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(silicosisSocioBehavioralBooleanRiskFactorObservation)) {
-			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 SilicosisValidator.DIAGNOSTIC_SOURCE,
-						 SilicosisValidator.SILICOSIS_SOCIO_BEHAVIORAL_BOOLEAN_RISK_FACTOR_OBSERVATION__SILICOSIS_SOCIO_BEHAVIORAL_BOOLEAN_RISK_FACTOR_OBSERVATION_CODE,
-						 SilicosisPlugin.INSTANCE.getString("SilicosisSocioBehavioralBooleanRiskFactorObservationCode"),
-						 new Object [] { silicosisSocioBehavioralBooleanRiskFactorObservation }));
-			}
-			 
-			return false;
-		}
-		return true;
-	}
+    if (VALIDATE_SILICOSIS_SOCIO_BEHAVIORAL_BOOLEAN_RISK_FACTOR_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+      OCL.Helper helper = EOCL_ENV.createOCLHelper();
+      helper.setContext(SilicosisPackage.Literals.SILICOSIS_SOCIO_BEHAVIORAL_BOOLEAN_RISK_FACTOR_OBSERVATION);
+      try
+      {
+        VALIDATE_SILICOSIS_SOCIO_BEHAVIORAL_BOOLEAN_RISK_FACTOR_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_SILICOSIS_SOCIO_BEHAVIORAL_BOOLEAN_RISK_FACTOR_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+      }
+      catch (ParserException pe)
+      {
+        throw new UnsupportedOperationException(pe.getLocalizedMessage());
+      }
+    }
+    if (!EOCL_ENV.createQuery(VALIDATE_SILICOSIS_SOCIO_BEHAVIORAL_BOOLEAN_RISK_FACTOR_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(silicosisSocioBehavioralBooleanRiskFactorObservation))
+    {
+      if (diagnostics != null)
+      {
+        diagnostics.add
+          (new BasicDiagnostic
+            (Diagnostic.ERROR,
+             SilicosisValidator.DIAGNOSTIC_SOURCE,
+             SilicosisValidator.SILICOSIS_SOCIO_BEHAVIORAL_BOOLEAN_RISK_FACTOR_OBSERVATION__SILICOSIS_SOCIO_BEHAVIORAL_BOOLEAN_RISK_FACTOR_OBSERVATION_CODE,
+             SilicosisPlugin.INSTANCE.getString("SilicosisSocioBehavioralBooleanRiskFactorObservationCode"),
+             new Object [] { silicosisSocioBehavioralBooleanRiskFactorObservation }));
+      }
+       
+      return false;
+    }
+    return true;
+  }
 
 	/**
-	 * The cached OCL expression body for the '{@link #validateSilicosisSocioBehavioralBooleanRiskFactorObservationNegationInd(SilicosisSocioBehavioralBooleanRiskFactorObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Silicosis Socio Behavioral Boolean Risk Factor Observation Negation Ind</em>}' operation.
-	 * <!-- begin-user-doc -->
+   * The cached OCL expression body for the '{@link #validateSilicosisSocioBehavioralBooleanRiskFactorObservationNegationInd(SilicosisSocioBehavioralBooleanRiskFactorObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Silicosis Socio Behavioral Boolean Risk Factor Observation Negation Ind</em>}' operation.
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateSilicosisSocioBehavioralBooleanRiskFactorObservationNegationInd(SilicosisSocioBehavioralBooleanRiskFactorObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
+   * @see #validateSilicosisSocioBehavioralBooleanRiskFactorObservationNegationInd(SilicosisSocioBehavioralBooleanRiskFactorObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+   * @generated
+   * @ordered
+   */
 	protected static final String VALIDATE_SILICOSIS_SOCIO_BEHAVIORAL_BOOLEAN_RISK_FACTOR_OBSERVATION_NEGATION_IND__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "not self.negationInd.oclIsUndefined()";
 
 	/**
-	 * The cached OCL invariant for the '{@link #validateSilicosisSocioBehavioralBooleanRiskFactorObservationNegationInd(SilicosisSocioBehavioralBooleanRiskFactorObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Silicosis Socio Behavioral Boolean Risk Factor Observation Negation Ind</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
+   * The cached OCL invariant for the '{@link #validateSilicosisSocioBehavioralBooleanRiskFactorObservationNegationInd(SilicosisSocioBehavioralBooleanRiskFactorObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Silicosis Socio Behavioral Boolean Risk Factor Observation Negation Ind</em>}' invariant operation.
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateSilicosisSocioBehavioralBooleanRiskFactorObservationNegationInd(SilicosisSocioBehavioralBooleanRiskFactorObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
+   * @see #validateSilicosisSocioBehavioralBooleanRiskFactorObservationNegationInd(SilicosisSocioBehavioralBooleanRiskFactorObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+   * @generated
+   * @ordered
+   */
 	
 	protected static Constraint VALIDATE_SILICOSIS_SOCIO_BEHAVIORAL_BOOLEAN_RISK_FACTOR_OBSERVATION_NEGATION_IND__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 	
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * not self.negationInd.oclIsUndefined()
-	 * @param silicosisSocioBehavioralBooleanRiskFactorObservation The receiving '<em><b>Socio Behavioral Boolean Risk Factor Observation</b></em>' model object.
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
+   * <!-- begin-model-doc -->
+   * @param silicosisSocioBehavioralBooleanRiskFactorObservation The receiving '<em><b>Socio Behavioral Boolean Risk Factor Observation</b></em>' model object.
+   * @param diagnostics The chain of diagnostics to which problems are to be appended.
+   * @param context The cache of context-specific information.
+   * <!-- end-model-doc -->
+   * @generated
+   */
 	
 	public static  boolean validateSilicosisSocioBehavioralBooleanRiskFactorObservationNegationInd(SilicosisSocioBehavioralBooleanRiskFactorObservation silicosisSocioBehavioralBooleanRiskFactorObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
   	  
-		if (VALIDATE_SILICOSIS_SOCIO_BEHAVIORAL_BOOLEAN_RISK_FACTOR_OBSERVATION_NEGATION_IND__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setContext(SilicosisPackage.Literals.SILICOSIS_SOCIO_BEHAVIORAL_BOOLEAN_RISK_FACTOR_OBSERVATION);
-			try {
-				VALIDATE_SILICOSIS_SOCIO_BEHAVIORAL_BOOLEAN_RISK_FACTOR_OBSERVATION_NEGATION_IND__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_SILICOSIS_SOCIO_BEHAVIORAL_BOOLEAN_RISK_FACTOR_OBSERVATION_NEGATION_IND__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
-				throw new UnsupportedOperationException(pe.getLocalizedMessage());
-			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_SILICOSIS_SOCIO_BEHAVIORAL_BOOLEAN_RISK_FACTOR_OBSERVATION_NEGATION_IND__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(silicosisSocioBehavioralBooleanRiskFactorObservation)) {
-			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 SilicosisValidator.DIAGNOSTIC_SOURCE,
-						 SilicosisValidator.SILICOSIS_SOCIO_BEHAVIORAL_BOOLEAN_RISK_FACTOR_OBSERVATION__SILICOSIS_SOCIO_BEHAVIORAL_BOOLEAN_RISK_FACTOR_OBSERVATION_NEGATION_IND,
-						 SilicosisPlugin.INSTANCE.getString("SilicosisSocioBehavioralBooleanRiskFactorObservationNegationInd"),
-						 new Object [] { silicosisSocioBehavioralBooleanRiskFactorObservation }));
-			}
-			 
-			return false;
-		}
-		return true;
-	}
+    if (VALIDATE_SILICOSIS_SOCIO_BEHAVIORAL_BOOLEAN_RISK_FACTOR_OBSERVATION_NEGATION_IND__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+      OCL.Helper helper = EOCL_ENV.createOCLHelper();
+      helper.setContext(SilicosisPackage.Literals.SILICOSIS_SOCIO_BEHAVIORAL_BOOLEAN_RISK_FACTOR_OBSERVATION);
+      try
+      {
+        VALIDATE_SILICOSIS_SOCIO_BEHAVIORAL_BOOLEAN_RISK_FACTOR_OBSERVATION_NEGATION_IND__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_SILICOSIS_SOCIO_BEHAVIORAL_BOOLEAN_RISK_FACTOR_OBSERVATION_NEGATION_IND__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+      }
+      catch (ParserException pe)
+      {
+        throw new UnsupportedOperationException(pe.getLocalizedMessage());
+      }
+    }
+    if (!EOCL_ENV.createQuery(VALIDATE_SILICOSIS_SOCIO_BEHAVIORAL_BOOLEAN_RISK_FACTOR_OBSERVATION_NEGATION_IND__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(silicosisSocioBehavioralBooleanRiskFactorObservation))
+    {
+      if (diagnostics != null)
+      {
+        diagnostics.add
+          (new BasicDiagnostic
+            (Diagnostic.ERROR,
+             SilicosisValidator.DIAGNOSTIC_SOURCE,
+             SilicosisValidator.SILICOSIS_SOCIO_BEHAVIORAL_BOOLEAN_RISK_FACTOR_OBSERVATION__SILICOSIS_SOCIO_BEHAVIORAL_BOOLEAN_RISK_FACTOR_OBSERVATION_NEGATION_IND,
+             SilicosisPlugin.INSTANCE.getString("SilicosisSocioBehavioralBooleanRiskFactorObservationNegationInd"),
+             new Object [] { silicosisSocioBehavioralBooleanRiskFactorObservation }));
+      }
+       
+      return false;
+    }
+    return true;
+  }
 
 	/**
-	 * The cached OCL expression body for the '{@link #validateSilicosisSocioBehavioralBooleanRiskFactorObservationEffectiveTime(SilicosisSocioBehavioralBooleanRiskFactorObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Silicosis Socio Behavioral Boolean Risk Factor Observation Effective Time</em>}' operation.
-	 * <!-- begin-user-doc -->
+   * The cached OCL expression body for the '{@link #validateSilicosisSocioBehavioralBooleanRiskFactorObservationEffectiveTime(SilicosisSocioBehavioralBooleanRiskFactorObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Silicosis Socio Behavioral Boolean Risk Factor Observation Effective Time</em>}' operation.
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateSilicosisSocioBehavioralBooleanRiskFactorObservationEffectiveTime(SilicosisSocioBehavioralBooleanRiskFactorObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
+   * @see #validateSilicosisSocioBehavioralBooleanRiskFactorObservationEffectiveTime(SilicosisSocioBehavioralBooleanRiskFactorObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+   * @generated
+   * @ordered
+   */
 	protected static final String VALIDATE_SILICOSIS_SOCIO_BEHAVIORAL_BOOLEAN_RISK_FACTOR_OBSERVATION_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.effectiveTime.oclIsUndefined() or self.effectiveTime.isNullFlavorUndefined()) implies (not self.effectiveTime.oclIsUndefined())";
 
 	/**
-	 * The cached OCL invariant for the '{@link #validateSilicosisSocioBehavioralBooleanRiskFactorObservationEffectiveTime(SilicosisSocioBehavioralBooleanRiskFactorObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Silicosis Socio Behavioral Boolean Risk Factor Observation Effective Time</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
+   * The cached OCL invariant for the '{@link #validateSilicosisSocioBehavioralBooleanRiskFactorObservationEffectiveTime(SilicosisSocioBehavioralBooleanRiskFactorObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Silicosis Socio Behavioral Boolean Risk Factor Observation Effective Time</em>}' invariant operation.
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateSilicosisSocioBehavioralBooleanRiskFactorObservationEffectiveTime(SilicosisSocioBehavioralBooleanRiskFactorObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
+   * @see #validateSilicosisSocioBehavioralBooleanRiskFactorObservationEffectiveTime(SilicosisSocioBehavioralBooleanRiskFactorObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+   * @generated
+   * @ordered
+   */
 	
 	protected static Constraint VALIDATE_SILICOSIS_SOCIO_BEHAVIORAL_BOOLEAN_RISK_FACTOR_OBSERVATION_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 	
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * (self.effectiveTime.oclIsUndefined() or self.effectiveTime.isNullFlavorUndefined()) implies (not self.effectiveTime.oclIsUndefined())
-	 * @param silicosisSocioBehavioralBooleanRiskFactorObservation The receiving '<em><b>Socio Behavioral Boolean Risk Factor Observation</b></em>' model object.
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
+   * <!-- begin-model-doc -->
+   * @param silicosisSocioBehavioralBooleanRiskFactorObservation The receiving '<em><b>Socio Behavioral Boolean Risk Factor Observation</b></em>' model object.
+   * @param diagnostics The chain of diagnostics to which problems are to be appended.
+   * @param context The cache of context-specific information.
+   * <!-- end-model-doc -->
+   * @generated
+   */
 	
 	public static  boolean validateSilicosisSocioBehavioralBooleanRiskFactorObservationEffectiveTime(SilicosisSocioBehavioralBooleanRiskFactorObservation silicosisSocioBehavioralBooleanRiskFactorObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
   	  
-		if (VALIDATE_SILICOSIS_SOCIO_BEHAVIORAL_BOOLEAN_RISK_FACTOR_OBSERVATION_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setContext(SilicosisPackage.Literals.SILICOSIS_SOCIO_BEHAVIORAL_BOOLEAN_RISK_FACTOR_OBSERVATION);
-			try {
-				VALIDATE_SILICOSIS_SOCIO_BEHAVIORAL_BOOLEAN_RISK_FACTOR_OBSERVATION_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_SILICOSIS_SOCIO_BEHAVIORAL_BOOLEAN_RISK_FACTOR_OBSERVATION_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
-				throw new UnsupportedOperationException(pe.getLocalizedMessage());
-			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_SILICOSIS_SOCIO_BEHAVIORAL_BOOLEAN_RISK_FACTOR_OBSERVATION_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(silicosisSocioBehavioralBooleanRiskFactorObservation)) {
-			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.WARNING,
-						 SilicosisValidator.DIAGNOSTIC_SOURCE,
-						 SilicosisValidator.SILICOSIS_SOCIO_BEHAVIORAL_BOOLEAN_RISK_FACTOR_OBSERVATION__SILICOSIS_SOCIO_BEHAVIORAL_BOOLEAN_RISK_FACTOR_OBSERVATION_EFFECTIVE_TIME,
-						 SilicosisPlugin.INSTANCE.getString("SilicosisSocioBehavioralBooleanRiskFactorObservationEffectiveTime"),
-						 new Object [] { silicosisSocioBehavioralBooleanRiskFactorObservation }));
-			}
-			 
-			return false;
-		}
-		return true;
-	}
+    if (VALIDATE_SILICOSIS_SOCIO_BEHAVIORAL_BOOLEAN_RISK_FACTOR_OBSERVATION_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+      OCL.Helper helper = EOCL_ENV.createOCLHelper();
+      helper.setContext(SilicosisPackage.Literals.SILICOSIS_SOCIO_BEHAVIORAL_BOOLEAN_RISK_FACTOR_OBSERVATION);
+      try
+      {
+        VALIDATE_SILICOSIS_SOCIO_BEHAVIORAL_BOOLEAN_RISK_FACTOR_OBSERVATION_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_SILICOSIS_SOCIO_BEHAVIORAL_BOOLEAN_RISK_FACTOR_OBSERVATION_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+      }
+      catch (ParserException pe)
+      {
+        throw new UnsupportedOperationException(pe.getLocalizedMessage());
+      }
+    }
+    if (!EOCL_ENV.createQuery(VALIDATE_SILICOSIS_SOCIO_BEHAVIORAL_BOOLEAN_RISK_FACTOR_OBSERVATION_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(silicosisSocioBehavioralBooleanRiskFactorObservation))
+    {
+      if (diagnostics != null)
+      {
+        diagnostics.add
+          (new BasicDiagnostic
+            (Diagnostic.WARNING,
+             SilicosisValidator.DIAGNOSTIC_SOURCE,
+             SilicosisValidator.SILICOSIS_SOCIO_BEHAVIORAL_BOOLEAN_RISK_FACTOR_OBSERVATION__SILICOSIS_SOCIO_BEHAVIORAL_BOOLEAN_RISK_FACTOR_OBSERVATION_EFFECTIVE_TIME,
+             SilicosisPlugin.INSTANCE.getString("SilicosisSocioBehavioralBooleanRiskFactorObservationEffectiveTime"),
+             new Object [] { silicosisSocioBehavioralBooleanRiskFactorObservation }));
+      }
+       
+      return false;
+    }
+    return true;
+  }
 
 	/**
-	 * The cached OCL expression body for the '{@link #validateSilicosisSocioBehavioralBooleanRiskFactorObservationValue(SilicosisSocioBehavioralBooleanRiskFactorObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Silicosis Socio Behavioral Boolean Risk Factor Observation Value</em>}' operation.
-	 * <!-- begin-user-doc -->
+   * The cached OCL expression body for the '{@link #validateSilicosisSocioBehavioralBooleanRiskFactorObservationValue(SilicosisSocioBehavioralBooleanRiskFactorObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Silicosis Socio Behavioral Boolean Risk Factor Observation Value</em>}' operation.
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateSilicosisSocioBehavioralBooleanRiskFactorObservationValue(SilicosisSocioBehavioralBooleanRiskFactorObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
+   * @see #validateSilicosisSocioBehavioralBooleanRiskFactorObservationValue(SilicosisSocioBehavioralBooleanRiskFactorObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+   * @generated
+   * @ordered
+   */
 	protected static final String VALIDATE_SILICOSIS_SOCIO_BEHAVIORAL_BOOLEAN_RISK_FACTOR_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (self.value->size() = 1 and self.value->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and "+
 "let value : datatypes::CD = element.oclAsType(datatypes::CD) in "+
 "value.code = '102445001' and value.codeSystem = '2.16.840.1.113883.6.96'))";
 
 	/**
-	 * The cached OCL invariant for the '{@link #validateSilicosisSocioBehavioralBooleanRiskFactorObservationValue(SilicosisSocioBehavioralBooleanRiskFactorObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Silicosis Socio Behavioral Boolean Risk Factor Observation Value</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
+   * The cached OCL invariant for the '{@link #validateSilicosisSocioBehavioralBooleanRiskFactorObservationValue(SilicosisSocioBehavioralBooleanRiskFactorObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Silicosis Socio Behavioral Boolean Risk Factor Observation Value</em>}' invariant operation.
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateSilicosisSocioBehavioralBooleanRiskFactorObservationValue(SilicosisSocioBehavioralBooleanRiskFactorObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
+   * @see #validateSilicosisSocioBehavioralBooleanRiskFactorObservationValue(SilicosisSocioBehavioralBooleanRiskFactorObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+   * @generated
+   * @ordered
+   */
 	
 	protected static Constraint VALIDATE_SILICOSIS_SOCIO_BEHAVIORAL_BOOLEAN_RISK_FACTOR_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 	
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * (self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (self.value->size() = 1 and self.value->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and 
-	 * let value : datatypes::CD = element.oclAsType(datatypes::CD) in 
-	 * value.code = '102445001' and value.codeSystem = '2.16.840.1.113883.6.96'))
-	 * @param silicosisSocioBehavioralBooleanRiskFactorObservation The receiving '<em><b>Socio Behavioral Boolean Risk Factor Observation</b></em>' model object.
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
+   * <!-- begin-model-doc -->
+   * @param silicosisSocioBehavioralBooleanRiskFactorObservation The receiving '<em><b>Socio Behavioral Boolean Risk Factor Observation</b></em>' model object.
+   * @param diagnostics The chain of diagnostics to which problems are to be appended.
+   * @param context The cache of context-specific information.
+   * <!-- end-model-doc -->
+   * @generated
+   */
 	
 	public static  boolean validateSilicosisSocioBehavioralBooleanRiskFactorObservationValue(SilicosisSocioBehavioralBooleanRiskFactorObservation silicosisSocioBehavioralBooleanRiskFactorObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
   	  
-		if (VALIDATE_SILICOSIS_SOCIO_BEHAVIORAL_BOOLEAN_RISK_FACTOR_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setContext(SilicosisPackage.Literals.SILICOSIS_SOCIO_BEHAVIORAL_BOOLEAN_RISK_FACTOR_OBSERVATION);
-			try {
-				VALIDATE_SILICOSIS_SOCIO_BEHAVIORAL_BOOLEAN_RISK_FACTOR_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_SILICOSIS_SOCIO_BEHAVIORAL_BOOLEAN_RISK_FACTOR_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
-				throw new UnsupportedOperationException(pe.getLocalizedMessage());
-			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_SILICOSIS_SOCIO_BEHAVIORAL_BOOLEAN_RISK_FACTOR_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(silicosisSocioBehavioralBooleanRiskFactorObservation)) {
-			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 SilicosisValidator.DIAGNOSTIC_SOURCE,
-						 SilicosisValidator.SILICOSIS_SOCIO_BEHAVIORAL_BOOLEAN_RISK_FACTOR_OBSERVATION__SILICOSIS_SOCIO_BEHAVIORAL_BOOLEAN_RISK_FACTOR_OBSERVATION_VALUE,
-						 SilicosisPlugin.INSTANCE.getString("SilicosisSocioBehavioralBooleanRiskFactorObservationValue"),
-						 new Object [] { silicosisSocioBehavioralBooleanRiskFactorObservation }));
-			}
-			 
-			return false;
-		}
-		return true;
-	}
+    if (VALIDATE_SILICOSIS_SOCIO_BEHAVIORAL_BOOLEAN_RISK_FACTOR_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+      OCL.Helper helper = EOCL_ENV.createOCLHelper();
+      helper.setContext(SilicosisPackage.Literals.SILICOSIS_SOCIO_BEHAVIORAL_BOOLEAN_RISK_FACTOR_OBSERVATION);
+      try
+      {
+        VALIDATE_SILICOSIS_SOCIO_BEHAVIORAL_BOOLEAN_RISK_FACTOR_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_SILICOSIS_SOCIO_BEHAVIORAL_BOOLEAN_RISK_FACTOR_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+      }
+      catch (ParserException pe)
+      {
+        throw new UnsupportedOperationException(pe.getLocalizedMessage());
+      }
+    }
+    if (!EOCL_ENV.createQuery(VALIDATE_SILICOSIS_SOCIO_BEHAVIORAL_BOOLEAN_RISK_FACTOR_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(silicosisSocioBehavioralBooleanRiskFactorObservation))
+    {
+      if (diagnostics != null)
+      {
+        diagnostics.add
+          (new BasicDiagnostic
+            (Diagnostic.ERROR,
+             SilicosisValidator.DIAGNOSTIC_SOURCE,
+             SilicosisValidator.SILICOSIS_SOCIO_BEHAVIORAL_BOOLEAN_RISK_FACTOR_OBSERVATION__SILICOSIS_SOCIO_BEHAVIORAL_BOOLEAN_RISK_FACTOR_OBSERVATION_VALUE,
+             SilicosisPlugin.INSTANCE.getString("SilicosisSocioBehavioralBooleanRiskFactorObservationValue"),
+             new Object [] { silicosisSocioBehavioralBooleanRiskFactorObservation }));
+      }
+       
+      return false;
+    }
+    return true;
+  }
 
 	/**
-	 * The cached OCL expression body for the '{@link #validateSocialHistoryObservationTemplateId(SilicosisSocioBehavioralBooleanRiskFactorObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Social History Observation Template Id</em>}' operation.
-	 * <!-- begin-user-doc -->
+   * The cached OCL expression body for the '{@link #validateSocialHistoryObservationTemplateId(SilicosisSocioBehavioralBooleanRiskFactorObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Social History Observation Template Id</em>}' operation.
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateSocialHistoryObservationTemplateId(SilicosisSocioBehavioralBooleanRiskFactorObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
+   * @see #validateSocialHistoryObservationTemplateId(SilicosisSocioBehavioralBooleanRiskFactorObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+   * @generated
+   * @ordered
+   */
 	protected static final String VALIDATE_SOCIAL_HISTORY_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.15.3.110')";
 
 	/**
-	 * The cached OCL invariant for the '{@link #validateSocialHistoryObservationTemplateId(SilicosisSocioBehavioralBooleanRiskFactorObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Social History Observation Template Id</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
+   * The cached OCL invariant for the '{@link #validateSocialHistoryObservationTemplateId(SilicosisSocioBehavioralBooleanRiskFactorObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Social History Observation Template Id</em>}' invariant operation.
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateSocialHistoryObservationTemplateId(SilicosisSocioBehavioralBooleanRiskFactorObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
+   * @see #validateSocialHistoryObservationTemplateId(SilicosisSocioBehavioralBooleanRiskFactorObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+   * @generated
+   * @ordered
+   */
 	
 	protected static Constraint VALIDATE_SOCIAL_HISTORY_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 	
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.15.3.110')
-	 * @param silicosisSocioBehavioralBooleanRiskFactorObservation The receiving '<em><b>Socio Behavioral Boolean Risk Factor Observation</b></em>' model object.
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
+   * <!-- begin-model-doc -->
+   * @param silicosisSocioBehavioralBooleanRiskFactorObservation The receiving '<em><b>Socio Behavioral Boolean Risk Factor Observation</b></em>' model object.
+   * @param diagnostics The chain of diagnostics to which problems are to be appended.
+   * @param context The cache of context-specific information.
+   * <!-- end-model-doc -->
+   * @generated
+   */
 	
 	public static  boolean validateSocialHistoryObservationTemplateId(SilicosisSocioBehavioralBooleanRiskFactorObservation silicosisSocioBehavioralBooleanRiskFactorObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
   	  
-		if (VALIDATE_SOCIAL_HISTORY_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setContext(SilicosisPackage.Literals.SILICOSIS_SOCIO_BEHAVIORAL_BOOLEAN_RISK_FACTOR_OBSERVATION);
-			try {
-				VALIDATE_SOCIAL_HISTORY_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_SOCIAL_HISTORY_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
-				throw new UnsupportedOperationException(pe.getLocalizedMessage());
-			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_SOCIAL_HISTORY_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(silicosisSocioBehavioralBooleanRiskFactorObservation)) {
-			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 SilicosisValidator.DIAGNOSTIC_SOURCE,
-						 SilicosisValidator.SILICOSIS_SOCIO_BEHAVIORAL_BOOLEAN_RISK_FACTOR_OBSERVATION__SOCIAL_HISTORY_OBSERVATION_TEMPLATE_ID,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "SocialHistoryObservationTemplateId", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(silicosisSocioBehavioralBooleanRiskFactorObservation, context) }),
-						 new Object [] { silicosisSocioBehavioralBooleanRiskFactorObservation }));
-			}
-			 
-			return false;
-		}
-		return true;
-	}
+    if (VALIDATE_SOCIAL_HISTORY_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+      OCL.Helper helper = EOCL_ENV.createOCLHelper();
+      helper.setContext(SilicosisPackage.Literals.SILICOSIS_SOCIO_BEHAVIORAL_BOOLEAN_RISK_FACTOR_OBSERVATION);
+      try
+      {
+        VALIDATE_SOCIAL_HISTORY_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_SOCIAL_HISTORY_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+      }
+      catch (ParserException pe)
+      {
+        throw new UnsupportedOperationException(pe.getLocalizedMessage());
+      }
+    }
+    if (!EOCL_ENV.createQuery(VALIDATE_SOCIAL_HISTORY_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(silicosisSocioBehavioralBooleanRiskFactorObservation))
+    {
+      if (diagnostics != null)
+      {
+        diagnostics.add
+          (new BasicDiagnostic
+            (Diagnostic.ERROR,
+             SilicosisValidator.DIAGNOSTIC_SOURCE,
+             SilicosisValidator.SILICOSIS_SOCIO_BEHAVIORAL_BOOLEAN_RISK_FACTOR_OBSERVATION__SOCIAL_HISTORY_OBSERVATION_TEMPLATE_ID,
+             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "SocialHistoryObservationTemplateId", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(silicosisSocioBehavioralBooleanRiskFactorObservation, context) }),
+             new Object [] { silicosisSocioBehavioralBooleanRiskFactorObservation }));
+      }
+       
+      return false;
+    }
+    return true;
+  }
 
 } // SilicosisSocioBehavioralBooleanRiskFactorObservationOperations

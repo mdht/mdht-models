@@ -22,12 +22,15 @@
  */
 package org.openhealthtools.mdht.uml.cda.phmr.impl;
 
+import java.lang.Iterable;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
 
 import org.eclipse.emf.ecore.EClass;
 
+import org.eclipse.emf.ecore.EObject;
+import org.openhealthtools.mdht.emf.runtime.util.Initializer;
 import org.openhealthtools.mdht.uml.cda.impl.OrganizerImpl;
 
 import org.openhealthtools.mdht.uml.cda.phmr.DeviceAccuracyObservation;
@@ -52,139 +55,158 @@ import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
  */
 public class DeviceDefinitionOrganizerImpl extends OrganizerImpl implements DeviceDefinitionOrganizer {
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	protected DeviceDefinitionOrganizerImpl() {
-		super();
-	}
+    super();
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	@Override
 	protected EClass eStaticClass() {
-		return PhmrPackage.Literals.DEVICE_DEFINITION_ORGANIZER;
-	}
+    return PhmrPackage.Literals.DEVICE_DEFINITION_ORGANIZER;
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateDeviceDefinitionOrganizerTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return DeviceDefinitionOrganizerOperations.validateDeviceDefinitionOrganizerTemplateId(this, diagnostics, context);
-	}
+    return DeviceDefinitionOrganizerOperations.validateDeviceDefinitionOrganizerTemplateId(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateDeviceDefinitionOrganizerClassCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return DeviceDefinitionOrganizerOperations.validateDeviceDefinitionOrganizerClassCode(this, diagnostics, context);
-	}
+    return DeviceDefinitionOrganizerOperations.validateDeviceDefinitionOrganizerClassCode(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateDeviceDefinitionOrganizerEffectiveTime(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return DeviceDefinitionOrganizerOperations.validateDeviceDefinitionOrganizerEffectiveTime(this, diagnostics, context);
-	}
+    return DeviceDefinitionOrganizerOperations.validateDeviceDefinitionOrganizerEffectiveTime(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateDeviceDefinitionOrganizerMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return DeviceDefinitionOrganizerOperations.validateDeviceDefinitionOrganizerMoodCode(this, diagnostics, context);
-	}
+    return DeviceDefinitionOrganizerOperations.validateDeviceDefinitionOrganizerMoodCode(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateDeviceDefinitionOrganizerSamplingFrequencyObservation(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return DeviceDefinitionOrganizerOperations.validateDeviceDefinitionOrganizerSamplingFrequencyObservation(this, diagnostics, context);
-	}
+    return DeviceDefinitionOrganizerOperations.validateDeviceDefinitionOrganizerSamplingFrequencyObservation(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateDeviceDefinitionOrganizerDeviceMeasurementRangeObservation(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return DeviceDefinitionOrganizerOperations.validateDeviceDefinitionOrganizerDeviceMeasurementRangeObservation(this, diagnostics, context);
-	}
+    return DeviceDefinitionOrganizerOperations.validateDeviceDefinitionOrganizerDeviceMeasurementRangeObservation(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateDeviceDefinitionOrganizerDeviceResolutionObservation(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return DeviceDefinitionOrganizerOperations.validateDeviceDefinitionOrganizerDeviceResolutionObservation(this, diagnostics, context);
-	}
+    return DeviceDefinitionOrganizerOperations.validateDeviceDefinitionOrganizerDeviceResolutionObservation(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateDeviceDefinitionOrganizerDeviceAccuracyObservation(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return DeviceDefinitionOrganizerOperations.validateDeviceDefinitionOrganizerDeviceAccuracyObservation(this, diagnostics, context);
-	}
+    return DeviceDefinitionOrganizerOperations.validateDeviceDefinitionOrganizerDeviceAccuracyObservation(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public boolean validateDeviceDefinitionOrganizerParticipant(DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+    return DeviceDefinitionOrganizerOperations.validateDeviceDefinitionOrganizerParticipant(this, diagnostics, context);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public SamplingFrequencyObservation getSamplingFrequencyObservation() {
-		return DeviceDefinitionOrganizerOperations.getSamplingFrequencyObservation(this);
-	}
+    return DeviceDefinitionOrganizerOperations.getSamplingFrequencyObservation(this);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public DeviceMeasurementRangeObservation getDeviceMeasurementRangeObservation() {
-		return DeviceDefinitionOrganizerOperations.getDeviceMeasurementRangeObservation(this);
-	}
+    return DeviceDefinitionOrganizerOperations.getDeviceMeasurementRangeObservation(this);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public DeviceResolutionObservation getDeviceResolutionObservation() {
-		return DeviceDefinitionOrganizerOperations.getDeviceResolutionObservation(this);
-	}
+    return DeviceDefinitionOrganizerOperations.getDeviceResolutionObservation(this);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public DeviceAccuracyObservation getDeviceAccuracyObservation() {
-		return DeviceDefinitionOrganizerOperations.getDeviceAccuracyObservation(this);
-	}
+    return DeviceDefinitionOrganizerOperations.getDeviceAccuracyObservation(this);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public DeviceDefinitionOrganizer init() {
-    	CDAUtil.init(this);
-    	return this;
-	}
+      return Initializer.Util.init(this);
+  }
+
+  /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    public DeviceDefinitionOrganizer init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
 } //DeviceDefinitionOrganizerImpl

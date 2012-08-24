@@ -6,12 +6,15 @@
  */
 package org.openhealthtools.mdht.uml.cda.sdtm.impl;
 
+import java.lang.Iterable;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
 
 import org.eclipse.emf.ecore.EClass;
 
+import org.eclipse.emf.ecore.EObject;
+import org.openhealthtools.mdht.emf.runtime.util.Initializer;
 import org.openhealthtools.mdht.uml.cda.impl.ObservationImpl;
 
 import org.openhealthtools.mdht.uml.cda.sdtm.BaselineIndicator;
@@ -144,6 +147,16 @@ public class QuestionnaireFindingImpl extends ObservationImpl implements Questio
    * <!-- end-user-doc -->
    * @generated
    */
+  public boolean validateQuestionnaireFindingInterpretationCode(DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+    return QuestionnaireFindingOperations.validateQuestionnaireFindingInterpretationCode(this, diagnostics, context);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
   public boolean validateQuestionnaireFindingGroupIdentifier(DiagnosticChain diagnostics, Map<Object, Object> context)
   {
     return QuestionnaireFindingOperations.validateQuestionnaireFindingGroupIdentifier(this, diagnostics, context);
@@ -184,26 +197,6 @@ public class QuestionnaireFindingImpl extends ObservationImpl implements Questio
    * <!-- end-user-doc -->
    * @generated
    */
-  public boolean validateQuestionnaireFindingBaselineIndicator(DiagnosticChain diagnostics, Map<Object, Object> context)
-  {
-    return QuestionnaireFindingOperations.validateQuestionnaireFindingBaselineIndicator(this, diagnostics, context);
-  }
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public boolean validateQuestionnaireFindingDerivedDataIndicator(DiagnosticChain diagnostics, Map<Object, Object> context)
-  {
-    return QuestionnaireFindingOperations.validateQuestionnaireFindingDerivedDataIndicator(this, diagnostics, context);
-  }
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
   public boolean validateQuestionnaireFindingTimingReference(DiagnosticChain diagnostics, Map<Object, Object> context)
   {
     return QuestionnaireFindingOperations.validateQuestionnaireFindingTimingReference(this, diagnostics, context);
@@ -224,6 +217,46 @@ public class QuestionnaireFindingImpl extends ObservationImpl implements Questio
    * <!-- end-user-doc -->
    * @generated
    */
+  public boolean validateQuestionnaireFindingquestionnaireCategoryAssociationquestionnaireCategoryClassCode(DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+    return QuestionnaireFindingOperations.validateQuestionnaireFindingquestionnaireCategoryAssociationquestionnaireCategoryClassCode(this, diagnostics, context);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public boolean validateQuestionnaireFindingquestionnaireCategoryAssociationquestionnaireCategoryCode(DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+    return QuestionnaireFindingOperations.validateQuestionnaireFindingquestionnaireCategoryAssociationquestionnaireCategoryCode(this, diagnostics, context);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public boolean validateQuestionnaireFindingquestionnaireCategoryAssociationquestionnaireCategoryMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+    return QuestionnaireFindingOperations.validateQuestionnaireFindingquestionnaireCategoryAssociationquestionnaireCategoryMoodCode(this, diagnostics, context);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public boolean validateQuestionnaireFindingquestionnaireCategoryAssociationquestionnaireCategoryValue(DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+    return QuestionnaireFindingOperations.validateQuestionnaireFindingquestionnaireCategoryAssociationquestionnaireCategoryValue(this, diagnostics, context);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
   public boolean validateQuestionnaireFindingquestionnaireCategoryAssociationTypeCode(DiagnosticChain diagnostics, Map<Object, Object> context)
   {
     return QuestionnaireFindingOperations.validateQuestionnaireFindingquestionnaireCategoryAssociationTypeCode(this, diagnostics, context);
@@ -234,9 +267,69 @@ public class QuestionnaireFindingImpl extends ObservationImpl implements Questio
    * <!-- end-user-doc -->
    * @generated
    */
+  public boolean validateQuestionnaireFindingquestionnaireCategoryAssociationQuestionnaireCategory(DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+    return QuestionnaireFindingOperations.validateQuestionnaireFindingquestionnaireCategoryAssociationQuestionnaireCategory(this, diagnostics, context);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public boolean validateQuestionnaireFindingquestionnaireSubCategoryAssociationquestionnaireSubCategoryClassCode(DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+    return QuestionnaireFindingOperations.validateQuestionnaireFindingquestionnaireSubCategoryAssociationquestionnaireSubCategoryClassCode(this, diagnostics, context);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public boolean validateQuestionnaireFindingquestionnaireSubCategoryAssociationquestionnaireSubCategoryCode(DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+    return QuestionnaireFindingOperations.validateQuestionnaireFindingquestionnaireSubCategoryAssociationquestionnaireSubCategoryCode(this, diagnostics, context);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public boolean validateQuestionnaireFindingquestionnaireSubCategoryAssociationquestionnaireSubCategoryMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+    return QuestionnaireFindingOperations.validateQuestionnaireFindingquestionnaireSubCategoryAssociationquestionnaireSubCategoryMoodCode(this, diagnostics, context);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public boolean validateQuestionnaireFindingquestionnaireSubCategoryAssociationquestionnaireSubCategoryValue(DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+    return QuestionnaireFindingOperations.validateQuestionnaireFindingquestionnaireSubCategoryAssociationquestionnaireSubCategoryValue(this, diagnostics, context);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
   public boolean validateQuestionnaireFindingquestionnaireSubCategoryAssociationTypeCode(DiagnosticChain diagnostics, Map<Object, Object> context)
   {
     return QuestionnaireFindingOperations.validateQuestionnaireFindingquestionnaireSubCategoryAssociationTypeCode(this, diagnostics, context);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public boolean validateQuestionnaireFindingquestionnaireSubCategoryAssociationQuestionnaireSubCategory(DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+    return QuestionnaireFindingOperations.validateQuestionnaireFindingquestionnaireSubCategoryAssociationQuestionnaireSubCategory(this, diagnostics, context);
   }
 
   /**
@@ -257,26 +350,6 @@ public class QuestionnaireFindingImpl extends ObservationImpl implements Questio
   public NonPerformanceReason getNonPerformanceReason()
   {
     return QuestionnaireFindingOperations.getNonPerformanceReason(this);
-  }
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public BaselineIndicator getBaselineIndicator()
-  {
-    return QuestionnaireFindingOperations.getBaselineIndicator(this);
-  }
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public DerivedDataIndicator getDerivedDataIndicator()
-  {
-    return QuestionnaireFindingOperations.getDerivedDataIndicator(this);
   }
 
   /**
@@ -305,7 +378,16 @@ public class QuestionnaireFindingImpl extends ObservationImpl implements Questio
    * @generated
    */
   public QuestionnaireFinding init() {
-    	CDAUtil.init(this);
-    	return this;
+      return Initializer.Util.init(this);
   }
+
+  /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    public QuestionnaireFinding init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
 } //QuestionnaireFindingImpl

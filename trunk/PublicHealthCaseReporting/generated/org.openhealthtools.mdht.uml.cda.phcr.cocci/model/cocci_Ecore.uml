@@ -20,38 +20,38 @@
       <importedPackage href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_KnCD4CFjEd-3s7f6mWX-3A"/>
     </packageImport>
     <packagedElement xmi:type="uml:Class" xmi:id="_8Jg-QU6yEeG_dcj91TvCTg" name="CoccidioidesCaseReport">
-      <ownedRule xmi:id="_d8mJobP9EeGRyNKbdY8huA" name="PublicHealthCaseReportTemplateId" constrainedElement="_8Jg-QU6yEeG_dcj91TvCTg">
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_d8mJorP9EeGRyNKbdY8huA">
+      <ownedRule xmi:id="_inJTEO1qEeGeHKjzItayOg" name="PublicHealthCaseReportTemplateId" constrainedElement="_8Jg-QU6yEeG_dcj91TvCTg">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_inJTEe1qEeGeHKjzItayOg">
           <language>OCL</language>
           <body>self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.15.1.10')</body>
         </specification>
       </ownedRule>
-      <ownedRule xmi:id="_d9C1kLP9EeGRyNKbdY8huA" name="CoccidioidesCaseReportTitle" constrainedElement="_8Jg-QU6yEeG_dcj91TvCTg">
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_d9C1kbP9EeGRyNKbdY8huA">
+      <ownedRule xmi:id="_inKhMO1qEeGeHKjzItayOg" name="CoccidioidesCaseReportTitle" constrainedElement="_8Jg-QU6yEeG_dcj91TvCTg">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_inKhMe1qEeGeHKjzItayOg">
           <language>OCL</language>
           <body>(self.title.oclIsUndefined() or self.title.isNullFlavorUndefined()) implies (not self.title.oclIsUndefined() and self.title.getText() = 'Public Health Case Report - Coccidioidomycosis')</body>
         </specification>
       </ownedRule>
-      <ownedRule xmi:id="_d9MmlbP9EeGRyNKbdY8huA" name="CoccidioidesCaseReportCoccidioidesPHCRSocialHistorySection" constrainedElement="_8Jg-QU6yEeG_dcj91TvCTg">
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_d9MmlrP9EeGRyNKbdY8huA">
+      <ownedRule xmi:id="_inOLkO1qEeGeHKjzItayOg" name="CoccidioidesCaseReportCoccidioidesPHCRSocialHistorySection" constrainedElement="_8Jg-QU6yEeG_dcj91TvCTg">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_inOLke1qEeGeHKjzItayOg">
           <language>OCL</language>
           <body>self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(cocci::CoccidioidesPHCRSocialHistorySection))</body>
         </specification>
       </ownedRule>
-      <ownedRule xmi:id="_d9VwibP9EeGRyNKbdY8huA" name="CoccidioidesCaseReportCoccidioidesPHCRClinicalInformationSection" constrainedElement="_8Jg-QU6yEeG_dcj91TvCTg">
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_d9VwirP9EeGRyNKbdY8huA">
+      <ownedRule xmi:id="_inRO4O1qEeGeHKjzItayOg" name="CoccidioidesCaseReportCoccidioidesPHCRClinicalInformationSection" constrainedElement="_8Jg-QU6yEeG_dcj91TvCTg">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_inRO4e1qEeGeHKjzItayOg">
           <language>OCL</language>
           <body>self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(cocci::CoccidioidesPHCRClinicalInformationSection))</body>
         </specification>
       </ownedRule>
-      <ownedRule xmi:id="_d9fhgbP9EeGRyNKbdY8huA" name="CoccidioidesCaseReportCoccidioidesPHCRTreatmentInformationSection" constrainedElement="_8Jg-QU6yEeG_dcj91TvCTg">
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_d9fhgrP9EeGRyNKbdY8huA">
+      <ownedRule xmi:id="_inUSMO1qEeGeHKjzItayOg" name="CoccidioidesCaseReportCoccidioidesPHCRTreatmentInformationSection" constrainedElement="_8Jg-QU6yEeG_dcj91TvCTg">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_inUSMe1qEeGeHKjzItayOg">
           <language>OCL</language>
           <body>self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(cocci::CoccidioidesPHCRTreatmentInformationSection))</body>
         </specification>
       </ownedRule>
-      <ownedRule xmi:id="_d9orcLP9EeGRyNKbdY8huA" name="CoccidioidesCaseReportCoccidioidesPHCRRelevantDxTestsSection" constrainedElement="_8Jg-QU6yEeG_dcj91TvCTg">
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_d9orcbP9EeGRyNKbdY8huA">
+      <ownedRule xmi:id="_inXVgO1qEeGeHKjzItayOg" name="CoccidioidesCaseReportCoccidioidesPHCRRelevantDxTestsSection" constrainedElement="_8Jg-QU6yEeG_dcj91TvCTg">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_inXVge1qEeGeHKjzItayOg">
           <language>OCL</language>
           <body>self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(cocci::CoccidioidesPHCRRelevantDxTestsSection))</body>
         </specification>
@@ -59,60 +59,60 @@
       <generalization xmi:id="_8Jg-Q06yEeG_dcj91TvCTg">
         <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.phcr/model/phcr_Ecore.uml#_6PmAIcgnEeCI5ZpfyBisiQ"/>
       </generalization>
-      <ownedOperation xmi:id="_d9VwgLP9EeGRyNKbdY8huA" name="getCoccidioidesPHCRSocialHistorySection" isQuery="true" bodyCondition="_d9Vwg7P9EeGRyNKbdY8huA">
-        <ownedRule xmi:id="_d9Vwg7P9EeGRyNKbdY8huA" name="body" constrainedElement="_d9VwgLP9EeGRyNKbdY8huA">
-          <specification xmi:type="uml:OpaqueExpression" xmi:id="_d9VwhLP9EeGRyNKbdY8huA">
+      <ownedOperation xmi:id="_inOyoO1qEeGeHKjzItayOg" name="getCoccidioidesPHCRSocialHistorySection" isQuery="true" bodyCondition="_inOyo-1qEeGeHKjzItayOg">
+        <ownedRule xmi:id="_inOyo-1qEeGeHKjzItayOg" name="body" constrainedElement="_inOyoO1qEeGeHKjzItayOg">
+          <specification xmi:type="uml:OpaqueExpression" xmi:id="_inOypO1qEeGeHKjzItayOg">
             <language>OCL</language>
-            <body>self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(cocci::CoccidioidesPHCRSocialHistorySection))->asSequence()->first().oclAsType(cocci::CoccidioidesPHCRSocialHistorySection)</body>
+            <body>self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(cocci::CoccidioidesPHCRSocialHistorySection))->asSequence()->any(true).oclAsType(cocci::CoccidioidesPHCRSocialHistorySection)</body>
           </specification>
         </ownedRule>
-        <ownedParameter xmi:id="_d9VwgbP9EeGRyNKbdY8huA" type="_l3PjwFNMEeGtHuzb-BTYvw" direction="return">
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_d9VwgrP9EeGRyNKbdY8huA" value="1"/>
+        <ownedParameter xmi:id="_inOyoe1qEeGeHKjzItayOg" type="_l3PjwFNMEeGtHuzb-BTYvw" direction="return">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_inOyou1qEeGeHKjzItayOg" value="1"/>
         </ownedParameter>
       </ownedOperation>
-      <ownedOperation xmi:id="_d9Vwi7P9EeGRyNKbdY8huA" name="getCoccidioidesPHCRClinicalInformationSection" isQuery="true" bodyCondition="_d9VwjrP9EeGRyNKbdY8huA">
-        <ownedRule xmi:id="_d9VwjrP9EeGRyNKbdY8huA" name="body" constrainedElement="_d9Vwi7P9EeGRyNKbdY8huA">
-          <specification xmi:type="uml:OpaqueExpression" xmi:id="_d9Vwj7P9EeGRyNKbdY8huA">
+      <ownedOperation xmi:id="_inSdAO1qEeGeHKjzItayOg" name="getCoccidioidesPHCRClinicalInformationSection" isQuery="true" bodyCondition="_inSdA-1qEeGeHKjzItayOg">
+        <ownedRule xmi:id="_inSdA-1qEeGeHKjzItayOg" name="body" constrainedElement="_inSdAO1qEeGeHKjzItayOg">
+          <specification xmi:type="uml:OpaqueExpression" xmi:id="_inSdBO1qEeGeHKjzItayOg">
             <language>OCL</language>
-            <body>self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(cocci::CoccidioidesPHCRClinicalInformationSection))->asSequence()->first().oclAsType(cocci::CoccidioidesPHCRClinicalInformationSection)</body>
+            <body>self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(cocci::CoccidioidesPHCRClinicalInformationSection))->asSequence()->any(true).oclAsType(cocci::CoccidioidesPHCRClinicalInformationSection)</body>
           </specification>
         </ownedRule>
-        <ownedParameter xmi:id="_d9VwjLP9EeGRyNKbdY8huA" type="_xMe9sFNMEeGtHuzb-BTYvw" direction="return">
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_d9VwjbP9EeGRyNKbdY8huA" value="1"/>
+        <ownedParameter xmi:id="_inSdAe1qEeGeHKjzItayOg" type="_xMe9sFNMEeGtHuzb-BTYvw" direction="return">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_inSdAu1qEeGeHKjzItayOg" value="1"/>
         </ownedParameter>
       </ownedOperation>
-      <ownedOperation xmi:id="_d9fhg7P9EeGRyNKbdY8huA" name="getCoccidioidesPHCRTreatmentInformationSection" isQuery="true" bodyCondition="_d9fhhrP9EeGRyNKbdY8huA">
-        <ownedRule xmi:id="_d9fhhrP9EeGRyNKbdY8huA" name="body" constrainedElement="_d9fhg7P9EeGRyNKbdY8huA">
-          <specification xmi:type="uml:OpaqueExpression" xmi:id="_d9fhh7P9EeGRyNKbdY8huA">
+      <ownedOperation xmi:id="_inU5QO1qEeGeHKjzItayOg" name="getCoccidioidesPHCRTreatmentInformationSection" isQuery="true" bodyCondition="_inU5Q-1qEeGeHKjzItayOg">
+        <ownedRule xmi:id="_inU5Q-1qEeGeHKjzItayOg" name="body" constrainedElement="_inU5QO1qEeGeHKjzItayOg">
+          <specification xmi:type="uml:OpaqueExpression" xmi:id="_inU5RO1qEeGeHKjzItayOg">
             <language>OCL</language>
-            <body>self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(cocci::CoccidioidesPHCRTreatmentInformationSection))->asSequence()->first().oclAsType(cocci::CoccidioidesPHCRTreatmentInformationSection)</body>
+            <body>self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(cocci::CoccidioidesPHCRTreatmentInformationSection))->asSequence()->any(true).oclAsType(cocci::CoccidioidesPHCRTreatmentInformationSection)</body>
           </specification>
         </ownedRule>
-        <ownedParameter xmi:id="_d9fhhLP9EeGRyNKbdY8huA" type="_GDoLsFNNEeGtHuzb-BTYvw" direction="return">
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_d9fhhbP9EeGRyNKbdY8huA" value="1"/>
+        <ownedParameter xmi:id="_inU5Qe1qEeGeHKjzItayOg" type="_GDoLsFNNEeGtHuzb-BTYvw" direction="return">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_inU5Qu1qEeGeHKjzItayOg" value="1"/>
         </ownedParameter>
       </ownedOperation>
-      <ownedOperation xmi:id="_d9orcrP9EeGRyNKbdY8huA" name="getCoccidioidesPHCRRelevantDxTestsSection" isQuery="true" bodyCondition="_d9ordbP9EeGRyNKbdY8huA">
-        <ownedRule xmi:id="_d9ordbP9EeGRyNKbdY8huA" name="body" constrainedElement="_d9orcrP9EeGRyNKbdY8huA">
-          <specification xmi:type="uml:OpaqueExpression" xmi:id="_d9ordrP9EeGRyNKbdY8huA">
+      <ownedOperation xmi:id="_inX8kO1qEeGeHKjzItayOg" name="getCoccidioidesPHCRRelevantDxTestsSection" isQuery="true" bodyCondition="_inX8k-1qEeGeHKjzItayOg">
+        <ownedRule xmi:id="_inX8k-1qEeGeHKjzItayOg" name="body" constrainedElement="_inX8kO1qEeGeHKjzItayOg">
+          <specification xmi:type="uml:OpaqueExpression" xmi:id="_inX8lO1qEeGeHKjzItayOg">
             <language>OCL</language>
-            <body>self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(cocci::CoccidioidesPHCRRelevantDxTestsSection))->asSequence()->first().oclAsType(cocci::CoccidioidesPHCRRelevantDxTestsSection)</body>
+            <body>self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(cocci::CoccidioidesPHCRRelevantDxTestsSection))->asSequence()->any(true).oclAsType(cocci::CoccidioidesPHCRRelevantDxTestsSection)</body>
           </specification>
         </ownedRule>
-        <ownedParameter xmi:id="_d9orc7P9EeGRyNKbdY8huA" type="_SGUhgFNNEeGtHuzb-BTYvw" direction="return">
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_d9ordLP9EeGRyNKbdY8huA" value="1"/>
+        <ownedParameter xmi:id="_inX8ke1qEeGeHKjzItayOg" type="_SGUhgFNNEeGtHuzb-BTYvw" direction="return">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_inX8ku1qEeGeHKjzItayOg" value="1"/>
         </ownedParameter>
       </ownedOperation>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_l3PjwFNMEeGtHuzb-BTYvw" name="CoccidioidesPHCRSocialHistorySection">
-      <ownedRule xmi:id="_d9MmkrP9EeGRyNKbdY8huA" name="SocialHistorySectionTemplateId" constrainedElement="_l3PjwFNMEeGtHuzb-BTYvw">
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_d9Mmk7P9EeGRyNKbdY8huA">
+      <ownedRule xmi:id="_inMWYu1qEeGeHKjzItayOg" name="SocialHistorySectionTemplateId" constrainedElement="_l3PjwFNMEeGtHuzb-BTYvw">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_inM9cO1qEeGeHKjzItayOg">
           <language>OCL</language>
           <body>self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.15.2.29')</body>
         </specification>
       </ownedRule>
-      <ownedRule xmi:id="_d--vSLP9EeGRyNKbdY8huA" name="CoccidioidesPHCRSocialHistorySectionCoccidioidesPossibleExposureLocationAct" constrainedElement="_l3PjwFNMEeGtHuzb-BTYvw">
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_d--vSbP9EeGRyNKbdY8huA">
+      <ownedRule xmi:id="_ioIxkO1qEeGeHKjzItayOg" name="CoccidioidesPHCRSocialHistorySectionCoccidioidesPossibleExposureLocationAct" constrainedElement="_l3PjwFNMEeGtHuzb-BTYvw">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_ioIxke1qEeGeHKjzItayOg">
           <language>OCL</language>
           <body>self.entry->exists(entry : cda::Entry | not entry.act.oclIsUndefined() and entry.act.oclIsKindOf(cocci::CoccidioidesPossibleExposureLocationAct) and entry.typeCode = vocab::x_ActRelationshipEntry::DRIV)</body>
         </specification>
@@ -120,33 +120,33 @@
       <generalization xmi:id="_l3ZUwFNMEeGtHuzb-BTYvw">
         <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.phcr/model/phcr_Ecore.uml#_Fw7f4MgpEeCI5ZpfyBisiQ"/>
       </generalization>
-      <ownedOperation xmi:id="_d_IgQLP9EeGRyNKbdY8huA" name="getCoccidioidesPossibleExposureLocationActs" isQuery="true" bodyCondition="_d_IgQ7P9EeGRyNKbdY8huA">
-        <ownedRule xmi:id="_d_IgQ7P9EeGRyNKbdY8huA" name="body" constrainedElement="_d_IgQLP9EeGRyNKbdY8huA">
-          <specification xmi:type="uml:OpaqueExpression" xmi:id="_d_IgRLP9EeGRyNKbdY8huA">
+      <ownedOperation xmi:id="_ioJ_sO1qEeGeHKjzItayOg" name="getCoccidioidesPossibleExposureLocationActs" isQuery="true" bodyCondition="_ioJ_s-1qEeGeHKjzItayOg">
+        <ownedRule xmi:id="_ioJ_s-1qEeGeHKjzItayOg" name="body" constrainedElement="_ioJ_sO1qEeGeHKjzItayOg">
+          <specification xmi:type="uml:OpaqueExpression" xmi:id="_ioJ_tO1qEeGeHKjzItayOg">
             <language>OCL</language>
             <body>self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(cocci::CoccidioidesPossibleExposureLocationAct)).oclAsType(cocci::CoccidioidesPossibleExposureLocationAct)</body>
           </specification>
         </ownedRule>
-        <ownedParameter xmi:id="_d_IgQbP9EeGRyNKbdY8huA" type="_UrjaoKNrEeG3gKoyOiGNFA" direction="return">
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_d_IgQrP9EeGRyNKbdY8huA" value="*"/>
+        <ownedParameter xmi:id="_ioJ_se1qEeGeHKjzItayOg" type="_UrjaoKNrEeG3gKoyOiGNFA" direction="return">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ioJ_su1qEeGeHKjzItayOg" value="*"/>
         </ownedParameter>
       </ownedOperation>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_xMe9sFNMEeGtHuzb-BTYvw" name="CoccidioidesPHCRClinicalInformationSection">
-      <ownedRule xmi:id="_d9VwhrP9EeGRyNKbdY8huA" name="PhcrClinicalInformationSectionTemplateId" constrainedElement="_xMe9sFNMEeGtHuzb-BTYvw">
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_d9Vwh7P9EeGRyNKbdY8huA">
+      <ownedRule xmi:id="_inQAwO1qEeGeHKjzItayOg" name="PhcrClinicalInformationSectionTemplateId" constrainedElement="_xMe9sFNMEeGtHuzb-BTYvw">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_inQAwe1qEeGeHKjzItayOg">
           <language>OCL</language>
           <body>self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.15.2.30')</body>
         </specification>
       </ownedRule>
-      <ownedRule xmi:id="_d98NdbP9EeGRyNKbdY8huA" name="CoccidioidesPHCRClinicalInformationSectionCoccidioidesCaseObservation" constrainedElement="_xMe9sFNMEeGtHuzb-BTYvw">
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_d98NdrP9EeGRyNKbdY8huA">
+      <ownedRule xmi:id="_inkJ0O1qEeGeHKjzItayOg" name="CoccidioidesPHCRClinicalInformationSectionCoccidioidesCaseObservation" constrainedElement="_xMe9sFNMEeGtHuzb-BTYvw">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_inkJ0e1qEeGeHKjzItayOg">
           <language>OCL</language>
           <body>self.entry->one(entry : cda::Entry | not entry.observation.oclIsUndefined() and entry.observation.oclIsKindOf(cocci::CoccidioidesCaseObservation) and entry.typeCode = vocab::x_ActRelationshipEntry::DRIV)</body>
         </specification>
       </ownedRule>
-      <ownedRule xmi:id="_d_IgRbP9EeGRyNKbdY8huA" name="CoccidioidesPHCRClinicalInformationSectionCoccidioidesImmunosuppressedMedicalConditionHistoryObservation" constrainedElement="_xMe9sFNMEeGtHuzb-BTYvw">
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_d_IgRrP9EeGRyNKbdY8huA">
+      <ownedRule xmi:id="_ioKmwO1qEeGeHKjzItayOg" name="CoccidioidesPHCRClinicalInformationSectionCoccidioidesImmunosuppressedMedicalConditionHistoryObservation" constrainedElement="_xMe9sFNMEeGtHuzb-BTYvw">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_ioKmwe1qEeGeHKjzItayOg">
           <language>OCL</language>
           <body>self.entry->exists(entry : cda::Entry | not entry.observation.oclIsUndefined() and entry.observation.oclIsKindOf(cocci::CoccidioidesImmunosuppressedMedicalConditionHistoryObservation) and entry.typeCode = vocab::x_ActRelationshipEntry::DRIV)</body>
         </specification>
@@ -154,38 +154,38 @@
       <generalization xmi:id="_xMe9sVNMEeGtHuzb-BTYvw">
         <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.phcr/model/phcr_Ecore.uml#_84uJEMqZEeCRBIG_Gkv9FQ"/>
       </generalization>
-      <ownedOperation xmi:id="_d98Nd7P9EeGRyNKbdY8huA" name="getCoccidioidesCaseObservation" isQuery="true" bodyCondition="_d98NerP9EeGRyNKbdY8huA">
-        <ownedRule xmi:id="_d98NerP9EeGRyNKbdY8huA" name="body" constrainedElement="_d98Nd7P9EeGRyNKbdY8huA">
-          <specification xmi:type="uml:OpaqueExpression" xmi:id="_d98Ne7P9EeGRyNKbdY8huA">
+      <ownedOperation xmi:id="_inkw4O1qEeGeHKjzItayOg" name="getCoccidioidesCaseObservation" isQuery="true" bodyCondition="_inkw4-1qEeGeHKjzItayOg">
+        <ownedRule xmi:id="_inkw4-1qEeGeHKjzItayOg" name="body" constrainedElement="_inkw4O1qEeGeHKjzItayOg">
+          <specification xmi:type="uml:OpaqueExpression" xmi:id="_inkw5O1qEeGeHKjzItayOg">
             <language>OCL</language>
-            <body>self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(cocci::CoccidioidesCaseObservation))->asSequence()->first().oclAsType(cocci::CoccidioidesCaseObservation)</body>
+            <body>self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(cocci::CoccidioidesCaseObservation))->asSequence()->any(true).oclAsType(cocci::CoccidioidesCaseObservation)</body>
           </specification>
         </ownedRule>
-        <ownedParameter xmi:id="_d98NeLP9EeGRyNKbdY8huA" type="_gJAZIFNNEeGtHuzb-BTYvw" direction="return">
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_d98NebP9EeGRyNKbdY8huA" value="1"/>
+        <ownedParameter xmi:id="_inkw4e1qEeGeHKjzItayOg" type="_gJAZIFNNEeGtHuzb-BTYvw" direction="return">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_inkw4u1qEeGeHKjzItayOg" value="1"/>
         </ownedParameter>
       </ownedOperation>
-      <ownedOperation xmi:id="_d_IgR7P9EeGRyNKbdY8huA" name="getCoccidioidesImmunosuppressedMedicalConditionHistoryObservations" isQuery="true" bodyCondition="_d_IgSrP9EeGRyNKbdY8huA">
-        <ownedRule xmi:id="_d_IgSrP9EeGRyNKbdY8huA" name="body" constrainedElement="_d_IgR7P9EeGRyNKbdY8huA">
-          <specification xmi:type="uml:OpaqueExpression" xmi:id="_d_IgS7P9EeGRyNKbdY8huA">
+      <ownedOperation xmi:id="_ioLN0O1qEeGeHKjzItayOg" name="getCoccidioidesImmunosuppressedMedicalConditionHistoryObservations" isQuery="true" bodyCondition="_ioLN0-1qEeGeHKjzItayOg">
+        <ownedRule xmi:id="_ioLN0-1qEeGeHKjzItayOg" name="body" constrainedElement="_ioLN0O1qEeGeHKjzItayOg">
+          <specification xmi:type="uml:OpaqueExpression" xmi:id="_ioLN1O1qEeGeHKjzItayOg">
             <language>OCL</language>
             <body>self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(cocci::CoccidioidesImmunosuppressedMedicalConditionHistoryObservation)).oclAsType(cocci::CoccidioidesImmunosuppressedMedicalConditionHistoryObservation)</body>
           </specification>
         </ownedRule>
-        <ownedParameter xmi:id="_d_IgSLP9EeGRyNKbdY8huA" type="_pq31kIrzEeGZSJwvmfGvgw" direction="return">
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_d_IgSbP9EeGRyNKbdY8huA" value="*"/>
+        <ownedParameter xmi:id="_ioLN0e1qEeGeHKjzItayOg" type="_pq31kIrzEeGZSJwvmfGvgw" direction="return">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ioLN0u1qEeGeHKjzItayOg" value="*"/>
         </ownedParameter>
       </ownedOperation>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_GDoLsFNNEeGtHuzb-BTYvw" name="CoccidioidesPHCRTreatmentInformationSection">
-      <ownedRule xmi:id="_d9VwkbP9EeGRyNKbdY8huA" name="PhcrTreatmentInformationSectionTemplateId" constrainedElement="_GDoLsFNNEeGtHuzb-BTYvw">
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_d9VwkrP9EeGRyNKbdY8huA">
+      <ownedRule xmi:id="_inTEEO1qEeGeHKjzItayOg" name="PhcrTreatmentInformationSectionTemplateId" constrainedElement="_GDoLsFNNEeGtHuzb-BTYvw">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_inTEEe1qEeGeHKjzItayOg">
           <language>OCL</language>
           <body>self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.15.2.31')</body>
         </specification>
       </ownedRule>
-      <ownedRule xmi:id="_d-0-Q7P9EeGRyNKbdY8huA" name="CoccidioidesPHCRTreatmentInformationSectionCoccidioidesTherapeuticRegimenAct" constrainedElement="_GDoLsFNNEeGtHuzb-BTYvw">
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_d-0-RLP9EeGRyNKbdY8huA">
+      <ownedRule xmi:id="_in_noO1qEeGeHKjzItayOg" name="CoccidioidesPHCRTreatmentInformationSectionCoccidioidesTherapeuticRegimenAct" constrainedElement="_GDoLsFNNEeGtHuzb-BTYvw">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_in_noe1qEeGeHKjzItayOg">
           <language>OCL</language>
           <body>self.entry->one(entry : cda::Entry | not entry.act.oclIsUndefined() and entry.act.oclIsKindOf(cocci::CoccidioidesTherapeuticRegimenAct) and entry.typeCode = vocab::x_ActRelationshipEntry::DRIV)</body>
         </specification>
@@ -193,33 +193,33 @@
       <generalization xmi:id="_GDoLsVNNEeGtHuzb-BTYvw">
         <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.phcr/model/phcr_Ecore.uml#_XTjpIMqaEeCRBIG_Gkv9FQ"/>
       </generalization>
-      <ownedOperation xmi:id="_d-0-RbP9EeGRyNKbdY8huA" name="getCoccidioidesTherapeuticRegimenAct" isQuery="true" bodyCondition="_d-0-SLP9EeGRyNKbdY8huA">
-        <ownedRule xmi:id="_d-0-SLP9EeGRyNKbdY8huA" name="body" constrainedElement="_d-0-RbP9EeGRyNKbdY8huA">
-          <specification xmi:type="uml:OpaqueExpression" xmi:id="_d-0-SbP9EeGRyNKbdY8huA">
+      <ownedOperation xmi:id="_ioAOsO1qEeGeHKjzItayOg" name="getCoccidioidesTherapeuticRegimenAct" isQuery="true" bodyCondition="_ioA1wu1qEeGeHKjzItayOg">
+        <ownedRule xmi:id="_ioA1wu1qEeGeHKjzItayOg" name="body" constrainedElement="_ioAOsO1qEeGeHKjzItayOg">
+          <specification xmi:type="uml:OpaqueExpression" xmi:id="_ioA1w-1qEeGeHKjzItayOg">
             <language>OCL</language>
-            <body>self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(cocci::CoccidioidesTherapeuticRegimenAct))->asSequence()->first().oclAsType(cocci::CoccidioidesTherapeuticRegimenAct)</body>
+            <body>self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(cocci::CoccidioidesTherapeuticRegimenAct))->asSequence()->any(true).oclAsType(cocci::CoccidioidesTherapeuticRegimenAct)</body>
           </specification>
         </ownedRule>
-        <ownedParameter xmi:id="_d-0-RrP9EeGRyNKbdY8huA" type="_zrXsUKNsEeG3gKoyOiGNFA" direction="return">
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_d-0-R7P9EeGRyNKbdY8huA" value="1"/>
+        <ownedParameter xmi:id="_ioA1wO1qEeGeHKjzItayOg" type="_zrXsUKNsEeG3gKoyOiGNFA" direction="return">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ioA1we1qEeGeHKjzItayOg" value="1"/>
         </ownedParameter>
       </ownedOperation>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_SGUhgFNNEeGtHuzb-BTYvw" name="CoccidioidesPHCRRelevantDxTestsSection">
-      <ownedRule xmi:id="_d9fhirP9EeGRyNKbdY8huA" name="ResultsSectionTemplateId" constrainedElement="_SGUhgFNNEeGtHuzb-BTYvw">
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_d9fhi7P9EeGRyNKbdY8huA">
+      <ownedRule xmi:id="_inWHYO1qEeGeHKjzItayOg" name="ResultsSectionTemplateId" constrainedElement="_SGUhgFNNEeGtHuzb-BTYvw">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_inWHYe1qEeGeHKjzItayOg">
           <language>OCL</language>
           <body>self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.15.2.32')</body>
         </specification>
       </ownedRule>
-      <ownedRule xmi:id="_d-FXY7P9EeGRyNKbdY8huA" name="CoccidioidesPHCRRelevantDxTestsSectionCoccidioidesResultObservation" constrainedElement="_SGUhgFNNEeGtHuzb-BTYvw">
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_d-FXZLP9EeGRyNKbdY8huA">
+      <ownedRule xmi:id="_inrekO1qEeGeHKjzItayOg" name="CoccidioidesPHCRRelevantDxTestsSectionCoccidioidesResultObservation" constrainedElement="_SGUhgFNNEeGtHuzb-BTYvw">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_insFoO1qEeGeHKjzItayOg">
           <language>OCL</language>
           <body>self.entry->exists(entry : cda::Entry | not entry.observation.oclIsUndefined() and entry.observation.oclIsKindOf(cocci::CoccidioidesResultObservation) and entry.typeCode = vocab::x_ActRelationshipEntry::DRIV)</body>
         </specification>
       </ownedRule>
-      <ownedRule xmi:id="_d-Y5YrP9EeGRyNKbdY8huA" name="CoccidioidesPHCRRelevantDxTestsSectionCoccidioidesResultOrganizer" constrainedElement="_SGUhgFNNEeGtHuzb-BTYvw">
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_d-Y5Y7P9EeGRyNKbdY8huA">
+      <ownedRule xmi:id="_inxlMO1qEeGeHKjzItayOg" name="CoccidioidesPHCRRelevantDxTestsSectionCoccidioidesResultOrganizer" constrainedElement="_SGUhgFNNEeGtHuzb-BTYvw">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_inxlMe1qEeGeHKjzItayOg">
           <language>OCL</language>
           <body>self.entry->exists(entry : cda::Entry | not entry.organizer.oclIsUndefined() and entry.organizer.oclIsKindOf(cocci::CoccidioidesResultOrganizer) and entry.typeCode = vocab::x_ActRelationshipEntry::DRIV)</body>
         </specification>
@@ -227,34 +227,40 @@
       <generalization xmi:id="_SGUhgVNNEeGtHuzb-BTYvw">
         <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.phcr/model/phcr_Ecore.uml#_2dxgkNM5EeCbJdgmSYxI0g"/>
       </generalization>
-      <ownedOperation xmi:id="_d-PIYLP9EeGRyNKbdY8huA" name="getCoccidioidesResultObservations" isQuery="true" bodyCondition="_d-PIY7P9EeGRyNKbdY8huA">
-        <ownedRule xmi:id="_d-PIY7P9EeGRyNKbdY8huA" name="body" constrainedElement="_d-PIYLP9EeGRyNKbdY8huA">
-          <specification xmi:type="uml:OpaqueExpression" xmi:id="_d-PIZLP9EeGRyNKbdY8huA">
+      <ownedOperation xmi:id="_insssO1qEeGeHKjzItayOg" name="getCoccidioidesResultObservations" isQuery="true" bodyCondition="_insss-1qEeGeHKjzItayOg">
+        <ownedRule xmi:id="_insss-1qEeGeHKjzItayOg" name="body" constrainedElement="_insssO1qEeGeHKjzItayOg">
+          <specification xmi:type="uml:OpaqueExpression" xmi:id="_insstO1qEeGeHKjzItayOg">
             <language>OCL</language>
             <body>self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(cocci::CoccidioidesResultObservation)).oclAsType(cocci::CoccidioidesResultObservation)</body>
           </specification>
         </ownedRule>
-        <ownedParameter xmi:id="_d-PIYbP9EeGRyNKbdY8huA" type="_KWyZAFQIEeGtHuzb-BTYvw" direction="return">
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_d-PIYrP9EeGRyNKbdY8huA" value="*"/>
+        <ownedParameter xmi:id="_inssse1qEeGeHKjzItayOg" type="_KWyZAFQIEeGtHuzb-BTYvw" direction="return">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_insssu1qEeGeHKjzItayOg" value="*"/>
         </ownedParameter>
       </ownedOperation>
-      <ownedOperation xmi:id="_d-Y5ZLP9EeGRyNKbdY8huA" name="getCoccidioidesResultOrganizers" isQuery="true" bodyCondition="_d-Y5Z7P9EeGRyNKbdY8huA">
-        <ownedRule xmi:id="_d-Y5Z7P9EeGRyNKbdY8huA" name="body" constrainedElement="_d-Y5ZLP9EeGRyNKbdY8huA">
-          <specification xmi:type="uml:OpaqueExpression" xmi:id="_d-Y5aLP9EeGRyNKbdY8huA">
+      <ownedOperation xmi:id="_inyMQO1qEeGeHKjzItayOg" name="getCoccidioidesResultOrganizers" isQuery="true" bodyCondition="_inyzUe1qEeGeHKjzItayOg">
+        <ownedRule xmi:id="_inyzUe1qEeGeHKjzItayOg" name="body" constrainedElement="_inyMQO1qEeGeHKjzItayOg">
+          <specification xmi:type="uml:OpaqueExpression" xmi:id="_inyzUu1qEeGeHKjzItayOg">
             <language>OCL</language>
             <body>self.getOrganizers()->select(organizer : cda::Organizer | not organizer.oclIsUndefined() and organizer.oclIsKindOf(cocci::CoccidioidesResultOrganizer)).oclAsType(cocci::CoccidioidesResultOrganizer)</body>
           </specification>
         </ownedRule>
-        <ownedParameter xmi:id="_d-Y5ZbP9EeGRyNKbdY8huA" type="_m6OhgJiqEeGnvPbsE6qbcQ" direction="return">
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_d-Y5ZrP9EeGRyNKbdY8huA" value="*"/>
+        <ownedParameter xmi:id="_inyMQe1qEeGeHKjzItayOg" type="_m6OhgJiqEeGnvPbsE6qbcQ" direction="return">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_inyzUO1qEeGeHKjzItayOg" value="*"/>
         </ownedParameter>
       </ownedOperation>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_asBMAFNNEeGtHuzb-BTYvw" name="CoccidioidesSignsAndSymptomsObservation">
-      <ownedRule xmi:id="_d9oreLP9EeGRyNKbdY8huA" name="SignsAndSymptomsObservationTemplateId" constrainedElement="_asBMAFNNEeGtHuzb-BTYvw">
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_d9orebP9EeGRyNKbdY8huA">
+      <ownedRule xmi:id="_inYjoe1qEeGeHKjzItayOg" name="SignsAndSymptomsObservationTemplateId" constrainedElement="_asBMAFNNEeGtHuzb-BTYvw">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_inYjou1qEeGeHKjzItayOg">
           <language>OCL</language>
           <body>self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.15.3.88')</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_ina_4O1qEeGeHKjzItayOg" name="CoccidioidesSignsAndSymptomsObservationValue" constrainedElement="_asBMAFNNEeGtHuzb-BTYvw">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_ina_4e1qEeGeHKjzItayOg">
+          <language>OCL</language>
+          <body>(self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (not self.value->isEmpty())</body>
         </specification>
       </ownedRule>
       <generalization xmi:id="_asBMAVNNEeGtHuzb-BTYvw">
@@ -262,44 +268,60 @@
       </generalization>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_gJAZIFNNEeGtHuzb-BTYvw" name="CoccidioidesCaseObservation">
-      <ownedRule xmi:id="_d9yccrP9EeGRyNKbdY8huA" name="ProblemObservationTemplateId" constrainedElement="_gJAZIFNNEeGtHuzb-BTYvw">
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_d9ycc7P9EeGRyNKbdY8huA">
+      <ownedRule xmi:id="_indcIO1qEeGeHKjzItayOg" name="ProblemObservationTemplateId" constrainedElement="_gJAZIFNNEeGtHuzb-BTYvw">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_indcIe1qEeGeHKjzItayOg">
           <language>OCL</language>
           <body>self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.15.3.87')</body>
         </specification>
       </ownedRule>
-      <ownedRule xmi:id="_d9ycdbP9EeGRyNKbdY8huA" name="CaseObservationValue" constrainedElement="_gJAZIFNNEeGtHuzb-BTYvw">
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_d9ycdrP9EeGRyNKbdY8huA">
+      <ownedRule xmi:id="_inhGgO1qEeGeHKjzItayOg" name="CoccidioidesCaseObservationValueP" constrainedElement="_gJAZIFNNEeGtHuzb-BTYvw">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_inhtkO1qEeGeHKjzItayOg">
           <language>OCL</language>
-          <body>(self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (self.value->size() = 1 and self.value->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and &#xD;&#xA;let value : datatypes::CD = element.oclAsType(datatypes::CD) in &#xD;&#xA;value.code = '60826002' and value.codeSystem = '2.16.840.1.113883.6.96'))</body>
+          <body>(self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (not self.value->isEmpty())</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_infRUO1qEeGeHKjzItayOg" name="CoccidioidesCaseObservationValue" constrainedElement="_gJAZIFNNEeGtHuzb-BTYvw">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_infRUe1qEeGeHKjzItayOg">
+          <language>OCL</language>
+          <body>(self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (self.value->size() = 1 and self.value->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and 
+let value : datatypes::CD = element.oclAsType(datatypes::CD) in 
+value.code = '60826002' and value.codeSystem = '2.16.840.1.113883.6.96'))</body>
         </specification>
       </ownedRule>
       <generalization xmi:id="_gJAZIVNNEeGtHuzb-BTYvw">
         <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.phcr/model/phcr_Ecore.uml#_p8bDQNTCEeC18pmrrt-Mbg"/>
       </generalization>
-      <ownedOperation xmi:id="_d98NcLP9EeGRyNKbdY8huA" name="getCoccidioidesSignsAndSymptomsObservations" isQuery="true" bodyCondition="_d98Nc7P9EeGRyNKbdY8huA">
-        <ownedRule xmi:id="_d98Nc7P9EeGRyNKbdY8huA" name="body" constrainedElement="_d98NcLP9EeGRyNKbdY8huA">
-          <specification xmi:type="uml:OpaqueExpression" xmi:id="_d98NdLP9EeGRyNKbdY8huA">
+      <ownedOperation xmi:id="_injiwO1qEeGeHKjzItayOg" name="getCoccidioidesSignsAndSymptomsObservations" isQuery="true" bodyCondition="_injiw-1qEeGeHKjzItayOg">
+        <ownedRule xmi:id="_injiw-1qEeGeHKjzItayOg" name="body" constrainedElement="_injiwO1qEeGeHKjzItayOg">
+          <specification xmi:type="uml:OpaqueExpression" xmi:id="_injixO1qEeGeHKjzItayOg">
             <language>OCL</language>
             <body>self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(cocci::CoccidioidesSignsAndSymptomsObservation)).oclAsType(cocci::CoccidioidesSignsAndSymptomsObservation)</body>
           </specification>
         </ownedRule>
-        <ownedParameter xmi:id="_d98NcbP9EeGRyNKbdY8huA" type="_asBMAFNNEeGtHuzb-BTYvw" direction="return">
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_d98NcrP9EeGRyNKbdY8huA" value="*"/>
+        <ownedParameter xmi:id="_injiwe1qEeGeHKjzItayOg" type="_asBMAFNNEeGtHuzb-BTYvw" direction="return">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_injiwu1qEeGeHKjzItayOg" value="*"/>
         </ownedParameter>
       </ownedOperation>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_KWyZAFQIEeGtHuzb-BTYvw" name="CoccidioidesResultObservation">
-      <ownedRule xmi:id="_d98NfrP9EeGRyNKbdY8huA" name="ResultObservationTemplateId" constrainedElement="_KWyZAFQIEeGtHuzb-BTYvw">
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_d98Nf7P9EeGRyNKbdY8huA">
+      <ownedRule xmi:id="_inlX8u1qEeGeHKjzItayOg" name="ResultObservationTemplateId" constrainedElement="_KWyZAFQIEeGtHuzb-BTYvw">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_inl_AO1qEeGeHKjzItayOg">
           <language>OCL</language>
           <body>self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.15.3.93')</body>
         </specification>
       </ownedRule>
-      <ownedRule xmi:id="_d-FXYbP9EeGRyNKbdY8huA" name="ResultObservationCode" constrainedElement="_KWyZAFQIEeGtHuzb-BTYvw">
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_d-FXYrP9EeGRyNKbdY8huA">
+      <ownedRule xmi:id="_inppYO1qEeGeHKjzItayOg" name="CoccidioidesResultObservationCodeP" constrainedElement="_KWyZAFQIEeGtHuzb-BTYvw">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_inppYe1qEeGeHKjzItayOg">
           <language>OCL</language>
-          <body>(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and &#xD;&#xA;let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in (&#xD;&#xA;value.codeSystem = 'Code System OID' and not value.code.oclIsUndefined()))</body>
+          <body>(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined())</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_inn0MO1qEeGeHKjzItayOg" name="CoccidioidesResultObservationCode" constrainedElement="_KWyZAFQIEeGtHuzb-BTYvw">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_inn0Me1qEeGeHKjzItayOg">
+          <language>OCL</language>
+          <body>(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and 
+let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in 
+not value.code.oclIsUndefined())</body>
         </specification>
       </ownedRule>
       <generalization xmi:id="_KWyZAVQIEeGtHuzb-BTYvw">
@@ -307,14 +329,14 @@
       </generalization>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_pq31kIrzEeGZSJwvmfGvgw" name="CoccidioidesImmunosuppressedMedicalConditionHistoryObservation">
-      <ownedRule xmi:id="_d-PIZrP9EeGRyNKbdY8huA" name="PhcrRelevantMedicalConditionHistoryObservationTemplateId" constrainedElement="_pq31kIrzEeGZSJwvmfGvgw">
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_d-PIZ7P9EeGRyNKbdY8huA">
+      <ownedRule xmi:id="_intTwO1qEeGeHKjzItayOg" name="PhcrRelevantMedicalConditionHistoryObservationTemplateId" constrainedElement="_pq31kIrzEeGZSJwvmfGvgw">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_intTwe1qEeGeHKjzItayOg">
           <language>OCL</language>
           <body>self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.15.3.94')</body>
         </specification>
       </ownedRule>
-      <ownedRule xmi:id="_d_IgTLP9EeGRyNKbdY8huA" name="CoccidioidesImmunosuppressedMedicalConditionHistoryObservationCoccidioidesImmunosuppressedMedicalConditionProblemObservation" constrainedElement="_pq31kIrzEeGZSJwvmfGvgw">
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_d_IgTbP9EeGRyNKbdY8huA">
+      <ownedRule xmi:id="_ioL04O1qEeGeHKjzItayOg" name="CoccidioidesImmunosuppressedMedicalConditionHistoryObservationCoccidioidesImmunosuppressedMedicalConditionProblemObservation" constrainedElement="_pq31kIrzEeGZSJwvmfGvgw">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_ioL04e1qEeGeHKjzItayOg">
           <language>OCL</language>
           <body>self.entryRelationship->one(entryRelationship : cda::EntryRelationship | not entryRelationship.observation.oclIsUndefined() and entryRelationship.observation.oclIsKindOf(cocci::CoccidioidesImmunosuppressedMedicalConditionProblemObservation) and entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::REFR)</body>
         </specification>
@@ -322,33 +344,33 @@
       <generalization xmi:id="_MQMm0KOKEeG3gKoyOiGNFA">
         <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.phcr/model/phcr_Ecore.uml#__6FcQKBIEeGDSOGpMxCO3w"/>
       </generalization>
-      <ownedOperation xmi:id="_d_IgTrP9EeGRyNKbdY8huA" name="getCoccidioidesImmunosuppressedMedicalConditionProblemObservation" isQuery="true" bodyCondition="_d_IgUbP9EeGRyNKbdY8huA">
-        <ownedRule xmi:id="_d_IgUbP9EeGRyNKbdY8huA" name="body" constrainedElement="_d_IgTrP9EeGRyNKbdY8huA">
-          <specification xmi:type="uml:OpaqueExpression" xmi:id="_d_IgUrP9EeGRyNKbdY8huA">
+      <ownedOperation xmi:id="_ioMb8O1qEeGeHKjzItayOg" name="getCoccidioidesImmunosuppressedMedicalConditionProblemObservation" isQuery="true" bodyCondition="_ioMb8-1qEeGeHKjzItayOg">
+        <ownedRule xmi:id="_ioMb8-1qEeGeHKjzItayOg" name="body" constrainedElement="_ioMb8O1qEeGeHKjzItayOg">
+          <specification xmi:type="uml:OpaqueExpression" xmi:id="_ioMb9O1qEeGeHKjzItayOg">
             <language>OCL</language>
-            <body>self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(cocci::CoccidioidesImmunosuppressedMedicalConditionProblemObservation))->asSequence()->first().oclAsType(cocci::CoccidioidesImmunosuppressedMedicalConditionProblemObservation)</body>
+            <body>self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(cocci::CoccidioidesImmunosuppressedMedicalConditionProblemObservation))->asSequence()->any(true).oclAsType(cocci::CoccidioidesImmunosuppressedMedicalConditionProblemObservation)</body>
           </specification>
         </ownedRule>
-        <ownedParameter xmi:id="_d_IgT7P9EeGRyNKbdY8huA" type="_0X9QEKNtEeG3gKoyOiGNFA" direction="return">
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_d_IgULP9EeGRyNKbdY8huA" value="1"/>
+        <ownedParameter xmi:id="_ioMb8e1qEeGeHKjzItayOg" type="_0X9QEKNtEeG3gKoyOiGNFA" direction="return">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ioMb8u1qEeGeHKjzItayOg" value="1"/>
         </ownedParameter>
       </ownedOperation>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_m6OhgJiqEeGnvPbsE6qbcQ" name="CoccidioidesResultOrganizer">
-      <ownedRule xmi:id="_d-PIa7P9EeGRyNKbdY8huA" name="ResultOrganizerTemplateId" constrainedElement="_m6OhgJiqEeGnvPbsE6qbcQ">
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_d-PIbLP9EeGRyNKbdY8huA">
+      <ownedRule xmi:id="_invI8O1qEeGeHKjzItayOg" name="ResultOrganizerTemplateId" constrainedElement="_m6OhgJiqEeGnvPbsE6qbcQ">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_invI8e1qEeGeHKjzItayOg">
           <language>OCL</language>
           <body>self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.15.3.92')</body>
         </specification>
       </ownedRule>
-      <ownedRule xmi:id="_d-Y5YLP9EeGRyNKbdY8huA" name="CoccidioidesResultOrganizerCode" constrainedElement="_m6OhgJiqEeGnvPbsE6qbcQ">
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_d-Y5YbP9EeGRyNKbdY8huA">
+      <ownedRule xmi:id="_inwXEO1qEeGeHKjzItayOg" name="CoccidioidesResultOrganizerCode" constrainedElement="_m6OhgJiqEeGnvPbsE6qbcQ">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_inwXEe1qEeGeHKjzItayOg">
           <language>OCL</language>
           <body>(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined())</body>
         </specification>
       </ownedRule>
-      <ownedRule xmi:id="_d_RqPLP9EeGRyNKbdY8huA" name="CoccidioidesResultOrganizerCoccidioidesResultObservation" constrainedElement="_m6OhgJiqEeGnvPbsE6qbcQ">
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_d_RqPbP9EeGRyNKbdY8huA">
+      <ownedRule xmi:id="_ioQGUO1qEeGeHKjzItayOg" name="CoccidioidesResultOrganizerCoccidioidesResultObservation" constrainedElement="_m6OhgJiqEeGnvPbsE6qbcQ">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_ioQGUe1qEeGeHKjzItayOg">
           <language>OCL</language>
           <body>self.component->exists(component : cda::Component4 | not component.observation.oclIsUndefined() and component.observation.oclIsKindOf(cocci::CoccidioidesResultObservation))</body>
         </specification>
@@ -356,47 +378,57 @@
       <generalization xmi:id="_m6YSgJiqEeGnvPbsE6qbcQ">
         <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.phcr/model/phcr_Ecore.uml#_0r8IYPNrEeCOm7Y48UO5Tg"/>
       </generalization>
-      <ownedOperation xmi:id="_d_RqPrP9EeGRyNKbdY8huA" name="getCoccidioidesResultObservations" isQuery="true" bodyCondition="_d_RqQbP9EeGRyNKbdY8huA">
-        <ownedRule xmi:id="_d_RqQbP9EeGRyNKbdY8huA" name="body" constrainedElement="_d_RqPrP9EeGRyNKbdY8huA">
-          <specification xmi:type="uml:OpaqueExpression" xmi:id="_d_RqQrP9EeGRyNKbdY8huA">
+      <ownedOperation xmi:id="_ioQtYO1qEeGeHKjzItayOg" name="getCoccidioidesResultObservations" isQuery="true" bodyCondition="_ioQtY-1qEeGeHKjzItayOg">
+        <ownedRule xmi:id="_ioQtY-1qEeGeHKjzItayOg" name="body" constrainedElement="_ioQtYO1qEeGeHKjzItayOg">
+          <specification xmi:type="uml:OpaqueExpression" xmi:id="_ioQtZO1qEeGeHKjzItayOg">
             <language>OCL</language>
             <body>self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(cocci::CoccidioidesResultObservation)).oclAsType(cocci::CoccidioidesResultObservation)</body>
           </specification>
         </ownedRule>
-        <ownedParameter xmi:id="_d_RqP7P9EeGRyNKbdY8huA" type="_KWyZAFQIEeGtHuzb-BTYvw" direction="return">
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_d_RqQLP9EeGRyNKbdY8huA" value="*"/>
+        <ownedParameter xmi:id="_ioQtYe1qEeGeHKjzItayOg" type="_KWyZAFQIEeGtHuzb-BTYvw" direction="return">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ioQtYu1qEeGeHKjzItayOg" value="*"/>
         </ownedParameter>
       </ownedOperation>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_UrjaoKNrEeG3gKoyOiGNFA" name="CoccidioidesPossibleExposureLocationAct">
-      <ownedRule xmi:id="_d-Y5abP9EeGRyNKbdY8huA" name="CoccidioidesPossibleExposureLocationActTemplateId" constrainedElement="_UrjaoKNrEeG3gKoyOiGNFA">
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_d-Y5arP9EeGRyNKbdY8huA">
+      <ownedRule xmi:id="_inyzU-1qEeGeHKjzItayOg" name="CoccidioidesPossibleExposureLocationActTemplateId" constrainedElement="_UrjaoKNrEeG3gKoyOiGNFA">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_inyzVO1qEeGeHKjzItayOg">
           <language>OCL</language>
           <body>self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.15.3.86')</body>
         </specification>
       </ownedRule>
-      <ownedRule xmi:id="_d-iDULP9EeGRyNKbdY8huA" name="CoccidioidesPossibleExposureLocationActClassCode" constrainedElement="_UrjaoKNrEeG3gKoyOiGNFA">
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_d-iDUbP9EeGRyNKbdY8huA">
+      <ownedRule xmi:id="_in0ogO1qEeGeHKjzItayOg" name="CoccidioidesPossibleExposureLocationActClassCode" constrainedElement="_UrjaoKNrEeG3gKoyOiGNFA">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_in0oge1qEeGeHKjzItayOg">
           <language>OCL</language>
           <body>self.classCode=vocab::x_ActClassDocumentEntryAct::ACT</body>
         </specification>
       </ownedRule>
-      <ownedRule xmi:id="_d-iDUrP9EeGRyNKbdY8huA" name="CoccidioidesPossibleExposureLocationActCode" constrainedElement="_UrjaoKNrEeG3gKoyOiGNFA">
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_d-iDU7P9EeGRyNKbdY8huA">
+      <ownedRule xmi:id="_in2dsO1qEeGeHKjzItayOg" name="CoccidioidesPossibleExposureLocationActCode" constrainedElement="_UrjaoKNrEeG3gKoyOiGNFA">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_in2dse1qEeGeHKjzItayOg">
           <language>OCL</language>
-          <body>(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and &#xD;&#xA;let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in (&#xD;&#xA;value.code = '413350009' and value.codeSystem = '2.16.840.1.113883.6.96'))</body>
+          <body>(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and 
+let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in 
+value.code = '413350009' and value.codeSystem = '2.16.840.1.113883.6.96')</body>
         </specification>
       </ownedRule>
-      <ownedRule xmi:id="_d-r0ULP9EeGRyNKbdY8huA" name="CoccidioidesPossibleExposureLocationActMoodCode" constrainedElement="_UrjaoKNrEeG3gKoyOiGNFA">
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_d-r0UbP9EeGRyNKbdY8huA">
+      <ownedRule xmi:id="_in4S4O1qEeGeHKjzItayOg" name="CoccidioidesPossibleExposureLocationActMoodCode" constrainedElement="_UrjaoKNrEeG3gKoyOiGNFA">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_in4S4e1qEeGeHKjzItayOg">
           <language>OCL</language>
           <body>self.moodCode=vocab::x_DocumentActMood::EVN</body>
         </specification>
       </ownedRule>
-      <ownedRule xmi:id="_d-r0UrP9EeGRyNKbdY8huA" name="CoccidioidesPossibleExposureLocationActStatusCode" constrainedElement="_UrjaoKNrEeG3gKoyOiGNFA">
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_d-r0U7P9EeGRyNKbdY8huA">
+      <ownedRule xmi:id="_in8kUO1qEeGeHKjzItayOg" name="CoccidioidesPossibleExposureLocationActStatusCodeP" constrainedElement="_UrjaoKNrEeG3gKoyOiGNFA">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_in8kUe1qEeGeHKjzItayOg">
           <language>OCL</language>
-          <body>(self.statusCode.oclIsUndefined() or self.statusCode.isNullFlavorUndefined()) implies (self.statusCode.oclIsKindOf(datatypes::CS) and &#xD;&#xA;let value : datatypes::CS = self.statusCode.oclAsType(datatypes::CS) in (&#xD;&#xA;value.code = 'completed'))</body>
+          <body>(self.statusCode.oclIsUndefined() or self.statusCode.isNullFlavorUndefined()) implies (not self.statusCode.oclIsUndefined())</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_in6IEO1qEeGeHKjzItayOg" name="CoccidioidesPossibleExposureLocationActStatusCode" constrainedElement="_UrjaoKNrEeG3gKoyOiGNFA">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_in6IEe1qEeGeHKjzItayOg">
+          <language>OCL</language>
+          <body>(self.statusCode.oclIsUndefined() or self.statusCode.isNullFlavorUndefined()) implies (not self.statusCode.oclIsUndefined() and self.statusCode.oclIsKindOf(datatypes::CS) and 
+let value : datatypes::CS = self.statusCode.oclAsType(datatypes::CS) in 
+value.code = 'completed')</body>
         </specification>
       </ownedRule>
       <generalization xmi:id="_UrjaoaNrEeG3gKoyOiGNFA">
@@ -404,20 +436,20 @@
       </generalization>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_zrXsUKNsEeG3gKoyOiGNFA" name="CoccidioidesTherapeuticRegimenAct">
-      <ownedRule xmi:id="_d-0-QLP9EeGRyNKbdY8huA" name="TherapeuticRegimenActTemplateId" constrainedElement="_zrXsUKNsEeG3gKoyOiGNFA">
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_d-0-QbP9EeGRyNKbdY8huA">
+      <ownedRule xmi:id="_in-Zge1qEeGeHKjzItayOg" name="TherapeuticRegimenActTemplateId" constrainedElement="_zrXsUKNsEeG3gKoyOiGNFA">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_in-Zgu1qEeGeHKjzItayOg">
           <language>OCL</language>
           <body>self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.15.3.89')</body>
         </specification>
       </ownedRule>
-      <ownedRule xmi:id="_d_IgU7P9EeGRyNKbdY8huA" name="CoccidioidesTherapeuticRegimenActCoccidioidesTreatmentGivenSubstanceAdministration" constrainedElement="_zrXsUKNsEeG3gKoyOiGNFA">
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_d_IgVLP9EeGRyNKbdY8huA">
+      <ownedRule xmi:id="_ioNDAO1qEeGeHKjzItayOg" name="CoccidioidesTherapeuticRegimenActCoccidioidesTreatmentGivenSubstanceAdministration" constrainedElement="_zrXsUKNsEeG3gKoyOiGNFA">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_ioNDAe1qEeGeHKjzItayOg">
           <language>OCL</language>
           <body>self.entryRelationship->exists(entryRelationship : cda::EntryRelationship | not entryRelationship.substanceAdministration.oclIsUndefined() and entryRelationship.substanceAdministration.oclIsKindOf(cocci::CoccidioidesTreatmentGivenSubstanceAdministration) and entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::COMP)</body>
         </specification>
       </ownedRule>
-      <ownedRule xmi:id="_d_RqNbP9EeGRyNKbdY8huA" name="CoccidioidesTherapeuticRegimenActCoccidioidesTreatmentNotGivenSubstanceAdministration" constrainedElement="_zrXsUKNsEeG3gKoyOiGNFA">
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_d_RqNrP9EeGRyNKbdY8huA">
+      <ownedRule xmi:id="_ioORJO1qEeGeHKjzItayOg" name="CoccidioidesTherapeuticRegimenActCoccidioidesTreatmentNotGivenSubstanceAdministration" constrainedElement="_zrXsUKNsEeG3gKoyOiGNFA">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_ioO4MO1qEeGeHKjzItayOg">
           <language>OCL</language>
           <body>self.entryRelationship->exists(entryRelationship : cda::EntryRelationship | not entryRelationship.substanceAdministration.oclIsUndefined() and entryRelationship.substanceAdministration.oclIsKindOf(cocci::CoccidioidesTreatmentNotGivenSubstanceAdministration) and entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::COMP)</body>
         </specification>
@@ -425,32 +457,32 @@
       <generalization xmi:id="_zrXsUaNsEeG3gKoyOiGNFA">
         <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.phcr/model/phcr_Ecore.uml#_2p558NSrEeC18pmrrt-Mbg"/>
       </generalization>
-      <ownedOperation xmi:id="_d_RqMLP9EeGRyNKbdY8huA" name="getCoccidioidesTreatmentGivenSubstanceAdministrations" isQuery="true" bodyCondition="_d_RqM7P9EeGRyNKbdY8huA">
-        <ownedRule xmi:id="_d_RqM7P9EeGRyNKbdY8huA" name="body" constrainedElement="_d_RqMLP9EeGRyNKbdY8huA">
-          <specification xmi:type="uml:OpaqueExpression" xmi:id="_d_RqNLP9EeGRyNKbdY8huA">
+      <ownedOperation xmi:id="_ioNqEO1qEeGeHKjzItayOg" name="getCoccidioidesTreatmentGivenSubstanceAdministrations" isQuery="true" bodyCondition="_ioORIu1qEeGeHKjzItayOg">
+        <ownedRule xmi:id="_ioORIu1qEeGeHKjzItayOg" name="body" constrainedElement="_ioNqEO1qEeGeHKjzItayOg">
+          <specification xmi:type="uml:OpaqueExpression" xmi:id="_ioORI-1qEeGeHKjzItayOg">
             <language>OCL</language>
             <body>self.getSubstanceAdministrations()->select(substanceAdministration : cda::SubstanceAdministration | not substanceAdministration.oclIsUndefined() and substanceAdministration.oclIsKindOf(cocci::CoccidioidesTreatmentGivenSubstanceAdministration)).oclAsType(cocci::CoccidioidesTreatmentGivenSubstanceAdministration)</body>
           </specification>
         </ownedRule>
-        <ownedParameter xmi:id="_d_RqMbP9EeGRyNKbdY8huA" type="_I9owEKNtEeG3gKoyOiGNFA" direction="return">
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_d_RqMrP9EeGRyNKbdY8huA" value="*"/>
+        <ownedParameter xmi:id="_ioORIO1qEeGeHKjzItayOg" type="_I9owEKNtEeG3gKoyOiGNFA" direction="return">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ioORIe1qEeGeHKjzItayOg" value="*"/>
         </ownedParameter>
       </ownedOperation>
-      <ownedOperation xmi:id="_d_RqN7P9EeGRyNKbdY8huA" name="getCoccidioidesTreatmentNotGivenSubstanceAdministrations" isQuery="true" bodyCondition="_d_RqOrP9EeGRyNKbdY8huA">
-        <ownedRule xmi:id="_d_RqOrP9EeGRyNKbdY8huA" name="body" constrainedElement="_d_RqN7P9EeGRyNKbdY8huA">
-          <specification xmi:type="uml:OpaqueExpression" xmi:id="_d_RqO7P9EeGRyNKbdY8huA">
+      <ownedOperation xmi:id="_ioPfQO1qEeGeHKjzItayOg" name="getCoccidioidesTreatmentNotGivenSubstanceAdministrations" isQuery="true" bodyCondition="_ioPfQ-1qEeGeHKjzItayOg">
+        <ownedRule xmi:id="_ioPfQ-1qEeGeHKjzItayOg" name="body" constrainedElement="_ioPfQO1qEeGeHKjzItayOg">
+          <specification xmi:type="uml:OpaqueExpression" xmi:id="_ioPfRO1qEeGeHKjzItayOg">
             <language>OCL</language>
             <body>self.getSubstanceAdministrations()->select(substanceAdministration : cda::SubstanceAdministration | not substanceAdministration.oclIsUndefined() and substanceAdministration.oclIsKindOf(cocci::CoccidioidesTreatmentNotGivenSubstanceAdministration)).oclAsType(cocci::CoccidioidesTreatmentNotGivenSubstanceAdministration)</body>
           </specification>
         </ownedRule>
-        <ownedParameter xmi:id="_d_RqOLP9EeGRyNKbdY8huA" type="_PvZ-0KNtEeG3gKoyOiGNFA" direction="return">
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_d_RqObP9EeGRyNKbdY8huA" value="*"/>
+        <ownedParameter xmi:id="_ioPfQe1qEeGeHKjzItayOg" type="_PvZ-0KNtEeG3gKoyOiGNFA" direction="return">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ioPfQu1qEeGeHKjzItayOg" value="*"/>
         </ownedParameter>
       </ownedOperation>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_I9owEKNtEeG3gKoyOiGNFA" name="CoccidioidesTreatmentGivenSubstanceAdministration">
-      <ownedRule xmi:id="_d-0-S7P9EeGRyNKbdY8huA" name="TreatmentGivenSubstanceAdministrationTemplateId" constrainedElement="_I9owEKNtEeG3gKoyOiGNFA">
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_d-0-TLP9EeGRyNKbdY8huA">
+      <ownedRule xmi:id="_ioBc0O1qEeGeHKjzItayOg" name="TreatmentGivenSubstanceAdministrationTemplateId" constrainedElement="_I9owEKNtEeG3gKoyOiGNFA">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_ioBc0e1qEeGeHKjzItayOg">
           <language>OCL</language>
           <body>self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.15.3.90')</body>
         </specification>
@@ -460,8 +492,8 @@
       </generalization>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_PvZ-0KNtEeG3gKoyOiGNFA" name="CoccidioidesTreatmentNotGivenSubstanceAdministration">
-      <ownedRule xmi:id="_d--vQbP9EeGRyNKbdY8huA" name="TreatmentNotGivenSubstanceAdministrationTemplateId" constrainedElement="_PvZ-0KNtEeG3gKoyOiGNFA">
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_d--vQrP9EeGRyNKbdY8huA">
+      <ownedRule xmi:id="_ioCq8e1qEeGeHKjzItayOg" name="TreatmentNotGivenSubstanceAdministrationTemplateId" constrainedElement="_PvZ-0KNtEeG3gKoyOiGNFA">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_ioCq8u1qEeGeHKjzItayOg">
           <language>OCL</language>
           <body>self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.15.3.91')</body>
         </specification>
@@ -471,10 +503,16 @@
       </generalization>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_0X9QEKNtEeG3gKoyOiGNFA" name="CoccidioidesImmunosuppressedMedicalConditionProblemObservation">
-      <ownedRule xmi:id="_d--vRbP9EeGRyNKbdY8huA" name="ProblemObservationTemplateId" constrainedElement="_0X9QEKNtEeG3gKoyOiGNFA">
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_d--vRrP9EeGRyNKbdY8huA">
+      <ownedRule xmi:id="_ioEgIe1qEeGeHKjzItayOg" name="ProblemObservationTemplateId" constrainedElement="_0X9QEKNtEeG3gKoyOiGNFA">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_ioEgIu1qEeGeHKjzItayOg">
           <language>OCL</language>
           <body>self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.15.3.95')</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_ioG8YO1qEeGeHKjzItayOg" name="CoccidioidesImmunosuppressedMedicalConditionProblemObservationValue" constrainedElement="_0X9QEKNtEeG3gKoyOiGNFA">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_ioG8Ye1qEeGeHKjzItayOg">
+          <language>OCL</language>
+          <body>(self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (self.value->forAll(element | element.oclIsTypeOf(datatypes::CD)))</body>
         </specification>
       </ownedRule>
       <generalization xmi:id="_0X9QEaNtEeG3gKoyOiGNFA">
@@ -493,8 +531,8 @@
       </eAnnotations>
       <appliedProfile href="pathmap://CDA_PROFILES/CDA.profile.uml#_cxOJEIEVEd6H8o-hO3-B4Q"/>
     </profileApplication>
-    <profileApplication xmi:id="_d8TOsLP9EeGRyNKbdY8huA">
-      <eAnnotations xmi:id="_d8TOsbP9EeGRyNKbdY8huA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+    <profileApplication xmi:id="_inFosO1qEeGeHKjzItayOg">
+      <eAnnotations xmi:id="_inGPwO1qEeGeHKjzItayOg" source="http://www.eclipse.org/uml2/2.0.0/UML">
         <references xmi:type="ecore:EPackage" href="pathmap://UML_PROFILES/Ecore.profile.uml#_z1OFcHjqEdy8S4Cr8Rc_NA"/>
       </eAnnotations>
       <appliedProfile href="pathmap://UML_PROFILES/Ecore.profile.uml#_0"/>
@@ -530,64 +568,66 @@
   <CDA:PropertyValidation xmi:id="_MiCTQaWDEeG5_K9BCQxvMA">
     <ruleId>CONF-416</ruleId>
   </CDA:PropertyValidation>
-  <Ecore:EPackage xmi:id="_d8cYoLP9EeGRyNKbdY8huA" base_Package="_8GrssE6yEeG_dcj91TvCTg" packageName="cocci" nsPrefix="cocci" nsURI="http://www.openhealthtools.org/mdht/uml/cda/phcr/coccidioides" basePackage="org.openhealthtools.mdht.uml.cda.phcr" prefix="cocci"/>
-  <CDA:ConformsTo xmi:id="_d8mJoLP9EeGRyNKbdY8huA" base_Generalization="_8Jg-Q06yEeG_dcj91TvCTg"/>
-  <Ecore:EClass xmi:id="_d8v6oLP9EeGRyNKbdY8huA" base_Class="_8Jg-QU6yEeG_dcj91TvCTg">
-    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation title.mixed='Public Health Case Report - Coccidioidomycosis' templateId.root='2.16.840.1.113883.10.20.15.1.10' constraints.validation.error='CoccidioidesCaseReportTemplateId CoccidioidesCaseReportTitle CoccidioidesCaseReportCoccidioidesPHCRClinicalInformationSection' constraints.validation.warning='CoccidioidesCaseReportCoccidioidesPHCRSocialHistorySection CoccidioidesCaseReportCoccidioidesPHCRTreatmentInformationSection CoccidioidesCaseReportCoccidioidesPHCRRelevantDxTestsSection'</annotation>
+  <Ecore:EPackage xmi:id="_inIE8O1qEeGeHKjzItayOg" base_Package="_8GrssE6yEeG_dcj91TvCTg" packageName="cocci" nsPrefix="cocci" nsURI="http://www.openhealthtools.org/mdht/uml/cda/phcr/coccidioides" basePackage="org.openhealthtools.mdht.uml.cda.phcr" prefix="cocci">
+    <annotation>http://www.openhealthtools.org/mdht/uml initializers='org.openhealthtools.mdht.uml.cda.phcr.cocci'</annotation>
+  </Ecore:EPackage>
+  <CDA:ConformsTo xmi:id="_inIsAO1qEeGeHKjzItayOg" base_Generalization="_8Jg-Q06yEeG_dcj91TvCTg"/>
+  <Ecore:EClass xmi:id="_inJ6IO1qEeGeHKjzItayOg" base_Class="_8Jg-QU6yEeG_dcj91TvCTg">
+    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='CoccidioidesCaseReportTemplateId CoccidioidesCaseReportTitle CoccidioidesCaseReportCoccidioidesPHCRClinicalInformationSection' templateId.root='2.16.840.1.113883.10.20.15.1.10' title.mixed='Public Health Case Report - Coccidioidomycosis' constraints.validation.warning='CoccidioidesCaseReportCoccidioidesPHCRSocialHistorySection CoccidioidesCaseReportCoccidioidesPHCRTreatmentInformationSection CoccidioidesCaseReportCoccidioidesPHCRRelevantDxTestsSection'</annotation>
   </Ecore:EClass>
-  <CDA:ConformsTo xmi:id="_d9MmkLP9EeGRyNKbdY8huA" base_Generalization="_l3ZUwFNMEeGtHuzb-BTYvw"/>
-  <Ecore:EClass xmi:id="_d9MmlLP9EeGRyNKbdY8huA" base_Class="_l3PjwFNMEeGtHuzb-BTYvw">
-    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation templateId.root='2.16.840.1.113883.10.20.15.2.29' constraints.validation.error='CoccidioidesPHCRSocialHistorySectionTemplateId' constraints.validation.info='CoccidioidesPHCRSocialHistorySectionCoccidioidesPossibleExposureLocationAct'</annotation>
+  <CDA:ConformsTo xmi:id="_inMWYO1qEeGeHKjzItayOg" base_Generalization="_l3ZUwFNMEeGtHuzb-BTYvw"/>
+  <Ecore:EClass xmi:id="_inM9ce1qEeGeHKjzItayOg" base_Class="_l3PjwFNMEeGtHuzb-BTYvw">
+    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='CoccidioidesPHCRSocialHistorySectionTemplateId' templateId.root='2.16.840.1.113883.10.20.15.2.29' constraints.validation.info='CoccidioidesPHCRSocialHistorySectionCoccidioidesPossibleExposureLocationAct'</annotation>
   </Ecore:EClass>
-  <CDA:ConformsTo xmi:id="_d9VwhbP9EeGRyNKbdY8huA" base_Generalization="_xMe9sVNMEeGtHuzb-BTYvw"/>
-  <Ecore:EClass xmi:id="_d9VwiLP9EeGRyNKbdY8huA" base_Class="_xMe9sFNMEeGtHuzb-BTYvw">
-    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation templateId.root='2.16.840.1.113883.10.20.15.2.30' constraints.validation.error='CoccidioidesPHCRClinicalInformationSectionTemplateId CoccidioidesPHCRClinicalInformationSectionCoccidioidesCaseObservation' constraints.validation.info='CoccidioidesPHCRClinicalInformationSectionCoccidioidesImmunosuppressedMedicalConditionHistoryObservation'</annotation>
+  <CDA:ConformsTo xmi:id="_inPZsO1qEeGeHKjzItayOg" base_Generalization="_xMe9sVNMEeGtHuzb-BTYvw"/>
+  <Ecore:EClass xmi:id="_inQn0O1qEeGeHKjzItayOg" base_Class="_xMe9sFNMEeGtHuzb-BTYvw">
+    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='CoccidioidesPHCRClinicalInformationSectionTemplateId CoccidioidesPHCRClinicalInformationSectionCoccidioidesCaseObservation' templateId.root='2.16.840.1.113883.10.20.15.2.30' constraints.validation.info='CoccidioidesPHCRClinicalInformationSectionCoccidioidesImmunosuppressedMedicalConditionHistoryObservation'</annotation>
   </Ecore:EClass>
-  <CDA:ConformsTo xmi:id="_d9VwkLP9EeGRyNKbdY8huA" base_Generalization="_GDoLsVNNEeGtHuzb-BTYvw"/>
-  <Ecore:EClass xmi:id="_d9fhgLP9EeGRyNKbdY8huA" base_Class="_GDoLsFNNEeGtHuzb-BTYvw">
-    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation templateId.root='2.16.840.1.113883.10.20.15.2.31' constraints.validation.error='CoccidioidesPHCRTreatmentInformationSectionTemplateId CoccidioidesPHCRTreatmentInformationSectionCoccidioidesTherapeuticRegimenAct'</annotation>
+  <CDA:ConformsTo xmi:id="_inSdBe1qEeGeHKjzItayOg" base_Generalization="_GDoLsVNNEeGtHuzb-BTYvw"/>
+  <Ecore:EClass xmi:id="_inTrIO1qEeGeHKjzItayOg" base_Class="_GDoLsFNNEeGtHuzb-BTYvw">
+    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='CoccidioidesPHCRTreatmentInformationSectionTemplateId CoccidioidesPHCRTreatmentInformationSectionCoccidioidesTherapeuticRegimenAct' templateId.root='2.16.840.1.113883.10.20.15.2.31'</annotation>
   </Ecore:EClass>
-  <CDA:ConformsTo xmi:id="_d9fhiLP9EeGRyNKbdY8huA" base_Generalization="_SGUhgVNNEeGtHuzb-BTYvw"/>
-  <Ecore:EClass xmi:id="_d9fhjLP9EeGRyNKbdY8huA" base_Class="_SGUhgFNNEeGtHuzb-BTYvw">
-    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation templateId.root='2.16.840.1.113883.10.20.15.2.32' constraints.validation.error='CoccidioidesPHCRRelevantDxTestsSectionTemplateId' constraints.validation.warning='CoccidioidesPHCRRelevantDxTestsSectionCoccidioidesResultObservation' constraints.validation.info='CoccidioidesPHCRRelevantDxTestsSectionCoccidioidesResultOrganizer'</annotation>
+  <CDA:ConformsTo xmi:id="_inVgUO1qEeGeHKjzItayOg" base_Generalization="_SGUhgVNNEeGtHuzb-BTYvw"/>
+  <Ecore:EClass xmi:id="_inWucO1qEeGeHKjzItayOg" base_Class="_SGUhgFNNEeGtHuzb-BTYvw">
+    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='CoccidioidesPHCRRelevantDxTestsSectionTemplateId' templateId.root='2.16.840.1.113883.10.20.15.2.32' constraints.validation.warning='CoccidioidesPHCRRelevantDxTestsSectionCoccidioidesResultObservation' constraints.validation.info='CoccidioidesPHCRRelevantDxTestsSectionCoccidioidesResultOrganizer'</annotation>
   </Ecore:EClass>
-  <CDA:ConformsTo xmi:id="_d9ord7P9EeGRyNKbdY8huA" base_Generalization="_asBMAVNNEeGtHuzb-BTYvw"/>
-  <Ecore:EClass xmi:id="_d9orerP9EeGRyNKbdY8huA" base_Class="_asBMAFNNEeGtHuzb-BTYvw">
-    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation templateId.root='2.16.840.1.113883.10.20.15.3.88' constraints.validation.error='CoccidioidesSignsAndSymptomsObservationTemplateId'</annotation>
+  <CDA:ConformsTo xmi:id="_inYjoO1qEeGeHKjzItayOg" base_Generalization="_asBMAVNNEeGtHuzb-BTYvw"/>
+  <Ecore:EClass xmi:id="_inZKsO1qEeGeHKjzItayOg" base_Class="_asBMAFNNEeGtHuzb-BTYvw">
+    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='CoccidioidesSignsAndSymptomsObservationTemplateId CoccidioidesSignsAndSymptomsObservationValue' templateId.root='2.16.840.1.113883.10.20.15.3.88'</annotation>
   </Ecore:EClass>
-  <CDA:ConformsTo xmi:id="_d9yccLP9EeGRyNKbdY8huA" base_Generalization="_gJAZIVNNEeGtHuzb-BTYvw"/>
-  <Ecore:EClass xmi:id="_d9ycdLP9EeGRyNKbdY8huA" base_Class="_gJAZIFNNEeGtHuzb-BTYvw">
-    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation value.displayName='Coccidioidomycosis' value.codeSystemName='SNOMEDCT' templateId.root='2.16.840.1.113883.10.20.15.3.87' value.code='60826002' constraints.validation.error='CoccidioidesCaseObservationTemplateId CaseObservationValue' value.codeSystem='2.16.840.1.113883.6.96'</annotation>
+  <CDA:ConformsTo xmi:id="_inc1EO1qEeGeHKjzItayOg" base_Generalization="_gJAZIVNNEeGtHuzb-BTYvw"/>
+  <Ecore:EClass xmi:id="_ineDMO1qEeGeHKjzItayOg" base_Class="_gJAZIFNNEeGtHuzb-BTYvw">
+    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='CoccidioidesCaseObservationTemplateId CoccidioidesCaseObservationValue CoccidioidesCaseObservationValueP' templateId.root='2.16.840.1.113883.10.20.15.3.87' value.code='60826002' value.codeSystem='2.16.840.1.113883.6.96' value.codeSystemName='SNOMEDCT' value.displayName='Coccidioidomycosis' constraints.validation.dependOn.CoccidioidesCaseObservationValue='CoccidioidesCaseObservationValueP'</annotation>
   </Ecore:EClass>
-  <CDA:ConformsTo xmi:id="_d98NfLP9EeGRyNKbdY8huA" base_Generalization="_KWyZAVQIEeGtHuzb-BTYvw"/>
-  <Ecore:EClass xmi:id="_d-FXYLP9EeGRyNKbdY8huA" base_Class="_KWyZAFQIEeGtHuzb-BTYvw">
-    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation code.codeSystem='Code System OID' templateId.root='2.16.840.1.113883.10.20.15.3.93' constraints.validation.error='CoccidioidesResultObservationTemplateId ResultObservationCode' code.codeSystemName='Code System Name'</annotation>
+  <CDA:ConformsTo xmi:id="_inlX8O1qEeGeHKjzItayOg" base_Generalization="_KWyZAVQIEeGtHuzb-BTYvw"/>
+  <Ecore:EClass xmi:id="_inl_Ae1qEeGeHKjzItayOg" base_Class="_KWyZAFQIEeGtHuzb-BTYvw">
+    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='CoccidioidesResultObservationTemplateId CoccidioidesResultObservationCode CoccidioidesResultObservationCodeP' templateId.root='2.16.840.1.113883.10.20.15.3.93' code.codeSystemName='' constraints.validation.dependOn.CoccidioidesResultObservationCode='CoccidioidesResultObservationCodeP'</annotation>
   </Ecore:EClass>
-  <CDA:ConformsTo xmi:id="_d-PIZbP9EeGRyNKbdY8huA" base_Generalization="_MQMm0KOKEeG3gKoyOiGNFA"/>
-  <Ecore:EClass xmi:id="_d-PIaLP9EeGRyNKbdY8huA" base_Class="_pq31kIrzEeGZSJwvmfGvgw">
-    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation templateId.root='2.16.840.1.113883.10.20.15.3.94' constraints.validation.error='CoccidioidesImmunosuppressedMedicalConditionHistoryObservationTemplateId' constraints.validation.warning='CoccidioidesImmunosuppressedMedicalConditionHistoryObservationCoccidioidesImmunosuppressedMedicalConditionProblemObservation'</annotation>
+  <CDA:ConformsTo xmi:id="_insste1qEeGeHKjzItayOg" base_Generalization="_MQMm0KOKEeG3gKoyOiGNFA"/>
+  <Ecore:EClass xmi:id="_int60O1qEeGeHKjzItayOg" base_Class="_pq31kIrzEeGZSJwvmfGvgw">
+    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='CoccidioidesImmunosuppressedMedicalConditionHistoryObservationTemplateId' templateId.root='2.16.840.1.113883.10.20.15.3.94' constraints.validation.warning='CoccidioidesImmunosuppressedMedicalConditionHistoryObservationCoccidioidesImmunosuppressedMedicalConditionProblemObservation'</annotation>
   </Ecore:EClass>
-  <CDA:ConformsTo xmi:id="_d-PIabP9EeGRyNKbdY8huA" base_Generalization="_m6YSgJiqEeGnvPbsE6qbcQ"/>
-  <Ecore:EClass xmi:id="_d-PIbbP9EeGRyNKbdY8huA" base_Class="_m6OhgJiqEeGnvPbsE6qbcQ">
-    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation templateId.root='2.16.840.1.113883.10.20.15.3.92' constraints.validation.error='CoccidioidesResultOrganizerTemplateId CoccidioidesResultOrganizerCode CoccidioidesResultOrganizerCoccidioidesResultObservation'</annotation>
+  <CDA:ConformsTo xmi:id="_inuh4O1qEeGeHKjzItayOg" base_Generalization="_m6YSgJiqEeGnvPbsE6qbcQ"/>
+  <Ecore:EClass xmi:id="_invwAO1qEeGeHKjzItayOg" base_Class="_m6OhgJiqEeGnvPbsE6qbcQ">
+    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='CoccidioidesResultOrganizerTemplateId CoccidioidesResultOrganizerCode CoccidioidesResultOrganizerCoccidioidesResultObservation' templateId.root='2.16.840.1.113883.10.20.15.3.92'</annotation>
   </Ecore:EClass>
-  <Ecore:EClass xmi:id="_d-Y5a7P9EeGRyNKbdY8huA" base_Class="_UrjaoKNrEeG3gKoyOiGNFA">
-    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation statusCode.code='completed' code.codeSystem='2.16.840.1.113883.6.96' templateId.root='2.16.840.1.113883.10.20.15.3.86' code.displayName='Finding with explicit context' constraints.validation.error='CoccidioidesPossibleExposureLocationActTemplateId CoccidioidesPossibleExposureLocationActClassCode CoccidioidesPossibleExposureLocationActCode CoccidioidesPossibleExposureLocationActMoodCode CoccidioidesPossibleExposureLocationActStatusCode' code.codeSystemName='SNOMEDCT' classCode='ACT' code.code='413350009' moodCode='EVN'</annotation>
+  <Ecore:EClass xmi:id="_inzaYO1qEeGeHKjzItayOg" base_Class="_UrjaoKNrEeG3gKoyOiGNFA">
+    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='CoccidioidesPossibleExposureLocationActTemplateId CoccidioidesPossibleExposureLocationActClassCode CoccidioidesPossibleExposureLocationActCode CoccidioidesPossibleExposureLocationActMoodCode CoccidioidesPossibleExposureLocationActStatusCode CoccidioidesPossibleExposureLocationActStatusCodeP' templateId.root='2.16.840.1.113883.10.20.15.3.86' classCode='ACT' code.code='413350009' code.codeSystem='2.16.840.1.113883.6.96' code.codeSystemName='SNOMEDCT' code.displayName='Finding with explicit context' moodCode='EVN' statusCode.code='completed' constraints.validation.dependOn.CoccidioidesPossibleExposureLocationActStatusCode='CoccidioidesPossibleExposureLocationActStatusCodeP'</annotation>
   </Ecore:EClass>
-  <CDA:ConformsTo xmi:id="_d-r0VLP9EeGRyNKbdY8huA" base_Generalization="_zrXsUaNsEeG3gKoyOiGNFA"/>
-  <Ecore:EClass xmi:id="_d-0-QrP9EeGRyNKbdY8huA" base_Class="_zrXsUKNsEeG3gKoyOiGNFA">
-    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation templateId.root='2.16.840.1.113883.10.20.15.3.89' constraints.validation.error='CoccidioidesTherapeuticRegimenActTemplateId' constraints.validation.warning='CoccidioidesTherapeuticRegimenActCoccidioidesTreatmentGivenSubstanceAdministration' constraints.validation.info='CoccidioidesTherapeuticRegimenActCoccidioidesTreatmentNotGivenSubstanceAdministration'</annotation>
+  <CDA:ConformsTo xmi:id="_in-ZgO1qEeGeHKjzItayOg" base_Generalization="_zrXsUaNsEeG3gKoyOiGNFA"/>
+  <Ecore:EClass xmi:id="_in_AkO1qEeGeHKjzItayOg" base_Class="_zrXsUKNsEeG3gKoyOiGNFA">
+    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='CoccidioidesTherapeuticRegimenActTemplateId' templateId.root='2.16.840.1.113883.10.20.15.3.89' constraints.validation.warning='CoccidioidesTherapeuticRegimenActCoccidioidesTreatmentGivenSubstanceAdministration' constraints.validation.info='CoccidioidesTherapeuticRegimenActCoccidioidesTreatmentNotGivenSubstanceAdministration'</annotation>
   </Ecore:EClass>
-  <CDA:ConformsTo xmi:id="_d-0-SrP9EeGRyNKbdY8huA" base_Generalization="_I9yhEKNtEeG3gKoyOiGNFA"/>
-  <Ecore:EClass xmi:id="_d-0-TbP9EeGRyNKbdY8huA" base_Class="_I9owEKNtEeG3gKoyOiGNFA">
-    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation templateId.root='2.16.840.1.113883.10.20.15.3.90' constraints.validation.error='CoccidioidesTreatmentGivenSubstanceAdministrationTemplateId'</annotation>
+  <CDA:ConformsTo xmi:id="_ioA1xO1qEeGeHKjzItayOg" base_Generalization="_I9yhEKNtEeG3gKoyOiGNFA"/>
+  <Ecore:EClass xmi:id="_ioBc0u1qEeGeHKjzItayOg" base_Class="_I9owEKNtEeG3gKoyOiGNFA">
+    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='CoccidioidesTreatmentGivenSubstanceAdministrationTemplateId' templateId.root='2.16.840.1.113883.10.20.15.3.90'</annotation>
   </Ecore:EClass>
-  <CDA:ConformsTo xmi:id="_d--vQLP9EeGRyNKbdY8huA" base_Generalization="_PvZ-0aNtEeG3gKoyOiGNFA"/>
-  <Ecore:EClass xmi:id="_d--vQ7P9EeGRyNKbdY8huA" base_Class="_PvZ-0KNtEeG3gKoyOiGNFA">
-    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation templateId.root='2.16.840.1.113883.10.20.15.3.91' constraints.validation.error='CoccidioidesTreatmentNotGivenSubstanceAdministrationTemplateId'</annotation>
+  <CDA:ConformsTo xmi:id="_ioCq8O1qEeGeHKjzItayOg" base_Generalization="_PvZ-0aNtEeG3gKoyOiGNFA"/>
+  <Ecore:EClass xmi:id="_ioDSAO1qEeGeHKjzItayOg" base_Class="_PvZ-0KNtEeG3gKoyOiGNFA">
+    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='CoccidioidesTreatmentNotGivenSubstanceAdministrationTemplateId' templateId.root='2.16.840.1.113883.10.20.15.3.91'</annotation>
   </Ecore:EClass>
-  <CDA:ConformsTo xmi:id="_d--vRLP9EeGRyNKbdY8huA" base_Generalization="_0X9QEaNtEeG3gKoyOiGNFA"/>
-  <Ecore:EClass xmi:id="_d--vR7P9EeGRyNKbdY8huA" base_Class="_0X9QEKNtEeG3gKoyOiGNFA">
-    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation templateId.root='2.16.840.1.113883.10.20.15.3.95' constraints.validation.error='CoccidioidesImmunosuppressedMedicalConditionProblemObservationTemplateId'</annotation>
+  <CDA:ConformsTo xmi:id="_ioEgIO1qEeGeHKjzItayOg" base_Generalization="_0X9QEaNtEeG3gKoyOiGNFA"/>
+  <Ecore:EClass xmi:id="_ioFHMO1qEeGeHKjzItayOg" base_Class="_0X9QEKNtEeG3gKoyOiGNFA">
+    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='CoccidioidesImmunosuppressedMedicalConditionProblemObservationTemplateId CoccidioidesImmunosuppressedMedicalConditionProblemObservationValue' templateId.root='2.16.840.1.113883.10.20.15.3.95'</annotation>
   </Ecore:EClass>
 </xmi:XMI>

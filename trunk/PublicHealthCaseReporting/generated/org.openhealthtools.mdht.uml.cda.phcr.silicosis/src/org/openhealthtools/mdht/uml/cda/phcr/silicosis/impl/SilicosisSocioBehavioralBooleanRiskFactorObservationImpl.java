@@ -10,12 +10,15 @@
  *******************************************************************************/
 package org.openhealthtools.mdht.uml.cda.phcr.silicosis.impl;
 
+import java.lang.Iterable;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
 
 import org.eclipse.emf.ecore.EClass;
 
+import org.eclipse.emf.ecore.EObject;
+import org.openhealthtools.mdht.emf.runtime.util.Initializer;
 import org.openhealthtools.mdht.uml.cda.ccd.impl.SocialHistoryObservationImpl;
 
 import org.openhealthtools.mdht.uml.cda.phcr.silicosis.SilicosisPackage;
@@ -36,86 +39,95 @@ import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
  */
 public class SilicosisSocioBehavioralBooleanRiskFactorObservationImpl extends SocialHistoryObservationImpl implements SilicosisSocioBehavioralBooleanRiskFactorObservation {
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	protected SilicosisSocioBehavioralBooleanRiskFactorObservationImpl() {
-		super();
-	}
+    super();
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	@Override
 	protected EClass eStaticClass() {
-		return SilicosisPackage.Literals.SILICOSIS_SOCIO_BEHAVIORAL_BOOLEAN_RISK_FACTOR_OBSERVATION;
-	}
+    return SilicosisPackage.Literals.SILICOSIS_SOCIO_BEHAVIORAL_BOOLEAN_RISK_FACTOR_OBSERVATION;
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateSilicosisSocioBehavioralBooleanRiskFactorObservationCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return SilicosisSocioBehavioralBooleanRiskFactorObservationOperations.validateSilicosisSocioBehavioralBooleanRiskFactorObservationCodeP(this, diagnostics, context);
-	}
+    return SilicosisSocioBehavioralBooleanRiskFactorObservationOperations.validateSilicosisSocioBehavioralBooleanRiskFactorObservationCodeP(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateSilicosisSocioBehavioralBooleanRiskFactorObservationCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return SilicosisSocioBehavioralBooleanRiskFactorObservationOperations.validateSilicosisSocioBehavioralBooleanRiskFactorObservationCode(this, diagnostics, context);
-	}
+    return SilicosisSocioBehavioralBooleanRiskFactorObservationOperations.validateSilicosisSocioBehavioralBooleanRiskFactorObservationCode(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateSilicosisSocioBehavioralBooleanRiskFactorObservationNegationInd(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return SilicosisSocioBehavioralBooleanRiskFactorObservationOperations.validateSilicosisSocioBehavioralBooleanRiskFactorObservationNegationInd(this, diagnostics, context);
-	}
+    return SilicosisSocioBehavioralBooleanRiskFactorObservationOperations.validateSilicosisSocioBehavioralBooleanRiskFactorObservationNegationInd(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateSilicosisSocioBehavioralBooleanRiskFactorObservationEffectiveTime(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return SilicosisSocioBehavioralBooleanRiskFactorObservationOperations.validateSilicosisSocioBehavioralBooleanRiskFactorObservationEffectiveTime(this, diagnostics, context);
-	}
+    return SilicosisSocioBehavioralBooleanRiskFactorObservationOperations.validateSilicosisSocioBehavioralBooleanRiskFactorObservationEffectiveTime(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateSilicosisSocioBehavioralBooleanRiskFactorObservationValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return SilicosisSocioBehavioralBooleanRiskFactorObservationOperations.validateSilicosisSocioBehavioralBooleanRiskFactorObservationValue(this, diagnostics, context);
-	}
+    return SilicosisSocioBehavioralBooleanRiskFactorObservationOperations.validateSilicosisSocioBehavioralBooleanRiskFactorObservationValue(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	@Override
 	public boolean validateSocialHistoryObservationTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return SilicosisSocioBehavioralBooleanRiskFactorObservationOperations.validateSocialHistoryObservationTemplateId(this, diagnostics, context);
-	}
+    return SilicosisSocioBehavioralBooleanRiskFactorObservationOperations.validateSocialHistoryObservationTemplateId(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public SilicosisSocioBehavioralBooleanRiskFactorObservation init() {
-    	CDAUtil.init(this);
-    	return this;
-	}
+      return Initializer.Util.init(this);
+  }
+
+  /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    public SilicosisSocioBehavioralBooleanRiskFactorObservation init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
 } //SilicosisSocioBehavioralBooleanRiskFactorObservationImpl

@@ -82,7 +82,6 @@ public class EMSMedicationsAdministeredSectionOperations extends SectionOperatio
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.17.3.10.1.18')
    * @param emsMedicationsAdministeredSection The receiving '<em><b>EMS Medications Administered Section</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -127,7 +126,6 @@ public class EMSMedicationsAdministeredSectionOperations extends SectionOperatio
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * (self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined())
    * @param emsMedicationsAdministeredSection The receiving '<em><b>EMS Medications Administered Section</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -217,9 +215,6 @@ public class EMSMedicationsAdministeredSectionOperations extends SectionOperatio
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * (self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and 
-   * let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in 
-   * value.code = '67849-0' and value.codeSystem = '2.16.840.1.113883.6.1')
    * @param emsMedicationsAdministeredSection The receiving '<em><b>EMS Medications Administered Section</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -264,7 +259,6 @@ public class EMSMedicationsAdministeredSectionOperations extends SectionOperatio
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * not self.text.oclIsUndefined()
    * @param emsMedicationsAdministeredSection The receiving '<em><b>EMS Medications Administered Section</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -352,7 +346,6 @@ public class EMSMedicationsAdministeredSectionOperations extends SectionOperatio
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * (self.title.oclIsUndefined() or self.title.isNullFlavorUndefined()) implies (not self.title.oclIsUndefined() and self.title.getText() = 'Medications Administered Section')
    * @param emsMedicationsAdministeredSection The receiving '<em><b>EMS Medications Administered Section</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -401,7 +394,7 @@ public class EMSMedicationsAdministeredSectionOperations extends SectionOperatio
    * @generated
    * @ordered
    */
-  protected static final String VALIDATE_EMS_MEDICATIONS_ADMINISTERED_SECTION_ENTRY1__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entry->one(entry : cda::Entry | not entry.oclIsUndefined() and entry.oclIsKindOf(emspcr::EMSMedicationsAdministeredSection::DerivedEntry))";
+  protected static final String VALIDATE_EMS_MEDICATIONS_ADMINISTERED_SECTION_ENTRY1__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entry->one(entry : cda::Entry | not entry.oclIsUndefined() and entry.oclIsKindOf(emspcr::DerivedEntry))";
 
   /**
    * The cached OCL invariant for the '{@link #validateEMSMedicationsAdministeredSectionEntry1(EMSMedicationsAdministeredSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate EMS Medications Administered Section Entry1</em>}' invariant operation.
@@ -419,7 +412,6 @@ public class EMSMedicationsAdministeredSectionOperations extends SectionOperatio
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.entry->one(entry : cda::Entry | not entry.oclIsUndefined() and entry.oclIsKindOf(emspcr::EMSMedicationsAdministeredSection::DerivedEntry))
    * @param emsMedicationsAdministeredSection The receiving '<em><b>EMS Medications Administered Section</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.

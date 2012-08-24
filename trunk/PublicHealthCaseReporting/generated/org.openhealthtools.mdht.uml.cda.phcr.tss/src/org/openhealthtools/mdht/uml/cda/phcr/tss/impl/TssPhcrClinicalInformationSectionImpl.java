@@ -10,12 +10,15 @@
  *******************************************************************************/
 package org.openhealthtools.mdht.uml.cda.phcr.tss.impl;
 
+import java.lang.Iterable;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
 
 import org.eclipse.emf.ecore.EClass;
 
+import org.eclipse.emf.ecore.EObject;
+import org.openhealthtools.mdht.emf.runtime.util.Initializer;
 import org.openhealthtools.mdht.uml.cda.phcr.impl.PhcrClinicalInformationSectionImpl;
 
 import org.openhealthtools.mdht.uml.cda.phcr.tss.TssCaseObservation;
@@ -38,59 +41,68 @@ import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
  */
 public class TssPhcrClinicalInformationSectionImpl extends PhcrClinicalInformationSectionImpl implements TssPhcrClinicalInformationSection {
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	protected TssPhcrClinicalInformationSectionImpl() {
-		super();
-	}
+    super();
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	@Override
 	protected EClass eStaticClass() {
-		return tssPackage.Literals.TSS_PHCR_CLINICAL_INFORMATION_SECTION;
-	}
+    return tssPackage.Literals.TSS_PHCR_CLINICAL_INFORMATION_SECTION;
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateTssPhcrClinicalInformationSectionTssCaseObservation(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return TssPhcrClinicalInformationSectionOperations.validateTssPhcrClinicalInformationSectionTssCaseObservation(this, diagnostics, context);
-	}
+    return TssPhcrClinicalInformationSectionOperations.validateTssPhcrClinicalInformationSectionTssCaseObservation(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public TssCaseObservation getTssCaseObservation() {
-		return TssPhcrClinicalInformationSectionOperations.getTssCaseObservation(this);
-	}
+    return TssPhcrClinicalInformationSectionOperations.getTssCaseObservation(this);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	@Override
 	public boolean validatePhcrClinicalInformationSectionTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return TssPhcrClinicalInformationSectionOperations.validatePhcrClinicalInformationSectionTemplateId(this, diagnostics, context);
-	}
+    return TssPhcrClinicalInformationSectionOperations.validatePhcrClinicalInformationSectionTemplateId(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public TssPhcrClinicalInformationSection init() {
-    	CDAUtil.init(this);
-    	return this;
-	}
+      return Initializer.Util.init(this);
+  }
+
+  /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    public TssPhcrClinicalInformationSection init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
 } //TssPhcrClinicalInformationSectionImpl

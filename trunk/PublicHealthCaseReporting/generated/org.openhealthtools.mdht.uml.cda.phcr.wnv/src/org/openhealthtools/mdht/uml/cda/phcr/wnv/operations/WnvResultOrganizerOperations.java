@@ -45,10 +45,11 @@ import org.openhealthtools.mdht.uml.cda.phcr.wnv.util.WnvValidator;
  * <p>
  * The following operations are supported:
  * <ul>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.phcr.wnv.WnvResultOrganizer#validateWnvResultOrganizerCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Wnv Result Organizer Code P</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.phcr.wnv.WnvResultOrganizer#validateWnvResultOrganizerCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Wnv Result Organizer Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.phcr.wnv.WnvResultOrganizer#validateWnvResultOrganizerWnvResultObservation(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Wnv Result Organizer Wnv Result Observation</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.phcr.wnv.WnvResultOrganizer#getWnvResultObservations() <em>Get Wnv Result Observations</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.phcr.wnv.WnvResultOrganizer#validateResultOrganizerTemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Result Organizer Template Id</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.phcr.wnv.WnvResultOrganizer#validateResultOrganizerCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Result Organizer Code</em>}</li>
  * </ul>
  * </p>
  *
@@ -56,249 +57,340 @@ import org.openhealthtools.mdht.uml.cda.phcr.wnv.util.WnvValidator;
  */
 public class WnvResultOrganizerOperations extends ResultOrganizerOperations {
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	protected WnvResultOrganizerOperations() {
-		super();
-	}
+    super();
+  }
 
 	/**
-	 * The cached OCL expression body for the '{@link #validateWnvResultOrganizerWnvResultObservation(WnvResultOrganizer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Wnv Result Organizer Wnv Result Observation</em>}' operation.
-	 * <!-- begin-user-doc -->
+   * The cached OCL expression body for the '{@link #validateWnvResultOrganizerCodeP(WnvResultOrganizer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Wnv Result Organizer Code P</em>}' operation.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #validateWnvResultOrganizerCodeP(WnvResultOrganizer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+   * @generated
+   * @ordered
+   */
+  protected static final String VALIDATE_WNV_RESULT_ORGANIZER_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined())";
+
+  /**
+   * The cached OCL invariant for the '{@link #validateWnvResultOrganizerCodeP(WnvResultOrganizer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Wnv Result Organizer Code P</em>}' invariant operation.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #validateWnvResultOrganizerCodeP(WnvResultOrganizer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+   * @generated
+   * @ordered
+   */
+  
+  protected static Constraint VALIDATE_WNV_RESULT_ORGANIZER_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * <!-- begin-model-doc -->
+   * @param wnvResultOrganizer The receiving '<em><b>Result Organizer</b></em>' model object.
+   * @param diagnostics The chain of diagnostics to which problems are to be appended.
+   * @param context The cache of context-specific information.
+   * <!-- end-model-doc -->
+   * @generated
+   */
+  
+  public static  boolean validateWnvResultOrganizerCodeP(WnvResultOrganizer wnvResultOrganizer, DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+  	  
+    if (VALIDATE_WNV_RESULT_ORGANIZER_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+      OCL.Helper helper = EOCL_ENV.createOCLHelper();
+      helper.setContext(WnvPackage.Literals.WNV_RESULT_ORGANIZER);
+      try
+      {
+        VALIDATE_WNV_RESULT_ORGANIZER_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_WNV_RESULT_ORGANIZER_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+      }
+      catch (ParserException pe)
+      {
+        throw new UnsupportedOperationException(pe.getLocalizedMessage());
+      }
+    }
+    if (!EOCL_ENV.createQuery(VALIDATE_WNV_RESULT_ORGANIZER_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(wnvResultOrganizer))
+    {
+      if (diagnostics != null)
+      {
+        diagnostics.add
+          (new BasicDiagnostic
+            (Diagnostic.ERROR,
+             WnvValidator.DIAGNOSTIC_SOURCE,
+             WnvValidator.WNV_RESULT_ORGANIZER__WNV_RESULT_ORGANIZER_CODE_P,
+             WnvPlugin.INSTANCE.getString("WnvResultOrganizerCodeP"),
+             new Object [] { wnvResultOrganizer }));
+      }
+      
+      if (context != null) {
+        // generate a pass token for my dependent constraints to short-circuit or filter results
+        @SuppressWarnings("unchecked")
+        Collection<Object> passToken = (Collection<Object>) context.get("org.openhealthtools.mdht.uml.cda.phcr.wnv.WnvResultOrganizerCodeP");
+        if (passToken == null) {
+          // anticipate a reasonably healthy model
+          passToken = new java.util.ArrayList<Object>(3);
+          context.put("org.openhealthtools.mdht.uml.cda.phcr.wnv.WnvResultOrganizerCodeP", passToken);
+        }
+        passToken.add(wnvResultOrganizer);
+      }
+       
+      return false;
+    }
+    return true;
+  }
+
+  /**
+   * The cached OCL expression body for the '{@link #validateWnvResultOrganizerCode(WnvResultOrganizer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Wnv Result Organizer Code</em>}' operation.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #validateWnvResultOrganizerCode(WnvResultOrganizer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+   * @generated
+   * @ordered
+   */
+  protected static final String VALIDATE_WNV_RESULT_ORGANIZER_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and "+
+"let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in "+
+"not value.code.oclIsUndefined())";
+
+  /**
+   * The cached OCL invariant for the '{@link #validateWnvResultOrganizerCode(WnvResultOrganizer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Wnv Result Organizer Code</em>}' invariant operation.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #validateWnvResultOrganizerCode(WnvResultOrganizer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+   * @generated
+   * @ordered
+   */
+  
+  protected static Constraint VALIDATE_WNV_RESULT_ORGANIZER_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * <!-- begin-model-doc -->
+   * @param wnvResultOrganizer The receiving '<em><b>Result Organizer</b></em>' model object.
+   * @param diagnostics The chain of diagnostics to which problems are to be appended.
+   * @param context The cache of context-specific information.
+   * <!-- end-model-doc -->
+   * @generated
+   */
+  
+  public static  boolean validateWnvResultOrganizerCode(WnvResultOrganizer wnvResultOrganizer, DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+  	  
+    Object passToken = (context == null) ? null : context.get("org.openhealthtools.mdht.uml.cda.phcr.wnv.WnvResultOrganizerCodeP");
+    if ((passToken instanceof Collection<?>) && ((Collection<?>) passToken).contains(wnvResultOrganizer)) {
+      // I have a free pass to short-circuit
+      return true;
+    }
+  	  
+    if (VALIDATE_WNV_RESULT_ORGANIZER_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+      OCL.Helper helper = EOCL_ENV.createOCLHelper();
+      helper.setContext(WnvPackage.Literals.WNV_RESULT_ORGANIZER);
+      try
+      {
+        VALIDATE_WNV_RESULT_ORGANIZER_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_WNV_RESULT_ORGANIZER_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+      }
+      catch (ParserException pe)
+      {
+        throw new UnsupportedOperationException(pe.getLocalizedMessage());
+      }
+    }
+    if (!EOCL_ENV.createQuery(VALIDATE_WNV_RESULT_ORGANIZER_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(wnvResultOrganizer))
+    {
+      if (diagnostics != null)
+      {
+        diagnostics.add
+          (new BasicDiagnostic
+            (Diagnostic.ERROR,
+             WnvValidator.DIAGNOSTIC_SOURCE,
+             WnvValidator.WNV_RESULT_ORGANIZER__WNV_RESULT_ORGANIZER_CODE,
+             WnvPlugin.INSTANCE.getString("WnvResultOrganizerCode"),
+             new Object [] { wnvResultOrganizer }));
+      }
+       
+      return false;
+    }
+    return true;
+  }
+
+  /**
+   * The cached OCL expression body for the '{@link #validateWnvResultOrganizerWnvResultObservation(WnvResultOrganizer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Wnv Result Organizer Wnv Result Observation</em>}' operation.
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateWnvResultOrganizerWnvResultObservation(WnvResultOrganizer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
+   * @see #validateWnvResultOrganizerWnvResultObservation(WnvResultOrganizer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+   * @generated
+   * @ordered
+   */
 	protected static final String VALIDATE_WNV_RESULT_ORGANIZER_WNV_RESULT_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.component->exists(component : cda::Component4 | not component.observation.oclIsUndefined() and component.observation.oclIsKindOf(wnv::WnvResultObservation))";
 
 	/**
-	 * The cached OCL invariant for the '{@link #validateWnvResultOrganizerWnvResultObservation(WnvResultOrganizer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Wnv Result Organizer Wnv Result Observation</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
+   * The cached OCL invariant for the '{@link #validateWnvResultOrganizerWnvResultObservation(WnvResultOrganizer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Wnv Result Organizer Wnv Result Observation</em>}' invariant operation.
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateWnvResultOrganizerWnvResultObservation(WnvResultOrganizer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
+   * @see #validateWnvResultOrganizerWnvResultObservation(WnvResultOrganizer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+   * @generated
+   * @ordered
+   */
 	
 	protected static Constraint VALIDATE_WNV_RESULT_ORGANIZER_WNV_RESULT_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 	
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.component->exists(component : cda::Component4 | not component.observation.oclIsUndefined() and component.observation.oclIsKindOf(wnv::WnvResultObservation))
-	 * @param wnvResultOrganizer The receiving '<em><b>Result Organizer</b></em>' model object.
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
+   * <!-- begin-model-doc -->
+   * @param wnvResultOrganizer The receiving '<em><b>Result Organizer</b></em>' model object.
+   * @param diagnostics The chain of diagnostics to which problems are to be appended.
+   * @param context The cache of context-specific information.
+   * <!-- end-model-doc -->
+   * @generated
+   */
 	
 	public static  boolean validateWnvResultOrganizerWnvResultObservation(WnvResultOrganizer wnvResultOrganizer, DiagnosticChain diagnostics, Map<Object, Object> context) {
   	  
-		if (VALIDATE_WNV_RESULT_ORGANIZER_WNV_RESULT_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setContext(WnvPackage.Literals.WNV_RESULT_ORGANIZER);
-			try {
-				VALIDATE_WNV_RESULT_ORGANIZER_WNV_RESULT_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_WNV_RESULT_ORGANIZER_WNV_RESULT_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
-				throw new UnsupportedOperationException(pe.getLocalizedMessage());
-			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_WNV_RESULT_ORGANIZER_WNV_RESULT_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(wnvResultOrganizer)) {
-			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 WnvValidator.DIAGNOSTIC_SOURCE,
-						 WnvValidator.WNV_RESULT_ORGANIZER__WNV_RESULT_ORGANIZER_WNV_RESULT_OBSERVATION,
-						 WnvPlugin.INSTANCE.getString("WnvResultOrganizerWnvResultObservation"),
-						 new Object [] { wnvResultOrganizer }));
-			}
-			 
-			return false;
-		}
-		return true;
-	}
+    if (VALIDATE_WNV_RESULT_ORGANIZER_WNV_RESULT_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+      OCL.Helper helper = EOCL_ENV.createOCLHelper();
+      helper.setContext(WnvPackage.Literals.WNV_RESULT_ORGANIZER);
+      try
+      {
+        VALIDATE_WNV_RESULT_ORGANIZER_WNV_RESULT_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_WNV_RESULT_ORGANIZER_WNV_RESULT_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+      }
+      catch (ParserException pe)
+      {
+        throw new UnsupportedOperationException(pe.getLocalizedMessage());
+      }
+    }
+    if (!EOCL_ENV.createQuery(VALIDATE_WNV_RESULT_ORGANIZER_WNV_RESULT_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(wnvResultOrganizer))
+    {
+      if (diagnostics != null)
+      {
+        diagnostics.add
+          (new BasicDiagnostic
+            (Diagnostic.ERROR,
+             WnvValidator.DIAGNOSTIC_SOURCE,
+             WnvValidator.WNV_RESULT_ORGANIZER__WNV_RESULT_ORGANIZER_WNV_RESULT_OBSERVATION,
+             WnvPlugin.INSTANCE.getString("WnvResultOrganizerWnvResultObservation"),
+             new Object [] { wnvResultOrganizer }));
+      }
+       
+      return false;
+    }
+    return true;
+  }
 
 	/**
-	 * The cached OCL expression body for the '{@link #getWnvResultObservations(WnvResultOrganizer) <em>Get Wnv Result Observations</em>}' operation.
-	 * <!-- begin-user-doc -->
+   * The cached OCL expression body for the '{@link #getWnvResultObservations(WnvResultOrganizer) <em>Get Wnv Result Observations</em>}' operation.
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getWnvResultObservations(WnvResultOrganizer)
-	 * @generated
-	 * @ordered
-	 */
+   * @see #getWnvResultObservations(WnvResultOrganizer)
+   * @generated
+   * @ordered
+   */
 	protected static final String GET_WNV_RESULT_OBSERVATIONS__EOCL_EXP = "self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(wnv::WnvResultObservation)).oclAsType(wnv::WnvResultObservation)";
 
 	/**
-	 * The cached OCL query for the '{@link #getWnvResultObservations(WnvResultOrganizer) <em>Get Wnv Result Observations</em>}' query operation.
-	 * <!-- begin-user-doc -->
+   * The cached OCL query for the '{@link #getWnvResultObservations(WnvResultOrganizer) <em>Get Wnv Result Observations</em>}' query operation.
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getWnvResultObservations(WnvResultOrganizer)
-	 * @generated
-	 * @ordered
-	 */
+   * @see #getWnvResultObservations(WnvResultOrganizer)
+   * @generated
+   * @ordered
+   */
 	protected static OCLExpression<EClassifier> GET_WNV_RESULT_OBSERVATIONS__EOCL_QRY;
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(wnv::WnvResultObservation)).oclAsType(wnv::WnvResultObservation)
-	 * @param wnvResultOrganizer The receiving '<em><b>Result Organizer</b></em>' model object.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	
 	public static  EList<WnvResultObservation> getWnvResultObservations(WnvResultOrganizer wnvResultOrganizer) {
-		if (GET_WNV_RESULT_OBSERVATIONS__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(WnvPackage.Literals.WNV_RESULT_ORGANIZER, WnvPackage.Literals.WNV_RESULT_ORGANIZER.getEAllOperations().get(73));
-			try {
-				GET_WNV_RESULT_OBSERVATIONS__EOCL_QRY = helper.createQuery(GET_WNV_RESULT_OBSERVATIONS__EOCL_EXP);
-			}
-			catch (ParserException pe) {
-				throw new UnsupportedOperationException(pe.getLocalizedMessage());
-			}
-		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_WNV_RESULT_OBSERVATIONS__EOCL_QRY);
-		@SuppressWarnings("unchecked")
-		Collection<WnvResultObservation> result = (Collection<WnvResultObservation>) query.evaluate(wnvResultOrganizer);
-		return new BasicEList.UnmodifiableEList<WnvResultObservation>(result.size(), result.toArray());
-	}
+    if (GET_WNV_RESULT_OBSERVATIONS__EOCL_QRY == null)
+    {
+      OCL.Helper helper = EOCL_ENV.createOCLHelper();
+      helper.setOperationContext(WnvPackage.Literals.WNV_RESULT_ORGANIZER, WnvPackage.Literals.WNV_RESULT_ORGANIZER.getEAllOperations().get(77));
+      try
+      {
+        GET_WNV_RESULT_OBSERVATIONS__EOCL_QRY = helper.createQuery(GET_WNV_RESULT_OBSERVATIONS__EOCL_EXP);
+      }
+      catch (ParserException pe)
+      {
+        throw new UnsupportedOperationException(pe.getLocalizedMessage());
+      }
+    }
+    OCL.Query query = EOCL_ENV.createQuery(GET_WNV_RESULT_OBSERVATIONS__EOCL_QRY);
+    @SuppressWarnings("unchecked")
+    Collection<WnvResultObservation> result = (Collection<WnvResultObservation>) query.evaluate(wnvResultOrganizer);
+    return new BasicEList.UnmodifiableEList<WnvResultObservation>(result.size(), result.toArray());
+  }
 
 	/**
-	 * The cached OCL expression body for the '{@link #validateResultOrganizerTemplateId(WnvResultOrganizer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Result Organizer Template Id</em>}' operation.
-	 * <!-- begin-user-doc -->
+   * The cached OCL expression body for the '{@link #validateResultOrganizerTemplateId(WnvResultOrganizer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Result Organizer Template Id</em>}' operation.
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateResultOrganizerTemplateId(WnvResultOrganizer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
+   * @see #validateResultOrganizerTemplateId(WnvResultOrganizer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+   * @generated
+   * @ordered
+   */
 	protected static final String VALIDATE_RESULT_ORGANIZER_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.15.3.105')";
 
 	/**
-	 * The cached OCL invariant for the '{@link #validateResultOrganizerTemplateId(WnvResultOrganizer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Result Organizer Template Id</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
+   * The cached OCL invariant for the '{@link #validateResultOrganizerTemplateId(WnvResultOrganizer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Result Organizer Template Id</em>}' invariant operation.
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateResultOrganizerTemplateId(WnvResultOrganizer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
+   * @see #validateResultOrganizerTemplateId(WnvResultOrganizer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+   * @generated
+   * @ordered
+   */
 	
 	protected static Constraint VALIDATE_RESULT_ORGANIZER_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 	
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.15.3.105')
-	 * @param wnvResultOrganizer The receiving '<em><b>Result Organizer</b></em>' model object.
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
+   * <!-- begin-model-doc -->
+   * @param wnvResultOrganizer The receiving '<em><b>Result Organizer</b></em>' model object.
+   * @param diagnostics The chain of diagnostics to which problems are to be appended.
+   * @param context The cache of context-specific information.
+   * <!-- end-model-doc -->
+   * @generated
+   */
 	
 	public static  boolean validateResultOrganizerTemplateId(WnvResultOrganizer wnvResultOrganizer, DiagnosticChain diagnostics, Map<Object, Object> context) {
   	  
-		if (VALIDATE_RESULT_ORGANIZER_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setContext(WnvPackage.Literals.WNV_RESULT_ORGANIZER);
-			try {
-				VALIDATE_RESULT_ORGANIZER_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_RESULT_ORGANIZER_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
-				throw new UnsupportedOperationException(pe.getLocalizedMessage());
-			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_RESULT_ORGANIZER_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(wnvResultOrganizer)) {
-			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 WnvValidator.DIAGNOSTIC_SOURCE,
-						 WnvValidator.WNV_RESULT_ORGANIZER__RESULT_ORGANIZER_TEMPLATE_ID,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "ResultOrganizerTemplateId", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(wnvResultOrganizer, context) }),
-						 new Object [] { wnvResultOrganizer }));
-			}
-			 
-			return false;
-		}
-		return true;
-	}
-
-	/**
-	 * The cached OCL expression body for the '{@link #validateResultOrganizerCode(WnvResultOrganizer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Result Organizer Code</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #validateResultOrganizerCode(WnvResultOrganizer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
-	protected static final String VALIDATE_RESULT_ORGANIZER_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and "+
-"let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in ("+
-"not value.code.oclIsUndefined()))";
-
-	/**
-	 * The cached OCL invariant for the '{@link #validateResultOrganizerCode(WnvResultOrganizer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Result Organizer Code</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #validateResultOrganizerCode(WnvResultOrganizer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
-	
-	protected static Constraint VALIDATE_RESULT_ORGANIZER_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-	
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * (self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and 
-	 * let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in (
-	 * not value.code.oclIsUndefined()))
-	 * @param wnvResultOrganizer The receiving '<em><b>Result Organizer</b></em>' model object.
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
-	
-	public static  boolean validateResultOrganizerCode(WnvResultOrganizer wnvResultOrganizer, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
-		if (VALIDATE_RESULT_ORGANIZER_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setContext(WnvPackage.Literals.WNV_RESULT_ORGANIZER);
-			try {
-				VALIDATE_RESULT_ORGANIZER_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_RESULT_ORGANIZER_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
-				throw new UnsupportedOperationException(pe.getLocalizedMessage());
-			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_RESULT_ORGANIZER_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(wnvResultOrganizer)) {
-			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 WnvValidator.DIAGNOSTIC_SOURCE,
-						 WnvValidator.WNV_RESULT_ORGANIZER__RESULT_ORGANIZER_CODE,
-						 WnvPlugin.INSTANCE.getString("ResultOrganizerCode"),
-						 new Object [] { wnvResultOrganizer }));
-			}
-			 
-			return false;
-		}
-		return true;
-	}
+    if (VALIDATE_RESULT_ORGANIZER_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+      OCL.Helper helper = EOCL_ENV.createOCLHelper();
+      helper.setContext(WnvPackage.Literals.WNV_RESULT_ORGANIZER);
+      try
+      {
+        VALIDATE_RESULT_ORGANIZER_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_RESULT_ORGANIZER_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+      }
+      catch (ParserException pe)
+      {
+        throw new UnsupportedOperationException(pe.getLocalizedMessage());
+      }
+    }
+    if (!EOCL_ENV.createQuery(VALIDATE_RESULT_ORGANIZER_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(wnvResultOrganizer))
+    {
+      if (diagnostics != null)
+      {
+        diagnostics.add
+          (new BasicDiagnostic
+            (Diagnostic.ERROR,
+             WnvValidator.DIAGNOSTIC_SOURCE,
+             WnvValidator.WNV_RESULT_ORGANIZER__RESULT_ORGANIZER_TEMPLATE_ID,
+             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "ResultOrganizerTemplateId", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(wnvResultOrganizer, context) }),
+             new Object [] { wnvResultOrganizer }));
+      }
+       
+      return false;
+    }
+    return true;
+  }
 
 } // WnvResultOrganizerOperations

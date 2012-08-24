@@ -10,6 +10,9 @@
  *******************************************************************************/
 package org.openhealthtools.mdht.uml.cda.phcr.chlamydiatrachomatis;
 
+import java.lang.Iterable;
+import org.eclipse.emf.ecore.EObject;
+import org.openhealthtools.mdht.emf.runtime.util.Initializer;
 import org.openhealthtools.mdht.uml.cda.phcr.TreatmentNotGivenSubstanceAdministration;
 
 /**
@@ -19,14 +22,21 @@ import org.openhealthtools.mdht.uml.cda.phcr.TreatmentNotGivenSubstanceAdministr
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.phcr.chlamydiatrachomatis.ChlamydiatrachomatisPackage#getChlamydiatrachomatisTreatmentNotGivenSubstanceAdministration()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation templateId.root='2.16.840.1.113883.10.20.15.3.133' constraints.validation.error='ChlamydiatrachomatisTreatmentNotGivenSubstanceAdministrationTemplateId'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='ChlamydiatrachomatisTreatmentNotGivenSubstanceAdministrationTemplateId' templateId.root='2.16.840.1.113883.10.20.15.3.133'"
  * @generated
  */
 public interface ChlamydiatrachomatisTreatmentNotGivenSubstanceAdministration extends TreatmentNotGivenSubstanceAdministration {
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public ChlamydiatrachomatisTreatmentNotGivenSubstanceAdministration init();
+
+  /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    public ChlamydiatrachomatisTreatmentNotGivenSubstanceAdministration init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // ChlamydiatrachomatisTreatmentNotGivenSubstanceAdministration

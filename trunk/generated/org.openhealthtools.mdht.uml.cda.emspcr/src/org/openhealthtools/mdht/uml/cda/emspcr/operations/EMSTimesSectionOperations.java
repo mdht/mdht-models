@@ -88,7 +88,6 @@ public class EMSTimesSectionOperations extends SectionOperations
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.17.3.10.1.10')
    * @param emsTimesSection The receiving '<em><b>EMS Times Section</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -157,9 +156,6 @@ public class EMSTimesSectionOperations extends SectionOperations
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * (self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and 
-   * let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in 
-   * value.code = '67667-6' and value.codeSystem = '2.16.840.1.113883.6.1')
    * @param emsTimesSection The receiving '<em><b>EMS Times Section</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -204,7 +200,6 @@ public class EMSTimesSectionOperations extends SectionOperations
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * not self.text.oclIsUndefined()
    * @param emsTimesSection The receiving '<em><b>EMS Times Section</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -292,7 +287,6 @@ public class EMSTimesSectionOperations extends SectionOperations
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * (self.title.oclIsUndefined() or self.title.isNullFlavorUndefined()) implies (not self.title.oclIsUndefined() and self.title.getText() = 'EMS Times')
    * @param emsTimesSection The receiving '<em><b>EMS Times Section</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -341,7 +335,7 @@ public class EMSTimesSectionOperations extends SectionOperations
    * @generated
    * @ordered
    */
-  protected static final String VALIDATE_EMS_TIMES_SECTION_ENTRY1__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entry->one(entry : cda::Entry | not entry.oclIsUndefined() and entry.oclIsKindOf(emspcr::EMSTimesSection::DerivedEntry))";
+  protected static final String VALIDATE_EMS_TIMES_SECTION_ENTRY1__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entry->one(entry : cda::Entry | not entry.oclIsUndefined() and entry.oclIsKindOf(emspcr::DerivedEntry))";
 
   /**
    * The cached OCL invariant for the '{@link #validateEMSTimesSectionEntry1(EMSTimesSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate EMS Times Section Entry1</em>}' invariant operation.
@@ -359,7 +353,6 @@ public class EMSTimesSectionOperations extends SectionOperations
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.entry->one(entry : cda::Entry | not entry.oclIsUndefined() and entry.oclIsKindOf(emspcr::EMSTimesSection::DerivedEntry))
    * @param emsTimesSection The receiving '<em><b>EMS Times Section</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -408,7 +401,7 @@ public class EMSTimesSectionOperations extends SectionOperations
    * @generated
    * @ordered
    */
-  protected static final String VALIDATE_EMS_TIMES_SECTION_ENTRY2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entry->one(entry : cda::Entry | not entry.oclIsUndefined() and entry.oclIsKindOf(emspcr::EMSTimesSection::DerivedEntry))";
+  protected static final String VALIDATE_EMS_TIMES_SECTION_ENTRY2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entry->one(entry : cda::Entry | not entry.oclIsUndefined() and entry.oclIsKindOf(emspcr::DerivedEntry))";
 
   /**
    * The cached OCL invariant for the '{@link #validateEMSTimesSectionEntry2(EMSTimesSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate EMS Times Section Entry2</em>}' invariant operation.
@@ -426,7 +419,6 @@ public class EMSTimesSectionOperations extends SectionOperations
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.entry->one(entry : cda::Entry | not entry.oclIsUndefined() and entry.oclIsKindOf(emspcr::EMSTimesSection::DerivedEntry))
    * @param emsTimesSection The receiving '<em><b>EMS Times Section</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -475,7 +467,7 @@ public class EMSTimesSectionOperations extends SectionOperations
    * @generated
    * @ordered
    */
-  protected static final String VALIDATE_EMS_TIMES_SECTION_ENTRY3__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entry->one(entry : cda::Entry | not entry.oclIsUndefined() and entry.oclIsKindOf(emspcr::EMSTimesSection::DerivedEntry))";
+  protected static final String VALIDATE_EMS_TIMES_SECTION_ENTRY3__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entry->one(entry : cda::Entry | not entry.oclIsUndefined() and entry.oclIsKindOf(emspcr::DerivedEntry))";
 
   /**
    * The cached OCL invariant for the '{@link #validateEMSTimesSectionEntry3(EMSTimesSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate EMS Times Section Entry3</em>}' invariant operation.
@@ -493,7 +485,6 @@ public class EMSTimesSectionOperations extends SectionOperations
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.entry->one(entry : cda::Entry | not entry.oclIsUndefined() and entry.oclIsKindOf(emspcr::EMSTimesSection::DerivedEntry))
    * @param emsTimesSection The receiving '<em><b>EMS Times Section</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -542,7 +533,7 @@ public class EMSTimesSectionOperations extends SectionOperations
    * @generated
    * @ordered
    */
-  protected static final String VALIDATE_EMS_TIMES_SECTION_ENTRY4__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entry->one(entry : cda::Entry | not entry.oclIsUndefined() and entry.oclIsKindOf(emspcr::EMSTimesSection::DerivedEntry))";
+  protected static final String VALIDATE_EMS_TIMES_SECTION_ENTRY4__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entry->one(entry : cda::Entry | not entry.oclIsUndefined() and entry.oclIsKindOf(emspcr::DerivedEntry))";
 
   /**
    * The cached OCL invariant for the '{@link #validateEMSTimesSectionEntry4(EMSTimesSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate EMS Times Section Entry4</em>}' invariant operation.
@@ -560,7 +551,6 @@ public class EMSTimesSectionOperations extends SectionOperations
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.entry->one(entry : cda::Entry | not entry.oclIsUndefined() and entry.oclIsKindOf(emspcr::EMSTimesSection::DerivedEntry))
    * @param emsTimesSection The receiving '<em><b>EMS Times Section</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -609,7 +599,7 @@ public class EMSTimesSectionOperations extends SectionOperations
    * @generated
    * @ordered
    */
-  protected static final String VALIDATE_EMS_TIMES_SECTION_ENTRY5__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entry->one(entry : cda::Entry | not entry.oclIsUndefined() and entry.oclIsKindOf(emspcr::EMSTimesSection::DerivedEntry))";
+  protected static final String VALIDATE_EMS_TIMES_SECTION_ENTRY5__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entry->one(entry : cda::Entry | not entry.oclIsUndefined() and entry.oclIsKindOf(emspcr::DerivedEntry))";
 
   /**
    * The cached OCL invariant for the '{@link #validateEMSTimesSectionEntry5(EMSTimesSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate EMS Times Section Entry5</em>}' invariant operation.
@@ -627,7 +617,6 @@ public class EMSTimesSectionOperations extends SectionOperations
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.entry->one(entry : cda::Entry | not entry.oclIsUndefined() and entry.oclIsKindOf(emspcr::EMSTimesSection::DerivedEntry))
    * @param emsTimesSection The receiving '<em><b>EMS Times Section</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -676,7 +665,7 @@ public class EMSTimesSectionOperations extends SectionOperations
    * @generated
    * @ordered
    */
-  protected static final String VALIDATE_EMS_TIMES_SECTION_ENTRY6__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entry->one(entry : cda::Entry | not entry.oclIsUndefined() and entry.oclIsKindOf(emspcr::EMSTimesSection::DerivedEntry))";
+  protected static final String VALIDATE_EMS_TIMES_SECTION_ENTRY6__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entry->one(entry : cda::Entry | not entry.oclIsUndefined() and entry.oclIsKindOf(emspcr::DerivedEntry))";
 
   /**
    * The cached OCL invariant for the '{@link #validateEMSTimesSectionEntry6(EMSTimesSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate EMS Times Section Entry6</em>}' invariant operation.
@@ -694,7 +683,6 @@ public class EMSTimesSectionOperations extends SectionOperations
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.entry->one(entry : cda::Entry | not entry.oclIsUndefined() and entry.oclIsKindOf(emspcr::EMSTimesSection::DerivedEntry))
    * @param emsTimesSection The receiving '<em><b>EMS Times Section</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -743,7 +731,7 @@ public class EMSTimesSectionOperations extends SectionOperations
    * @generated
    * @ordered
    */
-  protected static final String VALIDATE_EMS_TIMES_SECTION_ENTRY7__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entry->one(entry : cda::Entry | not entry.oclIsUndefined() and entry.oclIsKindOf(emspcr::EMSTimesSection::DerivedEntry))";
+  protected static final String VALIDATE_EMS_TIMES_SECTION_ENTRY7__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entry->one(entry : cda::Entry | not entry.oclIsUndefined() and entry.oclIsKindOf(emspcr::DerivedEntry))";
 
   /**
    * The cached OCL invariant for the '{@link #validateEMSTimesSectionEntry7(EMSTimesSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate EMS Times Section Entry7</em>}' invariant operation.
@@ -761,7 +749,6 @@ public class EMSTimesSectionOperations extends SectionOperations
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.entry->one(entry : cda::Entry | not entry.oclIsUndefined() and entry.oclIsKindOf(emspcr::EMSTimesSection::DerivedEntry))
    * @param emsTimesSection The receiving '<em><b>EMS Times Section</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -810,7 +797,7 @@ public class EMSTimesSectionOperations extends SectionOperations
    * @generated
    * @ordered
    */
-  protected static final String VALIDATE_EMS_TIMES_SECTION_ENTRY8__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entry->one(entry : cda::Entry | not entry.oclIsUndefined() and entry.oclIsKindOf(emspcr::EMSTimesSection::DerivedEntry))";
+  protected static final String VALIDATE_EMS_TIMES_SECTION_ENTRY8__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entry->one(entry : cda::Entry | not entry.oclIsUndefined() and entry.oclIsKindOf(emspcr::DerivedEntry))";
 
   /**
    * The cached OCL invariant for the '{@link #validateEMSTimesSectionEntry8(EMSTimesSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate EMS Times Section Entry8</em>}' invariant operation.
@@ -828,7 +815,6 @@ public class EMSTimesSectionOperations extends SectionOperations
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.entry->one(entry : cda::Entry | not entry.oclIsUndefined() and entry.oclIsKindOf(emspcr::EMSTimesSection::DerivedEntry))
    * @param emsTimesSection The receiving '<em><b>EMS Times Section</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -877,7 +863,7 @@ public class EMSTimesSectionOperations extends SectionOperations
    * @generated
    * @ordered
    */
-  protected static final String VALIDATE_EMS_TIMES_SECTION_ENTRY9__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entry->one(entry : cda::Entry | not entry.oclIsUndefined() and entry.oclIsKindOf(emspcr::EMSTimesSection::DerivedEntry))";
+  protected static final String VALIDATE_EMS_TIMES_SECTION_ENTRY9__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entry->one(entry : cda::Entry | not entry.oclIsUndefined() and entry.oclIsKindOf(emspcr::DerivedEntry))";
 
   /**
    * The cached OCL invariant for the '{@link #validateEMSTimesSectionEntry9(EMSTimesSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate EMS Times Section Entry9</em>}' invariant operation.
@@ -895,7 +881,6 @@ public class EMSTimesSectionOperations extends SectionOperations
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.entry->one(entry : cda::Entry | not entry.oclIsUndefined() and entry.oclIsKindOf(emspcr::EMSTimesSection::DerivedEntry))
    * @param emsTimesSection The receiving '<em><b>EMS Times Section</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.

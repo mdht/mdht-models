@@ -10,10 +10,13 @@
  *******************************************************************************/
 package org.openhealthtools.mdht.uml.cda.phcr.impl;
 
+import java.lang.Iterable;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.ecore.EClass;
+import org.eclipse.emf.ecore.EObject;
+import org.openhealthtools.mdht.emf.runtime.util.Initializer;
 import org.openhealthtools.mdht.uml.cda.impl.ObservationImpl;
 import org.openhealthtools.mdht.uml.cda.phcr.PatientConditionDeceasedObservation;
 import org.openhealthtools.mdht.uml.cda.phcr.PhcrPackage;
@@ -31,121 +34,130 @@ import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
  */
 public class PatientConditionDeceasedObservationImpl extends ObservationImpl implements PatientConditionDeceasedObservation {
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	protected PatientConditionDeceasedObservationImpl() {
-		super();
-	}
+    super();
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	@Override
 	protected EClass eStaticClass() {
-		return PhcrPackage.Literals.PATIENT_CONDITION_DECEASED_OBSERVATION;
-	}
+    return PhcrPackage.Literals.PATIENT_CONDITION_DECEASED_OBSERVATION;
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validatePatientConditionDeceasedObservationTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return PatientConditionDeceasedObservationOperations.validatePatientConditionDeceasedObservationTemplateId(this, diagnostics, context);
-	}
+    return PatientConditionDeceasedObservationOperations.validatePatientConditionDeceasedObservationTemplateId(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validatePatientConditionDeceasedObservationClassCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return PatientConditionDeceasedObservationOperations.validatePatientConditionDeceasedObservationClassCode(this, diagnostics, context);
-	}
+    return PatientConditionDeceasedObservationOperations.validatePatientConditionDeceasedObservationClassCode(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validatePatientConditionDeceasedObservationCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return PatientConditionDeceasedObservationOperations.validatePatientConditionDeceasedObservationCode(this, diagnostics, context);
-	}
+    return PatientConditionDeceasedObservationOperations.validatePatientConditionDeceasedObservationCode(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validatePatientConditionDeceasedObservationMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return PatientConditionDeceasedObservationOperations.validatePatientConditionDeceasedObservationMoodCode(this, diagnostics, context);
-	}
+    return PatientConditionDeceasedObservationOperations.validatePatientConditionDeceasedObservationMoodCode(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validatePatientConditionDeceasedObservationCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return PatientConditionDeceasedObservationOperations.validatePatientConditionDeceasedObservationCodeP(this, diagnostics, context);
-	}
+    return PatientConditionDeceasedObservationOperations.validatePatientConditionDeceasedObservationCodeP(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validatePatientConditionDeceasedObservationStatusCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return PatientConditionDeceasedObservationOperations.validatePatientConditionDeceasedObservationStatusCode(this, diagnostics, context);
-	}
+    return PatientConditionDeceasedObservationOperations.validatePatientConditionDeceasedObservationStatusCode(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validatePatientConditionDeceasedObservationStatusCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return PatientConditionDeceasedObservationOperations.validatePatientConditionDeceasedObservationStatusCodeP(this, diagnostics, context);
-	}
+    return PatientConditionDeceasedObservationOperations.validatePatientConditionDeceasedObservationStatusCodeP(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validatePatientConditionDeceasedObservationValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return PatientConditionDeceasedObservationOperations.validatePatientConditionDeceasedObservationValue(this, diagnostics, context);
-	}
+    return PatientConditionDeceasedObservationOperations.validatePatientConditionDeceasedObservationValue(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validatePatientConditionDeceasedObservationValueP(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return PatientConditionDeceasedObservationOperations.validatePatientConditionDeceasedObservationValueP(this, diagnostics, context);
-	}
+    return PatientConditionDeceasedObservationOperations.validatePatientConditionDeceasedObservationValueP(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validatePatientConditionDeceasedObservationEffectiveTime(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return PatientConditionDeceasedObservationOperations.validatePatientConditionDeceasedObservationEffectiveTime(this, diagnostics, context);
-	}
+    return PatientConditionDeceasedObservationOperations.validatePatientConditionDeceasedObservationEffectiveTime(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public PatientConditionDeceasedObservation init() {
-    	CDAUtil.init(this);
-    	return this;
-	}
+      return Initializer.Util.init(this);
+  }
+
+  /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    public PatientConditionDeceasedObservation init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
 } //PatientConditionDeceasedObservationImpl

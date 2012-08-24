@@ -10,12 +10,15 @@
  *******************************************************************************/
 package org.openhealthtools.mdht.uml.cda.phcr.anthrax.impl;
 
+import java.lang.Iterable;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
 
 import org.eclipse.emf.ecore.EClass;
 
+import org.eclipse.emf.ecore.EObject;
+import org.openhealthtools.mdht.emf.runtime.util.Initializer;
 import org.openhealthtools.mdht.uml.cda.impl.ActImpl;
 
 import org.openhealthtools.mdht.uml.cda.phcr.anthrax.AnthraxPackage;
@@ -36,76 +39,85 @@ import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
  */
 public class AnthraxPossibleExpossureLocationAndTypeActImpl extends ActImpl implements AnthraxPossibleExpossureLocationAndTypeAct {
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	protected AnthraxPossibleExpossureLocationAndTypeActImpl() {
-		super();
-	}
+    super();
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	@Override
 	protected EClass eStaticClass() {
-		return AnthraxPackage.Literals.ANTHRAX_POSSIBLE_EXPOSSURE_LOCATION_AND_TYPE_ACT;
-	}
+    return AnthraxPackage.Literals.ANTHRAX_POSSIBLE_EXPOSSURE_LOCATION_AND_TYPE_ACT;
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateAnthraxPossibleExpossureLocationAndTypeActTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return AnthraxPossibleExpossureLocationAndTypeActOperations.validateAnthraxPossibleExpossureLocationAndTypeActTemplateId(this, diagnostics, context);
-	}
+    return AnthraxPossibleExpossureLocationAndTypeActOperations.validateAnthraxPossibleExpossureLocationAndTypeActTemplateId(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateAnthraxPossibleExpossureLocationAndTypeActClassCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return AnthraxPossibleExpossureLocationAndTypeActOperations.validateAnthraxPossibleExpossureLocationAndTypeActClassCode(this, diagnostics, context);
-	}
+    return AnthraxPossibleExpossureLocationAndTypeActOperations.validateAnthraxPossibleExpossureLocationAndTypeActClassCode(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateAnthraxPossibleExpossureLocationAndTypeActMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return AnthraxPossibleExpossureLocationAndTypeActOperations.validateAnthraxPossibleExpossureLocationAndTypeActMoodCode(this, diagnostics, context);
-	}
+    return AnthraxPossibleExpossureLocationAndTypeActOperations.validateAnthraxPossibleExpossureLocationAndTypeActMoodCode(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateAnthraxPossibleExpossureLocationAndTypeActCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return AnthraxPossibleExpossureLocationAndTypeActOperations.validateAnthraxPossibleExpossureLocationAndTypeActCode(this, diagnostics, context);
-	}
+    return AnthraxPossibleExpossureLocationAndTypeActOperations.validateAnthraxPossibleExpossureLocationAndTypeActCode(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateAnthraxPossibleExpossureLocationAndTypeActStatusCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return AnthraxPossibleExpossureLocationAndTypeActOperations.validateAnthraxPossibleExpossureLocationAndTypeActStatusCode(this, diagnostics, context);
-	}
+    return AnthraxPossibleExpossureLocationAndTypeActOperations.validateAnthraxPossibleExpossureLocationAndTypeActStatusCode(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public AnthraxPossibleExpossureLocationAndTypeAct init() {
-    	CDAUtil.init(this);
-    	return this;
-	}
+      return Initializer.Util.init(this);
+  }
+
+  /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    public AnthraxPossibleExpossureLocationAndTypeAct init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
 } //AnthraxPossibleExpossureLocationAndTypeActImpl

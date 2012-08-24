@@ -6,6 +6,7 @@
  */
 package org.openhealthtools.mdht.uml.cda.sdtm.impl;
 
+import java.lang.Iterable;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
@@ -13,6 +14,8 @@ import org.eclipse.emf.common.util.EList;
 
 import org.eclipse.emf.ecore.EClass;
 
+import org.eclipse.emf.ecore.EObject;
+import org.openhealthtools.mdht.emf.runtime.util.Initializer;
 import org.openhealthtools.mdht.uml.cda.impl.SectionImpl;
 
 import org.openhealthtools.mdht.uml.cda.sdtm.ClinicalEvent;
@@ -141,9 +144,9 @@ public class HumanClinicalSubjectDataDocumentBodyImpl extends SectionImpl implem
    * <!-- end-user-doc -->
    * @generated
    */
-  public boolean validateHumanClinicalSubjectDataDocumentBodyHumanClinicalStudyArm(DiagnosticChain diagnostics, Map<Object, Object> context)
+  public boolean validateHumanClinicalSubjectDataDocumentBodyStudyArm(DiagnosticChain diagnostics, Map<Object, Object> context)
   {
-    return HumanClinicalSubjectDataDocumentBodyOperations.validateHumanClinicalSubjectDataDocumentBodyHumanClinicalStudyArm(this, diagnostics, context);
+    return HumanClinicalSubjectDataDocumentBodyOperations.validateHumanClinicalSubjectDataDocumentBodyStudyArm(this, diagnostics, context);
   }
 
   /**
@@ -281,9 +284,9 @@ public class HumanClinicalSubjectDataDocumentBodyImpl extends SectionImpl implem
    * <!-- end-user-doc -->
    * @generated
    */
-  public StudyArm getHumanClinicalStudyArm()
+  public StudyArm getStudyArm()
   {
-    return HumanClinicalSubjectDataDocumentBodyOperations.getHumanClinicalStudyArm(this);
+    return HumanClinicalSubjectDataDocumentBodyOperations.getStudyArm(this);
   }
 
   /**
@@ -382,7 +385,16 @@ public class HumanClinicalSubjectDataDocumentBodyImpl extends SectionImpl implem
    * @generated
    */
   public HumanClinicalSubjectDataDocumentBody init() {
-    	CDAUtil.init(this);
-    	return this;
+      return Initializer.Util.init(this);
   }
+
+  /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    public HumanClinicalSubjectDataDocumentBody init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
 } //HumanClinicalSubjectDataDocumentBodyImpl

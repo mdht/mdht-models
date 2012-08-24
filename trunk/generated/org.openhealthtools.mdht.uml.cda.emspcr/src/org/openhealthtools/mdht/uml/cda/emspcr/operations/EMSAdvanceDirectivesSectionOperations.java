@@ -80,7 +80,6 @@ public class EMSAdvanceDirectivesSectionOperations extends SectionOperations
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.17.3.10.1.12')
    * @param emsAdvanceDirectivesSection The receiving '<em><b>EMS Advance Directives Section</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -149,9 +148,6 @@ public class EMSAdvanceDirectivesSectionOperations extends SectionOperations
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * (self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and 
-   * let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in 
-   * value.code = '67840-9' and value.codeSystem = '2.16.840.1.113883.6.1')
    * @param emsAdvanceDirectivesSection The receiving '<em><b>EMS Advance Directives Section</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -218,7 +214,6 @@ public class EMSAdvanceDirectivesSectionOperations extends SectionOperations
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * (self.title.oclIsUndefined() or self.title.isNullFlavorUndefined()) implies (not self.title.oclIsUndefined() and self.title.getText() = 'EMS Advance Directives')
    * @param emsAdvanceDirectivesSection The receiving '<em><b>EMS Advance Directives Section</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -285,7 +280,6 @@ public class EMSAdvanceDirectivesSectionOperations extends SectionOperations
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * not self.text.oclIsUndefined()
    * @param emsAdvanceDirectivesSection The receiving '<em><b>EMS Advance Directives Section</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -334,7 +328,7 @@ public class EMSAdvanceDirectivesSectionOperations extends SectionOperations
    * @generated
    * @ordered
    */
-  protected static final String VALIDATE_EMS_ADVANCE_DIRECTIVES_SECTION_ENTRY1__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entry->one(entry : cda::Entry | not entry.oclIsUndefined() and entry.oclIsKindOf(emspcr::EMSAdvanceDirectivesSection::DerivedEntry))";
+  protected static final String VALIDATE_EMS_ADVANCE_DIRECTIVES_SECTION_ENTRY1__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entry->one(entry : cda::Entry | not entry.oclIsUndefined() and entry.oclIsKindOf(emspcr::DerivedEntry))";
 
   /**
    * The cached OCL invariant for the '{@link #validateEMSAdvanceDirectivesSectionEntry1(EMSAdvanceDirectivesSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate EMS Advance Directives Section Entry1</em>}' invariant operation.
@@ -352,7 +346,6 @@ public class EMSAdvanceDirectivesSectionOperations extends SectionOperations
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.entry->one(entry : cda::Entry | not entry.oclIsUndefined() and entry.oclIsKindOf(emspcr::EMSAdvanceDirectivesSection::DerivedEntry))
    * @param emsAdvanceDirectivesSection The receiving '<em><b>EMS Advance Directives Section</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.

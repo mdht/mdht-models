@@ -10,6 +10,7 @@
  *******************************************************************************/
 package org.openhealthtools.mdht.uml.cda.phcr.hepb.impl;
 
+import java.lang.Iterable;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
@@ -17,6 +18,8 @@ import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.common.util.EList;
 import org.eclipse.emf.ecore.EClass;
 
+import org.eclipse.emf.ecore.EObject;
+import org.openhealthtools.mdht.emf.runtime.util.Initializer;
 import org.openhealthtools.mdht.uml.cda.ccd.impl.ImmunizationsSectionImpl;
 
 import org.openhealthtools.mdht.uml.cda.phcr.hepb.AcuteHepatitisBImmunizationActivity;
@@ -38,59 +41,68 @@ import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
  */
 public class AcuteHepatitisBImmunizationSectionImpl extends ImmunizationsSectionImpl implements AcuteHepatitisBImmunizationSection {
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	protected AcuteHepatitisBImmunizationSectionImpl() {
-		super();
-	}
+    super();
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	@Override
 	protected EClass eStaticClass() {
-		return HepbPackage.Literals.ACUTE_HEPATITIS_BIMMUNIZATION_SECTION;
-	}
+    return HepbPackage.Literals.ACUTE_HEPATITIS_BIMMUNIZATION_SECTION;
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateAcuteHepatitisBImmunizationSectionAcuteHepatitisBImmunizationActivity(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return AcuteHepatitisBImmunizationSectionOperations.validateAcuteHepatitisBImmunizationSectionAcuteHepatitisBImmunizationActivity(this, diagnostics, context);
-	}
+    return AcuteHepatitisBImmunizationSectionOperations.validateAcuteHepatitisBImmunizationSectionAcuteHepatitisBImmunizationActivity(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public EList<AcuteHepatitisBImmunizationActivity> getAcuteHepatitisBImmunizationActivities() {
-		return AcuteHepatitisBImmunizationSectionOperations.getAcuteHepatitisBImmunizationActivities(this);
-	}
+    return AcuteHepatitisBImmunizationSectionOperations.getAcuteHepatitisBImmunizationActivities(this);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	@Override
 	public boolean validateImmunizationsSectionTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return AcuteHepatitisBImmunizationSectionOperations.validateImmunizationsSectionTemplateId(this, diagnostics, context);
-	}
+    return AcuteHepatitisBImmunizationSectionOperations.validateImmunizationsSectionTemplateId(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public AcuteHepatitisBImmunizationSection init() {
-    	CDAUtil.init(this);
-    	return this;
-	}
+      return Initializer.Util.init(this);
+  }
+
+  /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    public AcuteHepatitisBImmunizationSection init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
 } //AcuteHepatitisBImmunizationSectionImpl

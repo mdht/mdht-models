@@ -82,7 +82,6 @@ public class EMSCurrentMedicationSectionOperations extends SectionOperations
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.17.3.10.1.15')
    * @param emsCurrentMedicationSection The receiving '<em><b>EMS Current Medication Section</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -151,9 +150,6 @@ public class EMSCurrentMedicationSectionOperations extends SectionOperations
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * (self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and 
-   * let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in 
-   * value.code = '67844-1' and value.codeSystem = '2.16.840.1.113883.6.1')
    * @param emsCurrentMedicationSection The receiving '<em><b>EMS Current Medication Section</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -220,7 +216,6 @@ public class EMSCurrentMedicationSectionOperations extends SectionOperations
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * (self.title.oclIsUndefined() or self.title.isNullFlavorUndefined()) implies (not self.title.oclIsUndefined() and self.title.getText() = 'EMS Current Medications Section')
    * @param emsCurrentMedicationSection The receiving '<em><b>EMS Current Medication Section</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -287,7 +282,6 @@ public class EMSCurrentMedicationSectionOperations extends SectionOperations
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * not self.text.oclIsUndefined()
    * @param emsCurrentMedicationSection The receiving '<em><b>EMS Current Medication Section</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -336,7 +330,7 @@ public class EMSCurrentMedicationSectionOperations extends SectionOperations
    * @generated
    * @ordered
    */
-  protected static final String VALIDATE_EMS_CURRENT_MEDICATION_SECTION_ENTRY1__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entry->one(entry : cda::Entry | not entry.oclIsUndefined() and entry.oclIsKindOf(emspcr::EMSCurrentMedicationSection::DerivedEntry))";
+  protected static final String VALIDATE_EMS_CURRENT_MEDICATION_SECTION_ENTRY1__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entry->one(entry : cda::Entry | not entry.oclIsUndefined() and entry.oclIsKindOf(emspcr::DerivedEntry))";
 
   /**
    * The cached OCL invariant for the '{@link #validateEMSCurrentMedicationSectionEntry1(EMSCurrentMedicationSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate EMS Current Medication Section Entry1</em>}' invariant operation.
@@ -354,7 +348,6 @@ public class EMSCurrentMedicationSectionOperations extends SectionOperations
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.entry->one(entry : cda::Entry | not entry.oclIsUndefined() and entry.oclIsKindOf(emspcr::EMSCurrentMedicationSection::DerivedEntry))
    * @param emsCurrentMedicationSection The receiving '<em><b>EMS Current Medication Section</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -403,7 +396,7 @@ public class EMSCurrentMedicationSectionOperations extends SectionOperations
    * @generated
    * @ordered
    */
-  protected static final String VALIDATE_EMS_CURRENT_MEDICATION_SECTION_ENTRY2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entry->one(entry : cda::Entry | not entry.oclIsUndefined() and entry.oclIsKindOf(emspcr::EMSCurrentMedicationSection::DerivedEntry))";
+  protected static final String VALIDATE_EMS_CURRENT_MEDICATION_SECTION_ENTRY2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entry->one(entry : cda::Entry | not entry.oclIsUndefined() and entry.oclIsKindOf(emspcr::DerivedEntry))";
 
   /**
    * The cached OCL invariant for the '{@link #validateEMSCurrentMedicationSectionEntry2(EMSCurrentMedicationSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate EMS Current Medication Section Entry2</em>}' invariant operation.
@@ -421,7 +414,6 @@ public class EMSCurrentMedicationSectionOperations extends SectionOperations
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.entry->one(entry : cda::Entry | not entry.oclIsUndefined() and entry.oclIsKindOf(emspcr::EMSCurrentMedicationSection::DerivedEntry))
    * @param emsCurrentMedicationSection The receiving '<em><b>EMS Current Medication Section</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -470,7 +462,7 @@ public class EMSCurrentMedicationSectionOperations extends SectionOperations
    * @generated
    * @ordered
    */
-  protected static final String VALIDATE_EMS_CURRENT_MEDICATION_SECTION_ENTRY3__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entry->one(entry : cda::Entry | not entry.oclIsUndefined() and entry.oclIsKindOf(emspcr::EMSCurrentMedicationSection::DerivedEntry))";
+  protected static final String VALIDATE_EMS_CURRENT_MEDICATION_SECTION_ENTRY3__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entry->one(entry : cda::Entry | not entry.oclIsUndefined() and entry.oclIsKindOf(emspcr::DerivedEntry))";
 
   /**
    * The cached OCL invariant for the '{@link #validateEMSCurrentMedicationSectionEntry3(EMSCurrentMedicationSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate EMS Current Medication Section Entry3</em>}' invariant operation.
@@ -488,7 +480,6 @@ public class EMSCurrentMedicationSectionOperations extends SectionOperations
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.entry->one(entry : cda::Entry | not entry.oclIsUndefined() and entry.oclIsKindOf(emspcr::EMSCurrentMedicationSection::DerivedEntry))
    * @param emsCurrentMedicationSection The receiving '<em><b>EMS Current Medication Section</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.

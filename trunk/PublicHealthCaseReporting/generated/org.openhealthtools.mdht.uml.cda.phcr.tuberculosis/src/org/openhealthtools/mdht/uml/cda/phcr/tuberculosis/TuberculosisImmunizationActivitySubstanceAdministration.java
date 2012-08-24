@@ -10,6 +10,9 @@
  *******************************************************************************/
 package org.openhealthtools.mdht.uml.cda.phcr.tuberculosis;
 
+import java.lang.Iterable;
+import org.eclipse.emf.ecore.EObject;
+import org.openhealthtools.mdht.emf.runtime.util.Initializer;
 import org.openhealthtools.mdht.uml.cda.ccd.MedicationActivity;
 
 /**
@@ -19,15 +22,22 @@ import org.openhealthtools.mdht.uml.cda.ccd.MedicationActivity;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.phcr.tuberculosis.TuberculosisPackage#getTuberculosisImmunizationActivitySubstanceAdministration()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation templateId.root='2.16.840.1.113883.10.20.15.3.60' constraints.validation.error='TuberculosisImmunizationActivitySubstanceAdministrationTemplateId'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='TuberculosisImmunizationActivitySubstanceAdministrationTemplateId' templateId.root='2.16.840.1.113883.10.20.15.3.60'"
  * @generated
  */
 public interface TuberculosisImmunizationActivitySubstanceAdministration extends MedicationActivity
 {
   /**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   public TuberculosisImmunizationActivitySubstanceAdministration init();
+
+  /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    public TuberculosisImmunizationActivitySubstanceAdministration init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // TuberculosisImmunizationActivitySubstanceAdministration

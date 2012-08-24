@@ -10,12 +10,15 @@
  *******************************************************************************/
 package org.openhealthtools.mdht.uml.cda.phcr.tuberculosis.impl;
 
+import java.lang.Iterable;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
 
 import org.eclipse.emf.ecore.EClass;
 
+import org.eclipse.emf.ecore.EObject;
+import org.openhealthtools.mdht.emf.runtime.util.Initializer;
 import org.openhealthtools.mdht.uml.cda.phcr.impl.PhcrTreatmentInformationSectionImpl;
 
 import org.openhealthtools.mdht.uml.cda.phcr.tuberculosis.TuberculosisPHCRTreatmentInformationSection;
@@ -37,59 +40,68 @@ import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
  */
 public class TuberculosisPHCRTreatmentInformationSectionImpl extends PhcrTreatmentInformationSectionImpl implements TuberculosisPHCRTreatmentInformationSection {
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	protected TuberculosisPHCRTreatmentInformationSectionImpl() {
-		super();
-	}
+    super();
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	@Override
 	protected EClass eStaticClass() {
-		return TuberculosisPackage.Literals.TUBERCULOSIS_PHCR_TREATMENT_INFORMATION_SECTION;
-	}
+    return TuberculosisPackage.Literals.TUBERCULOSIS_PHCR_TREATMENT_INFORMATION_SECTION;
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateTuberculosisPHCRTreatmentInformationSectionTuberculosisTherapeuticRegimenAct(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return TuberculosisPHCRTreatmentInformationSectionOperations.validateTuberculosisPHCRTreatmentInformationSectionTuberculosisTherapeuticRegimenAct(this, diagnostics, context);
-	}
+    return TuberculosisPHCRTreatmentInformationSectionOperations.validateTuberculosisPHCRTreatmentInformationSectionTuberculosisTherapeuticRegimenAct(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public TuberculosisTherapeuticRegimenAct getTuberculosisTherapeuticRegimenAct() {
-		return TuberculosisPHCRTreatmentInformationSectionOperations.getTuberculosisTherapeuticRegimenAct(this);
-	}
+    return TuberculosisPHCRTreatmentInformationSectionOperations.getTuberculosisTherapeuticRegimenAct(this);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	@Override
 	public boolean validatePhcrTreatmentInformationSectionTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return TuberculosisPHCRTreatmentInformationSectionOperations.validatePhcrTreatmentInformationSectionTemplateId(this, diagnostics, context);
-	}
+    return TuberculosisPHCRTreatmentInformationSectionOperations.validatePhcrTreatmentInformationSectionTemplateId(this, diagnostics, context);
+  }
 
   /**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   public TuberculosisPHCRTreatmentInformationSection init() {
-    	CDAUtil.init(this);
-    	return this;
-	}
+      return Initializer.Util.init(this);
+  }
+
+  /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    public TuberculosisPHCRTreatmentInformationSection init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
 } //TuberculosisPHCRTreatmentInformationSectionImpl

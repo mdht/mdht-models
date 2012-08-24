@@ -10,6 +10,9 @@
  *******************************************************************************/
 package org.openhealthtools.mdht.uml.cda.phcr.cocci;
 
+import java.lang.Iterable;
+import org.eclipse.emf.ecore.EObject;
+import org.openhealthtools.mdht.emf.runtime.util.Initializer;
 import org.openhealthtools.mdht.uml.cda.phcr.TreatmentGivenSubstanceAdministration;
 
 /**
@@ -19,14 +22,21 @@ import org.openhealthtools.mdht.uml.cda.phcr.TreatmentGivenSubstanceAdministrati
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.phcr.cocci.CocciPackage#getCoccidioidesTreatmentGivenSubstanceAdministration()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation templateId.root='2.16.840.1.113883.10.20.15.3.90' constraints.validation.error='CoccidioidesTreatmentGivenSubstanceAdministrationTemplateId'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='CoccidioidesTreatmentGivenSubstanceAdministrationTemplateId' templateId.root='2.16.840.1.113883.10.20.15.3.90'"
  * @generated
  */
 public interface CoccidioidesTreatmentGivenSubstanceAdministration extends TreatmentGivenSubstanceAdministration {
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public CoccidioidesTreatmentGivenSubstanceAdministration init();
+
+  /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    public CoccidioidesTreatmentGivenSubstanceAdministration init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // CoccidioidesTreatmentGivenSubstanceAdministration

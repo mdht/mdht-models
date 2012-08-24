@@ -10,6 +10,9 @@
  *******************************************************************************/
 package org.openhealthtools.mdht.uml.cda.phcr.pertussis;
 
+import java.lang.Iterable;
+import org.eclipse.emf.ecore.EObject;
+import org.openhealthtools.mdht.emf.runtime.util.Initializer;
 import org.openhealthtools.mdht.uml.cda.ccd.Product;
 
 /**
@@ -19,14 +22,21 @@ import org.openhealthtools.mdht.uml.cda.ccd.Product;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.phcr.pertussis.PertussisPackage#getPertussisImmunizationProduct()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation templateId.root='2.16.840.1.113883.10.20.15.3.73' constraints.validation.error='PertussisImmunizationProductTemplateId'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='PertussisImmunizationProductTemplateId' templateId.root='2.16.840.1.113883.10.20.15.3.73'"
  * @generated
  */
 public interface PertussisImmunizationProduct extends Product {
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public PertussisImmunizationProduct init();
+
+  /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    public PertussisImmunizationProduct init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // PertussisImmunizationProduct

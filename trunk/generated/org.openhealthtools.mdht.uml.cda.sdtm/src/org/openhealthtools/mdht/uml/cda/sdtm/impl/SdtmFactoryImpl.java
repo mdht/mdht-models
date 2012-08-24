@@ -82,14 +82,13 @@ public class SdtmFactoryImpl extends EFactoryImpl implements SdtmFactory
       case SdtmPackage.PRE_SPECIFIED_EVENT: return createPreSpecifiedEvent();
       case SdtmPackage.STUDY_DAY_PERIOD: return createStudyDayPeriod();
       case SdtmPackage.VITAL_SIGN: return createVitalSign();
-      case SdtmPackage.PLANNED_STUDY_DAY: return createPlannedStudyDay();
       case SdtmPackage.TIMING_REFERENCE: return createTimingReference();
       case SdtmPackage.NON_PERFORMANCE_REASON: return createNonPerformanceReason();
+      case SdtmPackage.PLANNED_STUDY_DAY: return createPlannedStudyDay();
+      case SdtmPackage.EXCLUSION_REASON: return createExclusionReason();
       case SdtmPackage.ECG_TEST_RESULT: return createECGTestResult();
-      case SdtmPackage.BASELINE_INDICATOR: return createBaselineIndicator();
-      case SdtmPackage.DERIVED_DATA_INDICATOR: return createDerivedDataIndicator();
       case SdtmPackage.INCLUSIONOR_EXCLUSION_CRITERIA_NOT_MET: return createInclusionorExclusionCriteriaNotMet();
-      case SdtmPackage.NON_HUMAN_LABORATORY_TEST_RESULT: return createNonHumanLaboratoryTestResult();
+      case SdtmPackage.NONHUMAN_LABORATORY_TEST_RESULT: return createNonhumanLaboratoryTestResult();
       case SdtmPackage.SPECIMEN_INFORMATION: return createSpecimenInformation();
       case SdtmPackage.PHYSICAL_EXAMINATION_FINDING: return createPhysicalExaminationFinding();
       case SdtmPackage.MICROBIOLOGY_SPECIMEN_FINDING: return createMicrobiologySpecimenFinding();
@@ -111,25 +110,30 @@ public class SdtmFactoryImpl extends EFactoryImpl implements SdtmFactory
       case SdtmPackage.CONCOMITANT_MEDICATION: return createConcomitantMedication();
       case SdtmPackage.CONSUMABLE_MATERIAL: return createConsumableMaterial();
       case SdtmPackage.HUMAN_CLINICAL_EXPOSURE: return createHumanClinicalExposure();
-      case SdtmPackage.STUDY_TEST_PERFORMER: return createStudyTestPerformer();
+      case SdtmPackage.STUDY_TEST_ORGANIZATION: return createStudyTestOrganization();
       case SdtmPackage.QUESTIONNAIRE_FINDING: return createQuestionnaireFinding();
       case SdtmPackage.STUDY_FINDING_EVALUATOR: return createStudyFindingEvaluator();
       case SdtmPackage.SUBJECT_DATA_NON_CLINICAL_TRIALS: return createSubjectDataNonClinicalTrials();
-      case SdtmPackage.NON_HUMAN_SUBJECT_DATA_DOCUMENT_BODY: return createNonHumanSubjectDataDocumentBody();
-      case SdtmPackage.NON_HUMAN_EXPOSURE: return createNonHumanExposure();
-      case SdtmPackage.NON_HUMAN_DISPOSITION: return createNonHumanDisposition();
-      case SdtmPackage.HUMAN_CLINICAL_LABORATORY_TEST_RESULT: return createHumanClinicalLaboratoryTestResult();
+      case SdtmPackage.NONHUMAN_SUBJECT_DATA_DOCUMENT_BODY: return createNonhumanSubjectDataDocumentBody();
+      case SdtmPackage.NONHUMAN_SUBJECT_DEMOGRAPHICS: return createNonhumanSubjectDemographics();
+      case SdtmPackage.NONHUMAN_DISPOSITION: return createNonhumanDisposition();
+      case SdtmPackage.NONHUMAN_EXPOSURE: return createNonhumanExposure();
       case SdtmPackage.BODY_WEIGHT: return createBodyWeight();
       case SdtmPackage.BODY_WEIGHT_GAIN: return createBodyWeightGain();
       case SdtmPackage.CLINICAL_OBSERVATION: return createClinicalObservation();
       case SdtmPackage.DEATH_DIAGNOSIS: return createDeathDiagnosis();
       case SdtmPackage.FOODAND_WATER_CONSUMPTION: return createFoodandWaterConsumption();
       case SdtmPackage.MACROSCOPIC_FINDING: return createMacroscopicFinding();
-      case SdtmPackage.MICROSCOPIC_FINDINGS: return createMicroscopicFindings();
+      case SdtmPackage.MICROSCOPIC_FINDING: return createMicroscopicFinding();
       case SdtmPackage.ORGAN_MEASUREMENT: return createOrganMeasurement();
       case SdtmPackage.PALPABLE_MASS: return createPalpableMass();
       case SdtmPackage.TUMOR_FINDING: return createTumorFinding();
+      case SdtmPackage.HUMAN_CLINICAL_LABORATORY_TEST_RESULT: return createHumanClinicalLaboratoryTestResult();
       case SdtmPackage.SUBJECT_POOL: return createSubjectPool();
+      case SdtmPackage.MASS_IDENTIFICATION: return createMassIdentification();
+      case SdtmPackage.STUDY_SUBJECT_INTERVENTION: return createStudySubjectIntervention();
+      case SdtmPackage.STUDY_SUBJECT_EVENT: return createStudySubjectEvent();
+      case SdtmPackage.STUDY_SUBJECT_FINDING: return createStudySubjectFinding();
       default:
         throw new IllegalArgumentException("The class '" + eClass.getName() + "' is not a valid classifier");
     }
@@ -305,6 +309,17 @@ public class SdtmFactoryImpl extends EFactoryImpl implements SdtmFactory
    * <!-- end-user-doc -->
    * @generated
    */
+  public ExclusionReason createExclusionReason()
+  {
+    ExclusionReasonImpl exclusionReason = new ExclusionReasonImpl();
+    return exclusionReason;
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
   public TimingReference createTimingReference()
   {
     TimingReferenceImpl timingReference = new TimingReferenceImpl();
@@ -338,28 +353,6 @@ public class SdtmFactoryImpl extends EFactoryImpl implements SdtmFactory
    * <!-- end-user-doc -->
    * @generated
    */
-  public BaselineIndicator createBaselineIndicator()
-  {
-    BaselineIndicatorImpl baselineIndicator = new BaselineIndicatorImpl();
-    return baselineIndicator;
-  }
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public DerivedDataIndicator createDerivedDataIndicator()
-  {
-    DerivedDataIndicatorImpl derivedDataIndicator = new DerivedDataIndicatorImpl();
-    return derivedDataIndicator;
-  }
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
   public InclusionorExclusionCriteriaNotMet createInclusionorExclusionCriteriaNotMet()
   {
     InclusionorExclusionCriteriaNotMetImpl inclusionorExclusionCriteriaNotMet = new InclusionorExclusionCriteriaNotMetImpl();
@@ -371,10 +364,10 @@ public class SdtmFactoryImpl extends EFactoryImpl implements SdtmFactory
    * <!-- end-user-doc -->
    * @generated
    */
-  public NonHumanLaboratoryTestResult createNonHumanLaboratoryTestResult()
+  public NonhumanLaboratoryTestResult createNonhumanLaboratoryTestResult()
   {
-    NonHumanLaboratoryTestResultImpl nonHumanLaboratoryTestResult = new NonHumanLaboratoryTestResultImpl();
-    return nonHumanLaboratoryTestResult;
+    NonhumanLaboratoryTestResultImpl nonhumanLaboratoryTestResult = new NonhumanLaboratoryTestResultImpl();
+    return nonhumanLaboratoryTestResult;
   }
 
   /**
@@ -613,10 +606,10 @@ public class SdtmFactoryImpl extends EFactoryImpl implements SdtmFactory
    * <!-- end-user-doc -->
    * @generated
    */
-  public StudyTestPerformer createStudyTestPerformer()
+  public StudyTestOrganization createStudyTestOrganization()
   {
-    StudyTestPerformerImpl studyTestPerformer = new StudyTestPerformerImpl();
-    return studyTestPerformer;
+    StudyTestOrganizationImpl studyTestOrganization = new StudyTestOrganizationImpl();
+    return studyTestOrganization;
   }
 
   /**
@@ -657,10 +650,10 @@ public class SdtmFactoryImpl extends EFactoryImpl implements SdtmFactory
    * <!-- end-user-doc -->
    * @generated
    */
-  public NonHumanSubjectDataDocumentBody createNonHumanSubjectDataDocumentBody()
+  public NonhumanSubjectDataDocumentBody createNonhumanSubjectDataDocumentBody()
   {
-    NonHumanSubjectDataDocumentBodyImpl nonHumanSubjectDataDocumentBody = new NonHumanSubjectDataDocumentBodyImpl();
-    return nonHumanSubjectDataDocumentBody;
+    NonhumanSubjectDataDocumentBodyImpl nonhumanSubjectDataDocumentBody = new NonhumanSubjectDataDocumentBodyImpl();
+    return nonhumanSubjectDataDocumentBody;
   }
 
   /**
@@ -668,10 +661,10 @@ public class SdtmFactoryImpl extends EFactoryImpl implements SdtmFactory
    * <!-- end-user-doc -->
    * @generated
    */
-  public NonHumanExposure createNonHumanExposure()
+  public NonhumanSubjectDemographics createNonhumanSubjectDemographics()
   {
-    NonHumanExposureImpl nonHumanExposure = new NonHumanExposureImpl();
-    return nonHumanExposure;
+    NonhumanSubjectDemographicsImpl nonhumanSubjectDemographics = new NonhumanSubjectDemographicsImpl();
+    return nonhumanSubjectDemographics;
   }
 
   /**
@@ -679,10 +672,21 @@ public class SdtmFactoryImpl extends EFactoryImpl implements SdtmFactory
    * <!-- end-user-doc -->
    * @generated
    */
-  public NonHumanDisposition createNonHumanDisposition()
+  public NonhumanDisposition createNonhumanDisposition()
   {
-    NonHumanDispositionImpl nonHumanDisposition = new NonHumanDispositionImpl();
-    return nonHumanDisposition;
+    NonhumanDispositionImpl nonhumanDisposition = new NonhumanDispositionImpl();
+    return nonhumanDisposition;
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public NonhumanExposure createNonhumanExposure()
+  {
+    NonhumanExposureImpl nonhumanExposure = new NonhumanExposureImpl();
+    return nonhumanExposure;
   }
 
   /**
@@ -767,10 +771,10 @@ public class SdtmFactoryImpl extends EFactoryImpl implements SdtmFactory
    * <!-- end-user-doc -->
    * @generated
    */
-  public MicroscopicFindings createMicroscopicFindings()
+  public MicroscopicFinding createMicroscopicFinding()
   {
-    MicroscopicFindingsImpl microscopicFindings = new MicroscopicFindingsImpl();
-    return microscopicFindings;
+    MicroscopicFindingImpl microscopicFinding = new MicroscopicFindingImpl();
+    return microscopicFinding;
   }
 
   /**
@@ -815,6 +819,50 @@ public class SdtmFactoryImpl extends EFactoryImpl implements SdtmFactory
   {
     SubjectPoolImpl subjectPool = new SubjectPoolImpl();
     return subjectPool;
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public MassIdentification createMassIdentification()
+  {
+    MassIdentificationImpl massIdentification = new MassIdentificationImpl();
+    return massIdentification;
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public StudySubjectIntervention createStudySubjectIntervention()
+  {
+    StudySubjectInterventionImpl studySubjectIntervention = new StudySubjectInterventionImpl();
+    return studySubjectIntervention;
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public StudySubjectEvent createStudySubjectEvent()
+  {
+    StudySubjectEventImpl studySubjectEvent = new StudySubjectEventImpl();
+    return studySubjectEvent;
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public StudySubjectFinding createStudySubjectFinding()
+  {
+    StudySubjectFindingImpl studySubjectFinding = new StudySubjectFindingImpl();
+    return studySubjectFinding;
   }
 
   /**

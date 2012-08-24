@@ -6,10 +6,13 @@
  */
 package org.openhealthtools.mdht.uml.cda.sdtm;
 
+import java.lang.Iterable;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
 
+import org.eclipse.emf.ecore.EObject;
+import org.openhealthtools.mdht.emf.runtime.util.Initializer;
 import org.openhealthtools.mdht.uml.cda.Observation;
 
 /**
@@ -19,11 +22,11 @@ import org.openhealthtools.mdht.uml.cda.Observation;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.sdtm.SdtmPackage#getClinicalEvent()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation templateId.root='2.16.840.1.113883.10.20.23.28' constraints.validation.error='Clinical EventTemplateId Clinical EventClassCode Clinical EventCode Clinical EventId Clinical EventMoodCode Clinical EventValue Clinical EventclinicalEventCategoryAssociationTypeCode Clinical EventclinicalEventSubCategoryAssociationTypeCode' classCode='OBS' constraints.validation.query='Clinical EventclinicalEventCategoryAssociationTypeCode Clinical EventclinicalEventSubCategoryAssociationTypeCode' moodCode='EVN' constraints.validation.info='Clinical EventEffectiveTime Clinical EventStatusCode Clinical EventClinicalEventCategoryAssociation Clinical EventClinicalEventSubCategoryAssociation Clinical EventPre-Specified Event Clinical EventNonPerformanceReason Clinical EventBody System or Organ Class Clinical EventData Collection Clinical EventEvent Severity Clinical EventActivity Start Timing Reference Clinical EventActivity End Timing Reference'"
- *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/sdtmClinicalEventclinicalEventCategoryAssociation constraints.validation.error='clinicalEventCategoryAssociationTypeCode' typeCode='COMP'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='Clinical EventTemplateId Clinical EventClassCode Clinical EventCode Clinical EventId Clinical EventMoodCode Clinical EventValue Clinical EventclinicalEventCategoryAssociationclinicalEventCategoryClassCode Clinical EventclinicalEventCategoryAssociationclinicalEventCategoryCode Clinical EventclinicalEventCategoryAssociationclinicalEventCategoryMoodCode Clinical EventclinicalEventCategoryAssociationclinicalEventCategoryValue Clinical EventclinicalEventCategoryAssociationTypeCode Clinical EventclinicalEventCategoryAssociationClinicalEventCategory Clinical EventclinicalEventSubCategoryAssociationclinicalEventSubCategoryClassCode Clinical EventclinicalEventSubCategoryAssociationclinicalEventSubCategoryCode Clinical EventclinicalEventSubCategoryAssociationclinicalEventSubCategoryMoodCode Clinical EventclinicalEventSubCategoryAssociationclinicalEventSubCategoryValue Clinical EventclinicalEventSubCategoryAssociationTypeCode Clinical EventclinicalEventSubCategoryAssociationClinicalEventSubCategory' templateId.root='2.16.840.1.113883.10.20.23.28' classCode='OBS' constraints.validation.info='Clinical EventEffectiveTime Clinical EventStatusCode Clinical EventClinicalEventCategoryAssociation Clinical EventClinicalEventSubCategoryAssociation Clinical EventPre-Specified Event Clinical EventNonPerformanceReason Clinical EventBody System or Organ Class Clinical EventData Collection Clinical EventEvent Severity Clinical EventActivity Start Timing Reference Clinical EventActivity End Timing Reference' moodCode='EVN' constraints.validation.query='Clinical EventclinicalEventCategoryAssociationclinicalEventCategoryClassCode Clinical EventclinicalEventCategoryAssociationclinicalEventCategoryCode Clinical EventclinicalEventCategoryAssociationclinicalEventCategoryMoodCode Clinical EventclinicalEventCategoryAssociationclinicalEventCategoryValue Clinical EventclinicalEventCategoryAssociationTypeCode Clinical EventclinicalEventCategoryAssociationClinicalEventCategory Clinical EventclinicalEventSubCategoryAssociationclinicalEventSubCategoryClassCode Clinical EventclinicalEventSubCategoryAssociationclinicalEventSubCategoryCode Clinical EventclinicalEventSubCategoryAssociationclinicalEventSubCategoryMoodCode Clinical EventclinicalEventSubCategoryAssociationclinicalEventSubCategoryValue Clinical EventclinicalEventSubCategoryAssociationTypeCode Clinical EventclinicalEventSubCategoryAssociationClinicalEventSubCategory'"
+ *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/sdtmClinicalEventclinicalEventCategoryAssociation typeCode='COMP' constraints.validation.error='clinicalEventCategoryAssociationTypeCode clinicalEventCategoryAssociationClinicalEventCategory clinicalEventCategoryAssociationclinicalEventCategoryClassCode clinicalEventCategoryAssociationclinicalEventCategoryCode clinicalEventCategoryAssociationclinicalEventCategoryMoodCode clinicalEventCategoryAssociationclinicalEventCategoryValue' constraints.validation.query='clinicalEventCategoryAssociationclinicalEventCategoryClassCode clinicalEventCategoryAssociationclinicalEventCategoryCode clinicalEventCategoryAssociationclinicalEventCategoryMoodCode clinicalEventCategoryAssociationclinicalEventCategoryValue'"
  *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/sdtmClinicalEventclinicalEventCategoryAssociationclinicalEventCategory constraints.validation.error='clinicalEventCategoryClassCode clinicalEventCategoryCode clinicalEventCategoryMoodCode clinicalEventCategoryValue'"
- *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/sdtmClinicalEventclinicalEventSubCategoryAssociation constraints.validation.error='clinicalEventSubCategoryAssociationTypeCode' typeCode='COMP'"
- *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/sdtmClinicalEventclinicalEventSubCategoryAssociationclinicalEventSubCategory constraints.validation.error='clinicalEventSubCategoryClassCode clinicalEventSubCategoryCode clinicalEventSubCategoryMoodCode clinicalEventSubCategoryValue' classCode='OBS' moodCode='EVN'"
+ *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/sdtmClinicalEventclinicalEventSubCategoryAssociation typeCode='COMP' constraints.validation.error='clinicalEventSubCategoryAssociationTypeCode clinicalEventSubCategoryAssociationClinicalEventSubCategory clinicalEventSubCategoryAssociationclinicalEventSubCategoryClassCode clinicalEventSubCategoryAssociationclinicalEventSubCategoryCode clinicalEventSubCategoryAssociationclinicalEventSubCategoryMoodCode clinicalEventSubCategoryAssociationclinicalEventSubCategoryValue' constraints.validation.query='clinicalEventSubCategoryAssociationclinicalEventSubCategoryClassCode clinicalEventSubCategoryAssociationclinicalEventSubCategoryCode clinicalEventSubCategoryAssociationclinicalEventSubCategoryMoodCode clinicalEventSubCategoryAssociationclinicalEventSubCategoryValue'"
+ *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/sdtmClinicalEventclinicalEventSubCategoryAssociationclinicalEventSubCategory classCode='OBS' constraints.validation.error='clinicalEventSubCategoryClassCode clinicalEventSubCategoryCode clinicalEventSubCategoryMoodCode clinicalEventSubCategoryValue' moodCode='EVN'"
  * @generated
  */
 public interface ClinicalEvent extends Observation
@@ -32,7 +35,6 @@ public interface ClinicalEvent extends Observation
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.23.28')
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
    * <!-- end-model-doc -->
@@ -45,7 +47,6 @@ public interface ClinicalEvent extends Observation
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.classCode=vocab::ActClassObservation::OBS
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
    * <!-- end-model-doc -->
@@ -58,7 +59,6 @@ public interface ClinicalEvent extends Observation
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * (self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined())
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
    * <!-- end-model-doc -->
@@ -71,7 +71,6 @@ public interface ClinicalEvent extends Observation
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * (self.effectiveTime.oclIsUndefined() or self.effectiveTime.isNullFlavorUndefined()) implies (not self.effectiveTime.oclIsUndefined())
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
    * <!-- end-model-doc -->
@@ -84,7 +83,6 @@ public interface ClinicalEvent extends Observation
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * (self.id->isEmpty() or self.id->exists(element | element.isNullFlavorUndefined())) implies (not self.id->isEmpty())
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
    * <!-- end-model-doc -->
@@ -97,7 +95,6 @@ public interface ClinicalEvent extends Observation
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.moodCode=vocab::x_ActMoodDocumentObservation::EVN
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
    * <!-- end-model-doc -->
@@ -110,7 +107,6 @@ public interface ClinicalEvent extends Observation
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * (self.statusCode.oclIsUndefined() or self.statusCode.isNullFlavorUndefined()) implies (not self.statusCode.oclIsUndefined())
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
    * <!-- end-model-doc -->
@@ -123,7 +119,6 @@ public interface ClinicalEvent extends Observation
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * (self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (self.value->size() = 1)
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
    * <!-- end-model-doc -->
@@ -136,7 +131,6 @@ public interface ClinicalEvent extends Observation
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.entryRelationship->one(entryRelationship : cda::EntryRelationship | not entryRelationship.oclIsUndefined() and entryRelationship.oclIsKindOf(cda::EntryRelationship))
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
    * <!-- end-model-doc -->
@@ -149,7 +143,6 @@ public interface ClinicalEvent extends Observation
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.entryRelationship->one(entryRelationship : cda::EntryRelationship | not entryRelationship.oclIsUndefined() and entryRelationship.oclIsKindOf(cda::EntryRelationship))
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
    * <!-- end-model-doc -->
@@ -162,7 +155,6 @@ public interface ClinicalEvent extends Observation
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.entryRelationship->one(entryRelationship : cda::EntryRelationship | not entryRelationship.observation.oclIsUndefined() and entryRelationship.observation.oclIsKindOf(sdtm::Pre-Specified Event) and entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::COMP)
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
    * <!-- end-model-doc -->
@@ -175,7 +167,6 @@ public interface ClinicalEvent extends Observation
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.entryRelationship->one(entryRelationship : cda::EntryRelationship | not entryRelationship.observation.oclIsUndefined() and entryRelationship.observation.oclIsKindOf(sdtm::Non Performance Reason) and entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::COMP)
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
    * <!-- end-model-doc -->
@@ -188,7 +179,6 @@ public interface ClinicalEvent extends Observation
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.entryRelationship->one(entryRelationship : cda::EntryRelationship | not entryRelationship.observation.oclIsUndefined() and entryRelationship.observation.oclIsKindOf(sdtm::Body System or Organ Class) and entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::COMP)
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
    * <!-- end-model-doc -->
@@ -201,7 +191,6 @@ public interface ClinicalEvent extends Observation
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.entryRelationship->one(entryRelationship : cda::EntryRelationship | not entryRelationship.act.oclIsUndefined() and entryRelationship.act.oclIsKindOf(sdtm::Data Collection) and entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::COMP)
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
    * <!-- end-model-doc -->
@@ -214,7 +203,6 @@ public interface ClinicalEvent extends Observation
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.entryRelationship->one(entryRelationship : cda::EntryRelationship | not entryRelationship.observation.oclIsUndefined() and entryRelationship.observation.oclIsKindOf(sdtm::Event Severity) and entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::COMP)
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
    * <!-- end-model-doc -->
@@ -227,7 +215,6 @@ public interface ClinicalEvent extends Observation
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.entryRelationship->one(entryRelationship : cda::EntryRelationship | not entryRelationship.act.oclIsUndefined() and entryRelationship.act.oclIsKindOf(sdtm::Activity Start Timing Reference) and entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::REFR)
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
    * <!-- end-model-doc -->
@@ -240,7 +227,6 @@ public interface ClinicalEvent extends Observation
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.entryRelationship->one(entryRelationship : cda::EntryRelationship | not entryRelationship.act.oclIsUndefined() and entryRelationship.act.oclIsKindOf(sdtm::Activity End Timing Reference) and entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::REFR)
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
    * <!-- end-model-doc -->
@@ -253,7 +239,54 @@ public interface ClinicalEvent extends Observation
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.entryRelationship->excluding(null)->reject(typeCode=vocab::x_ActRelationshipEntryRelationship::COMP)
+   * @param diagnostics The chain of diagnostics to which problems are to be appended.
+   * @param context The cache of context-specific information.
+   * <!-- end-model-doc -->
+   * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship->excluding(null).observation->excluding(null)->reject(isDefined(\'classCode\'))'"
+   * @generated
+   */
+  boolean validateClinicalEventclinicalEventCategoryAssociationclinicalEventCategoryClassCode(DiagnosticChain diagnostics, Map<Object, Object> context);
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * <!-- begin-model-doc -->
+   * @param diagnostics The chain of diagnostics to which problems are to be appended.
+   * @param context The cache of context-specific information.
+   * <!-- end-model-doc -->
+   * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship->excluding(null).observation->excluding(null)->reject((code.oclIsUndefined() or code.isNullFlavorUndefined()) implies (not code.oclIsUndefined()))'"
+   * @generated
+   */
+  boolean validateClinicalEventclinicalEventCategoryAssociationclinicalEventCategoryCode(DiagnosticChain diagnostics, Map<Object, Object> context);
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * <!-- begin-model-doc -->
+   * @param diagnostics The chain of diagnostics to which problems are to be appended.
+   * @param context The cache of context-specific information.
+   * <!-- end-model-doc -->
+   * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship->excluding(null).observation->excluding(null)->reject(isDefined(\'moodCode\'))'"
+   * @generated
+   */
+  boolean validateClinicalEventclinicalEventCategoryAssociationclinicalEventCategoryMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context);
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * <!-- begin-model-doc -->
+   * @param diagnostics The chain of diagnostics to which problems are to be appended.
+   * @param context The cache of context-specific information.
+   * <!-- end-model-doc -->
+   * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship->excluding(null).observation->excluding(null)->reject((value->isEmpty() or value->exists(element | element.isNullFlavorUndefined())) implies (value->size() = 1 and value->forAll(element | element.oclIsTypeOf(datatypes::CE))))'"
+   * @generated
+   */
+  boolean validateClinicalEventclinicalEventCategoryAssociationclinicalEventCategoryValue(DiagnosticChain diagnostics, Map<Object, Object> context);
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * <!-- begin-model-doc -->
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
    * <!-- end-model-doc -->
@@ -266,7 +299,66 @@ public interface ClinicalEvent extends Observation
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.entryRelationship->excluding(null)->reject(typeCode=vocab::x_ActRelationshipEntryRelationship::COMP)
+   * @param diagnostics The chain of diagnostics to which problems are to be appended.
+   * @param context The cache of context-specific information.
+   * <!-- end-model-doc -->
+   * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship->excluding(null)->reject(observation->one(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(cda::Observation)))'"
+   * @generated
+   */
+  boolean validateClinicalEventclinicalEventCategoryAssociationClinicalEventCategory(DiagnosticChain diagnostics, Map<Object, Object> context);
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * <!-- begin-model-doc -->
+   * @param diagnostics The chain of diagnostics to which problems are to be appended.
+   * @param context The cache of context-specific information.
+   * <!-- end-model-doc -->
+   * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship->excluding(null).observation->excluding(null)->reject(classCode=vocab::ActClassObservation::OBS)'"
+   * @generated
+   */
+  boolean validateClinicalEventclinicalEventSubCategoryAssociationclinicalEventSubCategoryClassCode(DiagnosticChain diagnostics, Map<Object, Object> context);
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * <!-- begin-model-doc -->
+   * @param diagnostics The chain of diagnostics to which problems are to be appended.
+   * @param context The cache of context-specific information.
+   * <!-- end-model-doc -->
+   * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship->excluding(null).observation->excluding(null)->reject((code.oclIsUndefined() or code.isNullFlavorUndefined()) implies (not code.oclIsUndefined()))'"
+   * @generated
+   */
+  boolean validateClinicalEventclinicalEventSubCategoryAssociationclinicalEventSubCategoryCode(DiagnosticChain diagnostics, Map<Object, Object> context);
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * <!-- begin-model-doc -->
+   * @param diagnostics The chain of diagnostics to which problems are to be appended.
+   * @param context The cache of context-specific information.
+   * <!-- end-model-doc -->
+   * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship->excluding(null).observation->excluding(null)->reject(moodCode=vocab::x_ActMoodDocumentObservation::EVN)'"
+   * @generated
+   */
+  boolean validateClinicalEventclinicalEventSubCategoryAssociationclinicalEventSubCategoryMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context);
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * <!-- begin-model-doc -->
+   * @param diagnostics The chain of diagnostics to which problems are to be appended.
+   * @param context The cache of context-specific information.
+   * <!-- end-model-doc -->
+   * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship->excluding(null).observation->excluding(null)->reject((value->isEmpty() or value->exists(element | element.isNullFlavorUndefined())) implies (value->size() = 1 and value->forAll(element | element.oclIsTypeOf(datatypes::CE))))'"
+   * @generated
+   */
+  boolean validateClinicalEventclinicalEventSubCategoryAssociationclinicalEventSubCategoryValue(DiagnosticChain diagnostics, Map<Object, Object> context);
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * <!-- begin-model-doc -->
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
    * <!-- end-model-doc -->
@@ -279,10 +371,19 @@ public interface ClinicalEvent extends Observation
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(sdtm::Pre-Specified Event))->asSequence()->first().oclAsType(sdtm::Pre-Specified Event)
+   * @param diagnostics The chain of diagnostics to which problems are to be appended.
+   * @param context The cache of context-specific information.
    * <!-- end-model-doc -->
+   * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship->excluding(null)->reject(observation->one(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(cda::Observation)))'"
+   * @generated
+   */
+  boolean validateClinicalEventclinicalEventSubCategoryAssociationClinicalEventSubCategory(DiagnosticChain diagnostics, Map<Object, Object> context);
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
    * @model kind="operation" required="true" ordered="false"
-   *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(sdtm::Pre-Specified Event))->asSequence()->first().oclAsType(sdtm::Pre-Specified Event)'"
+   *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(sdtm::Pre-Specified Event))->asSequence()->any(true).oclAsType(sdtm::Pre-Specified Event)'"
    * @generated
    */
   PreSpecifiedEvent getPreSpecifiedEvent();
@@ -290,11 +391,8 @@ public interface ClinicalEvent extends Observation
   /**
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * <!-- begin-model-doc -->
-   * self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(sdtm::Non Performance Reason))->asSequence()->first().oclAsType(sdtm::Non Performance Reason)
-   * <!-- end-model-doc -->
    * @model kind="operation" required="true" ordered="false"
-   *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(sdtm::Non Performance Reason))->asSequence()->first().oclAsType(sdtm::Non Performance Reason)'"
+   *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(sdtm::Non Performance Reason))->asSequence()->any(true).oclAsType(sdtm::Non Performance Reason)'"
    * @generated
    */
   NonPerformanceReason getNonPerformanceReason();
@@ -302,11 +400,8 @@ public interface ClinicalEvent extends Observation
   /**
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * <!-- begin-model-doc -->
-   * self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(sdtm::Body System or Organ Class))->asSequence()->first().oclAsType(sdtm::Body System or Organ Class)
-   * <!-- end-model-doc -->
    * @model kind="operation" required="true" ordered="false"
-   *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(sdtm::Body System or Organ Class))->asSequence()->first().oclAsType(sdtm::Body System or Organ Class)'"
+   *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(sdtm::Body System or Organ Class))->asSequence()->any(true).oclAsType(sdtm::Body System or Organ Class)'"
    * @generated
    */
   BodySystemorOrganClass getBodySystemorOrganClass();
@@ -314,11 +409,8 @@ public interface ClinicalEvent extends Observation
   /**
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * <!-- begin-model-doc -->
-   * self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(sdtm::Data Collection))->asSequence()->first().oclAsType(sdtm::Data Collection)
-   * <!-- end-model-doc -->
    * @model kind="operation" required="true" ordered="false"
-   *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(sdtm::Data Collection))->asSequence()->first().oclAsType(sdtm::Data Collection)'"
+   *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(sdtm::Data Collection))->asSequence()->any(true).oclAsType(sdtm::Data Collection)'"
    * @generated
    */
   DataCollection getDataCollection();
@@ -326,11 +418,8 @@ public interface ClinicalEvent extends Observation
   /**
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * <!-- begin-model-doc -->
-   * self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(sdtm::Event Severity))->asSequence()->first().oclAsType(sdtm::Event Severity)
-   * <!-- end-model-doc -->
    * @model kind="operation" required="true" ordered="false"
-   *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(sdtm::Event Severity))->asSequence()->first().oclAsType(sdtm::Event Severity)'"
+   *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(sdtm::Event Severity))->asSequence()->any(true).oclAsType(sdtm::Event Severity)'"
    * @generated
    */
   EventSeverity getEventSeverity();
@@ -338,11 +427,8 @@ public interface ClinicalEvent extends Observation
   /**
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * <!-- begin-model-doc -->
-   * self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(sdtm::Activity Start Timing Reference))->asSequence()->first().oclAsType(sdtm::Activity Start Timing Reference)
-   * <!-- end-model-doc -->
    * @model kind="operation" required="true" ordered="false"
-   *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(sdtm::Activity Start Timing Reference))->asSequence()->first().oclAsType(sdtm::Activity Start Timing Reference)'"
+   *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(sdtm::Activity Start Timing Reference))->asSequence()->any(true).oclAsType(sdtm::Activity Start Timing Reference)'"
    * @generated
    */
   ActivityStartTimingReference getActivityStartTimingReference();
@@ -350,11 +436,8 @@ public interface ClinicalEvent extends Observation
   /**
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * <!-- begin-model-doc -->
-   * self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(sdtm::Activity End Timing Reference))->asSequence()->first().oclAsType(sdtm::Activity End Timing Reference)
-   * <!-- end-model-doc -->
    * @model kind="operation" required="true" ordered="false"
-   *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(sdtm::Activity End Timing Reference))->asSequence()->first().oclAsType(sdtm::Activity End Timing Reference)'"
+   *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(sdtm::Activity End Timing Reference))->asSequence()->any(true).oclAsType(sdtm::Activity End Timing Reference)'"
    * @generated
    */
   ActivityEndTimingReference getActivityEndTimingReference();
@@ -365,4 +448,11 @@ public interface ClinicalEvent extends Observation
    * @generated
    */
   public ClinicalEvent init();
+
+  /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    public ClinicalEvent init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // ClinicalEvent

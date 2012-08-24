@@ -10,10 +10,13 @@
  *******************************************************************************/
 package org.openhealthtools.mdht.uml.cda.phcr.silicosis.impl;
 
+import java.lang.Iterable;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.ecore.EClass;
+import org.eclipse.emf.ecore.EObject;
+import org.openhealthtools.mdht.emf.runtime.util.Initializer;
 import org.openhealthtools.mdht.uml.cda.impl.ActImpl;
 import org.openhealthtools.mdht.uml.cda.phcr.silicosis.SilicosisPackage;
 import org.openhealthtools.mdht.uml.cda.phcr.silicosis.SilicosisPossibleExposureLocationAndTypeAct;
@@ -31,78 +34,87 @@ import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
  */
 public class SilicosisPossibleExposureLocationAndTypeActImpl extends ActImpl implements SilicosisPossibleExposureLocationAndTypeAct {
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	protected SilicosisPossibleExposureLocationAndTypeActImpl() {
-		super();
-	}
+    super();
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	@Override
 	protected EClass eStaticClass() {
-		return SilicosisPackage.Literals.SILICOSIS_POSSIBLE_EXPOSURE_LOCATION_AND_TYPE_ACT;
-	}
+    return SilicosisPackage.Literals.SILICOSIS_POSSIBLE_EXPOSURE_LOCATION_AND_TYPE_ACT;
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   public boolean validateSilicosisPossibleExposureLocationAndTypeActTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context)
   {
-		return SilicosisPossibleExposureLocationAndTypeActOperations.validateSilicosisPossibleExposureLocationAndTypeActTemplateId(this, diagnostics, context);
-	}
+    return SilicosisPossibleExposureLocationAndTypeActOperations.validateSilicosisPossibleExposureLocationAndTypeActTemplateId(this, diagnostics, context);
+  }
 
   /**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateSilicosisPossibleExposureLocationAndTypeActClassCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return SilicosisPossibleExposureLocationAndTypeActOperations.validateSilicosisPossibleExposureLocationAndTypeActClassCode(this, diagnostics, context);
-	}
+    return SilicosisPossibleExposureLocationAndTypeActOperations.validateSilicosisPossibleExposureLocationAndTypeActClassCode(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateSilicosisPossibleExposureLocationAndTypeActCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return SilicosisPossibleExposureLocationAndTypeActOperations.validateSilicosisPossibleExposureLocationAndTypeActCode(this, diagnostics, context);
-	}
+    return SilicosisPossibleExposureLocationAndTypeActOperations.validateSilicosisPossibleExposureLocationAndTypeActCode(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateSilicosisPossibleExposureLocationAndTypeActMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return SilicosisPossibleExposureLocationAndTypeActOperations.validateSilicosisPossibleExposureLocationAndTypeActMoodCode(this, diagnostics, context);
-	}
+    return SilicosisPossibleExposureLocationAndTypeActOperations.validateSilicosisPossibleExposureLocationAndTypeActMoodCode(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateSilicosisPossibleExposureLocationAndTypeActStatusCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return SilicosisPossibleExposureLocationAndTypeActOperations.validateSilicosisPossibleExposureLocationAndTypeActStatusCode(this, diagnostics, context);
-	}
+    return SilicosisPossibleExposureLocationAndTypeActOperations.validateSilicosisPossibleExposureLocationAndTypeActStatusCode(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public SilicosisPossibleExposureLocationAndTypeAct init() {
-    	CDAUtil.init(this);
-    	return this;
-	}
+      return Initializer.Util.init(this);
+  }
+
+  /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    public SilicosisPossibleExposureLocationAndTypeAct init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
 
 } //SilicosisPossibleExposureLocationAndTypeActImpl

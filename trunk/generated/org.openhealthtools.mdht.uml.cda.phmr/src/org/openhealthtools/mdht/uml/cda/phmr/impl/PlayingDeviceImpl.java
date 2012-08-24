@@ -22,12 +22,15 @@
  */
 package org.openhealthtools.mdht.uml.cda.phmr.impl;
 
+import java.lang.Iterable;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
 
 import org.eclipse.emf.ecore.EClass;
 
+import org.eclipse.emf.ecore.EObject;
+import org.openhealthtools.mdht.emf.runtime.util.Initializer;
 import org.openhealthtools.mdht.uml.cda.impl.DeviceImpl;
 
 import org.openhealthtools.mdht.uml.cda.phmr.PhmrPackage;
@@ -48,58 +51,67 @@ import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
  */
 public class PlayingDeviceImpl extends DeviceImpl implements PlayingDevice {
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	protected PlayingDeviceImpl() {
-		super();
-	}
+    super();
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	@Override
 	protected EClass eStaticClass() {
-		return PhmrPackage.Literals.PLAYING_DEVICE;
-	}
+    return PhmrPackage.Literals.PLAYING_DEVICE;
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validatePlayingDeviceTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return PlayingDeviceOperations.validatePlayingDeviceTemplateId(this, diagnostics, context);
-	}
+    return PlayingDeviceOperations.validatePlayingDeviceTemplateId(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validatePlayingDeviceCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return PlayingDeviceOperations.validatePlayingDeviceCode(this, diagnostics, context);
-	}
+    return PlayingDeviceOperations.validatePlayingDeviceCode(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validatePlayingDeviceManufacturerModelName(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return PlayingDeviceOperations.validatePlayingDeviceManufacturerModelName(this, diagnostics, context);
-	}
+    return PlayingDeviceOperations.validatePlayingDeviceManufacturerModelName(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public PlayingDevice init() {
-    	CDAUtil.init(this);
-    	return this;
-	}
+      return Initializer.Util.init(this);
+  }
+
+  /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    public PlayingDevice init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
 } //PlayingDeviceImpl

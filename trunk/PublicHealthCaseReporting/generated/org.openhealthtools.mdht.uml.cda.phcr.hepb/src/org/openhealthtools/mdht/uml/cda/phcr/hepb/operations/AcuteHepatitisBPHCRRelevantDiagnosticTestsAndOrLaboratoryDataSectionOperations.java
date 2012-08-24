@@ -55,183 +55,188 @@ import org.openhealthtools.mdht.uml.cda.phcr.operations.PhcrRelevantDxTestsSecti
  */
 public class AcuteHepatitisBPHCRRelevantDiagnosticTestsAndOrLaboratoryDataSectionOperations extends PhcrRelevantDxTestsSectionOperations {
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	protected AcuteHepatitisBPHCRRelevantDiagnosticTestsAndOrLaboratoryDataSectionOperations() {
-		super();
-	}
+    super();
+  }
 
 	/**
-	 * The cached OCL expression body for the '{@link #validateAcuteHepatitisBPHCRRelevantDiagnosticTestsAndOrLaboratoryDataSectionAcuteHepatitisBResultObservation(AcuteHepatitisBPHCRRelevantDiagnosticTestsAndOrLaboratoryDataSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Acute Hepatitis BPHCR Relevant Diagnostic Tests And Or Laboratory Data Section Acute Hepatitis BResult Observation</em>}' operation.
-	 * <!-- begin-user-doc -->
+   * The cached OCL expression body for the '{@link #validateAcuteHepatitisBPHCRRelevantDiagnosticTestsAndOrLaboratoryDataSectionAcuteHepatitisBResultObservation(AcuteHepatitisBPHCRRelevantDiagnosticTestsAndOrLaboratoryDataSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Acute Hepatitis BPHCR Relevant Diagnostic Tests And Or Laboratory Data Section Acute Hepatitis BResult Observation</em>}' operation.
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateAcuteHepatitisBPHCRRelevantDiagnosticTestsAndOrLaboratoryDataSectionAcuteHepatitisBResultObservation(AcuteHepatitisBPHCRRelevantDiagnosticTestsAndOrLaboratoryDataSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
+   * @see #validateAcuteHepatitisBPHCRRelevantDiagnosticTestsAndOrLaboratoryDataSectionAcuteHepatitisBResultObservation(AcuteHepatitisBPHCRRelevantDiagnosticTestsAndOrLaboratoryDataSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+   * @generated
+   * @ordered
+   */
 	protected static final String VALIDATE_ACUTE_HEPATITIS_BPHCR_RELEVANT_DIAGNOSTIC_TESTS_AND_OR_LABORATORY_DATA_SECTION_ACUTE_HEPATITIS_BRESULT_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entry->exists(entry : cda::Entry | not entry.observation.oclIsUndefined() and entry.observation.oclIsKindOf(hepb::AcuteHepatitisBResultObservation) and entry.typeCode = vocab::x_ActRelationshipEntry::DRIV)";
 
 	/**
-	 * The cached OCL invariant for the '{@link #validateAcuteHepatitisBPHCRRelevantDiagnosticTestsAndOrLaboratoryDataSectionAcuteHepatitisBResultObservation(AcuteHepatitisBPHCRRelevantDiagnosticTestsAndOrLaboratoryDataSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Acute Hepatitis BPHCR Relevant Diagnostic Tests And Or Laboratory Data Section Acute Hepatitis BResult Observation</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
+   * The cached OCL invariant for the '{@link #validateAcuteHepatitisBPHCRRelevantDiagnosticTestsAndOrLaboratoryDataSectionAcuteHepatitisBResultObservation(AcuteHepatitisBPHCRRelevantDiagnosticTestsAndOrLaboratoryDataSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Acute Hepatitis BPHCR Relevant Diagnostic Tests And Or Laboratory Data Section Acute Hepatitis BResult Observation</em>}' invariant operation.
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateAcuteHepatitisBPHCRRelevantDiagnosticTestsAndOrLaboratoryDataSectionAcuteHepatitisBResultObservation(AcuteHepatitisBPHCRRelevantDiagnosticTestsAndOrLaboratoryDataSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
+   * @see #validateAcuteHepatitisBPHCRRelevantDiagnosticTestsAndOrLaboratoryDataSectionAcuteHepatitisBResultObservation(AcuteHepatitisBPHCRRelevantDiagnosticTestsAndOrLaboratoryDataSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+   * @generated
+   * @ordered
+   */
 	
 	protected static Constraint VALIDATE_ACUTE_HEPATITIS_BPHCR_RELEVANT_DIAGNOSTIC_TESTS_AND_OR_LABORATORY_DATA_SECTION_ACUTE_HEPATITIS_BRESULT_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 	
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.entry->exists(entry : cda::Entry | not entry.observation.oclIsUndefined() and entry.observation.oclIsKindOf(hepb::AcuteHepatitisBResultObservation) and entry.typeCode = vocab::x_ActRelationshipEntry::DRIV)
-	 * @param acuteHepatitisBPHCRRelevantDiagnosticTestsAndOrLaboratoryDataSection The receiving '<em><b>Acute Hepatitis BPHCR Relevant Diagnostic Tests And Or Laboratory Data Section</b></em>' model object.
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
+   * <!-- begin-model-doc -->
+   * @param acuteHepatitisBPHCRRelevantDiagnosticTestsAndOrLaboratoryDataSection The receiving '<em><b>Acute Hepatitis BPHCR Relevant Diagnostic Tests And Or Laboratory Data Section</b></em>' model object.
+   * @param diagnostics The chain of diagnostics to which problems are to be appended.
+   * @param context The cache of context-specific information.
+   * <!-- end-model-doc -->
+   * @generated
+   */
 	
 	public static  boolean validateAcuteHepatitisBPHCRRelevantDiagnosticTestsAndOrLaboratoryDataSectionAcuteHepatitisBResultObservation(AcuteHepatitisBPHCRRelevantDiagnosticTestsAndOrLaboratoryDataSection acuteHepatitisBPHCRRelevantDiagnosticTestsAndOrLaboratoryDataSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
   	  
-		if (VALIDATE_ACUTE_HEPATITIS_BPHCR_RELEVANT_DIAGNOSTIC_TESTS_AND_OR_LABORATORY_DATA_SECTION_ACUTE_HEPATITIS_BRESULT_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setContext(HepbPackage.Literals.ACUTE_HEPATITIS_BPHCR_RELEVANT_DIAGNOSTIC_TESTS_AND_OR_LABORATORY_DATA_SECTION);
-			try {
-				VALIDATE_ACUTE_HEPATITIS_BPHCR_RELEVANT_DIAGNOSTIC_TESTS_AND_OR_LABORATORY_DATA_SECTION_ACUTE_HEPATITIS_BRESULT_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_ACUTE_HEPATITIS_BPHCR_RELEVANT_DIAGNOSTIC_TESTS_AND_OR_LABORATORY_DATA_SECTION_ACUTE_HEPATITIS_BRESULT_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
-				throw new UnsupportedOperationException(pe.getLocalizedMessage());
-			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_ACUTE_HEPATITIS_BPHCR_RELEVANT_DIAGNOSTIC_TESTS_AND_OR_LABORATORY_DATA_SECTION_ACUTE_HEPATITIS_BRESULT_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(acuteHepatitisBPHCRRelevantDiagnosticTestsAndOrLaboratoryDataSection)) {
-			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.WARNING,
-						 HepbValidator.DIAGNOSTIC_SOURCE,
-						 HepbValidator.ACUTE_HEPATITIS_BPHCR_RELEVANT_DIAGNOSTIC_TESTS_AND_OR_LABORATORY_DATA_SECTION__ACUTE_HEPATITIS_BPHCR_RELEVANT_DIAGNOSTIC_TESTS_AND_OR_LABORATORY_DATA_SECTION_ACUTE_HEPATITIS_BRESULT_OBSERVATION,
-						 HepbPlugin.INSTANCE.getString("AcuteHepatitisBPHCRRelevantDiagnosticTestsAndOrLaboratoryDataSectionAcuteHepatitisBResultObservation"),
-						 new Object [] { acuteHepatitisBPHCRRelevantDiagnosticTestsAndOrLaboratoryDataSection }));
-			}
-			 
-			return false;
-		}
-		return true;
-	}
+    if (VALIDATE_ACUTE_HEPATITIS_BPHCR_RELEVANT_DIAGNOSTIC_TESTS_AND_OR_LABORATORY_DATA_SECTION_ACUTE_HEPATITIS_BRESULT_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+      OCL.Helper helper = EOCL_ENV.createOCLHelper();
+      helper.setContext(HepbPackage.Literals.ACUTE_HEPATITIS_BPHCR_RELEVANT_DIAGNOSTIC_TESTS_AND_OR_LABORATORY_DATA_SECTION);
+      try
+      {
+        VALIDATE_ACUTE_HEPATITIS_BPHCR_RELEVANT_DIAGNOSTIC_TESTS_AND_OR_LABORATORY_DATA_SECTION_ACUTE_HEPATITIS_BRESULT_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_ACUTE_HEPATITIS_BPHCR_RELEVANT_DIAGNOSTIC_TESTS_AND_OR_LABORATORY_DATA_SECTION_ACUTE_HEPATITIS_BRESULT_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+      }
+      catch (ParserException pe)
+      {
+        throw new UnsupportedOperationException(pe.getLocalizedMessage());
+      }
+    }
+    if (!EOCL_ENV.createQuery(VALIDATE_ACUTE_HEPATITIS_BPHCR_RELEVANT_DIAGNOSTIC_TESTS_AND_OR_LABORATORY_DATA_SECTION_ACUTE_HEPATITIS_BRESULT_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(acuteHepatitisBPHCRRelevantDiagnosticTestsAndOrLaboratoryDataSection))
+    {
+      if (diagnostics != null)
+      {
+        diagnostics.add
+          (new BasicDiagnostic
+            (Diagnostic.WARNING,
+             HepbValidator.DIAGNOSTIC_SOURCE,
+             HepbValidator.ACUTE_HEPATITIS_BPHCR_RELEVANT_DIAGNOSTIC_TESTS_AND_OR_LABORATORY_DATA_SECTION__ACUTE_HEPATITIS_BPHCR_RELEVANT_DIAGNOSTIC_TESTS_AND_OR_LABORATORY_DATA_SECTION_ACUTE_HEPATITIS_BRESULT_OBSERVATION,
+             HepbPlugin.INSTANCE.getString("AcuteHepatitisBPHCRRelevantDiagnosticTestsAndOrLaboratoryDataSectionAcuteHepatitisBResultObservation"),
+             new Object [] { acuteHepatitisBPHCRRelevantDiagnosticTestsAndOrLaboratoryDataSection }));
+      }
+       
+      return false;
+    }
+    return true;
+  }
 
 	/**
-	 * The cached OCL expression body for the '{@link #getAcuteHepatitisBResultObservations(AcuteHepatitisBPHCRRelevantDiagnosticTestsAndOrLaboratoryDataSection) <em>Get Acute Hepatitis BResult Observations</em>}' operation.
-	 * <!-- begin-user-doc -->
+   * The cached OCL expression body for the '{@link #getAcuteHepatitisBResultObservations(AcuteHepatitisBPHCRRelevantDiagnosticTestsAndOrLaboratoryDataSection) <em>Get Acute Hepatitis BResult Observations</em>}' operation.
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getAcuteHepatitisBResultObservations(AcuteHepatitisBPHCRRelevantDiagnosticTestsAndOrLaboratoryDataSection)
-	 * @generated
-	 * @ordered
-	 */
+   * @see #getAcuteHepatitisBResultObservations(AcuteHepatitisBPHCRRelevantDiagnosticTestsAndOrLaboratoryDataSection)
+   * @generated
+   * @ordered
+   */
 	protected static final String GET_ACUTE_HEPATITIS_BRESULT_OBSERVATIONS__EOCL_EXP = "self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(hepb::AcuteHepatitisBResultObservation)).oclAsType(hepb::AcuteHepatitisBResultObservation)";
 
 	/**
-	 * The cached OCL query for the '{@link #getAcuteHepatitisBResultObservations(AcuteHepatitisBPHCRRelevantDiagnosticTestsAndOrLaboratoryDataSection) <em>Get Acute Hepatitis BResult Observations</em>}' query operation.
-	 * <!-- begin-user-doc -->
+   * The cached OCL query for the '{@link #getAcuteHepatitisBResultObservations(AcuteHepatitisBPHCRRelevantDiagnosticTestsAndOrLaboratoryDataSection) <em>Get Acute Hepatitis BResult Observations</em>}' query operation.
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getAcuteHepatitisBResultObservations(AcuteHepatitisBPHCRRelevantDiagnosticTestsAndOrLaboratoryDataSection)
-	 * @generated
-	 * @ordered
-	 */
+   * @see #getAcuteHepatitisBResultObservations(AcuteHepatitisBPHCRRelevantDiagnosticTestsAndOrLaboratoryDataSection)
+   * @generated
+   * @ordered
+   */
 	protected static OCLExpression<EClassifier> GET_ACUTE_HEPATITIS_BRESULT_OBSERVATIONS__EOCL_QRY;
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(hepb::AcuteHepatitisBResultObservation)).oclAsType(hepb::AcuteHepatitisBResultObservation)
-	 * @param acuteHepatitisBPHCRRelevantDiagnosticTestsAndOrLaboratoryDataSection The receiving '<em><b>Acute Hepatitis BPHCR Relevant Diagnostic Tests And Or Laboratory Data Section</b></em>' model object.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	
 	public static  EList<AcuteHepatitisBResultObservation> getAcuteHepatitisBResultObservations(AcuteHepatitisBPHCRRelevantDiagnosticTestsAndOrLaboratoryDataSection acuteHepatitisBPHCRRelevantDiagnosticTestsAndOrLaboratoryDataSection) {
-		if (GET_ACUTE_HEPATITIS_BRESULT_OBSERVATIONS__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(HepbPackage.Literals.ACUTE_HEPATITIS_BPHCR_RELEVANT_DIAGNOSTIC_TESTS_AND_OR_LABORATORY_DATA_SECTION, HepbPackage.Literals.ACUTE_HEPATITIS_BPHCR_RELEVANT_DIAGNOSTIC_TESTS_AND_OR_LABORATORY_DATA_SECTION.getEAllOperations().get(70));
-			try {
-				GET_ACUTE_HEPATITIS_BRESULT_OBSERVATIONS__EOCL_QRY = helper.createQuery(GET_ACUTE_HEPATITIS_BRESULT_OBSERVATIONS__EOCL_EXP);
-			}
-			catch (ParserException pe) {
-				throw new UnsupportedOperationException(pe.getLocalizedMessage());
-			}
-		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_ACUTE_HEPATITIS_BRESULT_OBSERVATIONS__EOCL_QRY);
-		@SuppressWarnings("unchecked")
-		Collection<AcuteHepatitisBResultObservation> result = (Collection<AcuteHepatitisBResultObservation>) query.evaluate(acuteHepatitisBPHCRRelevantDiagnosticTestsAndOrLaboratoryDataSection);
-		return new BasicEList.UnmodifiableEList<AcuteHepatitisBResultObservation>(result.size(), result.toArray());
-	}
+    if (GET_ACUTE_HEPATITIS_BRESULT_OBSERVATIONS__EOCL_QRY == null)
+    {
+      OCL.Helper helper = EOCL_ENV.createOCLHelper();
+      helper.setOperationContext(HepbPackage.Literals.ACUTE_HEPATITIS_BPHCR_RELEVANT_DIAGNOSTIC_TESTS_AND_OR_LABORATORY_DATA_SECTION, HepbPackage.Literals.ACUTE_HEPATITIS_BPHCR_RELEVANT_DIAGNOSTIC_TESTS_AND_OR_LABORATORY_DATA_SECTION.getEAllOperations().get(72));
+      try
+      {
+        GET_ACUTE_HEPATITIS_BRESULT_OBSERVATIONS__EOCL_QRY = helper.createQuery(GET_ACUTE_HEPATITIS_BRESULT_OBSERVATIONS__EOCL_EXP);
+      }
+      catch (ParserException pe)
+      {
+        throw new UnsupportedOperationException(pe.getLocalizedMessage());
+      }
+    }
+    OCL.Query query = EOCL_ENV.createQuery(GET_ACUTE_HEPATITIS_BRESULT_OBSERVATIONS__EOCL_QRY);
+    @SuppressWarnings("unchecked")
+    Collection<AcuteHepatitisBResultObservation> result = (Collection<AcuteHepatitisBResultObservation>) query.evaluate(acuteHepatitisBPHCRRelevantDiagnosticTestsAndOrLaboratoryDataSection);
+    return new BasicEList.UnmodifiableEList<AcuteHepatitisBResultObservation>(result.size(), result.toArray());
+  }
 
 	/**
-	 * The cached OCL expression body for the '{@link #validateResultsSectionTemplateId(AcuteHepatitisBPHCRRelevantDiagnosticTestsAndOrLaboratoryDataSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Results Section Template Id</em>}' operation.
-	 * <!-- begin-user-doc -->
+   * The cached OCL expression body for the '{@link #validateResultsSectionTemplateId(AcuteHepatitisBPHCRRelevantDiagnosticTestsAndOrLaboratoryDataSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Results Section Template Id</em>}' operation.
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateResultsSectionTemplateId(AcuteHepatitisBPHCRRelevantDiagnosticTestsAndOrLaboratoryDataSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
+   * @see #validateResultsSectionTemplateId(AcuteHepatitisBPHCRRelevantDiagnosticTestsAndOrLaboratoryDataSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+   * @generated
+   * @ordered
+   */
 	protected static final String VALIDATE_RESULTS_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.15.2.13')";
 
 	/**
-	 * The cached OCL invariant for the '{@link #validateResultsSectionTemplateId(AcuteHepatitisBPHCRRelevantDiagnosticTestsAndOrLaboratoryDataSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Results Section Template Id</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
+   * The cached OCL invariant for the '{@link #validateResultsSectionTemplateId(AcuteHepatitisBPHCRRelevantDiagnosticTestsAndOrLaboratoryDataSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Results Section Template Id</em>}' invariant operation.
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateResultsSectionTemplateId(AcuteHepatitisBPHCRRelevantDiagnosticTestsAndOrLaboratoryDataSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
+   * @see #validateResultsSectionTemplateId(AcuteHepatitisBPHCRRelevantDiagnosticTestsAndOrLaboratoryDataSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+   * @generated
+   * @ordered
+   */
 	
 	protected static Constraint VALIDATE_RESULTS_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 	
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.15.2.13')
-	 * @param acuteHepatitisBPHCRRelevantDiagnosticTestsAndOrLaboratoryDataSection The receiving '<em><b>Acute Hepatitis BPHCR Relevant Diagnostic Tests And Or Laboratory Data Section</b></em>' model object.
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
+   * <!-- begin-model-doc -->
+   * @param acuteHepatitisBPHCRRelevantDiagnosticTestsAndOrLaboratoryDataSection The receiving '<em><b>Acute Hepatitis BPHCR Relevant Diagnostic Tests And Or Laboratory Data Section</b></em>' model object.
+   * @param diagnostics The chain of diagnostics to which problems are to be appended.
+   * @param context The cache of context-specific information.
+   * <!-- end-model-doc -->
+   * @generated
+   */
 	
 	public static  boolean validateResultsSectionTemplateId(AcuteHepatitisBPHCRRelevantDiagnosticTestsAndOrLaboratoryDataSection acuteHepatitisBPHCRRelevantDiagnosticTestsAndOrLaboratoryDataSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
   	  
-		if (VALIDATE_RESULTS_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setContext(HepbPackage.Literals.ACUTE_HEPATITIS_BPHCR_RELEVANT_DIAGNOSTIC_TESTS_AND_OR_LABORATORY_DATA_SECTION);
-			try {
-				VALIDATE_RESULTS_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_RESULTS_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
-				throw new UnsupportedOperationException(pe.getLocalizedMessage());
-			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_RESULTS_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(acuteHepatitisBPHCRRelevantDiagnosticTestsAndOrLaboratoryDataSection)) {
-			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 HepbValidator.DIAGNOSTIC_SOURCE,
-						 HepbValidator.ACUTE_HEPATITIS_BPHCR_RELEVANT_DIAGNOSTIC_TESTS_AND_OR_LABORATORY_DATA_SECTION__RESULTS_SECTION_TEMPLATE_ID,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "ResultsSectionTemplateId", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(acuteHepatitisBPHCRRelevantDiagnosticTestsAndOrLaboratoryDataSection, context) }),
-						 new Object [] { acuteHepatitisBPHCRRelevantDiagnosticTestsAndOrLaboratoryDataSection }));
-			}
-			 
-			return false;
-		}
-		return true;
-	}
+    if (VALIDATE_RESULTS_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+      OCL.Helper helper = EOCL_ENV.createOCLHelper();
+      helper.setContext(HepbPackage.Literals.ACUTE_HEPATITIS_BPHCR_RELEVANT_DIAGNOSTIC_TESTS_AND_OR_LABORATORY_DATA_SECTION);
+      try
+      {
+        VALIDATE_RESULTS_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_RESULTS_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+      }
+      catch (ParserException pe)
+      {
+        throw new UnsupportedOperationException(pe.getLocalizedMessage());
+      }
+    }
+    if (!EOCL_ENV.createQuery(VALIDATE_RESULTS_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(acuteHepatitisBPHCRRelevantDiagnosticTestsAndOrLaboratoryDataSection))
+    {
+      if (diagnostics != null)
+      {
+        diagnostics.add
+          (new BasicDiagnostic
+            (Diagnostic.ERROR,
+             HepbValidator.DIAGNOSTIC_SOURCE,
+             HepbValidator.ACUTE_HEPATITIS_BPHCR_RELEVANT_DIAGNOSTIC_TESTS_AND_OR_LABORATORY_DATA_SECTION__RESULTS_SECTION_TEMPLATE_ID,
+             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "ResultsSectionTemplateId", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(acuteHepatitisBPHCRRelevantDiagnosticTestsAndOrLaboratoryDataSection, context) }),
+             new Object [] { acuteHepatitisBPHCRRelevantDiagnosticTestsAndOrLaboratoryDataSection }));
+      }
+       
+      return false;
+    }
+    return true;
+  }
 
 } // AcuteHepatitisBPHCRRelevantDiagnosticTestsAndOrLaboratoryDataSectionOperations

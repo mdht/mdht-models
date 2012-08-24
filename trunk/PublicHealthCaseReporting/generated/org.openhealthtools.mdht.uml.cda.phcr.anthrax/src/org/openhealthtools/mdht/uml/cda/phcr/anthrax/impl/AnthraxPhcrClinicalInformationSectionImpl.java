@@ -10,12 +10,15 @@
  *******************************************************************************/
 package org.openhealthtools.mdht.uml.cda.phcr.anthrax.impl;
 
+import java.lang.Iterable;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
 
 import org.eclipse.emf.ecore.EClass;
 
+import org.eclipse.emf.ecore.EObject;
+import org.openhealthtools.mdht.emf.runtime.util.Initializer;
 import org.openhealthtools.mdht.uml.cda.phcr.anthrax.AnthraxCaseObservation;
 import org.openhealthtools.mdht.uml.cda.phcr.anthrax.AnthraxPackage;
 import org.openhealthtools.mdht.uml.cda.phcr.anthrax.AnthraxPhcrClinicalInformationSection;
@@ -37,59 +40,68 @@ import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
  */
 public class AnthraxPhcrClinicalInformationSectionImpl extends PhcrClinicalInformationSectionImpl implements AnthraxPhcrClinicalInformationSection {
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	protected AnthraxPhcrClinicalInformationSectionImpl() {
-		super();
-	}
+    super();
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	@Override
 	protected EClass eStaticClass() {
-		return AnthraxPackage.Literals.ANTHRAX_PHCR_CLINICAL_INFORMATION_SECTION;
-	}
+    return AnthraxPackage.Literals.ANTHRAX_PHCR_CLINICAL_INFORMATION_SECTION;
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateAnthraxPhcrClinicalInformationSectionAnthraxCaseObservation(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return AnthraxPhcrClinicalInformationSectionOperations.validateAnthraxPhcrClinicalInformationSectionAnthraxCaseObservation(this, diagnostics, context);
-	}
+    return AnthraxPhcrClinicalInformationSectionOperations.validateAnthraxPhcrClinicalInformationSectionAnthraxCaseObservation(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public AnthraxCaseObservation getAnthraxCaseObservation() {
-		return AnthraxPhcrClinicalInformationSectionOperations.getAnthraxCaseObservation(this);
-	}
+    return AnthraxPhcrClinicalInformationSectionOperations.getAnthraxCaseObservation(this);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	@Override
 	public boolean validatePhcrClinicalInformationSectionTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return AnthraxPhcrClinicalInformationSectionOperations.validatePhcrClinicalInformationSectionTemplateId(this, diagnostics, context);
-	}
+    return AnthraxPhcrClinicalInformationSectionOperations.validatePhcrClinicalInformationSectionTemplateId(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public AnthraxPhcrClinicalInformationSection init() {
-    	CDAUtil.init(this);
-    	return this;
-	}
+      return Initializer.Util.init(this);
+  }
+
+  /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    public AnthraxPhcrClinicalInformationSection init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
 } //AnthraxPhcrClinicalInformationSectionImpl

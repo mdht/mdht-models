@@ -10,10 +10,13 @@
  *******************************************************************************/
 package org.openhealthtools.mdht.uml.cda.phcr.tss;
 
+import java.lang.Iterable;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
 
+import org.eclipse.emf.ecore.EObject;
+import org.openhealthtools.mdht.emf.runtime.util.Initializer;
 import org.openhealthtools.mdht.uml.cda.phcr.PhcrClinicalInformationSection;
 
 /**
@@ -23,39 +26,42 @@ import org.openhealthtools.mdht.uml.cda.phcr.PhcrClinicalInformationSection;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.phcr.tss.tssPackage#getTssPhcrClinicalInformationSection()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation templateId.root='2.16.840.1.113883.10.20.15.2.42' constraints.validation.error='TssPhcrClinicalInformationSectionTemplateId TssPhcrClinicalInformationSectionTssCaseObservation'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='TssPhcrClinicalInformationSectionTemplateId TssPhcrClinicalInformationSectionTssCaseObservation' templateId.root='2.16.840.1.113883.10.20.15.2.42'"
  * @generated
  */
 public interface TssPhcrClinicalInformationSection extends PhcrClinicalInformationSection {
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.entry->one(entry : cda::Entry | not entry.observation.oclIsUndefined() and entry.observation.oclIsKindOf(tss::TssCaseObservation) and entry.typeCode = vocab::x_ActRelationshipEntry::DRIV)
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entry->one(entry : cda::Entry | not entry.observation.oclIsUndefined() and entry.observation.oclIsKindOf(tss::TssCaseObservation) and entry.typeCode = vocab::x_ActRelationshipEntry::DRIV)'"
-	 * @generated
-	 */
+   * <!-- begin-model-doc -->
+   * @param diagnostics The chain of diagnostics to which problems are to be appended.
+   * @param context The cache of context-specific information.
+   * <!-- end-model-doc -->
+   * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entry->one(entry : cda::Entry | not entry.observation.oclIsUndefined() and entry.observation.oclIsKindOf(tss::TssCaseObservation) and entry.typeCode = vocab::x_ActRelationshipEntry::DRIV)'"
+   * @generated
+   */
 	boolean validateTssPhcrClinicalInformationSectionTssCaseObservation(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(tss::TssCaseObservation))->asSequence()->first().oclAsType(tss::TssCaseObservation)
-	 * <!-- end-model-doc -->
-	 * @model kind="operation" required="true" ordered="false"
-	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(tss::TssCaseObservation))->asSequence()->first().oclAsType(tss::TssCaseObservation)'"
-	 * @generated
-	 */
+   * @model kind="operation" required="true" ordered="false"
+   *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(tss::TssCaseObservation))->asSequence()->any(true).oclAsType(tss::TssCaseObservation)'"
+   * @generated
+   */
 	TssCaseObservation getTssCaseObservation();
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public TssPhcrClinicalInformationSection init();
+
+  /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    public TssPhcrClinicalInformationSection init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // TssPhcrClinicalInformationSection

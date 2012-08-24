@@ -10,10 +10,13 @@
  *******************************************************************************/
 package org.openhealthtools.mdht.uml.cda.phcr.impl;
 
+import java.lang.Iterable;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.ecore.EClass;
+import org.eclipse.emf.ecore.EObject;
+import org.openhealthtools.mdht.emf.runtime.util.Initializer;
 import org.openhealthtools.mdht.uml.cda.impl.SubstanceAdministrationImpl;
 import org.openhealthtools.mdht.uml.cda.phcr.PhcrPackage;
 import org.openhealthtools.mdht.uml.cda.phcr.TreatmentGivenSubstanceAdministration;
@@ -31,112 +34,121 @@ import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
  */
 public class TreatmentGivenSubstanceAdministrationImpl extends SubstanceAdministrationImpl implements TreatmentGivenSubstanceAdministration {
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	protected TreatmentGivenSubstanceAdministrationImpl() {
-		super();
-	}
+    super();
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	@Override
 	protected EClass eStaticClass() {
-		return PhcrPackage.Literals.TREATMENT_GIVEN_SUBSTANCE_ADMINISTRATION;
-	}
+    return PhcrPackage.Literals.TREATMENT_GIVEN_SUBSTANCE_ADMINISTRATION;
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateTreatmentGivenSubstanceAdministrationTreatmentGivenNegationInd(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return TreatmentGivenSubstanceAdministrationOperations.validateTreatmentGivenSubstanceAdministrationTreatmentGivenNegationInd(this, diagnostics, context);
-	}
+    return TreatmentGivenSubstanceAdministrationOperations.validateTreatmentGivenSubstanceAdministrationTreatmentGivenNegationInd(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateTreatmentGivenSubstanceAdministrationTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return TreatmentGivenSubstanceAdministrationOperations.validateTreatmentGivenSubstanceAdministrationTemplateId(this, diagnostics, context);
-	}
+    return TreatmentGivenSubstanceAdministrationOperations.validateTreatmentGivenSubstanceAdministrationTemplateId(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateTreatmentGivenSubstanceAdministrationClassCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return TreatmentGivenSubstanceAdministrationOperations.validateTreatmentGivenSubstanceAdministrationClassCode(this, diagnostics, context);
-	}
+    return TreatmentGivenSubstanceAdministrationOperations.validateTreatmentGivenSubstanceAdministrationClassCode(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateTreatmentGivenSubstanceAdministrationEffectiveTime(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return TreatmentGivenSubstanceAdministrationOperations.validateTreatmentGivenSubstanceAdministrationEffectiveTime(this, diagnostics, context);
-	}
+    return TreatmentGivenSubstanceAdministrationOperations.validateTreatmentGivenSubstanceAdministrationEffectiveTime(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateTreatmentGivenSubstanceAdministrationRouteCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return TreatmentGivenSubstanceAdministrationOperations.validateTreatmentGivenSubstanceAdministrationRouteCodeP(this, diagnostics, context);
-	}
+    return TreatmentGivenSubstanceAdministrationOperations.validateTreatmentGivenSubstanceAdministrationRouteCodeP(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateTreatmentGivenSubstanceAdministrationMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return TreatmentGivenSubstanceAdministrationOperations.validateTreatmentGivenSubstanceAdministrationMoodCode(this, diagnostics, context);
-	}
+    return TreatmentGivenSubstanceAdministrationOperations.validateTreatmentGivenSubstanceAdministrationMoodCode(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateTreatmentGivenSubstanceAdministrationNegationInd(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return TreatmentGivenSubstanceAdministrationOperations.validateTreatmentGivenSubstanceAdministrationNegationInd(this, diagnostics, context);
-	}
+    return TreatmentGivenSubstanceAdministrationOperations.validateTreatmentGivenSubstanceAdministrationNegationInd(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateTreatmentGivenSubstanceAdministrationStatusCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return TreatmentGivenSubstanceAdministrationOperations.validateTreatmentGivenSubstanceAdministrationStatusCode(this, diagnostics, context);
-	}
+    return TreatmentGivenSubstanceAdministrationOperations.validateTreatmentGivenSubstanceAdministrationStatusCode(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateTreatmentGivenSubstanceAdministrationRouteCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return TreatmentGivenSubstanceAdministrationOperations.validateTreatmentGivenSubstanceAdministrationRouteCode(this, diagnostics, context);
-	}
+    return TreatmentGivenSubstanceAdministrationOperations.validateTreatmentGivenSubstanceAdministrationRouteCode(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public TreatmentGivenSubstanceAdministration init() {
-    	CDAUtil.init(this);
-    	return this;
-	}
+      return Initializer.Util.init(this);
+  }
+
+  /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    public TreatmentGivenSubstanceAdministration init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
 } //TreatmentGivenSubstanceAdministrationImpl

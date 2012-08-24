@@ -38,10 +38,11 @@ import org.openhealthtools.mdht.uml.cda.phcr.operations.CaseObservationOperation
  * <p>
  * The following operations are supported:
  * <ul>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.phcr.anthrax.AnthraxCaseObservation#validateAnthraxCaseObservationValueP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Anthrax Case Observation Value P</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.phcr.anthrax.AnthraxCaseObservation#validateAnthraxCaseObservationValue(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Anthrax Case Observation Value</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.phcr.anthrax.AnthraxCaseObservation#validateAnthraxCaseObservationAnthraxSignsAndSymptomsObservation(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Anthrax Case Observation Anthrax Signs And Symptoms Observation</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.phcr.anthrax.AnthraxCaseObservation#getAnthraxSignsAndSymptomsObservations() <em>Get Anthrax Signs And Symptoms Observations</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.phcr.anthrax.AnthraxCaseObservation#validateProblemObservationTemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Problem Observation Template Id</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.phcr.anthrax.AnthraxCaseObservation#validateCaseObservationValue(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Case Observation Value</em>}</li>
  * </ul>
  * </p>
  *
@@ -49,244 +50,341 @@ import org.openhealthtools.mdht.uml.cda.phcr.operations.CaseObservationOperation
  */
 public class AnthraxCaseObservationOperations extends CaseObservationOperations {
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	protected AnthraxCaseObservationOperations() {
-		super();
-	}
+    super();
+  }
 
 	/**
-	 * The cached OCL expression body for the '{@link #validateAnthraxCaseObservationAnthraxSignsAndSymptomsObservation(AnthraxCaseObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Anthrax Case Observation Anthrax Signs And Symptoms Observation</em>}' operation.
-	 * <!-- begin-user-doc -->
+   * The cached OCL expression body for the '{@link #validateAnthraxCaseObservationValueP(AnthraxCaseObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Anthrax Case Observation Value P</em>}' operation.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #validateAnthraxCaseObservationValueP(AnthraxCaseObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+   * @generated
+   * @ordered
+   */
+  protected static final String VALIDATE_ANTHRAX_CASE_OBSERVATION_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (not self.value->isEmpty())";
+
+  /**
+   * The cached OCL invariant for the '{@link #validateAnthraxCaseObservationValueP(AnthraxCaseObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Anthrax Case Observation Value P</em>}' invariant operation.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #validateAnthraxCaseObservationValueP(AnthraxCaseObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+   * @generated
+   * @ordered
+   */
+  
+  protected static Constraint VALIDATE_ANTHRAX_CASE_OBSERVATION_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * <!-- begin-model-doc -->
+   * @param anthraxCaseObservation The receiving '<em><b>Case Observation</b></em>' model object.
+   * @param diagnostics The chain of diagnostics to which problems are to be appended.
+   * @param context The cache of context-specific information.
+   * <!-- end-model-doc -->
+   * @generated
+   */
+  
+  public static  boolean validateAnthraxCaseObservationValueP(AnthraxCaseObservation anthraxCaseObservation, DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+  	  
+    if (VALIDATE_ANTHRAX_CASE_OBSERVATION_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+      OCL.Helper helper = EOCL_ENV.createOCLHelper();
+      helper.setContext(AnthraxPackage.Literals.ANTHRAX_CASE_OBSERVATION);
+      try
+      {
+        VALIDATE_ANTHRAX_CASE_OBSERVATION_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_ANTHRAX_CASE_OBSERVATION_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+      }
+      catch (ParserException pe)
+      {
+        throw new UnsupportedOperationException(pe.getLocalizedMessage());
+      }
+    }
+    if (!EOCL_ENV.createQuery(VALIDATE_ANTHRAX_CASE_OBSERVATION_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(anthraxCaseObservation))
+    {
+      if (diagnostics != null)
+      {
+        diagnostics.add
+          (new BasicDiagnostic
+            (Diagnostic.ERROR,
+             AnthraxValidator.DIAGNOSTIC_SOURCE,
+             AnthraxValidator.ANTHRAX_CASE_OBSERVATION__ANTHRAX_CASE_OBSERVATION_VALUE_P,
+             AnthraxPlugin.INSTANCE.getString("AnthraxCaseObservationValueP"),
+             new Object [] { anthraxCaseObservation }));
+      }
+      
+      if (context != null) {
+        // generate a pass token for my dependent constraints to short-circuit or filter results
+        @SuppressWarnings("unchecked")
+        Collection<Object> passToken = (Collection<Object>) context.get("org.openhealthtools.mdht.uml.cda.phcr.anthrax.AnthraxCaseObservationValueP");
+        if (passToken == null) {
+          // anticipate a reasonably healthy model
+          passToken = new java.util.ArrayList<Object>(3);
+          context.put("org.openhealthtools.mdht.uml.cda.phcr.anthrax.AnthraxCaseObservationValueP", passToken);
+        }
+        passToken.add(anthraxCaseObservation);
+      }
+       
+      return false;
+    }
+    return true;
+  }
+
+  /**
+   * The cached OCL expression body for the '{@link #validateAnthraxCaseObservationValue(AnthraxCaseObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Anthrax Case Observation Value</em>}' operation.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #validateAnthraxCaseObservationValue(AnthraxCaseObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+   * @generated
+   * @ordered
+   */
+  protected static final String VALIDATE_ANTHRAX_CASE_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (self.value->size() = 1 and self.value->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and "+
+"let value : datatypes::CD = element.oclAsType(datatypes::CD) in "+
+"value.codeSystem = '2.16.840.1.113883.6.96' and (value.code = '409498004' or value.code = '195902009' or value.code = '14972006' or value.code = '84980006' or value.code = '111798006' or value.code = '11389007')))";
+
+  /**
+   * The cached OCL invariant for the '{@link #validateAnthraxCaseObservationValue(AnthraxCaseObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Anthrax Case Observation Value</em>}' invariant operation.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #validateAnthraxCaseObservationValue(AnthraxCaseObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+   * @generated
+   * @ordered
+   */
+  
+  protected static Constraint VALIDATE_ANTHRAX_CASE_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * <!-- begin-model-doc -->
+   * @param anthraxCaseObservation The receiving '<em><b>Case Observation</b></em>' model object.
+   * @param diagnostics The chain of diagnostics to which problems are to be appended.
+   * @param context The cache of context-specific information.
+   * <!-- end-model-doc -->
+   * @generated
+   */
+  
+  public static  boolean validateAnthraxCaseObservationValue(AnthraxCaseObservation anthraxCaseObservation, DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+  	  
+    Object passToken = (context == null) ? null : context.get("org.openhealthtools.mdht.uml.cda.phcr.anthrax.AnthraxCaseObservationValueP");
+    if ((passToken instanceof Collection<?>) && ((Collection<?>) passToken).contains(anthraxCaseObservation)) {
+      // I have a free pass to short-circuit
+      return true;
+    }
+  	  
+    if (VALIDATE_ANTHRAX_CASE_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+      OCL.Helper helper = EOCL_ENV.createOCLHelper();
+      helper.setContext(AnthraxPackage.Literals.ANTHRAX_CASE_OBSERVATION);
+      try
+      {
+        VALIDATE_ANTHRAX_CASE_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_ANTHRAX_CASE_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+      }
+      catch (ParserException pe)
+      {
+        throw new UnsupportedOperationException(pe.getLocalizedMessage());
+      }
+    }
+    if (!EOCL_ENV.createQuery(VALIDATE_ANTHRAX_CASE_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(anthraxCaseObservation))
+    {
+      if (diagnostics != null)
+      {
+        diagnostics.add
+          (new BasicDiagnostic
+            (Diagnostic.ERROR,
+             AnthraxValidator.DIAGNOSTIC_SOURCE,
+             AnthraxValidator.ANTHRAX_CASE_OBSERVATION__ANTHRAX_CASE_OBSERVATION_VALUE,
+             AnthraxPlugin.INSTANCE.getString("AnthraxCaseObservationValue"),
+             new Object [] { anthraxCaseObservation }));
+      }
+       
+      return false;
+    }
+    return true;
+  }
+
+  /**
+   * The cached OCL expression body for the '{@link #validateAnthraxCaseObservationAnthraxSignsAndSymptomsObservation(AnthraxCaseObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Anthrax Case Observation Anthrax Signs And Symptoms Observation</em>}' operation.
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateAnthraxCaseObservationAnthraxSignsAndSymptomsObservation(AnthraxCaseObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
+   * @see #validateAnthraxCaseObservationAnthraxSignsAndSymptomsObservation(AnthraxCaseObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+   * @generated
+   * @ordered
+   */
 	protected static final String VALIDATE_ANTHRAX_CASE_OBSERVATION_ANTHRAX_SIGNS_AND_SYMPTOMS_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entryRelationship->exists(entryRelationship : cda::EntryRelationship | not entryRelationship.observation.oclIsUndefined() and entryRelationship.observation.oclIsKindOf(anthrax::AnthraxSignsAndSymptomsObservation) and entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::MFST)";
 
 	/**
-	 * The cached OCL invariant for the '{@link #validateAnthraxCaseObservationAnthraxSignsAndSymptomsObservation(AnthraxCaseObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Anthrax Case Observation Anthrax Signs And Symptoms Observation</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
+   * The cached OCL invariant for the '{@link #validateAnthraxCaseObservationAnthraxSignsAndSymptomsObservation(AnthraxCaseObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Anthrax Case Observation Anthrax Signs And Symptoms Observation</em>}' invariant operation.
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateAnthraxCaseObservationAnthraxSignsAndSymptomsObservation(AnthraxCaseObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
+   * @see #validateAnthraxCaseObservationAnthraxSignsAndSymptomsObservation(AnthraxCaseObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+   * @generated
+   * @ordered
+   */
 	
 	protected static Constraint VALIDATE_ANTHRAX_CASE_OBSERVATION_ANTHRAX_SIGNS_AND_SYMPTOMS_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.entryRelationship->exists(entryRelationship : cda::EntryRelationship | not entryRelationship.observation.oclIsUndefined() and entryRelationship.observation.oclIsKindOf(anthrax::AnthraxSignsAndSymptomsObservation) and entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::MFST)
-	 * @param anthraxCaseObservation The receiving '<em><b>Case Observation</b></em>' model object.
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
+   * <!-- begin-model-doc -->
+   * @param anthraxCaseObservation The receiving '<em><b>Case Observation</b></em>' model object.
+   * @param diagnostics The chain of diagnostics to which problems are to be appended.
+   * @param context The cache of context-specific information.
+   * <!-- end-model-doc -->
+   * @generated
+   */
 	
 	public static  boolean validateAnthraxCaseObservationAnthraxSignsAndSymptomsObservation(AnthraxCaseObservation anthraxCaseObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
-		if (VALIDATE_ANTHRAX_CASE_OBSERVATION_ANTHRAX_SIGNS_AND_SYMPTOMS_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setContext(AnthraxPackage.Literals.ANTHRAX_CASE_OBSERVATION);
-			try {
-				VALIDATE_ANTHRAX_CASE_OBSERVATION_ANTHRAX_SIGNS_AND_SYMPTOMS_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_ANTHRAX_CASE_OBSERVATION_ANTHRAX_SIGNS_AND_SYMPTOMS_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
-				throw new UnsupportedOperationException(pe.getLocalizedMessage());
-			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_ANTHRAX_CASE_OBSERVATION_ANTHRAX_SIGNS_AND_SYMPTOMS_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(anthraxCaseObservation)) {
-			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.WARNING,
-						 AnthraxValidator.DIAGNOSTIC_SOURCE,
-						 AnthraxValidator.ANTHRAX_CASE_OBSERVATION__ANTHRAX_CASE_OBSERVATION_ANTHRAX_SIGNS_AND_SYMPTOMS_OBSERVATION,
-						 AnthraxPlugin.INSTANCE.getString("AnthraxCaseObservationAnthraxSignsAndSymptomsObservation"),
-						 new Object [] { anthraxCaseObservation }));
-			}
-			return false;
-		}
-		return true;
-	}
+  	  
+    if (VALIDATE_ANTHRAX_CASE_OBSERVATION_ANTHRAX_SIGNS_AND_SYMPTOMS_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+      OCL.Helper helper = EOCL_ENV.createOCLHelper();
+      helper.setContext(AnthraxPackage.Literals.ANTHRAX_CASE_OBSERVATION);
+      try
+      {
+        VALIDATE_ANTHRAX_CASE_OBSERVATION_ANTHRAX_SIGNS_AND_SYMPTOMS_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_ANTHRAX_CASE_OBSERVATION_ANTHRAX_SIGNS_AND_SYMPTOMS_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+      }
+      catch (ParserException pe)
+      {
+        throw new UnsupportedOperationException(pe.getLocalizedMessage());
+      }
+    }
+    if (!EOCL_ENV.createQuery(VALIDATE_ANTHRAX_CASE_OBSERVATION_ANTHRAX_SIGNS_AND_SYMPTOMS_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(anthraxCaseObservation))
+    {
+      if (diagnostics != null)
+      {
+        diagnostics.add
+          (new BasicDiagnostic
+            (Diagnostic.WARNING,
+             AnthraxValidator.DIAGNOSTIC_SOURCE,
+             AnthraxValidator.ANTHRAX_CASE_OBSERVATION__ANTHRAX_CASE_OBSERVATION_ANTHRAX_SIGNS_AND_SYMPTOMS_OBSERVATION,
+             AnthraxPlugin.INSTANCE.getString("AnthraxCaseObservationAnthraxSignsAndSymptomsObservation"),
+             new Object [] { anthraxCaseObservation }));
+      }
+       
+      return false;
+    }
+    return true;
+  }
 
 	/**
-	 * The cached OCL expression body for the '{@link #getAnthraxSignsAndSymptomsObservations(AnthraxCaseObservation) <em>Get Anthrax Signs And Symptoms Observations</em>}' operation.
-	 * <!-- begin-user-doc -->
+   * The cached OCL expression body for the '{@link #getAnthraxSignsAndSymptomsObservations(AnthraxCaseObservation) <em>Get Anthrax Signs And Symptoms Observations</em>}' operation.
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getAnthraxSignsAndSymptomsObservations(AnthraxCaseObservation)
-	 * @generated
-	 * @ordered
-	 */
+   * @see #getAnthraxSignsAndSymptomsObservations(AnthraxCaseObservation)
+   * @generated
+   * @ordered
+   */
 	protected static final String GET_ANTHRAX_SIGNS_AND_SYMPTOMS_OBSERVATIONS__EOCL_EXP = "self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(anthrax::AnthraxSignsAndSymptomsObservation)).oclAsType(anthrax::AnthraxSignsAndSymptomsObservation)";
 
 	/**
-	 * The cached OCL query for the '{@link #getAnthraxSignsAndSymptomsObservations(AnthraxCaseObservation) <em>Get Anthrax Signs And Symptoms Observations</em>}' query operation.
-	 * <!-- begin-user-doc -->
+   * The cached OCL query for the '{@link #getAnthraxSignsAndSymptomsObservations(AnthraxCaseObservation) <em>Get Anthrax Signs And Symptoms Observations</em>}' query operation.
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getAnthraxSignsAndSymptomsObservations(AnthraxCaseObservation)
-	 * @generated
-	 * @ordered
-	 */
+   * @see #getAnthraxSignsAndSymptomsObservations(AnthraxCaseObservation)
+   * @generated
+   * @ordered
+   */
 	protected static OCLExpression<EClassifier> GET_ANTHRAX_SIGNS_AND_SYMPTOMS_OBSERVATIONS__EOCL_QRY;
 
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(anthrax::AnthraxSignsAndSymptomsObservation)).oclAsType(anthrax::AnthraxSignsAndSymptomsObservation)
-	 * @param anthraxCaseObservation The receiving '<em><b>Case Observation</b></em>' model object.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	
 	public static  EList<AnthraxSignsAndSymptomsObservation> getAnthraxSignsAndSymptomsObservations(AnthraxCaseObservation anthraxCaseObservation) {
-		if (GET_ANTHRAX_SIGNS_AND_SYMPTOMS_OBSERVATIONS__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(AnthraxPackage.Literals.ANTHRAX_CASE_OBSERVATION, AnthraxPackage.Literals.ANTHRAX_CASE_OBSERVATION.getEAllOperations().get(77));
-			try {
-				GET_ANTHRAX_SIGNS_AND_SYMPTOMS_OBSERVATIONS__EOCL_QRY = helper.createQuery(GET_ANTHRAX_SIGNS_AND_SYMPTOMS_OBSERVATIONS__EOCL_EXP);
-			}
-			catch (ParserException pe) {
-				throw new UnsupportedOperationException(pe.getLocalizedMessage());
-			}
-		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_ANTHRAX_SIGNS_AND_SYMPTOMS_OBSERVATIONS__EOCL_QRY);
-		@SuppressWarnings("unchecked")
-		Collection<AnthraxSignsAndSymptomsObservation> result = (Collection<AnthraxSignsAndSymptomsObservation>) query.evaluate(anthraxCaseObservation);
-		return new BasicEList.UnmodifiableEList<AnthraxSignsAndSymptomsObservation>(result.size(), result.toArray());
-	}
+    if (GET_ANTHRAX_SIGNS_AND_SYMPTOMS_OBSERVATIONS__EOCL_QRY == null)
+    {
+      OCL.Helper helper = EOCL_ENV.createOCLHelper();
+      helper.setOperationContext(AnthraxPackage.Literals.ANTHRAX_CASE_OBSERVATION, AnthraxPackage.Literals.ANTHRAX_CASE_OBSERVATION.getEAllOperations().get(82));
+      try
+      {
+        GET_ANTHRAX_SIGNS_AND_SYMPTOMS_OBSERVATIONS__EOCL_QRY = helper.createQuery(GET_ANTHRAX_SIGNS_AND_SYMPTOMS_OBSERVATIONS__EOCL_EXP);
+      }
+      catch (ParserException pe)
+      {
+        throw new UnsupportedOperationException(pe.getLocalizedMessage());
+      }
+    }
+    OCL.Query query = EOCL_ENV.createQuery(GET_ANTHRAX_SIGNS_AND_SYMPTOMS_OBSERVATIONS__EOCL_QRY);
+    @SuppressWarnings("unchecked")
+    Collection<AnthraxSignsAndSymptomsObservation> result = (Collection<AnthraxSignsAndSymptomsObservation>) query.evaluate(anthraxCaseObservation);
+    return new BasicEList.UnmodifiableEList<AnthraxSignsAndSymptomsObservation>(result.size(), result.toArray());
+  }
 
 	/**
-	 * The cached OCL expression body for the '{@link #validateProblemObservationTemplateId(AnthraxCaseObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Problem Observation Template Id</em>}' operation.
-	 * <!-- begin-user-doc -->
+   * The cached OCL expression body for the '{@link #validateProblemObservationTemplateId(AnthraxCaseObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Problem Observation Template Id</em>}' operation.
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateProblemObservationTemplateId(AnthraxCaseObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
+   * @see #validateProblemObservationTemplateId(AnthraxCaseObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+   * @generated
+   * @ordered
+   */
 	protected static final String VALIDATE_PROBLEM_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.15.3.36')";
 
 	/**
-	 * The cached OCL invariant for the '{@link #validateProblemObservationTemplateId(AnthraxCaseObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Problem Observation Template Id</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
+   * The cached OCL invariant for the '{@link #validateProblemObservationTemplateId(AnthraxCaseObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Problem Observation Template Id</em>}' invariant operation.
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateProblemObservationTemplateId(AnthraxCaseObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
+   * @see #validateProblemObservationTemplateId(AnthraxCaseObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+   * @generated
+   * @ordered
+   */
 	
 	protected static Constraint VALIDATE_PROBLEM_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 	
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.15.3.36')
-	 * @param anthraxCaseObservation The receiving '<em><b>Case Observation</b></em>' model object.
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
+   * <!-- begin-model-doc -->
+   * @param anthraxCaseObservation The receiving '<em><b>Case Observation</b></em>' model object.
+   * @param diagnostics The chain of diagnostics to which problems are to be appended.
+   * @param context The cache of context-specific information.
+   * <!-- end-model-doc -->
+   * @generated
+   */
 	
 	public static  boolean validateProblemObservationTemplateId(AnthraxCaseObservation anthraxCaseObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
-		if (VALIDATE_PROBLEM_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setContext(AnthraxPackage.Literals.ANTHRAX_CASE_OBSERVATION);
-			try {
-				VALIDATE_PROBLEM_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PROBLEM_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
-				throw new UnsupportedOperationException(pe.getLocalizedMessage());
-			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PROBLEM_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(anthraxCaseObservation)) {
-			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 AnthraxValidator.DIAGNOSTIC_SOURCE,
-						 AnthraxValidator.ANTHRAX_CASE_OBSERVATION__PROBLEM_OBSERVATION_TEMPLATE_ID,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "ProblemObservationTemplateId", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(anthraxCaseObservation, context) }),
-						 new Object [] { anthraxCaseObservation }));
-			}
-			return false;
-		}
-		return true;
-	}
-
-	/**
-	 * The cached OCL expression body for the '{@link #validateCaseObservationValue(AnthraxCaseObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Case Observation Value</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #validateCaseObservationValue(AnthraxCaseObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
-	protected static final String VALIDATE_CASE_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (self.value->size() = 1 and self.value->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and "+
-"let value : datatypes::CD = element.oclAsType(datatypes::CD) in "+
-"value.codeSystem = '2.16.840.1.113883.6.96' and (value.code = '409498004' or value.code = '195902009' or value.code = '14972006' or value.code = '84980006' or value.code = '111798006' or value.code = '11389007')))";
-
-	/**
-	 * The cached OCL invariant for the '{@link #validateCaseObservationValue(AnthraxCaseObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Case Observation Value</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #validateCaseObservationValue(AnthraxCaseObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
-	
-	protected static Constraint VALIDATE_CASE_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-	
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * (self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (self.value->size() = 1 and self.value->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and 
-	 * let value : datatypes::CD = element.oclAsType(datatypes::CD) in 
-	 * value.codeSystem = '2.16.840.1.113883.6.96' and (value.code = '409498004' or value.code = '195902009' or value.code = '14972006' or value.code = '84980006' or value.code = '111798006' or value.code = '11389007')))
-	 * @param anthraxCaseObservation The receiving '<em><b>Case Observation</b></em>' model object.
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
-	
-	public static  boolean validateCaseObservationValue(AnthraxCaseObservation anthraxCaseObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
-		if (VALIDATE_CASE_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setContext(AnthraxPackage.Literals.ANTHRAX_CASE_OBSERVATION);
-			try {
-				VALIDATE_CASE_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_CASE_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
-				throw new UnsupportedOperationException(pe.getLocalizedMessage());
-			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_CASE_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(anthraxCaseObservation)) {
-			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 AnthraxValidator.DIAGNOSTIC_SOURCE,
-						 AnthraxValidator.ANTHRAX_CASE_OBSERVATION__CASE_OBSERVATION_VALUE,
-						 AnthraxPlugin.INSTANCE.getString("CaseObservationValue"),
-						 new Object [] { anthraxCaseObservation }));
-			}
-			return false;
-		}
-		return true;
-	}
+  	  
+    if (VALIDATE_PROBLEM_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+      OCL.Helper helper = EOCL_ENV.createOCLHelper();
+      helper.setContext(AnthraxPackage.Literals.ANTHRAX_CASE_OBSERVATION);
+      try
+      {
+        VALIDATE_PROBLEM_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PROBLEM_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+      }
+      catch (ParserException pe)
+      {
+        throw new UnsupportedOperationException(pe.getLocalizedMessage());
+      }
+    }
+    if (!EOCL_ENV.createQuery(VALIDATE_PROBLEM_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(anthraxCaseObservation))
+    {
+      if (diagnostics != null)
+      {
+        diagnostics.add
+          (new BasicDiagnostic
+            (Diagnostic.ERROR,
+             AnthraxValidator.DIAGNOSTIC_SOURCE,
+             AnthraxValidator.ANTHRAX_CASE_OBSERVATION__PROBLEM_OBSERVATION_TEMPLATE_ID,
+             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "ProblemObservationTemplateId", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(anthraxCaseObservation, context) }),
+             new Object [] { anthraxCaseObservation }));
+      }
+       
+      return false;
+    }
+    return true;
+  }
 
 } // AnthraxCaseObservationOperations

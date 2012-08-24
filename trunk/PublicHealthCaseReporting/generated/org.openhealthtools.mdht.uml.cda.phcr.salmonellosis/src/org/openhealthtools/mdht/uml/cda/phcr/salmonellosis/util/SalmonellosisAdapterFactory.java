@@ -30,6 +30,7 @@ import org.openhealthtools.mdht.uml.cda.phcr.PhcrRelevantDxTestsSection;
 import org.openhealthtools.mdht.uml.cda.phcr.PhcrSocialHistorySection;
 import org.openhealthtools.mdht.uml.cda.phcr.PublicHealthCaseReport;
 import org.openhealthtools.mdht.uml.cda.phcr.SignsAndSymptomsObservation;
+import org.openhealthtools.mdht.uml.cda.phcr.salmonellosis.*;
 import org.openhealthtools.mdht.uml.cda.phcr.salmonellosis.HIVStatusObservation;
 import org.openhealthtools.mdht.uml.cda.phcr.salmonellosis.SalmonellosisCaseObservation;
 import org.openhealthtools.mdht.uml.cda.phcr.salmonellosis.SalmonellosisCaseReport;

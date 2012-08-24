@@ -10,12 +10,15 @@
  *******************************************************************************/
 package org.openhealthtools.mdht.uml.cda.phcr.tularemia.impl;
 
+import java.lang.Iterable;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
 
 import org.eclipse.emf.ecore.EClass;
 
+import org.eclipse.emf.ecore.EObject;
+import org.openhealthtools.mdht.emf.runtime.util.Initializer;
 import org.openhealthtools.mdht.uml.cda.phcr.impl.SignsAndSymptomsObservationImpl;
 
 import org.openhealthtools.mdht.uml.cda.phcr.tularemia.TularemiaPackage;
@@ -36,50 +39,59 @@ import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
  */
 public class TularemiaSignsAndSymptomsObservationImpl extends SignsAndSymptomsObservationImpl implements TularemiaSignsAndSymptomsObservation {
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	protected TularemiaSignsAndSymptomsObservationImpl() {
-		super();
-	}
+    super();
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	@Override
 	protected EClass eStaticClass() {
-		return TularemiaPackage.Literals.TULAREMIA_SIGNS_AND_SYMPTOMS_OBSERVATION;
-	}
+    return TularemiaPackage.Literals.TULAREMIA_SIGNS_AND_SYMPTOMS_OBSERVATION;
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateTularemiaSignsAndSymptomsObservationValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return TularemiaSignsAndSymptomsObservationOperations.validateTularemiaSignsAndSymptomsObservationValue(this, diagnostics, context);
-	}
+    return TularemiaSignsAndSymptomsObservationOperations.validateTularemiaSignsAndSymptomsObservationValue(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	@Override
 	public boolean validateSignsAndSymptomsObservationTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return TularemiaSignsAndSymptomsObservationOperations.validateSignsAndSymptomsObservationTemplateId(this, diagnostics, context);
-	}
+    return TularemiaSignsAndSymptomsObservationOperations.validateSignsAndSymptomsObservationTemplateId(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public TularemiaSignsAndSymptomsObservation init() {
-    	CDAUtil.init(this);
-    	return this;
-	}
+      return Initializer.Util.init(this);
+  }
+
+  /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    public TularemiaSignsAndSymptomsObservation init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
 } //TularemiaSignsAndSymptomsObservationImpl

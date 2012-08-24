@@ -6,12 +6,15 @@
  */
 package org.openhealthtools.mdht.uml.cda.sdtm.impl;
 
+import java.lang.Iterable;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
 
 import org.eclipse.emf.ecore.EClass;
 
+import org.eclipse.emf.ecore.EObject;
+import org.openhealthtools.mdht.emf.runtime.util.Initializer;
 import org.openhealthtools.mdht.uml.cda.impl.ObservationImpl;
 
 import org.openhealthtools.mdht.uml.cda.sdtm.BaselineIndicator;
@@ -154,6 +157,16 @@ public class MicrobiologySusceptibilityImpl extends ObservationImpl implements M
    * <!-- end-user-doc -->
    * @generated
    */
+  public boolean validateMicrobiologySusceptibilityInterpretationCode(DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+    return MicrobiologySusceptibilityOperations.validateMicrobiologySusceptibilityInterpretationCode(this, diagnostics, context);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
   public boolean validateMicrobiologySusceptibilityEventStudyDay(DiagnosticChain diagnostics, Map<Object, Object> context)
   {
     return MicrobiologySusceptibilityOperations.validateMicrobiologySusceptibilityEventStudyDay(this, diagnostics, context);
@@ -214,9 +227,9 @@ public class MicrobiologySusceptibilityImpl extends ObservationImpl implements M
    * <!-- end-user-doc -->
    * @generated
    */
-  public boolean validateMicrobiologySusceptibilityBaselineIndicator(DiagnosticChain diagnostics, Map<Object, Object> context)
+  public boolean validateMicrobiologySusceptibilitymicrobiologySusceptibilityFindingCategoryAssociationmicrobiologySusceptibilityFindingCategoryClassCode(DiagnosticChain diagnostics, Map<Object, Object> context)
   {
-    return MicrobiologySusceptibilityOperations.validateMicrobiologySusceptibilityBaselineIndicator(this, diagnostics, context);
+    return MicrobiologySusceptibilityOperations.validateMicrobiologySusceptibilitymicrobiologySusceptibilityFindingCategoryAssociationmicrobiologySusceptibilityFindingCategoryClassCode(this, diagnostics, context);
   }
 
   /**
@@ -224,9 +237,29 @@ public class MicrobiologySusceptibilityImpl extends ObservationImpl implements M
    * <!-- end-user-doc -->
    * @generated
    */
-  public boolean validateMicrobiologySusceptibilityDerivedDataIndicator(DiagnosticChain diagnostics, Map<Object, Object> context)
+  public boolean validateMicrobiologySusceptibilitymicrobiologySusceptibilityFindingCategoryAssociationmicrobiologySusceptibilityFindingCategoryCode(DiagnosticChain diagnostics, Map<Object, Object> context)
   {
-    return MicrobiologySusceptibilityOperations.validateMicrobiologySusceptibilityDerivedDataIndicator(this, diagnostics, context);
+    return MicrobiologySusceptibilityOperations.validateMicrobiologySusceptibilitymicrobiologySusceptibilityFindingCategoryAssociationmicrobiologySusceptibilityFindingCategoryCode(this, diagnostics, context);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public boolean validateMicrobiologySusceptibilitymicrobiologySusceptibilityFindingCategoryAssociationmicrobiologySusceptibilityFindingCategoryMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+    return MicrobiologySusceptibilityOperations.validateMicrobiologySusceptibilitymicrobiologySusceptibilityFindingCategoryAssociationmicrobiologySusceptibilityFindingCategoryMoodCode(this, diagnostics, context);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public boolean validateMicrobiologySusceptibilitymicrobiologySusceptibilityFindingCategoryAssociationmicrobiologySusceptibilityFindingCategoryValue(DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+    return MicrobiologySusceptibilityOperations.validateMicrobiologySusceptibilitymicrobiologySusceptibilityFindingCategoryAssociationmicrobiologySusceptibilityFindingCategoryValue(this, diagnostics, context);
   }
 
   /**
@@ -244,9 +277,69 @@ public class MicrobiologySusceptibilityImpl extends ObservationImpl implements M
    * <!-- end-user-doc -->
    * @generated
    */
+  public boolean validateMicrobiologySusceptibilitymicrobiologySusceptibilityFindingCategoryAssociationMicrobiologySusceptibilityFindingCategory(DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+    return MicrobiologySusceptibilityOperations.validateMicrobiologySusceptibilitymicrobiologySusceptibilityFindingCategoryAssociationMicrobiologySusceptibilityFindingCategory(this, diagnostics, context);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public boolean validateMicrobiologySusceptibilitymicrobiologySusceptibilityFindingSubCategoryAssociationmicrobiologySusceptibilityFindingSubCategoryClassCode(DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+    return MicrobiologySusceptibilityOperations.validateMicrobiologySusceptibilitymicrobiologySusceptibilityFindingSubCategoryAssociationmicrobiologySusceptibilityFindingSubCategoryClassCode(this, diagnostics, context);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public boolean validateMicrobiologySusceptibilitymicrobiologySusceptibilityFindingSubCategoryAssociationmicrobiologySusceptibilityFindingSubCategoryCode(DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+    return MicrobiologySusceptibilityOperations.validateMicrobiologySusceptibilitymicrobiologySusceptibilityFindingSubCategoryAssociationmicrobiologySusceptibilityFindingSubCategoryCode(this, diagnostics, context);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public boolean validateMicrobiologySusceptibilitymicrobiologySusceptibilityFindingSubCategoryAssociationmicrobiologySusceptibilityFindingSubCategoryMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+    return MicrobiologySusceptibilityOperations.validateMicrobiologySusceptibilitymicrobiologySusceptibilityFindingSubCategoryAssociationmicrobiologySusceptibilityFindingSubCategoryMoodCode(this, diagnostics, context);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public boolean validateMicrobiologySusceptibilitymicrobiologySusceptibilityFindingSubCategoryAssociationmicrobiologySusceptibilityFindingSubCategoryValue(DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+    return MicrobiologySusceptibilityOperations.validateMicrobiologySusceptibilitymicrobiologySusceptibilityFindingSubCategoryAssociationmicrobiologySusceptibilityFindingSubCategoryValue(this, diagnostics, context);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
   public boolean validateMicrobiologySusceptibilitymicrobiologySusceptibilityFindingSubCategoryAssociationTypeCode(DiagnosticChain diagnostics, Map<Object, Object> context)
   {
     return MicrobiologySusceptibilityOperations.validateMicrobiologySusceptibilitymicrobiologySusceptibilityFindingSubCategoryAssociationTypeCode(this, diagnostics, context);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public boolean validateMicrobiologySusceptibilitymicrobiologySusceptibilityFindingSubCategoryAssociationMicrobiologySusceptibilityFindingSubCategory(DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+    return MicrobiologySusceptibilityOperations.validateMicrobiologySusceptibilitymicrobiologySusceptibilityFindingSubCategoryAssociationMicrobiologySusceptibilityFindingSubCategory(this, diagnostics, context);
   }
 
   /**
@@ -294,28 +387,17 @@ public class MicrobiologySusceptibilityImpl extends ObservationImpl implements M
    * <!-- end-user-doc -->
    * @generated
    */
-  public BaselineIndicator getBaselineIndicator()
-  {
-    return MicrobiologySusceptibilityOperations.getBaselineIndicator(this);
-  }
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public DerivedDataIndicator getDerivedDataIndicator()
-  {
-    return MicrobiologySusceptibilityOperations.getDerivedDataIndicator(this);
-  }
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
   public MicrobiologySusceptibility init() {
-    	CDAUtil.init(this);
-    	return this;
+      return Initializer.Util.init(this);
   }
+
+  /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    public MicrobiologySusceptibility init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
 } //MicrobiologySusceptibilityImpl

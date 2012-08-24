@@ -10,11 +10,14 @@
  *******************************************************************************/
 package org.openhealthtools.mdht.uml.cda.phcr.tularemia.impl;
 
+import java.lang.Iterable;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.common.util.EList;
 import org.eclipse.emf.ecore.EClass;
+import org.eclipse.emf.ecore.EObject;
+import org.openhealthtools.mdht.emf.runtime.util.Initializer;
 import org.openhealthtools.mdht.uml.cda.phcr.impl.ResultOrganizerImpl;
 import org.openhealthtools.mdht.uml.cda.phcr.tularemia.TularemiaPackage;
 import org.openhealthtools.mdht.uml.cda.phcr.tularemia.TularemiaResultObservation;
@@ -34,84 +37,92 @@ import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
 public class TularemiaResultOrganizerImpl extends ResultOrganizerImpl implements TularemiaResultOrganizer
 {
   /**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   protected TularemiaResultOrganizerImpl()
   {
-		super();
-	}
+    super();
+  }
 
   /**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   @Override
   protected EClass eStaticClass()
   {
-		return TularemiaPackage.Literals.TULAREMIA_RESULT_ORGANIZER;
-	}
+    return TularemiaPackage.Literals.TULAREMIA_RESULT_ORGANIZER;
+  }
 
   /**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public boolean validateTularemiaResultOrganizerCodeP(DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+    return TularemiaResultOrganizerOperations.validateTularemiaResultOrganizerCodeP(this, diagnostics, context);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateTularemiaResultOrganizerCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return TularemiaResultOrganizerOperations.validateTularemiaResultOrganizerCode(this, diagnostics, context);
-	}
+    return TularemiaResultOrganizerOperations.validateTularemiaResultOrganizerCode(this, diagnostics, context);
+  }
 
 		/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   public boolean validateTularemiaResultOrganizerTularemiaResultObservation(DiagnosticChain diagnostics, Map<Object, Object> context)
   {
-		return TularemiaResultOrganizerOperations.validateTularemiaResultOrganizerTularemiaResultObservation(this, diagnostics, context);
-	}
+    return TularemiaResultOrganizerOperations.validateTularemiaResultOrganizerTularemiaResultObservation(this, diagnostics, context);
+  }
 
   /**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   public EList<TularemiaResultObservation> getTularemiaResultObservations()
   {
-		return TularemiaResultOrganizerOperations.getTularemiaResultObservations(this);
-	}
+    return TularemiaResultOrganizerOperations.getTularemiaResultObservations(this);
+  }
 
   /**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   @Override
   public boolean validateResultOrganizerTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context)
   {
-		return TularemiaResultOrganizerOperations.validateResultOrganizerTemplateId(this, diagnostics, context);
-	}
+    return TularemiaResultOrganizerOperations.validateResultOrganizerTemplateId(this, diagnostics, context);
+  }
 
   /**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
-  @Override
-  public boolean validateResultOrganizerCode(DiagnosticChain diagnostics, Map<Object, Object> context)
-  {
-		return TularemiaResultOrganizerOperations.validateResultOrganizerCode(this, diagnostics, context);
-	}
-
-  /**
-	 * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   public TularemiaResultOrganizer init() {
-    	CDAUtil.init(this);
-    	return this;
-	}
+      return Initializer.Util.init(this);
+  }
+
+  /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    public TularemiaResultOrganizer init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
 } //TularemiaResultOrganizerImpl

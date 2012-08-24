@@ -10,11 +10,14 @@
  *******************************************************************************/
 package org.openhealthtools.mdht.uml.cda.phcr.salmonellosis;
 
+import java.lang.Iterable;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.common.util.EList;
 
+import org.eclipse.emf.ecore.EObject;
+import org.openhealthtools.mdht.emf.runtime.util.Initializer;
 import org.openhealthtools.mdht.uml.cda.phcr.CaseObservation;
 
 /**
@@ -24,15 +27,38 @@ import org.openhealthtools.mdht.uml.cda.phcr.CaseObservation;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.phcr.salmonellosis.SalmonellosisPackage#getSalmonellosisCaseObservation()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation templateId.root='2.16.840.1.113883.10.20.15.3.116' constraints.validation.error='SalmonellosisCaseObservationTemplateId' constraints.validation.warning='SalmonellosisCaseObservationSalmonellosisSignsAndSymptomsObservation'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='SalmonellosisCaseObservationTemplateId SalmonellosisCaseObservationValue' templateId.root='2.16.840.1.113883.10.20.15.3.116' constraints.validation.warning='SalmonellosisCaseObservationTargetSiteCode SalmonellosisCaseObservationSalmonellosisSignsAndSymptomsObservation'"
  * @generated
  */
 public interface SalmonellosisCaseObservation extends CaseObservation {
 	/**
    * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * <!-- begin-model-doc -->
+   * @param diagnostics The chain of diagnostics to which problems are to be appended.
+   * @param context The cache of context-specific information.
+   * <!-- end-model-doc -->
+   * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.targetSiteCode->isEmpty() or self.targetSiteCode->exists(element | element.isNullFlavorUndefined())) implies (not self.targetSiteCode->isEmpty())'"
+   * @generated
+   */
+  boolean validateSalmonellosisCaseObservationTargetSiteCode(DiagnosticChain diagnostics, Map<Object, Object> context);
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * <!-- begin-model-doc -->
+   * @param diagnostics The chain of diagnostics to which problems are to be appended.
+   * @param context The cache of context-specific information.
+   * <!-- end-model-doc -->
+   * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (not self.value->isEmpty())'"
+   * @generated
+   */
+  boolean validateSalmonellosisCaseObservationValue(DiagnosticChain diagnostics, Map<Object, Object> context);
+
+  /**
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.entryRelationship->exists(entryRelationship : cda::EntryRelationship | not entryRelationship.observation.oclIsUndefined() and entryRelationship.observation.oclIsKindOf(salmonellosis::SalmonellosisSignsAndSymptomsObservation))
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
    * <!-- end-model-doc -->
@@ -44,9 +70,6 @@ public interface SalmonellosisCaseObservation extends CaseObservation {
 	/**
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * <!-- begin-model-doc -->
-   * self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(salmonellosis::SalmonellosisSignsAndSymptomsObservation)).oclAsType(salmonellosis::SalmonellosisSignsAndSymptomsObservation)
-   * <!-- end-model-doc -->
    * @model kind="operation" required="true" ordered="false"
    *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(salmonellosis::SalmonellosisSignsAndSymptomsObservation)).oclAsType(salmonellosis::SalmonellosisSignsAndSymptomsObservation)'"
    * @generated
@@ -59,5 +82,12 @@ public interface SalmonellosisCaseObservation extends CaseObservation {
    * @generated
    */
   public SalmonellosisCaseObservation init();
+
+  /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    public SalmonellosisCaseObservation init(Iterable<? extends Initializer<? extends EObject>> initializers);
 
 } // SalmonellosisCaseObservation

@@ -6,12 +6,15 @@
  */
 package org.openhealthtools.mdht.uml.cda.sdtm.impl;
 
+import java.lang.Iterable;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
 
 import org.eclipse.emf.ecore.EClass;
 
+import org.eclipse.emf.ecore.EObject;
+import org.openhealthtools.mdht.emf.runtime.util.Initializer;
 import org.openhealthtools.mdht.uml.cda.impl.SubstanceAdministrationImpl;
 
 import org.openhealthtools.mdht.uml.cda.sdtm.ActivityEndTimingReference;
@@ -295,6 +298,16 @@ public class ConcomitantMedicationImpl extends SubstanceAdministrationImpl imple
    * <!-- end-user-doc -->
    * @generated
    */
+  public boolean validateConcomitantMedicationconcomitantMedicationCategoryAssociationconcomitantMedicationCategoryconcomitantMedicationSubCategoryAssociationConcomitantMedicationSubCategoryCodeP(DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+    return ConcomitantMedicationOperations.validateConcomitantMedicationconcomitantMedicationCategoryAssociationconcomitantMedicationCategoryconcomitantMedicationSubCategoryAssociationConcomitantMedicationSubCategoryCodeP(this, diagnostics, context);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
   public boolean validateConcomitantMedicationconcomitantMedicationCategoryAssociationconcomitantMedicationCategoryconcomitantMedicationSubCategoryAssociationConcomitantMedicationSubCategoryCode(DiagnosticChain diagnostics, Map<Object, Object> context)
   {
     return ConcomitantMedicationOperations.validateConcomitantMedicationconcomitantMedicationCategoryAssociationconcomitantMedicationCategoryconcomitantMedicationSubCategoryAssociationConcomitantMedicationSubCategoryCode(this, diagnostics, context);
@@ -348,6 +361,16 @@ public class ConcomitantMedicationImpl extends SubstanceAdministrationImpl imple
   public boolean validateConcomitantMedicationconcomitantMedicationCategoryAssociationconcomitantMedicationCategoryClassCode(DiagnosticChain diagnostics, Map<Object, Object> context)
   {
     return ConcomitantMedicationOperations.validateConcomitantMedicationconcomitantMedicationCategoryAssociationconcomitantMedicationCategoryClassCode(this, diagnostics, context);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public boolean validateConcomitantMedicationconcomitantMedicationCategoryAssociationconcomitantMedicationCategoryCodeP(DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+    return ConcomitantMedicationOperations.validateConcomitantMedicationconcomitantMedicationCategoryAssociationconcomitantMedicationCategoryCodeP(this, diagnostics, context);
   }
 
   /**
@@ -415,116 +438,6 @@ public class ConcomitantMedicationImpl extends SubstanceAdministrationImpl imple
    * <!-- end-user-doc -->
    * @generated
    */
-  public boolean validateConcomitantMedicationconcomitantMedicationCategoryAssociationconcomitantMedicationCategoryconcomitantMedicationSubCategoryAssociationConcomitantMedicationSubCategoryClassCodeConcomitantMedicationconcomitantMedicationCategoryAssociationconcomitantMedicationCategoryconcomitantMedicationSubCategoryAssociationConcomitantMedicationSubCategoryClassCode1(DiagnosticChain diagnostics, Map<Object, Object> context)
-  {
-    return ConcomitantMedicationOperations.validateConcomitantMedicationconcomitantMedicationCategoryAssociationconcomitantMedicationCategoryconcomitantMedicationSubCategoryAssociationConcomitantMedicationSubCategoryClassCodeConcomitantMedicationconcomitantMedicationCategoryAssociationconcomitantMedicationCategoryconcomitantMedicationSubCategoryAssociationConcomitantMedicationSubCategoryClassCode1(this, diagnostics, context);
-  }
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public boolean validateConcomitantMedicationconcomitantMedicationCategoryAssociationconcomitantMedicationCategoryconcomitantMedicationSubCategoryAssociationConcomitantMedicationSubCategoryCodeConcomitantMedicationconcomitantMedicationCategoryAssociationconcomitantMedicationCategoryconcomitantMedicationSubCategoryAssociationConcomitantMedicationSubCategoryCode1(DiagnosticChain diagnostics, Map<Object, Object> context)
-  {
-    return ConcomitantMedicationOperations.validateConcomitantMedicationconcomitantMedicationCategoryAssociationconcomitantMedicationCategoryconcomitantMedicationSubCategoryAssociationConcomitantMedicationSubCategoryCodeConcomitantMedicationconcomitantMedicationCategoryAssociationconcomitantMedicationCategoryconcomitantMedicationSubCategoryAssociationConcomitantMedicationSubCategoryCode1(this, diagnostics, context);
-  }
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public boolean validateConcomitantMedicationconcomitantMedicationCategoryAssociationconcomitantMedicationCategoryconcomitantMedicationSubCategoryAssociationConcomitantMedicationSubCategoryMoodCodeConcomitantMedicationconcomitantMedicationCategoryAssociationconcomitantMedicationCategoryconcomitantMedicationSubCategoryAssociationConcomitantMedicationSubCategoryMoodCode1(DiagnosticChain diagnostics, Map<Object, Object> context)
-  {
-    return ConcomitantMedicationOperations.validateConcomitantMedicationconcomitantMedicationCategoryAssociationconcomitantMedicationCategoryconcomitantMedicationSubCategoryAssociationConcomitantMedicationSubCategoryMoodCodeConcomitantMedicationconcomitantMedicationCategoryAssociationconcomitantMedicationCategoryconcomitantMedicationSubCategoryAssociationConcomitantMedicationSubCategoryMoodCode1(this, diagnostics, context);
-  }
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public boolean validateConcomitantMedicationconcomitantMedicationCategoryAssociationconcomitantMedicationCategoryconcomitantMedicationSubCategoryAssociationConcomitantMedicationSubCategoryValueConcomitantMedicationconcomitantMedicationCategoryAssociationconcomitantMedicationCategoryconcomitantMedicationSubCategoryAssociationConcomitantMedicationSubCategoryValue1(DiagnosticChain diagnostics, Map<Object, Object> context)
-  {
-    return ConcomitantMedicationOperations.validateConcomitantMedicationconcomitantMedicationCategoryAssociationconcomitantMedicationCategoryconcomitantMedicationSubCategoryAssociationConcomitantMedicationSubCategoryValueConcomitantMedicationconcomitantMedicationCategoryAssociationconcomitantMedicationCategoryconcomitantMedicationSubCategoryAssociationConcomitantMedicationSubCategoryValue1(this, diagnostics, context);
-  }
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public boolean validateConcomitantMedicationconcomitantMedicationCategoryAssociationconcomitantMedicationCategoryconcomitantMedicationSubCategoryAssociationTypeCodeConcomitantMedicationconcomitantMedicationCategoryAssociationconcomitantMedicationCategoryconcomitantMedicationSubCategoryAssociationTypeCode1(DiagnosticChain diagnostics, Map<Object, Object> context)
-  {
-    return ConcomitantMedicationOperations.validateConcomitantMedicationconcomitantMedicationCategoryAssociationconcomitantMedicationCategoryconcomitantMedicationSubCategoryAssociationTypeCodeConcomitantMedicationconcomitantMedicationCategoryAssociationconcomitantMedicationCategoryconcomitantMedicationSubCategoryAssociationTypeCode1(this, diagnostics, context);
-  }
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public boolean validateConcomitantMedicationconcomitantMedicationCategoryAssociationconcomitantMedicationCategoryconcomitantMedicationSubCategoryAssociationConcomitantMedicationSubCategoryConcomitantMedicationconcomitantMedicationCategoryAssociationconcomitantMedicationCategoryconcomitantMedicationSubCategoryAssociationConcomitantMedicationSubCategory1(DiagnosticChain diagnostics, Map<Object, Object> context)
-  {
-    return ConcomitantMedicationOperations.validateConcomitantMedicationconcomitantMedicationCategoryAssociationconcomitantMedicationCategoryconcomitantMedicationSubCategoryAssociationConcomitantMedicationSubCategoryConcomitantMedicationconcomitantMedicationCategoryAssociationconcomitantMedicationCategoryconcomitantMedicationSubCategoryAssociationConcomitantMedicationSubCategory1(this, diagnostics, context);
-  }
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public boolean validateConcomitantMedicationconcomitantMedicationCategoryAssociationconcomitantMedicationCategoryClassCodeConcomitantMedicationconcomitantMedicationCategoryAssociationconcomitantMedicationCategoryClassCode1(DiagnosticChain diagnostics, Map<Object, Object> context)
-  {
-    return ConcomitantMedicationOperations.validateConcomitantMedicationconcomitantMedicationCategoryAssociationconcomitantMedicationCategoryClassCodeConcomitantMedicationconcomitantMedicationCategoryAssociationconcomitantMedicationCategoryClassCode1(this, diagnostics, context);
-  }
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public boolean validateConcomitantMedicationconcomitantMedicationCategoryAssociationconcomitantMedicationCategoryCodeConcomitantMedicationconcomitantMedicationCategoryAssociationconcomitantMedicationCategoryCode1(DiagnosticChain diagnostics, Map<Object, Object> context)
-  {
-    return ConcomitantMedicationOperations.validateConcomitantMedicationconcomitantMedicationCategoryAssociationconcomitantMedicationCategoryCodeConcomitantMedicationconcomitantMedicationCategoryAssociationconcomitantMedicationCategoryCode1(this, diagnostics, context);
-  }
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public boolean validateConcomitantMedicationconcomitantMedicationCategoryAssociationconcomitantMedicationCategoryMoodCodeConcomitantMedicationconcomitantMedicationCategoryAssociationconcomitantMedicationCategoryMoodCode1(DiagnosticChain diagnostics, Map<Object, Object> context)
-  {
-    return ConcomitantMedicationOperations.validateConcomitantMedicationconcomitantMedicationCategoryAssociationconcomitantMedicationCategoryMoodCodeConcomitantMedicationconcomitantMedicationCategoryAssociationconcomitantMedicationCategoryMoodCode1(this, diagnostics, context);
-  }
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public boolean validateConcomitantMedicationconcomitantMedicationCategoryAssociationconcomitantMedicationCategoryValueConcomitantMedicationconcomitantMedicationCategoryAssociationconcomitantMedicationCategoryValue1(DiagnosticChain diagnostics, Map<Object, Object> context)
-  {
-    return ConcomitantMedicationOperations.validateConcomitantMedicationconcomitantMedicationCategoryAssociationconcomitantMedicationCategoryValueConcomitantMedicationconcomitantMedicationCategoryAssociationconcomitantMedicationCategoryValue1(this, diagnostics, context);
-  }
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public boolean validateConcomitantMedicationconcomitantMedicationCategoryAssociationconcomitantMedicationCategoryConcomitantMedicationSubCategoryAssociationConcomitantMedicationconcomitantMedicationCategoryAssociationconcomitantMedicationCategoryConcomitantMedicationSubCategoryAssociation1(DiagnosticChain diagnostics, Map<Object, Object> context)
-  {
-    return ConcomitantMedicationOperations.validateConcomitantMedicationconcomitantMedicationCategoryAssociationconcomitantMedicationCategoryConcomitantMedicationSubCategoryAssociationConcomitantMedicationconcomitantMedicationCategoryAssociationconcomitantMedicationCategoryConcomitantMedicationSubCategoryAssociation1(this, diagnostics, context);
-  }
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
   public boolean validateConcomitantMedicationconcomitantMedicationIndicationAssociationConcomitantMedicationIndicationClassCode(DiagnosticChain diagnostics, Map<Object, Object> context)
   {
     return ConcomitantMedicationOperations.validateConcomitantMedicationconcomitantMedicationIndicationAssociationConcomitantMedicationIndicationClassCode(this, diagnostics, context);
@@ -538,6 +451,16 @@ public class ConcomitantMedicationImpl extends SubstanceAdministrationImpl imple
   public boolean validateConcomitantMedicationconcomitantMedicationIndicationAssociationConcomitantMedicationIndicationMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context)
   {
     return ConcomitantMedicationOperations.validateConcomitantMedicationconcomitantMedicationIndicationAssociationConcomitantMedicationIndicationMoodCode(this, diagnostics, context);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public boolean validateConcomitantMedicationconcomitantMedicationIndicationAssociationConcomitantMedicationIndicationCodeP(DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+    return ConcomitantMedicationOperations.validateConcomitantMedicationconcomitantMedicationIndicationAssociationConcomitantMedicationIndicationCodeP(this, diagnostics, context);
   }
 
   /**
@@ -595,6 +518,16 @@ public class ConcomitantMedicationImpl extends SubstanceAdministrationImpl imple
    * <!-- end-user-doc -->
    * @generated
    */
+  public boolean validateConcomitantMedicationconcomitantMedicationSubCategoryAssociationConcomitantMedicationSubCategoryCodeP(DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+    return ConcomitantMedicationOperations.validateConcomitantMedicationconcomitantMedicationSubCategoryAssociationConcomitantMedicationSubCategoryCodeP(this, diagnostics, context);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
   public boolean validateConcomitantMedicationconcomitantMedicationSubCategoryAssociationConcomitantMedicationSubCategoryCode(DiagnosticChain diagnostics, Map<Object, Object> context)
   {
     return ConcomitantMedicationOperations.validateConcomitantMedicationconcomitantMedicationSubCategoryAssociationConcomitantMedicationSubCategoryCode(this, diagnostics, context);
@@ -645,9 +578,9 @@ public class ConcomitantMedicationImpl extends SubstanceAdministrationImpl imple
    * <!-- end-user-doc -->
    * @generated
    */
-  public boolean validateConcomitantMedicationconcomitantMedicationSubCategoryAssociationConcomitantMedicationSubCategoryClassCodeConcomitantMedicationconcomitantMedicationSubCategoryAssociationConcomitantMedicationSubCategoryClassCode1(DiagnosticChain diagnostics, Map<Object, Object> context)
+  public boolean validateConcomitantMedicationIntendedRegimenAssociationintendedRegimenClassCode(DiagnosticChain diagnostics, Map<Object, Object> context)
   {
-    return ConcomitantMedicationOperations.validateConcomitantMedicationconcomitantMedicationSubCategoryAssociationConcomitantMedicationSubCategoryClassCodeConcomitantMedicationconcomitantMedicationSubCategoryAssociationConcomitantMedicationSubCategoryClassCode1(this, diagnostics, context);
+    return ConcomitantMedicationOperations.validateConcomitantMedicationIntendedRegimenAssociationintendedRegimenClassCode(this, diagnostics, context);
   }
 
   /**
@@ -655,9 +588,9 @@ public class ConcomitantMedicationImpl extends SubstanceAdministrationImpl imple
    * <!-- end-user-doc -->
    * @generated
    */
-  public boolean validateConcomitantMedicationconcomitantMedicationSubCategoryAssociationConcomitantMedicationSubCategoryCodeConcomitantMedicationconcomitantMedicationSubCategoryAssociationConcomitantMedicationSubCategoryCode1(DiagnosticChain diagnostics, Map<Object, Object> context)
+  public boolean validateConcomitantMedicationIntendedRegimenAssociationintendedRegimenCodeP(DiagnosticChain diagnostics, Map<Object, Object> context)
   {
-    return ConcomitantMedicationOperations.validateConcomitantMedicationconcomitantMedicationSubCategoryAssociationConcomitantMedicationSubCategoryCodeConcomitantMedicationconcomitantMedicationSubCategoryAssociationConcomitantMedicationSubCategoryCode1(this, diagnostics, context);
+    return ConcomitantMedicationOperations.validateConcomitantMedicationIntendedRegimenAssociationintendedRegimenCodeP(this, diagnostics, context);
   }
 
   /**
@@ -665,9 +598,9 @@ public class ConcomitantMedicationImpl extends SubstanceAdministrationImpl imple
    * <!-- end-user-doc -->
    * @generated
    */
-  public boolean validateConcomitantMedicationconcomitantMedicationSubCategoryAssociationConcomitantMedicationSubCategoryMoodCodeConcomitantMedicationconcomitantMedicationSubCategoryAssociationConcomitantMedicationSubCategoryMoodCode1(DiagnosticChain diagnostics, Map<Object, Object> context)
+  public boolean validateConcomitantMedicationIntendedRegimenAssociationintendedRegimenCode(DiagnosticChain diagnostics, Map<Object, Object> context)
   {
-    return ConcomitantMedicationOperations.validateConcomitantMedicationconcomitantMedicationSubCategoryAssociationConcomitantMedicationSubCategoryMoodCodeConcomitantMedicationconcomitantMedicationSubCategoryAssociationConcomitantMedicationSubCategoryMoodCode1(this, diagnostics, context);
+    return ConcomitantMedicationOperations.validateConcomitantMedicationIntendedRegimenAssociationintendedRegimenCode(this, diagnostics, context);
   }
 
   /**
@@ -675,9 +608,9 @@ public class ConcomitantMedicationImpl extends SubstanceAdministrationImpl imple
    * <!-- end-user-doc -->
    * @generated
    */
-  public boolean validateConcomitantMedicationconcomitantMedicationSubCategoryAssociationConcomitantMedicationSubCategoryValueConcomitantMedicationconcomitantMedicationSubCategoryAssociationConcomitantMedicationSubCategoryValue1(DiagnosticChain diagnostics, Map<Object, Object> context)
+  public boolean validateConcomitantMedicationIntendedRegimenAssociationintendedRegimenMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context)
   {
-    return ConcomitantMedicationOperations.validateConcomitantMedicationconcomitantMedicationSubCategoryAssociationConcomitantMedicationSubCategoryValueConcomitantMedicationconcomitantMedicationSubCategoryAssociationConcomitantMedicationSubCategoryValue1(this, diagnostics, context);
+    return ConcomitantMedicationOperations.validateConcomitantMedicationIntendedRegimenAssociationintendedRegimenMoodCode(this, diagnostics, context);
   }
 
   /**
@@ -685,49 +618,9 @@ public class ConcomitantMedicationImpl extends SubstanceAdministrationImpl imple
    * <!-- end-user-doc -->
    * @generated
    */
-  public boolean validateConcomitantMedicationIntendedRegimenAssociationIntendedRegimenClassCode(DiagnosticChain diagnostics, Map<Object, Object> context)
+  public boolean validateConcomitantMedicationIntendedRegimenAssociationintendedRegimenValue(DiagnosticChain diagnostics, Map<Object, Object> context)
   {
-    return ConcomitantMedicationOperations.validateConcomitantMedicationIntendedRegimenAssociationIntendedRegimenClassCode(this, diagnostics, context);
-  }
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public boolean validateConcomitantMedicationIntendedRegimenAssociationIntendedRegimenCodeP(DiagnosticChain diagnostics, Map<Object, Object> context)
-  {
-    return ConcomitantMedicationOperations.validateConcomitantMedicationIntendedRegimenAssociationIntendedRegimenCodeP(this, diagnostics, context);
-  }
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public boolean validateConcomitantMedicationIntendedRegimenAssociationIntendedRegimenCode(DiagnosticChain diagnostics, Map<Object, Object> context)
-  {
-    return ConcomitantMedicationOperations.validateConcomitantMedicationIntendedRegimenAssociationIntendedRegimenCode(this, diagnostics, context);
-  }
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public boolean validateConcomitantMedicationIntendedRegimenAssociationIntendedRegimenMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context)
-  {
-    return ConcomitantMedicationOperations.validateConcomitantMedicationIntendedRegimenAssociationIntendedRegimenMoodCode(this, diagnostics, context);
-  }
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public boolean validateConcomitantMedicationIntendedRegimenAssociationIntendedRegimenValue(DiagnosticChain diagnostics, Map<Object, Object> context)
-  {
-    return ConcomitantMedicationOperations.validateConcomitantMedicationIntendedRegimenAssociationIntendedRegimenValue(this, diagnostics, context);
+    return ConcomitantMedicationOperations.validateConcomitantMedicationIntendedRegimenAssociationintendedRegimenValue(this, diagnostics, context);
   }
 
   /**
@@ -826,7 +719,16 @@ public class ConcomitantMedicationImpl extends SubstanceAdministrationImpl imple
    * @generated
    */
   public ConcomitantMedication init() {
-    	CDAUtil.init(this);
-    	return this;
+      return Initializer.Util.init(this);
   }
+
+  /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    public ConcomitantMedication init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
 } //ConcomitantMedicationImpl

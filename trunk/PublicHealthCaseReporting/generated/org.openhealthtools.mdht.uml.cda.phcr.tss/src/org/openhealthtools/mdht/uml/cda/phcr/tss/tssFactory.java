@@ -22,83 +22,83 @@ import org.eclipse.emf.ecore.EFactory;
  */
 public interface tssFactory extends EFactory {
 	/**
-	 * The singleton instance of the factory.
-	 * <!-- begin-user-doc -->
+   * The singleton instance of the factory.
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	tssFactory eINSTANCE = org.openhealthtools.mdht.uml.cda.phcr.tss.impl.tssFactoryImpl.init();
 
 	/**
-	 * Returns a new object of class '<em>Toxic Shock Syndrome Case Report</em>'.
-	 * <!-- begin-user-doc -->
+   * Returns a new object of class '<em>Toxic Shock Syndrome Case Report</em>'.
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Toxic Shock Syndrome Case Report</em>'.
-	 * @generated
-	 */
+   * @return a new object of class '<em>Toxic Shock Syndrome Case Report</em>'.
+   * @generated
+   */
 	ToxicShockSyndromeCaseReport createToxicShockSyndromeCaseReport();
 
 	/**
-	 * Returns a new object of class '<em>Tss Phcr Clinical Information Section</em>'.
-	 * <!-- begin-user-doc -->
+   * Returns a new object of class '<em>Tss Phcr Clinical Information Section</em>'.
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Tss Phcr Clinical Information Section</em>'.
-	 * @generated
-	 */
+   * @return a new object of class '<em>Tss Phcr Clinical Information Section</em>'.
+   * @generated
+   */
 	TssPhcrClinicalInformationSection createTssPhcrClinicalInformationSection();
 
 	/**
-	 * Returns a new object of class '<em>Tss Case Observation</em>'.
-	 * <!-- begin-user-doc -->
+   * Returns a new object of class '<em>Tss Case Observation</em>'.
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Tss Case Observation</em>'.
-	 * @generated
-	 */
+   * @return a new object of class '<em>Tss Case Observation</em>'.
+   * @generated
+   */
 	TssCaseObservation createTssCaseObservation();
 
 	/**
-	 * Returns a new object of class '<em>Tss Signs And Symptoms Observation</em>'.
-	 * <!-- begin-user-doc -->
+   * Returns a new object of class '<em>Tss Signs And Symptoms Observation</em>'.
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Tss Signs And Symptoms Observation</em>'.
-	 * @generated
-	 */
+   * @return a new object of class '<em>Tss Signs And Symptoms Observation</em>'.
+   * @generated
+   */
 	TssSignsAndSymptomsObservation createTssSignsAndSymptomsObservation();
 
 	/**
-	 * Returns a new object of class '<em>Tss Phcr Relevant Dx Tests Section</em>'.
-	 * <!-- begin-user-doc -->
+   * Returns a new object of class '<em>Tss Phcr Relevant Dx Tests Section</em>'.
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Tss Phcr Relevant Dx Tests Section</em>'.
-	 * @generated
-	 */
+   * @return a new object of class '<em>Tss Phcr Relevant Dx Tests Section</em>'.
+   * @generated
+   */
 	TssPhcrRelevantDxTestsSection createTssPhcrRelevantDxTestsSection();
 
 	/**
-	 * Returns a new object of class '<em>Tss Result Organizer</em>'.
-	 * <!-- begin-user-doc -->
+   * Returns a new object of class '<em>Tss Result Organizer</em>'.
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Tss Result Organizer</em>'.
-	 * @generated
-	 */
+   * @return a new object of class '<em>Tss Result Organizer</em>'.
+   * @generated
+   */
 	TssResultOrganizer createTssResultOrganizer();
 
 	/**
-	 * Returns a new object of class '<em>Tss Result Observation</em>'.
-	 * <!-- begin-user-doc -->
+   * Returns a new object of class '<em>Tss Result Observation</em>'.
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Tss Result Observation</em>'.
-	 * @generated
-	 */
+   * @return a new object of class '<em>Tss Result Observation</em>'.
+   * @generated
+   */
 	TssResultObservation createTssResultObservation();
 
 	/**
-	 * Returns the package supported by this factory.
-	 * <!-- begin-user-doc -->
+   * Returns the package supported by this factory.
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the package supported by this factory.
-	 * @generated
-	 */
+   * @return the package supported by this factory.
+   * @generated
+   */
 	tssPackage gettssPackage();
 
 } //tssFactory

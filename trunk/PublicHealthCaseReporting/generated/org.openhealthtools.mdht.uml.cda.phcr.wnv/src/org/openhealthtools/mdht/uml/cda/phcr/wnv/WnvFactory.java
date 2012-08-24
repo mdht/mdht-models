@@ -23,83 +23,83 @@ import org.eclipse.emf.ecore.EFactory;
 public interface WnvFactory extends EFactory
 {
   /**
-	 * The singleton instance of the factory.
-	 * <!-- begin-user-doc -->
+   * The singleton instance of the factory.
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   WnvFactory eINSTANCE = org.openhealthtools.mdht.uml.cda.phcr.wnv.impl.WnvFactoryImpl.init();
 
   /**
-	 * Returns a new object of class '<em>West Nile Virus Case Report</em>'.
-	 * <!-- begin-user-doc -->
+   * Returns a new object of class '<em>West Nile Virus Case Report</em>'.
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @return a new object of class '<em>West Nile Virus Case Report</em>'.
-	 * @generated
-	 */
+   * @return a new object of class '<em>West Nile Virus Case Report</em>'.
+   * @generated
+   */
   WestNileVirusCaseReport createWestNileVirusCaseReport();
 
   /**
-	 * Returns a new object of class '<em>Phcr Clinical Information Section</em>'.
-	 * <!-- begin-user-doc -->
+   * Returns a new object of class '<em>Phcr Clinical Information Section</em>'.
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Phcr Clinical Information Section</em>'.
-	 * @generated
-	 */
+   * @return a new object of class '<em>Phcr Clinical Information Section</em>'.
+   * @generated
+   */
   WnvPhcrClinicalInformationSection createWnvPhcrClinicalInformationSection();
 
   /**
-	 * Returns a new object of class '<em>Case Observation</em>'.
-	 * <!-- begin-user-doc -->
+   * Returns a new object of class '<em>Case Observation</em>'.
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Case Observation</em>'.
-	 * @generated
-	 */
+   * @return a new object of class '<em>Case Observation</em>'.
+   * @generated
+   */
   WnvCaseObservation createWnvCaseObservation();
 
   /**
-	 * Returns a new object of class '<em>Signs And Symptoms Observation</em>'.
-	 * <!-- begin-user-doc -->
+   * Returns a new object of class '<em>Signs And Symptoms Observation</em>'.
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Signs And Symptoms Observation</em>'.
-	 * @generated
-	 */
+   * @return a new object of class '<em>Signs And Symptoms Observation</em>'.
+   * @generated
+   */
   WnvSignsAndSymptomsObservation createWnvSignsAndSymptomsObservation();
 
   /**
-	 * Returns a new object of class '<em>Phcr Relevant Dx Tests Section</em>'.
-	 * <!-- begin-user-doc -->
+   * Returns a new object of class '<em>Phcr Relevant Dx Tests Section</em>'.
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Phcr Relevant Dx Tests Section</em>'.
-	 * @generated
-	 */
+   * @return a new object of class '<em>Phcr Relevant Dx Tests Section</em>'.
+   * @generated
+   */
   WnvPhcrRelevantDxTestsSection createWnvPhcrRelevantDxTestsSection();
 
   /**
-	 * Returns a new object of class '<em>Result Observation</em>'.
-	 * <!-- begin-user-doc -->
+   * Returns a new object of class '<em>Result Observation</em>'.
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Result Observation</em>'.
-	 * @generated
-	 */
+   * @return a new object of class '<em>Result Observation</em>'.
+   * @generated
+   */
 	WnvResultObservation createWnvResultObservation();
 
 		/**
-	 * Returns a new object of class '<em>Result Organizer</em>'.
-	 * <!-- begin-user-doc -->
+   * Returns a new object of class '<em>Result Organizer</em>'.
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Result Organizer</em>'.
-	 * @generated
-	 */
+   * @return a new object of class '<em>Result Organizer</em>'.
+   * @generated
+   */
 	WnvResultOrganizer createWnvResultOrganizer();
 
 		/**
-	 * Returns the package supported by this factory.
-	 * <!-- begin-user-doc -->
+   * Returns the package supported by this factory.
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @return the package supported by this factory.
-	 * @generated
-	 */
+   * @return the package supported by this factory.
+   * @generated
+   */
   WnvPackage getWnvPackage();
 
 } //WnvFactory

@@ -10,10 +10,13 @@
  *******************************************************************************/
 package org.openhealthtools.mdht.uml.cda.phcr.silicosis.impl;
 
+import java.lang.Iterable;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.ecore.EClass;
+import org.eclipse.emf.ecore.EObject;
+import org.openhealthtools.mdht.emf.runtime.util.Initializer;
 import org.openhealthtools.mdht.uml.cda.phcr.impl.PhcrClinicalInformationSectionImpl;
 import org.openhealthtools.mdht.uml.cda.phcr.silicosis.SilicosisCaseObservation;
 import org.openhealthtools.mdht.uml.cda.phcr.silicosis.SilicosisHistoryOfTuberculosisObservation;
@@ -33,81 +36,90 @@ import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
  */
 public class SilicosisPHCRClinicalInformationSectionImpl extends PhcrClinicalInformationSectionImpl implements SilicosisPHCRClinicalInformationSection {
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	protected SilicosisPHCRClinicalInformationSectionImpl() {
-		super();
-	}
+    super();
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	@Override
 	protected EClass eStaticClass() {
-		return SilicosisPackage.Literals.SILICOSIS_PHCR_CLINICAL_INFORMATION_SECTION;
-	}
+    return SilicosisPackage.Literals.SILICOSIS_PHCR_CLINICAL_INFORMATION_SECTION;
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateSilicosisPHCRClinicalInformationSectionSilicosisCaseObservation(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return SilicosisPHCRClinicalInformationSectionOperations.validateSilicosisPHCRClinicalInformationSectionSilicosisCaseObservation(this, diagnostics, context);
-	}
+    return SilicosisPHCRClinicalInformationSectionOperations.validateSilicosisPHCRClinicalInformationSectionSilicosisCaseObservation(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   public boolean validateSilicosisPHCRClinicalInformationSectionSilicosisHistoryOfTuberculosisObservation(DiagnosticChain diagnostics, Map<Object, Object> context)
   {
-		return SilicosisPHCRClinicalInformationSectionOperations.validateSilicosisPHCRClinicalInformationSectionSilicosisHistoryOfTuberculosisObservation(this, diagnostics, context);
-	}
+    return SilicosisPHCRClinicalInformationSectionOperations.validateSilicosisPHCRClinicalInformationSectionSilicosisHistoryOfTuberculosisObservation(this, diagnostics, context);
+  }
 
   /**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public SilicosisCaseObservation getSilicosisCaseObservation() {
-		return SilicosisPHCRClinicalInformationSectionOperations.getSilicosisCaseObservation(this);
-	}
+    return SilicosisPHCRClinicalInformationSectionOperations.getSilicosisCaseObservation(this);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   public SilicosisHistoryOfTuberculosisObservation getSilicosisHistoryOfTuberculosisObservation()
   {
-		return SilicosisPHCRClinicalInformationSectionOperations.getSilicosisHistoryOfTuberculosisObservation(this);
-	}
+    return SilicosisPHCRClinicalInformationSectionOperations.getSilicosisHistoryOfTuberculosisObservation(this);
+  }
 
   /**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   @Override
   public boolean validatePhcrClinicalInformationSectionTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context)
   {
-		return SilicosisPHCRClinicalInformationSectionOperations.validatePhcrClinicalInformationSectionTemplateId(this, diagnostics, context);
-	}
+    return SilicosisPHCRClinicalInformationSectionOperations.validatePhcrClinicalInformationSectionTemplateId(this, diagnostics, context);
+  }
 
   /**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public SilicosisPHCRClinicalInformationSection init() {
-    	CDAUtil.init(this);
-    	return this;
-	}
+      return Initializer.Util.init(this);
+  }
+
+  /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    public SilicosisPHCRClinicalInformationSection init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
 
 } //SilicosisPHCRClinicalInformationSectionImpl

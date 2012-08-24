@@ -6,12 +6,15 @@
  */
 package org.openhealthtools.mdht.uml.cda.sdtm.impl;
 
+import java.lang.Iterable;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
 
 import org.eclipse.emf.ecore.EClass;
 
+import org.eclipse.emf.ecore.EObject;
+import org.openhealthtools.mdht.emf.runtime.util.Initializer;
 import org.openhealthtools.mdht.uml.cda.impl.ActImpl;
 
 import org.openhealthtools.mdht.uml.cda.sdtm.DataCollection;
@@ -182,6 +185,46 @@ public class HumanClinicalDispositionImpl extends ActImpl implements HumanClinic
    * <!-- end-user-doc -->
    * @generated
    */
+  public boolean validateHumanClinicalDispositiondispositionCategoryAssociationdispositionCategoryClassCode(DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+    return HumanClinicalDispositionOperations.validateHumanClinicalDispositiondispositionCategoryAssociationdispositionCategoryClassCode(this, diagnostics, context);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public boolean validateHumanClinicalDispositiondispositionCategoryAssociationdispositionCategoryCode(DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+    return HumanClinicalDispositionOperations.validateHumanClinicalDispositiondispositionCategoryAssociationdispositionCategoryCode(this, diagnostics, context);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public boolean validateHumanClinicalDispositiondispositionCategoryAssociationdispositionCategoryMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+    return HumanClinicalDispositionOperations.validateHumanClinicalDispositiondispositionCategoryAssociationdispositionCategoryMoodCode(this, diagnostics, context);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public boolean validateHumanClinicalDispositiondispositionCategoryAssociationdispositionCategoryValue(DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+    return HumanClinicalDispositionOperations.validateHumanClinicalDispositiondispositionCategoryAssociationdispositionCategoryValue(this, diagnostics, context);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
   public boolean validateHumanClinicalDispositiondispositionCategoryAssociationTypeCode(DiagnosticChain diagnostics, Map<Object, Object> context)
   {
     return HumanClinicalDispositionOperations.validateHumanClinicalDispositiondispositionCategoryAssociationTypeCode(this, diagnostics, context);
@@ -192,9 +235,69 @@ public class HumanClinicalDispositionImpl extends ActImpl implements HumanClinic
    * <!-- end-user-doc -->
    * @generated
    */
+  public boolean validateHumanClinicalDispositiondispositionCategoryAssociationDispositionCategory(DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+    return HumanClinicalDispositionOperations.validateHumanClinicalDispositiondispositionCategoryAssociationDispositionCategory(this, diagnostics, context);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public boolean validateHumanClinicalDispositiondispositionSubCategoryAssociationdispositionSubCategoryClassCode(DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+    return HumanClinicalDispositionOperations.validateHumanClinicalDispositiondispositionSubCategoryAssociationdispositionSubCategoryClassCode(this, diagnostics, context);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public boolean validateHumanClinicalDispositiondispositionSubCategoryAssociationdispositionSubCategoryCode(DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+    return HumanClinicalDispositionOperations.validateHumanClinicalDispositiondispositionSubCategoryAssociationdispositionSubCategoryCode(this, diagnostics, context);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public boolean validateHumanClinicalDispositiondispositionSubCategoryAssociationdispositionSubCategoryMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+    return HumanClinicalDispositionOperations.validateHumanClinicalDispositiondispositionSubCategoryAssociationdispositionSubCategoryMoodCode(this, diagnostics, context);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public boolean validateHumanClinicalDispositiondispositionSubCategoryAssociationdispositionSubCategoryValue(DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+    return HumanClinicalDispositionOperations.validateHumanClinicalDispositiondispositionSubCategoryAssociationdispositionSubCategoryValue(this, diagnostics, context);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
   public boolean validateHumanClinicalDispositiondispositionSubCategoryAssociationTypeCode(DiagnosticChain diagnostics, Map<Object, Object> context)
   {
     return HumanClinicalDispositionOperations.validateHumanClinicalDispositiondispositionSubCategoryAssociationTypeCode(this, diagnostics, context);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public boolean validateHumanClinicalDispositiondispositionSubCategoryAssociationDispositionSubCategory(DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+    return HumanClinicalDispositionOperations.validateHumanClinicalDispositiondispositionSubCategoryAssociationDispositionSubCategory(this, diagnostics, context);
   }
 
   /**
@@ -243,7 +346,16 @@ public class HumanClinicalDispositionImpl extends ActImpl implements HumanClinic
    * @generated
    */
   public HumanClinicalDisposition init() {
-    	CDAUtil.init(this);
-    	return this;
+      return Initializer.Util.init(this);
   }
+
+  /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    public HumanClinicalDisposition init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
 } //HumanClinicalDispositionImpl

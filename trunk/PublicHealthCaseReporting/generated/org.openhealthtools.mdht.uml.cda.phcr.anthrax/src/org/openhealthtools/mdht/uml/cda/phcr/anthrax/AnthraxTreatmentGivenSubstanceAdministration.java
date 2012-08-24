@@ -10,6 +10,9 @@
  *******************************************************************************/
 package org.openhealthtools.mdht.uml.cda.phcr.anthrax;
 
+import java.lang.Iterable;
+import org.eclipse.emf.ecore.EObject;
+import org.openhealthtools.mdht.emf.runtime.util.Initializer;
 import org.openhealthtools.mdht.uml.cda.phcr.TreatmentGivenSubstanceAdministration;
 
 /**
@@ -19,14 +22,21 @@ import org.openhealthtools.mdht.uml.cda.phcr.TreatmentGivenSubstanceAdministrati
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.phcr.anthrax.AnthraxPackage#getAnthraxTreatmentGivenSubstanceAdministration()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation templateId.root='2.16.840.1.113883.10.20.15.3.38' constraints.validation.error='AnthraxTreatmentGivenSubstanceAdministrationTemplateId'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='AnthraxTreatmentGivenSubstanceAdministrationTemplateId' templateId.root='2.16.840.1.113883.10.20.15.3.38'"
  * @generated
  */
 public interface AnthraxTreatmentGivenSubstanceAdministration extends TreatmentGivenSubstanceAdministration {
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public AnthraxTreatmentGivenSubstanceAdministration init();
+
+  /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    public AnthraxTreatmentGivenSubstanceAdministration init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // AnthraxTreatmentGivenSubstanceAdministration

@@ -10,11 +10,14 @@
  *******************************************************************************/
 package org.openhealthtools.mdht.uml.cda.phcr.tularemia.impl;
 
+import java.lang.Iterable;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.common.util.EList;
 import org.eclipse.emf.ecore.EClass;
+import org.eclipse.emf.ecore.EObject;
+import org.openhealthtools.mdht.emf.runtime.util.Initializer;
 import org.openhealthtools.mdht.uml.cda.phcr.ImagingObservation;
 import org.openhealthtools.mdht.uml.cda.phcr.impl.PhcrRelevantDxTestsSectionImpl;
 import org.openhealthtools.mdht.uml.cda.phcr.tularemia.TularemiaPHCRRelevantDxTestsSection;
@@ -36,104 +39,113 @@ import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
 public class TularemiaPHCRRelevantDxTestsSectionImpl extends PhcrRelevantDxTestsSectionImpl implements TularemiaPHCRRelevantDxTestsSection
 {
   /**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   protected TularemiaPHCRRelevantDxTestsSectionImpl()
   {
-		super();
-	}
+    super();
+  }
 
   /**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   @Override
   protected EClass eStaticClass()
   {
-		return TularemiaPackage.Literals.TULAREMIA_PHCR_RELEVANT_DX_TESTS_SECTION;
-	}
+    return TularemiaPackage.Literals.TULAREMIA_PHCR_RELEVANT_DX_TESTS_SECTION;
+  }
 
   /**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   public boolean validateTularemiaPHCRRelevantDxTestsSectionTularemiaResultOrganizer(DiagnosticChain diagnostics, Map<Object, Object> context)
   {
-		return TularemiaPHCRRelevantDxTestsSectionOperations.validateTularemiaPHCRRelevantDxTestsSectionTularemiaResultOrganizer(this, diagnostics, context);
-	}
+    return TularemiaPHCRRelevantDxTestsSectionOperations.validateTularemiaPHCRRelevantDxTestsSectionTularemiaResultOrganizer(this, diagnostics, context);
+  }
 
   /**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   public boolean validateTularemiaPHCRRelevantDxTestsSectionTularemiaResultObservation(DiagnosticChain diagnostics, Map<Object, Object> context)
   {
-		return TularemiaPHCRRelevantDxTestsSectionOperations.validateTularemiaPHCRRelevantDxTestsSectionTularemiaResultObservation(this, diagnostics, context);
-	}
+    return TularemiaPHCRRelevantDxTestsSectionOperations.validateTularemiaPHCRRelevantDxTestsSectionTularemiaResultObservation(this, diagnostics, context);
+  }
 
   /**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   public boolean validateTularemiaPHCRRelevantDxTestsSectionImagingObservation(DiagnosticChain diagnostics, Map<Object, Object> context)
   {
-		return TularemiaPHCRRelevantDxTestsSectionOperations.validateTularemiaPHCRRelevantDxTestsSectionImagingObservation(this, diagnostics, context);
-	}
+    return TularemiaPHCRRelevantDxTestsSectionOperations.validateTularemiaPHCRRelevantDxTestsSectionImagingObservation(this, diagnostics, context);
+  }
 
   /**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   public EList<TularemiaResultOrganizer> getTularemiaResultOrganizers()
   {
-		return TularemiaPHCRRelevantDxTestsSectionOperations.getTularemiaResultOrganizers(this);
-	}
+    return TularemiaPHCRRelevantDxTestsSectionOperations.getTularemiaResultOrganizers(this);
+  }
 
   /**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   public EList<TularemiaResultObservation> getTularemiaResultObservations()
   {
-		return TularemiaPHCRRelevantDxTestsSectionOperations.getTularemiaResultObservations(this);
-	}
+    return TularemiaPHCRRelevantDxTestsSectionOperations.getTularemiaResultObservations(this);
+  }
 
   /**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   public EList<ImagingObservation> gettularemiaImagingObservations()
   {
-		return TularemiaPHCRRelevantDxTestsSectionOperations.gettularemiaImagingObservations(this);
-	}
+    return TularemiaPHCRRelevantDxTestsSectionOperations.gettularemiaImagingObservations(this);
+  }
 
   /**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   @Override
   public boolean validateResultsSectionTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context)
   {
-		return TularemiaPHCRRelevantDxTestsSectionOperations.validateResultsSectionTemplateId(this, diagnostics, context);
-	}
+    return TularemiaPHCRRelevantDxTestsSectionOperations.validateResultsSectionTemplateId(this, diagnostics, context);
+  }
 
   /**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   public TularemiaPHCRRelevantDxTestsSection init() {
-    	CDAUtil.init(this);
-    	return this;
-	}
+      return Initializer.Util.init(this);
+  }
+
+  /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    public TularemiaPHCRRelevantDxTestsSection init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
 } //TularemiaPHCRRelevantDxTestsSectionImpl

@@ -22,12 +22,15 @@
  */
 package org.openhealthtools.mdht.uml.cda.phmr.impl;
 
+import java.lang.Iterable;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
 
 import org.eclipse.emf.ecore.EClass;
 
+import org.eclipse.emf.ecore.EObject;
+import org.openhealthtools.mdht.emf.runtime.util.Initializer;
 import org.openhealthtools.mdht.uml.cda.impl.ObservationImpl;
 
 import org.openhealthtools.mdht.uml.cda.phmr.DeviceMeasurementRangeObservation;
@@ -48,67 +51,86 @@ import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
  */
 public class DeviceMeasurementRangeObservationImpl extends ObservationImpl implements DeviceMeasurementRangeObservation {
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	protected DeviceMeasurementRangeObservationImpl() {
-		super();
-	}
+    super();
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	@Override
 	protected EClass eStaticClass() {
-		return PhmrPackage.Literals.DEVICE_MEASUREMENT_RANGE_OBSERVATION;
-	}
+    return PhmrPackage.Literals.DEVICE_MEASUREMENT_RANGE_OBSERVATION;
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateDeviceMeasurementRangeObservationTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return DeviceMeasurementRangeObservationOperations.validateDeviceMeasurementRangeObservationTemplateId(this, diagnostics, context);
-	}
+    return DeviceMeasurementRangeObservationOperations.validateDeviceMeasurementRangeObservationTemplateId(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateDeviceMeasurementRangeObservationClassCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return DeviceMeasurementRangeObservationOperations.validateDeviceMeasurementRangeObservationClassCode(this, diagnostics, context);
-	}
+    return DeviceMeasurementRangeObservationOperations.validateDeviceMeasurementRangeObservationClassCode(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public boolean validateDeviceMeasurementRangeObservationCodeP(DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+    return DeviceMeasurementRangeObservationOperations.validateDeviceMeasurementRangeObservationCodeP(this, diagnostics, context);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateDeviceMeasurementRangeObservationCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return DeviceMeasurementRangeObservationOperations.validateDeviceMeasurementRangeObservationCode(this, diagnostics, context);
-	}
+    return DeviceMeasurementRangeObservationOperations.validateDeviceMeasurementRangeObservationCode(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateDeviceMeasurementRangeObservationMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return DeviceMeasurementRangeObservationOperations.validateDeviceMeasurementRangeObservationMoodCode(this, diagnostics, context);
-	}
+    return DeviceMeasurementRangeObservationOperations.validateDeviceMeasurementRangeObservationMoodCode(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public DeviceMeasurementRangeObservation init() {
-    	CDAUtil.init(this);
-    	return this;
-	}
+      return Initializer.Util.init(this);
+  }
+
+  /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    public DeviceMeasurementRangeObservation init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
 } //DeviceMeasurementRangeObservationImpl

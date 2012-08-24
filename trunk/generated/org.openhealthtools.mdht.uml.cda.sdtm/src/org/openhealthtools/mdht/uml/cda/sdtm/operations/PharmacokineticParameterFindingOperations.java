@@ -53,8 +53,18 @@ import org.openhealthtools.mdht.uml.cda.sdtm.util.SdtmValidator;
  *   <li>{@link org.openhealthtools.mdht.uml.cda.sdtm.PharmacokineticParameterFinding#validatePharmacokineticParameterFindingPharmacokineticsParameterSubCategoryAssociation(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Pharmacokinetic Parameter Finding Pharmacokinetics Parameter Sub Category Association</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.sdtm.PharmacokineticParameterFinding#validatePharmacokineticParameterFindingNonPerformanceReason(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Pharmacokinetic Parameter Finding Non Performance Reason</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.sdtm.PharmacokineticParameterFinding#validatePharmacokineticParameterFindingTimingReference(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Pharmacokinetic Parameter Finding Timing Reference</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.sdtm.PharmacokineticParameterFinding#validatePharmacokineticParameterFindingpharmacokineticsParameterCategoryAssociationpharmacokineticsParameterCategoryClassCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Pharmacokinetic Parameter Findingpharmacokinetics Parameter Category Associationpharmacokinetics Parameter Category Class Code</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.sdtm.PharmacokineticParameterFinding#validatePharmacokineticParameterFindingpharmacokineticsParameterCategoryAssociationpharmacokineticsParameterCategoryCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Pharmacokinetic Parameter Findingpharmacokinetics Parameter Category Associationpharmacokinetics Parameter Category Code</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.sdtm.PharmacokineticParameterFinding#validatePharmacokineticParameterFindingpharmacokineticsParameterCategoryAssociationpharmacokineticsParameterCategoryMoodCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Pharmacokinetic Parameter Findingpharmacokinetics Parameter Category Associationpharmacokinetics Parameter Category Mood Code</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.sdtm.PharmacokineticParameterFinding#validatePharmacokineticParameterFindingpharmacokineticsParameterCategoryAssociationpharmacokineticsParameterCategoryValue(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Pharmacokinetic Parameter Findingpharmacokinetics Parameter Category Associationpharmacokinetics Parameter Category Value</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.sdtm.PharmacokineticParameterFinding#validatePharmacokineticParameterFindingpharmacokineticsParameterCategoryAssociationTypeCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Pharmacokinetic Parameter Findingpharmacokinetics Parameter Category Association Type Code</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.sdtm.PharmacokineticParameterFinding#validatePharmacokineticParameterFindingpharmacokineticsParameterCategoryAssociationPharmacokineticsParameterCategory(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Pharmacokinetic Parameter Findingpharmacokinetics Parameter Category Association Pharmacokinetics Parameter Category</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.sdtm.PharmacokineticParameterFinding#validatePharmacokineticParameterFindingpharmacokineticsParameterSubCategoryAssociationpharmacokineticsParameterSubCategoryClassCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Pharmacokinetic Parameter Findingpharmacokinetics Parameter Sub Category Associationpharmacokinetics Parameter Sub Category Class Code</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.sdtm.PharmacokineticParameterFinding#validatePharmacokineticParameterFindingpharmacokineticsParameterSubCategoryAssociationpharmacokineticsParameterSubCategoryCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Pharmacokinetic Parameter Findingpharmacokinetics Parameter Sub Category Associationpharmacokinetics Parameter Sub Category Code</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.sdtm.PharmacokineticParameterFinding#validatePharmacokineticParameterFindingpharmacokineticsParameterSubCategoryAssociationpharmacokineticsParameterSubCategoryMoodCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Pharmacokinetic Parameter Findingpharmacokinetics Parameter Sub Category Associationpharmacokinetics Parameter Sub Category Mood Code</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.sdtm.PharmacokineticParameterFinding#validatePharmacokineticParameterFindingpharmacokineticsParameterSubCategoryAssociationpharmacokineticsParameterSubCategoryValue(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Pharmacokinetic Parameter Findingpharmacokinetics Parameter Sub Category Associationpharmacokinetics Parameter Sub Category Value</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.sdtm.PharmacokineticParameterFinding#validatePharmacokineticParameterFindingpharmacokineticsParameterSubCategoryAssociationTypeCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Pharmacokinetic Parameter Findingpharmacokinetics Parameter Sub Category Association Type Code</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.sdtm.PharmacokineticParameterFinding#validatePharmacokineticParameterFindingpharmacokineticsParameterSubCategoryAssociationPharmacokineticsParameterSubCategory(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Pharmacokinetic Parameter Findingpharmacokinetics Parameter Sub Category Association Pharmacokinetics Parameter Sub Category</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.sdtm.PharmacokineticParameterFinding#getGroupIdentifier() <em>Get Group Identifier</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.sdtm.PharmacokineticParameterFinding#getSpecimenInformation() <em>Get Specimen Information</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.sdtm.PharmacokineticParameterFinding#getNonPerformanceReason() <em>Get Non Performance Reason</em>}</li>
@@ -101,7 +111,6 @@ public class PharmacokineticParameterFindingOperations extends ClinicalStatement
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.23.40')
    * @param pharmacokineticParameterFinding The receiving '<em><b>Pharmacokinetic Parameter Finding</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -111,6 +120,7 @@ public class PharmacokineticParameterFindingOperations extends ClinicalStatement
   
   public static  boolean validatePharmacokineticParameterFindingTemplateId(PharmacokineticParameterFinding pharmacokineticParameterFinding, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
+  	  
     if (VALIDATE_PHARMACOKINETIC_PARAMETER_FINDING_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(SdtmPackage.Literals.PHARMACOKINETIC_PARAMETER_FINDING);
@@ -135,6 +145,7 @@ public class PharmacokineticParameterFindingOperations extends ClinicalStatement
              org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "PharmacokineticParameterFindingTemplateId", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(pharmacokineticParameterFinding, context) }),
              new Object [] { pharmacokineticParameterFinding }));
       }
+       
       return false;
     }
     return true;
@@ -166,7 +177,6 @@ public class PharmacokineticParameterFindingOperations extends ClinicalStatement
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.classCode=vocab::ActClassObservation::OBS
    * @param pharmacokineticParameterFinding The receiving '<em><b>Pharmacokinetic Parameter Finding</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -176,6 +186,7 @@ public class PharmacokineticParameterFindingOperations extends ClinicalStatement
   
   public static  boolean validatePharmacokineticParameterFindingClassCode(PharmacokineticParameterFinding pharmacokineticParameterFinding, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
+  	  
     if (VALIDATE_PHARMACOKINETIC_PARAMETER_FINDING_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(SdtmPackage.Literals.PHARMACOKINETIC_PARAMETER_FINDING);
@@ -200,6 +211,7 @@ public class PharmacokineticParameterFindingOperations extends ClinicalStatement
              org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "PharmacokineticParameterFindingClassCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(pharmacokineticParameterFinding, context) }),
              new Object [] { pharmacokineticParameterFinding }));
       }
+       
       return false;
     }
     return true;
@@ -231,7 +243,6 @@ public class PharmacokineticParameterFindingOperations extends ClinicalStatement
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * (self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined())
    * @param pharmacokineticParameterFinding The receiving '<em><b>Pharmacokinetic Parameter Finding</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -241,6 +252,7 @@ public class PharmacokineticParameterFindingOperations extends ClinicalStatement
   
   public static  boolean validatePharmacokineticParameterFindingCode(PharmacokineticParameterFinding pharmacokineticParameterFinding, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
+  	  
     if (VALIDATE_PHARMACOKINETIC_PARAMETER_FINDING_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(SdtmPackage.Literals.PHARMACOKINETIC_PARAMETER_FINDING);
@@ -265,6 +277,7 @@ public class PharmacokineticParameterFindingOperations extends ClinicalStatement
              org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "PharmacokineticParameterFindingCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(pharmacokineticParameterFinding, context) }),
              new Object [] { pharmacokineticParameterFinding }));
       }
+       
       return false;
     }
     return true;
@@ -296,7 +309,6 @@ public class PharmacokineticParameterFindingOperations extends ClinicalStatement
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * (self.id->isEmpty() or self.id->exists(element | element.isNullFlavorUndefined())) implies (self.id->size() = 1)
    * @param pharmacokineticParameterFinding The receiving '<em><b>Pharmacokinetic Parameter Finding</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -306,6 +318,7 @@ public class PharmacokineticParameterFindingOperations extends ClinicalStatement
   
   public static  boolean validatePharmacokineticParameterFindingId(PharmacokineticParameterFinding pharmacokineticParameterFinding, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
+  	  
     if (VALIDATE_PHARMACOKINETIC_PARAMETER_FINDING_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(SdtmPackage.Literals.PHARMACOKINETIC_PARAMETER_FINDING);
@@ -330,6 +343,7 @@ public class PharmacokineticParameterFindingOperations extends ClinicalStatement
              org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "PharmacokineticParameterFindingId", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(pharmacokineticParameterFinding, context) }),
              new Object [] { pharmacokineticParameterFinding }));
       }
+       
       return false;
     }
     return true;
@@ -361,7 +375,6 @@ public class PharmacokineticParameterFindingOperations extends ClinicalStatement
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.moodCode=vocab::x_ActMoodDocumentObservation::EVN
    * @param pharmacokineticParameterFinding The receiving '<em><b>Pharmacokinetic Parameter Finding</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -371,6 +384,7 @@ public class PharmacokineticParameterFindingOperations extends ClinicalStatement
   
   public static  boolean validatePharmacokineticParameterFindingMoodCode(PharmacokineticParameterFinding pharmacokineticParameterFinding, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
+  	  
     if (VALIDATE_PHARMACOKINETIC_PARAMETER_FINDING_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(SdtmPackage.Literals.PHARMACOKINETIC_PARAMETER_FINDING);
@@ -395,6 +409,7 @@ public class PharmacokineticParameterFindingOperations extends ClinicalStatement
              org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "PharmacokineticParameterFindingMoodCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(pharmacokineticParameterFinding, context) }),
              new Object [] { pharmacokineticParameterFinding }));
       }
+       
       return false;
     }
     return true;
@@ -426,7 +441,6 @@ public class PharmacokineticParameterFindingOperations extends ClinicalStatement
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * (self.statusCode.oclIsUndefined() or self.statusCode.isNullFlavorUndefined()) implies (not self.statusCode.oclIsUndefined())
    * @param pharmacokineticParameterFinding The receiving '<em><b>Pharmacokinetic Parameter Finding</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -436,6 +450,7 @@ public class PharmacokineticParameterFindingOperations extends ClinicalStatement
   
   public static  boolean validatePharmacokineticParameterFindingStatusCode(PharmacokineticParameterFinding pharmacokineticParameterFinding, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
+  	  
     if (VALIDATE_PHARMACOKINETIC_PARAMETER_FINDING_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(SdtmPackage.Literals.PHARMACOKINETIC_PARAMETER_FINDING);
@@ -460,6 +475,7 @@ public class PharmacokineticParameterFindingOperations extends ClinicalStatement
              org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "PharmacokineticParameterFindingStatusCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(pharmacokineticParameterFinding, context) }),
              new Object [] { pharmacokineticParameterFinding }));
       }
+       
       return false;
     }
     return true;
@@ -473,7 +489,7 @@ public class PharmacokineticParameterFindingOperations extends ClinicalStatement
    * @generated
    * @ordered
    */
-  protected static final String VALIDATE_PHARMACOKINETIC_PARAMETER_FINDING_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (self.value->forAll(element | element.oclIsTypeOf(datatypes::CD)))";
+  protected static final String VALIDATE_PHARMACOKINETIC_PARAMETER_FINDING_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (not self.value->isEmpty())";
 
   /**
    * The cached OCL invariant for the '{@link #validatePharmacokineticParameterFindingValue(PharmacokineticParameterFinding, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Pharmacokinetic Parameter Finding Value</em>}' invariant operation.
@@ -491,7 +507,6 @@ public class PharmacokineticParameterFindingOperations extends ClinicalStatement
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * (self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (self.value->forAll(element | element.oclIsTypeOf(datatypes::CD)))
    * @param pharmacokineticParameterFinding The receiving '<em><b>Pharmacokinetic Parameter Finding</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -501,6 +516,7 @@ public class PharmacokineticParameterFindingOperations extends ClinicalStatement
   
   public static  boolean validatePharmacokineticParameterFindingValue(PharmacokineticParameterFinding pharmacokineticParameterFinding, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
+  	  
     if (VALIDATE_PHARMACOKINETIC_PARAMETER_FINDING_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(SdtmPackage.Literals.PHARMACOKINETIC_PARAMETER_FINDING);
@@ -525,6 +541,7 @@ public class PharmacokineticParameterFindingOperations extends ClinicalStatement
              org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "PharmacokineticParameterFindingValue", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(pharmacokineticParameterFinding, context) }),
              new Object [] { pharmacokineticParameterFinding }));
       }
+       
       return false;
     }
     return true;
@@ -556,7 +573,6 @@ public class PharmacokineticParameterFindingOperations extends ClinicalStatement
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.entryRelationship->one(entryRelationship : cda::EntryRelationship | not entryRelationship.act.oclIsUndefined() and entryRelationship.act.oclIsKindOf(sdtm::Group Identifier) and entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::COMP)
    * @param pharmacokineticParameterFinding The receiving '<em><b>Pharmacokinetic Parameter Finding</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -566,6 +582,7 @@ public class PharmacokineticParameterFindingOperations extends ClinicalStatement
   
   public static  boolean validatePharmacokineticParameterFindingGroupIdentifier(PharmacokineticParameterFinding pharmacokineticParameterFinding, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
+  	  
     if (VALIDATE_PHARMACOKINETIC_PARAMETER_FINDING_GROUP_IDENTIFIER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(SdtmPackage.Literals.PHARMACOKINETIC_PARAMETER_FINDING);
@@ -590,6 +607,7 @@ public class PharmacokineticParameterFindingOperations extends ClinicalStatement
              org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "PharmacokineticParameterFindingGroupIdentifier", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(pharmacokineticParameterFinding, context) }),
              new Object [] { pharmacokineticParameterFinding }));
       }
+       
       return false;
     }
     return true;
@@ -621,7 +639,6 @@ public class PharmacokineticParameterFindingOperations extends ClinicalStatement
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.entryRelationship->one(entryRelationship : cda::EntryRelationship | not entryRelationship.procedure.oclIsUndefined() and entryRelationship.procedure.oclIsKindOf(sdtm::Specimen Information) and entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::COMP)
    * @param pharmacokineticParameterFinding The receiving '<em><b>Pharmacokinetic Parameter Finding</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -631,6 +648,7 @@ public class PharmacokineticParameterFindingOperations extends ClinicalStatement
   
   public static  boolean validatePharmacokineticParameterFindingSpecimenInformation(PharmacokineticParameterFinding pharmacokineticParameterFinding, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
+  	  
     if (VALIDATE_PHARMACOKINETIC_PARAMETER_FINDING_SPECIMEN_INFORMATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(SdtmPackage.Literals.PHARMACOKINETIC_PARAMETER_FINDING);
@@ -655,6 +673,7 @@ public class PharmacokineticParameterFindingOperations extends ClinicalStatement
              org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "PharmacokineticParameterFindingSpecimenInformation", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(pharmacokineticParameterFinding, context) }),
              new Object [] { pharmacokineticParameterFinding }));
       }
+       
       return false;
     }
     return true;
@@ -686,7 +705,6 @@ public class PharmacokineticParameterFindingOperations extends ClinicalStatement
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.entryRelationship->one(entryRelationship : cda::EntryRelationship | not entryRelationship.oclIsUndefined() and entryRelationship.oclIsKindOf(cda::EntryRelationship))
    * @param pharmacokineticParameterFinding The receiving '<em><b>Pharmacokinetic Parameter Finding</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -696,6 +714,7 @@ public class PharmacokineticParameterFindingOperations extends ClinicalStatement
   
   public static  boolean validatePharmacokineticParameterFindingPharmacokineticsParameterCategoryAssociation(PharmacokineticParameterFinding pharmacokineticParameterFinding, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
+  	  
     if (VALIDATE_PHARMACOKINETIC_PARAMETER_FINDING_PHARMACOKINETICS_PARAMETER_CATEGORY_ASSOCIATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(SdtmPackage.Literals.PHARMACOKINETIC_PARAMETER_FINDING);
@@ -720,6 +739,7 @@ public class PharmacokineticParameterFindingOperations extends ClinicalStatement
              org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "PharmacokineticParameterFindingPharmacokineticsParameterCategoryAssociation", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(pharmacokineticParameterFinding, context) }),
              new Object [] { pharmacokineticParameterFinding }));
       }
+       
       return false;
     }
     return true;
@@ -751,7 +771,6 @@ public class PharmacokineticParameterFindingOperations extends ClinicalStatement
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.entryRelationship->one(entryRelationship : cda::EntryRelationship | not entryRelationship.oclIsUndefined() and entryRelationship.oclIsKindOf(cda::EntryRelationship))
    * @param pharmacokineticParameterFinding The receiving '<em><b>Pharmacokinetic Parameter Finding</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -761,6 +780,7 @@ public class PharmacokineticParameterFindingOperations extends ClinicalStatement
   
   public static  boolean validatePharmacokineticParameterFindingPharmacokineticsParameterSubCategoryAssociation(PharmacokineticParameterFinding pharmacokineticParameterFinding, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
+  	  
     if (VALIDATE_PHARMACOKINETIC_PARAMETER_FINDING_PHARMACOKINETICS_PARAMETER_SUB_CATEGORY_ASSOCIATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(SdtmPackage.Literals.PHARMACOKINETIC_PARAMETER_FINDING);
@@ -785,6 +805,7 @@ public class PharmacokineticParameterFindingOperations extends ClinicalStatement
              org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "PharmacokineticParameterFindingPharmacokineticsParameterSubCategoryAssociation", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(pharmacokineticParameterFinding, context) }),
              new Object [] { pharmacokineticParameterFinding }));
       }
+       
       return false;
     }
     return true;
@@ -816,7 +837,6 @@ public class PharmacokineticParameterFindingOperations extends ClinicalStatement
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.entryRelationship->one(entryRelationship : cda::EntryRelationship | not entryRelationship.observation.oclIsUndefined() and entryRelationship.observation.oclIsKindOf(sdtm::Non Performance Reason))
    * @param pharmacokineticParameterFinding The receiving '<em><b>Pharmacokinetic Parameter Finding</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -826,6 +846,7 @@ public class PharmacokineticParameterFindingOperations extends ClinicalStatement
   
   public static  boolean validatePharmacokineticParameterFindingNonPerformanceReason(PharmacokineticParameterFinding pharmacokineticParameterFinding, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
+  	  
     if (VALIDATE_PHARMACOKINETIC_PARAMETER_FINDING_NON_PERFORMANCE_REASON__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(SdtmPackage.Literals.PHARMACOKINETIC_PARAMETER_FINDING);
@@ -850,6 +871,7 @@ public class PharmacokineticParameterFindingOperations extends ClinicalStatement
              org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "PharmacokineticParameterFindingNonPerformanceReason", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(pharmacokineticParameterFinding, context) }),
              new Object [] { pharmacokineticParameterFinding }));
       }
+       
       return false;
     }
     return true;
@@ -881,7 +903,6 @@ public class PharmacokineticParameterFindingOperations extends ClinicalStatement
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.entryRelationship->one(entryRelationship : cda::EntryRelationship | not entryRelationship.act.oclIsUndefined() and entryRelationship.act.oclIsKindOf(sdtm::Timing Reference) and entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::COMP)
    * @param pharmacokineticParameterFinding The receiving '<em><b>Pharmacokinetic Parameter Finding</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -891,6 +912,7 @@ public class PharmacokineticParameterFindingOperations extends ClinicalStatement
   
   public static  boolean validatePharmacokineticParameterFindingTimingReference(PharmacokineticParameterFinding pharmacokineticParameterFinding, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
+  	  
     if (VALIDATE_PHARMACOKINETIC_PARAMETER_FINDING_TIMING_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(SdtmPackage.Literals.PHARMACOKINETIC_PARAMETER_FINDING);
@@ -915,6 +937,271 @@ public class PharmacokineticParameterFindingOperations extends ClinicalStatement
              org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "PharmacokineticParameterFindingTimingReference", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(pharmacokineticParameterFinding, context) }),
              new Object [] { pharmacokineticParameterFinding }));
       }
+       
+      return false;
+    }
+    return true;
+  }
+
+  /**
+   * The cached OCL expression body for the '{@link #validatePharmacokineticParameterFindingpharmacokineticsParameterCategoryAssociationpharmacokineticsParameterCategoryClassCode(PharmacokineticParameterFinding, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Pharmacokinetic Parameter Findingpharmacokinetics Parameter Category Associationpharmacokinetics Parameter Category Class Code</em>}' operation.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #validatePharmacokineticParameterFindingpharmacokineticsParameterCategoryAssociationpharmacokineticsParameterCategoryClassCode(PharmacokineticParameterFinding, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+   * @generated
+   * @ordered
+   */
+  protected static final String VALIDATE_PHARMACOKINETIC_PARAMETER_FINDINGPHARMACOKINETICS_PARAMETER_CATEGORY_ASSOCIATIONPHARMACOKINETICS_PARAMETER_CATEGORY_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entryRelationship->excluding(null).observation->excluding(null)->reject(classCode=vocab::ActClassObservation::OBS)";
+
+  /**
+   * The cached OCL invariant for the '{@link #validatePharmacokineticParameterFindingpharmacokineticsParameterCategoryAssociationpharmacokineticsParameterCategoryClassCode(PharmacokineticParameterFinding, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Pharmacokinetic Parameter Findingpharmacokinetics Parameter Category Associationpharmacokinetics Parameter Category Class Code</em>}' invariant operation.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #validatePharmacokineticParameterFindingpharmacokineticsParameterCategoryAssociationpharmacokineticsParameterCategoryClassCode(PharmacokineticParameterFinding, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+   * @generated
+   * @ordered
+   */
+  
+  protected static Constraint VALIDATE_PHARMACOKINETIC_PARAMETER_FINDINGPHARMACOKINETICS_PARAMETER_CATEGORY_ASSOCIATIONPHARMACOKINETICS_PARAMETER_CATEGORY_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * <!-- begin-model-doc -->
+   * @param pharmacokineticParameterFinding The receiving '<em><b>Pharmacokinetic Parameter Finding</b></em>' model object.
+   * @param diagnostics The chain of diagnostics to which problems are to be appended.
+   * @param context The cache of context-specific information.
+   * <!-- end-model-doc -->
+   * @generated
+   */
+  
+  public static  boolean validatePharmacokineticParameterFindingpharmacokineticsParameterCategoryAssociationpharmacokineticsParameterCategoryClassCode(PharmacokineticParameterFinding pharmacokineticParameterFinding, DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+  	  
+    if (VALIDATE_PHARMACOKINETIC_PARAMETER_FINDINGPHARMACOKINETICS_PARAMETER_CATEGORY_ASSOCIATIONPHARMACOKINETICS_PARAMETER_CATEGORY_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+      OCL.Helper helper = EOCL_ENV.createOCLHelper();
+      helper.setContext(SdtmPackage.Literals.PHARMACOKINETIC_PARAMETER_FINDING);
+      try
+      {
+        VALIDATE_PHARMACOKINETIC_PARAMETER_FINDINGPHARMACOKINETICS_PARAMETER_CATEGORY_ASSOCIATIONPHARMACOKINETICS_PARAMETER_CATEGORY_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PHARMACOKINETIC_PARAMETER_FINDINGPHARMACOKINETICS_PARAMETER_CATEGORY_ASSOCIATIONPHARMACOKINETICS_PARAMETER_CATEGORY_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+      }
+      catch (ParserException pe)
+      {
+        throw new UnsupportedOperationException(pe.getLocalizedMessage());
+      }
+    }
+    if (!EOCL_ENV.createQuery(VALIDATE_PHARMACOKINETIC_PARAMETER_FINDINGPHARMACOKINETICS_PARAMETER_CATEGORY_ASSOCIATIONPHARMACOKINETICS_PARAMETER_CATEGORY_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(pharmacokineticParameterFinding))
+    {
+      if (diagnostics != null)
+      {
+        diagnostics.add
+          (new BasicDiagnostic
+            (Diagnostic.ERROR,
+             SdtmValidator.DIAGNOSTIC_SOURCE,
+             SdtmValidator.PHARMACOKINETIC_PARAMETER_FINDING__PHARMACOKINETIC_PARAMETER_FINDINGPHARMACOKINETICS_PARAMETER_CATEGORY_ASSOCIATIONPHARMACOKINETICS_PARAMETER_CATEGORY_CLASS_CODE,
+             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "PharmacokineticParameterFindingpharmacokineticsParameterCategoryAssociationpharmacokineticsParameterCategoryClassCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(pharmacokineticParameterFinding, context) }),
+             new Object [] { pharmacokineticParameterFinding }));
+      }
+       
+      return false;
+    }
+    return true;
+  }
+
+  /**
+   * The cached OCL expression body for the '{@link #validatePharmacokineticParameterFindingpharmacokineticsParameterCategoryAssociationpharmacokineticsParameterCategoryCode(PharmacokineticParameterFinding, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Pharmacokinetic Parameter Findingpharmacokinetics Parameter Category Associationpharmacokinetics Parameter Category Code</em>}' operation.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #validatePharmacokineticParameterFindingpharmacokineticsParameterCategoryAssociationpharmacokineticsParameterCategoryCode(PharmacokineticParameterFinding, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+   * @generated
+   * @ordered
+   */
+  protected static final String VALIDATE_PHARMACOKINETIC_PARAMETER_FINDINGPHARMACOKINETICS_PARAMETER_CATEGORY_ASSOCIATIONPHARMACOKINETICS_PARAMETER_CATEGORY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entryRelationship->excluding(null).observation->excluding(null)->reject((code.oclIsUndefined() or code.isNullFlavorUndefined()) implies (not code.oclIsUndefined()))";
+
+  /**
+   * The cached OCL invariant for the '{@link #validatePharmacokineticParameterFindingpharmacokineticsParameterCategoryAssociationpharmacokineticsParameterCategoryCode(PharmacokineticParameterFinding, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Pharmacokinetic Parameter Findingpharmacokinetics Parameter Category Associationpharmacokinetics Parameter Category Code</em>}' invariant operation.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #validatePharmacokineticParameterFindingpharmacokineticsParameterCategoryAssociationpharmacokineticsParameterCategoryCode(PharmacokineticParameterFinding, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+   * @generated
+   * @ordered
+   */
+  
+  protected static Constraint VALIDATE_PHARMACOKINETIC_PARAMETER_FINDINGPHARMACOKINETICS_PARAMETER_CATEGORY_ASSOCIATIONPHARMACOKINETICS_PARAMETER_CATEGORY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * <!-- begin-model-doc -->
+   * @param pharmacokineticParameterFinding The receiving '<em><b>Pharmacokinetic Parameter Finding</b></em>' model object.
+   * @param diagnostics The chain of diagnostics to which problems are to be appended.
+   * @param context The cache of context-specific information.
+   * <!-- end-model-doc -->
+   * @generated
+   */
+  
+  public static  boolean validatePharmacokineticParameterFindingpharmacokineticsParameterCategoryAssociationpharmacokineticsParameterCategoryCode(PharmacokineticParameterFinding pharmacokineticParameterFinding, DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+  	  
+    if (VALIDATE_PHARMACOKINETIC_PARAMETER_FINDINGPHARMACOKINETICS_PARAMETER_CATEGORY_ASSOCIATIONPHARMACOKINETICS_PARAMETER_CATEGORY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+      OCL.Helper helper = EOCL_ENV.createOCLHelper();
+      helper.setContext(SdtmPackage.Literals.PHARMACOKINETIC_PARAMETER_FINDING);
+      try
+      {
+        VALIDATE_PHARMACOKINETIC_PARAMETER_FINDINGPHARMACOKINETICS_PARAMETER_CATEGORY_ASSOCIATIONPHARMACOKINETICS_PARAMETER_CATEGORY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PHARMACOKINETIC_PARAMETER_FINDINGPHARMACOKINETICS_PARAMETER_CATEGORY_ASSOCIATIONPHARMACOKINETICS_PARAMETER_CATEGORY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+      }
+      catch (ParserException pe)
+      {
+        throw new UnsupportedOperationException(pe.getLocalizedMessage());
+      }
+    }
+    if (!EOCL_ENV.createQuery(VALIDATE_PHARMACOKINETIC_PARAMETER_FINDINGPHARMACOKINETICS_PARAMETER_CATEGORY_ASSOCIATIONPHARMACOKINETICS_PARAMETER_CATEGORY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(pharmacokineticParameterFinding))
+    {
+      if (diagnostics != null)
+      {
+        diagnostics.add
+          (new BasicDiagnostic
+            (Diagnostic.ERROR,
+             SdtmValidator.DIAGNOSTIC_SOURCE,
+             SdtmValidator.PHARMACOKINETIC_PARAMETER_FINDING__PHARMACOKINETIC_PARAMETER_FINDINGPHARMACOKINETICS_PARAMETER_CATEGORY_ASSOCIATIONPHARMACOKINETICS_PARAMETER_CATEGORY_CODE,
+             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "PharmacokineticParameterFindingpharmacokineticsParameterCategoryAssociationpharmacokineticsParameterCategoryCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(pharmacokineticParameterFinding, context) }),
+             new Object [] { pharmacokineticParameterFinding }));
+      }
+       
+      return false;
+    }
+    return true;
+  }
+
+  /**
+   * The cached OCL expression body for the '{@link #validatePharmacokineticParameterFindingpharmacokineticsParameterCategoryAssociationpharmacokineticsParameterCategoryMoodCode(PharmacokineticParameterFinding, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Pharmacokinetic Parameter Findingpharmacokinetics Parameter Category Associationpharmacokinetics Parameter Category Mood Code</em>}' operation.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #validatePharmacokineticParameterFindingpharmacokineticsParameterCategoryAssociationpharmacokineticsParameterCategoryMoodCode(PharmacokineticParameterFinding, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+   * @generated
+   * @ordered
+   */
+  protected static final String VALIDATE_PHARMACOKINETIC_PARAMETER_FINDINGPHARMACOKINETICS_PARAMETER_CATEGORY_ASSOCIATIONPHARMACOKINETICS_PARAMETER_CATEGORY_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entryRelationship->excluding(null).observation->excluding(null)->reject(moodCode=vocab::x_ActMoodDocumentObservation::EVN)";
+
+  /**
+   * The cached OCL invariant for the '{@link #validatePharmacokineticParameterFindingpharmacokineticsParameterCategoryAssociationpharmacokineticsParameterCategoryMoodCode(PharmacokineticParameterFinding, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Pharmacokinetic Parameter Findingpharmacokinetics Parameter Category Associationpharmacokinetics Parameter Category Mood Code</em>}' invariant operation.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #validatePharmacokineticParameterFindingpharmacokineticsParameterCategoryAssociationpharmacokineticsParameterCategoryMoodCode(PharmacokineticParameterFinding, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+   * @generated
+   * @ordered
+   */
+  
+  protected static Constraint VALIDATE_PHARMACOKINETIC_PARAMETER_FINDINGPHARMACOKINETICS_PARAMETER_CATEGORY_ASSOCIATIONPHARMACOKINETICS_PARAMETER_CATEGORY_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * <!-- begin-model-doc -->
+   * @param pharmacokineticParameterFinding The receiving '<em><b>Pharmacokinetic Parameter Finding</b></em>' model object.
+   * @param diagnostics The chain of diagnostics to which problems are to be appended.
+   * @param context The cache of context-specific information.
+   * <!-- end-model-doc -->
+   * @generated
+   */
+  
+  public static  boolean validatePharmacokineticParameterFindingpharmacokineticsParameterCategoryAssociationpharmacokineticsParameterCategoryMoodCode(PharmacokineticParameterFinding pharmacokineticParameterFinding, DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+  	  
+    if (VALIDATE_PHARMACOKINETIC_PARAMETER_FINDINGPHARMACOKINETICS_PARAMETER_CATEGORY_ASSOCIATIONPHARMACOKINETICS_PARAMETER_CATEGORY_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+      OCL.Helper helper = EOCL_ENV.createOCLHelper();
+      helper.setContext(SdtmPackage.Literals.PHARMACOKINETIC_PARAMETER_FINDING);
+      try
+      {
+        VALIDATE_PHARMACOKINETIC_PARAMETER_FINDINGPHARMACOKINETICS_PARAMETER_CATEGORY_ASSOCIATIONPHARMACOKINETICS_PARAMETER_CATEGORY_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PHARMACOKINETIC_PARAMETER_FINDINGPHARMACOKINETICS_PARAMETER_CATEGORY_ASSOCIATIONPHARMACOKINETICS_PARAMETER_CATEGORY_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+      }
+      catch (ParserException pe)
+      {
+        throw new UnsupportedOperationException(pe.getLocalizedMessage());
+      }
+    }
+    if (!EOCL_ENV.createQuery(VALIDATE_PHARMACOKINETIC_PARAMETER_FINDINGPHARMACOKINETICS_PARAMETER_CATEGORY_ASSOCIATIONPHARMACOKINETICS_PARAMETER_CATEGORY_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(pharmacokineticParameterFinding))
+    {
+      if (diagnostics != null)
+      {
+        diagnostics.add
+          (new BasicDiagnostic
+            (Diagnostic.ERROR,
+             SdtmValidator.DIAGNOSTIC_SOURCE,
+             SdtmValidator.PHARMACOKINETIC_PARAMETER_FINDING__PHARMACOKINETIC_PARAMETER_FINDINGPHARMACOKINETICS_PARAMETER_CATEGORY_ASSOCIATIONPHARMACOKINETICS_PARAMETER_CATEGORY_MOOD_CODE,
+             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "PharmacokineticParameterFindingpharmacokineticsParameterCategoryAssociationpharmacokineticsParameterCategoryMoodCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(pharmacokineticParameterFinding, context) }),
+             new Object [] { pharmacokineticParameterFinding }));
+      }
+       
+      return false;
+    }
+    return true;
+  }
+
+  /**
+   * The cached OCL expression body for the '{@link #validatePharmacokineticParameterFindingpharmacokineticsParameterCategoryAssociationpharmacokineticsParameterCategoryValue(PharmacokineticParameterFinding, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Pharmacokinetic Parameter Findingpharmacokinetics Parameter Category Associationpharmacokinetics Parameter Category Value</em>}' operation.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #validatePharmacokineticParameterFindingpharmacokineticsParameterCategoryAssociationpharmacokineticsParameterCategoryValue(PharmacokineticParameterFinding, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+   * @generated
+   * @ordered
+   */
+  protected static final String VALIDATE_PHARMACOKINETIC_PARAMETER_FINDINGPHARMACOKINETICS_PARAMETER_CATEGORY_ASSOCIATIONPHARMACOKINETICS_PARAMETER_CATEGORY_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entryRelationship->excluding(null).observation->excluding(null)->reject((value->isEmpty() or value->exists(element | element.isNullFlavorUndefined())) implies (value->size() = 1 and value->forAll(element | element.oclIsTypeOf(datatypes::CE))))";
+
+  /**
+   * The cached OCL invariant for the '{@link #validatePharmacokineticParameterFindingpharmacokineticsParameterCategoryAssociationpharmacokineticsParameterCategoryValue(PharmacokineticParameterFinding, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Pharmacokinetic Parameter Findingpharmacokinetics Parameter Category Associationpharmacokinetics Parameter Category Value</em>}' invariant operation.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #validatePharmacokineticParameterFindingpharmacokineticsParameterCategoryAssociationpharmacokineticsParameterCategoryValue(PharmacokineticParameterFinding, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+   * @generated
+   * @ordered
+   */
+  
+  protected static Constraint VALIDATE_PHARMACOKINETIC_PARAMETER_FINDINGPHARMACOKINETICS_PARAMETER_CATEGORY_ASSOCIATIONPHARMACOKINETICS_PARAMETER_CATEGORY_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * <!-- begin-model-doc -->
+   * @param pharmacokineticParameterFinding The receiving '<em><b>Pharmacokinetic Parameter Finding</b></em>' model object.
+   * @param diagnostics The chain of diagnostics to which problems are to be appended.
+   * @param context The cache of context-specific information.
+   * <!-- end-model-doc -->
+   * @generated
+   */
+  
+  public static  boolean validatePharmacokineticParameterFindingpharmacokineticsParameterCategoryAssociationpharmacokineticsParameterCategoryValue(PharmacokineticParameterFinding pharmacokineticParameterFinding, DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+  	  
+    if (VALIDATE_PHARMACOKINETIC_PARAMETER_FINDINGPHARMACOKINETICS_PARAMETER_CATEGORY_ASSOCIATIONPHARMACOKINETICS_PARAMETER_CATEGORY_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+      OCL.Helper helper = EOCL_ENV.createOCLHelper();
+      helper.setContext(SdtmPackage.Literals.PHARMACOKINETIC_PARAMETER_FINDING);
+      try
+      {
+        VALIDATE_PHARMACOKINETIC_PARAMETER_FINDINGPHARMACOKINETICS_PARAMETER_CATEGORY_ASSOCIATIONPHARMACOKINETICS_PARAMETER_CATEGORY_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PHARMACOKINETIC_PARAMETER_FINDINGPHARMACOKINETICS_PARAMETER_CATEGORY_ASSOCIATIONPHARMACOKINETICS_PARAMETER_CATEGORY_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+      }
+      catch (ParserException pe)
+      {
+        throw new UnsupportedOperationException(pe.getLocalizedMessage());
+      }
+    }
+    if (!EOCL_ENV.createQuery(VALIDATE_PHARMACOKINETIC_PARAMETER_FINDINGPHARMACOKINETICS_PARAMETER_CATEGORY_ASSOCIATIONPHARMACOKINETICS_PARAMETER_CATEGORY_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(pharmacokineticParameterFinding))
+    {
+      if (diagnostics != null)
+      {
+        diagnostics.add
+          (new BasicDiagnostic
+            (Diagnostic.ERROR,
+             SdtmValidator.DIAGNOSTIC_SOURCE,
+             SdtmValidator.PHARMACOKINETIC_PARAMETER_FINDING__PHARMACOKINETIC_PARAMETER_FINDINGPHARMACOKINETICS_PARAMETER_CATEGORY_ASSOCIATIONPHARMACOKINETICS_PARAMETER_CATEGORY_VALUE,
+             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "PharmacokineticParameterFindingpharmacokineticsParameterCategoryAssociationpharmacokineticsParameterCategoryValue", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(pharmacokineticParameterFinding, context) }),
+             new Object [] { pharmacokineticParameterFinding }));
+      }
+       
       return false;
     }
     return true;
@@ -946,7 +1233,6 @@ public class PharmacokineticParameterFindingOperations extends ClinicalStatement
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.entryRelationship->excluding(null)->reject(typeCode=vocab::x_ActRelationshipEntryRelationship::COMP)
    * @param pharmacokineticParameterFinding The receiving '<em><b>Pharmacokinetic Parameter Finding</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -956,6 +1242,7 @@ public class PharmacokineticParameterFindingOperations extends ClinicalStatement
   
   public static  boolean validatePharmacokineticParameterFindingpharmacokineticsParameterCategoryAssociationTypeCode(PharmacokineticParameterFinding pharmacokineticParameterFinding, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
+  	  
     if (VALIDATE_PHARMACOKINETIC_PARAMETER_FINDINGPHARMACOKINETICS_PARAMETER_CATEGORY_ASSOCIATION_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(SdtmPackage.Literals.PHARMACOKINETIC_PARAMETER_FINDING);
@@ -980,6 +1267,337 @@ public class PharmacokineticParameterFindingOperations extends ClinicalStatement
              org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "PharmacokineticParameterFindingpharmacokineticsParameterCategoryAssociationTypeCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(pharmacokineticParameterFinding, context) }),
              new Object [] { pharmacokineticParameterFinding }));
       }
+       
+      return false;
+    }
+    return true;
+  }
+
+  /**
+   * The cached OCL expression body for the '{@link #validatePharmacokineticParameterFindingpharmacokineticsParameterCategoryAssociationPharmacokineticsParameterCategory(PharmacokineticParameterFinding, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Pharmacokinetic Parameter Findingpharmacokinetics Parameter Category Association Pharmacokinetics Parameter Category</em>}' operation.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #validatePharmacokineticParameterFindingpharmacokineticsParameterCategoryAssociationPharmacokineticsParameterCategory(PharmacokineticParameterFinding, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+   * @generated
+   * @ordered
+   */
+  protected static final String VALIDATE_PHARMACOKINETIC_PARAMETER_FINDINGPHARMACOKINETICS_PARAMETER_CATEGORY_ASSOCIATION_PHARMACOKINETICS_PARAMETER_CATEGORY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entryRelationship->excluding(null)->reject(observation->one(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(cda::Observation)))";
+
+  /**
+   * The cached OCL invariant for the '{@link #validatePharmacokineticParameterFindingpharmacokineticsParameterCategoryAssociationPharmacokineticsParameterCategory(PharmacokineticParameterFinding, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Pharmacokinetic Parameter Findingpharmacokinetics Parameter Category Association Pharmacokinetics Parameter Category</em>}' invariant operation.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #validatePharmacokineticParameterFindingpharmacokineticsParameterCategoryAssociationPharmacokineticsParameterCategory(PharmacokineticParameterFinding, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+   * @generated
+   * @ordered
+   */
+  
+  protected static Constraint VALIDATE_PHARMACOKINETIC_PARAMETER_FINDINGPHARMACOKINETICS_PARAMETER_CATEGORY_ASSOCIATION_PHARMACOKINETICS_PARAMETER_CATEGORY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * <!-- begin-model-doc -->
+   * @param pharmacokineticParameterFinding The receiving '<em><b>Pharmacokinetic Parameter Finding</b></em>' model object.
+   * @param diagnostics The chain of diagnostics to which problems are to be appended.
+   * @param context The cache of context-specific information.
+   * <!-- end-model-doc -->
+   * @generated
+   */
+  
+  public static  boolean validatePharmacokineticParameterFindingpharmacokineticsParameterCategoryAssociationPharmacokineticsParameterCategory(PharmacokineticParameterFinding pharmacokineticParameterFinding, DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+  	  
+    if (VALIDATE_PHARMACOKINETIC_PARAMETER_FINDINGPHARMACOKINETICS_PARAMETER_CATEGORY_ASSOCIATION_PHARMACOKINETICS_PARAMETER_CATEGORY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+      OCL.Helper helper = EOCL_ENV.createOCLHelper();
+      helper.setContext(SdtmPackage.Literals.PHARMACOKINETIC_PARAMETER_FINDING);
+      try
+      {
+        VALIDATE_PHARMACOKINETIC_PARAMETER_FINDINGPHARMACOKINETICS_PARAMETER_CATEGORY_ASSOCIATION_PHARMACOKINETICS_PARAMETER_CATEGORY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PHARMACOKINETIC_PARAMETER_FINDINGPHARMACOKINETICS_PARAMETER_CATEGORY_ASSOCIATION_PHARMACOKINETICS_PARAMETER_CATEGORY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+      }
+      catch (ParserException pe)
+      {
+        throw new UnsupportedOperationException(pe.getLocalizedMessage());
+      }
+    }
+    if (!EOCL_ENV.createQuery(VALIDATE_PHARMACOKINETIC_PARAMETER_FINDINGPHARMACOKINETICS_PARAMETER_CATEGORY_ASSOCIATION_PHARMACOKINETICS_PARAMETER_CATEGORY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(pharmacokineticParameterFinding))
+    {
+      if (diagnostics != null)
+      {
+        diagnostics.add
+          (new BasicDiagnostic
+            (Diagnostic.ERROR,
+             SdtmValidator.DIAGNOSTIC_SOURCE,
+             SdtmValidator.PHARMACOKINETIC_PARAMETER_FINDING__PHARMACOKINETIC_PARAMETER_FINDINGPHARMACOKINETICS_PARAMETER_CATEGORY_ASSOCIATION_PHARMACOKINETICS_PARAMETER_CATEGORY,
+             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "PharmacokineticParameterFindingpharmacokineticsParameterCategoryAssociationPharmacokineticsParameterCategory", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(pharmacokineticParameterFinding, context) }),
+             new Object [] { pharmacokineticParameterFinding }));
+      }
+       
+      return false;
+    }
+    return true;
+  }
+
+  /**
+   * The cached OCL expression body for the '{@link #validatePharmacokineticParameterFindingpharmacokineticsParameterSubCategoryAssociationpharmacokineticsParameterSubCategoryClassCode(PharmacokineticParameterFinding, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Pharmacokinetic Parameter Findingpharmacokinetics Parameter Sub Category Associationpharmacokinetics Parameter Sub Category Class Code</em>}' operation.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #validatePharmacokineticParameterFindingpharmacokineticsParameterSubCategoryAssociationpharmacokineticsParameterSubCategoryClassCode(PharmacokineticParameterFinding, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+   * @generated
+   * @ordered
+   */
+  protected static final String VALIDATE_PHARMACOKINETIC_PARAMETER_FINDINGPHARMACOKINETICS_PARAMETER_SUB_CATEGORY_ASSOCIATIONPHARMACOKINETICS_PARAMETER_SUB_CATEGORY_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entryRelationship->excluding(null).observation->excluding(null)->reject(classCode=vocab::ActClassObservation::OBS)";
+
+  /**
+   * The cached OCL invariant for the '{@link #validatePharmacokineticParameterFindingpharmacokineticsParameterSubCategoryAssociationpharmacokineticsParameterSubCategoryClassCode(PharmacokineticParameterFinding, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Pharmacokinetic Parameter Findingpharmacokinetics Parameter Sub Category Associationpharmacokinetics Parameter Sub Category Class Code</em>}' invariant operation.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #validatePharmacokineticParameterFindingpharmacokineticsParameterSubCategoryAssociationpharmacokineticsParameterSubCategoryClassCode(PharmacokineticParameterFinding, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+   * @generated
+   * @ordered
+   */
+  
+  protected static Constraint VALIDATE_PHARMACOKINETIC_PARAMETER_FINDINGPHARMACOKINETICS_PARAMETER_SUB_CATEGORY_ASSOCIATIONPHARMACOKINETICS_PARAMETER_SUB_CATEGORY_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * <!-- begin-model-doc -->
+   * @param pharmacokineticParameterFinding The receiving '<em><b>Pharmacokinetic Parameter Finding</b></em>' model object.
+   * @param diagnostics The chain of diagnostics to which problems are to be appended.
+   * @param context The cache of context-specific information.
+   * <!-- end-model-doc -->
+   * @generated
+   */
+  
+  public static  boolean validatePharmacokineticParameterFindingpharmacokineticsParameterSubCategoryAssociationpharmacokineticsParameterSubCategoryClassCode(PharmacokineticParameterFinding pharmacokineticParameterFinding, DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+  	  
+    if (VALIDATE_PHARMACOKINETIC_PARAMETER_FINDINGPHARMACOKINETICS_PARAMETER_SUB_CATEGORY_ASSOCIATIONPHARMACOKINETICS_PARAMETER_SUB_CATEGORY_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+      OCL.Helper helper = EOCL_ENV.createOCLHelper();
+      helper.setContext(SdtmPackage.Literals.PHARMACOKINETIC_PARAMETER_FINDING);
+      try
+      {
+        VALIDATE_PHARMACOKINETIC_PARAMETER_FINDINGPHARMACOKINETICS_PARAMETER_SUB_CATEGORY_ASSOCIATIONPHARMACOKINETICS_PARAMETER_SUB_CATEGORY_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PHARMACOKINETIC_PARAMETER_FINDINGPHARMACOKINETICS_PARAMETER_SUB_CATEGORY_ASSOCIATIONPHARMACOKINETICS_PARAMETER_SUB_CATEGORY_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+      }
+      catch (ParserException pe)
+      {
+        throw new UnsupportedOperationException(pe.getLocalizedMessage());
+      }
+    }
+    if (!EOCL_ENV.createQuery(VALIDATE_PHARMACOKINETIC_PARAMETER_FINDINGPHARMACOKINETICS_PARAMETER_SUB_CATEGORY_ASSOCIATIONPHARMACOKINETICS_PARAMETER_SUB_CATEGORY_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(pharmacokineticParameterFinding))
+    {
+      if (diagnostics != null)
+      {
+        diagnostics.add
+          (new BasicDiagnostic
+            (Diagnostic.ERROR,
+             SdtmValidator.DIAGNOSTIC_SOURCE,
+             SdtmValidator.PHARMACOKINETIC_PARAMETER_FINDING__PHARMACOKINETIC_PARAMETER_FINDINGPHARMACOKINETICS_PARAMETER_SUB_CATEGORY_ASSOCIATIONPHARMACOKINETICS_PARAMETER_SUB_CATEGORY_CLASS_CODE,
+             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "PharmacokineticParameterFindingpharmacokineticsParameterSubCategoryAssociationpharmacokineticsParameterSubCategoryClassCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(pharmacokineticParameterFinding, context) }),
+             new Object [] { pharmacokineticParameterFinding }));
+      }
+       
+      return false;
+    }
+    return true;
+  }
+
+  /**
+   * The cached OCL expression body for the '{@link #validatePharmacokineticParameterFindingpharmacokineticsParameterSubCategoryAssociationpharmacokineticsParameterSubCategoryCode(PharmacokineticParameterFinding, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Pharmacokinetic Parameter Findingpharmacokinetics Parameter Sub Category Associationpharmacokinetics Parameter Sub Category Code</em>}' operation.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #validatePharmacokineticParameterFindingpharmacokineticsParameterSubCategoryAssociationpharmacokineticsParameterSubCategoryCode(PharmacokineticParameterFinding, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+   * @generated
+   * @ordered
+   */
+  protected static final String VALIDATE_PHARMACOKINETIC_PARAMETER_FINDINGPHARMACOKINETICS_PARAMETER_SUB_CATEGORY_ASSOCIATIONPHARMACOKINETICS_PARAMETER_SUB_CATEGORY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entryRelationship->excluding(null).observation->excluding(null)->reject((code.oclIsUndefined() or code.isNullFlavorUndefined()) implies (not code.oclIsUndefined()))";
+
+  /**
+   * The cached OCL invariant for the '{@link #validatePharmacokineticParameterFindingpharmacokineticsParameterSubCategoryAssociationpharmacokineticsParameterSubCategoryCode(PharmacokineticParameterFinding, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Pharmacokinetic Parameter Findingpharmacokinetics Parameter Sub Category Associationpharmacokinetics Parameter Sub Category Code</em>}' invariant operation.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #validatePharmacokineticParameterFindingpharmacokineticsParameterSubCategoryAssociationpharmacokineticsParameterSubCategoryCode(PharmacokineticParameterFinding, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+   * @generated
+   * @ordered
+   */
+  
+  protected static Constraint VALIDATE_PHARMACOKINETIC_PARAMETER_FINDINGPHARMACOKINETICS_PARAMETER_SUB_CATEGORY_ASSOCIATIONPHARMACOKINETICS_PARAMETER_SUB_CATEGORY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * <!-- begin-model-doc -->
+   * @param pharmacokineticParameterFinding The receiving '<em><b>Pharmacokinetic Parameter Finding</b></em>' model object.
+   * @param diagnostics The chain of diagnostics to which problems are to be appended.
+   * @param context The cache of context-specific information.
+   * <!-- end-model-doc -->
+   * @generated
+   */
+  
+  public static  boolean validatePharmacokineticParameterFindingpharmacokineticsParameterSubCategoryAssociationpharmacokineticsParameterSubCategoryCode(PharmacokineticParameterFinding pharmacokineticParameterFinding, DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+  	  
+    if (VALIDATE_PHARMACOKINETIC_PARAMETER_FINDINGPHARMACOKINETICS_PARAMETER_SUB_CATEGORY_ASSOCIATIONPHARMACOKINETICS_PARAMETER_SUB_CATEGORY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+      OCL.Helper helper = EOCL_ENV.createOCLHelper();
+      helper.setContext(SdtmPackage.Literals.PHARMACOKINETIC_PARAMETER_FINDING);
+      try
+      {
+        VALIDATE_PHARMACOKINETIC_PARAMETER_FINDINGPHARMACOKINETICS_PARAMETER_SUB_CATEGORY_ASSOCIATIONPHARMACOKINETICS_PARAMETER_SUB_CATEGORY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PHARMACOKINETIC_PARAMETER_FINDINGPHARMACOKINETICS_PARAMETER_SUB_CATEGORY_ASSOCIATIONPHARMACOKINETICS_PARAMETER_SUB_CATEGORY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+      }
+      catch (ParserException pe)
+      {
+        throw new UnsupportedOperationException(pe.getLocalizedMessage());
+      }
+    }
+    if (!EOCL_ENV.createQuery(VALIDATE_PHARMACOKINETIC_PARAMETER_FINDINGPHARMACOKINETICS_PARAMETER_SUB_CATEGORY_ASSOCIATIONPHARMACOKINETICS_PARAMETER_SUB_CATEGORY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(pharmacokineticParameterFinding))
+    {
+      if (diagnostics != null)
+      {
+        diagnostics.add
+          (new BasicDiagnostic
+            (Diagnostic.ERROR,
+             SdtmValidator.DIAGNOSTIC_SOURCE,
+             SdtmValidator.PHARMACOKINETIC_PARAMETER_FINDING__PHARMACOKINETIC_PARAMETER_FINDINGPHARMACOKINETICS_PARAMETER_SUB_CATEGORY_ASSOCIATIONPHARMACOKINETICS_PARAMETER_SUB_CATEGORY_CODE,
+             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "PharmacokineticParameterFindingpharmacokineticsParameterSubCategoryAssociationpharmacokineticsParameterSubCategoryCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(pharmacokineticParameterFinding, context) }),
+             new Object [] { pharmacokineticParameterFinding }));
+      }
+       
+      return false;
+    }
+    return true;
+  }
+
+  /**
+   * The cached OCL expression body for the '{@link #validatePharmacokineticParameterFindingpharmacokineticsParameterSubCategoryAssociationpharmacokineticsParameterSubCategoryMoodCode(PharmacokineticParameterFinding, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Pharmacokinetic Parameter Findingpharmacokinetics Parameter Sub Category Associationpharmacokinetics Parameter Sub Category Mood Code</em>}' operation.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #validatePharmacokineticParameterFindingpharmacokineticsParameterSubCategoryAssociationpharmacokineticsParameterSubCategoryMoodCode(PharmacokineticParameterFinding, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+   * @generated
+   * @ordered
+   */
+  protected static final String VALIDATE_PHARMACOKINETIC_PARAMETER_FINDINGPHARMACOKINETICS_PARAMETER_SUB_CATEGORY_ASSOCIATIONPHARMACOKINETICS_PARAMETER_SUB_CATEGORY_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entryRelationship->excluding(null).observation->excluding(null)->reject(moodCode=vocab::x_ActMoodDocumentObservation::EVN)";
+
+  /**
+   * The cached OCL invariant for the '{@link #validatePharmacokineticParameterFindingpharmacokineticsParameterSubCategoryAssociationpharmacokineticsParameterSubCategoryMoodCode(PharmacokineticParameterFinding, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Pharmacokinetic Parameter Findingpharmacokinetics Parameter Sub Category Associationpharmacokinetics Parameter Sub Category Mood Code</em>}' invariant operation.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #validatePharmacokineticParameterFindingpharmacokineticsParameterSubCategoryAssociationpharmacokineticsParameterSubCategoryMoodCode(PharmacokineticParameterFinding, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+   * @generated
+   * @ordered
+   */
+  
+  protected static Constraint VALIDATE_PHARMACOKINETIC_PARAMETER_FINDINGPHARMACOKINETICS_PARAMETER_SUB_CATEGORY_ASSOCIATIONPHARMACOKINETICS_PARAMETER_SUB_CATEGORY_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * <!-- begin-model-doc -->
+   * @param pharmacokineticParameterFinding The receiving '<em><b>Pharmacokinetic Parameter Finding</b></em>' model object.
+   * @param diagnostics The chain of diagnostics to which problems are to be appended.
+   * @param context The cache of context-specific information.
+   * <!-- end-model-doc -->
+   * @generated
+   */
+  
+  public static  boolean validatePharmacokineticParameterFindingpharmacokineticsParameterSubCategoryAssociationpharmacokineticsParameterSubCategoryMoodCode(PharmacokineticParameterFinding pharmacokineticParameterFinding, DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+  	  
+    if (VALIDATE_PHARMACOKINETIC_PARAMETER_FINDINGPHARMACOKINETICS_PARAMETER_SUB_CATEGORY_ASSOCIATIONPHARMACOKINETICS_PARAMETER_SUB_CATEGORY_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+      OCL.Helper helper = EOCL_ENV.createOCLHelper();
+      helper.setContext(SdtmPackage.Literals.PHARMACOKINETIC_PARAMETER_FINDING);
+      try
+      {
+        VALIDATE_PHARMACOKINETIC_PARAMETER_FINDINGPHARMACOKINETICS_PARAMETER_SUB_CATEGORY_ASSOCIATIONPHARMACOKINETICS_PARAMETER_SUB_CATEGORY_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PHARMACOKINETIC_PARAMETER_FINDINGPHARMACOKINETICS_PARAMETER_SUB_CATEGORY_ASSOCIATIONPHARMACOKINETICS_PARAMETER_SUB_CATEGORY_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+      }
+      catch (ParserException pe)
+      {
+        throw new UnsupportedOperationException(pe.getLocalizedMessage());
+      }
+    }
+    if (!EOCL_ENV.createQuery(VALIDATE_PHARMACOKINETIC_PARAMETER_FINDINGPHARMACOKINETICS_PARAMETER_SUB_CATEGORY_ASSOCIATIONPHARMACOKINETICS_PARAMETER_SUB_CATEGORY_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(pharmacokineticParameterFinding))
+    {
+      if (diagnostics != null)
+      {
+        diagnostics.add
+          (new BasicDiagnostic
+            (Diagnostic.ERROR,
+             SdtmValidator.DIAGNOSTIC_SOURCE,
+             SdtmValidator.PHARMACOKINETIC_PARAMETER_FINDING__PHARMACOKINETIC_PARAMETER_FINDINGPHARMACOKINETICS_PARAMETER_SUB_CATEGORY_ASSOCIATIONPHARMACOKINETICS_PARAMETER_SUB_CATEGORY_MOOD_CODE,
+             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "PharmacokineticParameterFindingpharmacokineticsParameterSubCategoryAssociationpharmacokineticsParameterSubCategoryMoodCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(pharmacokineticParameterFinding, context) }),
+             new Object [] { pharmacokineticParameterFinding }));
+      }
+       
+      return false;
+    }
+    return true;
+  }
+
+  /**
+   * The cached OCL expression body for the '{@link #validatePharmacokineticParameterFindingpharmacokineticsParameterSubCategoryAssociationpharmacokineticsParameterSubCategoryValue(PharmacokineticParameterFinding, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Pharmacokinetic Parameter Findingpharmacokinetics Parameter Sub Category Associationpharmacokinetics Parameter Sub Category Value</em>}' operation.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #validatePharmacokineticParameterFindingpharmacokineticsParameterSubCategoryAssociationpharmacokineticsParameterSubCategoryValue(PharmacokineticParameterFinding, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+   * @generated
+   * @ordered
+   */
+  protected static final String VALIDATE_PHARMACOKINETIC_PARAMETER_FINDINGPHARMACOKINETICS_PARAMETER_SUB_CATEGORY_ASSOCIATIONPHARMACOKINETICS_PARAMETER_SUB_CATEGORY_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entryRelationship->excluding(null).observation->excluding(null)->reject((value->isEmpty() or value->exists(element | element.isNullFlavorUndefined())) implies (value->size() = 1 and value->forAll(element | element.oclIsTypeOf(datatypes::CE))))";
+
+  /**
+   * The cached OCL invariant for the '{@link #validatePharmacokineticParameterFindingpharmacokineticsParameterSubCategoryAssociationpharmacokineticsParameterSubCategoryValue(PharmacokineticParameterFinding, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Pharmacokinetic Parameter Findingpharmacokinetics Parameter Sub Category Associationpharmacokinetics Parameter Sub Category Value</em>}' invariant operation.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #validatePharmacokineticParameterFindingpharmacokineticsParameterSubCategoryAssociationpharmacokineticsParameterSubCategoryValue(PharmacokineticParameterFinding, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+   * @generated
+   * @ordered
+   */
+  
+  protected static Constraint VALIDATE_PHARMACOKINETIC_PARAMETER_FINDINGPHARMACOKINETICS_PARAMETER_SUB_CATEGORY_ASSOCIATIONPHARMACOKINETICS_PARAMETER_SUB_CATEGORY_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * <!-- begin-model-doc -->
+   * @param pharmacokineticParameterFinding The receiving '<em><b>Pharmacokinetic Parameter Finding</b></em>' model object.
+   * @param diagnostics The chain of diagnostics to which problems are to be appended.
+   * @param context The cache of context-specific information.
+   * <!-- end-model-doc -->
+   * @generated
+   */
+  
+  public static  boolean validatePharmacokineticParameterFindingpharmacokineticsParameterSubCategoryAssociationpharmacokineticsParameterSubCategoryValue(PharmacokineticParameterFinding pharmacokineticParameterFinding, DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+  	  
+    if (VALIDATE_PHARMACOKINETIC_PARAMETER_FINDINGPHARMACOKINETICS_PARAMETER_SUB_CATEGORY_ASSOCIATIONPHARMACOKINETICS_PARAMETER_SUB_CATEGORY_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+      OCL.Helper helper = EOCL_ENV.createOCLHelper();
+      helper.setContext(SdtmPackage.Literals.PHARMACOKINETIC_PARAMETER_FINDING);
+      try
+      {
+        VALIDATE_PHARMACOKINETIC_PARAMETER_FINDINGPHARMACOKINETICS_PARAMETER_SUB_CATEGORY_ASSOCIATIONPHARMACOKINETICS_PARAMETER_SUB_CATEGORY_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PHARMACOKINETIC_PARAMETER_FINDINGPHARMACOKINETICS_PARAMETER_SUB_CATEGORY_ASSOCIATIONPHARMACOKINETICS_PARAMETER_SUB_CATEGORY_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+      }
+      catch (ParserException pe)
+      {
+        throw new UnsupportedOperationException(pe.getLocalizedMessage());
+      }
+    }
+    if (!EOCL_ENV.createQuery(VALIDATE_PHARMACOKINETIC_PARAMETER_FINDINGPHARMACOKINETICS_PARAMETER_SUB_CATEGORY_ASSOCIATIONPHARMACOKINETICS_PARAMETER_SUB_CATEGORY_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(pharmacokineticParameterFinding))
+    {
+      if (diagnostics != null)
+      {
+        diagnostics.add
+          (new BasicDiagnostic
+            (Diagnostic.ERROR,
+             SdtmValidator.DIAGNOSTIC_SOURCE,
+             SdtmValidator.PHARMACOKINETIC_PARAMETER_FINDING__PHARMACOKINETIC_PARAMETER_FINDINGPHARMACOKINETICS_PARAMETER_SUB_CATEGORY_ASSOCIATIONPHARMACOKINETICS_PARAMETER_SUB_CATEGORY_VALUE,
+             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "PharmacokineticParameterFindingpharmacokineticsParameterSubCategoryAssociationpharmacokineticsParameterSubCategoryValue", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(pharmacokineticParameterFinding, context) }),
+             new Object [] { pharmacokineticParameterFinding }));
+      }
+       
       return false;
     }
     return true;
@@ -1011,7 +1629,6 @@ public class PharmacokineticParameterFindingOperations extends ClinicalStatement
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.entryRelationship->excluding(null)->reject(typeCode=vocab::x_ActRelationshipEntryRelationship::COMP)
    * @param pharmacokineticParameterFinding The receiving '<em><b>Pharmacokinetic Parameter Finding</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -1021,6 +1638,7 @@ public class PharmacokineticParameterFindingOperations extends ClinicalStatement
   
   public static  boolean validatePharmacokineticParameterFindingpharmacokineticsParameterSubCategoryAssociationTypeCode(PharmacokineticParameterFinding pharmacokineticParameterFinding, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
+  	  
     if (VALIDATE_PHARMACOKINETIC_PARAMETER_FINDINGPHARMACOKINETICS_PARAMETER_SUB_CATEGORY_ASSOCIATION_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(SdtmPackage.Literals.PHARMACOKINETIC_PARAMETER_FINDING);
@@ -1045,6 +1663,73 @@ public class PharmacokineticParameterFindingOperations extends ClinicalStatement
              org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "PharmacokineticParameterFindingpharmacokineticsParameterSubCategoryAssociationTypeCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(pharmacokineticParameterFinding, context) }),
              new Object [] { pharmacokineticParameterFinding }));
       }
+       
+      return false;
+    }
+    return true;
+  }
+
+  /**
+   * The cached OCL expression body for the '{@link #validatePharmacokineticParameterFindingpharmacokineticsParameterSubCategoryAssociationPharmacokineticsParameterSubCategory(PharmacokineticParameterFinding, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Pharmacokinetic Parameter Findingpharmacokinetics Parameter Sub Category Association Pharmacokinetics Parameter Sub Category</em>}' operation.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #validatePharmacokineticParameterFindingpharmacokineticsParameterSubCategoryAssociationPharmacokineticsParameterSubCategory(PharmacokineticParameterFinding, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+   * @generated
+   * @ordered
+   */
+  protected static final String VALIDATE_PHARMACOKINETIC_PARAMETER_FINDINGPHARMACOKINETICS_PARAMETER_SUB_CATEGORY_ASSOCIATION_PHARMACOKINETICS_PARAMETER_SUB_CATEGORY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entryRelationship->excluding(null)->reject(observation->one(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(cda::Observation)))";
+
+  /**
+   * The cached OCL invariant for the '{@link #validatePharmacokineticParameterFindingpharmacokineticsParameterSubCategoryAssociationPharmacokineticsParameterSubCategory(PharmacokineticParameterFinding, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Pharmacokinetic Parameter Findingpharmacokinetics Parameter Sub Category Association Pharmacokinetics Parameter Sub Category</em>}' invariant operation.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #validatePharmacokineticParameterFindingpharmacokineticsParameterSubCategoryAssociationPharmacokineticsParameterSubCategory(PharmacokineticParameterFinding, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+   * @generated
+   * @ordered
+   */
+  
+  protected static Constraint VALIDATE_PHARMACOKINETIC_PARAMETER_FINDINGPHARMACOKINETICS_PARAMETER_SUB_CATEGORY_ASSOCIATION_PHARMACOKINETICS_PARAMETER_SUB_CATEGORY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * <!-- begin-model-doc -->
+   * @param pharmacokineticParameterFinding The receiving '<em><b>Pharmacokinetic Parameter Finding</b></em>' model object.
+   * @param diagnostics The chain of diagnostics to which problems are to be appended.
+   * @param context The cache of context-specific information.
+   * <!-- end-model-doc -->
+   * @generated
+   */
+  
+  public static  boolean validatePharmacokineticParameterFindingpharmacokineticsParameterSubCategoryAssociationPharmacokineticsParameterSubCategory(PharmacokineticParameterFinding pharmacokineticParameterFinding, DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+  	  
+    if (VALIDATE_PHARMACOKINETIC_PARAMETER_FINDINGPHARMACOKINETICS_PARAMETER_SUB_CATEGORY_ASSOCIATION_PHARMACOKINETICS_PARAMETER_SUB_CATEGORY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+      OCL.Helper helper = EOCL_ENV.createOCLHelper();
+      helper.setContext(SdtmPackage.Literals.PHARMACOKINETIC_PARAMETER_FINDING);
+      try
+      {
+        VALIDATE_PHARMACOKINETIC_PARAMETER_FINDINGPHARMACOKINETICS_PARAMETER_SUB_CATEGORY_ASSOCIATION_PHARMACOKINETICS_PARAMETER_SUB_CATEGORY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PHARMACOKINETIC_PARAMETER_FINDINGPHARMACOKINETICS_PARAMETER_SUB_CATEGORY_ASSOCIATION_PHARMACOKINETICS_PARAMETER_SUB_CATEGORY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+      }
+      catch (ParserException pe)
+      {
+        throw new UnsupportedOperationException(pe.getLocalizedMessage());
+      }
+    }
+    if (!EOCL_ENV.createQuery(VALIDATE_PHARMACOKINETIC_PARAMETER_FINDINGPHARMACOKINETICS_PARAMETER_SUB_CATEGORY_ASSOCIATION_PHARMACOKINETICS_PARAMETER_SUB_CATEGORY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(pharmacokineticParameterFinding))
+    {
+      if (diagnostics != null)
+      {
+        diagnostics.add
+          (new BasicDiagnostic
+            (Diagnostic.ERROR,
+             SdtmValidator.DIAGNOSTIC_SOURCE,
+             SdtmValidator.PHARMACOKINETIC_PARAMETER_FINDING__PHARMACOKINETIC_PARAMETER_FINDINGPHARMACOKINETICS_PARAMETER_SUB_CATEGORY_ASSOCIATION_PHARMACOKINETICS_PARAMETER_SUB_CATEGORY,
+             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "PharmacokineticParameterFindingpharmacokineticsParameterSubCategoryAssociationPharmacokineticsParameterSubCategory", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(pharmacokineticParameterFinding, context) }),
+             new Object [] { pharmacokineticParameterFinding }));
+      }
+       
       return false;
     }
     return true;
@@ -1058,7 +1743,7 @@ public class PharmacokineticParameterFindingOperations extends ClinicalStatement
    * @generated
    * @ordered
    */
-  protected static final String GET_GROUP_IDENTIFIER__EOCL_EXP = "self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(sdtm::Group Identifier))->asSequence()->first().oclAsType(sdtm::Group Identifier)";
+  protected static final String GET_GROUP_IDENTIFIER__EOCL_EXP = "self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(sdtm::Group Identifier))->asSequence()->any(true).oclAsType(sdtm::Group Identifier)";
 
   /**
    * The cached OCL query for the '{@link #getGroupIdentifier(PharmacokineticParameterFinding) <em>Get Group Identifier</em>}' query operation.
@@ -1073,10 +1758,6 @@ public class PharmacokineticParameterFindingOperations extends ClinicalStatement
   /**
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * <!-- begin-model-doc -->
-   * self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(sdtm::Group Identifier))->asSequence()->first().oclAsType(sdtm::Group Identifier)
-   * @param pharmacokineticParameterFinding The receiving '<em><b>Pharmacokinetic Parameter Finding</b></em>' model object.
-   * <!-- end-model-doc -->
    * @generated
    */
   
@@ -1085,7 +1766,7 @@ public class PharmacokineticParameterFindingOperations extends ClinicalStatement
     if (GET_GROUP_IDENTIFIER__EOCL_QRY == null)
     {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
-      helper.setOperationContext(SdtmPackage.Literals.PHARMACOKINETIC_PARAMETER_FINDING, SdtmPackage.Literals.PHARMACOKINETIC_PARAMETER_FINDING.getEAllOperations().get(64));
+      helper.setOperationContext(SdtmPackage.Literals.PHARMACOKINETIC_PARAMETER_FINDING, SdtmPackage.Literals.PHARMACOKINETIC_PARAMETER_FINDING.getEAllOperations().get(76));
       try
       {
         GET_GROUP_IDENTIFIER__EOCL_QRY = helper.createQuery(GET_GROUP_IDENTIFIER__EOCL_EXP);
@@ -1107,7 +1788,7 @@ public class PharmacokineticParameterFindingOperations extends ClinicalStatement
    * @generated
    * @ordered
    */
-  protected static final String GET_SPECIMEN_INFORMATION__EOCL_EXP = "self.getProcedures()->select(procedure : cda::Procedure | not procedure.oclIsUndefined() and procedure.oclIsKindOf(sdtm::Specimen Information))->asSequence()->first().oclAsType(sdtm::Specimen Information)";
+  protected static final String GET_SPECIMEN_INFORMATION__EOCL_EXP = "self.getProcedures()->select(procedure : cda::Procedure | not procedure.oclIsUndefined() and procedure.oclIsKindOf(sdtm::Specimen Information))->asSequence()->any(true).oclAsType(sdtm::Specimen Information)";
 
   /**
    * The cached OCL query for the '{@link #getSpecimenInformation(PharmacokineticParameterFinding) <em>Get Specimen Information</em>}' query operation.
@@ -1122,10 +1803,6 @@ public class PharmacokineticParameterFindingOperations extends ClinicalStatement
   /**
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * <!-- begin-model-doc -->
-   * self.getProcedures()->select(procedure : cda::Procedure | not procedure.oclIsUndefined() and procedure.oclIsKindOf(sdtm::Specimen Information))->asSequence()->first().oclAsType(sdtm::Specimen Information)
-   * @param pharmacokineticParameterFinding The receiving '<em><b>Pharmacokinetic Parameter Finding</b></em>' model object.
-   * <!-- end-model-doc -->
    * @generated
    */
   
@@ -1134,7 +1811,7 @@ public class PharmacokineticParameterFindingOperations extends ClinicalStatement
     if (GET_SPECIMEN_INFORMATION__EOCL_QRY == null)
     {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
-      helper.setOperationContext(SdtmPackage.Literals.PHARMACOKINETIC_PARAMETER_FINDING, SdtmPackage.Literals.PHARMACOKINETIC_PARAMETER_FINDING.getEAllOperations().get(65));
+      helper.setOperationContext(SdtmPackage.Literals.PHARMACOKINETIC_PARAMETER_FINDING, SdtmPackage.Literals.PHARMACOKINETIC_PARAMETER_FINDING.getEAllOperations().get(77));
       try
       {
         GET_SPECIMEN_INFORMATION__EOCL_QRY = helper.createQuery(GET_SPECIMEN_INFORMATION__EOCL_EXP);
@@ -1156,7 +1833,7 @@ public class PharmacokineticParameterFindingOperations extends ClinicalStatement
    * @generated
    * @ordered
    */
-  protected static final String GET_NON_PERFORMANCE_REASON__EOCL_EXP = "self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(sdtm::Non Performance Reason))->asSequence()->first().oclAsType(sdtm::Non Performance Reason)";
+  protected static final String GET_NON_PERFORMANCE_REASON__EOCL_EXP = "self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(sdtm::Non Performance Reason))->asSequence()->any(true).oclAsType(sdtm::Non Performance Reason)";
 
   /**
    * The cached OCL query for the '{@link #getNonPerformanceReason(PharmacokineticParameterFinding) <em>Get Non Performance Reason</em>}' query operation.
@@ -1171,10 +1848,6 @@ public class PharmacokineticParameterFindingOperations extends ClinicalStatement
   /**
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * <!-- begin-model-doc -->
-   * self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(sdtm::Non Performance Reason))->asSequence()->first().oclAsType(sdtm::Non Performance Reason)
-   * @param pharmacokineticParameterFinding The receiving '<em><b>Pharmacokinetic Parameter Finding</b></em>' model object.
-   * <!-- end-model-doc -->
    * @generated
    */
   
@@ -1183,7 +1856,7 @@ public class PharmacokineticParameterFindingOperations extends ClinicalStatement
     if (GET_NON_PERFORMANCE_REASON__EOCL_QRY == null)
     {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
-      helper.setOperationContext(SdtmPackage.Literals.PHARMACOKINETIC_PARAMETER_FINDING, SdtmPackage.Literals.PHARMACOKINETIC_PARAMETER_FINDING.getEAllOperations().get(66));
+      helper.setOperationContext(SdtmPackage.Literals.PHARMACOKINETIC_PARAMETER_FINDING, SdtmPackage.Literals.PHARMACOKINETIC_PARAMETER_FINDING.getEAllOperations().get(78));
       try
       {
         GET_NON_PERFORMANCE_REASON__EOCL_QRY = helper.createQuery(GET_NON_PERFORMANCE_REASON__EOCL_EXP);
@@ -1205,7 +1878,7 @@ public class PharmacokineticParameterFindingOperations extends ClinicalStatement
    * @generated
    * @ordered
    */
-  protected static final String GET_TIMING_REFERENCE__EOCL_EXP = "self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(sdtm::Timing Reference))->asSequence()->first().oclAsType(sdtm::Timing Reference)";
+  protected static final String GET_TIMING_REFERENCE__EOCL_EXP = "self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(sdtm::Timing Reference))->asSequence()->any(true).oclAsType(sdtm::Timing Reference)";
 
   /**
    * The cached OCL query for the '{@link #getTimingReference(PharmacokineticParameterFinding) <em>Get Timing Reference</em>}' query operation.
@@ -1220,10 +1893,6 @@ public class PharmacokineticParameterFindingOperations extends ClinicalStatement
   /**
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * <!-- begin-model-doc -->
-   * self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(sdtm::Timing Reference))->asSequence()->first().oclAsType(sdtm::Timing Reference)
-   * @param pharmacokineticParameterFinding The receiving '<em><b>Pharmacokinetic Parameter Finding</b></em>' model object.
-   * <!-- end-model-doc -->
    * @generated
    */
   
@@ -1232,7 +1901,7 @@ public class PharmacokineticParameterFindingOperations extends ClinicalStatement
     if (GET_TIMING_REFERENCE__EOCL_QRY == null)
     {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
-      helper.setOperationContext(SdtmPackage.Literals.PHARMACOKINETIC_PARAMETER_FINDING, SdtmPackage.Literals.PHARMACOKINETIC_PARAMETER_FINDING.getEAllOperations().get(67));
+      helper.setOperationContext(SdtmPackage.Literals.PHARMACOKINETIC_PARAMETER_FINDING, SdtmPackage.Literals.PHARMACOKINETIC_PARAMETER_FINDING.getEAllOperations().get(79));
       try
       {
         GET_TIMING_REFERENCE__EOCL_QRY = helper.createQuery(GET_TIMING_REFERENCE__EOCL_EXP);

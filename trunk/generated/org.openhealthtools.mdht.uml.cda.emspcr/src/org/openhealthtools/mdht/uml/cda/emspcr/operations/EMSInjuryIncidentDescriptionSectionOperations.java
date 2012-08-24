@@ -89,7 +89,6 @@ public class EMSInjuryIncidentDescriptionSectionOperations extends SectionOperat
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.17.3.10.1.17')
    * @param emsInjuryIncidentDescriptionSection The receiving '<em><b>EMS Injury Incident Description Section</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -158,9 +157,6 @@ public class EMSInjuryIncidentDescriptionSectionOperations extends SectionOperat
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * (self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and 
-   * let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in 
-   * value.code = '11374-6' and value.codeSystem = '2.16.840.1.113883.6.1')
    * @param emsInjuryIncidentDescriptionSection The receiving '<em><b>EMS Injury Incident Description Section</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -205,7 +201,6 @@ public class EMSInjuryIncidentDescriptionSectionOperations extends SectionOperat
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * not self.text.oclIsUndefined()
    * @param emsInjuryIncidentDescriptionSection The receiving '<em><b>EMS Injury Incident Description Section</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -293,7 +288,6 @@ public class EMSInjuryIncidentDescriptionSectionOperations extends SectionOperat
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * (self.title.oclIsUndefined() or self.title.isNullFlavorUndefined()) implies (not self.title.oclIsUndefined() and self.title.getText() = 'Injury Incident Description Section')
    * @param emsInjuryIncidentDescriptionSection The receiving '<em><b>EMS Injury Incident Description Section</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -342,7 +336,7 @@ public class EMSInjuryIncidentDescriptionSectionOperations extends SectionOperat
    * @generated
    * @ordered
    */
-  protected static final String VALIDATE_EMS_INJURY_INCIDENT_DESCRIPTION_SECTION_ENTRY3__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entry->one(entry : cda::Entry | not entry.oclIsUndefined() and entry.oclIsKindOf(emspcr::EMSInjuryIncidentDescriptionSection::DerivedEntry))";
+  protected static final String VALIDATE_EMS_INJURY_INCIDENT_DESCRIPTION_SECTION_ENTRY3__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entry->one(entry : cda::Entry | not entry.oclIsUndefined() and entry.oclIsKindOf(emspcr::DerivedEntry))";
 
   /**
    * The cached OCL invariant for the '{@link #validateEMSInjuryIncidentDescriptionSectionEntry3(EMSInjuryIncidentDescriptionSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate EMS Injury Incident Description Section Entry3</em>}' invariant operation.
@@ -360,7 +354,6 @@ public class EMSInjuryIncidentDescriptionSectionOperations extends SectionOperat
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.entry->one(entry : cda::Entry | not entry.oclIsUndefined() and entry.oclIsKindOf(emspcr::EMSInjuryIncidentDescriptionSection::DerivedEntry))
    * @param emsInjuryIncidentDescriptionSection The receiving '<em><b>EMS Injury Incident Description Section</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -409,7 +402,7 @@ public class EMSInjuryIncidentDescriptionSectionOperations extends SectionOperat
    * @generated
    * @ordered
    */
-  protected static final String VALIDATE_EMS_INJURY_INCIDENT_DESCRIPTION_SECTION_ENTRY4__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entry->one(entry : cda::Entry | not entry.oclIsUndefined() and entry.oclIsKindOf(emspcr::EMSInjuryIncidentDescriptionSection::DerivedEntry))";
+  protected static final String VALIDATE_EMS_INJURY_INCIDENT_DESCRIPTION_SECTION_ENTRY4__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entry->one(entry : cda::Entry | not entry.oclIsUndefined() and entry.oclIsKindOf(emspcr::DerivedEntry))";
 
   /**
    * The cached OCL invariant for the '{@link #validateEMSInjuryIncidentDescriptionSectionEntry4(EMSInjuryIncidentDescriptionSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate EMS Injury Incident Description Section Entry4</em>}' invariant operation.
@@ -427,7 +420,6 @@ public class EMSInjuryIncidentDescriptionSectionOperations extends SectionOperat
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.entry->one(entry : cda::Entry | not entry.oclIsUndefined() and entry.oclIsKindOf(emspcr::EMSInjuryIncidentDescriptionSection::DerivedEntry))
    * @param emsInjuryIncidentDescriptionSection The receiving '<em><b>EMS Injury Incident Description Section</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -476,7 +468,7 @@ public class EMSInjuryIncidentDescriptionSectionOperations extends SectionOperat
    * @generated
    * @ordered
    */
-  protected static final String VALIDATE_EMS_INJURY_INCIDENT_DESCRIPTION_SECTION_ENTRY5__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entry->one(entry : cda::Entry | not entry.oclIsUndefined() and entry.oclIsKindOf(emspcr::EMSInjuryIncidentDescriptionSection::DerivedEntry))";
+  protected static final String VALIDATE_EMS_INJURY_INCIDENT_DESCRIPTION_SECTION_ENTRY5__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entry->one(entry : cda::Entry | not entry.oclIsUndefined() and entry.oclIsKindOf(emspcr::DerivedEntry))";
 
   /**
    * The cached OCL invariant for the '{@link #validateEMSInjuryIncidentDescriptionSectionEntry5(EMSInjuryIncidentDescriptionSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate EMS Injury Incident Description Section Entry5</em>}' invariant operation.
@@ -494,7 +486,6 @@ public class EMSInjuryIncidentDescriptionSectionOperations extends SectionOperat
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.entry->one(entry : cda::Entry | not entry.oclIsUndefined() and entry.oclIsKindOf(emspcr::EMSInjuryIncidentDescriptionSection::DerivedEntry))
    * @param emsInjuryIncidentDescriptionSection The receiving '<em><b>EMS Injury Incident Description Section</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -543,7 +534,7 @@ public class EMSInjuryIncidentDescriptionSectionOperations extends SectionOperat
    * @generated
    * @ordered
    */
-  protected static final String VALIDATE_EMS_INJURY_INCIDENT_DESCRIPTION_SECTION_ENTRY6__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entry->one(entry : cda::Entry | not entry.oclIsUndefined() and entry.oclIsKindOf(emspcr::EMSInjuryIncidentDescriptionSection::DerivedEntry))";
+  protected static final String VALIDATE_EMS_INJURY_INCIDENT_DESCRIPTION_SECTION_ENTRY6__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entry->one(entry : cda::Entry | not entry.oclIsUndefined() and entry.oclIsKindOf(emspcr::DerivedEntry))";
 
   /**
    * The cached OCL invariant for the '{@link #validateEMSInjuryIncidentDescriptionSectionEntry6(EMSInjuryIncidentDescriptionSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate EMS Injury Incident Description Section Entry6</em>}' invariant operation.
@@ -561,7 +552,6 @@ public class EMSInjuryIncidentDescriptionSectionOperations extends SectionOperat
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.entry->one(entry : cda::Entry | not entry.oclIsUndefined() and entry.oclIsKindOf(emspcr::EMSInjuryIncidentDescriptionSection::DerivedEntry))
    * @param emsInjuryIncidentDescriptionSection The receiving '<em><b>EMS Injury Incident Description Section</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -610,7 +600,7 @@ public class EMSInjuryIncidentDescriptionSectionOperations extends SectionOperat
    * @generated
    * @ordered
    */
-  protected static final String VALIDATE_EMS_INJURY_INCIDENT_DESCRIPTION_SECTION_ENTRY7__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entry->one(entry : cda::Entry | not entry.oclIsUndefined() and entry.oclIsKindOf(emspcr::EMSInjuryIncidentDescriptionSection::DerivedEntry))";
+  protected static final String VALIDATE_EMS_INJURY_INCIDENT_DESCRIPTION_SECTION_ENTRY7__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entry->one(entry : cda::Entry | not entry.oclIsUndefined() and entry.oclIsKindOf(emspcr::DerivedEntry))";
 
   /**
    * The cached OCL invariant for the '{@link #validateEMSInjuryIncidentDescriptionSectionEntry7(EMSInjuryIncidentDescriptionSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate EMS Injury Incident Description Section Entry7</em>}' invariant operation.
@@ -628,7 +618,6 @@ public class EMSInjuryIncidentDescriptionSectionOperations extends SectionOperat
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.entry->one(entry : cda::Entry | not entry.oclIsUndefined() and entry.oclIsKindOf(emspcr::EMSInjuryIncidentDescriptionSection::DerivedEntry))
    * @param emsInjuryIncidentDescriptionSection The receiving '<em><b>EMS Injury Incident Description Section</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -677,7 +666,7 @@ public class EMSInjuryIncidentDescriptionSectionOperations extends SectionOperat
    * @generated
    * @ordered
    */
-  protected static final String VALIDATE_EMS_INJURY_INCIDENT_DESCRIPTION_SECTION_ENTRY8__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entry->one(entry : cda::Entry | not entry.oclIsUndefined() and entry.oclIsKindOf(emspcr::EMSInjuryIncidentDescriptionSection::DerivedEntry))";
+  protected static final String VALIDATE_EMS_INJURY_INCIDENT_DESCRIPTION_SECTION_ENTRY8__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entry->one(entry : cda::Entry | not entry.oclIsUndefined() and entry.oclIsKindOf(emspcr::DerivedEntry))";
 
   /**
    * The cached OCL invariant for the '{@link #validateEMSInjuryIncidentDescriptionSectionEntry8(EMSInjuryIncidentDescriptionSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate EMS Injury Incident Description Section Entry8</em>}' invariant operation.
@@ -695,7 +684,6 @@ public class EMSInjuryIncidentDescriptionSectionOperations extends SectionOperat
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.entry->one(entry : cda::Entry | not entry.oclIsUndefined() and entry.oclIsKindOf(emspcr::EMSInjuryIncidentDescriptionSection::DerivedEntry))
    * @param emsInjuryIncidentDescriptionSection The receiving '<em><b>EMS Injury Incident Description Section</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -744,7 +732,7 @@ public class EMSInjuryIncidentDescriptionSectionOperations extends SectionOperat
    * @generated
    * @ordered
    */
-  protected static final String VALIDATE_EMS_INJURY_INCIDENT_DESCRIPTION_SECTION_ENTRY9__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entry->one(entry : cda::Entry | not entry.oclIsUndefined() and entry.oclIsKindOf(emspcr::EMSInjuryIncidentDescriptionSection::DerivedEntry))";
+  protected static final String VALIDATE_EMS_INJURY_INCIDENT_DESCRIPTION_SECTION_ENTRY9__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entry->one(entry : cda::Entry | not entry.oclIsUndefined() and entry.oclIsKindOf(emspcr::DerivedEntry))";
 
   /**
    * The cached OCL invariant for the '{@link #validateEMSInjuryIncidentDescriptionSectionEntry9(EMSInjuryIncidentDescriptionSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate EMS Injury Incident Description Section Entry9</em>}' invariant operation.
@@ -762,7 +750,6 @@ public class EMSInjuryIncidentDescriptionSectionOperations extends SectionOperat
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.entry->one(entry : cda::Entry | not entry.oclIsUndefined() and entry.oclIsKindOf(emspcr::EMSInjuryIncidentDescriptionSection::DerivedEntry))
    * @param emsInjuryIncidentDescriptionSection The receiving '<em><b>EMS Injury Incident Description Section</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -811,7 +798,7 @@ public class EMSInjuryIncidentDescriptionSectionOperations extends SectionOperat
    * @generated
    * @ordered
    */
-  protected static final String VALIDATE_EMS_INJURY_INCIDENT_DESCRIPTION_SECTION_ENTRY10__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entry->one(entry : cda::Entry | not entry.oclIsUndefined() and entry.oclIsKindOf(emspcr::EMSInjuryIncidentDescriptionSection::DerivedEntry))";
+  protected static final String VALIDATE_EMS_INJURY_INCIDENT_DESCRIPTION_SECTION_ENTRY10__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entry->one(entry : cda::Entry | not entry.oclIsUndefined() and entry.oclIsKindOf(emspcr::DerivedEntry))";
 
   /**
    * The cached OCL invariant for the '{@link #validateEMSInjuryIncidentDescriptionSectionEntry10(EMSInjuryIncidentDescriptionSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate EMS Injury Incident Description Section Entry10</em>}' invariant operation.
@@ -829,7 +816,6 @@ public class EMSInjuryIncidentDescriptionSectionOperations extends SectionOperat
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.entry->one(entry : cda::Entry | not entry.oclIsUndefined() and entry.oclIsKindOf(emspcr::EMSInjuryIncidentDescriptionSection::DerivedEntry))
    * @param emsInjuryIncidentDescriptionSection The receiving '<em><b>EMS Injury Incident Description Section</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -878,7 +864,7 @@ public class EMSInjuryIncidentDescriptionSectionOperations extends SectionOperat
    * @generated
    * @ordered
    */
-  protected static final String VALIDATE_EMS_INJURY_INCIDENT_DESCRIPTION_SECTION_ENTRY11__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entry->one(entry : cda::Entry | not entry.oclIsUndefined() and entry.oclIsKindOf(emspcr::EMSInjuryIncidentDescriptionSection::DerivedEntry))";
+  protected static final String VALIDATE_EMS_INJURY_INCIDENT_DESCRIPTION_SECTION_ENTRY11__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entry->one(entry : cda::Entry | not entry.oclIsUndefined() and entry.oclIsKindOf(emspcr::DerivedEntry))";
 
   /**
    * The cached OCL invariant for the '{@link #validateEMSInjuryIncidentDescriptionSectionEntry11(EMSInjuryIncidentDescriptionSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate EMS Injury Incident Description Section Entry11</em>}' invariant operation.
@@ -896,7 +882,6 @@ public class EMSInjuryIncidentDescriptionSectionOperations extends SectionOperat
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.entry->one(entry : cda::Entry | not entry.oclIsUndefined() and entry.oclIsKindOf(emspcr::EMSInjuryIncidentDescriptionSection::DerivedEntry))
    * @param emsInjuryIncidentDescriptionSection The receiving '<em><b>EMS Injury Incident Description Section</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -945,7 +930,7 @@ public class EMSInjuryIncidentDescriptionSectionOperations extends SectionOperat
    * @generated
    * @ordered
    */
-  protected static final String VALIDATE_EMS_INJURY_INCIDENT_DESCRIPTION_SECTION_ENTRY12__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entry->one(entry : cda::Entry | not entry.oclIsUndefined() and entry.oclIsKindOf(emspcr::EMSInjuryIncidentDescriptionSection::DerivedEntry))";
+  protected static final String VALIDATE_EMS_INJURY_INCIDENT_DESCRIPTION_SECTION_ENTRY12__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entry->one(entry : cda::Entry | not entry.oclIsUndefined() and entry.oclIsKindOf(emspcr::DerivedEntry))";
 
   /**
    * The cached OCL invariant for the '{@link #validateEMSInjuryIncidentDescriptionSectionEntry12(EMSInjuryIncidentDescriptionSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate EMS Injury Incident Description Section Entry12</em>}' invariant operation.
@@ -963,7 +948,6 @@ public class EMSInjuryIncidentDescriptionSectionOperations extends SectionOperat
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.entry->one(entry : cda::Entry | not entry.oclIsUndefined() and entry.oclIsKindOf(emspcr::EMSInjuryIncidentDescriptionSection::DerivedEntry))
    * @param emsInjuryIncidentDescriptionSection The receiving '<em><b>EMS Injury Incident Description Section</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.

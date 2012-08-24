@@ -6,18 +6,23 @@
  */
 package org.openhealthtools.mdht.uml.cda.sdtm.impl;
 
+import java.lang.Iterable;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
 
 import org.eclipse.emf.ecore.EClass;
 
+import org.eclipse.emf.ecore.EObject;
+import org.openhealthtools.mdht.emf.runtime.util.Initializer;
 import org.openhealthtools.mdht.uml.cda.impl.ObservationImpl;
 
+import org.openhealthtools.mdht.uml.cda.sdtm.ExclusionReason;
 import org.openhealthtools.mdht.uml.cda.sdtm.DerivedDataIndicator;
 import org.openhealthtools.mdht.uml.cda.sdtm.GroupIdentifier;
 import org.openhealthtools.mdht.uml.cda.sdtm.NonPerformanceReason;
 import org.openhealthtools.mdht.uml.cda.sdtm.PharmacokineticConcentrationFinding;
+import org.openhealthtools.mdht.uml.cda.sdtm.PlannedStudyDay;
 import org.openhealthtools.mdht.uml.cda.sdtm.SdtmPackage;
 import org.openhealthtools.mdht.uml.cda.sdtm.SpecimenInformation;
 
@@ -142,6 +147,16 @@ public class PharmacokineticConcentrationFindingImpl extends ObservationImpl imp
    * <!-- end-user-doc -->
    * @generated
    */
+  public boolean validatePharmacokineticConcentrationFindingInterpretationCode(DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+    return PharmacokineticConcentrationFindingOperations.validatePharmacokineticConcentrationFindingInterpretationCode(this, diagnostics, context);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
   public boolean validatePharmacokineticConcentrationFindingGroupIdentifier(DiagnosticChain diagnostics, Map<Object, Object> context)
   {
     return PharmacokineticConcentrationFindingOperations.validatePharmacokineticConcentrationFindingGroupIdentifier(this, diagnostics, context);
@@ -202,9 +217,9 @@ public class PharmacokineticConcentrationFindingImpl extends ObservationImpl imp
    * <!-- end-user-doc -->
    * @generated
    */
-  public boolean validatePharmacokineticConcentrationFindingDerivedDataIndicator(DiagnosticChain diagnostics, Map<Object, Object> context)
+  public boolean validatePharmacokineticConcentrationFindingAssayQuantitationAssociation(DiagnosticChain diagnostics, Map<Object, Object> context)
   {
-    return PharmacokineticConcentrationFindingOperations.validatePharmacokineticConcentrationFindingDerivedDataIndicator(this, diagnostics, context);
+    return PharmacokineticConcentrationFindingOperations.validatePharmacokineticConcentrationFindingAssayQuantitationAssociation(this, diagnostics, context);
   }
 
   /**
@@ -212,9 +227,59 @@ public class PharmacokineticConcentrationFindingImpl extends ObservationImpl imp
    * <!-- end-user-doc -->
    * @generated
    */
-  public boolean validatePharmacokineticConcentrationFindingAssayQuantitationAssociation(DiagnosticChain diagnostics, Map<Object, Object> context)
+  public boolean validatePharmacokineticConcentrationFindingPlannedStudyDay(DiagnosticChain diagnostics, Map<Object, Object> context)
   {
-    return PharmacokineticConcentrationFindingOperations.validatePharmacokineticConcentrationFindingAssayQuantitationAssociation(this, diagnostics, context);
+    return PharmacokineticConcentrationFindingOperations.validatePharmacokineticConcentrationFindingPlannedStudyDay(this, diagnostics, context);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public boolean validatePharmacokineticConcentrationFindingExclusionReason(DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+    return PharmacokineticConcentrationFindingOperations.validatePharmacokineticConcentrationFindingExclusionReason(this, diagnostics, context);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public boolean validatePharmacokineticConcentrationFindingpharmacokineticsTestResultCategoryAssociationpharmacokineticsTestResultCategoryClassCode(DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+    return PharmacokineticConcentrationFindingOperations.validatePharmacokineticConcentrationFindingpharmacokineticsTestResultCategoryAssociationpharmacokineticsTestResultCategoryClassCode(this, diagnostics, context);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public boolean validatePharmacokineticConcentrationFindingpharmacokineticsTestResultCategoryAssociationpharmacokineticsTestResultCategoryCode(DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+    return PharmacokineticConcentrationFindingOperations.validatePharmacokineticConcentrationFindingpharmacokineticsTestResultCategoryAssociationpharmacokineticsTestResultCategoryCode(this, diagnostics, context);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public boolean validatePharmacokineticConcentrationFindingpharmacokineticsTestResultCategoryAssociationpharmacokineticsTestResultCategoryMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+    return PharmacokineticConcentrationFindingOperations.validatePharmacokineticConcentrationFindingpharmacokineticsTestResultCategoryAssociationpharmacokineticsTestResultCategoryMoodCode(this, diagnostics, context);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public boolean validatePharmacokineticConcentrationFindingpharmacokineticsTestResultCategoryAssociationpharmacokineticsTestResultCategoryValue(DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+    return PharmacokineticConcentrationFindingOperations.validatePharmacokineticConcentrationFindingpharmacokineticsTestResultCategoryAssociationpharmacokineticsTestResultCategoryValue(this, diagnostics, context);
   }
 
   /**
@@ -232,9 +297,69 @@ public class PharmacokineticConcentrationFindingImpl extends ObservationImpl imp
    * <!-- end-user-doc -->
    * @generated
    */
+  public boolean validatePharmacokineticConcentrationFindingpharmacokineticsTestResultCategoryAssociationPharmacokineticsTestResultCategory(DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+    return PharmacokineticConcentrationFindingOperations.validatePharmacokineticConcentrationFindingpharmacokineticsTestResultCategoryAssociationPharmacokineticsTestResultCategory(this, diagnostics, context);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public boolean validatePharmacokineticConcentrationFindingpharmacokineticsTestResultSubCategoryAssociationpharmacokineticsTestResultSubCategoryClassCode(DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+    return PharmacokineticConcentrationFindingOperations.validatePharmacokineticConcentrationFindingpharmacokineticsTestResultSubCategoryAssociationpharmacokineticsTestResultSubCategoryClassCode(this, diagnostics, context);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public boolean validatePharmacokineticConcentrationFindingpharmacokineticsTestResultSubCategoryAssociationpharmacokineticsTestResultSubCategoryCode(DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+    return PharmacokineticConcentrationFindingOperations.validatePharmacokineticConcentrationFindingpharmacokineticsTestResultSubCategoryAssociationpharmacokineticsTestResultSubCategoryCode(this, diagnostics, context);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public boolean validatePharmacokineticConcentrationFindingpharmacokineticsTestResultSubCategoryAssociationpharmacokineticsTestResultSubCategoryMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+    return PharmacokineticConcentrationFindingOperations.validatePharmacokineticConcentrationFindingpharmacokineticsTestResultSubCategoryAssociationpharmacokineticsTestResultSubCategoryMoodCode(this, diagnostics, context);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public boolean validatePharmacokineticConcentrationFindingpharmacokineticsTestResultSubCategoryAssociationpharmacokineticsTestResultSubCategoryValue(DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+    return PharmacokineticConcentrationFindingOperations.validatePharmacokineticConcentrationFindingpharmacokineticsTestResultSubCategoryAssociationpharmacokineticsTestResultSubCategoryValue(this, diagnostics, context);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
   public boolean validatePharmacokineticConcentrationFindingpharmacokineticsTestResultSubCategoryAssociationTypeCode(DiagnosticChain diagnostics, Map<Object, Object> context)
   {
     return PharmacokineticConcentrationFindingOperations.validatePharmacokineticConcentrationFindingpharmacokineticsTestResultSubCategoryAssociationTypeCode(this, diagnostics, context);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public boolean validatePharmacokineticConcentrationFindingpharmacokineticsTestResultSubCategoryAssociationPharmacokineticsTestResultSubCategory(DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+    return PharmacokineticConcentrationFindingOperations.validatePharmacokineticConcentrationFindingpharmacokineticsTestResultSubCategoryAssociationPharmacokineticsTestResultSubCategory(this, diagnostics, context);
   }
 
   /**
@@ -382,56 +507,6 @@ public class PharmacokineticConcentrationFindingImpl extends ObservationImpl imp
    * <!-- end-user-doc -->
    * @generated
    */
-  public boolean validatePharmacokineticConcentrationFindingassayQuantitationAssociationassayQuantitationClassCodePharmacokineticConcentrationFindingassayQuantitationAssociationassayQuantitationClassCode1(DiagnosticChain diagnostics, Map<Object, Object> context)
-  {
-    return PharmacokineticConcentrationFindingOperations.validatePharmacokineticConcentrationFindingassayQuantitationAssociationassayQuantitationClassCodePharmacokineticConcentrationFindingassayQuantitationAssociationassayQuantitationClassCode1(this, diagnostics, context);
-  }
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public boolean validatePharmacokineticConcentrationFindingassayQuantitationAssociationassayQuantitationCodePPharmacokineticConcentrationFindingassayQuantitationAssociationassayQuantitationCodeP1(DiagnosticChain diagnostics, Map<Object, Object> context)
-  {
-    return PharmacokineticConcentrationFindingOperations.validatePharmacokineticConcentrationFindingassayQuantitationAssociationassayQuantitationCodePPharmacokineticConcentrationFindingassayQuantitationAssociationassayQuantitationCodeP1(this, diagnostics, context);
-  }
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public boolean validatePharmacokineticConcentrationFindingassayQuantitationAssociationassayQuantitationCodePharmacokineticConcentrationFindingassayQuantitationAssociationassayQuantitationCode1(DiagnosticChain diagnostics, Map<Object, Object> context)
-  {
-    return PharmacokineticConcentrationFindingOperations.validatePharmacokineticConcentrationFindingassayQuantitationAssociationassayQuantitationCodePharmacokineticConcentrationFindingassayQuantitationAssociationassayQuantitationCode1(this, diagnostics, context);
-  }
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public boolean validatePharmacokineticConcentrationFindingassayQuantitationAssociationassayQuantitationMoodCodePharmacokineticConcentrationFindingassayQuantitationAssociationassayQuantitationMoodCode1(DiagnosticChain diagnostics, Map<Object, Object> context)
-  {
-    return PharmacokineticConcentrationFindingOperations.validatePharmacokineticConcentrationFindingassayQuantitationAssociationassayQuantitationMoodCodePharmacokineticConcentrationFindingassayQuantitationAssociationassayQuantitationMoodCode1(this, diagnostics, context);
-  }
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public boolean validatePharmacokineticConcentrationFindingassayQuantitationAssociationassayQuantitationValuePharmacokineticConcentrationFindingassayQuantitationAssociationassayQuantitationValue1(DiagnosticChain diagnostics, Map<Object, Object> context)
-  {
-    return PharmacokineticConcentrationFindingOperations.validatePharmacokineticConcentrationFindingassayQuantitationAssociationassayQuantitationValuePharmacokineticConcentrationFindingassayQuantitationAssociationassayQuantitationValue1(this, diagnostics, context);
-  }
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
   public GroupIdentifier getGroupIdentifier()
   {
     return PharmacokineticConcentrationFindingOperations.getGroupIdentifier(this);
@@ -462,9 +537,19 @@ public class PharmacokineticConcentrationFindingImpl extends ObservationImpl imp
    * <!-- end-user-doc -->
    * @generated
    */
-  public DerivedDataIndicator getDerivedDataIndicator()
+  public PlannedStudyDay getPlannedStudyDay()
   {
-    return PharmacokineticConcentrationFindingOperations.getDerivedDataIndicator(this);
+    return PharmacokineticConcentrationFindingOperations.getPlannedStudyDay(this);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public ExclusionReason getExclusionReason()
+  {
+    return PharmacokineticConcentrationFindingOperations.getExclusionReason(this);
   }
 
   /**
@@ -473,7 +558,16 @@ public class PharmacokineticConcentrationFindingImpl extends ObservationImpl imp
    * @generated
    */
   public PharmacokineticConcentrationFinding init() {
-    	CDAUtil.init(this);
-    	return this;
+      return Initializer.Util.init(this);
   }
+
+  /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    public PharmacokineticConcentrationFinding init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
 } //PharmacokineticConcentrationFindingImpl

@@ -209,6 +209,10 @@
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="tularemia.ecore#//TularemiaPHCRRelevantDxTestsSection/gettularemiaImagingObservations"/>
     </genClasses>
     <genClasses xsi:type="genmodel:GenClass" ecoreClass="tularemia.ecore#//TularemiaResultOrganizer">
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="tularemia.ecore#//TularemiaResultOrganizer/TularemiaResultOrganizerCodeP">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="tularemia.ecore#//TularemiaResultOrganizer/TularemiaResultOrganizerCodeP/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="tularemia.ecore#//TularemiaResultOrganizer/TularemiaResultOrganizerCodeP/context"/>
+      </genOperations>
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="tularemia.ecore#//TularemiaResultOrganizer/TularemiaResultOrganizerCode">
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="tularemia.ecore#//TularemiaResultOrganizer/TularemiaResultOrganizerCode/diagnostics"/>
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="tularemia.ecore#//TularemiaResultOrganizer/TularemiaResultOrganizerCode/context"/>
@@ -220,6 +224,10 @@
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="tularemia.ecore#//TularemiaResultOrganizer/getTularemiaResultObservations"/>
     </genClasses>
     <genClasses xsi:type="genmodel:GenClass" ecoreClass="tularemia.ecore#//TularemiaResultObservation">
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="tularemia.ecore#//TularemiaResultObservation/TularemiaResultObservationCodeP">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="tularemia.ecore#//TularemiaResultObservation/TularemiaResultObservationCodeP/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="tularemia.ecore#//TularemiaResultObservation/TularemiaResultObservationCodeP/context"/>
+      </genOperations>
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="tularemia.ecore#//TularemiaResultObservation/TularemiaResultObservationCode">
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="tularemia.ecore#//TularemiaResultObservation/TularemiaResultObservationCode/diagnostics"/>
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="tularemia.ecore#//TularemiaResultObservation/TularemiaResultObservationCode/context"/>

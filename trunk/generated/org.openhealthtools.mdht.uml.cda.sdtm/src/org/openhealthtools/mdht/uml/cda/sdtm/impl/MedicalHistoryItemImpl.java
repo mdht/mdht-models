@@ -6,12 +6,15 @@
  */
 package org.openhealthtools.mdht.uml.cda.sdtm.impl;
 
+import java.lang.Iterable;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
 
 import org.eclipse.emf.ecore.EClass;
 
+import org.eclipse.emf.ecore.EObject;
+import org.openhealthtools.mdht.emf.runtime.util.Initializer;
 import org.openhealthtools.mdht.uml.cda.impl.ObservationImpl;
 
 import org.openhealthtools.mdht.uml.cda.sdtm.ActivityEndTimingReference;
@@ -205,16 +208,6 @@ public class MedicalHistoryItemImpl extends ObservationImpl implements MedicalHi
    * <!-- end-user-doc -->
    * @generated
    */
-  public boolean validateMedicalHistoryItemEventStudyDay(DiagnosticChain diagnostics, Map<Object, Object> context)
-  {
-    return MedicalHistoryItemOperations.validateMedicalHistoryItemEventStudyDay(this, diagnostics, context);
-  }
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
   public boolean validateMedicalHistoryItemActivityEndTimingReference(DiagnosticChain diagnostics, Map<Object, Object> context)
   {
     return MedicalHistoryItemOperations.validateMedicalHistoryItemActivityEndTimingReference(this, diagnostics, context);
@@ -235,6 +228,46 @@ public class MedicalHistoryItemImpl extends ObservationImpl implements MedicalHi
    * <!-- end-user-doc -->
    * @generated
    */
+  public boolean validateMedicalHistoryItemmedicalHistoryCategoryAssociationmedicalHistoryCategoryClassCode(DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+    return MedicalHistoryItemOperations.validateMedicalHistoryItemmedicalHistoryCategoryAssociationmedicalHistoryCategoryClassCode(this, diagnostics, context);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public boolean validateMedicalHistoryItemmedicalHistoryCategoryAssociationmedicalHistoryCategoryCode(DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+    return MedicalHistoryItemOperations.validateMedicalHistoryItemmedicalHistoryCategoryAssociationmedicalHistoryCategoryCode(this, diagnostics, context);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public boolean validateMedicalHistoryItemmedicalHistoryCategoryAssociationmedicalHistoryCategoryMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+    return MedicalHistoryItemOperations.validateMedicalHistoryItemmedicalHistoryCategoryAssociationmedicalHistoryCategoryMoodCode(this, diagnostics, context);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public boolean validateMedicalHistoryItemmedicalHistoryCategoryAssociationmedicalHistoryCategoryValue(DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+    return MedicalHistoryItemOperations.validateMedicalHistoryItemmedicalHistoryCategoryAssociationmedicalHistoryCategoryValue(this, diagnostics, context);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
   public boolean validateMedicalHistoryItemmedicalHistoryCategoryAssociationTypeCode(DiagnosticChain diagnostics, Map<Object, Object> context)
   {
     return MedicalHistoryItemOperations.validateMedicalHistoryItemmedicalHistoryCategoryAssociationTypeCode(this, diagnostics, context);
@@ -245,9 +278,69 @@ public class MedicalHistoryItemImpl extends ObservationImpl implements MedicalHi
    * <!-- end-user-doc -->
    * @generated
    */
+  public boolean validateMedicalHistoryItemmedicalHistoryCategoryAssociationMedicalHistoryCategory(DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+    return MedicalHistoryItemOperations.validateMedicalHistoryItemmedicalHistoryCategoryAssociationMedicalHistoryCategory(this, diagnostics, context);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public boolean validateMedicalHistoryItemmedicalHistorySubCategoryAssociationmedicalHistorySubCategoryClassCode(DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+    return MedicalHistoryItemOperations.validateMedicalHistoryItemmedicalHistorySubCategoryAssociationmedicalHistorySubCategoryClassCode(this, diagnostics, context);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public boolean validateMedicalHistoryItemmedicalHistorySubCategoryAssociationmedicalHistorySubCategoryCode(DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+    return MedicalHistoryItemOperations.validateMedicalHistoryItemmedicalHistorySubCategoryAssociationmedicalHistorySubCategoryCode(this, diagnostics, context);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public boolean validateMedicalHistoryItemmedicalHistorySubCategoryAssociationmedicalHistorySubCategoryMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+    return MedicalHistoryItemOperations.validateMedicalHistoryItemmedicalHistorySubCategoryAssociationmedicalHistorySubCategoryMoodCode(this, diagnostics, context);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public boolean validateMedicalHistoryItemmedicalHistorySubCategoryAssociationmedicalHistorySubCategoryValue(DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+    return MedicalHistoryItemOperations.validateMedicalHistoryItemmedicalHistorySubCategoryAssociationmedicalHistorySubCategoryValue(this, diagnostics, context);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
   public boolean validateMedicalHistoryItemmedicalHistorySubCategoryAssociationTypeCode(DiagnosticChain diagnostics, Map<Object, Object> context)
   {
     return MedicalHistoryItemOperations.validateMedicalHistoryItemmedicalHistorySubCategoryAssociationTypeCode(this, diagnostics, context);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public boolean validateMedicalHistoryItemmedicalHistorySubCategoryAssociationMedicalHistorySubCategory(DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+    return MedicalHistoryItemOperations.validateMedicalHistoryItemmedicalHistorySubCategoryAssociationMedicalHistorySubCategory(this, diagnostics, context);
   }
 
   /**
@@ -295,16 +388,6 @@ public class MedicalHistoryItemImpl extends ObservationImpl implements MedicalHi
    * <!-- end-user-doc -->
    * @generated
    */
-  public EventStudyDay getEventStudyDay()
-  {
-    return MedicalHistoryItemOperations.getEventStudyDay(this);
-  }
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
   public ActivityEndTimingReference getActivityEndTimingReference()
   {
     return MedicalHistoryItemOperations.getActivityEndTimingReference(this);
@@ -326,7 +409,16 @@ public class MedicalHistoryItemImpl extends ObservationImpl implements MedicalHi
    * @generated
    */
   public MedicalHistoryItem init() {
-    	CDAUtil.init(this);
-    	return this;
+      return Initializer.Util.init(this);
   }
+
+  /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    public MedicalHistoryItem init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
 } //MedicalHistoryItemImpl

@@ -10,10 +10,13 @@
  *******************************************************************************/
 package org.openhealthtools.mdht.uml.cda.phcr.chlamydiatrachomatis.impl;
 
+import java.lang.Iterable;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.ecore.EClass;
+import org.eclipse.emf.ecore.EObject;
+import org.openhealthtools.mdht.emf.runtime.util.Initializer;
 import org.openhealthtools.mdht.uml.cda.phcr.chlamydiatrachomatis.ChlamydiatrachomatisPHCRClinicalInformationSection;
 import org.openhealthtools.mdht.uml.cda.phcr.chlamydiatrachomatis.ChlamydiatrachomatisPHCRRelevantDxTestsSection;
 import org.openhealthtools.mdht.uml.cda.phcr.chlamydiatrachomatis.ChlamydiatrachomatisPHCRTreatmentInformationSection;
@@ -34,104 +37,113 @@ import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
  */
 public class ChlamydiatrachomatisPublicHealthCaseReportImpl extends PublicHealthCaseReportImpl implements ChlamydiatrachomatisPublicHealthCaseReport {
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	protected ChlamydiatrachomatisPublicHealthCaseReportImpl() {
-		super();
-	}
+    super();
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	@Override
 	protected EClass eStaticClass() {
-		return ChlamydiatrachomatisPackage.Literals.CHLAMYDIATRACHOMATIS_PUBLIC_HEALTH_CASE_REPORT;
-	}
+    return ChlamydiatrachomatisPackage.Literals.CHLAMYDIATRACHOMATIS_PUBLIC_HEALTH_CASE_REPORT;
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateChlamydiatrachomatisPublicHealthCaseReportTitle(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ChlamydiatrachomatisPublicHealthCaseReportOperations.validateChlamydiatrachomatisPublicHealthCaseReportTitle(this, diagnostics, context);
-	}
+    return ChlamydiatrachomatisPublicHealthCaseReportOperations.validateChlamydiatrachomatisPublicHealthCaseReportTitle(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateChlamydiatrachomatisPublicHealthCaseReportChlamydiatrachomatisPHCRClinicalInformationSection(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ChlamydiatrachomatisPublicHealthCaseReportOperations.validateChlamydiatrachomatisPublicHealthCaseReportChlamydiatrachomatisPHCRClinicalInformationSection(this, diagnostics, context);
-	}
+    return ChlamydiatrachomatisPublicHealthCaseReportOperations.validateChlamydiatrachomatisPublicHealthCaseReportChlamydiatrachomatisPHCRClinicalInformationSection(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateChlamydiatrachomatisPublicHealthCaseReportChlamydiatrachomatisPHCRRelevantDxTestsSection(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ChlamydiatrachomatisPublicHealthCaseReportOperations.validateChlamydiatrachomatisPublicHealthCaseReportChlamydiatrachomatisPHCRRelevantDxTestsSection(this, diagnostics, context);
-	}
+    return ChlamydiatrachomatisPublicHealthCaseReportOperations.validateChlamydiatrachomatisPublicHealthCaseReportChlamydiatrachomatisPHCRRelevantDxTestsSection(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateChlamydiatrachomatisPublicHealthCaseReportChlamydiatrachomatisPHCRTreatmentInformationSection(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ChlamydiatrachomatisPublicHealthCaseReportOperations.validateChlamydiatrachomatisPublicHealthCaseReportChlamydiatrachomatisPHCRTreatmentInformationSection(this, diagnostics, context);
-	}
+    return ChlamydiatrachomatisPublicHealthCaseReportOperations.validateChlamydiatrachomatisPublicHealthCaseReportChlamydiatrachomatisPHCRTreatmentInformationSection(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public ChlamydiatrachomatisPHCRClinicalInformationSection getChlamydiatrachomatisPHCRClinicalInformationSection() {
-		return ChlamydiatrachomatisPublicHealthCaseReportOperations.getChlamydiatrachomatisPHCRClinicalInformationSection(this);
-	}
+    return ChlamydiatrachomatisPublicHealthCaseReportOperations.getChlamydiatrachomatisPHCRClinicalInformationSection(this);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public ChlamydiatrachomatisPHCRRelevantDxTestsSection getChlamydiatrachomatisPHCRRelevantDxTestsSection() {
-		return ChlamydiatrachomatisPublicHealthCaseReportOperations.getChlamydiatrachomatisPHCRRelevantDxTestsSection(this);
-	}
+    return ChlamydiatrachomatisPublicHealthCaseReportOperations.getChlamydiatrachomatisPHCRRelevantDxTestsSection(this);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public ChlamydiatrachomatisPHCRTreatmentInformationSection getChlamydiatrachomatisPHCRTreatmentInformationSection() {
-		return ChlamydiatrachomatisPublicHealthCaseReportOperations.getChlamydiatrachomatisPHCRTreatmentInformationSection(this);
-	}
+    return ChlamydiatrachomatisPublicHealthCaseReportOperations.getChlamydiatrachomatisPHCRTreatmentInformationSection(this);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	@Override
 	public boolean validatePublicHealthCaseReportTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ChlamydiatrachomatisPublicHealthCaseReportOperations.validatePublicHealthCaseReportTemplateId(this, diagnostics, context);
-	}
+    return ChlamydiatrachomatisPublicHealthCaseReportOperations.validatePublicHealthCaseReportTemplateId(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public ChlamydiatrachomatisPublicHealthCaseReport init() {
-    	CDAUtil.init(this);
-    	return this;
-	}
+      return Initializer.Util.init(this);
+  }
+
+  /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    public ChlamydiatrachomatisPublicHealthCaseReport init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
 } //ChlamydiatrachomatisPublicHealthCaseReportImpl

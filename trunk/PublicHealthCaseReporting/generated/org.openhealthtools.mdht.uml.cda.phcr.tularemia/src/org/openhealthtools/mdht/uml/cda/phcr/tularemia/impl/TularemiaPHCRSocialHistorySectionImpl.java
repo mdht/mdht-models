@@ -10,11 +10,14 @@
  *******************************************************************************/
 package org.openhealthtools.mdht.uml.cda.phcr.tularemia.impl;
 
+import java.lang.Iterable;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.common.util.EList;
 import org.eclipse.emf.ecore.EClass;
+import org.eclipse.emf.ecore.EObject;
+import org.openhealthtools.mdht.emf.runtime.util.Initializer;
 import org.openhealthtools.mdht.uml.cda.phcr.impl.PhcrSocialHistorySectionImpl;
 import org.openhealthtools.mdht.uml.cda.phcr.tularemia.TularemiaPHCRSocialHistorySection;
 import org.openhealthtools.mdht.uml.cda.phcr.tularemia.TularemiaPackage;
@@ -34,62 +37,71 @@ import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
 public class TularemiaPHCRSocialHistorySectionImpl extends PhcrSocialHistorySectionImpl implements TularemiaPHCRSocialHistorySection
 {
   /**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   protected TularemiaPHCRSocialHistorySectionImpl()
   {
-		super();
-	}
+    super();
+  }
 
   /**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   @Override
   protected EClass eStaticClass()
   {
-		return TularemiaPackage.Literals.TULAREMIA_PHCR_SOCIAL_HISTORY_SECTION;
-	}
+    return TularemiaPackage.Literals.TULAREMIA_PHCR_SOCIAL_HISTORY_SECTION;
+  }
 
   /**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateTularemiaPHCRSocialHistorySectionTularemiaPossibleExposureLocationAndTypeAct(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return TularemiaPHCRSocialHistorySectionOperations.validateTularemiaPHCRSocialHistorySectionTularemiaPossibleExposureLocationAndTypeAct(this, diagnostics, context);
-	}
+    return TularemiaPHCRSocialHistorySectionOperations.validateTularemiaPHCRSocialHistorySectionTularemiaPossibleExposureLocationAndTypeAct(this, diagnostics, context);
+  }
 
 		/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public EList<TularemiaPossibleExposureLocationAndTypeAct> getTularemiaPossibleExposureLocationAndTypeActs() {
-		return TularemiaPHCRSocialHistorySectionOperations.getTularemiaPossibleExposureLocationAndTypeActs(this);
-	}
+    return TularemiaPHCRSocialHistorySectionOperations.getTularemiaPossibleExposureLocationAndTypeActs(this);
+  }
 
 		/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   @Override
   public boolean validateSocialHistorySectionTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context)
   {
-		return TularemiaPHCRSocialHistorySectionOperations.validateSocialHistorySectionTemplateId(this, diagnostics, context);
-	}
+    return TularemiaPHCRSocialHistorySectionOperations.validateSocialHistorySectionTemplateId(this, diagnostics, context);
+  }
 
   /**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   public TularemiaPHCRSocialHistorySection init() {
-    	CDAUtil.init(this);
-    	return this;
-	}
+      return Initializer.Util.init(this);
+  }
+
+  /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    public TularemiaPHCRSocialHistorySection init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
 } //TularemiaPHCRSocialHistorySectionImpl

@@ -6,10 +6,13 @@
  */
 package org.openhealthtools.mdht.uml.cda.sdtm;
 
+import java.lang.Iterable;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
 
+import org.eclipse.emf.ecore.EObject;
+import org.openhealthtools.mdht.emf.runtime.util.Initializer;
 import org.openhealthtools.mdht.uml.cda.Observation;
 
 /**
@@ -19,15 +22,17 @@ import org.openhealthtools.mdht.uml.cda.Observation;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.sdtm.SdtmPackage#getECGTestResult()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation templateId.root='2.16.840.1.113883.10.20.23.29' constraints.validation.error='ECG Test ResultTemplateId ECG Test ResultClassCode ECG Test ResultCode ECG Test ResultId ECG Test ResultMoodCode ECG Test ResultecgTestResultCategoryAssociationTypeCode ECG Test ResultecgTestResultSubCategoryAssociationTypeCode ECG Test ResultassociatedPositionTypeCode ECG Test ResultleadLocationAssociationTypeCode' constraints.validation.warning='ECG Test ResultEffectiveTime ECG Test ResultValue ECG Test ResultLeadLocationAssociation ECG Test ResultBaseline Indicator' classCode='OBS' constraints.validation.query='ECG Test ResultecgTestResultCategoryAssociationTypeCode ECG Test ResultecgTestResultSubCategoryAssociationTypeCode ECG Test ResultassociatedPositionTypeCode ECG Test ResultleadLocationAssociationTypeCode' constraints.validation.info='ECG Test ResultStatusCode ECG Test ResultMethodCode ECG Test ResultText ECG Test ResultGroup Identifier ECG Test ResultEcgTestResultCategoryAssociation ECG Test ResultEcgTestResultSubCategoryAssociation ECG Test ResultAssociatedPosition ECG Test ResultNonPerformanceReason ECG Test ResultDerived Data Indicator ECG Test ResultEvent Study Day ECG Test ResultTiming Reference' moodCode='EVN'"
- *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/sdtmECGTestResultecgTestResultCategoryAssociation constraints.validation.error='ecgTestResultCategoryAssociationTypeCode' typeCode='COMP'"
- *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/sdtmECGTestResultecgTestResultCategoryAssociationecgTestResultCategory constraints.validation.error='ecgTestResultCategoryClassCode ecgTestResultCategoryCode ecgTestResultCategoryMoodCode ecgTestResultCategoryValue' classCode='OBS' moodCode='EVN'"
- *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/sdtmECGTestResultecgTestResultSubCategoryAssociation constraints.validation.error='ecgTestResultSubCategoryAssociationTypeCode' typeCode='COMP'"
- *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/sdtmECGTestResultecgTestResultSubCategoryAssociationecgTestResultSubCategory constraints.validation.error='ecgTestResultSubCategoryClassCode ecgTestResultSubCategoryCode ecgTestResultSubCategoryMoodCode ecgTestResultSubCategoryValue' classCode='OBS' moodCode='EVN'"
- *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/sdtmECGTestResultassociatedPosition constraints.validation.error='associatedPositionTypeCode' typeCode='COMP'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='ECG Test ResultTemplateId ECG Test ResultClassCode ECG Test ResultCode ECG Test ResultId ECG Test ResultMoodCode ECG Test ResultStudy Day Period ECG Test ResultecgTestResultCategoryAssociationecgTestResultCategoryClassCode ECG Test ResultecgTestResultCategoryAssociationecgTestResultCategoryCode ECG Test ResultecgTestResultCategoryAssociationecgTestResultCategoryMoodCode ECG Test ResultecgTestResultCategoryAssociationecgTestResultCategoryValue ECG Test ResultecgTestResultCategoryAssociationTypeCode ECG Test ResultecgTestResultCategoryAssociationEcgTestResultCategory ECG Test ResultecgTestResultSubCategoryAssociationecgTestResultSubCategoryClassCode ECG Test ResultecgTestResultSubCategoryAssociationecgTestResultSubCategoryCode ECG Test ResultecgTestResultSubCategoryAssociationecgTestResultSubCategoryMoodCode ECG Test ResultecgTestResultSubCategoryAssociationecgTestResultSubCategoryValue ECG Test ResultecgTestResultSubCategoryAssociationTypeCode ECG Test ResultecgTestResultSubCategoryAssociationEcgTestResultSubCategory ECG Test ResultassociatedPositionpositionClassCode ECG Test ResultassociatedPositionpositionCode ECG Test ResultassociatedPositionpositionMoodCode ECG Test ResultassociatedPositionpositionValue ECG Test ResultassociatedPositionTypeCode ECG Test ResultassociatedPositionPosition ECG Test ResultleadLocationAssociationecgLeadLocationClassCode ECG Test ResultleadLocationAssociationecgLeadLocationCodeP ECG Test ResultleadLocationAssociationecgLeadLocationCode ECG Test ResultleadLocationAssociationecgLeadLocationMoodCode ECG Test ResultleadLocationAssociationecgLeadLocationValue ECG Test ResultleadLocationAssociationTypeCode ECG Test ResultleadLocationAssociationEcgLeadLocation ECG Test ResultassociatedConsciousnessconsciousnessStateClassCode ECG Test ResultassociatedConsciousnessconsciousnessStateCodeP ECG Test ResultassociatedConsciousnessconsciousnessStateCode ECG Test ResultassociatedConsciousnessconsciousnessStateMoodCode ECG Test ResultassociatedConsciousnessconsciousnessStateValue ECG Test ResultassociatedConsciousnessTypeCode ECG Test ResultassociatedConsciousnessConsciousnessState' templateId.root='2.16.840.1.113883.10.20.23.29' classCode='OBS' constraints.validation.warning='ECG Test ResultEffectiveTime ECG Test ResultValue ECG Test ResultInterpretationCode ECG Test ResultLeadLocationAssociation ECG Test ResultAssociatedConsciousness ECG Test ResultPlanned Study Day' moodCode='EVN' constraints.validation.info='ECG Test ResultStatusCode ECG Test ResultMethodCode ECG Test ResultText ECG Test ResultGroup Identifier ECG Test ResultEcgTestResultCategoryAssociation ECG Test ResultEcgTestResultSubCategoryAssociation ECG Test ResultAssociatedPosition ECG Test ResultNonPerformanceReason ECG Test ResultTiming Reference' constraints.validation.query='ECG Test ResultecgTestResultCategoryAssociationecgTestResultCategoryClassCode ECG Test ResultecgTestResultCategoryAssociationecgTestResultCategoryCode ECG Test ResultecgTestResultCategoryAssociationecgTestResultCategoryMoodCode ECG Test ResultecgTestResultCategoryAssociationecgTestResultCategoryValue ECG Test ResultecgTestResultCategoryAssociationTypeCode ECG Test ResultecgTestResultCategoryAssociationEcgTestResultCategory ECG Test ResultecgTestResultSubCategoryAssociationecgTestResultSubCategoryClassCode ECG Test ResultecgTestResultSubCategoryAssociationecgTestResultSubCategoryCode ECG Test ResultecgTestResultSubCategoryAssociationecgTestResultSubCategoryMoodCode ECG Test ResultecgTestResultSubCategoryAssociationecgTestResultSubCategoryValue ECG Test ResultecgTestResultSubCategoryAssociationTypeCode ECG Test ResultecgTestResultSubCategoryAssociationEcgTestResultSubCategory ECG Test ResultassociatedPositionpositionClassCode ECG Test ResultassociatedPositionpositionCode ECG Test ResultassociatedPositionpositionMoodCode ECG Test ResultassociatedPositionpositionValue ECG Test ResultassociatedPositionTypeCode ECG Test ResultassociatedPositionPosition ECG Test ResultleadLocationAssociationecgLeadLocationClassCode ECG Test ResultleadLocationAssociationecgLeadLocationCodeP ECG Test ResultleadLocationAssociationecgLeadLocationCode ECG Test ResultleadLocationAssociationecgLeadLocationMoodCode ECG Test ResultleadLocationAssociationecgLeadLocationValue ECG Test ResultleadLocationAssociationTypeCode ECG Test ResultleadLocationAssociationEcgLeadLocation ECG Test ResultassociatedConsciousnessconsciousnessStateClassCode ECG Test ResultassociatedConsciousnessconsciousnessStateCodeP ECG Test ResultassociatedConsciousnessconsciousnessStateCode ECG Test ResultassociatedConsciousnessconsciousnessStateMoodCode ECG Test ResultassociatedConsciousnessconsciousnessStateValue ECG Test ResultassociatedConsciousnessTypeCode ECG Test ResultassociatedConsciousnessConsciousnessState'"
+ *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/sdtmECGTestResultecgTestResultCategoryAssociation typeCode='COMP' constraints.validation.error='ecgTestResultCategoryAssociationTypeCode ecgTestResultCategoryAssociationEcgTestResultCategory ecgTestResultCategoryAssociationecgTestResultCategoryClassCode ecgTestResultCategoryAssociationecgTestResultCategoryCode ecgTestResultCategoryAssociationecgTestResultCategoryMoodCode ecgTestResultCategoryAssociationecgTestResultCategoryValue' constraints.validation.query='ecgTestResultCategoryAssociationecgTestResultCategoryClassCode ecgTestResultCategoryAssociationecgTestResultCategoryCode ecgTestResultCategoryAssociationecgTestResultCategoryMoodCode ecgTestResultCategoryAssociationecgTestResultCategoryValue'"
+ *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/sdtmECGTestResultecgTestResultCategoryAssociationecgTestResultCategory classCode='OBS' constraints.validation.error='ecgTestResultCategoryClassCode ecgTestResultCategoryCode ecgTestResultCategoryMoodCode ecgTestResultCategoryValue' moodCode='EVN'"
+ *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/sdtmECGTestResultecgTestResultSubCategoryAssociation typeCode='COMP' constraints.validation.error='ecgTestResultSubCategoryAssociationTypeCode ecgTestResultSubCategoryAssociationEcgTestResultSubCategory ecgTestResultSubCategoryAssociationecgTestResultSubCategoryClassCode ecgTestResultSubCategoryAssociationecgTestResultSubCategoryCode ecgTestResultSubCategoryAssociationecgTestResultSubCategoryMoodCode ecgTestResultSubCategoryAssociationecgTestResultSubCategoryValue' constraints.validation.query='ecgTestResultSubCategoryAssociationecgTestResultSubCategoryClassCode ecgTestResultSubCategoryAssociationecgTestResultSubCategoryCode ecgTestResultSubCategoryAssociationecgTestResultSubCategoryMoodCode ecgTestResultSubCategoryAssociationecgTestResultSubCategoryValue'"
+ *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/sdtmECGTestResultecgTestResultSubCategoryAssociationecgTestResultSubCategory classCode='OBS' constraints.validation.error='ecgTestResultSubCategoryClassCode ecgTestResultSubCategoryCode ecgTestResultSubCategoryMoodCode ecgTestResultSubCategoryValue' moodCode='EVN'"
+ *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/sdtmECGTestResultassociatedPosition typeCode='COMP' constraints.validation.error='associatedPositionTypeCode associatedPositionPosition associatedPositionpositionClassCode associatedPositionpositionCode associatedPositionpositionMoodCode associatedPositionpositionValue' constraints.validation.query='associatedPositionpositionClassCode associatedPositionpositionCode associatedPositionpositionMoodCode associatedPositionpositionValue'"
  *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/sdtmECGTestResultassociatedPositionposition constraints.validation.error='positionClassCode positionCode positionMoodCode positionValue'"
- *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/sdtmECGTestResultleadLocationAssociation constraints.validation.error='leadLocationAssociationTypeCode' typeCode='COMP'"
- *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/sdtmECGTestResultleadLocationAssociationecgLeadLocation code.codeSystem='2.16.840.1.113883.3.26.1.1' constraints.validation.dependOn.ecgLeadLocationCode='ecgLeadLocationCodeP' constraints.validation.error='ecgLeadLocationClassCode ecgLeadLocationCode ecgLeadLocationCodeP ecgLeadLocationMoodCode ecgLeadLocationValue' code.codeSystemName='NCI Thesaurus' classCode='OBS' code.code='TBD' moodCode='EVN'"
+ *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/sdtmECGTestResultleadLocationAssociation typeCode='COMP' constraints.validation.error='leadLocationAssociationTypeCode leadLocationAssociationEcgLeadLocation leadLocationAssociationecgLeadLocationClassCode leadLocationAssociationecgLeadLocationCodeP leadLocationAssociationecgLeadLocationCode leadLocationAssociationecgLeadLocationMoodCode leadLocationAssociationecgLeadLocationValue' constraints.validation.query='leadLocationAssociationecgLeadLocationClassCode leadLocationAssociationecgLeadLocationCodeP leadLocationAssociationecgLeadLocationCode leadLocationAssociationecgLeadLocationMoodCode leadLocationAssociationecgLeadLocationValue' constraints.validation.dependOn.leadLocationAssociationecgLeadLocationCode='leadLocationAssociationecgLeadLocationCodeP'"
+ *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/sdtmECGTestResultleadLocationAssociationecgLeadLocation classCode='OBS' constraints.validation.error='ecgLeadLocationClassCode ecgLeadLocationCode ecgLeadLocationCodeP ecgLeadLocationMoodCode ecgLeadLocationValue' code.code='TBD' code.codeSystem='2.16.840.1.113883.3.26.1.1' code.codeSystemName='NCI Thesaurus' constraints.validation.dependOn.ecgLeadLocationCode='ecgLeadLocationCodeP' moodCode='EVN'"
+ *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/sdtmECGTestResultassociatedConsciousness typeCode='COMP' constraints.validation.error='associatedConsciousnessTypeCode associatedConsciousnessConsciousnessState associatedConsciousnessconsciousnessStateClassCode associatedConsciousnessconsciousnessStateCodeP associatedConsciousnessconsciousnessStateCode associatedConsciousnessconsciousnessStateMoodCode associatedConsciousnessconsciousnessStateValue' constraints.validation.query='associatedConsciousnessconsciousnessStateClassCode associatedConsciousnessconsciousnessStateCodeP associatedConsciousnessconsciousnessStateCode associatedConsciousnessconsciousnessStateMoodCode associatedConsciousnessconsciousnessStateValue' constraints.validation.dependOn.associatedConsciousnessconsciousnessStateCode='associatedConsciousnessconsciousnessStateCodeP'"
+ *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/sdtmECGTestResultassociatedConsciousnessconsciousnessState constraints.validation.error='consciousnessStateClassCode consciousnessStateCode consciousnessStateCodeP consciousnessStateMoodCode consciousnessStateValue' code.codeSystem='2.16.840.1.113883.3.26.1.1' code.codeSystemName='NCI Thesaurus' constraints.validation.dependOn.consciousnessStateCode='consciousnessStateCodeP'"
  * @generated
  */
 public interface ECGTestResult extends Observation
@@ -36,7 +41,6 @@ public interface ECGTestResult extends Observation
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.23.29')
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
    * <!-- end-model-doc -->
@@ -49,7 +53,6 @@ public interface ECGTestResult extends Observation
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.classCode=vocab::ActClassObservation::OBS
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
    * <!-- end-model-doc -->
@@ -62,7 +65,6 @@ public interface ECGTestResult extends Observation
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * (self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined())
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
    * <!-- end-model-doc -->
@@ -75,7 +77,6 @@ public interface ECGTestResult extends Observation
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * (self.effectiveTime.oclIsUndefined() or self.effectiveTime.isNullFlavorUndefined()) implies (not self.effectiveTime.oclIsUndefined())
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
    * <!-- end-model-doc -->
@@ -88,7 +89,6 @@ public interface ECGTestResult extends Observation
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * (self.id->isEmpty() or self.id->exists(element | element.isNullFlavorUndefined())) implies (not self.id->isEmpty())
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
    * <!-- end-model-doc -->
@@ -101,7 +101,6 @@ public interface ECGTestResult extends Observation
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * (self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (not self.value->isEmpty())
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
    * <!-- end-model-doc -->
@@ -114,7 +113,6 @@ public interface ECGTestResult extends Observation
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.moodCode=vocab::x_ActMoodDocumentObservation::EVN
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
    * <!-- end-model-doc -->
@@ -127,7 +125,6 @@ public interface ECGTestResult extends Observation
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * (self.statusCode.oclIsUndefined() or self.statusCode.isNullFlavorUndefined()) implies (not self.statusCode.oclIsUndefined())
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
    * <!-- end-model-doc -->
@@ -140,7 +137,6 @@ public interface ECGTestResult extends Observation
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * (self.methodCode->isEmpty() or self.methodCode->exists(element | element.isNullFlavorUndefined())) implies (not self.methodCode->isEmpty())
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
    * <!-- end-model-doc -->
@@ -153,7 +149,6 @@ public interface ECGTestResult extends Observation
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * (self.text.oclIsUndefined() or self.text.isNullFlavorUndefined()) implies (not self.text.oclIsUndefined())
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
    * <!-- end-model-doc -->
@@ -166,7 +161,18 @@ public interface ECGTestResult extends Observation
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.entryRelationship->one(entryRelationship : cda::EntryRelationship | not entryRelationship.act.oclIsUndefined() and entryRelationship.act.oclIsKindOf(sdtm::Group Identifier) and entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::COMP)
+   * @param diagnostics The chain of diagnostics to which problems are to be appended.
+   * @param context The cache of context-specific information.
+   * <!-- end-model-doc -->
+   * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.interpretationCode->isEmpty() or self.interpretationCode->exists(element | element.isNullFlavorUndefined())) implies (not self.interpretationCode->isEmpty())'"
+   * @generated
+   */
+  boolean validateECGTestResultInterpretationCode(DiagnosticChain diagnostics, Map<Object, Object> context);
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * <!-- begin-model-doc -->
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
    * <!-- end-model-doc -->
@@ -179,7 +185,6 @@ public interface ECGTestResult extends Observation
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.entryRelationship->one(entryRelationship : cda::EntryRelationship | not entryRelationship.oclIsUndefined() and entryRelationship.oclIsKindOf(cda::EntryRelationship))
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
    * <!-- end-model-doc -->
@@ -192,7 +197,6 @@ public interface ECGTestResult extends Observation
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.entryRelationship->one(entryRelationship : cda::EntryRelationship | not entryRelationship.oclIsUndefined() and entryRelationship.oclIsKindOf(cda::EntryRelationship))
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
    * <!-- end-model-doc -->
@@ -205,7 +209,6 @@ public interface ECGTestResult extends Observation
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.entryRelationship->one(entryRelationship : cda::EntryRelationship | not entryRelationship.oclIsUndefined() and entryRelationship.oclIsKindOf(cda::EntryRelationship))
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
    * <!-- end-model-doc -->
@@ -218,7 +221,6 @@ public interface ECGTestResult extends Observation
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.entryRelationship->one(entryRelationship : cda::EntryRelationship | not entryRelationship.observation.oclIsUndefined() and entryRelationship.observation.oclIsKindOf(sdtm::Non Performance Reason))
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
    * <!-- end-model-doc -->
@@ -231,7 +233,6 @@ public interface ECGTestResult extends Observation
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.entryRelationship->one(entryRelationship : cda::EntryRelationship | not entryRelationship.oclIsUndefined() and entryRelationship.oclIsKindOf(cda::EntryRelationship))
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
    * <!-- end-model-doc -->
@@ -244,46 +245,6 @@ public interface ECGTestResult extends Observation
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.entryRelationship->one(entryRelationship : cda::EntryRelationship | not entryRelationship.observation.oclIsUndefined() and entryRelationship.observation.oclIsKindOf(sdtm::Baseline Indicator) and entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::COMP)
-   * @param diagnostics The chain of diagnostics to which problems are to be appended.
-   * @param context The cache of context-specific information.
-   * <!-- end-model-doc -->
-   * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship->one(entryRelationship : cda::EntryRelationship | not entryRelationship.observation.oclIsUndefined() and entryRelationship.observation.oclIsKindOf(sdtm::Baseline Indicator) and entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::COMP)'"
-   * @generated
-   */
-  boolean validateECGTestResultBaselineIndicator(DiagnosticChain diagnostics, Map<Object, Object> context);
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * <!-- begin-model-doc -->
-   * self.entryRelationship->one(entryRelationship : cda::EntryRelationship | not entryRelationship.observation.oclIsUndefined() and entryRelationship.observation.oclIsKindOf(sdtm::Derived Data Indicator) and entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::COMP)
-   * @param diagnostics The chain of diagnostics to which problems are to be appended.
-   * @param context The cache of context-specific information.
-   * <!-- end-model-doc -->
-   * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship->one(entryRelationship : cda::EntryRelationship | not entryRelationship.observation.oclIsUndefined() and entryRelationship.observation.oclIsKindOf(sdtm::Derived Data Indicator) and entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::COMP)'"
-   * @generated
-   */
-  boolean validateECGTestResultDerivedDataIndicator(DiagnosticChain diagnostics, Map<Object, Object> context);
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * <!-- begin-model-doc -->
-   * self.entryRelationship->one(entryRelationship : cda::EntryRelationship | not entryRelationship.observation.oclIsUndefined() and entryRelationship.observation.oclIsKindOf(sdtm::Event Study Day) and entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::REFR)
-   * @param diagnostics The chain of diagnostics to which problems are to be appended.
-   * @param context The cache of context-specific information.
-   * <!-- end-model-doc -->
-   * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship->one(entryRelationship : cda::EntryRelationship | not entryRelationship.observation.oclIsUndefined() and entryRelationship.observation.oclIsKindOf(sdtm::Event Study Day) and entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::REFR)'"
-   * @generated
-   */
-  boolean validateECGTestResultEventStudyDay(DiagnosticChain diagnostics, Map<Object, Object> context);
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * <!-- begin-model-doc -->
-   * self.entryRelationship->one(entryRelationship : cda::EntryRelationship | not entryRelationship.act.oclIsUndefined() and entryRelationship.act.oclIsKindOf(sdtm::Timing Reference) and entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::REFR)
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
    * <!-- end-model-doc -->
@@ -296,7 +257,90 @@ public interface ECGTestResult extends Observation
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.entryRelationship->excluding(null)->reject(typeCode=vocab::x_ActRelationshipEntryRelationship::COMP)
+   * @param diagnostics The chain of diagnostics to which problems are to be appended.
+   * @param context The cache of context-specific information.
+   * <!-- end-model-doc -->
+   * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship->one(entryRelationship : cda::EntryRelationship | not entryRelationship.oclIsUndefined() and entryRelationship.oclIsKindOf(cda::EntryRelationship))'"
+   * @generated
+   */
+  boolean validateECGTestResultAssociatedConsciousness(DiagnosticChain diagnostics, Map<Object, Object> context);
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * <!-- begin-model-doc -->
+   * @param diagnostics The chain of diagnostics to which problems are to be appended.
+   * @param context The cache of context-specific information.
+   * <!-- end-model-doc -->
+   * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship->one(entryRelationship : cda::EntryRelationship | not entryRelationship.observation.oclIsUndefined() and entryRelationship.observation.oclIsKindOf(sdtm::Planned Study Day) and entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::REFR)'"
+   * @generated
+   */
+  boolean validateECGTestResultPlannedStudyDay(DiagnosticChain diagnostics, Map<Object, Object> context);
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * <!-- begin-model-doc -->
+   * @param diagnostics The chain of diagnostics to which problems are to be appended.
+   * @param context The cache of context-specific information.
+   * <!-- end-model-doc -->
+   * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship->one(entryRelationship : cda::EntryRelationship | not entryRelationship.observation.oclIsUndefined() and entryRelationship.observation.oclIsKindOf(sdtm::Study Day Period) and entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::REFR)'"
+   * @generated
+   */
+  boolean validateECGTestResultStudyDayPeriod(DiagnosticChain diagnostics, Map<Object, Object> context);
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * <!-- begin-model-doc -->
+   * @param diagnostics The chain of diagnostics to which problems are to be appended.
+   * @param context The cache of context-specific information.
+   * <!-- end-model-doc -->
+   * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship->excluding(null).observation->excluding(null)->reject(classCode=vocab::ActClassObservation::OBS)'"
+   * @generated
+   */
+  boolean validateECGTestResultecgTestResultCategoryAssociationecgTestResultCategoryClassCode(DiagnosticChain diagnostics, Map<Object, Object> context);
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * <!-- begin-model-doc -->
+   * @param diagnostics The chain of diagnostics to which problems are to be appended.
+   * @param context The cache of context-specific information.
+   * <!-- end-model-doc -->
+   * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship->excluding(null).observation->excluding(null)->reject((code.oclIsUndefined() or code.isNullFlavorUndefined()) implies (not code.oclIsUndefined()))'"
+   * @generated
+   */
+  boolean validateECGTestResultecgTestResultCategoryAssociationecgTestResultCategoryCode(DiagnosticChain diagnostics, Map<Object, Object> context);
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * <!-- begin-model-doc -->
+   * @param diagnostics The chain of diagnostics to which problems are to be appended.
+   * @param context The cache of context-specific information.
+   * <!-- end-model-doc -->
+   * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship->excluding(null).observation->excluding(null)->reject(moodCode=vocab::x_ActMoodDocumentObservation::EVN)'"
+   * @generated
+   */
+  boolean validateECGTestResultecgTestResultCategoryAssociationecgTestResultCategoryMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context);
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * <!-- begin-model-doc -->
+   * @param diagnostics The chain of diagnostics to which problems are to be appended.
+   * @param context The cache of context-specific information.
+   * <!-- end-model-doc -->
+   * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship->excluding(null).observation->excluding(null)->reject((value->isEmpty() or value->exists(element | element.isNullFlavorUndefined())) implies (value->size() = 1 and value->forAll(element | element.oclIsTypeOf(datatypes::CE))))'"
+   * @generated
+   */
+  boolean validateECGTestResultecgTestResultCategoryAssociationecgTestResultCategoryValue(DiagnosticChain diagnostics, Map<Object, Object> context);
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * <!-- begin-model-doc -->
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
    * <!-- end-model-doc -->
@@ -309,7 +353,66 @@ public interface ECGTestResult extends Observation
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.entryRelationship->excluding(null)->reject(typeCode=vocab::x_ActRelationshipEntryRelationship::COMP)
+   * @param diagnostics The chain of diagnostics to which problems are to be appended.
+   * @param context The cache of context-specific information.
+   * <!-- end-model-doc -->
+   * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship->excluding(null)->reject(observation->one(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(cda::Observation)))'"
+   * @generated
+   */
+  boolean validateECGTestResultecgTestResultCategoryAssociationEcgTestResultCategory(DiagnosticChain diagnostics, Map<Object, Object> context);
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * <!-- begin-model-doc -->
+   * @param diagnostics The chain of diagnostics to which problems are to be appended.
+   * @param context The cache of context-specific information.
+   * <!-- end-model-doc -->
+   * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship->excluding(null).observation->excluding(null)->reject(classCode=vocab::ActClassObservation::OBS)'"
+   * @generated
+   */
+  boolean validateECGTestResultecgTestResultSubCategoryAssociationecgTestResultSubCategoryClassCode(DiagnosticChain diagnostics, Map<Object, Object> context);
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * <!-- begin-model-doc -->
+   * @param diagnostics The chain of diagnostics to which problems are to be appended.
+   * @param context The cache of context-specific information.
+   * <!-- end-model-doc -->
+   * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship->excluding(null).observation->excluding(null)->reject((code.oclIsUndefined() or code.isNullFlavorUndefined()) implies (not code.oclIsUndefined()))'"
+   * @generated
+   */
+  boolean validateECGTestResultecgTestResultSubCategoryAssociationecgTestResultSubCategoryCode(DiagnosticChain diagnostics, Map<Object, Object> context);
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * <!-- begin-model-doc -->
+   * @param diagnostics The chain of diagnostics to which problems are to be appended.
+   * @param context The cache of context-specific information.
+   * <!-- end-model-doc -->
+   * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship->excluding(null).observation->excluding(null)->reject(moodCode=vocab::x_ActMoodDocumentObservation::EVN)'"
+   * @generated
+   */
+  boolean validateECGTestResultecgTestResultSubCategoryAssociationecgTestResultSubCategoryMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context);
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * <!-- begin-model-doc -->
+   * @param diagnostics The chain of diagnostics to which problems are to be appended.
+   * @param context The cache of context-specific information.
+   * <!-- end-model-doc -->
+   * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship->excluding(null).observation->excluding(null)->reject((value->isEmpty() or value->exists(element | element.isNullFlavorUndefined())) implies (value->size() = 1 and value->forAll(element | element.oclIsTypeOf(datatypes::CE))))'"
+   * @generated
+   */
+  boolean validateECGTestResultecgTestResultSubCategoryAssociationecgTestResultSubCategoryValue(DiagnosticChain diagnostics, Map<Object, Object> context);
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * <!-- begin-model-doc -->
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
    * <!-- end-model-doc -->
@@ -322,7 +425,66 @@ public interface ECGTestResult extends Observation
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.entryRelationship->excluding(null)->reject(typeCode=vocab::x_ActRelationshipEntryRelationship::COMP)
+   * @param diagnostics The chain of diagnostics to which problems are to be appended.
+   * @param context The cache of context-specific information.
+   * <!-- end-model-doc -->
+   * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship->excluding(null)->reject(observation->one(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(cda::Observation)))'"
+   * @generated
+   */
+  boolean validateECGTestResultecgTestResultSubCategoryAssociationEcgTestResultSubCategory(DiagnosticChain diagnostics, Map<Object, Object> context);
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * <!-- begin-model-doc -->
+   * @param diagnostics The chain of diagnostics to which problems are to be appended.
+   * @param context The cache of context-specific information.
+   * <!-- end-model-doc -->
+   * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship->excluding(null).observation->excluding(null)->reject(isDefined(\'classCode\'))'"
+   * @generated
+   */
+  boolean validateECGTestResultassociatedPositionpositionClassCode(DiagnosticChain diagnostics, Map<Object, Object> context);
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * <!-- begin-model-doc -->
+   * @param diagnostics The chain of diagnostics to which problems are to be appended.
+   * @param context The cache of context-specific information.
+   * <!-- end-model-doc -->
+   * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship->excluding(null).observation->excluding(null)->reject((code.oclIsUndefined() or code.isNullFlavorUndefined()) implies (not code.oclIsUndefined()))'"
+   * @generated
+   */
+  boolean validateECGTestResultassociatedPositionpositionCode(DiagnosticChain diagnostics, Map<Object, Object> context);
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * <!-- begin-model-doc -->
+   * @param diagnostics The chain of diagnostics to which problems are to be appended.
+   * @param context The cache of context-specific information.
+   * <!-- end-model-doc -->
+   * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship->excluding(null).observation->excluding(null)->reject(isDefined(\'moodCode\'))'"
+   * @generated
+   */
+  boolean validateECGTestResultassociatedPositionpositionMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context);
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * <!-- begin-model-doc -->
+   * @param diagnostics The chain of diagnostics to which problems are to be appended.
+   * @param context The cache of context-specific information.
+   * <!-- end-model-doc -->
+   * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship->excluding(null).observation->excluding(null)->reject((value->isEmpty() or value->exists(element | element.isNullFlavorUndefined())) implies (value->size() = 1 and value->forAll(element | element.oclIsTypeOf(datatypes::CD))))'"
+   * @generated
+   */
+  boolean validateECGTestResultassociatedPositionpositionValue(DiagnosticChain diagnostics, Map<Object, Object> context);
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * <!-- begin-model-doc -->
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
    * <!-- end-model-doc -->
@@ -335,7 +497,78 @@ public interface ECGTestResult extends Observation
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.entryRelationship->excluding(null)->reject(typeCode=vocab::x_ActRelationshipEntryRelationship::COMP)
+   * @param diagnostics The chain of diagnostics to which problems are to be appended.
+   * @param context The cache of context-specific information.
+   * <!-- end-model-doc -->
+   * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship->excluding(null)->reject(observation->one(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(cda::Observation)))'"
+   * @generated
+   */
+  boolean validateECGTestResultassociatedPositionPosition(DiagnosticChain diagnostics, Map<Object, Object> context);
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * <!-- begin-model-doc -->
+   * @param diagnostics The chain of diagnostics to which problems are to be appended.
+   * @param context The cache of context-specific information.
+   * <!-- end-model-doc -->
+   * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship->excluding(null).observation->excluding(null)->reject(classCode=vocab::ActClassObservation::OBS)'"
+   * @generated
+   */
+  boolean validateECGTestResultleadLocationAssociationecgLeadLocationClassCode(DiagnosticChain diagnostics, Map<Object, Object> context);
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * <!-- begin-model-doc -->
+   * @param diagnostics The chain of diagnostics to which problems are to be appended.
+   * @param context The cache of context-specific information.
+   * <!-- end-model-doc -->
+   * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship->excluding(null).observation->excluding(null)->reject((code.oclIsUndefined() or code.isNullFlavorUndefined()) implies (not code.oclIsUndefined()))'"
+   * @generated
+   */
+  boolean validateECGTestResultleadLocationAssociationecgLeadLocationCodeP(DiagnosticChain diagnostics, Map<Object, Object> context);
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * <!-- begin-model-doc -->
+   * @param diagnostics The chain of diagnostics to which problems are to be appended.
+   * @param context The cache of context-specific information.
+   * <!-- end-model-doc -->
+   * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship->excluding(null).observation->excluding(null)->reject((code.oclIsUndefined() or code.isNullFlavorUndefined()) implies (not code.oclIsUndefined() and code.oclIsKindOf(datatypes::CD) and \nlet value : datatypes::CD = code.oclAsType(datatypes::CD) in \nvalue.code = \'TBD\' and value.codeSystem = \'2.16.840.1.113883.3.26.1.1\'))'"
+   * @generated
+   */
+  boolean validateECGTestResultleadLocationAssociationecgLeadLocationCode(DiagnosticChain diagnostics, Map<Object, Object> context);
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * <!-- begin-model-doc -->
+   * @param diagnostics The chain of diagnostics to which problems are to be appended.
+   * @param context The cache of context-specific information.
+   * <!-- end-model-doc -->
+   * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship->excluding(null).observation->excluding(null)->reject(moodCode=vocab::x_ActMoodDocumentObservation::EVN)'"
+   * @generated
+   */
+  boolean validateECGTestResultleadLocationAssociationecgLeadLocationMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context);
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * <!-- begin-model-doc -->
+   * @param diagnostics The chain of diagnostics to which problems are to be appended.
+   * @param context The cache of context-specific information.
+   * <!-- end-model-doc -->
+   * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship->excluding(null).observation->excluding(null)->reject((value->isEmpty() or value->exists(element | element.isNullFlavorUndefined())) implies (value->forAll(element | element.oclIsTypeOf(datatypes::CE))))'"
+   * @generated
+   */
+  boolean validateECGTestResultleadLocationAssociationecgLeadLocationValue(DiagnosticChain diagnostics, Map<Object, Object> context);
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * <!-- begin-model-doc -->
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
    * <!-- end-model-doc -->
@@ -348,10 +581,103 @@ public interface ECGTestResult extends Observation
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(sdtm::Group Identifier))->asSequence()->first().oclAsType(sdtm::Group Identifier)
+   * @param diagnostics The chain of diagnostics to which problems are to be appended.
+   * @param context The cache of context-specific information.
    * <!-- end-model-doc -->
+   * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship->excluding(null)->reject(observation->one(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(cda::Observation)))'"
+   * @generated
+   */
+  boolean validateECGTestResultleadLocationAssociationEcgLeadLocation(DiagnosticChain diagnostics, Map<Object, Object> context);
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * <!-- begin-model-doc -->
+   * @param diagnostics The chain of diagnostics to which problems are to be appended.
+   * @param context The cache of context-specific information.
+   * <!-- end-model-doc -->
+   * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship->excluding(null).observation->excluding(null)->reject(isDefined(\'classCode\'))'"
+   * @generated
+   */
+  boolean validateECGTestResultassociatedConsciousnessconsciousnessStateClassCode(DiagnosticChain diagnostics, Map<Object, Object> context);
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * <!-- begin-model-doc -->
+   * @param diagnostics The chain of diagnostics to which problems are to be appended.
+   * @param context The cache of context-specific information.
+   * <!-- end-model-doc -->
+   * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship->excluding(null).observation->excluding(null)->reject((code.oclIsUndefined() or code.isNullFlavorUndefined()) implies (not code.oclIsUndefined()))'"
+   * @generated
+   */
+  boolean validateECGTestResultassociatedConsciousnessconsciousnessStateCodeP(DiagnosticChain diagnostics, Map<Object, Object> context);
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * <!-- begin-model-doc -->
+   * @param diagnostics The chain of diagnostics to which problems are to be appended.
+   * @param context The cache of context-specific information.
+   * <!-- end-model-doc -->
+   * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship->excluding(null).observation->excluding(null)->reject((code.oclIsUndefined() or code.isNullFlavorUndefined()) implies (not code.oclIsUndefined() and code.oclIsKindOf(datatypes::CD) and \nlet value : datatypes::CD = code.oclAsType(datatypes::CD) in \nvalue.codeSystem = \'2.16.840.1.113883.3.26.1.1\'))'"
+   * @generated
+   */
+  boolean validateECGTestResultassociatedConsciousnessconsciousnessStateCode(DiagnosticChain diagnostics, Map<Object, Object> context);
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * <!-- begin-model-doc -->
+   * @param diagnostics The chain of diagnostics to which problems are to be appended.
+   * @param context The cache of context-specific information.
+   * <!-- end-model-doc -->
+   * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship->excluding(null).observation->excluding(null)->reject(isDefined(\'moodCode\'))'"
+   * @generated
+   */
+  boolean validateECGTestResultassociatedConsciousnessconsciousnessStateMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context);
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * <!-- begin-model-doc -->
+   * @param diagnostics The chain of diagnostics to which problems are to be appended.
+   * @param context The cache of context-specific information.
+   * <!-- end-model-doc -->
+   * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship->excluding(null).observation->excluding(null)->reject((value->isEmpty() or value->exists(element | element.isNullFlavorUndefined())) implies (value->size() = 1 and value->forAll(element | element.oclIsTypeOf(datatypes::CE))))'"
+   * @generated
+   */
+  boolean validateECGTestResultassociatedConsciousnessconsciousnessStateValue(DiagnosticChain diagnostics, Map<Object, Object> context);
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * <!-- begin-model-doc -->
+   * @param diagnostics The chain of diagnostics to which problems are to be appended.
+   * @param context The cache of context-specific information.
+   * <!-- end-model-doc -->
+   * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship->excluding(null)->reject(typeCode=vocab::x_ActRelationshipEntryRelationship::COMP)'"
+   * @generated
+   */
+  boolean validateECGTestResultassociatedConsciousnessTypeCode(DiagnosticChain diagnostics, Map<Object, Object> context);
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * <!-- begin-model-doc -->
+   * @param diagnostics The chain of diagnostics to which problems are to be appended.
+   * @param context The cache of context-specific information.
+   * <!-- end-model-doc -->
+   * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship->excluding(null)->reject(observation->one(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(cda::Observation)))'"
+   * @generated
+   */
+  boolean validateECGTestResultassociatedConsciousnessConsciousnessState(DiagnosticChain diagnostics, Map<Object, Object> context);
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
    * @model kind="operation" required="true" ordered="false"
-   *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(sdtm::Group Identifier))->asSequence()->first().oclAsType(sdtm::Group Identifier)'"
+   *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(sdtm::Group Identifier))->asSequence()->any(true).oclAsType(sdtm::Group Identifier)'"
    * @generated
    */
   GroupIdentifier getGroupIdentifier();
@@ -359,11 +685,8 @@ public interface ECGTestResult extends Observation
   /**
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * <!-- begin-model-doc -->
-   * self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(sdtm::Non Performance Reason))->asSequence()->first().oclAsType(sdtm::Non Performance Reason)
-   * <!-- end-model-doc -->
    * @model kind="operation" required="true" ordered="false"
-   *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(sdtm::Non Performance Reason))->asSequence()->first().oclAsType(sdtm::Non Performance Reason)'"
+   *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(sdtm::Non Performance Reason))->asSequence()->any(true).oclAsType(sdtm::Non Performance Reason)'"
    * @generated
    */
   NonPerformanceReason getNonPerformanceReason();
@@ -371,47 +694,8 @@ public interface ECGTestResult extends Observation
   /**
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * <!-- begin-model-doc -->
-   * self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(sdtm::Baseline Indicator))->asSequence()->first().oclAsType(sdtm::Baseline Indicator)
-   * <!-- end-model-doc -->
    * @model kind="operation" required="true" ordered="false"
-   *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(sdtm::Baseline Indicator))->asSequence()->first().oclAsType(sdtm::Baseline Indicator)'"
-   * @generated
-   */
-  BaselineIndicator getBaselineIndicator();
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * <!-- begin-model-doc -->
-   * self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(sdtm::Derived Data Indicator))->asSequence()->first().oclAsType(sdtm::Derived Data Indicator)
-   * <!-- end-model-doc -->
-   * @model kind="operation" required="true" ordered="false"
-   *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(sdtm::Derived Data Indicator))->asSequence()->first().oclAsType(sdtm::Derived Data Indicator)'"
-   * @generated
-   */
-  DerivedDataIndicator getDerivedDataIndicator();
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * <!-- begin-model-doc -->
-   * self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(sdtm::Event Study Day))->asSequence()->first().oclAsType(sdtm::Event Study Day)
-   * <!-- end-model-doc -->
-   * @model kind="operation" required="true" ordered="false"
-   *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(sdtm::Event Study Day))->asSequence()->first().oclAsType(sdtm::Event Study Day)'"
-   * @generated
-   */
-  EventStudyDay getEventStudyDay();
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * <!-- begin-model-doc -->
-   * self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(sdtm::Timing Reference))->asSequence()->first().oclAsType(sdtm::Timing Reference)
-   * <!-- end-model-doc -->
-   * @model kind="operation" required="true" ordered="false"
-   *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(sdtm::Timing Reference))->asSequence()->first().oclAsType(sdtm::Timing Reference)'"
+   *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(sdtm::Timing Reference))->asSequence()->any(true).oclAsType(sdtm::Timing Reference)'"
    * @generated
    */
   TimingReference getTimingReference();
@@ -419,7 +703,32 @@ public interface ECGTestResult extends Observation
   /**
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
+   * @model kind="operation" required="true" ordered="false"
+   *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(sdtm::Planned Study Day))->asSequence()->any(true).oclAsType(sdtm::Planned Study Day)'"
+   * @generated
+   */
+  PlannedStudyDay getPlannedStudyDay();
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @model kind="operation" required="true" ordered="false"
+   *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(sdtm::Study Day Period))->asSequence()->any(true).oclAsType(sdtm::Study Day Period)'"
+   * @generated
+   */
+  StudyDayPeriod getStudyDayPeriod();
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
    * @generated
    */
   public ECGTestResult init();
+
+  /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    public ECGTestResult init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // ECGTestResult
