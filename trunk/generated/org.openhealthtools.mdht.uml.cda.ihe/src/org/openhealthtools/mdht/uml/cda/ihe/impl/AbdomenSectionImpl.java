@@ -10,10 +10,13 @@
  *******************************************************************************/
 package org.openhealthtools.mdht.uml.cda.ihe.impl;
 
+import java.lang.Iterable;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.ecore.EClass;
+import org.eclipse.emf.ecore.EObject;
+import org.openhealthtools.mdht.emf.runtime.util.Initializer;
 import org.openhealthtools.mdht.uml.cda.ihe.AbdomenSection;
 import org.openhealthtools.mdht.uml.cda.ihe.IHEPackage;
 import org.openhealthtools.mdht.uml.cda.ihe.ProblemEntry;
@@ -32,67 +35,76 @@ import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
  */
 public class AbdomenSectionImpl extends SectionImpl implements AbdomenSection {
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	protected AbdomenSectionImpl() {
-		super();
-	}
+    super();
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	@Override
 	protected EClass eStaticClass() {
-		return IHEPackage.Literals.ABDOMEN_SECTION;
-	}
+    return IHEPackage.Literals.ABDOMEN_SECTION;
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateAbdomenSectionTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return AbdomenSectionOperations.validateAbdomenSectionTemplateId(this, diagnostics, context);
-	}
+    return AbdomenSectionOperations.validateAbdomenSectionTemplateId(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateAbdomenSectionCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return AbdomenSectionOperations.validateAbdomenSectionCode(this, diagnostics, context);
-	}
+    return AbdomenSectionOperations.validateAbdomenSectionCode(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateAbdomenSectionProblemEntry(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return AbdomenSectionOperations.validateAbdomenSectionProblemEntry(this, diagnostics, context);
-	}
+    return AbdomenSectionOperations.validateAbdomenSectionProblemEntry(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public ProblemEntry getProblemEntry() {
-		return AbdomenSectionOperations.getProblemEntry(this);
-	}
+    return AbdomenSectionOperations.getProblemEntry(this);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public AbdomenSection init() {
-		CDAUtil.init(this);
-		return this;
-	}
+      return Initializer.Util.init(this);
+  }
+
+  /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    public AbdomenSection init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
 } // AbdomenSectionImpl

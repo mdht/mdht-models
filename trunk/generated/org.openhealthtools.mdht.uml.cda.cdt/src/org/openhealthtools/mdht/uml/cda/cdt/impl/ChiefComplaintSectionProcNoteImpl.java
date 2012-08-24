@@ -10,10 +10,13 @@
  *******************************************************************************/
 package org.openhealthtools.mdht.uml.cda.cdt.impl;
 
+import java.lang.Iterable;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.ecore.EClass;
+import org.eclipse.emf.ecore.EObject;
+import org.openhealthtools.mdht.emf.runtime.util.Initializer;
 import org.openhealthtools.mdht.uml.cda.cdt.CDTPackage;
 import org.openhealthtools.mdht.uml.cda.cdt.ChiefComplaintSectionProcNote;
 import org.openhealthtools.mdht.uml.cda.cdt.operations.ChiefComplaintSectionProcNoteOperations;
@@ -31,52 +34,59 @@ import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
  */
 public class ChiefComplaintSectionProcNoteImpl extends SectionImpl implements ChiefComplaintSectionProcNote {
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	protected ChiefComplaintSectionProcNoteImpl() {
-		super();
-	}
+    super();
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	@Override
 	protected EClass eStaticClass() {
-		return CDTPackage.Literals.CHIEF_COMPLAINT_SECTION_PROC_NOTE;
-	}
+    return CDTPackage.Literals.CHIEF_COMPLAINT_SECTION_PROC_NOTE;
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateChiefComplaintSectionProcNoteTemplateId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ChiefComplaintSectionProcNoteOperations.validateChiefComplaintSectionProcNoteTemplateId(
-			this, diagnostics, context);
-	}
+    return ChiefComplaintSectionProcNoteOperations.validateChiefComplaintSectionProcNoteTemplateId(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateChiefComplaintSectionProcNoteCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ChiefComplaintSectionProcNoteOperations.validateChiefComplaintSectionProcNoteCode(
-			this, diagnostics, context);
-	}
+    return ChiefComplaintSectionProcNoteOperations.validateChiefComplaintSectionProcNoteCode(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public ChiefComplaintSectionProcNote init() {
-		CDAUtil.init(this);
-		return this;
-	}
+      return Initializer.Util.init(this);
+  }
+
+  /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    public ChiefComplaintSectionProcNote init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
 } // ChiefComplaintSectionProcNoteImpl

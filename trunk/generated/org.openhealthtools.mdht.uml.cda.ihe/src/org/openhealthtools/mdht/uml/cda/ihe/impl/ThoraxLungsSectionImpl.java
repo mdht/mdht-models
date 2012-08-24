@@ -10,10 +10,13 @@
  *******************************************************************************/
 package org.openhealthtools.mdht.uml.cda.ihe.impl;
 
+import java.lang.Iterable;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.ecore.EClass;
+import org.eclipse.emf.ecore.EObject;
+import org.openhealthtools.mdht.emf.runtime.util.Initializer;
 import org.openhealthtools.mdht.uml.cda.ihe.IHEPackage;
 import org.openhealthtools.mdht.uml.cda.ihe.ProblemEntry;
 import org.openhealthtools.mdht.uml.cda.ihe.ThoraxLungsSection;
@@ -32,67 +35,76 @@ import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
  */
 public class ThoraxLungsSectionImpl extends SectionImpl implements ThoraxLungsSection {
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	protected ThoraxLungsSectionImpl() {
-		super();
-	}
+    super();
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	@Override
 	protected EClass eStaticClass() {
-		return IHEPackage.Literals.THORAX_LUNGS_SECTION;
-	}
+    return IHEPackage.Literals.THORAX_LUNGS_SECTION;
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateThoraxLungsSectionTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ThoraxLungsSectionOperations.validateThoraxLungsSectionTemplateId(this, diagnostics, context);
-	}
+    return ThoraxLungsSectionOperations.validateThoraxLungsSectionTemplateId(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateThoraxLungsSectionCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ThoraxLungsSectionOperations.validateThoraxLungsSectionCode(this, diagnostics, context);
-	}
+    return ThoraxLungsSectionOperations.validateThoraxLungsSectionCode(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateThoraxLungsSectionProblemEntry(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ThoraxLungsSectionOperations.validateThoraxLungsSectionProblemEntry(this, diagnostics, context);
-	}
+    return ThoraxLungsSectionOperations.validateThoraxLungsSectionProblemEntry(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public ProblemEntry getProblemEntry() {
-		return ThoraxLungsSectionOperations.getProblemEntry(this);
-	}
+    return ThoraxLungsSectionOperations.getProblemEntry(this);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public ThoraxLungsSection init() {
-		CDAUtil.init(this);
-		return this;
-	}
+      return Initializer.Util.init(this);
+  }
+
+  /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    public ThoraxLungsSection init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
 } // ThoraxLungsSectionImpl

@@ -10,10 +10,13 @@
  *******************************************************************************/
 package org.openhealthtools.mdht.uml.cda.ccd.impl;
 
+import java.lang.Iterable;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.ecore.EClass;
+import org.eclipse.emf.ecore.EObject;
+import org.openhealthtools.mdht.emf.runtime.util.Initializer;
 import org.openhealthtools.mdht.uml.cda.ccd.CCDPackage;
 import org.openhealthtools.mdht.uml.cda.ccd.SeverityObservation;
 import org.openhealthtools.mdht.uml.cda.ccd.operations.SeverityObservationOperations;
@@ -31,85 +34,94 @@ import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
  */
 public class SeverityObservationImpl extends ObservationImpl implements SeverityObservation {
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	protected SeverityObservationImpl() {
-		super();
-	}
+    super();
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	@Override
 	protected EClass eStaticClass() {
-		return CCDPackage.Literals.SEVERITY_OBSERVATION;
-	}
+    return CCDPackage.Literals.SEVERITY_OBSERVATION;
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateSeverityObservationTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return SeverityObservationOperations.validateSeverityObservationTemplateId(this, diagnostics, context);
-	}
+    return SeverityObservationOperations.validateSeverityObservationTemplateId(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateSeverityObservationClassCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return SeverityObservationOperations.validateSeverityObservationClassCode(this, diagnostics, context);
-	}
+    return SeverityObservationOperations.validateSeverityObservationClassCode(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateSeverityObservationMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return SeverityObservationOperations.validateSeverityObservationMoodCode(this, diagnostics, context);
-	}
+    return SeverityObservationOperations.validateSeverityObservationMoodCode(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateSeverityObservationCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return SeverityObservationOperations.validateSeverityObservationCode(this, diagnostics, context);
-	}
+    return SeverityObservationOperations.validateSeverityObservationCode(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateSeverityObservationStatusCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return SeverityObservationOperations.validateSeverityObservationStatusCode(this, diagnostics, context);
-	}
+    return SeverityObservationOperations.validateSeverityObservationStatusCode(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateSeverityObservationValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return SeverityObservationOperations.validateSeverityObservationValue(this, diagnostics, context);
-	}
+    return SeverityObservationOperations.validateSeverityObservationValue(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public SeverityObservation init() {
-		CDAUtil.init(this);
-		return this;
-	}
+      return Initializer.Util.init(this);
+  }
+
+  /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    public SeverityObservation init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
 } // SeverityObservationImpl

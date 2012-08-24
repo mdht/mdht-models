@@ -10,10 +10,13 @@
  *******************************************************************************/
 package org.openhealthtools.mdht.uml.cda.hitsp.impl;
 
+import java.lang.Iterable;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.ecore.EClass;
+import org.eclipse.emf.ecore.EObject;
+import org.openhealthtools.mdht.emf.runtime.util.Initializer;
 import org.openhealthtools.mdht.uml.cda.hitsp.HITSPPackage;
 import org.openhealthtools.mdht.uml.cda.hitsp.SocialHistory;
 import org.openhealthtools.mdht.uml.cda.hitsp.operations.SocialHistoryOperations;
@@ -31,77 +34,86 @@ import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
  */
 public class SocialHistoryImpl extends SocialHistoryObservationImpl implements SocialHistory {
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	protected SocialHistoryImpl() {
-		super();
-	}
+    super();
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	@Override
 	protected EClass eStaticClass() {
-		return HITSPPackage.Literals.SOCIAL_HISTORY;
-	}
+    return HITSPPackage.Literals.SOCIAL_HISTORY;
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateSocialHistoryTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return SocialHistoryOperations.validateSocialHistoryTemplateId(this, diagnostics, context);
-	}
+    return SocialHistoryOperations.validateSocialHistoryTemplateId(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateSocialHistoryCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return SocialHistoryOperations.validateSocialHistoryCodeP(this, diagnostics, context);
-	}
+    return SocialHistoryOperations.validateSocialHistoryCodeP(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateSocialHistoryCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return SocialHistoryOperations.validateSocialHistoryCode(this, diagnostics, context);
-	}
+    return SocialHistoryOperations.validateSocialHistoryCode(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateSocialHistoryEffectiveTime(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return SocialHistoryOperations.validateSocialHistoryEffectiveTime(this, diagnostics, context);
-	}
+    return SocialHistoryOperations.validateSocialHistoryEffectiveTime(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateSocialHistoryText(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return SocialHistoryOperations.validateSocialHistoryText(this, diagnostics, context);
-	}
+    return SocialHistoryOperations.validateSocialHistoryText(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	@Override
 	public SocialHistory init() {
-		CDAUtil.init(this);
-		return this;
-	}
+      return Initializer.Util.init(this);
+  }
+
+  /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    public SocialHistory init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
 } // SocialHistoryImpl

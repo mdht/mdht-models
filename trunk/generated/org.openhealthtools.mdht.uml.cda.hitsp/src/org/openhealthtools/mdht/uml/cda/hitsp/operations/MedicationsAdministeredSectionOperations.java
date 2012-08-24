@@ -40,73 +40,76 @@ import org.openhealthtools.mdht.uml.cda.hitsp.util.HITSPValidator;
 public class MedicationsAdministeredSectionOperations extends
 		org.openhealthtools.mdht.uml.cda.ihe.operations.MedicationsAdministeredSectionOperations {
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	protected MedicationsAdministeredSectionOperations() {
-		super();
-	}
+    super();
+  }
 
 	/**
-	 * The cached OCL expression body for the '{@link #validateHITSPMedicationsAdministeredSectionTemplateId(MedicationsAdministeredSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate HITSP Medications Administered Section Template Id</em>}' operation.
-	 * <!-- begin-user-doc -->
+   * The cached OCL expression body for the '{@link #validateHITSPMedicationsAdministeredSectionTemplateId(MedicationsAdministeredSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate HITSP Medications Administered Section Template Id</em>}' operation.
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateHITSPMedicationsAdministeredSectionTemplateId(MedicationsAdministeredSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
+   * @see #validateHITSPMedicationsAdministeredSectionTemplateId(MedicationsAdministeredSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+   * @generated
+   * @ordered
+   */
 	protected static final String VALIDATE_HITSP_MEDICATIONS_ADMINISTERED_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.3.88.11.83.115')";
 
 	/**
-	 * The cached OCL invariant for the '{@link #validateHITSPMedicationsAdministeredSectionTemplateId(MedicationsAdministeredSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate HITSP Medications Administered Section Template Id</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
+   * The cached OCL invariant for the '{@link #validateHITSPMedicationsAdministeredSectionTemplateId(MedicationsAdministeredSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate HITSP Medications Administered Section Template Id</em>}' invariant operation.
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateHITSPMedicationsAdministeredSectionTemplateId(MedicationsAdministeredSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
+   * @see #validateHITSPMedicationsAdministeredSectionTemplateId(MedicationsAdministeredSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+   * @generated
+   * @ordered
+   */
 	protected static Constraint VALIDATE_HITSP_MEDICATIONS_ADMINISTERED_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.3.88.11.83.115')
-	 * @param medicationsAdministeredSection The receiving '<em><b>Medications Administered Section</b></em>' model object.
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
+   * <!-- begin-model-doc -->
+   * @param medicationsAdministeredSection The receiving '<em><b>Medications Administered Section</b></em>' model object.
+   * @param diagnostics The chain of diagnostics to which problems are to be appended.
+   * @param context The cache of context-specific information.
+   * <!-- end-model-doc -->
+   * @generated
+   */
 	public static boolean validateHITSPMedicationsAdministeredSectionTemplateId(
 			MedicationsAdministeredSection medicationsAdministeredSection, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-
-		if (VALIDATE_HITSP_MEDICATIONS_ADMINISTERED_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setContext(HITSPPackage.Literals.MEDICATIONS_ADMINISTERED_SECTION);
-			try {
-				VALIDATE_HITSP_MEDICATIONS_ADMINISTERED_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_HITSP_MEDICATIONS_ADMINISTERED_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
-				throw new UnsupportedOperationException(pe.getLocalizedMessage());
-			}
-		}
-		if (!EOCL_ENV.createQuery(
-			VALIDATE_HITSP_MEDICATIONS_ADMINISTERED_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			medicationsAdministeredSection)) {
-			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR,
-					HITSPValidator.DIAGNOSTIC_SOURCE,
-					HITSPValidator.MEDICATIONS_ADMINISTERED_SECTION__HITSP_MEDICATIONS_ADMINISTERED_SECTION_TEMPLATE_ID,
-					HITSPPlugin.INSTANCE.getString("HITSPMedicationsAdministeredSectionTemplateId"),
-					new Object[] { medicationsAdministeredSection }));
-			}
-
-			return false;
-		}
-		return true;
-	}
+  	  
+    if (VALIDATE_HITSP_MEDICATIONS_ADMINISTERED_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+      OCL.Helper helper = EOCL_ENV.createOCLHelper();
+      helper.setContext(HITSPPackage.Literals.MEDICATIONS_ADMINISTERED_SECTION);
+      try
+      {
+        VALIDATE_HITSP_MEDICATIONS_ADMINISTERED_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_HITSP_MEDICATIONS_ADMINISTERED_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+      }
+      catch (ParserException pe)
+      {
+        throw new UnsupportedOperationException(pe.getLocalizedMessage());
+      }
+    }
+    if (!EOCL_ENV.createQuery(VALIDATE_HITSP_MEDICATIONS_ADMINISTERED_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(medicationsAdministeredSection))
+    {
+      if (diagnostics != null)
+      {
+        diagnostics.add
+          (new BasicDiagnostic
+            (Diagnostic.ERROR,
+             HITSPValidator.DIAGNOSTIC_SOURCE,
+             HITSPValidator.MEDICATIONS_ADMINISTERED_SECTION__HITSP_MEDICATIONS_ADMINISTERED_SECTION_TEMPLATE_ID,
+             HITSPPlugin.INSTANCE.getString("HITSPMedicationsAdministeredSectionTemplateId"),
+             new Object [] { medicationsAdministeredSection }));
+      }
+       
+      return false;
+    }
+    return true;
+  }
 
 } // MedicationsAdministeredSectionOperations

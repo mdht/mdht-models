@@ -10,10 +10,13 @@
  *******************************************************************************/
 package org.openhealthtools.mdht.uml.cda.ihe.impl;
 
+import java.lang.Iterable;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.ecore.EClass;
+import org.eclipse.emf.ecore.EObject;
+import org.openhealthtools.mdht.emf.runtime.util.Initializer;
 import org.openhealthtools.mdht.uml.cda.ihe.HeartSection;
 import org.openhealthtools.mdht.uml.cda.ihe.IHEPackage;
 import org.openhealthtools.mdht.uml.cda.ihe.ProblemEntry;
@@ -32,67 +35,76 @@ import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
  */
 public class HeartSectionImpl extends SectionImpl implements HeartSection {
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	protected HeartSectionImpl() {
-		super();
-	}
+    super();
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	@Override
 	protected EClass eStaticClass() {
-		return IHEPackage.Literals.HEART_SECTION;
-	}
+    return IHEPackage.Literals.HEART_SECTION;
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateHeartSectionTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return HeartSectionOperations.validateHeartSectionTemplateId(this, diagnostics, context);
-	}
+    return HeartSectionOperations.validateHeartSectionTemplateId(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateHeartSectionCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return HeartSectionOperations.validateHeartSectionCode(this, diagnostics, context);
-	}
+    return HeartSectionOperations.validateHeartSectionCode(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateHeartSectionProblemEntry(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return HeartSectionOperations.validateHeartSectionProblemEntry(this, diagnostics, context);
-	}
+    return HeartSectionOperations.validateHeartSectionProblemEntry(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public ProblemEntry getProblemEntry() {
-		return HeartSectionOperations.getProblemEntry(this);
-	}
+    return HeartSectionOperations.getProblemEntry(this);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public HeartSection init() {
-		CDAUtil.init(this);
-		return this;
-	}
+      return Initializer.Util.init(this);
+  }
+
+  /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    public HeartSection init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
 } // HeartSectionImpl

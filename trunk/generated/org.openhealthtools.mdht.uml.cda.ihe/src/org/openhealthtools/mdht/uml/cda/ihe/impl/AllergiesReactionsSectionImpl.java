@@ -10,11 +10,14 @@
  *******************************************************************************/
 package org.openhealthtools.mdht.uml.cda.ihe.impl;
 
+import java.lang.Iterable;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.common.util.EList;
 import org.eclipse.emf.ecore.EClass;
+import org.eclipse.emf.ecore.EObject;
+import org.openhealthtools.mdht.emf.runtime.util.Initializer;
 import org.openhealthtools.mdht.uml.cda.ccd.impl.AlertsSectionImpl;
 import org.openhealthtools.mdht.uml.cda.ihe.AllergiesReactionsSection;
 import org.openhealthtools.mdht.uml.cda.ihe.AllergyIntoleranceConcern;
@@ -33,62 +36,69 @@ import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
  */
 public class AllergiesReactionsSectionImpl extends AlertsSectionImpl implements AllergiesReactionsSection {
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	protected AllergiesReactionsSectionImpl() {
-		super();
-	}
+    super();
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	@Override
 	protected EClass eStaticClass() {
-		return IHEPackage.Literals.ALLERGIES_REACTIONS_SECTION;
-	}
+    return IHEPackage.Literals.ALLERGIES_REACTIONS_SECTION;
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateAllergiesReactionsSectionTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return AllergiesReactionsSectionOperations.validateAllergiesReactionsSectionTemplateId(
-			this, diagnostics, context);
-	}
+    return AllergiesReactionsSectionOperations.validateAllergiesReactionsSectionTemplateId(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateAllergiesReactionsSectionAllergyIntoleranceConcern(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return AllergiesReactionsSectionOperations.validateAllergiesReactionsSectionAllergyIntoleranceConcern(
-			this, diagnostics, context);
-	}
+    return AllergiesReactionsSectionOperations.validateAllergiesReactionsSectionAllergyIntoleranceConcern(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public EList<AllergyIntoleranceConcern> getAllergyIntoleranceConcerns() {
-		return AllergiesReactionsSectionOperations.getAllergyIntoleranceConcerns(this);
-	}
+    return AllergiesReactionsSectionOperations.getAllergyIntoleranceConcerns(this);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	@Override
 	public AllergiesReactionsSection init() {
-		CDAUtil.init(this);
-		return this;
-	}
+      return Initializer.Util.init(this);
+  }
+
+  /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    public AllergiesReactionsSection init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
 } // AllergiesReactionsSectionImpl

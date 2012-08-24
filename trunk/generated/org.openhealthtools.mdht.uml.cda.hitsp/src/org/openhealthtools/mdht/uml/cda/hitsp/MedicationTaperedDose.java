@@ -10,6 +10,9 @@
  *******************************************************************************/
 package org.openhealthtools.mdht.uml.cda.hitsp;
 
+import java.lang.Iterable;
+import org.eclipse.emf.ecore.EObject;
+import org.openhealthtools.mdht.emf.runtime.util.Initializer;
 import org.openhealthtools.mdht.uml.cda.ihe.TaperedDose;
 
 /**
@@ -19,14 +22,21 @@ import org.openhealthtools.mdht.uml.cda.ihe.TaperedDose;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.hitsp.HITSPPackage#getMedicationTaperedDose()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation templateId.root='null' constraints.validation.error='MedicationTaperedDoseTemplateId'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='MedicationTaperedDoseTemplateId' templateId.root='null'"
  * @generated
  */
 public interface MedicationTaperedDose extends Medication, TaperedDose {
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public MedicationTaperedDose init();
+
+  /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    public MedicationTaperedDose init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // MedicationTaperedDose

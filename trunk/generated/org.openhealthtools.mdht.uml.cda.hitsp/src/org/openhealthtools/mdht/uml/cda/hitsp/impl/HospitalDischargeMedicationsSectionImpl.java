@@ -10,10 +10,13 @@
  *******************************************************************************/
 package org.openhealthtools.mdht.uml.cda.hitsp.impl;
 
+import java.lang.Iterable;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.ecore.EClass;
+import org.eclipse.emf.ecore.EObject;
+import org.openhealthtools.mdht.emf.runtime.util.Initializer;
 import org.openhealthtools.mdht.uml.cda.hitsp.HITSPPackage;
 import org.openhealthtools.mdht.uml.cda.hitsp.HospitalDischargeMedicationsSection;
 import org.openhealthtools.mdht.uml.cda.hitsp.Medication;
@@ -33,63 +36,70 @@ public class HospitalDischargeMedicationsSectionImpl extends
 		org.openhealthtools.mdht.uml.cda.ihe.impl.HospitalDischargeMedicationsSectionImpl implements
 		HospitalDischargeMedicationsSection {
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	protected HospitalDischargeMedicationsSectionImpl() {
-		super();
-	}
+    super();
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	@Override
 	protected EClass eStaticClass() {
-		return HITSPPackage.Literals.HOSPITAL_DISCHARGE_MEDICATIONS_SECTION;
-	}
+    return HITSPPackage.Literals.HOSPITAL_DISCHARGE_MEDICATIONS_SECTION;
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateHITSPHospitalDischargeMedicationsSectionTemplateId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return HospitalDischargeMedicationsSectionOperations.validateHITSPHospitalDischargeMedicationsSectionTemplateId(
-			this, diagnostics, context);
-	}
+    return HospitalDischargeMedicationsSectionOperations.validateHITSPHospitalDischargeMedicationsSectionTemplateId(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateHITSPHospitalDischargeMedicationsSectionMedication(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return HospitalDischargeMedicationsSectionOperations.validateHITSPHospitalDischargeMedicationsSectionMedication(
-			this, diagnostics, context);
-	}
+    return HospitalDischargeMedicationsSectionOperations.validateHITSPHospitalDischargeMedicationsSectionMedication(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public Medication getHITSPMedication() {
-		return HospitalDischargeMedicationsSectionOperations.getHITSPMedication(this);
-	}
+    return HospitalDischargeMedicationsSectionOperations.getHITSPMedication(this);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	@Override
 	public HospitalDischargeMedicationsSection init() {
-		CDAUtil.init(this);
-		return this;
-	}
+      return Initializer.Util.init(this);
+  }
+
+  /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    public HospitalDischargeMedicationsSection init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
 } // HospitalDischargeMedicationsSectionImpl

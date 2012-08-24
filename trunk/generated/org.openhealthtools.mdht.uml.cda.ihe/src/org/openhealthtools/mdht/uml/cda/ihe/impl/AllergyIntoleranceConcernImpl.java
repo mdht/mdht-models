@@ -10,11 +10,14 @@
  *******************************************************************************/
 package org.openhealthtools.mdht.uml.cda.ihe.impl;
 
+import java.lang.Iterable;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.common.util.EList;
 import org.eclipse.emf.ecore.EClass;
+import org.eclipse.emf.ecore.EObject;
+import org.openhealthtools.mdht.emf.runtime.util.Initializer;
 import org.openhealthtools.mdht.uml.cda.ihe.AllergyIntolerance;
 import org.openhealthtools.mdht.uml.cda.ihe.AllergyIntoleranceConcern;
 import org.openhealthtools.mdht.uml.cda.ihe.IHEPackage;
@@ -32,62 +35,69 @@ import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
  */
 public class AllergyIntoleranceConcernImpl extends ConcernEntryImpl implements AllergyIntoleranceConcern {
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	protected AllergyIntoleranceConcernImpl() {
-		super();
-	}
+    super();
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	@Override
 	protected EClass eStaticClass() {
-		return IHEPackage.Literals.ALLERGY_INTOLERANCE_CONCERN;
-	}
+    return IHEPackage.Literals.ALLERGY_INTOLERANCE_CONCERN;
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateAllergyIntoleranceConcernTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return AllergyIntoleranceConcernOperations.validateAllergyIntoleranceConcernTemplateId(
-			this, diagnostics, context);
-	}
+    return AllergyIntoleranceConcernOperations.validateAllergyIntoleranceConcernTemplateId(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateAllergyIntoleranceConcernAllergyIntolerance(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return AllergyIntoleranceConcernOperations.validateAllergyIntoleranceConcernAllergyIntolerance(
-			this, diagnostics, context);
-	}
+    return AllergyIntoleranceConcernOperations.validateAllergyIntoleranceConcernAllergyIntolerance(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public EList<AllergyIntolerance> getAllergyIntolerances() {
-		return AllergyIntoleranceConcernOperations.getAllergyIntolerances(this);
-	}
+    return AllergyIntoleranceConcernOperations.getAllergyIntolerances(this);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	@Override
 	public AllergyIntoleranceConcern init() {
-		CDAUtil.init(this);
-		return this;
-	}
+      return Initializer.Util.init(this);
+  }
+
+  /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    public AllergyIntoleranceConcern init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
 } // AllergyIntoleranceConcernImpl

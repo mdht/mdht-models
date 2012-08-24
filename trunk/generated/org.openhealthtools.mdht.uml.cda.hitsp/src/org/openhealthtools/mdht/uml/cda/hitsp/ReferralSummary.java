@@ -10,6 +10,9 @@
  *******************************************************************************/
 package org.openhealthtools.mdht.uml.cda.hitsp;
 
+import java.lang.Iterable;
+import org.eclipse.emf.ecore.EObject;
+import org.openhealthtools.mdht.emf.runtime.util.Initializer;
 import org.openhealthtools.mdht.uml.cda.ihe.MedicalSummary;
 
 /**
@@ -19,14 +22,21 @@ import org.openhealthtools.mdht.uml.cda.ihe.MedicalSummary;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.hitsp.HITSPPackage#getReferralSummary()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation templateId.root='2.16.840.1.113883.3.88.11.48.1' constraints.validation.error='ReferralSummaryTemplateId'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='ReferralSummaryTemplateId' templateId.root='2.16.840.1.113883.3.88.11.48.1'"
  * @generated
  */
 public interface ReferralSummary extends MedicalSummary {
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public ReferralSummary init();
+
+  /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    public ReferralSummary init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // ReferralSummary

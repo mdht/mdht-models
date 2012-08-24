@@ -206,6 +206,10 @@
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="cdt.ecore#//HistoryAndPhysical/HistoryAndPhysicalBothReasonForVisitAndChiefComplaint/diagnostics"/>
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="cdt.ecore#//HistoryAndPhysical/HistoryAndPhysicalBothReasonForVisitAndChiefComplaint/context"/>
       </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="cdt.ecore#//HistoryAndPhysical/HistoryAndPhysicalCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="cdt.ecore#//HistoryAndPhysical/HistoryAndPhysicalCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="cdt.ecore#//HistoryAndPhysical/HistoryAndPhysicalCode/context"/>
+      </genOperations>
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="cdt.ecore#//HistoryAndPhysical/HistoryAndPhysicalHistoryOfPresentIllness">
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="cdt.ecore#//HistoryAndPhysical/HistoryAndPhysicalHistoryOfPresentIllness/diagnostics"/>
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="cdt.ecore#//HistoryAndPhysical/HistoryAndPhysicalHistoryOfPresentIllness/context"/>
@@ -368,6 +372,10 @@
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="cdt.ecore#//ConsultationNote/ConsultationNoteReferralOrVisit">
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="cdt.ecore#//ConsultationNote/ConsultationNoteReferralOrVisit/diagnostics"/>
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="cdt.ecore#//ConsultationNote/ConsultationNoteReferralOrVisit/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="cdt.ecore#//ConsultationNote/ConsultationNoteCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="cdt.ecore#//ConsultationNote/ConsultationNoteCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="cdt.ecore#//ConsultationNote/ConsultationNoteCode/context"/>
       </genOperations>
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="cdt.ecore#//ConsultationNote/ConsultationNoteHistoryOfPresentIllness">
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="cdt.ecore#//ConsultationNote/ConsultationNoteHistoryOfPresentIllness/diagnostics"/>
@@ -593,6 +601,10 @@
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="cdt.ecore#//ProgressNote/ProgressNoteHasEncompassingEncounterFacilityId/diagnostics"/>
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="cdt.ecore#//ProgressNote/ProgressNoteHasEncompassingEncounterFacilityId/context"/>
       </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="cdt.ecore#//ProgressNote/ProgressNoteCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="cdt.ecore#//ProgressNote/ProgressNoteCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="cdt.ecore#//ProgressNote/ProgressNoteCode/context"/>
+      </genOperations>
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="cdt.ecore#//ProgressNote/ProgressNoteAlertsSection">
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="cdt.ecore#//ProgressNote/ProgressNoteAlertsSection/diagnostics"/>
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="cdt.ecore#//ProgressNote/ProgressNoteAlertsSection/context"/>
@@ -789,6 +801,7 @@
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="cdt.ecore#//HospitalDischargeStudiesSummarySection/HospitalDischargeStudiesSummarySectionTitle/context"/>
       </genOperations>
     </genClasses>
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="cdt.ecore#//AAAAA"/>
     <genClasses xsi:type="genmodel:GenClass" ecoreClass="cdt.ecore#//CDTRegistryDelegate"/>
   </genPackages>
 </genmodel:GenModel>

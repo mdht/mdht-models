@@ -10,7 +10,9 @@
  *******************************************************************************/
 package org.openhealthtools.mdht.uml.cda.ccd;
 
+import java.lang.Iterable;
 import org.eclipse.emf.ecore.EObject;
+import org.openhealthtools.mdht.emf.runtime.util.Initializer;
 
 /**
  * <!-- begin-user-doc -->
@@ -24,9 +26,16 @@ import org.eclipse.emf.ecore.EObject;
  */
 public interface Support extends EObject {
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public Support init();
+
+  /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    public Support init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // Support

@@ -10,9 +10,12 @@
  *******************************************************************************/
 package org.openhealthtools.mdht.uml.cda.ihe;
 
+import java.lang.Iterable;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
+import org.eclipse.emf.ecore.EObject;
+import org.openhealthtools.mdht.emf.runtime.util.Initializer;
 
 /**
  * <!-- begin-user-doc -->
@@ -25,656 +28,562 @@ import org.eclipse.emf.common.util.DiagnosticChain;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.ihe.IHEPackage#getPhysicalExamSection()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.info='PhysicalExamSectionVitalSignsSection PhysicalExamSectionGeneralAppearanceSection PhysicalExamSectionVisibleImplantedMedicalDevicesSection PhysicalExamSectionIntegumentarySystemSection PhysicalExamSectionHeadSection PhysicalExamSectionEyesSection PhysicalExamSectionEarsNoseMouthThroatSection PhysicalExamSectionEarsSection PhysicalExamSectionNoseSection PhysicalExamSectionMouthThroatTeethSection PhysicalExamSectionNeckSection PhysicalExamSectionEndocrineSystemSection PhysicalExamSectionThoraxLungsSection PhysicalExamSectionChestWallSection PhysicalExamSectionBreastSection PhysicalExamSectionHeartSection PhysicalExamSectionRespiratorySystemSection PhysicalExamSectionAbdomenSection PhysicalExamSectionLymphaticSection PhysicalExamSectionVesselsSection PhysicalExamSectionMusculoskeletalSystemSection PhysicalExamSectionNeurologicSystemSection PhysicalExamSectionGenitaliaSection PhysicalExamSectionRectumSection PhysicalExamSectionExtremitiesSection' templateId.root='1.3.6.1.4.1.19376.1.5.3.1.1.9.15' constraints.validation.error='PhysicalExamSectionTemplateId'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='PhysicalExamSectionTemplateId' templateId.root='1.3.6.1.4.1.19376.1.5.3.1.1.9.15' constraints.validation.info='PhysicalExamSectionVitalSignsSection PhysicalExamSectionGeneralAppearanceSection PhysicalExamSectionVisibleImplantedMedicalDevicesSection PhysicalExamSectionIntegumentarySystemSection PhysicalExamSectionHeadSection PhysicalExamSectionEyesSection PhysicalExamSectionEarsNoseMouthThroatSection PhysicalExamSectionEarsSection PhysicalExamSectionNoseSection PhysicalExamSectionMouthThroatTeethSection PhysicalExamSectionNeckSection PhysicalExamSectionEndocrineSystemSection PhysicalExamSectionThoraxLungsSection PhysicalExamSectionChestWallSection PhysicalExamSectionBreastSection PhysicalExamSectionHeartSection PhysicalExamSectionRespiratorySystemSection PhysicalExamSectionAbdomenSection PhysicalExamSectionLymphaticSection PhysicalExamSectionVesselsSection PhysicalExamSectionMusculoskeletalSystemSection PhysicalExamSectionNeurologicSystemSection PhysicalExamSectionGenitaliaSection PhysicalExamSectionRectumSection PhysicalExamSectionExtremitiesSection'"
  * @generated
  */
 public interface PhysicalExamSection extends PhysicalExamNarrativeSection {
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.templateId->exists(id : datatypes::II | id.root = '1.3.6.1.4.1.19376.1.5.3.1.1.9.15')
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.templateId->exists(id : datatypes::II | id.root = \'1.3.6.1.4.1.19376.1.5.3.1.1.9.15\')'"
-	 * @generated
-	 */
+   * <!-- begin-model-doc -->
+   * @param diagnostics The chain of diagnostics to which problems are to be appended.
+   * @param context The cache of context-specific information.
+   * <!-- end-model-doc -->
+   * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.templateId->exists(id : datatypes::II | id.root = \'1.3.6.1.4.1.19376.1.5.3.1.1.9.15\')'"
+   * @generated
+   */
 	boolean validatePhysicalExamSectionTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(ihe::VitalSignsSection))
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(ihe::VitalSignsSection))'"
-	 * @generated
-	 */
+   * <!-- begin-model-doc -->
+   * @param diagnostics The chain of diagnostics to which problems are to be appended.
+   * @param context The cache of context-specific information.
+   * <!-- end-model-doc -->
+   * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(ihe::VitalSignsSection))'"
+   * @generated
+   */
 	boolean validatePhysicalExamSectionVitalSignsSection(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(ihe::GeneralAppearanceSection))
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(ihe::GeneralAppearanceSection))'"
-	 * @generated
-	 */
+   * <!-- begin-model-doc -->
+   * @param diagnostics The chain of diagnostics to which problems are to be appended.
+   * @param context The cache of context-specific information.
+   * <!-- end-model-doc -->
+   * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(ihe::GeneralAppearanceSection))'"
+   * @generated
+   */
 	boolean validatePhysicalExamSectionGeneralAppearanceSection(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(ihe::VisibleImplantedMedicalDevicesSection))
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(ihe::VisibleImplantedMedicalDevicesSection))'"
-	 * @generated
-	 */
+   * <!-- begin-model-doc -->
+   * @param diagnostics The chain of diagnostics to which problems are to be appended.
+   * @param context The cache of context-specific information.
+   * <!-- end-model-doc -->
+   * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(ihe::VisibleImplantedMedicalDevicesSection))'"
+   * @generated
+   */
 	boolean validatePhysicalExamSectionVisibleImplantedMedicalDevicesSection(DiagnosticChain diagnostics,
 			Map<Object, Object> context);
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(ihe::IntegumentarySystemSection))
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(ihe::IntegumentarySystemSection))'"
-	 * @generated
-	 */
+   * <!-- begin-model-doc -->
+   * @param diagnostics The chain of diagnostics to which problems are to be appended.
+   * @param context The cache of context-specific information.
+   * <!-- end-model-doc -->
+   * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(ihe::IntegumentarySystemSection))'"
+   * @generated
+   */
 	boolean validatePhysicalExamSectionIntegumentarySystemSection(DiagnosticChain diagnostics,
 			Map<Object, Object> context);
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(ihe::HeadSection))
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(ihe::HeadSection))'"
-	 * @generated
-	 */
+   * <!-- begin-model-doc -->
+   * @param diagnostics The chain of diagnostics to which problems are to be appended.
+   * @param context The cache of context-specific information.
+   * <!-- end-model-doc -->
+   * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(ihe::HeadSection))'"
+   * @generated
+   */
 	boolean validatePhysicalExamSectionHeadSection(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(ihe::EyesSection))
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(ihe::EyesSection))'"
-	 * @generated
-	 */
+   * <!-- begin-model-doc -->
+   * @param diagnostics The chain of diagnostics to which problems are to be appended.
+   * @param context The cache of context-specific information.
+   * <!-- end-model-doc -->
+   * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(ihe::EyesSection))'"
+   * @generated
+   */
 	boolean validatePhysicalExamSectionEyesSection(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(ihe::EarsNoseMouthThroatSection))
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(ihe::EarsNoseMouthThroatSection))'"
-	 * @generated
-	 */
+   * <!-- begin-model-doc -->
+   * @param diagnostics The chain of diagnostics to which problems are to be appended.
+   * @param context The cache of context-specific information.
+   * <!-- end-model-doc -->
+   * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(ihe::EarsNoseMouthThroatSection))'"
+   * @generated
+   */
 	boolean validatePhysicalExamSectionEarsNoseMouthThroatSection(DiagnosticChain diagnostics,
 			Map<Object, Object> context);
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(ihe::EarsSection))
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(ihe::EarsSection))'"
-	 * @generated
-	 */
+   * <!-- begin-model-doc -->
+   * @param diagnostics The chain of diagnostics to which problems are to be appended.
+   * @param context The cache of context-specific information.
+   * <!-- end-model-doc -->
+   * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(ihe::EarsSection))'"
+   * @generated
+   */
 	boolean validatePhysicalExamSectionEarsSection(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(ihe::NoseSection))
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(ihe::NoseSection))'"
-	 * @generated
-	 */
+   * <!-- begin-model-doc -->
+   * @param diagnostics The chain of diagnostics to which problems are to be appended.
+   * @param context The cache of context-specific information.
+   * <!-- end-model-doc -->
+   * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(ihe::NoseSection))'"
+   * @generated
+   */
 	boolean validatePhysicalExamSectionNoseSection(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(ihe::MouthThroatTeethSection))
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(ihe::MouthThroatTeethSection))'"
-	 * @generated
-	 */
+   * <!-- begin-model-doc -->
+   * @param diagnostics The chain of diagnostics to which problems are to be appended.
+   * @param context The cache of context-specific information.
+   * <!-- end-model-doc -->
+   * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(ihe::MouthThroatTeethSection))'"
+   * @generated
+   */
 	boolean validatePhysicalExamSectionMouthThroatTeethSection(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(ihe::NeckSection))
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(ihe::NeckSection))'"
-	 * @generated
-	 */
+   * <!-- begin-model-doc -->
+   * @param diagnostics The chain of diagnostics to which problems are to be appended.
+   * @param context The cache of context-specific information.
+   * <!-- end-model-doc -->
+   * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(ihe::NeckSection))'"
+   * @generated
+   */
 	boolean validatePhysicalExamSectionNeckSection(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(ihe::EndocrineSystemSection))
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(ihe::EndocrineSystemSection))'"
-	 * @generated
-	 */
+   * <!-- begin-model-doc -->
+   * @param diagnostics The chain of diagnostics to which problems are to be appended.
+   * @param context The cache of context-specific information.
+   * <!-- end-model-doc -->
+   * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(ihe::EndocrineSystemSection))'"
+   * @generated
+   */
 	boolean validatePhysicalExamSectionEndocrineSystemSection(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(ihe::ThoraxLungsSection))
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(ihe::ThoraxLungsSection))'"
-	 * @generated
-	 */
+   * <!-- begin-model-doc -->
+   * @param diagnostics The chain of diagnostics to which problems are to be appended.
+   * @param context The cache of context-specific information.
+   * <!-- end-model-doc -->
+   * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(ihe::ThoraxLungsSection))'"
+   * @generated
+   */
 	boolean validatePhysicalExamSectionThoraxLungsSection(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(ihe::ChestWallSection))
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(ihe::ChestWallSection))'"
-	 * @generated
-	 */
+   * <!-- begin-model-doc -->
+   * @param diagnostics The chain of diagnostics to which problems are to be appended.
+   * @param context The cache of context-specific information.
+   * <!-- end-model-doc -->
+   * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(ihe::ChestWallSection))'"
+   * @generated
+   */
 	boolean validatePhysicalExamSectionChestWallSection(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(ihe::BreastSection))
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(ihe::BreastSection))'"
-	 * @generated
-	 */
+   * <!-- begin-model-doc -->
+   * @param diagnostics The chain of diagnostics to which problems are to be appended.
+   * @param context The cache of context-specific information.
+   * <!-- end-model-doc -->
+   * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(ihe::BreastSection))'"
+   * @generated
+   */
 	boolean validatePhysicalExamSectionBreastSection(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(ihe::HeartSection))
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(ihe::HeartSection))'"
-	 * @generated
-	 */
+   * <!-- begin-model-doc -->
+   * @param diagnostics The chain of diagnostics to which problems are to be appended.
+   * @param context The cache of context-specific information.
+   * <!-- end-model-doc -->
+   * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(ihe::HeartSection))'"
+   * @generated
+   */
 	boolean validatePhysicalExamSectionHeartSection(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(ihe::RespiratorySystemSection))
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(ihe::RespiratorySystemSection))'"
-	 * @generated
-	 */
+   * <!-- begin-model-doc -->
+   * @param diagnostics The chain of diagnostics to which problems are to be appended.
+   * @param context The cache of context-specific information.
+   * <!-- end-model-doc -->
+   * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(ihe::RespiratorySystemSection))'"
+   * @generated
+   */
 	boolean validatePhysicalExamSectionRespiratorySystemSection(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(ihe::AbdomenSection))
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(ihe::AbdomenSection))'"
-	 * @generated
-	 */
+   * <!-- begin-model-doc -->
+   * @param diagnostics The chain of diagnostics to which problems are to be appended.
+   * @param context The cache of context-specific information.
+   * <!-- end-model-doc -->
+   * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(ihe::AbdomenSection))'"
+   * @generated
+   */
 	boolean validatePhysicalExamSectionAbdomenSection(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(ihe::LymphaticSection))
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(ihe::LymphaticSection))'"
-	 * @generated
-	 */
+   * <!-- begin-model-doc -->
+   * @param diagnostics The chain of diagnostics to which problems are to be appended.
+   * @param context The cache of context-specific information.
+   * <!-- end-model-doc -->
+   * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(ihe::LymphaticSection))'"
+   * @generated
+   */
 	boolean validatePhysicalExamSectionLymphaticSection(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(ihe::VesselsSection))
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(ihe::VesselsSection))'"
-	 * @generated
-	 */
+   * <!-- begin-model-doc -->
+   * @param diagnostics The chain of diagnostics to which problems are to be appended.
+   * @param context The cache of context-specific information.
+   * <!-- end-model-doc -->
+   * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(ihe::VesselsSection))'"
+   * @generated
+   */
 	boolean validatePhysicalExamSectionVesselsSection(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(ihe::MusculoskeletalSystemSection))
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(ihe::MusculoskeletalSystemSection))'"
-	 * @generated
-	 */
+   * <!-- begin-model-doc -->
+   * @param diagnostics The chain of diagnostics to which problems are to be appended.
+   * @param context The cache of context-specific information.
+   * <!-- end-model-doc -->
+   * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(ihe::MusculoskeletalSystemSection))'"
+   * @generated
+   */
 	boolean validatePhysicalExamSectionMusculoskeletalSystemSection(DiagnosticChain diagnostics,
 			Map<Object, Object> context);
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(ihe::NeurologicSystemSection))
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(ihe::NeurologicSystemSection))'"
-	 * @generated
-	 */
+   * <!-- begin-model-doc -->
+   * @param diagnostics The chain of diagnostics to which problems are to be appended.
+   * @param context The cache of context-specific information.
+   * <!-- end-model-doc -->
+   * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(ihe::NeurologicSystemSection))'"
+   * @generated
+   */
 	boolean validatePhysicalExamSectionNeurologicSystemSection(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(ihe::GenitaliaSection))
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(ihe::GenitaliaSection))'"
-	 * @generated
-	 */
+   * <!-- begin-model-doc -->
+   * @param diagnostics The chain of diagnostics to which problems are to be appended.
+   * @param context The cache of context-specific information.
+   * <!-- end-model-doc -->
+   * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(ihe::GenitaliaSection))'"
+   * @generated
+   */
 	boolean validatePhysicalExamSectionGenitaliaSection(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(ihe::RectumSection))
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(ihe::RectumSection))'"
-	 * @generated
-	 */
+   * <!-- begin-model-doc -->
+   * @param diagnostics The chain of diagnostics to which problems are to be appended.
+   * @param context The cache of context-specific information.
+   * <!-- end-model-doc -->
+   * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(ihe::RectumSection))'"
+   * @generated
+   */
 	boolean validatePhysicalExamSectionRectumSection(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(ihe::ExtremitiesSection))
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(ihe::ExtremitiesSection))'"
-	 * @generated
-	 */
+   * <!-- begin-model-doc -->
+   * @param diagnostics The chain of diagnostics to which problems are to be appended.
+   * @param context The cache of context-specific information.
+   * <!-- end-model-doc -->
+   * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(ihe::ExtremitiesSection))'"
+   * @generated
+   */
 	boolean validatePhysicalExamSectionExtremitiesSection(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(ihe::VitalSignsSection))->asSequence()->first().oclAsType(ihe::VitalSignsSection)
-	 * <!-- end-model-doc -->
-	 * @model kind="operation" required="true" ordered="false"
-	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(ihe::VitalSignsSection))->asSequence()->first().oclAsType(ihe::VitalSignsSection)'"
-	 * @generated
-	 */
+   * @model kind="operation" required="true" ordered="false"
+   *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(ihe::VitalSignsSection))->asSequence()->any(true).oclAsType(ihe::VitalSignsSection)'"
+   * @generated
+   */
 	VitalSignsSection getVitalSignsSection();
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(ihe::GeneralAppearanceSection))->asSequence()->first().oclAsType(ihe::GeneralAppearanceSection)
-	 * <!-- end-model-doc -->
-	 * @model kind="operation" required="true" ordered="false"
-	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(ihe::GeneralAppearanceSection))->asSequence()->first().oclAsType(ihe::GeneralAppearanceSection)'"
-	 * @generated
-	 */
+   * @model kind="operation" required="true" ordered="false"
+   *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(ihe::GeneralAppearanceSection))->asSequence()->any(true).oclAsType(ihe::GeneralAppearanceSection)'"
+   * @generated
+   */
 	GeneralAppearanceSection getGeneralAppearanceSection();
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(ihe::VisibleImplantedMedicalDevicesSection))->asSequence()->first().oclAsType(ihe::VisibleImplantedMedicalDevicesSection)
-	 * <!-- end-model-doc -->
-	 * @model kind="operation" required="true" ordered="false"
-	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(ihe::VisibleImplantedMedicalDevicesSection))->asSequence()->first().oclAsType(ihe::VisibleImplantedMedicalDevicesSection)'"
-	 * @generated
-	 */
+   * @model kind="operation" required="true" ordered="false"
+   *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(ihe::VisibleImplantedMedicalDevicesSection))->asSequence()->any(true).oclAsType(ihe::VisibleImplantedMedicalDevicesSection)'"
+   * @generated
+   */
 	VisibleImplantedMedicalDevicesSection getVisibleImplantedMedicalDevicesSection();
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(ihe::IntegumentarySystemSection))->asSequence()->first().oclAsType(ihe::IntegumentarySystemSection)
-	 * <!-- end-model-doc -->
-	 * @model kind="operation" required="true" ordered="false"
-	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(ihe::IntegumentarySystemSection))->asSequence()->first().oclAsType(ihe::IntegumentarySystemSection)'"
-	 * @generated
-	 */
+   * @model kind="operation" required="true" ordered="false"
+   *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(ihe::IntegumentarySystemSection))->asSequence()->any(true).oclAsType(ihe::IntegumentarySystemSection)'"
+   * @generated
+   */
 	IntegumentarySystemSection getIntegumentarySystemSection();
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(ihe::HeadSection))->asSequence()->first().oclAsType(ihe::HeadSection)
-	 * <!-- end-model-doc -->
-	 * @model kind="operation" required="true" ordered="false"
-	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(ihe::HeadSection))->asSequence()->first().oclAsType(ihe::HeadSection)'"
-	 * @generated
-	 */
+   * @model kind="operation" required="true" ordered="false"
+   *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(ihe::HeadSection))->asSequence()->any(true).oclAsType(ihe::HeadSection)'"
+   * @generated
+   */
 	HeadSection getHeadSection();
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(ihe::EyesSection))->asSequence()->first().oclAsType(ihe::EyesSection)
-	 * <!-- end-model-doc -->
-	 * @model kind="operation" required="true" ordered="false"
-	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(ihe::EyesSection))->asSequence()->first().oclAsType(ihe::EyesSection)'"
-	 * @generated
-	 */
+   * @model kind="operation" required="true" ordered="false"
+   *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(ihe::EyesSection))->asSequence()->any(true).oclAsType(ihe::EyesSection)'"
+   * @generated
+   */
 	EyesSection getEyesSection();
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(ihe::EarsNoseMouthThroatSection))->asSequence()->first().oclAsType(ihe::EarsNoseMouthThroatSection)
-	 * <!-- end-model-doc -->
-	 * @model kind="operation" required="true" ordered="false"
-	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(ihe::EarsNoseMouthThroatSection))->asSequence()->first().oclAsType(ihe::EarsNoseMouthThroatSection)'"
-	 * @generated
-	 */
+   * @model kind="operation" required="true" ordered="false"
+   *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(ihe::EarsNoseMouthThroatSection))->asSequence()->any(true).oclAsType(ihe::EarsNoseMouthThroatSection)'"
+   * @generated
+   */
 	EarsNoseMouthThroatSection getEarsNoseMouthThroatSection();
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(ihe::EarsSection))->asSequence()->first().oclAsType(ihe::EarsSection)
-	 * <!-- end-model-doc -->
-	 * @model kind="operation" required="true" ordered="false"
-	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(ihe::EarsSection))->asSequence()->first().oclAsType(ihe::EarsSection)'"
-	 * @generated
-	 */
+   * @model kind="operation" required="true" ordered="false"
+   *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(ihe::EarsSection))->asSequence()->any(true).oclAsType(ihe::EarsSection)'"
+   * @generated
+   */
 	EarsSection getEarsSection();
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(ihe::NoseSection))->asSequence()->first().oclAsType(ihe::NoseSection)
-	 * <!-- end-model-doc -->
-	 * @model kind="operation" required="true" ordered="false"
-	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(ihe::NoseSection))->asSequence()->first().oclAsType(ihe::NoseSection)'"
-	 * @generated
-	 */
+   * @model kind="operation" required="true" ordered="false"
+   *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(ihe::NoseSection))->asSequence()->any(true).oclAsType(ihe::NoseSection)'"
+   * @generated
+   */
 	NoseSection getNoseSection();
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(ihe::MouthThroatTeethSection))->asSequence()->first().oclAsType(ihe::MouthThroatTeethSection)
-	 * <!-- end-model-doc -->
-	 * @model kind="operation" required="true" ordered="false"
-	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(ihe::MouthThroatTeethSection))->asSequence()->first().oclAsType(ihe::MouthThroatTeethSection)'"
-	 * @generated
-	 */
+   * @model kind="operation" required="true" ordered="false"
+   *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(ihe::MouthThroatTeethSection))->asSequence()->any(true).oclAsType(ihe::MouthThroatTeethSection)'"
+   * @generated
+   */
 	MouthThroatTeethSection getMouthThroatTeethSection();
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(ihe::NeckSection))->asSequence()->first().oclAsType(ihe::NeckSection)
-	 * <!-- end-model-doc -->
-	 * @model kind="operation" required="true" ordered="false"
-	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(ihe::NeckSection))->asSequence()->first().oclAsType(ihe::NeckSection)'"
-	 * @generated
-	 */
+   * @model kind="operation" required="true" ordered="false"
+   *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(ihe::NeckSection))->asSequence()->any(true).oclAsType(ihe::NeckSection)'"
+   * @generated
+   */
 	NeckSection getNeckSection();
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(ihe::EndocrineSystemSection))->asSequence()->first().oclAsType(ihe::EndocrineSystemSection)
-	 * <!-- end-model-doc -->
-	 * @model kind="operation" required="true" ordered="false"
-	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(ihe::EndocrineSystemSection))->asSequence()->first().oclAsType(ihe::EndocrineSystemSection)'"
-	 * @generated
-	 */
+   * @model kind="operation" required="true" ordered="false"
+   *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(ihe::EndocrineSystemSection))->asSequence()->any(true).oclAsType(ihe::EndocrineSystemSection)'"
+   * @generated
+   */
 	EndocrineSystemSection getEndocrineSystemSection();
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(ihe::ThoraxLungsSection))->asSequence()->first().oclAsType(ihe::ThoraxLungsSection)
-	 * <!-- end-model-doc -->
-	 * @model kind="operation" required="true" ordered="false"
-	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(ihe::ThoraxLungsSection))->asSequence()->first().oclAsType(ihe::ThoraxLungsSection)'"
-	 * @generated
-	 */
+   * @model kind="operation" required="true" ordered="false"
+   *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(ihe::ThoraxLungsSection))->asSequence()->any(true).oclAsType(ihe::ThoraxLungsSection)'"
+   * @generated
+   */
 	ThoraxLungsSection getThoraxLungsSection();
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(ihe::ChestWallSection))->asSequence()->first().oclAsType(ihe::ChestWallSection)
-	 * <!-- end-model-doc -->
-	 * @model kind="operation" required="true" ordered="false"
-	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(ihe::ChestWallSection))->asSequence()->first().oclAsType(ihe::ChestWallSection)'"
-	 * @generated
-	 */
+   * @model kind="operation" required="true" ordered="false"
+   *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(ihe::ChestWallSection))->asSequence()->any(true).oclAsType(ihe::ChestWallSection)'"
+   * @generated
+   */
 	ChestWallSection getChestWallSection();
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(ihe::BreastSection))->asSequence()->first().oclAsType(ihe::BreastSection)
-	 * <!-- end-model-doc -->
-	 * @model kind="operation" required="true" ordered="false"
-	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(ihe::BreastSection))->asSequence()->first().oclAsType(ihe::BreastSection)'"
-	 * @generated
-	 */
+   * @model kind="operation" required="true" ordered="false"
+   *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(ihe::BreastSection))->asSequence()->any(true).oclAsType(ihe::BreastSection)'"
+   * @generated
+   */
 	BreastSection getBreastSection();
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(ihe::HeartSection))->asSequence()->first().oclAsType(ihe::HeartSection)
-	 * <!-- end-model-doc -->
-	 * @model kind="operation" required="true" ordered="false"
-	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(ihe::HeartSection))->asSequence()->first().oclAsType(ihe::HeartSection)'"
-	 * @generated
-	 */
+   * @model kind="operation" required="true" ordered="false"
+   *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(ihe::HeartSection))->asSequence()->any(true).oclAsType(ihe::HeartSection)'"
+   * @generated
+   */
 	HeartSection getHeartSection();
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(ihe::RespiratorySystemSection))->asSequence()->first().oclAsType(ihe::RespiratorySystemSection)
-	 * <!-- end-model-doc -->
-	 * @model kind="operation" required="true" ordered="false"
-	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(ihe::RespiratorySystemSection))->asSequence()->first().oclAsType(ihe::RespiratorySystemSection)'"
-	 * @generated
-	 */
+   * @model kind="operation" required="true" ordered="false"
+   *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(ihe::RespiratorySystemSection))->asSequence()->any(true).oclAsType(ihe::RespiratorySystemSection)'"
+   * @generated
+   */
 	RespiratorySystemSection getRespiratorySystemSection();
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(ihe::AbdomenSection))->asSequence()->first().oclAsType(ihe::AbdomenSection)
-	 * <!-- end-model-doc -->
-	 * @model kind="operation" required="true" ordered="false"
-	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(ihe::AbdomenSection))->asSequence()->first().oclAsType(ihe::AbdomenSection)'"
-	 * @generated
-	 */
+   * @model kind="operation" required="true" ordered="false"
+   *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(ihe::AbdomenSection))->asSequence()->any(true).oclAsType(ihe::AbdomenSection)'"
+   * @generated
+   */
 	AbdomenSection getAbdomenSection();
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(ihe::LymphaticSection))->asSequence()->first().oclAsType(ihe::LymphaticSection)
-	 * <!-- end-model-doc -->
-	 * @model kind="operation" required="true" ordered="false"
-	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(ihe::LymphaticSection))->asSequence()->first().oclAsType(ihe::LymphaticSection)'"
-	 * @generated
-	 */
+   * @model kind="operation" required="true" ordered="false"
+   *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(ihe::LymphaticSection))->asSequence()->any(true).oclAsType(ihe::LymphaticSection)'"
+   * @generated
+   */
 	LymphaticSection getLymphaticSection();
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(ihe::VesselsSection))->asSequence()->first().oclAsType(ihe::VesselsSection)
-	 * <!-- end-model-doc -->
-	 * @model kind="operation" required="true" ordered="false"
-	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(ihe::VesselsSection))->asSequence()->first().oclAsType(ihe::VesselsSection)'"
-	 * @generated
-	 */
+   * @model kind="operation" required="true" ordered="false"
+   *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(ihe::VesselsSection))->asSequence()->any(true).oclAsType(ihe::VesselsSection)'"
+   * @generated
+   */
 	VesselsSection getVesselsSection();
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(ihe::MusculoskeletalSystemSection))->asSequence()->first().oclAsType(ihe::MusculoskeletalSystemSection)
-	 * <!-- end-model-doc -->
-	 * @model kind="operation" required="true" ordered="false"
-	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(ihe::MusculoskeletalSystemSection))->asSequence()->first().oclAsType(ihe::MusculoskeletalSystemSection)'"
-	 * @generated
-	 */
+   * @model kind="operation" required="true" ordered="false"
+   *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(ihe::MusculoskeletalSystemSection))->asSequence()->any(true).oclAsType(ihe::MusculoskeletalSystemSection)'"
+   * @generated
+   */
 	MusculoskeletalSystemSection getMusculoskeletalSystemSection();
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(ihe::NeurologicSystemSection))->asSequence()->first().oclAsType(ihe::NeurologicSystemSection)
-	 * <!-- end-model-doc -->
-	 * @model kind="operation" required="true" ordered="false"
-	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(ihe::NeurologicSystemSection))->asSequence()->first().oclAsType(ihe::NeurologicSystemSection)'"
-	 * @generated
-	 */
+   * @model kind="operation" required="true" ordered="false"
+   *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(ihe::NeurologicSystemSection))->asSequence()->any(true).oclAsType(ihe::NeurologicSystemSection)'"
+   * @generated
+   */
 	NeurologicSystemSection getNeurologicSystemSection();
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(ihe::GenitaliaSection))->asSequence()->first().oclAsType(ihe::GenitaliaSection)
-	 * <!-- end-model-doc -->
-	 * @model kind="operation" required="true" ordered="false"
-	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(ihe::GenitaliaSection))->asSequence()->first().oclAsType(ihe::GenitaliaSection)'"
-	 * @generated
-	 */
+   * @model kind="operation" required="true" ordered="false"
+   *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(ihe::GenitaliaSection))->asSequence()->any(true).oclAsType(ihe::GenitaliaSection)'"
+   * @generated
+   */
 	GenitaliaSection getGenitaliaSection();
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(ihe::RectumSection))->asSequence()->first().oclAsType(ihe::RectumSection)
-	 * <!-- end-model-doc -->
-	 * @model kind="operation" required="true" ordered="false"
-	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(ihe::RectumSection))->asSequence()->first().oclAsType(ihe::RectumSection)'"
-	 * @generated
-	 */
+   * @model kind="operation" required="true" ordered="false"
+   *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(ihe::RectumSection))->asSequence()->any(true).oclAsType(ihe::RectumSection)'"
+   * @generated
+   */
 	RectumSection getRectumSection();
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(ihe::ExtremitiesSection))->asSequence()->first().oclAsType(ihe::ExtremitiesSection)
-	 * <!-- end-model-doc -->
-	 * @model kind="operation" required="true" ordered="false"
-	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(ihe::ExtremitiesSection))->asSequence()->first().oclAsType(ihe::ExtremitiesSection)'"
-	 * @generated
-	 */
+   * @model kind="operation" required="true" ordered="false"
+   *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(ihe::ExtremitiesSection))->asSequence()->any(true).oclAsType(ihe::ExtremitiesSection)'"
+   * @generated
+   */
 	ExtremitiesSection getExtremitiesSection();
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public PhysicalExamSection init();
+
+  /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    public PhysicalExamSection init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // PhysicalExamSection

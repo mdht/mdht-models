@@ -10,11 +10,14 @@
  *******************************************************************************/
 package org.openhealthtools.mdht.uml.cda.ihe.impl;
 
+import java.lang.Iterable;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.common.util.EList;
 import org.eclipse.emf.ecore.EClass;
+import org.eclipse.emf.ecore.EObject;
+import org.openhealthtools.mdht.emf.runtime.util.Initializer;
 import org.openhealthtools.mdht.uml.cda.ihe.AdvanceDirectiveObservation;
 import org.openhealthtools.mdht.uml.cda.ihe.CodedAdvanceDirectivesSection;
 import org.openhealthtools.mdht.uml.cda.ihe.IHEPackage;
@@ -33,63 +36,70 @@ import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
 public class CodedAdvanceDirectivesSectionImpl extends AdvanceDirectivesSectionImpl implements
 		CodedAdvanceDirectivesSection {
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	protected CodedAdvanceDirectivesSectionImpl() {
-		super();
-	}
+    super();
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	@Override
 	protected EClass eStaticClass() {
-		return IHEPackage.Literals.CODED_ADVANCE_DIRECTIVES_SECTION;
-	}
+    return IHEPackage.Literals.CODED_ADVANCE_DIRECTIVES_SECTION;
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateCodedAdvanceDirectivesSectionTemplateId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return CodedAdvanceDirectivesSectionOperations.validateCodedAdvanceDirectivesSectionTemplateId(
-			this, diagnostics, context);
-	}
+    return CodedAdvanceDirectivesSectionOperations.validateCodedAdvanceDirectivesSectionTemplateId(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateCodedAdvanceDirectivesSectionAdvanceDirectivesObservation(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return CodedAdvanceDirectivesSectionOperations.validateCodedAdvanceDirectivesSectionAdvanceDirectivesObservation(
-			this, diagnostics, context);
-	}
+    return CodedAdvanceDirectivesSectionOperations.validateCodedAdvanceDirectivesSectionAdvanceDirectivesObservation(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public EList<AdvanceDirectiveObservation> getAdvanceDirectivesObservations() {
-		return CodedAdvanceDirectivesSectionOperations.getAdvanceDirectivesObservations(this);
-	}
+    return CodedAdvanceDirectivesSectionOperations.getAdvanceDirectivesObservations(this);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	@Override
 	public CodedAdvanceDirectivesSection init() {
-		CDAUtil.init(this);
-		return this;
-	}
+      return Initializer.Util.init(this);
+  }
+
+  /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    public CodedAdvanceDirectivesSection init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
 } // CodedAdvanceDirectivesSectionImpl

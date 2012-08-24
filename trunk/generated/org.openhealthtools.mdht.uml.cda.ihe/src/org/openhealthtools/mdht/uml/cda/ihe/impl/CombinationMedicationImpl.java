@@ -10,10 +10,13 @@
  *******************************************************************************/
 package org.openhealthtools.mdht.uml.cda.ihe.impl;
 
+import java.lang.Iterable;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.ecore.EClass;
+import org.eclipse.emf.ecore.EObject;
+import org.openhealthtools.mdht.emf.runtime.util.Initializer;
 import org.openhealthtools.mdht.uml.cda.ihe.CombinationMedication;
 import org.openhealthtools.mdht.uml.cda.ihe.IHEPackage;
 import org.openhealthtools.mdht.uml.cda.ihe.operations.CombinationMedicationOperations;
@@ -30,52 +33,60 @@ import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
  */
 public class CombinationMedicationImpl extends MedicationImpl implements CombinationMedication {
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	protected CombinationMedicationImpl() {
-		super();
-	}
+    super();
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	@Override
 	protected EClass eStaticClass() {
-		return IHEPackage.Literals.COMBINATION_MEDICATION;
-	}
+    return IHEPackage.Literals.COMBINATION_MEDICATION;
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateCombinationMedicationSubstanceAdministration(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return CombinationMedicationOperations.validateCombinationMedicationSubstanceAdministration(
-			this, diagnostics, context);
-	}
+    return CombinationMedicationOperations.validateCombinationMedicationSubstanceAdministration(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateCombinationMedicationTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return CombinationMedicationOperations.validateCombinationMedicationTemplateId(this, diagnostics, context);
-	}
+    return CombinationMedicationOperations.validateCombinationMedicationTemplateId(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	@Override
 	public CombinationMedication init() {
-		CDAUtil.init(this);
-		return this;
-	}
+      return Initializer.Util.init(this);
+  }
+
+  /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    public CombinationMedication init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
 } // CombinationMedicationImpl

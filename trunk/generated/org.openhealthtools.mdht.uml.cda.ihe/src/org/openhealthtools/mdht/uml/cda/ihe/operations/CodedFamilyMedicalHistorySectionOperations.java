@@ -44,180 +44,184 @@ import org.openhealthtools.mdht.uml.cda.ihe.util.IHEValidator;
  */
 public class CodedFamilyMedicalHistorySectionOperations extends FamilyMedicalHistorySectionOperations {
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	protected CodedFamilyMedicalHistorySectionOperations() {
-		super();
-	}
+    super();
+  }
 
 	/**
-	 * The cached OCL expression body for the '{@link #validateCodedFamilyMedicalHistorySectionTemplateId(CodedFamilyMedicalHistorySection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Coded Family Medical History Section Template Id</em>}' operation.
-	 * <!-- begin-user-doc -->
+   * The cached OCL expression body for the '{@link #validateCodedFamilyMedicalHistorySectionTemplateId(CodedFamilyMedicalHistorySection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Coded Family Medical History Section Template Id</em>}' operation.
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateCodedFamilyMedicalHistorySectionTemplateId(CodedFamilyMedicalHistorySection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
+   * @see #validateCodedFamilyMedicalHistorySectionTemplateId(CodedFamilyMedicalHistorySection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+   * @generated
+   * @ordered
+   */
 	protected static final String VALIDATE_CODED_FAMILY_MEDICAL_HISTORY_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.templateId->exists(id : datatypes::II | id.root = '1.3.6.1.4.1.19376.1.5.3.1.3.15')";
 
 	/**
-	 * The cached OCL invariant for the '{@link #validateCodedFamilyMedicalHistorySectionTemplateId(CodedFamilyMedicalHistorySection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Coded Family Medical History Section Template Id</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
+   * The cached OCL invariant for the '{@link #validateCodedFamilyMedicalHistorySectionTemplateId(CodedFamilyMedicalHistorySection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Coded Family Medical History Section Template Id</em>}' invariant operation.
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateCodedFamilyMedicalHistorySectionTemplateId(CodedFamilyMedicalHistorySection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
+   * @see #validateCodedFamilyMedicalHistorySectionTemplateId(CodedFamilyMedicalHistorySection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+   * @generated
+   * @ordered
+   */
 	protected static Constraint VALIDATE_CODED_FAMILY_MEDICAL_HISTORY_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.templateId->exists(id : datatypes::II | id.root = '1.3.6.1.4.1.19376.1.5.3.1.3.15')
-	 * @param codedFamilyMedicalHistorySection The receiving '<em><b>Coded Family Medical History Section</b></em>' model object.
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
+   * <!-- begin-model-doc -->
+   * @param codedFamilyMedicalHistorySection The receiving '<em><b>Coded Family Medical History Section</b></em>' model object.
+   * @param diagnostics The chain of diagnostics to which problems are to be appended.
+   * @param context The cache of context-specific information.
+   * <!-- end-model-doc -->
+   * @generated
+   */
 	public static boolean validateCodedFamilyMedicalHistorySectionTemplateId(
 			CodedFamilyMedicalHistorySection codedFamilyMedicalHistorySection, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-
-		if (VALIDATE_CODED_FAMILY_MEDICAL_HISTORY_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setContext(IHEPackage.Literals.CODED_FAMILY_MEDICAL_HISTORY_SECTION);
-			try {
-				VALIDATE_CODED_FAMILY_MEDICAL_HISTORY_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_CODED_FAMILY_MEDICAL_HISTORY_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
-				throw new UnsupportedOperationException(pe.getLocalizedMessage());
-			}
-		}
-		if (!EOCL_ENV.createQuery(
-			VALIDATE_CODED_FAMILY_MEDICAL_HISTORY_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			codedFamilyMedicalHistorySection)) {
-			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR,
-					IHEValidator.DIAGNOSTIC_SOURCE,
-					IHEValidator.CODED_FAMILY_MEDICAL_HISTORY_SECTION__CODED_FAMILY_MEDICAL_HISTORY_SECTION_TEMPLATE_ID,
-					IHEPlugin.INSTANCE.getString("CodedFamilyMedicalHistorySectionTemplateId"),
-					new Object[] { codedFamilyMedicalHistorySection }));
-			}
-
-			return false;
-		}
-		return true;
-	}
+  	  
+    if (VALIDATE_CODED_FAMILY_MEDICAL_HISTORY_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+      OCL.Helper helper = EOCL_ENV.createOCLHelper();
+      helper.setContext(IHEPackage.Literals.CODED_FAMILY_MEDICAL_HISTORY_SECTION);
+      try
+      {
+        VALIDATE_CODED_FAMILY_MEDICAL_HISTORY_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_CODED_FAMILY_MEDICAL_HISTORY_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+      }
+      catch (ParserException pe)
+      {
+        throw new UnsupportedOperationException(pe.getLocalizedMessage());
+      }
+    }
+    if (!EOCL_ENV.createQuery(VALIDATE_CODED_FAMILY_MEDICAL_HISTORY_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(codedFamilyMedicalHistorySection))
+    {
+      if (diagnostics != null)
+      {
+        diagnostics.add
+          (new BasicDiagnostic
+            (Diagnostic.ERROR,
+             IHEValidator.DIAGNOSTIC_SOURCE,
+             IHEValidator.CODED_FAMILY_MEDICAL_HISTORY_SECTION__CODED_FAMILY_MEDICAL_HISTORY_SECTION_TEMPLATE_ID,
+             IHEPlugin.INSTANCE.getString("CodedFamilyMedicalHistorySectionTemplateId"),
+             new Object [] { codedFamilyMedicalHistorySection }));
+      }
+       
+      return false;
+    }
+    return true;
+  }
 
 	/**
-	 * The cached OCL expression body for the '{@link #validateCodedFamilyMedicalHistorySectionFamilyHistoryOrganizer(CodedFamilyMedicalHistorySection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Coded Family Medical History Section Family History Organizer</em>}' operation.
-	 * <!-- begin-user-doc -->
+   * The cached OCL expression body for the '{@link #validateCodedFamilyMedicalHistorySectionFamilyHistoryOrganizer(CodedFamilyMedicalHistorySection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Coded Family Medical History Section Family History Organizer</em>}' operation.
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateCodedFamilyMedicalHistorySectionFamilyHistoryOrganizer(CodedFamilyMedicalHistorySection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
+   * @see #validateCodedFamilyMedicalHistorySectionFamilyHistoryOrganizer(CodedFamilyMedicalHistorySection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+   * @generated
+   * @ordered
+   */
 	protected static final String VALIDATE_CODED_FAMILY_MEDICAL_HISTORY_SECTION_FAMILY_HISTORY_ORGANIZER__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entry->one(entry : cda::Entry | not entry.organizer.oclIsUndefined() and entry.organizer.oclIsKindOf(ihe::FamilyHistoryOrganizer))";
 
 	/**
-	 * The cached OCL invariant for the '{@link #validateCodedFamilyMedicalHistorySectionFamilyHistoryOrganizer(CodedFamilyMedicalHistorySection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Coded Family Medical History Section Family History Organizer</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
+   * The cached OCL invariant for the '{@link #validateCodedFamilyMedicalHistorySectionFamilyHistoryOrganizer(CodedFamilyMedicalHistorySection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Coded Family Medical History Section Family History Organizer</em>}' invariant operation.
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateCodedFamilyMedicalHistorySectionFamilyHistoryOrganizer(CodedFamilyMedicalHistorySection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
+   * @see #validateCodedFamilyMedicalHistorySectionFamilyHistoryOrganizer(CodedFamilyMedicalHistorySection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+   * @generated
+   * @ordered
+   */
 	protected static Constraint VALIDATE_CODED_FAMILY_MEDICAL_HISTORY_SECTION_FAMILY_HISTORY_ORGANIZER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.entry->one(entry : cda::Entry | not entry.organizer.oclIsUndefined() and entry.organizer.oclIsKindOf(ihe::FamilyHistoryOrganizer))
-	 * @param codedFamilyMedicalHistorySection The receiving '<em><b>Coded Family Medical History Section</b></em>' model object.
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
+   * <!-- begin-model-doc -->
+   * @param codedFamilyMedicalHistorySection The receiving '<em><b>Coded Family Medical History Section</b></em>' model object.
+   * @param diagnostics The chain of diagnostics to which problems are to be appended.
+   * @param context The cache of context-specific information.
+   * <!-- end-model-doc -->
+   * @generated
+   */
 	public static boolean validateCodedFamilyMedicalHistorySectionFamilyHistoryOrganizer(
 			CodedFamilyMedicalHistorySection codedFamilyMedicalHistorySection, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-
-		if (VALIDATE_CODED_FAMILY_MEDICAL_HISTORY_SECTION_FAMILY_HISTORY_ORGANIZER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setContext(IHEPackage.Literals.CODED_FAMILY_MEDICAL_HISTORY_SECTION);
-			try {
-				VALIDATE_CODED_FAMILY_MEDICAL_HISTORY_SECTION_FAMILY_HISTORY_ORGANIZER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_CODED_FAMILY_MEDICAL_HISTORY_SECTION_FAMILY_HISTORY_ORGANIZER__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
-				throw new UnsupportedOperationException(pe.getLocalizedMessage());
-			}
-		}
-		if (!EOCL_ENV.createQuery(
-			VALIDATE_CODED_FAMILY_MEDICAL_HISTORY_SECTION_FAMILY_HISTORY_ORGANIZER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			codedFamilyMedicalHistorySection)) {
-			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR,
-					IHEValidator.DIAGNOSTIC_SOURCE,
-					IHEValidator.CODED_FAMILY_MEDICAL_HISTORY_SECTION__CODED_FAMILY_MEDICAL_HISTORY_SECTION_FAMILY_HISTORY_ORGANIZER,
-					IHEPlugin.INSTANCE.getString("CodedFamilyMedicalHistorySectionFamilyHistoryOrganizer"),
-					new Object[] { codedFamilyMedicalHistorySection }));
-			}
-
-			return false;
-		}
-		return true;
-	}
-
-	/**
-	 * The cached OCL expression body for the '{@link #getIHEFamilyHistoryOrganizer(CodedFamilyMedicalHistorySection) <em>Get IHE Family History Organizer</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #getIHEFamilyHistoryOrganizer(CodedFamilyMedicalHistorySection)
-	 * @generated
-	 * @ordered
-	 */
-	protected static final String GET_IHE_FAMILY_HISTORY_ORGANIZER__EOCL_EXP = "self.getOrganizers()->select(organizer : cda::Organizer | not organizer.oclIsUndefined() and organizer.oclIsKindOf(ihe::FamilyHistoryOrganizer))->asSequence()->first().oclAsType(ihe::FamilyHistoryOrganizer)";
+  	  
+    if (VALIDATE_CODED_FAMILY_MEDICAL_HISTORY_SECTION_FAMILY_HISTORY_ORGANIZER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+      OCL.Helper helper = EOCL_ENV.createOCLHelper();
+      helper.setContext(IHEPackage.Literals.CODED_FAMILY_MEDICAL_HISTORY_SECTION);
+      try
+      {
+        VALIDATE_CODED_FAMILY_MEDICAL_HISTORY_SECTION_FAMILY_HISTORY_ORGANIZER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_CODED_FAMILY_MEDICAL_HISTORY_SECTION_FAMILY_HISTORY_ORGANIZER__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+      }
+      catch (ParserException pe)
+      {
+        throw new UnsupportedOperationException(pe.getLocalizedMessage());
+      }
+    }
+    if (!EOCL_ENV.createQuery(VALIDATE_CODED_FAMILY_MEDICAL_HISTORY_SECTION_FAMILY_HISTORY_ORGANIZER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(codedFamilyMedicalHistorySection))
+    {
+      if (diagnostics != null)
+      {
+        diagnostics.add
+          (new BasicDiagnostic
+            (Diagnostic.ERROR,
+             IHEValidator.DIAGNOSTIC_SOURCE,
+             IHEValidator.CODED_FAMILY_MEDICAL_HISTORY_SECTION__CODED_FAMILY_MEDICAL_HISTORY_SECTION_FAMILY_HISTORY_ORGANIZER,
+             IHEPlugin.INSTANCE.getString("CodedFamilyMedicalHistorySectionFamilyHistoryOrganizer"),
+             new Object [] { codedFamilyMedicalHistorySection }));
+      }
+       
+      return false;
+    }
+    return true;
+  }
 
 	/**
-	 * The cached OCL query for the '{@link #getIHEFamilyHistoryOrganizer(CodedFamilyMedicalHistorySection) <em>Get IHE Family History Organizer</em>}' query operation.
-	 * <!-- begin-user-doc -->
+   * The cached OCL expression body for the '{@link #getIHEFamilyHistoryOrganizer(CodedFamilyMedicalHistorySection) <em>Get IHE Family History Organizer</em>}' operation.
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getIHEFamilyHistoryOrganizer(CodedFamilyMedicalHistorySection)
-	 * @generated
-	 * @ordered
-	 */
+   * @see #getIHEFamilyHistoryOrganizer(CodedFamilyMedicalHistorySection)
+   * @generated
+   * @ordered
+   */
+	protected static final String GET_IHE_FAMILY_HISTORY_ORGANIZER__EOCL_EXP = "self.getOrganizers()->select(organizer : cda::Organizer | not organizer.oclIsUndefined() and organizer.oclIsKindOf(ihe::FamilyHistoryOrganizer))->asSequence()->any(true).oclAsType(ihe::FamilyHistoryOrganizer)";
+
+	/**
+   * The cached OCL query for the '{@link #getIHEFamilyHistoryOrganizer(CodedFamilyMedicalHistorySection) <em>Get IHE Family History Organizer</em>}' query operation.
+   * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+   * @see #getIHEFamilyHistoryOrganizer(CodedFamilyMedicalHistorySection)
+   * @generated
+   * @ordered
+   */
 	protected static OCLExpression<EClassifier> GET_IHE_FAMILY_HISTORY_ORGANIZER__EOCL_QRY;
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.getOrganizers()->select(organizer : cda::Organizer | not organizer.oclIsUndefined() and organizer.oclIsKindOf(ihe::FamilyHistoryOrganizer))->asSequence()->first().oclAsType(ihe::FamilyHistoryOrganizer)
-	 * @param codedFamilyMedicalHistorySection The receiving '<em><b>Coded Family Medical History Section</b></em>' model object.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public static FamilyHistoryOrganizer getIHEFamilyHistoryOrganizer(
 			CodedFamilyMedicalHistorySection codedFamilyMedicalHistorySection) {
-		if (GET_IHE_FAMILY_HISTORY_ORGANIZER__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(
-				IHEPackage.Literals.CODED_FAMILY_MEDICAL_HISTORY_SECTION,
-				IHEPackage.Literals.CODED_FAMILY_MEDICAL_HISTORY_SECTION.getEAllOperations().get(66));
-			try {
-				GET_IHE_FAMILY_HISTORY_ORGANIZER__EOCL_QRY = helper.createQuery(GET_IHE_FAMILY_HISTORY_ORGANIZER__EOCL_EXP);
-			} catch (ParserException pe) {
-				throw new UnsupportedOperationException(pe.getLocalizedMessage());
-			}
-		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_IHE_FAMILY_HISTORY_ORGANIZER__EOCL_QRY);
-		return (FamilyHistoryOrganizer) query.evaluate(codedFamilyMedicalHistorySection);
-	}
+    if (GET_IHE_FAMILY_HISTORY_ORGANIZER__EOCL_QRY == null)
+    {
+      OCL.Helper helper = EOCL_ENV.createOCLHelper();
+      helper.setOperationContext(IHEPackage.Literals.CODED_FAMILY_MEDICAL_HISTORY_SECTION, IHEPackage.Literals.CODED_FAMILY_MEDICAL_HISTORY_SECTION.getEAllOperations().get(66));
+      try
+      {
+        GET_IHE_FAMILY_HISTORY_ORGANIZER__EOCL_QRY = helper.createQuery(GET_IHE_FAMILY_HISTORY_ORGANIZER__EOCL_EXP);
+      }
+      catch (ParserException pe)
+      {
+        throw new UnsupportedOperationException(pe.getLocalizedMessage());
+      }
+    }
+    OCL.Query query = EOCL_ENV.createQuery(GET_IHE_FAMILY_HISTORY_ORGANIZER__EOCL_QRY);
+    return (FamilyHistoryOrganizer) query.evaluate(codedFamilyMedicalHistorySection);
+  }
 
 } // CodedFamilyMedicalHistorySectionOperations

@@ -10,10 +10,13 @@
  *******************************************************************************/
 package org.openhealthtools.mdht.uml.cda.ccd.impl;
 
+import java.lang.Iterable;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.ecore.EClass;
+import org.eclipse.emf.ecore.EObject;
+import org.openhealthtools.mdht.emf.runtime.util.Initializer;
 import org.openhealthtools.mdht.uml.cda.ccd.CCDPackage;
 import org.openhealthtools.mdht.uml.cda.ccd.CoveragePlanDescription;
 import org.openhealthtools.mdht.uml.cda.ccd.operations.CoveragePlanDescriptionOperations;
@@ -31,58 +34,67 @@ import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
  */
 public class CoveragePlanDescriptionImpl extends ActImpl implements CoveragePlanDescription {
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	protected CoveragePlanDescriptionImpl() {
-		super();
-	}
+    super();
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	@Override
 	protected EClass eStaticClass() {
-		return CCDPackage.Literals.COVERAGE_PLAN_DESCRIPTION;
-	}
+    return CCDPackage.Literals.COVERAGE_PLAN_DESCRIPTION;
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateCoveragePlanDescriptionClassCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return CoveragePlanDescriptionOperations.validateCoveragePlanDescriptionClassCode(this, diagnostics, context);
-	}
+    return CoveragePlanDescriptionOperations.validateCoveragePlanDescriptionClassCode(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateCoveragePlanDescriptionId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return CoveragePlanDescriptionOperations.validateCoveragePlanDescriptionId(this, diagnostics, context);
-	}
+    return CoveragePlanDescriptionOperations.validateCoveragePlanDescriptionId(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateCoveragePlanDescriptionMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return CoveragePlanDescriptionOperations.validateCoveragePlanDescriptionMoodCode(this, diagnostics, context);
-	}
+    return CoveragePlanDescriptionOperations.validateCoveragePlanDescriptionMoodCode(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public CoveragePlanDescription init() {
-		CDAUtil.init(this);
-		return this;
-	}
+      return Initializer.Util.init(this);
+  }
+
+  /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    public CoveragePlanDescription init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
 } // CoveragePlanDescriptionImpl

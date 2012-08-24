@@ -35,13 +35,13 @@ import org.w3c.dom.NodeList;
  */
 public class IHERegistryDelegateOperations {
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	protected IHERegistryDelegateOperations() {
-		super();
-	}
+    super();
+  }
 
 	/**
 	 * <!-- begin-user-doc -->

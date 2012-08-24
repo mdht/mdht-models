@@ -10,6 +10,9 @@
  *******************************************************************************/
 package org.openhealthtools.mdht.uml.cda.ccd;
 
+import java.lang.Iterable;
+import org.eclipse.emf.ecore.EObject;
+import org.openhealthtools.mdht.emf.runtime.util.Initializer;
 import org.openhealthtools.mdht.uml.cda.Guardian;
 
 /**
@@ -24,9 +27,16 @@ import org.openhealthtools.mdht.uml.cda.Guardian;
  */
 public interface SupportGuardian extends Guardian, Support {
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public SupportGuardian init();
+
+  /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    public SupportGuardian init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // SupportGuardian

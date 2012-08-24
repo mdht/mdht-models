@@ -10,10 +10,13 @@
  *******************************************************************************/
 package org.openhealthtools.mdht.uml.cda.hitsp.impl;
 
+import java.lang.Iterable;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.ecore.EClass;
+import org.eclipse.emf.ecore.EObject;
+import org.openhealthtools.mdht.emf.runtime.util.Initializer;
 import org.openhealthtools.mdht.uml.cda.hitsp.AdvanceDirective;
 import org.openhealthtools.mdht.uml.cda.hitsp.HITSPPackage;
 import org.openhealthtools.mdht.uml.cda.hitsp.operations.AdvanceDirectiveOperations;
@@ -31,133 +34,142 @@ import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
  */
 public class AdvanceDirectiveImpl extends AdvanceDirectiveObservationImpl implements AdvanceDirective {
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	protected AdvanceDirectiveImpl() {
-		super();
-	}
+    super();
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	@Override
 	protected EClass eStaticClass() {
-		return HITSPPackage.Literals.ADVANCE_DIRECTIVE;
-	}
+    return HITSPPackage.Literals.ADVANCE_DIRECTIVE;
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateAdvanceDirectiveHasStartingTime(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return AdvanceDirectiveOperations.validateAdvanceDirectiveHasStartingTime(this, diagnostics, context);
-	}
+    return AdvanceDirectiveOperations.validateAdvanceDirectiveHasStartingTime(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateAdvanceDirectiveHasEndingTime(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return AdvanceDirectiveOperations.validateAdvanceDirectiveHasEndingTime(this, diagnostics, context);
-	}
+    return AdvanceDirectiveOperations.validateAdvanceDirectiveHasEndingTime(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateAdvanceDirectiveHasCustodian(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return AdvanceDirectiveOperations.validateAdvanceDirectiveHasCustodian(this, diagnostics, context);
-	}
+    return AdvanceDirectiveOperations.validateAdvanceDirectiveHasCustodian(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateAdvanceDirectiveParticipantTypeCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return AdvanceDirectiveOperations.validateAdvanceDirectiveParticipantTypeCode(this, diagnostics, context);
-	}
+    return AdvanceDirectiveOperations.validateAdvanceDirectiveParticipantTypeCode(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateAdvanceDirectiveParticipantRoleClassCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return AdvanceDirectiveOperations.validateAdvanceDirectiveParticipantRoleClassCode(this, diagnostics, context);
-	}
+    return AdvanceDirectiveOperations.validateAdvanceDirectiveParticipantRoleClassCode(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateAdvanceDirectiveHasAddress(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return AdvanceDirectiveOperations.validateAdvanceDirectiveHasAddress(this, diagnostics, context);
-	}
+    return AdvanceDirectiveOperations.validateAdvanceDirectiveHasAddress(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateAdvanceDirectiveHasTelecom(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return AdvanceDirectiveOperations.validateAdvanceDirectiveHasTelecom(this, diagnostics, context);
-	}
+    return AdvanceDirectiveOperations.validateAdvanceDirectiveHasTelecom(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateAdvanceDirectiveHasNameOfAgent(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return AdvanceDirectiveOperations.validateAdvanceDirectiveHasNameOfAgent(this, diagnostics, context);
-	}
+    return AdvanceDirectiveOperations.validateAdvanceDirectiveHasNameOfAgent(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateAdvanceDirectiveTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return AdvanceDirectiveOperations.validateAdvanceDirectiveTemplateId(this, diagnostics, context);
-	}
+    return AdvanceDirectiveOperations.validateAdvanceDirectiveTemplateId(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public boolean validateAdvanceDirectiveCode(DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+    return AdvanceDirectiveOperations.validateAdvanceDirectiveCode(this, diagnostics, context);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateAdvanceDirectiveEffectiveTime(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return AdvanceDirectiveOperations.validateAdvanceDirectiveEffectiveTime(this, diagnostics, context);
-	}
+    return AdvanceDirectiveOperations.validateAdvanceDirectiveEffectiveTime(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public boolean validateAdvanceDirectiveObservationCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return AdvanceDirectiveOperations.validateAdvanceDirectiveObservationCode(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	@Override
 	public AdvanceDirective init() {
-		CDAUtil.init(this);
-		return this;
-	}
+      return Initializer.Util.init(this);
+  }
+
+  /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    public AdvanceDirective init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
 } // AdvanceDirectiveImpl

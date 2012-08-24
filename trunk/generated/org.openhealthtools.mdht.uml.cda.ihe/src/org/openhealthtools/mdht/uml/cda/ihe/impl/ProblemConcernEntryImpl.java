@@ -10,11 +10,14 @@
  *******************************************************************************/
 package org.openhealthtools.mdht.uml.cda.ihe.impl;
 
+import java.lang.Iterable;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.common.util.EList;
 import org.eclipse.emf.ecore.EClass;
+import org.eclipse.emf.ecore.EObject;
+import org.openhealthtools.mdht.emf.runtime.util.Initializer;
 import org.openhealthtools.mdht.uml.cda.ihe.IHEPackage;
 import org.openhealthtools.mdht.uml.cda.ihe.ProblemConcernEntry;
 import org.openhealthtools.mdht.uml.cda.ihe.ProblemEntry;
@@ -32,59 +35,68 @@ import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
  */
 public class ProblemConcernEntryImpl extends ConcernEntryImpl implements ProblemConcernEntry {
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	protected ProblemConcernEntryImpl() {
-		super();
-	}
+    super();
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	@Override
 	protected EClass eStaticClass() {
-		return IHEPackage.Literals.PROBLEM_CONCERN_ENTRY;
-	}
+    return IHEPackage.Literals.PROBLEM_CONCERN_ENTRY;
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateProblemConcernEntryTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ProblemConcernEntryOperations.validateProblemConcernEntryTemplateId(this, diagnostics, context);
-	}
+    return ProblemConcernEntryOperations.validateProblemConcernEntryTemplateId(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateProblemConcernEntryProblemEntry(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ProblemConcernEntryOperations.validateProblemConcernEntryProblemEntry(this, diagnostics, context);
-	}
+    return ProblemConcernEntryOperations.validateProblemConcernEntryProblemEntry(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public EList<ProblemEntry> getProblemEntries() {
-		return ProblemConcernEntryOperations.getProblemEntries(this);
-	}
+    return ProblemConcernEntryOperations.getProblemEntries(this);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	@Override
 	public ProblemConcernEntry init() {
-		CDAUtil.init(this);
-		return this;
-	}
+      return Initializer.Util.init(this);
+  }
+
+  /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    public ProblemConcernEntry init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
 } // ProblemConcernEntryImpl

@@ -10,6 +10,9 @@
  *******************************************************************************/
 package org.openhealthtools.mdht.uml.cda.ihe;
 
+import java.lang.Iterable;
+import org.eclipse.emf.ecore.EObject;
+import org.openhealthtools.mdht.emf.runtime.util.Initializer;
 import org.openhealthtools.mdht.uml.cda.ccd.Support;
 
 /**
@@ -25,9 +28,16 @@ import org.openhealthtools.mdht.uml.cda.ccd.Support;
 public interface PatientContact extends Support {
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public PatientContact init();
+
+  /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    public PatientContact init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // PatientContact

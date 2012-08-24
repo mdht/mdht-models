@@ -48,181 +48,186 @@ import org.openhealthtools.mdht.uml.cda.hitsp.util.HITSPValidator;
 public class AllergiesReactionsSectionOperations extends
 		org.openhealthtools.mdht.uml.cda.ihe.operations.AllergiesReactionsSectionOperations {
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	protected AllergiesReactionsSectionOperations() {
-		super();
-	}
+    super();
+  }
 
 	/**
-	 * The cached OCL expression body for the '{@link #validateHITSPAllergiesReactionsSectionTemplateId(AllergiesReactionsSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate HITSP Allergies Reactions Section Template Id</em>}' operation.
-	 * <!-- begin-user-doc -->
+   * The cached OCL expression body for the '{@link #validateHITSPAllergiesReactionsSectionTemplateId(AllergiesReactionsSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate HITSP Allergies Reactions Section Template Id</em>}' operation.
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateHITSPAllergiesReactionsSectionTemplateId(AllergiesReactionsSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
+   * @see #validateHITSPAllergiesReactionsSectionTemplateId(AllergiesReactionsSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+   * @generated
+   * @ordered
+   */
 	protected static final String VALIDATE_HITSP_ALLERGIES_REACTIONS_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.3.88.11.83.102')";
 
 	/**
-	 * The cached OCL invariant for the '{@link #validateHITSPAllergiesReactionsSectionTemplateId(AllergiesReactionsSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate HITSP Allergies Reactions Section Template Id</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
+   * The cached OCL invariant for the '{@link #validateHITSPAllergiesReactionsSectionTemplateId(AllergiesReactionsSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate HITSP Allergies Reactions Section Template Id</em>}' invariant operation.
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateHITSPAllergiesReactionsSectionTemplateId(AllergiesReactionsSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
+   * @see #validateHITSPAllergiesReactionsSectionTemplateId(AllergiesReactionsSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+   * @generated
+   * @ordered
+   */
 	protected static Constraint VALIDATE_HITSP_ALLERGIES_REACTIONS_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.3.88.11.83.102')
-	 * @param allergiesReactionsSection The receiving '<em><b>Allergies Reactions Section</b></em>' model object.
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
+   * <!-- begin-model-doc -->
+   * @param allergiesReactionsSection The receiving '<em><b>Allergies Reactions Section</b></em>' model object.
+   * @param diagnostics The chain of diagnostics to which problems are to be appended.
+   * @param context The cache of context-specific information.
+   * <!-- end-model-doc -->
+   * @generated
+   */
 	public static boolean validateHITSPAllergiesReactionsSectionTemplateId(
 			AllergiesReactionsSection allergiesReactionsSection, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-
-		if (VALIDATE_HITSP_ALLERGIES_REACTIONS_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setContext(HITSPPackage.Literals.ALLERGIES_REACTIONS_SECTION);
-			try {
-				VALIDATE_HITSP_ALLERGIES_REACTIONS_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_HITSP_ALLERGIES_REACTIONS_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
-				throw new UnsupportedOperationException(pe.getLocalizedMessage());
-			}
-		}
-		if (!EOCL_ENV.createQuery(
-			VALIDATE_HITSP_ALLERGIES_REACTIONS_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			allergiesReactionsSection)) {
-			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, HITSPValidator.DIAGNOSTIC_SOURCE,
-					HITSPValidator.ALLERGIES_REACTIONS_SECTION__HITSP_ALLERGIES_REACTIONS_SECTION_TEMPLATE_ID,
-					HITSPPlugin.INSTANCE.getString("HITSPAllergiesReactionsSectionTemplateId"),
-					new Object[] { allergiesReactionsSection }));
-			}
-
-			return false;
-		}
-		return true;
-	}
+  	  
+    if (VALIDATE_HITSP_ALLERGIES_REACTIONS_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+      OCL.Helper helper = EOCL_ENV.createOCLHelper();
+      helper.setContext(HITSPPackage.Literals.ALLERGIES_REACTIONS_SECTION);
+      try
+      {
+        VALIDATE_HITSP_ALLERGIES_REACTIONS_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_HITSP_ALLERGIES_REACTIONS_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+      }
+      catch (ParserException pe)
+      {
+        throw new UnsupportedOperationException(pe.getLocalizedMessage());
+      }
+    }
+    if (!EOCL_ENV.createQuery(VALIDATE_HITSP_ALLERGIES_REACTIONS_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(allergiesReactionsSection))
+    {
+      if (diagnostics != null)
+      {
+        diagnostics.add
+          (new BasicDiagnostic
+            (Diagnostic.ERROR,
+             HITSPValidator.DIAGNOSTIC_SOURCE,
+             HITSPValidator.ALLERGIES_REACTIONS_SECTION__HITSP_ALLERGIES_REACTIONS_SECTION_TEMPLATE_ID,
+             HITSPPlugin.INSTANCE.getString("HITSPAllergiesReactionsSectionTemplateId"),
+             new Object [] { allergiesReactionsSection }));
+      }
+       
+      return false;
+    }
+    return true;
+  }
 
 	/**
-	 * The cached OCL expression body for the '{@link #validateHITSPAllergiesReactionsSectionAllergyDrugSensitivity(AllergiesReactionsSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate HITSP Allergies Reactions Section Allergy Drug Sensitivity</em>}' operation.
-	 * <!-- begin-user-doc -->
+   * The cached OCL expression body for the '{@link #validateHITSPAllergiesReactionsSectionAllergyDrugSensitivity(AllergiesReactionsSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate HITSP Allergies Reactions Section Allergy Drug Sensitivity</em>}' operation.
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateHITSPAllergiesReactionsSectionAllergyDrugSensitivity(AllergiesReactionsSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
+   * @see #validateHITSPAllergiesReactionsSectionAllergyDrugSensitivity(AllergiesReactionsSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+   * @generated
+   * @ordered
+   */
 	protected static final String VALIDATE_HITSP_ALLERGIES_REACTIONS_SECTION_ALLERGY_DRUG_SENSITIVITY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entry->exists(entry : cda::Entry | not entry.act.oclIsUndefined() and entry.act.oclIsKindOf(hitsp::AllergyDrugSensitivity))";
 
 	/**
-	 * The cached OCL invariant for the '{@link #validateHITSPAllergiesReactionsSectionAllergyDrugSensitivity(AllergiesReactionsSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate HITSP Allergies Reactions Section Allergy Drug Sensitivity</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
+   * The cached OCL invariant for the '{@link #validateHITSPAllergiesReactionsSectionAllergyDrugSensitivity(AllergiesReactionsSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate HITSP Allergies Reactions Section Allergy Drug Sensitivity</em>}' invariant operation.
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateHITSPAllergiesReactionsSectionAllergyDrugSensitivity(AllergiesReactionsSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
+   * @see #validateHITSPAllergiesReactionsSectionAllergyDrugSensitivity(AllergiesReactionsSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+   * @generated
+   * @ordered
+   */
 	protected static Constraint VALIDATE_HITSP_ALLERGIES_REACTIONS_SECTION_ALLERGY_DRUG_SENSITIVITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.entry->exists(entry : cda::Entry | not entry.act.oclIsUndefined() and entry.act.oclIsKindOf(hitsp::AllergyDrugSensitivity))
-	 * @param allergiesReactionsSection The receiving '<em><b>Allergies Reactions Section</b></em>' model object.
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
+   * <!-- begin-model-doc -->
+   * @param allergiesReactionsSection The receiving '<em><b>Allergies Reactions Section</b></em>' model object.
+   * @param diagnostics The chain of diagnostics to which problems are to be appended.
+   * @param context The cache of context-specific information.
+   * <!-- end-model-doc -->
+   * @generated
+   */
 	public static boolean validateHITSPAllergiesReactionsSectionAllergyDrugSensitivity(
 			AllergiesReactionsSection allergiesReactionsSection, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-
-		if (VALIDATE_HITSP_ALLERGIES_REACTIONS_SECTION_ALLERGY_DRUG_SENSITIVITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setContext(HITSPPackage.Literals.ALLERGIES_REACTIONS_SECTION);
-			try {
-				VALIDATE_HITSP_ALLERGIES_REACTIONS_SECTION_ALLERGY_DRUG_SENSITIVITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_HITSP_ALLERGIES_REACTIONS_SECTION_ALLERGY_DRUG_SENSITIVITY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
-				throw new UnsupportedOperationException(pe.getLocalizedMessage());
-			}
-		}
-		if (!EOCL_ENV.createQuery(
-			VALIDATE_HITSP_ALLERGIES_REACTIONS_SECTION_ALLERGY_DRUG_SENSITIVITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			allergiesReactionsSection)) {
-			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR,
-					HITSPValidator.DIAGNOSTIC_SOURCE,
-					HITSPValidator.ALLERGIES_REACTIONS_SECTION__HITSP_ALLERGIES_REACTIONS_SECTION_ALLERGY_DRUG_SENSITIVITY,
-					HITSPPlugin.INSTANCE.getString("HITSPAllergiesReactionsSectionAllergyDrugSensitivity"),
-					new Object[] { allergiesReactionsSection }));
-			}
-
-			return false;
-		}
-		return true;
-	}
+  	  
+    if (VALIDATE_HITSP_ALLERGIES_REACTIONS_SECTION_ALLERGY_DRUG_SENSITIVITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+      OCL.Helper helper = EOCL_ENV.createOCLHelper();
+      helper.setContext(HITSPPackage.Literals.ALLERGIES_REACTIONS_SECTION);
+      try
+      {
+        VALIDATE_HITSP_ALLERGIES_REACTIONS_SECTION_ALLERGY_DRUG_SENSITIVITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_HITSP_ALLERGIES_REACTIONS_SECTION_ALLERGY_DRUG_SENSITIVITY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+      }
+      catch (ParserException pe)
+      {
+        throw new UnsupportedOperationException(pe.getLocalizedMessage());
+      }
+    }
+    if (!EOCL_ENV.createQuery(VALIDATE_HITSP_ALLERGIES_REACTIONS_SECTION_ALLERGY_DRUG_SENSITIVITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(allergiesReactionsSection))
+    {
+      if (diagnostics != null)
+      {
+        diagnostics.add
+          (new BasicDiagnostic
+            (Diagnostic.ERROR,
+             HITSPValidator.DIAGNOSTIC_SOURCE,
+             HITSPValidator.ALLERGIES_REACTIONS_SECTION__HITSP_ALLERGIES_REACTIONS_SECTION_ALLERGY_DRUG_SENSITIVITY,
+             HITSPPlugin.INSTANCE.getString("HITSPAllergiesReactionsSectionAllergyDrugSensitivity"),
+             new Object [] { allergiesReactionsSection }));
+      }
+       
+      return false;
+    }
+    return true;
+  }
 
 	/**
-	 * The cached OCL expression body for the '{@link #getAllergyDrugSensitivities(AllergiesReactionsSection) <em>Get Allergy Drug Sensitivities</em>}' operation.
-	 * <!-- begin-user-doc -->
+   * The cached OCL expression body for the '{@link #getAllergyDrugSensitivities(AllergiesReactionsSection) <em>Get Allergy Drug Sensitivities</em>}' operation.
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getAllergyDrugSensitivities(AllergiesReactionsSection)
-	 * @generated
-	 * @ordered
-	 */
+   * @see #getAllergyDrugSensitivities(AllergiesReactionsSection)
+   * @generated
+   * @ordered
+   */
 	protected static final String GET_ALLERGY_DRUG_SENSITIVITIES__EOCL_EXP = "self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(hitsp::AllergyDrugSensitivity)).oclAsType(hitsp::AllergyDrugSensitivity)";
 
 	/**
-	 * The cached OCL query for the '{@link #getAllergyDrugSensitivities(AllergiesReactionsSection) <em>Get Allergy Drug Sensitivities</em>}' query operation.
-	 * <!-- begin-user-doc -->
+   * The cached OCL query for the '{@link #getAllergyDrugSensitivities(AllergiesReactionsSection) <em>Get Allergy Drug Sensitivities</em>}' query operation.
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getAllergyDrugSensitivities(AllergiesReactionsSection)
-	 * @generated
-	 * @ordered
-	 */
+   * @see #getAllergyDrugSensitivities(AllergiesReactionsSection)
+   * @generated
+   * @ordered
+   */
 	protected static OCLExpression<EClassifier> GET_ALLERGY_DRUG_SENSITIVITIES__EOCL_QRY;
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(hitsp::AllergyDrugSensitivity)).oclAsType(hitsp::AllergyDrugSensitivity)
-	 * @param allergiesReactionsSection The receiving '<em><b>Allergies Reactions Section</b></em>' model object.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public static EList<AllergyDrugSensitivity> getAllergyDrugSensitivities(
 			AllergiesReactionsSection allergiesReactionsSection) {
-		if (GET_ALLERGY_DRUG_SENSITIVITIES__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(
-				HITSPPackage.Literals.ALLERGIES_REACTIONS_SECTION,
-				HITSPPackage.Literals.ALLERGIES_REACTIONS_SECTION.getEAllOperations().get(66));
-			try {
-				GET_ALLERGY_DRUG_SENSITIVITIES__EOCL_QRY = helper.createQuery(GET_ALLERGY_DRUG_SENSITIVITIES__EOCL_EXP);
-			} catch (ParserException pe) {
-				throw new UnsupportedOperationException(pe.getLocalizedMessage());
-			}
-		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_ALLERGY_DRUG_SENSITIVITIES__EOCL_QRY);
-		@SuppressWarnings("unchecked")
-		Collection<AllergyDrugSensitivity> result = (Collection<AllergyDrugSensitivity>) query.evaluate(allergiesReactionsSection);
-		return new BasicEList.UnmodifiableEList<AllergyDrugSensitivity>(result.size(), result.toArray());
-	}
+    if (GET_ALLERGY_DRUG_SENSITIVITIES__EOCL_QRY == null)
+    {
+      OCL.Helper helper = EOCL_ENV.createOCLHelper();
+      helper.setOperationContext(HITSPPackage.Literals.ALLERGIES_REACTIONS_SECTION, HITSPPackage.Literals.ALLERGIES_REACTIONS_SECTION.getEAllOperations().get(66));
+      try
+      {
+        GET_ALLERGY_DRUG_SENSITIVITIES__EOCL_QRY = helper.createQuery(GET_ALLERGY_DRUG_SENSITIVITIES__EOCL_EXP);
+      }
+      catch (ParserException pe)
+      {
+        throw new UnsupportedOperationException(pe.getLocalizedMessage());
+      }
+    }
+    OCL.Query query = EOCL_ENV.createQuery(GET_ALLERGY_DRUG_SENSITIVITIES__EOCL_QRY);
+    @SuppressWarnings("unchecked")
+    Collection<AllergyDrugSensitivity> result = (Collection<AllergyDrugSensitivity>) query.evaluate(allergiesReactionsSection);
+    return new BasicEList.UnmodifiableEList<AllergyDrugSensitivity>(result.size(), result.toArray());
+  }
 
 } // AllergiesReactionsSectionOperations

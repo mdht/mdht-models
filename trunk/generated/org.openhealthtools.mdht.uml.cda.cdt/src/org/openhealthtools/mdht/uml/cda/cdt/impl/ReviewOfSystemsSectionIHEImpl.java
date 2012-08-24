@@ -10,10 +10,13 @@
  *******************************************************************************/
 package org.openhealthtools.mdht.uml.cda.cdt.impl;
 
+import java.lang.Iterable;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.ecore.EClass;
+import org.eclipse.emf.ecore.EObject;
+import org.openhealthtools.mdht.emf.runtime.util.Initializer;
 import org.openhealthtools.mdht.uml.cda.cdt.CDTPackage;
 import org.openhealthtools.mdht.uml.cda.cdt.ReviewOfSystemsSectionIHE;
 import org.openhealthtools.mdht.uml.cda.cdt.operations.ReviewOfSystemsSectionIHEOperations;
@@ -31,50 +34,58 @@ import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
  */
 public class ReviewOfSystemsSectionIHEImpl extends SectionImpl implements ReviewOfSystemsSectionIHE {
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	protected ReviewOfSystemsSectionIHEImpl() {
-		super();
-	}
+    super();
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	@Override
 	protected EClass eStaticClass() {
-		return CDTPackage.Literals.REVIEW_OF_SYSTEMS_SECTION_IHE;
-	}
+    return CDTPackage.Literals.REVIEW_OF_SYSTEMS_SECTION_IHE;
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateReviewOfSystemsSectionIHETemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ReviewOfSystemsSectionIHEOperations.validateReviewOfSystemsSectionIHETemplateId(
-			this, diagnostics, context);
-	}
+    return ReviewOfSystemsSectionIHEOperations.validateReviewOfSystemsSectionIHETemplateId(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateReviewOfSystemsSectionIHECode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ReviewOfSystemsSectionIHEOperations.validateReviewOfSystemsSectionIHECode(this, diagnostics, context);
-	}
+    return ReviewOfSystemsSectionIHEOperations.validateReviewOfSystemsSectionIHECode(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public ReviewOfSystemsSectionIHE init() {
-		CDAUtil.init(this);
-		return this;
-	}
+      return Initializer.Util.init(this);
+  }
+
+  /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    public ReviewOfSystemsSectionIHE init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
 } // ReviewOfSystemsSectionIHEImpl

@@ -10,10 +10,13 @@
  *******************************************************************************/
 package org.openhealthtools.mdht.uml.cda.ccd.impl;
 
+import java.lang.Iterable;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.ecore.EClass;
+import org.eclipse.emf.ecore.EObject;
+import org.openhealthtools.mdht.emf.runtime.util.Initializer;
 import org.openhealthtools.mdht.uml.cda.AssignedEntity;
 import org.openhealthtools.mdht.uml.cda.ParticipantRole;
 import org.openhealthtools.mdht.uml.cda.ccd.CCDPackage;
@@ -33,194 +36,203 @@ import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
  */
 public class PolicyActivityImpl extends ActImpl implements PolicyActivity {
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	protected PolicyActivityImpl() {
-		super();
-	}
+    super();
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	@Override
 	protected EClass eStaticClass() {
-		return CCDPackage.Literals.POLICY_ACTIVITY;
-	}
+    return CCDPackage.Literals.POLICY_ACTIVITY;
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validatePolicyActivityPayerEntityIsRequired(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return PolicyActivityOperations.validatePolicyActivityPayerEntityIsRequired(this, diagnostics, context);
-	}
+    return PolicyActivityOperations.validatePolicyActivityPayerEntityIsRequired(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validatePolicyActivityCoveredPartyIsRequired(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return PolicyActivityOperations.validatePolicyActivityCoveredPartyIsRequired(this, diagnostics, context);
-	}
+    return PolicyActivityOperations.validatePolicyActivityCoveredPartyIsRequired(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validatePolicyActivityCoveredPartyTime(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return PolicyActivityOperations.validatePolicyActivityCoveredPartyTime(this, diagnostics, context);
-	}
+    return PolicyActivityOperations.validatePolicyActivityCoveredPartyTime(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validatePolicyActivitySubscriberIsAllowed(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return PolicyActivityOperations.validatePolicyActivitySubscriberIsAllowed(this, diagnostics, context);
-	}
+    return PolicyActivityOperations.validatePolicyActivitySubscriberIsAllowed(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validatePolicyActivitySubscriberTime(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return PolicyActivityOperations.validatePolicyActivitySubscriberTime(this, diagnostics, context);
-	}
+    return PolicyActivityOperations.validatePolicyActivitySubscriberTime(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validatePolicyActivityEntryRelationshipREFR(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return PolicyActivityOperations.validatePolicyActivityEntryRelationshipREFR(this, diagnostics, context);
-	}
+    return PolicyActivityOperations.validatePolicyActivityEntryRelationshipREFR(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validatePolicyActivityEntryRelationshipTarget(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return PolicyActivityOperations.validatePolicyActivityEntryRelationshipTarget(this, diagnostics, context);
-	}
+    return PolicyActivityOperations.validatePolicyActivityEntryRelationshipTarget(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validatePolicyActivityTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return PolicyActivityOperations.validatePolicyActivityTemplateId(this, diagnostics, context);
-	}
+    return PolicyActivityOperations.validatePolicyActivityTemplateId(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validatePolicyActivityClassCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return PolicyActivityOperations.validatePolicyActivityClassCode(this, diagnostics, context);
-	}
+    return PolicyActivityOperations.validatePolicyActivityClassCode(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validatePolicyActivityMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return PolicyActivityOperations.validatePolicyActivityMoodCode(this, diagnostics, context);
-	}
+    return PolicyActivityOperations.validatePolicyActivityMoodCode(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validatePolicyActivityId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return PolicyActivityOperations.validatePolicyActivityId(this, diagnostics, context);
-	}
+    return PolicyActivityOperations.validatePolicyActivityId(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validatePolicyActivityStatusCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return PolicyActivityOperations.validatePolicyActivityStatusCode(this, diagnostics, context);
-	}
+    return PolicyActivityOperations.validatePolicyActivityStatusCode(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validatePolicyActivityPayerEntity(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return PolicyActivityOperations.validatePolicyActivityPayerEntity(this, diagnostics, context);
-	}
+    return PolicyActivityOperations.validatePolicyActivityPayerEntity(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validatePolicyActivityCoveredParty(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return PolicyActivityOperations.validatePolicyActivityCoveredParty(this, diagnostics, context);
-	}
+    return PolicyActivityOperations.validatePolicyActivityCoveredParty(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validatePolicyActivitySubscriber(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return PolicyActivityOperations.validatePolicyActivitySubscriber(this, diagnostics, context);
-	}
+    return PolicyActivityOperations.validatePolicyActivitySubscriber(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public AssignedEntity getPayerEntity() {
-		return PolicyActivityOperations.getPayerEntity(this);
-	}
+    return PolicyActivityOperations.getPayerEntity(this);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public ParticipantRole getCoveredParty() {
-		return PolicyActivityOperations.getCoveredParty(this);
-	}
+    return PolicyActivityOperations.getCoveredParty(this);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public ParticipantRole getSubscriber() {
-		return PolicyActivityOperations.getSubscriber(this);
-	}
+    return PolicyActivityOperations.getSubscriber(this);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public PolicyActivity init() {
-		CDAUtil.init(this);
-		return this;
-	}
+      return Initializer.Util.init(this);
+  }
+
+  /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    public PolicyActivity init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
 } // PolicyActivityImpl

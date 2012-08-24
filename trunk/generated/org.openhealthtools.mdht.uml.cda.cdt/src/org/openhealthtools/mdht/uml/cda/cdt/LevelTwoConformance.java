@@ -10,6 +10,10 @@
  *******************************************************************************/
 package org.openhealthtools.mdht.uml.cda.cdt;
 
+import java.lang.Iterable;
+import org.eclipse.emf.ecore.EObject;
+import org.openhealthtools.mdht.emf.runtime.util.Initializer;
+
 /**
  * <!-- begin-user-doc -->
  * A representation of the model object '<em><b>Level Two Conformance</b></em>'.
@@ -17,14 +21,21 @@ package org.openhealthtools.mdht.uml.cda.cdt;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.cdt.CDTPackage#getLevelTwoConformance()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation templateId.root='2.16.840.1.113883.10.20.20' constraints.validation.error='LevelTwoConformanceTemplateId'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='LevelTwoConformanceTemplateId' templateId.root='2.16.840.1.113883.10.20.20'"
  * @generated
  */
 public interface LevelTwoConformance extends LevelOneConformance {
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public LevelTwoConformance init();
+
+  /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    public LevelTwoConformance init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // LevelTwoConformance

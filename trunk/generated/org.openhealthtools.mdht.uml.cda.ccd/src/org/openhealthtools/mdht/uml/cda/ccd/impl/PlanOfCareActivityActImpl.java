@@ -10,10 +10,13 @@
  *******************************************************************************/
 package org.openhealthtools.mdht.uml.cda.ccd.impl;
 
+import java.lang.Iterable;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.ecore.EClass;
+import org.eclipse.emf.ecore.EObject;
+import org.openhealthtools.mdht.emf.runtime.util.Initializer;
 import org.openhealthtools.mdht.uml.cda.ccd.CCDPackage;
 import org.openhealthtools.mdht.uml.cda.ccd.PlanOfCareActivityAct;
 import org.openhealthtools.mdht.uml.cda.ccd.operations.PlanOfCareActivityActOperations;
@@ -31,67 +34,76 @@ import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
  */
 public class PlanOfCareActivityActImpl extends ActImpl implements PlanOfCareActivityAct {
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	protected PlanOfCareActivityActImpl() {
-		super();
-	}
+    super();
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	@Override
 	protected EClass eStaticClass() {
-		return CCDPackage.Literals.PLAN_OF_CARE_ACTIVITY_ACT;
-	}
+    return CCDPackage.Literals.PLAN_OF_CARE_ACTIVITY_ACT;
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validatePlanOfCareActivityActMoodCodeValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return PlanOfCareActivityActOperations.validatePlanOfCareActivityActMoodCodeValue(this, diagnostics, context);
-	}
+    return PlanOfCareActivityActOperations.validatePlanOfCareActivityActMoodCodeValue(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validatePlanOfCareActivityActTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return PlanOfCareActivityActOperations.validatePlanOfCareActivityActTemplateId(this, diagnostics, context);
-	}
+    return PlanOfCareActivityActOperations.validatePlanOfCareActivityActTemplateId(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validatePlanOfCareActivityActId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return PlanOfCareActivityActOperations.validatePlanOfCareActivityActId(this, diagnostics, context);
-	}
+    return PlanOfCareActivityActOperations.validatePlanOfCareActivityActId(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validatePlanOfCareActivityActMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return PlanOfCareActivityActOperations.validatePlanOfCareActivityActMoodCode(this, diagnostics, context);
-	}
+    return PlanOfCareActivityActOperations.validatePlanOfCareActivityActMoodCode(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public PlanOfCareActivityAct init() {
-		CDAUtil.init(this);
-		return this;
-	}
+      return Initializer.Util.init(this);
+  }
+
+  /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    public PlanOfCareActivityAct init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
 } // PlanOfCareActivityActImpl
