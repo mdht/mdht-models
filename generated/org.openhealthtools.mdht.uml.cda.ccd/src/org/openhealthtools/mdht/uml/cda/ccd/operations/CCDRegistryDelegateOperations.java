@@ -31,13 +31,13 @@ import org.w3c.dom.Element;
  */
 public class CCDRegistryDelegateOperations {
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	protected CCDRegistryDelegateOperations() {
-    super();
-  }
+		super();
+	}
 
 	/**
 	 * <!-- begin-user-doc -->

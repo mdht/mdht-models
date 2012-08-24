@@ -29,7 +29,6 @@ import org.openhealthtools.mdht.uml.cda.ccd.PlanOfCareActivitySupply;
 import org.openhealthtools.mdht.uml.cda.ccd.PlanOfCareSection;
 import org.openhealthtools.mdht.uml.cda.ccd.operations.PlanOfCareSectionOperations;
 import org.openhealthtools.mdht.uml.cda.impl.SectionImpl;
-import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
 
 /**
  * <!-- begin-user-doc -->
@@ -42,199 +41,203 @@ import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
  */
 public class PlanOfCareSectionImpl extends SectionImpl implements PlanOfCareSection {
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	protected PlanOfCareSectionImpl() {
-    super();
-  }
+		super();
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	@Override
 	protected EClass eStaticClass() {
-    return CCDPackage.Literals.PLAN_OF_CARE_SECTION;
-  }
+		return CCDPackage.Literals.PLAN_OF_CARE_SECTION;
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	public boolean validatePlanOfCareSectionTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return PlanOfCareSectionOperations.validatePlanOfCareSectionTemplateId(this, diagnostics, context);
-  }
+		return PlanOfCareSectionOperations.validatePlanOfCareSectionTemplateId(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	public boolean validatePlanOfCareSectionCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return PlanOfCareSectionOperations.validatePlanOfCareSectionCode(this, diagnostics, context);
-  }
+		return PlanOfCareSectionOperations.validatePlanOfCareSectionCode(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	public boolean validatePlanOfCareSectionTitle(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return PlanOfCareSectionOperations.validatePlanOfCareSectionTitle(this, diagnostics, context);
-  }
+		return PlanOfCareSectionOperations.validatePlanOfCareSectionTitle(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	public boolean validatePlanOfCareSectionText(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return PlanOfCareSectionOperations.validatePlanOfCareSectionText(this, diagnostics, context);
-  }
+		return PlanOfCareSectionOperations.validatePlanOfCareSectionText(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	public boolean validatePlanOfCareSectionPlanOfCareActivityAct(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-    return PlanOfCareSectionOperations.validatePlanOfCareSectionPlanOfCareActivityAct(this, diagnostics, context);
-  }
+		return PlanOfCareSectionOperations.validatePlanOfCareSectionPlanOfCareActivityAct(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	public boolean validatePlanOfCareSectionPlanOfCareActivityEncounter(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-    return PlanOfCareSectionOperations.validatePlanOfCareSectionPlanOfCareActivityEncounter(this, diagnostics, context);
-  }
+		return PlanOfCareSectionOperations.validatePlanOfCareSectionPlanOfCareActivityEncounter(
+			this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	public boolean validatePlanOfCareSectionPlanOfCareActivityObservation(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-    return PlanOfCareSectionOperations.validatePlanOfCareSectionPlanOfCareActivityObservation(this, diagnostics, context);
-  }
+		return PlanOfCareSectionOperations.validatePlanOfCareSectionPlanOfCareActivityObservation(
+			this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	public boolean validatePlanOfCareSectionPlanOfCareActivityProcedure(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-    return PlanOfCareSectionOperations.validatePlanOfCareSectionPlanOfCareActivityProcedure(this, diagnostics, context);
-  }
+		return PlanOfCareSectionOperations.validatePlanOfCareSectionPlanOfCareActivityProcedure(
+			this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	public boolean validatePlanOfCareSectionPlanOfCareActivitySubstanceAdministration(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-    return PlanOfCareSectionOperations.validatePlanOfCareSectionPlanOfCareActivitySubstanceAdministration(this, diagnostics, context);
-  }
+		return PlanOfCareSectionOperations.validatePlanOfCareSectionPlanOfCareActivitySubstanceAdministration(
+			this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	public boolean validatePlanOfCareSectionPlanOfCareActivitySupply(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-    return PlanOfCareSectionOperations.validatePlanOfCareSectionPlanOfCareActivitySupply(this, diagnostics, context);
-  }
+		return PlanOfCareSectionOperations.validatePlanOfCareSectionPlanOfCareActivitySupply(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	public EList<PlanOfCareActivity> getPlanOfCareActivities() {
-    return PlanOfCareSectionOperations.getPlanOfCareActivities(this);
-  }
+		return PlanOfCareSectionOperations.getPlanOfCareActivities(this);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	public PlanOfCareActivityAct getPlanOfCareActivityAct() {
-    return PlanOfCareSectionOperations.getPlanOfCareActivityAct(this);
-  }
+		return PlanOfCareSectionOperations.getPlanOfCareActivityAct(this);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	public PlanOfCareActivityEncounter getPlanOfCareActivityEncounter() {
-    return PlanOfCareSectionOperations.getPlanOfCareActivityEncounter(this);
-  }
+		return PlanOfCareSectionOperations.getPlanOfCareActivityEncounter(this);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	public PlanOfCareActivityObservation getPlanOfCareActivityObservation() {
-    return PlanOfCareSectionOperations.getPlanOfCareActivityObservation(this);
-  }
+		return PlanOfCareSectionOperations.getPlanOfCareActivityObservation(this);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	public PlanOfCareActivityProcedure getPlanOfCareActivityProcedure() {
-    return PlanOfCareSectionOperations.getPlanOfCareActivityProcedure(this);
-  }
+		return PlanOfCareSectionOperations.getPlanOfCareActivityProcedure(this);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	public PlanOfCareActivitySubstanceAdministration getPlanOfCareActivitySubstanceAdministration() {
-    return PlanOfCareSectionOperations.getPlanOfCareActivitySubstanceAdministration(this);
-  }
+		return PlanOfCareSectionOperations.getPlanOfCareActivitySubstanceAdministration(this);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	public PlanOfCareActivitySupply getPlanOfCareActivitySupply() {
-    return PlanOfCareSectionOperations.getPlanOfCareActivitySupply(this);
-  }
+		return PlanOfCareSectionOperations.getPlanOfCareActivitySupply(this);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	public PlanOfCareSection init() {
-      return Initializer.Util.init(this);
-  }
+		return Initializer.Util.init(this);
+	}
 
-  /**
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    public PlanOfCareSection init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-        Initializer.Util.init(this, initializers);
-        return this;
-    }
+	/**
+	   * <!-- begin-user-doc -->
+	   * <!-- end-user-doc -->
+	   * @generated
+	   */
+	public PlanOfCareSection init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+		Initializer.Util.init(this, initializers);
+		return this;
+	}
 } // PlanOfCareSectionImpl

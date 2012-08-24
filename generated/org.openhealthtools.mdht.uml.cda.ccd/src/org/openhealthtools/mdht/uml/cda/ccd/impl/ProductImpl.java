@@ -21,7 +21,6 @@ import org.openhealthtools.mdht.uml.cda.ccd.CCDPackage;
 import org.openhealthtools.mdht.uml.cda.ccd.Product;
 import org.openhealthtools.mdht.uml.cda.ccd.operations.ProductOperations;
 import org.openhealthtools.mdht.uml.cda.impl.ManufacturedProductImpl;
-import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
 
 /**
  * <!-- begin-user-doc -->
@@ -34,122 +33,122 @@ import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
  */
 public class ProductImpl extends ManufacturedProductImpl implements Product {
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	protected ProductImpl() {
-    super();
-  }
+		super();
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	@Override
 	protected EClass eStaticClass() {
-    return CCDPackage.Literals.PRODUCT;
-  }
+		return CCDPackage.Literals.PRODUCT;
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	public boolean validateProductHasMaterial(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return ProductOperations.validateProductHasMaterial(this, diagnostics, context);
-  }
+		return ProductOperations.validateProductHasMaterial(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	public boolean validateProductHasMaterialCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return ProductOperations.validateProductHasMaterialCode(this, diagnostics, context);
-  }
+		return ProductOperations.validateProductHasMaterialCode(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	public boolean validateProductHasMaterialCodeVocab(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return ProductOperations.validateProductHasMaterialCodeVocab(this, diagnostics, context);
-  }
+		return ProductOperations.validateProductHasMaterialCodeVocab(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	public boolean validateProductHasMaterialCodeOriginalText(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return ProductOperations.validateProductHasMaterialCodeOriginalText(this, diagnostics, context);
-  }
+		return ProductOperations.validateProductHasMaterialCodeOriginalText(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	public boolean validateProductHasMaterialName(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return ProductOperations.validateProductHasMaterialName(this, diagnostics, context);
-  }
+		return ProductOperations.validateProductHasMaterialName(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	public boolean validateProductMayHaveMaterialManufacturer(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return ProductOperations.validateProductMayHaveMaterialManufacturer(this, diagnostics, context);
-  }
+		return ProductOperations.validateProductMayHaveMaterialManufacturer(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	public boolean validateProductShouldHaveMaterialManufacturer(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-    return ProductOperations.validateProductShouldHaveMaterialManufacturer(this, diagnostics, context);
-  }
+		return ProductOperations.validateProductShouldHaveMaterialManufacturer(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	public boolean validateProductTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return ProductOperations.validateProductTemplateId(this, diagnostics, context);
-  }
+		return ProductOperations.validateProductTemplateId(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	public boolean validateProductId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return ProductOperations.validateProductId(this, diagnostics, context);
-  }
+		return ProductOperations.validateProductId(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	public Product init() {
-      return Initializer.Util.init(this);
-  }
+		return Initializer.Util.init(this);
+	}
 
-  /**
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    public Product init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-        Initializer.Util.init(this, initializers);
-        return this;
-    }
+	/**
+	   * <!-- begin-user-doc -->
+	   * <!-- end-user-doc -->
+	   * @generated
+	   */
+	public Product init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+		Initializer.Util.init(this, initializers);
+		return this;
+	}
 } // ProductImpl

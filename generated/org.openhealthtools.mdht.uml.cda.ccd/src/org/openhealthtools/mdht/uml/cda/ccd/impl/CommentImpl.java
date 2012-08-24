@@ -21,7 +21,6 @@ import org.openhealthtools.mdht.uml.cda.ccd.CCDPackage;
 import org.openhealthtools.mdht.uml.cda.ccd.Comment;
 import org.openhealthtools.mdht.uml.cda.ccd.operations.CommentOperations;
 import org.openhealthtools.mdht.uml.cda.impl.ActImpl;
-import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
 
 /**
  * <!-- begin-user-doc -->
@@ -34,76 +33,76 @@ import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
  */
 public class CommentImpl extends ActImpl implements Comment {
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	protected CommentImpl() {
-    super();
-  }
+		super();
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	@Override
 	protected EClass eStaticClass() {
-    return CCDPackage.Literals.COMMENT;
-  }
+		return CCDPackage.Literals.COMMENT;
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	public boolean validateCommentTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return CommentOperations.validateCommentTemplateId(this, diagnostics, context);
-  }
+		return CommentOperations.validateCommentTemplateId(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	public boolean validateCommentClassCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return CommentOperations.validateCommentClassCode(this, diagnostics, context);
-  }
+		return CommentOperations.validateCommentClassCode(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	public boolean validateCommentMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return CommentOperations.validateCommentMoodCode(this, diagnostics, context);
-  }
+		return CommentOperations.validateCommentMoodCode(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	public boolean validateCommentCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return CommentOperations.validateCommentCode(this, diagnostics, context);
-  }
+		return CommentOperations.validateCommentCode(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	public Comment init() {
-      return Initializer.Util.init(this);
-  }
+		return Initializer.Util.init(this);
+	}
 
-  /**
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    public Comment init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-        Initializer.Util.init(this, initializers);
-        return this;
-    }
+	/**
+	   * <!-- begin-user-doc -->
+	   * <!-- end-user-doc -->
+	   * @generated
+	   */
+	public Comment init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+		Initializer.Util.init(this, initializers);
+		return this;
+	}
 } // CommentImpl

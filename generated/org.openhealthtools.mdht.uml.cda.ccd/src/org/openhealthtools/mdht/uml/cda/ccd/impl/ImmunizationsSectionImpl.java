@@ -24,7 +24,6 @@ import org.openhealthtools.mdht.uml.cda.ccd.MedicationActivity;
 import org.openhealthtools.mdht.uml.cda.ccd.SupplyActivity;
 import org.openhealthtools.mdht.uml.cda.ccd.operations.ImmunizationsSectionOperations;
 import org.openhealthtools.mdht.uml.cda.impl.SectionImpl;
-import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
 
 /**
  * <!-- begin-user-doc -->
@@ -37,123 +36,124 @@ import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
  */
 public class ImmunizationsSectionImpl extends SectionImpl implements ImmunizationsSection {
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	protected ImmunizationsSectionImpl() {
-    super();
-  }
+		super();
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	@Override
 	protected EClass eStaticClass() {
-    return CCDPackage.Literals.IMMUNIZATIONS_SECTION;
-  }
+		return CCDPackage.Literals.IMMUNIZATIONS_SECTION;
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	public boolean validateImmunizationsSectionHasMedicationOrSupplyActivity(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-    return ImmunizationsSectionOperations.validateImmunizationsSectionHasMedicationOrSupplyActivity(this, diagnostics, context);
-  }
+		return ImmunizationsSectionOperations.validateImmunizationsSectionHasMedicationOrSupplyActivity(
+			this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	public boolean validateImmunizationsSectionTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return ImmunizationsSectionOperations.validateImmunizationsSectionTemplateId(this, diagnostics, context);
-  }
+		return ImmunizationsSectionOperations.validateImmunizationsSectionTemplateId(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	public boolean validateImmunizationsSectionCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return ImmunizationsSectionOperations.validateImmunizationsSectionCode(this, diagnostics, context);
-  }
+		return ImmunizationsSectionOperations.validateImmunizationsSectionCode(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	public boolean validateImmunizationsSectionTitle(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return ImmunizationsSectionOperations.validateImmunizationsSectionTitle(this, diagnostics, context);
-  }
+		return ImmunizationsSectionOperations.validateImmunizationsSectionTitle(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	public boolean validateImmunizationsSectionText(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return ImmunizationsSectionOperations.validateImmunizationsSectionText(this, diagnostics, context);
-  }
+		return ImmunizationsSectionOperations.validateImmunizationsSectionText(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	public boolean validateImmunizationsSectionMedicationActivity(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-    return ImmunizationsSectionOperations.validateImmunizationsSectionMedicationActivity(this, diagnostics, context);
-  }
+		return ImmunizationsSectionOperations.validateImmunizationsSectionMedicationActivity(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	public boolean validateImmunizationsSectionSupplyActivity(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return ImmunizationsSectionOperations.validateImmunizationsSectionSupplyActivity(this, diagnostics, context);
-  }
+		return ImmunizationsSectionOperations.validateImmunizationsSectionSupplyActivity(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	public EList<MedicationActivity> getMedicationActivities() {
-    return ImmunizationsSectionOperations.getMedicationActivities(this);
-  }
+		return ImmunizationsSectionOperations.getMedicationActivities(this);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	public EList<SupplyActivity> getSupplyActivities() {
-    return ImmunizationsSectionOperations.getSupplyActivities(this);
-  }
+		return ImmunizationsSectionOperations.getSupplyActivities(this);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	public ImmunizationsSection init() {
-      return Initializer.Util.init(this);
-  }
+		return Initializer.Util.init(this);
+	}
 
-  /**
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    public ImmunizationsSection init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-        Initializer.Util.init(this, initializers);
-        return this;
-    }
+	/**
+	   * <!-- begin-user-doc -->
+	   * <!-- end-user-doc -->
+	   * @generated
+	   */
+	public ImmunizationsSection init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+		Initializer.Util.init(this, initializers);
+		return this;
+	}
 } // ImmunizationsSectionImpl

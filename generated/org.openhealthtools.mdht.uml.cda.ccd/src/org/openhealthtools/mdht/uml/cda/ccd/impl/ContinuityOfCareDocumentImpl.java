@@ -37,7 +37,6 @@ import org.openhealthtools.mdht.uml.cda.ccd.SocialHistorySection;
 import org.openhealthtools.mdht.uml.cda.ccd.VitalSignsSection;
 import org.openhealthtools.mdht.uml.cda.ccd.operations.ContinuityOfCareDocumentOperations;
 import org.openhealthtools.mdht.uml.cda.impl.ClinicalDocumentImpl;
-import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
 
 /**
  * <!-- begin-user-doc -->
@@ -50,481 +49,509 @@ import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
  */
 public class ContinuityOfCareDocumentImpl extends ClinicalDocumentImpl implements ContinuityOfCareDocument {
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	protected ContinuityOfCareDocumentImpl() {
-    super();
-  }
+		super();
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	@Override
 	protected EClass eStaticClass() {
-    return CCDPackage.Literals.CONTINUITY_OF_CARE_DOCUMENT;
-  }
+		return CCDPackage.Literals.CONTINUITY_OF_CARE_DOCUMENT;
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	public boolean validateContinuityOfCareDocumentServiceEventRequired(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-    return ContinuityOfCareDocumentOperations.validateContinuityOfCareDocumentServiceEventRequired(this, diagnostics, context);
-  }
+		return ContinuityOfCareDocumentOperations.validateContinuityOfCareDocumentServiceEventRequired(
+			this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	public boolean validateContinuityOfCareDocumentServiceEventClassCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-    return ContinuityOfCareDocumentOperations.validateContinuityOfCareDocumentServiceEventClassCode(this, diagnostics, context);
-  }
+		return ContinuityOfCareDocumentOperations.validateContinuityOfCareDocumentServiceEventClassCode(
+			this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	public boolean validateContinuityOfCareDocumentServiceEventEffectiveTime(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-    return ContinuityOfCareDocumentOperations.validateContinuityOfCareDocumentServiceEventEffectiveTime(this, diagnostics, context);
-  }
+		return ContinuityOfCareDocumentOperations.validateContinuityOfCareDocumentServiceEventEffectiveTime(
+			this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	public boolean validateContinuityOfCareDocumentLanguageCodeFormat(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-    return ContinuityOfCareDocumentOperations.validateContinuityOfCareDocumentLanguageCodeFormat(this, diagnostics, context);
-  }
+		return ContinuityOfCareDocumentOperations.validateContinuityOfCareDocumentLanguageCodeFormat(
+			this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	public boolean validateContinuityOfCareDocumentNoTemplateIdExtension(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-    return ContinuityOfCareDocumentOperations.validateContinuityOfCareDocumentNoTemplateIdExtension(this, diagnostics, context);
-  }
+		return ContinuityOfCareDocumentOperations.validateContinuityOfCareDocumentNoTemplateIdExtension(
+			this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	public boolean validateContinuityOfCareDocumentHasEffectiveTimeSeconds(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-    return ContinuityOfCareDocumentOperations.validateContinuityOfCareDocumentHasEffectiveTimeSeconds(this, diagnostics, context);
-  }
+		return ContinuityOfCareDocumentOperations.validateContinuityOfCareDocumentHasEffectiveTimeSeconds(
+			this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	public boolean validateContinuityOfCareDocumentHasEffectiveTimeZone(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-    return ContinuityOfCareDocumentOperations.validateContinuityOfCareDocumentHasEffectiveTimeZone(this, diagnostics, context);
-  }
+		return ContinuityOfCareDocumentOperations.validateContinuityOfCareDocumentHasEffectiveTimeZone(
+			this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	public boolean validateContinuityOfCareDocumentOneOrTwoRecordTarget(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-    return ContinuityOfCareDocumentOperations.validateContinuityOfCareDocumentOneOrTwoRecordTarget(this, diagnostics, context);
-  }
+		return ContinuityOfCareDocumentOperations.validateContinuityOfCareDocumentOneOrTwoRecordTarget(
+			this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	public boolean validateContinuityOfCareDocumentHasAssignedAuthor(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-    return ContinuityOfCareDocumentOperations.validateContinuityOfCareDocumentHasAssignedAuthor(this, diagnostics, context);
-  }
+		return ContinuityOfCareDocumentOperations.validateContinuityOfCareDocumentHasAssignedAuthor(
+			this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	public boolean validateContinuityOfCareDocumentHasAssignedAuthorNullFlavor(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-    return ContinuityOfCareDocumentOperations.validateContinuityOfCareDocumentHasAssignedAuthorNullFlavor(this, diagnostics, context);
-  }
+		return ContinuityOfCareDocumentOperations.validateContinuityOfCareDocumentHasAssignedAuthorNullFlavor(
+			this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	public boolean validateContinuityOfCareDocumentHasInformationRecipient(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-    return ContinuityOfCareDocumentOperations.validateContinuityOfCareDocumentHasInformationRecipient(this, diagnostics, context);
-  }
+		return ContinuityOfCareDocumentOperations.validateContinuityOfCareDocumentHasInformationRecipient(
+			this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	public boolean validateContinuityOfCareDocumentTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return ContinuityOfCareDocumentOperations.validateContinuityOfCareDocumentTemplateId(this, diagnostics, context);
-  }
+		return ContinuityOfCareDocumentOperations.validateContinuityOfCareDocumentTemplateId(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	public boolean validateContinuityOfCareDocumentCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return ContinuityOfCareDocumentOperations.validateContinuityOfCareDocumentCode(this, diagnostics, context);
-  }
+		return ContinuityOfCareDocumentOperations.validateContinuityOfCareDocumentCode(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	public boolean validateContinuityOfCareDocumentLanguageCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return ContinuityOfCareDocumentOperations.validateContinuityOfCareDocumentLanguageCode(this, diagnostics, context);
-  }
+		return ContinuityOfCareDocumentOperations.validateContinuityOfCareDocumentLanguageCode(
+			this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	public boolean validateContinuityOfCareDocumentProblemSection(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-    return ContinuityOfCareDocumentOperations.validateContinuityOfCareDocumentProblemSection(this, diagnostics, context);
-  }
+		return ContinuityOfCareDocumentOperations.validateContinuityOfCareDocumentProblemSection(
+			this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	public boolean validateContinuityOfCareDocumentFamilyHistorySection(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-    return ContinuityOfCareDocumentOperations.validateContinuityOfCareDocumentFamilyHistorySection(this, diagnostics, context);
-  }
+		return ContinuityOfCareDocumentOperations.validateContinuityOfCareDocumentFamilyHistorySection(
+			this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	public boolean validateContinuityOfCareDocumentSocialHistorySection(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-    return ContinuityOfCareDocumentOperations.validateContinuityOfCareDocumentSocialHistorySection(this, diagnostics, context);
-  }
+		return ContinuityOfCareDocumentOperations.validateContinuityOfCareDocumentSocialHistorySection(
+			this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	public boolean validateContinuityOfCareDocumentAlertsSection(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-    return ContinuityOfCareDocumentOperations.validateContinuityOfCareDocumentAlertsSection(this, diagnostics, context);
-  }
+		return ContinuityOfCareDocumentOperations.validateContinuityOfCareDocumentAlertsSection(
+			this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	public boolean validateContinuityOfCareDocumentMedicationsSection(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-    return ContinuityOfCareDocumentOperations.validateContinuityOfCareDocumentMedicationsSection(this, diagnostics, context);
-  }
+		return ContinuityOfCareDocumentOperations.validateContinuityOfCareDocumentMedicationsSection(
+			this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	public boolean validateContinuityOfCareDocumentResultsSection(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-    return ContinuityOfCareDocumentOperations.validateContinuityOfCareDocumentResultsSection(this, diagnostics, context);
-  }
+		return ContinuityOfCareDocumentOperations.validateContinuityOfCareDocumentResultsSection(
+			this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	public boolean validateContinuityOfCareDocumentProceduresSection(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-    return ContinuityOfCareDocumentOperations.validateContinuityOfCareDocumentProceduresSection(this, diagnostics, context);
-  }
+		return ContinuityOfCareDocumentOperations.validateContinuityOfCareDocumentProceduresSection(
+			this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	public boolean validateContinuityOfCareDocumentEncountersSection(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-    return ContinuityOfCareDocumentOperations.validateContinuityOfCareDocumentEncountersSection(this, diagnostics, context);
-  }
+		return ContinuityOfCareDocumentOperations.validateContinuityOfCareDocumentEncountersSection(
+			this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	public boolean validateContinuityOfCareDocumentPlanOfCareSection(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-    return ContinuityOfCareDocumentOperations.validateContinuityOfCareDocumentPlanOfCareSection(this, diagnostics, context);
-  }
+		return ContinuityOfCareDocumentOperations.validateContinuityOfCareDocumentPlanOfCareSection(
+			this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	public boolean validateContinuityOfCareDocumentImmunizationsSection(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-    return ContinuityOfCareDocumentOperations.validateContinuityOfCareDocumentImmunizationsSection(this, diagnostics, context);
-  }
+		return ContinuityOfCareDocumentOperations.validateContinuityOfCareDocumentImmunizationsSection(
+			this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	public boolean validateContinuityOfCareDocumentVitalSignsSection(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-    return ContinuityOfCareDocumentOperations.validateContinuityOfCareDocumentVitalSignsSection(this, diagnostics, context);
-  }
+		return ContinuityOfCareDocumentOperations.validateContinuityOfCareDocumentVitalSignsSection(
+			this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	public boolean validateContinuityOfCareDocumentMedicalEquipmentSection(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-    return ContinuityOfCareDocumentOperations.validateContinuityOfCareDocumentMedicalEquipmentSection(this, diagnostics, context);
-  }
+		return ContinuityOfCareDocumentOperations.validateContinuityOfCareDocumentMedicalEquipmentSection(
+			this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	public boolean validateContinuityOfCareDocumentFunctionalStatusSection(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-    return ContinuityOfCareDocumentOperations.validateContinuityOfCareDocumentFunctionalStatusSection(this, diagnostics, context);
-  }
+		return ContinuityOfCareDocumentOperations.validateContinuityOfCareDocumentFunctionalStatusSection(
+			this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	public boolean validateContinuityOfCareDocumentAdvanceDirectivesSection(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-    return ContinuityOfCareDocumentOperations.validateContinuityOfCareDocumentAdvanceDirectivesSection(this, diagnostics, context);
-  }
+		return ContinuityOfCareDocumentOperations.validateContinuityOfCareDocumentAdvanceDirectivesSection(
+			this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	public boolean validateContinuityOfCareDocumentPayersSection(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-    return ContinuityOfCareDocumentOperations.validateContinuityOfCareDocumentPayersSection(this, diagnostics, context);
-  }
+		return ContinuityOfCareDocumentOperations.validateContinuityOfCareDocumentPayersSection(
+			this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	public boolean validateContinuityOfCareDocumentPurposeSection(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-    return ContinuityOfCareDocumentOperations.validateContinuityOfCareDocumentPurposeSection(this, diagnostics, context);
-  }
+		return ContinuityOfCareDocumentOperations.validateContinuityOfCareDocumentPurposeSection(
+			this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	public ProblemSection getProblemSection() {
-    return ContinuityOfCareDocumentOperations.getProblemSection(this);
-  }
+		return ContinuityOfCareDocumentOperations.getProblemSection(this);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	public FamilyHistorySection getFamilyHistorySection() {
-    return ContinuityOfCareDocumentOperations.getFamilyHistorySection(this);
-  }
+		return ContinuityOfCareDocumentOperations.getFamilyHistorySection(this);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	public SocialHistorySection getSocialHistorySection() {
-    return ContinuityOfCareDocumentOperations.getSocialHistorySection(this);
-  }
+		return ContinuityOfCareDocumentOperations.getSocialHistorySection(this);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	public AlertsSection getAlertsSection() {
-    return ContinuityOfCareDocumentOperations.getAlertsSection(this);
-  }
+		return ContinuityOfCareDocumentOperations.getAlertsSection(this);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	public MedicationsSection getMedicationsSection() {
-    return ContinuityOfCareDocumentOperations.getMedicationsSection(this);
-  }
+		return ContinuityOfCareDocumentOperations.getMedicationsSection(this);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	public ResultsSection getResultsSection() {
-    return ContinuityOfCareDocumentOperations.getResultsSection(this);
-  }
+		return ContinuityOfCareDocumentOperations.getResultsSection(this);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	public ProceduresSection getProceduresSection() {
-    return ContinuityOfCareDocumentOperations.getProceduresSection(this);
-  }
+		return ContinuityOfCareDocumentOperations.getProceduresSection(this);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	public EncountersSection getEncountersSection() {
-    return ContinuityOfCareDocumentOperations.getEncountersSection(this);
-  }
+		return ContinuityOfCareDocumentOperations.getEncountersSection(this);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	public PlanOfCareSection getPlanOfCareSection() {
-    return ContinuityOfCareDocumentOperations.getPlanOfCareSection(this);
-  }
+		return ContinuityOfCareDocumentOperations.getPlanOfCareSection(this);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	public ImmunizationsSection getImmunizationsSection() {
-    return ContinuityOfCareDocumentOperations.getImmunizationsSection(this);
-  }
+		return ContinuityOfCareDocumentOperations.getImmunizationsSection(this);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	public VitalSignsSection getVitalSignsSection() {
-    return ContinuityOfCareDocumentOperations.getVitalSignsSection(this);
-  }
+		return ContinuityOfCareDocumentOperations.getVitalSignsSection(this);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	public MedicalEquipmentSection getMedicalEquipmentSection() {
-    return ContinuityOfCareDocumentOperations.getMedicalEquipmentSection(this);
-  }
+		return ContinuityOfCareDocumentOperations.getMedicalEquipmentSection(this);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	public FunctionalStatusSection getFunctionalStatusSection() {
-    return ContinuityOfCareDocumentOperations.getFunctionalStatusSection(this);
-  }
+		return ContinuityOfCareDocumentOperations.getFunctionalStatusSection(this);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	public AdvanceDirectivesSection getAdvanceDirectivesSection() {
-    return ContinuityOfCareDocumentOperations.getAdvanceDirectivesSection(this);
-  }
+		return ContinuityOfCareDocumentOperations.getAdvanceDirectivesSection(this);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	public PayersSection getPayersSection() {
-    return ContinuityOfCareDocumentOperations.getPayersSection(this);
-  }
+		return ContinuityOfCareDocumentOperations.getPayersSection(this);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	public PurposeSection getPurposeSection() {
-    return ContinuityOfCareDocumentOperations.getPurposeSection(this);
-  }
+		return ContinuityOfCareDocumentOperations.getPurposeSection(this);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	public ContinuityOfCareDocument init() {
-      return Initializer.Util.init(this);
-  }
+		return Initializer.Util.init(this);
+	}
 
-  /**
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    public ContinuityOfCareDocument init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-        Initializer.Util.init(this, initializers);
-        return this;
-    }
+	/**
+	   * <!-- begin-user-doc -->
+	   * <!-- end-user-doc -->
+	   * @generated
+	   */
+	public ContinuityOfCareDocument init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+		Initializer.Util.init(this, initializers);
+		return this;
+	}
 } // ContinuityOfCareDocumentImpl

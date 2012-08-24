@@ -23,7 +23,6 @@ import org.openhealthtools.mdht.uml.cda.ccd.PurposeActivity;
 import org.openhealthtools.mdht.uml.cda.ccd.PurposeSection;
 import org.openhealthtools.mdht.uml.cda.ccd.operations.PurposeSectionOperations;
 import org.openhealthtools.mdht.uml.cda.impl.SectionImpl;
-import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
 
 /**
  * <!-- begin-user-doc -->
@@ -36,94 +35,94 @@ import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
  */
 public class PurposeSectionImpl extends SectionImpl implements PurposeSection {
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	protected PurposeSectionImpl() {
-    super();
-  }
+		super();
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	@Override
 	protected EClass eStaticClass() {
-    return CCDPackage.Literals.PURPOSE_SECTION;
-  }
+		return CCDPackage.Literals.PURPOSE_SECTION;
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	public boolean validatePurposeSectionTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return PurposeSectionOperations.validatePurposeSectionTemplateId(this, diagnostics, context);
-  }
+		return PurposeSectionOperations.validatePurposeSectionTemplateId(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	public boolean validatePurposeSectionCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return PurposeSectionOperations.validatePurposeSectionCode(this, diagnostics, context);
-  }
+		return PurposeSectionOperations.validatePurposeSectionCode(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	public boolean validatePurposeSectionTitle(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return PurposeSectionOperations.validatePurposeSectionTitle(this, diagnostics, context);
-  }
+		return PurposeSectionOperations.validatePurposeSectionTitle(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	public boolean validatePurposeSectionText(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return PurposeSectionOperations.validatePurposeSectionText(this, diagnostics, context);
-  }
+		return PurposeSectionOperations.validatePurposeSectionText(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	public boolean validatePurposeSectionPurposeActivity(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return PurposeSectionOperations.validatePurposeSectionPurposeActivity(this, diagnostics, context);
-  }
+		return PurposeSectionOperations.validatePurposeSectionPurposeActivity(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	public EList<PurposeActivity> getPurposeActivities() {
-    return PurposeSectionOperations.getPurposeActivities(this);
-  }
+		return PurposeSectionOperations.getPurposeActivities(this);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	public PurposeSection init() {
-      return Initializer.Util.init(this);
-  }
+		return Initializer.Util.init(this);
+	}
 
-  /**
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    public PurposeSection init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-        Initializer.Util.init(this, initializers);
-        return this;
-    }
+	/**
+	   * <!-- begin-user-doc -->
+	   * <!-- end-user-doc -->
+	   * @generated
+	   */
+	public PurposeSection init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+		Initializer.Util.init(this, initializers);
+		return this;
+	}
 } // PurposeSectionImpl

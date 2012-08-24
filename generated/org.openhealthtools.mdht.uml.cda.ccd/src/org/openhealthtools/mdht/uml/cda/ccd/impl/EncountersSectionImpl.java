@@ -23,7 +23,6 @@ import org.openhealthtools.mdht.uml.cda.ccd.EncountersActivity;
 import org.openhealthtools.mdht.uml.cda.ccd.EncountersSection;
 import org.openhealthtools.mdht.uml.cda.ccd.operations.EncountersSectionOperations;
 import org.openhealthtools.mdht.uml.cda.impl.SectionImpl;
-import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
 
 /**
  * <!-- begin-user-doc -->
@@ -36,94 +35,94 @@ import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
  */
 public class EncountersSectionImpl extends SectionImpl implements EncountersSection {
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	protected EncountersSectionImpl() {
-    super();
-  }
+		super();
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	@Override
 	protected EClass eStaticClass() {
-    return CCDPackage.Literals.ENCOUNTERS_SECTION;
-  }
+		return CCDPackage.Literals.ENCOUNTERS_SECTION;
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	public boolean validateEncountersSectionTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return EncountersSectionOperations.validateEncountersSectionTemplateId(this, diagnostics, context);
-  }
+		return EncountersSectionOperations.validateEncountersSectionTemplateId(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	public boolean validateEncountersSectionCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return EncountersSectionOperations.validateEncountersSectionCode(this, diagnostics, context);
-  }
+		return EncountersSectionOperations.validateEncountersSectionCode(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	public boolean validateEncountersSectionTitle(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return EncountersSectionOperations.validateEncountersSectionTitle(this, diagnostics, context);
-  }
+		return EncountersSectionOperations.validateEncountersSectionTitle(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	public boolean validateEncountersSectionText(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return EncountersSectionOperations.validateEncountersSectionText(this, diagnostics, context);
-  }
+		return EncountersSectionOperations.validateEncountersSectionText(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	public boolean validateEncountersSectionEncountersActivity(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return EncountersSectionOperations.validateEncountersSectionEncountersActivity(this, diagnostics, context);
-  }
+		return EncountersSectionOperations.validateEncountersSectionEncountersActivity(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	public EList<EncountersActivity> getEncountersActivities() {
-    return EncountersSectionOperations.getEncountersActivities(this);
-  }
+		return EncountersSectionOperations.getEncountersActivities(this);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	public EncountersSection init() {
-      return Initializer.Util.init(this);
-  }
+		return Initializer.Util.init(this);
+	}
 
-  /**
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    public EncountersSection init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-        Initializer.Util.init(this, initializers);
-        return this;
-    }
+	/**
+	   * <!-- begin-user-doc -->
+	   * <!-- end-user-doc -->
+	   * @generated
+	   */
+	public EncountersSection init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+		Initializer.Util.init(this, initializers);
+		return this;
+	}
 } // EncountersSectionImpl

@@ -21,7 +21,6 @@ import org.openhealthtools.mdht.uml.cda.ccd.CCDPackage;
 import org.openhealthtools.mdht.uml.cda.ccd.MedicationSeriesNumberObservation;
 import org.openhealthtools.mdht.uml.cda.ccd.operations.MedicationSeriesNumberObservationOperations;
 import org.openhealthtools.mdht.uml.cda.impl.ObservationImpl;
-import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
 
 /**
  * <!-- begin-user-doc -->
@@ -34,100 +33,106 @@ import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
  */
 public class MedicationSeriesNumberObservationImpl extends ObservationImpl implements MedicationSeriesNumberObservation {
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	protected MedicationSeriesNumberObservationImpl() {
-    super();
-  }
+		super();
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	@Override
 	protected EClass eStaticClass() {
-    return CCDPackage.Literals.MEDICATION_SERIES_NUMBER_OBSERVATION;
-  }
+		return CCDPackage.Literals.MEDICATION_SERIES_NUMBER_OBSERVATION;
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	public boolean validateMedicationSeriesNumberObservationTemplateId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-    return MedicationSeriesNumberObservationOperations.validateMedicationSeriesNumberObservationTemplateId(this, diagnostics, context);
-  }
+		return MedicationSeriesNumberObservationOperations.validateMedicationSeriesNumberObservationTemplateId(
+			this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	public boolean validateMedicationSeriesNumberObservationClassCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-    return MedicationSeriesNumberObservationOperations.validateMedicationSeriesNumberObservationClassCode(this, diagnostics, context);
-  }
+		return MedicationSeriesNumberObservationOperations.validateMedicationSeriesNumberObservationClassCode(
+			this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	public boolean validateMedicationSeriesNumberObservationMoodCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-    return MedicationSeriesNumberObservationOperations.validateMedicationSeriesNumberObservationMoodCode(this, diagnostics, context);
-  }
+		return MedicationSeriesNumberObservationOperations.validateMedicationSeriesNumberObservationMoodCode(
+			this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	public boolean validateMedicationSeriesNumberObservationStatusCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-    return MedicationSeriesNumberObservationOperations.validateMedicationSeriesNumberObservationStatusCode(this, diagnostics, context);
-  }
+		return MedicationSeriesNumberObservationOperations.validateMedicationSeriesNumberObservationStatusCode(
+			this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	public boolean validateMedicationSeriesNumberObservationCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-    return MedicationSeriesNumberObservationOperations.validateMedicationSeriesNumberObservationCode(this, diagnostics, context);
-  }
+		return MedicationSeriesNumberObservationOperations.validateMedicationSeriesNumberObservationCode(
+			this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	public boolean validateMedicationSeriesNumberObservationValue(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-    return MedicationSeriesNumberObservationOperations.validateMedicationSeriesNumberObservationValue(this, diagnostics, context);
-  }
+		return MedicationSeriesNumberObservationOperations.validateMedicationSeriesNumberObservationValue(
+			this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	public MedicationSeriesNumberObservation init() {
-      return Initializer.Util.init(this);
-  }
+		return Initializer.Util.init(this);
+	}
 
-  /**
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    public MedicationSeriesNumberObservation init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-        Initializer.Util.init(this, initializers);
-        return this;
-    }
+	/**
+	   * <!-- begin-user-doc -->
+	   * <!-- end-user-doc -->
+	   * @generated
+	   */
+	public MedicationSeriesNumberObservation init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+		Initializer.Util.init(this, initializers);
+		return this;
+	}
 } // MedicationSeriesNumberObservationImpl

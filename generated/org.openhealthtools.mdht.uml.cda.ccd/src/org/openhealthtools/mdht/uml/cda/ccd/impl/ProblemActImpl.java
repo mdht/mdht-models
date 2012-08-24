@@ -22,7 +22,6 @@ import org.openhealthtools.mdht.uml.cda.ccd.EpisodeObservation;
 import org.openhealthtools.mdht.uml.cda.ccd.ProblemAct;
 import org.openhealthtools.mdht.uml.cda.ccd.operations.ProblemActOperations;
 import org.openhealthtools.mdht.uml.cda.impl.ActImpl;
-import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
 
 /**
  * <!-- begin-user-doc -->
@@ -35,157 +34,157 @@ import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
  */
 public class ProblemActImpl extends ActImpl implements ProblemAct {
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	protected ProblemActImpl() {
-    super();
-  }
+		super();
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	@Override
 	protected EClass eStaticClass() {
-    return CCDPackage.Literals.PROBLEM_ACT;
-  }
+		return CCDPackage.Literals.PROBLEM_ACT;
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	public boolean validateProblemActEntryRelationshipRequired(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return ProblemActOperations.validateProblemActEntryRelationshipRequired(this, diagnostics, context);
-  }
+		return ProblemActOperations.validateProblemActEntryRelationshipRequired(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	public boolean validateProblemActSubjectOfTarget(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return ProblemActOperations.validateProblemActSubjectOfTarget(this, diagnostics, context);
-  }
+		return ProblemActOperations.validateProblemActSubjectOfTarget(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	public boolean validateProblemActContainsProblemObservation(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return ProblemActOperations.validateProblemActContainsProblemObservation(this, diagnostics, context);
-  }
+		return ProblemActOperations.validateProblemActContainsProblemObservation(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	public boolean validateProblemActContainsAlertObservation(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return ProblemActOperations.validateProblemActContainsAlertObservation(this, diagnostics, context);
-  }
+		return ProblemActOperations.validateProblemActContainsAlertObservation(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	public boolean validateProblemActContainsPatientAwareness(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return ProblemActOperations.validateProblemActContainsPatientAwareness(this, diagnostics, context);
-  }
+		return ProblemActOperations.validateProblemActContainsPatientAwareness(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	public boolean validateProblemActTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return ProblemActOperations.validateProblemActTemplateId(this, diagnostics, context);
-  }
+		return ProblemActOperations.validateProblemActTemplateId(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	public boolean validateProblemActClassCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return ProblemActOperations.validateProblemActClassCode(this, diagnostics, context);
-  }
+		return ProblemActOperations.validateProblemActClassCode(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	public boolean validateProblemActMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return ProblemActOperations.validateProblemActMoodCode(this, diagnostics, context);
-  }
+		return ProblemActOperations.validateProblemActMoodCode(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	public boolean validateProblemActId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return ProblemActOperations.validateProblemActId(this, diagnostics, context);
-  }
+		return ProblemActOperations.validateProblemActId(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	public boolean validateProblemActCodeNullFlavor(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return ProblemActOperations.validateProblemActCodeNullFlavor(this, diagnostics, context);
-  }
+		return ProblemActOperations.validateProblemActCodeNullFlavor(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	public boolean validateProblemActEffectiveTime(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return ProblemActOperations.validateProblemActEffectiveTime(this, diagnostics, context);
-  }
+		return ProblemActOperations.validateProblemActEffectiveTime(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	public boolean validateProblemActEpisodeObservation(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return ProblemActOperations.validateProblemActEpisodeObservation(this, diagnostics, context);
-  }
+		return ProblemActOperations.validateProblemActEpisodeObservation(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	public EpisodeObservation getEpisodeObservation() {
-    return ProblemActOperations.getEpisodeObservation(this);
-  }
+		return ProblemActOperations.getEpisodeObservation(this);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	public ProblemAct init() {
-      return Initializer.Util.init(this);
-  }
+		return Initializer.Util.init(this);
+	}
 
-  /**
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    public ProblemAct init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-        Initializer.Util.init(this, initializers);
-        return this;
-    }
+	/**
+	   * <!-- begin-user-doc -->
+	   * <!-- end-user-doc -->
+	   * @generated
+	   */
+	public ProblemAct init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+		Initializer.Util.init(this, initializers);
+		return this;
+	}
 } // ProblemActImpl

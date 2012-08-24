@@ -100,883 +100,952 @@ import org.openhealthtools.mdht.uml.cda.ccd.VitalSignsSection;
  */
 public class CCDFactoryImpl extends EFactoryImpl implements CCDFactory {
 	/**
-   * Creates the default factory implementation.
-   * <!-- begin-user-doc -->
+	* Creates the default factory implementation.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	public static CCDFactory init() {
-    try
-    {
-      CCDFactory theCCDFactory = (CCDFactory)EPackage.Registry.INSTANCE.getEFactory("http://www.openhealthtools.org/mdht/uml/cda/ccd"); 
-      if (theCCDFactory != null)
-      {
-        return theCCDFactory;
-      }
-    }
-    catch (Exception exception)
-    {
-      EcorePlugin.INSTANCE.log(exception);
-    }
-    return new CCDFactoryImpl();
-  }
+		try {
+			CCDFactory theCCDFactory = (CCDFactory) EPackage.Registry.INSTANCE.getEFactory("http://www.openhealthtools.org/mdht/uml/cda/ccd");
+			if (theCCDFactory != null) {
+				return theCCDFactory;
+			}
+		} catch (Exception exception) {
+			EcorePlugin.INSTANCE.log(exception);
+		}
+		return new CCDFactoryImpl();
+	}
 
 	/**
-   * Creates an instance of the factory.
-   * <!-- begin-user-doc -->
+	* Creates an instance of the factory.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	public CCDFactoryImpl() {
-    super();
-  }
+		super();
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	@Override
 	public EObject create(EClass eClass) {
-    switch (eClass.getClassifierID())
-    {
-      case CCDPackage.MEDICATIONS_SECTION: return createMedicationsSection();
-      case CCDPackage.MEDICATION_ACTIVITY: return createMedicationActivity();
-      case CCDPackage.MEDICATION_SERIES_NUMBER_OBSERVATION: return createMedicationSeriesNumberObservation();
-      case CCDPackage.MEDICATION_STATUS_OBSERVATION: return createMedicationStatusObservation();
-      case CCDPackage.STATUS_OBSERVATION: return createStatusObservation();
-      case CCDPackage.PATIENT_INSTRUCTION: return createPatientInstruction();
-      case CCDPackage.REACTION_OBSERVATION: return createReactionObservation();
-      case CCDPackage.SEVERITY_OBSERVATION: return createSeverityObservation();
-      case CCDPackage.PRODUCT_INSTANCE: return createProductInstance();
-      case CCDPackage.SUPPLY_ACTIVITY: return createSupplyActivity();
-      case CCDPackage.FULFILLMENT_INSTRUCTION: return createFulfillmentInstruction();
-      case CCDPackage.CONTINUITY_OF_CARE_DOCUMENT: return createContinuityOfCareDocument();
-      case CCDPackage.PROBLEM_SECTION: return createProblemSection();
-      case CCDPackage.PROBLEM_ACT: return createProblemAct();
-      case CCDPackage.EPISODE_OBSERVATION: return createEpisodeObservation();
-      case CCDPackage.FAMILY_HISTORY_SECTION: return createFamilyHistorySection();
-      case CCDPackage.FAMILY_HISTORY_ORGANIZER: return createFamilyHistoryOrganizer();
-      case CCDPackage.FAMILY_HISTORY_OBSERVATION: return createFamilyHistoryObservation();
-      case CCDPackage.AGE_OBSERVATION: return createAgeObservation();
-      case CCDPackage.PROBLEM_STATUS_OBSERVATION: return createProblemStatusObservation();
-      case CCDPackage.SOCIAL_HISTORY_SECTION: return createSocialHistorySection();
-      case CCDPackage.SOCIAL_HISTORY_OBSERVATION: return createSocialHistoryObservation();
-      case CCDPackage.SOCIAL_HISTORY_STATUS_OBSERVATION: return createSocialHistoryStatusObservation();
-      case CCDPackage.ALERTS_SECTION: return createAlertsSection();
-      case CCDPackage.RESULTS_SECTION: return createResultsSection();
-      case CCDPackage.RESULT_ORGANIZER: return createResultOrganizer();
-      case CCDPackage.RESULT_OBSERVATION: return createResultObservation();
-      case CCDPackage.PROCEDURES_SECTION: return createProceduresSection();
-      case CCDPackage.ENCOUNTERS_SECTION: return createEncountersSection();
-      case CCDPackage.ENCOUNTERS_ACTIVITY: return createEncountersActivity();
-      case CCDPackage.PLAN_OF_CARE_SECTION: return createPlanOfCareSection();
-      case CCDPackage.PLAN_OF_CARE_ACTIVITY_ACT: return createPlanOfCareActivityAct();
-      case CCDPackage.PLAN_OF_CARE_ACTIVITY_ENCOUNTER: return createPlanOfCareActivityEncounter();
-      case CCDPackage.PLAN_OF_CARE_ACTIVITY_OBSERVATION: return createPlanOfCareActivityObservation();
-      case CCDPackage.PLAN_OF_CARE_ACTIVITY_PROCEDURE: return createPlanOfCareActivityProcedure();
-      case CCDPackage.PLAN_OF_CARE_ACTIVITY_SUBSTANCE_ADMINISTRATION: return createPlanOfCareActivitySubstanceAdministration();
-      case CCDPackage.PLAN_OF_CARE_ACTIVITY_SUPPLY: return createPlanOfCareActivitySupply();
-      case CCDPackage.IMMUNIZATIONS_SECTION: return createImmunizationsSection();
-      case CCDPackage.VITAL_SIGNS_SECTION: return createVitalSignsSection();
-      case CCDPackage.VITAL_SIGNS_ORGANIZER: return createVitalSignsOrganizer();
-      case CCDPackage.MEDICAL_EQUIPMENT_SECTION: return createMedicalEquipmentSection();
-      case CCDPackage.FUNCTIONAL_STATUS_SECTION: return createFunctionalStatusSection();
-      case CCDPackage.ADVANCE_DIRECTIVES_SECTION: return createAdvanceDirectivesSection();
-      case CCDPackage.ADVANCE_DIRECTIVE_OBSERVATION: return createAdvanceDirectiveObservation();
-      case CCDPackage.ADVANCE_DIRECTIVE_STATUS_OBSERVATION: return createAdvanceDirectiveStatusObservation();
-      case CCDPackage.PAYERS_SECTION: return createPayersSection();
-      case CCDPackage.COVERAGE_ACTIVITY: return createCoverageActivity();
-      case CCDPackage.POLICY_ACTIVITY: return createPolicyActivity();
-      case CCDPackage.PURPOSE_SECTION: return createPurposeSection();
-      case CCDPackage.PURPOSE_ACTIVITY: return createPurposeActivity();
-      case CCDPackage.PROBLEM_OBSERVATION: return createProblemObservation();
-      case CCDPackage.PROBLEM_HEALTH_STATUS_OBSERVATION: return createProblemHealthStatusObservation();
-      case CCDPackage.PATIENT_AWARENESS: return createPatientAwareness();
-      case CCDPackage.ALERT_OBSERVATION: return createAlertObservation();
-      case CCDPackage.ALERT_STATUS_OBSERVATION: return createAlertStatusObservation();
-      case CCDPackage.CAUSE_OF_DEATH_OBSERVATION: return createCauseOfDeathObservation();
-      case CCDPackage.ENCOUNTER_LOCATION: return createEncounterLocation();
-      case CCDPackage.PRODUCT: return createProduct();
-      case CCDPackage.ADVANCE_DIRECTIVE_VERIFICATION: return createAdvanceDirectiveVerification();
-      case CCDPackage.AUTHORIZATION_ACTIVITY: return createAuthorizationActivity();
-      case CCDPackage.FUNCTIONAL_STATUS_OBSERVATION: return createFunctionalStatusObservation();
-      case CCDPackage.PROCEDURE_ACTIVITY_ACT: return createProcedureActivityAct();
-      case CCDPackage.PROCEDURE_ACTIVITY_OBSERVATION: return createProcedureActivityObservation();
-      case CCDPackage.PROCEDURE_ACTIVITY_PROCEDURE: return createProcedureActivityProcedure();
-      case CCDPackage.PAYER_ENTITY: return createPayerEntity();
-      case CCDPackage.COVERED_PARTY: return createCoveredParty();
-      case CCDPackage.POLICY_SUBSCRIBER: return createPolicySubscriber();
-      case CCDPackage.COVERAGE_PLAN_DESCRIPTION: return createCoveragePlanDescription();
-      case CCDPackage.SUPPORT_PARTICIPANT: return createSupportParticipant();
-      case CCDPackage.SUPPORT_GUARDIAN: return createSupportGuardian();
-      case CCDPackage.COMMENT: return createComment();
-      case CCDPackage.ADVANCE_DIRECTIVE_REFERENCE: return createAdvanceDirectiveReference();
-      case CCDPackage.FAMILY_HISTORY_CAUSE_OF_DEATH_OBSERVATION: return createFamilyHistoryCauseOfDeathObservation();
-      case CCDPackage.CCD_REGISTRY_DELEGATE: return createCCDRegistryDelegate();
-      default:
-        throw new IllegalArgumentException("The class '" + eClass.getName() + "' is not a valid classifier");
-    }
-  }
+		switch (eClass.getClassifierID()) {
+			case CCDPackage.MEDICATIONS_SECTION:
+				return createMedicationsSection();
+			case CCDPackage.MEDICATION_ACTIVITY:
+				return createMedicationActivity();
+			case CCDPackage.MEDICATION_SERIES_NUMBER_OBSERVATION:
+				return createMedicationSeriesNumberObservation();
+			case CCDPackage.MEDICATION_STATUS_OBSERVATION:
+				return createMedicationStatusObservation();
+			case CCDPackage.STATUS_OBSERVATION:
+				return createStatusObservation();
+			case CCDPackage.PATIENT_INSTRUCTION:
+				return createPatientInstruction();
+			case CCDPackage.REACTION_OBSERVATION:
+				return createReactionObservation();
+			case CCDPackage.SEVERITY_OBSERVATION:
+				return createSeverityObservation();
+			case CCDPackage.PRODUCT_INSTANCE:
+				return createProductInstance();
+			case CCDPackage.SUPPLY_ACTIVITY:
+				return createSupplyActivity();
+			case CCDPackage.FULFILLMENT_INSTRUCTION:
+				return createFulfillmentInstruction();
+			case CCDPackage.CONTINUITY_OF_CARE_DOCUMENT:
+				return createContinuityOfCareDocument();
+			case CCDPackage.PROBLEM_SECTION:
+				return createProblemSection();
+			case CCDPackage.PROBLEM_ACT:
+				return createProblemAct();
+			case CCDPackage.EPISODE_OBSERVATION:
+				return createEpisodeObservation();
+			case CCDPackage.FAMILY_HISTORY_SECTION:
+				return createFamilyHistorySection();
+			case CCDPackage.FAMILY_HISTORY_ORGANIZER:
+				return createFamilyHistoryOrganizer();
+			case CCDPackage.FAMILY_HISTORY_OBSERVATION:
+				return createFamilyHistoryObservation();
+			case CCDPackage.AGE_OBSERVATION:
+				return createAgeObservation();
+			case CCDPackage.PROBLEM_STATUS_OBSERVATION:
+				return createProblemStatusObservation();
+			case CCDPackage.SOCIAL_HISTORY_SECTION:
+				return createSocialHistorySection();
+			case CCDPackage.SOCIAL_HISTORY_OBSERVATION:
+				return createSocialHistoryObservation();
+			case CCDPackage.SOCIAL_HISTORY_STATUS_OBSERVATION:
+				return createSocialHistoryStatusObservation();
+			case CCDPackage.ALERTS_SECTION:
+				return createAlertsSection();
+			case CCDPackage.RESULTS_SECTION:
+				return createResultsSection();
+			case CCDPackage.RESULT_ORGANIZER:
+				return createResultOrganizer();
+			case CCDPackage.RESULT_OBSERVATION:
+				return createResultObservation();
+			case CCDPackage.PROCEDURES_SECTION:
+				return createProceduresSection();
+			case CCDPackage.ENCOUNTERS_SECTION:
+				return createEncountersSection();
+			case CCDPackage.ENCOUNTERS_ACTIVITY:
+				return createEncountersActivity();
+			case CCDPackage.PLAN_OF_CARE_SECTION:
+				return createPlanOfCareSection();
+			case CCDPackage.PLAN_OF_CARE_ACTIVITY_ACT:
+				return createPlanOfCareActivityAct();
+			case CCDPackage.PLAN_OF_CARE_ACTIVITY_ENCOUNTER:
+				return createPlanOfCareActivityEncounter();
+			case CCDPackage.PLAN_OF_CARE_ACTIVITY_OBSERVATION:
+				return createPlanOfCareActivityObservation();
+			case CCDPackage.PLAN_OF_CARE_ACTIVITY_PROCEDURE:
+				return createPlanOfCareActivityProcedure();
+			case CCDPackage.PLAN_OF_CARE_ACTIVITY_SUBSTANCE_ADMINISTRATION:
+				return createPlanOfCareActivitySubstanceAdministration();
+			case CCDPackage.PLAN_OF_CARE_ACTIVITY_SUPPLY:
+				return createPlanOfCareActivitySupply();
+			case CCDPackage.IMMUNIZATIONS_SECTION:
+				return createImmunizationsSection();
+			case CCDPackage.VITAL_SIGNS_SECTION:
+				return createVitalSignsSection();
+			case CCDPackage.VITAL_SIGNS_ORGANIZER:
+				return createVitalSignsOrganizer();
+			case CCDPackage.MEDICAL_EQUIPMENT_SECTION:
+				return createMedicalEquipmentSection();
+			case CCDPackage.FUNCTIONAL_STATUS_SECTION:
+				return createFunctionalStatusSection();
+			case CCDPackage.ADVANCE_DIRECTIVES_SECTION:
+				return createAdvanceDirectivesSection();
+			case CCDPackage.ADVANCE_DIRECTIVE_OBSERVATION:
+				return createAdvanceDirectiveObservation();
+			case CCDPackage.ADVANCE_DIRECTIVE_STATUS_OBSERVATION:
+				return createAdvanceDirectiveStatusObservation();
+			case CCDPackage.PAYERS_SECTION:
+				return createPayersSection();
+			case CCDPackage.COVERAGE_ACTIVITY:
+				return createCoverageActivity();
+			case CCDPackage.POLICY_ACTIVITY:
+				return createPolicyActivity();
+			case CCDPackage.PURPOSE_SECTION:
+				return createPurposeSection();
+			case CCDPackage.PURPOSE_ACTIVITY:
+				return createPurposeActivity();
+			case CCDPackage.PROBLEM_OBSERVATION:
+				return createProblemObservation();
+			case CCDPackage.PROBLEM_HEALTH_STATUS_OBSERVATION:
+				return createProblemHealthStatusObservation();
+			case CCDPackage.PATIENT_AWARENESS:
+				return createPatientAwareness();
+			case CCDPackage.ALERT_OBSERVATION:
+				return createAlertObservation();
+			case CCDPackage.ALERT_STATUS_OBSERVATION:
+				return createAlertStatusObservation();
+			case CCDPackage.CAUSE_OF_DEATH_OBSERVATION:
+				return createCauseOfDeathObservation();
+			case CCDPackage.ENCOUNTER_LOCATION:
+				return createEncounterLocation();
+			case CCDPackage.PRODUCT:
+				return createProduct();
+			case CCDPackage.ADVANCE_DIRECTIVE_VERIFICATION:
+				return createAdvanceDirectiveVerification();
+			case CCDPackage.AUTHORIZATION_ACTIVITY:
+				return createAuthorizationActivity();
+			case CCDPackage.FUNCTIONAL_STATUS_OBSERVATION:
+				return createFunctionalStatusObservation();
+			case CCDPackage.PROCEDURE_ACTIVITY_ACT:
+				return createProcedureActivityAct();
+			case CCDPackage.PROCEDURE_ACTIVITY_OBSERVATION:
+				return createProcedureActivityObservation();
+			case CCDPackage.PROCEDURE_ACTIVITY_PROCEDURE:
+				return createProcedureActivityProcedure();
+			case CCDPackage.PAYER_ENTITY:
+				return createPayerEntity();
+			case CCDPackage.COVERED_PARTY:
+				return createCoveredParty();
+			case CCDPackage.POLICY_SUBSCRIBER:
+				return createPolicySubscriber();
+			case CCDPackage.COVERAGE_PLAN_DESCRIPTION:
+				return createCoveragePlanDescription();
+			case CCDPackage.SUPPORT_PARTICIPANT:
+				return createSupportParticipant();
+			case CCDPackage.SUPPORT_GUARDIAN:
+				return createSupportGuardian();
+			case CCDPackage.COMMENT:
+				return createComment();
+			case CCDPackage.ADVANCE_DIRECTIVE_REFERENCE:
+				return createAdvanceDirectiveReference();
+			case CCDPackage.FAMILY_HISTORY_CAUSE_OF_DEATH_OBSERVATION:
+				return createFamilyHistoryCauseOfDeathObservation();
+			case CCDPackage.CCD_REGISTRY_DELEGATE:
+				return createCCDRegistryDelegate();
+			default:
+				throw new IllegalArgumentException("The class '" + eClass.getName() + "' is not a valid classifier");
+		}
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	public MedicationsSection createMedicationsSection() {
-    MedicationsSectionImpl medicationsSection = new MedicationsSectionImpl();
-    return medicationsSection;
-  }
+		MedicationsSectionImpl medicationsSection = new MedicationsSectionImpl();
+		return medicationsSection;
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	public ContinuityOfCareDocument createContinuityOfCareDocument() {
-    ContinuityOfCareDocumentImpl continuityOfCareDocument = new ContinuityOfCareDocumentImpl();
-    return continuityOfCareDocument;
-  }
+		ContinuityOfCareDocumentImpl continuityOfCareDocument = new ContinuityOfCareDocumentImpl();
+		return continuityOfCareDocument;
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	public ProblemAct createProblemAct() {
-    ProblemActImpl problemAct = new ProblemActImpl();
-    return problemAct;
-  }
+		ProblemActImpl problemAct = new ProblemActImpl();
+		return problemAct;
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	public ProblemObservation createProblemObservation() {
-    ProblemObservationImpl problemObservation = new ProblemObservationImpl();
-    return problemObservation;
-  }
+		ProblemObservationImpl problemObservation = new ProblemObservationImpl();
+		return problemObservation;
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	public ProblemSection createProblemSection() {
-    ProblemSectionImpl problemSection = new ProblemSectionImpl();
-    return problemSection;
-  }
+		ProblemSectionImpl problemSection = new ProblemSectionImpl();
+		return problemSection;
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	public ProblemStatusObservation createProblemStatusObservation() {
-    ProblemStatusObservationImpl problemStatusObservation = new ProblemStatusObservationImpl();
-    return problemStatusObservation;
-  }
+		ProblemStatusObservationImpl problemStatusObservation = new ProblemStatusObservationImpl();
+		return problemStatusObservation;
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	public EpisodeObservation createEpisodeObservation() {
-    EpisodeObservationImpl episodeObservation = new EpisodeObservationImpl();
-    return episodeObservation;
-  }
+		EpisodeObservationImpl episodeObservation = new EpisodeObservationImpl();
+		return episodeObservation;
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	public PatientAwareness createPatientAwareness() {
-    PatientAwarenessImpl patientAwareness = new PatientAwarenessImpl();
-    return patientAwareness;
-  }
+		PatientAwarenessImpl patientAwareness = new PatientAwarenessImpl();
+		return patientAwareness;
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	public FamilyHistorySection createFamilyHistorySection() {
-    FamilyHistorySectionImpl familyHistorySection = new FamilyHistorySectionImpl();
-    return familyHistorySection;
-  }
+		FamilyHistorySectionImpl familyHistorySection = new FamilyHistorySectionImpl();
+		return familyHistorySection;
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	public FamilyHistoryObservation createFamilyHistoryObservation() {
-    FamilyHistoryObservationImpl familyHistoryObservation = new FamilyHistoryObservationImpl();
-    return familyHistoryObservation;
-  }
+		FamilyHistoryObservationImpl familyHistoryObservation = new FamilyHistoryObservationImpl();
+		return familyHistoryObservation;
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	public FamilyHistoryOrganizer createFamilyHistoryOrganizer() {
-    FamilyHistoryOrganizerImpl familyHistoryOrganizer = new FamilyHistoryOrganizerImpl();
-    return familyHistoryOrganizer;
-  }
+		FamilyHistoryOrganizerImpl familyHistoryOrganizer = new FamilyHistoryOrganizerImpl();
+		return familyHistoryOrganizer;
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	public ResultOrganizer createResultOrganizer() {
-    ResultOrganizerImpl resultOrganizer = new ResultOrganizerImpl();
-    return resultOrganizer;
-  }
+		ResultOrganizerImpl resultOrganizer = new ResultOrganizerImpl();
+		return resultOrganizer;
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	public ResultObservation createResultObservation() {
-    ResultObservationImpl resultObservation = new ResultObservationImpl();
-    return resultObservation;
-  }
+		ResultObservationImpl resultObservation = new ResultObservationImpl();
+		return resultObservation;
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	public SocialHistorySection createSocialHistorySection() {
-    SocialHistorySectionImpl socialHistorySection = new SocialHistorySectionImpl();
-    return socialHistorySection;
-  }
+		SocialHistorySectionImpl socialHistorySection = new SocialHistorySectionImpl();
+		return socialHistorySection;
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	public SocialHistoryObservation createSocialHistoryObservation() {
-    SocialHistoryObservationImpl socialHistoryObservation = new SocialHistoryObservationImpl();
-    return socialHistoryObservation;
-  }
+		SocialHistoryObservationImpl socialHistoryObservation = new SocialHistoryObservationImpl();
+		return socialHistoryObservation;
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	public SocialHistoryStatusObservation createSocialHistoryStatusObservation() {
-    SocialHistoryStatusObservationImpl socialHistoryStatusObservation = new SocialHistoryStatusObservationImpl();
-    return socialHistoryStatusObservation;
-  }
+		SocialHistoryStatusObservationImpl socialHistoryStatusObservation = new SocialHistoryStatusObservationImpl();
+		return socialHistoryStatusObservation;
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	public EncountersSection createEncountersSection() {
-    EncountersSectionImpl encountersSection = new EncountersSectionImpl();
-    return encountersSection;
-  }
+		EncountersSectionImpl encountersSection = new EncountersSectionImpl();
+		return encountersSection;
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	public ImmunizationsSection createImmunizationsSection() {
-    ImmunizationsSectionImpl immunizationsSection = new ImmunizationsSectionImpl();
-    return immunizationsSection;
-  }
+		ImmunizationsSectionImpl immunizationsSection = new ImmunizationsSectionImpl();
+		return immunizationsSection;
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	public EncountersActivity createEncountersActivity() {
-    EncountersActivityImpl encountersActivity = new EncountersActivityImpl();
-    return encountersActivity;
-  }
+		EncountersActivityImpl encountersActivity = new EncountersActivityImpl();
+		return encountersActivity;
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	public MedicationActivity createMedicationActivity() {
-    MedicationActivityImpl medicationActivity = new MedicationActivityImpl();
-    return medicationActivity;
-  }
+		MedicationActivityImpl medicationActivity = new MedicationActivityImpl();
+		return medicationActivity;
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	public SupplyActivity createSupplyActivity() {
-    SupplyActivityImpl supplyActivity = new SupplyActivityImpl();
-    return supplyActivity;
-  }
+		SupplyActivityImpl supplyActivity = new SupplyActivityImpl();
+		return supplyActivity;
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	public AlertsSection createAlertsSection() {
-    AlertsSectionImpl alertsSection = new AlertsSectionImpl();
-    return alertsSection;
-  }
+		AlertsSectionImpl alertsSection = new AlertsSectionImpl();
+		return alertsSection;
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	public AlertObservation createAlertObservation() {
-    AlertObservationImpl alertObservation = new AlertObservationImpl();
-    return alertObservation;
-  }
+		AlertObservationImpl alertObservation = new AlertObservationImpl();
+		return alertObservation;
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	public ReactionObservation createReactionObservation() {
-    ReactionObservationImpl reactionObservation = new ReactionObservationImpl();
-    return reactionObservation;
-  }
+		ReactionObservationImpl reactionObservation = new ReactionObservationImpl();
+		return reactionObservation;
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	public SeverityObservation createSeverityObservation() {
-    SeverityObservationImpl severityObservation = new SeverityObservationImpl();
-    return severityObservation;
-  }
+		SeverityObservationImpl severityObservation = new SeverityObservationImpl();
+		return severityObservation;
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	public AlertStatusObservation createAlertStatusObservation() {
-    AlertStatusObservationImpl alertStatusObservation = new AlertStatusObservationImpl();
-    return alertStatusObservation;
-  }
+		AlertStatusObservationImpl alertStatusObservation = new AlertStatusObservationImpl();
+		return alertStatusObservation;
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	public CauseOfDeathObservation createCauseOfDeathObservation() {
-    CauseOfDeathObservationImpl causeOfDeathObservation = new CauseOfDeathObservationImpl();
-    return causeOfDeathObservation;
-  }
+		CauseOfDeathObservationImpl causeOfDeathObservation = new CauseOfDeathObservationImpl();
+		return causeOfDeathObservation;
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	public ResultsSection createResultsSection() {
-    ResultsSectionImpl resultsSection = new ResultsSectionImpl();
-    return resultsSection;
-  }
+		ResultsSectionImpl resultsSection = new ResultsSectionImpl();
+		return resultsSection;
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	public MedicationSeriesNumberObservation createMedicationSeriesNumberObservation() {
-    MedicationSeriesNumberObservationImpl medicationSeriesNumberObservation = new MedicationSeriesNumberObservationImpl();
-    return medicationSeriesNumberObservation;
-  }
+		MedicationSeriesNumberObservationImpl medicationSeriesNumberObservation = new MedicationSeriesNumberObservationImpl();
+		return medicationSeriesNumberObservation;
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	public MedicationStatusObservation createMedicationStatusObservation() {
-    MedicationStatusObservationImpl medicationStatusObservation = new MedicationStatusObservationImpl();
-    return medicationStatusObservation;
-  }
+		MedicationStatusObservationImpl medicationStatusObservation = new MedicationStatusObservationImpl();
+		return medicationStatusObservation;
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	public EncounterLocation createEncounterLocation() {
-    EncounterLocationImpl encounterLocation = new EncounterLocationImpl();
-    return encounterLocation;
-  }
+		EncounterLocationImpl encounterLocation = new EncounterLocationImpl();
+		return encounterLocation;
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	public Product createProduct() {
-    ProductImpl product = new ProductImpl();
-    return product;
-  }
+		ProductImpl product = new ProductImpl();
+		return product;
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	public ProceduresSection createProceduresSection() {
-    ProceduresSectionImpl proceduresSection = new ProceduresSectionImpl();
-    return proceduresSection;
-  }
+		ProceduresSectionImpl proceduresSection = new ProceduresSectionImpl();
+		return proceduresSection;
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	public PlanOfCareSection createPlanOfCareSection() {
-    PlanOfCareSectionImpl planOfCareSection = new PlanOfCareSectionImpl();
-    return planOfCareSection;
-  }
+		PlanOfCareSectionImpl planOfCareSection = new PlanOfCareSectionImpl();
+		return planOfCareSection;
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	public VitalSignsSection createVitalSignsSection() {
-    VitalSignsSectionImpl vitalSignsSection = new VitalSignsSectionImpl();
-    return vitalSignsSection;
-  }
+		VitalSignsSectionImpl vitalSignsSection = new VitalSignsSectionImpl();
+		return vitalSignsSection;
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	public MedicalEquipmentSection createMedicalEquipmentSection() {
-    MedicalEquipmentSectionImpl medicalEquipmentSection = new MedicalEquipmentSectionImpl();
-    return medicalEquipmentSection;
-  }
+		MedicalEquipmentSectionImpl medicalEquipmentSection = new MedicalEquipmentSectionImpl();
+		return medicalEquipmentSection;
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	public FunctionalStatusSection createFunctionalStatusSection() {
-    FunctionalStatusSectionImpl functionalStatusSection = new FunctionalStatusSectionImpl();
-    return functionalStatusSection;
-  }
+		FunctionalStatusSectionImpl functionalStatusSection = new FunctionalStatusSectionImpl();
+		return functionalStatusSection;
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	public AdvanceDirectivesSection createAdvanceDirectivesSection() {
-    AdvanceDirectivesSectionImpl advanceDirectivesSection = new AdvanceDirectivesSectionImpl();
-    return advanceDirectivesSection;
-  }
+		AdvanceDirectivesSectionImpl advanceDirectivesSection = new AdvanceDirectivesSectionImpl();
+		return advanceDirectivesSection;
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	public PayersSection createPayersSection() {
-    PayersSectionImpl payersSection = new PayersSectionImpl();
-    return payersSection;
-  }
+		PayersSectionImpl payersSection = new PayersSectionImpl();
+		return payersSection;
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	public PurposeSection createPurposeSection() {
-    PurposeSectionImpl purposeSection = new PurposeSectionImpl();
-    return purposeSection;
-  }
+		PurposeSectionImpl purposeSection = new PurposeSectionImpl();
+		return purposeSection;
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	public PurposeActivity createPurposeActivity() {
-    PurposeActivityImpl purposeActivity = new PurposeActivityImpl();
-    return purposeActivity;
-  }
+		PurposeActivityImpl purposeActivity = new PurposeActivityImpl();
+		return purposeActivity;
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	public VitalSignsOrganizer createVitalSignsOrganizer() {
-    VitalSignsOrganizerImpl vitalSignsOrganizer = new VitalSignsOrganizerImpl();
-    return vitalSignsOrganizer;
-  }
+		VitalSignsOrganizerImpl vitalSignsOrganizer = new VitalSignsOrganizerImpl();
+		return vitalSignsOrganizer;
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	public AdvanceDirectiveObservation createAdvanceDirectiveObservation() {
-    AdvanceDirectiveObservationImpl advanceDirectiveObservation = new AdvanceDirectiveObservationImpl();
-    return advanceDirectiveObservation;
-  }
+		AdvanceDirectiveObservationImpl advanceDirectiveObservation = new AdvanceDirectiveObservationImpl();
+		return advanceDirectiveObservation;
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	public AdvanceDirectiveStatusObservation createAdvanceDirectiveStatusObservation() {
-    AdvanceDirectiveStatusObservationImpl advanceDirectiveStatusObservation = new AdvanceDirectiveStatusObservationImpl();
-    return advanceDirectiveStatusObservation;
-  }
+		AdvanceDirectiveStatusObservationImpl advanceDirectiveStatusObservation = new AdvanceDirectiveStatusObservationImpl();
+		return advanceDirectiveStatusObservation;
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	public AdvanceDirectiveVerification createAdvanceDirectiveVerification() {
-    AdvanceDirectiveVerificationImpl advanceDirectiveVerification = new AdvanceDirectiveVerificationImpl();
-    return advanceDirectiveVerification;
-  }
+		AdvanceDirectiveVerificationImpl advanceDirectiveVerification = new AdvanceDirectiveVerificationImpl();
+		return advanceDirectiveVerification;
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	public CoverageActivity createCoverageActivity() {
-    CoverageActivityImpl coverageActivity = new CoverageActivityImpl();
-    return coverageActivity;
-  }
+		CoverageActivityImpl coverageActivity = new CoverageActivityImpl();
+		return coverageActivity;
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	public PolicyActivity createPolicyActivity() {
-    PolicyActivityImpl policyActivity = new PolicyActivityImpl();
-    return policyActivity;
-  }
+		PolicyActivityImpl policyActivity = new PolicyActivityImpl();
+		return policyActivity;
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	public PayerEntity createPayerEntity() {
-    PayerEntityImpl payerEntity = new PayerEntityImpl();
-    return payerEntity;
-  }
+		PayerEntityImpl payerEntity = new PayerEntityImpl();
+		return payerEntity;
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	public CoveredParty createCoveredParty() {
-    CoveredPartyImpl coveredParty = new CoveredPartyImpl();
-    return coveredParty;
-  }
+		CoveredPartyImpl coveredParty = new CoveredPartyImpl();
+		return coveredParty;
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	public PolicySubscriber createPolicySubscriber() {
-    PolicySubscriberImpl policySubscriber = new PolicySubscriberImpl();
-    return policySubscriber;
-  }
+		PolicySubscriberImpl policySubscriber = new PolicySubscriberImpl();
+		return policySubscriber;
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	public AuthorizationActivity createAuthorizationActivity() {
-    AuthorizationActivityImpl authorizationActivity = new AuthorizationActivityImpl();
-    return authorizationActivity;
-  }
+		AuthorizationActivityImpl authorizationActivity = new AuthorizationActivityImpl();
+		return authorizationActivity;
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	public PlanOfCareActivityAct createPlanOfCareActivityAct() {
-    PlanOfCareActivityActImpl planOfCareActivityAct = new PlanOfCareActivityActImpl();
-    return planOfCareActivityAct;
-  }
+		PlanOfCareActivityActImpl planOfCareActivityAct = new PlanOfCareActivityActImpl();
+		return planOfCareActivityAct;
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	public PatientInstruction createPatientInstruction() {
-    PatientInstructionImpl patientInstruction = new PatientInstructionImpl();
-    return patientInstruction;
-  }
+		PatientInstructionImpl patientInstruction = new PatientInstructionImpl();
+		return patientInstruction;
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	public FulfillmentInstruction createFulfillmentInstruction() {
-    FulfillmentInstructionImpl fulfillmentInstruction = new FulfillmentInstructionImpl();
-    return fulfillmentInstruction;
-  }
+		FulfillmentInstructionImpl fulfillmentInstruction = new FulfillmentInstructionImpl();
+		return fulfillmentInstruction;
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	public FunctionalStatusObservation createFunctionalStatusObservation() {
-    FunctionalStatusObservationImpl functionalStatusObservation = new FunctionalStatusObservationImpl();
-    return functionalStatusObservation;
-  }
+		FunctionalStatusObservationImpl functionalStatusObservation = new FunctionalStatusObservationImpl();
+		return functionalStatusObservation;
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	public ProductInstance createProductInstance() {
-    ProductInstanceImpl productInstance = new ProductInstanceImpl();
-    return productInstance;
-  }
+		ProductInstanceImpl productInstance = new ProductInstanceImpl();
+		return productInstance;
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	public AgeObservation createAgeObservation() {
-    AgeObservationImpl ageObservation = new AgeObservationImpl();
-    return ageObservation;
-  }
+		AgeObservationImpl ageObservation = new AgeObservationImpl();
+		return ageObservation;
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	public PlanOfCareActivityObservation createPlanOfCareActivityObservation() {
-    PlanOfCareActivityObservationImpl planOfCareActivityObservation = new PlanOfCareActivityObservationImpl();
-    return planOfCareActivityObservation;
-  }
+		PlanOfCareActivityObservationImpl planOfCareActivityObservation = new PlanOfCareActivityObservationImpl();
+		return planOfCareActivityObservation;
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	public PlanOfCareActivityEncounter createPlanOfCareActivityEncounter() {
-    PlanOfCareActivityEncounterImpl planOfCareActivityEncounter = new PlanOfCareActivityEncounterImpl();
-    return planOfCareActivityEncounter;
-  }
+		PlanOfCareActivityEncounterImpl planOfCareActivityEncounter = new PlanOfCareActivityEncounterImpl();
+		return planOfCareActivityEncounter;
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	public PlanOfCareActivityProcedure createPlanOfCareActivityProcedure() {
-    PlanOfCareActivityProcedureImpl planOfCareActivityProcedure = new PlanOfCareActivityProcedureImpl();
-    return planOfCareActivityProcedure;
-  }
+		PlanOfCareActivityProcedureImpl planOfCareActivityProcedure = new PlanOfCareActivityProcedureImpl();
+		return planOfCareActivityProcedure;
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	public PlanOfCareActivitySubstanceAdministration createPlanOfCareActivitySubstanceAdministration() {
-    PlanOfCareActivitySubstanceAdministrationImpl planOfCareActivitySubstanceAdministration = new PlanOfCareActivitySubstanceAdministrationImpl();
-    return planOfCareActivitySubstanceAdministration;
-  }
+		PlanOfCareActivitySubstanceAdministrationImpl planOfCareActivitySubstanceAdministration = new PlanOfCareActivitySubstanceAdministrationImpl();
+		return planOfCareActivitySubstanceAdministration;
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	public PlanOfCareActivitySupply createPlanOfCareActivitySupply() {
-    PlanOfCareActivitySupplyImpl planOfCareActivitySupply = new PlanOfCareActivitySupplyImpl();
-    return planOfCareActivitySupply;
-  }
+		PlanOfCareActivitySupplyImpl planOfCareActivitySupply = new PlanOfCareActivitySupplyImpl();
+		return planOfCareActivitySupply;
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	public ProcedureActivityAct createProcedureActivityAct() {
-    ProcedureActivityActImpl procedureActivityAct = new ProcedureActivityActImpl();
-    return procedureActivityAct;
-  }
+		ProcedureActivityActImpl procedureActivityAct = new ProcedureActivityActImpl();
+		return procedureActivityAct;
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	public ProcedureActivityObservation createProcedureActivityObservation() {
-    ProcedureActivityObservationImpl procedureActivityObservation = new ProcedureActivityObservationImpl();
-    return procedureActivityObservation;
-  }
+		ProcedureActivityObservationImpl procedureActivityObservation = new ProcedureActivityObservationImpl();
+		return procedureActivityObservation;
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	public ProcedureActivityProcedure createProcedureActivityProcedure() {
-    ProcedureActivityProcedureImpl procedureActivityProcedure = new ProcedureActivityProcedureImpl();
-    return procedureActivityProcedure;
-  }
+		ProcedureActivityProcedureImpl procedureActivityProcedure = new ProcedureActivityProcedureImpl();
+		return procedureActivityProcedure;
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	public CoveragePlanDescription createCoveragePlanDescription() {
-    CoveragePlanDescriptionImpl coveragePlanDescription = new CoveragePlanDescriptionImpl();
-    return coveragePlanDescription;
-  }
+		CoveragePlanDescriptionImpl coveragePlanDescription = new CoveragePlanDescriptionImpl();
+		return coveragePlanDescription;
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	public SupportParticipant createSupportParticipant() {
-    SupportParticipantImpl supportParticipant = new SupportParticipantImpl();
-    return supportParticipant;
-  }
+		SupportParticipantImpl supportParticipant = new SupportParticipantImpl();
+		return supportParticipant;
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	public SupportGuardian createSupportGuardian() {
-    SupportGuardianImpl supportGuardian = new SupportGuardianImpl();
-    return supportGuardian;
-  }
+		SupportGuardianImpl supportGuardian = new SupportGuardianImpl();
+		return supportGuardian;
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	public Comment createComment() {
-    CommentImpl comment = new CommentImpl();
-    return comment;
-  }
+		CommentImpl comment = new CommentImpl();
+		return comment;
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	public AdvanceDirectiveReference createAdvanceDirectiveReference() {
-    AdvanceDirectiveReferenceImpl advanceDirectiveReference = new AdvanceDirectiveReferenceImpl();
-    return advanceDirectiveReference;
-  }
+		AdvanceDirectiveReferenceImpl advanceDirectiveReference = new AdvanceDirectiveReferenceImpl();
+		return advanceDirectiveReference;
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	public FamilyHistoryCauseOfDeathObservation createFamilyHistoryCauseOfDeathObservation() {
-    FamilyHistoryCauseOfDeathObservationImpl familyHistoryCauseOfDeathObservation = new FamilyHistoryCauseOfDeathObservationImpl();
-    return familyHistoryCauseOfDeathObservation;
-  }
+		FamilyHistoryCauseOfDeathObservationImpl familyHistoryCauseOfDeathObservation = new FamilyHistoryCauseOfDeathObservationImpl();
+		return familyHistoryCauseOfDeathObservation;
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	public CCDRegistryDelegate createCCDRegistryDelegate() {
-    CCDRegistryDelegateImpl ccdRegistryDelegate = new CCDRegistryDelegateImpl();
-    return ccdRegistryDelegate;
-  }
+		CCDRegistryDelegateImpl ccdRegistryDelegate = new CCDRegistryDelegateImpl();
+		return ccdRegistryDelegate;
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	public StatusObservation createStatusObservation() {
-    StatusObservationImpl statusObservation = new StatusObservationImpl();
-    return statusObservation;
-  }
+		StatusObservationImpl statusObservation = new StatusObservationImpl();
+		return statusObservation;
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	public ProblemHealthStatusObservation createProblemHealthStatusObservation() {
-    ProblemHealthStatusObservationImpl problemHealthStatusObservation = new ProblemHealthStatusObservationImpl();
-    return problemHealthStatusObservation;
-  }
+		ProblemHealthStatusObservationImpl problemHealthStatusObservation = new ProblemHealthStatusObservationImpl();
+		return problemHealthStatusObservation;
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	public CCDPackage getCCDPackage() {
-    return (CCDPackage)getEPackage();
-  }
+		return (CCDPackage) getEPackage();
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @deprecated
-   * @generated
-   */
+	* @deprecated
+	* @generated
+	*/
 	@Deprecated
 	public static CCDPackage getPackage() {
-    return CCDPackage.eINSTANCE;
-  }
+		return CCDPackage.eINSTANCE;
+	}
 
 } // CCDFactoryImpl

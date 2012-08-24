@@ -26,16 +26,16 @@ import org.openhealthtools.mdht.emf.runtime.util.Initializer;
  */
 public interface AlertStatusObservation extends StatusObservation {
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	public AlertStatusObservation init();
 
-  /**
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    public AlertStatusObservation init(Iterable<? extends Initializer<? extends EObject>> initializers);
+	/**
+	   * <!-- begin-user-doc -->
+	   * <!-- end-user-doc -->
+	   * @generated
+	   */
+	public AlertStatusObservation init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // AlertStatusObservation

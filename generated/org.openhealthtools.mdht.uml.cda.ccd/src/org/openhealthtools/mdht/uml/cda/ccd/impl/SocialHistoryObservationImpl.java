@@ -23,7 +23,6 @@ import org.openhealthtools.mdht.uml.cda.ccd.SocialHistoryObservation;
 import org.openhealthtools.mdht.uml.cda.ccd.SocialHistoryStatusObservation;
 import org.openhealthtools.mdht.uml.cda.ccd.operations.SocialHistoryObservationOperations;
 import org.openhealthtools.mdht.uml.cda.impl.ObservationImpl;
-import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
 
 /**
  * <!-- begin-user-doc -->
@@ -36,132 +35,135 @@ import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
  */
 public class SocialHistoryObservationImpl extends ObservationImpl implements SocialHistoryObservation {
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	protected SocialHistoryObservationImpl() {
-    super();
-  }
+		super();
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	@Override
 	protected EClass eStaticClass() {
-    return CCDPackage.Literals.SOCIAL_HISTORY_OBSERVATION;
-  }
+		return CCDPackage.Literals.SOCIAL_HISTORY_OBSERVATION;
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	public boolean validateSocialHistoryObservationCodeValueSet(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return SocialHistoryObservationOperations.validateSocialHistoryObservationCodeValueSet(this, diagnostics, context);
-  }
+		return SocialHistoryObservationOperations.validateSocialHistoryObservationCodeValueSet(
+			this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	public boolean validateSocialHistoryObservationTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return SocialHistoryObservationOperations.validateSocialHistoryObservationTemplateId(this, diagnostics, context);
-  }
+		return SocialHistoryObservationOperations.validateSocialHistoryObservationTemplateId(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	public boolean validateSocialHistoryObservationClassCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return SocialHistoryObservationOperations.validateSocialHistoryObservationClassCode(this, diagnostics, context);
-  }
+		return SocialHistoryObservationOperations.validateSocialHistoryObservationClassCode(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	public boolean validateSocialHistoryObservationId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return SocialHistoryObservationOperations.validateSocialHistoryObservationId(this, diagnostics, context);
-  }
+		return SocialHistoryObservationOperations.validateSocialHistoryObservationId(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	public boolean validateSocialHistoryObservationMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return SocialHistoryObservationOperations.validateSocialHistoryObservationMoodCode(this, diagnostics, context);
-  }
+		return SocialHistoryObservationOperations.validateSocialHistoryObservationMoodCode(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	public boolean validateSocialHistoryObservationStatusCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return SocialHistoryObservationOperations.validateSocialHistoryObservationStatusCode(this, diagnostics, context);
-  }
+		return SocialHistoryObservationOperations.validateSocialHistoryObservationStatusCode(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	public boolean validateSocialHistoryObservationSocialHistoryStatusObservation(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-    return SocialHistoryObservationOperations.validateSocialHistoryObservationSocialHistoryStatusObservation(this, diagnostics, context);
-  }
+		return SocialHistoryObservationOperations.validateSocialHistoryObservationSocialHistoryStatusObservation(
+			this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	public boolean validateSocialHistoryObservationEpisodeObservation(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-    return SocialHistoryObservationOperations.validateSocialHistoryObservationEpisodeObservation(this, diagnostics, context);
-  }
+		return SocialHistoryObservationOperations.validateSocialHistoryObservationEpisodeObservation(
+			this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	public SocialHistoryStatusObservation getSocialHistoryStatusObservation() {
-    return SocialHistoryObservationOperations.getSocialHistoryStatusObservation(this);
-  }
+		return SocialHistoryObservationOperations.getSocialHistoryStatusObservation(this);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	public EpisodeObservation getEpisodeObservation() {
-    return SocialHistoryObservationOperations.getEpisodeObservation(this);
-  }
+		return SocialHistoryObservationOperations.getEpisodeObservation(this);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	public SocialHistoryObservation init() {
-      return Initializer.Util.init(this);
-  }
+		return Initializer.Util.init(this);
+	}
 
-  /**
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    public SocialHistoryObservation init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-        Initializer.Util.init(this, initializers);
-        return this;
-    }
+	/**
+	   * <!-- begin-user-doc -->
+	   * <!-- end-user-doc -->
+	   * @generated
+	   */
+	public SocialHistoryObservation init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+		Initializer.Util.init(this, initializers);
+		return this;
+	}
 } // SocialHistoryObservationImpl

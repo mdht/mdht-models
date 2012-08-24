@@ -23,7 +23,6 @@ import org.openhealthtools.mdht.uml.cda.ccd.CCDPackage;
 import org.openhealthtools.mdht.uml.cda.ccd.ProblemAct;
 import org.openhealthtools.mdht.uml.cda.ccd.operations.AlertsSectionOperations;
 import org.openhealthtools.mdht.uml.cda.impl.SectionImpl;
-import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
 
 /**
  * <!-- begin-user-doc -->
@@ -36,94 +35,94 @@ import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
  */
 public class AlertsSectionImpl extends SectionImpl implements AlertsSection {
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	protected AlertsSectionImpl() {
-    super();
-  }
+		super();
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	@Override
 	protected EClass eStaticClass() {
-    return CCDPackage.Literals.ALERTS_SECTION;
-  }
+		return CCDPackage.Literals.ALERTS_SECTION;
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	public boolean validateAlertsSectionTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return AlertsSectionOperations.validateAlertsSectionTemplateId(this, diagnostics, context);
-  }
+		return AlertsSectionOperations.validateAlertsSectionTemplateId(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	public boolean validateAlertsSectionCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return AlertsSectionOperations.validateAlertsSectionCode(this, diagnostics, context);
-  }
+		return AlertsSectionOperations.validateAlertsSectionCode(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	public boolean validateAlertsSectionTitle(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return AlertsSectionOperations.validateAlertsSectionTitle(this, diagnostics, context);
-  }
+		return AlertsSectionOperations.validateAlertsSectionTitle(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	public boolean validateAlertsSectionText(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return AlertsSectionOperations.validateAlertsSectionText(this, diagnostics, context);
-  }
+		return AlertsSectionOperations.validateAlertsSectionText(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	public boolean validateAlertsSectionProblemAct(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return AlertsSectionOperations.validateAlertsSectionProblemAct(this, diagnostics, context);
-  }
+		return AlertsSectionOperations.validateAlertsSectionProblemAct(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	public EList<ProblemAct> getProblemActs() {
-    return AlertsSectionOperations.getProblemActs(this);
-  }
+		return AlertsSectionOperations.getProblemActs(this);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	public AlertsSection init() {
-      return Initializer.Util.init(this);
-  }
+		return Initializer.Util.init(this);
+	}
 
-  /**
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    public AlertsSection init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-        Initializer.Util.init(this, initializers);
-        return this;
-    }
+	/**
+	   * <!-- begin-user-doc -->
+	   * <!-- end-user-doc -->
+	   * @generated
+	   */
+	public AlertsSection init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+		Initializer.Util.init(this, initializers);
+		return this;
+	}
 } // AlertsSectionImpl
