@@ -184,13 +184,6 @@ public class CDTPackageImpl extends EPackageImpl implements CDTPackage {
 
 	/**
      * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    private EClass aaaaaEClass = null;
-
-  /**
-     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
      * @generated
      */
@@ -528,16 +521,6 @@ public class CDTPackageImpl extends EPackageImpl implements CDTPackage {
 
 	/**
      * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    public EClass getAAAAA()
-    {
-        return aaaaaEClass;
-    }
-
-  /**
-     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
      * @generated
      */
@@ -761,8 +744,6 @@ public class CDTPackageImpl extends EPackageImpl implements CDTPackage {
 
         hospitalDischargeStudiesSummarySectionEClass = createEClass(HOSPITAL_DISCHARGE_STUDIES_SUMMARY_SECTION);
 
-        aaaaaEClass = createEClass(AAAAA);
-
         cdtRegistryDelegateEClass = createEClass(CDT_REGISTRY_DELEGATE);
     }
 
@@ -829,7 +810,6 @@ public class CDTPackageImpl extends EPackageImpl implements CDTPackage {
         subjectiveSectionEClass.getESuperTypes().add(theCDAPackage.getSection());
         unstructuredDocumentEClass.getESuperTypes().add(this.getGeneralHeaderConstraints());
         hospitalDischargeStudiesSummarySectionEClass.getESuperTypes().add(theCDAPackage.getSection());
-        aaaaaEClass.getESuperTypes().add(this.getGeneralHeaderConstraints());
         cdtRegistryDelegateEClass.getESuperTypes().add(theCDAPackage.getRegistryDelegate());
 
         // Initialize classes and features; add operations and parameters
@@ -2481,8 +2461,6 @@ public class CDTPackageImpl extends EPackageImpl implements CDTPackage {
         g2 = createEGenericType(ecorePackage.getEJavaObject());
         g1.getETypeArguments().add(g2);
         addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
-
-        initEClass(aaaaaEClass, org.openhealthtools.mdht.uml.cda.cdt.AAAAA.class, "AAAAA", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 
         initEClass(cdtRegistryDelegateEClass, CDTRegistryDelegate.class, "CDTRegistryDelegate", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 

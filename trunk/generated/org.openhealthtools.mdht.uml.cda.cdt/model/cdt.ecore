@@ -3842,6 +3842,5 @@
       </eParameters>
     </eOperations>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="AAAAA" eSuperTypes="#//GeneralHeaderConstraints"/>
   <eClassifiers xsi:type="ecore:EClass" name="CDTRegistryDelegate" eSuperTypes="../../org.openhealthtools.mdht.uml.cda/model/cda.ecore#//RegistryDelegate"/>
 </ecore:EPackage>

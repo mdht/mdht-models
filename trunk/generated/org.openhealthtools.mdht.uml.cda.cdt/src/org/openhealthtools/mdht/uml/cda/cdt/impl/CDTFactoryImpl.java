@@ -130,7 +130,6 @@ public class CDTFactoryImpl extends EFactoryImpl implements CDTFactory {
       case CDTPackage.SUBJECTIVE_SECTION: return createSubjectiveSection();
       case CDTPackage.UNSTRUCTURED_DOCUMENT: return createUnstructuredDocument();
       case CDTPackage.HOSPITAL_DISCHARGE_STUDIES_SUMMARY_SECTION: return createHospitalDischargeStudiesSummarySection();
-      case CDTPackage.AAAAA: return createAAAAA();
       case CDTPackage.CDT_REGISTRY_DELEGATE: return createCDTRegistryDelegate();
       default:
         throw new IllegalArgumentException("The class '" + eClass.getName() + "' is not a valid classifier");
@@ -308,17 +307,6 @@ public class CDTFactoryImpl extends EFactoryImpl implements CDTFactory {
   }
 
 	/**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public AAAAA createAAAAA()
-  {
-    AAAAAImpl aaaaa = new AAAAAImpl();
-    return aaaaa;
-  }
-
-  /**
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
    * @generated
