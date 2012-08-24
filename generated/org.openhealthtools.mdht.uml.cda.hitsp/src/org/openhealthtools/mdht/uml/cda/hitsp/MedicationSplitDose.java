@@ -10,6 +10,9 @@
  *******************************************************************************/
 package org.openhealthtools.mdht.uml.cda.hitsp;
 
+import java.lang.Iterable;
+import org.eclipse.emf.ecore.EObject;
+import org.openhealthtools.mdht.emf.runtime.util.Initializer;
 import org.openhealthtools.mdht.uml.cda.ihe.SplitDose;
 
 /**
@@ -24,9 +27,16 @@ import org.openhealthtools.mdht.uml.cda.ihe.SplitDose;
  */
 public interface MedicationSplitDose extends Medication, SplitDose {
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public MedicationSplitDose init();
+
+  /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    public MedicationSplitDose init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // MedicationSplitDose

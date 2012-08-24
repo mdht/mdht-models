@@ -10,10 +10,13 @@
  *******************************************************************************/
 package org.openhealthtools.mdht.uml.cda.ccd.impl;
 
+import java.lang.Iterable;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.ecore.EClass;
+import org.eclipse.emf.ecore.EObject;
+import org.openhealthtools.mdht.emf.runtime.util.Initializer;
 import org.openhealthtools.mdht.uml.cda.ccd.AdvanceDirectiveVerification;
 import org.openhealthtools.mdht.uml.cda.ccd.CCDPackage;
 import org.openhealthtools.mdht.uml.cda.ccd.operations.AdvanceDirectiveVerificationOperations;
@@ -31,62 +34,68 @@ import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
  */
 public class AdvanceDirectiveVerificationImpl extends Participant2Impl implements AdvanceDirectiveVerification {
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	protected AdvanceDirectiveVerificationImpl() {
-		super();
-	}
+    super();
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	@Override
 	protected EClass eStaticClass() {
-		return CCDPackage.Literals.ADVANCE_DIRECTIVE_VERIFICATION;
-	}
+    return CCDPackage.Literals.ADVANCE_DIRECTIVE_VERIFICATION;
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateAdvanceDirectiveVerificationTemplateId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return AdvanceDirectiveVerificationOperations.validateAdvanceDirectiveVerificationTemplateId(
-			this, diagnostics, context);
-	}
+    return AdvanceDirectiveVerificationOperations.validateAdvanceDirectiveVerificationTemplateId(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateAdvanceDirectiveVerificationTypeCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return AdvanceDirectiveVerificationOperations.validateAdvanceDirectiveVerificationTypeCode(
-			this, diagnostics, context);
-	}
+    return AdvanceDirectiveVerificationOperations.validateAdvanceDirectiveVerificationTypeCode(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateAdvanceDirectiveVerificationTime(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return AdvanceDirectiveVerificationOperations.validateAdvanceDirectiveVerificationTime(
-			this, diagnostics, context);
-	}
+    return AdvanceDirectiveVerificationOperations.validateAdvanceDirectiveVerificationTime(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public AdvanceDirectiveVerification init() {
-		CDAUtil.init(this);
-		return this;
-	}
+      return Initializer.Util.init(this);
+  }
+
+  /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    public AdvanceDirectiveVerification init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
 } // AdvanceDirectiveVerificationImpl

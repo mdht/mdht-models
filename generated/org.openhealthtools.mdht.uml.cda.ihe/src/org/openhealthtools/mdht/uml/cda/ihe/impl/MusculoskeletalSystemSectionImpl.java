@@ -10,10 +10,13 @@
  *******************************************************************************/
 package org.openhealthtools.mdht.uml.cda.ihe.impl;
 
+import java.lang.Iterable;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.ecore.EClass;
+import org.eclipse.emf.ecore.EObject;
+import org.openhealthtools.mdht.emf.runtime.util.Initializer;
 import org.openhealthtools.mdht.uml.cda.ihe.IHEPackage;
 import org.openhealthtools.mdht.uml.cda.ihe.MusculoskeletalSystemSection;
 import org.openhealthtools.mdht.uml.cda.ihe.ProblemEntry;
@@ -32,72 +35,78 @@ import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
  */
 public class MusculoskeletalSystemSectionImpl extends SectionImpl implements MusculoskeletalSystemSection {
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	protected MusculoskeletalSystemSectionImpl() {
-		super();
-	}
+    super();
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	@Override
 	protected EClass eStaticClass() {
-		return IHEPackage.Literals.MUSCULOSKELETAL_SYSTEM_SECTION;
-	}
+    return IHEPackage.Literals.MUSCULOSKELETAL_SYSTEM_SECTION;
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateMusculoskeletalSystemSectionTemplateId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return MusculoskeletalSystemSectionOperations.validateMusculoskeletalSystemSectionTemplateId(
-			this, diagnostics, context);
-	}
+    return MusculoskeletalSystemSectionOperations.validateMusculoskeletalSystemSectionTemplateId(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateMusculoskeletalSystemSectionCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return MusculoskeletalSystemSectionOperations.validateMusculoskeletalSystemSectionCode(
-			this, diagnostics, context);
-	}
+    return MusculoskeletalSystemSectionOperations.validateMusculoskeletalSystemSectionCode(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateMusculoskeletalSystemSectionProblemEntry(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return MusculoskeletalSystemSectionOperations.validateMusculoskeletalSystemSectionProblemEntry(
-			this, diagnostics, context);
-	}
+    return MusculoskeletalSystemSectionOperations.validateMusculoskeletalSystemSectionProblemEntry(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public ProblemEntry getProblemEntry() {
-		return MusculoskeletalSystemSectionOperations.getProblemEntry(this);
-	}
+    return MusculoskeletalSystemSectionOperations.getProblemEntry(this);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public MusculoskeletalSystemSection init() {
-		CDAUtil.init(this);
-		return this;
-	}
+      return Initializer.Util.init(this);
+  }
+
+  /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    public MusculoskeletalSystemSection init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
 } // MusculoskeletalSystemSectionImpl

@@ -10,10 +10,13 @@
  *******************************************************************************/
 package org.openhealthtools.mdht.uml.cda.ccd.impl;
 
+import java.lang.Iterable;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.ecore.EClass;
+import org.eclipse.emf.ecore.EObject;
+import org.openhealthtools.mdht.emf.runtime.util.Initializer;
 import org.openhealthtools.mdht.uml.cda.ccd.CCDPackage;
 import org.openhealthtools.mdht.uml.cda.ccd.StatusObservation;
 import org.openhealthtools.mdht.uml.cda.ccd.operations.StatusObservationOperations;
@@ -31,126 +34,133 @@ import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
  */
 public class StatusObservationImpl extends ObservationImpl implements StatusObservation {
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	protected StatusObservationImpl() {
-		super();
-	}
+    super();
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	@Override
 	protected EClass eStaticClass() {
-		return CCDPackage.Literals.STATUS_OBSERVATION;
-	}
+    return CCDPackage.Literals.STATUS_OBSERVATION;
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateStatusObservationTargetOfEntryRelationship(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return StatusObservationOperations.validateStatusObservationTargetOfEntryRelationship(
-			this, diagnostics, context);
-	}
+    return StatusObservationOperations.validateStatusObservationTargetOfEntryRelationship(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateStatusObservationNoAdditionalParticipants(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return StatusObservationOperations.validateStatusObservationNoAdditionalParticipants(this, diagnostics, context);
-	}
+    return StatusObservationOperations.validateStatusObservationNoAdditionalParticipants(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateStatusObservationNoAdditionalRelationships(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return StatusObservationOperations.validateStatusObservationNoAdditionalRelationships(
-			this, diagnostics, context);
-	}
+    return StatusObservationOperations.validateStatusObservationNoAdditionalRelationships(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateStatusObservationTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return StatusObservationOperations.validateStatusObservationTemplateId(this, diagnostics, context);
-	}
+    return StatusObservationOperations.validateStatusObservationTemplateId(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateStatusObservationClassCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return StatusObservationOperations.validateStatusObservationClassCode(this, diagnostics, context);
-	}
+    return StatusObservationOperations.validateStatusObservationClassCode(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateStatusObservationMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return StatusObservationOperations.validateStatusObservationMoodCode(this, diagnostics, context);
-	}
+    return StatusObservationOperations.validateStatusObservationMoodCode(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateStatusObservationCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return StatusObservationOperations.validateStatusObservationCode(this, diagnostics, context);
-	}
+    return StatusObservationOperations.validateStatusObservationCode(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateStatusObservationStatusCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return StatusObservationOperations.validateStatusObservationStatusCode(this, diagnostics, context);
-	}
+    return StatusObservationOperations.validateStatusObservationStatusCode(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateStatusObservationValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return StatusObservationOperations.validateStatusObservationValue(this, diagnostics, context);
-	}
+    return StatusObservationOperations.validateStatusObservationValue(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateTargetOfEntryRelationship() {
-		return StatusObservationOperations.validateTargetOfEntryRelationship(this);
-	}
+    return StatusObservationOperations.validateTargetOfEntryRelationship(this);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public StatusObservation init() {
-		CDAUtil.init(this);
-		return this;
-	}
+      return Initializer.Util.init(this);
+  }
+
+  /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    public StatusObservation init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
 } // StatusObservationImpl

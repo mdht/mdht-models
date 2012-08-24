@@ -10,6 +10,10 @@
  *******************************************************************************/
 package org.openhealthtools.mdht.uml.cda.ccd;
 
+import java.lang.Iterable;
+import org.eclipse.emf.ecore.EObject;
+import org.openhealthtools.mdht.emf.runtime.util.Initializer;
+
 /**
  * <!-- begin-user-doc -->
  * A representation of the model object '<em><b>Cause Of Death Observation</b></em>'.
@@ -17,14 +21,21 @@ package org.openhealthtools.mdht.uml.cda.ccd;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.ccd.CCDPackage#getCauseOfDeathObservation()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation templateId.root='2.16.840.1.113883.10.20.1.42' constraints.validation.error='CauseOfDeathObservationTemplateId'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='CauseOfDeathObservationTemplateId' templateId.root='2.16.840.1.113883.10.20.1.42'"
  * @generated
  */
 public interface CauseOfDeathObservation extends FamilyHistoryObservation {
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public CauseOfDeathObservation init();
+
+  /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    public CauseOfDeathObservation init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // CauseOfDeathObservation

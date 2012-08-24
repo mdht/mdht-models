@@ -10,10 +10,13 @@
  *******************************************************************************/
 package org.openhealthtools.mdht.uml.cda.ihe.impl;
 
+import java.lang.Iterable;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.ecore.EClass;
+import org.eclipse.emf.ecore.EObject;
+import org.openhealthtools.mdht.emf.runtime.util.Initializer;
 import org.openhealthtools.mdht.uml.cda.ihe.CodedFamilyMedicalHistorySection;
 import org.openhealthtools.mdht.uml.cda.ihe.FamilyHistoryOrganizer;
 import org.openhealthtools.mdht.uml.cda.ihe.IHEPackage;
@@ -32,63 +35,70 @@ import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
 public class CodedFamilyMedicalHistorySectionImpl extends FamilyMedicalHistorySectionImpl implements
 		CodedFamilyMedicalHistorySection {
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	protected CodedFamilyMedicalHistorySectionImpl() {
-		super();
-	}
+    super();
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	@Override
 	protected EClass eStaticClass() {
-		return IHEPackage.Literals.CODED_FAMILY_MEDICAL_HISTORY_SECTION;
-	}
+    return IHEPackage.Literals.CODED_FAMILY_MEDICAL_HISTORY_SECTION;
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateCodedFamilyMedicalHistorySectionTemplateId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return CodedFamilyMedicalHistorySectionOperations.validateCodedFamilyMedicalHistorySectionTemplateId(
-			this, diagnostics, context);
-	}
+    return CodedFamilyMedicalHistorySectionOperations.validateCodedFamilyMedicalHistorySectionTemplateId(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateCodedFamilyMedicalHistorySectionFamilyHistoryOrganizer(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return CodedFamilyMedicalHistorySectionOperations.validateCodedFamilyMedicalHistorySectionFamilyHistoryOrganizer(
-			this, diagnostics, context);
-	}
+    return CodedFamilyMedicalHistorySectionOperations.validateCodedFamilyMedicalHistorySectionFamilyHistoryOrganizer(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public FamilyHistoryOrganizer getIHEFamilyHistoryOrganizer() {
-		return CodedFamilyMedicalHistorySectionOperations.getIHEFamilyHistoryOrganizer(this);
-	}
+    return CodedFamilyMedicalHistorySectionOperations.getIHEFamilyHistoryOrganizer(this);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	@Override
 	public CodedFamilyMedicalHistorySection init() {
-		CDAUtil.init(this);
-		return this;
-	}
+      return Initializer.Util.init(this);
+  }
+
+  /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    public CodedFamilyMedicalHistorySection init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
 } // CodedFamilyMedicalHistorySectionImpl

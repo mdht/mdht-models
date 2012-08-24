@@ -10,10 +10,13 @@
  *******************************************************************************/
 package org.openhealthtools.mdht.uml.cda.cdt.impl;
 
+import java.lang.Iterable;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.ecore.EClass;
+import org.eclipse.emf.ecore.EObject;
+import org.openhealthtools.mdht.emf.runtime.util.Initializer;
 import org.openhealthtools.mdht.uml.cda.cdt.CDTPackage;
 import org.openhealthtools.mdht.uml.cda.cdt.ReasonForVisitSectionConsult;
 import org.openhealthtools.mdht.uml.cda.cdt.operations.ReasonForVisitSectionConsultOperations;
@@ -31,52 +34,59 @@ import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
  */
 public class ReasonForVisitSectionConsultImpl extends SectionImpl implements ReasonForVisitSectionConsult {
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	protected ReasonForVisitSectionConsultImpl() {
-		super();
-	}
+    super();
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	@Override
 	protected EClass eStaticClass() {
-		return CDTPackage.Literals.REASON_FOR_VISIT_SECTION_CONSULT;
-	}
+    return CDTPackage.Literals.REASON_FOR_VISIT_SECTION_CONSULT;
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateReasonForVisitSectionConsultTemplateId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ReasonForVisitSectionConsultOperations.validateReasonForVisitSectionConsultTemplateId(
-			this, diagnostics, context);
-	}
+    return ReasonForVisitSectionConsultOperations.validateReasonForVisitSectionConsultTemplateId(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateReasonForVisitSectionConsultCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ReasonForVisitSectionConsultOperations.validateReasonForVisitSectionConsultCode(
-			this, diagnostics, context);
-	}
+    return ReasonForVisitSectionConsultOperations.validateReasonForVisitSectionConsultCode(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public ReasonForVisitSectionConsult init() {
-		CDAUtil.init(this);
-		return this;
-	}
+      return Initializer.Util.init(this);
+  }
+
+  /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    public ReasonForVisitSectionConsult init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
 } // ReasonForVisitSectionConsultImpl

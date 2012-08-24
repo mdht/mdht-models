@@ -10,10 +10,13 @@
  *******************************************************************************/
 package org.openhealthtools.mdht.uml.cda.ihe.impl;
 
+import java.lang.Iterable;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.ecore.EClass;
+import org.eclipse.emf.ecore.EObject;
+import org.openhealthtools.mdht.emf.runtime.util.Initializer;
 import org.openhealthtools.mdht.uml.cda.ihe.IHEPackage;
 import org.openhealthtools.mdht.uml.cda.ihe.ProblemStatusObservation;
 import org.openhealthtools.mdht.uml.cda.ihe.operations.ProblemStatusObservationOperations;
@@ -31,73 +34,80 @@ import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
 public class ProblemStatusObservationImpl extends
 		org.openhealthtools.mdht.uml.cda.ccd.impl.ProblemStatusObservationImpl implements ProblemStatusObservation {
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	protected ProblemStatusObservationImpl() {
-		super();
-	}
+    super();
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	@Override
 	protected EClass eStaticClass() {
-		return IHEPackage.Literals.PROBLEM_STATUS_OBSERVATION;
-	}
+    return IHEPackage.Literals.PROBLEM_STATUS_OBSERVATION;
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateIHEProblemStatusObservationHasTextReference(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ProblemStatusObservationOperations.validateIHEProblemStatusObservationHasTextReference(
-			this, diagnostics, context);
-	}
+    return ProblemStatusObservationOperations.validateIHEProblemStatusObservationHasTextReference(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateIHEProblemStatusObservationTemplateId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ProblemStatusObservationOperations.validateIHEProblemStatusObservationTemplateId(
-			this, diagnostics, context);
-	}
+    return ProblemStatusObservationOperations.validateIHEProblemStatusObservationTemplateId(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateIHEProblemStatusObservationText(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ProblemStatusObservationOperations.validateIHEProblemStatusObservationText(this, diagnostics, context);
-	}
+    return ProblemStatusObservationOperations.validateIHEProblemStatusObservationText(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public boolean validateStatusObservationValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ProblemStatusObservationOperations.validateStatusObservationValue(this, diagnostics, context);
-	}
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public boolean validateIHEProblemStatusObservationValue(DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+    return ProblemStatusObservationOperations.validateIHEProblemStatusObservationValue(this, diagnostics, context);
+  }
 
-	/**
-	 * <!-- begin-user-doc -->
+  /**
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	@Override
 	public ProblemStatusObservation init() {
-		CDAUtil.init(this);
-		return this;
-	}
+      return Initializer.Util.init(this);
+  }
+
+  /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    public ProblemStatusObservation init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
 } // ProblemStatusObservationImpl

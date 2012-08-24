@@ -10,10 +10,13 @@
  *******************************************************************************/
 package org.openhealthtools.mdht.uml.cda.hitsp.impl;
 
+import java.lang.Iterable;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.ecore.EClass;
+import org.eclipse.emf.ecore.EObject;
+import org.openhealthtools.mdht.emf.runtime.util.Initializer;
 import org.openhealthtools.mdht.uml.cda.ccd.impl.ResultObservationImpl;
 import org.openhealthtools.mdht.uml.cda.hitsp.HITSPPackage;
 import org.openhealthtools.mdht.uml.cda.hitsp.Result;
@@ -32,122 +35,131 @@ import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
  */
 public class ResultImpl extends ResultObservationImpl implements Result {
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	protected ResultImpl() {
-		super();
-	}
+    super();
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	@Override
 	protected EClass eStaticClass() {
-		return HITSPPackage.Literals.RESULT;
-	}
+    return HITSPPackage.Literals.RESULT;
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateSimpleObservationTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return SimpleObservationOperations.validateSimpleObservationTemplateId(this, diagnostics, context);
-	}
+    return SimpleObservationOperations.validateSimpleObservationTemplateId(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateSimpleObservationId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return SimpleObservationOperations.validateSimpleObservationId(this, diagnostics, context);
-	}
+    return SimpleObservationOperations.validateSimpleObservationId(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateSimpleObservationStatusCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return SimpleObservationOperations.validateSimpleObservationStatusCode(this, diagnostics, context);
-	}
+    return SimpleObservationOperations.validateSimpleObservationStatusCode(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateResultTypeCodeSystem(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ResultOperations.validateResultTypeCodeSystem(this, diagnostics, context);
-	}
+    return ResultOperations.validateResultTypeCodeSystem(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateResultLaboratoryResultsValueSet(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ResultOperations.validateResultLaboratoryResultsValueSet(this, diagnostics, context);
-	}
+    return ResultOperations.validateResultLaboratoryResultsValueSet(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateResultValuePresence(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ResultOperations.validateResultValuePresence(this, diagnostics, context);
-	}
+    return ResultOperations.validateResultValuePresence(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateResultTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ResultOperations.validateResultTemplateId(this, diagnostics, context);
-	}
+    return ResultOperations.validateResultTemplateId(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateResultCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ResultOperations.validateResultCode(this, diagnostics, context);
-	}
+    return ResultOperations.validateResultCode(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateResultEffectiveTime(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ResultOperations.validateResultEffectiveTime(this, diagnostics, context);
-	}
+    return ResultOperations.validateResultEffectiveTime(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateResultValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ResultOperations.validateResultValue(this, diagnostics, context);
-	}
+    return ResultOperations.validateResultValue(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	@Override
 	public Result init() {
-		CDAUtil.init(this);
-		return this;
-	}
+      return Initializer.Util.init(this);
+  }
+
+  /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    public Result init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
 } // ResultImpl

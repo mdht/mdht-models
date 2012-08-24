@@ -10,10 +10,13 @@
  *******************************************************************************/
 package org.openhealthtools.mdht.uml.cda.ihe.impl;
 
+import java.lang.Iterable;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.ecore.EClass;
+import org.eclipse.emf.ecore.EObject;
+import org.openhealthtools.mdht.emf.runtime.util.Initializer;
 import org.openhealthtools.mdht.uml.cda.ihe.EncounterEntry;
 import org.openhealthtools.mdht.uml.cda.ihe.IHEPackage;
 import org.openhealthtools.mdht.uml.cda.ihe.operations.EncounterEntryOperations;
@@ -31,85 +34,94 @@ import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
  */
 public abstract class EncounterEntryImpl extends EncounterImpl implements EncounterEntry {
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	protected EncounterEntryImpl() {
-		super();
-	}
+    super();
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	@Override
 	protected EClass eStaticClass() {
-		return IHEPackage.Literals.ENCOUNTER_ENTRY;
-	}
+    return IHEPackage.Literals.ENCOUNTER_ENTRY;
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateEncounterEntryTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return EncounterEntryOperations.validateEncounterEntryTemplateId(this, diagnostics, context);
-	}
+    return EncounterEntryOperations.validateEncounterEntryTemplateId(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateEncounterEntryClassCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return EncounterEntryOperations.validateEncounterEntryClassCode(this, diagnostics, context);
-	}
+    return EncounterEntryOperations.validateEncounterEntryClassCode(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateEncounterEntryCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return EncounterEntryOperations.validateEncounterEntryCodeP(this, diagnostics, context);
-	}
+    return EncounterEntryOperations.validateEncounterEntryCodeP(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateEncounterEntryCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return EncounterEntryOperations.validateEncounterEntryCode(this, diagnostics, context);
-	}
+    return EncounterEntryOperations.validateEncounterEntryCode(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateEncounterEntryId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return EncounterEntryOperations.validateEncounterEntryId(this, diagnostics, context);
-	}
+    return EncounterEntryOperations.validateEncounterEntryId(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateEncounterEntryText(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return EncounterEntryOperations.validateEncounterEntryText(this, diagnostics, context);
-	}
+    return EncounterEntryOperations.validateEncounterEntryText(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public EncounterEntry init() {
-		CDAUtil.init(this);
-		return this;
-	}
+      return Initializer.Util.init(this);
+  }
+
+  /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    public EncounterEntry init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
 } // EncounterEntryImpl

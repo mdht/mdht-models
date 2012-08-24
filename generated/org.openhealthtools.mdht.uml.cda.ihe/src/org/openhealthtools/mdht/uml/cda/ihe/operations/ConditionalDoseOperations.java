@@ -40,129 +40,139 @@ import org.openhealthtools.mdht.uml.cda.ihe.util.IHEValidator;
  */
 public class ConditionalDoseOperations extends MedicationOperations {
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	protected ConditionalDoseOperations() {
-		super();
-	}
+    super();
+  }
 
 	/**
-	 * The cached OCL expression body for the '{@link #validateConditionalDoseConditionalDosingSubstanceAdministration(ConditionalDose, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Conditional Dose Conditional Dosing Substance Administration</em>}' operation.
-	 * <!-- begin-user-doc -->
+   * The cached OCL expression body for the '{@link #validateConditionalDoseConditionalDosingSubstanceAdministration(ConditionalDose, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Conditional Dose Conditional Dosing Substance Administration</em>}' operation.
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateConditionalDoseConditionalDosingSubstanceAdministration(ConditionalDose, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
+   * @see #validateConditionalDoseConditionalDosingSubstanceAdministration(ConditionalDose, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+   * @generated
+   * @ordered
+   */
 	protected static final String VALIDATE_CONDITIONAL_DOSE_CONDITIONAL_DOSING_SUBSTANCE_ADMINISTRATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "not self.entryRelationship.substanceAdministration->isEmpty()";
 
 	/**
-	 * The cached OCL invariant for the '{@link #validateConditionalDoseConditionalDosingSubstanceAdministration(ConditionalDose, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Conditional Dose Conditional Dosing Substance Administration</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
+   * The cached OCL invariant for the '{@link #validateConditionalDoseConditionalDosingSubstanceAdministration(ConditionalDose, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Conditional Dose Conditional Dosing Substance Administration</em>}' invariant operation.
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateConditionalDoseConditionalDosingSubstanceAdministration(ConditionalDose, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
+   * @see #validateConditionalDoseConditionalDosingSubstanceAdministration(ConditionalDose, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+   * @generated
+   * @ordered
+   */
 
 	protected static Constraint VALIDATE_CONDITIONAL_DOSE_CONDITIONAL_DOSING_SUBSTANCE_ADMINISTRATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * not self.entryRelationship.substanceAdministration->isEmpty()
-	 * @param conditionalDose The receiving '<em><b>Conditional Dose</b></em>' model object.
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
+   * <!-- begin-model-doc -->
+   * @param conditionalDose The receiving '<em><b>Conditional Dose</b></em>' model object.
+   * @param diagnostics The chain of diagnostics to which problems are to be appended.
+   * @param context The cache of context-specific information.
+   * <!-- end-model-doc -->
+   * @generated
+   */
 	public static boolean validateConditionalDoseConditionalDosingSubstanceAdministration(
 			ConditionalDose conditionalDose, DiagnosticChain diagnostics, Map<Object, Object> context) {
-
-		if (VALIDATE_CONDITIONAL_DOSE_CONDITIONAL_DOSING_SUBSTANCE_ADMINISTRATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setContext(IHEPackage.Literals.CONDITIONAL_DOSE);
-			try {
-				VALIDATE_CONDITIONAL_DOSE_CONDITIONAL_DOSING_SUBSTANCE_ADMINISTRATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_CONDITIONAL_DOSE_CONDITIONAL_DOSING_SUBSTANCE_ADMINISTRATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
-				throw new UnsupportedOperationException(pe.getLocalizedMessage());
-			}
-		}
-		if (!EOCL_ENV.createQuery(
-			VALIDATE_CONDITIONAL_DOSE_CONDITIONAL_DOSING_SUBSTANCE_ADMINISTRATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			conditionalDose)) {
-			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, IHEValidator.DIAGNOSTIC_SOURCE,
-					IHEValidator.CONDITIONAL_DOSE__CONDITIONAL_DOSE_CONDITIONAL_DOSING_SUBSTANCE_ADMINISTRATION,
-					IHEPlugin.INSTANCE.getString("ConditionalDoseConditionalDosingSubstanceAdministration"),
-					new Object[] { conditionalDose }));
-			}
-
-			return false;
-		}
-		return true;
-	}
+  	  
+    if (VALIDATE_CONDITIONAL_DOSE_CONDITIONAL_DOSING_SUBSTANCE_ADMINISTRATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+      OCL.Helper helper = EOCL_ENV.createOCLHelper();
+      helper.setContext(IHEPackage.Literals.CONDITIONAL_DOSE);
+      try
+      {
+        VALIDATE_CONDITIONAL_DOSE_CONDITIONAL_DOSING_SUBSTANCE_ADMINISTRATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_CONDITIONAL_DOSE_CONDITIONAL_DOSING_SUBSTANCE_ADMINISTRATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+      }
+      catch (ParserException pe)
+      {
+        throw new UnsupportedOperationException(pe.getLocalizedMessage());
+      }
+    }
+    if (!EOCL_ENV.createQuery(VALIDATE_CONDITIONAL_DOSE_CONDITIONAL_DOSING_SUBSTANCE_ADMINISTRATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(conditionalDose))
+    {
+      if (diagnostics != null)
+      {
+        diagnostics.add
+          (new BasicDiagnostic
+            (Diagnostic.ERROR,
+             IHEValidator.DIAGNOSTIC_SOURCE,
+             IHEValidator.CONDITIONAL_DOSE__CONDITIONAL_DOSE_CONDITIONAL_DOSING_SUBSTANCE_ADMINISTRATION,
+             IHEPlugin.INSTANCE.getString("ConditionalDoseConditionalDosingSubstanceAdministration"),
+             new Object [] { conditionalDose }));
+      }
+       
+      return false;
+    }
+    return true;
+  }
 
 	/**
-	 * The cached OCL expression body for the '{@link #validateConditionalDoseTemplateId(ConditionalDose, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Conditional Dose Template Id</em>}' operation.
-	 * <!-- begin-user-doc -->
+   * The cached OCL expression body for the '{@link #validateConditionalDoseTemplateId(ConditionalDose, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Conditional Dose Template Id</em>}' operation.
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateConditionalDoseTemplateId(ConditionalDose, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
+   * @see #validateConditionalDoseTemplateId(ConditionalDose, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+   * @generated
+   * @ordered
+   */
 	protected static final String VALIDATE_CONDITIONAL_DOSE_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.templateId->exists(id : datatypes::II | id.root = '1.3.6.1.4.1.19376.1.5.3.1.4.10')";
 
 	/**
-	 * The cached OCL invariant for the '{@link #validateConditionalDoseTemplateId(ConditionalDose, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Conditional Dose Template Id</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
+   * The cached OCL invariant for the '{@link #validateConditionalDoseTemplateId(ConditionalDose, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Conditional Dose Template Id</em>}' invariant operation.
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateConditionalDoseTemplateId(ConditionalDose, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
+   * @see #validateConditionalDoseTemplateId(ConditionalDose, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+   * @generated
+   * @ordered
+   */
 	protected static Constraint VALIDATE_CONDITIONAL_DOSE_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.templateId->exists(id : datatypes::II | id.root = '1.3.6.1.4.1.19376.1.5.3.1.4.10')
-	 * @param conditionalDose The receiving '<em><b>Conditional Dose</b></em>' model object.
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
+   * <!-- begin-model-doc -->
+   * @param conditionalDose The receiving '<em><b>Conditional Dose</b></em>' model object.
+   * @param diagnostics The chain of diagnostics to which problems are to be appended.
+   * @param context The cache of context-specific information.
+   * <!-- end-model-doc -->
+   * @generated
+   */
 	public static boolean validateConditionalDoseTemplateId(ConditionalDose conditionalDose,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-
-		if (VALIDATE_CONDITIONAL_DOSE_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setContext(IHEPackage.Literals.CONDITIONAL_DOSE);
-			try {
-				VALIDATE_CONDITIONAL_DOSE_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_CONDITIONAL_DOSE_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
-				throw new UnsupportedOperationException(pe.getLocalizedMessage());
-			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_CONDITIONAL_DOSE_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			conditionalDose)) {
-			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, IHEValidator.DIAGNOSTIC_SOURCE,
-					IHEValidator.CONDITIONAL_DOSE__CONDITIONAL_DOSE_TEMPLATE_ID,
-					IHEPlugin.INSTANCE.getString("ConditionalDoseTemplateId"), new Object[] { conditionalDose }));
-			}
-
-			return false;
-		}
-		return true;
-	}
+  	  
+    if (VALIDATE_CONDITIONAL_DOSE_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+      OCL.Helper helper = EOCL_ENV.createOCLHelper();
+      helper.setContext(IHEPackage.Literals.CONDITIONAL_DOSE);
+      try
+      {
+        VALIDATE_CONDITIONAL_DOSE_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_CONDITIONAL_DOSE_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+      }
+      catch (ParserException pe)
+      {
+        throw new UnsupportedOperationException(pe.getLocalizedMessage());
+      }
+    }
+    if (!EOCL_ENV.createQuery(VALIDATE_CONDITIONAL_DOSE_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(conditionalDose))
+    {
+      if (diagnostics != null)
+      {
+        diagnostics.add
+          (new BasicDiagnostic
+            (Diagnostic.ERROR,
+             IHEValidator.DIAGNOSTIC_SOURCE,
+             IHEValidator.CONDITIONAL_DOSE__CONDITIONAL_DOSE_TEMPLATE_ID,
+             IHEPlugin.INSTANCE.getString("ConditionalDoseTemplateId"),
+             new Object [] { conditionalDose }));
+      }
+       
+      return false;
+    }
+    return true;
+  }
 
 } // ConditionalDoseOperations

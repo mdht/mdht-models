@@ -10,6 +10,9 @@
  *******************************************************************************/
 package org.openhealthtools.mdht.uml.cda.hitsp;
 
+import java.lang.Iterable;
+import org.eclipse.emf.ecore.EObject;
+import org.openhealthtools.mdht.emf.runtime.util.Initializer;
 import org.openhealthtools.mdht.uml.cda.ihe.ProcedureEntryPlanOfCareActivityProcedure;
 
 /**
@@ -24,9 +27,16 @@ import org.openhealthtools.mdht.uml.cda.ihe.ProcedureEntryPlanOfCareActivityProc
  */
 public interface PlannedProcedure extends Procedure, ProcedureEntryPlanOfCareActivityProcedure {
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public PlannedProcedure init();
+
+  /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    public PlannedProcedure init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // PlannedProcedure

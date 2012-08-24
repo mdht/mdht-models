@@ -10,10 +10,13 @@
  *******************************************************************************/
 package org.openhealthtools.mdht.uml.cda.ihe.impl;
 
+import java.lang.Iterable;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.ecore.EClass;
+import org.eclipse.emf.ecore.EObject;
+import org.openhealthtools.mdht.emf.runtime.util.Initializer;
 import org.openhealthtools.mdht.uml.cda.ihe.AdvanceDirectiveObservation;
 import org.openhealthtools.mdht.uml.cda.ihe.IHEPackage;
 import org.openhealthtools.mdht.uml.cda.ihe.operations.AdvanceDirectiveObservationOperations;
@@ -33,124 +36,128 @@ public class AdvanceDirectiveObservationImpl extends
 		org.openhealthtools.mdht.uml.cda.ccd.impl.AdvanceDirectiveObservationImpl implements
 		AdvanceDirectiveObservation {
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	protected AdvanceDirectiveObservationImpl() {
-		super();
-	}
+    super();
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	@Override
 	protected EClass eStaticClass() {
-		return IHEPackage.Literals.ADVANCE_DIRECTIVE_OBSERVATION;
-	}
+    return IHEPackage.Literals.ADVANCE_DIRECTIVE_OBSERVATION;
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateSimpleObservationTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return SimpleObservationOperations.validateSimpleObservationTemplateId(this, diagnostics, context);
-	}
+    return SimpleObservationOperations.validateSimpleObservationTemplateId(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateSimpleObservationId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return SimpleObservationOperations.validateSimpleObservationId(this, diagnostics, context);
-	}
+    return SimpleObservationOperations.validateSimpleObservationId(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateSimpleObservationStatusCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return SimpleObservationOperations.validateSimpleObservationStatusCode(this, diagnostics, context);
-	}
+    return SimpleObservationOperations.validateSimpleObservationStatusCode(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateIHEAdvanceDirectiveObservationHasExternalReference(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return AdvanceDirectiveObservationOperations.validateIHEAdvanceDirectiveObservationHasExternalReference(
-			this, diagnostics, context);
-	}
+    return AdvanceDirectiveObservationOperations.validateIHEAdvanceDirectiveObservationHasExternalReference(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateIHEAdvanceDirectiveObservationTemplateId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return AdvanceDirectiveObservationOperations.validateIHEAdvanceDirectiveObservationTemplateId(
-			this, diagnostics, context);
-	}
+    return AdvanceDirectiveObservationOperations.validateIHEAdvanceDirectiveObservationTemplateId(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public boolean validateIHEAdvanceDirectiveObservationCode(DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+    return AdvanceDirectiveObservationOperations.validateIHEAdvanceDirectiveObservationCode(this, diagnostics, context);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateIHEAdvanceDirectiveObservationRepeatNumber(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return AdvanceDirectiveObservationOperations.validateIHEAdvanceDirectiveObservationRepeatNumber(
-			this, diagnostics, context);
-	}
+    return AdvanceDirectiveObservationOperations.validateIHEAdvanceDirectiveObservationRepeatNumber(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateIHEAdvanceDirectiveObservationInterpretationCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return AdvanceDirectiveObservationOperations.validateIHEAdvanceDirectiveObservationInterpretationCode(
-			this, diagnostics, context);
-	}
+    return AdvanceDirectiveObservationOperations.validateIHEAdvanceDirectiveObservationInterpretationCode(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateIHEAdvanceDirectiveObservationTargetSiteCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return AdvanceDirectiveObservationOperations.validateIHEAdvanceDirectiveObservationTargetSiteCode(
-			this, diagnostics, context);
-	}
+    return AdvanceDirectiveObservationOperations.validateIHEAdvanceDirectiveObservationTargetSiteCode(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public boolean validateAdvanceDirectiveObservationCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return AdvanceDirectiveObservationOperations.validateAdvanceDirectiveObservationCode(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	@Override
 	public AdvanceDirectiveObservation init() {
-		CDAUtil.init(this);
-		return this;
-	}
+      return Initializer.Util.init(this);
+  }
+
+  /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    public AdvanceDirectiveObservation init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
 } // AdvanceDirectiveObservationImpl

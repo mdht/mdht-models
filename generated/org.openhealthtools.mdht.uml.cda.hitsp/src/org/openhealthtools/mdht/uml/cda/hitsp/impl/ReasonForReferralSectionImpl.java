@@ -10,11 +10,14 @@
  *******************************************************************************/
 package org.openhealthtools.mdht.uml.cda.hitsp.impl;
 
+import java.lang.Iterable;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.common.util.EList;
 import org.eclipse.emf.ecore.EClass;
+import org.eclipse.emf.ecore.EObject;
+import org.openhealthtools.mdht.emf.runtime.util.Initializer;
 import org.openhealthtools.mdht.uml.cda.cdt.operations.ReasonForReferralSectionOperations;
 import org.openhealthtools.mdht.uml.cda.hitsp.Condition;
 import org.openhealthtools.mdht.uml.cda.hitsp.HITSPPackage;
@@ -34,103 +37,109 @@ import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
  */
 public class ReasonForReferralSectionImpl extends CodedReasonForReferralSectionImpl implements ReasonForReferralSection {
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	protected ReasonForReferralSectionImpl() {
-		super();
-	}
+    super();
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	@Override
 	protected EClass eStaticClass() {
-		return HITSPPackage.Literals.REASON_FOR_REFERRAL_SECTION;
-	}
+    return HITSPPackage.Literals.REASON_FOR_REFERRAL_SECTION;
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	@Override
 	public boolean validateReasonForReferralSectionTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ReasonForReferralSectionOperations.validateReasonForReferralSectionTemplateId(this, diagnostics, context);
-	}
+    return ReasonForReferralSectionOperations.validateReasonForReferralSectionTemplateId(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	@Override
 	public boolean validateReasonForReferralSectionCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ReasonForReferralSectionOperations.validateReasonForReferralSectionCode(this, diagnostics, context);
-	}
+    return ReasonForReferralSectionOperations.validateReasonForReferralSectionCode(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateHITSPReasonForReferralSectionCondition(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return org.openhealthtools.mdht.uml.cda.hitsp.operations.ReasonForReferralSectionOperations.validateHITSPReasonForReferralSectionCondition(
-			this, diagnostics, context);
-	}
+    return org.openhealthtools.mdht.uml.cda.hitsp.operations.ReasonForReferralSectionOperations.validateHITSPReasonForReferralSectionCondition(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateHITSPReasonForReferralSectionResult(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return org.openhealthtools.mdht.uml.cda.hitsp.operations.ReasonForReferralSectionOperations.validateHITSPReasonForReferralSectionResult(
-			this, diagnostics, context);
-	}
+    return org.openhealthtools.mdht.uml.cda.hitsp.operations.ReasonForReferralSectionOperations.validateHITSPReasonForReferralSectionResult(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public EList<Condition> getConditions() {
-		return org.openhealthtools.mdht.uml.cda.hitsp.operations.ReasonForReferralSectionOperations.getConditions(this);
-	}
+    return org.openhealthtools.mdht.uml.cda.hitsp.operations.ReasonForReferralSectionOperations.getConditions(this);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public EList<Result> getResults() {
-		return org.openhealthtools.mdht.uml.cda.hitsp.operations.ReasonForReferralSectionOperations.getResults(this);
-	}
+    return org.openhealthtools.mdht.uml.cda.hitsp.operations.ReasonForReferralSectionOperations.getResults(this);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	@Override
 	public boolean validateCodedReasonForReferralSectionTemplateId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return org.openhealthtools.mdht.uml.cda.hitsp.operations.ReasonForReferralSectionOperations.validateCodedReasonForReferralSectionTemplateId(
-			this, diagnostics, context);
-	}
+    return org.openhealthtools.mdht.uml.cda.hitsp.operations.ReasonForReferralSectionOperations.validateCodedReasonForReferralSectionTemplateId(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	@Override
 	public ReasonForReferralSection init() {
-		CDAUtil.init(this);
-		return this;
-	}
+      return Initializer.Util.init(this);
+  }
+
+  /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    public ReasonForReferralSection init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
 } // ReasonForReferralSectionImpl

@@ -10,10 +10,13 @@
  *******************************************************************************/
 package org.openhealthtools.mdht.uml.cda.ccd.impl;
 
+import java.lang.Iterable;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.ecore.EClass;
+import org.eclipse.emf.ecore.EObject;
+import org.openhealthtools.mdht.emf.runtime.util.Initializer;
 import org.openhealthtools.mdht.uml.cda.ccd.CCDPackage;
 import org.openhealthtools.mdht.uml.cda.ccd.PurposeActivity;
 import org.openhealthtools.mdht.uml.cda.ccd.operations.PurposeActivityOperations;
@@ -31,94 +34,103 @@ import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
  */
 public class PurposeActivityImpl extends ActImpl implements PurposeActivity {
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	protected PurposeActivityImpl() {
-		super();
-	}
+    super();
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	@Override
 	protected EClass eStaticClass() {
-		return CCDPackage.Literals.PURPOSE_ACTIVITY;
-	}
+    return CCDPackage.Literals.PURPOSE_ACTIVITY;
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validatePurposeActivityHasReason(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return PurposeActivityOperations.validatePurposeActivityHasReason(this, diagnostics, context);
-	}
+    return PurposeActivityOperations.validatePurposeActivityHasReason(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validatePurposeActivityReasonType(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return PurposeActivityOperations.validatePurposeActivityReasonType(this, diagnostics, context);
-	}
+    return PurposeActivityOperations.validatePurposeActivityReasonType(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validatePurposeActivityTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return PurposeActivityOperations.validatePurposeActivityTemplateId(this, diagnostics, context);
-	}
+    return PurposeActivityOperations.validatePurposeActivityTemplateId(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validatePurposeActivityClassCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return PurposeActivityOperations.validatePurposeActivityClassCode(this, diagnostics, context);
-	}
+    return PurposeActivityOperations.validatePurposeActivityClassCode(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validatePurposeActivityMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return PurposeActivityOperations.validatePurposeActivityMoodCode(this, diagnostics, context);
-	}
+    return PurposeActivityOperations.validatePurposeActivityMoodCode(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validatePurposeActivityCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return PurposeActivityOperations.validatePurposeActivityCode(this, diagnostics, context);
-	}
+    return PurposeActivityOperations.validatePurposeActivityCode(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validatePurposeActivityStatusCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return PurposeActivityOperations.validatePurposeActivityStatusCode(this, diagnostics, context);
-	}
+    return PurposeActivityOperations.validatePurposeActivityStatusCode(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public PurposeActivity init() {
-		CDAUtil.init(this);
-		return this;
-	}
+      return Initializer.Util.init(this);
+  }
+
+  /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    public PurposeActivity init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
 } // PurposeActivityImpl

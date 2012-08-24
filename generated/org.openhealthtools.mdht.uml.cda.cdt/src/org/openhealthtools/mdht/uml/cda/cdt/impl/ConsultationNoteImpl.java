@@ -10,10 +10,13 @@
  *******************************************************************************/
 package org.openhealthtools.mdht.uml.cda.cdt.impl;
 
+import java.lang.Iterable;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.ecore.EClass;
+import org.eclipse.emf.ecore.EObject;
+import org.openhealthtools.mdht.emf.runtime.util.Initializer;
 import org.openhealthtools.mdht.uml.cda.ccd.AlertsSection;
 import org.openhealthtools.mdht.uml.cda.ccd.FamilyHistorySection;
 import org.openhealthtools.mdht.uml.cda.ccd.ImmunizationsSection;
@@ -44,316 +47,325 @@ import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
  */
 public class ConsultationNoteImpl extends GeneralHeaderConstraintsImpl implements ConsultationNote {
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	protected ConsultationNoteImpl() {
-		super();
-	}
+    super();
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	@Override
 	protected EClass eStaticClass() {
-		return CDTPackage.Literals.CONSULTATION_NOTE;
-	}
+    return CDTPackage.Literals.CONSULTATION_NOTE;
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateConsultationNoteReferralOrVisit(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ConsultationNoteOperations.validateConsultationNoteReferralOrVisit(this, diagnostics, context);
-	}
+    return ConsultationNoteOperations.validateConsultationNoteReferralOrVisit(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public boolean validateGeneralHeaderConstraintsCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ConsultationNoteOperations.validateGeneralHeaderConstraintsCode(this, diagnostics, context);
-	}
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public boolean validateConsultationNoteCode(DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+    return ConsultationNoteOperations.validateConsultationNoteCode(this, diagnostics, context);
+  }
 
-	/**
-	 * <!-- begin-user-doc -->
+  /**
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateConsultationNoteHistoryOfPresentIllness(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ConsultationNoteOperations.validateConsultationNoteHistoryOfPresentIllness(this, diagnostics, context);
-	}
+    return ConsultationNoteOperations.validateConsultationNoteHistoryOfPresentIllness(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateConsultationNotePhysicalExamination(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ConsultationNoteOperations.validateConsultationNotePhysicalExamination(this, diagnostics, context);
-	}
+    return ConsultationNoteOperations.validateConsultationNotePhysicalExamination(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateConsultationNoteProblemSection(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ConsultationNoteOperations.validateConsultationNoteProblemSection(this, diagnostics, context);
-	}
+    return ConsultationNoteOperations.validateConsultationNoteProblemSection(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateConsultationNoteProceduresSection(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ConsultationNoteOperations.validateConsultationNoteProceduresSection(this, diagnostics, context);
-	}
+    return ConsultationNoteOperations.validateConsultationNoteProceduresSection(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateConsultationNotePastMedicalHistorySection(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ConsultationNoteOperations.validateConsultationNotePastMedicalHistorySection(this, diagnostics, context);
-	}
+    return ConsultationNoteOperations.validateConsultationNotePastMedicalHistorySection(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateConsultationNoteImmunizationsSection(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ConsultationNoteOperations.validateConsultationNoteImmunizationsSection(this, diagnostics, context);
-	}
+    return ConsultationNoteOperations.validateConsultationNoteImmunizationsSection(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateConsultationNoteMedicationsSection(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ConsultationNoteOperations.validateConsultationNoteMedicationsSection(this, diagnostics, context);
-	}
+    return ConsultationNoteOperations.validateConsultationNoteMedicationsSection(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateConsultationNoteAlertsSection(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ConsultationNoteOperations.validateConsultationNoteAlertsSection(this, diagnostics, context);
-	}
+    return ConsultationNoteOperations.validateConsultationNoteAlertsSection(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateConsultationNoteSocialHistorySection(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ConsultationNoteOperations.validateConsultationNoteSocialHistorySection(this, diagnostics, context);
-	}
+    return ConsultationNoteOperations.validateConsultationNoteSocialHistorySection(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateConsultationNoteFamilyHistorySection(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ConsultationNoteOperations.validateConsultationNoteFamilyHistorySection(this, diagnostics, context);
-	}
+    return ConsultationNoteOperations.validateConsultationNoteFamilyHistorySection(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateConsultationNoteReviewOfSystemsSection(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ConsultationNoteOperations.validateConsultationNoteReviewOfSystemsSection(this, diagnostics, context);
-	}
+    return ConsultationNoteOperations.validateConsultationNoteReviewOfSystemsSection(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateConsultationNoteVitalSignsSection(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ConsultationNoteOperations.validateConsultationNoteVitalSignsSection(this, diagnostics, context);
-	}
+    return ConsultationNoteOperations.validateConsultationNoteVitalSignsSection(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateConsultationNoteGeneralStatusSection(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ConsultationNoteOperations.validateConsultationNoteGeneralStatusSection(this, diagnostics, context);
-	}
+    return ConsultationNoteOperations.validateConsultationNoteGeneralStatusSection(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateConsultationNoteDiagnosticFindings(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ConsultationNoteOperations.validateConsultationNoteDiagnosticFindings(this, diagnostics, context);
-	}
+    return ConsultationNoteOperations.validateConsultationNoteDiagnosticFindings(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public HistoryOfPresentIllness getHistoryOfPresentIllness() {
-		return ConsultationNoteOperations.getHistoryOfPresentIllness(this);
-	}
+    return ConsultationNoteOperations.getHistoryOfPresentIllness(this);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public PhysicalExaminationSection getPhysicalExamination() {
-		return ConsultationNoteOperations.getPhysicalExamination(this);
-	}
+    return ConsultationNoteOperations.getPhysicalExamination(this);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public ProblemSection getProblemSection() {
-		return ConsultationNoteOperations.getProblemSection(this);
-	}
+    return ConsultationNoteOperations.getProblemSection(this);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public ProceduresSection getProceduresSection() {
-		return ConsultationNoteOperations.getProceduresSection(this);
-	}
+    return ConsultationNoteOperations.getProceduresSection(this);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public PastMedicalHistorySectionConsult getPastMedicalHistorySection() {
-		return ConsultationNoteOperations.getPastMedicalHistorySection(this);
-	}
+    return ConsultationNoteOperations.getPastMedicalHistorySection(this);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public ImmunizationsSection getImmunizationsSection() {
-		return ConsultationNoteOperations.getImmunizationsSection(this);
-	}
+    return ConsultationNoteOperations.getImmunizationsSection(this);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public MedicationsSection getMedicationsSection() {
-		return ConsultationNoteOperations.getMedicationsSection(this);
-	}
+    return ConsultationNoteOperations.getMedicationsSection(this);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public AlertsSection getAlertsSection() {
-		return ConsultationNoteOperations.getAlertsSection(this);
-	}
+    return ConsultationNoteOperations.getAlertsSection(this);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public SocialHistorySection getSocialHistorySection() {
-		return ConsultationNoteOperations.getSocialHistorySection(this);
-	}
+    return ConsultationNoteOperations.getSocialHistorySection(this);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public FamilyHistorySection getFamilyHistorySection() {
-		return ConsultationNoteOperations.getFamilyHistorySection(this);
-	}
+    return ConsultationNoteOperations.getFamilyHistorySection(this);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public ReviewOfSystemsSection getReviewOfSystemsSection() {
-		return ConsultationNoteOperations.getReviewOfSystemsSection(this);
-	}
+    return ConsultationNoteOperations.getReviewOfSystemsSection(this);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public VitalSignsSection getVitalSignsSection() {
-		return ConsultationNoteOperations.getVitalSignsSection(this);
-	}
+    return ConsultationNoteOperations.getVitalSignsSection(this);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public GeneralStatusSection getGeneralStatusSection() {
-		return ConsultationNoteOperations.getGeneralStatusSection(this);
-	}
+    return ConsultationNoteOperations.getGeneralStatusSection(this);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public DiagnosticFindings getDiagnosticFindings() {
-		return ConsultationNoteOperations.getDiagnosticFindings(this);
-	}
+    return ConsultationNoteOperations.getDiagnosticFindings(this);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	@Override
 	public boolean validateGeneralHeaderConstraintsTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ConsultationNoteOperations.validateGeneralHeaderConstraintsTemplateId(this, diagnostics, context);
-	}
+    return ConsultationNoteOperations.validateGeneralHeaderConstraintsTemplateId(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	@Override
 	public ConsultationNote init() {
-		CDAUtil.init(this);
-		return this;
-	}
+      return Initializer.Util.init(this);
+  }
+
+  /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    public ConsultationNote init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
 } // ConsultationNoteImpl

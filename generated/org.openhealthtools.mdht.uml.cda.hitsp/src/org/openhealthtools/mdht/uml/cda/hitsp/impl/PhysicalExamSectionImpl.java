@@ -10,11 +10,14 @@
  *******************************************************************************/
 package org.openhealthtools.mdht.uml.cda.hitsp.impl;
 
+import java.lang.Iterable;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.common.util.EList;
 import org.eclipse.emf.ecore.EClass;
+import org.eclipse.emf.ecore.EObject;
+import org.openhealthtools.mdht.emf.runtime.util.Initializer;
 import org.openhealthtools.mdht.uml.cda.cdt.impl.PhysicalExaminationSectionImpl;
 import org.openhealthtools.mdht.uml.cda.hitsp.Condition;
 import org.openhealthtools.mdht.uml.cda.hitsp.HITSPPackage;
@@ -59,561 +62,557 @@ import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
  */
 public class PhysicalExamSectionImpl extends PhysicalExaminationSectionImpl implements PhysicalExamSection {
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	protected PhysicalExamSectionImpl() {
-		super();
-	}
+    super();
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	@Override
 	protected EClass eStaticClass() {
-		return HITSPPackage.Literals.PHYSICAL_EXAM_SECTION;
-	}
+    return HITSPPackage.Literals.PHYSICAL_EXAM_SECTION;
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validatePhysicalExamNarrativeSectionTemplateId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return PhysicalExamNarrativeSectionOperations.validatePhysicalExamNarrativeSectionTemplateId(
-			this, diagnostics, context);
-	}
+    return PhysicalExamNarrativeSectionOperations.validatePhysicalExamNarrativeSectionTemplateId(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validatePhysicalExamNarrativeSectionCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return PhysicalExamNarrativeSectionOperations.validatePhysicalExamNarrativeSectionCode(
-			this, diagnostics, context);
-	}
+    return PhysicalExamNarrativeSectionOperations.validatePhysicalExamNarrativeSectionCode(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validatePhysicalExamSectionTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return PhysicalExamSectionOperations.validatePhysicalExamSectionTemplateId(this, diagnostics, context);
-	}
+    return PhysicalExamSectionOperations.validatePhysicalExamSectionTemplateId(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validatePhysicalExamSectionVitalSignsSection(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return PhysicalExamSectionOperations.validatePhysicalExamSectionVitalSignsSection(this, diagnostics, context);
-	}
+    return PhysicalExamSectionOperations.validatePhysicalExamSectionVitalSignsSection(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validatePhysicalExamSectionGeneralAppearanceSection(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return PhysicalExamSectionOperations.validatePhysicalExamSectionGeneralAppearanceSection(
-			this, diagnostics, context);
-	}
+    return PhysicalExamSectionOperations.validatePhysicalExamSectionGeneralAppearanceSection(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validatePhysicalExamSectionVisibleImplantedMedicalDevicesSection(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return PhysicalExamSectionOperations.validatePhysicalExamSectionVisibleImplantedMedicalDevicesSection(
-			this, diagnostics, context);
-	}
+    return PhysicalExamSectionOperations.validatePhysicalExamSectionVisibleImplantedMedicalDevicesSection(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validatePhysicalExamSectionIntegumentarySystemSection(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return PhysicalExamSectionOperations.validatePhysicalExamSectionIntegumentarySystemSection(
-			this, diagnostics, context);
-	}
+    return PhysicalExamSectionOperations.validatePhysicalExamSectionIntegumentarySystemSection(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validatePhysicalExamSectionHeadSection(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return PhysicalExamSectionOperations.validatePhysicalExamSectionHeadSection(this, diagnostics, context);
-	}
+    return PhysicalExamSectionOperations.validatePhysicalExamSectionHeadSection(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validatePhysicalExamSectionEyesSection(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return PhysicalExamSectionOperations.validatePhysicalExamSectionEyesSection(this, diagnostics, context);
-	}
+    return PhysicalExamSectionOperations.validatePhysicalExamSectionEyesSection(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validatePhysicalExamSectionEarsNoseMouthThroatSection(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return PhysicalExamSectionOperations.validatePhysicalExamSectionEarsNoseMouthThroatSection(
-			this, diagnostics, context);
-	}
+    return PhysicalExamSectionOperations.validatePhysicalExamSectionEarsNoseMouthThroatSection(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validatePhysicalExamSectionEarsSection(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return PhysicalExamSectionOperations.validatePhysicalExamSectionEarsSection(this, diagnostics, context);
-	}
+    return PhysicalExamSectionOperations.validatePhysicalExamSectionEarsSection(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validatePhysicalExamSectionNoseSection(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return PhysicalExamSectionOperations.validatePhysicalExamSectionNoseSection(this, diagnostics, context);
-	}
+    return PhysicalExamSectionOperations.validatePhysicalExamSectionNoseSection(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validatePhysicalExamSectionMouthThroatTeethSection(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return PhysicalExamSectionOperations.validatePhysicalExamSectionMouthThroatTeethSection(
-			this, diagnostics, context);
-	}
+    return PhysicalExamSectionOperations.validatePhysicalExamSectionMouthThroatTeethSection(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validatePhysicalExamSectionNeckSection(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return PhysicalExamSectionOperations.validatePhysicalExamSectionNeckSection(this, diagnostics, context);
-	}
+    return PhysicalExamSectionOperations.validatePhysicalExamSectionNeckSection(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validatePhysicalExamSectionEndocrineSystemSection(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return PhysicalExamSectionOperations.validatePhysicalExamSectionEndocrineSystemSection(
-			this, diagnostics, context);
-	}
+    return PhysicalExamSectionOperations.validatePhysicalExamSectionEndocrineSystemSection(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validatePhysicalExamSectionThoraxLungsSection(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return PhysicalExamSectionOperations.validatePhysicalExamSectionThoraxLungsSection(this, diagnostics, context);
-	}
+    return PhysicalExamSectionOperations.validatePhysicalExamSectionThoraxLungsSection(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validatePhysicalExamSectionChestWallSection(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return PhysicalExamSectionOperations.validatePhysicalExamSectionChestWallSection(this, diagnostics, context);
-	}
+    return PhysicalExamSectionOperations.validatePhysicalExamSectionChestWallSection(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validatePhysicalExamSectionBreastSection(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return PhysicalExamSectionOperations.validatePhysicalExamSectionBreastSection(this, diagnostics, context);
-	}
+    return PhysicalExamSectionOperations.validatePhysicalExamSectionBreastSection(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validatePhysicalExamSectionHeartSection(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return PhysicalExamSectionOperations.validatePhysicalExamSectionHeartSection(this, diagnostics, context);
-	}
+    return PhysicalExamSectionOperations.validatePhysicalExamSectionHeartSection(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validatePhysicalExamSectionRespiratorySystemSection(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return PhysicalExamSectionOperations.validatePhysicalExamSectionRespiratorySystemSection(
-			this, diagnostics, context);
-	}
+    return PhysicalExamSectionOperations.validatePhysicalExamSectionRespiratorySystemSection(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validatePhysicalExamSectionAbdomenSection(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return PhysicalExamSectionOperations.validatePhysicalExamSectionAbdomenSection(this, diagnostics, context);
-	}
+    return PhysicalExamSectionOperations.validatePhysicalExamSectionAbdomenSection(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validatePhysicalExamSectionLymphaticSection(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return PhysicalExamSectionOperations.validatePhysicalExamSectionLymphaticSection(this, diagnostics, context);
-	}
+    return PhysicalExamSectionOperations.validatePhysicalExamSectionLymphaticSection(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validatePhysicalExamSectionVesselsSection(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return PhysicalExamSectionOperations.validatePhysicalExamSectionVesselsSection(this, diagnostics, context);
-	}
+    return PhysicalExamSectionOperations.validatePhysicalExamSectionVesselsSection(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validatePhysicalExamSectionMusculoskeletalSystemSection(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return PhysicalExamSectionOperations.validatePhysicalExamSectionMusculoskeletalSystemSection(
-			this, diagnostics, context);
-	}
+    return PhysicalExamSectionOperations.validatePhysicalExamSectionMusculoskeletalSystemSection(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validatePhysicalExamSectionNeurologicSystemSection(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return PhysicalExamSectionOperations.validatePhysicalExamSectionNeurologicSystemSection(
-			this, diagnostics, context);
-	}
+    return PhysicalExamSectionOperations.validatePhysicalExamSectionNeurologicSystemSection(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validatePhysicalExamSectionGenitaliaSection(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return PhysicalExamSectionOperations.validatePhysicalExamSectionGenitaliaSection(this, diagnostics, context);
-	}
+    return PhysicalExamSectionOperations.validatePhysicalExamSectionGenitaliaSection(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validatePhysicalExamSectionRectumSection(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return PhysicalExamSectionOperations.validatePhysicalExamSectionRectumSection(this, diagnostics, context);
-	}
+    return PhysicalExamSectionOperations.validatePhysicalExamSectionRectumSection(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validatePhysicalExamSectionExtremitiesSection(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return PhysicalExamSectionOperations.validatePhysicalExamSectionExtremitiesSection(this, diagnostics, context);
-	}
+    return PhysicalExamSectionOperations.validatePhysicalExamSectionExtremitiesSection(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public VitalSignsSection getVitalSignsSection() {
-		return PhysicalExamSectionOperations.getVitalSignsSection(this);
-	}
+    return PhysicalExamSectionOperations.getVitalSignsSection(this);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public GeneralAppearanceSection getGeneralAppearanceSection() {
-		return PhysicalExamSectionOperations.getGeneralAppearanceSection(this);
-	}
+    return PhysicalExamSectionOperations.getGeneralAppearanceSection(this);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public VisibleImplantedMedicalDevicesSection getVisibleImplantedMedicalDevicesSection() {
-		return PhysicalExamSectionOperations.getVisibleImplantedMedicalDevicesSection(this);
-	}
+    return PhysicalExamSectionOperations.getVisibleImplantedMedicalDevicesSection(this);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public IntegumentarySystemSection getIntegumentarySystemSection() {
-		return PhysicalExamSectionOperations.getIntegumentarySystemSection(this);
-	}
+    return PhysicalExamSectionOperations.getIntegumentarySystemSection(this);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public HeadSection getHeadSection() {
-		return PhysicalExamSectionOperations.getHeadSection(this);
-	}
+    return PhysicalExamSectionOperations.getHeadSection(this);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public EyesSection getEyesSection() {
-		return PhysicalExamSectionOperations.getEyesSection(this);
-	}
+    return PhysicalExamSectionOperations.getEyesSection(this);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public EarsNoseMouthThroatSection getEarsNoseMouthThroatSection() {
-		return PhysicalExamSectionOperations.getEarsNoseMouthThroatSection(this);
-	}
+    return PhysicalExamSectionOperations.getEarsNoseMouthThroatSection(this);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public EarsSection getEarsSection() {
-		return PhysicalExamSectionOperations.getEarsSection(this);
-	}
+    return PhysicalExamSectionOperations.getEarsSection(this);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public NoseSection getNoseSection() {
-		return PhysicalExamSectionOperations.getNoseSection(this);
-	}
+    return PhysicalExamSectionOperations.getNoseSection(this);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public MouthThroatTeethSection getMouthThroatTeethSection() {
-		return PhysicalExamSectionOperations.getMouthThroatTeethSection(this);
-	}
+    return PhysicalExamSectionOperations.getMouthThroatTeethSection(this);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public NeckSection getNeckSection() {
-		return PhysicalExamSectionOperations.getNeckSection(this);
-	}
+    return PhysicalExamSectionOperations.getNeckSection(this);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public EndocrineSystemSection getEndocrineSystemSection() {
-		return PhysicalExamSectionOperations.getEndocrineSystemSection(this);
-	}
+    return PhysicalExamSectionOperations.getEndocrineSystemSection(this);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public ThoraxLungsSection getThoraxLungsSection() {
-		return PhysicalExamSectionOperations.getThoraxLungsSection(this);
-	}
+    return PhysicalExamSectionOperations.getThoraxLungsSection(this);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public ChestWallSection getChestWallSection() {
-		return PhysicalExamSectionOperations.getChestWallSection(this);
-	}
+    return PhysicalExamSectionOperations.getChestWallSection(this);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public BreastSection getBreastSection() {
-		return PhysicalExamSectionOperations.getBreastSection(this);
-	}
+    return PhysicalExamSectionOperations.getBreastSection(this);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public HeartSection getHeartSection() {
-		return PhysicalExamSectionOperations.getHeartSection(this);
-	}
+    return PhysicalExamSectionOperations.getHeartSection(this);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public RespiratorySystemSection getRespiratorySystemSection() {
-		return PhysicalExamSectionOperations.getRespiratorySystemSection(this);
-	}
+    return PhysicalExamSectionOperations.getRespiratorySystemSection(this);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public AbdomenSection getAbdomenSection() {
-		return PhysicalExamSectionOperations.getAbdomenSection(this);
-	}
+    return PhysicalExamSectionOperations.getAbdomenSection(this);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public LymphaticSection getLymphaticSection() {
-		return PhysicalExamSectionOperations.getLymphaticSection(this);
-	}
+    return PhysicalExamSectionOperations.getLymphaticSection(this);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public VesselsSection getVesselsSection() {
-		return PhysicalExamSectionOperations.getVesselsSection(this);
-	}
+    return PhysicalExamSectionOperations.getVesselsSection(this);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public MusculoskeletalSystemSection getMusculoskeletalSystemSection() {
-		return PhysicalExamSectionOperations.getMusculoskeletalSystemSection(this);
-	}
+    return PhysicalExamSectionOperations.getMusculoskeletalSystemSection(this);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public NeurologicSystemSection getNeurologicSystemSection() {
-		return PhysicalExamSectionOperations.getNeurologicSystemSection(this);
-	}
+    return PhysicalExamSectionOperations.getNeurologicSystemSection(this);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public GenitaliaSection getGenitaliaSection() {
-		return PhysicalExamSectionOperations.getGenitaliaSection(this);
-	}
+    return PhysicalExamSectionOperations.getGenitaliaSection(this);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public RectumSection getRectumSection() {
-		return PhysicalExamSectionOperations.getRectumSection(this);
-	}
+    return PhysicalExamSectionOperations.getRectumSection(this);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public ExtremitiesSection getExtremitiesSection() {
-		return PhysicalExamSectionOperations.getExtremitiesSection(this);
-	}
+    return PhysicalExamSectionOperations.getExtremitiesSection(this);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateHITSPPhysicalExamSectionTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return org.openhealthtools.mdht.uml.cda.hitsp.operations.PhysicalExamSectionOperations.validateHITSPPhysicalExamSectionTemplateId(
-			this, diagnostics, context);
-	}
+    return org.openhealthtools.mdht.uml.cda.hitsp.operations.PhysicalExamSectionOperations.validateHITSPPhysicalExamSectionTemplateId(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateHITSPPhysicalExamSectionCondition(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return org.openhealthtools.mdht.uml.cda.hitsp.operations.PhysicalExamSectionOperations.validateHITSPPhysicalExamSectionCondition(
-			this, diagnostics, context);
-	}
+    return org.openhealthtools.mdht.uml.cda.hitsp.operations.PhysicalExamSectionOperations.validateHITSPPhysicalExamSectionCondition(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public EList<Condition> getConditions() {
-		return org.openhealthtools.mdht.uml.cda.hitsp.operations.PhysicalExamSectionOperations.getConditions(this);
-	}
+    return org.openhealthtools.mdht.uml.cda.hitsp.operations.PhysicalExamSectionOperations.getConditions(this);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	@Override
 	public PhysicalExamSection init() {
-		CDAUtil.init(this);
-		return this;
-	}
+      return Initializer.Util.init(this);
+  }
+
+  /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    public PhysicalExamSection init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
 } // PhysicalExamSectionImpl

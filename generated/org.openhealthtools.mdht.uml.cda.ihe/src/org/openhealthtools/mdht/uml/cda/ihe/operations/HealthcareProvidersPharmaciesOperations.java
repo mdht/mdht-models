@@ -40,71 +40,76 @@ import org.openhealthtools.mdht.uml.hl7.rim.operations.ParticipationOperations;
  */
 public class HealthcareProvidersPharmaciesOperations extends ParticipationOperations {
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	protected HealthcareProvidersPharmaciesOperations() {
-		super();
-	}
+    super();
+  }
 
 	/**
-	 * The cached OCL expression body for the '{@link #validateHealthcareProvidersPharmaciesTemplateId(HealthcareProvidersPharmacies, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Healthcare Providers Pharmacies Template Id</em>}' operation.
-	 * <!-- begin-user-doc -->
+   * The cached OCL expression body for the '{@link #validateHealthcareProvidersPharmaciesTemplateId(HealthcareProvidersPharmacies, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Healthcare Providers Pharmacies Template Id</em>}' operation.
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateHealthcareProvidersPharmaciesTemplateId(HealthcareProvidersPharmacies, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
+   * @see #validateHealthcareProvidersPharmaciesTemplateId(HealthcareProvidersPharmacies, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+   * @generated
+   * @ordered
+   */
 	protected static final String VALIDATE_HEALTHCARE_PROVIDERS_PHARMACIES_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.templateId->exists(id : datatypes::II | id.root = '1.3.6.1.4.1.19376.1.5.3.1.2.3')";
 
 	/**
-	 * The cached OCL invariant for the '{@link #validateHealthcareProvidersPharmaciesTemplateId(HealthcareProvidersPharmacies, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Healthcare Providers Pharmacies Template Id</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
+   * The cached OCL invariant for the '{@link #validateHealthcareProvidersPharmaciesTemplateId(HealthcareProvidersPharmacies, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Healthcare Providers Pharmacies Template Id</em>}' invariant operation.
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateHealthcareProvidersPharmaciesTemplateId(HealthcareProvidersPharmacies, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
+   * @see #validateHealthcareProvidersPharmaciesTemplateId(HealthcareProvidersPharmacies, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+   * @generated
+   * @ordered
+   */
 	protected static Constraint VALIDATE_HEALTHCARE_PROVIDERS_PHARMACIES_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.templateId->exists(id : datatypes::II | id.root = '1.3.6.1.4.1.19376.1.5.3.1.2.3')
-	 * @param healthcareProvidersPharmacies The receiving '<em><b>Healthcare Providers Pharmacies</b></em>' model object.
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
+   * <!-- begin-model-doc -->
+   * @param healthcareProvidersPharmacies The receiving '<em><b>Healthcare Providers Pharmacies</b></em>' model object.
+   * @param diagnostics The chain of diagnostics to which problems are to be appended.
+   * @param context The cache of context-specific information.
+   * <!-- end-model-doc -->
+   * @generated
+   */
 	public static boolean validateHealthcareProvidersPharmaciesTemplateId(
 			HealthcareProvidersPharmacies healthcareProvidersPharmacies, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-
-		if (VALIDATE_HEALTHCARE_PROVIDERS_PHARMACIES_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setContext(IHEPackage.Literals.HEALTHCARE_PROVIDERS_PHARMACIES);
-			try {
-				VALIDATE_HEALTHCARE_PROVIDERS_PHARMACIES_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_HEALTHCARE_PROVIDERS_PHARMACIES_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
-				throw new UnsupportedOperationException(pe.getLocalizedMessage());
-			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_HEALTHCARE_PROVIDERS_PHARMACIES_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			healthcareProvidersPharmacies)) {
-			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, IHEValidator.DIAGNOSTIC_SOURCE,
-					IHEValidator.HEALTHCARE_PROVIDERS_PHARMACIES__HEALTHCARE_PROVIDERS_PHARMACIES_TEMPLATE_ID,
-					IHEPlugin.INSTANCE.getString("HealthcareProvidersPharmaciesTemplateId"),
-					new Object[] { healthcareProvidersPharmacies }));
-			}
-
-			return false;
-		}
-		return true;
-	}
+  	  
+    if (VALIDATE_HEALTHCARE_PROVIDERS_PHARMACIES_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+      OCL.Helper helper = EOCL_ENV.createOCLHelper();
+      helper.setContext(IHEPackage.Literals.HEALTHCARE_PROVIDERS_PHARMACIES);
+      try
+      {
+        VALIDATE_HEALTHCARE_PROVIDERS_PHARMACIES_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_HEALTHCARE_PROVIDERS_PHARMACIES_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+      }
+      catch (ParserException pe)
+      {
+        throw new UnsupportedOperationException(pe.getLocalizedMessage());
+      }
+    }
+    if (!EOCL_ENV.createQuery(VALIDATE_HEALTHCARE_PROVIDERS_PHARMACIES_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(healthcareProvidersPharmacies))
+    {
+      if (diagnostics != null)
+      {
+        diagnostics.add
+          (new BasicDiagnostic
+            (Diagnostic.ERROR,
+             IHEValidator.DIAGNOSTIC_SOURCE,
+             IHEValidator.HEALTHCARE_PROVIDERS_PHARMACIES__HEALTHCARE_PROVIDERS_PHARMACIES_TEMPLATE_ID,
+             IHEPlugin.INSTANCE.getString("HealthcareProvidersPharmaciesTemplateId"),
+             new Object [] { healthcareProvidersPharmacies }));
+      }
+       
+      return false;
+    }
+    return true;
+  }
 
 } // HealthcareProvidersPharmaciesOperations

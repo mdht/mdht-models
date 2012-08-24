@@ -10,10 +10,13 @@
  *******************************************************************************/
 package org.openhealthtools.mdht.uml.cda.cdt.impl;
 
+import java.lang.Iterable;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.ecore.EClass;
+import org.eclipse.emf.ecore.EObject;
+import org.openhealthtools.mdht.emf.runtime.util.Initializer;
 import org.openhealthtools.mdht.uml.cda.cdt.CDTPackage;
 import org.openhealthtools.mdht.uml.cda.cdt.ObjectiveSection;
 import org.openhealthtools.mdht.uml.cda.cdt.operations.ObjectiveSectionOperations;
@@ -31,77 +34,86 @@ import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
  */
 public class ObjectiveSectionImpl extends SectionImpl implements ObjectiveSection {
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	protected ObjectiveSectionImpl() {
-		super();
-	}
+    super();
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	@Override
 	protected EClass eStaticClass() {
-		return CDTPackage.Literals.OBJECTIVE_SECTION;
-	}
+    return CDTPackage.Literals.OBJECTIVE_SECTION;
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateObjectiveSectionHasClinicalStatements(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ObjectiveSectionOperations.validateObjectiveSectionHasClinicalStatements(this, diagnostics, context);
-	}
+    return ObjectiveSectionOperations.validateObjectiveSectionHasClinicalStatements(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateObjectiveSectionTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ObjectiveSectionOperations.validateObjectiveSectionTemplateId(this, diagnostics, context);
-	}
+    return ObjectiveSectionOperations.validateObjectiveSectionTemplateId(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateObjectiveSectionCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ObjectiveSectionOperations.validateObjectiveSectionCode(this, diagnostics, context);
-	}
+    return ObjectiveSectionOperations.validateObjectiveSectionCode(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateObjectiveSectionText(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ObjectiveSectionOperations.validateObjectiveSectionText(this, diagnostics, context);
-	}
+    return ObjectiveSectionOperations.validateObjectiveSectionText(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateObjectiveSectionTitle(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ObjectiveSectionOperations.validateObjectiveSectionTitle(this, diagnostics, context);
-	}
+    return ObjectiveSectionOperations.validateObjectiveSectionTitle(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public ObjectiveSection init() {
-		CDAUtil.init(this);
-		return this;
-	}
+      return Initializer.Util.init(this);
+  }
+
+  /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    public ObjectiveSection init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
 } // ObjectiveSectionImpl

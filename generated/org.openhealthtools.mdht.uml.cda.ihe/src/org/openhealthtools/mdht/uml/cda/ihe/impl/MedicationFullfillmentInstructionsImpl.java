@@ -10,10 +10,13 @@
  *******************************************************************************/
 package org.openhealthtools.mdht.uml.cda.ihe.impl;
 
+import java.lang.Iterable;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.ecore.EClass;
+import org.eclipse.emf.ecore.EObject;
+import org.openhealthtools.mdht.emf.runtime.util.Initializer;
 import org.openhealthtools.mdht.uml.cda.ccd.impl.FulfillmentInstructionImpl;
 import org.openhealthtools.mdht.uml.cda.ihe.IHEPackage;
 import org.openhealthtools.mdht.uml.cda.ihe.MedicationFullfillmentInstructions;
@@ -32,87 +35,91 @@ import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
 public class MedicationFullfillmentInstructionsImpl extends FulfillmentInstructionImpl implements
 		MedicationFullfillmentInstructions {
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	protected MedicationFullfillmentInstructionsImpl() {
-		super();
-	}
+    super();
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	@Override
 	protected EClass eStaticClass() {
-		return IHEPackage.Literals.MEDICATION_FULLFILLMENT_INSTRUCTIONS;
-	}
+    return IHEPackage.Literals.MEDICATION_FULLFILLMENT_INSTRUCTIONS;
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateMedicationFullfillmentInstructionsTemplateId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return MedicationFullfillmentInstructionsOperations.validateMedicationFullfillmentInstructionsTemplateId(
-			this, diagnostics, context);
-	}
+    return MedicationFullfillmentInstructionsOperations.validateMedicationFullfillmentInstructionsTemplateId(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateMedicationFullfillmentInstructionsCodeP(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return MedicationFullfillmentInstructionsOperations.validateMedicationFullfillmentInstructionsCodeP(
-			this, diagnostics, context);
-	}
+    return MedicationFullfillmentInstructionsOperations.validateMedicationFullfillmentInstructionsCodeP(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateMedicationFullfillmentInstructionsCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return MedicationFullfillmentInstructionsOperations.validateMedicationFullfillmentInstructionsCode(
-			this, diagnostics, context);
-	}
+    return MedicationFullfillmentInstructionsOperations.validateMedicationFullfillmentInstructionsCode(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateMedicationFullfillmentInstructionsStatusCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return MedicationFullfillmentInstructionsOperations.validateMedicationFullfillmentInstructionsStatusCode(
-			this, diagnostics, context);
-	}
+    return MedicationFullfillmentInstructionsOperations.validateMedicationFullfillmentInstructionsStatusCode(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateMedicationFullfillmentInstructionsText(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return MedicationFullfillmentInstructionsOperations.validateMedicationFullfillmentInstructionsText(
-			this, diagnostics, context);
-	}
+    return MedicationFullfillmentInstructionsOperations.validateMedicationFullfillmentInstructionsText(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	@Override
 	public MedicationFullfillmentInstructions init() {
-		CDAUtil.init(this);
-		return this;
-	}
+      return Initializer.Util.init(this);
+  }
+
+  /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    public MedicationFullfillmentInstructions init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
 } // MedicationFullfillmentInstructionsImpl
