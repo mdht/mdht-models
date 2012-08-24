@@ -57,9 +57,9 @@ public interface InstructionsSection extends
 	EList<Instructions> getmu2consolInstructionss();
 
 	/**
-   * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * @generated
-   */
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * @generated
+	 */
 	public InstructionsSection init();
 
 	/**

@@ -37,8 +37,9 @@ public class Test {
 		// System.out.println("=====testAsSOCR==========");
 
 		// validateSOCR("socr_sample");
-		validateDocument("socr_sample", "SummaryOfCareRecord");
+//		validateDocument("socr_sample", "SummaryOfCareRecord");
 		// validateDocument("socr_sample","ClinicalOfficeVisitSummary");
+		validateDocument("socr_sample", "VDTInpatientPatientInfo");
 	}
 
 	public static void testSOCR(String fileName) {
@@ -103,6 +104,14 @@ public class Test {
 				.equalsIgnoreCase("ClinicalOfficeVisitSummary")) {
 			docType = Mu2consolPackage.eINSTANCE
 					.getClinicalOfficeVisitSummary();
+		}else if (asDocumentType
+				.equalsIgnoreCase("VDTAmbulatoryPatientInfo")) {
+			docType = Mu2consolPackage.eINSTANCE
+					.getVDTAmbulatoryPatientInfo();
+		}else if (asDocumentType
+				.equalsIgnoreCase("VDTInpatientPatientInfo")) {
+			docType = Mu2consolPackage.eINSTANCE
+					.getVDTInpatientPatientInfo();
 		}
 
 		try {

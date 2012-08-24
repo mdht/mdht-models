@@ -32,47 +32,47 @@ public class AssessmentAndPlanForConditionOrConcernImpl extends
 		AssessmentAndPlanSectionImpl implements
 		AssessmentAndPlanForConditionOrConcern {
 	/**
-   * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * @generated
-   */
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * @generated
+	 */
 	protected AssessmentAndPlanForConditionOrConcernImpl() {
-    super();
-  }
+		super();
+	}
 
 	/**
-   * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * @generated
-   */
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * @generated
+	 */
 	@Override
 	protected EClass eStaticClass() {
-    return Mu2consolPackage.Literals.ASSESSMENT_AND_PLAN_FOR_CONDITION_OR_CONCERN;
-  }
+		return Mu2consolPackage.Literals.ASSESSMENT_AND_PLAN_FOR_CONDITION_OR_CONCERN;
+	}
 
 	/**
-   * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * @generated
-   */
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * @generated
+	 */
 	public boolean validateAssessmentAndPlanForConditionOrConcernProblemObservation(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return AssessmentAndPlanForConditionOrConcernOperations.validateAssessmentAndPlanForConditionOrConcernProblemObservation(this, diagnostics, context);
-  }
+		return AssessmentAndPlanForConditionOrConcernOperations.validateAssessmentAndPlanForConditionOrConcernProblemObservation(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * @generated
-   */
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * @generated
+	 */
 	public ProblemObservation getProblemObservation() {
-    return AssessmentAndPlanForConditionOrConcernOperations.getProblemObservation(this);
-  }
+		return AssessmentAndPlanForConditionOrConcernOperations.getProblemObservation(this);
+	}
 
 	/**
-   * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * @generated
-   */
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * @generated
+	 */
 	@Override
 	public AssessmentAndPlanForConditionOrConcern init() {
-      return Initializer.Util.init(this);
-  }
+	    return Initializer.Util.init(this);
+	}
 
 	/**
      * <!-- begin-user-doc --> <!-- end-user-doc -->

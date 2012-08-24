@@ -33,63 +33,63 @@ public class AssessmentAndPlanForCarePlanningImpl extends
 		AssessmentAndPlanSectionImpl implements
 		AssessmentAndPlanForCarePlanning {
 	/**
-   * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * @generated
-   */
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * @generated
+	 */
 	protected AssessmentAndPlanForCarePlanningImpl() {
-    super();
-  }
+		super();
+	}
 
 	/**
-   * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * @generated
-   */
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * @generated
+	 */
 	@Override
 	protected EClass eStaticClass() {
-    return Mu2consolPackage.Literals.ASSESSMENT_AND_PLAN_FOR_CARE_PLANNING;
-  }
+		return Mu2consolPackage.Literals.ASSESSMENT_AND_PLAN_FOR_CARE_PLANNING;
+	}
 
 	/**
-   * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * @generated
-   */
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * @generated
+	 */
 	public boolean validateAssessmentAndPlanForCarePlanningOneOfPlanOfCareEntry(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return AssessmentAndPlanForCarePlanningOperations.validateAssessmentAndPlanForCarePlanningOneOfPlanOfCareEntry(this, diagnostics, context);
-  }
+		return AssessmentAndPlanForCarePlanningOperations.validateAssessmentAndPlanForCarePlanningOneOfPlanOfCareEntry(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * @generated
-   */
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * @generated
+	 */
 	public PlanOfCareActivityProcedure getPlanOfCareActivityProcedure() {
-    return AssessmentAndPlanForCarePlanningOperations.getPlanOfCareActivityProcedure(this);
-  }
+		return AssessmentAndPlanForCarePlanningOperations.getPlanOfCareActivityProcedure(this);
+	}
 
 	/**
-   * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * @generated
-   */
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * @generated
+	 */
 	public PlanOfCareActivitySubstanceAdministration getPlanOfCareActivitySubstanceAdministration() {
-    return AssessmentAndPlanForCarePlanningOperations.getPlanOfCareActivitySubstanceAdministration(this);
-  }
+		return AssessmentAndPlanForCarePlanningOperations.getPlanOfCareActivitySubstanceAdministration(this);
+	}
 
 	/**
-   * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * @generated
-   */
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * @generated
+	 */
 	public PlanOfCareActivitySupply getPlanOfCareActivitySupply() {
-    return AssessmentAndPlanForCarePlanningOperations.getPlanOfCareActivitySupply(this);
-  }
+		return AssessmentAndPlanForCarePlanningOperations.getPlanOfCareActivitySupply(this);
+	}
 
 	/**
-   * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * @generated
-   */
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * @generated
+	 */
 	@Override
 	public AssessmentAndPlanForCarePlanning init() {
-      return Initializer.Util.init(this);
-  }
+	    return Initializer.Util.init(this);
+	}
 
 	/**
      * <!-- begin-user-doc --> <!-- end-user-doc -->

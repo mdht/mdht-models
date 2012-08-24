@@ -58,9 +58,9 @@ public interface HospitalAdmissionDiagnosisSection
 	HospitalAdmissionDiagnosis getmu2consolHospitalAdmissionDiagnosis();
 
 	/**
-   * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * @generated
-   */
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * @generated
+	 */
 	public HospitalAdmissionDiagnosisSection init();
 
 	/**

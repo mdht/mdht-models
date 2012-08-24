@@ -93,9 +93,9 @@ public interface PlanOfCareSection extends
 	PlanOfCareActivityObservation getmu2consolPlanOfCareActivityObservation();
 
 	/**
-   * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * @generated
-   */
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * @generated
+	 */
 	public PlanOfCareSection init();
 
 	/**

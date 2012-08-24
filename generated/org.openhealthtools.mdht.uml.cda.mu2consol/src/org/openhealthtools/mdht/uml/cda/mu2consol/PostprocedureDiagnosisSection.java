@@ -57,9 +57,9 @@ public interface PostprocedureDiagnosisSection extends
 	PostprocedureDiagnosis getmu2consolPostprocedureDiagnosis();
 
 	/**
-   * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * @generated
-   */
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * @generated
+	 */
 	public PostprocedureDiagnosisSection init();
 
 	/**
