@@ -1183,7 +1183,7 @@ This is different from a cognitive status problem observation, which is a clinic
         <specification xmi:type="uml:OpaqueExpression" xmi:id="_g5HEUOZhEeGINOJ_SD9_dA">
           <language>Analysis</language>
           <language>OCL</language>
-          <body>If value/@xsi:type=“CD�?, SHOULD contain a code from SNOMED CT (CodeSystem: 2.16.840.1.113883.6.96)</body>
+          <body>If value/@xsi:type=CD, SHOULD contain a code from SNOMED CT (CodeSystem: 2.16.840.1.113883.6.96)</body>
           <body>self.value->forAll(val | val.oclIsTypeOf(datatypes::CD) implies val.oclAsType(datatypes::CD).codeSystem = '2.16.840.1.113883.6.96')</body>
         </specification>
       </ownedRule>
@@ -1488,7 +1488,8 @@ An appropriate nullFlavor can be used when the organizer/code or organizer/id is
         <constrainedElement xmi:type="uml:Constraint" href=".controlled/consol-problems.uml#_jlZuoCf3EeGO5_JBy9h6BA"/>
         <specification xmi:type="uml:OpaqueExpression" xmi:id="_spCtYubpEeGINOJ_SD9_dA">
           <language>Analysis</language>
-          <body>If the diagnosis is unknown or the SNOMED code is unknown, @nullFlavor SHOULD be &#xD;&#xA;UNK.  If the code is something other than SNOMED, @nullFlavor SHOULD be OTH and the other code SHOULD be placed in the translation element</body>
+          <body>If the diagnosis is unknown or the SNOMED code is unknown, @nullFlavor SHOULD be &#xD;
+UNK.  If the code is something other than SNOMED, @nullFlavor SHOULD be OTH and the other code SHOULD be placed in the translation element</body>
         </specification>
       </ownedRule>
       <generalization xmi:id="_whRx8ObjEeGINOJ_SD9_dA">
@@ -1599,7 +1600,7 @@ An appropriate nullFlavor can be used when the organizer/code or organizer/id is
         <specification xmi:type="uml:OpaqueExpression" xmi:id="_pRJ1cebyEeGINOJ_SD9_dA">
           <language>Analysis</language>
           <language>OCL</language>
-          <body>If value/@xsi:type=“CD�?, SHOULD contain a code from SNOMED CT (CodeSystem: 2.16.840.1.113883.6.96)</body>
+          <body>If value/@xsi:type=CD, SHOULD contain a code from SNOMED CT (CodeSystem: 2.16.840.1.113883.6.96)</body>
           <body>self.value->forAll(val | val.oclIsTypeOf(datatypes::CD) implies val.oclAsType(datatypes::CD).codeSystem = '2.16.840.1.113883.6.96')</body>
         </specification>
       </ownedRule>
@@ -1937,7 +1938,8 @@ An appropriate nullFlavor can be used when the organizer/code or organizer/id is
         <constrainedElement xmi:type="uml:Constraint" href=".controlled/consol-problems.uml#_jlZuoCf3EeGO5_JBy9h6BA"/>
         <specification xmi:type="uml:OpaqueExpression" xmi:id="_CZoQkucFEeGINOJ_SD9_dA">
           <language>Analysis</language>
-          <body>If the diagnosis is unknown or the SNOMED code is unknown, @nullFlavor SHOULD be &#xD;&#xA;UNK.  If the code is something other than SNOMED, @nullFlavor SHOULD be OTH and the other code SHOULD be placed in the translation element</body>
+          <body>If the diagnosis is unknown or the SNOMED code is unknown, @nullFlavor SHOULD be &#xD;
+UNK.  If the code is something other than SNOMED, @nullFlavor SHOULD be OTH and the other code SHOULD be placed in the translation element</body>
         </specification>
       </ownedRule>
       <ownedRule xmi:id="_1uHKwOcFEeGINOJ_SD9_dA" name="targetSiteQualifier" constrainedElement="_9rQowOZbEeGINOJ_SD9_dA">
