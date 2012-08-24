@@ -96,9 +96,9 @@ public interface AssessmentAndPlanForCarePlanning extends
 	PlanOfCareActivitySupply getPlanOfCareActivitySupply();
 
 	/**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @generated
-	 */
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @generated
+   */
 	public AssessmentAndPlanForCarePlanning init();
 
 	/**

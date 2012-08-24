@@ -57,9 +57,9 @@ public interface PreoperativeDiagnosisSection extends
 	PreoperativeDiagnosis getmu2consolPreoperativeDiagnosis();
 
 	/**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @generated
-	 */
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @generated
+   */
 	public PreoperativeDiagnosisSection init();
 
 	/**
