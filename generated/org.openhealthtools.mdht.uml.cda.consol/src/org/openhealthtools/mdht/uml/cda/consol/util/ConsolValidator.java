@@ -54,19 +54,19 @@ public class ConsolValidator extends EObjectValidator {
 	public static final int GENERAL_HEADER_CONSTRAINTS__GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_SHALL = 1;
 
 	/**
-	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate General Header Constraints US Realm Address SHOULD' of 'General Header Constraints'.
-	 * <!-- begin-user-doc -->
+	* The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate General Header Constraints US Realm Address SHOULD' of 'General Header Constraints'.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public static final int GENERAL_HEADER_CONSTRAINTS__GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_SHOULD = 2;
 
 	/**
-	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate General Header Constraints US Realm Patient Name' of 'General Header Constraints'.
-	 * <!-- begin-user-doc -->
+	* The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate General Header Constraints US Realm Patient Name' of 'General Header Constraints'.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public static final int GENERAL_HEADER_CONSTRAINTS__GENERAL_HEADER_CONSTRAINTS_US_REALM_PATIENT_NAME = 3;
 
 	/**
@@ -294,19 +294,19 @@ public class ConsolValidator extends EObjectValidator {
 	public static final int GENERAL_HEADER_CONSTRAINTS__GENERAL_HEADER_CONSTRAINTS_DOCUMENTATION_OF = 31;
 
 	/**
-	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate General Header Constraints Record Target Patient Role Patient Guardian TEL Use' of 'General Header Constraints'.
-	 * <!-- begin-user-doc -->
+	* The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate General Header Constraints Record Target Patient Role Patient Guardian TEL Use' of 'General Header Constraints'.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public static final int GENERAL_HEADER_CONSTRAINTS__GENERAL_HEADER_CONSTRAINTS_RECORD_TARGET_PATIENT_ROLE_PATIENT_GUARDIAN_TEL_USE = 32;
 
 	/**
-	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate General Header Constraints Author Assigned Author Authoring Device Manufacturer Model Name' of 'General Header Constraints'.
-	 * <!-- begin-user-doc -->
+	* The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate General Header Constraints Author Assigned Author Authoring Device Manufacturer Model Name' of 'General Header Constraints'.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public static final int GENERAL_HEADER_CONSTRAINTS__GENERAL_HEADER_CONSTRAINTS_AUTHOR_ASSIGNED_AUTHOR_AUTHORING_DEVICE_MANUFACTURER_MODEL_NAME = 78;
 
 	/**
@@ -990,11 +990,11 @@ public class ConsolValidator extends EObjectValidator {
 	public static final int GENERAL_HEADER_CONSTRAINTS__GENERAL_HEADER_CONSTRAINTS_RECORD_TARGET_PATIENT_ROLE_PROVIDER_ORGANIZATION_TEL_USE = 64;
 
 	/**
-	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate General Header Constraints Record Target Patient Role Addr' of 'General Header Constraints'.
-	 * <!-- begin-user-doc -->
+	* The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate General Header Constraints Record Target Patient Role Addr' of 'General Header Constraints'.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public static final int GENERAL_HEADER_CONSTRAINTS__GENERAL_HEADER_CONSTRAINTS_RECORD_TARGET_PATIENT_ROLE_ADDR = 70;
 
 	/**
@@ -16826,22 +16826,22 @@ public class ConsolValidator extends EObjectValidator {
 	}
 
 	/**
-	 * Validates the validateGeneralHeaderConstraintsUSRealmAddressSHOULD constraint of '<em>General Header Constraints</em>'.
-	 * <!-- begin-user-doc -->
+	* Validates the validateGeneralHeaderConstraintsUSRealmAddressSHOULD constraint of '<em>General Header Constraints</em>'.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsUSRealmAddressSHOULD(
 			GeneralHeaderConstraints generalHeaderConstraints, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return generalHeaderConstraints.validateGeneralHeaderConstraintsUSRealmAddressSHOULD(diagnostics, context);
 	}
 
 	/**
-	 * Validates the validateGeneralHeaderConstraintsUSRealmPatientName constraint of '<em>General Header Constraints</em>'.
-	 * <!-- begin-user-doc -->
+	* Validates the validateGeneralHeaderConstraintsUSRealmPatientName constraint of '<em>General Header Constraints</em>'.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsUSRealmPatientName(
 			GeneralHeaderConstraints generalHeaderConstraints, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return generalHeaderConstraints.validateGeneralHeaderConstraintsUSRealmPatientName(diagnostics, context);
@@ -17157,11 +17157,11 @@ public class ConsolValidator extends EObjectValidator {
 	}
 
 	/**
-	 * Validates the validateGeneralHeaderConstraintsRecordTargetPatientRolePatientGuardianTELUse constraint of '<em>General Header Constraints</em>'.
-	 * <!-- begin-user-doc -->
+	* Validates the validateGeneralHeaderConstraintsRecordTargetPatientRolePatientGuardianTELUse constraint of '<em>General Header Constraints</em>'.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRolePatientGuardianTELUse(
 			GeneralHeaderConstraints generalHeaderConstraints, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return generalHeaderConstraints.validateGeneralHeaderConstraintsRecordTargetPatientRolePatientGuardianTELUse(
@@ -17169,11 +17169,11 @@ public class ConsolValidator extends EObjectValidator {
 	}
 
 	/**
-	 * Validates the validateGeneralHeaderConstraintsAuthorAssignedAuthorAuthoringDeviceManufacturerModelName constraint of '<em>General Header Constraints</em>'.
-	 * <!-- begin-user-doc -->
+	* Validates the validateGeneralHeaderConstraintsAuthorAssignedAuthorAuthoringDeviceManufacturerModelName constraint of '<em>General Header Constraints</em>'.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsAuthorAssignedAuthorAuthoringDeviceManufacturerModelName(
 			GeneralHeaderConstraints generalHeaderConstraints, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return generalHeaderConstraints.validateGeneralHeaderConstraintsAuthorAssignedAuthorAuthoringDeviceManufacturerModelName(
@@ -18191,11 +18191,11 @@ public class ConsolValidator extends EObjectValidator {
 	}
 
 	/**
-	 * Validates the validateGeneralHeaderConstraintsRecordTargetPatientRoleAddr constraint of '<em>General Header Constraints</em>'.
-	 * <!-- begin-user-doc -->
+	* Validates the validateGeneralHeaderConstraintsRecordTargetPatientRoleAddr constraint of '<em>General Header Constraints</em>'.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRoleAddr(
 			GeneralHeaderConstraints generalHeaderConstraints, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return generalHeaderConstraints.validateGeneralHeaderConstraintsRecordTargetPatientRoleAddr(
