@@ -183,15 +183,6 @@ public interface CDTFactory extends EFactory {
 	HospitalDischargeStudiesSummarySection createHospitalDischargeStudiesSummarySection();
 
 	/**
-   * Returns a new object of class '<em>AAAAA</em>'.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @return a new object of class '<em>AAAAA</em>'.
-   * @generated
-   */
-  AAAAA createAAAAA();
-
-  /**
    * Returns a new object of class '<em>History Of Present Illness</em>'.
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->

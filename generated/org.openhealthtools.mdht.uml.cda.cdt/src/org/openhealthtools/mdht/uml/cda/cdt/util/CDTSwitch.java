@@ -451,17 +451,6 @@ public class CDTSwitch<T> {
         if (result == null) result = defaultCase(theEObject);
         return result;
       }
-      case CDTPackage.AAAAA:
-      {
-        AAAAA aaaaa = (AAAAA)theEObject;
-        T result = caseAAAAA(aaaaa);
-        if (result == null) result = caseGeneralHeaderConstraints(aaaaa);
-        if (result == null) result = caseClinicalDocument(aaaaa);
-        if (result == null) result = caseAct(aaaaa);
-        if (result == null) result = caseInfrastructureRoot(aaaaa);
-        if (result == null) result = defaultCase(theEObject);
-        return result;
-      }
       case CDTPackage.CDT_REGISTRY_DELEGATE:
       {
         CDTRegistryDelegate cdtRegistryDelegate = (CDTRegistryDelegate)theEObject;
@@ -910,22 +899,6 @@ public class CDTSwitch<T> {
   }
 
 	/**
-   * Returns the result of interpreting the object as an instance of '<em>AAAAA</em>'.
-   * <!-- begin-user-doc -->
-   * This implementation returns null;
-   * returning a non-null result will terminate the switch.
-   * <!-- end-user-doc -->
-   * @param object the target of the switch.
-   * @return the result of interpreting the object as an instance of '<em>AAAAA</em>'.
-   * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
-   * @generated
-   */
-  public T caseAAAAA(AAAAA object)
-  {
-    return null;
-  }
-
-  /**
    * Returns the result of interpreting the object as an instance of '<em>History Of Present Illness</em>'.
    * <!-- begin-user-doc -->
 	 * This implementation returns null;

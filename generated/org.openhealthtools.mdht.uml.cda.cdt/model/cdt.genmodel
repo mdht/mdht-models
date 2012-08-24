@@ -801,7 +801,6 @@
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="cdt.ecore#//HospitalDischargeStudiesSummarySection/HospitalDischargeStudiesSummarySectionTitle/context"/>
       </genOperations>
     </genClasses>
-    <genClasses xsi:type="genmodel:GenClass" ecoreClass="cdt.ecore#//AAAAA"/>
     <genClasses xsi:type="genmodel:GenClass" ecoreClass="cdt.ecore#//CDTRegistryDelegate"/>
   </genPackages>
 </genmodel:GenModel>

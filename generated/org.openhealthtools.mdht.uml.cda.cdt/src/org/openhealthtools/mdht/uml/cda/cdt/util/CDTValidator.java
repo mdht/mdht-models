@@ -1591,8 +1591,6 @@ public class CDTValidator extends EObjectValidator {
         return validateUnstructuredDocument((UnstructuredDocument)value, diagnostics, context);
       case CDTPackage.HOSPITAL_DISCHARGE_STUDIES_SUMMARY_SECTION:
         return validateHospitalDischargeStudiesSummarySection((HospitalDischargeStudiesSummarySection)value, diagnostics, context);
-      case CDTPackage.AAAAA:
-        return validateAAAAA((AAAAA)value, diagnostics, context);
       case CDTPackage.CDT_REGISTRY_DELEGATE:
         return validateCDTRegistryDelegate((CDTRegistryDelegate)value, diagnostics, context);
       default:
@@ -3813,65 +3811,6 @@ public class CDTValidator extends EObjectValidator {
   }
 
 	/**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public boolean validateAAAAA(AAAAA aaaaa, DiagnosticChain diagnostics, Map<Object, Object> context)
-  {
-    if (!validate_NoCircularContainment(aaaaa, diagnostics, context)) return false;
-    boolean result = validate_EveryMultiplicityConforms(aaaaa, diagnostics, context);
-    if (result || diagnostics != null) result &= validate_EveryDataValueConforms(aaaaa, diagnostics, context);
-    if (result || diagnostics != null) result &= validate_EveryReferenceIsContained(aaaaa, diagnostics, context);
-    if (result || diagnostics != null) result &= validate_EveryProxyResolves(aaaaa, diagnostics, context);
-    if (result || diagnostics != null) result &= validate_UniqueID(aaaaa, diagnostics, context);
-    if (result || diagnostics != null) result &= validate_EveryKeyUnique(aaaaa, diagnostics, context);
-    if (result || diagnostics != null) result &= validate_EveryMapEntryUnique(aaaaa, diagnostics, context);
-    if (result || diagnostics != null) result &= cdaValidator.validateClinicalDocument_validateClassCode(aaaaa, diagnostics, context);
-    if (result || diagnostics != null) result &= cdaValidator.validateClinicalDocument_validateMoodCode(aaaaa, diagnostics, context);
-    if (result || diagnostics != null) result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsPersonHasName(aaaaa, diagnostics, context);
-    if (result || diagnostics != null) result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRolesShallHaveAddrAndTelecom(aaaaa, diagnostics, context);
-    if (result || diagnostics != null) result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRolesShouldHaveAddrAndTelecom(aaaaa, diagnostics, context);
-    if (result || diagnostics != null) result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsOrganizationsHaveContactInfo(aaaaa, diagnostics, context);
-    if (result || diagnostics != null) result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsTimePreciseToDay(aaaaa, diagnostics, context);
-    if (result || diagnostics != null) result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsTimePreciseToYear(aaaaa, diagnostics, context);
-    if (result || diagnostics != null) result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsTelephoneMatchesRegex(aaaaa, diagnostics, context);
-    if (result || diagnostics != null) result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsHasTelephoneDialingDigits(aaaaa, diagnostics, context);
-    if (result || diagnostics != null) result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsUnknownTelephoneUsesNullFlavor(aaaaa, diagnostics, context);
-    if (result || diagnostics != null) result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsTypeIdExtension(aaaaa, diagnostics, context);
-    if (result || diagnostics != null) result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsIdRootFormat(aaaaa, diagnostics, context);
-    if (result || diagnostics != null) result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsOidLength(aaaaa, diagnostics, context);
-    if (result || diagnostics != null) result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsLanguageCodeForm(aaaaa, diagnostics, context);
-    if (result || diagnostics != null) result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsSetIdAndVersionNumber(aaaaa, diagnostics, context);
-    if (result || diagnostics != null) result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsSetIdAndIdAreUnique(aaaaa, diagnostics, context);
-    if (result || diagnostics != null) result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsCopyTimeNotPresent(aaaaa, diagnostics, context);
-    if (result || diagnostics != null) result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsHasRecordTargetPatientRole(aaaaa, diagnostics, context);
-    if (result || diagnostics != null) result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsHasPatientBirthTime(aaaaa, diagnostics, context);
-    if (result || diagnostics != null) result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsHasAdministrativeGenderCode(aaaaa, diagnostics, context);
-    if (result || diagnostics != null) result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsHasProviderOrganization(aaaaa, diagnostics, context);
-    if (result || diagnostics != null) result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsHasAuthorTime(aaaaa, diagnostics, context);
-    if (result || diagnostics != null) result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsHasAssignedAuthorId(aaaaa, diagnostics, context);
-    if (result || diagnostics != null) result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsHasAssignedAuthorPersonOrDevice(aaaaa, diagnostics, context);
-    if (result || diagnostics != null) result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsHasDataEntererAssignedPerson(aaaaa, diagnostics, context);
-    if (result || diagnostics != null) result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsHasDataEntererTime(aaaaa, diagnostics, context);
-    if (result || diagnostics != null) result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsHasInformant(aaaaa, diagnostics, context);
-    if (result || diagnostics != null) result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsHasInformantAssignedPersonOrRelatedPerson(aaaaa, diagnostics, context);
-    if (result || diagnostics != null) result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsLegalAuthenticatorHasAssignedPerson(aaaaa, diagnostics, context);
-    if (result || diagnostics != null) result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsAuthenticatorHasAssignedPerson(aaaaa, diagnostics, context);
-    if (result || diagnostics != null) result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsTimePreciseToSecond(aaaaa, diagnostics, context);
-    if (result || diagnostics != null) result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsTimePreciseToYearAndDay(aaaaa, diagnostics, context);
-    if (result || diagnostics != null) result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsTemplateId(aaaaa, diagnostics, context);
-    if (result || diagnostics != null) result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsCode(aaaaa, diagnostics, context);
-    if (result || diagnostics != null) result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsEffectiveTime(aaaaa, diagnostics, context);
-    if (result || diagnostics != null) result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsId(aaaaa, diagnostics, context);
-    if (result || diagnostics != null) result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsLanguageCode(aaaaa, diagnostics, context);
-    if (result || diagnostics != null) result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRealmCode(aaaaa, diagnostics, context);
-    if (result || diagnostics != null) result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsTitle(aaaaa, diagnostics, context);
-    if (result || diagnostics != null) result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsTypeId(aaaaa, diagnostics, context);
-    return result;
-  }
-
-  /**
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
    * @generated
