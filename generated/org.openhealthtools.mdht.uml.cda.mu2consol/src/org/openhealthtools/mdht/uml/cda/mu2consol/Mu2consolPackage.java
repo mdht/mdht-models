@@ -593,7 +593,7 @@ public interface Mu2consolPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.mu2consol.impl.Mu2consolPackageImpl#getAssessmentAndPlanForCarePlanning()
 	 * @generated
 	 */
-	int ASSESSMENT_AND_PLAN_FOR_CARE_PLANNING = 13;
+	int ASSESSMENT_AND_PLAN_FOR_CARE_PLANNING = 14;
 
 	/**
      * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.mu2consol.impl.PlanOfCareSectionImpl <em>Plan Of Care Section</em>}' class.
@@ -615,7 +615,7 @@ public interface Mu2consolPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.mu2consol.impl.Mu2consolPackageImpl#getAssessmentAndPlanForConditionOrConcern()
 	 * @generated
 	 */
-	int ASSESSMENT_AND_PLAN_FOR_CONDITION_OR_CONCERN = 14;
+	int ASSESSMENT_AND_PLAN_FOR_CONDITION_OR_CONCERN = 15;
 
 	/**
      * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.mu2consol.impl.AssessmentAndPlanSectionImpl <em>Assessment And Plan Section</em>}' class.
@@ -635,7 +635,7 @@ public interface Mu2consolPackage extends EPackage {
      * @see org.openhealthtools.mdht.uml.cda.mu2consol.impl.Mu2consolPackageImpl#getInstructionsSection()
      * @generated
      */
-	int INSTRUCTIONS_SECTION = 15;
+	int INSTRUCTIONS_SECTION = 16;
 
 	/**
      * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.mu2consol.impl.AssessmentSectionImpl <em>Assessment Section</em>}' class.
@@ -689,7 +689,7 @@ public interface Mu2consolPackage extends EPackage {
      * @see org.openhealthtools.mdht.uml.cda.mu2consol.impl.Mu2consolPackageImpl#getPostprocedureDiagnosisSection()
      * @generated
      */
-	int POSTPROCEDURE_DIAGNOSIS_SECTION = 12;
+	int POSTPROCEDURE_DIAGNOSIS_SECTION = 13;
 
 	/**
      * The feature id for the '<em><b>Realm Code</b></em>' containment reference list.
@@ -2158,6 +2158,175 @@ public interface Mu2consolPackage extends EPackage {
 	int HOSPITAL_ADMISSION_MEDICATIONS_SECTION_ENTRIES_OPTIONAL_FEATURE_COUNT = ConsolPackage.HOSPITAL_ADMISSION_MEDICATIONS_SECTION_ENTRIES_OPTIONAL_FEATURE_COUNT + 0;
 
 	/**
+     * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.mu2consol.impl.SocialHistorySectionImpl <em>Social History Section</em>}' class.
+     * <!-- begin-user-doc --> <!--
+	 * end-user-doc -->
+     * @see org.openhealthtools.mdht.uml.cda.mu2consol.impl.SocialHistorySectionImpl
+     * @see org.openhealthtools.mdht.uml.cda.mu2consol.impl.Mu2consolPackageImpl#getSocialHistorySection()
+     * @generated
+     */
+	int SOCIAL_HISTORY_SECTION = 11;
+
+	/**
+     * The feature id for the '<em><b>Realm Code</b></em>' containment reference list.
+     * <!-- begin-user-doc --> <!-- end-user-doc -->
+     * @generated
+     * @ordered
+     */
+	int SOCIAL_HISTORY_SECTION__REALM_CODE = ConsolPackage.SOCIAL_HISTORY_SECTION__REALM_CODE;
+
+	/**
+     * The feature id for the '<em><b>Type Id</b></em>' containment reference.
+     * <!-- begin-user-doc --> <!-- end-user-doc -->
+     * @generated
+     * @ordered
+     */
+	int SOCIAL_HISTORY_SECTION__TYPE_ID = ConsolPackage.SOCIAL_HISTORY_SECTION__TYPE_ID;
+
+	/**
+     * The feature id for the '<em><b>Template Id</b></em>' containment reference list.
+     * <!-- begin-user-doc --> <!-- end-user-doc -->
+     * @generated
+     * @ordered
+     */
+	int SOCIAL_HISTORY_SECTION__TEMPLATE_ID = ConsolPackage.SOCIAL_HISTORY_SECTION__TEMPLATE_ID;
+
+	/**
+	 * The feature id for the '<em><b>Id</b></em>' containment reference. <!--
+	 * begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @generated
+	 * @ordered
+	 */
+	int SOCIAL_HISTORY_SECTION__ID = ConsolPackage.SOCIAL_HISTORY_SECTION__ID;
+
+	/**
+	 * The feature id for the '<em><b>Code</b></em>' containment reference. <!--
+	 * begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @generated
+	 * @ordered
+	 */
+	int SOCIAL_HISTORY_SECTION__CODE = ConsolPackage.SOCIAL_HISTORY_SECTION__CODE;
+
+	/**
+     * The feature id for the '<em><b>Title</b></em>' containment reference.
+     * <!-- begin-user-doc --> <!-- end-user-doc -->
+     * @generated
+     * @ordered
+     */
+	int SOCIAL_HISTORY_SECTION__TITLE = ConsolPackage.SOCIAL_HISTORY_SECTION__TITLE;
+
+	/**
+	 * The feature id for the '<em><b>Text</b></em>' containment reference. <!--
+	 * begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @generated
+	 * @ordered
+	 */
+	int SOCIAL_HISTORY_SECTION__TEXT = ConsolPackage.SOCIAL_HISTORY_SECTION__TEXT;
+
+	/**
+     * The feature id for the '<em><b>Confidentiality Code</b></em>' containment reference.
+     * <!-- begin-user-doc --> <!-- end-user-doc -->
+     * @generated
+     * @ordered
+     */
+	int SOCIAL_HISTORY_SECTION__CONFIDENTIALITY_CODE = ConsolPackage.SOCIAL_HISTORY_SECTION__CONFIDENTIALITY_CODE;
+
+	/**
+     * The feature id for the '<em><b>Language Code</b></em>' containment reference.
+     * <!-- begin-user-doc --> <!-- end-user-doc -->
+     * @generated
+     * @ordered
+     */
+	int SOCIAL_HISTORY_SECTION__LANGUAGE_CODE = ConsolPackage.SOCIAL_HISTORY_SECTION__LANGUAGE_CODE;
+
+	/**
+     * The feature id for the '<em><b>Subject</b></em>' containment reference.
+     * <!-- begin-user-doc --> <!-- end-user-doc -->
+     * @generated
+     * @ordered
+     */
+	int SOCIAL_HISTORY_SECTION__SUBJECT = ConsolPackage.SOCIAL_HISTORY_SECTION__SUBJECT;
+
+	/**
+     * The feature id for the '<em><b>Author</b></em>' containment reference list.
+     * <!-- begin-user-doc --> <!-- end-user-doc -->
+     * @generated
+     * @ordered
+     */
+	int SOCIAL_HISTORY_SECTION__AUTHOR = ConsolPackage.SOCIAL_HISTORY_SECTION__AUTHOR;
+
+	/**
+     * The feature id for the '<em><b>Informant</b></em>' containment reference list.
+     * <!-- begin-user-doc --> <!-- end-user-doc -->
+     * @generated
+     * @ordered
+     */
+	int SOCIAL_HISTORY_SECTION__INFORMANT = ConsolPackage.SOCIAL_HISTORY_SECTION__INFORMANT;
+
+	/**
+     * The feature id for the '<em><b>Entry</b></em>' containment reference list.
+     * <!-- begin-user-doc --> <!-- end-user-doc -->
+     * @generated
+     * @ordered
+     */
+	int SOCIAL_HISTORY_SECTION__ENTRY = ConsolPackage.SOCIAL_HISTORY_SECTION__ENTRY;
+
+	/**
+     * The feature id for the '<em><b>Component</b></em>' containment reference list.
+     * <!-- begin-user-doc --> <!-- end-user-doc -->
+     * @generated
+     * @ordered
+     */
+	int SOCIAL_HISTORY_SECTION__COMPONENT = ConsolPackage.SOCIAL_HISTORY_SECTION__COMPONENT;
+
+	/**
+	 * The feature id for the '<em><b>Section Id</b></em>' attribute. <!--
+	 * begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @generated
+	 * @ordered
+	 */
+	int SOCIAL_HISTORY_SECTION__SECTION_ID = ConsolPackage.SOCIAL_HISTORY_SECTION__SECTION_ID;
+
+	/**
+	 * The feature id for the '<em><b>Null Flavor</b></em>' attribute. <!--
+	 * begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @generated
+	 * @ordered
+	 */
+	int SOCIAL_HISTORY_SECTION__NULL_FLAVOR = ConsolPackage.SOCIAL_HISTORY_SECTION__NULL_FLAVOR;
+
+	/**
+	 * The feature id for the '<em><b>Class Code</b></em>' attribute. <!--
+	 * begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @generated
+	 * @ordered
+	 */
+	int SOCIAL_HISTORY_SECTION__CLASS_CODE = ConsolPackage.SOCIAL_HISTORY_SECTION__CLASS_CODE;
+
+	/**
+	 * The feature id for the '<em><b>Mood Code</b></em>' attribute. <!--
+	 * begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @generated
+	 * @ordered
+	 */
+	int SOCIAL_HISTORY_SECTION__MOOD_CODE = ConsolPackage.SOCIAL_HISTORY_SECTION__MOOD_CODE;
+
+	/**
+     * The number of structural features of the '<em>Social History Section</em>' class.
+     * <!-- begin-user-doc --> <!-- end-user-doc -->
+     * @generated
+     * @ordered
+     */
+	int SOCIAL_HISTORY_SECTION_FEATURE_COUNT = ConsolPackage.SOCIAL_HISTORY_SECTION_FEATURE_COUNT + 0;
+
+	/**
      * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.mu2consol.impl.AllergiesSectionEntriesOptionalImpl <em>Allergies Section Entries Optional</em>}' class.
      * <!-- begin-user-doc
 	 * --> <!-- end-user-doc -->
@@ -2165,7 +2334,7 @@ public interface Mu2consolPackage extends EPackage {
      * @see org.openhealthtools.mdht.uml.cda.mu2consol.impl.Mu2consolPackageImpl#getAllergiesSectionEntriesOptional()
      * @generated
      */
-	int ALLERGIES_SECTION_ENTRIES_OPTIONAL = 11;
+	int ALLERGIES_SECTION_ENTRIES_OPTIONAL = 12;
 
 	/**
      * The feature id for the '<em><b>Realm Code</b></em>' containment reference list.
@@ -2969,6 +3138,270 @@ public interface Mu2consolPackage extends EPackage {
 	int INSTRUCTIONS_SECTION_FEATURE_COUNT = ConsolPackage.INSTRUCTIONS_SECTION_FEATURE_COUNT + 0;
 
 	/**
+     * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.mu2consol.impl.ClinicalOfficeVisitSummaryImpl <em>Clinical Office Visit Summary</em>}' class.
+     * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+     * @see org.openhealthtools.mdht.uml.cda.mu2consol.impl.ClinicalOfficeVisitSummaryImpl
+     * @see org.openhealthtools.mdht.uml.cda.mu2consol.impl.Mu2consolPackageImpl#getClinicalOfficeVisitSummary()
+     * @generated
+     */
+	int CLINICAL_OFFICE_VISIT_SUMMARY = 17;
+
+	/**
+     * The feature id for the '<em><b>Realm Code</b></em>' containment reference list.
+     * <!-- begin-user-doc --> <!-- end-user-doc -->
+     * @generated
+     * @ordered
+     */
+	int CLINICAL_OFFICE_VISIT_SUMMARY__REALM_CODE = GENERAL_HEADER_CONSTRAINTS__REALM_CODE;
+
+	/**
+     * The feature id for the '<em><b>Type Id</b></em>' containment reference.
+     * <!-- begin-user-doc --> <!-- end-user-doc -->
+     * @generated
+     * @ordered
+     */
+	int CLINICAL_OFFICE_VISIT_SUMMARY__TYPE_ID = GENERAL_HEADER_CONSTRAINTS__TYPE_ID;
+
+	/**
+     * The feature id for the '<em><b>Template Id</b></em>' containment reference list.
+     * <!-- begin-user-doc --> <!-- end-user-doc -->
+     * @generated
+     * @ordered
+     */
+	int CLINICAL_OFFICE_VISIT_SUMMARY__TEMPLATE_ID = GENERAL_HEADER_CONSTRAINTS__TEMPLATE_ID;
+
+	/**
+	 * The feature id for the '<em><b>Id</b></em>' containment reference. <!--
+	 * begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @generated
+	 * @ordered
+	 */
+	int CLINICAL_OFFICE_VISIT_SUMMARY__ID = GENERAL_HEADER_CONSTRAINTS__ID;
+
+	/**
+	 * The feature id for the '<em><b>Code</b></em>' containment reference. <!--
+	 * begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @generated
+	 * @ordered
+	 */
+	int CLINICAL_OFFICE_VISIT_SUMMARY__CODE = GENERAL_HEADER_CONSTRAINTS__CODE;
+
+	/**
+     * The feature id for the '<em><b>Title</b></em>' containment reference.
+     * <!-- begin-user-doc --> <!-- end-user-doc -->
+     * @generated
+     * @ordered
+     */
+	int CLINICAL_OFFICE_VISIT_SUMMARY__TITLE = GENERAL_HEADER_CONSTRAINTS__TITLE;
+
+	/**
+     * The feature id for the '<em><b>Effective Time</b></em>' containment reference.
+     * <!-- begin-user-doc --> <!-- end-user-doc -->
+     * @generated
+     * @ordered
+     */
+	int CLINICAL_OFFICE_VISIT_SUMMARY__EFFECTIVE_TIME = GENERAL_HEADER_CONSTRAINTS__EFFECTIVE_TIME;
+
+	/**
+     * The feature id for the '<em><b>Confidentiality Code</b></em>' containment reference.
+     * <!-- begin-user-doc --> <!-- end-user-doc -->
+     * @generated
+     * @ordered
+     */
+	int CLINICAL_OFFICE_VISIT_SUMMARY__CONFIDENTIALITY_CODE = GENERAL_HEADER_CONSTRAINTS__CONFIDENTIALITY_CODE;
+
+	/**
+     * The feature id for the '<em><b>Language Code</b></em>' containment reference.
+     * <!-- begin-user-doc --> <!-- end-user-doc -->
+     * @generated
+     * @ordered
+     */
+	int CLINICAL_OFFICE_VISIT_SUMMARY__LANGUAGE_CODE = GENERAL_HEADER_CONSTRAINTS__LANGUAGE_CODE;
+
+	/**
+     * The feature id for the '<em><b>Set Id</b></em>' containment reference.
+     * <!-- begin-user-doc --> <!-- end-user-doc -->
+     * @generated
+     * @ordered
+     */
+	int CLINICAL_OFFICE_VISIT_SUMMARY__SET_ID = GENERAL_HEADER_CONSTRAINTS__SET_ID;
+
+	/**
+     * The feature id for the '<em><b>Version Number</b></em>' containment reference.
+     * <!-- begin-user-doc --> <!-- end-user-doc -->
+     * @generated
+     * @ordered
+     */
+	int CLINICAL_OFFICE_VISIT_SUMMARY__VERSION_NUMBER = GENERAL_HEADER_CONSTRAINTS__VERSION_NUMBER;
+
+	/**
+     * The feature id for the '<em><b>Copy Time</b></em>' containment reference.
+     * <!-- begin-user-doc --> <!-- end-user-doc -->
+     * @generated
+     * @ordered
+     */
+	int CLINICAL_OFFICE_VISIT_SUMMARY__COPY_TIME = GENERAL_HEADER_CONSTRAINTS__COPY_TIME;
+
+	/**
+     * The feature id for the '<em><b>Record Target</b></em>' containment reference list.
+     * <!-- begin-user-doc --> <!-- end-user-doc -->
+     * @generated
+     * @ordered
+     */
+	int CLINICAL_OFFICE_VISIT_SUMMARY__RECORD_TARGET = GENERAL_HEADER_CONSTRAINTS__RECORD_TARGET;
+
+	/**
+     * The feature id for the '<em><b>Author</b></em>' containment reference list.
+     * <!-- begin-user-doc --> <!-- end-user-doc -->
+     * @generated
+     * @ordered
+     */
+	int CLINICAL_OFFICE_VISIT_SUMMARY__AUTHOR = GENERAL_HEADER_CONSTRAINTS__AUTHOR;
+
+	/**
+     * The feature id for the '<em><b>Data Enterer</b></em>' containment reference.
+     * <!-- begin-user-doc --> <!-- end-user-doc -->
+     * @generated
+     * @ordered
+     */
+	int CLINICAL_OFFICE_VISIT_SUMMARY__DATA_ENTERER = GENERAL_HEADER_CONSTRAINTS__DATA_ENTERER;
+
+	/**
+     * The feature id for the '<em><b>Informant</b></em>' containment reference list.
+     * <!-- begin-user-doc --> <!-- end-user-doc -->
+     * @generated
+     * @ordered
+     */
+	int CLINICAL_OFFICE_VISIT_SUMMARY__INFORMANT = GENERAL_HEADER_CONSTRAINTS__INFORMANT;
+
+	/**
+     * The feature id for the '<em><b>Custodian</b></em>' containment reference.
+     * <!-- begin-user-doc --> <!-- end-user-doc -->
+     * @generated
+     * @ordered
+     */
+	int CLINICAL_OFFICE_VISIT_SUMMARY__CUSTODIAN = GENERAL_HEADER_CONSTRAINTS__CUSTODIAN;
+
+	/**
+     * The feature id for the '<em><b>Information Recipient</b></em>' containment reference list.
+     * <!-- begin-user-doc --> <!-- end-user-doc -->
+     * @generated
+     * @ordered
+     */
+	int CLINICAL_OFFICE_VISIT_SUMMARY__INFORMATION_RECIPIENT = GENERAL_HEADER_CONSTRAINTS__INFORMATION_RECIPIENT;
+
+	/**
+     * The feature id for the '<em><b>Legal Authenticator</b></em>' containment reference.
+     * <!-- begin-user-doc --> <!-- end-user-doc -->
+     * @generated
+     * @ordered
+     */
+	int CLINICAL_OFFICE_VISIT_SUMMARY__LEGAL_AUTHENTICATOR = GENERAL_HEADER_CONSTRAINTS__LEGAL_AUTHENTICATOR;
+
+	/**
+     * The feature id for the '<em><b>Authenticator</b></em>' containment reference list.
+     * <!-- begin-user-doc --> <!-- end-user-doc -->
+     * @generated
+     * @ordered
+     */
+	int CLINICAL_OFFICE_VISIT_SUMMARY__AUTHENTICATOR = GENERAL_HEADER_CONSTRAINTS__AUTHENTICATOR;
+
+	/**
+     * The feature id for the '<em><b>Participant</b></em>' containment reference list.
+     * <!-- begin-user-doc --> <!-- end-user-doc -->
+     * @generated
+     * @ordered
+     */
+	int CLINICAL_OFFICE_VISIT_SUMMARY__PARTICIPANT = GENERAL_HEADER_CONSTRAINTS__PARTICIPANT;
+
+	/**
+     * The feature id for the '<em><b>In Fulfillment Of</b></em>' containment reference list.
+     * <!-- begin-user-doc --> <!-- end-user-doc -->
+     * @generated
+     * @ordered
+     */
+	int CLINICAL_OFFICE_VISIT_SUMMARY__IN_FULFILLMENT_OF = GENERAL_HEADER_CONSTRAINTS__IN_FULFILLMENT_OF;
+
+	/**
+     * The feature id for the '<em><b>Documentation Of</b></em>' containment reference list.
+     * <!-- begin-user-doc --> <!-- end-user-doc -->
+     * @generated
+     * @ordered
+     */
+	int CLINICAL_OFFICE_VISIT_SUMMARY__DOCUMENTATION_OF = GENERAL_HEADER_CONSTRAINTS__DOCUMENTATION_OF;
+
+	/**
+     * The feature id for the '<em><b>Related Document</b></em>' containment reference list.
+     * <!-- begin-user-doc --> <!-- end-user-doc -->
+     * @generated
+     * @ordered
+     */
+	int CLINICAL_OFFICE_VISIT_SUMMARY__RELATED_DOCUMENT = GENERAL_HEADER_CONSTRAINTS__RELATED_DOCUMENT;
+
+	/**
+     * The feature id for the '<em><b>Authorization</b></em>' containment reference list.
+     * <!-- begin-user-doc --> <!-- end-user-doc -->
+     * @generated
+     * @ordered
+     */
+	int CLINICAL_OFFICE_VISIT_SUMMARY__AUTHORIZATION = GENERAL_HEADER_CONSTRAINTS__AUTHORIZATION;
+
+	/**
+     * The feature id for the '<em><b>Component Of</b></em>' containment reference.
+     * <!-- begin-user-doc --> <!-- end-user-doc -->
+     * @generated
+     * @ordered
+     */
+	int CLINICAL_OFFICE_VISIT_SUMMARY__COMPONENT_OF = GENERAL_HEADER_CONSTRAINTS__COMPONENT_OF;
+
+	/**
+     * The feature id for the '<em><b>Component</b></em>' containment reference.
+     * <!-- begin-user-doc --> <!-- end-user-doc -->
+     * @generated
+     * @ordered
+     */
+	int CLINICAL_OFFICE_VISIT_SUMMARY__COMPONENT = GENERAL_HEADER_CONSTRAINTS__COMPONENT;
+
+	/**
+	 * The feature id for the '<em><b>Null Flavor</b></em>' attribute. <!--
+	 * begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @generated
+	 * @ordered
+	 */
+	int CLINICAL_OFFICE_VISIT_SUMMARY__NULL_FLAVOR = GENERAL_HEADER_CONSTRAINTS__NULL_FLAVOR;
+
+	/**
+	 * The feature id for the '<em><b>Class Code</b></em>' attribute. <!--
+	 * begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @generated
+	 * @ordered
+	 */
+	int CLINICAL_OFFICE_VISIT_SUMMARY__CLASS_CODE = GENERAL_HEADER_CONSTRAINTS__CLASS_CODE;
+
+	/**
+	 * The feature id for the '<em><b>Mood Code</b></em>' attribute. <!--
+	 * begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @generated
+	 * @ordered
+	 */
+	int CLINICAL_OFFICE_VISIT_SUMMARY__MOOD_CODE = GENERAL_HEADER_CONSTRAINTS__MOOD_CODE;
+
+	/**
+     * The number of structural features of the '<em>Clinical Office Visit Summary</em>' class.
+     * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+     * @generated
+     * @ordered
+     */
+	int CLINICAL_OFFICE_VISIT_SUMMARY_FEATURE_COUNT = GENERAL_HEADER_CONSTRAINTS_FEATURE_COUNT + 0;
+
+	/**
      * Returns the meta object for class '{@link org.openhealthtools.mdht.uml.cda.mu2consol.GeneralHeaderConstraints <em>General Header Constraints</em>}'.
      * <!-- begin-user-doc --> <!--
 	 * end-user-doc -->
@@ -3040,6 +3473,16 @@ public interface Mu2consolPackage extends EPackage {
      * @generated
      */
 	EClass getInstructionsSection();
+
+	/**
+     * Returns the meta object for class '{@link org.openhealthtools.mdht.uml.cda.mu2consol.ClinicalOfficeVisitSummary <em>Clinical Office Visit Summary</em>}'.
+     * <!-- begin-user-doc --> <!--
+	 * end-user-doc -->
+     * @return the meta object for class '<em>Clinical Office Visit Summary</em>'.
+     * @see org.openhealthtools.mdht.uml.cda.mu2consol.ClinicalOfficeVisitSummary
+     * @generated
+     */
+	EClass getClinicalOfficeVisitSummary();
 
 	/**
 	 * Returns the meta object for class '
@@ -3126,6 +3569,16 @@ public interface Mu2consolPackage extends EPackage {
 	 * @generated
 	 */
 	EClass getHospitalAdmissionMedicationsSectionEntriesOptional();
+
+	/**
+     * Returns the meta object for class '{@link org.openhealthtools.mdht.uml.cda.mu2consol.SocialHistorySection <em>Social History Section</em>}'.
+     * <!-- begin-user-doc --> <!--
+	 * end-user-doc -->
+     * @return the meta object for class '<em>Social History Section</em>'.
+     * @see org.openhealthtools.mdht.uml.cda.mu2consol.SocialHistorySection
+     * @generated
+     */
+	EClass getSocialHistorySection();
 
 	/**
      * Returns the meta object for class '{@link org.openhealthtools.mdht.uml.cda.mu2consol.AllergiesSectionEntriesOptional <em>Allergies Section Entries Optional</em>}'.
@@ -3234,6 +3687,16 @@ public interface Mu2consolPackage extends EPackage {
 		EClass INSTRUCTIONS_SECTION = eINSTANCE.getInstructionsSection();
 
 		/**
+         * The meta object literal for the '{@link org.openhealthtools.mdht.uml.cda.mu2consol.impl.ClinicalOfficeVisitSummaryImpl <em>Clinical Office Visit Summary</em>}' class.
+         * <!-- begin-user-doc
+		 * --> <!-- end-user-doc -->
+         * @see org.openhealthtools.mdht.uml.cda.mu2consol.impl.ClinicalOfficeVisitSummaryImpl
+         * @see org.openhealthtools.mdht.uml.cda.mu2consol.impl.Mu2consolPackageImpl#getClinicalOfficeVisitSummary()
+         * @generated
+         */
+		EClass CLINICAL_OFFICE_VISIT_SUMMARY = eINSTANCE.getClinicalOfficeVisitSummary();
+
+		/**
          * The meta object literal for the '{@link org.openhealthtools.mdht.uml.cda.mu2consol.impl.AssessmentSectionImpl <em>Assessment Section</em>}' class.
          * <!-- begin-user-doc --> <!--
 		 * end-user-doc -->
@@ -3317,6 +3780,16 @@ public interface Mu2consolPackage extends EPackage {
          * @generated
          */
 		EClass HOSPITAL_ADMISSION_MEDICATIONS_SECTION_ENTRIES_OPTIONAL = eINSTANCE.getHospitalAdmissionMedicationsSectionEntriesOptional();
+
+		/**
+         * The meta object literal for the '{@link org.openhealthtools.mdht.uml.cda.mu2consol.impl.SocialHistorySectionImpl <em>Social History Section</em>}' class.
+         * <!-- begin-user-doc --> <!--
+		 * end-user-doc -->
+         * @see org.openhealthtools.mdht.uml.cda.mu2consol.impl.SocialHistorySectionImpl
+         * @see org.openhealthtools.mdht.uml.cda.mu2consol.impl.Mu2consolPackageImpl#getSocialHistorySection()
+         * @generated
+         */
+		EClass SOCIAL_HISTORY_SECTION = eINSTANCE.getSocialHistorySection();
 
 		/**
 		 * The meta object literal for the '

@@ -159,7 +159,7 @@ public class InstructionsSectionOperations
 			InstructionsSection instructionsSection) {
 		if (GETMU2CONSOL_INSTRUCTIONSS__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(Mu2consolPackage.Literals.INSTRUCTIONS_SECTION, Mu2consolPackage.Literals.INSTRUCTIONS_SECTION.getEAllOperations().get(62));
+			helper.setOperationContext(Mu2consolPackage.Literals.INSTRUCTIONS_SECTION, Mu2consolPackage.Literals.INSTRUCTIONS_SECTION.getEAllOperations().get(63));
 			try {
 				GETMU2CONSOL_INSTRUCTIONSS__EOCL_QRY = helper.createQuery(GETMU2CONSOL_INSTRUCTIONSS__EOCL_EXP);
 			}
@@ -174,10 +174,13 @@ public class InstructionsSectionOperations
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #validateInstructionsSectionTemplateId(InstructionsSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Instructions Section Template Id</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #validateInstructionsSectionTemplateId(InstructionsSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * The cached OCL expression body for the '
+	 * {@link #validateInstructionsSectionTemplateId(InstructionsSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * <em>Validate Instructions Section Template Id</em>}' operation. <!--
+	 * begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @see #validateInstructionsSectionTemplateId(InstructionsSection,
+	 *      org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	 * @generated
 	 * @ordered
 	 */
@@ -185,28 +188,32 @@ public class InstructionsSectionOperations
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateInstructionsSectionTemplateId(InstructionsSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Instructions Section Template Id</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @see #validateInstructionsSectionTemplateId(InstructionsSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	 * @generated
 	 * @ordered
 	 */
-	
+
 	protected static Constraint VALIDATE_INSTRUCTIONS_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc --> <!-- begin-model-doc -->
 	 * self.templateId->exists(id : datatypes::II | id.root = 'null')
-	 * @param instructionsSection The receiving '<em><b>Instructions Section</b></em>' model object.
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
+	 * 
+	 * @param instructionsSection
+	 *            The receiving '<em><b>Instructions Section</b></em>' model
+	 *            object.
+	 * @param diagnostics
+	 *            The chain of diagnostics to which problems are to be appended.
+	 * @param context
+	 *            The cache of context-specific information. <!-- end-model-doc
+	 *            -->
 	 * @generated
 	 */
-	
-	public static  boolean validateInstructionsSectionTemplateId(InstructionsSection instructionsSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+	public static boolean validateInstructionsSectionTemplateId(
+			InstructionsSection instructionsSection,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
   	  
 		if (VALIDATE_INSTRUCTIONS_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();

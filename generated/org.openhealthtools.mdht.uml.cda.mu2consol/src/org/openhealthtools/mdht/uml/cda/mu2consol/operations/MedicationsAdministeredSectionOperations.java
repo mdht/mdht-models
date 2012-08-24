@@ -166,7 +166,7 @@ public class MedicationsAdministeredSectionOperations
 			MedicationsAdministeredSection medicationsAdministeredSection) {
 		if (GETMU2CONSOL_MEDICATION_ACTIVITIES__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(Mu2consolPackage.Literals.MEDICATIONS_ADMINISTERED_SECTION, Mu2consolPackage.Literals.MEDICATIONS_ADMINISTERED_SECTION.getEAllOperations().get(62));
+			helper.setOperationContext(Mu2consolPackage.Literals.MEDICATIONS_ADMINISTERED_SECTION, Mu2consolPackage.Literals.MEDICATIONS_ADMINISTERED_SECTION.getEAllOperations().get(63));
 			try {
 				GETMU2CONSOL_MEDICATION_ACTIVITIES__EOCL_QRY = helper.createQuery(GETMU2CONSOL_MEDICATION_ACTIVITIES__EOCL_EXP);
 			}

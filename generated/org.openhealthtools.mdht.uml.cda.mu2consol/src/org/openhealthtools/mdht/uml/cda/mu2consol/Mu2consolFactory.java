@@ -88,6 +88,14 @@ public interface Mu2consolFactory extends EFactory {
 	InstructionsSection createInstructionsSection();
 
 	/**
+	 * Returns a new object of class '<em>Clinical Office Visit Summary</em>'.
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * @return a new object of class '<em>Clinical Office Visit Summary</em>'.
+	 * @generated
+	 */
+	ClinicalOfficeVisitSummary createClinicalOfficeVisitSummary();
+
+	/**
 	 * Returns a new object of class '<em>Assessment Section</em>'. <!--
 	 * begin-user-doc --> <!-- end-user-doc -->
 	 * 
@@ -157,6 +165,15 @@ public interface Mu2consolFactory extends EFactory {
 	 * @generated
 	 */
 	HospitalAdmissionMedicationsSectionEntriesOptional createHospitalAdmissionMedicationsSectionEntriesOptional();
+
+	/**
+	 * Returns a new object of class '<em>Social History Section</em>'. <!--
+	 * begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @return a new object of class '<em>Social History Section</em>'.
+	 * @generated
+	 */
+	SocialHistorySection createSocialHistorySection();
 
 	/**
 	 * Returns a new object of class '<em>Allergies Section Entries Optional</em>'.

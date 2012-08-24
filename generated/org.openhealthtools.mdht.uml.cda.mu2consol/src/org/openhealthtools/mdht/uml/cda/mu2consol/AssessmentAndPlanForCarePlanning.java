@@ -28,17 +28,26 @@ import org.openhealthtools.mdht.uml.cda.consol.PlanOfCareActivitySupply;
 public interface AssessmentAndPlanForCarePlanning extends
 		AssessmentAndPlanSection {
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.getProcedures()->exists(p : cda::Procedure | p.oclIsKindOf(consol::PlanOfCareActivityProcedure)) or self.getSubstanceAdministrations()->exists(s : cda::SubstanceAdministration | s.oclIsKindOf(consol::PlanOfCareActivitySubstanceAdministration)) or self.getSupplies()->exists(sp : cda::Supply | sp.oclIsKindOf(consol::PlanOfCareActivitySupply))
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getProcedures()->exists(p : cda::Procedure | p.oclIsKindOf(consol::PlanOfCareActivityProcedure)) or self.getSubstanceAdministrations()->exists(s : cda::SubstanceAdministration | s.oclIsKindOf(consol::PlanOfCareActivitySubstanceAdministration)) or self.getSupplies()->exists(sp : cda::Supply | sp.oclIsKindOf(consol::PlanOfCareActivitySupply))'"
+	 * <!-- begin-user-doc --> <!-- end-user-doc --> <!-- begin-model-doc -->
+	 * self.getProcedures()->exists(p : cda::Procedure |
+	 * p.oclIsKindOf(consol::PlanOfCareActivityProcedure)) or
+	 * self.getSubstanceAdministrations()->exists(s :
+	 * cda::SubstanceAdministration |
+	 * s.oclIsKindOf(consol::PlanOfCareActivitySubstanceAdministration)) or
+	 * self.getSupplies()->exists(sp : cda::Supply |
+	 * sp.oclIsKindOf(consol::PlanOfCareActivitySupply))
+	 * 
+	 * @param diagnostics
+	 *            The chain of diagnostics to which problems are to be appended.
+	 * @param context
+	 *            The cache of context-specific information. <!-- end-model-doc
+	 *            -->
+	 * @model annotation=
+	 *        "http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getProcedures()->exists(p : cda::Procedure | p.oclIsKindOf(consol::PlanOfCareActivityProcedure)) or self.getSubstanceAdministrations()->exists(s : cda::SubstanceAdministration | s.oclIsKindOf(consol::PlanOfCareActivitySubstanceAdministration)) or self.getSupplies()->exists(sp : cda::Supply | sp.oclIsKindOf(consol::PlanOfCareActivitySupply))'"
 	 * @generated
 	 */
-	boolean validateAssessmentAndPlanForCarePlanningOneOfPlanOfCareEntry(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateAssessmentAndPlanForCarePlanningOneOfPlanOfCareEntry(
+			DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc --> <!-- begin-model-doc -->
@@ -93,9 +102,9 @@ public interface AssessmentAndPlanForCarePlanning extends
 	public AssessmentAndPlanForCarePlanning init();
 
 	/**
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+     * <!-- begin-user-doc --> <!-- end-user-doc -->
      * @generated
      */
-    public AssessmentAndPlanForCarePlanning init(Iterable<? extends Initializer<? extends EObject>> initializers);
+	public AssessmentAndPlanForCarePlanning init(
+			Iterable<? extends Initializer<? extends EObject>> initializers);
 } // AssessmentAndPlanForCarePlanning

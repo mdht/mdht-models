@@ -63,9 +63,9 @@ public interface InstructionsSection extends
 	public InstructionsSection init();
 
 	/**
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+     * <!-- begin-user-doc --> <!-- end-user-doc -->
      * @generated
      */
-    public InstructionsSection init(Iterable<? extends Initializer<? extends EObject>> initializers);
+	public InstructionsSection init(
+			Iterable<? extends Initializer<? extends EObject>> initializers);
 } // InstructionsSection

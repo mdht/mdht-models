@@ -74,11 +74,12 @@ public class PostoperativeDiagnosisSectionImpl
 	}
 
 	/**
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+     * <!-- begin-user-doc --> <!-- end-user-doc -->
      * @generated
      */
-    public PostoperativeDiagnosisSection init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+	@Override
+	public PostoperativeDiagnosisSection init(
+			Iterable<? extends Initializer<? extends EObject>> initializers) {
         Initializer.Util.init(this, initializers);
         return this;
     }

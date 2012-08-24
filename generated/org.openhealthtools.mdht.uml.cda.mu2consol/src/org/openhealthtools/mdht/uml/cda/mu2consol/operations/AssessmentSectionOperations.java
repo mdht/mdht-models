@@ -157,7 +157,7 @@ public class AssessmentSectionOperations
 			AssessmentSection assessmentSection) {
 		if (GET_PROBLEM_OBSERVATION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(Mu2consolPackage.Literals.ASSESSMENT_SECTION, Mu2consolPackage.Literals.ASSESSMENT_SECTION.getEAllOperations().get(59));
+			helper.setOperationContext(Mu2consolPackage.Literals.ASSESSMENT_SECTION, Mu2consolPackage.Literals.ASSESSMENT_SECTION.getEAllOperations().get(61));
 			try {
 				GET_PROBLEM_OBSERVATION__EOCL_QRY = helper.createQuery(GET_PROBLEM_OBSERVATION__EOCL_EXP);
 			}

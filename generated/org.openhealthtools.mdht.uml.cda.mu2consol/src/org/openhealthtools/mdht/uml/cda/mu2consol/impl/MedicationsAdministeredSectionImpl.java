@@ -75,11 +75,12 @@ public class MedicationsAdministeredSectionImpl
 	}
 
 	/**
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+     * <!-- begin-user-doc --> <!-- end-user-doc -->
      * @generated
      */
-    public MedicationsAdministeredSection init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+	@Override
+	public MedicationsAdministeredSection init(
+			Iterable<? extends Initializer<? extends EObject>> initializers) {
         Initializer.Util.init(this, initializers);
         return this;
     }

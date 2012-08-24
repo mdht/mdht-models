@@ -50,11 +50,11 @@ public class AssessmentAndPlanForCarePlanningImpl extends
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateAssessmentAndPlanForCarePlanningOneOfPlanOfCareEntry(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateAssessmentAndPlanForCarePlanningOneOfPlanOfCareEntry(
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return AssessmentAndPlanForCarePlanningOperations.validateAssessmentAndPlanForCarePlanningOneOfPlanOfCareEntry(this, diagnostics, context);
 	}
 
@@ -92,11 +92,12 @@ public class AssessmentAndPlanForCarePlanningImpl extends
 	}
 
 	/**
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+     * <!-- begin-user-doc --> <!-- end-user-doc -->
      * @generated
      */
-    public AssessmentAndPlanForCarePlanning init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+	@Override
+	public AssessmentAndPlanForCarePlanning init(
+			Iterable<? extends Initializer<? extends EObject>> initializers) {
         Initializer.Util.init(this, initializers);
         return this;
     }

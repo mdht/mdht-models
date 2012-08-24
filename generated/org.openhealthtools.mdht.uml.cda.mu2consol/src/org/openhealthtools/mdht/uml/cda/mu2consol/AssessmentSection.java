@@ -65,9 +65,9 @@ public interface AssessmentSection extends
 	public AssessmentSection init();
 
 	/**
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+     * <!-- begin-user-doc --> <!-- end-user-doc -->
      * @generated
      */
-    public AssessmentSection init(Iterable<? extends Initializer<? extends EObject>> initializers);
+	public AssessmentSection init(
+			Iterable<? extends Initializer<? extends EObject>> initializers);
 } // AssessmentSection

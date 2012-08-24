@@ -123,14 +123,16 @@ public interface CreateTransmitSummaryOfCareRecord extends
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	public CreateTransmitSummaryOfCareRecord init();
 
 	/**
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    public CreateTransmitSummaryOfCareRecord init(Iterable<? extends Initializer<? extends EObject>> initializers);
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @generated
+	 */
+	public CreateTransmitSummaryOfCareRecord init(
+			Iterable<? extends Initializer<? extends EObject>> initializers);
 } // CreateTransmitSummaryOfCareRecord

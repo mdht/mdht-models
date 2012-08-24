@@ -156,7 +156,7 @@ public class PostoperativeDiagnosisSectionOperations
 			PostoperativeDiagnosisSection postoperativeDiagnosisSection) {
 		if (GET_PROBLEM_OBSERVATION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(Mu2consolPackage.Literals.POSTOPERATIVE_DIAGNOSIS_SECTION, Mu2consolPackage.Literals.POSTOPERATIVE_DIAGNOSIS_SECTION.getEAllOperations().get(60));
+			helper.setOperationContext(Mu2consolPackage.Literals.POSTOPERATIVE_DIAGNOSIS_SECTION, Mu2consolPackage.Literals.POSTOPERATIVE_DIAGNOSIS_SECTION.getEAllOperations().get(61));
 			try {
 				GET_PROBLEM_OBSERVATION__EOCL_QRY = helper.createQuery(GET_PROBLEM_OBSERVATION__EOCL_EXP);
 			}

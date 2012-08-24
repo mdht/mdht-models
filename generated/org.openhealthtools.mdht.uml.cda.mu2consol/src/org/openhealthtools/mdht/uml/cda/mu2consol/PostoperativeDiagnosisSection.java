@@ -65,9 +65,9 @@ public interface PostoperativeDiagnosisSection extends
 	public PostoperativeDiagnosisSection init();
 
 	/**
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+     * <!-- begin-user-doc --> <!-- end-user-doc -->
      * @generated
      */
-    public PostoperativeDiagnosisSection init(Iterable<? extends Initializer<? extends EObject>> initializers);
+	public PostoperativeDiagnosisSection init(
+			Iterable<? extends Initializer<? extends EObject>> initializers);
 } // PostoperativeDiagnosisSection

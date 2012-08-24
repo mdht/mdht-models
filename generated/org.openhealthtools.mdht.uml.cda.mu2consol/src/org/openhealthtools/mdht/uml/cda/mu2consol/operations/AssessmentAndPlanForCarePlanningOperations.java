@@ -56,8 +56,7 @@ public class AssessmentAndPlanForCarePlanningOperations extends
 
 	/**
 	 * The cached OCL expression body for the '{@link #validateAssessmentAndPlanForCarePlanningOneOfPlanOfCareEntry(AssessmentAndPlanForCarePlanning, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Assessment And Plan For Care Planning One Of Plan Of Care Entry</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @see #validateAssessmentAndPlanForCarePlanningOneOfPlanOfCareEntry(AssessmentAndPlanForCarePlanning, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	 * @generated
 	 * @ordered
@@ -66,28 +65,39 @@ public class AssessmentAndPlanForCarePlanningOperations extends
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateAssessmentAndPlanForCarePlanningOneOfPlanOfCareEntry(AssessmentAndPlanForCarePlanning, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Assessment And Plan For Care Planning One Of Plan Of Care Entry</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @see #validateAssessmentAndPlanForCarePlanningOneOfPlanOfCareEntry(AssessmentAndPlanForCarePlanning, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	 * @generated
 	 * @ordered
 	 */
-	
+
 	protected static Constraint VALIDATE_ASSESSMENT_AND_PLAN_FOR_CARE_PLANNING_ONE_OF_PLAN_OF_CARE_ENTRY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.getProcedures()->exists(p : cda::Procedure | p.oclIsKindOf(consol::PlanOfCareActivityProcedure)) or self.getSubstanceAdministrations()->exists(s : cda::SubstanceAdministration | s.oclIsKindOf(consol::PlanOfCareActivitySubstanceAdministration)) or self.getSupplies()->exists(sp : cda::Supply | sp.oclIsKindOf(consol::PlanOfCareActivitySupply))
-	 * @param assessmentAndPlanForCarePlanning The receiving '<em><b>Assessment And Plan For Care Planning</b></em>' model object.
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc --> <!-- begin-model-doc -->
+	 * self.getProcedures()->exists(p : cda::Procedure |
+	 * p.oclIsKindOf(consol::PlanOfCareActivityProcedure)) or
+	 * self.getSubstanceAdministrations()->exists(s :
+	 * cda::SubstanceAdministration |
+	 * s.oclIsKindOf(consol::PlanOfCareActivitySubstanceAdministration)) or
+	 * self.getSupplies()->exists(sp : cda::Supply |
+	 * sp.oclIsKindOf(consol::PlanOfCareActivitySupply))
+	 * 
+	 * @param assessmentAndPlanForCarePlanning
+	 *            The receiving '
+	 *            <em><b>Assessment And Plan For Care Planning</b></em>' model
+	 *            object.
+	 * @param diagnostics
+	 *            The chain of diagnostics to which problems are to be appended.
+	 * @param context
+	 *            The cache of context-specific information. <!-- end-model-doc
+	 *            -->
 	 * @generated
 	 */
-	
-	public static  boolean validateAssessmentAndPlanForCarePlanningOneOfPlanOfCareEntry(AssessmentAndPlanForCarePlanning assessmentAndPlanForCarePlanning, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+	public static boolean validateAssessmentAndPlanForCarePlanningOneOfPlanOfCareEntry(
+			AssessmentAndPlanForCarePlanning assessmentAndPlanForCarePlanning,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
   	  
 		if (VALIDATE_ASSESSMENT_AND_PLAN_FOR_CARE_PLANNING_ONE_OF_PLAN_OF_CARE_ENTRY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
@@ -158,7 +168,7 @@ public class AssessmentAndPlanForCarePlanningOperations extends
 			AssessmentAndPlanForCarePlanning assessmentAndPlanForCarePlanning) {
 		if (GET_PLAN_OF_CARE_ACTIVITY_PROCEDURE__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(Mu2consolPackage.Literals.ASSESSMENT_AND_PLAN_FOR_CARE_PLANNING, Mu2consolPackage.Literals.ASSESSMENT_AND_PLAN_FOR_CARE_PLANNING.getEAllOperations().get(61));
+			helper.setOperationContext(Mu2consolPackage.Literals.ASSESSMENT_AND_PLAN_FOR_CARE_PLANNING, Mu2consolPackage.Literals.ASSESSMENT_AND_PLAN_FOR_CARE_PLANNING.getEAllOperations().get(62));
 			try {
 				GET_PLAN_OF_CARE_ACTIVITY_PROCEDURE__EOCL_QRY = helper.createQuery(GET_PLAN_OF_CARE_ACTIVITY_PROCEDURE__EOCL_EXP);
 			}
@@ -209,7 +219,7 @@ public class AssessmentAndPlanForCarePlanningOperations extends
 			AssessmentAndPlanForCarePlanning assessmentAndPlanForCarePlanning) {
 		if (GET_PLAN_OF_CARE_ACTIVITY_SUBSTANCE_ADMINISTRATION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(Mu2consolPackage.Literals.ASSESSMENT_AND_PLAN_FOR_CARE_PLANNING, Mu2consolPackage.Literals.ASSESSMENT_AND_PLAN_FOR_CARE_PLANNING.getEAllOperations().get(62));
+			helper.setOperationContext(Mu2consolPackage.Literals.ASSESSMENT_AND_PLAN_FOR_CARE_PLANNING, Mu2consolPackage.Literals.ASSESSMENT_AND_PLAN_FOR_CARE_PLANNING.getEAllOperations().get(63));
 			try {
 				GET_PLAN_OF_CARE_ACTIVITY_SUBSTANCE_ADMINISTRATION__EOCL_QRY = helper.createQuery(GET_PLAN_OF_CARE_ACTIVITY_SUBSTANCE_ADMINISTRATION__EOCL_EXP);
 			}
@@ -263,7 +273,7 @@ public class AssessmentAndPlanForCarePlanningOperations extends
 			AssessmentAndPlanForCarePlanning assessmentAndPlanForCarePlanning) {
 		if (GET_PLAN_OF_CARE_ACTIVITY_SUPPLY__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(Mu2consolPackage.Literals.ASSESSMENT_AND_PLAN_FOR_CARE_PLANNING, Mu2consolPackage.Literals.ASSESSMENT_AND_PLAN_FOR_CARE_PLANNING.getEAllOperations().get(63));
+			helper.setOperationContext(Mu2consolPackage.Literals.ASSESSMENT_AND_PLAN_FOR_CARE_PLANNING, Mu2consolPackage.Literals.ASSESSMENT_AND_PLAN_FOR_CARE_PLANNING.getEAllOperations().get(64));
 			try {
 				GET_PLAN_OF_CARE_ACTIVITY_SUPPLY__EOCL_QRY = helper.createQuery(GET_PLAN_OF_CARE_ACTIVITY_SUPPLY__EOCL_EXP);
 			}

@@ -14,6 +14,7 @@ package org.openhealthtools.mdht.uml.cda.mu2consol.tests;
 import java.io.FileInputStream;
 
 import org.eclipse.emf.common.util.Diagnostic;
+import org.eclipse.emf.ecore.EClass;
 import org.openhealthtools.mdht.uml.cda.ClinicalDocument;
 import org.openhealthtools.mdht.uml.cda.mu2consol.Mu2consolPackage;
 import org.openhealthtools.mdht.uml.cda.util.CDADiagnostic;
@@ -27,16 +28,17 @@ public class Test {
 	 */
 	public static void main(String[] args) {
 
-//		System.out.println("======testSOCR=========");
-//		testSOCR("socr_sample");
-//		System.out.println("=====testSOCR==========");
-//		
-//		System.out.println("======testAsSOCR=========");
-//		testAsSOCR("socr_sample_withDSTemplateId");
-//		System.out.println("=====testAsSOCR==========");
-		
-		validateSOCR("socr_sample");
-//		testAsSOCR("socr_sample");
+		// System.out.println("======testSOCR=========");
+		// testSOCR("socr_sample");
+		// System.out.println("=====testSOCR==========");
+		//
+		// System.out.println("======testAsSOCR=========");
+		// testAsSOCR("socr_sample_withDSTemplateId");
+		// System.out.println("=====testAsSOCR==========");
+
+		// validateSOCR("socr_sample");
+		validateDocument("socr_sample", "SummaryOfCareRecord");
+		// validateDocument("socr_sample","ClinicalOfficeVisitSummary");
 	}
 
 	public static void testSOCR(String fileName) {
@@ -64,8 +66,12 @@ public class Test {
 		Mu2consolPackage.eINSTANCE.eClass();
 		ValidationResult result = new ValidationResult();
 		try {
-			ClinicalDocument cDoc = CDAUtil.loadAs(new FileInputStream(path + fileName + ".xml"), Mu2consolPackage.eINSTANCE.getSummaryOfCareRecord(), result);
-			
+			ClinicalDocument cDoc = CDAUtil.loadAs(new FileInputStream(path
+					+ fileName + ".xml"),
+					Mu2consolPackage.eINSTANCE.getSummaryOfCareRecord(),
+					// Mu2consolPackage.eINSTANCE.getClinicalOfficeVisitSummary(),
+					result);
+
 			System.out.println(cDoc);
 			System.out.println(cDoc.getAllSections().size());
 			for (Object j : cDoc.getAllSections()) {
@@ -75,6 +81,45 @@ public class Test {
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
+	}
+
+	/**
+	 * Validate a document as a specific type.
+	 * 
+	 * @param fileName
+	 * @param asDocumentType
+	 */
+	public static void validateDocument(String fileName, String asDocumentType) {
+		StringBuffer sb = new StringBuffer();
+		String path = "samples/";
+		Mu2consolPackage.eINSTANCE.eClass();
+		ValidationResult result = new ValidationResult();
+
+		EClass docType = null;
+
+		if (asDocumentType.equalsIgnoreCase("SummaryOfCareRecord")) {
+			docType = Mu2consolPackage.eINSTANCE.getSummaryOfCareRecord();
+		} else if (asDocumentType
+				.equalsIgnoreCase("ClinicalOfficeVisitSummary")) {
+			docType = Mu2consolPackage.eINSTANCE
+					.getClinicalOfficeVisitSummary();
+		}
+
+		try {
+			CDAUtil.loadAs((new FileInputStream(path + fileName + ".xml")),
+					docType, result);
+			for (Diagnostic dq : result.getErrorDiagnostics()) {
+				CDADiagnostic cdaDiagnosticq = new CDADiagnostic(dq);
+				sb.append("ERROR|" + cdaDiagnosticq.getMessage() + "|"
+						+ cdaDiagnosticq.getPath() + "|"
+						+ cdaDiagnosticq.getCode() + "|"
+						+ cdaDiagnosticq.getSource());
+				sb.append("\n");
+			}
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		System.out.println(sb);
 	}
 
 	public static void validateSOCR(String fileName) {

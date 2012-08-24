@@ -201,6 +201,16 @@ public class Mu2consolSwitch<T> {
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
+			case Mu2consolPackage.SOCIAL_HISTORY_SECTION: {
+				SocialHistorySection socialHistorySection = (SocialHistorySection)theEObject;
+				T result = caseSocialHistorySection(socialHistorySection);
+				if (result == null) result = caseConsol_SocialHistorySection(socialHistorySection);
+				if (result == null) result = caseSection(socialHistorySection);
+				if (result == null) result = caseAct(socialHistorySection);
+				if (result == null) result = caseInfrastructureRoot(socialHistorySection);
+				if (result == null) result = defaultCase(theEObject);
+				return result;
+			}
 			case Mu2consolPackage.ALLERGIES_SECTION_ENTRIES_OPTIONAL: {
 				AllergiesSectionEntriesOptional allergiesSectionEntriesOptional = (AllergiesSectionEntriesOptional)theEObject;
 				T result = caseAllergiesSectionEntriesOptional(allergiesSectionEntriesOptional);
@@ -248,6 +258,17 @@ public class Mu2consolSwitch<T> {
 				if (result == null) result = caseSection(instructionsSection);
 				if (result == null) result = caseAct(instructionsSection);
 				if (result == null) result = caseInfrastructureRoot(instructionsSection);
+				if (result == null) result = defaultCase(theEObject);
+				return result;
+			}
+			case Mu2consolPackage.CLINICAL_OFFICE_VISIT_SUMMARY: {
+				ClinicalOfficeVisitSummary clinicalOfficeVisitSummary = (ClinicalOfficeVisitSummary)theEObject;
+				T result = caseClinicalOfficeVisitSummary(clinicalOfficeVisitSummary);
+				if (result == null) result = caseGeneralHeaderConstraints(clinicalOfficeVisitSummary);
+				if (result == null) result = caseConsol_GeneralHeaderConstraints(clinicalOfficeVisitSummary);
+				if (result == null) result = caseClinicalDocument(clinicalOfficeVisitSummary);
+				if (result == null) result = caseAct(clinicalOfficeVisitSummary);
+				if (result == null) result = caseInfrastructureRoot(clinicalOfficeVisitSummary);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
@@ -355,6 +376,20 @@ public class Mu2consolSwitch<T> {
 	 * @generated
 	 */
 	public T caseInstructionsSection(InstructionsSection object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Clinical Office Visit Summary</em>'.
+	 * <!-- begin-user-doc --> This
+	 * implementation returns null; returning a non-null result will terminate
+	 * the switch. <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Clinical Office Visit Summary</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseClinicalOfficeVisitSummary(ClinicalOfficeVisitSummary object) {
 		return null;
 	}
 
@@ -468,6 +503,20 @@ public class Mu2consolSwitch<T> {
 	}
 
 	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Social History Section</em>'.
+	 * <!-- begin-user-doc --> This
+	 * implementation returns null; returning a non-null result will terminate
+	 * the switch. <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Social History Section</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseSocialHistorySection(SocialHistorySection object) {
+		return null;
+	}
+
+	/**
 	 * Returns the result of interpreting the object as an instance of '<em>Allergies Section Entries Optional</em>'.
 	 * <!-- begin-user-doc -->
 	 * This implementation returns null; returning a non-null result will
@@ -529,16 +578,16 @@ public class Mu2consolSwitch<T> {
 
 	/**
 	 * Returns the result of interpreting the object as an instance of '<em>General Header Constraints</em>'.
-	 * <!-- begin-user-doc -->
-	 * This implementation returns null;
-	 * returning a non-null result will terminate the switch.
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> This
+	 * implementation returns null; returning a non-null result will terminate
+	 * the switch. <!-- end-user-doc -->
 	 * @param object the target of the switch.
 	 * @return the result of interpreting the object as an instance of '<em>General Header Constraints</em>'.
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseConsol_GeneralHeaderConstraints(org.openhealthtools.mdht.uml.cda.consol.GeneralHeaderConstraints object) {
+	public T caseConsol_GeneralHeaderConstraints(
+			org.openhealthtools.mdht.uml.cda.consol.GeneralHeaderConstraints object) {
 		return null;
 	}
 
@@ -736,6 +785,21 @@ public class Mu2consolSwitch<T> {
 	 */
 	public T caseConsol_HospitalAdmissionMedicationsSectionEntriesOptional(
 			org.openhealthtools.mdht.uml.cda.consol.HospitalAdmissionMedicationsSectionEntriesOptional object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Social History Section</em>'.
+	 * <!-- begin-user-doc --> This
+	 * implementation returns null; returning a non-null result will terminate
+	 * the switch. <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Social History Section</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseConsol_SocialHistorySection(
+			org.openhealthtools.mdht.uml.cda.consol.SocialHistorySection object) {
 		return null;
 	}
 

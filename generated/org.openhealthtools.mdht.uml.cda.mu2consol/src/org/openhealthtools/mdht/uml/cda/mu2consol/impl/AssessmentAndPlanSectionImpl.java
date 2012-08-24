@@ -89,11 +89,12 @@ public class AssessmentAndPlanSectionImpl
 	}
 
 	/**
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+     * <!-- begin-user-doc --> <!-- end-user-doc -->
      * @generated
      */
-    public AssessmentAndPlanSection init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+	@Override
+	public AssessmentAndPlanSection init(
+			Iterable<? extends Initializer<? extends EObject>> initializers) {
         Initializer.Util.init(this, initializers);
         return this;
     }

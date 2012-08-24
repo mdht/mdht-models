@@ -76,11 +76,12 @@ public class HospitalAdmissionMedicationsSectionEntriesOptionalImpl
 	}
 
 	/**
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+     * <!-- begin-user-doc --> <!-- end-user-doc -->
      * @generated
      */
-    public HospitalAdmissionMedicationsSectionEntriesOptional init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+	@Override
+	public HospitalAdmissionMedicationsSectionEntriesOptional init(
+			Iterable<? extends Initializer<? extends EObject>> initializers) {
         Initializer.Util.init(this, initializers);
         return this;
     }

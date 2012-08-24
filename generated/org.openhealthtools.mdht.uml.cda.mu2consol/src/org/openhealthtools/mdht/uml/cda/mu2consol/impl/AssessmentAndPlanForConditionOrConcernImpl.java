@@ -49,11 +49,11 @@ public class AssessmentAndPlanForConditionOrConcernImpl extends
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateAssessmentAndPlanForConditionOrConcernProblemObservation(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateAssessmentAndPlanForConditionOrConcernProblemObservation(
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return AssessmentAndPlanForConditionOrConcernOperations.validateAssessmentAndPlanForConditionOrConcernProblemObservation(this, diagnostics, context);
 	}
 
@@ -75,11 +75,12 @@ public class AssessmentAndPlanForConditionOrConcernImpl extends
 	}
 
 	/**
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+     * <!-- begin-user-doc --> <!-- end-user-doc -->
      * @generated
      */
-    public AssessmentAndPlanForConditionOrConcern init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+	@Override
+	public AssessmentAndPlanForConditionOrConcern init(
+			Iterable<? extends Initializer<? extends EObject>> initializers) {
         Initializer.Util.init(this, initializers);
         return this;
     }

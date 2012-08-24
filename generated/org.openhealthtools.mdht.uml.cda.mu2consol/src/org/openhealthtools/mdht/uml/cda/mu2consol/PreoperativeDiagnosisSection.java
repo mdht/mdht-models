@@ -63,9 +63,9 @@ public interface PreoperativeDiagnosisSection extends
 	public PreoperativeDiagnosisSection init();
 
 	/**
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+     * <!-- begin-user-doc --> <!-- end-user-doc -->
      * @generated
      */
-    public PreoperativeDiagnosisSection init(Iterable<? extends Initializer<? extends EObject>> initializers);
+	public PreoperativeDiagnosisSection init(
+			Iterable<? extends Initializer<? extends EObject>> initializers);
 } // PreoperativeDiagnosisSection

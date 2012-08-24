@@ -67,9 +67,9 @@ public interface MedicationsAdministeredSection extends
 	public MedicationsAdministeredSection init();
 
 	/**
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+     * <!-- begin-user-doc --> <!-- end-user-doc -->
      * @generated
      */
-    public MedicationsAdministeredSection init(Iterable<? extends Initializer<? extends EObject>> initializers);
+	public MedicationsAdministeredSection init(
+			Iterable<? extends Initializer<? extends EObject>> initializers);
 } // MedicationsAdministeredSection
