@@ -10,10 +10,13 @@
  *******************************************************************************/
 package org.openhealthtools.mdht.uml.cda.phcr.impl;
 
+import java.lang.Iterable;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.ecore.EClass;
+import org.eclipse.emf.ecore.EObject;
+import org.openhealthtools.mdht.emf.runtime.util.Initializer;
 import org.openhealthtools.mdht.uml.cda.impl.SectionImpl;
 import org.openhealthtools.mdht.uml.cda.phcr.PhcrPackage;
 import org.openhealthtools.mdht.uml.cda.phcr.PhcrTreatmentInformationSection;
@@ -32,96 +35,105 @@ import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
  */
 public class PhcrTreatmentInformationSectionImpl extends SectionImpl implements PhcrTreatmentInformationSection {
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	protected PhcrTreatmentInformationSectionImpl() {
-		super();
-	}
+    super();
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	@Override
 	protected EClass eStaticClass() {
-		return PhcrPackage.Literals.PHCR_TREATMENT_INFORMATION_SECTION;
-	}
+    return PhcrPackage.Literals.PHCR_TREATMENT_INFORMATION_SECTION;
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validatePhcrTreatmentInformationSectionTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return PhcrTreatmentInformationSectionOperations.validatePhcrTreatmentInformationSectionTemplateId(this, diagnostics, context);
-	}
+    return PhcrTreatmentInformationSectionOperations.validatePhcrTreatmentInformationSectionTemplateId(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validatePhcrTreatmentInformationSectionCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return PhcrTreatmentInformationSectionOperations.validatePhcrTreatmentInformationSectionCode(this, diagnostics, context);
-	}
+    return PhcrTreatmentInformationSectionOperations.validatePhcrTreatmentInformationSectionCode(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validatePhcrTreatmentInformationSectionCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return PhcrTreatmentInformationSectionOperations.validatePhcrTreatmentInformationSectionCodeP(this, diagnostics, context);
-	}
+    return PhcrTreatmentInformationSectionOperations.validatePhcrTreatmentInformationSectionCodeP(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validatePhcrTreatmentInformationSectionTitle(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return PhcrTreatmentInformationSectionOperations.validatePhcrTreatmentInformationSectionTitle(this, diagnostics, context);
-	}
+    return PhcrTreatmentInformationSectionOperations.validatePhcrTreatmentInformationSectionTitle(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validatePhcrTreatmentInformationSectionText(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return PhcrTreatmentInformationSectionOperations.validatePhcrTreatmentInformationSectionText(this, diagnostics, context);
-	}
+    return PhcrTreatmentInformationSectionOperations.validatePhcrTreatmentInformationSectionText(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validatePhcrTreatmentInformationSectionTherapeuticRegimenAct(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return PhcrTreatmentInformationSectionOperations.validatePhcrTreatmentInformationSectionTherapeuticRegimenAct(this, diagnostics, context);
-	}
+    return PhcrTreatmentInformationSectionOperations.validatePhcrTreatmentInformationSectionTherapeuticRegimenAct(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public TherapeuticRegimenAct getTherapeuticRegimenAct() {
-		return PhcrTreatmentInformationSectionOperations.getTherapeuticRegimenAct(this);
-	}
+    return PhcrTreatmentInformationSectionOperations.getTherapeuticRegimenAct(this);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public PhcrTreatmentInformationSection init() {
-    	CDAUtil.init(this);
-    	return this;
-	}
+      return Initializer.Util.init(this);
+  }
+
+  /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    public PhcrTreatmentInformationSection init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
 	
 	  
 } //PhcrTreatmentInformationSectionImpl

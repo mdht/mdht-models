@@ -58,7 +58,7 @@ import org.openhealthtools.mdht.uml.cda.sdtm.util.SdtmValidator;
  *   <li>{@link org.openhealthtools.mdht.uml.cda.sdtm.HumanClinicalSubjectDataDocumentBody#validateHumanClinicalSubjectDataDocumentBodyMoodCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Human Clinical Subject Data Document Body Mood Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.sdtm.HumanClinicalSubjectDataDocumentBody#validateHumanClinicalSubjectDataDocumentBodyHumanClinicalSubjectDemographics(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Human Clinical Subject Data Document Body Human Clinical Subject Demographics</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.sdtm.HumanClinicalSubjectDataDocumentBody#validateHumanClinicalSubjectDataDocumentBodyHumanClinicalVisit(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Human Clinical Subject Data Document Body Human Clinical Visit</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.sdtm.HumanClinicalSubjectDataDocumentBody#validateHumanClinicalSubjectDataDocumentBodyHumanClinicalStudyArm(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Human Clinical Subject Data Document Body Human Clinical Study Arm</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.sdtm.HumanClinicalSubjectDataDocumentBody#validateHumanClinicalSubjectDataDocumentBodyStudyArm(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Human Clinical Subject Data Document Body Study Arm</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.sdtm.HumanClinicalSubjectDataDocumentBody#validateHumanClinicalSubjectDataDocumentBodySubjectElement(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Human Clinical Subject Data Document Body Subject Element</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.sdtm.HumanClinicalSubjectDataDocumentBody#validateHumanClinicalSubjectDataDocumentBodySubstanceUse(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Human Clinical Subject Data Document Body Substance Use</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.sdtm.HumanClinicalSubjectDataDocumentBody#validateHumanClinicalSubjectDataDocumentBodyDisposition(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Human Clinical Subject Data Document Body Disposition</em>}</li>
@@ -72,7 +72,7 @@ import org.openhealthtools.mdht.uml.cda.sdtm.util.SdtmValidator;
  *   <li>{@link org.openhealthtools.mdht.uml.cda.sdtm.HumanClinicalSubjectDataDocumentBody#validateHumanClinicalSubjectDataDocumentBodyexposureAssociationExposureSubstanceAdministration(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Human Clinical Subject Data Document Bodyexposure Association Exposure Substance Administration</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.sdtm.HumanClinicalSubjectDataDocumentBody#getHumanClinicalSubjectDemographics() <em>Get Human Clinical Subject Demographics</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.sdtm.HumanClinicalSubjectDataDocumentBody#getHumanClinicalVisits() <em>Get Human Clinical Visits</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.sdtm.HumanClinicalSubjectDataDocumentBody#getHumanClinicalStudyArm() <em>Get Human Clinical Study Arm</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.sdtm.HumanClinicalSubjectDataDocumentBody#getStudyArm() <em>Get Study Arm</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.sdtm.HumanClinicalSubjectDataDocumentBody#getSubjectElements() <em>Get Subject Elements</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.sdtm.HumanClinicalSubjectDataDocumentBody#getSubstanceUses() <em>Get Substance Uses</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.sdtm.HumanClinicalSubjectDataDocumentBody#getDispositions() <em>Get Dispositions</em>}</li>
@@ -124,7 +124,6 @@ public class HumanClinicalSubjectDataDocumentBodyOperations extends SectionOpera
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.23.13')
    * @param humanClinicalSubjectDataDocumentBody The receiving '<em><b>Human Clinical Subject Data Document Body</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -134,6 +133,7 @@ public class HumanClinicalSubjectDataDocumentBodyOperations extends SectionOpera
   
   public static  boolean validateHumanClinicalSubjectDataDocumentBodyTemplateId(HumanClinicalSubjectDataDocumentBody humanClinicalSubjectDataDocumentBody, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
+  	  
     if (VALIDATE_HUMAN_CLINICAL_SUBJECT_DATA_DOCUMENT_BODY_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(SdtmPackage.Literals.HUMAN_CLINICAL_SUBJECT_DATA_DOCUMENT_BODY);
@@ -158,6 +158,7 @@ public class HumanClinicalSubjectDataDocumentBodyOperations extends SectionOpera
              org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "HumanClinicalSubjectDataDocumentBodyTemplateId", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(humanClinicalSubjectDataDocumentBody, context) }),
              new Object [] { humanClinicalSubjectDataDocumentBody }));
       }
+       
       return false;
     }
     return true;
@@ -189,7 +190,6 @@ public class HumanClinicalSubjectDataDocumentBodyOperations extends SectionOpera
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * isDefined('classCode') and self.classCode=vocab::ActClass::DOCSECT
    * @param humanClinicalSubjectDataDocumentBody The receiving '<em><b>Human Clinical Subject Data Document Body</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -199,6 +199,7 @@ public class HumanClinicalSubjectDataDocumentBodyOperations extends SectionOpera
   
   public static  boolean validateHumanClinicalSubjectDataDocumentBodyClassCode(HumanClinicalSubjectDataDocumentBody humanClinicalSubjectDataDocumentBody, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
+  	  
     if (VALIDATE_HUMAN_CLINICAL_SUBJECT_DATA_DOCUMENT_BODY_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(SdtmPackage.Literals.HUMAN_CLINICAL_SUBJECT_DATA_DOCUMENT_BODY);
@@ -223,6 +224,7 @@ public class HumanClinicalSubjectDataDocumentBodyOperations extends SectionOpera
              org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "HumanClinicalSubjectDataDocumentBodyClassCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(humanClinicalSubjectDataDocumentBody, context) }),
              new Object [] { humanClinicalSubjectDataDocumentBody }));
       }
+       
       return false;
     }
     return true;
@@ -256,9 +258,6 @@ public class HumanClinicalSubjectDataDocumentBodyOperations extends SectionOpera
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * (self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and 
-   * let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in 
-   * value.code = 'TBD' and value.codeSystem = '2.16.840.1.113883.6.1')
    * @param humanClinicalSubjectDataDocumentBody The receiving '<em><b>Human Clinical Subject Data Document Body</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -268,6 +267,7 @@ public class HumanClinicalSubjectDataDocumentBodyOperations extends SectionOpera
   
   public static  boolean validateHumanClinicalSubjectDataDocumentBodyCode(HumanClinicalSubjectDataDocumentBody humanClinicalSubjectDataDocumentBody, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
+  	  
     if (VALIDATE_HUMAN_CLINICAL_SUBJECT_DATA_DOCUMENT_BODY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(SdtmPackage.Literals.HUMAN_CLINICAL_SUBJECT_DATA_DOCUMENT_BODY);
@@ -292,6 +292,7 @@ public class HumanClinicalSubjectDataDocumentBodyOperations extends SectionOpera
              org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "HumanClinicalSubjectDataDocumentBodyCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(humanClinicalSubjectDataDocumentBody, context) }),
              new Object [] { humanClinicalSubjectDataDocumentBody }));
       }
+       
       return false;
     }
     return true;
@@ -323,7 +324,6 @@ public class HumanClinicalSubjectDataDocumentBodyOperations extends SectionOpera
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * (self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined())
    * @param humanClinicalSubjectDataDocumentBody The receiving '<em><b>Human Clinical Subject Data Document Body</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -333,6 +333,7 @@ public class HumanClinicalSubjectDataDocumentBodyOperations extends SectionOpera
   
   public static  boolean validateHumanClinicalSubjectDataDocumentBodyCodeP(HumanClinicalSubjectDataDocumentBody humanClinicalSubjectDataDocumentBody, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
+  	  
     if (VALIDATE_HUMAN_CLINICAL_SUBJECT_DATA_DOCUMENT_BODY_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(SdtmPackage.Literals.HUMAN_CLINICAL_SUBJECT_DATA_DOCUMENT_BODY);
@@ -357,6 +358,7 @@ public class HumanClinicalSubjectDataDocumentBodyOperations extends SectionOpera
              org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "HumanClinicalSubjectDataDocumentBodyCodeP", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(humanClinicalSubjectDataDocumentBody, context) }),
              new Object [] { humanClinicalSubjectDataDocumentBody }));
       }
+       
       return false;
     }
     return true;
@@ -388,7 +390,6 @@ public class HumanClinicalSubjectDataDocumentBodyOperations extends SectionOpera
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.moodCode=vocab::ActMood::EVN
    * @param humanClinicalSubjectDataDocumentBody The receiving '<em><b>Human Clinical Subject Data Document Body</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -398,6 +399,7 @@ public class HumanClinicalSubjectDataDocumentBodyOperations extends SectionOpera
   
   public static  boolean validateHumanClinicalSubjectDataDocumentBodyMoodCode(HumanClinicalSubjectDataDocumentBody humanClinicalSubjectDataDocumentBody, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
+  	  
     if (VALIDATE_HUMAN_CLINICAL_SUBJECT_DATA_DOCUMENT_BODY_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(SdtmPackage.Literals.HUMAN_CLINICAL_SUBJECT_DATA_DOCUMENT_BODY);
@@ -422,6 +424,7 @@ public class HumanClinicalSubjectDataDocumentBodyOperations extends SectionOpera
              org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "HumanClinicalSubjectDataDocumentBodyMoodCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(humanClinicalSubjectDataDocumentBody, context) }),
              new Object [] { humanClinicalSubjectDataDocumentBody }));
       }
+       
       return false;
     }
     return true;
@@ -453,7 +456,6 @@ public class HumanClinicalSubjectDataDocumentBodyOperations extends SectionOpera
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.entry->one(entry : cda::Entry | not entry.organizer.oclIsUndefined() and entry.organizer.oclIsKindOf(sdtm::Human Clinical Subject Demographics) and entry.typeCode = vocab::x_ActRelationshipEntry::COMP)
    * @param humanClinicalSubjectDataDocumentBody The receiving '<em><b>Human Clinical Subject Data Document Body</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -463,6 +465,7 @@ public class HumanClinicalSubjectDataDocumentBodyOperations extends SectionOpera
   
   public static  boolean validateHumanClinicalSubjectDataDocumentBodyHumanClinicalSubjectDemographics(HumanClinicalSubjectDataDocumentBody humanClinicalSubjectDataDocumentBody, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
+  	  
     if (VALIDATE_HUMAN_CLINICAL_SUBJECT_DATA_DOCUMENT_BODY_HUMAN_CLINICAL_SUBJECT_DEMOGRAPHICS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(SdtmPackage.Literals.HUMAN_CLINICAL_SUBJECT_DATA_DOCUMENT_BODY);
@@ -487,6 +490,7 @@ public class HumanClinicalSubjectDataDocumentBodyOperations extends SectionOpera
              org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "HumanClinicalSubjectDataDocumentBodyHumanClinicalSubjectDemographics", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(humanClinicalSubjectDataDocumentBody, context) }),
              new Object [] { humanClinicalSubjectDataDocumentBody }));
       }
+       
       return false;
     }
     return true;
@@ -518,7 +522,6 @@ public class HumanClinicalSubjectDataDocumentBodyOperations extends SectionOpera
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.entry->exists(entry : cda::Entry | not entry.encounter.oclIsUndefined() and entry.encounter.oclIsKindOf(sdtm::Visit) and entry.typeCode = vocab::x_ActRelationshipEntry::COMP)
    * @param humanClinicalSubjectDataDocumentBody The receiving '<em><b>Human Clinical Subject Data Document Body</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -528,6 +531,7 @@ public class HumanClinicalSubjectDataDocumentBodyOperations extends SectionOpera
   
   public static  boolean validateHumanClinicalSubjectDataDocumentBodyHumanClinicalVisit(HumanClinicalSubjectDataDocumentBody humanClinicalSubjectDataDocumentBody, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
+  	  
     if (VALIDATE_HUMAN_CLINICAL_SUBJECT_DATA_DOCUMENT_BODY_HUMAN_CLINICAL_VISIT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(SdtmPackage.Literals.HUMAN_CLINICAL_SUBJECT_DATA_DOCUMENT_BODY);
@@ -552,38 +556,38 @@ public class HumanClinicalSubjectDataDocumentBodyOperations extends SectionOpera
              org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "HumanClinicalSubjectDataDocumentBodyHumanClinicalVisit", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(humanClinicalSubjectDataDocumentBody, context) }),
              new Object [] { humanClinicalSubjectDataDocumentBody }));
       }
+       
       return false;
     }
     return true;
   }
 
   /**
-   * The cached OCL expression body for the '{@link #validateHumanClinicalSubjectDataDocumentBodyHumanClinicalStudyArm(HumanClinicalSubjectDataDocumentBody, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Human Clinical Subject Data Document Body Human Clinical Study Arm</em>}' operation.
+   * The cached OCL expression body for the '{@link #validateHumanClinicalSubjectDataDocumentBodyStudyArm(HumanClinicalSubjectDataDocumentBody, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Human Clinical Subject Data Document Body Study Arm</em>}' operation.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @see #validateHumanClinicalSubjectDataDocumentBodyHumanClinicalStudyArm(HumanClinicalSubjectDataDocumentBody, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+   * @see #validateHumanClinicalSubjectDataDocumentBodyStudyArm(HumanClinicalSubjectDataDocumentBody, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
    * @generated
    * @ordered
    */
-  protected static final String VALIDATE_HUMAN_CLINICAL_SUBJECT_DATA_DOCUMENT_BODY_HUMAN_CLINICAL_STUDY_ARM__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entry->one(entry : cda::Entry | not entry.act.oclIsUndefined() and entry.act.oclIsKindOf(sdtm::Study Arm) and entry.typeCode = vocab::x_ActRelationshipEntry::COMP)";
+  protected static final String VALIDATE_HUMAN_CLINICAL_SUBJECT_DATA_DOCUMENT_BODY_STUDY_ARM__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entry->one(entry : cda::Entry | not entry.act.oclIsUndefined() and entry.act.oclIsKindOf(sdtm::Study Arm) and entry.typeCode = vocab::x_ActRelationshipEntry::COMP)";
 
   /**
-   * The cached OCL invariant for the '{@link #validateHumanClinicalSubjectDataDocumentBodyHumanClinicalStudyArm(HumanClinicalSubjectDataDocumentBody, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Human Clinical Subject Data Document Body Human Clinical Study Arm</em>}' invariant operation.
+   * The cached OCL invariant for the '{@link #validateHumanClinicalSubjectDataDocumentBodyStudyArm(HumanClinicalSubjectDataDocumentBody, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Human Clinical Subject Data Document Body Study Arm</em>}' invariant operation.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @see #validateHumanClinicalSubjectDataDocumentBodyHumanClinicalStudyArm(HumanClinicalSubjectDataDocumentBody, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+   * @see #validateHumanClinicalSubjectDataDocumentBodyStudyArm(HumanClinicalSubjectDataDocumentBody, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
    * @generated
    * @ordered
    */
   
-  protected static Constraint VALIDATE_HUMAN_CLINICAL_SUBJECT_DATA_DOCUMENT_BODY_HUMAN_CLINICAL_STUDY_ARM__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-  
+  protected static Constraint VALIDATE_HUMAN_CLINICAL_SUBJECT_DATA_DOCUMENT_BODY_STUDY_ARM__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+
 
   /**
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.entry->one(entry : cda::Entry | not entry.act.oclIsUndefined() and entry.act.oclIsKindOf(sdtm::Study Arm) and entry.typeCode = vocab::x_ActRelationshipEntry::COMP)
    * @param humanClinicalSubjectDataDocumentBody The receiving '<em><b>Human Clinical Subject Data Document Body</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -591,21 +595,22 @@ public class HumanClinicalSubjectDataDocumentBodyOperations extends SectionOpera
    * @generated
    */
   
-  public static  boolean validateHumanClinicalSubjectDataDocumentBodyHumanClinicalStudyArm(HumanClinicalSubjectDataDocumentBody humanClinicalSubjectDataDocumentBody, DiagnosticChain diagnostics, Map<Object, Object> context)
+  public static  boolean validateHumanClinicalSubjectDataDocumentBodyStudyArm(HumanClinicalSubjectDataDocumentBody humanClinicalSubjectDataDocumentBody, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
-    if (VALIDATE_HUMAN_CLINICAL_SUBJECT_DATA_DOCUMENT_BODY_HUMAN_CLINICAL_STUDY_ARM__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+  	  
+    if (VALIDATE_HUMAN_CLINICAL_SUBJECT_DATA_DOCUMENT_BODY_STUDY_ARM__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(SdtmPackage.Literals.HUMAN_CLINICAL_SUBJECT_DATA_DOCUMENT_BODY);
       try
       {
-        VALIDATE_HUMAN_CLINICAL_SUBJECT_DATA_DOCUMENT_BODY_HUMAN_CLINICAL_STUDY_ARM__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_HUMAN_CLINICAL_SUBJECT_DATA_DOCUMENT_BODY_HUMAN_CLINICAL_STUDY_ARM__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+        VALIDATE_HUMAN_CLINICAL_SUBJECT_DATA_DOCUMENT_BODY_STUDY_ARM__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_HUMAN_CLINICAL_SUBJECT_DATA_DOCUMENT_BODY_STUDY_ARM__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
       }
       catch (ParserException pe)
       {
         throw new UnsupportedOperationException(pe.getLocalizedMessage());
       }
     }
-    if (!EOCL_ENV.createQuery(VALIDATE_HUMAN_CLINICAL_SUBJECT_DATA_DOCUMENT_BODY_HUMAN_CLINICAL_STUDY_ARM__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(humanClinicalSubjectDataDocumentBody))
+    if (!EOCL_ENV.createQuery(VALIDATE_HUMAN_CLINICAL_SUBJECT_DATA_DOCUMENT_BODY_STUDY_ARM__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(humanClinicalSubjectDataDocumentBody))
     {
       if (diagnostics != null)
       {
@@ -613,10 +618,11 @@ public class HumanClinicalSubjectDataDocumentBodyOperations extends SectionOpera
           (new BasicDiagnostic
             (Diagnostic.ERROR,
              SdtmValidator.DIAGNOSTIC_SOURCE,
-             SdtmValidator.HUMAN_CLINICAL_SUBJECT_DATA_DOCUMENT_BODY__HUMAN_CLINICAL_SUBJECT_DATA_DOCUMENT_BODY_HUMAN_CLINICAL_STUDY_ARM,
-             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "HumanClinicalSubjectDataDocumentBodyHumanClinicalStudyArm", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(humanClinicalSubjectDataDocumentBody, context) }),
+             SdtmValidator.HUMAN_CLINICAL_SUBJECT_DATA_DOCUMENT_BODY__HUMAN_CLINICAL_SUBJECT_DATA_DOCUMENT_BODY_STUDY_ARM,
+             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "HumanClinicalSubjectDataDocumentBodyStudyArm", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(humanClinicalSubjectDataDocumentBody, context) }),
              new Object [] { humanClinicalSubjectDataDocumentBody }));
       }
+       
       return false;
     }
     return true;
@@ -648,7 +654,6 @@ public class HumanClinicalSubjectDataDocumentBodyOperations extends SectionOpera
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.entry->exists(entry : cda::Entry | not entry.act.oclIsUndefined() and entry.act.oclIsKindOf(sdtm::Subject Element) and entry.typeCode = vocab::x_ActRelationshipEntry::COMP)
    * @param humanClinicalSubjectDataDocumentBody The receiving '<em><b>Human Clinical Subject Data Document Body</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -658,6 +663,7 @@ public class HumanClinicalSubjectDataDocumentBodyOperations extends SectionOpera
   
   public static  boolean validateHumanClinicalSubjectDataDocumentBodySubjectElement(HumanClinicalSubjectDataDocumentBody humanClinicalSubjectDataDocumentBody, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
+  	  
     if (VALIDATE_HUMAN_CLINICAL_SUBJECT_DATA_DOCUMENT_BODY_SUBJECT_ELEMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(SdtmPackage.Literals.HUMAN_CLINICAL_SUBJECT_DATA_DOCUMENT_BODY);
@@ -682,6 +688,7 @@ public class HumanClinicalSubjectDataDocumentBodyOperations extends SectionOpera
              org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "HumanClinicalSubjectDataDocumentBodySubjectElement", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(humanClinicalSubjectDataDocumentBody, context) }),
              new Object [] { humanClinicalSubjectDataDocumentBody }));
       }
+       
       return false;
     }
     return true;
@@ -713,7 +720,6 @@ public class HumanClinicalSubjectDataDocumentBodyOperations extends SectionOpera
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.entry->exists(entry : cda::Entry | not entry.substanceAdministration.oclIsUndefined() and entry.substanceAdministration.oclIsKindOf(sdtm::Substance Use) and entry.typeCode = vocab::x_ActRelationshipEntry::COMP)
    * @param humanClinicalSubjectDataDocumentBody The receiving '<em><b>Human Clinical Subject Data Document Body</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -723,6 +729,7 @@ public class HumanClinicalSubjectDataDocumentBodyOperations extends SectionOpera
   
   public static  boolean validateHumanClinicalSubjectDataDocumentBodySubstanceUse(HumanClinicalSubjectDataDocumentBody humanClinicalSubjectDataDocumentBody, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
+  	  
     if (VALIDATE_HUMAN_CLINICAL_SUBJECT_DATA_DOCUMENT_BODY_SUBSTANCE_USE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(SdtmPackage.Literals.HUMAN_CLINICAL_SUBJECT_DATA_DOCUMENT_BODY);
@@ -747,6 +754,7 @@ public class HumanClinicalSubjectDataDocumentBodyOperations extends SectionOpera
              org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "HumanClinicalSubjectDataDocumentBodySubstanceUse", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(humanClinicalSubjectDataDocumentBody, context) }),
              new Object [] { humanClinicalSubjectDataDocumentBody }));
       }
+       
       return false;
     }
     return true;
@@ -778,7 +786,6 @@ public class HumanClinicalSubjectDataDocumentBodyOperations extends SectionOpera
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.entry->exists(entry : cda::Entry | not entry.act.oclIsUndefined() and entry.act.oclIsKindOf(sdtm::Human Clinical Disposition) and entry.typeCode = vocab::x_ActRelationshipEntry::COMP)
    * @param humanClinicalSubjectDataDocumentBody The receiving '<em><b>Human Clinical Subject Data Document Body</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -788,6 +795,7 @@ public class HumanClinicalSubjectDataDocumentBodyOperations extends SectionOpera
   
   public static  boolean validateHumanClinicalSubjectDataDocumentBodyDisposition(HumanClinicalSubjectDataDocumentBody humanClinicalSubjectDataDocumentBody, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
+  	  
     if (VALIDATE_HUMAN_CLINICAL_SUBJECT_DATA_DOCUMENT_BODY_DISPOSITION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(SdtmPackage.Literals.HUMAN_CLINICAL_SUBJECT_DATA_DOCUMENT_BODY);
@@ -812,6 +820,7 @@ public class HumanClinicalSubjectDataDocumentBodyOperations extends SectionOpera
              org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "HumanClinicalSubjectDataDocumentBodyDisposition", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(humanClinicalSubjectDataDocumentBody, context) }),
              new Object [] { humanClinicalSubjectDataDocumentBody }));
       }
+       
       return false;
     }
     return true;
@@ -843,7 +852,6 @@ public class HumanClinicalSubjectDataDocumentBodyOperations extends SectionOpera
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.entry->exists(entry : cda::Entry | not entry.observation.oclIsUndefined() and entry.observation.oclIsKindOf(sdtm::Medical History Item) and entry.typeCode = vocab::x_ActRelationshipEntry::COMP)
    * @param humanClinicalSubjectDataDocumentBody The receiving '<em><b>Human Clinical Subject Data Document Body</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -853,6 +861,7 @@ public class HumanClinicalSubjectDataDocumentBodyOperations extends SectionOpera
   
   public static  boolean validateHumanClinicalSubjectDataDocumentBodyMedicalHistory(HumanClinicalSubjectDataDocumentBody humanClinicalSubjectDataDocumentBody, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
+  	  
     if (VALIDATE_HUMAN_CLINICAL_SUBJECT_DATA_DOCUMENT_BODY_MEDICAL_HISTORY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(SdtmPackage.Literals.HUMAN_CLINICAL_SUBJECT_DATA_DOCUMENT_BODY);
@@ -877,6 +886,7 @@ public class HumanClinicalSubjectDataDocumentBodyOperations extends SectionOpera
              org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "HumanClinicalSubjectDataDocumentBodyMedicalHistory", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(humanClinicalSubjectDataDocumentBody, context) }),
              new Object [] { humanClinicalSubjectDataDocumentBody }));
       }
+       
       return false;
     }
     return true;
@@ -908,7 +918,6 @@ public class HumanClinicalSubjectDataDocumentBodyOperations extends SectionOpera
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.entry->exists(entry : cda::Entry | not entry.observation.oclIsUndefined() and entry.observation.oclIsKindOf(sdtm::Protocol Deviation) and entry.typeCode = vocab::x_ActRelationshipEntry::COMP)
    * @param humanClinicalSubjectDataDocumentBody The receiving '<em><b>Human Clinical Subject Data Document Body</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -918,6 +927,7 @@ public class HumanClinicalSubjectDataDocumentBodyOperations extends SectionOpera
   
   public static  boolean validateHumanClinicalSubjectDataDocumentBodyProtocolDeviation(HumanClinicalSubjectDataDocumentBody humanClinicalSubjectDataDocumentBody, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
+  	  
     if (VALIDATE_HUMAN_CLINICAL_SUBJECT_DATA_DOCUMENT_BODY_PROTOCOL_DEVIATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(SdtmPackage.Literals.HUMAN_CLINICAL_SUBJECT_DATA_DOCUMENT_BODY);
@@ -942,6 +952,7 @@ public class HumanClinicalSubjectDataDocumentBodyOperations extends SectionOpera
              org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "HumanClinicalSubjectDataDocumentBodyProtocolDeviation", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(humanClinicalSubjectDataDocumentBody, context) }),
              new Object [] { humanClinicalSubjectDataDocumentBody }));
       }
+       
       return false;
     }
     return true;
@@ -973,7 +984,6 @@ public class HumanClinicalSubjectDataDocumentBodyOperations extends SectionOpera
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.entry->exists(entry : cda::Entry | not entry.observation.oclIsUndefined() and entry.observation.oclIsKindOf(sdtm::Clinical Event) and entry.typeCode = vocab::x_ActRelationshipEntry::COMP)
    * @param humanClinicalSubjectDataDocumentBody The receiving '<em><b>Human Clinical Subject Data Document Body</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -983,6 +993,7 @@ public class HumanClinicalSubjectDataDocumentBodyOperations extends SectionOpera
   
   public static  boolean validateHumanClinicalSubjectDataDocumentBodyClinicalEvent(HumanClinicalSubjectDataDocumentBody humanClinicalSubjectDataDocumentBody, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
+  	  
     if (VALIDATE_HUMAN_CLINICAL_SUBJECT_DATA_DOCUMENT_BODY_CLINICAL_EVENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(SdtmPackage.Literals.HUMAN_CLINICAL_SUBJECT_DATA_DOCUMENT_BODY);
@@ -1007,6 +1018,7 @@ public class HumanClinicalSubjectDataDocumentBodyOperations extends SectionOpera
              org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "HumanClinicalSubjectDataDocumentBodyClinicalEvent", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(humanClinicalSubjectDataDocumentBody, context) }),
              new Object [] { humanClinicalSubjectDataDocumentBody }));
       }
+       
       return false;
     }
     return true;
@@ -1038,7 +1050,6 @@ public class HumanClinicalSubjectDataDocumentBodyOperations extends SectionOpera
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.entry->exists(entry : cda::Entry | not entry.observation.oclIsUndefined() and entry.observation.oclIsKindOf(sdtm::ECG Test Result) and entry.typeCode = vocab::x_ActRelationshipEntry::COMP)
    * @param humanClinicalSubjectDataDocumentBody The receiving '<em><b>Human Clinical Subject Data Document Body</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -1048,6 +1059,7 @@ public class HumanClinicalSubjectDataDocumentBodyOperations extends SectionOpera
   
   public static  boolean validateHumanClinicalSubjectDataDocumentBodyECGTestResult(HumanClinicalSubjectDataDocumentBody humanClinicalSubjectDataDocumentBody, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
+  	  
     if (VALIDATE_HUMAN_CLINICAL_SUBJECT_DATA_DOCUMENT_BODY_ECG_TEST_RESULT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(SdtmPackage.Literals.HUMAN_CLINICAL_SUBJECT_DATA_DOCUMENT_BODY);
@@ -1072,6 +1084,7 @@ public class HumanClinicalSubjectDataDocumentBodyOperations extends SectionOpera
              org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "HumanClinicalSubjectDataDocumentBodyECGTestResult", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(humanClinicalSubjectDataDocumentBody, context) }),
              new Object [] { humanClinicalSubjectDataDocumentBody }));
       }
+       
       return false;
     }
     return true;
@@ -1103,7 +1116,6 @@ public class HumanClinicalSubjectDataDocumentBodyOperations extends SectionOpera
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.entry->one(entry : cda::Entry | not entry.observation.oclIsUndefined() and entry.observation.oclIsKindOf(sdtm::Subject Characteristic) and entry.typeCode = vocab::x_ActRelationshipEntry::COMP)
    * @param humanClinicalSubjectDataDocumentBody The receiving '<em><b>Human Clinical Subject Data Document Body</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -1113,6 +1125,7 @@ public class HumanClinicalSubjectDataDocumentBodyOperations extends SectionOpera
   
   public static  boolean validateHumanClinicalSubjectDataDocumentBodySubjectCharacteristic(HumanClinicalSubjectDataDocumentBody humanClinicalSubjectDataDocumentBody, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
+  	  
     if (VALIDATE_HUMAN_CLINICAL_SUBJECT_DATA_DOCUMENT_BODY_SUBJECT_CHARACTERISTIC__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(SdtmPackage.Literals.HUMAN_CLINICAL_SUBJECT_DATA_DOCUMENT_BODY);
@@ -1137,6 +1150,7 @@ public class HumanClinicalSubjectDataDocumentBodyOperations extends SectionOpera
              org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "HumanClinicalSubjectDataDocumentBodySubjectCharacteristic", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(humanClinicalSubjectDataDocumentBody, context) }),
              new Object [] { humanClinicalSubjectDataDocumentBody }));
       }
+       
       return false;
     }
     return true;
@@ -1168,7 +1182,6 @@ public class HumanClinicalSubjectDataDocumentBodyOperations extends SectionOpera
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.entry->one(entry : cda::Entry | not entry.observation.oclIsUndefined() and entry.observation.oclIsKindOf(sdtm::Pharmacokinetic Parameter Finding) and entry.typeCode = vocab::x_ActRelationshipEntry::COMP)
    * @param humanClinicalSubjectDataDocumentBody The receiving '<em><b>Human Clinical Subject Data Document Body</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -1178,6 +1191,7 @@ public class HumanClinicalSubjectDataDocumentBodyOperations extends SectionOpera
   
   public static  boolean validateHumanClinicalSubjectDataDocumentBodyPharmacokineticParameterFinding(HumanClinicalSubjectDataDocumentBody humanClinicalSubjectDataDocumentBody, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
+  	  
     if (VALIDATE_HUMAN_CLINICAL_SUBJECT_DATA_DOCUMENT_BODY_PHARMACOKINETIC_PARAMETER_FINDING__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(SdtmPackage.Literals.HUMAN_CLINICAL_SUBJECT_DATA_DOCUMENT_BODY);
@@ -1202,6 +1216,7 @@ public class HumanClinicalSubjectDataDocumentBodyOperations extends SectionOpera
              org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "HumanClinicalSubjectDataDocumentBodyPharmacokineticParameterFinding", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(humanClinicalSubjectDataDocumentBody, context) }),
              new Object [] { humanClinicalSubjectDataDocumentBody }));
       }
+       
       return false;
     }
     return true;
@@ -1233,7 +1248,6 @@ public class HumanClinicalSubjectDataDocumentBodyOperations extends SectionOpera
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.->reject(isDefined('typeCode'))
    * @param humanClinicalSubjectDataDocumentBody The receiving '<em><b>Human Clinical Subject Data Document Body</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -1243,6 +1257,7 @@ public class HumanClinicalSubjectDataDocumentBodyOperations extends SectionOpera
   
   public static  boolean validateHumanClinicalSubjectDataDocumentBodyexposureAssociationTypeCode(HumanClinicalSubjectDataDocumentBody humanClinicalSubjectDataDocumentBody, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
+  	  
     if (VALIDATE_HUMAN_CLINICAL_SUBJECT_DATA_DOCUMENT_BODYEXPOSURE_ASSOCIATION_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(SdtmPackage.Literals.HUMAN_CLINICAL_SUBJECT_DATA_DOCUMENT_BODY);
@@ -1267,6 +1282,7 @@ public class HumanClinicalSubjectDataDocumentBodyOperations extends SectionOpera
              org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "HumanClinicalSubjectDataDocumentBodyexposureAssociationTypeCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(humanClinicalSubjectDataDocumentBody, context) }),
              new Object [] { humanClinicalSubjectDataDocumentBody }));
       }
+       
       return false;
     }
     return true;
@@ -1298,7 +1314,6 @@ public class HumanClinicalSubjectDataDocumentBodyOperations extends SectionOpera
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.->reject(substanceAdministration->one(substanceAdministration : cda::SubstanceAdministration | not substanceAdministration.oclIsUndefined() and substanceAdministration.oclIsKindOf(sdtm::Human Clinical Exposure)))
    * @param humanClinicalSubjectDataDocumentBody The receiving '<em><b>Human Clinical Subject Data Document Body</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -1308,6 +1323,7 @@ public class HumanClinicalSubjectDataDocumentBodyOperations extends SectionOpera
   
   public static  boolean validateHumanClinicalSubjectDataDocumentBodyexposureAssociationExposureSubstanceAdministration(HumanClinicalSubjectDataDocumentBody humanClinicalSubjectDataDocumentBody, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
+  	  
     if (VALIDATE_HUMAN_CLINICAL_SUBJECT_DATA_DOCUMENT_BODYEXPOSURE_ASSOCIATION_EXPOSURE_SUBSTANCE_ADMINISTRATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(SdtmPackage.Literals.HUMAN_CLINICAL_SUBJECT_DATA_DOCUMENT_BODY);
@@ -1332,6 +1348,7 @@ public class HumanClinicalSubjectDataDocumentBodyOperations extends SectionOpera
              org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "HumanClinicalSubjectDataDocumentBodyexposureAssociationExposureSubstanceAdministration", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(humanClinicalSubjectDataDocumentBody, context) }),
              new Object [] { humanClinicalSubjectDataDocumentBody }));
       }
+       
       return false;
     }
     return true;
@@ -1345,7 +1362,7 @@ public class HumanClinicalSubjectDataDocumentBodyOperations extends SectionOpera
    * @generated
    * @ordered
    */
-  protected static final String GET_HUMAN_CLINICAL_SUBJECT_DEMOGRAPHICS__EOCL_EXP = "self.getOrganizers()->select(organizer : cda::Organizer | not organizer.oclIsUndefined() and organizer.oclIsKindOf(sdtm::Human Clinical Subject Demographics))->asSequence()->first().oclAsType(sdtm::Human Clinical Subject Demographics)";
+  protected static final String GET_HUMAN_CLINICAL_SUBJECT_DEMOGRAPHICS__EOCL_EXP = "self.getOrganizers()->select(organizer : cda::Organizer | not organizer.oclIsUndefined() and organizer.oclIsKindOf(sdtm::Human Clinical Subject Demographics))->asSequence()->any(true).oclAsType(sdtm::Human Clinical Subject Demographics)";
 
   /**
    * The cached OCL query for the '{@link #getHumanClinicalSubjectDemographics(HumanClinicalSubjectDataDocumentBody) <em>Get Human Clinical Subject Demographics</em>}' query operation.
@@ -1360,10 +1377,6 @@ public class HumanClinicalSubjectDataDocumentBodyOperations extends SectionOpera
   /**
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * <!-- begin-model-doc -->
-   * self.getOrganizers()->select(organizer : cda::Organizer | not organizer.oclIsUndefined() and organizer.oclIsKindOf(sdtm::Human Clinical Subject Demographics))->asSequence()->first().oclAsType(sdtm::Human Clinical Subject Demographics)
-   * @param humanClinicalSubjectDataDocumentBody The receiving '<em><b>Human Clinical Subject Data Document Body</b></em>' model object.
-   * <!-- end-model-doc -->
    * @generated
    */
   
@@ -1409,10 +1422,6 @@ public class HumanClinicalSubjectDataDocumentBodyOperations extends SectionOpera
   /**
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * <!-- begin-model-doc -->
-   * self.getEncounters()->select(encounter : cda::Encounter | not encounter.oclIsUndefined() and encounter.oclIsKindOf(sdtm::Visit)).oclAsType(sdtm::Visit)
-   * @param humanClinicalSubjectDataDocumentBody The receiving '<em><b>Human Clinical Subject Data Document Body</b></em>' model object.
-   * <!-- end-model-doc -->
    * @generated
    */
   
@@ -1438,51 +1447,48 @@ public class HumanClinicalSubjectDataDocumentBodyOperations extends SectionOpera
   }
 
   /**
-   * The cached OCL expression body for the '{@link #getHumanClinicalStudyArm(HumanClinicalSubjectDataDocumentBody) <em>Get Human Clinical Study Arm</em>}' operation.
+   * The cached OCL expression body for the '{@link #getStudyArm(HumanClinicalSubjectDataDocumentBody) <em>Get Study Arm</em>}' operation.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @see #getHumanClinicalStudyArm(HumanClinicalSubjectDataDocumentBody)
+   * @see #getStudyArm(HumanClinicalSubjectDataDocumentBody)
    * @generated
    * @ordered
    */
-  protected static final String GET_HUMAN_CLINICAL_STUDY_ARM__EOCL_EXP = "self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(sdtm::Study Arm))->asSequence()->first().oclAsType(sdtm::Study Arm)";
+  protected static final String GET_STUDY_ARM__EOCL_EXP = "self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(sdtm::Study Arm))->asSequence()->any(true).oclAsType(sdtm::Study Arm)";
 
   /**
-   * The cached OCL query for the '{@link #getHumanClinicalStudyArm(HumanClinicalSubjectDataDocumentBody) <em>Get Human Clinical Study Arm</em>}' query operation.
+   * The cached OCL query for the '{@link #getStudyArm(HumanClinicalSubjectDataDocumentBody) <em>Get Study Arm</em>}' query operation.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @see #getHumanClinicalStudyArm(HumanClinicalSubjectDataDocumentBody)
+   * @see #getStudyArm(HumanClinicalSubjectDataDocumentBody)
    * @generated
    * @ordered
    */
-  protected static OCLExpression<EClassifier> GET_HUMAN_CLINICAL_STUDY_ARM__EOCL_QRY;
+  protected static OCLExpression<EClassifier> GET_STUDY_ARM__EOCL_QRY;
+
 
   /**
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * <!-- begin-model-doc -->
-   * self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(sdtm::Study Arm))->asSequence()->first().oclAsType(sdtm::Study Arm)
-   * @param humanClinicalSubjectDataDocumentBody The receiving '<em><b>Human Clinical Subject Data Document Body</b></em>' model object.
-   * <!-- end-model-doc -->
    * @generated
    */
   
-  public static  StudyArm getHumanClinicalStudyArm(HumanClinicalSubjectDataDocumentBody humanClinicalSubjectDataDocumentBody)
+  public static  StudyArm getStudyArm(HumanClinicalSubjectDataDocumentBody humanClinicalSubjectDataDocumentBody)
   {
-    if (GET_HUMAN_CLINICAL_STUDY_ARM__EOCL_QRY == null)
+    if (GET_STUDY_ARM__EOCL_QRY == null)
     {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setOperationContext(SdtmPackage.Literals.HUMAN_CLINICAL_SUBJECT_DATA_DOCUMENT_BODY, SdtmPackage.Literals.HUMAN_CLINICAL_SUBJECT_DATA_DOCUMENT_BODY.getEAllOperations().get(76));
       try
       {
-        GET_HUMAN_CLINICAL_STUDY_ARM__EOCL_QRY = helper.createQuery(GET_HUMAN_CLINICAL_STUDY_ARM__EOCL_EXP);
+        GET_STUDY_ARM__EOCL_QRY = helper.createQuery(GET_STUDY_ARM__EOCL_EXP);
       }
       catch (ParserException pe)
       {
         throw new UnsupportedOperationException(pe.getLocalizedMessage());
       }
     }
-    OCL.Query query = EOCL_ENV.createQuery(GET_HUMAN_CLINICAL_STUDY_ARM__EOCL_QRY);
+    OCL.Query query = EOCL_ENV.createQuery(GET_STUDY_ARM__EOCL_QRY);
     return (StudyArm) query.evaluate(humanClinicalSubjectDataDocumentBody);
   }
 
@@ -1509,10 +1515,6 @@ public class HumanClinicalSubjectDataDocumentBodyOperations extends SectionOpera
   /**
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * <!-- begin-model-doc -->
-   * self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(sdtm::Subject Element)).oclAsType(sdtm::Subject Element)
-   * @param humanClinicalSubjectDataDocumentBody The receiving '<em><b>Human Clinical Subject Data Document Body</b></em>' model object.
-   * <!-- end-model-doc -->
    * @generated
    */
   
@@ -1560,10 +1562,6 @@ public class HumanClinicalSubjectDataDocumentBodyOperations extends SectionOpera
   /**
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * <!-- begin-model-doc -->
-   * self.getSubstanceAdministrations()->select(substanceAdministration : cda::SubstanceAdministration | not substanceAdministration.oclIsUndefined() and substanceAdministration.oclIsKindOf(sdtm::Substance Use)).oclAsType(sdtm::Substance Use)
-   * @param humanClinicalSubjectDataDocumentBody The receiving '<em><b>Human Clinical Subject Data Document Body</b></em>' model object.
-   * <!-- end-model-doc -->
    * @generated
    */
   
@@ -1611,10 +1609,6 @@ public class HumanClinicalSubjectDataDocumentBodyOperations extends SectionOpera
   /**
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * <!-- begin-model-doc -->
-   * self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(sdtm::Human Clinical Disposition)).oclAsType(sdtm::Human Clinical Disposition)
-   * @param humanClinicalSubjectDataDocumentBody The receiving '<em><b>Human Clinical Subject Data Document Body</b></em>' model object.
-   * <!-- end-model-doc -->
    * @generated
    */
   
@@ -1662,10 +1656,6 @@ public class HumanClinicalSubjectDataDocumentBodyOperations extends SectionOpera
   /**
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * <!-- begin-model-doc -->
-   * self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(sdtm::Medical History Item)).oclAsType(sdtm::Medical History Item)
-   * @param humanClinicalSubjectDataDocumentBody The receiving '<em><b>Human Clinical Subject Data Document Body</b></em>' model object.
-   * <!-- end-model-doc -->
    * @generated
    */
   
@@ -1713,10 +1703,6 @@ public class HumanClinicalSubjectDataDocumentBodyOperations extends SectionOpera
   /**
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * <!-- begin-model-doc -->
-   * self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(sdtm::Protocol Deviation)).oclAsType(sdtm::Protocol Deviation)
-   * @param humanClinicalSubjectDataDocumentBody The receiving '<em><b>Human Clinical Subject Data Document Body</b></em>' model object.
-   * <!-- end-model-doc -->
    * @generated
    */
   
@@ -1764,10 +1750,6 @@ public class HumanClinicalSubjectDataDocumentBodyOperations extends SectionOpera
   /**
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * <!-- begin-model-doc -->
-   * self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(sdtm::Clinical Event)).oclAsType(sdtm::Clinical Event)
-   * @param humanClinicalSubjectDataDocumentBody The receiving '<em><b>Human Clinical Subject Data Document Body</b></em>' model object.
-   * <!-- end-model-doc -->
    * @generated
    */
   
@@ -1815,10 +1797,6 @@ public class HumanClinicalSubjectDataDocumentBodyOperations extends SectionOpera
   /**
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * <!-- begin-model-doc -->
-   * self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(sdtm::ECG Test Result)).oclAsType(sdtm::ECG Test Result)
-   * @param humanClinicalSubjectDataDocumentBody The receiving '<em><b>Human Clinical Subject Data Document Body</b></em>' model object.
-   * <!-- end-model-doc -->
    * @generated
    */
   
@@ -1851,7 +1829,7 @@ public class HumanClinicalSubjectDataDocumentBodyOperations extends SectionOpera
    * @generated
    * @ordered
    */
-  protected static final String GET_SUBJECT_CHARACTERISTIC__EOCL_EXP = "self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(sdtm::Subject Characteristic))->asSequence()->first().oclAsType(sdtm::Subject Characteristic)";
+  protected static final String GET_SUBJECT_CHARACTERISTIC__EOCL_EXP = "self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(sdtm::Subject Characteristic))->asSequence()->any(true).oclAsType(sdtm::Subject Characteristic)";
 
   /**
    * The cached OCL query for the '{@link #getSubjectCharacteristic(HumanClinicalSubjectDataDocumentBody) <em>Get Subject Characteristic</em>}' query operation.
@@ -1866,10 +1844,6 @@ public class HumanClinicalSubjectDataDocumentBodyOperations extends SectionOpera
   /**
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * <!-- begin-model-doc -->
-   * self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(sdtm::Subject Characteristic))->asSequence()->first().oclAsType(sdtm::Subject Characteristic)
-   * @param humanClinicalSubjectDataDocumentBody The receiving '<em><b>Human Clinical Subject Data Document Body</b></em>' model object.
-   * <!-- end-model-doc -->
    * @generated
    */
   
@@ -1900,7 +1874,7 @@ public class HumanClinicalSubjectDataDocumentBodyOperations extends SectionOpera
    * @generated
    * @ordered
    */
-  protected static final String GET_PHARMACOKINETIC_PARAMETER_FINDING__EOCL_EXP = "self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(sdtm::Pharmacokinetic Parameter Finding))->asSequence()->first().oclAsType(sdtm::Pharmacokinetic Parameter Finding)";
+  protected static final String GET_PHARMACOKINETIC_PARAMETER_FINDING__EOCL_EXP = "self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(sdtm::Pharmacokinetic Parameter Finding))->asSequence()->any(true).oclAsType(sdtm::Pharmacokinetic Parameter Finding)";
 
   /**
    * The cached OCL query for the '{@link #getPharmacokineticParameterFinding(HumanClinicalSubjectDataDocumentBody) <em>Get Pharmacokinetic Parameter Finding</em>}' query operation.
@@ -1915,10 +1889,6 @@ public class HumanClinicalSubjectDataDocumentBodyOperations extends SectionOpera
   /**
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * <!-- begin-model-doc -->
-   * self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(sdtm::Pharmacokinetic Parameter Finding))->asSequence()->first().oclAsType(sdtm::Pharmacokinetic Parameter Finding)
-   * @param humanClinicalSubjectDataDocumentBody The receiving '<em><b>Human Clinical Subject Data Document Body</b></em>' model object.
-   * <!-- end-model-doc -->
    * @generated
    */
   

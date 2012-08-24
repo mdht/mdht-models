@@ -28,142 +28,146 @@ import org.openhealthtools.mdht.uml.cda.phcr.tss.*;
  */
 public class tssFactoryImpl extends EFactoryImpl implements tssFactory {
 	/**
-	 * Creates the default factory implementation.
-	 * <!-- begin-user-doc -->
+   * Creates the default factory implementation.
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public static tssFactory init() {
-		try {
-			tssFactory thetssFactory = (tssFactory)EPackage.Registry.INSTANCE.getEFactory("http://www.openhealthtools.org/mdht/uml/cda/phcr/tss"); 
-			if (thetssFactory != null) {
-				return thetssFactory;
-			}
-		}
-		catch (Exception exception) {
-			EcorePlugin.INSTANCE.log(exception);
-		}
-		return new tssFactoryImpl();
-	}
+    try
+    {
+      tssFactory thetssFactory = (tssFactory)EPackage.Registry.INSTANCE.getEFactory("http://www.openhealthtools.org/mdht/uml/cda/phcr/tss"); 
+      if (thetssFactory != null)
+      {
+        return thetssFactory;
+      }
+    }
+    catch (Exception exception)
+    {
+      EcorePlugin.INSTANCE.log(exception);
+    }
+    return new tssFactoryImpl();
+  }
 
 	/**
-	 * Creates an instance of the factory.
-	 * <!-- begin-user-doc -->
+   * Creates an instance of the factory.
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public tssFactoryImpl() {
-		super();
-	}
+    super();
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	@Override
 	public EObject create(EClass eClass) {
-		switch (eClass.getClassifierID()) {
-			case tssPackage.TOXIC_SHOCK_SYNDROME_CASE_REPORT: return createToxicShockSyndromeCaseReport();
-			case tssPackage.TSS_PHCR_CLINICAL_INFORMATION_SECTION: return createTssPhcrClinicalInformationSection();
-			case tssPackage.TSS_CASE_OBSERVATION: return createTssCaseObservation();
-			case tssPackage.TSS_SIGNS_AND_SYMPTOMS_OBSERVATION: return createTssSignsAndSymptomsObservation();
-			case tssPackage.TSS_PHCR_RELEVANT_DX_TESTS_SECTION: return createTssPhcrRelevantDxTestsSection();
-			case tssPackage.TSS_RESULT_ORGANIZER: return createTssResultOrganizer();
-			case tssPackage.TSS_RESULT_OBSERVATION: return createTssResultObservation();
-			default:
-				throw new IllegalArgumentException("The class '" + eClass.getName() + "' is not a valid classifier");
-		}
-	}
+    switch (eClass.getClassifierID())
+    {
+      case tssPackage.TOXIC_SHOCK_SYNDROME_CASE_REPORT: return createToxicShockSyndromeCaseReport();
+      case tssPackage.TSS_PHCR_CLINICAL_INFORMATION_SECTION: return createTssPhcrClinicalInformationSection();
+      case tssPackage.TSS_CASE_OBSERVATION: return createTssCaseObservation();
+      case tssPackage.TSS_SIGNS_AND_SYMPTOMS_OBSERVATION: return createTssSignsAndSymptomsObservation();
+      case tssPackage.TSS_PHCR_RELEVANT_DX_TESTS_SECTION: return createTssPhcrRelevantDxTestsSection();
+      case tssPackage.TSS_RESULT_ORGANIZER: return createTssResultOrganizer();
+      case tssPackage.TSS_RESULT_OBSERVATION: return createTssResultObservation();
+      default:
+        throw new IllegalArgumentException("The class '" + eClass.getName() + "' is not a valid classifier");
+    }
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public ToxicShockSyndromeCaseReport createToxicShockSyndromeCaseReport() {
-		ToxicShockSyndromeCaseReportImpl toxicShockSyndromeCaseReport = new ToxicShockSyndromeCaseReportImpl();
-		return toxicShockSyndromeCaseReport;
-	}
+    ToxicShockSyndromeCaseReportImpl toxicShockSyndromeCaseReport = new ToxicShockSyndromeCaseReportImpl();
+    return toxicShockSyndromeCaseReport;
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public TssPhcrClinicalInformationSection createTssPhcrClinicalInformationSection() {
-		TssPhcrClinicalInformationSectionImpl tssPhcrClinicalInformationSection = new TssPhcrClinicalInformationSectionImpl();
-		return tssPhcrClinicalInformationSection;
-	}
+    TssPhcrClinicalInformationSectionImpl tssPhcrClinicalInformationSection = new TssPhcrClinicalInformationSectionImpl();
+    return tssPhcrClinicalInformationSection;
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public TssCaseObservation createTssCaseObservation() {
-		TssCaseObservationImpl tssCaseObservation = new TssCaseObservationImpl();
-		return tssCaseObservation;
-	}
+    TssCaseObservationImpl tssCaseObservation = new TssCaseObservationImpl();
+    return tssCaseObservation;
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public TssSignsAndSymptomsObservation createTssSignsAndSymptomsObservation() {
-		TssSignsAndSymptomsObservationImpl tssSignsAndSymptomsObservation = new TssSignsAndSymptomsObservationImpl();
-		return tssSignsAndSymptomsObservation;
-	}
+    TssSignsAndSymptomsObservationImpl tssSignsAndSymptomsObservation = new TssSignsAndSymptomsObservationImpl();
+    return tssSignsAndSymptomsObservation;
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public TssPhcrRelevantDxTestsSection createTssPhcrRelevantDxTestsSection() {
-		TssPhcrRelevantDxTestsSectionImpl tssPhcrRelevantDxTestsSection = new TssPhcrRelevantDxTestsSectionImpl();
-		return tssPhcrRelevantDxTestsSection;
-	}
+    TssPhcrRelevantDxTestsSectionImpl tssPhcrRelevantDxTestsSection = new TssPhcrRelevantDxTestsSectionImpl();
+    return tssPhcrRelevantDxTestsSection;
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public TssResultOrganizer createTssResultOrganizer() {
-		TssResultOrganizerImpl tssResultOrganizer = new TssResultOrganizerImpl();
-		return tssResultOrganizer;
-	}
+    TssResultOrganizerImpl tssResultOrganizer = new TssResultOrganizerImpl();
+    return tssResultOrganizer;
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public TssResultObservation createTssResultObservation() {
-		TssResultObservationImpl tssResultObservation = new TssResultObservationImpl();
-		return tssResultObservation;
-	}
+    TssResultObservationImpl tssResultObservation = new TssResultObservationImpl();
+    return tssResultObservation;
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public tssPackage gettssPackage() {
-		return (tssPackage)getEPackage();
-	}
+    return (tssPackage)getEPackage();
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @deprecated
-	 * @generated
-	 */
+   * @deprecated
+   * @generated
+   */
 	@Deprecated
 	public static tssPackage getPackage() {
-		return tssPackage.eINSTANCE;
-	}
+    return tssPackage.eINSTANCE;
+  }
 
 } //tssFactoryImpl

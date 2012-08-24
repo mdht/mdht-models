@@ -61,301 +61,324 @@ import org.openhealthtools.mdht.uml.cda.phmr.util.PhmrValidator;
  */
 public class WaveformObservationOperations extends ClinicalStatementOperations {
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	protected WaveformObservationOperations() {
-		super();
-	}
+    super();
+  }
 
 	/**
-	 * The cached OCL expression body for the '{@link #validateWaveformObservationTemplateId(WaveformObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Waveform Observation Template Id</em>}' operation.
-	 * <!-- begin-user-doc -->
+   * The cached OCL expression body for the '{@link #validateWaveformObservationTemplateId(WaveformObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Waveform Observation Template Id</em>}' operation.
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateWaveformObservationTemplateId(WaveformObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
+   * @see #validateWaveformObservationTemplateId(WaveformObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+   * @generated
+   * @ordered
+   */
 	protected static final String VALIDATE_WAVEFORM_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.9.11')";
 
 	/**
-	 * The cached OCL invariant for the '{@link #validateWaveformObservationTemplateId(WaveformObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Waveform Observation Template Id</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
+   * The cached OCL invariant for the '{@link #validateWaveformObservationTemplateId(WaveformObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Waveform Observation Template Id</em>}' invariant operation.
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateWaveformObservationTemplateId(WaveformObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
+   * @see #validateWaveformObservationTemplateId(WaveformObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+   * @generated
+   * @ordered
+   */
 	protected static Constraint VALIDATE_WAVEFORM_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.9.11')
-	 * @param waveformObservation The receiving '<em><b>Waveform Observation</b></em>' model object.
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
+   * <!-- begin-model-doc -->
+   * @param waveformObservation The receiving '<em><b>Waveform Observation</b></em>' model object.
+   * @param diagnostics The chain of diagnostics to which problems are to be appended.
+   * @param context The cache of context-specific information.
+   * <!-- end-model-doc -->
+   * @generated
+   */
 	public static  boolean validateWaveformObservationTemplateId(WaveformObservation waveformObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
-		if (VALIDATE_WAVEFORM_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setContext(PhmrPackage.Literals.WAVEFORM_OBSERVATION);
-			try {
-				VALIDATE_WAVEFORM_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_WAVEFORM_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
-				throw new UnsupportedOperationException(pe.getLocalizedMessage());
-			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_WAVEFORM_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(waveformObservation)) {
-			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 PhmrValidator.DIAGNOSTIC_SOURCE,
-						 PhmrValidator.WAVEFORM_OBSERVATION__WAVEFORM_OBSERVATION_TEMPLATE_ID,
-						 PhmrPlugin.INSTANCE.getString("WaveformObservationTemplateId"),
-						 new Object [] { waveformObservation }));
-			}
-			return false;
-		}
-		return true;
-	}
+  	  
+    if (VALIDATE_WAVEFORM_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+      OCL.Helper helper = EOCL_ENV.createOCLHelper();
+      helper.setContext(PhmrPackage.Literals.WAVEFORM_OBSERVATION);
+      try
+      {
+        VALIDATE_WAVEFORM_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_WAVEFORM_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+      }
+      catch (ParserException pe)
+      {
+        throw new UnsupportedOperationException(pe.getLocalizedMessage());
+      }
+    }
+    if (!EOCL_ENV.createQuery(VALIDATE_WAVEFORM_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(waveformObservation))
+    {
+      if (diagnostics != null)
+      {
+        diagnostics.add
+          (new BasicDiagnostic
+            (Diagnostic.ERROR,
+             PhmrValidator.DIAGNOSTIC_SOURCE,
+             PhmrValidator.WAVEFORM_OBSERVATION__WAVEFORM_OBSERVATION_TEMPLATE_ID,
+             PhmrPlugin.INSTANCE.getString("WaveformObservationTemplateId"),
+             new Object [] { waveformObservation }));
+      }
+       
+      return false;
+    }
+    return true;
+  }
 
 	/**
-	 * The cached OCL expression body for the '{@link #validateWaveformObservationClassCode(WaveformObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Waveform Observation Class Code</em>}' operation.
-	 * <!-- begin-user-doc -->
+   * The cached OCL expression body for the '{@link #validateWaveformObservationClassCode(WaveformObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Waveform Observation Class Code</em>}' operation.
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateWaveformObservationClassCode(WaveformObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
+   * @see #validateWaveformObservationClassCode(WaveformObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+   * @generated
+   * @ordered
+   */
 	protected static final String VALIDATE_WAVEFORM_OBSERVATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.classCode=vocab::ActClassObservation::OBS";
 
 	/**
-	 * The cached OCL invariant for the '{@link #validateWaveformObservationClassCode(WaveformObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Waveform Observation Class Code</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
+   * The cached OCL invariant for the '{@link #validateWaveformObservationClassCode(WaveformObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Waveform Observation Class Code</em>}' invariant operation.
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateWaveformObservationClassCode(WaveformObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
+   * @see #validateWaveformObservationClassCode(WaveformObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+   * @generated
+   * @ordered
+   */
 	protected static Constraint VALIDATE_WAVEFORM_OBSERVATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.classCode=vocab::ActClassObservation::OBS
-	 * @param waveformObservation The receiving '<em><b>Waveform Observation</b></em>' model object.
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
+   * <!-- begin-model-doc -->
+   * @param waveformObservation The receiving '<em><b>Waveform Observation</b></em>' model object.
+   * @param diagnostics The chain of diagnostics to which problems are to be appended.
+   * @param context The cache of context-specific information.
+   * <!-- end-model-doc -->
+   * @generated
+   */
 	public static  boolean validateWaveformObservationClassCode(WaveformObservation waveformObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
-		if (VALIDATE_WAVEFORM_OBSERVATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setContext(PhmrPackage.Literals.WAVEFORM_OBSERVATION);
-			try {
-				VALIDATE_WAVEFORM_OBSERVATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_WAVEFORM_OBSERVATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
-				throw new UnsupportedOperationException(pe.getLocalizedMessage());
-			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_WAVEFORM_OBSERVATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(waveformObservation)) {
-			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 PhmrValidator.DIAGNOSTIC_SOURCE,
-						 PhmrValidator.WAVEFORM_OBSERVATION__WAVEFORM_OBSERVATION_CLASS_CODE,
-						 PhmrPlugin.INSTANCE.getString("WaveformObservationClassCode"),
-						 new Object [] { waveformObservation }));
-			}
-			return false;
-		}
-		return true;
-	}
+  	  
+    if (VALIDATE_WAVEFORM_OBSERVATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+      OCL.Helper helper = EOCL_ENV.createOCLHelper();
+      helper.setContext(PhmrPackage.Literals.WAVEFORM_OBSERVATION);
+      try
+      {
+        VALIDATE_WAVEFORM_OBSERVATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_WAVEFORM_OBSERVATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+      }
+      catch (ParserException pe)
+      {
+        throw new UnsupportedOperationException(pe.getLocalizedMessage());
+      }
+    }
+    if (!EOCL_ENV.createQuery(VALIDATE_WAVEFORM_OBSERVATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(waveformObservation))
+    {
+      if (diagnostics != null)
+      {
+        diagnostics.add
+          (new BasicDiagnostic
+            (Diagnostic.ERROR,
+             PhmrValidator.DIAGNOSTIC_SOURCE,
+             PhmrValidator.WAVEFORM_OBSERVATION__WAVEFORM_OBSERVATION_CLASS_CODE,
+             PhmrPlugin.INSTANCE.getString("WaveformObservationClassCode"),
+             new Object [] { waveformObservation }));
+      }
+       
+      return false;
+    }
+    return true;
+  }
 
 	/**
-	 * The cached OCL expression body for the '{@link #validateWaveformObservationCode(WaveformObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Waveform Observation Code</em>}' operation.
-	 * <!-- begin-user-doc -->
+   * The cached OCL expression body for the '{@link #validateWaveformObservationCode(WaveformObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Waveform Observation Code</em>}' operation.
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateWaveformObservationCode(WaveformObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
+   * @see #validateWaveformObservationCode(WaveformObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+   * @generated
+   * @ordered
+   */
 	protected static final String VALIDATE_WAVEFORM_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and "+
-"let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in ("+
-"value.codeSystem = '2.16.840.1.113883.6.96'))";
+"let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in "+
+"value.codeSystem = '2.16.840.1.113883.6.96')";
 
 	/**
-	 * The cached OCL invariant for the '{@link #validateWaveformObservationCode(WaveformObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Waveform Observation Code</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
+   * The cached OCL invariant for the '{@link #validateWaveformObservationCode(WaveformObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Waveform Observation Code</em>}' invariant operation.
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateWaveformObservationCode(WaveformObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
+   * @see #validateWaveformObservationCode(WaveformObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+   * @generated
+   * @ordered
+   */
 	protected static Constraint VALIDATE_WAVEFORM_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * (self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and 
-	 * let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in (
-	 * value.codeSystem = '2.16.840.1.113883.6.96'))
-	 * @param waveformObservation The receiving '<em><b>Waveform Observation</b></em>' model object.
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
+   * <!-- begin-model-doc -->
+   * @param waveformObservation The receiving '<em><b>Waveform Observation</b></em>' model object.
+   * @param diagnostics The chain of diagnostics to which problems are to be appended.
+   * @param context The cache of context-specific information.
+   * <!-- end-model-doc -->
+   * @generated
+   */
 	public static  boolean validateWaveformObservationCode(WaveformObservation waveformObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
-		if (VALIDATE_WAVEFORM_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setContext(PhmrPackage.Literals.WAVEFORM_OBSERVATION);
-			try {
-				VALIDATE_WAVEFORM_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_WAVEFORM_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
-				throw new UnsupportedOperationException(pe.getLocalizedMessage());
-			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_WAVEFORM_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(waveformObservation)) {
-			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 PhmrValidator.DIAGNOSTIC_SOURCE,
-						 PhmrValidator.WAVEFORM_OBSERVATION__WAVEFORM_OBSERVATION_CODE,
-						 PhmrPlugin.INSTANCE.getString("WaveformObservationCode"),
-						 new Object [] { waveformObservation }));
-			}
-			return false;
-		}
-		return true;
-	}
+  	  
+    if (VALIDATE_WAVEFORM_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+      OCL.Helper helper = EOCL_ENV.createOCLHelper();
+      helper.setContext(PhmrPackage.Literals.WAVEFORM_OBSERVATION);
+      try
+      {
+        VALIDATE_WAVEFORM_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_WAVEFORM_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+      }
+      catch (ParserException pe)
+      {
+        throw new UnsupportedOperationException(pe.getLocalizedMessage());
+      }
+    }
+    if (!EOCL_ENV.createQuery(VALIDATE_WAVEFORM_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(waveformObservation))
+    {
+      if (diagnostics != null)
+      {
+        diagnostics.add
+          (new BasicDiagnostic
+            (Diagnostic.ERROR,
+             PhmrValidator.DIAGNOSTIC_SOURCE,
+             PhmrValidator.WAVEFORM_OBSERVATION__WAVEFORM_OBSERVATION_CODE,
+             PhmrPlugin.INSTANCE.getString("WaveformObservationCode"),
+             new Object [] { waveformObservation }));
+      }
+       
+      return false;
+    }
+    return true;
+  }
 
 	/**
-	 * The cached OCL expression body for the '{@link #validateWaveformObservationMoodCode(WaveformObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Waveform Observation Mood Code</em>}' operation.
-	 * <!-- begin-user-doc -->
+   * The cached OCL expression body for the '{@link #validateWaveformObservationMoodCode(WaveformObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Waveform Observation Mood Code</em>}' operation.
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateWaveformObservationMoodCode(WaveformObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
+   * @see #validateWaveformObservationMoodCode(WaveformObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+   * @generated
+   * @ordered
+   */
 	protected static final String VALIDATE_WAVEFORM_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.moodCode=vocab::x_ActMoodDocumentObservation::EVN";
 
 	/**
-	 * The cached OCL invariant for the '{@link #validateWaveformObservationMoodCode(WaveformObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Waveform Observation Mood Code</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
+   * The cached OCL invariant for the '{@link #validateWaveformObservationMoodCode(WaveformObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Waveform Observation Mood Code</em>}' invariant operation.
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateWaveformObservationMoodCode(WaveformObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
+   * @see #validateWaveformObservationMoodCode(WaveformObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+   * @generated
+   * @ordered
+   */
 	protected static Constraint VALIDATE_WAVEFORM_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.moodCode=vocab::x_ActMoodDocumentObservation::EVN
-	 * @param waveformObservation The receiving '<em><b>Waveform Observation</b></em>' model object.
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
+   * <!-- begin-model-doc -->
+   * @param waveformObservation The receiving '<em><b>Waveform Observation</b></em>' model object.
+   * @param diagnostics The chain of diagnostics to which problems are to be appended.
+   * @param context The cache of context-specific information.
+   * <!-- end-model-doc -->
+   * @generated
+   */
 	public static  boolean validateWaveformObservationMoodCode(WaveformObservation waveformObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
-		if (VALIDATE_WAVEFORM_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setContext(PhmrPackage.Literals.WAVEFORM_OBSERVATION);
-			try {
-				VALIDATE_WAVEFORM_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_WAVEFORM_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
-				throw new UnsupportedOperationException(pe.getLocalizedMessage());
-			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_WAVEFORM_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(waveformObservation)) {
-			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 PhmrValidator.DIAGNOSTIC_SOURCE,
-						 PhmrValidator.WAVEFORM_OBSERVATION__WAVEFORM_OBSERVATION_MOOD_CODE,
-						 PhmrPlugin.INSTANCE.getString("WaveformObservationMoodCode"),
-						 new Object [] { waveformObservation }));
-			}
-			return false;
-		}
-		return true;
-	}
+  	  
+    if (VALIDATE_WAVEFORM_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+      OCL.Helper helper = EOCL_ENV.createOCLHelper();
+      helper.setContext(PhmrPackage.Literals.WAVEFORM_OBSERVATION);
+      try
+      {
+        VALIDATE_WAVEFORM_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_WAVEFORM_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+      }
+      catch (ParserException pe)
+      {
+        throw new UnsupportedOperationException(pe.getLocalizedMessage());
+      }
+    }
+    if (!EOCL_ENV.createQuery(VALIDATE_WAVEFORM_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(waveformObservation))
+    {
+      if (diagnostics != null)
+      {
+        diagnostics.add
+          (new BasicDiagnostic
+            (Diagnostic.ERROR,
+             PhmrValidator.DIAGNOSTIC_SOURCE,
+             PhmrValidator.WAVEFORM_OBSERVATION__WAVEFORM_OBSERVATION_MOOD_CODE,
+             PhmrPlugin.INSTANCE.getString("WaveformObservationMoodCode"),
+             new Object [] { waveformObservation }));
+      }
+       
+      return false;
+    }
+    return true;
+  }
 
 	/**
-	 * The cached OCL expression body for the '{@link #validateWaveformObservationValue(WaveformObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Waveform Observation Value</em>}' operation.
-	 * <!-- begin-user-doc -->
+   * The cached OCL expression body for the '{@link #validateWaveformObservationValue(WaveformObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Waveform Observation Value</em>}' operation.
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateWaveformObservationValue(WaveformObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
+   * @see #validateWaveformObservationValue(WaveformObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+   * @generated
+   * @ordered
+   */
 	protected static final String VALIDATE_WAVEFORM_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (not self.value->isEmpty())";
 
 	/**
-	 * The cached OCL invariant for the '{@link #validateWaveformObservationValue(WaveformObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Waveform Observation Value</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
+   * The cached OCL invariant for the '{@link #validateWaveformObservationValue(WaveformObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Waveform Observation Value</em>}' invariant operation.
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateWaveformObservationValue(WaveformObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
+   * @see #validateWaveformObservationValue(WaveformObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+   * @generated
+   * @ordered
+   */
 	protected static Constraint VALIDATE_WAVEFORM_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * (self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (not self.value->isEmpty())
-	 * @param waveformObservation The receiving '<em><b>Waveform Observation</b></em>' model object.
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
+   * <!-- begin-model-doc -->
+   * @param waveformObservation The receiving '<em><b>Waveform Observation</b></em>' model object.
+   * @param diagnostics The chain of diagnostics to which problems are to be appended.
+   * @param context The cache of context-specific information.
+   * <!-- end-model-doc -->
+   * @generated
+   */
 	public static  boolean validateWaveformObservationValue(WaveformObservation waveformObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
-		if (VALIDATE_WAVEFORM_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setContext(PhmrPackage.Literals.WAVEFORM_OBSERVATION);
-			try {
-				VALIDATE_WAVEFORM_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_WAVEFORM_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
-				throw new UnsupportedOperationException(pe.getLocalizedMessage());
-			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_WAVEFORM_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(waveformObservation)) {
-			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.INFO,
-						 PhmrValidator.DIAGNOSTIC_SOURCE,
-						 PhmrValidator.WAVEFORM_OBSERVATION__WAVEFORM_OBSERVATION_VALUE,
-						 PhmrPlugin.INSTANCE.getString("WaveformObservationValue"),
-						 new Object [] { waveformObservation }));
-			}
-			return false;
-		}
-		return true;
-	}
+  	  
+    if (VALIDATE_WAVEFORM_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+      OCL.Helper helper = EOCL_ENV.createOCLHelper();
+      helper.setContext(PhmrPackage.Literals.WAVEFORM_OBSERVATION);
+      try
+      {
+        VALIDATE_WAVEFORM_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_WAVEFORM_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+      }
+      catch (ParserException pe)
+      {
+        throw new UnsupportedOperationException(pe.getLocalizedMessage());
+      }
+    }
+    if (!EOCL_ENV.createQuery(VALIDATE_WAVEFORM_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(waveformObservation))
+    {
+      if (diagnostics != null)
+      {
+        diagnostics.add
+          (new BasicDiagnostic
+            (Diagnostic.INFO,
+             PhmrValidator.DIAGNOSTIC_SOURCE,
+             PhmrValidator.WAVEFORM_OBSERVATION__WAVEFORM_OBSERVATION_VALUE,
+             PhmrPlugin.INSTANCE.getString("WaveformObservationValue"),
+             new Object [] { waveformObservation }));
+      }
+       
+      return false;
+    }
+    return true;
+  }
 
 } // WaveformObservationOperations

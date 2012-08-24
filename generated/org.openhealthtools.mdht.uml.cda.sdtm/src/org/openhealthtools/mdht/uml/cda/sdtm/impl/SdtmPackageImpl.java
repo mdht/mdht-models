@@ -24,12 +24,14 @@ import org.eclipse.emf.ecore.resource.Resource;
 
 import org.eclipse.emf.ecore.xmi.impl.EcoreResourceFactoryImpl;
 
+import org.openhealthtools.mdht.emf.runtime.util.Initializer;
 import org.openhealthtools.mdht.uml.cda.CDAPackage;
 
 import org.openhealthtools.mdht.uml.cda.sdtm.SdtmFactory;
 import org.openhealthtools.mdht.uml.cda.sdtm.SdtmPackage;
 
 import org.openhealthtools.mdht.uml.cda.sdtm.util.SdtmValidator;
+import org.openhealthtools.mdht.uml.cda.util.AnnotationBasedInitializer;
 
 /**
  * <!-- begin-user-doc -->
@@ -40,1471 +42,1559 @@ import org.openhealthtools.mdht.uml.cda.sdtm.util.SdtmValidator;
 public class SdtmPackageImpl extends EPackageImpl implements SdtmPackage
 {
   /**
-   * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+     * @generated
+     */
   protected String packageFilename = "sdtm.ecore";
 
   /**
-   * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+     * @generated
+     */
   private EClass subjectDataHumanClinicalTrialsEClass = null;
 
   /**
-   * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+     * @generated
+     */
   private EClass humanClinicalSubjectDataDocumentBodyEClass = null;
 
   /**
-   * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+     * @generated
+     */
   private EClass humanClinicalSubjectDemographicsEClass = null;
 
   /**
-   * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+     * @generated
+     */
   private EClass dataCollectionEClass = null;
 
   /**
-   * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+     * @generated
+     */
   private EClass eventStudyDayEClass = null;
 
   /**
-   * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+     * @generated
+     */
   private EClass studyArmEClass = null;
 
   /**
-   * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+     * @generated
+     */
   private EClass visitEClass = null;
 
   /**
-   * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+     * @generated
+     */
   private EClass adverseEventEClass = null;
 
   /**
-   * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+     * @generated
+     */
   private EClass groupIdentifierEClass = null;
 
   /**
-   * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+     * @generated
+     */
   private EClass bodySystemorOrganClassEClass = null;
 
   /**
-   * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+     * @generated
+     */
   private EClass eventSeverityEClass = null;
 
   /**
-   * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+     * @generated
+     */
   private EClass preSpecifiedEventEClass = null;
 
   /**
-   * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+     * @generated
+     */
   private EClass studyDayPeriodEClass = null;
 
   /**
-   * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+     * @generated
+     */
   private EClass vitalSignEClass = null;
 
   /**
-   * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+     * @generated
+     */
   private EClass plannedStudyDayEClass = null;
 
   /**
-   * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    private EClass exclusionReasonEClass = null;
+
+  /**
+     * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+     * @generated
+     */
   private EClass timingReferenceEClass = null;
 
   /**
-   * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+     * @generated
+     */
   private EClass nonPerformanceReasonEClass = null;
 
   /**
-   * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+     * @generated
+     */
   private EClass ecgTestResultEClass = null;
 
   /**
-   * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
-  private EClass baselineIndicatorEClass = null;
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  private EClass derivedDataIndicatorEClass = null;
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
+     * @generated
+     */
   private EClass inclusionorExclusionCriteriaNotMetEClass = null;
 
   /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  private EClass nonHumanLaboratoryTestResultEClass = null;
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    private EClass nonhumanLaboratoryTestResultEClass = null;
 
   /**
-   * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+     * @generated
+     */
   private EClass specimenInformationEClass = null;
 
   /**
-   * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+     * @generated
+     */
   private EClass physicalExaminationFindingEClass = null;
 
   /**
-   * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+     * @generated
+     */
   private EClass microbiologySpecimenFindingEClass = null;
 
   /**
-   * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+     * @generated
+     */
   private EClass microbiologySusceptibilityEClass = null;
 
   /**
-   * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+     * @generated
+     */
   private EClass pharmacokineticConcentrationFindingEClass = null;
 
   /**
-   * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+     * @generated
+     */
   private EClass findingAboutEClass = null;
 
   /**
-   * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+     * @generated
+     */
   private EClass drugAccountabilityEClass = null;
 
   /**
-   * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+     * @generated
+     */
   private EClass subjectElementEClass = null;
 
   /**
-   * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+     * @generated
+     */
   private EClass studyEpochEClass = null;
 
   /**
-   * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+     * @generated
+     */
   private EClass substanceUseEClass = null;
 
   /**
-   * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+     * @generated
+     */
   private EClass activityStartTimingReferenceEClass = null;
 
   /**
-   * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+     * @generated
+     */
   private EClass activityEndTimingReferenceEClass = null;
 
   /**
-   * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+     * @generated
+     */
   private EClass humanClinicalDispositionEClass = null;
 
   /**
-   * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+     * @generated
+     */
   private EClass medicalHistoryItemEClass = null;
 
   /**
-   * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+     * @generated
+     */
   private EClass protocolDeviationEClass = null;
 
   /**
-   * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+     * @generated
+     */
   private EClass clinicalEventEClass = null;
 
   /**
-   * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+     * @generated
+     */
   private EClass subjectCharacteristicEClass = null;
 
   /**
-   * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+     * @generated
+     */
   private EClass pharmacokineticParameterFindingEClass = null;
 
   /**
-   * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+     * @generated
+     */
   private EClass concomitantMedicationEClass = null;
 
   /**
-   * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+     * @generated
+     */
   private EClass consumableMaterialEClass = null;
 
   /**
-   * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+     * @generated
+     */
   private EClass humanClinicalExposureEClass = null;
 
   /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  private EClass studyTestPerformerEClass = null;
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    private EClass studyTestOrganizationEClass = null;
 
   /**
-   * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+     * @generated
+     */
   private EClass questionnaireFindingEClass = null;
 
   /**
-   * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+     * @generated
+     */
   private EClass studyFindingEvaluatorEClass = null;
 
   /**
-   * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+     * @generated
+     */
   private EClass subjectDataNonClinicalTrialsEClass = null;
 
   /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  private EClass nonHumanSubjectDataDocumentBodyEClass = null;
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    private EClass nonhumanSubjectDataDocumentBodyEClass = null;
 
   /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  private EClass nonHumanExposureEClass = null;
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    private EClass nonhumanSubjectDemographicsEClass = null;
 
   /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  private EClass nonHumanDispositionEClass = null;
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    private EClass nonhumanDispositionEClass = null;
 
   /**
-   * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    private EClass nonhumanExposureEClass = null;
+
+  /**
+     * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+     * @generated
+     */
   private EClass humanClinicalLaboratoryTestResultEClass = null;
 
   /**
-   * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+     * @generated
+     */
   private EClass bodyWeightEClass = null;
 
   /**
-   * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+     * @generated
+     */
   private EClass bodyWeightGainEClass = null;
 
   /**
-   * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+     * @generated
+     */
   private EClass clinicalObservationEClass = null;
 
   /**
-   * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+     * @generated
+     */
   private EClass deathDiagnosisEClass = null;
 
   /**
-   * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+     * @generated
+     */
   private EClass foodandWaterConsumptionEClass = null;
 
   /**
-   * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+     * @generated
+     */
   private EClass macroscopicFindingEClass = null;
 
   /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  private EClass microscopicFindingsEClass = null;
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    private EClass microscopicFindingEClass = null;
 
   /**
-   * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+     * @generated
+     */
   private EClass organMeasurementEClass = null;
 
   /**
-   * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+     * @generated
+     */
   private EClass palpableMassEClass = null;
 
   /**
-   * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+     * @generated
+     */
   private EClass tumorFindingEClass = null;
 
   /**
-   * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+     * @generated
+     */
   private EClass subjectPoolEClass = null;
 
   /**
-   * Creates an instance of the model <b>Package</b>, registered with
-   * {@link org.eclipse.emf.ecore.EPackage.Registry EPackage.Registry} by the package
-   * package URI value.
-   * <p>Note: the correct way to create the package is via the static
-   * factory method {@link #init init()}, which also performs
-   * initialization of the package, or returns the registered package,
-   * if one already exists.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @see org.eclipse.emf.ecore.EPackage.Registry
-   * @see org.openhealthtools.mdht.uml.cda.sdtm.SdtmPackage#eNS_URI
-   * @see #init()
-   * @generated
-   */
-  private SdtmPackageImpl()
-  {
-    super(eNS_URI, SdtmFactory.eINSTANCE);
-  }
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    private EClass massIdentificationEClass = null;
 
   /**
-   * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    private EClass studySubjectInterventionEClass = null;
+
+  /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    private EClass studySubjectEventEClass = null;
+
+  /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    private EClass studySubjectFindingEClass = null;
+
+  /**
+     * Creates an instance of the model <b>Package</b>, registered with
+     * {@link org.eclipse.emf.ecore.EPackage.Registry EPackage.Registry} by the package
+     * package URI value.
+     * <p>Note: the correct way to create the package is via the static
+     * factory method {@link #init init()}, which also performs
+     * initialization of the package, or returns the registered package,
+     * if one already exists.
+     * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+     * @see org.eclipse.emf.ecore.EPackage.Registry
+     * @see org.openhealthtools.mdht.uml.cda.sdtm.SdtmPackage#eNS_URI
+     * @see #init()
+     * @generated
+     */
+  private SdtmPackageImpl()
+  {
+        super(eNS_URI, SdtmFactory.eINSTANCE);
+    }
+
+  /**
+     * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+     * @generated
+     */
   private static boolean isInited = false;
 
   /**
-   * Creates, registers, and initializes the <b>Package</b> for this model, and for any others upon which it depends.
-   * 
-   * <p>This method is used to initialize {@link SdtmPackage#eINSTANCE} when that field is accessed.
-   * Clients should not invoke it directly. Instead, they should simply access that field to obtain the package.
-   * <!-- begin-user-doc -->
+     * Creates, registers, and initializes the <b>Package</b> for this model, and for any others upon which it depends.
+     * 
+     * <p>This method is used to initialize {@link SdtmPackage#eINSTANCE} when that field is accessed.
+     * Clients should not invoke it directly. Instead, they should simply access that field to obtain the package.
+     * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @see #eNS_URI
-   * @generated
-   */
+     * @see #eNS_URI
+     * @generated
+     */
   public static SdtmPackage init()
   {
-    if (isInited) return (SdtmPackage)EPackage.Registry.INSTANCE.getEPackage(SdtmPackage.eNS_URI);
+        if (isInited) return (SdtmPackage)EPackage.Registry.INSTANCE.getEPackage(SdtmPackage.eNS_URI);
 
-    // Obtain or create and register package
-    SdtmPackageImpl theSdtmPackage = (SdtmPackageImpl)(EPackage.Registry.INSTANCE.get(eNS_URI) instanceof SdtmPackageImpl ? EPackage.Registry.INSTANCE.get(eNS_URI) : new SdtmPackageImpl());
+        // Obtain or create and register package
+        SdtmPackageImpl theSdtmPackage = (SdtmPackageImpl)(EPackage.Registry.INSTANCE.get(eNS_URI) instanceof SdtmPackageImpl ? EPackage.Registry.INSTANCE.get(eNS_URI) : new SdtmPackageImpl());
 
-    isInited = true;
+        isInited = true;
 
-    // Initialize simple dependencies
-    CDAPackage.eINSTANCE.eClass();
+        // Initialize simple dependencies
+        CDAPackage.eINSTANCE.eClass();
 
-    // Load packages
-    theSdtmPackage.loadPackage();
+        // Load packages
+        theSdtmPackage.loadPackage();
 
-    // Fix loaded packages
-    theSdtmPackage.fixPackageContents();
+        // Fix loaded packages
+        theSdtmPackage.fixPackageContents();
 
-    // Register package validator
-    EValidator.Registry.INSTANCE.put
-      (theSdtmPackage, 
-       new EValidator.Descriptor()
-       {
-         public EValidator getEValidator()
-         {
-           return SdtmValidator.INSTANCE;
-         }
-       });
+        // Register package validator
+        EValidator.Registry.INSTANCE.put
+            (theSdtmPackage, 
+             new EValidator.Descriptor()
+             {
+                 public EValidator getEValidator()
+                 {
+                     return SdtmValidator.INSTANCE;
+                 }
+             });
 
-    // Mark meta-data to indicate it can't be changed
-    theSdtmPackage.freeze();
+        // Mark meta-data to indicate it can't be changed
+        theSdtmPackage.freeze();
 
   
-    // Update the registry and return the package
-    EPackage.Registry.INSTANCE.put(SdtmPackage.eNS_URI, theSdtmPackage);
-    return theSdtmPackage;
-  }
+        // publish my initializers in the registry
+        Initializer.Registry.INSTANCE.registerFactory("org.openhealthtools.mdht.uml.cda.sdtm", AnnotationBasedInitializer.FACTORY);
+        Initializer.Registry.INSTANCE.initializeEPackage(theSdtmPackage);
+                
+        // Update the registry and return the package
+        EPackage.Registry.INSTANCE.put(SdtmPackage.eNS_URI, theSdtmPackage);
+        return theSdtmPackage;
+    }
 
   /**
-   * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+     * @generated
+     */
   public EClass getSubjectDataHumanClinicalTrials()
   {
-    if (subjectDataHumanClinicalTrialsEClass == null)
-    {
-      subjectDataHumanClinicalTrialsEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(SdtmPackage.eNS_URI).getEClassifiers().get(0);
+        if (subjectDataHumanClinicalTrialsEClass == null)
+        {
+            subjectDataHumanClinicalTrialsEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(SdtmPackage.eNS_URI).getEClassifiers().get(0);
+        }
+        return subjectDataHumanClinicalTrialsEClass;
     }
-    return subjectDataHumanClinicalTrialsEClass;
-  }
 
   /**
-   * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+     * @generated
+     */
   public EClass getHumanClinicalSubjectDataDocumentBody()
   {
-    if (humanClinicalSubjectDataDocumentBodyEClass == null)
-    {
-      humanClinicalSubjectDataDocumentBodyEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(SdtmPackage.eNS_URI).getEClassifiers().get(1);
+        if (humanClinicalSubjectDataDocumentBodyEClass == null)
+        {
+            humanClinicalSubjectDataDocumentBodyEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(SdtmPackage.eNS_URI).getEClassifiers().get(1);
+        }
+        return humanClinicalSubjectDataDocumentBodyEClass;
     }
-    return humanClinicalSubjectDataDocumentBodyEClass;
-  }
 
   /**
-   * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+     * @generated
+     */
   public EClass getHumanClinicalSubjectDemographics()
   {
-    if (humanClinicalSubjectDemographicsEClass == null)
-    {
-      humanClinicalSubjectDemographicsEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(SdtmPackage.eNS_URI).getEClassifiers().get(2);
+        if (humanClinicalSubjectDemographicsEClass == null)
+        {
+            humanClinicalSubjectDemographicsEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(SdtmPackage.eNS_URI).getEClassifiers().get(2);
+        }
+        return humanClinicalSubjectDemographicsEClass;
     }
-    return humanClinicalSubjectDemographicsEClass;
-  }
 
   /**
-   * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+     * @generated
+     */
   public EClass getDataCollection()
   {
-    if (dataCollectionEClass == null)
-    {
-      dataCollectionEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(SdtmPackage.eNS_URI).getEClassifiers().get(3);
+        if (dataCollectionEClass == null)
+        {
+            dataCollectionEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(SdtmPackage.eNS_URI).getEClassifiers().get(3);
+        }
+        return dataCollectionEClass;
     }
-    return dataCollectionEClass;
-  }
 
   /**
-   * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+     * @generated
+     */
   public EClass getEventStudyDay()
   {
-    if (eventStudyDayEClass == null)
-    {
-      eventStudyDayEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(SdtmPackage.eNS_URI).getEClassifiers().get(4);
+        if (eventStudyDayEClass == null)
+        {
+            eventStudyDayEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(SdtmPackage.eNS_URI).getEClassifiers().get(4);
+        }
+        return eventStudyDayEClass;
     }
-    return eventStudyDayEClass;
-  }
 
   /**
-   * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+     * @generated
+     */
   public EClass getStudyArm()
   {
-    if (studyArmEClass == null)
-    {
-      studyArmEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(SdtmPackage.eNS_URI).getEClassifiers().get(5);
+        if (studyArmEClass == null)
+        {
+            studyArmEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(SdtmPackage.eNS_URI).getEClassifiers().get(5);
+        }
+        return studyArmEClass;
     }
-    return studyArmEClass;
-  }
 
   /**
-   * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+     * @generated
+     */
   public EClass getVisit()
   {
-    if (visitEClass == null)
-    {
-      visitEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(SdtmPackage.eNS_URI).getEClassifiers().get(6);
+        if (visitEClass == null)
+        {
+            visitEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(SdtmPackage.eNS_URI).getEClassifiers().get(6);
+        }
+        return visitEClass;
     }
-    return visitEClass;
-  }
 
   /**
-   * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+     * @generated
+     */
   public EClass getAdverseEvent()
   {
-    if (adverseEventEClass == null)
-    {
-      adverseEventEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(SdtmPackage.eNS_URI).getEClassifiers().get(7);
+        if (adverseEventEClass == null)
+        {
+            adverseEventEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(SdtmPackage.eNS_URI).getEClassifiers().get(7);
+        }
+        return adverseEventEClass;
     }
-    return adverseEventEClass;
-  }
 
   /**
-   * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+     * @generated
+     */
   public EClass getGroupIdentifier()
   {
-    if (groupIdentifierEClass == null)
-    {
-      groupIdentifierEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(SdtmPackage.eNS_URI).getEClassifiers().get(8);
+        if (groupIdentifierEClass == null)
+        {
+            groupIdentifierEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(SdtmPackage.eNS_URI).getEClassifiers().get(8);
+        }
+        return groupIdentifierEClass;
     }
-    return groupIdentifierEClass;
-  }
 
   /**
-   * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+     * @generated
+     */
   public EClass getBodySystemorOrganClass()
   {
-    if (bodySystemorOrganClassEClass == null)
-    {
-      bodySystemorOrganClassEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(SdtmPackage.eNS_URI).getEClassifiers().get(9);
+        if (bodySystemorOrganClassEClass == null)
+        {
+            bodySystemorOrganClassEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(SdtmPackage.eNS_URI).getEClassifiers().get(9);
+        }
+        return bodySystemorOrganClassEClass;
     }
-    return bodySystemorOrganClassEClass;
-  }
 
   /**
-   * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+     * @generated
+     */
   public EClass getEventSeverity()
   {
-    if (eventSeverityEClass == null)
-    {
-      eventSeverityEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(SdtmPackage.eNS_URI).getEClassifiers().get(10);
+        if (eventSeverityEClass == null)
+        {
+            eventSeverityEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(SdtmPackage.eNS_URI).getEClassifiers().get(10);
+        }
+        return eventSeverityEClass;
     }
-    return eventSeverityEClass;
-  }
 
   /**
-   * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+     * @generated
+     */
   public EClass getPreSpecifiedEvent()
   {
-    if (preSpecifiedEventEClass == null)
-    {
-      preSpecifiedEventEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(SdtmPackage.eNS_URI).getEClassifiers().get(11);
+        if (preSpecifiedEventEClass == null)
+        {
+            preSpecifiedEventEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(SdtmPackage.eNS_URI).getEClassifiers().get(11);
+        }
+        return preSpecifiedEventEClass;
     }
-    return preSpecifiedEventEClass;
-  }
 
   /**
-   * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+     * @generated
+     */
   public EClass getStudyDayPeriod()
   {
-    if (studyDayPeriodEClass == null)
-    {
-      studyDayPeriodEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(SdtmPackage.eNS_URI).getEClassifiers().get(12);
+        if (studyDayPeriodEClass == null)
+        {
+            studyDayPeriodEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(SdtmPackage.eNS_URI).getEClassifiers().get(12);
+        }
+        return studyDayPeriodEClass;
     }
-    return studyDayPeriodEClass;
-  }
 
   /**
-   * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+     * @generated
+     */
   public EClass getVitalSign()
   {
-    if (vitalSignEClass == null)
-    {
-      vitalSignEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(SdtmPackage.eNS_URI).getEClassifiers().get(13);
+        if (vitalSignEClass == null)
+        {
+            vitalSignEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(SdtmPackage.eNS_URI).getEClassifiers().get(13);
+        }
+        return vitalSignEClass;
     }
-    return vitalSignEClass;
-  }
 
   /**
-   * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+     * @generated
+     */
   public EClass getPlannedStudyDay()
   {
-    if (plannedStudyDayEClass == null)
-    {
-      plannedStudyDayEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(SdtmPackage.eNS_URI).getEClassifiers().get(14);
+        if (plannedStudyDayEClass == null)
+        {
+            plannedStudyDayEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(SdtmPackage.eNS_URI).getEClassifiers().get(16);
+        }
+        return plannedStudyDayEClass;
     }
-    return plannedStudyDayEClass;
-  }
 
   /**
-   * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    public EClass getExclusionReason()
+    {
+        if (exclusionReasonEClass == null)
+        {
+            exclusionReasonEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(SdtmPackage.eNS_URI).getEClassifiers().get(17);
+        }
+        return exclusionReasonEClass;
+    }
+
+  /**
+     * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+     * @generated
+     */
   public EClass getTimingReference()
   {
-    if (timingReferenceEClass == null)
-    {
-      timingReferenceEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(SdtmPackage.eNS_URI).getEClassifiers().get(15);
+        if (timingReferenceEClass == null)
+        {
+            timingReferenceEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(SdtmPackage.eNS_URI).getEClassifiers().get(14);
+        }
+        return timingReferenceEClass;
     }
-    return timingReferenceEClass;
-  }
 
   /**
-   * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+     * @generated
+     */
   public EClass getNonPerformanceReason()
   {
-    if (nonPerformanceReasonEClass == null)
-    {
-      nonPerformanceReasonEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(SdtmPackage.eNS_URI).getEClassifiers().get(16);
+        if (nonPerformanceReasonEClass == null)
+        {
+            nonPerformanceReasonEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(SdtmPackage.eNS_URI).getEClassifiers().get(15);
+        }
+        return nonPerformanceReasonEClass;
     }
-    return nonPerformanceReasonEClass;
-  }
 
   /**
-   * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+     * @generated
+     */
   public EClass getECGTestResult()
   {
-    if (ecgTestResultEClass == null)
-    {
-      ecgTestResultEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(SdtmPackage.eNS_URI).getEClassifiers().get(17);
+        if (ecgTestResultEClass == null)
+        {
+            ecgTestResultEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(SdtmPackage.eNS_URI).getEClassifiers().get(18);
+        }
+        return ecgTestResultEClass;
     }
-    return ecgTestResultEClass;
-  }
 
   /**
-   * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
-  public EClass getBaselineIndicator()
-  {
-    if (baselineIndicatorEClass == null)
-    {
-      baselineIndicatorEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(SdtmPackage.eNS_URI).getEClassifiers().get(18);
-    }
-    return baselineIndicatorEClass;
-  }
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public EClass getDerivedDataIndicator()
-  {
-    if (derivedDataIndicatorEClass == null)
-    {
-      derivedDataIndicatorEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(SdtmPackage.eNS_URI).getEClassifiers().get(19);
-    }
-    return derivedDataIndicatorEClass;
-  }
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
+     * @generated
+     */
   public EClass getInclusionorExclusionCriteriaNotMet()
   {
-    if (inclusionorExclusionCriteriaNotMetEClass == null)
-    {
-      inclusionorExclusionCriteriaNotMetEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(SdtmPackage.eNS_URI).getEClassifiers().get(20);
+        if (inclusionorExclusionCriteriaNotMetEClass == null)
+        {
+            inclusionorExclusionCriteriaNotMetEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(SdtmPackage.eNS_URI).getEClassifiers().get(19);
+        }
+        return inclusionorExclusionCriteriaNotMetEClass;
     }
-    return inclusionorExclusionCriteriaNotMetEClass;
-  }
 
   /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public EClass getNonHumanLaboratoryTestResult()
-  {
-    if (nonHumanLaboratoryTestResultEClass == null)
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    public EClass getNonhumanLaboratoryTestResult()
     {
-      nonHumanLaboratoryTestResultEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(SdtmPackage.eNS_URI).getEClassifiers().get(21);
+        if (nonhumanLaboratoryTestResultEClass == null)
+        {
+            nonhumanLaboratoryTestResultEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(SdtmPackage.eNS_URI).getEClassifiers().get(20);
+        }
+        return nonhumanLaboratoryTestResultEClass;
     }
-    return nonHumanLaboratoryTestResultEClass;
-  }
 
   /**
-   * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+     * @generated
+     */
   public EClass getSpecimenInformation()
   {
-    if (specimenInformationEClass == null)
-    {
-      specimenInformationEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(SdtmPackage.eNS_URI).getEClassifiers().get(22);
+        if (specimenInformationEClass == null)
+        {
+            specimenInformationEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(SdtmPackage.eNS_URI).getEClassifiers().get(21);
+        }
+        return specimenInformationEClass;
     }
-    return specimenInformationEClass;
-  }
 
   /**
-   * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+     * @generated
+     */
   public EClass getPhysicalExaminationFinding()
   {
-    if (physicalExaminationFindingEClass == null)
-    {
-      physicalExaminationFindingEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(SdtmPackage.eNS_URI).getEClassifiers().get(23);
+        if (physicalExaminationFindingEClass == null)
+        {
+            physicalExaminationFindingEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(SdtmPackage.eNS_URI).getEClassifiers().get(22);
+        }
+        return physicalExaminationFindingEClass;
     }
-    return physicalExaminationFindingEClass;
-  }
 
   /**
-   * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+     * @generated
+     */
   public EClass getMicrobiologySpecimenFinding()
   {
-    if (microbiologySpecimenFindingEClass == null)
-    {
-      microbiologySpecimenFindingEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(SdtmPackage.eNS_URI).getEClassifiers().get(24);
+        if (microbiologySpecimenFindingEClass == null)
+        {
+            microbiologySpecimenFindingEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(SdtmPackage.eNS_URI).getEClassifiers().get(23);
+        }
+        return microbiologySpecimenFindingEClass;
     }
-    return microbiologySpecimenFindingEClass;
-  }
 
   /**
-   * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+     * @generated
+     */
   public EClass getMicrobiologySusceptibility()
   {
-    if (microbiologySusceptibilityEClass == null)
-    {
-      microbiologySusceptibilityEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(SdtmPackage.eNS_URI).getEClassifiers().get(25);
+        if (microbiologySusceptibilityEClass == null)
+        {
+            microbiologySusceptibilityEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(SdtmPackage.eNS_URI).getEClassifiers().get(24);
+        }
+        return microbiologySusceptibilityEClass;
     }
-    return microbiologySusceptibilityEClass;
-  }
 
   /**
-   * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+     * @generated
+     */
   public EClass getPharmacokineticConcentrationFinding()
   {
-    if (pharmacokineticConcentrationFindingEClass == null)
-    {
-      pharmacokineticConcentrationFindingEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(SdtmPackage.eNS_URI).getEClassifiers().get(26);
+        if (pharmacokineticConcentrationFindingEClass == null)
+        {
+            pharmacokineticConcentrationFindingEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(SdtmPackage.eNS_URI).getEClassifiers().get(25);
+        }
+        return pharmacokineticConcentrationFindingEClass;
     }
-    return pharmacokineticConcentrationFindingEClass;
-  }
 
   /**
-   * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+     * @generated
+     */
   public EClass getFindingAbout()
   {
-    if (findingAboutEClass == null)
-    {
-      findingAboutEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(SdtmPackage.eNS_URI).getEClassifiers().get(27);
+        if (findingAboutEClass == null)
+        {
+            findingAboutEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(SdtmPackage.eNS_URI).getEClassifiers().get(26);
+        }
+        return findingAboutEClass;
     }
-    return findingAboutEClass;
-  }
 
   /**
-   * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+     * @generated
+     */
   public EClass getDrugAccountability()
   {
-    if (drugAccountabilityEClass == null)
-    {
-      drugAccountabilityEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(SdtmPackage.eNS_URI).getEClassifiers().get(28);
+        if (drugAccountabilityEClass == null)
+        {
+            drugAccountabilityEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(SdtmPackage.eNS_URI).getEClassifiers().get(27);
+        }
+        return drugAccountabilityEClass;
     }
-    return drugAccountabilityEClass;
-  }
 
   /**
-   * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+     * @generated
+     */
   public EClass getSubjectElement()
   {
-    if (subjectElementEClass == null)
-    {
-      subjectElementEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(SdtmPackage.eNS_URI).getEClassifiers().get(29);
+        if (subjectElementEClass == null)
+        {
+            subjectElementEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(SdtmPackage.eNS_URI).getEClassifiers().get(28);
+        }
+        return subjectElementEClass;
     }
-    return subjectElementEClass;
-  }
 
   /**
-   * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+     * @generated
+     */
   public EClass getStudyEpoch()
   {
-    if (studyEpochEClass == null)
-    {
-      studyEpochEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(SdtmPackage.eNS_URI).getEClassifiers().get(30);
+        if (studyEpochEClass == null)
+        {
+            studyEpochEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(SdtmPackage.eNS_URI).getEClassifiers().get(29);
+        }
+        return studyEpochEClass;
     }
-    return studyEpochEClass;
-  }
 
   /**
-   * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+     * @generated
+     */
   public EClass getSubstanceUse()
   {
-    if (substanceUseEClass == null)
-    {
-      substanceUseEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(SdtmPackage.eNS_URI).getEClassifiers().get(31);
+        if (substanceUseEClass == null)
+        {
+            substanceUseEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(SdtmPackage.eNS_URI).getEClassifiers().get(30);
+        }
+        return substanceUseEClass;
     }
-    return substanceUseEClass;
-  }
 
   /**
-   * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+     * @generated
+     */
   public EClass getActivityStartTimingReference()
   {
-    if (activityStartTimingReferenceEClass == null)
-    {
-      activityStartTimingReferenceEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(SdtmPackage.eNS_URI).getEClassifiers().get(32);
+        if (activityStartTimingReferenceEClass == null)
+        {
+            activityStartTimingReferenceEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(SdtmPackage.eNS_URI).getEClassifiers().get(31);
+        }
+        return activityStartTimingReferenceEClass;
     }
-    return activityStartTimingReferenceEClass;
-  }
 
   /**
-   * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+     * @generated
+     */
   public EClass getActivityEndTimingReference()
   {
-    if (activityEndTimingReferenceEClass == null)
-    {
-      activityEndTimingReferenceEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(SdtmPackage.eNS_URI).getEClassifiers().get(33);
+        if (activityEndTimingReferenceEClass == null)
+        {
+            activityEndTimingReferenceEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(SdtmPackage.eNS_URI).getEClassifiers().get(32);
+        }
+        return activityEndTimingReferenceEClass;
     }
-    return activityEndTimingReferenceEClass;
-  }
 
   /**
-   * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+     * @generated
+     */
   public EClass getHumanClinicalDisposition()
   {
-    if (humanClinicalDispositionEClass == null)
-    {
-      humanClinicalDispositionEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(SdtmPackage.eNS_URI).getEClassifiers().get(34);
+        if (humanClinicalDispositionEClass == null)
+        {
+            humanClinicalDispositionEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(SdtmPackage.eNS_URI).getEClassifiers().get(33);
+        }
+        return humanClinicalDispositionEClass;
     }
-    return humanClinicalDispositionEClass;
-  }
 
   /**
-   * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+     * @generated
+     */
   public EClass getMedicalHistoryItem()
   {
-    if (medicalHistoryItemEClass == null)
-    {
-      medicalHistoryItemEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(SdtmPackage.eNS_URI).getEClassifiers().get(35);
+        if (medicalHistoryItemEClass == null)
+        {
+            medicalHistoryItemEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(SdtmPackage.eNS_URI).getEClassifiers().get(34);
+        }
+        return medicalHistoryItemEClass;
     }
-    return medicalHistoryItemEClass;
-  }
 
   /**
-   * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+     * @generated
+     */
   public EClass getProtocolDeviation()
   {
-    if (protocolDeviationEClass == null)
-    {
-      protocolDeviationEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(SdtmPackage.eNS_URI).getEClassifiers().get(36);
+        if (protocolDeviationEClass == null)
+        {
+            protocolDeviationEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(SdtmPackage.eNS_URI).getEClassifiers().get(35);
+        }
+        return protocolDeviationEClass;
     }
-    return protocolDeviationEClass;
-  }
 
   /**
-   * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+     * @generated
+     */
   public EClass getClinicalEvent()
   {
-    if (clinicalEventEClass == null)
-    {
-      clinicalEventEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(SdtmPackage.eNS_URI).getEClassifiers().get(37);
+        if (clinicalEventEClass == null)
+        {
+            clinicalEventEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(SdtmPackage.eNS_URI).getEClassifiers().get(36);
+        }
+        return clinicalEventEClass;
     }
-    return clinicalEventEClass;
-  }
 
   /**
-   * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+     * @generated
+     */
   public EClass getSubjectCharacteristic()
   {
-    if (subjectCharacteristicEClass == null)
-    {
-      subjectCharacteristicEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(SdtmPackage.eNS_URI).getEClassifiers().get(38);
+        if (subjectCharacteristicEClass == null)
+        {
+            subjectCharacteristicEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(SdtmPackage.eNS_URI).getEClassifiers().get(37);
+        }
+        return subjectCharacteristicEClass;
     }
-    return subjectCharacteristicEClass;
-  }
 
   /**
-   * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+     * @generated
+     */
   public EClass getPharmacokineticParameterFinding()
   {
-    if (pharmacokineticParameterFindingEClass == null)
-    {
-      pharmacokineticParameterFindingEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(SdtmPackage.eNS_URI).getEClassifiers().get(39);
+        if (pharmacokineticParameterFindingEClass == null)
+        {
+            pharmacokineticParameterFindingEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(SdtmPackage.eNS_URI).getEClassifiers().get(38);
+        }
+        return pharmacokineticParameterFindingEClass;
     }
-    return pharmacokineticParameterFindingEClass;
-  }
 
   /**
-   * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+     * @generated
+     */
   public EClass getConcomitantMedication()
   {
-    if (concomitantMedicationEClass == null)
-    {
-      concomitantMedicationEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(SdtmPackage.eNS_URI).getEClassifiers().get(40);
+        if (concomitantMedicationEClass == null)
+        {
+            concomitantMedicationEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(SdtmPackage.eNS_URI).getEClassifiers().get(39);
+        }
+        return concomitantMedicationEClass;
     }
-    return concomitantMedicationEClass;
-  }
 
   /**
-   * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+     * @generated
+     */
   public EClass getConsumableMaterial()
   {
-    if (consumableMaterialEClass == null)
-    {
-      consumableMaterialEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(SdtmPackage.eNS_URI).getEClassifiers().get(41);
+        if (consumableMaterialEClass == null)
+        {
+            consumableMaterialEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(SdtmPackage.eNS_URI).getEClassifiers().get(40);
+        }
+        return consumableMaterialEClass;
     }
-    return consumableMaterialEClass;
-  }
 
   /**
-   * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+     * @generated
+     */
   public EClass getHumanClinicalExposure()
   {
-    if (humanClinicalExposureEClass == null)
-    {
-      humanClinicalExposureEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(SdtmPackage.eNS_URI).getEClassifiers().get(42);
+        if (humanClinicalExposureEClass == null)
+        {
+            humanClinicalExposureEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(SdtmPackage.eNS_URI).getEClassifiers().get(41);
+        }
+        return humanClinicalExposureEClass;
     }
-    return humanClinicalExposureEClass;
-  }
 
   /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public EClass getStudyTestPerformer()
-  {
-    if (studyTestPerformerEClass == null)
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    public EClass getStudyTestOrganization()
     {
-      studyTestPerformerEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(SdtmPackage.eNS_URI).getEClassifiers().get(43);
+        if (studyTestOrganizationEClass == null)
+        {
+            studyTestOrganizationEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(SdtmPackage.eNS_URI).getEClassifiers().get(42);
+        }
+        return studyTestOrganizationEClass;
     }
-    return studyTestPerformerEClass;
-  }
 
   /**
-   * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+     * @generated
+     */
   public EClass getQuestionnaireFinding()
   {
-    if (questionnaireFindingEClass == null)
-    {
-      questionnaireFindingEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(SdtmPackage.eNS_URI).getEClassifiers().get(44);
+        if (questionnaireFindingEClass == null)
+        {
+            questionnaireFindingEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(SdtmPackage.eNS_URI).getEClassifiers().get(43);
+        }
+        return questionnaireFindingEClass;
     }
-    return questionnaireFindingEClass;
-  }
 
   /**
-   * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+     * @generated
+     */
   public EClass getStudyFindingEvaluator()
   {
-    if (studyFindingEvaluatorEClass == null)
-    {
-      studyFindingEvaluatorEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(SdtmPackage.eNS_URI).getEClassifiers().get(45);
+        if (studyFindingEvaluatorEClass == null)
+        {
+            studyFindingEvaluatorEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(SdtmPackage.eNS_URI).getEClassifiers().get(44);
+        }
+        return studyFindingEvaluatorEClass;
     }
-    return studyFindingEvaluatorEClass;
-  }
 
   /**
-   * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+     * @generated
+     */
   public EClass getSubjectDataNonClinicalTrials()
   {
-    if (subjectDataNonClinicalTrialsEClass == null)
-    {
-      subjectDataNonClinicalTrialsEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(SdtmPackage.eNS_URI).getEClassifiers().get(46);
+        if (subjectDataNonClinicalTrialsEClass == null)
+        {
+            subjectDataNonClinicalTrialsEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(SdtmPackage.eNS_URI).getEClassifiers().get(45);
+        }
+        return subjectDataNonClinicalTrialsEClass;
     }
-    return subjectDataNonClinicalTrialsEClass;
-  }
 
   /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public EClass getNonHumanSubjectDataDocumentBody()
-  {
-    if (nonHumanSubjectDataDocumentBodyEClass == null)
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    public EClass getNonhumanSubjectDataDocumentBody()
     {
-      nonHumanSubjectDataDocumentBodyEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(SdtmPackage.eNS_URI).getEClassifiers().get(47);
+        if (nonhumanSubjectDataDocumentBodyEClass == null)
+        {
+            nonhumanSubjectDataDocumentBodyEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(SdtmPackage.eNS_URI).getEClassifiers().get(46);
+        }
+        return nonhumanSubjectDataDocumentBodyEClass;
     }
-    return nonHumanSubjectDataDocumentBodyEClass;
-  }
 
   /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public EClass getNonHumanExposure()
-  {
-    if (nonHumanExposureEClass == null)
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    public EClass getNonhumanSubjectDemographics()
     {
-      nonHumanExposureEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(SdtmPackage.eNS_URI).getEClassifiers().get(48);
+        if (nonhumanSubjectDemographicsEClass == null)
+        {
+            nonhumanSubjectDemographicsEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(SdtmPackage.eNS_URI).getEClassifiers().get(47);
+        }
+        return nonhumanSubjectDemographicsEClass;
     }
-    return nonHumanExposureEClass;
-  }
 
   /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public EClass getNonHumanDisposition()
-  {
-    if (nonHumanDispositionEClass == null)
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    public EClass getNonhumanDisposition()
     {
-      nonHumanDispositionEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(SdtmPackage.eNS_URI).getEClassifiers().get(49);
+        if (nonhumanDispositionEClass == null)
+        {
+            nonhumanDispositionEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(SdtmPackage.eNS_URI).getEClassifiers().get(48);
+        }
+        return nonhumanDispositionEClass;
     }
-    return nonHumanDispositionEClass;
-  }
 
   /**
-   * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    public EClass getNonhumanExposure()
+    {
+        if (nonhumanExposureEClass == null)
+        {
+            nonhumanExposureEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(SdtmPackage.eNS_URI).getEClassifiers().get(49);
+        }
+        return nonhumanExposureEClass;
+    }
+
+  /**
+     * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+     * @generated
+     */
   public EClass getHumanClinicalLaboratoryTestResult()
   {
-    if (humanClinicalLaboratoryTestResultEClass == null)
-    {
-      humanClinicalLaboratoryTestResultEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(SdtmPackage.eNS_URI).getEClassifiers().get(50);
+        if (humanClinicalLaboratoryTestResultEClass == null)
+        {
+            humanClinicalLaboratoryTestResultEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(SdtmPackage.eNS_URI).getEClassifiers().get(60);
+        }
+        return humanClinicalLaboratoryTestResultEClass;
     }
-    return humanClinicalLaboratoryTestResultEClass;
-  }
 
   /**
-   * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+     * @generated
+     */
   public EClass getBodyWeight()
   {
-    if (bodyWeightEClass == null)
-    {
-      bodyWeightEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(SdtmPackage.eNS_URI).getEClassifiers().get(51);
+        if (bodyWeightEClass == null)
+        {
+            bodyWeightEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(SdtmPackage.eNS_URI).getEClassifiers().get(50);
+        }
+        return bodyWeightEClass;
     }
-    return bodyWeightEClass;
-  }
 
   /**
-   * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+     * @generated
+     */
   public EClass getBodyWeightGain()
   {
-    if (bodyWeightGainEClass == null)
-    {
-      bodyWeightGainEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(SdtmPackage.eNS_URI).getEClassifiers().get(52);
+        if (bodyWeightGainEClass == null)
+        {
+            bodyWeightGainEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(SdtmPackage.eNS_URI).getEClassifiers().get(51);
+        }
+        return bodyWeightGainEClass;
     }
-    return bodyWeightGainEClass;
-  }
 
   /**
-   * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+     * @generated
+     */
   public EClass getClinicalObservation()
   {
-    if (clinicalObservationEClass == null)
-    {
-      clinicalObservationEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(SdtmPackage.eNS_URI).getEClassifiers().get(53);
+        if (clinicalObservationEClass == null)
+        {
+            clinicalObservationEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(SdtmPackage.eNS_URI).getEClassifiers().get(52);
+        }
+        return clinicalObservationEClass;
     }
-    return clinicalObservationEClass;
-  }
 
   /**
-   * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+     * @generated
+     */
   public EClass getDeathDiagnosis()
   {
-    if (deathDiagnosisEClass == null)
-    {
-      deathDiagnosisEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(SdtmPackage.eNS_URI).getEClassifiers().get(54);
+        if (deathDiagnosisEClass == null)
+        {
+            deathDiagnosisEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(SdtmPackage.eNS_URI).getEClassifiers().get(53);
+        }
+        return deathDiagnosisEClass;
     }
-    return deathDiagnosisEClass;
-  }
 
   /**
-   * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+     * @generated
+     */
   public EClass getFoodandWaterConsumption()
   {
-    if (foodandWaterConsumptionEClass == null)
-    {
-      foodandWaterConsumptionEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(SdtmPackage.eNS_URI).getEClassifiers().get(55);
+        if (foodandWaterConsumptionEClass == null)
+        {
+            foodandWaterConsumptionEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(SdtmPackage.eNS_URI).getEClassifiers().get(54);
+        }
+        return foodandWaterConsumptionEClass;
     }
-    return foodandWaterConsumptionEClass;
-  }
 
   /**
-   * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+     * @generated
+     */
   public EClass getMacroscopicFinding()
   {
-    if (macroscopicFindingEClass == null)
-    {
-      macroscopicFindingEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(SdtmPackage.eNS_URI).getEClassifiers().get(56);
+        if (macroscopicFindingEClass == null)
+        {
+            macroscopicFindingEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(SdtmPackage.eNS_URI).getEClassifiers().get(55);
+        }
+        return macroscopicFindingEClass;
     }
-    return macroscopicFindingEClass;
-  }
 
   /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public EClass getMicroscopicFindings()
-  {
-    if (microscopicFindingsEClass == null)
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    public EClass getMicroscopicFinding()
     {
-      microscopicFindingsEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(SdtmPackage.eNS_URI).getEClassifiers().get(57);
+        if (microscopicFindingEClass == null)
+        {
+            microscopicFindingEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(SdtmPackage.eNS_URI).getEClassifiers().get(56);
+        }
+        return microscopicFindingEClass;
     }
-    return microscopicFindingsEClass;
-  }
 
   /**
-   * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+     * @generated
+     */
   public EClass getOrganMeasurement()
   {
-    if (organMeasurementEClass == null)
-    {
-      organMeasurementEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(SdtmPackage.eNS_URI).getEClassifiers().get(58);
+        if (organMeasurementEClass == null)
+        {
+            organMeasurementEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(SdtmPackage.eNS_URI).getEClassifiers().get(57);
+        }
+        return organMeasurementEClass;
     }
-    return organMeasurementEClass;
-  }
 
   /**
-   * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+     * @generated
+     */
   public EClass getPalpableMass()
   {
-    if (palpableMassEClass == null)
-    {
-      palpableMassEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(SdtmPackage.eNS_URI).getEClassifiers().get(59);
+        if (palpableMassEClass == null)
+        {
+            palpableMassEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(SdtmPackage.eNS_URI).getEClassifiers().get(58);
+        }
+        return palpableMassEClass;
     }
-    return palpableMassEClass;
-  }
 
   /**
-   * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+     * @generated
+     */
   public EClass getTumorFinding()
   {
-    if (tumorFindingEClass == null)
-    {
-      tumorFindingEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(SdtmPackage.eNS_URI).getEClassifiers().get(60);
+        if (tumorFindingEClass == null)
+        {
+            tumorFindingEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(SdtmPackage.eNS_URI).getEClassifiers().get(59);
+        }
+        return tumorFindingEClass;
     }
-    return tumorFindingEClass;
-  }
 
   /**
-   * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+     * @generated
+     */
   public EClass getSubjectPool()
   {
-    if (subjectPoolEClass == null)
-    {
-      subjectPoolEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(SdtmPackage.eNS_URI).getEClassifiers().get(61);
+        if (subjectPoolEClass == null)
+        {
+            subjectPoolEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(SdtmPackage.eNS_URI).getEClassifiers().get(61);
+        }
+        return subjectPoolEClass;
     }
-    return subjectPoolEClass;
-  }
 
   /**
-   * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    public EClass getMassIdentification()
+    {
+        if (massIdentificationEClass == null)
+        {
+            massIdentificationEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(SdtmPackage.eNS_URI).getEClassifiers().get(62);
+        }
+        return massIdentificationEClass;
+    }
+
+  /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    public EClass getStudySubjectIntervention()
+    {
+        if (studySubjectInterventionEClass == null)
+        {
+            studySubjectInterventionEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(SdtmPackage.eNS_URI).getEClassifiers().get(63);
+        }
+        return studySubjectInterventionEClass;
+    }
+
+  /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    public EClass getStudySubjectEvent()
+    {
+        if (studySubjectEventEClass == null)
+        {
+            studySubjectEventEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(SdtmPackage.eNS_URI).getEClassifiers().get(64);
+        }
+        return studySubjectEventEClass;
+    }
+
+  /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    public EClass getStudySubjectFinding()
+    {
+        if (studySubjectFindingEClass == null)
+        {
+            studySubjectFindingEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(SdtmPackage.eNS_URI).getEClassifiers().get(65);
+        }
+        return studySubjectFindingEClass;
+    }
+
+  /**
+     * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+     * @generated
+     */
   public SdtmFactory getSdtmFactory()
   {
-    return (SdtmFactory)getEFactoryInstance();
-  }
+        return (SdtmFactory)getEFactoryInstance();
+    }
 
   /**
-   * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+     * @generated
+     */
   private boolean isLoaded = false;
 
   /**
-   * Laods the package and any sub-packages from their serialized form.
-   * <!-- begin-user-doc -->
+     * Laods the package and any sub-packages from their serialized form.
+     * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+     * @generated
+     */
   public void loadPackage()
   {
-    if (isLoaded) return;
-    isLoaded = true;
+        if (isLoaded) return;
+        isLoaded = true;
 
-    URL url = getClass().getResource(packageFilename);
-    if (url == null)
-    {
-      throw new RuntimeException("Missing serialized package: " + packageFilename);
+        URL url = getClass().getResource(packageFilename);
+        if (url == null)
+        {
+            throw new RuntimeException("Missing serialized package: " + packageFilename);
+        }
+        URI uri = URI.createURI(url.toString());
+        Resource resource = new EcoreResourceFactoryImpl().createResource(uri);
+        try
+        {
+            resource.load(null);
+        }
+        catch (IOException exception)
+        {
+            throw new WrappedException(exception);
+        }
+        initializeFromLoadedEPackage(this, (EPackage)resource.getContents().get(0));
+        createResource(eNS_URI);
     }
-    URI uri = URI.createURI(url.toString());
-    Resource resource = new EcoreResourceFactoryImpl().createResource(uri);
-    try
-    {
-      resource.load(null);
-    }
-    catch (IOException exception)
-    {
-      throw new WrappedException(exception);
-    }
-    initializeFromLoadedEPackage(this, (EPackage)resource.getContents().get(0));
-    createResource(eNS_URI);
-  }
 
 
   /**
-   * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+     * @generated
+     */
   private boolean isFixed = false;
 
   /**
-   * Fixes up the loaded package, to make it appear as if it had been programmatically built.
-   * <!-- begin-user-doc -->
+     * Fixes up the loaded package, to make it appear as if it had been programmatically built.
+     * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+     * @generated
+     */
   public void fixPackageContents()
   {
-    if (isFixed) return;
-    isFixed = true;
-    fixEClassifiers();
-  }
+        if (isFixed) return;
+        isFixed = true;
+        fixEClassifiers();
+    }
 
   /**
-   * Sets the instance class on the given classifier.
-   * <!-- begin-user-doc -->
+     * Sets the instance class on the given classifier.
+     * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+     * @generated
+     */
   @Override
   protected void fixInstanceClass(EClassifier eClassifier)
   {
-    if (eClassifier.getInstanceClassName() == null)
-    {
-      eClassifier.setInstanceClassName("org.openhealthtools.mdht.uml.cda.sdtm." + eClassifier.getName());
-      setGeneratedClassName(eClassifier);
+        if (eClassifier.getInstanceClassName() == null)
+        {
+            eClassifier.setInstanceClassName("org.openhealthtools.mdht.uml.cda.sdtm." + eClassifier.getName());
+            setGeneratedClassName(eClassifier);
+        }
     }
-  }
 
 } //SdtmPackageImpl

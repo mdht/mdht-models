@@ -10,10 +10,13 @@
  *******************************************************************************/
 package org.openhealthtools.mdht.uml.cda.phcr.impl;
 
+import java.lang.Iterable;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.ecore.EClass;
+import org.eclipse.emf.ecore.EObject;
+import org.openhealthtools.mdht.emf.runtime.util.Initializer;
 import org.openhealthtools.mdht.uml.cda.impl.ObservationImpl;
 import org.openhealthtools.mdht.uml.cda.phcr.GeotemporalHistoryObservation;
 import org.openhealthtools.mdht.uml.cda.phcr.PhcrPackage;
@@ -31,123 +34,132 @@ import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
  */
 public class GeotemporalHistoryObservationImpl extends ObservationImpl implements GeotemporalHistoryObservation {
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	protected GeotemporalHistoryObservationImpl() {
-		super();
-	}
+    super();
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	@Override
 	protected EClass eStaticClass() {
-		return PhcrPackage.Literals.GEOTEMPORAL_HISTORY_OBSERVATION;
-	}
+    return PhcrPackage.Literals.GEOTEMPORAL_HISTORY_OBSERVATION;
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateGeotemporalHistoryObservationEffectiveTime(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return GeotemporalHistoryObservationOperations.validateGeotemporalHistoryObservationEffectiveTime(this, diagnostics, context);
-	}
+    return GeotemporalHistoryObservationOperations.validateGeotemporalHistoryObservationEffectiveTime(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateGeotemporalHistoryObservationValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return GeotemporalHistoryObservationOperations.validateGeotemporalHistoryObservationValue(this, diagnostics, context);
-	}
+    return GeotemporalHistoryObservationOperations.validateGeotemporalHistoryObservationValue(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateGeotemporalHistoryObservationText(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return GeotemporalHistoryObservationOperations.validateGeotemporalHistoryObservationText(this, diagnostics, context);
-	}
+    return GeotemporalHistoryObservationOperations.validateGeotemporalHistoryObservationText(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateGeotemporalHistoryObservationTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return GeotemporalHistoryObservationOperations.validateGeotemporalHistoryObservationTemplateId(this, diagnostics, context);
-	}
+    return GeotemporalHistoryObservationOperations.validateGeotemporalHistoryObservationTemplateId(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateGeotemporalHistoryObservationClassCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return GeotemporalHistoryObservationOperations.validateGeotemporalHistoryObservationClassCode(this, diagnostics, context);
-	}
+    return GeotemporalHistoryObservationOperations.validateGeotemporalHistoryObservationClassCode(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateGeotemporalHistoryObservationCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return GeotemporalHistoryObservationOperations.validateGeotemporalHistoryObservationCode(this, diagnostics, context);
-	}
+    return GeotemporalHistoryObservationOperations.validateGeotemporalHistoryObservationCode(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateGeotemporalHistoryObservationMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return GeotemporalHistoryObservationOperations.validateGeotemporalHistoryObservationMoodCode(this, diagnostics, context);
-	}
+    return GeotemporalHistoryObservationOperations.validateGeotemporalHistoryObservationMoodCode(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateGeotemporalHistoryObservationCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return GeotemporalHistoryObservationOperations.validateGeotemporalHistoryObservationCodeP(this, diagnostics, context);
-	}
+    return GeotemporalHistoryObservationOperations.validateGeotemporalHistoryObservationCodeP(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateGeotemporalHistoryObservationStatusCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return GeotemporalHistoryObservationOperations.validateGeotemporalHistoryObservationStatusCode(this, diagnostics, context);
-	}
+    return GeotemporalHistoryObservationOperations.validateGeotemporalHistoryObservationStatusCode(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateGeotemporalHistoryObservationStatusCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return GeotemporalHistoryObservationOperations.validateGeotemporalHistoryObservationStatusCodeP(this, diagnostics, context);
-	}
+    return GeotemporalHistoryObservationOperations.validateGeotemporalHistoryObservationStatusCodeP(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public GeotemporalHistoryObservation init() {
-    	CDAUtil.init(this);
-    	return this;
-	}
+      return Initializer.Util.init(this);
+  }
+
+  /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    public GeotemporalHistoryObservation init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
 	
 	
 } //GeotemporalHistoryObservationImpl

@@ -10,6 +10,7 @@
  *******************************************************************************/
 package org.openhealthtools.mdht.uml.cda.phcr.tss.impl;
 
+import java.lang.Iterable;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
@@ -17,6 +18,8 @@ import org.eclipse.emf.common.util.EList;
 
 import org.eclipse.emf.ecore.EClass;
 
+import org.eclipse.emf.ecore.EObject;
+import org.openhealthtools.mdht.emf.runtime.util.Initializer;
 import org.openhealthtools.mdht.uml.cda.phcr.impl.ResultOrganizerImpl;
 
 import org.openhealthtools.mdht.uml.cda.phcr.tss.TssResultObservation;
@@ -39,69 +42,88 @@ import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
  */
 public class TssResultOrganizerImpl extends ResultOrganizerImpl implements TssResultOrganizer {
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	protected TssResultOrganizerImpl() {
-		super();
-	}
+    super();
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	@Override
 	protected EClass eStaticClass() {
-		return tssPackage.Literals.TSS_RESULT_ORGANIZER;
-	}
+    return tssPackage.Literals.TSS_RESULT_ORGANIZER;
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public boolean validateTssResultOrganizerCodeP(DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+    return TssResultOrganizerOperations.validateTssResultOrganizerCodeP(this, diagnostics, context);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public boolean validateTssResultOrganizerCode(DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+    return TssResultOrganizerOperations.validateTssResultOrganizerCode(this, diagnostics, context);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateTssResultOrganizerTssResultObservation(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return TssResultOrganizerOperations.validateTssResultOrganizerTssResultObservation(this, diagnostics, context);
-	}
+    return TssResultOrganizerOperations.validateTssResultOrganizerTssResultObservation(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public EList<TssResultObservation> getTssResultObservations() {
-		return TssResultOrganizerOperations.getTssResultObservations(this);
-	}
+    return TssResultOrganizerOperations.getTssResultObservations(this);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	@Override
 	public boolean validateResultOrganizerTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return TssResultOrganizerOperations.validateResultOrganizerTemplateId(this, diagnostics, context);
-	}
+    return TssResultOrganizerOperations.validateResultOrganizerTemplateId(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public boolean validateResultOrganizerCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return TssResultOrganizerOperations.validateResultOrganizerCode(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public TssResultOrganizer init() {
-    	CDAUtil.init(this);
-    	return this;
-	}
+      return Initializer.Util.init(this);
+  }
+
+  /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    public TssResultOrganizer init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
 } //TssResultOrganizerImpl

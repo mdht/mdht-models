@@ -42,6 +42,7 @@ import org.openhealthtools.mdht.uml.cda.phcr.util.PhcrValidator;
  * <p>
  * The following operations are supported:
  * <ul>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.phcr.PhcrSocialHistorySection#validatePhcrSocialHistorySectionCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Phcr Social History Section Code P</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.phcr.PhcrSocialHistorySection#validatePhcrSocialHistorySectionCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Phcr Social History Section Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.phcr.PhcrSocialHistorySection#validatePhcrSocialHistorySectionTitle(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Phcr Social History Section Title</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.phcr.PhcrSocialHistorySection#validatePhcrSocialHistorySectionText(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Phcr Social History Section Text</em>}</li>
@@ -56,7 +57,6 @@ import org.openhealthtools.mdht.uml.cda.phcr.util.PhcrValidator;
  *   <li>{@link org.openhealthtools.mdht.uml.cda.phcr.PhcrSocialHistorySection#getOccupationObservations() <em>Get Occupation Observations</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.phcr.PhcrSocialHistorySection#getPregnancyObservations() <em>Get Pregnancy Observations</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.phcr.PhcrSocialHistorySection#validateSocialHistorySectionTemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Social History Section Template Id</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.phcr.PhcrSocialHistorySection#validateSocialHistorySectionCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Social History Section Code</em>}</li>
  * </ul>
  * </p>
  *
@@ -64,856 +64,880 @@ import org.openhealthtools.mdht.uml.cda.phcr.util.PhcrValidator;
  */
 public class PhcrSocialHistorySectionOperations extends SocialHistorySectionOperations {
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	protected PhcrSocialHistorySectionOperations() {
-		super();
-	}
+    super();
+  }
 
 	/**
-	 * The cached OCL expression body for the '{@link #validatePhcrSocialHistorySectionCode(PhcrSocialHistorySection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Phcr Social History Section Code</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #validatePhcrSocialHistorySectionCode(PhcrSocialHistorySection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
-	protected static final String VALIDATE_PHCR_SOCIAL_HISTORY_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined())";
+   * The cached OCL expression body for the '{@link #validatePhcrSocialHistorySectionCodeP(PhcrSocialHistorySection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Phcr Social History Section Code P</em>}' operation.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #validatePhcrSocialHistorySectionCodeP(PhcrSocialHistorySection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+   * @generated
+   * @ordered
+   */
+  protected static final String VALIDATE_PHCR_SOCIAL_HISTORY_SECTION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined())";
 
-	/**
-	 * The cached OCL invariant for the '{@link #validatePhcrSocialHistorySectionCode(PhcrSocialHistorySection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Phcr Social History Section Code</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #validatePhcrSocialHistorySectionCode(PhcrSocialHistorySection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
-	
-	protected static Constraint VALIDATE_PHCR_SOCIAL_HISTORY_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+  /**
+   * The cached OCL invariant for the '{@link #validatePhcrSocialHistorySectionCodeP(PhcrSocialHistorySection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Phcr Social History Section Code P</em>}' invariant operation.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #validatePhcrSocialHistorySectionCodeP(PhcrSocialHistorySection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+   * @generated
+   * @ordered
+   */
+  
+  protected static Constraint VALIDATE_PHCR_SOCIAL_HISTORY_SECTION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * (self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined())
-	 * @param phcrSocialHistorySection The receiving '<em><b>Social History Section</b></em>' model object.
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
-	
-	public static  boolean validatePhcrSocialHistorySectionCode(PhcrSocialHistorySection phcrSocialHistorySection, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * <!-- begin-model-doc -->
+   * @param phcrSocialHistorySection The receiving '<em><b>Social History Section</b></em>' model object.
+   * @param diagnostics The chain of diagnostics to which problems are to be appended.
+   * @param context The cache of context-specific information.
+   * <!-- end-model-doc -->
+   * @generated
+   */
+  
+  public static  boolean validatePhcrSocialHistorySectionCodeP(PhcrSocialHistorySection phcrSocialHistorySection, DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
   	  
-		if (VALIDATE_PHCR_SOCIAL_HISTORY_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setContext(PhcrPackage.Literals.PHCR_SOCIAL_HISTORY_SECTION);
-			try {
-				VALIDATE_PHCR_SOCIAL_HISTORY_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PHCR_SOCIAL_HISTORY_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
-				throw new UnsupportedOperationException(pe.getLocalizedMessage());
-			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PHCR_SOCIAL_HISTORY_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(phcrSocialHistorySection)) {
-			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 PhcrValidator.DIAGNOSTIC_SOURCE,
-						 PhcrValidator.PHCR_SOCIAL_HISTORY_SECTION__PHCR_SOCIAL_HISTORY_SECTION_CODE,
-						 PhcrPlugin.INSTANCE.getString("PhcrSocialHistorySectionCode"),
-						 new Object [] { phcrSocialHistorySection }));
-			}
-			
-			if (context != null) {
-				// generate a pass token for my dependent constraints to short-circuit or filter results
-				@SuppressWarnings("unchecked")
-				Collection<Object> passToken = (Collection<Object>) context.get("org.openhealthtools.mdht.uml.cda.phcr.PhcrSocialHistorySectionCode");
-				if (passToken == null) {
-					// anticipate a reasonably healthy model
-					passToken = new java.util.ArrayList<Object>(3);
-					context.put("org.openhealthtools.mdht.uml.cda.phcr.PhcrSocialHistorySectionCode", passToken);
-				}
-				passToken.add(phcrSocialHistorySection);
-			}
-			 
-			return false;
-		}
-		return true;
-	}
+    if (VALIDATE_PHCR_SOCIAL_HISTORY_SECTION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+      OCL.Helper helper = EOCL_ENV.createOCLHelper();
+      helper.setContext(PhcrPackage.Literals.PHCR_SOCIAL_HISTORY_SECTION);
+      try
+      {
+        VALIDATE_PHCR_SOCIAL_HISTORY_SECTION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PHCR_SOCIAL_HISTORY_SECTION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+      }
+      catch (ParserException pe)
+      {
+        throw new UnsupportedOperationException(pe.getLocalizedMessage());
+      }
+    }
+    if (!EOCL_ENV.createQuery(VALIDATE_PHCR_SOCIAL_HISTORY_SECTION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(phcrSocialHistorySection))
+    {
+      if (diagnostics != null)
+      {
+        diagnostics.add
+          (new BasicDiagnostic
+            (Diagnostic.ERROR,
+             PhcrValidator.DIAGNOSTIC_SOURCE,
+             PhcrValidator.PHCR_SOCIAL_HISTORY_SECTION__PHCR_SOCIAL_HISTORY_SECTION_CODE_P,
+             PhcrPlugin.INSTANCE.getString("PhcrSocialHistorySectionCodeP"),
+             new Object [] { phcrSocialHistorySection }));
+      }
+      
+      if (context != null) {
+        // generate a pass token for my dependent constraints to short-circuit or filter results
+        @SuppressWarnings("unchecked")
+        Collection<Object> passToken = (Collection<Object>) context.get("org.openhealthtools.mdht.uml.cda.phcr.PhcrSocialHistorySectionCodeP");
+        if (passToken == null) {
+          // anticipate a reasonably healthy model
+          passToken = new java.util.ArrayList<Object>(3);
+          context.put("org.openhealthtools.mdht.uml.cda.phcr.PhcrSocialHistorySectionCodeP", passToken);
+        }
+        passToken.add(phcrSocialHistorySection);
+      }
+       
+      return false;
+    }
+    return true;
+  }
 
-	/**
-	 * The cached OCL expression body for the '{@link #validatePhcrSocialHistorySectionTitle(PhcrSocialHistorySection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Phcr Social History Section Title</em>}' operation.
-	 * <!-- begin-user-doc -->
+  /**
+   * The cached OCL expression body for the '{@link #validatePhcrSocialHistorySectionCode(PhcrSocialHistorySection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Phcr Social History Section Code</em>}' operation.
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validatePhcrSocialHistorySectionTitle(PhcrSocialHistorySection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
-	protected static final String VALIDATE_PHCR_SOCIAL_HISTORY_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.title.oclIsUndefined() or self.title.isNullFlavorUndefined()) implies (self.title.getText() = 'Social History')";
-
-	/**
-	 * The cached OCL invariant for the '{@link #validatePhcrSocialHistorySectionTitle(PhcrSocialHistorySection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Phcr Social History Section Title</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #validatePhcrSocialHistorySectionTitle(PhcrSocialHistorySection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
-	protected static Constraint VALIDATE_PHCR_SOCIAL_HISTORY_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * (self.title.oclIsUndefined() or self.title.isNullFlavorUndefined()) implies (self.title.getText() = 'Social History')
-	 * @param phcrSocialHistorySection The receiving '<em><b>Social History Section</b></em>' model object.
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
-	public static  boolean validatePhcrSocialHistorySectionTitle(PhcrSocialHistorySection phcrSocialHistorySection, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
-		if (VALIDATE_PHCR_SOCIAL_HISTORY_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setContext(PhcrPackage.Literals.PHCR_SOCIAL_HISTORY_SECTION);
-			try {
-				VALIDATE_PHCR_SOCIAL_HISTORY_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PHCR_SOCIAL_HISTORY_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
-				throw new UnsupportedOperationException(pe.getLocalizedMessage());
-			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PHCR_SOCIAL_HISTORY_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(phcrSocialHistorySection)) {
-			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 PhcrValidator.DIAGNOSTIC_SOURCE,
-						 PhcrValidator.PHCR_SOCIAL_HISTORY_SECTION__PHCR_SOCIAL_HISTORY_SECTION_TITLE,
-						 PhcrPlugin.INSTANCE.getString("PhcrSocialHistorySectionTitle"),
-						 new Object [] { phcrSocialHistorySection }));
-			}
-			 
-			return false;
-		}
-		return true;
-	}
-
-	/**
-	 * The cached OCL expression body for the '{@link #validatePhcrSocialHistorySectionText(PhcrSocialHistorySection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Phcr Social History Section Text</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #validatePhcrSocialHistorySectionText(PhcrSocialHistorySection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
-	protected static final String VALIDATE_PHCR_SOCIAL_HISTORY_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "not self.text.oclIsUndefined()";
-
-	/**
-	 * The cached OCL invariant for the '{@link #validatePhcrSocialHistorySectionText(PhcrSocialHistorySection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Phcr Social History Section Text</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #validatePhcrSocialHistorySectionText(PhcrSocialHistorySection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
-	protected static Constraint VALIDATE_PHCR_SOCIAL_HISTORY_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * not self.text.oclIsUndefined()
-	 * @param phcrSocialHistorySection The receiving '<em><b>Social History Section</b></em>' model object.
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
-	public static  boolean validatePhcrSocialHistorySectionText(PhcrSocialHistorySection phcrSocialHistorySection, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
-		if (VALIDATE_PHCR_SOCIAL_HISTORY_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setContext(PhcrPackage.Literals.PHCR_SOCIAL_HISTORY_SECTION);
-			try {
-				VALIDATE_PHCR_SOCIAL_HISTORY_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PHCR_SOCIAL_HISTORY_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
-				throw new UnsupportedOperationException(pe.getLocalizedMessage());
-			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PHCR_SOCIAL_HISTORY_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(phcrSocialHistorySection)) {
-			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 PhcrValidator.DIAGNOSTIC_SOURCE,
-						 PhcrValidator.PHCR_SOCIAL_HISTORY_SECTION__PHCR_SOCIAL_HISTORY_SECTION_TEXT,
-						 PhcrPlugin.INSTANCE.getString("PhcrSocialHistorySectionText"),
-						 new Object [] { phcrSocialHistorySection }));
-			}
-			 
-			return false;
-		}
-		return true;
-	}
-
-	/**
-	 * The cached OCL expression body for the '{@link #validatePhcrSocialHistorySectionGeotemporalHistoryObservation(PhcrSocialHistorySection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Phcr Social History Section Geotemporal History Observation</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #validatePhcrSocialHistorySectionGeotemporalHistoryObservation(PhcrSocialHistorySection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
-	protected static final String VALIDATE_PHCR_SOCIAL_HISTORY_SECTION_GEOTEMPORAL_HISTORY_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entry->exists(entry : cda::Entry | not entry.observation.oclIsUndefined() and entry.observation.oclIsKindOf(phcr::GeotemporalHistoryObservation) and entry.typeCode = vocab::x_ActRelationshipEntry::DRIV)";
-
-	/**
-	 * The cached OCL invariant for the '{@link #validatePhcrSocialHistorySectionGeotemporalHistoryObservation(PhcrSocialHistorySection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Phcr Social History Section Geotemporal History Observation</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #validatePhcrSocialHistorySectionGeotemporalHistoryObservation(PhcrSocialHistorySection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
-	protected static Constraint VALIDATE_PHCR_SOCIAL_HISTORY_SECTION_GEOTEMPORAL_HISTORY_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.entry->exists(entry : cda::Entry | not entry.observation.oclIsUndefined() and entry.observation.oclIsKindOf(phcr::GeotemporalHistoryObservation) and entry.typeCode = vocab::x_ActRelationshipEntry::DRIV)
-	 * @param phcrSocialHistorySection The receiving '<em><b>Social History Section</b></em>' model object.
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
-	public static  boolean validatePhcrSocialHistorySectionGeotemporalHistoryObservation(PhcrSocialHistorySection phcrSocialHistorySection, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
-		if (VALIDATE_PHCR_SOCIAL_HISTORY_SECTION_GEOTEMPORAL_HISTORY_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setContext(PhcrPackage.Literals.PHCR_SOCIAL_HISTORY_SECTION);
-			try {
-				VALIDATE_PHCR_SOCIAL_HISTORY_SECTION_GEOTEMPORAL_HISTORY_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PHCR_SOCIAL_HISTORY_SECTION_GEOTEMPORAL_HISTORY_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
-				throw new UnsupportedOperationException(pe.getLocalizedMessage());
-			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PHCR_SOCIAL_HISTORY_SECTION_GEOTEMPORAL_HISTORY_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(phcrSocialHistorySection)) {
-			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.WARNING,
-						 PhcrValidator.DIAGNOSTIC_SOURCE,
-						 PhcrValidator.PHCR_SOCIAL_HISTORY_SECTION__PHCR_SOCIAL_HISTORY_SECTION_GEOTEMPORAL_HISTORY_OBSERVATION,
-						 PhcrPlugin.INSTANCE.getString("PhcrSocialHistorySectionGeotemporalHistoryObservation"),
-						 new Object [] { phcrSocialHistorySection }));
-			}
-			 
-			return false;
-		}
-		return true;
-	}
-
-	/**
-	 * The cached OCL expression body for the '{@link #validatePhcrSocialHistorySectionMostRecentTimeArrivedInUSAObservation(PhcrSocialHistorySection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Phcr Social History Section Most Recent Time Arrived In USA Observation</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #validatePhcrSocialHistorySectionMostRecentTimeArrivedInUSAObservation(PhcrSocialHistorySection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
-	protected static final String VALIDATE_PHCR_SOCIAL_HISTORY_SECTION_MOST_RECENT_TIME_ARRIVED_IN_USA_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entry->one(entry : cda::Entry | not entry.observation.oclIsUndefined() and entry.observation.oclIsKindOf(phcr::MostRecentTimeArrivedInUSAObservation) and entry.typeCode = vocab::x_ActRelationshipEntry::DRIV)";
-
-	/**
-	 * The cached OCL invariant for the '{@link #validatePhcrSocialHistorySectionMostRecentTimeArrivedInUSAObservation(PhcrSocialHistorySection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Phcr Social History Section Most Recent Time Arrived In USA Observation</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #validatePhcrSocialHistorySectionMostRecentTimeArrivedInUSAObservation(PhcrSocialHistorySection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
-	protected static Constraint VALIDATE_PHCR_SOCIAL_HISTORY_SECTION_MOST_RECENT_TIME_ARRIVED_IN_USA_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.entry->one(entry : cda::Entry | not entry.observation.oclIsUndefined() and entry.observation.oclIsKindOf(phcr::MostRecentTimeArrivedInUSAObservation) and entry.typeCode = vocab::x_ActRelationshipEntry::DRIV)
-	 * @param phcrSocialHistorySection The receiving '<em><b>Social History Section</b></em>' model object.
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
-	public static  boolean validatePhcrSocialHistorySectionMostRecentTimeArrivedInUSAObservation(PhcrSocialHistorySection phcrSocialHistorySection, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
-		if (VALIDATE_PHCR_SOCIAL_HISTORY_SECTION_MOST_RECENT_TIME_ARRIVED_IN_USA_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setContext(PhcrPackage.Literals.PHCR_SOCIAL_HISTORY_SECTION);
-			try {
-				VALIDATE_PHCR_SOCIAL_HISTORY_SECTION_MOST_RECENT_TIME_ARRIVED_IN_USA_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PHCR_SOCIAL_HISTORY_SECTION_MOST_RECENT_TIME_ARRIVED_IN_USA_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
-				throw new UnsupportedOperationException(pe.getLocalizedMessage());
-			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PHCR_SOCIAL_HISTORY_SECTION_MOST_RECENT_TIME_ARRIVED_IN_USA_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(phcrSocialHistorySection)) {
-			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.WARNING,
-						 PhcrValidator.DIAGNOSTIC_SOURCE,
-						 PhcrValidator.PHCR_SOCIAL_HISTORY_SECTION__PHCR_SOCIAL_HISTORY_SECTION_MOST_RECENT_TIME_ARRIVED_IN_USA_OBSERVATION,
-						 PhcrPlugin.INSTANCE.getString("PhcrSocialHistorySectionMostRecentTimeArrivedInUSAObservation"),
-						 new Object [] { phcrSocialHistorySection }));
-			}
-			 
-			return false;
-		}
-		return true;
-	}
-
-	/**
-	 * The cached OCL expression body for the '{@link #validatePhcrSocialHistorySectionRaceObservation(PhcrSocialHistorySection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Phcr Social History Section Race Observation</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #validatePhcrSocialHistorySectionRaceObservation(PhcrSocialHistorySection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
-	protected static final String VALIDATE_PHCR_SOCIAL_HISTORY_SECTION_RACE_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entry->exists(entry : cda::Entry | not entry.observation.oclIsUndefined() and entry.observation.oclIsKindOf(phcr::RaceObservation) and entry.typeCode = vocab::x_ActRelationshipEntry::DRIV)";
-
-	/**
-	 * The cached OCL invariant for the '{@link #validatePhcrSocialHistorySectionRaceObservation(PhcrSocialHistorySection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Phcr Social History Section Race Observation</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #validatePhcrSocialHistorySectionRaceObservation(PhcrSocialHistorySection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
-	protected static Constraint VALIDATE_PHCR_SOCIAL_HISTORY_SECTION_RACE_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.entry->exists(entry : cda::Entry | not entry.observation.oclIsUndefined() and entry.observation.oclIsKindOf(phcr::RaceObservation) and entry.typeCode = vocab::x_ActRelationshipEntry::DRIV)
-	 * @param phcrSocialHistorySection The receiving '<em><b>Social History Section</b></em>' model object.
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
-	public static  boolean validatePhcrSocialHistorySectionRaceObservation(PhcrSocialHistorySection phcrSocialHistorySection, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
-		if (VALIDATE_PHCR_SOCIAL_HISTORY_SECTION_RACE_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setContext(PhcrPackage.Literals.PHCR_SOCIAL_HISTORY_SECTION);
-			try {
-				VALIDATE_PHCR_SOCIAL_HISTORY_SECTION_RACE_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PHCR_SOCIAL_HISTORY_SECTION_RACE_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
-				throw new UnsupportedOperationException(pe.getLocalizedMessage());
-			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PHCR_SOCIAL_HISTORY_SECTION_RACE_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(phcrSocialHistorySection)) {
-			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.WARNING,
-						 PhcrValidator.DIAGNOSTIC_SOURCE,
-						 PhcrValidator.PHCR_SOCIAL_HISTORY_SECTION__PHCR_SOCIAL_HISTORY_SECTION_RACE_OBSERVATION,
-						 PhcrPlugin.INSTANCE.getString("PhcrSocialHistorySectionRaceObservation"),
-						 new Object [] { phcrSocialHistorySection }));
-			}
-			 
-			return false;
-		}
-		return true;
-	}
-
-	/**
-	 * The cached OCL expression body for the '{@link #validatePhcrSocialHistorySectionOccupationObservation(PhcrSocialHistorySection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Phcr Social History Section Occupation Observation</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #validatePhcrSocialHistorySectionOccupationObservation(PhcrSocialHistorySection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
-	protected static final String VALIDATE_PHCR_SOCIAL_HISTORY_SECTION_OCCUPATION_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entry->exists(entry : cda::Entry | not entry.observation.oclIsUndefined() and entry.observation.oclIsKindOf(phcr::OccupationObservation) and entry.typeCode = vocab::x_ActRelationshipEntry::DRIV)";
-
-	/**
-	 * The cached OCL invariant for the '{@link #validatePhcrSocialHistorySectionOccupationObservation(PhcrSocialHistorySection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Phcr Social History Section Occupation Observation</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #validatePhcrSocialHistorySectionOccupationObservation(PhcrSocialHistorySection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
-	protected static Constraint VALIDATE_PHCR_SOCIAL_HISTORY_SECTION_OCCUPATION_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.entry->exists(entry : cda::Entry | not entry.observation.oclIsUndefined() and entry.observation.oclIsKindOf(phcr::OccupationObservation) and entry.typeCode = vocab::x_ActRelationshipEntry::DRIV)
-	 * @param phcrSocialHistorySection The receiving '<em><b>Social History Section</b></em>' model object.
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
-	public static  boolean validatePhcrSocialHistorySectionOccupationObservation(PhcrSocialHistorySection phcrSocialHistorySection, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
-		if (VALIDATE_PHCR_SOCIAL_HISTORY_SECTION_OCCUPATION_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setContext(PhcrPackage.Literals.PHCR_SOCIAL_HISTORY_SECTION);
-			try {
-				VALIDATE_PHCR_SOCIAL_HISTORY_SECTION_OCCUPATION_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PHCR_SOCIAL_HISTORY_SECTION_OCCUPATION_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
-				throw new UnsupportedOperationException(pe.getLocalizedMessage());
-			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PHCR_SOCIAL_HISTORY_SECTION_OCCUPATION_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(phcrSocialHistorySection)) {
-			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.WARNING,
-						 PhcrValidator.DIAGNOSTIC_SOURCE,
-						 PhcrValidator.PHCR_SOCIAL_HISTORY_SECTION__PHCR_SOCIAL_HISTORY_SECTION_OCCUPATION_OBSERVATION,
-						 PhcrPlugin.INSTANCE.getString("PhcrSocialHistorySectionOccupationObservation"),
-						 new Object [] { phcrSocialHistorySection }));
-			}
-			 
-			return false;
-		}
-		return true;
-	}
-
-	/**
-	 * The cached OCL expression body for the '{@link #validatePhcrSocialHistorySectionPregnancyObservation(PhcrSocialHistorySection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Phcr Social History Section Pregnancy Observation</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #validatePhcrSocialHistorySectionPregnancyObservation(PhcrSocialHistorySection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
-	protected static final String VALIDATE_PHCR_SOCIAL_HISTORY_SECTION_PREGNANCY_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entry->exists(entry : cda::Entry | not entry.observation.oclIsUndefined() and entry.observation.oclIsKindOf(phcr::PregnancyObservation) and entry.typeCode = vocab::x_ActRelationshipEntry::DRIV)";
-
-	/**
-	 * The cached OCL invariant for the '{@link #validatePhcrSocialHistorySectionPregnancyObservation(PhcrSocialHistorySection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Phcr Social History Section Pregnancy Observation</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #validatePhcrSocialHistorySectionPregnancyObservation(PhcrSocialHistorySection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
-	protected static Constraint VALIDATE_PHCR_SOCIAL_HISTORY_SECTION_PREGNANCY_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.entry->exists(entry : cda::Entry | not entry.observation.oclIsUndefined() and entry.observation.oclIsKindOf(phcr::PregnancyObservation) and entry.typeCode = vocab::x_ActRelationshipEntry::DRIV)
-	 * @param phcrSocialHistorySection The receiving '<em><b>Social History Section</b></em>' model object.
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
-	public static  boolean validatePhcrSocialHistorySectionPregnancyObservation(PhcrSocialHistorySection phcrSocialHistorySection, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
-		if (VALIDATE_PHCR_SOCIAL_HISTORY_SECTION_PREGNANCY_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setContext(PhcrPackage.Literals.PHCR_SOCIAL_HISTORY_SECTION);
-			try {
-				VALIDATE_PHCR_SOCIAL_HISTORY_SECTION_PREGNANCY_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PHCR_SOCIAL_HISTORY_SECTION_PREGNANCY_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
-				throw new UnsupportedOperationException(pe.getLocalizedMessage());
-			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PHCR_SOCIAL_HISTORY_SECTION_PREGNANCY_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(phcrSocialHistorySection)) {
-			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.INFO,
-						 PhcrValidator.DIAGNOSTIC_SOURCE,
-						 PhcrValidator.PHCR_SOCIAL_HISTORY_SECTION__PHCR_SOCIAL_HISTORY_SECTION_PREGNANCY_OBSERVATION,
-						 PhcrPlugin.INSTANCE.getString("PhcrSocialHistorySectionPregnancyObservation"),
-						 new Object [] { phcrSocialHistorySection }));
-			}
-			 
-			return false;
-		}
-		return true;
-	}
-
-	/**
-	 * The cached OCL expression body for the '{@link #getGeotemporalHistoryObservations(PhcrSocialHistorySection) <em>Get Geotemporal History Observations</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #getGeotemporalHistoryObservations(PhcrSocialHistorySection)
-	 * @generated
-	 * @ordered
-	 */
-	protected static final String GET_GEOTEMPORAL_HISTORY_OBSERVATIONS__EOCL_EXP = "self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(phcr::GeotemporalHistoryObservation)).oclAsType(phcr::GeotemporalHistoryObservation)";
-
-	/**
-	 * The cached OCL query for the '{@link #getGeotemporalHistoryObservations(PhcrSocialHistorySection) <em>Get Geotemporal History Observations</em>}' query operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #getGeotemporalHistoryObservations(PhcrSocialHistorySection)
-	 * @generated
-	 * @ordered
-	 */
-	protected static OCLExpression<EClassifier> GET_GEOTEMPORAL_HISTORY_OBSERVATIONS__EOCL_QRY;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(phcr::GeotemporalHistoryObservation)).oclAsType(phcr::GeotemporalHistoryObservation)
-	 * @param phcrSocialHistorySection The receiving '<em><b>Social History Section</b></em>' model object.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
-	public static  EList<GeotemporalHistoryObservation> getGeotemporalHistoryObservations(PhcrSocialHistorySection phcrSocialHistorySection) {
-		if (GET_GEOTEMPORAL_HISTORY_OBSERVATIONS__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(PhcrPackage.Literals.PHCR_SOCIAL_HISTORY_SECTION, PhcrPackage.Literals.PHCR_SOCIAL_HISTORY_SECTION.getEAllOperations().get(75));
-			try {
-				GET_GEOTEMPORAL_HISTORY_OBSERVATIONS__EOCL_QRY = helper.createQuery(GET_GEOTEMPORAL_HISTORY_OBSERVATIONS__EOCL_EXP);
-			}
-			catch (ParserException pe) {
-				throw new UnsupportedOperationException(pe.getLocalizedMessage());
-			}
-		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_GEOTEMPORAL_HISTORY_OBSERVATIONS__EOCL_QRY);
-		@SuppressWarnings("unchecked")
-		Collection<GeotemporalHistoryObservation> result = (Collection<GeotemporalHistoryObservation>) query.evaluate(phcrSocialHistorySection);
-		return new BasicEList.UnmodifiableEList<GeotemporalHistoryObservation>(result.size(), result.toArray());
-	}
-
-	/**
-	 * The cached OCL expression body for the '{@link #getMostRecentTimeArrivedInUSAObservation(PhcrSocialHistorySection) <em>Get Most Recent Time Arrived In USA Observation</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #getMostRecentTimeArrivedInUSAObservation(PhcrSocialHistorySection)
-	 * @generated
-	 * @ordered
-	 */
-	protected static final String GET_MOST_RECENT_TIME_ARRIVED_IN_USA_OBSERVATION__EOCL_EXP = "self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(phcr::MostRecentTimeArrivedInUSAObservation))->asSequence()->first().oclAsType(phcr::MostRecentTimeArrivedInUSAObservation)";
-
-	/**
-	 * The cached OCL query for the '{@link #getMostRecentTimeArrivedInUSAObservation(PhcrSocialHistorySection) <em>Get Most Recent Time Arrived In USA Observation</em>}' query operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #getMostRecentTimeArrivedInUSAObservation(PhcrSocialHistorySection)
-	 * @generated
-	 * @ordered
-	 */
-	protected static OCLExpression<EClassifier> GET_MOST_RECENT_TIME_ARRIVED_IN_USA_OBSERVATION__EOCL_QRY;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(phcr::MostRecentTimeArrivedInUSAObservation))->asSequence()->first().oclAsType(phcr::MostRecentTimeArrivedInUSAObservation)
-	 * @param phcrSocialHistorySection The receiving '<em><b>Social History Section</b></em>' model object.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
-	public static  MostRecentTimeArrivedInUSAObservation getMostRecentTimeArrivedInUSAObservation(PhcrSocialHistorySection phcrSocialHistorySection) {
-		if (GET_MOST_RECENT_TIME_ARRIVED_IN_USA_OBSERVATION__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(PhcrPackage.Literals.PHCR_SOCIAL_HISTORY_SECTION, PhcrPackage.Literals.PHCR_SOCIAL_HISTORY_SECTION.getEAllOperations().get(76));
-			try {
-				GET_MOST_RECENT_TIME_ARRIVED_IN_USA_OBSERVATION__EOCL_QRY = helper.createQuery(GET_MOST_RECENT_TIME_ARRIVED_IN_USA_OBSERVATION__EOCL_EXP);
-			}
-			catch (ParserException pe) {
-				throw new UnsupportedOperationException(pe.getLocalizedMessage());
-			}
-		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_MOST_RECENT_TIME_ARRIVED_IN_USA_OBSERVATION__EOCL_QRY);
-		return (MostRecentTimeArrivedInUSAObservation) query.evaluate(phcrSocialHistorySection);
-	}
-
-	/**
-	 * The cached OCL expression body for the '{@link #getRaceObservations(PhcrSocialHistorySection) <em>Get Race Observations</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #getRaceObservations(PhcrSocialHistorySection)
-	 * @generated
-	 * @ordered
-	 */
-	protected static final String GET_RACE_OBSERVATIONS__EOCL_EXP = "self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(phcr::RaceObservation)).oclAsType(phcr::RaceObservation)";
-
-	/**
-	 * The cached OCL query for the '{@link #getRaceObservations(PhcrSocialHistorySection) <em>Get Race Observations</em>}' query operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #getRaceObservations(PhcrSocialHistorySection)
-	 * @generated
-	 * @ordered
-	 */
-	protected static OCLExpression<EClassifier> GET_RACE_OBSERVATIONS__EOCL_QRY;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(phcr::RaceObservation)).oclAsType(phcr::RaceObservation)
-	 * @param phcrSocialHistorySection The receiving '<em><b>Social History Section</b></em>' model object.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
-	public static  EList<RaceObservation> getRaceObservations(PhcrSocialHistorySection phcrSocialHistorySection) {
-		if (GET_RACE_OBSERVATIONS__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(PhcrPackage.Literals.PHCR_SOCIAL_HISTORY_SECTION, PhcrPackage.Literals.PHCR_SOCIAL_HISTORY_SECTION.getEAllOperations().get(77));
-			try {
-				GET_RACE_OBSERVATIONS__EOCL_QRY = helper.createQuery(GET_RACE_OBSERVATIONS__EOCL_EXP);
-			}
-			catch (ParserException pe) {
-				throw new UnsupportedOperationException(pe.getLocalizedMessage());
-			}
-		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_RACE_OBSERVATIONS__EOCL_QRY);
-		@SuppressWarnings("unchecked")
-		Collection<RaceObservation> result = (Collection<RaceObservation>) query.evaluate(phcrSocialHistorySection);
-		return new BasicEList.UnmodifiableEList<RaceObservation>(result.size(), result.toArray());
-	}
-
-	/**
-	 * The cached OCL expression body for the '{@link #getOccupationObservations(PhcrSocialHistorySection) <em>Get Occupation Observations</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #getOccupationObservations(PhcrSocialHistorySection)
-	 * @generated
-	 * @ordered
-	 */
-	protected static final String GET_OCCUPATION_OBSERVATIONS__EOCL_EXP = "self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(phcr::OccupationObservation)).oclAsType(phcr::OccupationObservation)";
-
-	/**
-	 * The cached OCL query for the '{@link #getOccupationObservations(PhcrSocialHistorySection) <em>Get Occupation Observations</em>}' query operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #getOccupationObservations(PhcrSocialHistorySection)
-	 * @generated
-	 * @ordered
-	 */
-	protected static OCLExpression<EClassifier> GET_OCCUPATION_OBSERVATIONS__EOCL_QRY;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(phcr::OccupationObservation)).oclAsType(phcr::OccupationObservation)
-	 * @param phcrSocialHistorySection The receiving '<em><b>Social History Section</b></em>' model object.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
-	public static  EList<OccupationObservation> getOccupationObservations(PhcrSocialHistorySection phcrSocialHistorySection) {
-		if (GET_OCCUPATION_OBSERVATIONS__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(PhcrPackage.Literals.PHCR_SOCIAL_HISTORY_SECTION, PhcrPackage.Literals.PHCR_SOCIAL_HISTORY_SECTION.getEAllOperations().get(78));
-			try {
-				GET_OCCUPATION_OBSERVATIONS__EOCL_QRY = helper.createQuery(GET_OCCUPATION_OBSERVATIONS__EOCL_EXP);
-			}
-			catch (ParserException pe) {
-				throw new UnsupportedOperationException(pe.getLocalizedMessage());
-			}
-		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_OCCUPATION_OBSERVATIONS__EOCL_QRY);
-		@SuppressWarnings("unchecked")
-		Collection<OccupationObservation> result = (Collection<OccupationObservation>) query.evaluate(phcrSocialHistorySection);
-		return new BasicEList.UnmodifiableEList<OccupationObservation>(result.size(), result.toArray());
-	}
-
-	/**
-	 * The cached OCL expression body for the '{@link #getPregnancyObservations(PhcrSocialHistorySection) <em>Get Pregnancy Observations</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #getPregnancyObservations(PhcrSocialHistorySection)
-	 * @generated
-	 * @ordered
-	 */
-	protected static final String GET_PREGNANCY_OBSERVATIONS__EOCL_EXP = "self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(phcr::PregnancyObservation)).oclAsType(phcr::PregnancyObservation)";
-
-	/**
-	 * The cached OCL query for the '{@link #getPregnancyObservations(PhcrSocialHistorySection) <em>Get Pregnancy Observations</em>}' query operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #getPregnancyObservations(PhcrSocialHistorySection)
-	 * @generated
-	 * @ordered
-	 */
-	protected static OCLExpression<EClassifier> GET_PREGNANCY_OBSERVATIONS__EOCL_QRY;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(phcr::PregnancyObservation)).oclAsType(phcr::PregnancyObservation)
-	 * @param phcrSocialHistorySection The receiving '<em><b>Social History Section</b></em>' model object.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
-	public static  EList<PregnancyObservation> getPregnancyObservations(PhcrSocialHistorySection phcrSocialHistorySection) {
-		if (GET_PREGNANCY_OBSERVATIONS__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(PhcrPackage.Literals.PHCR_SOCIAL_HISTORY_SECTION, PhcrPackage.Literals.PHCR_SOCIAL_HISTORY_SECTION.getEAllOperations().get(79));
-			try {
-				GET_PREGNANCY_OBSERVATIONS__EOCL_QRY = helper.createQuery(GET_PREGNANCY_OBSERVATIONS__EOCL_EXP);
-			}
-			catch (ParserException pe) {
-				throw new UnsupportedOperationException(pe.getLocalizedMessage());
-			}
-		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_PREGNANCY_OBSERVATIONS__EOCL_QRY);
-		@SuppressWarnings("unchecked")
-		Collection<PregnancyObservation> result = (Collection<PregnancyObservation>) query.evaluate(phcrSocialHistorySection);
-		return new BasicEList.UnmodifiableEList<PregnancyObservation>(result.size(), result.toArray());
-	}
-
-	/**
-	 * The cached OCL expression body for the '{@link #validateSocialHistorySectionTemplateId(PhcrSocialHistorySection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Social History Section Template Id</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #validateSocialHistorySectionTemplateId(PhcrSocialHistorySection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
-	protected static final String VALIDATE_SOCIAL_HISTORY_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.15.2.22')";
-
-	/**
-	 * The cached OCL invariant for the '{@link #validateSocialHistorySectionTemplateId(PhcrSocialHistorySection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Social History Section Template Id</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #validateSocialHistorySectionTemplateId(PhcrSocialHistorySection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
-	protected static Constraint VALIDATE_SOCIAL_HISTORY_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.15.2.22')
-	 * @param phcrSocialHistorySection The receiving '<em><b>Social History Section</b></em>' model object.
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
-	public static  boolean validateSocialHistorySectionTemplateId(PhcrSocialHistorySection phcrSocialHistorySection, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
-		if (VALIDATE_SOCIAL_HISTORY_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setContext(PhcrPackage.Literals.PHCR_SOCIAL_HISTORY_SECTION);
-			try {
-				VALIDATE_SOCIAL_HISTORY_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_SOCIAL_HISTORY_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
-				throw new UnsupportedOperationException(pe.getLocalizedMessage());
-			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_SOCIAL_HISTORY_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(phcrSocialHistorySection)) {
-			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 PhcrValidator.DIAGNOSTIC_SOURCE,
-						 PhcrValidator.PHCR_SOCIAL_HISTORY_SECTION__SOCIAL_HISTORY_SECTION_TEMPLATE_ID,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "SocialHistorySectionTemplateId", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(phcrSocialHistorySection, context) }),
-						 new Object [] { phcrSocialHistorySection }));
-			}
-			 
-			return false;
-		}
-		return true;
-	}
-
-	/**
-	 * The cached OCL expression body for the '{@link #validateSocialHistorySectionCode(PhcrSocialHistorySection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Social History Section Code</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #validateSocialHistorySectionCode(PhcrSocialHistorySection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
-	protected static final String VALIDATE_SOCIAL_HISTORY_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and "+
+   * @see #validatePhcrSocialHistorySectionCode(PhcrSocialHistorySection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+   * @generated
+   * @ordered
+   */
+	protected static final String VALIDATE_PHCR_SOCIAL_HISTORY_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and "+
 "let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in "+
 "value.code = '29762-2' and value.codeSystem = '2.16.840.1.113883.6.1')";
 
 	/**
-	 * The cached OCL invariant for the '{@link #validateSocialHistorySectionCode(PhcrSocialHistorySection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Social History Section Code</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
+   * The cached OCL invariant for the '{@link #validatePhcrSocialHistorySectionCode(PhcrSocialHistorySection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Phcr Social History Section Code</em>}' invariant operation.
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateSocialHistorySectionCode(PhcrSocialHistorySection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
+   * @see #validatePhcrSocialHistorySectionCode(PhcrSocialHistorySection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+   * @generated
+   * @ordered
+   */
 	
-	protected static Constraint VALIDATE_SOCIAL_HISTORY_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static Constraint VALIDATE_PHCR_SOCIAL_HISTORY_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * (self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and 
-	 * let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in 
-	 * value.code = '29762-2' and value.codeSystem = '2.16.840.1.113883.6.1')
-	 * @param phcrSocialHistorySection The receiving '<em><b>Social History Section</b></em>' model object.
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
+   * <!-- begin-model-doc -->
+   * @param phcrSocialHistorySection The receiving '<em><b>Social History Section</b></em>' model object.
+   * @param diagnostics The chain of diagnostics to which problems are to be appended.
+   * @param context The cache of context-specific information.
+   * <!-- end-model-doc -->
+   * @generated
+   */
 	
-	public static  boolean validateSocialHistorySectionCode(PhcrSocialHistorySection phcrSocialHistorySection, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public static  boolean validatePhcrSocialHistorySectionCode(PhcrSocialHistorySection phcrSocialHistorySection, DiagnosticChain diagnostics, Map<Object, Object> context) {
   	  
-		Object passToken = (context == null) ? null : context.get("org.openhealthtools.mdht.uml.cda.phcr.PhcrSocialHistorySectionCode");
-		if ((passToken instanceof Collection<?>) && ((Collection<?>) passToken).contains(phcrSocialHistorySection)) {
-			// I have a free pass to short-circuit
-			return true;
-		}
+    Object passToken = (context == null) ? null : context.get("org.openhealthtools.mdht.uml.cda.phcr.PhcrSocialHistorySectionCodeP");
+    if ((passToken instanceof Collection<?>) && ((Collection<?>) passToken).contains(phcrSocialHistorySection)) {
+      // I have a free pass to short-circuit
+      return true;
+    }
   	  
-		if (VALIDATE_SOCIAL_HISTORY_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setContext(PhcrPackage.Literals.PHCR_SOCIAL_HISTORY_SECTION);
-			try {
-				VALIDATE_SOCIAL_HISTORY_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_SOCIAL_HISTORY_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
-				throw new UnsupportedOperationException(pe.getLocalizedMessage());
-			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_SOCIAL_HISTORY_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(phcrSocialHistorySection)) {
-			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 PhcrValidator.DIAGNOSTIC_SOURCE,
-						 PhcrValidator.PHCR_SOCIAL_HISTORY_SECTION__SOCIAL_HISTORY_SECTION_CODE,
-						 PhcrPlugin.INSTANCE.getString("SocialHistorySectionCode"),
-						 new Object [] { phcrSocialHistorySection }));
-			}
-			 
-			return false;
-		}
-		return true;
-	}
+    if (VALIDATE_PHCR_SOCIAL_HISTORY_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+      OCL.Helper helper = EOCL_ENV.createOCLHelper();
+      helper.setContext(PhcrPackage.Literals.PHCR_SOCIAL_HISTORY_SECTION);
+      try
+      {
+        VALIDATE_PHCR_SOCIAL_HISTORY_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PHCR_SOCIAL_HISTORY_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+      }
+      catch (ParserException pe)
+      {
+        throw new UnsupportedOperationException(pe.getLocalizedMessage());
+      }
+    }
+    if (!EOCL_ENV.createQuery(VALIDATE_PHCR_SOCIAL_HISTORY_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(phcrSocialHistorySection))
+    {
+      if (diagnostics != null)
+      {
+        diagnostics.add
+          (new BasicDiagnostic
+            (Diagnostic.ERROR,
+             PhcrValidator.DIAGNOSTIC_SOURCE,
+             PhcrValidator.PHCR_SOCIAL_HISTORY_SECTION__PHCR_SOCIAL_HISTORY_SECTION_CODE,
+             PhcrPlugin.INSTANCE.getString("PhcrSocialHistorySectionCode"),
+             new Object [] { phcrSocialHistorySection }));
+      }
+       
+      return false;
+    }
+    return true;
+  }
+
+	/**
+   * The cached OCL expression body for the '{@link #validatePhcrSocialHistorySectionTitle(PhcrSocialHistorySection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Phcr Social History Section Title</em>}' operation.
+   * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+   * @see #validatePhcrSocialHistorySectionTitle(PhcrSocialHistorySection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+   * @generated
+   * @ordered
+   */
+	protected static final String VALIDATE_PHCR_SOCIAL_HISTORY_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.title.oclIsUndefined() or self.title.isNullFlavorUndefined()) implies (self.title.getText() = 'Social History')";
+
+	/**
+   * The cached OCL invariant for the '{@link #validatePhcrSocialHistorySectionTitle(PhcrSocialHistorySection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Phcr Social History Section Title</em>}' invariant operation.
+   * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+   * @see #validatePhcrSocialHistorySectionTitle(PhcrSocialHistorySection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+   * @generated
+   * @ordered
+   */
+	protected static Constraint VALIDATE_PHCR_SOCIAL_HISTORY_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+
+	/**
+   * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+   * <!-- begin-model-doc -->
+   * @param phcrSocialHistorySection The receiving '<em><b>Social History Section</b></em>' model object.
+   * @param diagnostics The chain of diagnostics to which problems are to be appended.
+   * @param context The cache of context-specific information.
+   * <!-- end-model-doc -->
+   * @generated
+   */
+	public static  boolean validatePhcrSocialHistorySectionTitle(PhcrSocialHistorySection phcrSocialHistorySection, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
+    if (VALIDATE_PHCR_SOCIAL_HISTORY_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+      OCL.Helper helper = EOCL_ENV.createOCLHelper();
+      helper.setContext(PhcrPackage.Literals.PHCR_SOCIAL_HISTORY_SECTION);
+      try
+      {
+        VALIDATE_PHCR_SOCIAL_HISTORY_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PHCR_SOCIAL_HISTORY_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+      }
+      catch (ParserException pe)
+      {
+        throw new UnsupportedOperationException(pe.getLocalizedMessage());
+      }
+    }
+    if (!EOCL_ENV.createQuery(VALIDATE_PHCR_SOCIAL_HISTORY_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(phcrSocialHistorySection))
+    {
+      if (diagnostics != null)
+      {
+        diagnostics.add
+          (new BasicDiagnostic
+            (Diagnostic.ERROR,
+             PhcrValidator.DIAGNOSTIC_SOURCE,
+             PhcrValidator.PHCR_SOCIAL_HISTORY_SECTION__PHCR_SOCIAL_HISTORY_SECTION_TITLE,
+             PhcrPlugin.INSTANCE.getString("PhcrSocialHistorySectionTitle"),
+             new Object [] { phcrSocialHistorySection }));
+      }
+       
+      return false;
+    }
+    return true;
+  }
+
+	/**
+   * The cached OCL expression body for the '{@link #validatePhcrSocialHistorySectionText(PhcrSocialHistorySection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Phcr Social History Section Text</em>}' operation.
+   * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+   * @see #validatePhcrSocialHistorySectionText(PhcrSocialHistorySection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+   * @generated
+   * @ordered
+   */
+	protected static final String VALIDATE_PHCR_SOCIAL_HISTORY_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "not self.text.oclIsUndefined()";
+
+	/**
+   * The cached OCL invariant for the '{@link #validatePhcrSocialHistorySectionText(PhcrSocialHistorySection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Phcr Social History Section Text</em>}' invariant operation.
+   * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+   * @see #validatePhcrSocialHistorySectionText(PhcrSocialHistorySection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+   * @generated
+   * @ordered
+   */
+	protected static Constraint VALIDATE_PHCR_SOCIAL_HISTORY_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+
+	/**
+   * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+   * <!-- begin-model-doc -->
+   * @param phcrSocialHistorySection The receiving '<em><b>Social History Section</b></em>' model object.
+   * @param diagnostics The chain of diagnostics to which problems are to be appended.
+   * @param context The cache of context-specific information.
+   * <!-- end-model-doc -->
+   * @generated
+   */
+	public static  boolean validatePhcrSocialHistorySectionText(PhcrSocialHistorySection phcrSocialHistorySection, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
+    if (VALIDATE_PHCR_SOCIAL_HISTORY_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+      OCL.Helper helper = EOCL_ENV.createOCLHelper();
+      helper.setContext(PhcrPackage.Literals.PHCR_SOCIAL_HISTORY_SECTION);
+      try
+      {
+        VALIDATE_PHCR_SOCIAL_HISTORY_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PHCR_SOCIAL_HISTORY_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+      }
+      catch (ParserException pe)
+      {
+        throw new UnsupportedOperationException(pe.getLocalizedMessage());
+      }
+    }
+    if (!EOCL_ENV.createQuery(VALIDATE_PHCR_SOCIAL_HISTORY_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(phcrSocialHistorySection))
+    {
+      if (diagnostics != null)
+      {
+        diagnostics.add
+          (new BasicDiagnostic
+            (Diagnostic.ERROR,
+             PhcrValidator.DIAGNOSTIC_SOURCE,
+             PhcrValidator.PHCR_SOCIAL_HISTORY_SECTION__PHCR_SOCIAL_HISTORY_SECTION_TEXT,
+             PhcrPlugin.INSTANCE.getString("PhcrSocialHistorySectionText"),
+             new Object [] { phcrSocialHistorySection }));
+      }
+       
+      return false;
+    }
+    return true;
+  }
+
+	/**
+   * The cached OCL expression body for the '{@link #validatePhcrSocialHistorySectionGeotemporalHistoryObservation(PhcrSocialHistorySection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Phcr Social History Section Geotemporal History Observation</em>}' operation.
+   * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+   * @see #validatePhcrSocialHistorySectionGeotemporalHistoryObservation(PhcrSocialHistorySection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+   * @generated
+   * @ordered
+   */
+	protected static final String VALIDATE_PHCR_SOCIAL_HISTORY_SECTION_GEOTEMPORAL_HISTORY_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entry->exists(entry : cda::Entry | not entry.observation.oclIsUndefined() and entry.observation.oclIsKindOf(phcr::GeotemporalHistoryObservation) and entry.typeCode = vocab::x_ActRelationshipEntry::DRIV)";
+
+	/**
+   * The cached OCL invariant for the '{@link #validatePhcrSocialHistorySectionGeotemporalHistoryObservation(PhcrSocialHistorySection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Phcr Social History Section Geotemporal History Observation</em>}' invariant operation.
+   * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+   * @see #validatePhcrSocialHistorySectionGeotemporalHistoryObservation(PhcrSocialHistorySection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+   * @generated
+   * @ordered
+   */
+	protected static Constraint VALIDATE_PHCR_SOCIAL_HISTORY_SECTION_GEOTEMPORAL_HISTORY_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+
+	/**
+   * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+   * <!-- begin-model-doc -->
+   * @param phcrSocialHistorySection The receiving '<em><b>Social History Section</b></em>' model object.
+   * @param diagnostics The chain of diagnostics to which problems are to be appended.
+   * @param context The cache of context-specific information.
+   * <!-- end-model-doc -->
+   * @generated
+   */
+	public static  boolean validatePhcrSocialHistorySectionGeotemporalHistoryObservation(PhcrSocialHistorySection phcrSocialHistorySection, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
+    if (VALIDATE_PHCR_SOCIAL_HISTORY_SECTION_GEOTEMPORAL_HISTORY_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+      OCL.Helper helper = EOCL_ENV.createOCLHelper();
+      helper.setContext(PhcrPackage.Literals.PHCR_SOCIAL_HISTORY_SECTION);
+      try
+      {
+        VALIDATE_PHCR_SOCIAL_HISTORY_SECTION_GEOTEMPORAL_HISTORY_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PHCR_SOCIAL_HISTORY_SECTION_GEOTEMPORAL_HISTORY_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+      }
+      catch (ParserException pe)
+      {
+        throw new UnsupportedOperationException(pe.getLocalizedMessage());
+      }
+    }
+    if (!EOCL_ENV.createQuery(VALIDATE_PHCR_SOCIAL_HISTORY_SECTION_GEOTEMPORAL_HISTORY_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(phcrSocialHistorySection))
+    {
+      if (diagnostics != null)
+      {
+        diagnostics.add
+          (new BasicDiagnostic
+            (Diagnostic.WARNING,
+             PhcrValidator.DIAGNOSTIC_SOURCE,
+             PhcrValidator.PHCR_SOCIAL_HISTORY_SECTION__PHCR_SOCIAL_HISTORY_SECTION_GEOTEMPORAL_HISTORY_OBSERVATION,
+             PhcrPlugin.INSTANCE.getString("PhcrSocialHistorySectionGeotemporalHistoryObservation"),
+             new Object [] { phcrSocialHistorySection }));
+      }
+       
+      return false;
+    }
+    return true;
+  }
+
+	/**
+   * The cached OCL expression body for the '{@link #validatePhcrSocialHistorySectionMostRecentTimeArrivedInUSAObservation(PhcrSocialHistorySection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Phcr Social History Section Most Recent Time Arrived In USA Observation</em>}' operation.
+   * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+   * @see #validatePhcrSocialHistorySectionMostRecentTimeArrivedInUSAObservation(PhcrSocialHistorySection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+   * @generated
+   * @ordered
+   */
+	protected static final String VALIDATE_PHCR_SOCIAL_HISTORY_SECTION_MOST_RECENT_TIME_ARRIVED_IN_USA_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entry->one(entry : cda::Entry | not entry.observation.oclIsUndefined() and entry.observation.oclIsKindOf(phcr::MostRecentTimeArrivedInUSAObservation) and entry.typeCode = vocab::x_ActRelationshipEntry::DRIV)";
+
+	/**
+   * The cached OCL invariant for the '{@link #validatePhcrSocialHistorySectionMostRecentTimeArrivedInUSAObservation(PhcrSocialHistorySection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Phcr Social History Section Most Recent Time Arrived In USA Observation</em>}' invariant operation.
+   * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+   * @see #validatePhcrSocialHistorySectionMostRecentTimeArrivedInUSAObservation(PhcrSocialHistorySection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+   * @generated
+   * @ordered
+   */
+	protected static Constraint VALIDATE_PHCR_SOCIAL_HISTORY_SECTION_MOST_RECENT_TIME_ARRIVED_IN_USA_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+
+	/**
+   * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+   * <!-- begin-model-doc -->
+   * @param phcrSocialHistorySection The receiving '<em><b>Social History Section</b></em>' model object.
+   * @param diagnostics The chain of diagnostics to which problems are to be appended.
+   * @param context The cache of context-specific information.
+   * <!-- end-model-doc -->
+   * @generated
+   */
+	public static  boolean validatePhcrSocialHistorySectionMostRecentTimeArrivedInUSAObservation(PhcrSocialHistorySection phcrSocialHistorySection, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
+    if (VALIDATE_PHCR_SOCIAL_HISTORY_SECTION_MOST_RECENT_TIME_ARRIVED_IN_USA_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+      OCL.Helper helper = EOCL_ENV.createOCLHelper();
+      helper.setContext(PhcrPackage.Literals.PHCR_SOCIAL_HISTORY_SECTION);
+      try
+      {
+        VALIDATE_PHCR_SOCIAL_HISTORY_SECTION_MOST_RECENT_TIME_ARRIVED_IN_USA_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PHCR_SOCIAL_HISTORY_SECTION_MOST_RECENT_TIME_ARRIVED_IN_USA_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+      }
+      catch (ParserException pe)
+      {
+        throw new UnsupportedOperationException(pe.getLocalizedMessage());
+      }
+    }
+    if (!EOCL_ENV.createQuery(VALIDATE_PHCR_SOCIAL_HISTORY_SECTION_MOST_RECENT_TIME_ARRIVED_IN_USA_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(phcrSocialHistorySection))
+    {
+      if (diagnostics != null)
+      {
+        diagnostics.add
+          (new BasicDiagnostic
+            (Diagnostic.WARNING,
+             PhcrValidator.DIAGNOSTIC_SOURCE,
+             PhcrValidator.PHCR_SOCIAL_HISTORY_SECTION__PHCR_SOCIAL_HISTORY_SECTION_MOST_RECENT_TIME_ARRIVED_IN_USA_OBSERVATION,
+             PhcrPlugin.INSTANCE.getString("PhcrSocialHistorySectionMostRecentTimeArrivedInUSAObservation"),
+             new Object [] { phcrSocialHistorySection }));
+      }
+       
+      return false;
+    }
+    return true;
+  }
+
+	/**
+   * The cached OCL expression body for the '{@link #validatePhcrSocialHistorySectionRaceObservation(PhcrSocialHistorySection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Phcr Social History Section Race Observation</em>}' operation.
+   * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+   * @see #validatePhcrSocialHistorySectionRaceObservation(PhcrSocialHistorySection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+   * @generated
+   * @ordered
+   */
+	protected static final String VALIDATE_PHCR_SOCIAL_HISTORY_SECTION_RACE_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entry->exists(entry : cda::Entry | not entry.observation.oclIsUndefined() and entry.observation.oclIsKindOf(phcr::RaceObservation) and entry.typeCode = vocab::x_ActRelationshipEntry::DRIV)";
+
+	/**
+   * The cached OCL invariant for the '{@link #validatePhcrSocialHistorySectionRaceObservation(PhcrSocialHistorySection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Phcr Social History Section Race Observation</em>}' invariant operation.
+   * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+   * @see #validatePhcrSocialHistorySectionRaceObservation(PhcrSocialHistorySection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+   * @generated
+   * @ordered
+   */
+	protected static Constraint VALIDATE_PHCR_SOCIAL_HISTORY_SECTION_RACE_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+
+	/**
+   * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+   * <!-- begin-model-doc -->
+   * @param phcrSocialHistorySection The receiving '<em><b>Social History Section</b></em>' model object.
+   * @param diagnostics The chain of diagnostics to which problems are to be appended.
+   * @param context The cache of context-specific information.
+   * <!-- end-model-doc -->
+   * @generated
+   */
+	public static  boolean validatePhcrSocialHistorySectionRaceObservation(PhcrSocialHistorySection phcrSocialHistorySection, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
+    if (VALIDATE_PHCR_SOCIAL_HISTORY_SECTION_RACE_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+      OCL.Helper helper = EOCL_ENV.createOCLHelper();
+      helper.setContext(PhcrPackage.Literals.PHCR_SOCIAL_HISTORY_SECTION);
+      try
+      {
+        VALIDATE_PHCR_SOCIAL_HISTORY_SECTION_RACE_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PHCR_SOCIAL_HISTORY_SECTION_RACE_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+      }
+      catch (ParserException pe)
+      {
+        throw new UnsupportedOperationException(pe.getLocalizedMessage());
+      }
+    }
+    if (!EOCL_ENV.createQuery(VALIDATE_PHCR_SOCIAL_HISTORY_SECTION_RACE_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(phcrSocialHistorySection))
+    {
+      if (diagnostics != null)
+      {
+        diagnostics.add
+          (new BasicDiagnostic
+            (Diagnostic.WARNING,
+             PhcrValidator.DIAGNOSTIC_SOURCE,
+             PhcrValidator.PHCR_SOCIAL_HISTORY_SECTION__PHCR_SOCIAL_HISTORY_SECTION_RACE_OBSERVATION,
+             PhcrPlugin.INSTANCE.getString("PhcrSocialHistorySectionRaceObservation"),
+             new Object [] { phcrSocialHistorySection }));
+      }
+       
+      return false;
+    }
+    return true;
+  }
+
+	/**
+   * The cached OCL expression body for the '{@link #validatePhcrSocialHistorySectionOccupationObservation(PhcrSocialHistorySection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Phcr Social History Section Occupation Observation</em>}' operation.
+   * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+   * @see #validatePhcrSocialHistorySectionOccupationObservation(PhcrSocialHistorySection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+   * @generated
+   * @ordered
+   */
+	protected static final String VALIDATE_PHCR_SOCIAL_HISTORY_SECTION_OCCUPATION_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entry->exists(entry : cda::Entry | not entry.observation.oclIsUndefined() and entry.observation.oclIsKindOf(phcr::OccupationObservation) and entry.typeCode = vocab::x_ActRelationshipEntry::DRIV)";
+
+	/**
+   * The cached OCL invariant for the '{@link #validatePhcrSocialHistorySectionOccupationObservation(PhcrSocialHistorySection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Phcr Social History Section Occupation Observation</em>}' invariant operation.
+   * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+   * @see #validatePhcrSocialHistorySectionOccupationObservation(PhcrSocialHistorySection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+   * @generated
+   * @ordered
+   */
+	protected static Constraint VALIDATE_PHCR_SOCIAL_HISTORY_SECTION_OCCUPATION_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+
+	/**
+   * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+   * <!-- begin-model-doc -->
+   * @param phcrSocialHistorySection The receiving '<em><b>Social History Section</b></em>' model object.
+   * @param diagnostics The chain of diagnostics to which problems are to be appended.
+   * @param context The cache of context-specific information.
+   * <!-- end-model-doc -->
+   * @generated
+   */
+	public static  boolean validatePhcrSocialHistorySectionOccupationObservation(PhcrSocialHistorySection phcrSocialHistorySection, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
+    if (VALIDATE_PHCR_SOCIAL_HISTORY_SECTION_OCCUPATION_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+      OCL.Helper helper = EOCL_ENV.createOCLHelper();
+      helper.setContext(PhcrPackage.Literals.PHCR_SOCIAL_HISTORY_SECTION);
+      try
+      {
+        VALIDATE_PHCR_SOCIAL_HISTORY_SECTION_OCCUPATION_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PHCR_SOCIAL_HISTORY_SECTION_OCCUPATION_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+      }
+      catch (ParserException pe)
+      {
+        throw new UnsupportedOperationException(pe.getLocalizedMessage());
+      }
+    }
+    if (!EOCL_ENV.createQuery(VALIDATE_PHCR_SOCIAL_HISTORY_SECTION_OCCUPATION_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(phcrSocialHistorySection))
+    {
+      if (diagnostics != null)
+      {
+        diagnostics.add
+          (new BasicDiagnostic
+            (Diagnostic.WARNING,
+             PhcrValidator.DIAGNOSTIC_SOURCE,
+             PhcrValidator.PHCR_SOCIAL_HISTORY_SECTION__PHCR_SOCIAL_HISTORY_SECTION_OCCUPATION_OBSERVATION,
+             PhcrPlugin.INSTANCE.getString("PhcrSocialHistorySectionOccupationObservation"),
+             new Object [] { phcrSocialHistorySection }));
+      }
+       
+      return false;
+    }
+    return true;
+  }
+
+	/**
+   * The cached OCL expression body for the '{@link #validatePhcrSocialHistorySectionPregnancyObservation(PhcrSocialHistorySection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Phcr Social History Section Pregnancy Observation</em>}' operation.
+   * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+   * @see #validatePhcrSocialHistorySectionPregnancyObservation(PhcrSocialHistorySection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+   * @generated
+   * @ordered
+   */
+	protected static final String VALIDATE_PHCR_SOCIAL_HISTORY_SECTION_PREGNANCY_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entry->exists(entry : cda::Entry | not entry.observation.oclIsUndefined() and entry.observation.oclIsKindOf(phcr::PregnancyObservation) and entry.typeCode = vocab::x_ActRelationshipEntry::DRIV)";
+
+	/**
+   * The cached OCL invariant for the '{@link #validatePhcrSocialHistorySectionPregnancyObservation(PhcrSocialHistorySection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Phcr Social History Section Pregnancy Observation</em>}' invariant operation.
+   * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+   * @see #validatePhcrSocialHistorySectionPregnancyObservation(PhcrSocialHistorySection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+   * @generated
+   * @ordered
+   */
+	protected static Constraint VALIDATE_PHCR_SOCIAL_HISTORY_SECTION_PREGNANCY_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+
+	/**
+   * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+   * <!-- begin-model-doc -->
+   * @param phcrSocialHistorySection The receiving '<em><b>Social History Section</b></em>' model object.
+   * @param diagnostics The chain of diagnostics to which problems are to be appended.
+   * @param context The cache of context-specific information.
+   * <!-- end-model-doc -->
+   * @generated
+   */
+	public static  boolean validatePhcrSocialHistorySectionPregnancyObservation(PhcrSocialHistorySection phcrSocialHistorySection, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
+    if (VALIDATE_PHCR_SOCIAL_HISTORY_SECTION_PREGNANCY_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+      OCL.Helper helper = EOCL_ENV.createOCLHelper();
+      helper.setContext(PhcrPackage.Literals.PHCR_SOCIAL_HISTORY_SECTION);
+      try
+      {
+        VALIDATE_PHCR_SOCIAL_HISTORY_SECTION_PREGNANCY_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PHCR_SOCIAL_HISTORY_SECTION_PREGNANCY_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+      }
+      catch (ParserException pe)
+      {
+        throw new UnsupportedOperationException(pe.getLocalizedMessage());
+      }
+    }
+    if (!EOCL_ENV.createQuery(VALIDATE_PHCR_SOCIAL_HISTORY_SECTION_PREGNANCY_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(phcrSocialHistorySection))
+    {
+      if (diagnostics != null)
+      {
+        diagnostics.add
+          (new BasicDiagnostic
+            (Diagnostic.INFO,
+             PhcrValidator.DIAGNOSTIC_SOURCE,
+             PhcrValidator.PHCR_SOCIAL_HISTORY_SECTION__PHCR_SOCIAL_HISTORY_SECTION_PREGNANCY_OBSERVATION,
+             PhcrPlugin.INSTANCE.getString("PhcrSocialHistorySectionPregnancyObservation"),
+             new Object [] { phcrSocialHistorySection }));
+      }
+       
+      return false;
+    }
+    return true;
+  }
+
+	/**
+   * The cached OCL expression body for the '{@link #getGeotemporalHistoryObservations(PhcrSocialHistorySection) <em>Get Geotemporal History Observations</em>}' operation.
+   * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+   * @see #getGeotemporalHistoryObservations(PhcrSocialHistorySection)
+   * @generated
+   * @ordered
+   */
+	protected static final String GET_GEOTEMPORAL_HISTORY_OBSERVATIONS__EOCL_EXP = "self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(phcr::GeotemporalHistoryObservation)).oclAsType(phcr::GeotemporalHistoryObservation)";
+
+	/**
+   * The cached OCL query for the '{@link #getGeotemporalHistoryObservations(PhcrSocialHistorySection) <em>Get Geotemporal History Observations</em>}' query operation.
+   * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+   * @see #getGeotemporalHistoryObservations(PhcrSocialHistorySection)
+   * @generated
+   * @ordered
+   */
+	protected static OCLExpression<EClassifier> GET_GEOTEMPORAL_HISTORY_OBSERVATIONS__EOCL_QRY;
+
+	/**
+   * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+   * @generated
+   */
+	public static  EList<GeotemporalHistoryObservation> getGeotemporalHistoryObservations(PhcrSocialHistorySection phcrSocialHistorySection) {
+    if (GET_GEOTEMPORAL_HISTORY_OBSERVATIONS__EOCL_QRY == null)
+    {
+      OCL.Helper helper = EOCL_ENV.createOCLHelper();
+      helper.setOperationContext(PhcrPackage.Literals.PHCR_SOCIAL_HISTORY_SECTION, PhcrPackage.Literals.PHCR_SOCIAL_HISTORY_SECTION.getEAllOperations().get(76));
+      try
+      {
+        GET_GEOTEMPORAL_HISTORY_OBSERVATIONS__EOCL_QRY = helper.createQuery(GET_GEOTEMPORAL_HISTORY_OBSERVATIONS__EOCL_EXP);
+      }
+      catch (ParserException pe)
+      {
+        throw new UnsupportedOperationException(pe.getLocalizedMessage());
+      }
+    }
+    OCL.Query query = EOCL_ENV.createQuery(GET_GEOTEMPORAL_HISTORY_OBSERVATIONS__EOCL_QRY);
+    @SuppressWarnings("unchecked")
+    Collection<GeotemporalHistoryObservation> result = (Collection<GeotemporalHistoryObservation>) query.evaluate(phcrSocialHistorySection);
+    return new BasicEList.UnmodifiableEList<GeotemporalHistoryObservation>(result.size(), result.toArray());
+  }
+
+	/**
+   * The cached OCL expression body for the '{@link #getMostRecentTimeArrivedInUSAObservation(PhcrSocialHistorySection) <em>Get Most Recent Time Arrived In USA Observation</em>}' operation.
+   * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+   * @see #getMostRecentTimeArrivedInUSAObservation(PhcrSocialHistorySection)
+   * @generated
+   * @ordered
+   */
+	protected static final String GET_MOST_RECENT_TIME_ARRIVED_IN_USA_OBSERVATION__EOCL_EXP = "self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(phcr::MostRecentTimeArrivedInUSAObservation))->asSequence()->any(true).oclAsType(phcr::MostRecentTimeArrivedInUSAObservation)";
+
+	/**
+   * The cached OCL query for the '{@link #getMostRecentTimeArrivedInUSAObservation(PhcrSocialHistorySection) <em>Get Most Recent Time Arrived In USA Observation</em>}' query operation.
+   * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+   * @see #getMostRecentTimeArrivedInUSAObservation(PhcrSocialHistorySection)
+   * @generated
+   * @ordered
+   */
+	protected static OCLExpression<EClassifier> GET_MOST_RECENT_TIME_ARRIVED_IN_USA_OBSERVATION__EOCL_QRY;
+
+	/**
+   * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+   * @generated
+   */
+	public static  MostRecentTimeArrivedInUSAObservation getMostRecentTimeArrivedInUSAObservation(PhcrSocialHistorySection phcrSocialHistorySection) {
+    if (GET_MOST_RECENT_TIME_ARRIVED_IN_USA_OBSERVATION__EOCL_QRY == null)
+    {
+      OCL.Helper helper = EOCL_ENV.createOCLHelper();
+      helper.setOperationContext(PhcrPackage.Literals.PHCR_SOCIAL_HISTORY_SECTION, PhcrPackage.Literals.PHCR_SOCIAL_HISTORY_SECTION.getEAllOperations().get(77));
+      try
+      {
+        GET_MOST_RECENT_TIME_ARRIVED_IN_USA_OBSERVATION__EOCL_QRY = helper.createQuery(GET_MOST_RECENT_TIME_ARRIVED_IN_USA_OBSERVATION__EOCL_EXP);
+      }
+      catch (ParserException pe)
+      {
+        throw new UnsupportedOperationException(pe.getLocalizedMessage());
+      }
+    }
+    OCL.Query query = EOCL_ENV.createQuery(GET_MOST_RECENT_TIME_ARRIVED_IN_USA_OBSERVATION__EOCL_QRY);
+    return (MostRecentTimeArrivedInUSAObservation) query.evaluate(phcrSocialHistorySection);
+  }
+
+	/**
+   * The cached OCL expression body for the '{@link #getRaceObservations(PhcrSocialHistorySection) <em>Get Race Observations</em>}' operation.
+   * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+   * @see #getRaceObservations(PhcrSocialHistorySection)
+   * @generated
+   * @ordered
+   */
+	protected static final String GET_RACE_OBSERVATIONS__EOCL_EXP = "self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(phcr::RaceObservation)).oclAsType(phcr::RaceObservation)";
+
+	/**
+   * The cached OCL query for the '{@link #getRaceObservations(PhcrSocialHistorySection) <em>Get Race Observations</em>}' query operation.
+   * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+   * @see #getRaceObservations(PhcrSocialHistorySection)
+   * @generated
+   * @ordered
+   */
+	protected static OCLExpression<EClassifier> GET_RACE_OBSERVATIONS__EOCL_QRY;
+
+	/**
+   * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+   * @generated
+   */
+	public static  EList<RaceObservation> getRaceObservations(PhcrSocialHistorySection phcrSocialHistorySection) {
+    if (GET_RACE_OBSERVATIONS__EOCL_QRY == null)
+    {
+      OCL.Helper helper = EOCL_ENV.createOCLHelper();
+      helper.setOperationContext(PhcrPackage.Literals.PHCR_SOCIAL_HISTORY_SECTION, PhcrPackage.Literals.PHCR_SOCIAL_HISTORY_SECTION.getEAllOperations().get(78));
+      try
+      {
+        GET_RACE_OBSERVATIONS__EOCL_QRY = helper.createQuery(GET_RACE_OBSERVATIONS__EOCL_EXP);
+      }
+      catch (ParserException pe)
+      {
+        throw new UnsupportedOperationException(pe.getLocalizedMessage());
+      }
+    }
+    OCL.Query query = EOCL_ENV.createQuery(GET_RACE_OBSERVATIONS__EOCL_QRY);
+    @SuppressWarnings("unchecked")
+    Collection<RaceObservation> result = (Collection<RaceObservation>) query.evaluate(phcrSocialHistorySection);
+    return new BasicEList.UnmodifiableEList<RaceObservation>(result.size(), result.toArray());
+  }
+
+	/**
+   * The cached OCL expression body for the '{@link #getOccupationObservations(PhcrSocialHistorySection) <em>Get Occupation Observations</em>}' operation.
+   * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+   * @see #getOccupationObservations(PhcrSocialHistorySection)
+   * @generated
+   * @ordered
+   */
+	protected static final String GET_OCCUPATION_OBSERVATIONS__EOCL_EXP = "self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(phcr::OccupationObservation)).oclAsType(phcr::OccupationObservation)";
+
+	/**
+   * The cached OCL query for the '{@link #getOccupationObservations(PhcrSocialHistorySection) <em>Get Occupation Observations</em>}' query operation.
+   * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+   * @see #getOccupationObservations(PhcrSocialHistorySection)
+   * @generated
+   * @ordered
+   */
+	protected static OCLExpression<EClassifier> GET_OCCUPATION_OBSERVATIONS__EOCL_QRY;
+
+	/**
+   * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+   * @generated
+   */
+	public static  EList<OccupationObservation> getOccupationObservations(PhcrSocialHistorySection phcrSocialHistorySection) {
+    if (GET_OCCUPATION_OBSERVATIONS__EOCL_QRY == null)
+    {
+      OCL.Helper helper = EOCL_ENV.createOCLHelper();
+      helper.setOperationContext(PhcrPackage.Literals.PHCR_SOCIAL_HISTORY_SECTION, PhcrPackage.Literals.PHCR_SOCIAL_HISTORY_SECTION.getEAllOperations().get(79));
+      try
+      {
+        GET_OCCUPATION_OBSERVATIONS__EOCL_QRY = helper.createQuery(GET_OCCUPATION_OBSERVATIONS__EOCL_EXP);
+      }
+      catch (ParserException pe)
+      {
+        throw new UnsupportedOperationException(pe.getLocalizedMessage());
+      }
+    }
+    OCL.Query query = EOCL_ENV.createQuery(GET_OCCUPATION_OBSERVATIONS__EOCL_QRY);
+    @SuppressWarnings("unchecked")
+    Collection<OccupationObservation> result = (Collection<OccupationObservation>) query.evaluate(phcrSocialHistorySection);
+    return new BasicEList.UnmodifiableEList<OccupationObservation>(result.size(), result.toArray());
+  }
+
+	/**
+   * The cached OCL expression body for the '{@link #getPregnancyObservations(PhcrSocialHistorySection) <em>Get Pregnancy Observations</em>}' operation.
+   * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+   * @see #getPregnancyObservations(PhcrSocialHistorySection)
+   * @generated
+   * @ordered
+   */
+	protected static final String GET_PREGNANCY_OBSERVATIONS__EOCL_EXP = "self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(phcr::PregnancyObservation)).oclAsType(phcr::PregnancyObservation)";
+
+	/**
+   * The cached OCL query for the '{@link #getPregnancyObservations(PhcrSocialHistorySection) <em>Get Pregnancy Observations</em>}' query operation.
+   * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+   * @see #getPregnancyObservations(PhcrSocialHistorySection)
+   * @generated
+   * @ordered
+   */
+	protected static OCLExpression<EClassifier> GET_PREGNANCY_OBSERVATIONS__EOCL_QRY;
+
+	/**
+   * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+   * @generated
+   */
+	public static  EList<PregnancyObservation> getPregnancyObservations(PhcrSocialHistorySection phcrSocialHistorySection) {
+    if (GET_PREGNANCY_OBSERVATIONS__EOCL_QRY == null)
+    {
+      OCL.Helper helper = EOCL_ENV.createOCLHelper();
+      helper.setOperationContext(PhcrPackage.Literals.PHCR_SOCIAL_HISTORY_SECTION, PhcrPackage.Literals.PHCR_SOCIAL_HISTORY_SECTION.getEAllOperations().get(80));
+      try
+      {
+        GET_PREGNANCY_OBSERVATIONS__EOCL_QRY = helper.createQuery(GET_PREGNANCY_OBSERVATIONS__EOCL_EXP);
+      }
+      catch (ParserException pe)
+      {
+        throw new UnsupportedOperationException(pe.getLocalizedMessage());
+      }
+    }
+    OCL.Query query = EOCL_ENV.createQuery(GET_PREGNANCY_OBSERVATIONS__EOCL_QRY);
+    @SuppressWarnings("unchecked")
+    Collection<PregnancyObservation> result = (Collection<PregnancyObservation>) query.evaluate(phcrSocialHistorySection);
+    return new BasicEList.UnmodifiableEList<PregnancyObservation>(result.size(), result.toArray());
+  }
+
+	/**
+   * The cached OCL expression body for the '{@link #validateSocialHistorySectionTemplateId(PhcrSocialHistorySection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Social History Section Template Id</em>}' operation.
+   * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+   * @see #validateSocialHistorySectionTemplateId(PhcrSocialHistorySection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+   * @generated
+   * @ordered
+   */
+	protected static final String VALIDATE_SOCIAL_HISTORY_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.15.2.22')";
+
+	/**
+   * The cached OCL invariant for the '{@link #validateSocialHistorySectionTemplateId(PhcrSocialHistorySection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Social History Section Template Id</em>}' invariant operation.
+   * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+   * @see #validateSocialHistorySectionTemplateId(PhcrSocialHistorySection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+   * @generated
+   * @ordered
+   */
+	protected static Constraint VALIDATE_SOCIAL_HISTORY_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+
+	/**
+   * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+   * <!-- begin-model-doc -->
+   * @param phcrSocialHistorySection The receiving '<em><b>Social History Section</b></em>' model object.
+   * @param diagnostics The chain of diagnostics to which problems are to be appended.
+   * @param context The cache of context-specific information.
+   * <!-- end-model-doc -->
+   * @generated
+   */
+	public static  boolean validateSocialHistorySectionTemplateId(PhcrSocialHistorySection phcrSocialHistorySection, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
+    if (VALIDATE_SOCIAL_HISTORY_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+      OCL.Helper helper = EOCL_ENV.createOCLHelper();
+      helper.setContext(PhcrPackage.Literals.PHCR_SOCIAL_HISTORY_SECTION);
+      try
+      {
+        VALIDATE_SOCIAL_HISTORY_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_SOCIAL_HISTORY_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+      }
+      catch (ParserException pe)
+      {
+        throw new UnsupportedOperationException(pe.getLocalizedMessage());
+      }
+    }
+    if (!EOCL_ENV.createQuery(VALIDATE_SOCIAL_HISTORY_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(phcrSocialHistorySection))
+    {
+      if (diagnostics != null)
+      {
+        diagnostics.add
+          (new BasicDiagnostic
+            (Diagnostic.ERROR,
+             PhcrValidator.DIAGNOSTIC_SOURCE,
+             PhcrValidator.PHCR_SOCIAL_HISTORY_SECTION__SOCIAL_HISTORY_SECTION_TEMPLATE_ID,
+             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "SocialHistorySectionTemplateId", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(phcrSocialHistorySection, context) }),
+             new Object [] { phcrSocialHistorySection }));
+      }
+       
+      return false;
+    }
+    return true;
+  }
 
 } // PhcrSocialHistorySectionOperations

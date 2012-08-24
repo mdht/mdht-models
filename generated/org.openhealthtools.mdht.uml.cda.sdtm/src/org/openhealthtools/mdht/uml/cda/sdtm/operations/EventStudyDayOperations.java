@@ -80,7 +80,6 @@ public class EventStudyDayOperations extends ClinicalStatementOperations
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.23.62')
    * @param eventStudyDay The receiving '<em><b>Event Study Day</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -90,6 +89,7 @@ public class EventStudyDayOperations extends ClinicalStatementOperations
   
   public static  boolean validateEventStudyDayTemplateId(EventStudyDay eventStudyDay, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
+  	  
     if (VALIDATE_EVENT_STUDY_DAY_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(SdtmPackage.Literals.EVENT_STUDY_DAY);
@@ -114,6 +114,7 @@ public class EventStudyDayOperations extends ClinicalStatementOperations
              org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "EventStudyDayTemplateId", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(eventStudyDay, context) }),
              new Object [] { eventStudyDay }));
       }
+       
       return false;
     }
     return true;
@@ -145,7 +146,6 @@ public class EventStudyDayOperations extends ClinicalStatementOperations
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.classCode=vocab::ActClassObservation::OBS
    * @param eventStudyDay The receiving '<em><b>Event Study Day</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -155,6 +155,7 @@ public class EventStudyDayOperations extends ClinicalStatementOperations
   
   public static  boolean validateEventStudyDayClassCode(EventStudyDay eventStudyDay, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
+  	  
     if (VALIDATE_EVENT_STUDY_DAY_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(SdtmPackage.Literals.EVENT_STUDY_DAY);
@@ -179,6 +180,7 @@ public class EventStudyDayOperations extends ClinicalStatementOperations
              org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "EventStudyDayClassCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(eventStudyDay, context) }),
              new Object [] { eventStudyDay }));
       }
+       
       return false;
     }
     return true;
@@ -210,7 +212,6 @@ public class EventStudyDayOperations extends ClinicalStatementOperations
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * (self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined())
    * @param eventStudyDay The receiving '<em><b>Event Study Day</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -220,6 +221,7 @@ public class EventStudyDayOperations extends ClinicalStatementOperations
   
   public static  boolean validateEventStudyDayCodeP(EventStudyDay eventStudyDay, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
+  	  
     if (VALIDATE_EVENT_STUDY_DAY_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(SdtmPackage.Literals.EVENT_STUDY_DAY);
@@ -244,6 +246,7 @@ public class EventStudyDayOperations extends ClinicalStatementOperations
              org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "EventStudyDayCodeP", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(eventStudyDay, context) }),
              new Object [] { eventStudyDay }));
       }
+       
       return false;
     }
     return true;
@@ -277,9 +280,6 @@ public class EventStudyDayOperations extends ClinicalStatementOperations
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * (self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and 
-   * let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in 
-   * value.code = 'TBD' and value.codeSystem = '2.16.840.1.113883.3.26.1.1')
    * @param eventStudyDay The receiving '<em><b>Event Study Day</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -289,6 +289,7 @@ public class EventStudyDayOperations extends ClinicalStatementOperations
   
   public static  boolean validateEventStudyDayCode(EventStudyDay eventStudyDay, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
+  	  
     if (VALIDATE_EVENT_STUDY_DAY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(SdtmPackage.Literals.EVENT_STUDY_DAY);
@@ -313,6 +314,7 @@ public class EventStudyDayOperations extends ClinicalStatementOperations
              org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "EventStudyDayCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(eventStudyDay, context) }),
              new Object [] { eventStudyDay }));
       }
+       
       return false;
     }
     return true;
@@ -344,7 +346,6 @@ public class EventStudyDayOperations extends ClinicalStatementOperations
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.moodCode=vocab::x_ActMoodDocumentObservation::EVN
    * @param eventStudyDay The receiving '<em><b>Event Study Day</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -354,6 +355,7 @@ public class EventStudyDayOperations extends ClinicalStatementOperations
   
   public static  boolean validateEventStudyDayMoodCode(EventStudyDay eventStudyDay, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
+  	  
     if (VALIDATE_EVENT_STUDY_DAY_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(SdtmPackage.Literals.EVENT_STUDY_DAY);
@@ -378,6 +380,7 @@ public class EventStudyDayOperations extends ClinicalStatementOperations
              org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "EventStudyDayMoodCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(eventStudyDay, context) }),
              new Object [] { eventStudyDay }));
       }
+       
       return false;
     }
     return true;
@@ -409,7 +412,6 @@ public class EventStudyDayOperations extends ClinicalStatementOperations
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * (self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (self.value->size() = 1 and self.value->forAll(element | element.oclIsTypeOf(datatypes::INT)))
    * @param eventStudyDay The receiving '<em><b>Event Study Day</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -419,6 +421,7 @@ public class EventStudyDayOperations extends ClinicalStatementOperations
   
   public static  boolean validateEventStudyDayValue(EventStudyDay eventStudyDay, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
+  	  
     if (VALIDATE_EVENT_STUDY_DAY_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(SdtmPackage.Literals.EVENT_STUDY_DAY);
@@ -443,6 +446,7 @@ public class EventStudyDayOperations extends ClinicalStatementOperations
              org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "EventStudyDayValue", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(eventStudyDay, context) }),
              new Object [] { eventStudyDay }));
       }
+       
       return false;
     }
     return true;

@@ -6,12 +6,15 @@
  */
 package org.openhealthtools.mdht.uml.cda.sdtm.impl;
 
+import java.lang.Iterable;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
 
 import org.eclipse.emf.ecore.EClass;
 
+import org.eclipse.emf.ecore.EObject;
+import org.openhealthtools.mdht.emf.runtime.util.Initializer;
 import org.openhealthtools.mdht.uml.cda.impl.ObservationImpl;
 
 import org.openhealthtools.mdht.uml.cda.sdtm.DataCollection;
@@ -159,6 +162,46 @@ public class InclusionorExclusionCriteriaNotMetImpl extends ObservationImpl impl
    * <!-- end-user-doc -->
    * @generated
    */
+  public boolean validateInclusionorExclusionCriteriaNotMetinclusionExclusionCategoryAssociationinclusionExclusionCategoryClassCode(DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+    return InclusionorExclusionCriteriaNotMetOperations.validateInclusionorExclusionCriteriaNotMetinclusionExclusionCategoryAssociationinclusionExclusionCategoryClassCode(this, diagnostics, context);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public boolean validateInclusionorExclusionCriteriaNotMetinclusionExclusionCategoryAssociationinclusionExclusionCategoryCode(DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+    return InclusionorExclusionCriteriaNotMetOperations.validateInclusionorExclusionCriteriaNotMetinclusionExclusionCategoryAssociationinclusionExclusionCategoryCode(this, diagnostics, context);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public boolean validateInclusionorExclusionCriteriaNotMetinclusionExclusionCategoryAssociationinclusionExclusionCategoryMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+    return InclusionorExclusionCriteriaNotMetOperations.validateInclusionorExclusionCriteriaNotMetinclusionExclusionCategoryAssociationinclusionExclusionCategoryMoodCode(this, diagnostics, context);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public boolean validateInclusionorExclusionCriteriaNotMetinclusionExclusionCategoryAssociationinclusionExclusionCategoryValue(DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+    return InclusionorExclusionCriteriaNotMetOperations.validateInclusionorExclusionCriteriaNotMetinclusionExclusionCategoryAssociationinclusionExclusionCategoryValue(this, diagnostics, context);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
   public boolean validateInclusionorExclusionCriteriaNotMetinclusionExclusionCategoryAssociationTypeCode(DiagnosticChain diagnostics, Map<Object, Object> context)
   {
     return InclusionorExclusionCriteriaNotMetOperations.validateInclusionorExclusionCriteriaNotMetinclusionExclusionCategoryAssociationTypeCode(this, diagnostics, context);
@@ -169,9 +212,69 @@ public class InclusionorExclusionCriteriaNotMetImpl extends ObservationImpl impl
    * <!-- end-user-doc -->
    * @generated
    */
+  public boolean validateInclusionorExclusionCriteriaNotMetinclusionExclusionCategoryAssociationInclusionExclusionCategory(DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+    return InclusionorExclusionCriteriaNotMetOperations.validateInclusionorExclusionCriteriaNotMetinclusionExclusionCategoryAssociationInclusionExclusionCategory(this, diagnostics, context);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public boolean validateInclusionorExclusionCriteriaNotMetinclusionExclusionSubCategoryAssociationinclusionExclusionSubCategoryClassCode(DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+    return InclusionorExclusionCriteriaNotMetOperations.validateInclusionorExclusionCriteriaNotMetinclusionExclusionSubCategoryAssociationinclusionExclusionSubCategoryClassCode(this, diagnostics, context);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public boolean validateInclusionorExclusionCriteriaNotMetinclusionExclusionSubCategoryAssociationinclusionExclusionSubCategoryCode(DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+    return InclusionorExclusionCriteriaNotMetOperations.validateInclusionorExclusionCriteriaNotMetinclusionExclusionSubCategoryAssociationinclusionExclusionSubCategoryCode(this, diagnostics, context);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public boolean validateInclusionorExclusionCriteriaNotMetinclusionExclusionSubCategoryAssociationinclusionExclusionSubCategoryMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+    return InclusionorExclusionCriteriaNotMetOperations.validateInclusionorExclusionCriteriaNotMetinclusionExclusionSubCategoryAssociationinclusionExclusionSubCategoryMoodCode(this, diagnostics, context);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public boolean validateInclusionorExclusionCriteriaNotMetinclusionExclusionSubCategoryAssociationinclusionExclusionSubCategoryValue(DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+    return InclusionorExclusionCriteriaNotMetOperations.validateInclusionorExclusionCriteriaNotMetinclusionExclusionSubCategoryAssociationinclusionExclusionSubCategoryValue(this, diagnostics, context);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
   public boolean validateInclusionorExclusionCriteriaNotMetinclusionExclusionSubCategoryAssociationTypeCode(DiagnosticChain diagnostics, Map<Object, Object> context)
   {
     return InclusionorExclusionCriteriaNotMetOperations.validateInclusionorExclusionCriteriaNotMetinclusionExclusionSubCategoryAssociationTypeCode(this, diagnostics, context);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public boolean validateInclusionorExclusionCriteriaNotMetinclusionExclusionSubCategoryAssociationInclusionExclusionSubCategory(DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+    return InclusionorExclusionCriteriaNotMetOperations.validateInclusionorExclusionCriteriaNotMetinclusionExclusionSubCategoryAssociationInclusionExclusionSubCategory(this, diagnostics, context);
   }
 
   /**
@@ -190,7 +293,16 @@ public class InclusionorExclusionCriteriaNotMetImpl extends ObservationImpl impl
    * @generated
    */
   public InclusionorExclusionCriteriaNotMet init() {
-    	CDAUtil.init(this);
-    	return this;
+      return Initializer.Util.init(this);
   }
+
+  /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    public InclusionorExclusionCriteriaNotMet init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
 } //InclusionorExclusionCriteriaNotMetImpl

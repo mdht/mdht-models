@@ -10,11 +10,14 @@
  *******************************************************************************/
 package org.openhealthtools.mdht.uml.cda.phcr.cocci.impl;
 
+import java.lang.Iterable;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.common.util.EList;
 import org.eclipse.emf.ecore.EClass;
+import org.eclipse.emf.ecore.EObject;
+import org.openhealthtools.mdht.emf.runtime.util.Initializer;
 import org.openhealthtools.mdht.uml.cda.phcr.cocci.CocciPackage;
 import org.openhealthtools.mdht.uml.cda.phcr.cocci.CoccidioidesPHCRRelevantDxTestsSection;
 import org.openhealthtools.mdht.uml.cda.phcr.cocci.CoccidioidesResultObservation;
@@ -34,77 +37,86 @@ import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
  */
 public class CoccidioidesPHCRRelevantDxTestsSectionImpl extends PhcrRelevantDxTestsSectionImpl implements CoccidioidesPHCRRelevantDxTestsSection {
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	protected CoccidioidesPHCRRelevantDxTestsSectionImpl() {
-		super();
-	}
+    super();
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	@Override
 	protected EClass eStaticClass() {
-		return CocciPackage.Literals.COCCIDIOIDES_PHCR_RELEVANT_DX_TESTS_SECTION;
-	}
+    return CocciPackage.Literals.COCCIDIOIDES_PHCR_RELEVANT_DX_TESTS_SECTION;
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateCoccidioidesPHCRRelevantDxTestsSectionCoccidioidesResultObservation(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return CoccidioidesPHCRRelevantDxTestsSectionOperations.validateCoccidioidesPHCRRelevantDxTestsSectionCoccidioidesResultObservation(this, diagnostics, context);
-	}
+    return CoccidioidesPHCRRelevantDxTestsSectionOperations.validateCoccidioidesPHCRRelevantDxTestsSectionCoccidioidesResultObservation(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateCoccidioidesPHCRRelevantDxTestsSectionCoccidioidesResultOrganizer(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return CoccidioidesPHCRRelevantDxTestsSectionOperations.validateCoccidioidesPHCRRelevantDxTestsSectionCoccidioidesResultOrganizer(this, diagnostics, context);
-	}
+    return CoccidioidesPHCRRelevantDxTestsSectionOperations.validateCoccidioidesPHCRRelevantDxTestsSectionCoccidioidesResultOrganizer(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public EList<CoccidioidesResultObservation> getCoccidioidesResultObservations() {
-		return CoccidioidesPHCRRelevantDxTestsSectionOperations.getCoccidioidesResultObservations(this);
-	}
+    return CoccidioidesPHCRRelevantDxTestsSectionOperations.getCoccidioidesResultObservations(this);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public EList<CoccidioidesResultOrganizer> getCoccidioidesResultOrganizers() {
-		return CoccidioidesPHCRRelevantDxTestsSectionOperations.getCoccidioidesResultOrganizers(this);
-	}
+    return CoccidioidesPHCRRelevantDxTestsSectionOperations.getCoccidioidesResultOrganizers(this);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	@Override
 	public boolean validateResultsSectionTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return CoccidioidesPHCRRelevantDxTestsSectionOperations.validateResultsSectionTemplateId(this, diagnostics, context);
-	}
+    return CoccidioidesPHCRRelevantDxTestsSectionOperations.validateResultsSectionTemplateId(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public CoccidioidesPHCRRelevantDxTestsSection init() {
-    	CDAUtil.init(this);
-    	return this;
-	}
+      return Initializer.Util.init(this);
+  }
+
+  /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    public CoccidioidesPHCRRelevantDxTestsSection init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
 } //CoccidioidesPHCRRelevantDxTestsSectionImpl

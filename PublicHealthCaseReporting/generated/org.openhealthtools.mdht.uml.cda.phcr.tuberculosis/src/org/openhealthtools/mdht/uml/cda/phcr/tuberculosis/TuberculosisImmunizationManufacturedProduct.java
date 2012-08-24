@@ -10,6 +10,9 @@
  *******************************************************************************/
 package org.openhealthtools.mdht.uml.cda.phcr.tuberculosis;
 
+import java.lang.Iterable;
+import org.eclipse.emf.ecore.EObject;
+import org.openhealthtools.mdht.emf.runtime.util.Initializer;
 import org.openhealthtools.mdht.uml.cda.ccd.Product;
 
 /**
@@ -19,15 +22,22 @@ import org.openhealthtools.mdht.uml.cda.ccd.Product;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.phcr.tuberculosis.TuberculosisPackage#getTuberculosisImmunizationManufacturedProduct()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation templateId.root='2.16.840.1.113883.10.20.15.3.61' constraints.validation.error='TuberculosisImmunizationManufacturedProductTemplateId'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='TuberculosisImmunizationManufacturedProductTemplateId' templateId.root='2.16.840.1.113883.10.20.15.3.61'"
  * @generated
  */
 public interface TuberculosisImmunizationManufacturedProduct extends Product
 {
   /**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   public TuberculosisImmunizationManufacturedProduct init();
+
+  /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    public TuberculosisImmunizationManufacturedProduct init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // TuberculosisImmunizationManufacturedProduct

@@ -10,11 +10,14 @@
  *******************************************************************************/
 package org.openhealthtools.mdht.uml.cda.phcr.impl;
 
+import java.lang.Iterable;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.common.util.EList;
 import org.eclipse.emf.ecore.EClass;
+import org.eclipse.emf.ecore.EObject;
+import org.openhealthtools.mdht.emf.runtime.util.Initializer;
 import org.openhealthtools.mdht.uml.cda.phcr.PhcrPackage;
 import org.openhealthtools.mdht.uml.cda.phcr.ResultObservation;
 import org.openhealthtools.mdht.uml.cda.phcr.SpecimenCollectionProcedure;
@@ -33,105 +36,114 @@ import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
  */
 public class ResultObservationImpl extends org.openhealthtools.mdht.uml.cda.ccd.impl.ResultObservationImpl implements ResultObservation {
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	protected ResultObservationImpl() {
-		super();
-	}
+    super();
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	@Override
 	protected EClass eStaticClass() {
-		return PhcrPackage.Literals.RESULT_OBSERVATION;
-	}
+    return PhcrPackage.Literals.RESULT_OBSERVATION;
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validatePHCRResultObservationClassCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ResultObservationOperations.validatePHCRResultObservationClassCode(this, diagnostics, context);
-	}
+    return ResultObservationOperations.validatePHCRResultObservationClassCode(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public boolean validatePHCRResultObservationStatusCodeP(DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+    return ResultObservationOperations.validatePHCRResultObservationStatusCodeP(this, diagnostics, context);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validatePHCRResultObservationStatusCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ResultObservationOperations.validatePHCRResultObservationStatusCode(this, diagnostics, context);
-	}
+    return ResultObservationOperations.validatePHCRResultObservationStatusCode(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validatePHCRResultObservationSpecimenCollectionProcedure(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ResultObservationOperations.validatePHCRResultObservationSpecimenCollectionProcedure(this, diagnostics, context);
-	}
+    return ResultObservationOperations.validatePHCRResultObservationSpecimenCollectionProcedure(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validatePHCRResultObservationSusceptibilityResult(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ResultObservationOperations.validatePHCRResultObservationSusceptibilityResult(this, diagnostics, context);
-	}
+    return ResultObservationOperations.validatePHCRResultObservationSusceptibilityResult(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public EList<SpecimenCollectionProcedure> getSpecimenCollectionProcedures() {
-		return ResultObservationOperations.getSpecimenCollectionProcedures(this);
-	}
+    return ResultObservationOperations.getSpecimenCollectionProcedures(this);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public EList<SusceptibilityResult> getSusceptibilityResults() {
-		return ResultObservationOperations.getSusceptibilityResults(this);
-	}
+    return ResultObservationOperations.getSusceptibilityResults(this);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	@Override
 	public boolean validateResultObservationTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ResultObservationOperations.validateResultObservationTemplateId(this, diagnostics, context);
-	}
+    return ResultObservationOperations.validateResultObservationTemplateId(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public boolean validateResultObservationStatusCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ResultObservationOperations.validateResultObservationStatusCode(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public ResultObservation init() {
-    	CDAUtil.init(this);
-    	return this;
-	}
+      return Initializer.Util.init(this);
+  }
+
+  /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    public ResultObservation init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
 } //ResultObservationImpl

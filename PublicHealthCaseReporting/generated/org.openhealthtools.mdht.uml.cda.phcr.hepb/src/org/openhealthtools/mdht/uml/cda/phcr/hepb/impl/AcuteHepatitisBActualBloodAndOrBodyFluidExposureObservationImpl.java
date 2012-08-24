@@ -10,12 +10,15 @@
  *******************************************************************************/
 package org.openhealthtools.mdht.uml.cda.phcr.hepb.impl;
 
+import java.lang.Iterable;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
 
 import org.eclipse.emf.ecore.EClass;
 
+import org.eclipse.emf.ecore.EObject;
+import org.openhealthtools.mdht.emf.runtime.util.Initializer;
 import org.openhealthtools.mdht.uml.cda.impl.ObservationImpl;
 
 import org.openhealthtools.mdht.uml.cda.phcr.hepb.AcuteHepatitisBActualBloodAndOrBodyFluidExposureObservation;
@@ -36,85 +39,114 @@ import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
  */
 public class AcuteHepatitisBActualBloodAndOrBodyFluidExposureObservationImpl extends ObservationImpl implements AcuteHepatitisBActualBloodAndOrBodyFluidExposureObservation {
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	protected AcuteHepatitisBActualBloodAndOrBodyFluidExposureObservationImpl() {
-		super();
-	}
+    super();
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	@Override
 	protected EClass eStaticClass() {
-		return HepbPackage.Literals.ACUTE_HEPATITIS_BACTUAL_BLOOD_AND_OR_BODY_FLUID_EXPOSURE_OBSERVATION;
-	}
+    return HepbPackage.Literals.ACUTE_HEPATITIS_BACTUAL_BLOOD_AND_OR_BODY_FLUID_EXPOSURE_OBSERVATION;
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateAcuteHepatitisBActualBloodAndOrBodyFluidExposureObservationTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return AcuteHepatitisBActualBloodAndOrBodyFluidExposureObservationOperations.validateAcuteHepatitisBActualBloodAndOrBodyFluidExposureObservationTemplateId(this, diagnostics, context);
-	}
+    return AcuteHepatitisBActualBloodAndOrBodyFluidExposureObservationOperations.validateAcuteHepatitisBActualBloodAndOrBodyFluidExposureObservationTemplateId(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public boolean validateAcuteHepatitisBActualBloodAndOrBodyFluidExposureObservationCodeP(DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+    return AcuteHepatitisBActualBloodAndOrBodyFluidExposureObservationOperations.validateAcuteHepatitisBActualBloodAndOrBodyFluidExposureObservationCodeP(this, diagnostics, context);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateAcuteHepatitisBActualBloodAndOrBodyFluidExposureObservationCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return AcuteHepatitisBActualBloodAndOrBodyFluidExposureObservationOperations.validateAcuteHepatitisBActualBloodAndOrBodyFluidExposureObservationCode(this, diagnostics, context);
-	}
+    return AcuteHepatitisBActualBloodAndOrBodyFluidExposureObservationOperations.validateAcuteHepatitisBActualBloodAndOrBodyFluidExposureObservationCode(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateAcuteHepatitisBActualBloodAndOrBodyFluidExposureObservationStatusCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return AcuteHepatitisBActualBloodAndOrBodyFluidExposureObservationOperations.validateAcuteHepatitisBActualBloodAndOrBodyFluidExposureObservationStatusCode(this, diagnostics, context);
-	}
+    return AcuteHepatitisBActualBloodAndOrBodyFluidExposureObservationOperations.validateAcuteHepatitisBActualBloodAndOrBodyFluidExposureObservationStatusCode(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public boolean validateAcuteHepatitisBActualBloodAndOrBodyFluidExposureObservationStatusCodeP(DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+    return AcuteHepatitisBActualBloodAndOrBodyFluidExposureObservationOperations.validateAcuteHepatitisBActualBloodAndOrBodyFluidExposureObservationStatusCodeP(this, diagnostics, context);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateAcuteHepatitisBActualBloodAndOrBodyFluidExposureObservationClassCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return AcuteHepatitisBActualBloodAndOrBodyFluidExposureObservationOperations.validateAcuteHepatitisBActualBloodAndOrBodyFluidExposureObservationClassCode(this, diagnostics, context);
-	}
+    return AcuteHepatitisBActualBloodAndOrBodyFluidExposureObservationOperations.validateAcuteHepatitisBActualBloodAndOrBodyFluidExposureObservationClassCode(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateAcuteHepatitisBActualBloodAndOrBodyFluidExposureObservationId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return AcuteHepatitisBActualBloodAndOrBodyFluidExposureObservationOperations.validateAcuteHepatitisBActualBloodAndOrBodyFluidExposureObservationId(this, diagnostics, context);
-	}
+    return AcuteHepatitisBActualBloodAndOrBodyFluidExposureObservationOperations.validateAcuteHepatitisBActualBloodAndOrBodyFluidExposureObservationId(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateAcuteHepatitisBActualBloodAndOrBodyFluidExposureObservationMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return AcuteHepatitisBActualBloodAndOrBodyFluidExposureObservationOperations.validateAcuteHepatitisBActualBloodAndOrBodyFluidExposureObservationMoodCode(this, diagnostics, context);
-	}
+    return AcuteHepatitisBActualBloodAndOrBodyFluidExposureObservationOperations.validateAcuteHepatitisBActualBloodAndOrBodyFluidExposureObservationMoodCode(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public AcuteHepatitisBActualBloodAndOrBodyFluidExposureObservation init() {
-    	CDAUtil.init(this);
-    	return this;
-	}
+      return Initializer.Util.init(this);
+  }
+
+  /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    public AcuteHepatitisBActualBloodAndOrBodyFluidExposureObservation init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
 } //AcuteHepatitisBActualBloodAndOrBodyFluidExposureObservationImpl

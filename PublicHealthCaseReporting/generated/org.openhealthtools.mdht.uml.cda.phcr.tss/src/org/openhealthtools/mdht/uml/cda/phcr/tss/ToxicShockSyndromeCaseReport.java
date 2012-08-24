@@ -10,8 +10,11 @@
  *******************************************************************************/
 package org.openhealthtools.mdht.uml.cda.phcr.tss;
 
+import java.lang.Iterable;
 import java.util.Map;
 import org.eclipse.emf.common.util.DiagnosticChain;
+import org.eclipse.emf.ecore.EObject;
+import org.openhealthtools.mdht.emf.runtime.util.Initializer;
 import org.openhealthtools.mdht.uml.cda.phcr.PublicHealthCaseReport;
 
 /**
@@ -21,77 +24,75 @@ import org.openhealthtools.mdht.uml.cda.phcr.PublicHealthCaseReport;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.phcr.tss.tssPackage#getToxicShockSyndromeCaseReport()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation title.mixed='Public Health Case Report - Toxic Shock Syndrome' templateId.root='2.16.840.1.113883.10.20.15.1.6' constraints.validation.error='ToxicShockSyndromeCaseReportTemplateId ToxicShockSyndromeCaseReportTitle ToxicShockSyndromeCaseReportTssPhcrClinicalInformationSection' constraints.validation.warning='ToxicShockSyndromeCaseReportTssPhcrRelevantDxTestsSection'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='ToxicShockSyndromeCaseReportTemplateId ToxicShockSyndromeCaseReportTitle ToxicShockSyndromeCaseReportTssPhcrClinicalInformationSection' templateId.root='2.16.840.1.113883.10.20.15.1.6' title.mixed='Public Health Case Report - Toxic Shock Syndrome' constraints.validation.warning='ToxicShockSyndromeCaseReportTssPhcrRelevantDxTestsSection'"
  * @generated
  */
 public interface ToxicShockSyndromeCaseReport extends PublicHealthCaseReport {
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * (self.title.oclIsUndefined() or self.title.isNullFlavorUndefined()) implies (not self.title.oclIsUndefined() and self.title.getText() = 'Public Health Case Report - Toxic Shock Syndrome')
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.title.oclIsUndefined() or self.title.isNullFlavorUndefined()) implies (not self.title.oclIsUndefined() and self.title.getText() = \'Public Health Case Report - Toxic Shock Syndrome\')'"
-	 * @generated
-	 */
+   * <!-- begin-model-doc -->
+   * @param diagnostics The chain of diagnostics to which problems are to be appended.
+   * @param context The cache of context-specific information.
+   * <!-- end-model-doc -->
+   * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.title.oclIsUndefined() or self.title.isNullFlavorUndefined()) implies (not self.title.oclIsUndefined() and self.title.getText() = \'Public Health Case Report - Toxic Shock Syndrome\')'"
+   * @generated
+   */
 	boolean validateToxicShockSyndromeCaseReportTitle(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(tss::TssPhcrClinicalInformationSection))
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(tss::TssPhcrClinicalInformationSection))'"
-	 * @generated
-	 */
+   * <!-- begin-model-doc -->
+   * @param diagnostics The chain of diagnostics to which problems are to be appended.
+   * @param context The cache of context-specific information.
+   * <!-- end-model-doc -->
+   * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(tss::TssPhcrClinicalInformationSection))'"
+   * @generated
+   */
 	boolean validateToxicShockSyndromeCaseReportTssPhcrClinicalInformationSection(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(tss::TssPhcrRelevantDxTestsSection))
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(tss::TssPhcrRelevantDxTestsSection))'"
-	 * @generated
-	 */
+   * <!-- begin-model-doc -->
+   * @param diagnostics The chain of diagnostics to which problems are to be appended.
+   * @param context The cache of context-specific information.
+   * <!-- end-model-doc -->
+   * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(tss::TssPhcrRelevantDxTestsSection))'"
+   * @generated
+   */
 	boolean validateToxicShockSyndromeCaseReportTssPhcrRelevantDxTestsSection(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(tss::TssPhcrClinicalInformationSection))->asSequence()->first().oclAsType(tss::TssPhcrClinicalInformationSection)
-	 * <!-- end-model-doc -->
-	 * @model kind="operation" required="true" ordered="false"
-	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(tss::TssPhcrClinicalInformationSection))->asSequence()->first().oclAsType(tss::TssPhcrClinicalInformationSection)'"
-	 * @generated
-	 */
+   * @model kind="operation" required="true" ordered="false"
+   *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(tss::TssPhcrClinicalInformationSection))->asSequence()->any(true).oclAsType(tss::TssPhcrClinicalInformationSection)'"
+   * @generated
+   */
 	TssPhcrClinicalInformationSection getTssPhcrClinicalInformationSection();
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(tss::TssPhcrRelevantDxTestsSection))->asSequence()->first().oclAsType(tss::TssPhcrRelevantDxTestsSection)
-	 * <!-- end-model-doc -->
-	 * @model kind="operation" required="true" ordered="false"
-	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(tss::TssPhcrRelevantDxTestsSection))->asSequence()->first().oclAsType(tss::TssPhcrRelevantDxTestsSection)'"
-	 * @generated
-	 */
+   * @model kind="operation" required="true" ordered="false"
+   *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(tss::TssPhcrRelevantDxTestsSection))->asSequence()->any(true).oclAsType(tss::TssPhcrRelevantDxTestsSection)'"
+   * @generated
+   */
 	TssPhcrRelevantDxTestsSection getTssPhcrRelevantDxTestsSection();
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public ToxicShockSyndromeCaseReport init();
+
+  /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    public ToxicShockSyndromeCaseReport init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // ToxicShockSyndromeCaseReport

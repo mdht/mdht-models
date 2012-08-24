@@ -86,7 +86,6 @@ public class EMSPhysicalAssessmentSectionOperations extends SectionOperations
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.17.3.10.1.20')
    * @param emsPhysicalAssessmentSection The receiving '<em><b>EMS Physical Assessment Section</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -155,9 +154,6 @@ public class EMSPhysicalAssessmentSectionOperations extends SectionOperations
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * (self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and 
-   * let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in 
-   * value.code = '67668-4' and value.codeSystem = '2.16.840.1.113883.6.1')
    * @param emsPhysicalAssessmentSection The receiving '<em><b>EMS Physical Assessment Section</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -224,7 +220,6 @@ public class EMSPhysicalAssessmentSectionOperations extends SectionOperations
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * (self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined())
    * @param emsPhysicalAssessmentSection The receiving '<em><b>EMS Physical Assessment Section</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -269,7 +264,6 @@ public class EMSPhysicalAssessmentSectionOperations extends SectionOperations
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * not self.text.oclIsUndefined()
    * @param emsPhysicalAssessmentSection The receiving '<em><b>EMS Physical Assessment Section</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -357,7 +351,6 @@ public class EMSPhysicalAssessmentSectionOperations extends SectionOperations
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * (self.title.oclIsUndefined() or self.title.isNullFlavorUndefined()) implies (not self.title.oclIsUndefined() and self.title.getText() = 'EMS Physical Assessment Section')
    * @param emsPhysicalAssessmentSection The receiving '<em><b>EMS Physical Assessment Section</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -406,7 +399,7 @@ public class EMSPhysicalAssessmentSectionOperations extends SectionOperations
    * @generated
    * @ordered
    */
-  protected static final String VALIDATE_EMS_PHYSICAL_ASSESSMENT_SECTION_ENTRY1__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entry->one(entry : cda::Entry | not entry.oclIsUndefined() and entry.oclIsKindOf(emspcr::EMSPhysicalAssessmentSection::DerivedEntry))";
+  protected static final String VALIDATE_EMS_PHYSICAL_ASSESSMENT_SECTION_ENTRY1__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entry->one(entry : cda::Entry | not entry.oclIsUndefined() and entry.oclIsKindOf(emspcr::DerivedEntry))";
 
   /**
    * The cached OCL invariant for the '{@link #validateEMSPhysicalAssessmentSectionEntry1(EMSPhysicalAssessmentSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate EMS Physical Assessment Section Entry1</em>}' invariant operation.
@@ -424,7 +417,6 @@ public class EMSPhysicalAssessmentSectionOperations extends SectionOperations
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.entry->one(entry : cda::Entry | not entry.oclIsUndefined() and entry.oclIsKindOf(emspcr::EMSPhysicalAssessmentSection::DerivedEntry))
    * @param emsPhysicalAssessmentSection The receiving '<em><b>EMS Physical Assessment Section</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -473,7 +465,7 @@ public class EMSPhysicalAssessmentSectionOperations extends SectionOperations
    * @generated
    * @ordered
    */
-  protected static final String VALIDATE_EMS_PHYSICAL_ASSESSMENT_SECTION_ENTRY2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entry->one(entry : cda::Entry | not entry.oclIsUndefined() and entry.oclIsKindOf(emspcr::EMSPhysicalAssessmentSection::DerivedEntry))";
+  protected static final String VALIDATE_EMS_PHYSICAL_ASSESSMENT_SECTION_ENTRY2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entry->one(entry : cda::Entry | not entry.oclIsUndefined() and entry.oclIsKindOf(emspcr::DerivedEntry))";
 
   /**
    * The cached OCL invariant for the '{@link #validateEMSPhysicalAssessmentSectionEntry2(EMSPhysicalAssessmentSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate EMS Physical Assessment Section Entry2</em>}' invariant operation.
@@ -491,7 +483,6 @@ public class EMSPhysicalAssessmentSectionOperations extends SectionOperations
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.entry->one(entry : cda::Entry | not entry.oclIsUndefined() and entry.oclIsKindOf(emspcr::EMSPhysicalAssessmentSection::DerivedEntry))
    * @param emsPhysicalAssessmentSection The receiving '<em><b>EMS Physical Assessment Section</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -540,7 +531,7 @@ public class EMSPhysicalAssessmentSectionOperations extends SectionOperations
    * @generated
    * @ordered
    */
-  protected static final String VALIDATE_EMS_PHYSICAL_ASSESSMENT_SECTION_ENTRY3__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entry->one(entry : cda::Entry | not entry.oclIsUndefined() and entry.oclIsKindOf(emspcr::EMSPhysicalAssessmentSection::DerivedEntry))";
+  protected static final String VALIDATE_EMS_PHYSICAL_ASSESSMENT_SECTION_ENTRY3__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entry->one(entry : cda::Entry | not entry.oclIsUndefined() and entry.oclIsKindOf(emspcr::DerivedEntry))";
 
   /**
    * The cached OCL invariant for the '{@link #validateEMSPhysicalAssessmentSectionEntry3(EMSPhysicalAssessmentSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate EMS Physical Assessment Section Entry3</em>}' invariant operation.
@@ -558,7 +549,6 @@ public class EMSPhysicalAssessmentSectionOperations extends SectionOperations
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.entry->one(entry : cda::Entry | not entry.oclIsUndefined() and entry.oclIsKindOf(emspcr::EMSPhysicalAssessmentSection::DerivedEntry))
    * @param emsPhysicalAssessmentSection The receiving '<em><b>EMS Physical Assessment Section</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -607,7 +597,7 @@ public class EMSPhysicalAssessmentSectionOperations extends SectionOperations
    * @generated
    * @ordered
    */
-  protected static final String VALIDATE_EMS_PHYSICAL_ASSESSMENT_SECTION_ENTRY4__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entry->one(entry : cda::Entry | not entry.oclIsUndefined() and entry.oclIsKindOf(emspcr::EMSPhysicalAssessmentSection::DerivedEntry))";
+  protected static final String VALIDATE_EMS_PHYSICAL_ASSESSMENT_SECTION_ENTRY4__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entry->one(entry : cda::Entry | not entry.oclIsUndefined() and entry.oclIsKindOf(emspcr::DerivedEntry))";
 
   /**
    * The cached OCL invariant for the '{@link #validateEMSPhysicalAssessmentSectionEntry4(EMSPhysicalAssessmentSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate EMS Physical Assessment Section Entry4</em>}' invariant operation.
@@ -625,7 +615,6 @@ public class EMSPhysicalAssessmentSectionOperations extends SectionOperations
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.entry->one(entry : cda::Entry | not entry.oclIsUndefined() and entry.oclIsKindOf(emspcr::EMSPhysicalAssessmentSection::DerivedEntry))
    * @param emsPhysicalAssessmentSection The receiving '<em><b>EMS Physical Assessment Section</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -674,7 +663,7 @@ public class EMSPhysicalAssessmentSectionOperations extends SectionOperations
    * @generated
    * @ordered
    */
-  protected static final String VALIDATE_EMS_PHYSICAL_ASSESSMENT_SECTION_ENTRY5__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entry->one(entry : cda::Entry | not entry.oclIsUndefined() and entry.oclIsKindOf(emspcr::EMSPhysicalAssessmentSection::DerivedEntry))";
+  protected static final String VALIDATE_EMS_PHYSICAL_ASSESSMENT_SECTION_ENTRY5__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entry->one(entry : cda::Entry | not entry.oclIsUndefined() and entry.oclIsKindOf(emspcr::DerivedEntry))";
 
   /**
    * The cached OCL invariant for the '{@link #validateEMSPhysicalAssessmentSectionEntry5(EMSPhysicalAssessmentSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate EMS Physical Assessment Section Entry5</em>}' invariant operation.
@@ -692,7 +681,6 @@ public class EMSPhysicalAssessmentSectionOperations extends SectionOperations
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.entry->one(entry : cda::Entry | not entry.oclIsUndefined() and entry.oclIsKindOf(emspcr::EMSPhysicalAssessmentSection::DerivedEntry))
    * @param emsPhysicalAssessmentSection The receiving '<em><b>EMS Physical Assessment Section</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -741,7 +729,7 @@ public class EMSPhysicalAssessmentSectionOperations extends SectionOperations
    * @generated
    * @ordered
    */
-  protected static final String VALIDATE_EMS_PHYSICAL_ASSESSMENT_SECTION_ENTRY6__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entry->one(entry : cda::Entry | not entry.oclIsUndefined() and entry.oclIsKindOf(emspcr::EMSPhysicalAssessmentSection::DerivedEntry))";
+  protected static final String VALIDATE_EMS_PHYSICAL_ASSESSMENT_SECTION_ENTRY6__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entry->one(entry : cda::Entry | not entry.oclIsUndefined() and entry.oclIsKindOf(emspcr::DerivedEntry))";
 
   /**
    * The cached OCL invariant for the '{@link #validateEMSPhysicalAssessmentSectionEntry6(EMSPhysicalAssessmentSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate EMS Physical Assessment Section Entry6</em>}' invariant operation.
@@ -759,7 +747,6 @@ public class EMSPhysicalAssessmentSectionOperations extends SectionOperations
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.entry->one(entry : cda::Entry | not entry.oclIsUndefined() and entry.oclIsKindOf(emspcr::EMSPhysicalAssessmentSection::DerivedEntry))
    * @param emsPhysicalAssessmentSection The receiving '<em><b>EMS Physical Assessment Section</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.

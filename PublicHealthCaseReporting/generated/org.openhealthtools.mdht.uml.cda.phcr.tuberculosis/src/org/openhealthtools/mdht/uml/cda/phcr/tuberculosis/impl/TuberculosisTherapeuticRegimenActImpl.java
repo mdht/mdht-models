@@ -10,6 +10,7 @@
  *******************************************************************************/
 package org.openhealthtools.mdht.uml.cda.phcr.tuberculosis.impl;
 
+import java.lang.Iterable;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
@@ -17,6 +18,8 @@ import org.eclipse.emf.common.util.EList;
 
 import org.eclipse.emf.ecore.EClass;
 
+import org.eclipse.emf.ecore.EObject;
+import org.openhealthtools.mdht.emf.runtime.util.Initializer;
 import org.openhealthtools.mdht.uml.cda.phcr.impl.TherapeuticRegimenActImpl;
 
 import org.openhealthtools.mdht.uml.cda.phcr.tuberculosis.TuberculosisPackage;
@@ -39,77 +42,86 @@ import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
  */
 public class TuberculosisTherapeuticRegimenActImpl extends TherapeuticRegimenActImpl implements TuberculosisTherapeuticRegimenAct {
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	protected TuberculosisTherapeuticRegimenActImpl() {
-		super();
-	}
+    super();
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	@Override
 	protected EClass eStaticClass() {
-		return TuberculosisPackage.Literals.TUBERCULOSIS_THERAPEUTIC_REGIMEN_ACT;
-	}
+    return TuberculosisPackage.Literals.TUBERCULOSIS_THERAPEUTIC_REGIMEN_ACT;
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateTuberculosisTherapeuticRegimenActTuberculosisTreatmentGivenSubstanceAdministration(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return TuberculosisTherapeuticRegimenActOperations.validateTuberculosisTherapeuticRegimenActTuberculosisTreatmentGivenSubstanceAdministration(this, diagnostics, context);
-	}
+    return TuberculosisTherapeuticRegimenActOperations.validateTuberculosisTherapeuticRegimenActTuberculosisTreatmentGivenSubstanceAdministration(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateTuberculosisTherapeuticRegimenActTuberculosisTreatmentNotGivenSubstanceAdministration(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return TuberculosisTherapeuticRegimenActOperations.validateTuberculosisTherapeuticRegimenActTuberculosisTreatmentNotGivenSubstanceAdministration(this, diagnostics, context);
-	}
+    return TuberculosisTherapeuticRegimenActOperations.validateTuberculosisTherapeuticRegimenActTuberculosisTreatmentNotGivenSubstanceAdministration(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public EList<TuberculosisTreatmentGivenSubstanceAdministration> getTuberculosisTreatmentGivenSubstanceAdministrations() {
-		return TuberculosisTherapeuticRegimenActOperations.getTuberculosisTreatmentGivenSubstanceAdministrations(this);
-	}
+    return TuberculosisTherapeuticRegimenActOperations.getTuberculosisTreatmentGivenSubstanceAdministrations(this);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public EList<TuberculosisTreatmentNotGivenSubstanceAdministration> getTuberculosisTreatmentNotGivenSubstanceAdministrations() {
-		return TuberculosisTherapeuticRegimenActOperations.getTuberculosisTreatmentNotGivenSubstanceAdministrations(this);
-	}
+    return TuberculosisTherapeuticRegimenActOperations.getTuberculosisTreatmentNotGivenSubstanceAdministrations(this);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	@Override
 	public boolean validateTherapeuticRegimenActTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return TuberculosisTherapeuticRegimenActOperations.validateTherapeuticRegimenActTemplateId(this, diagnostics, context);
-	}
+    return TuberculosisTherapeuticRegimenActOperations.validateTherapeuticRegimenActTemplateId(this, diagnostics, context);
+  }
 
   /**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   public TuberculosisTherapeuticRegimenAct init() {
-    	CDAUtil.init(this);
-    	return this;
-	}
+      return Initializer.Util.init(this);
+  }
+
+  /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    public TuberculosisTherapeuticRegimenAct init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
 } //TuberculosisTherapeuticRegimenActImpl

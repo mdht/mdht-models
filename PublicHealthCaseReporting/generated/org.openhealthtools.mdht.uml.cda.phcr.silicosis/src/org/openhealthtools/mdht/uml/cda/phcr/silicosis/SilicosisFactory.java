@@ -22,110 +22,110 @@ import org.eclipse.emf.ecore.EFactory;
  */
 public interface SilicosisFactory extends EFactory {
 	/**
-	 * The singleton instance of the factory.
-	 * <!-- begin-user-doc -->
+   * The singleton instance of the factory.
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	SilicosisFactory eINSTANCE = org.openhealthtools.mdht.uml.cda.phcr.silicosis.impl.SilicosisFactoryImpl.init();
 
 	/**
-	 * Returns a new object of class '<em>Case Report</em>'.
-	 * <!-- begin-user-doc -->
+   * Returns a new object of class '<em>Case Report</em>'.
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Case Report</em>'.
-	 * @generated
-	 */
+   * @return a new object of class '<em>Case Report</em>'.
+   * @generated
+   */
 	SilicosisCaseReport createSilicosisCaseReport();
 
 	/**
-	 * Returns a new object of class '<em>PHCR Social History Section</em>'.
-	 * <!-- begin-user-doc -->
+   * Returns a new object of class '<em>PHCR Social History Section</em>'.
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>PHCR Social History Section</em>'.
-	 * @generated
-	 */
+   * @return a new object of class '<em>PHCR Social History Section</em>'.
+   * @generated
+   */
 	SilicosisPHCRSocialHistorySection createSilicosisPHCRSocialHistorySection();
 
 	/**
-	 * Returns a new object of class '<em>Socio Behavioral Boolean Risk Factor Observation</em>'.
-	 * <!-- begin-user-doc -->
+   * Returns a new object of class '<em>Socio Behavioral Boolean Risk Factor Observation</em>'.
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Socio Behavioral Boolean Risk Factor Observation</em>'.
-	 * @generated
-	 */
+   * @return a new object of class '<em>Socio Behavioral Boolean Risk Factor Observation</em>'.
+   * @generated
+   */
 	SilicosisSocioBehavioralBooleanRiskFactorObservation createSilicosisSocioBehavioralBooleanRiskFactorObservation();
 
 	/**
-	 * Returns a new object of class '<em>PHCR Clinical Information Section</em>'.
-	 * <!-- begin-user-doc -->
+   * Returns a new object of class '<em>PHCR Clinical Information Section</em>'.
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>PHCR Clinical Information Section</em>'.
-	 * @generated
-	 */
+   * @return a new object of class '<em>PHCR Clinical Information Section</em>'.
+   * @generated
+   */
 	SilicosisPHCRClinicalInformationSection createSilicosisPHCRClinicalInformationSection();
 
 	/**
-	 * Returns a new object of class '<em>Case Observation</em>'.
-	 * <!-- begin-user-doc -->
+   * Returns a new object of class '<em>Case Observation</em>'.
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Case Observation</em>'.
-	 * @generated
-	 */
+   * @return a new object of class '<em>Case Observation</em>'.
+   * @generated
+   */
 	SilicosisCaseObservation createSilicosisCaseObservation();
 
 	/**
-	 * Returns a new object of class '<em>Signs And Symptoms Observation</em>'.
-	 * <!-- begin-user-doc -->
+   * Returns a new object of class '<em>Signs And Symptoms Observation</em>'.
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Signs And Symptoms Observation</em>'.
-	 * @generated
-	 */
+   * @return a new object of class '<em>Signs And Symptoms Observation</em>'.
+   * @generated
+   */
 	SilicosisSignsAndSymptomsObservation createSilicosisSignsAndSymptomsObservation();
 
 	/**
-	 * Returns a new object of class '<em>History Of Tuberculosis Observation</em>'.
-	 * <!-- begin-user-doc -->
+   * Returns a new object of class '<em>History Of Tuberculosis Observation</em>'.
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @return a new object of class '<em>History Of Tuberculosis Observation</em>'.
-	 * @generated
-	 */
+   * @return a new object of class '<em>History Of Tuberculosis Observation</em>'.
+   * @generated
+   */
   SilicosisHistoryOfTuberculosisObservation createSilicosisHistoryOfTuberculosisObservation();
 
   /**
-	 * Returns a new object of class '<em>PHCR Relevant Dx Tests Section</em>'.
-	 * <!-- begin-user-doc -->
+   * Returns a new object of class '<em>PHCR Relevant Dx Tests Section</em>'.
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @return a new object of class '<em>PHCR Relevant Dx Tests Section</em>'.
-	 * @generated
-	 */
+   * @return a new object of class '<em>PHCR Relevant Dx Tests Section</em>'.
+   * @generated
+   */
   SilicosisPHCRRelevantDxTestsSection createSilicosisPHCRRelevantDxTestsSection();
 
   /**
-	 * Returns a new object of class '<em>Imaging Observation</em>'.
-	 * <!-- begin-user-doc -->
+   * Returns a new object of class '<em>Imaging Observation</em>'.
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Imaging Observation</em>'.
-	 * @generated
-	 */
+   * @return a new object of class '<em>Imaging Observation</em>'.
+   * @generated
+   */
   SilicosisImagingObservation createSilicosisImagingObservation();
 
   /**
-	 * Returns a new object of class '<em>Possible Exposure Location And Type Act</em>'.
-	 * <!-- begin-user-doc -->
+   * Returns a new object of class '<em>Possible Exposure Location And Type Act</em>'.
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Possible Exposure Location And Type Act</em>'.
-	 * @generated
-	 */
+   * @return a new object of class '<em>Possible Exposure Location And Type Act</em>'.
+   * @generated
+   */
 	SilicosisPossibleExposureLocationAndTypeAct createSilicosisPossibleExposureLocationAndTypeAct();
 
 	/**
-	 * Returns the package supported by this factory.
-	 * <!-- begin-user-doc -->
+   * Returns the package supported by this factory.
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the package supported by this factory.
-	 * @generated
-	 */
+   * @return the package supported by this factory.
+   * @generated
+   */
 	SilicosisPackage getSilicosisPackage();
 
 } //SilicosisFactory

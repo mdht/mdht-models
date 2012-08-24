@@ -10,6 +10,7 @@
  *******************************************************************************/
 package org.openhealthtools.mdht.uml.cda.phcr.anthrax.impl;
 
+import java.lang.Iterable;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
@@ -17,6 +18,8 @@ import org.eclipse.emf.common.util.EList;
 
 import org.eclipse.emf.ecore.EClass;
 
+import org.eclipse.emf.ecore.EObject;
+import org.openhealthtools.mdht.emf.runtime.util.Initializer;
 import org.openhealthtools.mdht.uml.cda.phcr.anthrax.AnthraxPackage;
 import org.openhealthtools.mdht.uml.cda.phcr.anthrax.AnthraxPhcrRelevantDxTestsSection;
 import org.openhealthtools.mdht.uml.cda.phcr.anthrax.AnthraxResultObservation;
@@ -39,77 +42,86 @@ import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
  */
 public class AnthraxPhcrRelevantDxTestsSectionImpl extends PhcrRelevantDxTestsSectionImpl implements AnthraxPhcrRelevantDxTestsSection {
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	protected AnthraxPhcrRelevantDxTestsSectionImpl() {
-		super();
-	}
+    super();
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	@Override
 	protected EClass eStaticClass() {
-		return AnthraxPackage.Literals.ANTHRAX_PHCR_RELEVANT_DX_TESTS_SECTION;
-	}
+    return AnthraxPackage.Literals.ANTHRAX_PHCR_RELEVANT_DX_TESTS_SECTION;
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateAnthraxPhcrRelevantDxTestsSectionAnthraxResultObservation(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return AnthraxPhcrRelevantDxTestsSectionOperations.validateAnthraxPhcrRelevantDxTestsSectionAnthraxResultObservation(this, diagnostics, context);
-	}
+    return AnthraxPhcrRelevantDxTestsSectionOperations.validateAnthraxPhcrRelevantDxTestsSectionAnthraxResultObservation(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateAnthraxPhcrRelevantDxTestsSectionAnthraxResultOrganizer(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return AnthraxPhcrRelevantDxTestsSectionOperations.validateAnthraxPhcrRelevantDxTestsSectionAnthraxResultOrganizer(this, diagnostics, context);
-	}
+    return AnthraxPhcrRelevantDxTestsSectionOperations.validateAnthraxPhcrRelevantDxTestsSectionAnthraxResultOrganizer(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public EList<AnthraxResultObservation> getAnthraxResultObservations() {
-		return AnthraxPhcrRelevantDxTestsSectionOperations.getAnthraxResultObservations(this);
-	}
+    return AnthraxPhcrRelevantDxTestsSectionOperations.getAnthraxResultObservations(this);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public EList<AnthraxResultOrganizer> getAnthraxResultOrganizers() {
-		return AnthraxPhcrRelevantDxTestsSectionOperations.getAnthraxResultOrganizers(this);
-	}
+    return AnthraxPhcrRelevantDxTestsSectionOperations.getAnthraxResultOrganizers(this);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	@Override
 	public boolean validateResultsSectionTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return AnthraxPhcrRelevantDxTestsSectionOperations.validateResultsSectionTemplateId(this, diagnostics, context);
-	}
+    return AnthraxPhcrRelevantDxTestsSectionOperations.validateResultsSectionTemplateId(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public AnthraxPhcrRelevantDxTestsSection init() {
-    	CDAUtil.init(this);
-    	return this;
-	}
+      return Initializer.Util.init(this);
+  }
+
+  /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    public AnthraxPhcrRelevantDxTestsSection init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
 } //AnthraxPhcrRelevantDxTestsSectionImpl

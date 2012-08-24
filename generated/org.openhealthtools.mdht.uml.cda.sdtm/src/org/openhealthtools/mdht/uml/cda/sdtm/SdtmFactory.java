@@ -162,6 +162,15 @@ public interface SdtmFactory extends EFactory
   PlannedStudyDay createPlannedStudyDay();
 
   /**
+   * Returns a new object of class '<em>Exclusion Reason</em>'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @return a new object of class '<em>Exclusion Reason</em>'.
+   * @generated
+   */
+  ExclusionReason createExclusionReason();
+
+  /**
    * Returns a new object of class '<em>Timing Reference</em>'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
@@ -189,24 +198,6 @@ public interface SdtmFactory extends EFactory
   ECGTestResult createECGTestResult();
 
   /**
-   * Returns a new object of class '<em>Baseline Indicator</em>'.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @return a new object of class '<em>Baseline Indicator</em>'.
-   * @generated
-   */
-  BaselineIndicator createBaselineIndicator();
-
-  /**
-   * Returns a new object of class '<em>Derived Data Indicator</em>'.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @return a new object of class '<em>Derived Data Indicator</em>'.
-   * @generated
-   */
-  DerivedDataIndicator createDerivedDataIndicator();
-
-  /**
    * Returns a new object of class '<em>Inclusionor Exclusion Criteria Not Met</em>'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
@@ -216,13 +207,13 @@ public interface SdtmFactory extends EFactory
   InclusionorExclusionCriteriaNotMet createInclusionorExclusionCriteriaNotMet();
 
   /**
-   * Returns a new object of class '<em>Non Human Laboratory Test Result</em>'.
+   * Returns a new object of class '<em>Nonhuman Laboratory Test Result</em>'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @return a new object of class '<em>Non Human Laboratory Test Result</em>'.
+   * @return a new object of class '<em>Nonhuman Laboratory Test Result</em>'.
    * @generated
    */
-  NonHumanLaboratoryTestResult createNonHumanLaboratoryTestResult();
+  NonhumanLaboratoryTestResult createNonhumanLaboratoryTestResult();
 
   /**
    * Returns a new object of class '<em>Specimen Information</em>'.
@@ -414,13 +405,13 @@ public interface SdtmFactory extends EFactory
   HumanClinicalExposure createHumanClinicalExposure();
 
   /**
-   * Returns a new object of class '<em>Study Test Performer</em>'.
+   * Returns a new object of class '<em>Study Test Organization</em>'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @return a new object of class '<em>Study Test Performer</em>'.
+   * @return a new object of class '<em>Study Test Organization</em>'.
    * @generated
    */
-  StudyTestPerformer createStudyTestPerformer();
+  StudyTestOrganization createStudyTestOrganization();
 
   /**
    * Returns a new object of class '<em>Questionnaire Finding</em>'.
@@ -450,31 +441,40 @@ public interface SdtmFactory extends EFactory
   SubjectDataNonClinicalTrials createSubjectDataNonClinicalTrials();
 
   /**
-   * Returns a new object of class '<em>Non Human Subject Data Document Body</em>'.
+   * Returns a new object of class '<em>Nonhuman Subject Data Document Body</em>'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @return a new object of class '<em>Non Human Subject Data Document Body</em>'.
+   * @return a new object of class '<em>Nonhuman Subject Data Document Body</em>'.
    * @generated
    */
-  NonHumanSubjectDataDocumentBody createNonHumanSubjectDataDocumentBody();
+  NonhumanSubjectDataDocumentBody createNonhumanSubjectDataDocumentBody();
 
   /**
-   * Returns a new object of class '<em>Non Human Exposure</em>'.
+   * Returns a new object of class '<em>Nonhuman Subject Demographics</em>'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @return a new object of class '<em>Non Human Exposure</em>'.
+   * @return a new object of class '<em>Nonhuman Subject Demographics</em>'.
    * @generated
    */
-  NonHumanExposure createNonHumanExposure();
+  NonhumanSubjectDemographics createNonhumanSubjectDemographics();
 
   /**
-   * Returns a new object of class '<em>Non Human Disposition</em>'.
+   * Returns a new object of class '<em>Nonhuman Disposition</em>'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @return a new object of class '<em>Non Human Disposition</em>'.
+   * @return a new object of class '<em>Nonhuman Disposition</em>'.
    * @generated
    */
-  NonHumanDisposition createNonHumanDisposition();
+  NonhumanDisposition createNonhumanDisposition();
+
+  /**
+   * Returns a new object of class '<em>Nonhuman Exposure</em>'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @return a new object of class '<em>Nonhuman Exposure</em>'.
+   * @generated
+   */
+  NonhumanExposure createNonhumanExposure();
 
   /**
    * Returns a new object of class '<em>Human Clinical Laboratory Test Result</em>'.
@@ -540,13 +540,13 @@ public interface SdtmFactory extends EFactory
   MacroscopicFinding createMacroscopicFinding();
 
   /**
-   * Returns a new object of class '<em>Microscopic Findings</em>'.
+   * Returns a new object of class '<em>Microscopic Finding</em>'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @return a new object of class '<em>Microscopic Findings</em>'.
+   * @return a new object of class '<em>Microscopic Finding</em>'.
    * @generated
    */
-  MicroscopicFindings createMicroscopicFindings();
+  MicroscopicFinding createMicroscopicFinding();
 
   /**
    * Returns a new object of class '<em>Organ Measurement</em>'.
@@ -583,6 +583,42 @@ public interface SdtmFactory extends EFactory
    * @generated
    */
   SubjectPool createSubjectPool();
+
+  /**
+   * Returns a new object of class '<em>Mass Identification</em>'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @return a new object of class '<em>Mass Identification</em>'.
+   * @generated
+   */
+  MassIdentification createMassIdentification();
+
+  /**
+   * Returns a new object of class '<em>Study Subject Intervention</em>'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @return a new object of class '<em>Study Subject Intervention</em>'.
+   * @generated
+   */
+  StudySubjectIntervention createStudySubjectIntervention();
+
+  /**
+   * Returns a new object of class '<em>Study Subject Event</em>'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @return a new object of class '<em>Study Subject Event</em>'.
+   * @generated
+   */
+  StudySubjectEvent createStudySubjectEvent();
+
+  /**
+   * Returns a new object of class '<em>Study Subject Finding</em>'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @return a new object of class '<em>Study Subject Finding</em>'.
+   * @generated
+   */
+  StudySubjectFinding createStudySubjectFinding();
 
   /**
    * Returns the package supported by this factory.

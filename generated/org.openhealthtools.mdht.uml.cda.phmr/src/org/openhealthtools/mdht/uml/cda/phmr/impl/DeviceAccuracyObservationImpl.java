@@ -22,12 +22,15 @@
  */
 package org.openhealthtools.mdht.uml.cda.phmr.impl;
 
+import java.lang.Iterable;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
 
 import org.eclipse.emf.ecore.EClass;
 
+import org.eclipse.emf.ecore.EObject;
+import org.openhealthtools.mdht.emf.runtime.util.Initializer;
 import org.openhealthtools.mdht.uml.cda.impl.ObservationImpl;
 
 import org.openhealthtools.mdht.uml.cda.phmr.DeviceAccuracyObservation;
@@ -48,76 +51,95 @@ import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
  */
 public class DeviceAccuracyObservationImpl extends ObservationImpl implements DeviceAccuracyObservation {
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	protected DeviceAccuracyObservationImpl() {
-		super();
-	}
+    super();
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	@Override
 	protected EClass eStaticClass() {
-		return PhmrPackage.Literals.DEVICE_ACCURACY_OBSERVATION;
-	}
+    return PhmrPackage.Literals.DEVICE_ACCURACY_OBSERVATION;
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateDeviceAccuracyObservationTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return DeviceAccuracyObservationOperations.validateDeviceAccuracyObservationTemplateId(this, diagnostics, context);
-	}
+    return DeviceAccuracyObservationOperations.validateDeviceAccuracyObservationTemplateId(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateDeviceAccuracyObservationClassCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return DeviceAccuracyObservationOperations.validateDeviceAccuracyObservationClassCode(this, diagnostics, context);
-	}
+    return DeviceAccuracyObservationOperations.validateDeviceAccuracyObservationClassCode(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public boolean validateDeviceAccuracyObservationCodeP(DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+    return DeviceAccuracyObservationOperations.validateDeviceAccuracyObservationCodeP(this, diagnostics, context);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateDeviceAccuracyObservationCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return DeviceAccuracyObservationOperations.validateDeviceAccuracyObservationCode(this, diagnostics, context);
-	}
+    return DeviceAccuracyObservationOperations.validateDeviceAccuracyObservationCode(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateDeviceAccuracyObservationMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return DeviceAccuracyObservationOperations.validateDeviceAccuracyObservationMoodCode(this, diagnostics, context);
-	}
+    return DeviceAccuracyObservationOperations.validateDeviceAccuracyObservationMoodCode(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateDeviceAccuracyObservationValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return DeviceAccuracyObservationOperations.validateDeviceAccuracyObservationValue(this, diagnostics, context);
-	}
+    return DeviceAccuracyObservationOperations.validateDeviceAccuracyObservationValue(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public DeviceAccuracyObservation init() {
-    	CDAUtil.init(this);
-    	return this;
-	}
+      return Initializer.Util.init(this);
+  }
+
+  /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    public DeviceAccuracyObservation init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
 } //DeviceAccuracyObservationImpl

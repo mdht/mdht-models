@@ -10,9 +10,12 @@
  *******************************************************************************/
 package org.openhealthtools.mdht.uml.cda.phcr.tularemia;
 
+import java.lang.Iterable;
 import java.util.Map;
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.common.util.EList;
+import org.eclipse.emf.ecore.EObject;
+import org.openhealthtools.mdht.emf.runtime.util.Initializer;
 import org.openhealthtools.mdht.uml.cda.phcr.PhcrSocialHistorySection;
 
 /**
@@ -22,40 +25,43 @@ import org.openhealthtools.mdht.uml.cda.phcr.PhcrSocialHistorySection;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.phcr.tularemia.TularemiaPackage#getTularemiaPHCRSocialHistorySection()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation templateId.root='2.16.840.1.113883.10.20.15.2.18' constraints.validation.error='TularemiaPHCRSocialHistorySectionTemplateId' constraints.validation.info='TularemiaPHCRSocialHistorySectionTularemiaPossibleExposureLocationAndTypeAct'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='TularemiaPHCRSocialHistorySectionTemplateId' templateId.root='2.16.840.1.113883.10.20.15.2.18' constraints.validation.info='TularemiaPHCRSocialHistorySectionTularemiaPossibleExposureLocationAndTypeAct'"
  * @generated
  */
 public interface TularemiaPHCRSocialHistorySection extends PhcrSocialHistorySection
 {
   /**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.entry->exists(entry : cda::Entry | not entry.act.oclIsUndefined() and entry.act.oclIsKindOf(tularemia::TularemiaPossibleExposureLocationAndTypeAct) and entry.typeCode = vocab::x_ActRelationshipEntry::DRIV)
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entry->exists(entry : cda::Entry | not entry.act.oclIsUndefined() and entry.act.oclIsKindOf(tularemia::TularemiaPossibleExposureLocationAndTypeAct) and entry.typeCode = vocab::x_ActRelationshipEntry::DRIV)'"
-	 * @generated
-	 */
+   * <!-- begin-model-doc -->
+   * @param diagnostics The chain of diagnostics to which problems are to be appended.
+   * @param context The cache of context-specific information.
+   * <!-- end-model-doc -->
+   * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entry->exists(entry : cda::Entry | not entry.act.oclIsUndefined() and entry.act.oclIsKindOf(tularemia::TularemiaPossibleExposureLocationAndTypeAct) and entry.typeCode = vocab::x_ActRelationshipEntry::DRIV)'"
+   * @generated
+   */
 	boolean validateTularemiaPHCRSocialHistorySectionTularemiaPossibleExposureLocationAndTypeAct(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(tularemia::TularemiaPossibleExposureLocationAndTypeAct)).oclAsType(tularemia::TularemiaPossibleExposureLocationAndTypeAct)
-	 * <!-- end-model-doc -->
-	 * @model kind="operation" required="true" ordered="false"
-	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(tularemia::TularemiaPossibleExposureLocationAndTypeAct)).oclAsType(tularemia::TularemiaPossibleExposureLocationAndTypeAct)'"
-	 * @generated
-	 */
+   * @model kind="operation" required="true" ordered="false"
+   *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(tularemia::TularemiaPossibleExposureLocationAndTypeAct)).oclAsType(tularemia::TularemiaPossibleExposureLocationAndTypeAct)'"
+   * @generated
+   */
 	EList<TularemiaPossibleExposureLocationAndTypeAct> getTularemiaPossibleExposureLocationAndTypeActs();
 
 		/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   public TularemiaPHCRSocialHistorySection init();
+
+    /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    public TularemiaPHCRSocialHistorySection init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // TularemiaPHCRSocialHistorySection

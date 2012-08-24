@@ -22,12 +22,15 @@
  */
 package org.openhealthtools.mdht.uml.cda.phmr.impl;
 
+import java.lang.Iterable;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
 
 import org.eclipse.emf.ecore.EClass;
 
+import org.eclipse.emf.ecore.EObject;
+import org.openhealthtools.mdht.emf.runtime.util.Initializer;
 import org.openhealthtools.mdht.uml.cda.impl.ObservationImpl;
 
 import org.openhealthtools.mdht.uml.cda.phmr.PhmrPackage;
@@ -48,76 +51,85 @@ import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
  */
 public class WaveformSamplePeriodObservationImpl extends ObservationImpl implements WaveformSamplePeriodObservation {
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	protected WaveformSamplePeriodObservationImpl() {
-		super();
-	}
+    super();
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	@Override
 	protected EClass eStaticClass() {
-		return PhmrPackage.Literals.WAVEFORM_SAMPLE_PERIOD_OBSERVATION;
-	}
+    return PhmrPackage.Literals.WAVEFORM_SAMPLE_PERIOD_OBSERVATION;
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateWaveformSamplePeriodObservationTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return WaveformSamplePeriodObservationOperations.validateWaveformSamplePeriodObservationTemplateId(this, diagnostics, context);
-	}
+    return WaveformSamplePeriodObservationOperations.validateWaveformSamplePeriodObservationTemplateId(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateWaveformSamplePeriodObservationClassCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return WaveformSamplePeriodObservationOperations.validateWaveformSamplePeriodObservationClassCode(this, diagnostics, context);
-	}
+    return WaveformSamplePeriodObservationOperations.validateWaveformSamplePeriodObservationClassCode(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateWaveformSamplePeriodObservationCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return WaveformSamplePeriodObservationOperations.validateWaveformSamplePeriodObservationCode(this, diagnostics, context);
-	}
+    return WaveformSamplePeriodObservationOperations.validateWaveformSamplePeriodObservationCode(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateWaveformSamplePeriodObservationMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return WaveformSamplePeriodObservationOperations.validateWaveformSamplePeriodObservationMoodCode(this, diagnostics, context);
-	}
+    return WaveformSamplePeriodObservationOperations.validateWaveformSamplePeriodObservationMoodCode(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateWaveformSamplePeriodObservationValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return WaveformSamplePeriodObservationOperations.validateWaveformSamplePeriodObservationValue(this, diagnostics, context);
-	}
+    return WaveformSamplePeriodObservationOperations.validateWaveformSamplePeriodObservationValue(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public WaveformSamplePeriodObservation init() {
-    	CDAUtil.init(this);
-    	return this;
-	}
+      return Initializer.Util.init(this);
+  }
+
+  /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    public WaveformSamplePeriodObservation init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
 } //WaveformSamplePeriodObservationImpl

@@ -1,13 +1,9 @@
-/*******************************************************************************
- * Copyright (c) 2012, Public Health Data Standards Consortium (PHDSC)
- * All rights reserved. This program and the accompanying materials
- * are made available under the terms of the Eclipse Public License v1.0
- * which accompanies this distribution, and is available at
- * http://www.eclipse.org/legal/epl-v10.html
+/**
+ * <copyright>
+ * </copyright>
  *
- * Contributors:
- *     PHDSC - initial API and implementation
- *******************************************************************************/
+ * $Id$
+ */
 package org.openhealthtools.mdht.uml.cda.phcr.salmonellosis.operations;
 
 import java.util.Map;
@@ -15,18 +11,25 @@ import java.util.Map;
 import org.eclipse.emf.common.util.BasicDiagnostic;
 import org.eclipse.emf.common.util.Diagnostic;
 import org.eclipse.emf.common.util.DiagnosticChain;
+
 import org.eclipse.emf.ecore.EClassifier;
+
 import org.eclipse.ocl.ParserException;
+
 import org.eclipse.ocl.ecore.Constraint;
 import org.eclipse.ocl.ecore.OCL;
+
 import org.eclipse.ocl.expressions.OCLExpression;
+
 import org.openhealthtools.mdht.uml.cda.phcr.operations.PublicHealthCaseReportOperations;
+
 import org.openhealthtools.mdht.uml.cda.phcr.salmonellosis.SalmonellosisCaseReport;
 import org.openhealthtools.mdht.uml.cda.phcr.salmonellosis.SalmonellosisPHCRClinicalInformationSection;
 import org.openhealthtools.mdht.uml.cda.phcr.salmonellosis.SalmonellosisPHCRRelevantDxTestsSection;
 import org.openhealthtools.mdht.uml.cda.phcr.salmonellosis.SalmonellosisPHCRSocialHistorySection;
 import org.openhealthtools.mdht.uml.cda.phcr.salmonellosis.SalmonellosisPackage;
 import org.openhealthtools.mdht.uml.cda.phcr.salmonellosis.SalmonellosisPlugin;
+
 import org.openhealthtools.mdht.uml.cda.phcr.salmonellosis.util.SalmonellosisValidator;
 
 /**
@@ -50,17 +53,18 @@ import org.openhealthtools.mdht.uml.cda.phcr.salmonellosis.util.SalmonellosisVal
  *
  * @generated
  */
-public class SalmonellosisCaseReportOperations extends PublicHealthCaseReportOperations {
-	/**
+public class SalmonellosisCaseReportOperations extends PublicHealthCaseReportOperations
+{
+  /**
    * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+   * <!-- end-user-doc -->
    * @generated
    */
-	protected SalmonellosisCaseReportOperations() {
+  protected SalmonellosisCaseReportOperations() {
     super();
   }
 
-	/**
+  /**
    * The cached OCL expression body for the '{@link #validateSalmonellosisCaseReportTitle(SalmonellosisCaseReport, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Salmonellosis Case Report Title</em>}' operation.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
@@ -80,12 +84,12 @@ public class SalmonellosisCaseReportOperations extends PublicHealthCaseReportOpe
    */
   
   protected static Constraint VALIDATE_SALMONELLOSIS_CASE_REPORT_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+  
 
   /**
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * (self.title.oclIsUndefined() or self.title.isNullFlavorUndefined()) implies (not self.title.oclIsUndefined() and self.title.getText() = 'Public Health Case Report -  Salmonellosis')
    * @param salmonellosisCaseReport The receiving '<em><b>Case Report</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -129,35 +133,38 @@ public class SalmonellosisCaseReportOperations extends PublicHealthCaseReportOpe
   /**
    * The cached OCL expression body for the '{@link #validateSalmonellosisCaseReportSalmonellosisSocialHistorySection(SalmonellosisCaseReport, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Salmonellosis Case Report Salmonellosis Social History Section</em>}' operation.
    * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+   * <!-- end-user-doc -->
    * @see #validateSalmonellosisCaseReportSalmonellosisSocialHistorySection(SalmonellosisCaseReport, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
    * @generated
    * @ordered
    */
-	protected static final String VALIDATE_SALMONELLOSIS_CASE_REPORT_SALMONELLOSIS_SOCIAL_HISTORY_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(salmonellosis::SalmonellosisPHCRSocialHistorySection))";
+  protected static final String VALIDATE_SALMONELLOSIS_CASE_REPORT_SALMONELLOSIS_SOCIAL_HISTORY_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(salmonellosis::SalmonellosisPHCRSocialHistorySection))";
 
-	/**
+  /**
    * The cached OCL invariant for the '{@link #validateSalmonellosisCaseReportSalmonellosisSocialHistorySection(SalmonellosisCaseReport, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Salmonellosis Case Report Salmonellosis Social History Section</em>}' invariant operation.
    * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+   * <!-- end-user-doc -->
    * @see #validateSalmonellosisCaseReportSalmonellosisSocialHistorySection(SalmonellosisCaseReport, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
    * @generated
    * @ordered
    */
-	protected static Constraint VALIDATE_SALMONELLOSIS_CASE_REPORT_SALMONELLOSIS_SOCIAL_HISTORY_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+  
+  protected static Constraint VALIDATE_SALMONELLOSIS_CASE_REPORT_SALMONELLOSIS_SOCIAL_HISTORY_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+  
 
-	/**
+  /**
    * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+   * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(salmonellosis::SalmonellosisPHCRSocialHistorySection))
    * @param salmonellosisCaseReport The receiving '<em><b>Case Report</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
    * <!-- end-model-doc -->
    * @generated
    */
-	public static  boolean validateSalmonellosisCaseReportSalmonellosisSocialHistorySection(SalmonellosisCaseReport salmonellosisCaseReport, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  
+  public static  boolean validateSalmonellosisCaseReportSalmonellosisSocialHistorySection(SalmonellosisCaseReport salmonellosisCaseReport, DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
   	  
     if (VALIDATE_SALMONELLOSIS_CASE_REPORT_SALMONELLOSIS_SOCIAL_HISTORY_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
@@ -189,38 +196,41 @@ public class SalmonellosisCaseReportOperations extends PublicHealthCaseReportOpe
     return true;
   }
 
-	/**
+  /**
    * The cached OCL expression body for the '{@link #validateSalmonellosisCaseReportSalmonellosisRelevantDxTestsSection(SalmonellosisCaseReport, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Salmonellosis Case Report Salmonellosis Relevant Dx Tests Section</em>}' operation.
    * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+   * <!-- end-user-doc -->
    * @see #validateSalmonellosisCaseReportSalmonellosisRelevantDxTestsSection(SalmonellosisCaseReport, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
    * @generated
    * @ordered
    */
-	protected static final String VALIDATE_SALMONELLOSIS_CASE_REPORT_SALMONELLOSIS_RELEVANT_DX_TESTS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(salmonellosis::SalmonellosisPHCRRelevantDxTestsSection))";
+  protected static final String VALIDATE_SALMONELLOSIS_CASE_REPORT_SALMONELLOSIS_RELEVANT_DX_TESTS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(salmonellosis::SalmonellosisPHCRRelevantDxTestsSection))";
 
-	/**
+  /**
    * The cached OCL invariant for the '{@link #validateSalmonellosisCaseReportSalmonellosisRelevantDxTestsSection(SalmonellosisCaseReport, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Salmonellosis Case Report Salmonellosis Relevant Dx Tests Section</em>}' invariant operation.
    * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+   * <!-- end-user-doc -->
    * @see #validateSalmonellosisCaseReportSalmonellosisRelevantDxTestsSection(SalmonellosisCaseReport, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
    * @generated
    * @ordered
    */
-	protected static Constraint VALIDATE_SALMONELLOSIS_CASE_REPORT_SALMONELLOSIS_RELEVANT_DX_TESTS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+  
+  protected static Constraint VALIDATE_SALMONELLOSIS_CASE_REPORT_SALMONELLOSIS_RELEVANT_DX_TESTS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+  
 
-	/**
+  /**
    * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+   * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(salmonellosis::SalmonellosisPHCRRelevantDxTestsSection))
    * @param salmonellosisCaseReport The receiving '<em><b>Case Report</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
    * <!-- end-model-doc -->
    * @generated
    */
-	public static  boolean validateSalmonellosisCaseReportSalmonellosisRelevantDxTestsSection(SalmonellosisCaseReport salmonellosisCaseReport, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  
+  public static  boolean validateSalmonellosisCaseReportSalmonellosisRelevantDxTestsSection(SalmonellosisCaseReport salmonellosisCaseReport, DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
   	  
     if (VALIDATE_SALMONELLOSIS_CASE_REPORT_SALMONELLOSIS_RELEVANT_DX_TESTS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
@@ -252,38 +262,41 @@ public class SalmonellosisCaseReportOperations extends PublicHealthCaseReportOpe
     return true;
   }
 
-	/**
+  /**
    * The cached OCL expression body for the '{@link #validateSalmonellosisCaseReportSalmonellosisPHCRClinicalInformationSection(SalmonellosisCaseReport, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Salmonellosis Case Report Salmonellosis PHCR Clinical Information Section</em>}' operation.
    * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+   * <!-- end-user-doc -->
    * @see #validateSalmonellosisCaseReportSalmonellosisPHCRClinicalInformationSection(SalmonellosisCaseReport, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
    * @generated
    * @ordered
    */
-	protected static final String VALIDATE_SALMONELLOSIS_CASE_REPORT_SALMONELLOSIS_PHCR_CLINICAL_INFORMATION_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(salmonellosis::SalmonellosisPHCRClinicalInformationSection))";
+  protected static final String VALIDATE_SALMONELLOSIS_CASE_REPORT_SALMONELLOSIS_PHCR_CLINICAL_INFORMATION_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(salmonellosis::SalmonellosisPHCRClinicalInformationSection))";
 
-	/**
+  /**
    * The cached OCL invariant for the '{@link #validateSalmonellosisCaseReportSalmonellosisPHCRClinicalInformationSection(SalmonellosisCaseReport, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Salmonellosis Case Report Salmonellosis PHCR Clinical Information Section</em>}' invariant operation.
    * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+   * <!-- end-user-doc -->
    * @see #validateSalmonellosisCaseReportSalmonellosisPHCRClinicalInformationSection(SalmonellosisCaseReport, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
    * @generated
    * @ordered
    */
-	protected static Constraint VALIDATE_SALMONELLOSIS_CASE_REPORT_SALMONELLOSIS_PHCR_CLINICAL_INFORMATION_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+  
+  protected static Constraint VALIDATE_SALMONELLOSIS_CASE_REPORT_SALMONELLOSIS_PHCR_CLINICAL_INFORMATION_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+  
 
-	/**
+  /**
    * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+   * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(salmonellosis::SalmonellosisPHCRClinicalInformationSection))
    * @param salmonellosisCaseReport The receiving '<em><b>Case Report</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
    * <!-- end-model-doc -->
    * @generated
    */
-	public static  boolean validateSalmonellosisCaseReportSalmonellosisPHCRClinicalInformationSection(SalmonellosisCaseReport salmonellosisCaseReport, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  
+  public static  boolean validateSalmonellosisCaseReportSalmonellosisPHCRClinicalInformationSection(SalmonellosisCaseReport salmonellosisCaseReport, DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
   	  
     if (VALIDATE_SALMONELLOSIS_CASE_REPORT_SALMONELLOSIS_PHCR_CLINICAL_INFORMATION_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
@@ -315,40 +328,38 @@ public class SalmonellosisCaseReportOperations extends PublicHealthCaseReportOpe
     return true;
   }
 
-	/**
+  /**
    * The cached OCL expression body for the '{@link #getSalmonellosisSocialHistorySection(SalmonellosisCaseReport) <em>Get Salmonellosis Social History Section</em>}' operation.
    * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+   * <!-- end-user-doc -->
    * @see #getSalmonellosisSocialHistorySection(SalmonellosisCaseReport)
    * @generated
    * @ordered
    */
-	protected static final String GET_SALMONELLOSIS_SOCIAL_HISTORY_SECTION__EOCL_EXP = "self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(salmselectllosis::SalmselectllosisPHCRSocialHistorySection))->asSequence()->first().oclAsType(salmonellosis::SalmonellosisPHCRSocialHistorySection)";
+  protected static final String GET_SALMONELLOSIS_SOCIAL_HISTORY_SECTION__EOCL_EXP = "self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(salmselectllosis::SalmselectllosisPHCRSocialHistorySection))->asSequence()->any(true).oclAsType(salmonellosis::SalmonellosisPHCRSocialHistorySection)";
 
-	/**
+  /**
    * The cached OCL query for the '{@link #getSalmonellosisSocialHistorySection(SalmonellosisCaseReport) <em>Get Salmonellosis Social History Section</em>}' query operation.
    * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+   * <!-- end-user-doc -->
    * @see #getSalmonellosisSocialHistorySection(SalmonellosisCaseReport)
    * @generated
    * @ordered
    */
-	protected static OCLExpression<EClassifier> GET_SALMONELLOSIS_SOCIAL_HISTORY_SECTION__EOCL_QRY;
+  protected static OCLExpression<EClassifier> GET_SALMONELLOSIS_SOCIAL_HISTORY_SECTION__EOCL_QRY;
 
-	/**
+  /**
    * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-   * <!-- begin-model-doc -->
-   * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(salmselectllosis::SalmselectllosisPHCRSocialHistorySection))->asSequence()->first().oclAsType(salmonellosis::SalmonellosisPHCRSocialHistorySection)
-   * @param salmonellosisCaseReport The receiving '<em><b>Case Report</b></em>' model object.
-   * <!-- end-model-doc -->
+   * <!-- end-user-doc -->
    * @generated
    */
-	public static  SalmonellosisPHCRSocialHistorySection getSalmonellosisSocialHistorySection(SalmonellosisCaseReport salmonellosisCaseReport) {
+  
+  public static  SalmonellosisPHCRSocialHistorySection getSalmonellosisSocialHistorySection(SalmonellosisCaseReport salmonellosisCaseReport)
+  {
     if (GET_SALMONELLOSIS_SOCIAL_HISTORY_SECTION__EOCL_QRY == null)
     {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
-      helper.setOperationContext(SalmonellosisPackage.Literals.SALMONELLOSIS_CASE_REPORT, SalmonellosisPackage.Literals.SALMONELLOSIS_CASE_REPORT.getEAllOperations().get(63));
+      helper.setOperationContext(SalmonellosisPackage.Literals.SALMONELLOSIS_CASE_REPORT, SalmonellosisPackage.Literals.SALMONELLOSIS_CASE_REPORT.getEAllOperations().get(64));
       try
       {
         GET_SALMONELLOSIS_SOCIAL_HISTORY_SECTION__EOCL_QRY = helper.createQuery(GET_SALMONELLOSIS_SOCIAL_HISTORY_SECTION__EOCL_EXP);
@@ -362,40 +373,38 @@ public class SalmonellosisCaseReportOperations extends PublicHealthCaseReportOpe
     return (SalmonellosisPHCRSocialHistorySection) query.evaluate(salmonellosisCaseReport);
   }
 
-	/**
+  /**
    * The cached OCL expression body for the '{@link #getSalmonellosisRelevantDxTestsSection(SalmonellosisCaseReport) <em>Get Salmonellosis Relevant Dx Tests Section</em>}' operation.
    * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+   * <!-- end-user-doc -->
    * @see #getSalmonellosisRelevantDxTestsSection(SalmonellosisCaseReport)
    * @generated
    * @ordered
    */
-	protected static final String GET_SALMONELLOSIS_RELEVANT_DX_TESTS_SECTION__EOCL_EXP = "self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(salmselectllosis::SalmselectllosisPHCRRelevantDxTestsSection))->asSequence()->first().oclAsType(salmonellosis::SalmonellosisPHCRRelevantDxTestsSection)";
+  protected static final String GET_SALMONELLOSIS_RELEVANT_DX_TESTS_SECTION__EOCL_EXP = "self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(salmselectllosis::SalmselectllosisPHCRRelevantDxTestsSection))->asSequence()->any(true).oclAsType(salmonellosis::SalmonellosisPHCRRelevantDxTestsSection)";
 
-	/**
+  /**
    * The cached OCL query for the '{@link #getSalmonellosisRelevantDxTestsSection(SalmonellosisCaseReport) <em>Get Salmonellosis Relevant Dx Tests Section</em>}' query operation.
    * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+   * <!-- end-user-doc -->
    * @see #getSalmonellosisRelevantDxTestsSection(SalmonellosisCaseReport)
    * @generated
    * @ordered
    */
-	protected static OCLExpression<EClassifier> GET_SALMONELLOSIS_RELEVANT_DX_TESTS_SECTION__EOCL_QRY;
+  protected static OCLExpression<EClassifier> GET_SALMONELLOSIS_RELEVANT_DX_TESTS_SECTION__EOCL_QRY;
 
-	/**
+  /**
    * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-   * <!-- begin-model-doc -->
-   * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(salmselectllosis::SalmselectllosisPHCRRelevantDxTestsSection))->asSequence()->first().oclAsType(salmonellosis::SalmonellosisPHCRRelevantDxTestsSection)
-   * @param salmonellosisCaseReport The receiving '<em><b>Case Report</b></em>' model object.
-   * <!-- end-model-doc -->
+   * <!-- end-user-doc -->
    * @generated
    */
-	public static  SalmonellosisPHCRRelevantDxTestsSection getSalmonellosisRelevantDxTestsSection(SalmonellosisCaseReport salmonellosisCaseReport) {
+  
+  public static  SalmonellosisPHCRRelevantDxTestsSection getSalmonellosisRelevantDxTestsSection(SalmonellosisCaseReport salmonellosisCaseReport)
+  {
     if (GET_SALMONELLOSIS_RELEVANT_DX_TESTS_SECTION__EOCL_QRY == null)
     {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
-      helper.setOperationContext(SalmonellosisPackage.Literals.SALMONELLOSIS_CASE_REPORT, SalmonellosisPackage.Literals.SALMONELLOSIS_CASE_REPORT.getEAllOperations().get(64));
+      helper.setOperationContext(SalmonellosisPackage.Literals.SALMONELLOSIS_CASE_REPORT, SalmonellosisPackage.Literals.SALMONELLOSIS_CASE_REPORT.getEAllOperations().get(65));
       try
       {
         GET_SALMONELLOSIS_RELEVANT_DX_TESTS_SECTION__EOCL_QRY = helper.createQuery(GET_SALMONELLOSIS_RELEVANT_DX_TESTS_SECTION__EOCL_EXP);
@@ -409,40 +418,38 @@ public class SalmonellosisCaseReportOperations extends PublicHealthCaseReportOpe
     return (SalmonellosisPHCRRelevantDxTestsSection) query.evaluate(salmonellosisCaseReport);
   }
 
-	/**
+  /**
    * The cached OCL expression body for the '{@link #getSalmonellosisPHCRClinicalInformationSection(SalmonellosisCaseReport) <em>Get Salmonellosis PHCR Clinical Information Section</em>}' operation.
    * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+   * <!-- end-user-doc -->
    * @see #getSalmonellosisPHCRClinicalInformationSection(SalmonellosisCaseReport)
    * @generated
    * @ordered
    */
-	protected static final String GET_SALMONELLOSIS_PHCR_CLINICAL_INFORMATION_SECTION__EOCL_EXP = "self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(salmselectllosis::SalmselectllosisPHCRClinicalInformationSection))->asSequence()->first().oclAsType(salmonellosis::SalmonellosisPHCRClinicalInformationSection)";
+  protected static final String GET_SALMONELLOSIS_PHCR_CLINICAL_INFORMATION_SECTION__EOCL_EXP = "self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(salmselectllosis::SalmselectllosisPHCRClinicalInformationSection))->asSequence()->any(true).oclAsType(salmonellosis::SalmonellosisPHCRClinicalInformationSection)";
 
-	/**
+  /**
    * The cached OCL query for the '{@link #getSalmonellosisPHCRClinicalInformationSection(SalmonellosisCaseReport) <em>Get Salmonellosis PHCR Clinical Information Section</em>}' query operation.
    * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+   * <!-- end-user-doc -->
    * @see #getSalmonellosisPHCRClinicalInformationSection(SalmonellosisCaseReport)
    * @generated
    * @ordered
    */
-	protected static OCLExpression<EClassifier> GET_SALMONELLOSIS_PHCR_CLINICAL_INFORMATION_SECTION__EOCL_QRY;
+  protected static OCLExpression<EClassifier> GET_SALMONELLOSIS_PHCR_CLINICAL_INFORMATION_SECTION__EOCL_QRY;
 
-	/**
+  /**
    * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-   * <!-- begin-model-doc -->
-   * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(salmselectllosis::SalmselectllosisPHCRClinicalInformationSection))->asSequence()->first().oclAsType(salmonellosis::SalmonellosisPHCRClinicalInformationSection)
-   * @param salmonellosisCaseReport The receiving '<em><b>Case Report</b></em>' model object.
-   * <!-- end-model-doc -->
+   * <!-- end-user-doc -->
    * @generated
    */
-	public static  SalmonellosisPHCRClinicalInformationSection getSalmonellosisPHCRClinicalInformationSection(SalmonellosisCaseReport salmonellosisCaseReport) {
+  
+  public static  SalmonellosisPHCRClinicalInformationSection getSalmonellosisPHCRClinicalInformationSection(SalmonellosisCaseReport salmonellosisCaseReport)
+  {
     if (GET_SALMONELLOSIS_PHCR_CLINICAL_INFORMATION_SECTION__EOCL_QRY == null)
     {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
-      helper.setOperationContext(SalmonellosisPackage.Literals.SALMONELLOSIS_CASE_REPORT, SalmonellosisPackage.Literals.SALMONELLOSIS_CASE_REPORT.getEAllOperations().get(65));
+      helper.setOperationContext(SalmonellosisPackage.Literals.SALMONELLOSIS_CASE_REPORT, SalmonellosisPackage.Literals.SALMONELLOSIS_CASE_REPORT.getEAllOperations().get(66));
       try
       {
         GET_SALMONELLOSIS_PHCR_CLINICAL_INFORMATION_SECTION__EOCL_QRY = helper.createQuery(GET_SALMONELLOSIS_PHCR_CLINICAL_INFORMATION_SECTION__EOCL_EXP);
@@ -456,38 +463,41 @@ public class SalmonellosisCaseReportOperations extends PublicHealthCaseReportOpe
     return (SalmonellosisPHCRClinicalInformationSection) query.evaluate(salmonellosisCaseReport);
   }
 
-	/**
+  /**
    * The cached OCL expression body for the '{@link #validatePublicHealthCaseReportTemplateId(SalmonellosisCaseReport, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Public Health Case Report Template Id</em>}' operation.
    * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+   * <!-- end-user-doc -->
    * @see #validatePublicHealthCaseReportTemplateId(SalmonellosisCaseReport, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
    * @generated
    * @ordered
    */
-	protected static final String VALIDATE_PUBLIC_HEALTH_CASE_REPORT_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.15.1.9')";
+  protected static final String VALIDATE_PUBLIC_HEALTH_CASE_REPORT_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.15.1.9')";
 
-	/**
+  /**
    * The cached OCL invariant for the '{@link #validatePublicHealthCaseReportTemplateId(SalmonellosisCaseReport, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Public Health Case Report Template Id</em>}' invariant operation.
    * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+   * <!-- end-user-doc -->
    * @see #validatePublicHealthCaseReportTemplateId(SalmonellosisCaseReport, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
    * @generated
    * @ordered
    */
-	protected static Constraint VALIDATE_PUBLIC_HEALTH_CASE_REPORT_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+  
+  protected static Constraint VALIDATE_PUBLIC_HEALTH_CASE_REPORT_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+  
 
-	/**
+  /**
    * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+   * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.15.1.9')
    * @param salmonellosisCaseReport The receiving '<em><b>Case Report</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
    * <!-- end-model-doc -->
    * @generated
    */
-	public static  boolean validatePublicHealthCaseReportTemplateId(SalmonellosisCaseReport salmonellosisCaseReport, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  
+  public static  boolean validatePublicHealthCaseReportTemplateId(SalmonellosisCaseReport salmonellosisCaseReport, DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
   	  
     if (VALIDATE_PUBLIC_HEALTH_CASE_REPORT_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();

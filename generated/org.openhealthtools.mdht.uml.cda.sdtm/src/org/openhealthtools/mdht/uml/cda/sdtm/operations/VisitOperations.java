@@ -33,6 +33,7 @@ import org.openhealthtools.mdht.uml.cda.sdtm.FindingAbout;
 import org.openhealthtools.mdht.uml.cda.sdtm.InclusionorExclusionCriteriaNotMet;
 import org.openhealthtools.mdht.uml.cda.sdtm.MicrobiologySpecimenFinding;
 import org.openhealthtools.mdht.uml.cda.sdtm.MicrobiologySusceptibility;
+import org.openhealthtools.mdht.uml.cda.sdtm.NonhumanLaboratoryTestResult;
 import org.openhealthtools.mdht.uml.cda.sdtm.NonHumanLaboratoryTestResult;
 import org.openhealthtools.mdht.uml.cda.sdtm.PharmacokineticConcentrationFinding;
 import org.openhealthtools.mdht.uml.cda.sdtm.PhysicalExaminationFinding;
@@ -130,7 +131,6 @@ public class VisitOperations extends ClinicalStatementOperations
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.23.18')
    * @param visit The receiving '<em><b>Visit</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -140,6 +140,7 @@ public class VisitOperations extends ClinicalStatementOperations
   
   public static  boolean validateVisitTemplateId(Visit visit, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
+  	  
     if (VALIDATE_VISIT_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(SdtmPackage.Literals.VISIT);
@@ -164,6 +165,7 @@ public class VisitOperations extends ClinicalStatementOperations
              SdtmPlugin.INSTANCE.getString("VisitTemplateId"),
              new Object [] { visit }));
       }
+       
       return false;
     }
     return true;
@@ -195,7 +197,6 @@ public class VisitOperations extends ClinicalStatementOperations
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.classCode=vocab::ActClass::ENC
    * @param visit The receiving '<em><b>Visit</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -205,6 +206,7 @@ public class VisitOperations extends ClinicalStatementOperations
   
   public static  boolean validateVisitClassCode(Visit visit, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
+  	  
     if (VALIDATE_VISIT_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(SdtmPackage.Literals.VISIT);
@@ -229,6 +231,7 @@ public class VisitOperations extends ClinicalStatementOperations
              SdtmPlugin.INSTANCE.getString("VisitClassCode"),
              new Object [] { visit }));
       }
+       
       return false;
     }
     return true;
@@ -260,7 +263,6 @@ public class VisitOperations extends ClinicalStatementOperations
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * (self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined())
    * @param visit The receiving '<em><b>Visit</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -270,6 +272,7 @@ public class VisitOperations extends ClinicalStatementOperations
   
   public static  boolean validateVisitCode(Visit visit, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
+  	  
     if (VALIDATE_VISIT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(SdtmPackage.Literals.VISIT);
@@ -294,6 +297,7 @@ public class VisitOperations extends ClinicalStatementOperations
              SdtmPlugin.INSTANCE.getString("VisitCode"),
              new Object [] { visit }));
       }
+       
       return false;
     }
     return true;
@@ -325,7 +329,6 @@ public class VisitOperations extends ClinicalStatementOperations
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * (self.effectiveTime.oclIsUndefined() or self.effectiveTime.isNullFlavorUndefined()) implies (not self.effectiveTime.oclIsUndefined())
    * @param visit The receiving '<em><b>Visit</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -335,6 +338,7 @@ public class VisitOperations extends ClinicalStatementOperations
   
   public static  boolean validateVisitEffectiveTime(Visit visit, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
+  	  
     if (VALIDATE_VISIT_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(SdtmPackage.Literals.VISIT);
@@ -359,6 +363,7 @@ public class VisitOperations extends ClinicalStatementOperations
              SdtmPlugin.INSTANCE.getString("VisitEffectiveTime"),
              new Object [] { visit }));
       }
+       
       return false;
     }
     return true;
@@ -390,7 +395,6 @@ public class VisitOperations extends ClinicalStatementOperations
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.moodCode=vocab::x_DocumentEncounterMood::EVN
    * @param visit The receiving '<em><b>Visit</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -400,6 +404,7 @@ public class VisitOperations extends ClinicalStatementOperations
   
   public static  boolean validateVisitMoodCode(Visit visit, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
+  	  
     if (VALIDATE_VISIT_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(SdtmPackage.Literals.VISIT);
@@ -424,6 +429,7 @@ public class VisitOperations extends ClinicalStatementOperations
              SdtmPlugin.INSTANCE.getString("VisitMoodCode"),
              new Object [] { visit }));
       }
+       
       return false;
     }
     return true;
@@ -455,7 +461,6 @@ public class VisitOperations extends ClinicalStatementOperations
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * (self.text.oclIsUndefined() or self.text.isNullFlavorUndefined()) implies (not self.text.oclIsUndefined())
    * @param visit The receiving '<em><b>Visit</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -465,6 +470,7 @@ public class VisitOperations extends ClinicalStatementOperations
   
   public static  boolean validateVisitText(Visit visit, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
+  	  
     if (VALIDATE_VISIT_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(SdtmPackage.Literals.VISIT);
@@ -489,6 +495,7 @@ public class VisitOperations extends ClinicalStatementOperations
              SdtmPlugin.INSTANCE.getString("VisitText"),
              new Object [] { visit }));
       }
+       
       return false;
     }
     return true;
@@ -520,7 +527,6 @@ public class VisitOperations extends ClinicalStatementOperations
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * (self.id->isEmpty() or self.id->exists(element | element.isNullFlavorUndefined())) implies (self.id->size() = 1)
    * @param visit The receiving '<em><b>Visit</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -530,6 +536,7 @@ public class VisitOperations extends ClinicalStatementOperations
   
   public static  boolean validateVisitId(Visit visit, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
+  	  
     if (VALIDATE_VISIT_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(SdtmPackage.Literals.VISIT);
@@ -554,6 +561,7 @@ public class VisitOperations extends ClinicalStatementOperations
              SdtmPlugin.INSTANCE.getString("VisitId"),
              new Object [] { visit }));
       }
+       
       return false;
     }
     return true;
@@ -585,7 +593,6 @@ public class VisitOperations extends ClinicalStatementOperations
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.entryRelationship->exists(entryRelationship : cda::EntryRelationship | not entryRelationship.observation.oclIsUndefined() and entryRelationship.observation.oclIsKindOf(sdtm::Adverse Event) and entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::COMP)
    * @param visit The receiving '<em><b>Visit</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -595,6 +602,7 @@ public class VisitOperations extends ClinicalStatementOperations
   
   public static  boolean validateVisitHumanClinicalAdverseEvent(Visit visit, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
+  	  
     if (VALIDATE_VISIT_HUMAN_CLINICAL_ADVERSE_EVENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(SdtmPackage.Literals.VISIT);
@@ -619,6 +627,7 @@ public class VisitOperations extends ClinicalStatementOperations
              org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "VisitHumanClinicalAdverseEvent", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(visit, context) }),
              new Object [] { visit }));
       }
+       
       return false;
     }
     return true;
@@ -650,7 +659,6 @@ public class VisitOperations extends ClinicalStatementOperations
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.entryRelationship->exists(entryRelationship : cda::EntryRelationship | not entryRelationship.observation.oclIsUndefined() and entryRelationship.observation.oclIsKindOf(sdtm::Vital Sign) and entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::COMP)
    * @param visit The receiving '<em><b>Visit</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -660,6 +668,7 @@ public class VisitOperations extends ClinicalStatementOperations
   
   public static  boolean validateVisitHumanClinicalVitalSign(Visit visit, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
+  	  
     if (VALIDATE_VISIT_HUMAN_CLINICAL_VITAL_SIGN__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(SdtmPackage.Literals.VISIT);
@@ -684,6 +693,7 @@ public class VisitOperations extends ClinicalStatementOperations
              org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "VisitHumanClinicalVitalSign", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(visit, context) }),
              new Object [] { visit }));
       }
+       
       return false;
     }
     return true;
@@ -715,7 +725,6 @@ public class VisitOperations extends ClinicalStatementOperations
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.entryRelationship->one(entryRelationship : cda::EntryRelationship | not entryRelationship.observation.oclIsUndefined() and entryRelationship.observation.oclIsKindOf(sdtm::Planned Study Day) and entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::REFR)
    * @param visit The receiving '<em><b>Visit</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -725,6 +734,7 @@ public class VisitOperations extends ClinicalStatementOperations
   
   public static  boolean validateVisitPlannedStudyDay(Visit visit, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
+  	  
     if (VALIDATE_VISIT_PLANNED_STUDY_DAY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(SdtmPackage.Literals.VISIT);
@@ -749,6 +759,7 @@ public class VisitOperations extends ClinicalStatementOperations
              org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "VisitPlannedStudyDay", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(visit, context) }),
              new Object [] { visit }));
       }
+       
       return false;
     }
     return true;
@@ -780,7 +791,6 @@ public class VisitOperations extends ClinicalStatementOperations
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.entryRelationship->exists(entryRelationship : cda::EntryRelationship | not entryRelationship.oclIsUndefined() and entryRelationship.oclIsKindOf(cda::EntryRelationship))
    * @param visit The receiving '<em><b>Visit</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -790,6 +800,7 @@ public class VisitOperations extends ClinicalStatementOperations
   
   public static  boolean validateVisitConcommitantMedicationAssociation(Visit visit, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
+  	  
     if (VALIDATE_VISIT_CONCOMMITANT_MEDICATION_ASSOCIATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(SdtmPackage.Literals.VISIT);
@@ -814,6 +825,7 @@ public class VisitOperations extends ClinicalStatementOperations
              SdtmPlugin.INSTANCE.getString("VisitConcommitantMedicationAssociation"),
              new Object [] { visit }));
       }
+       
       return false;
     }
     return true;
@@ -845,7 +857,6 @@ public class VisitOperations extends ClinicalStatementOperations
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.entryRelationship->exists(entryRelationship : cda::EntryRelationship | not entryRelationship.observation.oclIsUndefined() and entryRelationship.observation.oclIsKindOf(sdtm::ECG Test Result) and entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::COMP)
    * @param visit The receiving '<em><b>Visit</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -855,6 +866,7 @@ public class VisitOperations extends ClinicalStatementOperations
   
   public static  boolean validateVisitECGTestResult(Visit visit, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
+  	  
     if (VALIDATE_VISIT_ECG_TEST_RESULT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(SdtmPackage.Literals.VISIT);
@@ -879,6 +891,7 @@ public class VisitOperations extends ClinicalStatementOperations
              org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "VisitECGTestResult", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(visit, context) }),
              new Object [] { visit }));
       }
+       
       return false;
     }
     return true;
@@ -910,7 +923,6 @@ public class VisitOperations extends ClinicalStatementOperations
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.entryRelationship->exists(entryRelationship : cda::EntryRelationship | not entryRelationship.observation.oclIsUndefined() and entryRelationship.observation.oclIsKindOf(sdtm::Inclusion or Exclusion Criteria Not Met) and entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::COMP)
    * @param visit The receiving '<em><b>Visit</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -920,6 +932,7 @@ public class VisitOperations extends ClinicalStatementOperations
   
   public static  boolean validateVisitInclusionorExclusionCriteriaNotMet(Visit visit, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
+  	  
     if (VALIDATE_VISIT_INCLUSIONOR_EXCLUSION_CRITERIA_NOT_MET__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(SdtmPackage.Literals.VISIT);
@@ -944,6 +957,7 @@ public class VisitOperations extends ClinicalStatementOperations
              org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "VisitInclusionorExclusionCriteriaNotMet", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(visit, context) }),
              new Object [] { visit }));
       }
+       
       return false;
     }
     return true;
@@ -957,7 +971,7 @@ public class VisitOperations extends ClinicalStatementOperations
    * @generated
    * @ordered
    */
-  protected static final String VALIDATE_VISIT_LABORATORY_TEST_RESULT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entryRelationship->exists(entryRelationship : cda::EntryRelationship | not entryRelationship.observation.oclIsUndefined() and entryRelationship.observation.oclIsKindOf(sdtm::Non-Human Laboratory Test Result) and entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::COMP)";
+  protected static final String VALIDATE_VISIT_LABORATORY_TEST_RESULT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entryRelationship->exists(entryRelationship : cda::EntryRelationship | not entryRelationship.observation.oclIsUndefined() and entryRelationship.observation.oclIsKindOf(sdtm::Non-human Laboratory Test Result) and entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::COMP)";
 
   /**
    * The cached OCL invariant for the '{@link #validateVisitLaboratoryTestResult(Visit, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Visit Laboratory Test Result</em>}' invariant operation.
@@ -975,7 +989,6 @@ public class VisitOperations extends ClinicalStatementOperations
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.entryRelationship->exists(entryRelationship : cda::EntryRelationship | not entryRelationship.observation.oclIsUndefined() and entryRelationship.observation.oclIsKindOf(sdtm::Non-Human Laboratory Test Result) and entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::COMP)
    * @param visit The receiving '<em><b>Visit</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -985,6 +998,7 @@ public class VisitOperations extends ClinicalStatementOperations
   
   public static  boolean validateVisitLaboratoryTestResult(Visit visit, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
+  	  
     if (VALIDATE_VISIT_LABORATORY_TEST_RESULT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(SdtmPackage.Literals.VISIT);
@@ -1009,6 +1023,7 @@ public class VisitOperations extends ClinicalStatementOperations
              org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "VisitLaboratoryTestResult", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(visit, context) }),
              new Object [] { visit }));
       }
+       
       return false;
     }
     return true;
@@ -1040,7 +1055,6 @@ public class VisitOperations extends ClinicalStatementOperations
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.entryRelationship->exists(entryRelationship : cda::EntryRelationship | not entryRelationship.observation.oclIsUndefined() and entryRelationship.observation.oclIsKindOf(sdtm::Physical Examination Finding) and entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::COMP)
    * @param visit The receiving '<em><b>Visit</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -1050,6 +1064,7 @@ public class VisitOperations extends ClinicalStatementOperations
   
   public static  boolean validateVisitPhysicalExamination(Visit visit, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
+  	  
     if (VALIDATE_VISIT_PHYSICAL_EXAMINATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(SdtmPackage.Literals.VISIT);
@@ -1074,6 +1089,7 @@ public class VisitOperations extends ClinicalStatementOperations
              org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "VisitPhysicalExamination", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(visit, context) }),
              new Object [] { visit }));
       }
+       
       return false;
     }
     return true;
@@ -1105,7 +1121,6 @@ public class VisitOperations extends ClinicalStatementOperations
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.entryRelationship->one(entryRelationship : cda::EntryRelationship | not entryRelationship.oclIsUndefined() and entryRelationship.oclIsKindOf(cda::EntryRelationship))
    * @param visit The receiving '<em><b>Visit</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -1115,6 +1130,7 @@ public class VisitOperations extends ClinicalStatementOperations
   
   public static  boolean validateVisitSubstanceUseAssociation(Visit visit, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
+  	  
     if (VALIDATE_VISIT_SUBSTANCE_USE_ASSOCIATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(SdtmPackage.Literals.VISIT);
@@ -1139,6 +1155,7 @@ public class VisitOperations extends ClinicalStatementOperations
              SdtmPlugin.INSTANCE.getString("VisitSubstanceUseAssociation"),
              new Object [] { visit }));
       }
+       
       return false;
     }
     return true;
@@ -1170,7 +1187,6 @@ public class VisitOperations extends ClinicalStatementOperations
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.entryRelationship->one(entryRelationship : cda::EntryRelationship | not entryRelationship.observation.oclIsUndefined() and entryRelationship.observation.oclIsKindOf(sdtm::Microbiology Specimen Finding))
    * @param visit The receiving '<em><b>Visit</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -1180,6 +1196,7 @@ public class VisitOperations extends ClinicalStatementOperations
   
   public static  boolean validateVisitMicrobiologySpecimen(Visit visit, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
+  	  
     if (VALIDATE_VISIT_MICROBIOLOGY_SPECIMEN__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(SdtmPackage.Literals.VISIT);
@@ -1204,6 +1221,7 @@ public class VisitOperations extends ClinicalStatementOperations
              org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "VisitMicrobiologySpecimen", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(visit, context) }),
              new Object [] { visit }));
       }
+       
       return false;
     }
     return true;
@@ -1235,7 +1253,6 @@ public class VisitOperations extends ClinicalStatementOperations
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.entryRelationship->one(entryRelationship : cda::EntryRelationship | not entryRelationship.observation.oclIsUndefined() and entryRelationship.observation.oclIsKindOf(sdtm::Microbiology Susceptibility))
    * @param visit The receiving '<em><b>Visit</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -1245,6 +1262,7 @@ public class VisitOperations extends ClinicalStatementOperations
   
   public static  boolean validateVisitMicrobiologySusceptibility(Visit visit, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
+  	  
     if (VALIDATE_VISIT_MICROBIOLOGY_SUSCEPTIBILITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(SdtmPackage.Literals.VISIT);
@@ -1269,6 +1287,7 @@ public class VisitOperations extends ClinicalStatementOperations
              org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "VisitMicrobiologySusceptibility", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(visit, context) }),
              new Object [] { visit }));
       }
+       
       return false;
     }
     return true;
@@ -1300,7 +1319,6 @@ public class VisitOperations extends ClinicalStatementOperations
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.entryRelationship->one(entryRelationship : cda::EntryRelationship | not entryRelationship.observation.oclIsUndefined() and entryRelationship.observation.oclIsKindOf(sdtm::Pharmacokinetic Concentration Finding))
    * @param visit The receiving '<em><b>Visit</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -1310,6 +1328,7 @@ public class VisitOperations extends ClinicalStatementOperations
   
   public static  boolean validateVisitPharmacokineticConcentrationFinding(Visit visit, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
+  	  
     if (VALIDATE_VISIT_PHARMACOKINETIC_CONCENTRATION_FINDING__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(SdtmPackage.Literals.VISIT);
@@ -1334,6 +1353,7 @@ public class VisitOperations extends ClinicalStatementOperations
              org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "VisitPharmacokineticConcentrationFinding", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(visit, context) }),
              new Object [] { visit }));
       }
+       
       return false;
     }
     return true;
@@ -1365,7 +1385,6 @@ public class VisitOperations extends ClinicalStatementOperations
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.entryRelationship->one(entryRelationship : cda::EntryRelationship | not entryRelationship.observation.oclIsUndefined() and entryRelationship.observation.oclIsKindOf(sdtm::Finding About))
    * @param visit The receiving '<em><b>Visit</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -1375,6 +1394,7 @@ public class VisitOperations extends ClinicalStatementOperations
   
   public static  boolean validateVisitFindingAbout(Visit visit, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
+  	  
     if (VALIDATE_VISIT_FINDING_ABOUT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(SdtmPackage.Literals.VISIT);
@@ -1399,6 +1419,7 @@ public class VisitOperations extends ClinicalStatementOperations
              org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "VisitFindingAbout", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(visit, context) }),
              new Object [] { visit }));
       }
+       
       return false;
     }
     return true;
@@ -1430,7 +1451,6 @@ public class VisitOperations extends ClinicalStatementOperations
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.entryRelationship->one(entryRelationship : cda::EntryRelationship | not entryRelationship.observation.oclIsUndefined() and entryRelationship.observation.oclIsKindOf(sdtm::Drug Accountability) and entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::COMP)
    * @param visit The receiving '<em><b>Visit</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -1440,6 +1460,7 @@ public class VisitOperations extends ClinicalStatementOperations
   
   public static  boolean validateVisitDrugAccountability(Visit visit, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
+  	  
     if (VALIDATE_VISIT_DRUG_ACCOUNTABILITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(SdtmPackage.Literals.VISIT);
@@ -1464,6 +1485,7 @@ public class VisitOperations extends ClinicalStatementOperations
              org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "VisitDrugAccountability", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(visit, context) }),
              new Object [] { visit }));
       }
+       
       return false;
     }
     return true;
@@ -1495,7 +1517,6 @@ public class VisitOperations extends ClinicalStatementOperations
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.entryRelationship->one(entryRelationship : cda::EntryRelationship | not entryRelationship.observation.oclIsUndefined() and entryRelationship.observation.oclIsKindOf(sdtm::Study Day Period) and entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::REFR)
    * @param visit The receiving '<em><b>Visit</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -1505,6 +1526,7 @@ public class VisitOperations extends ClinicalStatementOperations
   
   public static  boolean validateVisitStudyDayPeriod(Visit visit, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
+  	  
     if (VALIDATE_VISIT_STUDY_DAY_PERIOD__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(SdtmPackage.Literals.VISIT);
@@ -1529,6 +1551,7 @@ public class VisitOperations extends ClinicalStatementOperations
              org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "VisitStudyDayPeriod", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(visit, context) }),
              new Object [] { visit }));
       }
+       
       return false;
     }
     return true;
@@ -1557,10 +1580,6 @@ public class VisitOperations extends ClinicalStatementOperations
   /**
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * <!-- begin-model-doc -->
-   * self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(sdtm::Adverse Event)).oclAsType(sdtm::Adverse Event)
-   * @param visit The receiving '<em><b>Visit</b></em>' model object.
-   * <!-- end-model-doc -->
    * @generated
    */
   
@@ -1569,7 +1588,7 @@ public class VisitOperations extends ClinicalStatementOperations
     if (GET_HUMAN_CLINICAL_ADVERSE_EVENTS__EOCL_QRY == null)
     {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
-      helper.setOperationContext(SdtmPackage.Literals.VISIT, SdtmPackage.Literals.VISIT.getEAllOperations().get(71));
+      helper.setOperationContext(SdtmPackage.Literals.VISIT, SdtmPackage.Literals.VISIT.getEAllOperations().get(73));
       try
       {
         GET_HUMAN_CLINICAL_ADVERSE_EVENTS__EOCL_QRY = helper.createQuery(GET_HUMAN_CLINICAL_ADVERSE_EVENTS__EOCL_EXP);
@@ -1608,10 +1627,6 @@ public class VisitOperations extends ClinicalStatementOperations
   /**
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * <!-- begin-model-doc -->
-   * self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(sdtm::Vital Sign)).oclAsType(sdtm::Vital Sign)
-   * @param visit The receiving '<em><b>Visit</b></em>' model object.
-   * <!-- end-model-doc -->
    * @generated
    */
   
@@ -1620,7 +1635,7 @@ public class VisitOperations extends ClinicalStatementOperations
     if (GET_HUMAN_CLINICAL_VITAL_SIGNS__EOCL_QRY == null)
     {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
-      helper.setOperationContext(SdtmPackage.Literals.VISIT, SdtmPackage.Literals.VISIT.getEAllOperations().get(72));
+      helper.setOperationContext(SdtmPackage.Literals.VISIT, SdtmPackage.Literals.VISIT.getEAllOperations().get(74));
       try
       {
         GET_HUMAN_CLINICAL_VITAL_SIGNS__EOCL_QRY = helper.createQuery(GET_HUMAN_CLINICAL_VITAL_SIGNS__EOCL_EXP);
@@ -1644,7 +1659,7 @@ public class VisitOperations extends ClinicalStatementOperations
    * @generated
    * @ordered
    */
-  protected static final String GET_PLANNED_STUDY_DAY__EOCL_EXP = "self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(sdtm::Planned Study Day))->asSequence()->first().oclAsType(sdtm::Planned Study Day)";
+  protected static final String GET_PLANNED_STUDY_DAY__EOCL_EXP = "self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(sdtm::Planned Study Day))->asSequence()->any(true).oclAsType(sdtm::Planned Study Day)";
 
   /**
    * The cached OCL query for the '{@link #getPlannedStudyDay(Visit) <em>Get Planned Study Day</em>}' query operation.
@@ -1659,10 +1674,6 @@ public class VisitOperations extends ClinicalStatementOperations
   /**
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * <!-- begin-model-doc -->
-   * self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(sdtm::Planned Study Day))->asSequence()->first().oclAsType(sdtm::Planned Study Day)
-   * @param visit The receiving '<em><b>Visit</b></em>' model object.
-   * <!-- end-model-doc -->
    * @generated
    */
   
@@ -1671,7 +1682,7 @@ public class VisitOperations extends ClinicalStatementOperations
     if (GET_PLANNED_STUDY_DAY__EOCL_QRY == null)
     {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
-      helper.setOperationContext(SdtmPackage.Literals.VISIT, SdtmPackage.Literals.VISIT.getEAllOperations().get(73));
+      helper.setOperationContext(SdtmPackage.Literals.VISIT, SdtmPackage.Literals.VISIT.getEAllOperations().get(75));
       try
       {
         GET_PLANNED_STUDY_DAY__EOCL_QRY = helper.createQuery(GET_PLANNED_STUDY_DAY__EOCL_EXP);
@@ -1708,10 +1719,6 @@ public class VisitOperations extends ClinicalStatementOperations
   /**
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * <!-- begin-model-doc -->
-   * self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(sdtm::ECG Test Result)).oclAsType(sdtm::ECG Test Result)
-   * @param visit The receiving '<em><b>Visit</b></em>' model object.
-   * <!-- end-model-doc -->
    * @generated
    */
   
@@ -1720,7 +1727,7 @@ public class VisitOperations extends ClinicalStatementOperations
     if (GET_ECG_TEST_RESULTS__EOCL_QRY == null)
     {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
-      helper.setOperationContext(SdtmPackage.Literals.VISIT, SdtmPackage.Literals.VISIT.getEAllOperations().get(74));
+      helper.setOperationContext(SdtmPackage.Literals.VISIT, SdtmPackage.Literals.VISIT.getEAllOperations().get(76));
       try
       {
         GET_ECG_TEST_RESULTS__EOCL_QRY = helper.createQuery(GET_ECG_TEST_RESULTS__EOCL_EXP);
@@ -1759,10 +1766,6 @@ public class VisitOperations extends ClinicalStatementOperations
   /**
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * <!-- begin-model-doc -->
-   * self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(sdtm::Inclusion or Exclusion Criteria Not Met)).oclAsType(sdtm::Inclusion or Exclusion Criteria Not Met)
-   * @param visit The receiving '<em><b>Visit</b></em>' model object.
-   * <!-- end-model-doc -->
    * @generated
    */
   
@@ -1771,7 +1774,7 @@ public class VisitOperations extends ClinicalStatementOperations
     if (GET_INCLUSIONOR_EXCLUSION_CRITERIA_NOT_METS__EOCL_QRY == null)
     {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
-      helper.setOperationContext(SdtmPackage.Literals.VISIT, SdtmPackage.Literals.VISIT.getEAllOperations().get(75));
+      helper.setOperationContext(SdtmPackage.Literals.VISIT, SdtmPackage.Literals.VISIT.getEAllOperations().get(77));
       try
       {
         GET_INCLUSIONOR_EXCLUSION_CRITERIA_NOT_METS__EOCL_QRY = helper.createQuery(GET_INCLUSIONOR_EXCLUSION_CRITERIA_NOT_METS__EOCL_EXP);
@@ -1795,7 +1798,7 @@ public class VisitOperations extends ClinicalStatementOperations
    * @generated
    * @ordered
    */
-  protected static final String GET_LABORATORY_TEST_RESULTS__EOCL_EXP = "self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(sdtm::Non-Human Laboratory Test Result)).oclAsType(sdtm::Non-Human Laboratory Test Result)";
+  protected static final String GET_LABORATORY_TEST_RESULTS__EOCL_EXP = "self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(sdtm::Non-human Laboratory Test Result)).oclAsType(sdtm::Non-human Laboratory Test Result)";
 
   /**
    * The cached OCL query for the '{@link #getLaboratoryTestResults(Visit) <em>Get Laboratory Test Results</em>}' query operation.
@@ -1810,19 +1813,15 @@ public class VisitOperations extends ClinicalStatementOperations
   /**
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * <!-- begin-model-doc -->
-   * self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(sdtm::Non-Human Laboratory Test Result)).oclAsType(sdtm::Non-Human Laboratory Test Result)
-   * @param visit The receiving '<em><b>Visit</b></em>' model object.
-   * <!-- end-model-doc -->
    * @generated
    */
   
-  public static  EList<NonHumanLaboratoryTestResult> getLaboratoryTestResults(Visit visit)
+  public static  EList<NonhumanLaboratoryTestResult> getLaboratoryTestResults(Visit visit)
   {
     if (GET_LABORATORY_TEST_RESULTS__EOCL_QRY == null)
     {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
-      helper.setOperationContext(SdtmPackage.Literals.VISIT, SdtmPackage.Literals.VISIT.getEAllOperations().get(76));
+      helper.setOperationContext(SdtmPackage.Literals.VISIT, SdtmPackage.Literals.VISIT.getEAllOperations().get(78));
       try
       {
         GET_LABORATORY_TEST_RESULTS__EOCL_QRY = helper.createQuery(GET_LABORATORY_TEST_RESULTS__EOCL_EXP);
@@ -1834,8 +1833,8 @@ public class VisitOperations extends ClinicalStatementOperations
     }
     OCL.Query query = EOCL_ENV.createQuery(GET_LABORATORY_TEST_RESULTS__EOCL_QRY);
     @SuppressWarnings("unchecked")
-    Collection<NonHumanLaboratoryTestResult> result = (Collection<NonHumanLaboratoryTestResult>) query.evaluate(visit);
-    return new BasicEList.UnmodifiableEList<NonHumanLaboratoryTestResult>(result.size(), result.toArray());
+    Collection<NonhumanLaboratoryTestResult> result = (Collection<NonhumanLaboratoryTestResult>) query.evaluate(visit);
+    return new BasicEList.UnmodifiableEList<NonhumanLaboratoryTestResult>(result.size(), result.toArray());
   }
 
   /**
@@ -1861,10 +1860,6 @@ public class VisitOperations extends ClinicalStatementOperations
   /**
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * <!-- begin-model-doc -->
-   * self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(sdtm::Physical Examination Finding)).oclAsType(sdtm::Physical Examination Finding)
-   * @param visit The receiving '<em><b>Visit</b></em>' model object.
-   * <!-- end-model-doc -->
    * @generated
    */
   
@@ -1873,7 +1868,7 @@ public class VisitOperations extends ClinicalStatementOperations
     if (GET_PHYSICAL_EXAMINATIONS__EOCL_QRY == null)
     {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
-      helper.setOperationContext(SdtmPackage.Literals.VISIT, SdtmPackage.Literals.VISIT.getEAllOperations().get(77));
+      helper.setOperationContext(SdtmPackage.Literals.VISIT, SdtmPackage.Literals.VISIT.getEAllOperations().get(79));
       try
       {
         GET_PHYSICAL_EXAMINATIONS__EOCL_QRY = helper.createQuery(GET_PHYSICAL_EXAMINATIONS__EOCL_EXP);
@@ -1897,7 +1892,7 @@ public class VisitOperations extends ClinicalStatementOperations
    * @generated
    * @ordered
    */
-  protected static final String GET_MICROBIOLOGY_SPECIMEN__EOCL_EXP = "self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(sdtm::Microbiology Specimen Finding))->asSequence()->first().oclAsType(sdtm::Microbiology Specimen Finding)";
+  protected static final String GET_MICROBIOLOGY_SPECIMEN__EOCL_EXP = "self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(sdtm::Microbiology Specimen Finding))->asSequence()->any(true).oclAsType(sdtm::Microbiology Specimen Finding)";
 
   /**
    * The cached OCL query for the '{@link #getMicrobiologySpecimen(Visit) <em>Get Microbiology Specimen</em>}' query operation.
@@ -1912,10 +1907,6 @@ public class VisitOperations extends ClinicalStatementOperations
   /**
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * <!-- begin-model-doc -->
-   * self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(sdtm::Microbiology Specimen Finding))->asSequence()->first().oclAsType(sdtm::Microbiology Specimen Finding)
-   * @param visit The receiving '<em><b>Visit</b></em>' model object.
-   * <!-- end-model-doc -->
    * @generated
    */
   
@@ -1924,7 +1915,7 @@ public class VisitOperations extends ClinicalStatementOperations
     if (GET_MICROBIOLOGY_SPECIMEN__EOCL_QRY == null)
     {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
-      helper.setOperationContext(SdtmPackage.Literals.VISIT, SdtmPackage.Literals.VISIT.getEAllOperations().get(78));
+      helper.setOperationContext(SdtmPackage.Literals.VISIT, SdtmPackage.Literals.VISIT.getEAllOperations().get(80));
       try
       {
         GET_MICROBIOLOGY_SPECIMEN__EOCL_QRY = helper.createQuery(GET_MICROBIOLOGY_SPECIMEN__EOCL_EXP);
@@ -1946,7 +1937,7 @@ public class VisitOperations extends ClinicalStatementOperations
    * @generated
    * @ordered
    */
-  protected static final String GET_MICROBIOLOGY_SUSCEPTIBILITY__EOCL_EXP = "self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(sdtm::Microbiology Susceptibility))->asSequence()->first().oclAsType(sdtm::Microbiology Susceptibility)";
+  protected static final String GET_MICROBIOLOGY_SUSCEPTIBILITY__EOCL_EXP = "self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(sdtm::Microbiology Susceptibility))->asSequence()->any(true).oclAsType(sdtm::Microbiology Susceptibility)";
 
   /**
    * The cached OCL query for the '{@link #getMicrobiologySusceptibility(Visit) <em>Get Microbiology Susceptibility</em>}' query operation.
@@ -1961,10 +1952,6 @@ public class VisitOperations extends ClinicalStatementOperations
   /**
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * <!-- begin-model-doc -->
-   * self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(sdtm::Microbiology Susceptibility))->asSequence()->first().oclAsType(sdtm::Microbiology Susceptibility)
-   * @param visit The receiving '<em><b>Visit</b></em>' model object.
-   * <!-- end-model-doc -->
    * @generated
    */
   
@@ -1973,7 +1960,7 @@ public class VisitOperations extends ClinicalStatementOperations
     if (GET_MICROBIOLOGY_SUSCEPTIBILITY__EOCL_QRY == null)
     {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
-      helper.setOperationContext(SdtmPackage.Literals.VISIT, SdtmPackage.Literals.VISIT.getEAllOperations().get(79));
+      helper.setOperationContext(SdtmPackage.Literals.VISIT, SdtmPackage.Literals.VISIT.getEAllOperations().get(81));
       try
       {
         GET_MICROBIOLOGY_SUSCEPTIBILITY__EOCL_QRY = helper.createQuery(GET_MICROBIOLOGY_SUSCEPTIBILITY__EOCL_EXP);
@@ -1995,7 +1982,7 @@ public class VisitOperations extends ClinicalStatementOperations
    * @generated
    * @ordered
    */
-  protected static final String GET_PHARMACOKINETIC_CONCENTRATION_FINDING__EOCL_EXP = "self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(sdtm::Pharmacokinetic Concentration Finding))->asSequence()->first().oclAsType(sdtm::Pharmacokinetic Concentration Finding)";
+  protected static final String GET_PHARMACOKINETIC_CONCENTRATION_FINDING__EOCL_EXP = "self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(sdtm::Pharmacokinetic Concentration Finding))->asSequence()->any(true).oclAsType(sdtm::Pharmacokinetic Concentration Finding)";
 
   /**
    * The cached OCL query for the '{@link #getPharmacokineticConcentrationFinding(Visit) <em>Get Pharmacokinetic Concentration Finding</em>}' query operation.
@@ -2010,10 +1997,6 @@ public class VisitOperations extends ClinicalStatementOperations
   /**
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * <!-- begin-model-doc -->
-   * self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(sdtm::Pharmacokinetic Concentration Finding))->asSequence()->first().oclAsType(sdtm::Pharmacokinetic Concentration Finding)
-   * @param visit The receiving '<em><b>Visit</b></em>' model object.
-   * <!-- end-model-doc -->
    * @generated
    */
   
@@ -2022,7 +2005,7 @@ public class VisitOperations extends ClinicalStatementOperations
     if (GET_PHARMACOKINETIC_CONCENTRATION_FINDING__EOCL_QRY == null)
     {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
-      helper.setOperationContext(SdtmPackage.Literals.VISIT, SdtmPackage.Literals.VISIT.getEAllOperations().get(80));
+      helper.setOperationContext(SdtmPackage.Literals.VISIT, SdtmPackage.Literals.VISIT.getEAllOperations().get(82));
       try
       {
         GET_PHARMACOKINETIC_CONCENTRATION_FINDING__EOCL_QRY = helper.createQuery(GET_PHARMACOKINETIC_CONCENTRATION_FINDING__EOCL_EXP);
@@ -2044,7 +2027,7 @@ public class VisitOperations extends ClinicalStatementOperations
    * @generated
    * @ordered
    */
-  protected static final String GET_FINDING_ABOUT__EOCL_EXP = "self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(sdtm::Finding About))->asSequence()->first().oclAsType(sdtm::Finding About)";
+  protected static final String GET_FINDING_ABOUT__EOCL_EXP = "self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(sdtm::Finding About))->asSequence()->any(true).oclAsType(sdtm::Finding About)";
 
   /**
    * The cached OCL query for the '{@link #getFindingAbout(Visit) <em>Get Finding About</em>}' query operation.
@@ -2059,10 +2042,6 @@ public class VisitOperations extends ClinicalStatementOperations
   /**
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * <!-- begin-model-doc -->
-   * self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(sdtm::Finding About))->asSequence()->first().oclAsType(sdtm::Finding About)
-   * @param visit The receiving '<em><b>Visit</b></em>' model object.
-   * <!-- end-model-doc -->
    * @generated
    */
   
@@ -2071,7 +2050,7 @@ public class VisitOperations extends ClinicalStatementOperations
     if (GET_FINDING_ABOUT__EOCL_QRY == null)
     {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
-      helper.setOperationContext(SdtmPackage.Literals.VISIT, SdtmPackage.Literals.VISIT.getEAllOperations().get(81));
+      helper.setOperationContext(SdtmPackage.Literals.VISIT, SdtmPackage.Literals.VISIT.getEAllOperations().get(83));
       try
       {
         GET_FINDING_ABOUT__EOCL_QRY = helper.createQuery(GET_FINDING_ABOUT__EOCL_EXP);
@@ -2093,7 +2072,7 @@ public class VisitOperations extends ClinicalStatementOperations
    * @generated
    * @ordered
    */
-  protected static final String GET_DRUG_ACCOUNTABILITY__EOCL_EXP = "self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(sdtm::Drug Accountability))->asSequence()->first().oclAsType(sdtm::Drug Accountability)";
+  protected static final String GET_DRUG_ACCOUNTABILITY__EOCL_EXP = "self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(sdtm::Drug Accountability))->asSequence()->any(true).oclAsType(sdtm::Drug Accountability)";
 
   /**
    * The cached OCL query for the '{@link #getDrugAccountability(Visit) <em>Get Drug Accountability</em>}' query operation.
@@ -2108,10 +2087,6 @@ public class VisitOperations extends ClinicalStatementOperations
   /**
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * <!-- begin-model-doc -->
-   * self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(sdtm::Drug Accountability))->asSequence()->first().oclAsType(sdtm::Drug Accountability)
-   * @param visit The receiving '<em><b>Visit</b></em>' model object.
-   * <!-- end-model-doc -->
    * @generated
    */
   
@@ -2120,7 +2095,7 @@ public class VisitOperations extends ClinicalStatementOperations
     if (GET_DRUG_ACCOUNTABILITY__EOCL_QRY == null)
     {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
-      helper.setOperationContext(SdtmPackage.Literals.VISIT, SdtmPackage.Literals.VISIT.getEAllOperations().get(82));
+      helper.setOperationContext(SdtmPackage.Literals.VISIT, SdtmPackage.Literals.VISIT.getEAllOperations().get(84));
       try
       {
         GET_DRUG_ACCOUNTABILITY__EOCL_QRY = helper.createQuery(GET_DRUG_ACCOUNTABILITY__EOCL_EXP);
@@ -2142,7 +2117,7 @@ public class VisitOperations extends ClinicalStatementOperations
    * @generated
    * @ordered
    */
-  protected static final String GET_STUDY_DAY_PERIOD__EOCL_EXP = "self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(sdtm::Study Day Period))->asSequence()->first().oclAsType(sdtm::Study Day Period)";
+  protected static final String GET_STUDY_DAY_PERIOD__EOCL_EXP = "self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(sdtm::Study Day Period))->asSequence()->any(true).oclAsType(sdtm::Study Day Period)";
 
   /**
    * The cached OCL query for the '{@link #getStudyDayPeriod(Visit) <em>Get Study Day Period</em>}' query operation.
@@ -2157,10 +2132,6 @@ public class VisitOperations extends ClinicalStatementOperations
   /**
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * <!-- begin-model-doc -->
-   * self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(sdtm::Study Day Period))->asSequence()->first().oclAsType(sdtm::Study Day Period)
-   * @param visit The receiving '<em><b>Visit</b></em>' model object.
-   * <!-- end-model-doc -->
    * @generated
    */
   
@@ -2169,7 +2140,7 @@ public class VisitOperations extends ClinicalStatementOperations
     if (GET_STUDY_DAY_PERIOD__EOCL_QRY == null)
     {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
-      helper.setOperationContext(SdtmPackage.Literals.VISIT, SdtmPackage.Literals.VISIT.getEAllOperations().get(83));
+      helper.setOperationContext(SdtmPackage.Literals.VISIT, SdtmPackage.Literals.VISIT.getEAllOperations().get(85));
       try
       {
         GET_STUDY_DAY_PERIOD__EOCL_QRY = helper.createQuery(GET_STUDY_DAY_PERIOD__EOCL_EXP);

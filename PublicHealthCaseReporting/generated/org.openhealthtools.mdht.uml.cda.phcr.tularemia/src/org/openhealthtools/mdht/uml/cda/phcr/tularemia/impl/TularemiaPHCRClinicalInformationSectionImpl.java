@@ -10,10 +10,13 @@
  *******************************************************************************/
 package org.openhealthtools.mdht.uml.cda.phcr.tularemia.impl;
 
+import java.lang.Iterable;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.ecore.EClass;
+import org.eclipse.emf.ecore.EObject;
+import org.openhealthtools.mdht.emf.runtime.util.Initializer;
 import org.openhealthtools.mdht.uml.cda.phcr.impl.PhcrClinicalInformationSectionImpl;
 import org.openhealthtools.mdht.uml.cda.phcr.tularemia.TularemiaCaseObservation;
 import org.openhealthtools.mdht.uml.cda.phcr.tularemia.TularemiaPHCRClinicalInformationSection;
@@ -33,64 +36,73 @@ import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
 public class TularemiaPHCRClinicalInformationSectionImpl extends PhcrClinicalInformationSectionImpl implements TularemiaPHCRClinicalInformationSection
 {
   /**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   protected TularemiaPHCRClinicalInformationSectionImpl()
   {
-		super();
-	}
+    super();
+  }
 
   /**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   @Override
   protected EClass eStaticClass()
   {
-		return TularemiaPackage.Literals.TULAREMIA_PHCR_CLINICAL_INFORMATION_SECTION;
-	}
+    return TularemiaPackage.Literals.TULAREMIA_PHCR_CLINICAL_INFORMATION_SECTION;
+  }
 
   /**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   public boolean validateTularemiaPHCRClinicalInformationSectionTularemiaCaseObservation(DiagnosticChain diagnostics, Map<Object, Object> context)
   {
-		return TularemiaPHCRClinicalInformationSectionOperations.validateTularemiaPHCRClinicalInformationSectionTularemiaCaseObservation(this, diagnostics, context);
-	}
+    return TularemiaPHCRClinicalInformationSectionOperations.validateTularemiaPHCRClinicalInformationSectionTularemiaCaseObservation(this, diagnostics, context);
+  }
 
   /**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   public TularemiaCaseObservation getTularemiaCaseObservation()
   {
-		return TularemiaPHCRClinicalInformationSectionOperations.getTularemiaCaseObservation(this);
-	}
+    return TularemiaPHCRClinicalInformationSectionOperations.getTularemiaCaseObservation(this);
+  }
 
   /**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   @Override
   public boolean validatePhcrClinicalInformationSectionTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context)
   {
-		return TularemiaPHCRClinicalInformationSectionOperations.validatePhcrClinicalInformationSectionTemplateId(this, diagnostics, context);
-	}
+    return TularemiaPHCRClinicalInformationSectionOperations.validatePhcrClinicalInformationSectionTemplateId(this, diagnostics, context);
+  }
 
   /**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   public TularemiaPHCRClinicalInformationSection init() {
-    	CDAUtil.init(this);
-    	return this;
-	}
+      return Initializer.Util.init(this);
+  }
+
+  /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    public TularemiaPHCRClinicalInformationSection init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
 } //TularemiaPHCRClinicalInformationSectionImpl

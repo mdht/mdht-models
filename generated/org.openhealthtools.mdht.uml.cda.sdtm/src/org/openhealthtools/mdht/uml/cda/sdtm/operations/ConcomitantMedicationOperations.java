@@ -66,50 +66,39 @@ import org.openhealthtools.mdht.uml.cda.sdtm.util.SdtmValidator;
  *   <li>{@link org.openhealthtools.mdht.uml.cda.sdtm.ConcomitantMedication#validateConcomitantMedicationDataCollection(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Concomitant Medication Data Collection</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.sdtm.ConcomitantMedication#validateConcomitantMedicationStudyDayPeriod(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Concomitant Medication Study Day Period</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.sdtm.ConcomitantMedication#validateConcomitantMedicationconcomitantMedicationCategoryAssociationconcomitantMedicationCategoryconcomitantMedicationSubCategoryAssociationConcomitantMedicationSubCategoryClassCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Concomitant Medicationconcomitant Medication Category Associationconcomitant Medication Categoryconcomitant Medication Sub Category Association Concomitant Medication Sub Category Class Code</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.sdtm.ConcomitantMedication#validateConcomitantMedicationconcomitantMedicationCategoryAssociationconcomitantMedicationCategoryconcomitantMedicationSubCategoryAssociationConcomitantMedicationSubCategoryCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Concomitant Medicationconcomitant Medication Category Associationconcomitant Medication Categoryconcomitant Medication Sub Category Association Concomitant Medication Sub Category Code P</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.sdtm.ConcomitantMedication#validateConcomitantMedicationconcomitantMedicationCategoryAssociationconcomitantMedicationCategoryconcomitantMedicationSubCategoryAssociationConcomitantMedicationSubCategoryCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Concomitant Medicationconcomitant Medication Category Associationconcomitant Medication Categoryconcomitant Medication Sub Category Association Concomitant Medication Sub Category Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.sdtm.ConcomitantMedication#validateConcomitantMedicationconcomitantMedicationCategoryAssociationconcomitantMedicationCategoryconcomitantMedicationSubCategoryAssociationConcomitantMedicationSubCategoryMoodCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Concomitant Medicationconcomitant Medication Category Associationconcomitant Medication Categoryconcomitant Medication Sub Category Association Concomitant Medication Sub Category Mood Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.sdtm.ConcomitantMedication#validateConcomitantMedicationconcomitantMedicationCategoryAssociationconcomitantMedicationCategoryconcomitantMedicationSubCategoryAssociationConcomitantMedicationSubCategoryValue(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Concomitant Medicationconcomitant Medication Category Associationconcomitant Medication Categoryconcomitant Medication Sub Category Association Concomitant Medication Sub Category Value</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.sdtm.ConcomitantMedication#validateConcomitantMedicationconcomitantMedicationCategoryAssociationconcomitantMedicationCategoryconcomitantMedicationSubCategoryAssociationTypeCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Concomitant Medicationconcomitant Medication Category Associationconcomitant Medication Categoryconcomitant Medication Sub Category Association Type Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.sdtm.ConcomitantMedication#validateConcomitantMedicationconcomitantMedicationCategoryAssociationconcomitantMedicationCategoryconcomitantMedicationSubCategoryAssociationConcomitantMedicationSubCategory(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Concomitant Medicationconcomitant Medication Category Associationconcomitant Medication Categoryconcomitant Medication Sub Category Association Concomitant Medication Sub Category</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.sdtm.ConcomitantMedication#validateConcomitantMedicationconcomitantMedicationCategoryAssociationconcomitantMedicationCategoryClassCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Concomitant Medicationconcomitant Medication Category Associationconcomitant Medication Category Class Code</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.sdtm.ConcomitantMedication#validateConcomitantMedicationconcomitantMedicationCategoryAssociationconcomitantMedicationCategoryCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Concomitant Medicationconcomitant Medication Category Associationconcomitant Medication Category Code P</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.sdtm.ConcomitantMedication#validateConcomitantMedicationconcomitantMedicationCategoryAssociationconcomitantMedicationCategoryCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Concomitant Medicationconcomitant Medication Category Associationconcomitant Medication Category Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.sdtm.ConcomitantMedication#validateConcomitantMedicationconcomitantMedicationCategoryAssociationconcomitantMedicationCategoryMoodCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Concomitant Medicationconcomitant Medication Category Associationconcomitant Medication Category Mood Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.sdtm.ConcomitantMedication#validateConcomitantMedicationconcomitantMedicationCategoryAssociationconcomitantMedicationCategoryValue(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Concomitant Medicationconcomitant Medication Category Associationconcomitant Medication Category Value</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.sdtm.ConcomitantMedication#validateConcomitantMedicationconcomitantMedicationCategoryAssociationconcomitantMedicationCategoryConcomitantMedicationSubCategoryAssociation(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Concomitant Medicationconcomitant Medication Category Associationconcomitant Medication Category Concomitant Medication Sub Category Association</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.sdtm.ConcomitantMedication#validateConcomitantMedicationconcomitantMedicationCategoryAssociationTypeCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Concomitant Medicationconcomitant Medication Category Association Type Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.sdtm.ConcomitantMedication#validateConcomitantMedicationconcomitantMedicationCategoryAssociationConcomitantMedicationCategory(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Concomitant Medicationconcomitant Medication Category Association Concomitant Medication Category</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.sdtm.ConcomitantMedication#validateConcomitantMedicationconcomitantMedicationCategoryAssociationconcomitantMedicationCategoryconcomitantMedicationSubCategoryAssociationConcomitantMedicationSubCategoryClassCodeConcomitantMedicationconcomitantMedicationCategoryAssociationconcomitantMedicationCategoryconcomitantMedicationSubCategoryAssociationConcomitantMedicationSubCategoryClassCode1(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Concomitant Medicationconcomitant Medication Category Associationconcomitant Medication Categoryconcomitant Medication Sub Category Association Concomitant Medication Sub Category Class Code Concomitant Medicationconcomitant Medication Category Associationconcomitant Medication Categoryconcomitant Medication Sub Category Association Concomitant Medication Sub Category Class Code1</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.sdtm.ConcomitantMedication#validateConcomitantMedicationconcomitantMedicationCategoryAssociationconcomitantMedicationCategoryconcomitantMedicationSubCategoryAssociationConcomitantMedicationSubCategoryCodeConcomitantMedicationconcomitantMedicationCategoryAssociationconcomitantMedicationCategoryconcomitantMedicationSubCategoryAssociationConcomitantMedicationSubCategoryCode1(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Concomitant Medicationconcomitant Medication Category Associationconcomitant Medication Categoryconcomitant Medication Sub Category Association Concomitant Medication Sub Category Code Concomitant Medicationconcomitant Medication Category Associationconcomitant Medication Categoryconcomitant Medication Sub Category Association Concomitant Medication Sub Category Code1</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.sdtm.ConcomitantMedication#validateConcomitantMedicationconcomitantMedicationCategoryAssociationconcomitantMedicationCategoryconcomitantMedicationSubCategoryAssociationConcomitantMedicationSubCategoryMoodCodeConcomitantMedicationconcomitantMedicationCategoryAssociationconcomitantMedicationCategoryconcomitantMedicationSubCategoryAssociationConcomitantMedicationSubCategoryMoodCode1(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Concomitant Medicationconcomitant Medication Category Associationconcomitant Medication Categoryconcomitant Medication Sub Category Association Concomitant Medication Sub Category Mood Code Concomitant Medicationconcomitant Medication Category Associationconcomitant Medication Categoryconcomitant Medication Sub Category Association Concomitant Medication Sub Category Mood Code1</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.sdtm.ConcomitantMedication#validateConcomitantMedicationconcomitantMedicationCategoryAssociationconcomitantMedicationCategoryconcomitantMedicationSubCategoryAssociationConcomitantMedicationSubCategoryValueConcomitantMedicationconcomitantMedicationCategoryAssociationconcomitantMedicationCategoryconcomitantMedicationSubCategoryAssociationConcomitantMedicationSubCategoryValue1(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Concomitant Medicationconcomitant Medication Category Associationconcomitant Medication Categoryconcomitant Medication Sub Category Association Concomitant Medication Sub Category Value Concomitant Medicationconcomitant Medication Category Associationconcomitant Medication Categoryconcomitant Medication Sub Category Association Concomitant Medication Sub Category Value1</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.sdtm.ConcomitantMedication#validateConcomitantMedicationconcomitantMedicationCategoryAssociationconcomitantMedicationCategoryconcomitantMedicationSubCategoryAssociationTypeCodeConcomitantMedicationconcomitantMedicationCategoryAssociationconcomitantMedicationCategoryconcomitantMedicationSubCategoryAssociationTypeCode1(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Concomitant Medicationconcomitant Medication Category Associationconcomitant Medication Categoryconcomitant Medication Sub Category Association Type Code Concomitant Medicationconcomitant Medication Category Associationconcomitant Medication Categoryconcomitant Medication Sub Category Association Type Code1</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.sdtm.ConcomitantMedication#validateConcomitantMedicationconcomitantMedicationCategoryAssociationconcomitantMedicationCategoryconcomitantMedicationSubCategoryAssociationConcomitantMedicationSubCategoryConcomitantMedicationconcomitantMedicationCategoryAssociationconcomitantMedicationCategoryconcomitantMedicationSubCategoryAssociationConcomitantMedicationSubCategory1(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Concomitant Medicationconcomitant Medication Category Associationconcomitant Medication Categoryconcomitant Medication Sub Category Association Concomitant Medication Sub Category Concomitant Medicationconcomitant Medication Category Associationconcomitant Medication Categoryconcomitant Medication Sub Category Association Concomitant Medication Sub Category1</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.sdtm.ConcomitantMedication#validateConcomitantMedicationconcomitantMedicationCategoryAssociationconcomitantMedicationCategoryClassCodeConcomitantMedicationconcomitantMedicationCategoryAssociationconcomitantMedicationCategoryClassCode1(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Concomitant Medicationconcomitant Medication Category Associationconcomitant Medication Category Class Code Concomitant Medicationconcomitant Medication Category Associationconcomitant Medication Category Class Code1</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.sdtm.ConcomitantMedication#validateConcomitantMedicationconcomitantMedicationCategoryAssociationconcomitantMedicationCategoryCodeConcomitantMedicationconcomitantMedicationCategoryAssociationconcomitantMedicationCategoryCode1(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Concomitant Medicationconcomitant Medication Category Associationconcomitant Medication Category Code Concomitant Medicationconcomitant Medication Category Associationconcomitant Medication Category Code1</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.sdtm.ConcomitantMedication#validateConcomitantMedicationconcomitantMedicationCategoryAssociationconcomitantMedicationCategoryMoodCodeConcomitantMedicationconcomitantMedicationCategoryAssociationconcomitantMedicationCategoryMoodCode1(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Concomitant Medicationconcomitant Medication Category Associationconcomitant Medication Category Mood Code Concomitant Medicationconcomitant Medication Category Associationconcomitant Medication Category Mood Code1</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.sdtm.ConcomitantMedication#validateConcomitantMedicationconcomitantMedicationCategoryAssociationconcomitantMedicationCategoryValueConcomitantMedicationconcomitantMedicationCategoryAssociationconcomitantMedicationCategoryValue1(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Concomitant Medicationconcomitant Medication Category Associationconcomitant Medication Category Value Concomitant Medicationconcomitant Medication Category Associationconcomitant Medication Category Value1</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.sdtm.ConcomitantMedication#validateConcomitantMedicationconcomitantMedicationCategoryAssociationconcomitantMedicationCategoryConcomitantMedicationSubCategoryAssociationConcomitantMedicationconcomitantMedicationCategoryAssociationconcomitantMedicationCategoryConcomitantMedicationSubCategoryAssociation1(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Concomitant Medicationconcomitant Medication Category Associationconcomitant Medication Category Concomitant Medication Sub Category Association Concomitant Medicationconcomitant Medication Category Associationconcomitant Medication Category Concomitant Medication Sub Category Association1</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.sdtm.ConcomitantMedication#validateConcomitantMedicationconcomitantMedicationIndicationAssociationConcomitantMedicationIndicationClassCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Concomitant Medicationconcomitant Medication Indication Association Concomitant Medication Indication Class Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.sdtm.ConcomitantMedication#validateConcomitantMedicationconcomitantMedicationIndicationAssociationConcomitantMedicationIndicationMoodCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Concomitant Medicationconcomitant Medication Indication Association Concomitant Medication Indication Mood Code</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.sdtm.ConcomitantMedication#validateConcomitantMedicationconcomitantMedicationIndicationAssociationConcomitantMedicationIndicationCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Concomitant Medicationconcomitant Medication Indication Association Concomitant Medication Indication Code P</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.sdtm.ConcomitantMedication#validateConcomitantMedicationconcomitantMedicationIndicationAssociationConcomitantMedicationIndicationCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Concomitant Medicationconcomitant Medication Indication Association Concomitant Medication Indication Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.sdtm.ConcomitantMedication#validateConcomitantMedicationconcomitantMedicationIndicationAssociationConcomitantMedicationIndicationValue(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Concomitant Medicationconcomitant Medication Indication Association Concomitant Medication Indication Value</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.sdtm.ConcomitantMedication#validateConcomitantMedicationconcomitantMedicationIndicationAssociationTypeCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Concomitant Medicationconcomitant Medication Indication Association Type Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.sdtm.ConcomitantMedication#validateConcomitantMedicationconcomitantMedicationIndicationAssociationIndication(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Concomitant Medicationconcomitant Medication Indication Association Indication</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.sdtm.ConcomitantMedication#validateConcomitantMedicationconcomitantMedicationSubCategoryAssociationConcomitantMedicationSubCategoryClassCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Concomitant Medicationconcomitant Medication Sub Category Association Concomitant Medication Sub Category Class Code</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.sdtm.ConcomitantMedication#validateConcomitantMedicationconcomitantMedicationSubCategoryAssociationConcomitantMedicationSubCategoryCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Concomitant Medicationconcomitant Medication Sub Category Association Concomitant Medication Sub Category Code P</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.sdtm.ConcomitantMedication#validateConcomitantMedicationconcomitantMedicationSubCategoryAssociationConcomitantMedicationSubCategoryCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Concomitant Medicationconcomitant Medication Sub Category Association Concomitant Medication Sub Category Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.sdtm.ConcomitantMedication#validateConcomitantMedicationconcomitantMedicationSubCategoryAssociationConcomitantMedicationSubCategoryMoodCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Concomitant Medicationconcomitant Medication Sub Category Association Concomitant Medication Sub Category Mood Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.sdtm.ConcomitantMedication#validateConcomitantMedicationconcomitantMedicationSubCategoryAssociationConcomitantMedicationSubCategoryValue(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Concomitant Medicationconcomitant Medication Sub Category Association Concomitant Medication Sub Category Value</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.sdtm.ConcomitantMedication#validateConcomitantMedicationconcomitantMedicationSubCategoryAssociationTypeCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Concomitant Medicationconcomitant Medication Sub Category Association Type Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.sdtm.ConcomitantMedication#validateConcomitantMedicationconcomitantMedicationSubCategoryAssociationConcomitantMedicationSubCategory(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Concomitant Medicationconcomitant Medication Sub Category Association Concomitant Medication Sub Category</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.sdtm.ConcomitantMedication#validateConcomitantMedicationconcomitantMedicationSubCategoryAssociationConcomitantMedicationSubCategoryClassCodeConcomitantMedicationconcomitantMedicationSubCategoryAssociationConcomitantMedicationSubCategoryClassCode1(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Concomitant Medicationconcomitant Medication Sub Category Association Concomitant Medication Sub Category Class Code Concomitant Medicationconcomitant Medication Sub Category Association Concomitant Medication Sub Category Class Code1</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.sdtm.ConcomitantMedication#validateConcomitantMedicationconcomitantMedicationSubCategoryAssociationConcomitantMedicationSubCategoryCodeConcomitantMedicationconcomitantMedicationSubCategoryAssociationConcomitantMedicationSubCategoryCode1(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Concomitant Medicationconcomitant Medication Sub Category Association Concomitant Medication Sub Category Code Concomitant Medicationconcomitant Medication Sub Category Association Concomitant Medication Sub Category Code1</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.sdtm.ConcomitantMedication#validateConcomitantMedicationconcomitantMedicationSubCategoryAssociationConcomitantMedicationSubCategoryMoodCodeConcomitantMedicationconcomitantMedicationSubCategoryAssociationConcomitantMedicationSubCategoryMoodCode1(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Concomitant Medicationconcomitant Medication Sub Category Association Concomitant Medication Sub Category Mood Code Concomitant Medicationconcomitant Medication Sub Category Association Concomitant Medication Sub Category Mood Code1</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.sdtm.ConcomitantMedication#validateConcomitantMedicationconcomitantMedicationSubCategoryAssociationConcomitantMedicationSubCategoryValueConcomitantMedicationconcomitantMedicationSubCategoryAssociationConcomitantMedicationSubCategoryValue1(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Concomitant Medicationconcomitant Medication Sub Category Association Concomitant Medication Sub Category Value Concomitant Medicationconcomitant Medication Sub Category Association Concomitant Medication Sub Category Value1</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.sdtm.ConcomitantMedication#validateConcomitantMedicationIntendedRegimenAssociationIntendedRegimenClassCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Concomitant Medication Intended Regimen Association Intended Regimen Class Code</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.sdtm.ConcomitantMedication#validateConcomitantMedicationIntendedRegimenAssociationIntendedRegimenCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Concomitant Medication Intended Regimen Association Intended Regimen Code P</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.sdtm.ConcomitantMedication#validateConcomitantMedicationIntendedRegimenAssociationIntendedRegimenCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Concomitant Medication Intended Regimen Association Intended Regimen Code</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.sdtm.ConcomitantMedication#validateConcomitantMedicationIntendedRegimenAssociationIntendedRegimenMoodCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Concomitant Medication Intended Regimen Association Intended Regimen Mood Code</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.sdtm.ConcomitantMedication#validateConcomitantMedicationIntendedRegimenAssociationIntendedRegimenValue(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Concomitant Medication Intended Regimen Association Intended Regimen Value</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.sdtm.ConcomitantMedication#validateConcomitantMedicationIntendedRegimenAssociationintendedRegimenClassCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Concomitant Medication Intended Regimen Associationintended Regimen Class Code</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.sdtm.ConcomitantMedication#validateConcomitantMedicationIntendedRegimenAssociationintendedRegimenCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Concomitant Medication Intended Regimen Associationintended Regimen Code P</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.sdtm.ConcomitantMedication#validateConcomitantMedicationIntendedRegimenAssociationintendedRegimenCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Concomitant Medication Intended Regimen Associationintended Regimen Code</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.sdtm.ConcomitantMedication#validateConcomitantMedicationIntendedRegimenAssociationintendedRegimenMoodCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Concomitant Medication Intended Regimen Associationintended Regimen Mood Code</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.sdtm.ConcomitantMedication#validateConcomitantMedicationIntendedRegimenAssociationintendedRegimenValue(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Concomitant Medication Intended Regimen Associationintended Regimen Value</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.sdtm.ConcomitantMedication#validateConcomitantMedicationIntendedRegimenAssociationTypeCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Concomitant Medication Intended Regimen Association Type Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.sdtm.ConcomitantMedication#validateConcomitantMedicationIntendedRegimenAssociationIntendedRegimen(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Concomitant Medication Intended Regimen Association Intended Regimen</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.sdtm.ConcomitantMedication#getGroupIdentifier() <em>Get Group Identifier</em>}</li>
@@ -161,7 +150,6 @@ public class ConcomitantMedicationOperations extends SubstanceAdministrationOper
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.25.19')
    * @param concomitantMedication The receiving '<em><b>Concomitant Medication</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -171,6 +159,7 @@ public class ConcomitantMedicationOperations extends SubstanceAdministrationOper
   
   public static  boolean validateConcomitantMedicationTemplateId(ConcomitantMedication concomitantMedication, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
+  	  
     if (VALIDATE_CONCOMITANT_MEDICATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(SdtmPackage.Literals.CONCOMITANT_MEDICATION);
@@ -195,6 +184,7 @@ public class ConcomitantMedicationOperations extends SubstanceAdministrationOper
              org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "ConcomitantMedicationTemplateId", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(concomitantMedication, context) }),
              new Object [] { concomitantMedication }));
       }
+       
       return false;
     }
     return true;
@@ -226,7 +216,6 @@ public class ConcomitantMedicationOperations extends SubstanceAdministrationOper
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.classCode=vocab::ActClass::SBADM
    * @param concomitantMedication The receiving '<em><b>Concomitant Medication</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -236,6 +225,7 @@ public class ConcomitantMedicationOperations extends SubstanceAdministrationOper
   
   public static  boolean validateConcomitantMedicationClassCode(ConcomitantMedication concomitantMedication, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
+  	  
     if (VALIDATE_CONCOMITANT_MEDICATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(SdtmPackage.Literals.CONCOMITANT_MEDICATION);
@@ -260,6 +250,7 @@ public class ConcomitantMedicationOperations extends SubstanceAdministrationOper
              org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "ConcomitantMedicationClassCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(concomitantMedication, context) }),
              new Object [] { concomitantMedication }));
       }
+       
       return false;
     }
     return true;
@@ -291,7 +282,6 @@ public class ConcomitantMedicationOperations extends SubstanceAdministrationOper
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * (self.doseQuantity.oclIsUndefined() or self.doseQuantity.isNullFlavorUndefined()) implies (not self.doseQuantity.oclIsUndefined())
    * @param concomitantMedication The receiving '<em><b>Concomitant Medication</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -301,6 +291,7 @@ public class ConcomitantMedicationOperations extends SubstanceAdministrationOper
   
   public static  boolean validateConcomitantMedicationDoseQuantity(ConcomitantMedication concomitantMedication, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
+  	  
     if (VALIDATE_CONCOMITANT_MEDICATION_DOSE_QUANTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(SdtmPackage.Literals.CONCOMITANT_MEDICATION);
@@ -325,6 +316,7 @@ public class ConcomitantMedicationOperations extends SubstanceAdministrationOper
              org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "ConcomitantMedicationDoseQuantity", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(concomitantMedication, context) }),
              new Object [] { concomitantMedication }));
       }
+       
       return false;
     }
     return true;
@@ -356,7 +348,6 @@ public class ConcomitantMedicationOperations extends SubstanceAdministrationOper
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * (self.effectiveTime->isEmpty() or self.effectiveTime->exists(element | element.isNullFlavorUndefined())) implies (not self.effectiveTime->isEmpty())
    * @param concomitantMedication The receiving '<em><b>Concomitant Medication</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -366,6 +357,7 @@ public class ConcomitantMedicationOperations extends SubstanceAdministrationOper
   
   public static  boolean validateConcomitantMedicationEffectiveTime(ConcomitantMedication concomitantMedication, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
+  	  
     if (VALIDATE_CONCOMITANT_MEDICATION_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(SdtmPackage.Literals.CONCOMITANT_MEDICATION);
@@ -390,6 +382,7 @@ public class ConcomitantMedicationOperations extends SubstanceAdministrationOper
              org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "ConcomitantMedicationEffectiveTime", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(concomitantMedication, context) }),
              new Object [] { concomitantMedication }));
       }
+       
       return false;
     }
     return true;
@@ -421,7 +414,6 @@ public class ConcomitantMedicationOperations extends SubstanceAdministrationOper
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * (self.routeCode.oclIsUndefined() or self.routeCode.isNullFlavorUndefined()) implies (not self.routeCode.oclIsUndefined())
    * @param concomitantMedication The receiving '<em><b>Concomitant Medication</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -431,6 +423,7 @@ public class ConcomitantMedicationOperations extends SubstanceAdministrationOper
   
   public static  boolean validateConcomitantMedicationRouteCode(ConcomitantMedication concomitantMedication, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
+  	  
     if (VALIDATE_CONCOMITANT_MEDICATION_ROUTE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(SdtmPackage.Literals.CONCOMITANT_MEDICATION);
@@ -455,6 +448,7 @@ public class ConcomitantMedicationOperations extends SubstanceAdministrationOper
              org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "ConcomitantMedicationRouteCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(concomitantMedication, context) }),
              new Object [] { concomitantMedication }));
       }
+       
       return false;
     }
     return true;
@@ -486,7 +480,6 @@ public class ConcomitantMedicationOperations extends SubstanceAdministrationOper
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * (self.id->isEmpty() or self.id->exists(element | element.isNullFlavorUndefined())) implies (not self.id->isEmpty())
    * @param concomitantMedication The receiving '<em><b>Concomitant Medication</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -496,6 +489,7 @@ public class ConcomitantMedicationOperations extends SubstanceAdministrationOper
   
   public static  boolean validateConcomitantMedicationId(ConcomitantMedication concomitantMedication, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
+  	  
     if (VALIDATE_CONCOMITANT_MEDICATION_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(SdtmPackage.Literals.CONCOMITANT_MEDICATION);
@@ -520,6 +514,7 @@ public class ConcomitantMedicationOperations extends SubstanceAdministrationOper
              org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "ConcomitantMedicationId", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(concomitantMedication, context) }),
              new Object [] { concomitantMedication }));
       }
+       
       return false;
     }
     return true;
@@ -551,7 +546,6 @@ public class ConcomitantMedicationOperations extends SubstanceAdministrationOper
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.moodCode=vocab::x_DocumentSubstanceMood::EVN
    * @param concomitantMedication The receiving '<em><b>Concomitant Medication</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -561,6 +555,7 @@ public class ConcomitantMedicationOperations extends SubstanceAdministrationOper
   
   public static  boolean validateConcomitantMedicationMoodCode(ConcomitantMedication concomitantMedication, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
+  	  
     if (VALIDATE_CONCOMITANT_MEDICATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(SdtmPackage.Literals.CONCOMITANT_MEDICATION);
@@ -585,6 +580,7 @@ public class ConcomitantMedicationOperations extends SubstanceAdministrationOper
              org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "ConcomitantMedicationMoodCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(concomitantMedication, context) }),
              new Object [] { concomitantMedication }));
       }
+       
       return false;
     }
     return true;
@@ -616,7 +612,6 @@ public class ConcomitantMedicationOperations extends SubstanceAdministrationOper
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * (self.statusCode.oclIsUndefined() or self.statusCode.isNullFlavorUndefined()) implies (not self.statusCode.oclIsUndefined())
    * @param concomitantMedication The receiving '<em><b>Concomitant Medication</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -626,6 +621,7 @@ public class ConcomitantMedicationOperations extends SubstanceAdministrationOper
   
   public static  boolean validateConcomitantMedicationStatusCode(ConcomitantMedication concomitantMedication, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
+  	  
     if (VALIDATE_CONCOMITANT_MEDICATION_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(SdtmPackage.Literals.CONCOMITANT_MEDICATION);
@@ -650,6 +646,7 @@ public class ConcomitantMedicationOperations extends SubstanceAdministrationOper
              org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "ConcomitantMedicationStatusCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(concomitantMedication, context) }),
              new Object [] { concomitantMedication }));
       }
+       
       return false;
     }
     return true;
@@ -681,7 +678,6 @@ public class ConcomitantMedicationOperations extends SubstanceAdministrationOper
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * (self.text.oclIsUndefined() or self.text.isNullFlavorUndefined()) implies (not self.text.oclIsUndefined())
    * @param concomitantMedication The receiving '<em><b>Concomitant Medication</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -691,6 +687,7 @@ public class ConcomitantMedicationOperations extends SubstanceAdministrationOper
   
   public static  boolean validateConcomitantMedicationText(ConcomitantMedication concomitantMedication, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
+  	  
     if (VALIDATE_CONCOMITANT_MEDICATION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(SdtmPackage.Literals.CONCOMITANT_MEDICATION);
@@ -715,6 +712,7 @@ public class ConcomitantMedicationOperations extends SubstanceAdministrationOper
              org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "ConcomitantMedicationText", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(concomitantMedication, context) }),
              new Object [] { concomitantMedication }));
       }
+       
       return false;
     }
     return true;
@@ -746,7 +744,6 @@ public class ConcomitantMedicationOperations extends SubstanceAdministrationOper
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * (self.maxDoseQuantity.oclIsUndefined() or self.maxDoseQuantity.isNullFlavorUndefined()) implies (not self.maxDoseQuantity.oclIsUndefined())
    * @param concomitantMedication The receiving '<em><b>Concomitant Medication</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -756,6 +753,7 @@ public class ConcomitantMedicationOperations extends SubstanceAdministrationOper
   
   public static  boolean validateConcomitantMedicationMaxDoseQuantity(ConcomitantMedication concomitantMedication, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
+  	  
     if (VALIDATE_CONCOMITANT_MEDICATION_MAX_DOSE_QUANTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(SdtmPackage.Literals.CONCOMITANT_MEDICATION);
@@ -780,6 +778,7 @@ public class ConcomitantMedicationOperations extends SubstanceAdministrationOper
              org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "ConcomitantMedicationMaxDoseQuantity", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(concomitantMedication, context) }),
              new Object [] { concomitantMedication }));
       }
+       
       return false;
     }
     return true;
@@ -811,7 +810,6 @@ public class ConcomitantMedicationOperations extends SubstanceAdministrationOper
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.entryRelationship->one(entryRelationship : cda::EntryRelationship | not entryRelationship.act.oclIsUndefined() and entryRelationship.act.oclIsKindOf(sdtm::Group Identifier) and entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::COMP)
    * @param concomitantMedication The receiving '<em><b>Concomitant Medication</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -821,6 +819,7 @@ public class ConcomitantMedicationOperations extends SubstanceAdministrationOper
   
   public static  boolean validateConcomitantMedicationGroupIdentifier(ConcomitantMedication concomitantMedication, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
+  	  
     if (VALIDATE_CONCOMITANT_MEDICATION_GROUP_IDENTIFIER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(SdtmPackage.Literals.CONCOMITANT_MEDICATION);
@@ -845,6 +844,7 @@ public class ConcomitantMedicationOperations extends SubstanceAdministrationOper
              org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "ConcomitantMedicationGroupIdentifier", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(concomitantMedication, context) }),
              new Object [] { concomitantMedication }));
       }
+       
       return false;
     }
     return true;
@@ -876,7 +876,6 @@ public class ConcomitantMedicationOperations extends SubstanceAdministrationOper
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.entryRelationship->one(entryRelationship : cda::EntryRelationship | not entryRelationship.oclIsUndefined() and entryRelationship.oclIsKindOf(cda::EntryRelationship))
    * @param concomitantMedication The receiving '<em><b>Concomitant Medication</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -886,6 +885,7 @@ public class ConcomitantMedicationOperations extends SubstanceAdministrationOper
   
   public static  boolean validateConcomitantMedicationConcomitantMedicationCategoryAssociation(ConcomitantMedication concomitantMedication, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
+  	  
     if (VALIDATE_CONCOMITANT_MEDICATION_CONCOMITANT_MEDICATION_CATEGORY_ASSOCIATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(SdtmPackage.Literals.CONCOMITANT_MEDICATION);
@@ -910,6 +910,7 @@ public class ConcomitantMedicationOperations extends SubstanceAdministrationOper
              org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "ConcomitantMedicationConcomitantMedicationCategoryAssociation", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(concomitantMedication, context) }),
              new Object [] { concomitantMedication }));
       }
+       
       return false;
     }
     return true;
@@ -941,7 +942,6 @@ public class ConcomitantMedicationOperations extends SubstanceAdministrationOper
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.entryRelationship->one(entryRelationship : cda::EntryRelationship | not entryRelationship.observation.oclIsUndefined() and entryRelationship.observation.oclIsKindOf(sdtm::Non Performance Reason) and entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::COMP)
    * @param concomitantMedication The receiving '<em><b>Concomitant Medication</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -951,6 +951,7 @@ public class ConcomitantMedicationOperations extends SubstanceAdministrationOper
   
   public static  boolean validateConcomitantMedicationNonPerformanceReason(ConcomitantMedication concomitantMedication, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
+  	  
     if (VALIDATE_CONCOMITANT_MEDICATION_NON_PERFORMANCE_REASON__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(SdtmPackage.Literals.CONCOMITANT_MEDICATION);
@@ -975,6 +976,7 @@ public class ConcomitantMedicationOperations extends SubstanceAdministrationOper
              org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "ConcomitantMedicationNonPerformanceReason", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(concomitantMedication, context) }),
              new Object [] { concomitantMedication }));
       }
+       
       return false;
     }
     return true;
@@ -1006,7 +1008,6 @@ public class ConcomitantMedicationOperations extends SubstanceAdministrationOper
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.entryRelationship->one(entryRelationship : cda::EntryRelationship | not entryRelationship.oclIsUndefined() and entryRelationship.oclIsKindOf(cda::EntryRelationship))
    * @param concomitantMedication The receiving '<em><b>Concomitant Medication</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -1016,6 +1017,7 @@ public class ConcomitantMedicationOperations extends SubstanceAdministrationOper
   
   public static  boolean validateConcomitantMedicationindicationAssociation(ConcomitantMedication concomitantMedication, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
+  	  
     if (VALIDATE_CONCOMITANT_MEDICATIONINDICATION_ASSOCIATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(SdtmPackage.Literals.CONCOMITANT_MEDICATION);
@@ -1040,6 +1042,7 @@ public class ConcomitantMedicationOperations extends SubstanceAdministrationOper
              org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "ConcomitantMedicationindicationAssociation", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(concomitantMedication, context) }),
              new Object [] { concomitantMedication }));
       }
+       
       return false;
     }
     return true;
@@ -1071,7 +1074,6 @@ public class ConcomitantMedicationOperations extends SubstanceAdministrationOper
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.consumable->one(consumable : cda::Consumable | not consumable.oclIsUndefined() and consumable.oclIsKindOf(sdtm::Consumable Material))
    * @param concomitantMedication The receiving '<em><b>Concomitant Medication</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -1081,6 +1083,7 @@ public class ConcomitantMedicationOperations extends SubstanceAdministrationOper
   
   public static  boolean validateConcomitantMedicationConsumableMaterial(ConcomitantMedication concomitantMedication, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
+  	  
     if (VALIDATE_CONCOMITANT_MEDICATION_CONSUMABLE_MATERIAL__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(SdtmPackage.Literals.CONCOMITANT_MEDICATION);
@@ -1105,6 +1108,7 @@ public class ConcomitantMedicationOperations extends SubstanceAdministrationOper
              org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "ConcomitantMedicationConsumableMaterial", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(concomitantMedication, context) }),
              new Object [] { concomitantMedication }));
       }
+       
       return false;
     }
     return true;
@@ -1136,7 +1140,6 @@ public class ConcomitantMedicationOperations extends SubstanceAdministrationOper
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.entryRelationship->one(entryRelationship : cda::EntryRelationship | not entryRelationship.oclIsUndefined() and entryRelationship.oclIsKindOf(cda::EntryRelationship))
    * @param concomitantMedication The receiving '<em><b>Concomitant Medication</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -1146,6 +1149,7 @@ public class ConcomitantMedicationOperations extends SubstanceAdministrationOper
   
   public static  boolean validateConcomitantMedicationConcomitantMedicationSubCategoryAssociation(ConcomitantMedication concomitantMedication, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
+  	  
     if (VALIDATE_CONCOMITANT_MEDICATION_CONCOMITANT_MEDICATION_SUB_CATEGORY_ASSOCIATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(SdtmPackage.Literals.CONCOMITANT_MEDICATION);
@@ -1170,6 +1174,7 @@ public class ConcomitantMedicationOperations extends SubstanceAdministrationOper
              org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "ConcomitantMedicationConcomitantMedicationSubCategoryAssociation", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(concomitantMedication, context) }),
              new Object [] { concomitantMedication }));
       }
+       
       return false;
     }
     return true;
@@ -1201,7 +1206,6 @@ public class ConcomitantMedicationOperations extends SubstanceAdministrationOper
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.entryRelationship->one(entryRelationship : cda::EntryRelationship | not entryRelationship.oclIsUndefined() and entryRelationship.oclIsKindOf(cda::EntryRelationship))
    * @param concomitantMedication The receiving '<em><b>Concomitant Medication</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -1211,6 +1215,7 @@ public class ConcomitantMedicationOperations extends SubstanceAdministrationOper
   
   public static  boolean validateConcomitantMedicationIntendedRegimenAssociation(ConcomitantMedication concomitantMedication, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
+  	  
     if (VALIDATE_CONCOMITANT_MEDICATION_INTENDED_REGIMEN_ASSOCIATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(SdtmPackage.Literals.CONCOMITANT_MEDICATION);
@@ -1235,6 +1240,7 @@ public class ConcomitantMedicationOperations extends SubstanceAdministrationOper
              org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "ConcomitantMedicationIntendedRegimenAssociation", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(concomitantMedication, context) }),
              new Object [] { concomitantMedication }));
       }
+       
       return false;
     }
     return true;
@@ -1266,7 +1272,6 @@ public class ConcomitantMedicationOperations extends SubstanceAdministrationOper
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.entryRelationship->one(entryRelationship : cda::EntryRelationship | not entryRelationship.act.oclIsUndefined() and entryRelationship.act.oclIsKindOf(sdtm::Activity Start Timing Reference) and entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::REFR)
    * @param concomitantMedication The receiving '<em><b>Concomitant Medication</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -1276,6 +1281,7 @@ public class ConcomitantMedicationOperations extends SubstanceAdministrationOper
   
   public static  boolean validateConcomitantMedicationActivityStartTimingReference(ConcomitantMedication concomitantMedication, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
+  	  
     if (VALIDATE_CONCOMITANT_MEDICATION_ACTIVITY_START_TIMING_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(SdtmPackage.Literals.CONCOMITANT_MEDICATION);
@@ -1300,6 +1306,7 @@ public class ConcomitantMedicationOperations extends SubstanceAdministrationOper
              org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "ConcomitantMedicationActivityStartTimingReference", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(concomitantMedication, context) }),
              new Object [] { concomitantMedication }));
       }
+       
       return false;
     }
     return true;
@@ -1331,7 +1338,6 @@ public class ConcomitantMedicationOperations extends SubstanceAdministrationOper
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.entryRelationship->one(entryRelationship : cda::EntryRelationship | not entryRelationship.act.oclIsUndefined() and entryRelationship.act.oclIsKindOf(sdtm::Activity End Timing Reference) and entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::REFR)
    * @param concomitantMedication The receiving '<em><b>Concomitant Medication</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -1341,6 +1347,7 @@ public class ConcomitantMedicationOperations extends SubstanceAdministrationOper
   
   public static  boolean validateConcomitantMedicationActivtyEndTimingReference(ConcomitantMedication concomitantMedication, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
+  	  
     if (VALIDATE_CONCOMITANT_MEDICATION_ACTIVTY_END_TIMING_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(SdtmPackage.Literals.CONCOMITANT_MEDICATION);
@@ -1365,6 +1372,7 @@ public class ConcomitantMedicationOperations extends SubstanceAdministrationOper
              org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "ConcomitantMedicationActivtyEndTimingReference", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(concomitantMedication, context) }),
              new Object [] { concomitantMedication }));
       }
+       
       return false;
     }
     return true;
@@ -1396,7 +1404,6 @@ public class ConcomitantMedicationOperations extends SubstanceAdministrationOper
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.entryRelationship->one(entryRelationship : cda::EntryRelationship | not entryRelationship.observation.oclIsUndefined() and entryRelationship.observation.oclIsKindOf(sdtm::Pre-Specified Event) and entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::COMP)
    * @param concomitantMedication The receiving '<em><b>Concomitant Medication</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -1406,6 +1413,7 @@ public class ConcomitantMedicationOperations extends SubstanceAdministrationOper
   
   public static  boolean validateConcomitantMedicationPreSpecifiedEvent(ConcomitantMedication concomitantMedication, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
+  	  
     if (VALIDATE_CONCOMITANT_MEDICATION_PRE_SPECIFIED_EVENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(SdtmPackage.Literals.CONCOMITANT_MEDICATION);
@@ -1430,6 +1438,7 @@ public class ConcomitantMedicationOperations extends SubstanceAdministrationOper
              org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "ConcomitantMedicationPreSpecifiedEvent", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(concomitantMedication, context) }),
              new Object [] { concomitantMedication }));
       }
+       
       return false;
     }
     return true;
@@ -1461,7 +1470,6 @@ public class ConcomitantMedicationOperations extends SubstanceAdministrationOper
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.entryRelationship->one(entryRelationship : cda::EntryRelationship | not entryRelationship.act.oclIsUndefined() and entryRelationship.act.oclIsKindOf(sdtm::Data Collection) and entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::COMP)
    * @param concomitantMedication The receiving '<em><b>Concomitant Medication</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -1471,6 +1479,7 @@ public class ConcomitantMedicationOperations extends SubstanceAdministrationOper
   
   public static  boolean validateConcomitantMedicationDataCollection(ConcomitantMedication concomitantMedication, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
+  	  
     if (VALIDATE_CONCOMITANT_MEDICATION_DATA_COLLECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(SdtmPackage.Literals.CONCOMITANT_MEDICATION);
@@ -1495,6 +1504,7 @@ public class ConcomitantMedicationOperations extends SubstanceAdministrationOper
              org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "ConcomitantMedicationDataCollection", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(concomitantMedication, context) }),
              new Object [] { concomitantMedication }));
       }
+       
       return false;
     }
     return true;
@@ -1526,7 +1536,6 @@ public class ConcomitantMedicationOperations extends SubstanceAdministrationOper
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.entryRelationship->one(entryRelationship : cda::EntryRelationship | not entryRelationship.observation.oclIsUndefined() and entryRelationship.observation.oclIsKindOf(sdtm::Study Day Period) and entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::REFR)
    * @param concomitantMedication The receiving '<em><b>Concomitant Medication</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -1536,6 +1545,7 @@ public class ConcomitantMedicationOperations extends SubstanceAdministrationOper
   
   public static  boolean validateConcomitantMedicationStudyDayPeriod(ConcomitantMedication concomitantMedication, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
+  	  
     if (VALIDATE_CONCOMITANT_MEDICATION_STUDY_DAY_PERIOD__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(SdtmPackage.Literals.CONCOMITANT_MEDICATION);
@@ -1560,6 +1570,7 @@ public class ConcomitantMedicationOperations extends SubstanceAdministrationOper
              org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "ConcomitantMedicationStudyDayPeriod", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(concomitantMedication, context) }),
              new Object [] { concomitantMedication }));
       }
+       
       return false;
     }
     return true;
@@ -1591,7 +1602,6 @@ public class ConcomitantMedicationOperations extends SubstanceAdministrationOper
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.entryRelationship->excluding(null).observation->excluding(null).entryRelationship->excluding(null).observation->excluding(null)->reject(classCode=vocab::ActClassObservation::OBS)
    * @param concomitantMedication The receiving '<em><b>Concomitant Medication</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -1601,6 +1611,7 @@ public class ConcomitantMedicationOperations extends SubstanceAdministrationOper
   
   public static  boolean validateConcomitantMedicationconcomitantMedicationCategoryAssociationconcomitantMedicationCategoryconcomitantMedicationSubCategoryAssociationConcomitantMedicationSubCategoryClassCode(ConcomitantMedication concomitantMedication, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
+  	  
     if (VALIDATE_CONCOMITANT_MEDICATIONCONCOMITANT_MEDICATION_CATEGORY_ASSOCIATIONCONCOMITANT_MEDICATION_CATEGORYCONCOMITANT_MEDICATION_SUB_CATEGORY_ASSOCIATION_CONCOMITANT_MEDICATION_SUB_CATEGORY_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(SdtmPackage.Literals.CONCOMITANT_MEDICATION);
@@ -1625,6 +1636,73 @@ public class ConcomitantMedicationOperations extends SubstanceAdministrationOper
              org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "ConcomitantMedicationconcomitantMedicationCategoryAssociationconcomitantMedicationCategoryconcomitantMedicationSubCategoryAssociationConcomitantMedicationSubCategoryClassCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(concomitantMedication, context) }),
              new Object [] { concomitantMedication }));
       }
+       
+      return false;
+    }
+    return true;
+  }
+
+  /**
+   * The cached OCL expression body for the '{@link #validateConcomitantMedicationconcomitantMedicationCategoryAssociationconcomitantMedicationCategoryconcomitantMedicationSubCategoryAssociationConcomitantMedicationSubCategoryCodeP(ConcomitantMedication, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Concomitant Medicationconcomitant Medication Category Associationconcomitant Medication Categoryconcomitant Medication Sub Category Association Concomitant Medication Sub Category Code P</em>}' operation.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #validateConcomitantMedicationconcomitantMedicationCategoryAssociationconcomitantMedicationCategoryconcomitantMedicationSubCategoryAssociationConcomitantMedicationSubCategoryCodeP(ConcomitantMedication, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+   * @generated
+   * @ordered
+   */
+  protected static final String VALIDATE_CONCOMITANT_MEDICATIONCONCOMITANT_MEDICATION_CATEGORY_ASSOCIATIONCONCOMITANT_MEDICATION_CATEGORYCONCOMITANT_MEDICATION_SUB_CATEGORY_ASSOCIATION_CONCOMITANT_MEDICATION_SUB_CATEGORY_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entryRelationship->excluding(null).observation->excluding(null).entryRelationship->excluding(null).observation->excluding(null)->reject((code.oclIsUndefined() or code.isNullFlavorUndefined()) implies (not code.oclIsUndefined()))";
+
+  /**
+   * The cached OCL invariant for the '{@link #validateConcomitantMedicationconcomitantMedicationCategoryAssociationconcomitantMedicationCategoryconcomitantMedicationSubCategoryAssociationConcomitantMedicationSubCategoryCodeP(ConcomitantMedication, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Concomitant Medicationconcomitant Medication Category Associationconcomitant Medication Categoryconcomitant Medication Sub Category Association Concomitant Medication Sub Category Code P</em>}' invariant operation.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #validateConcomitantMedicationconcomitantMedicationCategoryAssociationconcomitantMedicationCategoryconcomitantMedicationSubCategoryAssociationConcomitantMedicationSubCategoryCodeP(ConcomitantMedication, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+   * @generated
+   * @ordered
+   */
+  
+  protected static Constraint VALIDATE_CONCOMITANT_MEDICATIONCONCOMITANT_MEDICATION_CATEGORY_ASSOCIATIONCONCOMITANT_MEDICATION_CATEGORYCONCOMITANT_MEDICATION_SUB_CATEGORY_ASSOCIATION_CONCOMITANT_MEDICATION_SUB_CATEGORY_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * <!-- begin-model-doc -->
+   * @param concomitantMedication The receiving '<em><b>Concomitant Medication</b></em>' model object.
+   * @param diagnostics The chain of diagnostics to which problems are to be appended.
+   * @param context The cache of context-specific information.
+   * <!-- end-model-doc -->
+   * @generated
+   */
+  
+  public static  boolean validateConcomitantMedicationconcomitantMedicationCategoryAssociationconcomitantMedicationCategoryconcomitantMedicationSubCategoryAssociationConcomitantMedicationSubCategoryCodeP(ConcomitantMedication concomitantMedication, DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+  	  
+    if (VALIDATE_CONCOMITANT_MEDICATIONCONCOMITANT_MEDICATION_CATEGORY_ASSOCIATIONCONCOMITANT_MEDICATION_CATEGORYCONCOMITANT_MEDICATION_SUB_CATEGORY_ASSOCIATION_CONCOMITANT_MEDICATION_SUB_CATEGORY_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+      OCL.Helper helper = EOCL_ENV.createOCLHelper();
+      helper.setContext(SdtmPackage.Literals.CONCOMITANT_MEDICATION);
+      try
+      {
+        VALIDATE_CONCOMITANT_MEDICATIONCONCOMITANT_MEDICATION_CATEGORY_ASSOCIATIONCONCOMITANT_MEDICATION_CATEGORYCONCOMITANT_MEDICATION_SUB_CATEGORY_ASSOCIATION_CONCOMITANT_MEDICATION_SUB_CATEGORY_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_CONCOMITANT_MEDICATIONCONCOMITANT_MEDICATION_CATEGORY_ASSOCIATIONCONCOMITANT_MEDICATION_CATEGORYCONCOMITANT_MEDICATION_SUB_CATEGORY_ASSOCIATION_CONCOMITANT_MEDICATION_SUB_CATEGORY_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+      }
+      catch (ParserException pe)
+      {
+        throw new UnsupportedOperationException(pe.getLocalizedMessage());
+      }
+    }
+    if (!EOCL_ENV.createQuery(VALIDATE_CONCOMITANT_MEDICATIONCONCOMITANT_MEDICATION_CATEGORY_ASSOCIATIONCONCOMITANT_MEDICATION_CATEGORYCONCOMITANT_MEDICATION_SUB_CATEGORY_ASSOCIATION_CONCOMITANT_MEDICATION_SUB_CATEGORY_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(concomitantMedication))
+    {
+      if (diagnostics != null)
+      {
+        diagnostics.add
+          (new BasicDiagnostic
+            (Diagnostic.ERROR,
+             SdtmValidator.DIAGNOSTIC_SOURCE,
+             SdtmValidator.CONCOMITANT_MEDICATION__CONCOMITANT_MEDICATIONCONCOMITANT_MEDICATION_CATEGORY_ASSOCIATIONCONCOMITANT_MEDICATION_CATEGORYCONCOMITANT_MEDICATION_SUB_CATEGORY_ASSOCIATION_CONCOMITANT_MEDICATION_SUB_CATEGORY_CODE_P,
+             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "ConcomitantMedicationconcomitantMedicationCategoryAssociationconcomitantMedicationCategoryconcomitantMedicationSubCategoryAssociationConcomitantMedicationSubCategoryCodeP", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(concomitantMedication, context) }),
+             new Object [] { concomitantMedication }));
+      }
+       
       return false;
     }
     return true;
@@ -1638,7 +1716,9 @@ public class ConcomitantMedicationOperations extends SubstanceAdministrationOper
    * @generated
    * @ordered
    */
-  protected static final String VALIDATE_CONCOMITANT_MEDICATIONCONCOMITANT_MEDICATION_CATEGORY_ASSOCIATIONCONCOMITANT_MEDICATION_CATEGORYCONCOMITANT_MEDICATION_SUB_CATEGORY_ASSOCIATION_CONCOMITANT_MEDICATION_SUB_CATEGORY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entryRelationship->excluding(null).observation->excluding(null).entryRelationship->excluding(null).observation->excluding(null)->reject((code.oclIsUndefined() or code.isNullFlavorUndefined()) implies (not code.oclIsUndefined()))";
+  protected static final String VALIDATE_CONCOMITANT_MEDICATIONCONCOMITANT_MEDICATION_CATEGORY_ASSOCIATIONCONCOMITANT_MEDICATION_CATEGORYCONCOMITANT_MEDICATION_SUB_CATEGORY_ASSOCIATION_CONCOMITANT_MEDICATION_SUB_CATEGORY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entryRelationship->excluding(null).observation->excluding(null).entryRelationship->excluding(null).observation->excluding(null)->reject((code.oclIsUndefined() or code.isNullFlavorUndefined()) implies (not code.oclIsUndefined() and code.oclIsKindOf(datatypes::CD) and "+
+"let value : datatypes::CD = code.oclAsType(datatypes::CD) in "+
+"value.code = 'C83232' and value.codeSystem = '2.16.840.1.113883.3.26.1.1'))";
 
   /**
    * The cached OCL invariant for the '{@link #validateConcomitantMedicationconcomitantMedicationCategoryAssociationconcomitantMedicationCategoryconcomitantMedicationSubCategoryAssociationConcomitantMedicationSubCategoryCode(ConcomitantMedication, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Concomitant Medicationconcomitant Medication Category Associationconcomitant Medication Categoryconcomitant Medication Sub Category Association Concomitant Medication Sub Category Code</em>}' invariant operation.
@@ -1656,7 +1736,6 @@ public class ConcomitantMedicationOperations extends SubstanceAdministrationOper
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.entryRelationship->excluding(null).observation->excluding(null).entryRelationship->excluding(null).observation->excluding(null)->reject((code.oclIsUndefined() or code.isNullFlavorUndefined()) implies (not code.oclIsUndefined()))
    * @param concomitantMedication The receiving '<em><b>Concomitant Medication</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -1666,6 +1745,7 @@ public class ConcomitantMedicationOperations extends SubstanceAdministrationOper
   
   public static  boolean validateConcomitantMedicationconcomitantMedicationCategoryAssociationconcomitantMedicationCategoryconcomitantMedicationSubCategoryAssociationConcomitantMedicationSubCategoryCode(ConcomitantMedication concomitantMedication, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
+  	  
     if (VALIDATE_CONCOMITANT_MEDICATIONCONCOMITANT_MEDICATION_CATEGORY_ASSOCIATIONCONCOMITANT_MEDICATION_CATEGORYCONCOMITANT_MEDICATION_SUB_CATEGORY_ASSOCIATION_CONCOMITANT_MEDICATION_SUB_CATEGORY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(SdtmPackage.Literals.CONCOMITANT_MEDICATION);
@@ -1690,6 +1770,7 @@ public class ConcomitantMedicationOperations extends SubstanceAdministrationOper
              org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "ConcomitantMedicationconcomitantMedicationCategoryAssociationconcomitantMedicationCategoryconcomitantMedicationSubCategoryAssociationConcomitantMedicationSubCategoryCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(concomitantMedication, context) }),
              new Object [] { concomitantMedication }));
       }
+       
       return false;
     }
     return true;
@@ -1721,7 +1802,6 @@ public class ConcomitantMedicationOperations extends SubstanceAdministrationOper
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.entryRelationship->excluding(null).observation->excluding(null).entryRelationship->excluding(null).observation->excluding(null)->reject(moodCode=vocab::x_ActMoodDocumentObservation::EVN)
    * @param concomitantMedication The receiving '<em><b>Concomitant Medication</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -1731,6 +1811,7 @@ public class ConcomitantMedicationOperations extends SubstanceAdministrationOper
   
   public static  boolean validateConcomitantMedicationconcomitantMedicationCategoryAssociationconcomitantMedicationCategoryconcomitantMedicationSubCategoryAssociationConcomitantMedicationSubCategoryMoodCode(ConcomitantMedication concomitantMedication, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
+  	  
     if (VALIDATE_CONCOMITANT_MEDICATIONCONCOMITANT_MEDICATION_CATEGORY_ASSOCIATIONCONCOMITANT_MEDICATION_CATEGORYCONCOMITANT_MEDICATION_SUB_CATEGORY_ASSOCIATION_CONCOMITANT_MEDICATION_SUB_CATEGORY_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(SdtmPackage.Literals.CONCOMITANT_MEDICATION);
@@ -1755,6 +1836,7 @@ public class ConcomitantMedicationOperations extends SubstanceAdministrationOper
              org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "ConcomitantMedicationconcomitantMedicationCategoryAssociationconcomitantMedicationCategoryconcomitantMedicationSubCategoryAssociationConcomitantMedicationSubCategoryMoodCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(concomitantMedication, context) }),
              new Object [] { concomitantMedication }));
       }
+       
       return false;
     }
     return true;
@@ -1786,7 +1868,6 @@ public class ConcomitantMedicationOperations extends SubstanceAdministrationOper
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.entryRelationship->excluding(null).observation->excluding(null).entryRelationship->excluding(null).observation->excluding(null)->reject((value->isEmpty() or value->exists(element | element.isNullFlavorUndefined())) implies (value->size() = 1 and value->forAll(element | element.oclIsTypeOf(datatypes::CE))))
    * @param concomitantMedication The receiving '<em><b>Concomitant Medication</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -1796,6 +1877,7 @@ public class ConcomitantMedicationOperations extends SubstanceAdministrationOper
   
   public static  boolean validateConcomitantMedicationconcomitantMedicationCategoryAssociationconcomitantMedicationCategoryconcomitantMedicationSubCategoryAssociationConcomitantMedicationSubCategoryValue(ConcomitantMedication concomitantMedication, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
+  	  
     if (VALIDATE_CONCOMITANT_MEDICATIONCONCOMITANT_MEDICATION_CATEGORY_ASSOCIATIONCONCOMITANT_MEDICATION_CATEGORYCONCOMITANT_MEDICATION_SUB_CATEGORY_ASSOCIATION_CONCOMITANT_MEDICATION_SUB_CATEGORY_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(SdtmPackage.Literals.CONCOMITANT_MEDICATION);
@@ -1820,6 +1902,7 @@ public class ConcomitantMedicationOperations extends SubstanceAdministrationOper
              org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "ConcomitantMedicationconcomitantMedicationCategoryAssociationconcomitantMedicationCategoryconcomitantMedicationSubCategoryAssociationConcomitantMedicationSubCategoryValue", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(concomitantMedication, context) }),
              new Object [] { concomitantMedication }));
       }
+       
       return false;
     }
     return true;
@@ -1851,7 +1934,6 @@ public class ConcomitantMedicationOperations extends SubstanceAdministrationOper
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.entryRelationship->excluding(null).observation->excluding(null).entryRelationship->excluding(null)->reject(typeCode=vocab::x_ActRelationshipEntryRelationship::COMP)
    * @param concomitantMedication The receiving '<em><b>Concomitant Medication</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -1861,6 +1943,7 @@ public class ConcomitantMedicationOperations extends SubstanceAdministrationOper
   
   public static  boolean validateConcomitantMedicationconcomitantMedicationCategoryAssociationconcomitantMedicationCategoryconcomitantMedicationSubCategoryAssociationTypeCode(ConcomitantMedication concomitantMedication, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
+  	  
     if (VALIDATE_CONCOMITANT_MEDICATIONCONCOMITANT_MEDICATION_CATEGORY_ASSOCIATIONCONCOMITANT_MEDICATION_CATEGORYCONCOMITANT_MEDICATION_SUB_CATEGORY_ASSOCIATION_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(SdtmPackage.Literals.CONCOMITANT_MEDICATION);
@@ -1885,6 +1968,7 @@ public class ConcomitantMedicationOperations extends SubstanceAdministrationOper
              org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "ConcomitantMedicationconcomitantMedicationCategoryAssociationconcomitantMedicationCategoryconcomitantMedicationSubCategoryAssociationTypeCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(concomitantMedication, context) }),
              new Object [] { concomitantMedication }));
       }
+       
       return false;
     }
     return true;
@@ -1916,7 +2000,6 @@ public class ConcomitantMedicationOperations extends SubstanceAdministrationOper
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.entryRelationship->excluding(null).observation->excluding(null).entryRelationship->excluding(null)->reject(observation->one(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(cda::Observation)))
    * @param concomitantMedication The receiving '<em><b>Concomitant Medication</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -1926,6 +2009,7 @@ public class ConcomitantMedicationOperations extends SubstanceAdministrationOper
   
   public static  boolean validateConcomitantMedicationconcomitantMedicationCategoryAssociationconcomitantMedicationCategoryconcomitantMedicationSubCategoryAssociationConcomitantMedicationSubCategory(ConcomitantMedication concomitantMedication, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
+  	  
     if (VALIDATE_CONCOMITANT_MEDICATIONCONCOMITANT_MEDICATION_CATEGORY_ASSOCIATIONCONCOMITANT_MEDICATION_CATEGORYCONCOMITANT_MEDICATION_SUB_CATEGORY_ASSOCIATION_CONCOMITANT_MEDICATION_SUB_CATEGORY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(SdtmPackage.Literals.CONCOMITANT_MEDICATION);
@@ -1950,6 +2034,7 @@ public class ConcomitantMedicationOperations extends SubstanceAdministrationOper
              org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "ConcomitantMedicationconcomitantMedicationCategoryAssociationconcomitantMedicationCategoryconcomitantMedicationSubCategoryAssociationConcomitantMedicationSubCategory", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(concomitantMedication, context) }),
              new Object [] { concomitantMedication }));
       }
+       
       return false;
     }
     return true;
@@ -1981,7 +2066,6 @@ public class ConcomitantMedicationOperations extends SubstanceAdministrationOper
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.entryRelationship->excluding(null).observation->excluding(null)->reject(isDefined('classCode'))
    * @param concomitantMedication The receiving '<em><b>Concomitant Medication</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -1991,6 +2075,7 @@ public class ConcomitantMedicationOperations extends SubstanceAdministrationOper
   
   public static  boolean validateConcomitantMedicationconcomitantMedicationCategoryAssociationconcomitantMedicationCategoryClassCode(ConcomitantMedication concomitantMedication, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
+  	  
     if (VALIDATE_CONCOMITANT_MEDICATIONCONCOMITANT_MEDICATION_CATEGORY_ASSOCIATIONCONCOMITANT_MEDICATION_CATEGORY_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(SdtmPackage.Literals.CONCOMITANT_MEDICATION);
@@ -2015,6 +2100,73 @@ public class ConcomitantMedicationOperations extends SubstanceAdministrationOper
              org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "ConcomitantMedicationconcomitantMedicationCategoryAssociationconcomitantMedicationCategoryClassCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(concomitantMedication, context) }),
              new Object [] { concomitantMedication }));
       }
+       
+      return false;
+    }
+    return true;
+  }
+
+  /**
+   * The cached OCL expression body for the '{@link #validateConcomitantMedicationconcomitantMedicationCategoryAssociationconcomitantMedicationCategoryCodeP(ConcomitantMedication, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Concomitant Medicationconcomitant Medication Category Associationconcomitant Medication Category Code P</em>}' operation.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #validateConcomitantMedicationconcomitantMedicationCategoryAssociationconcomitantMedicationCategoryCodeP(ConcomitantMedication, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+   * @generated
+   * @ordered
+   */
+  protected static final String VALIDATE_CONCOMITANT_MEDICATIONCONCOMITANT_MEDICATION_CATEGORY_ASSOCIATIONCONCOMITANT_MEDICATION_CATEGORY_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entryRelationship->excluding(null).observation->excluding(null)->reject((code.oclIsUndefined() or code.isNullFlavorUndefined()) implies (not code.oclIsUndefined()))";
+
+  /**
+   * The cached OCL invariant for the '{@link #validateConcomitantMedicationconcomitantMedicationCategoryAssociationconcomitantMedicationCategoryCodeP(ConcomitantMedication, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Concomitant Medicationconcomitant Medication Category Associationconcomitant Medication Category Code P</em>}' invariant operation.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #validateConcomitantMedicationconcomitantMedicationCategoryAssociationconcomitantMedicationCategoryCodeP(ConcomitantMedication, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+   * @generated
+   * @ordered
+   */
+  
+  protected static Constraint VALIDATE_CONCOMITANT_MEDICATIONCONCOMITANT_MEDICATION_CATEGORY_ASSOCIATIONCONCOMITANT_MEDICATION_CATEGORY_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * <!-- begin-model-doc -->
+   * @param concomitantMedication The receiving '<em><b>Concomitant Medication</b></em>' model object.
+   * @param diagnostics The chain of diagnostics to which problems are to be appended.
+   * @param context The cache of context-specific information.
+   * <!-- end-model-doc -->
+   * @generated
+   */
+  
+  public static  boolean validateConcomitantMedicationconcomitantMedicationCategoryAssociationconcomitantMedicationCategoryCodeP(ConcomitantMedication concomitantMedication, DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+  	  
+    if (VALIDATE_CONCOMITANT_MEDICATIONCONCOMITANT_MEDICATION_CATEGORY_ASSOCIATIONCONCOMITANT_MEDICATION_CATEGORY_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+      OCL.Helper helper = EOCL_ENV.createOCLHelper();
+      helper.setContext(SdtmPackage.Literals.CONCOMITANT_MEDICATION);
+      try
+      {
+        VALIDATE_CONCOMITANT_MEDICATIONCONCOMITANT_MEDICATION_CATEGORY_ASSOCIATIONCONCOMITANT_MEDICATION_CATEGORY_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_CONCOMITANT_MEDICATIONCONCOMITANT_MEDICATION_CATEGORY_ASSOCIATIONCONCOMITANT_MEDICATION_CATEGORY_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+      }
+      catch (ParserException pe)
+      {
+        throw new UnsupportedOperationException(pe.getLocalizedMessage());
+      }
+    }
+    if (!EOCL_ENV.createQuery(VALIDATE_CONCOMITANT_MEDICATIONCONCOMITANT_MEDICATION_CATEGORY_ASSOCIATIONCONCOMITANT_MEDICATION_CATEGORY_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(concomitantMedication))
+    {
+      if (diagnostics != null)
+      {
+        diagnostics.add
+          (new BasicDiagnostic
+            (Diagnostic.ERROR,
+             SdtmValidator.DIAGNOSTIC_SOURCE,
+             SdtmValidator.CONCOMITANT_MEDICATION__CONCOMITANT_MEDICATIONCONCOMITANT_MEDICATION_CATEGORY_ASSOCIATIONCONCOMITANT_MEDICATION_CATEGORY_CODE_P,
+             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "ConcomitantMedicationconcomitantMedicationCategoryAssociationconcomitantMedicationCategoryCodeP", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(concomitantMedication, context) }),
+             new Object [] { concomitantMedication }));
+      }
+       
       return false;
     }
     return true;
@@ -2028,7 +2180,9 @@ public class ConcomitantMedicationOperations extends SubstanceAdministrationOper
    * @generated
    * @ordered
    */
-  protected static final String VALIDATE_CONCOMITANT_MEDICATIONCONCOMITANT_MEDICATION_CATEGORY_ASSOCIATIONCONCOMITANT_MEDICATION_CATEGORY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entryRelationship->excluding(null).observation->excluding(null)->reject((code.oclIsUndefined() or code.isNullFlavorUndefined()) implies (not code.oclIsUndefined()))";
+  protected static final String VALIDATE_CONCOMITANT_MEDICATIONCONCOMITANT_MEDICATION_CATEGORY_ASSOCIATIONCONCOMITANT_MEDICATION_CATEGORY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entryRelationship->excluding(null).observation->excluding(null)->reject((code.oclIsUndefined() or code.isNullFlavorUndefined()) implies (not code.oclIsUndefined() and code.oclIsKindOf(datatypes::CD) and "+
+"let value : datatypes::CD = code.oclAsType(datatypes::CD) in "+
+"value.code = 'C83218' and value.codeSystem = '2.16.840.1.113883.3.26.1.1'))";
 
   /**
    * The cached OCL invariant for the '{@link #validateConcomitantMedicationconcomitantMedicationCategoryAssociationconcomitantMedicationCategoryCode(ConcomitantMedication, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Concomitant Medicationconcomitant Medication Category Associationconcomitant Medication Category Code</em>}' invariant operation.
@@ -2046,7 +2200,6 @@ public class ConcomitantMedicationOperations extends SubstanceAdministrationOper
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.entryRelationship->excluding(null).observation->excluding(null)->reject((code.oclIsUndefined() or code.isNullFlavorUndefined()) implies (not code.oclIsUndefined()))
    * @param concomitantMedication The receiving '<em><b>Concomitant Medication</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -2056,6 +2209,7 @@ public class ConcomitantMedicationOperations extends SubstanceAdministrationOper
   
   public static  boolean validateConcomitantMedicationconcomitantMedicationCategoryAssociationconcomitantMedicationCategoryCode(ConcomitantMedication concomitantMedication, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
+  	  
     if (VALIDATE_CONCOMITANT_MEDICATIONCONCOMITANT_MEDICATION_CATEGORY_ASSOCIATIONCONCOMITANT_MEDICATION_CATEGORY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(SdtmPackage.Literals.CONCOMITANT_MEDICATION);
@@ -2080,6 +2234,7 @@ public class ConcomitantMedicationOperations extends SubstanceAdministrationOper
              org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "ConcomitantMedicationconcomitantMedicationCategoryAssociationconcomitantMedicationCategoryCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(concomitantMedication, context) }),
              new Object [] { concomitantMedication }));
       }
+       
       return false;
     }
     return true;
@@ -2111,7 +2266,6 @@ public class ConcomitantMedicationOperations extends SubstanceAdministrationOper
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.entryRelationship->excluding(null).observation->excluding(null)->reject(isDefined('moodCode'))
    * @param concomitantMedication The receiving '<em><b>Concomitant Medication</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -2121,6 +2275,7 @@ public class ConcomitantMedicationOperations extends SubstanceAdministrationOper
   
   public static  boolean validateConcomitantMedicationconcomitantMedicationCategoryAssociationconcomitantMedicationCategoryMoodCode(ConcomitantMedication concomitantMedication, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
+  	  
     if (VALIDATE_CONCOMITANT_MEDICATIONCONCOMITANT_MEDICATION_CATEGORY_ASSOCIATIONCONCOMITANT_MEDICATION_CATEGORY_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(SdtmPackage.Literals.CONCOMITANT_MEDICATION);
@@ -2145,6 +2300,7 @@ public class ConcomitantMedicationOperations extends SubstanceAdministrationOper
              org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "ConcomitantMedicationconcomitantMedicationCategoryAssociationconcomitantMedicationCategoryMoodCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(concomitantMedication, context) }),
              new Object [] { concomitantMedication }));
       }
+       
       return false;
     }
     return true;
@@ -2176,7 +2332,6 @@ public class ConcomitantMedicationOperations extends SubstanceAdministrationOper
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.entryRelationship->excluding(null).observation->excluding(null)->reject((value->isEmpty() or value->exists(element | element.isNullFlavorUndefined())) implies (value->size() = 1 and value->forAll(element | element.oclIsTypeOf(datatypes::CE))))
    * @param concomitantMedication The receiving '<em><b>Concomitant Medication</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -2186,6 +2341,7 @@ public class ConcomitantMedicationOperations extends SubstanceAdministrationOper
   
   public static  boolean validateConcomitantMedicationconcomitantMedicationCategoryAssociationconcomitantMedicationCategoryValue(ConcomitantMedication concomitantMedication, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
+  	  
     if (VALIDATE_CONCOMITANT_MEDICATIONCONCOMITANT_MEDICATION_CATEGORY_ASSOCIATIONCONCOMITANT_MEDICATION_CATEGORY_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(SdtmPackage.Literals.CONCOMITANT_MEDICATION);
@@ -2210,6 +2366,7 @@ public class ConcomitantMedicationOperations extends SubstanceAdministrationOper
              org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "ConcomitantMedicationconcomitantMedicationCategoryAssociationconcomitantMedicationCategoryValue", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(concomitantMedication, context) }),
              new Object [] { concomitantMedication }));
       }
+       
       return false;
     }
     return true;
@@ -2241,7 +2398,6 @@ public class ConcomitantMedicationOperations extends SubstanceAdministrationOper
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.entryRelationship->excluding(null).observation->excluding(null)->reject(entryRelationship->one(entryRelationship : cda::EntryRelationship | not entryRelationship.oclIsUndefined() and entryRelationship.oclIsKindOf(cda::EntryRelationship)))
    * @param concomitantMedication The receiving '<em><b>Concomitant Medication</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -2251,6 +2407,7 @@ public class ConcomitantMedicationOperations extends SubstanceAdministrationOper
   
   public static  boolean validateConcomitantMedicationconcomitantMedicationCategoryAssociationconcomitantMedicationCategoryConcomitantMedicationSubCategoryAssociation(ConcomitantMedication concomitantMedication, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
+  	  
     if (VALIDATE_CONCOMITANT_MEDICATIONCONCOMITANT_MEDICATION_CATEGORY_ASSOCIATIONCONCOMITANT_MEDICATION_CATEGORY_CONCOMITANT_MEDICATION_SUB_CATEGORY_ASSOCIATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(SdtmPackage.Literals.CONCOMITANT_MEDICATION);
@@ -2275,6 +2432,7 @@ public class ConcomitantMedicationOperations extends SubstanceAdministrationOper
              org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "ConcomitantMedicationconcomitantMedicationCategoryAssociationconcomitantMedicationCategoryConcomitantMedicationSubCategoryAssociation", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(concomitantMedication, context) }),
              new Object [] { concomitantMedication }));
       }
+       
       return false;
     }
     return true;
@@ -2306,7 +2464,6 @@ public class ConcomitantMedicationOperations extends SubstanceAdministrationOper
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.entryRelationship->excluding(null)->reject(typeCode=vocab::x_ActRelationshipEntryRelationship::COMP)
    * @param concomitantMedication The receiving '<em><b>Concomitant Medication</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -2316,6 +2473,7 @@ public class ConcomitantMedicationOperations extends SubstanceAdministrationOper
   
   public static  boolean validateConcomitantMedicationconcomitantMedicationCategoryAssociationTypeCode(ConcomitantMedication concomitantMedication, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
+  	  
     if (VALIDATE_CONCOMITANT_MEDICATIONCONCOMITANT_MEDICATION_CATEGORY_ASSOCIATION_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(SdtmPackage.Literals.CONCOMITANT_MEDICATION);
@@ -2340,6 +2498,7 @@ public class ConcomitantMedicationOperations extends SubstanceAdministrationOper
              org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "ConcomitantMedicationconcomitantMedicationCategoryAssociationTypeCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(concomitantMedication, context) }),
              new Object [] { concomitantMedication }));
       }
+       
       return false;
     }
     return true;
@@ -2371,7 +2530,6 @@ public class ConcomitantMedicationOperations extends SubstanceAdministrationOper
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.entryRelationship->excluding(null)->reject(observation->one(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(cda::Observation)))
    * @param concomitantMedication The receiving '<em><b>Concomitant Medication</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -2381,6 +2539,7 @@ public class ConcomitantMedicationOperations extends SubstanceAdministrationOper
   
   public static  boolean validateConcomitantMedicationconcomitantMedicationCategoryAssociationConcomitantMedicationCategory(ConcomitantMedication concomitantMedication, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
+  	  
     if (VALIDATE_CONCOMITANT_MEDICATIONCONCOMITANT_MEDICATION_CATEGORY_ASSOCIATION_CONCOMITANT_MEDICATION_CATEGORY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(SdtmPackage.Literals.CONCOMITANT_MEDICATION);
@@ -2405,721 +2564,7 @@ public class ConcomitantMedicationOperations extends SubstanceAdministrationOper
              org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "ConcomitantMedicationconcomitantMedicationCategoryAssociationConcomitantMedicationCategory", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(concomitantMedication, context) }),
              new Object [] { concomitantMedication }));
       }
-      return false;
-    }
-    return true;
-  }
-
-  /**
-   * The cached OCL expression body for the '{@link #validateConcomitantMedicationconcomitantMedicationCategoryAssociationconcomitantMedicationCategoryconcomitantMedicationSubCategoryAssociationConcomitantMedicationSubCategoryClassCodeConcomitantMedicationconcomitantMedicationCategoryAssociationconcomitantMedicationCategoryconcomitantMedicationSubCategoryAssociationConcomitantMedicationSubCategoryClassCode1(ConcomitantMedication, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Concomitant Medicationconcomitant Medication Category Associationconcomitant Medication Categoryconcomitant Medication Sub Category Association Concomitant Medication Sub Category Class Code Concomitant Medicationconcomitant Medication Category Associationconcomitant Medication Categoryconcomitant Medication Sub Category Association Concomitant Medication Sub Category Class Code1</em>}' operation.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @see #validateConcomitantMedicationconcomitantMedicationCategoryAssociationconcomitantMedicationCategoryconcomitantMedicationSubCategoryAssociationConcomitantMedicationSubCategoryClassCodeConcomitantMedicationconcomitantMedicationCategoryAssociationconcomitantMedicationCategoryconcomitantMedicationSubCategoryAssociationConcomitantMedicationSubCategoryClassCode1(ConcomitantMedication, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-   * @generated
-   * @ordered
-   */
-  protected static final String VALIDATE_CONCOMITANT_MEDICATIONCONCOMITANT_MEDICATION_CATEGORY_ASSOCIATIONCONCOMITANT_MEDICATION_CATEGORYCONCOMITANT_MEDICATION_SUB_CATEGORY_ASSOCIATION_CONCOMITANT_MEDICATION_SUB_CATEGORY_CLASS_CODE_CONCOMITANT_MEDICATIONCONCOMITANT_MEDICATION_CATEGORY_ASSOCIATIONCONCOMITANT_MEDICATION_CATEGORYCONCOMITANT_MEDICATION_SUB_CATEGORY_ASSOCIATION_CONCOMITANT_MEDICATION_SUB_CATEGORY_CLASS_CODE1__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entryRelationship->excluding(null)->reject(observation->excluding(null).entryRelationship->excluding(null).observation->excluding(null)->reject(classCode=vocab::ActClassObservation::OBS))";
-
-  /**
-   * The cached OCL invariant for the '{@link #validateConcomitantMedicationconcomitantMedicationCategoryAssociationconcomitantMedicationCategoryconcomitantMedicationSubCategoryAssociationConcomitantMedicationSubCategoryClassCodeConcomitantMedicationconcomitantMedicationCategoryAssociationconcomitantMedicationCategoryconcomitantMedicationSubCategoryAssociationConcomitantMedicationSubCategoryClassCode1(ConcomitantMedication, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Concomitant Medicationconcomitant Medication Category Associationconcomitant Medication Categoryconcomitant Medication Sub Category Association Concomitant Medication Sub Category Class Code Concomitant Medicationconcomitant Medication Category Associationconcomitant Medication Categoryconcomitant Medication Sub Category Association Concomitant Medication Sub Category Class Code1</em>}' invariant operation.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @see #validateConcomitantMedicationconcomitantMedicationCategoryAssociationconcomitantMedicationCategoryconcomitantMedicationSubCategoryAssociationConcomitantMedicationSubCategoryClassCodeConcomitantMedicationconcomitantMedicationCategoryAssociationconcomitantMedicationCategoryconcomitantMedicationSubCategoryAssociationConcomitantMedicationSubCategoryClassCode1(ConcomitantMedication, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-   * @generated
-   * @ordered
-   */
-  
-  protected static Constraint VALIDATE_CONCOMITANT_MEDICATIONCONCOMITANT_MEDICATION_CATEGORY_ASSOCIATIONCONCOMITANT_MEDICATION_CATEGORYCONCOMITANT_MEDICATION_SUB_CATEGORY_ASSOCIATION_CONCOMITANT_MEDICATION_SUB_CATEGORY_CLASS_CODE_CONCOMITANT_MEDICATIONCONCOMITANT_MEDICATION_CATEGORY_ASSOCIATIONCONCOMITANT_MEDICATION_CATEGORYCONCOMITANT_MEDICATION_SUB_CATEGORY_ASSOCIATION_CONCOMITANT_MEDICATION_SUB_CATEGORY_CLASS_CODE1__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-  
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * <!-- begin-model-doc -->
-   * self.entryRelationship->excluding(null)->reject(observation->excluding(null).entryRelationship->excluding(null).observation->excluding(null)->reject(classCode=vocab::ActClassObservation::OBS))
-   * @param concomitantMedication The receiving '<em><b>Concomitant Medication</b></em>' model object.
-   * @param diagnostics The chain of diagnostics to which problems are to be appended.
-   * @param context The cache of context-specific information.
-   * <!-- end-model-doc -->
-   * @generated
-   */
-  
-  public static  boolean validateConcomitantMedicationconcomitantMedicationCategoryAssociationconcomitantMedicationCategoryconcomitantMedicationSubCategoryAssociationConcomitantMedicationSubCategoryClassCodeConcomitantMedicationconcomitantMedicationCategoryAssociationconcomitantMedicationCategoryconcomitantMedicationSubCategoryAssociationConcomitantMedicationSubCategoryClassCode1(ConcomitantMedication concomitantMedication, DiagnosticChain diagnostics, Map<Object, Object> context)
-  {
-    if (VALIDATE_CONCOMITANT_MEDICATIONCONCOMITANT_MEDICATION_CATEGORY_ASSOCIATIONCONCOMITANT_MEDICATION_CATEGORYCONCOMITANT_MEDICATION_SUB_CATEGORY_ASSOCIATION_CONCOMITANT_MEDICATION_SUB_CATEGORY_CLASS_CODE_CONCOMITANT_MEDICATIONCONCOMITANT_MEDICATION_CATEGORY_ASSOCIATIONCONCOMITANT_MEDICATION_CATEGORYCONCOMITANT_MEDICATION_SUB_CATEGORY_ASSOCIATION_CONCOMITANT_MEDICATION_SUB_CATEGORY_CLASS_CODE1__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-      OCL.Helper helper = EOCL_ENV.createOCLHelper();
-      helper.setContext(SdtmPackage.Literals.CONCOMITANT_MEDICATION);
-      try
-      {
-        VALIDATE_CONCOMITANT_MEDICATIONCONCOMITANT_MEDICATION_CATEGORY_ASSOCIATIONCONCOMITANT_MEDICATION_CATEGORYCONCOMITANT_MEDICATION_SUB_CATEGORY_ASSOCIATION_CONCOMITANT_MEDICATION_SUB_CATEGORY_CLASS_CODE_CONCOMITANT_MEDICATIONCONCOMITANT_MEDICATION_CATEGORY_ASSOCIATIONCONCOMITANT_MEDICATION_CATEGORYCONCOMITANT_MEDICATION_SUB_CATEGORY_ASSOCIATION_CONCOMITANT_MEDICATION_SUB_CATEGORY_CLASS_CODE1__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_CONCOMITANT_MEDICATIONCONCOMITANT_MEDICATION_CATEGORY_ASSOCIATIONCONCOMITANT_MEDICATION_CATEGORYCONCOMITANT_MEDICATION_SUB_CATEGORY_ASSOCIATION_CONCOMITANT_MEDICATION_SUB_CATEGORY_CLASS_CODE_CONCOMITANT_MEDICATIONCONCOMITANT_MEDICATION_CATEGORY_ASSOCIATIONCONCOMITANT_MEDICATION_CATEGORYCONCOMITANT_MEDICATION_SUB_CATEGORY_ASSOCIATION_CONCOMITANT_MEDICATION_SUB_CATEGORY_CLASS_CODE1__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-      }
-      catch (ParserException pe)
-      {
-        throw new UnsupportedOperationException(pe.getLocalizedMessage());
-      }
-    }
-    if (!EOCL_ENV.createQuery(VALIDATE_CONCOMITANT_MEDICATIONCONCOMITANT_MEDICATION_CATEGORY_ASSOCIATIONCONCOMITANT_MEDICATION_CATEGORYCONCOMITANT_MEDICATION_SUB_CATEGORY_ASSOCIATION_CONCOMITANT_MEDICATION_SUB_CATEGORY_CLASS_CODE_CONCOMITANT_MEDICATIONCONCOMITANT_MEDICATION_CATEGORY_ASSOCIATIONCONCOMITANT_MEDICATION_CATEGORYCONCOMITANT_MEDICATION_SUB_CATEGORY_ASSOCIATION_CONCOMITANT_MEDICATION_SUB_CATEGORY_CLASS_CODE1__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(concomitantMedication))
-    {
-      if (diagnostics != null)
-      {
-        diagnostics.add
-          (new BasicDiagnostic
-            (Diagnostic.ERROR,
-             SdtmValidator.DIAGNOSTIC_SOURCE,
-             SdtmValidator.CONCOMITANT_MEDICATION__CONCOMITANT_MEDICATIONCONCOMITANT_MEDICATION_CATEGORY_ASSOCIATIONCONCOMITANT_MEDICATION_CATEGORYCONCOMITANT_MEDICATION_SUB_CATEGORY_ASSOCIATION_CONCOMITANT_MEDICATION_SUB_CATEGORY_CLASS_CODE_CONCOMITANT_MEDICATIONCONCOMITANT_MEDICATION_CATEGORY_ASSOCIATIONCONCOMITANT_MEDICATION_CATEGORYCONCOMITANT_MEDICATION_SUB_CATEGORY_ASSOCIATION_CONCOMITANT_MEDICATION_SUB_CATEGORY_CLASS_CODE1,
-             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "ConcomitantMedicationconcomitantMedicationCategoryAssociationconcomitantMedicationCategoryconcomitantMedicationSubCategoryAssociationConcomitantMedicationSubCategoryClassCodeConcomitantMedicationconcomitantMedicationCategoryAssociationconcomitantMedicationCategoryconcomitantMedicationSubCategoryAssociationConcomitantMedicationSubCategoryClassCode1", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(concomitantMedication, context) }),
-             new Object [] { concomitantMedication }));
-      }
-      return false;
-    }
-    return true;
-  }
-
-  /**
-   * The cached OCL expression body for the '{@link #validateConcomitantMedicationconcomitantMedicationCategoryAssociationconcomitantMedicationCategoryconcomitantMedicationSubCategoryAssociationConcomitantMedicationSubCategoryCodeConcomitantMedicationconcomitantMedicationCategoryAssociationconcomitantMedicationCategoryconcomitantMedicationSubCategoryAssociationConcomitantMedicationSubCategoryCode1(ConcomitantMedication, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Concomitant Medicationconcomitant Medication Category Associationconcomitant Medication Categoryconcomitant Medication Sub Category Association Concomitant Medication Sub Category Code Concomitant Medicationconcomitant Medication Category Associationconcomitant Medication Categoryconcomitant Medication Sub Category Association Concomitant Medication Sub Category Code1</em>}' operation.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @see #validateConcomitantMedicationconcomitantMedicationCategoryAssociationconcomitantMedicationCategoryconcomitantMedicationSubCategoryAssociationConcomitantMedicationSubCategoryCodeConcomitantMedicationconcomitantMedicationCategoryAssociationconcomitantMedicationCategoryconcomitantMedicationSubCategoryAssociationConcomitantMedicationSubCategoryCode1(ConcomitantMedication, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-   * @generated
-   * @ordered
-   */
-  protected static final String VALIDATE_CONCOMITANT_MEDICATIONCONCOMITANT_MEDICATION_CATEGORY_ASSOCIATIONCONCOMITANT_MEDICATION_CATEGORYCONCOMITANT_MEDICATION_SUB_CATEGORY_ASSOCIATION_CONCOMITANT_MEDICATION_SUB_CATEGORY_CODE_CONCOMITANT_MEDICATIONCONCOMITANT_MEDICATION_CATEGORY_ASSOCIATIONCONCOMITANT_MEDICATION_CATEGORYCONCOMITANT_MEDICATION_SUB_CATEGORY_ASSOCIATION_CONCOMITANT_MEDICATION_SUB_CATEGORY_CODE1__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entryRelationship->excluding(null)->reject(observation->excluding(null).entryRelationship->excluding(null).observation->excluding(null)->reject((code.oclIsUndefined() or code.isNullFlavorUndefined()) implies (not code.oclIsUndefined())))";
-
-  /**
-   * The cached OCL invariant for the '{@link #validateConcomitantMedicationconcomitantMedicationCategoryAssociationconcomitantMedicationCategoryconcomitantMedicationSubCategoryAssociationConcomitantMedicationSubCategoryCodeConcomitantMedicationconcomitantMedicationCategoryAssociationconcomitantMedicationCategoryconcomitantMedicationSubCategoryAssociationConcomitantMedicationSubCategoryCode1(ConcomitantMedication, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Concomitant Medicationconcomitant Medication Category Associationconcomitant Medication Categoryconcomitant Medication Sub Category Association Concomitant Medication Sub Category Code Concomitant Medicationconcomitant Medication Category Associationconcomitant Medication Categoryconcomitant Medication Sub Category Association Concomitant Medication Sub Category Code1</em>}' invariant operation.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @see #validateConcomitantMedicationconcomitantMedicationCategoryAssociationconcomitantMedicationCategoryconcomitantMedicationSubCategoryAssociationConcomitantMedicationSubCategoryCodeConcomitantMedicationconcomitantMedicationCategoryAssociationconcomitantMedicationCategoryconcomitantMedicationSubCategoryAssociationConcomitantMedicationSubCategoryCode1(ConcomitantMedication, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-   * @generated
-   * @ordered
-   */
-  
-  protected static Constraint VALIDATE_CONCOMITANT_MEDICATIONCONCOMITANT_MEDICATION_CATEGORY_ASSOCIATIONCONCOMITANT_MEDICATION_CATEGORYCONCOMITANT_MEDICATION_SUB_CATEGORY_ASSOCIATION_CONCOMITANT_MEDICATION_SUB_CATEGORY_CODE_CONCOMITANT_MEDICATIONCONCOMITANT_MEDICATION_CATEGORY_ASSOCIATIONCONCOMITANT_MEDICATION_CATEGORYCONCOMITANT_MEDICATION_SUB_CATEGORY_ASSOCIATION_CONCOMITANT_MEDICATION_SUB_CATEGORY_CODE1__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-  
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * <!-- begin-model-doc -->
-   * self.entryRelationship->excluding(null)->reject(observation->excluding(null).entryRelationship->excluding(null).observation->excluding(null)->reject((code.oclIsUndefined() or code.isNullFlavorUndefined()) implies (not code.oclIsUndefined())))
-   * @param concomitantMedication The receiving '<em><b>Concomitant Medication</b></em>' model object.
-   * @param diagnostics The chain of diagnostics to which problems are to be appended.
-   * @param context The cache of context-specific information.
-   * <!-- end-model-doc -->
-   * @generated
-   */
-  
-  public static  boolean validateConcomitantMedicationconcomitantMedicationCategoryAssociationconcomitantMedicationCategoryconcomitantMedicationSubCategoryAssociationConcomitantMedicationSubCategoryCodeConcomitantMedicationconcomitantMedicationCategoryAssociationconcomitantMedicationCategoryconcomitantMedicationSubCategoryAssociationConcomitantMedicationSubCategoryCode1(ConcomitantMedication concomitantMedication, DiagnosticChain diagnostics, Map<Object, Object> context)
-  {
-    if (VALIDATE_CONCOMITANT_MEDICATIONCONCOMITANT_MEDICATION_CATEGORY_ASSOCIATIONCONCOMITANT_MEDICATION_CATEGORYCONCOMITANT_MEDICATION_SUB_CATEGORY_ASSOCIATION_CONCOMITANT_MEDICATION_SUB_CATEGORY_CODE_CONCOMITANT_MEDICATIONCONCOMITANT_MEDICATION_CATEGORY_ASSOCIATIONCONCOMITANT_MEDICATION_CATEGORYCONCOMITANT_MEDICATION_SUB_CATEGORY_ASSOCIATION_CONCOMITANT_MEDICATION_SUB_CATEGORY_CODE1__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-      OCL.Helper helper = EOCL_ENV.createOCLHelper();
-      helper.setContext(SdtmPackage.Literals.CONCOMITANT_MEDICATION);
-      try
-      {
-        VALIDATE_CONCOMITANT_MEDICATIONCONCOMITANT_MEDICATION_CATEGORY_ASSOCIATIONCONCOMITANT_MEDICATION_CATEGORYCONCOMITANT_MEDICATION_SUB_CATEGORY_ASSOCIATION_CONCOMITANT_MEDICATION_SUB_CATEGORY_CODE_CONCOMITANT_MEDICATIONCONCOMITANT_MEDICATION_CATEGORY_ASSOCIATIONCONCOMITANT_MEDICATION_CATEGORYCONCOMITANT_MEDICATION_SUB_CATEGORY_ASSOCIATION_CONCOMITANT_MEDICATION_SUB_CATEGORY_CODE1__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_CONCOMITANT_MEDICATIONCONCOMITANT_MEDICATION_CATEGORY_ASSOCIATIONCONCOMITANT_MEDICATION_CATEGORYCONCOMITANT_MEDICATION_SUB_CATEGORY_ASSOCIATION_CONCOMITANT_MEDICATION_SUB_CATEGORY_CODE_CONCOMITANT_MEDICATIONCONCOMITANT_MEDICATION_CATEGORY_ASSOCIATIONCONCOMITANT_MEDICATION_CATEGORYCONCOMITANT_MEDICATION_SUB_CATEGORY_ASSOCIATION_CONCOMITANT_MEDICATION_SUB_CATEGORY_CODE1__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-      }
-      catch (ParserException pe)
-      {
-        throw new UnsupportedOperationException(pe.getLocalizedMessage());
-      }
-    }
-    if (!EOCL_ENV.createQuery(VALIDATE_CONCOMITANT_MEDICATIONCONCOMITANT_MEDICATION_CATEGORY_ASSOCIATIONCONCOMITANT_MEDICATION_CATEGORYCONCOMITANT_MEDICATION_SUB_CATEGORY_ASSOCIATION_CONCOMITANT_MEDICATION_SUB_CATEGORY_CODE_CONCOMITANT_MEDICATIONCONCOMITANT_MEDICATION_CATEGORY_ASSOCIATIONCONCOMITANT_MEDICATION_CATEGORYCONCOMITANT_MEDICATION_SUB_CATEGORY_ASSOCIATION_CONCOMITANT_MEDICATION_SUB_CATEGORY_CODE1__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(concomitantMedication))
-    {
-      if (diagnostics != null)
-      {
-        diagnostics.add
-          (new BasicDiagnostic
-            (Diagnostic.ERROR,
-             SdtmValidator.DIAGNOSTIC_SOURCE,
-             SdtmValidator.CONCOMITANT_MEDICATION__CONCOMITANT_MEDICATIONCONCOMITANT_MEDICATION_CATEGORY_ASSOCIATIONCONCOMITANT_MEDICATION_CATEGORYCONCOMITANT_MEDICATION_SUB_CATEGORY_ASSOCIATION_CONCOMITANT_MEDICATION_SUB_CATEGORY_CODE_CONCOMITANT_MEDICATIONCONCOMITANT_MEDICATION_CATEGORY_ASSOCIATIONCONCOMITANT_MEDICATION_CATEGORYCONCOMITANT_MEDICATION_SUB_CATEGORY_ASSOCIATION_CONCOMITANT_MEDICATION_SUB_CATEGORY_CODE1,
-             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "ConcomitantMedicationconcomitantMedicationCategoryAssociationconcomitantMedicationCategoryconcomitantMedicationSubCategoryAssociationConcomitantMedicationSubCategoryCodeConcomitantMedicationconcomitantMedicationCategoryAssociationconcomitantMedicationCategoryconcomitantMedicationSubCategoryAssociationConcomitantMedicationSubCategoryCode1", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(concomitantMedication, context) }),
-             new Object [] { concomitantMedication }));
-      }
-      return false;
-    }
-    return true;
-  }
-
-  /**
-   * The cached OCL expression body for the '{@link #validateConcomitantMedicationconcomitantMedicationCategoryAssociationconcomitantMedicationCategoryconcomitantMedicationSubCategoryAssociationConcomitantMedicationSubCategoryMoodCodeConcomitantMedicationconcomitantMedicationCategoryAssociationconcomitantMedicationCategoryconcomitantMedicationSubCategoryAssociationConcomitantMedicationSubCategoryMoodCode1(ConcomitantMedication, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Concomitant Medicationconcomitant Medication Category Associationconcomitant Medication Categoryconcomitant Medication Sub Category Association Concomitant Medication Sub Category Mood Code Concomitant Medicationconcomitant Medication Category Associationconcomitant Medication Categoryconcomitant Medication Sub Category Association Concomitant Medication Sub Category Mood Code1</em>}' operation.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @see #validateConcomitantMedicationconcomitantMedicationCategoryAssociationconcomitantMedicationCategoryconcomitantMedicationSubCategoryAssociationConcomitantMedicationSubCategoryMoodCodeConcomitantMedicationconcomitantMedicationCategoryAssociationconcomitantMedicationCategoryconcomitantMedicationSubCategoryAssociationConcomitantMedicationSubCategoryMoodCode1(ConcomitantMedication, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-   * @generated
-   * @ordered
-   */
-  protected static final String VALIDATE_CONCOMITANT_MEDICATIONCONCOMITANT_MEDICATION_CATEGORY_ASSOCIATIONCONCOMITANT_MEDICATION_CATEGORYCONCOMITANT_MEDICATION_SUB_CATEGORY_ASSOCIATION_CONCOMITANT_MEDICATION_SUB_CATEGORY_MOOD_CODE_CONCOMITANT_MEDICATIONCONCOMITANT_MEDICATION_CATEGORY_ASSOCIATIONCONCOMITANT_MEDICATION_CATEGORYCONCOMITANT_MEDICATION_SUB_CATEGORY_ASSOCIATION_CONCOMITANT_MEDICATION_SUB_CATEGORY_MOOD_CODE1__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entryRelationship->excluding(null)->reject(observation->excluding(null).entryRelationship->excluding(null).observation->excluding(null)->reject(moodCode=vocab::x_ActMoodDocumentObservation::EVN))";
-
-  /**
-   * The cached OCL invariant for the '{@link #validateConcomitantMedicationconcomitantMedicationCategoryAssociationconcomitantMedicationCategoryconcomitantMedicationSubCategoryAssociationConcomitantMedicationSubCategoryMoodCodeConcomitantMedicationconcomitantMedicationCategoryAssociationconcomitantMedicationCategoryconcomitantMedicationSubCategoryAssociationConcomitantMedicationSubCategoryMoodCode1(ConcomitantMedication, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Concomitant Medicationconcomitant Medication Category Associationconcomitant Medication Categoryconcomitant Medication Sub Category Association Concomitant Medication Sub Category Mood Code Concomitant Medicationconcomitant Medication Category Associationconcomitant Medication Categoryconcomitant Medication Sub Category Association Concomitant Medication Sub Category Mood Code1</em>}' invariant operation.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @see #validateConcomitantMedicationconcomitantMedicationCategoryAssociationconcomitantMedicationCategoryconcomitantMedicationSubCategoryAssociationConcomitantMedicationSubCategoryMoodCodeConcomitantMedicationconcomitantMedicationCategoryAssociationconcomitantMedicationCategoryconcomitantMedicationSubCategoryAssociationConcomitantMedicationSubCategoryMoodCode1(ConcomitantMedication, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-   * @generated
-   * @ordered
-   */
-  
-  protected static Constraint VALIDATE_CONCOMITANT_MEDICATIONCONCOMITANT_MEDICATION_CATEGORY_ASSOCIATIONCONCOMITANT_MEDICATION_CATEGORYCONCOMITANT_MEDICATION_SUB_CATEGORY_ASSOCIATION_CONCOMITANT_MEDICATION_SUB_CATEGORY_MOOD_CODE_CONCOMITANT_MEDICATIONCONCOMITANT_MEDICATION_CATEGORY_ASSOCIATIONCONCOMITANT_MEDICATION_CATEGORYCONCOMITANT_MEDICATION_SUB_CATEGORY_ASSOCIATION_CONCOMITANT_MEDICATION_SUB_CATEGORY_MOOD_CODE1__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-  
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * <!-- begin-model-doc -->
-   * self.entryRelationship->excluding(null)->reject(observation->excluding(null).entryRelationship->excluding(null).observation->excluding(null)->reject(moodCode=vocab::x_ActMoodDocumentObservation::EVN))
-   * @param concomitantMedication The receiving '<em><b>Concomitant Medication</b></em>' model object.
-   * @param diagnostics The chain of diagnostics to which problems are to be appended.
-   * @param context The cache of context-specific information.
-   * <!-- end-model-doc -->
-   * @generated
-   */
-  
-  public static  boolean validateConcomitantMedicationconcomitantMedicationCategoryAssociationconcomitantMedicationCategoryconcomitantMedicationSubCategoryAssociationConcomitantMedicationSubCategoryMoodCodeConcomitantMedicationconcomitantMedicationCategoryAssociationconcomitantMedicationCategoryconcomitantMedicationSubCategoryAssociationConcomitantMedicationSubCategoryMoodCode1(ConcomitantMedication concomitantMedication, DiagnosticChain diagnostics, Map<Object, Object> context)
-  {
-    if (VALIDATE_CONCOMITANT_MEDICATIONCONCOMITANT_MEDICATION_CATEGORY_ASSOCIATIONCONCOMITANT_MEDICATION_CATEGORYCONCOMITANT_MEDICATION_SUB_CATEGORY_ASSOCIATION_CONCOMITANT_MEDICATION_SUB_CATEGORY_MOOD_CODE_CONCOMITANT_MEDICATIONCONCOMITANT_MEDICATION_CATEGORY_ASSOCIATIONCONCOMITANT_MEDICATION_CATEGORYCONCOMITANT_MEDICATION_SUB_CATEGORY_ASSOCIATION_CONCOMITANT_MEDICATION_SUB_CATEGORY_MOOD_CODE1__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-      OCL.Helper helper = EOCL_ENV.createOCLHelper();
-      helper.setContext(SdtmPackage.Literals.CONCOMITANT_MEDICATION);
-      try
-      {
-        VALIDATE_CONCOMITANT_MEDICATIONCONCOMITANT_MEDICATION_CATEGORY_ASSOCIATIONCONCOMITANT_MEDICATION_CATEGORYCONCOMITANT_MEDICATION_SUB_CATEGORY_ASSOCIATION_CONCOMITANT_MEDICATION_SUB_CATEGORY_MOOD_CODE_CONCOMITANT_MEDICATIONCONCOMITANT_MEDICATION_CATEGORY_ASSOCIATIONCONCOMITANT_MEDICATION_CATEGORYCONCOMITANT_MEDICATION_SUB_CATEGORY_ASSOCIATION_CONCOMITANT_MEDICATION_SUB_CATEGORY_MOOD_CODE1__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_CONCOMITANT_MEDICATIONCONCOMITANT_MEDICATION_CATEGORY_ASSOCIATIONCONCOMITANT_MEDICATION_CATEGORYCONCOMITANT_MEDICATION_SUB_CATEGORY_ASSOCIATION_CONCOMITANT_MEDICATION_SUB_CATEGORY_MOOD_CODE_CONCOMITANT_MEDICATIONCONCOMITANT_MEDICATION_CATEGORY_ASSOCIATIONCONCOMITANT_MEDICATION_CATEGORYCONCOMITANT_MEDICATION_SUB_CATEGORY_ASSOCIATION_CONCOMITANT_MEDICATION_SUB_CATEGORY_MOOD_CODE1__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-      }
-      catch (ParserException pe)
-      {
-        throw new UnsupportedOperationException(pe.getLocalizedMessage());
-      }
-    }
-    if (!EOCL_ENV.createQuery(VALIDATE_CONCOMITANT_MEDICATIONCONCOMITANT_MEDICATION_CATEGORY_ASSOCIATIONCONCOMITANT_MEDICATION_CATEGORYCONCOMITANT_MEDICATION_SUB_CATEGORY_ASSOCIATION_CONCOMITANT_MEDICATION_SUB_CATEGORY_MOOD_CODE_CONCOMITANT_MEDICATIONCONCOMITANT_MEDICATION_CATEGORY_ASSOCIATIONCONCOMITANT_MEDICATION_CATEGORYCONCOMITANT_MEDICATION_SUB_CATEGORY_ASSOCIATION_CONCOMITANT_MEDICATION_SUB_CATEGORY_MOOD_CODE1__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(concomitantMedication))
-    {
-      if (diagnostics != null)
-      {
-        diagnostics.add
-          (new BasicDiagnostic
-            (Diagnostic.ERROR,
-             SdtmValidator.DIAGNOSTIC_SOURCE,
-             SdtmValidator.CONCOMITANT_MEDICATION__CONCOMITANT_MEDICATIONCONCOMITANT_MEDICATION_CATEGORY_ASSOCIATIONCONCOMITANT_MEDICATION_CATEGORYCONCOMITANT_MEDICATION_SUB_CATEGORY_ASSOCIATION_CONCOMITANT_MEDICATION_SUB_CATEGORY_MOOD_CODE_CONCOMITANT_MEDICATIONCONCOMITANT_MEDICATION_CATEGORY_ASSOCIATIONCONCOMITANT_MEDICATION_CATEGORYCONCOMITANT_MEDICATION_SUB_CATEGORY_ASSOCIATION_CONCOMITANT_MEDICATION_SUB_CATEGORY_MOOD_CODE1,
-             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "ConcomitantMedicationconcomitantMedicationCategoryAssociationconcomitantMedicationCategoryconcomitantMedicationSubCategoryAssociationConcomitantMedicationSubCategoryMoodCodeConcomitantMedicationconcomitantMedicationCategoryAssociationconcomitantMedicationCategoryconcomitantMedicationSubCategoryAssociationConcomitantMedicationSubCategoryMoodCode1", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(concomitantMedication, context) }),
-             new Object [] { concomitantMedication }));
-      }
-      return false;
-    }
-    return true;
-  }
-
-  /**
-   * The cached OCL expression body for the '{@link #validateConcomitantMedicationconcomitantMedicationCategoryAssociationconcomitantMedicationCategoryconcomitantMedicationSubCategoryAssociationConcomitantMedicationSubCategoryValueConcomitantMedicationconcomitantMedicationCategoryAssociationconcomitantMedicationCategoryconcomitantMedicationSubCategoryAssociationConcomitantMedicationSubCategoryValue1(ConcomitantMedication, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Concomitant Medicationconcomitant Medication Category Associationconcomitant Medication Categoryconcomitant Medication Sub Category Association Concomitant Medication Sub Category Value Concomitant Medicationconcomitant Medication Category Associationconcomitant Medication Categoryconcomitant Medication Sub Category Association Concomitant Medication Sub Category Value1</em>}' operation.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @see #validateConcomitantMedicationconcomitantMedicationCategoryAssociationconcomitantMedicationCategoryconcomitantMedicationSubCategoryAssociationConcomitantMedicationSubCategoryValueConcomitantMedicationconcomitantMedicationCategoryAssociationconcomitantMedicationCategoryconcomitantMedicationSubCategoryAssociationConcomitantMedicationSubCategoryValue1(ConcomitantMedication, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-   * @generated
-   * @ordered
-   */
-  protected static final String VALIDATE_CONCOMITANT_MEDICATIONCONCOMITANT_MEDICATION_CATEGORY_ASSOCIATIONCONCOMITANT_MEDICATION_CATEGORYCONCOMITANT_MEDICATION_SUB_CATEGORY_ASSOCIATION_CONCOMITANT_MEDICATION_SUB_CATEGORY_VALUE_CONCOMITANT_MEDICATIONCONCOMITANT_MEDICATION_CATEGORY_ASSOCIATIONCONCOMITANT_MEDICATION_CATEGORYCONCOMITANT_MEDICATION_SUB_CATEGORY_ASSOCIATION_CONCOMITANT_MEDICATION_SUB_CATEGORY_VALUE1__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entryRelationship->excluding(null)->reject(observation->excluding(null).entryRelationship->excluding(null).observation->excluding(null)->reject((value->isEmpty() or value->exists(element | element.isNullFlavorUndefined())) implies (value->size() = 1 and value->forAll(element | element.oclIsTypeOf(datatypes::CE)))))";
-
-  /**
-   * The cached OCL invariant for the '{@link #validateConcomitantMedicationconcomitantMedicationCategoryAssociationconcomitantMedicationCategoryconcomitantMedicationSubCategoryAssociationConcomitantMedicationSubCategoryValueConcomitantMedicationconcomitantMedicationCategoryAssociationconcomitantMedicationCategoryconcomitantMedicationSubCategoryAssociationConcomitantMedicationSubCategoryValue1(ConcomitantMedication, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Concomitant Medicationconcomitant Medication Category Associationconcomitant Medication Categoryconcomitant Medication Sub Category Association Concomitant Medication Sub Category Value Concomitant Medicationconcomitant Medication Category Associationconcomitant Medication Categoryconcomitant Medication Sub Category Association Concomitant Medication Sub Category Value1</em>}' invariant operation.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @see #validateConcomitantMedicationconcomitantMedicationCategoryAssociationconcomitantMedicationCategoryconcomitantMedicationSubCategoryAssociationConcomitantMedicationSubCategoryValueConcomitantMedicationconcomitantMedicationCategoryAssociationconcomitantMedicationCategoryconcomitantMedicationSubCategoryAssociationConcomitantMedicationSubCategoryValue1(ConcomitantMedication, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-   * @generated
-   * @ordered
-   */
-  
-  protected static Constraint VALIDATE_CONCOMITANT_MEDICATIONCONCOMITANT_MEDICATION_CATEGORY_ASSOCIATIONCONCOMITANT_MEDICATION_CATEGORYCONCOMITANT_MEDICATION_SUB_CATEGORY_ASSOCIATION_CONCOMITANT_MEDICATION_SUB_CATEGORY_VALUE_CONCOMITANT_MEDICATIONCONCOMITANT_MEDICATION_CATEGORY_ASSOCIATIONCONCOMITANT_MEDICATION_CATEGORYCONCOMITANT_MEDICATION_SUB_CATEGORY_ASSOCIATION_CONCOMITANT_MEDICATION_SUB_CATEGORY_VALUE1__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-  
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * <!-- begin-model-doc -->
-   * self.entryRelationship->excluding(null)->reject(observation->excluding(null).entryRelationship->excluding(null).observation->excluding(null)->reject((value->isEmpty() or value->exists(element | element.isNullFlavorUndefined())) implies (value->size() = 1 and value->forAll(element | element.oclIsTypeOf(datatypes::CE)))))
-   * @param concomitantMedication The receiving '<em><b>Concomitant Medication</b></em>' model object.
-   * @param diagnostics The chain of diagnostics to which problems are to be appended.
-   * @param context The cache of context-specific information.
-   * <!-- end-model-doc -->
-   * @generated
-   */
-  
-  public static  boolean validateConcomitantMedicationconcomitantMedicationCategoryAssociationconcomitantMedicationCategoryconcomitantMedicationSubCategoryAssociationConcomitantMedicationSubCategoryValueConcomitantMedicationconcomitantMedicationCategoryAssociationconcomitantMedicationCategoryconcomitantMedicationSubCategoryAssociationConcomitantMedicationSubCategoryValue1(ConcomitantMedication concomitantMedication, DiagnosticChain diagnostics, Map<Object, Object> context)
-  {
-    if (VALIDATE_CONCOMITANT_MEDICATIONCONCOMITANT_MEDICATION_CATEGORY_ASSOCIATIONCONCOMITANT_MEDICATION_CATEGORYCONCOMITANT_MEDICATION_SUB_CATEGORY_ASSOCIATION_CONCOMITANT_MEDICATION_SUB_CATEGORY_VALUE_CONCOMITANT_MEDICATIONCONCOMITANT_MEDICATION_CATEGORY_ASSOCIATIONCONCOMITANT_MEDICATION_CATEGORYCONCOMITANT_MEDICATION_SUB_CATEGORY_ASSOCIATION_CONCOMITANT_MEDICATION_SUB_CATEGORY_VALUE1__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-      OCL.Helper helper = EOCL_ENV.createOCLHelper();
-      helper.setContext(SdtmPackage.Literals.CONCOMITANT_MEDICATION);
-      try
-      {
-        VALIDATE_CONCOMITANT_MEDICATIONCONCOMITANT_MEDICATION_CATEGORY_ASSOCIATIONCONCOMITANT_MEDICATION_CATEGORYCONCOMITANT_MEDICATION_SUB_CATEGORY_ASSOCIATION_CONCOMITANT_MEDICATION_SUB_CATEGORY_VALUE_CONCOMITANT_MEDICATIONCONCOMITANT_MEDICATION_CATEGORY_ASSOCIATIONCONCOMITANT_MEDICATION_CATEGORYCONCOMITANT_MEDICATION_SUB_CATEGORY_ASSOCIATION_CONCOMITANT_MEDICATION_SUB_CATEGORY_VALUE1__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_CONCOMITANT_MEDICATIONCONCOMITANT_MEDICATION_CATEGORY_ASSOCIATIONCONCOMITANT_MEDICATION_CATEGORYCONCOMITANT_MEDICATION_SUB_CATEGORY_ASSOCIATION_CONCOMITANT_MEDICATION_SUB_CATEGORY_VALUE_CONCOMITANT_MEDICATIONCONCOMITANT_MEDICATION_CATEGORY_ASSOCIATIONCONCOMITANT_MEDICATION_CATEGORYCONCOMITANT_MEDICATION_SUB_CATEGORY_ASSOCIATION_CONCOMITANT_MEDICATION_SUB_CATEGORY_VALUE1__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-      }
-      catch (ParserException pe)
-      {
-        throw new UnsupportedOperationException(pe.getLocalizedMessage());
-      }
-    }
-    if (!EOCL_ENV.createQuery(VALIDATE_CONCOMITANT_MEDICATIONCONCOMITANT_MEDICATION_CATEGORY_ASSOCIATIONCONCOMITANT_MEDICATION_CATEGORYCONCOMITANT_MEDICATION_SUB_CATEGORY_ASSOCIATION_CONCOMITANT_MEDICATION_SUB_CATEGORY_VALUE_CONCOMITANT_MEDICATIONCONCOMITANT_MEDICATION_CATEGORY_ASSOCIATIONCONCOMITANT_MEDICATION_CATEGORYCONCOMITANT_MEDICATION_SUB_CATEGORY_ASSOCIATION_CONCOMITANT_MEDICATION_SUB_CATEGORY_VALUE1__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(concomitantMedication))
-    {
-      if (diagnostics != null)
-      {
-        diagnostics.add
-          (new BasicDiagnostic
-            (Diagnostic.ERROR,
-             SdtmValidator.DIAGNOSTIC_SOURCE,
-             SdtmValidator.CONCOMITANT_MEDICATION__CONCOMITANT_MEDICATIONCONCOMITANT_MEDICATION_CATEGORY_ASSOCIATIONCONCOMITANT_MEDICATION_CATEGORYCONCOMITANT_MEDICATION_SUB_CATEGORY_ASSOCIATION_CONCOMITANT_MEDICATION_SUB_CATEGORY_VALUE_CONCOMITANT_MEDICATIONCONCOMITANT_MEDICATION_CATEGORY_ASSOCIATIONCONCOMITANT_MEDICATION_CATEGORYCONCOMITANT_MEDICATION_SUB_CATEGORY_ASSOCIATION_CONCOMITANT_MEDICATION_SUB_CATEGORY_VALUE1,
-             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "ConcomitantMedicationconcomitantMedicationCategoryAssociationconcomitantMedicationCategoryconcomitantMedicationSubCategoryAssociationConcomitantMedicationSubCategoryValueConcomitantMedicationconcomitantMedicationCategoryAssociationconcomitantMedicationCategoryconcomitantMedicationSubCategoryAssociationConcomitantMedicationSubCategoryValue1", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(concomitantMedication, context) }),
-             new Object [] { concomitantMedication }));
-      }
-      return false;
-    }
-    return true;
-  }
-
-  /**
-   * The cached OCL expression body for the '{@link #validateConcomitantMedicationconcomitantMedicationCategoryAssociationconcomitantMedicationCategoryconcomitantMedicationSubCategoryAssociationTypeCodeConcomitantMedicationconcomitantMedicationCategoryAssociationconcomitantMedicationCategoryconcomitantMedicationSubCategoryAssociationTypeCode1(ConcomitantMedication, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Concomitant Medicationconcomitant Medication Category Associationconcomitant Medication Categoryconcomitant Medication Sub Category Association Type Code Concomitant Medicationconcomitant Medication Category Associationconcomitant Medication Categoryconcomitant Medication Sub Category Association Type Code1</em>}' operation.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @see #validateConcomitantMedicationconcomitantMedicationCategoryAssociationconcomitantMedicationCategoryconcomitantMedicationSubCategoryAssociationTypeCodeConcomitantMedicationconcomitantMedicationCategoryAssociationconcomitantMedicationCategoryconcomitantMedicationSubCategoryAssociationTypeCode1(ConcomitantMedication, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-   * @generated
-   * @ordered
-   */
-  protected static final String VALIDATE_CONCOMITANT_MEDICATIONCONCOMITANT_MEDICATION_CATEGORY_ASSOCIATIONCONCOMITANT_MEDICATION_CATEGORYCONCOMITANT_MEDICATION_SUB_CATEGORY_ASSOCIATION_TYPE_CODE_CONCOMITANT_MEDICATIONCONCOMITANT_MEDICATION_CATEGORY_ASSOCIATIONCONCOMITANT_MEDICATION_CATEGORYCONCOMITANT_MEDICATION_SUB_CATEGORY_ASSOCIATION_TYPE_CODE1__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entryRelationship->excluding(null)->reject(observation->excluding(null).entryRelationship->excluding(null)->reject(typeCode=vocab::x_ActRelationshipEntryRelationship::COMP))";
-
-  /**
-   * The cached OCL invariant for the '{@link #validateConcomitantMedicationconcomitantMedicationCategoryAssociationconcomitantMedicationCategoryconcomitantMedicationSubCategoryAssociationTypeCodeConcomitantMedicationconcomitantMedicationCategoryAssociationconcomitantMedicationCategoryconcomitantMedicationSubCategoryAssociationTypeCode1(ConcomitantMedication, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Concomitant Medicationconcomitant Medication Category Associationconcomitant Medication Categoryconcomitant Medication Sub Category Association Type Code Concomitant Medicationconcomitant Medication Category Associationconcomitant Medication Categoryconcomitant Medication Sub Category Association Type Code1</em>}' invariant operation.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @see #validateConcomitantMedicationconcomitantMedicationCategoryAssociationconcomitantMedicationCategoryconcomitantMedicationSubCategoryAssociationTypeCodeConcomitantMedicationconcomitantMedicationCategoryAssociationconcomitantMedicationCategoryconcomitantMedicationSubCategoryAssociationTypeCode1(ConcomitantMedication, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-   * @generated
-   * @ordered
-   */
-  
-  protected static Constraint VALIDATE_CONCOMITANT_MEDICATIONCONCOMITANT_MEDICATION_CATEGORY_ASSOCIATIONCONCOMITANT_MEDICATION_CATEGORYCONCOMITANT_MEDICATION_SUB_CATEGORY_ASSOCIATION_TYPE_CODE_CONCOMITANT_MEDICATIONCONCOMITANT_MEDICATION_CATEGORY_ASSOCIATIONCONCOMITANT_MEDICATION_CATEGORYCONCOMITANT_MEDICATION_SUB_CATEGORY_ASSOCIATION_TYPE_CODE1__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-  
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * <!-- begin-model-doc -->
-   * self.entryRelationship->excluding(null)->reject(observation->excluding(null).entryRelationship->excluding(null)->reject(typeCode=vocab::x_ActRelationshipEntryRelationship::COMP))
-   * @param concomitantMedication The receiving '<em><b>Concomitant Medication</b></em>' model object.
-   * @param diagnostics The chain of diagnostics to which problems are to be appended.
-   * @param context The cache of context-specific information.
-   * <!-- end-model-doc -->
-   * @generated
-   */
-  
-  public static  boolean validateConcomitantMedicationconcomitantMedicationCategoryAssociationconcomitantMedicationCategoryconcomitantMedicationSubCategoryAssociationTypeCodeConcomitantMedicationconcomitantMedicationCategoryAssociationconcomitantMedicationCategoryconcomitantMedicationSubCategoryAssociationTypeCode1(ConcomitantMedication concomitantMedication, DiagnosticChain diagnostics, Map<Object, Object> context)
-  {
-    if (VALIDATE_CONCOMITANT_MEDICATIONCONCOMITANT_MEDICATION_CATEGORY_ASSOCIATIONCONCOMITANT_MEDICATION_CATEGORYCONCOMITANT_MEDICATION_SUB_CATEGORY_ASSOCIATION_TYPE_CODE_CONCOMITANT_MEDICATIONCONCOMITANT_MEDICATION_CATEGORY_ASSOCIATIONCONCOMITANT_MEDICATION_CATEGORYCONCOMITANT_MEDICATION_SUB_CATEGORY_ASSOCIATION_TYPE_CODE1__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-      OCL.Helper helper = EOCL_ENV.createOCLHelper();
-      helper.setContext(SdtmPackage.Literals.CONCOMITANT_MEDICATION);
-      try
-      {
-        VALIDATE_CONCOMITANT_MEDICATIONCONCOMITANT_MEDICATION_CATEGORY_ASSOCIATIONCONCOMITANT_MEDICATION_CATEGORYCONCOMITANT_MEDICATION_SUB_CATEGORY_ASSOCIATION_TYPE_CODE_CONCOMITANT_MEDICATIONCONCOMITANT_MEDICATION_CATEGORY_ASSOCIATIONCONCOMITANT_MEDICATION_CATEGORYCONCOMITANT_MEDICATION_SUB_CATEGORY_ASSOCIATION_TYPE_CODE1__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_CONCOMITANT_MEDICATIONCONCOMITANT_MEDICATION_CATEGORY_ASSOCIATIONCONCOMITANT_MEDICATION_CATEGORYCONCOMITANT_MEDICATION_SUB_CATEGORY_ASSOCIATION_TYPE_CODE_CONCOMITANT_MEDICATIONCONCOMITANT_MEDICATION_CATEGORY_ASSOCIATIONCONCOMITANT_MEDICATION_CATEGORYCONCOMITANT_MEDICATION_SUB_CATEGORY_ASSOCIATION_TYPE_CODE1__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-      }
-      catch (ParserException pe)
-      {
-        throw new UnsupportedOperationException(pe.getLocalizedMessage());
-      }
-    }
-    if (!EOCL_ENV.createQuery(VALIDATE_CONCOMITANT_MEDICATIONCONCOMITANT_MEDICATION_CATEGORY_ASSOCIATIONCONCOMITANT_MEDICATION_CATEGORYCONCOMITANT_MEDICATION_SUB_CATEGORY_ASSOCIATION_TYPE_CODE_CONCOMITANT_MEDICATIONCONCOMITANT_MEDICATION_CATEGORY_ASSOCIATIONCONCOMITANT_MEDICATION_CATEGORYCONCOMITANT_MEDICATION_SUB_CATEGORY_ASSOCIATION_TYPE_CODE1__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(concomitantMedication))
-    {
-      if (diagnostics != null)
-      {
-        diagnostics.add
-          (new BasicDiagnostic
-            (Diagnostic.ERROR,
-             SdtmValidator.DIAGNOSTIC_SOURCE,
-             SdtmValidator.CONCOMITANT_MEDICATION__CONCOMITANT_MEDICATIONCONCOMITANT_MEDICATION_CATEGORY_ASSOCIATIONCONCOMITANT_MEDICATION_CATEGORYCONCOMITANT_MEDICATION_SUB_CATEGORY_ASSOCIATION_TYPE_CODE_CONCOMITANT_MEDICATIONCONCOMITANT_MEDICATION_CATEGORY_ASSOCIATIONCONCOMITANT_MEDICATION_CATEGORYCONCOMITANT_MEDICATION_SUB_CATEGORY_ASSOCIATION_TYPE_CODE1,
-             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "ConcomitantMedicationconcomitantMedicationCategoryAssociationconcomitantMedicationCategoryconcomitantMedicationSubCategoryAssociationTypeCodeConcomitantMedicationconcomitantMedicationCategoryAssociationconcomitantMedicationCategoryconcomitantMedicationSubCategoryAssociationTypeCode1", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(concomitantMedication, context) }),
-             new Object [] { concomitantMedication }));
-      }
-      return false;
-    }
-    return true;
-  }
-
-  /**
-   * The cached OCL expression body for the '{@link #validateConcomitantMedicationconcomitantMedicationCategoryAssociationconcomitantMedicationCategoryconcomitantMedicationSubCategoryAssociationConcomitantMedicationSubCategoryConcomitantMedicationconcomitantMedicationCategoryAssociationconcomitantMedicationCategoryconcomitantMedicationSubCategoryAssociationConcomitantMedicationSubCategory1(ConcomitantMedication, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Concomitant Medicationconcomitant Medication Category Associationconcomitant Medication Categoryconcomitant Medication Sub Category Association Concomitant Medication Sub Category Concomitant Medicationconcomitant Medication Category Associationconcomitant Medication Categoryconcomitant Medication Sub Category Association Concomitant Medication Sub Category1</em>}' operation.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @see #validateConcomitantMedicationconcomitantMedicationCategoryAssociationconcomitantMedicationCategoryconcomitantMedicationSubCategoryAssociationConcomitantMedicationSubCategoryConcomitantMedicationconcomitantMedicationCategoryAssociationconcomitantMedicationCategoryconcomitantMedicationSubCategoryAssociationConcomitantMedicationSubCategory1(ConcomitantMedication, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-   * @generated
-   * @ordered
-   */
-  protected static final String VALIDATE_CONCOMITANT_MEDICATIONCONCOMITANT_MEDICATION_CATEGORY_ASSOCIATIONCONCOMITANT_MEDICATION_CATEGORYCONCOMITANT_MEDICATION_SUB_CATEGORY_ASSOCIATION_CONCOMITANT_MEDICATION_SUB_CATEGORY_CONCOMITANT_MEDICATIONCONCOMITANT_MEDICATION_CATEGORY_ASSOCIATIONCONCOMITANT_MEDICATION_CATEGORYCONCOMITANT_MEDICATION_SUB_CATEGORY_ASSOCIATION_CONCOMITANT_MEDICATION_SUB_CATEGORY1__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entryRelationship->excluding(null)->reject(observation->excluding(null).entryRelationship->excluding(null)->reject(observation->one(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(cda::Observation))))";
-
-  /**
-   * The cached OCL invariant for the '{@link #validateConcomitantMedicationconcomitantMedicationCategoryAssociationconcomitantMedicationCategoryconcomitantMedicationSubCategoryAssociationConcomitantMedicationSubCategoryConcomitantMedicationconcomitantMedicationCategoryAssociationconcomitantMedicationCategoryconcomitantMedicationSubCategoryAssociationConcomitantMedicationSubCategory1(ConcomitantMedication, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Concomitant Medicationconcomitant Medication Category Associationconcomitant Medication Categoryconcomitant Medication Sub Category Association Concomitant Medication Sub Category Concomitant Medicationconcomitant Medication Category Associationconcomitant Medication Categoryconcomitant Medication Sub Category Association Concomitant Medication Sub Category1</em>}' invariant operation.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @see #validateConcomitantMedicationconcomitantMedicationCategoryAssociationconcomitantMedicationCategoryconcomitantMedicationSubCategoryAssociationConcomitantMedicationSubCategoryConcomitantMedicationconcomitantMedicationCategoryAssociationconcomitantMedicationCategoryconcomitantMedicationSubCategoryAssociationConcomitantMedicationSubCategory1(ConcomitantMedication, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-   * @generated
-   * @ordered
-   */
-  
-  protected static Constraint VALIDATE_CONCOMITANT_MEDICATIONCONCOMITANT_MEDICATION_CATEGORY_ASSOCIATIONCONCOMITANT_MEDICATION_CATEGORYCONCOMITANT_MEDICATION_SUB_CATEGORY_ASSOCIATION_CONCOMITANT_MEDICATION_SUB_CATEGORY_CONCOMITANT_MEDICATIONCONCOMITANT_MEDICATION_CATEGORY_ASSOCIATIONCONCOMITANT_MEDICATION_CATEGORYCONCOMITANT_MEDICATION_SUB_CATEGORY_ASSOCIATION_CONCOMITANT_MEDICATION_SUB_CATEGORY1__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-  
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * <!-- begin-model-doc -->
-   * self.entryRelationship->excluding(null)->reject(observation->excluding(null).entryRelationship->excluding(null)->reject(observation->one(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(cda::Observation))))
-   * @param concomitantMedication The receiving '<em><b>Concomitant Medication</b></em>' model object.
-   * @param diagnostics The chain of diagnostics to which problems are to be appended.
-   * @param context The cache of context-specific information.
-   * <!-- end-model-doc -->
-   * @generated
-   */
-  
-  public static  boolean validateConcomitantMedicationconcomitantMedicationCategoryAssociationconcomitantMedicationCategoryconcomitantMedicationSubCategoryAssociationConcomitantMedicationSubCategoryConcomitantMedicationconcomitantMedicationCategoryAssociationconcomitantMedicationCategoryconcomitantMedicationSubCategoryAssociationConcomitantMedicationSubCategory1(ConcomitantMedication concomitantMedication, DiagnosticChain diagnostics, Map<Object, Object> context)
-  {
-    if (VALIDATE_CONCOMITANT_MEDICATIONCONCOMITANT_MEDICATION_CATEGORY_ASSOCIATIONCONCOMITANT_MEDICATION_CATEGORYCONCOMITANT_MEDICATION_SUB_CATEGORY_ASSOCIATION_CONCOMITANT_MEDICATION_SUB_CATEGORY_CONCOMITANT_MEDICATIONCONCOMITANT_MEDICATION_CATEGORY_ASSOCIATIONCONCOMITANT_MEDICATION_CATEGORYCONCOMITANT_MEDICATION_SUB_CATEGORY_ASSOCIATION_CONCOMITANT_MEDICATION_SUB_CATEGORY1__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-      OCL.Helper helper = EOCL_ENV.createOCLHelper();
-      helper.setContext(SdtmPackage.Literals.CONCOMITANT_MEDICATION);
-      try
-      {
-        VALIDATE_CONCOMITANT_MEDICATIONCONCOMITANT_MEDICATION_CATEGORY_ASSOCIATIONCONCOMITANT_MEDICATION_CATEGORYCONCOMITANT_MEDICATION_SUB_CATEGORY_ASSOCIATION_CONCOMITANT_MEDICATION_SUB_CATEGORY_CONCOMITANT_MEDICATIONCONCOMITANT_MEDICATION_CATEGORY_ASSOCIATIONCONCOMITANT_MEDICATION_CATEGORYCONCOMITANT_MEDICATION_SUB_CATEGORY_ASSOCIATION_CONCOMITANT_MEDICATION_SUB_CATEGORY1__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_CONCOMITANT_MEDICATIONCONCOMITANT_MEDICATION_CATEGORY_ASSOCIATIONCONCOMITANT_MEDICATION_CATEGORYCONCOMITANT_MEDICATION_SUB_CATEGORY_ASSOCIATION_CONCOMITANT_MEDICATION_SUB_CATEGORY_CONCOMITANT_MEDICATIONCONCOMITANT_MEDICATION_CATEGORY_ASSOCIATIONCONCOMITANT_MEDICATION_CATEGORYCONCOMITANT_MEDICATION_SUB_CATEGORY_ASSOCIATION_CONCOMITANT_MEDICATION_SUB_CATEGORY1__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-      }
-      catch (ParserException pe)
-      {
-        throw new UnsupportedOperationException(pe.getLocalizedMessage());
-      }
-    }
-    if (!EOCL_ENV.createQuery(VALIDATE_CONCOMITANT_MEDICATIONCONCOMITANT_MEDICATION_CATEGORY_ASSOCIATIONCONCOMITANT_MEDICATION_CATEGORYCONCOMITANT_MEDICATION_SUB_CATEGORY_ASSOCIATION_CONCOMITANT_MEDICATION_SUB_CATEGORY_CONCOMITANT_MEDICATIONCONCOMITANT_MEDICATION_CATEGORY_ASSOCIATIONCONCOMITANT_MEDICATION_CATEGORYCONCOMITANT_MEDICATION_SUB_CATEGORY_ASSOCIATION_CONCOMITANT_MEDICATION_SUB_CATEGORY1__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(concomitantMedication))
-    {
-      if (diagnostics != null)
-      {
-        diagnostics.add
-          (new BasicDiagnostic
-            (Diagnostic.ERROR,
-             SdtmValidator.DIAGNOSTIC_SOURCE,
-             SdtmValidator.CONCOMITANT_MEDICATION__CONCOMITANT_MEDICATIONCONCOMITANT_MEDICATION_CATEGORY_ASSOCIATIONCONCOMITANT_MEDICATION_CATEGORYCONCOMITANT_MEDICATION_SUB_CATEGORY_ASSOCIATION_CONCOMITANT_MEDICATION_SUB_CATEGORY_CONCOMITANT_MEDICATIONCONCOMITANT_MEDICATION_CATEGORY_ASSOCIATIONCONCOMITANT_MEDICATION_CATEGORYCONCOMITANT_MEDICATION_SUB_CATEGORY_ASSOCIATION_CONCOMITANT_MEDICATION_SUB_CATEGORY1,
-             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "ConcomitantMedicationconcomitantMedicationCategoryAssociationconcomitantMedicationCategoryconcomitantMedicationSubCategoryAssociationConcomitantMedicationSubCategoryConcomitantMedicationconcomitantMedicationCategoryAssociationconcomitantMedicationCategoryconcomitantMedicationSubCategoryAssociationConcomitantMedicationSubCategory1", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(concomitantMedication, context) }),
-             new Object [] { concomitantMedication }));
-      }
-      return false;
-    }
-    return true;
-  }
-
-  /**
-   * The cached OCL expression body for the '{@link #validateConcomitantMedicationconcomitantMedicationCategoryAssociationconcomitantMedicationCategoryClassCodeConcomitantMedicationconcomitantMedicationCategoryAssociationconcomitantMedicationCategoryClassCode1(ConcomitantMedication, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Concomitant Medicationconcomitant Medication Category Associationconcomitant Medication Category Class Code Concomitant Medicationconcomitant Medication Category Associationconcomitant Medication Category Class Code1</em>}' operation.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @see #validateConcomitantMedicationconcomitantMedicationCategoryAssociationconcomitantMedicationCategoryClassCodeConcomitantMedicationconcomitantMedicationCategoryAssociationconcomitantMedicationCategoryClassCode1(ConcomitantMedication, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-   * @generated
-   * @ordered
-   */
-  protected static final String VALIDATE_CONCOMITANT_MEDICATIONCONCOMITANT_MEDICATION_CATEGORY_ASSOCIATIONCONCOMITANT_MEDICATION_CATEGORY_CLASS_CODE_CONCOMITANT_MEDICATIONCONCOMITANT_MEDICATION_CATEGORY_ASSOCIATIONCONCOMITANT_MEDICATION_CATEGORY_CLASS_CODE1__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entryRelationship->excluding(null)->reject(observation->excluding(null)->reject(isDefined('classCode')))";
-
-  /**
-   * The cached OCL invariant for the '{@link #validateConcomitantMedicationconcomitantMedicationCategoryAssociationconcomitantMedicationCategoryClassCodeConcomitantMedicationconcomitantMedicationCategoryAssociationconcomitantMedicationCategoryClassCode1(ConcomitantMedication, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Concomitant Medicationconcomitant Medication Category Associationconcomitant Medication Category Class Code Concomitant Medicationconcomitant Medication Category Associationconcomitant Medication Category Class Code1</em>}' invariant operation.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @see #validateConcomitantMedicationconcomitantMedicationCategoryAssociationconcomitantMedicationCategoryClassCodeConcomitantMedicationconcomitantMedicationCategoryAssociationconcomitantMedicationCategoryClassCode1(ConcomitantMedication, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-   * @generated
-   * @ordered
-   */
-  
-  protected static Constraint VALIDATE_CONCOMITANT_MEDICATIONCONCOMITANT_MEDICATION_CATEGORY_ASSOCIATIONCONCOMITANT_MEDICATION_CATEGORY_CLASS_CODE_CONCOMITANT_MEDICATIONCONCOMITANT_MEDICATION_CATEGORY_ASSOCIATIONCONCOMITANT_MEDICATION_CATEGORY_CLASS_CODE1__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-  
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * <!-- begin-model-doc -->
-   * self.entryRelationship->excluding(null)->reject(observation->excluding(null)->reject(isDefined('classCode')))
-   * @param concomitantMedication The receiving '<em><b>Concomitant Medication</b></em>' model object.
-   * @param diagnostics The chain of diagnostics to which problems are to be appended.
-   * @param context The cache of context-specific information.
-   * <!-- end-model-doc -->
-   * @generated
-   */
-  
-  public static  boolean validateConcomitantMedicationconcomitantMedicationCategoryAssociationconcomitantMedicationCategoryClassCodeConcomitantMedicationconcomitantMedicationCategoryAssociationconcomitantMedicationCategoryClassCode1(ConcomitantMedication concomitantMedication, DiagnosticChain diagnostics, Map<Object, Object> context)
-  {
-    if (VALIDATE_CONCOMITANT_MEDICATIONCONCOMITANT_MEDICATION_CATEGORY_ASSOCIATIONCONCOMITANT_MEDICATION_CATEGORY_CLASS_CODE_CONCOMITANT_MEDICATIONCONCOMITANT_MEDICATION_CATEGORY_ASSOCIATIONCONCOMITANT_MEDICATION_CATEGORY_CLASS_CODE1__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-      OCL.Helper helper = EOCL_ENV.createOCLHelper();
-      helper.setContext(SdtmPackage.Literals.CONCOMITANT_MEDICATION);
-      try
-      {
-        VALIDATE_CONCOMITANT_MEDICATIONCONCOMITANT_MEDICATION_CATEGORY_ASSOCIATIONCONCOMITANT_MEDICATION_CATEGORY_CLASS_CODE_CONCOMITANT_MEDICATIONCONCOMITANT_MEDICATION_CATEGORY_ASSOCIATIONCONCOMITANT_MEDICATION_CATEGORY_CLASS_CODE1__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_CONCOMITANT_MEDICATIONCONCOMITANT_MEDICATION_CATEGORY_ASSOCIATIONCONCOMITANT_MEDICATION_CATEGORY_CLASS_CODE_CONCOMITANT_MEDICATIONCONCOMITANT_MEDICATION_CATEGORY_ASSOCIATIONCONCOMITANT_MEDICATION_CATEGORY_CLASS_CODE1__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-      }
-      catch (ParserException pe)
-      {
-        throw new UnsupportedOperationException(pe.getLocalizedMessage());
-      }
-    }
-    if (!EOCL_ENV.createQuery(VALIDATE_CONCOMITANT_MEDICATIONCONCOMITANT_MEDICATION_CATEGORY_ASSOCIATIONCONCOMITANT_MEDICATION_CATEGORY_CLASS_CODE_CONCOMITANT_MEDICATIONCONCOMITANT_MEDICATION_CATEGORY_ASSOCIATIONCONCOMITANT_MEDICATION_CATEGORY_CLASS_CODE1__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(concomitantMedication))
-    {
-      if (diagnostics != null)
-      {
-        diagnostics.add
-          (new BasicDiagnostic
-            (Diagnostic.ERROR,
-             SdtmValidator.DIAGNOSTIC_SOURCE,
-             SdtmValidator.CONCOMITANT_MEDICATION__CONCOMITANT_MEDICATIONCONCOMITANT_MEDICATION_CATEGORY_ASSOCIATIONCONCOMITANT_MEDICATION_CATEGORY_CLASS_CODE_CONCOMITANT_MEDICATIONCONCOMITANT_MEDICATION_CATEGORY_ASSOCIATIONCONCOMITANT_MEDICATION_CATEGORY_CLASS_CODE1,
-             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "ConcomitantMedicationconcomitantMedicationCategoryAssociationconcomitantMedicationCategoryClassCodeConcomitantMedicationconcomitantMedicationCategoryAssociationconcomitantMedicationCategoryClassCode1", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(concomitantMedication, context) }),
-             new Object [] { concomitantMedication }));
-      }
-      return false;
-    }
-    return true;
-  }
-
-  /**
-   * The cached OCL expression body for the '{@link #validateConcomitantMedicationconcomitantMedicationCategoryAssociationconcomitantMedicationCategoryCodeConcomitantMedicationconcomitantMedicationCategoryAssociationconcomitantMedicationCategoryCode1(ConcomitantMedication, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Concomitant Medicationconcomitant Medication Category Associationconcomitant Medication Category Code Concomitant Medicationconcomitant Medication Category Associationconcomitant Medication Category Code1</em>}' operation.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @see #validateConcomitantMedicationconcomitantMedicationCategoryAssociationconcomitantMedicationCategoryCodeConcomitantMedicationconcomitantMedicationCategoryAssociationconcomitantMedicationCategoryCode1(ConcomitantMedication, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-   * @generated
-   * @ordered
-   */
-  protected static final String VALIDATE_CONCOMITANT_MEDICATIONCONCOMITANT_MEDICATION_CATEGORY_ASSOCIATIONCONCOMITANT_MEDICATION_CATEGORY_CODE_CONCOMITANT_MEDICATIONCONCOMITANT_MEDICATION_CATEGORY_ASSOCIATIONCONCOMITANT_MEDICATION_CATEGORY_CODE1__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entryRelationship->excluding(null)->reject(observation->excluding(null)->reject((code.oclIsUndefined() or code.isNullFlavorUndefined()) implies (not code.oclIsUndefined())))";
-
-  /**
-   * The cached OCL invariant for the '{@link #validateConcomitantMedicationconcomitantMedicationCategoryAssociationconcomitantMedicationCategoryCodeConcomitantMedicationconcomitantMedicationCategoryAssociationconcomitantMedicationCategoryCode1(ConcomitantMedication, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Concomitant Medicationconcomitant Medication Category Associationconcomitant Medication Category Code Concomitant Medicationconcomitant Medication Category Associationconcomitant Medication Category Code1</em>}' invariant operation.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @see #validateConcomitantMedicationconcomitantMedicationCategoryAssociationconcomitantMedicationCategoryCodeConcomitantMedicationconcomitantMedicationCategoryAssociationconcomitantMedicationCategoryCode1(ConcomitantMedication, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-   * @generated
-   * @ordered
-   */
-  
-  protected static Constraint VALIDATE_CONCOMITANT_MEDICATIONCONCOMITANT_MEDICATION_CATEGORY_ASSOCIATIONCONCOMITANT_MEDICATION_CATEGORY_CODE_CONCOMITANT_MEDICATIONCONCOMITANT_MEDICATION_CATEGORY_ASSOCIATIONCONCOMITANT_MEDICATION_CATEGORY_CODE1__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-  
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * <!-- begin-model-doc -->
-   * self.entryRelationship->excluding(null)->reject(observation->excluding(null)->reject((code.oclIsUndefined() or code.isNullFlavorUndefined()) implies (not code.oclIsUndefined())))
-   * @param concomitantMedication The receiving '<em><b>Concomitant Medication</b></em>' model object.
-   * @param diagnostics The chain of diagnostics to which problems are to be appended.
-   * @param context The cache of context-specific information.
-   * <!-- end-model-doc -->
-   * @generated
-   */
-  
-  public static  boolean validateConcomitantMedicationconcomitantMedicationCategoryAssociationconcomitantMedicationCategoryCodeConcomitantMedicationconcomitantMedicationCategoryAssociationconcomitantMedicationCategoryCode1(ConcomitantMedication concomitantMedication, DiagnosticChain diagnostics, Map<Object, Object> context)
-  {
-    if (VALIDATE_CONCOMITANT_MEDICATIONCONCOMITANT_MEDICATION_CATEGORY_ASSOCIATIONCONCOMITANT_MEDICATION_CATEGORY_CODE_CONCOMITANT_MEDICATIONCONCOMITANT_MEDICATION_CATEGORY_ASSOCIATIONCONCOMITANT_MEDICATION_CATEGORY_CODE1__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-      OCL.Helper helper = EOCL_ENV.createOCLHelper();
-      helper.setContext(SdtmPackage.Literals.CONCOMITANT_MEDICATION);
-      try
-      {
-        VALIDATE_CONCOMITANT_MEDICATIONCONCOMITANT_MEDICATION_CATEGORY_ASSOCIATIONCONCOMITANT_MEDICATION_CATEGORY_CODE_CONCOMITANT_MEDICATIONCONCOMITANT_MEDICATION_CATEGORY_ASSOCIATIONCONCOMITANT_MEDICATION_CATEGORY_CODE1__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_CONCOMITANT_MEDICATIONCONCOMITANT_MEDICATION_CATEGORY_ASSOCIATIONCONCOMITANT_MEDICATION_CATEGORY_CODE_CONCOMITANT_MEDICATIONCONCOMITANT_MEDICATION_CATEGORY_ASSOCIATIONCONCOMITANT_MEDICATION_CATEGORY_CODE1__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-      }
-      catch (ParserException pe)
-      {
-        throw new UnsupportedOperationException(pe.getLocalizedMessage());
-      }
-    }
-    if (!EOCL_ENV.createQuery(VALIDATE_CONCOMITANT_MEDICATIONCONCOMITANT_MEDICATION_CATEGORY_ASSOCIATIONCONCOMITANT_MEDICATION_CATEGORY_CODE_CONCOMITANT_MEDICATIONCONCOMITANT_MEDICATION_CATEGORY_ASSOCIATIONCONCOMITANT_MEDICATION_CATEGORY_CODE1__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(concomitantMedication))
-    {
-      if (diagnostics != null)
-      {
-        diagnostics.add
-          (new BasicDiagnostic
-            (Diagnostic.ERROR,
-             SdtmValidator.DIAGNOSTIC_SOURCE,
-             SdtmValidator.CONCOMITANT_MEDICATION__CONCOMITANT_MEDICATIONCONCOMITANT_MEDICATION_CATEGORY_ASSOCIATIONCONCOMITANT_MEDICATION_CATEGORY_CODE_CONCOMITANT_MEDICATIONCONCOMITANT_MEDICATION_CATEGORY_ASSOCIATIONCONCOMITANT_MEDICATION_CATEGORY_CODE1,
-             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "ConcomitantMedicationconcomitantMedicationCategoryAssociationconcomitantMedicationCategoryCodeConcomitantMedicationconcomitantMedicationCategoryAssociationconcomitantMedicationCategoryCode1", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(concomitantMedication, context) }),
-             new Object [] { concomitantMedication }));
-      }
-      return false;
-    }
-    return true;
-  }
-
-  /**
-   * The cached OCL expression body for the '{@link #validateConcomitantMedicationconcomitantMedicationCategoryAssociationconcomitantMedicationCategoryMoodCodeConcomitantMedicationconcomitantMedicationCategoryAssociationconcomitantMedicationCategoryMoodCode1(ConcomitantMedication, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Concomitant Medicationconcomitant Medication Category Associationconcomitant Medication Category Mood Code Concomitant Medicationconcomitant Medication Category Associationconcomitant Medication Category Mood Code1</em>}' operation.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @see #validateConcomitantMedicationconcomitantMedicationCategoryAssociationconcomitantMedicationCategoryMoodCodeConcomitantMedicationconcomitantMedicationCategoryAssociationconcomitantMedicationCategoryMoodCode1(ConcomitantMedication, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-   * @generated
-   * @ordered
-   */
-  protected static final String VALIDATE_CONCOMITANT_MEDICATIONCONCOMITANT_MEDICATION_CATEGORY_ASSOCIATIONCONCOMITANT_MEDICATION_CATEGORY_MOOD_CODE_CONCOMITANT_MEDICATIONCONCOMITANT_MEDICATION_CATEGORY_ASSOCIATIONCONCOMITANT_MEDICATION_CATEGORY_MOOD_CODE1__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entryRelationship->excluding(null)->reject(observation->excluding(null)->reject(isDefined('moodCode')))";
-
-  /**
-   * The cached OCL invariant for the '{@link #validateConcomitantMedicationconcomitantMedicationCategoryAssociationconcomitantMedicationCategoryMoodCodeConcomitantMedicationconcomitantMedicationCategoryAssociationconcomitantMedicationCategoryMoodCode1(ConcomitantMedication, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Concomitant Medicationconcomitant Medication Category Associationconcomitant Medication Category Mood Code Concomitant Medicationconcomitant Medication Category Associationconcomitant Medication Category Mood Code1</em>}' invariant operation.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @see #validateConcomitantMedicationconcomitantMedicationCategoryAssociationconcomitantMedicationCategoryMoodCodeConcomitantMedicationconcomitantMedicationCategoryAssociationconcomitantMedicationCategoryMoodCode1(ConcomitantMedication, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-   * @generated
-   * @ordered
-   */
-  
-  protected static Constraint VALIDATE_CONCOMITANT_MEDICATIONCONCOMITANT_MEDICATION_CATEGORY_ASSOCIATIONCONCOMITANT_MEDICATION_CATEGORY_MOOD_CODE_CONCOMITANT_MEDICATIONCONCOMITANT_MEDICATION_CATEGORY_ASSOCIATIONCONCOMITANT_MEDICATION_CATEGORY_MOOD_CODE1__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-  
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * <!-- begin-model-doc -->
-   * self.entryRelationship->excluding(null)->reject(observation->excluding(null)->reject(isDefined('moodCode')))
-   * @param concomitantMedication The receiving '<em><b>Concomitant Medication</b></em>' model object.
-   * @param diagnostics The chain of diagnostics to which problems are to be appended.
-   * @param context The cache of context-specific information.
-   * <!-- end-model-doc -->
-   * @generated
-   */
-  
-  public static  boolean validateConcomitantMedicationconcomitantMedicationCategoryAssociationconcomitantMedicationCategoryMoodCodeConcomitantMedicationconcomitantMedicationCategoryAssociationconcomitantMedicationCategoryMoodCode1(ConcomitantMedication concomitantMedication, DiagnosticChain diagnostics, Map<Object, Object> context)
-  {
-    if (VALIDATE_CONCOMITANT_MEDICATIONCONCOMITANT_MEDICATION_CATEGORY_ASSOCIATIONCONCOMITANT_MEDICATION_CATEGORY_MOOD_CODE_CONCOMITANT_MEDICATIONCONCOMITANT_MEDICATION_CATEGORY_ASSOCIATIONCONCOMITANT_MEDICATION_CATEGORY_MOOD_CODE1__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-      OCL.Helper helper = EOCL_ENV.createOCLHelper();
-      helper.setContext(SdtmPackage.Literals.CONCOMITANT_MEDICATION);
-      try
-      {
-        VALIDATE_CONCOMITANT_MEDICATIONCONCOMITANT_MEDICATION_CATEGORY_ASSOCIATIONCONCOMITANT_MEDICATION_CATEGORY_MOOD_CODE_CONCOMITANT_MEDICATIONCONCOMITANT_MEDICATION_CATEGORY_ASSOCIATIONCONCOMITANT_MEDICATION_CATEGORY_MOOD_CODE1__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_CONCOMITANT_MEDICATIONCONCOMITANT_MEDICATION_CATEGORY_ASSOCIATIONCONCOMITANT_MEDICATION_CATEGORY_MOOD_CODE_CONCOMITANT_MEDICATIONCONCOMITANT_MEDICATION_CATEGORY_ASSOCIATIONCONCOMITANT_MEDICATION_CATEGORY_MOOD_CODE1__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-      }
-      catch (ParserException pe)
-      {
-        throw new UnsupportedOperationException(pe.getLocalizedMessage());
-      }
-    }
-    if (!EOCL_ENV.createQuery(VALIDATE_CONCOMITANT_MEDICATIONCONCOMITANT_MEDICATION_CATEGORY_ASSOCIATIONCONCOMITANT_MEDICATION_CATEGORY_MOOD_CODE_CONCOMITANT_MEDICATIONCONCOMITANT_MEDICATION_CATEGORY_ASSOCIATIONCONCOMITANT_MEDICATION_CATEGORY_MOOD_CODE1__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(concomitantMedication))
-    {
-      if (diagnostics != null)
-      {
-        diagnostics.add
-          (new BasicDiagnostic
-            (Diagnostic.ERROR,
-             SdtmValidator.DIAGNOSTIC_SOURCE,
-             SdtmValidator.CONCOMITANT_MEDICATION__CONCOMITANT_MEDICATIONCONCOMITANT_MEDICATION_CATEGORY_ASSOCIATIONCONCOMITANT_MEDICATION_CATEGORY_MOOD_CODE_CONCOMITANT_MEDICATIONCONCOMITANT_MEDICATION_CATEGORY_ASSOCIATIONCONCOMITANT_MEDICATION_CATEGORY_MOOD_CODE1,
-             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "ConcomitantMedicationconcomitantMedicationCategoryAssociationconcomitantMedicationCategoryMoodCodeConcomitantMedicationconcomitantMedicationCategoryAssociationconcomitantMedicationCategoryMoodCode1", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(concomitantMedication, context) }),
-             new Object [] { concomitantMedication }));
-      }
-      return false;
-    }
-    return true;
-  }
-
-  /**
-   * The cached OCL expression body for the '{@link #validateConcomitantMedicationconcomitantMedicationCategoryAssociationconcomitantMedicationCategoryValueConcomitantMedicationconcomitantMedicationCategoryAssociationconcomitantMedicationCategoryValue1(ConcomitantMedication, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Concomitant Medicationconcomitant Medication Category Associationconcomitant Medication Category Value Concomitant Medicationconcomitant Medication Category Associationconcomitant Medication Category Value1</em>}' operation.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @see #validateConcomitantMedicationconcomitantMedicationCategoryAssociationconcomitantMedicationCategoryValueConcomitantMedicationconcomitantMedicationCategoryAssociationconcomitantMedicationCategoryValue1(ConcomitantMedication, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-   * @generated
-   * @ordered
-   */
-  protected static final String VALIDATE_CONCOMITANT_MEDICATIONCONCOMITANT_MEDICATION_CATEGORY_ASSOCIATIONCONCOMITANT_MEDICATION_CATEGORY_VALUE_CONCOMITANT_MEDICATIONCONCOMITANT_MEDICATION_CATEGORY_ASSOCIATIONCONCOMITANT_MEDICATION_CATEGORY_VALUE1__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entryRelationship->excluding(null)->reject(observation->excluding(null)->reject((value->isEmpty() or value->exists(element | element.isNullFlavorUndefined())) implies (value->size() = 1 and value->forAll(element | element.oclIsTypeOf(datatypes::CE)))))";
-
-  /**
-   * The cached OCL invariant for the '{@link #validateConcomitantMedicationconcomitantMedicationCategoryAssociationconcomitantMedicationCategoryValueConcomitantMedicationconcomitantMedicationCategoryAssociationconcomitantMedicationCategoryValue1(ConcomitantMedication, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Concomitant Medicationconcomitant Medication Category Associationconcomitant Medication Category Value Concomitant Medicationconcomitant Medication Category Associationconcomitant Medication Category Value1</em>}' invariant operation.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @see #validateConcomitantMedicationconcomitantMedicationCategoryAssociationconcomitantMedicationCategoryValueConcomitantMedicationconcomitantMedicationCategoryAssociationconcomitantMedicationCategoryValue1(ConcomitantMedication, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-   * @generated
-   * @ordered
-   */
-  
-  protected static Constraint VALIDATE_CONCOMITANT_MEDICATIONCONCOMITANT_MEDICATION_CATEGORY_ASSOCIATIONCONCOMITANT_MEDICATION_CATEGORY_VALUE_CONCOMITANT_MEDICATIONCONCOMITANT_MEDICATION_CATEGORY_ASSOCIATIONCONCOMITANT_MEDICATION_CATEGORY_VALUE1__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-  
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * <!-- begin-model-doc -->
-   * self.entryRelationship->excluding(null)->reject(observation->excluding(null)->reject((value->isEmpty() or value->exists(element | element.isNullFlavorUndefined())) implies (value->size() = 1 and value->forAll(element | element.oclIsTypeOf(datatypes::CE)))))
-   * @param concomitantMedication The receiving '<em><b>Concomitant Medication</b></em>' model object.
-   * @param diagnostics The chain of diagnostics to which problems are to be appended.
-   * @param context The cache of context-specific information.
-   * <!-- end-model-doc -->
-   * @generated
-   */
-  
-  public static  boolean validateConcomitantMedicationconcomitantMedicationCategoryAssociationconcomitantMedicationCategoryValueConcomitantMedicationconcomitantMedicationCategoryAssociationconcomitantMedicationCategoryValue1(ConcomitantMedication concomitantMedication, DiagnosticChain diagnostics, Map<Object, Object> context)
-  {
-    if (VALIDATE_CONCOMITANT_MEDICATIONCONCOMITANT_MEDICATION_CATEGORY_ASSOCIATIONCONCOMITANT_MEDICATION_CATEGORY_VALUE_CONCOMITANT_MEDICATIONCONCOMITANT_MEDICATION_CATEGORY_ASSOCIATIONCONCOMITANT_MEDICATION_CATEGORY_VALUE1__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-      OCL.Helper helper = EOCL_ENV.createOCLHelper();
-      helper.setContext(SdtmPackage.Literals.CONCOMITANT_MEDICATION);
-      try
-      {
-        VALIDATE_CONCOMITANT_MEDICATIONCONCOMITANT_MEDICATION_CATEGORY_ASSOCIATIONCONCOMITANT_MEDICATION_CATEGORY_VALUE_CONCOMITANT_MEDICATIONCONCOMITANT_MEDICATION_CATEGORY_ASSOCIATIONCONCOMITANT_MEDICATION_CATEGORY_VALUE1__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_CONCOMITANT_MEDICATIONCONCOMITANT_MEDICATION_CATEGORY_ASSOCIATIONCONCOMITANT_MEDICATION_CATEGORY_VALUE_CONCOMITANT_MEDICATIONCONCOMITANT_MEDICATION_CATEGORY_ASSOCIATIONCONCOMITANT_MEDICATION_CATEGORY_VALUE1__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-      }
-      catch (ParserException pe)
-      {
-        throw new UnsupportedOperationException(pe.getLocalizedMessage());
-      }
-    }
-    if (!EOCL_ENV.createQuery(VALIDATE_CONCOMITANT_MEDICATIONCONCOMITANT_MEDICATION_CATEGORY_ASSOCIATIONCONCOMITANT_MEDICATION_CATEGORY_VALUE_CONCOMITANT_MEDICATIONCONCOMITANT_MEDICATION_CATEGORY_ASSOCIATIONCONCOMITANT_MEDICATION_CATEGORY_VALUE1__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(concomitantMedication))
-    {
-      if (diagnostics != null)
-      {
-        diagnostics.add
-          (new BasicDiagnostic
-            (Diagnostic.ERROR,
-             SdtmValidator.DIAGNOSTIC_SOURCE,
-             SdtmValidator.CONCOMITANT_MEDICATION__CONCOMITANT_MEDICATIONCONCOMITANT_MEDICATION_CATEGORY_ASSOCIATIONCONCOMITANT_MEDICATION_CATEGORY_VALUE_CONCOMITANT_MEDICATIONCONCOMITANT_MEDICATION_CATEGORY_ASSOCIATIONCONCOMITANT_MEDICATION_CATEGORY_VALUE1,
-             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "ConcomitantMedicationconcomitantMedicationCategoryAssociationconcomitantMedicationCategoryValueConcomitantMedicationconcomitantMedicationCategoryAssociationconcomitantMedicationCategoryValue1", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(concomitantMedication, context) }),
-             new Object [] { concomitantMedication }));
-      }
-      return false;
-    }
-    return true;
-  }
-
-  /**
-   * The cached OCL expression body for the '{@link #validateConcomitantMedicationconcomitantMedicationCategoryAssociationconcomitantMedicationCategoryConcomitantMedicationSubCategoryAssociationConcomitantMedicationconcomitantMedicationCategoryAssociationconcomitantMedicationCategoryConcomitantMedicationSubCategoryAssociation1(ConcomitantMedication, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Concomitant Medicationconcomitant Medication Category Associationconcomitant Medication Category Concomitant Medication Sub Category Association Concomitant Medicationconcomitant Medication Category Associationconcomitant Medication Category Concomitant Medication Sub Category Association1</em>}' operation.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @see #validateConcomitantMedicationconcomitantMedicationCategoryAssociationconcomitantMedicationCategoryConcomitantMedicationSubCategoryAssociationConcomitantMedicationconcomitantMedicationCategoryAssociationconcomitantMedicationCategoryConcomitantMedicationSubCategoryAssociation1(ConcomitantMedication, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-   * @generated
-   * @ordered
-   */
-  protected static final String VALIDATE_CONCOMITANT_MEDICATIONCONCOMITANT_MEDICATION_CATEGORY_ASSOCIATIONCONCOMITANT_MEDICATION_CATEGORY_CONCOMITANT_MEDICATION_SUB_CATEGORY_ASSOCIATION_CONCOMITANT_MEDICATIONCONCOMITANT_MEDICATION_CATEGORY_ASSOCIATIONCONCOMITANT_MEDICATION_CATEGORY_CONCOMITANT_MEDICATION_SUB_CATEGORY_ASSOCIATION1__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entryRelationship->excluding(null)->reject(observation->excluding(null)->reject(entryRelationship->one(entryRelationship : cda::EntryRelationship | not entryRelationship.oclIsUndefined() and entryRelationship.oclIsKindOf(cda::EntryRelationship))))";
-
-  /**
-   * The cached OCL invariant for the '{@link #validateConcomitantMedicationconcomitantMedicationCategoryAssociationconcomitantMedicationCategoryConcomitantMedicationSubCategoryAssociationConcomitantMedicationconcomitantMedicationCategoryAssociationconcomitantMedicationCategoryConcomitantMedicationSubCategoryAssociation1(ConcomitantMedication, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Concomitant Medicationconcomitant Medication Category Associationconcomitant Medication Category Concomitant Medication Sub Category Association Concomitant Medicationconcomitant Medication Category Associationconcomitant Medication Category Concomitant Medication Sub Category Association1</em>}' invariant operation.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @see #validateConcomitantMedicationconcomitantMedicationCategoryAssociationconcomitantMedicationCategoryConcomitantMedicationSubCategoryAssociationConcomitantMedicationconcomitantMedicationCategoryAssociationconcomitantMedicationCategoryConcomitantMedicationSubCategoryAssociation1(ConcomitantMedication, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-   * @generated
-   * @ordered
-   */
-  
-  protected static Constraint VALIDATE_CONCOMITANT_MEDICATIONCONCOMITANT_MEDICATION_CATEGORY_ASSOCIATIONCONCOMITANT_MEDICATION_CATEGORY_CONCOMITANT_MEDICATION_SUB_CATEGORY_ASSOCIATION_CONCOMITANT_MEDICATIONCONCOMITANT_MEDICATION_CATEGORY_ASSOCIATIONCONCOMITANT_MEDICATION_CATEGORY_CONCOMITANT_MEDICATION_SUB_CATEGORY_ASSOCIATION1__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-  
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * <!-- begin-model-doc -->
-   * self.entryRelationship->excluding(null)->reject(observation->excluding(null)->reject(entryRelationship->one(entryRelationship : cda::EntryRelationship | not entryRelationship.oclIsUndefined() and entryRelationship.oclIsKindOf(cda::EntryRelationship))))
-   * @param concomitantMedication The receiving '<em><b>Concomitant Medication</b></em>' model object.
-   * @param diagnostics The chain of diagnostics to which problems are to be appended.
-   * @param context The cache of context-specific information.
-   * <!-- end-model-doc -->
-   * @generated
-   */
-  
-  public static  boolean validateConcomitantMedicationconcomitantMedicationCategoryAssociationconcomitantMedicationCategoryConcomitantMedicationSubCategoryAssociationConcomitantMedicationconcomitantMedicationCategoryAssociationconcomitantMedicationCategoryConcomitantMedicationSubCategoryAssociation1(ConcomitantMedication concomitantMedication, DiagnosticChain diagnostics, Map<Object, Object> context)
-  {
-    if (VALIDATE_CONCOMITANT_MEDICATIONCONCOMITANT_MEDICATION_CATEGORY_ASSOCIATIONCONCOMITANT_MEDICATION_CATEGORY_CONCOMITANT_MEDICATION_SUB_CATEGORY_ASSOCIATION_CONCOMITANT_MEDICATIONCONCOMITANT_MEDICATION_CATEGORY_ASSOCIATIONCONCOMITANT_MEDICATION_CATEGORY_CONCOMITANT_MEDICATION_SUB_CATEGORY_ASSOCIATION1__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-      OCL.Helper helper = EOCL_ENV.createOCLHelper();
-      helper.setContext(SdtmPackage.Literals.CONCOMITANT_MEDICATION);
-      try
-      {
-        VALIDATE_CONCOMITANT_MEDICATIONCONCOMITANT_MEDICATION_CATEGORY_ASSOCIATIONCONCOMITANT_MEDICATION_CATEGORY_CONCOMITANT_MEDICATION_SUB_CATEGORY_ASSOCIATION_CONCOMITANT_MEDICATIONCONCOMITANT_MEDICATION_CATEGORY_ASSOCIATIONCONCOMITANT_MEDICATION_CATEGORY_CONCOMITANT_MEDICATION_SUB_CATEGORY_ASSOCIATION1__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_CONCOMITANT_MEDICATIONCONCOMITANT_MEDICATION_CATEGORY_ASSOCIATIONCONCOMITANT_MEDICATION_CATEGORY_CONCOMITANT_MEDICATION_SUB_CATEGORY_ASSOCIATION_CONCOMITANT_MEDICATIONCONCOMITANT_MEDICATION_CATEGORY_ASSOCIATIONCONCOMITANT_MEDICATION_CATEGORY_CONCOMITANT_MEDICATION_SUB_CATEGORY_ASSOCIATION1__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-      }
-      catch (ParserException pe)
-      {
-        throw new UnsupportedOperationException(pe.getLocalizedMessage());
-      }
-    }
-    if (!EOCL_ENV.createQuery(VALIDATE_CONCOMITANT_MEDICATIONCONCOMITANT_MEDICATION_CATEGORY_ASSOCIATIONCONCOMITANT_MEDICATION_CATEGORY_CONCOMITANT_MEDICATION_SUB_CATEGORY_ASSOCIATION_CONCOMITANT_MEDICATIONCONCOMITANT_MEDICATION_CATEGORY_ASSOCIATIONCONCOMITANT_MEDICATION_CATEGORY_CONCOMITANT_MEDICATION_SUB_CATEGORY_ASSOCIATION1__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(concomitantMedication))
-    {
-      if (diagnostics != null)
-      {
-        diagnostics.add
-          (new BasicDiagnostic
-            (Diagnostic.ERROR,
-             SdtmValidator.DIAGNOSTIC_SOURCE,
-             SdtmValidator.CONCOMITANT_MEDICATION__CONCOMITANT_MEDICATIONCONCOMITANT_MEDICATION_CATEGORY_ASSOCIATIONCONCOMITANT_MEDICATION_CATEGORY_CONCOMITANT_MEDICATION_SUB_CATEGORY_ASSOCIATION_CONCOMITANT_MEDICATIONCONCOMITANT_MEDICATION_CATEGORY_ASSOCIATIONCONCOMITANT_MEDICATION_CATEGORY_CONCOMITANT_MEDICATION_SUB_CATEGORY_ASSOCIATION1,
-             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "ConcomitantMedicationconcomitantMedicationCategoryAssociationconcomitantMedicationCategoryConcomitantMedicationSubCategoryAssociationConcomitantMedicationconcomitantMedicationCategoryAssociationconcomitantMedicationCategoryConcomitantMedicationSubCategoryAssociation1", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(concomitantMedication, context) }),
-             new Object [] { concomitantMedication }));
-      }
+       
       return false;
     }
     return true;
@@ -3151,7 +2596,6 @@ public class ConcomitantMedicationOperations extends SubstanceAdministrationOper
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.entryRelationship->excluding(null).observation->excluding(null)->reject(classCode=vocab::ActClassObservation::OBS)
    * @param concomitantMedication The receiving '<em><b>Concomitant Medication</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -3161,6 +2605,7 @@ public class ConcomitantMedicationOperations extends SubstanceAdministrationOper
   
   public static  boolean validateConcomitantMedicationconcomitantMedicationIndicationAssociationConcomitantMedicationIndicationClassCode(ConcomitantMedication concomitantMedication, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
+  	  
     if (VALIDATE_CONCOMITANT_MEDICATIONCONCOMITANT_MEDICATION_INDICATION_ASSOCIATION_CONCOMITANT_MEDICATION_INDICATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(SdtmPackage.Literals.CONCOMITANT_MEDICATION);
@@ -3185,6 +2630,7 @@ public class ConcomitantMedicationOperations extends SubstanceAdministrationOper
              org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "ConcomitantMedicationconcomitantMedicationIndicationAssociationConcomitantMedicationIndicationClassCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(concomitantMedication, context) }),
              new Object [] { concomitantMedication }));
       }
+       
       return false;
     }
     return true;
@@ -3216,7 +2662,6 @@ public class ConcomitantMedicationOperations extends SubstanceAdministrationOper
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.entryRelationship->excluding(null).observation->excluding(null)->reject(moodCode=vocab::x_ActMoodDocumentObservation::EVN)
    * @param concomitantMedication The receiving '<em><b>Concomitant Medication</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -3226,6 +2671,7 @@ public class ConcomitantMedicationOperations extends SubstanceAdministrationOper
   
   public static  boolean validateConcomitantMedicationconcomitantMedicationIndicationAssociationConcomitantMedicationIndicationMoodCode(ConcomitantMedication concomitantMedication, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
+  	  
     if (VALIDATE_CONCOMITANT_MEDICATIONCONCOMITANT_MEDICATION_INDICATION_ASSOCIATION_CONCOMITANT_MEDICATION_INDICATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(SdtmPackage.Literals.CONCOMITANT_MEDICATION);
@@ -3250,6 +2696,73 @@ public class ConcomitantMedicationOperations extends SubstanceAdministrationOper
              org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "ConcomitantMedicationconcomitantMedicationIndicationAssociationConcomitantMedicationIndicationMoodCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(concomitantMedication, context) }),
              new Object [] { concomitantMedication }));
       }
+       
+      return false;
+    }
+    return true;
+  }
+
+  /**
+   * The cached OCL expression body for the '{@link #validateConcomitantMedicationconcomitantMedicationIndicationAssociationConcomitantMedicationIndicationCodeP(ConcomitantMedication, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Concomitant Medicationconcomitant Medication Indication Association Concomitant Medication Indication Code P</em>}' operation.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #validateConcomitantMedicationconcomitantMedicationIndicationAssociationConcomitantMedicationIndicationCodeP(ConcomitantMedication, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+   * @generated
+   * @ordered
+   */
+  protected static final String VALIDATE_CONCOMITANT_MEDICATIONCONCOMITANT_MEDICATION_INDICATION_ASSOCIATION_CONCOMITANT_MEDICATION_INDICATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entryRelationship->excluding(null).observation->excluding(null)->reject((code.oclIsUndefined() or code.isNullFlavorUndefined()) implies (not code.oclIsUndefined()))";
+
+  /**
+   * The cached OCL invariant for the '{@link #validateConcomitantMedicationconcomitantMedicationIndicationAssociationConcomitantMedicationIndicationCodeP(ConcomitantMedication, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Concomitant Medicationconcomitant Medication Indication Association Concomitant Medication Indication Code P</em>}' invariant operation.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #validateConcomitantMedicationconcomitantMedicationIndicationAssociationConcomitantMedicationIndicationCodeP(ConcomitantMedication, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+   * @generated
+   * @ordered
+   */
+  
+  protected static Constraint VALIDATE_CONCOMITANT_MEDICATIONCONCOMITANT_MEDICATION_INDICATION_ASSOCIATION_CONCOMITANT_MEDICATION_INDICATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * <!-- begin-model-doc -->
+   * @param concomitantMedication The receiving '<em><b>Concomitant Medication</b></em>' model object.
+   * @param diagnostics The chain of diagnostics to which problems are to be appended.
+   * @param context The cache of context-specific information.
+   * <!-- end-model-doc -->
+   * @generated
+   */
+  
+  public static  boolean validateConcomitantMedicationconcomitantMedicationIndicationAssociationConcomitantMedicationIndicationCodeP(ConcomitantMedication concomitantMedication, DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+  	  
+    if (VALIDATE_CONCOMITANT_MEDICATIONCONCOMITANT_MEDICATION_INDICATION_ASSOCIATION_CONCOMITANT_MEDICATION_INDICATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+      OCL.Helper helper = EOCL_ENV.createOCLHelper();
+      helper.setContext(SdtmPackage.Literals.CONCOMITANT_MEDICATION);
+      try
+      {
+        VALIDATE_CONCOMITANT_MEDICATIONCONCOMITANT_MEDICATION_INDICATION_ASSOCIATION_CONCOMITANT_MEDICATION_INDICATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_CONCOMITANT_MEDICATIONCONCOMITANT_MEDICATION_INDICATION_ASSOCIATION_CONCOMITANT_MEDICATION_INDICATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+      }
+      catch (ParserException pe)
+      {
+        throw new UnsupportedOperationException(pe.getLocalizedMessage());
+      }
+    }
+    if (!EOCL_ENV.createQuery(VALIDATE_CONCOMITANT_MEDICATIONCONCOMITANT_MEDICATION_INDICATION_ASSOCIATION_CONCOMITANT_MEDICATION_INDICATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(concomitantMedication))
+    {
+      if (diagnostics != null)
+      {
+        diagnostics.add
+          (new BasicDiagnostic
+            (Diagnostic.ERROR,
+             SdtmValidator.DIAGNOSTIC_SOURCE,
+             SdtmValidator.CONCOMITANT_MEDICATION__CONCOMITANT_MEDICATIONCONCOMITANT_MEDICATION_INDICATION_ASSOCIATION_CONCOMITANT_MEDICATION_INDICATION_CODE_P,
+             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "ConcomitantMedicationconcomitantMedicationIndicationAssociationConcomitantMedicationIndicationCodeP", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(concomitantMedication, context) }),
+             new Object [] { concomitantMedication }));
+      }
+       
       return false;
     }
     return true;
@@ -3263,7 +2776,9 @@ public class ConcomitantMedicationOperations extends SubstanceAdministrationOper
    * @generated
    * @ordered
    */
-  protected static final String VALIDATE_CONCOMITANT_MEDICATIONCONCOMITANT_MEDICATION_INDICATION_ASSOCIATION_CONCOMITANT_MEDICATION_INDICATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entryRelationship->excluding(null).observation->excluding(null)->reject((code.oclIsUndefined() or code.isNullFlavorUndefined()) implies (not code.oclIsUndefined()))";
+  protected static final String VALIDATE_CONCOMITANT_MEDICATIONCONCOMITANT_MEDICATION_INDICATION_ASSOCIATION_CONCOMITANT_MEDICATION_INDICATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entryRelationship->excluding(null).observation->excluding(null)->reject((code.oclIsUndefined() or code.isNullFlavorUndefined()) implies (not code.oclIsUndefined() and code.oclIsKindOf(datatypes::CD) and "+
+"let value : datatypes::CD = code.oclAsType(datatypes::CD) in "+
+"value.code = 'C83085' and value.codeSystem = '2.16.840.1.113883.3.26.1.1'))";
 
   /**
    * The cached OCL invariant for the '{@link #validateConcomitantMedicationconcomitantMedicationIndicationAssociationConcomitantMedicationIndicationCode(ConcomitantMedication, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Concomitant Medicationconcomitant Medication Indication Association Concomitant Medication Indication Code</em>}' invariant operation.
@@ -3281,7 +2796,6 @@ public class ConcomitantMedicationOperations extends SubstanceAdministrationOper
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.entryRelationship->excluding(null).observation->excluding(null)->reject((code.oclIsUndefined() or code.isNullFlavorUndefined()) implies (not code.oclIsUndefined()))
    * @param concomitantMedication The receiving '<em><b>Concomitant Medication</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -3291,6 +2805,7 @@ public class ConcomitantMedicationOperations extends SubstanceAdministrationOper
   
   public static  boolean validateConcomitantMedicationconcomitantMedicationIndicationAssociationConcomitantMedicationIndicationCode(ConcomitantMedication concomitantMedication, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
+  	  
     if (VALIDATE_CONCOMITANT_MEDICATIONCONCOMITANT_MEDICATION_INDICATION_ASSOCIATION_CONCOMITANT_MEDICATION_INDICATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(SdtmPackage.Literals.CONCOMITANT_MEDICATION);
@@ -3315,6 +2830,7 @@ public class ConcomitantMedicationOperations extends SubstanceAdministrationOper
              org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "ConcomitantMedicationconcomitantMedicationIndicationAssociationConcomitantMedicationIndicationCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(concomitantMedication, context) }),
              new Object [] { concomitantMedication }));
       }
+       
       return false;
     }
     return true;
@@ -3328,7 +2844,7 @@ public class ConcomitantMedicationOperations extends SubstanceAdministrationOper
    * @generated
    * @ordered
    */
-  protected static final String VALIDATE_CONCOMITANT_MEDICATIONCONCOMITANT_MEDICATION_INDICATION_ASSOCIATION_CONCOMITANT_MEDICATION_INDICATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entryRelationship->excluding(null).observation->excluding(null)->reject((value->isEmpty() or value->exists(element | element.isNullFlavorUndefined())) implies (not value->isEmpty()))";
+  protected static final String VALIDATE_CONCOMITANT_MEDICATIONCONCOMITANT_MEDICATION_INDICATION_ASSOCIATION_CONCOMITANT_MEDICATION_INDICATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entryRelationship->excluding(null).observation->excluding(null)->reject((value->isEmpty() or value->exists(element | element.isNullFlavorUndefined())) implies (value->size() = 1 and value->forAll(element | element.oclIsTypeOf(datatypes::CD))))";
 
   /**
    * The cached OCL invariant for the '{@link #validateConcomitantMedicationconcomitantMedicationIndicationAssociationConcomitantMedicationIndicationValue(ConcomitantMedication, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Concomitant Medicationconcomitant Medication Indication Association Concomitant Medication Indication Value</em>}' invariant operation.
@@ -3346,7 +2862,6 @@ public class ConcomitantMedicationOperations extends SubstanceAdministrationOper
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.entryRelationship->excluding(null).observation->excluding(null)->reject((value->isEmpty() or value->exists(element | element.isNullFlavorUndefined())) implies (not value->isEmpty()))
    * @param concomitantMedication The receiving '<em><b>Concomitant Medication</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -3356,6 +2871,7 @@ public class ConcomitantMedicationOperations extends SubstanceAdministrationOper
   
   public static  boolean validateConcomitantMedicationconcomitantMedicationIndicationAssociationConcomitantMedicationIndicationValue(ConcomitantMedication concomitantMedication, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
+  	  
     if (VALIDATE_CONCOMITANT_MEDICATIONCONCOMITANT_MEDICATION_INDICATION_ASSOCIATION_CONCOMITANT_MEDICATION_INDICATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(SdtmPackage.Literals.CONCOMITANT_MEDICATION);
@@ -3380,6 +2896,7 @@ public class ConcomitantMedicationOperations extends SubstanceAdministrationOper
              org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "ConcomitantMedicationconcomitantMedicationIndicationAssociationConcomitantMedicationIndicationValue", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(concomitantMedication, context) }),
              new Object [] { concomitantMedication }));
       }
+       
       return false;
     }
     return true;
@@ -3411,7 +2928,6 @@ public class ConcomitantMedicationOperations extends SubstanceAdministrationOper
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.entryRelationship->excluding(null)->reject(typeCode=vocab::x_ActRelationshipEntryRelationship::CAUS)
    * @param concomitantMedication The receiving '<em><b>Concomitant Medication</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -3421,6 +2937,7 @@ public class ConcomitantMedicationOperations extends SubstanceAdministrationOper
   
   public static  boolean validateConcomitantMedicationconcomitantMedicationIndicationAssociationTypeCode(ConcomitantMedication concomitantMedication, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
+  	  
     if (VALIDATE_CONCOMITANT_MEDICATIONCONCOMITANT_MEDICATION_INDICATION_ASSOCIATION_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(SdtmPackage.Literals.CONCOMITANT_MEDICATION);
@@ -3445,6 +2962,7 @@ public class ConcomitantMedicationOperations extends SubstanceAdministrationOper
              org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "ConcomitantMedicationconcomitantMedicationIndicationAssociationTypeCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(concomitantMedication, context) }),
              new Object [] { concomitantMedication }));
       }
+       
       return false;
     }
     return true;
@@ -3476,7 +2994,6 @@ public class ConcomitantMedicationOperations extends SubstanceAdministrationOper
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.entryRelationship->excluding(null)->reject(observation->one(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(cda::Observation)))
    * @param concomitantMedication The receiving '<em><b>Concomitant Medication</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -3486,6 +3003,7 @@ public class ConcomitantMedicationOperations extends SubstanceAdministrationOper
   
   public static  boolean validateConcomitantMedicationconcomitantMedicationIndicationAssociationIndication(ConcomitantMedication concomitantMedication, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
+  	  
     if (VALIDATE_CONCOMITANT_MEDICATIONCONCOMITANT_MEDICATION_INDICATION_ASSOCIATION_INDICATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(SdtmPackage.Literals.CONCOMITANT_MEDICATION);
@@ -3510,6 +3028,7 @@ public class ConcomitantMedicationOperations extends SubstanceAdministrationOper
              org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "ConcomitantMedicationconcomitantMedicationIndicationAssociationIndication", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(concomitantMedication, context) }),
              new Object [] { concomitantMedication }));
       }
+       
       return false;
     }
     return true;
@@ -3541,7 +3060,6 @@ public class ConcomitantMedicationOperations extends SubstanceAdministrationOper
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.entryRelationship->excluding(null).observation->excluding(null)->reject(classCode=vocab::ActClassObservation::OBS)
    * @param concomitantMedication The receiving '<em><b>Concomitant Medication</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -3551,6 +3069,7 @@ public class ConcomitantMedicationOperations extends SubstanceAdministrationOper
   
   public static  boolean validateConcomitantMedicationconcomitantMedicationSubCategoryAssociationConcomitantMedicationSubCategoryClassCode(ConcomitantMedication concomitantMedication, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
+  	  
     if (VALIDATE_CONCOMITANT_MEDICATIONCONCOMITANT_MEDICATION_SUB_CATEGORY_ASSOCIATION_CONCOMITANT_MEDICATION_SUB_CATEGORY_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(SdtmPackage.Literals.CONCOMITANT_MEDICATION);
@@ -3575,6 +3094,73 @@ public class ConcomitantMedicationOperations extends SubstanceAdministrationOper
              org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "ConcomitantMedicationconcomitantMedicationSubCategoryAssociationConcomitantMedicationSubCategoryClassCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(concomitantMedication, context) }),
              new Object [] { concomitantMedication }));
       }
+       
+      return false;
+    }
+    return true;
+  }
+
+  /**
+   * The cached OCL expression body for the '{@link #validateConcomitantMedicationconcomitantMedicationSubCategoryAssociationConcomitantMedicationSubCategoryCodeP(ConcomitantMedication, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Concomitant Medicationconcomitant Medication Sub Category Association Concomitant Medication Sub Category Code P</em>}' operation.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #validateConcomitantMedicationconcomitantMedicationSubCategoryAssociationConcomitantMedicationSubCategoryCodeP(ConcomitantMedication, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+   * @generated
+   * @ordered
+   */
+  protected static final String VALIDATE_CONCOMITANT_MEDICATIONCONCOMITANT_MEDICATION_SUB_CATEGORY_ASSOCIATION_CONCOMITANT_MEDICATION_SUB_CATEGORY_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entryRelationship->excluding(null).observation->excluding(null)->reject((code.oclIsUndefined() or code.isNullFlavorUndefined()) implies (not code.oclIsUndefined()))";
+
+  /**
+   * The cached OCL invariant for the '{@link #validateConcomitantMedicationconcomitantMedicationSubCategoryAssociationConcomitantMedicationSubCategoryCodeP(ConcomitantMedication, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Concomitant Medicationconcomitant Medication Sub Category Association Concomitant Medication Sub Category Code P</em>}' invariant operation.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #validateConcomitantMedicationconcomitantMedicationSubCategoryAssociationConcomitantMedicationSubCategoryCodeP(ConcomitantMedication, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+   * @generated
+   * @ordered
+   */
+  
+  protected static Constraint VALIDATE_CONCOMITANT_MEDICATIONCONCOMITANT_MEDICATION_SUB_CATEGORY_ASSOCIATION_CONCOMITANT_MEDICATION_SUB_CATEGORY_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * <!-- begin-model-doc -->
+   * @param concomitantMedication The receiving '<em><b>Concomitant Medication</b></em>' model object.
+   * @param diagnostics The chain of diagnostics to which problems are to be appended.
+   * @param context The cache of context-specific information.
+   * <!-- end-model-doc -->
+   * @generated
+   */
+  
+  public static  boolean validateConcomitantMedicationconcomitantMedicationSubCategoryAssociationConcomitantMedicationSubCategoryCodeP(ConcomitantMedication concomitantMedication, DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+  	  
+    if (VALIDATE_CONCOMITANT_MEDICATIONCONCOMITANT_MEDICATION_SUB_CATEGORY_ASSOCIATION_CONCOMITANT_MEDICATION_SUB_CATEGORY_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+      OCL.Helper helper = EOCL_ENV.createOCLHelper();
+      helper.setContext(SdtmPackage.Literals.CONCOMITANT_MEDICATION);
+      try
+      {
+        VALIDATE_CONCOMITANT_MEDICATIONCONCOMITANT_MEDICATION_SUB_CATEGORY_ASSOCIATION_CONCOMITANT_MEDICATION_SUB_CATEGORY_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_CONCOMITANT_MEDICATIONCONCOMITANT_MEDICATION_SUB_CATEGORY_ASSOCIATION_CONCOMITANT_MEDICATION_SUB_CATEGORY_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+      }
+      catch (ParserException pe)
+      {
+        throw new UnsupportedOperationException(pe.getLocalizedMessage());
+      }
+    }
+    if (!EOCL_ENV.createQuery(VALIDATE_CONCOMITANT_MEDICATIONCONCOMITANT_MEDICATION_SUB_CATEGORY_ASSOCIATION_CONCOMITANT_MEDICATION_SUB_CATEGORY_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(concomitantMedication))
+    {
+      if (diagnostics != null)
+      {
+        diagnostics.add
+          (new BasicDiagnostic
+            (Diagnostic.ERROR,
+             SdtmValidator.DIAGNOSTIC_SOURCE,
+             SdtmValidator.CONCOMITANT_MEDICATION__CONCOMITANT_MEDICATIONCONCOMITANT_MEDICATION_SUB_CATEGORY_ASSOCIATION_CONCOMITANT_MEDICATION_SUB_CATEGORY_CODE_P,
+             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "ConcomitantMedicationconcomitantMedicationSubCategoryAssociationConcomitantMedicationSubCategoryCodeP", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(concomitantMedication, context) }),
+             new Object [] { concomitantMedication }));
+      }
+       
       return false;
     }
     return true;
@@ -3588,7 +3174,9 @@ public class ConcomitantMedicationOperations extends SubstanceAdministrationOper
    * @generated
    * @ordered
    */
-  protected static final String VALIDATE_CONCOMITANT_MEDICATIONCONCOMITANT_MEDICATION_SUB_CATEGORY_ASSOCIATION_CONCOMITANT_MEDICATION_SUB_CATEGORY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entryRelationship->excluding(null).observation->excluding(null)->reject((code.oclIsUndefined() or code.isNullFlavorUndefined()) implies (not code.oclIsUndefined()))";
+  protected static final String VALIDATE_CONCOMITANT_MEDICATIONCONCOMITANT_MEDICATION_SUB_CATEGORY_ASSOCIATION_CONCOMITANT_MEDICATION_SUB_CATEGORY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entryRelationship->excluding(null).observation->excluding(null)->reject((code.oclIsUndefined() or code.isNullFlavorUndefined()) implies (not code.oclIsUndefined() and code.oclIsKindOf(datatypes::CD) and "+
+"let value : datatypes::CD = code.oclAsType(datatypes::CD) in "+
+"value.code = 'C83232' and value.codeSystem = '2.16.840.1.113883.3.26.1.1'))";
 
   /**
    * The cached OCL invariant for the '{@link #validateConcomitantMedicationconcomitantMedicationSubCategoryAssociationConcomitantMedicationSubCategoryCode(ConcomitantMedication, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Concomitant Medicationconcomitant Medication Sub Category Association Concomitant Medication Sub Category Code</em>}' invariant operation.
@@ -3606,7 +3194,6 @@ public class ConcomitantMedicationOperations extends SubstanceAdministrationOper
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.entryRelationship->excluding(null).observation->excluding(null)->reject((code.oclIsUndefined() or code.isNullFlavorUndefined()) implies (not code.oclIsUndefined()))
    * @param concomitantMedication The receiving '<em><b>Concomitant Medication</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -3616,6 +3203,7 @@ public class ConcomitantMedicationOperations extends SubstanceAdministrationOper
   
   public static  boolean validateConcomitantMedicationconcomitantMedicationSubCategoryAssociationConcomitantMedicationSubCategoryCode(ConcomitantMedication concomitantMedication, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
+  	  
     if (VALIDATE_CONCOMITANT_MEDICATIONCONCOMITANT_MEDICATION_SUB_CATEGORY_ASSOCIATION_CONCOMITANT_MEDICATION_SUB_CATEGORY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(SdtmPackage.Literals.CONCOMITANT_MEDICATION);
@@ -3640,6 +3228,7 @@ public class ConcomitantMedicationOperations extends SubstanceAdministrationOper
              org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "ConcomitantMedicationconcomitantMedicationSubCategoryAssociationConcomitantMedicationSubCategoryCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(concomitantMedication, context) }),
              new Object [] { concomitantMedication }));
       }
+       
       return false;
     }
     return true;
@@ -3671,7 +3260,6 @@ public class ConcomitantMedicationOperations extends SubstanceAdministrationOper
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.entryRelationship->excluding(null).observation->excluding(null)->reject(moodCode=vocab::x_ActMoodDocumentObservation::EVN)
    * @param concomitantMedication The receiving '<em><b>Concomitant Medication</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -3681,6 +3269,7 @@ public class ConcomitantMedicationOperations extends SubstanceAdministrationOper
   
   public static  boolean validateConcomitantMedicationconcomitantMedicationSubCategoryAssociationConcomitantMedicationSubCategoryMoodCode(ConcomitantMedication concomitantMedication, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
+  	  
     if (VALIDATE_CONCOMITANT_MEDICATIONCONCOMITANT_MEDICATION_SUB_CATEGORY_ASSOCIATION_CONCOMITANT_MEDICATION_SUB_CATEGORY_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(SdtmPackage.Literals.CONCOMITANT_MEDICATION);
@@ -3705,6 +3294,7 @@ public class ConcomitantMedicationOperations extends SubstanceAdministrationOper
              org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "ConcomitantMedicationconcomitantMedicationSubCategoryAssociationConcomitantMedicationSubCategoryMoodCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(concomitantMedication, context) }),
              new Object [] { concomitantMedication }));
       }
+       
       return false;
     }
     return true;
@@ -3736,7 +3326,6 @@ public class ConcomitantMedicationOperations extends SubstanceAdministrationOper
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.entryRelationship->excluding(null).observation->excluding(null)->reject((value->isEmpty() or value->exists(element | element.isNullFlavorUndefined())) implies (value->size() = 1 and value->forAll(element | element.oclIsTypeOf(datatypes::CE))))
    * @param concomitantMedication The receiving '<em><b>Concomitant Medication</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -3746,6 +3335,7 @@ public class ConcomitantMedicationOperations extends SubstanceAdministrationOper
   
   public static  boolean validateConcomitantMedicationconcomitantMedicationSubCategoryAssociationConcomitantMedicationSubCategoryValue(ConcomitantMedication concomitantMedication, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
+  	  
     if (VALIDATE_CONCOMITANT_MEDICATIONCONCOMITANT_MEDICATION_SUB_CATEGORY_ASSOCIATION_CONCOMITANT_MEDICATION_SUB_CATEGORY_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(SdtmPackage.Literals.CONCOMITANT_MEDICATION);
@@ -3770,6 +3360,7 @@ public class ConcomitantMedicationOperations extends SubstanceAdministrationOper
              org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "ConcomitantMedicationconcomitantMedicationSubCategoryAssociationConcomitantMedicationSubCategoryValue", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(concomitantMedication, context) }),
              new Object [] { concomitantMedication }));
       }
+       
       return false;
     }
     return true;
@@ -3801,7 +3392,6 @@ public class ConcomitantMedicationOperations extends SubstanceAdministrationOper
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.entryRelationship->excluding(null)->reject(typeCode=vocab::x_ActRelationshipEntryRelationship::COMP)
    * @param concomitantMedication The receiving '<em><b>Concomitant Medication</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -3811,6 +3401,7 @@ public class ConcomitantMedicationOperations extends SubstanceAdministrationOper
   
   public static  boolean validateConcomitantMedicationconcomitantMedicationSubCategoryAssociationTypeCode(ConcomitantMedication concomitantMedication, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
+  	  
     if (VALIDATE_CONCOMITANT_MEDICATIONCONCOMITANT_MEDICATION_SUB_CATEGORY_ASSOCIATION_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(SdtmPackage.Literals.CONCOMITANT_MEDICATION);
@@ -3835,6 +3426,7 @@ public class ConcomitantMedicationOperations extends SubstanceAdministrationOper
              org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "ConcomitantMedicationconcomitantMedicationSubCategoryAssociationTypeCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(concomitantMedication, context) }),
              new Object [] { concomitantMedication }));
       }
+       
       return false;
     }
     return true;
@@ -3866,7 +3458,6 @@ public class ConcomitantMedicationOperations extends SubstanceAdministrationOper
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.entryRelationship->excluding(null)->reject(observation->one(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(cda::Observation)))
    * @param concomitantMedication The receiving '<em><b>Concomitant Medication</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -3876,6 +3467,7 @@ public class ConcomitantMedicationOperations extends SubstanceAdministrationOper
   
   public static  boolean validateConcomitantMedicationconcomitantMedicationSubCategoryAssociationConcomitantMedicationSubCategory(ConcomitantMedication concomitantMedication, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
+  	  
     if (VALIDATE_CONCOMITANT_MEDICATIONCONCOMITANT_MEDICATION_SUB_CATEGORY_ASSOCIATION_CONCOMITANT_MEDICATION_SUB_CATEGORY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(SdtmPackage.Literals.CONCOMITANT_MEDICATION);
@@ -3900,38 +3492,38 @@ public class ConcomitantMedicationOperations extends SubstanceAdministrationOper
              org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "ConcomitantMedicationconcomitantMedicationSubCategoryAssociationConcomitantMedicationSubCategory", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(concomitantMedication, context) }),
              new Object [] { concomitantMedication }));
       }
+       
       return false;
     }
     return true;
   }
 
   /**
-   * The cached OCL expression body for the '{@link #validateConcomitantMedicationconcomitantMedicationSubCategoryAssociationConcomitantMedicationSubCategoryClassCodeConcomitantMedicationconcomitantMedicationSubCategoryAssociationConcomitantMedicationSubCategoryClassCode1(ConcomitantMedication, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Concomitant Medicationconcomitant Medication Sub Category Association Concomitant Medication Sub Category Class Code Concomitant Medicationconcomitant Medication Sub Category Association Concomitant Medication Sub Category Class Code1</em>}' operation.
+   * The cached OCL expression body for the '{@link #validateConcomitantMedicationIntendedRegimenAssociationintendedRegimenClassCode(ConcomitantMedication, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Concomitant Medication Intended Regimen Associationintended Regimen Class Code</em>}' operation.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @see #validateConcomitantMedicationconcomitantMedicationSubCategoryAssociationConcomitantMedicationSubCategoryClassCodeConcomitantMedicationconcomitantMedicationSubCategoryAssociationConcomitantMedicationSubCategoryClassCode1(ConcomitantMedication, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+   * @see #validateConcomitantMedicationIntendedRegimenAssociationintendedRegimenClassCode(ConcomitantMedication, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
    * @generated
    * @ordered
    */
-  protected static final String VALIDATE_CONCOMITANT_MEDICATIONCONCOMITANT_MEDICATION_SUB_CATEGORY_ASSOCIATION_CONCOMITANT_MEDICATION_SUB_CATEGORY_CLASS_CODE_CONCOMITANT_MEDICATIONCONCOMITANT_MEDICATION_SUB_CATEGORY_ASSOCIATION_CONCOMITANT_MEDICATION_SUB_CATEGORY_CLASS_CODE1__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entryRelationship->excluding(null)->reject(observation->excluding(null)->reject(classCode=vocab::ActClassObservation::OBS))";
+  protected static final String VALIDATE_CONCOMITANT_MEDICATION_INTENDED_REGIMEN_ASSOCIATIONINTENDED_REGIMEN_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entryRelationship->excluding(null).observation->excluding(null)->reject(classCode=vocab::ActClassObservation::OBS)";
 
   /**
-   * The cached OCL invariant for the '{@link #validateConcomitantMedicationconcomitantMedicationSubCategoryAssociationConcomitantMedicationSubCategoryClassCodeConcomitantMedicationconcomitantMedicationSubCategoryAssociationConcomitantMedicationSubCategoryClassCode1(ConcomitantMedication, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Concomitant Medicationconcomitant Medication Sub Category Association Concomitant Medication Sub Category Class Code Concomitant Medicationconcomitant Medication Sub Category Association Concomitant Medication Sub Category Class Code1</em>}' invariant operation.
+   * The cached OCL invariant for the '{@link #validateConcomitantMedicationIntendedRegimenAssociationintendedRegimenClassCode(ConcomitantMedication, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Concomitant Medication Intended Regimen Associationintended Regimen Class Code</em>}' invariant operation.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @see #validateConcomitantMedicationconcomitantMedicationSubCategoryAssociationConcomitantMedicationSubCategoryClassCodeConcomitantMedicationconcomitantMedicationSubCategoryAssociationConcomitantMedicationSubCategoryClassCode1(ConcomitantMedication, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+   * @see #validateConcomitantMedicationIntendedRegimenAssociationintendedRegimenClassCode(ConcomitantMedication, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
    * @generated
    * @ordered
    */
   
-  protected static Constraint VALIDATE_CONCOMITANT_MEDICATIONCONCOMITANT_MEDICATION_SUB_CATEGORY_ASSOCIATION_CONCOMITANT_MEDICATION_SUB_CATEGORY_CLASS_CODE_CONCOMITANT_MEDICATIONCONCOMITANT_MEDICATION_SUB_CATEGORY_ASSOCIATION_CONCOMITANT_MEDICATION_SUB_CATEGORY_CLASS_CODE1__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-  
+  protected static Constraint VALIDATE_CONCOMITANT_MEDICATION_INTENDED_REGIMEN_ASSOCIATIONINTENDED_REGIMEN_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+
 
   /**
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.entryRelationship->excluding(null)->reject(observation->excluding(null)->reject(classCode=vocab::ActClassObservation::OBS))
    * @param concomitantMedication The receiving '<em><b>Concomitant Medication</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -3939,21 +3531,22 @@ public class ConcomitantMedicationOperations extends SubstanceAdministrationOper
    * @generated
    */
   
-  public static  boolean validateConcomitantMedicationconcomitantMedicationSubCategoryAssociationConcomitantMedicationSubCategoryClassCodeConcomitantMedicationconcomitantMedicationSubCategoryAssociationConcomitantMedicationSubCategoryClassCode1(ConcomitantMedication concomitantMedication, DiagnosticChain diagnostics, Map<Object, Object> context)
+  public static  boolean validateConcomitantMedicationIntendedRegimenAssociationintendedRegimenClassCode(ConcomitantMedication concomitantMedication, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
-    if (VALIDATE_CONCOMITANT_MEDICATIONCONCOMITANT_MEDICATION_SUB_CATEGORY_ASSOCIATION_CONCOMITANT_MEDICATION_SUB_CATEGORY_CLASS_CODE_CONCOMITANT_MEDICATIONCONCOMITANT_MEDICATION_SUB_CATEGORY_ASSOCIATION_CONCOMITANT_MEDICATION_SUB_CATEGORY_CLASS_CODE1__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+  	  
+    if (VALIDATE_CONCOMITANT_MEDICATION_INTENDED_REGIMEN_ASSOCIATIONINTENDED_REGIMEN_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(SdtmPackage.Literals.CONCOMITANT_MEDICATION);
       try
       {
-        VALIDATE_CONCOMITANT_MEDICATIONCONCOMITANT_MEDICATION_SUB_CATEGORY_ASSOCIATION_CONCOMITANT_MEDICATION_SUB_CATEGORY_CLASS_CODE_CONCOMITANT_MEDICATIONCONCOMITANT_MEDICATION_SUB_CATEGORY_ASSOCIATION_CONCOMITANT_MEDICATION_SUB_CATEGORY_CLASS_CODE1__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_CONCOMITANT_MEDICATIONCONCOMITANT_MEDICATION_SUB_CATEGORY_ASSOCIATION_CONCOMITANT_MEDICATION_SUB_CATEGORY_CLASS_CODE_CONCOMITANT_MEDICATIONCONCOMITANT_MEDICATION_SUB_CATEGORY_ASSOCIATION_CONCOMITANT_MEDICATION_SUB_CATEGORY_CLASS_CODE1__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+        VALIDATE_CONCOMITANT_MEDICATION_INTENDED_REGIMEN_ASSOCIATIONINTENDED_REGIMEN_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_CONCOMITANT_MEDICATION_INTENDED_REGIMEN_ASSOCIATIONINTENDED_REGIMEN_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
       }
       catch (ParserException pe)
       {
         throw new UnsupportedOperationException(pe.getLocalizedMessage());
       }
     }
-    if (!EOCL_ENV.createQuery(VALIDATE_CONCOMITANT_MEDICATIONCONCOMITANT_MEDICATION_SUB_CATEGORY_ASSOCIATION_CONCOMITANT_MEDICATION_SUB_CATEGORY_CLASS_CODE_CONCOMITANT_MEDICATIONCONCOMITANT_MEDICATION_SUB_CATEGORY_ASSOCIATION_CONCOMITANT_MEDICATION_SUB_CATEGORY_CLASS_CODE1__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(concomitantMedication))
+    if (!EOCL_ENV.createQuery(VALIDATE_CONCOMITANT_MEDICATION_INTENDED_REGIMEN_ASSOCIATIONINTENDED_REGIMEN_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(concomitantMedication))
     {
       if (diagnostics != null)
       {
@@ -3961,42 +3554,42 @@ public class ConcomitantMedicationOperations extends SubstanceAdministrationOper
           (new BasicDiagnostic
             (Diagnostic.ERROR,
              SdtmValidator.DIAGNOSTIC_SOURCE,
-             SdtmValidator.CONCOMITANT_MEDICATION__CONCOMITANT_MEDICATIONCONCOMITANT_MEDICATION_SUB_CATEGORY_ASSOCIATION_CONCOMITANT_MEDICATION_SUB_CATEGORY_CLASS_CODE_CONCOMITANT_MEDICATIONCONCOMITANT_MEDICATION_SUB_CATEGORY_ASSOCIATION_CONCOMITANT_MEDICATION_SUB_CATEGORY_CLASS_CODE1,
-             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "ConcomitantMedicationconcomitantMedicationSubCategoryAssociationConcomitantMedicationSubCategoryClassCodeConcomitantMedicationconcomitantMedicationSubCategoryAssociationConcomitantMedicationSubCategoryClassCode1", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(concomitantMedication, context) }),
+             SdtmValidator.CONCOMITANT_MEDICATION__CONCOMITANT_MEDICATION_INTENDED_REGIMEN_ASSOCIATIONINTENDED_REGIMEN_CLASS_CODE,
+             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "ConcomitantMedicationIntendedRegimenAssociationintendedRegimenClassCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(concomitantMedication, context) }),
              new Object [] { concomitantMedication }));
       }
+       
       return false;
     }
     return true;
   }
 
   /**
-   * The cached OCL expression body for the '{@link #validateConcomitantMedicationconcomitantMedicationSubCategoryAssociationConcomitantMedicationSubCategoryCodeConcomitantMedicationconcomitantMedicationSubCategoryAssociationConcomitantMedicationSubCategoryCode1(ConcomitantMedication, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Concomitant Medicationconcomitant Medication Sub Category Association Concomitant Medication Sub Category Code Concomitant Medicationconcomitant Medication Sub Category Association Concomitant Medication Sub Category Code1</em>}' operation.
+   * The cached OCL expression body for the '{@link #validateConcomitantMedicationIntendedRegimenAssociationintendedRegimenCodeP(ConcomitantMedication, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Concomitant Medication Intended Regimen Associationintended Regimen Code P</em>}' operation.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @see #validateConcomitantMedicationconcomitantMedicationSubCategoryAssociationConcomitantMedicationSubCategoryCodeConcomitantMedicationconcomitantMedicationSubCategoryAssociationConcomitantMedicationSubCategoryCode1(ConcomitantMedication, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+   * @see #validateConcomitantMedicationIntendedRegimenAssociationintendedRegimenCodeP(ConcomitantMedication, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
    * @generated
    * @ordered
    */
-  protected static final String VALIDATE_CONCOMITANT_MEDICATIONCONCOMITANT_MEDICATION_SUB_CATEGORY_ASSOCIATION_CONCOMITANT_MEDICATION_SUB_CATEGORY_CODE_CONCOMITANT_MEDICATIONCONCOMITANT_MEDICATION_SUB_CATEGORY_ASSOCIATION_CONCOMITANT_MEDICATION_SUB_CATEGORY_CODE1__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entryRelationship->excluding(null)->reject(observation->excluding(null)->reject((code.oclIsUndefined() or code.isNullFlavorUndefined()) implies (not code.oclIsUndefined())))";
+  protected static final String VALIDATE_CONCOMITANT_MEDICATION_INTENDED_REGIMEN_ASSOCIATIONINTENDED_REGIMEN_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entryRelationship->excluding(null).observation->excluding(null)->reject((code.oclIsUndefined() or code.isNullFlavorUndefined()) implies (not code.oclIsUndefined()))";
 
   /**
-   * The cached OCL invariant for the '{@link #validateConcomitantMedicationconcomitantMedicationSubCategoryAssociationConcomitantMedicationSubCategoryCodeConcomitantMedicationconcomitantMedicationSubCategoryAssociationConcomitantMedicationSubCategoryCode1(ConcomitantMedication, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Concomitant Medicationconcomitant Medication Sub Category Association Concomitant Medication Sub Category Code Concomitant Medicationconcomitant Medication Sub Category Association Concomitant Medication Sub Category Code1</em>}' invariant operation.
+   * The cached OCL invariant for the '{@link #validateConcomitantMedicationIntendedRegimenAssociationintendedRegimenCodeP(ConcomitantMedication, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Concomitant Medication Intended Regimen Associationintended Regimen Code P</em>}' invariant operation.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @see #validateConcomitantMedicationconcomitantMedicationSubCategoryAssociationConcomitantMedicationSubCategoryCodeConcomitantMedicationconcomitantMedicationSubCategoryAssociationConcomitantMedicationSubCategoryCode1(ConcomitantMedication, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+   * @see #validateConcomitantMedicationIntendedRegimenAssociationintendedRegimenCodeP(ConcomitantMedication, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
    * @generated
    * @ordered
    */
   
-  protected static Constraint VALIDATE_CONCOMITANT_MEDICATIONCONCOMITANT_MEDICATION_SUB_CATEGORY_ASSOCIATION_CONCOMITANT_MEDICATION_SUB_CATEGORY_CODE_CONCOMITANT_MEDICATIONCONCOMITANT_MEDICATION_SUB_CATEGORY_ASSOCIATION_CONCOMITANT_MEDICATION_SUB_CATEGORY_CODE1__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-  
+  protected static Constraint VALIDATE_CONCOMITANT_MEDICATION_INTENDED_REGIMEN_ASSOCIATIONINTENDED_REGIMEN_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+
 
   /**
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.entryRelationship->excluding(null)->reject(observation->excluding(null)->reject((code.oclIsUndefined() or code.isNullFlavorUndefined()) implies (not code.oclIsUndefined())))
    * @param concomitantMedication The receiving '<em><b>Concomitant Medication</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -4004,21 +3597,22 @@ public class ConcomitantMedicationOperations extends SubstanceAdministrationOper
    * @generated
    */
   
-  public static  boolean validateConcomitantMedicationconcomitantMedicationSubCategoryAssociationConcomitantMedicationSubCategoryCodeConcomitantMedicationconcomitantMedicationSubCategoryAssociationConcomitantMedicationSubCategoryCode1(ConcomitantMedication concomitantMedication, DiagnosticChain diagnostics, Map<Object, Object> context)
+  public static  boolean validateConcomitantMedicationIntendedRegimenAssociationintendedRegimenCodeP(ConcomitantMedication concomitantMedication, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
-    if (VALIDATE_CONCOMITANT_MEDICATIONCONCOMITANT_MEDICATION_SUB_CATEGORY_ASSOCIATION_CONCOMITANT_MEDICATION_SUB_CATEGORY_CODE_CONCOMITANT_MEDICATIONCONCOMITANT_MEDICATION_SUB_CATEGORY_ASSOCIATION_CONCOMITANT_MEDICATION_SUB_CATEGORY_CODE1__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+  	  
+    if (VALIDATE_CONCOMITANT_MEDICATION_INTENDED_REGIMEN_ASSOCIATIONINTENDED_REGIMEN_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(SdtmPackage.Literals.CONCOMITANT_MEDICATION);
       try
       {
-        VALIDATE_CONCOMITANT_MEDICATIONCONCOMITANT_MEDICATION_SUB_CATEGORY_ASSOCIATION_CONCOMITANT_MEDICATION_SUB_CATEGORY_CODE_CONCOMITANT_MEDICATIONCONCOMITANT_MEDICATION_SUB_CATEGORY_ASSOCIATION_CONCOMITANT_MEDICATION_SUB_CATEGORY_CODE1__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_CONCOMITANT_MEDICATIONCONCOMITANT_MEDICATION_SUB_CATEGORY_ASSOCIATION_CONCOMITANT_MEDICATION_SUB_CATEGORY_CODE_CONCOMITANT_MEDICATIONCONCOMITANT_MEDICATION_SUB_CATEGORY_ASSOCIATION_CONCOMITANT_MEDICATION_SUB_CATEGORY_CODE1__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+        VALIDATE_CONCOMITANT_MEDICATION_INTENDED_REGIMEN_ASSOCIATIONINTENDED_REGIMEN_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_CONCOMITANT_MEDICATION_INTENDED_REGIMEN_ASSOCIATIONINTENDED_REGIMEN_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
       }
       catch (ParserException pe)
       {
         throw new UnsupportedOperationException(pe.getLocalizedMessage());
       }
     }
-    if (!EOCL_ENV.createQuery(VALIDATE_CONCOMITANT_MEDICATIONCONCOMITANT_MEDICATION_SUB_CATEGORY_ASSOCIATION_CONCOMITANT_MEDICATION_SUB_CATEGORY_CODE_CONCOMITANT_MEDICATIONCONCOMITANT_MEDICATION_SUB_CATEGORY_ASSOCIATION_CONCOMITANT_MEDICATION_SUB_CATEGORY_CODE1__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(concomitantMedication))
+    if (!EOCL_ENV.createQuery(VALIDATE_CONCOMITANT_MEDICATION_INTENDED_REGIMEN_ASSOCIATIONINTENDED_REGIMEN_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(concomitantMedication))
     {
       if (diagnostics != null)
       {
@@ -4026,306 +3620,44 @@ public class ConcomitantMedicationOperations extends SubstanceAdministrationOper
           (new BasicDiagnostic
             (Diagnostic.ERROR,
              SdtmValidator.DIAGNOSTIC_SOURCE,
-             SdtmValidator.CONCOMITANT_MEDICATION__CONCOMITANT_MEDICATIONCONCOMITANT_MEDICATION_SUB_CATEGORY_ASSOCIATION_CONCOMITANT_MEDICATION_SUB_CATEGORY_CODE_CONCOMITANT_MEDICATIONCONCOMITANT_MEDICATION_SUB_CATEGORY_ASSOCIATION_CONCOMITANT_MEDICATION_SUB_CATEGORY_CODE1,
-             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "ConcomitantMedicationconcomitantMedicationSubCategoryAssociationConcomitantMedicationSubCategoryCodeConcomitantMedicationconcomitantMedicationSubCategoryAssociationConcomitantMedicationSubCategoryCode1", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(concomitantMedication, context) }),
+             SdtmValidator.CONCOMITANT_MEDICATION__CONCOMITANT_MEDICATION_INTENDED_REGIMEN_ASSOCIATIONINTENDED_REGIMEN_CODE_P,
+             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "ConcomitantMedicationIntendedRegimenAssociationintendedRegimenCodeP", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(concomitantMedication, context) }),
              new Object [] { concomitantMedication }));
       }
+       
       return false;
     }
     return true;
   }
 
   /**
-   * The cached OCL expression body for the '{@link #validateConcomitantMedicationconcomitantMedicationSubCategoryAssociationConcomitantMedicationSubCategoryMoodCodeConcomitantMedicationconcomitantMedicationSubCategoryAssociationConcomitantMedicationSubCategoryMoodCode1(ConcomitantMedication, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Concomitant Medicationconcomitant Medication Sub Category Association Concomitant Medication Sub Category Mood Code Concomitant Medicationconcomitant Medication Sub Category Association Concomitant Medication Sub Category Mood Code1</em>}' operation.
+   * The cached OCL expression body for the '{@link #validateConcomitantMedicationIntendedRegimenAssociationintendedRegimenCode(ConcomitantMedication, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Concomitant Medication Intended Regimen Associationintended Regimen Code</em>}' operation.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @see #validateConcomitantMedicationconcomitantMedicationSubCategoryAssociationConcomitantMedicationSubCategoryMoodCodeConcomitantMedicationconcomitantMedicationSubCategoryAssociationConcomitantMedicationSubCategoryMoodCode1(ConcomitantMedication, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+   * @see #validateConcomitantMedicationIntendedRegimenAssociationintendedRegimenCode(ConcomitantMedication, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
    * @generated
    * @ordered
    */
-  protected static final String VALIDATE_CONCOMITANT_MEDICATIONCONCOMITANT_MEDICATION_SUB_CATEGORY_ASSOCIATION_CONCOMITANT_MEDICATION_SUB_CATEGORY_MOOD_CODE_CONCOMITANT_MEDICATIONCONCOMITANT_MEDICATION_SUB_CATEGORY_ASSOCIATION_CONCOMITANT_MEDICATION_SUB_CATEGORY_MOOD_CODE1__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entryRelationship->excluding(null)->reject(observation->excluding(null)->reject(moodCode=vocab::x_ActMoodDocumentObservation::EVN))";
-
-  /**
-   * The cached OCL invariant for the '{@link #validateConcomitantMedicationconcomitantMedicationSubCategoryAssociationConcomitantMedicationSubCategoryMoodCodeConcomitantMedicationconcomitantMedicationSubCategoryAssociationConcomitantMedicationSubCategoryMoodCode1(ConcomitantMedication, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Concomitant Medicationconcomitant Medication Sub Category Association Concomitant Medication Sub Category Mood Code Concomitant Medicationconcomitant Medication Sub Category Association Concomitant Medication Sub Category Mood Code1</em>}' invariant operation.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @see #validateConcomitantMedicationconcomitantMedicationSubCategoryAssociationConcomitantMedicationSubCategoryMoodCodeConcomitantMedicationconcomitantMedicationSubCategoryAssociationConcomitantMedicationSubCategoryMoodCode1(ConcomitantMedication, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-   * @generated
-   * @ordered
-   */
-  
-  protected static Constraint VALIDATE_CONCOMITANT_MEDICATIONCONCOMITANT_MEDICATION_SUB_CATEGORY_ASSOCIATION_CONCOMITANT_MEDICATION_SUB_CATEGORY_MOOD_CODE_CONCOMITANT_MEDICATIONCONCOMITANT_MEDICATION_SUB_CATEGORY_ASSOCIATION_CONCOMITANT_MEDICATION_SUB_CATEGORY_MOOD_CODE1__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-  
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * <!-- begin-model-doc -->
-   * self.entryRelationship->excluding(null)->reject(observation->excluding(null)->reject(moodCode=vocab::x_ActMoodDocumentObservation::EVN))
-   * @param concomitantMedication The receiving '<em><b>Concomitant Medication</b></em>' model object.
-   * @param diagnostics The chain of diagnostics to which problems are to be appended.
-   * @param context The cache of context-specific information.
-   * <!-- end-model-doc -->
-   * @generated
-   */
-  
-  public static  boolean validateConcomitantMedicationconcomitantMedicationSubCategoryAssociationConcomitantMedicationSubCategoryMoodCodeConcomitantMedicationconcomitantMedicationSubCategoryAssociationConcomitantMedicationSubCategoryMoodCode1(ConcomitantMedication concomitantMedication, DiagnosticChain diagnostics, Map<Object, Object> context)
-  {
-    if (VALIDATE_CONCOMITANT_MEDICATIONCONCOMITANT_MEDICATION_SUB_CATEGORY_ASSOCIATION_CONCOMITANT_MEDICATION_SUB_CATEGORY_MOOD_CODE_CONCOMITANT_MEDICATIONCONCOMITANT_MEDICATION_SUB_CATEGORY_ASSOCIATION_CONCOMITANT_MEDICATION_SUB_CATEGORY_MOOD_CODE1__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-      OCL.Helper helper = EOCL_ENV.createOCLHelper();
-      helper.setContext(SdtmPackage.Literals.CONCOMITANT_MEDICATION);
-      try
-      {
-        VALIDATE_CONCOMITANT_MEDICATIONCONCOMITANT_MEDICATION_SUB_CATEGORY_ASSOCIATION_CONCOMITANT_MEDICATION_SUB_CATEGORY_MOOD_CODE_CONCOMITANT_MEDICATIONCONCOMITANT_MEDICATION_SUB_CATEGORY_ASSOCIATION_CONCOMITANT_MEDICATION_SUB_CATEGORY_MOOD_CODE1__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_CONCOMITANT_MEDICATIONCONCOMITANT_MEDICATION_SUB_CATEGORY_ASSOCIATION_CONCOMITANT_MEDICATION_SUB_CATEGORY_MOOD_CODE_CONCOMITANT_MEDICATIONCONCOMITANT_MEDICATION_SUB_CATEGORY_ASSOCIATION_CONCOMITANT_MEDICATION_SUB_CATEGORY_MOOD_CODE1__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-      }
-      catch (ParserException pe)
-      {
-        throw new UnsupportedOperationException(pe.getLocalizedMessage());
-      }
-    }
-    if (!EOCL_ENV.createQuery(VALIDATE_CONCOMITANT_MEDICATIONCONCOMITANT_MEDICATION_SUB_CATEGORY_ASSOCIATION_CONCOMITANT_MEDICATION_SUB_CATEGORY_MOOD_CODE_CONCOMITANT_MEDICATIONCONCOMITANT_MEDICATION_SUB_CATEGORY_ASSOCIATION_CONCOMITANT_MEDICATION_SUB_CATEGORY_MOOD_CODE1__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(concomitantMedication))
-    {
-      if (diagnostics != null)
-      {
-        diagnostics.add
-          (new BasicDiagnostic
-            (Diagnostic.ERROR,
-             SdtmValidator.DIAGNOSTIC_SOURCE,
-             SdtmValidator.CONCOMITANT_MEDICATION__CONCOMITANT_MEDICATIONCONCOMITANT_MEDICATION_SUB_CATEGORY_ASSOCIATION_CONCOMITANT_MEDICATION_SUB_CATEGORY_MOOD_CODE_CONCOMITANT_MEDICATIONCONCOMITANT_MEDICATION_SUB_CATEGORY_ASSOCIATION_CONCOMITANT_MEDICATION_SUB_CATEGORY_MOOD_CODE1,
-             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "ConcomitantMedicationconcomitantMedicationSubCategoryAssociationConcomitantMedicationSubCategoryMoodCodeConcomitantMedicationconcomitantMedicationSubCategoryAssociationConcomitantMedicationSubCategoryMoodCode1", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(concomitantMedication, context) }),
-             new Object [] { concomitantMedication }));
-      }
-      return false;
-    }
-    return true;
-  }
-
-  /**
-   * The cached OCL expression body for the '{@link #validateConcomitantMedicationconcomitantMedicationSubCategoryAssociationConcomitantMedicationSubCategoryValueConcomitantMedicationconcomitantMedicationSubCategoryAssociationConcomitantMedicationSubCategoryValue1(ConcomitantMedication, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Concomitant Medicationconcomitant Medication Sub Category Association Concomitant Medication Sub Category Value Concomitant Medicationconcomitant Medication Sub Category Association Concomitant Medication Sub Category Value1</em>}' operation.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @see #validateConcomitantMedicationconcomitantMedicationSubCategoryAssociationConcomitantMedicationSubCategoryValueConcomitantMedicationconcomitantMedicationSubCategoryAssociationConcomitantMedicationSubCategoryValue1(ConcomitantMedication, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-   * @generated
-   * @ordered
-   */
-  protected static final String VALIDATE_CONCOMITANT_MEDICATIONCONCOMITANT_MEDICATION_SUB_CATEGORY_ASSOCIATION_CONCOMITANT_MEDICATION_SUB_CATEGORY_VALUE_CONCOMITANT_MEDICATIONCONCOMITANT_MEDICATION_SUB_CATEGORY_ASSOCIATION_CONCOMITANT_MEDICATION_SUB_CATEGORY_VALUE1__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entryRelationship->excluding(null)->reject(observation->excluding(null)->reject((value->isEmpty() or value->exists(element | element.isNullFlavorUndefined())) implies (value->size() = 1 and value->forAll(element | element.oclIsTypeOf(datatypes::CE)))))";
-
-  /**
-   * The cached OCL invariant for the '{@link #validateConcomitantMedicationconcomitantMedicationSubCategoryAssociationConcomitantMedicationSubCategoryValueConcomitantMedicationconcomitantMedicationSubCategoryAssociationConcomitantMedicationSubCategoryValue1(ConcomitantMedication, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Concomitant Medicationconcomitant Medication Sub Category Association Concomitant Medication Sub Category Value Concomitant Medicationconcomitant Medication Sub Category Association Concomitant Medication Sub Category Value1</em>}' invariant operation.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @see #validateConcomitantMedicationconcomitantMedicationSubCategoryAssociationConcomitantMedicationSubCategoryValueConcomitantMedicationconcomitantMedicationSubCategoryAssociationConcomitantMedicationSubCategoryValue1(ConcomitantMedication, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-   * @generated
-   * @ordered
-   */
-  
-  protected static Constraint VALIDATE_CONCOMITANT_MEDICATIONCONCOMITANT_MEDICATION_SUB_CATEGORY_ASSOCIATION_CONCOMITANT_MEDICATION_SUB_CATEGORY_VALUE_CONCOMITANT_MEDICATIONCONCOMITANT_MEDICATION_SUB_CATEGORY_ASSOCIATION_CONCOMITANT_MEDICATION_SUB_CATEGORY_VALUE1__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-  
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * <!-- begin-model-doc -->
-   * self.entryRelationship->excluding(null)->reject(observation->excluding(null)->reject((value->isEmpty() or value->exists(element | element.isNullFlavorUndefined())) implies (value->size() = 1 and value->forAll(element | element.oclIsTypeOf(datatypes::CE)))))
-   * @param concomitantMedication The receiving '<em><b>Concomitant Medication</b></em>' model object.
-   * @param diagnostics The chain of diagnostics to which problems are to be appended.
-   * @param context The cache of context-specific information.
-   * <!-- end-model-doc -->
-   * @generated
-   */
-  
-  public static  boolean validateConcomitantMedicationconcomitantMedicationSubCategoryAssociationConcomitantMedicationSubCategoryValueConcomitantMedicationconcomitantMedicationSubCategoryAssociationConcomitantMedicationSubCategoryValue1(ConcomitantMedication concomitantMedication, DiagnosticChain diagnostics, Map<Object, Object> context)
-  {
-    if (VALIDATE_CONCOMITANT_MEDICATIONCONCOMITANT_MEDICATION_SUB_CATEGORY_ASSOCIATION_CONCOMITANT_MEDICATION_SUB_CATEGORY_VALUE_CONCOMITANT_MEDICATIONCONCOMITANT_MEDICATION_SUB_CATEGORY_ASSOCIATION_CONCOMITANT_MEDICATION_SUB_CATEGORY_VALUE1__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-      OCL.Helper helper = EOCL_ENV.createOCLHelper();
-      helper.setContext(SdtmPackage.Literals.CONCOMITANT_MEDICATION);
-      try
-      {
-        VALIDATE_CONCOMITANT_MEDICATIONCONCOMITANT_MEDICATION_SUB_CATEGORY_ASSOCIATION_CONCOMITANT_MEDICATION_SUB_CATEGORY_VALUE_CONCOMITANT_MEDICATIONCONCOMITANT_MEDICATION_SUB_CATEGORY_ASSOCIATION_CONCOMITANT_MEDICATION_SUB_CATEGORY_VALUE1__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_CONCOMITANT_MEDICATIONCONCOMITANT_MEDICATION_SUB_CATEGORY_ASSOCIATION_CONCOMITANT_MEDICATION_SUB_CATEGORY_VALUE_CONCOMITANT_MEDICATIONCONCOMITANT_MEDICATION_SUB_CATEGORY_ASSOCIATION_CONCOMITANT_MEDICATION_SUB_CATEGORY_VALUE1__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-      }
-      catch (ParserException pe)
-      {
-        throw new UnsupportedOperationException(pe.getLocalizedMessage());
-      }
-    }
-    if (!EOCL_ENV.createQuery(VALIDATE_CONCOMITANT_MEDICATIONCONCOMITANT_MEDICATION_SUB_CATEGORY_ASSOCIATION_CONCOMITANT_MEDICATION_SUB_CATEGORY_VALUE_CONCOMITANT_MEDICATIONCONCOMITANT_MEDICATION_SUB_CATEGORY_ASSOCIATION_CONCOMITANT_MEDICATION_SUB_CATEGORY_VALUE1__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(concomitantMedication))
-    {
-      if (diagnostics != null)
-      {
-        diagnostics.add
-          (new BasicDiagnostic
-            (Diagnostic.ERROR,
-             SdtmValidator.DIAGNOSTIC_SOURCE,
-             SdtmValidator.CONCOMITANT_MEDICATION__CONCOMITANT_MEDICATIONCONCOMITANT_MEDICATION_SUB_CATEGORY_ASSOCIATION_CONCOMITANT_MEDICATION_SUB_CATEGORY_VALUE_CONCOMITANT_MEDICATIONCONCOMITANT_MEDICATION_SUB_CATEGORY_ASSOCIATION_CONCOMITANT_MEDICATION_SUB_CATEGORY_VALUE1,
-             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "ConcomitantMedicationconcomitantMedicationSubCategoryAssociationConcomitantMedicationSubCategoryValueConcomitantMedicationconcomitantMedicationSubCategoryAssociationConcomitantMedicationSubCategoryValue1", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(concomitantMedication, context) }),
-             new Object [] { concomitantMedication }));
-      }
-      return false;
-    }
-    return true;
-  }
-
-  /**
-   * The cached OCL expression body for the '{@link #validateConcomitantMedicationIntendedRegimenAssociationIntendedRegimenClassCode(ConcomitantMedication, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Concomitant Medication Intended Regimen Association Intended Regimen Class Code</em>}' operation.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @see #validateConcomitantMedicationIntendedRegimenAssociationIntendedRegimenClassCode(ConcomitantMedication, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-   * @generated
-   * @ordered
-   */
-  protected static final String VALIDATE_CONCOMITANT_MEDICATION_INTENDED_REGIMEN_ASSOCIATION_INTENDED_REGIMEN_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entryRelationship->excluding(null).observation->excluding(null)->reject(classCode=vocab::ActClassObservation::OBS)";
-
-  /**
-   * The cached OCL invariant for the '{@link #validateConcomitantMedicationIntendedRegimenAssociationIntendedRegimenClassCode(ConcomitantMedication, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Concomitant Medication Intended Regimen Association Intended Regimen Class Code</em>}' invariant operation.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @see #validateConcomitantMedicationIntendedRegimenAssociationIntendedRegimenClassCode(ConcomitantMedication, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-   * @generated
-   * @ordered
-   */
-  
-  protected static Constraint VALIDATE_CONCOMITANT_MEDICATION_INTENDED_REGIMEN_ASSOCIATION_INTENDED_REGIMEN_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-  
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * <!-- begin-model-doc -->
-   * self.entryRelationship->excluding(null).observation->excluding(null)->reject(classCode=vocab::ActClassObservation::OBS)
-   * @param concomitantMedication The receiving '<em><b>Concomitant Medication</b></em>' model object.
-   * @param diagnostics The chain of diagnostics to which problems are to be appended.
-   * @param context The cache of context-specific information.
-   * <!-- end-model-doc -->
-   * @generated
-   */
-  
-  public static  boolean validateConcomitantMedicationIntendedRegimenAssociationIntendedRegimenClassCode(ConcomitantMedication concomitantMedication, DiagnosticChain diagnostics, Map<Object, Object> context)
-  {
-    if (VALIDATE_CONCOMITANT_MEDICATION_INTENDED_REGIMEN_ASSOCIATION_INTENDED_REGIMEN_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-      OCL.Helper helper = EOCL_ENV.createOCLHelper();
-      helper.setContext(SdtmPackage.Literals.CONCOMITANT_MEDICATION);
-      try
-      {
-        VALIDATE_CONCOMITANT_MEDICATION_INTENDED_REGIMEN_ASSOCIATION_INTENDED_REGIMEN_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_CONCOMITANT_MEDICATION_INTENDED_REGIMEN_ASSOCIATION_INTENDED_REGIMEN_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-      }
-      catch (ParserException pe)
-      {
-        throw new UnsupportedOperationException(pe.getLocalizedMessage());
-      }
-    }
-    if (!EOCL_ENV.createQuery(VALIDATE_CONCOMITANT_MEDICATION_INTENDED_REGIMEN_ASSOCIATION_INTENDED_REGIMEN_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(concomitantMedication))
-    {
-      if (diagnostics != null)
-      {
-        diagnostics.add
-          (new BasicDiagnostic
-            (Diagnostic.ERROR,
-             SdtmValidator.DIAGNOSTIC_SOURCE,
-             SdtmValidator.CONCOMITANT_MEDICATION__CONCOMITANT_MEDICATION_INTENDED_REGIMEN_ASSOCIATION_INTENDED_REGIMEN_CLASS_CODE,
-             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "ConcomitantMedicationIntendedRegimenAssociationIntendedRegimenClassCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(concomitantMedication, context) }),
-             new Object [] { concomitantMedication }));
-      }
-      return false;
-    }
-    return true;
-  }
-
-  /**
-   * The cached OCL expression body for the '{@link #validateConcomitantMedicationIntendedRegimenAssociationIntendedRegimenCodeP(ConcomitantMedication, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Concomitant Medication Intended Regimen Association Intended Regimen Code P</em>}' operation.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @see #validateConcomitantMedicationIntendedRegimenAssociationIntendedRegimenCodeP(ConcomitantMedication, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-   * @generated
-   * @ordered
-   */
-  protected static final String VALIDATE_CONCOMITANT_MEDICATION_INTENDED_REGIMEN_ASSOCIATION_INTENDED_REGIMEN_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entryRelationship->excluding(null).observation->excluding(null)->reject((code.oclIsUndefined() or code.isNullFlavorUndefined()) implies (not code.oclIsUndefined()))";
-
-  /**
-   * The cached OCL invariant for the '{@link #validateConcomitantMedicationIntendedRegimenAssociationIntendedRegimenCodeP(ConcomitantMedication, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Concomitant Medication Intended Regimen Association Intended Regimen Code P</em>}' invariant operation.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @see #validateConcomitantMedicationIntendedRegimenAssociationIntendedRegimenCodeP(ConcomitantMedication, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-   * @generated
-   * @ordered
-   */
-  
-  protected static Constraint VALIDATE_CONCOMITANT_MEDICATION_INTENDED_REGIMEN_ASSOCIATION_INTENDED_REGIMEN_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-  
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * <!-- begin-model-doc -->
-   * self.entryRelationship->excluding(null).observation->excluding(null)->reject((code.oclIsUndefined() or code.isNullFlavorUndefined()) implies (not code.oclIsUndefined()))
-   * @param concomitantMedication The receiving '<em><b>Concomitant Medication</b></em>' model object.
-   * @param diagnostics The chain of diagnostics to which problems are to be appended.
-   * @param context The cache of context-specific information.
-   * <!-- end-model-doc -->
-   * @generated
-   */
-  
-  public static  boolean validateConcomitantMedicationIntendedRegimenAssociationIntendedRegimenCodeP(ConcomitantMedication concomitantMedication, DiagnosticChain diagnostics, Map<Object, Object> context)
-  {
-    if (VALIDATE_CONCOMITANT_MEDICATION_INTENDED_REGIMEN_ASSOCIATION_INTENDED_REGIMEN_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-      OCL.Helper helper = EOCL_ENV.createOCLHelper();
-      helper.setContext(SdtmPackage.Literals.CONCOMITANT_MEDICATION);
-      try
-      {
-        VALIDATE_CONCOMITANT_MEDICATION_INTENDED_REGIMEN_ASSOCIATION_INTENDED_REGIMEN_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_CONCOMITANT_MEDICATION_INTENDED_REGIMEN_ASSOCIATION_INTENDED_REGIMEN_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-      }
-      catch (ParserException pe)
-      {
-        throw new UnsupportedOperationException(pe.getLocalizedMessage());
-      }
-    }
-    if (!EOCL_ENV.createQuery(VALIDATE_CONCOMITANT_MEDICATION_INTENDED_REGIMEN_ASSOCIATION_INTENDED_REGIMEN_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(concomitantMedication))
-    {
-      if (diagnostics != null)
-      {
-        diagnostics.add
-          (new BasicDiagnostic
-            (Diagnostic.ERROR,
-             SdtmValidator.DIAGNOSTIC_SOURCE,
-             SdtmValidator.CONCOMITANT_MEDICATION__CONCOMITANT_MEDICATION_INTENDED_REGIMEN_ASSOCIATION_INTENDED_REGIMEN_CODE_P,
-             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "ConcomitantMedicationIntendedRegimenAssociationIntendedRegimenCodeP", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(concomitantMedication, context) }),
-             new Object [] { concomitantMedication }));
-      }
-      return false;
-    }
-    return true;
-  }
-
-  /**
-   * The cached OCL expression body for the '{@link #validateConcomitantMedicationIntendedRegimenAssociationIntendedRegimenCode(ConcomitantMedication, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Concomitant Medication Intended Regimen Association Intended Regimen Code</em>}' operation.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @see #validateConcomitantMedicationIntendedRegimenAssociationIntendedRegimenCode(ConcomitantMedication, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-   * @generated
-   * @ordered
-   */
-  protected static final String VALIDATE_CONCOMITANT_MEDICATION_INTENDED_REGIMEN_ASSOCIATION_INTENDED_REGIMEN_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entryRelationship->excluding(null).observation->excluding(null)->reject((code.oclIsUndefined() or code.isNullFlavorUndefined()) implies (not code.oclIsUndefined() and code.oclIsKindOf(datatypes::CD) and "+
+  protected static final String VALIDATE_CONCOMITANT_MEDICATION_INTENDED_REGIMEN_ASSOCIATIONINTENDED_REGIMEN_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entryRelationship->excluding(null).observation->excluding(null)->reject((code.oclIsUndefined() or code.isNullFlavorUndefined()) implies (not code.oclIsUndefined() and code.oclIsKindOf(datatypes::CD) and "+
 "let value : datatypes::CD = code.oclAsType(datatypes::CD) in "+
-"value.code = 'TBD' and value.codeSystem = '2.16.840.1.113883.3.26.1.1'))";
+"value.code = 'C83232' and value.codeSystem = '2.16.840.1.113883.3.26.1.1'))";
 
   /**
-   * The cached OCL invariant for the '{@link #validateConcomitantMedicationIntendedRegimenAssociationIntendedRegimenCode(ConcomitantMedication, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Concomitant Medication Intended Regimen Association Intended Regimen Code</em>}' invariant operation.
+   * The cached OCL invariant for the '{@link #validateConcomitantMedicationIntendedRegimenAssociationintendedRegimenCode(ConcomitantMedication, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Concomitant Medication Intended Regimen Associationintended Regimen Code</em>}' invariant operation.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @see #validateConcomitantMedicationIntendedRegimenAssociationIntendedRegimenCode(ConcomitantMedication, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+   * @see #validateConcomitantMedicationIntendedRegimenAssociationintendedRegimenCode(ConcomitantMedication, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
    * @generated
    * @ordered
    */
   
-  protected static Constraint VALIDATE_CONCOMITANT_MEDICATION_INTENDED_REGIMEN_ASSOCIATION_INTENDED_REGIMEN_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-  
+  protected static Constraint VALIDATE_CONCOMITANT_MEDICATION_INTENDED_REGIMEN_ASSOCIATIONINTENDED_REGIMEN_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+
 
   /**
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.entryRelationship->excluding(null).observation->excluding(null)->reject((code.oclIsUndefined() or code.isNullFlavorUndefined()) implies (not code.oclIsUndefined() and code.oclIsKindOf(datatypes::CD) and 
-   * let value : datatypes::CD = code.oclAsType(datatypes::CD) in 
-   * value.code = 'TBD' and value.codeSystem = '2.16.840.1.113883.3.26.1.1'))
    * @param concomitantMedication The receiving '<em><b>Concomitant Medication</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -4333,21 +3665,22 @@ public class ConcomitantMedicationOperations extends SubstanceAdministrationOper
    * @generated
    */
   
-  public static  boolean validateConcomitantMedicationIntendedRegimenAssociationIntendedRegimenCode(ConcomitantMedication concomitantMedication, DiagnosticChain diagnostics, Map<Object, Object> context)
+  public static  boolean validateConcomitantMedicationIntendedRegimenAssociationintendedRegimenCode(ConcomitantMedication concomitantMedication, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
-    if (VALIDATE_CONCOMITANT_MEDICATION_INTENDED_REGIMEN_ASSOCIATION_INTENDED_REGIMEN_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+  	  
+    if (VALIDATE_CONCOMITANT_MEDICATION_INTENDED_REGIMEN_ASSOCIATIONINTENDED_REGIMEN_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(SdtmPackage.Literals.CONCOMITANT_MEDICATION);
       try
       {
-        VALIDATE_CONCOMITANT_MEDICATION_INTENDED_REGIMEN_ASSOCIATION_INTENDED_REGIMEN_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_CONCOMITANT_MEDICATION_INTENDED_REGIMEN_ASSOCIATION_INTENDED_REGIMEN_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+        VALIDATE_CONCOMITANT_MEDICATION_INTENDED_REGIMEN_ASSOCIATIONINTENDED_REGIMEN_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_CONCOMITANT_MEDICATION_INTENDED_REGIMEN_ASSOCIATIONINTENDED_REGIMEN_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
       }
       catch (ParserException pe)
       {
         throw new UnsupportedOperationException(pe.getLocalizedMessage());
       }
     }
-    if (!EOCL_ENV.createQuery(VALIDATE_CONCOMITANT_MEDICATION_INTENDED_REGIMEN_ASSOCIATION_INTENDED_REGIMEN_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(concomitantMedication))
+    if (!EOCL_ENV.createQuery(VALIDATE_CONCOMITANT_MEDICATION_INTENDED_REGIMEN_ASSOCIATIONINTENDED_REGIMEN_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(concomitantMedication))
     {
       if (diagnostics != null)
       {
@@ -4355,42 +3688,42 @@ public class ConcomitantMedicationOperations extends SubstanceAdministrationOper
           (new BasicDiagnostic
             (Diagnostic.ERROR,
              SdtmValidator.DIAGNOSTIC_SOURCE,
-             SdtmValidator.CONCOMITANT_MEDICATION__CONCOMITANT_MEDICATION_INTENDED_REGIMEN_ASSOCIATION_INTENDED_REGIMEN_CODE,
-             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "ConcomitantMedicationIntendedRegimenAssociationIntendedRegimenCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(concomitantMedication, context) }),
+             SdtmValidator.CONCOMITANT_MEDICATION__CONCOMITANT_MEDICATION_INTENDED_REGIMEN_ASSOCIATIONINTENDED_REGIMEN_CODE,
+             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "ConcomitantMedicationIntendedRegimenAssociationintendedRegimenCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(concomitantMedication, context) }),
              new Object [] { concomitantMedication }));
       }
+       
       return false;
     }
     return true;
   }
 
   /**
-   * The cached OCL expression body for the '{@link #validateConcomitantMedicationIntendedRegimenAssociationIntendedRegimenMoodCode(ConcomitantMedication, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Concomitant Medication Intended Regimen Association Intended Regimen Mood Code</em>}' operation.
+   * The cached OCL expression body for the '{@link #validateConcomitantMedicationIntendedRegimenAssociationintendedRegimenMoodCode(ConcomitantMedication, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Concomitant Medication Intended Regimen Associationintended Regimen Mood Code</em>}' operation.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @see #validateConcomitantMedicationIntendedRegimenAssociationIntendedRegimenMoodCode(ConcomitantMedication, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+   * @see #validateConcomitantMedicationIntendedRegimenAssociationintendedRegimenMoodCode(ConcomitantMedication, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
    * @generated
    * @ordered
    */
-  protected static final String VALIDATE_CONCOMITANT_MEDICATION_INTENDED_REGIMEN_ASSOCIATION_INTENDED_REGIMEN_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entryRelationship->excluding(null).observation->excluding(null)->reject(moodCode=vocab::x_ActMoodDocumentObservation::EVN)";
+  protected static final String VALIDATE_CONCOMITANT_MEDICATION_INTENDED_REGIMEN_ASSOCIATIONINTENDED_REGIMEN_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entryRelationship->excluding(null).observation->excluding(null)->reject(moodCode=vocab::x_ActMoodDocumentObservation::EVN)";
 
   /**
-   * The cached OCL invariant for the '{@link #validateConcomitantMedicationIntendedRegimenAssociationIntendedRegimenMoodCode(ConcomitantMedication, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Concomitant Medication Intended Regimen Association Intended Regimen Mood Code</em>}' invariant operation.
+   * The cached OCL invariant for the '{@link #validateConcomitantMedicationIntendedRegimenAssociationintendedRegimenMoodCode(ConcomitantMedication, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Concomitant Medication Intended Regimen Associationintended Regimen Mood Code</em>}' invariant operation.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @see #validateConcomitantMedicationIntendedRegimenAssociationIntendedRegimenMoodCode(ConcomitantMedication, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+   * @see #validateConcomitantMedicationIntendedRegimenAssociationintendedRegimenMoodCode(ConcomitantMedication, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
    * @generated
    * @ordered
    */
   
-  protected static Constraint VALIDATE_CONCOMITANT_MEDICATION_INTENDED_REGIMEN_ASSOCIATION_INTENDED_REGIMEN_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-  
+  protected static Constraint VALIDATE_CONCOMITANT_MEDICATION_INTENDED_REGIMEN_ASSOCIATIONINTENDED_REGIMEN_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+
 
   /**
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.entryRelationship->excluding(null).observation->excluding(null)->reject(moodCode=vocab::x_ActMoodDocumentObservation::EVN)
    * @param concomitantMedication The receiving '<em><b>Concomitant Medication</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -4398,21 +3731,22 @@ public class ConcomitantMedicationOperations extends SubstanceAdministrationOper
    * @generated
    */
   
-  public static  boolean validateConcomitantMedicationIntendedRegimenAssociationIntendedRegimenMoodCode(ConcomitantMedication concomitantMedication, DiagnosticChain diagnostics, Map<Object, Object> context)
+  public static  boolean validateConcomitantMedicationIntendedRegimenAssociationintendedRegimenMoodCode(ConcomitantMedication concomitantMedication, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
-    if (VALIDATE_CONCOMITANT_MEDICATION_INTENDED_REGIMEN_ASSOCIATION_INTENDED_REGIMEN_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+  	  
+    if (VALIDATE_CONCOMITANT_MEDICATION_INTENDED_REGIMEN_ASSOCIATIONINTENDED_REGIMEN_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(SdtmPackage.Literals.CONCOMITANT_MEDICATION);
       try
       {
-        VALIDATE_CONCOMITANT_MEDICATION_INTENDED_REGIMEN_ASSOCIATION_INTENDED_REGIMEN_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_CONCOMITANT_MEDICATION_INTENDED_REGIMEN_ASSOCIATION_INTENDED_REGIMEN_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+        VALIDATE_CONCOMITANT_MEDICATION_INTENDED_REGIMEN_ASSOCIATIONINTENDED_REGIMEN_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_CONCOMITANT_MEDICATION_INTENDED_REGIMEN_ASSOCIATIONINTENDED_REGIMEN_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
       }
       catch (ParserException pe)
       {
         throw new UnsupportedOperationException(pe.getLocalizedMessage());
       }
     }
-    if (!EOCL_ENV.createQuery(VALIDATE_CONCOMITANT_MEDICATION_INTENDED_REGIMEN_ASSOCIATION_INTENDED_REGIMEN_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(concomitantMedication))
+    if (!EOCL_ENV.createQuery(VALIDATE_CONCOMITANT_MEDICATION_INTENDED_REGIMEN_ASSOCIATIONINTENDED_REGIMEN_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(concomitantMedication))
     {
       if (diagnostics != null)
       {
@@ -4420,42 +3754,42 @@ public class ConcomitantMedicationOperations extends SubstanceAdministrationOper
           (new BasicDiagnostic
             (Diagnostic.ERROR,
              SdtmValidator.DIAGNOSTIC_SOURCE,
-             SdtmValidator.CONCOMITANT_MEDICATION__CONCOMITANT_MEDICATION_INTENDED_REGIMEN_ASSOCIATION_INTENDED_REGIMEN_MOOD_CODE,
-             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "ConcomitantMedicationIntendedRegimenAssociationIntendedRegimenMoodCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(concomitantMedication, context) }),
+             SdtmValidator.CONCOMITANT_MEDICATION__CONCOMITANT_MEDICATION_INTENDED_REGIMEN_ASSOCIATIONINTENDED_REGIMEN_MOOD_CODE,
+             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "ConcomitantMedicationIntendedRegimenAssociationintendedRegimenMoodCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(concomitantMedication, context) }),
              new Object [] { concomitantMedication }));
       }
+       
       return false;
     }
     return true;
   }
 
   /**
-   * The cached OCL expression body for the '{@link #validateConcomitantMedicationIntendedRegimenAssociationIntendedRegimenValue(ConcomitantMedication, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Concomitant Medication Intended Regimen Association Intended Regimen Value</em>}' operation.
+   * The cached OCL expression body for the '{@link #validateConcomitantMedicationIntendedRegimenAssociationintendedRegimenValue(ConcomitantMedication, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Concomitant Medication Intended Regimen Associationintended Regimen Value</em>}' operation.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @see #validateConcomitantMedicationIntendedRegimenAssociationIntendedRegimenValue(ConcomitantMedication, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+   * @see #validateConcomitantMedicationIntendedRegimenAssociationintendedRegimenValue(ConcomitantMedication, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
    * @generated
    * @ordered
    */
-  protected static final String VALIDATE_CONCOMITANT_MEDICATION_INTENDED_REGIMEN_ASSOCIATION_INTENDED_REGIMEN_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entryRelationship->excluding(null).observation->excluding(null)->reject((value->isEmpty() or value->exists(element | element.isNullFlavorUndefined())) implies (value->forAll(element | element.oclIsTypeOf(datatypes::ED))))";
+  protected static final String VALIDATE_CONCOMITANT_MEDICATION_INTENDED_REGIMEN_ASSOCIATIONINTENDED_REGIMEN_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entryRelationship->excluding(null).observation->excluding(null)->reject((value->isEmpty() or value->exists(element | element.isNullFlavorUndefined())) implies (value->size() = 1 and value->forAll(element | element.oclIsTypeOf(datatypes::ED))))";
 
   /**
-   * The cached OCL invariant for the '{@link #validateConcomitantMedicationIntendedRegimenAssociationIntendedRegimenValue(ConcomitantMedication, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Concomitant Medication Intended Regimen Association Intended Regimen Value</em>}' invariant operation.
+   * The cached OCL invariant for the '{@link #validateConcomitantMedicationIntendedRegimenAssociationintendedRegimenValue(ConcomitantMedication, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Concomitant Medication Intended Regimen Associationintended Regimen Value</em>}' invariant operation.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @see #validateConcomitantMedicationIntendedRegimenAssociationIntendedRegimenValue(ConcomitantMedication, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+   * @see #validateConcomitantMedicationIntendedRegimenAssociationintendedRegimenValue(ConcomitantMedication, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
    * @generated
    * @ordered
    */
   
-  protected static Constraint VALIDATE_CONCOMITANT_MEDICATION_INTENDED_REGIMEN_ASSOCIATION_INTENDED_REGIMEN_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-  
+  protected static Constraint VALIDATE_CONCOMITANT_MEDICATION_INTENDED_REGIMEN_ASSOCIATIONINTENDED_REGIMEN_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+
 
   /**
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.entryRelationship->excluding(null).observation->excluding(null)->reject((value->isEmpty() or value->exists(element | element.isNullFlavorUndefined())) implies (value->forAll(element | element.oclIsTypeOf(datatypes::ED))))
    * @param concomitantMedication The receiving '<em><b>Concomitant Medication</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -4463,21 +3797,22 @@ public class ConcomitantMedicationOperations extends SubstanceAdministrationOper
    * @generated
    */
   
-  public static  boolean validateConcomitantMedicationIntendedRegimenAssociationIntendedRegimenValue(ConcomitantMedication concomitantMedication, DiagnosticChain diagnostics, Map<Object, Object> context)
+  public static  boolean validateConcomitantMedicationIntendedRegimenAssociationintendedRegimenValue(ConcomitantMedication concomitantMedication, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
-    if (VALIDATE_CONCOMITANT_MEDICATION_INTENDED_REGIMEN_ASSOCIATION_INTENDED_REGIMEN_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+  	  
+    if (VALIDATE_CONCOMITANT_MEDICATION_INTENDED_REGIMEN_ASSOCIATIONINTENDED_REGIMEN_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(SdtmPackage.Literals.CONCOMITANT_MEDICATION);
       try
       {
-        VALIDATE_CONCOMITANT_MEDICATION_INTENDED_REGIMEN_ASSOCIATION_INTENDED_REGIMEN_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_CONCOMITANT_MEDICATION_INTENDED_REGIMEN_ASSOCIATION_INTENDED_REGIMEN_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+        VALIDATE_CONCOMITANT_MEDICATION_INTENDED_REGIMEN_ASSOCIATIONINTENDED_REGIMEN_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_CONCOMITANT_MEDICATION_INTENDED_REGIMEN_ASSOCIATIONINTENDED_REGIMEN_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
       }
       catch (ParserException pe)
       {
         throw new UnsupportedOperationException(pe.getLocalizedMessage());
       }
     }
-    if (!EOCL_ENV.createQuery(VALIDATE_CONCOMITANT_MEDICATION_INTENDED_REGIMEN_ASSOCIATION_INTENDED_REGIMEN_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(concomitantMedication))
+    if (!EOCL_ENV.createQuery(VALIDATE_CONCOMITANT_MEDICATION_INTENDED_REGIMEN_ASSOCIATIONINTENDED_REGIMEN_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(concomitantMedication))
     {
       if (diagnostics != null)
       {
@@ -4485,10 +3820,11 @@ public class ConcomitantMedicationOperations extends SubstanceAdministrationOper
           (new BasicDiagnostic
             (Diagnostic.ERROR,
              SdtmValidator.DIAGNOSTIC_SOURCE,
-             SdtmValidator.CONCOMITANT_MEDICATION__CONCOMITANT_MEDICATION_INTENDED_REGIMEN_ASSOCIATION_INTENDED_REGIMEN_VALUE,
-             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "ConcomitantMedicationIntendedRegimenAssociationIntendedRegimenValue", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(concomitantMedication, context) }),
+             SdtmValidator.CONCOMITANT_MEDICATION__CONCOMITANT_MEDICATION_INTENDED_REGIMEN_ASSOCIATIONINTENDED_REGIMEN_VALUE,
+             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "ConcomitantMedicationIntendedRegimenAssociationintendedRegimenValue", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(concomitantMedication, context) }),
              new Object [] { concomitantMedication }));
       }
+       
       return false;
     }
     return true;
@@ -4520,7 +3856,6 @@ public class ConcomitantMedicationOperations extends SubstanceAdministrationOper
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.entryRelationship->excluding(null)->reject(typeCode=vocab::x_ActRelationshipEntryRelationship::REFR)
    * @param concomitantMedication The receiving '<em><b>Concomitant Medication</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -4530,6 +3865,7 @@ public class ConcomitantMedicationOperations extends SubstanceAdministrationOper
   
   public static  boolean validateConcomitantMedicationIntendedRegimenAssociationTypeCode(ConcomitantMedication concomitantMedication, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
+  	  
     if (VALIDATE_CONCOMITANT_MEDICATION_INTENDED_REGIMEN_ASSOCIATION_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(SdtmPackage.Literals.CONCOMITANT_MEDICATION);
@@ -4554,6 +3890,7 @@ public class ConcomitantMedicationOperations extends SubstanceAdministrationOper
              org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "ConcomitantMedicationIntendedRegimenAssociationTypeCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(concomitantMedication, context) }),
              new Object [] { concomitantMedication }));
       }
+       
       return false;
     }
     return true;
@@ -4585,7 +3922,6 @@ public class ConcomitantMedicationOperations extends SubstanceAdministrationOper
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.entryRelationship->excluding(null)->reject(observation->one(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(cda::Observation)))
    * @param concomitantMedication The receiving '<em><b>Concomitant Medication</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -4595,6 +3931,7 @@ public class ConcomitantMedicationOperations extends SubstanceAdministrationOper
   
   public static  boolean validateConcomitantMedicationIntendedRegimenAssociationIntendedRegimen(ConcomitantMedication concomitantMedication, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
+  	  
     if (VALIDATE_CONCOMITANT_MEDICATION_INTENDED_REGIMEN_ASSOCIATION_INTENDED_REGIMEN__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(SdtmPackage.Literals.CONCOMITANT_MEDICATION);
@@ -4619,6 +3956,7 @@ public class ConcomitantMedicationOperations extends SubstanceAdministrationOper
              org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "ConcomitantMedicationIntendedRegimenAssociationIntendedRegimen", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(concomitantMedication, context) }),
              new Object [] { concomitantMedication }));
       }
+       
       return false;
     }
     return true;
@@ -4632,7 +3970,7 @@ public class ConcomitantMedicationOperations extends SubstanceAdministrationOper
    * @generated
    * @ordered
    */
-  protected static final String GET_GROUP_IDENTIFIER__EOCL_EXP = "self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(sdtm::Group Identifier))->asSequence()->first().oclAsType(sdtm::Group Identifier)";
+  protected static final String GET_GROUP_IDENTIFIER__EOCL_EXP = "self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(sdtm::Group Identifier))->asSequence()->any(true).oclAsType(sdtm::Group Identifier)";
 
   /**
    * The cached OCL query for the '{@link #getGroupIdentifier(ConcomitantMedication) <em>Get Group Identifier</em>}' query operation.
@@ -4647,10 +3985,6 @@ public class ConcomitantMedicationOperations extends SubstanceAdministrationOper
   /**
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * <!-- begin-model-doc -->
-   * self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(sdtm::Group Identifier))->asSequence()->first().oclAsType(sdtm::Group Identifier)
-   * @param concomitantMedication The receiving '<em><b>Concomitant Medication</b></em>' model object.
-   * <!-- end-model-doc -->
    * @generated
    */
   
@@ -4659,7 +3993,7 @@ public class ConcomitantMedicationOperations extends SubstanceAdministrationOper
     if (GET_GROUP_IDENTIFIER__EOCL_QRY == null)
     {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
-      helper.setOperationContext(SdtmPackage.Literals.CONCOMITANT_MEDICATION, SdtmPackage.Literals.CONCOMITANT_MEDICATION.getEAllOperations().get(119));
+      helper.setOperationContext(SdtmPackage.Literals.CONCOMITANT_MEDICATION, SdtmPackage.Literals.CONCOMITANT_MEDICATION.getEAllOperations().get(110));
       try
       {
         GET_GROUP_IDENTIFIER__EOCL_QRY = helper.createQuery(GET_GROUP_IDENTIFIER__EOCL_EXP);
@@ -4681,7 +4015,7 @@ public class ConcomitantMedicationOperations extends SubstanceAdministrationOper
    * @generated
    * @ordered
    */
-  protected static final String GET_NON_PERFORMANCE_REASON__EOCL_EXP = "self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(sdtm::Non Performance Reason))->asSequence()->first().oclAsType(sdtm::Non Performance Reason)";
+  protected static final String GET_NON_PERFORMANCE_REASON__EOCL_EXP = "self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(sdtm::Non Performance Reason))->asSequence()->any(true).oclAsType(sdtm::Non Performance Reason)";
 
   /**
    * The cached OCL query for the '{@link #getNonPerformanceReason(ConcomitantMedication) <em>Get Non Performance Reason</em>}' query operation.
@@ -4696,10 +4030,6 @@ public class ConcomitantMedicationOperations extends SubstanceAdministrationOper
   /**
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * <!-- begin-model-doc -->
-   * self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(sdtm::Non Performance Reason))->asSequence()->first().oclAsType(sdtm::Non Performance Reason)
-   * @param concomitantMedication The receiving '<em><b>Concomitant Medication</b></em>' model object.
-   * <!-- end-model-doc -->
    * @generated
    */
   
@@ -4708,7 +4038,7 @@ public class ConcomitantMedicationOperations extends SubstanceAdministrationOper
     if (GET_NON_PERFORMANCE_REASON__EOCL_QRY == null)
     {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
-      helper.setOperationContext(SdtmPackage.Literals.CONCOMITANT_MEDICATION, SdtmPackage.Literals.CONCOMITANT_MEDICATION.getEAllOperations().get(120));
+      helper.setOperationContext(SdtmPackage.Literals.CONCOMITANT_MEDICATION, SdtmPackage.Literals.CONCOMITANT_MEDICATION.getEAllOperations().get(111));
       try
       {
         GET_NON_PERFORMANCE_REASON__EOCL_QRY = helper.createQuery(GET_NON_PERFORMANCE_REASON__EOCL_EXP);
@@ -4730,7 +4060,7 @@ public class ConcomitantMedicationOperations extends SubstanceAdministrationOper
    * @generated
    * @ordered
    */
-  protected static final String GET_ACTIVITY_START_TIMING_REFERENCE__EOCL_EXP = "self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(sdtm::Activity Start Timing Reference))->asSequence()->first().oclAsType(sdtm::Activity Start Timing Reference)";
+  protected static final String GET_ACTIVITY_START_TIMING_REFERENCE__EOCL_EXP = "self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(sdtm::Activity Start Timing Reference))->asSequence()->any(true).oclAsType(sdtm::Activity Start Timing Reference)";
 
   /**
    * The cached OCL query for the '{@link #getActivityStartTimingReference(ConcomitantMedication) <em>Get Activity Start Timing Reference</em>}' query operation.
@@ -4745,10 +4075,6 @@ public class ConcomitantMedicationOperations extends SubstanceAdministrationOper
   /**
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * <!-- begin-model-doc -->
-   * self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(sdtm::Activity Start Timing Reference))->asSequence()->first().oclAsType(sdtm::Activity Start Timing Reference)
-   * @param concomitantMedication The receiving '<em><b>Concomitant Medication</b></em>' model object.
-   * <!-- end-model-doc -->
    * @generated
    */
   
@@ -4757,7 +4083,7 @@ public class ConcomitantMedicationOperations extends SubstanceAdministrationOper
     if (GET_ACTIVITY_START_TIMING_REFERENCE__EOCL_QRY == null)
     {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
-      helper.setOperationContext(SdtmPackage.Literals.CONCOMITANT_MEDICATION, SdtmPackage.Literals.CONCOMITANT_MEDICATION.getEAllOperations().get(121));
+      helper.setOperationContext(SdtmPackage.Literals.CONCOMITANT_MEDICATION, SdtmPackage.Literals.CONCOMITANT_MEDICATION.getEAllOperations().get(112));
       try
       {
         GET_ACTIVITY_START_TIMING_REFERENCE__EOCL_QRY = helper.createQuery(GET_ACTIVITY_START_TIMING_REFERENCE__EOCL_EXP);
@@ -4779,7 +4105,7 @@ public class ConcomitantMedicationOperations extends SubstanceAdministrationOper
    * @generated
    * @ordered
    */
-  protected static final String GET_ACTIVTY_END_TIMING_REFERENCE__EOCL_EXP = "self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(sdtm::Activity End Timing Reference))->asSequence()->first().oclAsType(sdtm::Activity End Timing Reference)";
+  protected static final String GET_ACTIVTY_END_TIMING_REFERENCE__EOCL_EXP = "self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(sdtm::Activity End Timing Reference))->asSequence()->any(true).oclAsType(sdtm::Activity End Timing Reference)";
 
   /**
    * The cached OCL query for the '{@link #getActivtyEndTimingReference(ConcomitantMedication) <em>Get Activty End Timing Reference</em>}' query operation.
@@ -4794,10 +4120,6 @@ public class ConcomitantMedicationOperations extends SubstanceAdministrationOper
   /**
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * <!-- begin-model-doc -->
-   * self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(sdtm::Activity End Timing Reference))->asSequence()->first().oclAsType(sdtm::Activity End Timing Reference)
-   * @param concomitantMedication The receiving '<em><b>Concomitant Medication</b></em>' model object.
-   * <!-- end-model-doc -->
    * @generated
    */
   
@@ -4806,7 +4128,7 @@ public class ConcomitantMedicationOperations extends SubstanceAdministrationOper
     if (GET_ACTIVTY_END_TIMING_REFERENCE__EOCL_QRY == null)
     {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
-      helper.setOperationContext(SdtmPackage.Literals.CONCOMITANT_MEDICATION, SdtmPackage.Literals.CONCOMITANT_MEDICATION.getEAllOperations().get(122));
+      helper.setOperationContext(SdtmPackage.Literals.CONCOMITANT_MEDICATION, SdtmPackage.Literals.CONCOMITANT_MEDICATION.getEAllOperations().get(113));
       try
       {
         GET_ACTIVTY_END_TIMING_REFERENCE__EOCL_QRY = helper.createQuery(GET_ACTIVTY_END_TIMING_REFERENCE__EOCL_EXP);
@@ -4828,7 +4150,7 @@ public class ConcomitantMedicationOperations extends SubstanceAdministrationOper
    * @generated
    * @ordered
    */
-  protected static final String GET_PRE_SPECIFIED_EVENT__EOCL_EXP = "self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(sdtm::Pre-Specified Event))->asSequence()->first().oclAsType(sdtm::Pre-Specified Event)";
+  protected static final String GET_PRE_SPECIFIED_EVENT__EOCL_EXP = "self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(sdtm::Pre-Specified Event))->asSequence()->any(true).oclAsType(sdtm::Pre-Specified Event)";
 
   /**
    * The cached OCL query for the '{@link #getPreSpecifiedEvent(ConcomitantMedication) <em>Get Pre Specified Event</em>}' query operation.
@@ -4843,10 +4165,6 @@ public class ConcomitantMedicationOperations extends SubstanceAdministrationOper
   /**
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * <!-- begin-model-doc -->
-   * self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(sdtm::Pre-Specified Event))->asSequence()->first().oclAsType(sdtm::Pre-Specified Event)
-   * @param concomitantMedication The receiving '<em><b>Concomitant Medication</b></em>' model object.
-   * <!-- end-model-doc -->
    * @generated
    */
   
@@ -4855,7 +4173,7 @@ public class ConcomitantMedicationOperations extends SubstanceAdministrationOper
     if (GET_PRE_SPECIFIED_EVENT__EOCL_QRY == null)
     {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
-      helper.setOperationContext(SdtmPackage.Literals.CONCOMITANT_MEDICATION, SdtmPackage.Literals.CONCOMITANT_MEDICATION.getEAllOperations().get(123));
+      helper.setOperationContext(SdtmPackage.Literals.CONCOMITANT_MEDICATION, SdtmPackage.Literals.CONCOMITANT_MEDICATION.getEAllOperations().get(114));
       try
       {
         GET_PRE_SPECIFIED_EVENT__EOCL_QRY = helper.createQuery(GET_PRE_SPECIFIED_EVENT__EOCL_EXP);
@@ -4877,7 +4195,7 @@ public class ConcomitantMedicationOperations extends SubstanceAdministrationOper
    * @generated
    * @ordered
    */
-  protected static final String GET_DATA_COLLECTION__EOCL_EXP = "self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(sdtm::Data Collection))->asSequence()->first().oclAsType(sdtm::Data Collection)";
+  protected static final String GET_DATA_COLLECTION__EOCL_EXP = "self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(sdtm::Data Collection))->asSequence()->any(true).oclAsType(sdtm::Data Collection)";
 
   /**
    * The cached OCL query for the '{@link #getDataCollection(ConcomitantMedication) <em>Get Data Collection</em>}' query operation.
@@ -4892,10 +4210,6 @@ public class ConcomitantMedicationOperations extends SubstanceAdministrationOper
   /**
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * <!-- begin-model-doc -->
-   * self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(sdtm::Data Collection))->asSequence()->first().oclAsType(sdtm::Data Collection)
-   * @param concomitantMedication The receiving '<em><b>Concomitant Medication</b></em>' model object.
-   * <!-- end-model-doc -->
    * @generated
    */
   
@@ -4904,7 +4218,7 @@ public class ConcomitantMedicationOperations extends SubstanceAdministrationOper
     if (GET_DATA_COLLECTION__EOCL_QRY == null)
     {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
-      helper.setOperationContext(SdtmPackage.Literals.CONCOMITANT_MEDICATION, SdtmPackage.Literals.CONCOMITANT_MEDICATION.getEAllOperations().get(124));
+      helper.setOperationContext(SdtmPackage.Literals.CONCOMITANT_MEDICATION, SdtmPackage.Literals.CONCOMITANT_MEDICATION.getEAllOperations().get(115));
       try
       {
         GET_DATA_COLLECTION__EOCL_QRY = helper.createQuery(GET_DATA_COLLECTION__EOCL_EXP);
@@ -4926,7 +4240,7 @@ public class ConcomitantMedicationOperations extends SubstanceAdministrationOper
    * @generated
    * @ordered
    */
-  protected static final String GET_STUDY_DAY_PERIOD__EOCL_EXP = "self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(sdtm::Study Day Period))->asSequence()->first().oclAsType(sdtm::Study Day Period)";
+  protected static final String GET_STUDY_DAY_PERIOD__EOCL_EXP = "self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(sdtm::Study Day Period))->asSequence()->any(true).oclAsType(sdtm::Study Day Period)";
 
   /**
    * The cached OCL query for the '{@link #getStudyDayPeriod(ConcomitantMedication) <em>Get Study Day Period</em>}' query operation.
@@ -4941,10 +4255,6 @@ public class ConcomitantMedicationOperations extends SubstanceAdministrationOper
   /**
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * <!-- begin-model-doc -->
-   * self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(sdtm::Study Day Period))->asSequence()->first().oclAsType(sdtm::Study Day Period)
-   * @param concomitantMedication The receiving '<em><b>Concomitant Medication</b></em>' model object.
-   * <!-- end-model-doc -->
    * @generated
    */
   
@@ -4953,7 +4263,7 @@ public class ConcomitantMedicationOperations extends SubstanceAdministrationOper
     if (GET_STUDY_DAY_PERIOD__EOCL_QRY == null)
     {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
-      helper.setOperationContext(SdtmPackage.Literals.CONCOMITANT_MEDICATION, SdtmPackage.Literals.CONCOMITANT_MEDICATION.getEAllOperations().get(125));
+      helper.setOperationContext(SdtmPackage.Literals.CONCOMITANT_MEDICATION, SdtmPackage.Literals.CONCOMITANT_MEDICATION.getEAllOperations().get(116));
       try
       {
         GET_STUDY_DAY_PERIOD__EOCL_QRY = helper.createQuery(GET_STUDY_DAY_PERIOD__EOCL_EXP);

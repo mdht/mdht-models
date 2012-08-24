@@ -61,6 +61,7 @@ import org.openhealthtools.mdht.uml.cda.emspcr.util.EmspcrValidator;
  * <ul>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.emspcr.PatientCareReport#validatePatientCareReportClassCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Patient Care Report Class Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.emspcr.PatientCareReport#validatePatientCareReportMoodCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Patient Care Report Mood Code</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.emspcr.PatientCareReport#validatePatientCareReportCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Patient Care Report Code P</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.emspcr.PatientCareReport#validatePatientCareReportCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Patient Care Report Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.emspcr.PatientCareReport#validatePatientCareReportTitle(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Patient Care Report Title</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.emspcr.PatientCareReport#validatePatientCareReportVersionNumber(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Patient Care Report Version Number</em>}</li>
@@ -117,7 +118,6 @@ import org.openhealthtools.mdht.uml.cda.emspcr.util.EmspcrValidator;
  *   <li>{@link org.openhealthtools.mdht.uml.cda.emspcr.PatientCareReport#getEMSTimesSection() <em>Get EMS Times Section</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.emspcr.PatientCareReport#getEMSVitalSignsSection() <em>Get EMS Vital Signs Section</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.emspcr.PatientCareReport#validateGeneralHeaderConstraintsTemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate General Header Constraints Template Id</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.emspcr.PatientCareReport#validateGeneralHeaderConstraintsCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate General Header Constraints Code</em>}</li>
  * </ul>
  * </p>
  *
@@ -160,7 +160,6 @@ public class PatientCareReportOperations extends GeneralHeaderConstraintsOperati
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * isDefined('classCode') and self.classCode=vocab::ActClinicalDocument::DOCCLIN
    * @param patientCareReport The receiving '<em><b>Patient Care Report</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -227,7 +226,6 @@ public class PatientCareReportOperations extends GeneralHeaderConstraintsOperati
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * isDefined('moodCode') and self.moodCode=vocab::ActMood::EVN
    * @param patientCareReport The receiving '<em><b>Patient Care Report</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -269,6 +267,84 @@ public class PatientCareReportOperations extends GeneralHeaderConstraintsOperati
   }
 
   /**
+   * The cached OCL expression body for the '{@link #validatePatientCareReportCodeP(PatientCareReport, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Patient Care Report Code P</em>}' operation.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #validatePatientCareReportCodeP(PatientCareReport, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+   * @generated
+   * @ordered
+   */
+  protected static final String VALIDATE_PATIENT_CARE_REPORT_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined())";
+
+  /**
+   * The cached OCL invariant for the '{@link #validatePatientCareReportCodeP(PatientCareReport, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Patient Care Report Code P</em>}' invariant operation.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #validatePatientCareReportCodeP(PatientCareReport, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+   * @generated
+   * @ordered
+   */
+  
+  protected static Constraint VALIDATE_PATIENT_CARE_REPORT_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * <!-- begin-model-doc -->
+   * @param patientCareReport The receiving '<em><b>Patient Care Report</b></em>' model object.
+   * @param diagnostics The chain of diagnostics to which problems are to be appended.
+   * @param context The cache of context-specific information.
+   * <!-- end-model-doc -->
+   * @generated
+   */
+  
+  public static  boolean validatePatientCareReportCodeP(PatientCareReport patientCareReport, DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+  	  
+    if (VALIDATE_PATIENT_CARE_REPORT_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+      OCL.Helper helper = EOCL_ENV.createOCLHelper();
+      helper.setContext(EmspcrPackage.Literals.PATIENT_CARE_REPORT);
+      try
+      {
+        VALIDATE_PATIENT_CARE_REPORT_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PATIENT_CARE_REPORT_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+      }
+      catch (ParserException pe)
+      {
+        throw new UnsupportedOperationException(pe.getLocalizedMessage());
+      }
+    }
+    if (!EOCL_ENV.createQuery(VALIDATE_PATIENT_CARE_REPORT_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(patientCareReport))
+    {
+      if (diagnostics != null)
+      {
+        diagnostics.add
+          (new BasicDiagnostic
+            (Diagnostic.ERROR,
+             EmspcrValidator.DIAGNOSTIC_SOURCE,
+             EmspcrValidator.PATIENT_CARE_REPORT__PATIENT_CARE_REPORT_CODE_P,
+             EmspcrPlugin.INSTANCE.getString("PatientCareReportCodeP"),
+             new Object [] { patientCareReport }));
+      }
+      
+      if (context != null) {
+        // generate a pass token for my dependent constraints to short-circuit or filter results
+        @SuppressWarnings("unchecked")
+        Collection<Object> passToken = (Collection<Object>) context.get("org.openhealthtools.mdht.uml.cda.emspcr.PatientCareReportCodeP");
+        if (passToken == null) {
+          // anticipate a reasonably healthy model
+          passToken = new java.util.ArrayList<Object>(3);
+          context.put("org.openhealthtools.mdht.uml.cda.emspcr.PatientCareReportCodeP", passToken);
+        }
+        passToken.add(patientCareReport);
+      }
+       
+      return false;
+    }
+    return true;
+  }
+
+  /**
    * The cached OCL expression body for the '{@link #validatePatientCareReportCode(PatientCareReport, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Patient Care Report Code</em>}' operation.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
@@ -276,7 +352,9 @@ public class PatientCareReportOperations extends GeneralHeaderConstraintsOperati
    * @generated
    * @ordered
    */
-  protected static final String VALIDATE_PATIENT_CARE_REPORT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined())";
+  protected static final String VALIDATE_PATIENT_CARE_REPORT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and "+
+"let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in "+
+"value.code = '67796-3' and value.codeSystem = '2.16.840.1.113883.6.1')";
 
   /**
    * The cached OCL invariant for the '{@link #validatePatientCareReportCode(PatientCareReport, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Patient Care Report Code</em>}' invariant operation.
@@ -294,7 +372,6 @@ public class PatientCareReportOperations extends GeneralHeaderConstraintsOperati
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * (self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined())
    * @param patientCareReport The receiving '<em><b>Patient Care Report</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -304,6 +381,12 @@ public class PatientCareReportOperations extends GeneralHeaderConstraintsOperati
   
   public static  boolean validatePatientCareReportCode(PatientCareReport patientCareReport, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
+  	  
+    Object passToken = (context == null) ? null : context.get("org.openhealthtools.mdht.uml.cda.emspcr.PatientCareReportCodeP");
+    if ((passToken instanceof Collection<?>) && ((Collection<?>) passToken).contains(patientCareReport)) {
+      // I have a free pass to short-circuit
+      return true;
+    }
   	  
     if (VALIDATE_PATIENT_CARE_REPORT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
@@ -329,18 +412,6 @@ public class PatientCareReportOperations extends GeneralHeaderConstraintsOperati
              EmspcrPlugin.INSTANCE.getString("PatientCareReportCode"),
              new Object [] { patientCareReport }));
       }
-      
-      if (context != null) {
-        // generate a pass token for my dependent constraints to short-circuit or filter results
-        @SuppressWarnings("unchecked")
-        Collection<Object> passToken = (Collection<Object>) context.get("org.openhealthtools.mdht.uml.cda.emspcr.PatientCareReportCode");
-        if (passToken == null) {
-          // anticipate a reasonably healthy model
-          passToken = new java.util.ArrayList<Object>(3);
-          context.put("org.openhealthtools.mdht.uml.cda.emspcr.PatientCareReportCode", passToken);
-        }
-        passToken.add(patientCareReport);
-      }
        
       return false;
     }
@@ -351,7 +422,6 @@ public class PatientCareReportOperations extends GeneralHeaderConstraintsOperati
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * (self.versionNumber.oclIsUndefined() or self.versionNumber.isNullFlavorUndefined()) implies (not self.versionNumber.oclIsUndefined())
    * @param patientCareReport The receiving '<em><b>Patient Care Report</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -396,7 +466,6 @@ public class PatientCareReportOperations extends GeneralHeaderConstraintsOperati
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * (self.id.oclIsUndefined() or self.id.isNullFlavorUndefined()) implies (not self.id.oclIsUndefined())
    * @param patientCareReport The receiving '<em><b>Patient Care Report</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -505,7 +574,6 @@ public class PatientCareReportOperations extends GeneralHeaderConstraintsOperati
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * (self.title.oclIsUndefined() or self.title.isNullFlavorUndefined()) implies (self.title.getText() = 'EMS Patient Care Report')
    * @param patientCareReport The receiving '<em><b>Patient Care Report</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -572,7 +640,6 @@ public class PatientCareReportOperations extends GeneralHeaderConstraintsOperati
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.author->one(author : cda::Author | not author.oclIsUndefined() and author.oclIsKindOf(cda::Author))
    * @param patientCareReport The receiving '<em><b>Patient Care Report</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -617,7 +684,6 @@ public class PatientCareReportOperations extends GeneralHeaderConstraintsOperati
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.recordTarget->one(recordTarget : cda::RecordTarget | not recordTarget.oclIsUndefined() and recordTarget.oclIsKindOf(consol::GeneralHeaderConstraints::RecordTarget))
    * @param patientCareReport The receiving '<em><b>Patient Care Report</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -662,7 +728,6 @@ public class PatientCareReportOperations extends GeneralHeaderConstraintsOperati
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.author->one(author : cda::Author | not author.oclIsUndefined() and author.oclIsKindOf(cda::Author))
    * @param patientCareReport The receiving '<em><b>Patient Care Report</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -707,7 +772,6 @@ public class PatientCareReportOperations extends GeneralHeaderConstraintsOperati
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(emspcr::EMSBillingSection))
    * @param patientCareReport The receiving '<em><b>Patient Care Report</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -752,7 +816,6 @@ public class PatientCareReportOperations extends GeneralHeaderConstraintsOperati
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(emspcr::EMSInjuryIncidentDescriptionSection))
    * @param patientCareReport The receiving '<em><b>Patient Care Report</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -797,7 +860,6 @@ public class PatientCareReportOperations extends GeneralHeaderConstraintsOperati
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(emspcr::EMSCurrentMedicationSection))
    * @param patientCareReport The receiving '<em><b>Patient Care Report</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -842,7 +904,6 @@ public class PatientCareReportOperations extends GeneralHeaderConstraintsOperati
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(emspcr::EMSCardiacArrestEventSection))
    * @param patientCareReport The receiving '<em><b>Patient Care Report</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -887,7 +948,6 @@ public class PatientCareReportOperations extends GeneralHeaderConstraintsOperati
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(emspcr::EMSAdvanceDirectivesSection))
    * @param patientCareReport The receiving '<em><b>Patient Care Report</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -932,7 +992,6 @@ public class PatientCareReportOperations extends GeneralHeaderConstraintsOperati
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(emspcr::EMSAllergiesAndAdverseReactionsSection))
    * @param patientCareReport The receiving '<em><b>Patient Care Report</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -977,7 +1036,6 @@ public class PatientCareReportOperations extends GeneralHeaderConstraintsOperati
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(emspcr::EMSPastMedicalHistorySection))
    * @param patientCareReport The receiving '<em><b>Patient Care Report</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -1022,7 +1080,6 @@ public class PatientCareReportOperations extends GeneralHeaderConstraintsOperati
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(emspcr::EMSSocialHistorySection))
    * @param patientCareReport The receiving '<em><b>Patient Care Report</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -1067,7 +1124,6 @@ public class PatientCareReportOperations extends GeneralHeaderConstraintsOperati
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(emspcr::EMSPhysicalAssessmentSection))
    * @param patientCareReport The receiving '<em><b>Patient Care Report</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -1112,7 +1168,6 @@ public class PatientCareReportOperations extends GeneralHeaderConstraintsOperati
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(emspcr::EMSMedicationsAdministeredSection))
    * @param patientCareReport The receiving '<em><b>Patient Care Report</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -1157,7 +1212,6 @@ public class PatientCareReportOperations extends GeneralHeaderConstraintsOperati
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(emspcr::EMSProceduresPerformedSection))
    * @param patientCareReport The receiving '<em><b>Patient Care Report</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -1202,7 +1256,6 @@ public class PatientCareReportOperations extends GeneralHeaderConstraintsOperati
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(emspcr::EMSPatientCareNarrativeSection))
    * @param patientCareReport The receiving '<em><b>Patient Care Report</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -1247,7 +1300,6 @@ public class PatientCareReportOperations extends GeneralHeaderConstraintsOperati
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(emspcr::EMSSceneSection))
    * @param patientCareReport The receiving '<em><b>Patient Care Report</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -1292,7 +1344,6 @@ public class PatientCareReportOperations extends GeneralHeaderConstraintsOperati
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.componentOf->one(componentOf : cda::Component1 | not componentOf.oclIsUndefined() and componentOf.oclIsKindOf(cda::Component1))
    * @param patientCareReport The receiving '<em><b>Patient Care Report</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -1337,7 +1388,6 @@ public class PatientCareReportOperations extends GeneralHeaderConstraintsOperati
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(emspcr::EMSDispatchSection))
    * @param patientCareReport The receiving '<em><b>Patient Care Report</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -1382,7 +1432,6 @@ public class PatientCareReportOperations extends GeneralHeaderConstraintsOperati
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(emspcr::EMSDispositionSection))
    * @param patientCareReport The receiving '<em><b>Patient Care Report</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -1427,7 +1476,6 @@ public class PatientCareReportOperations extends GeneralHeaderConstraintsOperati
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(emspcr::EMSPersonnelAdverseEventSection))
    * @param patientCareReport The receiving '<em><b>Patient Care Report</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -1472,7 +1520,6 @@ public class PatientCareReportOperations extends GeneralHeaderConstraintsOperati
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(emspcr::EMSProtocolSection))
    * @param patientCareReport The receiving '<em><b>Patient Care Report</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -1517,7 +1564,6 @@ public class PatientCareReportOperations extends GeneralHeaderConstraintsOperati
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(emspcr::EMSResponseSection))
    * @param patientCareReport The receiving '<em><b>Patient Care Report</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -1562,7 +1608,6 @@ public class PatientCareReportOperations extends GeneralHeaderConstraintsOperati
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(emspcr::EMSSituationSection))
    * @param patientCareReport The receiving '<em><b>Patient Care Report</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -1607,7 +1652,6 @@ public class PatientCareReportOperations extends GeneralHeaderConstraintsOperati
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(emspcr::EMSTimesSection))
    * @param patientCareReport The receiving '<em><b>Patient Care Report</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -1652,7 +1696,6 @@ public class PatientCareReportOperations extends GeneralHeaderConstraintsOperati
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(emspcr::EMSVitalSignsSection))
    * @param patientCareReport The receiving '<em><b>Patient Care Report</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -1697,7 +1740,6 @@ public class PatientCareReportOperations extends GeneralHeaderConstraintsOperati
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.author->one(author : cda::Author | not author.oclIsUndefined() and author.oclIsKindOf(cda::Author))
    * @param patientCareReport The receiving '<em><b>Patient Care Report</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -1742,7 +1784,6 @@ public class PatientCareReportOperations extends GeneralHeaderConstraintsOperati
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.custodian->one(custodian : cda::Custodian | not custodian.oclIsUndefined() and custodian.oclIsKindOf(consol::GeneralHeaderConstraints::Custodian))
    * @param patientCareReport The receiving '<em><b>Patient Care Report</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -1787,7 +1828,6 @@ public class PatientCareReportOperations extends GeneralHeaderConstraintsOperati
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.documentationOf->one(documentationOf : cda::DocumentationOf | not documentationOf.oclIsUndefined() and documentationOf.oclIsKindOf(cda::DocumentationOf))
    * @param patientCareReport The receiving '<em><b>Patient Care Report</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -1832,7 +1872,6 @@ public class PatientCareReportOperations extends GeneralHeaderConstraintsOperati
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.relatedDocument->one(relatedDocument : cda::RelatedDocument | not relatedDocument.oclIsUndefined() and relatedDocument.oclIsKindOf(cda::RelatedDocument))
    * @param patientCareReport The receiving '<em><b>Patient Care Report</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -1881,7 +1920,7 @@ public class PatientCareReportOperations extends GeneralHeaderConstraintsOperati
    * @generated
    * @ordered
    */
-  protected static final String VALIDATE_PATIENT_CARE_REPORT_RECORD_TARGET__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.recordTarget->one(recordTarget : cda::RecordTarget | not recordTarget.oclIsUndefined() and recordTarget.oclIsKindOf(consol::GeneralHeaderConstraints::RecordTarget))";
+  protected static final String VALIDATE_PATIENT_CARE_REPORT_RECORD_TARGET__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.recordTarget->one(recordTarget : cda::RecordTarget | not recordTarget.oclIsUndefined() and recordTarget.oclIsKindOf(cda::RecordTarget))";
 
   /**
    * The cached OCL invariant for the '{@link #validatePatientCareReportRecordTarget(PatientCareReport, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Patient Care Report Record Target</em>}' invariant operation.
@@ -2406,7 +2445,7 @@ public class PatientCareReportOperations extends GeneralHeaderConstraintsOperati
    * @generated
    * @ordered
    */
-  protected static final String VALIDATE_PATIENT_CARE_REPORT_CUSTODIAN__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.custodian->one(custodian : cda::Custodian | not custodian.oclIsUndefined() and custodian.oclIsKindOf(consol::GeneralHeaderConstraints::Custodian))";
+  protected static final String VALIDATE_PATIENT_CARE_REPORT_CUSTODIAN__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.custodian->one(custodian : cda::Custodian | not custodian.oclIsUndefined() and custodian.oclIsKindOf(cda::Custodian))";
 
   /**
    * The cached OCL invariant for the '{@link #validatePatientCareReportCustodian(PatientCareReport, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Patient Care Report Custodian</em>}' invariant operation.
@@ -2487,7 +2526,6 @@ public class PatientCareReportOperations extends GeneralHeaderConstraintsOperati
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.participant->one(participant : cda::Participant1 | not participant.oclIsUndefined() and participant.oclIsKindOf(cda::Participant1))
    * @param patientCareReport The receiving '<em><b>Patient Care Report</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -2551,10 +2589,6 @@ public class PatientCareReportOperations extends GeneralHeaderConstraintsOperati
   /**
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * <!-- begin-model-doc -->
-   * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(emspcr::EMSBillingSection))->asSequence()->any(true).oclAsType(emspcr::EMSBillingSection)
-   * @param patientCareReport The receiving '<em><b>Patient Care Report</b></em>' model object.
-   * <!-- end-model-doc -->
    * @generated
    */
   
@@ -2563,7 +2597,7 @@ public class PatientCareReportOperations extends GeneralHeaderConstraintsOperati
     if (GET_BILLING__EOCL_QRY == null)
     {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
-      helper.setOperationContext(EmspcrPackage.Literals.PATIENT_CARE_REPORT, EmspcrPackage.Literals.PATIENT_CARE_REPORT.getEAllOperations().get(206));
+      helper.setOperationContext(EmspcrPackage.Literals.PATIENT_CARE_REPORT, EmspcrPackage.Literals.PATIENT_CARE_REPORT.getEAllOperations().get(207));
       try
       {
         GET_BILLING__EOCL_QRY = helper.createQuery(GET_BILLING__EOCL_EXP);
@@ -2600,10 +2634,6 @@ public class PatientCareReportOperations extends GeneralHeaderConstraintsOperati
   /**
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * <!-- begin-model-doc -->
-   * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(emspcr::EMSInjuryIncidentDescriptionSection))->asSequence()->any(true).oclAsType(emspcr::EMSInjuryIncidentDescriptionSection)
-   * @param patientCareReport The receiving '<em><b>Patient Care Report</b></em>' model object.
-   * <!-- end-model-doc -->
    * @generated
    */
   
@@ -2612,7 +2642,7 @@ public class PatientCareReportOperations extends GeneralHeaderConstraintsOperati
     if (GET_SECTION__EOCL_QRY == null)
     {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
-      helper.setOperationContext(EmspcrPackage.Literals.PATIENT_CARE_REPORT, EmspcrPackage.Literals.PATIENT_CARE_REPORT.getEAllOperations().get(207));
+      helper.setOperationContext(EmspcrPackage.Literals.PATIENT_CARE_REPORT, EmspcrPackage.Literals.PATIENT_CARE_REPORT.getEAllOperations().get(208));
       try
       {
         GET_SECTION__EOCL_QRY = helper.createQuery(GET_SECTION__EOCL_EXP);
@@ -2649,10 +2679,6 @@ public class PatientCareReportOperations extends GeneralHeaderConstraintsOperati
   /**
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * <!-- begin-model-doc -->
-   * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(emspcr::EMSCurrentMedicationSection))->asSequence()->any(true).oclAsType(emspcr::EMSCurrentMedicationSection)
-   * @param patientCareReport The receiving '<em><b>Patient Care Report</b></em>' model object.
-   * <!-- end-model-doc -->
    * @generated
    */
   
@@ -2661,7 +2687,7 @@ public class PatientCareReportOperations extends GeneralHeaderConstraintsOperati
     if (GET_EMS_CURRENT_MEDICATION__EOCL_QRY == null)
     {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
-      helper.setOperationContext(EmspcrPackage.Literals.PATIENT_CARE_REPORT, EmspcrPackage.Literals.PATIENT_CARE_REPORT.getEAllOperations().get(208));
+      helper.setOperationContext(EmspcrPackage.Literals.PATIENT_CARE_REPORT, EmspcrPackage.Literals.PATIENT_CARE_REPORT.getEAllOperations().get(209));
       try
       {
         GET_EMS_CURRENT_MEDICATION__EOCL_QRY = helper.createQuery(GET_EMS_CURRENT_MEDICATION__EOCL_EXP);
@@ -2698,10 +2724,6 @@ public class PatientCareReportOperations extends GeneralHeaderConstraintsOperati
   /**
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * <!-- begin-model-doc -->
-   * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(emspcr::EMSCardiacArrestEventSection))->asSequence()->any(true).oclAsType(emspcr::EMSCardiacArrestEventSection)
-   * @param patientCareReport The receiving '<em><b>Patient Care Report</b></em>' model object.
-   * <!-- end-model-doc -->
    * @generated
    */
   
@@ -2710,7 +2732,7 @@ public class PatientCareReportOperations extends GeneralHeaderConstraintsOperati
     if (GET_EMS_CARDIAC_ARREST_EVENT__EOCL_QRY == null)
     {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
-      helper.setOperationContext(EmspcrPackage.Literals.PATIENT_CARE_REPORT, EmspcrPackage.Literals.PATIENT_CARE_REPORT.getEAllOperations().get(209));
+      helper.setOperationContext(EmspcrPackage.Literals.PATIENT_CARE_REPORT, EmspcrPackage.Literals.PATIENT_CARE_REPORT.getEAllOperations().get(210));
       try
       {
         GET_EMS_CARDIAC_ARREST_EVENT__EOCL_QRY = helper.createQuery(GET_EMS_CARDIAC_ARREST_EVENT__EOCL_EXP);
@@ -2747,10 +2769,6 @@ public class PatientCareReportOperations extends GeneralHeaderConstraintsOperati
   /**
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * <!-- begin-model-doc -->
-   * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(emspcr::EMSAdvanceDirectivesSection))->asSequence()->any(true).oclAsType(emspcr::EMSAdvanceDirectivesSection)
-   * @param patientCareReport The receiving '<em><b>Patient Care Report</b></em>' model object.
-   * <!-- end-model-doc -->
    * @generated
    */
   
@@ -2759,7 +2777,7 @@ public class PatientCareReportOperations extends GeneralHeaderConstraintsOperati
     if (GET_EMS_ADVANCE_DIRECTIVES__EOCL_QRY == null)
     {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
-      helper.setOperationContext(EmspcrPackage.Literals.PATIENT_CARE_REPORT, EmspcrPackage.Literals.PATIENT_CARE_REPORT.getEAllOperations().get(210));
+      helper.setOperationContext(EmspcrPackage.Literals.PATIENT_CARE_REPORT, EmspcrPackage.Literals.PATIENT_CARE_REPORT.getEAllOperations().get(211));
       try
       {
         GET_EMS_ADVANCE_DIRECTIVES__EOCL_QRY = helper.createQuery(GET_EMS_ADVANCE_DIRECTIVES__EOCL_EXP);
@@ -2796,10 +2814,6 @@ public class PatientCareReportOperations extends GeneralHeaderConstraintsOperati
   /**
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * <!-- begin-model-doc -->
-   * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(emspcr::EMSAllergiesAndAdverseReactionsSection))->asSequence()->any(true).oclAsType(emspcr::EMSAllergiesAndAdverseReactionsSection)
-   * @param patientCareReport The receiving '<em><b>Patient Care Report</b></em>' model object.
-   * <!-- end-model-doc -->
    * @generated
    */
   
@@ -2808,7 +2822,7 @@ public class PatientCareReportOperations extends GeneralHeaderConstraintsOperati
     if (GET_EMS_ALLERGIES_AND_ADVERSE_REACTIONS_SECTION__EOCL_QRY == null)
     {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
-      helper.setOperationContext(EmspcrPackage.Literals.PATIENT_CARE_REPORT, EmspcrPackage.Literals.PATIENT_CARE_REPORT.getEAllOperations().get(211));
+      helper.setOperationContext(EmspcrPackage.Literals.PATIENT_CARE_REPORT, EmspcrPackage.Literals.PATIENT_CARE_REPORT.getEAllOperations().get(212));
       try
       {
         GET_EMS_ALLERGIES_AND_ADVERSE_REACTIONS_SECTION__EOCL_QRY = helper.createQuery(GET_EMS_ALLERGIES_AND_ADVERSE_REACTIONS_SECTION__EOCL_EXP);
@@ -2845,10 +2859,6 @@ public class PatientCareReportOperations extends GeneralHeaderConstraintsOperati
   /**
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * <!-- begin-model-doc -->
-   * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(emspcr::EMSPastMedicalHistorySection))->asSequence()->any(true).oclAsType(emspcr::EMSPastMedicalHistorySection)
-   * @param patientCareReport The receiving '<em><b>Patient Care Report</b></em>' model object.
-   * <!-- end-model-doc -->
    * @generated
    */
   
@@ -2857,7 +2867,7 @@ public class PatientCareReportOperations extends GeneralHeaderConstraintsOperati
     if (GET_EMS_PAST_MEDICAL_HISTORY__EOCL_QRY == null)
     {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
-      helper.setOperationContext(EmspcrPackage.Literals.PATIENT_CARE_REPORT, EmspcrPackage.Literals.PATIENT_CARE_REPORT.getEAllOperations().get(212));
+      helper.setOperationContext(EmspcrPackage.Literals.PATIENT_CARE_REPORT, EmspcrPackage.Literals.PATIENT_CARE_REPORT.getEAllOperations().get(213));
       try
       {
         GET_EMS_PAST_MEDICAL_HISTORY__EOCL_QRY = helper.createQuery(GET_EMS_PAST_MEDICAL_HISTORY__EOCL_EXP);
@@ -2894,10 +2904,6 @@ public class PatientCareReportOperations extends GeneralHeaderConstraintsOperati
   /**
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * <!-- begin-model-doc -->
-   * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(emspcr::EMSSocialHistorySection))->asSequence()->any(true).oclAsType(emspcr::EMSSocialHistorySection)
-   * @param patientCareReport The receiving '<em><b>Patient Care Report</b></em>' model object.
-   * <!-- end-model-doc -->
    * @generated
    */
   
@@ -2906,7 +2912,7 @@ public class PatientCareReportOperations extends GeneralHeaderConstraintsOperati
     if (GET_EMS_SOCIAL_HISTORY__EOCL_QRY == null)
     {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
-      helper.setOperationContext(EmspcrPackage.Literals.PATIENT_CARE_REPORT, EmspcrPackage.Literals.PATIENT_CARE_REPORT.getEAllOperations().get(213));
+      helper.setOperationContext(EmspcrPackage.Literals.PATIENT_CARE_REPORT, EmspcrPackage.Literals.PATIENT_CARE_REPORT.getEAllOperations().get(214));
       try
       {
         GET_EMS_SOCIAL_HISTORY__EOCL_QRY = helper.createQuery(GET_EMS_SOCIAL_HISTORY__EOCL_EXP);
@@ -2943,10 +2949,6 @@ public class PatientCareReportOperations extends GeneralHeaderConstraintsOperati
   /**
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * <!-- begin-model-doc -->
-   * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(emspcr::EMSPhysicalAssessmentSection))->asSequence()->any(true).oclAsType(emspcr::EMSPhysicalAssessmentSection)
-   * @param patientCareReport The receiving '<em><b>Patient Care Report</b></em>' model object.
-   * <!-- end-model-doc -->
    * @generated
    */
   
@@ -2955,7 +2957,7 @@ public class PatientCareReportOperations extends GeneralHeaderConstraintsOperati
     if (GET_EMS_PHYSICAL_ASSESSMENT_SECTION__EOCL_QRY == null)
     {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
-      helper.setOperationContext(EmspcrPackage.Literals.PATIENT_CARE_REPORT, EmspcrPackage.Literals.PATIENT_CARE_REPORT.getEAllOperations().get(214));
+      helper.setOperationContext(EmspcrPackage.Literals.PATIENT_CARE_REPORT, EmspcrPackage.Literals.PATIENT_CARE_REPORT.getEAllOperations().get(215));
       try
       {
         GET_EMS_PHYSICAL_ASSESSMENT_SECTION__EOCL_QRY = helper.createQuery(GET_EMS_PHYSICAL_ASSESSMENT_SECTION__EOCL_EXP);
@@ -2992,10 +2994,6 @@ public class PatientCareReportOperations extends GeneralHeaderConstraintsOperati
   /**
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * <!-- begin-model-doc -->
-   * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(emspcr::EMSMedicationsAdministeredSection))->asSequence()->any(true).oclAsType(emspcr::EMSMedicationsAdministeredSection)
-   * @param patientCareReport The receiving '<em><b>Patient Care Report</b></em>' model object.
-   * <!-- end-model-doc -->
    * @generated
    */
   
@@ -3004,7 +3002,7 @@ public class PatientCareReportOperations extends GeneralHeaderConstraintsOperati
     if (GET_EMS_MEDICATIONS_ADMINISTERED_SECTION__EOCL_QRY == null)
     {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
-      helper.setOperationContext(EmspcrPackage.Literals.PATIENT_CARE_REPORT, EmspcrPackage.Literals.PATIENT_CARE_REPORT.getEAllOperations().get(215));
+      helper.setOperationContext(EmspcrPackage.Literals.PATIENT_CARE_REPORT, EmspcrPackage.Literals.PATIENT_CARE_REPORT.getEAllOperations().get(216));
       try
       {
         GET_EMS_MEDICATIONS_ADMINISTERED_SECTION__EOCL_QRY = helper.createQuery(GET_EMS_MEDICATIONS_ADMINISTERED_SECTION__EOCL_EXP);
@@ -3041,10 +3039,6 @@ public class PatientCareReportOperations extends GeneralHeaderConstraintsOperati
   /**
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * <!-- begin-model-doc -->
-   * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(emspcr::EMSProceduresPerformedSection))->asSequence()->any(true).oclAsType(emspcr::EMSProceduresPerformedSection)
-   * @param patientCareReport The receiving '<em><b>Patient Care Report</b></em>' model object.
-   * <!-- end-model-doc -->
    * @generated
    */
   
@@ -3053,7 +3047,7 @@ public class PatientCareReportOperations extends GeneralHeaderConstraintsOperati
     if (GET_EMS_PROCEDURES_PERFORMED_SECTION__EOCL_QRY == null)
     {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
-      helper.setOperationContext(EmspcrPackage.Literals.PATIENT_CARE_REPORT, EmspcrPackage.Literals.PATIENT_CARE_REPORT.getEAllOperations().get(216));
+      helper.setOperationContext(EmspcrPackage.Literals.PATIENT_CARE_REPORT, EmspcrPackage.Literals.PATIENT_CARE_REPORT.getEAllOperations().get(217));
       try
       {
         GET_EMS_PROCEDURES_PERFORMED_SECTION__EOCL_QRY = helper.createQuery(GET_EMS_PROCEDURES_PERFORMED_SECTION__EOCL_EXP);
@@ -3090,10 +3084,6 @@ public class PatientCareReportOperations extends GeneralHeaderConstraintsOperati
   /**
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * <!-- begin-model-doc -->
-   * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(emspcr::EMSPatientCareNarrativeSection))->asSequence()->any(true).oclAsType(emspcr::EMSPatientCareNarrativeSection)
-   * @param patientCareReport The receiving '<em><b>Patient Care Report</b></em>' model object.
-   * <!-- end-model-doc -->
    * @generated
    */
   
@@ -3102,7 +3092,7 @@ public class PatientCareReportOperations extends GeneralHeaderConstraintsOperati
     if (GET_EMS_PATIENT_CARE_NARRATIVE__EOCL_QRY == null)
     {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
-      helper.setOperationContext(EmspcrPackage.Literals.PATIENT_CARE_REPORT, EmspcrPackage.Literals.PATIENT_CARE_REPORT.getEAllOperations().get(217));
+      helper.setOperationContext(EmspcrPackage.Literals.PATIENT_CARE_REPORT, EmspcrPackage.Literals.PATIENT_CARE_REPORT.getEAllOperations().get(218));
       try
       {
         GET_EMS_PATIENT_CARE_NARRATIVE__EOCL_QRY = helper.createQuery(GET_EMS_PATIENT_CARE_NARRATIVE__EOCL_EXP);
@@ -3139,10 +3129,6 @@ public class PatientCareReportOperations extends GeneralHeaderConstraintsOperati
   /**
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * <!-- begin-model-doc -->
-   * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(emspcr::EMSSceneSection))->asSequence()->any(true).oclAsType(emspcr::EMSSceneSection)
-   * @param patientCareReport The receiving '<em><b>Patient Care Report</b></em>' model object.
-   * <!-- end-model-doc -->
    * @generated
    */
   
@@ -3151,7 +3137,7 @@ public class PatientCareReportOperations extends GeneralHeaderConstraintsOperati
     if (GET_EMS_SCENE_SECTION__EOCL_QRY == null)
     {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
-      helper.setOperationContext(EmspcrPackage.Literals.PATIENT_CARE_REPORT, EmspcrPackage.Literals.PATIENT_CARE_REPORT.getEAllOperations().get(218));
+      helper.setOperationContext(EmspcrPackage.Literals.PATIENT_CARE_REPORT, EmspcrPackage.Literals.PATIENT_CARE_REPORT.getEAllOperations().get(219));
       try
       {
         GET_EMS_SCENE_SECTION__EOCL_QRY = helper.createQuery(GET_EMS_SCENE_SECTION__EOCL_EXP);
@@ -3188,10 +3174,6 @@ public class PatientCareReportOperations extends GeneralHeaderConstraintsOperati
   /**
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * <!-- begin-model-doc -->
-   * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(emspcr::EMSDispatchSection))->asSequence()->any(true).oclAsType(emspcr::EMSDispatchSection)
-   * @param patientCareReport The receiving '<em><b>Patient Care Report</b></em>' model object.
-   * <!-- end-model-doc -->
    * @generated
    */
   
@@ -3200,7 +3182,7 @@ public class PatientCareReportOperations extends GeneralHeaderConstraintsOperati
     if (GET_EMS_DISPATCH_SECTION__EOCL_QRY == null)
     {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
-      helper.setOperationContext(EmspcrPackage.Literals.PATIENT_CARE_REPORT, EmspcrPackage.Literals.PATIENT_CARE_REPORT.getEAllOperations().get(219));
+      helper.setOperationContext(EmspcrPackage.Literals.PATIENT_CARE_REPORT, EmspcrPackage.Literals.PATIENT_CARE_REPORT.getEAllOperations().get(220));
       try
       {
         GET_EMS_DISPATCH_SECTION__EOCL_QRY = helper.createQuery(GET_EMS_DISPATCH_SECTION__EOCL_EXP);
@@ -3237,10 +3219,6 @@ public class PatientCareReportOperations extends GeneralHeaderConstraintsOperati
   /**
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * <!-- begin-model-doc -->
-   * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(emspcr::EMSDispositionSection))->asSequence()->any(true).oclAsType(emspcr::EMSDispositionSection)
-   * @param patientCareReport The receiving '<em><b>Patient Care Report</b></em>' model object.
-   * <!-- end-model-doc -->
    * @generated
    */
   
@@ -3249,7 +3227,7 @@ public class PatientCareReportOperations extends GeneralHeaderConstraintsOperati
     if (GET_EMS_DISPOSITION_SECTION__EOCL_QRY == null)
     {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
-      helper.setOperationContext(EmspcrPackage.Literals.PATIENT_CARE_REPORT, EmspcrPackage.Literals.PATIENT_CARE_REPORT.getEAllOperations().get(220));
+      helper.setOperationContext(EmspcrPackage.Literals.PATIENT_CARE_REPORT, EmspcrPackage.Literals.PATIENT_CARE_REPORT.getEAllOperations().get(221));
       try
       {
         GET_EMS_DISPOSITION_SECTION__EOCL_QRY = helper.createQuery(GET_EMS_DISPOSITION_SECTION__EOCL_EXP);
@@ -3286,10 +3264,6 @@ public class PatientCareReportOperations extends GeneralHeaderConstraintsOperati
   /**
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * <!-- begin-model-doc -->
-   * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(emspcr::EMSPersonnelAdverseEventSection))->asSequence()->any(true).oclAsType(emspcr::EMSPersonnelAdverseEventSection)
-   * @param patientCareReport The receiving '<em><b>Patient Care Report</b></em>' model object.
-   * <!-- end-model-doc -->
    * @generated
    */
   
@@ -3298,7 +3272,7 @@ public class PatientCareReportOperations extends GeneralHeaderConstraintsOperati
     if (GET_EMS_PERSONNEL_ADVERSE_EVENT_SECTION__EOCL_QRY == null)
     {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
-      helper.setOperationContext(EmspcrPackage.Literals.PATIENT_CARE_REPORT, EmspcrPackage.Literals.PATIENT_CARE_REPORT.getEAllOperations().get(221));
+      helper.setOperationContext(EmspcrPackage.Literals.PATIENT_CARE_REPORT, EmspcrPackage.Literals.PATIENT_CARE_REPORT.getEAllOperations().get(222));
       try
       {
         GET_EMS_PERSONNEL_ADVERSE_EVENT_SECTION__EOCL_QRY = helper.createQuery(GET_EMS_PERSONNEL_ADVERSE_EVENT_SECTION__EOCL_EXP);
@@ -3335,10 +3309,6 @@ public class PatientCareReportOperations extends GeneralHeaderConstraintsOperati
   /**
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * <!-- begin-model-doc -->
-   * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(emspcr::EMSProtocolSection))->asSequence()->any(true).oclAsType(emspcr::EMSProtocolSection)
-   * @param patientCareReport The receiving '<em><b>Patient Care Report</b></em>' model object.
-   * <!-- end-model-doc -->
    * @generated
    */
   
@@ -3347,7 +3317,7 @@ public class PatientCareReportOperations extends GeneralHeaderConstraintsOperati
     if (GET_EMS_PROTOCOL_SECTION__EOCL_QRY == null)
     {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
-      helper.setOperationContext(EmspcrPackage.Literals.PATIENT_CARE_REPORT, EmspcrPackage.Literals.PATIENT_CARE_REPORT.getEAllOperations().get(222));
+      helper.setOperationContext(EmspcrPackage.Literals.PATIENT_CARE_REPORT, EmspcrPackage.Literals.PATIENT_CARE_REPORT.getEAllOperations().get(223));
       try
       {
         GET_EMS_PROTOCOL_SECTION__EOCL_QRY = helper.createQuery(GET_EMS_PROTOCOL_SECTION__EOCL_EXP);
@@ -3384,10 +3354,6 @@ public class PatientCareReportOperations extends GeneralHeaderConstraintsOperati
   /**
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * <!-- begin-model-doc -->
-   * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(emspcr::EMSResponseSection))->asSequence()->any(true).oclAsType(emspcr::EMSResponseSection)
-   * @param patientCareReport The receiving '<em><b>Patient Care Report</b></em>' model object.
-   * <!-- end-model-doc -->
    * @generated
    */
   
@@ -3396,7 +3362,7 @@ public class PatientCareReportOperations extends GeneralHeaderConstraintsOperati
     if (GET_EMS_RESPONSE_SECTION__EOCL_QRY == null)
     {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
-      helper.setOperationContext(EmspcrPackage.Literals.PATIENT_CARE_REPORT, EmspcrPackage.Literals.PATIENT_CARE_REPORT.getEAllOperations().get(223));
+      helper.setOperationContext(EmspcrPackage.Literals.PATIENT_CARE_REPORT, EmspcrPackage.Literals.PATIENT_CARE_REPORT.getEAllOperations().get(224));
       try
       {
         GET_EMS_RESPONSE_SECTION__EOCL_QRY = helper.createQuery(GET_EMS_RESPONSE_SECTION__EOCL_EXP);
@@ -3433,10 +3399,6 @@ public class PatientCareReportOperations extends GeneralHeaderConstraintsOperati
   /**
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * <!-- begin-model-doc -->
-   * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(emspcr::EMSSituationSection))->asSequence()->any(true).oclAsType(emspcr::EMSSituationSection)
-   * @param patientCareReport The receiving '<em><b>Patient Care Report</b></em>' model object.
-   * <!-- end-model-doc -->
    * @generated
    */
   
@@ -3445,7 +3407,7 @@ public class PatientCareReportOperations extends GeneralHeaderConstraintsOperati
     if (GET_EMS_SITUATION_SECTION__EOCL_QRY == null)
     {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
-      helper.setOperationContext(EmspcrPackage.Literals.PATIENT_CARE_REPORT, EmspcrPackage.Literals.PATIENT_CARE_REPORT.getEAllOperations().get(224));
+      helper.setOperationContext(EmspcrPackage.Literals.PATIENT_CARE_REPORT, EmspcrPackage.Literals.PATIENT_CARE_REPORT.getEAllOperations().get(225));
       try
       {
         GET_EMS_SITUATION_SECTION__EOCL_QRY = helper.createQuery(GET_EMS_SITUATION_SECTION__EOCL_EXP);
@@ -3482,10 +3444,6 @@ public class PatientCareReportOperations extends GeneralHeaderConstraintsOperati
   /**
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * <!-- begin-model-doc -->
-   * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(emspcr::EMSTimesSection))->asSequence()->any(true).oclAsType(emspcr::EMSTimesSection)
-   * @param patientCareReport The receiving '<em><b>Patient Care Report</b></em>' model object.
-   * <!-- end-model-doc -->
    * @generated
    */
   
@@ -3494,7 +3452,7 @@ public class PatientCareReportOperations extends GeneralHeaderConstraintsOperati
     if (GET_EMS_TIMES_SECTION__EOCL_QRY == null)
     {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
-      helper.setOperationContext(EmspcrPackage.Literals.PATIENT_CARE_REPORT, EmspcrPackage.Literals.PATIENT_CARE_REPORT.getEAllOperations().get(225));
+      helper.setOperationContext(EmspcrPackage.Literals.PATIENT_CARE_REPORT, EmspcrPackage.Literals.PATIENT_CARE_REPORT.getEAllOperations().get(226));
       try
       {
         GET_EMS_TIMES_SECTION__EOCL_QRY = helper.createQuery(GET_EMS_TIMES_SECTION__EOCL_EXP);
@@ -3531,10 +3489,6 @@ public class PatientCareReportOperations extends GeneralHeaderConstraintsOperati
   /**
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * <!-- begin-model-doc -->
-   * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(emspcr::EMSVitalSignsSection))->asSequence()->any(true).oclAsType(emspcr::EMSVitalSignsSection)
-   * @param patientCareReport The receiving '<em><b>Patient Care Report</b></em>' model object.
-   * <!-- end-model-doc -->
    * @generated
    */
   
@@ -3543,7 +3497,7 @@ public class PatientCareReportOperations extends GeneralHeaderConstraintsOperati
     if (GET_EMS_VITAL_SIGNS_SECTION__EOCL_QRY == null)
     {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
-      helper.setOperationContext(EmspcrPackage.Literals.PATIENT_CARE_REPORT, EmspcrPackage.Literals.PATIENT_CARE_REPORT.getEAllOperations().get(226));
+      helper.setOperationContext(EmspcrPackage.Literals.PATIENT_CARE_REPORT, EmspcrPackage.Literals.PATIENT_CARE_REPORT.getEAllOperations().get(227));
       try
       {
         GET_EMS_VITAL_SIGNS_SECTION__EOCL_QRY = helper.createQuery(GET_EMS_VITAL_SIGNS_SECTION__EOCL_EXP);
@@ -3583,7 +3537,6 @@ public class PatientCareReportOperations extends GeneralHeaderConstraintsOperati
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.17.3.10.1')
    * @param patientCareReport The receiving '<em><b>Patient Care Report</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -3616,83 +3569,6 @@ public class PatientCareReportOperations extends GeneralHeaderConstraintsOperati
              EmspcrValidator.DIAGNOSTIC_SOURCE,
              EmspcrValidator.PATIENT_CARE_REPORT__GENERAL_HEADER_CONSTRAINTS_TEMPLATE_ID,
              org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "GeneralHeaderConstraintsTemplateId", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(patientCareReport, context) }),
-             new Object [] { patientCareReport }));
-      }
-       
-      return false;
-    }
-    return true;
-  }
-
-  /**
-   * The cached OCL expression body for the '{@link #validateGeneralHeaderConstraintsCode(PatientCareReport, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate General Header Constraints Code</em>}' operation.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @see #validateGeneralHeaderConstraintsCode(PatientCareReport, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-   * @generated
-   * @ordered
-   */
-  protected static final String VALIDATE_GENERAL_HEADER_CONSTRAINTS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and "+
-"let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in "+
-"value.code = '67796-3' and value.codeSystem = '2.16.840.1.113883.6.1')";
-
-  /**
-   * The cached OCL invariant for the '{@link #validateGeneralHeaderConstraintsCode(PatientCareReport, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate General Header Constraints Code</em>}' invariant operation.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @see #validateGeneralHeaderConstraintsCode(PatientCareReport, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-   * @generated
-   * @ordered
-   */
-  
-  protected static Constraint VALIDATE_GENERAL_HEADER_CONSTRAINTS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-  
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * <!-- begin-model-doc -->
-   * (self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and 
-   * let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in 
-   * value.code = '67796-3' and value.codeSystem = '2.16.840.1.113883.6.1')
-   * @param patientCareReport The receiving '<em><b>Patient Care Report</b></em>' model object.
-   * @param diagnostics The chain of diagnostics to which problems are to be appended.
-   * @param context The cache of context-specific information.
-   * <!-- end-model-doc -->
-   * @generated
-   */
-  
-  public static  boolean validateGeneralHeaderConstraintsCode(PatientCareReport patientCareReport, DiagnosticChain diagnostics, Map<Object, Object> context)
-  {
-  	  
-    Object passToken = (context == null) ? null : context.get("org.openhealthtools.mdht.uml.cda.emspcr.PatientCareReportCode");
-    if ((passToken instanceof Collection<?>) && ((Collection<?>) passToken).contains(patientCareReport)) {
-      // I have a free pass to short-circuit
-      return true;
-    }
-  	  
-    if (VALIDATE_GENERAL_HEADER_CONSTRAINTS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-      OCL.Helper helper = EOCL_ENV.createOCLHelper();
-      helper.setContext(EmspcrPackage.Literals.PATIENT_CARE_REPORT);
-      try
-      {
-        VALIDATE_GENERAL_HEADER_CONSTRAINTS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_GENERAL_HEADER_CONSTRAINTS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-      }
-      catch (ParserException pe)
-      {
-        throw new UnsupportedOperationException(pe.getLocalizedMessage());
-      }
-    }
-    if (!EOCL_ENV.createQuery(VALIDATE_GENERAL_HEADER_CONSTRAINTS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(patientCareReport))
-    {
-      if (diagnostics != null)
-      {
-        diagnostics.add
-          (new BasicDiagnostic
-            (Diagnostic.ERROR,
-             EmspcrValidator.DIAGNOSTIC_SOURCE,
-             EmspcrValidator.PATIENT_CARE_REPORT__GENERAL_HEADER_CONSTRAINTS_CODE,
-             EmspcrPlugin.INSTANCE.getString("GeneralHeaderConstraintsCode"),
              new Object [] { patientCareReport }));
       }
        

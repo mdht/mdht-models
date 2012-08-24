@@ -10,6 +10,7 @@
  *******************************************************************************/
 package org.openhealthtools.mdht.uml.cda.phcr.anthrax.impl;
 
+import java.lang.Iterable;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
@@ -17,6 +18,8 @@ import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.common.util.EList;
 import org.eclipse.emf.ecore.EClass;
 
+import org.eclipse.emf.ecore.EObject;
+import org.openhealthtools.mdht.emf.runtime.util.Initializer;
 import org.openhealthtools.mdht.uml.cda.phcr.anthrax.AnthraxPackage;
 import org.openhealthtools.mdht.uml.cda.phcr.anthrax.AnthraxTherapeuticRegimenAct;
 import org.openhealthtools.mdht.uml.cda.phcr.anthrax.AnthraxTreatmentGivenSubstanceAdministration;
@@ -39,77 +42,86 @@ import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
  */
 public class AnthraxTherapeuticRegimenActImpl extends TherapeuticRegimenActImpl implements AnthraxTherapeuticRegimenAct {
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	protected AnthraxTherapeuticRegimenActImpl() {
-		super();
-	}
+    super();
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	@Override
 	protected EClass eStaticClass() {
-		return AnthraxPackage.Literals.ANTHRAX_THERAPEUTIC_REGIMEN_ACT;
-	}
+    return AnthraxPackage.Literals.ANTHRAX_THERAPEUTIC_REGIMEN_ACT;
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateAnthraxTherapeuticRegimenActAnthraxTreatmentGivenSubstanceAdministration(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return AnthraxTherapeuticRegimenActOperations.validateAnthraxTherapeuticRegimenActAnthraxTreatmentGivenSubstanceAdministration(this, diagnostics, context);
-	}
+    return AnthraxTherapeuticRegimenActOperations.validateAnthraxTherapeuticRegimenActAnthraxTreatmentGivenSubstanceAdministration(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateAnthraxTherapeuticRegimenActAnthraxTreatmentNotGivenSubstanceAdministration(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return AnthraxTherapeuticRegimenActOperations.validateAnthraxTherapeuticRegimenActAnthraxTreatmentNotGivenSubstanceAdministration(this, diagnostics, context);
-	}
+    return AnthraxTherapeuticRegimenActOperations.validateAnthraxTherapeuticRegimenActAnthraxTreatmentNotGivenSubstanceAdministration(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public EList<AnthraxTreatmentGivenSubstanceAdministration> getAnthraxTreatmentGivenSubstanceAdministrations() {
-		return AnthraxTherapeuticRegimenActOperations.getAnthraxTreatmentGivenSubstanceAdministrations(this);
-	}
+    return AnthraxTherapeuticRegimenActOperations.getAnthraxTreatmentGivenSubstanceAdministrations(this);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public EList<AnthraxTreatmentNotGivenSubstanceAdministration> getAnthraxTreatmentNotGivenSubstanceAdministrations() {
-		return AnthraxTherapeuticRegimenActOperations.getAnthraxTreatmentNotGivenSubstanceAdministrations(this);
-	}
+    return AnthraxTherapeuticRegimenActOperations.getAnthraxTreatmentNotGivenSubstanceAdministrations(this);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	@Override
 	public boolean validateTherapeuticRegimenActTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return AnthraxTherapeuticRegimenActOperations.validateTherapeuticRegimenActTemplateId(this, diagnostics, context);
-	}
+    return AnthraxTherapeuticRegimenActOperations.validateTherapeuticRegimenActTemplateId(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public AnthraxTherapeuticRegimenAct init() {
-    	CDAUtil.init(this);
-    	return this;
-	}
+      return Initializer.Util.init(this);
+  }
+
+  /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    public AnthraxTherapeuticRegimenAct init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
 } //AnthraxTherapeuticRegimenActImpl

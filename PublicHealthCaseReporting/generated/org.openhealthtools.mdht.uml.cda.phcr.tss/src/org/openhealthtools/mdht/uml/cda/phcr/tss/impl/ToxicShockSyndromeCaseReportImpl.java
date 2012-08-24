@@ -10,10 +10,13 @@
  *******************************************************************************/
 package org.openhealthtools.mdht.uml.cda.phcr.tss.impl;
 
+import java.lang.Iterable;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.ecore.EClass;
+import org.eclipse.emf.ecore.EObject;
+import org.openhealthtools.mdht.emf.runtime.util.Initializer;
 import org.openhealthtools.mdht.uml.cda.phcr.impl.PublicHealthCaseReportImpl;
 import org.openhealthtools.mdht.uml.cda.phcr.tss.ToxicShockSyndromeCaseReport;
 import org.openhealthtools.mdht.uml.cda.phcr.tss.TssPhcrClinicalInformationSection;
@@ -33,86 +36,95 @@ import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
  */
 public class ToxicShockSyndromeCaseReportImpl extends PublicHealthCaseReportImpl implements ToxicShockSyndromeCaseReport {
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	protected ToxicShockSyndromeCaseReportImpl() {
-		super();
-	}
+    super();
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	@Override
 	protected EClass eStaticClass() {
-		return tssPackage.Literals.TOXIC_SHOCK_SYNDROME_CASE_REPORT;
-	}
+    return tssPackage.Literals.TOXIC_SHOCK_SYNDROME_CASE_REPORT;
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateToxicShockSyndromeCaseReportTitle(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ToxicShockSyndromeCaseReportOperations.validateToxicShockSyndromeCaseReportTitle(this, diagnostics, context);
-	}
+    return ToxicShockSyndromeCaseReportOperations.validateToxicShockSyndromeCaseReportTitle(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateToxicShockSyndromeCaseReportTssPhcrClinicalInformationSection(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ToxicShockSyndromeCaseReportOperations.validateToxicShockSyndromeCaseReportTssPhcrClinicalInformationSection(this, diagnostics, context);
-	}
+    return ToxicShockSyndromeCaseReportOperations.validateToxicShockSyndromeCaseReportTssPhcrClinicalInformationSection(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateToxicShockSyndromeCaseReportTssPhcrRelevantDxTestsSection(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ToxicShockSyndromeCaseReportOperations.validateToxicShockSyndromeCaseReportTssPhcrRelevantDxTestsSection(this, diagnostics, context);
-	}
+    return ToxicShockSyndromeCaseReportOperations.validateToxicShockSyndromeCaseReportTssPhcrRelevantDxTestsSection(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public TssPhcrClinicalInformationSection getTssPhcrClinicalInformationSection() {
-		return ToxicShockSyndromeCaseReportOperations.getTssPhcrClinicalInformationSection(this);
-	}
+    return ToxicShockSyndromeCaseReportOperations.getTssPhcrClinicalInformationSection(this);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public TssPhcrRelevantDxTestsSection getTssPhcrRelevantDxTestsSection() {
-		return ToxicShockSyndromeCaseReportOperations.getTssPhcrRelevantDxTestsSection(this);
-	}
+    return ToxicShockSyndromeCaseReportOperations.getTssPhcrRelevantDxTestsSection(this);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	@Override
 	public boolean validatePublicHealthCaseReportTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ToxicShockSyndromeCaseReportOperations.validatePublicHealthCaseReportTemplateId(this, diagnostics, context);
-	}
+    return ToxicShockSyndromeCaseReportOperations.validatePublicHealthCaseReportTemplateId(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public ToxicShockSyndromeCaseReport init() {
-    	CDAUtil.init(this);
-    	return this;
-	}
+      return Initializer.Util.init(this);
+  }
+
+  /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    public ToxicShockSyndromeCaseReport init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
 } //ToxicShockSyndromeCaseReportImpl

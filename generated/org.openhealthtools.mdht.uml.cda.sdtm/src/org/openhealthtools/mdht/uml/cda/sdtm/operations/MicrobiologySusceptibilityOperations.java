@@ -51,22 +51,29 @@ import org.openhealthtools.mdht.uml.cda.sdtm.util.SdtmValidator;
  *   <li>{@link org.openhealthtools.mdht.uml.cda.sdtm.MicrobiologySusceptibility#validateMicrobiologySusceptibilityStatusCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Microbiology Susceptibility Status Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.sdtm.MicrobiologySusceptibility#validateMicrobiologySusceptibilityValue(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Microbiology Susceptibility Value</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.sdtm.MicrobiologySusceptibility#validateMicrobiologySusceptibilityEffectiveTime(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Microbiology Susceptibility Effective Time</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.sdtm.MicrobiologySusceptibility#validateMicrobiologySusceptibilityInterpretationCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Microbiology Susceptibility Interpretation Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.sdtm.MicrobiologySusceptibility#validateMicrobiologySusceptibilityEventStudyDay(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Microbiology Susceptibility Event Study Day</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.sdtm.MicrobiologySusceptibility#validateMicrobiologySusceptibilityTimingReference(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Microbiology Susceptibility Timing Reference</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.sdtm.MicrobiologySusceptibility#validateMicrobiologySusceptibilityGroupIdentifier(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Microbiology Susceptibility Group Identifier</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.sdtm.MicrobiologySusceptibility#validateMicrobiologySusceptibilityMicrobiologySusceptibilityFindingCategoryAssociation(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Microbiology Susceptibility Microbiology Susceptibility Finding Category Association</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.sdtm.MicrobiologySusceptibility#validateMicrobiologySusceptibilityMicrobiologySusceptibilityFindingSubCategoryAssociation(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Microbiology Susceptibility Microbiology Susceptibility Finding Sub Category Association</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.sdtm.MicrobiologySusceptibility#validateMicrobiologySusceptibilityNonPerformanceReason(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Microbiology Susceptibility Non Performance Reason</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.sdtm.MicrobiologySusceptibility#validateMicrobiologySusceptibilityBaselineIndicator(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Microbiology Susceptibility Baseline Indicator</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.sdtm.MicrobiologySusceptibility#validateMicrobiologySusceptibilityDerivedDataIndicator(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Microbiology Susceptibility Derived Data Indicator</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.sdtm.MicrobiologySusceptibility#validateMicrobiologySusceptibilitymicrobiologySusceptibilityFindingCategoryAssociationmicrobiologySusceptibilityFindingCategoryClassCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Microbiology Susceptibilitymicrobiology Susceptibility Finding Category Associationmicrobiology Susceptibility Finding Category Class Code</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.sdtm.MicrobiologySusceptibility#validateMicrobiologySusceptibilitymicrobiologySusceptibilityFindingCategoryAssociationmicrobiologySusceptibilityFindingCategoryCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Microbiology Susceptibilitymicrobiology Susceptibility Finding Category Associationmicrobiology Susceptibility Finding Category Code</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.sdtm.MicrobiologySusceptibility#validateMicrobiologySusceptibilitymicrobiologySusceptibilityFindingCategoryAssociationmicrobiologySusceptibilityFindingCategoryMoodCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Microbiology Susceptibilitymicrobiology Susceptibility Finding Category Associationmicrobiology Susceptibility Finding Category Mood Code</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.sdtm.MicrobiologySusceptibility#validateMicrobiologySusceptibilitymicrobiologySusceptibilityFindingCategoryAssociationmicrobiologySusceptibilityFindingCategoryValue(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Microbiology Susceptibilitymicrobiology Susceptibility Finding Category Associationmicrobiology Susceptibility Finding Category Value</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.sdtm.MicrobiologySusceptibility#validateMicrobiologySusceptibilitymicrobiologySusceptibilityFindingCategoryAssociationTypeCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Microbiology Susceptibilitymicrobiology Susceptibility Finding Category Association Type Code</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.sdtm.MicrobiologySusceptibility#validateMicrobiologySusceptibilitymicrobiologySusceptibilityFindingCategoryAssociationMicrobiologySusceptibilityFindingCategory(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Microbiology Susceptibilitymicrobiology Susceptibility Finding Category Association Microbiology Susceptibility Finding Category</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.sdtm.MicrobiologySusceptibility#validateMicrobiologySusceptibilitymicrobiologySusceptibilityFindingSubCategoryAssociationmicrobiologySusceptibilityFindingSubCategoryClassCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Microbiology Susceptibilitymicrobiology Susceptibility Finding Sub Category Associationmicrobiology Susceptibility Finding Sub Category Class Code</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.sdtm.MicrobiologySusceptibility#validateMicrobiologySusceptibilitymicrobiologySusceptibilityFindingSubCategoryAssociationmicrobiologySusceptibilityFindingSubCategoryCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Microbiology Susceptibilitymicrobiology Susceptibility Finding Sub Category Associationmicrobiology Susceptibility Finding Sub Category Code</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.sdtm.MicrobiologySusceptibility#validateMicrobiologySusceptibilitymicrobiologySusceptibilityFindingSubCategoryAssociationmicrobiologySusceptibilityFindingSubCategoryMoodCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Microbiology Susceptibilitymicrobiology Susceptibility Finding Sub Category Associationmicrobiology Susceptibility Finding Sub Category Mood Code</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.sdtm.MicrobiologySusceptibility#validateMicrobiologySusceptibilitymicrobiologySusceptibilityFindingSubCategoryAssociationmicrobiologySusceptibilityFindingSubCategoryValue(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Microbiology Susceptibilitymicrobiology Susceptibility Finding Sub Category Associationmicrobiology Susceptibility Finding Sub Category Value</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.sdtm.MicrobiologySusceptibility#validateMicrobiologySusceptibilitymicrobiologySusceptibilityFindingSubCategoryAssociationTypeCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Microbiology Susceptibilitymicrobiology Susceptibility Finding Sub Category Association Type Code</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.sdtm.MicrobiologySusceptibility#validateMicrobiologySusceptibilitymicrobiologySusceptibilityFindingSubCategoryAssociationMicrobiologySusceptibilityFindingSubCategory(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Microbiology Susceptibilitymicrobiology Susceptibility Finding Sub Category Association Microbiology Susceptibility Finding Sub Category</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.sdtm.MicrobiologySusceptibility#getEventStudyDay() <em>Get Event Study Day</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.sdtm.MicrobiologySusceptibility#getTimingReference() <em>Get Timing Reference</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.sdtm.MicrobiologySusceptibility#getGroupIdentifier() <em>Get Group Identifier</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.sdtm.MicrobiologySusceptibility#getNonPerformanceReason() <em>Get Non Performance Reason</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.sdtm.MicrobiologySusceptibility#getBaselineIndicator() <em>Get Baseline Indicator</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.sdtm.MicrobiologySusceptibility#getDerivedDataIndicator() <em>Get Derived Data Indicator</em>}</li>
  * </ul>
  * </p>
  *
@@ -109,7 +116,6 @@ public class MicrobiologySusceptibilityOperations extends ClinicalStatementOpera
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.23.39')
    * @param microbiologySusceptibility The receiving '<em><b>Microbiology Susceptibility</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -119,6 +125,7 @@ public class MicrobiologySusceptibilityOperations extends ClinicalStatementOpera
   
   public static  boolean validateMicrobiologySusceptibilityTemplateId(MicrobiologySusceptibility microbiologySusceptibility, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
+  	  
     if (VALIDATE_MICROBIOLOGY_SUSCEPTIBILITY_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(SdtmPackage.Literals.MICROBIOLOGY_SUSCEPTIBILITY);
@@ -143,6 +150,7 @@ public class MicrobiologySusceptibilityOperations extends ClinicalStatementOpera
              org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "MicrobiologySusceptibilityTemplateId", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(microbiologySusceptibility, context) }),
              new Object [] { microbiologySusceptibility }));
       }
+       
       return false;
     }
     return true;
@@ -174,7 +182,6 @@ public class MicrobiologySusceptibilityOperations extends ClinicalStatementOpera
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.classCode=vocab::ActClassObservation::OBS
    * @param microbiologySusceptibility The receiving '<em><b>Microbiology Susceptibility</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -184,6 +191,7 @@ public class MicrobiologySusceptibilityOperations extends ClinicalStatementOpera
   
   public static  boolean validateMicrobiologySusceptibilityClassCode(MicrobiologySusceptibility microbiologySusceptibility, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
+  	  
     if (VALIDATE_MICROBIOLOGY_SUSCEPTIBILITY_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(SdtmPackage.Literals.MICROBIOLOGY_SUSCEPTIBILITY);
@@ -208,6 +216,7 @@ public class MicrobiologySusceptibilityOperations extends ClinicalStatementOpera
              org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "MicrobiologySusceptibilityClassCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(microbiologySusceptibility, context) }),
              new Object [] { microbiologySusceptibility }));
       }
+       
       return false;
     }
     return true;
@@ -239,7 +248,6 @@ public class MicrobiologySusceptibilityOperations extends ClinicalStatementOpera
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * (self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined())
    * @param microbiologySusceptibility The receiving '<em><b>Microbiology Susceptibility</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -249,6 +257,7 @@ public class MicrobiologySusceptibilityOperations extends ClinicalStatementOpera
   
   public static  boolean validateMicrobiologySusceptibilityCode(MicrobiologySusceptibility microbiologySusceptibility, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
+  	  
     if (VALIDATE_MICROBIOLOGY_SUSCEPTIBILITY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(SdtmPackage.Literals.MICROBIOLOGY_SUSCEPTIBILITY);
@@ -273,6 +282,7 @@ public class MicrobiologySusceptibilityOperations extends ClinicalStatementOpera
              org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "MicrobiologySusceptibilityCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(microbiologySusceptibility, context) }),
              new Object [] { microbiologySusceptibility }));
       }
+       
       return false;
     }
     return true;
@@ -304,7 +314,6 @@ public class MicrobiologySusceptibilityOperations extends ClinicalStatementOpera
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * (self.id->isEmpty() or self.id->exists(element | element.isNullFlavorUndefined())) implies (not self.id->isEmpty())
    * @param microbiologySusceptibility The receiving '<em><b>Microbiology Susceptibility</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -314,6 +323,7 @@ public class MicrobiologySusceptibilityOperations extends ClinicalStatementOpera
   
   public static  boolean validateMicrobiologySusceptibilityId(MicrobiologySusceptibility microbiologySusceptibility, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
+  	  
     if (VALIDATE_MICROBIOLOGY_SUSCEPTIBILITY_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(SdtmPackage.Literals.MICROBIOLOGY_SUSCEPTIBILITY);
@@ -338,6 +348,7 @@ public class MicrobiologySusceptibilityOperations extends ClinicalStatementOpera
              org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "MicrobiologySusceptibilityId", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(microbiologySusceptibility, context) }),
              new Object [] { microbiologySusceptibility }));
       }
+       
       return false;
     }
     return true;
@@ -369,7 +380,6 @@ public class MicrobiologySusceptibilityOperations extends ClinicalStatementOpera
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * (self.methodCode->isEmpty() or self.methodCode->exists(element | element.isNullFlavorUndefined())) implies (not self.methodCode->isEmpty())
    * @param microbiologySusceptibility The receiving '<em><b>Microbiology Susceptibility</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -379,6 +389,7 @@ public class MicrobiologySusceptibilityOperations extends ClinicalStatementOpera
   
   public static  boolean validateMicrobiologySusceptibilityMethodCode(MicrobiologySusceptibility microbiologySusceptibility, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
+  	  
     if (VALIDATE_MICROBIOLOGY_SUSCEPTIBILITY_METHOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(SdtmPackage.Literals.MICROBIOLOGY_SUSCEPTIBILITY);
@@ -403,6 +414,7 @@ public class MicrobiologySusceptibilityOperations extends ClinicalStatementOpera
              org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "MicrobiologySusceptibilityMethodCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(microbiologySusceptibility, context) }),
              new Object [] { microbiologySusceptibility }));
       }
+       
       return false;
     }
     return true;
@@ -434,7 +446,6 @@ public class MicrobiologySusceptibilityOperations extends ClinicalStatementOpera
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.moodCode=vocab::x_ActMoodDocumentObservation::EVN
    * @param microbiologySusceptibility The receiving '<em><b>Microbiology Susceptibility</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -444,6 +455,7 @@ public class MicrobiologySusceptibilityOperations extends ClinicalStatementOpera
   
   public static  boolean validateMicrobiologySusceptibilityMoodCode(MicrobiologySusceptibility microbiologySusceptibility, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
+  	  
     if (VALIDATE_MICROBIOLOGY_SUSCEPTIBILITY_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(SdtmPackage.Literals.MICROBIOLOGY_SUSCEPTIBILITY);
@@ -468,6 +480,7 @@ public class MicrobiologySusceptibilityOperations extends ClinicalStatementOpera
              org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "MicrobiologySusceptibilityMoodCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(microbiologySusceptibility, context) }),
              new Object [] { microbiologySusceptibility }));
       }
+       
       return false;
     }
     return true;
@@ -499,7 +512,6 @@ public class MicrobiologySusceptibilityOperations extends ClinicalStatementOpera
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * (self.statusCode.oclIsUndefined() or self.statusCode.isNullFlavorUndefined()) implies (not self.statusCode.oclIsUndefined())
    * @param microbiologySusceptibility The receiving '<em><b>Microbiology Susceptibility</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -509,6 +521,7 @@ public class MicrobiologySusceptibilityOperations extends ClinicalStatementOpera
   
   public static  boolean validateMicrobiologySusceptibilityStatusCode(MicrobiologySusceptibility microbiologySusceptibility, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
+  	  
     if (VALIDATE_MICROBIOLOGY_SUSCEPTIBILITY_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(SdtmPackage.Literals.MICROBIOLOGY_SUSCEPTIBILITY);
@@ -533,6 +546,7 @@ public class MicrobiologySusceptibilityOperations extends ClinicalStatementOpera
              org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "MicrobiologySusceptibilityStatusCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(microbiologySusceptibility, context) }),
              new Object [] { microbiologySusceptibility }));
       }
+       
       return false;
     }
     return true;
@@ -564,7 +578,6 @@ public class MicrobiologySusceptibilityOperations extends ClinicalStatementOpera
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * (self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (not self.value->isEmpty())
    * @param microbiologySusceptibility The receiving '<em><b>Microbiology Susceptibility</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -574,6 +587,7 @@ public class MicrobiologySusceptibilityOperations extends ClinicalStatementOpera
   
   public static  boolean validateMicrobiologySusceptibilityValue(MicrobiologySusceptibility microbiologySusceptibility, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
+  	  
     if (VALIDATE_MICROBIOLOGY_SUSCEPTIBILITY_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(SdtmPackage.Literals.MICROBIOLOGY_SUSCEPTIBILITY);
@@ -598,6 +612,7 @@ public class MicrobiologySusceptibilityOperations extends ClinicalStatementOpera
              org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "MicrobiologySusceptibilityValue", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(microbiologySusceptibility, context) }),
              new Object [] { microbiologySusceptibility }));
       }
+       
       return false;
     }
     return true;
@@ -629,7 +644,6 @@ public class MicrobiologySusceptibilityOperations extends ClinicalStatementOpera
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * (self.effectiveTime.oclIsUndefined() or self.effectiveTime.isNullFlavorUndefined()) implies (not self.effectiveTime.oclIsUndefined())
    * @param microbiologySusceptibility The receiving '<em><b>Microbiology Susceptibility</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -639,6 +653,7 @@ public class MicrobiologySusceptibilityOperations extends ClinicalStatementOpera
   
   public static  boolean validateMicrobiologySusceptibilityEffectiveTime(MicrobiologySusceptibility microbiologySusceptibility, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
+  	  
     if (VALIDATE_MICROBIOLOGY_SUSCEPTIBILITY_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(SdtmPackage.Literals.MICROBIOLOGY_SUSCEPTIBILITY);
@@ -663,6 +678,73 @@ public class MicrobiologySusceptibilityOperations extends ClinicalStatementOpera
              org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "MicrobiologySusceptibilityEffectiveTime", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(microbiologySusceptibility, context) }),
              new Object [] { microbiologySusceptibility }));
       }
+       
+      return false;
+    }
+    return true;
+  }
+
+  /**
+   * The cached OCL expression body for the '{@link #validateMicrobiologySusceptibilityInterpretationCode(MicrobiologySusceptibility, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Microbiology Susceptibility Interpretation Code</em>}' operation.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #validateMicrobiologySusceptibilityInterpretationCode(MicrobiologySusceptibility, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+   * @generated
+   * @ordered
+   */
+  protected static final String VALIDATE_MICROBIOLOGY_SUSCEPTIBILITY_INTERPRETATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.interpretationCode->isEmpty() or self.interpretationCode->exists(element | element.isNullFlavorUndefined())) implies (not self.interpretationCode->isEmpty())";
+
+  /**
+   * The cached OCL invariant for the '{@link #validateMicrobiologySusceptibilityInterpretationCode(MicrobiologySusceptibility, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Microbiology Susceptibility Interpretation Code</em>}' invariant operation.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #validateMicrobiologySusceptibilityInterpretationCode(MicrobiologySusceptibility, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+   * @generated
+   * @ordered
+   */
+  
+  protected static Constraint VALIDATE_MICROBIOLOGY_SUSCEPTIBILITY_INTERPRETATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * <!-- begin-model-doc -->
+   * @param microbiologySusceptibility The receiving '<em><b>Microbiology Susceptibility</b></em>' model object.
+   * @param diagnostics The chain of diagnostics to which problems are to be appended.
+   * @param context The cache of context-specific information.
+   * <!-- end-model-doc -->
+   * @generated
+   */
+  
+  public static  boolean validateMicrobiologySusceptibilityInterpretationCode(MicrobiologySusceptibility microbiologySusceptibility, DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+  	  
+    if (VALIDATE_MICROBIOLOGY_SUSCEPTIBILITY_INTERPRETATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+      OCL.Helper helper = EOCL_ENV.createOCLHelper();
+      helper.setContext(SdtmPackage.Literals.MICROBIOLOGY_SUSCEPTIBILITY);
+      try
+      {
+        VALIDATE_MICROBIOLOGY_SUSCEPTIBILITY_INTERPRETATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_MICROBIOLOGY_SUSCEPTIBILITY_INTERPRETATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+      }
+      catch (ParserException pe)
+      {
+        throw new UnsupportedOperationException(pe.getLocalizedMessage());
+      }
+    }
+    if (!EOCL_ENV.createQuery(VALIDATE_MICROBIOLOGY_SUSCEPTIBILITY_INTERPRETATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(microbiologySusceptibility))
+    {
+      if (diagnostics != null)
+      {
+        diagnostics.add
+          (new BasicDiagnostic
+            (Diagnostic.ERROR,
+             SdtmValidator.DIAGNOSTIC_SOURCE,
+             SdtmValidator.MICROBIOLOGY_SUSCEPTIBILITY__MICROBIOLOGY_SUSCEPTIBILITY_INTERPRETATION_CODE,
+             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "MicrobiologySusceptibilityInterpretationCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(microbiologySusceptibility, context) }),
+             new Object [] { microbiologySusceptibility }));
+      }
+       
       return false;
     }
     return true;
@@ -694,7 +776,6 @@ public class MicrobiologySusceptibilityOperations extends ClinicalStatementOpera
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.entryRelationship->one(entryRelationship : cda::EntryRelationship | not entryRelationship.observation.oclIsUndefined() and entryRelationship.observation.oclIsKindOf(sdtm::Event Study Day) and entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::REFR)
    * @param microbiologySusceptibility The receiving '<em><b>Microbiology Susceptibility</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -704,6 +785,7 @@ public class MicrobiologySusceptibilityOperations extends ClinicalStatementOpera
   
   public static  boolean validateMicrobiologySusceptibilityEventStudyDay(MicrobiologySusceptibility microbiologySusceptibility, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
+  	  
     if (VALIDATE_MICROBIOLOGY_SUSCEPTIBILITY_EVENT_STUDY_DAY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(SdtmPackage.Literals.MICROBIOLOGY_SUSCEPTIBILITY);
@@ -728,6 +810,7 @@ public class MicrobiologySusceptibilityOperations extends ClinicalStatementOpera
              org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "MicrobiologySusceptibilityEventStudyDay", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(microbiologySusceptibility, context) }),
              new Object [] { microbiologySusceptibility }));
       }
+       
       return false;
     }
     return true;
@@ -759,7 +842,6 @@ public class MicrobiologySusceptibilityOperations extends ClinicalStatementOpera
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.entryRelationship->one(entryRelationship : cda::EntryRelationship | not entryRelationship.act.oclIsUndefined() and entryRelationship.act.oclIsKindOf(sdtm::Timing Reference) and entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::REFR)
    * @param microbiologySusceptibility The receiving '<em><b>Microbiology Susceptibility</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -769,6 +851,7 @@ public class MicrobiologySusceptibilityOperations extends ClinicalStatementOpera
   
   public static  boolean validateMicrobiologySusceptibilityTimingReference(MicrobiologySusceptibility microbiologySusceptibility, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
+  	  
     if (VALIDATE_MICROBIOLOGY_SUSCEPTIBILITY_TIMING_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(SdtmPackage.Literals.MICROBIOLOGY_SUSCEPTIBILITY);
@@ -793,6 +876,7 @@ public class MicrobiologySusceptibilityOperations extends ClinicalStatementOpera
              org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "MicrobiologySusceptibilityTimingReference", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(microbiologySusceptibility, context) }),
              new Object [] { microbiologySusceptibility }));
       }
+       
       return false;
     }
     return true;
@@ -824,7 +908,6 @@ public class MicrobiologySusceptibilityOperations extends ClinicalStatementOpera
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.entryRelationship->one(entryRelationship : cda::EntryRelationship | not entryRelationship.act.oclIsUndefined() and entryRelationship.act.oclIsKindOf(sdtm::Group Identifier) and entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::COMP)
    * @param microbiologySusceptibility The receiving '<em><b>Microbiology Susceptibility</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -834,6 +917,7 @@ public class MicrobiologySusceptibilityOperations extends ClinicalStatementOpera
   
   public static  boolean validateMicrobiologySusceptibilityGroupIdentifier(MicrobiologySusceptibility microbiologySusceptibility, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
+  	  
     if (VALIDATE_MICROBIOLOGY_SUSCEPTIBILITY_GROUP_IDENTIFIER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(SdtmPackage.Literals.MICROBIOLOGY_SUSCEPTIBILITY);
@@ -858,6 +942,7 @@ public class MicrobiologySusceptibilityOperations extends ClinicalStatementOpera
              org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "MicrobiologySusceptibilityGroupIdentifier", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(microbiologySusceptibility, context) }),
              new Object [] { microbiologySusceptibility }));
       }
+       
       return false;
     }
     return true;
@@ -889,7 +974,6 @@ public class MicrobiologySusceptibilityOperations extends ClinicalStatementOpera
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.entryRelationship->one(entryRelationship : cda::EntryRelationship | not entryRelationship.oclIsUndefined() and entryRelationship.oclIsKindOf(cda::EntryRelationship))
    * @param microbiologySusceptibility The receiving '<em><b>Microbiology Susceptibility</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -899,6 +983,7 @@ public class MicrobiologySusceptibilityOperations extends ClinicalStatementOpera
   
   public static  boolean validateMicrobiologySusceptibilityMicrobiologySusceptibilityFindingCategoryAssociation(MicrobiologySusceptibility microbiologySusceptibility, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
+  	  
     if (VALIDATE_MICROBIOLOGY_SUSCEPTIBILITY_MICROBIOLOGY_SUSCEPTIBILITY_FINDING_CATEGORY_ASSOCIATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(SdtmPackage.Literals.MICROBIOLOGY_SUSCEPTIBILITY);
@@ -923,6 +1008,7 @@ public class MicrobiologySusceptibilityOperations extends ClinicalStatementOpera
              org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "MicrobiologySusceptibilityMicrobiologySusceptibilityFindingCategoryAssociation", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(microbiologySusceptibility, context) }),
              new Object [] { microbiologySusceptibility }));
       }
+       
       return false;
     }
     return true;
@@ -954,7 +1040,6 @@ public class MicrobiologySusceptibilityOperations extends ClinicalStatementOpera
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.entryRelationship->one(entryRelationship : cda::EntryRelationship | not entryRelationship.oclIsUndefined() and entryRelationship.oclIsKindOf(cda::EntryRelationship))
    * @param microbiologySusceptibility The receiving '<em><b>Microbiology Susceptibility</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -964,6 +1049,7 @@ public class MicrobiologySusceptibilityOperations extends ClinicalStatementOpera
   
   public static  boolean validateMicrobiologySusceptibilityMicrobiologySusceptibilityFindingSubCategoryAssociation(MicrobiologySusceptibility microbiologySusceptibility, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
+  	  
     if (VALIDATE_MICROBIOLOGY_SUSCEPTIBILITY_MICROBIOLOGY_SUSCEPTIBILITY_FINDING_SUB_CATEGORY_ASSOCIATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(SdtmPackage.Literals.MICROBIOLOGY_SUSCEPTIBILITY);
@@ -988,6 +1074,7 @@ public class MicrobiologySusceptibilityOperations extends ClinicalStatementOpera
              org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "MicrobiologySusceptibilityMicrobiologySusceptibilityFindingSubCategoryAssociation", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(microbiologySusceptibility, context) }),
              new Object [] { microbiologySusceptibility }));
       }
+       
       return false;
     }
     return true;
@@ -1019,7 +1106,6 @@ public class MicrobiologySusceptibilityOperations extends ClinicalStatementOpera
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.entryRelationship->one(entryRelationship : cda::EntryRelationship | not entryRelationship.observation.oclIsUndefined() and entryRelationship.observation.oclIsKindOf(sdtm::Non Performance Reason) and entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::COMP)
    * @param microbiologySusceptibility The receiving '<em><b>Microbiology Susceptibility</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -1029,6 +1115,7 @@ public class MicrobiologySusceptibilityOperations extends ClinicalStatementOpera
   
   public static  boolean validateMicrobiologySusceptibilityNonPerformanceReason(MicrobiologySusceptibility microbiologySusceptibility, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
+  	  
     if (VALIDATE_MICROBIOLOGY_SUSCEPTIBILITY_NON_PERFORMANCE_REASON__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(SdtmPackage.Literals.MICROBIOLOGY_SUSCEPTIBILITY);
@@ -1053,38 +1140,38 @@ public class MicrobiologySusceptibilityOperations extends ClinicalStatementOpera
              org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "MicrobiologySusceptibilityNonPerformanceReason", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(microbiologySusceptibility, context) }),
              new Object [] { microbiologySusceptibility }));
       }
+       
       return false;
     }
     return true;
   }
 
   /**
-   * The cached OCL expression body for the '{@link #validateMicrobiologySusceptibilityBaselineIndicator(MicrobiologySusceptibility, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Microbiology Susceptibility Baseline Indicator</em>}' operation.
+   * The cached OCL expression body for the '{@link #validateMicrobiologySusceptibilitymicrobiologySusceptibilityFindingCategoryAssociationmicrobiologySusceptibilityFindingCategoryClassCode(MicrobiologySusceptibility, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Microbiology Susceptibilitymicrobiology Susceptibility Finding Category Associationmicrobiology Susceptibility Finding Category Class Code</em>}' operation.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @see #validateMicrobiologySusceptibilityBaselineIndicator(MicrobiologySusceptibility, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+   * @see #validateMicrobiologySusceptibilitymicrobiologySusceptibilityFindingCategoryAssociationmicrobiologySusceptibilityFindingCategoryClassCode(MicrobiologySusceptibility, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
    * @generated
    * @ordered
    */
-  protected static final String VALIDATE_MICROBIOLOGY_SUSCEPTIBILITY_BASELINE_INDICATOR__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entryRelationship->one(entryRelationship : cda::EntryRelationship | not entryRelationship.observation.oclIsUndefined() and entryRelationship.observation.oclIsKindOf(sdtm::Baseline Indicator) and entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::COMP)";
+  protected static final String VALIDATE_MICROBIOLOGY_SUSCEPTIBILITYMICROBIOLOGY_SUSCEPTIBILITY_FINDING_CATEGORY_ASSOCIATIONMICROBIOLOGY_SUSCEPTIBILITY_FINDING_CATEGORY_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entryRelationship->excluding(null).observation->excluding(null)->reject(classCode=vocab::ActClassObservation::OBS)";
 
   /**
-   * The cached OCL invariant for the '{@link #validateMicrobiologySusceptibilityBaselineIndicator(MicrobiologySusceptibility, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Microbiology Susceptibility Baseline Indicator</em>}' invariant operation.
+   * The cached OCL invariant for the '{@link #validateMicrobiologySusceptibilitymicrobiologySusceptibilityFindingCategoryAssociationmicrobiologySusceptibilityFindingCategoryClassCode(MicrobiologySusceptibility, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Microbiology Susceptibilitymicrobiology Susceptibility Finding Category Associationmicrobiology Susceptibility Finding Category Class Code</em>}' invariant operation.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @see #validateMicrobiologySusceptibilityBaselineIndicator(MicrobiologySusceptibility, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+   * @see #validateMicrobiologySusceptibilitymicrobiologySusceptibilityFindingCategoryAssociationmicrobiologySusceptibilityFindingCategoryClassCode(MicrobiologySusceptibility, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
    * @generated
    * @ordered
    */
   
-  protected static Constraint VALIDATE_MICROBIOLOGY_SUSCEPTIBILITY_BASELINE_INDICATOR__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-  
+  protected static Constraint VALIDATE_MICROBIOLOGY_SUSCEPTIBILITYMICROBIOLOGY_SUSCEPTIBILITY_FINDING_CATEGORY_ASSOCIATIONMICROBIOLOGY_SUSCEPTIBILITY_FINDING_CATEGORY_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+
 
   /**
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.entryRelationship->one(entryRelationship : cda::EntryRelationship | not entryRelationship.observation.oclIsUndefined() and entryRelationship.observation.oclIsKindOf(sdtm::Baseline Indicator) and entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::COMP)
    * @param microbiologySusceptibility The receiving '<em><b>Microbiology Susceptibility</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -1092,21 +1179,22 @@ public class MicrobiologySusceptibilityOperations extends ClinicalStatementOpera
    * @generated
    */
   
-  public static  boolean validateMicrobiologySusceptibilityBaselineIndicator(MicrobiologySusceptibility microbiologySusceptibility, DiagnosticChain diagnostics, Map<Object, Object> context)
+  public static  boolean validateMicrobiologySusceptibilitymicrobiologySusceptibilityFindingCategoryAssociationmicrobiologySusceptibilityFindingCategoryClassCode(MicrobiologySusceptibility microbiologySusceptibility, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
-    if (VALIDATE_MICROBIOLOGY_SUSCEPTIBILITY_BASELINE_INDICATOR__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+  	  
+    if (VALIDATE_MICROBIOLOGY_SUSCEPTIBILITYMICROBIOLOGY_SUSCEPTIBILITY_FINDING_CATEGORY_ASSOCIATIONMICROBIOLOGY_SUSCEPTIBILITY_FINDING_CATEGORY_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(SdtmPackage.Literals.MICROBIOLOGY_SUSCEPTIBILITY);
       try
       {
-        VALIDATE_MICROBIOLOGY_SUSCEPTIBILITY_BASELINE_INDICATOR__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_MICROBIOLOGY_SUSCEPTIBILITY_BASELINE_INDICATOR__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+        VALIDATE_MICROBIOLOGY_SUSCEPTIBILITYMICROBIOLOGY_SUSCEPTIBILITY_FINDING_CATEGORY_ASSOCIATIONMICROBIOLOGY_SUSCEPTIBILITY_FINDING_CATEGORY_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_MICROBIOLOGY_SUSCEPTIBILITYMICROBIOLOGY_SUSCEPTIBILITY_FINDING_CATEGORY_ASSOCIATIONMICROBIOLOGY_SUSCEPTIBILITY_FINDING_CATEGORY_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
       }
       catch (ParserException pe)
       {
         throw new UnsupportedOperationException(pe.getLocalizedMessage());
       }
     }
-    if (!EOCL_ENV.createQuery(VALIDATE_MICROBIOLOGY_SUSCEPTIBILITY_BASELINE_INDICATOR__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(microbiologySusceptibility))
+    if (!EOCL_ENV.createQuery(VALIDATE_MICROBIOLOGY_SUSCEPTIBILITYMICROBIOLOGY_SUSCEPTIBILITY_FINDING_CATEGORY_ASSOCIATIONMICROBIOLOGY_SUSCEPTIBILITY_FINDING_CATEGORY_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(microbiologySusceptibility))
     {
       if (diagnostics != null)
       {
@@ -1114,42 +1202,42 @@ public class MicrobiologySusceptibilityOperations extends ClinicalStatementOpera
           (new BasicDiagnostic
             (Diagnostic.ERROR,
              SdtmValidator.DIAGNOSTIC_SOURCE,
-             SdtmValidator.MICROBIOLOGY_SUSCEPTIBILITY__MICROBIOLOGY_SUSCEPTIBILITY_BASELINE_INDICATOR,
-             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "MicrobiologySusceptibilityBaselineIndicator", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(microbiologySusceptibility, context) }),
+             SdtmValidator.MICROBIOLOGY_SUSCEPTIBILITY__MICROBIOLOGY_SUSCEPTIBILITYMICROBIOLOGY_SUSCEPTIBILITY_FINDING_CATEGORY_ASSOCIATIONMICROBIOLOGY_SUSCEPTIBILITY_FINDING_CATEGORY_CLASS_CODE,
+             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "MicrobiologySusceptibilitymicrobiologySusceptibilityFindingCategoryAssociationmicrobiologySusceptibilityFindingCategoryClassCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(microbiologySusceptibility, context) }),
              new Object [] { microbiologySusceptibility }));
       }
+       
       return false;
     }
     return true;
   }
 
   /**
-   * The cached OCL expression body for the '{@link #validateMicrobiologySusceptibilityDerivedDataIndicator(MicrobiologySusceptibility, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Microbiology Susceptibility Derived Data Indicator</em>}' operation.
+   * The cached OCL expression body for the '{@link #validateMicrobiologySusceptibilitymicrobiologySusceptibilityFindingCategoryAssociationmicrobiologySusceptibilityFindingCategoryCode(MicrobiologySusceptibility, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Microbiology Susceptibilitymicrobiology Susceptibility Finding Category Associationmicrobiology Susceptibility Finding Category Code</em>}' operation.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @see #validateMicrobiologySusceptibilityDerivedDataIndicator(MicrobiologySusceptibility, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+   * @see #validateMicrobiologySusceptibilitymicrobiologySusceptibilityFindingCategoryAssociationmicrobiologySusceptibilityFindingCategoryCode(MicrobiologySusceptibility, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
    * @generated
    * @ordered
    */
-  protected static final String VALIDATE_MICROBIOLOGY_SUSCEPTIBILITY_DERIVED_DATA_INDICATOR__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entryRelationship->one(entryRelationship : cda::EntryRelationship | not entryRelationship.observation.oclIsUndefined() and entryRelationship.observation.oclIsKindOf(sdtm::Derived Data Indicator) and entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::COMP)";
+  protected static final String VALIDATE_MICROBIOLOGY_SUSCEPTIBILITYMICROBIOLOGY_SUSCEPTIBILITY_FINDING_CATEGORY_ASSOCIATIONMICROBIOLOGY_SUSCEPTIBILITY_FINDING_CATEGORY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entryRelationship->excluding(null).observation->excluding(null)->reject((code.oclIsUndefined() or code.isNullFlavorUndefined()) implies (not code.oclIsUndefined()))";
 
   /**
-   * The cached OCL invariant for the '{@link #validateMicrobiologySusceptibilityDerivedDataIndicator(MicrobiologySusceptibility, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Microbiology Susceptibility Derived Data Indicator</em>}' invariant operation.
+   * The cached OCL invariant for the '{@link #validateMicrobiologySusceptibilitymicrobiologySusceptibilityFindingCategoryAssociationmicrobiologySusceptibilityFindingCategoryCode(MicrobiologySusceptibility, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Microbiology Susceptibilitymicrobiology Susceptibility Finding Category Associationmicrobiology Susceptibility Finding Category Code</em>}' invariant operation.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @see #validateMicrobiologySusceptibilityDerivedDataIndicator(MicrobiologySusceptibility, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+   * @see #validateMicrobiologySusceptibilitymicrobiologySusceptibilityFindingCategoryAssociationmicrobiologySusceptibilityFindingCategoryCode(MicrobiologySusceptibility, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
    * @generated
    * @ordered
    */
   
-  protected static Constraint VALIDATE_MICROBIOLOGY_SUSCEPTIBILITY_DERIVED_DATA_INDICATOR__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-  
+  protected static Constraint VALIDATE_MICROBIOLOGY_SUSCEPTIBILITYMICROBIOLOGY_SUSCEPTIBILITY_FINDING_CATEGORY_ASSOCIATIONMICROBIOLOGY_SUSCEPTIBILITY_FINDING_CATEGORY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+
 
   /**
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.entryRelationship->one(entryRelationship : cda::EntryRelationship | not entryRelationship.observation.oclIsUndefined() and entryRelationship.observation.oclIsKindOf(sdtm::Derived Data Indicator) and entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::COMP)
    * @param microbiologySusceptibility The receiving '<em><b>Microbiology Susceptibility</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -1157,21 +1245,22 @@ public class MicrobiologySusceptibilityOperations extends ClinicalStatementOpera
    * @generated
    */
   
-  public static  boolean validateMicrobiologySusceptibilityDerivedDataIndicator(MicrobiologySusceptibility microbiologySusceptibility, DiagnosticChain diagnostics, Map<Object, Object> context)
+  public static  boolean validateMicrobiologySusceptibilitymicrobiologySusceptibilityFindingCategoryAssociationmicrobiologySusceptibilityFindingCategoryCode(MicrobiologySusceptibility microbiologySusceptibility, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
-    if (VALIDATE_MICROBIOLOGY_SUSCEPTIBILITY_DERIVED_DATA_INDICATOR__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+  	  
+    if (VALIDATE_MICROBIOLOGY_SUSCEPTIBILITYMICROBIOLOGY_SUSCEPTIBILITY_FINDING_CATEGORY_ASSOCIATIONMICROBIOLOGY_SUSCEPTIBILITY_FINDING_CATEGORY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(SdtmPackage.Literals.MICROBIOLOGY_SUSCEPTIBILITY);
       try
       {
-        VALIDATE_MICROBIOLOGY_SUSCEPTIBILITY_DERIVED_DATA_INDICATOR__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_MICROBIOLOGY_SUSCEPTIBILITY_DERIVED_DATA_INDICATOR__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+        VALIDATE_MICROBIOLOGY_SUSCEPTIBILITYMICROBIOLOGY_SUSCEPTIBILITY_FINDING_CATEGORY_ASSOCIATIONMICROBIOLOGY_SUSCEPTIBILITY_FINDING_CATEGORY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_MICROBIOLOGY_SUSCEPTIBILITYMICROBIOLOGY_SUSCEPTIBILITY_FINDING_CATEGORY_ASSOCIATIONMICROBIOLOGY_SUSCEPTIBILITY_FINDING_CATEGORY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
       }
       catch (ParserException pe)
       {
         throw new UnsupportedOperationException(pe.getLocalizedMessage());
       }
     }
-    if (!EOCL_ENV.createQuery(VALIDATE_MICROBIOLOGY_SUSCEPTIBILITY_DERIVED_DATA_INDICATOR__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(microbiologySusceptibility))
+    if (!EOCL_ENV.createQuery(VALIDATE_MICROBIOLOGY_SUSCEPTIBILITYMICROBIOLOGY_SUSCEPTIBILITY_FINDING_CATEGORY_ASSOCIATIONMICROBIOLOGY_SUSCEPTIBILITY_FINDING_CATEGORY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(microbiologySusceptibility))
     {
       if (diagnostics != null)
       {
@@ -1179,10 +1268,143 @@ public class MicrobiologySusceptibilityOperations extends ClinicalStatementOpera
           (new BasicDiagnostic
             (Diagnostic.ERROR,
              SdtmValidator.DIAGNOSTIC_SOURCE,
-             SdtmValidator.MICROBIOLOGY_SUSCEPTIBILITY__MICROBIOLOGY_SUSCEPTIBILITY_DERIVED_DATA_INDICATOR,
-             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "MicrobiologySusceptibilityDerivedDataIndicator", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(microbiologySusceptibility, context) }),
+             SdtmValidator.MICROBIOLOGY_SUSCEPTIBILITY__MICROBIOLOGY_SUSCEPTIBILITYMICROBIOLOGY_SUSCEPTIBILITY_FINDING_CATEGORY_ASSOCIATIONMICROBIOLOGY_SUSCEPTIBILITY_FINDING_CATEGORY_CODE,
+             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "MicrobiologySusceptibilitymicrobiologySusceptibilityFindingCategoryAssociationmicrobiologySusceptibilityFindingCategoryCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(microbiologySusceptibility, context) }),
              new Object [] { microbiologySusceptibility }));
       }
+       
+      return false;
+    }
+    return true;
+  }
+
+  /**
+   * The cached OCL expression body for the '{@link #validateMicrobiologySusceptibilitymicrobiologySusceptibilityFindingCategoryAssociationmicrobiologySusceptibilityFindingCategoryMoodCode(MicrobiologySusceptibility, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Microbiology Susceptibilitymicrobiology Susceptibility Finding Category Associationmicrobiology Susceptibility Finding Category Mood Code</em>}' operation.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #validateMicrobiologySusceptibilitymicrobiologySusceptibilityFindingCategoryAssociationmicrobiologySusceptibilityFindingCategoryMoodCode(MicrobiologySusceptibility, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+   * @generated
+   * @ordered
+   */
+  protected static final String VALIDATE_MICROBIOLOGY_SUSCEPTIBILITYMICROBIOLOGY_SUSCEPTIBILITY_FINDING_CATEGORY_ASSOCIATIONMICROBIOLOGY_SUSCEPTIBILITY_FINDING_CATEGORY_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entryRelationship->excluding(null).observation->excluding(null)->reject(moodCode=vocab::x_ActMoodDocumentObservation::EVN)";
+
+  /**
+   * The cached OCL invariant for the '{@link #validateMicrobiologySusceptibilitymicrobiologySusceptibilityFindingCategoryAssociationmicrobiologySusceptibilityFindingCategoryMoodCode(MicrobiologySusceptibility, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Microbiology Susceptibilitymicrobiology Susceptibility Finding Category Associationmicrobiology Susceptibility Finding Category Mood Code</em>}' invariant operation.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #validateMicrobiologySusceptibilitymicrobiologySusceptibilityFindingCategoryAssociationmicrobiologySusceptibilityFindingCategoryMoodCode(MicrobiologySusceptibility, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+   * @generated
+   * @ordered
+   */
+  
+  protected static Constraint VALIDATE_MICROBIOLOGY_SUSCEPTIBILITYMICROBIOLOGY_SUSCEPTIBILITY_FINDING_CATEGORY_ASSOCIATIONMICROBIOLOGY_SUSCEPTIBILITY_FINDING_CATEGORY_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * <!-- begin-model-doc -->
+   * @param microbiologySusceptibility The receiving '<em><b>Microbiology Susceptibility</b></em>' model object.
+   * @param diagnostics The chain of diagnostics to which problems are to be appended.
+   * @param context The cache of context-specific information.
+   * <!-- end-model-doc -->
+   * @generated
+   */
+  
+  public static  boolean validateMicrobiologySusceptibilitymicrobiologySusceptibilityFindingCategoryAssociationmicrobiologySusceptibilityFindingCategoryMoodCode(MicrobiologySusceptibility microbiologySusceptibility, DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+  	  
+    if (VALIDATE_MICROBIOLOGY_SUSCEPTIBILITYMICROBIOLOGY_SUSCEPTIBILITY_FINDING_CATEGORY_ASSOCIATIONMICROBIOLOGY_SUSCEPTIBILITY_FINDING_CATEGORY_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+      OCL.Helper helper = EOCL_ENV.createOCLHelper();
+      helper.setContext(SdtmPackage.Literals.MICROBIOLOGY_SUSCEPTIBILITY);
+      try
+      {
+        VALIDATE_MICROBIOLOGY_SUSCEPTIBILITYMICROBIOLOGY_SUSCEPTIBILITY_FINDING_CATEGORY_ASSOCIATIONMICROBIOLOGY_SUSCEPTIBILITY_FINDING_CATEGORY_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_MICROBIOLOGY_SUSCEPTIBILITYMICROBIOLOGY_SUSCEPTIBILITY_FINDING_CATEGORY_ASSOCIATIONMICROBIOLOGY_SUSCEPTIBILITY_FINDING_CATEGORY_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+      }
+      catch (ParserException pe)
+      {
+        throw new UnsupportedOperationException(pe.getLocalizedMessage());
+      }
+    }
+    if (!EOCL_ENV.createQuery(VALIDATE_MICROBIOLOGY_SUSCEPTIBILITYMICROBIOLOGY_SUSCEPTIBILITY_FINDING_CATEGORY_ASSOCIATIONMICROBIOLOGY_SUSCEPTIBILITY_FINDING_CATEGORY_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(microbiologySusceptibility))
+    {
+      if (diagnostics != null)
+      {
+        diagnostics.add
+          (new BasicDiagnostic
+            (Diagnostic.ERROR,
+             SdtmValidator.DIAGNOSTIC_SOURCE,
+             SdtmValidator.MICROBIOLOGY_SUSCEPTIBILITY__MICROBIOLOGY_SUSCEPTIBILITYMICROBIOLOGY_SUSCEPTIBILITY_FINDING_CATEGORY_ASSOCIATIONMICROBIOLOGY_SUSCEPTIBILITY_FINDING_CATEGORY_MOOD_CODE,
+             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "MicrobiologySusceptibilitymicrobiologySusceptibilityFindingCategoryAssociationmicrobiologySusceptibilityFindingCategoryMoodCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(microbiologySusceptibility, context) }),
+             new Object [] { microbiologySusceptibility }));
+      }
+       
+      return false;
+    }
+    return true;
+  }
+
+  /**
+   * The cached OCL expression body for the '{@link #validateMicrobiologySusceptibilitymicrobiologySusceptibilityFindingCategoryAssociationmicrobiologySusceptibilityFindingCategoryValue(MicrobiologySusceptibility, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Microbiology Susceptibilitymicrobiology Susceptibility Finding Category Associationmicrobiology Susceptibility Finding Category Value</em>}' operation.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #validateMicrobiologySusceptibilitymicrobiologySusceptibilityFindingCategoryAssociationmicrobiologySusceptibilityFindingCategoryValue(MicrobiologySusceptibility, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+   * @generated
+   * @ordered
+   */
+  protected static final String VALIDATE_MICROBIOLOGY_SUSCEPTIBILITYMICROBIOLOGY_SUSCEPTIBILITY_FINDING_CATEGORY_ASSOCIATIONMICROBIOLOGY_SUSCEPTIBILITY_FINDING_CATEGORY_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entryRelationship->excluding(null).observation->excluding(null)->reject((value->isEmpty() or value->exists(element | element.isNullFlavorUndefined())) implies (value->size() = 1 and value->forAll(element | element.oclIsTypeOf(datatypes::CE))))";
+
+  /**
+   * The cached OCL invariant for the '{@link #validateMicrobiologySusceptibilitymicrobiologySusceptibilityFindingCategoryAssociationmicrobiologySusceptibilityFindingCategoryValue(MicrobiologySusceptibility, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Microbiology Susceptibilitymicrobiology Susceptibility Finding Category Associationmicrobiology Susceptibility Finding Category Value</em>}' invariant operation.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #validateMicrobiologySusceptibilitymicrobiologySusceptibilityFindingCategoryAssociationmicrobiologySusceptibilityFindingCategoryValue(MicrobiologySusceptibility, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+   * @generated
+   * @ordered
+   */
+  
+  protected static Constraint VALIDATE_MICROBIOLOGY_SUSCEPTIBILITYMICROBIOLOGY_SUSCEPTIBILITY_FINDING_CATEGORY_ASSOCIATIONMICROBIOLOGY_SUSCEPTIBILITY_FINDING_CATEGORY_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * <!-- begin-model-doc -->
+   * @param microbiologySusceptibility The receiving '<em><b>Microbiology Susceptibility</b></em>' model object.
+   * @param diagnostics The chain of diagnostics to which problems are to be appended.
+   * @param context The cache of context-specific information.
+   * <!-- end-model-doc -->
+   * @generated
+   */
+  
+  public static  boolean validateMicrobiologySusceptibilitymicrobiologySusceptibilityFindingCategoryAssociationmicrobiologySusceptibilityFindingCategoryValue(MicrobiologySusceptibility microbiologySusceptibility, DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+  	  
+    if (VALIDATE_MICROBIOLOGY_SUSCEPTIBILITYMICROBIOLOGY_SUSCEPTIBILITY_FINDING_CATEGORY_ASSOCIATIONMICROBIOLOGY_SUSCEPTIBILITY_FINDING_CATEGORY_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+      OCL.Helper helper = EOCL_ENV.createOCLHelper();
+      helper.setContext(SdtmPackage.Literals.MICROBIOLOGY_SUSCEPTIBILITY);
+      try
+      {
+        VALIDATE_MICROBIOLOGY_SUSCEPTIBILITYMICROBIOLOGY_SUSCEPTIBILITY_FINDING_CATEGORY_ASSOCIATIONMICROBIOLOGY_SUSCEPTIBILITY_FINDING_CATEGORY_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_MICROBIOLOGY_SUSCEPTIBILITYMICROBIOLOGY_SUSCEPTIBILITY_FINDING_CATEGORY_ASSOCIATIONMICROBIOLOGY_SUSCEPTIBILITY_FINDING_CATEGORY_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+      }
+      catch (ParserException pe)
+      {
+        throw new UnsupportedOperationException(pe.getLocalizedMessage());
+      }
+    }
+    if (!EOCL_ENV.createQuery(VALIDATE_MICROBIOLOGY_SUSCEPTIBILITYMICROBIOLOGY_SUSCEPTIBILITY_FINDING_CATEGORY_ASSOCIATIONMICROBIOLOGY_SUSCEPTIBILITY_FINDING_CATEGORY_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(microbiologySusceptibility))
+    {
+      if (diagnostics != null)
+      {
+        diagnostics.add
+          (new BasicDiagnostic
+            (Diagnostic.ERROR,
+             SdtmValidator.DIAGNOSTIC_SOURCE,
+             SdtmValidator.MICROBIOLOGY_SUSCEPTIBILITY__MICROBIOLOGY_SUSCEPTIBILITYMICROBIOLOGY_SUSCEPTIBILITY_FINDING_CATEGORY_ASSOCIATIONMICROBIOLOGY_SUSCEPTIBILITY_FINDING_CATEGORY_VALUE,
+             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "MicrobiologySusceptibilitymicrobiologySusceptibilityFindingCategoryAssociationmicrobiologySusceptibilityFindingCategoryValue", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(microbiologySusceptibility, context) }),
+             new Object [] { microbiologySusceptibility }));
+      }
+       
       return false;
     }
     return true;
@@ -1214,7 +1436,6 @@ public class MicrobiologySusceptibilityOperations extends ClinicalStatementOpera
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.entryRelationship->excluding(null)->reject(typeCode=vocab::x_ActRelationshipEntryRelationship::COMP)
    * @param microbiologySusceptibility The receiving '<em><b>Microbiology Susceptibility</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -1224,6 +1445,7 @@ public class MicrobiologySusceptibilityOperations extends ClinicalStatementOpera
   
   public static  boolean validateMicrobiologySusceptibilitymicrobiologySusceptibilityFindingCategoryAssociationTypeCode(MicrobiologySusceptibility microbiologySusceptibility, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
+  	  
     if (VALIDATE_MICROBIOLOGY_SUSCEPTIBILITYMICROBIOLOGY_SUSCEPTIBILITY_FINDING_CATEGORY_ASSOCIATION_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(SdtmPackage.Literals.MICROBIOLOGY_SUSCEPTIBILITY);
@@ -1248,6 +1470,337 @@ public class MicrobiologySusceptibilityOperations extends ClinicalStatementOpera
              org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "MicrobiologySusceptibilitymicrobiologySusceptibilityFindingCategoryAssociationTypeCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(microbiologySusceptibility, context) }),
              new Object [] { microbiologySusceptibility }));
       }
+       
+      return false;
+    }
+    return true;
+  }
+
+  /**
+   * The cached OCL expression body for the '{@link #validateMicrobiologySusceptibilitymicrobiologySusceptibilityFindingCategoryAssociationMicrobiologySusceptibilityFindingCategory(MicrobiologySusceptibility, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Microbiology Susceptibilitymicrobiology Susceptibility Finding Category Association Microbiology Susceptibility Finding Category</em>}' operation.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #validateMicrobiologySusceptibilitymicrobiologySusceptibilityFindingCategoryAssociationMicrobiologySusceptibilityFindingCategory(MicrobiologySusceptibility, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+   * @generated
+   * @ordered
+   */
+  protected static final String VALIDATE_MICROBIOLOGY_SUSCEPTIBILITYMICROBIOLOGY_SUSCEPTIBILITY_FINDING_CATEGORY_ASSOCIATION_MICROBIOLOGY_SUSCEPTIBILITY_FINDING_CATEGORY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entryRelationship->excluding(null)->reject(observation->one(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(cda::Observation)))";
+
+  /**
+   * The cached OCL invariant for the '{@link #validateMicrobiologySusceptibilitymicrobiologySusceptibilityFindingCategoryAssociationMicrobiologySusceptibilityFindingCategory(MicrobiologySusceptibility, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Microbiology Susceptibilitymicrobiology Susceptibility Finding Category Association Microbiology Susceptibility Finding Category</em>}' invariant operation.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #validateMicrobiologySusceptibilitymicrobiologySusceptibilityFindingCategoryAssociationMicrobiologySusceptibilityFindingCategory(MicrobiologySusceptibility, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+   * @generated
+   * @ordered
+   */
+  
+  protected static Constraint VALIDATE_MICROBIOLOGY_SUSCEPTIBILITYMICROBIOLOGY_SUSCEPTIBILITY_FINDING_CATEGORY_ASSOCIATION_MICROBIOLOGY_SUSCEPTIBILITY_FINDING_CATEGORY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * <!-- begin-model-doc -->
+   * @param microbiologySusceptibility The receiving '<em><b>Microbiology Susceptibility</b></em>' model object.
+   * @param diagnostics The chain of diagnostics to which problems are to be appended.
+   * @param context The cache of context-specific information.
+   * <!-- end-model-doc -->
+   * @generated
+   */
+  
+  public static  boolean validateMicrobiologySusceptibilitymicrobiologySusceptibilityFindingCategoryAssociationMicrobiologySusceptibilityFindingCategory(MicrobiologySusceptibility microbiologySusceptibility, DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+  	  
+    if (VALIDATE_MICROBIOLOGY_SUSCEPTIBILITYMICROBIOLOGY_SUSCEPTIBILITY_FINDING_CATEGORY_ASSOCIATION_MICROBIOLOGY_SUSCEPTIBILITY_FINDING_CATEGORY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+      OCL.Helper helper = EOCL_ENV.createOCLHelper();
+      helper.setContext(SdtmPackage.Literals.MICROBIOLOGY_SUSCEPTIBILITY);
+      try
+      {
+        VALIDATE_MICROBIOLOGY_SUSCEPTIBILITYMICROBIOLOGY_SUSCEPTIBILITY_FINDING_CATEGORY_ASSOCIATION_MICROBIOLOGY_SUSCEPTIBILITY_FINDING_CATEGORY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_MICROBIOLOGY_SUSCEPTIBILITYMICROBIOLOGY_SUSCEPTIBILITY_FINDING_CATEGORY_ASSOCIATION_MICROBIOLOGY_SUSCEPTIBILITY_FINDING_CATEGORY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+      }
+      catch (ParserException pe)
+      {
+        throw new UnsupportedOperationException(pe.getLocalizedMessage());
+      }
+    }
+    if (!EOCL_ENV.createQuery(VALIDATE_MICROBIOLOGY_SUSCEPTIBILITYMICROBIOLOGY_SUSCEPTIBILITY_FINDING_CATEGORY_ASSOCIATION_MICROBIOLOGY_SUSCEPTIBILITY_FINDING_CATEGORY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(microbiologySusceptibility))
+    {
+      if (diagnostics != null)
+      {
+        diagnostics.add
+          (new BasicDiagnostic
+            (Diagnostic.ERROR,
+             SdtmValidator.DIAGNOSTIC_SOURCE,
+             SdtmValidator.MICROBIOLOGY_SUSCEPTIBILITY__MICROBIOLOGY_SUSCEPTIBILITYMICROBIOLOGY_SUSCEPTIBILITY_FINDING_CATEGORY_ASSOCIATION_MICROBIOLOGY_SUSCEPTIBILITY_FINDING_CATEGORY,
+             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "MicrobiologySusceptibilitymicrobiologySusceptibilityFindingCategoryAssociationMicrobiologySusceptibilityFindingCategory", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(microbiologySusceptibility, context) }),
+             new Object [] { microbiologySusceptibility }));
+      }
+       
+      return false;
+    }
+    return true;
+  }
+
+  /**
+   * The cached OCL expression body for the '{@link #validateMicrobiologySusceptibilitymicrobiologySusceptibilityFindingSubCategoryAssociationmicrobiologySusceptibilityFindingSubCategoryClassCode(MicrobiologySusceptibility, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Microbiology Susceptibilitymicrobiology Susceptibility Finding Sub Category Associationmicrobiology Susceptibility Finding Sub Category Class Code</em>}' operation.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #validateMicrobiologySusceptibilitymicrobiologySusceptibilityFindingSubCategoryAssociationmicrobiologySusceptibilityFindingSubCategoryClassCode(MicrobiologySusceptibility, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+   * @generated
+   * @ordered
+   */
+  protected static final String VALIDATE_MICROBIOLOGY_SUSCEPTIBILITYMICROBIOLOGY_SUSCEPTIBILITY_FINDING_SUB_CATEGORY_ASSOCIATIONMICROBIOLOGY_SUSCEPTIBILITY_FINDING_SUB_CATEGORY_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entryRelationship->excluding(null).observation->excluding(null)->reject(classCode=vocab::ActClassObservation::OBS)";
+
+  /**
+   * The cached OCL invariant for the '{@link #validateMicrobiologySusceptibilitymicrobiologySusceptibilityFindingSubCategoryAssociationmicrobiologySusceptibilityFindingSubCategoryClassCode(MicrobiologySusceptibility, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Microbiology Susceptibilitymicrobiology Susceptibility Finding Sub Category Associationmicrobiology Susceptibility Finding Sub Category Class Code</em>}' invariant operation.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #validateMicrobiologySusceptibilitymicrobiologySusceptibilityFindingSubCategoryAssociationmicrobiologySusceptibilityFindingSubCategoryClassCode(MicrobiologySusceptibility, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+   * @generated
+   * @ordered
+   */
+  
+  protected static Constraint VALIDATE_MICROBIOLOGY_SUSCEPTIBILITYMICROBIOLOGY_SUSCEPTIBILITY_FINDING_SUB_CATEGORY_ASSOCIATIONMICROBIOLOGY_SUSCEPTIBILITY_FINDING_SUB_CATEGORY_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * <!-- begin-model-doc -->
+   * @param microbiologySusceptibility The receiving '<em><b>Microbiology Susceptibility</b></em>' model object.
+   * @param diagnostics The chain of diagnostics to which problems are to be appended.
+   * @param context The cache of context-specific information.
+   * <!-- end-model-doc -->
+   * @generated
+   */
+  
+  public static  boolean validateMicrobiologySusceptibilitymicrobiologySusceptibilityFindingSubCategoryAssociationmicrobiologySusceptibilityFindingSubCategoryClassCode(MicrobiologySusceptibility microbiologySusceptibility, DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+  	  
+    if (VALIDATE_MICROBIOLOGY_SUSCEPTIBILITYMICROBIOLOGY_SUSCEPTIBILITY_FINDING_SUB_CATEGORY_ASSOCIATIONMICROBIOLOGY_SUSCEPTIBILITY_FINDING_SUB_CATEGORY_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+      OCL.Helper helper = EOCL_ENV.createOCLHelper();
+      helper.setContext(SdtmPackage.Literals.MICROBIOLOGY_SUSCEPTIBILITY);
+      try
+      {
+        VALIDATE_MICROBIOLOGY_SUSCEPTIBILITYMICROBIOLOGY_SUSCEPTIBILITY_FINDING_SUB_CATEGORY_ASSOCIATIONMICROBIOLOGY_SUSCEPTIBILITY_FINDING_SUB_CATEGORY_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_MICROBIOLOGY_SUSCEPTIBILITYMICROBIOLOGY_SUSCEPTIBILITY_FINDING_SUB_CATEGORY_ASSOCIATIONMICROBIOLOGY_SUSCEPTIBILITY_FINDING_SUB_CATEGORY_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+      }
+      catch (ParserException pe)
+      {
+        throw new UnsupportedOperationException(pe.getLocalizedMessage());
+      }
+    }
+    if (!EOCL_ENV.createQuery(VALIDATE_MICROBIOLOGY_SUSCEPTIBILITYMICROBIOLOGY_SUSCEPTIBILITY_FINDING_SUB_CATEGORY_ASSOCIATIONMICROBIOLOGY_SUSCEPTIBILITY_FINDING_SUB_CATEGORY_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(microbiologySusceptibility))
+    {
+      if (diagnostics != null)
+      {
+        diagnostics.add
+          (new BasicDiagnostic
+            (Diagnostic.ERROR,
+             SdtmValidator.DIAGNOSTIC_SOURCE,
+             SdtmValidator.MICROBIOLOGY_SUSCEPTIBILITY__MICROBIOLOGY_SUSCEPTIBILITYMICROBIOLOGY_SUSCEPTIBILITY_FINDING_SUB_CATEGORY_ASSOCIATIONMICROBIOLOGY_SUSCEPTIBILITY_FINDING_SUB_CATEGORY_CLASS_CODE,
+             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "MicrobiologySusceptibilitymicrobiologySusceptibilityFindingSubCategoryAssociationmicrobiologySusceptibilityFindingSubCategoryClassCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(microbiologySusceptibility, context) }),
+             new Object [] { microbiologySusceptibility }));
+      }
+       
+      return false;
+    }
+    return true;
+  }
+
+  /**
+   * The cached OCL expression body for the '{@link #validateMicrobiologySusceptibilitymicrobiologySusceptibilityFindingSubCategoryAssociationmicrobiologySusceptibilityFindingSubCategoryCode(MicrobiologySusceptibility, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Microbiology Susceptibilitymicrobiology Susceptibility Finding Sub Category Associationmicrobiology Susceptibility Finding Sub Category Code</em>}' operation.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #validateMicrobiologySusceptibilitymicrobiologySusceptibilityFindingSubCategoryAssociationmicrobiologySusceptibilityFindingSubCategoryCode(MicrobiologySusceptibility, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+   * @generated
+   * @ordered
+   */
+  protected static final String VALIDATE_MICROBIOLOGY_SUSCEPTIBILITYMICROBIOLOGY_SUSCEPTIBILITY_FINDING_SUB_CATEGORY_ASSOCIATIONMICROBIOLOGY_SUSCEPTIBILITY_FINDING_SUB_CATEGORY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entryRelationship->excluding(null).observation->excluding(null)->reject((code.oclIsUndefined() or code.isNullFlavorUndefined()) implies (not code.oclIsUndefined()))";
+
+  /**
+   * The cached OCL invariant for the '{@link #validateMicrobiologySusceptibilitymicrobiologySusceptibilityFindingSubCategoryAssociationmicrobiologySusceptibilityFindingSubCategoryCode(MicrobiologySusceptibility, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Microbiology Susceptibilitymicrobiology Susceptibility Finding Sub Category Associationmicrobiology Susceptibility Finding Sub Category Code</em>}' invariant operation.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #validateMicrobiologySusceptibilitymicrobiologySusceptibilityFindingSubCategoryAssociationmicrobiologySusceptibilityFindingSubCategoryCode(MicrobiologySusceptibility, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+   * @generated
+   * @ordered
+   */
+  
+  protected static Constraint VALIDATE_MICROBIOLOGY_SUSCEPTIBILITYMICROBIOLOGY_SUSCEPTIBILITY_FINDING_SUB_CATEGORY_ASSOCIATIONMICROBIOLOGY_SUSCEPTIBILITY_FINDING_SUB_CATEGORY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * <!-- begin-model-doc -->
+   * @param microbiologySusceptibility The receiving '<em><b>Microbiology Susceptibility</b></em>' model object.
+   * @param diagnostics The chain of diagnostics to which problems are to be appended.
+   * @param context The cache of context-specific information.
+   * <!-- end-model-doc -->
+   * @generated
+   */
+  
+  public static  boolean validateMicrobiologySusceptibilitymicrobiologySusceptibilityFindingSubCategoryAssociationmicrobiologySusceptibilityFindingSubCategoryCode(MicrobiologySusceptibility microbiologySusceptibility, DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+  	  
+    if (VALIDATE_MICROBIOLOGY_SUSCEPTIBILITYMICROBIOLOGY_SUSCEPTIBILITY_FINDING_SUB_CATEGORY_ASSOCIATIONMICROBIOLOGY_SUSCEPTIBILITY_FINDING_SUB_CATEGORY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+      OCL.Helper helper = EOCL_ENV.createOCLHelper();
+      helper.setContext(SdtmPackage.Literals.MICROBIOLOGY_SUSCEPTIBILITY);
+      try
+      {
+        VALIDATE_MICROBIOLOGY_SUSCEPTIBILITYMICROBIOLOGY_SUSCEPTIBILITY_FINDING_SUB_CATEGORY_ASSOCIATIONMICROBIOLOGY_SUSCEPTIBILITY_FINDING_SUB_CATEGORY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_MICROBIOLOGY_SUSCEPTIBILITYMICROBIOLOGY_SUSCEPTIBILITY_FINDING_SUB_CATEGORY_ASSOCIATIONMICROBIOLOGY_SUSCEPTIBILITY_FINDING_SUB_CATEGORY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+      }
+      catch (ParserException pe)
+      {
+        throw new UnsupportedOperationException(pe.getLocalizedMessage());
+      }
+    }
+    if (!EOCL_ENV.createQuery(VALIDATE_MICROBIOLOGY_SUSCEPTIBILITYMICROBIOLOGY_SUSCEPTIBILITY_FINDING_SUB_CATEGORY_ASSOCIATIONMICROBIOLOGY_SUSCEPTIBILITY_FINDING_SUB_CATEGORY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(microbiologySusceptibility))
+    {
+      if (diagnostics != null)
+      {
+        diagnostics.add
+          (new BasicDiagnostic
+            (Diagnostic.ERROR,
+             SdtmValidator.DIAGNOSTIC_SOURCE,
+             SdtmValidator.MICROBIOLOGY_SUSCEPTIBILITY__MICROBIOLOGY_SUSCEPTIBILITYMICROBIOLOGY_SUSCEPTIBILITY_FINDING_SUB_CATEGORY_ASSOCIATIONMICROBIOLOGY_SUSCEPTIBILITY_FINDING_SUB_CATEGORY_CODE,
+             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "MicrobiologySusceptibilitymicrobiologySusceptibilityFindingSubCategoryAssociationmicrobiologySusceptibilityFindingSubCategoryCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(microbiologySusceptibility, context) }),
+             new Object [] { microbiologySusceptibility }));
+      }
+       
+      return false;
+    }
+    return true;
+  }
+
+  /**
+   * The cached OCL expression body for the '{@link #validateMicrobiologySusceptibilitymicrobiologySusceptibilityFindingSubCategoryAssociationmicrobiologySusceptibilityFindingSubCategoryMoodCode(MicrobiologySusceptibility, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Microbiology Susceptibilitymicrobiology Susceptibility Finding Sub Category Associationmicrobiology Susceptibility Finding Sub Category Mood Code</em>}' operation.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #validateMicrobiologySusceptibilitymicrobiologySusceptibilityFindingSubCategoryAssociationmicrobiologySusceptibilityFindingSubCategoryMoodCode(MicrobiologySusceptibility, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+   * @generated
+   * @ordered
+   */
+  protected static final String VALIDATE_MICROBIOLOGY_SUSCEPTIBILITYMICROBIOLOGY_SUSCEPTIBILITY_FINDING_SUB_CATEGORY_ASSOCIATIONMICROBIOLOGY_SUSCEPTIBILITY_FINDING_SUB_CATEGORY_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entryRelationship->excluding(null).observation->excluding(null)->reject(moodCode=vocab::x_ActMoodDocumentObservation::EVN)";
+
+  /**
+   * The cached OCL invariant for the '{@link #validateMicrobiologySusceptibilitymicrobiologySusceptibilityFindingSubCategoryAssociationmicrobiologySusceptibilityFindingSubCategoryMoodCode(MicrobiologySusceptibility, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Microbiology Susceptibilitymicrobiology Susceptibility Finding Sub Category Associationmicrobiology Susceptibility Finding Sub Category Mood Code</em>}' invariant operation.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #validateMicrobiologySusceptibilitymicrobiologySusceptibilityFindingSubCategoryAssociationmicrobiologySusceptibilityFindingSubCategoryMoodCode(MicrobiologySusceptibility, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+   * @generated
+   * @ordered
+   */
+  
+  protected static Constraint VALIDATE_MICROBIOLOGY_SUSCEPTIBILITYMICROBIOLOGY_SUSCEPTIBILITY_FINDING_SUB_CATEGORY_ASSOCIATIONMICROBIOLOGY_SUSCEPTIBILITY_FINDING_SUB_CATEGORY_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * <!-- begin-model-doc -->
+   * @param microbiologySusceptibility The receiving '<em><b>Microbiology Susceptibility</b></em>' model object.
+   * @param diagnostics The chain of diagnostics to which problems are to be appended.
+   * @param context The cache of context-specific information.
+   * <!-- end-model-doc -->
+   * @generated
+   */
+  
+  public static  boolean validateMicrobiologySusceptibilitymicrobiologySusceptibilityFindingSubCategoryAssociationmicrobiologySusceptibilityFindingSubCategoryMoodCode(MicrobiologySusceptibility microbiologySusceptibility, DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+  	  
+    if (VALIDATE_MICROBIOLOGY_SUSCEPTIBILITYMICROBIOLOGY_SUSCEPTIBILITY_FINDING_SUB_CATEGORY_ASSOCIATIONMICROBIOLOGY_SUSCEPTIBILITY_FINDING_SUB_CATEGORY_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+      OCL.Helper helper = EOCL_ENV.createOCLHelper();
+      helper.setContext(SdtmPackage.Literals.MICROBIOLOGY_SUSCEPTIBILITY);
+      try
+      {
+        VALIDATE_MICROBIOLOGY_SUSCEPTIBILITYMICROBIOLOGY_SUSCEPTIBILITY_FINDING_SUB_CATEGORY_ASSOCIATIONMICROBIOLOGY_SUSCEPTIBILITY_FINDING_SUB_CATEGORY_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_MICROBIOLOGY_SUSCEPTIBILITYMICROBIOLOGY_SUSCEPTIBILITY_FINDING_SUB_CATEGORY_ASSOCIATIONMICROBIOLOGY_SUSCEPTIBILITY_FINDING_SUB_CATEGORY_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+      }
+      catch (ParserException pe)
+      {
+        throw new UnsupportedOperationException(pe.getLocalizedMessage());
+      }
+    }
+    if (!EOCL_ENV.createQuery(VALIDATE_MICROBIOLOGY_SUSCEPTIBILITYMICROBIOLOGY_SUSCEPTIBILITY_FINDING_SUB_CATEGORY_ASSOCIATIONMICROBIOLOGY_SUSCEPTIBILITY_FINDING_SUB_CATEGORY_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(microbiologySusceptibility))
+    {
+      if (diagnostics != null)
+      {
+        diagnostics.add
+          (new BasicDiagnostic
+            (Diagnostic.ERROR,
+             SdtmValidator.DIAGNOSTIC_SOURCE,
+             SdtmValidator.MICROBIOLOGY_SUSCEPTIBILITY__MICROBIOLOGY_SUSCEPTIBILITYMICROBIOLOGY_SUSCEPTIBILITY_FINDING_SUB_CATEGORY_ASSOCIATIONMICROBIOLOGY_SUSCEPTIBILITY_FINDING_SUB_CATEGORY_MOOD_CODE,
+             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "MicrobiologySusceptibilitymicrobiologySusceptibilityFindingSubCategoryAssociationmicrobiologySusceptibilityFindingSubCategoryMoodCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(microbiologySusceptibility, context) }),
+             new Object [] { microbiologySusceptibility }));
+      }
+       
+      return false;
+    }
+    return true;
+  }
+
+  /**
+   * The cached OCL expression body for the '{@link #validateMicrobiologySusceptibilitymicrobiologySusceptibilityFindingSubCategoryAssociationmicrobiologySusceptibilityFindingSubCategoryValue(MicrobiologySusceptibility, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Microbiology Susceptibilitymicrobiology Susceptibility Finding Sub Category Associationmicrobiology Susceptibility Finding Sub Category Value</em>}' operation.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #validateMicrobiologySusceptibilitymicrobiologySusceptibilityFindingSubCategoryAssociationmicrobiologySusceptibilityFindingSubCategoryValue(MicrobiologySusceptibility, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+   * @generated
+   * @ordered
+   */
+  protected static final String VALIDATE_MICROBIOLOGY_SUSCEPTIBILITYMICROBIOLOGY_SUSCEPTIBILITY_FINDING_SUB_CATEGORY_ASSOCIATIONMICROBIOLOGY_SUSCEPTIBILITY_FINDING_SUB_CATEGORY_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entryRelationship->excluding(null).observation->excluding(null)->reject((value->isEmpty() or value->exists(element | element.isNullFlavorUndefined())) implies (value->size() = 1 and value->forAll(element | element.oclIsTypeOf(datatypes::CE))))";
+
+  /**
+   * The cached OCL invariant for the '{@link #validateMicrobiologySusceptibilitymicrobiologySusceptibilityFindingSubCategoryAssociationmicrobiologySusceptibilityFindingSubCategoryValue(MicrobiologySusceptibility, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Microbiology Susceptibilitymicrobiology Susceptibility Finding Sub Category Associationmicrobiology Susceptibility Finding Sub Category Value</em>}' invariant operation.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #validateMicrobiologySusceptibilitymicrobiologySusceptibilityFindingSubCategoryAssociationmicrobiologySusceptibilityFindingSubCategoryValue(MicrobiologySusceptibility, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+   * @generated
+   * @ordered
+   */
+  
+  protected static Constraint VALIDATE_MICROBIOLOGY_SUSCEPTIBILITYMICROBIOLOGY_SUSCEPTIBILITY_FINDING_SUB_CATEGORY_ASSOCIATIONMICROBIOLOGY_SUSCEPTIBILITY_FINDING_SUB_CATEGORY_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * <!-- begin-model-doc -->
+   * @param microbiologySusceptibility The receiving '<em><b>Microbiology Susceptibility</b></em>' model object.
+   * @param diagnostics The chain of diagnostics to which problems are to be appended.
+   * @param context The cache of context-specific information.
+   * <!-- end-model-doc -->
+   * @generated
+   */
+  
+  public static  boolean validateMicrobiologySusceptibilitymicrobiologySusceptibilityFindingSubCategoryAssociationmicrobiologySusceptibilityFindingSubCategoryValue(MicrobiologySusceptibility microbiologySusceptibility, DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+  	  
+    if (VALIDATE_MICROBIOLOGY_SUSCEPTIBILITYMICROBIOLOGY_SUSCEPTIBILITY_FINDING_SUB_CATEGORY_ASSOCIATIONMICROBIOLOGY_SUSCEPTIBILITY_FINDING_SUB_CATEGORY_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+      OCL.Helper helper = EOCL_ENV.createOCLHelper();
+      helper.setContext(SdtmPackage.Literals.MICROBIOLOGY_SUSCEPTIBILITY);
+      try
+      {
+        VALIDATE_MICROBIOLOGY_SUSCEPTIBILITYMICROBIOLOGY_SUSCEPTIBILITY_FINDING_SUB_CATEGORY_ASSOCIATIONMICROBIOLOGY_SUSCEPTIBILITY_FINDING_SUB_CATEGORY_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_MICROBIOLOGY_SUSCEPTIBILITYMICROBIOLOGY_SUSCEPTIBILITY_FINDING_SUB_CATEGORY_ASSOCIATIONMICROBIOLOGY_SUSCEPTIBILITY_FINDING_SUB_CATEGORY_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+      }
+      catch (ParserException pe)
+      {
+        throw new UnsupportedOperationException(pe.getLocalizedMessage());
+      }
+    }
+    if (!EOCL_ENV.createQuery(VALIDATE_MICROBIOLOGY_SUSCEPTIBILITYMICROBIOLOGY_SUSCEPTIBILITY_FINDING_SUB_CATEGORY_ASSOCIATIONMICROBIOLOGY_SUSCEPTIBILITY_FINDING_SUB_CATEGORY_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(microbiologySusceptibility))
+    {
+      if (diagnostics != null)
+      {
+        diagnostics.add
+          (new BasicDiagnostic
+            (Diagnostic.ERROR,
+             SdtmValidator.DIAGNOSTIC_SOURCE,
+             SdtmValidator.MICROBIOLOGY_SUSCEPTIBILITY__MICROBIOLOGY_SUSCEPTIBILITYMICROBIOLOGY_SUSCEPTIBILITY_FINDING_SUB_CATEGORY_ASSOCIATIONMICROBIOLOGY_SUSCEPTIBILITY_FINDING_SUB_CATEGORY_VALUE,
+             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "MicrobiologySusceptibilitymicrobiologySusceptibilityFindingSubCategoryAssociationmicrobiologySusceptibilityFindingSubCategoryValue", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(microbiologySusceptibility, context) }),
+             new Object [] { microbiologySusceptibility }));
+      }
+       
       return false;
     }
     return true;
@@ -1279,7 +1832,6 @@ public class MicrobiologySusceptibilityOperations extends ClinicalStatementOpera
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.entryRelationship->excluding(null)->reject(typeCode=vocab::x_ActRelationshipEntryRelationship::COMP)
    * @param microbiologySusceptibility The receiving '<em><b>Microbiology Susceptibility</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -1289,6 +1841,7 @@ public class MicrobiologySusceptibilityOperations extends ClinicalStatementOpera
   
   public static  boolean validateMicrobiologySusceptibilitymicrobiologySusceptibilityFindingSubCategoryAssociationTypeCode(MicrobiologySusceptibility microbiologySusceptibility, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
+  	  
     if (VALIDATE_MICROBIOLOGY_SUSCEPTIBILITYMICROBIOLOGY_SUSCEPTIBILITY_FINDING_SUB_CATEGORY_ASSOCIATION_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(SdtmPackage.Literals.MICROBIOLOGY_SUSCEPTIBILITY);
@@ -1313,6 +1866,73 @@ public class MicrobiologySusceptibilityOperations extends ClinicalStatementOpera
              org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "MicrobiologySusceptibilitymicrobiologySusceptibilityFindingSubCategoryAssociationTypeCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(microbiologySusceptibility, context) }),
              new Object [] { microbiologySusceptibility }));
       }
+       
+      return false;
+    }
+    return true;
+  }
+
+  /**
+   * The cached OCL expression body for the '{@link #validateMicrobiologySusceptibilitymicrobiologySusceptibilityFindingSubCategoryAssociationMicrobiologySusceptibilityFindingSubCategory(MicrobiologySusceptibility, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Microbiology Susceptibilitymicrobiology Susceptibility Finding Sub Category Association Microbiology Susceptibility Finding Sub Category</em>}' operation.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #validateMicrobiologySusceptibilitymicrobiologySusceptibilityFindingSubCategoryAssociationMicrobiologySusceptibilityFindingSubCategory(MicrobiologySusceptibility, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+   * @generated
+   * @ordered
+   */
+  protected static final String VALIDATE_MICROBIOLOGY_SUSCEPTIBILITYMICROBIOLOGY_SUSCEPTIBILITY_FINDING_SUB_CATEGORY_ASSOCIATION_MICROBIOLOGY_SUSCEPTIBILITY_FINDING_SUB_CATEGORY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entryRelationship->excluding(null)->reject(observation->one(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(cda::Observation)))";
+
+  /**
+   * The cached OCL invariant for the '{@link #validateMicrobiologySusceptibilitymicrobiologySusceptibilityFindingSubCategoryAssociationMicrobiologySusceptibilityFindingSubCategory(MicrobiologySusceptibility, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Microbiology Susceptibilitymicrobiology Susceptibility Finding Sub Category Association Microbiology Susceptibility Finding Sub Category</em>}' invariant operation.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #validateMicrobiologySusceptibilitymicrobiologySusceptibilityFindingSubCategoryAssociationMicrobiologySusceptibilityFindingSubCategory(MicrobiologySusceptibility, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+   * @generated
+   * @ordered
+   */
+  
+  protected static Constraint VALIDATE_MICROBIOLOGY_SUSCEPTIBILITYMICROBIOLOGY_SUSCEPTIBILITY_FINDING_SUB_CATEGORY_ASSOCIATION_MICROBIOLOGY_SUSCEPTIBILITY_FINDING_SUB_CATEGORY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * <!-- begin-model-doc -->
+   * @param microbiologySusceptibility The receiving '<em><b>Microbiology Susceptibility</b></em>' model object.
+   * @param diagnostics The chain of diagnostics to which problems are to be appended.
+   * @param context The cache of context-specific information.
+   * <!-- end-model-doc -->
+   * @generated
+   */
+  
+  public static  boolean validateMicrobiologySusceptibilitymicrobiologySusceptibilityFindingSubCategoryAssociationMicrobiologySusceptibilityFindingSubCategory(MicrobiologySusceptibility microbiologySusceptibility, DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+  	  
+    if (VALIDATE_MICROBIOLOGY_SUSCEPTIBILITYMICROBIOLOGY_SUSCEPTIBILITY_FINDING_SUB_CATEGORY_ASSOCIATION_MICROBIOLOGY_SUSCEPTIBILITY_FINDING_SUB_CATEGORY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+      OCL.Helper helper = EOCL_ENV.createOCLHelper();
+      helper.setContext(SdtmPackage.Literals.MICROBIOLOGY_SUSCEPTIBILITY);
+      try
+      {
+        VALIDATE_MICROBIOLOGY_SUSCEPTIBILITYMICROBIOLOGY_SUSCEPTIBILITY_FINDING_SUB_CATEGORY_ASSOCIATION_MICROBIOLOGY_SUSCEPTIBILITY_FINDING_SUB_CATEGORY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_MICROBIOLOGY_SUSCEPTIBILITYMICROBIOLOGY_SUSCEPTIBILITY_FINDING_SUB_CATEGORY_ASSOCIATION_MICROBIOLOGY_SUSCEPTIBILITY_FINDING_SUB_CATEGORY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+      }
+      catch (ParserException pe)
+      {
+        throw new UnsupportedOperationException(pe.getLocalizedMessage());
+      }
+    }
+    if (!EOCL_ENV.createQuery(VALIDATE_MICROBIOLOGY_SUSCEPTIBILITYMICROBIOLOGY_SUSCEPTIBILITY_FINDING_SUB_CATEGORY_ASSOCIATION_MICROBIOLOGY_SUSCEPTIBILITY_FINDING_SUB_CATEGORY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(microbiologySusceptibility))
+    {
+      if (diagnostics != null)
+      {
+        diagnostics.add
+          (new BasicDiagnostic
+            (Diagnostic.ERROR,
+             SdtmValidator.DIAGNOSTIC_SOURCE,
+             SdtmValidator.MICROBIOLOGY_SUSCEPTIBILITY__MICROBIOLOGY_SUSCEPTIBILITYMICROBIOLOGY_SUSCEPTIBILITY_FINDING_SUB_CATEGORY_ASSOCIATION_MICROBIOLOGY_SUSCEPTIBILITY_FINDING_SUB_CATEGORY,
+             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "MicrobiologySusceptibilitymicrobiologySusceptibilityFindingSubCategoryAssociationMicrobiologySusceptibilityFindingSubCategory", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(microbiologySusceptibility, context) }),
+             new Object [] { microbiologySusceptibility }));
+      }
+       
       return false;
     }
     return true;
@@ -1326,7 +1946,7 @@ public class MicrobiologySusceptibilityOperations extends ClinicalStatementOpera
    * @generated
    * @ordered
    */
-  protected static final String GET_EVENT_STUDY_DAY__EOCL_EXP = "self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(sdtm::Event Study Day))->asSequence()->first().oclAsType(sdtm::Event Study Day)";
+  protected static final String GET_EVENT_STUDY_DAY__EOCL_EXP = "self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(sdtm::Event Study Day))->asSequence()->any(true).oclAsType(sdtm::Event Study Day)";
 
   /**
    * The cached OCL query for the '{@link #getEventStudyDay(MicrobiologySusceptibility) <em>Get Event Study Day</em>}' query operation.
@@ -1341,10 +1961,6 @@ public class MicrobiologySusceptibilityOperations extends ClinicalStatementOpera
   /**
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * <!-- begin-model-doc -->
-   * self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(sdtm::Event Study Day))->asSequence()->first().oclAsType(sdtm::Event Study Day)
-   * @param microbiologySusceptibility The receiving '<em><b>Microbiology Susceptibility</b></em>' model object.
-   * <!-- end-model-doc -->
    * @generated
    */
   
@@ -1353,7 +1969,7 @@ public class MicrobiologySusceptibilityOperations extends ClinicalStatementOpera
     if (GET_EVENT_STUDY_DAY__EOCL_QRY == null)
     {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
-      helper.setOperationContext(SdtmPackage.Literals.MICROBIOLOGY_SUSCEPTIBILITY, SdtmPackage.Literals.MICROBIOLOGY_SUSCEPTIBILITY.getEAllOperations().get(68));
+      helper.setOperationContext(SdtmPackage.Literals.MICROBIOLOGY_SUSCEPTIBILITY, SdtmPackage.Literals.MICROBIOLOGY_SUSCEPTIBILITY.getEAllOperations().get(79));
       try
       {
         GET_EVENT_STUDY_DAY__EOCL_QRY = helper.createQuery(GET_EVENT_STUDY_DAY__EOCL_EXP);
@@ -1375,7 +1991,7 @@ public class MicrobiologySusceptibilityOperations extends ClinicalStatementOpera
    * @generated
    * @ordered
    */
-  protected static final String GET_TIMING_REFERENCE__EOCL_EXP = "self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(sdtm::Timing Reference))->asSequence()->first().oclAsType(sdtm::Timing Reference)";
+  protected static final String GET_TIMING_REFERENCE__EOCL_EXP = "self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(sdtm::Timing Reference))->asSequence()->any(true).oclAsType(sdtm::Timing Reference)";
 
   /**
    * The cached OCL query for the '{@link #getTimingReference(MicrobiologySusceptibility) <em>Get Timing Reference</em>}' query operation.
@@ -1390,10 +2006,6 @@ public class MicrobiologySusceptibilityOperations extends ClinicalStatementOpera
   /**
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * <!-- begin-model-doc -->
-   * self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(sdtm::Timing Reference))->asSequence()->first().oclAsType(sdtm::Timing Reference)
-   * @param microbiologySusceptibility The receiving '<em><b>Microbiology Susceptibility</b></em>' model object.
-   * <!-- end-model-doc -->
    * @generated
    */
   
@@ -1402,7 +2014,7 @@ public class MicrobiologySusceptibilityOperations extends ClinicalStatementOpera
     if (GET_TIMING_REFERENCE__EOCL_QRY == null)
     {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
-      helper.setOperationContext(SdtmPackage.Literals.MICROBIOLOGY_SUSCEPTIBILITY, SdtmPackage.Literals.MICROBIOLOGY_SUSCEPTIBILITY.getEAllOperations().get(69));
+      helper.setOperationContext(SdtmPackage.Literals.MICROBIOLOGY_SUSCEPTIBILITY, SdtmPackage.Literals.MICROBIOLOGY_SUSCEPTIBILITY.getEAllOperations().get(80));
       try
       {
         GET_TIMING_REFERENCE__EOCL_QRY = helper.createQuery(GET_TIMING_REFERENCE__EOCL_EXP);
@@ -1424,7 +2036,7 @@ public class MicrobiologySusceptibilityOperations extends ClinicalStatementOpera
    * @generated
    * @ordered
    */
-  protected static final String GET_GROUP_IDENTIFIER__EOCL_EXP = "self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(sdtm::Group Identifier))->asSequence()->first().oclAsType(sdtm::Group Identifier)";
+  protected static final String GET_GROUP_IDENTIFIER__EOCL_EXP = "self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(sdtm::Group Identifier))->asSequence()->any(true).oclAsType(sdtm::Group Identifier)";
 
   /**
    * The cached OCL query for the '{@link #getGroupIdentifier(MicrobiologySusceptibility) <em>Get Group Identifier</em>}' query operation.
@@ -1439,10 +2051,6 @@ public class MicrobiologySusceptibilityOperations extends ClinicalStatementOpera
   /**
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * <!-- begin-model-doc -->
-   * self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(sdtm::Group Identifier))->asSequence()->first().oclAsType(sdtm::Group Identifier)
-   * @param microbiologySusceptibility The receiving '<em><b>Microbiology Susceptibility</b></em>' model object.
-   * <!-- end-model-doc -->
    * @generated
    */
   
@@ -1451,7 +2059,7 @@ public class MicrobiologySusceptibilityOperations extends ClinicalStatementOpera
     if (GET_GROUP_IDENTIFIER__EOCL_QRY == null)
     {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
-      helper.setOperationContext(SdtmPackage.Literals.MICROBIOLOGY_SUSCEPTIBILITY, SdtmPackage.Literals.MICROBIOLOGY_SUSCEPTIBILITY.getEAllOperations().get(70));
+      helper.setOperationContext(SdtmPackage.Literals.MICROBIOLOGY_SUSCEPTIBILITY, SdtmPackage.Literals.MICROBIOLOGY_SUSCEPTIBILITY.getEAllOperations().get(81));
       try
       {
         GET_GROUP_IDENTIFIER__EOCL_QRY = helper.createQuery(GET_GROUP_IDENTIFIER__EOCL_EXP);
@@ -1473,7 +2081,7 @@ public class MicrobiologySusceptibilityOperations extends ClinicalStatementOpera
    * @generated
    * @ordered
    */
-  protected static final String GET_NON_PERFORMANCE_REASON__EOCL_EXP = "self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(sdtm::Non Performance Reason))->asSequence()->first().oclAsType(sdtm::Non Performance Reason)";
+  protected static final String GET_NON_PERFORMANCE_REASON__EOCL_EXP = "self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(sdtm::Non Performance Reason))->asSequence()->any(true).oclAsType(sdtm::Non Performance Reason)";
 
   /**
    * The cached OCL query for the '{@link #getNonPerformanceReason(MicrobiologySusceptibility) <em>Get Non Performance Reason</em>}' query operation.
@@ -1488,10 +2096,6 @@ public class MicrobiologySusceptibilityOperations extends ClinicalStatementOpera
   /**
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * <!-- begin-model-doc -->
-   * self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(sdtm::Non Performance Reason))->asSequence()->first().oclAsType(sdtm::Non Performance Reason)
-   * @param microbiologySusceptibility The receiving '<em><b>Microbiology Susceptibility</b></em>' model object.
-   * <!-- end-model-doc -->
    * @generated
    */
   
@@ -1500,7 +2104,7 @@ public class MicrobiologySusceptibilityOperations extends ClinicalStatementOpera
     if (GET_NON_PERFORMANCE_REASON__EOCL_QRY == null)
     {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
-      helper.setOperationContext(SdtmPackage.Literals.MICROBIOLOGY_SUSCEPTIBILITY, SdtmPackage.Literals.MICROBIOLOGY_SUSCEPTIBILITY.getEAllOperations().get(71));
+      helper.setOperationContext(SdtmPackage.Literals.MICROBIOLOGY_SUSCEPTIBILITY, SdtmPackage.Literals.MICROBIOLOGY_SUSCEPTIBILITY.getEAllOperations().get(82));
       try
       {
         GET_NON_PERFORMANCE_REASON__EOCL_QRY = helper.createQuery(GET_NON_PERFORMANCE_REASON__EOCL_EXP);
@@ -1512,104 +2116,6 @@ public class MicrobiologySusceptibilityOperations extends ClinicalStatementOpera
     }
     OCL.Query query = EOCL_ENV.createQuery(GET_NON_PERFORMANCE_REASON__EOCL_QRY);
     return (NonPerformanceReason) query.evaluate(microbiologySusceptibility);
-  }
-
-  /**
-   * The cached OCL expression body for the '{@link #getBaselineIndicator(MicrobiologySusceptibility) <em>Get Baseline Indicator</em>}' operation.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @see #getBaselineIndicator(MicrobiologySusceptibility)
-   * @generated
-   * @ordered
-   */
-  protected static final String GET_BASELINE_INDICATOR__EOCL_EXP = "self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(sdtm::Baseline Indicator))->asSequence()->first().oclAsType(sdtm::Baseline Indicator)";
-
-  /**
-   * The cached OCL query for the '{@link #getBaselineIndicator(MicrobiologySusceptibility) <em>Get Baseline Indicator</em>}' query operation.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @see #getBaselineIndicator(MicrobiologySusceptibility)
-   * @generated
-   * @ordered
-   */
-  protected static OCLExpression<EClassifier> GET_BASELINE_INDICATOR__EOCL_QRY;
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * <!-- begin-model-doc -->
-   * self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(sdtm::Baseline Indicator))->asSequence()->first().oclAsType(sdtm::Baseline Indicator)
-   * @param microbiologySusceptibility The receiving '<em><b>Microbiology Susceptibility</b></em>' model object.
-   * <!-- end-model-doc -->
-   * @generated
-   */
-  
-  public static  BaselineIndicator getBaselineIndicator(MicrobiologySusceptibility microbiologySusceptibility)
-  {
-    if (GET_BASELINE_INDICATOR__EOCL_QRY == null)
-    {
-      OCL.Helper helper = EOCL_ENV.createOCLHelper();
-      helper.setOperationContext(SdtmPackage.Literals.MICROBIOLOGY_SUSCEPTIBILITY, SdtmPackage.Literals.MICROBIOLOGY_SUSCEPTIBILITY.getEAllOperations().get(72));
-      try
-      {
-        GET_BASELINE_INDICATOR__EOCL_QRY = helper.createQuery(GET_BASELINE_INDICATOR__EOCL_EXP);
-      }
-      catch (ParserException pe)
-      {
-        throw new UnsupportedOperationException(pe.getLocalizedMessage());
-      }
-    }
-    OCL.Query query = EOCL_ENV.createQuery(GET_BASELINE_INDICATOR__EOCL_QRY);
-    return (BaselineIndicator) query.evaluate(microbiologySusceptibility);
-  }
-
-  /**
-   * The cached OCL expression body for the '{@link #getDerivedDataIndicator(MicrobiologySusceptibility) <em>Get Derived Data Indicator</em>}' operation.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @see #getDerivedDataIndicator(MicrobiologySusceptibility)
-   * @generated
-   * @ordered
-   */
-  protected static final String GET_DERIVED_DATA_INDICATOR__EOCL_EXP = "self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(sdtm::Derived Data Indicator))->asSequence()->first().oclAsType(sdtm::Derived Data Indicator)";
-
-  /**
-   * The cached OCL query for the '{@link #getDerivedDataIndicator(MicrobiologySusceptibility) <em>Get Derived Data Indicator</em>}' query operation.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @see #getDerivedDataIndicator(MicrobiologySusceptibility)
-   * @generated
-   * @ordered
-   */
-  protected static OCLExpression<EClassifier> GET_DERIVED_DATA_INDICATOR__EOCL_QRY;
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * <!-- begin-model-doc -->
-   * self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(sdtm::Derived Data Indicator))->asSequence()->first().oclAsType(sdtm::Derived Data Indicator)
-   * @param microbiologySusceptibility The receiving '<em><b>Microbiology Susceptibility</b></em>' model object.
-   * <!-- end-model-doc -->
-   * @generated
-   */
-  
-  public static  DerivedDataIndicator getDerivedDataIndicator(MicrobiologySusceptibility microbiologySusceptibility)
-  {
-    if (GET_DERIVED_DATA_INDICATOR__EOCL_QRY == null)
-    {
-      OCL.Helper helper = EOCL_ENV.createOCLHelper();
-      helper.setOperationContext(SdtmPackage.Literals.MICROBIOLOGY_SUSCEPTIBILITY, SdtmPackage.Literals.MICROBIOLOGY_SUSCEPTIBILITY.getEAllOperations().get(73));
-      try
-      {
-        GET_DERIVED_DATA_INDICATOR__EOCL_QRY = helper.createQuery(GET_DERIVED_DATA_INDICATOR__EOCL_EXP);
-      }
-      catch (ParserException pe)
-      {
-        throw new UnsupportedOperationException(pe.getLocalizedMessage());
-      }
-    }
-    OCL.Query query = EOCL_ENV.createQuery(GET_DERIVED_DATA_INDICATOR__EOCL_QRY);
-    return (DerivedDataIndicator) query.evaluate(microbiologySusceptibility);
   }
 
 } // MicrobiologySusceptibilityOperations

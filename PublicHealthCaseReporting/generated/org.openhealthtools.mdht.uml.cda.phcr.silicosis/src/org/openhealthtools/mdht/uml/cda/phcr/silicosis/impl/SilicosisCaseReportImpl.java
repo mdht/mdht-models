@@ -10,10 +10,13 @@
  *******************************************************************************/
 package org.openhealthtools.mdht.uml.cda.phcr.silicosis.impl;
 
+import java.lang.Iterable;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.ecore.EClass;
+import org.eclipse.emf.ecore.EObject;
+import org.openhealthtools.mdht.emf.runtime.util.Initializer;
 import org.openhealthtools.mdht.uml.cda.phcr.impl.PublicHealthCaseReportImpl;
 import org.openhealthtools.mdht.uml.cda.phcr.silicosis.SilicosisCaseReport;
 import org.openhealthtools.mdht.uml.cda.phcr.silicosis.SilicosisPHCRClinicalInformationSection;
@@ -34,108 +37,117 @@ import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
  */
 public class SilicosisCaseReportImpl extends PublicHealthCaseReportImpl implements SilicosisCaseReport {
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	protected SilicosisCaseReportImpl() {
-		super();
-	}
+    super();
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	@Override
 	protected EClass eStaticClass() {
-		return SilicosisPackage.Literals.SILICOSIS_CASE_REPORT;
-	}
+    return SilicosisPackage.Literals.SILICOSIS_CASE_REPORT;
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   public boolean validateSilicosisCaseReportTitle(DiagnosticChain diagnostics, Map<Object, Object> context)
   {
-		return SilicosisCaseReportOperations.validateSilicosisCaseReportTitle(this, diagnostics, context);
-	}
+    return SilicosisCaseReportOperations.validateSilicosisCaseReportTitle(this, diagnostics, context);
+  }
 
   /**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateSilicosisCaseReportSilicosisPHCRSocialHistorySection(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return SilicosisCaseReportOperations.validateSilicosisCaseReportSilicosisPHCRSocialHistorySection(this, diagnostics, context);
-	}
+    return SilicosisCaseReportOperations.validateSilicosisCaseReportSilicosisPHCRSocialHistorySection(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateSilicosisCaseReportSilicosisPHCRClinicalInformationSection(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return SilicosisCaseReportOperations.validateSilicosisCaseReportSilicosisPHCRClinicalInformationSection(this, diagnostics, context);
-	}
+    return SilicosisCaseReportOperations.validateSilicosisCaseReportSilicosisPHCRClinicalInformationSection(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   public boolean validateSilicosisCaseReportSilicosisPHCRRelevantDxTestsSection(DiagnosticChain diagnostics, Map<Object, Object> context)
   {
-		return SilicosisCaseReportOperations.validateSilicosisCaseReportSilicosisPHCRRelevantDxTestsSection(this, diagnostics, context);
-	}
+    return SilicosisCaseReportOperations.validateSilicosisCaseReportSilicosisPHCRRelevantDxTestsSection(this, diagnostics, context);
+  }
 
   /**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public SilicosisPHCRSocialHistorySection getSilicosisPHCRSocialHistorySection() {
-		return SilicosisCaseReportOperations.getSilicosisPHCRSocialHistorySection(this);
-	}
+    return SilicosisCaseReportOperations.getSilicosisPHCRSocialHistorySection(this);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public SilicosisPHCRClinicalInformationSection getSilicosisPHCRClinicalInformationSection() {
-		return SilicosisCaseReportOperations.getSilicosisPHCRClinicalInformationSection(this);
-	}
+    return SilicosisCaseReportOperations.getSilicosisPHCRClinicalInformationSection(this);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   public SilicosisPHCRRelevantDxTestsSection getSilicosisPHCRRelevantDxTestsSection()
   {
-		return SilicosisCaseReportOperations.getSilicosisPHCRRelevantDxTestsSection(this);
-	}
+    return SilicosisCaseReportOperations.getSilicosisPHCRRelevantDxTestsSection(this);
+  }
 
   /**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	@Override
 	public boolean validatePublicHealthCaseReportTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return SilicosisCaseReportOperations.validatePublicHealthCaseReportTemplateId(this, diagnostics, context);
-	}
+    return SilicosisCaseReportOperations.validatePublicHealthCaseReportTemplateId(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public SilicosisCaseReport init() {
-    	CDAUtil.init(this);
-    	return this;
-	}
+      return Initializer.Util.init(this);
+  }
+
+  /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    public SilicosisCaseReport init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
 
 } //SilicosisCaseReportImpl

@@ -10,12 +10,15 @@
  *******************************************************************************/
 package org.openhealthtools.mdht.uml.cda.phcr.streppneumo.impl;
 
+import java.lang.Iterable;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
 
 import org.eclipse.emf.ecore.EClass;
 
+import org.eclipse.emf.ecore.EObject;
+import org.openhealthtools.mdht.emf.runtime.util.Initializer;
 import org.openhealthtools.mdht.uml.cda.phcr.impl.PhcrTreatmentInformationSectionImpl;
 
 import org.openhealthtools.mdht.uml.cda.phcr.streppneumo.StrepPneumoPHCRTreatmentInformationSection;
@@ -37,59 +40,68 @@ import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
  */
 public class StrepPneumoPHCRTreatmentInformationSectionImpl extends PhcrTreatmentInformationSectionImpl implements StrepPneumoPHCRTreatmentInformationSection {
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	protected StrepPneumoPHCRTreatmentInformationSectionImpl() {
-		super();
-	}
+    super();
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	@Override
 	protected EClass eStaticClass() {
-		return StrepPneumoPackage.Literals.STREP_PNEUMO_PHCR_TREATMENT_INFORMATION_SECTION;
-	}
+    return StrepPneumoPackage.Literals.STREP_PNEUMO_PHCR_TREATMENT_INFORMATION_SECTION;
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateStrepPneumoPHCRTreatmentInformationSectionStrepPneumoTherapeuticRegimenAct(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return StrepPneumoPHCRTreatmentInformationSectionOperations.validateStrepPneumoPHCRTreatmentInformationSectionStrepPneumoTherapeuticRegimenAct(this, diagnostics, context);
-	}
+    return StrepPneumoPHCRTreatmentInformationSectionOperations.validateStrepPneumoPHCRTreatmentInformationSectionStrepPneumoTherapeuticRegimenAct(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public StrepPneumoTherapeuticRegimenAct getStrepPneumoTherapeuticRegimenAct() {
-		return StrepPneumoPHCRTreatmentInformationSectionOperations.getStrepPneumoTherapeuticRegimenAct(this);
-	}
+    return StrepPneumoPHCRTreatmentInformationSectionOperations.getStrepPneumoTherapeuticRegimenAct(this);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	@Override
 	public boolean validatePhcrTreatmentInformationSectionTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return StrepPneumoPHCRTreatmentInformationSectionOperations.validatePhcrTreatmentInformationSectionTemplateId(this, diagnostics, context);
-	}
+    return StrepPneumoPHCRTreatmentInformationSectionOperations.validatePhcrTreatmentInformationSectionTemplateId(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public StrepPneumoPHCRTreatmentInformationSection init() {
-    	CDAUtil.init(this);
-    	return this;
-	}
+      return Initializer.Util.init(this);
+  }
+
+  /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    public StrepPneumoPHCRTreatmentInformationSection init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
 } //StrepPneumoPHCRTreatmentInformationSectionImpl

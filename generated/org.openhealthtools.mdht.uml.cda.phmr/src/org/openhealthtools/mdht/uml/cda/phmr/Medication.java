@@ -22,6 +22,9 @@
  */
 package org.openhealthtools.mdht.uml.cda.phmr;
 
+import java.lang.Iterable;
+import org.eclipse.emf.ecore.EObject;
+import org.openhealthtools.mdht.emf.runtime.util.Initializer;
 import org.openhealthtools.mdht.uml.cda.ccd.MedicationsSection;
 
 /**
@@ -31,14 +34,21 @@ import org.openhealthtools.mdht.uml.cda.ccd.MedicationsSection;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.phmr.PhmrPackage#getMedication()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation templateId.root='null' constraints.validation.error='MedicationTemplateId'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='MedicationTemplateId' templateId.root='null'"
  * @generated
  */
 public interface Medication extends MedicationsSection {
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public Medication init();
+
+  /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    public Medication init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // Medication

@@ -10,11 +10,14 @@
  *******************************************************************************/
 package org.openhealthtools.mdht.uml.cda.phcr.anthrax;
 
+import java.lang.Iterable;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.common.util.EList;
 
+import org.eclipse.emf.ecore.EObject;
+import org.openhealthtools.mdht.emf.runtime.util.Initializer;
 import org.openhealthtools.mdht.uml.cda.phcr.PhcrSocialHistorySection;
 
 /**
@@ -24,39 +27,42 @@ import org.openhealthtools.mdht.uml.cda.phcr.PhcrSocialHistorySection;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.phcr.anthrax.AnthraxPackage#getAnthraxPhcrSocialHistorySection()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation templateId.root='2.16.840.1.113883.10.20.15.2.17' constraints.validation.error='AnthraxPhcrSocialHistorySectionTemplateId' constraints.validation.info='AnthraxPhcrSocialHistorySectionAnthraxPossibleExpossureLocationAndTypeAct'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='AnthraxPhcrSocialHistorySectionTemplateId' templateId.root='2.16.840.1.113883.10.20.15.2.17' constraints.validation.info='AnthraxPhcrSocialHistorySectionAnthraxPossibleExpossureLocationAndTypeAct'"
  * @generated
  */
 public interface AnthraxPhcrSocialHistorySection extends PhcrSocialHistorySection {
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.entry->exists(entry : cda::Entry | not entry.act.oclIsUndefined() and entry.act.oclIsKindOf(anthrax::AnthraxPossibleExpossureLocationAndTypeAct) and entry.typeCode = vocab::x_ActRelationshipEntry::DRIV)
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entry->exists(entry : cda::Entry | not entry.act.oclIsUndefined() and entry.act.oclIsKindOf(anthrax::AnthraxPossibleExpossureLocationAndTypeAct) and entry.typeCode = vocab::x_ActRelationshipEntry::DRIV)'"
-	 * @generated
-	 */
+   * <!-- begin-model-doc -->
+   * @param diagnostics The chain of diagnostics to which problems are to be appended.
+   * @param context The cache of context-specific information.
+   * <!-- end-model-doc -->
+   * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entry->exists(entry : cda::Entry | not entry.act.oclIsUndefined() and entry.act.oclIsKindOf(anthrax::AnthraxPossibleExpossureLocationAndTypeAct) and entry.typeCode = vocab::x_ActRelationshipEntry::DRIV)'"
+   * @generated
+   */
 	boolean validateAnthraxPhcrSocialHistorySectionAnthraxPossibleExpossureLocationAndTypeAct(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(anthrax::AnthraxPossibleExpossureLocationAndTypeAct)).oclAsType(anthrax::AnthraxPossibleExpossureLocationAndTypeAct)
-	 * <!-- end-model-doc -->
-	 * @model kind="operation" required="true" ordered="false"
-	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(anthrax::AnthraxPossibleExpossureLocationAndTypeAct)).oclAsType(anthrax::AnthraxPossibleExpossureLocationAndTypeAct)'"
-	 * @generated
-	 */
+   * @model kind="operation" required="true" ordered="false"
+   *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(anthrax::AnthraxPossibleExpossureLocationAndTypeAct)).oclAsType(anthrax::AnthraxPossibleExpossureLocationAndTypeAct)'"
+   * @generated
+   */
 	EList<AnthraxPossibleExpossureLocationAndTypeAct> getAnthraxPossibleExpossureLocationAndTypeActs();
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public AnthraxPhcrSocialHistorySection init();
+
+  /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    public AnthraxPhcrSocialHistorySection init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // AnthraxPhcrSocialHistorySection

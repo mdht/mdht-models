@@ -10,6 +10,7 @@
  *******************************************************************************/
 package org.openhealthtools.mdht.uml.cda.phcr.tss.impl;
 
+import java.lang.Iterable;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
@@ -17,6 +18,8 @@ import org.eclipse.emf.common.util.EList;
 
 import org.eclipse.emf.ecore.EClass;
 
+import org.eclipse.emf.ecore.EObject;
+import org.openhealthtools.mdht.emf.runtime.util.Initializer;
 import org.openhealthtools.mdht.uml.cda.phcr.impl.PhcrRelevantDxTestsSectionImpl;
 
 import org.openhealthtools.mdht.uml.cda.phcr.tss.TssPhcrRelevantDxTestsSection;
@@ -40,77 +43,86 @@ import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
  */
 public class TssPhcrRelevantDxTestsSectionImpl extends PhcrRelevantDxTestsSectionImpl implements TssPhcrRelevantDxTestsSection {
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	protected TssPhcrRelevantDxTestsSectionImpl() {
-		super();
-	}
+    super();
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	@Override
 	protected EClass eStaticClass() {
-		return tssPackage.Literals.TSS_PHCR_RELEVANT_DX_TESTS_SECTION;
-	}
+    return tssPackage.Literals.TSS_PHCR_RELEVANT_DX_TESTS_SECTION;
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateTssPhcrRelevantDxTestsSectionTssResultOrganizer(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return TssPhcrRelevantDxTestsSectionOperations.validateTssPhcrRelevantDxTestsSectionTssResultOrganizer(this, diagnostics, context);
-	}
+    return TssPhcrRelevantDxTestsSectionOperations.validateTssPhcrRelevantDxTestsSectionTssResultOrganizer(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateTssPhcrRelevantDxTestsSectionTssResultObservation(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return TssPhcrRelevantDxTestsSectionOperations.validateTssPhcrRelevantDxTestsSectionTssResultObservation(this, diagnostics, context);
-	}
+    return TssPhcrRelevantDxTestsSectionOperations.validateTssPhcrRelevantDxTestsSectionTssResultObservation(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public EList<TssResultOrganizer> getTssResultOrganizers() {
-		return TssPhcrRelevantDxTestsSectionOperations.getTssResultOrganizers(this);
-	}
+    return TssPhcrRelevantDxTestsSectionOperations.getTssResultOrganizers(this);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public EList<TssResultObservation> getTssResultObservations() {
-		return TssPhcrRelevantDxTestsSectionOperations.getTssResultObservations(this);
-	}
+    return TssPhcrRelevantDxTestsSectionOperations.getTssResultObservations(this);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	@Override
 	public boolean validateResultsSectionTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return TssPhcrRelevantDxTestsSectionOperations.validateResultsSectionTemplateId(this, diagnostics, context);
-	}
+    return TssPhcrRelevantDxTestsSectionOperations.validateResultsSectionTemplateId(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public TssPhcrRelevantDxTestsSection init() {
-    	CDAUtil.init(this);
-    	return this;
-	}
+      return Initializer.Util.init(this);
+  }
+
+  /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    public TssPhcrRelevantDxTestsSection init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
 } //TssPhcrRelevantDxTestsSectionImpl

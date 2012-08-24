@@ -234,6 +234,15 @@ public interface EmspcrFactory extends EFactory
   DerivedEntry createDerivedEntry();
 
   /**
+   * Returns a new object of class '<em>AAAAA</em>'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @return a new object of class '<em>AAAAA</em>'.
+   * @generated
+   */
+  AAAAA createAAAAA();
+
+  /**
    * Returns the package supported by this factory.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->

@@ -81,7 +81,6 @@ public class StudyArmOperations extends ClinicalStatementOperations
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.23.68')
    * @param studyArm The receiving '<em><b>Study Arm</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -91,6 +90,7 @@ public class StudyArmOperations extends ClinicalStatementOperations
   
   public static  boolean validateStudyArmTemplateId(StudyArm studyArm, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
+  	  
     if (VALIDATE_STUDY_ARM_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(SdtmPackage.Literals.STUDY_ARM);
@@ -115,6 +115,7 @@ public class StudyArmOperations extends ClinicalStatementOperations
              org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "StudyArmTemplateId", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(studyArm, context) }),
              new Object [] { studyArm }));
       }
+       
       return false;
     }
     return true;
@@ -146,7 +147,6 @@ public class StudyArmOperations extends ClinicalStatementOperations
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.classCode=vocab::x_ActClassDocumentEntryAct::ACT
    * @param studyArm The receiving '<em><b>Study Arm</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -156,6 +156,7 @@ public class StudyArmOperations extends ClinicalStatementOperations
   
   public static  boolean validateStudyArmClassCode(StudyArm studyArm, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
+  	  
     if (VALIDATE_STUDY_ARM_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(SdtmPackage.Literals.STUDY_ARM);
@@ -180,6 +181,7 @@ public class StudyArmOperations extends ClinicalStatementOperations
              org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "StudyArmClassCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(studyArm, context) }),
              new Object [] { studyArm }));
       }
+       
       return false;
     }
     return true;
@@ -211,7 +213,6 @@ public class StudyArmOperations extends ClinicalStatementOperations
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * (self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined())
    * @param studyArm The receiving '<em><b>Study Arm</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -221,6 +222,7 @@ public class StudyArmOperations extends ClinicalStatementOperations
   
   public static  boolean validateStudyArmCodeP(StudyArm studyArm, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
+  	  
     if (VALIDATE_STUDY_ARM_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(SdtmPackage.Literals.STUDY_ARM);
@@ -245,6 +247,7 @@ public class StudyArmOperations extends ClinicalStatementOperations
              org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "StudyArmCodeP", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(studyArm, context) }),
              new Object [] { studyArm }));
       }
+       
       return false;
     }
     return true;
@@ -278,9 +281,6 @@ public class StudyArmOperations extends ClinicalStatementOperations
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * (self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and 
-   * let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in 
-   * value.codeSystem = '2.16.840.1.113883.3.26.1.1')
    * @param studyArm The receiving '<em><b>Study Arm</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -290,6 +290,7 @@ public class StudyArmOperations extends ClinicalStatementOperations
   
   public static  boolean validateStudyArmCode(StudyArm studyArm, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
+  	  
     if (VALIDATE_STUDY_ARM_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(SdtmPackage.Literals.STUDY_ARM);
@@ -314,6 +315,7 @@ public class StudyArmOperations extends ClinicalStatementOperations
              org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "StudyArmCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(studyArm, context) }),
              new Object [] { studyArm }));
       }
+       
       return false;
     }
     return true;
@@ -345,7 +347,6 @@ public class StudyArmOperations extends ClinicalStatementOperations
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * (self.text.oclIsUndefined() or self.text.isNullFlavorUndefined()) implies (not self.text.oclIsUndefined())
    * @param studyArm The receiving '<em><b>Study Arm</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -355,6 +356,7 @@ public class StudyArmOperations extends ClinicalStatementOperations
   
   public static  boolean validateStudyArmText(StudyArm studyArm, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
+  	  
     if (VALIDATE_STUDY_ARM_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(SdtmPackage.Literals.STUDY_ARM);
@@ -379,6 +381,7 @@ public class StudyArmOperations extends ClinicalStatementOperations
              org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "StudyArmText", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(studyArm, context) }),
              new Object [] { studyArm }));
       }
+       
       return false;
     }
     return true;
@@ -392,7 +395,7 @@ public class StudyArmOperations extends ClinicalStatementOperations
    * @generated
    * @ordered
    */
-  protected static final String VALIDATE_STUDY_ARM_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.moodCode=vocab::x_DocumentActMood::EVN";
+  protected static final String VALIDATE_STUDY_ARM_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "isDefined('moodCode')";
 
   /**
    * The cached OCL invariant for the '{@link #validateStudyArmMoodCode(StudyArm, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Study Arm Mood Code</em>}' invariant operation.
@@ -410,7 +413,6 @@ public class StudyArmOperations extends ClinicalStatementOperations
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.moodCode=vocab::x_DocumentActMood::EVN
    * @param studyArm The receiving '<em><b>Study Arm</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -420,6 +422,7 @@ public class StudyArmOperations extends ClinicalStatementOperations
   
   public static  boolean validateStudyArmMoodCode(StudyArm studyArm, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
+  	  
     if (VALIDATE_STUDY_ARM_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(SdtmPackage.Literals.STUDY_ARM);
@@ -444,6 +447,7 @@ public class StudyArmOperations extends ClinicalStatementOperations
              org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "StudyArmMoodCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(studyArm, context) }),
              new Object [] { studyArm }));
       }
+       
       return false;
     }
     return true;
@@ -475,7 +479,6 @@ public class StudyArmOperations extends ClinicalStatementOperations
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * (self.effectiveTime.oclIsUndefined() or self.effectiveTime.isNullFlavorUndefined()) implies (not self.effectiveTime.oclIsUndefined())
    * @param studyArm The receiving '<em><b>Study Arm</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -485,6 +488,7 @@ public class StudyArmOperations extends ClinicalStatementOperations
   
   public static  boolean validateStudyArmEffectiveTime(StudyArm studyArm, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
+  	  
     if (VALIDATE_STUDY_ARM_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(SdtmPackage.Literals.STUDY_ARM);
@@ -509,6 +513,7 @@ public class StudyArmOperations extends ClinicalStatementOperations
              org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "StudyArmEffectiveTime", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(studyArm, context) }),
              new Object [] { studyArm }));
       }
+       
       return false;
     }
     return true;

@@ -18,6 +18,7 @@ import org.openhealthtools.mdht.uml.cda.Encounter;
 import org.openhealthtools.mdht.uml.cda.Observation;
 import org.openhealthtools.mdht.uml.cda.Organizer;
 import org.openhealthtools.mdht.uml.cda.Participant1;
+import org.openhealthtools.mdht.uml.cda.Participant2;
 import org.openhealthtools.mdht.uml.cda.Procedure;
 import org.openhealthtools.mdht.uml.cda.Section;
 import org.openhealthtools.mdht.uml.cda.SubstanceAdministration;
@@ -263,17 +264,6 @@ public class SdtmSwitch<T>
         if (result == null) result = defaultCase(theEObject);
         return result;
       }
-      case SdtmPackage.PLANNED_STUDY_DAY:
-      {
-        PlannedStudyDay plannedStudyDay = (PlannedStudyDay)theEObject;
-        T result = casePlannedStudyDay(plannedStudyDay);
-        if (result == null) result = caseObservation(plannedStudyDay);
-        if (result == null) result = caseClinicalStatement(plannedStudyDay);
-        if (result == null) result = caseAct(plannedStudyDay);
-        if (result == null) result = caseInfrastructureRoot(plannedStudyDay);
-        if (result == null) result = defaultCase(theEObject);
-        return result;
-      }
       case SdtmPackage.TIMING_REFERENCE:
       {
         TimingReference timingReference = (TimingReference)theEObject;
@@ -296,6 +286,28 @@ public class SdtmSwitch<T>
         if (result == null) result = defaultCase(theEObject);
         return result;
       }
+      case SdtmPackage.PLANNED_STUDY_DAY:
+      {
+        PlannedStudyDay plannedStudyDay = (PlannedStudyDay)theEObject;
+        T result = casePlannedStudyDay(plannedStudyDay);
+        if (result == null) result = caseObservation(plannedStudyDay);
+        if (result == null) result = caseClinicalStatement(plannedStudyDay);
+        if (result == null) result = caseAct(plannedStudyDay);
+        if (result == null) result = caseInfrastructureRoot(plannedStudyDay);
+        if (result == null) result = defaultCase(theEObject);
+        return result;
+      }
+      case SdtmPackage.EXCLUSION_REASON:
+      {
+        ExclusionReason exclusionReason = (ExclusionReason)theEObject;
+        T result = caseExclusionReason(exclusionReason);
+        if (result == null) result = caseObservation(exclusionReason);
+        if (result == null) result = caseClinicalStatement(exclusionReason);
+        if (result == null) result = caseAct(exclusionReason);
+        if (result == null) result = caseInfrastructureRoot(exclusionReason);
+        if (result == null) result = defaultCase(theEObject);
+        return result;
+      }
       case SdtmPackage.ECG_TEST_RESULT:
       {
         ECGTestResult ecgTestResult = (ECGTestResult)theEObject;
@@ -304,28 +316,6 @@ public class SdtmSwitch<T>
         if (result == null) result = caseClinicalStatement(ecgTestResult);
         if (result == null) result = caseAct(ecgTestResult);
         if (result == null) result = caseInfrastructureRoot(ecgTestResult);
-        if (result == null) result = defaultCase(theEObject);
-        return result;
-      }
-      case SdtmPackage.BASELINE_INDICATOR:
-      {
-        BaselineIndicator baselineIndicator = (BaselineIndicator)theEObject;
-        T result = caseBaselineIndicator(baselineIndicator);
-        if (result == null) result = caseObservation(baselineIndicator);
-        if (result == null) result = caseClinicalStatement(baselineIndicator);
-        if (result == null) result = caseAct(baselineIndicator);
-        if (result == null) result = caseInfrastructureRoot(baselineIndicator);
-        if (result == null) result = defaultCase(theEObject);
-        return result;
-      }
-      case SdtmPackage.DERIVED_DATA_INDICATOR:
-      {
-        DerivedDataIndicator derivedDataIndicator = (DerivedDataIndicator)theEObject;
-        T result = caseDerivedDataIndicator(derivedDataIndicator);
-        if (result == null) result = caseObservation(derivedDataIndicator);
-        if (result == null) result = caseClinicalStatement(derivedDataIndicator);
-        if (result == null) result = caseAct(derivedDataIndicator);
-        if (result == null) result = caseInfrastructureRoot(derivedDataIndicator);
         if (result == null) result = defaultCase(theEObject);
         return result;
       }
@@ -340,14 +330,14 @@ public class SdtmSwitch<T>
         if (result == null) result = defaultCase(theEObject);
         return result;
       }
-      case SdtmPackage.NON_HUMAN_LABORATORY_TEST_RESULT:
+      case SdtmPackage.NONHUMAN_LABORATORY_TEST_RESULT:
       {
-        NonHumanLaboratoryTestResult nonHumanLaboratoryTestResult = (NonHumanLaboratoryTestResult)theEObject;
-        T result = caseNonHumanLaboratoryTestResult(nonHumanLaboratoryTestResult);
-        if (result == null) result = caseObservation(nonHumanLaboratoryTestResult);
-        if (result == null) result = caseClinicalStatement(nonHumanLaboratoryTestResult);
-        if (result == null) result = caseAct(nonHumanLaboratoryTestResult);
-        if (result == null) result = caseInfrastructureRoot(nonHumanLaboratoryTestResult);
+        NonhumanLaboratoryTestResult nonhumanLaboratoryTestResult = (NonhumanLaboratoryTestResult)theEObject;
+        T result = caseNonhumanLaboratoryTestResult(nonhumanLaboratoryTestResult);
+        if (result == null) result = caseObservation(nonhumanLaboratoryTestResult);
+        if (result == null) result = caseClinicalStatement(nonhumanLaboratoryTestResult);
+        if (result == null) result = caseAct(nonhumanLaboratoryTestResult);
+        if (result == null) result = caseInfrastructureRoot(nonhumanLaboratoryTestResult);
         if (result == null) result = defaultCase(theEObject);
         return result;
       }
@@ -581,13 +571,13 @@ public class SdtmSwitch<T>
         if (result == null) result = defaultCase(theEObject);
         return result;
       }
-      case SdtmPackage.STUDY_TEST_PERFORMER:
+      case SdtmPackage.STUDY_TEST_ORGANIZATION:
       {
-        StudyTestPerformer studyTestPerformer = (StudyTestPerformer)theEObject;
-        T result = caseStudyTestPerformer(studyTestPerformer);
-        if (result == null) result = caseParticipant1(studyTestPerformer);
-        if (result == null) result = caseParticipation(studyTestPerformer);
-        if (result == null) result = caseInfrastructureRoot(studyTestPerformer);
+        StudyTestOrganization studyTestOrganization = (StudyTestOrganization)theEObject;
+        T result = caseStudyTestOrganization(studyTestOrganization);
+        if (result == null) result = caseParticipant1(studyTestOrganization);
+        if (result == null) result = caseParticipation(studyTestOrganization);
+        if (result == null) result = caseInfrastructureRoot(studyTestOrganization);
         if (result == null) result = defaultCase(theEObject);
         return result;
       }
@@ -622,46 +612,46 @@ public class SdtmSwitch<T>
         if (result == null) result = defaultCase(theEObject);
         return result;
       }
-      case SdtmPackage.NON_HUMAN_SUBJECT_DATA_DOCUMENT_BODY:
+      case SdtmPackage.NONHUMAN_SUBJECT_DATA_DOCUMENT_BODY:
       {
-        NonHumanSubjectDataDocumentBody nonHumanSubjectDataDocumentBody = (NonHumanSubjectDataDocumentBody)theEObject;
-        T result = caseNonHumanSubjectDataDocumentBody(nonHumanSubjectDataDocumentBody);
-        if (result == null) result = caseSection(nonHumanSubjectDataDocumentBody);
-        if (result == null) result = caseAct(nonHumanSubjectDataDocumentBody);
-        if (result == null) result = caseInfrastructureRoot(nonHumanSubjectDataDocumentBody);
+        NonhumanSubjectDataDocumentBody nonhumanSubjectDataDocumentBody = (NonhumanSubjectDataDocumentBody)theEObject;
+        T result = caseNonhumanSubjectDataDocumentBody(nonhumanSubjectDataDocumentBody);
+        if (result == null) result = caseSection(nonhumanSubjectDataDocumentBody);
+        if (result == null) result = caseAct(nonhumanSubjectDataDocumentBody);
+        if (result == null) result = caseInfrastructureRoot(nonhumanSubjectDataDocumentBody);
         if (result == null) result = defaultCase(theEObject);
         return result;
       }
-      case SdtmPackage.NON_HUMAN_EXPOSURE:
+      case SdtmPackage.NONHUMAN_SUBJECT_DEMOGRAPHICS:
       {
-        NonHumanExposure nonHumanExposure = (NonHumanExposure)theEObject;
-        T result = caseNonHumanExposure(nonHumanExposure);
-        if (result == null) result = caseSubstanceAdministration(nonHumanExposure);
-        if (result == null) result = caseClinicalStatement(nonHumanExposure);
-        if (result == null) result = caseAct(nonHumanExposure);
-        if (result == null) result = caseInfrastructureRoot(nonHumanExposure);
+        NonhumanSubjectDemographics nonhumanSubjectDemographics = (NonhumanSubjectDemographics)theEObject;
+        T result = caseNonhumanSubjectDemographics(nonhumanSubjectDemographics);
+        if (result == null) result = caseOrganizer(nonhumanSubjectDemographics);
+        if (result == null) result = caseClinicalStatement(nonhumanSubjectDemographics);
+        if (result == null) result = caseAct(nonhumanSubjectDemographics);
+        if (result == null) result = caseInfrastructureRoot(nonhumanSubjectDemographics);
         if (result == null) result = defaultCase(theEObject);
         return result;
       }
-      case SdtmPackage.NON_HUMAN_DISPOSITION:
+      case SdtmPackage.NONHUMAN_DISPOSITION:
       {
-        NonHumanDisposition nonHumanDisposition = (NonHumanDisposition)theEObject;
-        T result = caseNonHumanDisposition(nonHumanDisposition);
-        if (result == null) result = caseCDA_Act(nonHumanDisposition);
-        if (result == null) result = caseClinicalStatement(nonHumanDisposition);
-        if (result == null) result = caseAct(nonHumanDisposition);
-        if (result == null) result = caseInfrastructureRoot(nonHumanDisposition);
+        NonhumanDisposition nonhumanDisposition = (NonhumanDisposition)theEObject;
+        T result = caseNonhumanDisposition(nonhumanDisposition);
+        if (result == null) result = caseCDA_Act(nonhumanDisposition);
+        if (result == null) result = caseClinicalStatement(nonhumanDisposition);
+        if (result == null) result = caseAct(nonhumanDisposition);
+        if (result == null) result = caseInfrastructureRoot(nonhumanDisposition);
         if (result == null) result = defaultCase(theEObject);
         return result;
       }
-      case SdtmPackage.HUMAN_CLINICAL_LABORATORY_TEST_RESULT:
+      case SdtmPackage.NONHUMAN_EXPOSURE:
       {
-        HumanClinicalLaboratoryTestResult humanClinicalLaboratoryTestResult = (HumanClinicalLaboratoryTestResult)theEObject;
-        T result = caseHumanClinicalLaboratoryTestResult(humanClinicalLaboratoryTestResult);
-        if (result == null) result = caseObservation(humanClinicalLaboratoryTestResult);
-        if (result == null) result = caseClinicalStatement(humanClinicalLaboratoryTestResult);
-        if (result == null) result = caseAct(humanClinicalLaboratoryTestResult);
-        if (result == null) result = caseInfrastructureRoot(humanClinicalLaboratoryTestResult);
+        NonhumanExposure nonhumanExposure = (NonhumanExposure)theEObject;
+        T result = caseNonhumanExposure(nonhumanExposure);
+        if (result == null) result = caseSubstanceAdministration(nonhumanExposure);
+        if (result == null) result = caseClinicalStatement(nonhumanExposure);
+        if (result == null) result = caseAct(nonhumanExposure);
+        if (result == null) result = caseInfrastructureRoot(nonhumanExposure);
         if (result == null) result = defaultCase(theEObject);
         return result;
       }
@@ -731,14 +721,14 @@ public class SdtmSwitch<T>
         if (result == null) result = defaultCase(theEObject);
         return result;
       }
-      case SdtmPackage.MICROSCOPIC_FINDINGS:
+      case SdtmPackage.MICROSCOPIC_FINDING:
       {
-        MicroscopicFindings microscopicFindings = (MicroscopicFindings)theEObject;
-        T result = caseMicroscopicFindings(microscopicFindings);
-        if (result == null) result = caseObservation(microscopicFindings);
-        if (result == null) result = caseClinicalStatement(microscopicFindings);
-        if (result == null) result = caseAct(microscopicFindings);
-        if (result == null) result = caseInfrastructureRoot(microscopicFindings);
+        MicroscopicFinding microscopicFinding = (MicroscopicFinding)theEObject;
+        T result = caseMicroscopicFinding(microscopicFinding);
+        if (result == null) result = caseObservation(microscopicFinding);
+        if (result == null) result = caseClinicalStatement(microscopicFinding);
+        if (result == null) result = caseAct(microscopicFinding);
+        if (result == null) result = caseInfrastructureRoot(microscopicFinding);
         if (result == null) result = defaultCase(theEObject);
         return result;
       }
@@ -775,6 +765,17 @@ public class SdtmSwitch<T>
         if (result == null) result = defaultCase(theEObject);
         return result;
       }
+      case SdtmPackage.HUMAN_CLINICAL_LABORATORY_TEST_RESULT:
+      {
+        HumanClinicalLaboratoryTestResult humanClinicalLaboratoryTestResult = (HumanClinicalLaboratoryTestResult)theEObject;
+        T result = caseHumanClinicalLaboratoryTestResult(humanClinicalLaboratoryTestResult);
+        if (result == null) result = caseObservation(humanClinicalLaboratoryTestResult);
+        if (result == null) result = caseClinicalStatement(humanClinicalLaboratoryTestResult);
+        if (result == null) result = caseAct(humanClinicalLaboratoryTestResult);
+        if (result == null) result = caseInfrastructureRoot(humanClinicalLaboratoryTestResult);
+        if (result == null) result = defaultCase(theEObject);
+        return result;
+      }
       case SdtmPackage.SUBJECT_POOL:
       {
         SubjectPool subjectPool = (SubjectPool)theEObject;
@@ -783,6 +784,49 @@ public class SdtmSwitch<T>
         if (result == null) result = caseClinicalStatement(subjectPool);
         if (result == null) result = caseAct(subjectPool);
         if (result == null) result = caseInfrastructureRoot(subjectPool);
+        if (result == null) result = defaultCase(theEObject);
+        return result;
+      }
+      case SdtmPackage.MASS_IDENTIFICATION:
+      {
+        MassIdentification massIdentification = (MassIdentification)theEObject;
+        T result = caseMassIdentification(massIdentification);
+        if (result == null) result = caseParticipant2(massIdentification);
+        if (result == null) result = caseParticipation(massIdentification);
+        if (result == null) result = caseInfrastructureRoot(massIdentification);
+        if (result == null) result = defaultCase(theEObject);
+        return result;
+      }
+      case SdtmPackage.STUDY_SUBJECT_INTERVENTION:
+      {
+        StudySubjectIntervention studySubjectIntervention = (StudySubjectIntervention)theEObject;
+        T result = caseStudySubjectIntervention(studySubjectIntervention);
+        if (result == null) result = caseSubstanceAdministration(studySubjectIntervention);
+        if (result == null) result = caseClinicalStatement(studySubjectIntervention);
+        if (result == null) result = caseAct(studySubjectIntervention);
+        if (result == null) result = caseInfrastructureRoot(studySubjectIntervention);
+        if (result == null) result = defaultCase(theEObject);
+        return result;
+      }
+      case SdtmPackage.STUDY_SUBJECT_EVENT:
+      {
+        StudySubjectEvent studySubjectEvent = (StudySubjectEvent)theEObject;
+        T result = caseStudySubjectEvent(studySubjectEvent);
+        if (result == null) result = caseObservation(studySubjectEvent);
+        if (result == null) result = caseClinicalStatement(studySubjectEvent);
+        if (result == null) result = caseAct(studySubjectEvent);
+        if (result == null) result = caseInfrastructureRoot(studySubjectEvent);
+        if (result == null) result = defaultCase(theEObject);
+        return result;
+      }
+      case SdtmPackage.STUDY_SUBJECT_FINDING:
+      {
+        StudySubjectFinding studySubjectFinding = (StudySubjectFinding)theEObject;
+        T result = caseStudySubjectFinding(studySubjectFinding);
+        if (result == null) result = caseObservation(studySubjectFinding);
+        if (result == null) result = caseClinicalStatement(studySubjectFinding);
+        if (result == null) result = caseAct(studySubjectFinding);
+        if (result == null) result = caseInfrastructureRoot(studySubjectFinding);
         if (result == null) result = defaultCase(theEObject);
         return result;
       }
@@ -1031,6 +1075,22 @@ public class SdtmSwitch<T>
   }
 
   /**
+   * Returns the result of interpreting the object as an instance of '<em>Exclusion Reason</em>'.
+   * <!-- begin-user-doc -->
+   * This implementation returns null;
+   * returning a non-null result will terminate the switch.
+   * <!-- end-user-doc -->
+   * @param object the target of the switch.
+   * @return the result of interpreting the object as an instance of '<em>Exclusion Reason</em>'.
+   * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+   * @generated
+   */
+  public T caseExclusionReason(ExclusionReason object)
+  {
+    return null;
+  }
+
+  /**
    * Returns the result of interpreting the object as an instance of '<em>Timing Reference</em>'.
    * <!-- begin-user-doc -->
    * This implementation returns null;
@@ -1079,38 +1139,6 @@ public class SdtmSwitch<T>
   }
 
   /**
-   * Returns the result of interpreting the object as an instance of '<em>Baseline Indicator</em>'.
-   * <!-- begin-user-doc -->
-   * This implementation returns null;
-   * returning a non-null result will terminate the switch.
-   * <!-- end-user-doc -->
-   * @param object the target of the switch.
-   * @return the result of interpreting the object as an instance of '<em>Baseline Indicator</em>'.
-   * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
-   * @generated
-   */
-  public T caseBaselineIndicator(BaselineIndicator object)
-  {
-    return null;
-  }
-
-  /**
-   * Returns the result of interpreting the object as an instance of '<em>Derived Data Indicator</em>'.
-   * <!-- begin-user-doc -->
-   * This implementation returns null;
-   * returning a non-null result will terminate the switch.
-   * <!-- end-user-doc -->
-   * @param object the target of the switch.
-   * @return the result of interpreting the object as an instance of '<em>Derived Data Indicator</em>'.
-   * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
-   * @generated
-   */
-  public T caseDerivedDataIndicator(DerivedDataIndicator object)
-  {
-    return null;
-  }
-
-  /**
    * Returns the result of interpreting the object as an instance of '<em>Inclusionor Exclusion Criteria Not Met</em>'.
    * <!-- begin-user-doc -->
    * This implementation returns null;
@@ -1127,17 +1155,17 @@ public class SdtmSwitch<T>
   }
 
   /**
-   * Returns the result of interpreting the object as an instance of '<em>Non Human Laboratory Test Result</em>'.
+   * Returns the result of interpreting the object as an instance of '<em>Nonhuman Laboratory Test Result</em>'.
    * <!-- begin-user-doc -->
    * This implementation returns null;
    * returning a non-null result will terminate the switch.
    * <!-- end-user-doc -->
    * @param object the target of the switch.
-   * @return the result of interpreting the object as an instance of '<em>Non Human Laboratory Test Result</em>'.
+   * @return the result of interpreting the object as an instance of '<em>Nonhuman Laboratory Test Result</em>'.
    * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
    * @generated
    */
-  public T caseNonHumanLaboratoryTestResult(NonHumanLaboratoryTestResult object)
+  public T caseNonhumanLaboratoryTestResult(NonhumanLaboratoryTestResult object)
   {
     return null;
   }
@@ -1479,17 +1507,17 @@ public class SdtmSwitch<T>
   }
 
   /**
-   * Returns the result of interpreting the object as an instance of '<em>Study Test Performer</em>'.
+   * Returns the result of interpreting the object as an instance of '<em>Study Test Organization</em>'.
    * <!-- begin-user-doc -->
    * This implementation returns null;
    * returning a non-null result will terminate the switch.
    * <!-- end-user-doc -->
    * @param object the target of the switch.
-   * @return the result of interpreting the object as an instance of '<em>Study Test Performer</em>'.
+   * @return the result of interpreting the object as an instance of '<em>Study Test Organization</em>'.
    * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
    * @generated
    */
-  public T caseStudyTestPerformer(StudyTestPerformer object)
+  public T caseStudyTestOrganization(StudyTestOrganization object)
   {
     return null;
   }
@@ -1543,49 +1571,65 @@ public class SdtmSwitch<T>
   }
 
   /**
-   * Returns the result of interpreting the object as an instance of '<em>Non Human Subject Data Document Body</em>'.
+   * Returns the result of interpreting the object as an instance of '<em>Nonhuman Subject Data Document Body</em>'.
    * <!-- begin-user-doc -->
    * This implementation returns null;
    * returning a non-null result will terminate the switch.
    * <!-- end-user-doc -->
    * @param object the target of the switch.
-   * @return the result of interpreting the object as an instance of '<em>Non Human Subject Data Document Body</em>'.
+   * @return the result of interpreting the object as an instance of '<em>Nonhuman Subject Data Document Body</em>'.
    * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
    * @generated
    */
-  public T caseNonHumanSubjectDataDocumentBody(NonHumanSubjectDataDocumentBody object)
+  public T caseNonhumanSubjectDataDocumentBody(NonhumanSubjectDataDocumentBody object)
   {
     return null;
   }
 
   /**
-   * Returns the result of interpreting the object as an instance of '<em>Non Human Exposure</em>'.
+   * Returns the result of interpreting the object as an instance of '<em>Nonhuman Subject Demographics</em>'.
    * <!-- begin-user-doc -->
    * This implementation returns null;
    * returning a non-null result will terminate the switch.
    * <!-- end-user-doc -->
    * @param object the target of the switch.
-   * @return the result of interpreting the object as an instance of '<em>Non Human Exposure</em>'.
+   * @return the result of interpreting the object as an instance of '<em>Nonhuman Subject Demographics</em>'.
    * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
    * @generated
    */
-  public T caseNonHumanExposure(NonHumanExposure object)
+  public T caseNonhumanSubjectDemographics(NonhumanSubjectDemographics object)
   {
     return null;
   }
 
   /**
-   * Returns the result of interpreting the object as an instance of '<em>Non Human Disposition</em>'.
+   * Returns the result of interpreting the object as an instance of '<em>Nonhuman Disposition</em>'.
    * <!-- begin-user-doc -->
    * This implementation returns null;
    * returning a non-null result will terminate the switch.
    * <!-- end-user-doc -->
    * @param object the target of the switch.
-   * @return the result of interpreting the object as an instance of '<em>Non Human Disposition</em>'.
+   * @return the result of interpreting the object as an instance of '<em>Nonhuman Disposition</em>'.
    * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
    * @generated
    */
-  public T caseNonHumanDisposition(NonHumanDisposition object)
+  public T caseNonhumanDisposition(NonhumanDisposition object)
+  {
+    return null;
+  }
+
+  /**
+   * Returns the result of interpreting the object as an instance of '<em>Nonhuman Exposure</em>'.
+   * <!-- begin-user-doc -->
+   * This implementation returns null;
+   * returning a non-null result will terminate the switch.
+   * <!-- end-user-doc -->
+   * @param object the target of the switch.
+   * @return the result of interpreting the object as an instance of '<em>Nonhuman Exposure</em>'.
+   * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+   * @generated
+   */
+  public T caseNonhumanExposure(NonhumanExposure object)
   {
     return null;
   }
@@ -1703,17 +1747,17 @@ public class SdtmSwitch<T>
   }
 
   /**
-   * Returns the result of interpreting the object as an instance of '<em>Microscopic Findings</em>'.
+   * Returns the result of interpreting the object as an instance of '<em>Microscopic Finding</em>'.
    * <!-- begin-user-doc -->
    * This implementation returns null;
    * returning a non-null result will terminate the switch.
    * <!-- end-user-doc -->
    * @param object the target of the switch.
-   * @return the result of interpreting the object as an instance of '<em>Microscopic Findings</em>'.
+   * @return the result of interpreting the object as an instance of '<em>Microscopic Finding</em>'.
    * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
    * @generated
    */
-  public T caseMicroscopicFindings(MicroscopicFindings object)
+  public T caseMicroscopicFinding(MicroscopicFinding object)
   {
     return null;
   }
@@ -1778,6 +1822,70 @@ public class SdtmSwitch<T>
    * @generated
    */
   public T caseSubjectPool(SubjectPool object)
+  {
+    return null;
+  }
+
+  /**
+   * Returns the result of interpreting the object as an instance of '<em>Mass Identification</em>'.
+   * <!-- begin-user-doc -->
+   * This implementation returns null;
+   * returning a non-null result will terminate the switch.
+   * <!-- end-user-doc -->
+   * @param object the target of the switch.
+   * @return the result of interpreting the object as an instance of '<em>Mass Identification</em>'.
+   * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+   * @generated
+   */
+  public T caseMassIdentification(MassIdentification object)
+  {
+    return null;
+  }
+
+  /**
+   * Returns the result of interpreting the object as an instance of '<em>Study Subject Intervention</em>'.
+   * <!-- begin-user-doc -->
+   * This implementation returns null;
+   * returning a non-null result will terminate the switch.
+   * <!-- end-user-doc -->
+   * @param object the target of the switch.
+   * @return the result of interpreting the object as an instance of '<em>Study Subject Intervention</em>'.
+   * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+   * @generated
+   */
+  public T caseStudySubjectIntervention(StudySubjectIntervention object)
+  {
+    return null;
+  }
+
+  /**
+   * Returns the result of interpreting the object as an instance of '<em>Study Subject Event</em>'.
+   * <!-- begin-user-doc -->
+   * This implementation returns null;
+   * returning a non-null result will terminate the switch.
+   * <!-- end-user-doc -->
+   * @param object the target of the switch.
+   * @return the result of interpreting the object as an instance of '<em>Study Subject Event</em>'.
+   * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+   * @generated
+   */
+  public T caseStudySubjectEvent(StudySubjectEvent object)
+  {
+    return null;
+  }
+
+  /**
+   * Returns the result of interpreting the object as an instance of '<em>Study Subject Finding</em>'.
+   * <!-- begin-user-doc -->
+   * This implementation returns null;
+   * returning a non-null result will terminate the switch.
+   * <!-- end-user-doc -->
+   * @param object the target of the switch.
+   * @return the result of interpreting the object as an instance of '<em>Study Subject Finding</em>'.
+   * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+   * @generated
+   */
+  public T caseStudySubjectFinding(StudySubjectFinding object)
   {
     return null;
   }
@@ -2002,6 +2110,22 @@ public class SdtmSwitch<T>
    * @generated
    */
   public T caseParticipant1(Participant1 object)
+  {
+    return null;
+  }
+
+  /**
+   * Returns the result of interpreting the object as an instance of '<em>Participant2</em>'.
+   * <!-- begin-user-doc -->
+   * This implementation returns null;
+   * returning a non-null result will terminate the switch.
+   * <!-- end-user-doc -->
+   * @param object the target of the switch.
+   * @return the result of interpreting the object as an instance of '<em>Participant2</em>'.
+   * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+   * @generated
+   */
+  public T caseParticipant2(Participant2 object)
   {
     return null;
   }

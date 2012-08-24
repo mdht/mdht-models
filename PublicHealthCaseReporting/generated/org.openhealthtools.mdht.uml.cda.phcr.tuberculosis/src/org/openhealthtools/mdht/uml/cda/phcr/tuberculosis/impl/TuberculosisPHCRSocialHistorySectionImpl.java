@@ -10,6 +10,7 @@
  *******************************************************************************/
 package org.openhealthtools.mdht.uml.cda.phcr.tuberculosis.impl;
 
+import java.lang.Iterable;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
@@ -17,6 +18,8 @@ import org.eclipse.emf.common.util.EList;
 
 import org.eclipse.emf.ecore.EClass;
 
+import org.eclipse.emf.ecore.EObject;
+import org.openhealthtools.mdht.emf.runtime.util.Initializer;
 import org.openhealthtools.mdht.uml.cda.Observation;
 import org.openhealthtools.mdht.uml.cda.phcr.impl.PhcrSocialHistorySectionImpl;
 
@@ -43,113 +46,122 @@ import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
  */
 public class TuberculosisPHCRSocialHistorySectionImpl extends PhcrSocialHistorySectionImpl implements TuberculosisPHCRSocialHistorySection {
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	protected TuberculosisPHCRSocialHistorySectionImpl() {
-		super();
-	}
+    super();
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	@Override
 	protected EClass eStaticClass() {
-		return TuberculosisPackage.Literals.TUBERCULOSIS_PHCR_SOCIAL_HISTORY_SECTION;
-	}
+    return TuberculosisPackage.Literals.TUBERCULOSIS_PHCR_SOCIAL_HISTORY_SECTION;
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateTuberculosisPHCRSocialHistorySectionTuberculosisPossibleExposureLocationAct(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return TuberculosisPHCRSocialHistorySectionOperations.validateTuberculosisPHCRSocialHistorySectionTuberculosisPossibleExposureLocationAct(this, diagnostics, context);
-	}
+    return TuberculosisPHCRSocialHistorySectionOperations.validateTuberculosisPHCRSocialHistorySectionTuberculosisPossibleExposureLocationAct(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateTuberculosisPHCRSocialHistorySectionTuberculosisSocioBehavioralBooleanRiskFactorObservation(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return TuberculosisPHCRSocialHistorySectionOperations.validateTuberculosisPHCRSocialHistorySectionTuberculosisSocioBehavioralBooleanRiskFactorObservation(this, diagnostics, context);
-	}
+    return TuberculosisPHCRSocialHistorySectionOperations.validateTuberculosisPHCRSocialHistorySectionTuberculosisSocioBehavioralBooleanRiskFactorObservation(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateTuberculosisPHCRSocialHistorySectionSmokingStatusObservation(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return TuberculosisPHCRSocialHistorySectionOperations.validateTuberculosisPHCRSocialHistorySectionSmokingStatusObservation(this, diagnostics, context);
-	}
+    return TuberculosisPHCRSocialHistorySectionOperations.validateTuberculosisPHCRSocialHistorySectionSmokingStatusObservation(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateTuberculosisPHCRSocialHistorySectionHIVStatusObservation(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return TuberculosisPHCRSocialHistorySectionOperations.validateTuberculosisPHCRSocialHistorySectionHIVStatusObservation(this, diagnostics, context);
-	}
+    return TuberculosisPHCRSocialHistorySectionOperations.validateTuberculosisPHCRSocialHistorySectionHIVStatusObservation(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public EList<TuberculosisPossibleExposureLocationAct> getTuberculosisPossibleExposureLocationActs() {
-		return TuberculosisPHCRSocialHistorySectionOperations.getTuberculosisPossibleExposureLocationActs(this);
-	}
+    return TuberculosisPHCRSocialHistorySectionOperations.getTuberculosisPossibleExposureLocationActs(this);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public EList<TuberculosisSocioBehavioralBooleanRiskFactorObservation> getTuberculosisSocioBehavioralBooleanRiskFactorObservations() {
-		return TuberculosisPHCRSocialHistorySectionOperations.getTuberculosisSocioBehavioralBooleanRiskFactorObservations(this);
-	}
+    return TuberculosisPHCRSocialHistorySectionOperations.getTuberculosisSocioBehavioralBooleanRiskFactorObservations(this);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public EList<SmokingStatusObservation> getSmokingStatusObservations() {
-		return TuberculosisPHCRSocialHistorySectionOperations.getSmokingStatusObservations(this);
-	}
+    return TuberculosisPHCRSocialHistorySectionOperations.getSmokingStatusObservations(this);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public HIVStatusObservation getHIVStatusObservation() {
-		return TuberculosisPHCRSocialHistorySectionOperations.getHIVStatusObservation(this);
-	}
+    return TuberculosisPHCRSocialHistorySectionOperations.getHIVStatusObservation(this);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	@Override
 	public boolean validateSocialHistorySectionTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return TuberculosisPHCRSocialHistorySectionOperations.validateSocialHistorySectionTemplateId(this, diagnostics, context);
-	}
+    return TuberculosisPHCRSocialHistorySectionOperations.validateSocialHistorySectionTemplateId(this, diagnostics, context);
+  }
 
   /**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   public TuberculosisPHCRSocialHistorySection init() {
-    	CDAUtil.init(this);
-    	return this;
-	}
+      return Initializer.Util.init(this);
+  }
+
+  /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    public TuberculosisPHCRSocialHistorySection init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
 } //TuberculosisPHCRSocialHistorySectionImpl

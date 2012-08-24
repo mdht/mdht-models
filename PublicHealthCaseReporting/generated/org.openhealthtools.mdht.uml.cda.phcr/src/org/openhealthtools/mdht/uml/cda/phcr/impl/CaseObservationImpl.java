@@ -10,11 +10,14 @@
  *******************************************************************************/
 package org.openhealthtools.mdht.uml.cda.phcr.impl;
 
+import java.lang.Iterable;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.common.util.EList;
 import org.eclipse.emf.ecore.EClass;
+import org.eclipse.emf.ecore.EObject;
+import org.openhealthtools.mdht.emf.runtime.util.Initializer;
 import org.openhealthtools.mdht.uml.cda.ccd.ProblemStatusObservation;
 import org.openhealthtools.mdht.uml.cda.ccd.impl.ProblemObservationImpl;
 import org.openhealthtools.mdht.uml.cda.phcr.CaseObservation;
@@ -34,187 +37,197 @@ import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
  */
 public class CaseObservationImpl extends ProblemObservationImpl implements CaseObservation {
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	protected CaseObservationImpl() {
-		super();
-	}
+    super();
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	@Override
 	protected EClass eStaticClass() {
-		return PhcrPackage.Literals.CASE_OBSERVATION;
-	}
+    return PhcrPackage.Literals.CASE_OBSERVATION;
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateCaseObservationEffectiveTimeLow(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return CaseObservationOperations.validateCaseObservationEffectiveTimeLow(this, diagnostics, context);
-	}
+    return CaseObservationOperations.validateCaseObservationEffectiveTimeLow(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateCaseObservationAuthor(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return CaseObservationOperations.validateCaseObservationAuthor(this, diagnostics, context);
-	}
+    return CaseObservationOperations.validateCaseObservationAuthor(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateCaseObservationAuthorAssignedAuthor(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return CaseObservationOperations.validateCaseObservationAuthorAssignedAuthor(this, diagnostics, context);
-	}
+    return CaseObservationOperations.validateCaseObservationAuthorAssignedAuthor(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateCaseObservationClassCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return CaseObservationOperations.validateCaseObservationClassCode(this, diagnostics, context);
-	}
+    return CaseObservationOperations.validateCaseObservationClassCode(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateCaseObservationEffectiveTime(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return CaseObservationOperations.validateCaseObservationEffectiveTime(this, diagnostics, context);
-	}
+    return CaseObservationOperations.validateCaseObservationEffectiveTime(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateCaseObservationValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return CaseObservationOperations.validateCaseObservationValue(this, diagnostics, context);
-	}
+    return CaseObservationOperations.validateCaseObservationValue(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateCaseObservationProblemStatusObservation(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return CaseObservationOperations.validateCaseObservationProblemStatusObservation(this, diagnostics, context);
-	}
+    return CaseObservationOperations.validateCaseObservationProblemStatusObservation(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateCaseObservationSignsAndSymptomsObservation(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return CaseObservationOperations.validateCaseObservationSignsAndSymptomsObservation(this, diagnostics, context);
-	}
+    return CaseObservationOperations.validateCaseObservationSignsAndSymptomsObservation(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public ProblemStatusObservation getProblemStatusObservation() {
-		return CaseObservationOperations.getProblemStatusObservation(this);
-	}
+    return CaseObservationOperations.getProblemStatusObservation(this);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateCaseObservationMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return CaseObservationOperations.validateCaseObservationMoodCode(this, diagnostics, context);
-	}
+    return CaseObservationOperations.validateCaseObservationMoodCode(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateCaseObservationId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return CaseObservationOperations.validateCaseObservationId(this, diagnostics, context);
-	}
+    return CaseObservationOperations.validateCaseObservationId(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public boolean validateCaseObservationCodeP(DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+    return CaseObservationOperations.validateCaseObservationCodeP(this, diagnostics, context);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateCaseObservationCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return CaseObservationOperations.validateCaseObservationCode(this, diagnostics, context);
-	}
+    return CaseObservationOperations.validateCaseObservationCode(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateProblemObservationCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return CaseObservationOperations.validateProblemObservationCode(this, diagnostics, context);
-	}
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public boolean validateCaseObservationStatusCodeP(DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+    return CaseObservationOperations.validateCaseObservationStatusCodeP(this, diagnostics, context);
+  }
 
-	/**
-	 * <!-- begin-user-doc -->
+  /**
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateCaseObservationStatusCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return CaseObservationOperations.validateCaseObservationStatusCode(this, diagnostics, context);
-	}
+    return CaseObservationOperations.validateCaseObservationStatusCode(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public EList<SignsAndSymptomsObservation> getSignsAndSymptomsObservations() {
-		return CaseObservationOperations.getSignsAndSymptomsObservations(this);
-	}
+    return CaseObservationOperations.getSignsAndSymptomsObservations(this);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	@Override
 	public boolean validateProblemObservationTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return CaseObservationOperations.validateProblemObservationTemplateId(this, diagnostics, context);
-	}
+    return CaseObservationOperations.validateProblemObservationTemplateId(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public boolean validateProblemObservationStatusCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return CaseObservationOperations.validateProblemObservationStatusCode(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public CaseObservation init() {
-    	CDAUtil.init(this);
-    	return this;
-	}
+      return Initializer.Util.init(this);
+  }
+
+  /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    public CaseObservation init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
 	
 } //CaseObservationImpl

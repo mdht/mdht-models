@@ -6,12 +6,15 @@
  */
 package org.openhealthtools.mdht.uml.cda.sdtm.impl;
 
+import java.lang.Iterable;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
 
 import org.eclipse.emf.ecore.EClass;
 
+import org.eclipse.emf.ecore.EObject;
+import org.openhealthtools.mdht.emf.runtime.util.Initializer;
 import org.openhealthtools.mdht.uml.cda.impl.ObservationImpl;
 
 import org.openhealthtools.mdht.uml.cda.sdtm.AdverseEvent;
@@ -733,56 +736,6 @@ public class AdverseEventImpl extends ObservationImpl implements AdverseEvent
    * <!-- end-user-doc -->
    * @generated
    */
-  public boolean validateAdverseEventstudyTreatmentCausalityAssociationstudyTreatmentCausalityClassCodeAdverseEventstudyTreatmentCausalityAssociationstudyTreatmentCausalityClassCode1(DiagnosticChain diagnostics, Map<Object, Object> context)
-  {
-    return AdverseEventOperations.validateAdverseEventstudyTreatmentCausalityAssociationstudyTreatmentCausalityClassCodeAdverseEventstudyTreatmentCausalityAssociationstudyTreatmentCausalityClassCode1(this, diagnostics, context);
-  }
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public boolean validateAdverseEventstudyTreatmentCausalityAssociationstudyTreatmentCausalityCodePAdverseEventstudyTreatmentCausalityAssociationstudyTreatmentCausalityCodeP1(DiagnosticChain diagnostics, Map<Object, Object> context)
-  {
-    return AdverseEventOperations.validateAdverseEventstudyTreatmentCausalityAssociationstudyTreatmentCausalityCodePAdverseEventstudyTreatmentCausalityAssociationstudyTreatmentCausalityCodeP1(this, diagnostics, context);
-  }
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public boolean validateAdverseEventstudyTreatmentCausalityAssociationstudyTreatmentCausalityCodeAdverseEventstudyTreatmentCausalityAssociationstudyTreatmentCausalityCode1(DiagnosticChain diagnostics, Map<Object, Object> context)
-  {
-    return AdverseEventOperations.validateAdverseEventstudyTreatmentCausalityAssociationstudyTreatmentCausalityCodeAdverseEventstudyTreatmentCausalityAssociationstudyTreatmentCausalityCode1(this, diagnostics, context);
-  }
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public boolean validateAdverseEventstudyTreatmentCausalityAssociationstudyTreatmentCausalityMoodCodeAdverseEventstudyTreatmentCausalityAssociationstudyTreatmentCausalityMoodCode1(DiagnosticChain diagnostics, Map<Object, Object> context)
-  {
-    return AdverseEventOperations.validateAdverseEventstudyTreatmentCausalityAssociationstudyTreatmentCausalityMoodCodeAdverseEventstudyTreatmentCausalityAssociationstudyTreatmentCausalityMoodCode1(this, diagnostics, context);
-  }
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public boolean validateAdverseEventstudyTreatmentCausalityAssociationstudyTreatmentCausalityValueAdverseEventstudyTreatmentCausalityAssociationstudyTreatmentCausalityValue1(DiagnosticChain diagnostics, Map<Object, Object> context)
-  {
-    return AdverseEventOperations.validateAdverseEventstudyTreatmentCausalityAssociationstudyTreatmentCausalityValueAdverseEventstudyTreatmentCausalityAssociationstudyTreatmentCausalityValue1(this, diagnostics, context);
-  }
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
   public boolean validateAdverseEventnonStudyTreatmentCausalityAssociationnonStudyTreatmentCausalityClassCode(DiagnosticChain diagnostics, Map<Object, Object> context)
   {
     return AdverseEventOperations.validateAdverseEventnonStudyTreatmentCausalityAssociationnonStudyTreatmentCausalityClassCode(this, diagnostics, context);
@@ -836,46 +789,6 @@ public class AdverseEventImpl extends ObservationImpl implements AdverseEvent
   public boolean validateAdverseEventnonStudyTreatmentCausalityAssociationNonStudyTreatmentCausality(DiagnosticChain diagnostics, Map<Object, Object> context)
   {
     return AdverseEventOperations.validateAdverseEventnonStudyTreatmentCausalityAssociationNonStudyTreatmentCausality(this, diagnostics, context);
-  }
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public boolean validateAdverseEventnonStudyTreatmentCausalityAssociationnonStudyTreatmentCausalityClassCodeAdverseEventnonStudyTreatmentCausalityAssociationnonStudyTreatmentCausalityClassCode1(DiagnosticChain diagnostics, Map<Object, Object> context)
-  {
-    return AdverseEventOperations.validateAdverseEventnonStudyTreatmentCausalityAssociationnonStudyTreatmentCausalityClassCodeAdverseEventnonStudyTreatmentCausalityAssociationnonStudyTreatmentCausalityClassCode1(this, diagnostics, context);
-  }
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public boolean validateAdverseEventnonStudyTreatmentCausalityAssociationnonStudyTreatmentCausalityCodeAdverseEventnonStudyTreatmentCausalityAssociationnonStudyTreatmentCausalityCode1(DiagnosticChain diagnostics, Map<Object, Object> context)
-  {
-    return AdverseEventOperations.validateAdverseEventnonStudyTreatmentCausalityAssociationnonStudyTreatmentCausalityCodeAdverseEventnonStudyTreatmentCausalityAssociationnonStudyTreatmentCausalityCode1(this, diagnostics, context);
-  }
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public boolean validateAdverseEventnonStudyTreatmentCausalityAssociationnonStudyTreatmentCausalityMoodCodeAdverseEventnonStudyTreatmentCausalityAssociationnonStudyTreatmentCausalityMoodCode1(DiagnosticChain diagnostics, Map<Object, Object> context)
-  {
-    return AdverseEventOperations.validateAdverseEventnonStudyTreatmentCausalityAssociationnonStudyTreatmentCausalityMoodCodeAdverseEventnonStudyTreatmentCausalityAssociationnonStudyTreatmentCausalityMoodCode1(this, diagnostics, context);
-  }
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public boolean validateAdverseEventnonStudyTreatmentCausalityAssociationnonStudyTreatmentCausalityValueAdverseEventnonStudyTreatmentCausalityAssociationnonStudyTreatmentCausalityValue1(DiagnosticChain diagnostics, Map<Object, Object> context)
-  {
-    return AdverseEventOperations.validateAdverseEventnonStudyTreatmentCausalityAssociationnonStudyTreatmentCausalityValueAdverseEventnonStudyTreatmentCausalityAssociationnonStudyTreatmentCausalityValue1(this, diagnostics, context);
   }
 
   /**
@@ -1033,6 +946,16 @@ public class AdverseEventImpl extends ObservationImpl implements AdverseEvent
    * <!-- end-user-doc -->
    * @generated
    */
+  public boolean validateAdverseEventconcomitantTreatmentAssociationconcomitantTreatmentCodeP(DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+    return AdverseEventOperations.validateAdverseEventconcomitantTreatmentAssociationconcomitantTreatmentCodeP(this, diagnostics, context);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
   public boolean validateAdverseEventconcomitantTreatmentAssociationconcomitantTreatmentCode(DiagnosticChain diagnostics, Map<Object, Object> context)
   {
     return AdverseEventOperations.validateAdverseEventconcomitantTreatmentAssociationconcomitantTreatmentCode(this, diagnostics, context);
@@ -1076,46 +999,6 @@ public class AdverseEventImpl extends ObservationImpl implements AdverseEvent
   public boolean validateAdverseEventconcomitantTreatmentAssociationConcomitantTreatment(DiagnosticChain diagnostics, Map<Object, Object> context)
   {
     return AdverseEventOperations.validateAdverseEventconcomitantTreatmentAssociationConcomitantTreatment(this, diagnostics, context);
-  }
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public boolean validateAdverseEventconcomitantTreatmentAssociationconcomitantTreatmentClassCodeAdverseEventconcomitantTreatmentAssociationconcomitantTreatmentClassCode1(DiagnosticChain diagnostics, Map<Object, Object> context)
-  {
-    return AdverseEventOperations.validateAdverseEventconcomitantTreatmentAssociationconcomitantTreatmentClassCodeAdverseEventconcomitantTreatmentAssociationconcomitantTreatmentClassCode1(this, diagnostics, context);
-  }
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public boolean validateAdverseEventconcomitantTreatmentAssociationconcomitantTreatmentCodeAdverseEventconcomitantTreatmentAssociationconcomitantTreatmentCode1(DiagnosticChain diagnostics, Map<Object, Object> context)
-  {
-    return AdverseEventOperations.validateAdverseEventconcomitantTreatmentAssociationconcomitantTreatmentCodeAdverseEventconcomitantTreatmentAssociationconcomitantTreatmentCode1(this, diagnostics, context);
-  }
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public boolean validateAdverseEventconcomitantTreatmentAssociationconcomitantTreatmentMoodCodeAdverseEventconcomitantTreatmentAssociationconcomitantTreatmentMoodCode1(DiagnosticChain diagnostics, Map<Object, Object> context)
-  {
-    return AdverseEventOperations.validateAdverseEventconcomitantTreatmentAssociationconcomitantTreatmentMoodCodeAdverseEventconcomitantTreatmentAssociationconcomitantTreatmentMoodCode1(this, diagnostics, context);
-  }
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public boolean validateAdverseEventconcomitantTreatmentAssociationconcomitantTreatmentValueAdverseEventconcomitantTreatmentAssociationconcomitantTreatmentValue1(DiagnosticChain diagnostics, Map<Object, Object> context)
-  {
-    return AdverseEventOperations.validateAdverseEventconcomitantTreatmentAssociationconcomitantTreatmentValueAdverseEventconcomitantTreatmentAssociationconcomitantTreatmentValue1(this, diagnostics, context);
   }
 
   /**
@@ -1203,66 +1086,6 @@ public class AdverseEventImpl extends ObservationImpl implements AdverseEvent
    * <!-- end-user-doc -->
    * @generated
    */
-  public boolean validateAdverseEventaeToxicityAssociationaeToxicityGradeClassCodeAdverseEventaeToxicityAssociationaeToxicityGradeClassCode1(DiagnosticChain diagnostics, Map<Object, Object> context)
-  {
-    return AdverseEventOperations.validateAdverseEventaeToxicityAssociationaeToxicityGradeClassCodeAdverseEventaeToxicityAssociationaeToxicityGradeClassCode1(this, diagnostics, context);
-  }
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public boolean validateAdverseEventaeToxicityAssociationaeToxicityGradeCodePAdverseEventaeToxicityAssociationaeToxicityGradeCodeP1(DiagnosticChain diagnostics, Map<Object, Object> context)
-  {
-    return AdverseEventOperations.validateAdverseEventaeToxicityAssociationaeToxicityGradeCodePAdverseEventaeToxicityAssociationaeToxicityGradeCodeP1(this, diagnostics, context);
-  }
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public boolean validateAdverseEventaeToxicityAssociationaeToxicityGradeCodeAdverseEventaeToxicityAssociationaeToxicityGradeCode1(DiagnosticChain diagnostics, Map<Object, Object> context)
-  {
-    return AdverseEventOperations.validateAdverseEventaeToxicityAssociationaeToxicityGradeCodeAdverseEventaeToxicityAssociationaeToxicityGradeCode1(this, diagnostics, context);
-  }
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public boolean validateAdverseEventaeToxicityAssociationaeToxicityGradeMoodCodeAdverseEventaeToxicityAssociationaeToxicityGradeMoodCode1(DiagnosticChain diagnostics, Map<Object, Object> context)
-  {
-    return AdverseEventOperations.validateAdverseEventaeToxicityAssociationaeToxicityGradeMoodCodeAdverseEventaeToxicityAssociationaeToxicityGradeMoodCode1(this, diagnostics, context);
-  }
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public boolean validateAdverseEventaeToxicityAssociationaeToxicityGradeValueAdverseEventaeToxicityAssociationaeToxicityGradeValue1(DiagnosticChain diagnostics, Map<Object, Object> context)
-  {
-    return AdverseEventOperations.validateAdverseEventaeToxicityAssociationaeToxicityGradeValueAdverseEventaeToxicityAssociationaeToxicityGradeValue1(this, diagnostics, context);
-  }
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public boolean validateAdverseEventaeToxicityAssociationaeToxicityGradeValuePAdverseEventaeToxicityAssociationaeToxicityGradeValueP1(DiagnosticChain diagnostics, Map<Object, Object> context)
-  {
-    return AdverseEventOperations.validateAdverseEventaeToxicityAssociationaeToxicityGradeValuePAdverseEventaeToxicityAssociationaeToxicityGradeValueP1(this, diagnostics, context);
-  }
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
   public boolean validateAdverseEventadverseEventCategoryAssociationadverseEventCategoryClassCode(DiagnosticChain diagnostics, Map<Object, Object> context)
   {
     return AdverseEventOperations.validateAdverseEventadverseEventCategoryAssociationadverseEventCategoryClassCode(this, diagnostics, context);
@@ -1333,56 +1156,6 @@ public class AdverseEventImpl extends ObservationImpl implements AdverseEvent
    * <!-- end-user-doc -->
    * @generated
    */
-  public boolean validateAdverseEventadverseEventCategoryAssociationadverseEventCategoryClassCodeAdverseEventadverseEventCategoryAssociationadverseEventCategoryClassCode1(DiagnosticChain diagnostics, Map<Object, Object> context)
-  {
-    return AdverseEventOperations.validateAdverseEventadverseEventCategoryAssociationadverseEventCategoryClassCodeAdverseEventadverseEventCategoryAssociationadverseEventCategoryClassCode1(this, diagnostics, context);
-  }
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public boolean validateAdverseEventadverseEventCategoryAssociationadverseEventCategoryCodePAdverseEventadverseEventCategoryAssociationadverseEventCategoryCodeP1(DiagnosticChain diagnostics, Map<Object, Object> context)
-  {
-    return AdverseEventOperations.validateAdverseEventadverseEventCategoryAssociationadverseEventCategoryCodePAdverseEventadverseEventCategoryAssociationadverseEventCategoryCodeP1(this, diagnostics, context);
-  }
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public boolean validateAdverseEventadverseEventCategoryAssociationadverseEventCategoryCodeAdverseEventadverseEventCategoryAssociationadverseEventCategoryCode1(DiagnosticChain diagnostics, Map<Object, Object> context)
-  {
-    return AdverseEventOperations.validateAdverseEventadverseEventCategoryAssociationadverseEventCategoryCodeAdverseEventadverseEventCategoryAssociationadverseEventCategoryCode1(this, diagnostics, context);
-  }
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public boolean validateAdverseEventadverseEventCategoryAssociationadverseEventCategoryMoodCodeAdverseEventadverseEventCategoryAssociationadverseEventCategoryMoodCode1(DiagnosticChain diagnostics, Map<Object, Object> context)
-  {
-    return AdverseEventOperations.validateAdverseEventadverseEventCategoryAssociationadverseEventCategoryMoodCodeAdverseEventadverseEventCategoryAssociationadverseEventCategoryMoodCode1(this, diagnostics, context);
-  }
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public boolean validateAdverseEventadverseEventCategoryAssociationadverseEventCategoryValueAdverseEventadverseEventCategoryAssociationadverseEventCategoryValue1(DiagnosticChain diagnostics, Map<Object, Object> context)
-  {
-    return AdverseEventOperations.validateAdverseEventadverseEventCategoryAssociationadverseEventCategoryValueAdverseEventadverseEventCategoryAssociationadverseEventCategoryValue1(this, diagnostics, context);
-  }
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
   public GroupIdentifier getGroupIdentifier()
   {
     return AdverseEventOperations.getGroupIdentifier(this);
@@ -1434,7 +1207,16 @@ public class AdverseEventImpl extends ObservationImpl implements AdverseEvent
    * @generated
    */
   public AdverseEvent init() {
-    	CDAUtil.init(this);
-    	return this;
+      return Initializer.Util.init(this);
   }
+
+  /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    public AdverseEvent init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
 } //AdverseEventImpl

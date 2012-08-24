@@ -66,838 +66,885 @@ import org.openhealthtools.mdht.uml.hl7.rim.InfrastructureRoot;
  */
 public class CocciAdapterFactory extends AdapterFactoryImpl {
 	/**
-	 * The cached model package.
-	 * <!-- begin-user-doc -->
+   * The cached model package.
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	protected static CocciPackage modelPackage;
 
 	/**
-	 * Creates an instance of the adapter factory.
-	 * <!-- begin-user-doc -->
+   * Creates an instance of the adapter factory.
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public CocciAdapterFactory() {
-		if (modelPackage == null) {
-			modelPackage = CocciPackage.eINSTANCE;
-		}
-	}
+    if (modelPackage == null)
+    {
+      modelPackage = CocciPackage.eINSTANCE;
+    }
+  }
 
 	/**
-	 * Returns whether this factory is applicable for the type of the object.
-	 * <!-- begin-user-doc -->
+   * Returns whether this factory is applicable for the type of the object.
+   * <!-- begin-user-doc -->
 	 * This implementation returns <code>true</code> if the object is either the model's package or is an instance object of the model.
 	 * <!-- end-user-doc -->
-	 * @return whether this factory is applicable for the type of the object.
-	 * @generated
-	 */
+   * @return whether this factory is applicable for the type of the object.
+   * @generated
+   */
 	@Override
 	public boolean isFactoryForType(Object object) {
-		if (object == modelPackage) {
-			return true;
-		}
-		if (object instanceof EObject) {
-			return ((EObject)object).eClass().getEPackage() == modelPackage;
-		}
-		return false;
-	}
+    if (object == modelPackage)
+    {
+      return true;
+    }
+    if (object instanceof EObject)
+    {
+      return ((EObject)object).eClass().getEPackage() == modelPackage;
+    }
+    return false;
+  }
 
 	/**
-	 * The switch that delegates to the <code>createXXX</code> methods.
-	 * <!-- begin-user-doc -->
+   * The switch that delegates to the <code>createXXX</code> methods.
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	protected CocciSwitch<Adapter> modelSwitch =
-		new CocciSwitch<Adapter>() {
-			@Override
-			public Adapter caseCoccidioidesCaseReport(CoccidioidesCaseReport object) {
-				return createCoccidioidesCaseReportAdapter();
-			}
-			@Override
-			public Adapter caseCoccidioidesPHCRSocialHistorySection(CoccidioidesPHCRSocialHistorySection object) {
-				return createCoccidioidesPHCRSocialHistorySectionAdapter();
-			}
-			@Override
-			public Adapter caseCoccidioidesPossibleExposureLocationAct(CoccidioidesPossibleExposureLocationAct object) {
-				return createCoccidioidesPossibleExposureLocationActAdapter();
-			}
-			@Override
-			public Adapter caseCoccidioidesPHCRClinicalInformationSection(CoccidioidesPHCRClinicalInformationSection object) {
-				return createCoccidioidesPHCRClinicalInformationSectionAdapter();
-			}
-			@Override
-			public Adapter caseCoccidioidesCaseObservation(CoccidioidesCaseObservation object) {
-				return createCoccidioidesCaseObservationAdapter();
-			}
-			@Override
-			public Adapter caseCoccidioidesSignsAndSymptomsObservation(CoccidioidesSignsAndSymptomsObservation object) {
-				return createCoccidioidesSignsAndSymptomsObservationAdapter();
-			}
-			@Override
-			public Adapter caseCoccidioidesImmunosuppressedMedicalConditionHistoryObservation(CoccidioidesImmunosuppressedMedicalConditionHistoryObservation object) {
-				return createCoccidioidesImmunosuppressedMedicalConditionHistoryObservationAdapter();
-			}
-			@Override
-			public Adapter caseCoccidioidesImmunosuppressedMedicalConditionProblemObservation(CoccidioidesImmunosuppressedMedicalConditionProblemObservation object) {
-				return createCoccidioidesImmunosuppressedMedicalConditionProblemObservationAdapter();
-			}
-			@Override
-			public Adapter caseCoccidioidesPHCRTreatmentInformationSection(CoccidioidesPHCRTreatmentInformationSection object) {
-				return createCoccidioidesPHCRTreatmentInformationSectionAdapter();
-			}
-			@Override
-			public Adapter caseCoccidioidesTherapeuticRegimenAct(CoccidioidesTherapeuticRegimenAct object) {
-				return createCoccidioidesTherapeuticRegimenActAdapter();
-			}
-			@Override
-			public Adapter caseCoccidioidesTreatmentGivenSubstanceAdministration(CoccidioidesTreatmentGivenSubstanceAdministration object) {
-				return createCoccidioidesTreatmentGivenSubstanceAdministrationAdapter();
-			}
-			@Override
-			public Adapter caseCoccidioidesTreatmentNotGivenSubstanceAdministration(CoccidioidesTreatmentNotGivenSubstanceAdministration object) {
-				return createCoccidioidesTreatmentNotGivenSubstanceAdministrationAdapter();
-			}
-			@Override
-			public Adapter caseCoccidioidesPHCRRelevantDxTestsSection(CoccidioidesPHCRRelevantDxTestsSection object) {
-				return createCoccidioidesPHCRRelevantDxTestsSectionAdapter();
-			}
-			@Override
-			public Adapter caseCoccidioidesResultObservation(CoccidioidesResultObservation object) {
-				return createCoccidioidesResultObservationAdapter();
-			}
-			@Override
-			public Adapter caseCoccidioidesResultOrganizer(CoccidioidesResultOrganizer object) {
-				return createCoccidioidesResultOrganizerAdapter();
-			}
-			@Override
-			public Adapter caseInfrastructureRoot(InfrastructureRoot object) {
-				return createInfrastructureRootAdapter();
-			}
-			@Override
-			public Adapter caseAct(Act object) {
-				return createActAdapter();
-			}
-			@Override
-			public Adapter caseClinicalDocument(ClinicalDocument object) {
-				return createClinicalDocumentAdapter();
-			}
-			@Override
-			public Adapter casePublicHealthCaseReport(PublicHealthCaseReport object) {
-				return createPublicHealthCaseReportAdapter();
-			}
-			@Override
-			public Adapter caseSection(Section object) {
-				return createSectionAdapter();
-			}
-			@Override
-			public Adapter caseSocialHistorySection(SocialHistorySection object) {
-				return createSocialHistorySectionAdapter();
-			}
-			@Override
-			public Adapter casePhcrSocialHistorySection(PhcrSocialHistorySection object) {
-				return createPhcrSocialHistorySectionAdapter();
-			}
-			@Override
-			public Adapter caseClinicalStatement(ClinicalStatement object) {
-				return createClinicalStatementAdapter();
-			}
-			@Override
-			public Adapter caseCDA_Act(org.openhealthtools.mdht.uml.cda.Act object) {
-				return createCDA_ActAdapter();
-			}
-			@Override
-			public Adapter casePhcrClinicalInformationSection(PhcrClinicalInformationSection object) {
-				return createPhcrClinicalInformationSectionAdapter();
-			}
-			@Override
-			public Adapter caseObservation(Observation object) {
-				return createObservationAdapter();
-			}
-			@Override
-			public Adapter caseProblemObservation(ProblemObservation object) {
-				return createProblemObservationAdapter();
-			}
-			@Override
-			public Adapter caseCaseObservation(CaseObservation object) {
-				return createCaseObservationAdapter();
-			}
-			@Override
-			public Adapter caseSignsAndSymptomsObservation(SignsAndSymptomsObservation object) {
-				return createSignsAndSymptomsObservationAdapter();
-			}
-			@Override
-			public Adapter casePhcrRelevantMedicalConditionHistoryObservation(PhcrRelevantMedicalConditionHistoryObservation object) {
-				return createPhcrRelevantMedicalConditionHistoryObservationAdapter();
-			}
-			@Override
-			public Adapter casePhcrTreatmentInformationSection(PhcrTreatmentInformationSection object) {
-				return createPhcrTreatmentInformationSectionAdapter();
-			}
-			@Override
-			public Adapter caseTherapeuticRegimenAct(TherapeuticRegimenAct object) {
-				return createTherapeuticRegimenActAdapter();
-			}
-			@Override
-			public Adapter caseSubstanceAdministration(SubstanceAdministration object) {
-				return createSubstanceAdministrationAdapter();
-			}
-			@Override
-			public Adapter caseTreatmentGivenSubstanceAdministration(TreatmentGivenSubstanceAdministration object) {
-				return createTreatmentGivenSubstanceAdministrationAdapter();
-			}
-			@Override
-			public Adapter caseTreatmentNotGivenSubstanceAdministration(TreatmentNotGivenSubstanceAdministration object) {
-				return createTreatmentNotGivenSubstanceAdministrationAdapter();
-			}
-			@Override
-			public Adapter caseResultsSection(ResultsSection object) {
-				return createResultsSectionAdapter();
-			}
-			@Override
-			public Adapter casePhcrRelevantDxTestsSection(PhcrRelevantDxTestsSection object) {
-				return createPhcrRelevantDxTestsSectionAdapter();
-			}
-			@Override
-			public Adapter caseResultObservation(ResultObservation object) {
-				return createResultObservationAdapter();
-			}
-			@Override
-			public Adapter casePhcr_ResultObservation(org.openhealthtools.mdht.uml.cda.phcr.ResultObservation object) {
-				return createPhcr_ResultObservationAdapter();
-			}
-			@Override
-			public Adapter caseOrganizer(Organizer object) {
-				return createOrganizerAdapter();
-			}
-			@Override
-			public Adapter caseResultOrganizer(ResultOrganizer object) {
-				return createResultOrganizerAdapter();
-			}
-			@Override
-			public Adapter casePhcr_ResultOrganizer(org.openhealthtools.mdht.uml.cda.phcr.ResultOrganizer object) {
-				return createPhcr_ResultOrganizerAdapter();
-			}
-			@Override
-			public Adapter defaultCase(EObject object) {
-				return createEObjectAdapter();
-			}
-		};
+		new CocciSwitch<Adapter>()
+    {
+      @Override
+      public Adapter caseCoccidioidesCaseReport(CoccidioidesCaseReport object)
+      {
+        return createCoccidioidesCaseReportAdapter();
+      }
+      @Override
+      public Adapter caseCoccidioidesPHCRSocialHistorySection(CoccidioidesPHCRSocialHistorySection object)
+      {
+        return createCoccidioidesPHCRSocialHistorySectionAdapter();
+      }
+      @Override
+      public Adapter caseCoccidioidesPossibleExposureLocationAct(CoccidioidesPossibleExposureLocationAct object)
+      {
+        return createCoccidioidesPossibleExposureLocationActAdapter();
+      }
+      @Override
+      public Adapter caseCoccidioidesPHCRClinicalInformationSection(CoccidioidesPHCRClinicalInformationSection object)
+      {
+        return createCoccidioidesPHCRClinicalInformationSectionAdapter();
+      }
+      @Override
+      public Adapter caseCoccidioidesCaseObservation(CoccidioidesCaseObservation object)
+      {
+        return createCoccidioidesCaseObservationAdapter();
+      }
+      @Override
+      public Adapter caseCoccidioidesSignsAndSymptomsObservation(CoccidioidesSignsAndSymptomsObservation object)
+      {
+        return createCoccidioidesSignsAndSymptomsObservationAdapter();
+      }
+      @Override
+      public Adapter caseCoccidioidesImmunosuppressedMedicalConditionHistoryObservation(CoccidioidesImmunosuppressedMedicalConditionHistoryObservation object)
+      {
+        return createCoccidioidesImmunosuppressedMedicalConditionHistoryObservationAdapter();
+      }
+      @Override
+      public Adapter caseCoccidioidesImmunosuppressedMedicalConditionProblemObservation(CoccidioidesImmunosuppressedMedicalConditionProblemObservation object)
+      {
+        return createCoccidioidesImmunosuppressedMedicalConditionProblemObservationAdapter();
+      }
+      @Override
+      public Adapter caseCoccidioidesPHCRTreatmentInformationSection(CoccidioidesPHCRTreatmentInformationSection object)
+      {
+        return createCoccidioidesPHCRTreatmentInformationSectionAdapter();
+      }
+      @Override
+      public Adapter caseCoccidioidesTherapeuticRegimenAct(CoccidioidesTherapeuticRegimenAct object)
+      {
+        return createCoccidioidesTherapeuticRegimenActAdapter();
+      }
+      @Override
+      public Adapter caseCoccidioidesTreatmentGivenSubstanceAdministration(CoccidioidesTreatmentGivenSubstanceAdministration object)
+      {
+        return createCoccidioidesTreatmentGivenSubstanceAdministrationAdapter();
+      }
+      @Override
+      public Adapter caseCoccidioidesTreatmentNotGivenSubstanceAdministration(CoccidioidesTreatmentNotGivenSubstanceAdministration object)
+      {
+        return createCoccidioidesTreatmentNotGivenSubstanceAdministrationAdapter();
+      }
+      @Override
+      public Adapter caseCoccidioidesPHCRRelevantDxTestsSection(CoccidioidesPHCRRelevantDxTestsSection object)
+      {
+        return createCoccidioidesPHCRRelevantDxTestsSectionAdapter();
+      }
+      @Override
+      public Adapter caseCoccidioidesResultObservation(CoccidioidesResultObservation object)
+      {
+        return createCoccidioidesResultObservationAdapter();
+      }
+      @Override
+      public Adapter caseCoccidioidesResultOrganizer(CoccidioidesResultOrganizer object)
+      {
+        return createCoccidioidesResultOrganizerAdapter();
+      }
+      @Override
+      public Adapter caseInfrastructureRoot(InfrastructureRoot object)
+      {
+        return createInfrastructureRootAdapter();
+      }
+      @Override
+      public Adapter caseAct(Act object)
+      {
+        return createActAdapter();
+      }
+      @Override
+      public Adapter caseClinicalDocument(ClinicalDocument object)
+      {
+        return createClinicalDocumentAdapter();
+      }
+      @Override
+      public Adapter casePublicHealthCaseReport(PublicHealthCaseReport object)
+      {
+        return createPublicHealthCaseReportAdapter();
+      }
+      @Override
+      public Adapter caseSection(Section object)
+      {
+        return createSectionAdapter();
+      }
+      @Override
+      public Adapter caseSocialHistorySection(SocialHistorySection object)
+      {
+        return createSocialHistorySectionAdapter();
+      }
+      @Override
+      public Adapter casePhcrSocialHistorySection(PhcrSocialHistorySection object)
+      {
+        return createPhcrSocialHistorySectionAdapter();
+      }
+      @Override
+      public Adapter caseClinicalStatement(ClinicalStatement object)
+      {
+        return createClinicalStatementAdapter();
+      }
+      @Override
+      public Adapter caseCDA_Act(org.openhealthtools.mdht.uml.cda.Act object)
+      {
+        return createCDA_ActAdapter();
+      }
+      @Override
+      public Adapter casePhcrClinicalInformationSection(PhcrClinicalInformationSection object)
+      {
+        return createPhcrClinicalInformationSectionAdapter();
+      }
+      @Override
+      public Adapter caseObservation(Observation object)
+      {
+        return createObservationAdapter();
+      }
+      @Override
+      public Adapter caseProblemObservation(ProblemObservation object)
+      {
+        return createProblemObservationAdapter();
+      }
+      @Override
+      public Adapter caseCaseObservation(CaseObservation object)
+      {
+        return createCaseObservationAdapter();
+      }
+      @Override
+      public Adapter caseSignsAndSymptomsObservation(SignsAndSymptomsObservation object)
+      {
+        return createSignsAndSymptomsObservationAdapter();
+      }
+      @Override
+      public Adapter casePhcrRelevantMedicalConditionHistoryObservation(PhcrRelevantMedicalConditionHistoryObservation object)
+      {
+        return createPhcrRelevantMedicalConditionHistoryObservationAdapter();
+      }
+      @Override
+      public Adapter casePhcrTreatmentInformationSection(PhcrTreatmentInformationSection object)
+      {
+        return createPhcrTreatmentInformationSectionAdapter();
+      }
+      @Override
+      public Adapter caseTherapeuticRegimenAct(TherapeuticRegimenAct object)
+      {
+        return createTherapeuticRegimenActAdapter();
+      }
+      @Override
+      public Adapter caseSubstanceAdministration(SubstanceAdministration object)
+      {
+        return createSubstanceAdministrationAdapter();
+      }
+      @Override
+      public Adapter caseTreatmentGivenSubstanceAdministration(TreatmentGivenSubstanceAdministration object)
+      {
+        return createTreatmentGivenSubstanceAdministrationAdapter();
+      }
+      @Override
+      public Adapter caseTreatmentNotGivenSubstanceAdministration(TreatmentNotGivenSubstanceAdministration object)
+      {
+        return createTreatmentNotGivenSubstanceAdministrationAdapter();
+      }
+      @Override
+      public Adapter caseResultsSection(ResultsSection object)
+      {
+        return createResultsSectionAdapter();
+      }
+      @Override
+      public Adapter casePhcrRelevantDxTestsSection(PhcrRelevantDxTestsSection object)
+      {
+        return createPhcrRelevantDxTestsSectionAdapter();
+      }
+      @Override
+      public Adapter caseResultObservation(ResultObservation object)
+      {
+        return createResultObservationAdapter();
+      }
+      @Override
+      public Adapter casePhcr_ResultObservation(org.openhealthtools.mdht.uml.cda.phcr.ResultObservation object)
+      {
+        return createPhcr_ResultObservationAdapter();
+      }
+      @Override
+      public Adapter caseOrganizer(Organizer object)
+      {
+        return createOrganizerAdapter();
+      }
+      @Override
+      public Adapter caseResultOrganizer(ResultOrganizer object)
+      {
+        return createResultOrganizerAdapter();
+      }
+      @Override
+      public Adapter casePhcr_ResultOrganizer(org.openhealthtools.mdht.uml.cda.phcr.ResultOrganizer object)
+      {
+        return createPhcr_ResultOrganizerAdapter();
+      }
+      @Override
+      public Adapter defaultCase(EObject object)
+      {
+        return createEObjectAdapter();
+      }
+    };
 
 	/**
-	 * Creates an adapter for the <code>target</code>.
-	 * <!-- begin-user-doc -->
+   * Creates an adapter for the <code>target</code>.
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param target the object to adapt.
-	 * @return the adapter for the <code>target</code>.
-	 * @generated
-	 */
+   * @param target the object to adapt.
+   * @return the adapter for the <code>target</code>.
+   * @generated
+   */
 	@Override
 	public Adapter createAdapter(Notifier target) {
-		return modelSwitch.doSwitch((EObject)target);
-	}
+    return modelSwitch.doSwitch((EObject)target);
+  }
 
 
 	/**
-	 * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.phcr.cocci.CoccidioidesCaseReport <em>Coccidioides Case Report</em>}'.
-	 * <!-- begin-user-doc -->
+   * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.phcr.cocci.CoccidioidesCaseReport <em>Coccidioides Case Report</em>}'.
+   * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
 	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
 	 * <!-- end-user-doc -->
-	 * @return the new adapter.
-	 * @see org.openhealthtools.mdht.uml.cda.phcr.cocci.CoccidioidesCaseReport
-	 * @generated
-	 */
+   * @return the new adapter.
+   * @see org.openhealthtools.mdht.uml.cda.phcr.cocci.CoccidioidesCaseReport
+   * @generated
+   */
 	public Adapter createCoccidioidesCaseReportAdapter() {
-		return null;
-	}
+    return null;
+  }
 
 	/**
-	 * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.phcr.cocci.CoccidioidesPHCRSocialHistorySection <em>Coccidioides PHCR Social History Section</em>}'.
-	 * <!-- begin-user-doc -->
+   * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.phcr.cocci.CoccidioidesPHCRSocialHistorySection <em>Coccidioides PHCR Social History Section</em>}'.
+   * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
 	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
 	 * <!-- end-user-doc -->
-	 * @return the new adapter.
-	 * @see org.openhealthtools.mdht.uml.cda.phcr.cocci.CoccidioidesPHCRSocialHistorySection
-	 * @generated
-	 */
+   * @return the new adapter.
+   * @see org.openhealthtools.mdht.uml.cda.phcr.cocci.CoccidioidesPHCRSocialHistorySection
+   * @generated
+   */
 	public Adapter createCoccidioidesPHCRSocialHistorySectionAdapter() {
-		return null;
-	}
+    return null;
+  }
 
 	/**
-	 * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.phcr.cocci.CoccidioidesPossibleExposureLocationAct <em>Coccidioides Possible Exposure Location Act</em>}'.
-	 * <!-- begin-user-doc -->
+   * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.phcr.cocci.CoccidioidesPossibleExposureLocationAct <em>Coccidioides Possible Exposure Location Act</em>}'.
+   * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
 	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
 	 * <!-- end-user-doc -->
-	 * @return the new adapter.
-	 * @see org.openhealthtools.mdht.uml.cda.phcr.cocci.CoccidioidesPossibleExposureLocationAct
-	 * @generated
-	 */
+   * @return the new adapter.
+   * @see org.openhealthtools.mdht.uml.cda.phcr.cocci.CoccidioidesPossibleExposureLocationAct
+   * @generated
+   */
 	public Adapter createCoccidioidesPossibleExposureLocationActAdapter() {
-		return null;
-	}
+    return null;
+  }
 
 	/**
-	 * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.phcr.cocci.CoccidioidesPHCRClinicalInformationSection <em>Coccidioides PHCR Clinical Information Section</em>}'.
-	 * <!-- begin-user-doc -->
+   * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.phcr.cocci.CoccidioidesPHCRClinicalInformationSection <em>Coccidioides PHCR Clinical Information Section</em>}'.
+   * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
 	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
 	 * <!-- end-user-doc -->
-	 * @return the new adapter.
-	 * @see org.openhealthtools.mdht.uml.cda.phcr.cocci.CoccidioidesPHCRClinicalInformationSection
-	 * @generated
-	 */
+   * @return the new adapter.
+   * @see org.openhealthtools.mdht.uml.cda.phcr.cocci.CoccidioidesPHCRClinicalInformationSection
+   * @generated
+   */
 	public Adapter createCoccidioidesPHCRClinicalInformationSectionAdapter() {
-		return null;
-	}
+    return null;
+  }
 
 	/**
-	 * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.phcr.cocci.CoccidioidesCaseObservation <em>Coccidioides Case Observation</em>}'.
-	 * <!-- begin-user-doc -->
+   * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.phcr.cocci.CoccidioidesCaseObservation <em>Coccidioides Case Observation</em>}'.
+   * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
 	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
 	 * <!-- end-user-doc -->
-	 * @return the new adapter.
-	 * @see org.openhealthtools.mdht.uml.cda.phcr.cocci.CoccidioidesCaseObservation
-	 * @generated
-	 */
+   * @return the new adapter.
+   * @see org.openhealthtools.mdht.uml.cda.phcr.cocci.CoccidioidesCaseObservation
+   * @generated
+   */
 	public Adapter createCoccidioidesCaseObservationAdapter() {
-		return null;
-	}
+    return null;
+  }
 
 	/**
-	 * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.phcr.cocci.CoccidioidesSignsAndSymptomsObservation <em>Coccidioides Signs And Symptoms Observation</em>}'.
-	 * <!-- begin-user-doc -->
+   * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.phcr.cocci.CoccidioidesSignsAndSymptomsObservation <em>Coccidioides Signs And Symptoms Observation</em>}'.
+   * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
 	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
 	 * <!-- end-user-doc -->
-	 * @return the new adapter.
-	 * @see org.openhealthtools.mdht.uml.cda.phcr.cocci.CoccidioidesSignsAndSymptomsObservation
-	 * @generated
-	 */
+   * @return the new adapter.
+   * @see org.openhealthtools.mdht.uml.cda.phcr.cocci.CoccidioidesSignsAndSymptomsObservation
+   * @generated
+   */
 	public Adapter createCoccidioidesSignsAndSymptomsObservationAdapter() {
-		return null;
-	}
+    return null;
+  }
 
 	/**
-	 * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.phcr.cocci.CoccidioidesImmunosuppressedMedicalConditionHistoryObservation <em>Coccidioides Immunosuppressed Medical Condition History Observation</em>}'.
-	 * <!-- begin-user-doc -->
+   * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.phcr.cocci.CoccidioidesImmunosuppressedMedicalConditionHistoryObservation <em>Coccidioides Immunosuppressed Medical Condition History Observation</em>}'.
+   * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
 	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
 	 * <!-- end-user-doc -->
-	 * @return the new adapter.
-	 * @see org.openhealthtools.mdht.uml.cda.phcr.cocci.CoccidioidesImmunosuppressedMedicalConditionHistoryObservation
-	 * @generated
-	 */
+   * @return the new adapter.
+   * @see org.openhealthtools.mdht.uml.cda.phcr.cocci.CoccidioidesImmunosuppressedMedicalConditionHistoryObservation
+   * @generated
+   */
 	public Adapter createCoccidioidesImmunosuppressedMedicalConditionHistoryObservationAdapter() {
-		return null;
-	}
+    return null;
+  }
 
 	/**
-	 * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.phcr.cocci.CoccidioidesImmunosuppressedMedicalConditionProblemObservation <em>Coccidioides Immunosuppressed Medical Condition Problem Observation</em>}'.
-	 * <!-- begin-user-doc -->
+   * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.phcr.cocci.CoccidioidesImmunosuppressedMedicalConditionProblemObservation <em>Coccidioides Immunosuppressed Medical Condition Problem Observation</em>}'.
+   * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
 	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
 	 * <!-- end-user-doc -->
-	 * @return the new adapter.
-	 * @see org.openhealthtools.mdht.uml.cda.phcr.cocci.CoccidioidesImmunosuppressedMedicalConditionProblemObservation
-	 * @generated
-	 */
+   * @return the new adapter.
+   * @see org.openhealthtools.mdht.uml.cda.phcr.cocci.CoccidioidesImmunosuppressedMedicalConditionProblemObservation
+   * @generated
+   */
 	public Adapter createCoccidioidesImmunosuppressedMedicalConditionProblemObservationAdapter() {
-		return null;
-	}
+    return null;
+  }
 
 	/**
-	 * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.phcr.cocci.CoccidioidesPHCRTreatmentInformationSection <em>Coccidioides PHCR Treatment Information Section</em>}'.
-	 * <!-- begin-user-doc -->
+   * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.phcr.cocci.CoccidioidesPHCRTreatmentInformationSection <em>Coccidioides PHCR Treatment Information Section</em>}'.
+   * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
 	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
 	 * <!-- end-user-doc -->
-	 * @return the new adapter.
-	 * @see org.openhealthtools.mdht.uml.cda.phcr.cocci.CoccidioidesPHCRTreatmentInformationSection
-	 * @generated
-	 */
+   * @return the new adapter.
+   * @see org.openhealthtools.mdht.uml.cda.phcr.cocci.CoccidioidesPHCRTreatmentInformationSection
+   * @generated
+   */
 	public Adapter createCoccidioidesPHCRTreatmentInformationSectionAdapter() {
-		return null;
-	}
+    return null;
+  }
 
 	/**
-	 * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.phcr.cocci.CoccidioidesTherapeuticRegimenAct <em>Coccidioides Therapeutic Regimen Act</em>}'.
-	 * <!-- begin-user-doc -->
+   * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.phcr.cocci.CoccidioidesTherapeuticRegimenAct <em>Coccidioides Therapeutic Regimen Act</em>}'.
+   * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
 	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
 	 * <!-- end-user-doc -->
-	 * @return the new adapter.
-	 * @see org.openhealthtools.mdht.uml.cda.phcr.cocci.CoccidioidesTherapeuticRegimenAct
-	 * @generated
-	 */
+   * @return the new adapter.
+   * @see org.openhealthtools.mdht.uml.cda.phcr.cocci.CoccidioidesTherapeuticRegimenAct
+   * @generated
+   */
 	public Adapter createCoccidioidesTherapeuticRegimenActAdapter() {
-		return null;
-	}
+    return null;
+  }
 
 	/**
-	 * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.phcr.cocci.CoccidioidesPHCRRelevantDxTestsSection <em>Coccidioides PHCR Relevant Dx Tests Section</em>}'.
-	 * <!-- begin-user-doc -->
+   * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.phcr.cocci.CoccidioidesPHCRRelevantDxTestsSection <em>Coccidioides PHCR Relevant Dx Tests Section</em>}'.
+   * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
 	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
 	 * <!-- end-user-doc -->
-	 * @return the new adapter.
-	 * @see org.openhealthtools.mdht.uml.cda.phcr.cocci.CoccidioidesPHCRRelevantDxTestsSection
-	 * @generated
-	 */
+   * @return the new adapter.
+   * @see org.openhealthtools.mdht.uml.cda.phcr.cocci.CoccidioidesPHCRRelevantDxTestsSection
+   * @generated
+   */
 	public Adapter createCoccidioidesPHCRRelevantDxTestsSectionAdapter() {
-		return null;
-	}
+    return null;
+  }
 
 	/**
-	 * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.phcr.cocci.CoccidioidesResultObservation <em>Coccidioides Result Observation</em>}'.
-	 * <!-- begin-user-doc -->
+   * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.phcr.cocci.CoccidioidesResultObservation <em>Coccidioides Result Observation</em>}'.
+   * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
 	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
 	 * <!-- end-user-doc -->
-	 * @return the new adapter.
-	 * @see org.openhealthtools.mdht.uml.cda.phcr.cocci.CoccidioidesResultObservation
-	 * @generated
-	 */
+   * @return the new adapter.
+   * @see org.openhealthtools.mdht.uml.cda.phcr.cocci.CoccidioidesResultObservation
+   * @generated
+   */
 	public Adapter createCoccidioidesResultObservationAdapter() {
-		return null;
-	}
+    return null;
+  }
 
 	/**
-	 * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.phcr.cocci.CoccidioidesResultOrganizer <em>Coccidioides Result Organizer</em>}'.
-	 * <!-- begin-user-doc -->
+   * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.phcr.cocci.CoccidioidesResultOrganizer <em>Coccidioides Result Organizer</em>}'.
+   * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
 	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
 	 * <!-- end-user-doc -->
-	 * @return the new adapter.
-	 * @see org.openhealthtools.mdht.uml.cda.phcr.cocci.CoccidioidesResultOrganizer
-	 * @generated
-	 */
+   * @return the new adapter.
+   * @see org.openhealthtools.mdht.uml.cda.phcr.cocci.CoccidioidesResultOrganizer
+   * @generated
+   */
 	public Adapter createCoccidioidesResultOrganizerAdapter() {
-		return null;
-	}
+    return null;
+  }
 
 	/**
-	 * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.phcr.cocci.CoccidioidesTreatmentGivenSubstanceAdministration <em>Coccidioides Treatment Given Substance Administration</em>}'.
-	 * <!-- begin-user-doc -->
+   * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.phcr.cocci.CoccidioidesTreatmentGivenSubstanceAdministration <em>Coccidioides Treatment Given Substance Administration</em>}'.
+   * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
 	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
 	 * <!-- end-user-doc -->
-	 * @return the new adapter.
-	 * @see org.openhealthtools.mdht.uml.cda.phcr.cocci.CoccidioidesTreatmentGivenSubstanceAdministration
-	 * @generated
-	 */
+   * @return the new adapter.
+   * @see org.openhealthtools.mdht.uml.cda.phcr.cocci.CoccidioidesTreatmentGivenSubstanceAdministration
+   * @generated
+   */
 	public Adapter createCoccidioidesTreatmentGivenSubstanceAdministrationAdapter() {
-		return null;
-	}
+    return null;
+  }
 
 	/**
-	 * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.phcr.cocci.CoccidioidesTreatmentNotGivenSubstanceAdministration <em>Coccidioides Treatment Not Given Substance Administration</em>}'.
-	 * <!-- begin-user-doc -->
+   * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.phcr.cocci.CoccidioidesTreatmentNotGivenSubstanceAdministration <em>Coccidioides Treatment Not Given Substance Administration</em>}'.
+   * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
 	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
 	 * <!-- end-user-doc -->
-	 * @return the new adapter.
-	 * @see org.openhealthtools.mdht.uml.cda.phcr.cocci.CoccidioidesTreatmentNotGivenSubstanceAdministration
-	 * @generated
-	 */
+   * @return the new adapter.
+   * @see org.openhealthtools.mdht.uml.cda.phcr.cocci.CoccidioidesTreatmentNotGivenSubstanceAdministration
+   * @generated
+   */
 	public Adapter createCoccidioidesTreatmentNotGivenSubstanceAdministrationAdapter() {
-		return null;
-	}
+    return null;
+  }
 
 	/**
-	 * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.hl7.rim.InfrastructureRoot <em>Infrastructure Root</em>}'.
-	 * <!-- begin-user-doc -->
+   * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.hl7.rim.InfrastructureRoot <em>Infrastructure Root</em>}'.
+   * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
 	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
 	 * <!-- end-user-doc -->
-	 * @return the new adapter.
-	 * @see org.openhealthtools.mdht.uml.hl7.rim.InfrastructureRoot
-	 * @generated
-	 */
+   * @return the new adapter.
+   * @see org.openhealthtools.mdht.uml.hl7.rim.InfrastructureRoot
+   * @generated
+   */
 	public Adapter createInfrastructureRootAdapter() {
-		return null;
-	}
+    return null;
+  }
 
 	/**
-	 * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.hl7.rim.Act <em>Act</em>}'.
-	 * <!-- begin-user-doc -->
+   * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.hl7.rim.Act <em>Act</em>}'.
+   * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
 	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
 	 * <!-- end-user-doc -->
-	 * @return the new adapter.
-	 * @see org.openhealthtools.mdht.uml.hl7.rim.Act
-	 * @generated
-	 */
+   * @return the new adapter.
+   * @see org.openhealthtools.mdht.uml.hl7.rim.Act
+   * @generated
+   */
 	public Adapter createActAdapter() {
-		return null;
-	}
+    return null;
+  }
 
 	/**
-	 * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.ClinicalDocument <em>Clinical Document</em>}'.
-	 * <!-- begin-user-doc -->
+   * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.ClinicalDocument <em>Clinical Document</em>}'.
+   * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
 	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
 	 * <!-- end-user-doc -->
-	 * @return the new adapter.
-	 * @see org.openhealthtools.mdht.uml.cda.ClinicalDocument
-	 * @generated
-	 */
+   * @return the new adapter.
+   * @see org.openhealthtools.mdht.uml.cda.ClinicalDocument
+   * @generated
+   */
 	public Adapter createClinicalDocumentAdapter() {
-		return null;
-	}
+    return null;
+  }
 
 	/**
-	 * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.phcr.PublicHealthCaseReport <em>Public Health Case Report</em>}'.
-	 * <!-- begin-user-doc -->
+   * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.phcr.PublicHealthCaseReport <em>Public Health Case Report</em>}'.
+   * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
 	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
 	 * <!-- end-user-doc -->
-	 * @return the new adapter.
-	 * @see org.openhealthtools.mdht.uml.cda.phcr.PublicHealthCaseReport
-	 * @generated
-	 */
+   * @return the new adapter.
+   * @see org.openhealthtools.mdht.uml.cda.phcr.PublicHealthCaseReport
+   * @generated
+   */
 	public Adapter createPublicHealthCaseReportAdapter() {
-		return null;
-	}
+    return null;
+  }
 
 	/**
-	 * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.Section <em>Section</em>}'.
-	 * <!-- begin-user-doc -->
+   * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.Section <em>Section</em>}'.
+   * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
 	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
 	 * <!-- end-user-doc -->
-	 * @return the new adapter.
-	 * @see org.openhealthtools.mdht.uml.cda.Section
-	 * @generated
-	 */
+   * @return the new adapter.
+   * @see org.openhealthtools.mdht.uml.cda.Section
+   * @generated
+   */
 	public Adapter createSectionAdapter() {
-		return null;
-	}
+    return null;
+  }
 
 	/**
-	 * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.ccd.SocialHistorySection <em>Social History Section</em>}'.
-	 * <!-- begin-user-doc -->
+   * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.ccd.SocialHistorySection <em>Social History Section</em>}'.
+   * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
 	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
 	 * <!-- end-user-doc -->
-	 * @return the new adapter.
-	 * @see org.openhealthtools.mdht.uml.cda.ccd.SocialHistorySection
-	 * @generated
-	 */
+   * @return the new adapter.
+   * @see org.openhealthtools.mdht.uml.cda.ccd.SocialHistorySection
+   * @generated
+   */
 	public Adapter createSocialHistorySectionAdapter() {
-		return null;
-	}
+    return null;
+  }
 
 	/**
-	 * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.phcr.PhcrSocialHistorySection <em>Social History Section</em>}'.
-	 * <!-- begin-user-doc -->
+   * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.phcr.PhcrSocialHistorySection <em>Social History Section</em>}'.
+   * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
 	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
 	 * <!-- end-user-doc -->
-	 * @return the new adapter.
-	 * @see org.openhealthtools.mdht.uml.cda.phcr.PhcrSocialHistorySection
-	 * @generated
-	 */
+   * @return the new adapter.
+   * @see org.openhealthtools.mdht.uml.cda.phcr.PhcrSocialHistorySection
+   * @generated
+   */
 	public Adapter createPhcrSocialHistorySectionAdapter() {
-		return null;
-	}
+    return null;
+  }
 
 	/**
-	 * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.phcr.PhcrClinicalInformationSection <em>Clinical Information Section</em>}'.
-	 * <!-- begin-user-doc -->
+   * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.phcr.PhcrClinicalInformationSection <em>Clinical Information Section</em>}'.
+   * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
 	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
 	 * <!-- end-user-doc -->
-	 * @return the new adapter.
-	 * @see org.openhealthtools.mdht.uml.cda.phcr.PhcrClinicalInformationSection
-	 * @generated
-	 */
+   * @return the new adapter.
+   * @see org.openhealthtools.mdht.uml.cda.phcr.PhcrClinicalInformationSection
+   * @generated
+   */
 	public Adapter createPhcrClinicalInformationSectionAdapter() {
-		return null;
-	}
+    return null;
+  }
 
 	/**
-	 * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.ClinicalStatement <em>Clinical Statement</em>}'.
-	 * <!-- begin-user-doc -->
+   * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.ClinicalStatement <em>Clinical Statement</em>}'.
+   * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
 	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
 	 * <!-- end-user-doc -->
-	 * @return the new adapter.
-	 * @see org.openhealthtools.mdht.uml.cda.ClinicalStatement
-	 * @generated
-	 */
+   * @return the new adapter.
+   * @see org.openhealthtools.mdht.uml.cda.ClinicalStatement
+   * @generated
+   */
 	public Adapter createClinicalStatementAdapter() {
-		return null;
-	}
+    return null;
+  }
 
 	/**
-	 * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.Act <em>Act</em>}'.
-	 * <!-- begin-user-doc -->
+   * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.Act <em>Act</em>}'.
+   * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
 	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
 	 * <!-- end-user-doc -->
-	 * @return the new adapter.
-	 * @see org.openhealthtools.mdht.uml.cda.Act
-	 * @generated
-	 */
+   * @return the new adapter.
+   * @see org.openhealthtools.mdht.uml.cda.Act
+   * @generated
+   */
 	public Adapter createCDA_ActAdapter() {
-		return null;
-	}
+    return null;
+  }
 
 	/**
-	 * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.Observation <em>Observation</em>}'.
-	 * <!-- begin-user-doc -->
+   * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.Observation <em>Observation</em>}'.
+   * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
 	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
 	 * <!-- end-user-doc -->
-	 * @return the new adapter.
-	 * @see org.openhealthtools.mdht.uml.cda.Observation
-	 * @generated
-	 */
+   * @return the new adapter.
+   * @see org.openhealthtools.mdht.uml.cda.Observation
+   * @generated
+   */
 	public Adapter createObservationAdapter() {
-		return null;
-	}
+    return null;
+  }
 
 	/**
-	 * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.ccd.ProblemObservation <em>Problem Observation</em>}'.
-	 * <!-- begin-user-doc -->
+   * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.ccd.ProblemObservation <em>Problem Observation</em>}'.
+   * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
 	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
 	 * <!-- end-user-doc -->
-	 * @return the new adapter.
-	 * @see org.openhealthtools.mdht.uml.cda.ccd.ProblemObservation
-	 * @generated
-	 */
+   * @return the new adapter.
+   * @see org.openhealthtools.mdht.uml.cda.ccd.ProblemObservation
+   * @generated
+   */
 	public Adapter createProblemObservationAdapter() {
-		return null;
-	}
+    return null;
+  }
 
 	/**
-	 * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.phcr.CaseObservation <em>Case Observation</em>}'.
-	 * <!-- begin-user-doc -->
+   * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.phcr.CaseObservation <em>Case Observation</em>}'.
+   * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
 	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
 	 * <!-- end-user-doc -->
-	 * @return the new adapter.
-	 * @see org.openhealthtools.mdht.uml.cda.phcr.CaseObservation
-	 * @generated
-	 */
+   * @return the new adapter.
+   * @see org.openhealthtools.mdht.uml.cda.phcr.CaseObservation
+   * @generated
+   */
 	public Adapter createCaseObservationAdapter() {
-		return null;
-	}
+    return null;
+  }
 
 	/**
-	 * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.phcr.SignsAndSymptomsObservation <em>Signs And Symptoms Observation</em>}'.
-	 * <!-- begin-user-doc -->
+   * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.phcr.SignsAndSymptomsObservation <em>Signs And Symptoms Observation</em>}'.
+   * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
 	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
 	 * <!-- end-user-doc -->
-	 * @return the new adapter.
-	 * @see org.openhealthtools.mdht.uml.cda.phcr.SignsAndSymptomsObservation
-	 * @generated
-	 */
+   * @return the new adapter.
+   * @see org.openhealthtools.mdht.uml.cda.phcr.SignsAndSymptomsObservation
+   * @generated
+   */
 	public Adapter createSignsAndSymptomsObservationAdapter() {
-		return null;
-	}
+    return null;
+  }
 
 	/**
-	 * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.phcr.PhcrRelevantMedicalConditionHistoryObservation <em>Relevant Medical Condition History Observation</em>}'.
-	 * <!-- begin-user-doc -->
+   * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.phcr.PhcrRelevantMedicalConditionHistoryObservation <em>Relevant Medical Condition History Observation</em>}'.
+   * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
 	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
 	 * <!-- end-user-doc -->
-	 * @return the new adapter.
-	 * @see org.openhealthtools.mdht.uml.cda.phcr.PhcrRelevantMedicalConditionHistoryObservation
-	 * @generated
-	 */
+   * @return the new adapter.
+   * @see org.openhealthtools.mdht.uml.cda.phcr.PhcrRelevantMedicalConditionHistoryObservation
+   * @generated
+   */
 	public Adapter createPhcrRelevantMedicalConditionHistoryObservationAdapter() {
-		return null;
-	}
+    return null;
+  }
 
 	/**
-	 * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.phcr.PhcrTreatmentInformationSection <em>Treatment Information Section</em>}'.
-	 * <!-- begin-user-doc -->
+   * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.phcr.PhcrTreatmentInformationSection <em>Treatment Information Section</em>}'.
+   * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
 	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
 	 * <!-- end-user-doc -->
-	 * @return the new adapter.
-	 * @see org.openhealthtools.mdht.uml.cda.phcr.PhcrTreatmentInformationSection
-	 * @generated
-	 */
+   * @return the new adapter.
+   * @see org.openhealthtools.mdht.uml.cda.phcr.PhcrTreatmentInformationSection
+   * @generated
+   */
 	public Adapter createPhcrTreatmentInformationSectionAdapter() {
-		return null;
-	}
+    return null;
+  }
 
 	/**
-	 * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.phcr.TherapeuticRegimenAct <em>Therapeutic Regimen Act</em>}'.
-	 * <!-- begin-user-doc -->
+   * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.phcr.TherapeuticRegimenAct <em>Therapeutic Regimen Act</em>}'.
+   * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
 	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
 	 * <!-- end-user-doc -->
-	 * @return the new adapter.
-	 * @see org.openhealthtools.mdht.uml.cda.phcr.TherapeuticRegimenAct
-	 * @generated
-	 */
+   * @return the new adapter.
+   * @see org.openhealthtools.mdht.uml.cda.phcr.TherapeuticRegimenAct
+   * @generated
+   */
 	public Adapter createTherapeuticRegimenActAdapter() {
-		return null;
-	}
+    return null;
+  }
 
 	/**
-	 * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.ccd.ResultsSection <em>Results Section</em>}'.
-	 * <!-- begin-user-doc -->
+   * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.ccd.ResultsSection <em>Results Section</em>}'.
+   * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
 	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
 	 * <!-- end-user-doc -->
-	 * @return the new adapter.
-	 * @see org.openhealthtools.mdht.uml.cda.ccd.ResultsSection
-	 * @generated
-	 */
+   * @return the new adapter.
+   * @see org.openhealthtools.mdht.uml.cda.ccd.ResultsSection
+   * @generated
+   */
 	public Adapter createResultsSectionAdapter() {
-		return null;
-	}
+    return null;
+  }
 
 	/**
-	 * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.phcr.PhcrRelevantDxTestsSection <em>Relevant Dx Tests Section</em>}'.
-	 * <!-- begin-user-doc -->
+   * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.phcr.PhcrRelevantDxTestsSection <em>Relevant Dx Tests Section</em>}'.
+   * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
 	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
 	 * <!-- end-user-doc -->
-	 * @return the new adapter.
-	 * @see org.openhealthtools.mdht.uml.cda.phcr.PhcrRelevantDxTestsSection
-	 * @generated
-	 */
+   * @return the new adapter.
+   * @see org.openhealthtools.mdht.uml.cda.phcr.PhcrRelevantDxTestsSection
+   * @generated
+   */
 	public Adapter createPhcrRelevantDxTestsSectionAdapter() {
-		return null;
-	}
+    return null;
+  }
 
 	/**
-	 * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.ccd.ResultObservation <em>Result Observation</em>}'.
-	 * <!-- begin-user-doc -->
+   * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.ccd.ResultObservation <em>Result Observation</em>}'.
+   * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
 	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
 	 * <!-- end-user-doc -->
-	 * @return the new adapter.
-	 * @see org.openhealthtools.mdht.uml.cda.ccd.ResultObservation
-	 * @generated
-	 */
+   * @return the new adapter.
+   * @see org.openhealthtools.mdht.uml.cda.ccd.ResultObservation
+   * @generated
+   */
 	public Adapter createResultObservationAdapter() {
-		return null;
-	}
+    return null;
+  }
 
 	/**
-	 * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.phcr.ResultObservation <em>Result Observation</em>}'.
-	 * <!-- begin-user-doc -->
+   * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.phcr.ResultObservation <em>Result Observation</em>}'.
+   * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
 	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
 	 * <!-- end-user-doc -->
-	 * @return the new adapter.
-	 * @see org.openhealthtools.mdht.uml.cda.phcr.ResultObservation
-	 * @generated
-	 */
+   * @return the new adapter.
+   * @see org.openhealthtools.mdht.uml.cda.phcr.ResultObservation
+   * @generated
+   */
 	public Adapter createPhcr_ResultObservationAdapter() {
-		return null;
-	}
+    return null;
+  }
 
 	/**
-	 * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.Organizer <em>Organizer</em>}'.
-	 * <!-- begin-user-doc -->
+   * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.Organizer <em>Organizer</em>}'.
+   * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
 	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
 	 * <!-- end-user-doc -->
-	 * @return the new adapter.
-	 * @see org.openhealthtools.mdht.uml.cda.Organizer
-	 * @generated
-	 */
+   * @return the new adapter.
+   * @see org.openhealthtools.mdht.uml.cda.Organizer
+   * @generated
+   */
 	public Adapter createOrganizerAdapter() {
-		return null;
-	}
+    return null;
+  }
 
 	/**
-	 * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.ccd.ResultOrganizer <em>Result Organizer</em>}'.
-	 * <!-- begin-user-doc -->
+   * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.ccd.ResultOrganizer <em>Result Organizer</em>}'.
+   * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
 	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
 	 * <!-- end-user-doc -->
-	 * @return the new adapter.
-	 * @see org.openhealthtools.mdht.uml.cda.ccd.ResultOrganizer
-	 * @generated
-	 */
+   * @return the new adapter.
+   * @see org.openhealthtools.mdht.uml.cda.ccd.ResultOrganizer
+   * @generated
+   */
 	public Adapter createResultOrganizerAdapter() {
-		return null;
-	}
+    return null;
+  }
 
 	/**
-	 * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.phcr.ResultOrganizer <em>Result Organizer</em>}'.
-	 * <!-- begin-user-doc -->
+   * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.phcr.ResultOrganizer <em>Result Organizer</em>}'.
+   * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
 	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
 	 * <!-- end-user-doc -->
-	 * @return the new adapter.
-	 * @see org.openhealthtools.mdht.uml.cda.phcr.ResultOrganizer
-	 * @generated
-	 */
+   * @return the new adapter.
+   * @see org.openhealthtools.mdht.uml.cda.phcr.ResultOrganizer
+   * @generated
+   */
 	public Adapter createPhcr_ResultOrganizerAdapter() {
-		return null;
-	}
+    return null;
+  }
 
 	/**
-	 * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.SubstanceAdministration <em>Substance Administration</em>}'.
-	 * <!-- begin-user-doc -->
+   * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.SubstanceAdministration <em>Substance Administration</em>}'.
+   * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
 	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
 	 * <!-- end-user-doc -->
-	 * @return the new adapter.
-	 * @see org.openhealthtools.mdht.uml.cda.SubstanceAdministration
-	 * @generated
-	 */
+   * @return the new adapter.
+   * @see org.openhealthtools.mdht.uml.cda.SubstanceAdministration
+   * @generated
+   */
 	public Adapter createSubstanceAdministrationAdapter() {
-		return null;
-	}
+    return null;
+  }
 
 	/**
-	 * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.phcr.TreatmentGivenSubstanceAdministration <em>Treatment Given Substance Administration</em>}'.
-	 * <!-- begin-user-doc -->
+   * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.phcr.TreatmentGivenSubstanceAdministration <em>Treatment Given Substance Administration</em>}'.
+   * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
 	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
 	 * <!-- end-user-doc -->
-	 * @return the new adapter.
-	 * @see org.openhealthtools.mdht.uml.cda.phcr.TreatmentGivenSubstanceAdministration
-	 * @generated
-	 */
+   * @return the new adapter.
+   * @see org.openhealthtools.mdht.uml.cda.phcr.TreatmentGivenSubstanceAdministration
+   * @generated
+   */
 	public Adapter createTreatmentGivenSubstanceAdministrationAdapter() {
-		return null;
-	}
+    return null;
+  }
 
 	/**
-	 * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.phcr.TreatmentNotGivenSubstanceAdministration <em>Treatment Not Given Substance Administration</em>}'.
-	 * <!-- begin-user-doc -->
+   * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.phcr.TreatmentNotGivenSubstanceAdministration <em>Treatment Not Given Substance Administration</em>}'.
+   * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
 	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
 	 * <!-- end-user-doc -->
-	 * @return the new adapter.
-	 * @see org.openhealthtools.mdht.uml.cda.phcr.TreatmentNotGivenSubstanceAdministration
-	 * @generated
-	 */
+   * @return the new adapter.
+   * @see org.openhealthtools.mdht.uml.cda.phcr.TreatmentNotGivenSubstanceAdministration
+   * @generated
+   */
 	public Adapter createTreatmentNotGivenSubstanceAdministrationAdapter() {
-		return null;
-	}
+    return null;
+  }
 
 	/**
-	 * Creates a new adapter for the default case.
-	 * <!-- begin-user-doc -->
+   * Creates a new adapter for the default case.
+   * <!-- begin-user-doc -->
 	 * This default implementation returns null.
 	 * <!-- end-user-doc -->
-	 * @return the new adapter.
-	 * @generated
-	 */
+   * @return the new adapter.
+   * @generated
+   */
 	public Adapter createEObjectAdapter() {
-		return null;
-	}
+    return null;
+  }
 
 } //CocciAdapterFactory

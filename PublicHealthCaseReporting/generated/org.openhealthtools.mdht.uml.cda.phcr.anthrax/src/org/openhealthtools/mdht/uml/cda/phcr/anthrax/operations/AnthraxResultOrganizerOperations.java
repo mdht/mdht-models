@@ -45,10 +45,11 @@ import org.openhealthtools.mdht.uml.cda.phcr.operations.ResultOrganizerOperation
  * <p>
  * The following operations are supported:
  * <ul>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.phcr.anthrax.AnthraxResultOrganizer#validateAnthraxResultOrganizerCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Anthrax Result Organizer Code P</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.phcr.anthrax.AnthraxResultOrganizer#validateAnthraxResultOrganizerCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Anthrax Result Organizer Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.phcr.anthrax.AnthraxResultOrganizer#validateAnthraxResultOrganizerAnthraxResultObservation(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Anthrax Result Organizer Anthrax Result Observation</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.phcr.anthrax.AnthraxResultOrganizer#getAnthraxResultObservations() <em>Get Anthrax Result Observations</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.phcr.anthrax.AnthraxResultOrganizer#validateResultOrganizerTemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Result Organizer Template Id</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.phcr.anthrax.AnthraxResultOrganizer#validateResultOrganizerCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Result Organizer Code</em>}</li>
  * </ul>
  * </p>
  *
@@ -56,240 +57,335 @@ import org.openhealthtools.mdht.uml.cda.phcr.operations.ResultOrganizerOperation
  */
 public class AnthraxResultOrganizerOperations extends ResultOrganizerOperations {
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	protected AnthraxResultOrganizerOperations() {
-		super();
-	}
+    super();
+  }
 
 	/**
-	 * The cached OCL expression body for the '{@link #validateAnthraxResultOrganizerAnthraxResultObservation(AnthraxResultOrganizer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Anthrax Result Organizer Anthrax Result Observation</em>}' operation.
-	 * <!-- begin-user-doc -->
+   * The cached OCL expression body for the '{@link #validateAnthraxResultOrganizerCodeP(AnthraxResultOrganizer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Anthrax Result Organizer Code P</em>}' operation.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #validateAnthraxResultOrganizerCodeP(AnthraxResultOrganizer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+   * @generated
+   * @ordered
+   */
+  protected static final String VALIDATE_ANTHRAX_RESULT_ORGANIZER_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined())";
+
+  /**
+   * The cached OCL invariant for the '{@link #validateAnthraxResultOrganizerCodeP(AnthraxResultOrganizer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Anthrax Result Organizer Code P</em>}' invariant operation.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #validateAnthraxResultOrganizerCodeP(AnthraxResultOrganizer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+   * @generated
+   * @ordered
+   */
+  
+  protected static Constraint VALIDATE_ANTHRAX_RESULT_ORGANIZER_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * <!-- begin-model-doc -->
+   * @param anthraxResultOrganizer The receiving '<em><b>Result Organizer</b></em>' model object.
+   * @param diagnostics The chain of diagnostics to which problems are to be appended.
+   * @param context The cache of context-specific information.
+   * <!-- end-model-doc -->
+   * @generated
+   */
+  
+  public static  boolean validateAnthraxResultOrganizerCodeP(AnthraxResultOrganizer anthraxResultOrganizer, DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+  	  
+    if (VALIDATE_ANTHRAX_RESULT_ORGANIZER_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+      OCL.Helper helper = EOCL_ENV.createOCLHelper();
+      helper.setContext(AnthraxPackage.Literals.ANTHRAX_RESULT_ORGANIZER);
+      try
+      {
+        VALIDATE_ANTHRAX_RESULT_ORGANIZER_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_ANTHRAX_RESULT_ORGANIZER_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+      }
+      catch (ParserException pe)
+      {
+        throw new UnsupportedOperationException(pe.getLocalizedMessage());
+      }
+    }
+    if (!EOCL_ENV.createQuery(VALIDATE_ANTHRAX_RESULT_ORGANIZER_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(anthraxResultOrganizer))
+    {
+      if (diagnostics != null)
+      {
+        diagnostics.add
+          (new BasicDiagnostic
+            (Diagnostic.ERROR,
+             AnthraxValidator.DIAGNOSTIC_SOURCE,
+             AnthraxValidator.ANTHRAX_RESULT_ORGANIZER__ANTHRAX_RESULT_ORGANIZER_CODE_P,
+             AnthraxPlugin.INSTANCE.getString("AnthraxResultOrganizerCodeP"),
+             new Object [] { anthraxResultOrganizer }));
+      }
+      
+      if (context != null) {
+        // generate a pass token for my dependent constraints to short-circuit or filter results
+        @SuppressWarnings("unchecked")
+        Collection<Object> passToken = (Collection<Object>) context.get("org.openhealthtools.mdht.uml.cda.phcr.anthrax.AnthraxResultOrganizerCodeP");
+        if (passToken == null) {
+          // anticipate a reasonably healthy model
+          passToken = new java.util.ArrayList<Object>(3);
+          context.put("org.openhealthtools.mdht.uml.cda.phcr.anthrax.AnthraxResultOrganizerCodeP", passToken);
+        }
+        passToken.add(anthraxResultOrganizer);
+      }
+       
+      return false;
+    }
+    return true;
+  }
+
+  /**
+   * The cached OCL expression body for the '{@link #validateAnthraxResultOrganizerCode(AnthraxResultOrganizer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Anthrax Result Organizer Code</em>}' operation.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #validateAnthraxResultOrganizerCode(AnthraxResultOrganizer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+   * @generated
+   * @ordered
+   */
+  protected static final String VALIDATE_ANTHRAX_RESULT_ORGANIZER_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and "+
+"let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in "+
+"value.codeSystem = '2.16.840.1.113883.6.1' and (value.code = '11468-6' or value.code = '33697-4' or value.code = '22866-8' or value.code = '22867-6' or value.code = '51976-9' or value.code = '44269-9' or value.code = '33698-2' or value.code = '44270-7' or value.code = '11469-4' or value.code = '17928-3' or value.code = '17915-0' or value.code = '622-1' or value.code = '21020-3' or value.code = '41622-2'))";
+
+  /**
+   * The cached OCL invariant for the '{@link #validateAnthraxResultOrganizerCode(AnthraxResultOrganizer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Anthrax Result Organizer Code</em>}' invariant operation.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #validateAnthraxResultOrganizerCode(AnthraxResultOrganizer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+   * @generated
+   * @ordered
+   */
+  
+  protected static Constraint VALIDATE_ANTHRAX_RESULT_ORGANIZER_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * <!-- begin-model-doc -->
+   * @param anthraxResultOrganizer The receiving '<em><b>Result Organizer</b></em>' model object.
+   * @param diagnostics The chain of diagnostics to which problems are to be appended.
+   * @param context The cache of context-specific information.
+   * <!-- end-model-doc -->
+   * @generated
+   */
+  
+  public static  boolean validateAnthraxResultOrganizerCode(AnthraxResultOrganizer anthraxResultOrganizer, DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+  	  
+    Object passToken = (context == null) ? null : context.get("org.openhealthtools.mdht.uml.cda.phcr.anthrax.AnthraxResultOrganizerCodeP");
+    if ((passToken instanceof Collection<?>) && ((Collection<?>) passToken).contains(anthraxResultOrganizer)) {
+      // I have a free pass to short-circuit
+      return true;
+    }
+  	  
+    if (VALIDATE_ANTHRAX_RESULT_ORGANIZER_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+      OCL.Helper helper = EOCL_ENV.createOCLHelper();
+      helper.setContext(AnthraxPackage.Literals.ANTHRAX_RESULT_ORGANIZER);
+      try
+      {
+        VALIDATE_ANTHRAX_RESULT_ORGANIZER_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_ANTHRAX_RESULT_ORGANIZER_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+      }
+      catch (ParserException pe)
+      {
+        throw new UnsupportedOperationException(pe.getLocalizedMessage());
+      }
+    }
+    if (!EOCL_ENV.createQuery(VALIDATE_ANTHRAX_RESULT_ORGANIZER_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(anthraxResultOrganizer))
+    {
+      if (diagnostics != null)
+      {
+        diagnostics.add
+          (new BasicDiagnostic
+            (Diagnostic.ERROR,
+             AnthraxValidator.DIAGNOSTIC_SOURCE,
+             AnthraxValidator.ANTHRAX_RESULT_ORGANIZER__ANTHRAX_RESULT_ORGANIZER_CODE,
+             AnthraxPlugin.INSTANCE.getString("AnthraxResultOrganizerCode"),
+             new Object [] { anthraxResultOrganizer }));
+      }
+       
+      return false;
+    }
+    return true;
+  }
+
+  /**
+   * The cached OCL expression body for the '{@link #validateAnthraxResultOrganizerAnthraxResultObservation(AnthraxResultOrganizer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Anthrax Result Organizer Anthrax Result Observation</em>}' operation.
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateAnthraxResultOrganizerAnthraxResultObservation(AnthraxResultOrganizer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
+   * @see #validateAnthraxResultOrganizerAnthraxResultObservation(AnthraxResultOrganizer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+   * @generated
+   * @ordered
+   */
 	protected static final String VALIDATE_ANTHRAX_RESULT_ORGANIZER_ANTHRAX_RESULT_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.component->exists(component : cda::Component4 | not component.observation.oclIsUndefined() and component.observation.oclIsKindOf(anthrax::AnthraxResultObservation))";
 
 	/**
-	 * The cached OCL invariant for the '{@link #validateAnthraxResultOrganizerAnthraxResultObservation(AnthraxResultOrganizer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Anthrax Result Organizer Anthrax Result Observation</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
+   * The cached OCL invariant for the '{@link #validateAnthraxResultOrganizerAnthraxResultObservation(AnthraxResultOrganizer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Anthrax Result Organizer Anthrax Result Observation</em>}' invariant operation.
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateAnthraxResultOrganizerAnthraxResultObservation(AnthraxResultOrganizer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
+   * @see #validateAnthraxResultOrganizerAnthraxResultObservation(AnthraxResultOrganizer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+   * @generated
+   * @ordered
+   */
 	protected static Constraint VALIDATE_ANTHRAX_RESULT_ORGANIZER_ANTHRAX_RESULT_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.component->exists(component : cda::Component4 | not component.observation.oclIsUndefined() and component.observation.oclIsKindOf(anthrax::AnthraxResultObservation))
-	 * @param anthraxResultOrganizer The receiving '<em><b>Result Organizer</b></em>' model object.
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
+   * <!-- begin-model-doc -->
+   * @param anthraxResultOrganizer The receiving '<em><b>Result Organizer</b></em>' model object.
+   * @param diagnostics The chain of diagnostics to which problems are to be appended.
+   * @param context The cache of context-specific information.
+   * <!-- end-model-doc -->
+   * @generated
+   */
 	public static  boolean validateAnthraxResultOrganizerAnthraxResultObservation(AnthraxResultOrganizer anthraxResultOrganizer, DiagnosticChain diagnostics, Map<Object, Object> context) {
-		if (VALIDATE_ANTHRAX_RESULT_ORGANIZER_ANTHRAX_RESULT_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setContext(AnthraxPackage.Literals.ANTHRAX_RESULT_ORGANIZER);
-			try {
-				VALIDATE_ANTHRAX_RESULT_ORGANIZER_ANTHRAX_RESULT_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_ANTHRAX_RESULT_ORGANIZER_ANTHRAX_RESULT_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
-				throw new UnsupportedOperationException(pe.getLocalizedMessage());
-			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_ANTHRAX_RESULT_ORGANIZER_ANTHRAX_RESULT_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(anthraxResultOrganizer)) {
-			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 AnthraxValidator.DIAGNOSTIC_SOURCE,
-						 AnthraxValidator.ANTHRAX_RESULT_ORGANIZER__ANTHRAX_RESULT_ORGANIZER_ANTHRAX_RESULT_OBSERVATION,
-						 AnthraxPlugin.INSTANCE.getString("AnthraxResultOrganizerAnthraxResultObservation"),
-						 new Object [] { anthraxResultOrganizer }));
-			}
-			return false;
-		}
-		return true;
-	}
+  	  
+    if (VALIDATE_ANTHRAX_RESULT_ORGANIZER_ANTHRAX_RESULT_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+      OCL.Helper helper = EOCL_ENV.createOCLHelper();
+      helper.setContext(AnthraxPackage.Literals.ANTHRAX_RESULT_ORGANIZER);
+      try
+      {
+        VALIDATE_ANTHRAX_RESULT_ORGANIZER_ANTHRAX_RESULT_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_ANTHRAX_RESULT_ORGANIZER_ANTHRAX_RESULT_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+      }
+      catch (ParserException pe)
+      {
+        throw new UnsupportedOperationException(pe.getLocalizedMessage());
+      }
+    }
+    if (!EOCL_ENV.createQuery(VALIDATE_ANTHRAX_RESULT_ORGANIZER_ANTHRAX_RESULT_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(anthraxResultOrganizer))
+    {
+      if (diagnostics != null)
+      {
+        diagnostics.add
+          (new BasicDiagnostic
+            (Diagnostic.ERROR,
+             AnthraxValidator.DIAGNOSTIC_SOURCE,
+             AnthraxValidator.ANTHRAX_RESULT_ORGANIZER__ANTHRAX_RESULT_ORGANIZER_ANTHRAX_RESULT_OBSERVATION,
+             AnthraxPlugin.INSTANCE.getString("AnthraxResultOrganizerAnthraxResultObservation"),
+             new Object [] { anthraxResultOrganizer }));
+      }
+       
+      return false;
+    }
+    return true;
+  }
 
 	/**
-	 * The cached OCL expression body for the '{@link #getAnthraxResultObservations(AnthraxResultOrganizer) <em>Get Anthrax Result Observations</em>}' operation.
-	 * <!-- begin-user-doc -->
+   * The cached OCL expression body for the '{@link #getAnthraxResultObservations(AnthraxResultOrganizer) <em>Get Anthrax Result Observations</em>}' operation.
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getAnthraxResultObservations(AnthraxResultOrganizer)
-	 * @generated
-	 * @ordered
-	 */
+   * @see #getAnthraxResultObservations(AnthraxResultOrganizer)
+   * @generated
+   * @ordered
+   */
 	protected static final String GET_ANTHRAX_RESULT_OBSERVATIONS__EOCL_EXP = "self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(anthrax::AnthraxResultObservation)).oclAsType(anthrax::AnthraxResultObservation)";
 
 	/**
-	 * The cached OCL query for the '{@link #getAnthraxResultObservations(AnthraxResultOrganizer) <em>Get Anthrax Result Observations</em>}' query operation.
-	 * <!-- begin-user-doc -->
+   * The cached OCL query for the '{@link #getAnthraxResultObservations(AnthraxResultOrganizer) <em>Get Anthrax Result Observations</em>}' query operation.
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getAnthraxResultObservations(AnthraxResultOrganizer)
-	 * @generated
-	 * @ordered
-	 */
+   * @see #getAnthraxResultObservations(AnthraxResultOrganizer)
+   * @generated
+   * @ordered
+   */
 	protected static OCLExpression<EClassifier> GET_ANTHRAX_RESULT_OBSERVATIONS__EOCL_QRY;
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(anthrax::AnthraxResultObservation)).oclAsType(anthrax::AnthraxResultObservation)
-	 * @param anthraxResultOrganizer The receiving '<em><b>Result Organizer</b></em>' model object.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	
 	public static  EList<AnthraxResultObservation> getAnthraxResultObservations(AnthraxResultOrganizer anthraxResultOrganizer) {
-		if (GET_ANTHRAX_RESULT_OBSERVATIONS__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(AnthraxPackage.Literals.ANTHRAX_RESULT_ORGANIZER, AnthraxPackage.Literals.ANTHRAX_RESULT_ORGANIZER.getEAllOperations().get(72));
-			try {
-				GET_ANTHRAX_RESULT_OBSERVATIONS__EOCL_QRY = helper.createQuery(GET_ANTHRAX_RESULT_OBSERVATIONS__EOCL_EXP);
-			}
-			catch (ParserException pe) {
-				throw new UnsupportedOperationException(pe.getLocalizedMessage());
-			}
-		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_ANTHRAX_RESULT_OBSERVATIONS__EOCL_QRY);
-		@SuppressWarnings("unchecked")
-		Collection<AnthraxResultObservation> result = (Collection<AnthraxResultObservation>) query.evaluate(anthraxResultOrganizer);
-		return new BasicEList.UnmodifiableEList<AnthraxResultObservation>(result.size(), result.toArray());
-	}
+    if (GET_ANTHRAX_RESULT_OBSERVATIONS__EOCL_QRY == null)
+    {
+      OCL.Helper helper = EOCL_ENV.createOCLHelper();
+      helper.setOperationContext(AnthraxPackage.Literals.ANTHRAX_RESULT_ORGANIZER, AnthraxPackage.Literals.ANTHRAX_RESULT_ORGANIZER.getEAllOperations().get(77));
+      try
+      {
+        GET_ANTHRAX_RESULT_OBSERVATIONS__EOCL_QRY = helper.createQuery(GET_ANTHRAX_RESULT_OBSERVATIONS__EOCL_EXP);
+      }
+      catch (ParserException pe)
+      {
+        throw new UnsupportedOperationException(pe.getLocalizedMessage());
+      }
+    }
+    OCL.Query query = EOCL_ENV.createQuery(GET_ANTHRAX_RESULT_OBSERVATIONS__EOCL_QRY);
+    @SuppressWarnings("unchecked")
+    Collection<AnthraxResultObservation> result = (Collection<AnthraxResultObservation>) query.evaluate(anthraxResultOrganizer);
+    return new BasicEList.UnmodifiableEList<AnthraxResultObservation>(result.size(), result.toArray());
+  }
 
 	/**
-	 * The cached OCL expression body for the '{@link #validateResultOrganizerTemplateId(AnthraxResultOrganizer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Result Organizer Template Id</em>}' operation.
-	 * <!-- begin-user-doc -->
+   * The cached OCL expression body for the '{@link #validateResultOrganizerTemplateId(AnthraxResultOrganizer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Result Organizer Template Id</em>}' operation.
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateResultOrganizerTemplateId(AnthraxResultOrganizer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
+   * @see #validateResultOrganizerTemplateId(AnthraxResultOrganizer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+   * @generated
+   * @ordered
+   */
 	protected static final String VALIDATE_RESULT_ORGANIZER_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.15.3.40')";
 
 	/**
-	 * The cached OCL invariant for the '{@link #validateResultOrganizerTemplateId(AnthraxResultOrganizer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Result Organizer Template Id</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
+   * The cached OCL invariant for the '{@link #validateResultOrganizerTemplateId(AnthraxResultOrganizer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Result Organizer Template Id</em>}' invariant operation.
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateResultOrganizerTemplateId(AnthraxResultOrganizer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
+   * @see #validateResultOrganizerTemplateId(AnthraxResultOrganizer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+   * @generated
+   * @ordered
+   */
 	
 	protected static Constraint VALIDATE_RESULT_ORGANIZER_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 	
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.15.3.40')
-	 * @param anthraxResultOrganizer The receiving '<em><b>Result Organizer</b></em>' model object.
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
+   * <!-- begin-model-doc -->
+   * @param anthraxResultOrganizer The receiving '<em><b>Result Organizer</b></em>' model object.
+   * @param diagnostics The chain of diagnostics to which problems are to be appended.
+   * @param context The cache of context-specific information.
+   * <!-- end-model-doc -->
+   * @generated
+   */
 	
 	public static  boolean validateResultOrganizerTemplateId(AnthraxResultOrganizer anthraxResultOrganizer, DiagnosticChain diagnostics, Map<Object, Object> context) {
-		if (VALIDATE_RESULT_ORGANIZER_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setContext(AnthraxPackage.Literals.ANTHRAX_RESULT_ORGANIZER);
-			try {
-				VALIDATE_RESULT_ORGANIZER_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_RESULT_ORGANIZER_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
-				throw new UnsupportedOperationException(pe.getLocalizedMessage());
-			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_RESULT_ORGANIZER_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(anthraxResultOrganizer)) {
-			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 AnthraxValidator.DIAGNOSTIC_SOURCE,
-						 AnthraxValidator.ANTHRAX_RESULT_ORGANIZER__RESULT_ORGANIZER_TEMPLATE_ID,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "ResultOrganizerTemplateId", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(anthraxResultOrganizer, context) }),
-						 new Object [] { anthraxResultOrganizer }));
-			}
-			return false;
-		}
-		return true;
-	}
-
-	/**
-	 * The cached OCL expression body for the '{@link #validateResultOrganizerCode(AnthraxResultOrganizer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Result Organizer Code</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #validateResultOrganizerCode(AnthraxResultOrganizer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
-	protected static final String VALIDATE_RESULT_ORGANIZER_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and "+
-"let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in ("+
-"value.codeSystem = '2.16.840.1.113883.6.1' and (value.code = '11468-6' or value.code = '33697-4' or value.code = '22866-8' or value.code = '22867-6' or value.code = '51976-9' or value.code = '44269-9' or value.code = '33698-2' or value.code = '44270-7' or value.code = '11469-4' or value.code = '17928-3' or value.code = '17915-0' or value.code = '622-1' or value.code = '21020-3' or value.code = '41622-2')))";
-
-	/**
-	 * The cached OCL invariant for the '{@link #validateResultOrganizerCode(AnthraxResultOrganizer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Result Organizer Code</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #validateResultOrganizerCode(AnthraxResultOrganizer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
-	
-	protected static Constraint VALIDATE_RESULT_ORGANIZER_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-	
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * (self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and 
-	 * let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in (
-	 * value.codeSystem = '2.16.840.1.113883.6.1' and (value.code = '11468-6' or value.code = '33697-4' or value.code = '22866-8' or value.code = '22867-6' or value.code = '51976-9' or value.code = '44269-9' or value.code = '33698-2' or value.code = '44270-7' or value.code = '11469-4' or value.code = '17928-3' or value.code = '17915-0' or value.code = '622-1' or value.code = '21020-3' or value.code = '41622-2')))
-	 * @param anthraxResultOrganizer The receiving '<em><b>Result Organizer</b></em>' model object.
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
-	
-	public static  boolean validateResultOrganizerCode(AnthraxResultOrganizer anthraxResultOrganizer, DiagnosticChain diagnostics, Map<Object, Object> context) {
-		if (VALIDATE_RESULT_ORGANIZER_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setContext(AnthraxPackage.Literals.ANTHRAX_RESULT_ORGANIZER);
-			try {
-				VALIDATE_RESULT_ORGANIZER_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_RESULT_ORGANIZER_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
-				throw new UnsupportedOperationException(pe.getLocalizedMessage());
-			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_RESULT_ORGANIZER_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(anthraxResultOrganizer)) {
-			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 AnthraxValidator.DIAGNOSTIC_SOURCE,
-						 AnthraxValidator.ANTHRAX_RESULT_ORGANIZER__RESULT_ORGANIZER_CODE,
-						 AnthraxPlugin.INSTANCE.getString("ResultOrganizerCode"),
-						 new Object [] { anthraxResultOrganizer }));
-			}
-			return false;
-		}
-		return true;
-	}
+  	  
+    if (VALIDATE_RESULT_ORGANIZER_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+      OCL.Helper helper = EOCL_ENV.createOCLHelper();
+      helper.setContext(AnthraxPackage.Literals.ANTHRAX_RESULT_ORGANIZER);
+      try
+      {
+        VALIDATE_RESULT_ORGANIZER_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_RESULT_ORGANIZER_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+      }
+      catch (ParserException pe)
+      {
+        throw new UnsupportedOperationException(pe.getLocalizedMessage());
+      }
+    }
+    if (!EOCL_ENV.createQuery(VALIDATE_RESULT_ORGANIZER_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(anthraxResultOrganizer))
+    {
+      if (diagnostics != null)
+      {
+        diagnostics.add
+          (new BasicDiagnostic
+            (Diagnostic.ERROR,
+             AnthraxValidator.DIAGNOSTIC_SOURCE,
+             AnthraxValidator.ANTHRAX_RESULT_ORGANIZER__RESULT_ORGANIZER_TEMPLATE_ID,
+             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "ResultOrganizerTemplateId", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(anthraxResultOrganizer, context) }),
+             new Object [] { anthraxResultOrganizer }));
+      }
+       
+      return false;
+    }
+    return true;
+  }
 
 } // AnthraxResultOrganizerOperations

@@ -10,12 +10,15 @@
  *******************************************************************************/
 package org.openhealthtools.mdht.uml.cda.phcr.hepb.impl;
 
+import java.lang.Iterable;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
 
 import org.eclipse.emf.ecore.EClass;
 
+import org.eclipse.emf.ecore.EObject;
+import org.openhealthtools.mdht.emf.runtime.util.Initializer;
 import org.openhealthtools.mdht.uml.cda.impl.ActImpl;
 
 import org.openhealthtools.mdht.uml.cda.phcr.hepb.AcuteHepatitisBPossibleExposureLocationAndTypeAct;
@@ -36,76 +39,85 @@ import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
  */
 public class AcuteHepatitisBPossibleExposureLocationAndTypeActImpl extends ActImpl implements AcuteHepatitisBPossibleExposureLocationAndTypeAct {
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	protected AcuteHepatitisBPossibleExposureLocationAndTypeActImpl() {
-		super();
-	}
+    super();
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	@Override
 	protected EClass eStaticClass() {
-		return HepbPackage.Literals.ACUTE_HEPATITIS_BPOSSIBLE_EXPOSURE_LOCATION_AND_TYPE_ACT;
-	}
+    return HepbPackage.Literals.ACUTE_HEPATITIS_BPOSSIBLE_EXPOSURE_LOCATION_AND_TYPE_ACT;
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateAcuteHepatitisBPossibleExposureLocationAndTypeActTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return AcuteHepatitisBPossibleExposureLocationAndTypeActOperations.validateAcuteHepatitisBPossibleExposureLocationAndTypeActTemplateId(this, diagnostics, context);
-	}
+    return AcuteHepatitisBPossibleExposureLocationAndTypeActOperations.validateAcuteHepatitisBPossibleExposureLocationAndTypeActTemplateId(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateAcuteHepatitisBPossibleExposureLocationAndTypeActClassCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return AcuteHepatitisBPossibleExposureLocationAndTypeActOperations.validateAcuteHepatitisBPossibleExposureLocationAndTypeActClassCode(this, diagnostics, context);
-	}
+    return AcuteHepatitisBPossibleExposureLocationAndTypeActOperations.validateAcuteHepatitisBPossibleExposureLocationAndTypeActClassCode(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateAcuteHepatitisBPossibleExposureLocationAndTypeActCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return AcuteHepatitisBPossibleExposureLocationAndTypeActOperations.validateAcuteHepatitisBPossibleExposureLocationAndTypeActCode(this, diagnostics, context);
-	}
+    return AcuteHepatitisBPossibleExposureLocationAndTypeActOperations.validateAcuteHepatitisBPossibleExposureLocationAndTypeActCode(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateAcuteHepatitisBPossibleExposureLocationAndTypeActMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return AcuteHepatitisBPossibleExposureLocationAndTypeActOperations.validateAcuteHepatitisBPossibleExposureLocationAndTypeActMoodCode(this, diagnostics, context);
-	}
+    return AcuteHepatitisBPossibleExposureLocationAndTypeActOperations.validateAcuteHepatitisBPossibleExposureLocationAndTypeActMoodCode(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateAcuteHepatitisBPossibleExposureLocationAndTypeActStatusCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return AcuteHepatitisBPossibleExposureLocationAndTypeActOperations.validateAcuteHepatitisBPossibleExposureLocationAndTypeActStatusCode(this, diagnostics, context);
-	}
+    return AcuteHepatitisBPossibleExposureLocationAndTypeActOperations.validateAcuteHepatitisBPossibleExposureLocationAndTypeActStatusCode(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public AcuteHepatitisBPossibleExposureLocationAndTypeAct init() {
-    	CDAUtil.init(this);
-    	return this;
-	}
+      return Initializer.Util.init(this);
+  }
+
+  /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    public AcuteHepatitisBPossibleExposureLocationAndTypeAct init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
 } //AcuteHepatitisBPossibleExposureLocationAndTypeActImpl

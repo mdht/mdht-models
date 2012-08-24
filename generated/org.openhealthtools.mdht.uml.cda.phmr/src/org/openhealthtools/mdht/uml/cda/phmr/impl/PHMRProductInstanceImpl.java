@@ -22,12 +22,15 @@
  */
 package org.openhealthtools.mdht.uml.cda.phmr.impl;
 
+import java.lang.Iterable;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
 
 import org.eclipse.emf.ecore.EClass;
 
+import org.eclipse.emf.ecore.EObject;
+import org.openhealthtools.mdht.emf.runtime.util.Initializer;
 import org.openhealthtools.mdht.uml.cda.ccd.impl.ProductInstanceImpl;
 
 import org.openhealthtools.mdht.uml.cda.phmr.PHMRProductInstance;
@@ -48,59 +51,88 @@ import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
  */
 public class PHMRProductInstanceImpl extends ProductInstanceImpl implements PHMRProductInstance {
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	protected PHMRProductInstanceImpl() {
-		super();
-	}
+    super();
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	@Override
 	protected EClass eStaticClass() {
-		return PhmrPackage.Literals.PHMR_PRODUCT_INSTANCE;
-	}
+    return PhmrPackage.Literals.PHMR_PRODUCT_INSTANCE;
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validatePHMRProductInstanceCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return PHMRProductInstanceOperations.validatePHMRProductInstanceCode(this, diagnostics, context);
-	}
+    return PHMRProductInstanceOperations.validatePHMRProductInstanceCode(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validatePHMRProductInstanceId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return PHMRProductInstanceOperations.validatePHMRProductInstanceId(this, diagnostics, context);
-	}
+    return PHMRProductInstanceOperations.validatePHMRProductInstanceId(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public boolean validatePHMRProductInstanceScopingEntity(DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+    return PHMRProductInstanceOperations.validatePHMRProductInstanceScopingEntity(this, diagnostics, context);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public boolean validatePHMRProductInstancePlayingDevice(DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+    return PHMRProductInstanceOperations.validatePHMRProductInstancePlayingDevice(this, diagnostics, context);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	@Override
 	public boolean validateProductInstanceTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return PHMRProductInstanceOperations.validateProductInstanceTemplateId(this, diagnostics, context);
-	}
+    return PHMRProductInstanceOperations.validateProductInstanceTemplateId(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public PHMRProductInstance init() {
-    	CDAUtil.init(this);
-    	return this;
-	}
+      return Initializer.Util.init(this);
+  }
+
+  /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    public PHMRProductInstance init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
 } //PHMRProductInstanceImpl

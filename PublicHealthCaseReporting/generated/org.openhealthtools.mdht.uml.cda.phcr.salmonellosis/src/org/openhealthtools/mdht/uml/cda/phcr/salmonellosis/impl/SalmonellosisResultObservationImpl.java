@@ -1,24 +1,28 @@
-/*******************************************************************************
- * Copyright (c) 2012, Public Health Data Standards Consortium (PHDSC)
- * All rights reserved. This program and the accompanying materials
- * are made available under the terms of the Eclipse Public License v1.0
- * which accompanies this distribution, and is available at
- * http://www.eclipse.org/legal/epl-v10.html
+/**
+ * <copyright>
+ * </copyright>
  *
- * Contributors:
- *     PHDSC - initial API and implementation
- *******************************************************************************/
+ * $Id$
+ */
 package org.openhealthtools.mdht.uml.cda.phcr.salmonellosis.impl;
+
+import java.lang.Iterable;
 
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
+
 import org.eclipse.emf.ecore.EClass;
+import org.eclipse.emf.ecore.EObject;
+
+import org.openhealthtools.mdht.emf.runtime.util.Initializer;
+
 import org.openhealthtools.mdht.uml.cda.phcr.impl.ResultObservationImpl;
+
 import org.openhealthtools.mdht.uml.cda.phcr.salmonellosis.SalmonellosisPackage;
 import org.openhealthtools.mdht.uml.cda.phcr.salmonellosis.SalmonellosisResultObservation;
+
 import org.openhealthtools.mdht.uml.cda.phcr.salmonellosis.operations.SalmonellosisResultObservationOperations;
-import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
 
 /**
  * <!-- begin-user-doc -->
@@ -29,24 +33,37 @@ import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
  *
  * @generated
  */
-public class SalmonellosisResultObservationImpl extends ResultObservationImpl implements SalmonellosisResultObservation {
-	/**
+public class SalmonellosisResultObservationImpl extends ResultObservationImpl implements SalmonellosisResultObservation
+{
+  /**
    * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+   * <!-- end-user-doc -->
    * @generated
    */
-	protected SalmonellosisResultObservationImpl() {
+  protected SalmonellosisResultObservationImpl()
+  {
     super();
   }
 
-	/**
+  /**
    * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+   * <!-- end-user-doc -->
    * @generated
    */
-	@Override
-	protected EClass eStaticClass() {
+  @Override
+  protected EClass eStaticClass()
+  {
     return SalmonellosisPackage.Literals.SALMONELLOSIS_RESULT_OBSERVATION;
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public boolean validateSalmonellosisResultObservationCode(DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+    return SalmonellosisResultObservationOperations.validateSalmonellosisResultObservationCode(this, diagnostics, context);
   }
 
   /**
@@ -66,8 +83,15 @@ public class SalmonellosisResultObservationImpl extends ResultObservationImpl im
    * @generated
    */
   public SalmonellosisResultObservation init() {
-    	CDAUtil.init(this);
-    	return this;
+      return Initializer.Util.init(this);
   }
-
+    /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    public SalmonellosisResultObservation init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
 } //SalmonellosisResultObservationImpl

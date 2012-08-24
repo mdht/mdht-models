@@ -10,11 +10,14 @@
  *******************************************************************************/
 package org.openhealthtools.mdht.uml.cda.phcr.pertussis.impl;
 
+import java.lang.Iterable;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.common.util.EList;
 import org.eclipse.emf.ecore.EClass;
+import org.eclipse.emf.ecore.EObject;
+import org.openhealthtools.mdht.emf.runtime.util.Initializer;
 import org.openhealthtools.mdht.uml.cda.phcr.impl.ResultOrganizerImpl;
 import org.openhealthtools.mdht.uml.cda.phcr.pertussis.PertussisPackage;
 import org.openhealthtools.mdht.uml.cda.phcr.pertussis.PertussisResultObservation;
@@ -33,68 +36,77 @@ import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
  */
 public class PertussisResultOrganizerImpl extends ResultOrganizerImpl implements PertussisResultOrganizer {
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	protected PertussisResultOrganizerImpl() {
-		super();
-	}
+    super();
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	@Override
 	protected EClass eStaticClass() {
-		return PertussisPackage.Literals.PERTUSSIS_RESULT_ORGANIZER;
-	}
+    return PertussisPackage.Literals.PERTUSSIS_RESULT_ORGANIZER;
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validatePertussisResultOrganizerCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return PertussisResultOrganizerOperations.validatePertussisResultOrganizerCode(this, diagnostics, context);
-	}
+    return PertussisResultOrganizerOperations.validatePertussisResultOrganizerCode(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validatePertussisResultOrganizerPertussisResultObservation(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return PertussisResultOrganizerOperations.validatePertussisResultOrganizerPertussisResultObservation(this, diagnostics, context);
-	}
+    return PertussisResultOrganizerOperations.validatePertussisResultOrganizerPertussisResultObservation(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public EList<PertussisResultObservation> getPertussisResultObservations() {
-		return PertussisResultOrganizerOperations.getPertussisResultObservations(this);
-	}
+    return PertussisResultOrganizerOperations.getPertussisResultObservations(this);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	@Override
 	public boolean validateResultOrganizerTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return PertussisResultOrganizerOperations.validateResultOrganizerTemplateId(this, diagnostics, context);
-	}
+    return PertussisResultOrganizerOperations.validateResultOrganizerTemplateId(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public PertussisResultOrganizer init() {
-    	CDAUtil.init(this);
-    	return this;
-	}
+      return Initializer.Util.init(this);
+  }
+
+  /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    public PertussisResultOrganizer init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
 } //PertussisResultOrganizerImpl

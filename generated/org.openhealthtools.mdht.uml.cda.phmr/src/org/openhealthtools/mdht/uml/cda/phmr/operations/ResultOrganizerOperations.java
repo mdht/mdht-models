@@ -68,275 +68,288 @@ import org.openhealthtools.mdht.uml.cda.phmr.util.PhmrValidator;
  */
 public class ResultOrganizerOperations extends org.openhealthtools.mdht.uml.cda.ccd.operations.ResultOrganizerOperations {
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	protected ResultOrganizerOperations() {
-		super();
-	}
+    super();
+  }
 
 	/**
-	 * The cached OCL expression body for the '{@link #validatePhmrResultOrganizerNumericObservation(ResultOrganizer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Phmr Result Organizer Numeric Observation</em>}' operation.
-	 * <!-- begin-user-doc -->
+   * The cached OCL expression body for the '{@link #validatePhmrResultOrganizerNumericObservation(ResultOrganizer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Phmr Result Organizer Numeric Observation</em>}' operation.
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validatePhmrResultOrganizerNumericObservation(ResultOrganizer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
+   * @see #validatePhmrResultOrganizerNumericObservation(ResultOrganizer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+   * @generated
+   * @ordered
+   */
 	protected static final String VALIDATE_PHMR_RESULT_ORGANIZER_NUMERIC_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.component->exists(component : cda::Component4 | not component.observation.oclIsUndefined() and component.observation.oclIsKindOf(phmr::NumericObservation))";
 
 	/**
-	 * The cached OCL invariant for the '{@link #validatePhmrResultOrganizerNumericObservation(ResultOrganizer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Phmr Result Organizer Numeric Observation</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
+   * The cached OCL invariant for the '{@link #validatePhmrResultOrganizerNumericObservation(ResultOrganizer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Phmr Result Organizer Numeric Observation</em>}' invariant operation.
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validatePhmrResultOrganizerNumericObservation(ResultOrganizer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
+   * @see #validatePhmrResultOrganizerNumericObservation(ResultOrganizer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+   * @generated
+   * @ordered
+   */
 	protected static Constraint VALIDATE_PHMR_RESULT_ORGANIZER_NUMERIC_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.component->exists(component : cda::Component4 | not component.observation.oclIsUndefined() and component.observation.oclIsKindOf(phmr::NumericObservation))
-	 * @param resultOrganizer The receiving '<em><b>Result Organizer</b></em>' model object.
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
+   * <!-- begin-model-doc -->
+   * @param resultOrganizer The receiving '<em><b>Result Organizer</b></em>' model object.
+   * @param diagnostics The chain of diagnostics to which problems are to be appended.
+   * @param context The cache of context-specific information.
+   * <!-- end-model-doc -->
+   * @generated
+   */
 	public static  boolean validatePhmrResultOrganizerNumericObservation(ResultOrganizer resultOrganizer, DiagnosticChain diagnostics, Map<Object, Object> context) {
-		if (VALIDATE_PHMR_RESULT_ORGANIZER_NUMERIC_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setContext(PhmrPackage.Literals.RESULT_ORGANIZER);
-			try {
-				VALIDATE_PHMR_RESULT_ORGANIZER_NUMERIC_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PHMR_RESULT_ORGANIZER_NUMERIC_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
-				throw new UnsupportedOperationException(pe.getLocalizedMessage());
-			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PHMR_RESULT_ORGANIZER_NUMERIC_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(resultOrganizer)) {
-			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.WARNING,
-						 PhmrValidator.DIAGNOSTIC_SOURCE,
-						 PhmrValidator.RESULT_ORGANIZER__PHMR_RESULT_ORGANIZER_NUMERIC_OBSERVATION,
-						 PhmrPlugin.INSTANCE.getString("PhmrResultOrganizerNumericObservation"),
-						 new Object [] { resultOrganizer }));
-			}
-			return false;
-		}
-		return true;
-	}
+  	  
+    if (VALIDATE_PHMR_RESULT_ORGANIZER_NUMERIC_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+      OCL.Helper helper = EOCL_ENV.createOCLHelper();
+      helper.setContext(PhmrPackage.Literals.RESULT_ORGANIZER);
+      try
+      {
+        VALIDATE_PHMR_RESULT_ORGANIZER_NUMERIC_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PHMR_RESULT_ORGANIZER_NUMERIC_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+      }
+      catch (ParserException pe)
+      {
+        throw new UnsupportedOperationException(pe.getLocalizedMessage());
+      }
+    }
+    if (!EOCL_ENV.createQuery(VALIDATE_PHMR_RESULT_ORGANIZER_NUMERIC_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(resultOrganizer))
+    {
+      if (diagnostics != null)
+      {
+        diagnostics.add
+          (new BasicDiagnostic
+            (Diagnostic.WARNING,
+             PhmrValidator.DIAGNOSTIC_SOURCE,
+             PhmrValidator.RESULT_ORGANIZER__PHMR_RESULT_ORGANIZER_NUMERIC_OBSERVATION,
+             PhmrPlugin.INSTANCE.getString("PhmrResultOrganizerNumericObservation"),
+             new Object [] { resultOrganizer }));
+      }
+       
+      return false;
+    }
+    return true;
+  }
 
 	/**
-	 * The cached OCL expression body for the '{@link #validatePhmrResultOrganizerWaveformSeriesObservation(ResultOrganizer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Phmr Result Organizer Waveform Series Observation</em>}' operation.
-	 * <!-- begin-user-doc -->
+   * The cached OCL expression body for the '{@link #validatePhmrResultOrganizerWaveformSeriesObservation(ResultOrganizer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Phmr Result Organizer Waveform Series Observation</em>}' operation.
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validatePhmrResultOrganizerWaveformSeriesObservation(ResultOrganizer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
+   * @see #validatePhmrResultOrganizerWaveformSeriesObservation(ResultOrganizer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+   * @generated
+   * @ordered
+   */
 	protected static final String VALIDATE_PHMR_RESULT_ORGANIZER_WAVEFORM_SERIES_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.component->exists(component : cda::Component4 | not component.observation.oclIsUndefined() and component.observation.oclIsKindOf(phmr::WaveformSeriesObservation))";
 
 	/**
-	 * The cached OCL invariant for the '{@link #validatePhmrResultOrganizerWaveformSeriesObservation(ResultOrganizer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Phmr Result Organizer Waveform Series Observation</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
+   * The cached OCL invariant for the '{@link #validatePhmrResultOrganizerWaveformSeriesObservation(ResultOrganizer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Phmr Result Organizer Waveform Series Observation</em>}' invariant operation.
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validatePhmrResultOrganizerWaveformSeriesObservation(ResultOrganizer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
+   * @see #validatePhmrResultOrganizerWaveformSeriesObservation(ResultOrganizer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+   * @generated
+   * @ordered
+   */
 	protected static Constraint VALIDATE_PHMR_RESULT_ORGANIZER_WAVEFORM_SERIES_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.component->exists(component : cda::Component4 | not component.observation.oclIsUndefined() and component.observation.oclIsKindOf(phmr::WaveformSeriesObservation))
-	 * @param resultOrganizer The receiving '<em><b>Result Organizer</b></em>' model object.
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
+   * <!-- begin-model-doc -->
+   * @param resultOrganizer The receiving '<em><b>Result Organizer</b></em>' model object.
+   * @param diagnostics The chain of diagnostics to which problems are to be appended.
+   * @param context The cache of context-specific information.
+   * <!-- end-model-doc -->
+   * @generated
+   */
 	public static  boolean validatePhmrResultOrganizerWaveformSeriesObservation(ResultOrganizer resultOrganizer, DiagnosticChain diagnostics, Map<Object, Object> context) {
-		if (VALIDATE_PHMR_RESULT_ORGANIZER_WAVEFORM_SERIES_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setContext(PhmrPackage.Literals.RESULT_ORGANIZER);
-			try {
-				VALIDATE_PHMR_RESULT_ORGANIZER_WAVEFORM_SERIES_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PHMR_RESULT_ORGANIZER_WAVEFORM_SERIES_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
-				throw new UnsupportedOperationException(pe.getLocalizedMessage());
-			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PHMR_RESULT_ORGANIZER_WAVEFORM_SERIES_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(resultOrganizer)) {
-			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.INFO,
-						 PhmrValidator.DIAGNOSTIC_SOURCE,
-						 PhmrValidator.RESULT_ORGANIZER__PHMR_RESULT_ORGANIZER_WAVEFORM_SERIES_OBSERVATION,
-						 PhmrPlugin.INSTANCE.getString("PhmrResultOrganizerWaveformSeriesObservation"),
-						 new Object [] { resultOrganizer }));
-			}
-			return false;
-		}
-		return true;
-	}
+  	  
+    if (VALIDATE_PHMR_RESULT_ORGANIZER_WAVEFORM_SERIES_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+      OCL.Helper helper = EOCL_ENV.createOCLHelper();
+      helper.setContext(PhmrPackage.Literals.RESULT_ORGANIZER);
+      try
+      {
+        VALIDATE_PHMR_RESULT_ORGANIZER_WAVEFORM_SERIES_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PHMR_RESULT_ORGANIZER_WAVEFORM_SERIES_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+      }
+      catch (ParserException pe)
+      {
+        throw new UnsupportedOperationException(pe.getLocalizedMessage());
+      }
+    }
+    if (!EOCL_ENV.createQuery(VALIDATE_PHMR_RESULT_ORGANIZER_WAVEFORM_SERIES_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(resultOrganizer))
+    {
+      if (diagnostics != null)
+      {
+        diagnostics.add
+          (new BasicDiagnostic
+            (Diagnostic.INFO,
+             PhmrValidator.DIAGNOSTIC_SOURCE,
+             PhmrValidator.RESULT_ORGANIZER__PHMR_RESULT_ORGANIZER_WAVEFORM_SERIES_OBSERVATION,
+             PhmrPlugin.INSTANCE.getString("PhmrResultOrganizerWaveformSeriesObservation"),
+             new Object [] { resultOrganizer }));
+      }
+       
+      return false;
+    }
+    return true;
+  }
 
 	/**
-	 * The cached OCL expression body for the '{@link #getNumericObservations(ResultOrganizer) <em>Get Numeric Observations</em>}' operation.
-	 * <!-- begin-user-doc -->
+   * The cached OCL expression body for the '{@link #getNumericObservations(ResultOrganizer) <em>Get Numeric Observations</em>}' operation.
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getNumericObservations(ResultOrganizer)
-	 * @generated
-	 * @ordered
-	 */
+   * @see #getNumericObservations(ResultOrganizer)
+   * @generated
+   * @ordered
+   */
 	protected static final String GET_NUMERIC_OBSERVATIONS__EOCL_EXP = "self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(phmr::NumericObservation)).oclAsType(phmr::NumericObservation)";
 
 	/**
-	 * The cached OCL query for the '{@link #getNumericObservations(ResultOrganizer) <em>Get Numeric Observations</em>}' query operation.
-	 * <!-- begin-user-doc -->
+   * The cached OCL query for the '{@link #getNumericObservations(ResultOrganizer) <em>Get Numeric Observations</em>}' query operation.
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getNumericObservations(ResultOrganizer)
-	 * @generated
-	 * @ordered
-	 */
+   * @see #getNumericObservations(ResultOrganizer)
+   * @generated
+   * @ordered
+   */
 	protected static OCLExpression<EClassifier> GET_NUMERIC_OBSERVATIONS__EOCL_QRY;
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(phmr::NumericObservation)).oclAsType(phmr::NumericObservation)
-	 * @param resultOrganizer The receiving '<em><b>Result Organizer</b></em>' model object.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public static  EList<NumericObservation> getNumericObservations(ResultOrganizer resultOrganizer) {
-		if (GET_NUMERIC_OBSERVATIONS__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(PhmrPackage.Literals.RESULT_ORGANIZER, PhmrPackage.Literals.RESULT_ORGANIZER.getEAllOperations().get(62));
-			try {
-				GET_NUMERIC_OBSERVATIONS__EOCL_QRY = helper.createQuery(GET_NUMERIC_OBSERVATIONS__EOCL_EXP);
-			}
-			catch (ParserException pe) {
-				throw new UnsupportedOperationException(pe.getLocalizedMessage());
-			}
-		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_NUMERIC_OBSERVATIONS__EOCL_QRY);
-		@SuppressWarnings("unchecked")
-		Collection<NumericObservation> result = (Collection<NumericObservation>) query.evaluate(resultOrganizer);
-		return new BasicEList.UnmodifiableEList<NumericObservation>(result.size(), result.toArray());
-	}
+    if (GET_NUMERIC_OBSERVATIONS__EOCL_QRY == null)
+    {
+      OCL.Helper helper = EOCL_ENV.createOCLHelper();
+      helper.setOperationContext(PhmrPackage.Literals.RESULT_ORGANIZER, PhmrPackage.Literals.RESULT_ORGANIZER.getEAllOperations().get(65));
+      try
+      {
+        GET_NUMERIC_OBSERVATIONS__EOCL_QRY = helper.createQuery(GET_NUMERIC_OBSERVATIONS__EOCL_EXP);
+      }
+      catch (ParserException pe)
+      {
+        throw new UnsupportedOperationException(pe.getLocalizedMessage());
+      }
+    }
+    OCL.Query query = EOCL_ENV.createQuery(GET_NUMERIC_OBSERVATIONS__EOCL_QRY);
+    @SuppressWarnings("unchecked")
+    Collection<NumericObservation> result = (Collection<NumericObservation>) query.evaluate(resultOrganizer);
+    return new BasicEList.UnmodifiableEList<NumericObservation>(result.size(), result.toArray());
+  }
 
 	/**
-	 * The cached OCL expression body for the '{@link #getWaveformSeriesObservations(ResultOrganizer) <em>Get Waveform Series Observations</em>}' operation.
-	 * <!-- begin-user-doc -->
+   * The cached OCL expression body for the '{@link #getWaveformSeriesObservations(ResultOrganizer) <em>Get Waveform Series Observations</em>}' operation.
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getWaveformSeriesObservations(ResultOrganizer)
-	 * @generated
-	 * @ordered
-	 */
+   * @see #getWaveformSeriesObservations(ResultOrganizer)
+   * @generated
+   * @ordered
+   */
 	protected static final String GET_WAVEFORM_SERIES_OBSERVATIONS__EOCL_EXP = "self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(phmr::WaveformSeriesObservation)).oclAsType(phmr::WaveformSeriesObservation)";
 
 	/**
-	 * The cached OCL query for the '{@link #getWaveformSeriesObservations(ResultOrganizer) <em>Get Waveform Series Observations</em>}' query operation.
-	 * <!-- begin-user-doc -->
+   * The cached OCL query for the '{@link #getWaveformSeriesObservations(ResultOrganizer) <em>Get Waveform Series Observations</em>}' query operation.
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getWaveformSeriesObservations(ResultOrganizer)
-	 * @generated
-	 * @ordered
-	 */
+   * @see #getWaveformSeriesObservations(ResultOrganizer)
+   * @generated
+   * @ordered
+   */
 	protected static OCLExpression<EClassifier> GET_WAVEFORM_SERIES_OBSERVATIONS__EOCL_QRY;
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(phmr::WaveformSeriesObservation)).oclAsType(phmr::WaveformSeriesObservation)
-	 * @param resultOrganizer The receiving '<em><b>Result Organizer</b></em>' model object.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public static  EList<WaveformSeriesObservation> getWaveformSeriesObservations(ResultOrganizer resultOrganizer) {
-		if (GET_WAVEFORM_SERIES_OBSERVATIONS__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(PhmrPackage.Literals.RESULT_ORGANIZER, PhmrPackage.Literals.RESULT_ORGANIZER.getEAllOperations().get(63));
-			try {
-				GET_WAVEFORM_SERIES_OBSERVATIONS__EOCL_QRY = helper.createQuery(GET_WAVEFORM_SERIES_OBSERVATIONS__EOCL_EXP);
-			}
-			catch (ParserException pe) {
-				throw new UnsupportedOperationException(pe.getLocalizedMessage());
-			}
-		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_WAVEFORM_SERIES_OBSERVATIONS__EOCL_QRY);
-		@SuppressWarnings("unchecked")
-		Collection<WaveformSeriesObservation> result = (Collection<WaveformSeriesObservation>) query.evaluate(resultOrganizer);
-		return new BasicEList.UnmodifiableEList<WaveformSeriesObservation>(result.size(), result.toArray());
-	}
+    if (GET_WAVEFORM_SERIES_OBSERVATIONS__EOCL_QRY == null)
+    {
+      OCL.Helper helper = EOCL_ENV.createOCLHelper();
+      helper.setOperationContext(PhmrPackage.Literals.RESULT_ORGANIZER, PhmrPackage.Literals.RESULT_ORGANIZER.getEAllOperations().get(66));
+      try
+      {
+        GET_WAVEFORM_SERIES_OBSERVATIONS__EOCL_QRY = helper.createQuery(GET_WAVEFORM_SERIES_OBSERVATIONS__EOCL_EXP);
+      }
+      catch (ParserException pe)
+      {
+        throw new UnsupportedOperationException(pe.getLocalizedMessage());
+      }
+    }
+    OCL.Query query = EOCL_ENV.createQuery(GET_WAVEFORM_SERIES_OBSERVATIONS__EOCL_QRY);
+    @SuppressWarnings("unchecked")
+    Collection<WaveformSeriesObservation> result = (Collection<WaveformSeriesObservation>) query.evaluate(resultOrganizer);
+    return new BasicEList.UnmodifiableEList<WaveformSeriesObservation>(result.size(), result.toArray());
+  }
 
 	/**
-	 * The cached OCL expression body for the '{@link #validateResultOrganizerTemplateId(ResultOrganizer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Result Organizer Template Id</em>}' operation.
-	 * <!-- begin-user-doc -->
+   * The cached OCL expression body for the '{@link #validateResultOrganizerTemplateId(ResultOrganizer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Result Organizer Template Id</em>}' operation.
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateResultOrganizerTemplateId(ResultOrganizer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
+   * @see #validateResultOrganizerTemplateId(ResultOrganizer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+   * @generated
+   * @ordered
+   */
 	protected static final String VALIDATE_RESULT_ORGANIZER_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.templateId->exists(id : datatypes::II | id.root = 'null')";
 
 	/**
-	 * The cached OCL invariant for the '{@link #validateResultOrganizerTemplateId(ResultOrganizer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Result Organizer Template Id</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
+   * The cached OCL invariant for the '{@link #validateResultOrganizerTemplateId(ResultOrganizer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Result Organizer Template Id</em>}' invariant operation.
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateResultOrganizerTemplateId(ResultOrganizer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
+   * @see #validateResultOrganizerTemplateId(ResultOrganizer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+   * @generated
+   * @ordered
+   */
 	protected static Constraint VALIDATE_RESULT_ORGANIZER_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.templateId->exists(id : datatypes::II | id.root = 'null')
-	 * @param resultOrganizer The receiving '<em><b>Result Organizer</b></em>' model object.
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
+   * <!-- begin-model-doc -->
+   * @param resultOrganizer The receiving '<em><b>Result Organizer</b></em>' model object.
+   * @param diagnostics The chain of diagnostics to which problems are to be appended.
+   * @param context The cache of context-specific information.
+   * <!-- end-model-doc -->
+   * @generated
+   */
 	public static  boolean validateResultOrganizerTemplateId(ResultOrganizer resultOrganizer, DiagnosticChain diagnostics, Map<Object, Object> context) {
-		if (VALIDATE_RESULT_ORGANIZER_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setContext(PhmrPackage.Literals.RESULT_ORGANIZER);
-			try {
-				VALIDATE_RESULT_ORGANIZER_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_RESULT_ORGANIZER_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
-				throw new UnsupportedOperationException(pe.getLocalizedMessage());
-			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_RESULT_ORGANIZER_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(resultOrganizer)) {
-			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 PhmrValidator.DIAGNOSTIC_SOURCE,
-						 PhmrValidator.RESULT_ORGANIZER__RESULT_ORGANIZER_TEMPLATE_ID,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "ResultOrganizerTemplateId", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(resultOrganizer, context) }),
-						 new Object [] { resultOrganizer }));
-			}
-			return false;
-		}
-		return true;
-	}
+  	  
+    if (VALIDATE_RESULT_ORGANIZER_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+      OCL.Helper helper = EOCL_ENV.createOCLHelper();
+      helper.setContext(PhmrPackage.Literals.RESULT_ORGANIZER);
+      try
+      {
+        VALIDATE_RESULT_ORGANIZER_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_RESULT_ORGANIZER_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+      }
+      catch (ParserException pe)
+      {
+        throw new UnsupportedOperationException(pe.getLocalizedMessage());
+      }
+    }
+    if (!EOCL_ENV.createQuery(VALIDATE_RESULT_ORGANIZER_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(resultOrganizer))
+    {
+      if (diagnostics != null)
+      {
+        diagnostics.add
+          (new BasicDiagnostic
+            (Diagnostic.ERROR,
+             PhmrValidator.DIAGNOSTIC_SOURCE,
+             PhmrValidator.RESULT_ORGANIZER__RESULT_ORGANIZER_TEMPLATE_ID,
+             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "ResultOrganizerTemplateId", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(resultOrganizer, context) }),
+             new Object [] { resultOrganizer }));
+      }
+       
+      return false;
+    }
+    return true;
+  }
 
 } // ResultOrganizerOperations

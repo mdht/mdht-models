@@ -83,6 +83,10 @@
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="cocci.ecore#//CoccidioidesPossibleExposureLocationAct/CoccidioidesPossibleExposureLocationActMoodCode/diagnostics"/>
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="cocci.ecore#//CoccidioidesPossibleExposureLocationAct/CoccidioidesPossibleExposureLocationActMoodCode/context"/>
       </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="cocci.ecore#//CoccidioidesPossibleExposureLocationAct/CoccidioidesPossibleExposureLocationActStatusCodeP">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="cocci.ecore#//CoccidioidesPossibleExposureLocationAct/CoccidioidesPossibleExposureLocationActStatusCodeP/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="cocci.ecore#//CoccidioidesPossibleExposureLocationAct/CoccidioidesPossibleExposureLocationActStatusCodeP/context"/>
+      </genOperations>
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="cocci.ecore#//CoccidioidesPossibleExposureLocationAct/CoccidioidesPossibleExposureLocationActStatusCode">
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="cocci.ecore#//CoccidioidesPossibleExposureLocationAct/CoccidioidesPossibleExposureLocationActStatusCode/diagnostics"/>
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="cocci.ecore#//CoccidioidesPossibleExposureLocationAct/CoccidioidesPossibleExposureLocationActStatusCode/context"/>
@@ -101,9 +105,22 @@
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="cocci.ecore#//CoccidioidesPHCRClinicalInformationSection/getCoccidioidesImmunosuppressedMedicalConditionHistoryObservations"/>
     </genClasses>
     <genClasses xsi:type="genmodel:GenClass" ecoreClass="cocci.ecore#//CoccidioidesCaseObservation">
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="cocci.ecore#//CoccidioidesCaseObservation/CoccidioidesCaseObservationValueP">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="cocci.ecore#//CoccidioidesCaseObservation/CoccidioidesCaseObservationValueP/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="cocci.ecore#//CoccidioidesCaseObservation/CoccidioidesCaseObservationValueP/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="cocci.ecore#//CoccidioidesCaseObservation/CoccidioidesCaseObservationValue">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="cocci.ecore#//CoccidioidesCaseObservation/CoccidioidesCaseObservationValue/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="cocci.ecore#//CoccidioidesCaseObservation/CoccidioidesCaseObservationValue/context"/>
+      </genOperations>
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="cocci.ecore#//CoccidioidesCaseObservation/getCoccidioidesSignsAndSymptomsObservations"/>
     </genClasses>
-    <genClasses xsi:type="genmodel:GenClass" ecoreClass="cocci.ecore#//CoccidioidesSignsAndSymptomsObservation"/>
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="cocci.ecore#//CoccidioidesSignsAndSymptomsObservation">
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="cocci.ecore#//CoccidioidesSignsAndSymptomsObservation/CoccidioidesSignsAndSymptomsObservationValue">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="cocci.ecore#//CoccidioidesSignsAndSymptomsObservation/CoccidioidesSignsAndSymptomsObservationValue/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="cocci.ecore#//CoccidioidesSignsAndSymptomsObservation/CoccidioidesSignsAndSymptomsObservationValue/context"/>
+      </genOperations>
+    </genClasses>
     <genClasses xsi:type="genmodel:GenClass" ecoreClass="cocci.ecore#//CoccidioidesImmunosuppressedMedicalConditionHistoryObservation">
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="cocci.ecore#//CoccidioidesImmunosuppressedMedicalConditionHistoryObservation/CoccidioidesImmunosuppressedMedicalConditionHistoryObservationCoccidioidesImmunosuppressedMedicalConditionProblemObservation">
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="cocci.ecore#//CoccidioidesImmunosuppressedMedicalConditionHistoryObservation/CoccidioidesImmunosuppressedMedicalConditionHistoryObservationCoccidioidesImmunosuppressedMedicalConditionProblemObservation/diagnostics"/>
@@ -111,7 +128,12 @@
       </genOperations>
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="cocci.ecore#//CoccidioidesImmunosuppressedMedicalConditionHistoryObservation/getCoccidioidesImmunosuppressedMedicalConditionProblemObservation"/>
     </genClasses>
-    <genClasses xsi:type="genmodel:GenClass" ecoreClass="cocci.ecore#//CoccidioidesImmunosuppressedMedicalConditionProblemObservation"/>
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="cocci.ecore#//CoccidioidesImmunosuppressedMedicalConditionProblemObservation">
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="cocci.ecore#//CoccidioidesImmunosuppressedMedicalConditionProblemObservation/CoccidioidesImmunosuppressedMedicalConditionProblemObservationValue">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="cocci.ecore#//CoccidioidesImmunosuppressedMedicalConditionProblemObservation/CoccidioidesImmunosuppressedMedicalConditionProblemObservationValue/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="cocci.ecore#//CoccidioidesImmunosuppressedMedicalConditionProblemObservation/CoccidioidesImmunosuppressedMedicalConditionProblemObservationValue/context"/>
+      </genOperations>
+    </genClasses>
     <genClasses xsi:type="genmodel:GenClass" ecoreClass="cocci.ecore#//CoccidioidesPHCRTreatmentInformationSection">
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="cocci.ecore#//CoccidioidesPHCRTreatmentInformationSection/CoccidioidesPHCRTreatmentInformationSectionCoccidioidesTherapeuticRegimenAct">
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="cocci.ecore#//CoccidioidesPHCRTreatmentInformationSection/CoccidioidesPHCRTreatmentInformationSectionCoccidioidesTherapeuticRegimenAct/diagnostics"/>
@@ -145,7 +167,16 @@
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="cocci.ecore#//CoccidioidesPHCRRelevantDxTestsSection/getCoccidioidesResultObservations"/>
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="cocci.ecore#//CoccidioidesPHCRRelevantDxTestsSection/getCoccidioidesResultOrganizers"/>
     </genClasses>
-    <genClasses xsi:type="genmodel:GenClass" ecoreClass="cocci.ecore#//CoccidioidesResultObservation"/>
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="cocci.ecore#//CoccidioidesResultObservation">
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="cocci.ecore#//CoccidioidesResultObservation/CoccidioidesResultObservationCodeP">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="cocci.ecore#//CoccidioidesResultObservation/CoccidioidesResultObservationCodeP/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="cocci.ecore#//CoccidioidesResultObservation/CoccidioidesResultObservationCodeP/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="cocci.ecore#//CoccidioidesResultObservation/CoccidioidesResultObservationCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="cocci.ecore#//CoccidioidesResultObservation/CoccidioidesResultObservationCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="cocci.ecore#//CoccidioidesResultObservation/CoccidioidesResultObservationCode/context"/>
+      </genOperations>
+    </genClasses>
     <genClasses xsi:type="genmodel:GenClass" ecoreClass="cocci.ecore#//CoccidioidesResultOrganizer">
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="cocci.ecore#//CoccidioidesResultOrganizer/CoccidioidesResultOrganizerCode">
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="cocci.ecore#//CoccidioidesResultOrganizer/CoccidioidesResultOrganizerCode/diagnostics"/>

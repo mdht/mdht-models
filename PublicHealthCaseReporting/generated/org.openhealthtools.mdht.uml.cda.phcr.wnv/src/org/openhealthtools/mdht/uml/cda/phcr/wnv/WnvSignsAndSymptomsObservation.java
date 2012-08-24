@@ -10,6 +10,11 @@
  *******************************************************************************/
 package org.openhealthtools.mdht.uml.cda.phcr.wnv;
 
+import java.lang.Iterable;
+import java.util.Map;
+import org.eclipse.emf.common.util.DiagnosticChain;
+import org.eclipse.emf.ecore.EObject;
+import org.openhealthtools.mdht.emf.runtime.util.Initializer;
 import org.openhealthtools.mdht.uml.cda.phcr.SignsAndSymptomsObservation;
 
 /**
@@ -19,15 +24,34 @@ import org.openhealthtools.mdht.uml.cda.phcr.SignsAndSymptomsObservation;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.phcr.wnv.WnvPackage#getWnvSignsAndSymptomsObservation()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation templateId.root='2.16.840.1.113883.10.20.15.3.104' constraints.validation.error='WnvSignsAndSymptomsObservationTemplateId'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='WnvSignsAndSymptomsObservationTemplateId WnvSignsAndSymptomsObservationValue' templateId.root='2.16.840.1.113883.10.20.15.3.104'"
  * @generated
  */
 public interface WnvSignsAndSymptomsObservation extends SignsAndSymptomsObservation
 {
   /**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * <!-- begin-model-doc -->
+   * @param diagnostics The chain of diagnostics to which problems are to be appended.
+   * @param context The cache of context-specific information.
+   * <!-- end-model-doc -->
+   * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (not self.value->isEmpty())'"
+   * @generated
+   */
+  boolean validateWnvSignsAndSymptomsObservationValue(DiagnosticChain diagnostics, Map<Object, Object> context);
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
   public WnvSignsAndSymptomsObservation init();
+
+  /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    public WnvSignsAndSymptomsObservation init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // WnvSignsAndSymptomsObservation

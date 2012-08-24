@@ -149,6 +149,10 @@
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="silicosis.ecore#//SilicosisHistoryOfTuberculosisObservation/SilicosisHistoryOfTuberculosisObservationValue/diagnostics"/>
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="silicosis.ecore#//SilicosisHistoryOfTuberculosisObservation/SilicosisHistoryOfTuberculosisObservationValue/context"/>
       </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="silicosis.ecore#//SilicosisHistoryOfTuberculosisObservation/SilicosisHistoryOfTuberculosisObservationValueP">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="silicosis.ecore#//SilicosisHistoryOfTuberculosisObservation/SilicosisHistoryOfTuberculosisObservationValueP/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="silicosis.ecore#//SilicosisHistoryOfTuberculosisObservation/SilicosisHistoryOfTuberculosisObservationValueP/context"/>
+      </genOperations>
     </genClasses>
     <genClasses xsi:type="genmodel:GenClass" ecoreClass="silicosis.ecore#//SilicosisPHCRRelevantDxTestsSection">
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="silicosis.ecore#//SilicosisPHCRRelevantDxTestsSection/SilicosisPHCRRelevantDxTestsSectionSilicosisImagingObservation">

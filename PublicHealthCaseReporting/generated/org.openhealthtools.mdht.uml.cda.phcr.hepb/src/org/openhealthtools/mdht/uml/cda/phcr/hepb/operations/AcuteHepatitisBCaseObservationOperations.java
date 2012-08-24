@@ -39,10 +39,11 @@ import org.openhealthtools.mdht.uml.cda.phcr.operations.CaseObservationOperation
  * <p>
  * The following operations are supported:
  * <ul>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.phcr.hepb.AcuteHepatitisBCaseObservation#validateAcuteHepatitisBCaseObservationValueP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Acute Hepatitis BCase Observation Value P</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.phcr.hepb.AcuteHepatitisBCaseObservation#validateAcuteHepatitisBCaseObservationValue(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Acute Hepatitis BCase Observation Value</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.phcr.hepb.AcuteHepatitisBCaseObservation#validateAcuteHepatitisBCaseObservationAcuteHepatitisBSignsAndSymptomsObservation(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Acute Hepatitis BCase Observation Acute Hepatitis BSigns And Symptoms Observation</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.phcr.hepb.AcuteHepatitisBCaseObservation#getAcuteHepatitisBSignsAndSymptomsObservations() <em>Get Acute Hepatitis BSigns And Symptoms Observations</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.phcr.hepb.AcuteHepatitisBCaseObservation#validateProblemObservationTemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Problem Observation Template Id</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.phcr.hepb.AcuteHepatitisBCaseObservation#validateCaseObservationValue(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Case Observation Value</em>}</li>
  * </ul>
  * </p>
  *
@@ -50,250 +51,341 @@ import org.openhealthtools.mdht.uml.cda.phcr.operations.CaseObservationOperation
  */
 public class AcuteHepatitisBCaseObservationOperations extends CaseObservationOperations {
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	protected AcuteHepatitisBCaseObservationOperations() {
-		super();
-	}
+    super();
+  }
 
 	/**
-	 * The cached OCL expression body for the '{@link #validateAcuteHepatitisBCaseObservationAcuteHepatitisBSignsAndSymptomsObservation(AcuteHepatitisBCaseObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Acute Hepatitis BCase Observation Acute Hepatitis BSigns And Symptoms Observation</em>}' operation.
-	 * <!-- begin-user-doc -->
+   * The cached OCL expression body for the '{@link #validateAcuteHepatitisBCaseObservationValueP(AcuteHepatitisBCaseObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Acute Hepatitis BCase Observation Value P</em>}' operation.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #validateAcuteHepatitisBCaseObservationValueP(AcuteHepatitisBCaseObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+   * @generated
+   * @ordered
+   */
+  protected static final String VALIDATE_ACUTE_HEPATITIS_BCASE_OBSERVATION_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (not self.value->isEmpty())";
+
+  /**
+   * The cached OCL invariant for the '{@link #validateAcuteHepatitisBCaseObservationValueP(AcuteHepatitisBCaseObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Acute Hepatitis BCase Observation Value P</em>}' invariant operation.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #validateAcuteHepatitisBCaseObservationValueP(AcuteHepatitisBCaseObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+   * @generated
+   * @ordered
+   */
+  
+  protected static Constraint VALIDATE_ACUTE_HEPATITIS_BCASE_OBSERVATION_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * <!-- begin-model-doc -->
+   * @param acuteHepatitisBCaseObservation The receiving '<em><b>Acute Hepatitis BCase Observation</b></em>' model object.
+   * @param diagnostics The chain of diagnostics to which problems are to be appended.
+   * @param context The cache of context-specific information.
+   * <!-- end-model-doc -->
+   * @generated
+   */
+  
+  public static  boolean validateAcuteHepatitisBCaseObservationValueP(AcuteHepatitisBCaseObservation acuteHepatitisBCaseObservation, DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+  	  
+    if (VALIDATE_ACUTE_HEPATITIS_BCASE_OBSERVATION_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+      OCL.Helper helper = EOCL_ENV.createOCLHelper();
+      helper.setContext(HepbPackage.Literals.ACUTE_HEPATITIS_BCASE_OBSERVATION);
+      try
+      {
+        VALIDATE_ACUTE_HEPATITIS_BCASE_OBSERVATION_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_ACUTE_HEPATITIS_BCASE_OBSERVATION_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+      }
+      catch (ParserException pe)
+      {
+        throw new UnsupportedOperationException(pe.getLocalizedMessage());
+      }
+    }
+    if (!EOCL_ENV.createQuery(VALIDATE_ACUTE_HEPATITIS_BCASE_OBSERVATION_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(acuteHepatitisBCaseObservation))
+    {
+      if (diagnostics != null)
+      {
+        diagnostics.add
+          (new BasicDiagnostic
+            (Diagnostic.ERROR,
+             HepbValidator.DIAGNOSTIC_SOURCE,
+             HepbValidator.ACUTE_HEPATITIS_BCASE_OBSERVATION__ACUTE_HEPATITIS_BCASE_OBSERVATION_VALUE_P,
+             HepbPlugin.INSTANCE.getString("AcuteHepatitisBCaseObservationValueP"),
+             new Object [] { acuteHepatitisBCaseObservation }));
+      }
+      
+      if (context != null) {
+        // generate a pass token for my dependent constraints to short-circuit or filter results
+        @SuppressWarnings("unchecked")
+        Collection<Object> passToken = (Collection<Object>) context.get("org.openhealthtools.mdht.uml.cda.phcr.hepb.AcuteHepatitisBCaseObservationValueP");
+        if (passToken == null) {
+          // anticipate a reasonably healthy model
+          passToken = new java.util.ArrayList<Object>(3);
+          context.put("org.openhealthtools.mdht.uml.cda.phcr.hepb.AcuteHepatitisBCaseObservationValueP", passToken);
+        }
+        passToken.add(acuteHepatitisBCaseObservation);
+      }
+       
+      return false;
+    }
+    return true;
+  }
+
+  /**
+   * The cached OCL expression body for the '{@link #validateAcuteHepatitisBCaseObservationValue(AcuteHepatitisBCaseObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Acute Hepatitis BCase Observation Value</em>}' operation.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #validateAcuteHepatitisBCaseObservationValue(AcuteHepatitisBCaseObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+   * @generated
+   * @ordered
+   */
+  protected static final String VALIDATE_ACUTE_HEPATITIS_BCASE_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (self.value->size() = 1 and self.value->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and "+
+"let value : datatypes::CD = element.oclAsType(datatypes::CD) in "+
+"value.codeSystem = '2.16.840.1.113883.6.96' and (value.code = '13265006' or value.code = '186624004' or value.code = '186626002' or value.code = '424099008' or value.code = '235864009' or value.code = '76795007')))";
+
+  /**
+   * The cached OCL invariant for the '{@link #validateAcuteHepatitisBCaseObservationValue(AcuteHepatitisBCaseObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Acute Hepatitis BCase Observation Value</em>}' invariant operation.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #validateAcuteHepatitisBCaseObservationValue(AcuteHepatitisBCaseObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+   * @generated
+   * @ordered
+   */
+  
+  protected static Constraint VALIDATE_ACUTE_HEPATITIS_BCASE_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * <!-- begin-model-doc -->
+   * @param acuteHepatitisBCaseObservation The receiving '<em><b>Acute Hepatitis BCase Observation</b></em>' model object.
+   * @param diagnostics The chain of diagnostics to which problems are to be appended.
+   * @param context The cache of context-specific information.
+   * <!-- end-model-doc -->
+   * @generated
+   */
+  
+  public static  boolean validateAcuteHepatitisBCaseObservationValue(AcuteHepatitisBCaseObservation acuteHepatitisBCaseObservation, DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+  	  
+    Object passToken = (context == null) ? null : context.get("org.openhealthtools.mdht.uml.cda.phcr.hepb.AcuteHepatitisBCaseObservationValueP");
+    if ((passToken instanceof Collection<?>) && ((Collection<?>) passToken).contains(acuteHepatitisBCaseObservation)) {
+      // I have a free pass to short-circuit
+      return true;
+    }
+  	  
+    if (VALIDATE_ACUTE_HEPATITIS_BCASE_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+      OCL.Helper helper = EOCL_ENV.createOCLHelper();
+      helper.setContext(HepbPackage.Literals.ACUTE_HEPATITIS_BCASE_OBSERVATION);
+      try
+      {
+        VALIDATE_ACUTE_HEPATITIS_BCASE_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_ACUTE_HEPATITIS_BCASE_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+      }
+      catch (ParserException pe)
+      {
+        throw new UnsupportedOperationException(pe.getLocalizedMessage());
+      }
+    }
+    if (!EOCL_ENV.createQuery(VALIDATE_ACUTE_HEPATITIS_BCASE_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(acuteHepatitisBCaseObservation))
+    {
+      if (diagnostics != null)
+      {
+        diagnostics.add
+          (new BasicDiagnostic
+            (Diagnostic.ERROR,
+             HepbValidator.DIAGNOSTIC_SOURCE,
+             HepbValidator.ACUTE_HEPATITIS_BCASE_OBSERVATION__ACUTE_HEPATITIS_BCASE_OBSERVATION_VALUE,
+             HepbPlugin.INSTANCE.getString("AcuteHepatitisBCaseObservationValue"),
+             new Object [] { acuteHepatitisBCaseObservation }));
+      }
+       
+      return false;
+    }
+    return true;
+  }
+
+  /**
+   * The cached OCL expression body for the '{@link #validateAcuteHepatitisBCaseObservationAcuteHepatitisBSignsAndSymptomsObservation(AcuteHepatitisBCaseObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Acute Hepatitis BCase Observation Acute Hepatitis BSigns And Symptoms Observation</em>}' operation.
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateAcuteHepatitisBCaseObservationAcuteHepatitisBSignsAndSymptomsObservation(AcuteHepatitisBCaseObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
+   * @see #validateAcuteHepatitisBCaseObservationAcuteHepatitisBSignsAndSymptomsObservation(AcuteHepatitisBCaseObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+   * @generated
+   * @ordered
+   */
 	protected static final String VALIDATE_ACUTE_HEPATITIS_BCASE_OBSERVATION_ACUTE_HEPATITIS_BSIGNS_AND_SYMPTOMS_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entryRelationship->exists(entryRelationship : cda::EntryRelationship | not entryRelationship.observation.oclIsUndefined() and entryRelationship.observation.oclIsKindOf(hepb::AcuteHepatitisBSignsAndSymptomsObservation) and entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::MFST)";
 
 	/**
-	 * The cached OCL invariant for the '{@link #validateAcuteHepatitisBCaseObservationAcuteHepatitisBSignsAndSymptomsObservation(AcuteHepatitisBCaseObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Acute Hepatitis BCase Observation Acute Hepatitis BSigns And Symptoms Observation</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
+   * The cached OCL invariant for the '{@link #validateAcuteHepatitisBCaseObservationAcuteHepatitisBSignsAndSymptomsObservation(AcuteHepatitisBCaseObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Acute Hepatitis BCase Observation Acute Hepatitis BSigns And Symptoms Observation</em>}' invariant operation.
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateAcuteHepatitisBCaseObservationAcuteHepatitisBSignsAndSymptomsObservation(AcuteHepatitisBCaseObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
+   * @see #validateAcuteHepatitisBCaseObservationAcuteHepatitisBSignsAndSymptomsObservation(AcuteHepatitisBCaseObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+   * @generated
+   * @ordered
+   */
 	
 	protected static Constraint VALIDATE_ACUTE_HEPATITIS_BCASE_OBSERVATION_ACUTE_HEPATITIS_BSIGNS_AND_SYMPTOMS_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.entryRelationship->exists(entryRelationship : cda::EntryRelationship | not entryRelationship.observation.oclIsUndefined() and entryRelationship.observation.oclIsKindOf(hepb::AcuteHepatitisBSignsAndSymptomsObservation) and entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::MFST)
-	 * @param acuteHepatitisBCaseObservation The receiving '<em><b>Acute Hepatitis BCase Observation</b></em>' model object.
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
+   * <!-- begin-model-doc -->
+   * @param acuteHepatitisBCaseObservation The receiving '<em><b>Acute Hepatitis BCase Observation</b></em>' model object.
+   * @param diagnostics The chain of diagnostics to which problems are to be appended.
+   * @param context The cache of context-specific information.
+   * <!-- end-model-doc -->
+   * @generated
+   */
 	
 	public static  boolean validateAcuteHepatitisBCaseObservationAcuteHepatitisBSignsAndSymptomsObservation(AcuteHepatitisBCaseObservation acuteHepatitisBCaseObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
   	  
-		if (VALIDATE_ACUTE_HEPATITIS_BCASE_OBSERVATION_ACUTE_HEPATITIS_BSIGNS_AND_SYMPTOMS_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setContext(HepbPackage.Literals.ACUTE_HEPATITIS_BCASE_OBSERVATION);
-			try {
-				VALIDATE_ACUTE_HEPATITIS_BCASE_OBSERVATION_ACUTE_HEPATITIS_BSIGNS_AND_SYMPTOMS_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_ACUTE_HEPATITIS_BCASE_OBSERVATION_ACUTE_HEPATITIS_BSIGNS_AND_SYMPTOMS_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
-				throw new UnsupportedOperationException(pe.getLocalizedMessage());
-			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_ACUTE_HEPATITIS_BCASE_OBSERVATION_ACUTE_HEPATITIS_BSIGNS_AND_SYMPTOMS_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(acuteHepatitisBCaseObservation)) {
-			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 HepbValidator.DIAGNOSTIC_SOURCE,
-						 HepbValidator.ACUTE_HEPATITIS_BCASE_OBSERVATION__ACUTE_HEPATITIS_BCASE_OBSERVATION_ACUTE_HEPATITIS_BSIGNS_AND_SYMPTOMS_OBSERVATION,
-						 HepbPlugin.INSTANCE.getString("AcuteHepatitisBCaseObservationAcuteHepatitisBSignsAndSymptomsObservation"),
-						 new Object [] { acuteHepatitisBCaseObservation }));
-			}
-			 
-			return false;
-		}
-		return true;
-	}
+    if (VALIDATE_ACUTE_HEPATITIS_BCASE_OBSERVATION_ACUTE_HEPATITIS_BSIGNS_AND_SYMPTOMS_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+      OCL.Helper helper = EOCL_ENV.createOCLHelper();
+      helper.setContext(HepbPackage.Literals.ACUTE_HEPATITIS_BCASE_OBSERVATION);
+      try
+      {
+        VALIDATE_ACUTE_HEPATITIS_BCASE_OBSERVATION_ACUTE_HEPATITIS_BSIGNS_AND_SYMPTOMS_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_ACUTE_HEPATITIS_BCASE_OBSERVATION_ACUTE_HEPATITIS_BSIGNS_AND_SYMPTOMS_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+      }
+      catch (ParserException pe)
+      {
+        throw new UnsupportedOperationException(pe.getLocalizedMessage());
+      }
+    }
+    if (!EOCL_ENV.createQuery(VALIDATE_ACUTE_HEPATITIS_BCASE_OBSERVATION_ACUTE_HEPATITIS_BSIGNS_AND_SYMPTOMS_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(acuteHepatitisBCaseObservation))
+    {
+      if (diagnostics != null)
+      {
+        diagnostics.add
+          (new BasicDiagnostic
+            (Diagnostic.ERROR,
+             HepbValidator.DIAGNOSTIC_SOURCE,
+             HepbValidator.ACUTE_HEPATITIS_BCASE_OBSERVATION__ACUTE_HEPATITIS_BCASE_OBSERVATION_ACUTE_HEPATITIS_BSIGNS_AND_SYMPTOMS_OBSERVATION,
+             HepbPlugin.INSTANCE.getString("AcuteHepatitisBCaseObservationAcuteHepatitisBSignsAndSymptomsObservation"),
+             new Object [] { acuteHepatitisBCaseObservation }));
+      }
+       
+      return false;
+    }
+    return true;
+  }
 
 	/**
-	 * The cached OCL expression body for the '{@link #getAcuteHepatitisBSignsAndSymptomsObservations(AcuteHepatitisBCaseObservation) <em>Get Acute Hepatitis BSigns And Symptoms Observations</em>}' operation.
-	 * <!-- begin-user-doc -->
+   * The cached OCL expression body for the '{@link #getAcuteHepatitisBSignsAndSymptomsObservations(AcuteHepatitisBCaseObservation) <em>Get Acute Hepatitis BSigns And Symptoms Observations</em>}' operation.
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getAcuteHepatitisBSignsAndSymptomsObservations(AcuteHepatitisBCaseObservation)
-	 * @generated
-	 * @ordered
-	 */
+   * @see #getAcuteHepatitisBSignsAndSymptomsObservations(AcuteHepatitisBCaseObservation)
+   * @generated
+   * @ordered
+   */
 	protected static final String GET_ACUTE_HEPATITIS_BSIGNS_AND_SYMPTOMS_OBSERVATIONS__EOCL_EXP = "self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(hepb::AcuteHepatitisBSignsAndSymptomsObservation)).oclAsType(hepb::AcuteHepatitisBSignsAndSymptomsObservation)";
 
 	/**
-	 * The cached OCL query for the '{@link #getAcuteHepatitisBSignsAndSymptomsObservations(AcuteHepatitisBCaseObservation) <em>Get Acute Hepatitis BSigns And Symptoms Observations</em>}' query operation.
-	 * <!-- begin-user-doc -->
+   * The cached OCL query for the '{@link #getAcuteHepatitisBSignsAndSymptomsObservations(AcuteHepatitisBCaseObservation) <em>Get Acute Hepatitis BSigns And Symptoms Observations</em>}' query operation.
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getAcuteHepatitisBSignsAndSymptomsObservations(AcuteHepatitisBCaseObservation)
-	 * @generated
-	 * @ordered
-	 */
+   * @see #getAcuteHepatitisBSignsAndSymptomsObservations(AcuteHepatitisBCaseObservation)
+   * @generated
+   * @ordered
+   */
 	protected static OCLExpression<EClassifier> GET_ACUTE_HEPATITIS_BSIGNS_AND_SYMPTOMS_OBSERVATIONS__EOCL_QRY;
 
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(hepb::AcuteHepatitisBSignsAndSymptomsObservation)).oclAsType(hepb::AcuteHepatitisBSignsAndSymptomsObservation)
-	 * @param acuteHepatitisBCaseObservation The receiving '<em><b>Acute Hepatitis BCase Observation</b></em>' model object.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	
 	public static  EList<AcuteHepatitisBSignsAndSymptomsObservation> getAcuteHepatitisBSignsAndSymptomsObservations(AcuteHepatitisBCaseObservation acuteHepatitisBCaseObservation) {
-		if (GET_ACUTE_HEPATITIS_BSIGNS_AND_SYMPTOMS_OBSERVATIONS__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(HepbPackage.Literals.ACUTE_HEPATITIS_BCASE_OBSERVATION, HepbPackage.Literals.ACUTE_HEPATITIS_BCASE_OBSERVATION.getEAllOperations().get(77));
-			try {
-				GET_ACUTE_HEPATITIS_BSIGNS_AND_SYMPTOMS_OBSERVATIONS__EOCL_QRY = helper.createQuery(GET_ACUTE_HEPATITIS_BSIGNS_AND_SYMPTOMS_OBSERVATIONS__EOCL_EXP);
-			}
-			catch (ParserException pe) {
-				throw new UnsupportedOperationException(pe.getLocalizedMessage());
-			}
-		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_ACUTE_HEPATITIS_BSIGNS_AND_SYMPTOMS_OBSERVATIONS__EOCL_QRY);
-		@SuppressWarnings("unchecked")
-		Collection<AcuteHepatitisBSignsAndSymptomsObservation> result = (Collection<AcuteHepatitisBSignsAndSymptomsObservation>) query.evaluate(acuteHepatitisBCaseObservation);
-		return new BasicEList.UnmodifiableEList<AcuteHepatitisBSignsAndSymptomsObservation>(result.size(), result.toArray());
-	}
+    if (GET_ACUTE_HEPATITIS_BSIGNS_AND_SYMPTOMS_OBSERVATIONS__EOCL_QRY == null)
+    {
+      OCL.Helper helper = EOCL_ENV.createOCLHelper();
+      helper.setOperationContext(HepbPackage.Literals.ACUTE_HEPATITIS_BCASE_OBSERVATION, HepbPackage.Literals.ACUTE_HEPATITIS_BCASE_OBSERVATION.getEAllOperations().get(82));
+      try
+      {
+        GET_ACUTE_HEPATITIS_BSIGNS_AND_SYMPTOMS_OBSERVATIONS__EOCL_QRY = helper.createQuery(GET_ACUTE_HEPATITIS_BSIGNS_AND_SYMPTOMS_OBSERVATIONS__EOCL_EXP);
+      }
+      catch (ParserException pe)
+      {
+        throw new UnsupportedOperationException(pe.getLocalizedMessage());
+      }
+    }
+    OCL.Query query = EOCL_ENV.createQuery(GET_ACUTE_HEPATITIS_BSIGNS_AND_SYMPTOMS_OBSERVATIONS__EOCL_QRY);
+    @SuppressWarnings("unchecked")
+    Collection<AcuteHepatitisBSignsAndSymptomsObservation> result = (Collection<AcuteHepatitisBSignsAndSymptomsObservation>) query.evaluate(acuteHepatitisBCaseObservation);
+    return new BasicEList.UnmodifiableEList<AcuteHepatitisBSignsAndSymptomsObservation>(result.size(), result.toArray());
+  }
 
 	/**
-	 * The cached OCL expression body for the '{@link #validateProblemObservationTemplateId(AcuteHepatitisBCaseObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Problem Observation Template Id</em>}' operation.
-	 * <!-- begin-user-doc -->
+   * The cached OCL expression body for the '{@link #validateProblemObservationTemplateId(AcuteHepatitisBCaseObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Problem Observation Template Id</em>}' operation.
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateProblemObservationTemplateId(AcuteHepatitisBCaseObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
+   * @see #validateProblemObservationTemplateId(AcuteHepatitisBCaseObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+   * @generated
+   * @ordered
+   */
 	protected static final String VALIDATE_PROBLEM_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.15.3.30')";
 
 	/**
-	 * The cached OCL invariant for the '{@link #validateProblemObservationTemplateId(AcuteHepatitisBCaseObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Problem Observation Template Id</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
+   * The cached OCL invariant for the '{@link #validateProblemObservationTemplateId(AcuteHepatitisBCaseObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Problem Observation Template Id</em>}' invariant operation.
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateProblemObservationTemplateId(AcuteHepatitisBCaseObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
+   * @see #validateProblemObservationTemplateId(AcuteHepatitisBCaseObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+   * @generated
+   * @ordered
+   */
 	
 	protected static Constraint VALIDATE_PROBLEM_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 	
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.15.3.30')
-	 * @param acuteHepatitisBCaseObservation The receiving '<em><b>Acute Hepatitis BCase Observation</b></em>' model object.
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
+   * <!-- begin-model-doc -->
+   * @param acuteHepatitisBCaseObservation The receiving '<em><b>Acute Hepatitis BCase Observation</b></em>' model object.
+   * @param diagnostics The chain of diagnostics to which problems are to be appended.
+   * @param context The cache of context-specific information.
+   * <!-- end-model-doc -->
+   * @generated
+   */
 	
 	public static  boolean validateProblemObservationTemplateId(AcuteHepatitisBCaseObservation acuteHepatitisBCaseObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
   	  
-		if (VALIDATE_PROBLEM_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setContext(HepbPackage.Literals.ACUTE_HEPATITIS_BCASE_OBSERVATION);
-			try {
-				VALIDATE_PROBLEM_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PROBLEM_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
-				throw new UnsupportedOperationException(pe.getLocalizedMessage());
-			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PROBLEM_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(acuteHepatitisBCaseObservation)) {
-			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 HepbValidator.DIAGNOSTIC_SOURCE,
-						 HepbValidator.ACUTE_HEPATITIS_BCASE_OBSERVATION__PROBLEM_OBSERVATION_TEMPLATE_ID,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "ProblemObservationTemplateId", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(acuteHepatitisBCaseObservation, context) }),
-						 new Object [] { acuteHepatitisBCaseObservation }));
-			}
-			 
-			return false;
-		}
-		return true;
-	}
-
-	/**
-	 * The cached OCL expression body for the '{@link #validateCaseObservationValue(AcuteHepatitisBCaseObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Case Observation Value</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #validateCaseObservationValue(AcuteHepatitisBCaseObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
-	protected static final String VALIDATE_CASE_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (self.value->size() = 1 and self.value->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and "+
-"let value : datatypes::CD = element.oclAsType(datatypes::CD) in "+
-"value.codeSystem = '2.16.840.1.113883.6.96' and (value.code = '13265006' or value.code = '186624004' or value.code = '186626002' or value.code = '424099008' or value.code = '235864009' or value.code = '76795007')))";
-
-	/**
-	 * The cached OCL invariant for the '{@link #validateCaseObservationValue(AcuteHepatitisBCaseObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Case Observation Value</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #validateCaseObservationValue(AcuteHepatitisBCaseObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
-	
-	protected static Constraint VALIDATE_CASE_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-	
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * (self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (self.value->size() = 1 and self.value->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and 
-	 * let value : datatypes::CD = element.oclAsType(datatypes::CD) in 
-	 * value.codeSystem = '2.16.840.1.113883.6.96' and (value.code = '13265006' or value.code = '186624004' or value.code = '186626002' or value.code = '424099008' or value.code = '235864009' or value.code = '76795007')))
-	 * @param acuteHepatitisBCaseObservation The receiving '<em><b>Acute Hepatitis BCase Observation</b></em>' model object.
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
-	
-	public static  boolean validateCaseObservationValue(AcuteHepatitisBCaseObservation acuteHepatitisBCaseObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
-		if (VALIDATE_CASE_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setContext(HepbPackage.Literals.ACUTE_HEPATITIS_BCASE_OBSERVATION);
-			try {
-				VALIDATE_CASE_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_CASE_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
-				throw new UnsupportedOperationException(pe.getLocalizedMessage());
-			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_CASE_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(acuteHepatitisBCaseObservation)) {
-			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 HepbValidator.DIAGNOSTIC_SOURCE,
-						 HepbValidator.ACUTE_HEPATITIS_BCASE_OBSERVATION__CASE_OBSERVATION_VALUE,
-						 HepbPlugin.INSTANCE.getString("CaseObservationValue"),
-						 new Object [] { acuteHepatitisBCaseObservation }));
-			}
-			 
-			return false;
-		}
-		return true;
-	}
+    if (VALIDATE_PROBLEM_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+      OCL.Helper helper = EOCL_ENV.createOCLHelper();
+      helper.setContext(HepbPackage.Literals.ACUTE_HEPATITIS_BCASE_OBSERVATION);
+      try
+      {
+        VALIDATE_PROBLEM_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PROBLEM_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+      }
+      catch (ParserException pe)
+      {
+        throw new UnsupportedOperationException(pe.getLocalizedMessage());
+      }
+    }
+    if (!EOCL_ENV.createQuery(VALIDATE_PROBLEM_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(acuteHepatitisBCaseObservation))
+    {
+      if (diagnostics != null)
+      {
+        diagnostics.add
+          (new BasicDiagnostic
+            (Diagnostic.ERROR,
+             HepbValidator.DIAGNOSTIC_SOURCE,
+             HepbValidator.ACUTE_HEPATITIS_BCASE_OBSERVATION__PROBLEM_OBSERVATION_TEMPLATE_ID,
+             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "ProblemObservationTemplateId", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(acuteHepatitisBCaseObservation, context) }),
+             new Object [] { acuteHepatitisBCaseObservation }));
+      }
+       
+      return false;
+    }
+    return true;
+  }
 
 } // AcuteHepatitisBCaseObservationOperations

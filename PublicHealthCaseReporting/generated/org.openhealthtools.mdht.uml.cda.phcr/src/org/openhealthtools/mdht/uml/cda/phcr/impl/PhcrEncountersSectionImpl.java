@@ -10,11 +10,14 @@
  *******************************************************************************/
 package org.openhealthtools.mdht.uml.cda.phcr.impl;
 
+import java.lang.Iterable;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.common.util.EList;
 import org.eclipse.emf.ecore.EClass;
+import org.eclipse.emf.ecore.EObject;
+import org.openhealthtools.mdht.emf.runtime.util.Initializer;
 import org.openhealthtools.mdht.uml.cda.ccd.EncountersActivity;
 import org.openhealthtools.mdht.uml.cda.ccd.impl.EncountersSectionImpl;
 import org.openhealthtools.mdht.uml.cda.phcr.PhcrEncountersSection;
@@ -33,78 +36,87 @@ import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
  */
 public class PhcrEncountersSectionImpl extends EncountersSectionImpl implements PhcrEncountersSection {
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	protected PhcrEncountersSectionImpl() {
-		super();
-	}
+    super();
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	@Override
 	protected EClass eStaticClass() {
-		return PhcrPackage.Literals.PHCR_ENCOUNTERS_SECTION;
-	}
+    return PhcrPackage.Literals.PHCR_ENCOUNTERS_SECTION;
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validatePhcrEncountersSectionTitle(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return PhcrEncountersSectionOperations.validatePhcrEncountersSectionTitle(this, diagnostics, context);
-	}
+    return PhcrEncountersSectionOperations.validatePhcrEncountersSectionTitle(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validatePhcrEncountersSectionText(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return PhcrEncountersSectionOperations.validatePhcrEncountersSectionText(this, diagnostics, context);
-	}
+    return PhcrEncountersSectionOperations.validatePhcrEncountersSectionText(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validatePhcrEncountersSectionEncountersActivity(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return PhcrEncountersSectionOperations.validatePhcrEncountersSectionEncountersActivity(this, diagnostics, context);
-	}
+    return PhcrEncountersSectionOperations.validatePhcrEncountersSectionEncountersActivity(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public EList<EncountersActivity> getPHCREncountersActivities() {
-		return PhcrEncountersSectionOperations.getPHCREncountersActivities(this);
-	}
+    return PhcrEncountersSectionOperations.getPHCREncountersActivities(this);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	@Override
 	public boolean validateEncountersSectionTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return PhcrEncountersSectionOperations.validateEncountersSectionTemplateId(this, diagnostics, context);
-	}
+    return PhcrEncountersSectionOperations.validateEncountersSectionTemplateId(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public PhcrEncountersSection init() {
-    	CDAUtil.init(this);
-    	return this;
-	}
+      return Initializer.Util.init(this);
+  }
+
+  /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    public PhcrEncountersSection init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
 	
 } //PhcrEncountersSectionImpl

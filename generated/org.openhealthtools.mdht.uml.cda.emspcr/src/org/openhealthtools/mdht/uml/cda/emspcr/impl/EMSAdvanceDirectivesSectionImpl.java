@@ -6,12 +6,15 @@
  */
 package org.openhealthtools.mdht.uml.cda.emspcr.impl;
 
+import java.lang.Iterable;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
 
 import org.eclipse.emf.ecore.EClass;
 
+import org.eclipse.emf.ecore.EObject;
+import org.openhealthtools.mdht.emf.runtime.util.Initializer;
 import org.openhealthtools.mdht.uml.cda.emspcr.EMSAdvanceDirectivesSection;
 import org.openhealthtools.mdht.uml.cda.emspcr.EmspcrPackage;
 
@@ -109,7 +112,16 @@ public class EMSAdvanceDirectivesSectionImpl extends SectionImpl implements EMSA
    * @generated
    */
   public EMSAdvanceDirectivesSection init() {
-    	CDAUtil.init(this);
-    	return this;
+      return Initializer.Util.init(this);
   }
+
+  /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    public EMSAdvanceDirectivesSection init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
 } //EMSAdvanceDirectivesSectionImpl

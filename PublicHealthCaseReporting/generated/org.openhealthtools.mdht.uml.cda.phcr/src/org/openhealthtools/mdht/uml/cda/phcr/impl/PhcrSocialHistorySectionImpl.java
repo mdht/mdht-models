@@ -10,11 +10,14 @@
  *******************************************************************************/
 package org.openhealthtools.mdht.uml.cda.phcr.impl;
 
+import java.lang.Iterable;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.common.util.EList;
 import org.eclipse.emf.ecore.EClass;
+import org.eclipse.emf.ecore.EObject;
+import org.openhealthtools.mdht.emf.runtime.util.Initializer;
 import org.openhealthtools.mdht.uml.cda.ccd.impl.SocialHistorySectionImpl;
 import org.openhealthtools.mdht.uml.cda.phcr.GeotemporalHistoryObservation;
 import org.openhealthtools.mdht.uml.cda.phcr.MostRecentTimeArrivedInUSAObservation;
@@ -37,169 +40,178 @@ import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
  */
 public class PhcrSocialHistorySectionImpl extends SocialHistorySectionImpl implements PhcrSocialHistorySection {
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	protected PhcrSocialHistorySectionImpl() {
-		super();
-	}
+    super();
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	@Override
 	protected EClass eStaticClass() {
-		return PhcrPackage.Literals.PHCR_SOCIAL_HISTORY_SECTION;
-	}
+    return PhcrPackage.Literals.PHCR_SOCIAL_HISTORY_SECTION;
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public boolean validatePhcrSocialHistorySectionCodeP(DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+    return PhcrSocialHistorySectionOperations.validatePhcrSocialHistorySectionCodeP(this, diagnostics, context);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validatePhcrSocialHistorySectionCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return PhcrSocialHistorySectionOperations.validatePhcrSocialHistorySectionCode(this, diagnostics, context);
-	}
+    return PhcrSocialHistorySectionOperations.validatePhcrSocialHistorySectionCode(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validatePhcrSocialHistorySectionTitle(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return PhcrSocialHistorySectionOperations.validatePhcrSocialHistorySectionTitle(this, diagnostics, context);
-	}
+    return PhcrSocialHistorySectionOperations.validatePhcrSocialHistorySectionTitle(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validatePhcrSocialHistorySectionText(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return PhcrSocialHistorySectionOperations.validatePhcrSocialHistorySectionText(this, diagnostics, context);
-	}
+    return PhcrSocialHistorySectionOperations.validatePhcrSocialHistorySectionText(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validatePhcrSocialHistorySectionGeotemporalHistoryObservation(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return PhcrSocialHistorySectionOperations.validatePhcrSocialHistorySectionGeotemporalHistoryObservation(this, diagnostics, context);
-	}
+    return PhcrSocialHistorySectionOperations.validatePhcrSocialHistorySectionGeotemporalHistoryObservation(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validatePhcrSocialHistorySectionMostRecentTimeArrivedInUSAObservation(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return PhcrSocialHistorySectionOperations.validatePhcrSocialHistorySectionMostRecentTimeArrivedInUSAObservation(this, diagnostics, context);
-	}
+    return PhcrSocialHistorySectionOperations.validatePhcrSocialHistorySectionMostRecentTimeArrivedInUSAObservation(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validatePhcrSocialHistorySectionRaceObservation(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return PhcrSocialHistorySectionOperations.validatePhcrSocialHistorySectionRaceObservation(this, diagnostics, context);
-	}
+    return PhcrSocialHistorySectionOperations.validatePhcrSocialHistorySectionRaceObservation(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validatePhcrSocialHistorySectionOccupationObservation(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return PhcrSocialHistorySectionOperations.validatePhcrSocialHistorySectionOccupationObservation(this, diagnostics, context);
-	}
+    return PhcrSocialHistorySectionOperations.validatePhcrSocialHistorySectionOccupationObservation(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validatePhcrSocialHistorySectionPregnancyObservation(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return PhcrSocialHistorySectionOperations.validatePhcrSocialHistorySectionPregnancyObservation(this, diagnostics, context);
-	}
+    return PhcrSocialHistorySectionOperations.validatePhcrSocialHistorySectionPregnancyObservation(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public EList<GeotemporalHistoryObservation> getGeotemporalHistoryObservations() {
-		return PhcrSocialHistorySectionOperations.getGeotemporalHistoryObservations(this);
-	}
+    return PhcrSocialHistorySectionOperations.getGeotemporalHistoryObservations(this);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public MostRecentTimeArrivedInUSAObservation getMostRecentTimeArrivedInUSAObservation() {
-		return PhcrSocialHistorySectionOperations.getMostRecentTimeArrivedInUSAObservation(this);
-	}
+    return PhcrSocialHistorySectionOperations.getMostRecentTimeArrivedInUSAObservation(this);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public EList<RaceObservation> getRaceObservations() {
-		return PhcrSocialHistorySectionOperations.getRaceObservations(this);
-	}
+    return PhcrSocialHistorySectionOperations.getRaceObservations(this);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public EList<OccupationObservation> getOccupationObservations() {
-		return PhcrSocialHistorySectionOperations.getOccupationObservations(this);
-	}
+    return PhcrSocialHistorySectionOperations.getOccupationObservations(this);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public EList<PregnancyObservation> getPregnancyObservations() {
-		return PhcrSocialHistorySectionOperations.getPregnancyObservations(this);
-	}
+    return PhcrSocialHistorySectionOperations.getPregnancyObservations(this);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	@Override
 	public boolean validateSocialHistorySectionTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return PhcrSocialHistorySectionOperations.validateSocialHistorySectionTemplateId(this, diagnostics, context);
-	}
+    return PhcrSocialHistorySectionOperations.validateSocialHistorySectionTemplateId(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public boolean validateSocialHistorySectionCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return PhcrSocialHistorySectionOperations.validateSocialHistorySectionCode(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public PhcrSocialHistorySection init() {
-    	CDAUtil.init(this);
-    	return this;
-	}
+      return Initializer.Util.init(this);
+  }
+
+  /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    public PhcrSocialHistorySection init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
 		  
 } //PhcrSocialHistorySectionImpl

@@ -6,10 +6,13 @@
  */
 package org.openhealthtools.mdht.uml.cda.sdtm;
 
+import java.lang.Iterable;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
 
+import org.eclipse.emf.ecore.EObject;
+import org.openhealthtools.mdht.emf.runtime.util.Initializer;
 import org.openhealthtools.mdht.uml.cda.Observation;
 
 /**
@@ -19,14 +22,15 @@ import org.openhealthtools.mdht.uml.cda.Observation;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.sdtm.SdtmPackage#getPharmacokineticConcentrationFinding()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/sdtmPharmacokineticConcentrationFindingpharmacokineticsTestResultCategoryAssociation constraints.validation.error='pharmacokineticsTestResultCategoryAssociationTypeCode' typeCode='COMP'"
- *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/sdtmPharmacokineticConcentrationFindingpharmacokineticsTestResultCategoryAssociationpharmacokineticsTestResultCategory constraints.validation.error='pharmacokineticsTestResultCategoryClassCode pharmacokineticsTestResultCategoryCode pharmacokineticsTestResultCategoryMoodCode pharmacokineticsTestResultCategoryValue' classCode='OBS' moodCode='EVN'"
- *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/sdtmPharmacokineticConcentrationFindingpharmacokineticsTestResultSubCategoryAssociation constraints.validation.error='pharmacokineticsTestResultSubCategoryAssociationTypeCode' typeCode='COMP'"
- *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/sdtmPharmacokineticConcentrationFindingpharmacokineticsTestResultSubCategoryAssociationpharmacokineticsTestResultSubCategory constraints.validation.error='pharmacokineticsTestResultSubCategoryClassCode pharmacokineticsTestResultSubCategoryCode pharmacokineticsTestResultSubCategoryMoodCode pharmacokineticsTestResultSubCategoryValue' classCode='OBS' moodCode='EVN'"
- *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/sdtmPharmacokineticConcentrationFindingfastingAssociation constraints.validation.error='fastingAssociationTypeCode' typeCode='COMP'"
- *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/sdtmPharmacokineticConcentrationFindingfastingAssociationfastingStatus constraints.validation.dependOn.fastingStatusCode='fastingStatusCodeP' code.codeSystem='2.16.840.1.113883.3.26.1.1' constraints.validation.error='fastingStatusClassCode fastingStatusCode fastingStatusCodeP fastingStatusMoodCode fastingStatusValue' code.codeSystemName='NCI Thesaurus' classCode='OBS' moodCode='EVN'"
- *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/sdtmPharmacokineticConcentrationFindingassayQuantitationAssociation constraints.validation.dependOn.assayQuantitationAssociationassayQuantitationCode='assayQuantitationAssociationassayQuantitationCodeP' constraints.validation.error='assayQuantitationAssociationTypeId assayQuantitationAssociationObservation assayQuantitationAssociationassayQuantitationClassCode assayQuantitationAssociationassayQuantitationCodeP assayQuantitationAssociationassayQuantitationCode assayQuantitationAssociationassayQuantitationMoodCode assayQuantitationAssociationassayQuantitationValue' constraints.validation.query='assayQuantitationAssociationassayQuantitationClassCode assayQuantitationAssociationassayQuantitationCodeP assayQuantitationAssociationassayQuantitationCode assayQuantitationAssociationassayQuantitationMoodCode assayQuantitationAssociationassayQuantitationValue'"
- *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/sdtmPharmacokineticConcentrationFindingassayQuantitationAssociationassayQuantitation code.codeSystem='2.16.840.1.113883.3.26.1.1' constraints.validation.error='assayQuantitationClassCode assayQuantitationCode assayQuantitationCodeP assayQuantitationMoodCode assayQuantitationValue' code.codeSystemName='NCI Thesaurus' classCode='OBS' constraints.validation.dependOn.assayQuantitationCode='assayQuantitationCodeP' moodCode='DEF'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='Pharmacokinetic Concentration FindingTemplateId Pharmacokinetic Concentration FindingClassCode Pharmacokinetic Concentration FindingCode Pharmacokinetic Concentration FindingId Pharmacokinetic Concentration FindingMoodCode Pharmacokinetic Concentration FindingSpecimen Information Pharmacokinetic Concentration FindingpharmacokineticsTestResultCategoryAssociationpharmacokineticsTestResultCategoryClassCode Pharmacokinetic Concentration FindingpharmacokineticsTestResultCategoryAssociationpharmacokineticsTestResultCategoryCode Pharmacokinetic Concentration FindingpharmacokineticsTestResultCategoryAssociationpharmacokineticsTestResultCategoryMoodCode Pharmacokinetic Concentration FindingpharmacokineticsTestResultCategoryAssociationpharmacokineticsTestResultCategoryValue Pharmacokinetic Concentration FindingpharmacokineticsTestResultCategoryAssociationTypeCode Pharmacokinetic Concentration FindingpharmacokineticsTestResultCategoryAssociationPharmacokineticsTestResultCategory Pharmacokinetic Concentration FindingpharmacokineticsTestResultSubCategoryAssociationpharmacokineticsTestResultSubCategoryClassCode Pharmacokinetic Concentration FindingpharmacokineticsTestResultSubCategoryAssociationpharmacokineticsTestResultSubCategoryCode Pharmacokinetic Concentration FindingpharmacokineticsTestResultSubCategoryAssociationpharmacokineticsTestResultSubCategoryMoodCode Pharmacokinetic Concentration FindingpharmacokineticsTestResultSubCategoryAssociationpharmacokineticsTestResultSubCategoryValue Pharmacokinetic Concentration FindingpharmacokineticsTestResultSubCategoryAssociationTypeCode Pharmacokinetic Concentration FindingpharmacokineticsTestResultSubCategoryAssociationPharmacokineticsTestResultSubCategory Pharmacokinetic Concentration FindingfastingAssociationfastingStatusClassCode Pharmacokinetic Concentration FindingfastingAssociationfastingStatusCodeP Pharmacokinetic Concentration FindingfastingAssociationfastingStatusCode Pharmacokinetic Concentration FindingfastingAssociationfastingStatusMoodCode Pharmacokinetic Concentration FindingfastingAssociationfastingStatusValue Pharmacokinetic Concentration FindingfastingAssociationTypeCode Pharmacokinetic Concentration FindingfastingAssociationFastingStatus Pharmacokinetic Concentration FindingassayQuantitationAssociationassayQuantitationClassCode Pharmacokinetic Concentration FindingassayQuantitationAssociationassayQuantitationCodeP Pharmacokinetic Concentration FindingassayQuantitationAssociationassayQuantitationCode Pharmacokinetic Concentration FindingassayQuantitationAssociationassayQuantitationMoodCode Pharmacokinetic Concentration FindingassayQuantitationAssociationassayQuantitationValue Pharmacokinetic Concentration FindingassayQuantitationAssociationTypeId Pharmacokinetic Concentration FindingassayQuantitationAssociationObservation' templateId.root='2.16.840.1.113883.10.20.23.41' classCode='OBS' moodCode='EVN' constraints.validation.info='Pharmacokinetic Concentration FindingStatusCode Pharmacokinetic Concentration FindingMethodCode Pharmacokinetic Concentration FindingGroup Identifier Pharmacokinetic Concentration FindingPharmacokineticsTestResultCategoryAssociation Pharmacokinetic Concentration FindingPharmacokineticsTestResultSubCategoryAssociation Pharmacokinetic Concentration FindingFastingAssociation Pharmacokinetic Concentration FindingNon Performance Reason Pharmacokinetic Concentration FindingExclusion Reason' constraints.validation.warning='Pharmacokinetic Concentration FindingValue Pharmacokinetic Concentration FindingInterpretationCode Pharmacokinetic Concentration FindingAssayQuantitationAssociation Pharmacokinetic Concentration FindingPlanned Study Day' constraints.validation.query='Pharmacokinetic Concentration FindingpharmacokineticsTestResultCategoryAssociationpharmacokineticsTestResultCategoryClassCode Pharmacokinetic Concentration FindingpharmacokineticsTestResultCategoryAssociationpharmacokineticsTestResultCategoryCode Pharmacokinetic Concentration FindingpharmacokineticsTestResultCategoryAssociationpharmacokineticsTestResultCategoryMoodCode Pharmacokinetic Concentration FindingpharmacokineticsTestResultCategoryAssociationpharmacokineticsTestResultCategoryValue Pharmacokinetic Concentration FindingpharmacokineticsTestResultCategoryAssociationTypeCode Pharmacokinetic Concentration FindingpharmacokineticsTestResultCategoryAssociationPharmacokineticsTestResultCategory Pharmacokinetic Concentration FindingpharmacokineticsTestResultSubCategoryAssociationpharmacokineticsTestResultSubCategoryClassCode Pharmacokinetic Concentration FindingpharmacokineticsTestResultSubCategoryAssociationpharmacokineticsTestResultSubCategoryCode Pharmacokinetic Concentration FindingpharmacokineticsTestResultSubCategoryAssociationpharmacokineticsTestResultSubCategoryMoodCode Pharmacokinetic Concentration FindingpharmacokineticsTestResultSubCategoryAssociationpharmacokineticsTestResultSubCategoryValue Pharmacokinetic Concentration FindingpharmacokineticsTestResultSubCategoryAssociationTypeCode Pharmacokinetic Concentration FindingpharmacokineticsTestResultSubCategoryAssociationPharmacokineticsTestResultSubCategory Pharmacokinetic Concentration FindingfastingAssociationfastingStatusClassCode Pharmacokinetic Concentration FindingfastingAssociationfastingStatusCodeP Pharmacokinetic Concentration FindingfastingAssociationfastingStatusCode Pharmacokinetic Concentration FindingfastingAssociationfastingStatusMoodCode Pharmacokinetic Concentration FindingfastingAssociationfastingStatusValue Pharmacokinetic Concentration FindingfastingAssociationTypeCode Pharmacokinetic Concentration FindingfastingAssociationFastingStatus Pharmacokinetic Concentration FindingassayQuantitationAssociationassayQuantitationClassCode Pharmacokinetic Concentration FindingassayQuantitationAssociationassayQuantitationCodeP Pharmacokinetic Concentration FindingassayQuantitationAssociationassayQuantitationCode Pharmacokinetic Concentration FindingassayQuantitationAssociationassayQuantitationMoodCode Pharmacokinetic Concentration FindingassayQuantitationAssociationassayQuantitationValue Pharmacokinetic Concentration FindingassayQuantitationAssociationTypeId Pharmacokinetic Concentration FindingassayQuantitationAssociationObservation'"
+ *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/sdtmPharmacokineticConcentrationFindingpharmacokineticsTestResultCategoryAssociation typeCode='COMP' constraints.validation.error='pharmacokineticsTestResultCategoryAssociationTypeCode pharmacokineticsTestResultCategoryAssociationPharmacokineticsTestResultCategory pharmacokineticsTestResultCategoryAssociationpharmacokineticsTestResultCategoryClassCode pharmacokineticsTestResultCategoryAssociationpharmacokineticsTestResultCategoryCode pharmacokineticsTestResultCategoryAssociationpharmacokineticsTestResultCategoryMoodCode pharmacokineticsTestResultCategoryAssociationpharmacokineticsTestResultCategoryValue' constraints.validation.query='pharmacokineticsTestResultCategoryAssociationpharmacokineticsTestResultCategoryClassCode pharmacokineticsTestResultCategoryAssociationpharmacokineticsTestResultCategoryCode pharmacokineticsTestResultCategoryAssociationpharmacokineticsTestResultCategoryMoodCode pharmacokineticsTestResultCategoryAssociationpharmacokineticsTestResultCategoryValue'"
+ *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/sdtmPharmacokineticConcentrationFindingpharmacokineticsTestResultCategoryAssociationpharmacokineticsTestResultCategory classCode='OBS' constraints.validation.error='pharmacokineticsTestResultCategoryClassCode pharmacokineticsTestResultCategoryCode pharmacokineticsTestResultCategoryMoodCode pharmacokineticsTestResultCategoryValue' moodCode='EVN'"
+ *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/sdtmPharmacokineticConcentrationFindingpharmacokineticsTestResultSubCategoryAssociation typeCode='COMP' constraints.validation.error='pharmacokineticsTestResultSubCategoryAssociationTypeCode pharmacokineticsTestResultSubCategoryAssociationPharmacokineticsTestResultSubCategory pharmacokineticsTestResultSubCategoryAssociationpharmacokineticsTestResultSubCategoryClassCode pharmacokineticsTestResultSubCategoryAssociationpharmacokineticsTestResultSubCategoryCode pharmacokineticsTestResultSubCategoryAssociationpharmacokineticsTestResultSubCategoryMoodCode pharmacokineticsTestResultSubCategoryAssociationpharmacokineticsTestResultSubCategoryValue' constraints.validation.query='pharmacokineticsTestResultSubCategoryAssociationpharmacokineticsTestResultSubCategoryClassCode pharmacokineticsTestResultSubCategoryAssociationpharmacokineticsTestResultSubCategoryCode pharmacokineticsTestResultSubCategoryAssociationpharmacokineticsTestResultSubCategoryMoodCode pharmacokineticsTestResultSubCategoryAssociationpharmacokineticsTestResultSubCategoryValue'"
+ *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/sdtmPharmacokineticConcentrationFindingpharmacokineticsTestResultSubCategoryAssociationpharmacokineticsTestResultSubCategory classCode='OBS' constraints.validation.error='pharmacokineticsTestResultSubCategoryClassCode pharmacokineticsTestResultSubCategoryCode pharmacokineticsTestResultSubCategoryMoodCode pharmacokineticsTestResultSubCategoryValue' moodCode='EVN'"
+ *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/sdtmPharmacokineticConcentrationFindingfastingAssociation typeCode='COMP' constraints.validation.error='fastingAssociationTypeCode fastingAssociationFastingStatus'"
+ *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/sdtmPharmacokineticConcentrationFindingfastingAssociationfastingStatus classCode='OBS' constraints.validation.error='fastingStatusClassCode fastingStatusCode fastingStatusCodeP fastingStatusMoodCode fastingStatusValue' code.codeSystem='2.16.840.1.113883.3.26.1.1' code.codeSystemName='NCI Thesaurus' constraints.validation.dependOn.fastingStatusCode='fastingStatusCodeP' moodCode='EVN'"
+ *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/sdtmPharmacokineticConcentrationFindingassayQuantitationAssociation constraints.validation.error='assayQuantitationAssociationTypeId assayQuantitationAssociationObservation assayQuantitationAssociationassayQuantitationClassCode assayQuantitationAssociationassayQuantitationCodeP assayQuantitationAssociationassayQuantitationCode assayQuantitationAssociationassayQuantitationMoodCode assayQuantitationAssociationassayQuantitationValue' constraints.validation.query='assayQuantitationAssociationassayQuantitationClassCode assayQuantitationAssociationassayQuantitationCodeP assayQuantitationAssociationassayQuantitationCode assayQuantitationAssociationassayQuantitationMoodCode assayQuantitationAssociationassayQuantitationValue' constraints.validation.dependOn.assayQuantitationAssociationassayQuantitationCode='assayQuantitationAssociationassayQuantitationCodeP'"
+ *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/sdtmPharmacokineticConcentrationFindingassayQuantitationAssociationassayQuantitation classCode='OBS' constraints.validation.error='assayQuantitationClassCode assayQuantitationCode assayQuantitationCodeP assayQuantitationMoodCode assayQuantitationValue' code.codeSystem='2.16.840.1.113883.3.26.1.1' code.codeSystemName='NCI Thesaurus' constraints.validation.dependOn.assayQuantitationCode='assayQuantitationCodeP' moodCode='DEF'"
  * @generated
  */
 public interface PharmacokineticConcentrationFinding extends Observation
@@ -35,7 +39,6 @@ public interface PharmacokineticConcentrationFinding extends Observation
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.23.41')
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
    * <!-- end-model-doc -->
@@ -48,7 +51,6 @@ public interface PharmacokineticConcentrationFinding extends Observation
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.classCode=vocab::ActClassObservation::OBS
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
    * <!-- end-model-doc -->
@@ -61,7 +63,6 @@ public interface PharmacokineticConcentrationFinding extends Observation
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * (self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined())
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
    * <!-- end-model-doc -->
@@ -74,7 +75,6 @@ public interface PharmacokineticConcentrationFinding extends Observation
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * (self.id->isEmpty() or self.id->exists(element | element.isNullFlavorUndefined())) implies (not self.id->isEmpty())
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
    * <!-- end-model-doc -->
@@ -87,7 +87,6 @@ public interface PharmacokineticConcentrationFinding extends Observation
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.moodCode=vocab::x_ActMoodDocumentObservation::EVN
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
    * <!-- end-model-doc -->
@@ -100,7 +99,6 @@ public interface PharmacokineticConcentrationFinding extends Observation
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * (self.statusCode.oclIsUndefined() or self.statusCode.isNullFlavorUndefined()) implies (not self.statusCode.oclIsUndefined())
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
    * <!-- end-model-doc -->
@@ -113,7 +111,6 @@ public interface PharmacokineticConcentrationFinding extends Observation
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * (self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (self.value->forAll(element | element.oclIsTypeOf(datatypes::CD)))
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
    * <!-- end-model-doc -->
@@ -126,7 +123,6 @@ public interface PharmacokineticConcentrationFinding extends Observation
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * (self.methodCode->isEmpty() or self.methodCode->exists(element | element.isNullFlavorUndefined())) implies (not self.methodCode->isEmpty())
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
    * <!-- end-model-doc -->
@@ -139,7 +135,18 @@ public interface PharmacokineticConcentrationFinding extends Observation
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.entryRelationship->one(entryRelationship : cda::EntryRelationship | not entryRelationship.act.oclIsUndefined() and entryRelationship.act.oclIsKindOf(sdtm::Group Identifier) and entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::COMP)
+   * @param diagnostics The chain of diagnostics to which problems are to be appended.
+   * @param context The cache of context-specific information.
+   * <!-- end-model-doc -->
+   * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.interpretationCode->isEmpty() or self.interpretationCode->exists(element | element.isNullFlavorUndefined())) implies (not self.interpretationCode->isEmpty())'"
+   * @generated
+   */
+  boolean validatePharmacokineticConcentrationFindingInterpretationCode(DiagnosticChain diagnostics, Map<Object, Object> context);
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * <!-- begin-model-doc -->
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
    * <!-- end-model-doc -->
@@ -152,7 +159,6 @@ public interface PharmacokineticConcentrationFinding extends Observation
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.entryRelationship->one(entryRelationship : cda::EntryRelationship | not entryRelationship.oclIsUndefined() and entryRelationship.oclIsKindOf(cda::EntryRelationship))
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
    * <!-- end-model-doc -->
@@ -165,7 +171,6 @@ public interface PharmacokineticConcentrationFinding extends Observation
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.entryRelationship->one(entryRelationship : cda::EntryRelationship | not entryRelationship.oclIsUndefined() and entryRelationship.oclIsKindOf(cda::EntryRelationship))
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
    * <!-- end-model-doc -->
@@ -178,7 +183,6 @@ public interface PharmacokineticConcentrationFinding extends Observation
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.entryRelationship->one(entryRelationship : cda::EntryRelationship | not entryRelationship.oclIsUndefined() and entryRelationship.oclIsKindOf(cda::EntryRelationship))
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
    * <!-- end-model-doc -->
@@ -191,7 +195,6 @@ public interface PharmacokineticConcentrationFinding extends Observation
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.entryRelationship->one(entryRelationship : cda::EntryRelationship | not entryRelationship.procedure.oclIsUndefined() and entryRelationship.procedure.oclIsKindOf(sdtm::Specimen Information) and entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::COMP)
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
    * <!-- end-model-doc -->
@@ -204,7 +207,6 @@ public interface PharmacokineticConcentrationFinding extends Observation
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.entryRelationship->one(entryRelationship : cda::EntryRelationship | not entryRelationship.observation.oclIsUndefined() and entryRelationship.observation.oclIsKindOf(sdtm::Non Performance Reason) and entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::COMP)
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
    * <!-- end-model-doc -->
@@ -217,20 +219,6 @@ public interface PharmacokineticConcentrationFinding extends Observation
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.entryRelationship->one(entryRelationship : cda::EntryRelationship | not entryRelationship.observation.oclIsUndefined() and entryRelationship.observation.oclIsKindOf(sdtm::Derived Data Indicator) and entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::COMP)
-   * @param diagnostics The chain of diagnostics to which problems are to be appended.
-   * @param context The cache of context-specific information.
-   * <!-- end-model-doc -->
-   * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship->one(entryRelationship : cda::EntryRelationship | not entryRelationship.observation.oclIsUndefined() and entryRelationship.observation.oclIsKindOf(sdtm::Derived Data Indicator) and entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::COMP)'"
-   * @generated
-   */
-  boolean validatePharmacokineticConcentrationFindingDerivedDataIndicator(DiagnosticChain diagnostics, Map<Object, Object> context);
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * <!-- begin-model-doc -->
-   * self.entryRelationship->one(entryRelationship : cda::EntryRelationship | not entryRelationship.oclIsUndefined() and entryRelationship.oclIsKindOf(cda::EntryRelationship))
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
    * <!-- end-model-doc -->
@@ -243,7 +231,78 @@ public interface PharmacokineticConcentrationFinding extends Observation
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.entryRelationship->excluding(null)->reject(typeCode=vocab::x_ActRelationshipEntryRelationship::COMP)
+   * @param diagnostics The chain of diagnostics to which problems are to be appended.
+   * @param context The cache of context-specific information.
+   * <!-- end-model-doc -->
+   * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship->one(entryRelationship : cda::EntryRelationship | not entryRelationship.observation.oclIsUndefined() and entryRelationship.observation.oclIsKindOf(sdtm::Planned Study Day) and entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::REFR)'"
+   * @generated
+   */
+  boolean validatePharmacokineticConcentrationFindingPlannedStudyDay(DiagnosticChain diagnostics, Map<Object, Object> context);
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * <!-- begin-model-doc -->
+   * @param diagnostics The chain of diagnostics to which problems are to be appended.
+   * @param context The cache of context-specific information.
+   * <!-- end-model-doc -->
+   * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship->one(entryRelationship : cda::EntryRelationship | not entryRelationship.observation.oclIsUndefined() and entryRelationship.observation.oclIsKindOf(sdtm::Exclusion Reason) and entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::COMP)'"
+   * @generated
+   */
+  boolean validatePharmacokineticConcentrationFindingExclusionReason(DiagnosticChain diagnostics, Map<Object, Object> context);
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * <!-- begin-model-doc -->
+   * @param diagnostics The chain of diagnostics to which problems are to be appended.
+   * @param context The cache of context-specific information.
+   * <!-- end-model-doc -->
+   * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship->excluding(null).observation->excluding(null)->reject(classCode=vocab::ActClassObservation::OBS)'"
+   * @generated
+   */
+  boolean validatePharmacokineticConcentrationFindingpharmacokineticsTestResultCategoryAssociationpharmacokineticsTestResultCategoryClassCode(DiagnosticChain diagnostics, Map<Object, Object> context);
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * <!-- begin-model-doc -->
+   * @param diagnostics The chain of diagnostics to which problems are to be appended.
+   * @param context The cache of context-specific information.
+   * <!-- end-model-doc -->
+   * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship->excluding(null).observation->excluding(null)->reject((code.oclIsUndefined() or code.isNullFlavorUndefined()) implies (not code.oclIsUndefined()))'"
+   * @generated
+   */
+  boolean validatePharmacokineticConcentrationFindingpharmacokineticsTestResultCategoryAssociationpharmacokineticsTestResultCategoryCode(DiagnosticChain diagnostics, Map<Object, Object> context);
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * <!-- begin-model-doc -->
+   * @param diagnostics The chain of diagnostics to which problems are to be appended.
+   * @param context The cache of context-specific information.
+   * <!-- end-model-doc -->
+   * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship->excluding(null).observation->excluding(null)->reject(moodCode=vocab::x_ActMoodDocumentObservation::EVN)'"
+   * @generated
+   */
+  boolean validatePharmacokineticConcentrationFindingpharmacokineticsTestResultCategoryAssociationpharmacokineticsTestResultCategoryMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context);
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * <!-- begin-model-doc -->
+   * @param diagnostics The chain of diagnostics to which problems are to be appended.
+   * @param context The cache of context-specific information.
+   * <!-- end-model-doc -->
+   * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship->excluding(null).observation->excluding(null)->reject((value->isEmpty() or value->exists(element | element.isNullFlavorUndefined())) implies (value->size() = 1 and value->forAll(element | element.oclIsTypeOf(datatypes::CE))))'"
+   * @generated
+   */
+  boolean validatePharmacokineticConcentrationFindingpharmacokineticsTestResultCategoryAssociationpharmacokineticsTestResultCategoryValue(DiagnosticChain diagnostics, Map<Object, Object> context);
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * <!-- begin-model-doc -->
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
    * <!-- end-model-doc -->
@@ -256,7 +315,66 @@ public interface PharmacokineticConcentrationFinding extends Observation
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.entryRelationship->excluding(null)->reject(typeCode=vocab::x_ActRelationshipEntryRelationship::COMP)
+   * @param diagnostics The chain of diagnostics to which problems are to be appended.
+   * @param context The cache of context-specific information.
+   * <!-- end-model-doc -->
+   * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship->excluding(null)->reject(observation->one(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(cda::Observation)))'"
+   * @generated
+   */
+  boolean validatePharmacokineticConcentrationFindingpharmacokineticsTestResultCategoryAssociationPharmacokineticsTestResultCategory(DiagnosticChain diagnostics, Map<Object, Object> context);
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * <!-- begin-model-doc -->
+   * @param diagnostics The chain of diagnostics to which problems are to be appended.
+   * @param context The cache of context-specific information.
+   * <!-- end-model-doc -->
+   * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship->excluding(null).observation->excluding(null)->reject(classCode=vocab::ActClassObservation::OBS)'"
+   * @generated
+   */
+  boolean validatePharmacokineticConcentrationFindingpharmacokineticsTestResultSubCategoryAssociationpharmacokineticsTestResultSubCategoryClassCode(DiagnosticChain diagnostics, Map<Object, Object> context);
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * <!-- begin-model-doc -->
+   * @param diagnostics The chain of diagnostics to which problems are to be appended.
+   * @param context The cache of context-specific information.
+   * <!-- end-model-doc -->
+   * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship->excluding(null).observation->excluding(null)->reject((code.oclIsUndefined() or code.isNullFlavorUndefined()) implies (not code.oclIsUndefined()))'"
+   * @generated
+   */
+  boolean validatePharmacokineticConcentrationFindingpharmacokineticsTestResultSubCategoryAssociationpharmacokineticsTestResultSubCategoryCode(DiagnosticChain diagnostics, Map<Object, Object> context);
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * <!-- begin-model-doc -->
+   * @param diagnostics The chain of diagnostics to which problems are to be appended.
+   * @param context The cache of context-specific information.
+   * <!-- end-model-doc -->
+   * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship->excluding(null).observation->excluding(null)->reject(moodCode=vocab::x_ActMoodDocumentObservation::EVN)'"
+   * @generated
+   */
+  boolean validatePharmacokineticConcentrationFindingpharmacokineticsTestResultSubCategoryAssociationpharmacokineticsTestResultSubCategoryMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context);
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * <!-- begin-model-doc -->
+   * @param diagnostics The chain of diagnostics to which problems are to be appended.
+   * @param context The cache of context-specific information.
+   * <!-- end-model-doc -->
+   * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship->excluding(null).observation->excluding(null)->reject((value->isEmpty() or value->exists(element | element.isNullFlavorUndefined())) implies (value->size() = 1 and value->forAll(element | element.oclIsTypeOf(datatypes::CE))))'"
+   * @generated
+   */
+  boolean validatePharmacokineticConcentrationFindingpharmacokineticsTestResultSubCategoryAssociationpharmacokineticsTestResultSubCategoryValue(DiagnosticChain diagnostics, Map<Object, Object> context);
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * <!-- begin-model-doc -->
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
    * <!-- end-model-doc -->
@@ -269,7 +387,18 @@ public interface PharmacokineticConcentrationFinding extends Observation
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.entryRelationship->excluding(null).observation->excluding(null)->reject(classCode=vocab::ActClassObservation::OBS)
+   * @param diagnostics The chain of diagnostics to which problems are to be appended.
+   * @param context The cache of context-specific information.
+   * <!-- end-model-doc -->
+   * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship->excluding(null)->reject(observation->one(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(cda::Observation)))'"
+   * @generated
+   */
+  boolean validatePharmacokineticConcentrationFindingpharmacokineticsTestResultSubCategoryAssociationPharmacokineticsTestResultSubCategory(DiagnosticChain diagnostics, Map<Object, Object> context);
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * <!-- begin-model-doc -->
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
    * <!-- end-model-doc -->
@@ -282,7 +411,6 @@ public interface PharmacokineticConcentrationFinding extends Observation
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.entryRelationship->excluding(null).observation->excluding(null)->reject((code.oclIsUndefined() or code.isNullFlavorUndefined()) implies (not code.oclIsUndefined()))
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
    * <!-- end-model-doc -->
@@ -295,13 +423,10 @@ public interface PharmacokineticConcentrationFinding extends Observation
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.entryRelationship->excluding(null).observation->excluding(null)->reject((code.oclIsUndefined() or code.isNullFlavorUndefined()) implies (not code.oclIsUndefined() and code.oclIsKindOf(datatypes::CD) and 
-   * let value : datatypes::CD = code.oclAsType(datatypes::CD) in 
-   * value.codeSystem = '2.16.840.1.113883.3.26.1.1'))
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
    * <!-- end-model-doc -->
-   * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship->excluding(null).observation->excluding(null)->reject((code.oclIsUndefined() or code.isNullFlavorUndefined()) implies (not code.oclIsUndefined() and code.oclIsKindOf(datatypes::CD) and \r\nlet value : datatypes::CD = code.oclAsType(datatypes::CD) in \r\nvalue.codeSystem = \'2.16.840.1.113883.3.26.1.1\'))'"
+   * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship->excluding(null).observation->excluding(null)->reject((code.oclIsUndefined() or code.isNullFlavorUndefined()) implies (not code.oclIsUndefined() and code.oclIsKindOf(datatypes::CD) and \nlet value : datatypes::CD = code.oclAsType(datatypes::CD) in \nvalue.codeSystem = \'2.16.840.1.113883.3.26.1.1\'))'"
    * @generated
    */
   boolean validatePharmacokineticConcentrationFindingfastingAssociationfastingStatusCode(DiagnosticChain diagnostics, Map<Object, Object> context);
@@ -310,7 +435,6 @@ public interface PharmacokineticConcentrationFinding extends Observation
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.entryRelationship->excluding(null).observation->excluding(null)->reject(moodCode=vocab::x_ActMoodDocumentObservation::EVN)
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
    * <!-- end-model-doc -->
@@ -323,7 +447,6 @@ public interface PharmacokineticConcentrationFinding extends Observation
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.entryRelationship->excluding(null).observation->excluding(null)->reject((value->isEmpty() or value->exists(element | element.isNullFlavorUndefined())) implies (value->size() = 1 and value->forAll(element | element.oclIsTypeOf(datatypes::BN))))
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
    * <!-- end-model-doc -->
@@ -336,7 +459,6 @@ public interface PharmacokineticConcentrationFinding extends Observation
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.entryRelationship->excluding(null)->reject(typeCode=vocab::x_ActRelationshipEntryRelationship::COMP)
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
    * <!-- end-model-doc -->
@@ -349,7 +471,6 @@ public interface PharmacokineticConcentrationFinding extends Observation
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.entryRelationship->excluding(null)->reject(observation->one(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(cda::Observation)))
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
    * <!-- end-model-doc -->
@@ -362,7 +483,6 @@ public interface PharmacokineticConcentrationFinding extends Observation
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.entryRelationship->excluding(null).observation->excluding(null)->reject(classCode=vocab::ActClassObservation::OBS)
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
    * <!-- end-model-doc -->
@@ -375,7 +495,6 @@ public interface PharmacokineticConcentrationFinding extends Observation
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.entryRelationship->excluding(null).observation->excluding(null)->reject((code.oclIsUndefined() or code.isNullFlavorUndefined()) implies (not code.oclIsUndefined()))
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
    * <!-- end-model-doc -->
@@ -388,13 +507,10 @@ public interface PharmacokineticConcentrationFinding extends Observation
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.entryRelationship->excluding(null).observation->excluding(null)->reject((code.oclIsUndefined() or code.isNullFlavorUndefined()) implies (not code.oclIsUndefined() and code.oclIsKindOf(datatypes::CD) and 
-   * let value : datatypes::CD = code.oclAsType(datatypes::CD) in 
-   * value.codeSystem = '2.16.840.1.113883.3.26.1.1'))
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
    * <!-- end-model-doc -->
-   * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship->excluding(null).observation->excluding(null)->reject((code.oclIsUndefined() or code.isNullFlavorUndefined()) implies (not code.oclIsUndefined() and code.oclIsKindOf(datatypes::CD) and \r\nlet value : datatypes::CD = code.oclAsType(datatypes::CD) in \r\nvalue.codeSystem = \'2.16.840.1.113883.3.26.1.1\'))'"
+   * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship->excluding(null).observation->excluding(null)->reject((code.oclIsUndefined() or code.isNullFlavorUndefined()) implies (not code.oclIsUndefined() and code.oclIsKindOf(datatypes::CD) and \nlet value : datatypes::CD = code.oclAsType(datatypes::CD) in \nvalue.codeSystem = \'2.16.840.1.113883.3.26.1.1\'))'"
    * @generated
    */
   boolean validatePharmacokineticConcentrationFindingassayQuantitationAssociationassayQuantitationCode(DiagnosticChain diagnostics, Map<Object, Object> context);
@@ -403,7 +519,6 @@ public interface PharmacokineticConcentrationFinding extends Observation
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.entryRelationship->excluding(null).observation->excluding(null)->reject(moodCode=vocab::x_ActMoodDocumentObservation::DEF)
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
    * <!-- end-model-doc -->
@@ -416,7 +531,6 @@ public interface PharmacokineticConcentrationFinding extends Observation
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.entryRelationship->excluding(null).observation->excluding(null)->reject((value->isEmpty() or value->exists(element | element.isNullFlavorUndefined())) implies (value->forAll(element | element.oclIsTypeOf(datatypes::IVL_PQ))))
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
    * <!-- end-model-doc -->
@@ -429,7 +543,6 @@ public interface PharmacokineticConcentrationFinding extends Observation
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.entryRelationship->excluding(null)->reject((typeId.oclIsUndefined() or typeId.isNullFlavorUndefined()) implies (not typeId.oclIsUndefined()))
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
    * <!-- end-model-doc -->
@@ -442,7 +555,6 @@ public interface PharmacokineticConcentrationFinding extends Observation
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.entryRelationship->excluding(null)->reject(observation->one(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(cda::Observation)))
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
    * <!-- end-model-doc -->
@@ -454,78 +566,8 @@ public interface PharmacokineticConcentrationFinding extends Observation
   /**
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * <!-- begin-model-doc -->
-   * self.entryRelationship->excluding(null)->reject(observation->excluding(null)->reject(classCode=vocab::ActClassObservation::OBS))
-   * @param diagnostics The chain of diagnostics to which problems are to be appended.
-   * @param context The cache of context-specific information.
-   * <!-- end-model-doc -->
-   * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship->excluding(null)->reject(observation->excluding(null)->reject(classCode=vocab::ActClassObservation::OBS))'"
-   * @generated
-   */
-  boolean validatePharmacokineticConcentrationFindingassayQuantitationAssociationassayQuantitationClassCodePharmacokineticConcentrationFindingassayQuantitationAssociationassayQuantitationClassCode1(DiagnosticChain diagnostics, Map<Object, Object> context);
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * <!-- begin-model-doc -->
-   * self.entryRelationship->excluding(null)->reject(observation->excluding(null)->reject((code.oclIsUndefined() or code.isNullFlavorUndefined()) implies (not code.oclIsUndefined())))
-   * @param diagnostics The chain of diagnostics to which problems are to be appended.
-   * @param context The cache of context-specific information.
-   * <!-- end-model-doc -->
-   * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship->excluding(null)->reject(observation->excluding(null)->reject((code.oclIsUndefined() or code.isNullFlavorUndefined()) implies (not code.oclIsUndefined())))'"
-   * @generated
-   */
-  boolean validatePharmacokineticConcentrationFindingassayQuantitationAssociationassayQuantitationCodePPharmacokineticConcentrationFindingassayQuantitationAssociationassayQuantitationCodeP1(DiagnosticChain diagnostics, Map<Object, Object> context);
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * <!-- begin-model-doc -->
-   * self.entryRelationship->excluding(null)->reject(observation->excluding(null)->reject((code.oclIsUndefined() or code.isNullFlavorUndefined()) implies (not code.oclIsUndefined() and code.oclIsKindOf(datatypes::CD) and 
-   * let value : datatypes::CD = code.oclAsType(datatypes::CD) in 
-   * value.codeSystem = '2.16.840.1.113883.3.26.1.1')))
-   * @param diagnostics The chain of diagnostics to which problems are to be appended.
-   * @param context The cache of context-specific information.
-   * <!-- end-model-doc -->
-   * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship->excluding(null)->reject(observation->excluding(null)->reject((code.oclIsUndefined() or code.isNullFlavorUndefined()) implies (not code.oclIsUndefined() and code.oclIsKindOf(datatypes::CD) and \r\nlet value : datatypes::CD = code.oclAsType(datatypes::CD) in \r\nvalue.codeSystem = \'2.16.840.1.113883.3.26.1.1\')))'"
-   * @generated
-   */
-  boolean validatePharmacokineticConcentrationFindingassayQuantitationAssociationassayQuantitationCodePharmacokineticConcentrationFindingassayQuantitationAssociationassayQuantitationCode1(DiagnosticChain diagnostics, Map<Object, Object> context);
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * <!-- begin-model-doc -->
-   * self.entryRelationship->excluding(null)->reject(observation->excluding(null)->reject(moodCode=vocab::x_ActMoodDocumentObservation::DEF))
-   * @param diagnostics The chain of diagnostics to which problems are to be appended.
-   * @param context The cache of context-specific information.
-   * <!-- end-model-doc -->
-   * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship->excluding(null)->reject(observation->excluding(null)->reject(moodCode=vocab::x_ActMoodDocumentObservation::DEF))'"
-   * @generated
-   */
-  boolean validatePharmacokineticConcentrationFindingassayQuantitationAssociationassayQuantitationMoodCodePharmacokineticConcentrationFindingassayQuantitationAssociationassayQuantitationMoodCode1(DiagnosticChain diagnostics, Map<Object, Object> context);
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * <!-- begin-model-doc -->
-   * self.entryRelationship->excluding(null)->reject(observation->excluding(null)->reject((value->isEmpty() or value->exists(element | element.isNullFlavorUndefined())) implies (value->forAll(element | element.oclIsTypeOf(datatypes::IVL_PQ)))))
-   * @param diagnostics The chain of diagnostics to which problems are to be appended.
-   * @param context The cache of context-specific information.
-   * <!-- end-model-doc -->
-   * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship->excluding(null)->reject(observation->excluding(null)->reject((value->isEmpty() or value->exists(element | element.isNullFlavorUndefined())) implies (value->forAll(element | element.oclIsTypeOf(datatypes::IVL_PQ)))))'"
-   * @generated
-   */
-  boolean validatePharmacokineticConcentrationFindingassayQuantitationAssociationassayQuantitationValuePharmacokineticConcentrationFindingassayQuantitationAssociationassayQuantitationValue1(DiagnosticChain diagnostics, Map<Object, Object> context);
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * <!-- begin-model-doc -->
-   * self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(sdtm::Group Identifier))->asSequence()->first().oclAsType(sdtm::Group Identifier)
-   * <!-- end-model-doc -->
    * @model kind="operation" required="true" ordered="false"
-   *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(sdtm::Group Identifier))->asSequence()->first().oclAsType(sdtm::Group Identifier)'"
+   *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(sdtm::Group Identifier))->asSequence()->any(true).oclAsType(sdtm::Group Identifier)'"
    * @generated
    */
   GroupIdentifier getGroupIdentifier();
@@ -533,11 +575,8 @@ public interface PharmacokineticConcentrationFinding extends Observation
   /**
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * <!-- begin-model-doc -->
-   * self.getProcedures()->select(procedure : cda::Procedure | not procedure.oclIsUndefined() and procedure.oclIsKindOf(sdtm::Specimen Information))->asSequence()->first().oclAsType(sdtm::Specimen Information)
-   * <!-- end-model-doc -->
    * @model kind="operation" required="true" ordered="false"
-   *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getProcedures()->select(procedure : cda::Procedure | not procedure.oclIsUndefined() and procedure.oclIsKindOf(sdtm::Specimen Information))->asSequence()->first().oclAsType(sdtm::Specimen Information)'"
+   *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getProcedures()->select(procedure : cda::Procedure | not procedure.oclIsUndefined() and procedure.oclIsKindOf(sdtm::Specimen Information))->asSequence()->any(true).oclAsType(sdtm::Specimen Information)'"
    * @generated
    */
   SpecimenInformation getSpecimenInformation();
@@ -545,11 +584,8 @@ public interface PharmacokineticConcentrationFinding extends Observation
   /**
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * <!-- begin-model-doc -->
-   * self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(sdtm::Non Performance Reason))->asSequence()->first().oclAsType(sdtm::Non Performance Reason)
-   * <!-- end-model-doc -->
    * @model kind="operation" required="true" ordered="false"
-   *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(sdtm::Non Performance Reason))->asSequence()->first().oclAsType(sdtm::Non Performance Reason)'"
+   *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(sdtm::Non Performance Reason))->asSequence()->any(true).oclAsType(sdtm::Non Performance Reason)'"
    * @generated
    */
   NonPerformanceReason getNonPerformanceReason();
@@ -557,14 +593,20 @@ public interface PharmacokineticConcentrationFinding extends Observation
   /**
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * <!-- begin-model-doc -->
-   * self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(sdtm::Derived Data Indicator))->asSequence()->first().oclAsType(sdtm::Derived Data Indicator)
-   * <!-- end-model-doc -->
    * @model kind="operation" required="true" ordered="false"
-   *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(sdtm::Derived Data Indicator))->asSequence()->first().oclAsType(sdtm::Derived Data Indicator)'"
+   *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(sdtm::Planned Study Day))->asSequence()->any(true).oclAsType(sdtm::Planned Study Day)'"
    * @generated
    */
-  DerivedDataIndicator getDerivedDataIndicator();
+  PlannedStudyDay getPlannedStudyDay();
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @model kind="operation" required="true" ordered="false"
+   *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(sdtm::Exclusion Reason))->asSequence()->any(true).oclAsType(sdtm::Exclusion Reason)'"
+   * @generated
+   */
+  ExclusionReason getExclusionReason();
 
   /**
    * <!-- begin-user-doc -->
@@ -572,4 +614,11 @@ public interface PharmacokineticConcentrationFinding extends Observation
    * @generated
    */
   public PharmacokineticConcentrationFinding init();
+
+  /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    public PharmacokineticConcentrationFinding init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // PharmacokineticConcentrationFinding

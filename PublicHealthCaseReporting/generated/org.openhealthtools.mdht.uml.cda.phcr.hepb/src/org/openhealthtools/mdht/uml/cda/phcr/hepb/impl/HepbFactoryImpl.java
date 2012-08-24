@@ -28,274 +28,278 @@ import org.openhealthtools.mdht.uml.cda.phcr.hepb.*;
  */
 public class HepbFactoryImpl extends EFactoryImpl implements HepbFactory {
 	/**
-	 * Creates the default factory implementation.
-	 * <!-- begin-user-doc -->
+   * Creates the default factory implementation.
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public static HepbFactory init() {
-		try {
-			HepbFactory theHepbFactory = (HepbFactory)EPackage.Registry.INSTANCE.getEFactory("http://www.openhealthtools.org/mdht/uml/cda/phcr/hepb"); 
-			if (theHepbFactory != null) {
-				return theHepbFactory;
-			}
-		}
-		catch (Exception exception) {
-			EcorePlugin.INSTANCE.log(exception);
-		}
-		return new HepbFactoryImpl();
-	}
+    try
+    {
+      HepbFactory theHepbFactory = (HepbFactory)EPackage.Registry.INSTANCE.getEFactory("http://www.openhealthtools.org/mdht/uml/cda/phcr/hepb"); 
+      if (theHepbFactory != null)
+      {
+        return theHepbFactory;
+      }
+    }
+    catch (Exception exception)
+    {
+      EcorePlugin.INSTANCE.log(exception);
+    }
+    return new HepbFactoryImpl();
+  }
 
 	/**
-	 * Creates an instance of the factory.
-	 * <!-- begin-user-doc -->
+   * Creates an instance of the factory.
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public HepbFactoryImpl() {
-		super();
-	}
+    super();
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	@Override
 	public EObject create(EClass eClass) {
-		switch (eClass.getClassifierID()) {
-			case HepbPackage.ACUTE_HEPATITIS_BCASE_REPORT: return createAcuteHepatitisBCaseReport();
-			case HepbPackage.ACUTE_HEPATITIS_BSOCIAL_HISTORY_SECTION: return createAcuteHepatitisBSocialHistorySection();
-			case HepbPackage.JOB_RELATED_BODY_FLUID_EXPOSURE_RISK_FREQUENCY_OBSERVATION: return createJobRelatedBodyFluidExposureRiskFrequencyObservation();
-			case HepbPackage.ACUTE_HEPATITIS_BPOSSIBLE_EXPOSURE_LOCATION_AND_TYPE_ACT: return createAcuteHepatitisBPossibleExposureLocationAndTypeAct();
-			case HepbPackage.ACUTE_HEPATITIS_BSOCIO_BEHAVIORAL_BOOLEAN_RISK_FACTOR_OBSERVATION: return createAcuteHepatitisBSocioBehavioralBooleanRiskFactorObservation();
-			case HepbPackage.ACUTE_HEPATITIS_BACTUAL_BLOOD_AND_OR_BODY_FLUID_EXPOSURE_OBSERVATION: return createAcuteHepatitisBActualBloodAndOrBodyFluidExposureObservation();
-			case HepbPackage.ACUTE_HEPATITIS_BPHCR_CLINICAL_INFORMATION_SECTION: return createAcuteHepatitisBPHCRClinicalInformationSection();
-			case HepbPackage.ACUTE_HEPATITIS_BCASE_OBSERVATION: return createAcuteHepatitisBCaseObservation();
-			case HepbPackage.ACUTE_HEPATITIS_BSIGNS_AND_SYMPTOMS_OBSERVATION: return createAcuteHepatitisBSignsAndSymptomsObservation();
-			case HepbPackage.ACUTE_HEPATITIS_BRISK_ASSOCIATED_PROCEDURE: return createAcuteHepatitisBRiskAssociatedProcedure();
-			case HepbPackage.VIRAL_HEPATITIS_HISTORY_OBSERVATION: return createViralHepatitisHistoryObservation();
-			case HepbPackage.STD_HISTORY_OBSERVATION: return createSTDHistoryObservation();
-			case HepbPackage.ACUTE_HEPATITIS_BIMMUNIZATION_SECTION: return createAcuteHepatitisBImmunizationSection();
-			case HepbPackage.ACUTE_HEPATITIS_BIMMUNIZATION_ACTIVITY: return createAcuteHepatitisBImmunizationActivity();
-			case HepbPackage.ACUTE_HEPATITIS_BPHCR_TREATMENT_INFORMATION_SECTION: return createAcuteHepatitisBPHCRTreatmentInformationSection();
-			case HepbPackage.ACUTE_HEPATITIS_BTHERAPEUTIC_REGIMEN_ACT: return createAcuteHepatitisBTherapeuticRegimenAct();
-			case HepbPackage.ACUTE_HEPATITIS_BPHCR_RELEVANT_DIAGNOSTIC_TESTS_AND_OR_LABORATORY_DATA_SECTION: return createAcuteHepatitisBPHCRRelevantDiagnosticTestsAndOrLaboratoryDataSection();
-			case HepbPackage.ACUTE_HEPATITIS_BRESULT_OBSERVATION: return createAcuteHepatitisBResultObservation();
-			case HepbPackage.ACUTE_HEPATITIS_BIMMUNIZATION_PRODUCT: return createAcuteHepatitisBImmunizationProduct();
-			default:
-				throw new IllegalArgumentException("The class '" + eClass.getName() + "' is not a valid classifier");
-		}
-	}
+    switch (eClass.getClassifierID())
+    {
+      case HepbPackage.ACUTE_HEPATITIS_BCASE_REPORT: return createAcuteHepatitisBCaseReport();
+      case HepbPackage.ACUTE_HEPATITIS_BSOCIAL_HISTORY_SECTION: return createAcuteHepatitisBSocialHistorySection();
+      case HepbPackage.JOB_RELATED_BODY_FLUID_EXPOSURE_RISK_FREQUENCY_OBSERVATION: return createJobRelatedBodyFluidExposureRiskFrequencyObservation();
+      case HepbPackage.ACUTE_HEPATITIS_BPOSSIBLE_EXPOSURE_LOCATION_AND_TYPE_ACT: return createAcuteHepatitisBPossibleExposureLocationAndTypeAct();
+      case HepbPackage.ACUTE_HEPATITIS_BSOCIO_BEHAVIORAL_BOOLEAN_RISK_FACTOR_OBSERVATION: return createAcuteHepatitisBSocioBehavioralBooleanRiskFactorObservation();
+      case HepbPackage.ACUTE_HEPATITIS_BACTUAL_BLOOD_AND_OR_BODY_FLUID_EXPOSURE_OBSERVATION: return createAcuteHepatitisBActualBloodAndOrBodyFluidExposureObservation();
+      case HepbPackage.ACUTE_HEPATITIS_BPHCR_CLINICAL_INFORMATION_SECTION: return createAcuteHepatitisBPHCRClinicalInformationSection();
+      case HepbPackage.ACUTE_HEPATITIS_BCASE_OBSERVATION: return createAcuteHepatitisBCaseObservation();
+      case HepbPackage.ACUTE_HEPATITIS_BSIGNS_AND_SYMPTOMS_OBSERVATION: return createAcuteHepatitisBSignsAndSymptomsObservation();
+      case HepbPackage.ACUTE_HEPATITIS_BRISK_ASSOCIATED_PROCEDURE: return createAcuteHepatitisBRiskAssociatedProcedure();
+      case HepbPackage.VIRAL_HEPATITIS_HISTORY_OBSERVATION: return createViralHepatitisHistoryObservation();
+      case HepbPackage.STD_HISTORY_OBSERVATION: return createSTDHistoryObservation();
+      case HepbPackage.ACUTE_HEPATITIS_BIMMUNIZATION_SECTION: return createAcuteHepatitisBImmunizationSection();
+      case HepbPackage.ACUTE_HEPATITIS_BIMMUNIZATION_ACTIVITY: return createAcuteHepatitisBImmunizationActivity();
+      case HepbPackage.ACUTE_HEPATITIS_BPHCR_TREATMENT_INFORMATION_SECTION: return createAcuteHepatitisBPHCRTreatmentInformationSection();
+      case HepbPackage.ACUTE_HEPATITIS_BTHERAPEUTIC_REGIMEN_ACT: return createAcuteHepatitisBTherapeuticRegimenAct();
+      case HepbPackage.ACUTE_HEPATITIS_BPHCR_RELEVANT_DIAGNOSTIC_TESTS_AND_OR_LABORATORY_DATA_SECTION: return createAcuteHepatitisBPHCRRelevantDiagnosticTestsAndOrLaboratoryDataSection();
+      case HepbPackage.ACUTE_HEPATITIS_BRESULT_OBSERVATION: return createAcuteHepatitisBResultObservation();
+      case HepbPackage.ACUTE_HEPATITIS_BIMMUNIZATION_PRODUCT: return createAcuteHepatitisBImmunizationProduct();
+      default:
+        throw new IllegalArgumentException("The class '" + eClass.getName() + "' is not a valid classifier");
+    }
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public AcuteHepatitisBCaseReport createAcuteHepatitisBCaseReport() {
-		AcuteHepatitisBCaseReportImpl acuteHepatitisBCaseReport = new AcuteHepatitisBCaseReportImpl();
-		return acuteHepatitisBCaseReport;
-	}
+    AcuteHepatitisBCaseReportImpl acuteHepatitisBCaseReport = new AcuteHepatitisBCaseReportImpl();
+    return acuteHepatitisBCaseReport;
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public AcuteHepatitisBSocialHistorySection createAcuteHepatitisBSocialHistorySection() {
-		AcuteHepatitisBSocialHistorySectionImpl acuteHepatitisBSocialHistorySection = new AcuteHepatitisBSocialHistorySectionImpl();
-		return acuteHepatitisBSocialHistorySection;
-	}
+    AcuteHepatitisBSocialHistorySectionImpl acuteHepatitisBSocialHistorySection = new AcuteHepatitisBSocialHistorySectionImpl();
+    return acuteHepatitisBSocialHistorySection;
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public JobRelatedBodyFluidExposureRiskFrequencyObservation createJobRelatedBodyFluidExposureRiskFrequencyObservation() {
-		JobRelatedBodyFluidExposureRiskFrequencyObservationImpl jobRelatedBodyFluidExposureRiskFrequencyObservation = new JobRelatedBodyFluidExposureRiskFrequencyObservationImpl();
-		return jobRelatedBodyFluidExposureRiskFrequencyObservation;
-	}
+    JobRelatedBodyFluidExposureRiskFrequencyObservationImpl jobRelatedBodyFluidExposureRiskFrequencyObservation = new JobRelatedBodyFluidExposureRiskFrequencyObservationImpl();
+    return jobRelatedBodyFluidExposureRiskFrequencyObservation;
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public AcuteHepatitisBSocioBehavioralBooleanRiskFactorObservation createAcuteHepatitisBSocioBehavioralBooleanRiskFactorObservation() {
-		AcuteHepatitisBSocioBehavioralBooleanRiskFactorObservationImpl acuteHepatitisBSocioBehavioralBooleanRiskFactorObservation = new AcuteHepatitisBSocioBehavioralBooleanRiskFactorObservationImpl();
-		return acuteHepatitisBSocioBehavioralBooleanRiskFactorObservation;
-	}
+    AcuteHepatitisBSocioBehavioralBooleanRiskFactorObservationImpl acuteHepatitisBSocioBehavioralBooleanRiskFactorObservation = new AcuteHepatitisBSocioBehavioralBooleanRiskFactorObservationImpl();
+    return acuteHepatitisBSocioBehavioralBooleanRiskFactorObservation;
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public AcuteHepatitisBActualBloodAndOrBodyFluidExposureObservation createAcuteHepatitisBActualBloodAndOrBodyFluidExposureObservation() {
-		AcuteHepatitisBActualBloodAndOrBodyFluidExposureObservationImpl acuteHepatitisBActualBloodAndOrBodyFluidExposureObservation = new AcuteHepatitisBActualBloodAndOrBodyFluidExposureObservationImpl();
-		return acuteHepatitisBActualBloodAndOrBodyFluidExposureObservation;
-	}
+    AcuteHepatitisBActualBloodAndOrBodyFluidExposureObservationImpl acuteHepatitisBActualBloodAndOrBodyFluidExposureObservation = new AcuteHepatitisBActualBloodAndOrBodyFluidExposureObservationImpl();
+    return acuteHepatitisBActualBloodAndOrBodyFluidExposureObservation;
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public AcuteHepatitisBPossibleExposureLocationAndTypeAct createAcuteHepatitisBPossibleExposureLocationAndTypeAct() {
-		AcuteHepatitisBPossibleExposureLocationAndTypeActImpl acuteHepatitisBPossibleExposureLocationAndTypeAct = new AcuteHepatitisBPossibleExposureLocationAndTypeActImpl();
-		return acuteHepatitisBPossibleExposureLocationAndTypeAct;
-	}
+    AcuteHepatitisBPossibleExposureLocationAndTypeActImpl acuteHepatitisBPossibleExposureLocationAndTypeAct = new AcuteHepatitisBPossibleExposureLocationAndTypeActImpl();
+    return acuteHepatitisBPossibleExposureLocationAndTypeAct;
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public AcuteHepatitisBImmunizationSection createAcuteHepatitisBImmunizationSection() {
-		AcuteHepatitisBImmunizationSectionImpl acuteHepatitisBImmunizationSection = new AcuteHepatitisBImmunizationSectionImpl();
-		return acuteHepatitisBImmunizationSection;
-	}
+    AcuteHepatitisBImmunizationSectionImpl acuteHepatitisBImmunizationSection = new AcuteHepatitisBImmunizationSectionImpl();
+    return acuteHepatitisBImmunizationSection;
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public AcuteHepatitisBImmunizationActivity createAcuteHepatitisBImmunizationActivity() {
-		AcuteHepatitisBImmunizationActivityImpl acuteHepatitisBImmunizationActivity = new AcuteHepatitisBImmunizationActivityImpl();
-		return acuteHepatitisBImmunizationActivity;
-	}
+    AcuteHepatitisBImmunizationActivityImpl acuteHepatitisBImmunizationActivity = new AcuteHepatitisBImmunizationActivityImpl();
+    return acuteHepatitisBImmunizationActivity;
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public AcuteHepatitisBPHCRClinicalInformationSection createAcuteHepatitisBPHCRClinicalInformationSection() {
-		AcuteHepatitisBPHCRClinicalInformationSectionImpl acuteHepatitisBPHCRClinicalInformationSection = new AcuteHepatitisBPHCRClinicalInformationSectionImpl();
-		return acuteHepatitisBPHCRClinicalInformationSection;
-	}
+    AcuteHepatitisBPHCRClinicalInformationSectionImpl acuteHepatitisBPHCRClinicalInformationSection = new AcuteHepatitisBPHCRClinicalInformationSectionImpl();
+    return acuteHepatitisBPHCRClinicalInformationSection;
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public AcuteHepatitisBCaseObservation createAcuteHepatitisBCaseObservation() {
-		AcuteHepatitisBCaseObservationImpl acuteHepatitisBCaseObservation = new AcuteHepatitisBCaseObservationImpl();
-		return acuteHepatitisBCaseObservation;
-	}
+    AcuteHepatitisBCaseObservationImpl acuteHepatitisBCaseObservation = new AcuteHepatitisBCaseObservationImpl();
+    return acuteHepatitisBCaseObservation;
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public AcuteHepatitisBSignsAndSymptomsObservation createAcuteHepatitisBSignsAndSymptomsObservation() {
-		AcuteHepatitisBSignsAndSymptomsObservationImpl acuteHepatitisBSignsAndSymptomsObservation = new AcuteHepatitisBSignsAndSymptomsObservationImpl();
-		return acuteHepatitisBSignsAndSymptomsObservation;
-	}
+    AcuteHepatitisBSignsAndSymptomsObservationImpl acuteHepatitisBSignsAndSymptomsObservation = new AcuteHepatitisBSignsAndSymptomsObservationImpl();
+    return acuteHepatitisBSignsAndSymptomsObservation;
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public AcuteHepatitisBRiskAssociatedProcedure createAcuteHepatitisBRiskAssociatedProcedure() {
-		AcuteHepatitisBRiskAssociatedProcedureImpl acuteHepatitisBRiskAssociatedProcedure = new AcuteHepatitisBRiskAssociatedProcedureImpl();
-		return acuteHepatitisBRiskAssociatedProcedure;
-	}
+    AcuteHepatitisBRiskAssociatedProcedureImpl acuteHepatitisBRiskAssociatedProcedure = new AcuteHepatitisBRiskAssociatedProcedureImpl();
+    return acuteHepatitisBRiskAssociatedProcedure;
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public ViralHepatitisHistoryObservation createViralHepatitisHistoryObservation() {
-		ViralHepatitisHistoryObservationImpl viralHepatitisHistoryObservation = new ViralHepatitisHistoryObservationImpl();
-		return viralHepatitisHistoryObservation;
-	}
+    ViralHepatitisHistoryObservationImpl viralHepatitisHistoryObservation = new ViralHepatitisHistoryObservationImpl();
+    return viralHepatitisHistoryObservation;
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public STDHistoryObservation createSTDHistoryObservation() {
-		STDHistoryObservationImpl stdHistoryObservation = new STDHistoryObservationImpl();
-		return stdHistoryObservation;
-	}
+    STDHistoryObservationImpl stdHistoryObservation = new STDHistoryObservationImpl();
+    return stdHistoryObservation;
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public AcuteHepatitisBPHCRTreatmentInformationSection createAcuteHepatitisBPHCRTreatmentInformationSection() {
-		AcuteHepatitisBPHCRTreatmentInformationSectionImpl acuteHepatitisBPHCRTreatmentInformationSection = new AcuteHepatitisBPHCRTreatmentInformationSectionImpl();
-		return acuteHepatitisBPHCRTreatmentInformationSection;
-	}
+    AcuteHepatitisBPHCRTreatmentInformationSectionImpl acuteHepatitisBPHCRTreatmentInformationSection = new AcuteHepatitisBPHCRTreatmentInformationSectionImpl();
+    return acuteHepatitisBPHCRTreatmentInformationSection;
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public AcuteHepatitisBTherapeuticRegimenAct createAcuteHepatitisBTherapeuticRegimenAct() {
-		AcuteHepatitisBTherapeuticRegimenActImpl acuteHepatitisBTherapeuticRegimenAct = new AcuteHepatitisBTherapeuticRegimenActImpl();
-		return acuteHepatitisBTherapeuticRegimenAct;
-	}
+    AcuteHepatitisBTherapeuticRegimenActImpl acuteHepatitisBTherapeuticRegimenAct = new AcuteHepatitisBTherapeuticRegimenActImpl();
+    return acuteHepatitisBTherapeuticRegimenAct;
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public AcuteHepatitisBPHCRRelevantDiagnosticTestsAndOrLaboratoryDataSection createAcuteHepatitisBPHCRRelevantDiagnosticTestsAndOrLaboratoryDataSection() {
-		AcuteHepatitisBPHCRRelevantDiagnosticTestsAndOrLaboratoryDataSectionImpl acuteHepatitisBPHCRRelevantDiagnosticTestsAndOrLaboratoryDataSection = new AcuteHepatitisBPHCRRelevantDiagnosticTestsAndOrLaboratoryDataSectionImpl();
-		return acuteHepatitisBPHCRRelevantDiagnosticTestsAndOrLaboratoryDataSection;
-	}
+    AcuteHepatitisBPHCRRelevantDiagnosticTestsAndOrLaboratoryDataSectionImpl acuteHepatitisBPHCRRelevantDiagnosticTestsAndOrLaboratoryDataSection = new AcuteHepatitisBPHCRRelevantDiagnosticTestsAndOrLaboratoryDataSectionImpl();
+    return acuteHepatitisBPHCRRelevantDiagnosticTestsAndOrLaboratoryDataSection;
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public AcuteHepatitisBResultObservation createAcuteHepatitisBResultObservation() {
-		AcuteHepatitisBResultObservationImpl acuteHepatitisBResultObservation = new AcuteHepatitisBResultObservationImpl();
-		return acuteHepatitisBResultObservation;
-	}
+    AcuteHepatitisBResultObservationImpl acuteHepatitisBResultObservation = new AcuteHepatitisBResultObservationImpl();
+    return acuteHepatitisBResultObservation;
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public AcuteHepatitisBImmunizationProduct createAcuteHepatitisBImmunizationProduct() {
-		AcuteHepatitisBImmunizationProductImpl acuteHepatitisBImmunizationProduct = new AcuteHepatitisBImmunizationProductImpl();
-		return acuteHepatitisBImmunizationProduct;
-	}
+    AcuteHepatitisBImmunizationProductImpl acuteHepatitisBImmunizationProduct = new AcuteHepatitisBImmunizationProductImpl();
+    return acuteHepatitisBImmunizationProduct;
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public HepbPackage getHepbPackage() {
-		return (HepbPackage)getEPackage();
-	}
+    return (HepbPackage)getEPackage();
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @deprecated
-	 * @generated
-	 */
+   * @deprecated
+   * @generated
+   */
 	@Deprecated
 	public static HepbPackage getPackage() {
-		return HepbPackage.eINSTANCE;
-	}
+    return HepbPackage.eINSTANCE;
+  }
 
 } //HepbFactoryImpl

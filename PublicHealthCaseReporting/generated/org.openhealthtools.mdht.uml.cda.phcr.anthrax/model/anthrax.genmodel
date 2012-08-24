@@ -96,13 +96,26 @@
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="anthrax.ecore#//AnthraxPhcrClinicalInformationSection/getAnthraxCaseObservation"/>
     </genClasses>
     <genClasses xsi:type="genmodel:GenClass" ecoreClass="anthrax.ecore#//AnthraxCaseObservation">
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="anthrax.ecore#//AnthraxCaseObservation/AnthraxCaseObservationValueP">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="anthrax.ecore#//AnthraxCaseObservation/AnthraxCaseObservationValueP/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="anthrax.ecore#//AnthraxCaseObservation/AnthraxCaseObservationValueP/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="anthrax.ecore#//AnthraxCaseObservation/AnthraxCaseObservationValue">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="anthrax.ecore#//AnthraxCaseObservation/AnthraxCaseObservationValue/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="anthrax.ecore#//AnthraxCaseObservation/AnthraxCaseObservationValue/context"/>
+      </genOperations>
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="anthrax.ecore#//AnthraxCaseObservation/AnthraxCaseObservationAnthraxSignsAndSymptomsObservation">
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="anthrax.ecore#//AnthraxCaseObservation/AnthraxCaseObservationAnthraxSignsAndSymptomsObservation/diagnostics"/>
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="anthrax.ecore#//AnthraxCaseObservation/AnthraxCaseObservationAnthraxSignsAndSymptomsObservation/context"/>
       </genOperations>
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="anthrax.ecore#//AnthraxCaseObservation/getAnthraxSignsAndSymptomsObservations"/>
     </genClasses>
-    <genClasses xsi:type="genmodel:GenClass" ecoreClass="anthrax.ecore#//AnthraxSignsAndSymptomsObservation"/>
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="anthrax.ecore#//AnthraxSignsAndSymptomsObservation">
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="anthrax.ecore#//AnthraxSignsAndSymptomsObservation/AnthraxSignsAndSymptomsObservationValue">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="anthrax.ecore#//AnthraxSignsAndSymptomsObservation/AnthraxSignsAndSymptomsObservationValue/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="anthrax.ecore#//AnthraxSignsAndSymptomsObservation/AnthraxSignsAndSymptomsObservationValue/context"/>
+      </genOperations>
+    </genClasses>
     <genClasses xsi:type="genmodel:GenClass" ecoreClass="anthrax.ecore#//AnthraxPhcrTreatmentInformationSection">
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="anthrax.ecore#//AnthraxPhcrTreatmentInformationSection/AnthraxPhcrTreatmentInformationSectionAnthraxTherapeuticRegimenAct">
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="anthrax.ecore#//AnthraxPhcrTreatmentInformationSection/AnthraxPhcrTreatmentInformationSectionAnthraxTherapeuticRegimenAct/diagnostics"/>
@@ -137,12 +150,29 @@
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="anthrax.ecore#//AnthraxPhcrRelevantDxTestsSection/getAnthraxResultObservations"/>
     </genClasses>
     <genClasses xsi:type="genmodel:GenClass" ecoreClass="anthrax.ecore#//AnthraxResultOrganizer">
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="anthrax.ecore#//AnthraxResultOrganizer/AnthraxResultOrganizerCodeP">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="anthrax.ecore#//AnthraxResultOrganizer/AnthraxResultOrganizerCodeP/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="anthrax.ecore#//AnthraxResultOrganizer/AnthraxResultOrganizerCodeP/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="anthrax.ecore#//AnthraxResultOrganizer/AnthraxResultOrganizerCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="anthrax.ecore#//AnthraxResultOrganizer/AnthraxResultOrganizerCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="anthrax.ecore#//AnthraxResultOrganizer/AnthraxResultOrganizerCode/context"/>
+      </genOperations>
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="anthrax.ecore#//AnthraxResultOrganizer/AnthraxResultOrganizerAnthraxResultObservation">
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="anthrax.ecore#//AnthraxResultOrganizer/AnthraxResultOrganizerAnthraxResultObservation/diagnostics"/>
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="anthrax.ecore#//AnthraxResultOrganizer/AnthraxResultOrganizerAnthraxResultObservation/context"/>
       </genOperations>
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="anthrax.ecore#//AnthraxResultOrganizer/getAnthraxResultObservations"/>
     </genClasses>
-    <genClasses xsi:type="genmodel:GenClass" ecoreClass="anthrax.ecore#//AnthraxResultObservation"/>
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="anthrax.ecore#//AnthraxResultObservation">
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="anthrax.ecore#//AnthraxResultObservation/AnthraxResultObservationCodeP">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="anthrax.ecore#//AnthraxResultObservation/AnthraxResultObservationCodeP/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="anthrax.ecore#//AnthraxResultObservation/AnthraxResultObservationCodeP/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="anthrax.ecore#//AnthraxResultObservation/AnthraxResultObservationCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="anthrax.ecore#//AnthraxResultObservation/AnthraxResultObservationCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="anthrax.ecore#//AnthraxResultObservation/AnthraxResultObservationCode/context"/>
+      </genOperations>
+    </genClasses>
   </genPackages>
 </genmodel:GenModel>

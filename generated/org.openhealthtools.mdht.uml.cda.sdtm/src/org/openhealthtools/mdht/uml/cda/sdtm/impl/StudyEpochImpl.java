@@ -6,12 +6,15 @@
  */
 package org.openhealthtools.mdht.uml.cda.sdtm.impl;
 
+import java.lang.Iterable;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
 
 import org.eclipse.emf.ecore.EClass;
 
+import org.eclipse.emf.ecore.EObject;
+import org.openhealthtools.mdht.emf.runtime.util.Initializer;
 import org.openhealthtools.mdht.uml.cda.impl.ActImpl;
 
 import org.openhealthtools.mdht.uml.cda.sdtm.SdtmPackage;
@@ -78,16 +81,6 @@ public class StudyEpochImpl extends ActImpl implements StudyEpoch
    * <!-- end-user-doc -->
    * @generated
    */
-  public boolean validateStudyEpochClassCodeP(DiagnosticChain diagnostics, Map<Object, Object> context)
-  {
-    return StudyEpochOperations.validateStudyEpochClassCodeP(this, diagnostics, context);
-  }
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
   public boolean validateStudyEpochCodeP(DiagnosticChain diagnostics, Map<Object, Object> context)
   {
     return StudyEpochOperations.validateStudyEpochCodeP(this, diagnostics, context);
@@ -129,7 +122,16 @@ public class StudyEpochImpl extends ActImpl implements StudyEpoch
    * @generated
    */
   public StudyEpoch init() {
-    	CDAUtil.init(this);
-    	return this;
+      return Initializer.Util.init(this);
   }
+
+  /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    public StudyEpoch init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
 } //StudyEpochImpl

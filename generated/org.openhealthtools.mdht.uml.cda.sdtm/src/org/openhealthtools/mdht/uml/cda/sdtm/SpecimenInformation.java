@@ -6,10 +6,13 @@
  */
 package org.openhealthtools.mdht.uml.cda.sdtm;
 
+import java.lang.Iterable;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
 
+import org.eclipse.emf.ecore.EObject;
+import org.openhealthtools.mdht.emf.runtime.util.Initializer;
 import org.openhealthtools.mdht.uml.cda.Procedure;
 
 /**
@@ -19,12 +22,16 @@ import org.openhealthtools.mdht.uml.cda.Procedure;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.sdtm.SdtmPackage#getSpecimenInformation()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation code.codeSystem='2.16.840.1.113883.3.26.1.1' templateId.root='2.16.840.1.113883.10.20.23.67' constraints.validation.error='Specimen InformationTemplateId Specimen InformationClassCode Specimen InformationMoodCode Specimen InformationCode Specimen InformationCodeP Specimen InformationparticipatingSpecimenroleOfSpecimenspecimenEntityClassCode Specimen InformationparticipatingSpecimenroleOfSpecimenspecimenEntityCode Specimen InformationparticipatingSpecimenroleOfSpecimenspecimenEntityDeterminerCode Specimen InformationparticipatingSpecimenroleOfSpecimenClassCode Specimen InformationparticipatingSpecimenTypeCode Specimen InformationconditionAssociationspecimenConditionCodeP Specimen InformationconditionAssociationspecimenConditionCode Specimen InformationconditionAssociationspecimenConditionMoodCode Specimen InformationconditionAssociationspecimenConditionValue Specimen InformationconditionAssociationTypeCode Specimen InformationconditionAssociationSpecimenCondition Specimen InformationconditionAssociationspecimenConditionCodePSpecimen InformationconditionAssociationspecimenConditionCodeP1 Specimen InformationconditionAssociationspecimenConditionCodeSpecimen InformationconditionAssociationspecimenConditionCode1 Specimen InformationconditionAssociationspecimenConditionMoodCodeSpecimen InformationconditionAssociationspecimenConditionMoodCode1 Specimen InformationconditionAssociationspecimenConditionValueSpecimen InformationconditionAssociationspecimenConditionValue1'"
- *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/sdtmSpecimenInformationparticipatingSpecimen constraints.validation.error='participatingSpecimenTypeCode participatingSpecimenroleOfSpecimenspecimenEntityClassCode participatingSpecimenroleOfSpecimenspecimenEntityCode participatingSpecimenroleOfSpecimenspecimenEntityDeterminerCode participatingSpecimenroleOfSpecimenClassCode' constraints.validation.warning='participatingSpecimenRoleOfSpecimen' typeCode='SPC' constraints.validation.query='participatingSpecimenroleOfSpecimenspecimenEntityClassCode participatingSpecimenroleOfSpecimenspecimenEntityCode participatingSpecimenroleOfSpecimenspecimenEntityDeterminerCode participatingSpecimenroleOfSpecimenClassCode participatingSpecimenroleOfSpecimenId' constraints.validation.info='participatingSpecimenroleOfSpecimenId'"
- *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/sdtmSpecimenInformationparticipatingSpecimenroleOfSpecimen constraints.validation.error='roleOfSpecimenClassCode roleOfSpecimenspecimenEntityClassCode roleOfSpecimenspecimenEntityCode roleOfSpecimenspecimenEntityDeterminerCode' classCode='SPEC' constraints.validation.query='roleOfSpecimenspecimenEntityClassCode roleOfSpecimenspecimenEntityCode roleOfSpecimenspecimenEntityDeterminerCode' constraints.validation.info='roleOfSpecimenId'"
- *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/sdtmSpecimenInformationparticipatingSpecimenroleOfSpecimenspecimenEntity constraints.validation.error='specimenEntityClassCode specimenEntityCode specimenEntityDeterminerCode' determinerCode='INSTANCE' classCode='ENT'"
- *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/sdtmSpecimenInformationconditionAssociation constraints.validation.error='conditionAssociationTypeCode conditionAssociationSpecimenCondition conditionAssociationspecimenConditionCodeP conditionAssociationspecimenConditionCode conditionAssociationspecimenConditionMoodCode conditionAssociationspecimenConditionValue' typeCode='COMP' constraints.validation.query='conditionAssociationspecimenConditionCodeP conditionAssociationspecimenConditionCode conditionAssociationspecimenConditionMoodCode conditionAssociationspecimenConditionValue' constraints.validation.dependOn.conditionAssociationspecimenConditionCode='conditionAssociationspecimenConditionCodeP'"
- *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/sdtmSpecimenInformationconditionAssociationspecimenCondition code.codeSystem='2.16.840.1.113883.3.26.1.1' constraints.validation.error='specimenConditionCode specimenConditionCodeP specimenConditionMoodCode specimenConditionValue' code.codeSystemName='NCI Thesaurus' classCode='OBS' moodCode='EVN' constraints.validation.dependOn.specimenConditionCode='specimenConditionCodeP'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='Specimen InformationTemplateId Specimen InformationClassCode Specimen InformationMoodCode Specimen InformationCode Specimen InformationCodeP Specimen InformationparticipatingSpecimenroleOfSpecimenspecimenEntityClassCode Specimen InformationparticipatingSpecimenroleOfSpecimenspecimenEntityCode Specimen InformationparticipatingSpecimenroleOfSpecimenspecimenEntityDeterminerCode Specimen InformationparticipatingSpecimenroleOfSpecimenClassCode Specimen InformationparticipatingSpecimenTemplateId Specimen InformationparticipatingSpecimenTypeCode Specimen InformationportionAssociationportionOrTotalityCodeP Specimen InformationportionAssociationportionOrTotalityCode Specimen InformationportionAssociationportionOrTotalityMoodCode Specimen InformationportionAssociationportionOrTotalityValue Specimen InformationportionAssociationTypeCode Specimen InformationportionAssociationSpecimenCondition Specimen InformationusabilityAssociationspecimenUsabilityCodeP Specimen InformationusabilityAssociationspecimenUsabilityCode Specimen InformationusabilityAssociationspecimenUsabilityMoodCode Specimen InformationusabilityAssociationspecimenUsabilityValue Specimen InformationusabilityAssociationTypeCode Specimen InformationusabilityAssociationSpecimenUsability Specimen InformationconditionAssociationspecimenConditionCodeP Specimen InformationconditionAssociationspecimenConditionCode Specimen InformationconditionAssociationspecimenConditionMoodCode Specimen InformationconditionAssociationspecimenConditionValue Specimen InformationconditionAssociationTypeCode Specimen InformationconditionAssociationSpecimenCondition' templateId.root='2.16.840.1.113883.10.20.23.67' classCode='ACT' constraints.validation.warning='Specimen InformationEffectiveTime Specimen InformationParticipatingSpecimen Specimen InformationparticipatingSpecimenRoleOfSpecimen' moodCode='EVN' code.codeSystem='2.16.840.1.113883.3.26.1.1' code.codeSystemName='NCI Thesaurus' constraints.validation.info='Specimen InformationEvent Study Day Specimen InformationTiming Reference Specimen InformationPortionAssociation Specimen InformationUsabilityAssociation Specimen InformationConditionAssociation Specimen InformationparticipatingSpecimenroleOfSpecimenId' constraints.validation.query='Specimen InformationparticipatingSpecimenroleOfSpecimenspecimenEntityClassCode Specimen InformationparticipatingSpecimenroleOfSpecimenspecimenEntityCode Specimen InformationparticipatingSpecimenroleOfSpecimenspecimenEntityDeterminerCode Specimen InformationparticipatingSpecimenroleOfSpecimenClassCode Specimen InformationparticipatingSpecimenroleOfSpecimenId Specimen InformationparticipatingSpecimenTemplateId Specimen InformationparticipatingSpecimenTypeCode Specimen InformationparticipatingSpecimenRoleOfSpecimen Specimen InformationportionAssociationportionOrTotalityCodeP Specimen InformationportionAssociationportionOrTotalityCode Specimen InformationportionAssociationportionOrTotalityMoodCode Specimen InformationportionAssociationportionOrTotalityValue Specimen InformationportionAssociationTypeCode Specimen InformationportionAssociationSpecimenCondition Specimen InformationusabilityAssociationspecimenUsabilityCodeP Specimen InformationusabilityAssociationspecimenUsabilityCode Specimen InformationusabilityAssociationspecimenUsabilityMoodCode Specimen InformationusabilityAssociationspecimenUsabilityValue Specimen InformationusabilityAssociationTypeCode Specimen InformationusabilityAssociationSpecimenUsability Specimen InformationconditionAssociationspecimenConditionCodeP Specimen InformationconditionAssociationspecimenConditionCode Specimen InformationconditionAssociationspecimenConditionMoodCode Specimen InformationconditionAssociationspecimenConditionValue Specimen InformationconditionAssociationTypeCode Specimen InformationconditionAssociationSpecimenCondition'"
+ *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/sdtmSpecimenInformationparticipatingSpecimen constraints.validation.error='participatingSpecimenTemplateId participatingSpecimenTypeCode participatingSpecimenroleOfSpecimenspecimenEntityClassCode participatingSpecimenroleOfSpecimenspecimenEntityCode participatingSpecimenroleOfSpecimenspecimenEntityDeterminerCode participatingSpecimenroleOfSpecimenClassCode' templateId.root='null' typeCode='SPC' constraints.validation.warning='participatingSpecimenRoleOfSpecimen' constraints.validation.query='participatingSpecimenroleOfSpecimenspecimenEntityClassCode participatingSpecimenroleOfSpecimenspecimenEntityCode participatingSpecimenroleOfSpecimenspecimenEntityDeterminerCode participatingSpecimenroleOfSpecimenClassCode participatingSpecimenroleOfSpecimenId' constraints.validation.info='participatingSpecimenroleOfSpecimenId'"
+ *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/sdtmSpecimenInformationparticipatingSpecimenroleOfSpecimen classCode='SPEC' constraints.validation.error='roleOfSpecimenClassCode roleOfSpecimenspecimenEntityClassCode roleOfSpecimenspecimenEntityCode roleOfSpecimenspecimenEntityDeterminerCode' constraints.validation.info='roleOfSpecimenId' constraints.validation.query='roleOfSpecimenspecimenEntityClassCode roleOfSpecimenspecimenEntityCode roleOfSpecimenspecimenEntityDeterminerCode'"
+ *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/sdtmSpecimenInformationparticipatingSpecimenroleOfSpecimenspecimenEntity classCode='ENT' constraints.validation.error='specimenEntityClassCode specimenEntityCode specimenEntityDeterminerCode' determinerCode='INSTANCE'"
+ *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/sdtmSpecimenInformationportionAssociation typeCode='COMP' constraints.validation.error='portionAssociationTypeCode portionAssociationSpecimenCondition portionAssociationportionOrTotalityCodeP portionAssociationportionOrTotalityCode portionAssociationportionOrTotalityMoodCode portionAssociationportionOrTotalityValue' constraints.validation.query='portionAssociationportionOrTotalityCodeP portionAssociationportionOrTotalityCode portionAssociationportionOrTotalityMoodCode portionAssociationportionOrTotalityValue' constraints.validation.dependOn.portionAssociationportionOrTotalityCode='portionAssociationportionOrTotalityCodeP'"
+ *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/sdtmSpecimenInformationportionAssociationportionOrTotality classCode='OBS' code.codeSystem='2.16.840.1.113883.3.26.1.1' code.codeSystemName='NCI Thesaurus' constraints.validation.error='portionOrTotalityCode portionOrTotalityCodeP portionOrTotalityMoodCode portionOrTotalityValue' constraints.validation.dependOn.portionOrTotalityCode='portionOrTotalityCodeP' moodCode='EVN'"
+ *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/sdtmSpecimenInformationconditionAssociation typeCode='COMP' constraints.validation.error='conditionAssociationTypeCode conditionAssociationSpecimenCondition conditionAssociationspecimenConditionCodeP conditionAssociationspecimenConditionCode conditionAssociationspecimenConditionMoodCode conditionAssociationspecimenConditionValue' constraints.validation.query='conditionAssociationspecimenConditionCodeP conditionAssociationspecimenConditionCode conditionAssociationspecimenConditionMoodCode conditionAssociationspecimenConditionValue' constraints.validation.dependOn.conditionAssociationspecimenConditionCode='conditionAssociationspecimenConditionCodeP'"
+ *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/sdtmSpecimenInformationconditionAssociationspecimenCondition classCode='OBS' code.codeSystem='2.16.840.1.113883.3.26.1.1' code.codeSystemName='NCI Thesaurus' constraints.validation.error='specimenConditionCode specimenConditionCodeP specimenConditionMoodCode specimenConditionValue' constraints.validation.dependOn.specimenConditionCode='specimenConditionCodeP' moodCode='EVN'"
+ *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/sdtmSpecimenInformationusabilityAssociation typeCode='COMP' constraints.validation.error='usabilityAssociationTypeCode usabilityAssociationSpecimenUsability usabilityAssociationspecimenUsabilityCodeP usabilityAssociationspecimenUsabilityCode usabilityAssociationspecimenUsabilityMoodCode usabilityAssociationspecimenUsabilityValue' constraints.validation.query='usabilityAssociationspecimenUsabilityCodeP usabilityAssociationspecimenUsabilityCode usabilityAssociationspecimenUsabilityMoodCode usabilityAssociationspecimenUsabilityValue' constraints.validation.dependOn.usabilityAssociationspecimenUsabilityCode='usabilityAssociationspecimenUsabilityCodeP'"
+ *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/sdtmSpecimenInformationusabilityAssociationspecimenUsability classCode='OBS' code.codeSystem='2.16.840.1.113883.3.26.1.1' code.codeSystemName='NCI Thesaurus' constraints.validation.error='specimenUsabilityCode specimenUsabilityCodeP specimenUsabilityMoodCode specimenUsabilityValue' constraints.validation.dependOn.specimenUsabilityCode='specimenUsabilityCodeP' moodCode='EVN'"
  * @generated
  */
 public interface SpecimenInformation extends Procedure
@@ -33,7 +40,6 @@ public interface SpecimenInformation extends Procedure
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.23.67')
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
    * <!-- end-model-doc -->
@@ -46,7 +52,6 @@ public interface SpecimenInformation extends Procedure
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * isDefined('classCode')
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
    * <!-- end-model-doc -->
@@ -59,7 +64,6 @@ public interface SpecimenInformation extends Procedure
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * (self.effectiveTime.oclIsUndefined() or self.effectiveTime.isNullFlavorUndefined()) implies (not self.effectiveTime.oclIsUndefined())
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
    * <!-- end-model-doc -->
@@ -72,7 +76,6 @@ public interface SpecimenInformation extends Procedure
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.moodCode=vocab::x_DocumentProcedureMood::EVN
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
    * <!-- end-model-doc -->
@@ -85,13 +88,10 @@ public interface SpecimenInformation extends Procedure
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * (self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and 
-   * let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in 
-   * value.codeSystem = '2.16.840.1.113883.3.26.1.1')
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
    * <!-- end-model-doc -->
-   * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and \r\nlet value : datatypes::CD = self.code.oclAsType(datatypes::CD) in \r\nvalue.codeSystem = \'2.16.840.1.113883.3.26.1.1\')'"
+   * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and \nlet value : datatypes::CD = self.code.oclAsType(datatypes::CD) in \nvalue.codeSystem = \'2.16.840.1.113883.3.26.1.1\')'"
    * @generated
    */
   boolean validateSpecimenInformationCode(DiagnosticChain diagnostics, Map<Object, Object> context);
@@ -100,7 +100,6 @@ public interface SpecimenInformation extends Procedure
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * (self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined())
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
    * <!-- end-model-doc -->
@@ -113,20 +112,6 @@ public interface SpecimenInformation extends Procedure
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * (self.targetSiteCode->isEmpty() or self.targetSiteCode->exists(element | element.isNullFlavorUndefined())) implies (not self.targetSiteCode->isEmpty())
-   * @param diagnostics The chain of diagnostics to which problems are to be appended.
-   * @param context The cache of context-specific information.
-   * <!-- end-model-doc -->
-   * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.targetSiteCode->isEmpty() or self.targetSiteCode->exists(element | element.isNullFlavorUndefined())) implies (not self.targetSiteCode->isEmpty())'"
-   * @generated
-   */
-  boolean validateSpecimenInformationTargetSiteCode(DiagnosticChain diagnostics, Map<Object, Object> context);
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * <!-- begin-model-doc -->
-   * self.specimen->one(specimen : cda::Specimen | not specimen.oclIsUndefined() and specimen.oclIsKindOf(cda::Specimen))
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
    * <!-- end-model-doc -->
@@ -139,7 +124,6 @@ public interface SpecimenInformation extends Procedure
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.entryRelationship->one(entryRelationship : cda::EntryRelationship | not entryRelationship.oclIsUndefined() and entryRelationship.oclIsKindOf(cda::EntryRelationship))
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
    * <!-- end-model-doc -->
@@ -152,7 +136,6 @@ public interface SpecimenInformation extends Procedure
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.entryRelationship->one(entryRelationship : cda::EntryRelationship | not entryRelationship.observation.oclIsUndefined() and entryRelationship.observation.oclIsKindOf(sdtm::Event Study Day) and entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::REFR)
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
    * <!-- end-model-doc -->
@@ -165,7 +148,6 @@ public interface SpecimenInformation extends Procedure
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.entryRelationship->one(entryRelationship : cda::EntryRelationship | not entryRelationship.act.oclIsUndefined() and entryRelationship.act.oclIsKindOf(sdtm::Timing Reference) and entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::REFR)
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
    * <!-- end-model-doc -->
@@ -178,7 +160,30 @@ public interface SpecimenInformation extends Procedure
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.specimen->excluding(null).specimenRole->excluding(null).->reject(isDefined('classCode'))
+   * @param diagnostics The chain of diagnostics to which problems are to be appended.
+   * @param context The cache of context-specific information.
+   * <!-- end-model-doc -->
+   * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship->one(entryRelationship : cda::EntryRelationship | not entryRelationship.oclIsUndefined() and entryRelationship.oclIsKindOf(cda::EntryRelationship))'"
+   * @generated
+   */
+  boolean validateSpecimenInformationPortionAssociation(DiagnosticChain diagnostics, Map<Object, Object> context);
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * <!-- begin-model-doc -->
+   * @param diagnostics The chain of diagnostics to which problems are to be appended.
+   * @param context The cache of context-specific information.
+   * <!-- end-model-doc -->
+   * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship->one(entryRelationship : cda::EntryRelationship | not entryRelationship.oclIsUndefined() and entryRelationship.oclIsKindOf(cda::EntryRelationship))'"
+   * @generated
+   */
+  boolean validateSpecimenInformationUsabilityAssociation(DiagnosticChain diagnostics, Map<Object, Object> context);
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * <!-- begin-model-doc -->
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
    * <!-- end-model-doc -->
@@ -191,7 +196,6 @@ public interface SpecimenInformation extends Procedure
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.specimen->excluding(null).specimenRole->excluding(null).->reject((code.oclIsUndefined() or code.isNullFlavorUndefined()) implies (not code.oclIsUndefined()))
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
    * <!-- end-model-doc -->
@@ -204,11 +208,10 @@ public interface SpecimenInformation extends Procedure
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.specimen->excluding(null).specimenRole->excluding(null).->reject(determinerCode=vocab::EntityDeterminer::INSTANCE)
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
    * <!-- end-model-doc -->
-   * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.specimen->excluding(null).specimenRole->excluding(null).->reject(determinerCode=vocab::EntityDeterminer::INSTANCE)'"
+   * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.specimen->excluding(null).specimenRole->excluding(null).->reject(isDefined(\'determinerCode\') and determinerCode=vocab::EntityDeterminer::INSTANCE)'"
    * @generated
    */
   boolean validateSpecimenInformationparticipatingSpecimenroleOfSpecimenspecimenEntityDeterminerCode(DiagnosticChain diagnostics, Map<Object, Object> context);
@@ -217,7 +220,6 @@ public interface SpecimenInformation extends Procedure
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.specimen->excluding(null).specimenRole->excluding(null)->reject(classCode=vocab::RoleClassSpecimen::SPEC)
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
    * <!-- end-model-doc -->
@@ -230,7 +232,6 @@ public interface SpecimenInformation extends Procedure
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.specimen->excluding(null).specimenRole->excluding(null)->reject((id->isEmpty() or id->exists(element | element.isNullFlavorUndefined())) implies (not id->isEmpty()))
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
    * <!-- end-model-doc -->
@@ -243,7 +244,18 @@ public interface SpecimenInformation extends Procedure
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.specimen->excluding(null)->reject(typeCode=vocab::ParticipationType::SPC)
+   * @param diagnostics The chain of diagnostics to which problems are to be appended.
+   * @param context The cache of context-specific information.
+   * <!-- end-model-doc -->
+   * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.specimen->excluding(null)->reject(templateId->exists(id : datatypes::II | id.root = \'null\'))'"
+   * @generated
+   */
+  boolean validateSpecimenInformationparticipatingSpecimenTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context);
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * <!-- begin-model-doc -->
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
    * <!-- end-model-doc -->
@@ -256,7 +268,6 @@ public interface SpecimenInformation extends Procedure
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.specimen->excluding(null)->reject(specimenRole->one(specimenRole : cda::SpecimenRole | not specimenRole.oclIsUndefined() and specimenRole.oclIsKindOf(cda::SpecimenRole)))
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
    * <!-- end-model-doc -->
@@ -269,7 +280,150 @@ public interface SpecimenInformation extends Procedure
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.entryRelationship->excluding(null).observation->excluding(null)->reject((code.oclIsUndefined() or code.isNullFlavorUndefined()) implies (not code.oclIsUndefined()))
+   * @param diagnostics The chain of diagnostics to which problems are to be appended.
+   * @param context The cache of context-specific information.
+   * <!-- end-model-doc -->
+   * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship->excluding(null).observation->excluding(null)->reject((code.oclIsUndefined() or code.isNullFlavorUndefined()) implies (not code.oclIsUndefined()))'"
+   * @generated
+   */
+  boolean validateSpecimenInformationportionAssociationportionOrTotalityCodeP(DiagnosticChain diagnostics, Map<Object, Object> context);
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * <!-- begin-model-doc -->
+   * @param diagnostics The chain of diagnostics to which problems are to be appended.
+   * @param context The cache of context-specific information.
+   * <!-- end-model-doc -->
+   * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship->excluding(null).observation->excluding(null)->reject((code.oclIsUndefined() or code.isNullFlavorUndefined()) implies (not code.oclIsUndefined() and code.oclIsKindOf(datatypes::CD) and \nlet value : datatypes::CD = code.oclAsType(datatypes::CD) in \nvalue.codeSystem = \'2.16.840.1.113883.3.26.1.1\'))'"
+   * @generated
+   */
+  boolean validateSpecimenInformationportionAssociationportionOrTotalityCode(DiagnosticChain diagnostics, Map<Object, Object> context);
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * <!-- begin-model-doc -->
+   * @param diagnostics The chain of diagnostics to which problems are to be appended.
+   * @param context The cache of context-specific information.
+   * <!-- end-model-doc -->
+   * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship->excluding(null).observation->excluding(null)->reject(moodCode=vocab::x_ActMoodDocumentObservation::EVN)'"
+   * @generated
+   */
+  boolean validateSpecimenInformationportionAssociationportionOrTotalityMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context);
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * <!-- begin-model-doc -->
+   * @param diagnostics The chain of diagnostics to which problems are to be appended.
+   * @param context The cache of context-specific information.
+   * <!-- end-model-doc -->
+   * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship->excluding(null).observation->excluding(null)->reject((value->isEmpty() or value->exists(element | element.isNullFlavorUndefined())) implies (value->size() = 1 and value->forAll(element | element.oclIsTypeOf(datatypes::CE))))'"
+   * @generated
+   */
+  boolean validateSpecimenInformationportionAssociationportionOrTotalityValue(DiagnosticChain diagnostics, Map<Object, Object> context);
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * <!-- begin-model-doc -->
+   * @param diagnostics The chain of diagnostics to which problems are to be appended.
+   * @param context The cache of context-specific information.
+   * <!-- end-model-doc -->
+   * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship->excluding(null)->reject(typeCode=vocab::x_ActRelationshipEntryRelationship::COMP)'"
+   * @generated
+   */
+  boolean validateSpecimenInformationportionAssociationTypeCode(DiagnosticChain diagnostics, Map<Object, Object> context);
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * <!-- begin-model-doc -->
+   * @param diagnostics The chain of diagnostics to which problems are to be appended.
+   * @param context The cache of context-specific information.
+   * <!-- end-model-doc -->
+   * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship->excluding(null)->reject(observation->one(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(cda::Observation)))'"
+   * @generated
+   */
+  boolean validateSpecimenInformationportionAssociationSpecimenCondition(DiagnosticChain diagnostics, Map<Object, Object> context);
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * <!-- begin-model-doc -->
+   * @param diagnostics The chain of diagnostics to which problems are to be appended.
+   * @param context The cache of context-specific information.
+   * <!-- end-model-doc -->
+   * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship->excluding(null).observation->excluding(null)->reject((code.oclIsUndefined() or code.isNullFlavorUndefined()) implies (not code.oclIsUndefined()))'"
+   * @generated
+   */
+  boolean validateSpecimenInformationusabilityAssociationspecimenUsabilityCodeP(DiagnosticChain diagnostics, Map<Object, Object> context);
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * <!-- begin-model-doc -->
+   * @param diagnostics The chain of diagnostics to which problems are to be appended.
+   * @param context The cache of context-specific information.
+   * <!-- end-model-doc -->
+   * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship->excluding(null).observation->excluding(null)->reject((code.oclIsUndefined() or code.isNullFlavorUndefined()) implies (not code.oclIsUndefined() and code.oclIsKindOf(datatypes::CD) and \nlet value : datatypes::CD = code.oclAsType(datatypes::CD) in \nvalue.codeSystem = \'2.16.840.1.113883.3.26.1.1\'))'"
+   * @generated
+   */
+  boolean validateSpecimenInformationusabilityAssociationspecimenUsabilityCode(DiagnosticChain diagnostics, Map<Object, Object> context);
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * <!-- begin-model-doc -->
+   * @param diagnostics The chain of diagnostics to which problems are to be appended.
+   * @param context The cache of context-specific information.
+   * <!-- end-model-doc -->
+   * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship->excluding(null).observation->excluding(null)->reject(moodCode=vocab::x_ActMoodDocumentObservation::EVN)'"
+   * @generated
+   */
+  boolean validateSpecimenInformationusabilityAssociationspecimenUsabilityMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context);
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * <!-- begin-model-doc -->
+   * @param diagnostics The chain of diagnostics to which problems are to be appended.
+   * @param context The cache of context-specific information.
+   * <!-- end-model-doc -->
+   * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship->excluding(null).observation->excluding(null)->reject((value->isEmpty() or value->exists(element | element.isNullFlavorUndefined())) implies (value->size() = 1 and value->forAll(element | element.oclIsTypeOf(datatypes::CE))))'"
+   * @generated
+   */
+  boolean validateSpecimenInformationusabilityAssociationspecimenUsabilityValue(DiagnosticChain diagnostics, Map<Object, Object> context);
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * <!-- begin-model-doc -->
+   * @param diagnostics The chain of diagnostics to which problems are to be appended.
+   * @param context The cache of context-specific information.
+   * <!-- end-model-doc -->
+   * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship->excluding(null)->reject(typeCode=vocab::x_ActRelationshipEntryRelationship::COMP)'"
+   * @generated
+   */
+  boolean validateSpecimenInformationusabilityAssociationTypeCode(DiagnosticChain diagnostics, Map<Object, Object> context);
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * <!-- begin-model-doc -->
+   * @param diagnostics The chain of diagnostics to which problems are to be appended.
+   * @param context The cache of context-specific information.
+   * <!-- end-model-doc -->
+   * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship->excluding(null)->reject(observation->one(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(cda::Observation)))'"
+   * @generated
+   */
+  boolean validateSpecimenInformationusabilityAssociationSpecimenUsability(DiagnosticChain diagnostics, Map<Object, Object> context);
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * <!-- begin-model-doc -->
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
    * <!-- end-model-doc -->
@@ -282,13 +436,10 @@ public interface SpecimenInformation extends Procedure
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.entryRelationship->excluding(null).observation->excluding(null)->reject((code.oclIsUndefined() or code.isNullFlavorUndefined()) implies (not code.oclIsUndefined() and code.oclIsKindOf(datatypes::CD) and 
-   * let value : datatypes::CD = code.oclAsType(datatypes::CD) in 
-   * value.codeSystem = '2.16.840.1.113883.3.26.1.1'))
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
    * <!-- end-model-doc -->
-   * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship->excluding(null).observation->excluding(null)->reject((code.oclIsUndefined() or code.isNullFlavorUndefined()) implies (not code.oclIsUndefined() and code.oclIsKindOf(datatypes::CD) and \r\nlet value : datatypes::CD = code.oclAsType(datatypes::CD) in \r\nvalue.codeSystem = \'2.16.840.1.113883.3.26.1.1\'))'"
+   * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship->excluding(null).observation->excluding(null)->reject((code.oclIsUndefined() or code.isNullFlavorUndefined()) implies (not code.oclIsUndefined() and code.oclIsKindOf(datatypes::CD) and \nlet value : datatypes::CD = code.oclAsType(datatypes::CD) in \nvalue.codeSystem = \'2.16.840.1.113883.3.26.1.1\'))'"
    * @generated
    */
   boolean validateSpecimenInformationconditionAssociationspecimenConditionCode(DiagnosticChain diagnostics, Map<Object, Object> context);
@@ -297,7 +448,6 @@ public interface SpecimenInformation extends Procedure
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.entryRelationship->excluding(null).observation->excluding(null)->reject(moodCode=vocab::x_ActMoodDocumentObservation::EVN)
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
    * <!-- end-model-doc -->
@@ -310,7 +460,6 @@ public interface SpecimenInformation extends Procedure
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.entryRelationship->excluding(null).observation->excluding(null)->reject((value->isEmpty() or value->exists(element | element.isNullFlavorUndefined())) implies (value->size() = 1 and value->forAll(element | element.oclIsTypeOf(datatypes::CE))))
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
    * <!-- end-model-doc -->
@@ -323,7 +472,6 @@ public interface SpecimenInformation extends Procedure
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.entryRelationship->excluding(null)->reject(typeCode=vocab::x_ActRelationshipEntryRelationship::COMP)
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
    * <!-- end-model-doc -->
@@ -336,7 +484,6 @@ public interface SpecimenInformation extends Procedure
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.entryRelationship->excluding(null)->reject(observation->one(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(cda::Observation)))
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
    * <!-- end-model-doc -->
@@ -348,65 +495,8 @@ public interface SpecimenInformation extends Procedure
   /**
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * <!-- begin-model-doc -->
-   * self.entryRelationship->excluding(null)->reject(observation->excluding(null)->reject((code.oclIsUndefined() or code.isNullFlavorUndefined()) implies (not code.oclIsUndefined())))
-   * @param diagnostics The chain of diagnostics to which problems are to be appended.
-   * @param context The cache of context-specific information.
-   * <!-- end-model-doc -->
-   * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship->excluding(null)->reject(observation->excluding(null)->reject((code.oclIsUndefined() or code.isNullFlavorUndefined()) implies (not code.oclIsUndefined())))'"
-   * @generated
-   */
-  boolean validateSpecimenInformationconditionAssociationspecimenConditionCodePSpecimenInformationconditionAssociationspecimenConditionCodeP1(DiagnosticChain diagnostics, Map<Object, Object> context);
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * <!-- begin-model-doc -->
-   * self.entryRelationship->excluding(null)->reject(observation->excluding(null)->reject((code.oclIsUndefined() or code.isNullFlavorUndefined()) implies (not code.oclIsUndefined() and code.oclIsKindOf(datatypes::CD) and 
-   * let value : datatypes::CD = code.oclAsType(datatypes::CD) in 
-   * value.codeSystem = '2.16.840.1.113883.3.26.1.1')))
-   * @param diagnostics The chain of diagnostics to which problems are to be appended.
-   * @param context The cache of context-specific information.
-   * <!-- end-model-doc -->
-   * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship->excluding(null)->reject(observation->excluding(null)->reject((code.oclIsUndefined() or code.isNullFlavorUndefined()) implies (not code.oclIsUndefined() and code.oclIsKindOf(datatypes::CD) and \r\nlet value : datatypes::CD = code.oclAsType(datatypes::CD) in \r\nvalue.codeSystem = \'2.16.840.1.113883.3.26.1.1\')))'"
-   * @generated
-   */
-  boolean validateSpecimenInformationconditionAssociationspecimenConditionCodeSpecimenInformationconditionAssociationspecimenConditionCode1(DiagnosticChain diagnostics, Map<Object, Object> context);
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * <!-- begin-model-doc -->
-   * self.entryRelationship->excluding(null)->reject(observation->excluding(null)->reject(moodCode=vocab::x_ActMoodDocumentObservation::EVN))
-   * @param diagnostics The chain of diagnostics to which problems are to be appended.
-   * @param context The cache of context-specific information.
-   * <!-- end-model-doc -->
-   * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship->excluding(null)->reject(observation->excluding(null)->reject(moodCode=vocab::x_ActMoodDocumentObservation::EVN))'"
-   * @generated
-   */
-  boolean validateSpecimenInformationconditionAssociationspecimenConditionMoodCodeSpecimenInformationconditionAssociationspecimenConditionMoodCode1(DiagnosticChain diagnostics, Map<Object, Object> context);
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * <!-- begin-model-doc -->
-   * self.entryRelationship->excluding(null)->reject(observation->excluding(null)->reject((value->isEmpty() or value->exists(element | element.isNullFlavorUndefined())) implies (value->size() = 1 and value->forAll(element | element.oclIsTypeOf(datatypes::CE)))))
-   * @param diagnostics The chain of diagnostics to which problems are to be appended.
-   * @param context The cache of context-specific information.
-   * <!-- end-model-doc -->
-   * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship->excluding(null)->reject(observation->excluding(null)->reject((value->isEmpty() or value->exists(element | element.isNullFlavorUndefined())) implies (value->size() = 1 and value->forAll(element | element.oclIsTypeOf(datatypes::CE)))))'"
-   * @generated
-   */
-  boolean validateSpecimenInformationconditionAssociationspecimenConditionValueSpecimenInformationconditionAssociationspecimenConditionValue1(DiagnosticChain diagnostics, Map<Object, Object> context);
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * <!-- begin-model-doc -->
-   * self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(sdtm::Event Study Day))->asSequence()->first().oclAsType(sdtm::Event Study Day)
-   * <!-- end-model-doc -->
    * @model kind="operation" required="true" ordered="false"
-   *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(sdtm::Event Study Day))->asSequence()->first().oclAsType(sdtm::Event Study Day)'"
+   *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(sdtm::Event Study Day))->asSequence()->any(true).oclAsType(sdtm::Event Study Day)'"
    * @generated
    */
   EventStudyDay getEventStudyDay();
@@ -414,11 +504,8 @@ public interface SpecimenInformation extends Procedure
   /**
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * <!-- begin-model-doc -->
-   * self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(sdtm::Timing Reference))->asSequence()->first().oclAsType(sdtm::Timing Reference)
-   * <!-- end-model-doc -->
    * @model kind="operation" required="true" ordered="false"
-   *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(sdtm::Timing Reference))->asSequence()->first().oclAsType(sdtm::Timing Reference)'"
+   *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(sdtm::Timing Reference))->asSequence()->any(true).oclAsType(sdtm::Timing Reference)'"
    * @generated
    */
   TimingReference getTimingReference();
@@ -429,4 +516,11 @@ public interface SpecimenInformation extends Procedure
    * @generated
    */
   public SpecimenInformation init();
+
+  /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    public SpecimenInformation init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // SpecimenInformation

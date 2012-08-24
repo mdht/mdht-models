@@ -6,12 +6,15 @@
  */
 package org.openhealthtools.mdht.uml.cda.sdtm.impl;
 
+import java.lang.Iterable;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
 
 import org.eclipse.emf.ecore.EClass;
 
+import org.eclipse.emf.ecore.EObject;
+import org.openhealthtools.mdht.emf.runtime.util.Initializer;
 import org.openhealthtools.mdht.uml.cda.impl.ObservationImpl;
 
 import org.openhealthtools.mdht.uml.cda.sdtm.BodySystemorOrganClass;
@@ -78,6 +81,16 @@ public class BodySystemorOrganClassImpl extends ObservationImpl implements BodyS
    * <!-- end-user-doc -->
    * @generated
    */
+  public boolean validateBodySystemorOrganClassCodeP(DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+    return BodySystemorOrganClassOperations.validateBodySystemorOrganClassCodeP(this, diagnostics, context);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
   public boolean validateBodySystemorOrganClassCode(DiagnosticChain diagnostics, Map<Object, Object> context)
   {
     return BodySystemorOrganClassOperations.validateBodySystemorOrganClassCode(this, diagnostics, context);
@@ -109,7 +122,16 @@ public class BodySystemorOrganClassImpl extends ObservationImpl implements BodyS
    * @generated
    */
   public BodySystemorOrganClass init() {
-    	CDAUtil.init(this);
-    	return this;
+      return Initializer.Util.init(this);
   }
+
+  /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    public BodySystemorOrganClass init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
 } //BodySystemorOrganClassImpl

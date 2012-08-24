@@ -22,6 +22,9 @@
  */
 package org.openhealthtools.mdht.uml.cda.phmr;
 
+import java.lang.Iterable;
+import org.eclipse.emf.ecore.EObject;
+import org.openhealthtools.mdht.emf.runtime.util.Initializer;
 import org.openhealthtools.mdht.uml.cda.ccd.FunctionalStatusSection;
 
 /**
@@ -31,14 +34,21 @@ import org.openhealthtools.mdht.uml.cda.ccd.FunctionalStatusSection;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.phmr.PhmrPackage#getFunctionalStatus()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation templateId.root='null' constraints.validation.error='FunctionalStatusTemplateId'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='FunctionalStatusTemplateId' templateId.root='null'"
  * @generated
  */
 public interface FunctionalStatus extends FunctionalStatusSection {
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public FunctionalStatus init();
+
+  /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    public FunctionalStatus init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // FunctionalStatus

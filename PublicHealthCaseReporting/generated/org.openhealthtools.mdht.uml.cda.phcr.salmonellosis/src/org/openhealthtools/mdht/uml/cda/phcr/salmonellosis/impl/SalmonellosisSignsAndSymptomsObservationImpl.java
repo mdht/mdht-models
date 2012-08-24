@@ -1,25 +1,28 @@
-/*******************************************************************************
- * Copyright (c) 2012, Public Health Data Standards Consortium (PHDSC)
- * All rights reserved. This program and the accompanying materials
- * are made available under the terms of the Eclipse Public License v1.0
- * which accompanies this distribution, and is available at
- * http://www.eclipse.org/legal/epl-v10.html
+/**
+ * <copyright>
+ * </copyright>
  *
- * Contributors:
- *     PHDSC - initial API and implementation
- *******************************************************************************/
+ * $Id$
+ */
 package org.openhealthtools.mdht.uml.cda.phcr.salmonellosis.impl;
 
+import java.lang.Iterable;
+
 import java.util.Map;
+
 import org.eclipse.emf.common.util.DiagnosticChain;
+
 import org.eclipse.emf.ecore.EClass;
+import org.eclipse.emf.ecore.EObject;
+
+import org.openhealthtools.mdht.emf.runtime.util.Initializer;
 
 import org.openhealthtools.mdht.uml.cda.phcr.impl.SignsAndSymptomsObservationImpl;
 
 import org.openhealthtools.mdht.uml.cda.phcr.salmonellosis.SalmonellosisPackage;
 import org.openhealthtools.mdht.uml.cda.phcr.salmonellosis.SalmonellosisSignsAndSymptomsObservation;
+
 import org.openhealthtools.mdht.uml.cda.phcr.salmonellosis.operations.SalmonellosisSignsAndSymptomsObservationOperations;
-import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
 
 /**
  * <!-- begin-user-doc -->
@@ -30,24 +33,37 @@ import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
  *
  * @generated
  */
-public class SalmonellosisSignsAndSymptomsObservationImpl extends SignsAndSymptomsObservationImpl implements SalmonellosisSignsAndSymptomsObservation {
-	/**
+public class SalmonellosisSignsAndSymptomsObservationImpl extends SignsAndSymptomsObservationImpl implements SalmonellosisSignsAndSymptomsObservation
+{
+  /**
    * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+   * <!-- end-user-doc -->
    * @generated
    */
-	protected SalmonellosisSignsAndSymptomsObservationImpl() {
+  protected SalmonellosisSignsAndSymptomsObservationImpl()
+  {
     super();
   }
 
-	/**
+  /**
    * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+   * <!-- end-user-doc -->
    * @generated
    */
-	@Override
-	protected EClass eStaticClass() {
+  @Override
+  protected EClass eStaticClass()
+  {
     return SalmonellosisPackage.Literals.SALMONELLOSIS_SIGNS_AND_SYMPTOMS_OBSERVATION;
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public boolean validateSalmonellosisSignsAndSymptomsObservationValue(DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+    return SalmonellosisSignsAndSymptomsObservationOperations.validateSalmonellosisSignsAndSymptomsObservationValue(this, diagnostics, context);
   }
 
   /**
@@ -67,8 +83,15 @@ public class SalmonellosisSignsAndSymptomsObservationImpl extends SignsAndSympto
    * @generated
    */
   public SalmonellosisSignsAndSymptomsObservation init() {
-    	CDAUtil.init(this);
-    	return this;
+      return Initializer.Util.init(this);
   }
-
+    /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    public SalmonellosisSignsAndSymptomsObservation init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
 } //SalmonellosisSignsAndSymptomsObservationImpl

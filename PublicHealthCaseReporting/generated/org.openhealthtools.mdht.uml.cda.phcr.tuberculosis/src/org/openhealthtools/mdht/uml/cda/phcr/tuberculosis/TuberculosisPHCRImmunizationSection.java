@@ -10,11 +10,14 @@
  *******************************************************************************/
 package org.openhealthtools.mdht.uml.cda.phcr.tuberculosis;
 
+import java.lang.Iterable;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.common.util.EList;
 
+import org.eclipse.emf.ecore.EObject;
+import org.openhealthtools.mdht.emf.runtime.util.Initializer;
 import org.openhealthtools.mdht.uml.cda.ccd.ImmunizationsSection;
 
 /**
@@ -24,39 +27,42 @@ import org.openhealthtools.mdht.uml.cda.ccd.ImmunizationsSection;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.phcr.tuberculosis.TuberculosisPackage#getTuberculosisPHCRImmunizationSection()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation templateId.root='2.16.840.1.113883.10.20.15.2.23' constraints.validation.error='TuberculosisPHCRImmunizationSectionTemplateId TuberculosisPHCRImmunizationSectionTuberculosisImmunizationActivitySubstanceAdministration'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='TuberculosisPHCRImmunizationSectionTemplateId TuberculosisPHCRImmunizationSectionTuberculosisImmunizationActivitySubstanceAdministration' templateId.root='2.16.840.1.113883.10.20.15.2.23'"
  * @generated
  */
 public interface TuberculosisPHCRImmunizationSection extends ImmunizationsSection {
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.entry->exists(entry : cda::Entry | not entry.substanceAdministration.oclIsUndefined() and entry.substanceAdministration.oclIsKindOf(tuberculosis::TuberculosisImmunizationActivitySubstanceAdministration) and entry.typeCode = vocab::x_ActRelationshipEntry::DRIV)
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entry->exists(entry : cda::Entry | not entry.substanceAdministration.oclIsUndefined() and entry.substanceAdministration.oclIsKindOf(tuberculosis::TuberculosisImmunizationActivitySubstanceAdministration) and entry.typeCode = vocab::x_ActRelationshipEntry::DRIV)'"
-	 * @generated
-	 */
+   * <!-- begin-model-doc -->
+   * @param diagnostics The chain of diagnostics to which problems are to be appended.
+   * @param context The cache of context-specific information.
+   * <!-- end-model-doc -->
+   * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entry->exists(entry : cda::Entry | not entry.substanceAdministration.oclIsUndefined() and entry.substanceAdministration.oclIsKindOf(tuberculosis::TuberculosisImmunizationActivitySubstanceAdministration) and entry.typeCode = vocab::x_ActRelationshipEntry::DRIV)'"
+   * @generated
+   */
   boolean validateTuberculosisPHCRImmunizationSectionTuberculosisImmunizationActivitySubstanceAdministration(DiagnosticChain diagnostics, Map<Object, Object> context);
 
   /**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.getSubstanceAdministrations()->select(substanceAdministration : cda::SubstanceAdministration | not substanceAdministration.oclIsUndefined() and substanceAdministration.oclIsKindOf(tuberculosis::TuberculosisImmunizationActivitySubstanceAdministration)).oclAsType(tuberculosis::TuberculosisImmunizationActivitySubstanceAdministration)
-	 * <!-- end-model-doc -->
-	 * @model kind="operation" required="true" ordered="false"
-	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getSubstanceAdministrations()->select(substanceAdministration : cda::SubstanceAdministration | not substanceAdministration.oclIsUndefined() and substanceAdministration.oclIsKindOf(tuberculosis::TuberculosisImmunizationActivitySubstanceAdministration)).oclAsType(tuberculosis::TuberculosisImmunizationActivitySubstanceAdministration)'"
-	 * @generated
-	 */
+   * @model kind="operation" required="true" ordered="false"
+   *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getSubstanceAdministrations()->select(substanceAdministration : cda::SubstanceAdministration | not substanceAdministration.oclIsUndefined() and substanceAdministration.oclIsKindOf(tuberculosis::TuberculosisImmunizationActivitySubstanceAdministration)).oclAsType(tuberculosis::TuberculosisImmunizationActivitySubstanceAdministration)'"
+   * @generated
+   */
   EList<TuberculosisImmunizationActivitySubstanceAdministration> getTuberculosisImmunizationActivitySubstanceAdministrations();
 
   /**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   public TuberculosisPHCRImmunizationSection init();
+
+  /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    public TuberculosisPHCRImmunizationSection init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // TuberculosisPHCRImmunizationSection

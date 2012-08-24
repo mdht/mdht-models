@@ -97,9 +97,17 @@
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="hepb.ecore#//JobRelatedBodyFluidExposureRiskFrequencyObservation/JobRelatedBodyFluidExposureRiskFrequencyObservationStatusCode/diagnostics"/>
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="hepb.ecore#//JobRelatedBodyFluidExposureRiskFrequencyObservation/JobRelatedBodyFluidExposureRiskFrequencyObservationStatusCode/context"/>
       </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="hepb.ecore#//JobRelatedBodyFluidExposureRiskFrequencyObservation/JobRelatedBodyFluidExposureRiskFrequencyObservationStatusCodeP">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="hepb.ecore#//JobRelatedBodyFluidExposureRiskFrequencyObservation/JobRelatedBodyFluidExposureRiskFrequencyObservationStatusCodeP/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="hepb.ecore#//JobRelatedBodyFluidExposureRiskFrequencyObservation/JobRelatedBodyFluidExposureRiskFrequencyObservationStatusCodeP/context"/>
+      </genOperations>
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="hepb.ecore#//JobRelatedBodyFluidExposureRiskFrequencyObservation/JobRelatedBodyFluidExposureRiskFrequencyObservationValue">
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="hepb.ecore#//JobRelatedBodyFluidExposureRiskFrequencyObservation/JobRelatedBodyFluidExposureRiskFrequencyObservationValue/diagnostics"/>
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="hepb.ecore#//JobRelatedBodyFluidExposureRiskFrequencyObservation/JobRelatedBodyFluidExposureRiskFrequencyObservationValue/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="hepb.ecore#//JobRelatedBodyFluidExposureRiskFrequencyObservation/JobRelatedBodyFluidExposureRiskFrequencyObservationValueP">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="hepb.ecore#//JobRelatedBodyFluidExposureRiskFrequencyObservation/JobRelatedBodyFluidExposureRiskFrequencyObservationValueP/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="hepb.ecore#//JobRelatedBodyFluidExposureRiskFrequencyObservation/JobRelatedBodyFluidExposureRiskFrequencyObservationValueP/context"/>
       </genOperations>
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="hepb.ecore#//JobRelatedBodyFluidExposureRiskFrequencyObservation/JobRelatedBodyFluidExposureRiskFrequencyObservationClassCode">
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="hepb.ecore#//JobRelatedBodyFluidExposureRiskFrequencyObservation/JobRelatedBodyFluidExposureRiskFrequencyObservationClassCode/diagnostics"/>
@@ -141,6 +149,14 @@
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="hepb.ecore#//AcuteHepatitisBSocioBehavioralBooleanRiskFactorObservation/AcuteHepatitisBSocioBehavioralBooleanRiskFactorObservationValue/diagnostics"/>
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="hepb.ecore#//AcuteHepatitisBSocioBehavioralBooleanRiskFactorObservation/AcuteHepatitisBSocioBehavioralBooleanRiskFactorObservationValue/context"/>
       </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="hepb.ecore#//AcuteHepatitisBSocioBehavioralBooleanRiskFactorObservation/AcuteHepatitisBSocioBehavioralBooleanRiskFactorObservationValueP">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="hepb.ecore#//AcuteHepatitisBSocioBehavioralBooleanRiskFactorObservation/AcuteHepatitisBSocioBehavioralBooleanRiskFactorObservationValueP/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="hepb.ecore#//AcuteHepatitisBSocioBehavioralBooleanRiskFactorObservation/AcuteHepatitisBSocioBehavioralBooleanRiskFactorObservationValueP/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="hepb.ecore#//AcuteHepatitisBSocioBehavioralBooleanRiskFactorObservation/AcuteHepatitisBSocioBehavioralBooleanRiskFactorObservationCodeP">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="hepb.ecore#//AcuteHepatitisBSocioBehavioralBooleanRiskFactorObservation/AcuteHepatitisBSocioBehavioralBooleanRiskFactorObservationCodeP/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="hepb.ecore#//AcuteHepatitisBSocioBehavioralBooleanRiskFactorObservation/AcuteHepatitisBSocioBehavioralBooleanRiskFactorObservationCodeP/context"/>
+      </genOperations>
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="hepb.ecore#//AcuteHepatitisBSocioBehavioralBooleanRiskFactorObservation/AcuteHepatitisBSocioBehavioralBooleanRiskFactorObservationCode">
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="hepb.ecore#//AcuteHepatitisBSocioBehavioralBooleanRiskFactorObservation/AcuteHepatitisBSocioBehavioralBooleanRiskFactorObservationCode/diagnostics"/>
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="hepb.ecore#//AcuteHepatitisBSocioBehavioralBooleanRiskFactorObservation/AcuteHepatitisBSocioBehavioralBooleanRiskFactorObservationCode/context"/>
@@ -155,6 +171,10 @@
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="hepb.ecore#//AcuteHepatitisBActualBloodAndOrBodyFluidExposureObservation/AcuteHepatitisBActualBloodAndOrBodyFluidExposureObservationTemplateId/diagnostics"/>
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="hepb.ecore#//AcuteHepatitisBActualBloodAndOrBodyFluidExposureObservation/AcuteHepatitisBActualBloodAndOrBodyFluidExposureObservationTemplateId/context"/>
       </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="hepb.ecore#//AcuteHepatitisBActualBloodAndOrBodyFluidExposureObservation/AcuteHepatitisBActualBloodAndOrBodyFluidExposureObservationCodeP">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="hepb.ecore#//AcuteHepatitisBActualBloodAndOrBodyFluidExposureObservation/AcuteHepatitisBActualBloodAndOrBodyFluidExposureObservationCodeP/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="hepb.ecore#//AcuteHepatitisBActualBloodAndOrBodyFluidExposureObservation/AcuteHepatitisBActualBloodAndOrBodyFluidExposureObservationCodeP/context"/>
+      </genOperations>
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="hepb.ecore#//AcuteHepatitisBActualBloodAndOrBodyFluidExposureObservation/AcuteHepatitisBActualBloodAndOrBodyFluidExposureObservationCode">
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="hepb.ecore#//AcuteHepatitisBActualBloodAndOrBodyFluidExposureObservation/AcuteHepatitisBActualBloodAndOrBodyFluidExposureObservationCode/diagnostics"/>
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="hepb.ecore#//AcuteHepatitisBActualBloodAndOrBodyFluidExposureObservation/AcuteHepatitisBActualBloodAndOrBodyFluidExposureObservationCode/context"/>
@@ -162,6 +182,10 @@
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="hepb.ecore#//AcuteHepatitisBActualBloodAndOrBodyFluidExposureObservation/AcuteHepatitisBActualBloodAndOrBodyFluidExposureObservationStatusCode">
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="hepb.ecore#//AcuteHepatitisBActualBloodAndOrBodyFluidExposureObservation/AcuteHepatitisBActualBloodAndOrBodyFluidExposureObservationStatusCode/diagnostics"/>
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="hepb.ecore#//AcuteHepatitisBActualBloodAndOrBodyFluidExposureObservation/AcuteHepatitisBActualBloodAndOrBodyFluidExposureObservationStatusCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="hepb.ecore#//AcuteHepatitisBActualBloodAndOrBodyFluidExposureObservation/AcuteHepatitisBActualBloodAndOrBodyFluidExposureObservationStatusCodeP">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="hepb.ecore#//AcuteHepatitisBActualBloodAndOrBodyFluidExposureObservation/AcuteHepatitisBActualBloodAndOrBodyFluidExposureObservationStatusCodeP/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="hepb.ecore#//AcuteHepatitisBActualBloodAndOrBodyFluidExposureObservation/AcuteHepatitisBActualBloodAndOrBodyFluidExposureObservationStatusCodeP/context"/>
       </genOperations>
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="hepb.ecore#//AcuteHepatitisBActualBloodAndOrBodyFluidExposureObservation/AcuteHepatitisBActualBloodAndOrBodyFluidExposureObservationClassCode">
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="hepb.ecore#//AcuteHepatitisBActualBloodAndOrBodyFluidExposureObservation/AcuteHepatitisBActualBloodAndOrBodyFluidExposureObservationClassCode/diagnostics"/>
@@ -199,13 +223,30 @@
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="hepb.ecore#//AcuteHepatitisBPHCRClinicalInformationSection/getSTDHistoryObservations"/>
     </genClasses>
     <genClasses xsi:type="genmodel:GenClass" ecoreClass="hepb.ecore#//AcuteHepatitisBCaseObservation">
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="hepb.ecore#//AcuteHepatitisBCaseObservation/AcuteHepatitisBCaseObservationValueP">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="hepb.ecore#//AcuteHepatitisBCaseObservation/AcuteHepatitisBCaseObservationValueP/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="hepb.ecore#//AcuteHepatitisBCaseObservation/AcuteHepatitisBCaseObservationValueP/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="hepb.ecore#//AcuteHepatitisBCaseObservation/AcuteHepatitisBCaseObservationValue">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="hepb.ecore#//AcuteHepatitisBCaseObservation/AcuteHepatitisBCaseObservationValue/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="hepb.ecore#//AcuteHepatitisBCaseObservation/AcuteHepatitisBCaseObservationValue/context"/>
+      </genOperations>
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="hepb.ecore#//AcuteHepatitisBCaseObservation/AcuteHepatitisBCaseObservationAcuteHepatitisBSignsAndSymptomsObservation">
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="hepb.ecore#//AcuteHepatitisBCaseObservation/AcuteHepatitisBCaseObservationAcuteHepatitisBSignsAndSymptomsObservation/diagnostics"/>
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="hepb.ecore#//AcuteHepatitisBCaseObservation/AcuteHepatitisBCaseObservationAcuteHepatitisBSignsAndSymptomsObservation/context"/>
       </genOperations>
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="hepb.ecore#//AcuteHepatitisBCaseObservation/getAcuteHepatitisBSignsAndSymptomsObservations"/>
     </genClasses>
-    <genClasses xsi:type="genmodel:GenClass" ecoreClass="hepb.ecore#//AcuteHepatitisBSignsAndSymptomsObservation"/>
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="hepb.ecore#//AcuteHepatitisBSignsAndSymptomsObservation">
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="hepb.ecore#//AcuteHepatitisBSignsAndSymptomsObservation/AcuteHepatitisBSignsAndSymptomsObservationValueP">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="hepb.ecore#//AcuteHepatitisBSignsAndSymptomsObservation/AcuteHepatitisBSignsAndSymptomsObservationValueP/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="hepb.ecore#//AcuteHepatitisBSignsAndSymptomsObservation/AcuteHepatitisBSignsAndSymptomsObservationValueP/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="hepb.ecore#//AcuteHepatitisBSignsAndSymptomsObservation/AcuteHepatitisBSignsAndSymptomsObservationValue">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="hepb.ecore#//AcuteHepatitisBSignsAndSymptomsObservation/AcuteHepatitisBSignsAndSymptomsObservationValue/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="hepb.ecore#//AcuteHepatitisBSignsAndSymptomsObservation/AcuteHepatitisBSignsAndSymptomsObservationValue/context"/>
+      </genOperations>
+    </genClasses>
     <genClasses xsi:type="genmodel:GenClass" ecoreClass="hepb.ecore#//AcuteHepatitisBRiskAssociatedProcedure">
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="hepb.ecore#//AcuteHepatitisBRiskAssociatedProcedure/AcuteHepatitisBRiskAssociatedProcedureTemplateId">
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="hepb.ecore#//AcuteHepatitisBRiskAssociatedProcedure/AcuteHepatitisBRiskAssociatedProcedureTemplateId/diagnostics"/>
@@ -227,19 +268,27 @@
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="hepb.ecore#//AcuteHepatitisBRiskAssociatedProcedure/AcuteHepatitisBRiskAssociatedProcedureStatusCode/diagnostics"/>
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="hepb.ecore#//AcuteHepatitisBRiskAssociatedProcedure/AcuteHepatitisBRiskAssociatedProcedureStatusCode/context"/>
       </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="hepb.ecore#//AcuteHepatitisBRiskAssociatedProcedure/AcuteHepatitisBRiskAssociatedProcedureStatusCodeP">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="hepb.ecore#//AcuteHepatitisBRiskAssociatedProcedure/AcuteHepatitisBRiskAssociatedProcedureStatusCodeP/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="hepb.ecore#//AcuteHepatitisBRiskAssociatedProcedure/AcuteHepatitisBRiskAssociatedProcedureStatusCodeP/context"/>
+      </genOperations>
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="hepb.ecore#//AcuteHepatitisBRiskAssociatedProcedure/AcuteHepatitisBRiskAssociatedProcedureEffectiveTime">
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="hepb.ecore#//AcuteHepatitisBRiskAssociatedProcedure/AcuteHepatitisBRiskAssociatedProcedureEffectiveTime/diagnostics"/>
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="hepb.ecore#//AcuteHepatitisBRiskAssociatedProcedure/AcuteHepatitisBRiskAssociatedProcedureEffectiveTime/context"/>
       </genOperations>
     </genClasses>
     <genClasses xsi:type="genmodel:GenClass" ecoreClass="hepb.ecore#//ViralHepatitisHistoryObservation">
-      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="hepb.ecore#//ViralHepatitisHistoryObservation/ProblemObservationCode">
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="hepb.ecore#//ViralHepatitisHistoryObservation/ProblemObservationCode/diagnostics"/>
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="hepb.ecore#//ViralHepatitisHistoryObservation/ProblemObservationCode/context"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="hepb.ecore#//ViralHepatitisHistoryObservation/ViralHepatitisHistoryObservationCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="hepb.ecore#//ViralHepatitisHistoryObservation/ViralHepatitisHistoryObservationCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="hepb.ecore#//ViralHepatitisHistoryObservation/ViralHepatitisHistoryObservationCode/context"/>
       </genOperations>
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="hepb.ecore#//ViralHepatitisHistoryObservation/ViralHepatitisHistoryObservationValue">
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="hepb.ecore#//ViralHepatitisHistoryObservation/ViralHepatitisHistoryObservationValue/diagnostics"/>
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="hepb.ecore#//ViralHepatitisHistoryObservation/ViralHepatitisHistoryObservationValue/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="hepb.ecore#//ViralHepatitisHistoryObservation/ViralHepatitisHistoryObservationValueP">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="hepb.ecore#//ViralHepatitisHistoryObservation/ViralHepatitisHistoryObservationValueP/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="hepb.ecore#//ViralHepatitisHistoryObservation/ViralHepatitisHistoryObservationValueP/context"/>
       </genOperations>
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="hepb.ecore#//ViralHepatitisHistoryObservation/ViralHepatitisHistoryObservationId">
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="hepb.ecore#//ViralHepatitisHistoryObservation/ViralHepatitisHistoryObservationId/diagnostics"/>
@@ -251,9 +300,9 @@
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="hepb.ecore#//STDHistoryObservation/STDHistoryObservationClassCode/diagnostics"/>
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="hepb.ecore#//STDHistoryObservation/STDHistoryObservationClassCode/context"/>
       </genOperations>
-      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="hepb.ecore#//STDHistoryObservation/ProblemObservationCode">
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="hepb.ecore#//STDHistoryObservation/ProblemObservationCode/diagnostics"/>
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="hepb.ecore#//STDHistoryObservation/ProblemObservationCode/context"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="hepb.ecore#//STDHistoryObservation/STDHistoryObservationCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="hepb.ecore#//STDHistoryObservation/STDHistoryObservationCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="hepb.ecore#//STDHistoryObservation/STDHistoryObservationCode/context"/>
       </genOperations>
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="hepb.ecore#//STDHistoryObservation/STDHistoryObservationEffectiveTime">
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="hepb.ecore#//STDHistoryObservation/STDHistoryObservationEffectiveTime/diagnostics"/>
@@ -266,6 +315,14 @@
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="hepb.ecore#//STDHistoryObservation/STDHistoryObservationMoodCode">
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="hepb.ecore#//STDHistoryObservation/STDHistoryObservationMoodCode/diagnostics"/>
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="hepb.ecore#//STDHistoryObservation/STDHistoryObservationMoodCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="hepb.ecore#//STDHistoryObservation/STDHistoryObservationStatusCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="hepb.ecore#//STDHistoryObservation/STDHistoryObservationStatusCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="hepb.ecore#//STDHistoryObservation/STDHistoryObservationStatusCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="hepb.ecore#//STDHistoryObservation/STDHistoryObservationValue">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="hepb.ecore#//STDHistoryObservation/STDHistoryObservationValue/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="hepb.ecore#//STDHistoryObservation/STDHistoryObservationValue/context"/>
       </genOperations>
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="hepb.ecore#//STDHistoryObservation/STDHistoryObservationProblemStatus">
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="hepb.ecore#//STDHistoryObservation/STDHistoryObservationProblemStatus/diagnostics"/>
@@ -296,7 +353,16 @@
       </genOperations>
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="hepb.ecore#//AcuteHepatitisBPHCRRelevantDiagnosticTestsAndOrLaboratoryDataSection/getAcuteHepatitisBResultObservations"/>
     </genClasses>
-    <genClasses xsi:type="genmodel:GenClass" ecoreClass="hepb.ecore#//AcuteHepatitisBResultObservation"/>
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="hepb.ecore#//AcuteHepatitisBResultObservation">
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="hepb.ecore#//AcuteHepatitisBResultObservation/AcuteHepatitisBResultObservationCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="hepb.ecore#//AcuteHepatitisBResultObservation/AcuteHepatitisBResultObservationCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="hepb.ecore#//AcuteHepatitisBResultObservation/AcuteHepatitisBResultObservationCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="hepb.ecore#//AcuteHepatitisBResultObservation/AcuteHepatitisBResultObservationInterpretationCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="hepb.ecore#//AcuteHepatitisBResultObservation/AcuteHepatitisBResultObservationInterpretationCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="hepb.ecore#//AcuteHepatitisBResultObservation/AcuteHepatitisBResultObservationInterpretationCode/context"/>
+      </genOperations>
+    </genClasses>
     <genClasses xsi:type="genmodel:GenClass" ecoreClass="hepb.ecore#//AcuteHepatitisBImmunizationProduct"/>
   </genPackages>
 </genmodel:GenModel>

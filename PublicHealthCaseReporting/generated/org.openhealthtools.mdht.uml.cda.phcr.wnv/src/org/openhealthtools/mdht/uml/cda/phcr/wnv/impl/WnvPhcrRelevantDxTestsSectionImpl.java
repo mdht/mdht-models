@@ -10,11 +10,14 @@
  *******************************************************************************/
 package org.openhealthtools.mdht.uml.cda.phcr.wnv.impl;
 
+import java.lang.Iterable;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.common.util.EList;
 import org.eclipse.emf.ecore.EClass;
+import org.eclipse.emf.ecore.EObject;
+import org.openhealthtools.mdht.emf.runtime.util.Initializer;
 import org.openhealthtools.mdht.uml.cda.phcr.impl.PhcrRelevantDxTestsSectionImpl;
 import org.openhealthtools.mdht.uml.cda.phcr.wnv.WnvPackage;
 import org.openhealthtools.mdht.uml.cda.phcr.wnv.WnvPhcrRelevantDxTestsSection;
@@ -35,79 +38,88 @@ import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
 public class WnvPhcrRelevantDxTestsSectionImpl extends PhcrRelevantDxTestsSectionImpl implements WnvPhcrRelevantDxTestsSection
 {
   /**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   protected WnvPhcrRelevantDxTestsSectionImpl()
   {
-		super();
-	}
+    super();
+  }
 
   /**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   @Override
   protected EClass eStaticClass()
   {
-		return WnvPackage.Literals.WNV_PHCR_RELEVANT_DX_TESTS_SECTION;
-	}
+    return WnvPackage.Literals.WNV_PHCR_RELEVANT_DX_TESTS_SECTION;
+  }
 
   /**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateWnvPhcrRelevantDxTestsSectionWnvResultObservation(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return WnvPhcrRelevantDxTestsSectionOperations.validateWnvPhcrRelevantDxTestsSectionWnvResultObservation(this, diagnostics, context);
-	}
+    return WnvPhcrRelevantDxTestsSectionOperations.validateWnvPhcrRelevantDxTestsSectionWnvResultObservation(this, diagnostics, context);
+  }
 
 		/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateWnvPhcrRelevantDxTestsSectionWnvResultOrganizer(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return WnvPhcrRelevantDxTestsSectionOperations.validateWnvPhcrRelevantDxTestsSectionWnvResultOrganizer(this, diagnostics, context);
-	}
+    return WnvPhcrRelevantDxTestsSectionOperations.validateWnvPhcrRelevantDxTestsSectionWnvResultOrganizer(this, diagnostics, context);
+  }
 
 		/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public EList<WnvResultObservation> getWnvResultObservations() {
-		return WnvPhcrRelevantDxTestsSectionOperations.getWnvResultObservations(this);
-	}
+    return WnvPhcrRelevantDxTestsSectionOperations.getWnvResultObservations(this);
+  }
 
 		/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public EList<WnvResultOrganizer> getWnvResultOrganizers() {
-		return WnvPhcrRelevantDxTestsSectionOperations.getWnvResultOrganizers(this);
-	}
+    return WnvPhcrRelevantDxTestsSectionOperations.getWnvResultOrganizers(this);
+  }
 
 		/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	@Override
 	public boolean validateResultsSectionTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return WnvPhcrRelevantDxTestsSectionOperations.validateResultsSectionTemplateId(this, diagnostics, context);
-	}
+    return WnvPhcrRelevantDxTestsSectionOperations.validateResultsSectionTemplateId(this, diagnostics, context);
+  }
 
 		/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   public WnvPhcrRelevantDxTestsSection init() {
-    	CDAUtil.init(this);
-    	return this;
-	}
+      return Initializer.Util.init(this);
+  }
+
+    /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    public WnvPhcrRelevantDxTestsSection init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
 } //WnvPhcrRelevantDxTestsSectionImpl

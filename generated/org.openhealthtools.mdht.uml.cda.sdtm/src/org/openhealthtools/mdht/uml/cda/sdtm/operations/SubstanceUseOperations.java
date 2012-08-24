@@ -61,8 +61,19 @@ import org.openhealthtools.mdht.uml.cda.sdtm.util.SdtmValidator;
  *   <li>{@link org.openhealthtools.mdht.uml.cda.sdtm.SubstanceUse#validateSubstanceUseActivityEndTimingReference(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Substance Use Activity End Timing Reference</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.sdtm.SubstanceUse#validateSubstanceUseDataCollection(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Substance Use Data Collection</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.sdtm.SubstanceUse#validateSubstanceUseStudyDayPeriod(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Substance Use Study Day Period</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.sdtm.SubstanceUse#validateSubstanceUsesubstanceUseCategoryAssociationsubstanceUseCategoryClassCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Substance Usesubstance Use Category Associationsubstance Use Category Class Code</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.sdtm.SubstanceUse#validateSubstanceUsesubstanceUseCategoryAssociationsubstanceUseCategoryCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Substance Usesubstance Use Category Associationsubstance Use Category Code</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.sdtm.SubstanceUse#validateSubstanceUsesubstanceUseCategoryAssociationsubstanceUseCategoryMoodCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Substance Usesubstance Use Category Associationsubstance Use Category Mood Code</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.sdtm.SubstanceUse#validateSubstanceUsesubstanceUseCategoryAssociationsubstanceUseCategoryValue(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Substance Usesubstance Use Category Associationsubstance Use Category Value</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.sdtm.SubstanceUse#validateSubstanceUsesubstanceUseCategoryAssociationsubstanceUseCategoryValueP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Substance Usesubstance Use Category Associationsubstance Use Category Value P</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.sdtm.SubstanceUse#validateSubstanceUsesubstanceUseCategoryAssociationTypeCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Substance Usesubstance Use Category Association Type Code</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.sdtm.SubstanceUse#validateSubstanceUsesubstanceUseCategoryAssociationSubstanceUseCategory(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Substance Usesubstance Use Category Association Substance Use Category</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.sdtm.SubstanceUse#validateSubstanceUsesubstanceUseSubCategoryAssociationsubstanceUseSubCategoryClassCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Substance Usesubstance Use Sub Category Associationsubstance Use Sub Category Class Code</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.sdtm.SubstanceUse#validateSubstanceUsesubstanceUseSubCategoryAssociationsubstanceUseSubCategoryCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Substance Usesubstance Use Sub Category Associationsubstance Use Sub Category Code</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.sdtm.SubstanceUse#validateSubstanceUsesubstanceUseSubCategoryAssociationsubstanceUseSubCategoryMoodCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Substance Usesubstance Use Sub Category Associationsubstance Use Sub Category Mood Code</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.sdtm.SubstanceUse#validateSubstanceUsesubstanceUseSubCategoryAssociationsubstanceUseSubCategoryValue(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Substance Usesubstance Use Sub Category Associationsubstance Use Sub Category Value</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.sdtm.SubstanceUse#validateSubstanceUsesubstanceUseSubCategoryAssociationTypeCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Substance Usesubstance Use Sub Category Association Type Code</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.sdtm.SubstanceUse#validateSubstanceUsesubstanceUseSubCategoryAssociationSubstanceUseSubCategory(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Substance Usesubstance Use Sub Category Association Substance Use Sub Category</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.sdtm.SubstanceUse#getPreSpecifiedEvent() <em>Get Pre Specified Event</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.sdtm.SubstanceUse#getNonPerformanceReason() <em>Get Non Performance Reason</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.sdtm.SubstanceUse#getActivityStartTimingReference() <em>Get Activity Start Timing Reference</em>}</li>
@@ -111,7 +122,6 @@ public class SubstanceUseOperations extends SubstanceAdministrationOperations
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.23.22')
    * @param substanceUse The receiving '<em><b>Substance Use</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -121,6 +131,7 @@ public class SubstanceUseOperations extends SubstanceAdministrationOperations
   
   public static  boolean validateSubstanceUseTemplateId(SubstanceUse substanceUse, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
+  	  
     if (VALIDATE_SUBSTANCE_USE_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(SdtmPackage.Literals.SUBSTANCE_USE);
@@ -145,6 +156,7 @@ public class SubstanceUseOperations extends SubstanceAdministrationOperations
              org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "SubstanceUseTemplateId", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(substanceUse, context) }),
              new Object [] { substanceUse }));
       }
+       
       return false;
     }
     return true;
@@ -176,7 +188,6 @@ public class SubstanceUseOperations extends SubstanceAdministrationOperations
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.classCode=vocab::ActClass::SBADM
    * @param substanceUse The receiving '<em><b>Substance Use</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -186,6 +197,7 @@ public class SubstanceUseOperations extends SubstanceAdministrationOperations
   
   public static  boolean validateSubstanceUseClassCode(SubstanceUse substanceUse, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
+  	  
     if (VALIDATE_SUBSTANCE_USE_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(SdtmPackage.Literals.SUBSTANCE_USE);
@@ -210,6 +222,7 @@ public class SubstanceUseOperations extends SubstanceAdministrationOperations
              org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "SubstanceUseClassCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(substanceUse, context) }),
              new Object [] { substanceUse }));
       }
+       
       return false;
     }
     return true;
@@ -241,7 +254,6 @@ public class SubstanceUseOperations extends SubstanceAdministrationOperations
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * (self.doseQuantity.oclIsUndefined() or self.doseQuantity.isNullFlavorUndefined()) implies (not self.doseQuantity.oclIsUndefined())
    * @param substanceUse The receiving '<em><b>Substance Use</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -251,6 +263,7 @@ public class SubstanceUseOperations extends SubstanceAdministrationOperations
   
   public static  boolean validateSubstanceUseDoseQuantity(SubstanceUse substanceUse, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
+  	  
     if (VALIDATE_SUBSTANCE_USE_DOSE_QUANTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(SdtmPackage.Literals.SUBSTANCE_USE);
@@ -275,6 +288,7 @@ public class SubstanceUseOperations extends SubstanceAdministrationOperations
              org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "SubstanceUseDoseQuantity", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(substanceUse, context) }),
              new Object [] { substanceUse }));
       }
+       
       return false;
     }
     return true;
@@ -306,7 +320,6 @@ public class SubstanceUseOperations extends SubstanceAdministrationOperations
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * (self.effectiveTime->isEmpty() or self.effectiveTime->exists(element | element.isNullFlavorUndefined())) implies (not self.effectiveTime->isEmpty())
    * @param substanceUse The receiving '<em><b>Substance Use</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -316,6 +329,7 @@ public class SubstanceUseOperations extends SubstanceAdministrationOperations
   
   public static  boolean validateSubstanceUseEffectiveTime(SubstanceUse substanceUse, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
+  	  
     if (VALIDATE_SUBSTANCE_USE_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(SdtmPackage.Literals.SUBSTANCE_USE);
@@ -340,6 +354,7 @@ public class SubstanceUseOperations extends SubstanceAdministrationOperations
              org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "SubstanceUseEffectiveTime", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(substanceUse, context) }),
              new Object [] { substanceUse }));
       }
+       
       return false;
     }
     return true;
@@ -371,7 +386,6 @@ public class SubstanceUseOperations extends SubstanceAdministrationOperations
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * (self.id->isEmpty() or self.id->exists(element | element.isNullFlavorUndefined())) implies (not self.id->isEmpty())
    * @param substanceUse The receiving '<em><b>Substance Use</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -381,6 +395,7 @@ public class SubstanceUseOperations extends SubstanceAdministrationOperations
   
   public static  boolean validateSubstanceUseId(SubstanceUse substanceUse, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
+  	  
     if (VALIDATE_SUBSTANCE_USE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(SdtmPackage.Literals.SUBSTANCE_USE);
@@ -405,6 +420,7 @@ public class SubstanceUseOperations extends SubstanceAdministrationOperations
              org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "SubstanceUseId", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(substanceUse, context) }),
              new Object [] { substanceUse }));
       }
+       
       return false;
     }
     return true;
@@ -436,7 +452,6 @@ public class SubstanceUseOperations extends SubstanceAdministrationOperations
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * (self.maxDoseQuantity.oclIsUndefined() or self.maxDoseQuantity.isNullFlavorUndefined()) implies (not self.maxDoseQuantity.oclIsUndefined())
    * @param substanceUse The receiving '<em><b>Substance Use</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -446,6 +461,7 @@ public class SubstanceUseOperations extends SubstanceAdministrationOperations
   
   public static  boolean validateSubstanceUseMaxDoseQuantity(SubstanceUse substanceUse, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
+  	  
     if (VALIDATE_SUBSTANCE_USE_MAX_DOSE_QUANTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(SdtmPackage.Literals.SUBSTANCE_USE);
@@ -470,6 +486,7 @@ public class SubstanceUseOperations extends SubstanceAdministrationOperations
              org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "SubstanceUseMaxDoseQuantity", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(substanceUse, context) }),
              new Object [] { substanceUse }));
       }
+       
       return false;
     }
     return true;
@@ -501,7 +518,6 @@ public class SubstanceUseOperations extends SubstanceAdministrationOperations
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.moodCode=vocab::x_DocumentSubstanceMood::EVN
    * @param substanceUse The receiving '<em><b>Substance Use</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -511,6 +527,7 @@ public class SubstanceUseOperations extends SubstanceAdministrationOperations
   
   public static  boolean validateSubstanceUseMoodCode(SubstanceUse substanceUse, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
+  	  
     if (VALIDATE_SUBSTANCE_USE_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(SdtmPackage.Literals.SUBSTANCE_USE);
@@ -535,6 +552,7 @@ public class SubstanceUseOperations extends SubstanceAdministrationOperations
              org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "SubstanceUseMoodCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(substanceUse, context) }),
              new Object [] { substanceUse }));
       }
+       
       return false;
     }
     return true;
@@ -566,7 +584,6 @@ public class SubstanceUseOperations extends SubstanceAdministrationOperations
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * (self.routeCode.oclIsUndefined() or self.routeCode.isNullFlavorUndefined()) implies (not self.routeCode.oclIsUndefined())
    * @param substanceUse The receiving '<em><b>Substance Use</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -576,6 +593,7 @@ public class SubstanceUseOperations extends SubstanceAdministrationOperations
   
   public static  boolean validateSubstanceUseRouteCode(SubstanceUse substanceUse, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
+  	  
     if (VALIDATE_SUBSTANCE_USE_ROUTE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(SdtmPackage.Literals.SUBSTANCE_USE);
@@ -600,6 +618,7 @@ public class SubstanceUseOperations extends SubstanceAdministrationOperations
              org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "SubstanceUseRouteCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(substanceUse, context) }),
              new Object [] { substanceUse }));
       }
+       
       return false;
     }
     return true;
@@ -631,7 +650,6 @@ public class SubstanceUseOperations extends SubstanceAdministrationOperations
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * (self.statusCode.oclIsUndefined() or self.statusCode.isNullFlavorUndefined()) implies (not self.statusCode.oclIsUndefined())
    * @param substanceUse The receiving '<em><b>Substance Use</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -641,6 +659,7 @@ public class SubstanceUseOperations extends SubstanceAdministrationOperations
   
   public static  boolean validateSubstanceUseStatusCode(SubstanceUse substanceUse, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
+  	  
     if (VALIDATE_SUBSTANCE_USE_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(SdtmPackage.Literals.SUBSTANCE_USE);
@@ -665,6 +684,7 @@ public class SubstanceUseOperations extends SubstanceAdministrationOperations
              org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "SubstanceUseStatusCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(substanceUse, context) }),
              new Object [] { substanceUse }));
       }
+       
       return false;
     }
     return true;
@@ -696,7 +716,6 @@ public class SubstanceUseOperations extends SubstanceAdministrationOperations
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * (self.text.oclIsUndefined() or self.text.isNullFlavorUndefined()) implies (not self.text.oclIsUndefined())
    * @param substanceUse The receiving '<em><b>Substance Use</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -706,6 +725,7 @@ public class SubstanceUseOperations extends SubstanceAdministrationOperations
   
   public static  boolean validateSubstanceUseText(SubstanceUse substanceUse, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
+  	  
     if (VALIDATE_SUBSTANCE_USE_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(SdtmPackage.Literals.SUBSTANCE_USE);
@@ -730,6 +750,7 @@ public class SubstanceUseOperations extends SubstanceAdministrationOperations
              org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "SubstanceUseText", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(substanceUse, context) }),
              new Object [] { substanceUse }));
       }
+       
       return false;
     }
     return true;
@@ -761,7 +782,6 @@ public class SubstanceUseOperations extends SubstanceAdministrationOperations
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.consumable->one(consumable : cda::Consumable | not consumable.oclIsUndefined() and consumable.oclIsKindOf(sdtm::Consumable Material))
    * @param substanceUse The receiving '<em><b>Substance Use</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -771,6 +791,7 @@ public class SubstanceUseOperations extends SubstanceAdministrationOperations
   
   public static  boolean validateSubstanceUseConsumableMaterial(SubstanceUse substanceUse, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
+  	  
     if (VALIDATE_SUBSTANCE_USE_CONSUMABLE_MATERIAL__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(SdtmPackage.Literals.SUBSTANCE_USE);
@@ -795,6 +816,7 @@ public class SubstanceUseOperations extends SubstanceAdministrationOperations
              org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "SubstanceUseConsumableMaterial", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(substanceUse, context) }),
              new Object [] { substanceUse }));
       }
+       
       return false;
     }
     return true;
@@ -826,7 +848,6 @@ public class SubstanceUseOperations extends SubstanceAdministrationOperations
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.entryRelationship->one(entryRelationship : cda::EntryRelationship | not entryRelationship.oclIsUndefined() and entryRelationship.oclIsKindOf(cda::EntryRelationship))
    * @param substanceUse The receiving '<em><b>Substance Use</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -836,6 +857,7 @@ public class SubstanceUseOperations extends SubstanceAdministrationOperations
   
   public static  boolean validateSubstanceUseSubstanceUseCategoryAssociation(SubstanceUse substanceUse, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
+  	  
     if (VALIDATE_SUBSTANCE_USE_SUBSTANCE_USE_CATEGORY_ASSOCIATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(SdtmPackage.Literals.SUBSTANCE_USE);
@@ -860,6 +882,7 @@ public class SubstanceUseOperations extends SubstanceAdministrationOperations
              org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "SubstanceUseSubstanceUseCategoryAssociation", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(substanceUse, context) }),
              new Object [] { substanceUse }));
       }
+       
       return false;
     }
     return true;
@@ -891,7 +914,6 @@ public class SubstanceUseOperations extends SubstanceAdministrationOperations
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.entryRelationship->one(entryRelationship : cda::EntryRelationship | not entryRelationship.oclIsUndefined() and entryRelationship.oclIsKindOf(cda::EntryRelationship))
    * @param substanceUse The receiving '<em><b>Substance Use</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -901,6 +923,7 @@ public class SubstanceUseOperations extends SubstanceAdministrationOperations
   
   public static  boolean validateSubstanceUseSubstanceUseSubCategoryAssociation(SubstanceUse substanceUse, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
+  	  
     if (VALIDATE_SUBSTANCE_USE_SUBSTANCE_USE_SUB_CATEGORY_ASSOCIATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(SdtmPackage.Literals.SUBSTANCE_USE);
@@ -925,6 +948,7 @@ public class SubstanceUseOperations extends SubstanceAdministrationOperations
              org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "SubstanceUseSubstanceUseSubCategoryAssociation", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(substanceUse, context) }),
              new Object [] { substanceUse }));
       }
+       
       return false;
     }
     return true;
@@ -956,7 +980,6 @@ public class SubstanceUseOperations extends SubstanceAdministrationOperations
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.entryRelationship->one(entryRelationship : cda::EntryRelationship | not entryRelationship.observation.oclIsUndefined() and entryRelationship.observation.oclIsKindOf(sdtm::Pre-Specified Event) and entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::COMP)
    * @param substanceUse The receiving '<em><b>Substance Use</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -966,6 +989,7 @@ public class SubstanceUseOperations extends SubstanceAdministrationOperations
   
   public static  boolean validateSubstanceUsePreSpecifiedEvent(SubstanceUse substanceUse, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
+  	  
     if (VALIDATE_SUBSTANCE_USE_PRE_SPECIFIED_EVENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(SdtmPackage.Literals.SUBSTANCE_USE);
@@ -990,6 +1014,7 @@ public class SubstanceUseOperations extends SubstanceAdministrationOperations
              org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "SubstanceUsePreSpecifiedEvent", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(substanceUse, context) }),
              new Object [] { substanceUse }));
       }
+       
       return false;
     }
     return true;
@@ -1021,7 +1046,6 @@ public class SubstanceUseOperations extends SubstanceAdministrationOperations
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.entryRelationship->one(entryRelationship : cda::EntryRelationship | not entryRelationship.observation.oclIsUndefined() and entryRelationship.observation.oclIsKindOf(sdtm::Non Performance Reason) and entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::COMP)
    * @param substanceUse The receiving '<em><b>Substance Use</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -1031,6 +1055,7 @@ public class SubstanceUseOperations extends SubstanceAdministrationOperations
   
   public static  boolean validateSubstanceUseNonPerformanceReason(SubstanceUse substanceUse, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
+  	  
     if (VALIDATE_SUBSTANCE_USE_NON_PERFORMANCE_REASON__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(SdtmPackage.Literals.SUBSTANCE_USE);
@@ -1055,6 +1080,7 @@ public class SubstanceUseOperations extends SubstanceAdministrationOperations
              org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "SubstanceUseNonPerformanceReason", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(substanceUse, context) }),
              new Object [] { substanceUse }));
       }
+       
       return false;
     }
     return true;
@@ -1086,7 +1112,6 @@ public class SubstanceUseOperations extends SubstanceAdministrationOperations
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.entryRelationship->one(entryRelationship : cda::EntryRelationship | not entryRelationship.act.oclIsUndefined() and entryRelationship.act.oclIsKindOf(sdtm::Activity Start Timing Reference) and entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::REFR)
    * @param substanceUse The receiving '<em><b>Substance Use</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -1096,6 +1121,7 @@ public class SubstanceUseOperations extends SubstanceAdministrationOperations
   
   public static  boolean validateSubstanceUseActivityStartTimingReference(SubstanceUse substanceUse, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
+  	  
     if (VALIDATE_SUBSTANCE_USE_ACTIVITY_START_TIMING_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(SdtmPackage.Literals.SUBSTANCE_USE);
@@ -1120,6 +1146,7 @@ public class SubstanceUseOperations extends SubstanceAdministrationOperations
              org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "SubstanceUseActivityStartTimingReference", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(substanceUse, context) }),
              new Object [] { substanceUse }));
       }
+       
       return false;
     }
     return true;
@@ -1151,7 +1178,6 @@ public class SubstanceUseOperations extends SubstanceAdministrationOperations
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.entryRelationship->one(entryRelationship : cda::EntryRelationship | not entryRelationship.act.oclIsUndefined() and entryRelationship.act.oclIsKindOf(sdtm::Activity End Timing Reference) and entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::REFR)
    * @param substanceUse The receiving '<em><b>Substance Use</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -1161,6 +1187,7 @@ public class SubstanceUseOperations extends SubstanceAdministrationOperations
   
   public static  boolean validateSubstanceUseActivityEndTimingReference(SubstanceUse substanceUse, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
+  	  
     if (VALIDATE_SUBSTANCE_USE_ACTIVITY_END_TIMING_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(SdtmPackage.Literals.SUBSTANCE_USE);
@@ -1185,6 +1212,7 @@ public class SubstanceUseOperations extends SubstanceAdministrationOperations
              org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "SubstanceUseActivityEndTimingReference", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(substanceUse, context) }),
              new Object [] { substanceUse }));
       }
+       
       return false;
     }
     return true;
@@ -1216,7 +1244,6 @@ public class SubstanceUseOperations extends SubstanceAdministrationOperations
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.entryRelationship->one(entryRelationship : cda::EntryRelationship | not entryRelationship.act.oclIsUndefined() and entryRelationship.act.oclIsKindOf(sdtm::Data Collection) and entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::COMP)
    * @param substanceUse The receiving '<em><b>Substance Use</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -1226,6 +1253,7 @@ public class SubstanceUseOperations extends SubstanceAdministrationOperations
   
   public static  boolean validateSubstanceUseDataCollection(SubstanceUse substanceUse, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
+  	  
     if (VALIDATE_SUBSTANCE_USE_DATA_COLLECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(SdtmPackage.Literals.SUBSTANCE_USE);
@@ -1250,6 +1278,7 @@ public class SubstanceUseOperations extends SubstanceAdministrationOperations
              org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "SubstanceUseDataCollection", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(substanceUse, context) }),
              new Object [] { substanceUse }));
       }
+       
       return false;
     }
     return true;
@@ -1281,7 +1310,6 @@ public class SubstanceUseOperations extends SubstanceAdministrationOperations
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.entryRelationship->one(entryRelationship : cda::EntryRelationship | not entryRelationship.observation.oclIsUndefined() and entryRelationship.observation.oclIsKindOf(sdtm::Study Day Period) and entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::REFR)
    * @param substanceUse The receiving '<em><b>Substance Use</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -1291,6 +1319,7 @@ public class SubstanceUseOperations extends SubstanceAdministrationOperations
   
   public static  boolean validateSubstanceUseStudyDayPeriod(SubstanceUse substanceUse, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
+  	  
     if (VALIDATE_SUBSTANCE_USE_STUDY_DAY_PERIOD__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(SdtmPackage.Literals.SUBSTANCE_USE);
@@ -1315,6 +1344,339 @@ public class SubstanceUseOperations extends SubstanceAdministrationOperations
              org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "SubstanceUseStudyDayPeriod", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(substanceUse, context) }),
              new Object [] { substanceUse }));
       }
+       
+      return false;
+    }
+    return true;
+  }
+
+  /**
+   * The cached OCL expression body for the '{@link #validateSubstanceUsesubstanceUseCategoryAssociationsubstanceUseCategoryClassCode(SubstanceUse, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Substance Usesubstance Use Category Associationsubstance Use Category Class Code</em>}' operation.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #validateSubstanceUsesubstanceUseCategoryAssociationsubstanceUseCategoryClassCode(SubstanceUse, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+   * @generated
+   * @ordered
+   */
+  protected static final String VALIDATE_SUBSTANCE_USESUBSTANCE_USE_CATEGORY_ASSOCIATIONSUBSTANCE_USE_CATEGORY_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entryRelationship->excluding(null).observation->excluding(null)->reject(isDefined('classCode'))";
+
+  /**
+   * The cached OCL invariant for the '{@link #validateSubstanceUsesubstanceUseCategoryAssociationsubstanceUseCategoryClassCode(SubstanceUse, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Substance Usesubstance Use Category Associationsubstance Use Category Class Code</em>}' invariant operation.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #validateSubstanceUsesubstanceUseCategoryAssociationsubstanceUseCategoryClassCode(SubstanceUse, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+   * @generated
+   * @ordered
+   */
+  
+  protected static Constraint VALIDATE_SUBSTANCE_USESUBSTANCE_USE_CATEGORY_ASSOCIATIONSUBSTANCE_USE_CATEGORY_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * <!-- begin-model-doc -->
+   * @param substanceUse The receiving '<em><b>Substance Use</b></em>' model object.
+   * @param diagnostics The chain of diagnostics to which problems are to be appended.
+   * @param context The cache of context-specific information.
+   * <!-- end-model-doc -->
+   * @generated
+   */
+  
+  public static  boolean validateSubstanceUsesubstanceUseCategoryAssociationsubstanceUseCategoryClassCode(SubstanceUse substanceUse, DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+  	  
+    if (VALIDATE_SUBSTANCE_USESUBSTANCE_USE_CATEGORY_ASSOCIATIONSUBSTANCE_USE_CATEGORY_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+      OCL.Helper helper = EOCL_ENV.createOCLHelper();
+      helper.setContext(SdtmPackage.Literals.SUBSTANCE_USE);
+      try
+      {
+        VALIDATE_SUBSTANCE_USESUBSTANCE_USE_CATEGORY_ASSOCIATIONSUBSTANCE_USE_CATEGORY_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_SUBSTANCE_USESUBSTANCE_USE_CATEGORY_ASSOCIATIONSUBSTANCE_USE_CATEGORY_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+      }
+      catch (ParserException pe)
+      {
+        throw new UnsupportedOperationException(pe.getLocalizedMessage());
+      }
+    }
+    if (!EOCL_ENV.createQuery(VALIDATE_SUBSTANCE_USESUBSTANCE_USE_CATEGORY_ASSOCIATIONSUBSTANCE_USE_CATEGORY_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(substanceUse))
+    {
+      if (diagnostics != null)
+      {
+        diagnostics.add
+          (new BasicDiagnostic
+            (Diagnostic.ERROR,
+             SdtmValidator.DIAGNOSTIC_SOURCE,
+             SdtmValidator.SUBSTANCE_USE__SUBSTANCE_USESUBSTANCE_USE_CATEGORY_ASSOCIATIONSUBSTANCE_USE_CATEGORY_CLASS_CODE,
+             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "SubstanceUsesubstanceUseCategoryAssociationsubstanceUseCategoryClassCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(substanceUse, context) }),
+             new Object [] { substanceUse }));
+      }
+       
+      return false;
+    }
+    return true;
+  }
+
+  /**
+   * The cached OCL expression body for the '{@link #validateSubstanceUsesubstanceUseCategoryAssociationsubstanceUseCategoryCode(SubstanceUse, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Substance Usesubstance Use Category Associationsubstance Use Category Code</em>}' operation.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #validateSubstanceUsesubstanceUseCategoryAssociationsubstanceUseCategoryCode(SubstanceUse, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+   * @generated
+   * @ordered
+   */
+  protected static final String VALIDATE_SUBSTANCE_USESUBSTANCE_USE_CATEGORY_ASSOCIATIONSUBSTANCE_USE_CATEGORY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entryRelationship->excluding(null).observation->excluding(null)->reject((code.oclIsUndefined() or code.isNullFlavorUndefined()) implies (not code.oclIsUndefined()))";
+
+  /**
+   * The cached OCL invariant for the '{@link #validateSubstanceUsesubstanceUseCategoryAssociationsubstanceUseCategoryCode(SubstanceUse, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Substance Usesubstance Use Category Associationsubstance Use Category Code</em>}' invariant operation.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #validateSubstanceUsesubstanceUseCategoryAssociationsubstanceUseCategoryCode(SubstanceUse, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+   * @generated
+   * @ordered
+   */
+  
+  protected static Constraint VALIDATE_SUBSTANCE_USESUBSTANCE_USE_CATEGORY_ASSOCIATIONSUBSTANCE_USE_CATEGORY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * <!-- begin-model-doc -->
+   * @param substanceUse The receiving '<em><b>Substance Use</b></em>' model object.
+   * @param diagnostics The chain of diagnostics to which problems are to be appended.
+   * @param context The cache of context-specific information.
+   * <!-- end-model-doc -->
+   * @generated
+   */
+  
+  public static  boolean validateSubstanceUsesubstanceUseCategoryAssociationsubstanceUseCategoryCode(SubstanceUse substanceUse, DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+  	  
+    if (VALIDATE_SUBSTANCE_USESUBSTANCE_USE_CATEGORY_ASSOCIATIONSUBSTANCE_USE_CATEGORY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+      OCL.Helper helper = EOCL_ENV.createOCLHelper();
+      helper.setContext(SdtmPackage.Literals.SUBSTANCE_USE);
+      try
+      {
+        VALIDATE_SUBSTANCE_USESUBSTANCE_USE_CATEGORY_ASSOCIATIONSUBSTANCE_USE_CATEGORY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_SUBSTANCE_USESUBSTANCE_USE_CATEGORY_ASSOCIATIONSUBSTANCE_USE_CATEGORY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+      }
+      catch (ParserException pe)
+      {
+        throw new UnsupportedOperationException(pe.getLocalizedMessage());
+      }
+    }
+    if (!EOCL_ENV.createQuery(VALIDATE_SUBSTANCE_USESUBSTANCE_USE_CATEGORY_ASSOCIATIONSUBSTANCE_USE_CATEGORY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(substanceUse))
+    {
+      if (diagnostics != null)
+      {
+        diagnostics.add
+          (new BasicDiagnostic
+            (Diagnostic.ERROR,
+             SdtmValidator.DIAGNOSTIC_SOURCE,
+             SdtmValidator.SUBSTANCE_USE__SUBSTANCE_USESUBSTANCE_USE_CATEGORY_ASSOCIATIONSUBSTANCE_USE_CATEGORY_CODE,
+             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "SubstanceUsesubstanceUseCategoryAssociationsubstanceUseCategoryCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(substanceUse, context) }),
+             new Object [] { substanceUse }));
+      }
+       
+      return false;
+    }
+    return true;
+  }
+
+  /**
+   * The cached OCL expression body for the '{@link #validateSubstanceUsesubstanceUseCategoryAssociationsubstanceUseCategoryMoodCode(SubstanceUse, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Substance Usesubstance Use Category Associationsubstance Use Category Mood Code</em>}' operation.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #validateSubstanceUsesubstanceUseCategoryAssociationsubstanceUseCategoryMoodCode(SubstanceUse, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+   * @generated
+   * @ordered
+   */
+  protected static final String VALIDATE_SUBSTANCE_USESUBSTANCE_USE_CATEGORY_ASSOCIATIONSUBSTANCE_USE_CATEGORY_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entryRelationship->excluding(null).observation->excluding(null)->reject(isDefined('moodCode'))";
+
+  /**
+   * The cached OCL invariant for the '{@link #validateSubstanceUsesubstanceUseCategoryAssociationsubstanceUseCategoryMoodCode(SubstanceUse, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Substance Usesubstance Use Category Associationsubstance Use Category Mood Code</em>}' invariant operation.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #validateSubstanceUsesubstanceUseCategoryAssociationsubstanceUseCategoryMoodCode(SubstanceUse, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+   * @generated
+   * @ordered
+   */
+  
+  protected static Constraint VALIDATE_SUBSTANCE_USESUBSTANCE_USE_CATEGORY_ASSOCIATIONSUBSTANCE_USE_CATEGORY_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * <!-- begin-model-doc -->
+   * @param substanceUse The receiving '<em><b>Substance Use</b></em>' model object.
+   * @param diagnostics The chain of diagnostics to which problems are to be appended.
+   * @param context The cache of context-specific information.
+   * <!-- end-model-doc -->
+   * @generated
+   */
+  
+  public static  boolean validateSubstanceUsesubstanceUseCategoryAssociationsubstanceUseCategoryMoodCode(SubstanceUse substanceUse, DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+  	  
+    if (VALIDATE_SUBSTANCE_USESUBSTANCE_USE_CATEGORY_ASSOCIATIONSUBSTANCE_USE_CATEGORY_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+      OCL.Helper helper = EOCL_ENV.createOCLHelper();
+      helper.setContext(SdtmPackage.Literals.SUBSTANCE_USE);
+      try
+      {
+        VALIDATE_SUBSTANCE_USESUBSTANCE_USE_CATEGORY_ASSOCIATIONSUBSTANCE_USE_CATEGORY_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_SUBSTANCE_USESUBSTANCE_USE_CATEGORY_ASSOCIATIONSUBSTANCE_USE_CATEGORY_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+      }
+      catch (ParserException pe)
+      {
+        throw new UnsupportedOperationException(pe.getLocalizedMessage());
+      }
+    }
+    if (!EOCL_ENV.createQuery(VALIDATE_SUBSTANCE_USESUBSTANCE_USE_CATEGORY_ASSOCIATIONSUBSTANCE_USE_CATEGORY_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(substanceUse))
+    {
+      if (diagnostics != null)
+      {
+        diagnostics.add
+          (new BasicDiagnostic
+            (Diagnostic.ERROR,
+             SdtmValidator.DIAGNOSTIC_SOURCE,
+             SdtmValidator.SUBSTANCE_USE__SUBSTANCE_USESUBSTANCE_USE_CATEGORY_ASSOCIATIONSUBSTANCE_USE_CATEGORY_MOOD_CODE,
+             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "SubstanceUsesubstanceUseCategoryAssociationsubstanceUseCategoryMoodCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(substanceUse, context) }),
+             new Object [] { substanceUse }));
+      }
+       
+      return false;
+    }
+    return true;
+  }
+
+  /**
+   * The cached OCL expression body for the '{@link #validateSubstanceUsesubstanceUseCategoryAssociationsubstanceUseCategoryValue(SubstanceUse, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Substance Usesubstance Use Category Associationsubstance Use Category Value</em>}' operation.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #validateSubstanceUsesubstanceUseCategoryAssociationsubstanceUseCategoryValue(SubstanceUse, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+   * @generated
+   * @ordered
+   */
+  protected static final String VALIDATE_SUBSTANCE_USESUBSTANCE_USE_CATEGORY_ASSOCIATIONSUBSTANCE_USE_CATEGORY_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entryRelationship->excluding(null).observation->excluding(null)->reject((value->isEmpty() or value->exists(element | element.isNullFlavorUndefined())) implies (value->size() = 1 and value->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CE) and "+
+"let value : datatypes::CE = element.oclAsType(datatypes::CE) in "+
+"value.codeSystem = '2.16.840.1.113883.3.26.1.1')))";
+
+  /**
+   * The cached OCL invariant for the '{@link #validateSubstanceUsesubstanceUseCategoryAssociationsubstanceUseCategoryValue(SubstanceUse, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Substance Usesubstance Use Category Associationsubstance Use Category Value</em>}' invariant operation.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #validateSubstanceUsesubstanceUseCategoryAssociationsubstanceUseCategoryValue(SubstanceUse, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+   * @generated
+   * @ordered
+   */
+  
+  protected static Constraint VALIDATE_SUBSTANCE_USESUBSTANCE_USE_CATEGORY_ASSOCIATIONSUBSTANCE_USE_CATEGORY_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * <!-- begin-model-doc -->
+   * @param substanceUse The receiving '<em><b>Substance Use</b></em>' model object.
+   * @param diagnostics The chain of diagnostics to which problems are to be appended.
+   * @param context The cache of context-specific information.
+   * <!-- end-model-doc -->
+   * @generated
+   */
+  
+  public static  boolean validateSubstanceUsesubstanceUseCategoryAssociationsubstanceUseCategoryValue(SubstanceUse substanceUse, DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+  	  
+    if (VALIDATE_SUBSTANCE_USESUBSTANCE_USE_CATEGORY_ASSOCIATIONSUBSTANCE_USE_CATEGORY_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+      OCL.Helper helper = EOCL_ENV.createOCLHelper();
+      helper.setContext(SdtmPackage.Literals.SUBSTANCE_USE);
+      try
+      {
+        VALIDATE_SUBSTANCE_USESUBSTANCE_USE_CATEGORY_ASSOCIATIONSUBSTANCE_USE_CATEGORY_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_SUBSTANCE_USESUBSTANCE_USE_CATEGORY_ASSOCIATIONSUBSTANCE_USE_CATEGORY_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+      }
+      catch (ParserException pe)
+      {
+        throw new UnsupportedOperationException(pe.getLocalizedMessage());
+      }
+    }
+    if (!EOCL_ENV.createQuery(VALIDATE_SUBSTANCE_USESUBSTANCE_USE_CATEGORY_ASSOCIATIONSUBSTANCE_USE_CATEGORY_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(substanceUse))
+    {
+      if (diagnostics != null)
+      {
+        diagnostics.add
+          (new BasicDiagnostic
+            (Diagnostic.ERROR,
+             SdtmValidator.DIAGNOSTIC_SOURCE,
+             SdtmValidator.SUBSTANCE_USE__SUBSTANCE_USESUBSTANCE_USE_CATEGORY_ASSOCIATIONSUBSTANCE_USE_CATEGORY_VALUE,
+             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "SubstanceUsesubstanceUseCategoryAssociationsubstanceUseCategoryValue", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(substanceUse, context) }),
+             new Object [] { substanceUse }));
+      }
+       
+      return false;
+    }
+    return true;
+  }
+
+  /**
+   * The cached OCL expression body for the '{@link #validateSubstanceUsesubstanceUseCategoryAssociationsubstanceUseCategoryValueP(SubstanceUse, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Substance Usesubstance Use Category Associationsubstance Use Category Value P</em>}' operation.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #validateSubstanceUsesubstanceUseCategoryAssociationsubstanceUseCategoryValueP(SubstanceUse, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+   * @generated
+   * @ordered
+   */
+  protected static final String VALIDATE_SUBSTANCE_USESUBSTANCE_USE_CATEGORY_ASSOCIATIONSUBSTANCE_USE_CATEGORY_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entryRelationship->excluding(null).observation->excluding(null)->reject((value->isEmpty() or value->exists(element | element.isNullFlavorUndefined())) implies (value->size() = 1 and value->forAll(element | element.oclIsTypeOf(datatypes::CE))))";
+
+  /**
+   * The cached OCL invariant for the '{@link #validateSubstanceUsesubstanceUseCategoryAssociationsubstanceUseCategoryValueP(SubstanceUse, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Substance Usesubstance Use Category Associationsubstance Use Category Value P</em>}' invariant operation.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #validateSubstanceUsesubstanceUseCategoryAssociationsubstanceUseCategoryValueP(SubstanceUse, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+   * @generated
+   * @ordered
+   */
+  
+  protected static Constraint VALIDATE_SUBSTANCE_USESUBSTANCE_USE_CATEGORY_ASSOCIATIONSUBSTANCE_USE_CATEGORY_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * <!-- begin-model-doc -->
+   * @param substanceUse The receiving '<em><b>Substance Use</b></em>' model object.
+   * @param diagnostics The chain of diagnostics to which problems are to be appended.
+   * @param context The cache of context-specific information.
+   * <!-- end-model-doc -->
+   * @generated
+   */
+  
+  public static  boolean validateSubstanceUsesubstanceUseCategoryAssociationsubstanceUseCategoryValueP(SubstanceUse substanceUse, DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+  	  
+    if (VALIDATE_SUBSTANCE_USESUBSTANCE_USE_CATEGORY_ASSOCIATIONSUBSTANCE_USE_CATEGORY_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+      OCL.Helper helper = EOCL_ENV.createOCLHelper();
+      helper.setContext(SdtmPackage.Literals.SUBSTANCE_USE);
+      try
+      {
+        VALIDATE_SUBSTANCE_USESUBSTANCE_USE_CATEGORY_ASSOCIATIONSUBSTANCE_USE_CATEGORY_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_SUBSTANCE_USESUBSTANCE_USE_CATEGORY_ASSOCIATIONSUBSTANCE_USE_CATEGORY_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+      }
+      catch (ParserException pe)
+      {
+        throw new UnsupportedOperationException(pe.getLocalizedMessage());
+      }
+    }
+    if (!EOCL_ENV.createQuery(VALIDATE_SUBSTANCE_USESUBSTANCE_USE_CATEGORY_ASSOCIATIONSUBSTANCE_USE_CATEGORY_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(substanceUse))
+    {
+      if (diagnostics != null)
+      {
+        diagnostics.add
+          (new BasicDiagnostic
+            (Diagnostic.ERROR,
+             SdtmValidator.DIAGNOSTIC_SOURCE,
+             SdtmValidator.SUBSTANCE_USE__SUBSTANCE_USESUBSTANCE_USE_CATEGORY_ASSOCIATIONSUBSTANCE_USE_CATEGORY_VALUE_P,
+             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "SubstanceUsesubstanceUseCategoryAssociationsubstanceUseCategoryValueP", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(substanceUse, context) }),
+             new Object [] { substanceUse }));
+      }
+       
       return false;
     }
     return true;
@@ -1346,7 +1708,6 @@ public class SubstanceUseOperations extends SubstanceAdministrationOperations
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.entryRelationship->excluding(null)->reject(typeCode=vocab::x_ActRelationshipEntryRelationship::COMP)
    * @param substanceUse The receiving '<em><b>Substance Use</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -1356,6 +1717,7 @@ public class SubstanceUseOperations extends SubstanceAdministrationOperations
   
   public static  boolean validateSubstanceUsesubstanceUseCategoryAssociationTypeCode(SubstanceUse substanceUse, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
+  	  
     if (VALIDATE_SUBSTANCE_USESUBSTANCE_USE_CATEGORY_ASSOCIATION_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(SdtmPackage.Literals.SUBSTANCE_USE);
@@ -1380,6 +1742,337 @@ public class SubstanceUseOperations extends SubstanceAdministrationOperations
              org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "SubstanceUsesubstanceUseCategoryAssociationTypeCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(substanceUse, context) }),
              new Object [] { substanceUse }));
       }
+       
+      return false;
+    }
+    return true;
+  }
+
+  /**
+   * The cached OCL expression body for the '{@link #validateSubstanceUsesubstanceUseCategoryAssociationSubstanceUseCategory(SubstanceUse, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Substance Usesubstance Use Category Association Substance Use Category</em>}' operation.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #validateSubstanceUsesubstanceUseCategoryAssociationSubstanceUseCategory(SubstanceUse, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+   * @generated
+   * @ordered
+   */
+  protected static final String VALIDATE_SUBSTANCE_USESUBSTANCE_USE_CATEGORY_ASSOCIATION_SUBSTANCE_USE_CATEGORY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entryRelationship->excluding(null)->reject(observation->one(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(cda::Observation)))";
+
+  /**
+   * The cached OCL invariant for the '{@link #validateSubstanceUsesubstanceUseCategoryAssociationSubstanceUseCategory(SubstanceUse, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Substance Usesubstance Use Category Association Substance Use Category</em>}' invariant operation.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #validateSubstanceUsesubstanceUseCategoryAssociationSubstanceUseCategory(SubstanceUse, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+   * @generated
+   * @ordered
+   */
+  
+  protected static Constraint VALIDATE_SUBSTANCE_USESUBSTANCE_USE_CATEGORY_ASSOCIATION_SUBSTANCE_USE_CATEGORY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * <!-- begin-model-doc -->
+   * @param substanceUse The receiving '<em><b>Substance Use</b></em>' model object.
+   * @param diagnostics The chain of diagnostics to which problems are to be appended.
+   * @param context The cache of context-specific information.
+   * <!-- end-model-doc -->
+   * @generated
+   */
+  
+  public static  boolean validateSubstanceUsesubstanceUseCategoryAssociationSubstanceUseCategory(SubstanceUse substanceUse, DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+  	  
+    if (VALIDATE_SUBSTANCE_USESUBSTANCE_USE_CATEGORY_ASSOCIATION_SUBSTANCE_USE_CATEGORY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+      OCL.Helper helper = EOCL_ENV.createOCLHelper();
+      helper.setContext(SdtmPackage.Literals.SUBSTANCE_USE);
+      try
+      {
+        VALIDATE_SUBSTANCE_USESUBSTANCE_USE_CATEGORY_ASSOCIATION_SUBSTANCE_USE_CATEGORY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_SUBSTANCE_USESUBSTANCE_USE_CATEGORY_ASSOCIATION_SUBSTANCE_USE_CATEGORY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+      }
+      catch (ParserException pe)
+      {
+        throw new UnsupportedOperationException(pe.getLocalizedMessage());
+      }
+    }
+    if (!EOCL_ENV.createQuery(VALIDATE_SUBSTANCE_USESUBSTANCE_USE_CATEGORY_ASSOCIATION_SUBSTANCE_USE_CATEGORY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(substanceUse))
+    {
+      if (diagnostics != null)
+      {
+        diagnostics.add
+          (new BasicDiagnostic
+            (Diagnostic.ERROR,
+             SdtmValidator.DIAGNOSTIC_SOURCE,
+             SdtmValidator.SUBSTANCE_USE__SUBSTANCE_USESUBSTANCE_USE_CATEGORY_ASSOCIATION_SUBSTANCE_USE_CATEGORY,
+             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "SubstanceUsesubstanceUseCategoryAssociationSubstanceUseCategory", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(substanceUse, context) }),
+             new Object [] { substanceUse }));
+      }
+       
+      return false;
+    }
+    return true;
+  }
+
+  /**
+   * The cached OCL expression body for the '{@link #validateSubstanceUsesubstanceUseSubCategoryAssociationsubstanceUseSubCategoryClassCode(SubstanceUse, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Substance Usesubstance Use Sub Category Associationsubstance Use Sub Category Class Code</em>}' operation.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #validateSubstanceUsesubstanceUseSubCategoryAssociationsubstanceUseSubCategoryClassCode(SubstanceUse, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+   * @generated
+   * @ordered
+   */
+  protected static final String VALIDATE_SUBSTANCE_USESUBSTANCE_USE_SUB_CATEGORY_ASSOCIATIONSUBSTANCE_USE_SUB_CATEGORY_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entryRelationship->excluding(null).observation->excluding(null)->reject(classCode=vocab::ActClassObservation::OBS)";
+
+  /**
+   * The cached OCL invariant for the '{@link #validateSubstanceUsesubstanceUseSubCategoryAssociationsubstanceUseSubCategoryClassCode(SubstanceUse, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Substance Usesubstance Use Sub Category Associationsubstance Use Sub Category Class Code</em>}' invariant operation.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #validateSubstanceUsesubstanceUseSubCategoryAssociationsubstanceUseSubCategoryClassCode(SubstanceUse, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+   * @generated
+   * @ordered
+   */
+  
+  protected static Constraint VALIDATE_SUBSTANCE_USESUBSTANCE_USE_SUB_CATEGORY_ASSOCIATIONSUBSTANCE_USE_SUB_CATEGORY_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * <!-- begin-model-doc -->
+   * @param substanceUse The receiving '<em><b>Substance Use</b></em>' model object.
+   * @param diagnostics The chain of diagnostics to which problems are to be appended.
+   * @param context The cache of context-specific information.
+   * <!-- end-model-doc -->
+   * @generated
+   */
+  
+  public static  boolean validateSubstanceUsesubstanceUseSubCategoryAssociationsubstanceUseSubCategoryClassCode(SubstanceUse substanceUse, DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+  	  
+    if (VALIDATE_SUBSTANCE_USESUBSTANCE_USE_SUB_CATEGORY_ASSOCIATIONSUBSTANCE_USE_SUB_CATEGORY_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+      OCL.Helper helper = EOCL_ENV.createOCLHelper();
+      helper.setContext(SdtmPackage.Literals.SUBSTANCE_USE);
+      try
+      {
+        VALIDATE_SUBSTANCE_USESUBSTANCE_USE_SUB_CATEGORY_ASSOCIATIONSUBSTANCE_USE_SUB_CATEGORY_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_SUBSTANCE_USESUBSTANCE_USE_SUB_CATEGORY_ASSOCIATIONSUBSTANCE_USE_SUB_CATEGORY_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+      }
+      catch (ParserException pe)
+      {
+        throw new UnsupportedOperationException(pe.getLocalizedMessage());
+      }
+    }
+    if (!EOCL_ENV.createQuery(VALIDATE_SUBSTANCE_USESUBSTANCE_USE_SUB_CATEGORY_ASSOCIATIONSUBSTANCE_USE_SUB_CATEGORY_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(substanceUse))
+    {
+      if (diagnostics != null)
+      {
+        diagnostics.add
+          (new BasicDiagnostic
+            (Diagnostic.ERROR,
+             SdtmValidator.DIAGNOSTIC_SOURCE,
+             SdtmValidator.SUBSTANCE_USE__SUBSTANCE_USESUBSTANCE_USE_SUB_CATEGORY_ASSOCIATIONSUBSTANCE_USE_SUB_CATEGORY_CLASS_CODE,
+             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "SubstanceUsesubstanceUseSubCategoryAssociationsubstanceUseSubCategoryClassCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(substanceUse, context) }),
+             new Object [] { substanceUse }));
+      }
+       
+      return false;
+    }
+    return true;
+  }
+
+  /**
+   * The cached OCL expression body for the '{@link #validateSubstanceUsesubstanceUseSubCategoryAssociationsubstanceUseSubCategoryCode(SubstanceUse, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Substance Usesubstance Use Sub Category Associationsubstance Use Sub Category Code</em>}' operation.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #validateSubstanceUsesubstanceUseSubCategoryAssociationsubstanceUseSubCategoryCode(SubstanceUse, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+   * @generated
+   * @ordered
+   */
+  protected static final String VALIDATE_SUBSTANCE_USESUBSTANCE_USE_SUB_CATEGORY_ASSOCIATIONSUBSTANCE_USE_SUB_CATEGORY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entryRelationship->excluding(null).observation->excluding(null)->reject((code.oclIsUndefined() or code.isNullFlavorUndefined()) implies (not code.oclIsUndefined()))";
+
+  /**
+   * The cached OCL invariant for the '{@link #validateSubstanceUsesubstanceUseSubCategoryAssociationsubstanceUseSubCategoryCode(SubstanceUse, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Substance Usesubstance Use Sub Category Associationsubstance Use Sub Category Code</em>}' invariant operation.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #validateSubstanceUsesubstanceUseSubCategoryAssociationsubstanceUseSubCategoryCode(SubstanceUse, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+   * @generated
+   * @ordered
+   */
+  
+  protected static Constraint VALIDATE_SUBSTANCE_USESUBSTANCE_USE_SUB_CATEGORY_ASSOCIATIONSUBSTANCE_USE_SUB_CATEGORY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * <!-- begin-model-doc -->
+   * @param substanceUse The receiving '<em><b>Substance Use</b></em>' model object.
+   * @param diagnostics The chain of diagnostics to which problems are to be appended.
+   * @param context The cache of context-specific information.
+   * <!-- end-model-doc -->
+   * @generated
+   */
+  
+  public static  boolean validateSubstanceUsesubstanceUseSubCategoryAssociationsubstanceUseSubCategoryCode(SubstanceUse substanceUse, DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+  	  
+    if (VALIDATE_SUBSTANCE_USESUBSTANCE_USE_SUB_CATEGORY_ASSOCIATIONSUBSTANCE_USE_SUB_CATEGORY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+      OCL.Helper helper = EOCL_ENV.createOCLHelper();
+      helper.setContext(SdtmPackage.Literals.SUBSTANCE_USE);
+      try
+      {
+        VALIDATE_SUBSTANCE_USESUBSTANCE_USE_SUB_CATEGORY_ASSOCIATIONSUBSTANCE_USE_SUB_CATEGORY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_SUBSTANCE_USESUBSTANCE_USE_SUB_CATEGORY_ASSOCIATIONSUBSTANCE_USE_SUB_CATEGORY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+      }
+      catch (ParserException pe)
+      {
+        throw new UnsupportedOperationException(pe.getLocalizedMessage());
+      }
+    }
+    if (!EOCL_ENV.createQuery(VALIDATE_SUBSTANCE_USESUBSTANCE_USE_SUB_CATEGORY_ASSOCIATIONSUBSTANCE_USE_SUB_CATEGORY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(substanceUse))
+    {
+      if (diagnostics != null)
+      {
+        diagnostics.add
+          (new BasicDiagnostic
+            (Diagnostic.ERROR,
+             SdtmValidator.DIAGNOSTIC_SOURCE,
+             SdtmValidator.SUBSTANCE_USE__SUBSTANCE_USESUBSTANCE_USE_SUB_CATEGORY_ASSOCIATIONSUBSTANCE_USE_SUB_CATEGORY_CODE,
+             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "SubstanceUsesubstanceUseSubCategoryAssociationsubstanceUseSubCategoryCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(substanceUse, context) }),
+             new Object [] { substanceUse }));
+      }
+       
+      return false;
+    }
+    return true;
+  }
+
+  /**
+   * The cached OCL expression body for the '{@link #validateSubstanceUsesubstanceUseSubCategoryAssociationsubstanceUseSubCategoryMoodCode(SubstanceUse, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Substance Usesubstance Use Sub Category Associationsubstance Use Sub Category Mood Code</em>}' operation.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #validateSubstanceUsesubstanceUseSubCategoryAssociationsubstanceUseSubCategoryMoodCode(SubstanceUse, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+   * @generated
+   * @ordered
+   */
+  protected static final String VALIDATE_SUBSTANCE_USESUBSTANCE_USE_SUB_CATEGORY_ASSOCIATIONSUBSTANCE_USE_SUB_CATEGORY_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entryRelationship->excluding(null).observation->excluding(null)->reject(moodCode=vocab::x_ActMoodDocumentObservation::EVN)";
+
+  /**
+   * The cached OCL invariant for the '{@link #validateSubstanceUsesubstanceUseSubCategoryAssociationsubstanceUseSubCategoryMoodCode(SubstanceUse, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Substance Usesubstance Use Sub Category Associationsubstance Use Sub Category Mood Code</em>}' invariant operation.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #validateSubstanceUsesubstanceUseSubCategoryAssociationsubstanceUseSubCategoryMoodCode(SubstanceUse, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+   * @generated
+   * @ordered
+   */
+  
+  protected static Constraint VALIDATE_SUBSTANCE_USESUBSTANCE_USE_SUB_CATEGORY_ASSOCIATIONSUBSTANCE_USE_SUB_CATEGORY_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * <!-- begin-model-doc -->
+   * @param substanceUse The receiving '<em><b>Substance Use</b></em>' model object.
+   * @param diagnostics The chain of diagnostics to which problems are to be appended.
+   * @param context The cache of context-specific information.
+   * <!-- end-model-doc -->
+   * @generated
+   */
+  
+  public static  boolean validateSubstanceUsesubstanceUseSubCategoryAssociationsubstanceUseSubCategoryMoodCode(SubstanceUse substanceUse, DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+  	  
+    if (VALIDATE_SUBSTANCE_USESUBSTANCE_USE_SUB_CATEGORY_ASSOCIATIONSUBSTANCE_USE_SUB_CATEGORY_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+      OCL.Helper helper = EOCL_ENV.createOCLHelper();
+      helper.setContext(SdtmPackage.Literals.SUBSTANCE_USE);
+      try
+      {
+        VALIDATE_SUBSTANCE_USESUBSTANCE_USE_SUB_CATEGORY_ASSOCIATIONSUBSTANCE_USE_SUB_CATEGORY_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_SUBSTANCE_USESUBSTANCE_USE_SUB_CATEGORY_ASSOCIATIONSUBSTANCE_USE_SUB_CATEGORY_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+      }
+      catch (ParserException pe)
+      {
+        throw new UnsupportedOperationException(pe.getLocalizedMessage());
+      }
+    }
+    if (!EOCL_ENV.createQuery(VALIDATE_SUBSTANCE_USESUBSTANCE_USE_SUB_CATEGORY_ASSOCIATIONSUBSTANCE_USE_SUB_CATEGORY_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(substanceUse))
+    {
+      if (diagnostics != null)
+      {
+        diagnostics.add
+          (new BasicDiagnostic
+            (Diagnostic.ERROR,
+             SdtmValidator.DIAGNOSTIC_SOURCE,
+             SdtmValidator.SUBSTANCE_USE__SUBSTANCE_USESUBSTANCE_USE_SUB_CATEGORY_ASSOCIATIONSUBSTANCE_USE_SUB_CATEGORY_MOOD_CODE,
+             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "SubstanceUsesubstanceUseSubCategoryAssociationsubstanceUseSubCategoryMoodCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(substanceUse, context) }),
+             new Object [] { substanceUse }));
+      }
+       
+      return false;
+    }
+    return true;
+  }
+
+  /**
+   * The cached OCL expression body for the '{@link #validateSubstanceUsesubstanceUseSubCategoryAssociationsubstanceUseSubCategoryValue(SubstanceUse, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Substance Usesubstance Use Sub Category Associationsubstance Use Sub Category Value</em>}' operation.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #validateSubstanceUsesubstanceUseSubCategoryAssociationsubstanceUseSubCategoryValue(SubstanceUse, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+   * @generated
+   * @ordered
+   */
+  protected static final String VALIDATE_SUBSTANCE_USESUBSTANCE_USE_SUB_CATEGORY_ASSOCIATIONSUBSTANCE_USE_SUB_CATEGORY_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entryRelationship->excluding(null).observation->excluding(null)->reject((value->isEmpty() or value->exists(element | element.isNullFlavorUndefined())) implies (value->size() = 1 and value->forAll(element | element.oclIsTypeOf(datatypes::CE))))";
+
+  /**
+   * The cached OCL invariant for the '{@link #validateSubstanceUsesubstanceUseSubCategoryAssociationsubstanceUseSubCategoryValue(SubstanceUse, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Substance Usesubstance Use Sub Category Associationsubstance Use Sub Category Value</em>}' invariant operation.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #validateSubstanceUsesubstanceUseSubCategoryAssociationsubstanceUseSubCategoryValue(SubstanceUse, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+   * @generated
+   * @ordered
+   */
+  
+  protected static Constraint VALIDATE_SUBSTANCE_USESUBSTANCE_USE_SUB_CATEGORY_ASSOCIATIONSUBSTANCE_USE_SUB_CATEGORY_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * <!-- begin-model-doc -->
+   * @param substanceUse The receiving '<em><b>Substance Use</b></em>' model object.
+   * @param diagnostics The chain of diagnostics to which problems are to be appended.
+   * @param context The cache of context-specific information.
+   * <!-- end-model-doc -->
+   * @generated
+   */
+  
+  public static  boolean validateSubstanceUsesubstanceUseSubCategoryAssociationsubstanceUseSubCategoryValue(SubstanceUse substanceUse, DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+  	  
+    if (VALIDATE_SUBSTANCE_USESUBSTANCE_USE_SUB_CATEGORY_ASSOCIATIONSUBSTANCE_USE_SUB_CATEGORY_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+      OCL.Helper helper = EOCL_ENV.createOCLHelper();
+      helper.setContext(SdtmPackage.Literals.SUBSTANCE_USE);
+      try
+      {
+        VALIDATE_SUBSTANCE_USESUBSTANCE_USE_SUB_CATEGORY_ASSOCIATIONSUBSTANCE_USE_SUB_CATEGORY_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_SUBSTANCE_USESUBSTANCE_USE_SUB_CATEGORY_ASSOCIATIONSUBSTANCE_USE_SUB_CATEGORY_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+      }
+      catch (ParserException pe)
+      {
+        throw new UnsupportedOperationException(pe.getLocalizedMessage());
+      }
+    }
+    if (!EOCL_ENV.createQuery(VALIDATE_SUBSTANCE_USESUBSTANCE_USE_SUB_CATEGORY_ASSOCIATIONSUBSTANCE_USE_SUB_CATEGORY_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(substanceUse))
+    {
+      if (diagnostics != null)
+      {
+        diagnostics.add
+          (new BasicDiagnostic
+            (Diagnostic.ERROR,
+             SdtmValidator.DIAGNOSTIC_SOURCE,
+             SdtmValidator.SUBSTANCE_USE__SUBSTANCE_USESUBSTANCE_USE_SUB_CATEGORY_ASSOCIATIONSUBSTANCE_USE_SUB_CATEGORY_VALUE,
+             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "SubstanceUsesubstanceUseSubCategoryAssociationsubstanceUseSubCategoryValue", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(substanceUse, context) }),
+             new Object [] { substanceUse }));
+      }
+       
       return false;
     }
     return true;
@@ -1411,7 +2104,6 @@ public class SubstanceUseOperations extends SubstanceAdministrationOperations
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.entryRelationship->excluding(null)->reject(typeCode=vocab::x_ActRelationshipEntryRelationship::COMP)
    * @param substanceUse The receiving '<em><b>Substance Use</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -1421,6 +2113,7 @@ public class SubstanceUseOperations extends SubstanceAdministrationOperations
   
   public static  boolean validateSubstanceUsesubstanceUseSubCategoryAssociationTypeCode(SubstanceUse substanceUse, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
+  	  
     if (VALIDATE_SUBSTANCE_USESUBSTANCE_USE_SUB_CATEGORY_ASSOCIATION_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(SdtmPackage.Literals.SUBSTANCE_USE);
@@ -1445,6 +2138,73 @@ public class SubstanceUseOperations extends SubstanceAdministrationOperations
              org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "SubstanceUsesubstanceUseSubCategoryAssociationTypeCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(substanceUse, context) }),
              new Object [] { substanceUse }));
       }
+       
+      return false;
+    }
+    return true;
+  }
+
+  /**
+   * The cached OCL expression body for the '{@link #validateSubstanceUsesubstanceUseSubCategoryAssociationSubstanceUseSubCategory(SubstanceUse, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Substance Usesubstance Use Sub Category Association Substance Use Sub Category</em>}' operation.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #validateSubstanceUsesubstanceUseSubCategoryAssociationSubstanceUseSubCategory(SubstanceUse, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+   * @generated
+   * @ordered
+   */
+  protected static final String VALIDATE_SUBSTANCE_USESUBSTANCE_USE_SUB_CATEGORY_ASSOCIATION_SUBSTANCE_USE_SUB_CATEGORY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entryRelationship->excluding(null)->reject(observation->one(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(cda::Observation)))";
+
+  /**
+   * The cached OCL invariant for the '{@link #validateSubstanceUsesubstanceUseSubCategoryAssociationSubstanceUseSubCategory(SubstanceUse, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Substance Usesubstance Use Sub Category Association Substance Use Sub Category</em>}' invariant operation.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #validateSubstanceUsesubstanceUseSubCategoryAssociationSubstanceUseSubCategory(SubstanceUse, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+   * @generated
+   * @ordered
+   */
+  
+  protected static Constraint VALIDATE_SUBSTANCE_USESUBSTANCE_USE_SUB_CATEGORY_ASSOCIATION_SUBSTANCE_USE_SUB_CATEGORY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * <!-- begin-model-doc -->
+   * @param substanceUse The receiving '<em><b>Substance Use</b></em>' model object.
+   * @param diagnostics The chain of diagnostics to which problems are to be appended.
+   * @param context The cache of context-specific information.
+   * <!-- end-model-doc -->
+   * @generated
+   */
+  
+  public static  boolean validateSubstanceUsesubstanceUseSubCategoryAssociationSubstanceUseSubCategory(SubstanceUse substanceUse, DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+  	  
+    if (VALIDATE_SUBSTANCE_USESUBSTANCE_USE_SUB_CATEGORY_ASSOCIATION_SUBSTANCE_USE_SUB_CATEGORY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+      OCL.Helper helper = EOCL_ENV.createOCLHelper();
+      helper.setContext(SdtmPackage.Literals.SUBSTANCE_USE);
+      try
+      {
+        VALIDATE_SUBSTANCE_USESUBSTANCE_USE_SUB_CATEGORY_ASSOCIATION_SUBSTANCE_USE_SUB_CATEGORY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_SUBSTANCE_USESUBSTANCE_USE_SUB_CATEGORY_ASSOCIATION_SUBSTANCE_USE_SUB_CATEGORY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+      }
+      catch (ParserException pe)
+      {
+        throw new UnsupportedOperationException(pe.getLocalizedMessage());
+      }
+    }
+    if (!EOCL_ENV.createQuery(VALIDATE_SUBSTANCE_USESUBSTANCE_USE_SUB_CATEGORY_ASSOCIATION_SUBSTANCE_USE_SUB_CATEGORY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(substanceUse))
+    {
+      if (diagnostics != null)
+      {
+        diagnostics.add
+          (new BasicDiagnostic
+            (Diagnostic.ERROR,
+             SdtmValidator.DIAGNOSTIC_SOURCE,
+             SdtmValidator.SUBSTANCE_USE__SUBSTANCE_USESUBSTANCE_USE_SUB_CATEGORY_ASSOCIATION_SUBSTANCE_USE_SUB_CATEGORY,
+             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "SubstanceUsesubstanceUseSubCategoryAssociationSubstanceUseSubCategory", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(substanceUse, context) }),
+             new Object [] { substanceUse }));
+      }
+       
       return false;
     }
     return true;
@@ -1458,7 +2218,7 @@ public class SubstanceUseOperations extends SubstanceAdministrationOperations
    * @generated
    * @ordered
    */
-  protected static final String GET_PRE_SPECIFIED_EVENT__EOCL_EXP = "self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(sdtm::Pre-Specified Event))->asSequence()->first().oclAsType(sdtm::Pre-Specified Event)";
+  protected static final String GET_PRE_SPECIFIED_EVENT__EOCL_EXP = "self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(sdtm::Pre-Specified Event))->asSequence()->any(true).oclAsType(sdtm::Pre-Specified Event)";
 
   /**
    * The cached OCL query for the '{@link #getPreSpecifiedEvent(SubstanceUse) <em>Get Pre Specified Event</em>}' query operation.
@@ -1473,10 +2233,6 @@ public class SubstanceUseOperations extends SubstanceAdministrationOperations
   /**
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * <!-- begin-model-doc -->
-   * self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(sdtm::Pre-Specified Event))->asSequence()->first().oclAsType(sdtm::Pre-Specified Event)
-   * @param substanceUse The receiving '<em><b>Substance Use</b></em>' model object.
-   * <!-- end-model-doc -->
    * @generated
    */
   
@@ -1485,7 +2241,7 @@ public class SubstanceUseOperations extends SubstanceAdministrationOperations
     if (GET_PRE_SPECIFIED_EVENT__EOCL_QRY == null)
     {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
-      helper.setOperationContext(SdtmPackage.Literals.SUBSTANCE_USE, SdtmPackage.Literals.SUBSTANCE_USE.getEAllOperations().get(71));
+      helper.setOperationContext(SdtmPackage.Literals.SUBSTANCE_USE, SdtmPackage.Literals.SUBSTANCE_USE.getEAllOperations().get(84));
       try
       {
         GET_PRE_SPECIFIED_EVENT__EOCL_QRY = helper.createQuery(GET_PRE_SPECIFIED_EVENT__EOCL_EXP);
@@ -1507,7 +2263,7 @@ public class SubstanceUseOperations extends SubstanceAdministrationOperations
    * @generated
    * @ordered
    */
-  protected static final String GET_NON_PERFORMANCE_REASON__EOCL_EXP = "self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(sdtm::Non Performance Reason))->asSequence()->first().oclAsType(sdtm::Non Performance Reason)";
+  protected static final String GET_NON_PERFORMANCE_REASON__EOCL_EXP = "self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(sdtm::Non Performance Reason))->asSequence()->any(true).oclAsType(sdtm::Non Performance Reason)";
 
   /**
    * The cached OCL query for the '{@link #getNonPerformanceReason(SubstanceUse) <em>Get Non Performance Reason</em>}' query operation.
@@ -1522,10 +2278,6 @@ public class SubstanceUseOperations extends SubstanceAdministrationOperations
   /**
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * <!-- begin-model-doc -->
-   * self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(sdtm::Non Performance Reason))->asSequence()->first().oclAsType(sdtm::Non Performance Reason)
-   * @param substanceUse The receiving '<em><b>Substance Use</b></em>' model object.
-   * <!-- end-model-doc -->
    * @generated
    */
   
@@ -1534,7 +2286,7 @@ public class SubstanceUseOperations extends SubstanceAdministrationOperations
     if (GET_NON_PERFORMANCE_REASON__EOCL_QRY == null)
     {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
-      helper.setOperationContext(SdtmPackage.Literals.SUBSTANCE_USE, SdtmPackage.Literals.SUBSTANCE_USE.getEAllOperations().get(72));
+      helper.setOperationContext(SdtmPackage.Literals.SUBSTANCE_USE, SdtmPackage.Literals.SUBSTANCE_USE.getEAllOperations().get(85));
       try
       {
         GET_NON_PERFORMANCE_REASON__EOCL_QRY = helper.createQuery(GET_NON_PERFORMANCE_REASON__EOCL_EXP);
@@ -1556,7 +2308,7 @@ public class SubstanceUseOperations extends SubstanceAdministrationOperations
    * @generated
    * @ordered
    */
-  protected static final String GET_ACTIVITY_START_TIMING_REFERENCE__EOCL_EXP = "self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(sdtm::Activity Start Timing Reference))->asSequence()->first().oclAsType(sdtm::Activity Start Timing Reference)";
+  protected static final String GET_ACTIVITY_START_TIMING_REFERENCE__EOCL_EXP = "self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(sdtm::Activity Start Timing Reference))->asSequence()->any(true).oclAsType(sdtm::Activity Start Timing Reference)";
 
   /**
    * The cached OCL query for the '{@link #getActivityStartTimingReference(SubstanceUse) <em>Get Activity Start Timing Reference</em>}' query operation.
@@ -1571,10 +2323,6 @@ public class SubstanceUseOperations extends SubstanceAdministrationOperations
   /**
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * <!-- begin-model-doc -->
-   * self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(sdtm::Activity Start Timing Reference))->asSequence()->first().oclAsType(sdtm::Activity Start Timing Reference)
-   * @param substanceUse The receiving '<em><b>Substance Use</b></em>' model object.
-   * <!-- end-model-doc -->
    * @generated
    */
   
@@ -1583,7 +2331,7 @@ public class SubstanceUseOperations extends SubstanceAdministrationOperations
     if (GET_ACTIVITY_START_TIMING_REFERENCE__EOCL_QRY == null)
     {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
-      helper.setOperationContext(SdtmPackage.Literals.SUBSTANCE_USE, SdtmPackage.Literals.SUBSTANCE_USE.getEAllOperations().get(73));
+      helper.setOperationContext(SdtmPackage.Literals.SUBSTANCE_USE, SdtmPackage.Literals.SUBSTANCE_USE.getEAllOperations().get(86));
       try
       {
         GET_ACTIVITY_START_TIMING_REFERENCE__EOCL_QRY = helper.createQuery(GET_ACTIVITY_START_TIMING_REFERENCE__EOCL_EXP);
@@ -1605,7 +2353,7 @@ public class SubstanceUseOperations extends SubstanceAdministrationOperations
    * @generated
    * @ordered
    */
-  protected static final String GET_ACTIVITY_END_TIMING_REFERENCE__EOCL_EXP = "self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(sdtm::Activity End Timing Reference))->asSequence()->first().oclAsType(sdtm::Activity End Timing Reference)";
+  protected static final String GET_ACTIVITY_END_TIMING_REFERENCE__EOCL_EXP = "self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(sdtm::Activity End Timing Reference))->asSequence()->any(true).oclAsType(sdtm::Activity End Timing Reference)";
 
   /**
    * The cached OCL query for the '{@link #getActivityEndTimingReference(SubstanceUse) <em>Get Activity End Timing Reference</em>}' query operation.
@@ -1620,10 +2368,6 @@ public class SubstanceUseOperations extends SubstanceAdministrationOperations
   /**
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * <!-- begin-model-doc -->
-   * self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(sdtm::Activity End Timing Reference))->asSequence()->first().oclAsType(sdtm::Activity End Timing Reference)
-   * @param substanceUse The receiving '<em><b>Substance Use</b></em>' model object.
-   * <!-- end-model-doc -->
    * @generated
    */
   
@@ -1632,7 +2376,7 @@ public class SubstanceUseOperations extends SubstanceAdministrationOperations
     if (GET_ACTIVITY_END_TIMING_REFERENCE__EOCL_QRY == null)
     {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
-      helper.setOperationContext(SdtmPackage.Literals.SUBSTANCE_USE, SdtmPackage.Literals.SUBSTANCE_USE.getEAllOperations().get(74));
+      helper.setOperationContext(SdtmPackage.Literals.SUBSTANCE_USE, SdtmPackage.Literals.SUBSTANCE_USE.getEAllOperations().get(87));
       try
       {
         GET_ACTIVITY_END_TIMING_REFERENCE__EOCL_QRY = helper.createQuery(GET_ACTIVITY_END_TIMING_REFERENCE__EOCL_EXP);
@@ -1654,7 +2398,7 @@ public class SubstanceUseOperations extends SubstanceAdministrationOperations
    * @generated
    * @ordered
    */
-  protected static final String GET_DATA_COLLECTION__EOCL_EXP = "self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(sdtm::Data Collection))->asSequence()->first().oclAsType(sdtm::Data Collection)";
+  protected static final String GET_DATA_COLLECTION__EOCL_EXP = "self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(sdtm::Data Collection))->asSequence()->any(true).oclAsType(sdtm::Data Collection)";
 
   /**
    * The cached OCL query for the '{@link #getDataCollection(SubstanceUse) <em>Get Data Collection</em>}' query operation.
@@ -1669,10 +2413,6 @@ public class SubstanceUseOperations extends SubstanceAdministrationOperations
   /**
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * <!-- begin-model-doc -->
-   * self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(sdtm::Data Collection))->asSequence()->first().oclAsType(sdtm::Data Collection)
-   * @param substanceUse The receiving '<em><b>Substance Use</b></em>' model object.
-   * <!-- end-model-doc -->
    * @generated
    */
   
@@ -1681,7 +2421,7 @@ public class SubstanceUseOperations extends SubstanceAdministrationOperations
     if (GET_DATA_COLLECTION__EOCL_QRY == null)
     {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
-      helper.setOperationContext(SdtmPackage.Literals.SUBSTANCE_USE, SdtmPackage.Literals.SUBSTANCE_USE.getEAllOperations().get(75));
+      helper.setOperationContext(SdtmPackage.Literals.SUBSTANCE_USE, SdtmPackage.Literals.SUBSTANCE_USE.getEAllOperations().get(88));
       try
       {
         GET_DATA_COLLECTION__EOCL_QRY = helper.createQuery(GET_DATA_COLLECTION__EOCL_EXP);
@@ -1703,7 +2443,7 @@ public class SubstanceUseOperations extends SubstanceAdministrationOperations
    * @generated
    * @ordered
    */
-  protected static final String GET_STUDY_DAY_PERIOD__EOCL_EXP = "self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(sdtm::Study Day Period))->asSequence()->first().oclAsType(sdtm::Study Day Period)";
+  protected static final String GET_STUDY_DAY_PERIOD__EOCL_EXP = "self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(sdtm::Study Day Period))->asSequence()->any(true).oclAsType(sdtm::Study Day Period)";
 
   /**
    * The cached OCL query for the '{@link #getStudyDayPeriod(SubstanceUse) <em>Get Study Day Period</em>}' query operation.
@@ -1718,10 +2458,6 @@ public class SubstanceUseOperations extends SubstanceAdministrationOperations
   /**
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * <!-- begin-model-doc -->
-   * self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(sdtm::Study Day Period))->asSequence()->first().oclAsType(sdtm::Study Day Period)
-   * @param substanceUse The receiving '<em><b>Substance Use</b></em>' model object.
-   * <!-- end-model-doc -->
    * @generated
    */
   
@@ -1730,7 +2466,7 @@ public class SubstanceUseOperations extends SubstanceAdministrationOperations
     if (GET_STUDY_DAY_PERIOD__EOCL_QRY == null)
     {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
-      helper.setOperationContext(SdtmPackage.Literals.SUBSTANCE_USE, SdtmPackage.Literals.SUBSTANCE_USE.getEAllOperations().get(76));
+      helper.setOperationContext(SdtmPackage.Literals.SUBSTANCE_USE, SdtmPackage.Literals.SUBSTANCE_USE.getEAllOperations().get(89));
       try
       {
         GET_STUDY_DAY_PERIOD__EOCL_QRY = helper.createQuery(GET_STUDY_DAY_PERIOD__EOCL_EXP);

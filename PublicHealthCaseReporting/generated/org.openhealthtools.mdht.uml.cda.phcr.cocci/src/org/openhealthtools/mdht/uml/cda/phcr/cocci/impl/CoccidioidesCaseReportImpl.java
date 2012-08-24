@@ -10,10 +10,13 @@
  *******************************************************************************/
 package org.openhealthtools.mdht.uml.cda.phcr.cocci.impl;
 
+import java.lang.Iterable;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.ecore.EClass;
+import org.eclipse.emf.ecore.EObject;
+import org.openhealthtools.mdht.emf.runtime.util.Initializer;
 import org.openhealthtools.mdht.uml.cda.phcr.cocci.CocciPackage;
 import org.openhealthtools.mdht.uml.cda.phcr.cocci.CoccidioidesCaseReport;
 import org.openhealthtools.mdht.uml.cda.phcr.cocci.CoccidioidesPHCRClinicalInformationSection;
@@ -35,122 +38,131 @@ import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
  */
 public class CoccidioidesCaseReportImpl extends PublicHealthCaseReportImpl implements CoccidioidesCaseReport {
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	protected CoccidioidesCaseReportImpl() {
-		super();
-	}
+    super();
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	@Override
 	protected EClass eStaticClass() {
-		return CocciPackage.Literals.COCCIDIOIDES_CASE_REPORT;
-	}
+    return CocciPackage.Literals.COCCIDIOIDES_CASE_REPORT;
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateCoccidioidesCaseReportTitle(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return CoccidioidesCaseReportOperations.validateCoccidioidesCaseReportTitle(this, diagnostics, context);
-	}
+    return CoccidioidesCaseReportOperations.validateCoccidioidesCaseReportTitle(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateCoccidioidesCaseReportCoccidioidesPHCRSocialHistorySection(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return CoccidioidesCaseReportOperations.validateCoccidioidesCaseReportCoccidioidesPHCRSocialHistorySection(this, diagnostics, context);
-	}
+    return CoccidioidesCaseReportOperations.validateCoccidioidesCaseReportCoccidioidesPHCRSocialHistorySection(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateCoccidioidesCaseReportCoccidioidesPHCRClinicalInformationSection(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return CoccidioidesCaseReportOperations.validateCoccidioidesCaseReportCoccidioidesPHCRClinicalInformationSection(this, diagnostics, context);
-	}
+    return CoccidioidesCaseReportOperations.validateCoccidioidesCaseReportCoccidioidesPHCRClinicalInformationSection(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateCoccidioidesCaseReportCoccidioidesPHCRTreatmentInformationSection(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return CoccidioidesCaseReportOperations.validateCoccidioidesCaseReportCoccidioidesPHCRTreatmentInformationSection(this, diagnostics, context);
-	}
+    return CoccidioidesCaseReportOperations.validateCoccidioidesCaseReportCoccidioidesPHCRTreatmentInformationSection(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateCoccidioidesCaseReportCoccidioidesPHCRRelevantDxTestsSection(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return CoccidioidesCaseReportOperations.validateCoccidioidesCaseReportCoccidioidesPHCRRelevantDxTestsSection(this, diagnostics, context);
-	}
+    return CoccidioidesCaseReportOperations.validateCoccidioidesCaseReportCoccidioidesPHCRRelevantDxTestsSection(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public CoccidioidesPHCRSocialHistorySection getCoccidioidesPHCRSocialHistorySection() {
-		return CoccidioidesCaseReportOperations.getCoccidioidesPHCRSocialHistorySection(this);
-	}
+    return CoccidioidesCaseReportOperations.getCoccidioidesPHCRSocialHistorySection(this);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public CoccidioidesPHCRClinicalInformationSection getCoccidioidesPHCRClinicalInformationSection() {
-		return CoccidioidesCaseReportOperations.getCoccidioidesPHCRClinicalInformationSection(this);
-	}
+    return CoccidioidesCaseReportOperations.getCoccidioidesPHCRClinicalInformationSection(this);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public CoccidioidesPHCRTreatmentInformationSection getCoccidioidesPHCRTreatmentInformationSection() {
-		return CoccidioidesCaseReportOperations.getCoccidioidesPHCRTreatmentInformationSection(this);
-	}
+    return CoccidioidesCaseReportOperations.getCoccidioidesPHCRTreatmentInformationSection(this);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public CoccidioidesPHCRRelevantDxTestsSection getCoccidioidesPHCRRelevantDxTestsSection() {
-		return CoccidioidesCaseReportOperations.getCoccidioidesPHCRRelevantDxTestsSection(this);
-	}
+    return CoccidioidesCaseReportOperations.getCoccidioidesPHCRRelevantDxTestsSection(this);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	@Override
 	public boolean validatePublicHealthCaseReportTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return CoccidioidesCaseReportOperations.validatePublicHealthCaseReportTemplateId(this, diagnostics, context);
-	}
+    return CoccidioidesCaseReportOperations.validatePublicHealthCaseReportTemplateId(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public CoccidioidesCaseReport init() {
-    	CDAUtil.init(this);
-    	return this;
-	}
+      return Initializer.Util.init(this);
+  }
+
+  /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    public CoccidioidesCaseReport init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
 } //CoccidioidesCaseReportImpl

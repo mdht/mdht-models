@@ -10,10 +10,13 @@
  *******************************************************************************/
 package org.openhealthtools.mdht.uml.cda.phcr.impl;
 
+import java.lang.Iterable;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.ecore.EClass;
+import org.eclipse.emf.ecore.EObject;
+import org.openhealthtools.mdht.emf.runtime.util.Initializer;
 import org.openhealthtools.mdht.uml.cda.impl.ObservationImpl;
 import org.openhealthtools.mdht.uml.cda.phcr.PhcrPackage;
 import org.openhealthtools.mdht.uml.cda.phcr.SignsAndSymptomsObservation;
@@ -31,121 +34,130 @@ import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
  */
 public class SignsAndSymptomsObservationImpl extends ObservationImpl implements SignsAndSymptomsObservation {
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	protected SignsAndSymptomsObservationImpl() {
-		super();
-	}
+    super();
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	@Override
 	protected EClass eStaticClass() {
-		return PhcrPackage.Literals.SIGNS_AND_SYMPTOMS_OBSERVATION;
-	}
+    return PhcrPackage.Literals.SIGNS_AND_SYMPTOMS_OBSERVATION;
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateSignsAndSymptomsObservationTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return SignsAndSymptomsObservationOperations.validateSignsAndSymptomsObservationTemplateId(this, diagnostics, context);
-	}
+    return SignsAndSymptomsObservationOperations.validateSignsAndSymptomsObservationTemplateId(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateSignsAndSymptomsObservationClassCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return SignsAndSymptomsObservationOperations.validateSignsAndSymptomsObservationClassCode(this, diagnostics, context);
-	}
+    return SignsAndSymptomsObservationOperations.validateSignsAndSymptomsObservationClassCode(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateSignsAndSymptomsObservationCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return SignsAndSymptomsObservationOperations.validateSignsAndSymptomsObservationCode(this, diagnostics, context);
-	}
+    return SignsAndSymptomsObservationOperations.validateSignsAndSymptomsObservationCode(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateSignsAndSymptomsObservationMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return SignsAndSymptomsObservationOperations.validateSignsAndSymptomsObservationMoodCode(this, diagnostics, context);
-	}
+    return SignsAndSymptomsObservationOperations.validateSignsAndSymptomsObservationMoodCode(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateSignsAndSymptomsObservationNegationInd(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return SignsAndSymptomsObservationOperations.validateSignsAndSymptomsObservationNegationInd(this, diagnostics, context);
-	}
+    return SignsAndSymptomsObservationOperations.validateSignsAndSymptomsObservationNegationInd(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateSignsAndSymptomsObservationCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return SignsAndSymptomsObservationOperations.validateSignsAndSymptomsObservationCodeP(this, diagnostics, context);
-	}
+    return SignsAndSymptomsObservationOperations.validateSignsAndSymptomsObservationCodeP(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateSignsAndSymptomsObservationStatusCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return SignsAndSymptomsObservationOperations.validateSignsAndSymptomsObservationStatusCode(this, diagnostics, context);
-	}
+    return SignsAndSymptomsObservationOperations.validateSignsAndSymptomsObservationStatusCode(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateSignsAndSymptomsObservationStatusCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return SignsAndSymptomsObservationOperations.validateSignsAndSymptomsObservationStatusCodeP(this, diagnostics, context);
-	}
+    return SignsAndSymptomsObservationOperations.validateSignsAndSymptomsObservationStatusCodeP(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateSignsAndSymptomsObservationValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return SignsAndSymptomsObservationOperations.validateSignsAndSymptomsObservationValue(this, diagnostics, context);
-	}
+    return SignsAndSymptomsObservationOperations.validateSignsAndSymptomsObservationValue(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateSignsAndSymptomsObservationEffectiveTime(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return SignsAndSymptomsObservationOperations.validateSignsAndSymptomsObservationEffectiveTime(this, diagnostics, context);
-	}
+    return SignsAndSymptomsObservationOperations.validateSignsAndSymptomsObservationEffectiveTime(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public SignsAndSymptomsObservation init() {
-    	CDAUtil.init(this);
-    	return this;
-	}
+      return Initializer.Util.init(this);
+  }
+
+  /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    public SignsAndSymptomsObservation init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
 } //SignsAndSymptomsObservationImpl

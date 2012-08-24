@@ -6,10 +6,13 @@
  */
 package org.openhealthtools.mdht.uml.cda.sdtm;
 
+import java.lang.Iterable;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
 
+import org.eclipse.emf.ecore.EObject;
+import org.openhealthtools.mdht.emf.runtime.util.Initializer;
 import org.openhealthtools.mdht.uml.cda.Observation;
 import org.openhealthtools.mdht.uml.cda.SubstanceAdministration;
 
@@ -20,17 +23,17 @@ import org.openhealthtools.mdht.uml.cda.SubstanceAdministration;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.sdtm.SdtmPackage#getHumanClinicalExposure()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation templateId.root='2.16.840.1.113883.10.20.23.20'"
- *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/sdtmHumanClinicalExposureexposureCategoryAssociation constraints.validation.error='exposureCategoryAssociationTypeCode' typeCode='COMP'"
- *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/sdtmHumanClinicalExposureexposureCategoryAssociationexposureEventCategory constraints.validation.error='exposureEventCategoryClassCode exposureEventCategoryCode exposureEventCategoryMoodCode exposureEventCategoryValue' classCode='OBS' moodCode='EVN'"
- *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/sdtmHumanClinicalExposureexposureSubCategoryAssociation constraints.validation.error='exposureSubCategoryAssociationTypeCode' typeCode='COMP'"
- *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/sdtmHumanClinicalExposureexposureSubCategoryAssociationexposureEventSubCategory constraints.validation.error='exposureEventSubCategoryClassCode exposureEventSubCategoryCode exposureEventSubCategoryMoodCode exposureEventSubCategoryValue' classCode='OBS' moodCode='EVN'"
- *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/sdtmHumanClinicalExposureexposureIntendedRegimen constraints.validation.error='exposureIntendedRegimenTypeCode' typeCode='CAUS'"
- *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/sdtmHumanClinicalExposureexposureIntendedRegimenexposureIntendedRegimen constraints.validation.error='exposureIntendedRegimenClassCode exposureIntendedRegimenMoodCode exposureIntendedRegimenCode exposureIntendedRegimenValue' classCode='OBS' moodCode='EVN'"
- *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/sdtmHumanClinicalExposuredoseAdjustmentReasonAssociation constraints.validation.error='doseAdjustmentReasonAssociationTypeCode' typeCode='CAUS'"
- *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/sdtmHumanClinicalExposuredoseAdjustmentReasonAssociationdoseAdjustmentReason constraints.validation.dependOn.doseAdjustmentReasonCode='doseAdjustmentReasonCodeP' code.codeSystem='2.16.840.1.113883.3.26.1.1' constraints.validation.error='doseAdjustmentReasonClassCode doseAdjustmentReasonCode doseAdjustmentReasonCodeP doseAdjustmentReasonValue' code.codeSystemName='NCI Thesaurus' classCode='OBS' moodCode='EVN'"
- *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/sdtmHumanClinicalExposureelementOrderAssociation constraints.validation.error='elementOrderAssociationTypeCode elementOrderAssociationElementOrder elementOrderAssociationelementOrderClassCode elementOrderAssociationelementOrderCodeP elementOrderAssociationelementOrderCode elementOrderAssociationelementOrderMoodCode elementOrderAssociationelementOrderValue' typeCode='COMP' constraints.validation.dependOn.elementOrderAssociationelementOrderCode='elementOrderAssociationelementOrderCodeP' constraints.validation.query='elementOrderAssociationelementOrderClassCode elementOrderAssociationelementOrderCodeP elementOrderAssociationelementOrderCode elementOrderAssociationelementOrderMoodCode elementOrderAssociationelementOrderValue'"
- *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/sdtmHumanClinicalExposureelementOrderAssociationelementOrder constraints.validation.dependOn.elementOrderCode='elementOrderCodeP' code.codeSystem='2.16.840.1.113883.3.26.1.1' constraints.validation.error='elementOrderClassCode elementOrderCode elementOrderCodeP elementOrderMoodCode elementOrderValue' code.codeSystemName='NCI Thesaurus' classCode='OBS' moodCode='EVN'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='Human Clinical ExposureTemplateId Human Clinical ExposureClassCode Human Clinical ExposureId Human Clinical ExposureMoodCode Human Clinical ExposureConsumableMaterial Human Clinical ExposureexposureCategoryAssociationexposureEventCategoryClassCode Human Clinical ExposureexposureCategoryAssociationexposureEventCategoryCode Human Clinical ExposureexposureCategoryAssociationexposureEventCategoryMoodCode Human Clinical ExposureexposureCategoryAssociationexposureEventCategoryValue Human Clinical ExposureexposureCategoryAssociationTypeCode Human Clinical ExposureexposureCategoryAssociationExposureEventCategory Human Clinical ExposureexposureSubCategoryAssociationexposureEventSubCategoryClassCode Human Clinical ExposureexposureSubCategoryAssociationexposureEventSubCategoryCode Human Clinical ExposureexposureSubCategoryAssociationexposureEventSubCategoryMoodCode Human Clinical ExposureexposureSubCategoryAssociationexposureEventSubCategoryValue Human Clinical ExposureexposureSubCategoryAssociationTypeCode Human Clinical ExposureexposureSubCategoryAssociationExposureEventSubCategory Human Clinical ExposuredoseAdjustmentReasonAssociationdoseAdjustmentReasonClassCode Human Clinical ExposuredoseAdjustmentReasonAssociationdoseAdjustmentReasonCodeP Human Clinical ExposuredoseAdjustmentReasonAssociationdoseAdjustmentReasonCode Human Clinical ExposuredoseAdjustmentReasonAssociationdoseAdjustmentReasonValue Human Clinical ExposuredoseAdjustmentReasonAssociationTypeCode Human Clinical ExposuredoseAdjustmentReasonAssociationDoseAdjustmentReason Human Clinical ExposureelementOrderAssociationelementOrderClassCode Human Clinical ExposureelementOrderAssociationelementOrderCodeP Human Clinical ExposureelementOrderAssociationelementOrderCode Human Clinical ExposureelementOrderAssociationelementOrderMoodCode Human Clinical ExposureelementOrderAssociationelementOrderValue Human Clinical ExposureelementOrderAssociationTypeCode Human Clinical ExposureelementOrderAssociationElementOrder Human Clinical ExposureexposureRegimenAssociationexposureIntendedRegimenClassCode Human Clinical ExposureexposureRegimenAssociationexposureIntendedRegimenMoodCode Human Clinical ExposureexposureRegimenAssociationexposureIntendedRegimenCode Human Clinical ExposureexposureRegimenAssociationexposureIntendedRegimenValue Human Clinical ExposureexposureRegimenAssociationTypeCode Human Clinical ExposureexposureRegimenAssociationExposureIntendedRegimen' templateId.root='2.16.840.1.113883.10.20.23.20' classCode='SBADM' constraints.validation.warning='Human Clinical ExposureDoseQuantity Human Clinical ExposureEffectiveTime' moodCode='EVN' constraints.validation.info='Human Clinical ExposureRouteCode Human Clinical ExposureMaxDoseQuantity Human Clinical ExposureText Human Clinical ExposureApproachSiteCode Human Clinical ExposureGroup Identifier Human Clinical ExposureExposureCategoryAssociation Human Clinical ExposureExposureSubCategoryAssociation Human Clinical ExposureDoseAdjustmentReasonAssociation Human Clinical ExposureStudy Epoch Human Clinical ExposureElementOrderAssociation Human Clinical ExposureTiming Reference Human Clinical ExposureStudy Day Period Human Clinical ExposureExposureRegimenAssociation' constraints.validation.query='Human Clinical ExposureexposureCategoryAssociationexposureEventCategoryClassCode Human Clinical ExposureexposureCategoryAssociationexposureEventCategoryCode Human Clinical ExposureexposureCategoryAssociationexposureEventCategoryMoodCode Human Clinical ExposureexposureCategoryAssociationexposureEventCategoryValue Human Clinical ExposureexposureCategoryAssociationTypeCode Human Clinical ExposureexposureCategoryAssociationExposureEventCategory Human Clinical ExposureexposureSubCategoryAssociationexposureEventSubCategoryClassCode Human Clinical ExposureexposureSubCategoryAssociationexposureEventSubCategoryCode Human Clinical ExposureexposureSubCategoryAssociationexposureEventSubCategoryMoodCode Human Clinical ExposureexposureSubCategoryAssociationexposureEventSubCategoryValue Human Clinical ExposureexposureSubCategoryAssociationTypeCode Human Clinical ExposureexposureSubCategoryAssociationExposureEventSubCategory Human Clinical ExposuredoseAdjustmentReasonAssociationdoseAdjustmentReasonClassCode Human Clinical ExposuredoseAdjustmentReasonAssociationdoseAdjustmentReasonCodeP Human Clinical ExposuredoseAdjustmentReasonAssociationdoseAdjustmentReasonCode Human Clinical ExposuredoseAdjustmentReasonAssociationdoseAdjustmentReasonValue Human Clinical ExposuredoseAdjustmentReasonAssociationTypeCode Human Clinical ExposuredoseAdjustmentReasonAssociationDoseAdjustmentReason Human Clinical ExposureelementOrderAssociationelementOrderClassCode Human Clinical ExposureelementOrderAssociationelementOrderCodeP Human Clinical ExposureelementOrderAssociationelementOrderCode Human Clinical ExposureelementOrderAssociationelementOrderMoodCode Human Clinical ExposureelementOrderAssociationelementOrderValue Human Clinical ExposureelementOrderAssociationTypeCode Human Clinical ExposureelementOrderAssociationElementOrder Human Clinical ExposureexposureRegimenAssociationexposureIntendedRegimenClassCode Human Clinical ExposureexposureRegimenAssociationexposureIntendedRegimenMoodCode Human Clinical ExposureexposureRegimenAssociationexposureIntendedRegimenCode Human Clinical ExposureexposureRegimenAssociationexposureIntendedRegimenValue Human Clinical ExposureexposureRegimenAssociationTypeCode Human Clinical ExposureexposureRegimenAssociationExposureIntendedRegimen'"
+ *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/sdtmHumanClinicalExposureexposureCategoryAssociation typeCode='COMP' constraints.validation.error='exposureCategoryAssociationTypeCode exposureCategoryAssociationExposureEventCategory exposureCategoryAssociationexposureEventCategoryClassCode exposureCategoryAssociationexposureEventCategoryCode exposureCategoryAssociationexposureEventCategoryMoodCode exposureCategoryAssociationexposureEventCategoryValue' constraints.validation.query='exposureCategoryAssociationexposureEventCategoryClassCode exposureCategoryAssociationexposureEventCategoryCode exposureCategoryAssociationexposureEventCategoryMoodCode exposureCategoryAssociationexposureEventCategoryValue'"
+ *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/sdtmHumanClinicalExposureexposureCategoryAssociationexposureEventCategory classCode='OBS' constraints.validation.error='exposureEventCategoryClassCode exposureEventCategoryCode exposureEventCategoryMoodCode exposureEventCategoryValue' moodCode='EVN'"
+ *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/sdtmHumanClinicalExposureexposureSubCategoryAssociation typeCode='COMP' constraints.validation.error='exposureSubCategoryAssociationTypeCode exposureSubCategoryAssociationExposureEventSubCategory exposureSubCategoryAssociationexposureEventSubCategoryClassCode exposureSubCategoryAssociationexposureEventSubCategoryCode exposureSubCategoryAssociationexposureEventSubCategoryMoodCode exposureSubCategoryAssociationexposureEventSubCategoryValue' constraints.validation.query='exposureSubCategoryAssociationexposureEventSubCategoryClassCode exposureSubCategoryAssociationexposureEventSubCategoryCode exposureSubCategoryAssociationexposureEventSubCategoryMoodCode exposureSubCategoryAssociationexposureEventSubCategoryValue'"
+ *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/sdtmHumanClinicalExposureexposureSubCategoryAssociationexposureEventSubCategory classCode='OBS' constraints.validation.error='exposureEventSubCategoryClassCode exposureEventSubCategoryCode exposureEventSubCategoryMoodCode exposureEventSubCategoryValue' moodCode='EVN'"
+ *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/sdtmHumanClinicalExposureexposureRegimenAssociation typeCode='CAUS' constraints.validation.error='exposureRegimenAssociationTypeCode exposureRegimenAssociationExposureIntendedRegimen exposureRegimenAssociationexposureIntendedRegimenClassCode exposureRegimenAssociationexposureIntendedRegimenMoodCode exposureRegimenAssociationexposureIntendedRegimenCode exposureRegimenAssociationexposureIntendedRegimenValue' constraints.validation.query='exposureRegimenAssociationexposureIntendedRegimenClassCode exposureRegimenAssociationexposureIntendedRegimenMoodCode exposureRegimenAssociationexposureIntendedRegimenCode exposureRegimenAssociationexposureIntendedRegimenValue'"
+ *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/sdtmHumanClinicalExposureexposureRegimenAssociationexposureIntendedRegimen classCode='OBS' constraints.validation.error='exposureIntendedRegimenClassCode exposureIntendedRegimenMoodCode exposureIntendedRegimenCode exposureIntendedRegimenValue' moodCode='EVN'"
+ *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/sdtmHumanClinicalExposuredoseAdjustmentReasonAssociation typeCode='CAUS' constraints.validation.error='doseAdjustmentReasonAssociationTypeCode doseAdjustmentReasonAssociationDoseAdjustmentReason doseAdjustmentReasonAssociationdoseAdjustmentReasonClassCode doseAdjustmentReasonAssociationdoseAdjustmentReasonCodeP doseAdjustmentReasonAssociationdoseAdjustmentReasonCode doseAdjustmentReasonAssociationdoseAdjustmentReasonValue' constraints.validation.query='doseAdjustmentReasonAssociationdoseAdjustmentReasonClassCode doseAdjustmentReasonAssociationdoseAdjustmentReasonCodeP doseAdjustmentReasonAssociationdoseAdjustmentReasonCode doseAdjustmentReasonAssociationdoseAdjustmentReasonValue' constraints.validation.dependOn.doseAdjustmentReasonAssociationdoseAdjustmentReasonCode='doseAdjustmentReasonAssociationdoseAdjustmentReasonCodeP'"
+ *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/sdtmHumanClinicalExposuredoseAdjustmentReasonAssociationdoseAdjustmentReason classCode='OBS' constraints.validation.error='doseAdjustmentReasonClassCode doseAdjustmentReasonCode doseAdjustmentReasonCodeP doseAdjustmentReasonValue' moodCode='EVN' code.codeSystem='2.16.840.1.113883.3.26.1.1' code.codeSystemName='NCI Thesaurus' constraints.validation.dependOn.doseAdjustmentReasonCode='doseAdjustmentReasonCodeP'"
+ *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/sdtmHumanClinicalExposureelementOrderAssociation typeCode='COMP' constraints.validation.error='elementOrderAssociationTypeCode elementOrderAssociationElementOrder elementOrderAssociationelementOrderClassCode elementOrderAssociationelementOrderCodeP elementOrderAssociationelementOrderCode elementOrderAssociationelementOrderMoodCode elementOrderAssociationelementOrderValue' constraints.validation.query='elementOrderAssociationelementOrderClassCode elementOrderAssociationelementOrderCodeP elementOrderAssociationelementOrderCode elementOrderAssociationelementOrderMoodCode elementOrderAssociationelementOrderValue' constraints.validation.dependOn.elementOrderAssociationelementOrderCode='elementOrderAssociationelementOrderCodeP'"
+ *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/sdtmHumanClinicalExposureelementOrderAssociationelementOrder classCode='OBS' constraints.validation.error='elementOrderClassCode elementOrderCode elementOrderCodeP elementOrderMoodCode elementOrderValue' code.codeSystem='2.16.840.1.113883.3.26.1.1' code.codeSystemName='NCI Thesaurus' constraints.validation.dependOn.elementOrderCode='elementOrderCodeP' moodCode='EVN'"
  * @generated
  */
 public interface HumanClinicalExposure extends SubstanceAdministration
@@ -39,7 +42,6 @@ public interface HumanClinicalExposure extends SubstanceAdministration
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.23.20')
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
    * <!-- end-model-doc -->
@@ -52,7 +54,6 @@ public interface HumanClinicalExposure extends SubstanceAdministration
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.classCode=vocab::ActClass::SBADM
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
    * <!-- end-model-doc -->
@@ -65,7 +66,6 @@ public interface HumanClinicalExposure extends SubstanceAdministration
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * (self.doseQuantity.oclIsUndefined() or self.doseQuantity.isNullFlavorUndefined()) implies (not self.doseQuantity.oclIsUndefined())
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
    * <!-- end-model-doc -->
@@ -78,7 +78,6 @@ public interface HumanClinicalExposure extends SubstanceAdministration
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * (self.effectiveTime->isEmpty() or self.effectiveTime->exists(element | element.isNullFlavorUndefined())) implies (not self.effectiveTime->isEmpty())
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
    * <!-- end-model-doc -->
@@ -91,7 +90,6 @@ public interface HumanClinicalExposure extends SubstanceAdministration
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * (self.id->isEmpty() or self.id->exists(element | element.isNullFlavorUndefined())) implies (not self.id->isEmpty())
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
    * <!-- end-model-doc -->
@@ -104,7 +102,6 @@ public interface HumanClinicalExposure extends SubstanceAdministration
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.moodCode=vocab::x_DocumentSubstanceMood::EVN
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
    * <!-- end-model-doc -->
@@ -117,7 +114,6 @@ public interface HumanClinicalExposure extends SubstanceAdministration
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * (self.routeCode.oclIsUndefined() or self.routeCode.isNullFlavorUndefined()) implies (not self.routeCode.oclIsUndefined())
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
    * <!-- end-model-doc -->
@@ -130,7 +126,6 @@ public interface HumanClinicalExposure extends SubstanceAdministration
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * (self.maxDoseQuantity.oclIsUndefined() or self.maxDoseQuantity.isNullFlavorUndefined()) implies (not self.maxDoseQuantity.oclIsUndefined())
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
    * <!-- end-model-doc -->
@@ -143,7 +138,6 @@ public interface HumanClinicalExposure extends SubstanceAdministration
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * (self.text.oclIsUndefined() or self.text.isNullFlavorUndefined()) implies (not self.text.oclIsUndefined())
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
    * <!-- end-model-doc -->
@@ -156,7 +150,6 @@ public interface HumanClinicalExposure extends SubstanceAdministration
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * (self.approachSiteCode->isEmpty() or self.approachSiteCode->exists(element | element.isNullFlavorUndefined())) implies (self.approachSiteCode->forAll(element | element.oclIsTypeOf(datatypes::CE)))
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
    * <!-- end-model-doc -->
@@ -169,7 +162,6 @@ public interface HumanClinicalExposure extends SubstanceAdministration
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.entryRelationship->one(entryRelationship : cda::EntryRelationship | not entryRelationship.act.oclIsUndefined() and entryRelationship.act.oclIsKindOf(sdtm::Group Identifier) and entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::COMP)
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
    * <!-- end-model-doc -->
@@ -182,7 +174,6 @@ public interface HumanClinicalExposure extends SubstanceAdministration
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.consumable->one(consumable : cda::Consumable | not consumable.oclIsUndefined() and consumable.oclIsKindOf(sdtm::Consumable Material))
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
    * <!-- end-model-doc -->
@@ -195,7 +186,6 @@ public interface HumanClinicalExposure extends SubstanceAdministration
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.entryRelationship->one(entryRelationship : cda::EntryRelationship | not entryRelationship.oclIsUndefined() and entryRelationship.oclIsKindOf(cda::EntryRelationship))
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
    * <!-- end-model-doc -->
@@ -208,7 +198,6 @@ public interface HumanClinicalExposure extends SubstanceAdministration
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.entryRelationship->one(entryRelationship : cda::EntryRelationship | not entryRelationship.oclIsUndefined() and entryRelationship.oclIsKindOf(cda::EntryRelationship))
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
    * <!-- end-model-doc -->
@@ -221,20 +210,6 @@ public interface HumanClinicalExposure extends SubstanceAdministration
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.entryRelationship->one(entryRelationship : cda::EntryRelationship | not entryRelationship.observation.oclIsUndefined() and entryRelationship.observation.oclIsKindOf(cda::Observation) and entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::REFR)
-   * @param diagnostics The chain of diagnostics to which problems are to be appended.
-   * @param context The cache of context-specific information.
-   * <!-- end-model-doc -->
-   * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship->one(entryRelationship : cda::EntryRelationship | not entryRelationship.observation.oclIsUndefined() and entryRelationship.observation.oclIsKindOf(cda::Observation) and entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::REFR)'"
-   * @generated
-   */
-  boolean validateHumanClinicalExposureExposureIndication(DiagnosticChain diagnostics, Map<Object, Object> context);
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * <!-- begin-model-doc -->
-   * self.entryRelationship->one(entryRelationship : cda::EntryRelationship | not entryRelationship.oclIsUndefined() and entryRelationship.oclIsKindOf(cda::EntryRelationship))
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
    * <!-- end-model-doc -->
@@ -247,7 +222,6 @@ public interface HumanClinicalExposure extends SubstanceAdministration
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.entryRelationship->one(entryRelationship : cda::EntryRelationship | not entryRelationship.act.oclIsUndefined() and entryRelationship.act.oclIsKindOf(sdtm::Study Epoch) and entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::COMP)
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
    * <!-- end-model-doc -->
@@ -260,7 +234,6 @@ public interface HumanClinicalExposure extends SubstanceAdministration
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.entryRelationship->one(entryRelationship : cda::EntryRelationship | not entryRelationship.oclIsUndefined() and entryRelationship.oclIsKindOf(cda::EntryRelationship))
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
    * <!-- end-model-doc -->
@@ -273,7 +246,6 @@ public interface HumanClinicalExposure extends SubstanceAdministration
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.entryRelationship->one(entryRelationship : cda::EntryRelationship | not entryRelationship.act.oclIsUndefined() and entryRelationship.act.oclIsKindOf(sdtm::Timing Reference) and entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::REFR)
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
    * <!-- end-model-doc -->
@@ -286,7 +258,6 @@ public interface HumanClinicalExposure extends SubstanceAdministration
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.entryRelationship->one(entryRelationship : cda::EntryRelationship | not entryRelationship.observation.oclIsUndefined() and entryRelationship.observation.oclIsKindOf(sdtm::Study Day Period) and entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::REFR)
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
    * <!-- end-model-doc -->
@@ -299,7 +270,66 @@ public interface HumanClinicalExposure extends SubstanceAdministration
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.entryRelationship->excluding(null)->reject(typeCode=vocab::x_ActRelationshipEntryRelationship::COMP)
+   * @param diagnostics The chain of diagnostics to which problems are to be appended.
+   * @param context The cache of context-specific information.
+   * <!-- end-model-doc -->
+   * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship->one(entryRelationship : cda::EntryRelationship | not entryRelationship.oclIsUndefined() and entryRelationship.oclIsKindOf(cda::EntryRelationship))'"
+   * @generated
+   */
+  boolean validateHumanClinicalExposureExposureRegimenAssociation(DiagnosticChain diagnostics, Map<Object, Object> context);
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * <!-- begin-model-doc -->
+   * @param diagnostics The chain of diagnostics to which problems are to be appended.
+   * @param context The cache of context-specific information.
+   * <!-- end-model-doc -->
+   * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship->excluding(null).observation->excluding(null)->reject(classCode=vocab::ActClassObservation::OBS)'"
+   * @generated
+   */
+  boolean validateHumanClinicalExposureexposureCategoryAssociationexposureEventCategoryClassCode(DiagnosticChain diagnostics, Map<Object, Object> context);
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * <!-- begin-model-doc -->
+   * @param diagnostics The chain of diagnostics to which problems are to be appended.
+   * @param context The cache of context-specific information.
+   * <!-- end-model-doc -->
+   * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship->excluding(null).observation->excluding(null)->reject((code.oclIsUndefined() or code.isNullFlavorUndefined()) implies (not code.oclIsUndefined()))'"
+   * @generated
+   */
+  boolean validateHumanClinicalExposureexposureCategoryAssociationexposureEventCategoryCode(DiagnosticChain diagnostics, Map<Object, Object> context);
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * <!-- begin-model-doc -->
+   * @param diagnostics The chain of diagnostics to which problems are to be appended.
+   * @param context The cache of context-specific information.
+   * <!-- end-model-doc -->
+   * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship->excluding(null).observation->excluding(null)->reject(moodCode=vocab::x_ActMoodDocumentObservation::EVN)'"
+   * @generated
+   */
+  boolean validateHumanClinicalExposureexposureCategoryAssociationexposureEventCategoryMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context);
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * <!-- begin-model-doc -->
+   * @param diagnostics The chain of diagnostics to which problems are to be appended.
+   * @param context The cache of context-specific information.
+   * <!-- end-model-doc -->
+   * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship->excluding(null).observation->excluding(null)->reject((value->isEmpty() or value->exists(element | element.isNullFlavorUndefined())) implies (value->size() = 1 and value->forAll(element | element.oclIsTypeOf(datatypes::CE))))'"
+   * @generated
+   */
+  boolean validateHumanClinicalExposureexposureCategoryAssociationexposureEventCategoryValue(DiagnosticChain diagnostics, Map<Object, Object> context);
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * <!-- begin-model-doc -->
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
    * <!-- end-model-doc -->
@@ -312,7 +342,66 @@ public interface HumanClinicalExposure extends SubstanceAdministration
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.entryRelationship->excluding(null)->reject(typeCode=vocab::x_ActRelationshipEntryRelationship::COMP)
+   * @param diagnostics The chain of diagnostics to which problems are to be appended.
+   * @param context The cache of context-specific information.
+   * <!-- end-model-doc -->
+   * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship->excluding(null)->reject(observation->one(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(cda::Observation)))'"
+   * @generated
+   */
+  boolean validateHumanClinicalExposureexposureCategoryAssociationExposureEventCategory(DiagnosticChain diagnostics, Map<Object, Object> context);
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * <!-- begin-model-doc -->
+   * @param diagnostics The chain of diagnostics to which problems are to be appended.
+   * @param context The cache of context-specific information.
+   * <!-- end-model-doc -->
+   * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship->excluding(null).observation->excluding(null)->reject(classCode=vocab::ActClassObservation::OBS)'"
+   * @generated
+   */
+  boolean validateHumanClinicalExposureexposureSubCategoryAssociationexposureEventSubCategoryClassCode(DiagnosticChain diagnostics, Map<Object, Object> context);
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * <!-- begin-model-doc -->
+   * @param diagnostics The chain of diagnostics to which problems are to be appended.
+   * @param context The cache of context-specific information.
+   * <!-- end-model-doc -->
+   * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship->excluding(null).observation->excluding(null)->reject((code.oclIsUndefined() or code.isNullFlavorUndefined()) implies (not code.oclIsUndefined()))'"
+   * @generated
+   */
+  boolean validateHumanClinicalExposureexposureSubCategoryAssociationexposureEventSubCategoryCode(DiagnosticChain diagnostics, Map<Object, Object> context);
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * <!-- begin-model-doc -->
+   * @param diagnostics The chain of diagnostics to which problems are to be appended.
+   * @param context The cache of context-specific information.
+   * <!-- end-model-doc -->
+   * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship->excluding(null).observation->excluding(null)->reject(moodCode=vocab::x_ActMoodDocumentObservation::EVN)'"
+   * @generated
+   */
+  boolean validateHumanClinicalExposureexposureSubCategoryAssociationexposureEventSubCategoryMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context);
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * <!-- begin-model-doc -->
+   * @param diagnostics The chain of diagnostics to which problems are to be appended.
+   * @param context The cache of context-specific information.
+   * <!-- end-model-doc -->
+   * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship->excluding(null).observation->excluding(null)->reject((value->isEmpty() or value->exists(element | element.isNullFlavorUndefined())) implies (value->size() = 1 and value->forAll(element | element.oclIsTypeOf(datatypes::CE))))'"
+   * @generated
+   */
+  boolean validateHumanClinicalExposureexposureSubCategoryAssociationexposureEventSubCategoryValue(DiagnosticChain diagnostics, Map<Object, Object> context);
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * <!-- begin-model-doc -->
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
    * <!-- end-model-doc -->
@@ -325,59 +414,66 @@ public interface HumanClinicalExposure extends SubstanceAdministration
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.->reject(classCode=vocab::ActClassObservation::OBS)
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
    * <!-- end-model-doc -->
-   * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.->reject(classCode=vocab::ActClassObservation::OBS)'"
+   * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship->excluding(null)->reject(observation->one(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(cda::Observation)))'"
    * @generated
    */
-  boolean validateHumanClinicalExposureexposureIntendedRegimenClassCode(DiagnosticChain diagnostics, Map<Object, Object> context);
+  boolean validateHumanClinicalExposureexposureSubCategoryAssociationExposureEventSubCategory(DiagnosticChain diagnostics, Map<Object, Object> context);
 
   /**
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.->reject(moodCode=vocab::x_ActMoodDocumentObservation::EVN)
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
    * <!-- end-model-doc -->
-   * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.->reject(moodCode=vocab::x_ActMoodDocumentObservation::EVN)'"
+   * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship->excluding(null).observation->excluding(null)->reject(classCode=vocab::ActClassObservation::OBS)'"
    * @generated
    */
-  boolean validateHumanClinicalExposureexposureIntendedRegimenMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context);
+  boolean validateHumanClinicalExposuredoseAdjustmentReasonAssociationdoseAdjustmentReasonClassCode(DiagnosticChain diagnostics, Map<Object, Object> context);
 
   /**
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.->reject((code.oclIsUndefined() or code.isNullFlavorUndefined()) implies (not code.oclIsUndefined()))
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
    * <!-- end-model-doc -->
-   * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.->reject((code.oclIsUndefined() or code.isNullFlavorUndefined()) implies (not code.oclIsUndefined()))'"
+   * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship->excluding(null).observation->excluding(null)->reject((code.oclIsUndefined() or code.isNullFlavorUndefined()) implies (not code.oclIsUndefined()))'"
    * @generated
    */
-  boolean validateHumanClinicalExposureexposureIntendedRegimenCode(DiagnosticChain diagnostics, Map<Object, Object> context);
+  boolean validateHumanClinicalExposuredoseAdjustmentReasonAssociationdoseAdjustmentReasonCodeP(DiagnosticChain diagnostics, Map<Object, Object> context);
 
   /**
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.->reject((value->isEmpty() or value->exists(element | element.isNullFlavorUndefined())) implies (value->size() = 1 and value->forAll(element | element.oclIsTypeOf(datatypes::ED))))
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
    * <!-- end-model-doc -->
-   * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.->reject((value->isEmpty() or value->exists(element | element.isNullFlavorUndefined())) implies (value->size() = 1 and value->forAll(element | element.oclIsTypeOf(datatypes::ED))))'"
+   * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship->excluding(null).observation->excluding(null)->reject((code.oclIsUndefined() or code.isNullFlavorUndefined()) implies (not code.oclIsUndefined() and code.oclIsKindOf(datatypes::CD) and \nlet value : datatypes::CD = code.oclAsType(datatypes::CD) in \nvalue.codeSystem = \'2.16.840.1.113883.3.26.1.1\'))'"
    * @generated
    */
-  boolean validateHumanClinicalExposureexposureIntendedRegimenValue(DiagnosticChain diagnostics, Map<Object, Object> context);
+  boolean validateHumanClinicalExposuredoseAdjustmentReasonAssociationdoseAdjustmentReasonCode(DiagnosticChain diagnostics, Map<Object, Object> context);
 
   /**
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.entryRelationship->excluding(null)->reject(typeCode=vocab::x_ActRelationshipEntryRelationship::CAUS)
+   * @param diagnostics The chain of diagnostics to which problems are to be appended.
+   * @param context The cache of context-specific information.
+   * <!-- end-model-doc -->
+   * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship->excluding(null).observation->excluding(null)->reject((value->isEmpty() or value->exists(element | element.isNullFlavorUndefined())) implies (value->size() = 1 and value->forAll(element | element.oclIsTypeOf(datatypes::ED))))'"
+   * @generated
+   */
+  boolean validateHumanClinicalExposuredoseAdjustmentReasonAssociationdoseAdjustmentReasonValue(DiagnosticChain diagnostics, Map<Object, Object> context);
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * <!-- begin-model-doc -->
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
    * <!-- end-model-doc -->
@@ -390,7 +486,18 @@ public interface HumanClinicalExposure extends SubstanceAdministration
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.entryRelationship->excluding(null).observation->excluding(null)->reject(isDefined('classCode'))
+   * @param diagnostics The chain of diagnostics to which problems are to be appended.
+   * @param context The cache of context-specific information.
+   * <!-- end-model-doc -->
+   * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship->excluding(null)->reject(observation->one(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(cda::Observation)))'"
+   * @generated
+   */
+  boolean validateHumanClinicalExposuredoseAdjustmentReasonAssociationDoseAdjustmentReason(DiagnosticChain diagnostics, Map<Object, Object> context);
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * <!-- begin-model-doc -->
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
    * <!-- end-model-doc -->
@@ -403,7 +510,6 @@ public interface HumanClinicalExposure extends SubstanceAdministration
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.entryRelationship->excluding(null).observation->excluding(null)->reject((code.oclIsUndefined() or code.isNullFlavorUndefined()) implies (not code.oclIsUndefined()))
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
    * <!-- end-model-doc -->
@@ -416,13 +522,10 @@ public interface HumanClinicalExposure extends SubstanceAdministration
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.entryRelationship->excluding(null).observation->excluding(null)->reject((code.oclIsUndefined() or code.isNullFlavorUndefined()) implies (not code.oclIsUndefined() and code.oclIsKindOf(datatypes::CD) and 
-   * let value : datatypes::CD = code.oclAsType(datatypes::CD) in 
-   * value.codeSystem = '2.16.840.1.113883.3.26.1.1'))
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
    * <!-- end-model-doc -->
-   * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship->excluding(null).observation->excluding(null)->reject((code.oclIsUndefined() or code.isNullFlavorUndefined()) implies (not code.oclIsUndefined() and code.oclIsKindOf(datatypes::CD) and \r\nlet value : datatypes::CD = code.oclAsType(datatypes::CD) in \r\nvalue.codeSystem = \'2.16.840.1.113883.3.26.1.1\'))'"
+   * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship->excluding(null).observation->excluding(null)->reject((code.oclIsUndefined() or code.isNullFlavorUndefined()) implies (not code.oclIsUndefined() and code.oclIsKindOf(datatypes::CD) and \nlet value : datatypes::CD = code.oclAsType(datatypes::CD) in \nvalue.codeSystem = \'2.16.840.1.113883.3.26.1.1\'))'"
    * @generated
    */
   boolean validateHumanClinicalExposureelementOrderAssociationelementOrderCode(DiagnosticChain diagnostics, Map<Object, Object> context);
@@ -431,7 +534,6 @@ public interface HumanClinicalExposure extends SubstanceAdministration
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.entryRelationship->excluding(null).observation->excluding(null)->reject(moodCode=vocab::x_ActMoodDocumentObservation::EVN)
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
    * <!-- end-model-doc -->
@@ -444,7 +546,6 @@ public interface HumanClinicalExposure extends SubstanceAdministration
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.entryRelationship->excluding(null).observation->excluding(null)->reject((value->isEmpty() or value->exists(element | element.isNullFlavorUndefined())) implies (value->forAll(element | element.oclIsTypeOf(datatypes::INT))))
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
    * <!-- end-model-doc -->
@@ -457,7 +558,6 @@ public interface HumanClinicalExposure extends SubstanceAdministration
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.entryRelationship->excluding(null)->reject(typeCode=vocab::x_ActRelationshipEntryRelationship::COMP)
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
    * <!-- end-model-doc -->
@@ -470,7 +570,6 @@ public interface HumanClinicalExposure extends SubstanceAdministration
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.entryRelationship->excluding(null)->reject(observation->one(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(cda::Observation)))
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
    * <!-- end-model-doc -->
@@ -483,10 +582,79 @@ public interface HumanClinicalExposure extends SubstanceAdministration
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(sdtm::Group Identifier))->asSequence()->first().oclAsType(sdtm::Group Identifier)
+   * @param diagnostics The chain of diagnostics to which problems are to be appended.
+   * @param context The cache of context-specific information.
    * <!-- end-model-doc -->
+   * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship->excluding(null).observation->excluding(null)->reject(classCode=vocab::ActClassObservation::OBS)'"
+   * @generated
+   */
+  boolean validateHumanClinicalExposureexposureRegimenAssociationexposureIntendedRegimenClassCode(DiagnosticChain diagnostics, Map<Object, Object> context);
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * <!-- begin-model-doc -->
+   * @param diagnostics The chain of diagnostics to which problems are to be appended.
+   * @param context The cache of context-specific information.
+   * <!-- end-model-doc -->
+   * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship->excluding(null).observation->excluding(null)->reject(moodCode=vocab::x_ActMoodDocumentObservation::EVN)'"
+   * @generated
+   */
+  boolean validateHumanClinicalExposureexposureRegimenAssociationexposureIntendedRegimenMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context);
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * <!-- begin-model-doc -->
+   * @param diagnostics The chain of diagnostics to which problems are to be appended.
+   * @param context The cache of context-specific information.
+   * <!-- end-model-doc -->
+   * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship->excluding(null).observation->excluding(null)->reject((code.oclIsUndefined() or code.isNullFlavorUndefined()) implies (not code.oclIsUndefined()))'"
+   * @generated
+   */
+  boolean validateHumanClinicalExposureexposureRegimenAssociationexposureIntendedRegimenCode(DiagnosticChain diagnostics, Map<Object, Object> context);
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * <!-- begin-model-doc -->
+   * @param diagnostics The chain of diagnostics to which problems are to be appended.
+   * @param context The cache of context-specific information.
+   * <!-- end-model-doc -->
+   * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship->excluding(null).observation->excluding(null)->reject((value->isEmpty() or value->exists(element | element.isNullFlavorUndefined())) implies (value->size() = 1 and value->forAll(element | element.oclIsTypeOf(datatypes::ED))))'"
+   * @generated
+   */
+  boolean validateHumanClinicalExposureexposureRegimenAssociationexposureIntendedRegimenValue(DiagnosticChain diagnostics, Map<Object, Object> context);
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * <!-- begin-model-doc -->
+   * @param diagnostics The chain of diagnostics to which problems are to be appended.
+   * @param context The cache of context-specific information.
+   * <!-- end-model-doc -->
+   * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship->excluding(null)->reject(typeCode=vocab::x_ActRelationshipEntryRelationship::CAUS)'"
+   * @generated
+   */
+  boolean validateHumanClinicalExposureexposureRegimenAssociationTypeCode(DiagnosticChain diagnostics, Map<Object, Object> context);
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * <!-- begin-model-doc -->
+   * @param diagnostics The chain of diagnostics to which problems are to be appended.
+   * @param context The cache of context-specific information.
+   * <!-- end-model-doc -->
+   * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship->excluding(null)->reject(observation->one(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(cda::Observation)))'"
+   * @generated
+   */
+  boolean validateHumanClinicalExposureexposureRegimenAssociationExposureIntendedRegimen(DiagnosticChain diagnostics, Map<Object, Object> context);
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
    * @model kind="operation" required="true" ordered="false"
-   *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(sdtm::Group Identifier))->asSequence()->first().oclAsType(sdtm::Group Identifier)'"
+   *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(sdtm::Group Identifier))->asSequence()->any(true).oclAsType(sdtm::Group Identifier)'"
    * @generated
    */
   GroupIdentifier getGroupIdentifier();
@@ -494,23 +662,8 @@ public interface HumanClinicalExposure extends SubstanceAdministration
   /**
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * <!-- begin-model-doc -->
-   * self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(cda::Observation))->asSequence()->first().oclAsType(cda::Observation)
-   * <!-- end-model-doc -->
    * @model kind="operation" required="true" ordered="false"
-   *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(cda::Observation))->asSequence()->first().oclAsType(cda::Observation)'"
-   * @generated
-   */
-  Observation getExposureIndication();
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * <!-- begin-model-doc -->
-   * self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(sdtm::Study Epoch))->asSequence()->first().oclAsType(sdtm::Study Epoch)
-   * <!-- end-model-doc -->
-   * @model kind="operation" required="true" ordered="false"
-   *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(sdtm::Study Epoch))->asSequence()->first().oclAsType(sdtm::Study Epoch)'"
+   *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(sdtm::Study Epoch))->asSequence()->any(true).oclAsType(sdtm::Study Epoch)'"
    * @generated
    */
   StudyEpoch getStudyEpoch();
@@ -518,11 +671,8 @@ public interface HumanClinicalExposure extends SubstanceAdministration
   /**
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * <!-- begin-model-doc -->
-   * self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(sdtm::Timing Reference))->asSequence()->first().oclAsType(sdtm::Timing Reference)
-   * <!-- end-model-doc -->
    * @model kind="operation" required="true" ordered="false"
-   *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(sdtm::Timing Reference))->asSequence()->first().oclAsType(sdtm::Timing Reference)'"
+   *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(sdtm::Timing Reference))->asSequence()->any(true).oclAsType(sdtm::Timing Reference)'"
    * @generated
    */
   TimingReference getTimingReference();
@@ -530,11 +680,8 @@ public interface HumanClinicalExposure extends SubstanceAdministration
   /**
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * <!-- begin-model-doc -->
-   * self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(sdtm::Study Day Period))->asSequence()->first().oclAsType(sdtm::Study Day Period)
-   * <!-- end-model-doc -->
    * @model kind="operation" required="true" ordered="false"
-   *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(sdtm::Study Day Period))->asSequence()->first().oclAsType(sdtm::Study Day Period)'"
+   *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(sdtm::Study Day Period))->asSequence()->any(true).oclAsType(sdtm::Study Day Period)'"
    * @generated
    */
   StudyDayPeriod getStudyDayPeriod();
@@ -545,4 +692,11 @@ public interface HumanClinicalExposure extends SubstanceAdministration
    * @generated
    */
   public HumanClinicalExposure init();
+
+  /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    public HumanClinicalExposure init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // HumanClinicalExposure

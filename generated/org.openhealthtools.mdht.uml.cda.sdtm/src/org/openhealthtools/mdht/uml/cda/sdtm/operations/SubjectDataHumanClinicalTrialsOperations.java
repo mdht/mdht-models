@@ -97,7 +97,6 @@ public class SubjectDataHumanClinicalTrialsOperations extends ClinicalDocumentOp
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.23.11')
    * @param subjectDataHumanClinicalTrials The receiving '<em><b>Subject Data Human Clinical Trials</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -107,6 +106,7 @@ public class SubjectDataHumanClinicalTrialsOperations extends ClinicalDocumentOp
   
   public static  boolean validateSubjectDataHumanClinicalTrialsTemplateId(SubjectDataHumanClinicalTrials subjectDataHumanClinicalTrials, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
+  	  
     if (VALIDATE_SUBJECT_DATA_HUMAN_CLINICAL_TRIALS_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(SdtmPackage.Literals.SUBJECT_DATA_HUMAN_CLINICAL_TRIALS);
@@ -131,6 +131,7 @@ public class SubjectDataHumanClinicalTrialsOperations extends ClinicalDocumentOp
              org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "SubjectDataHumanClinicalTrialsTemplateId", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(subjectDataHumanClinicalTrials, context) }),
              new Object [] { subjectDataHumanClinicalTrials }));
       }
+       
       return false;
     }
     return true;
@@ -162,7 +163,6 @@ public class SubjectDataHumanClinicalTrialsOperations extends ClinicalDocumentOp
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * isDefined('classCode') and self.classCode=vocab::ActClinicalDocument::DOCCLIN
    * @param subjectDataHumanClinicalTrials The receiving '<em><b>Subject Data Human Clinical Trials</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -172,6 +172,7 @@ public class SubjectDataHumanClinicalTrialsOperations extends ClinicalDocumentOp
   
   public static  boolean validateSubjectDataHumanClinicalTrialsClassCode(SubjectDataHumanClinicalTrials subjectDataHumanClinicalTrials, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
+  	  
     if (VALIDATE_SUBJECT_DATA_HUMAN_CLINICAL_TRIALS_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(SdtmPackage.Literals.SUBJECT_DATA_HUMAN_CLINICAL_TRIALS);
@@ -196,6 +197,7 @@ public class SubjectDataHumanClinicalTrialsOperations extends ClinicalDocumentOp
              org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "SubjectDataHumanClinicalTrialsClassCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(subjectDataHumanClinicalTrials, context) }),
              new Object [] { subjectDataHumanClinicalTrials }));
       }
+       
       return false;
     }
     return true;
@@ -227,7 +229,6 @@ public class SubjectDataHumanClinicalTrialsOperations extends ClinicalDocumentOp
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * (self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined())
    * @param subjectDataHumanClinicalTrials The receiving '<em><b>Subject Data Human Clinical Trials</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -237,6 +238,7 @@ public class SubjectDataHumanClinicalTrialsOperations extends ClinicalDocumentOp
   
   public static  boolean validateSubjectDataHumanClinicalTrialsCodeP(SubjectDataHumanClinicalTrials subjectDataHumanClinicalTrials, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
+  	  
     if (VALIDATE_SUBJECT_DATA_HUMAN_CLINICAL_TRIALS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(SdtmPackage.Literals.SUBJECT_DATA_HUMAN_CLINICAL_TRIALS);
@@ -261,6 +263,7 @@ public class SubjectDataHumanClinicalTrialsOperations extends ClinicalDocumentOp
              org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "SubjectDataHumanClinicalTrialsCodeP", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(subjectDataHumanClinicalTrials, context) }),
              new Object [] { subjectDataHumanClinicalTrials }));
       }
+       
       return false;
     }
     return true;
@@ -294,9 +297,6 @@ public class SubjectDataHumanClinicalTrialsOperations extends ClinicalDocumentOp
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * (self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and 
-   * let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in 
-   * value.code = 'TBD' and value.codeSystem = '2.16.840.1.113883.6.1')
    * @param subjectDataHumanClinicalTrials The receiving '<em><b>Subject Data Human Clinical Trials</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -306,6 +306,7 @@ public class SubjectDataHumanClinicalTrialsOperations extends ClinicalDocumentOp
   
   public static  boolean validateSubjectDataHumanClinicalTrialsCode(SubjectDataHumanClinicalTrials subjectDataHumanClinicalTrials, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
+  	  
     if (VALIDATE_SUBJECT_DATA_HUMAN_CLINICAL_TRIALS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(SdtmPackage.Literals.SUBJECT_DATA_HUMAN_CLINICAL_TRIALS);
@@ -330,6 +331,7 @@ public class SubjectDataHumanClinicalTrialsOperations extends ClinicalDocumentOp
              org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "SubjectDataHumanClinicalTrialsCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(subjectDataHumanClinicalTrials, context) }),
              new Object [] { subjectDataHumanClinicalTrials }));
       }
+       
       return false;
     }
     return true;
@@ -361,7 +363,6 @@ public class SubjectDataHumanClinicalTrialsOperations extends ClinicalDocumentOp
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * (self.confidentialityCode.oclIsUndefined() or self.confidentialityCode.isNullFlavorUndefined()) implies (not self.confidentialityCode.oclIsUndefined())
    * @param subjectDataHumanClinicalTrials The receiving '<em><b>Subject Data Human Clinical Trials</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -371,6 +372,7 @@ public class SubjectDataHumanClinicalTrialsOperations extends ClinicalDocumentOp
   
   public static  boolean validateSubjectDataHumanClinicalTrialsConfidentialityCodeP(SubjectDataHumanClinicalTrials subjectDataHumanClinicalTrials, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
+  	  
     if (VALIDATE_SUBJECT_DATA_HUMAN_CLINICAL_TRIALS_CONFIDENTIALITY_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(SdtmPackage.Literals.SUBJECT_DATA_HUMAN_CLINICAL_TRIALS);
@@ -395,6 +397,7 @@ public class SubjectDataHumanClinicalTrialsOperations extends ClinicalDocumentOp
              org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "SubjectDataHumanClinicalTrialsConfidentialityCodeP", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(subjectDataHumanClinicalTrials, context) }),
              new Object [] { subjectDataHumanClinicalTrials }));
       }
+       
       return false;
     }
     return true;
@@ -428,9 +431,6 @@ public class SubjectDataHumanClinicalTrialsOperations extends ClinicalDocumentOp
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * (self.confidentialityCode.oclIsUndefined() or self.confidentialityCode.isNullFlavorUndefined()) implies (not self.confidentialityCode.oclIsUndefined() and self.confidentialityCode.oclIsKindOf(datatypes::CE) and 
-   * let value : datatypes::CE = self.confidentialityCode.oclAsType(datatypes::CE) in 
-   * value.codeSystem = '2.16.840.1.113883.5.25')
    * @param subjectDataHumanClinicalTrials The receiving '<em><b>Subject Data Human Clinical Trials</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -440,6 +440,7 @@ public class SubjectDataHumanClinicalTrialsOperations extends ClinicalDocumentOp
   
   public static  boolean validateSubjectDataHumanClinicalTrialsConfidentialityCode(SubjectDataHumanClinicalTrials subjectDataHumanClinicalTrials, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
+  	  
     if (VALIDATE_SUBJECT_DATA_HUMAN_CLINICAL_TRIALS_CONFIDENTIALITY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(SdtmPackage.Literals.SUBJECT_DATA_HUMAN_CLINICAL_TRIALS);
@@ -464,6 +465,7 @@ public class SubjectDataHumanClinicalTrialsOperations extends ClinicalDocumentOp
              org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "SubjectDataHumanClinicalTrialsConfidentialityCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(subjectDataHumanClinicalTrials, context) }),
              new Object [] { subjectDataHumanClinicalTrials }));
       }
+       
       return false;
     }
     return true;
@@ -495,7 +497,6 @@ public class SubjectDataHumanClinicalTrialsOperations extends ClinicalDocumentOp
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * not self.effectiveTime.oclIsUndefined()
    * @param subjectDataHumanClinicalTrials The receiving '<em><b>Subject Data Human Clinical Trials</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -505,6 +506,7 @@ public class SubjectDataHumanClinicalTrialsOperations extends ClinicalDocumentOp
   
   public static  boolean validateSubjectDataHumanClinicalTrialsEffectiveTime(SubjectDataHumanClinicalTrials subjectDataHumanClinicalTrials, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
+  	  
     if (VALIDATE_SUBJECT_DATA_HUMAN_CLINICAL_TRIALS_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(SdtmPackage.Literals.SUBJECT_DATA_HUMAN_CLINICAL_TRIALS);
@@ -529,6 +531,7 @@ public class SubjectDataHumanClinicalTrialsOperations extends ClinicalDocumentOp
              org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "SubjectDataHumanClinicalTrialsEffectiveTime", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(subjectDataHumanClinicalTrials, context) }),
              new Object [] { subjectDataHumanClinicalTrials }));
       }
+       
       return false;
     }
     return true;
@@ -560,7 +563,6 @@ public class SubjectDataHumanClinicalTrialsOperations extends ClinicalDocumentOp
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * not self.id.oclIsUndefined()
    * @param subjectDataHumanClinicalTrials The receiving '<em><b>Subject Data Human Clinical Trials</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -570,6 +572,7 @@ public class SubjectDataHumanClinicalTrialsOperations extends ClinicalDocumentOp
   
   public static  boolean validateSubjectDataHumanClinicalTrialsId(SubjectDataHumanClinicalTrials subjectDataHumanClinicalTrials, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
+  	  
     if (VALIDATE_SUBJECT_DATA_HUMAN_CLINICAL_TRIALS_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(SdtmPackage.Literals.SUBJECT_DATA_HUMAN_CLINICAL_TRIALS);
@@ -594,6 +597,7 @@ public class SubjectDataHumanClinicalTrialsOperations extends ClinicalDocumentOp
              org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "SubjectDataHumanClinicalTrialsId", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(subjectDataHumanClinicalTrials, context) }),
              new Object [] { subjectDataHumanClinicalTrials }));
       }
+       
       return false;
     }
     return true;
@@ -625,7 +629,6 @@ public class SubjectDataHumanClinicalTrialsOperations extends ClinicalDocumentOp
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * (self.languageCode.oclIsUndefined() or self.languageCode.isNullFlavorUndefined()) implies (not self.languageCode.oclIsUndefined())
    * @param subjectDataHumanClinicalTrials The receiving '<em><b>Subject Data Human Clinical Trials</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -635,6 +638,7 @@ public class SubjectDataHumanClinicalTrialsOperations extends ClinicalDocumentOp
   
   public static  boolean validateSubjectDataHumanClinicalTrialsLanguageCode(SubjectDataHumanClinicalTrials subjectDataHumanClinicalTrials, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
+  	  
     if (VALIDATE_SUBJECT_DATA_HUMAN_CLINICAL_TRIALS_LANGUAGE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(SdtmPackage.Literals.SUBJECT_DATA_HUMAN_CLINICAL_TRIALS);
@@ -659,6 +663,7 @@ public class SubjectDataHumanClinicalTrialsOperations extends ClinicalDocumentOp
              org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "SubjectDataHumanClinicalTrialsLanguageCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(subjectDataHumanClinicalTrials, context) }),
              new Object [] { subjectDataHumanClinicalTrials }));
       }
+       
       return false;
     }
     return true;
@@ -690,7 +695,6 @@ public class SubjectDataHumanClinicalTrialsOperations extends ClinicalDocumentOp
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * isDefined('moodCode') and self.moodCode=vocab::ActMood::EVN
    * @param subjectDataHumanClinicalTrials The receiving '<em><b>Subject Data Human Clinical Trials</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -700,6 +704,7 @@ public class SubjectDataHumanClinicalTrialsOperations extends ClinicalDocumentOp
   
   public static  boolean validateSubjectDataHumanClinicalTrialsMoodCode(SubjectDataHumanClinicalTrials subjectDataHumanClinicalTrials, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
+  	  
     if (VALIDATE_SUBJECT_DATA_HUMAN_CLINICAL_TRIALS_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(SdtmPackage.Literals.SUBJECT_DATA_HUMAN_CLINICAL_TRIALS);
@@ -724,6 +729,7 @@ public class SubjectDataHumanClinicalTrialsOperations extends ClinicalDocumentOp
              org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "SubjectDataHumanClinicalTrialsMoodCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(subjectDataHumanClinicalTrials, context) }),
              new Object [] { subjectDataHumanClinicalTrials }));
       }
+       
       return false;
     }
     return true;
@@ -755,7 +761,6 @@ public class SubjectDataHumanClinicalTrialsOperations extends ClinicalDocumentOp
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * (self.realmCode->isEmpty() or self.realmCode->exists(element | element.isNullFlavorUndefined())) implies (not self.realmCode->isEmpty())
    * @param subjectDataHumanClinicalTrials The receiving '<em><b>Subject Data Human Clinical Trials</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -765,6 +770,7 @@ public class SubjectDataHumanClinicalTrialsOperations extends ClinicalDocumentOp
   
   public static  boolean validateSubjectDataHumanClinicalTrialsRealmCode(SubjectDataHumanClinicalTrials subjectDataHumanClinicalTrials, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
+  	  
     if (VALIDATE_SUBJECT_DATA_HUMAN_CLINICAL_TRIALS_REALM_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(SdtmPackage.Literals.SUBJECT_DATA_HUMAN_CLINICAL_TRIALS);
@@ -789,6 +795,7 @@ public class SubjectDataHumanClinicalTrialsOperations extends ClinicalDocumentOp
              org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "SubjectDataHumanClinicalTrialsRealmCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(subjectDataHumanClinicalTrials, context) }),
              new Object [] { subjectDataHumanClinicalTrials }));
       }
+       
       return false;
     }
     return true;
@@ -820,7 +827,6 @@ public class SubjectDataHumanClinicalTrialsOperations extends ClinicalDocumentOp
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * (self.setId.oclIsUndefined() or self.setId.isNullFlavorUndefined()) implies (not self.setId.oclIsUndefined())
    * @param subjectDataHumanClinicalTrials The receiving '<em><b>Subject Data Human Clinical Trials</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -830,6 +836,7 @@ public class SubjectDataHumanClinicalTrialsOperations extends ClinicalDocumentOp
   
   public static  boolean validateSubjectDataHumanClinicalTrialsSetId(SubjectDataHumanClinicalTrials subjectDataHumanClinicalTrials, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
+  	  
     if (VALIDATE_SUBJECT_DATA_HUMAN_CLINICAL_TRIALS_SET_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(SdtmPackage.Literals.SUBJECT_DATA_HUMAN_CLINICAL_TRIALS);
@@ -854,6 +861,7 @@ public class SubjectDataHumanClinicalTrialsOperations extends ClinicalDocumentOp
              org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "SubjectDataHumanClinicalTrialsSetId", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(subjectDataHumanClinicalTrials, context) }),
              new Object [] { subjectDataHumanClinicalTrials }));
       }
+       
       return false;
     }
     return true;
@@ -885,7 +893,6 @@ public class SubjectDataHumanClinicalTrialsOperations extends ClinicalDocumentOp
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * (self.versionNumber.oclIsUndefined() or self.versionNumber.isNullFlavorUndefined()) implies (not self.versionNumber.oclIsUndefined())
    * @param subjectDataHumanClinicalTrials The receiving '<em><b>Subject Data Human Clinical Trials</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -895,6 +902,7 @@ public class SubjectDataHumanClinicalTrialsOperations extends ClinicalDocumentOp
   
   public static  boolean validateSubjectDataHumanClinicalTrialsVersionNumber(SubjectDataHumanClinicalTrials subjectDataHumanClinicalTrials, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
+  	  
     if (VALIDATE_SUBJECT_DATA_HUMAN_CLINICAL_TRIALS_VERSION_NUMBER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(SdtmPackage.Literals.SUBJECT_DATA_HUMAN_CLINICAL_TRIALS);
@@ -919,6 +927,7 @@ public class SubjectDataHumanClinicalTrialsOperations extends ClinicalDocumentOp
              org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "SubjectDataHumanClinicalTrialsVersionNumber", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(subjectDataHumanClinicalTrials, context) }),
              new Object [] { subjectDataHumanClinicalTrials }));
       }
+       
       return false;
     }
     return true;
@@ -950,7 +959,6 @@ public class SubjectDataHumanClinicalTrialsOperations extends ClinicalDocumentOp
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(sdtm::Human Clinical Subject Data Document Body))
    * @param subjectDataHumanClinicalTrials The receiving '<em><b>Subject Data Human Clinical Trials</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -960,6 +968,7 @@ public class SubjectDataHumanClinicalTrialsOperations extends ClinicalDocumentOp
   
   public static  boolean validateSubjectDataHumanClinicalTrialsHumanClinicalSubjectDataDocumentBody(SubjectDataHumanClinicalTrials subjectDataHumanClinicalTrials, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
+  	  
     if (VALIDATE_SUBJECT_DATA_HUMAN_CLINICAL_TRIALS_HUMAN_CLINICAL_SUBJECT_DATA_DOCUMENT_BODY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(SdtmPackage.Literals.SUBJECT_DATA_HUMAN_CLINICAL_TRIALS);
@@ -984,6 +993,7 @@ public class SubjectDataHumanClinicalTrialsOperations extends ClinicalDocumentOp
              org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "SubjectDataHumanClinicalTrialsHumanClinicalSubjectDataDocumentBody", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(subjectDataHumanClinicalTrials, context) }),
              new Object [] { subjectDataHumanClinicalTrials }));
       }
+       
       return false;
     }
     return true;
@@ -1015,7 +1025,6 @@ public class SubjectDataHumanClinicalTrialsOperations extends ClinicalDocumentOp
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.author->one(author : cda::Author | not author.oclIsUndefined() and author.oclIsKindOf(cda::Author))
    * @param subjectDataHumanClinicalTrials The receiving '<em><b>Subject Data Human Clinical Trials</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -1025,6 +1034,7 @@ public class SubjectDataHumanClinicalTrialsOperations extends ClinicalDocumentOp
   
   public static  boolean validateSubjectDataHumanClinicalTrialsAuthorParticipation(SubjectDataHumanClinicalTrials subjectDataHumanClinicalTrials, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
+  	  
     if (VALIDATE_SUBJECT_DATA_HUMAN_CLINICAL_TRIALS_AUTHOR_PARTICIPATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(SdtmPackage.Literals.SUBJECT_DATA_HUMAN_CLINICAL_TRIALS);
@@ -1049,6 +1059,7 @@ public class SubjectDataHumanClinicalTrialsOperations extends ClinicalDocumentOp
              org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "SubjectDataHumanClinicalTrialsAuthorParticipation", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(subjectDataHumanClinicalTrials, context) }),
              new Object [] { subjectDataHumanClinicalTrials }));
       }
+       
       return false;
     }
     return true;
@@ -1080,7 +1091,6 @@ public class SubjectDataHumanClinicalTrialsOperations extends ClinicalDocumentOp
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.documentationOf->one(documentationOf : cda::DocumentationOf | not documentationOf.oclIsUndefined() and documentationOf.oclIsKindOf(cda::DocumentationOf))
    * @param subjectDataHumanClinicalTrials The receiving '<em><b>Subject Data Human Clinical Trials</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -1090,6 +1100,7 @@ public class SubjectDataHumanClinicalTrialsOperations extends ClinicalDocumentOp
   
   public static  boolean validateSubjectDataHumanClinicalTrialsStudyRelationship(SubjectDataHumanClinicalTrials subjectDataHumanClinicalTrials, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
+  	  
     if (VALIDATE_SUBJECT_DATA_HUMAN_CLINICAL_TRIALS_STUDY_RELATIONSHIP__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(SdtmPackage.Literals.SUBJECT_DATA_HUMAN_CLINICAL_TRIALS);
@@ -1114,6 +1125,7 @@ public class SubjectDataHumanClinicalTrialsOperations extends ClinicalDocumentOp
              org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "SubjectDataHumanClinicalTrialsStudyRelationship", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(subjectDataHumanClinicalTrials, context) }),
              new Object [] { subjectDataHumanClinicalTrials }));
       }
+       
       return false;
     }
     return true;
@@ -1145,7 +1157,6 @@ public class SubjectDataHumanClinicalTrialsOperations extends ClinicalDocumentOp
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.recordTarget->one(recordTarget : cda::RecordTarget | not recordTarget.oclIsUndefined() and recordTarget.oclIsKindOf(cda::RecordTarget))
    * @param subjectDataHumanClinicalTrials The receiving '<em><b>Subject Data Human Clinical Trials</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -1155,6 +1166,7 @@ public class SubjectDataHumanClinicalTrialsOperations extends ClinicalDocumentOp
   
   public static  boolean validateSubjectDataHumanClinicalTrialsSubjectParticipation(SubjectDataHumanClinicalTrials subjectDataHumanClinicalTrials, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
+  	  
     if (VALIDATE_SUBJECT_DATA_HUMAN_CLINICAL_TRIALS_SUBJECT_PARTICIPATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(SdtmPackage.Literals.SUBJECT_DATA_HUMAN_CLINICAL_TRIALS);
@@ -1179,6 +1191,7 @@ public class SubjectDataHumanClinicalTrialsOperations extends ClinicalDocumentOp
              org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "SubjectDataHumanClinicalTrialsSubjectParticipation", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(subjectDataHumanClinicalTrials, context) }),
              new Object [] { subjectDataHumanClinicalTrials }));
       }
+       
       return false;
     }
     return true;
@@ -1192,7 +1205,7 @@ public class SubjectDataHumanClinicalTrialsOperations extends ClinicalDocumentOp
    * @generated
    * @ordered
    */
-  protected static final String GET_HUMAN_CLINICAL_SUBJECT_DATA_DOCUMENT_BODY__EOCL_EXP = "self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(sdtm::Human Clinical Subject Data Document Body))->asSequence()->first().oclAsType(sdtm::Human Clinical Subject Data Document Body)";
+  protected static final String GET_HUMAN_CLINICAL_SUBJECT_DATA_DOCUMENT_BODY__EOCL_EXP = "self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(sdtm::Human Clinical Subject Data Document Body))->asSequence()->any(true).oclAsType(sdtm::Human Clinical Subject Data Document Body)";
 
   /**
    * The cached OCL query for the '{@link #getHumanClinicalSubjectDataDocumentBody(SubjectDataHumanClinicalTrials) <em>Get Human Clinical Subject Data Document Body</em>}' query operation.
@@ -1207,10 +1220,6 @@ public class SubjectDataHumanClinicalTrialsOperations extends ClinicalDocumentOp
   /**
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * <!-- begin-model-doc -->
-   * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(sdtm::Human Clinical Subject Data Document Body))->asSequence()->first().oclAsType(sdtm::Human Clinical Subject Data Document Body)
-   * @param subjectDataHumanClinicalTrials The receiving '<em><b>Subject Data Human Clinical Trials</b></em>' model object.
-   * <!-- end-model-doc -->
    * @generated
    */
   

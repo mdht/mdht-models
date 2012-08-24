@@ -28,219 +28,223 @@ import org.openhealthtools.mdht.uml.cda.phcr.tularemia.*;
  */
 public class TularemiaFactoryImpl extends EFactoryImpl implements TularemiaFactory {
 	/**
-	 * Creates the default factory implementation.
-	 * <!-- begin-user-doc -->
+   * Creates the default factory implementation.
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public static TularemiaFactory init() {
-		try {
-			TularemiaFactory theTularemiaFactory = (TularemiaFactory)EPackage.Registry.INSTANCE.getEFactory("http://www.openhealthtools.org/mdht/uml/cda/phcr/tularemia"); 
-			if (theTularemiaFactory != null) {
-				return theTularemiaFactory;
-			}
-		}
-		catch (Exception exception) {
-			EcorePlugin.INSTANCE.log(exception);
-		}
-		return new TularemiaFactoryImpl();
-	}
+    try
+    {
+      TularemiaFactory theTularemiaFactory = (TularemiaFactory)EPackage.Registry.INSTANCE.getEFactory("http://www.openhealthtools.org/mdht/uml/cda/phcr/tularemia"); 
+      if (theTularemiaFactory != null)
+      {
+        return theTularemiaFactory;
+      }
+    }
+    catch (Exception exception)
+    {
+      EcorePlugin.INSTANCE.log(exception);
+    }
+    return new TularemiaFactoryImpl();
+  }
 
 	/**
-	 * Creates an instance of the factory.
-	 * <!-- begin-user-doc -->
+   * Creates an instance of the factory.
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public TularemiaFactoryImpl() {
-		super();
-	}
+    super();
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	@Override
 	public EObject create(EClass eClass) {
-		switch (eClass.getClassifierID()) {
-			case TularemiaPackage.TULAREMIA_CASE_REPORT: return createTularemiaCaseReport();
-			case TularemiaPackage.TULAREMIA_PHCR_SOCIAL_HISTORY_SECTION: return createTularemiaPHCRSocialHistorySection();
-			case TularemiaPackage.TULAREMIA_POSSIBLE_EXPOSURE_LOCATION_AND_TYPE_ACT: return createTularemiaPossibleExposureLocationAndTypeAct();
-			case TularemiaPackage.TULAREMIA_PHCR_CLINICAL_INFORMATION_SECTION: return createTularemiaPHCRClinicalInformationSection();
-			case TularemiaPackage.TULAREMIA_CASE_OBSERVATION: return createTularemiaCaseObservation();
-			case TularemiaPackage.TULAREMIA_SIGNS_AND_SYMPTOMS_OBSERVATION: return createTularemiaSignsAndSymptomsObservation();
-			case TularemiaPackage.LOCATION_OF_LESION_OBSERVATION: return createLocationOfLesionObservation();
-			case TularemiaPackage.TULAREMIA_PHCR_TREATMENT_INFORMATION_SECTION: return createTularemiaPHCRTreatmentInformationSection();
-			case TularemiaPackage.TULAREMIA_THERAPEUTIC_REGIMEN_ACT: return createTularemiaTherapeuticRegimenAct();
-			case TularemiaPackage.TULAREMIA_TREATMENT_GIVEN_SUBSTANCE_ADMINISTRATION: return createTularemiaTreatmentGivenSubstanceAdministration();
-			case TularemiaPackage.TULAREMIA_TREATMENT_NOT_GIVEN_SUBSTANCE_ADMINISTRATION: return createTularemiaTreatmentNotGivenSubstanceAdministration();
-			case TularemiaPackage.TULAREMIA_PHCR_RELEVANT_DX_TESTS_SECTION: return createTularemiaPHCRRelevantDxTestsSection();
-			case TularemiaPackage.TULAREMIA_RESULT_ORGANIZER: return createTularemiaResultOrganizer();
-			case TularemiaPackage.TULAREMIA_RESULT_OBSERVATION: return createTularemiaResultObservation();
-			default:
-				throw new IllegalArgumentException("The class '" + eClass.getName() + "' is not a valid classifier");
-		}
-	}
+    switch (eClass.getClassifierID())
+    {
+      case TularemiaPackage.TULAREMIA_CASE_REPORT: return createTularemiaCaseReport();
+      case TularemiaPackage.TULAREMIA_PHCR_SOCIAL_HISTORY_SECTION: return createTularemiaPHCRSocialHistorySection();
+      case TularemiaPackage.TULAREMIA_POSSIBLE_EXPOSURE_LOCATION_AND_TYPE_ACT: return createTularemiaPossibleExposureLocationAndTypeAct();
+      case TularemiaPackage.TULAREMIA_PHCR_CLINICAL_INFORMATION_SECTION: return createTularemiaPHCRClinicalInformationSection();
+      case TularemiaPackage.TULAREMIA_CASE_OBSERVATION: return createTularemiaCaseObservation();
+      case TularemiaPackage.TULAREMIA_SIGNS_AND_SYMPTOMS_OBSERVATION: return createTularemiaSignsAndSymptomsObservation();
+      case TularemiaPackage.LOCATION_OF_LESION_OBSERVATION: return createLocationOfLesionObservation();
+      case TularemiaPackage.TULAREMIA_PHCR_TREATMENT_INFORMATION_SECTION: return createTularemiaPHCRTreatmentInformationSection();
+      case TularemiaPackage.TULAREMIA_THERAPEUTIC_REGIMEN_ACT: return createTularemiaTherapeuticRegimenAct();
+      case TularemiaPackage.TULAREMIA_TREATMENT_GIVEN_SUBSTANCE_ADMINISTRATION: return createTularemiaTreatmentGivenSubstanceAdministration();
+      case TularemiaPackage.TULAREMIA_TREATMENT_NOT_GIVEN_SUBSTANCE_ADMINISTRATION: return createTularemiaTreatmentNotGivenSubstanceAdministration();
+      case TularemiaPackage.TULAREMIA_PHCR_RELEVANT_DX_TESTS_SECTION: return createTularemiaPHCRRelevantDxTestsSection();
+      case TularemiaPackage.TULAREMIA_RESULT_ORGANIZER: return createTularemiaResultOrganizer();
+      case TularemiaPackage.TULAREMIA_RESULT_OBSERVATION: return createTularemiaResultObservation();
+      default:
+        throw new IllegalArgumentException("The class '" + eClass.getName() + "' is not a valid classifier");
+    }
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public TularemiaCaseReport createTularemiaCaseReport() {
-		TularemiaCaseReportImpl tularemiaCaseReport = new TularemiaCaseReportImpl();
-		return tularemiaCaseReport;
-	}
+    TularemiaCaseReportImpl tularemiaCaseReport = new TularemiaCaseReportImpl();
+    return tularemiaCaseReport;
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public TularemiaPHCRSocialHistorySection createTularemiaPHCRSocialHistorySection() {
-		TularemiaPHCRSocialHistorySectionImpl tularemiaPHCRSocialHistorySection = new TularemiaPHCRSocialHistorySectionImpl();
-		return tularemiaPHCRSocialHistorySection;
-	}
+    TularemiaPHCRSocialHistorySectionImpl tularemiaPHCRSocialHistorySection = new TularemiaPHCRSocialHistorySectionImpl();
+    return tularemiaPHCRSocialHistorySection;
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public TularemiaPossibleExposureLocationAndTypeAct createTularemiaPossibleExposureLocationAndTypeAct() {
-		TularemiaPossibleExposureLocationAndTypeActImpl tularemiaPossibleExposureLocationAndTypeAct = new TularemiaPossibleExposureLocationAndTypeActImpl();
-		return tularemiaPossibleExposureLocationAndTypeAct;
-	}
+    TularemiaPossibleExposureLocationAndTypeActImpl tularemiaPossibleExposureLocationAndTypeAct = new TularemiaPossibleExposureLocationAndTypeActImpl();
+    return tularemiaPossibleExposureLocationAndTypeAct;
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public TularemiaPHCRClinicalInformationSection createTularemiaPHCRClinicalInformationSection() {
-		TularemiaPHCRClinicalInformationSectionImpl tularemiaPHCRClinicalInformationSection = new TularemiaPHCRClinicalInformationSectionImpl();
-		return tularemiaPHCRClinicalInformationSection;
-	}
+    TularemiaPHCRClinicalInformationSectionImpl tularemiaPHCRClinicalInformationSection = new TularemiaPHCRClinicalInformationSectionImpl();
+    return tularemiaPHCRClinicalInformationSection;
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public TularemiaCaseObservation createTularemiaCaseObservation() {
-		TularemiaCaseObservationImpl tularemiaCaseObservation = new TularemiaCaseObservationImpl();
-		return tularemiaCaseObservation;
-	}
+    TularemiaCaseObservationImpl tularemiaCaseObservation = new TularemiaCaseObservationImpl();
+    return tularemiaCaseObservation;
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public TularemiaSignsAndSymptomsObservation createTularemiaSignsAndSymptomsObservation() {
-		TularemiaSignsAndSymptomsObservationImpl tularemiaSignsAndSymptomsObservation = new TularemiaSignsAndSymptomsObservationImpl();
-		return tularemiaSignsAndSymptomsObservation;
-	}
+    TularemiaSignsAndSymptomsObservationImpl tularemiaSignsAndSymptomsObservation = new TularemiaSignsAndSymptomsObservationImpl();
+    return tularemiaSignsAndSymptomsObservation;
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public LocationOfLesionObservation createLocationOfLesionObservation() {
-		LocationOfLesionObservationImpl locationOfLesionObservation = new LocationOfLesionObservationImpl();
-		return locationOfLesionObservation;
-	}
+    LocationOfLesionObservationImpl locationOfLesionObservation = new LocationOfLesionObservationImpl();
+    return locationOfLesionObservation;
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public TularemiaPHCRTreatmentInformationSection createTularemiaPHCRTreatmentInformationSection() {
-		TularemiaPHCRTreatmentInformationSectionImpl tularemiaPHCRTreatmentInformationSection = new TularemiaPHCRTreatmentInformationSectionImpl();
-		return tularemiaPHCRTreatmentInformationSection;
-	}
+    TularemiaPHCRTreatmentInformationSectionImpl tularemiaPHCRTreatmentInformationSection = new TularemiaPHCRTreatmentInformationSectionImpl();
+    return tularemiaPHCRTreatmentInformationSection;
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public TularemiaTherapeuticRegimenAct createTularemiaTherapeuticRegimenAct() {
-		TularemiaTherapeuticRegimenActImpl tularemiaTherapeuticRegimenAct = new TularemiaTherapeuticRegimenActImpl();
-		return tularemiaTherapeuticRegimenAct;
-	}
+    TularemiaTherapeuticRegimenActImpl tularemiaTherapeuticRegimenAct = new TularemiaTherapeuticRegimenActImpl();
+    return tularemiaTherapeuticRegimenAct;
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public TularemiaTreatmentGivenSubstanceAdministration createTularemiaTreatmentGivenSubstanceAdministration() {
-		TularemiaTreatmentGivenSubstanceAdministrationImpl tularemiaTreatmentGivenSubstanceAdministration = new TularemiaTreatmentGivenSubstanceAdministrationImpl();
-		return tularemiaTreatmentGivenSubstanceAdministration;
-	}
+    TularemiaTreatmentGivenSubstanceAdministrationImpl tularemiaTreatmentGivenSubstanceAdministration = new TularemiaTreatmentGivenSubstanceAdministrationImpl();
+    return tularemiaTreatmentGivenSubstanceAdministration;
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public TularemiaTreatmentNotGivenSubstanceAdministration createTularemiaTreatmentNotGivenSubstanceAdministration() {
-		TularemiaTreatmentNotGivenSubstanceAdministrationImpl tularemiaTreatmentNotGivenSubstanceAdministration = new TularemiaTreatmentNotGivenSubstanceAdministrationImpl();
-		return tularemiaTreatmentNotGivenSubstanceAdministration;
-	}
+    TularemiaTreatmentNotGivenSubstanceAdministrationImpl tularemiaTreatmentNotGivenSubstanceAdministration = new TularemiaTreatmentNotGivenSubstanceAdministrationImpl();
+    return tularemiaTreatmentNotGivenSubstanceAdministration;
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public TularemiaPHCRRelevantDxTestsSection createTularemiaPHCRRelevantDxTestsSection() {
-		TularemiaPHCRRelevantDxTestsSectionImpl tularemiaPHCRRelevantDxTestsSection = new TularemiaPHCRRelevantDxTestsSectionImpl();
-		return tularemiaPHCRRelevantDxTestsSection;
-	}
+    TularemiaPHCRRelevantDxTestsSectionImpl tularemiaPHCRRelevantDxTestsSection = new TularemiaPHCRRelevantDxTestsSectionImpl();
+    return tularemiaPHCRRelevantDxTestsSection;
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public TularemiaResultOrganizer createTularemiaResultOrganizer() {
-		TularemiaResultOrganizerImpl tularemiaResultOrganizer = new TularemiaResultOrganizerImpl();
-		return tularemiaResultOrganizer;
-	}
+    TularemiaResultOrganizerImpl tularemiaResultOrganizer = new TularemiaResultOrganizerImpl();
+    return tularemiaResultOrganizer;
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public TularemiaResultObservation createTularemiaResultObservation() {
-		TularemiaResultObservationImpl tularemiaResultObservation = new TularemiaResultObservationImpl();
-		return tularemiaResultObservation;
-	}
+    TularemiaResultObservationImpl tularemiaResultObservation = new TularemiaResultObservationImpl();
+    return tularemiaResultObservation;
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public TularemiaPackage getTularemiaPackage() {
-		return (TularemiaPackage)getEPackage();
-	}
+    return (TularemiaPackage)getEPackage();
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @deprecated
-	 * @generated
-	 */
+   * @deprecated
+   * @generated
+   */
 	@Deprecated
 	public static TularemiaPackage getPackage() {
-		return TularemiaPackage.eINSTANCE;
-	}
+    return TularemiaPackage.eINSTANCE;
+  }
 
 } //TularemiaFactoryImpl

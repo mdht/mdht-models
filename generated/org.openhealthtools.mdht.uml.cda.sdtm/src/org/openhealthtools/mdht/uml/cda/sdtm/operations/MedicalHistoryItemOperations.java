@@ -57,16 +57,24 @@ import org.openhealthtools.mdht.uml.cda.sdtm.util.SdtmValidator;
  *   <li>{@link org.openhealthtools.mdht.uml.cda.sdtm.MedicalHistoryItem#validateMedicalHistoryItemPreSpecifiedEvent(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medical History Item Pre Specified Event</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.sdtm.MedicalHistoryItem#validateMedicalHistoryItemNonPerformanceReason(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medical History Item Non Performance Reason</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.sdtm.MedicalHistoryItem#validateMedicalHistoryItemBodySystemorOrganClass(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medical History Item Body Systemor Organ Class</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.sdtm.MedicalHistoryItem#validateMedicalHistoryItemEventStudyDay(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medical History Item Event Study Day</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.sdtm.MedicalHistoryItem#validateMedicalHistoryItemActivityEndTimingReference(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medical History Item Activity End Timing Reference</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.sdtm.MedicalHistoryItem#validateMedicalHistoryItemDataCollection(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medical History Item Data Collection</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.sdtm.MedicalHistoryItem#validateMedicalHistoryItemmedicalHistoryCategoryAssociationmedicalHistoryCategoryClassCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medical History Itemmedical History Category Associationmedical History Category Class Code</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.sdtm.MedicalHistoryItem#validateMedicalHistoryItemmedicalHistoryCategoryAssociationmedicalHistoryCategoryCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medical History Itemmedical History Category Associationmedical History Category Code</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.sdtm.MedicalHistoryItem#validateMedicalHistoryItemmedicalHistoryCategoryAssociationmedicalHistoryCategoryMoodCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medical History Itemmedical History Category Associationmedical History Category Mood Code</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.sdtm.MedicalHistoryItem#validateMedicalHistoryItemmedicalHistoryCategoryAssociationmedicalHistoryCategoryValue(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medical History Itemmedical History Category Associationmedical History Category Value</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.sdtm.MedicalHistoryItem#validateMedicalHistoryItemmedicalHistoryCategoryAssociationTypeCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medical History Itemmedical History Category Association Type Code</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.sdtm.MedicalHistoryItem#validateMedicalHistoryItemmedicalHistoryCategoryAssociationMedicalHistoryCategory(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medical History Itemmedical History Category Association Medical History Category</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.sdtm.MedicalHistoryItem#validateMedicalHistoryItemmedicalHistorySubCategoryAssociationmedicalHistorySubCategoryClassCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medical History Itemmedical History Sub Category Associationmedical History Sub Category Class Code</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.sdtm.MedicalHistoryItem#validateMedicalHistoryItemmedicalHistorySubCategoryAssociationmedicalHistorySubCategoryCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medical History Itemmedical History Sub Category Associationmedical History Sub Category Code</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.sdtm.MedicalHistoryItem#validateMedicalHistoryItemmedicalHistorySubCategoryAssociationmedicalHistorySubCategoryMoodCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medical History Itemmedical History Sub Category Associationmedical History Sub Category Mood Code</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.sdtm.MedicalHistoryItem#validateMedicalHistoryItemmedicalHistorySubCategoryAssociationmedicalHistorySubCategoryValue(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medical History Itemmedical History Sub Category Associationmedical History Sub Category Value</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.sdtm.MedicalHistoryItem#validateMedicalHistoryItemmedicalHistorySubCategoryAssociationTypeCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medical History Itemmedical History Sub Category Association Type Code</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.sdtm.MedicalHistoryItem#validateMedicalHistoryItemmedicalHistorySubCategoryAssociationMedicalHistorySubCategory(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medical History Itemmedical History Sub Category Association Medical History Sub Category</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.sdtm.MedicalHistoryItem#getGroupIdentifier() <em>Get Group Identifier</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.sdtm.MedicalHistoryItem#getPreSpecifiedEvent() <em>Get Pre Specified Event</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.sdtm.MedicalHistoryItem#getNonPerformanceReason() <em>Get Non Performance Reason</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.sdtm.MedicalHistoryItem#getBodySystemorOrganClass() <em>Get Body Systemor Organ Class</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.sdtm.MedicalHistoryItem#getEventStudyDay() <em>Get Event Study Day</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.sdtm.MedicalHistoryItem#getActivityEndTimingReference() <em>Get Activity End Timing Reference</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.sdtm.MedicalHistoryItem#getDataCollection() <em>Get Data Collection</em>}</li>
  * </ul>
@@ -111,7 +119,6 @@ public class MedicalHistoryItemOperations extends ClinicalStatementOperations
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.23.26')
    * @param medicalHistoryItem The receiving '<em><b>Medical History Item</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -121,6 +128,7 @@ public class MedicalHistoryItemOperations extends ClinicalStatementOperations
   
   public static  boolean validateMedicalHistoryItemTemplateId(MedicalHistoryItem medicalHistoryItem, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
+  	  
     if (VALIDATE_MEDICAL_HISTORY_ITEM_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(SdtmPackage.Literals.MEDICAL_HISTORY_ITEM);
@@ -145,6 +153,7 @@ public class MedicalHistoryItemOperations extends ClinicalStatementOperations
              org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "MedicalHistoryItemTemplateId", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(medicalHistoryItem, context) }),
              new Object [] { medicalHistoryItem }));
       }
+       
       return false;
     }
     return true;
@@ -176,7 +185,6 @@ public class MedicalHistoryItemOperations extends ClinicalStatementOperations
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.classCode=vocab::ActClassObservation::OBS
    * @param medicalHistoryItem The receiving '<em><b>Medical History Item</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -186,6 +194,7 @@ public class MedicalHistoryItemOperations extends ClinicalStatementOperations
   
   public static  boolean validateMedicalHistoryItemClassCode(MedicalHistoryItem medicalHistoryItem, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
+  	  
     if (VALIDATE_MEDICAL_HISTORY_ITEM_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(SdtmPackage.Literals.MEDICAL_HISTORY_ITEM);
@@ -210,6 +219,7 @@ public class MedicalHistoryItemOperations extends ClinicalStatementOperations
              org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "MedicalHistoryItemClassCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(medicalHistoryItem, context) }),
              new Object [] { medicalHistoryItem }));
       }
+       
       return false;
     }
     return true;
@@ -241,7 +251,6 @@ public class MedicalHistoryItemOperations extends ClinicalStatementOperations
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * (self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined())
    * @param medicalHistoryItem The receiving '<em><b>Medical History Item</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -251,6 +260,7 @@ public class MedicalHistoryItemOperations extends ClinicalStatementOperations
   
   public static  boolean validateMedicalHistoryItemCode(MedicalHistoryItem medicalHistoryItem, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
+  	  
     if (VALIDATE_MEDICAL_HISTORY_ITEM_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(SdtmPackage.Literals.MEDICAL_HISTORY_ITEM);
@@ -275,6 +285,7 @@ public class MedicalHistoryItemOperations extends ClinicalStatementOperations
              org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "MedicalHistoryItemCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(medicalHistoryItem, context) }),
              new Object [] { medicalHistoryItem }));
       }
+       
       return false;
     }
     return true;
@@ -306,7 +317,6 @@ public class MedicalHistoryItemOperations extends ClinicalStatementOperations
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * (self.effectiveTime.oclIsUndefined() or self.effectiveTime.isNullFlavorUndefined()) implies (not self.effectiveTime.oclIsUndefined())
    * @param medicalHistoryItem The receiving '<em><b>Medical History Item</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -316,6 +326,7 @@ public class MedicalHistoryItemOperations extends ClinicalStatementOperations
   
   public static  boolean validateMedicalHistoryItemEffectiveTime(MedicalHistoryItem medicalHistoryItem, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
+  	  
     if (VALIDATE_MEDICAL_HISTORY_ITEM_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(SdtmPackage.Literals.MEDICAL_HISTORY_ITEM);
@@ -340,6 +351,7 @@ public class MedicalHistoryItemOperations extends ClinicalStatementOperations
              org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "MedicalHistoryItemEffectiveTime", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(medicalHistoryItem, context) }),
              new Object [] { medicalHistoryItem }));
       }
+       
       return false;
     }
     return true;
@@ -371,7 +383,6 @@ public class MedicalHistoryItemOperations extends ClinicalStatementOperations
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * (self.id->isEmpty() or self.id->exists(element | element.isNullFlavorUndefined())) implies (not self.id->isEmpty())
    * @param medicalHistoryItem The receiving '<em><b>Medical History Item</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -381,6 +392,7 @@ public class MedicalHistoryItemOperations extends ClinicalStatementOperations
   
   public static  boolean validateMedicalHistoryItemId(MedicalHistoryItem medicalHistoryItem, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
+  	  
     if (VALIDATE_MEDICAL_HISTORY_ITEM_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(SdtmPackage.Literals.MEDICAL_HISTORY_ITEM);
@@ -405,6 +417,7 @@ public class MedicalHistoryItemOperations extends ClinicalStatementOperations
              org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "MedicalHistoryItemId", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(medicalHistoryItem, context) }),
              new Object [] { medicalHistoryItem }));
       }
+       
       return false;
     }
     return true;
@@ -436,7 +449,6 @@ public class MedicalHistoryItemOperations extends ClinicalStatementOperations
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.moodCode=vocab::x_ActMoodDocumentObservation::EVN
    * @param medicalHistoryItem The receiving '<em><b>Medical History Item</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -446,6 +458,7 @@ public class MedicalHistoryItemOperations extends ClinicalStatementOperations
   
   public static  boolean validateMedicalHistoryItemMoodCode(MedicalHistoryItem medicalHistoryItem, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
+  	  
     if (VALIDATE_MEDICAL_HISTORY_ITEM_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(SdtmPackage.Literals.MEDICAL_HISTORY_ITEM);
@@ -470,6 +483,7 @@ public class MedicalHistoryItemOperations extends ClinicalStatementOperations
              org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "MedicalHistoryItemMoodCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(medicalHistoryItem, context) }),
              new Object [] { medicalHistoryItem }));
       }
+       
       return false;
     }
     return true;
@@ -501,7 +515,6 @@ public class MedicalHistoryItemOperations extends ClinicalStatementOperations
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * (self.statusCode.oclIsUndefined() or self.statusCode.isNullFlavorUndefined()) implies (not self.statusCode.oclIsUndefined())
    * @param medicalHistoryItem The receiving '<em><b>Medical History Item</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -511,6 +524,7 @@ public class MedicalHistoryItemOperations extends ClinicalStatementOperations
   
   public static  boolean validateMedicalHistoryItemStatusCode(MedicalHistoryItem medicalHistoryItem, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
+  	  
     if (VALIDATE_MEDICAL_HISTORY_ITEM_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(SdtmPackage.Literals.MEDICAL_HISTORY_ITEM);
@@ -535,6 +549,7 @@ public class MedicalHistoryItemOperations extends ClinicalStatementOperations
              org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "MedicalHistoryItemStatusCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(medicalHistoryItem, context) }),
              new Object [] { medicalHistoryItem }));
       }
+       
       return false;
     }
     return true;
@@ -566,7 +581,6 @@ public class MedicalHistoryItemOperations extends ClinicalStatementOperations
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * (self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (self.value->size() = 1 and self.value->forAll(element | element.oclIsTypeOf(datatypes::CE)))
    * @param medicalHistoryItem The receiving '<em><b>Medical History Item</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -576,6 +590,7 @@ public class MedicalHistoryItemOperations extends ClinicalStatementOperations
   
   public static  boolean validateMedicalHistoryItemValue(MedicalHistoryItem medicalHistoryItem, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
+  	  
     if (VALIDATE_MEDICAL_HISTORY_ITEM_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(SdtmPackage.Literals.MEDICAL_HISTORY_ITEM);
@@ -600,6 +615,7 @@ public class MedicalHistoryItemOperations extends ClinicalStatementOperations
              org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "MedicalHistoryItemValue", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(medicalHistoryItem, context) }),
              new Object [] { medicalHistoryItem }));
       }
+       
       return false;
     }
     return true;
@@ -631,7 +647,6 @@ public class MedicalHistoryItemOperations extends ClinicalStatementOperations
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.entryRelationship->one(entryRelationship : cda::EntryRelationship | not entryRelationship.act.oclIsUndefined() and entryRelationship.act.oclIsKindOf(sdtm::Group Identifier))
    * @param medicalHistoryItem The receiving '<em><b>Medical History Item</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -641,6 +656,7 @@ public class MedicalHistoryItemOperations extends ClinicalStatementOperations
   
   public static  boolean validateMedicalHistoryItemGroupIdentifier(MedicalHistoryItem medicalHistoryItem, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
+  	  
     if (VALIDATE_MEDICAL_HISTORY_ITEM_GROUP_IDENTIFIER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(SdtmPackage.Literals.MEDICAL_HISTORY_ITEM);
@@ -665,6 +681,7 @@ public class MedicalHistoryItemOperations extends ClinicalStatementOperations
              org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "MedicalHistoryItemGroupIdentifier", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(medicalHistoryItem, context) }),
              new Object [] { medicalHistoryItem }));
       }
+       
       return false;
     }
     return true;
@@ -696,7 +713,6 @@ public class MedicalHistoryItemOperations extends ClinicalStatementOperations
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.entryRelationship->one(entryRelationship : cda::EntryRelationship | not entryRelationship.oclIsUndefined() and entryRelationship.oclIsKindOf(cda::EntryRelationship))
    * @param medicalHistoryItem The receiving '<em><b>Medical History Item</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -706,6 +722,7 @@ public class MedicalHistoryItemOperations extends ClinicalStatementOperations
   
   public static  boolean validateMedicalHistoryItemMedicalHistoryCategoryAssociation(MedicalHistoryItem medicalHistoryItem, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
+  	  
     if (VALIDATE_MEDICAL_HISTORY_ITEM_MEDICAL_HISTORY_CATEGORY_ASSOCIATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(SdtmPackage.Literals.MEDICAL_HISTORY_ITEM);
@@ -730,6 +747,7 @@ public class MedicalHistoryItemOperations extends ClinicalStatementOperations
              org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "MedicalHistoryItemMedicalHistoryCategoryAssociation", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(medicalHistoryItem, context) }),
              new Object [] { medicalHistoryItem }));
       }
+       
       return false;
     }
     return true;
@@ -761,7 +779,6 @@ public class MedicalHistoryItemOperations extends ClinicalStatementOperations
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.entryRelationship->one(entryRelationship : cda::EntryRelationship | not entryRelationship.oclIsUndefined() and entryRelationship.oclIsKindOf(cda::EntryRelationship))
    * @param medicalHistoryItem The receiving '<em><b>Medical History Item</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -771,6 +788,7 @@ public class MedicalHistoryItemOperations extends ClinicalStatementOperations
   
   public static  boolean validateMedicalHistoryItemMedicalHistorySubCategoryAssociation(MedicalHistoryItem medicalHistoryItem, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
+  	  
     if (VALIDATE_MEDICAL_HISTORY_ITEM_MEDICAL_HISTORY_SUB_CATEGORY_ASSOCIATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(SdtmPackage.Literals.MEDICAL_HISTORY_ITEM);
@@ -795,6 +813,7 @@ public class MedicalHistoryItemOperations extends ClinicalStatementOperations
              org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "MedicalHistoryItemMedicalHistorySubCategoryAssociation", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(medicalHistoryItem, context) }),
              new Object [] { medicalHistoryItem }));
       }
+       
       return false;
     }
     return true;
@@ -826,7 +845,6 @@ public class MedicalHistoryItemOperations extends ClinicalStatementOperations
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.entryRelationship->one(entryRelationship : cda::EntryRelationship | not entryRelationship.observation.oclIsUndefined() and entryRelationship.observation.oclIsKindOf(sdtm::Pre-Specified Event) and entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::COMP)
    * @param medicalHistoryItem The receiving '<em><b>Medical History Item</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -836,6 +854,7 @@ public class MedicalHistoryItemOperations extends ClinicalStatementOperations
   
   public static  boolean validateMedicalHistoryItemPreSpecifiedEvent(MedicalHistoryItem medicalHistoryItem, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
+  	  
     if (VALIDATE_MEDICAL_HISTORY_ITEM_PRE_SPECIFIED_EVENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(SdtmPackage.Literals.MEDICAL_HISTORY_ITEM);
@@ -860,6 +879,7 @@ public class MedicalHistoryItemOperations extends ClinicalStatementOperations
              org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "MedicalHistoryItemPreSpecifiedEvent", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(medicalHistoryItem, context) }),
              new Object [] { medicalHistoryItem }));
       }
+       
       return false;
     }
     return true;
@@ -891,7 +911,6 @@ public class MedicalHistoryItemOperations extends ClinicalStatementOperations
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.entryRelationship->one(entryRelationship : cda::EntryRelationship | not entryRelationship.observation.oclIsUndefined() and entryRelationship.observation.oclIsKindOf(sdtm::Non Performance Reason) and entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::COMP)
    * @param medicalHistoryItem The receiving '<em><b>Medical History Item</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -901,6 +920,7 @@ public class MedicalHistoryItemOperations extends ClinicalStatementOperations
   
   public static  boolean validateMedicalHistoryItemNonPerformanceReason(MedicalHistoryItem medicalHistoryItem, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
+  	  
     if (VALIDATE_MEDICAL_HISTORY_ITEM_NON_PERFORMANCE_REASON__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(SdtmPackage.Literals.MEDICAL_HISTORY_ITEM);
@@ -925,6 +945,7 @@ public class MedicalHistoryItemOperations extends ClinicalStatementOperations
              org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "MedicalHistoryItemNonPerformanceReason", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(medicalHistoryItem, context) }),
              new Object [] { medicalHistoryItem }));
       }
+       
       return false;
     }
     return true;
@@ -956,7 +977,6 @@ public class MedicalHistoryItemOperations extends ClinicalStatementOperations
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.entryRelationship->one(entryRelationship : cda::EntryRelationship | not entryRelationship.observation.oclIsUndefined() and entryRelationship.observation.oclIsKindOf(sdtm::Body System or Organ Class) and entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::COMP)
    * @param medicalHistoryItem The receiving '<em><b>Medical History Item</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -966,6 +986,7 @@ public class MedicalHistoryItemOperations extends ClinicalStatementOperations
   
   public static  boolean validateMedicalHistoryItemBodySystemorOrganClass(MedicalHistoryItem medicalHistoryItem, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
+  	  
     if (VALIDATE_MEDICAL_HISTORY_ITEM_BODY_SYSTEMOR_ORGAN_CLASS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(SdtmPackage.Literals.MEDICAL_HISTORY_ITEM);
@@ -990,71 +1011,7 @@ public class MedicalHistoryItemOperations extends ClinicalStatementOperations
              org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "MedicalHistoryItemBodySystemorOrganClass", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(medicalHistoryItem, context) }),
              new Object [] { medicalHistoryItem }));
       }
-      return false;
-    }
-    return true;
-  }
-
-  /**
-   * The cached OCL expression body for the '{@link #validateMedicalHistoryItemEventStudyDay(MedicalHistoryItem, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medical History Item Event Study Day</em>}' operation.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @see #validateMedicalHistoryItemEventStudyDay(MedicalHistoryItem, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-   * @generated
-   * @ordered
-   */
-  protected static final String VALIDATE_MEDICAL_HISTORY_ITEM_EVENT_STUDY_DAY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entryRelationship->one(entryRelationship : cda::EntryRelationship | not entryRelationship.observation.oclIsUndefined() and entryRelationship.observation.oclIsKindOf(sdtm::Event Study Day) and entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::REFR)";
-
-  /**
-   * The cached OCL invariant for the '{@link #validateMedicalHistoryItemEventStudyDay(MedicalHistoryItem, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medical History Item Event Study Day</em>}' invariant operation.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @see #validateMedicalHistoryItemEventStudyDay(MedicalHistoryItem, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-   * @generated
-   * @ordered
-   */
-  
-  protected static Constraint VALIDATE_MEDICAL_HISTORY_ITEM_EVENT_STUDY_DAY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-  
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * <!-- begin-model-doc -->
-   * self.entryRelationship->one(entryRelationship : cda::EntryRelationship | not entryRelationship.observation.oclIsUndefined() and entryRelationship.observation.oclIsKindOf(sdtm::Event Study Day) and entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::REFR)
-   * @param medicalHistoryItem The receiving '<em><b>Medical History Item</b></em>' model object.
-   * @param diagnostics The chain of diagnostics to which problems are to be appended.
-   * @param context The cache of context-specific information.
-   * <!-- end-model-doc -->
-   * @generated
-   */
-  
-  public static  boolean validateMedicalHistoryItemEventStudyDay(MedicalHistoryItem medicalHistoryItem, DiagnosticChain diagnostics, Map<Object, Object> context)
-  {
-    if (VALIDATE_MEDICAL_HISTORY_ITEM_EVENT_STUDY_DAY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-      OCL.Helper helper = EOCL_ENV.createOCLHelper();
-      helper.setContext(SdtmPackage.Literals.MEDICAL_HISTORY_ITEM);
-      try
-      {
-        VALIDATE_MEDICAL_HISTORY_ITEM_EVENT_STUDY_DAY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_MEDICAL_HISTORY_ITEM_EVENT_STUDY_DAY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-      }
-      catch (ParserException pe)
-      {
-        throw new UnsupportedOperationException(pe.getLocalizedMessage());
-      }
-    }
-    if (!EOCL_ENV.createQuery(VALIDATE_MEDICAL_HISTORY_ITEM_EVENT_STUDY_DAY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(medicalHistoryItem))
-    {
-      if (diagnostics != null)
-      {
-        diagnostics.add
-          (new BasicDiagnostic
-            (Diagnostic.ERROR,
-             SdtmValidator.DIAGNOSTIC_SOURCE,
-             SdtmValidator.MEDICAL_HISTORY_ITEM__MEDICAL_HISTORY_ITEM_EVENT_STUDY_DAY,
-             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "MedicalHistoryItemEventStudyDay", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(medicalHistoryItem, context) }),
-             new Object [] { medicalHistoryItem }));
-      }
+       
       return false;
     }
     return true;
@@ -1086,7 +1043,6 @@ public class MedicalHistoryItemOperations extends ClinicalStatementOperations
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.entryRelationship->one(entryRelationship : cda::EntryRelationship | not entryRelationship.act.oclIsUndefined() and entryRelationship.act.oclIsKindOf(sdtm::Activity End Timing Reference) and entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::REFR)
    * @param medicalHistoryItem The receiving '<em><b>Medical History Item</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -1096,6 +1052,7 @@ public class MedicalHistoryItemOperations extends ClinicalStatementOperations
   
   public static  boolean validateMedicalHistoryItemActivityEndTimingReference(MedicalHistoryItem medicalHistoryItem, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
+  	  
     if (VALIDATE_MEDICAL_HISTORY_ITEM_ACTIVITY_END_TIMING_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(SdtmPackage.Literals.MEDICAL_HISTORY_ITEM);
@@ -1120,6 +1077,7 @@ public class MedicalHistoryItemOperations extends ClinicalStatementOperations
              org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "MedicalHistoryItemActivityEndTimingReference", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(medicalHistoryItem, context) }),
              new Object [] { medicalHistoryItem }));
       }
+       
       return false;
     }
     return true;
@@ -1151,7 +1109,6 @@ public class MedicalHistoryItemOperations extends ClinicalStatementOperations
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.entryRelationship->one(entryRelationship : cda::EntryRelationship | not entryRelationship.act.oclIsUndefined() and entryRelationship.act.oclIsKindOf(sdtm::Data Collection) and entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::COMP)
    * @param medicalHistoryItem The receiving '<em><b>Medical History Item</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -1161,6 +1118,7 @@ public class MedicalHistoryItemOperations extends ClinicalStatementOperations
   
   public static  boolean validateMedicalHistoryItemDataCollection(MedicalHistoryItem medicalHistoryItem, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
+  	  
     if (VALIDATE_MEDICAL_HISTORY_ITEM_DATA_COLLECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(SdtmPackage.Literals.MEDICAL_HISTORY_ITEM);
@@ -1185,6 +1143,271 @@ public class MedicalHistoryItemOperations extends ClinicalStatementOperations
              org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "MedicalHistoryItemDataCollection", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(medicalHistoryItem, context) }),
              new Object [] { medicalHistoryItem }));
       }
+       
+      return false;
+    }
+    return true;
+  }
+
+  /**
+   * The cached OCL expression body for the '{@link #validateMedicalHistoryItemmedicalHistoryCategoryAssociationmedicalHistoryCategoryClassCode(MedicalHistoryItem, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medical History Itemmedical History Category Associationmedical History Category Class Code</em>}' operation.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #validateMedicalHistoryItemmedicalHistoryCategoryAssociationmedicalHistoryCategoryClassCode(MedicalHistoryItem, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+   * @generated
+   * @ordered
+   */
+  protected static final String VALIDATE_MEDICAL_HISTORY_ITEMMEDICAL_HISTORY_CATEGORY_ASSOCIATIONMEDICAL_HISTORY_CATEGORY_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entryRelationship->excluding(null).observation->excluding(null)->reject(isDefined('classCode'))";
+
+  /**
+   * The cached OCL invariant for the '{@link #validateMedicalHistoryItemmedicalHistoryCategoryAssociationmedicalHistoryCategoryClassCode(MedicalHistoryItem, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medical History Itemmedical History Category Associationmedical History Category Class Code</em>}' invariant operation.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #validateMedicalHistoryItemmedicalHistoryCategoryAssociationmedicalHistoryCategoryClassCode(MedicalHistoryItem, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+   * @generated
+   * @ordered
+   */
+  
+  protected static Constraint VALIDATE_MEDICAL_HISTORY_ITEMMEDICAL_HISTORY_CATEGORY_ASSOCIATIONMEDICAL_HISTORY_CATEGORY_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * <!-- begin-model-doc -->
+   * @param medicalHistoryItem The receiving '<em><b>Medical History Item</b></em>' model object.
+   * @param diagnostics The chain of diagnostics to which problems are to be appended.
+   * @param context The cache of context-specific information.
+   * <!-- end-model-doc -->
+   * @generated
+   */
+  
+  public static  boolean validateMedicalHistoryItemmedicalHistoryCategoryAssociationmedicalHistoryCategoryClassCode(MedicalHistoryItem medicalHistoryItem, DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+  	  
+    if (VALIDATE_MEDICAL_HISTORY_ITEMMEDICAL_HISTORY_CATEGORY_ASSOCIATIONMEDICAL_HISTORY_CATEGORY_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+      OCL.Helper helper = EOCL_ENV.createOCLHelper();
+      helper.setContext(SdtmPackage.Literals.MEDICAL_HISTORY_ITEM);
+      try
+      {
+        VALIDATE_MEDICAL_HISTORY_ITEMMEDICAL_HISTORY_CATEGORY_ASSOCIATIONMEDICAL_HISTORY_CATEGORY_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_MEDICAL_HISTORY_ITEMMEDICAL_HISTORY_CATEGORY_ASSOCIATIONMEDICAL_HISTORY_CATEGORY_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+      }
+      catch (ParserException pe)
+      {
+        throw new UnsupportedOperationException(pe.getLocalizedMessage());
+      }
+    }
+    if (!EOCL_ENV.createQuery(VALIDATE_MEDICAL_HISTORY_ITEMMEDICAL_HISTORY_CATEGORY_ASSOCIATIONMEDICAL_HISTORY_CATEGORY_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(medicalHistoryItem))
+    {
+      if (diagnostics != null)
+      {
+        diagnostics.add
+          (new BasicDiagnostic
+            (Diagnostic.ERROR,
+             SdtmValidator.DIAGNOSTIC_SOURCE,
+             SdtmValidator.MEDICAL_HISTORY_ITEM__MEDICAL_HISTORY_ITEMMEDICAL_HISTORY_CATEGORY_ASSOCIATIONMEDICAL_HISTORY_CATEGORY_CLASS_CODE,
+             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "MedicalHistoryItemmedicalHistoryCategoryAssociationmedicalHistoryCategoryClassCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(medicalHistoryItem, context) }),
+             new Object [] { medicalHistoryItem }));
+      }
+       
+      return false;
+    }
+    return true;
+  }
+
+  /**
+   * The cached OCL expression body for the '{@link #validateMedicalHistoryItemmedicalHistoryCategoryAssociationmedicalHistoryCategoryCode(MedicalHistoryItem, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medical History Itemmedical History Category Associationmedical History Category Code</em>}' operation.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #validateMedicalHistoryItemmedicalHistoryCategoryAssociationmedicalHistoryCategoryCode(MedicalHistoryItem, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+   * @generated
+   * @ordered
+   */
+  protected static final String VALIDATE_MEDICAL_HISTORY_ITEMMEDICAL_HISTORY_CATEGORY_ASSOCIATIONMEDICAL_HISTORY_CATEGORY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entryRelationship->excluding(null).observation->excluding(null)->reject((code.oclIsUndefined() or code.isNullFlavorUndefined()) implies (not code.oclIsUndefined()))";
+
+  /**
+   * The cached OCL invariant for the '{@link #validateMedicalHistoryItemmedicalHistoryCategoryAssociationmedicalHistoryCategoryCode(MedicalHistoryItem, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medical History Itemmedical History Category Associationmedical History Category Code</em>}' invariant operation.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #validateMedicalHistoryItemmedicalHistoryCategoryAssociationmedicalHistoryCategoryCode(MedicalHistoryItem, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+   * @generated
+   * @ordered
+   */
+  
+  protected static Constraint VALIDATE_MEDICAL_HISTORY_ITEMMEDICAL_HISTORY_CATEGORY_ASSOCIATIONMEDICAL_HISTORY_CATEGORY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * <!-- begin-model-doc -->
+   * @param medicalHistoryItem The receiving '<em><b>Medical History Item</b></em>' model object.
+   * @param diagnostics The chain of diagnostics to which problems are to be appended.
+   * @param context The cache of context-specific information.
+   * <!-- end-model-doc -->
+   * @generated
+   */
+  
+  public static  boolean validateMedicalHistoryItemmedicalHistoryCategoryAssociationmedicalHistoryCategoryCode(MedicalHistoryItem medicalHistoryItem, DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+  	  
+    if (VALIDATE_MEDICAL_HISTORY_ITEMMEDICAL_HISTORY_CATEGORY_ASSOCIATIONMEDICAL_HISTORY_CATEGORY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+      OCL.Helper helper = EOCL_ENV.createOCLHelper();
+      helper.setContext(SdtmPackage.Literals.MEDICAL_HISTORY_ITEM);
+      try
+      {
+        VALIDATE_MEDICAL_HISTORY_ITEMMEDICAL_HISTORY_CATEGORY_ASSOCIATIONMEDICAL_HISTORY_CATEGORY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_MEDICAL_HISTORY_ITEMMEDICAL_HISTORY_CATEGORY_ASSOCIATIONMEDICAL_HISTORY_CATEGORY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+      }
+      catch (ParserException pe)
+      {
+        throw new UnsupportedOperationException(pe.getLocalizedMessage());
+      }
+    }
+    if (!EOCL_ENV.createQuery(VALIDATE_MEDICAL_HISTORY_ITEMMEDICAL_HISTORY_CATEGORY_ASSOCIATIONMEDICAL_HISTORY_CATEGORY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(medicalHistoryItem))
+    {
+      if (diagnostics != null)
+      {
+        diagnostics.add
+          (new BasicDiagnostic
+            (Diagnostic.ERROR,
+             SdtmValidator.DIAGNOSTIC_SOURCE,
+             SdtmValidator.MEDICAL_HISTORY_ITEM__MEDICAL_HISTORY_ITEMMEDICAL_HISTORY_CATEGORY_ASSOCIATIONMEDICAL_HISTORY_CATEGORY_CODE,
+             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "MedicalHistoryItemmedicalHistoryCategoryAssociationmedicalHistoryCategoryCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(medicalHistoryItem, context) }),
+             new Object [] { medicalHistoryItem }));
+      }
+       
+      return false;
+    }
+    return true;
+  }
+
+  /**
+   * The cached OCL expression body for the '{@link #validateMedicalHistoryItemmedicalHistoryCategoryAssociationmedicalHistoryCategoryMoodCode(MedicalHistoryItem, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medical History Itemmedical History Category Associationmedical History Category Mood Code</em>}' operation.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #validateMedicalHistoryItemmedicalHistoryCategoryAssociationmedicalHistoryCategoryMoodCode(MedicalHistoryItem, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+   * @generated
+   * @ordered
+   */
+  protected static final String VALIDATE_MEDICAL_HISTORY_ITEMMEDICAL_HISTORY_CATEGORY_ASSOCIATIONMEDICAL_HISTORY_CATEGORY_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entryRelationship->excluding(null).observation->excluding(null)->reject(isDefined('moodCode'))";
+
+  /**
+   * The cached OCL invariant for the '{@link #validateMedicalHistoryItemmedicalHistoryCategoryAssociationmedicalHistoryCategoryMoodCode(MedicalHistoryItem, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medical History Itemmedical History Category Associationmedical History Category Mood Code</em>}' invariant operation.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #validateMedicalHistoryItemmedicalHistoryCategoryAssociationmedicalHistoryCategoryMoodCode(MedicalHistoryItem, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+   * @generated
+   * @ordered
+   */
+  
+  protected static Constraint VALIDATE_MEDICAL_HISTORY_ITEMMEDICAL_HISTORY_CATEGORY_ASSOCIATIONMEDICAL_HISTORY_CATEGORY_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * <!-- begin-model-doc -->
+   * @param medicalHistoryItem The receiving '<em><b>Medical History Item</b></em>' model object.
+   * @param diagnostics The chain of diagnostics to which problems are to be appended.
+   * @param context The cache of context-specific information.
+   * <!-- end-model-doc -->
+   * @generated
+   */
+  
+  public static  boolean validateMedicalHistoryItemmedicalHistoryCategoryAssociationmedicalHistoryCategoryMoodCode(MedicalHistoryItem medicalHistoryItem, DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+  	  
+    if (VALIDATE_MEDICAL_HISTORY_ITEMMEDICAL_HISTORY_CATEGORY_ASSOCIATIONMEDICAL_HISTORY_CATEGORY_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+      OCL.Helper helper = EOCL_ENV.createOCLHelper();
+      helper.setContext(SdtmPackage.Literals.MEDICAL_HISTORY_ITEM);
+      try
+      {
+        VALIDATE_MEDICAL_HISTORY_ITEMMEDICAL_HISTORY_CATEGORY_ASSOCIATIONMEDICAL_HISTORY_CATEGORY_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_MEDICAL_HISTORY_ITEMMEDICAL_HISTORY_CATEGORY_ASSOCIATIONMEDICAL_HISTORY_CATEGORY_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+      }
+      catch (ParserException pe)
+      {
+        throw new UnsupportedOperationException(pe.getLocalizedMessage());
+      }
+    }
+    if (!EOCL_ENV.createQuery(VALIDATE_MEDICAL_HISTORY_ITEMMEDICAL_HISTORY_CATEGORY_ASSOCIATIONMEDICAL_HISTORY_CATEGORY_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(medicalHistoryItem))
+    {
+      if (diagnostics != null)
+      {
+        diagnostics.add
+          (new BasicDiagnostic
+            (Diagnostic.ERROR,
+             SdtmValidator.DIAGNOSTIC_SOURCE,
+             SdtmValidator.MEDICAL_HISTORY_ITEM__MEDICAL_HISTORY_ITEMMEDICAL_HISTORY_CATEGORY_ASSOCIATIONMEDICAL_HISTORY_CATEGORY_MOOD_CODE,
+             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "MedicalHistoryItemmedicalHistoryCategoryAssociationmedicalHistoryCategoryMoodCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(medicalHistoryItem, context) }),
+             new Object [] { medicalHistoryItem }));
+      }
+       
+      return false;
+    }
+    return true;
+  }
+
+  /**
+   * The cached OCL expression body for the '{@link #validateMedicalHistoryItemmedicalHistoryCategoryAssociationmedicalHistoryCategoryValue(MedicalHistoryItem, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medical History Itemmedical History Category Associationmedical History Category Value</em>}' operation.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #validateMedicalHistoryItemmedicalHistoryCategoryAssociationmedicalHistoryCategoryValue(MedicalHistoryItem, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+   * @generated
+   * @ordered
+   */
+  protected static final String VALIDATE_MEDICAL_HISTORY_ITEMMEDICAL_HISTORY_CATEGORY_ASSOCIATIONMEDICAL_HISTORY_CATEGORY_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entryRelationship->excluding(null).observation->excluding(null)->reject((value->isEmpty() or value->exists(element | element.isNullFlavorUndefined())) implies (value->size() = 1 and value->forAll(element | element.oclIsTypeOf(datatypes::CE))))";
+
+  /**
+   * The cached OCL invariant for the '{@link #validateMedicalHistoryItemmedicalHistoryCategoryAssociationmedicalHistoryCategoryValue(MedicalHistoryItem, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medical History Itemmedical History Category Associationmedical History Category Value</em>}' invariant operation.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #validateMedicalHistoryItemmedicalHistoryCategoryAssociationmedicalHistoryCategoryValue(MedicalHistoryItem, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+   * @generated
+   * @ordered
+   */
+  
+  protected static Constraint VALIDATE_MEDICAL_HISTORY_ITEMMEDICAL_HISTORY_CATEGORY_ASSOCIATIONMEDICAL_HISTORY_CATEGORY_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * <!-- begin-model-doc -->
+   * @param medicalHistoryItem The receiving '<em><b>Medical History Item</b></em>' model object.
+   * @param diagnostics The chain of diagnostics to which problems are to be appended.
+   * @param context The cache of context-specific information.
+   * <!-- end-model-doc -->
+   * @generated
+   */
+  
+  public static  boolean validateMedicalHistoryItemmedicalHistoryCategoryAssociationmedicalHistoryCategoryValue(MedicalHistoryItem medicalHistoryItem, DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+  	  
+    if (VALIDATE_MEDICAL_HISTORY_ITEMMEDICAL_HISTORY_CATEGORY_ASSOCIATIONMEDICAL_HISTORY_CATEGORY_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+      OCL.Helper helper = EOCL_ENV.createOCLHelper();
+      helper.setContext(SdtmPackage.Literals.MEDICAL_HISTORY_ITEM);
+      try
+      {
+        VALIDATE_MEDICAL_HISTORY_ITEMMEDICAL_HISTORY_CATEGORY_ASSOCIATIONMEDICAL_HISTORY_CATEGORY_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_MEDICAL_HISTORY_ITEMMEDICAL_HISTORY_CATEGORY_ASSOCIATIONMEDICAL_HISTORY_CATEGORY_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+      }
+      catch (ParserException pe)
+      {
+        throw new UnsupportedOperationException(pe.getLocalizedMessage());
+      }
+    }
+    if (!EOCL_ENV.createQuery(VALIDATE_MEDICAL_HISTORY_ITEMMEDICAL_HISTORY_CATEGORY_ASSOCIATIONMEDICAL_HISTORY_CATEGORY_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(medicalHistoryItem))
+    {
+      if (diagnostics != null)
+      {
+        diagnostics.add
+          (new BasicDiagnostic
+            (Diagnostic.ERROR,
+             SdtmValidator.DIAGNOSTIC_SOURCE,
+             SdtmValidator.MEDICAL_HISTORY_ITEM__MEDICAL_HISTORY_ITEMMEDICAL_HISTORY_CATEGORY_ASSOCIATIONMEDICAL_HISTORY_CATEGORY_VALUE,
+             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "MedicalHistoryItemmedicalHistoryCategoryAssociationmedicalHistoryCategoryValue", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(medicalHistoryItem, context) }),
+             new Object [] { medicalHistoryItem }));
+      }
+       
       return false;
     }
     return true;
@@ -1216,7 +1439,6 @@ public class MedicalHistoryItemOperations extends ClinicalStatementOperations
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.entryRelationship->excluding(null)->reject(typeCode=vocab::x_ActRelationshipEntryRelationship::COMP)
    * @param medicalHistoryItem The receiving '<em><b>Medical History Item</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -1226,6 +1448,7 @@ public class MedicalHistoryItemOperations extends ClinicalStatementOperations
   
   public static  boolean validateMedicalHistoryItemmedicalHistoryCategoryAssociationTypeCode(MedicalHistoryItem medicalHistoryItem, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
+  	  
     if (VALIDATE_MEDICAL_HISTORY_ITEMMEDICAL_HISTORY_CATEGORY_ASSOCIATION_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(SdtmPackage.Literals.MEDICAL_HISTORY_ITEM);
@@ -1250,6 +1473,337 @@ public class MedicalHistoryItemOperations extends ClinicalStatementOperations
              org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "MedicalHistoryItemmedicalHistoryCategoryAssociationTypeCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(medicalHistoryItem, context) }),
              new Object [] { medicalHistoryItem }));
       }
+       
+      return false;
+    }
+    return true;
+  }
+
+  /**
+   * The cached OCL expression body for the '{@link #validateMedicalHistoryItemmedicalHistoryCategoryAssociationMedicalHistoryCategory(MedicalHistoryItem, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medical History Itemmedical History Category Association Medical History Category</em>}' operation.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #validateMedicalHistoryItemmedicalHistoryCategoryAssociationMedicalHistoryCategory(MedicalHistoryItem, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+   * @generated
+   * @ordered
+   */
+  protected static final String VALIDATE_MEDICAL_HISTORY_ITEMMEDICAL_HISTORY_CATEGORY_ASSOCIATION_MEDICAL_HISTORY_CATEGORY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entryRelationship->excluding(null)->reject(observation->one(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(cda::Observation)))";
+
+  /**
+   * The cached OCL invariant for the '{@link #validateMedicalHistoryItemmedicalHistoryCategoryAssociationMedicalHistoryCategory(MedicalHistoryItem, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medical History Itemmedical History Category Association Medical History Category</em>}' invariant operation.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #validateMedicalHistoryItemmedicalHistoryCategoryAssociationMedicalHistoryCategory(MedicalHistoryItem, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+   * @generated
+   * @ordered
+   */
+  
+  protected static Constraint VALIDATE_MEDICAL_HISTORY_ITEMMEDICAL_HISTORY_CATEGORY_ASSOCIATION_MEDICAL_HISTORY_CATEGORY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * <!-- begin-model-doc -->
+   * @param medicalHistoryItem The receiving '<em><b>Medical History Item</b></em>' model object.
+   * @param diagnostics The chain of diagnostics to which problems are to be appended.
+   * @param context The cache of context-specific information.
+   * <!-- end-model-doc -->
+   * @generated
+   */
+  
+  public static  boolean validateMedicalHistoryItemmedicalHistoryCategoryAssociationMedicalHistoryCategory(MedicalHistoryItem medicalHistoryItem, DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+  	  
+    if (VALIDATE_MEDICAL_HISTORY_ITEMMEDICAL_HISTORY_CATEGORY_ASSOCIATION_MEDICAL_HISTORY_CATEGORY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+      OCL.Helper helper = EOCL_ENV.createOCLHelper();
+      helper.setContext(SdtmPackage.Literals.MEDICAL_HISTORY_ITEM);
+      try
+      {
+        VALIDATE_MEDICAL_HISTORY_ITEMMEDICAL_HISTORY_CATEGORY_ASSOCIATION_MEDICAL_HISTORY_CATEGORY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_MEDICAL_HISTORY_ITEMMEDICAL_HISTORY_CATEGORY_ASSOCIATION_MEDICAL_HISTORY_CATEGORY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+      }
+      catch (ParserException pe)
+      {
+        throw new UnsupportedOperationException(pe.getLocalizedMessage());
+      }
+    }
+    if (!EOCL_ENV.createQuery(VALIDATE_MEDICAL_HISTORY_ITEMMEDICAL_HISTORY_CATEGORY_ASSOCIATION_MEDICAL_HISTORY_CATEGORY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(medicalHistoryItem))
+    {
+      if (diagnostics != null)
+      {
+        diagnostics.add
+          (new BasicDiagnostic
+            (Diagnostic.ERROR,
+             SdtmValidator.DIAGNOSTIC_SOURCE,
+             SdtmValidator.MEDICAL_HISTORY_ITEM__MEDICAL_HISTORY_ITEMMEDICAL_HISTORY_CATEGORY_ASSOCIATION_MEDICAL_HISTORY_CATEGORY,
+             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "MedicalHistoryItemmedicalHistoryCategoryAssociationMedicalHistoryCategory", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(medicalHistoryItem, context) }),
+             new Object [] { medicalHistoryItem }));
+      }
+       
+      return false;
+    }
+    return true;
+  }
+
+  /**
+   * The cached OCL expression body for the '{@link #validateMedicalHistoryItemmedicalHistorySubCategoryAssociationmedicalHistorySubCategoryClassCode(MedicalHistoryItem, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medical History Itemmedical History Sub Category Associationmedical History Sub Category Class Code</em>}' operation.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #validateMedicalHistoryItemmedicalHistorySubCategoryAssociationmedicalHistorySubCategoryClassCode(MedicalHistoryItem, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+   * @generated
+   * @ordered
+   */
+  protected static final String VALIDATE_MEDICAL_HISTORY_ITEMMEDICAL_HISTORY_SUB_CATEGORY_ASSOCIATIONMEDICAL_HISTORY_SUB_CATEGORY_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entryRelationship->excluding(null).observation->excluding(null)->reject(classCode=vocab::ActClassObservation::OBS)";
+
+  /**
+   * The cached OCL invariant for the '{@link #validateMedicalHistoryItemmedicalHistorySubCategoryAssociationmedicalHistorySubCategoryClassCode(MedicalHistoryItem, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medical History Itemmedical History Sub Category Associationmedical History Sub Category Class Code</em>}' invariant operation.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #validateMedicalHistoryItemmedicalHistorySubCategoryAssociationmedicalHistorySubCategoryClassCode(MedicalHistoryItem, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+   * @generated
+   * @ordered
+   */
+  
+  protected static Constraint VALIDATE_MEDICAL_HISTORY_ITEMMEDICAL_HISTORY_SUB_CATEGORY_ASSOCIATIONMEDICAL_HISTORY_SUB_CATEGORY_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * <!-- begin-model-doc -->
+   * @param medicalHistoryItem The receiving '<em><b>Medical History Item</b></em>' model object.
+   * @param diagnostics The chain of diagnostics to which problems are to be appended.
+   * @param context The cache of context-specific information.
+   * <!-- end-model-doc -->
+   * @generated
+   */
+  
+  public static  boolean validateMedicalHistoryItemmedicalHistorySubCategoryAssociationmedicalHistorySubCategoryClassCode(MedicalHistoryItem medicalHistoryItem, DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+  	  
+    if (VALIDATE_MEDICAL_HISTORY_ITEMMEDICAL_HISTORY_SUB_CATEGORY_ASSOCIATIONMEDICAL_HISTORY_SUB_CATEGORY_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+      OCL.Helper helper = EOCL_ENV.createOCLHelper();
+      helper.setContext(SdtmPackage.Literals.MEDICAL_HISTORY_ITEM);
+      try
+      {
+        VALIDATE_MEDICAL_HISTORY_ITEMMEDICAL_HISTORY_SUB_CATEGORY_ASSOCIATIONMEDICAL_HISTORY_SUB_CATEGORY_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_MEDICAL_HISTORY_ITEMMEDICAL_HISTORY_SUB_CATEGORY_ASSOCIATIONMEDICAL_HISTORY_SUB_CATEGORY_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+      }
+      catch (ParserException pe)
+      {
+        throw new UnsupportedOperationException(pe.getLocalizedMessage());
+      }
+    }
+    if (!EOCL_ENV.createQuery(VALIDATE_MEDICAL_HISTORY_ITEMMEDICAL_HISTORY_SUB_CATEGORY_ASSOCIATIONMEDICAL_HISTORY_SUB_CATEGORY_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(medicalHistoryItem))
+    {
+      if (diagnostics != null)
+      {
+        diagnostics.add
+          (new BasicDiagnostic
+            (Diagnostic.ERROR,
+             SdtmValidator.DIAGNOSTIC_SOURCE,
+             SdtmValidator.MEDICAL_HISTORY_ITEM__MEDICAL_HISTORY_ITEMMEDICAL_HISTORY_SUB_CATEGORY_ASSOCIATIONMEDICAL_HISTORY_SUB_CATEGORY_CLASS_CODE,
+             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "MedicalHistoryItemmedicalHistorySubCategoryAssociationmedicalHistorySubCategoryClassCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(medicalHistoryItem, context) }),
+             new Object [] { medicalHistoryItem }));
+      }
+       
+      return false;
+    }
+    return true;
+  }
+
+  /**
+   * The cached OCL expression body for the '{@link #validateMedicalHistoryItemmedicalHistorySubCategoryAssociationmedicalHistorySubCategoryCode(MedicalHistoryItem, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medical History Itemmedical History Sub Category Associationmedical History Sub Category Code</em>}' operation.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #validateMedicalHistoryItemmedicalHistorySubCategoryAssociationmedicalHistorySubCategoryCode(MedicalHistoryItem, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+   * @generated
+   * @ordered
+   */
+  protected static final String VALIDATE_MEDICAL_HISTORY_ITEMMEDICAL_HISTORY_SUB_CATEGORY_ASSOCIATIONMEDICAL_HISTORY_SUB_CATEGORY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entryRelationship->excluding(null).observation->excluding(null)->reject((code.oclIsUndefined() or code.isNullFlavorUndefined()) implies (not code.oclIsUndefined()))";
+
+  /**
+   * The cached OCL invariant for the '{@link #validateMedicalHistoryItemmedicalHistorySubCategoryAssociationmedicalHistorySubCategoryCode(MedicalHistoryItem, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medical History Itemmedical History Sub Category Associationmedical History Sub Category Code</em>}' invariant operation.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #validateMedicalHistoryItemmedicalHistorySubCategoryAssociationmedicalHistorySubCategoryCode(MedicalHistoryItem, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+   * @generated
+   * @ordered
+   */
+  
+  protected static Constraint VALIDATE_MEDICAL_HISTORY_ITEMMEDICAL_HISTORY_SUB_CATEGORY_ASSOCIATIONMEDICAL_HISTORY_SUB_CATEGORY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * <!-- begin-model-doc -->
+   * @param medicalHistoryItem The receiving '<em><b>Medical History Item</b></em>' model object.
+   * @param diagnostics The chain of diagnostics to which problems are to be appended.
+   * @param context The cache of context-specific information.
+   * <!-- end-model-doc -->
+   * @generated
+   */
+  
+  public static  boolean validateMedicalHistoryItemmedicalHistorySubCategoryAssociationmedicalHistorySubCategoryCode(MedicalHistoryItem medicalHistoryItem, DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+  	  
+    if (VALIDATE_MEDICAL_HISTORY_ITEMMEDICAL_HISTORY_SUB_CATEGORY_ASSOCIATIONMEDICAL_HISTORY_SUB_CATEGORY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+      OCL.Helper helper = EOCL_ENV.createOCLHelper();
+      helper.setContext(SdtmPackage.Literals.MEDICAL_HISTORY_ITEM);
+      try
+      {
+        VALIDATE_MEDICAL_HISTORY_ITEMMEDICAL_HISTORY_SUB_CATEGORY_ASSOCIATIONMEDICAL_HISTORY_SUB_CATEGORY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_MEDICAL_HISTORY_ITEMMEDICAL_HISTORY_SUB_CATEGORY_ASSOCIATIONMEDICAL_HISTORY_SUB_CATEGORY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+      }
+      catch (ParserException pe)
+      {
+        throw new UnsupportedOperationException(pe.getLocalizedMessage());
+      }
+    }
+    if (!EOCL_ENV.createQuery(VALIDATE_MEDICAL_HISTORY_ITEMMEDICAL_HISTORY_SUB_CATEGORY_ASSOCIATIONMEDICAL_HISTORY_SUB_CATEGORY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(medicalHistoryItem))
+    {
+      if (diagnostics != null)
+      {
+        diagnostics.add
+          (new BasicDiagnostic
+            (Diagnostic.ERROR,
+             SdtmValidator.DIAGNOSTIC_SOURCE,
+             SdtmValidator.MEDICAL_HISTORY_ITEM__MEDICAL_HISTORY_ITEMMEDICAL_HISTORY_SUB_CATEGORY_ASSOCIATIONMEDICAL_HISTORY_SUB_CATEGORY_CODE,
+             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "MedicalHistoryItemmedicalHistorySubCategoryAssociationmedicalHistorySubCategoryCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(medicalHistoryItem, context) }),
+             new Object [] { medicalHistoryItem }));
+      }
+       
+      return false;
+    }
+    return true;
+  }
+
+  /**
+   * The cached OCL expression body for the '{@link #validateMedicalHistoryItemmedicalHistorySubCategoryAssociationmedicalHistorySubCategoryMoodCode(MedicalHistoryItem, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medical History Itemmedical History Sub Category Associationmedical History Sub Category Mood Code</em>}' operation.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #validateMedicalHistoryItemmedicalHistorySubCategoryAssociationmedicalHistorySubCategoryMoodCode(MedicalHistoryItem, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+   * @generated
+   * @ordered
+   */
+  protected static final String VALIDATE_MEDICAL_HISTORY_ITEMMEDICAL_HISTORY_SUB_CATEGORY_ASSOCIATIONMEDICAL_HISTORY_SUB_CATEGORY_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entryRelationship->excluding(null).observation->excluding(null)->reject(moodCode=vocab::x_ActMoodDocumentObservation::EVN)";
+
+  /**
+   * The cached OCL invariant for the '{@link #validateMedicalHistoryItemmedicalHistorySubCategoryAssociationmedicalHistorySubCategoryMoodCode(MedicalHistoryItem, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medical History Itemmedical History Sub Category Associationmedical History Sub Category Mood Code</em>}' invariant operation.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #validateMedicalHistoryItemmedicalHistorySubCategoryAssociationmedicalHistorySubCategoryMoodCode(MedicalHistoryItem, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+   * @generated
+   * @ordered
+   */
+  
+  protected static Constraint VALIDATE_MEDICAL_HISTORY_ITEMMEDICAL_HISTORY_SUB_CATEGORY_ASSOCIATIONMEDICAL_HISTORY_SUB_CATEGORY_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * <!-- begin-model-doc -->
+   * @param medicalHistoryItem The receiving '<em><b>Medical History Item</b></em>' model object.
+   * @param diagnostics The chain of diagnostics to which problems are to be appended.
+   * @param context The cache of context-specific information.
+   * <!-- end-model-doc -->
+   * @generated
+   */
+  
+  public static  boolean validateMedicalHistoryItemmedicalHistorySubCategoryAssociationmedicalHistorySubCategoryMoodCode(MedicalHistoryItem medicalHistoryItem, DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+  	  
+    if (VALIDATE_MEDICAL_HISTORY_ITEMMEDICAL_HISTORY_SUB_CATEGORY_ASSOCIATIONMEDICAL_HISTORY_SUB_CATEGORY_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+      OCL.Helper helper = EOCL_ENV.createOCLHelper();
+      helper.setContext(SdtmPackage.Literals.MEDICAL_HISTORY_ITEM);
+      try
+      {
+        VALIDATE_MEDICAL_HISTORY_ITEMMEDICAL_HISTORY_SUB_CATEGORY_ASSOCIATIONMEDICAL_HISTORY_SUB_CATEGORY_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_MEDICAL_HISTORY_ITEMMEDICAL_HISTORY_SUB_CATEGORY_ASSOCIATIONMEDICAL_HISTORY_SUB_CATEGORY_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+      }
+      catch (ParserException pe)
+      {
+        throw new UnsupportedOperationException(pe.getLocalizedMessage());
+      }
+    }
+    if (!EOCL_ENV.createQuery(VALIDATE_MEDICAL_HISTORY_ITEMMEDICAL_HISTORY_SUB_CATEGORY_ASSOCIATIONMEDICAL_HISTORY_SUB_CATEGORY_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(medicalHistoryItem))
+    {
+      if (diagnostics != null)
+      {
+        diagnostics.add
+          (new BasicDiagnostic
+            (Diagnostic.ERROR,
+             SdtmValidator.DIAGNOSTIC_SOURCE,
+             SdtmValidator.MEDICAL_HISTORY_ITEM__MEDICAL_HISTORY_ITEMMEDICAL_HISTORY_SUB_CATEGORY_ASSOCIATIONMEDICAL_HISTORY_SUB_CATEGORY_MOOD_CODE,
+             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "MedicalHistoryItemmedicalHistorySubCategoryAssociationmedicalHistorySubCategoryMoodCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(medicalHistoryItem, context) }),
+             new Object [] { medicalHistoryItem }));
+      }
+       
+      return false;
+    }
+    return true;
+  }
+
+  /**
+   * The cached OCL expression body for the '{@link #validateMedicalHistoryItemmedicalHistorySubCategoryAssociationmedicalHistorySubCategoryValue(MedicalHistoryItem, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medical History Itemmedical History Sub Category Associationmedical History Sub Category Value</em>}' operation.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #validateMedicalHistoryItemmedicalHistorySubCategoryAssociationmedicalHistorySubCategoryValue(MedicalHistoryItem, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+   * @generated
+   * @ordered
+   */
+  protected static final String VALIDATE_MEDICAL_HISTORY_ITEMMEDICAL_HISTORY_SUB_CATEGORY_ASSOCIATIONMEDICAL_HISTORY_SUB_CATEGORY_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entryRelationship->excluding(null).observation->excluding(null)->reject((value->isEmpty() or value->exists(element | element.isNullFlavorUndefined())) implies (value->size() = 1 and value->forAll(element | element.oclIsTypeOf(datatypes::CE))))";
+
+  /**
+   * The cached OCL invariant for the '{@link #validateMedicalHistoryItemmedicalHistorySubCategoryAssociationmedicalHistorySubCategoryValue(MedicalHistoryItem, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medical History Itemmedical History Sub Category Associationmedical History Sub Category Value</em>}' invariant operation.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #validateMedicalHistoryItemmedicalHistorySubCategoryAssociationmedicalHistorySubCategoryValue(MedicalHistoryItem, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+   * @generated
+   * @ordered
+   */
+  
+  protected static Constraint VALIDATE_MEDICAL_HISTORY_ITEMMEDICAL_HISTORY_SUB_CATEGORY_ASSOCIATIONMEDICAL_HISTORY_SUB_CATEGORY_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * <!-- begin-model-doc -->
+   * @param medicalHistoryItem The receiving '<em><b>Medical History Item</b></em>' model object.
+   * @param diagnostics The chain of diagnostics to which problems are to be appended.
+   * @param context The cache of context-specific information.
+   * <!-- end-model-doc -->
+   * @generated
+   */
+  
+  public static  boolean validateMedicalHistoryItemmedicalHistorySubCategoryAssociationmedicalHistorySubCategoryValue(MedicalHistoryItem medicalHistoryItem, DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+  	  
+    if (VALIDATE_MEDICAL_HISTORY_ITEMMEDICAL_HISTORY_SUB_CATEGORY_ASSOCIATIONMEDICAL_HISTORY_SUB_CATEGORY_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+      OCL.Helper helper = EOCL_ENV.createOCLHelper();
+      helper.setContext(SdtmPackage.Literals.MEDICAL_HISTORY_ITEM);
+      try
+      {
+        VALIDATE_MEDICAL_HISTORY_ITEMMEDICAL_HISTORY_SUB_CATEGORY_ASSOCIATIONMEDICAL_HISTORY_SUB_CATEGORY_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_MEDICAL_HISTORY_ITEMMEDICAL_HISTORY_SUB_CATEGORY_ASSOCIATIONMEDICAL_HISTORY_SUB_CATEGORY_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+      }
+      catch (ParserException pe)
+      {
+        throw new UnsupportedOperationException(pe.getLocalizedMessage());
+      }
+    }
+    if (!EOCL_ENV.createQuery(VALIDATE_MEDICAL_HISTORY_ITEMMEDICAL_HISTORY_SUB_CATEGORY_ASSOCIATIONMEDICAL_HISTORY_SUB_CATEGORY_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(medicalHistoryItem))
+    {
+      if (diagnostics != null)
+      {
+        diagnostics.add
+          (new BasicDiagnostic
+            (Diagnostic.ERROR,
+             SdtmValidator.DIAGNOSTIC_SOURCE,
+             SdtmValidator.MEDICAL_HISTORY_ITEM__MEDICAL_HISTORY_ITEMMEDICAL_HISTORY_SUB_CATEGORY_ASSOCIATIONMEDICAL_HISTORY_SUB_CATEGORY_VALUE,
+             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "MedicalHistoryItemmedicalHistorySubCategoryAssociationmedicalHistorySubCategoryValue", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(medicalHistoryItem, context) }),
+             new Object [] { medicalHistoryItem }));
+      }
+       
       return false;
     }
     return true;
@@ -1281,7 +1835,6 @@ public class MedicalHistoryItemOperations extends ClinicalStatementOperations
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.entryRelationship->excluding(null)->reject(typeCode=vocab::x_ActRelationshipEntryRelationship::COMP)
    * @param medicalHistoryItem The receiving '<em><b>Medical History Item</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -1291,6 +1844,7 @@ public class MedicalHistoryItemOperations extends ClinicalStatementOperations
   
   public static  boolean validateMedicalHistoryItemmedicalHistorySubCategoryAssociationTypeCode(MedicalHistoryItem medicalHistoryItem, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
+  	  
     if (VALIDATE_MEDICAL_HISTORY_ITEMMEDICAL_HISTORY_SUB_CATEGORY_ASSOCIATION_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(SdtmPackage.Literals.MEDICAL_HISTORY_ITEM);
@@ -1315,6 +1869,73 @@ public class MedicalHistoryItemOperations extends ClinicalStatementOperations
              org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "MedicalHistoryItemmedicalHistorySubCategoryAssociationTypeCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(medicalHistoryItem, context) }),
              new Object [] { medicalHistoryItem }));
       }
+       
+      return false;
+    }
+    return true;
+  }
+
+  /**
+   * The cached OCL expression body for the '{@link #validateMedicalHistoryItemmedicalHistorySubCategoryAssociationMedicalHistorySubCategory(MedicalHistoryItem, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medical History Itemmedical History Sub Category Association Medical History Sub Category</em>}' operation.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #validateMedicalHistoryItemmedicalHistorySubCategoryAssociationMedicalHistorySubCategory(MedicalHistoryItem, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+   * @generated
+   * @ordered
+   */
+  protected static final String VALIDATE_MEDICAL_HISTORY_ITEMMEDICAL_HISTORY_SUB_CATEGORY_ASSOCIATION_MEDICAL_HISTORY_SUB_CATEGORY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entryRelationship->excluding(null)->reject(observation->one(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(cda::Observation)))";
+
+  /**
+   * The cached OCL invariant for the '{@link #validateMedicalHistoryItemmedicalHistorySubCategoryAssociationMedicalHistorySubCategory(MedicalHistoryItem, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medical History Itemmedical History Sub Category Association Medical History Sub Category</em>}' invariant operation.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #validateMedicalHistoryItemmedicalHistorySubCategoryAssociationMedicalHistorySubCategory(MedicalHistoryItem, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+   * @generated
+   * @ordered
+   */
+  
+  protected static Constraint VALIDATE_MEDICAL_HISTORY_ITEMMEDICAL_HISTORY_SUB_CATEGORY_ASSOCIATION_MEDICAL_HISTORY_SUB_CATEGORY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * <!-- begin-model-doc -->
+   * @param medicalHistoryItem The receiving '<em><b>Medical History Item</b></em>' model object.
+   * @param diagnostics The chain of diagnostics to which problems are to be appended.
+   * @param context The cache of context-specific information.
+   * <!-- end-model-doc -->
+   * @generated
+   */
+  
+  public static  boolean validateMedicalHistoryItemmedicalHistorySubCategoryAssociationMedicalHistorySubCategory(MedicalHistoryItem medicalHistoryItem, DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+  	  
+    if (VALIDATE_MEDICAL_HISTORY_ITEMMEDICAL_HISTORY_SUB_CATEGORY_ASSOCIATION_MEDICAL_HISTORY_SUB_CATEGORY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+      OCL.Helper helper = EOCL_ENV.createOCLHelper();
+      helper.setContext(SdtmPackage.Literals.MEDICAL_HISTORY_ITEM);
+      try
+      {
+        VALIDATE_MEDICAL_HISTORY_ITEMMEDICAL_HISTORY_SUB_CATEGORY_ASSOCIATION_MEDICAL_HISTORY_SUB_CATEGORY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_MEDICAL_HISTORY_ITEMMEDICAL_HISTORY_SUB_CATEGORY_ASSOCIATION_MEDICAL_HISTORY_SUB_CATEGORY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+      }
+      catch (ParserException pe)
+      {
+        throw new UnsupportedOperationException(pe.getLocalizedMessage());
+      }
+    }
+    if (!EOCL_ENV.createQuery(VALIDATE_MEDICAL_HISTORY_ITEMMEDICAL_HISTORY_SUB_CATEGORY_ASSOCIATION_MEDICAL_HISTORY_SUB_CATEGORY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(medicalHistoryItem))
+    {
+      if (diagnostics != null)
+      {
+        diagnostics.add
+          (new BasicDiagnostic
+            (Diagnostic.ERROR,
+             SdtmValidator.DIAGNOSTIC_SOURCE,
+             SdtmValidator.MEDICAL_HISTORY_ITEM__MEDICAL_HISTORY_ITEMMEDICAL_HISTORY_SUB_CATEGORY_ASSOCIATION_MEDICAL_HISTORY_SUB_CATEGORY,
+             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "MedicalHistoryItemmedicalHistorySubCategoryAssociationMedicalHistorySubCategory", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(medicalHistoryItem, context) }),
+             new Object [] { medicalHistoryItem }));
+      }
+       
       return false;
     }
     return true;
@@ -1328,7 +1949,7 @@ public class MedicalHistoryItemOperations extends ClinicalStatementOperations
    * @generated
    * @ordered
    */
-  protected static final String GET_GROUP_IDENTIFIER__EOCL_EXP = "self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(sdtm::Group Identifier))->asSequence()->first().oclAsType(sdtm::Group Identifier)";
+  protected static final String GET_GROUP_IDENTIFIER__EOCL_EXP = "self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(sdtm::Group Identifier))->asSequence()->any(true).oclAsType(sdtm::Group Identifier)";
 
   /**
    * The cached OCL query for the '{@link #getGroupIdentifier(MedicalHistoryItem) <em>Get Group Identifier</em>}' query operation.
@@ -1343,10 +1964,6 @@ public class MedicalHistoryItemOperations extends ClinicalStatementOperations
   /**
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * <!-- begin-model-doc -->
-   * self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(sdtm::Group Identifier))->asSequence()->first().oclAsType(sdtm::Group Identifier)
-   * @param medicalHistoryItem The receiving '<em><b>Medical History Item</b></em>' model object.
-   * <!-- end-model-doc -->
    * @generated
    */
   
@@ -1355,7 +1972,7 @@ public class MedicalHistoryItemOperations extends ClinicalStatementOperations
     if (GET_GROUP_IDENTIFIER__EOCL_QRY == null)
     {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
-      helper.setOperationContext(SdtmPackage.Literals.MEDICAL_HISTORY_ITEM, SdtmPackage.Literals.MEDICAL_HISTORY_ITEM.getEAllOperations().get(68));
+      helper.setOperationContext(SdtmPackage.Literals.MEDICAL_HISTORY_ITEM, SdtmPackage.Literals.MEDICAL_HISTORY_ITEM.getEAllOperations().get(79));
       try
       {
         GET_GROUP_IDENTIFIER__EOCL_QRY = helper.createQuery(GET_GROUP_IDENTIFIER__EOCL_EXP);
@@ -1377,7 +1994,7 @@ public class MedicalHistoryItemOperations extends ClinicalStatementOperations
    * @generated
    * @ordered
    */
-  protected static final String GET_PRE_SPECIFIED_EVENT__EOCL_EXP = "self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(sdtm::Pre-Specified Event))->asSequence()->first().oclAsType(sdtm::Pre-Specified Event)";
+  protected static final String GET_PRE_SPECIFIED_EVENT__EOCL_EXP = "self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(sdtm::Pre-Specified Event))->asSequence()->any(true).oclAsType(sdtm::Pre-Specified Event)";
 
   /**
    * The cached OCL query for the '{@link #getPreSpecifiedEvent(MedicalHistoryItem) <em>Get Pre Specified Event</em>}' query operation.
@@ -1392,10 +2009,6 @@ public class MedicalHistoryItemOperations extends ClinicalStatementOperations
   /**
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * <!-- begin-model-doc -->
-   * self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(sdtm::Pre-Specified Event))->asSequence()->first().oclAsType(sdtm::Pre-Specified Event)
-   * @param medicalHistoryItem The receiving '<em><b>Medical History Item</b></em>' model object.
-   * <!-- end-model-doc -->
    * @generated
    */
   
@@ -1404,7 +2017,7 @@ public class MedicalHistoryItemOperations extends ClinicalStatementOperations
     if (GET_PRE_SPECIFIED_EVENT__EOCL_QRY == null)
     {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
-      helper.setOperationContext(SdtmPackage.Literals.MEDICAL_HISTORY_ITEM, SdtmPackage.Literals.MEDICAL_HISTORY_ITEM.getEAllOperations().get(69));
+      helper.setOperationContext(SdtmPackage.Literals.MEDICAL_HISTORY_ITEM, SdtmPackage.Literals.MEDICAL_HISTORY_ITEM.getEAllOperations().get(80));
       try
       {
         GET_PRE_SPECIFIED_EVENT__EOCL_QRY = helper.createQuery(GET_PRE_SPECIFIED_EVENT__EOCL_EXP);
@@ -1426,7 +2039,7 @@ public class MedicalHistoryItemOperations extends ClinicalStatementOperations
    * @generated
    * @ordered
    */
-  protected static final String GET_NON_PERFORMANCE_REASON__EOCL_EXP = "self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(sdtm::Non Performance Reason))->asSequence()->first().oclAsType(sdtm::Non Performance Reason)";
+  protected static final String GET_NON_PERFORMANCE_REASON__EOCL_EXP = "self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(sdtm::Non Performance Reason))->asSequence()->any(true).oclAsType(sdtm::Non Performance Reason)";
 
   /**
    * The cached OCL query for the '{@link #getNonPerformanceReason(MedicalHistoryItem) <em>Get Non Performance Reason</em>}' query operation.
@@ -1441,10 +2054,6 @@ public class MedicalHistoryItemOperations extends ClinicalStatementOperations
   /**
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * <!-- begin-model-doc -->
-   * self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(sdtm::Non Performance Reason))->asSequence()->first().oclAsType(sdtm::Non Performance Reason)
-   * @param medicalHistoryItem The receiving '<em><b>Medical History Item</b></em>' model object.
-   * <!-- end-model-doc -->
    * @generated
    */
   
@@ -1453,7 +2062,7 @@ public class MedicalHistoryItemOperations extends ClinicalStatementOperations
     if (GET_NON_PERFORMANCE_REASON__EOCL_QRY == null)
     {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
-      helper.setOperationContext(SdtmPackage.Literals.MEDICAL_HISTORY_ITEM, SdtmPackage.Literals.MEDICAL_HISTORY_ITEM.getEAllOperations().get(70));
+      helper.setOperationContext(SdtmPackage.Literals.MEDICAL_HISTORY_ITEM, SdtmPackage.Literals.MEDICAL_HISTORY_ITEM.getEAllOperations().get(81));
       try
       {
         GET_NON_PERFORMANCE_REASON__EOCL_QRY = helper.createQuery(GET_NON_PERFORMANCE_REASON__EOCL_EXP);
@@ -1475,7 +2084,7 @@ public class MedicalHistoryItemOperations extends ClinicalStatementOperations
    * @generated
    * @ordered
    */
-  protected static final String GET_BODY_SYSTEMOR_ORGAN_CLASS__EOCL_EXP = "self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(sdtm::Body System or Organ Class))->asSequence()->first().oclAsType(sdtm::Body System or Organ Class)";
+  protected static final String GET_BODY_SYSTEMOR_ORGAN_CLASS__EOCL_EXP = "self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(sdtm::Body System or Organ Class))->asSequence()->any(true).oclAsType(sdtm::Body System or Organ Class)";
 
   /**
    * The cached OCL query for the '{@link #getBodySystemorOrganClass(MedicalHistoryItem) <em>Get Body Systemor Organ Class</em>}' query operation.
@@ -1490,10 +2099,6 @@ public class MedicalHistoryItemOperations extends ClinicalStatementOperations
   /**
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * <!-- begin-model-doc -->
-   * self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(sdtm::Body System or Organ Class))->asSequence()->first().oclAsType(sdtm::Body System or Organ Class)
-   * @param medicalHistoryItem The receiving '<em><b>Medical History Item</b></em>' model object.
-   * <!-- end-model-doc -->
    * @generated
    */
   
@@ -1502,7 +2107,7 @@ public class MedicalHistoryItemOperations extends ClinicalStatementOperations
     if (GET_BODY_SYSTEMOR_ORGAN_CLASS__EOCL_QRY == null)
     {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
-      helper.setOperationContext(SdtmPackage.Literals.MEDICAL_HISTORY_ITEM, SdtmPackage.Literals.MEDICAL_HISTORY_ITEM.getEAllOperations().get(71));
+      helper.setOperationContext(SdtmPackage.Literals.MEDICAL_HISTORY_ITEM, SdtmPackage.Literals.MEDICAL_HISTORY_ITEM.getEAllOperations().get(82));
       try
       {
         GET_BODY_SYSTEMOR_ORGAN_CLASS__EOCL_QRY = helper.createQuery(GET_BODY_SYSTEMOR_ORGAN_CLASS__EOCL_EXP);
@@ -1517,55 +2122,6 @@ public class MedicalHistoryItemOperations extends ClinicalStatementOperations
   }
 
   /**
-   * The cached OCL expression body for the '{@link #getEventStudyDay(MedicalHistoryItem) <em>Get Event Study Day</em>}' operation.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @see #getEventStudyDay(MedicalHistoryItem)
-   * @generated
-   * @ordered
-   */
-  protected static final String GET_EVENT_STUDY_DAY__EOCL_EXP = "self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(sdtm::Event Study Day))->asSequence()->first().oclAsType(sdtm::Event Study Day)";
-
-  /**
-   * The cached OCL query for the '{@link #getEventStudyDay(MedicalHistoryItem) <em>Get Event Study Day</em>}' query operation.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @see #getEventStudyDay(MedicalHistoryItem)
-   * @generated
-   * @ordered
-   */
-  protected static OCLExpression<EClassifier> GET_EVENT_STUDY_DAY__EOCL_QRY;
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * <!-- begin-model-doc -->
-   * self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(sdtm::Event Study Day))->asSequence()->first().oclAsType(sdtm::Event Study Day)
-   * @param medicalHistoryItem The receiving '<em><b>Medical History Item</b></em>' model object.
-   * <!-- end-model-doc -->
-   * @generated
-   */
-  
-  public static  EventStudyDay getEventStudyDay(MedicalHistoryItem medicalHistoryItem)
-  {
-    if (GET_EVENT_STUDY_DAY__EOCL_QRY == null)
-    {
-      OCL.Helper helper = EOCL_ENV.createOCLHelper();
-      helper.setOperationContext(SdtmPackage.Literals.MEDICAL_HISTORY_ITEM, SdtmPackage.Literals.MEDICAL_HISTORY_ITEM.getEAllOperations().get(72));
-      try
-      {
-        GET_EVENT_STUDY_DAY__EOCL_QRY = helper.createQuery(GET_EVENT_STUDY_DAY__EOCL_EXP);
-      }
-      catch (ParserException pe)
-      {
-        throw new UnsupportedOperationException(pe.getLocalizedMessage());
-      }
-    }
-    OCL.Query query = EOCL_ENV.createQuery(GET_EVENT_STUDY_DAY__EOCL_QRY);
-    return (EventStudyDay) query.evaluate(medicalHistoryItem);
-  }
-
-  /**
    * The cached OCL expression body for the '{@link #getActivityEndTimingReference(MedicalHistoryItem) <em>Get Activity End Timing Reference</em>}' operation.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
@@ -1573,7 +2129,7 @@ public class MedicalHistoryItemOperations extends ClinicalStatementOperations
    * @generated
    * @ordered
    */
-  protected static final String GET_ACTIVITY_END_TIMING_REFERENCE__EOCL_EXP = "self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(sdtm::Activity End Timing Reference))->asSequence()->first().oclAsType(sdtm::Activity End Timing Reference)";
+  protected static final String GET_ACTIVITY_END_TIMING_REFERENCE__EOCL_EXP = "self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(sdtm::Activity End Timing Reference))->asSequence()->any(true).oclAsType(sdtm::Activity End Timing Reference)";
 
   /**
    * The cached OCL query for the '{@link #getActivityEndTimingReference(MedicalHistoryItem) <em>Get Activity End Timing Reference</em>}' query operation.
@@ -1588,10 +2144,6 @@ public class MedicalHistoryItemOperations extends ClinicalStatementOperations
   /**
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * <!-- begin-model-doc -->
-   * self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(sdtm::Activity End Timing Reference))->asSequence()->first().oclAsType(sdtm::Activity End Timing Reference)
-   * @param medicalHistoryItem The receiving '<em><b>Medical History Item</b></em>' model object.
-   * <!-- end-model-doc -->
    * @generated
    */
   
@@ -1600,7 +2152,7 @@ public class MedicalHistoryItemOperations extends ClinicalStatementOperations
     if (GET_ACTIVITY_END_TIMING_REFERENCE__EOCL_QRY == null)
     {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
-      helper.setOperationContext(SdtmPackage.Literals.MEDICAL_HISTORY_ITEM, SdtmPackage.Literals.MEDICAL_HISTORY_ITEM.getEAllOperations().get(73));
+      helper.setOperationContext(SdtmPackage.Literals.MEDICAL_HISTORY_ITEM, SdtmPackage.Literals.MEDICAL_HISTORY_ITEM.getEAllOperations().get(83));
       try
       {
         GET_ACTIVITY_END_TIMING_REFERENCE__EOCL_QRY = helper.createQuery(GET_ACTIVITY_END_TIMING_REFERENCE__EOCL_EXP);
@@ -1622,7 +2174,7 @@ public class MedicalHistoryItemOperations extends ClinicalStatementOperations
    * @generated
    * @ordered
    */
-  protected static final String GET_DATA_COLLECTION__EOCL_EXP = "self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(sdtm::Data Collection))->asSequence()->first().oclAsType(sdtm::Data Collection)";
+  protected static final String GET_DATA_COLLECTION__EOCL_EXP = "self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(sdtm::Data Collection))->asSequence()->any(true).oclAsType(sdtm::Data Collection)";
 
   /**
    * The cached OCL query for the '{@link #getDataCollection(MedicalHistoryItem) <em>Get Data Collection</em>}' query operation.
@@ -1637,10 +2189,6 @@ public class MedicalHistoryItemOperations extends ClinicalStatementOperations
   /**
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * <!-- begin-model-doc -->
-   * self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(sdtm::Data Collection))->asSequence()->first().oclAsType(sdtm::Data Collection)
-   * @param medicalHistoryItem The receiving '<em><b>Medical History Item</b></em>' model object.
-   * <!-- end-model-doc -->
    * @generated
    */
   
@@ -1649,7 +2197,7 @@ public class MedicalHistoryItemOperations extends ClinicalStatementOperations
     if (GET_DATA_COLLECTION__EOCL_QRY == null)
     {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
-      helper.setOperationContext(SdtmPackage.Literals.MEDICAL_HISTORY_ITEM, SdtmPackage.Literals.MEDICAL_HISTORY_ITEM.getEAllOperations().get(74));
+      helper.setOperationContext(SdtmPackage.Literals.MEDICAL_HISTORY_ITEM, SdtmPackage.Literals.MEDICAL_HISTORY_ITEM.getEAllOperations().get(84));
       try
       {
         GET_DATA_COLLECTION__EOCL_QRY = helper.createQuery(GET_DATA_COLLECTION__EOCL_EXP);

@@ -136,6 +136,10 @@
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="phcr.ecore#//PublicHealthCaseReport/getImmunizationsSection"/>
     </genClasses>
     <genClasses xsi:type="genmodel:GenClass" ecoreClass="phcr.ecore#//PhcrSocialHistorySection">
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="phcr.ecore#//PhcrSocialHistorySection/PhcrSocialHistorySectionCodeP">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="phcr.ecore#//PhcrSocialHistorySection/PhcrSocialHistorySectionCodeP/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="phcr.ecore#//PhcrSocialHistorySection/PhcrSocialHistorySectionCodeP/context"/>
+      </genOperations>
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="phcr.ecore#//PhcrSocialHistorySection/PhcrSocialHistorySectionCode">
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="phcr.ecore#//PhcrSocialHistorySection/PhcrSocialHistorySectionCode/diagnostics"/>
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="phcr.ecore#//PhcrSocialHistorySection/PhcrSocialHistorySectionCode/context"/>
@@ -482,13 +486,17 @@
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="phcr.ecore#//CaseObservation/CaseObservationId/diagnostics"/>
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="phcr.ecore#//CaseObservation/CaseObservationId/context"/>
       </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="phcr.ecore#//CaseObservation/CaseObservationCodeP">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="phcr.ecore#//CaseObservation/CaseObservationCodeP/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="phcr.ecore#//CaseObservation/CaseObservationCodeP/context"/>
+      </genOperations>
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="phcr.ecore#//CaseObservation/CaseObservationCode">
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="phcr.ecore#//CaseObservation/CaseObservationCode/diagnostics"/>
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="phcr.ecore#//CaseObservation/CaseObservationCode/context"/>
       </genOperations>
-      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="phcr.ecore#//CaseObservation/ProblemObservationCode">
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="phcr.ecore#//CaseObservation/ProblemObservationCode/diagnostics"/>
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="phcr.ecore#//CaseObservation/ProblemObservationCode/context"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="phcr.ecore#//CaseObservation/CaseObservationStatusCodeP">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="phcr.ecore#//CaseObservation/CaseObservationStatusCodeP/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="phcr.ecore#//CaseObservation/CaseObservationStatusCodeP/context"/>
       </genOperations>
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="phcr.ecore#//CaseObservation/CaseObservationStatusCode">
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="phcr.ecore#//CaseObservation/CaseObservationStatusCode/diagnostics"/>
@@ -837,6 +845,10 @@
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="phcr.ecore#//PhcrEncountersSection/getPHCREncountersActivities"/>
     </genClasses>
     <genClasses xsi:type="genmodel:GenClass" ecoreClass="phcr.ecore#//PhcrRelevantDxTestsSection">
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="phcr.ecore#//PhcrRelevantDxTestsSection/PhcrRelevantDxTestsSectionCodeP">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="phcr.ecore#//PhcrRelevantDxTestsSection/PhcrRelevantDxTestsSectionCodeP/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="phcr.ecore#//PhcrRelevantDxTestsSection/PhcrRelevantDxTestsSectionCodeP/context"/>
+      </genOperations>
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="phcr.ecore#//PhcrRelevantDxTestsSection/PhcrRelevantDxTestsSectionCode">
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="phcr.ecore#//PhcrRelevantDxTestsSection/PhcrRelevantDxTestsSectionCode/diagnostics"/>
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="phcr.ecore#//PhcrRelevantDxTestsSection/PhcrRelevantDxTestsSectionCode/context"/>
@@ -882,6 +894,10 @@
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="phcr.ecore#//ResultOrganizer/PHCRResultOrganizerCode/diagnostics"/>
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="phcr.ecore#//ResultOrganizer/PHCRResultOrganizerCode/context"/>
       </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="phcr.ecore#//ResultOrganizer/PHCRResultOrganizerStatusCodeP">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="phcr.ecore#//ResultOrganizer/PHCRResultOrganizerStatusCodeP/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="phcr.ecore#//ResultOrganizer/PHCRResultOrganizerStatusCodeP/context"/>
+      </genOperations>
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="phcr.ecore#//ResultOrganizer/PHCRResultOrganizerStatusCode">
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="phcr.ecore#//ResultOrganizer/PHCRResultOrganizerStatusCode/diagnostics"/>
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="phcr.ecore#//ResultOrganizer/PHCRResultOrganizerStatusCode/context"/>
@@ -905,6 +921,10 @@
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="phcr.ecore#//ResultObservation/PHCRResultObservationClassCode">
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="phcr.ecore#//ResultObservation/PHCRResultObservationClassCode/diagnostics"/>
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="phcr.ecore#//ResultObservation/PHCRResultObservationClassCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="phcr.ecore#//ResultObservation/PHCRResultObservationStatusCodeP">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="phcr.ecore#//ResultObservation/PHCRResultObservationStatusCodeP/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="phcr.ecore#//ResultObservation/PHCRResultObservationStatusCodeP/context"/>
       </genOperations>
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="phcr.ecore#//ResultObservation/PHCRResultObservationStatusCode">
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="phcr.ecore#//ResultObservation/PHCRResultObservationStatusCode/diagnostics"/>
@@ -993,6 +1013,10 @@
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="phcr.ecore#//ImagingObservation/ImagingObservationCode">
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="phcr.ecore#//ImagingObservation/ImagingObservationCode/diagnostics"/>
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="phcr.ecore#//ImagingObservation/ImagingObservationCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="phcr.ecore#//ImagingObservation/ImagingObservationStatusCodeP">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="phcr.ecore#//ImagingObservation/ImagingObservationStatusCodeP/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="phcr.ecore#//ImagingObservation/ImagingObservationStatusCodeP/context"/>
       </genOperations>
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="phcr.ecore#//ImagingObservation/ImagingObservationStatusCode">
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="phcr.ecore#//ImagingObservation/ImagingObservationStatusCode/diagnostics"/>

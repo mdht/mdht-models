@@ -75,7 +75,6 @@ public class SubjectPoolOperations extends ClinicalStatementOperations
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.23.53')
    * @param subjectPool The receiving '<em><b>Subject Pool</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -85,6 +84,7 @@ public class SubjectPoolOperations extends ClinicalStatementOperations
   
   public static  boolean validateSubjectPoolTemplateId(SubjectPool subjectPool, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
+  	  
     if (VALIDATE_SUBJECT_POOL_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(SdtmPackage.Literals.SUBJECT_POOL);
@@ -109,6 +109,7 @@ public class SubjectPoolOperations extends ClinicalStatementOperations
              org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "SubjectPoolTemplateId", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(subjectPool, context) }),
              new Object [] { subjectPool }));
       }
+       
       return false;
     }
     return true;

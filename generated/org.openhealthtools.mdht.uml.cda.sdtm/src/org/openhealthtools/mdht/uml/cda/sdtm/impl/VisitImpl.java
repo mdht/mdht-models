@@ -6,6 +6,7 @@
  */
 package org.openhealthtools.mdht.uml.cda.sdtm.impl;
 
+import java.lang.Iterable;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
@@ -13,6 +14,8 @@ import org.eclipse.emf.common.util.EList;
 
 import org.eclipse.emf.ecore.EClass;
 
+import org.eclipse.emf.ecore.EObject;
+import org.openhealthtools.mdht.emf.runtime.util.Initializer;
 import org.openhealthtools.mdht.uml.cda.impl.EncounterImpl;
 
 import org.openhealthtools.mdht.uml.cda.sdtm.AdverseEvent;
@@ -22,6 +25,7 @@ import org.openhealthtools.mdht.uml.cda.sdtm.FindingAbout;
 import org.openhealthtools.mdht.uml.cda.sdtm.InclusionorExclusionCriteriaNotMet;
 import org.openhealthtools.mdht.uml.cda.sdtm.MicrobiologySpecimenFinding;
 import org.openhealthtools.mdht.uml.cda.sdtm.MicrobiologySusceptibility;
+import org.openhealthtools.mdht.uml.cda.sdtm.NonhumanLaboratoryTestResult;
 import org.openhealthtools.mdht.uml.cda.sdtm.NonHumanLaboratoryTestResult;
 import org.openhealthtools.mdht.uml.cda.sdtm.PharmacokineticConcentrationFinding;
 import org.openhealthtools.mdht.uml.cda.sdtm.PhysicalExaminationFinding;
@@ -342,7 +346,7 @@ public class VisitImpl extends EncounterImpl implements Visit
    * <!-- end-user-doc -->
    * @generated
    */
-  public EList<NonHumanLaboratoryTestResult> getLaboratoryTestResults()
+  public EList<NonhumanLaboratoryTestResult> getLaboratoryTestResults()
   {
     return VisitOperations.getLaboratoryTestResults(this);
   }
@@ -423,7 +427,16 @@ public class VisitImpl extends EncounterImpl implements Visit
    * @generated
    */
   public Visit init() {
-    	CDAUtil.init(this);
-    	return this;
+      return Initializer.Util.init(this);
   }
+
+  /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    public Visit init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
 } //VisitImpl

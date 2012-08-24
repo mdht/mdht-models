@@ -6,12 +6,15 @@
  */
 package org.openhealthtools.mdht.uml.cda.sdtm.impl;
 
+import java.lang.Iterable;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
 
 import org.eclipse.emf.ecore.EClass;
 
+import org.eclipse.emf.ecore.EObject;
+import org.openhealthtools.mdht.emf.runtime.util.Initializer;
 import org.openhealthtools.mdht.uml.cda.impl.ObservationImpl;
 
 import org.openhealthtools.mdht.uml.cda.sdtm.GroupIdentifier;
@@ -192,6 +195,46 @@ public class PharmacokineticParameterFindingImpl extends ObservationImpl impleme
    * <!-- end-user-doc -->
    * @generated
    */
+  public boolean validatePharmacokineticParameterFindingpharmacokineticsParameterCategoryAssociationpharmacokineticsParameterCategoryClassCode(DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+    return PharmacokineticParameterFindingOperations.validatePharmacokineticParameterFindingpharmacokineticsParameterCategoryAssociationpharmacokineticsParameterCategoryClassCode(this, diagnostics, context);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public boolean validatePharmacokineticParameterFindingpharmacokineticsParameterCategoryAssociationpharmacokineticsParameterCategoryCode(DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+    return PharmacokineticParameterFindingOperations.validatePharmacokineticParameterFindingpharmacokineticsParameterCategoryAssociationpharmacokineticsParameterCategoryCode(this, diagnostics, context);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public boolean validatePharmacokineticParameterFindingpharmacokineticsParameterCategoryAssociationpharmacokineticsParameterCategoryMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+    return PharmacokineticParameterFindingOperations.validatePharmacokineticParameterFindingpharmacokineticsParameterCategoryAssociationpharmacokineticsParameterCategoryMoodCode(this, diagnostics, context);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public boolean validatePharmacokineticParameterFindingpharmacokineticsParameterCategoryAssociationpharmacokineticsParameterCategoryValue(DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+    return PharmacokineticParameterFindingOperations.validatePharmacokineticParameterFindingpharmacokineticsParameterCategoryAssociationpharmacokineticsParameterCategoryValue(this, diagnostics, context);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
   public boolean validatePharmacokineticParameterFindingpharmacokineticsParameterCategoryAssociationTypeCode(DiagnosticChain diagnostics, Map<Object, Object> context)
   {
     return PharmacokineticParameterFindingOperations.validatePharmacokineticParameterFindingpharmacokineticsParameterCategoryAssociationTypeCode(this, diagnostics, context);
@@ -202,9 +245,69 @@ public class PharmacokineticParameterFindingImpl extends ObservationImpl impleme
    * <!-- end-user-doc -->
    * @generated
    */
+  public boolean validatePharmacokineticParameterFindingpharmacokineticsParameterCategoryAssociationPharmacokineticsParameterCategory(DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+    return PharmacokineticParameterFindingOperations.validatePharmacokineticParameterFindingpharmacokineticsParameterCategoryAssociationPharmacokineticsParameterCategory(this, diagnostics, context);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public boolean validatePharmacokineticParameterFindingpharmacokineticsParameterSubCategoryAssociationpharmacokineticsParameterSubCategoryClassCode(DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+    return PharmacokineticParameterFindingOperations.validatePharmacokineticParameterFindingpharmacokineticsParameterSubCategoryAssociationpharmacokineticsParameterSubCategoryClassCode(this, diagnostics, context);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public boolean validatePharmacokineticParameterFindingpharmacokineticsParameterSubCategoryAssociationpharmacokineticsParameterSubCategoryCode(DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+    return PharmacokineticParameterFindingOperations.validatePharmacokineticParameterFindingpharmacokineticsParameterSubCategoryAssociationpharmacokineticsParameterSubCategoryCode(this, diagnostics, context);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public boolean validatePharmacokineticParameterFindingpharmacokineticsParameterSubCategoryAssociationpharmacokineticsParameterSubCategoryMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+    return PharmacokineticParameterFindingOperations.validatePharmacokineticParameterFindingpharmacokineticsParameterSubCategoryAssociationpharmacokineticsParameterSubCategoryMoodCode(this, diagnostics, context);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public boolean validatePharmacokineticParameterFindingpharmacokineticsParameterSubCategoryAssociationpharmacokineticsParameterSubCategoryValue(DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+    return PharmacokineticParameterFindingOperations.validatePharmacokineticParameterFindingpharmacokineticsParameterSubCategoryAssociationpharmacokineticsParameterSubCategoryValue(this, diagnostics, context);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
   public boolean validatePharmacokineticParameterFindingpharmacokineticsParameterSubCategoryAssociationTypeCode(DiagnosticChain diagnostics, Map<Object, Object> context)
   {
     return PharmacokineticParameterFindingOperations.validatePharmacokineticParameterFindingpharmacokineticsParameterSubCategoryAssociationTypeCode(this, diagnostics, context);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public boolean validatePharmacokineticParameterFindingpharmacokineticsParameterSubCategoryAssociationPharmacokineticsParameterSubCategory(DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+    return PharmacokineticParameterFindingOperations.validatePharmacokineticParameterFindingpharmacokineticsParameterSubCategoryAssociationPharmacokineticsParameterSubCategory(this, diagnostics, context);
   }
 
   /**
@@ -253,7 +356,16 @@ public class PharmacokineticParameterFindingImpl extends ObservationImpl impleme
    * @generated
    */
   public PharmacokineticParameterFinding init() {
-    	CDAUtil.init(this);
-    	return this;
+      return Initializer.Util.init(this);
   }
+
+  /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    public PharmacokineticParameterFinding init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
 } //PharmacokineticParameterFindingImpl

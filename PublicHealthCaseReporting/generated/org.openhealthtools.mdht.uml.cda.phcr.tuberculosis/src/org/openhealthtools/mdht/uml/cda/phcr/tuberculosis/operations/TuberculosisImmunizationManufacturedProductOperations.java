@@ -45,75 +45,78 @@ import org.openhealthtools.mdht.uml.cda.phcr.tuberculosis.util.TuberculosisValid
 public class TuberculosisImmunizationManufacturedProductOperations extends ProductOperations
 {
   /**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   protected TuberculosisImmunizationManufacturedProductOperations() {
-		super();
-	}
+    super();
+  }
 
   /**
-	 * The cached OCL expression body for the '{@link #validateProductTemplateId(TuberculosisImmunizationManufacturedProduct, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Product Template Id</em>}' operation.
-	 * <!-- begin-user-doc -->
+   * The cached OCL expression body for the '{@link #validateProductTemplateId(TuberculosisImmunizationManufacturedProduct, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Product Template Id</em>}' operation.
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @see #validateProductTemplateId(TuberculosisImmunizationManufacturedProduct, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
+   * @see #validateProductTemplateId(TuberculosisImmunizationManufacturedProduct, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+   * @generated
+   * @ordered
+   */
   protected static final String VALIDATE_PRODUCT_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.15.3.61')";
 
   /**
-	 * The cached OCL invariant for the '{@link #validateProductTemplateId(TuberculosisImmunizationManufacturedProduct, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Product Template Id</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
+   * The cached OCL invariant for the '{@link #validateProductTemplateId(TuberculosisImmunizationManufacturedProduct, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Product Template Id</em>}' invariant operation.
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @see #validateProductTemplateId(TuberculosisImmunizationManufacturedProduct, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
+   * @see #validateProductTemplateId(TuberculosisImmunizationManufacturedProduct, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+   * @generated
+   * @ordered
+   */
   
   protected static Constraint VALIDATE_PRODUCT_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
   
 
   /**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.15.3.61')
-	 * @param tuberculosisImmunizationManufacturedProduct The receiving '<em><b>Immunization Manufactured Product</b></em>' model object.
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
+   * <!-- begin-model-doc -->
+   * @param tuberculosisImmunizationManufacturedProduct The receiving '<em><b>Immunization Manufactured Product</b></em>' model object.
+   * @param diagnostics The chain of diagnostics to which problems are to be appended.
+   * @param context The cache of context-specific information.
+   * <!-- end-model-doc -->
+   * @generated
+   */
   
   public static  boolean validateProductTemplateId(TuberculosisImmunizationManufacturedProduct tuberculosisImmunizationManufacturedProduct, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
   	  
-		if (VALIDATE_PRODUCT_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setContext(TuberculosisPackage.Literals.TUBERCULOSIS_IMMUNIZATION_MANUFACTURED_PRODUCT);
-			try {
-				VALIDATE_PRODUCT_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PRODUCT_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
-				throw new UnsupportedOperationException(pe.getLocalizedMessage());
-			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PRODUCT_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(tuberculosisImmunizationManufacturedProduct)) {
-			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 TuberculosisValidator.DIAGNOSTIC_SOURCE,
-						 TuberculosisValidator.TUBERCULOSIS_IMMUNIZATION_MANUFACTURED_PRODUCT__PRODUCT_TEMPLATE_ID,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "ProductTemplateId", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(tuberculosisImmunizationManufacturedProduct, context) }),
-						 new Object [] { tuberculosisImmunizationManufacturedProduct }));
-			}
-			 
-			return false;
-		}
-		return true;
-	}
+    if (VALIDATE_PRODUCT_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+      OCL.Helper helper = EOCL_ENV.createOCLHelper();
+      helper.setContext(TuberculosisPackage.Literals.TUBERCULOSIS_IMMUNIZATION_MANUFACTURED_PRODUCT);
+      try
+      {
+        VALIDATE_PRODUCT_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PRODUCT_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+      }
+      catch (ParserException pe)
+      {
+        throw new UnsupportedOperationException(pe.getLocalizedMessage());
+      }
+    }
+    if (!EOCL_ENV.createQuery(VALIDATE_PRODUCT_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(tuberculosisImmunizationManufacturedProduct))
+    {
+      if (diagnostics != null)
+      {
+        diagnostics.add
+          (new BasicDiagnostic
+            (Diagnostic.ERROR,
+             TuberculosisValidator.DIAGNOSTIC_SOURCE,
+             TuberculosisValidator.TUBERCULOSIS_IMMUNIZATION_MANUFACTURED_PRODUCT__PRODUCT_TEMPLATE_ID,
+             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "ProductTemplateId", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(tuberculosisImmunizationManufacturedProduct, context) }),
+             new Object [] { tuberculosisImmunizationManufacturedProduct }));
+      }
+       
+      return false;
+    }
+    return true;
+  }
 
 } // TuberculosisImmunizationManufacturedProductOperations

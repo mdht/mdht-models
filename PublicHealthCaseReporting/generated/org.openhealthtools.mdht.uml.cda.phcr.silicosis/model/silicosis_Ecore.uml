@@ -20,32 +20,32 @@
       <importedPackage href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_KnCD4CFjEd-3s7f6mWX-3A"/>
     </packageImport>
     <packagedElement xmi:type="uml:Class" xmi:id="_U_XsoYI8EeG1NNkgO3XQ5g" name="SilicosisCaseReport">
-      <ownedRule xmi:id="_8vHDcq_-EeGwzN0GyR2SUw" name="PublicHealthCaseReportTemplateId" constrainedElement="_U_XsoYI8EeG1NNkgO3XQ5g">
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_8vHDc6_-EeGwzN0GyR2SUw">
+      <ownedRule xmi:id="_uXyPke1qEeGeHKjzItayOg" name="PublicHealthCaseReportTemplateId" constrainedElement="_U_XsoYI8EeG1NNkgO3XQ5g">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_uXy2oO1qEeGeHKjzItayOg">
           <language>OCL</language>
           <body>self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.15.1.8')</body>
         </specification>
       </ownedRule>
-      <ownedRule xmi:id="_8vQNYK_-EeGwzN0GyR2SUw" name="SilicosisCaseReportTitle" constrainedElement="_U_XsoYI8EeG1NNkgO3XQ5g">
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_8vQNYa_-EeGwzN0GyR2SUw">
+      <ownedRule xmi:id="_uX0r0O1qEeGeHKjzItayOg" name="SilicosisCaseReportTitle" constrainedElement="_U_XsoYI8EeG1NNkgO3XQ5g">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_uX0r0e1qEeGeHKjzItayOg">
           <language>OCL</language>
           <body>(self.title.oclIsUndefined() or self.title.isNullFlavorUndefined()) implies (not self.title.oclIsUndefined() and self.title.getText() = 'Public Health Case Report - Silicosis')</body>
         </specification>
       </ownedRule>
-      <ownedRule xmi:id="_8vZ-YK_-EeGwzN0GyR2SUw" name="SilicosisCaseReportSilicosisPHCRSocialHistorySection" constrainedElement="_U_XsoYI8EeG1NNkgO3XQ5g">
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_8vZ-Ya_-EeGwzN0GyR2SUw">
+      <ownedRule xmi:id="_uX4WMO1qEeGeHKjzItayOg" name="SilicosisCaseReportSilicosisPHCRSocialHistorySection" constrainedElement="_U_XsoYI8EeG1NNkgO3XQ5g">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_uX49QO1qEeGeHKjzItayOg">
           <language>OCL</language>
           <body>self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(silicosis::SilicosisPHCRSocialHistorySection))</body>
         </specification>
       </ownedRule>
-      <ownedRule xmi:id="_8vZ-a6_-EeGwzN0GyR2SUw" name="SilicosisCaseReportSilicosisPHCRClinicalInformationSection" constrainedElement="_U_XsoYI8EeG1NNkgO3XQ5g">
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_8vZ-bK_-EeGwzN0GyR2SUw">
+      <ownedRule xmi:id="_uX8AkO1qEeGeHKjzItayOg" name="SilicosisCaseReportSilicosisPHCRClinicalInformationSection" constrainedElement="_U_XsoYI8EeG1NNkgO3XQ5g">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_uX8Ake1qEeGeHKjzItayOg">
           <language>OCL</language>
           <body>self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(silicosis::SilicosisPHCRClinicalInformationSection))</body>
         </specification>
       </ownedRule>
-      <ownedRule xmi:id="_8y1F1a_-EeGwzN0GyR2SUw" name="SilicosisCaseReportSilicosisPHCRRelevantDxTestsSection" constrainedElement="_U_XsoYI8EeG1NNkgO3XQ5g">
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_8y1F1q_-EeGwzN0GyR2SUw">
+      <ownedRule xmi:id="_uZA-oO1qEeGeHKjzItayOg" name="SilicosisCaseReportSilicosisPHCRRelevantDxTestsSection" constrainedElement="_U_XsoYI8EeG1NNkgO3XQ5g">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_uZA-oe1qEeGeHKjzItayOg">
           <language>OCL</language>
           <body>self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(silicosis::SilicosisPHCRRelevantDxTestsSection))</body>
         </specification>
@@ -53,55 +53,55 @@
       <generalization xmi:id="_U_YTsYI8EeG1NNkgO3XQ5g">
         <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.phcr/model/phcr_Ecore.uml#_6PmAIcgnEeCI5ZpfyBisiQ"/>
       </generalization>
-      <ownedOperation xmi:id="_8vZ-Yq_-EeGwzN0GyR2SUw" name="getSilicosisPHCRSocialHistorySection" isQuery="true" bodyCondition="_8vZ-Za_-EeGwzN0GyR2SUw">
-        <ownedRule xmi:id="_8vZ-Za_-EeGwzN0GyR2SUw" name="body" constrainedElement="_8vZ-Yq_-EeGwzN0GyR2SUw">
-          <specification xmi:type="uml:OpaqueExpression" xmi:id="_8vZ-Zq_-EeGwzN0GyR2SUw">
+      <ownedOperation xmi:id="_uX5kUO1qEeGeHKjzItayOg" name="getSilicosisPHCRSocialHistorySection" isQuery="true" bodyCondition="_uX5kU-1qEeGeHKjzItayOg">
+        <ownedRule xmi:id="_uX5kU-1qEeGeHKjzItayOg" name="body" constrainedElement="_uX5kUO1qEeGeHKjzItayOg">
+          <specification xmi:type="uml:OpaqueExpression" xmi:id="_uX5kVO1qEeGeHKjzItayOg">
             <language>OCL</language>
-            <body>self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(silicosis::SilicosisPHCRSocialHistorySection))->asSequence()->first().oclAsType(silicosis::SilicosisPHCRSocialHistorySection)</body>
+            <body>self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(silicosis::SilicosisPHCRSocialHistorySection))->asSequence()->any(true).oclAsType(silicosis::SilicosisPHCRSocialHistorySection)</body>
           </specification>
         </ownedRule>
-        <ownedParameter xmi:id="_8vZ-Y6_-EeGwzN0GyR2SUw" type="_Fy8u0JIsEeG8oN-7sTL44Q" direction="return">
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_8vZ-ZK_-EeGwzN0GyR2SUw" value="1"/>
+        <ownedParameter xmi:id="_uX5kUe1qEeGeHKjzItayOg" type="_Fy8u0JIsEeG8oN-7sTL44Q" direction="return">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_uX5kUu1qEeGeHKjzItayOg" value="1"/>
         </ownedParameter>
       </ownedOperation>
-      <ownedOperation xmi:id="_8vjvYK_-EeGwzN0GyR2SUw" name="getSilicosisPHCRClinicalInformationSection" isQuery="true" bodyCondition="_8vjvY6_-EeGwzN0GyR2SUw">
-        <ownedRule xmi:id="_8vjvY6_-EeGwzN0GyR2SUw" name="body" constrainedElement="_8vjvYK_-EeGwzN0GyR2SUw">
-          <specification xmi:type="uml:OpaqueExpression" xmi:id="_8vjvZK_-EeGwzN0GyR2SUw">
+      <ownedOperation xmi:id="_uX9OsO1qEeGeHKjzItayOg" name="getSilicosisPHCRClinicalInformationSection" isQuery="true" bodyCondition="_uX9Os-1qEeGeHKjzItayOg">
+        <ownedRule xmi:id="_uX9Os-1qEeGeHKjzItayOg" name="body" constrainedElement="_uX9OsO1qEeGeHKjzItayOg">
+          <specification xmi:type="uml:OpaqueExpression" xmi:id="_uX9OtO1qEeGeHKjzItayOg">
             <language>OCL</language>
-            <body>self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(silicosis::SilicosisPHCRClinicalInformationSection))->asSequence()->first().oclAsType(silicosis::SilicosisPHCRClinicalInformationSection)</body>
+            <body>self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(silicosis::SilicosisPHCRClinicalInformationSection))->asSequence()->any(true).oclAsType(silicosis::SilicosisPHCRClinicalInformationSection)</body>
           </specification>
         </ownedRule>
-        <ownedParameter xmi:id="_8vjvYa_-EeGwzN0GyR2SUw" type="_UhSLgJIsEeG8oN-7sTL44Q" direction="return">
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_8vjvYq_-EeGwzN0GyR2SUw" value="1"/>
+        <ownedParameter xmi:id="_uX9Ose1qEeGeHKjzItayOg" type="_UhSLgJIsEeG8oN-7sTL44Q" direction="return">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_uX9Osu1qEeGeHKjzItayOg" value="1"/>
         </ownedParameter>
       </ownedOperation>
-      <ownedOperation xmi:id="_8y1F16_-EeGwzN0GyR2SUw" name="getSilicosisPHCRRelevantDxTestsSection" isQuery="true" bodyCondition="_8y1F2q_-EeGwzN0GyR2SUw">
-        <ownedRule xmi:id="_8y1F2q_-EeGwzN0GyR2SUw" name="body" constrainedElement="_8y1F16_-EeGwzN0GyR2SUw">
-          <specification xmi:type="uml:OpaqueExpression" xmi:id="_8y1F26_-EeGwzN0GyR2SUw">
+      <ownedOperation xmi:id="_uZBlsO1qEeGeHKjzItayOg" name="getSilicosisPHCRRelevantDxTestsSection" isQuery="true" bodyCondition="_uZBls-1qEeGeHKjzItayOg">
+        <ownedRule xmi:id="_uZBls-1qEeGeHKjzItayOg" name="body" constrainedElement="_uZBlsO1qEeGeHKjzItayOg">
+          <specification xmi:type="uml:OpaqueExpression" xmi:id="_uZBltO1qEeGeHKjzItayOg">
             <language>OCL</language>
-            <body>self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(silicosis::SilicosisPHCRRelevantDxTestsSection))->asSequence()->first().oclAsType(silicosis::SilicosisPHCRRelevantDxTestsSection)</body>
+            <body>self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(silicosis::SilicosisPHCRRelevantDxTestsSection))->asSequence()->any(true).oclAsType(silicosis::SilicosisPHCRRelevantDxTestsSection)</body>
           </specification>
         </ownedRule>
-        <ownedParameter xmi:id="_8y1F2K_-EeGwzN0GyR2SUw" type="_yNtR4KkGEeG1ttSAj8fPmg" direction="return">
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_8y1F2a_-EeGwzN0GyR2SUw" value="1"/>
+        <ownedParameter xmi:id="_uZBlse1qEeGeHKjzItayOg" type="_yNtR4KkGEeG1ttSAj8fPmg" direction="return">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_uZBlsu1qEeGeHKjzItayOg" value="1"/>
         </ownedParameter>
       </ownedOperation>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_Fy8u0JIsEeG8oN-7sTL44Q" name="SilicosisPHCRSocialHistorySection">
-      <ownedRule xmi:id="_8vQNZK_-EeGwzN0GyR2SUw" name="SocialHistorySectionTemplateId" constrainedElement="_Fy8u0JIsEeG8oN-7sTL44Q">
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_8vQNZa_-EeGwzN0GyR2SUw">
+      <ownedRule xmi:id="_uX3IEO1qEeGeHKjzItayOg" name="SocialHistorySectionTemplateId" constrainedElement="_Fy8u0JIsEeG8oN-7sTL44Q">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_uX3IEe1qEeGeHKjzItayOg">
           <language>OCL</language>
           <body>self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.15.2.33')</body>
         </specification>
       </ownedRule>
-      <ownedRule xmi:id="_8xozAq_-EeGwzN0GyR2SUw" name="SilicosisPHCRSocialHistorySectionSilicosisSocioBehavioralBooleanRiskFactorObservation" constrainedElement="_Fy8u0JIsEeG8oN-7sTL44Q">
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_8xozA6_-EeGwzN0GyR2SUw">
+      <ownedRule xmi:id="_uYbv0O1qEeGeHKjzItayOg" name="SilicosisPHCRSocialHistorySectionSilicosisSocioBehavioralBooleanRiskFactorObservation" constrainedElement="_Fy8u0JIsEeG8oN-7sTL44Q">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_uYbv0e1qEeGeHKjzItayOg">
           <language>OCL</language>
           <body>self.entry->one(entry : cda::Entry | not entry.observation.oclIsUndefined() and entry.observation.oclIsKindOf(silicosis::SilicosisSocioBehavioralBooleanRiskFactorObservation) and entry.typeCode = vocab::x_ActRelationshipEntry::DRIV)</body>
         </specification>
       </ownedRule>
-      <ownedRule xmi:id="_8yFe8K_-EeGwzN0GyR2SUw" name="SilicosisPHCRSocialHistorySectionSilicosisPossibleExposureLocationAndTypeAct" constrainedElement="_Fy8u0JIsEeG8oN-7sTL44Q">
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_8yFe8a_-EeGwzN0GyR2SUw">
+      <ownedRule xmi:id="_uYpyQO1qEeGeHKjzItayOg" name="SilicosisPHCRSocialHistorySectionSilicosisPossibleExposureLocationAndTypeAct" constrainedElement="_Fy8u0JIsEeG8oN-7sTL44Q">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_uYpyQe1qEeGeHKjzItayOg">
           <language>OCL</language>
           <body>self.entry->exists(entry : cda::Entry | not entry.act.oclIsUndefined() and entry.act.oclIsKindOf(silicosis::SilicosisPossibleExposureLocationAndTypeAct) and entry.typeCode = vocab::x_ActRelationshipEntry::DRIV)</body>
         </specification>
@@ -109,44 +109,44 @@
       <generalization xmi:id="_Fy8u0ZIsEeG8oN-7sTL44Q">
         <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.phcr/model/phcr_Ecore.uml#_Fw7f4MgpEeCI5ZpfyBisiQ"/>
       </generalization>
-      <ownedOperation xmi:id="_8xozBK_-EeGwzN0GyR2SUw" name="getSilicosisSocioBehavioralBooleanRiskFactorObservation" isQuery="true" bodyCondition="_8xozB6_-EeGwzN0GyR2SUw">
-        <ownedRule xmi:id="_8xozB6_-EeGwzN0GyR2SUw" name="body" constrainedElement="_8xozBK_-EeGwzN0GyR2SUw">
-          <specification xmi:type="uml:OpaqueExpression" xmi:id="_8xozCK_-EeGwzN0GyR2SUw">
+      <ownedOperation xmi:id="_uYc98O1qEeGeHKjzItayOg" name="getSilicosisSocioBehavioralBooleanRiskFactorObservation" isQuery="true" bodyCondition="_uYc98-1qEeGeHKjzItayOg">
+        <ownedRule xmi:id="_uYc98-1qEeGeHKjzItayOg" name="body" constrainedElement="_uYc98O1qEeGeHKjzItayOg">
+          <specification xmi:type="uml:OpaqueExpression" xmi:id="_uYc99O1qEeGeHKjzItayOg">
             <language>OCL</language>
-            <body>self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(silicosis::SilicosisSocioBehavioralBooleanRiskFactorObservation))->asSequence()->first().oclAsType(silicosis::SilicosisSocioBehavioralBooleanRiskFactorObservation)</body>
+            <body>self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(silicosis::SilicosisSocioBehavioralBooleanRiskFactorObservation))->asSequence()->any(true).oclAsType(silicosis::SilicosisSocioBehavioralBooleanRiskFactorObservation)</body>
           </specification>
         </ownedRule>
-        <ownedParameter xmi:id="_8xozBa_-EeGwzN0GyR2SUw" type="_LJ5okJIwEeG8oN-7sTL44Q" direction="return">
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_8xozBq_-EeGwzN0GyR2SUw" value="1"/>
+        <ownedParameter xmi:id="_uYc98e1qEeGeHKjzItayOg" type="_LJ5okJIwEeG8oN-7sTL44Q" direction="return">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_uYc98u1qEeGeHKjzItayOg" value="1"/>
         </ownedParameter>
       </ownedOperation>
-      <ownedOperation xmi:id="_8yFe8q_-EeGwzN0GyR2SUw" name="getSilicosisPossibleExposureLocationAndTypeActs" isQuery="true" bodyCondition="_8yFe9a_-EeGwzN0GyR2SUw">
-        <ownedRule xmi:id="_8yFe9a_-EeGwzN0GyR2SUw" name="body" constrainedElement="_8yFe8q_-EeGwzN0GyR2SUw">
-          <specification xmi:type="uml:OpaqueExpression" xmi:id="_8yFe9q_-EeGwzN0GyR2SUw">
+      <ownedOperation xmi:id="_uYqZUO1qEeGeHKjzItayOg" name="getSilicosisPossibleExposureLocationAndTypeActs" isQuery="true" bodyCondition="_uYqZU-1qEeGeHKjzItayOg">
+        <ownedRule xmi:id="_uYqZU-1qEeGeHKjzItayOg" name="body" constrainedElement="_uYqZUO1qEeGeHKjzItayOg">
+          <specification xmi:type="uml:OpaqueExpression" xmi:id="_uYqZVO1qEeGeHKjzItayOg">
             <language>OCL</language>
             <body>self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(silicosis::SilicosisPossibleExposureLocationAndTypeAct)).oclAsType(silicosis::SilicosisPossibleExposureLocationAndTypeAct)</body>
           </specification>
         </ownedRule>
-        <ownedParameter xmi:id="_8yFe86_-EeGwzN0GyR2SUw" type="_qY7TkJI0EeG8oN-7sTL44Q" direction="return">
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_8yFe9K_-EeGwzN0GyR2SUw" value="*"/>
+        <ownedParameter xmi:id="_uYqZUe1qEeGeHKjzItayOg" type="_qY7TkJI0EeG8oN-7sTL44Q" direction="return">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_uYqZUu1qEeGeHKjzItayOg" value="*"/>
         </ownedParameter>
       </ownedOperation>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_UhSLgJIsEeG8oN-7sTL44Q" name="SilicosisPHCRClinicalInformationSection">
-      <ownedRule xmi:id="_8vZ-aK_-EeGwzN0GyR2SUw" name="PhcrClinicalInformationSectionTemplateId" constrainedElement="_UhSLgJIsEeG8oN-7sTL44Q">
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_8vZ-aa_-EeGwzN0GyR2SUw">
+      <ownedRule xmi:id="_uX6LYe1qEeGeHKjzItayOg" name="PhcrClinicalInformationSectionTemplateId" constrainedElement="_UhSLgJIsEeG8oN-7sTL44Q">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_uX6LYu1qEeGeHKjzItayOg">
           <language>OCL</language>
           <body>self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.15.2.34')</body>
         </specification>
       </ownedRule>
-      <ownedRule xmi:id="_8wwCMK_-EeGwzN0GyR2SUw" name="SilicosisPHCRClinicalInformationSectionSilicosisCaseObservation" constrainedElement="_UhSLgJIsEeG8oN-7sTL44Q">
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_8wwCMa_-EeGwzN0GyR2SUw">
+      <ownedRule xmi:id="_uYFKgO1qEeGeHKjzItayOg" name="SilicosisPHCRClinicalInformationSectionSilicosisCaseObservation" constrainedElement="_UhSLgJIsEeG8oN-7sTL44Q">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_uYFKge1qEeGeHKjzItayOg">
           <language>OCL</language>
           <body>self.entry->one(entry : cda::Entry | not entry.observation.oclIsUndefined() and entry.observation.oclIsKindOf(silicosis::SilicosisCaseObservation) and entry.typeCode = vocab::x_ActRelationshipEntry::DRIV)</body>
         </specification>
       </ownedRule>
-      <ownedRule xmi:id="_8yr74q_-EeGwzN0GyR2SUw" name="SilicosisPHCRClinicalInformationSectionSilicosisHistoryOfTuberculosisObservation" constrainedElement="_UhSLgJIsEeG8oN-7sTL44Q">
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_8yr746_-EeGwzN0GyR2SUw">
+      <ownedRule xmi:id="_uY_JcO1qEeGeHKjzItayOg" name="SilicosisPHCRClinicalInformationSectionSilicosisHistoryOfTuberculosisObservation" constrainedElement="_UhSLgJIsEeG8oN-7sTL44Q">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_uY_Jce1qEeGeHKjzItayOg">
           <language>OCL</language>
           <body>self.entry->one(entry : cda::Entry | not entry.observation.oclIsUndefined() and entry.observation.oclIsKindOf(silicosis::SilicosisHistoryOfTuberculosisObservation) and entry.typeCode = vocab::x_ActRelationshipEntry::DRIV)</body>
         </specification>
@@ -154,44 +154,44 @@
       <generalization xmi:id="_UhSLgZIsEeG8oN-7sTL44Q">
         <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.phcr/model/phcr_Ecore.uml#_84uJEMqZEeCRBIG_Gkv9FQ"/>
       </generalization>
-      <ownedOperation xmi:id="_8wwCMq_-EeGwzN0GyR2SUw" name="getSilicosisCaseObservation" isQuery="true" bodyCondition="_8wwCNa_-EeGwzN0GyR2SUw">
-        <ownedRule xmi:id="_8wwCNa_-EeGwzN0GyR2SUw" name="body" constrainedElement="_8wwCMq_-EeGwzN0GyR2SUw">
-          <specification xmi:type="uml:OpaqueExpression" xmi:id="_8wwCNq_-EeGwzN0GyR2SUw">
+      <ownedOperation xmi:id="_uYFxkO1qEeGeHKjzItayOg" name="getSilicosisCaseObservation" isQuery="true" bodyCondition="_uYGYou1qEeGeHKjzItayOg">
+        <ownedRule xmi:id="_uYGYou1qEeGeHKjzItayOg" name="body" constrainedElement="_uYFxkO1qEeGeHKjzItayOg">
+          <specification xmi:type="uml:OpaqueExpression" xmi:id="_uYGYo-1qEeGeHKjzItayOg">
             <language>OCL</language>
-            <body>self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(silicosis::SilicosisCaseObservation))->asSequence()->first().oclAsType(silicosis::SilicosisCaseObservation)</body>
+            <body>self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(silicosis::SilicosisCaseObservation))->asSequence()->any(true).oclAsType(silicosis::SilicosisCaseObservation)</body>
           </specification>
         </ownedRule>
-        <ownedParameter xmi:id="_8wwCM6_-EeGwzN0GyR2SUw" type="_KmAYsJItEeG8oN-7sTL44Q" direction="return">
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_8wwCNK_-EeGwzN0GyR2SUw" value="1"/>
+        <ownedParameter xmi:id="_uYGYoO1qEeGeHKjzItayOg" type="_KmAYsJItEeG8oN-7sTL44Q" direction="return">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_uYGYoe1qEeGeHKjzItayOg" value="1"/>
         </ownedParameter>
       </ownedOperation>
-      <ownedOperation xmi:id="_8y1F0K_-EeGwzN0GyR2SUw" name="getSilicosisHistoryOfTuberculosisObservation" isQuery="true" bodyCondition="_8y1F06_-EeGwzN0GyR2SUw">
-        <ownedRule xmi:id="_8y1F06_-EeGwzN0GyR2SUw" name="body" constrainedElement="_8y1F0K_-EeGwzN0GyR2SUw">
-          <specification xmi:type="uml:OpaqueExpression" xmi:id="_8y1F1K_-EeGwzN0GyR2SUw">
+      <ownedOperation xmi:id="_uZAXkO1qEeGeHKjzItayOg" name="getSilicosisHistoryOfTuberculosisObservation" isQuery="true" bodyCondition="_uZAXk-1qEeGeHKjzItayOg">
+        <ownedRule xmi:id="_uZAXk-1qEeGeHKjzItayOg" name="body" constrainedElement="_uZAXkO1qEeGeHKjzItayOg">
+          <specification xmi:type="uml:OpaqueExpression" xmi:id="_uZAXlO1qEeGeHKjzItayOg">
             <language>OCL</language>
-            <body>self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(silicosis::SilicosisHistoryOfTuberculosisObservation))->asSequence()->first().oclAsType(silicosis::SilicosisHistoryOfTuberculosisObservation)</body>
+            <body>self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(silicosis::SilicosisHistoryOfTuberculosisObservation))->asSequence()->any(true).oclAsType(silicosis::SilicosisHistoryOfTuberculosisObservation)</body>
           </specification>
         </ownedRule>
-        <ownedParameter xmi:id="_8y1F0a_-EeGwzN0GyR2SUw" type="_XhIsIKkHEeG1ttSAj8fPmg" direction="return">
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_8y1F0q_-EeGwzN0GyR2SUw" value="1"/>
+        <ownedParameter xmi:id="_uZAXke1qEeGeHKjzItayOg" type="_XhIsIKkHEeG1ttSAj8fPmg" direction="return">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_uZAXku1qEeGeHKjzItayOg" value="1"/>
         </ownedParameter>
       </ownedOperation>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_KmAYsJItEeG8oN-7sTL44Q" name="SilicosisCaseObservation">
-      <ownedRule xmi:id="_8vjvZ6_-EeGwzN0GyR2SUw" name="ProblemObservationTemplateId" constrainedElement="_KmAYsJItEeG8oN-7sTL44Q">
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_8vjvaK_-EeGwzN0GyR2SUw">
+      <ownedRule xmi:id="_uX91we1qEeGeHKjzItayOg" name="ProblemObservationTemplateId" constrainedElement="_KmAYsJItEeG8oN-7sTL44Q">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_uX-c0O1qEeGeHKjzItayOg">
           <language>OCL</language>
           <body>self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.15.3.111')</body>
         </specification>
       </ownedRule>
-      <ownedRule xmi:id="_8wmRMK_-EeGwzN0GyR2SUw" name="SilicosisCaseObservationValue" constrainedElement="_KmAYsJItEeG8oN-7sTL44Q">
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_8wmRMa_-EeGwzN0GyR2SUw">
+      <ownedRule xmi:id="_uYCuQO1qEeGeHKjzItayOg" name="SilicosisCaseObservationValue" constrainedElement="_KmAYsJItEeG8oN-7sTL44Q">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_uYCuQe1qEeGeHKjzItayOg">
           <language>OCL</language>
           <body>(self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (not self.value->isEmpty())</body>
         </specification>
       </ownedRule>
-      <ownedRule xmi:id="_8xC9IK_-EeGwzN0GyR2SUw" name="SilicosisCaseObservationSilicosisSignsAndSymptomsObservation" constrainedElement="_KmAYsJItEeG8oN-7sTL44Q">
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_8xC9Ia_-EeGwzN0GyR2SUw">
+      <ownedRule xmi:id="_uYL4MO1qEeGeHKjzItayOg" name="SilicosisCaseObservationSilicosisSignsAndSymptomsObservation" constrainedElement="_KmAYsJItEeG8oN-7sTL44Q">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_uYL4Me1qEeGeHKjzItayOg">
           <language>OCL</language>
           <body>self.entryRelationship->exists(entryRelationship : cda::EntryRelationship | not entryRelationship.observation.oclIsUndefined() and entryRelationship.observation.oclIsKindOf(silicosis::SilicosisSignsAndSymptomsObservation) and entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::MFST)</body>
         </specification>
@@ -199,27 +199,27 @@
       <generalization xmi:id="_KmAYsZItEeG8oN-7sTL44Q">
         <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.phcr/model/phcr_Ecore.uml#_p8bDQNTCEeC18pmrrt-Mbg"/>
       </generalization>
-      <ownedOperation xmi:id="_8xC9Iq_-EeGwzN0GyR2SUw" name="getSilicosisSignsAndSymptomsObservations" isQuery="true" bodyCondition="_8xC9Ja_-EeGwzN0GyR2SUw">
-        <ownedRule xmi:id="_8xC9Ja_-EeGwzN0GyR2SUw" name="body" constrainedElement="_8xC9Iq_-EeGwzN0GyR2SUw">
-          <specification xmi:type="uml:OpaqueExpression" xmi:id="_8xC9Jq_-EeGwzN0GyR2SUw">
+      <ownedOperation xmi:id="_uYNGUO1qEeGeHKjzItayOg" name="getSilicosisSignsAndSymptomsObservations" isQuery="true" bodyCondition="_uYNGU-1qEeGeHKjzItayOg">
+        <ownedRule xmi:id="_uYNGU-1qEeGeHKjzItayOg" name="body" constrainedElement="_uYNGUO1qEeGeHKjzItayOg">
+          <specification xmi:type="uml:OpaqueExpression" xmi:id="_uYNGVO1qEeGeHKjzItayOg">
             <language>OCL</language>
             <body>self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(silicosis::SilicosisSignsAndSymptomsObservation)).oclAsType(silicosis::SilicosisSignsAndSymptomsObservation)</body>
           </specification>
         </ownedRule>
-        <ownedParameter xmi:id="_8xC9I6_-EeGwzN0GyR2SUw" type="_zZLQQJItEeG8oN-7sTL44Q" direction="return">
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_8xC9JK_-EeGwzN0GyR2SUw" value="*"/>
+        <ownedParameter xmi:id="_uYNGUe1qEeGeHKjzItayOg" type="_zZLQQJItEeG8oN-7sTL44Q" direction="return">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_uYNGUu1qEeGeHKjzItayOg" value="*"/>
         </ownedParameter>
       </ownedOperation>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_zZLQQJItEeG8oN-7sTL44Q" name="SilicosisSignsAndSymptomsObservation">
-      <ownedRule xmi:id="_8wwCOK_-EeGwzN0GyR2SUw" name="SignsAndSymptomsObservationTemplateId" constrainedElement="_zZLQQJItEeG8oN-7sTL44Q">
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_8wwCOa_-EeGwzN0GyR2SUw">
+      <ownedRule xmi:id="_uYG_sO1qEeGeHKjzItayOg" name="SignsAndSymptomsObservationTemplateId" constrainedElement="_zZLQQJItEeG8oN-7sTL44Q">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_uYG_se1qEeGeHKjzItayOg">
           <language>OCL</language>
           <body>self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.15.3.112')</body>
         </specification>
       </ownedRule>
-      <ownedRule xmi:id="_8w5MIK_-EeGwzN0GyR2SUw" name="SilicosisSignsAndSymptomsObservationValue" constrainedElement="_zZLQQJItEeG8oN-7sTL44Q">
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_8w5MIa_-EeGwzN0GyR2SUw">
+      <ownedRule xmi:id="_uYJb8O1qEeGeHKjzItayOg" name="SilicosisSignsAndSymptomsObservationValue" constrainedElement="_zZLQQJItEeG8oN-7sTL44Q">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_uYJb8e1qEeGeHKjzItayOg">
           <language>OCL</language>
           <body>(self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (not self.value->isEmpty())</body>
         </specification>
@@ -229,40 +229,44 @@
       </generalization>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_LJ5okJIwEeG8oN-7sTL44Q" name="SilicosisSocioBehavioralBooleanRiskFactorObservation">
-      <ownedRule xmi:id="_8xC9KK_-EeGwzN0GyR2SUw" name="SocialHistoryObservationTemplateId" constrainedElement="_LJ5okJIwEeG8oN-7sTL44Q">
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_8xC9Ka_-EeGwzN0GyR2SUw">
+      <ownedRule xmi:id="_uYNtYe1qEeGeHKjzItayOg" name="SocialHistoryObservationTemplateId" constrainedElement="_LJ5okJIwEeG8oN-7sTL44Q">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_uYNtYu1qEeGeHKjzItayOg">
           <language>OCL</language>
           <body>self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.15.3.110')</body>
         </specification>
       </ownedRule>
-      <ownedRule xmi:id="_8xV4EK_-EeGwzN0GyR2SUw" name="SilicosisSocioBehavioralBooleanRiskFactorObservationCodeP" constrainedElement="_LJ5okJIwEeG8oN-7sTL44Q">
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_8xV4Ea_-EeGwzN0GyR2SUw">
+      <ownedRule xmi:id="_uYSl4O1qEeGeHKjzItayOg" name="SilicosisSocioBehavioralBooleanRiskFactorObservationCodeP" constrainedElement="_LJ5okJIwEeG8oN-7sTL44Q">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_uYSl4e1qEeGeHKjzItayOg">
           <language>OCL</language>
           <body>(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined())</body>
         </specification>
       </ownedRule>
-      <ownedRule xmi:id="_8xMuIK_-EeGwzN0GyR2SUw" name="SilicosisSocioBehavioralBooleanRiskFactorObservationCode" constrainedElement="_LJ5okJIwEeG8oN-7sTL44Q">
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_8xMuIa_-EeGwzN0GyR2SUw">
+      <ownedRule xmi:id="_uYQJoO1qEeGeHKjzItayOg" name="SilicosisSocioBehavioralBooleanRiskFactorObservationCode" constrainedElement="_LJ5okJIwEeG8oN-7sTL44Q">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_uYQJoe1qEeGeHKjzItayOg">
           <language>OCL</language>
-          <body>(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and &#xD;&#xA;let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in &#xD;&#xA;value.code = 'ASSERTION' and value.codeSystem = '2.16.840.1.113883.5.4')</body>
+          <body>(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and 
+let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in 
+value.code = 'ASSERTION' and value.codeSystem = '2.16.840.1.113883.5.4')</body>
         </specification>
       </ownedRule>
-      <ownedRule xmi:id="_8xfpEK_-EeGwzN0GyR2SUw" name="SilicosisSocioBehavioralBooleanRiskFactorObservationNegationInd" constrainedElement="_LJ5okJIwEeG8oN-7sTL44Q">
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_8xfpEa_-EeGwzN0GyR2SUw">
+      <ownedRule xmi:id="_uYVCIO1qEeGeHKjzItayOg" name="SilicosisSocioBehavioralBooleanRiskFactorObservationNegationInd" constrainedElement="_LJ5okJIwEeG8oN-7sTL44Q">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_uYVCIe1qEeGeHKjzItayOg">
           <language>OCL</language>
           <body>not self.negationInd.oclIsUndefined()</body>
         </specification>
       </ownedRule>
-      <ownedRule xmi:id="_8xfpEq_-EeGwzN0GyR2SUw" name="SilicosisSocioBehavioralBooleanRiskFactorObservationEffectiveTime" constrainedElement="_LJ5okJIwEeG8oN-7sTL44Q">
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_8xfpE6_-EeGwzN0GyR2SUw">
+      <ownedRule xmi:id="_uYW3UO1qEeGeHKjzItayOg" name="SilicosisSocioBehavioralBooleanRiskFactorObservationEffectiveTime" constrainedElement="_LJ5okJIwEeG8oN-7sTL44Q">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_uYW3Ue1qEeGeHKjzItayOg">
           <language>OCL</language>
           <body>(self.effectiveTime.oclIsUndefined() or self.effectiveTime.isNullFlavorUndefined()) implies (not self.effectiveTime.oclIsUndefined())</body>
         </specification>
       </ownedRule>
-      <ownedRule xmi:id="_8xozAK_-EeGwzN0GyR2SUw" name="SilicosisSocioBehavioralBooleanRiskFactorObservationValue" constrainedElement="_LJ5okJIwEeG8oN-7sTL44Q">
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_8xozAa_-EeGwzN0GyR2SUw">
+      <ownedRule xmi:id="_uYYsgO1qEeGeHKjzItayOg" name="SilicosisSocioBehavioralBooleanRiskFactorObservationValue" constrainedElement="_LJ5okJIwEeG8oN-7sTL44Q">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_uYYsge1qEeGeHKjzItayOg">
           <language>OCL</language>
-          <body>(self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (self.value->size() = 1 and self.value->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and &#xD;&#xA;let value : datatypes::CD = element.oclAsType(datatypes::CD) in &#xD;&#xA;value.code = '102445001' and value.codeSystem = '2.16.840.1.113883.6.96'))</body>
+          <body>(self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (self.value->size() = 1 and self.value->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and 
+let value : datatypes::CD = element.oclAsType(datatypes::CD) in 
+value.code = '102445001' and value.codeSystem = '2.16.840.1.113883.6.96'))</body>
         </specification>
       </ownedRule>
       <generalization xmi:id="_SQxFIJJSEeG8oN-7sTL44Q">
@@ -270,34 +274,38 @@
       </generalization>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_qY7TkJI0EeG8oN-7sTL44Q" name="SilicosisPossibleExposureLocationAndTypeAct">
-      <ownedRule xmi:id="_8xozCa_-EeGwzN0GyR2SUw" name="SilicosisPossibleExposureLocationAndTypeActTemplateId" constrainedElement="_qY7TkJI0EeG8oN-7sTL44Q">
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_8xozCq_-EeGwzN0GyR2SUw">
+      <ownedRule xmi:id="_uYc99e1qEeGeHKjzItayOg" name="SilicosisPossibleExposureLocationAndTypeActTemplateId" constrainedElement="_qY7TkJI0EeG8oN-7sTL44Q">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_uYdlAO1qEeGeHKjzItayOg">
           <language>OCL</language>
           <body>self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.15.3.109')</body>
         </specification>
       </ownedRule>
-      <ownedRule xmi:id="_8xykAa_-EeGwzN0GyR2SUw" name="SilicosisPossibleExposureLocationAndTypeActClassCode" constrainedElement="_qY7TkJI0EeG8oN-7sTL44Q">
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_8xykAq_-EeGwzN0GyR2SUw">
+      <ownedRule xmi:id="_uYgBQO1qEeGeHKjzItayOg" name="SilicosisPossibleExposureLocationAndTypeActClassCode" constrainedElement="_qY7TkJI0EeG8oN-7sTL44Q">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_uYgBQe1qEeGeHKjzItayOg">
           <language>OCL</language>
           <body>isDefined('classCode')</body>
         </specification>
       </ownedRule>
-      <ownedRule xmi:id="_8xykA6_-EeGwzN0GyR2SUw" name="SilicosisPossibleExposureLocationAndTypeActCode" constrainedElement="_qY7TkJI0EeG8oN-7sTL44Q">
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_8xykBK_-EeGwzN0GyR2SUw">
+      <ownedRule xmi:id="_uYidgO1qEeGeHKjzItayOg" name="SilicosisPossibleExposureLocationAndTypeActCode" constrainedElement="_qY7TkJI0EeG8oN-7sTL44Q">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_uYidge1qEeGeHKjzItayOg">
           <language>OCL</language>
-          <body>(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and &#xD;&#xA;let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in &#xD;&#xA;value.code = '413350009' and value.codeSystem = '2.16.840.1.113883.6.96')</body>
+          <body>(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and 
+let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in 
+value.code = '413350009' and value.codeSystem = '2.16.840.1.113883.6.96')</body>
         </specification>
       </ownedRule>
-      <ownedRule xmi:id="_8x8VAK_-EeGwzN0GyR2SUw" name="SilicosisPossibleExposureLocationAndTypeActMoodCode" constrainedElement="_qY7TkJI0EeG8oN-7sTL44Q">
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_8x8VAa_-EeGwzN0GyR2SUw">
+      <ownedRule xmi:id="_uYk5wO1qEeGeHKjzItayOg" name="SilicosisPossibleExposureLocationAndTypeActMoodCode" constrainedElement="_qY7TkJI0EeG8oN-7sTL44Q">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_uYk5we1qEeGeHKjzItayOg">
           <language>OCL</language>
           <body>isDefined('moodCode')</body>
         </specification>
       </ownedRule>
-      <ownedRule xmi:id="_8x8VAq_-EeGwzN0GyR2SUw" name="SilicosisPossibleExposureLocationAndTypeActStatusCode" constrainedElement="_qY7TkJI0EeG8oN-7sTL44Q">
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_8x8VA6_-EeGwzN0GyR2SUw">
+      <ownedRule xmi:id="_uYnWAO1qEeGeHKjzItayOg" name="SilicosisPossibleExposureLocationAndTypeActStatusCode" constrainedElement="_qY7TkJI0EeG8oN-7sTL44Q">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_uYnWAe1qEeGeHKjzItayOg">
           <language>OCL</language>
-          <body>(self.statusCode.oclIsUndefined() or self.statusCode.isNullFlavorUndefined()) implies (self.statusCode.oclIsKindOf(datatypes::CS) and &#xD;&#xA;let value : datatypes::CS = self.statusCode.oclAsType(datatypes::CS) in &#xD;&#xA;value.code = 'completed')</body>
+          <body>(self.statusCode.oclIsUndefined() or self.statusCode.isNullFlavorUndefined()) implies (not self.statusCode.oclIsUndefined() and self.statusCode.oclIsKindOf(datatypes::CS) and 
+let value : datatypes::CS = self.statusCode.oclAsType(datatypes::CS) in 
+value.code = 'completed')</body>
         </specification>
       </ownedRule>
       <generalization xmi:id="_qY7TkZI0EeG8oN-7sTL44Q">
@@ -305,14 +313,14 @@
       </generalization>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_vK0pkKXuEeGPkYBS3YlgqQ" name="SilicosisImagingObservation">
-      <ownedRule xmi:id="_8yFe-a_-EeGwzN0GyR2SUw" name="ProblemObservationTemplateId" constrainedElement="_vK0pkKXuEeGPkYBS3YlgqQ">
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_8yFe-q_-EeGwzN0GyR2SUw">
+      <ownedRule xmi:id="_uYrnce1qEeGeHKjzItayOg" name="ProblemObservationTemplateId" constrainedElement="_vK0pkKXuEeGPkYBS3YlgqQ">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_uYrncu1qEeGeHKjzItayOg">
           <language>OCL</language>
           <body>self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.15.3.108')</body>
         </specification>
       </ownedRule>
-      <ownedRule xmi:id="_8yPP8a_-EeGwzN0GyR2SUw" name="SilicosisImagingObservationValue" constrainedElement="_vK0pkKXuEeGPkYBS3YlgqQ">
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_8yPP8q_-EeGwzN0GyR2SUw">
+      <ownedRule xmi:id="_uYuqwO1qEeGeHKjzItayOg" name="SilicosisImagingObservationValue" constrainedElement="_vK0pkKXuEeGPkYBS3YlgqQ">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_uYuqwe1qEeGeHKjzItayOg">
           <language>OCL</language>
           <body>(self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (self.value->forAll(element | element.oclIsTypeOf(datatypes::CD)))</body>
         </specification>
@@ -322,14 +330,14 @@
       </generalization>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_yNtR4KkGEeG1ttSAj8fPmg" name="SilicosisPHCRRelevantDxTestsSection">
-      <ownedRule xmi:id="_8yZA8q_-EeGwzN0GyR2SUw" name="ResultsSectionTemplateId" constrainedElement="_yNtR4KkGEeG1ttSAj8fPmg">
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_8yZA86_-EeGwzN0GyR2SUw">
+      <ownedRule xmi:id="_uYxHAe1qEeGeHKjzItayOg" name="ResultsSectionTemplateId" constrainedElement="_yNtR4KkGEeG1ttSAj8fPmg">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_uYxHAu1qEeGeHKjzItayOg">
           <language>OCL</language>
           <body>self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.15.2.35')</body>
         </specification>
       </ownedRule>
-      <ownedRule xmi:id="_8yZA9a_-EeGwzN0GyR2SUw" name="SilicosisPHCRRelevantDxTestsSectionSilicosisImagingObservation" constrainedElement="_yNtR4KkGEeG1ttSAj8fPmg">
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_8yZA9q_-EeGwzN0GyR2SUw">
+      <ownedRule xmi:id="_uYy8MO1qEeGeHKjzItayOg" name="SilicosisPHCRRelevantDxTestsSectionSilicosisImagingObservation" constrainedElement="_yNtR4KkGEeG1ttSAj8fPmg">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_uYy8Me1qEeGeHKjzItayOg">
           <language>OCL</language>
           <body>self.entry->exists(entry : cda::Entry | not entry.observation.oclIsUndefined() and entry.observation.oclIsKindOf(silicosis::SilicosisImagingObservation) and entry.typeCode = vocab::x_ActRelationshipEntry::DRIV)</body>
         </specification>
@@ -337,33 +345,41 @@
       <generalization xmi:id="_yNt48KkGEeG1ttSAj8fPmg">
         <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.phcr/model/phcr_Ecore.uml#_2dxgkNM5EeCbJdgmSYxI0g"/>
       </generalization>
-      <ownedOperation xmi:id="_8yZA96_-EeGwzN0GyR2SUw" name="getSilicosisImagingObservations" isQuery="true" bodyCondition="_8yZA-q_-EeGwzN0GyR2SUw">
-        <ownedRule xmi:id="_8yZA-q_-EeGwzN0GyR2SUw" name="body" constrainedElement="_8yZA96_-EeGwzN0GyR2SUw">
-          <specification xmi:type="uml:OpaqueExpression" xmi:id="_8yZA-6_-EeGwzN0GyR2SUw">
+      <ownedOperation xmi:id="_uYzjQO1qEeGeHKjzItayOg" name="getSilicosisImagingObservations" isQuery="true" bodyCondition="_uY0KUO1qEeGeHKjzItayOg">
+        <ownedRule xmi:id="_uY0KUO1qEeGeHKjzItayOg" name="body" constrainedElement="_uYzjQO1qEeGeHKjzItayOg">
+          <specification xmi:type="uml:OpaqueExpression" xmi:id="_uY0KUe1qEeGeHKjzItayOg">
             <language>OCL</language>
             <body>self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(silicosis::SilicosisImagingObservation)).oclAsType(silicosis::SilicosisImagingObservation)</body>
           </specification>
         </ownedRule>
-        <ownedParameter xmi:id="_8yZA-K_-EeGwzN0GyR2SUw" type="_vK0pkKXuEeGPkYBS3YlgqQ" direction="return">
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_8yZA-a_-EeGwzN0GyR2SUw" value="*"/>
+        <ownedParameter xmi:id="_uYzjQe1qEeGeHKjzItayOg" type="_vK0pkKXuEeGPkYBS3YlgqQ" direction="return">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_uYzjQu1qEeGeHKjzItayOg" value="*"/>
         </ownedParameter>
       </ownedOperation>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_XhIsIKkHEeG1ttSAj8fPmg" name="SilicosisHistoryOfTuberculosisObservation">
-      <ownedRule xmi:id="_8yZA_a_-EeGwzN0GyR2SUw" name="ProblemObservationTemplateId" constrainedElement="_XhIsIKkHEeG1ttSAj8fPmg">
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_8yZA_q_-EeGwzN0GyR2SUw">
+      <ownedRule xmi:id="_uY0xYO1qEeGeHKjzItayOg" name="ProblemObservationTemplateId" constrainedElement="_XhIsIKkHEeG1ttSAj8fPmg">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_uY0xYe1qEeGeHKjzItayOg">
           <language>OCL</language>
           <body>self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.15.3.107')</body>
         </specification>
       </ownedRule>
-      <ownedRule xmi:id="_8yiK4a_-EeGwzN0GyR2SUw" name="SilicosisHistoryOfTuberculosisObservationClassCode" constrainedElement="_XhIsIKkHEeG1ttSAj8fPmg">
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_8yiK4q_-EeGwzN0GyR2SUw">
+      <ownedRule xmi:id="_uY2mkO1qEeGeHKjzItayOg" name="SilicosisHistoryOfTuberculosisObservationClassCode" constrainedElement="_XhIsIKkHEeG1ttSAj8fPmg">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_uY2mke1qEeGeHKjzItayOg">
           <language>OCL</language>
           <body>isDefined('classCode')</body>
         </specification>
       </ownedRule>
-      <ownedRule xmi:id="_8yr74K_-EeGwzN0GyR2SUw" name="SilicosisHistoryOfTuberculosisObservationValue" constrainedElement="_XhIsIKkHEeG1ttSAj8fPmg">
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_8yr74a_-EeGwzN0GyR2SUw">
+      <ownedRule xmi:id="_uY6Q8O1qEeGeHKjzItayOg" name="SilicosisHistoryOfTuberculosisObservationValue" constrainedElement="_XhIsIKkHEeG1ttSAj8fPmg">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_uY6Q8e1qEeGeHKjzItayOg">
+          <language>OCL</language>
+          <body>(self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (self.value->size() = 1 and self.value->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and 
+let value : datatypes::CD = element.oclAsType(datatypes::CD) in 
+value.codeSystem = '2.16.840.1.113883.6.96' and not value.code.oclIsUndefined()))</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_uY8tMO1qEeGeHKjzItayOg" name="SilicosisHistoryOfTuberculosisObservationValueP" constrainedElement="_XhIsIKkHEeG1ttSAj8fPmg">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_uY8tMe1qEeGeHKjzItayOg">
           <language>OCL</language>
           <body>(self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (self.value->size() = 1 and self.value->forAll(element | element.oclIsTypeOf(datatypes::CD)))</body>
         </specification>
@@ -384,8 +400,8 @@
       </eAnnotations>
       <appliedProfile href="pathmap://CDA_PROFILES/CDA.profile.uml#_cxOJEIEVEd6H8o-hO3-B4Q"/>
     </profileApplication>
-    <profileApplication xmi:id="_8u9ScK_-EeGwzN0GyR2SUw">
-      <eAnnotations xmi:id="_8u9Sca_-EeGwzN0GyR2SUw" source="http://www.eclipse.org/uml2/2.0.0/UML">
+    <profileApplication xmi:id="_uXvMQO1qEeGeHKjzItayOg">
+      <eAnnotations xmi:id="_uXvMQe1qEeGeHKjzItayOg" source="http://www.eclipse.org/uml2/2.0.0/UML">
         <references xmi:type="ecore:EPackage" href="pathmap://UML_PROFILES/Ecore.profile.uml#_z1OFcHjqEdy8S4Cr8Rc_NA"/>
       </eAnnotations>
       <appliedProfile href="pathmap://UML_PROFILES/Ecore.profile.uml#_0"/>
@@ -526,44 +542,46 @@
   <CDA:CDATemplate xmi:id="_JWQFUKkIEeG1ttSAj8fPmg" base_Class="_XhIsIKkHEeG1ttSAj8fPmg" templateId="2.16.840.1.113883.10.20.15.3.107"/>
   <CDA:CDATemplate xmi:id="_Le-sYKkIEeG1ttSAj8fPmg" base_Class="_vK0pkKXuEeGPkYBS3YlgqQ" templateId="2.16.840.1.113883.10.20.15.3.108"/>
   <CDA:AssociationValidation xmi:id="_ryRYIKkJEeGqQZVCnfmRvg" severity="WARNING"/>
-  <Ecore:EPackage xmi:id="_8vHDcK_-EeGwzN0GyR2SUw" base_Package="_U-FTMII8EeG1NNkgO3XQ5g" packageName="silicosis" nsPrefix="silicosis" nsURI="http://www.openhealthtools.org/mdht/uml/cda/phcr/silicosis" basePackage="org.openhealthtools.mdht.uml.cda.phcr" prefix="Silicosis"/>
-  <CDA:ConformsTo xmi:id="_8vHDca_-EeGwzN0GyR2SUw" base_Generalization="_U_YTsYI8EeG1NNkgO3XQ5g"/>
-  <Ecore:EClass xmi:id="_8vHDdK_-EeGwzN0GyR2SUw" base_Class="_U_XsoYI8EeG1NNkgO3XQ5g">
-    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation title.mixed='Public Health Case Report - Silicosis' templateId.root='2.16.840.1.113883.10.20.15.1.8' constraints.validation.error='SilicosisCaseReportTemplateId SilicosisCaseReportTitle SilicosisCaseReportSilicosisPHCRClinicalInformationSection' constraints.validation.warning='SilicosisCaseReportSilicosisPHCRSocialHistorySection SilicosisCaseReportSilicosisPHCRRelevantDxTestsSection'</annotation>
+  <Ecore:EPackage xmi:id="_uXxogO1qEeGeHKjzItayOg" base_Package="_U-FTMII8EeG1NNkgO3XQ5g" packageName="silicosis" nsPrefix="silicosis" nsURI="http://www.openhealthtools.org/mdht/uml/cda/phcr/silicosis" basePackage="org.openhealthtools.mdht.uml.cda.phcr" prefix="Silicosis">
+    <annotation>http://www.openhealthtools.org/mdht/uml initializers='org.openhealthtools.mdht.uml.cda.phcr.silicosis'</annotation>
+  </Ecore:EPackage>
+  <CDA:ConformsTo xmi:id="_uXyPkO1qEeGeHKjzItayOg" base_Generalization="_U_YTsYI8EeG1NNkgO3XQ5g"/>
+  <Ecore:EClass xmi:id="_uXzdsO1qEeGeHKjzItayOg" base_Class="_U_XsoYI8EeG1NNkgO3XQ5g">
+    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='SilicosisCaseReportTemplateId SilicosisCaseReportTitle SilicosisCaseReportSilicosisPHCRClinicalInformationSection' templateId.root='2.16.840.1.113883.10.20.15.1.8' title.mixed='Public Health Case Report - Silicosis' constraints.validation.warning='SilicosisCaseReportSilicosisPHCRSocialHistorySection SilicosisCaseReportSilicosisPHCRRelevantDxTestsSection'</annotation>
   </Ecore:EClass>
-  <CDA:ConformsTo xmi:id="_8vQNYq_-EeGwzN0GyR2SUw" base_Generalization="_Fy8u0ZIsEeG8oN-7sTL44Q"/>
-  <Ecore:EClass xmi:id="_8vQNZq_-EeGwzN0GyR2SUw" base_Class="_Fy8u0JIsEeG8oN-7sTL44Q">
-    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation templateId.root='2.16.840.1.113883.10.20.15.2.33' constraints.validation.error='SilicosisPHCRSocialHistorySectionTemplateId' constraints.validation.warning='SilicosisPHCRSocialHistorySectionSilicosisSocioBehavioralBooleanRiskFactorObservation SilicosisPHCRSocialHistorySectionSilicosisPossibleExposureLocationAndTypeAct'</annotation>
+  <CDA:ConformsTo xmi:id="_uX2hAO1qEeGeHKjzItayOg" base_Generalization="_Fy8u0ZIsEeG8oN-7sTL44Q"/>
+  <Ecore:EClass xmi:id="_uX3vIO1qEeGeHKjzItayOg" base_Class="_Fy8u0JIsEeG8oN-7sTL44Q">
+    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='SilicosisPHCRSocialHistorySectionTemplateId' templateId.root='2.16.840.1.113883.10.20.15.2.33' constraints.validation.warning='SilicosisPHCRSocialHistorySectionSilicosisSocioBehavioralBooleanRiskFactorObservation SilicosisPHCRSocialHistorySectionSilicosisPossibleExposureLocationAndTypeAct'</annotation>
   </Ecore:EClass>
-  <CDA:ConformsTo xmi:id="_8vZ-Z6_-EeGwzN0GyR2SUw" base_Generalization="_UhSLgZIsEeG8oN-7sTL44Q"/>
-  <Ecore:EClass xmi:id="_8vZ-aq_-EeGwzN0GyR2SUw" base_Class="_UhSLgJIsEeG8oN-7sTL44Q">
-    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation templateId.root='2.16.840.1.113883.10.20.15.2.34' constraints.validation.error='SilicosisPHCRClinicalInformationSectionTemplateId SilicosisPHCRClinicalInformationSectionSilicosisCaseObservation' constraints.validation.warning='SilicosisPHCRClinicalInformationSectionSilicosisHistoryOfTuberculosisObservation'</annotation>
+  <CDA:ConformsTo xmi:id="_uX6LYO1qEeGeHKjzItayOg" base_Generalization="_UhSLgZIsEeG8oN-7sTL44Q"/>
+  <Ecore:EClass xmi:id="_uX6ycO1qEeGeHKjzItayOg" base_Class="_UhSLgJIsEeG8oN-7sTL44Q">
+    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='SilicosisPHCRClinicalInformationSectionTemplateId SilicosisPHCRClinicalInformationSectionSilicosisCaseObservation' templateId.root='2.16.840.1.113883.10.20.15.2.34' constraints.validation.warning='SilicosisPHCRClinicalInformationSectionSilicosisHistoryOfTuberculosisObservation'</annotation>
   </Ecore:EClass>
-  <CDA:ConformsTo xmi:id="_8vjvZa_-EeGwzN0GyR2SUw" base_Generalization="_KmAYsZItEeG8oN-7sTL44Q"/>
-  <Ecore:EClass xmi:id="_8vjvaa_-EeGwzN0GyR2SUw" base_Class="_KmAYsJItEeG8oN-7sTL44Q">
-    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation templateId.root='2.16.840.1.113883.10.20.15.3.111' constraints.validation.error='SilicosisCaseObservationTemplateId SilicosisCaseObservationValue' constraints.validation.warning='SilicosisCaseObservationSilicosisSignsAndSymptomsObservation'</annotation>
+  <CDA:ConformsTo xmi:id="_uX9Ote1qEeGeHKjzItayOg" base_Generalization="_KmAYsZItEeG8oN-7sTL44Q"/>
+  <Ecore:EClass xmi:id="_uX_D4O1qEeGeHKjzItayOg" base_Class="_KmAYsJItEeG8oN-7sTL44Q">
+    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='SilicosisCaseObservationTemplateId SilicosisCaseObservationValue' templateId.root='2.16.840.1.113883.10.20.15.3.111' constraints.validation.warning='SilicosisCaseObservationSilicosisSignsAndSymptomsObservation'</annotation>
   </Ecore:EClass>
-  <CDA:ConformsTo xmi:id="_8wwCN6_-EeGwzN0GyR2SUw" base_Generalization="_zZLQQZItEeG8oN-7sTL44Q"/>
-  <Ecore:EClass xmi:id="_8wwCOq_-EeGwzN0GyR2SUw" base_Class="_zZLQQJItEeG8oN-7sTL44Q">
-    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation templateId.root='2.16.840.1.113883.10.20.15.3.112' constraints.validation.error='SilicosisSignsAndSymptomsObservationTemplateId SilicosisSignsAndSymptomsObservationValue'</annotation>
+  <CDA:ConformsTo xmi:id="_uYGYpO1qEeGeHKjzItayOg" base_Generalization="_zZLQQZItEeG8oN-7sTL44Q"/>
+  <Ecore:EClass xmi:id="_uYHmwO1qEeGeHKjzItayOg" base_Class="_zZLQQJItEeG8oN-7sTL44Q">
+    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='SilicosisSignsAndSymptomsObservationTemplateId SilicosisSignsAndSymptomsObservationValue' templateId.root='2.16.840.1.113883.10.20.15.3.112'</annotation>
   </Ecore:EClass>
-  <CDA:ConformsTo xmi:id="_8xC9J6_-EeGwzN0GyR2SUw" base_Generalization="_SQxFIJJSEeG8oN-7sTL44Q"/>
-  <Ecore:EClass xmi:id="_8xC9Kq_-EeGwzN0GyR2SUw" base_Class="_LJ5okJIwEeG8oN-7sTL44Q">
-    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation value.displayName='Exposure to toxic dust' value.codeSystemName='SNOMEDCT' code.codeSystem='2.16.840.1.113883.5.4' templateId.root='2.16.840.1.113883.10.20.15.3.110' value.code='102445001' constraints.validation.error='SilicosisSocioBehavioralBooleanRiskFactorObservationTemplateId SilicosisSocioBehavioralBooleanRiskFactorObservationCode SilicosisSocioBehavioralBooleanRiskFactorObservationCodeP SilicosisSocioBehavioralBooleanRiskFactorObservationNegationInd SilicosisSocioBehavioralBooleanRiskFactorObservationValue' code.codeSystemName='HL7ActCode' constraints.validation.warning='SilicosisSocioBehavioralBooleanRiskFactorObservationEffectiveTime' code.code='ASSERTION' value.codeSystem='2.16.840.1.113883.6.96' constraints.validation.dependOn.SilicosisSocioBehavioralBooleanRiskFactorObservationCode='SilicosisSocioBehavioralBooleanRiskFactorObservationCodeP'</annotation>
+  <CDA:ConformsTo xmi:id="_uYNtYO1qEeGeHKjzItayOg" base_Generalization="_SQxFIJJSEeG8oN-7sTL44Q"/>
+  <Ecore:EClass xmi:id="_uYOUcO1qEeGeHKjzItayOg" base_Class="_LJ5okJIwEeG8oN-7sTL44Q">
+    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='SilicosisSocioBehavioralBooleanRiskFactorObservationTemplateId SilicosisSocioBehavioralBooleanRiskFactorObservationCode SilicosisSocioBehavioralBooleanRiskFactorObservationCodeP SilicosisSocioBehavioralBooleanRiskFactorObservationNegationInd SilicosisSocioBehavioralBooleanRiskFactorObservationValue' templateId.root='2.16.840.1.113883.10.20.15.3.110' code.code='ASSERTION' code.codeSystem='2.16.840.1.113883.5.4' code.codeSystemName='HL7ActCode' constraints.validation.dependOn.SilicosisSocioBehavioralBooleanRiskFactorObservationCode='SilicosisSocioBehavioralBooleanRiskFactorObservationCodeP' constraints.validation.warning='SilicosisSocioBehavioralBooleanRiskFactorObservationEffectiveTime' value.code='102445001' value.codeSystem='2.16.840.1.113883.6.96' value.codeSystemName='SNOMEDCT' value.displayName='Exposure to toxic dust'</annotation>
   </Ecore:EClass>
-  <Ecore:EClass xmi:id="_8xykAK_-EeGwzN0GyR2SUw" base_Class="_qY7TkJI0EeG8oN-7sTL44Q">
-    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation statusCode.code='completed' code.codeSystem='2.16.840.1.113883.6.96' code.displayName='Finding with explicit context' templateId.root='2.16.840.1.113883.10.20.15.3.109' constraints.validation.error='SilicosisPossibleExposureLocationAndTypeActTemplateId SilicosisPossibleExposureLocationAndTypeActClassCode SilicosisPossibleExposureLocationAndTypeActCode SilicosisPossibleExposureLocationAndTypeActMoodCode SilicosisPossibleExposureLocationAndTypeActStatusCode' code.codeSystemName='SNOMEDCT' classCode='ACT' code.code='413350009' moodCode='EVN'</annotation>
+  <Ecore:EClass xmi:id="_uYeMEO1qEeGeHKjzItayOg" base_Class="_qY7TkJI0EeG8oN-7sTL44Q">
+    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='SilicosisPossibleExposureLocationAndTypeActTemplateId SilicosisPossibleExposureLocationAndTypeActClassCode SilicosisPossibleExposureLocationAndTypeActCode SilicosisPossibleExposureLocationAndTypeActMoodCode SilicosisPossibleExposureLocationAndTypeActStatusCode' templateId.root='2.16.840.1.113883.10.20.15.3.109' classCode='ACT' code.code='413350009' code.codeSystem='2.16.840.1.113883.6.96' code.codeSystemName='SNOMEDCT' code.displayName='Finding with explicit context' moodCode='EVN' statusCode.code='completed'</annotation>
   </Ecore:EClass>
-  <CDA:ConformsTo xmi:id="_8yFe96_-EeGwzN0GyR2SUw" base_Generalization="_vLEhMKXuEeGPkYBS3YlgqQ"/>
-  <Ecore:EClass xmi:id="_8yPP8K_-EeGwzN0GyR2SUw" base_Class="_vK0pkKXuEeGPkYBS3YlgqQ">
-    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation templateId.root='2.16.840.1.113883.10.20.15.3.108' constraints.validation.error='SilicosisImagingObservationTemplateId SilicosisImagingObservationValue'</annotation>
+  <CDA:ConformsTo xmi:id="_uYrAYO1qEeGeHKjzItayOg" base_Generalization="_vLEhMKXuEeGPkYBS3YlgqQ"/>
+  <Ecore:EClass xmi:id="_uYsOgO1qEeGeHKjzItayOg" base_Class="_vK0pkKXuEeGPkYBS3YlgqQ">
+    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='SilicosisImagingObservationTemplateId SilicosisImagingObservationValue' templateId.root='2.16.840.1.113883.10.20.15.3.108'</annotation>
   </Ecore:EClass>
-  <CDA:ConformsTo xmi:id="_8yZA8K_-EeGwzN0GyR2SUw" base_Generalization="_yNt48KkGEeG1ttSAj8fPmg"/>
-  <Ecore:EClass xmi:id="_8yZA9K_-EeGwzN0GyR2SUw" base_Class="_yNtR4KkGEeG1ttSAj8fPmg">
-    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation templateId.root='2.16.840.1.113883.10.20.15.2.35' constraints.validation.error='SilicosisPHCRRelevantDxTestsSectionTemplateId' constraints.validation.info='SilicosisPHCRRelevantDxTestsSectionSilicosisImagingObservation'</annotation>
+  <CDA:ConformsTo xmi:id="_uYwf8O1qEeGeHKjzItayOg" base_Generalization="_yNt48KkGEeG1ttSAj8fPmg"/>
+  <Ecore:EClass xmi:id="_uYxuEO1qEeGeHKjzItayOg" base_Class="_yNtR4KkGEeG1ttSAj8fPmg">
+    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='SilicosisPHCRRelevantDxTestsSectionTemplateId' templateId.root='2.16.840.1.113883.10.20.15.2.35' constraints.validation.info='SilicosisPHCRRelevantDxTestsSectionSilicosisImagingObservation'</annotation>
   </Ecore:EClass>
-  <CDA:ConformsTo xmi:id="_8yZA_K_-EeGwzN0GyR2SUw" base_Generalization="_XhJTMKkHEeG1ttSAj8fPmg"/>
-  <Ecore:EClass xmi:id="_8yiK4K_-EeGwzN0GyR2SUw" base_Class="_XhIsIKkHEeG1ttSAj8fPmg">
-    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation templateId.root='2.16.840.1.113883.10.20.15.3.107' constraints.validation.error='SilicosisHistoryOfTuberculosisObservationTemplateId SilicosisHistoryOfTuberculosisObservationClassCode SilicosisHistoryOfTuberculosisObservationValue' classCode='OBS'</annotation>
+  <CDA:ConformsTo xmi:id="_uY0KUu1qEeGeHKjzItayOg" base_Generalization="_XhJTMKkHEeG1ttSAj8fPmg"/>
+  <Ecore:EClass xmi:id="_uY1YcO1qEeGeHKjzItayOg" base_Class="_XhIsIKkHEeG1ttSAj8fPmg">
+    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='SilicosisHistoryOfTuberculosisObservationTemplateId SilicosisHistoryOfTuberculosisObservationClassCode SilicosisHistoryOfTuberculosisObservationValue SilicosisHistoryOfTuberculosisObservationValueP' templateId.root='2.16.840.1.113883.10.20.15.3.107' classCode='OBS' value.codeSystem='2.16.840.1.113883.6.96' value.codeSystemName='SNOMEDCT'</annotation>
   </Ecore:EClass>
 </xmi:XMI>

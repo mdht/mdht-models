@@ -50,20 +50,27 @@ import org.openhealthtools.mdht.uml.cda.sdtm.util.SdtmValidator;
  *   <li>{@link org.openhealthtools.mdht.uml.cda.sdtm.QuestionnaireFinding#validateQuestionnaireFindingMoodCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Questionnaire Finding Mood Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.sdtm.QuestionnaireFinding#validateQuestionnaireFindingValue(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Questionnaire Finding Value</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.sdtm.QuestionnaireFinding#validateQuestionnaireFindingStatusCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Questionnaire Finding Status Code</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.sdtm.QuestionnaireFinding#validateQuestionnaireFindingInterpretationCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Questionnaire Finding Interpretation Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.sdtm.QuestionnaireFinding#validateQuestionnaireFindingGroupIdentifier(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Questionnaire Finding Group Identifier</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.sdtm.QuestionnaireFinding#validateQuestionnaireFindingQuestionnaireCategoryAssociation(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Questionnaire Finding Questionnaire Category Association</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.sdtm.QuestionnaireFinding#validateQuestionnaireFindingQuestionnaireSubCategoryAssociation(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Questionnaire Finding Questionnaire Sub Category Association</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.sdtm.QuestionnaireFinding#validateQuestionnaireFindingNonPerformanceReason(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Questionnaire Finding Non Performance Reason</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.sdtm.QuestionnaireFinding#validateQuestionnaireFindingBaselineIndicator(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Questionnaire Finding Baseline Indicator</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.sdtm.QuestionnaireFinding#validateQuestionnaireFindingDerivedDataIndicator(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Questionnaire Finding Derived Data Indicator</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.sdtm.QuestionnaireFinding#validateQuestionnaireFindingTimingReference(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Questionnaire Finding Timing Reference</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.sdtm.QuestionnaireFinding#validateQuestionnaireFindingDataCollection(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Questionnaire Finding Data Collection</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.sdtm.QuestionnaireFinding#validateQuestionnaireFindingquestionnaireCategoryAssociationquestionnaireCategoryClassCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Questionnaire Findingquestionnaire Category Associationquestionnaire Category Class Code</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.sdtm.QuestionnaireFinding#validateQuestionnaireFindingquestionnaireCategoryAssociationquestionnaireCategoryCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Questionnaire Findingquestionnaire Category Associationquestionnaire Category Code</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.sdtm.QuestionnaireFinding#validateQuestionnaireFindingquestionnaireCategoryAssociationquestionnaireCategoryMoodCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Questionnaire Findingquestionnaire Category Associationquestionnaire Category Mood Code</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.sdtm.QuestionnaireFinding#validateQuestionnaireFindingquestionnaireCategoryAssociationquestionnaireCategoryValue(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Questionnaire Findingquestionnaire Category Associationquestionnaire Category Value</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.sdtm.QuestionnaireFinding#validateQuestionnaireFindingquestionnaireCategoryAssociationTypeCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Questionnaire Findingquestionnaire Category Association Type Code</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.sdtm.QuestionnaireFinding#validateQuestionnaireFindingquestionnaireCategoryAssociationQuestionnaireCategory(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Questionnaire Findingquestionnaire Category Association Questionnaire Category</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.sdtm.QuestionnaireFinding#validateQuestionnaireFindingquestionnaireSubCategoryAssociationquestionnaireSubCategoryClassCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Questionnaire Findingquestionnaire Sub Category Associationquestionnaire Sub Category Class Code</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.sdtm.QuestionnaireFinding#validateQuestionnaireFindingquestionnaireSubCategoryAssociationquestionnaireSubCategoryCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Questionnaire Findingquestionnaire Sub Category Associationquestionnaire Sub Category Code</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.sdtm.QuestionnaireFinding#validateQuestionnaireFindingquestionnaireSubCategoryAssociationquestionnaireSubCategoryMoodCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Questionnaire Findingquestionnaire Sub Category Associationquestionnaire Sub Category Mood Code</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.sdtm.QuestionnaireFinding#validateQuestionnaireFindingquestionnaireSubCategoryAssociationquestionnaireSubCategoryValue(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Questionnaire Findingquestionnaire Sub Category Associationquestionnaire Sub Category Value</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.sdtm.QuestionnaireFinding#validateQuestionnaireFindingquestionnaireSubCategoryAssociationTypeCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Questionnaire Findingquestionnaire Sub Category Association Type Code</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.sdtm.QuestionnaireFinding#validateQuestionnaireFindingquestionnaireSubCategoryAssociationQuestionnaireSubCategory(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Questionnaire Findingquestionnaire Sub Category Association Questionnaire Sub Category</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.sdtm.QuestionnaireFinding#getGroupIdentifier() <em>Get Group Identifier</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.sdtm.QuestionnaireFinding#getNonPerformanceReason() <em>Get Non Performance Reason</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.sdtm.QuestionnaireFinding#getBaselineIndicator() <em>Get Baseline Indicator</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.sdtm.QuestionnaireFinding#getDerivedDataIndicator() <em>Get Derived Data Indicator</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.sdtm.QuestionnaireFinding#getTimingReference() <em>Get Timing Reference</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.sdtm.QuestionnaireFinding#getDataCollection() <em>Get Data Collection</em>}</li>
  * </ul>
@@ -108,7 +115,6 @@ public class QuestionnaireFindingOperations extends ClinicalStatementOperations
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.23.34')
    * @param questionnaireFinding The receiving '<em><b>Questionnaire Finding</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -118,6 +124,7 @@ public class QuestionnaireFindingOperations extends ClinicalStatementOperations
   
   public static  boolean validateQuestionnaireFindingTemplateId(QuestionnaireFinding questionnaireFinding, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
+  	  
     if (VALIDATE_QUESTIONNAIRE_FINDING_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(SdtmPackage.Literals.QUESTIONNAIRE_FINDING);
@@ -142,6 +149,7 @@ public class QuestionnaireFindingOperations extends ClinicalStatementOperations
              org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "QuestionnaireFindingTemplateId", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(questionnaireFinding, context) }),
              new Object [] { questionnaireFinding }));
       }
+       
       return false;
     }
     return true;
@@ -173,7 +181,6 @@ public class QuestionnaireFindingOperations extends ClinicalStatementOperations
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.classCode=vocab::ActClassObservation::OBS
    * @param questionnaireFinding The receiving '<em><b>Questionnaire Finding</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -183,6 +190,7 @@ public class QuestionnaireFindingOperations extends ClinicalStatementOperations
   
   public static  boolean validateQuestionnaireFindingClassCode(QuestionnaireFinding questionnaireFinding, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
+  	  
     if (VALIDATE_QUESTIONNAIRE_FINDING_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(SdtmPackage.Literals.QUESTIONNAIRE_FINDING);
@@ -207,6 +215,7 @@ public class QuestionnaireFindingOperations extends ClinicalStatementOperations
              org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "QuestionnaireFindingClassCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(questionnaireFinding, context) }),
              new Object [] { questionnaireFinding }));
       }
+       
       return false;
     }
     return true;
@@ -238,7 +247,6 @@ public class QuestionnaireFindingOperations extends ClinicalStatementOperations
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * (self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined())
    * @param questionnaireFinding The receiving '<em><b>Questionnaire Finding</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -248,6 +256,7 @@ public class QuestionnaireFindingOperations extends ClinicalStatementOperations
   
   public static  boolean validateQuestionnaireFindingCode(QuestionnaireFinding questionnaireFinding, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
+  	  
     if (VALIDATE_QUESTIONNAIRE_FINDING_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(SdtmPackage.Literals.QUESTIONNAIRE_FINDING);
@@ -272,6 +281,7 @@ public class QuestionnaireFindingOperations extends ClinicalStatementOperations
              org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "QuestionnaireFindingCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(questionnaireFinding, context) }),
              new Object [] { questionnaireFinding }));
       }
+       
       return false;
     }
     return true;
@@ -303,7 +313,6 @@ public class QuestionnaireFindingOperations extends ClinicalStatementOperations
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * (self.effectiveTime.oclIsUndefined() or self.effectiveTime.isNullFlavorUndefined()) implies (not self.effectiveTime.oclIsUndefined())
    * @param questionnaireFinding The receiving '<em><b>Questionnaire Finding</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -313,6 +322,7 @@ public class QuestionnaireFindingOperations extends ClinicalStatementOperations
   
   public static  boolean validateQuestionnaireFindingEffectiveTime(QuestionnaireFinding questionnaireFinding, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
+  	  
     if (VALIDATE_QUESTIONNAIRE_FINDING_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(SdtmPackage.Literals.QUESTIONNAIRE_FINDING);
@@ -337,6 +347,7 @@ public class QuestionnaireFindingOperations extends ClinicalStatementOperations
              org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "QuestionnaireFindingEffectiveTime", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(questionnaireFinding, context) }),
              new Object [] { questionnaireFinding }));
       }
+       
       return false;
     }
     return true;
@@ -368,7 +379,6 @@ public class QuestionnaireFindingOperations extends ClinicalStatementOperations
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * (self.id->isEmpty() or self.id->exists(element | element.isNullFlavorUndefined())) implies (not self.id->isEmpty())
    * @param questionnaireFinding The receiving '<em><b>Questionnaire Finding</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -378,6 +388,7 @@ public class QuestionnaireFindingOperations extends ClinicalStatementOperations
   
   public static  boolean validateQuestionnaireFindingId(QuestionnaireFinding questionnaireFinding, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
+  	  
     if (VALIDATE_QUESTIONNAIRE_FINDING_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(SdtmPackage.Literals.QUESTIONNAIRE_FINDING);
@@ -402,6 +413,7 @@ public class QuestionnaireFindingOperations extends ClinicalStatementOperations
              org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "QuestionnaireFindingId", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(questionnaireFinding, context) }),
              new Object [] { questionnaireFinding }));
       }
+       
       return false;
     }
     return true;
@@ -433,7 +445,6 @@ public class QuestionnaireFindingOperations extends ClinicalStatementOperations
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.moodCode=vocab::x_ActMoodDocumentObservation::EVN
    * @param questionnaireFinding The receiving '<em><b>Questionnaire Finding</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -443,6 +454,7 @@ public class QuestionnaireFindingOperations extends ClinicalStatementOperations
   
   public static  boolean validateQuestionnaireFindingMoodCode(QuestionnaireFinding questionnaireFinding, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
+  	  
     if (VALIDATE_QUESTIONNAIRE_FINDING_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(SdtmPackage.Literals.QUESTIONNAIRE_FINDING);
@@ -467,6 +479,7 @@ public class QuestionnaireFindingOperations extends ClinicalStatementOperations
              org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "QuestionnaireFindingMoodCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(questionnaireFinding, context) }),
              new Object [] { questionnaireFinding }));
       }
+       
       return false;
     }
     return true;
@@ -498,7 +511,6 @@ public class QuestionnaireFindingOperations extends ClinicalStatementOperations
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * (self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (not self.value->isEmpty())
    * @param questionnaireFinding The receiving '<em><b>Questionnaire Finding</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -508,6 +520,7 @@ public class QuestionnaireFindingOperations extends ClinicalStatementOperations
   
   public static  boolean validateQuestionnaireFindingValue(QuestionnaireFinding questionnaireFinding, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
+  	  
     if (VALIDATE_QUESTIONNAIRE_FINDING_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(SdtmPackage.Literals.QUESTIONNAIRE_FINDING);
@@ -532,6 +545,7 @@ public class QuestionnaireFindingOperations extends ClinicalStatementOperations
              org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "QuestionnaireFindingValue", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(questionnaireFinding, context) }),
              new Object [] { questionnaireFinding }));
       }
+       
       return false;
     }
     return true;
@@ -563,7 +577,6 @@ public class QuestionnaireFindingOperations extends ClinicalStatementOperations
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * (self.statusCode.oclIsUndefined() or self.statusCode.isNullFlavorUndefined()) implies (not self.statusCode.oclIsUndefined())
    * @param questionnaireFinding The receiving '<em><b>Questionnaire Finding</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -573,6 +586,7 @@ public class QuestionnaireFindingOperations extends ClinicalStatementOperations
   
   public static  boolean validateQuestionnaireFindingStatusCode(QuestionnaireFinding questionnaireFinding, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
+  	  
     if (VALIDATE_QUESTIONNAIRE_FINDING_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(SdtmPackage.Literals.QUESTIONNAIRE_FINDING);
@@ -597,6 +611,73 @@ public class QuestionnaireFindingOperations extends ClinicalStatementOperations
              org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "QuestionnaireFindingStatusCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(questionnaireFinding, context) }),
              new Object [] { questionnaireFinding }));
       }
+       
+      return false;
+    }
+    return true;
+  }
+
+  /**
+   * The cached OCL expression body for the '{@link #validateQuestionnaireFindingInterpretationCode(QuestionnaireFinding, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Questionnaire Finding Interpretation Code</em>}' operation.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #validateQuestionnaireFindingInterpretationCode(QuestionnaireFinding, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+   * @generated
+   * @ordered
+   */
+  protected static final String VALIDATE_QUESTIONNAIRE_FINDING_INTERPRETATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.interpretationCode->isEmpty() or self.interpretationCode->exists(element | element.isNullFlavorUndefined())) implies (not self.interpretationCode->isEmpty())";
+
+  /**
+   * The cached OCL invariant for the '{@link #validateQuestionnaireFindingInterpretationCode(QuestionnaireFinding, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Questionnaire Finding Interpretation Code</em>}' invariant operation.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #validateQuestionnaireFindingInterpretationCode(QuestionnaireFinding, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+   * @generated
+   * @ordered
+   */
+  
+  protected static Constraint VALIDATE_QUESTIONNAIRE_FINDING_INTERPRETATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * <!-- begin-model-doc -->
+   * @param questionnaireFinding The receiving '<em><b>Questionnaire Finding</b></em>' model object.
+   * @param diagnostics The chain of diagnostics to which problems are to be appended.
+   * @param context The cache of context-specific information.
+   * <!-- end-model-doc -->
+   * @generated
+   */
+  
+  public static  boolean validateQuestionnaireFindingInterpretationCode(QuestionnaireFinding questionnaireFinding, DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+  	  
+    if (VALIDATE_QUESTIONNAIRE_FINDING_INTERPRETATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+      OCL.Helper helper = EOCL_ENV.createOCLHelper();
+      helper.setContext(SdtmPackage.Literals.QUESTIONNAIRE_FINDING);
+      try
+      {
+        VALIDATE_QUESTIONNAIRE_FINDING_INTERPRETATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_QUESTIONNAIRE_FINDING_INTERPRETATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+      }
+      catch (ParserException pe)
+      {
+        throw new UnsupportedOperationException(pe.getLocalizedMessage());
+      }
+    }
+    if (!EOCL_ENV.createQuery(VALIDATE_QUESTIONNAIRE_FINDING_INTERPRETATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(questionnaireFinding))
+    {
+      if (diagnostics != null)
+      {
+        diagnostics.add
+          (new BasicDiagnostic
+            (Diagnostic.ERROR,
+             SdtmValidator.DIAGNOSTIC_SOURCE,
+             SdtmValidator.QUESTIONNAIRE_FINDING__QUESTIONNAIRE_FINDING_INTERPRETATION_CODE,
+             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "QuestionnaireFindingInterpretationCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(questionnaireFinding, context) }),
+             new Object [] { questionnaireFinding }));
+      }
+       
       return false;
     }
     return true;
@@ -628,7 +709,6 @@ public class QuestionnaireFindingOperations extends ClinicalStatementOperations
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.entryRelationship->one(entryRelationship : cda::EntryRelationship | not entryRelationship.act.oclIsUndefined() and entryRelationship.act.oclIsKindOf(sdtm::Group Identifier))
    * @param questionnaireFinding The receiving '<em><b>Questionnaire Finding</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -638,6 +718,7 @@ public class QuestionnaireFindingOperations extends ClinicalStatementOperations
   
   public static  boolean validateQuestionnaireFindingGroupIdentifier(QuestionnaireFinding questionnaireFinding, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
+  	  
     if (VALIDATE_QUESTIONNAIRE_FINDING_GROUP_IDENTIFIER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(SdtmPackage.Literals.QUESTIONNAIRE_FINDING);
@@ -662,6 +743,7 @@ public class QuestionnaireFindingOperations extends ClinicalStatementOperations
              org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "QuestionnaireFindingGroupIdentifier", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(questionnaireFinding, context) }),
              new Object [] { questionnaireFinding }));
       }
+       
       return false;
     }
     return true;
@@ -693,7 +775,6 @@ public class QuestionnaireFindingOperations extends ClinicalStatementOperations
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.entryRelationship->one(entryRelationship : cda::EntryRelationship | not entryRelationship.oclIsUndefined() and entryRelationship.oclIsKindOf(cda::EntryRelationship))
    * @param questionnaireFinding The receiving '<em><b>Questionnaire Finding</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -703,6 +784,7 @@ public class QuestionnaireFindingOperations extends ClinicalStatementOperations
   
   public static  boolean validateQuestionnaireFindingQuestionnaireCategoryAssociation(QuestionnaireFinding questionnaireFinding, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
+  	  
     if (VALIDATE_QUESTIONNAIRE_FINDING_QUESTIONNAIRE_CATEGORY_ASSOCIATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(SdtmPackage.Literals.QUESTIONNAIRE_FINDING);
@@ -727,6 +809,7 @@ public class QuestionnaireFindingOperations extends ClinicalStatementOperations
              org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "QuestionnaireFindingQuestionnaireCategoryAssociation", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(questionnaireFinding, context) }),
              new Object [] { questionnaireFinding }));
       }
+       
       return false;
     }
     return true;
@@ -758,7 +841,6 @@ public class QuestionnaireFindingOperations extends ClinicalStatementOperations
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.entryRelationship->one(entryRelationship : cda::EntryRelationship | not entryRelationship.oclIsUndefined() and entryRelationship.oclIsKindOf(cda::EntryRelationship))
    * @param questionnaireFinding The receiving '<em><b>Questionnaire Finding</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -768,6 +850,7 @@ public class QuestionnaireFindingOperations extends ClinicalStatementOperations
   
   public static  boolean validateQuestionnaireFindingQuestionnaireSubCategoryAssociation(QuestionnaireFinding questionnaireFinding, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
+  	  
     if (VALIDATE_QUESTIONNAIRE_FINDING_QUESTIONNAIRE_SUB_CATEGORY_ASSOCIATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(SdtmPackage.Literals.QUESTIONNAIRE_FINDING);
@@ -792,6 +875,7 @@ public class QuestionnaireFindingOperations extends ClinicalStatementOperations
              org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "QuestionnaireFindingQuestionnaireSubCategoryAssociation", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(questionnaireFinding, context) }),
              new Object [] { questionnaireFinding }));
       }
+       
       return false;
     }
     return true;
@@ -823,7 +907,6 @@ public class QuestionnaireFindingOperations extends ClinicalStatementOperations
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.entryRelationship->one(entryRelationship : cda::EntryRelationship | not entryRelationship.observation.oclIsUndefined() and entryRelationship.observation.oclIsKindOf(sdtm::Non Performance Reason) and entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::COMP)
    * @param questionnaireFinding The receiving '<em><b>Questionnaire Finding</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -833,6 +916,7 @@ public class QuestionnaireFindingOperations extends ClinicalStatementOperations
   
   public static  boolean validateQuestionnaireFindingNonPerformanceReason(QuestionnaireFinding questionnaireFinding, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
+  	  
     if (VALIDATE_QUESTIONNAIRE_FINDING_NON_PERFORMANCE_REASON__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(SdtmPackage.Literals.QUESTIONNAIRE_FINDING);
@@ -857,136 +941,7 @@ public class QuestionnaireFindingOperations extends ClinicalStatementOperations
              org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "QuestionnaireFindingNonPerformanceReason", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(questionnaireFinding, context) }),
              new Object [] { questionnaireFinding }));
       }
-      return false;
-    }
-    return true;
-  }
-
-  /**
-   * The cached OCL expression body for the '{@link #validateQuestionnaireFindingBaselineIndicator(QuestionnaireFinding, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Questionnaire Finding Baseline Indicator</em>}' operation.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @see #validateQuestionnaireFindingBaselineIndicator(QuestionnaireFinding, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-   * @generated
-   * @ordered
-   */
-  protected static final String VALIDATE_QUESTIONNAIRE_FINDING_BASELINE_INDICATOR__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entryRelationship->one(entryRelationship : cda::EntryRelationship | not entryRelationship.observation.oclIsUndefined() and entryRelationship.observation.oclIsKindOf(sdtm::Baseline Indicator) and entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::COMP)";
-
-  /**
-   * The cached OCL invariant for the '{@link #validateQuestionnaireFindingBaselineIndicator(QuestionnaireFinding, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Questionnaire Finding Baseline Indicator</em>}' invariant operation.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @see #validateQuestionnaireFindingBaselineIndicator(QuestionnaireFinding, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-   * @generated
-   * @ordered
-   */
-  
-  protected static Constraint VALIDATE_QUESTIONNAIRE_FINDING_BASELINE_INDICATOR__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-  
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * <!-- begin-model-doc -->
-   * self.entryRelationship->one(entryRelationship : cda::EntryRelationship | not entryRelationship.observation.oclIsUndefined() and entryRelationship.observation.oclIsKindOf(sdtm::Baseline Indicator) and entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::COMP)
-   * @param questionnaireFinding The receiving '<em><b>Questionnaire Finding</b></em>' model object.
-   * @param diagnostics The chain of diagnostics to which problems are to be appended.
-   * @param context The cache of context-specific information.
-   * <!-- end-model-doc -->
-   * @generated
-   */
-  
-  public static  boolean validateQuestionnaireFindingBaselineIndicator(QuestionnaireFinding questionnaireFinding, DiagnosticChain diagnostics, Map<Object, Object> context)
-  {
-    if (VALIDATE_QUESTIONNAIRE_FINDING_BASELINE_INDICATOR__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-      OCL.Helper helper = EOCL_ENV.createOCLHelper();
-      helper.setContext(SdtmPackage.Literals.QUESTIONNAIRE_FINDING);
-      try
-      {
-        VALIDATE_QUESTIONNAIRE_FINDING_BASELINE_INDICATOR__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_QUESTIONNAIRE_FINDING_BASELINE_INDICATOR__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-      }
-      catch (ParserException pe)
-      {
-        throw new UnsupportedOperationException(pe.getLocalizedMessage());
-      }
-    }
-    if (!EOCL_ENV.createQuery(VALIDATE_QUESTIONNAIRE_FINDING_BASELINE_INDICATOR__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(questionnaireFinding))
-    {
-      if (diagnostics != null)
-      {
-        diagnostics.add
-          (new BasicDiagnostic
-            (Diagnostic.ERROR,
-             SdtmValidator.DIAGNOSTIC_SOURCE,
-             SdtmValidator.QUESTIONNAIRE_FINDING__QUESTIONNAIRE_FINDING_BASELINE_INDICATOR,
-             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "QuestionnaireFindingBaselineIndicator", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(questionnaireFinding, context) }),
-             new Object [] { questionnaireFinding }));
-      }
-      return false;
-    }
-    return true;
-  }
-
-  /**
-   * The cached OCL expression body for the '{@link #validateQuestionnaireFindingDerivedDataIndicator(QuestionnaireFinding, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Questionnaire Finding Derived Data Indicator</em>}' operation.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @see #validateQuestionnaireFindingDerivedDataIndicator(QuestionnaireFinding, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-   * @generated
-   * @ordered
-   */
-  protected static final String VALIDATE_QUESTIONNAIRE_FINDING_DERIVED_DATA_INDICATOR__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entryRelationship->one(entryRelationship : cda::EntryRelationship | not entryRelationship.observation.oclIsUndefined() and entryRelationship.observation.oclIsKindOf(sdtm::Derived Data Indicator) and entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::COMP)";
-
-  /**
-   * The cached OCL invariant for the '{@link #validateQuestionnaireFindingDerivedDataIndicator(QuestionnaireFinding, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Questionnaire Finding Derived Data Indicator</em>}' invariant operation.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @see #validateQuestionnaireFindingDerivedDataIndicator(QuestionnaireFinding, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-   * @generated
-   * @ordered
-   */
-  
-  protected static Constraint VALIDATE_QUESTIONNAIRE_FINDING_DERIVED_DATA_INDICATOR__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-  
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * <!-- begin-model-doc -->
-   * self.entryRelationship->one(entryRelationship : cda::EntryRelationship | not entryRelationship.observation.oclIsUndefined() and entryRelationship.observation.oclIsKindOf(sdtm::Derived Data Indicator) and entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::COMP)
-   * @param questionnaireFinding The receiving '<em><b>Questionnaire Finding</b></em>' model object.
-   * @param diagnostics The chain of diagnostics to which problems are to be appended.
-   * @param context The cache of context-specific information.
-   * <!-- end-model-doc -->
-   * @generated
-   */
-  
-  public static  boolean validateQuestionnaireFindingDerivedDataIndicator(QuestionnaireFinding questionnaireFinding, DiagnosticChain diagnostics, Map<Object, Object> context)
-  {
-    if (VALIDATE_QUESTIONNAIRE_FINDING_DERIVED_DATA_INDICATOR__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-      OCL.Helper helper = EOCL_ENV.createOCLHelper();
-      helper.setContext(SdtmPackage.Literals.QUESTIONNAIRE_FINDING);
-      try
-      {
-        VALIDATE_QUESTIONNAIRE_FINDING_DERIVED_DATA_INDICATOR__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_QUESTIONNAIRE_FINDING_DERIVED_DATA_INDICATOR__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-      }
-      catch (ParserException pe)
-      {
-        throw new UnsupportedOperationException(pe.getLocalizedMessage());
-      }
-    }
-    if (!EOCL_ENV.createQuery(VALIDATE_QUESTIONNAIRE_FINDING_DERIVED_DATA_INDICATOR__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(questionnaireFinding))
-    {
-      if (diagnostics != null)
-      {
-        diagnostics.add
-          (new BasicDiagnostic
-            (Diagnostic.ERROR,
-             SdtmValidator.DIAGNOSTIC_SOURCE,
-             SdtmValidator.QUESTIONNAIRE_FINDING__QUESTIONNAIRE_FINDING_DERIVED_DATA_INDICATOR,
-             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "QuestionnaireFindingDerivedDataIndicator", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(questionnaireFinding, context) }),
-             new Object [] { questionnaireFinding }));
-      }
+       
       return false;
     }
     return true;
@@ -1018,7 +973,6 @@ public class QuestionnaireFindingOperations extends ClinicalStatementOperations
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.entryRelationship->one(entryRelationship : cda::EntryRelationship | not entryRelationship.act.oclIsUndefined() and entryRelationship.act.oclIsKindOf(sdtm::Timing Reference) and entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::REFR)
    * @param questionnaireFinding The receiving '<em><b>Questionnaire Finding</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -1028,6 +982,7 @@ public class QuestionnaireFindingOperations extends ClinicalStatementOperations
   
   public static  boolean validateQuestionnaireFindingTimingReference(QuestionnaireFinding questionnaireFinding, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
+  	  
     if (VALIDATE_QUESTIONNAIRE_FINDING_TIMING_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(SdtmPackage.Literals.QUESTIONNAIRE_FINDING);
@@ -1052,6 +1007,7 @@ public class QuestionnaireFindingOperations extends ClinicalStatementOperations
              org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "QuestionnaireFindingTimingReference", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(questionnaireFinding, context) }),
              new Object [] { questionnaireFinding }));
       }
+       
       return false;
     }
     return true;
@@ -1083,7 +1039,6 @@ public class QuestionnaireFindingOperations extends ClinicalStatementOperations
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.entryRelationship->one(entryRelationship : cda::EntryRelationship | not entryRelationship.act.oclIsUndefined() and entryRelationship.act.oclIsKindOf(sdtm::Data Collection) and entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::COMP)
    * @param questionnaireFinding The receiving '<em><b>Questionnaire Finding</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -1093,6 +1048,7 @@ public class QuestionnaireFindingOperations extends ClinicalStatementOperations
   
   public static  boolean validateQuestionnaireFindingDataCollection(QuestionnaireFinding questionnaireFinding, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
+  	  
     if (VALIDATE_QUESTIONNAIRE_FINDING_DATA_COLLECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(SdtmPackage.Literals.QUESTIONNAIRE_FINDING);
@@ -1117,6 +1073,271 @@ public class QuestionnaireFindingOperations extends ClinicalStatementOperations
              org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "QuestionnaireFindingDataCollection", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(questionnaireFinding, context) }),
              new Object [] { questionnaireFinding }));
       }
+       
+      return false;
+    }
+    return true;
+  }
+
+  /**
+   * The cached OCL expression body for the '{@link #validateQuestionnaireFindingquestionnaireCategoryAssociationquestionnaireCategoryClassCode(QuestionnaireFinding, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Questionnaire Findingquestionnaire Category Associationquestionnaire Category Class Code</em>}' operation.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #validateQuestionnaireFindingquestionnaireCategoryAssociationquestionnaireCategoryClassCode(QuestionnaireFinding, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+   * @generated
+   * @ordered
+   */
+  protected static final String VALIDATE_QUESTIONNAIRE_FINDINGQUESTIONNAIRE_CATEGORY_ASSOCIATIONQUESTIONNAIRE_CATEGORY_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entryRelationship->excluding(null).observation->excluding(null)->reject(classCode=vocab::ActClassObservation::OBS)";
+
+  /**
+   * The cached OCL invariant for the '{@link #validateQuestionnaireFindingquestionnaireCategoryAssociationquestionnaireCategoryClassCode(QuestionnaireFinding, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Questionnaire Findingquestionnaire Category Associationquestionnaire Category Class Code</em>}' invariant operation.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #validateQuestionnaireFindingquestionnaireCategoryAssociationquestionnaireCategoryClassCode(QuestionnaireFinding, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+   * @generated
+   * @ordered
+   */
+  
+  protected static Constraint VALIDATE_QUESTIONNAIRE_FINDINGQUESTIONNAIRE_CATEGORY_ASSOCIATIONQUESTIONNAIRE_CATEGORY_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * <!-- begin-model-doc -->
+   * @param questionnaireFinding The receiving '<em><b>Questionnaire Finding</b></em>' model object.
+   * @param diagnostics The chain of diagnostics to which problems are to be appended.
+   * @param context The cache of context-specific information.
+   * <!-- end-model-doc -->
+   * @generated
+   */
+  
+  public static  boolean validateQuestionnaireFindingquestionnaireCategoryAssociationquestionnaireCategoryClassCode(QuestionnaireFinding questionnaireFinding, DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+  	  
+    if (VALIDATE_QUESTIONNAIRE_FINDINGQUESTIONNAIRE_CATEGORY_ASSOCIATIONQUESTIONNAIRE_CATEGORY_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+      OCL.Helper helper = EOCL_ENV.createOCLHelper();
+      helper.setContext(SdtmPackage.Literals.QUESTIONNAIRE_FINDING);
+      try
+      {
+        VALIDATE_QUESTIONNAIRE_FINDINGQUESTIONNAIRE_CATEGORY_ASSOCIATIONQUESTIONNAIRE_CATEGORY_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_QUESTIONNAIRE_FINDINGQUESTIONNAIRE_CATEGORY_ASSOCIATIONQUESTIONNAIRE_CATEGORY_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+      }
+      catch (ParserException pe)
+      {
+        throw new UnsupportedOperationException(pe.getLocalizedMessage());
+      }
+    }
+    if (!EOCL_ENV.createQuery(VALIDATE_QUESTIONNAIRE_FINDINGQUESTIONNAIRE_CATEGORY_ASSOCIATIONQUESTIONNAIRE_CATEGORY_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(questionnaireFinding))
+    {
+      if (diagnostics != null)
+      {
+        diagnostics.add
+          (new BasicDiagnostic
+            (Diagnostic.ERROR,
+             SdtmValidator.DIAGNOSTIC_SOURCE,
+             SdtmValidator.QUESTIONNAIRE_FINDING__QUESTIONNAIRE_FINDINGQUESTIONNAIRE_CATEGORY_ASSOCIATIONQUESTIONNAIRE_CATEGORY_CLASS_CODE,
+             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "QuestionnaireFindingquestionnaireCategoryAssociationquestionnaireCategoryClassCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(questionnaireFinding, context) }),
+             new Object [] { questionnaireFinding }));
+      }
+       
+      return false;
+    }
+    return true;
+  }
+
+  /**
+   * The cached OCL expression body for the '{@link #validateQuestionnaireFindingquestionnaireCategoryAssociationquestionnaireCategoryCode(QuestionnaireFinding, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Questionnaire Findingquestionnaire Category Associationquestionnaire Category Code</em>}' operation.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #validateQuestionnaireFindingquestionnaireCategoryAssociationquestionnaireCategoryCode(QuestionnaireFinding, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+   * @generated
+   * @ordered
+   */
+  protected static final String VALIDATE_QUESTIONNAIRE_FINDINGQUESTIONNAIRE_CATEGORY_ASSOCIATIONQUESTIONNAIRE_CATEGORY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entryRelationship->excluding(null).observation->excluding(null)->reject((code.oclIsUndefined() or code.isNullFlavorUndefined()) implies (not code.oclIsUndefined()))";
+
+  /**
+   * The cached OCL invariant for the '{@link #validateQuestionnaireFindingquestionnaireCategoryAssociationquestionnaireCategoryCode(QuestionnaireFinding, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Questionnaire Findingquestionnaire Category Associationquestionnaire Category Code</em>}' invariant operation.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #validateQuestionnaireFindingquestionnaireCategoryAssociationquestionnaireCategoryCode(QuestionnaireFinding, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+   * @generated
+   * @ordered
+   */
+  
+  protected static Constraint VALIDATE_QUESTIONNAIRE_FINDINGQUESTIONNAIRE_CATEGORY_ASSOCIATIONQUESTIONNAIRE_CATEGORY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * <!-- begin-model-doc -->
+   * @param questionnaireFinding The receiving '<em><b>Questionnaire Finding</b></em>' model object.
+   * @param diagnostics The chain of diagnostics to which problems are to be appended.
+   * @param context The cache of context-specific information.
+   * <!-- end-model-doc -->
+   * @generated
+   */
+  
+  public static  boolean validateQuestionnaireFindingquestionnaireCategoryAssociationquestionnaireCategoryCode(QuestionnaireFinding questionnaireFinding, DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+  	  
+    if (VALIDATE_QUESTIONNAIRE_FINDINGQUESTIONNAIRE_CATEGORY_ASSOCIATIONQUESTIONNAIRE_CATEGORY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+      OCL.Helper helper = EOCL_ENV.createOCLHelper();
+      helper.setContext(SdtmPackage.Literals.QUESTIONNAIRE_FINDING);
+      try
+      {
+        VALIDATE_QUESTIONNAIRE_FINDINGQUESTIONNAIRE_CATEGORY_ASSOCIATIONQUESTIONNAIRE_CATEGORY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_QUESTIONNAIRE_FINDINGQUESTIONNAIRE_CATEGORY_ASSOCIATIONQUESTIONNAIRE_CATEGORY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+      }
+      catch (ParserException pe)
+      {
+        throw new UnsupportedOperationException(pe.getLocalizedMessage());
+      }
+    }
+    if (!EOCL_ENV.createQuery(VALIDATE_QUESTIONNAIRE_FINDINGQUESTIONNAIRE_CATEGORY_ASSOCIATIONQUESTIONNAIRE_CATEGORY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(questionnaireFinding))
+    {
+      if (diagnostics != null)
+      {
+        diagnostics.add
+          (new BasicDiagnostic
+            (Diagnostic.ERROR,
+             SdtmValidator.DIAGNOSTIC_SOURCE,
+             SdtmValidator.QUESTIONNAIRE_FINDING__QUESTIONNAIRE_FINDINGQUESTIONNAIRE_CATEGORY_ASSOCIATIONQUESTIONNAIRE_CATEGORY_CODE,
+             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "QuestionnaireFindingquestionnaireCategoryAssociationquestionnaireCategoryCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(questionnaireFinding, context) }),
+             new Object [] { questionnaireFinding }));
+      }
+       
+      return false;
+    }
+    return true;
+  }
+
+  /**
+   * The cached OCL expression body for the '{@link #validateQuestionnaireFindingquestionnaireCategoryAssociationquestionnaireCategoryMoodCode(QuestionnaireFinding, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Questionnaire Findingquestionnaire Category Associationquestionnaire Category Mood Code</em>}' operation.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #validateQuestionnaireFindingquestionnaireCategoryAssociationquestionnaireCategoryMoodCode(QuestionnaireFinding, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+   * @generated
+   * @ordered
+   */
+  protected static final String VALIDATE_QUESTIONNAIRE_FINDINGQUESTIONNAIRE_CATEGORY_ASSOCIATIONQUESTIONNAIRE_CATEGORY_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entryRelationship->excluding(null).observation->excluding(null)->reject(moodCode=vocab::x_ActMoodDocumentObservation::EVN)";
+
+  /**
+   * The cached OCL invariant for the '{@link #validateQuestionnaireFindingquestionnaireCategoryAssociationquestionnaireCategoryMoodCode(QuestionnaireFinding, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Questionnaire Findingquestionnaire Category Associationquestionnaire Category Mood Code</em>}' invariant operation.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #validateQuestionnaireFindingquestionnaireCategoryAssociationquestionnaireCategoryMoodCode(QuestionnaireFinding, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+   * @generated
+   * @ordered
+   */
+  
+  protected static Constraint VALIDATE_QUESTIONNAIRE_FINDINGQUESTIONNAIRE_CATEGORY_ASSOCIATIONQUESTIONNAIRE_CATEGORY_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * <!-- begin-model-doc -->
+   * @param questionnaireFinding The receiving '<em><b>Questionnaire Finding</b></em>' model object.
+   * @param diagnostics The chain of diagnostics to which problems are to be appended.
+   * @param context The cache of context-specific information.
+   * <!-- end-model-doc -->
+   * @generated
+   */
+  
+  public static  boolean validateQuestionnaireFindingquestionnaireCategoryAssociationquestionnaireCategoryMoodCode(QuestionnaireFinding questionnaireFinding, DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+  	  
+    if (VALIDATE_QUESTIONNAIRE_FINDINGQUESTIONNAIRE_CATEGORY_ASSOCIATIONQUESTIONNAIRE_CATEGORY_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+      OCL.Helper helper = EOCL_ENV.createOCLHelper();
+      helper.setContext(SdtmPackage.Literals.QUESTIONNAIRE_FINDING);
+      try
+      {
+        VALIDATE_QUESTIONNAIRE_FINDINGQUESTIONNAIRE_CATEGORY_ASSOCIATIONQUESTIONNAIRE_CATEGORY_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_QUESTIONNAIRE_FINDINGQUESTIONNAIRE_CATEGORY_ASSOCIATIONQUESTIONNAIRE_CATEGORY_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+      }
+      catch (ParserException pe)
+      {
+        throw new UnsupportedOperationException(pe.getLocalizedMessage());
+      }
+    }
+    if (!EOCL_ENV.createQuery(VALIDATE_QUESTIONNAIRE_FINDINGQUESTIONNAIRE_CATEGORY_ASSOCIATIONQUESTIONNAIRE_CATEGORY_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(questionnaireFinding))
+    {
+      if (diagnostics != null)
+      {
+        diagnostics.add
+          (new BasicDiagnostic
+            (Diagnostic.ERROR,
+             SdtmValidator.DIAGNOSTIC_SOURCE,
+             SdtmValidator.QUESTIONNAIRE_FINDING__QUESTIONNAIRE_FINDINGQUESTIONNAIRE_CATEGORY_ASSOCIATIONQUESTIONNAIRE_CATEGORY_MOOD_CODE,
+             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "QuestionnaireFindingquestionnaireCategoryAssociationquestionnaireCategoryMoodCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(questionnaireFinding, context) }),
+             new Object [] { questionnaireFinding }));
+      }
+       
+      return false;
+    }
+    return true;
+  }
+
+  /**
+   * The cached OCL expression body for the '{@link #validateQuestionnaireFindingquestionnaireCategoryAssociationquestionnaireCategoryValue(QuestionnaireFinding, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Questionnaire Findingquestionnaire Category Associationquestionnaire Category Value</em>}' operation.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #validateQuestionnaireFindingquestionnaireCategoryAssociationquestionnaireCategoryValue(QuestionnaireFinding, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+   * @generated
+   * @ordered
+   */
+  protected static final String VALIDATE_QUESTIONNAIRE_FINDINGQUESTIONNAIRE_CATEGORY_ASSOCIATIONQUESTIONNAIRE_CATEGORY_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entryRelationship->excluding(null).observation->excluding(null)->reject((value->isEmpty() or value->exists(element | element.isNullFlavorUndefined())) implies (value->size() = 1 and value->forAll(element | element.oclIsTypeOf(datatypes::CE))))";
+
+  /**
+   * The cached OCL invariant for the '{@link #validateQuestionnaireFindingquestionnaireCategoryAssociationquestionnaireCategoryValue(QuestionnaireFinding, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Questionnaire Findingquestionnaire Category Associationquestionnaire Category Value</em>}' invariant operation.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #validateQuestionnaireFindingquestionnaireCategoryAssociationquestionnaireCategoryValue(QuestionnaireFinding, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+   * @generated
+   * @ordered
+   */
+  
+  protected static Constraint VALIDATE_QUESTIONNAIRE_FINDINGQUESTIONNAIRE_CATEGORY_ASSOCIATIONQUESTIONNAIRE_CATEGORY_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * <!-- begin-model-doc -->
+   * @param questionnaireFinding The receiving '<em><b>Questionnaire Finding</b></em>' model object.
+   * @param diagnostics The chain of diagnostics to which problems are to be appended.
+   * @param context The cache of context-specific information.
+   * <!-- end-model-doc -->
+   * @generated
+   */
+  
+  public static  boolean validateQuestionnaireFindingquestionnaireCategoryAssociationquestionnaireCategoryValue(QuestionnaireFinding questionnaireFinding, DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+  	  
+    if (VALIDATE_QUESTIONNAIRE_FINDINGQUESTIONNAIRE_CATEGORY_ASSOCIATIONQUESTIONNAIRE_CATEGORY_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+      OCL.Helper helper = EOCL_ENV.createOCLHelper();
+      helper.setContext(SdtmPackage.Literals.QUESTIONNAIRE_FINDING);
+      try
+      {
+        VALIDATE_QUESTIONNAIRE_FINDINGQUESTIONNAIRE_CATEGORY_ASSOCIATIONQUESTIONNAIRE_CATEGORY_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_QUESTIONNAIRE_FINDINGQUESTIONNAIRE_CATEGORY_ASSOCIATIONQUESTIONNAIRE_CATEGORY_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+      }
+      catch (ParserException pe)
+      {
+        throw new UnsupportedOperationException(pe.getLocalizedMessage());
+      }
+    }
+    if (!EOCL_ENV.createQuery(VALIDATE_QUESTIONNAIRE_FINDINGQUESTIONNAIRE_CATEGORY_ASSOCIATIONQUESTIONNAIRE_CATEGORY_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(questionnaireFinding))
+    {
+      if (diagnostics != null)
+      {
+        diagnostics.add
+          (new BasicDiagnostic
+            (Diagnostic.ERROR,
+             SdtmValidator.DIAGNOSTIC_SOURCE,
+             SdtmValidator.QUESTIONNAIRE_FINDING__QUESTIONNAIRE_FINDINGQUESTIONNAIRE_CATEGORY_ASSOCIATIONQUESTIONNAIRE_CATEGORY_VALUE,
+             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "QuestionnaireFindingquestionnaireCategoryAssociationquestionnaireCategoryValue", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(questionnaireFinding, context) }),
+             new Object [] { questionnaireFinding }));
+      }
+       
       return false;
     }
     return true;
@@ -1148,7 +1369,6 @@ public class QuestionnaireFindingOperations extends ClinicalStatementOperations
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.entryRelationship->excluding(null)->reject(typeCode=vocab::x_ActRelationshipEntryRelationship::COMP)
    * @param questionnaireFinding The receiving '<em><b>Questionnaire Finding</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -1158,6 +1378,7 @@ public class QuestionnaireFindingOperations extends ClinicalStatementOperations
   
   public static  boolean validateQuestionnaireFindingquestionnaireCategoryAssociationTypeCode(QuestionnaireFinding questionnaireFinding, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
+  	  
     if (VALIDATE_QUESTIONNAIRE_FINDINGQUESTIONNAIRE_CATEGORY_ASSOCIATION_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(SdtmPackage.Literals.QUESTIONNAIRE_FINDING);
@@ -1182,6 +1403,337 @@ public class QuestionnaireFindingOperations extends ClinicalStatementOperations
              org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "QuestionnaireFindingquestionnaireCategoryAssociationTypeCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(questionnaireFinding, context) }),
              new Object [] { questionnaireFinding }));
       }
+       
+      return false;
+    }
+    return true;
+  }
+
+  /**
+   * The cached OCL expression body for the '{@link #validateQuestionnaireFindingquestionnaireCategoryAssociationQuestionnaireCategory(QuestionnaireFinding, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Questionnaire Findingquestionnaire Category Association Questionnaire Category</em>}' operation.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #validateQuestionnaireFindingquestionnaireCategoryAssociationQuestionnaireCategory(QuestionnaireFinding, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+   * @generated
+   * @ordered
+   */
+  protected static final String VALIDATE_QUESTIONNAIRE_FINDINGQUESTIONNAIRE_CATEGORY_ASSOCIATION_QUESTIONNAIRE_CATEGORY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entryRelationship->excluding(null)->reject(observation->one(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(cda::Observation)))";
+
+  /**
+   * The cached OCL invariant for the '{@link #validateQuestionnaireFindingquestionnaireCategoryAssociationQuestionnaireCategory(QuestionnaireFinding, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Questionnaire Findingquestionnaire Category Association Questionnaire Category</em>}' invariant operation.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #validateQuestionnaireFindingquestionnaireCategoryAssociationQuestionnaireCategory(QuestionnaireFinding, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+   * @generated
+   * @ordered
+   */
+  
+  protected static Constraint VALIDATE_QUESTIONNAIRE_FINDINGQUESTIONNAIRE_CATEGORY_ASSOCIATION_QUESTIONNAIRE_CATEGORY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * <!-- begin-model-doc -->
+   * @param questionnaireFinding The receiving '<em><b>Questionnaire Finding</b></em>' model object.
+   * @param diagnostics The chain of diagnostics to which problems are to be appended.
+   * @param context The cache of context-specific information.
+   * <!-- end-model-doc -->
+   * @generated
+   */
+  
+  public static  boolean validateQuestionnaireFindingquestionnaireCategoryAssociationQuestionnaireCategory(QuestionnaireFinding questionnaireFinding, DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+  	  
+    if (VALIDATE_QUESTIONNAIRE_FINDINGQUESTIONNAIRE_CATEGORY_ASSOCIATION_QUESTIONNAIRE_CATEGORY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+      OCL.Helper helper = EOCL_ENV.createOCLHelper();
+      helper.setContext(SdtmPackage.Literals.QUESTIONNAIRE_FINDING);
+      try
+      {
+        VALIDATE_QUESTIONNAIRE_FINDINGQUESTIONNAIRE_CATEGORY_ASSOCIATION_QUESTIONNAIRE_CATEGORY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_QUESTIONNAIRE_FINDINGQUESTIONNAIRE_CATEGORY_ASSOCIATION_QUESTIONNAIRE_CATEGORY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+      }
+      catch (ParserException pe)
+      {
+        throw new UnsupportedOperationException(pe.getLocalizedMessage());
+      }
+    }
+    if (!EOCL_ENV.createQuery(VALIDATE_QUESTIONNAIRE_FINDINGQUESTIONNAIRE_CATEGORY_ASSOCIATION_QUESTIONNAIRE_CATEGORY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(questionnaireFinding))
+    {
+      if (diagnostics != null)
+      {
+        diagnostics.add
+          (new BasicDiagnostic
+            (Diagnostic.ERROR,
+             SdtmValidator.DIAGNOSTIC_SOURCE,
+             SdtmValidator.QUESTIONNAIRE_FINDING__QUESTIONNAIRE_FINDINGQUESTIONNAIRE_CATEGORY_ASSOCIATION_QUESTIONNAIRE_CATEGORY,
+             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "QuestionnaireFindingquestionnaireCategoryAssociationQuestionnaireCategory", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(questionnaireFinding, context) }),
+             new Object [] { questionnaireFinding }));
+      }
+       
+      return false;
+    }
+    return true;
+  }
+
+  /**
+   * The cached OCL expression body for the '{@link #validateQuestionnaireFindingquestionnaireSubCategoryAssociationquestionnaireSubCategoryClassCode(QuestionnaireFinding, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Questionnaire Findingquestionnaire Sub Category Associationquestionnaire Sub Category Class Code</em>}' operation.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #validateQuestionnaireFindingquestionnaireSubCategoryAssociationquestionnaireSubCategoryClassCode(QuestionnaireFinding, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+   * @generated
+   * @ordered
+   */
+  protected static final String VALIDATE_QUESTIONNAIRE_FINDINGQUESTIONNAIRE_SUB_CATEGORY_ASSOCIATIONQUESTIONNAIRE_SUB_CATEGORY_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entryRelationship->excluding(null).observation->excluding(null)->reject(classCode=vocab::ActClassObservation::OBS)";
+
+  /**
+   * The cached OCL invariant for the '{@link #validateQuestionnaireFindingquestionnaireSubCategoryAssociationquestionnaireSubCategoryClassCode(QuestionnaireFinding, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Questionnaire Findingquestionnaire Sub Category Associationquestionnaire Sub Category Class Code</em>}' invariant operation.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #validateQuestionnaireFindingquestionnaireSubCategoryAssociationquestionnaireSubCategoryClassCode(QuestionnaireFinding, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+   * @generated
+   * @ordered
+   */
+  
+  protected static Constraint VALIDATE_QUESTIONNAIRE_FINDINGQUESTIONNAIRE_SUB_CATEGORY_ASSOCIATIONQUESTIONNAIRE_SUB_CATEGORY_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * <!-- begin-model-doc -->
+   * @param questionnaireFinding The receiving '<em><b>Questionnaire Finding</b></em>' model object.
+   * @param diagnostics The chain of diagnostics to which problems are to be appended.
+   * @param context The cache of context-specific information.
+   * <!-- end-model-doc -->
+   * @generated
+   */
+  
+  public static  boolean validateQuestionnaireFindingquestionnaireSubCategoryAssociationquestionnaireSubCategoryClassCode(QuestionnaireFinding questionnaireFinding, DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+  	  
+    if (VALIDATE_QUESTIONNAIRE_FINDINGQUESTIONNAIRE_SUB_CATEGORY_ASSOCIATIONQUESTIONNAIRE_SUB_CATEGORY_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+      OCL.Helper helper = EOCL_ENV.createOCLHelper();
+      helper.setContext(SdtmPackage.Literals.QUESTIONNAIRE_FINDING);
+      try
+      {
+        VALIDATE_QUESTIONNAIRE_FINDINGQUESTIONNAIRE_SUB_CATEGORY_ASSOCIATIONQUESTIONNAIRE_SUB_CATEGORY_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_QUESTIONNAIRE_FINDINGQUESTIONNAIRE_SUB_CATEGORY_ASSOCIATIONQUESTIONNAIRE_SUB_CATEGORY_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+      }
+      catch (ParserException pe)
+      {
+        throw new UnsupportedOperationException(pe.getLocalizedMessage());
+      }
+    }
+    if (!EOCL_ENV.createQuery(VALIDATE_QUESTIONNAIRE_FINDINGQUESTIONNAIRE_SUB_CATEGORY_ASSOCIATIONQUESTIONNAIRE_SUB_CATEGORY_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(questionnaireFinding))
+    {
+      if (diagnostics != null)
+      {
+        diagnostics.add
+          (new BasicDiagnostic
+            (Diagnostic.ERROR,
+             SdtmValidator.DIAGNOSTIC_SOURCE,
+             SdtmValidator.QUESTIONNAIRE_FINDING__QUESTIONNAIRE_FINDINGQUESTIONNAIRE_SUB_CATEGORY_ASSOCIATIONQUESTIONNAIRE_SUB_CATEGORY_CLASS_CODE,
+             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "QuestionnaireFindingquestionnaireSubCategoryAssociationquestionnaireSubCategoryClassCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(questionnaireFinding, context) }),
+             new Object [] { questionnaireFinding }));
+      }
+       
+      return false;
+    }
+    return true;
+  }
+
+  /**
+   * The cached OCL expression body for the '{@link #validateQuestionnaireFindingquestionnaireSubCategoryAssociationquestionnaireSubCategoryCode(QuestionnaireFinding, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Questionnaire Findingquestionnaire Sub Category Associationquestionnaire Sub Category Code</em>}' operation.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #validateQuestionnaireFindingquestionnaireSubCategoryAssociationquestionnaireSubCategoryCode(QuestionnaireFinding, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+   * @generated
+   * @ordered
+   */
+  protected static final String VALIDATE_QUESTIONNAIRE_FINDINGQUESTIONNAIRE_SUB_CATEGORY_ASSOCIATIONQUESTIONNAIRE_SUB_CATEGORY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entryRelationship->excluding(null).observation->excluding(null)->reject((code.oclIsUndefined() or code.isNullFlavorUndefined()) implies (not code.oclIsUndefined()))";
+
+  /**
+   * The cached OCL invariant for the '{@link #validateQuestionnaireFindingquestionnaireSubCategoryAssociationquestionnaireSubCategoryCode(QuestionnaireFinding, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Questionnaire Findingquestionnaire Sub Category Associationquestionnaire Sub Category Code</em>}' invariant operation.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #validateQuestionnaireFindingquestionnaireSubCategoryAssociationquestionnaireSubCategoryCode(QuestionnaireFinding, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+   * @generated
+   * @ordered
+   */
+  
+  protected static Constraint VALIDATE_QUESTIONNAIRE_FINDINGQUESTIONNAIRE_SUB_CATEGORY_ASSOCIATIONQUESTIONNAIRE_SUB_CATEGORY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * <!-- begin-model-doc -->
+   * @param questionnaireFinding The receiving '<em><b>Questionnaire Finding</b></em>' model object.
+   * @param diagnostics The chain of diagnostics to which problems are to be appended.
+   * @param context The cache of context-specific information.
+   * <!-- end-model-doc -->
+   * @generated
+   */
+  
+  public static  boolean validateQuestionnaireFindingquestionnaireSubCategoryAssociationquestionnaireSubCategoryCode(QuestionnaireFinding questionnaireFinding, DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+  	  
+    if (VALIDATE_QUESTIONNAIRE_FINDINGQUESTIONNAIRE_SUB_CATEGORY_ASSOCIATIONQUESTIONNAIRE_SUB_CATEGORY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+      OCL.Helper helper = EOCL_ENV.createOCLHelper();
+      helper.setContext(SdtmPackage.Literals.QUESTIONNAIRE_FINDING);
+      try
+      {
+        VALIDATE_QUESTIONNAIRE_FINDINGQUESTIONNAIRE_SUB_CATEGORY_ASSOCIATIONQUESTIONNAIRE_SUB_CATEGORY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_QUESTIONNAIRE_FINDINGQUESTIONNAIRE_SUB_CATEGORY_ASSOCIATIONQUESTIONNAIRE_SUB_CATEGORY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+      }
+      catch (ParserException pe)
+      {
+        throw new UnsupportedOperationException(pe.getLocalizedMessage());
+      }
+    }
+    if (!EOCL_ENV.createQuery(VALIDATE_QUESTIONNAIRE_FINDINGQUESTIONNAIRE_SUB_CATEGORY_ASSOCIATIONQUESTIONNAIRE_SUB_CATEGORY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(questionnaireFinding))
+    {
+      if (diagnostics != null)
+      {
+        diagnostics.add
+          (new BasicDiagnostic
+            (Diagnostic.ERROR,
+             SdtmValidator.DIAGNOSTIC_SOURCE,
+             SdtmValidator.QUESTIONNAIRE_FINDING__QUESTIONNAIRE_FINDINGQUESTIONNAIRE_SUB_CATEGORY_ASSOCIATIONQUESTIONNAIRE_SUB_CATEGORY_CODE,
+             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "QuestionnaireFindingquestionnaireSubCategoryAssociationquestionnaireSubCategoryCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(questionnaireFinding, context) }),
+             new Object [] { questionnaireFinding }));
+      }
+       
+      return false;
+    }
+    return true;
+  }
+
+  /**
+   * The cached OCL expression body for the '{@link #validateQuestionnaireFindingquestionnaireSubCategoryAssociationquestionnaireSubCategoryMoodCode(QuestionnaireFinding, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Questionnaire Findingquestionnaire Sub Category Associationquestionnaire Sub Category Mood Code</em>}' operation.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #validateQuestionnaireFindingquestionnaireSubCategoryAssociationquestionnaireSubCategoryMoodCode(QuestionnaireFinding, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+   * @generated
+   * @ordered
+   */
+  protected static final String VALIDATE_QUESTIONNAIRE_FINDINGQUESTIONNAIRE_SUB_CATEGORY_ASSOCIATIONQUESTIONNAIRE_SUB_CATEGORY_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entryRelationship->excluding(null).observation->excluding(null)->reject(moodCode=vocab::x_ActMoodDocumentObservation::EVN)";
+
+  /**
+   * The cached OCL invariant for the '{@link #validateQuestionnaireFindingquestionnaireSubCategoryAssociationquestionnaireSubCategoryMoodCode(QuestionnaireFinding, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Questionnaire Findingquestionnaire Sub Category Associationquestionnaire Sub Category Mood Code</em>}' invariant operation.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #validateQuestionnaireFindingquestionnaireSubCategoryAssociationquestionnaireSubCategoryMoodCode(QuestionnaireFinding, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+   * @generated
+   * @ordered
+   */
+  
+  protected static Constraint VALIDATE_QUESTIONNAIRE_FINDINGQUESTIONNAIRE_SUB_CATEGORY_ASSOCIATIONQUESTIONNAIRE_SUB_CATEGORY_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * <!-- begin-model-doc -->
+   * @param questionnaireFinding The receiving '<em><b>Questionnaire Finding</b></em>' model object.
+   * @param diagnostics The chain of diagnostics to which problems are to be appended.
+   * @param context The cache of context-specific information.
+   * <!-- end-model-doc -->
+   * @generated
+   */
+  
+  public static  boolean validateQuestionnaireFindingquestionnaireSubCategoryAssociationquestionnaireSubCategoryMoodCode(QuestionnaireFinding questionnaireFinding, DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+  	  
+    if (VALIDATE_QUESTIONNAIRE_FINDINGQUESTIONNAIRE_SUB_CATEGORY_ASSOCIATIONQUESTIONNAIRE_SUB_CATEGORY_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+      OCL.Helper helper = EOCL_ENV.createOCLHelper();
+      helper.setContext(SdtmPackage.Literals.QUESTIONNAIRE_FINDING);
+      try
+      {
+        VALIDATE_QUESTIONNAIRE_FINDINGQUESTIONNAIRE_SUB_CATEGORY_ASSOCIATIONQUESTIONNAIRE_SUB_CATEGORY_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_QUESTIONNAIRE_FINDINGQUESTIONNAIRE_SUB_CATEGORY_ASSOCIATIONQUESTIONNAIRE_SUB_CATEGORY_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+      }
+      catch (ParserException pe)
+      {
+        throw new UnsupportedOperationException(pe.getLocalizedMessage());
+      }
+    }
+    if (!EOCL_ENV.createQuery(VALIDATE_QUESTIONNAIRE_FINDINGQUESTIONNAIRE_SUB_CATEGORY_ASSOCIATIONQUESTIONNAIRE_SUB_CATEGORY_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(questionnaireFinding))
+    {
+      if (diagnostics != null)
+      {
+        diagnostics.add
+          (new BasicDiagnostic
+            (Diagnostic.ERROR,
+             SdtmValidator.DIAGNOSTIC_SOURCE,
+             SdtmValidator.QUESTIONNAIRE_FINDING__QUESTIONNAIRE_FINDINGQUESTIONNAIRE_SUB_CATEGORY_ASSOCIATIONQUESTIONNAIRE_SUB_CATEGORY_MOOD_CODE,
+             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "QuestionnaireFindingquestionnaireSubCategoryAssociationquestionnaireSubCategoryMoodCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(questionnaireFinding, context) }),
+             new Object [] { questionnaireFinding }));
+      }
+       
+      return false;
+    }
+    return true;
+  }
+
+  /**
+   * The cached OCL expression body for the '{@link #validateQuestionnaireFindingquestionnaireSubCategoryAssociationquestionnaireSubCategoryValue(QuestionnaireFinding, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Questionnaire Findingquestionnaire Sub Category Associationquestionnaire Sub Category Value</em>}' operation.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #validateQuestionnaireFindingquestionnaireSubCategoryAssociationquestionnaireSubCategoryValue(QuestionnaireFinding, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+   * @generated
+   * @ordered
+   */
+  protected static final String VALIDATE_QUESTIONNAIRE_FINDINGQUESTIONNAIRE_SUB_CATEGORY_ASSOCIATIONQUESTIONNAIRE_SUB_CATEGORY_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entryRelationship->excluding(null).observation->excluding(null)->reject((value->isEmpty() or value->exists(element | element.isNullFlavorUndefined())) implies (value->size() = 1 and value->forAll(element | element.oclIsTypeOf(datatypes::CE))))";
+
+  /**
+   * The cached OCL invariant for the '{@link #validateQuestionnaireFindingquestionnaireSubCategoryAssociationquestionnaireSubCategoryValue(QuestionnaireFinding, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Questionnaire Findingquestionnaire Sub Category Associationquestionnaire Sub Category Value</em>}' invariant operation.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #validateQuestionnaireFindingquestionnaireSubCategoryAssociationquestionnaireSubCategoryValue(QuestionnaireFinding, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+   * @generated
+   * @ordered
+   */
+  
+  protected static Constraint VALIDATE_QUESTIONNAIRE_FINDINGQUESTIONNAIRE_SUB_CATEGORY_ASSOCIATIONQUESTIONNAIRE_SUB_CATEGORY_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * <!-- begin-model-doc -->
+   * @param questionnaireFinding The receiving '<em><b>Questionnaire Finding</b></em>' model object.
+   * @param diagnostics The chain of diagnostics to which problems are to be appended.
+   * @param context The cache of context-specific information.
+   * <!-- end-model-doc -->
+   * @generated
+   */
+  
+  public static  boolean validateQuestionnaireFindingquestionnaireSubCategoryAssociationquestionnaireSubCategoryValue(QuestionnaireFinding questionnaireFinding, DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+  	  
+    if (VALIDATE_QUESTIONNAIRE_FINDINGQUESTIONNAIRE_SUB_CATEGORY_ASSOCIATIONQUESTIONNAIRE_SUB_CATEGORY_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+      OCL.Helper helper = EOCL_ENV.createOCLHelper();
+      helper.setContext(SdtmPackage.Literals.QUESTIONNAIRE_FINDING);
+      try
+      {
+        VALIDATE_QUESTIONNAIRE_FINDINGQUESTIONNAIRE_SUB_CATEGORY_ASSOCIATIONQUESTIONNAIRE_SUB_CATEGORY_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_QUESTIONNAIRE_FINDINGQUESTIONNAIRE_SUB_CATEGORY_ASSOCIATIONQUESTIONNAIRE_SUB_CATEGORY_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+      }
+      catch (ParserException pe)
+      {
+        throw new UnsupportedOperationException(pe.getLocalizedMessage());
+      }
+    }
+    if (!EOCL_ENV.createQuery(VALIDATE_QUESTIONNAIRE_FINDINGQUESTIONNAIRE_SUB_CATEGORY_ASSOCIATIONQUESTIONNAIRE_SUB_CATEGORY_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(questionnaireFinding))
+    {
+      if (diagnostics != null)
+      {
+        diagnostics.add
+          (new BasicDiagnostic
+            (Diagnostic.ERROR,
+             SdtmValidator.DIAGNOSTIC_SOURCE,
+             SdtmValidator.QUESTIONNAIRE_FINDING__QUESTIONNAIRE_FINDINGQUESTIONNAIRE_SUB_CATEGORY_ASSOCIATIONQUESTIONNAIRE_SUB_CATEGORY_VALUE,
+             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "QuestionnaireFindingquestionnaireSubCategoryAssociationquestionnaireSubCategoryValue", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(questionnaireFinding, context) }),
+             new Object [] { questionnaireFinding }));
+      }
+       
       return false;
     }
     return true;
@@ -1213,7 +1765,6 @@ public class QuestionnaireFindingOperations extends ClinicalStatementOperations
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.entryRelationship->excluding(null)->reject(typeCode=vocab::x_ActRelationshipEntryRelationship::COMP)
    * @param questionnaireFinding The receiving '<em><b>Questionnaire Finding</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -1223,6 +1774,7 @@ public class QuestionnaireFindingOperations extends ClinicalStatementOperations
   
   public static  boolean validateQuestionnaireFindingquestionnaireSubCategoryAssociationTypeCode(QuestionnaireFinding questionnaireFinding, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
+  	  
     if (VALIDATE_QUESTIONNAIRE_FINDINGQUESTIONNAIRE_SUB_CATEGORY_ASSOCIATION_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(SdtmPackage.Literals.QUESTIONNAIRE_FINDING);
@@ -1247,6 +1799,73 @@ public class QuestionnaireFindingOperations extends ClinicalStatementOperations
              org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "QuestionnaireFindingquestionnaireSubCategoryAssociationTypeCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(questionnaireFinding, context) }),
              new Object [] { questionnaireFinding }));
       }
+       
+      return false;
+    }
+    return true;
+  }
+
+  /**
+   * The cached OCL expression body for the '{@link #validateQuestionnaireFindingquestionnaireSubCategoryAssociationQuestionnaireSubCategory(QuestionnaireFinding, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Questionnaire Findingquestionnaire Sub Category Association Questionnaire Sub Category</em>}' operation.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #validateQuestionnaireFindingquestionnaireSubCategoryAssociationQuestionnaireSubCategory(QuestionnaireFinding, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+   * @generated
+   * @ordered
+   */
+  protected static final String VALIDATE_QUESTIONNAIRE_FINDINGQUESTIONNAIRE_SUB_CATEGORY_ASSOCIATION_QUESTIONNAIRE_SUB_CATEGORY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entryRelationship->excluding(null)->reject(observation->one(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(cda::Observation)))";
+
+  /**
+   * The cached OCL invariant for the '{@link #validateQuestionnaireFindingquestionnaireSubCategoryAssociationQuestionnaireSubCategory(QuestionnaireFinding, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Questionnaire Findingquestionnaire Sub Category Association Questionnaire Sub Category</em>}' invariant operation.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #validateQuestionnaireFindingquestionnaireSubCategoryAssociationQuestionnaireSubCategory(QuestionnaireFinding, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+   * @generated
+   * @ordered
+   */
+  
+  protected static Constraint VALIDATE_QUESTIONNAIRE_FINDINGQUESTIONNAIRE_SUB_CATEGORY_ASSOCIATION_QUESTIONNAIRE_SUB_CATEGORY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * <!-- begin-model-doc -->
+   * @param questionnaireFinding The receiving '<em><b>Questionnaire Finding</b></em>' model object.
+   * @param diagnostics The chain of diagnostics to which problems are to be appended.
+   * @param context The cache of context-specific information.
+   * <!-- end-model-doc -->
+   * @generated
+   */
+  
+  public static  boolean validateQuestionnaireFindingquestionnaireSubCategoryAssociationQuestionnaireSubCategory(QuestionnaireFinding questionnaireFinding, DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+  	  
+    if (VALIDATE_QUESTIONNAIRE_FINDINGQUESTIONNAIRE_SUB_CATEGORY_ASSOCIATION_QUESTIONNAIRE_SUB_CATEGORY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+      OCL.Helper helper = EOCL_ENV.createOCLHelper();
+      helper.setContext(SdtmPackage.Literals.QUESTIONNAIRE_FINDING);
+      try
+      {
+        VALIDATE_QUESTIONNAIRE_FINDINGQUESTIONNAIRE_SUB_CATEGORY_ASSOCIATION_QUESTIONNAIRE_SUB_CATEGORY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_QUESTIONNAIRE_FINDINGQUESTIONNAIRE_SUB_CATEGORY_ASSOCIATION_QUESTIONNAIRE_SUB_CATEGORY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+      }
+      catch (ParserException pe)
+      {
+        throw new UnsupportedOperationException(pe.getLocalizedMessage());
+      }
+    }
+    if (!EOCL_ENV.createQuery(VALIDATE_QUESTIONNAIRE_FINDINGQUESTIONNAIRE_SUB_CATEGORY_ASSOCIATION_QUESTIONNAIRE_SUB_CATEGORY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(questionnaireFinding))
+    {
+      if (diagnostics != null)
+      {
+        diagnostics.add
+          (new BasicDiagnostic
+            (Diagnostic.ERROR,
+             SdtmValidator.DIAGNOSTIC_SOURCE,
+             SdtmValidator.QUESTIONNAIRE_FINDING__QUESTIONNAIRE_FINDINGQUESTIONNAIRE_SUB_CATEGORY_ASSOCIATION_QUESTIONNAIRE_SUB_CATEGORY,
+             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "QuestionnaireFindingquestionnaireSubCategoryAssociationQuestionnaireSubCategory", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(questionnaireFinding, context) }),
+             new Object [] { questionnaireFinding }));
+      }
+       
       return false;
     }
     return true;
@@ -1260,7 +1879,7 @@ public class QuestionnaireFindingOperations extends ClinicalStatementOperations
    * @generated
    * @ordered
    */
-  protected static final String GET_GROUP_IDENTIFIER__EOCL_EXP = "self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(sdtm::Group Identifier))->asSequence()->first().oclAsType(sdtm::Group Identifier)";
+  protected static final String GET_GROUP_IDENTIFIER__EOCL_EXP = "self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(sdtm::Group Identifier))->asSequence()->any(true).oclAsType(sdtm::Group Identifier)";
 
   /**
    * The cached OCL query for the '{@link #getGroupIdentifier(QuestionnaireFinding) <em>Get Group Identifier</em>}' query operation.
@@ -1275,10 +1894,6 @@ public class QuestionnaireFindingOperations extends ClinicalStatementOperations
   /**
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * <!-- begin-model-doc -->
-   * self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(sdtm::Group Identifier))->asSequence()->first().oclAsType(sdtm::Group Identifier)
-   * @param questionnaireFinding The receiving '<em><b>Questionnaire Finding</b></em>' model object.
-   * <!-- end-model-doc -->
    * @generated
    */
   
@@ -1287,7 +1902,7 @@ public class QuestionnaireFindingOperations extends ClinicalStatementOperations
     if (GET_GROUP_IDENTIFIER__EOCL_QRY == null)
     {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
-      helper.setOperationContext(SdtmPackage.Literals.QUESTIONNAIRE_FINDING, SdtmPackage.Literals.QUESTIONNAIRE_FINDING.getEAllOperations().get(67));
+      helper.setOperationContext(SdtmPackage.Literals.QUESTIONNAIRE_FINDING, SdtmPackage.Literals.QUESTIONNAIRE_FINDING.getEAllOperations().get(78));
       try
       {
         GET_GROUP_IDENTIFIER__EOCL_QRY = helper.createQuery(GET_GROUP_IDENTIFIER__EOCL_EXP);
@@ -1309,7 +1924,7 @@ public class QuestionnaireFindingOperations extends ClinicalStatementOperations
    * @generated
    * @ordered
    */
-  protected static final String GET_NON_PERFORMANCE_REASON__EOCL_EXP = "self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(sdtm::Non Performance Reason))->asSequence()->first().oclAsType(sdtm::Non Performance Reason)";
+  protected static final String GET_NON_PERFORMANCE_REASON__EOCL_EXP = "self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(sdtm::Non Performance Reason))->asSequence()->any(true).oclAsType(sdtm::Non Performance Reason)";
 
   /**
    * The cached OCL query for the '{@link #getNonPerformanceReason(QuestionnaireFinding) <em>Get Non Performance Reason</em>}' query operation.
@@ -1324,10 +1939,6 @@ public class QuestionnaireFindingOperations extends ClinicalStatementOperations
   /**
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * <!-- begin-model-doc -->
-   * self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(sdtm::Non Performance Reason))->asSequence()->first().oclAsType(sdtm::Non Performance Reason)
-   * @param questionnaireFinding The receiving '<em><b>Questionnaire Finding</b></em>' model object.
-   * <!-- end-model-doc -->
    * @generated
    */
   
@@ -1336,7 +1947,7 @@ public class QuestionnaireFindingOperations extends ClinicalStatementOperations
     if (GET_NON_PERFORMANCE_REASON__EOCL_QRY == null)
     {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
-      helper.setOperationContext(SdtmPackage.Literals.QUESTIONNAIRE_FINDING, SdtmPackage.Literals.QUESTIONNAIRE_FINDING.getEAllOperations().get(68));
+      helper.setOperationContext(SdtmPackage.Literals.QUESTIONNAIRE_FINDING, SdtmPackage.Literals.QUESTIONNAIRE_FINDING.getEAllOperations().get(79));
       try
       {
         GET_NON_PERFORMANCE_REASON__EOCL_QRY = helper.createQuery(GET_NON_PERFORMANCE_REASON__EOCL_EXP);
@@ -1351,104 +1962,6 @@ public class QuestionnaireFindingOperations extends ClinicalStatementOperations
   }
 
   /**
-   * The cached OCL expression body for the '{@link #getBaselineIndicator(QuestionnaireFinding) <em>Get Baseline Indicator</em>}' operation.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @see #getBaselineIndicator(QuestionnaireFinding)
-   * @generated
-   * @ordered
-   */
-  protected static final String GET_BASELINE_INDICATOR__EOCL_EXP = "self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(sdtm::Baseline Indicator))->asSequence()->first().oclAsType(sdtm::Baseline Indicator)";
-
-  /**
-   * The cached OCL query for the '{@link #getBaselineIndicator(QuestionnaireFinding) <em>Get Baseline Indicator</em>}' query operation.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @see #getBaselineIndicator(QuestionnaireFinding)
-   * @generated
-   * @ordered
-   */
-  protected static OCLExpression<EClassifier> GET_BASELINE_INDICATOR__EOCL_QRY;
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * <!-- begin-model-doc -->
-   * self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(sdtm::Baseline Indicator))->asSequence()->first().oclAsType(sdtm::Baseline Indicator)
-   * @param questionnaireFinding The receiving '<em><b>Questionnaire Finding</b></em>' model object.
-   * <!-- end-model-doc -->
-   * @generated
-   */
-  
-  public static  BaselineIndicator getBaselineIndicator(QuestionnaireFinding questionnaireFinding)
-  {
-    if (GET_BASELINE_INDICATOR__EOCL_QRY == null)
-    {
-      OCL.Helper helper = EOCL_ENV.createOCLHelper();
-      helper.setOperationContext(SdtmPackage.Literals.QUESTIONNAIRE_FINDING, SdtmPackage.Literals.QUESTIONNAIRE_FINDING.getEAllOperations().get(69));
-      try
-      {
-        GET_BASELINE_INDICATOR__EOCL_QRY = helper.createQuery(GET_BASELINE_INDICATOR__EOCL_EXP);
-      }
-      catch (ParserException pe)
-      {
-        throw new UnsupportedOperationException(pe.getLocalizedMessage());
-      }
-    }
-    OCL.Query query = EOCL_ENV.createQuery(GET_BASELINE_INDICATOR__EOCL_QRY);
-    return (BaselineIndicator) query.evaluate(questionnaireFinding);
-  }
-
-  /**
-   * The cached OCL expression body for the '{@link #getDerivedDataIndicator(QuestionnaireFinding) <em>Get Derived Data Indicator</em>}' operation.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @see #getDerivedDataIndicator(QuestionnaireFinding)
-   * @generated
-   * @ordered
-   */
-  protected static final String GET_DERIVED_DATA_INDICATOR__EOCL_EXP = "self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(sdtm::Derived Data Indicator))->asSequence()->first().oclAsType(sdtm::Derived Data Indicator)";
-
-  /**
-   * The cached OCL query for the '{@link #getDerivedDataIndicator(QuestionnaireFinding) <em>Get Derived Data Indicator</em>}' query operation.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @see #getDerivedDataIndicator(QuestionnaireFinding)
-   * @generated
-   * @ordered
-   */
-  protected static OCLExpression<EClassifier> GET_DERIVED_DATA_INDICATOR__EOCL_QRY;
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * <!-- begin-model-doc -->
-   * self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(sdtm::Derived Data Indicator))->asSequence()->first().oclAsType(sdtm::Derived Data Indicator)
-   * @param questionnaireFinding The receiving '<em><b>Questionnaire Finding</b></em>' model object.
-   * <!-- end-model-doc -->
-   * @generated
-   */
-  
-  public static  DerivedDataIndicator getDerivedDataIndicator(QuestionnaireFinding questionnaireFinding)
-  {
-    if (GET_DERIVED_DATA_INDICATOR__EOCL_QRY == null)
-    {
-      OCL.Helper helper = EOCL_ENV.createOCLHelper();
-      helper.setOperationContext(SdtmPackage.Literals.QUESTIONNAIRE_FINDING, SdtmPackage.Literals.QUESTIONNAIRE_FINDING.getEAllOperations().get(70));
-      try
-      {
-        GET_DERIVED_DATA_INDICATOR__EOCL_QRY = helper.createQuery(GET_DERIVED_DATA_INDICATOR__EOCL_EXP);
-      }
-      catch (ParserException pe)
-      {
-        throw new UnsupportedOperationException(pe.getLocalizedMessage());
-      }
-    }
-    OCL.Query query = EOCL_ENV.createQuery(GET_DERIVED_DATA_INDICATOR__EOCL_QRY);
-    return (DerivedDataIndicator) query.evaluate(questionnaireFinding);
-  }
-
-  /**
    * The cached OCL expression body for the '{@link #getTimingReference(QuestionnaireFinding) <em>Get Timing Reference</em>}' operation.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
@@ -1456,7 +1969,7 @@ public class QuestionnaireFindingOperations extends ClinicalStatementOperations
    * @generated
    * @ordered
    */
-  protected static final String GET_TIMING_REFERENCE__EOCL_EXP = "self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(sdtm::Timing Reference))->asSequence()->first().oclAsType(sdtm::Timing Reference)";
+  protected static final String GET_TIMING_REFERENCE__EOCL_EXP = "self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(sdtm::Timing Reference))->asSequence()->any(true).oclAsType(sdtm::Timing Reference)";
 
   /**
    * The cached OCL query for the '{@link #getTimingReference(QuestionnaireFinding) <em>Get Timing Reference</em>}' query operation.
@@ -1471,10 +1984,6 @@ public class QuestionnaireFindingOperations extends ClinicalStatementOperations
   /**
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * <!-- begin-model-doc -->
-   * self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(sdtm::Timing Reference))->asSequence()->first().oclAsType(sdtm::Timing Reference)
-   * @param questionnaireFinding The receiving '<em><b>Questionnaire Finding</b></em>' model object.
-   * <!-- end-model-doc -->
    * @generated
    */
   
@@ -1483,7 +1992,7 @@ public class QuestionnaireFindingOperations extends ClinicalStatementOperations
     if (GET_TIMING_REFERENCE__EOCL_QRY == null)
     {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
-      helper.setOperationContext(SdtmPackage.Literals.QUESTIONNAIRE_FINDING, SdtmPackage.Literals.QUESTIONNAIRE_FINDING.getEAllOperations().get(71));
+      helper.setOperationContext(SdtmPackage.Literals.QUESTIONNAIRE_FINDING, SdtmPackage.Literals.QUESTIONNAIRE_FINDING.getEAllOperations().get(80));
       try
       {
         GET_TIMING_REFERENCE__EOCL_QRY = helper.createQuery(GET_TIMING_REFERENCE__EOCL_EXP);
@@ -1505,7 +2014,7 @@ public class QuestionnaireFindingOperations extends ClinicalStatementOperations
    * @generated
    * @ordered
    */
-  protected static final String GET_DATA_COLLECTION__EOCL_EXP = "self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(sdtm::Data Collection))->asSequence()->first().oclAsType(sdtm::Data Collection)";
+  protected static final String GET_DATA_COLLECTION__EOCL_EXP = "self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(sdtm::Data Collection))->asSequence()->any(true).oclAsType(sdtm::Data Collection)";
 
   /**
    * The cached OCL query for the '{@link #getDataCollection(QuestionnaireFinding) <em>Get Data Collection</em>}' query operation.
@@ -1520,10 +2029,6 @@ public class QuestionnaireFindingOperations extends ClinicalStatementOperations
   /**
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * <!-- begin-model-doc -->
-   * self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(sdtm::Data Collection))->asSequence()->first().oclAsType(sdtm::Data Collection)
-   * @param questionnaireFinding The receiving '<em><b>Questionnaire Finding</b></em>' model object.
-   * <!-- end-model-doc -->
    * @generated
    */
   
@@ -1532,7 +2037,7 @@ public class QuestionnaireFindingOperations extends ClinicalStatementOperations
     if (GET_DATA_COLLECTION__EOCL_QRY == null)
     {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
-      helper.setOperationContext(SdtmPackage.Literals.QUESTIONNAIRE_FINDING, SdtmPackage.Literals.QUESTIONNAIRE_FINDING.getEAllOperations().get(72));
+      helper.setOperationContext(SdtmPackage.Literals.QUESTIONNAIRE_FINDING, SdtmPackage.Literals.QUESTIONNAIRE_FINDING.getEAllOperations().get(81));
       try
       {
         GET_DATA_COLLECTION__EOCL_QRY = helper.createQuery(GET_DATA_COLLECTION__EOCL_EXP);

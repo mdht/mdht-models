@@ -10,6 +10,11 @@
  *******************************************************************************/
 package org.openhealthtools.mdht.uml.cda.phcr.chlamydiatrachomatis;
 
+import java.lang.Iterable;
+import java.util.Map;
+import org.eclipse.emf.common.util.DiagnosticChain;
+import org.eclipse.emf.ecore.EObject;
+import org.openhealthtools.mdht.emf.runtime.util.Initializer;
 import org.openhealthtools.mdht.uml.cda.phcr.ResultOrganizer;
 
 /**
@@ -19,14 +24,33 @@ import org.openhealthtools.mdht.uml.cda.phcr.ResultOrganizer;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.phcr.chlamydiatrachomatis.ChlamydiatrachomatisPackage#getchlamydiatrachomatisResultOrganizer()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation templateId.root='2.16.840.1.113883.10.20.15.3.114' constraints.validation.error='chlamydiatrachomatisResultOrganizerTemplateId'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='chlamydiatrachomatisResultOrganizerTemplateId chlamydiatrachomatisResultOrganizerCode' templateId.root='2.16.840.1.113883.10.20.15.3.114'"
  * @generated
  */
 public interface chlamydiatrachomatisResultOrganizer extends ResultOrganizer {
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * <!-- begin-model-doc -->
+   * @param diagnostics The chain of diagnostics to which problems are to be appended.
+   * @param context The cache of context-specific information.
+   * <!-- end-model-doc -->
+   * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined())'"
+   * @generated
+   */
+  boolean validateChlamydiatrachomatisResultOrganizerCode(DiagnosticChain diagnostics, Map<Object, Object> context);
+
+  /**
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public chlamydiatrachomatisResultOrganizer init();
+
+  /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    public chlamydiatrachomatisResultOrganizer init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // chlamydiatrachomatisResultOrganizer

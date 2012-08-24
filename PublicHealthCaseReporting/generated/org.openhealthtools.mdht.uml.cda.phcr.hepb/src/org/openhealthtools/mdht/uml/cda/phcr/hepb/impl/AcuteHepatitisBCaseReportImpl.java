@@ -10,10 +10,13 @@
  *******************************************************************************/
 package org.openhealthtools.mdht.uml.cda.phcr.hepb.impl;
 
+import java.lang.Iterable;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.ecore.EClass;
+import org.eclipse.emf.ecore.EObject;
+import org.openhealthtools.mdht.emf.runtime.util.Initializer;
 import org.openhealthtools.mdht.uml.cda.phcr.PhcrEncountersSection;
 import org.openhealthtools.mdht.uml.cda.phcr.hepb.AcuteHepatitisBCaseReport;
 import org.openhealthtools.mdht.uml.cda.phcr.hepb.AcuteHepatitisBImmunizationSection;
@@ -37,140 +40,149 @@ import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
  */
 public class AcuteHepatitisBCaseReportImpl extends PublicHealthCaseReportImpl implements AcuteHepatitisBCaseReport {
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	protected AcuteHepatitisBCaseReportImpl() {
-		super();
-	}
+    super();
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	@Override
 	protected EClass eStaticClass() {
-		return HepbPackage.Literals.ACUTE_HEPATITIS_BCASE_REPORT;
-	}
+    return HepbPackage.Literals.ACUTE_HEPATITIS_BCASE_REPORT;
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateAcuteHepatitisBCaseReportTitle(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return AcuteHepatitisBCaseReportOperations.validateAcuteHepatitisBCaseReportTitle(this, diagnostics, context);
-	}
+    return AcuteHepatitisBCaseReportOperations.validateAcuteHepatitisBCaseReportTitle(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateAcuteHepatitisBCaseReportAcuteHepatitisBSocialHistorySection(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return AcuteHepatitisBCaseReportOperations.validateAcuteHepatitisBCaseReportAcuteHepatitisBSocialHistorySection(this, diagnostics, context);
-	}
+    return AcuteHepatitisBCaseReportOperations.validateAcuteHepatitisBCaseReportAcuteHepatitisBSocialHistorySection(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateAcuteHepatitisBCaseReportAcuteHepatitisBImmunizationSection(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return AcuteHepatitisBCaseReportOperations.validateAcuteHepatitisBCaseReportAcuteHepatitisBImmunizationSection(this, diagnostics, context);
-	}
+    return AcuteHepatitisBCaseReportOperations.validateAcuteHepatitisBCaseReportAcuteHepatitisBImmunizationSection(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateAcuteHepatitisBCaseReportAcuteHepatitisBPHCRClinicalInformationSection(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return AcuteHepatitisBCaseReportOperations.validateAcuteHepatitisBCaseReportAcuteHepatitisBPHCRClinicalInformationSection(this, diagnostics, context);
-	}
+    return AcuteHepatitisBCaseReportOperations.validateAcuteHepatitisBCaseReportAcuteHepatitisBPHCRClinicalInformationSection(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateAcuteHepatitisBCaseReportAcuteHepatitisBPHCRTreatmentInformationSection(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return AcuteHepatitisBCaseReportOperations.validateAcuteHepatitisBCaseReportAcuteHepatitisBPHCRTreatmentInformationSection(this, diagnostics, context);
-	}
+    return AcuteHepatitisBCaseReportOperations.validateAcuteHepatitisBCaseReportAcuteHepatitisBPHCRTreatmentInformationSection(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateAcuteHepatitisBCaseReportAcuteHepatitisBPHCRRelevantDiagnosticTestsAndOrLaboratoryDataSection(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return AcuteHepatitisBCaseReportOperations.validateAcuteHepatitisBCaseReportAcuteHepatitisBPHCRRelevantDiagnosticTestsAndOrLaboratoryDataSection(this, diagnostics, context);
-	}
+    return AcuteHepatitisBCaseReportOperations.validateAcuteHepatitisBCaseReportAcuteHepatitisBPHCRRelevantDiagnosticTestsAndOrLaboratoryDataSection(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public AcuteHepatitisBSocialHistorySection getAcuteHepatitisBSocialHistorySection() {
-		return AcuteHepatitisBCaseReportOperations.getAcuteHepatitisBSocialHistorySection(this);
-	}
+    return AcuteHepatitisBCaseReportOperations.getAcuteHepatitisBSocialHistorySection(this);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public AcuteHepatitisBImmunizationSection getAcuteHepatitisBImmunizationSection() {
-		return AcuteHepatitisBCaseReportOperations.getAcuteHepatitisBImmunizationSection(this);
-	}
+    return AcuteHepatitisBCaseReportOperations.getAcuteHepatitisBImmunizationSection(this);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public AcuteHepatitisBPHCRClinicalInformationSection getAcuteHepatitisBPHCRClinicalInformationSection() {
-		return AcuteHepatitisBCaseReportOperations.getAcuteHepatitisBPHCRClinicalInformationSection(this);
-	}
+    return AcuteHepatitisBCaseReportOperations.getAcuteHepatitisBPHCRClinicalInformationSection(this);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public AcuteHepatitisBPHCRTreatmentInformationSection getAcuteHepatitisBPHCRTreatmentInformationSection() {
-		return AcuteHepatitisBCaseReportOperations.getAcuteHepatitisBPHCRTreatmentInformationSection(this);
-	}
+    return AcuteHepatitisBCaseReportOperations.getAcuteHepatitisBPHCRTreatmentInformationSection(this);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public AcuteHepatitisBPHCRRelevantDiagnosticTestsAndOrLaboratoryDataSection getAcuteHepatitisBPHCRRelevantDiagnosticTestsAndOrLaboratoryDataSection() {
-		return AcuteHepatitisBCaseReportOperations.getAcuteHepatitisBPHCRRelevantDiagnosticTestsAndOrLaboratoryDataSection(this);
-	}
+    return AcuteHepatitisBCaseReportOperations.getAcuteHepatitisBPHCRRelevantDiagnosticTestsAndOrLaboratoryDataSection(this);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	@Override
 	public boolean validatePublicHealthCaseReportTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return AcuteHepatitisBCaseReportOperations.validatePublicHealthCaseReportTemplateId(this, diagnostics, context);
-	}
+    return AcuteHepatitisBCaseReportOperations.validatePublicHealthCaseReportTemplateId(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public AcuteHepatitisBCaseReport init() {
-    	CDAUtil.init(this);
-    	return this;
-	}
+      return Initializer.Util.init(this);
+  }
+
+  /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    public AcuteHepatitisBCaseReport init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
 } //AcuteHepatitisBCaseReportImpl

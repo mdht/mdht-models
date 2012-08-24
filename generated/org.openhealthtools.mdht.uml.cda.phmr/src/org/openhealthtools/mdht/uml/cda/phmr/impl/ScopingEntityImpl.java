@@ -22,12 +22,15 @@
  */
 package org.openhealthtools.mdht.uml.cda.phmr.impl;
 
+import java.lang.Iterable;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
 
 import org.eclipse.emf.ecore.EClass;
 
+import org.eclipse.emf.ecore.EObject;
+import org.openhealthtools.mdht.emf.runtime.util.Initializer;
 import org.openhealthtools.mdht.uml.cda.impl.EntityImpl;
 
 import org.openhealthtools.mdht.uml.cda.phmr.PhmrPackage;
@@ -48,49 +51,58 @@ import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
  */
 public class ScopingEntityImpl extends EntityImpl implements ScopingEntity {
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	protected ScopingEntityImpl() {
-		super();
-	}
+    super();
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	@Override
 	protected EClass eStaticClass() {
-		return PhmrPackage.Literals.SCOPING_ENTITY;
-	}
+    return PhmrPackage.Literals.SCOPING_ENTITY;
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateScopingEntityTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ScopingEntityOperations.validateScopingEntityTemplateId(this, diagnostics, context);
-	}
+    return ScopingEntityOperations.validateScopingEntityTemplateId(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateScopingEntityDesc(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ScopingEntityOperations.validateScopingEntityDesc(this, diagnostics, context);
-	}
+    return ScopingEntityOperations.validateScopingEntityDesc(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public ScopingEntity init() {
-    	CDAUtil.init(this);
-    	return this;
-	}
+      return Initializer.Util.init(this);
+  }
+
+  /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    public ScopingEntity init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
 } //ScopingEntityImpl

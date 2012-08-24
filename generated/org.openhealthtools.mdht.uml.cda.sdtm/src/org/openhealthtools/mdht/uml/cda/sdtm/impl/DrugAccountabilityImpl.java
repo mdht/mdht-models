@@ -6,12 +6,15 @@
  */
 package org.openhealthtools.mdht.uml.cda.sdtm.impl;
 
+import java.lang.Iterable;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
 
 import org.eclipse.emf.ecore.EClass;
 
+import org.eclipse.emf.ecore.EObject;
+import org.openhealthtools.mdht.emf.runtime.util.Initializer;
 import org.openhealthtools.mdht.uml.cda.impl.ObservationImpl;
 
 import org.openhealthtools.mdht.uml.cda.sdtm.DrugAccountability;
@@ -191,6 +194,46 @@ public class DrugAccountabilityImpl extends ObservationImpl implements DrugAccou
    * <!-- end-user-doc -->
    * @generated
    */
+  public boolean validateDrugAccountabilitydrugAccountabilityCategoryAssociationdrugAccountabilityCategoryClassCode(DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+    return DrugAccountabilityOperations.validateDrugAccountabilitydrugAccountabilityCategoryAssociationdrugAccountabilityCategoryClassCode(this, diagnostics, context);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public boolean validateDrugAccountabilitydrugAccountabilityCategoryAssociationdrugAccountabilityCategoryCode(DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+    return DrugAccountabilityOperations.validateDrugAccountabilitydrugAccountabilityCategoryAssociationdrugAccountabilityCategoryCode(this, diagnostics, context);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public boolean validateDrugAccountabilitydrugAccountabilityCategoryAssociationdrugAccountabilityCategoryMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+    return DrugAccountabilityOperations.validateDrugAccountabilitydrugAccountabilityCategoryAssociationdrugAccountabilityCategoryMoodCode(this, diagnostics, context);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public boolean validateDrugAccountabilitydrugAccountabilityCategoryAssociationdrugAccountabilityCategoryValue(DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+    return DrugAccountabilityOperations.validateDrugAccountabilitydrugAccountabilityCategoryAssociationdrugAccountabilityCategoryValue(this, diagnostics, context);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
   public boolean validateDrugAccountabilitydrugAccountabilityCategoryAssociationTypeCode(DiagnosticChain diagnostics, Map<Object, Object> context)
   {
     return DrugAccountabilityOperations.validateDrugAccountabilitydrugAccountabilityCategoryAssociationTypeCode(this, diagnostics, context);
@@ -201,9 +244,59 @@ public class DrugAccountabilityImpl extends ObservationImpl implements DrugAccou
    * <!-- end-user-doc -->
    * @generated
    */
-  public boolean validateDrugAccountabilitydrugAccountabilitySubCategoryAssociationTypeCode(DiagnosticChain diagnostics, Map<Object, Object> context)
+  public boolean validateDrugAccountabilitydrugAccountabilityCategoryAssociationDrugAccountabilityCategory(DiagnosticChain diagnostics, Map<Object, Object> context)
   {
-    return DrugAccountabilityOperations.validateDrugAccountabilitydrugAccountabilitySubCategoryAssociationTypeCode(this, diagnostics, context);
+    return DrugAccountabilityOperations.validateDrugAccountabilitydrugAccountabilityCategoryAssociationDrugAccountabilityCategory(this, diagnostics, context);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public boolean validateDrugAccountabilitydrugAccountabilitySubCategoryAssociationdrugAccountabilitySubCategoryClassCode(DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+    return DrugAccountabilityOperations.validateDrugAccountabilitydrugAccountabilitySubCategoryAssociationdrugAccountabilitySubCategoryClassCode(this, diagnostics, context);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public boolean validateDrugAccountabilitydrugAccountabilitySubCategoryAssociationdrugAccountabilitySubCategoryCode(DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+    return DrugAccountabilityOperations.validateDrugAccountabilitydrugAccountabilitySubCategoryAssociationdrugAccountabilitySubCategoryCode(this, diagnostics, context);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public boolean validateDrugAccountabilitydrugAccountabilitySubCategoryAssociationdrugAccountabilitySubCategoryMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+    return DrugAccountabilityOperations.validateDrugAccountabilitydrugAccountabilitySubCategoryAssociationdrugAccountabilitySubCategoryMoodCode(this, diagnostics, context);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public boolean validateDrugAccountabilitydrugAccountabilitySubCategoryAssociationdrugAccountabilitySubCategoryValue(DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+    return DrugAccountabilityOperations.validateDrugAccountabilitydrugAccountabilitySubCategoryAssociationdrugAccountabilitySubCategoryValue(this, diagnostics, context);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public boolean validateDrugAccountabilitydrugAccountabilitySubCategoryAssociationDrugAccountabilitySubCategory(DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+    return DrugAccountabilityOperations.validateDrugAccountabilitydrugAccountabilitySubCategoryAssociationDrugAccountabilitySubCategory(this, diagnostics, context);
   }
 
   /**
@@ -242,7 +335,16 @@ public class DrugAccountabilityImpl extends ObservationImpl implements DrugAccou
    * @generated
    */
   public DrugAccountability init() {
-    	CDAUtil.init(this);
-    	return this;
+      return Initializer.Util.init(this);
   }
+
+  /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    public DrugAccountability init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
 } //DrugAccountabilityImpl

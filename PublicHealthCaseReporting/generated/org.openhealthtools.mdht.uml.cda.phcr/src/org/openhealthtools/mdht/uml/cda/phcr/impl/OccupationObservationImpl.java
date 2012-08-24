@@ -10,10 +10,13 @@
  *******************************************************************************/
 package org.openhealthtools.mdht.uml.cda.phcr.impl;
 
+import java.lang.Iterable;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.ecore.EClass;
+import org.eclipse.emf.ecore.EObject;
+import org.openhealthtools.mdht.emf.runtime.util.Initializer;
 import org.openhealthtools.mdht.uml.cda.impl.ObservationImpl;
 import org.openhealthtools.mdht.uml.cda.phcr.OccupationObservation;
 import org.openhealthtools.mdht.uml.cda.phcr.PhcrPackage;
@@ -31,131 +34,140 @@ import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
  */
 public class OccupationObservationImpl extends ObservationImpl implements OccupationObservation {
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	protected OccupationObservationImpl() {
-		super();
-	}
+    super();
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	@Override
 	protected EClass eStaticClass() {
-		return PhcrPackage.Literals.OCCUPATION_OBSERVATION;
-	}
+    return PhcrPackage.Literals.OCCUPATION_OBSERVATION;
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateOccupationObservationTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return OccupationObservationOperations.validateOccupationObservationTemplateId(this, diagnostics, context);
-	}
+    return OccupationObservationOperations.validateOccupationObservationTemplateId(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateOccupationObservationClassCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return OccupationObservationOperations.validateOccupationObservationClassCode(this, diagnostics, context);
-	}
+    return OccupationObservationOperations.validateOccupationObservationClassCode(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateOccupationObservationCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return OccupationObservationOperations.validateOccupationObservationCode(this, diagnostics, context);
-	}
+    return OccupationObservationOperations.validateOccupationObservationCode(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateOccupationObservationText(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return OccupationObservationOperations.validateOccupationObservationText(this, diagnostics, context);
-	}
+    return OccupationObservationOperations.validateOccupationObservationText(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateOccupationObservationMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return OccupationObservationOperations.validateOccupationObservationMoodCode(this, diagnostics, context);
-	}
+    return OccupationObservationOperations.validateOccupationObservationMoodCode(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateOccupationObservationNegationInd(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return OccupationObservationOperations.validateOccupationObservationNegationInd(this, diagnostics, context);
-	}
+    return OccupationObservationOperations.validateOccupationObservationNegationInd(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateOccupationObservationCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return OccupationObservationOperations.validateOccupationObservationCodeP(this, diagnostics, context);
-	}
+    return OccupationObservationOperations.validateOccupationObservationCodeP(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateOccupationObservationStatusCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return OccupationObservationOperations.validateOccupationObservationStatusCode(this, diagnostics, context);
-	}
+    return OccupationObservationOperations.validateOccupationObservationStatusCode(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateOccupationObservationStatusCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return OccupationObservationOperations.validateOccupationObservationStatusCodeP(this, diagnostics, context);
-	}
+    return OccupationObservationOperations.validateOccupationObservationStatusCodeP(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateOccupationObservationEffectiveTime(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return OccupationObservationOperations.validateOccupationObservationEffectiveTime(this, diagnostics, context);
-	}
+    return OccupationObservationOperations.validateOccupationObservationEffectiveTime(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateOccupationObservationValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return OccupationObservationOperations.validateOccupationObservationValue(this, diagnostics, context);
-	}
+    return OccupationObservationOperations.validateOccupationObservationValue(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public OccupationObservation init() {
-    	CDAUtil.init(this);
-    	return this;
-	}
+      return Initializer.Util.init(this);
+  }
+
+  /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    public OccupationObservation init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
 	
 } //OccupationObservationImpl

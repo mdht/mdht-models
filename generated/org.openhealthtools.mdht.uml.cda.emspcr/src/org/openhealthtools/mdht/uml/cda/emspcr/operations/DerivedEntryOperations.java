@@ -77,7 +77,6 @@ public class DerivedEntryOperations extends EntryOperations
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.1133883.17.3.10.1.24')
    * @param derivedEntry The receiving '<em><b>Derived Entry</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -144,7 +143,6 @@ public class DerivedEntryOperations extends EntryOperations
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * isDefined('typeCode') and self.typeCode=vocab::x_ActRelationshipEntry::DRIV
    * @param derivedEntry The receiving '<em><b>Derived Entry</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.

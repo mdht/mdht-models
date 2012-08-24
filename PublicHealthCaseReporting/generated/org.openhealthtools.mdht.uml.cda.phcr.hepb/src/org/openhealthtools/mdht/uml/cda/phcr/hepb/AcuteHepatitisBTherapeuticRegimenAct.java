@@ -10,6 +10,9 @@
  *******************************************************************************/
 package org.openhealthtools.mdht.uml.cda.phcr.hepb;
 
+import java.lang.Iterable;
+import org.eclipse.emf.ecore.EObject;
+import org.openhealthtools.mdht.emf.runtime.util.Initializer;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
@@ -25,14 +28,21 @@ import org.openhealthtools.mdht.uml.cda.phcr.TherapeuticRegimenAct;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.phcr.hepb.HepbPackage#getAcuteHepatitisBTherapeuticRegimenAct()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation templateId.root='2.16.840.1.113883.10.20.15.3.23' constraints.validation.error='AcuteHepatitisBTherapeuticRegimenActTemplateId'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='AcuteHepatitisBTherapeuticRegimenActTemplateId' templateId.root='2.16.840.1.113883.10.20.15.3.23'"
  * @generated
  */
 public interface AcuteHepatitisBTherapeuticRegimenAct extends TherapeuticRegimenAct {
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public AcuteHepatitisBTherapeuticRegimenAct init();
+
+  /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    public AcuteHepatitisBTherapeuticRegimenAct init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // AcuteHepatitisBTherapeuticRegimenAct

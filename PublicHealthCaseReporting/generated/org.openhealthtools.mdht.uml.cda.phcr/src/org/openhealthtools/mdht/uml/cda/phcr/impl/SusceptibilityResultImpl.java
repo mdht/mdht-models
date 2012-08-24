@@ -10,10 +10,13 @@
  *******************************************************************************/
 package org.openhealthtools.mdht.uml.cda.phcr.impl;
 
+import java.lang.Iterable;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.ecore.EClass;
+import org.eclipse.emf.ecore.EObject;
+import org.openhealthtools.mdht.emf.runtime.util.Initializer;
 import org.openhealthtools.mdht.uml.cda.impl.ObservationImpl;
 import org.openhealthtools.mdht.uml.cda.phcr.PhcrPackage;
 import org.openhealthtools.mdht.uml.cda.phcr.SusceptibilityResult;
@@ -31,94 +34,103 @@ import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
  */
 public class SusceptibilityResultImpl extends ObservationImpl implements SusceptibilityResult {
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	protected SusceptibilityResultImpl() {
-		super();
-	}
+    super();
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	@Override
 	protected EClass eStaticClass() {
-		return PhcrPackage.Literals.SUSCEPTIBILITY_RESULT;
-	}
+    return PhcrPackage.Literals.SUSCEPTIBILITY_RESULT;
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateSusceptibilityResultTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return SusceptibilityResultOperations.validateSusceptibilityResultTemplateId(this, diagnostics, context);
-	}
+    return SusceptibilityResultOperations.validateSusceptibilityResultTemplateId(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateSusceptibilityResultClassCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return SusceptibilityResultOperations.validateSusceptibilityResultClassCode(this, diagnostics, context);
-	}
+    return SusceptibilityResultOperations.validateSusceptibilityResultClassCode(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateSusceptibilityResultMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return SusceptibilityResultOperations.validateSusceptibilityResultMoodCode(this, diagnostics, context);
-	}
+    return SusceptibilityResultOperations.validateSusceptibilityResultMoodCode(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateSusceptibilityResultCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return SusceptibilityResultOperations.validateSusceptibilityResultCode(this, diagnostics, context);
-	}
+    return SusceptibilityResultOperations.validateSusceptibilityResultCode(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateSusceptibilityResultCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return SusceptibilityResultOperations.validateSusceptibilityResultCodeP(this, diagnostics, context);
-	}
+    return SusceptibilityResultOperations.validateSusceptibilityResultCodeP(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateSusceptibilityResultStatusCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return SusceptibilityResultOperations.validateSusceptibilityResultStatusCode(this, diagnostics, context);
-	}
+    return SusceptibilityResultOperations.validateSusceptibilityResultStatusCode(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateSusceptibilityResultStatusCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return SusceptibilityResultOperations.validateSusceptibilityResultStatusCodeP(this, diagnostics, context);
-	}
+    return SusceptibilityResultOperations.validateSusceptibilityResultStatusCodeP(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public SusceptibilityResult init() {
-    	CDAUtil.init(this);
-    	return this;
-	}
+      return Initializer.Util.init(this);
+  }
+
+  /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    public SusceptibilityResult init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
 } //SusceptibilityResultImpl

@@ -88,7 +88,6 @@ public class TimingReferenceOperations extends ClinicalStatementOperations
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.23.74')
    * @param timingReference The receiving '<em><b>Timing Reference</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -98,6 +97,7 @@ public class TimingReferenceOperations extends ClinicalStatementOperations
   
   public static  boolean validateTimingReferenceTemplateId(TimingReference timingReference, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
+  	  
     if (VALIDATE_TIMING_REFERENCE_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(SdtmPackage.Literals.TIMING_REFERENCE);
@@ -122,6 +122,7 @@ public class TimingReferenceOperations extends ClinicalStatementOperations
              org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "TimingReferenceTemplateId", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(timingReference, context) }),
              new Object [] { timingReference }));
       }
+       
       return false;
     }
     return true;
@@ -153,7 +154,6 @@ public class TimingReferenceOperations extends ClinicalStatementOperations
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.classCode=vocab::x_ActClassDocumentEntryAct::ACT
    * @param timingReference The receiving '<em><b>Timing Reference</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -163,6 +163,7 @@ public class TimingReferenceOperations extends ClinicalStatementOperations
   
   public static  boolean validateTimingReferenceClassCode(TimingReference timingReference, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
+  	  
     if (VALIDATE_TIMING_REFERENCE_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(SdtmPackage.Literals.TIMING_REFERENCE);
@@ -187,6 +188,7 @@ public class TimingReferenceOperations extends ClinicalStatementOperations
              org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "TimingReferenceClassCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(timingReference, context) }),
              new Object [] { timingReference }));
       }
+       
       return false;
     }
     return true;
@@ -218,7 +220,6 @@ public class TimingReferenceOperations extends ClinicalStatementOperations
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * (self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined())
    * @param timingReference The receiving '<em><b>Timing Reference</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -228,6 +229,7 @@ public class TimingReferenceOperations extends ClinicalStatementOperations
   
   public static  boolean validateTimingReferenceCodeP(TimingReference timingReference, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
+  	  
     if (VALIDATE_TIMING_REFERENCE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(SdtmPackage.Literals.TIMING_REFERENCE);
@@ -252,6 +254,7 @@ public class TimingReferenceOperations extends ClinicalStatementOperations
              org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "TimingReferenceCodeP", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(timingReference, context) }),
              new Object [] { timingReference }));
       }
+       
       return false;
     }
     return true;
@@ -285,9 +288,6 @@ public class TimingReferenceOperations extends ClinicalStatementOperations
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * (self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and 
-   * let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in 
-   * value.codeSystem = '2.16.840.1.113883.3.26.1.1')
    * @param timingReference The receiving '<em><b>Timing Reference</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -297,6 +297,7 @@ public class TimingReferenceOperations extends ClinicalStatementOperations
   
   public static  boolean validateTimingReferenceCode(TimingReference timingReference, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
+  	  
     if (VALIDATE_TIMING_REFERENCE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(SdtmPackage.Literals.TIMING_REFERENCE);
@@ -321,6 +322,7 @@ public class TimingReferenceOperations extends ClinicalStatementOperations
              org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "TimingReferenceCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(timingReference, context) }),
              new Object [] { timingReference }));
       }
+       
       return false;
     }
     return true;
@@ -352,7 +354,6 @@ public class TimingReferenceOperations extends ClinicalStatementOperations
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * (self.effectiveTime.oclIsUndefined() or self.effectiveTime.isNullFlavorUndefined()) implies (not self.effectiveTime.oclIsUndefined())
    * @param timingReference The receiving '<em><b>Timing Reference</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -362,6 +363,7 @@ public class TimingReferenceOperations extends ClinicalStatementOperations
   
   public static  boolean validateTimingReferenceEffectiveTime(TimingReference timingReference, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
+  	  
     if (VALIDATE_TIMING_REFERENCE_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(SdtmPackage.Literals.TIMING_REFERENCE);
@@ -386,6 +388,7 @@ public class TimingReferenceOperations extends ClinicalStatementOperations
              org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "TimingReferenceEffectiveTime", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(timingReference, context) }),
              new Object [] { timingReference }));
       }
+       
       return false;
     }
     return true;
@@ -417,7 +420,6 @@ public class TimingReferenceOperations extends ClinicalStatementOperations
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * (self.id->isEmpty() or self.id->exists(element | element.isNullFlavorUndefined())) implies (not self.id->isEmpty())
    * @param timingReference The receiving '<em><b>Timing Reference</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -427,6 +429,7 @@ public class TimingReferenceOperations extends ClinicalStatementOperations
   
   public static  boolean validateTimingReferenceId(TimingReference timingReference, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
+  	  
     if (VALIDATE_TIMING_REFERENCE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(SdtmPackage.Literals.TIMING_REFERENCE);
@@ -451,6 +454,7 @@ public class TimingReferenceOperations extends ClinicalStatementOperations
              org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "TimingReferenceId", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(timingReference, context) }),
              new Object [] { timingReference }));
       }
+       
       return false;
     }
     return true;
@@ -482,7 +486,6 @@ public class TimingReferenceOperations extends ClinicalStatementOperations
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.moodCode=vocab::x_DocumentActMood::EVN
    * @param timingReference The receiving '<em><b>Timing Reference</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -492,6 +495,7 @@ public class TimingReferenceOperations extends ClinicalStatementOperations
   
   public static  boolean validateTimingReferenceMoodCode(TimingReference timingReference, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
+  	  
     if (VALIDATE_TIMING_REFERENCE_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(SdtmPackage.Literals.TIMING_REFERENCE);
@@ -516,6 +520,7 @@ public class TimingReferenceOperations extends ClinicalStatementOperations
              org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "TimingReferenceMoodCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(timingReference, context) }),
              new Object [] { timingReference }));
       }
+       
       return false;
     }
     return true;
@@ -547,7 +552,6 @@ public class TimingReferenceOperations extends ClinicalStatementOperations
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.entryRelationship->one(entryRelationship : cda::EntryRelationship | not entryRelationship.oclIsUndefined() and entryRelationship.oclIsKindOf(cda::EntryRelationship))
    * @param timingReference The receiving '<em><b>Timing Reference</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -557,6 +561,7 @@ public class TimingReferenceOperations extends ClinicalStatementOperations
   
   public static  boolean validateTimingReferenceAnchorAssociation(TimingReference timingReference, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
+  	  
     if (VALIDATE_TIMING_REFERENCE_ANCHOR_ASSOCIATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(SdtmPackage.Literals.TIMING_REFERENCE);
@@ -581,6 +586,7 @@ public class TimingReferenceOperations extends ClinicalStatementOperations
              org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "TimingReferenceAnchorAssociation", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(timingReference, context) }),
              new Object [] { timingReference }));
       }
+       
       return false;
     }
     return true;
@@ -612,7 +618,6 @@ public class TimingReferenceOperations extends ClinicalStatementOperations
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.entryRelationship->excluding(null).act->excluding(null)->reject(classCode=vocab::x_ActClassDocumentEntryAct::ACT)
    * @param timingReference The receiving '<em><b>Timing Reference</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -622,6 +627,7 @@ public class TimingReferenceOperations extends ClinicalStatementOperations
   
   public static  boolean validateTimingReferenceAnchorAssociationAnchorTimePointClassCode(TimingReference timingReference, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
+  	  
     if (VALIDATE_TIMING_REFERENCE_ANCHOR_ASSOCIATION_ANCHOR_TIME_POINT_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(SdtmPackage.Literals.TIMING_REFERENCE);
@@ -646,6 +652,7 @@ public class TimingReferenceOperations extends ClinicalStatementOperations
              org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "TimingReferenceAnchorAssociationAnchorTimePointClassCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(timingReference, context) }),
              new Object [] { timingReference }));
       }
+       
       return false;
     }
     return true;
@@ -677,7 +684,6 @@ public class TimingReferenceOperations extends ClinicalStatementOperations
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.entryRelationship->excluding(null).act->excluding(null)->reject((code.oclIsUndefined() or code.isNullFlavorUndefined()) implies (not code.oclIsUndefined()))
    * @param timingReference The receiving '<em><b>Timing Reference</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -687,6 +693,7 @@ public class TimingReferenceOperations extends ClinicalStatementOperations
   
   public static  boolean validateTimingReferenceAnchorAssociationAnchorTimePointCode(TimingReference timingReference, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
+  	  
     if (VALIDATE_TIMING_REFERENCE_ANCHOR_ASSOCIATION_ANCHOR_TIME_POINT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(SdtmPackage.Literals.TIMING_REFERENCE);
@@ -711,6 +718,7 @@ public class TimingReferenceOperations extends ClinicalStatementOperations
              org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "TimingReferenceAnchorAssociationAnchorTimePointCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(timingReference, context) }),
              new Object [] { timingReference }));
       }
+       
       return false;
     }
     return true;
@@ -742,7 +750,6 @@ public class TimingReferenceOperations extends ClinicalStatementOperations
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.entryRelationship->excluding(null).act->excluding(null)->reject((effectiveTime.oclIsUndefined() or effectiveTime.isNullFlavorUndefined()) implies (not effectiveTime.oclIsUndefined()))
    * @param timingReference The receiving '<em><b>Timing Reference</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -752,6 +759,7 @@ public class TimingReferenceOperations extends ClinicalStatementOperations
   
   public static  boolean validateTimingReferenceAnchorAssociationAnchorTimePointEffectiveTime(TimingReference timingReference, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
+  	  
     if (VALIDATE_TIMING_REFERENCE_ANCHOR_ASSOCIATION_ANCHOR_TIME_POINT_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(SdtmPackage.Literals.TIMING_REFERENCE);
@@ -776,6 +784,7 @@ public class TimingReferenceOperations extends ClinicalStatementOperations
              org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "TimingReferenceAnchorAssociationAnchorTimePointEffectiveTime", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(timingReference, context) }),
              new Object [] { timingReference }));
       }
+       
       return false;
     }
     return true;
@@ -807,7 +816,6 @@ public class TimingReferenceOperations extends ClinicalStatementOperations
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.entryRelationship->excluding(null).act->excluding(null)->reject(isDefined('moodCode'))
    * @param timingReference The receiving '<em><b>Timing Reference</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -817,6 +825,7 @@ public class TimingReferenceOperations extends ClinicalStatementOperations
   
   public static  boolean validateTimingReferenceAnchorAssociationAnchorTimePointMoodCode(TimingReference timingReference, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
+  	  
     if (VALIDATE_TIMING_REFERENCE_ANCHOR_ASSOCIATION_ANCHOR_TIME_POINT_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(SdtmPackage.Literals.TIMING_REFERENCE);
@@ -841,6 +850,7 @@ public class TimingReferenceOperations extends ClinicalStatementOperations
              org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "TimingReferenceAnchorAssociationAnchorTimePointMoodCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(timingReference, context) }),
              new Object [] { timingReference }));
       }
+       
       return false;
     }
     return true;
@@ -872,7 +882,6 @@ public class TimingReferenceOperations extends ClinicalStatementOperations
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.entryRelationship->excluding(null)->reject(typeCode=vocab::x_ActRelationshipEntryRelationship::COMP)
    * @param timingReference The receiving '<em><b>Timing Reference</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -882,6 +891,7 @@ public class TimingReferenceOperations extends ClinicalStatementOperations
   
   public static  boolean validateTimingReferenceAnchorAssociationTypeCode(TimingReference timingReference, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
+  	  
     if (VALIDATE_TIMING_REFERENCE_ANCHOR_ASSOCIATION_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(SdtmPackage.Literals.TIMING_REFERENCE);
@@ -906,6 +916,7 @@ public class TimingReferenceOperations extends ClinicalStatementOperations
              org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "TimingReferenceAnchorAssociationTypeCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(timingReference, context) }),
              new Object [] { timingReference }));
       }
+       
       return false;
     }
     return true;
@@ -937,7 +948,6 @@ public class TimingReferenceOperations extends ClinicalStatementOperations
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.entryRelationship->excluding(null)->reject(act->one(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(cda::Act)))
    * @param timingReference The receiving '<em><b>Timing Reference</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -947,6 +957,7 @@ public class TimingReferenceOperations extends ClinicalStatementOperations
   
   public static  boolean validateTimingReferenceAnchorAssociationAnchorTimePoint(TimingReference timingReference, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
+  	  
     if (VALIDATE_TIMING_REFERENCE_ANCHOR_ASSOCIATION_ANCHOR_TIME_POINT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(SdtmPackage.Literals.TIMING_REFERENCE);
@@ -971,6 +982,7 @@ public class TimingReferenceOperations extends ClinicalStatementOperations
              org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "TimingReferenceAnchorAssociationAnchorTimePoint", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(timingReference, context) }),
              new Object [] { timingReference }));
       }
+       
       return false;
     }
     return true;

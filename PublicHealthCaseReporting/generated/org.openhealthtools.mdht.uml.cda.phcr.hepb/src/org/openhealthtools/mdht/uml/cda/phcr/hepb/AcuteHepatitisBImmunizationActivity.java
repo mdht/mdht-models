@@ -10,6 +10,9 @@
  *******************************************************************************/
 package org.openhealthtools.mdht.uml.cda.phcr.hepb;
 
+import java.lang.Iterable;
+import org.eclipse.emf.ecore.EObject;
+import org.openhealthtools.mdht.emf.runtime.util.Initializer;
 import org.openhealthtools.mdht.uml.cda.ccd.MedicationActivity;
 
 /**
@@ -19,14 +22,21 @@ import org.openhealthtools.mdht.uml.cda.ccd.MedicationActivity;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.phcr.hepb.HepbPackage#getAcuteHepatitisBImmunizationActivity()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation templateId.root='2.16.840.1.113883.10.20.15.3.25' constraints.validation.error='AcuteHepatitisBImmunizationActivityTemplateId'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='AcuteHepatitisBImmunizationActivityTemplateId' templateId.root='2.16.840.1.113883.10.20.15.3.25'"
  * @generated
  */
 public interface AcuteHepatitisBImmunizationActivity extends MedicationActivity {
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public AcuteHepatitisBImmunizationActivity init();
+
+  /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    public AcuteHepatitisBImmunizationActivity init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // AcuteHepatitisBImmunizationActivity
