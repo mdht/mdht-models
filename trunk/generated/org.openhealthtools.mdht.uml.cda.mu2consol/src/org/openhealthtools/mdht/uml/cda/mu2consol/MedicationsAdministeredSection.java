@@ -61,9 +61,9 @@ public interface MedicationsAdministeredSection extends
 	EList<MedicationActivity> getmu2consolMedicationActivities();
 
 	/**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @generated
-	 */
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @generated
+   */
 	public MedicationsAdministeredSection init();
 
 	/**

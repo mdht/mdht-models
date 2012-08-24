@@ -732,9 +732,9 @@ public interface ClinicalOfficeVisitSummary extends GeneralHeaderConstraints {
 	InterventionsSection getInterventionsSection();
 
 	/**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @generated
-	 */
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @generated
+   */
 	public ClinicalOfficeVisitSummary init();
 
 	/**

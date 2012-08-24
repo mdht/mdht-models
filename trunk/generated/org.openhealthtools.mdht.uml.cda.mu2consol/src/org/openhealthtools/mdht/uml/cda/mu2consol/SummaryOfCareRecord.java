@@ -1064,9 +1064,9 @@ public interface SummaryOfCareRecord extends GeneralHeaderConstraints {
 	ReasonForReferralSection getReasonForReferralSection();
 
 	/**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @generated
-	 */
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @generated
+   */
 	public SummaryOfCareRecord init();
 
 	/**
