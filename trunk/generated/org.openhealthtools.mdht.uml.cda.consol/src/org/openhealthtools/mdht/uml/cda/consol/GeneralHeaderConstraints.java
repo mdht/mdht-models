@@ -93,28 +93,28 @@ public interface GeneralHeaderConstraints extends ClinicalDocument {
 	boolean validateGeneralHeaderConstraintsUSRealmAddressSHALL(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='datatypes::AD.allInstances()->reject(\r\n    addr : datatypes::AD | \r\n    addr.isNullFlavorDefined() or ( \r\n\t\tnot addr.use->isEmpty() and\r\n\t\taddr.use->forAll(\r\n\t\t\tuse : vocab::PostalAddressUse |\r\n\t\t\tuse=vocab::PostalAddressUse::BAD or\r\n\t\t\tuse=vocab::PostalAddressUse::DIR or\r\n\t\t\tuse=vocab::PostalAddressUse::H or\r\n\t\t\tuse=vocab::PostalAddressUse::HP or\r\n\t\t\tuse=vocab::PostalAddressUse::HV or\r\n\t\t\tuse=vocab::PostalAddressUse::PHYS or\r\n\t\t\tuse=vocab::PostalAddressUse::PST or\r\n\t\t\tuse=vocab::PostalAddressUse::PUB or\r\n\t\t\tuse=vocab::PostalAddressUse::TMP or\r\n\t\t\tuse=vocab::PostalAddressUse::WP\r\n\t\t)  and\r\n\t\taddr.country->size() <= 1 and\r\n\t\t(\r\n\t\t\t(\r\n\t\t\t\taddr.country->size() = 0 or\r\n\t\t\t\t(\r\n\t\t\t\t\taddr.country->size() = 1 and addr.country->asSequence()->first().getText()=\'US\'\r\n\t\t\t\t)\r\n\t\t\t) implies addr.state->size() = 1 and addr.postalCode->size() = 1\r\n\t\t)\r\n\t)\r\n)'"
-	 * @generated
-	 */
+	* <!-- begin-model-doc -->
+	* @param diagnostics The chain of diagnostics to which problems are to be appended.
+	* @param context The cache of context-specific information.
+	* <!-- end-model-doc -->
+	* @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='datatypes::AD.allInstances()->reject(\r\n    addr : datatypes::AD | \r\n    addr.isNullFlavorDefined() or ( \r\n\t\tnot addr.use->isEmpty() and\r\n\t\taddr.use->forAll(\r\n\t\t\tuse : vocab::PostalAddressUse |\r\n\t\t\tuse=vocab::PostalAddressUse::BAD or\r\n\t\t\tuse=vocab::PostalAddressUse::DIR or\r\n\t\t\tuse=vocab::PostalAddressUse::H or\r\n\t\t\tuse=vocab::PostalAddressUse::HP or\r\n\t\t\tuse=vocab::PostalAddressUse::HV or\r\n\t\t\tuse=vocab::PostalAddressUse::PHYS or\r\n\t\t\tuse=vocab::PostalAddressUse::PST or\r\n\t\t\tuse=vocab::PostalAddressUse::PUB or\r\n\t\t\tuse=vocab::PostalAddressUse::TMP or\r\n\t\t\tuse=vocab::PostalAddressUse::WP\r\n\t\t)  and\r\n\t\taddr.country->size() <= 1 and\r\n\t\t(\r\n\t\t\t(\r\n\t\t\t\taddr.country->size() = 0 or\r\n\t\t\t\t(\r\n\t\t\t\t\taddr.country->size() = 1 and addr.country->asSequence()->first().getText()=\'US\'\r\n\t\t\t\t)\r\n\t\t\t) implies addr.state->size() = 1 and addr.postalCode->size() = 1\r\n\t\t)\r\n\t)\r\n)'"
+	* @generated
+	*/
 	boolean validateGeneralHeaderConstraintsUSRealmAddressSHOULD(DiagnosticChain diagnostics,
 			Map<Object, Object> context);
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='datatypes::PN.allInstances()->reject(\r\n    name : datatypes::PN |\r\n    name.use->forAll(\r\n        use : vocab::EntityNameUse |\r\n        use=vocab::EntityNameUse::A or\r\n        use=vocab::EntityNameUse::ABC or\r\n        use=vocab::EntityNameUse::ASGN or\r\n        use=vocab::EntityNameUse::C or\r\n        use=vocab::EntityNameUse::I or\r\n        use=vocab::EntityNameUse::IDE or\r\n        use=vocab::EntityNameUse::L or\r\n        use=vocab::EntityNameUse::P or\r\n        use=vocab::EntityNameUse::PHON or\r\n        use=vocab::EntityNameUse::R or\r\n        use=vocab::EntityNameUse::SNDX or\r\n        use=vocab::EntityNameUse::SRCH or\r\n        use=vocab::EntityNameUse::SYL\r\n    ) and\r\n    name.prefix->forAll(\r\n        prefix : datatypes::ENXP |\r\n        prefix.qualifier->forAll(\r\n            qualifier : vocab::EntityNamePartQualifier |\r\n            qualifier=vocab::EntityNamePartQualifier::AC or\r\n            qualifier=vocab::EntityNamePartQualifier::AD or\r\n            qualifier=vocab::EntityNamePartQualifier::BR or\r\n            qualifier=vocab::EntityNamePartQualifier::CL or\r\n            qualifier=vocab::EntityNamePartQualifier::IN or\r\n            qualifier=vocab::EntityNamePartQualifier::NB or\r\n            qualifier=vocab::EntityNamePartQualifier::PR or\r\n            qualifier=vocab::EntityNamePartQualifier::SP or\r\n            qualifier=vocab::EntityNamePartQualifier::TITLE or\r\n            qualifier=vocab::EntityNamePartQualifier::VV\r\n        )\r\n    ) and\r\n    name.given->size() >= 1 and\r\n    name.given->forAll(\r\n        given : datatypes::ENXP |\r\n        given.qualifier->forAll(\r\n            qualifier : vocab::EntityNamePartQualifier |\r\n\t    qualifier=vocab::EntityNamePartQualifier::AC or\r\n\t    qualifier=vocab::EntityNamePartQualifier::AD or\r\n\t    qualifier=vocab::EntityNamePartQualifier::BR or\r\n\t    qualifier=vocab::EntityNamePartQualifier::CL or\r\n\t    qualifier=vocab::EntityNamePartQualifier::IN or\r\n\t    qualifier=vocab::EntityNamePartQualifier::NB or\r\n\t    qualifier=vocab::EntityNamePartQualifier::PR or\r\n\t    qualifier=vocab::EntityNamePartQualifier::SP or\r\n\t    qualifier=vocab::EntityNamePartQualifier::TITLE or\r\n\t    qualifier=vocab::EntityNamePartQualifier::VV\r\n        )\r\n    ) and\r\n    name.family->size() = 1 and\r\n    name.family->forAll(\r\n        family : datatypes::ENXP |\r\n        family.qualifier->forAll(\r\n            qualifier : vocab::EntityNamePartQualifier |\r\n\t    qualifier=vocab::EntityNamePartQualifier::AC or\r\n\t    qualifier=vocab::EntityNamePartQualifier::AD or\r\n\t    qualifier=vocab::EntityNamePartQualifier::BR or\r\n\t    qualifier=vocab::EntityNamePartQualifier::CL or\r\n\t    qualifier=vocab::EntityNamePartQualifier::IN or\r\n\t    qualifier=vocab::EntityNamePartQualifier::NB or\r\n\t    qualifier=vocab::EntityNamePartQualifier::PR or\r\n\t    qualifier=vocab::EntityNamePartQualifier::SP or\r\n\t    qualifier=vocab::EntityNamePartQualifier::TITLE or\r\n\t    qualifier=vocab::EntityNamePartQualifier::VV\r\n        )\r\n    ) and\r\n    name.suffix->size() <= 1 and\r\n    name.suffix->forAll(\r\n        suffix : datatypes::ENXP |\r\n        suffix.qualifier->forAll(\r\n            qualifier : vocab::EntityNamePartQualifier |\r\n\t    qualifier=vocab::EntityNamePartQualifier::AC or\r\n\t    qualifier=vocab::EntityNamePartQualifier::AD or\r\n\t    qualifier=vocab::EntityNamePartQualifier::BR or\r\n\t    qualifier=vocab::EntityNamePartQualifier::CL or\r\n\t    qualifier=vocab::EntityNamePartQualifier::IN or\r\n\t    qualifier=vocab::EntityNamePartQualifier::NB or\r\n\t    qualifier=vocab::EntityNamePartQualifier::PR or\r\n\t    qualifier=vocab::EntityNamePartQualifier::SP or\r\n\t    qualifier=vocab::EntityNamePartQualifier::TITLE or\r\n\t    qualifier=vocab::EntityNamePartQualifier::VV\r\n        )\r\n    )\r\n)'"
-	 * @generated
-	 */
+	* <!-- begin-model-doc -->
+	* @param diagnostics The chain of diagnostics to which problems are to be appended.
+	* @param context The cache of context-specific information.
+	* <!-- end-model-doc -->
+	* @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='datatypes::PN.allInstances()->reject(\r\n    name : datatypes::PN |\r\n    name.use->forAll(\r\n        use : vocab::EntityNameUse |\r\n        use=vocab::EntityNameUse::A or\r\n        use=vocab::EntityNameUse::ABC or\r\n        use=vocab::EntityNameUse::ASGN or\r\n        use=vocab::EntityNameUse::C or\r\n        use=vocab::EntityNameUse::I or\r\n        use=vocab::EntityNameUse::IDE or\r\n        use=vocab::EntityNameUse::L or\r\n        use=vocab::EntityNameUse::P or\r\n        use=vocab::EntityNameUse::PHON or\r\n        use=vocab::EntityNameUse::R or\r\n        use=vocab::EntityNameUse::SNDX or\r\n        use=vocab::EntityNameUse::SRCH or\r\n        use=vocab::EntityNameUse::SYL\r\n    ) and\r\n    name.prefix->forAll(\r\n        prefix : datatypes::ENXP |\r\n        prefix.qualifier->forAll(\r\n            qualifier : vocab::EntityNamePartQualifier |\r\n            qualifier=vocab::EntityNamePartQualifier::AC or\r\n            qualifier=vocab::EntityNamePartQualifier::AD or\r\n            qualifier=vocab::EntityNamePartQualifier::BR or\r\n            qualifier=vocab::EntityNamePartQualifier::CL or\r\n            qualifier=vocab::EntityNamePartQualifier::IN or\r\n            qualifier=vocab::EntityNamePartQualifier::NB or\r\n            qualifier=vocab::EntityNamePartQualifier::PR or\r\n            qualifier=vocab::EntityNamePartQualifier::SP or\r\n            qualifier=vocab::EntityNamePartQualifier::TITLE or\r\n            qualifier=vocab::EntityNamePartQualifier::VV\r\n        )\r\n    ) and\r\n    name.given->size() >= 1 and\r\n    name.given->forAll(\r\n        given : datatypes::ENXP |\r\n        given.qualifier->forAll(\r\n            qualifier : vocab::EntityNamePartQualifier |\r\n\t    qualifier=vocab::EntityNamePartQualifier::AC or\r\n\t    qualifier=vocab::EntityNamePartQualifier::AD or\r\n\t    qualifier=vocab::EntityNamePartQualifier::BR or\r\n\t    qualifier=vocab::EntityNamePartQualifier::CL or\r\n\t    qualifier=vocab::EntityNamePartQualifier::IN or\r\n\t    qualifier=vocab::EntityNamePartQualifier::NB or\r\n\t    qualifier=vocab::EntityNamePartQualifier::PR or\r\n\t    qualifier=vocab::EntityNamePartQualifier::SP or\r\n\t    qualifier=vocab::EntityNamePartQualifier::TITLE or\r\n\t    qualifier=vocab::EntityNamePartQualifier::VV\r\n        )\r\n    ) and\r\n    name.family->size() = 1 and\r\n    name.family->forAll(\r\n        family : datatypes::ENXP |\r\n        family.qualifier->forAll(\r\n            qualifier : vocab::EntityNamePartQualifier |\r\n\t    qualifier=vocab::EntityNamePartQualifier::AC or\r\n\t    qualifier=vocab::EntityNamePartQualifier::AD or\r\n\t    qualifier=vocab::EntityNamePartQualifier::BR or\r\n\t    qualifier=vocab::EntityNamePartQualifier::CL or\r\n\t    qualifier=vocab::EntityNamePartQualifier::IN or\r\n\t    qualifier=vocab::EntityNamePartQualifier::NB or\r\n\t    qualifier=vocab::EntityNamePartQualifier::PR or\r\n\t    qualifier=vocab::EntityNamePartQualifier::SP or\r\n\t    qualifier=vocab::EntityNamePartQualifier::TITLE or\r\n\t    qualifier=vocab::EntityNamePartQualifier::VV\r\n        )\r\n    ) and\r\n    name.suffix->size() <= 1 and\r\n    name.suffix->forAll(\r\n        suffix : datatypes::ENXP |\r\n        suffix.qualifier->forAll(\r\n            qualifier : vocab::EntityNamePartQualifier |\r\n\t    qualifier=vocab::EntityNamePartQualifier::AC or\r\n\t    qualifier=vocab::EntityNamePartQualifier::AD or\r\n\t    qualifier=vocab::EntityNamePartQualifier::BR or\r\n\t    qualifier=vocab::EntityNamePartQualifier::CL or\r\n\t    qualifier=vocab::EntityNamePartQualifier::IN or\r\n\t    qualifier=vocab::EntityNamePartQualifier::NB or\r\n\t    qualifier=vocab::EntityNamePartQualifier::PR or\r\n\t    qualifier=vocab::EntityNamePartQualifier::SP or\r\n\t    qualifier=vocab::EntityNamePartQualifier::TITLE or\r\n\t    qualifier=vocab::EntityNamePartQualifier::VV\r\n        )\r\n    )\r\n)'"
+	* @generated
+	*/
 	boolean validateGeneralHeaderConstraintsUSRealmPatientName(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
@@ -456,28 +456,28 @@ public interface GeneralHeaderConstraints extends ClinicalDocument {
 	boolean validateGeneralHeaderConstraintsDocumentationOf(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.recordTarget->excluding(null).patientRole->excluding(null).patient->excluding(null).guardian->excluding(null).telecom->excluding(null)->reject(not use->isEmpty())'"
-	 * @generated
-	 */
+	* <!-- begin-model-doc -->
+	* @param diagnostics The chain of diagnostics to which problems are to be appended.
+	* @param context The cache of context-specific information.
+	* <!-- end-model-doc -->
+	* @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.recordTarget->excluding(null).patientRole->excluding(null).patient->excluding(null).guardian->excluding(null).telecom->excluding(null)->reject(not use->isEmpty())'"
+	* @generated
+	*/
 	boolean validateGeneralHeaderConstraintsRecordTargetPatientRolePatientGuardianTELUse(DiagnosticChain diagnostics,
 			Map<Object, Object> context);
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.author->excluding(null).assignedAuthor->excluding(null).assignedAuthoringDevice->excluding(null)->reject((manufacturerModelName.oclIsUndefined() or manufacturerModelName.isNullFlavorUndefined()) implies (not manufacturerModelName.oclIsUndefined()))'"
-	 * @generated
-	 */
+	* <!-- begin-model-doc -->
+	* @param diagnostics The chain of diagnostics to which problems are to be appended.
+	* @param context The cache of context-specific information.
+	* <!-- end-model-doc -->
+	* @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.author->excluding(null).assignedAuthor->excluding(null).assignedAuthoringDevice->excluding(null)->reject((manufacturerModelName.oclIsUndefined() or manufacturerModelName.isNullFlavorUndefined()) implies (not manufacturerModelName.oclIsUndefined()))'"
+	* @generated
+	*/
 	boolean validateGeneralHeaderConstraintsAuthorAssignedAuthorAuthoringDeviceManufacturerModelName(
 			DiagnosticChain diagnostics, Map<Object, Object> context);
 
@@ -1508,15 +1508,15 @@ public interface GeneralHeaderConstraints extends ClinicalDocument {
 			DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.recordTarget->excluding(null).patientRole->excluding(null).providerOrganization->excluding(null)->reject((addr->isEmpty() or addr->exists(element | element.isNullFlavorUndefined())) implies (not addr->isEmpty()))'"
-	 * @generated
-	 */
+	* <!-- begin-model-doc -->
+	* @param diagnostics The chain of diagnostics to which problems are to be appended.
+	* @param context The cache of context-specific information.
+	* <!-- end-model-doc -->
+	* @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.recordTarget->excluding(null).patientRole->excluding(null).providerOrganization->excluding(null)->reject((addr->isEmpty() or addr->exists(element | element.isNullFlavorUndefined())) implies (not addr->isEmpty()))'"
+	* @generated
+	*/
 	boolean validateGeneralHeaderConstraintsRecordTargetPatientRoleProviderOrganizationAddr(
 			DiagnosticChain diagnostics, Map<Object, Object> context);
 
