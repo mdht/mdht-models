@@ -27,16 +27,16 @@ import org.openhealthtools.mdht.uml.cda.Participant1;
  */
 public interface SupportParticipant extends Participant1, Support {
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	public SupportParticipant init();
 
-  /**
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    public SupportParticipant init(Iterable<? extends Initializer<? extends EObject>> initializers);
+	/**
+	   * <!-- begin-user-doc -->
+	   * <!-- end-user-doc -->
+	   * @generated
+	   */
+	public SupportParticipant init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // SupportParticipant

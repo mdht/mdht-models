@@ -27,31 +27,31 @@ import org.openhealthtools.mdht.uml.cda.ccd.operations.CCDRegistryDelegateOperat
  */
 public class CCDRegistryDelegateImpl extends EObjectImpl implements CCDRegistryDelegate {
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	protected CCDRegistryDelegateImpl() {
-    super();
-  }
+		super();
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	@Override
 	protected EClass eStaticClass() {
-    return CCDPackage.Literals.CCD_REGISTRY_DELEGATE;
-  }
+		return CCDPackage.Literals.CCD_REGISTRY_DELEGATE;
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	public EClass getEClass(String templateId, Object context) {
-    return CCDRegistryDelegateOperations.getEClass(this, templateId, context);
-  }
+		return CCDRegistryDelegateOperations.getEClass(this, templateId, context);
+	}
 
 } // CCDRegistryDelegateImpl

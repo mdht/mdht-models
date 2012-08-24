@@ -22,7 +22,6 @@ import org.openhealthtools.mdht.uml.cda.ccd.CCDPackage;
 import org.openhealthtools.mdht.uml.cda.ccd.CauseOfDeathObservation;
 import org.openhealthtools.mdht.uml.cda.ccd.FamilyHistoryCauseOfDeathObservation;
 import org.openhealthtools.mdht.uml.cda.ccd.operations.FamilyHistoryCauseOfDeathObservationOperations;
-import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
 
 /**
  * <!-- begin-user-doc -->
@@ -36,70 +35,73 @@ import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
 public class FamilyHistoryCauseOfDeathObservationImpl extends FamilyHistoryObservationImpl implements
 		FamilyHistoryCauseOfDeathObservation {
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	protected FamilyHistoryCauseOfDeathObservationImpl() {
-    super();
-  }
+		super();
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	@Override
 	protected EClass eStaticClass() {
-    return CCDPackage.Literals.FAMILY_HISTORY_CAUSE_OF_DEATH_OBSERVATION;
-  }
+		return CCDPackage.Literals.FAMILY_HISTORY_CAUSE_OF_DEATH_OBSERVATION;
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	public boolean validateFamilyHistoryCauseOfDeathObservationCauseOfDeathObservation(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-    return FamilyHistoryCauseOfDeathObservationOperations.validateFamilyHistoryCauseOfDeathObservationCauseOfDeathObservation(this, diagnostics, context);
-  }
+		return FamilyHistoryCauseOfDeathObservationOperations.validateFamilyHistoryCauseOfDeathObservationCauseOfDeathObservation(
+			this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	public EList<CauseOfDeathObservation> getCauseOfDeathObservations() {
-    return FamilyHistoryCauseOfDeathObservationOperations.getCauseOfDeathObservations(this);
-  }
+		return FamilyHistoryCauseOfDeathObservationOperations.getCauseOfDeathObservations(this);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	@Override
 	public boolean validateFamilyHistoryObservationTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return FamilyHistoryCauseOfDeathObservationOperations.validateFamilyHistoryObservationTemplateId(this, diagnostics, context);
-  }
+		return FamilyHistoryCauseOfDeathObservationOperations.validateFamilyHistoryObservationTemplateId(
+			this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	@Override
 	public FamilyHistoryCauseOfDeathObservation init() {
-      return Initializer.Util.init(this);
-  }
+		return Initializer.Util.init(this);
+	}
 
-  /**
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    public FamilyHistoryCauseOfDeathObservation init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-        Initializer.Util.init(this, initializers);
-        return this;
-    }
+	/**
+	   * <!-- begin-user-doc -->
+	   * <!-- end-user-doc -->
+	   * @generated
+	   */
+	@Override
+	public FamilyHistoryCauseOfDeathObservation init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+		Initializer.Util.init(this, initializers);
+		return this;
+	}
 } // FamilyHistoryCauseOfDeathObservationImpl

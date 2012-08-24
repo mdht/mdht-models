@@ -27,16 +27,16 @@ import org.openhealthtools.mdht.uml.cda.ClinicalStatement;
  */
 public interface ProcedureActivity extends ClinicalStatement {
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	public ProcedureActivity init();
 
-  /**
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    public ProcedureActivity init(Iterable<? extends Initializer<? extends EObject>> initializers);
+	/**
+	   * <!-- begin-user-doc -->
+	   * <!-- end-user-doc -->
+	   * @generated
+	   */
+	public ProcedureActivity init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // ProcedureActivity

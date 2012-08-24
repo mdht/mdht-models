@@ -26,16 +26,16 @@ import org.openhealthtools.mdht.emf.runtime.util.Initializer;
  */
 public interface CauseOfDeathObservation extends FamilyHistoryObservation {
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	public CauseOfDeathObservation init();
 
-  /**
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    public CauseOfDeathObservation init(Iterable<? extends Initializer<? extends EObject>> initializers);
+	/**
+	   * <!-- begin-user-doc -->
+	   * <!-- end-user-doc -->
+	   * @generated
+	   */
+	public CauseOfDeathObservation init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // CauseOfDeathObservation

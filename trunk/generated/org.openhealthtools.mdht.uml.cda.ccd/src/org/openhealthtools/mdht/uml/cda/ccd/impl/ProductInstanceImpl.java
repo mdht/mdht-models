@@ -21,7 +21,6 @@ import org.openhealthtools.mdht.uml.cda.ccd.CCDPackage;
 import org.openhealthtools.mdht.uml.cda.ccd.ProductInstance;
 import org.openhealthtools.mdht.uml.cda.ccd.operations.ProductInstanceOperations;
 import org.openhealthtools.mdht.uml.cda.impl.ParticipantRoleImpl;
-import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
 
 /**
  * <!-- begin-user-doc -->
@@ -34,67 +33,67 @@ import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
  */
 public class ProductInstanceImpl extends ParticipantRoleImpl implements ProductInstance {
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	protected ProductInstanceImpl() {
-    super();
-  }
+		super();
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	@Override
 	protected EClass eStaticClass() {
-    return CCDPackage.Literals.PRODUCT_INSTANCE;
-  }
+		return CCDPackage.Literals.PRODUCT_INSTANCE;
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	public boolean validateProductInstanceHasScopingEntity(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return ProductInstanceOperations.validateProductInstanceHasScopingEntity(this, diagnostics, context);
-  }
+		return ProductInstanceOperations.validateProductInstanceHasScopingEntity(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	public boolean validateProductInstanceTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return ProductInstanceOperations.validateProductInstanceTemplateId(this, diagnostics, context);
-  }
+		return ProductInstanceOperations.validateProductInstanceTemplateId(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	public boolean validateProductInstanceClassCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return ProductInstanceOperations.validateProductInstanceClassCode(this, diagnostics, context);
-  }
+		return ProductInstanceOperations.validateProductInstanceClassCode(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	public ProductInstance init() {
-      return Initializer.Util.init(this);
-  }
+		return Initializer.Util.init(this);
+	}
 
-  /**
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    public ProductInstance init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-        Initializer.Util.init(this, initializers);
-        return this;
-    }
+	/**
+	   * <!-- begin-user-doc -->
+	   * <!-- end-user-doc -->
+	   * @generated
+	   */
+	public ProductInstance init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+		Initializer.Util.init(this, initializers);
+		return this;
+	}
 } // ProductInstanceImpl

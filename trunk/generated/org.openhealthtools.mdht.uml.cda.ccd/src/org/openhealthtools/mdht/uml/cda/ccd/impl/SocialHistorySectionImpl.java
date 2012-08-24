@@ -23,7 +23,6 @@ import org.openhealthtools.mdht.uml.cda.ccd.SocialHistoryObservation;
 import org.openhealthtools.mdht.uml.cda.ccd.SocialHistorySection;
 import org.openhealthtools.mdht.uml.cda.ccd.operations.SocialHistorySectionOperations;
 import org.openhealthtools.mdht.uml.cda.impl.SectionImpl;
-import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
 
 /**
  * <!-- begin-user-doc -->
@@ -36,152 +35,156 @@ import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
  */
 public class SocialHistorySectionImpl extends SectionImpl implements SocialHistorySection {
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	protected SocialHistorySectionImpl() {
-    super();
-  }
+		super();
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	@Override
 	protected EClass eStaticClass() {
-    return CCDPackage.Literals.SOCIAL_HISTORY_SECTION;
-  }
+		return CCDPackage.Literals.SOCIAL_HISTORY_SECTION;
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	public boolean validateSocialHistorySectionMaritalStatus(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return SocialHistorySectionOperations.validateSocialHistorySectionMaritalStatus(this, diagnostics, context);
-  }
+		return SocialHistorySectionOperations.validateSocialHistorySectionMaritalStatus(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	public boolean validateSocialHistorySectionReligiousAffiliation(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-    return SocialHistorySectionOperations.validateSocialHistorySectionReligiousAffiliation(this, diagnostics, context);
-  }
+		return SocialHistorySectionOperations.validateSocialHistorySectionReligiousAffiliation(
+			this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	public boolean validateSocialHistorySectionPatientRace(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return SocialHistorySectionOperations.validateSocialHistorySectionPatientRace(this, diagnostics, context);
-  }
+		return SocialHistorySectionOperations.validateSocialHistorySectionPatientRace(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	public boolean validateSocialHistorySectionPatientRaceCodeSystem(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-    return SocialHistorySectionOperations.validateSocialHistorySectionPatientRaceCodeSystem(this, diagnostics, context);
-  }
+		return SocialHistorySectionOperations.validateSocialHistorySectionPatientRaceCodeSystem(
+			this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	public boolean validateSocialHistorySectionPatientEthnicity(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return SocialHistorySectionOperations.validateSocialHistorySectionPatientEthnicity(this, diagnostics, context);
-  }
+		return SocialHistorySectionOperations.validateSocialHistorySectionPatientEthnicity(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	public boolean validateSocialHistorySectionPatientEthnicityCodeSystem(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-    return SocialHistorySectionOperations.validateSocialHistorySectionPatientEthnicityCodeSystem(this, diagnostics, context);
-  }
+		return SocialHistorySectionOperations.validateSocialHistorySectionPatientEthnicityCodeSystem(
+			this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	public boolean validateSocialHistorySectionTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return SocialHistorySectionOperations.validateSocialHistorySectionTemplateId(this, diagnostics, context);
-  }
+		return SocialHistorySectionOperations.validateSocialHistorySectionTemplateId(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	public boolean validateSocialHistorySectionCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return SocialHistorySectionOperations.validateSocialHistorySectionCode(this, diagnostics, context);
-  }
+		return SocialHistorySectionOperations.validateSocialHistorySectionCode(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	public boolean validateSocialHistorySectionTitle(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return SocialHistorySectionOperations.validateSocialHistorySectionTitle(this, diagnostics, context);
-  }
+		return SocialHistorySectionOperations.validateSocialHistorySectionTitle(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	public boolean validateSocialHistorySectionText(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return SocialHistorySectionOperations.validateSocialHistorySectionText(this, diagnostics, context);
-  }
+		return SocialHistorySectionOperations.validateSocialHistorySectionText(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	public boolean validateSocialHistorySectionSocialHistoryObservation(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-    return SocialHistorySectionOperations.validateSocialHistorySectionSocialHistoryObservation(this, diagnostics, context);
-  }
+		return SocialHistorySectionOperations.validateSocialHistorySectionSocialHistoryObservation(
+			this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	public EList<SocialHistoryObservation> getSocialHistoryObservations() {
-    return SocialHistorySectionOperations.getSocialHistoryObservations(this);
-  }
+		return SocialHistorySectionOperations.getSocialHistoryObservations(this);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	public SocialHistorySection init() {
-      return Initializer.Util.init(this);
-  }
+		return Initializer.Util.init(this);
+	}
 
-  /**
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    public SocialHistorySection init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-        Initializer.Util.init(this, initializers);
-        return this;
-    }
+	/**
+	   * <!-- begin-user-doc -->
+	   * <!-- end-user-doc -->
+	   * @generated
+	   */
+	public SocialHistorySection init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+		Initializer.Util.init(this, initializers);
+		return this;
+	}
 } // SocialHistorySectionImpl
