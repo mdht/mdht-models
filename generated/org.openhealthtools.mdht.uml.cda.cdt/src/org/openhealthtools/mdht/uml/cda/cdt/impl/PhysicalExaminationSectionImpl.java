@@ -21,7 +21,6 @@ import org.openhealthtools.mdht.uml.cda.cdt.CDTPackage;
 import org.openhealthtools.mdht.uml.cda.cdt.PhysicalExaminationSection;
 import org.openhealthtools.mdht.uml.cda.cdt.operations.PhysicalExaminationSectionOperations;
 import org.openhealthtools.mdht.uml.cda.impl.SectionImpl;
-import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
 
 /**
  * <!-- begin-user-doc -->
@@ -34,58 +33,59 @@ import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
  */
 public class PhysicalExaminationSectionImpl extends SectionImpl implements PhysicalExaminationSection {
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	protected PhysicalExaminationSectionImpl() {
-    super();
-  }
+		super();
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	@Override
 	protected EClass eStaticClass() {
-    return CDTPackage.Literals.PHYSICAL_EXAMINATION_SECTION;
-  }
+		return CDTPackage.Literals.PHYSICAL_EXAMINATION_SECTION;
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public boolean validatePhysicalExaminationSectionTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return PhysicalExaminationSectionOperations.validatePhysicalExaminationSectionTemplateId(this, diagnostics, context);
-  }
+		return PhysicalExaminationSectionOperations.validatePhysicalExaminationSectionTemplateId(
+			this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public boolean validatePhysicalExaminationSectionCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return PhysicalExaminationSectionOperations.validatePhysicalExaminationSectionCode(this, diagnostics, context);
-  }
+		return PhysicalExaminationSectionOperations.validatePhysicalExaminationSectionCode(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public PhysicalExaminationSection init() {
-      return Initializer.Util.init(this);
-  }
+		return Initializer.Util.init(this);
+	}
 
-  /**
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    public PhysicalExaminationSection init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-        Initializer.Util.init(this, initializers);
-        return this;
-    }
+	/**
+	   * <!-- begin-user-doc -->
+	   * <!-- end-user-doc -->
+	   * @generated
+	   */
+	public PhysicalExaminationSection init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+		Initializer.Util.init(this, initializers);
+		return this;
+	}
 } // PhysicalExaminationSectionImpl

@@ -21,7 +21,6 @@ import org.openhealthtools.mdht.uml.cda.cdt.CDTPackage;
 import org.openhealthtools.mdht.uml.cda.cdt.PastMedicalHistorySection;
 import org.openhealthtools.mdht.uml.cda.cdt.operations.PastMedicalHistorySectionOperations;
 import org.openhealthtools.mdht.uml.cda.impl.SectionImpl;
-import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
 
 /**
  * <!-- begin-user-doc -->
@@ -34,77 +33,79 @@ import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
  */
 public class PastMedicalHistorySectionImpl extends SectionImpl implements PastMedicalHistorySection {
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	protected PastMedicalHistorySectionImpl() {
-    super();
-  }
+		super();
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	@Override
 	protected EClass eStaticClass() {
-    return CDTPackage.Literals.PAST_MEDICAL_HISTORY_SECTION;
-  }
+		return CDTPackage.Literals.PAST_MEDICAL_HISTORY_SECTION;
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public boolean validatePastMedicalHistorySectionHasClinicalStatements(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-    return PastMedicalHistorySectionOperations.validatePastMedicalHistorySectionHasClinicalStatements(this, diagnostics, context);
-  }
+		return PastMedicalHistorySectionOperations.validatePastMedicalHistorySectionHasClinicalStatements(
+			this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public boolean validatePastMedicalHistorySectionTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return PastMedicalHistorySectionOperations.validatePastMedicalHistorySectionTemplateId(this, diagnostics, context);
-  }
+		return PastMedicalHistorySectionOperations.validatePastMedicalHistorySectionTemplateId(
+			this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public boolean validatePastMedicalHistorySectionCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return PastMedicalHistorySectionOperations.validatePastMedicalHistorySectionCode(this, diagnostics, context);
-  }
+		return PastMedicalHistorySectionOperations.validatePastMedicalHistorySectionCode(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public boolean validatePastMedicalHistorySectionText(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return PastMedicalHistorySectionOperations.validatePastMedicalHistorySectionText(this, diagnostics, context);
-  }
+		return PastMedicalHistorySectionOperations.validatePastMedicalHistorySectionText(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public PastMedicalHistorySection init() {
-      return Initializer.Util.init(this);
-  }
+		return Initializer.Util.init(this);
+	}
 
-  /**
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    public PastMedicalHistorySection init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-        Initializer.Util.init(this, initializers);
-        return this;
-    }
+	/**
+	   * <!-- begin-user-doc -->
+	   * <!-- end-user-doc -->
+	   * @generated
+	   */
+	public PastMedicalHistorySection init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+		Initializer.Util.init(this, initializers);
+		return this;
+	}
 } // PastMedicalHistorySectionImpl

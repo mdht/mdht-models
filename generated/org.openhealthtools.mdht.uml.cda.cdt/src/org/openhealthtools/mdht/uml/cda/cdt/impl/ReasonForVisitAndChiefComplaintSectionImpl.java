@@ -21,7 +21,6 @@ import org.openhealthtools.mdht.uml.cda.cdt.CDTPackage;
 import org.openhealthtools.mdht.uml.cda.cdt.ReasonForVisitAndChiefComplaintSection;
 import org.openhealthtools.mdht.uml.cda.cdt.operations.ReasonForVisitAndChiefComplaintSectionOperations;
 import org.openhealthtools.mdht.uml.cda.impl.SectionImpl;
-import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
 
 /**
  * <!-- begin-user-doc -->
@@ -35,60 +34,62 @@ import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
 public class ReasonForVisitAndChiefComplaintSectionImpl extends SectionImpl implements
 		ReasonForVisitAndChiefComplaintSection {
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	protected ReasonForVisitAndChiefComplaintSectionImpl() {
-    super();
-  }
+		super();
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	@Override
 	protected EClass eStaticClass() {
-    return CDTPackage.Literals.REASON_FOR_VISIT_AND_CHIEF_COMPLAINT_SECTION;
-  }
+		return CDTPackage.Literals.REASON_FOR_VISIT_AND_CHIEF_COMPLAINT_SECTION;
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public boolean validateReasonForVisitAndChiefComplaintSectionTemplateId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-    return ReasonForVisitAndChiefComplaintSectionOperations.validateReasonForVisitAndChiefComplaintSectionTemplateId(this, diagnostics, context);
-  }
+		return ReasonForVisitAndChiefComplaintSectionOperations.validateReasonForVisitAndChiefComplaintSectionTemplateId(
+			this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public boolean validateReasonForVisitAndChiefComplaintSectionCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-    return ReasonForVisitAndChiefComplaintSectionOperations.validateReasonForVisitAndChiefComplaintSectionCode(this, diagnostics, context);
-  }
+		return ReasonForVisitAndChiefComplaintSectionOperations.validateReasonForVisitAndChiefComplaintSectionCode(
+			this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public ReasonForVisitAndChiefComplaintSection init() {
-      return Initializer.Util.init(this);
-  }
+		return Initializer.Util.init(this);
+	}
 
-  /**
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    public ReasonForVisitAndChiefComplaintSection init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-        Initializer.Util.init(this, initializers);
-        return this;
-    }
+	/**
+	   * <!-- begin-user-doc -->
+	   * <!-- end-user-doc -->
+	   * @generated
+	   */
+	public ReasonForVisitAndChiefComplaintSection init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+		Initializer.Util.init(this, initializers);
+		return this;
+	}
 } // ReasonForVisitAndChiefComplaintSectionImpl

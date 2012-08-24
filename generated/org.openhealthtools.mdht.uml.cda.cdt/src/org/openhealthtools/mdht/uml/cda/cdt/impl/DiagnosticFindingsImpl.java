@@ -21,7 +21,6 @@ import org.openhealthtools.mdht.uml.cda.ccd.impl.ResultsSectionImpl;
 import org.openhealthtools.mdht.uml.cda.cdt.CDTPackage;
 import org.openhealthtools.mdht.uml.cda.cdt.DiagnosticFindings;
 import org.openhealthtools.mdht.uml.cda.cdt.operations.DiagnosticFindingsOperations;
-import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
 
 /**
  * <!-- begin-user-doc -->
@@ -34,50 +33,51 @@ import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
  */
 public class DiagnosticFindingsImpl extends ResultsSectionImpl implements DiagnosticFindings {
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	protected DiagnosticFindingsImpl() {
-    super();
-  }
+		super();
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	@Override
 	protected EClass eStaticClass() {
-    return CDTPackage.Literals.DIAGNOSTIC_FINDINGS;
-  }
+		return CDTPackage.Literals.DIAGNOSTIC_FINDINGS;
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public boolean validateDiagnosticFindingsTitle(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return DiagnosticFindingsOperations.validateDiagnosticFindingsTitle(this, diagnostics, context);
-  }
+		return DiagnosticFindingsOperations.validateDiagnosticFindingsTitle(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	@Override
 	public DiagnosticFindings init() {
-      return Initializer.Util.init(this);
-  }
+		return Initializer.Util.init(this);
+	}
 
-  /**
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    public DiagnosticFindings init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-        Initializer.Util.init(this, initializers);
-        return this;
-    }
+	/**
+	   * <!-- begin-user-doc -->
+	   * <!-- end-user-doc -->
+	   * @generated
+	   */
+	@Override
+	public DiagnosticFindings init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+		Initializer.Util.init(this, initializers);
+		return this;
+	}
 } // DiagnosticFindingsImpl

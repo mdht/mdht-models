@@ -20,7 +20,6 @@ import org.openhealthtools.mdht.emf.runtime.util.Initializer;
 import org.openhealthtools.mdht.uml.cda.cdt.CDTPackage;
 import org.openhealthtools.mdht.uml.cda.cdt.UnstructuredDocument;
 import org.openhealthtools.mdht.uml.cda.cdt.operations.UnstructuredDocumentOperations;
-import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
 
 /**
  * <!-- begin-user-doc -->
@@ -33,178 +32,188 @@ import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
  */
 public class UnstructuredDocumentImpl extends GeneralHeaderConstraintsImpl implements UnstructuredDocument {
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	protected UnstructuredDocumentImpl() {
-    super();
-  }
+		super();
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	@Override
 	protected EClass eStaticClass() {
-    return CDTPackage.Literals.UNSTRUCTURED_DOCUMENT;
-  }
+		return CDTPackage.Literals.UNSTRUCTURED_DOCUMENT;
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public boolean validateUnstructuredDocumentPatientRoleHasId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return UnstructuredDocumentOperations.validateUnstructuredDocumentPatientRoleHasId(this, diagnostics, context);
-  }
+		return UnstructuredDocumentOperations.validateUnstructuredDocumentPatientRoleHasId(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public boolean validateUnstructuredDocumentAssignedAuthorHasAddr(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-    return UnstructuredDocumentOperations.validateUnstructuredDocumentAssignedAuthorHasAddr(this, diagnostics, context);
-  }
+		return UnstructuredDocumentOperations.validateUnstructuredDocumentAssignedAuthorHasAddr(
+			this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public boolean validateUnstructuredDocumentAssignedAuthorHasTelecom(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-    return UnstructuredDocumentOperations.validateUnstructuredDocumentAssignedAuthorHasTelecom(this, diagnostics, context);
-  }
+		return UnstructuredDocumentOperations.validateUnstructuredDocumentAssignedAuthorHasTelecom(
+			this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public boolean validateUnstructuredDocumentHasRepresentedCustodianOrganization(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-    return UnstructuredDocumentOperations.validateUnstructuredDocumentHasRepresentedCustodianOrganization(this, diagnostics, context);
-  }
+		return UnstructuredDocumentOperations.validateUnstructuredDocumentHasRepresentedCustodianOrganization(
+			this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public boolean validateUnstructuredDocumentHasRepresentedCustodianOrganizationId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-    return UnstructuredDocumentOperations.validateUnstructuredDocumentHasRepresentedCustodianOrganizationId(this, diagnostics, context);
-  }
+		return UnstructuredDocumentOperations.validateUnstructuredDocumentHasRepresentedCustodianOrganizationId(
+			this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public boolean validateUnstructuredDocumentHasRepresentedCustodianOrganizationName(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-    return UnstructuredDocumentOperations.validateUnstructuredDocumentHasRepresentedCustodianOrganizationName(this, diagnostics, context);
-  }
+		return UnstructuredDocumentOperations.validateUnstructuredDocumentHasRepresentedCustodianOrganizationName(
+			this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public boolean validateUnstructuredDocumentHasRepresentedCustodianOrganizationTelecom(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-    return UnstructuredDocumentOperations.validateUnstructuredDocumentHasRepresentedCustodianOrganizationTelecom(this, diagnostics, context);
-  }
+		return UnstructuredDocumentOperations.validateUnstructuredDocumentHasRepresentedCustodianOrganizationTelecom(
+			this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public boolean validateUnstructuredDocumentHasRepresentedCustodianOrganizationAddr(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-    return UnstructuredDocumentOperations.validateUnstructuredDocumentHasRepresentedCustodianOrganizationAddr(this, diagnostics, context);
-  }
+		return UnstructuredDocumentOperations.validateUnstructuredDocumentHasRepresentedCustodianOrganizationAddr(
+			this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public boolean validateUnstructuredDocumentHasNonXMLBodyText(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-    return UnstructuredDocumentOperations.validateUnstructuredDocumentHasNonXMLBodyText(this, diagnostics, context);
-  }
+		return UnstructuredDocumentOperations.validateUnstructuredDocumentHasNonXMLBodyText(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public boolean validateUnstructuredDocumentHasTextReferenceOrRepresentation(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-    return UnstructuredDocumentOperations.validateUnstructuredDocumentHasTextReferenceOrRepresentation(this, diagnostics, context);
-  }
+		return UnstructuredDocumentOperations.validateUnstructuredDocumentHasTextReferenceOrRepresentation(
+			this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public boolean validateUnstructuredDocumentHasTextMediaTypeValueSet(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-    return UnstructuredDocumentOperations.validateUnstructuredDocumentHasTextMediaTypeValueSet(this, diagnostics, context);
-  }
+		return UnstructuredDocumentOperations.validateUnstructuredDocumentHasTextMediaTypeValueSet(
+			this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public boolean validateUnstructuredDocumentEffectiveTime(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return UnstructuredDocumentOperations.validateUnstructuredDocumentEffectiveTime(this, diagnostics, context);
-  }
+		return UnstructuredDocumentOperations.validateUnstructuredDocumentEffectiveTime(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public boolean validateUnstructuredDocumentCustodian(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return UnstructuredDocumentOperations.validateUnstructuredDocumentCustodian(this, diagnostics, context);
-  }
+		return UnstructuredDocumentOperations.validateUnstructuredDocumentCustodian(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	@Override
 	public boolean validateGeneralHeaderConstraintsTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return UnstructuredDocumentOperations.validateGeneralHeaderConstraintsTemplateId(this, diagnostics, context);
-  }
+		return UnstructuredDocumentOperations.validateGeneralHeaderConstraintsTemplateId(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	@Override
 	public UnstructuredDocument init() {
-      return Initializer.Util.init(this);
-  }
+		return Initializer.Util.init(this);
+	}
 
-  /**
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    public UnstructuredDocument init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-        Initializer.Util.init(this, initializers);
-        return this;
-    }
+	/**
+	   * <!-- begin-user-doc -->
+	   * <!-- end-user-doc -->
+	   * @generated
+	   */
+	@Override
+	public UnstructuredDocument init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+		Initializer.Util.init(this, initializers);
+		return this;
+	}
 } // UnstructuredDocumentImpl
