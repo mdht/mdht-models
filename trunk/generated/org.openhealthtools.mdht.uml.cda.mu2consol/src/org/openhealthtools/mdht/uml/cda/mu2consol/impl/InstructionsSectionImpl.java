@@ -65,12 +65,12 @@ public class InstructionsSectionImpl extends
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @generated
 	 */
 	@Override
-	public boolean validateInstructionsSectionTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateInstructionsSectionTemplateId(
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return InstructionsSectionOperations.validateInstructionsSectionTemplateId(this, diagnostics, context);
 	}
 
@@ -84,11 +84,12 @@ public class InstructionsSectionImpl extends
 	}
 
 	/**
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+     * <!-- begin-user-doc --> <!-- end-user-doc -->
      * @generated
      */
-    public InstructionsSection init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+	@Override
+	public InstructionsSection init(
+			Iterable<? extends Initializer<? extends EObject>> initializers) {
         Initializer.Util.init(this, initializers);
         return this;
     }

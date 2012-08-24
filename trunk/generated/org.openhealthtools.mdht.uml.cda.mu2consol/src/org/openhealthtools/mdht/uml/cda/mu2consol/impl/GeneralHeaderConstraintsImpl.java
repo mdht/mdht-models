@@ -25,7 +25,9 @@ import org.openhealthtools.mdht.uml.cda.mu2consol.operations.GeneralHeaderConstr
  *
  * @generated
  */
-public class GeneralHeaderConstraintsImpl extends org.openhealthtools.mdht.uml.cda.consol.impl.GeneralHeaderConstraintsImpl
+public class GeneralHeaderConstraintsImpl
+		extends
+		org.openhealthtools.mdht.uml.cda.consol.impl.GeneralHeaderConstraintsImpl
 		implements GeneralHeaderConstraints {
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
@@ -45,107 +47,107 @@ public class GeneralHeaderConstraintsImpl extends org.openhealthtools.mdht.uml.c
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateMu2consolGeneralHeaderConstraintsRecordTarget(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateMu2consolGeneralHeaderConstraintsRecordTarget(
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return GeneralHeaderConstraintsOperations.validateMu2consolGeneralHeaderConstraintsRecordTarget(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateMu2consolGeneralHeaderConstraintsDocumentationOf(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateMu2consolGeneralHeaderConstraintsDocumentationOf(
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return GeneralHeaderConstraintsOperations.validateMu2consolGeneralHeaderConstraintsDocumentationOf(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateGeneralHeaderConstraintsDocumentationOfServiceEventPerformer1AssignedEntity(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateGeneralHeaderConstraintsDocumentationOfServiceEventPerformer1AssignedEntity(
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsDocumentationOfServiceEventPerformer1AssignedEntity(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateGeneralHeaderConstraintsDocumentationOfServiceEventPerformer(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateGeneralHeaderConstraintsDocumentationOfServiceEventPerformer(
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsDocumentationOfServiceEventPerformer(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateGeneralHeaderConstraintsDocumentationOfServiceEvent(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateGeneralHeaderConstraintsDocumentationOfServiceEvent(
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsDocumentationOfServiceEvent(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @generated
 	 */
 	@Override
-	public boolean validateGeneralHeaderConstraintsRecordTargetPatientRolePatientLanguageCommunicationLanguageCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateGeneralHeaderConstraintsRecordTargetPatientRolePatientLanguageCommunicationLanguageCode(
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsRecordTargetPatientRolePatientLanguageCommunicationLanguageCode(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @generated
 	 */
 	@Override
-	public boolean validateGeneralHeaderConstraintsRecordTargetPatientRolePatientName(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateGeneralHeaderConstraintsRecordTargetPatientRolePatientName(
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsRecordTargetPatientRolePatientName(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @generated
 	 */
 	@Override
-	public boolean validateGeneralHeaderConstraintsRecordTargetPatientRolePatientAdministrativeGenderCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateGeneralHeaderConstraintsRecordTargetPatientRolePatientAdministrativeGenderCode(
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsRecordTargetPatientRolePatientAdministrativeGenderCode(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @generated
 	 */
 	@Override
-	public boolean validateGeneralHeaderConstraintsRecordTargetPatientRolePatientEthnicGroupCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateGeneralHeaderConstraintsRecordTargetPatientRolePatientEthnicGroupCode(
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsRecordTargetPatientRolePatientEthnicGroupCode(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @generated
 	 */
 	@Override
-	public boolean validateGeneralHeaderConstraintsRecordTargetPatientRolePatientRaceCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateGeneralHeaderConstraintsRecordTargetPatientRolePatientRaceCode(
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsRecordTargetPatientRolePatientRaceCode(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @generated
 	 */
 	@Override
-	public boolean validateGeneralHeaderConstraintsRecordTargetPatientRolePatientBirthTime(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateGeneralHeaderConstraintsRecordTargetPatientRolePatientBirthTime(
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsRecordTargetPatientRolePatientBirthTime(this, diagnostics, context);
 	}
 
@@ -189,11 +191,12 @@ public class GeneralHeaderConstraintsImpl extends org.openhealthtools.mdht.uml.c
 	}
 
 	/**
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+     * <!-- begin-user-doc --> <!-- end-user-doc -->
      * @generated
      */
-    public GeneralHeaderConstraints init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+	@Override
+	public GeneralHeaderConstraints init(
+			Iterable<? extends Initializer<? extends EObject>> initializers) {
         Initializer.Util.init(this, initializers);
         return this;
     }

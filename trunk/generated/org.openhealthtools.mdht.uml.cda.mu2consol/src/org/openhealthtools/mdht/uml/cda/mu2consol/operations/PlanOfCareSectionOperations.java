@@ -59,8 +59,7 @@ public class PlanOfCareSectionOperations
 
 	/**
 	 * The cached OCL expression body for the '{@link #validateMu2consolPlanOfCareSectionCarePlanningForPlanOfCare(PlanOfCareSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Mu2consol Plan Of Care Section Care Planning For Plan Of Care</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @see #validateMu2consolPlanOfCareSectionCarePlanningForPlanOfCare(PlanOfCareSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	 * @generated
 	 * @ordered
@@ -69,28 +68,37 @@ public class PlanOfCareSectionOperations
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateMu2consolPlanOfCareSectionCarePlanningForPlanOfCare(PlanOfCareSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Mu2consol Plan Of Care Section Care Planning For Plan Of Care</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @see #validateMu2consolPlanOfCareSectionCarePlanningForPlanOfCare(PlanOfCareSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	 * @generated
 	 * @ordered
 	 */
-	
+
 	protected static Constraint VALIDATE_MU2CONSOL_PLAN_OF_CARE_SECTION_CARE_PLANNING_FOR_PLAN_OF_CARE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.getActs()->exists(a : cda::Act | a.oclIsKindOf(consol::PlanOfCareActivityAct)) or self.getObservations()->exists(o : cda::Observation | o.oclIsKindOf(consol::PlanOfCareActivityObservation)) or self.getEncounters()->exists(e : cda::Encounter | e.oclIsKindOf(consol::PlanOfCareActivityEncounter))
-	 * @param planOfCareSection The receiving '<em><b>Plan Of Care Section</b></em>' model object.
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc --> <!-- begin-model-doc -->
+	 * self.getActs()->exists(a : cda::Act |
+	 * a.oclIsKindOf(consol::PlanOfCareActivityAct)) or
+	 * self.getObservations()->exists(o : cda::Observation |
+	 * o.oclIsKindOf(consol::PlanOfCareActivityObservation)) or
+	 * self.getEncounters()->exists(e : cda::Encounter |
+	 * e.oclIsKindOf(consol::PlanOfCareActivityEncounter))
+	 * 
+	 * @param planOfCareSection
+	 *            The receiving '<em><b>Plan Of Care Section</b></em>' model
+	 *            object.
+	 * @param diagnostics
+	 *            The chain of diagnostics to which problems are to be appended.
+	 * @param context
+	 *            The cache of context-specific information. <!-- end-model-doc
+	 *            -->
 	 * @generated
 	 */
-	
-	public static  boolean validateMu2consolPlanOfCareSectionCarePlanningForPlanOfCare(PlanOfCareSection planOfCareSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+	public static boolean validateMu2consolPlanOfCareSectionCarePlanningForPlanOfCare(
+			PlanOfCareSection planOfCareSection, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
   	  
 		if (VALIDATE_MU2CONSOL_PLAN_OF_CARE_SECTION_CARE_PLANNING_FOR_PLAN_OF_CARE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
@@ -159,7 +167,7 @@ public class PlanOfCareSectionOperations
 			PlanOfCareSection planOfCareSection) {
 		if (GETMU2CONSOL_PLAN_OF_CARE_ACTIVITY_ACT__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(Mu2consolPackage.Literals.PLAN_OF_CARE_SECTION, Mu2consolPackage.Literals.PLAN_OF_CARE_SECTION.getEAllOperations().get(71));
+			helper.setOperationContext(Mu2consolPackage.Literals.PLAN_OF_CARE_SECTION, Mu2consolPackage.Literals.PLAN_OF_CARE_SECTION.getEAllOperations().get(75));
 			try {
 				GETMU2CONSOL_PLAN_OF_CARE_ACTIVITY_ACT__EOCL_QRY = helper.createQuery(GETMU2CONSOL_PLAN_OF_CARE_ACTIVITY_ACT__EOCL_EXP);
 			}
@@ -210,7 +218,7 @@ public class PlanOfCareSectionOperations
 			PlanOfCareSection planOfCareSection) {
 		if (GETMU2CONSOL_PLAN_OF_CARE_ACTIVITY_ENCOUNTER__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(Mu2consolPackage.Literals.PLAN_OF_CARE_SECTION, Mu2consolPackage.Literals.PLAN_OF_CARE_SECTION.getEAllOperations().get(72));
+			helper.setOperationContext(Mu2consolPackage.Literals.PLAN_OF_CARE_SECTION, Mu2consolPackage.Literals.PLAN_OF_CARE_SECTION.getEAllOperations().get(76));
 			try {
 				GETMU2CONSOL_PLAN_OF_CARE_ACTIVITY_ENCOUNTER__EOCL_QRY = helper.createQuery(GETMU2CONSOL_PLAN_OF_CARE_ACTIVITY_ENCOUNTER__EOCL_EXP);
 			}
@@ -261,7 +269,7 @@ public class PlanOfCareSectionOperations
 			PlanOfCareSection planOfCareSection) {
 		if (GETMU2CONSOL_PLAN_OF_CARE_ACTIVITY_OBSERVATION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(Mu2consolPackage.Literals.PLAN_OF_CARE_SECTION, Mu2consolPackage.Literals.PLAN_OF_CARE_SECTION.getEAllOperations().get(73));
+			helper.setOperationContext(Mu2consolPackage.Literals.PLAN_OF_CARE_SECTION, Mu2consolPackage.Literals.PLAN_OF_CARE_SECTION.getEAllOperations().get(77));
 			try {
 				GETMU2CONSOL_PLAN_OF_CARE_ACTIVITY_OBSERVATION__EOCL_QRY = helper.createQuery(GETMU2CONSOL_PLAN_OF_CARE_ACTIVITY_OBSERVATION__EOCL_EXP);
 			}

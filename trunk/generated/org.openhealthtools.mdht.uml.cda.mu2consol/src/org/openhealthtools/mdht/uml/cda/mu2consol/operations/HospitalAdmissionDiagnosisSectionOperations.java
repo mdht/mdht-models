@@ -158,7 +158,7 @@ public class HospitalAdmissionDiagnosisSectionOperations
 			HospitalAdmissionDiagnosisSection hospitalAdmissionDiagnosisSection) {
 		if (GETMU2CONSOL_HOSPITAL_ADMISSION_DIAGNOSIS__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(Mu2consolPackage.Literals.HOSPITAL_ADMISSION_DIAGNOSIS_SECTION, Mu2consolPackage.Literals.HOSPITAL_ADMISSION_DIAGNOSIS_SECTION.getEAllOperations().get(62));
+			helper.setOperationContext(Mu2consolPackage.Literals.HOSPITAL_ADMISSION_DIAGNOSIS_SECTION, Mu2consolPackage.Literals.HOSPITAL_ADMISSION_DIAGNOSIS_SECTION.getEAllOperations().get(63));
 			try {
 				GETMU2CONSOL_HOSPITAL_ADMISSION_DIAGNOSIS__EOCL_QRY = helper.createQuery(GETMU2CONSOL_HOSPITAL_ADMISSION_DIAGNOSIS__EOCL_EXP);
 			}

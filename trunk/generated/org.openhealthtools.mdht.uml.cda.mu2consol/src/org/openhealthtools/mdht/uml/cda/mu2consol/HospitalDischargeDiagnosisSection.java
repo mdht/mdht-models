@@ -64,9 +64,9 @@ public interface HospitalDischargeDiagnosisSection
 	public HospitalDischargeDiagnosisSection init();
 
 	/**
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+     * <!-- begin-user-doc --> <!-- end-user-doc -->
      * @generated
      */
-    public HospitalDischargeDiagnosisSection init(Iterable<? extends Initializer<? extends EObject>> initializers);
+	public HospitalDischargeDiagnosisSection init(
+			Iterable<? extends Initializer<? extends EObject>> initializers);
 } // HospitalDischargeDiagnosisSection

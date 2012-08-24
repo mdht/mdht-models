@@ -164,7 +164,7 @@ public class HospitalAdmissionMedicationsSectionEntriesOptionalOperations
 			HospitalAdmissionMedicationsSectionEntriesOptional hospitalAdmissionMedicationsSectionEntriesOptional) {
 		if (GETMU2CONSOL_ADMISSION_MEDICATIONS__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(Mu2consolPackage.Literals.HOSPITAL_ADMISSION_MEDICATIONS_SECTION_ENTRIES_OPTIONAL, Mu2consolPackage.Literals.HOSPITAL_ADMISSION_MEDICATIONS_SECTION_ENTRIES_OPTIONAL.getEAllOperations().get(62));
+			helper.setOperationContext(Mu2consolPackage.Literals.HOSPITAL_ADMISSION_MEDICATIONS_SECTION_ENTRIES_OPTIONAL, Mu2consolPackage.Literals.HOSPITAL_ADMISSION_MEDICATIONS_SECTION_ENTRIES_OPTIONAL.getEAllOperations().get(63));
 			try {
 				GETMU2CONSOL_ADMISSION_MEDICATIONS__EOCL_QRY = helper.createQuery(GETMU2CONSOL_ADMISSION_MEDICATIONS__EOCL_EXP);
 			}

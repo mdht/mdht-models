@@ -74,11 +74,12 @@ public class PostprocedureDiagnosisSectionImpl
 	}
 
 	/**
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+     * <!-- begin-user-doc --> <!-- end-user-doc -->
      * @generated
      */
-    public PostprocedureDiagnosisSection init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+	@Override
+	public PostprocedureDiagnosisSection init(
+			Iterable<? extends Initializer<? extends EObject>> initializers) {
         Initializer.Util.init(this, initializers);
         return this;
     }

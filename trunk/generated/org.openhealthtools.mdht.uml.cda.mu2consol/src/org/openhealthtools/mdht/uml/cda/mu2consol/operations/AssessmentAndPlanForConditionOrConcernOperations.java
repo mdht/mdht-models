@@ -53,8 +53,7 @@ public class AssessmentAndPlanForConditionOrConcernOperations extends
 
 	/**
 	 * The cached OCL expression body for the '{@link #validateAssessmentAndPlanForConditionOrConcernProblemObservation(AssessmentAndPlanForConditionOrConcern, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Assessment And Plan For Condition Or Concern Problem Observation</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @see #validateAssessmentAndPlanForConditionOrConcernProblemObservation(AssessmentAndPlanForConditionOrConcern, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	 * @generated
 	 * @ordered
@@ -63,28 +62,35 @@ public class AssessmentAndPlanForConditionOrConcernOperations extends
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateAssessmentAndPlanForConditionOrConcernProblemObservation(AssessmentAndPlanForConditionOrConcern, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Assessment And Plan For Condition Or Concern Problem Observation</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @see #validateAssessmentAndPlanForConditionOrConcernProblemObservation(AssessmentAndPlanForConditionOrConcern, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	 * @generated
 	 * @ordered
 	 */
-	
+
 	protected static Constraint VALIDATE_ASSESSMENT_AND_PLAN_FOR_CONDITION_OR_CONCERN_PROBLEM_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.entry->one(entry : cda::Entry | not entry.observation.oclIsUndefined() and entry.observation.oclIsKindOf(consol::ProblemObservation))
-	 * @param assessmentAndPlanForConditionOrConcern The receiving '<em><b>Assessment And Plan For Condition Or Concern</b></em>' model object.
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc --> <!-- begin-model-doc -->
+	 * self.entry->one(entry : cda::Entry | not
+	 * entry.observation.oclIsUndefined() and
+	 * entry.observation.oclIsKindOf(consol::ProblemObservation))
+	 * 
+	 * @param assessmentAndPlanForConditionOrConcern
+	 *            The receiving '
+	 *            <em><b>Assessment And Plan For Condition Or Concern</b></em>'
+	 *            model object.
+	 * @param diagnostics
+	 *            The chain of diagnostics to which problems are to be appended.
+	 * @param context
+	 *            The cache of context-specific information. <!-- end-model-doc
+	 *            -->
 	 * @generated
 	 */
-	
-	public static  boolean validateAssessmentAndPlanForConditionOrConcernProblemObservation(AssessmentAndPlanForConditionOrConcern assessmentAndPlanForConditionOrConcern, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+	public static boolean validateAssessmentAndPlanForConditionOrConcernProblemObservation(
+			AssessmentAndPlanForConditionOrConcern assessmentAndPlanForConditionOrConcern,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
   	  
 		if (VALIDATE_ASSESSMENT_AND_PLAN_FOR_CONDITION_OR_CONCERN_PROBLEM_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
@@ -150,7 +156,7 @@ public class AssessmentAndPlanForConditionOrConcernOperations extends
 			AssessmentAndPlanForConditionOrConcern assessmentAndPlanForConditionOrConcern) {
 		if (GET_PROBLEM_OBSERVATION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(Mu2consolPackage.Literals.ASSESSMENT_AND_PLAN_FOR_CONDITION_OR_CONCERN, Mu2consolPackage.Literals.ASSESSMENT_AND_PLAN_FOR_CONDITION_OR_CONCERN.getEAllOperations().get(61));
+			helper.setOperationContext(Mu2consolPackage.Literals.ASSESSMENT_AND_PLAN_FOR_CONDITION_OR_CONCERN, Mu2consolPackage.Literals.ASSESSMENT_AND_PLAN_FOR_CONDITION_OR_CONCERN.getEAllOperations().get(62));
 			try {
 				GET_PROBLEM_OBSERVATION__EOCL_QRY = helper.createQuery(GET_PROBLEM_OBSERVATION__EOCL_EXP);
 			}

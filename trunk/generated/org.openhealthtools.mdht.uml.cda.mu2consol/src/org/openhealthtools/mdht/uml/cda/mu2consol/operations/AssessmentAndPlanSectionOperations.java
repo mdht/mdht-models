@@ -91,7 +91,7 @@ public class AssessmentAndPlanSectionOperations
 			AssessmentAndPlanSection assessmentAndPlanSection) {
 		if (GET_PLAN_OF_CARE_ACTIVITY_PROCEDURE__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(Mu2consolPackage.Literals.ASSESSMENT_AND_PLAN_SECTION, Mu2consolPackage.Literals.ASSESSMENT_AND_PLAN_SECTION.getEAllOperations().get(60));
+			helper.setOperationContext(Mu2consolPackage.Literals.ASSESSMENT_AND_PLAN_SECTION, Mu2consolPackage.Literals.ASSESSMENT_AND_PLAN_SECTION.getEAllOperations().get(61));
 			try {
 				GET_PLAN_OF_CARE_ACTIVITY_PROCEDURE__EOCL_QRY = helper.createQuery(GET_PLAN_OF_CARE_ACTIVITY_PROCEDURE__EOCL_EXP);
 			}
@@ -141,7 +141,7 @@ public class AssessmentAndPlanSectionOperations
 			AssessmentAndPlanSection assessmentAndPlanSection) {
 		if (GET_PLAN_OF_CARE_ACTIVITY_SUBSTANCE_ADMINISTRATION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(Mu2consolPackage.Literals.ASSESSMENT_AND_PLAN_SECTION, Mu2consolPackage.Literals.ASSESSMENT_AND_PLAN_SECTION.getEAllOperations().get(61));
+			helper.setOperationContext(Mu2consolPackage.Literals.ASSESSMENT_AND_PLAN_SECTION, Mu2consolPackage.Literals.ASSESSMENT_AND_PLAN_SECTION.getEAllOperations().get(62));
 			try {
 				GET_PLAN_OF_CARE_ACTIVITY_SUBSTANCE_ADMINISTRATION__EOCL_QRY = helper.createQuery(GET_PLAN_OF_CARE_ACTIVITY_SUBSTANCE_ADMINISTRATION__EOCL_EXP);
 			}
@@ -194,7 +194,7 @@ public class AssessmentAndPlanSectionOperations
 			AssessmentAndPlanSection assessmentAndPlanSection) {
 		if (GET_PLAN_OF_CARE_ACTIVITY_SUPPLY__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(Mu2consolPackage.Literals.ASSESSMENT_AND_PLAN_SECTION, Mu2consolPackage.Literals.ASSESSMENT_AND_PLAN_SECTION.getEAllOperations().get(62));
+			helper.setOperationContext(Mu2consolPackage.Literals.ASSESSMENT_AND_PLAN_SECTION, Mu2consolPackage.Literals.ASSESSMENT_AND_PLAN_SECTION.getEAllOperations().get(63));
 			try {
 				GET_PLAN_OF_CARE_ACTIVITY_SUPPLY__EOCL_QRY = helper.createQuery(GET_PLAN_OF_CARE_ACTIVITY_SUPPLY__EOCL_EXP);
 			}
@@ -243,7 +243,7 @@ public class AssessmentAndPlanSectionOperations
 			AssessmentAndPlanSection assessmentAndPlanSection) {
 		if (GET_PROBLEM_OBSERVATION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(Mu2consolPackage.Literals.ASSESSMENT_AND_PLAN_SECTION, Mu2consolPackage.Literals.ASSESSMENT_AND_PLAN_SECTION.getEAllOperations().get(63));
+			helper.setOperationContext(Mu2consolPackage.Literals.ASSESSMENT_AND_PLAN_SECTION, Mu2consolPackage.Literals.ASSESSMENT_AND_PLAN_SECTION.getEAllOperations().get(64));
 			try {
 				GET_PROBLEM_OBSERVATION__EOCL_QRY = helper.createQuery(GET_PROBLEM_OBSERVATION__EOCL_EXP);
 			}

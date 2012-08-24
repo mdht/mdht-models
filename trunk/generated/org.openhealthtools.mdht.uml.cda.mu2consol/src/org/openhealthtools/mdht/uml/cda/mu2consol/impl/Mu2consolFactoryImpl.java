@@ -11,6 +11,7 @@ import org.eclipse.emf.ecore.EObject;
 import org.eclipse.emf.ecore.EPackage;
 import org.eclipse.emf.ecore.impl.EFactoryImpl;
 import org.eclipse.emf.ecore.plugin.EcorePlugin;
+import org.openhealthtools.mdht.uml.cda.mu2consol.*;
 import org.openhealthtools.mdht.uml.cda.mu2consol.AllergiesSectionEntriesOptional;
 import org.openhealthtools.mdht.uml.cda.mu2consol.AssessmentAndPlanForCarePlanning;
 import org.openhealthtools.mdht.uml.cda.mu2consol.AssessmentAndPlanForConditionOrConcern;
@@ -84,11 +85,13 @@ public class Mu2consolFactoryImpl extends EFactoryImpl implements
 			case Mu2consolPackage.PREOPERATIVE_DIAGNOSIS_SECTION: return createPreoperativeDiagnosisSection();
 			case Mu2consolPackage.MEDICATIONS_ADMINISTERED_SECTION: return createMedicationsAdministeredSection();
 			case Mu2consolPackage.HOSPITAL_ADMISSION_MEDICATIONS_SECTION_ENTRIES_OPTIONAL: return createHospitalAdmissionMedicationsSectionEntriesOptional();
+			case Mu2consolPackage.SOCIAL_HISTORY_SECTION: return createSocialHistorySection();
 			case Mu2consolPackage.ALLERGIES_SECTION_ENTRIES_OPTIONAL: return createAllergiesSectionEntriesOptional();
 			case Mu2consolPackage.POSTPROCEDURE_DIAGNOSIS_SECTION: return createPostprocedureDiagnosisSection();
 			case Mu2consolPackage.ASSESSMENT_AND_PLAN_FOR_CARE_PLANNING: return createAssessmentAndPlanForCarePlanning();
 			case Mu2consolPackage.ASSESSMENT_AND_PLAN_FOR_CONDITION_OR_CONCERN: return createAssessmentAndPlanForConditionOrConcern();
 			case Mu2consolPackage.INSTRUCTIONS_SECTION: return createInstructionsSection();
+			case Mu2consolPackage.CLINICAL_OFFICE_VISIT_SUMMARY: return createClinicalOfficeVisitSummary();
 			default:
 				throw new IllegalArgumentException("The class '" + eClass.getName() + "' is not a valid classifier");
 		}
@@ -161,6 +164,15 @@ public class Mu2consolFactoryImpl extends EFactoryImpl implements
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @generated
 	 */
+	public ClinicalOfficeVisitSummary createClinicalOfficeVisitSummary() {
+		ClinicalOfficeVisitSummaryImpl clinicalOfficeVisitSummary = new ClinicalOfficeVisitSummaryImpl();
+		return clinicalOfficeVisitSummary;
+	}
+
+	/**
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * @generated
+	 */
 	public AssessmentSection createAssessmentSection() {
 		AssessmentSectionImpl assessmentSection = new AssessmentSectionImpl();
 		return assessmentSection;
@@ -227,6 +239,15 @@ public class Mu2consolFactoryImpl extends EFactoryImpl implements
 	public HospitalAdmissionMedicationsSectionEntriesOptional createHospitalAdmissionMedicationsSectionEntriesOptional() {
 		HospitalAdmissionMedicationsSectionEntriesOptionalImpl hospitalAdmissionMedicationsSectionEntriesOptional = new HospitalAdmissionMedicationsSectionEntriesOptionalImpl();
 		return hospitalAdmissionMedicationsSectionEntriesOptional;
+	}
+
+	/**
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * @generated
+	 */
+	public SocialHistorySection createSocialHistorySection() {
+		SocialHistorySectionImpl socialHistorySection = new SocialHistorySectionImpl();
+		return socialHistorySection;
 	}
 
 	/**

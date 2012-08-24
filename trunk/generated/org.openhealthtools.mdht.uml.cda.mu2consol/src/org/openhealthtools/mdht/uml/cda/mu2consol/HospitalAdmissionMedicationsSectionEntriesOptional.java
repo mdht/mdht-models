@@ -66,9 +66,9 @@ public interface HospitalAdmissionMedicationsSectionEntriesOptional
 	public HospitalAdmissionMedicationsSectionEntriesOptional init();
 
 	/**
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+     * <!-- begin-user-doc --> <!-- end-user-doc -->
      * @generated
      */
-    public HospitalAdmissionMedicationsSectionEntriesOptional init(Iterable<? extends Initializer<? extends EObject>> initializers);
+	public HospitalAdmissionMedicationsSectionEntriesOptional init(
+			Iterable<? extends Initializer<? extends EObject>> initializers);
 } // HospitalAdmissionMedicationsSectionEntriesOptional

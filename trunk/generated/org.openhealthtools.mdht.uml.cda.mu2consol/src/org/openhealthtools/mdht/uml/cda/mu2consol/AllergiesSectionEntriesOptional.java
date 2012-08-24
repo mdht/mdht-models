@@ -63,9 +63,9 @@ public interface AllergiesSectionEntriesOptional extends
 	public AllergiesSectionEntriesOptional init();
 
 	/**
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+     * <!-- begin-user-doc --> <!-- end-user-doc -->
      * @generated
      */
-    public AllergiesSectionEntriesOptional init(Iterable<? extends Initializer<? extends EObject>> initializers);
+	public AllergiesSectionEntriesOptional init(
+			Iterable<? extends Initializer<? extends EObject>> initializers);
 } // AllergiesSectionEntriesOptional
