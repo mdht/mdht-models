@@ -34,12 +34,12 @@ import org.junit.runners.Suite;
 public class PhcrTests {
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public static junit.framework.Test suite() {
-    return new JUnit4TestAdapter( PhcrTests.class);
-  }
+		return new JUnit4TestAdapter(PhcrTests.class);
+	}
 
 } // PhcrTests

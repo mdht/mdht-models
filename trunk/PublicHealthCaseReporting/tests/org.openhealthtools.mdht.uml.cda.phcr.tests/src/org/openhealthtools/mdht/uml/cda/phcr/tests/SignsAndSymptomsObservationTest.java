@@ -52,67 +52,33 @@ public class SignsAndSymptomsObservationTest extends CDAValidationTest {
 	*/
 	@Test
 	public void testValidateSignsAndSymptomsObservationTemplateId() {
-      OperationsTestCase<SignsAndSymptomsObservation> validateSignsAndSymptomsObservationTemplateIdTestCase = new OperationsTestCase<SignsAndSymptomsObservation>(
-      "validateSignsAndSymptomsObservationTemplateId",
-      operationsForOCL.getOCLValue("VALIDATE_SIGNS_AND_SYMPTOMS_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP")
-      ,objectFactory) {
+		OperationsTestCase<SignsAndSymptomsObservation> validateSignsAndSymptomsObservationTemplateIdTestCase = new OperationsTestCase<SignsAndSymptomsObservation>(
+			"validateSignsAndSymptomsObservationTemplateId",
+			operationsForOCL.getOCLValue("VALIDATE_SIGNS_AND_SYMPTOMS_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
 
-      @Override
-      protected void updateToFail(SignsAndSymptomsObservation target) {
+			@Override
+			protected void updateToFail(SignsAndSymptomsObservation target) {
 
-      }
+			}
 
-      @Override
-      protected void updateToPass(SignsAndSymptomsObservation target) {
-        target.init();
-        
-        
-        
-        
-        
+			@Override
+			protected void updateToPass(SignsAndSymptomsObservation target) {
+				target.init();
 
-        
-        
+			}
 
-  
-      
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
 
-  
-    
-    
-      
-        
-    
-      
-        
-      
-        
-        
-        
-        
-        
-        
-        
-      
-      
-          
-      
-        
-      }
+				return SignsAndSymptomsObservationOperations.validateSignsAndSymptomsObservationTemplateId(
+					(SignsAndSymptomsObservation) objectToTest, diagnostician, map);
+			}
 
-      @Override
-      protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-      
-      
-      
-        return SignsAndSymptomsObservationOperations.validateSignsAndSymptomsObservationTemplateId(
-          (SignsAndSymptomsObservation) objectToTest, diagnostician, map);
-      }
+		};
 
-    };
-
-    validateSignsAndSymptomsObservationTemplateIdTestCase.doValidationTest();
-}
+		validateSignsAndSymptomsObservationTemplateIdTestCase.doValidationTest();
+	}
 
 	/**
 	*
@@ -120,67 +86,33 @@ public class SignsAndSymptomsObservationTest extends CDAValidationTest {
 	*/
 	@Test
 	public void testValidateSignsAndSymptomsObservationClassCode() {
-      OperationsTestCase<SignsAndSymptomsObservation> validateSignsAndSymptomsObservationClassCodeTestCase = new OperationsTestCase<SignsAndSymptomsObservation>(
-      "validateSignsAndSymptomsObservationClassCode",
-      operationsForOCL.getOCLValue("VALIDATE_SIGNS_AND_SYMPTOMS_OBSERVATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP")
-      ,objectFactory) {
+		OperationsTestCase<SignsAndSymptomsObservation> validateSignsAndSymptomsObservationClassCodeTestCase = new OperationsTestCase<SignsAndSymptomsObservation>(
+			"validateSignsAndSymptomsObservationClassCode",
+			operationsForOCL.getOCLValue("VALIDATE_SIGNS_AND_SYMPTOMS_OBSERVATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
 
-      @Override
-      protected void updateToFail(SignsAndSymptomsObservation target) {
+			@Override
+			protected void updateToFail(SignsAndSymptomsObservation target) {
 
-      }
+			}
 
-      @Override
-      protected void updateToPass(SignsAndSymptomsObservation target) {
-        target.init();
-        
-        
-        
-        
-        
+			@Override
+			protected void updateToPass(SignsAndSymptomsObservation target) {
+				target.init();
 
-        
-        
+			}
 
-  
-      
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
 
-  
-    
-    
-      
-        
-    
-      
-        
-      
-        
-        
-        
-        
-        
-        
-        
-      
-      
-          
-      
-        
-      }
+				return SignsAndSymptomsObservationOperations.validateSignsAndSymptomsObservationClassCode(
+					(SignsAndSymptomsObservation) objectToTest, diagnostician, map);
+			}
 
-      @Override
-      protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-      
-      
-      
-        return SignsAndSymptomsObservationOperations.validateSignsAndSymptomsObservationClassCode(
-          (SignsAndSymptomsObservation) objectToTest, diagnostician, map);
-      }
+		};
 
-    };
-
-    validateSignsAndSymptomsObservationClassCodeTestCase.doValidationTest();
-}
+		validateSignsAndSymptomsObservationClassCodeTestCase.doValidationTest();
+	}
 
 	/**
 	*
@@ -188,67 +120,33 @@ public class SignsAndSymptomsObservationTest extends CDAValidationTest {
 	*/
 	@Test
 	public void testValidateSignsAndSymptomsObservationMoodCode() {
-      OperationsTestCase<SignsAndSymptomsObservation> validateSignsAndSymptomsObservationMoodCodeTestCase = new OperationsTestCase<SignsAndSymptomsObservation>(
-      "validateSignsAndSymptomsObservationMoodCode",
-      operationsForOCL.getOCLValue("VALIDATE_SIGNS_AND_SYMPTOMS_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP")
-      ,objectFactory) {
+		OperationsTestCase<SignsAndSymptomsObservation> validateSignsAndSymptomsObservationMoodCodeTestCase = new OperationsTestCase<SignsAndSymptomsObservation>(
+			"validateSignsAndSymptomsObservationMoodCode",
+			operationsForOCL.getOCLValue("VALIDATE_SIGNS_AND_SYMPTOMS_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
 
-      @Override
-      protected void updateToFail(SignsAndSymptomsObservation target) {
+			@Override
+			protected void updateToFail(SignsAndSymptomsObservation target) {
 
-      }
+			}
 
-      @Override
-      protected void updateToPass(SignsAndSymptomsObservation target) {
-        target.init();
-        
-        
-        
-        
-        
+			@Override
+			protected void updateToPass(SignsAndSymptomsObservation target) {
+				target.init();
 
-        
-        
+			}
 
-  
-      
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
 
-  
-    
-    
-      
-        
-    
-      
-        
-      
-        
-        
-        
-        
-        
-        
-        
-      
-      
-          
-      
-        
-      }
+				return SignsAndSymptomsObservationOperations.validateSignsAndSymptomsObservationMoodCode(
+					(SignsAndSymptomsObservation) objectToTest, diagnostician, map);
+			}
 
-      @Override
-      protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-      
-      
-      
-        return SignsAndSymptomsObservationOperations.validateSignsAndSymptomsObservationMoodCode(
-          (SignsAndSymptomsObservation) objectToTest, diagnostician, map);
-      }
+		};
 
-    };
-
-    validateSignsAndSymptomsObservationMoodCodeTestCase.doValidationTest();
-}
+		validateSignsAndSymptomsObservationMoodCodeTestCase.doValidationTest();
+	}
 
 	/**
 	*
@@ -256,67 +154,33 @@ public class SignsAndSymptomsObservationTest extends CDAValidationTest {
 	*/
 	@Test
 	public void testValidateSignsAndSymptomsObservationNegationInd() {
-      OperationsTestCase<SignsAndSymptomsObservation> validateSignsAndSymptomsObservationNegationIndTestCase = new OperationsTestCase<SignsAndSymptomsObservation>(
-      "validateSignsAndSymptomsObservationNegationInd",
-      operationsForOCL.getOCLValue("VALIDATE_SIGNS_AND_SYMPTOMS_OBSERVATION_NEGATION_IND__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP")
-      ,objectFactory) {
+		OperationsTestCase<SignsAndSymptomsObservation> validateSignsAndSymptomsObservationNegationIndTestCase = new OperationsTestCase<SignsAndSymptomsObservation>(
+			"validateSignsAndSymptomsObservationNegationInd",
+			operationsForOCL.getOCLValue("VALIDATE_SIGNS_AND_SYMPTOMS_OBSERVATION_NEGATION_IND__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
 
-      @Override
-      protected void updateToFail(SignsAndSymptomsObservation target) {
+			@Override
+			protected void updateToFail(SignsAndSymptomsObservation target) {
 
-      }
+			}
 
-      @Override
-      protected void updateToPass(SignsAndSymptomsObservation target) {
-        target.init();
-        
-        
-        
-        
-        
+			@Override
+			protected void updateToPass(SignsAndSymptomsObservation target) {
+				target.init();
 
-        
-        
+			}
 
-  
-      
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
 
-  
-    
-    
-      
-        
-    
-      
-        
-      
-        
-        
-        
-        
-        
-        
-        
-      
-      
-          
-      
-        
-      }
+				return SignsAndSymptomsObservationOperations.validateSignsAndSymptomsObservationNegationInd(
+					(SignsAndSymptomsObservation) objectToTest, diagnostician, map);
+			}
 
-      @Override
-      protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-      
-      
-      
-        return SignsAndSymptomsObservationOperations.validateSignsAndSymptomsObservationNegationInd(
-          (SignsAndSymptomsObservation) objectToTest, diagnostician, map);
-      }
+		};
 
-    };
-
-    validateSignsAndSymptomsObservationNegationIndTestCase.doValidationTest();
-}
+		validateSignsAndSymptomsObservationNegationIndTestCase.doValidationTest();
+	}
 
 	/**
 	*
@@ -324,67 +188,33 @@ public class SignsAndSymptomsObservationTest extends CDAValidationTest {
 	*/
 	@Test
 	public void testValidateSignsAndSymptomsObservationCodeP() {
-      OperationsTestCase<SignsAndSymptomsObservation> validateSignsAndSymptomsObservationCodePTestCase = new OperationsTestCase<SignsAndSymptomsObservation>(
-      "validateSignsAndSymptomsObservationCodeP",
-      operationsForOCL.getOCLValue("VALIDATE_SIGNS_AND_SYMPTOMS_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP")
-      ,objectFactory) {
+		OperationsTestCase<SignsAndSymptomsObservation> validateSignsAndSymptomsObservationCodePTestCase = new OperationsTestCase<SignsAndSymptomsObservation>(
+			"validateSignsAndSymptomsObservationCodeP",
+			operationsForOCL.getOCLValue("VALIDATE_SIGNS_AND_SYMPTOMS_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
 
-      @Override
-      protected void updateToFail(SignsAndSymptomsObservation target) {
+			@Override
+			protected void updateToFail(SignsAndSymptomsObservation target) {
 
-      }
+			}
 
-      @Override
-      protected void updateToPass(SignsAndSymptomsObservation target) {
-        target.init();
-        
-        
-        
-        
-        
+			@Override
+			protected void updateToPass(SignsAndSymptomsObservation target) {
+				target.init();
 
-        
-        
+			}
 
-  
-      
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
 
-  
-    
-    
-      
-        
-    
-      
-        
-      
-        
-        
-        
-        
-        
-        
-        
-      
-      
-          
-      
-        
-      }
+				return SignsAndSymptomsObservationOperations.validateSignsAndSymptomsObservationCodeP(
+					(SignsAndSymptomsObservation) objectToTest, diagnostician, map);
+			}
 
-      @Override
-      protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-      
-      
-      
-        return SignsAndSymptomsObservationOperations.validateSignsAndSymptomsObservationCodeP(
-          (SignsAndSymptomsObservation) objectToTest, diagnostician, map);
-      }
+		};
 
-    };
-
-    validateSignsAndSymptomsObservationCodePTestCase.doValidationTest();
-}
+		validateSignsAndSymptomsObservationCodePTestCase.doValidationTest();
+	}
 
 	/**
 	*
@@ -392,70 +222,36 @@ public class SignsAndSymptomsObservationTest extends CDAValidationTest {
 	*/
 	@Test
 	public void testValidateSignsAndSymptomsObservationCode() {
-      OperationsTestCase<SignsAndSymptomsObservation> validateSignsAndSymptomsObservationCodeTestCase = new OperationsTestCase<SignsAndSymptomsObservation>(
-      "validateSignsAndSymptomsObservationCode",
-      operationsForOCL.getOCLValue("VALIDATE_SIGNS_AND_SYMPTOMS_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP")
-      ,objectFactory) {
+		OperationsTestCase<SignsAndSymptomsObservation> validateSignsAndSymptomsObservationCodeTestCase = new OperationsTestCase<SignsAndSymptomsObservation>(
+			"validateSignsAndSymptomsObservationCode",
+			operationsForOCL.getOCLValue("VALIDATE_SIGNS_AND_SYMPTOMS_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
 
-      @Override
-      protected void updateToFail(SignsAndSymptomsObservation target) {
+			@Override
+			protected void updateToFail(SignsAndSymptomsObservation target) {
 
-      }
+			}
 
-      @Override
-      protected void updateToPass(SignsAndSymptomsObservation target) {
-        target.init();
-        
-        
-        
-        
-        
+			@Override
+			protected void updateToPass(SignsAndSymptomsObservation target) {
+				target.init();
 
-        
-        
+				CD cd = DatatypesFactory.eINSTANCE.createCD();
+				target.setCode(cd);
 
-  
-      
+			}
 
-  
-    
-    
-      
-        
-    
-      
-        
-      
-        
-        
-        
-      
-        CD cd  = DatatypesFactory.eINSTANCE.createCD();
-        target.setCode(cd);
-        
-        
-        
-        
-      
-      
-          
-      
-        
-      }
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
 
-      @Override
-      protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-      
-      
-      
-        return SignsAndSymptomsObservationOperations.validateSignsAndSymptomsObservationCode(
-          (SignsAndSymptomsObservation) objectToTest, diagnostician, map);
-      }
+				return SignsAndSymptomsObservationOperations.validateSignsAndSymptomsObservationCode(
+					(SignsAndSymptomsObservation) objectToTest, diagnostician, map);
+			}
 
-    };
+		};
 
-    validateSignsAndSymptomsObservationCodeTestCase.doValidationTest();
-}
+		validateSignsAndSymptomsObservationCodeTestCase.doValidationTest();
+	}
 
 	/**
 	*
@@ -463,70 +259,36 @@ public class SignsAndSymptomsObservationTest extends CDAValidationTest {
 	*/
 	@Test
 	public void testValidateSignsAndSymptomsObservationStatusCode() {
-      OperationsTestCase<SignsAndSymptomsObservation> validateSignsAndSymptomsObservationStatusCodeTestCase = new OperationsTestCase<SignsAndSymptomsObservation>(
-      "validateSignsAndSymptomsObservationStatusCode",
-      operationsForOCL.getOCLValue("VALIDATE_SIGNS_AND_SYMPTOMS_OBSERVATION_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP")
-      ,objectFactory) {
+		OperationsTestCase<SignsAndSymptomsObservation> validateSignsAndSymptomsObservationStatusCodeTestCase = new OperationsTestCase<SignsAndSymptomsObservation>(
+			"validateSignsAndSymptomsObservationStatusCode",
+			operationsForOCL.getOCLValue("VALIDATE_SIGNS_AND_SYMPTOMS_OBSERVATION_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
 
-      @Override
-      protected void updateToFail(SignsAndSymptomsObservation target) {
+			@Override
+			protected void updateToFail(SignsAndSymptomsObservation target) {
 
-      }
+			}
 
-      @Override
-      protected void updateToPass(SignsAndSymptomsObservation target) {
-        target.init();
-        
-        
-        
-        
-      
-        CS cs = DatatypesFactory.eINSTANCE.createCS("completed");
-        target.setStatusCode(cs);
-        
+			@Override
+			protected void updateToPass(SignsAndSymptomsObservation target) {
+				target.init();
 
-        
-        
+				CS cs = DatatypesFactory.eINSTANCE.createCS("completed");
+				target.setStatusCode(cs);
 
-  
-      
+			}
 
-  
-    
-    
-      
-        
-    
-      
-        
-      
-        
-        
-        
-        
-        
-        
-        
-      
-      
-          
-      
-        
-      }
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
 
-      @Override
-      protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-      
-      
-      
-        return SignsAndSymptomsObservationOperations.validateSignsAndSymptomsObservationStatusCode(
-          (SignsAndSymptomsObservation) objectToTest, diagnostician, map);
-      }
+				return SignsAndSymptomsObservationOperations.validateSignsAndSymptomsObservationStatusCode(
+					(SignsAndSymptomsObservation) objectToTest, diagnostician, map);
+			}
 
-    };
+		};
 
-    validateSignsAndSymptomsObservationStatusCodeTestCase.doValidationTest();
-}
+		validateSignsAndSymptomsObservationStatusCodeTestCase.doValidationTest();
+	}
 
 	/**
 	*
@@ -534,67 +296,33 @@ public class SignsAndSymptomsObservationTest extends CDAValidationTest {
 	*/
 	@Test
 	public void testValidateSignsAndSymptomsObservationStatusCodeP() {
-      OperationsTestCase<SignsAndSymptomsObservation> validateSignsAndSymptomsObservationStatusCodePTestCase = new OperationsTestCase<SignsAndSymptomsObservation>(
-      "validateSignsAndSymptomsObservationStatusCodeP",
-      operationsForOCL.getOCLValue("VALIDATE_SIGNS_AND_SYMPTOMS_OBSERVATION_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP")
-      ,objectFactory) {
+		OperationsTestCase<SignsAndSymptomsObservation> validateSignsAndSymptomsObservationStatusCodePTestCase = new OperationsTestCase<SignsAndSymptomsObservation>(
+			"validateSignsAndSymptomsObservationStatusCodeP",
+			operationsForOCL.getOCLValue("VALIDATE_SIGNS_AND_SYMPTOMS_OBSERVATION_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
 
-      @Override
-      protected void updateToFail(SignsAndSymptomsObservation target) {
+			@Override
+			protected void updateToFail(SignsAndSymptomsObservation target) {
 
-      }
+			}
 
-      @Override
-      protected void updateToPass(SignsAndSymptomsObservation target) {
-        target.init();
-        
-        
-        
-        
-        
+			@Override
+			protected void updateToPass(SignsAndSymptomsObservation target) {
+				target.init();
 
-        
-        
+			}
 
-  
-      
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
 
-  
-    
-    
-      
-        
-    
-      
-        
-      
-        
-        
-        
-        
-        
-        
-        
-      
-      
-          
-      
-        
-      }
+				return SignsAndSymptomsObservationOperations.validateSignsAndSymptomsObservationStatusCodeP(
+					(SignsAndSymptomsObservation) objectToTest, diagnostician, map);
+			}
 
-      @Override
-      protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-      
-      
-      
-        return SignsAndSymptomsObservationOperations.validateSignsAndSymptomsObservationStatusCodeP(
-          (SignsAndSymptomsObservation) objectToTest, diagnostician, map);
-      }
+		};
 
-    };
-
-    validateSignsAndSymptomsObservationStatusCodePTestCase.doValidationTest();
-}
+		validateSignsAndSymptomsObservationStatusCodePTestCase.doValidationTest();
+	}
 
 	/**
 	*
@@ -602,70 +330,36 @@ public class SignsAndSymptomsObservationTest extends CDAValidationTest {
 	*/
 	@Test
 	public void testValidateSignsAndSymptomsObservationEffectiveTime() {
-      OperationsTestCase<SignsAndSymptomsObservation> validateSignsAndSymptomsObservationEffectiveTimeTestCase = new OperationsTestCase<SignsAndSymptomsObservation>(
-      "validateSignsAndSymptomsObservationEffectiveTime",
-      operationsForOCL.getOCLValue("VALIDATE_SIGNS_AND_SYMPTOMS_OBSERVATION_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP")
-      ,objectFactory) {
+		OperationsTestCase<SignsAndSymptomsObservation> validateSignsAndSymptomsObservationEffectiveTimeTestCase = new OperationsTestCase<SignsAndSymptomsObservation>(
+			"validateSignsAndSymptomsObservationEffectiveTime",
+			operationsForOCL.getOCLValue("VALIDATE_SIGNS_AND_SYMPTOMS_OBSERVATION_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
 
-      @Override
-      protected void updateToFail(SignsAndSymptomsObservation target) {
+			@Override
+			protected void updateToFail(SignsAndSymptomsObservation target) {
 
-      }
+			}
 
-      @Override
-      protected void updateToPass(SignsAndSymptomsObservation target) {
-        target.init();
-        
-        
-          IVL_TS ts = DatatypesFactory .eINSTANCE.createIVL_TS();
-          target.setEffectiveTime(ts );								
-        
-        
-        
-        
+			@Override
+			protected void updateToPass(SignsAndSymptomsObservation target) {
+				target.init();
 
-        
-        
+				IVL_TS ts = DatatypesFactory.eINSTANCE.createIVL_TS();
+				target.setEffectiveTime(ts);
 
-  
-      
+			}
 
-  
-    
-    
-      
-        
-    
-      
-        
-      
-        
-        
-        
-        
-        
-        
-        
-      
-      
-          
-      
-        
-      }
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
 
-      @Override
-      protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-      
-      
-      
-        return SignsAndSymptomsObservationOperations.validateSignsAndSymptomsObservationEffectiveTime(
-          (SignsAndSymptomsObservation) objectToTest, diagnostician, map);
-      }
+				return SignsAndSymptomsObservationOperations.validateSignsAndSymptomsObservationEffectiveTime(
+					(SignsAndSymptomsObservation) objectToTest, diagnostician, map);
+			}
 
-    };
+		};
 
-    validateSignsAndSymptomsObservationEffectiveTimeTestCase.doValidationTest();
-}
+		validateSignsAndSymptomsObservationEffectiveTimeTestCase.doValidationTest();
+	}
 
 	/**
 	*
@@ -673,70 +367,36 @@ public class SignsAndSymptomsObservationTest extends CDAValidationTest {
 	*/
 	@Test
 	public void testValidateSignsAndSymptomsObservationValue() {
-      OperationsTestCase<SignsAndSymptomsObservation> validateSignsAndSymptomsObservationValueTestCase = new OperationsTestCase<SignsAndSymptomsObservation>(
-      "validateSignsAndSymptomsObservationValue",
-      operationsForOCL.getOCLValue("VALIDATE_SIGNS_AND_SYMPTOMS_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP")
-      ,objectFactory) {
+		OperationsTestCase<SignsAndSymptomsObservation> validateSignsAndSymptomsObservationValueTestCase = new OperationsTestCase<SignsAndSymptomsObservation>(
+			"validateSignsAndSymptomsObservationValue",
+			operationsForOCL.getOCLValue("VALIDATE_SIGNS_AND_SYMPTOMS_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
 
-      @Override
-      protected void updateToFail(SignsAndSymptomsObservation target) {
+			@Override
+			protected void updateToFail(SignsAndSymptomsObservation target) {
 
-      }
+			}
 
-      @Override
-      protected void updateToPass(SignsAndSymptomsObservation target) {
-        target.init();
-        
-        
-        
-        
-        
+			@Override
+			protected void updateToPass(SignsAndSymptomsObservation target) {
+				target.init();
 
-        
-      
-        CD value = DatatypesFactory.eINSTANCE.createCD();
-        target.getValues().add(value);
-        
+				CD value = DatatypesFactory.eINSTANCE.createCD();
+				target.getValues().add(value);
 
-  
-      
+			}
 
-  
-    
-    
-      
-        
-    
-      
-        
-      
-        
-        
-        
-        
-        
-        
-        
-      
-      
-          
-      
-        
-      }
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
 
-      @Override
-      protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-      
-      
-      
-        return SignsAndSymptomsObservationOperations.validateSignsAndSymptomsObservationValue(
-          (SignsAndSymptomsObservation) objectToTest, diagnostician, map);
-      }
+				return SignsAndSymptomsObservationOperations.validateSignsAndSymptomsObservationValue(
+					(SignsAndSymptomsObservation) objectToTest, diagnostician, map);
+			}
 
-    };
+		};
 
-    validateSignsAndSymptomsObservationValueTestCase.doValidationTest();
-}
+		validateSignsAndSymptomsObservationValueTestCase.doValidationTest();
+	}
 
 	/**
 	*
@@ -791,17 +451,17 @@ public class SignsAndSymptomsObservationTest extends CDAValidationTest {
 	*/
 	@Test
 	public void testConstructor() {
-          @SuppressWarnings("unused")
-      ConstructorTestClass constructorTestClass = new ConstructorTestClass();		
-  } // testConstructor
+		@SuppressWarnings("unused")
+		ConstructorTestClass constructorTestClass = new ConstructorTestClass();
+	} // testConstructor
 
 	/**
 	*
 	* @generated
 	*/
 	@Override
-	protected EObject getObjectToTest() {		
-    return null;
-  }
+	protected EObject getObjectToTest() {
+		return null;
+	}
 
 } // SignsAndSymptomsObservationOperations

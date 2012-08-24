@@ -53,67 +53,33 @@ public class ResultOrganizerTest extends CDAValidationTest {
 	*/
 	@Test
 	public void testValidatePHCRResultOrganizerClassCode() {
-      OperationsTestCase<ResultOrganizer> validatePHCRResultOrganizerClassCodeTestCase = new OperationsTestCase<ResultOrganizer>(
-      "validatePHCRResultOrganizerClassCode",
-      operationsForOCL.getOCLValue("VALIDATE_PHCR_RESULT_ORGANIZER_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP")
-      ,objectFactory) {
+		OperationsTestCase<ResultOrganizer> validatePHCRResultOrganizerClassCodeTestCase = new OperationsTestCase<ResultOrganizer>(
+			"validatePHCRResultOrganizerClassCode",
+			operationsForOCL.getOCLValue("VALIDATE_PHCR_RESULT_ORGANIZER_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
 
-      @Override
-      protected void updateToFail(ResultOrganizer target) {
+			@Override
+			protected void updateToFail(ResultOrganizer target) {
 
-      }
+			}
 
-      @Override
-      protected void updateToPass(ResultOrganizer target) {
-        target.init();
-        
-        
-        
-        
-        
+			@Override
+			protected void updateToPass(ResultOrganizer target) {
+				target.init();
 
-        
-        
+			}
 
-  
-      
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
 
-  
-    
-    
-      
-        
-    
-      
-        
-      
-        
-        
-        
-        
-        
-        
-        
-      
-      
-          
-      
-        
-      }
+				return ResultOrganizerOperations.validatePHCRResultOrganizerClassCode(
+					(ResultOrganizer) objectToTest, diagnostician, map);
+			}
 
-      @Override
-      protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-      
-      
-      
-        return ResultOrganizerOperations.validatePHCRResultOrganizerClassCode(
-          (ResultOrganizer) objectToTest, diagnostician, map);
-      }
+		};
 
-    };
-
-    validatePHCRResultOrganizerClassCodeTestCase.doValidationTest();
-}
+		validatePHCRResultOrganizerClassCodeTestCase.doValidationTest();
+	}
 
 	/**
 	*
@@ -121,67 +87,33 @@ public class ResultOrganizerTest extends CDAValidationTest {
 	*/
 	@Test
 	public void testValidatePHCRResultOrganizerMoodCode() {
-      OperationsTestCase<ResultOrganizer> validatePHCRResultOrganizerMoodCodeTestCase = new OperationsTestCase<ResultOrganizer>(
-      "validatePHCRResultOrganizerMoodCode",
-      operationsForOCL.getOCLValue("VALIDATE_PHCR_RESULT_ORGANIZER_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP")
-      ,objectFactory) {
+		OperationsTestCase<ResultOrganizer> validatePHCRResultOrganizerMoodCodeTestCase = new OperationsTestCase<ResultOrganizer>(
+			"validatePHCRResultOrganizerMoodCode",
+			operationsForOCL.getOCLValue("VALIDATE_PHCR_RESULT_ORGANIZER_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
 
-      @Override
-      protected void updateToFail(ResultOrganizer target) {
+			@Override
+			protected void updateToFail(ResultOrganizer target) {
 
-      }
+			}
 
-      @Override
-      protected void updateToPass(ResultOrganizer target) {
-        target.init();
-        
-        
-        
-        
-        
+			@Override
+			protected void updateToPass(ResultOrganizer target) {
+				target.init();
 
-        
-        
+			}
 
-  
-      
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
 
-  
-    
-    
-      
-        
-    
-      
-        
-      
-        
-        
-        
-        
-        
-        
-        
-      
-      
-          
-      
-        
-      }
+				return ResultOrganizerOperations.validatePHCRResultOrganizerMoodCode(
+					(ResultOrganizer) objectToTest, diagnostician, map);
+			}
 
-      @Override
-      protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-      
-      
-      
-        return ResultOrganizerOperations.validatePHCRResultOrganizerMoodCode(
-          (ResultOrganizer) objectToTest, diagnostician, map);
-      }
+		};
 
-    };
-
-    validatePHCRResultOrganizerMoodCodeTestCase.doValidationTest();
-}
+		validatePHCRResultOrganizerMoodCodeTestCase.doValidationTest();
+	}
 
 	/**
 	*
@@ -189,67 +121,33 @@ public class ResultOrganizerTest extends CDAValidationTest {
 	*/
 	@Test
 	public void testValidatePHCRResultOrganizerId() {
-      OperationsTestCase<ResultOrganizer> validatePHCRResultOrganizerIdTestCase = new OperationsTestCase<ResultOrganizer>(
-      "validatePHCRResultOrganizerId",
-      operationsForOCL.getOCLValue("VALIDATE_PHCR_RESULT_ORGANIZER_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP")
-      ,objectFactory) {
+		OperationsTestCase<ResultOrganizer> validatePHCRResultOrganizerIdTestCase = new OperationsTestCase<ResultOrganizer>(
+			"validatePHCRResultOrganizerId",
+			operationsForOCL.getOCLValue("VALIDATE_PHCR_RESULT_ORGANIZER_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
 
-      @Override
-      protected void updateToFail(ResultOrganizer target) {
+			@Override
+			protected void updateToFail(ResultOrganizer target) {
 
-      }
+			}
 
-      @Override
-      protected void updateToPass(ResultOrganizer target) {
-        target.init();
-        
-        
-        
-        
-        
+			@Override
+			protected void updateToPass(ResultOrganizer target) {
+				target.init();
 
-        
-        
+			}
 
-  
-      
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
 
-  
-    
-    
-      
-        
-    
-      
-        
-      
-        
-        
-        
-        
-        
-        
-        
-      
-      
-          
-      
-        
-      }
+				return ResultOrganizerOperations.validatePHCRResultOrganizerId(
+					(ResultOrganizer) objectToTest, diagnostician, map);
+			}
 
-      @Override
-      protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-      
-      
-      
-        return ResultOrganizerOperations.validatePHCRResultOrganizerId(
-          (ResultOrganizer) objectToTest, diagnostician, map);
-      }
+		};
 
-    };
-
-    validatePHCRResultOrganizerIdTestCase.doValidationTest();
-}
+		validatePHCRResultOrganizerIdTestCase.doValidationTest();
+	}
 
 	/**
 	*
@@ -257,209 +155,104 @@ public class ResultOrganizerTest extends CDAValidationTest {
 	*/
 	@Test
 	public void testValidatePHCRResultOrganizerCode() {
-      OperationsTestCase<ResultOrganizer> validatePHCRResultOrganizerCodeTestCase = new OperationsTestCase<ResultOrganizer>(
-      "validatePHCRResultOrganizerCode",
-      operationsForOCL.getOCLValue("VALIDATE_PHCR_RESULT_ORGANIZER_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP")
-      ,objectFactory) {
+		OperationsTestCase<ResultOrganizer> validatePHCRResultOrganizerCodeTestCase = new OperationsTestCase<ResultOrganizer>(
+			"validatePHCRResultOrganizerCode",
+			operationsForOCL.getOCLValue("VALIDATE_PHCR_RESULT_ORGANIZER_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
 
-      @Override
-      protected void updateToFail(ResultOrganizer target) {
+			@Override
+			protected void updateToFail(ResultOrganizer target) {
 
-      }
+			}
 
-      @Override
-      protected void updateToPass(ResultOrganizer target) {
-        target.init();
-        
-        
-        
-        
-        
+			@Override
+			protected void updateToPass(ResultOrganizer target) {
+				target.init();
 
-        
-        
+			}
 
-  
-      
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
 
-  
-    
-    
-      
-        
-    
-      
-        
-      
-        
-        
-        
-        
-        
-        
-        
-      
-      
-          
-      
-        
-      }
+				return ResultOrganizerOperations.validatePHCRResultOrganizerCode(
+					(ResultOrganizer) objectToTest, diagnostician, map);
+			}
 
-      @Override
-      protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-      
-      
-      
-        return ResultOrganizerOperations.validatePHCRResultOrganizerCode(
-          (ResultOrganizer) objectToTest, diagnostician, map);
-      }
+		};
 
-    };
-
-    validatePHCRResultOrganizerCodeTestCase.doValidationTest();
-}
+		validatePHCRResultOrganizerCodeTestCase.doValidationTest();
+	}
 
 	/**
-*
-* @generated
-*/
-@Test
+	*
+	* @generated
+	*/
+	@Test
+	public void testValidatePHCRResultOrganizerStatusCodeP() {
+		OperationsTestCase<ResultOrganizer> validatePHCRResultOrganizerStatusCodePTestCase = new OperationsTestCase<ResultOrganizer>(
+			"validatePHCRResultOrganizerStatusCodeP",
+			operationsForOCL.getOCLValue("VALIDATE_PHCR_RESULT_ORGANIZER_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
 
- 
-                  
-public void testValidatePHCRResultOrganizerStatusCodeP() {
-      OperationsTestCase<ResultOrganizer> validatePHCRResultOrganizerStatusCodePTestCase = new OperationsTestCase<ResultOrganizer>(
-      "validatePHCRResultOrganizerStatusCodeP",
-      operationsForOCL.getOCLValue("VALIDATE_PHCR_RESULT_ORGANIZER_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP")
-      ,objectFactory) {
+			@Override
+			protected void updateToFail(ResultOrganizer target) {
 
-      @Override
-      protected void updateToFail(ResultOrganizer target) {
+			}
 
-      }
+			@Override
+			protected void updateToPass(ResultOrganizer target) {
+				target.init();
 
-      @Override
-      protected void updateToPass(ResultOrganizer target) {
-        target.init();
-        
-        
-        
-        
-        
+			}
 
-        
-        
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
 
-  
-      
+				return ResultOrganizerOperations.validatePHCRResultOrganizerStatusCodeP(
+					(ResultOrganizer) objectToTest, diagnostician, map);
+			}
 
-  
-    
-    
-      
-        
-    
-      
-        
-      
-        
-        
-        
-        
-        
-        
-        
-      
-      
-          
-      
-        
-      }
+		};
 
-      @Override
-      protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-      
-      
-      
-        return ResultOrganizerOperations.validatePHCRResultOrganizerStatusCodeP(
-          (ResultOrganizer) objectToTest, diagnostician, map);
-      }
+		validatePHCRResultOrganizerStatusCodePTestCase.doValidationTest();
+	}
 
-    };
-
-    validatePHCRResultOrganizerStatusCodePTestCase.doValidationTest();
-}
-
-  /**
+	/**
 	*
 	* @generated
 	*/
 	@Test
 	public void testValidatePHCRResultOrganizerStatusCode() {
-      OperationsTestCase<ResultOrganizer> validatePHCRResultOrganizerStatusCodeTestCase = new OperationsTestCase<ResultOrganizer>(
-      "validatePHCRResultOrganizerStatusCode",
-      operationsForOCL.getOCLValue("VALIDATE_PHCR_RESULT_ORGANIZER_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP")
-      ,objectFactory) {
+		OperationsTestCase<ResultOrganizer> validatePHCRResultOrganizerStatusCodeTestCase = new OperationsTestCase<ResultOrganizer>(
+			"validatePHCRResultOrganizerStatusCode",
+			operationsForOCL.getOCLValue("VALIDATE_PHCR_RESULT_ORGANIZER_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
 
-      @Override
-      protected void updateToFail(ResultOrganizer target) {
+			@Override
+			protected void updateToFail(ResultOrganizer target) {
 
-      }
+			}
 
-      @Override
-      protected void updateToPass(ResultOrganizer target) {
-        target.init();
-        
-        
-        
-        
-      
-        CS cs = DatatypesFactory.eINSTANCE.createCS("completed");
-        target.setStatusCode(cs);
-        
+			@Override
+			protected void updateToPass(ResultOrganizer target) {
+				target.init();
 
-        
-        
+				CS cs = DatatypesFactory.eINSTANCE.createCS("completed");
+				target.setStatusCode(cs);
 
-  
-      
+			}
 
-  
-    
-    
-      
-        
-    
-      
-        
-      
-        
-        
-        
-        
-        
-        
-        
-      
-      
-          
-      
-        
-      }
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
 
-      @Override
-      protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-      
-      
-      
-        return ResultOrganizerOperations.validatePHCRResultOrganizerStatusCode(
-          (ResultOrganizer) objectToTest, diagnostician, map);
-      }
+				return ResultOrganizerOperations.validatePHCRResultOrganizerStatusCode(
+					(ResultOrganizer) objectToTest, diagnostician, map);
+			}
 
-    };
+		};
 
-    validatePHCRResultOrganizerStatusCodeTestCase.doValidationTest();
-}
+		validatePHCRResultOrganizerStatusCodeTestCase.doValidationTest();
+	}
 
 	/**
 	*
@@ -467,70 +260,36 @@ public void testValidatePHCRResultOrganizerStatusCodeP() {
 	*/
 	@Test
 	public void testValidatePHCRResultOrganizerEffectiveTime() {
-      OperationsTestCase<ResultOrganizer> validatePHCRResultOrganizerEffectiveTimeTestCase = new OperationsTestCase<ResultOrganizer>(
-      "validatePHCRResultOrganizerEffectiveTime",
-      operationsForOCL.getOCLValue("VALIDATE_PHCR_RESULT_ORGANIZER_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP")
-      ,objectFactory) {
+		OperationsTestCase<ResultOrganizer> validatePHCRResultOrganizerEffectiveTimeTestCase = new OperationsTestCase<ResultOrganizer>(
+			"validatePHCRResultOrganizerEffectiveTime",
+			operationsForOCL.getOCLValue("VALIDATE_PHCR_RESULT_ORGANIZER_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
 
-      @Override
-      protected void updateToFail(ResultOrganizer target) {
+			@Override
+			protected void updateToFail(ResultOrganizer target) {
 
-      }
+			}
 
-      @Override
-      protected void updateToPass(ResultOrganizer target) {
-        target.init();
-        
-        
-          IVL_TS ts = DatatypesFactory .eINSTANCE.createIVL_TS();
-          target.setEffectiveTime(ts );								
-        
-        
-        
-        
+			@Override
+			protected void updateToPass(ResultOrganizer target) {
+				target.init();
 
-        
-        
+				IVL_TS ts = DatatypesFactory.eINSTANCE.createIVL_TS();
+				target.setEffectiveTime(ts);
 
-  
-      
+			}
 
-  
-    
-    
-      
-        
-    
-      
-        
-      
-        
-        
-        
-        
-        
-        
-        
-      
-      
-          
-      
-        
-      }
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
 
-      @Override
-      protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-      
-      
-      
-        return ResultOrganizerOperations.validatePHCRResultOrganizerEffectiveTime(
-          (ResultOrganizer) objectToTest, diagnostician, map);
-      }
+				return ResultOrganizerOperations.validatePHCRResultOrganizerEffectiveTime(
+					(ResultOrganizer) objectToTest, diagnostician, map);
+			}
 
-    };
+		};
 
-    validatePHCRResultOrganizerEffectiveTimeTestCase.doValidationTest();
-}
+		validatePHCRResultOrganizerEffectiveTimeTestCase.doValidationTest();
+	}
 
 	/**
 	*
@@ -538,67 +297,33 @@ public void testValidatePHCRResultOrganizerStatusCodeP() {
 	*/
 	@Test
 	public void testValidatePHCRResultOrganizerResultObservation() {
-      OperationsTestCase<ResultOrganizer> validatePHCRResultOrganizerResultObservationTestCase = new OperationsTestCase<ResultOrganizer>(
-      "validatePHCRResultOrganizerResultObservation",
-      operationsForOCL.getOCLValue("VALIDATE_PHCR_RESULT_ORGANIZER_RESULT_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP")
-      ,objectFactory) {
+		OperationsTestCase<ResultOrganizer> validatePHCRResultOrganizerResultObservationTestCase = new OperationsTestCase<ResultOrganizer>(
+			"validatePHCRResultOrganizerResultObservation",
+			operationsForOCL.getOCLValue("VALIDATE_PHCR_RESULT_ORGANIZER_RESULT_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
 
-      @Override
-      protected void updateToFail(ResultOrganizer target) {
+			@Override
+			protected void updateToFail(ResultOrganizer target) {
 
-      }
+			}
 
-      @Override
-      protected void updateToPass(ResultOrganizer target) {
-        target.init();
-        
-        
-        
-        
-        
+			@Override
+			protected void updateToPass(ResultOrganizer target) {
+				target.init();
 
-        
-        
+			}
 
-  
-      
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
 
-  
-    
-    
-      
-        
-    
-      
-        
-      
-        
-        
-        
-        
-        
-        
-        
-      
-      
-          
-      
-        
-      }
+				return ResultOrganizerOperations.validatePHCRResultOrganizerResultObservation(
+					(ResultOrganizer) objectToTest, diagnostician, map);
+			}
 
-      @Override
-      protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-      
-      
-      
-        return ResultOrganizerOperations.validatePHCRResultOrganizerResultObservation(
-          (ResultOrganizer) objectToTest, diagnostician, map);
-      }
+		};
 
-    };
-
-    validatePHCRResultOrganizerResultObservationTestCase.doValidationTest();
-}
+		validatePHCRResultOrganizerResultObservationTestCase.doValidationTest();
+	}
 
 	/**
 	*
@@ -606,67 +331,33 @@ public void testValidatePHCRResultOrganizerStatusCodeP() {
 	*/
 	@Test
 	public void testValidatePHCRResultOrganizerSpecimenCollectionProcedure() {
-      OperationsTestCase<ResultOrganizer> validatePHCRResultOrganizerSpecimenCollectionProcedureTestCase = new OperationsTestCase<ResultOrganizer>(
-      "validatePHCRResultOrganizerSpecimenCollectionProcedure",
-      operationsForOCL.getOCLValue("VALIDATE_PHCR_RESULT_ORGANIZER_SPECIMEN_COLLECTION_PROCEDURE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP")
-      ,objectFactory) {
+		OperationsTestCase<ResultOrganizer> validatePHCRResultOrganizerSpecimenCollectionProcedureTestCase = new OperationsTestCase<ResultOrganizer>(
+			"validatePHCRResultOrganizerSpecimenCollectionProcedure",
+			operationsForOCL.getOCLValue("VALIDATE_PHCR_RESULT_ORGANIZER_SPECIMEN_COLLECTION_PROCEDURE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
 
-      @Override
-      protected void updateToFail(ResultOrganizer target) {
+			@Override
+			protected void updateToFail(ResultOrganizer target) {
 
-      }
+			}
 
-      @Override
-      protected void updateToPass(ResultOrganizer target) {
-        target.init();
-        
-        
-        
-        
-        
+			@Override
+			protected void updateToPass(ResultOrganizer target) {
+				target.init();
 
-        
-        
+			}
 
-  
-      
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
 
-  
-    
-    
-      
-        
-    
-      
-        
-      
-        
-        
-        
-        
-        
-        
-        
-      
-      
-          
-      
-        
-      }
+				return ResultOrganizerOperations.validatePHCRResultOrganizerSpecimenCollectionProcedure(
+					(ResultOrganizer) objectToTest, diagnostician, map);
+			}
 
-      @Override
-      protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-      
-      
-      
-        return ResultOrganizerOperations.validatePHCRResultOrganizerSpecimenCollectionProcedure(
-          (ResultOrganizer) objectToTest, diagnostician, map);
-      }
+		};
 
-    };
-
-    validatePHCRResultOrganizerSpecimenCollectionProcedureTestCase.doValidationTest();
-}
+		validatePHCRResultOrganizerSpecimenCollectionProcedureTestCase.doValidationTest();
+	}
 
 	/**
 	*
@@ -675,13 +366,10 @@ public void testValidatePHCRResultOrganizerStatusCodeP() {
 	@Test
 	public void testGetPHCRResultObservations() {
 
+		ResultOrganizer target = objectFactory.create();
+		target.getPHCRResultObservations();
 
-ResultOrganizer target = objectFactory.create();
-target.getPHCRResultObservations();
-
-
-
-}
+	}
 
 	/**
 	*
@@ -690,13 +378,10 @@ target.getPHCRResultObservations();
 	@Test
 	public void testGetSpecimenCollectionProcedure() {
 
+		ResultOrganizer target = objectFactory.create();
+		target.getSpecimenCollectionProcedure();
 
-ResultOrganizer target = objectFactory.create();
-target.getSpecimenCollectionProcedure();
-
-
-
-}
+	}
 
 	/**
 	*
@@ -704,67 +389,33 @@ target.getSpecimenCollectionProcedure();
 	*/
 	@Test
 	public void testValidateResultOrganizerTemplateId() {
-      OperationsTestCase<ResultOrganizer> validateResultOrganizerTemplateIdTestCase = new OperationsTestCase<ResultOrganizer>(
-      "validateResultOrganizerTemplateId",
-      operationsForOCL.getOCLValue("VALIDATE_RESULT_ORGANIZER_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP")
-      ,objectFactory) {
+		OperationsTestCase<ResultOrganizer> validateResultOrganizerTemplateIdTestCase = new OperationsTestCase<ResultOrganizer>(
+			"validateResultOrganizerTemplateId",
+			operationsForOCL.getOCLValue("VALIDATE_RESULT_ORGANIZER_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
 
-      @Override
-      protected void updateToFail(ResultOrganizer target) {
+			@Override
+			protected void updateToFail(ResultOrganizer target) {
 
-      }
+			}
 
-      @Override
-      protected void updateToPass(ResultOrganizer target) {
-        target.init();
-        
-        
-        
-        
-        
+			@Override
+			protected void updateToPass(ResultOrganizer target) {
+				target.init();
 
-        
-        
+			}
 
-  
-      
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
 
-  
-    
-    
-      
-        
-    
-      
-        
-      
-        
-        
-        
-        
-        
-        
-        
-      
-      
-          
-      
-        
-      }
+				return ResultOrganizerOperations.validateResultOrganizerTemplateId(
+					(ResultOrganizer) objectToTest, diagnostician, map);
+			}
 
-      @Override
-      protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-      
-      
-      
-        return ResultOrganizerOperations.validateResultOrganizerTemplateId(
-          (ResultOrganizer) objectToTest, diagnostician, map);
-      }
+		};
 
-    };
-
-    validateResultOrganizerTemplateIdTestCase.doValidationTest();
-}
+		validateResultOrganizerTemplateIdTestCase.doValidationTest();
+	}
 
 	/**
 	*
@@ -819,17 +470,17 @@ target.getSpecimenCollectionProcedure();
 	*/
 	@Test
 	public void testConstructor() {
-          @SuppressWarnings("unused")
-      ConstructorTestClass constructorTestClass = new ConstructorTestClass();		
-  } // testConstructor
+		@SuppressWarnings("unused")
+		ConstructorTestClass constructorTestClass = new ConstructorTestClass();
+	} // testConstructor
 
 	/**
 	*
 	* @generated
 	*/
 	@Override
-	protected EObject getObjectToTest() {		
-    return null;
-  }
+	protected EObject getObjectToTest() {
+		return null;
+	}
 
 } // ResultOrganizerOperations

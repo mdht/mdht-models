@@ -53,67 +53,33 @@ public class GeotemporalHistoryObservationTest extends CDAValidationTest {
 	*/
 	@Test
 	public void testValidateGeotemporalHistoryObservationTemplateId() {
-      OperationsTestCase<GeotemporalHistoryObservation> validateGeotemporalHistoryObservationTemplateIdTestCase = new OperationsTestCase<GeotemporalHistoryObservation>(
-      "validateGeotemporalHistoryObservationTemplateId",
-      operationsForOCL.getOCLValue("VALIDATE_GEOTEMPORAL_HISTORY_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP")
-      ,objectFactory) {
+		OperationsTestCase<GeotemporalHistoryObservation> validateGeotemporalHistoryObservationTemplateIdTestCase = new OperationsTestCase<GeotemporalHistoryObservation>(
+			"validateGeotemporalHistoryObservationTemplateId",
+			operationsForOCL.getOCLValue("VALIDATE_GEOTEMPORAL_HISTORY_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
 
-      @Override
-      protected void updateToFail(GeotemporalHistoryObservation target) {
+			@Override
+			protected void updateToFail(GeotemporalHistoryObservation target) {
 
-      }
+			}
 
-      @Override
-      protected void updateToPass(GeotemporalHistoryObservation target) {
-        target.init();
-        
-        
-        
-        
-        
+			@Override
+			protected void updateToPass(GeotemporalHistoryObservation target) {
+				target.init();
 
-        
-        
+			}
 
-  
-      
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
 
-  
-    
-    
-      
-        
-    
-      
-        
-      
-        
-        
-        
-        
-        
-        
-        
-      
-      
-          
-      
-        
-      }
+				return GeotemporalHistoryObservationOperations.validateGeotemporalHistoryObservationTemplateId(
+					(GeotemporalHistoryObservation) objectToTest, diagnostician, map);
+			}
 
-      @Override
-      protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-      
-      
-      
-        return GeotemporalHistoryObservationOperations.validateGeotemporalHistoryObservationTemplateId(
-          (GeotemporalHistoryObservation) objectToTest, diagnostician, map);
-      }
+		};
 
-    };
-
-    validateGeotemporalHistoryObservationTemplateIdTestCase.doValidationTest();
-}
+		validateGeotemporalHistoryObservationTemplateIdTestCase.doValidationTest();
+	}
 
 	/**
 	*
@@ -121,67 +87,33 @@ public class GeotemporalHistoryObservationTest extends CDAValidationTest {
 	*/
 	@Test
 	public void testValidateGeotemporalHistoryObservationClassCode() {
-      OperationsTestCase<GeotemporalHistoryObservation> validateGeotemporalHistoryObservationClassCodeTestCase = new OperationsTestCase<GeotemporalHistoryObservation>(
-      "validateGeotemporalHistoryObservationClassCode",
-      operationsForOCL.getOCLValue("VALIDATE_GEOTEMPORAL_HISTORY_OBSERVATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP")
-      ,objectFactory) {
+		OperationsTestCase<GeotemporalHistoryObservation> validateGeotemporalHistoryObservationClassCodeTestCase = new OperationsTestCase<GeotemporalHistoryObservation>(
+			"validateGeotemporalHistoryObservationClassCode",
+			operationsForOCL.getOCLValue("VALIDATE_GEOTEMPORAL_HISTORY_OBSERVATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
 
-      @Override
-      protected void updateToFail(GeotemporalHistoryObservation target) {
+			@Override
+			protected void updateToFail(GeotemporalHistoryObservation target) {
 
-      }
+			}
 
-      @Override
-      protected void updateToPass(GeotemporalHistoryObservation target) {
-        target.init();
-        
-        
-        
-        
-        
+			@Override
+			protected void updateToPass(GeotemporalHistoryObservation target) {
+				target.init();
 
-        
-        
+			}
 
-  
-      
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
 
-  
-    
-    
-      
-        
-    
-      
-        
-      
-        
-        
-        
-        
-        
-        
-        
-      
-      
-          
-      
-        
-      }
+				return GeotemporalHistoryObservationOperations.validateGeotemporalHistoryObservationClassCode(
+					(GeotemporalHistoryObservation) objectToTest, diagnostician, map);
+			}
 
-      @Override
-      protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-      
-      
-      
-        return GeotemporalHistoryObservationOperations.validateGeotemporalHistoryObservationClassCode(
-          (GeotemporalHistoryObservation) objectToTest, diagnostician, map);
-      }
+		};
 
-    };
-
-    validateGeotemporalHistoryObservationClassCodeTestCase.doValidationTest();
-}
+		validateGeotemporalHistoryObservationClassCodeTestCase.doValidationTest();
+	}
 
 	/**
 	*
@@ -189,67 +121,33 @@ public class GeotemporalHistoryObservationTest extends CDAValidationTest {
 	*/
 	@Test
 	public void testValidateGeotemporalHistoryObservationMoodCode() {
-      OperationsTestCase<GeotemporalHistoryObservation> validateGeotemporalHistoryObservationMoodCodeTestCase = new OperationsTestCase<GeotemporalHistoryObservation>(
-      "validateGeotemporalHistoryObservationMoodCode",
-      operationsForOCL.getOCLValue("VALIDATE_GEOTEMPORAL_HISTORY_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP")
-      ,objectFactory) {
+		OperationsTestCase<GeotemporalHistoryObservation> validateGeotemporalHistoryObservationMoodCodeTestCase = new OperationsTestCase<GeotemporalHistoryObservation>(
+			"validateGeotemporalHistoryObservationMoodCode",
+			operationsForOCL.getOCLValue("VALIDATE_GEOTEMPORAL_HISTORY_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
 
-      @Override
-      protected void updateToFail(GeotemporalHistoryObservation target) {
+			@Override
+			protected void updateToFail(GeotemporalHistoryObservation target) {
 
-      }
+			}
 
-      @Override
-      protected void updateToPass(GeotemporalHistoryObservation target) {
-        target.init();
-        
-        
-        
-        
-        
+			@Override
+			protected void updateToPass(GeotemporalHistoryObservation target) {
+				target.init();
 
-        
-        
+			}
 
-  
-      
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
 
-  
-    
-    
-      
-        
-    
-      
-        
-      
-        
-        
-        
-        
-        
-        
-        
-      
-      
-          
-      
-        
-      }
+				return GeotemporalHistoryObservationOperations.validateGeotemporalHistoryObservationMoodCode(
+					(GeotemporalHistoryObservation) objectToTest, diagnostician, map);
+			}
 
-      @Override
-      protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-      
-      
-      
-        return GeotemporalHistoryObservationOperations.validateGeotemporalHistoryObservationMoodCode(
-          (GeotemporalHistoryObservation) objectToTest, diagnostician, map);
-      }
+		};
 
-    };
-
-    validateGeotemporalHistoryObservationMoodCodeTestCase.doValidationTest();
-}
+		validateGeotemporalHistoryObservationMoodCodeTestCase.doValidationTest();
+	}
 
 	/**
 	*
@@ -257,67 +155,33 @@ public class GeotemporalHistoryObservationTest extends CDAValidationTest {
 	*/
 	@Test
 	public void testValidateGeotemporalHistoryObservationCodeP() {
-      OperationsTestCase<GeotemporalHistoryObservation> validateGeotemporalHistoryObservationCodePTestCase = new OperationsTestCase<GeotemporalHistoryObservation>(
-      "validateGeotemporalHistoryObservationCodeP",
-      operationsForOCL.getOCLValue("VALIDATE_GEOTEMPORAL_HISTORY_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP")
-      ,objectFactory) {
+		OperationsTestCase<GeotemporalHistoryObservation> validateGeotemporalHistoryObservationCodePTestCase = new OperationsTestCase<GeotemporalHistoryObservation>(
+			"validateGeotemporalHistoryObservationCodeP",
+			operationsForOCL.getOCLValue("VALIDATE_GEOTEMPORAL_HISTORY_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
 
-      @Override
-      protected void updateToFail(GeotemporalHistoryObservation target) {
+			@Override
+			protected void updateToFail(GeotemporalHistoryObservation target) {
 
-      }
+			}
 
-      @Override
-      protected void updateToPass(GeotemporalHistoryObservation target) {
-        target.init();
-        
-        
-        
-        
-        
+			@Override
+			protected void updateToPass(GeotemporalHistoryObservation target) {
+				target.init();
 
-        
-        
+			}
 
-  
-      
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
 
-  
-    
-    
-      
-        
-    
-      
-        
-      
-        
-        
-        
-        
-        
-        
-        
-      
-      
-          
-      
-        
-      }
+				return GeotemporalHistoryObservationOperations.validateGeotemporalHistoryObservationCodeP(
+					(GeotemporalHistoryObservation) objectToTest, diagnostician, map);
+			}
 
-      @Override
-      protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-      
-      
-      
-        return GeotemporalHistoryObservationOperations.validateGeotemporalHistoryObservationCodeP(
-          (GeotemporalHistoryObservation) objectToTest, diagnostician, map);
-      }
+		};
 
-    };
-
-    validateGeotemporalHistoryObservationCodePTestCase.doValidationTest();
-}
+		validateGeotemporalHistoryObservationCodePTestCase.doValidationTest();
+	}
 
 	/**
 	*
@@ -325,70 +189,36 @@ public class GeotemporalHistoryObservationTest extends CDAValidationTest {
 	*/
 	@Test
 	public void testValidateGeotemporalHistoryObservationCode() {
-      OperationsTestCase<GeotemporalHistoryObservation> validateGeotemporalHistoryObservationCodeTestCase = new OperationsTestCase<GeotemporalHistoryObservation>(
-      "validateGeotemporalHistoryObservationCode",
-      operationsForOCL.getOCLValue("VALIDATE_GEOTEMPORAL_HISTORY_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP")
-      ,objectFactory) {
+		OperationsTestCase<GeotemporalHistoryObservation> validateGeotemporalHistoryObservationCodeTestCase = new OperationsTestCase<GeotemporalHistoryObservation>(
+			"validateGeotemporalHistoryObservationCode",
+			operationsForOCL.getOCLValue("VALIDATE_GEOTEMPORAL_HISTORY_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
 
-      @Override
-      protected void updateToFail(GeotemporalHistoryObservation target) {
+			@Override
+			protected void updateToFail(GeotemporalHistoryObservation target) {
 
-      }
+			}
 
-      @Override
-      protected void updateToPass(GeotemporalHistoryObservation target) {
-        target.init();
-        
-        
-        
-        
-        
+			@Override
+			protected void updateToPass(GeotemporalHistoryObservation target) {
+				target.init();
 
-        
-        
+				CD cd = DatatypesFactory.eINSTANCE.createCD();
+				target.setCode(cd);
 
-  
-      
+			}
 
-  
-    
-    
-      
-        
-    
-      
-        
-      
-        
-        
-        
-      
-        CD cd  = DatatypesFactory.eINSTANCE.createCD();
-        target.setCode(cd);
-        
-        
-        
-        
-      
-      
-          
-      
-        
-      }
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
 
-      @Override
-      protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-      
-      
-      
-        return GeotemporalHistoryObservationOperations.validateGeotemporalHistoryObservationCode(
-          (GeotemporalHistoryObservation) objectToTest, diagnostician, map);
-      }
+				return GeotemporalHistoryObservationOperations.validateGeotemporalHistoryObservationCode(
+					(GeotemporalHistoryObservation) objectToTest, diagnostician, map);
+			}
 
-    };
+		};
 
-    validateGeotemporalHistoryObservationCodeTestCase.doValidationTest();
-}
+		validateGeotemporalHistoryObservationCodeTestCase.doValidationTest();
+	}
 
 	/**
 	*
@@ -396,69 +226,36 @@ public class GeotemporalHistoryObservationTest extends CDAValidationTest {
 	*/
 	@Test
 	public void testValidateGeotemporalHistoryObservationText() {
-      OperationsTestCase<GeotemporalHistoryObservation> validateGeotemporalHistoryObservationTextTestCase = new OperationsTestCase<GeotemporalHistoryObservation>(
-      "validateGeotemporalHistoryObservationText",
-      operationsForOCL.getOCLValue("VALIDATE_GEOTEMPORAL_HISTORY_OBSERVATION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP")
-      ,objectFactory) {
+		OperationsTestCase<GeotemporalHistoryObservation> validateGeotemporalHistoryObservationTextTestCase = new OperationsTestCase<GeotemporalHistoryObservation>(
+			"validateGeotemporalHistoryObservationText",
+			operationsForOCL.getOCLValue("VALIDATE_GEOTEMPORAL_HISTORY_OBSERVATION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
 
-      @Override
-      protected void updateToFail(GeotemporalHistoryObservation target) {
+			@Override
+			protected void updateToFail(GeotemporalHistoryObservation target) {
 
-      }
+			}
 
-      @Override
-      protected void updateToPass(GeotemporalHistoryObservation target) {
-        target.init();
-        
-        
-        
-        
-        
+			@Override
+			protected void updateToPass(GeotemporalHistoryObservation target) {
+				target.init();
 
-        
-        
+				ED text = DatatypesFactory.eINSTANCE.createED();
+				target.setText(text);
 
-  
-      
+			}
 
-  
-    
-    
-      
-    ED text = DatatypesFactory.eINSTANCE.createED();
-    target.setText(text );	
-        
-    
-      
-        
-      
-        
-        
-        
-        
-        
-        
-        
-      
-      
-          
-      
-        
-      }
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
 
-      @Override
-      protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-      
-      
-      
-        return GeotemporalHistoryObservationOperations.validateGeotemporalHistoryObservationText(
-          (GeotemporalHistoryObservation) objectToTest, diagnostician, map);
-      }
+				return GeotemporalHistoryObservationOperations.validateGeotemporalHistoryObservationText(
+					(GeotemporalHistoryObservation) objectToTest, diagnostician, map);
+			}
 
-    };
+		};
 
-    validateGeotemporalHistoryObservationTextTestCase.doValidationTest();
-}
+		validateGeotemporalHistoryObservationTextTestCase.doValidationTest();
+	}
 
 	/**
 	*
@@ -466,70 +263,36 @@ public class GeotemporalHistoryObservationTest extends CDAValidationTest {
 	*/
 	@Test
 	public void testValidateGeotemporalHistoryObservationStatusCode() {
-      OperationsTestCase<GeotemporalHistoryObservation> validateGeotemporalHistoryObservationStatusCodeTestCase = new OperationsTestCase<GeotemporalHistoryObservation>(
-      "validateGeotemporalHistoryObservationStatusCode",
-      operationsForOCL.getOCLValue("VALIDATE_GEOTEMPORAL_HISTORY_OBSERVATION_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP")
-      ,objectFactory) {
+		OperationsTestCase<GeotemporalHistoryObservation> validateGeotemporalHistoryObservationStatusCodeTestCase = new OperationsTestCase<GeotemporalHistoryObservation>(
+			"validateGeotemporalHistoryObservationStatusCode",
+			operationsForOCL.getOCLValue("VALIDATE_GEOTEMPORAL_HISTORY_OBSERVATION_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
 
-      @Override
-      protected void updateToFail(GeotemporalHistoryObservation target) {
+			@Override
+			protected void updateToFail(GeotemporalHistoryObservation target) {
 
-      }
+			}
 
-      @Override
-      protected void updateToPass(GeotemporalHistoryObservation target) {
-        target.init();
-        
-        
-        
-        
-      
-        CS cs = DatatypesFactory.eINSTANCE.createCS("completed");
-        target.setStatusCode(cs);
-        
+			@Override
+			protected void updateToPass(GeotemporalHistoryObservation target) {
+				target.init();
 
-        
-        
+				CS cs = DatatypesFactory.eINSTANCE.createCS("completed");
+				target.setStatusCode(cs);
 
-  
-      
+			}
 
-  
-    
-    
-      
-        
-    
-      
-        
-      
-        
-        
-        
-        
-        
-        
-        
-      
-      
-          
-      
-        
-      }
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
 
-      @Override
-      protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-      
-      
-      
-        return GeotemporalHistoryObservationOperations.validateGeotemporalHistoryObservationStatusCode(
-          (GeotemporalHistoryObservation) objectToTest, diagnostician, map);
-      }
+				return GeotemporalHistoryObservationOperations.validateGeotemporalHistoryObservationStatusCode(
+					(GeotemporalHistoryObservation) objectToTest, diagnostician, map);
+			}
 
-    };
+		};
 
-    validateGeotemporalHistoryObservationStatusCodeTestCase.doValidationTest();
-}
+		validateGeotemporalHistoryObservationStatusCodeTestCase.doValidationTest();
+	}
 
 	/**
 	*
@@ -537,67 +300,33 @@ public class GeotemporalHistoryObservationTest extends CDAValidationTest {
 	*/
 	@Test
 	public void testValidateGeotemporalHistoryObservationStatusCodeP() {
-      OperationsTestCase<GeotemporalHistoryObservation> validateGeotemporalHistoryObservationStatusCodePTestCase = new OperationsTestCase<GeotemporalHistoryObservation>(
-      "validateGeotemporalHistoryObservationStatusCodeP",
-      operationsForOCL.getOCLValue("VALIDATE_GEOTEMPORAL_HISTORY_OBSERVATION_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP")
-      ,objectFactory) {
+		OperationsTestCase<GeotemporalHistoryObservation> validateGeotemporalHistoryObservationStatusCodePTestCase = new OperationsTestCase<GeotemporalHistoryObservation>(
+			"validateGeotemporalHistoryObservationStatusCodeP",
+			operationsForOCL.getOCLValue("VALIDATE_GEOTEMPORAL_HISTORY_OBSERVATION_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
 
-      @Override
-      protected void updateToFail(GeotemporalHistoryObservation target) {
+			@Override
+			protected void updateToFail(GeotemporalHistoryObservation target) {
 
-      }
+			}
 
-      @Override
-      protected void updateToPass(GeotemporalHistoryObservation target) {
-        target.init();
-        
-        
-        
-        
-        
+			@Override
+			protected void updateToPass(GeotemporalHistoryObservation target) {
+				target.init();
 
-        
-        
+			}
 
-  
-      
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
 
-  
-    
-    
-      
-        
-    
-      
-        
-      
-        
-        
-        
-        
-        
-        
-        
-      
-      
-          
-      
-        
-      }
+				return GeotemporalHistoryObservationOperations.validateGeotemporalHistoryObservationStatusCodeP(
+					(GeotemporalHistoryObservation) objectToTest, diagnostician, map);
+			}
 
-      @Override
-      protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-      
-      
-      
-        return GeotemporalHistoryObservationOperations.validateGeotemporalHistoryObservationStatusCodeP(
-          (GeotemporalHistoryObservation) objectToTest, diagnostician, map);
-      }
+		};
 
-    };
-
-    validateGeotemporalHistoryObservationStatusCodePTestCase.doValidationTest();
-}
+		validateGeotemporalHistoryObservationStatusCodePTestCase.doValidationTest();
+	}
 
 	/**
 	*
@@ -605,70 +334,36 @@ public class GeotemporalHistoryObservationTest extends CDAValidationTest {
 	*/
 	@Test
 	public void testValidateGeotemporalHistoryObservationEffectiveTime() {
-      OperationsTestCase<GeotemporalHistoryObservation> validateGeotemporalHistoryObservationEffectiveTimeTestCase = new OperationsTestCase<GeotemporalHistoryObservation>(
-      "validateGeotemporalHistoryObservationEffectiveTime",
-      operationsForOCL.getOCLValue("VALIDATE_GEOTEMPORAL_HISTORY_OBSERVATION_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP")
-      ,objectFactory) {
+		OperationsTestCase<GeotemporalHistoryObservation> validateGeotemporalHistoryObservationEffectiveTimeTestCase = new OperationsTestCase<GeotemporalHistoryObservation>(
+			"validateGeotemporalHistoryObservationEffectiveTime",
+			operationsForOCL.getOCLValue("VALIDATE_GEOTEMPORAL_HISTORY_OBSERVATION_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
 
-      @Override
-      protected void updateToFail(GeotemporalHistoryObservation target) {
+			@Override
+			protected void updateToFail(GeotemporalHistoryObservation target) {
 
-      }
+			}
 
-      @Override
-      protected void updateToPass(GeotemporalHistoryObservation target) {
-        target.init();
-        
-        
-          IVL_TS ts = DatatypesFactory .eINSTANCE.createIVL_TS();
-          target.setEffectiveTime(ts );								
-        
-        
-        
-        
+			@Override
+			protected void updateToPass(GeotemporalHistoryObservation target) {
+				target.init();
 
-        
-        
+				IVL_TS ts = DatatypesFactory.eINSTANCE.createIVL_TS();
+				target.setEffectiveTime(ts);
 
-  
-      
+			}
 
-  
-    
-    
-      
-        
-    
-      
-        
-      
-        
-        
-        
-        
-        
-        
-        
-      
-      
-          
-      
-        
-      }
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
 
-      @Override
-      protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-      
-      
-      
-        return GeotemporalHistoryObservationOperations.validateGeotemporalHistoryObservationEffectiveTime(
-          (GeotemporalHistoryObservation) objectToTest, diagnostician, map);
-      }
+				return GeotemporalHistoryObservationOperations.validateGeotemporalHistoryObservationEffectiveTime(
+					(GeotemporalHistoryObservation) objectToTest, diagnostician, map);
+			}
 
-    };
+		};
 
-    validateGeotemporalHistoryObservationEffectiveTimeTestCase.doValidationTest();
-}
+		validateGeotemporalHistoryObservationEffectiveTimeTestCase.doValidationTest();
+	}
 
 	/**
 	*
@@ -676,70 +371,36 @@ public class GeotemporalHistoryObservationTest extends CDAValidationTest {
 	*/
 	@Test
 	public void testValidateGeotemporalHistoryObservationValue() {
-      OperationsTestCase<GeotemporalHistoryObservation> validateGeotemporalHistoryObservationValueTestCase = new OperationsTestCase<GeotemporalHistoryObservation>(
-      "validateGeotemporalHistoryObservationValue",
-      operationsForOCL.getOCLValue("VALIDATE_GEOTEMPORAL_HISTORY_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP")
-      ,objectFactory) {
+		OperationsTestCase<GeotemporalHistoryObservation> validateGeotemporalHistoryObservationValueTestCase = new OperationsTestCase<GeotemporalHistoryObservation>(
+			"validateGeotemporalHistoryObservationValue",
+			operationsForOCL.getOCLValue("VALIDATE_GEOTEMPORAL_HISTORY_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
 
-      @Override
-      protected void updateToFail(GeotemporalHistoryObservation target) {
+			@Override
+			protected void updateToFail(GeotemporalHistoryObservation target) {
 
-      }
+			}
 
-      @Override
-      protected void updateToPass(GeotemporalHistoryObservation target) {
-        target.init();
-        
-        
-        
-        
-        
+			@Override
+			protected void updateToPass(GeotemporalHistoryObservation target) {
+				target.init();
 
-        
-      
-        CD value = DatatypesFactory.eINSTANCE.createCD();
-        target.getValues().add(value);
-        
+				CD value = DatatypesFactory.eINSTANCE.createCD();
+				target.getValues().add(value);
 
-  
-      
+			}
 
-  
-    
-    
-      
-        
-    
-      
-        
-      
-        
-        
-        
-        
-        
-        
-        
-      
-      
-          
-      
-        
-      }
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
 
-      @Override
-      protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-      
-      
-      
-        return GeotemporalHistoryObservationOperations.validateGeotemporalHistoryObservationValue(
-          (GeotemporalHistoryObservation) objectToTest, diagnostician, map);
-      }
+				return GeotemporalHistoryObservationOperations.validateGeotemporalHistoryObservationValue(
+					(GeotemporalHistoryObservation) objectToTest, diagnostician, map);
+			}
 
-    };
+		};
 
-    validateGeotemporalHistoryObservationValueTestCase.doValidationTest();
-}
+		validateGeotemporalHistoryObservationValueTestCase.doValidationTest();
+	}
 
 	/**
 	*
@@ -794,17 +455,17 @@ public class GeotemporalHistoryObservationTest extends CDAValidationTest {
 	*/
 	@Test
 	public void testConstructor() {
-          @SuppressWarnings("unused")
-      ConstructorTestClass constructorTestClass = new ConstructorTestClass();		
-  } // testConstructor
+		@SuppressWarnings("unused")
+		ConstructorTestClass constructorTestClass = new ConstructorTestClass();
+	} // testConstructor
 
 	/**
 	*
 	* @generated
 	*/
 	@Override
-	protected EObject getObjectToTest() {		
-    return null;
-  }
+	protected EObject getObjectToTest() {
+		return null;
+	}
 
 } // GeotemporalHistoryObservationOperations

@@ -76,67 +76,33 @@ public class PublicHealthCaseReportTest extends CDAValidationTest {
 	*/
 	@Test
 	public void testValidatePublicHealthCaseReportPHCRRecordTarget() {
-      OperationsTestCase<PublicHealthCaseReport> validatePublicHealthCaseReportPHCRRecordTargetTestCase = new OperationsTestCase<PublicHealthCaseReport>(
-      "validatePublicHealthCaseReportPHCRRecordTarget",
-      operationsForOCL.getOCLValue("VALIDATE_PUBLIC_HEALTH_CASE_REPORT_PHCR_RECORD_TARGET__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP")
-      ,objectFactory) {
+		OperationsTestCase<PublicHealthCaseReport> validatePublicHealthCaseReportPHCRRecordTargetTestCase = new OperationsTestCase<PublicHealthCaseReport>(
+			"validatePublicHealthCaseReportPHCRRecordTarget",
+			operationsForOCL.getOCLValue("VALIDATE_PUBLIC_HEALTH_CASE_REPORT_PHCR_RECORD_TARGET__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
 
-      @Override
-      protected void updateToFail(PublicHealthCaseReport target) {
+			@Override
+			protected void updateToFail(PublicHealthCaseReport target) {
 
-      }
+			}
 
-      @Override
-      protected void updateToPass(PublicHealthCaseReport target) {
-        target.init();
-        
-        
-        
-        
-        
+			@Override
+			protected void updateToPass(PublicHealthCaseReport target) {
+				target.init();
 
-        
-        
+			}
 
-  
-      
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
 
-  
-    
-    
-      
-        
-    
-      
-        
-      
-        
-        
-        
-        
-        
-        
-        
-      
-      
-          
-      
-        
-      }
+				return PublicHealthCaseReportOperations.validatePublicHealthCaseReportPHCRRecordTarget(
+					(PublicHealthCaseReport) objectToTest, diagnostician, map);
+			}
 
-      @Override
-      protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-      
-      
-      
-        return PublicHealthCaseReportOperations.validatePublicHealthCaseReportPHCRRecordTarget(
-          (PublicHealthCaseReport) objectToTest, diagnostician, map);
-      }
+		};
 
-    };
-
-    validatePublicHealthCaseReportPHCRRecordTargetTestCase.doValidationTest();
-}
+		validatePublicHealthCaseReportPHCRRecordTargetTestCase.doValidationTest();
+	}
 
 	/**
 	*
@@ -144,67 +110,33 @@ public class PublicHealthCaseReportTest extends CDAValidationTest {
 	*/
 	@Test
 	public void testValidatePublicHealthCaseReportPHCRRecordTargetPatientRole() {
-      OperationsTestCase<PublicHealthCaseReport> validatePublicHealthCaseReportPHCRRecordTargetPatientRoleTestCase = new OperationsTestCase<PublicHealthCaseReport>(
-      "validatePublicHealthCaseReportPHCRRecordTargetPatientRole",
-      operationsForOCL.getOCLValue("VALIDATE_PUBLIC_HEALTH_CASE_REPORT_PHCR_RECORD_TARGET_PATIENT_ROLE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP")
-      ,objectFactory) {
+		OperationsTestCase<PublicHealthCaseReport> validatePublicHealthCaseReportPHCRRecordTargetPatientRoleTestCase = new OperationsTestCase<PublicHealthCaseReport>(
+			"validatePublicHealthCaseReportPHCRRecordTargetPatientRole",
+			operationsForOCL.getOCLValue("VALIDATE_PUBLIC_HEALTH_CASE_REPORT_PHCR_RECORD_TARGET_PATIENT_ROLE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
 
-      @Override
-      protected void updateToFail(PublicHealthCaseReport target) {
+			@Override
+			protected void updateToFail(PublicHealthCaseReport target) {
 
-      }
+			}
 
-      @Override
-      protected void updateToPass(PublicHealthCaseReport target) {
-        target.init();
-        
-        
-        
-        
-        
+			@Override
+			protected void updateToPass(PublicHealthCaseReport target) {
+				target.init();
 
-        
-        
+			}
 
-  
-      
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
 
-  
-    
-    
-      
-        
-    
-      
-        
-      
-        
-        
-        
-        
-        
-        
-        
-      
-      
-          
-      
-        
-      }
+				return PublicHealthCaseReportOperations.validatePublicHealthCaseReportPHCRRecordTargetPatientRole(
+					(PublicHealthCaseReport) objectToTest, diagnostician, map);
+			}
 
-      @Override
-      protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-      
-      
-      
-        return PublicHealthCaseReportOperations.validatePublicHealthCaseReportPHCRRecordTargetPatientRole(
-          (PublicHealthCaseReport) objectToTest, diagnostician, map);
-      }
+		};
 
-    };
-
-    validatePublicHealthCaseReportPHCRRecordTargetPatientRoleTestCase.doValidationTest();
-}
+		validatePublicHealthCaseReportPHCRRecordTargetPatientRoleTestCase.doValidationTest();
+	}
 
 	/**
 	*
@@ -212,67 +144,33 @@ public class PublicHealthCaseReportTest extends CDAValidationTest {
 	*/
 	@Test
 	public void testValidatePublicHealthCaseReportPHCRRecordTargetPatientRoleId() {
-      OperationsTestCase<PublicHealthCaseReport> validatePublicHealthCaseReportPHCRRecordTargetPatientRoleIdTestCase = new OperationsTestCase<PublicHealthCaseReport>(
-      "validatePublicHealthCaseReportPHCRRecordTargetPatientRoleId",
-      operationsForOCL.getOCLValue("VALIDATE_PUBLIC_HEALTH_CASE_REPORT_PHCR_RECORD_TARGET_PATIENT_ROLE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP")
-      ,objectFactory) {
+		OperationsTestCase<PublicHealthCaseReport> validatePublicHealthCaseReportPHCRRecordTargetPatientRoleIdTestCase = new OperationsTestCase<PublicHealthCaseReport>(
+			"validatePublicHealthCaseReportPHCRRecordTargetPatientRoleId",
+			operationsForOCL.getOCLValue("VALIDATE_PUBLIC_HEALTH_CASE_REPORT_PHCR_RECORD_TARGET_PATIENT_ROLE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
 
-      @Override
-      protected void updateToFail(PublicHealthCaseReport target) {
+			@Override
+			protected void updateToFail(PublicHealthCaseReport target) {
 
-      }
+			}
 
-      @Override
-      protected void updateToPass(PublicHealthCaseReport target) {
-        target.init();
-        
-        
-        
-        
-        
+			@Override
+			protected void updateToPass(PublicHealthCaseReport target) {
+				target.init();
 
-        
-        
+			}
 
-  
-      
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
 
-  
-    
-    
-      
-        
-    
-      
-        
-      
-        
-        
-        
-        
-        
-        
-        
-      
-      
-          
-      
-        
-      }
+				return PublicHealthCaseReportOperations.validatePublicHealthCaseReportPHCRRecordTargetPatientRoleId(
+					(PublicHealthCaseReport) objectToTest, diagnostician, map);
+			}
 
-      @Override
-      protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-      
-      
-      
-        return PublicHealthCaseReportOperations.validatePublicHealthCaseReportPHCRRecordTargetPatientRoleId(
-          (PublicHealthCaseReport) objectToTest, diagnostician, map);
-      }
+		};
 
-    };
-
-    validatePublicHealthCaseReportPHCRRecordTargetPatientRoleIdTestCase.doValidationTest();
-}
+		validatePublicHealthCaseReportPHCRRecordTargetPatientRoleIdTestCase.doValidationTest();
+	}
 
 	/**
 	*
@@ -280,67 +178,33 @@ public class PublicHealthCaseReportTest extends CDAValidationTest {
 	*/
 	@Test
 	public void testValidatePublicHealthCaseReportPHCRAuthor() {
-      OperationsTestCase<PublicHealthCaseReport> validatePublicHealthCaseReportPHCRAuthorTestCase = new OperationsTestCase<PublicHealthCaseReport>(
-      "validatePublicHealthCaseReportPHCRAuthor",
-      operationsForOCL.getOCLValue("VALIDATE_PUBLIC_HEALTH_CASE_REPORT_PHCR_AUTHOR__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP")
-      ,objectFactory) {
+		OperationsTestCase<PublicHealthCaseReport> validatePublicHealthCaseReportPHCRAuthorTestCase = new OperationsTestCase<PublicHealthCaseReport>(
+			"validatePublicHealthCaseReportPHCRAuthor",
+			operationsForOCL.getOCLValue("VALIDATE_PUBLIC_HEALTH_CASE_REPORT_PHCR_AUTHOR__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
 
-      @Override
-      protected void updateToFail(PublicHealthCaseReport target) {
+			@Override
+			protected void updateToFail(PublicHealthCaseReport target) {
 
-      }
+			}
 
-      @Override
-      protected void updateToPass(PublicHealthCaseReport target) {
-        target.init();
-        
-        
-        
-        
-        
+			@Override
+			protected void updateToPass(PublicHealthCaseReport target) {
+				target.init();
 
-        
-        
+			}
 
-  
-      
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
 
-  
-    
-    
-      
-        
-    
-      
-        
-      
-        
-        
-        
-        
-        
-        
-        
-      
-      
-          
-      
-        
-      }
+				return PublicHealthCaseReportOperations.validatePublicHealthCaseReportPHCRAuthor(
+					(PublicHealthCaseReport) objectToTest, diagnostician, map);
+			}
 
-      @Override
-      protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-      
-      
-      
-        return PublicHealthCaseReportOperations.validatePublicHealthCaseReportPHCRAuthor(
-          (PublicHealthCaseReport) objectToTest, diagnostician, map);
-      }
+		};
 
-    };
-
-    validatePublicHealthCaseReportPHCRAuthorTestCase.doValidationTest();
-}
+		validatePublicHealthCaseReportPHCRAuthorTestCase.doValidationTest();
+	}
 
 	/**
 	*
@@ -348,67 +212,33 @@ public class PublicHealthCaseReportTest extends CDAValidationTest {
 	*/
 	@Test
 	public void testValidatePublicHealthCaseReportPHCRAuthorTiime() {
-      OperationsTestCase<PublicHealthCaseReport> validatePublicHealthCaseReportPHCRAuthorTiimeTestCase = new OperationsTestCase<PublicHealthCaseReport>(
-      "validatePublicHealthCaseReportPHCRAuthorTiime",
-      operationsForOCL.getOCLValue("VALIDATE_PUBLIC_HEALTH_CASE_REPORT_PHCR_AUTHOR_TIIME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP")
-      ,objectFactory) {
+		OperationsTestCase<PublicHealthCaseReport> validatePublicHealthCaseReportPHCRAuthorTiimeTestCase = new OperationsTestCase<PublicHealthCaseReport>(
+			"validatePublicHealthCaseReportPHCRAuthorTiime",
+			operationsForOCL.getOCLValue("VALIDATE_PUBLIC_HEALTH_CASE_REPORT_PHCR_AUTHOR_TIIME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
 
-      @Override
-      protected void updateToFail(PublicHealthCaseReport target) {
+			@Override
+			protected void updateToFail(PublicHealthCaseReport target) {
 
-      }
+			}
 
-      @Override
-      protected void updateToPass(PublicHealthCaseReport target) {
-        target.init();
-        
-        
-        
-        
-        
+			@Override
+			protected void updateToPass(PublicHealthCaseReport target) {
+				target.init();
 
-        
-        
+			}
 
-  
-      
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
 
-  
-    
-    
-      
-        
-    
-      
-        
-      
-        
-        
-        
-        
-        
-        
-        
-      
-      
-          
-      
-        
-      }
+				return PublicHealthCaseReportOperations.validatePublicHealthCaseReportPHCRAuthorTiime(
+					(PublicHealthCaseReport) objectToTest, diagnostician, map);
+			}
 
-      @Override
-      protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-      
-      
-      
-        return PublicHealthCaseReportOperations.validatePublicHealthCaseReportPHCRAuthorTiime(
-          (PublicHealthCaseReport) objectToTest, diagnostician, map);
-      }
+		};
 
-    };
-
-    validatePublicHealthCaseReportPHCRAuthorTiimeTestCase.doValidationTest();
-}
+		validatePublicHealthCaseReportPHCRAuthorTiimeTestCase.doValidationTest();
+	}
 
 	/**
 	*
@@ -416,67 +246,33 @@ public class PublicHealthCaseReportTest extends CDAValidationTest {
 	*/
 	@Test
 	public void testValidatePublicHealthCaseReportPHCRAuthorAssignedAuthor() {
-      OperationsTestCase<PublicHealthCaseReport> validatePublicHealthCaseReportPHCRAuthorAssignedAuthorTestCase = new OperationsTestCase<PublicHealthCaseReport>(
-      "validatePublicHealthCaseReportPHCRAuthorAssignedAuthor",
-      operationsForOCL.getOCLValue("VALIDATE_PUBLIC_HEALTH_CASE_REPORT_PHCR_AUTHOR_ASSIGNED_AUTHOR__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP")
-      ,objectFactory) {
+		OperationsTestCase<PublicHealthCaseReport> validatePublicHealthCaseReportPHCRAuthorAssignedAuthorTestCase = new OperationsTestCase<PublicHealthCaseReport>(
+			"validatePublicHealthCaseReportPHCRAuthorAssignedAuthor",
+			operationsForOCL.getOCLValue("VALIDATE_PUBLIC_HEALTH_CASE_REPORT_PHCR_AUTHOR_ASSIGNED_AUTHOR__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
 
-      @Override
-      protected void updateToFail(PublicHealthCaseReport target) {
+			@Override
+			protected void updateToFail(PublicHealthCaseReport target) {
 
-      }
+			}
 
-      @Override
-      protected void updateToPass(PublicHealthCaseReport target) {
-        target.init();
-        
-        
-        
-        
-        
+			@Override
+			protected void updateToPass(PublicHealthCaseReport target) {
+				target.init();
 
-        
-        
+			}
 
-  
-      
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
 
-  
-    
-    
-      
-        
-    
-      
-        
-      
-        
-        
-        
-        
-        
-        
-        
-      
-      
-          
-      
-        
-      }
+				return PublicHealthCaseReportOperations.validatePublicHealthCaseReportPHCRAuthorAssignedAuthor(
+					(PublicHealthCaseReport) objectToTest, diagnostician, map);
+			}
 
-      @Override
-      protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-      
-      
-      
-        return PublicHealthCaseReportOperations.validatePublicHealthCaseReportPHCRAuthorAssignedAuthor(
-          (PublicHealthCaseReport) objectToTest, diagnostician, map);
-      }
+		};
 
-    };
-
-    validatePublicHealthCaseReportPHCRAuthorAssignedAuthorTestCase.doValidationTest();
-}
+		validatePublicHealthCaseReportPHCRAuthorAssignedAuthorTestCase.doValidationTest();
+	}
 
 	/**
 	*
@@ -484,67 +280,33 @@ public class PublicHealthCaseReportTest extends CDAValidationTest {
 	*/
 	@Test
 	public void testValidatePublicHealthCaseReportPHCRAuthorAssignedAuthorId() {
-      OperationsTestCase<PublicHealthCaseReport> validatePublicHealthCaseReportPHCRAuthorAssignedAuthorIdTestCase = new OperationsTestCase<PublicHealthCaseReport>(
-      "validatePublicHealthCaseReportPHCRAuthorAssignedAuthorId",
-      operationsForOCL.getOCLValue("VALIDATE_PUBLIC_HEALTH_CASE_REPORT_PHCR_AUTHOR_ASSIGNED_AUTHOR_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP")
-      ,objectFactory) {
+		OperationsTestCase<PublicHealthCaseReport> validatePublicHealthCaseReportPHCRAuthorAssignedAuthorIdTestCase = new OperationsTestCase<PublicHealthCaseReport>(
+			"validatePublicHealthCaseReportPHCRAuthorAssignedAuthorId",
+			operationsForOCL.getOCLValue("VALIDATE_PUBLIC_HEALTH_CASE_REPORT_PHCR_AUTHOR_ASSIGNED_AUTHOR_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
 
-      @Override
-      protected void updateToFail(PublicHealthCaseReport target) {
+			@Override
+			protected void updateToFail(PublicHealthCaseReport target) {
 
-      }
+			}
 
-      @Override
-      protected void updateToPass(PublicHealthCaseReport target) {
-        target.init();
-        
-        
-        
-        
-        
+			@Override
+			protected void updateToPass(PublicHealthCaseReport target) {
+				target.init();
 
-        
-        
+			}
 
-  
-      
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
 
-  
-    
-    
-      
-        
-    
-      
-        
-      
-        
-        
-        
-        
-        
-        
-        
-      
-      
-          
-      
-        
-      }
+				return PublicHealthCaseReportOperations.validatePublicHealthCaseReportPHCRAuthorAssignedAuthorId(
+					(PublicHealthCaseReport) objectToTest, diagnostician, map);
+			}
 
-      @Override
-      protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-      
-      
-      
-        return PublicHealthCaseReportOperations.validatePublicHealthCaseReportPHCRAuthorAssignedAuthorId(
-          (PublicHealthCaseReport) objectToTest, diagnostician, map);
-      }
+		};
 
-    };
-
-    validatePublicHealthCaseReportPHCRAuthorAssignedAuthorIdTestCase.doValidationTest();
-}
+		validatePublicHealthCaseReportPHCRAuthorAssignedAuthorIdTestCase.doValidationTest();
+	}
 
 	/**
 	*
@@ -552,67 +314,33 @@ public class PublicHealthCaseReportTest extends CDAValidationTest {
 	*/
 	@Test
 	public void testValidatePublicHealthCaseReportPHCRAuthorAssignedAuthorAddr() {
-      OperationsTestCase<PublicHealthCaseReport> validatePublicHealthCaseReportPHCRAuthorAssignedAuthorAddrTestCase = new OperationsTestCase<PublicHealthCaseReport>(
-      "validatePublicHealthCaseReportPHCRAuthorAssignedAuthorAddr",
-      operationsForOCL.getOCLValue("VALIDATE_PUBLIC_HEALTH_CASE_REPORT_PHCR_AUTHOR_ASSIGNED_AUTHOR_ADDR__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP")
-      ,objectFactory) {
+		OperationsTestCase<PublicHealthCaseReport> validatePublicHealthCaseReportPHCRAuthorAssignedAuthorAddrTestCase = new OperationsTestCase<PublicHealthCaseReport>(
+			"validatePublicHealthCaseReportPHCRAuthorAssignedAuthorAddr",
+			operationsForOCL.getOCLValue("VALIDATE_PUBLIC_HEALTH_CASE_REPORT_PHCR_AUTHOR_ASSIGNED_AUTHOR_ADDR__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
 
-      @Override
-      protected void updateToFail(PublicHealthCaseReport target) {
+			@Override
+			protected void updateToFail(PublicHealthCaseReport target) {
 
-      }
+			}
 
-      @Override
-      protected void updateToPass(PublicHealthCaseReport target) {
-        target.init();
-        
-        
-        
-        
-        
+			@Override
+			protected void updateToPass(PublicHealthCaseReport target) {
+				target.init();
 
-        
-        
+			}
 
-  
-      
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
 
-  
-    
-    
-      
-        
-    
-      
-        
-      
-        
-        
-        
-        
-        
-        
-        
-      
-      
-          
-      
-        
-      }
+				return PublicHealthCaseReportOperations.validatePublicHealthCaseReportPHCRAuthorAssignedAuthorAddr(
+					(PublicHealthCaseReport) objectToTest, diagnostician, map);
+			}
 
-      @Override
-      protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-      
-      
-      
-        return PublicHealthCaseReportOperations.validatePublicHealthCaseReportPHCRAuthorAssignedAuthorAddr(
-          (PublicHealthCaseReport) objectToTest, diagnostician, map);
-      }
+		};
 
-    };
-
-    validatePublicHealthCaseReportPHCRAuthorAssignedAuthorAddrTestCase.doValidationTest();
-}
+		validatePublicHealthCaseReportPHCRAuthorAssignedAuthorAddrTestCase.doValidationTest();
+	}
 
 	/**
 	*
@@ -620,67 +348,33 @@ public class PublicHealthCaseReportTest extends CDAValidationTest {
 	*/
 	@Test
 	public void testValidatePublicHealthCaseReportPHCRAuthorAssignedAuthorTelecom() {
-      OperationsTestCase<PublicHealthCaseReport> validatePublicHealthCaseReportPHCRAuthorAssignedAuthorTelecomTestCase = new OperationsTestCase<PublicHealthCaseReport>(
-      "validatePublicHealthCaseReportPHCRAuthorAssignedAuthorTelecom",
-      operationsForOCL.getOCLValue("VALIDATE_PUBLIC_HEALTH_CASE_REPORT_PHCR_AUTHOR_ASSIGNED_AUTHOR_TELECOM__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP")
-      ,objectFactory) {
+		OperationsTestCase<PublicHealthCaseReport> validatePublicHealthCaseReportPHCRAuthorAssignedAuthorTelecomTestCase = new OperationsTestCase<PublicHealthCaseReport>(
+			"validatePublicHealthCaseReportPHCRAuthorAssignedAuthorTelecom",
+			operationsForOCL.getOCLValue("VALIDATE_PUBLIC_HEALTH_CASE_REPORT_PHCR_AUTHOR_ASSIGNED_AUTHOR_TELECOM__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
 
-      @Override
-      protected void updateToFail(PublicHealthCaseReport target) {
+			@Override
+			protected void updateToFail(PublicHealthCaseReport target) {
 
-      }
+			}
 
-      @Override
-      protected void updateToPass(PublicHealthCaseReport target) {
-        target.init();
-        
-        
-        
-        
-        
+			@Override
+			protected void updateToPass(PublicHealthCaseReport target) {
+				target.init();
 
-        
-        
+			}
 
-  
-      
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
 
-  
-    
-    
-      
-        
-    
-      
-        
-      
-        
-        
-        
-        
-        
-        
-        
-      
-      
-          
-      
-        
-      }
+				return PublicHealthCaseReportOperations.validatePublicHealthCaseReportPHCRAuthorAssignedAuthorTelecom(
+					(PublicHealthCaseReport) objectToTest, diagnostician, map);
+			}
 
-      @Override
-      protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-      
-      
-      
-        return PublicHealthCaseReportOperations.validatePublicHealthCaseReportPHCRAuthorAssignedAuthorTelecom(
-          (PublicHealthCaseReport) objectToTest, diagnostician, map);
-      }
+		};
 
-    };
-
-    validatePublicHealthCaseReportPHCRAuthorAssignedAuthorTelecomTestCase.doValidationTest();
-}
+		validatePublicHealthCaseReportPHCRAuthorAssignedAuthorTelecomTestCase.doValidationTest();
+	}
 
 	/**
 	*
@@ -688,67 +382,33 @@ public class PublicHealthCaseReportTest extends CDAValidationTest {
 	*/
 	@Test
 	public void testValidatePublicHealthCaseReportPHCRAuthorAssignedAuthorAssignedPersonName() {
-      OperationsTestCase<PublicHealthCaseReport> validatePublicHealthCaseReportPHCRAuthorAssignedAuthorAssignedPersonNameTestCase = new OperationsTestCase<PublicHealthCaseReport>(
-      "validatePublicHealthCaseReportPHCRAuthorAssignedAuthorAssignedPersonName",
-      operationsForOCL.getOCLValue("VALIDATE_PUBLIC_HEALTH_CASE_REPORT_PHCR_AUTHOR_ASSIGNED_AUTHOR_ASSIGNED_PERSON_NAME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP")
-      ,objectFactory) {
+		OperationsTestCase<PublicHealthCaseReport> validatePublicHealthCaseReportPHCRAuthorAssignedAuthorAssignedPersonNameTestCase = new OperationsTestCase<PublicHealthCaseReport>(
+			"validatePublicHealthCaseReportPHCRAuthorAssignedAuthorAssignedPersonName",
+			operationsForOCL.getOCLValue("VALIDATE_PUBLIC_HEALTH_CASE_REPORT_PHCR_AUTHOR_ASSIGNED_AUTHOR_ASSIGNED_PERSON_NAME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
 
-      @Override
-      protected void updateToFail(PublicHealthCaseReport target) {
+			@Override
+			protected void updateToFail(PublicHealthCaseReport target) {
 
-      }
+			}
 
-      @Override
-      protected void updateToPass(PublicHealthCaseReport target) {
-        target.init();
-        
-        
-        
-        
-        
+			@Override
+			protected void updateToPass(PublicHealthCaseReport target) {
+				target.init();
 
-        
-        
+			}
 
-  
-      
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
 
-  
-    
-    
-      
-        
-    
-      
-        
-      
-        
-        
-        
-        
-        
-        
-        
-      
-      
-          
-      
-        
-      }
+				return PublicHealthCaseReportOperations.validatePublicHealthCaseReportPHCRAuthorAssignedAuthorAssignedPersonName(
+					(PublicHealthCaseReport) objectToTest, diagnostician, map);
+			}
 
-      @Override
-      protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-      
-      
-      
-        return PublicHealthCaseReportOperations.validatePublicHealthCaseReportPHCRAuthorAssignedAuthorAssignedPersonName(
-          (PublicHealthCaseReport) objectToTest, diagnostician, map);
-      }
+		};
 
-    };
-
-    validatePublicHealthCaseReportPHCRAuthorAssignedAuthorAssignedPersonNameTestCase.doValidationTest();
-}
+		validatePublicHealthCaseReportPHCRAuthorAssignedAuthorAssignedPersonNameTestCase.doValidationTest();
+	}
 
 	/**
 	*
@@ -756,67 +416,33 @@ public class PublicHealthCaseReportTest extends CDAValidationTest {
 	*/
 	@Test
 	public void testValidatePublicHealthCaseReportPHCRLegalAuthenticator() {
-      OperationsTestCase<PublicHealthCaseReport> validatePublicHealthCaseReportPHCRLegalAuthenticatorTestCase = new OperationsTestCase<PublicHealthCaseReport>(
-      "validatePublicHealthCaseReportPHCRLegalAuthenticator",
-      operationsForOCL.getOCLValue("VALIDATE_PUBLIC_HEALTH_CASE_REPORT_PHCR_LEGAL_AUTHENTICATOR__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP")
-      ,objectFactory) {
+		OperationsTestCase<PublicHealthCaseReport> validatePublicHealthCaseReportPHCRLegalAuthenticatorTestCase = new OperationsTestCase<PublicHealthCaseReport>(
+			"validatePublicHealthCaseReportPHCRLegalAuthenticator",
+			operationsForOCL.getOCLValue("VALIDATE_PUBLIC_HEALTH_CASE_REPORT_PHCR_LEGAL_AUTHENTICATOR__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
 
-      @Override
-      protected void updateToFail(PublicHealthCaseReport target) {
+			@Override
+			protected void updateToFail(PublicHealthCaseReport target) {
 
-      }
+			}
 
-      @Override
-      protected void updateToPass(PublicHealthCaseReport target) {
-        target.init();
-        
-        
-        
-        
-        
+			@Override
+			protected void updateToPass(PublicHealthCaseReport target) {
+				target.init();
 
-        
-        
+			}
 
-  
-      
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
 
-  
-    
-    
-      
-        
-    
-      
-        
-      
-        
-        
-        
-        
-        
-        
-        
-      
-      
-          
-      
-        
-      }
+				return PublicHealthCaseReportOperations.validatePublicHealthCaseReportPHCRLegalAuthenticator(
+					(PublicHealthCaseReport) objectToTest, diagnostician, map);
+			}
 
-      @Override
-      protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-      
-      
-      
-        return PublicHealthCaseReportOperations.validatePublicHealthCaseReportPHCRLegalAuthenticator(
-          (PublicHealthCaseReport) objectToTest, diagnostician, map);
-      }
+		};
 
-    };
-
-    validatePublicHealthCaseReportPHCRLegalAuthenticatorTestCase.doValidationTest();
-}
+		validatePublicHealthCaseReportPHCRLegalAuthenticatorTestCase.doValidationTest();
+	}
 
 	/**
 	*
@@ -824,67 +450,33 @@ public class PublicHealthCaseReportTest extends CDAValidationTest {
 	*/
 	@Test
 	public void testValidatePublicHealthCaseReportPHCRLegalAuthenticatorTime() {
-      OperationsTestCase<PublicHealthCaseReport> validatePublicHealthCaseReportPHCRLegalAuthenticatorTimeTestCase = new OperationsTestCase<PublicHealthCaseReport>(
-      "validatePublicHealthCaseReportPHCRLegalAuthenticatorTime",
-      operationsForOCL.getOCLValue("VALIDATE_PUBLIC_HEALTH_CASE_REPORT_PHCR_LEGAL_AUTHENTICATOR_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP")
-      ,objectFactory) {
+		OperationsTestCase<PublicHealthCaseReport> validatePublicHealthCaseReportPHCRLegalAuthenticatorTimeTestCase = new OperationsTestCase<PublicHealthCaseReport>(
+			"validatePublicHealthCaseReportPHCRLegalAuthenticatorTime",
+			operationsForOCL.getOCLValue("VALIDATE_PUBLIC_HEALTH_CASE_REPORT_PHCR_LEGAL_AUTHENTICATOR_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
 
-      @Override
-      protected void updateToFail(PublicHealthCaseReport target) {
+			@Override
+			protected void updateToFail(PublicHealthCaseReport target) {
 
-      }
+			}
 
-      @Override
-      protected void updateToPass(PublicHealthCaseReport target) {
-        target.init();
-        
-        
-        
-        
-        
+			@Override
+			protected void updateToPass(PublicHealthCaseReport target) {
+				target.init();
 
-        
-        
+			}
 
-  
-      
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
 
-  
-    
-    
-      
-        
-    
-      
-        
-      
-        
-        
-        
-        
-        
-        
-        
-      
-      
-          
-      
-        
-      }
+				return PublicHealthCaseReportOperations.validatePublicHealthCaseReportPHCRLegalAuthenticatorTime(
+					(PublicHealthCaseReport) objectToTest, diagnostician, map);
+			}
 
-      @Override
-      protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-      
-      
-      
-        return PublicHealthCaseReportOperations.validatePublicHealthCaseReportPHCRLegalAuthenticatorTime(
-          (PublicHealthCaseReport) objectToTest, diagnostician, map);
-      }
+		};
 
-    };
-
-    validatePublicHealthCaseReportPHCRLegalAuthenticatorTimeTestCase.doValidationTest();
-}
+		validatePublicHealthCaseReportPHCRLegalAuthenticatorTimeTestCase.doValidationTest();
+	}
 
 	/**
 	*
@@ -892,67 +484,33 @@ public class PublicHealthCaseReportTest extends CDAValidationTest {
 	*/
 	@Test
 	public void testValidatePublicHealthCaseReportPHCRLegalAuthenticatorAssignedEntity() {
-      OperationsTestCase<PublicHealthCaseReport> validatePublicHealthCaseReportPHCRLegalAuthenticatorAssignedEntityTestCase = new OperationsTestCase<PublicHealthCaseReport>(
-      "validatePublicHealthCaseReportPHCRLegalAuthenticatorAssignedEntity",
-      operationsForOCL.getOCLValue("VALIDATE_PUBLIC_HEALTH_CASE_REPORT_PHCR_LEGAL_AUTHENTICATOR_ASSIGNED_ENTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP")
-      ,objectFactory) {
+		OperationsTestCase<PublicHealthCaseReport> validatePublicHealthCaseReportPHCRLegalAuthenticatorAssignedEntityTestCase = new OperationsTestCase<PublicHealthCaseReport>(
+			"validatePublicHealthCaseReportPHCRLegalAuthenticatorAssignedEntity",
+			operationsForOCL.getOCLValue("VALIDATE_PUBLIC_HEALTH_CASE_REPORT_PHCR_LEGAL_AUTHENTICATOR_ASSIGNED_ENTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
 
-      @Override
-      protected void updateToFail(PublicHealthCaseReport target) {
+			@Override
+			protected void updateToFail(PublicHealthCaseReport target) {
 
-      }
+			}
 
-      @Override
-      protected void updateToPass(PublicHealthCaseReport target) {
-        target.init();
-        
-        
-        
-        
-        
+			@Override
+			protected void updateToPass(PublicHealthCaseReport target) {
+				target.init();
 
-        
-        
+			}
 
-  
-      
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
 
-  
-    
-    
-      
-        
-    
-      
-        
-      
-        
-        
-        
-        
-        
-        
-        
-      
-      
-          
-      
-        
-      }
+				return PublicHealthCaseReportOperations.validatePublicHealthCaseReportPHCRLegalAuthenticatorAssignedEntity(
+					(PublicHealthCaseReport) objectToTest, diagnostician, map);
+			}
 
-      @Override
-      protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-      
-      
-      
-        return PublicHealthCaseReportOperations.validatePublicHealthCaseReportPHCRLegalAuthenticatorAssignedEntity(
-          (PublicHealthCaseReport) objectToTest, diagnostician, map);
-      }
+		};
 
-    };
-
-    validatePublicHealthCaseReportPHCRLegalAuthenticatorAssignedEntityTestCase.doValidationTest();
-}
+		validatePublicHealthCaseReportPHCRLegalAuthenticatorAssignedEntityTestCase.doValidationTest();
+	}
 
 	/**
 	*
@@ -960,67 +518,33 @@ public class PublicHealthCaseReportTest extends CDAValidationTest {
 	*/
 	@Test
 	public void testValidatePublicHealthCaseReportPHCRLegalAuthenticatorAssignedEntityId() {
-      OperationsTestCase<PublicHealthCaseReport> validatePublicHealthCaseReportPHCRLegalAuthenticatorAssignedEntityIdTestCase = new OperationsTestCase<PublicHealthCaseReport>(
-      "validatePublicHealthCaseReportPHCRLegalAuthenticatorAssignedEntityId",
-      operationsForOCL.getOCLValue("VALIDATE_PUBLIC_HEALTH_CASE_REPORT_PHCR_LEGAL_AUTHENTICATOR_ASSIGNED_ENTITY_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP")
-      ,objectFactory) {
+		OperationsTestCase<PublicHealthCaseReport> validatePublicHealthCaseReportPHCRLegalAuthenticatorAssignedEntityIdTestCase = new OperationsTestCase<PublicHealthCaseReport>(
+			"validatePublicHealthCaseReportPHCRLegalAuthenticatorAssignedEntityId",
+			operationsForOCL.getOCLValue("VALIDATE_PUBLIC_HEALTH_CASE_REPORT_PHCR_LEGAL_AUTHENTICATOR_ASSIGNED_ENTITY_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
 
-      @Override
-      protected void updateToFail(PublicHealthCaseReport target) {
+			@Override
+			protected void updateToFail(PublicHealthCaseReport target) {
 
-      }
+			}
 
-      @Override
-      protected void updateToPass(PublicHealthCaseReport target) {
-        target.init();
-        
-        
-        
-        
-        
+			@Override
+			protected void updateToPass(PublicHealthCaseReport target) {
+				target.init();
 
-        
-        
+			}
 
-  
-      
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
 
-  
-    
-    
-      
-        
-    
-      
-        
-      
-        
-        
-        
-        
-        
-        
-        
-      
-      
-          
-      
-        
-      }
+				return PublicHealthCaseReportOperations.validatePublicHealthCaseReportPHCRLegalAuthenticatorAssignedEntityId(
+					(PublicHealthCaseReport) objectToTest, diagnostician, map);
+			}
 
-      @Override
-      protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-      
-      
-      
-        return PublicHealthCaseReportOperations.validatePublicHealthCaseReportPHCRLegalAuthenticatorAssignedEntityId(
-          (PublicHealthCaseReport) objectToTest, diagnostician, map);
-      }
+		};
 
-    };
-
-    validatePublicHealthCaseReportPHCRLegalAuthenticatorAssignedEntityIdTestCase.doValidationTest();
-}
+		validatePublicHealthCaseReportPHCRLegalAuthenticatorAssignedEntityIdTestCase.doValidationTest();
+	}
 
 	/**
 	*
@@ -1028,67 +552,33 @@ public class PublicHealthCaseReportTest extends CDAValidationTest {
 	*/
 	@Test
 	public void testValidatePublicHealthCaseReportPHCRLegalAuthenticatorAssignedEntityAddr() {
-      OperationsTestCase<PublicHealthCaseReport> validatePublicHealthCaseReportPHCRLegalAuthenticatorAssignedEntityAddrTestCase = new OperationsTestCase<PublicHealthCaseReport>(
-      "validatePublicHealthCaseReportPHCRLegalAuthenticatorAssignedEntityAddr",
-      operationsForOCL.getOCLValue("VALIDATE_PUBLIC_HEALTH_CASE_REPORT_PHCR_LEGAL_AUTHENTICATOR_ASSIGNED_ENTITY_ADDR__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP")
-      ,objectFactory) {
+		OperationsTestCase<PublicHealthCaseReport> validatePublicHealthCaseReportPHCRLegalAuthenticatorAssignedEntityAddrTestCase = new OperationsTestCase<PublicHealthCaseReport>(
+			"validatePublicHealthCaseReportPHCRLegalAuthenticatorAssignedEntityAddr",
+			operationsForOCL.getOCLValue("VALIDATE_PUBLIC_HEALTH_CASE_REPORT_PHCR_LEGAL_AUTHENTICATOR_ASSIGNED_ENTITY_ADDR__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
 
-      @Override
-      protected void updateToFail(PublicHealthCaseReport target) {
+			@Override
+			protected void updateToFail(PublicHealthCaseReport target) {
 
-      }
+			}
 
-      @Override
-      protected void updateToPass(PublicHealthCaseReport target) {
-        target.init();
-        
-        
-        
-        
-        
+			@Override
+			protected void updateToPass(PublicHealthCaseReport target) {
+				target.init();
 
-        
-        
+			}
 
-  
-      
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
 
-  
-    
-    
-      
-        
-    
-      
-        
-      
-        
-        
-        
-        
-        
-        
-        
-      
-      
-          
-      
-        
-      }
+				return PublicHealthCaseReportOperations.validatePublicHealthCaseReportPHCRLegalAuthenticatorAssignedEntityAddr(
+					(PublicHealthCaseReport) objectToTest, diagnostician, map);
+			}
 
-      @Override
-      protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-      
-      
-      
-        return PublicHealthCaseReportOperations.validatePublicHealthCaseReportPHCRLegalAuthenticatorAssignedEntityAddr(
-          (PublicHealthCaseReport) objectToTest, diagnostician, map);
-      }
+		};
 
-    };
-
-    validatePublicHealthCaseReportPHCRLegalAuthenticatorAssignedEntityAddrTestCase.doValidationTest();
-}
+		validatePublicHealthCaseReportPHCRLegalAuthenticatorAssignedEntityAddrTestCase.doValidationTest();
+	}
 
 	/**
 	*
@@ -1096,67 +586,33 @@ public class PublicHealthCaseReportTest extends CDAValidationTest {
 	*/
 	@Test
 	public void testValidatePublicHealthCaseReportPHCRLegalAuthenticatorAssignedEntityAssignedPersonName() {
-      OperationsTestCase<PublicHealthCaseReport> validatePublicHealthCaseReportPHCRLegalAuthenticatorAssignedEntityAssignedPersonNameTestCase = new OperationsTestCase<PublicHealthCaseReport>(
-      "validatePublicHealthCaseReportPHCRLegalAuthenticatorAssignedEntityAssignedPersonName",
-      operationsForOCL.getOCLValue("VALIDATE_PUBLIC_HEALTH_CASE_REPORT_PHCR_LEGAL_AUTHENTICATOR_ASSIGNED_ENTITY_ASSIGNED_PERSON_NAME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP")
-      ,objectFactory) {
+		OperationsTestCase<PublicHealthCaseReport> validatePublicHealthCaseReportPHCRLegalAuthenticatorAssignedEntityAssignedPersonNameTestCase = new OperationsTestCase<PublicHealthCaseReport>(
+			"validatePublicHealthCaseReportPHCRLegalAuthenticatorAssignedEntityAssignedPersonName",
+			operationsForOCL.getOCLValue("VALIDATE_PUBLIC_HEALTH_CASE_REPORT_PHCR_LEGAL_AUTHENTICATOR_ASSIGNED_ENTITY_ASSIGNED_PERSON_NAME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
 
-      @Override
-      protected void updateToFail(PublicHealthCaseReport target) {
+			@Override
+			protected void updateToFail(PublicHealthCaseReport target) {
 
-      }
+			}
 
-      @Override
-      protected void updateToPass(PublicHealthCaseReport target) {
-        target.init();
-        
-        
-        
-        
-        
+			@Override
+			protected void updateToPass(PublicHealthCaseReport target) {
+				target.init();
 
-        
-        
+			}
 
-  
-      
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
 
-  
-    
-    
-      
-        
-    
-      
-        
-      
-        
-        
-        
-        
-        
-        
-        
-      
-      
-          
-      
-        
-      }
+				return PublicHealthCaseReportOperations.validatePublicHealthCaseReportPHCRLegalAuthenticatorAssignedEntityAssignedPersonName(
+					(PublicHealthCaseReport) objectToTest, diagnostician, map);
+			}
 
-      @Override
-      protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-      
-      
-      
-        return PublicHealthCaseReportOperations.validatePublicHealthCaseReportPHCRLegalAuthenticatorAssignedEntityAssignedPersonName(
-          (PublicHealthCaseReport) objectToTest, diagnostician, map);
-      }
+		};
 
-    };
-
-    validatePublicHealthCaseReportPHCRLegalAuthenticatorAssignedEntityAssignedPersonNameTestCase.doValidationTest();
-}
+		validatePublicHealthCaseReportPHCRLegalAuthenticatorAssignedEntityAssignedPersonNameTestCase.doValidationTest();
+	}
 
 	/**
 	*
@@ -1164,67 +620,33 @@ public class PublicHealthCaseReportTest extends CDAValidationTest {
 	*/
 	@Test
 	public void testValidatePublicHealthCaseReportTemplateId() {
-      OperationsTestCase<PublicHealthCaseReport> validatePublicHealthCaseReportTemplateIdTestCase = new OperationsTestCase<PublicHealthCaseReport>(
-      "validatePublicHealthCaseReportTemplateId",
-      operationsForOCL.getOCLValue("VALIDATE_PUBLIC_HEALTH_CASE_REPORT_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP")
-      ,objectFactory) {
+		OperationsTestCase<PublicHealthCaseReport> validatePublicHealthCaseReportTemplateIdTestCase = new OperationsTestCase<PublicHealthCaseReport>(
+			"validatePublicHealthCaseReportTemplateId",
+			operationsForOCL.getOCLValue("VALIDATE_PUBLIC_HEALTH_CASE_REPORT_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
 
-      @Override
-      protected void updateToFail(PublicHealthCaseReport target) {
+			@Override
+			protected void updateToFail(PublicHealthCaseReport target) {
 
-      }
+			}
 
-      @Override
-      protected void updateToPass(PublicHealthCaseReport target) {
-        target.init();
-        
-        
-        
-        
-        
+			@Override
+			protected void updateToPass(PublicHealthCaseReport target) {
+				target.init();
 
-        
-        
+			}
 
-  
-      
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
 
-  
-    
-    
-      
-        
-    
-      
-        
-      
-        
-        
-        
-        
-        
-        
-        
-      
-      
-          
-      
-        
-      }
+				return PublicHealthCaseReportOperations.validatePublicHealthCaseReportTemplateId(
+					(PublicHealthCaseReport) objectToTest, diagnostician, map);
+			}
 
-      @Override
-      protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-      
-      
-      
-        return PublicHealthCaseReportOperations.validatePublicHealthCaseReportTemplateId(
-          (PublicHealthCaseReport) objectToTest, diagnostician, map);
-      }
+		};
 
-    };
-
-    validatePublicHealthCaseReportTemplateIdTestCase.doValidationTest();
-}
+		validatePublicHealthCaseReportTemplateIdTestCase.doValidationTest();
+	}
 
 	/**
 	*
@@ -1232,67 +654,33 @@ public class PublicHealthCaseReportTest extends CDAValidationTest {
 	*/
 	@Test
 	public void testValidatePublicHealthCaseReportCodeP() {
-      OperationsTestCase<PublicHealthCaseReport> validatePublicHealthCaseReportCodePTestCase = new OperationsTestCase<PublicHealthCaseReport>(
-      "validatePublicHealthCaseReportCodeP",
-      operationsForOCL.getOCLValue("VALIDATE_PUBLIC_HEALTH_CASE_REPORT_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP")
-      ,objectFactory) {
+		OperationsTestCase<PublicHealthCaseReport> validatePublicHealthCaseReportCodePTestCase = new OperationsTestCase<PublicHealthCaseReport>(
+			"validatePublicHealthCaseReportCodeP",
+			operationsForOCL.getOCLValue("VALIDATE_PUBLIC_HEALTH_CASE_REPORT_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
 
-      @Override
-      protected void updateToFail(PublicHealthCaseReport target) {
+			@Override
+			protected void updateToFail(PublicHealthCaseReport target) {
 
-      }
+			}
 
-      @Override
-      protected void updateToPass(PublicHealthCaseReport target) {
-        target.init();
-        
-        
-        
-        
-        
+			@Override
+			protected void updateToPass(PublicHealthCaseReport target) {
+				target.init();
 
-        
-        
+			}
 
-  
-      
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
 
-  
-    
-    
-      
-        
-    
-      
-        
-      
-        
-        
-        
-        
-        
-        
-        
-      
-      
-          
-      
-        
-      }
+				return PublicHealthCaseReportOperations.validatePublicHealthCaseReportCodeP(
+					(PublicHealthCaseReport) objectToTest, diagnostician, map);
+			}
 
-      @Override
-      protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-      
-      
-      
-        return PublicHealthCaseReportOperations.validatePublicHealthCaseReportCodeP(
-          (PublicHealthCaseReport) objectToTest, diagnostician, map);
-      }
+		};
 
-    };
-
-    validatePublicHealthCaseReportCodePTestCase.doValidationTest();
-}
+		validatePublicHealthCaseReportCodePTestCase.doValidationTest();
+	}
 
 	/**
 	*
@@ -1300,67 +688,33 @@ public class PublicHealthCaseReportTest extends CDAValidationTest {
 	*/
 	@Test
 	public void testValidatePublicHealthCaseReportCode() {
-      OperationsTestCase<PublicHealthCaseReport> validatePublicHealthCaseReportCodeTestCase = new OperationsTestCase<PublicHealthCaseReport>(
-      "validatePublicHealthCaseReportCode",
-      operationsForOCL.getOCLValue("VALIDATE_PUBLIC_HEALTH_CASE_REPORT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP")
-      ,objectFactory) {
+		OperationsTestCase<PublicHealthCaseReport> validatePublicHealthCaseReportCodeTestCase = new OperationsTestCase<PublicHealthCaseReport>(
+			"validatePublicHealthCaseReportCode",
+			operationsForOCL.getOCLValue("VALIDATE_PUBLIC_HEALTH_CASE_REPORT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
 
-      @Override
-      protected void updateToFail(PublicHealthCaseReport target) {
+			@Override
+			protected void updateToFail(PublicHealthCaseReport target) {
 
-      }
+			}
 
-      @Override
-      protected void updateToPass(PublicHealthCaseReport target) {
-        target.init();
-        
-        
-        
-        
-        
+			@Override
+			protected void updateToPass(PublicHealthCaseReport target) {
+				target.init();
 
-        
-        
+			}
 
-  
-      
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
 
-  
-    
-    
-      
-        
-    
-      
-        
-      
-        
-        
-        
-        
-        
-        
-        
-      
-      
-          
-      
-        
-      }
+				return PublicHealthCaseReportOperations.validatePublicHealthCaseReportCode(
+					(PublicHealthCaseReport) objectToTest, diagnostician, map);
+			}
 
-      @Override
-      protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-      
-      
-      
-        return PublicHealthCaseReportOperations.validatePublicHealthCaseReportCode(
-          (PublicHealthCaseReport) objectToTest, diagnostician, map);
-      }
+		};
 
-    };
-
-    validatePublicHealthCaseReportCodeTestCase.doValidationTest();
-}
+		validatePublicHealthCaseReportCodeTestCase.doValidationTest();
+	}
 
 	/**
 	*
@@ -1368,76 +722,40 @@ public class PublicHealthCaseReportTest extends CDAValidationTest {
 	*/
 	@Test
 	public void testValidatePublicHealthCaseReportPhcrSocialHistorySection() {
-      OperationsTestCase<PublicHealthCaseReport> validatePublicHealthCaseReportPhcrSocialHistorySectionTestCase = new OperationsTestCase<PublicHealthCaseReport>(
-      "validatePublicHealthCaseReportPhcrSocialHistorySection",
-      operationsForOCL.getOCLValue("VALIDATE_PUBLIC_HEALTH_CASE_REPORT_PHCR_SOCIAL_HISTORY_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP")
-      ,objectFactory) {
+		OperationsTestCase<PublicHealthCaseReport> validatePublicHealthCaseReportPhcrSocialHistorySectionTestCase = new OperationsTestCase<PublicHealthCaseReport>(
+			"validatePublicHealthCaseReportPhcrSocialHistorySection",
+			operationsForOCL.getOCLValue("VALIDATE_PUBLIC_HEALTH_CASE_REPORT_PHCR_SOCIAL_HISTORY_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
 
-      @Override
-      protected void updateToFail(PublicHealthCaseReport target) {
+			@Override
+			protected void updateToFail(PublicHealthCaseReport target) {
 
-      }
+			}
 
-      @Override
-      protected void updateToPass(PublicHealthCaseReport target) {
-        target.init();
-        
-        
-        
-        
-        
+			@Override
+			protected void updateToPass(PublicHealthCaseReport target) {
+				target.init();
 
-        
-        
+				/* PhcrSocialHistorySection */
+				PhcrSocialHistorySection section =
 
-  
-      
+				PhcrFactory.eINSTANCE.createPhcrSocialHistorySection().init();
 
-  
-    
-    
-      
-        
-    
-      
-      
-        
-        /* PhcrSocialHistorySection */ 
-        PhcrSocialHistorySection section =
-        
-        PhcrFactory.eINSTANCE.createPhcrSocialHistorySection().init(); 
-          
-      
-      target.addSection(section);
-        
-      
-        
-        
-        
-        
-        
-        
-        
-      
-      
-          
-      
-        
-      }
+				target.addSection(section);
 
-      @Override
-      protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-      
-      
-      
-        return PublicHealthCaseReportOperations.validatePublicHealthCaseReportPhcrSocialHistorySection(
-          (PublicHealthCaseReport) objectToTest, diagnostician, map);
-      }
+			}
 
-    };
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
 
-    validatePublicHealthCaseReportPhcrSocialHistorySectionTestCase.doValidationTest();
-}
+				return PublicHealthCaseReportOperations.validatePublicHealthCaseReportPhcrSocialHistorySection(
+					(PublicHealthCaseReport) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validatePublicHealthCaseReportPhcrSocialHistorySectionTestCase.doValidationTest();
+	}
 
 	/**
 	*
@@ -1445,76 +763,40 @@ public class PublicHealthCaseReportTest extends CDAValidationTest {
 	*/
 	@Test
 	public void testValidatePublicHealthCaseReportPhcrClinicalInformationSection() {
-      OperationsTestCase<PublicHealthCaseReport> validatePublicHealthCaseReportPhcrClinicalInformationSectionTestCase = new OperationsTestCase<PublicHealthCaseReport>(
-      "validatePublicHealthCaseReportPhcrClinicalInformationSection",
-      operationsForOCL.getOCLValue("VALIDATE_PUBLIC_HEALTH_CASE_REPORT_PHCR_CLINICAL_INFORMATION_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP")
-      ,objectFactory) {
+		OperationsTestCase<PublicHealthCaseReport> validatePublicHealthCaseReportPhcrClinicalInformationSectionTestCase = new OperationsTestCase<PublicHealthCaseReport>(
+			"validatePublicHealthCaseReportPhcrClinicalInformationSection",
+			operationsForOCL.getOCLValue("VALIDATE_PUBLIC_HEALTH_CASE_REPORT_PHCR_CLINICAL_INFORMATION_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
 
-      @Override
-      protected void updateToFail(PublicHealthCaseReport target) {
+			@Override
+			protected void updateToFail(PublicHealthCaseReport target) {
 
-      }
+			}
 
-      @Override
-      protected void updateToPass(PublicHealthCaseReport target) {
-        target.init();
-        
-        
-        
-        
-        
+			@Override
+			protected void updateToPass(PublicHealthCaseReport target) {
+				target.init();
 
-        
-        
+				/* PhcrClinicalInformationSection */
+				PhcrClinicalInformationSection section =
 
-  
-      
+				PhcrFactory.eINSTANCE.createPhcrClinicalInformationSection().init();
 
-  
-    
-    
-      
-        
-    
-      
-      
-        
-        /* PhcrClinicalInformationSection */ 
-        PhcrClinicalInformationSection section =
-        
-        PhcrFactory.eINSTANCE.createPhcrClinicalInformationSection().init(); 
-          
-      
-      target.addSection(section);
-        
-      
-        
-        
-        
-        
-        
-        
-        
-      
-      
-          
-      
-        
-      }
+				target.addSection(section);
 
-      @Override
-      protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-      
-      
-      
-        return PublicHealthCaseReportOperations.validatePublicHealthCaseReportPhcrClinicalInformationSection(
-          (PublicHealthCaseReport) objectToTest, diagnostician, map);
-      }
+			}
 
-    };
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
 
-    validatePublicHealthCaseReportPhcrClinicalInformationSectionTestCase.doValidationTest();
-}
+				return PublicHealthCaseReportOperations.validatePublicHealthCaseReportPhcrClinicalInformationSection(
+					(PublicHealthCaseReport) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validatePublicHealthCaseReportPhcrClinicalInformationSectionTestCase.doValidationTest();
+	}
 
 	/**
 	*
@@ -1522,76 +804,40 @@ public class PublicHealthCaseReportTest extends CDAValidationTest {
 	*/
 	@Test
 	public void testValidatePublicHealthCaseReportPhcrTreatmentInformationSection() {
-      OperationsTestCase<PublicHealthCaseReport> validatePublicHealthCaseReportPhcrTreatmentInformationSectionTestCase = new OperationsTestCase<PublicHealthCaseReport>(
-      "validatePublicHealthCaseReportPhcrTreatmentInformationSection",
-      operationsForOCL.getOCLValue("VALIDATE_PUBLIC_HEALTH_CASE_REPORT_PHCR_TREATMENT_INFORMATION_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP")
-      ,objectFactory) {
+		OperationsTestCase<PublicHealthCaseReport> validatePublicHealthCaseReportPhcrTreatmentInformationSectionTestCase = new OperationsTestCase<PublicHealthCaseReport>(
+			"validatePublicHealthCaseReportPhcrTreatmentInformationSection",
+			operationsForOCL.getOCLValue("VALIDATE_PUBLIC_HEALTH_CASE_REPORT_PHCR_TREATMENT_INFORMATION_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
 
-      @Override
-      protected void updateToFail(PublicHealthCaseReport target) {
+			@Override
+			protected void updateToFail(PublicHealthCaseReport target) {
 
-      }
+			}
 
-      @Override
-      protected void updateToPass(PublicHealthCaseReport target) {
-        target.init();
-        
-        
-        
-        
-        
+			@Override
+			protected void updateToPass(PublicHealthCaseReport target) {
+				target.init();
 
-        
-        
+				/* PhcrTreatmentInformationSection */
+				PhcrTreatmentInformationSection section =
 
-  
-      
+				PhcrFactory.eINSTANCE.createPhcrTreatmentInformationSection().init();
 
-  
-    
-    
-      
-        
-    
-      
-      
-        
-        /* PhcrTreatmentInformationSection */ 
-        PhcrTreatmentInformationSection section =
-        
-        PhcrFactory.eINSTANCE.createPhcrTreatmentInformationSection().init(); 
-          
-      
-      target.addSection(section);
-        
-      
-        
-        
-        
-        
-        
-        
-        
-      
-      
-          
-      
-        
-      }
+				target.addSection(section);
 
-      @Override
-      protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-      
-      
-      
-        return PublicHealthCaseReportOperations.validatePublicHealthCaseReportPhcrTreatmentInformationSection(
-          (PublicHealthCaseReport) objectToTest, diagnostician, map);
-      }
+			}
 
-    };
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
 
-    validatePublicHealthCaseReportPhcrTreatmentInformationSectionTestCase.doValidationTest();
-}
+				return PublicHealthCaseReportOperations.validatePublicHealthCaseReportPhcrTreatmentInformationSection(
+					(PublicHealthCaseReport) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validatePublicHealthCaseReportPhcrTreatmentInformationSectionTestCase.doValidationTest();
+	}
 
 	/**
 	*
@@ -1599,76 +845,40 @@ public class PublicHealthCaseReportTest extends CDAValidationTest {
 	*/
 	@Test
 	public void testValidatePublicHealthCaseReportPhcrEncountersSection() {
-      OperationsTestCase<PublicHealthCaseReport> validatePublicHealthCaseReportPhcrEncountersSectionTestCase = new OperationsTestCase<PublicHealthCaseReport>(
-      "validatePublicHealthCaseReportPhcrEncountersSection",
-      operationsForOCL.getOCLValue("VALIDATE_PUBLIC_HEALTH_CASE_REPORT_PHCR_ENCOUNTERS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP")
-      ,objectFactory) {
+		OperationsTestCase<PublicHealthCaseReport> validatePublicHealthCaseReportPhcrEncountersSectionTestCase = new OperationsTestCase<PublicHealthCaseReport>(
+			"validatePublicHealthCaseReportPhcrEncountersSection",
+			operationsForOCL.getOCLValue("VALIDATE_PUBLIC_HEALTH_CASE_REPORT_PHCR_ENCOUNTERS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
 
-      @Override
-      protected void updateToFail(PublicHealthCaseReport target) {
+			@Override
+			protected void updateToFail(PublicHealthCaseReport target) {
 
-      }
+			}
 
-      @Override
-      protected void updateToPass(PublicHealthCaseReport target) {
-        target.init();
-        
-        
-        
-        
-        
+			@Override
+			protected void updateToPass(PublicHealthCaseReport target) {
+				target.init();
 
-        
-        
+				/* PhcrEncountersSection */
+				PhcrEncountersSection section =
 
-  
-      
+				PhcrFactory.eINSTANCE.createPhcrEncountersSection().init();
 
-  
-    
-    
-      
-        
-    
-      
-      
-        
-        /* PhcrEncountersSection */ 
-        PhcrEncountersSection section =
-        
-        PhcrFactory.eINSTANCE.createPhcrEncountersSection().init(); 
-          
-      
-      target.addSection(section);
-        
-      
-        
-        
-        
-        
-        
-        
-        
-      
-      
-          
-      
-        
-      }
+				target.addSection(section);
 
-      @Override
-      protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-      
-      
-      
-        return PublicHealthCaseReportOperations.validatePublicHealthCaseReportPhcrEncountersSection(
-          (PublicHealthCaseReport) objectToTest, diagnostician, map);
-      }
+			}
 
-    };
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
 
-    validatePublicHealthCaseReportPhcrEncountersSectionTestCase.doValidationTest();
-}
+				return PublicHealthCaseReportOperations.validatePublicHealthCaseReportPhcrEncountersSection(
+					(PublicHealthCaseReport) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validatePublicHealthCaseReportPhcrEncountersSectionTestCase.doValidationTest();
+	}
 
 	/**
 	*
@@ -1676,76 +886,40 @@ public class PublicHealthCaseReportTest extends CDAValidationTest {
 	*/
 	@Test
 	public void testValidatePublicHealthCaseReportPhcrRelevantDxTestsSection() {
-      OperationsTestCase<PublicHealthCaseReport> validatePublicHealthCaseReportPhcrRelevantDxTestsSectionTestCase = new OperationsTestCase<PublicHealthCaseReport>(
-      "validatePublicHealthCaseReportPhcrRelevantDxTestsSection",
-      operationsForOCL.getOCLValue("VALIDATE_PUBLIC_HEALTH_CASE_REPORT_PHCR_RELEVANT_DX_TESTS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP")
-      ,objectFactory) {
+		OperationsTestCase<PublicHealthCaseReport> validatePublicHealthCaseReportPhcrRelevantDxTestsSectionTestCase = new OperationsTestCase<PublicHealthCaseReport>(
+			"validatePublicHealthCaseReportPhcrRelevantDxTestsSection",
+			operationsForOCL.getOCLValue("VALIDATE_PUBLIC_HEALTH_CASE_REPORT_PHCR_RELEVANT_DX_TESTS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
 
-      @Override
-      protected void updateToFail(PublicHealthCaseReport target) {
+			@Override
+			protected void updateToFail(PublicHealthCaseReport target) {
 
-      }
+			}
 
-      @Override
-      protected void updateToPass(PublicHealthCaseReport target) {
-        target.init();
-        
-        
-        
-        
-        
+			@Override
+			protected void updateToPass(PublicHealthCaseReport target) {
+				target.init();
 
-        
-        
+				/* PhcrRelevantDxTestsSection */
+				PhcrRelevantDxTestsSection section =
 
-  
-      
+				PhcrFactory.eINSTANCE.createPhcrRelevantDxTestsSection().init();
 
-  
-    
-    
-      
-        
-    
-      
-      
-        
-        /* PhcrRelevantDxTestsSection */ 
-        PhcrRelevantDxTestsSection section =
-        
-        PhcrFactory.eINSTANCE.createPhcrRelevantDxTestsSection().init(); 
-          
-      
-      target.addSection(section);
-        
-      
-        
-        
-        
-        
-        
-        
-        
-      
-      
-          
-      
-        
-      }
+				target.addSection(section);
 
-      @Override
-      protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-      
-      
-      
-        return PublicHealthCaseReportOperations.validatePublicHealthCaseReportPhcrRelevantDxTestsSection(
-          (PublicHealthCaseReport) objectToTest, diagnostician, map);
-      }
+			}
 
-    };
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
 
-    validatePublicHealthCaseReportPhcrRelevantDxTestsSectionTestCase.doValidationTest();
-}
+				return PublicHealthCaseReportOperations.validatePublicHealthCaseReportPhcrRelevantDxTestsSection(
+					(PublicHealthCaseReport) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validatePublicHealthCaseReportPhcrRelevantDxTestsSectionTestCase.doValidationTest();
+	}
 
 	/**
 	*
@@ -1795,13 +969,10 @@ public class PublicHealthCaseReportTest extends CDAValidationTest {
 	@Test
 	public void testGetPhcrSocialHistorySection() {
 
+		PublicHealthCaseReport target = objectFactory.create();
+		target.getPhcrSocialHistorySection();
 
-PublicHealthCaseReport target = objectFactory.create();
-target.getPhcrSocialHistorySection();
-
-
-
-}
+	}
 
 	/**
 	*
@@ -1810,13 +981,10 @@ target.getPhcrSocialHistorySection();
 	@Test
 	public void testGetPhcrClinicalInformationSection() {
 
+		PublicHealthCaseReport target = objectFactory.create();
+		target.getPhcrClinicalInformationSection();
 
-PublicHealthCaseReport target = objectFactory.create();
-target.getPhcrClinicalInformationSection();
-
-
-
-}
+	}
 
 	/**
 	*
@@ -1825,13 +993,10 @@ target.getPhcrClinicalInformationSection();
 	@Test
 	public void testGetPhcrTreatmentInformationSection() {
 
+		PublicHealthCaseReport target = objectFactory.create();
+		target.getPhcrTreatmentInformationSection();
 
-PublicHealthCaseReport target = objectFactory.create();
-target.getPhcrTreatmentInformationSection();
-
-
-
-}
+	}
 
 	/**
 	*
@@ -1840,13 +1005,10 @@ target.getPhcrTreatmentInformationSection();
 	@Test
 	public void testGetPhcrEncountersSection() {
 
+		PublicHealthCaseReport target = objectFactory.create();
+		target.getPhcrEncountersSection();
 
-PublicHealthCaseReport target = objectFactory.create();
-target.getPhcrEncountersSection();
-
-
-
-}
+	}
 
 	/**
 	*
@@ -1855,13 +1017,10 @@ target.getPhcrEncountersSection();
 	@Test
 	public void testGetPhcrRelevantDxTestsSection() {
 
+		PublicHealthCaseReport target = objectFactory.create();
+		target.getPhcrRelevantDxTestsSection();
 
-PublicHealthCaseReport target = objectFactory.create();
-target.getPhcrRelevantDxTestsSection();
-
-
-
-}
+	}
 
 	/**
 	*
@@ -1870,13 +1029,10 @@ target.getPhcrRelevantDxTestsSection();
 	@Test
 	public void testGetImmunizationsSection() {
 
+		PublicHealthCaseReport target = objectFactory.create();
+		target.getImmunizationsSection();
 
-PublicHealthCaseReport target = objectFactory.create();
-target.getImmunizationsSection();
-
-
-
-}
+	}
 
 	/**
 	*
@@ -1931,17 +1087,17 @@ target.getImmunizationsSection();
 	*/
 	@Test
 	public void testConstructor() {
-          @SuppressWarnings("unused")
-      ConstructorTestClass constructorTestClass = new ConstructorTestClass();		
-  } // testConstructor
+		@SuppressWarnings("unused")
+		ConstructorTestClass constructorTestClass = new ConstructorTestClass();
+	} // testConstructor
 
 	/**
 	*
 	* @generated
 	*/
 	@Override
-	protected EObject getObjectToTest() {		
-    return null;
-  }
+	protected EObject getObjectToTest() {
+		return null;
+	}
 
 } // PublicHealthCaseReportOperations

@@ -47,70 +47,36 @@ public class PhcrEncountersSectionTest extends CDAValidationTest {
 	*/
 	@Test
 	public void testValidatePhcrEncountersSectionTitle() {
-      OperationsTestCase<PhcrEncountersSection> validatePhcrEncountersSectionTitleTestCase = new OperationsTestCase<PhcrEncountersSection>(
-      "validatePhcrEncountersSectionTitle",
-      operationsForOCL.getOCLValue("VALIDATE_PHCR_ENCOUNTERS_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP")
-      ,objectFactory) {
+		OperationsTestCase<PhcrEncountersSection> validatePhcrEncountersSectionTitleTestCase = new OperationsTestCase<PhcrEncountersSection>(
+			"validatePhcrEncountersSectionTitle",
+			operationsForOCL.getOCLValue("VALIDATE_PHCR_ENCOUNTERS_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
 
-      @Override
-      protected void updateToFail(PhcrEncountersSection target) {
+			@Override
+			protected void updateToFail(PhcrEncountersSection target) {
 
-      }
+			}
 
-      @Override
-      protected void updateToPass(PhcrEncountersSection target) {
-        target.init();
-        
-        
-        
-        
-        
+			@Override
+			protected void updateToPass(PhcrEncountersSection target) {
+				target.init();
 
-        
-        
+				ST title = DatatypesFactory.eINSTANCE.createST("title");
+				target.setTitle(title);
 
-  
-    
-        ST  title = DatatypesFactory.eINSTANCE.createST("title");
-        target.setTitle(title );
-        
+			}
 
-  
-    
-    
-      
-        
-    
-      
-        
-      
-        
-        
-        
-        
-        
-        
-        
-      
-      
-          
-      
-        
-      }
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
 
-      @Override
-      protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-      
-      
-      
-        return PhcrEncountersSectionOperations.validatePhcrEncountersSectionTitle(
-          (PhcrEncountersSection) objectToTest, diagnostician, map);
-      }
+				return PhcrEncountersSectionOperations.validatePhcrEncountersSectionTitle(
+					(PhcrEncountersSection) objectToTest, diagnostician, map);
+			}
 
-    };
+		};
 
-    validatePhcrEncountersSectionTitleTestCase.doValidationTest();
-}
+		validatePhcrEncountersSectionTitleTestCase.doValidationTest();
+	}
 
 	/**
 	*
@@ -118,70 +84,36 @@ public class PhcrEncountersSectionTest extends CDAValidationTest {
 	*/
 	@Test
 	public void testValidatePhcrEncountersSectionText() {
-      OperationsTestCase<PhcrEncountersSection> validatePhcrEncountersSectionTextTestCase = new OperationsTestCase<PhcrEncountersSection>(
-      "validatePhcrEncountersSectionText",
-      operationsForOCL.getOCLValue("VALIDATE_PHCR_ENCOUNTERS_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP")
-      ,objectFactory) {
+		OperationsTestCase<PhcrEncountersSection> validatePhcrEncountersSectionTextTestCase = new OperationsTestCase<PhcrEncountersSection>(
+			"validatePhcrEncountersSectionText",
+			operationsForOCL.getOCLValue("VALIDATE_PHCR_ENCOUNTERS_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
 
-      @Override
-      protected void updateToFail(PhcrEncountersSection target) {
+			@Override
+			protected void updateToFail(PhcrEncountersSection target) {
 
-      }
+			}
 
-      @Override
-      protected void updateToPass(PhcrEncountersSection target) {
-        target.init();
-        
-        
-        
-        
-        
+			@Override
+			protected void updateToPass(PhcrEncountersSection target) {
+				target.init();
 
-        
-        
+				StrucDocText text = CDAFactory.eINSTANCE.createStrucDocText();
+				target.setText(text);
 
-  
-      
+			}
 
-  
-    
-        StrucDocText text = CDAFactory.eINSTANCE.createStrucDocText();
-        target.setText(text );
-      
-    
-      
-        
-    
-      
-        
-      
-        
-        
-        
-        
-        
-        
-        
-      
-      
-          
-      
-        
-      }
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
 
-      @Override
-      protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-      
-      
-      
-        return PhcrEncountersSectionOperations.validatePhcrEncountersSectionText(
-          (PhcrEncountersSection) objectToTest, diagnostician, map);
-      }
+				return PhcrEncountersSectionOperations.validatePhcrEncountersSectionText(
+					(PhcrEncountersSection) objectToTest, diagnostician, map);
+			}
 
-    };
+		};
 
-    validatePhcrEncountersSectionTextTestCase.doValidationTest();
-}
+		validatePhcrEncountersSectionTextTestCase.doValidationTest();
+	}
 
 	/**
 	*
@@ -189,67 +121,33 @@ public class PhcrEncountersSectionTest extends CDAValidationTest {
 	*/
 	@Test
 	public void testValidatePhcrEncountersSectionEncountersActivity() {
-      OperationsTestCase<PhcrEncountersSection> validatePhcrEncountersSectionEncountersActivityTestCase = new OperationsTestCase<PhcrEncountersSection>(
-      "validatePhcrEncountersSectionEncountersActivity",
-      operationsForOCL.getOCLValue("VALIDATE_PHCR_ENCOUNTERS_SECTION_ENCOUNTERS_ACTIVITY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP")
-      ,objectFactory) {
+		OperationsTestCase<PhcrEncountersSection> validatePhcrEncountersSectionEncountersActivityTestCase = new OperationsTestCase<PhcrEncountersSection>(
+			"validatePhcrEncountersSectionEncountersActivity",
+			operationsForOCL.getOCLValue("VALIDATE_PHCR_ENCOUNTERS_SECTION_ENCOUNTERS_ACTIVITY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
 
-      @Override
-      protected void updateToFail(PhcrEncountersSection target) {
+			@Override
+			protected void updateToFail(PhcrEncountersSection target) {
 
-      }
+			}
 
-      @Override
-      protected void updateToPass(PhcrEncountersSection target) {
-        target.init();
-        
-        
-        
-        
-        
+			@Override
+			protected void updateToPass(PhcrEncountersSection target) {
+				target.init();
 
-        
-        
+			}
 
-  
-      
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
 
-  
-    
-    
-      
-        
-    
-      
-        
-      
-        
-        
-        
-        
-        
-        
-        
-      
-      
-          
-      
-        
-      }
+				return PhcrEncountersSectionOperations.validatePhcrEncountersSectionEncountersActivity(
+					(PhcrEncountersSection) objectToTest, diagnostician, map);
+			}
 
-      @Override
-      protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-      
-      
-      
-        return PhcrEncountersSectionOperations.validatePhcrEncountersSectionEncountersActivity(
-          (PhcrEncountersSection) objectToTest, diagnostician, map);
-      }
+		};
 
-    };
-
-    validatePhcrEncountersSectionEncountersActivityTestCase.doValidationTest();
-}
+		validatePhcrEncountersSectionEncountersActivityTestCase.doValidationTest();
+	}
 
 	/**
 	*
@@ -258,13 +156,10 @@ public class PhcrEncountersSectionTest extends CDAValidationTest {
 	@Test
 	public void testGetPHCREncountersActivities() {
 
+		PhcrEncountersSection target = objectFactory.create();
+		target.getPHCREncountersActivities();
 
-PhcrEncountersSection target = objectFactory.create();
-target.getPHCREncountersActivities();
-
-
-
-}
+	}
 
 	/**
 	*
@@ -272,67 +167,33 @@ target.getPHCREncountersActivities();
 	*/
 	@Test
 	public void testValidateEncountersSectionTemplateId() {
-      OperationsTestCase<PhcrEncountersSection> validateEncountersSectionTemplateIdTestCase = new OperationsTestCase<PhcrEncountersSection>(
-      "validateEncountersSectionTemplateId",
-      operationsForOCL.getOCLValue("VALIDATE_ENCOUNTERS_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP")
-      ,objectFactory) {
+		OperationsTestCase<PhcrEncountersSection> validateEncountersSectionTemplateIdTestCase = new OperationsTestCase<PhcrEncountersSection>(
+			"validateEncountersSectionTemplateId",
+			operationsForOCL.getOCLValue("VALIDATE_ENCOUNTERS_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
 
-      @Override
-      protected void updateToFail(PhcrEncountersSection target) {
+			@Override
+			protected void updateToFail(PhcrEncountersSection target) {
 
-      }
+			}
 
-      @Override
-      protected void updateToPass(PhcrEncountersSection target) {
-        target.init();
-        
-        
-        
-        
-        
+			@Override
+			protected void updateToPass(PhcrEncountersSection target) {
+				target.init();
 
-        
-        
+			}
 
-  
-      
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
 
-  
-    
-    
-      
-        
-    
-      
-        
-      
-        
-        
-        
-        
-        
-        
-        
-      
-      
-          
-      
-        
-      }
+				return PhcrEncountersSectionOperations.validateEncountersSectionTemplateId(
+					(PhcrEncountersSection) objectToTest, diagnostician, map);
+			}
 
-      @Override
-      protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-      
-      
-      
-        return PhcrEncountersSectionOperations.validateEncountersSectionTemplateId(
-          (PhcrEncountersSection) objectToTest, diagnostician, map);
-      }
+		};
 
-    };
-
-    validateEncountersSectionTemplateIdTestCase.doValidationTest();
-}
+		validateEncountersSectionTemplateIdTestCase.doValidationTest();
+	}
 
 	/**
 	*
@@ -387,17 +248,17 @@ target.getPHCREncountersActivities();
 	*/
 	@Test
 	public void testConstructor() {
-          @SuppressWarnings("unused")
-      ConstructorTestClass constructorTestClass = new ConstructorTestClass();		
-  } // testConstructor
+		@SuppressWarnings("unused")
+		ConstructorTestClass constructorTestClass = new ConstructorTestClass();
+	} // testConstructor
 
 	/**
 	*
 	* @generated
 	*/
 	@Override
-	protected EObject getObjectToTest() {		
-    return null;
-  }
+	protected EObject getObjectToTest() {
+		return null;
+	}
 
 } // PhcrEncountersSectionOperations

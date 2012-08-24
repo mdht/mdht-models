@@ -46,67 +46,33 @@ public class SpecimenCollectionProcedureTest extends CDAValidationTest {
 	*/
 	@Test
 	public void testValidateSpecimenCollectionProcedureTemplateId() {
-      OperationsTestCase<SpecimenCollectionProcedure> validateSpecimenCollectionProcedureTemplateIdTestCase = new OperationsTestCase<SpecimenCollectionProcedure>(
-      "validateSpecimenCollectionProcedureTemplateId",
-      operationsForOCL.getOCLValue("VALIDATE_SPECIMEN_COLLECTION_PROCEDURE_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP")
-      ,objectFactory) {
+		OperationsTestCase<SpecimenCollectionProcedure> validateSpecimenCollectionProcedureTemplateIdTestCase = new OperationsTestCase<SpecimenCollectionProcedure>(
+			"validateSpecimenCollectionProcedureTemplateId",
+			operationsForOCL.getOCLValue("VALIDATE_SPECIMEN_COLLECTION_PROCEDURE_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
 
-      @Override
-      protected void updateToFail(SpecimenCollectionProcedure target) {
+			@Override
+			protected void updateToFail(SpecimenCollectionProcedure target) {
 
-      }
+			}
 
-      @Override
-      protected void updateToPass(SpecimenCollectionProcedure target) {
-        target.init();
-        
-        
-        
-        
-        
+			@Override
+			protected void updateToPass(SpecimenCollectionProcedure target) {
+				target.init();
 
-        
-        
+			}
 
-  
-      
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
 
-  
-    
-    
-      
-        
-    
-      
-        
-      
-        
-        
-        
-        
-        
-        
-        
-      
-      
-          
-      
-        
-      }
+				return SpecimenCollectionProcedureOperations.validateSpecimenCollectionProcedureTemplateId(
+					(SpecimenCollectionProcedure) objectToTest, diagnostician, map);
+			}
 
-      @Override
-      protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-      
-      
-      
-        return SpecimenCollectionProcedureOperations.validateSpecimenCollectionProcedureTemplateId(
-          (SpecimenCollectionProcedure) objectToTest, diagnostician, map);
-      }
+		};
 
-    };
-
-    validateSpecimenCollectionProcedureTemplateIdTestCase.doValidationTest();
-}
+		validateSpecimenCollectionProcedureTemplateIdTestCase.doValidationTest();
+	}
 
 	/**
 	*
@@ -114,67 +80,33 @@ public class SpecimenCollectionProcedureTest extends CDAValidationTest {
 	*/
 	@Test
 	public void testValidateSpecimenCollectionProcedureClassCode() {
-      OperationsTestCase<SpecimenCollectionProcedure> validateSpecimenCollectionProcedureClassCodeTestCase = new OperationsTestCase<SpecimenCollectionProcedure>(
-      "validateSpecimenCollectionProcedureClassCode",
-      operationsForOCL.getOCLValue("VALIDATE_SPECIMEN_COLLECTION_PROCEDURE_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP")
-      ,objectFactory) {
+		OperationsTestCase<SpecimenCollectionProcedure> validateSpecimenCollectionProcedureClassCodeTestCase = new OperationsTestCase<SpecimenCollectionProcedure>(
+			"validateSpecimenCollectionProcedureClassCode",
+			operationsForOCL.getOCLValue("VALIDATE_SPECIMEN_COLLECTION_PROCEDURE_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
 
-      @Override
-      protected void updateToFail(SpecimenCollectionProcedure target) {
+			@Override
+			protected void updateToFail(SpecimenCollectionProcedure target) {
 
-      }
+			}
 
-      @Override
-      protected void updateToPass(SpecimenCollectionProcedure target) {
-        target.init();
-        
-        
-        
-        
-        
+			@Override
+			protected void updateToPass(SpecimenCollectionProcedure target) {
+				target.init();
 
-        
-        
+			}
 
-  
-      
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
 
-  
-    
-    
-      
-        
-    
-      
-        
-      
-        
-        
-        
-        
-        
-        
-        
-      
-      
-          
-      
-        
-      }
+				return SpecimenCollectionProcedureOperations.validateSpecimenCollectionProcedureClassCode(
+					(SpecimenCollectionProcedure) objectToTest, diagnostician, map);
+			}
 
-      @Override
-      protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-      
-      
-      
-        return SpecimenCollectionProcedureOperations.validateSpecimenCollectionProcedureClassCode(
-          (SpecimenCollectionProcedure) objectToTest, diagnostician, map);
-      }
+		};
 
-    };
-
-    validateSpecimenCollectionProcedureClassCodeTestCase.doValidationTest();
-}
+		validateSpecimenCollectionProcedureClassCodeTestCase.doValidationTest();
+	}
 
 	/**
 	*
@@ -182,67 +114,33 @@ public class SpecimenCollectionProcedureTest extends CDAValidationTest {
 	*/
 	@Test
 	public void testValidateSpecimenCollectionProcedureMoodCode() {
-      OperationsTestCase<SpecimenCollectionProcedure> validateSpecimenCollectionProcedureMoodCodeTestCase = new OperationsTestCase<SpecimenCollectionProcedure>(
-      "validateSpecimenCollectionProcedureMoodCode",
-      operationsForOCL.getOCLValue("VALIDATE_SPECIMEN_COLLECTION_PROCEDURE_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP")
-      ,objectFactory) {
+		OperationsTestCase<SpecimenCollectionProcedure> validateSpecimenCollectionProcedureMoodCodeTestCase = new OperationsTestCase<SpecimenCollectionProcedure>(
+			"validateSpecimenCollectionProcedureMoodCode",
+			operationsForOCL.getOCLValue("VALIDATE_SPECIMEN_COLLECTION_PROCEDURE_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
 
-      @Override
-      protected void updateToFail(SpecimenCollectionProcedure target) {
+			@Override
+			protected void updateToFail(SpecimenCollectionProcedure target) {
 
-      }
+			}
 
-      @Override
-      protected void updateToPass(SpecimenCollectionProcedure target) {
-        target.init();
-        
-        
-        
-        
-        
+			@Override
+			protected void updateToPass(SpecimenCollectionProcedure target) {
+				target.init();
 
-        
-        
+			}
 
-  
-      
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
 
-  
-    
-    
-      
-        
-    
-      
-        
-      
-        
-        
-        
-        
-        
-        
-        
-      
-      
-          
-      
-        
-      }
+				return SpecimenCollectionProcedureOperations.validateSpecimenCollectionProcedureMoodCode(
+					(SpecimenCollectionProcedure) objectToTest, diagnostician, map);
+			}
 
-      @Override
-      protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-      
-      
-      
-        return SpecimenCollectionProcedureOperations.validateSpecimenCollectionProcedureMoodCode(
-          (SpecimenCollectionProcedure) objectToTest, diagnostician, map);
-      }
+		};
 
-    };
-
-    validateSpecimenCollectionProcedureMoodCodeTestCase.doValidationTest();
-}
+		validateSpecimenCollectionProcedureMoodCodeTestCase.doValidationTest();
+	}
 
 	/**
 	*
@@ -250,67 +148,33 @@ public class SpecimenCollectionProcedureTest extends CDAValidationTest {
 	*/
 	@Test
 	public void testValidateSpecimenCollectionProcedureCode() {
-      OperationsTestCase<SpecimenCollectionProcedure> validateSpecimenCollectionProcedureCodeTestCase = new OperationsTestCase<SpecimenCollectionProcedure>(
-      "validateSpecimenCollectionProcedureCode",
-      operationsForOCL.getOCLValue("VALIDATE_SPECIMEN_COLLECTION_PROCEDURE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP")
-      ,objectFactory) {
+		OperationsTestCase<SpecimenCollectionProcedure> validateSpecimenCollectionProcedureCodeTestCase = new OperationsTestCase<SpecimenCollectionProcedure>(
+			"validateSpecimenCollectionProcedureCode",
+			operationsForOCL.getOCLValue("VALIDATE_SPECIMEN_COLLECTION_PROCEDURE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
 
-      @Override
-      protected void updateToFail(SpecimenCollectionProcedure target) {
+			@Override
+			protected void updateToFail(SpecimenCollectionProcedure target) {
 
-      }
+			}
 
-      @Override
-      protected void updateToPass(SpecimenCollectionProcedure target) {
-        target.init();
-        
-        
-        
-        
-        
+			@Override
+			protected void updateToPass(SpecimenCollectionProcedure target) {
+				target.init();
 
-        
-        
+			}
 
-  
-      
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
 
-  
-    
-    
-      
-        
-    
-      
-        
-      
-        
-        
-        
-        
-        
-        
-        
-      
-      
-          
-      
-        
-      }
+				return SpecimenCollectionProcedureOperations.validateSpecimenCollectionProcedureCode(
+					(SpecimenCollectionProcedure) objectToTest, diagnostician, map);
+			}
 
-      @Override
-      protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-      
-      
-      
-        return SpecimenCollectionProcedureOperations.validateSpecimenCollectionProcedureCode(
-          (SpecimenCollectionProcedure) objectToTest, diagnostician, map);
-      }
+		};
 
-    };
-
-    validateSpecimenCollectionProcedureCodeTestCase.doValidationTest();
-}
+		validateSpecimenCollectionProcedureCodeTestCase.doValidationTest();
+	}
 
 	/**
 	*
@@ -318,70 +182,36 @@ public class SpecimenCollectionProcedureTest extends CDAValidationTest {
 	*/
 	@Test
 	public void testValidateSpecimenCollectionProcedureEffectiveTime() {
-      OperationsTestCase<SpecimenCollectionProcedure> validateSpecimenCollectionProcedureEffectiveTimeTestCase = new OperationsTestCase<SpecimenCollectionProcedure>(
-      "validateSpecimenCollectionProcedureEffectiveTime",
-      operationsForOCL.getOCLValue("VALIDATE_SPECIMEN_COLLECTION_PROCEDURE_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP")
-      ,objectFactory) {
+		OperationsTestCase<SpecimenCollectionProcedure> validateSpecimenCollectionProcedureEffectiveTimeTestCase = new OperationsTestCase<SpecimenCollectionProcedure>(
+			"validateSpecimenCollectionProcedureEffectiveTime",
+			operationsForOCL.getOCLValue("VALIDATE_SPECIMEN_COLLECTION_PROCEDURE_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
 
-      @Override
-      protected void updateToFail(SpecimenCollectionProcedure target) {
+			@Override
+			protected void updateToFail(SpecimenCollectionProcedure target) {
 
-      }
+			}
 
-      @Override
-      protected void updateToPass(SpecimenCollectionProcedure target) {
-        target.init();
-        
-        
-          IVL_TS ts = DatatypesFactory .eINSTANCE.createIVL_TS();
-          target.setEffectiveTime(ts );								
-        
-        
-        
-        
+			@Override
+			protected void updateToPass(SpecimenCollectionProcedure target) {
+				target.init();
 
-        
-        
+				IVL_TS ts = DatatypesFactory.eINSTANCE.createIVL_TS();
+				target.setEffectiveTime(ts);
 
-  
-      
+			}
 
-  
-    
-    
-      
-        
-    
-      
-        
-      
-        
-        
-        
-        
-        
-        
-        
-      
-      
-          
-      
-        
-      }
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
 
-      @Override
-      protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-      
-      
-      
-        return SpecimenCollectionProcedureOperations.validateSpecimenCollectionProcedureEffectiveTime(
-          (SpecimenCollectionProcedure) objectToTest, diagnostician, map);
-      }
+				return SpecimenCollectionProcedureOperations.validateSpecimenCollectionProcedureEffectiveTime(
+					(SpecimenCollectionProcedure) objectToTest, diagnostician, map);
+			}
 
-    };
+		};
 
-    validateSpecimenCollectionProcedureEffectiveTimeTestCase.doValidationTest();
-}
+		validateSpecimenCollectionProcedureEffectiveTimeTestCase.doValidationTest();
+	}
 
 	/**
 	*
@@ -389,67 +219,33 @@ public class SpecimenCollectionProcedureTest extends CDAValidationTest {
 	*/
 	@Test
 	public void testValidateSpecimenCollectionProcedureTargetSiteCode() {
-      OperationsTestCase<SpecimenCollectionProcedure> validateSpecimenCollectionProcedureTargetSiteCodeTestCase = new OperationsTestCase<SpecimenCollectionProcedure>(
-      "validateSpecimenCollectionProcedureTargetSiteCode",
-      operationsForOCL.getOCLValue("VALIDATE_SPECIMEN_COLLECTION_PROCEDURE_TARGET_SITE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP")
-      ,objectFactory) {
+		OperationsTestCase<SpecimenCollectionProcedure> validateSpecimenCollectionProcedureTargetSiteCodeTestCase = new OperationsTestCase<SpecimenCollectionProcedure>(
+			"validateSpecimenCollectionProcedureTargetSiteCode",
+			operationsForOCL.getOCLValue("VALIDATE_SPECIMEN_COLLECTION_PROCEDURE_TARGET_SITE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
 
-      @Override
-      protected void updateToFail(SpecimenCollectionProcedure target) {
+			@Override
+			protected void updateToFail(SpecimenCollectionProcedure target) {
 
-      }
+			}
 
-      @Override
-      protected void updateToPass(SpecimenCollectionProcedure target) {
-        target.init();
-        
-        
-        
-        
-        
+			@Override
+			protected void updateToPass(SpecimenCollectionProcedure target) {
+				target.init();
 
-        
-        
+			}
 
-  
-      
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
 
-  
-    
-    
-      
-        
-    
-      
-        
-      
-        
-        
-        
-        
-        
-        
-        
-      
-      
-          
-      
-        
-      }
+				return SpecimenCollectionProcedureOperations.validateSpecimenCollectionProcedureTargetSiteCode(
+					(SpecimenCollectionProcedure) objectToTest, diagnostician, map);
+			}
 
-      @Override
-      protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-      
-      
-      
-        return SpecimenCollectionProcedureOperations.validateSpecimenCollectionProcedureTargetSiteCode(
-          (SpecimenCollectionProcedure) objectToTest, diagnostician, map);
-      }
+		};
 
-    };
-
-    validateSpecimenCollectionProcedureTargetSiteCodeTestCase.doValidationTest();
-}
+		validateSpecimenCollectionProcedureTargetSiteCodeTestCase.doValidationTest();
+	}
 
 	/**
 	*
@@ -504,17 +300,17 @@ public class SpecimenCollectionProcedureTest extends CDAValidationTest {
 	*/
 	@Test
 	public void testConstructor() {
-          @SuppressWarnings("unused")
-      ConstructorTestClass constructorTestClass = new ConstructorTestClass();		
-  } // testConstructor
+		@SuppressWarnings("unused")
+		ConstructorTestClass constructorTestClass = new ConstructorTestClass();
+	} // testConstructor
 
 	/**
 	*
 	* @generated
 	*/
 	@Override
-	protected EObject getObjectToTest() {		
-    return null;
-  }
+	protected EObject getObjectToTest() {
+		return null;
+	}
 
 } // SpecimenCollectionProcedureOperations

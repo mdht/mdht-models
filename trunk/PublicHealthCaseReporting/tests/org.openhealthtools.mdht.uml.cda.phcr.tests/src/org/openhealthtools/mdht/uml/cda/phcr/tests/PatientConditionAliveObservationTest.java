@@ -52,67 +52,33 @@ public class PatientConditionAliveObservationTest extends CDAValidationTest {
 	*/
 	@Test
 	public void testValidatePatientConditionAliveObservationTemplateId() {
-      OperationsTestCase<PatientConditionAliveObservation> validatePatientConditionAliveObservationTemplateIdTestCase = new OperationsTestCase<PatientConditionAliveObservation>(
-      "validatePatientConditionAliveObservationTemplateId",
-      operationsForOCL.getOCLValue("VALIDATE_PATIENT_CONDITION_ALIVE_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP")
-      ,objectFactory) {
+		OperationsTestCase<PatientConditionAliveObservation> validatePatientConditionAliveObservationTemplateIdTestCase = new OperationsTestCase<PatientConditionAliveObservation>(
+			"validatePatientConditionAliveObservationTemplateId",
+			operationsForOCL.getOCLValue("VALIDATE_PATIENT_CONDITION_ALIVE_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
 
-      @Override
-      protected void updateToFail(PatientConditionAliveObservation target) {
+			@Override
+			protected void updateToFail(PatientConditionAliveObservation target) {
 
-      }
+			}
 
-      @Override
-      protected void updateToPass(PatientConditionAliveObservation target) {
-        target.init();
-        
-        
-        
-        
-        
+			@Override
+			protected void updateToPass(PatientConditionAliveObservation target) {
+				target.init();
 
-        
-        
+			}
 
-  
-      
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
 
-  
-    
-    
-      
-        
-    
-      
-        
-      
-        
-        
-        
-        
-        
-        
-        
-      
-      
-          
-      
-        
-      }
+				return PatientConditionAliveObservationOperations.validatePatientConditionAliveObservationTemplateId(
+					(PatientConditionAliveObservation) objectToTest, diagnostician, map);
+			}
 
-      @Override
-      protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-      
-      
-      
-        return PatientConditionAliveObservationOperations.validatePatientConditionAliveObservationTemplateId(
-          (PatientConditionAliveObservation) objectToTest, diagnostician, map);
-      }
+		};
 
-    };
-
-    validatePatientConditionAliveObservationTemplateIdTestCase.doValidationTest();
-}
+		validatePatientConditionAliveObservationTemplateIdTestCase.doValidationTest();
+	}
 
 	/**
 	*
@@ -120,67 +86,33 @@ public class PatientConditionAliveObservationTest extends CDAValidationTest {
 	*/
 	@Test
 	public void testValidatePatientConditionAliveObservationClassCode() {
-      OperationsTestCase<PatientConditionAliveObservation> validatePatientConditionAliveObservationClassCodeTestCase = new OperationsTestCase<PatientConditionAliveObservation>(
-      "validatePatientConditionAliveObservationClassCode",
-      operationsForOCL.getOCLValue("VALIDATE_PATIENT_CONDITION_ALIVE_OBSERVATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP")
-      ,objectFactory) {
+		OperationsTestCase<PatientConditionAliveObservation> validatePatientConditionAliveObservationClassCodeTestCase = new OperationsTestCase<PatientConditionAliveObservation>(
+			"validatePatientConditionAliveObservationClassCode",
+			operationsForOCL.getOCLValue("VALIDATE_PATIENT_CONDITION_ALIVE_OBSERVATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
 
-      @Override
-      protected void updateToFail(PatientConditionAliveObservation target) {
+			@Override
+			protected void updateToFail(PatientConditionAliveObservation target) {
 
-      }
+			}
 
-      @Override
-      protected void updateToPass(PatientConditionAliveObservation target) {
-        target.init();
-        
-        
-        
-        
-        
+			@Override
+			protected void updateToPass(PatientConditionAliveObservation target) {
+				target.init();
 
-        
-        
+			}
 
-  
-      
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
 
-  
-    
-    
-      
-        
-    
-      
-        
-      
-        
-        
-        
-        
-        
-        
-        
-      
-      
-          
-      
-        
-      }
+				return PatientConditionAliveObservationOperations.validatePatientConditionAliveObservationClassCode(
+					(PatientConditionAliveObservation) objectToTest, diagnostician, map);
+			}
 
-      @Override
-      protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-      
-      
-      
-        return PatientConditionAliveObservationOperations.validatePatientConditionAliveObservationClassCode(
-          (PatientConditionAliveObservation) objectToTest, diagnostician, map);
-      }
+		};
 
-    };
-
-    validatePatientConditionAliveObservationClassCodeTestCase.doValidationTest();
-}
+		validatePatientConditionAliveObservationClassCodeTestCase.doValidationTest();
+	}
 
 	/**
 	*
@@ -188,67 +120,33 @@ public class PatientConditionAliveObservationTest extends CDAValidationTest {
 	*/
 	@Test
 	public void testValidatePatientConditionAliveObservationMoodCode() {
-      OperationsTestCase<PatientConditionAliveObservation> validatePatientConditionAliveObservationMoodCodeTestCase = new OperationsTestCase<PatientConditionAliveObservation>(
-      "validatePatientConditionAliveObservationMoodCode",
-      operationsForOCL.getOCLValue("VALIDATE_PATIENT_CONDITION_ALIVE_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP")
-      ,objectFactory) {
+		OperationsTestCase<PatientConditionAliveObservation> validatePatientConditionAliveObservationMoodCodeTestCase = new OperationsTestCase<PatientConditionAliveObservation>(
+			"validatePatientConditionAliveObservationMoodCode",
+			operationsForOCL.getOCLValue("VALIDATE_PATIENT_CONDITION_ALIVE_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
 
-      @Override
-      protected void updateToFail(PatientConditionAliveObservation target) {
+			@Override
+			protected void updateToFail(PatientConditionAliveObservation target) {
 
-      }
+			}
 
-      @Override
-      protected void updateToPass(PatientConditionAliveObservation target) {
-        target.init();
-        
-        
-        
-        
-        
+			@Override
+			protected void updateToPass(PatientConditionAliveObservation target) {
+				target.init();
 
-        
-        
+			}
 
-  
-      
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
 
-  
-    
-    
-      
-        
-    
-      
-        
-      
-        
-        
-        
-        
-        
-        
-        
-      
-      
-          
-      
-        
-      }
+				return PatientConditionAliveObservationOperations.validatePatientConditionAliveObservationMoodCode(
+					(PatientConditionAliveObservation) objectToTest, diagnostician, map);
+			}
 
-      @Override
-      protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-      
-      
-      
-        return PatientConditionAliveObservationOperations.validatePatientConditionAliveObservationMoodCode(
-          (PatientConditionAliveObservation) objectToTest, diagnostician, map);
-      }
+		};
 
-    };
-
-    validatePatientConditionAliveObservationMoodCodeTestCase.doValidationTest();
-}
+		validatePatientConditionAliveObservationMoodCodeTestCase.doValidationTest();
+	}
 
 	/**
 	*
@@ -256,67 +154,33 @@ public class PatientConditionAliveObservationTest extends CDAValidationTest {
 	*/
 	@Test
 	public void testValidatePatientConditionAliveObservationCodeP() {
-      OperationsTestCase<PatientConditionAliveObservation> validatePatientConditionAliveObservationCodePTestCase = new OperationsTestCase<PatientConditionAliveObservation>(
-      "validatePatientConditionAliveObservationCodeP",
-      operationsForOCL.getOCLValue("VALIDATE_PATIENT_CONDITION_ALIVE_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP")
-      ,objectFactory) {
+		OperationsTestCase<PatientConditionAliveObservation> validatePatientConditionAliveObservationCodePTestCase = new OperationsTestCase<PatientConditionAliveObservation>(
+			"validatePatientConditionAliveObservationCodeP",
+			operationsForOCL.getOCLValue("VALIDATE_PATIENT_CONDITION_ALIVE_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
 
-      @Override
-      protected void updateToFail(PatientConditionAliveObservation target) {
+			@Override
+			protected void updateToFail(PatientConditionAliveObservation target) {
 
-      }
+			}
 
-      @Override
-      protected void updateToPass(PatientConditionAliveObservation target) {
-        target.init();
-        
-        
-        
-        
-        
+			@Override
+			protected void updateToPass(PatientConditionAliveObservation target) {
+				target.init();
 
-        
-        
+			}
 
-  
-      
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
 
-  
-    
-    
-      
-        
-    
-      
-        
-      
-        
-        
-        
-        
-        
-        
-        
-      
-      
-          
-      
-        
-      }
+				return PatientConditionAliveObservationOperations.validatePatientConditionAliveObservationCodeP(
+					(PatientConditionAliveObservation) objectToTest, diagnostician, map);
+			}
 
-      @Override
-      protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-      
-      
-      
-        return PatientConditionAliveObservationOperations.validatePatientConditionAliveObservationCodeP(
-          (PatientConditionAliveObservation) objectToTest, diagnostician, map);
-      }
+		};
 
-    };
-
-    validatePatientConditionAliveObservationCodePTestCase.doValidationTest();
-}
+		validatePatientConditionAliveObservationCodePTestCase.doValidationTest();
+	}
 
 	/**
 	*
@@ -324,70 +188,36 @@ public class PatientConditionAliveObservationTest extends CDAValidationTest {
 	*/
 	@Test
 	public void testValidatePatientConditionAliveObservationCode() {
-      OperationsTestCase<PatientConditionAliveObservation> validatePatientConditionAliveObservationCodeTestCase = new OperationsTestCase<PatientConditionAliveObservation>(
-      "validatePatientConditionAliveObservationCode",
-      operationsForOCL.getOCLValue("VALIDATE_PATIENT_CONDITION_ALIVE_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP")
-      ,objectFactory) {
+		OperationsTestCase<PatientConditionAliveObservation> validatePatientConditionAliveObservationCodeTestCase = new OperationsTestCase<PatientConditionAliveObservation>(
+			"validatePatientConditionAliveObservationCode",
+			operationsForOCL.getOCLValue("VALIDATE_PATIENT_CONDITION_ALIVE_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
 
-      @Override
-      protected void updateToFail(PatientConditionAliveObservation target) {
+			@Override
+			protected void updateToFail(PatientConditionAliveObservation target) {
 
-      }
+			}
 
-      @Override
-      protected void updateToPass(PatientConditionAliveObservation target) {
-        target.init();
-        
-        
-        
-        
-        
+			@Override
+			protected void updateToPass(PatientConditionAliveObservation target) {
+				target.init();
 
-        
-        
+				CD cd = DatatypesFactory.eINSTANCE.createCD();
+				target.setCode(cd);
 
-  
-      
+			}
 
-  
-    
-    
-      
-        
-    
-      
-        
-      
-        
-        
-        
-      
-        CD cd  = DatatypesFactory.eINSTANCE.createCD();
-        target.setCode(cd);
-        
-        
-        
-        
-      
-      
-          
-      
-        
-      }
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
 
-      @Override
-      protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-      
-      
-      
-        return PatientConditionAliveObservationOperations.validatePatientConditionAliveObservationCode(
-          (PatientConditionAliveObservation) objectToTest, diagnostician, map);
-      }
+				return PatientConditionAliveObservationOperations.validatePatientConditionAliveObservationCode(
+					(PatientConditionAliveObservation) objectToTest, diagnostician, map);
+			}
 
-    };
+		};
 
-    validatePatientConditionAliveObservationCodeTestCase.doValidationTest();
-}
+		validatePatientConditionAliveObservationCodeTestCase.doValidationTest();
+	}
 
 	/**
 	*
@@ -395,70 +225,36 @@ public class PatientConditionAliveObservationTest extends CDAValidationTest {
 	*/
 	@Test
 	public void testValidatePatientConditionAliveObservationStatusCode() {
-      OperationsTestCase<PatientConditionAliveObservation> validatePatientConditionAliveObservationStatusCodeTestCase = new OperationsTestCase<PatientConditionAliveObservation>(
-      "validatePatientConditionAliveObservationStatusCode",
-      operationsForOCL.getOCLValue("VALIDATE_PATIENT_CONDITION_ALIVE_OBSERVATION_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP")
-      ,objectFactory) {
+		OperationsTestCase<PatientConditionAliveObservation> validatePatientConditionAliveObservationStatusCodeTestCase = new OperationsTestCase<PatientConditionAliveObservation>(
+			"validatePatientConditionAliveObservationStatusCode",
+			operationsForOCL.getOCLValue("VALIDATE_PATIENT_CONDITION_ALIVE_OBSERVATION_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
 
-      @Override
-      protected void updateToFail(PatientConditionAliveObservation target) {
+			@Override
+			protected void updateToFail(PatientConditionAliveObservation target) {
 
-      }
+			}
 
-      @Override
-      protected void updateToPass(PatientConditionAliveObservation target) {
-        target.init();
-        
-        
-        
-        
-      
-        CS cs = DatatypesFactory.eINSTANCE.createCS("completed");
-        target.setStatusCode(cs);
-        
+			@Override
+			protected void updateToPass(PatientConditionAliveObservation target) {
+				target.init();
 
-        
-        
+				CS cs = DatatypesFactory.eINSTANCE.createCS("completed");
+				target.setStatusCode(cs);
 
-  
-      
+			}
 
-  
-    
-    
-      
-        
-    
-      
-        
-      
-        
-        
-        
-        
-        
-        
-        
-      
-      
-          
-      
-        
-      }
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
 
-      @Override
-      protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-      
-      
-      
-        return PatientConditionAliveObservationOperations.validatePatientConditionAliveObservationStatusCode(
-          (PatientConditionAliveObservation) objectToTest, diagnostician, map);
-      }
+				return PatientConditionAliveObservationOperations.validatePatientConditionAliveObservationStatusCode(
+					(PatientConditionAliveObservation) objectToTest, diagnostician, map);
+			}
 
-    };
+		};
 
-    validatePatientConditionAliveObservationStatusCodeTestCase.doValidationTest();
-}
+		validatePatientConditionAliveObservationStatusCodeTestCase.doValidationTest();
+	}
 
 	/**
 	*
@@ -466,67 +262,33 @@ public class PatientConditionAliveObservationTest extends CDAValidationTest {
 	*/
 	@Test
 	public void testValidatePatientConditionAliveObservationStatusCodeP() {
-      OperationsTestCase<PatientConditionAliveObservation> validatePatientConditionAliveObservationStatusCodePTestCase = new OperationsTestCase<PatientConditionAliveObservation>(
-      "validatePatientConditionAliveObservationStatusCodeP",
-      operationsForOCL.getOCLValue("VALIDATE_PATIENT_CONDITION_ALIVE_OBSERVATION_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP")
-      ,objectFactory) {
+		OperationsTestCase<PatientConditionAliveObservation> validatePatientConditionAliveObservationStatusCodePTestCase = new OperationsTestCase<PatientConditionAliveObservation>(
+			"validatePatientConditionAliveObservationStatusCodeP",
+			operationsForOCL.getOCLValue("VALIDATE_PATIENT_CONDITION_ALIVE_OBSERVATION_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
 
-      @Override
-      protected void updateToFail(PatientConditionAliveObservation target) {
+			@Override
+			protected void updateToFail(PatientConditionAliveObservation target) {
 
-      }
+			}
 
-      @Override
-      protected void updateToPass(PatientConditionAliveObservation target) {
-        target.init();
-        
-        
-        
-        
-        
+			@Override
+			protected void updateToPass(PatientConditionAliveObservation target) {
+				target.init();
 
-        
-        
+			}
 
-  
-      
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
 
-  
-    
-    
-      
-        
-    
-      
-        
-      
-        
-        
-        
-        
-        
-        
-        
-      
-      
-          
-      
-        
-      }
+				return PatientConditionAliveObservationOperations.validatePatientConditionAliveObservationStatusCodeP(
+					(PatientConditionAliveObservation) objectToTest, diagnostician, map);
+			}
 
-      @Override
-      protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-      
-      
-      
-        return PatientConditionAliveObservationOperations.validatePatientConditionAliveObservationStatusCodeP(
-          (PatientConditionAliveObservation) objectToTest, diagnostician, map);
-      }
+		};
 
-    };
-
-    validatePatientConditionAliveObservationStatusCodePTestCase.doValidationTest();
-}
+		validatePatientConditionAliveObservationStatusCodePTestCase.doValidationTest();
+	}
 
 	/**
 	*
@@ -534,70 +296,36 @@ public class PatientConditionAliveObservationTest extends CDAValidationTest {
 	*/
 	@Test
 	public void testValidatePatientConditionAliveObservationEffectiveTime() {
-      OperationsTestCase<PatientConditionAliveObservation> validatePatientConditionAliveObservationEffectiveTimeTestCase = new OperationsTestCase<PatientConditionAliveObservation>(
-      "validatePatientConditionAliveObservationEffectiveTime",
-      operationsForOCL.getOCLValue("VALIDATE_PATIENT_CONDITION_ALIVE_OBSERVATION_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP")
-      ,objectFactory) {
+		OperationsTestCase<PatientConditionAliveObservation> validatePatientConditionAliveObservationEffectiveTimeTestCase = new OperationsTestCase<PatientConditionAliveObservation>(
+			"validatePatientConditionAliveObservationEffectiveTime",
+			operationsForOCL.getOCLValue("VALIDATE_PATIENT_CONDITION_ALIVE_OBSERVATION_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
 
-      @Override
-      protected void updateToFail(PatientConditionAliveObservation target) {
+			@Override
+			protected void updateToFail(PatientConditionAliveObservation target) {
 
-      }
+			}
 
-      @Override
-      protected void updateToPass(PatientConditionAliveObservation target) {
-        target.init();
-        
-        
-          IVL_TS ts = DatatypesFactory .eINSTANCE.createIVL_TS();
-          target.setEffectiveTime(ts );								
-        
-        
-        
-        
+			@Override
+			protected void updateToPass(PatientConditionAliveObservation target) {
+				target.init();
 
-        
-        
+				IVL_TS ts = DatatypesFactory.eINSTANCE.createIVL_TS();
+				target.setEffectiveTime(ts);
 
-  
-      
+			}
 
-  
-    
-    
-      
-        
-    
-      
-        
-      
-        
-        
-        
-        
-        
-        
-        
-      
-      
-          
-      
-        
-      }
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
 
-      @Override
-      protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-      
-      
-      
-        return PatientConditionAliveObservationOperations.validatePatientConditionAliveObservationEffectiveTime(
-          (PatientConditionAliveObservation) objectToTest, diagnostician, map);
-      }
+				return PatientConditionAliveObservationOperations.validatePatientConditionAliveObservationEffectiveTime(
+					(PatientConditionAliveObservation) objectToTest, diagnostician, map);
+			}
 
-    };
+		};
 
-    validatePatientConditionAliveObservationEffectiveTimeTestCase.doValidationTest();
-}
+		validatePatientConditionAliveObservationEffectiveTimeTestCase.doValidationTest();
+	}
 
 	/**
 	*
@@ -605,70 +333,36 @@ public class PatientConditionAliveObservationTest extends CDAValidationTest {
 	*/
 	@Test
 	public void testValidatePatientConditionAliveObservationValue() {
-      OperationsTestCase<PatientConditionAliveObservation> validatePatientConditionAliveObservationValueTestCase = new OperationsTestCase<PatientConditionAliveObservation>(
-      "validatePatientConditionAliveObservationValue",
-      operationsForOCL.getOCLValue("VALIDATE_PATIENT_CONDITION_ALIVE_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP")
-      ,objectFactory) {
+		OperationsTestCase<PatientConditionAliveObservation> validatePatientConditionAliveObservationValueTestCase = new OperationsTestCase<PatientConditionAliveObservation>(
+			"validatePatientConditionAliveObservationValue",
+			operationsForOCL.getOCLValue("VALIDATE_PATIENT_CONDITION_ALIVE_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
 
-      @Override
-      protected void updateToFail(PatientConditionAliveObservation target) {
+			@Override
+			protected void updateToFail(PatientConditionAliveObservation target) {
 
-      }
+			}
 
-      @Override
-      protected void updateToPass(PatientConditionAliveObservation target) {
-        target.init();
-        
-        
-        
-        
-        
+			@Override
+			protected void updateToPass(PatientConditionAliveObservation target) {
+				target.init();
 
-        
-      
-        CD value = DatatypesFactory.eINSTANCE.createCD();
-        target.getValues().add(value);
-        
+				CD value = DatatypesFactory.eINSTANCE.createCD();
+				target.getValues().add(value);
 
-  
-      
+			}
 
-  
-    
-    
-      
-        
-    
-      
-        
-      
-        
-        
-        
-        
-        
-        
-        
-      
-      
-          
-      
-        
-      }
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
 
-      @Override
-      protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-      
-      
-      
-        return PatientConditionAliveObservationOperations.validatePatientConditionAliveObservationValue(
-          (PatientConditionAliveObservation) objectToTest, diagnostician, map);
-      }
+				return PatientConditionAliveObservationOperations.validatePatientConditionAliveObservationValue(
+					(PatientConditionAliveObservation) objectToTest, diagnostician, map);
+			}
 
-    };
+		};
 
-    validatePatientConditionAliveObservationValueTestCase.doValidationTest();
-}
+		validatePatientConditionAliveObservationValueTestCase.doValidationTest();
+	}
 
 	/**
 	*
@@ -676,67 +370,33 @@ public class PatientConditionAliveObservationTest extends CDAValidationTest {
 	*/
 	@Test
 	public void testValidatePatientConditionAliveObservationValueP() {
-      OperationsTestCase<PatientConditionAliveObservation> validatePatientConditionAliveObservationValuePTestCase = new OperationsTestCase<PatientConditionAliveObservation>(
-      "validatePatientConditionAliveObservationValueP",
-      operationsForOCL.getOCLValue("VALIDATE_PATIENT_CONDITION_ALIVE_OBSERVATION_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP")
-      ,objectFactory) {
+		OperationsTestCase<PatientConditionAliveObservation> validatePatientConditionAliveObservationValuePTestCase = new OperationsTestCase<PatientConditionAliveObservation>(
+			"validatePatientConditionAliveObservationValueP",
+			operationsForOCL.getOCLValue("VALIDATE_PATIENT_CONDITION_ALIVE_OBSERVATION_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
 
-      @Override
-      protected void updateToFail(PatientConditionAliveObservation target) {
+			@Override
+			protected void updateToFail(PatientConditionAliveObservation target) {
 
-      }
+			}
 
-      @Override
-      protected void updateToPass(PatientConditionAliveObservation target) {
-        target.init();
-        
-        
-        
-        
-        
+			@Override
+			protected void updateToPass(PatientConditionAliveObservation target) {
+				target.init();
 
-        
-        
+			}
 
-  
-      
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
 
-  
-    
-    
-      
-        
-    
-      
-        
-      
-        
-        
-        
-        
-        
-        
-        
-      
-      
-          
-      
-        
-      }
+				return PatientConditionAliveObservationOperations.validatePatientConditionAliveObservationValueP(
+					(PatientConditionAliveObservation) objectToTest, diagnostician, map);
+			}
 
-      @Override
-      protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-      
-      
-      
-        return PatientConditionAliveObservationOperations.validatePatientConditionAliveObservationValueP(
-          (PatientConditionAliveObservation) objectToTest, diagnostician, map);
-      }
+		};
 
-    };
-
-    validatePatientConditionAliveObservationValuePTestCase.doValidationTest();
-}
+		validatePatientConditionAliveObservationValuePTestCase.doValidationTest();
+	}
 
 	/**
 	*
@@ -791,17 +451,17 @@ public class PatientConditionAliveObservationTest extends CDAValidationTest {
 	*/
 	@Test
 	public void testConstructor() {
-          @SuppressWarnings("unused")
-      ConstructorTestClass constructorTestClass = new ConstructorTestClass();		
-  } // testConstructor
+		@SuppressWarnings("unused")
+		ConstructorTestClass constructorTestClass = new ConstructorTestClass();
+	} // testConstructor
 
 	/**
 	*
 	* @generated
 	*/
 	@Override
-	protected EObject getObjectToTest() {		
-    return null;
-  }
+	protected EObject getObjectToTest() {
+		return null;
+	}
 
 } // PatientConditionAliveObservationOperations

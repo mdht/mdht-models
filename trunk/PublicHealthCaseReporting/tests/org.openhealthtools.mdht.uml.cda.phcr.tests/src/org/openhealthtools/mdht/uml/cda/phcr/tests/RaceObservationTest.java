@@ -49,67 +49,33 @@ public class RaceObservationTest extends CDAValidationTest {
 	*/
 	@Test
 	public void testValidateRaceObservationTemplateId() {
-      OperationsTestCase<RaceObservation> validateRaceObservationTemplateIdTestCase = new OperationsTestCase<RaceObservation>(
-      "validateRaceObservationTemplateId",
-      operationsForOCL.getOCLValue("VALIDATE_RACE_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP")
-      ,objectFactory) {
+		OperationsTestCase<RaceObservation> validateRaceObservationTemplateIdTestCase = new OperationsTestCase<RaceObservation>(
+			"validateRaceObservationTemplateId",
+			operationsForOCL.getOCLValue("VALIDATE_RACE_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
 
-      @Override
-      protected void updateToFail(RaceObservation target) {
+			@Override
+			protected void updateToFail(RaceObservation target) {
 
-      }
+			}
 
-      @Override
-      protected void updateToPass(RaceObservation target) {
-        target.init();
-        
-        
-        
-        
-        
+			@Override
+			protected void updateToPass(RaceObservation target) {
+				target.init();
 
-        
-        
+			}
 
-  
-      
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
 
-  
-    
-    
-      
-        
-    
-      
-        
-      
-        
-        
-        
-        
-        
-        
-        
-      
-      
-          
-      
-        
-      }
+				return RaceObservationOperations.validateRaceObservationTemplateId(
+					(RaceObservation) objectToTest, diagnostician, map);
+			}
 
-      @Override
-      protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-      
-      
-      
-        return RaceObservationOperations.validateRaceObservationTemplateId(
-          (RaceObservation) objectToTest, diagnostician, map);
-      }
+		};
 
-    };
-
-    validateRaceObservationTemplateIdTestCase.doValidationTest();
-}
+		validateRaceObservationTemplateIdTestCase.doValidationTest();
+	}
 
 	/**
 	*
@@ -117,67 +83,33 @@ public class RaceObservationTest extends CDAValidationTest {
 	*/
 	@Test
 	public void testValidateRaceObservationClassCode() {
-      OperationsTestCase<RaceObservation> validateRaceObservationClassCodeTestCase = new OperationsTestCase<RaceObservation>(
-      "validateRaceObservationClassCode",
-      operationsForOCL.getOCLValue("VALIDATE_RACE_OBSERVATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP")
-      ,objectFactory) {
+		OperationsTestCase<RaceObservation> validateRaceObservationClassCodeTestCase = new OperationsTestCase<RaceObservation>(
+			"validateRaceObservationClassCode",
+			operationsForOCL.getOCLValue("VALIDATE_RACE_OBSERVATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
 
-      @Override
-      protected void updateToFail(RaceObservation target) {
+			@Override
+			protected void updateToFail(RaceObservation target) {
 
-      }
+			}
 
-      @Override
-      protected void updateToPass(RaceObservation target) {
-        target.init();
-        
-        
-        
-        
-        
+			@Override
+			protected void updateToPass(RaceObservation target) {
+				target.init();
 
-        
-        
+			}
 
-  
-      
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
 
-  
-    
-    
-      
-        
-    
-      
-        
-      
-        
-        
-        
-        
-        
-        
-        
-      
-      
-          
-      
-        
-      }
+				return RaceObservationOperations.validateRaceObservationClassCode(
+					(RaceObservation) objectToTest, diagnostician, map);
+			}
 
-      @Override
-      protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-      
-      
-      
-        return RaceObservationOperations.validateRaceObservationClassCode(
-          (RaceObservation) objectToTest, diagnostician, map);
-      }
+		};
 
-    };
-
-    validateRaceObservationClassCodeTestCase.doValidationTest();
-}
+		validateRaceObservationClassCodeTestCase.doValidationTest();
+	}
 
 	/**
 	*
@@ -185,67 +117,33 @@ public class RaceObservationTest extends CDAValidationTest {
 	*/
 	@Test
 	public void testValidateRaceObservationMoodCode() {
-      OperationsTestCase<RaceObservation> validateRaceObservationMoodCodeTestCase = new OperationsTestCase<RaceObservation>(
-      "validateRaceObservationMoodCode",
-      operationsForOCL.getOCLValue("VALIDATE_RACE_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP")
-      ,objectFactory) {
+		OperationsTestCase<RaceObservation> validateRaceObservationMoodCodeTestCase = new OperationsTestCase<RaceObservation>(
+			"validateRaceObservationMoodCode",
+			operationsForOCL.getOCLValue("VALIDATE_RACE_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
 
-      @Override
-      protected void updateToFail(RaceObservation target) {
+			@Override
+			protected void updateToFail(RaceObservation target) {
 
-      }
+			}
 
-      @Override
-      protected void updateToPass(RaceObservation target) {
-        target.init();
-        
-        
-        
-        
-        
+			@Override
+			protected void updateToPass(RaceObservation target) {
+				target.init();
 
-        
-        
+			}
 
-  
-      
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
 
-  
-    
-    
-      
-        
-    
-      
-        
-      
-        
-        
-        
-        
-        
-        
-        
-      
-      
-          
-      
-        
-      }
+				return RaceObservationOperations.validateRaceObservationMoodCode(
+					(RaceObservation) objectToTest, diagnostician, map);
+			}
 
-      @Override
-      protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-      
-      
-      
-        return RaceObservationOperations.validateRaceObservationMoodCode(
-          (RaceObservation) objectToTest, diagnostician, map);
-      }
+		};
 
-    };
-
-    validateRaceObservationMoodCodeTestCase.doValidationTest();
-}
+		validateRaceObservationMoodCodeTestCase.doValidationTest();
+	}
 
 	/**
 	*
@@ -253,67 +151,33 @@ public class RaceObservationTest extends CDAValidationTest {
 	*/
 	@Test
 	public void testValidateRaceObservationCodeP() {
-      OperationsTestCase<RaceObservation> validateRaceObservationCodePTestCase = new OperationsTestCase<RaceObservation>(
-      "validateRaceObservationCodeP",
-      operationsForOCL.getOCLValue("VALIDATE_RACE_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP")
-      ,objectFactory) {
+		OperationsTestCase<RaceObservation> validateRaceObservationCodePTestCase = new OperationsTestCase<RaceObservation>(
+			"validateRaceObservationCodeP",
+			operationsForOCL.getOCLValue("VALIDATE_RACE_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
 
-      @Override
-      protected void updateToFail(RaceObservation target) {
+			@Override
+			protected void updateToFail(RaceObservation target) {
 
-      }
+			}
 
-      @Override
-      protected void updateToPass(RaceObservation target) {
-        target.init();
-        
-        
-        
-        
-        
+			@Override
+			protected void updateToPass(RaceObservation target) {
+				target.init();
 
-        
-        
+			}
 
-  
-      
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
 
-  
-    
-    
-      
-        
-    
-      
-        
-      
-        
-        
-        
-        
-        
-        
-        
-      
-      
-          
-      
-        
-      }
+				return RaceObservationOperations.validateRaceObservationCodeP(
+					(RaceObservation) objectToTest, diagnostician, map);
+			}
 
-      @Override
-      protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-      
-      
-      
-        return RaceObservationOperations.validateRaceObservationCodeP(
-          (RaceObservation) objectToTest, diagnostician, map);
-      }
+		};
 
-    };
-
-    validateRaceObservationCodePTestCase.doValidationTest();
-}
+		validateRaceObservationCodePTestCase.doValidationTest();
+	}
 
 	/**
 	*
@@ -321,70 +185,36 @@ public class RaceObservationTest extends CDAValidationTest {
 	*/
 	@Test
 	public void testValidateRaceObservationCode() {
-      OperationsTestCase<RaceObservation> validateRaceObservationCodeTestCase = new OperationsTestCase<RaceObservation>(
-      "validateRaceObservationCode",
-      operationsForOCL.getOCLValue("VALIDATE_RACE_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP")
-      ,objectFactory) {
+		OperationsTestCase<RaceObservation> validateRaceObservationCodeTestCase = new OperationsTestCase<RaceObservation>(
+			"validateRaceObservationCode",
+			operationsForOCL.getOCLValue("VALIDATE_RACE_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
 
-      @Override
-      protected void updateToFail(RaceObservation target) {
+			@Override
+			protected void updateToFail(RaceObservation target) {
 
-      }
+			}
 
-      @Override
-      protected void updateToPass(RaceObservation target) {
-        target.init();
-        
-        
-        
-        
-        
+			@Override
+			protected void updateToPass(RaceObservation target) {
+				target.init();
 
-        
-        
+				CD cd = DatatypesFactory.eINSTANCE.createCD();
+				target.setCode(cd);
 
-  
-      
+			}
 
-  
-    
-    
-      
-        
-    
-      
-        
-      
-        
-        
-        
-      
-        CD cd  = DatatypesFactory.eINSTANCE.createCD();
-        target.setCode(cd);
-        
-        
-        
-        
-      
-      
-          
-      
-        
-      }
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
 
-      @Override
-      protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-      
-      
-      
-        return RaceObservationOperations.validateRaceObservationCode(
-          (RaceObservation) objectToTest, diagnostician, map);
-      }
+				return RaceObservationOperations.validateRaceObservationCode(
+					(RaceObservation) objectToTest, diagnostician, map);
+			}
 
-    };
+		};
 
-    validateRaceObservationCodeTestCase.doValidationTest();
-}
+		validateRaceObservationCodeTestCase.doValidationTest();
+	}
 
 	/**
 	*
@@ -392,70 +222,36 @@ public class RaceObservationTest extends CDAValidationTest {
 	*/
 	@Test
 	public void testValidateRaceObservationStatusCode() {
-      OperationsTestCase<RaceObservation> validateRaceObservationStatusCodeTestCase = new OperationsTestCase<RaceObservation>(
-      "validateRaceObservationStatusCode",
-      operationsForOCL.getOCLValue("VALIDATE_RACE_OBSERVATION_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP")
-      ,objectFactory) {
+		OperationsTestCase<RaceObservation> validateRaceObservationStatusCodeTestCase = new OperationsTestCase<RaceObservation>(
+			"validateRaceObservationStatusCode",
+			operationsForOCL.getOCLValue("VALIDATE_RACE_OBSERVATION_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
 
-      @Override
-      protected void updateToFail(RaceObservation target) {
+			@Override
+			protected void updateToFail(RaceObservation target) {
 
-      }
+			}
 
-      @Override
-      protected void updateToPass(RaceObservation target) {
-        target.init();
-        
-        
-        
-        
-      
-        CS cs = DatatypesFactory.eINSTANCE.createCS("completed");
-        target.setStatusCode(cs);
-        
+			@Override
+			protected void updateToPass(RaceObservation target) {
+				target.init();
 
-        
-        
+				CS cs = DatatypesFactory.eINSTANCE.createCS("completed");
+				target.setStatusCode(cs);
 
-  
-      
+			}
 
-  
-    
-    
-      
-        
-    
-      
-        
-      
-        
-        
-        
-        
-        
-        
-        
-      
-      
-          
-      
-        
-      }
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
 
-      @Override
-      protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-      
-      
-      
-        return RaceObservationOperations.validateRaceObservationStatusCode(
-          (RaceObservation) objectToTest, diagnostician, map);
-      }
+				return RaceObservationOperations.validateRaceObservationStatusCode(
+					(RaceObservation) objectToTest, diagnostician, map);
+			}
 
-    };
+		};
 
-    validateRaceObservationStatusCodeTestCase.doValidationTest();
-}
+		validateRaceObservationStatusCodeTestCase.doValidationTest();
+	}
 
 	/**
 	*
@@ -463,67 +259,33 @@ public class RaceObservationTest extends CDAValidationTest {
 	*/
 	@Test
 	public void testValidateRaceObservationStatusCodeP() {
-      OperationsTestCase<RaceObservation> validateRaceObservationStatusCodePTestCase = new OperationsTestCase<RaceObservation>(
-      "validateRaceObservationStatusCodeP",
-      operationsForOCL.getOCLValue("VALIDATE_RACE_OBSERVATION_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP")
-      ,objectFactory) {
+		OperationsTestCase<RaceObservation> validateRaceObservationStatusCodePTestCase = new OperationsTestCase<RaceObservation>(
+			"validateRaceObservationStatusCodeP",
+			operationsForOCL.getOCLValue("VALIDATE_RACE_OBSERVATION_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
 
-      @Override
-      protected void updateToFail(RaceObservation target) {
+			@Override
+			protected void updateToFail(RaceObservation target) {
 
-      }
+			}
 
-      @Override
-      protected void updateToPass(RaceObservation target) {
-        target.init();
-        
-        
-        
-        
-        
+			@Override
+			protected void updateToPass(RaceObservation target) {
+				target.init();
 
-        
-        
+			}
 
-  
-      
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
 
-  
-    
-    
-      
-        
-    
-      
-        
-      
-        
-        
-        
-        
-        
-        
-        
-      
-      
-          
-      
-        
-      }
+				return RaceObservationOperations.validateRaceObservationStatusCodeP(
+					(RaceObservation) objectToTest, diagnostician, map);
+			}
 
-      @Override
-      protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-      
-      
-      
-        return RaceObservationOperations.validateRaceObservationStatusCodeP(
-          (RaceObservation) objectToTest, diagnostician, map);
-      }
+		};
 
-    };
-
-    validateRaceObservationStatusCodePTestCase.doValidationTest();
-}
+		validateRaceObservationStatusCodePTestCase.doValidationTest();
+	}
 
 	/**
 	*
@@ -531,70 +293,36 @@ public class RaceObservationTest extends CDAValidationTest {
 	*/
 	@Test
 	public void testValidateRaceObservationValue() {
-      OperationsTestCase<RaceObservation> validateRaceObservationValueTestCase = new OperationsTestCase<RaceObservation>(
-      "validateRaceObservationValue",
-      operationsForOCL.getOCLValue("VALIDATE_RACE_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP")
-      ,objectFactory) {
+		OperationsTestCase<RaceObservation> validateRaceObservationValueTestCase = new OperationsTestCase<RaceObservation>(
+			"validateRaceObservationValue",
+			operationsForOCL.getOCLValue("VALIDATE_RACE_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
 
-      @Override
-      protected void updateToFail(RaceObservation target) {
+			@Override
+			protected void updateToFail(RaceObservation target) {
 
-      }
+			}
 
-      @Override
-      protected void updateToPass(RaceObservation target) {
-        target.init();
-        
-        
-        
-        
-        
+			@Override
+			protected void updateToPass(RaceObservation target) {
+				target.init();
 
-        
-      
-        CD value = DatatypesFactory.eINSTANCE.createCD();
-        target.getValues().add(value);
-        
+				CD value = DatatypesFactory.eINSTANCE.createCD();
+				target.getValues().add(value);
 
-  
-      
+			}
 
-  
-    
-    
-      
-        
-    
-      
-        
-      
-        
-        
-        
-        
-        
-        
-        
-      
-      
-          
-      
-        
-      }
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
 
-      @Override
-      protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-      
-      
-      
-        return RaceObservationOperations.validateRaceObservationValue(
-          (RaceObservation) objectToTest, diagnostician, map);
-      }
+				return RaceObservationOperations.validateRaceObservationValue(
+					(RaceObservation) objectToTest, diagnostician, map);
+			}
 
-    };
+		};
 
-    validateRaceObservationValueTestCase.doValidationTest();
-}
+		validateRaceObservationValueTestCase.doValidationTest();
+	}
 
 	/**
 	*
@@ -649,17 +377,17 @@ public class RaceObservationTest extends CDAValidationTest {
 	*/
 	@Test
 	public void testConstructor() {
-          @SuppressWarnings("unused")
-      ConstructorTestClass constructorTestClass = new ConstructorTestClass();		
-  } // testConstructor
+		@SuppressWarnings("unused")
+		ConstructorTestClass constructorTestClass = new ConstructorTestClass();
+	} // testConstructor
 
 	/**
 	*
 	* @generated
 	*/
 	@Override
-	protected EObject getObjectToTest() {		
-    return null;
-  }
+	protected EObject getObjectToTest() {
+		return null;
+	}
 
 } // RaceObservationOperations
