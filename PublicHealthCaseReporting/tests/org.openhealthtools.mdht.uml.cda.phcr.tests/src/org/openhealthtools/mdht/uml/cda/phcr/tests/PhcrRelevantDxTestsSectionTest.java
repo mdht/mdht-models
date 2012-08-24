@@ -48,143 +48,72 @@ import org.openhealthtools.mdht.uml.hl7.datatypes.ST;
 public class PhcrRelevantDxTestsSectionTest extends CDAValidationTest {
 
 	/**
-*
-* @generated
-*/
-@Test
+	*
+	* @generated
+	*/
+	@Test
+	public void testValidatePhcrRelevantDxTestsSectionCodeP() {
+		OperationsTestCase<PhcrRelevantDxTestsSection> validatePhcrRelevantDxTestsSectionCodePTestCase = new OperationsTestCase<PhcrRelevantDxTestsSection>(
+			"validatePhcrRelevantDxTestsSectionCodeP",
+			operationsForOCL.getOCLValue("VALIDATE_PHCR_RELEVANT_DX_TESTS_SECTION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
 
- 
-                  
-public void testValidatePhcrRelevantDxTestsSectionCodeP() {
-      OperationsTestCase<PhcrRelevantDxTestsSection> validatePhcrRelevantDxTestsSectionCodePTestCase = new OperationsTestCase<PhcrRelevantDxTestsSection>(
-      "validatePhcrRelevantDxTestsSectionCodeP",
-      operationsForOCL.getOCLValue("VALIDATE_PHCR_RELEVANT_DX_TESTS_SECTION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP")
-      ,objectFactory) {
+			@Override
+			protected void updateToFail(PhcrRelevantDxTestsSection target) {
 
-      @Override
-      protected void updateToFail(PhcrRelevantDxTestsSection target) {
+			}
 
-      }
+			@Override
+			protected void updateToPass(PhcrRelevantDxTestsSection target) {
+				target.init();
 
-      @Override
-      protected void updateToPass(PhcrRelevantDxTestsSection target) {
-        target.init();
-        
-        
-        
-        
-        
+			}
 
-        
-        
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
 
-  
-      
+				return PhcrRelevantDxTestsSectionOperations.validatePhcrRelevantDxTestsSectionCodeP(
+					(PhcrRelevantDxTestsSection) objectToTest, diagnostician, map);
+			}
 
-  
-    
-    
-      
-        
-    
-      
-        
-      
-        
-        
-        
-        
-        
-        
-        
-      
-      
-          
-      
-        
-      }
+		};
 
-      @Override
-      protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-      
-      
-      
-        return PhcrRelevantDxTestsSectionOperations.validatePhcrRelevantDxTestsSectionCodeP(
-          (PhcrRelevantDxTestsSection) objectToTest, diagnostician, map);
-      }
+		validatePhcrRelevantDxTestsSectionCodePTestCase.doValidationTest();
+	}
 
-    };
-
-    validatePhcrRelevantDxTestsSectionCodePTestCase.doValidationTest();
-}
-
-  /**
+	/**
 	*
 	* @generated
 	*/
 	@Test
 	public void testValidatePhcrRelevantDxTestsSectionCode() {
-      OperationsTestCase<PhcrRelevantDxTestsSection> validatePhcrRelevantDxTestsSectionCodeTestCase = new OperationsTestCase<PhcrRelevantDxTestsSection>(
-      "validatePhcrRelevantDxTestsSectionCode",
-      operationsForOCL.getOCLValue("VALIDATE_PHCR_RELEVANT_DX_TESTS_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP")
-      ,objectFactory) {
+		OperationsTestCase<PhcrRelevantDxTestsSection> validatePhcrRelevantDxTestsSectionCodeTestCase = new OperationsTestCase<PhcrRelevantDxTestsSection>(
+			"validatePhcrRelevantDxTestsSectionCode",
+			operationsForOCL.getOCLValue("VALIDATE_PHCR_RELEVANT_DX_TESTS_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
 
-      @Override
-      protected void updateToFail(PhcrRelevantDxTestsSection target) {
+			@Override
+			protected void updateToFail(PhcrRelevantDxTestsSection target) {
 
-      }
+			}
 
-      @Override
-      protected void updateToPass(PhcrRelevantDxTestsSection target) {
-        target.init();
-        
-        
-        
-        
-        
+			@Override
+			protected void updateToPass(PhcrRelevantDxTestsSection target) {
+				target.init();
 
-        
-        
+			}
 
-  
-      
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
 
-  
-    
-    
-      
-        
-    
-      
-        
-      
-        
-        
-        
-        
-        
-        
-        
-      
-      
-          
-      
-        
-      }
+				return PhcrRelevantDxTestsSectionOperations.validatePhcrRelevantDxTestsSectionCode(
+					(PhcrRelevantDxTestsSection) objectToTest, diagnostician, map);
+			}
 
-      @Override
-      protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-      
-      
-      
-        return PhcrRelevantDxTestsSectionOperations.validatePhcrRelevantDxTestsSectionCode(
-          (PhcrRelevantDxTestsSection) objectToTest, diagnostician, map);
-      }
+		};
 
-    };
-
-    validatePhcrRelevantDxTestsSectionCodeTestCase.doValidationTest();
-}
+		validatePhcrRelevantDxTestsSectionCodeTestCase.doValidationTest();
+	}
 
 	/**
 	*
@@ -192,70 +121,36 @@ public void testValidatePhcrRelevantDxTestsSectionCodeP() {
 	*/
 	@Test
 	public void testValidatePhcrRelevantDxTestsSectionTitle() {
-      OperationsTestCase<PhcrRelevantDxTestsSection> validatePhcrRelevantDxTestsSectionTitleTestCase = new OperationsTestCase<PhcrRelevantDxTestsSection>(
-      "validatePhcrRelevantDxTestsSectionTitle",
-      operationsForOCL.getOCLValue("VALIDATE_PHCR_RELEVANT_DX_TESTS_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP")
-      ,objectFactory) {
+		OperationsTestCase<PhcrRelevantDxTestsSection> validatePhcrRelevantDxTestsSectionTitleTestCase = new OperationsTestCase<PhcrRelevantDxTestsSection>(
+			"validatePhcrRelevantDxTestsSectionTitle",
+			operationsForOCL.getOCLValue("VALIDATE_PHCR_RELEVANT_DX_TESTS_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
 
-      @Override
-      protected void updateToFail(PhcrRelevantDxTestsSection target) {
+			@Override
+			protected void updateToFail(PhcrRelevantDxTestsSection target) {
 
-      }
+			}
 
-      @Override
-      protected void updateToPass(PhcrRelevantDxTestsSection target) {
-        target.init();
-        
-        
-        
-        
-        
+			@Override
+			protected void updateToPass(PhcrRelevantDxTestsSection target) {
+				target.init();
 
-        
-        
+				ST title = DatatypesFactory.eINSTANCE.createST("title");
+				target.setTitle(title);
 
-  
-    
-        ST  title = DatatypesFactory.eINSTANCE.createST("title");
-        target.setTitle(title );
-        
+			}
 
-  
-    
-    
-      
-        
-    
-      
-        
-      
-        
-        
-        
-        
-        
-        
-        
-      
-      
-          
-      
-        
-      }
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
 
-      @Override
-      protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-      
-      
-      
-        return PhcrRelevantDxTestsSectionOperations.validatePhcrRelevantDxTestsSectionTitle(
-          (PhcrRelevantDxTestsSection) objectToTest, diagnostician, map);
-      }
+				return PhcrRelevantDxTestsSectionOperations.validatePhcrRelevantDxTestsSectionTitle(
+					(PhcrRelevantDxTestsSection) objectToTest, diagnostician, map);
+			}
 
-    };
+		};
 
-    validatePhcrRelevantDxTestsSectionTitleTestCase.doValidationTest();
-}
+		validatePhcrRelevantDxTestsSectionTitleTestCase.doValidationTest();
+	}
 
 	/**
 	*
@@ -263,70 +158,36 @@ public void testValidatePhcrRelevantDxTestsSectionCodeP() {
 	*/
 	@Test
 	public void testValidatePhcrRelevantDxTestsSectionText() {
-      OperationsTestCase<PhcrRelevantDxTestsSection> validatePhcrRelevantDxTestsSectionTextTestCase = new OperationsTestCase<PhcrRelevantDxTestsSection>(
-      "validatePhcrRelevantDxTestsSectionText",
-      operationsForOCL.getOCLValue("VALIDATE_PHCR_RELEVANT_DX_TESTS_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP")
-      ,objectFactory) {
+		OperationsTestCase<PhcrRelevantDxTestsSection> validatePhcrRelevantDxTestsSectionTextTestCase = new OperationsTestCase<PhcrRelevantDxTestsSection>(
+			"validatePhcrRelevantDxTestsSectionText",
+			operationsForOCL.getOCLValue("VALIDATE_PHCR_RELEVANT_DX_TESTS_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
 
-      @Override
-      protected void updateToFail(PhcrRelevantDxTestsSection target) {
+			@Override
+			protected void updateToFail(PhcrRelevantDxTestsSection target) {
 
-      }
+			}
 
-      @Override
-      protected void updateToPass(PhcrRelevantDxTestsSection target) {
-        target.init();
-        
-        
-        
-        
-        
+			@Override
+			protected void updateToPass(PhcrRelevantDxTestsSection target) {
+				target.init();
 
-        
-        
+				StrucDocText text = CDAFactory.eINSTANCE.createStrucDocText();
+				target.setText(text);
 
-  
-      
+			}
 
-  
-    
-        StrucDocText text = CDAFactory.eINSTANCE.createStrucDocText();
-        target.setText(text );
-      
-    
-      
-        
-    
-      
-        
-      
-        
-        
-        
-        
-        
-        
-        
-      
-      
-          
-      
-        
-      }
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
 
-      @Override
-      protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-      
-      
-      
-        return PhcrRelevantDxTestsSectionOperations.validatePhcrRelevantDxTestsSectionText(
-          (PhcrRelevantDxTestsSection) objectToTest, diagnostician, map);
-      }
+				return PhcrRelevantDxTestsSectionOperations.validatePhcrRelevantDxTestsSectionText(
+					(PhcrRelevantDxTestsSection) objectToTest, diagnostician, map);
+			}
 
-    };
+		};
 
-    validatePhcrRelevantDxTestsSectionTextTestCase.doValidationTest();
-}
+		validatePhcrRelevantDxTestsSectionTextTestCase.doValidationTest();
+	}
 
 	/**
 	*
@@ -334,67 +195,33 @@ public void testValidatePhcrRelevantDxTestsSectionCodeP() {
 	*/
 	@Test
 	public void testValidatePhcrRelevantDxTestsSectionResultOrganizer() {
-      OperationsTestCase<PhcrRelevantDxTestsSection> validatePhcrRelevantDxTestsSectionResultOrganizerTestCase = new OperationsTestCase<PhcrRelevantDxTestsSection>(
-      "validatePhcrRelevantDxTestsSectionResultOrganizer",
-      operationsForOCL.getOCLValue("VALIDATE_PHCR_RELEVANT_DX_TESTS_SECTION_RESULT_ORGANIZER__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP")
-      ,objectFactory) {
+		OperationsTestCase<PhcrRelevantDxTestsSection> validatePhcrRelevantDxTestsSectionResultOrganizerTestCase = new OperationsTestCase<PhcrRelevantDxTestsSection>(
+			"validatePhcrRelevantDxTestsSectionResultOrganizer",
+			operationsForOCL.getOCLValue("VALIDATE_PHCR_RELEVANT_DX_TESTS_SECTION_RESULT_ORGANIZER__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
 
-      @Override
-      protected void updateToFail(PhcrRelevantDxTestsSection target) {
+			@Override
+			protected void updateToFail(PhcrRelevantDxTestsSection target) {
 
-      }
+			}
 
-      @Override
-      protected void updateToPass(PhcrRelevantDxTestsSection target) {
-        target.init();
-        
-        
-        
-        
-        
+			@Override
+			protected void updateToPass(PhcrRelevantDxTestsSection target) {
+				target.init();
 
-        
-        
+			}
 
-  
-      
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
 
-  
-    
-    
-      
-        
-    
-      
-        
-      
-        
-        
-        
-        
-        
-        
-        
-      
-      
-          
-      
-        
-      }
+				return PhcrRelevantDxTestsSectionOperations.validatePhcrRelevantDxTestsSectionResultOrganizer(
+					(PhcrRelevantDxTestsSection) objectToTest, diagnostician, map);
+			}
 
-      @Override
-      protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-      
-      
-      
-        return PhcrRelevantDxTestsSectionOperations.validatePhcrRelevantDxTestsSectionResultOrganizer(
-          (PhcrRelevantDxTestsSection) objectToTest, diagnostician, map);
-      }
+		};
 
-    };
-
-    validatePhcrRelevantDxTestsSectionResultOrganizerTestCase.doValidationTest();
-}
+		validatePhcrRelevantDxTestsSectionResultOrganizerTestCase.doValidationTest();
+	}
 
 	/**
 	*
@@ -402,67 +229,33 @@ public void testValidatePhcrRelevantDxTestsSectionCodeP() {
 	*/
 	@Test
 	public void testValidatePhcrRelevantDxTestsSectionResultObservation() {
-      OperationsTestCase<PhcrRelevantDxTestsSection> validatePhcrRelevantDxTestsSectionResultObservationTestCase = new OperationsTestCase<PhcrRelevantDxTestsSection>(
-      "validatePhcrRelevantDxTestsSectionResultObservation",
-      operationsForOCL.getOCLValue("VALIDATE_PHCR_RELEVANT_DX_TESTS_SECTION_RESULT_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP")
-      ,objectFactory) {
+		OperationsTestCase<PhcrRelevantDxTestsSection> validatePhcrRelevantDxTestsSectionResultObservationTestCase = new OperationsTestCase<PhcrRelevantDxTestsSection>(
+			"validatePhcrRelevantDxTestsSectionResultObservation",
+			operationsForOCL.getOCLValue("VALIDATE_PHCR_RELEVANT_DX_TESTS_SECTION_RESULT_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
 
-      @Override
-      protected void updateToFail(PhcrRelevantDxTestsSection target) {
+			@Override
+			protected void updateToFail(PhcrRelevantDxTestsSection target) {
 
-      }
+			}
 
-      @Override
-      protected void updateToPass(PhcrRelevantDxTestsSection target) {
-        target.init();
-        
-        
-        
-        
-        
+			@Override
+			protected void updateToPass(PhcrRelevantDxTestsSection target) {
+				target.init();
 
-        
-        
+			}
 
-  
-      
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
 
-  
-    
-    
-      
-        
-    
-      
-        
-      
-        
-        
-        
-        
-        
-        
-        
-      
-      
-          
-      
-        
-      }
+				return PhcrRelevantDxTestsSectionOperations.validatePhcrRelevantDxTestsSectionResultObservation(
+					(PhcrRelevantDxTestsSection) objectToTest, diagnostician, map);
+			}
 
-      @Override
-      protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-      
-      
-      
-        return PhcrRelevantDxTestsSectionOperations.validatePhcrRelevantDxTestsSectionResultObservation(
-          (PhcrRelevantDxTestsSection) objectToTest, diagnostician, map);
-      }
+		};
 
-    };
-
-    validatePhcrRelevantDxTestsSectionResultObservationTestCase.doValidationTest();
-}
+		validatePhcrRelevantDxTestsSectionResultObservationTestCase.doValidationTest();
+	}
 
 	/**
 	*
@@ -470,67 +263,33 @@ public void testValidatePhcrRelevantDxTestsSectionCodeP() {
 	*/
 	@Test
 	public void testValidatePhcrRelevantDxTestsSectionImagingObservation() {
-      OperationsTestCase<PhcrRelevantDxTestsSection> validatePhcrRelevantDxTestsSectionImagingObservationTestCase = new OperationsTestCase<PhcrRelevantDxTestsSection>(
-      "validatePhcrRelevantDxTestsSectionImagingObservation",
-      operationsForOCL.getOCLValue("VALIDATE_PHCR_RELEVANT_DX_TESTS_SECTION_IMAGING_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP")
-      ,objectFactory) {
+		OperationsTestCase<PhcrRelevantDxTestsSection> validatePhcrRelevantDxTestsSectionImagingObservationTestCase = new OperationsTestCase<PhcrRelevantDxTestsSection>(
+			"validatePhcrRelevantDxTestsSectionImagingObservation",
+			operationsForOCL.getOCLValue("VALIDATE_PHCR_RELEVANT_DX_TESTS_SECTION_IMAGING_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
 
-      @Override
-      protected void updateToFail(PhcrRelevantDxTestsSection target) {
+			@Override
+			protected void updateToFail(PhcrRelevantDxTestsSection target) {
 
-      }
+			}
 
-      @Override
-      protected void updateToPass(PhcrRelevantDxTestsSection target) {
-        target.init();
-        
-        
-        
-        
-        
+			@Override
+			protected void updateToPass(PhcrRelevantDxTestsSection target) {
+				target.init();
 
-        
-        
+			}
 
-  
-      
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
 
-  
-    
-    
-      
-        
-    
-      
-        
-      
-        
-        
-        
-        
-        
-        
-        
-      
-      
-          
-      
-        
-      }
+				return PhcrRelevantDxTestsSectionOperations.validatePhcrRelevantDxTestsSectionImagingObservation(
+					(PhcrRelevantDxTestsSection) objectToTest, diagnostician, map);
+			}
 
-      @Override
-      protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-      
-      
-      
-        return PhcrRelevantDxTestsSectionOperations.validatePhcrRelevantDxTestsSectionImagingObservation(
-          (PhcrRelevantDxTestsSection) objectToTest, diagnostician, map);
-      }
+		};
 
-    };
-
-    validatePhcrRelevantDxTestsSectionImagingObservationTestCase.doValidationTest();
-}
+		validatePhcrRelevantDxTestsSectionImagingObservationTestCase.doValidationTest();
+	}
 
 	/**
 	*
@@ -539,13 +298,10 @@ public void testValidatePhcrRelevantDxTestsSectionCodeP() {
 	@Test
 	public void testGetPHCRResultOrganizers() {
 
+		PhcrRelevantDxTestsSection target = objectFactory.create();
+		target.getPHCRResultOrganizers();
 
-PhcrRelevantDxTestsSection target = objectFactory.create();
-target.getPHCRResultOrganizers();
-
-
-
-}
+	}
 
 	/**
 	*
@@ -554,13 +310,10 @@ target.getPHCRResultOrganizers();
 	@Test
 	public void testGetResultObservations() {
 
+		PhcrRelevantDxTestsSection target = objectFactory.create();
+		target.getResultObservations();
 
-PhcrRelevantDxTestsSection target = objectFactory.create();
-target.getResultObservations();
-
-
-
-}
+	}
 
 	/**
 	*
@@ -569,13 +322,10 @@ target.getResultObservations();
 	@Test
 	public void testGetImagingObservations() {
 
+		PhcrRelevantDxTestsSection target = objectFactory.create();
+		target.getImagingObservations();
 
-PhcrRelevantDxTestsSection target = objectFactory.create();
-target.getImagingObservations();
-
-
-
-}
+	}
 
 	/**
 	*
@@ -583,67 +333,33 @@ target.getImagingObservations();
 	*/
 	@Test
 	public void testValidateResultsSectionTemplateId() {
-      OperationsTestCase<PhcrRelevantDxTestsSection> validateResultsSectionTemplateIdTestCase = new OperationsTestCase<PhcrRelevantDxTestsSection>(
-      "validateResultsSectionTemplateId",
-      operationsForOCL.getOCLValue("VALIDATE_RESULTS_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP")
-      ,objectFactory) {
+		OperationsTestCase<PhcrRelevantDxTestsSection> validateResultsSectionTemplateIdTestCase = new OperationsTestCase<PhcrRelevantDxTestsSection>(
+			"validateResultsSectionTemplateId",
+			operationsForOCL.getOCLValue("VALIDATE_RESULTS_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
 
-      @Override
-      protected void updateToFail(PhcrRelevantDxTestsSection target) {
+			@Override
+			protected void updateToFail(PhcrRelevantDxTestsSection target) {
 
-      }
+			}
 
-      @Override
-      protected void updateToPass(PhcrRelevantDxTestsSection target) {
-        target.init();
-        
-        
-        
-        
-        
+			@Override
+			protected void updateToPass(PhcrRelevantDxTestsSection target) {
+				target.init();
 
-        
-        
+			}
 
-  
-      
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
 
-  
-    
-    
-      
-        
-    
-      
-        
-      
-        
-        
-        
-        
-        
-        
-        
-      
-      
-          
-      
-        
-      }
+				return PhcrRelevantDxTestsSectionOperations.validateResultsSectionTemplateId(
+					(PhcrRelevantDxTestsSection) objectToTest, diagnostician, map);
+			}
 
-      @Override
-      protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-      
-      
-      
-        return PhcrRelevantDxTestsSectionOperations.validateResultsSectionTemplateId(
-          (PhcrRelevantDxTestsSection) objectToTest, diagnostician, map);
-      }
+		};
 
-    };
-
-    validateResultsSectionTemplateIdTestCase.doValidationTest();
-}
+		validateResultsSectionTemplateIdTestCase.doValidationTest();
+	}
 
 	/**
 	*
@@ -698,17 +414,17 @@ target.getImagingObservations();
 	*/
 	@Test
 	public void testConstructor() {
-          @SuppressWarnings("unused")
-      ConstructorTestClass constructorTestClass = new ConstructorTestClass();		
-  } // testConstructor
+		@SuppressWarnings("unused")
+		ConstructorTestClass constructorTestClass = new ConstructorTestClass();
+	} // testConstructor
 
 	/**
 	*
 	* @generated
 	*/
 	@Override
-	protected EObject getObjectToTest() {		
-    return null;
-  }
+	protected EObject getObjectToTest() {
+		return null;
+	}
 
 } // PhcrRelevantDxTestsSectionOperations

@@ -48,209 +48,104 @@ public class ResultObservationTest extends CDAValidationTest {
 	*/
 	@Test
 	public void testValidatePHCRResultObservationClassCode() {
-      OperationsTestCase<ResultObservation> validatePHCRResultObservationClassCodeTestCase = new OperationsTestCase<ResultObservation>(
-      "validatePHCRResultObservationClassCode",
-      operationsForOCL.getOCLValue("VALIDATE_PHCR_RESULT_OBSERVATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP")
-      ,objectFactory) {
+		OperationsTestCase<ResultObservation> validatePHCRResultObservationClassCodeTestCase = new OperationsTestCase<ResultObservation>(
+			"validatePHCRResultObservationClassCode",
+			operationsForOCL.getOCLValue("VALIDATE_PHCR_RESULT_OBSERVATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
 
-      @Override
-      protected void updateToFail(ResultObservation target) {
+			@Override
+			protected void updateToFail(ResultObservation target) {
 
-      }
+			}
 
-      @Override
-      protected void updateToPass(ResultObservation target) {
-        target.init();
-        
-        
-        
-        
-        
+			@Override
+			protected void updateToPass(ResultObservation target) {
+				target.init();
 
-        
-        
+			}
 
-  
-      
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
 
-  
-    
-    
-      
-        
-    
-      
-        
-      
-        
-        
-        
-        
-        
-        
-        
-      
-      
-          
-      
-        
-      }
+				return ResultObservationOperations.validatePHCRResultObservationClassCode(
+					(ResultObservation) objectToTest, diagnostician, map);
+			}
 
-      @Override
-      protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-      
-      
-      
-        return ResultObservationOperations.validatePHCRResultObservationClassCode(
-          (ResultObservation) objectToTest, diagnostician, map);
-      }
+		};
 
-    };
-
-    validatePHCRResultObservationClassCodeTestCase.doValidationTest();
-}
+		validatePHCRResultObservationClassCodeTestCase.doValidationTest();
+	}
 
 	/**
-*
-* @generated
-*/
-@Test
+	*
+	* @generated
+	*/
+	@Test
+	public void testValidatePHCRResultObservationStatusCodeP() {
+		OperationsTestCase<ResultObservation> validatePHCRResultObservationStatusCodePTestCase = new OperationsTestCase<ResultObservation>(
+			"validatePHCRResultObservationStatusCodeP",
+			operationsForOCL.getOCLValue("VALIDATE_PHCR_RESULT_OBSERVATION_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
 
- 
-                  
-public void testValidatePHCRResultObservationStatusCodeP() {
-      OperationsTestCase<ResultObservation> validatePHCRResultObservationStatusCodePTestCase = new OperationsTestCase<ResultObservation>(
-      "validatePHCRResultObservationStatusCodeP",
-      operationsForOCL.getOCLValue("VALIDATE_PHCR_RESULT_OBSERVATION_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP")
-      ,objectFactory) {
+			@Override
+			protected void updateToFail(ResultObservation target) {
 
-      @Override
-      protected void updateToFail(ResultObservation target) {
+			}
 
-      }
+			@Override
+			protected void updateToPass(ResultObservation target) {
+				target.init();
 
-      @Override
-      protected void updateToPass(ResultObservation target) {
-        target.init();
-        
-        
-        
-        
-        
+			}
 
-        
-        
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
 
-  
-      
+				return ResultObservationOperations.validatePHCRResultObservationStatusCodeP(
+					(ResultObservation) objectToTest, diagnostician, map);
+			}
 
-  
-    
-    
-      
-        
-    
-      
-        
-      
-        
-        
-        
-        
-        
-        
-        
-      
-      
-          
-      
-        
-      }
+		};
 
-      @Override
-      protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-      
-      
-      
-        return ResultObservationOperations.validatePHCRResultObservationStatusCodeP(
-          (ResultObservation) objectToTest, diagnostician, map);
-      }
+		validatePHCRResultObservationStatusCodePTestCase.doValidationTest();
+	}
 
-    };
-
-    validatePHCRResultObservationStatusCodePTestCase.doValidationTest();
-}
-
-  /**
+	/**
 	*
 	* @generated
 	*/
 	@Test
 	public void testValidatePHCRResultObservationStatusCode() {
-      OperationsTestCase<ResultObservation> validatePHCRResultObservationStatusCodeTestCase = new OperationsTestCase<ResultObservation>(
-      "validatePHCRResultObservationStatusCode",
-      operationsForOCL.getOCLValue("VALIDATE_PHCR_RESULT_OBSERVATION_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP")
-      ,objectFactory) {
+		OperationsTestCase<ResultObservation> validatePHCRResultObservationStatusCodeTestCase = new OperationsTestCase<ResultObservation>(
+			"validatePHCRResultObservationStatusCode",
+			operationsForOCL.getOCLValue("VALIDATE_PHCR_RESULT_OBSERVATION_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
 
-      @Override
-      protected void updateToFail(ResultObservation target) {
+			@Override
+			protected void updateToFail(ResultObservation target) {
 
-      }
+			}
 
-      @Override
-      protected void updateToPass(ResultObservation target) {
-        target.init();
-        
-        
-        
-        
-      
-        CS cs = DatatypesFactory.eINSTANCE.createCS("completed");
-        target.setStatusCode(cs);
-        
+			@Override
+			protected void updateToPass(ResultObservation target) {
+				target.init();
 
-        
-        
+				CS cs = DatatypesFactory.eINSTANCE.createCS("completed");
+				target.setStatusCode(cs);
 
-  
-      
+			}
 
-  
-    
-    
-      
-        
-    
-      
-        
-      
-        
-        
-        
-        
-        
-        
-        
-      
-      
-          
-      
-        
-      }
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
 
-      @Override
-      protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-      
-      
-      
-        return ResultObservationOperations.validatePHCRResultObservationStatusCode(
-          (ResultObservation) objectToTest, diagnostician, map);
-      }
+				return ResultObservationOperations.validatePHCRResultObservationStatusCode(
+					(ResultObservation) objectToTest, diagnostician, map);
+			}
 
-    };
+		};
 
-    validatePHCRResultObservationStatusCodeTestCase.doValidationTest();
-}
+		validatePHCRResultObservationStatusCodeTestCase.doValidationTest();
+	}
 
 	/**
 	*
@@ -258,67 +153,33 @@ public void testValidatePHCRResultObservationStatusCodeP() {
 	*/
 	@Test
 	public void testValidatePHCRResultObservationSpecimenCollectionProcedure() {
-      OperationsTestCase<ResultObservation> validatePHCRResultObservationSpecimenCollectionProcedureTestCase = new OperationsTestCase<ResultObservation>(
-      "validatePHCRResultObservationSpecimenCollectionProcedure",
-      operationsForOCL.getOCLValue("VALIDATE_PHCR_RESULT_OBSERVATION_SPECIMEN_COLLECTION_PROCEDURE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP")
-      ,objectFactory) {
+		OperationsTestCase<ResultObservation> validatePHCRResultObservationSpecimenCollectionProcedureTestCase = new OperationsTestCase<ResultObservation>(
+			"validatePHCRResultObservationSpecimenCollectionProcedure",
+			operationsForOCL.getOCLValue("VALIDATE_PHCR_RESULT_OBSERVATION_SPECIMEN_COLLECTION_PROCEDURE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
 
-      @Override
-      protected void updateToFail(ResultObservation target) {
+			@Override
+			protected void updateToFail(ResultObservation target) {
 
-      }
+			}
 
-      @Override
-      protected void updateToPass(ResultObservation target) {
-        target.init();
-        
-        
-        
-        
-        
+			@Override
+			protected void updateToPass(ResultObservation target) {
+				target.init();
 
-        
-        
+			}
 
-  
-      
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
 
-  
-    
-    
-      
-        
-    
-      
-        
-      
-        
-        
-        
-        
-        
-        
-        
-      
-      
-          
-      
-        
-      }
+				return ResultObservationOperations.validatePHCRResultObservationSpecimenCollectionProcedure(
+					(ResultObservation) objectToTest, diagnostician, map);
+			}
 
-      @Override
-      protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-      
-      
-      
-        return ResultObservationOperations.validatePHCRResultObservationSpecimenCollectionProcedure(
-          (ResultObservation) objectToTest, diagnostician, map);
-      }
+		};
 
-    };
-
-    validatePHCRResultObservationSpecimenCollectionProcedureTestCase.doValidationTest();
-}
+		validatePHCRResultObservationSpecimenCollectionProcedureTestCase.doValidationTest();
+	}
 
 	/**
 	*
@@ -326,67 +187,33 @@ public void testValidatePHCRResultObservationStatusCodeP() {
 	*/
 	@Test
 	public void testValidatePHCRResultObservationSusceptibilityResult() {
-      OperationsTestCase<ResultObservation> validatePHCRResultObservationSusceptibilityResultTestCase = new OperationsTestCase<ResultObservation>(
-      "validatePHCRResultObservationSusceptibilityResult",
-      operationsForOCL.getOCLValue("VALIDATE_PHCR_RESULT_OBSERVATION_SUSCEPTIBILITY_RESULT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP")
-      ,objectFactory) {
+		OperationsTestCase<ResultObservation> validatePHCRResultObservationSusceptibilityResultTestCase = new OperationsTestCase<ResultObservation>(
+			"validatePHCRResultObservationSusceptibilityResult",
+			operationsForOCL.getOCLValue("VALIDATE_PHCR_RESULT_OBSERVATION_SUSCEPTIBILITY_RESULT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
 
-      @Override
-      protected void updateToFail(ResultObservation target) {
+			@Override
+			protected void updateToFail(ResultObservation target) {
 
-      }
+			}
 
-      @Override
-      protected void updateToPass(ResultObservation target) {
-        target.init();
-        
-        
-        
-        
-        
+			@Override
+			protected void updateToPass(ResultObservation target) {
+				target.init();
 
-        
-        
+			}
 
-  
-      
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
 
-  
-    
-    
-      
-        
-    
-      
-        
-      
-        
-        
-        
-        
-        
-        
-        
-      
-      
-          
-      
-        
-      }
+				return ResultObservationOperations.validatePHCRResultObservationSusceptibilityResult(
+					(ResultObservation) objectToTest, diagnostician, map);
+			}
 
-      @Override
-      protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-      
-      
-      
-        return ResultObservationOperations.validatePHCRResultObservationSusceptibilityResult(
-          (ResultObservation) objectToTest, diagnostician, map);
-      }
+		};
 
-    };
-
-    validatePHCRResultObservationSusceptibilityResultTestCase.doValidationTest();
-}
+		validatePHCRResultObservationSusceptibilityResultTestCase.doValidationTest();
+	}
 
 	/**
 	*
@@ -395,13 +222,10 @@ public void testValidatePHCRResultObservationStatusCodeP() {
 	@Test
 	public void testGetSpecimenCollectionProcedures() {
 
+		ResultObservation target = objectFactory.create();
+		target.getSpecimenCollectionProcedures();
 
-ResultObservation target = objectFactory.create();
-target.getSpecimenCollectionProcedures();
-
-
-
-}
+	}
 
 	/**
 	*
@@ -410,13 +234,10 @@ target.getSpecimenCollectionProcedures();
 	@Test
 	public void testGetSusceptibilityResults() {
 
+		ResultObservation target = objectFactory.create();
+		target.getSusceptibilityResults();
 
-ResultObservation target = objectFactory.create();
-target.getSusceptibilityResults();
-
-
-
-}
+	}
 
 	/**
 	*
@@ -424,67 +245,33 @@ target.getSusceptibilityResults();
 	*/
 	@Test
 	public void testValidateResultObservationTemplateId() {
-      OperationsTestCase<ResultObservation> validateResultObservationTemplateIdTestCase = new OperationsTestCase<ResultObservation>(
-      "validateResultObservationTemplateId",
-      operationsForOCL.getOCLValue("VALIDATE_RESULT_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP")
-      ,objectFactory) {
+		OperationsTestCase<ResultObservation> validateResultObservationTemplateIdTestCase = new OperationsTestCase<ResultObservation>(
+			"validateResultObservationTemplateId",
+			operationsForOCL.getOCLValue("VALIDATE_RESULT_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
 
-      @Override
-      protected void updateToFail(ResultObservation target) {
+			@Override
+			protected void updateToFail(ResultObservation target) {
 
-      }
+			}
 
-      @Override
-      protected void updateToPass(ResultObservation target) {
-        target.init();
-        
-        
-        
-        
-        
+			@Override
+			protected void updateToPass(ResultObservation target) {
+				target.init();
 
-        
-        
+			}
 
-  
-      
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
 
-  
-    
-    
-      
-        
-    
-      
-        
-      
-        
-        
-        
-        
-        
-        
-        
-      
-      
-          
-      
-        
-      }
+				return ResultObservationOperations.validateResultObservationTemplateId(
+					(ResultObservation) objectToTest, diagnostician, map);
+			}
 
-      @Override
-      protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-      
-      
-      
-        return ResultObservationOperations.validateResultObservationTemplateId(
-          (ResultObservation) objectToTest, diagnostician, map);
-      }
+		};
 
-    };
-
-    validateResultObservationTemplateIdTestCase.doValidationTest();
-}
+		validateResultObservationTemplateIdTestCase.doValidationTest();
+	}
 
 	/**
 	*
@@ -539,17 +326,17 @@ target.getSusceptibilityResults();
 	*/
 	@Test
 	public void testConstructor() {
-          @SuppressWarnings("unused")
-      ConstructorTestClass constructorTestClass = new ConstructorTestClass();		
-  } // testConstructor
+		@SuppressWarnings("unused")
+		ConstructorTestClass constructorTestClass = new ConstructorTestClass();
+	} // testConstructor
 
 	/**
 	*
 	* @generated
 	*/
 	@Override
-	protected EObject getObjectToTest() {		
-    return null;
-  }
+	protected EObject getObjectToTest() {
+		return null;
+	}
 
 } // ResultObservationOperations

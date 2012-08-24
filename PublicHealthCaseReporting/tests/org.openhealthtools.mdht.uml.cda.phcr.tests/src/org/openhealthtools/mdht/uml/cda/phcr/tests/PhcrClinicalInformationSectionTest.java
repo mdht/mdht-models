@@ -56,67 +56,33 @@ public class PhcrClinicalInformationSectionTest extends CDAValidationTest {
 	*/
 	@Test
 	public void testValidatePhcrClinicalInformationSectionPatientConditionConstraint() {
-      OperationsTestCase<PhcrClinicalInformationSection> validatePhcrClinicalInformationSectionPatientConditionConstraintTestCase = new OperationsTestCase<PhcrClinicalInformationSection>(
-      "validatePhcrClinicalInformationSectionPatientConditionConstraint",
-      operationsForOCL.getOCLValue("VALIDATE_PHCR_CLINICAL_INFORMATION_SECTION_PATIENT_CONDITION_CONSTRAINT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP")
-      ,objectFactory) {
+		OperationsTestCase<PhcrClinicalInformationSection> validatePhcrClinicalInformationSectionPatientConditionConstraintTestCase = new OperationsTestCase<PhcrClinicalInformationSection>(
+			"validatePhcrClinicalInformationSectionPatientConditionConstraint",
+			operationsForOCL.getOCLValue("VALIDATE_PHCR_CLINICAL_INFORMATION_SECTION_PATIENT_CONDITION_CONSTRAINT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
 
-      @Override
-      protected void updateToFail(PhcrClinicalInformationSection target) {
+			@Override
+			protected void updateToFail(PhcrClinicalInformationSection target) {
 
-      }
+			}
 
-      @Override
-      protected void updateToPass(PhcrClinicalInformationSection target) {
-        target.init();
-        
-        
-        
-        
-        
+			@Override
+			protected void updateToPass(PhcrClinicalInformationSection target) {
+				target.init();
 
-        
-        
+			}
 
-  
-      
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
 
-  
-    
-    
-      
-        
-    
-      
-        
-      
-        
-        
-        
-        
-        
-        
-        
-      
-      
-          
-      
-        
-      }
+				return PhcrClinicalInformationSectionOperations.validatePhcrClinicalInformationSectionPatientConditionConstraint(
+					(PhcrClinicalInformationSection) objectToTest, diagnostician, map);
+			}
 
-      @Override
-      protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-      
-      
-      
-        return PhcrClinicalInformationSectionOperations.validatePhcrClinicalInformationSectionPatientConditionConstraint(
-          (PhcrClinicalInformationSection) objectToTest, diagnostician, map);
-      }
+		};
 
-    };
-
-    validatePhcrClinicalInformationSectionPatientConditionConstraintTestCase.doValidationTest();
-}
+		validatePhcrClinicalInformationSectionPatientConditionConstraintTestCase.doValidationTest();
+	}
 
 	/**
 	*
@@ -124,67 +90,33 @@ public class PhcrClinicalInformationSectionTest extends CDAValidationTest {
 	*/
 	@Test
 	public void testValidatePhcrClinicalInformationSectionTemplateId() {
-      OperationsTestCase<PhcrClinicalInformationSection> validatePhcrClinicalInformationSectionTemplateIdTestCase = new OperationsTestCase<PhcrClinicalInformationSection>(
-      "validatePhcrClinicalInformationSectionTemplateId",
-      operationsForOCL.getOCLValue("VALIDATE_PHCR_CLINICAL_INFORMATION_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP")
-      ,objectFactory) {
+		OperationsTestCase<PhcrClinicalInformationSection> validatePhcrClinicalInformationSectionTemplateIdTestCase = new OperationsTestCase<PhcrClinicalInformationSection>(
+			"validatePhcrClinicalInformationSectionTemplateId",
+			operationsForOCL.getOCLValue("VALIDATE_PHCR_CLINICAL_INFORMATION_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
 
-      @Override
-      protected void updateToFail(PhcrClinicalInformationSection target) {
+			@Override
+			protected void updateToFail(PhcrClinicalInformationSection target) {
 
-      }
+			}
 
-      @Override
-      protected void updateToPass(PhcrClinicalInformationSection target) {
-        target.init();
-        
-        
-        
-        
-        
+			@Override
+			protected void updateToPass(PhcrClinicalInformationSection target) {
+				target.init();
 
-        
-        
+			}
 
-  
-      
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
 
-  
-    
-    
-      
-        
-    
-      
-        
-      
-        
-        
-        
-        
-        
-        
-        
-      
-      
-          
-      
-        
-      }
+				return PhcrClinicalInformationSectionOperations.validatePhcrClinicalInformationSectionTemplateId(
+					(PhcrClinicalInformationSection) objectToTest, diagnostician, map);
+			}
 
-      @Override
-      protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-      
-      
-      
-        return PhcrClinicalInformationSectionOperations.validatePhcrClinicalInformationSectionTemplateId(
-          (PhcrClinicalInformationSection) objectToTest, diagnostician, map);
-      }
+		};
 
-    };
-
-    validatePhcrClinicalInformationSectionTemplateIdTestCase.doValidationTest();
-}
+		validatePhcrClinicalInformationSectionTemplateIdTestCase.doValidationTest();
+	}
 
 	/**
 	*
@@ -192,67 +124,33 @@ public class PhcrClinicalInformationSectionTest extends CDAValidationTest {
 	*/
 	@Test
 	public void testValidatePhcrClinicalInformationSectionCode() {
-      OperationsTestCase<PhcrClinicalInformationSection> validatePhcrClinicalInformationSectionCodeTestCase = new OperationsTestCase<PhcrClinicalInformationSection>(
-      "validatePhcrClinicalInformationSectionCode",
-      operationsForOCL.getOCLValue("VALIDATE_PHCR_CLINICAL_INFORMATION_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP")
-      ,objectFactory) {
+		OperationsTestCase<PhcrClinicalInformationSection> validatePhcrClinicalInformationSectionCodeTestCase = new OperationsTestCase<PhcrClinicalInformationSection>(
+			"validatePhcrClinicalInformationSectionCode",
+			operationsForOCL.getOCLValue("VALIDATE_PHCR_CLINICAL_INFORMATION_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
 
-      @Override
-      protected void updateToFail(PhcrClinicalInformationSection target) {
+			@Override
+			protected void updateToFail(PhcrClinicalInformationSection target) {
 
-      }
+			}
 
-      @Override
-      protected void updateToPass(PhcrClinicalInformationSection target) {
-        target.init();
-        
-        
-        
-        
-        
+			@Override
+			protected void updateToPass(PhcrClinicalInformationSection target) {
+				target.init();
 
-        
-        
+			}
 
-  
-      
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
 
-  
-    
-    
-      
-        
-    
-      
-        
-      
-        
-        
-        
-        
-        
-        
-        
-      
-      
-          
-      
-        
-      }
+				return PhcrClinicalInformationSectionOperations.validatePhcrClinicalInformationSectionCode(
+					(PhcrClinicalInformationSection) objectToTest, diagnostician, map);
+			}
 
-      @Override
-      protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-      
-      
-      
-        return PhcrClinicalInformationSectionOperations.validatePhcrClinicalInformationSectionCode(
-          (PhcrClinicalInformationSection) objectToTest, diagnostician, map);
-      }
+		};
 
-    };
-
-    validatePhcrClinicalInformationSectionCodeTestCase.doValidationTest();
-}
+		validatePhcrClinicalInformationSectionCodeTestCase.doValidationTest();
+	}
 
 	/**
 	*
@@ -260,67 +158,33 @@ public class PhcrClinicalInformationSectionTest extends CDAValidationTest {
 	*/
 	@Test
 	public void testValidatePhcrClinicalInformationSectionCodeP() {
-      OperationsTestCase<PhcrClinicalInformationSection> validatePhcrClinicalInformationSectionCodePTestCase = new OperationsTestCase<PhcrClinicalInformationSection>(
-      "validatePhcrClinicalInformationSectionCodeP",
-      operationsForOCL.getOCLValue("VALIDATE_PHCR_CLINICAL_INFORMATION_SECTION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP")
-      ,objectFactory) {
+		OperationsTestCase<PhcrClinicalInformationSection> validatePhcrClinicalInformationSectionCodePTestCase = new OperationsTestCase<PhcrClinicalInformationSection>(
+			"validatePhcrClinicalInformationSectionCodeP",
+			operationsForOCL.getOCLValue("VALIDATE_PHCR_CLINICAL_INFORMATION_SECTION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
 
-      @Override
-      protected void updateToFail(PhcrClinicalInformationSection target) {
+			@Override
+			protected void updateToFail(PhcrClinicalInformationSection target) {
 
-      }
+			}
 
-      @Override
-      protected void updateToPass(PhcrClinicalInformationSection target) {
-        target.init();
-        
-        
-        
-        
-        
+			@Override
+			protected void updateToPass(PhcrClinicalInformationSection target) {
+				target.init();
 
-        
-        
+			}
 
-  
-      
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
 
-  
-    
-    
-      
-        
-    
-      
-        
-      
-        
-        
-        
-        
-        
-        
-        
-      
-      
-          
-      
-        
-      }
+				return PhcrClinicalInformationSectionOperations.validatePhcrClinicalInformationSectionCodeP(
+					(PhcrClinicalInformationSection) objectToTest, diagnostician, map);
+			}
 
-      @Override
-      protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-      
-      
-      
-        return PhcrClinicalInformationSectionOperations.validatePhcrClinicalInformationSectionCodeP(
-          (PhcrClinicalInformationSection) objectToTest, diagnostician, map);
-      }
+		};
 
-    };
-
-    validatePhcrClinicalInformationSectionCodePTestCase.doValidationTest();
-}
+		validatePhcrClinicalInformationSectionCodePTestCase.doValidationTest();
+	}
 
 	/**
 	*
@@ -328,70 +192,36 @@ public class PhcrClinicalInformationSectionTest extends CDAValidationTest {
 	*/
 	@Test
 	public void testValidatePhcrClinicalInformationSectionTitle() {
-      OperationsTestCase<PhcrClinicalInformationSection> validatePhcrClinicalInformationSectionTitleTestCase = new OperationsTestCase<PhcrClinicalInformationSection>(
-      "validatePhcrClinicalInformationSectionTitle",
-      operationsForOCL.getOCLValue("VALIDATE_PHCR_CLINICAL_INFORMATION_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP")
-      ,objectFactory) {
+		OperationsTestCase<PhcrClinicalInformationSection> validatePhcrClinicalInformationSectionTitleTestCase = new OperationsTestCase<PhcrClinicalInformationSection>(
+			"validatePhcrClinicalInformationSectionTitle",
+			operationsForOCL.getOCLValue("VALIDATE_PHCR_CLINICAL_INFORMATION_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
 
-      @Override
-      protected void updateToFail(PhcrClinicalInformationSection target) {
+			@Override
+			protected void updateToFail(PhcrClinicalInformationSection target) {
 
-      }
+			}
 
-      @Override
-      protected void updateToPass(PhcrClinicalInformationSection target) {
-        target.init();
-        
-        
-        
-        
-        
+			@Override
+			protected void updateToPass(PhcrClinicalInformationSection target) {
+				target.init();
 
-        
-        
+				ST title = DatatypesFactory.eINSTANCE.createST("title");
+				target.setTitle(title);
 
-  
-    
-        ST  title = DatatypesFactory.eINSTANCE.createST("title");
-        target.setTitle(title );
-        
+			}
 
-  
-    
-    
-      
-        
-    
-      
-        
-      
-        
-        
-        
-        
-        
-        
-        
-      
-      
-          
-      
-        
-      }
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
 
-      @Override
-      protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-      
-      
-      
-        return PhcrClinicalInformationSectionOperations.validatePhcrClinicalInformationSectionTitle(
-          (PhcrClinicalInformationSection) objectToTest, diagnostician, map);
-      }
+				return PhcrClinicalInformationSectionOperations.validatePhcrClinicalInformationSectionTitle(
+					(PhcrClinicalInformationSection) objectToTest, diagnostician, map);
+			}
 
-    };
+		};
 
-    validatePhcrClinicalInformationSectionTitleTestCase.doValidationTest();
-}
+		validatePhcrClinicalInformationSectionTitleTestCase.doValidationTest();
+	}
 
 	/**
 	*
@@ -399,70 +229,36 @@ public class PhcrClinicalInformationSectionTest extends CDAValidationTest {
 	*/
 	@Test
 	public void testValidatePhcrClinicalInformationSectionText() {
-      OperationsTestCase<PhcrClinicalInformationSection> validatePhcrClinicalInformationSectionTextTestCase = new OperationsTestCase<PhcrClinicalInformationSection>(
-      "validatePhcrClinicalInformationSectionText",
-      operationsForOCL.getOCLValue("VALIDATE_PHCR_CLINICAL_INFORMATION_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP")
-      ,objectFactory) {
+		OperationsTestCase<PhcrClinicalInformationSection> validatePhcrClinicalInformationSectionTextTestCase = new OperationsTestCase<PhcrClinicalInformationSection>(
+			"validatePhcrClinicalInformationSectionText",
+			operationsForOCL.getOCLValue("VALIDATE_PHCR_CLINICAL_INFORMATION_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
 
-      @Override
-      protected void updateToFail(PhcrClinicalInformationSection target) {
+			@Override
+			protected void updateToFail(PhcrClinicalInformationSection target) {
 
-      }
+			}
 
-      @Override
-      protected void updateToPass(PhcrClinicalInformationSection target) {
-        target.init();
-        
-        
-        
-        
-        
+			@Override
+			protected void updateToPass(PhcrClinicalInformationSection target) {
+				target.init();
 
-        
-        
+				StrucDocText text = CDAFactory.eINSTANCE.createStrucDocText();
+				target.setText(text);
 
-  
-      
+			}
 
-  
-    
-        StrucDocText text = CDAFactory.eINSTANCE.createStrucDocText();
-        target.setText(text );
-      
-    
-      
-        
-    
-      
-        
-      
-        
-        
-        
-        
-        
-        
-        
-      
-      
-          
-      
-        
-      }
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
 
-      @Override
-      protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-      
-      
-      
-        return PhcrClinicalInformationSectionOperations.validatePhcrClinicalInformationSectionText(
-          (PhcrClinicalInformationSection) objectToTest, diagnostician, map);
-      }
+				return PhcrClinicalInformationSectionOperations.validatePhcrClinicalInformationSectionText(
+					(PhcrClinicalInformationSection) objectToTest, diagnostician, map);
+			}
 
-    };
+		};
 
-    validatePhcrClinicalInformationSectionTextTestCase.doValidationTest();
-}
+		validatePhcrClinicalInformationSectionTextTestCase.doValidationTest();
+	}
 
 	/**
 	*
@@ -470,67 +266,33 @@ public class PhcrClinicalInformationSectionTest extends CDAValidationTest {
 	*/
 	@Test
 	public void testValidatePhcrClinicalInformationSectionCaseObservation() {
-      OperationsTestCase<PhcrClinicalInformationSection> validatePhcrClinicalInformationSectionCaseObservationTestCase = new OperationsTestCase<PhcrClinicalInformationSection>(
-      "validatePhcrClinicalInformationSectionCaseObservation",
-      operationsForOCL.getOCLValue("VALIDATE_PHCR_CLINICAL_INFORMATION_SECTION_CASE_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP")
-      ,objectFactory) {
+		OperationsTestCase<PhcrClinicalInformationSection> validatePhcrClinicalInformationSectionCaseObservationTestCase = new OperationsTestCase<PhcrClinicalInformationSection>(
+			"validatePhcrClinicalInformationSectionCaseObservation",
+			operationsForOCL.getOCLValue("VALIDATE_PHCR_CLINICAL_INFORMATION_SECTION_CASE_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
 
-      @Override
-      protected void updateToFail(PhcrClinicalInformationSection target) {
+			@Override
+			protected void updateToFail(PhcrClinicalInformationSection target) {
 
-      }
+			}
 
-      @Override
-      protected void updateToPass(PhcrClinicalInformationSection target) {
-        target.init();
-        
-        
-        
-        
-        
+			@Override
+			protected void updateToPass(PhcrClinicalInformationSection target) {
+				target.init();
 
-        
-        
+			}
 
-  
-      
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
 
-  
-    
-    
-      
-        
-    
-      
-        
-      
-        
-        
-        
-        
-        
-        
-        
-      
-      
-          
-      
-        
-      }
+				return PhcrClinicalInformationSectionOperations.validatePhcrClinicalInformationSectionCaseObservation(
+					(PhcrClinicalInformationSection) objectToTest, diagnostician, map);
+			}
 
-      @Override
-      protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-      
-      
-      
-        return PhcrClinicalInformationSectionOperations.validatePhcrClinicalInformationSectionCaseObservation(
-          (PhcrClinicalInformationSection) objectToTest, diagnostician, map);
-      }
+		};
 
-    };
-
-    validatePhcrClinicalInformationSectionCaseObservationTestCase.doValidationTest();
-}
+		validatePhcrClinicalInformationSectionCaseObservationTestCase.doValidationTest();
+	}
 
 	/**
 	*
@@ -538,67 +300,33 @@ public class PhcrClinicalInformationSectionTest extends CDAValidationTest {
 	*/
 	@Test
 	public void testValidatePhcrClinicalInformationSectionPatientConditionAliveObservation() {
-      OperationsTestCase<PhcrClinicalInformationSection> validatePhcrClinicalInformationSectionPatientConditionAliveObservationTestCase = new OperationsTestCase<PhcrClinicalInformationSection>(
-      "validatePhcrClinicalInformationSectionPatientConditionAliveObservation",
-      operationsForOCL.getOCLValue("VALIDATE_PHCR_CLINICAL_INFORMATION_SECTION_PATIENT_CONDITION_ALIVE_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP")
-      ,objectFactory) {
+		OperationsTestCase<PhcrClinicalInformationSection> validatePhcrClinicalInformationSectionPatientConditionAliveObservationTestCase = new OperationsTestCase<PhcrClinicalInformationSection>(
+			"validatePhcrClinicalInformationSectionPatientConditionAliveObservation",
+			operationsForOCL.getOCLValue("VALIDATE_PHCR_CLINICAL_INFORMATION_SECTION_PATIENT_CONDITION_ALIVE_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
 
-      @Override
-      protected void updateToFail(PhcrClinicalInformationSection target) {
+			@Override
+			protected void updateToFail(PhcrClinicalInformationSection target) {
 
-      }
+			}
 
-      @Override
-      protected void updateToPass(PhcrClinicalInformationSection target) {
-        target.init();
-        
-        
-        
-        
-        
+			@Override
+			protected void updateToPass(PhcrClinicalInformationSection target) {
+				target.init();
 
-        
-        
+			}
 
-  
-      
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
 
-  
-    
-    
-      
-        
-    
-      
-        
-      
-        
-        
-        
-        
-        
-        
-        
-      
-      
-          
-      
-        
-      }
+				return PhcrClinicalInformationSectionOperations.validatePhcrClinicalInformationSectionPatientConditionAliveObservation(
+					(PhcrClinicalInformationSection) objectToTest, diagnostician, map);
+			}
 
-      @Override
-      protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-      
-      
-      
-        return PhcrClinicalInformationSectionOperations.validatePhcrClinicalInformationSectionPatientConditionAliveObservation(
-          (PhcrClinicalInformationSection) objectToTest, diagnostician, map);
-      }
+		};
 
-    };
-
-    validatePhcrClinicalInformationSectionPatientConditionAliveObservationTestCase.doValidationTest();
-}
+		validatePhcrClinicalInformationSectionPatientConditionAliveObservationTestCase.doValidationTest();
+	}
 
 	/**
 	*
@@ -606,67 +334,33 @@ public class PhcrClinicalInformationSectionTest extends CDAValidationTest {
 	*/
 	@Test
 	public void testValidatePhcrClinicalInformationSectionPatientConditionDeceasedObservation() {
-      OperationsTestCase<PhcrClinicalInformationSection> validatePhcrClinicalInformationSectionPatientConditionDeceasedObservationTestCase = new OperationsTestCase<PhcrClinicalInformationSection>(
-      "validatePhcrClinicalInformationSectionPatientConditionDeceasedObservation",
-      operationsForOCL.getOCLValue("VALIDATE_PHCR_CLINICAL_INFORMATION_SECTION_PATIENT_CONDITION_DECEASED_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP")
-      ,objectFactory) {
+		OperationsTestCase<PhcrClinicalInformationSection> validatePhcrClinicalInformationSectionPatientConditionDeceasedObservationTestCase = new OperationsTestCase<PhcrClinicalInformationSection>(
+			"validatePhcrClinicalInformationSectionPatientConditionDeceasedObservation",
+			operationsForOCL.getOCLValue("VALIDATE_PHCR_CLINICAL_INFORMATION_SECTION_PATIENT_CONDITION_DECEASED_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
 
-      @Override
-      protected void updateToFail(PhcrClinicalInformationSection target) {
+			@Override
+			protected void updateToFail(PhcrClinicalInformationSection target) {
 
-      }
+			}
 
-      @Override
-      protected void updateToPass(PhcrClinicalInformationSection target) {
-        target.init();
-        
-        
-        
-        
-        
+			@Override
+			protected void updateToPass(PhcrClinicalInformationSection target) {
+				target.init();
 
-        
-        
+			}
 
-  
-      
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
 
-  
-    
-    
-      
-        
-    
-      
-        
-      
-        
-        
-        
-        
-        
-        
-        
-      
-      
-          
-      
-        
-      }
+				return PhcrClinicalInformationSectionOperations.validatePhcrClinicalInformationSectionPatientConditionDeceasedObservation(
+					(PhcrClinicalInformationSection) objectToTest, diagnostician, map);
+			}
 
-      @Override
-      protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-      
-      
-      
-        return PhcrClinicalInformationSectionOperations.validatePhcrClinicalInformationSectionPatientConditionDeceasedObservation(
-          (PhcrClinicalInformationSection) objectToTest, diagnostician, map);
-      }
+		};
 
-    };
-
-    validatePhcrClinicalInformationSectionPatientConditionDeceasedObservationTestCase.doValidationTest();
-}
+		validatePhcrClinicalInformationSectionPatientConditionDeceasedObservationTestCase.doValidationTest();
+	}
 
 	/**
 	*
@@ -674,67 +368,33 @@ public class PhcrClinicalInformationSectionTest extends CDAValidationTest {
 	*/
 	@Test
 	public void testValidatePhcrClinicalInformationSectionPhcrRelevantMedicalConditionHistoryObservation() {
-      OperationsTestCase<PhcrClinicalInformationSection> validatePhcrClinicalInformationSectionPhcrRelevantMedicalConditionHistoryObservationTestCase = new OperationsTestCase<PhcrClinicalInformationSection>(
-      "validatePhcrClinicalInformationSectionPhcrRelevantMedicalConditionHistoryObservation",
-      operationsForOCL.getOCLValue("VALIDATE_PHCR_CLINICAL_INFORMATION_SECTION_PHCR_RELEVANT_MEDICAL_CONDITION_HISTORY_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP")
-      ,objectFactory) {
+		OperationsTestCase<PhcrClinicalInformationSection> validatePhcrClinicalInformationSectionPhcrRelevantMedicalConditionHistoryObservationTestCase = new OperationsTestCase<PhcrClinicalInformationSection>(
+			"validatePhcrClinicalInformationSectionPhcrRelevantMedicalConditionHistoryObservation",
+			operationsForOCL.getOCLValue("VALIDATE_PHCR_CLINICAL_INFORMATION_SECTION_PHCR_RELEVANT_MEDICAL_CONDITION_HISTORY_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
 
-      @Override
-      protected void updateToFail(PhcrClinicalInformationSection target) {
+			@Override
+			protected void updateToFail(PhcrClinicalInformationSection target) {
 
-      }
+			}
 
-      @Override
-      protected void updateToPass(PhcrClinicalInformationSection target) {
-        target.init();
-        
-        
-        
-        
-        
+			@Override
+			protected void updateToPass(PhcrClinicalInformationSection target) {
+				target.init();
 
-        
-        
+			}
 
-  
-      
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
 
-  
-    
-    
-      
-        
-    
-      
-        
-      
-        
-        
-        
-        
-        
-        
-        
-      
-      
-          
-      
-        
-      }
+				return PhcrClinicalInformationSectionOperations.validatePhcrClinicalInformationSectionPhcrRelevantMedicalConditionHistoryObservation(
+					(PhcrClinicalInformationSection) objectToTest, diagnostician, map);
+			}
 
-      @Override
-      protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-      
-      
-      
-        return PhcrClinicalInformationSectionOperations.validatePhcrClinicalInformationSectionPhcrRelevantMedicalConditionHistoryObservation(
-          (PhcrClinicalInformationSection) objectToTest, diagnostician, map);
-      }
+		};
 
-    };
-
-    validatePhcrClinicalInformationSectionPhcrRelevantMedicalConditionHistoryObservationTestCase.doValidationTest();
-}
+		validatePhcrClinicalInformationSectionPhcrRelevantMedicalConditionHistoryObservationTestCase.doValidationTest();
+	}
 
 	/**
 	*
@@ -743,13 +403,10 @@ public class PhcrClinicalInformationSectionTest extends CDAValidationTest {
 	@Test
 	public void testGetCaseObservation() {
 
+		PhcrClinicalInformationSection target = objectFactory.create();
+		target.getCaseObservation();
 
-PhcrClinicalInformationSection target = objectFactory.create();
-target.getCaseObservation();
-
-
-
-}
+	}
 
 	/**
 	*
@@ -758,13 +415,10 @@ target.getCaseObservation();
 	@Test
 	public void testGetPatientConditionAliveObservation() {
 
+		PhcrClinicalInformationSection target = objectFactory.create();
+		target.getPatientConditionAliveObservation();
 
-PhcrClinicalInformationSection target = objectFactory.create();
-target.getPatientConditionAliveObservation();
-
-
-
-}
+	}
 
 	/**
 	*
@@ -773,13 +427,10 @@ target.getPatientConditionAliveObservation();
 	@Test
 	public void testGetPatientConditionDeceasedObservation() {
 
+		PhcrClinicalInformationSection target = objectFactory.create();
+		target.getPatientConditionDeceasedObservation();
 
-PhcrClinicalInformationSection target = objectFactory.create();
-target.getPatientConditionDeceasedObservation();
-
-
-
-}
+	}
 
 	/**
 	*
@@ -788,13 +439,10 @@ target.getPatientConditionDeceasedObservation();
 	@Test
 	public void testGetPhcrRelevantMedicalConditionHistoryObservations() {
 
+		PhcrClinicalInformationSection target = objectFactory.create();
+		target.getPhcrRelevantMedicalConditionHistoryObservations();
 
-PhcrClinicalInformationSection target = objectFactory.create();
-target.getPhcrRelevantMedicalConditionHistoryObservations();
-
-
-
-}
+	}
 
 	/**
 	*
@@ -849,17 +497,17 @@ target.getPhcrRelevantMedicalConditionHistoryObservations();
 	*/
 	@Test
 	public void testConstructor() {
-          @SuppressWarnings("unused")
-      ConstructorTestClass constructorTestClass = new ConstructorTestClass();		
-  } // testConstructor
+		@SuppressWarnings("unused")
+		ConstructorTestClass constructorTestClass = new ConstructorTestClass();
+	} // testConstructor
 
 	/**
 	*
 	* @generated
 	*/
 	@Override
-	protected EObject getObjectToTest() {		
-    return null;
-  }
+	protected EObject getObjectToTest() {
+		return null;
+	}
 
 } // PhcrClinicalInformationSectionOperations

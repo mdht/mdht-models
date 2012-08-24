@@ -47,67 +47,33 @@ public class TreatmentNotGivenSubstanceAdministrationTest extends CDAValidationT
 	*/
 	@Test
 	public void testValidateTreatmentNotGivenSubstanceAdministrationTreatmentNotGivenNegationInd() {
-      OperationsTestCase<TreatmentNotGivenSubstanceAdministration> validateTreatmentNotGivenSubstanceAdministrationTreatmentNotGivenNegationIndTestCase = new OperationsTestCase<TreatmentNotGivenSubstanceAdministration>(
-      "validateTreatmentNotGivenSubstanceAdministrationTreatmentNotGivenNegationInd",
-      operationsForOCL.getOCLValue("VALIDATE_TREATMENT_NOT_GIVEN_SUBSTANCE_ADMINISTRATION_TREATMENT_NOT_GIVEN_NEGATION_IND__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP")
-      ,objectFactory) {
+		OperationsTestCase<TreatmentNotGivenSubstanceAdministration> validateTreatmentNotGivenSubstanceAdministrationTreatmentNotGivenNegationIndTestCase = new OperationsTestCase<TreatmentNotGivenSubstanceAdministration>(
+			"validateTreatmentNotGivenSubstanceAdministrationTreatmentNotGivenNegationInd",
+			operationsForOCL.getOCLValue("VALIDATE_TREATMENT_NOT_GIVEN_SUBSTANCE_ADMINISTRATION_TREATMENT_NOT_GIVEN_NEGATION_IND__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
 
-      @Override
-      protected void updateToFail(TreatmentNotGivenSubstanceAdministration target) {
+			@Override
+			protected void updateToFail(TreatmentNotGivenSubstanceAdministration target) {
 
-      }
+			}
 
-      @Override
-      protected void updateToPass(TreatmentNotGivenSubstanceAdministration target) {
-        target.init();
-        
-        
-        
-        
-        
+			@Override
+			protected void updateToPass(TreatmentNotGivenSubstanceAdministration target) {
+				target.init();
 
-        
-        
+			}
 
-  
-      
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
 
-  
-    
-    
-      
-        
-    
-      
-        
-      
-        
-        
-        
-        
-        
-        
-        
-      
-      
-          
-      
-        
-      }
+				return TreatmentNotGivenSubstanceAdministrationOperations.validateTreatmentNotGivenSubstanceAdministrationTreatmentNotGivenNegationInd(
+					(TreatmentNotGivenSubstanceAdministration) objectToTest, diagnostician, map);
+			}
 
-      @Override
-      protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-      
-      
-      
-        return TreatmentNotGivenSubstanceAdministrationOperations.validateTreatmentNotGivenSubstanceAdministrationTreatmentNotGivenNegationInd(
-          (TreatmentNotGivenSubstanceAdministration) objectToTest, diagnostician, map);
-      }
+		};
 
-    };
-
-    validateTreatmentNotGivenSubstanceAdministrationTreatmentNotGivenNegationIndTestCase.doValidationTest();
-}
+		validateTreatmentNotGivenSubstanceAdministrationTreatmentNotGivenNegationIndTestCase.doValidationTest();
+	}
 
 	/**
 	*
@@ -115,67 +81,33 @@ public class TreatmentNotGivenSubstanceAdministrationTest extends CDAValidationT
 	*/
 	@Test
 	public void testValidateTreatmentNotGivenSubstanceAdministrationTemplateId() {
-      OperationsTestCase<TreatmentNotGivenSubstanceAdministration> validateTreatmentNotGivenSubstanceAdministrationTemplateIdTestCase = new OperationsTestCase<TreatmentNotGivenSubstanceAdministration>(
-      "validateTreatmentNotGivenSubstanceAdministrationTemplateId",
-      operationsForOCL.getOCLValue("VALIDATE_TREATMENT_NOT_GIVEN_SUBSTANCE_ADMINISTRATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP")
-      ,objectFactory) {
+		OperationsTestCase<TreatmentNotGivenSubstanceAdministration> validateTreatmentNotGivenSubstanceAdministrationTemplateIdTestCase = new OperationsTestCase<TreatmentNotGivenSubstanceAdministration>(
+			"validateTreatmentNotGivenSubstanceAdministrationTemplateId",
+			operationsForOCL.getOCLValue("VALIDATE_TREATMENT_NOT_GIVEN_SUBSTANCE_ADMINISTRATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
 
-      @Override
-      protected void updateToFail(TreatmentNotGivenSubstanceAdministration target) {
+			@Override
+			protected void updateToFail(TreatmentNotGivenSubstanceAdministration target) {
 
-      }
+			}
 
-      @Override
-      protected void updateToPass(TreatmentNotGivenSubstanceAdministration target) {
-        target.init();
-        
-        
-        
-        
-        
+			@Override
+			protected void updateToPass(TreatmentNotGivenSubstanceAdministration target) {
+				target.init();
 
-        
-        
+			}
 
-  
-      
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
 
-  
-    
-    
-      
-        
-    
-      
-        
-      
-        
-        
-        
-        
-        
-        
-        
-      
-      
-          
-      
-        
-      }
+				return TreatmentNotGivenSubstanceAdministrationOperations.validateTreatmentNotGivenSubstanceAdministrationTemplateId(
+					(TreatmentNotGivenSubstanceAdministration) objectToTest, diagnostician, map);
+			}
 
-      @Override
-      protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-      
-      
-      
-        return TreatmentNotGivenSubstanceAdministrationOperations.validateTreatmentNotGivenSubstanceAdministrationTemplateId(
-          (TreatmentNotGivenSubstanceAdministration) objectToTest, diagnostician, map);
-      }
+		};
 
-    };
-
-    validateTreatmentNotGivenSubstanceAdministrationTemplateIdTestCase.doValidationTest();
-}
+		validateTreatmentNotGivenSubstanceAdministrationTemplateIdTestCase.doValidationTest();
+	}
 
 	/**
 	*
@@ -183,67 +115,33 @@ public class TreatmentNotGivenSubstanceAdministrationTest extends CDAValidationT
 	*/
 	@Test
 	public void testValidateTreatmentNotGivenSubstanceAdministrationClassCode() {
-      OperationsTestCase<TreatmentNotGivenSubstanceAdministration> validateTreatmentNotGivenSubstanceAdministrationClassCodeTestCase = new OperationsTestCase<TreatmentNotGivenSubstanceAdministration>(
-      "validateTreatmentNotGivenSubstanceAdministrationClassCode",
-      operationsForOCL.getOCLValue("VALIDATE_TREATMENT_NOT_GIVEN_SUBSTANCE_ADMINISTRATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP")
-      ,objectFactory) {
+		OperationsTestCase<TreatmentNotGivenSubstanceAdministration> validateTreatmentNotGivenSubstanceAdministrationClassCodeTestCase = new OperationsTestCase<TreatmentNotGivenSubstanceAdministration>(
+			"validateTreatmentNotGivenSubstanceAdministrationClassCode",
+			operationsForOCL.getOCLValue("VALIDATE_TREATMENT_NOT_GIVEN_SUBSTANCE_ADMINISTRATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
 
-      @Override
-      protected void updateToFail(TreatmentNotGivenSubstanceAdministration target) {
+			@Override
+			protected void updateToFail(TreatmentNotGivenSubstanceAdministration target) {
 
-      }
+			}
 
-      @Override
-      protected void updateToPass(TreatmentNotGivenSubstanceAdministration target) {
-        target.init();
-        
-        
-        
-        
-        
+			@Override
+			protected void updateToPass(TreatmentNotGivenSubstanceAdministration target) {
+				target.init();
 
-        
-        
+			}
 
-  
-      
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
 
-  
-    
-    
-      
-        
-    
-      
-        
-      
-        
-        
-        
-        
-        
-        
-        
-      
-      
-          
-      
-        
-      }
+				return TreatmentNotGivenSubstanceAdministrationOperations.validateTreatmentNotGivenSubstanceAdministrationClassCode(
+					(TreatmentNotGivenSubstanceAdministration) objectToTest, diagnostician, map);
+			}
 
-      @Override
-      protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-      
-      
-      
-        return TreatmentNotGivenSubstanceAdministrationOperations.validateTreatmentNotGivenSubstanceAdministrationClassCode(
-          (TreatmentNotGivenSubstanceAdministration) objectToTest, diagnostician, map);
-      }
+		};
 
-    };
-
-    validateTreatmentNotGivenSubstanceAdministrationClassCodeTestCase.doValidationTest();
-}
+		validateTreatmentNotGivenSubstanceAdministrationClassCodeTestCase.doValidationTest();
+	}
 
 	/**
 	*
@@ -251,67 +149,33 @@ public class TreatmentNotGivenSubstanceAdministrationTest extends CDAValidationT
 	*/
 	@Test
 	public void testValidateTreatmentNotGivenSubstanceAdministrationMoodCode() {
-      OperationsTestCase<TreatmentNotGivenSubstanceAdministration> validateTreatmentNotGivenSubstanceAdministrationMoodCodeTestCase = new OperationsTestCase<TreatmentNotGivenSubstanceAdministration>(
-      "validateTreatmentNotGivenSubstanceAdministrationMoodCode",
-      operationsForOCL.getOCLValue("VALIDATE_TREATMENT_NOT_GIVEN_SUBSTANCE_ADMINISTRATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP")
-      ,objectFactory) {
+		OperationsTestCase<TreatmentNotGivenSubstanceAdministration> validateTreatmentNotGivenSubstanceAdministrationMoodCodeTestCase = new OperationsTestCase<TreatmentNotGivenSubstanceAdministration>(
+			"validateTreatmentNotGivenSubstanceAdministrationMoodCode",
+			operationsForOCL.getOCLValue("VALIDATE_TREATMENT_NOT_GIVEN_SUBSTANCE_ADMINISTRATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
 
-      @Override
-      protected void updateToFail(TreatmentNotGivenSubstanceAdministration target) {
+			@Override
+			protected void updateToFail(TreatmentNotGivenSubstanceAdministration target) {
 
-      }
+			}
 
-      @Override
-      protected void updateToPass(TreatmentNotGivenSubstanceAdministration target) {
-        target.init();
-        
-        
-        
-        
-        
+			@Override
+			protected void updateToPass(TreatmentNotGivenSubstanceAdministration target) {
+				target.init();
 
-        
-        
+			}
 
-  
-      
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
 
-  
-    
-    
-      
-        
-    
-      
-        
-      
-        
-        
-        
-        
-        
-        
-        
-      
-      
-          
-      
-        
-      }
+				return TreatmentNotGivenSubstanceAdministrationOperations.validateTreatmentNotGivenSubstanceAdministrationMoodCode(
+					(TreatmentNotGivenSubstanceAdministration) objectToTest, diagnostician, map);
+			}
 
-      @Override
-      protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-      
-      
-      
-        return TreatmentNotGivenSubstanceAdministrationOperations.validateTreatmentNotGivenSubstanceAdministrationMoodCode(
-          (TreatmentNotGivenSubstanceAdministration) objectToTest, diagnostician, map);
-      }
+		};
 
-    };
-
-    validateTreatmentNotGivenSubstanceAdministrationMoodCodeTestCase.doValidationTest();
-}
+		validateTreatmentNotGivenSubstanceAdministrationMoodCodeTestCase.doValidationTest();
+	}
 
 	/**
 	*
@@ -319,67 +183,33 @@ public class TreatmentNotGivenSubstanceAdministrationTest extends CDAValidationT
 	*/
 	@Test
 	public void testValidateTreatmentNotGivenSubstanceAdministrationNegationInd() {
-      OperationsTestCase<TreatmentNotGivenSubstanceAdministration> validateTreatmentNotGivenSubstanceAdministrationNegationIndTestCase = new OperationsTestCase<TreatmentNotGivenSubstanceAdministration>(
-      "validateTreatmentNotGivenSubstanceAdministrationNegationInd",
-      operationsForOCL.getOCLValue("VALIDATE_TREATMENT_NOT_GIVEN_SUBSTANCE_ADMINISTRATION_NEGATION_IND__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP")
-      ,objectFactory) {
+		OperationsTestCase<TreatmentNotGivenSubstanceAdministration> validateTreatmentNotGivenSubstanceAdministrationNegationIndTestCase = new OperationsTestCase<TreatmentNotGivenSubstanceAdministration>(
+			"validateTreatmentNotGivenSubstanceAdministrationNegationInd",
+			operationsForOCL.getOCLValue("VALIDATE_TREATMENT_NOT_GIVEN_SUBSTANCE_ADMINISTRATION_NEGATION_IND__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
 
-      @Override
-      protected void updateToFail(TreatmentNotGivenSubstanceAdministration target) {
+			@Override
+			protected void updateToFail(TreatmentNotGivenSubstanceAdministration target) {
 
-      }
+			}
 
-      @Override
-      protected void updateToPass(TreatmentNotGivenSubstanceAdministration target) {
-        target.init();
-        
-        
-        
-        
-        
+			@Override
+			protected void updateToPass(TreatmentNotGivenSubstanceAdministration target) {
+				target.init();
 
-        
-        
+			}
 
-  
-      
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
 
-  
-    
-    
-      
-        
-    
-      
-        
-      
-        
-        
-        
-        
-        
-        
-        
-      
-      
-          
-      
-        
-      }
+				return TreatmentNotGivenSubstanceAdministrationOperations.validateTreatmentNotGivenSubstanceAdministrationNegationInd(
+					(TreatmentNotGivenSubstanceAdministration) objectToTest, diagnostician, map);
+			}
 
-      @Override
-      protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-      
-      
-      
-        return TreatmentNotGivenSubstanceAdministrationOperations.validateTreatmentNotGivenSubstanceAdministrationNegationInd(
-          (TreatmentNotGivenSubstanceAdministration) objectToTest, diagnostician, map);
-      }
+		};
 
-    };
-
-    validateTreatmentNotGivenSubstanceAdministrationNegationIndTestCase.doValidationTest();
-}
+		validateTreatmentNotGivenSubstanceAdministrationNegationIndTestCase.doValidationTest();
+	}
 
 	/**
 	*
@@ -387,70 +217,36 @@ public class TreatmentNotGivenSubstanceAdministrationTest extends CDAValidationT
 	*/
 	@Test
 	public void testValidateTreatmentNotGivenSubstanceAdministrationStatusCode() {
-      OperationsTestCase<TreatmentNotGivenSubstanceAdministration> validateTreatmentNotGivenSubstanceAdministrationStatusCodeTestCase = new OperationsTestCase<TreatmentNotGivenSubstanceAdministration>(
-      "validateTreatmentNotGivenSubstanceAdministrationStatusCode",
-      operationsForOCL.getOCLValue("VALIDATE_TREATMENT_NOT_GIVEN_SUBSTANCE_ADMINISTRATION_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP")
-      ,objectFactory) {
+		OperationsTestCase<TreatmentNotGivenSubstanceAdministration> validateTreatmentNotGivenSubstanceAdministrationStatusCodeTestCase = new OperationsTestCase<TreatmentNotGivenSubstanceAdministration>(
+			"validateTreatmentNotGivenSubstanceAdministrationStatusCode",
+			operationsForOCL.getOCLValue("VALIDATE_TREATMENT_NOT_GIVEN_SUBSTANCE_ADMINISTRATION_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
 
-      @Override
-      protected void updateToFail(TreatmentNotGivenSubstanceAdministration target) {
+			@Override
+			protected void updateToFail(TreatmentNotGivenSubstanceAdministration target) {
 
-      }
+			}
 
-      @Override
-      protected void updateToPass(TreatmentNotGivenSubstanceAdministration target) {
-        target.init();
-        
-        
-        
-        
-      
-        CS cs = DatatypesFactory.eINSTANCE.createCS("completed");
-        target.setStatusCode(cs);
-        
+			@Override
+			protected void updateToPass(TreatmentNotGivenSubstanceAdministration target) {
+				target.init();
 
-        
-        
+				CS cs = DatatypesFactory.eINSTANCE.createCS("completed");
+				target.setStatusCode(cs);
 
-  
-      
+			}
 
-  
-    
-    
-      
-        
-    
-      
-        
-      
-        
-        
-        
-        
-        
-        
-        
-      
-      
-          
-      
-        
-      }
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
 
-      @Override
-      protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-      
-      
-      
-        return TreatmentNotGivenSubstanceAdministrationOperations.validateTreatmentNotGivenSubstanceAdministrationStatusCode(
-          (TreatmentNotGivenSubstanceAdministration) objectToTest, diagnostician, map);
-      }
+				return TreatmentNotGivenSubstanceAdministrationOperations.validateTreatmentNotGivenSubstanceAdministrationStatusCode(
+					(TreatmentNotGivenSubstanceAdministration) objectToTest, diagnostician, map);
+			}
 
-    };
+		};
 
-    validateTreatmentNotGivenSubstanceAdministrationStatusCodeTestCase.doValidationTest();
-}
+		validateTreatmentNotGivenSubstanceAdministrationStatusCodeTestCase.doValidationTest();
+	}
 
 	/**
 	*
@@ -458,67 +254,33 @@ public class TreatmentNotGivenSubstanceAdministrationTest extends CDAValidationT
 	*/
 	@Test
 	public void testValidateTreatmentNotGivenSubstanceAdministrationStatusCodeP() {
-      OperationsTestCase<TreatmentNotGivenSubstanceAdministration> validateTreatmentNotGivenSubstanceAdministrationStatusCodePTestCase = new OperationsTestCase<TreatmentNotGivenSubstanceAdministration>(
-      "validateTreatmentNotGivenSubstanceAdministrationStatusCodeP",
-      operationsForOCL.getOCLValue("VALIDATE_TREATMENT_NOT_GIVEN_SUBSTANCE_ADMINISTRATION_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP")
-      ,objectFactory) {
+		OperationsTestCase<TreatmentNotGivenSubstanceAdministration> validateTreatmentNotGivenSubstanceAdministrationStatusCodePTestCase = new OperationsTestCase<TreatmentNotGivenSubstanceAdministration>(
+			"validateTreatmentNotGivenSubstanceAdministrationStatusCodeP",
+			operationsForOCL.getOCLValue("VALIDATE_TREATMENT_NOT_GIVEN_SUBSTANCE_ADMINISTRATION_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
 
-      @Override
-      protected void updateToFail(TreatmentNotGivenSubstanceAdministration target) {
+			@Override
+			protected void updateToFail(TreatmentNotGivenSubstanceAdministration target) {
 
-      }
+			}
 
-      @Override
-      protected void updateToPass(TreatmentNotGivenSubstanceAdministration target) {
-        target.init();
-        
-        
-        
-        
-        
+			@Override
+			protected void updateToPass(TreatmentNotGivenSubstanceAdministration target) {
+				target.init();
 
-        
-        
+			}
 
-  
-      
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
 
-  
-    
-    
-      
-        
-    
-      
-        
-      
-        
-        
-        
-        
-        
-        
-        
-      
-      
-          
-      
-        
-      }
+				return TreatmentNotGivenSubstanceAdministrationOperations.validateTreatmentNotGivenSubstanceAdministrationStatusCodeP(
+					(TreatmentNotGivenSubstanceAdministration) objectToTest, diagnostician, map);
+			}
 
-      @Override
-      protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-      
-      
-      
-        return TreatmentNotGivenSubstanceAdministrationOperations.validateTreatmentNotGivenSubstanceAdministrationStatusCodeP(
-          (TreatmentNotGivenSubstanceAdministration) objectToTest, diagnostician, map);
-      }
+		};
 
-    };
-
-    validateTreatmentNotGivenSubstanceAdministrationStatusCodePTestCase.doValidationTest();
-}
+		validateTreatmentNotGivenSubstanceAdministrationStatusCodePTestCase.doValidationTest();
+	}
 
 	/**
 	*
@@ -573,17 +335,17 @@ public class TreatmentNotGivenSubstanceAdministrationTest extends CDAValidationT
 	*/
 	@Test
 	public void testConstructor() {
-          @SuppressWarnings("unused")
-      ConstructorTestClass constructorTestClass = new ConstructorTestClass();		
-  } // testConstructor
+		@SuppressWarnings("unused")
+		ConstructorTestClass constructorTestClass = new ConstructorTestClass();
+	} // testConstructor
 
 	/**
 	*
 	* @generated
 	*/
 	@Override
-	protected EObject getObjectToTest() {		
-    return null;
-  }
+	protected EObject getObjectToTest() {
+		return null;
+	}
 
 } // TreatmentNotGivenSubstanceAdministrationOperations

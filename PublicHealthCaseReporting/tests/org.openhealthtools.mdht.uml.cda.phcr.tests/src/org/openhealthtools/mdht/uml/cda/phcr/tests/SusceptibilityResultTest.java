@@ -47,67 +47,33 @@ public class SusceptibilityResultTest extends CDAValidationTest {
 	*/
 	@Test
 	public void testValidateSusceptibilityResultTemplateId() {
-      OperationsTestCase<SusceptibilityResult> validateSusceptibilityResultTemplateIdTestCase = new OperationsTestCase<SusceptibilityResult>(
-      "validateSusceptibilityResultTemplateId",
-      operationsForOCL.getOCLValue("VALIDATE_SUSCEPTIBILITY_RESULT_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP")
-      ,objectFactory) {
+		OperationsTestCase<SusceptibilityResult> validateSusceptibilityResultTemplateIdTestCase = new OperationsTestCase<SusceptibilityResult>(
+			"validateSusceptibilityResultTemplateId",
+			operationsForOCL.getOCLValue("VALIDATE_SUSCEPTIBILITY_RESULT_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
 
-      @Override
-      protected void updateToFail(SusceptibilityResult target) {
+			@Override
+			protected void updateToFail(SusceptibilityResult target) {
 
-      }
+			}
 
-      @Override
-      protected void updateToPass(SusceptibilityResult target) {
-        target.init();
-        
-        
-        
-        
-        
+			@Override
+			protected void updateToPass(SusceptibilityResult target) {
+				target.init();
 
-        
-        
+			}
 
-  
-      
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
 
-  
-    
-    
-      
-        
-    
-      
-        
-      
-        
-        
-        
-        
-        
-        
-        
-      
-      
-          
-      
-        
-      }
+				return SusceptibilityResultOperations.validateSusceptibilityResultTemplateId(
+					(SusceptibilityResult) objectToTest, diagnostician, map);
+			}
 
-      @Override
-      protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-      
-      
-      
-        return SusceptibilityResultOperations.validateSusceptibilityResultTemplateId(
-          (SusceptibilityResult) objectToTest, diagnostician, map);
-      }
+		};
 
-    };
-
-    validateSusceptibilityResultTemplateIdTestCase.doValidationTest();
-}
+		validateSusceptibilityResultTemplateIdTestCase.doValidationTest();
+	}
 
 	/**
 	*
@@ -115,67 +81,33 @@ public class SusceptibilityResultTest extends CDAValidationTest {
 	*/
 	@Test
 	public void testValidateSusceptibilityResultCodeP() {
-      OperationsTestCase<SusceptibilityResult> validateSusceptibilityResultCodePTestCase = new OperationsTestCase<SusceptibilityResult>(
-      "validateSusceptibilityResultCodeP",
-      operationsForOCL.getOCLValue("VALIDATE_SUSCEPTIBILITY_RESULT_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP")
-      ,objectFactory) {
+		OperationsTestCase<SusceptibilityResult> validateSusceptibilityResultCodePTestCase = new OperationsTestCase<SusceptibilityResult>(
+			"validateSusceptibilityResultCodeP",
+			operationsForOCL.getOCLValue("VALIDATE_SUSCEPTIBILITY_RESULT_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
 
-      @Override
-      protected void updateToFail(SusceptibilityResult target) {
+			@Override
+			protected void updateToFail(SusceptibilityResult target) {
 
-      }
+			}
 
-      @Override
-      protected void updateToPass(SusceptibilityResult target) {
-        target.init();
-        
-        
-        
-        
-        
+			@Override
+			protected void updateToPass(SusceptibilityResult target) {
+				target.init();
 
-        
-        
+			}
 
-  
-      
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
 
-  
-    
-    
-      
-        
-    
-      
-        
-      
-        
-        
-        
-        
-        
-        
-        
-      
-      
-          
-      
-        
-      }
+				return SusceptibilityResultOperations.validateSusceptibilityResultCodeP(
+					(SusceptibilityResult) objectToTest, diagnostician, map);
+			}
 
-      @Override
-      protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-      
-      
-      
-        return SusceptibilityResultOperations.validateSusceptibilityResultCodeP(
-          (SusceptibilityResult) objectToTest, diagnostician, map);
-      }
+		};
 
-    };
-
-    validateSusceptibilityResultCodePTestCase.doValidationTest();
-}
+		validateSusceptibilityResultCodePTestCase.doValidationTest();
+	}
 
 	/**
 	*
@@ -183,67 +115,33 @@ public class SusceptibilityResultTest extends CDAValidationTest {
 	*/
 	@Test
 	public void testValidateSusceptibilityResultCode() {
-      OperationsTestCase<SusceptibilityResult> validateSusceptibilityResultCodeTestCase = new OperationsTestCase<SusceptibilityResult>(
-      "validateSusceptibilityResultCode",
-      operationsForOCL.getOCLValue("VALIDATE_SUSCEPTIBILITY_RESULT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP")
-      ,objectFactory) {
+		OperationsTestCase<SusceptibilityResult> validateSusceptibilityResultCodeTestCase = new OperationsTestCase<SusceptibilityResult>(
+			"validateSusceptibilityResultCode",
+			operationsForOCL.getOCLValue("VALIDATE_SUSCEPTIBILITY_RESULT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
 
-      @Override
-      protected void updateToFail(SusceptibilityResult target) {
+			@Override
+			protected void updateToFail(SusceptibilityResult target) {
 
-      }
+			}
 
-      @Override
-      protected void updateToPass(SusceptibilityResult target) {
-        target.init();
-        
-        
-        
-        
-        
+			@Override
+			protected void updateToPass(SusceptibilityResult target) {
+				target.init();
 
-        
-        
+			}
 
-  
-      
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
 
-  
-    
-    
-      
-        
-    
-      
-        
-      
-        
-        
-        
-        
-        
-        
-        
-      
-      
-          
-      
-        
-      }
+				return SusceptibilityResultOperations.validateSusceptibilityResultCode(
+					(SusceptibilityResult) objectToTest, diagnostician, map);
+			}
 
-      @Override
-      protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-      
-      
-      
-        return SusceptibilityResultOperations.validateSusceptibilityResultCode(
-          (SusceptibilityResult) objectToTest, diagnostician, map);
-      }
+		};
 
-    };
-
-    validateSusceptibilityResultCodeTestCase.doValidationTest();
-}
+		validateSusceptibilityResultCodeTestCase.doValidationTest();
+	}
 
 	/**
 	*
@@ -251,70 +149,36 @@ public class SusceptibilityResultTest extends CDAValidationTest {
 	*/
 	@Test
 	public void testValidateSusceptibilityResultStatusCode() {
-      OperationsTestCase<SusceptibilityResult> validateSusceptibilityResultStatusCodeTestCase = new OperationsTestCase<SusceptibilityResult>(
-      "validateSusceptibilityResultStatusCode",
-      operationsForOCL.getOCLValue("VALIDATE_SUSCEPTIBILITY_RESULT_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP")
-      ,objectFactory) {
+		OperationsTestCase<SusceptibilityResult> validateSusceptibilityResultStatusCodeTestCase = new OperationsTestCase<SusceptibilityResult>(
+			"validateSusceptibilityResultStatusCode",
+			operationsForOCL.getOCLValue("VALIDATE_SUSCEPTIBILITY_RESULT_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
 
-      @Override
-      protected void updateToFail(SusceptibilityResult target) {
+			@Override
+			protected void updateToFail(SusceptibilityResult target) {
 
-      }
+			}
 
-      @Override
-      protected void updateToPass(SusceptibilityResult target) {
-        target.init();
-        
-        
-        
-        
-      
-        CS cs = DatatypesFactory.eINSTANCE.createCS("completed");
-        target.setStatusCode(cs);
-        
+			@Override
+			protected void updateToPass(SusceptibilityResult target) {
+				target.init();
 
-        
-        
+				CS cs = DatatypesFactory.eINSTANCE.createCS("completed");
+				target.setStatusCode(cs);
 
-  
-      
+			}
 
-  
-    
-    
-      
-        
-    
-      
-        
-      
-        
-        
-        
-        
-        
-        
-        
-      
-      
-          
-      
-        
-      }
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
 
-      @Override
-      protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-      
-      
-      
-        return SusceptibilityResultOperations.validateSusceptibilityResultStatusCode(
-          (SusceptibilityResult) objectToTest, diagnostician, map);
-      }
+				return SusceptibilityResultOperations.validateSusceptibilityResultStatusCode(
+					(SusceptibilityResult) objectToTest, diagnostician, map);
+			}
 
-    };
+		};
 
-    validateSusceptibilityResultStatusCodeTestCase.doValidationTest();
-}
+		validateSusceptibilityResultStatusCodeTestCase.doValidationTest();
+	}
 
 	/**
 	*
@@ -322,67 +186,33 @@ public class SusceptibilityResultTest extends CDAValidationTest {
 	*/
 	@Test
 	public void testValidateSusceptibilityResultStatusCodeP() {
-      OperationsTestCase<SusceptibilityResult> validateSusceptibilityResultStatusCodePTestCase = new OperationsTestCase<SusceptibilityResult>(
-      "validateSusceptibilityResultStatusCodeP",
-      operationsForOCL.getOCLValue("VALIDATE_SUSCEPTIBILITY_RESULT_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP")
-      ,objectFactory) {
+		OperationsTestCase<SusceptibilityResult> validateSusceptibilityResultStatusCodePTestCase = new OperationsTestCase<SusceptibilityResult>(
+			"validateSusceptibilityResultStatusCodeP",
+			operationsForOCL.getOCLValue("VALIDATE_SUSCEPTIBILITY_RESULT_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
 
-      @Override
-      protected void updateToFail(SusceptibilityResult target) {
+			@Override
+			protected void updateToFail(SusceptibilityResult target) {
 
-      }
+			}
 
-      @Override
-      protected void updateToPass(SusceptibilityResult target) {
-        target.init();
-        
-        
-        
-        
-        
+			@Override
+			protected void updateToPass(SusceptibilityResult target) {
+				target.init();
 
-        
-        
+			}
 
-  
-      
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
 
-  
-    
-    
-      
-        
-    
-      
-        
-      
-        
-        
-        
-        
-        
-        
-        
-      
-      
-          
-      
-        
-      }
+				return SusceptibilityResultOperations.validateSusceptibilityResultStatusCodeP(
+					(SusceptibilityResult) objectToTest, diagnostician, map);
+			}
 
-      @Override
-      protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-      
-      
-      
-        return SusceptibilityResultOperations.validateSusceptibilityResultStatusCodeP(
-          (SusceptibilityResult) objectToTest, diagnostician, map);
-      }
+		};
 
-    };
-
-    validateSusceptibilityResultStatusCodePTestCase.doValidationTest();
-}
+		validateSusceptibilityResultStatusCodePTestCase.doValidationTest();
+	}
 
 	/**
 	*
@@ -390,140 +220,69 @@ public class SusceptibilityResultTest extends CDAValidationTest {
 	*/
 	@Test
 	public void testValidateSusceptibilityResultClassCode() {
-      OperationsTestCase<SusceptibilityResult> validateSusceptibilityResultClassCodeTestCase = new OperationsTestCase<SusceptibilityResult>(
-      "validateSusceptibilityResultClassCode",
-      operationsForOCL.getOCLValue("VALIDATE_SUSCEPTIBILITY_RESULT_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP")
-      ,objectFactory) {
+		OperationsTestCase<SusceptibilityResult> validateSusceptibilityResultClassCodeTestCase = new OperationsTestCase<SusceptibilityResult>(
+			"validateSusceptibilityResultClassCode",
+			operationsForOCL.getOCLValue("VALIDATE_SUSCEPTIBILITY_RESULT_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
 
-      @Override
-      protected void updateToFail(SusceptibilityResult target) {
+			@Override
+			protected void updateToFail(SusceptibilityResult target) {
 
-      }
+			}
 
-      @Override
-      protected void updateToPass(SusceptibilityResult target) {
-        target.init();
-        
-        
-        
-        
-        
+			@Override
+			protected void updateToPass(SusceptibilityResult target) {
+				target.init();
 
-        
-        
+			}
 
-  
-      
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
 
-  
-    
-    
-      
-        
-    
-      
-        
-      
-        
-        
-        
-        
-        
-        
-        
-      
-      
-          
-      
-        
-      }
+				return SusceptibilityResultOperations.validateSusceptibilityResultClassCode(
+					(SusceptibilityResult) objectToTest, diagnostician, map);
+			}
 
-      @Override
-      protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-      
-      
-      
-        return SusceptibilityResultOperations.validateSusceptibilityResultClassCode(
-          (SusceptibilityResult) objectToTest, diagnostician, map);
-      }
+		};
 
-    };
-
-    validateSusceptibilityResultClassCodeTestCase.doValidationTest();
-}
+		validateSusceptibilityResultClassCodeTestCase.doValidationTest();
+	}
 
 	/**
-*
-* @generated
-*/
-@Test
+	*
+	* @generated
+	*/
+	@Test
+	public void testValidateSusceptibilityResultMoodCode() {
+		OperationsTestCase<SusceptibilityResult> validateSusceptibilityResultMoodCodeTestCase = new OperationsTestCase<SusceptibilityResult>(
+			"validateSusceptibilityResultMoodCode",
+			operationsForOCL.getOCLValue("VALIDATE_SUSCEPTIBILITY_RESULT_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
 
- 
-                  
-public void testValidateSusceptibilityResultMoodCode() {
-      OperationsTestCase<SusceptibilityResult> validateSusceptibilityResultMoodCodeTestCase = new OperationsTestCase<SusceptibilityResult>(
-      "validateSusceptibilityResultMoodCode",
-      operationsForOCL.getOCLValue("VALIDATE_SUSCEPTIBILITY_RESULT_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP")
-      ,objectFactory) {
+			@Override
+			protected void updateToFail(SusceptibilityResult target) {
 
-      @Override
-      protected void updateToFail(SusceptibilityResult target) {
+			}
 
-      }
+			@Override
+			protected void updateToPass(SusceptibilityResult target) {
+				target.init();
 
-      @Override
-      protected void updateToPass(SusceptibilityResult target) {
-        target.init();
-        
-        
-        
-        
-        
+			}
 
-        
-        
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
 
-  
-      
+				return SusceptibilityResultOperations.validateSusceptibilityResultMoodCode(
+					(SusceptibilityResult) objectToTest, diagnostician, map);
+			}
 
-  
-    
-    
-      
-        
-    
-      
-        
-      
-        
-        
-        
-        
-        
-        
-        
-      
-      
-          
-      
-        
-      }
+		};
 
-      @Override
-      protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-      
-      
-      
-        return SusceptibilityResultOperations.validateSusceptibilityResultMoodCode(
-          (SusceptibilityResult) objectToTest, diagnostician, map);
-      }
+		validateSusceptibilityResultMoodCodeTestCase.doValidationTest();
+	}
 
-    };
-
-    validateSusceptibilityResultMoodCodeTestCase.doValidationTest();
-}
-
-  /**
+	/**
 	*
 	* @generated
 	*/
@@ -576,17 +335,17 @@ public void testValidateSusceptibilityResultMoodCode() {
 	*/
 	@Test
 	public void testConstructor() {
-          @SuppressWarnings("unused")
-      ConstructorTestClass constructorTestClass = new ConstructorTestClass();		
-  } // testConstructor
+		@SuppressWarnings("unused")
+		ConstructorTestClass constructorTestClass = new ConstructorTestClass();
+	} // testConstructor
 
 	/**
 	*
 	* @generated
 	*/
 	@Override
-	protected EObject getObjectToTest() {		
-    return null;
-  }
+	protected EObject getObjectToTest() {
+		return null;
+	}
 
 } // SusceptibilityResultOperations

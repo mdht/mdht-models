@@ -49,67 +49,33 @@ public class MostRecentTimeArrivedInUSAObservationTest extends CDAValidationTest
 	*/
 	@Test
 	public void testValidateMostRecentTimeArrivedInUSAObservationTemplateId() {
-      OperationsTestCase<MostRecentTimeArrivedInUSAObservation> validateMostRecentTimeArrivedInUSAObservationTemplateIdTestCase = new OperationsTestCase<MostRecentTimeArrivedInUSAObservation>(
-      "validateMostRecentTimeArrivedInUSAObservationTemplateId",
-      operationsForOCL.getOCLValue("VALIDATE_MOST_RECENT_TIME_ARRIVED_IN_USA_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP")
-      ,objectFactory) {
+		OperationsTestCase<MostRecentTimeArrivedInUSAObservation> validateMostRecentTimeArrivedInUSAObservationTemplateIdTestCase = new OperationsTestCase<MostRecentTimeArrivedInUSAObservation>(
+			"validateMostRecentTimeArrivedInUSAObservationTemplateId",
+			operationsForOCL.getOCLValue("VALIDATE_MOST_RECENT_TIME_ARRIVED_IN_USA_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
 
-      @Override
-      protected void updateToFail(MostRecentTimeArrivedInUSAObservation target) {
+			@Override
+			protected void updateToFail(MostRecentTimeArrivedInUSAObservation target) {
 
-      }
+			}
 
-      @Override
-      protected void updateToPass(MostRecentTimeArrivedInUSAObservation target) {
-        target.init();
-        
-        
-        
-        
-        
+			@Override
+			protected void updateToPass(MostRecentTimeArrivedInUSAObservation target) {
+				target.init();
 
-        
-        
+			}
 
-  
-      
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
 
-  
-    
-    
-      
-        
-    
-      
-        
-      
-        
-        
-        
-        
-        
-        
-        
-      
-      
-          
-      
-        
-      }
+				return MostRecentTimeArrivedInUSAObservationOperations.validateMostRecentTimeArrivedInUSAObservationTemplateId(
+					(MostRecentTimeArrivedInUSAObservation) objectToTest, diagnostician, map);
+			}
 
-      @Override
-      protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-      
-      
-      
-        return MostRecentTimeArrivedInUSAObservationOperations.validateMostRecentTimeArrivedInUSAObservationTemplateId(
-          (MostRecentTimeArrivedInUSAObservation) objectToTest, diagnostician, map);
-      }
+		};
 
-    };
-
-    validateMostRecentTimeArrivedInUSAObservationTemplateIdTestCase.doValidationTest();
-}
+		validateMostRecentTimeArrivedInUSAObservationTemplateIdTestCase.doValidationTest();
+	}
 
 	/**
 	*
@@ -117,67 +83,33 @@ public class MostRecentTimeArrivedInUSAObservationTest extends CDAValidationTest
 	*/
 	@Test
 	public void testValidateMostRecentTimeArrivedInUSAObservationClassCode() {
-      OperationsTestCase<MostRecentTimeArrivedInUSAObservation> validateMostRecentTimeArrivedInUSAObservationClassCodeTestCase = new OperationsTestCase<MostRecentTimeArrivedInUSAObservation>(
-      "validateMostRecentTimeArrivedInUSAObservationClassCode",
-      operationsForOCL.getOCLValue("VALIDATE_MOST_RECENT_TIME_ARRIVED_IN_USA_OBSERVATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP")
-      ,objectFactory) {
+		OperationsTestCase<MostRecentTimeArrivedInUSAObservation> validateMostRecentTimeArrivedInUSAObservationClassCodeTestCase = new OperationsTestCase<MostRecentTimeArrivedInUSAObservation>(
+			"validateMostRecentTimeArrivedInUSAObservationClassCode",
+			operationsForOCL.getOCLValue("VALIDATE_MOST_RECENT_TIME_ARRIVED_IN_USA_OBSERVATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
 
-      @Override
-      protected void updateToFail(MostRecentTimeArrivedInUSAObservation target) {
+			@Override
+			protected void updateToFail(MostRecentTimeArrivedInUSAObservation target) {
 
-      }
+			}
 
-      @Override
-      protected void updateToPass(MostRecentTimeArrivedInUSAObservation target) {
-        target.init();
-        
-        
-        
-        
-        
+			@Override
+			protected void updateToPass(MostRecentTimeArrivedInUSAObservation target) {
+				target.init();
 
-        
-        
+			}
 
-  
-      
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
 
-  
-    
-    
-      
-        
-    
-      
-        
-      
-        
-        
-        
-        
-        
-        
-        
-      
-      
-          
-      
-        
-      }
+				return MostRecentTimeArrivedInUSAObservationOperations.validateMostRecentTimeArrivedInUSAObservationClassCode(
+					(MostRecentTimeArrivedInUSAObservation) objectToTest, diagnostician, map);
+			}
 
-      @Override
-      protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-      
-      
-      
-        return MostRecentTimeArrivedInUSAObservationOperations.validateMostRecentTimeArrivedInUSAObservationClassCode(
-          (MostRecentTimeArrivedInUSAObservation) objectToTest, diagnostician, map);
-      }
+		};
 
-    };
-
-    validateMostRecentTimeArrivedInUSAObservationClassCodeTestCase.doValidationTest();
-}
+		validateMostRecentTimeArrivedInUSAObservationClassCodeTestCase.doValidationTest();
+	}
 
 	/**
 	*
@@ -185,67 +117,33 @@ public class MostRecentTimeArrivedInUSAObservationTest extends CDAValidationTest
 	*/
 	@Test
 	public void testValidateMostRecentTimeArrivedInUSAObservationMoodCode() {
-      OperationsTestCase<MostRecentTimeArrivedInUSAObservation> validateMostRecentTimeArrivedInUSAObservationMoodCodeTestCase = new OperationsTestCase<MostRecentTimeArrivedInUSAObservation>(
-      "validateMostRecentTimeArrivedInUSAObservationMoodCode",
-      operationsForOCL.getOCLValue("VALIDATE_MOST_RECENT_TIME_ARRIVED_IN_USA_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP")
-      ,objectFactory) {
+		OperationsTestCase<MostRecentTimeArrivedInUSAObservation> validateMostRecentTimeArrivedInUSAObservationMoodCodeTestCase = new OperationsTestCase<MostRecentTimeArrivedInUSAObservation>(
+			"validateMostRecentTimeArrivedInUSAObservationMoodCode",
+			operationsForOCL.getOCLValue("VALIDATE_MOST_RECENT_TIME_ARRIVED_IN_USA_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
 
-      @Override
-      protected void updateToFail(MostRecentTimeArrivedInUSAObservation target) {
+			@Override
+			protected void updateToFail(MostRecentTimeArrivedInUSAObservation target) {
 
-      }
+			}
 
-      @Override
-      protected void updateToPass(MostRecentTimeArrivedInUSAObservation target) {
-        target.init();
-        
-        
-        
-        
-        
+			@Override
+			protected void updateToPass(MostRecentTimeArrivedInUSAObservation target) {
+				target.init();
 
-        
-        
+			}
 
-  
-      
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
 
-  
-    
-    
-      
-        
-    
-      
-        
-      
-        
-        
-        
-        
-        
-        
-        
-      
-      
-          
-      
-        
-      }
+				return MostRecentTimeArrivedInUSAObservationOperations.validateMostRecentTimeArrivedInUSAObservationMoodCode(
+					(MostRecentTimeArrivedInUSAObservation) objectToTest, diagnostician, map);
+			}
 
-      @Override
-      protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-      
-      
-      
-        return MostRecentTimeArrivedInUSAObservationOperations.validateMostRecentTimeArrivedInUSAObservationMoodCode(
-          (MostRecentTimeArrivedInUSAObservation) objectToTest, diagnostician, map);
-      }
+		};
 
-    };
-
-    validateMostRecentTimeArrivedInUSAObservationMoodCodeTestCase.doValidationTest();
-}
+		validateMostRecentTimeArrivedInUSAObservationMoodCodeTestCase.doValidationTest();
+	}
 
 	/**
 	*
@@ -253,67 +151,33 @@ public class MostRecentTimeArrivedInUSAObservationTest extends CDAValidationTest
 	*/
 	@Test
 	public void testValidateMostRecentTimeArrivedInUSAObservationCodeP() {
-      OperationsTestCase<MostRecentTimeArrivedInUSAObservation> validateMostRecentTimeArrivedInUSAObservationCodePTestCase = new OperationsTestCase<MostRecentTimeArrivedInUSAObservation>(
-      "validateMostRecentTimeArrivedInUSAObservationCodeP",
-      operationsForOCL.getOCLValue("VALIDATE_MOST_RECENT_TIME_ARRIVED_IN_USA_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP")
-      ,objectFactory) {
+		OperationsTestCase<MostRecentTimeArrivedInUSAObservation> validateMostRecentTimeArrivedInUSAObservationCodePTestCase = new OperationsTestCase<MostRecentTimeArrivedInUSAObservation>(
+			"validateMostRecentTimeArrivedInUSAObservationCodeP",
+			operationsForOCL.getOCLValue("VALIDATE_MOST_RECENT_TIME_ARRIVED_IN_USA_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
 
-      @Override
-      protected void updateToFail(MostRecentTimeArrivedInUSAObservation target) {
+			@Override
+			protected void updateToFail(MostRecentTimeArrivedInUSAObservation target) {
 
-      }
+			}
 
-      @Override
-      protected void updateToPass(MostRecentTimeArrivedInUSAObservation target) {
-        target.init();
-        
-        
-        
-        
-        
+			@Override
+			protected void updateToPass(MostRecentTimeArrivedInUSAObservation target) {
+				target.init();
 
-        
-        
+			}
 
-  
-      
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
 
-  
-    
-    
-      
-        
-    
-      
-        
-      
-        
-        
-        
-        
-        
-        
-        
-      
-      
-          
-      
-        
-      }
+				return MostRecentTimeArrivedInUSAObservationOperations.validateMostRecentTimeArrivedInUSAObservationCodeP(
+					(MostRecentTimeArrivedInUSAObservation) objectToTest, diagnostician, map);
+			}
 
-      @Override
-      protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-      
-      
-      
-        return MostRecentTimeArrivedInUSAObservationOperations.validateMostRecentTimeArrivedInUSAObservationCodeP(
-          (MostRecentTimeArrivedInUSAObservation) objectToTest, diagnostician, map);
-      }
+		};
 
-    };
-
-    validateMostRecentTimeArrivedInUSAObservationCodePTestCase.doValidationTest();
-}
+		validateMostRecentTimeArrivedInUSAObservationCodePTestCase.doValidationTest();
+	}
 
 	/**
 	*
@@ -321,70 +185,36 @@ public class MostRecentTimeArrivedInUSAObservationTest extends CDAValidationTest
 	*/
 	@Test
 	public void testValidateMostRecentTimeArrivedInUSAObservationCode() {
-      OperationsTestCase<MostRecentTimeArrivedInUSAObservation> validateMostRecentTimeArrivedInUSAObservationCodeTestCase = new OperationsTestCase<MostRecentTimeArrivedInUSAObservation>(
-      "validateMostRecentTimeArrivedInUSAObservationCode",
-      operationsForOCL.getOCLValue("VALIDATE_MOST_RECENT_TIME_ARRIVED_IN_USA_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP")
-      ,objectFactory) {
+		OperationsTestCase<MostRecentTimeArrivedInUSAObservation> validateMostRecentTimeArrivedInUSAObservationCodeTestCase = new OperationsTestCase<MostRecentTimeArrivedInUSAObservation>(
+			"validateMostRecentTimeArrivedInUSAObservationCode",
+			operationsForOCL.getOCLValue("VALIDATE_MOST_RECENT_TIME_ARRIVED_IN_USA_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
 
-      @Override
-      protected void updateToFail(MostRecentTimeArrivedInUSAObservation target) {
+			@Override
+			protected void updateToFail(MostRecentTimeArrivedInUSAObservation target) {
 
-      }
+			}
 
-      @Override
-      protected void updateToPass(MostRecentTimeArrivedInUSAObservation target) {
-        target.init();
-        
-        
-        
-        
-        
+			@Override
+			protected void updateToPass(MostRecentTimeArrivedInUSAObservation target) {
+				target.init();
 
-        
-        
+				CD cd = DatatypesFactory.eINSTANCE.createCD();
+				target.setCode(cd);
 
-  
-      
+			}
 
-  
-    
-    
-      
-        
-    
-      
-        
-      
-        
-        
-        
-      
-        CD cd  = DatatypesFactory.eINSTANCE.createCD();
-        target.setCode(cd);
-        
-        
-        
-        
-      
-      
-          
-      
-        
-      }
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
 
-      @Override
-      protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-      
-      
-      
-        return MostRecentTimeArrivedInUSAObservationOperations.validateMostRecentTimeArrivedInUSAObservationCode(
-          (MostRecentTimeArrivedInUSAObservation) objectToTest, diagnostician, map);
-      }
+				return MostRecentTimeArrivedInUSAObservationOperations.validateMostRecentTimeArrivedInUSAObservationCode(
+					(MostRecentTimeArrivedInUSAObservation) objectToTest, diagnostician, map);
+			}
 
-    };
+		};
 
-    validateMostRecentTimeArrivedInUSAObservationCodeTestCase.doValidationTest();
-}
+		validateMostRecentTimeArrivedInUSAObservationCodeTestCase.doValidationTest();
+	}
 
 	/**
 	*
@@ -392,70 +222,36 @@ public class MostRecentTimeArrivedInUSAObservationTest extends CDAValidationTest
 	*/
 	@Test
 	public void testValidateMostRecentTimeArrivedInUSAObservationStatusCode() {
-      OperationsTestCase<MostRecentTimeArrivedInUSAObservation> validateMostRecentTimeArrivedInUSAObservationStatusCodeTestCase = new OperationsTestCase<MostRecentTimeArrivedInUSAObservation>(
-      "validateMostRecentTimeArrivedInUSAObservationStatusCode",
-      operationsForOCL.getOCLValue("VALIDATE_MOST_RECENT_TIME_ARRIVED_IN_USA_OBSERVATION_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP")
-      ,objectFactory) {
+		OperationsTestCase<MostRecentTimeArrivedInUSAObservation> validateMostRecentTimeArrivedInUSAObservationStatusCodeTestCase = new OperationsTestCase<MostRecentTimeArrivedInUSAObservation>(
+			"validateMostRecentTimeArrivedInUSAObservationStatusCode",
+			operationsForOCL.getOCLValue("VALIDATE_MOST_RECENT_TIME_ARRIVED_IN_USA_OBSERVATION_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
 
-      @Override
-      protected void updateToFail(MostRecentTimeArrivedInUSAObservation target) {
+			@Override
+			protected void updateToFail(MostRecentTimeArrivedInUSAObservation target) {
 
-      }
+			}
 
-      @Override
-      protected void updateToPass(MostRecentTimeArrivedInUSAObservation target) {
-        target.init();
-        
-        
-        
-        
-      
-        CS cs = DatatypesFactory.eINSTANCE.createCS("completed");
-        target.setStatusCode(cs);
-        
+			@Override
+			protected void updateToPass(MostRecentTimeArrivedInUSAObservation target) {
+				target.init();
 
-        
-        
+				CS cs = DatatypesFactory.eINSTANCE.createCS("completed");
+				target.setStatusCode(cs);
 
-  
-      
+			}
 
-  
-    
-    
-      
-        
-    
-      
-        
-      
-        
-        
-        
-        
-        
-        
-        
-      
-      
-          
-      
-        
-      }
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
 
-      @Override
-      protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-      
-      
-      
-        return MostRecentTimeArrivedInUSAObservationOperations.validateMostRecentTimeArrivedInUSAObservationStatusCode(
-          (MostRecentTimeArrivedInUSAObservation) objectToTest, diagnostician, map);
-      }
+				return MostRecentTimeArrivedInUSAObservationOperations.validateMostRecentTimeArrivedInUSAObservationStatusCode(
+					(MostRecentTimeArrivedInUSAObservation) objectToTest, diagnostician, map);
+			}
 
-    };
+		};
 
-    validateMostRecentTimeArrivedInUSAObservationStatusCodeTestCase.doValidationTest();
-}
+		validateMostRecentTimeArrivedInUSAObservationStatusCodeTestCase.doValidationTest();
+	}
 
 	/**
 	*
@@ -463,67 +259,33 @@ public class MostRecentTimeArrivedInUSAObservationTest extends CDAValidationTest
 	*/
 	@Test
 	public void testValidateMostRecentTimeArrivedInUSAObservationStatusCodeP() {
-      OperationsTestCase<MostRecentTimeArrivedInUSAObservation> validateMostRecentTimeArrivedInUSAObservationStatusCodePTestCase = new OperationsTestCase<MostRecentTimeArrivedInUSAObservation>(
-      "validateMostRecentTimeArrivedInUSAObservationStatusCodeP",
-      operationsForOCL.getOCLValue("VALIDATE_MOST_RECENT_TIME_ARRIVED_IN_USA_OBSERVATION_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP")
-      ,objectFactory) {
+		OperationsTestCase<MostRecentTimeArrivedInUSAObservation> validateMostRecentTimeArrivedInUSAObservationStatusCodePTestCase = new OperationsTestCase<MostRecentTimeArrivedInUSAObservation>(
+			"validateMostRecentTimeArrivedInUSAObservationStatusCodeP",
+			operationsForOCL.getOCLValue("VALIDATE_MOST_RECENT_TIME_ARRIVED_IN_USA_OBSERVATION_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
 
-      @Override
-      protected void updateToFail(MostRecentTimeArrivedInUSAObservation target) {
+			@Override
+			protected void updateToFail(MostRecentTimeArrivedInUSAObservation target) {
 
-      }
+			}
 
-      @Override
-      protected void updateToPass(MostRecentTimeArrivedInUSAObservation target) {
-        target.init();
-        
-        
-        
-        
-        
+			@Override
+			protected void updateToPass(MostRecentTimeArrivedInUSAObservation target) {
+				target.init();
 
-        
-        
+			}
 
-  
-      
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
 
-  
-    
-    
-      
-        
-    
-      
-        
-      
-        
-        
-        
-        
-        
-        
-        
-      
-      
-          
-      
-        
-      }
+				return MostRecentTimeArrivedInUSAObservationOperations.validateMostRecentTimeArrivedInUSAObservationStatusCodeP(
+					(MostRecentTimeArrivedInUSAObservation) objectToTest, diagnostician, map);
+			}
 
-      @Override
-      protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-      
-      
-      
-        return MostRecentTimeArrivedInUSAObservationOperations.validateMostRecentTimeArrivedInUSAObservationStatusCodeP(
-          (MostRecentTimeArrivedInUSAObservation) objectToTest, diagnostician, map);
-      }
+		};
 
-    };
-
-    validateMostRecentTimeArrivedInUSAObservationStatusCodePTestCase.doValidationTest();
-}
+		validateMostRecentTimeArrivedInUSAObservationStatusCodePTestCase.doValidationTest();
+	}
 
 	/**
 	*
@@ -531,70 +293,36 @@ public class MostRecentTimeArrivedInUSAObservationTest extends CDAValidationTest
 	*/
 	@Test
 	public void testValidateMostRecentTimeArrivedInUSAObservationValue() {
-      OperationsTestCase<MostRecentTimeArrivedInUSAObservation> validateMostRecentTimeArrivedInUSAObservationValueTestCase = new OperationsTestCase<MostRecentTimeArrivedInUSAObservation>(
-      "validateMostRecentTimeArrivedInUSAObservationValue",
-      operationsForOCL.getOCLValue("VALIDATE_MOST_RECENT_TIME_ARRIVED_IN_USA_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP")
-      ,objectFactory) {
+		OperationsTestCase<MostRecentTimeArrivedInUSAObservation> validateMostRecentTimeArrivedInUSAObservationValueTestCase = new OperationsTestCase<MostRecentTimeArrivedInUSAObservation>(
+			"validateMostRecentTimeArrivedInUSAObservationValue",
+			operationsForOCL.getOCLValue("VALIDATE_MOST_RECENT_TIME_ARRIVED_IN_USA_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
 
-      @Override
-      protected void updateToFail(MostRecentTimeArrivedInUSAObservation target) {
+			@Override
+			protected void updateToFail(MostRecentTimeArrivedInUSAObservation target) {
 
-      }
+			}
 
-      @Override
-      protected void updateToPass(MostRecentTimeArrivedInUSAObservation target) {
-        target.init();
-        
-        
-        
-        
-        
+			@Override
+			protected void updateToPass(MostRecentTimeArrivedInUSAObservation target) {
+				target.init();
 
-        
-      
-        CD value = DatatypesFactory.eINSTANCE.createCD();
-        target.getValues().add(value);
-        
+				CD value = DatatypesFactory.eINSTANCE.createCD();
+				target.getValues().add(value);
 
-  
-      
+			}
 
-  
-    
-    
-      
-        
-    
-      
-        
-      
-        
-        
-        
-        
-        
-        
-        
-      
-      
-          
-      
-        
-      }
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
 
-      @Override
-      protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-      
-      
-      
-        return MostRecentTimeArrivedInUSAObservationOperations.validateMostRecentTimeArrivedInUSAObservationValue(
-          (MostRecentTimeArrivedInUSAObservation) objectToTest, diagnostician, map);
-      }
+				return MostRecentTimeArrivedInUSAObservationOperations.validateMostRecentTimeArrivedInUSAObservationValue(
+					(MostRecentTimeArrivedInUSAObservation) objectToTest, diagnostician, map);
+			}
 
-    };
+		};
 
-    validateMostRecentTimeArrivedInUSAObservationValueTestCase.doValidationTest();
-}
+		validateMostRecentTimeArrivedInUSAObservationValueTestCase.doValidationTest();
+	}
 
 	/**
 	*
@@ -649,17 +377,17 @@ public class MostRecentTimeArrivedInUSAObservationTest extends CDAValidationTest
 	*/
 	@Test
 	public void testConstructor() {
-          @SuppressWarnings("unused")
-      ConstructorTestClass constructorTestClass = new ConstructorTestClass();		
-  } // testConstructor
+		@SuppressWarnings("unused")
+		ConstructorTestClass constructorTestClass = new ConstructorTestClass();
+	} // testConstructor
 
 	/**
 	*
 	* @generated
 	*/
 	@Override
-	protected EObject getObjectToTest() {		
-    return null;
-  }
+	protected EObject getObjectToTest() {
+		return null;
+	}
 
 } // MostRecentTimeArrivedInUSAObservationOperations

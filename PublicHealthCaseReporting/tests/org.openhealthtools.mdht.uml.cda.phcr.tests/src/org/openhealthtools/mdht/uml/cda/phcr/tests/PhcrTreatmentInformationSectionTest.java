@@ -49,67 +49,33 @@ public class PhcrTreatmentInformationSectionTest extends CDAValidationTest {
 	*/
 	@Test
 	public void testValidatePhcrTreatmentInformationSectionTemplateId() {
-      OperationsTestCase<PhcrTreatmentInformationSection> validatePhcrTreatmentInformationSectionTemplateIdTestCase = new OperationsTestCase<PhcrTreatmentInformationSection>(
-      "validatePhcrTreatmentInformationSectionTemplateId",
-      operationsForOCL.getOCLValue("VALIDATE_PHCR_TREATMENT_INFORMATION_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP")
-      ,objectFactory) {
+		OperationsTestCase<PhcrTreatmentInformationSection> validatePhcrTreatmentInformationSectionTemplateIdTestCase = new OperationsTestCase<PhcrTreatmentInformationSection>(
+			"validatePhcrTreatmentInformationSectionTemplateId",
+			operationsForOCL.getOCLValue("VALIDATE_PHCR_TREATMENT_INFORMATION_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
 
-      @Override
-      protected void updateToFail(PhcrTreatmentInformationSection target) {
+			@Override
+			protected void updateToFail(PhcrTreatmentInformationSection target) {
 
-      }
+			}
 
-      @Override
-      protected void updateToPass(PhcrTreatmentInformationSection target) {
-        target.init();
-        
-        
-        
-        
-        
+			@Override
+			protected void updateToPass(PhcrTreatmentInformationSection target) {
+				target.init();
 
-        
-        
+			}
 
-  
-      
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
 
-  
-    
-    
-      
-        
-    
-      
-        
-      
-        
-        
-        
-        
-        
-        
-        
-      
-      
-          
-      
-        
-      }
+				return PhcrTreatmentInformationSectionOperations.validatePhcrTreatmentInformationSectionTemplateId(
+					(PhcrTreatmentInformationSection) objectToTest, diagnostician, map);
+			}
 
-      @Override
-      protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-      
-      
-      
-        return PhcrTreatmentInformationSectionOperations.validatePhcrTreatmentInformationSectionTemplateId(
-          (PhcrTreatmentInformationSection) objectToTest, diagnostician, map);
-      }
+		};
 
-    };
-
-    validatePhcrTreatmentInformationSectionTemplateIdTestCase.doValidationTest();
-}
+		validatePhcrTreatmentInformationSectionTemplateIdTestCase.doValidationTest();
+	}
 
 	/**
 	*
@@ -117,67 +83,33 @@ public class PhcrTreatmentInformationSectionTest extends CDAValidationTest {
 	*/
 	@Test
 	public void testValidatePhcrTreatmentInformationSectionCode() {
-      OperationsTestCase<PhcrTreatmentInformationSection> validatePhcrTreatmentInformationSectionCodeTestCase = new OperationsTestCase<PhcrTreatmentInformationSection>(
-      "validatePhcrTreatmentInformationSectionCode",
-      operationsForOCL.getOCLValue("VALIDATE_PHCR_TREATMENT_INFORMATION_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP")
-      ,objectFactory) {
+		OperationsTestCase<PhcrTreatmentInformationSection> validatePhcrTreatmentInformationSectionCodeTestCase = new OperationsTestCase<PhcrTreatmentInformationSection>(
+			"validatePhcrTreatmentInformationSectionCode",
+			operationsForOCL.getOCLValue("VALIDATE_PHCR_TREATMENT_INFORMATION_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
 
-      @Override
-      protected void updateToFail(PhcrTreatmentInformationSection target) {
+			@Override
+			protected void updateToFail(PhcrTreatmentInformationSection target) {
 
-      }
+			}
 
-      @Override
-      protected void updateToPass(PhcrTreatmentInformationSection target) {
-        target.init();
-        
-        
-        
-        
-        
+			@Override
+			protected void updateToPass(PhcrTreatmentInformationSection target) {
+				target.init();
 
-        
-        
+			}
 
-  
-      
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
 
-  
-    
-    
-      
-        
-    
-      
-        
-      
-        
-        
-        
-        
-        
-        
-        
-      
-      
-          
-      
-        
-      }
+				return PhcrTreatmentInformationSectionOperations.validatePhcrTreatmentInformationSectionCode(
+					(PhcrTreatmentInformationSection) objectToTest, diagnostician, map);
+			}
 
-      @Override
-      protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-      
-      
-      
-        return PhcrTreatmentInformationSectionOperations.validatePhcrTreatmentInformationSectionCode(
-          (PhcrTreatmentInformationSection) objectToTest, diagnostician, map);
-      }
+		};
 
-    };
-
-    validatePhcrTreatmentInformationSectionCodeTestCase.doValidationTest();
-}
+		validatePhcrTreatmentInformationSectionCodeTestCase.doValidationTest();
+	}
 
 	/**
 	*
@@ -185,67 +117,33 @@ public class PhcrTreatmentInformationSectionTest extends CDAValidationTest {
 	*/
 	@Test
 	public void testValidatePhcrTreatmentInformationSectionCodeP() {
-      OperationsTestCase<PhcrTreatmentInformationSection> validatePhcrTreatmentInformationSectionCodePTestCase = new OperationsTestCase<PhcrTreatmentInformationSection>(
-      "validatePhcrTreatmentInformationSectionCodeP",
-      operationsForOCL.getOCLValue("VALIDATE_PHCR_TREATMENT_INFORMATION_SECTION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP")
-      ,objectFactory) {
+		OperationsTestCase<PhcrTreatmentInformationSection> validatePhcrTreatmentInformationSectionCodePTestCase = new OperationsTestCase<PhcrTreatmentInformationSection>(
+			"validatePhcrTreatmentInformationSectionCodeP",
+			operationsForOCL.getOCLValue("VALIDATE_PHCR_TREATMENT_INFORMATION_SECTION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
 
-      @Override
-      protected void updateToFail(PhcrTreatmentInformationSection target) {
+			@Override
+			protected void updateToFail(PhcrTreatmentInformationSection target) {
 
-      }
+			}
 
-      @Override
-      protected void updateToPass(PhcrTreatmentInformationSection target) {
-        target.init();
-        
-        
-        
-        
-        
+			@Override
+			protected void updateToPass(PhcrTreatmentInformationSection target) {
+				target.init();
 
-        
-        
+			}
 
-  
-      
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
 
-  
-    
-    
-      
-        
-    
-      
-        
-      
-        
-        
-        
-        
-        
-        
-        
-      
-      
-          
-      
-        
-      }
+				return PhcrTreatmentInformationSectionOperations.validatePhcrTreatmentInformationSectionCodeP(
+					(PhcrTreatmentInformationSection) objectToTest, diagnostician, map);
+			}
 
-      @Override
-      protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-      
-      
-      
-        return PhcrTreatmentInformationSectionOperations.validatePhcrTreatmentInformationSectionCodeP(
-          (PhcrTreatmentInformationSection) objectToTest, diagnostician, map);
-      }
+		};
 
-    };
-
-    validatePhcrTreatmentInformationSectionCodePTestCase.doValidationTest();
-}
+		validatePhcrTreatmentInformationSectionCodePTestCase.doValidationTest();
+	}
 
 	/**
 	*
@@ -253,70 +151,36 @@ public class PhcrTreatmentInformationSectionTest extends CDAValidationTest {
 	*/
 	@Test
 	public void testValidatePhcrTreatmentInformationSectionTitle() {
-      OperationsTestCase<PhcrTreatmentInformationSection> validatePhcrTreatmentInformationSectionTitleTestCase = new OperationsTestCase<PhcrTreatmentInformationSection>(
-      "validatePhcrTreatmentInformationSectionTitle",
-      operationsForOCL.getOCLValue("VALIDATE_PHCR_TREATMENT_INFORMATION_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP")
-      ,objectFactory) {
+		OperationsTestCase<PhcrTreatmentInformationSection> validatePhcrTreatmentInformationSectionTitleTestCase = new OperationsTestCase<PhcrTreatmentInformationSection>(
+			"validatePhcrTreatmentInformationSectionTitle",
+			operationsForOCL.getOCLValue("VALIDATE_PHCR_TREATMENT_INFORMATION_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
 
-      @Override
-      protected void updateToFail(PhcrTreatmentInformationSection target) {
+			@Override
+			protected void updateToFail(PhcrTreatmentInformationSection target) {
 
-      }
+			}
 
-      @Override
-      protected void updateToPass(PhcrTreatmentInformationSection target) {
-        target.init();
-        
-        
-        
-        
-        
+			@Override
+			protected void updateToPass(PhcrTreatmentInformationSection target) {
+				target.init();
 
-        
-        
+				ST title = DatatypesFactory.eINSTANCE.createST("title");
+				target.setTitle(title);
 
-  
-    
-        ST  title = DatatypesFactory.eINSTANCE.createST("title");
-        target.setTitle(title );
-        
+			}
 
-  
-    
-    
-      
-        
-    
-      
-        
-      
-        
-        
-        
-        
-        
-        
-        
-      
-      
-          
-      
-        
-      }
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
 
-      @Override
-      protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-      
-      
-      
-        return PhcrTreatmentInformationSectionOperations.validatePhcrTreatmentInformationSectionTitle(
-          (PhcrTreatmentInformationSection) objectToTest, diagnostician, map);
-      }
+				return PhcrTreatmentInformationSectionOperations.validatePhcrTreatmentInformationSectionTitle(
+					(PhcrTreatmentInformationSection) objectToTest, diagnostician, map);
+			}
 
-    };
+		};
 
-    validatePhcrTreatmentInformationSectionTitleTestCase.doValidationTest();
-}
+		validatePhcrTreatmentInformationSectionTitleTestCase.doValidationTest();
+	}
 
 	/**
 	*
@@ -324,70 +188,36 @@ public class PhcrTreatmentInformationSectionTest extends CDAValidationTest {
 	*/
 	@Test
 	public void testValidatePhcrTreatmentInformationSectionText() {
-      OperationsTestCase<PhcrTreatmentInformationSection> validatePhcrTreatmentInformationSectionTextTestCase = new OperationsTestCase<PhcrTreatmentInformationSection>(
-      "validatePhcrTreatmentInformationSectionText",
-      operationsForOCL.getOCLValue("VALIDATE_PHCR_TREATMENT_INFORMATION_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP")
-      ,objectFactory) {
+		OperationsTestCase<PhcrTreatmentInformationSection> validatePhcrTreatmentInformationSectionTextTestCase = new OperationsTestCase<PhcrTreatmentInformationSection>(
+			"validatePhcrTreatmentInformationSectionText",
+			operationsForOCL.getOCLValue("VALIDATE_PHCR_TREATMENT_INFORMATION_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
 
-      @Override
-      protected void updateToFail(PhcrTreatmentInformationSection target) {
+			@Override
+			protected void updateToFail(PhcrTreatmentInformationSection target) {
 
-      }
+			}
 
-      @Override
-      protected void updateToPass(PhcrTreatmentInformationSection target) {
-        target.init();
-        
-        
-        
-        
-        
+			@Override
+			protected void updateToPass(PhcrTreatmentInformationSection target) {
+				target.init();
 
-        
-        
+				StrucDocText text = CDAFactory.eINSTANCE.createStrucDocText();
+				target.setText(text);
 
-  
-      
+			}
 
-  
-    
-        StrucDocText text = CDAFactory.eINSTANCE.createStrucDocText();
-        target.setText(text );
-      
-    
-      
-        
-    
-      
-        
-      
-        
-        
-        
-        
-        
-        
-        
-      
-      
-          
-      
-        
-      }
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
 
-      @Override
-      protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-      
-      
-      
-        return PhcrTreatmentInformationSectionOperations.validatePhcrTreatmentInformationSectionText(
-          (PhcrTreatmentInformationSection) objectToTest, diagnostician, map);
-      }
+				return PhcrTreatmentInformationSectionOperations.validatePhcrTreatmentInformationSectionText(
+					(PhcrTreatmentInformationSection) objectToTest, diagnostician, map);
+			}
 
-    };
+		};
 
-    validatePhcrTreatmentInformationSectionTextTestCase.doValidationTest();
-}
+		validatePhcrTreatmentInformationSectionTextTestCase.doValidationTest();
+	}
 
 	/**
 	*
@@ -395,67 +225,33 @@ public class PhcrTreatmentInformationSectionTest extends CDAValidationTest {
 	*/
 	@Test
 	public void testValidatePhcrTreatmentInformationSectionTherapeuticRegimenAct() {
-      OperationsTestCase<PhcrTreatmentInformationSection> validatePhcrTreatmentInformationSectionTherapeuticRegimenActTestCase = new OperationsTestCase<PhcrTreatmentInformationSection>(
-      "validatePhcrTreatmentInformationSectionTherapeuticRegimenAct",
-      operationsForOCL.getOCLValue("VALIDATE_PHCR_TREATMENT_INFORMATION_SECTION_THERAPEUTIC_REGIMEN_ACT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP")
-      ,objectFactory) {
+		OperationsTestCase<PhcrTreatmentInformationSection> validatePhcrTreatmentInformationSectionTherapeuticRegimenActTestCase = new OperationsTestCase<PhcrTreatmentInformationSection>(
+			"validatePhcrTreatmentInformationSectionTherapeuticRegimenAct",
+			operationsForOCL.getOCLValue("VALIDATE_PHCR_TREATMENT_INFORMATION_SECTION_THERAPEUTIC_REGIMEN_ACT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
 
-      @Override
-      protected void updateToFail(PhcrTreatmentInformationSection target) {
+			@Override
+			protected void updateToFail(PhcrTreatmentInformationSection target) {
 
-      }
+			}
 
-      @Override
-      protected void updateToPass(PhcrTreatmentInformationSection target) {
-        target.init();
-        
-        
-        
-        
-        
+			@Override
+			protected void updateToPass(PhcrTreatmentInformationSection target) {
+				target.init();
 
-        
-        
+			}
 
-  
-      
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
 
-  
-    
-    
-      
-        
-    
-      
-        
-      
-        
-        
-        
-        
-        
-        
-        
-      
-      
-          
-      
-        
-      }
+				return PhcrTreatmentInformationSectionOperations.validatePhcrTreatmentInformationSectionTherapeuticRegimenAct(
+					(PhcrTreatmentInformationSection) objectToTest, diagnostician, map);
+			}
 
-      @Override
-      protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-      
-      
-      
-        return PhcrTreatmentInformationSectionOperations.validatePhcrTreatmentInformationSectionTherapeuticRegimenAct(
-          (PhcrTreatmentInformationSection) objectToTest, diagnostician, map);
-      }
+		};
 
-    };
-
-    validatePhcrTreatmentInformationSectionTherapeuticRegimenActTestCase.doValidationTest();
-}
+		validatePhcrTreatmentInformationSectionTherapeuticRegimenActTestCase.doValidationTest();
+	}
 
 	/**
 	*
@@ -464,13 +260,10 @@ public class PhcrTreatmentInformationSectionTest extends CDAValidationTest {
 	@Test
 	public void testGetTherapeuticRegimenAct() {
 
+		PhcrTreatmentInformationSection target = objectFactory.create();
+		target.getTherapeuticRegimenAct();
 
-PhcrTreatmentInformationSection target = objectFactory.create();
-target.getTherapeuticRegimenAct();
-
-
-
-}
+	}
 
 	/**
 	*
@@ -525,17 +318,17 @@ target.getTherapeuticRegimenAct();
 	*/
 	@Test
 	public void testConstructor() {
-          @SuppressWarnings("unused")
-      ConstructorTestClass constructorTestClass = new ConstructorTestClass();		
-  } // testConstructor
+		@SuppressWarnings("unused")
+		ConstructorTestClass constructorTestClass = new ConstructorTestClass();
+	} // testConstructor
 
 	/**
 	*
 	* @generated
 	*/
 	@Override
-	protected EObject getObjectToTest() {		
-    return null;
-  }
+	protected EObject getObjectToTest() {
+		return null;
+	}
 
 } // PhcrTreatmentInformationSectionOperations

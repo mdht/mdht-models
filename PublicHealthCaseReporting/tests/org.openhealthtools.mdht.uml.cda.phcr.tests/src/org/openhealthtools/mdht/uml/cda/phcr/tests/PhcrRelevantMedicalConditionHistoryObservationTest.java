@@ -53,67 +53,33 @@ public class PhcrRelevantMedicalConditionHistoryObservationTest extends CDAValid
 	*/
 	@Test
 	public void testValidatePhcrRelevantMedicalConditionHistoryObservationTemplateId() {
-      OperationsTestCase<PhcrRelevantMedicalConditionHistoryObservation> validatePhcrRelevantMedicalConditionHistoryObservationTemplateIdTestCase = new OperationsTestCase<PhcrRelevantMedicalConditionHistoryObservation>(
-      "validatePhcrRelevantMedicalConditionHistoryObservationTemplateId",
-      operationsForOCL.getOCLValue("VALIDATE_PHCR_RELEVANT_MEDICAL_CONDITION_HISTORY_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP")
-      ,objectFactory) {
+		OperationsTestCase<PhcrRelevantMedicalConditionHistoryObservation> validatePhcrRelevantMedicalConditionHistoryObservationTemplateIdTestCase = new OperationsTestCase<PhcrRelevantMedicalConditionHistoryObservation>(
+			"validatePhcrRelevantMedicalConditionHistoryObservationTemplateId",
+			operationsForOCL.getOCLValue("VALIDATE_PHCR_RELEVANT_MEDICAL_CONDITION_HISTORY_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
 
-      @Override
-      protected void updateToFail(PhcrRelevantMedicalConditionHistoryObservation target) {
+			@Override
+			protected void updateToFail(PhcrRelevantMedicalConditionHistoryObservation target) {
 
-      }
+			}
 
-      @Override
-      protected void updateToPass(PhcrRelevantMedicalConditionHistoryObservation target) {
-        target.init();
-        
-        
-        
-        
-        
+			@Override
+			protected void updateToPass(PhcrRelevantMedicalConditionHistoryObservation target) {
+				target.init();
 
-        
-        
+			}
 
-  
-      
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
 
-  
-    
-    
-      
-        
-    
-      
-        
-      
-        
-        
-        
-        
-        
-        
-        
-      
-      
-          
-      
-        
-      }
+				return PhcrRelevantMedicalConditionHistoryObservationOperations.validatePhcrRelevantMedicalConditionHistoryObservationTemplateId(
+					(PhcrRelevantMedicalConditionHistoryObservation) objectToTest, diagnostician, map);
+			}
 
-      @Override
-      protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-      
-      
-      
-        return PhcrRelevantMedicalConditionHistoryObservationOperations.validatePhcrRelevantMedicalConditionHistoryObservationTemplateId(
-          (PhcrRelevantMedicalConditionHistoryObservation) objectToTest, diagnostician, map);
-      }
+		};
 
-    };
-
-    validatePhcrRelevantMedicalConditionHistoryObservationTemplateIdTestCase.doValidationTest();
-}
+		validatePhcrRelevantMedicalConditionHistoryObservationTemplateIdTestCase.doValidationTest();
+	}
 
 	/**
 	*
@@ -121,67 +87,33 @@ public class PhcrRelevantMedicalConditionHistoryObservationTest extends CDAValid
 	*/
 	@Test
 	public void testValidatePhcrRelevantMedicalConditionHistoryObservationClassCode() {
-      OperationsTestCase<PhcrRelevantMedicalConditionHistoryObservation> validatePhcrRelevantMedicalConditionHistoryObservationClassCodeTestCase = new OperationsTestCase<PhcrRelevantMedicalConditionHistoryObservation>(
-      "validatePhcrRelevantMedicalConditionHistoryObservationClassCode",
-      operationsForOCL.getOCLValue("VALIDATE_PHCR_RELEVANT_MEDICAL_CONDITION_HISTORY_OBSERVATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP")
-      ,objectFactory) {
+		OperationsTestCase<PhcrRelevantMedicalConditionHistoryObservation> validatePhcrRelevantMedicalConditionHistoryObservationClassCodeTestCase = new OperationsTestCase<PhcrRelevantMedicalConditionHistoryObservation>(
+			"validatePhcrRelevantMedicalConditionHistoryObservationClassCode",
+			operationsForOCL.getOCLValue("VALIDATE_PHCR_RELEVANT_MEDICAL_CONDITION_HISTORY_OBSERVATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
 
-      @Override
-      protected void updateToFail(PhcrRelevantMedicalConditionHistoryObservation target) {
+			@Override
+			protected void updateToFail(PhcrRelevantMedicalConditionHistoryObservation target) {
 
-      }
+			}
 
-      @Override
-      protected void updateToPass(PhcrRelevantMedicalConditionHistoryObservation target) {
-        target.init();
-        
-        
-        
-        
-        
+			@Override
+			protected void updateToPass(PhcrRelevantMedicalConditionHistoryObservation target) {
+				target.init();
 
-        
-        
+			}
 
-  
-      
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
 
-  
-    
-    
-      
-        
-    
-      
-        
-      
-        
-        
-        
-        
-        
-        
-        
-      
-      
-          
-      
-        
-      }
+				return PhcrRelevantMedicalConditionHistoryObservationOperations.validatePhcrRelevantMedicalConditionHistoryObservationClassCode(
+					(PhcrRelevantMedicalConditionHistoryObservation) objectToTest, diagnostician, map);
+			}
 
-      @Override
-      protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-      
-      
-      
-        return PhcrRelevantMedicalConditionHistoryObservationOperations.validatePhcrRelevantMedicalConditionHistoryObservationClassCode(
-          (PhcrRelevantMedicalConditionHistoryObservation) objectToTest, diagnostician, map);
-      }
+		};
 
-    };
-
-    validatePhcrRelevantMedicalConditionHistoryObservationClassCodeTestCase.doValidationTest();
-}
+		validatePhcrRelevantMedicalConditionHistoryObservationClassCodeTestCase.doValidationTest();
+	}
 
 	/**
 	*
@@ -189,67 +121,33 @@ public class PhcrRelevantMedicalConditionHistoryObservationTest extends CDAValid
 	*/
 	@Test
 	public void testValidatePhcrRelevantMedicalConditionHistoryObservationCodeP() {
-      OperationsTestCase<PhcrRelevantMedicalConditionHistoryObservation> validatePhcrRelevantMedicalConditionHistoryObservationCodePTestCase = new OperationsTestCase<PhcrRelevantMedicalConditionHistoryObservation>(
-      "validatePhcrRelevantMedicalConditionHistoryObservationCodeP",
-      operationsForOCL.getOCLValue("VALIDATE_PHCR_RELEVANT_MEDICAL_CONDITION_HISTORY_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP")
-      ,objectFactory) {
+		OperationsTestCase<PhcrRelevantMedicalConditionHistoryObservation> validatePhcrRelevantMedicalConditionHistoryObservationCodePTestCase = new OperationsTestCase<PhcrRelevantMedicalConditionHistoryObservation>(
+			"validatePhcrRelevantMedicalConditionHistoryObservationCodeP",
+			operationsForOCL.getOCLValue("VALIDATE_PHCR_RELEVANT_MEDICAL_CONDITION_HISTORY_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
 
-      @Override
-      protected void updateToFail(PhcrRelevantMedicalConditionHistoryObservation target) {
+			@Override
+			protected void updateToFail(PhcrRelevantMedicalConditionHistoryObservation target) {
 
-      }
+			}
 
-      @Override
-      protected void updateToPass(PhcrRelevantMedicalConditionHistoryObservation target) {
-        target.init();
-        
-        
-        
-        
-        
+			@Override
+			protected void updateToPass(PhcrRelevantMedicalConditionHistoryObservation target) {
+				target.init();
 
-        
-        
+			}
 
-  
-      
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
 
-  
-    
-    
-      
-        
-    
-      
-        
-      
-        
-        
-        
-        
-        
-        
-        
-      
-      
-          
-      
-        
-      }
+				return PhcrRelevantMedicalConditionHistoryObservationOperations.validatePhcrRelevantMedicalConditionHistoryObservationCodeP(
+					(PhcrRelevantMedicalConditionHistoryObservation) objectToTest, diagnostician, map);
+			}
 
-      @Override
-      protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-      
-      
-      
-        return PhcrRelevantMedicalConditionHistoryObservationOperations.validatePhcrRelevantMedicalConditionHistoryObservationCodeP(
-          (PhcrRelevantMedicalConditionHistoryObservation) objectToTest, diagnostician, map);
-      }
+		};
 
-    };
-
-    validatePhcrRelevantMedicalConditionHistoryObservationCodePTestCase.doValidationTest();
-}
+		validatePhcrRelevantMedicalConditionHistoryObservationCodePTestCase.doValidationTest();
+	}
 
 	/**
 	*
@@ -257,70 +155,36 @@ public class PhcrRelevantMedicalConditionHistoryObservationTest extends CDAValid
 	*/
 	@Test
 	public void testValidatePhcrRelevantMedicalConditionHistoryObservationCode() {
-      OperationsTestCase<PhcrRelevantMedicalConditionHistoryObservation> validatePhcrRelevantMedicalConditionHistoryObservationCodeTestCase = new OperationsTestCase<PhcrRelevantMedicalConditionHistoryObservation>(
-      "validatePhcrRelevantMedicalConditionHistoryObservationCode",
-      operationsForOCL.getOCLValue("VALIDATE_PHCR_RELEVANT_MEDICAL_CONDITION_HISTORY_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP")
-      ,objectFactory) {
+		OperationsTestCase<PhcrRelevantMedicalConditionHistoryObservation> validatePhcrRelevantMedicalConditionHistoryObservationCodeTestCase = new OperationsTestCase<PhcrRelevantMedicalConditionHistoryObservation>(
+			"validatePhcrRelevantMedicalConditionHistoryObservationCode",
+			operationsForOCL.getOCLValue("VALIDATE_PHCR_RELEVANT_MEDICAL_CONDITION_HISTORY_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
 
-      @Override
-      protected void updateToFail(PhcrRelevantMedicalConditionHistoryObservation target) {
+			@Override
+			protected void updateToFail(PhcrRelevantMedicalConditionHistoryObservation target) {
 
-      }
+			}
 
-      @Override
-      protected void updateToPass(PhcrRelevantMedicalConditionHistoryObservation target) {
-        target.init();
-        
-        
-        
-        
-        
+			@Override
+			protected void updateToPass(PhcrRelevantMedicalConditionHistoryObservation target) {
+				target.init();
 
-        
-        
+				CD cd = DatatypesFactory.eINSTANCE.createCD();
+				target.setCode(cd);
 
-  
-      
+			}
 
-  
-    
-    
-      
-        
-    
-      
-        
-      
-        
-        
-        
-      
-        CD cd  = DatatypesFactory.eINSTANCE.createCD();
-        target.setCode(cd);
-        
-        
-        
-        
-      
-      
-          
-      
-        
-      }
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
 
-      @Override
-      protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-      
-      
-      
-        return PhcrRelevantMedicalConditionHistoryObservationOperations.validatePhcrRelevantMedicalConditionHistoryObservationCode(
-          (PhcrRelevantMedicalConditionHistoryObservation) objectToTest, diagnostician, map);
-      }
+				return PhcrRelevantMedicalConditionHistoryObservationOperations.validatePhcrRelevantMedicalConditionHistoryObservationCode(
+					(PhcrRelevantMedicalConditionHistoryObservation) objectToTest, diagnostician, map);
+			}
 
-    };
+		};
 
-    validatePhcrRelevantMedicalConditionHistoryObservationCodeTestCase.doValidationTest();
-}
+		validatePhcrRelevantMedicalConditionHistoryObservationCodeTestCase.doValidationTest();
+	}
 
 	/**
 	*
@@ -328,70 +192,36 @@ public class PhcrRelevantMedicalConditionHistoryObservationTest extends CDAValid
 	*/
 	@Test
 	public void testValidatePhcrRelevantMedicalConditionHistoryObservationEffectiveTime() {
-      OperationsTestCase<PhcrRelevantMedicalConditionHistoryObservation> validatePhcrRelevantMedicalConditionHistoryObservationEffectiveTimeTestCase = new OperationsTestCase<PhcrRelevantMedicalConditionHistoryObservation>(
-      "validatePhcrRelevantMedicalConditionHistoryObservationEffectiveTime",
-      operationsForOCL.getOCLValue("VALIDATE_PHCR_RELEVANT_MEDICAL_CONDITION_HISTORY_OBSERVATION_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP")
-      ,objectFactory) {
+		OperationsTestCase<PhcrRelevantMedicalConditionHistoryObservation> validatePhcrRelevantMedicalConditionHistoryObservationEffectiveTimeTestCase = new OperationsTestCase<PhcrRelevantMedicalConditionHistoryObservation>(
+			"validatePhcrRelevantMedicalConditionHistoryObservationEffectiveTime",
+			operationsForOCL.getOCLValue("VALIDATE_PHCR_RELEVANT_MEDICAL_CONDITION_HISTORY_OBSERVATION_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
 
-      @Override
-      protected void updateToFail(PhcrRelevantMedicalConditionHistoryObservation target) {
+			@Override
+			protected void updateToFail(PhcrRelevantMedicalConditionHistoryObservation target) {
 
-      }
+			}
 
-      @Override
-      protected void updateToPass(PhcrRelevantMedicalConditionHistoryObservation target) {
-        target.init();
-        
-        
-          IVL_TS ts = DatatypesFactory .eINSTANCE.createIVL_TS();
-          target.setEffectiveTime(ts );								
-        
-        
-        
-        
+			@Override
+			protected void updateToPass(PhcrRelevantMedicalConditionHistoryObservation target) {
+				target.init();
 
-        
-        
+				IVL_TS ts = DatatypesFactory.eINSTANCE.createIVL_TS();
+				target.setEffectiveTime(ts);
 
-  
-      
+			}
 
-  
-    
-    
-      
-        
-    
-      
-        
-      
-        
-        
-        
-        
-        
-        
-        
-      
-      
-          
-      
-        
-      }
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
 
-      @Override
-      protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-      
-      
-      
-        return PhcrRelevantMedicalConditionHistoryObservationOperations.validatePhcrRelevantMedicalConditionHistoryObservationEffectiveTime(
-          (PhcrRelevantMedicalConditionHistoryObservation) objectToTest, diagnostician, map);
-      }
+				return PhcrRelevantMedicalConditionHistoryObservationOperations.validatePhcrRelevantMedicalConditionHistoryObservationEffectiveTime(
+					(PhcrRelevantMedicalConditionHistoryObservation) objectToTest, diagnostician, map);
+			}
 
-    };
+		};
 
-    validatePhcrRelevantMedicalConditionHistoryObservationEffectiveTimeTestCase.doValidationTest();
-}
+		validatePhcrRelevantMedicalConditionHistoryObservationEffectiveTimeTestCase.doValidationTest();
+	}
 
 	/**
 	*
@@ -399,67 +229,33 @@ public class PhcrRelevantMedicalConditionHistoryObservationTest extends CDAValid
 	*/
 	@Test
 	public void testValidatePhcrRelevantMedicalConditionHistoryObservationMoodCode() {
-      OperationsTestCase<PhcrRelevantMedicalConditionHistoryObservation> validatePhcrRelevantMedicalConditionHistoryObservationMoodCodeTestCase = new OperationsTestCase<PhcrRelevantMedicalConditionHistoryObservation>(
-      "validatePhcrRelevantMedicalConditionHistoryObservationMoodCode",
-      operationsForOCL.getOCLValue("VALIDATE_PHCR_RELEVANT_MEDICAL_CONDITION_HISTORY_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP")
-      ,objectFactory) {
+		OperationsTestCase<PhcrRelevantMedicalConditionHistoryObservation> validatePhcrRelevantMedicalConditionHistoryObservationMoodCodeTestCase = new OperationsTestCase<PhcrRelevantMedicalConditionHistoryObservation>(
+			"validatePhcrRelevantMedicalConditionHistoryObservationMoodCode",
+			operationsForOCL.getOCLValue("VALIDATE_PHCR_RELEVANT_MEDICAL_CONDITION_HISTORY_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
 
-      @Override
-      protected void updateToFail(PhcrRelevantMedicalConditionHistoryObservation target) {
+			@Override
+			protected void updateToFail(PhcrRelevantMedicalConditionHistoryObservation target) {
 
-      }
+			}
 
-      @Override
-      protected void updateToPass(PhcrRelevantMedicalConditionHistoryObservation target) {
-        target.init();
-        
-        
-        
-        
-        
+			@Override
+			protected void updateToPass(PhcrRelevantMedicalConditionHistoryObservation target) {
+				target.init();
 
-        
-        
+			}
 
-  
-      
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
 
-  
-    
-    
-      
-        
-    
-      
-        
-      
-        
-        
-        
-        
-        
-        
-        
-      
-      
-          
-      
-        
-      }
+				return PhcrRelevantMedicalConditionHistoryObservationOperations.validatePhcrRelevantMedicalConditionHistoryObservationMoodCode(
+					(PhcrRelevantMedicalConditionHistoryObservation) objectToTest, diagnostician, map);
+			}
 
-      @Override
-      protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-      
-      
-      
-        return PhcrRelevantMedicalConditionHistoryObservationOperations.validatePhcrRelevantMedicalConditionHistoryObservationMoodCode(
-          (PhcrRelevantMedicalConditionHistoryObservation) objectToTest, diagnostician, map);
-      }
+		};
 
-    };
-
-    validatePhcrRelevantMedicalConditionHistoryObservationMoodCodeTestCase.doValidationTest();
-}
+		validatePhcrRelevantMedicalConditionHistoryObservationMoodCodeTestCase.doValidationTest();
+	}
 
 	/**
 	*
@@ -467,67 +263,33 @@ public class PhcrRelevantMedicalConditionHistoryObservationTest extends CDAValid
 	*/
 	@Test
 	public void testValidatePhcrRelevantMedicalConditionHistoryObservationNegationInd() {
-      OperationsTestCase<PhcrRelevantMedicalConditionHistoryObservation> validatePhcrRelevantMedicalConditionHistoryObservationNegationIndTestCase = new OperationsTestCase<PhcrRelevantMedicalConditionHistoryObservation>(
-      "validatePhcrRelevantMedicalConditionHistoryObservationNegationInd",
-      operationsForOCL.getOCLValue("VALIDATE_PHCR_RELEVANT_MEDICAL_CONDITION_HISTORY_OBSERVATION_NEGATION_IND__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP")
-      ,objectFactory) {
+		OperationsTestCase<PhcrRelevantMedicalConditionHistoryObservation> validatePhcrRelevantMedicalConditionHistoryObservationNegationIndTestCase = new OperationsTestCase<PhcrRelevantMedicalConditionHistoryObservation>(
+			"validatePhcrRelevantMedicalConditionHistoryObservationNegationInd",
+			operationsForOCL.getOCLValue("VALIDATE_PHCR_RELEVANT_MEDICAL_CONDITION_HISTORY_OBSERVATION_NEGATION_IND__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
 
-      @Override
-      protected void updateToFail(PhcrRelevantMedicalConditionHistoryObservation target) {
+			@Override
+			protected void updateToFail(PhcrRelevantMedicalConditionHistoryObservation target) {
 
-      }
+			}
 
-      @Override
-      protected void updateToPass(PhcrRelevantMedicalConditionHistoryObservation target) {
-        target.init();
-        
-        
-        
-        
-        
+			@Override
+			protected void updateToPass(PhcrRelevantMedicalConditionHistoryObservation target) {
+				target.init();
 
-        
-        
+			}
 
-  
-      
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
 
-  
-    
-    
-      
-        
-    
-      
-        
-      
-        
-        
-        
-        
-        
-        
-        
-      
-      
-          
-      
-        
-      }
+				return PhcrRelevantMedicalConditionHistoryObservationOperations.validatePhcrRelevantMedicalConditionHistoryObservationNegationInd(
+					(PhcrRelevantMedicalConditionHistoryObservation) objectToTest, diagnostician, map);
+			}
 
-      @Override
-      protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-      
-      
-      
-        return PhcrRelevantMedicalConditionHistoryObservationOperations.validatePhcrRelevantMedicalConditionHistoryObservationNegationInd(
-          (PhcrRelevantMedicalConditionHistoryObservation) objectToTest, diagnostician, map);
-      }
+		};
 
-    };
-
-    validatePhcrRelevantMedicalConditionHistoryObservationNegationIndTestCase.doValidationTest();
-}
+		validatePhcrRelevantMedicalConditionHistoryObservationNegationIndTestCase.doValidationTest();
+	}
 
 	/**
 	*
@@ -535,70 +297,36 @@ public class PhcrRelevantMedicalConditionHistoryObservationTest extends CDAValid
 	*/
 	@Test
 	public void testValidatePhcrRelevantMedicalConditionHistoryObservationStatusCode() {
-      OperationsTestCase<PhcrRelevantMedicalConditionHistoryObservation> validatePhcrRelevantMedicalConditionHistoryObservationStatusCodeTestCase = new OperationsTestCase<PhcrRelevantMedicalConditionHistoryObservation>(
-      "validatePhcrRelevantMedicalConditionHistoryObservationStatusCode",
-      operationsForOCL.getOCLValue("VALIDATE_PHCR_RELEVANT_MEDICAL_CONDITION_HISTORY_OBSERVATION_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP")
-      ,objectFactory) {
+		OperationsTestCase<PhcrRelevantMedicalConditionHistoryObservation> validatePhcrRelevantMedicalConditionHistoryObservationStatusCodeTestCase = new OperationsTestCase<PhcrRelevantMedicalConditionHistoryObservation>(
+			"validatePhcrRelevantMedicalConditionHistoryObservationStatusCode",
+			operationsForOCL.getOCLValue("VALIDATE_PHCR_RELEVANT_MEDICAL_CONDITION_HISTORY_OBSERVATION_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
 
-      @Override
-      protected void updateToFail(PhcrRelevantMedicalConditionHistoryObservation target) {
+			@Override
+			protected void updateToFail(PhcrRelevantMedicalConditionHistoryObservation target) {
 
-      }
+			}
 
-      @Override
-      protected void updateToPass(PhcrRelevantMedicalConditionHistoryObservation target) {
-        target.init();
-        
-        
-        
-        
-      
-        CS cs = DatatypesFactory.eINSTANCE.createCS("completed");
-        target.setStatusCode(cs);
-        
+			@Override
+			protected void updateToPass(PhcrRelevantMedicalConditionHistoryObservation target) {
+				target.init();
 
-        
-        
+				CS cs = DatatypesFactory.eINSTANCE.createCS("completed");
+				target.setStatusCode(cs);
 
-  
-      
+			}
 
-  
-    
-    
-      
-        
-    
-      
-        
-      
-        
-        
-        
-        
-        
-        
-        
-      
-      
-          
-      
-        
-      }
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
 
-      @Override
-      protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-      
-      
-      
-        return PhcrRelevantMedicalConditionHistoryObservationOperations.validatePhcrRelevantMedicalConditionHistoryObservationStatusCode(
-          (PhcrRelevantMedicalConditionHistoryObservation) objectToTest, diagnostician, map);
-      }
+				return PhcrRelevantMedicalConditionHistoryObservationOperations.validatePhcrRelevantMedicalConditionHistoryObservationStatusCode(
+					(PhcrRelevantMedicalConditionHistoryObservation) objectToTest, diagnostician, map);
+			}
 
-    };
+		};
 
-    validatePhcrRelevantMedicalConditionHistoryObservationStatusCodeTestCase.doValidationTest();
-}
+		validatePhcrRelevantMedicalConditionHistoryObservationStatusCodeTestCase.doValidationTest();
+	}
 
 	/**
 	*
@@ -606,67 +334,33 @@ public class PhcrRelevantMedicalConditionHistoryObservationTest extends CDAValid
 	*/
 	@Test
 	public void testValidatePhcrRelevantMedicalConditionHistoryObservationStatusCodeP() {
-      OperationsTestCase<PhcrRelevantMedicalConditionHistoryObservation> validatePhcrRelevantMedicalConditionHistoryObservationStatusCodePTestCase = new OperationsTestCase<PhcrRelevantMedicalConditionHistoryObservation>(
-      "validatePhcrRelevantMedicalConditionHistoryObservationStatusCodeP",
-      operationsForOCL.getOCLValue("VALIDATE_PHCR_RELEVANT_MEDICAL_CONDITION_HISTORY_OBSERVATION_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP")
-      ,objectFactory) {
+		OperationsTestCase<PhcrRelevantMedicalConditionHistoryObservation> validatePhcrRelevantMedicalConditionHistoryObservationStatusCodePTestCase = new OperationsTestCase<PhcrRelevantMedicalConditionHistoryObservation>(
+			"validatePhcrRelevantMedicalConditionHistoryObservationStatusCodeP",
+			operationsForOCL.getOCLValue("VALIDATE_PHCR_RELEVANT_MEDICAL_CONDITION_HISTORY_OBSERVATION_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
 
-      @Override
-      protected void updateToFail(PhcrRelevantMedicalConditionHistoryObservation target) {
+			@Override
+			protected void updateToFail(PhcrRelevantMedicalConditionHistoryObservation target) {
 
-      }
+			}
 
-      @Override
-      protected void updateToPass(PhcrRelevantMedicalConditionHistoryObservation target) {
-        target.init();
-        
-        
-        
-        
-        
+			@Override
+			protected void updateToPass(PhcrRelevantMedicalConditionHistoryObservation target) {
+				target.init();
 
-        
-        
+			}
 
-  
-      
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
 
-  
-    
-    
-      
-        
-    
-      
-        
-      
-        
-        
-        
-        
-        
-        
-        
-      
-      
-          
-      
-        
-      }
+				return PhcrRelevantMedicalConditionHistoryObservationOperations.validatePhcrRelevantMedicalConditionHistoryObservationStatusCodeP(
+					(PhcrRelevantMedicalConditionHistoryObservation) objectToTest, diagnostician, map);
+			}
 
-      @Override
-      protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-      
-      
-      
-        return PhcrRelevantMedicalConditionHistoryObservationOperations.validatePhcrRelevantMedicalConditionHistoryObservationStatusCodeP(
-          (PhcrRelevantMedicalConditionHistoryObservation) objectToTest, diagnostician, map);
-      }
+		};
 
-    };
-
-    validatePhcrRelevantMedicalConditionHistoryObservationStatusCodePTestCase.doValidationTest();
-}
+		validatePhcrRelevantMedicalConditionHistoryObservationStatusCodePTestCase.doValidationTest();
+	}
 
 	/**
 	*
@@ -674,67 +368,33 @@ public class PhcrRelevantMedicalConditionHistoryObservationTest extends CDAValid
 	*/
 	@Test
 	public void testValidatePhcrRelevantMedicalConditionHistoryObservationProblemObservation() {
-      OperationsTestCase<PhcrRelevantMedicalConditionHistoryObservation> validatePhcrRelevantMedicalConditionHistoryObservationProblemObservationTestCase = new OperationsTestCase<PhcrRelevantMedicalConditionHistoryObservation>(
-      "validatePhcrRelevantMedicalConditionHistoryObservationProblemObservation",
-      operationsForOCL.getOCLValue("VALIDATE_PHCR_RELEVANT_MEDICAL_CONDITION_HISTORY_OBSERVATION_PROBLEM_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP")
-      ,objectFactory) {
+		OperationsTestCase<PhcrRelevantMedicalConditionHistoryObservation> validatePhcrRelevantMedicalConditionHistoryObservationProblemObservationTestCase = new OperationsTestCase<PhcrRelevantMedicalConditionHistoryObservation>(
+			"validatePhcrRelevantMedicalConditionHistoryObservationProblemObservation",
+			operationsForOCL.getOCLValue("VALIDATE_PHCR_RELEVANT_MEDICAL_CONDITION_HISTORY_OBSERVATION_PROBLEM_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
 
-      @Override
-      protected void updateToFail(PhcrRelevantMedicalConditionHistoryObservation target) {
+			@Override
+			protected void updateToFail(PhcrRelevantMedicalConditionHistoryObservation target) {
 
-      }
+			}
 
-      @Override
-      protected void updateToPass(PhcrRelevantMedicalConditionHistoryObservation target) {
-        target.init();
-        
-        
-        
-        
-        
+			@Override
+			protected void updateToPass(PhcrRelevantMedicalConditionHistoryObservation target) {
+				target.init();
 
-        
-        
+			}
 
-  
-      
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
 
-  
-    
-    
-      
-        
-    
-      
-        
-      
-        
-        
-        
-        
-        
-        
-        
-      
-      
-          
-      
-        
-      }
+				return PhcrRelevantMedicalConditionHistoryObservationOperations.validatePhcrRelevantMedicalConditionHistoryObservationProblemObservation(
+					(PhcrRelevantMedicalConditionHistoryObservation) objectToTest, diagnostician, map);
+			}
 
-      @Override
-      protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-      
-      
-      
-        return PhcrRelevantMedicalConditionHistoryObservationOperations.validatePhcrRelevantMedicalConditionHistoryObservationProblemObservation(
-          (PhcrRelevantMedicalConditionHistoryObservation) objectToTest, diagnostician, map);
-      }
+		};
 
-    };
-
-    validatePhcrRelevantMedicalConditionHistoryObservationProblemObservationTestCase.doValidationTest();
-}
+		validatePhcrRelevantMedicalConditionHistoryObservationProblemObservationTestCase.doValidationTest();
+	}
 
 	/**
 	*
@@ -743,13 +403,10 @@ public class PhcrRelevantMedicalConditionHistoryObservationTest extends CDAValid
 	@Test
 	public void testGetProblemObservations() {
 
+		PhcrRelevantMedicalConditionHistoryObservation target = objectFactory.create();
+		target.getProblemObservations();
 
-PhcrRelevantMedicalConditionHistoryObservation target = objectFactory.create();
-target.getProblemObservations();
-
-
-
-}
+	}
 
 	/**
 	*
@@ -804,17 +461,17 @@ target.getProblemObservations();
 	*/
 	@Test
 	public void testConstructor() {
-          @SuppressWarnings("unused")
-      ConstructorTestClass constructorTestClass = new ConstructorTestClass();		
-  } // testConstructor
+		@SuppressWarnings("unused")
+		ConstructorTestClass constructorTestClass = new ConstructorTestClass();
+	} // testConstructor
 
 	/**
 	*
 	* @generated
 	*/
 	@Override
-	protected EObject getObjectToTest() {		
-    return null;
-  }
+	protected EObject getObjectToTest() {
+		return null;
+	}
 
 } // PhcrRelevantMedicalConditionHistoryObservationOperations

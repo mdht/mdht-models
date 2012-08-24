@@ -52,67 +52,33 @@ public class TherapeuticRegimenActTest extends CDAValidationTest {
 	*/
 	@Test
 	public void testValidateTherapeuticRegimenActTemplateId() {
-      OperationsTestCase<TherapeuticRegimenAct> validateTherapeuticRegimenActTemplateIdTestCase = new OperationsTestCase<TherapeuticRegimenAct>(
-      "validateTherapeuticRegimenActTemplateId",
-      operationsForOCL.getOCLValue("VALIDATE_THERAPEUTIC_REGIMEN_ACT_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP")
-      ,objectFactory) {
+		OperationsTestCase<TherapeuticRegimenAct> validateTherapeuticRegimenActTemplateIdTestCase = new OperationsTestCase<TherapeuticRegimenAct>(
+			"validateTherapeuticRegimenActTemplateId",
+			operationsForOCL.getOCLValue("VALIDATE_THERAPEUTIC_REGIMEN_ACT_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
 
-      @Override
-      protected void updateToFail(TherapeuticRegimenAct target) {
+			@Override
+			protected void updateToFail(TherapeuticRegimenAct target) {
 
-      }
+			}
 
-      @Override
-      protected void updateToPass(TherapeuticRegimenAct target) {
-        target.init();
-        
-        
-        
-        
-        
+			@Override
+			protected void updateToPass(TherapeuticRegimenAct target) {
+				target.init();
 
-        
-        
+			}
 
-  
-      
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
 
-  
-    
-    
-      
-        
-    
-      
-        
-      
-        
-        
-        
-        
-        
-        
-        
-      
-      
-          
-      
-        
-      }
+				return TherapeuticRegimenActOperations.validateTherapeuticRegimenActTemplateId(
+					(TherapeuticRegimenAct) objectToTest, diagnostician, map);
+			}
 
-      @Override
-      protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-      
-      
-      
-        return TherapeuticRegimenActOperations.validateTherapeuticRegimenActTemplateId(
-          (TherapeuticRegimenAct) objectToTest, diagnostician, map);
-      }
+		};
 
-    };
-
-    validateTherapeuticRegimenActTemplateIdTestCase.doValidationTest();
-}
+		validateTherapeuticRegimenActTemplateIdTestCase.doValidationTest();
+	}
 
 	/**
 	*
@@ -120,67 +86,33 @@ public class TherapeuticRegimenActTest extends CDAValidationTest {
 	*/
 	@Test
 	public void testValidateTherapeuticRegimenActClassCode() {
-      OperationsTestCase<TherapeuticRegimenAct> validateTherapeuticRegimenActClassCodeTestCase = new OperationsTestCase<TherapeuticRegimenAct>(
-      "validateTherapeuticRegimenActClassCode",
-      operationsForOCL.getOCLValue("VALIDATE_THERAPEUTIC_REGIMEN_ACT_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP")
-      ,objectFactory) {
+		OperationsTestCase<TherapeuticRegimenAct> validateTherapeuticRegimenActClassCodeTestCase = new OperationsTestCase<TherapeuticRegimenAct>(
+			"validateTherapeuticRegimenActClassCode",
+			operationsForOCL.getOCLValue("VALIDATE_THERAPEUTIC_REGIMEN_ACT_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
 
-      @Override
-      protected void updateToFail(TherapeuticRegimenAct target) {
+			@Override
+			protected void updateToFail(TherapeuticRegimenAct target) {
 
-      }
+			}
 
-      @Override
-      protected void updateToPass(TherapeuticRegimenAct target) {
-        target.init();
-        
-        
-        
-        
-        
+			@Override
+			protected void updateToPass(TherapeuticRegimenAct target) {
+				target.init();
 
-        
-        
+			}
 
-  
-      
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
 
-  
-    
-    
-      
-        
-    
-      
-        
-      
-        
-        
-        
-        
-        
-        
-        
-      
-      
-          
-      
-        
-      }
+				return TherapeuticRegimenActOperations.validateTherapeuticRegimenActClassCode(
+					(TherapeuticRegimenAct) objectToTest, diagnostician, map);
+			}
 
-      @Override
-      protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-      
-      
-      
-        return TherapeuticRegimenActOperations.validateTherapeuticRegimenActClassCode(
-          (TherapeuticRegimenAct) objectToTest, diagnostician, map);
-      }
+		};
 
-    };
-
-    validateTherapeuticRegimenActClassCodeTestCase.doValidationTest();
-}
+		validateTherapeuticRegimenActClassCodeTestCase.doValidationTest();
+	}
 
 	/**
 	*
@@ -188,67 +120,33 @@ public class TherapeuticRegimenActTest extends CDAValidationTest {
 	*/
 	@Test
 	public void testValidateTherapeuticRegimenActMoodCode() {
-      OperationsTestCase<TherapeuticRegimenAct> validateTherapeuticRegimenActMoodCodeTestCase = new OperationsTestCase<TherapeuticRegimenAct>(
-      "validateTherapeuticRegimenActMoodCode",
-      operationsForOCL.getOCLValue("VALIDATE_THERAPEUTIC_REGIMEN_ACT_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP")
-      ,objectFactory) {
+		OperationsTestCase<TherapeuticRegimenAct> validateTherapeuticRegimenActMoodCodeTestCase = new OperationsTestCase<TherapeuticRegimenAct>(
+			"validateTherapeuticRegimenActMoodCode",
+			operationsForOCL.getOCLValue("VALIDATE_THERAPEUTIC_REGIMEN_ACT_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
 
-      @Override
-      protected void updateToFail(TherapeuticRegimenAct target) {
+			@Override
+			protected void updateToFail(TherapeuticRegimenAct target) {
 
-      }
+			}
 
-      @Override
-      protected void updateToPass(TherapeuticRegimenAct target) {
-        target.init();
-        
-        
-        
-        
-        
+			@Override
+			protected void updateToPass(TherapeuticRegimenAct target) {
+				target.init();
 
-        
-        
+			}
 
-  
-      
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
 
-  
-    
-    
-      
-        
-    
-      
-        
-      
-        
-        
-        
-        
-        
-        
-        
-      
-      
-          
-      
-        
-      }
+				return TherapeuticRegimenActOperations.validateTherapeuticRegimenActMoodCode(
+					(TherapeuticRegimenAct) objectToTest, diagnostician, map);
+			}
 
-      @Override
-      protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-      
-      
-      
-        return TherapeuticRegimenActOperations.validateTherapeuticRegimenActMoodCode(
-          (TherapeuticRegimenAct) objectToTest, diagnostician, map);
-      }
+		};
 
-    };
-
-    validateTherapeuticRegimenActMoodCodeTestCase.doValidationTest();
-}
+		validateTherapeuticRegimenActMoodCodeTestCase.doValidationTest();
+	}
 
 	/**
 	*
@@ -256,67 +154,33 @@ public class TherapeuticRegimenActTest extends CDAValidationTest {
 	*/
 	@Test
 	public void testValidateTherapeuticRegimenActNegationInd() {
-      OperationsTestCase<TherapeuticRegimenAct> validateTherapeuticRegimenActNegationIndTestCase = new OperationsTestCase<TherapeuticRegimenAct>(
-      "validateTherapeuticRegimenActNegationInd",
-      operationsForOCL.getOCLValue("VALIDATE_THERAPEUTIC_REGIMEN_ACT_NEGATION_IND__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP")
-      ,objectFactory) {
+		OperationsTestCase<TherapeuticRegimenAct> validateTherapeuticRegimenActNegationIndTestCase = new OperationsTestCase<TherapeuticRegimenAct>(
+			"validateTherapeuticRegimenActNegationInd",
+			operationsForOCL.getOCLValue("VALIDATE_THERAPEUTIC_REGIMEN_ACT_NEGATION_IND__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
 
-      @Override
-      protected void updateToFail(TherapeuticRegimenAct target) {
+			@Override
+			protected void updateToFail(TherapeuticRegimenAct target) {
 
-      }
+			}
 
-      @Override
-      protected void updateToPass(TherapeuticRegimenAct target) {
-        target.init();
-        
-        
-        
-        
-        
+			@Override
+			protected void updateToPass(TherapeuticRegimenAct target) {
+				target.init();
 
-        
-        
+			}
 
-  
-      
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
 
-  
-    
-    
-      
-        
-    
-      
-        
-      
-        
-        
-        
-        
-        
-        
-        
-      
-      
-          
-      
-        
-      }
+				return TherapeuticRegimenActOperations.validateTherapeuticRegimenActNegationInd(
+					(TherapeuticRegimenAct) objectToTest, diagnostician, map);
+			}
 
-      @Override
-      protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-      
-      
-      
-        return TherapeuticRegimenActOperations.validateTherapeuticRegimenActNegationInd(
-          (TherapeuticRegimenAct) objectToTest, diagnostician, map);
-      }
+		};
 
-    };
-
-    validateTherapeuticRegimenActNegationIndTestCase.doValidationTest();
-}
+		validateTherapeuticRegimenActNegationIndTestCase.doValidationTest();
+	}
 
 	/**
 	*
@@ -324,67 +188,33 @@ public class TherapeuticRegimenActTest extends CDAValidationTest {
 	*/
 	@Test
 	public void testValidateTherapeuticRegimenActCodeP() {
-      OperationsTestCase<TherapeuticRegimenAct> validateTherapeuticRegimenActCodePTestCase = new OperationsTestCase<TherapeuticRegimenAct>(
-      "validateTherapeuticRegimenActCodeP",
-      operationsForOCL.getOCLValue("VALIDATE_THERAPEUTIC_REGIMEN_ACT_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP")
-      ,objectFactory) {
+		OperationsTestCase<TherapeuticRegimenAct> validateTherapeuticRegimenActCodePTestCase = new OperationsTestCase<TherapeuticRegimenAct>(
+			"validateTherapeuticRegimenActCodeP",
+			operationsForOCL.getOCLValue("VALIDATE_THERAPEUTIC_REGIMEN_ACT_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
 
-      @Override
-      protected void updateToFail(TherapeuticRegimenAct target) {
+			@Override
+			protected void updateToFail(TherapeuticRegimenAct target) {
 
-      }
+			}
 
-      @Override
-      protected void updateToPass(TherapeuticRegimenAct target) {
-        target.init();
-        
-        
-        
-        
-        
+			@Override
+			protected void updateToPass(TherapeuticRegimenAct target) {
+				target.init();
 
-        
-        
+			}
 
-  
-      
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
 
-  
-    
-    
-      
-        
-    
-      
-        
-      
-        
-        
-        
-        
-        
-        
-        
-      
-      
-          
-      
-        
-      }
+				return TherapeuticRegimenActOperations.validateTherapeuticRegimenActCodeP(
+					(TherapeuticRegimenAct) objectToTest, diagnostician, map);
+			}
 
-      @Override
-      protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-      
-      
-      
-        return TherapeuticRegimenActOperations.validateTherapeuticRegimenActCodeP(
-          (TherapeuticRegimenAct) objectToTest, diagnostician, map);
-      }
+		};
 
-    };
-
-    validateTherapeuticRegimenActCodePTestCase.doValidationTest();
-}
+		validateTherapeuticRegimenActCodePTestCase.doValidationTest();
+	}
 
 	/**
 	*
@@ -392,67 +222,33 @@ public class TherapeuticRegimenActTest extends CDAValidationTest {
 	*/
 	@Test
 	public void testValidateTherapeuticRegimenActCode() {
-      OperationsTestCase<TherapeuticRegimenAct> validateTherapeuticRegimenActCodeTestCase = new OperationsTestCase<TherapeuticRegimenAct>(
-      "validateTherapeuticRegimenActCode",
-      operationsForOCL.getOCLValue("VALIDATE_THERAPEUTIC_REGIMEN_ACT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP")
-      ,objectFactory) {
+		OperationsTestCase<TherapeuticRegimenAct> validateTherapeuticRegimenActCodeTestCase = new OperationsTestCase<TherapeuticRegimenAct>(
+			"validateTherapeuticRegimenActCode",
+			operationsForOCL.getOCLValue("VALIDATE_THERAPEUTIC_REGIMEN_ACT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
 
-      @Override
-      protected void updateToFail(TherapeuticRegimenAct target) {
+			@Override
+			protected void updateToFail(TherapeuticRegimenAct target) {
 
-      }
+			}
 
-      @Override
-      protected void updateToPass(TherapeuticRegimenAct target) {
-        target.init();
-        
-        
-        
-        
-        
+			@Override
+			protected void updateToPass(TherapeuticRegimenAct target) {
+				target.init();
 
-        
-        
+			}
 
-  
-      
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
 
-  
-    
-    
-      
-        
-    
-      
-        
-      
-        
-        
-        
-        
-        
-        
-        
-      
-      
-          
-      
-        
-      }
+				return TherapeuticRegimenActOperations.validateTherapeuticRegimenActCode(
+					(TherapeuticRegimenAct) objectToTest, diagnostician, map);
+			}
 
-      @Override
-      protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-      
-      
-      
-        return TherapeuticRegimenActOperations.validateTherapeuticRegimenActCode(
-          (TherapeuticRegimenAct) objectToTest, diagnostician, map);
-      }
+		};
 
-    };
-
-    validateTherapeuticRegimenActCodeTestCase.doValidationTest();
-}
+		validateTherapeuticRegimenActCodeTestCase.doValidationTest();
+	}
 
 	/**
 	*
@@ -460,70 +256,36 @@ public class TherapeuticRegimenActTest extends CDAValidationTest {
 	*/
 	@Test
 	public void testValidateTherapeuticRegimenActStatusCode() {
-      OperationsTestCase<TherapeuticRegimenAct> validateTherapeuticRegimenActStatusCodeTestCase = new OperationsTestCase<TherapeuticRegimenAct>(
-      "validateTherapeuticRegimenActStatusCode",
-      operationsForOCL.getOCLValue("VALIDATE_THERAPEUTIC_REGIMEN_ACT_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP")
-      ,objectFactory) {
+		OperationsTestCase<TherapeuticRegimenAct> validateTherapeuticRegimenActStatusCodeTestCase = new OperationsTestCase<TherapeuticRegimenAct>(
+			"validateTherapeuticRegimenActStatusCode",
+			operationsForOCL.getOCLValue("VALIDATE_THERAPEUTIC_REGIMEN_ACT_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
 
-      @Override
-      protected void updateToFail(TherapeuticRegimenAct target) {
+			@Override
+			protected void updateToFail(TherapeuticRegimenAct target) {
 
-      }
+			}
 
-      @Override
-      protected void updateToPass(TherapeuticRegimenAct target) {
-        target.init();
-        
-        
-        
-        
-      
-        CS cs = DatatypesFactory.eINSTANCE.createCS("completed");
-        target.setStatusCode(cs);
-        
+			@Override
+			protected void updateToPass(TherapeuticRegimenAct target) {
+				target.init();
 
-        
-        
+				CS cs = DatatypesFactory.eINSTANCE.createCS("completed");
+				target.setStatusCode(cs);
 
-  
-      
+			}
 
-  
-    
-    
-      
-        
-    
-      
-        
-      
-        
-        
-        
-        
-        
-        
-        
-      
-      
-          
-      
-        
-      }
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
 
-      @Override
-      protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-      
-      
-      
-        return TherapeuticRegimenActOperations.validateTherapeuticRegimenActStatusCode(
-          (TherapeuticRegimenAct) objectToTest, diagnostician, map);
-      }
+				return TherapeuticRegimenActOperations.validateTherapeuticRegimenActStatusCode(
+					(TherapeuticRegimenAct) objectToTest, diagnostician, map);
+			}
 
-    };
+		};
 
-    validateTherapeuticRegimenActStatusCodeTestCase.doValidationTest();
-}
+		validateTherapeuticRegimenActStatusCodeTestCase.doValidationTest();
+	}
 
 	/**
 	*
@@ -531,67 +293,33 @@ public class TherapeuticRegimenActTest extends CDAValidationTest {
 	*/
 	@Test
 	public void testValidateTherapeuticRegimenActStatusCodeP() {
-      OperationsTestCase<TherapeuticRegimenAct> validateTherapeuticRegimenActStatusCodePTestCase = new OperationsTestCase<TherapeuticRegimenAct>(
-      "validateTherapeuticRegimenActStatusCodeP",
-      operationsForOCL.getOCLValue("VALIDATE_THERAPEUTIC_REGIMEN_ACT_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP")
-      ,objectFactory) {
+		OperationsTestCase<TherapeuticRegimenAct> validateTherapeuticRegimenActStatusCodePTestCase = new OperationsTestCase<TherapeuticRegimenAct>(
+			"validateTherapeuticRegimenActStatusCodeP",
+			operationsForOCL.getOCLValue("VALIDATE_THERAPEUTIC_REGIMEN_ACT_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
 
-      @Override
-      protected void updateToFail(TherapeuticRegimenAct target) {
+			@Override
+			protected void updateToFail(TherapeuticRegimenAct target) {
 
-      }
+			}
 
-      @Override
-      protected void updateToPass(TherapeuticRegimenAct target) {
-        target.init();
-        
-        
-        
-        
-        
+			@Override
+			protected void updateToPass(TherapeuticRegimenAct target) {
+				target.init();
 
-        
-        
+			}
 
-  
-      
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
 
-  
-    
-    
-      
-        
-    
-      
-        
-      
-        
-        
-        
-        
-        
-        
-        
-      
-      
-          
-      
-        
-      }
+				return TherapeuticRegimenActOperations.validateTherapeuticRegimenActStatusCodeP(
+					(TherapeuticRegimenAct) objectToTest, diagnostician, map);
+			}
 
-      @Override
-      protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-      
-      
-      
-        return TherapeuticRegimenActOperations.validateTherapeuticRegimenActStatusCodeP(
-          (TherapeuticRegimenAct) objectToTest, diagnostician, map);
-      }
+		};
 
-    };
-
-    validateTherapeuticRegimenActStatusCodePTestCase.doValidationTest();
-}
+		validateTherapeuticRegimenActStatusCodePTestCase.doValidationTest();
+	}
 
 	/**
 	*
@@ -599,67 +327,33 @@ public class TherapeuticRegimenActTest extends CDAValidationTest {
 	*/
 	@Test
 	public void testValidateTherapeuticRegimenActTreatmentGivenSubstanceAdministration() {
-      OperationsTestCase<TherapeuticRegimenAct> validateTherapeuticRegimenActTreatmentGivenSubstanceAdministrationTestCase = new OperationsTestCase<TherapeuticRegimenAct>(
-      "validateTherapeuticRegimenActTreatmentGivenSubstanceAdministration",
-      operationsForOCL.getOCLValue("VALIDATE_THERAPEUTIC_REGIMEN_ACT_TREATMENT_GIVEN_SUBSTANCE_ADMINISTRATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP")
-      ,objectFactory) {
+		OperationsTestCase<TherapeuticRegimenAct> validateTherapeuticRegimenActTreatmentGivenSubstanceAdministrationTestCase = new OperationsTestCase<TherapeuticRegimenAct>(
+			"validateTherapeuticRegimenActTreatmentGivenSubstanceAdministration",
+			operationsForOCL.getOCLValue("VALIDATE_THERAPEUTIC_REGIMEN_ACT_TREATMENT_GIVEN_SUBSTANCE_ADMINISTRATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
 
-      @Override
-      protected void updateToFail(TherapeuticRegimenAct target) {
+			@Override
+			protected void updateToFail(TherapeuticRegimenAct target) {
 
-      }
+			}
 
-      @Override
-      protected void updateToPass(TherapeuticRegimenAct target) {
-        target.init();
-        
-        
-        
-        
-        
+			@Override
+			protected void updateToPass(TherapeuticRegimenAct target) {
+				target.init();
 
-        
-        
+			}
 
-  
-      
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
 
-  
-    
-    
-      
-        
-    
-      
-        
-      
-        
-        
-        
-        
-        
-        
-        
-      
-      
-          
-      
-        
-      }
+				return TherapeuticRegimenActOperations.validateTherapeuticRegimenActTreatmentGivenSubstanceAdministration(
+					(TherapeuticRegimenAct) objectToTest, diagnostician, map);
+			}
 
-      @Override
-      protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-      
-      
-      
-        return TherapeuticRegimenActOperations.validateTherapeuticRegimenActTreatmentGivenSubstanceAdministration(
-          (TherapeuticRegimenAct) objectToTest, diagnostician, map);
-      }
+		};
 
-    };
-
-    validateTherapeuticRegimenActTreatmentGivenSubstanceAdministrationTestCase.doValidationTest();
-}
+		validateTherapeuticRegimenActTreatmentGivenSubstanceAdministrationTestCase.doValidationTest();
+	}
 
 	/**
 	*
@@ -667,67 +361,33 @@ public class TherapeuticRegimenActTest extends CDAValidationTest {
 	*/
 	@Test
 	public void testValidateTherapeuticRegimenActTreatmentNotGivenSubstanceAdministration() {
-      OperationsTestCase<TherapeuticRegimenAct> validateTherapeuticRegimenActTreatmentNotGivenSubstanceAdministrationTestCase = new OperationsTestCase<TherapeuticRegimenAct>(
-      "validateTherapeuticRegimenActTreatmentNotGivenSubstanceAdministration",
-      operationsForOCL.getOCLValue("VALIDATE_THERAPEUTIC_REGIMEN_ACT_TREATMENT_NOT_GIVEN_SUBSTANCE_ADMINISTRATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP")
-      ,objectFactory) {
+		OperationsTestCase<TherapeuticRegimenAct> validateTherapeuticRegimenActTreatmentNotGivenSubstanceAdministrationTestCase = new OperationsTestCase<TherapeuticRegimenAct>(
+			"validateTherapeuticRegimenActTreatmentNotGivenSubstanceAdministration",
+			operationsForOCL.getOCLValue("VALIDATE_THERAPEUTIC_REGIMEN_ACT_TREATMENT_NOT_GIVEN_SUBSTANCE_ADMINISTRATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
 
-      @Override
-      protected void updateToFail(TherapeuticRegimenAct target) {
+			@Override
+			protected void updateToFail(TherapeuticRegimenAct target) {
 
-      }
+			}
 
-      @Override
-      protected void updateToPass(TherapeuticRegimenAct target) {
-        target.init();
-        
-        
-        
-        
-        
+			@Override
+			protected void updateToPass(TherapeuticRegimenAct target) {
+				target.init();
 
-        
-        
+			}
 
-  
-      
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
 
-  
-    
-    
-      
-        
-    
-      
-        
-      
-        
-        
-        
-        
-        
-        
-        
-      
-      
-          
-      
-        
-      }
+				return TherapeuticRegimenActOperations.validateTherapeuticRegimenActTreatmentNotGivenSubstanceAdministration(
+					(TherapeuticRegimenAct) objectToTest, diagnostician, map);
+			}
 
-      @Override
-      protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-      
-      
-      
-        return TherapeuticRegimenActOperations.validateTherapeuticRegimenActTreatmentNotGivenSubstanceAdministration(
-          (TherapeuticRegimenAct) objectToTest, diagnostician, map);
-      }
+		};
 
-    };
-
-    validateTherapeuticRegimenActTreatmentNotGivenSubstanceAdministrationTestCase.doValidationTest();
-}
+		validateTherapeuticRegimenActTreatmentNotGivenSubstanceAdministrationTestCase.doValidationTest();
+	}
 
 	/**
 	*
@@ -736,13 +396,10 @@ public class TherapeuticRegimenActTest extends CDAValidationTest {
 	@Test
 	public void testGetTreatmentGivenSubstanceAdministrations() {
 
+		TherapeuticRegimenAct target = objectFactory.create();
+		target.getTreatmentGivenSubstanceAdministrations();
 
-TherapeuticRegimenAct target = objectFactory.create();
-target.getTreatmentGivenSubstanceAdministrations();
-
-
-
-}
+	}
 
 	/**
 	*
@@ -751,13 +408,10 @@ target.getTreatmentGivenSubstanceAdministrations();
 	@Test
 	public void testGetTreatmentNotGivenSubstanceAdministrations() {
 
+		TherapeuticRegimenAct target = objectFactory.create();
+		target.getTreatmentNotGivenSubstanceAdministrations();
 
-TherapeuticRegimenAct target = objectFactory.create();
-target.getTreatmentNotGivenSubstanceAdministrations();
-
-
-
-}
+	}
 
 	/**
 	*
@@ -812,17 +466,17 @@ target.getTreatmentNotGivenSubstanceAdministrations();
 	*/
 	@Test
 	public void testConstructor() {
-          @SuppressWarnings("unused")
-      ConstructorTestClass constructorTestClass = new ConstructorTestClass();		
-  } // testConstructor
+		@SuppressWarnings("unused")
+		ConstructorTestClass constructorTestClass = new ConstructorTestClass();
+	} // testConstructor
 
 	/**
 	*
 	* @generated
 	*/
 	@Override
-	protected EObject getObjectToTest() {		
-    return null;
-  }
+	protected EObject getObjectToTest() {
+		return null;
+	}
 
 } // TherapeuticRegimenActOperations

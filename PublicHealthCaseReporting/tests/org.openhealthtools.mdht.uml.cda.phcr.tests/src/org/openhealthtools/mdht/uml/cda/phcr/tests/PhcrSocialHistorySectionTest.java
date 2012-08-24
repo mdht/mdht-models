@@ -52,143 +52,72 @@ import org.openhealthtools.mdht.uml.hl7.datatypes.ST;
 public class PhcrSocialHistorySectionTest extends CDAValidationTest {
 
 	/**
-*
-* @generated
-*/
-@Test
+	*
+	* @generated
+	*/
+	@Test
+	public void testValidatePhcrSocialHistorySectionCodeP() {
+		OperationsTestCase<PhcrSocialHistorySection> validatePhcrSocialHistorySectionCodePTestCase = new OperationsTestCase<PhcrSocialHistorySection>(
+			"validatePhcrSocialHistorySectionCodeP",
+			operationsForOCL.getOCLValue("VALIDATE_PHCR_SOCIAL_HISTORY_SECTION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
 
- 
-                  
-public void testValidatePhcrSocialHistorySectionCodeP() {
-      OperationsTestCase<PhcrSocialHistorySection> validatePhcrSocialHistorySectionCodePTestCase = new OperationsTestCase<PhcrSocialHistorySection>(
-      "validatePhcrSocialHistorySectionCodeP",
-      operationsForOCL.getOCLValue("VALIDATE_PHCR_SOCIAL_HISTORY_SECTION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP")
-      ,objectFactory) {
+			@Override
+			protected void updateToFail(PhcrSocialHistorySection target) {
 
-      @Override
-      protected void updateToFail(PhcrSocialHistorySection target) {
+			}
 
-      }
+			@Override
+			protected void updateToPass(PhcrSocialHistorySection target) {
+				target.init();
 
-      @Override
-      protected void updateToPass(PhcrSocialHistorySection target) {
-        target.init();
-        
-        
-        
-        
-        
+			}
 
-        
-        
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
 
-  
-      
+				return PhcrSocialHistorySectionOperations.validatePhcrSocialHistorySectionCodeP(
+					(PhcrSocialHistorySection) objectToTest, diagnostician, map);
+			}
 
-  
-    
-    
-      
-        
-    
-      
-        
-      
-        
-        
-        
-        
-        
-        
-        
-      
-      
-          
-      
-        
-      }
+		};
 
-      @Override
-      protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-      
-      
-      
-        return PhcrSocialHistorySectionOperations.validatePhcrSocialHistorySectionCodeP(
-          (PhcrSocialHistorySection) objectToTest, diagnostician, map);
-      }
+		validatePhcrSocialHistorySectionCodePTestCase.doValidationTest();
+	}
 
-    };
-
-    validatePhcrSocialHistorySectionCodePTestCase.doValidationTest();
-}
-
-  /**
+	/**
 	*
 	* @generated
 	*/
 	@Test
 	public void testValidatePhcrSocialHistorySectionCode() {
-      OperationsTestCase<PhcrSocialHistorySection> validatePhcrSocialHistorySectionCodeTestCase = new OperationsTestCase<PhcrSocialHistorySection>(
-      "validatePhcrSocialHistorySectionCode",
-      operationsForOCL.getOCLValue("VALIDATE_PHCR_SOCIAL_HISTORY_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP")
-      ,objectFactory) {
+		OperationsTestCase<PhcrSocialHistorySection> validatePhcrSocialHistorySectionCodeTestCase = new OperationsTestCase<PhcrSocialHistorySection>(
+			"validatePhcrSocialHistorySectionCode",
+			operationsForOCL.getOCLValue("VALIDATE_PHCR_SOCIAL_HISTORY_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
 
-      @Override
-      protected void updateToFail(PhcrSocialHistorySection target) {
+			@Override
+			protected void updateToFail(PhcrSocialHistorySection target) {
 
-      }
+			}
 
-      @Override
-      protected void updateToPass(PhcrSocialHistorySection target) {
-        target.init();
-        
-        
-        
-        
-        
+			@Override
+			protected void updateToPass(PhcrSocialHistorySection target) {
+				target.init();
 
-        
-        
+			}
 
-  
-      
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
 
-  
-    
-    
-      
-        
-    
-      
-        
-      
-        
-        
-        
-        
-        
-        
-        
-      
-      
-          
-      
-        
-      }
+				return PhcrSocialHistorySectionOperations.validatePhcrSocialHistorySectionCode(
+					(PhcrSocialHistorySection) objectToTest, diagnostician, map);
+			}
 
-      @Override
-      protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-      
-      
-      
-        return PhcrSocialHistorySectionOperations.validatePhcrSocialHistorySectionCode(
-          (PhcrSocialHistorySection) objectToTest, diagnostician, map);
-      }
+		};
 
-    };
-
-    validatePhcrSocialHistorySectionCodeTestCase.doValidationTest();
-}
+		validatePhcrSocialHistorySectionCodeTestCase.doValidationTest();
+	}
 
 	/**
 	*
@@ -196,70 +125,36 @@ public void testValidatePhcrSocialHistorySectionCodeP() {
 	*/
 	@Test
 	public void testValidatePhcrSocialHistorySectionTitle() {
-      OperationsTestCase<PhcrSocialHistorySection> validatePhcrSocialHistorySectionTitleTestCase = new OperationsTestCase<PhcrSocialHistorySection>(
-      "validatePhcrSocialHistorySectionTitle",
-      operationsForOCL.getOCLValue("VALIDATE_PHCR_SOCIAL_HISTORY_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP")
-      ,objectFactory) {
+		OperationsTestCase<PhcrSocialHistorySection> validatePhcrSocialHistorySectionTitleTestCase = new OperationsTestCase<PhcrSocialHistorySection>(
+			"validatePhcrSocialHistorySectionTitle",
+			operationsForOCL.getOCLValue("VALIDATE_PHCR_SOCIAL_HISTORY_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
 
-      @Override
-      protected void updateToFail(PhcrSocialHistorySection target) {
+			@Override
+			protected void updateToFail(PhcrSocialHistorySection target) {
 
-      }
+			}
 
-      @Override
-      protected void updateToPass(PhcrSocialHistorySection target) {
-        target.init();
-        
-        
-        
-        
-        
+			@Override
+			protected void updateToPass(PhcrSocialHistorySection target) {
+				target.init();
 
-        
-        
+				ST title = DatatypesFactory.eINSTANCE.createST("title");
+				target.setTitle(title);
 
-  
-    
-        ST  title = DatatypesFactory.eINSTANCE.createST("title");
-        target.setTitle(title );
-        
+			}
 
-  
-    
-    
-      
-        
-    
-      
-        
-      
-        
-        
-        
-        
-        
-        
-        
-      
-      
-          
-      
-        
-      }
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
 
-      @Override
-      protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-      
-      
-      
-        return PhcrSocialHistorySectionOperations.validatePhcrSocialHistorySectionTitle(
-          (PhcrSocialHistorySection) objectToTest, diagnostician, map);
-      }
+				return PhcrSocialHistorySectionOperations.validatePhcrSocialHistorySectionTitle(
+					(PhcrSocialHistorySection) objectToTest, diagnostician, map);
+			}
 
-    };
+		};
 
-    validatePhcrSocialHistorySectionTitleTestCase.doValidationTest();
-}
+		validatePhcrSocialHistorySectionTitleTestCase.doValidationTest();
+	}
 
 	/**
 	*
@@ -267,70 +162,36 @@ public void testValidatePhcrSocialHistorySectionCodeP() {
 	*/
 	@Test
 	public void testValidatePhcrSocialHistorySectionText() {
-      OperationsTestCase<PhcrSocialHistorySection> validatePhcrSocialHistorySectionTextTestCase = new OperationsTestCase<PhcrSocialHistorySection>(
-      "validatePhcrSocialHistorySectionText",
-      operationsForOCL.getOCLValue("VALIDATE_PHCR_SOCIAL_HISTORY_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP")
-      ,objectFactory) {
+		OperationsTestCase<PhcrSocialHistorySection> validatePhcrSocialHistorySectionTextTestCase = new OperationsTestCase<PhcrSocialHistorySection>(
+			"validatePhcrSocialHistorySectionText",
+			operationsForOCL.getOCLValue("VALIDATE_PHCR_SOCIAL_HISTORY_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
 
-      @Override
-      protected void updateToFail(PhcrSocialHistorySection target) {
+			@Override
+			protected void updateToFail(PhcrSocialHistorySection target) {
 
-      }
+			}
 
-      @Override
-      protected void updateToPass(PhcrSocialHistorySection target) {
-        target.init();
-        
-        
-        
-        
-        
+			@Override
+			protected void updateToPass(PhcrSocialHistorySection target) {
+				target.init();
 
-        
-        
+				StrucDocText text = CDAFactory.eINSTANCE.createStrucDocText();
+				target.setText(text);
 
-  
-      
+			}
 
-  
-    
-        StrucDocText text = CDAFactory.eINSTANCE.createStrucDocText();
-        target.setText(text );
-      
-    
-      
-        
-    
-      
-        
-      
-        
-        
-        
-        
-        
-        
-        
-      
-      
-          
-      
-        
-      }
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
 
-      @Override
-      protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-      
-      
-      
-        return PhcrSocialHistorySectionOperations.validatePhcrSocialHistorySectionText(
-          (PhcrSocialHistorySection) objectToTest, diagnostician, map);
-      }
+				return PhcrSocialHistorySectionOperations.validatePhcrSocialHistorySectionText(
+					(PhcrSocialHistorySection) objectToTest, diagnostician, map);
+			}
 
-    };
+		};
 
-    validatePhcrSocialHistorySectionTextTestCase.doValidationTest();
-}
+		validatePhcrSocialHistorySectionTextTestCase.doValidationTest();
+	}
 
 	/**
 	*
@@ -338,67 +199,33 @@ public void testValidatePhcrSocialHistorySectionCodeP() {
 	*/
 	@Test
 	public void testValidatePhcrSocialHistorySectionGeotemporalHistoryObservation() {
-      OperationsTestCase<PhcrSocialHistorySection> validatePhcrSocialHistorySectionGeotemporalHistoryObservationTestCase = new OperationsTestCase<PhcrSocialHistorySection>(
-      "validatePhcrSocialHistorySectionGeotemporalHistoryObservation",
-      operationsForOCL.getOCLValue("VALIDATE_PHCR_SOCIAL_HISTORY_SECTION_GEOTEMPORAL_HISTORY_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP")
-      ,objectFactory) {
+		OperationsTestCase<PhcrSocialHistorySection> validatePhcrSocialHistorySectionGeotemporalHistoryObservationTestCase = new OperationsTestCase<PhcrSocialHistorySection>(
+			"validatePhcrSocialHistorySectionGeotemporalHistoryObservation",
+			operationsForOCL.getOCLValue("VALIDATE_PHCR_SOCIAL_HISTORY_SECTION_GEOTEMPORAL_HISTORY_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
 
-      @Override
-      protected void updateToFail(PhcrSocialHistorySection target) {
+			@Override
+			protected void updateToFail(PhcrSocialHistorySection target) {
 
-      }
+			}
 
-      @Override
-      protected void updateToPass(PhcrSocialHistorySection target) {
-        target.init();
-        
-        
-        
-        
-        
+			@Override
+			protected void updateToPass(PhcrSocialHistorySection target) {
+				target.init();
 
-        
-        
+			}
 
-  
-      
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
 
-  
-    
-    
-      
-        
-    
-      
-        
-      
-        
-        
-        
-        
-        
-        
-        
-      
-      
-          
-      
-        
-      }
+				return PhcrSocialHistorySectionOperations.validatePhcrSocialHistorySectionGeotemporalHistoryObservation(
+					(PhcrSocialHistorySection) objectToTest, diagnostician, map);
+			}
 
-      @Override
-      protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-      
-      
-      
-        return PhcrSocialHistorySectionOperations.validatePhcrSocialHistorySectionGeotemporalHistoryObservation(
-          (PhcrSocialHistorySection) objectToTest, diagnostician, map);
-      }
+		};
 
-    };
-
-    validatePhcrSocialHistorySectionGeotemporalHistoryObservationTestCase.doValidationTest();
-}
+		validatePhcrSocialHistorySectionGeotemporalHistoryObservationTestCase.doValidationTest();
+	}
 
 	/**
 	*
@@ -406,67 +233,33 @@ public void testValidatePhcrSocialHistorySectionCodeP() {
 	*/
 	@Test
 	public void testValidatePhcrSocialHistorySectionMostRecentTimeArrivedInUSAObservation() {
-      OperationsTestCase<PhcrSocialHistorySection> validatePhcrSocialHistorySectionMostRecentTimeArrivedInUSAObservationTestCase = new OperationsTestCase<PhcrSocialHistorySection>(
-      "validatePhcrSocialHistorySectionMostRecentTimeArrivedInUSAObservation",
-      operationsForOCL.getOCLValue("VALIDATE_PHCR_SOCIAL_HISTORY_SECTION_MOST_RECENT_TIME_ARRIVED_IN_USA_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP")
-      ,objectFactory) {
+		OperationsTestCase<PhcrSocialHistorySection> validatePhcrSocialHistorySectionMostRecentTimeArrivedInUSAObservationTestCase = new OperationsTestCase<PhcrSocialHistorySection>(
+			"validatePhcrSocialHistorySectionMostRecentTimeArrivedInUSAObservation",
+			operationsForOCL.getOCLValue("VALIDATE_PHCR_SOCIAL_HISTORY_SECTION_MOST_RECENT_TIME_ARRIVED_IN_USA_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
 
-      @Override
-      protected void updateToFail(PhcrSocialHistorySection target) {
+			@Override
+			protected void updateToFail(PhcrSocialHistorySection target) {
 
-      }
+			}
 
-      @Override
-      protected void updateToPass(PhcrSocialHistorySection target) {
-        target.init();
-        
-        
-        
-        
-        
+			@Override
+			protected void updateToPass(PhcrSocialHistorySection target) {
+				target.init();
 
-        
-        
+			}
 
-  
-      
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
 
-  
-    
-    
-      
-        
-    
-      
-        
-      
-        
-        
-        
-        
-        
-        
-        
-      
-      
-          
-      
-        
-      }
+				return PhcrSocialHistorySectionOperations.validatePhcrSocialHistorySectionMostRecentTimeArrivedInUSAObservation(
+					(PhcrSocialHistorySection) objectToTest, diagnostician, map);
+			}
 
-      @Override
-      protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-      
-      
-      
-        return PhcrSocialHistorySectionOperations.validatePhcrSocialHistorySectionMostRecentTimeArrivedInUSAObservation(
-          (PhcrSocialHistorySection) objectToTest, diagnostician, map);
-      }
+		};
 
-    };
-
-    validatePhcrSocialHistorySectionMostRecentTimeArrivedInUSAObservationTestCase.doValidationTest();
-}
+		validatePhcrSocialHistorySectionMostRecentTimeArrivedInUSAObservationTestCase.doValidationTest();
+	}
 
 	/**
 	*
@@ -474,67 +267,33 @@ public void testValidatePhcrSocialHistorySectionCodeP() {
 	*/
 	@Test
 	public void testValidatePhcrSocialHistorySectionRaceObservation() {
-      OperationsTestCase<PhcrSocialHistorySection> validatePhcrSocialHistorySectionRaceObservationTestCase = new OperationsTestCase<PhcrSocialHistorySection>(
-      "validatePhcrSocialHistorySectionRaceObservation",
-      operationsForOCL.getOCLValue("VALIDATE_PHCR_SOCIAL_HISTORY_SECTION_RACE_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP")
-      ,objectFactory) {
+		OperationsTestCase<PhcrSocialHistorySection> validatePhcrSocialHistorySectionRaceObservationTestCase = new OperationsTestCase<PhcrSocialHistorySection>(
+			"validatePhcrSocialHistorySectionRaceObservation",
+			operationsForOCL.getOCLValue("VALIDATE_PHCR_SOCIAL_HISTORY_SECTION_RACE_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
 
-      @Override
-      protected void updateToFail(PhcrSocialHistorySection target) {
+			@Override
+			protected void updateToFail(PhcrSocialHistorySection target) {
 
-      }
+			}
 
-      @Override
-      protected void updateToPass(PhcrSocialHistorySection target) {
-        target.init();
-        
-        
-        
-        
-        
+			@Override
+			protected void updateToPass(PhcrSocialHistorySection target) {
+				target.init();
 
-        
-        
+			}
 
-  
-      
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
 
-  
-    
-    
-      
-        
-    
-      
-        
-      
-        
-        
-        
-        
-        
-        
-        
-      
-      
-          
-      
-        
-      }
+				return PhcrSocialHistorySectionOperations.validatePhcrSocialHistorySectionRaceObservation(
+					(PhcrSocialHistorySection) objectToTest, diagnostician, map);
+			}
 
-      @Override
-      protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-      
-      
-      
-        return PhcrSocialHistorySectionOperations.validatePhcrSocialHistorySectionRaceObservation(
-          (PhcrSocialHistorySection) objectToTest, diagnostician, map);
-      }
+		};
 
-    };
-
-    validatePhcrSocialHistorySectionRaceObservationTestCase.doValidationTest();
-}
+		validatePhcrSocialHistorySectionRaceObservationTestCase.doValidationTest();
+	}
 
 	/**
 	*
@@ -542,67 +301,33 @@ public void testValidatePhcrSocialHistorySectionCodeP() {
 	*/
 	@Test
 	public void testValidatePhcrSocialHistorySectionOccupationObservation() {
-      OperationsTestCase<PhcrSocialHistorySection> validatePhcrSocialHistorySectionOccupationObservationTestCase = new OperationsTestCase<PhcrSocialHistorySection>(
-      "validatePhcrSocialHistorySectionOccupationObservation",
-      operationsForOCL.getOCLValue("VALIDATE_PHCR_SOCIAL_HISTORY_SECTION_OCCUPATION_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP")
-      ,objectFactory) {
+		OperationsTestCase<PhcrSocialHistorySection> validatePhcrSocialHistorySectionOccupationObservationTestCase = new OperationsTestCase<PhcrSocialHistorySection>(
+			"validatePhcrSocialHistorySectionOccupationObservation",
+			operationsForOCL.getOCLValue("VALIDATE_PHCR_SOCIAL_HISTORY_SECTION_OCCUPATION_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
 
-      @Override
-      protected void updateToFail(PhcrSocialHistorySection target) {
+			@Override
+			protected void updateToFail(PhcrSocialHistorySection target) {
 
-      }
+			}
 
-      @Override
-      protected void updateToPass(PhcrSocialHistorySection target) {
-        target.init();
-        
-        
-        
-        
-        
+			@Override
+			protected void updateToPass(PhcrSocialHistorySection target) {
+				target.init();
 
-        
-        
+			}
 
-  
-      
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
 
-  
-    
-    
-      
-        
-    
-      
-        
-      
-        
-        
-        
-        
-        
-        
-        
-      
-      
-          
-      
-        
-      }
+				return PhcrSocialHistorySectionOperations.validatePhcrSocialHistorySectionOccupationObservation(
+					(PhcrSocialHistorySection) objectToTest, diagnostician, map);
+			}
 
-      @Override
-      protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-      
-      
-      
-        return PhcrSocialHistorySectionOperations.validatePhcrSocialHistorySectionOccupationObservation(
-          (PhcrSocialHistorySection) objectToTest, diagnostician, map);
-      }
+		};
 
-    };
-
-    validatePhcrSocialHistorySectionOccupationObservationTestCase.doValidationTest();
-}
+		validatePhcrSocialHistorySectionOccupationObservationTestCase.doValidationTest();
+	}
 
 	/**
 	*
@@ -610,67 +335,33 @@ public void testValidatePhcrSocialHistorySectionCodeP() {
 	*/
 	@Test
 	public void testValidatePhcrSocialHistorySectionPregnancyObservation() {
-      OperationsTestCase<PhcrSocialHistorySection> validatePhcrSocialHistorySectionPregnancyObservationTestCase = new OperationsTestCase<PhcrSocialHistorySection>(
-      "validatePhcrSocialHistorySectionPregnancyObservation",
-      operationsForOCL.getOCLValue("VALIDATE_PHCR_SOCIAL_HISTORY_SECTION_PREGNANCY_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP")
-      ,objectFactory) {
+		OperationsTestCase<PhcrSocialHistorySection> validatePhcrSocialHistorySectionPregnancyObservationTestCase = new OperationsTestCase<PhcrSocialHistorySection>(
+			"validatePhcrSocialHistorySectionPregnancyObservation",
+			operationsForOCL.getOCLValue("VALIDATE_PHCR_SOCIAL_HISTORY_SECTION_PREGNANCY_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
 
-      @Override
-      protected void updateToFail(PhcrSocialHistorySection target) {
+			@Override
+			protected void updateToFail(PhcrSocialHistorySection target) {
 
-      }
+			}
 
-      @Override
-      protected void updateToPass(PhcrSocialHistorySection target) {
-        target.init();
-        
-        
-        
-        
-        
+			@Override
+			protected void updateToPass(PhcrSocialHistorySection target) {
+				target.init();
 
-        
-        
+			}
 
-  
-      
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
 
-  
-    
-    
-      
-        
-    
-      
-        
-      
-        
-        
-        
-        
-        
-        
-        
-      
-      
-          
-      
-        
-      }
+				return PhcrSocialHistorySectionOperations.validatePhcrSocialHistorySectionPregnancyObservation(
+					(PhcrSocialHistorySection) objectToTest, diagnostician, map);
+			}
 
-      @Override
-      protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-      
-      
-      
-        return PhcrSocialHistorySectionOperations.validatePhcrSocialHistorySectionPregnancyObservation(
-          (PhcrSocialHistorySection) objectToTest, diagnostician, map);
-      }
+		};
 
-    };
-
-    validatePhcrSocialHistorySectionPregnancyObservationTestCase.doValidationTest();
-}
+		validatePhcrSocialHistorySectionPregnancyObservationTestCase.doValidationTest();
+	}
 
 	/**
 	*
@@ -679,13 +370,10 @@ public void testValidatePhcrSocialHistorySectionCodeP() {
 	@Test
 	public void testGetGeotemporalHistoryObservations() {
 
+		PhcrSocialHistorySection target = objectFactory.create();
+		target.getGeotemporalHistoryObservations();
 
-PhcrSocialHistorySection target = objectFactory.create();
-target.getGeotemporalHistoryObservations();
-
-
-
-}
+	}
 
 	/**
 	*
@@ -694,13 +382,10 @@ target.getGeotemporalHistoryObservations();
 	@Test
 	public void testGetMostRecentTimeArrivedInUSAObservation() {
 
+		PhcrSocialHistorySection target = objectFactory.create();
+		target.getMostRecentTimeArrivedInUSAObservation();
 
-PhcrSocialHistorySection target = objectFactory.create();
-target.getMostRecentTimeArrivedInUSAObservation();
-
-
-
-}
+	}
 
 	/**
 	*
@@ -709,13 +394,10 @@ target.getMostRecentTimeArrivedInUSAObservation();
 	@Test
 	public void testGetRaceObservations() {
 
+		PhcrSocialHistorySection target = objectFactory.create();
+		target.getRaceObservations();
 
-PhcrSocialHistorySection target = objectFactory.create();
-target.getRaceObservations();
-
-
-
-}
+	}
 
 	/**
 	*
@@ -724,13 +406,10 @@ target.getRaceObservations();
 	@Test
 	public void testGetOccupationObservations() {
 
+		PhcrSocialHistorySection target = objectFactory.create();
+		target.getOccupationObservations();
 
-PhcrSocialHistorySection target = objectFactory.create();
-target.getOccupationObservations();
-
-
-
-}
+	}
 
 	/**
 	*
@@ -739,13 +418,10 @@ target.getOccupationObservations();
 	@Test
 	public void testGetPregnancyObservations() {
 
+		PhcrSocialHistorySection target = objectFactory.create();
+		target.getPregnancyObservations();
 
-PhcrSocialHistorySection target = objectFactory.create();
-target.getPregnancyObservations();
-
-
-
-}
+	}
 
 	/**
 	*
@@ -753,67 +429,33 @@ target.getPregnancyObservations();
 	*/
 	@Test
 	public void testValidateSocialHistorySectionTemplateId() {
-      OperationsTestCase<PhcrSocialHistorySection> validateSocialHistorySectionTemplateIdTestCase = new OperationsTestCase<PhcrSocialHistorySection>(
-      "validateSocialHistorySectionTemplateId",
-      operationsForOCL.getOCLValue("VALIDATE_SOCIAL_HISTORY_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP")
-      ,objectFactory) {
+		OperationsTestCase<PhcrSocialHistorySection> validateSocialHistorySectionTemplateIdTestCase = new OperationsTestCase<PhcrSocialHistorySection>(
+			"validateSocialHistorySectionTemplateId",
+			operationsForOCL.getOCLValue("VALIDATE_SOCIAL_HISTORY_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
 
-      @Override
-      protected void updateToFail(PhcrSocialHistorySection target) {
+			@Override
+			protected void updateToFail(PhcrSocialHistorySection target) {
 
-      }
+			}
 
-      @Override
-      protected void updateToPass(PhcrSocialHistorySection target) {
-        target.init();
-        
-        
-        
-        
-        
+			@Override
+			protected void updateToPass(PhcrSocialHistorySection target) {
+				target.init();
 
-        
-        
+			}
 
-  
-      
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
 
-  
-    
-    
-      
-        
-    
-      
-        
-      
-        
-        
-        
-        
-        
-        
-        
-      
-      
-          
-      
-        
-      }
+				return PhcrSocialHistorySectionOperations.validateSocialHistorySectionTemplateId(
+					(PhcrSocialHistorySection) objectToTest, diagnostician, map);
+			}
 
-      @Override
-      protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-      
-      
-      
-        return PhcrSocialHistorySectionOperations.validateSocialHistorySectionTemplateId(
-          (PhcrSocialHistorySection) objectToTest, diagnostician, map);
-      }
+		};
 
-    };
-
-    validateSocialHistorySectionTemplateIdTestCase.doValidationTest();
-}
+		validateSocialHistorySectionTemplateIdTestCase.doValidationTest();
+	}
 
 	/**
 	*
@@ -868,17 +510,17 @@ target.getPregnancyObservations();
 	*/
 	@Test
 	public void testConstructor() {
-          @SuppressWarnings("unused")
-      ConstructorTestClass constructorTestClass = new ConstructorTestClass();		
-  } // testConstructor
+		@SuppressWarnings("unused")
+		ConstructorTestClass constructorTestClass = new ConstructorTestClass();
+	} // testConstructor
 
 	/**
 	*
 	* @generated
 	*/
 	@Override
-	protected EObject getObjectToTest() {		
-    return null;
-  }
+	protected EObject getObjectToTest() {
+		return null;
+	}
 
 } // PhcrSocialHistorySectionOperations
