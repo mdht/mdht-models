@@ -47,29 +47,29 @@ public class AssessmentSectionOperations
 		extends
 		org.openhealthtools.mdht.uml.cda.consol.operations.AssessmentSectionOperations {
 	/**
-   * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * @generated
-   */
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * @generated
+	 */
 	protected AssessmentSectionOperations() {
-    super();
-  }
+		super();
+	}
 
 	/**
-   * The cached OCL expression body for the '{@link #validateMu2consolAssessmentSectionProblemObservation(AssessmentSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Mu2consol Assessment Section Problem Observation</em>}' operation.
-   * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * @see #validateMu2consolAssessmentSectionProblemObservation(AssessmentSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-   * @generated
-   * @ordered
-   */
+	 * The cached OCL expression body for the '{@link #validateMu2consolAssessmentSectionProblemObservation(AssessmentSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Mu2consol Assessment Section Problem Observation</em>}' operation.
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * @see #validateMu2consolAssessmentSectionProblemObservation(AssessmentSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 	protected static final String VALIDATE_MU2CONSOL_ASSESSMENT_SECTION_PROBLEM_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entry->one(entry : cda::Entry | not entry.observation.oclIsUndefined() and entry.observation.oclIsKindOf(consol::ProblemObservation))";
 
 	/**
-   * The cached OCL invariant for the '{@link #validateMu2consolAssessmentSectionProblemObservation(AssessmentSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Mu2consol Assessment Section Problem Observation</em>}' invariant operation.
-   * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * @see #validateMu2consolAssessmentSectionProblemObservation(AssessmentSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-   * @generated
-   * @ordered
-   */
+	 * The cached OCL invariant for the '{@link #validateMu2consolAssessmentSectionProblemObservation(AssessmentSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Mu2consol Assessment Section Problem Observation</em>}' invariant operation.
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * @see #validateMu2consolAssessmentSectionProblemObservation(AssessmentSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 
 	protected static Constraint VALIDATE_MU2CONSOL_ASSESSMENT_SECTION_PROBLEM_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
@@ -94,54 +94,50 @@ public class AssessmentSectionOperations
 			AssessmentSection assessmentSection, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
   	  
-    if (VALIDATE_MU2CONSOL_ASSESSMENT_SECTION_PROBLEM_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-      OCL.Helper helper = EOCL_ENV.createOCLHelper();
-      helper.setContext(Mu2consolPackage.Literals.ASSESSMENT_SECTION);
-      try
-      {
-        VALIDATE_MU2CONSOL_ASSESSMENT_SECTION_PROBLEM_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_MU2CONSOL_ASSESSMENT_SECTION_PROBLEM_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-      }
-      catch (ParserException pe)
-      {
-        throw new UnsupportedOperationException(pe.getLocalizedMessage());
-      }
-    }
-    if (!EOCL_ENV.createQuery(VALIDATE_MU2CONSOL_ASSESSMENT_SECTION_PROBLEM_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(assessmentSection))
-    {
-      if (diagnostics != null)
-      {
-        diagnostics.add
-          (new BasicDiagnostic
-            (Diagnostic.ERROR,
-             Mu2consolValidator.DIAGNOSTIC_SOURCE,
-             Mu2consolValidator.ASSESSMENT_SECTION__MU2CONSOL_ASSESSMENT_SECTION_PROBLEM_OBSERVATION,
-             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "Mu2consolAssessmentSectionProblemObservation", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(assessmentSection, context) }),
-             new Object [] { assessmentSection }));
-      }
-       
-      return false;
-    }
-    return true;
-  }
+		if (VALIDATE_MU2CONSOL_ASSESSMENT_SECTION_PROBLEM_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+			helper.setContext(Mu2consolPackage.Literals.ASSESSMENT_SECTION);
+			try {
+				VALIDATE_MU2CONSOL_ASSESSMENT_SECTION_PROBLEM_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_MU2CONSOL_ASSESSMENT_SECTION_PROBLEM_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+			}
+			catch (ParserException pe) {
+				throw new UnsupportedOperationException(pe.getLocalizedMessage());
+			}
+		}
+		if (!EOCL_ENV.createQuery(VALIDATE_MU2CONSOL_ASSESSMENT_SECTION_PROBLEM_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(assessmentSection)) {
+			if (diagnostics != null) {
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 Mu2consolValidator.DIAGNOSTIC_SOURCE,
+						 Mu2consolValidator.ASSESSMENT_SECTION__MU2CONSOL_ASSESSMENT_SECTION_PROBLEM_OBSERVATION,
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "Mu2consolAssessmentSectionProblemObservation", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(assessmentSection, context) }),
+						 new Object [] { assessmentSection }));
+			}
+			 
+			return false;
+		}
+		return true;
+	}
 
 	/**
-   * The cached OCL expression body for the '{@link #getProblemObservation(AssessmentSection) <em>Get Problem Observation</em>}' operation.
-   * <!-- begin-user-doc -->
+	 * The cached OCL expression body for the '{@link #getProblemObservation(AssessmentSection) <em>Get Problem Observation</em>}' operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @see #getProblemObservation(AssessmentSection)
-   * @generated
-   * @ordered
-   */
+	 * @see #getProblemObservation(AssessmentSection)
+	 * @generated
+	 * @ordered
+	 */
 	protected static final String GET_PROBLEM_OBSERVATION__EOCL_EXP = "self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::ProblemObservation))->asSequence()->any(true).oclAsType(consol::ProblemObservation)";
 
 	/**
-   * The cached OCL query for the '{@link #getProblemObservation(AssessmentSection) <em>Get Problem Observation</em>}' query operation.
-   * <!-- begin-user-doc
+	 * The cached OCL query for the '{@link #getProblemObservation(AssessmentSection) <em>Get Problem Observation</em>}' query operation.
+	 * <!-- begin-user-doc
 	 * --> <!-- end-user-doc -->
-   * @see #getProblemObservation(AssessmentSection)
-   * @generated
-   * @ordered
-   */
+	 * @see #getProblemObservation(AssessmentSection)
+	 * @generated
+	 * @ordered
+	 */
 	protected static OCLExpression<EClassifier> GET_PROBLEM_OBSERVATION__EOCL_QRY;
 
 	/**
@@ -159,21 +155,18 @@ public class AssessmentSectionOperations
 
 	public static ProblemObservation getProblemObservation(
 			AssessmentSection assessmentSection) {
-    if (GET_PROBLEM_OBSERVATION__EOCL_QRY == null)
-    {
-      OCL.Helper helper = EOCL_ENV.createOCLHelper();
-      helper.setOperationContext(Mu2consolPackage.Literals.ASSESSMENT_SECTION, Mu2consolPackage.Literals.ASSESSMENT_SECTION.getEAllOperations().get(61));
-      try
-      {
-        GET_PROBLEM_OBSERVATION__EOCL_QRY = helper.createQuery(GET_PROBLEM_OBSERVATION__EOCL_EXP);
-      }
-      catch (ParserException pe)
-      {
-        throw new UnsupportedOperationException(pe.getLocalizedMessage());
-      }
-    }
-    OCL.Query query = EOCL_ENV.createQuery(GET_PROBLEM_OBSERVATION__EOCL_QRY);
-    return (ProblemObservation) query.evaluate(assessmentSection);
-  }
+		if (GET_PROBLEM_OBSERVATION__EOCL_QRY == null) {
+			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+			helper.setOperationContext(Mu2consolPackage.Literals.ASSESSMENT_SECTION, Mu2consolPackage.Literals.ASSESSMENT_SECTION.getEAllOperations().get(61));
+			try {
+				GET_PROBLEM_OBSERVATION__EOCL_QRY = helper.createQuery(GET_PROBLEM_OBSERVATION__EOCL_EXP);
+			}
+			catch (ParserException pe) {
+				throw new UnsupportedOperationException(pe.getLocalizedMessage());
+			}
+		}
+		OCL.Query query = EOCL_ENV.createQuery(GET_PROBLEM_OBSERVATION__EOCL_QRY);
+		return (ProblemObservation) query.evaluate(assessmentSection);
+	}
 
 } // AssessmentSectionOperations

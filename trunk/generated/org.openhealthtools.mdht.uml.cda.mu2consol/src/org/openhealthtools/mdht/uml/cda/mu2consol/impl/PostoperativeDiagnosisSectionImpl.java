@@ -31,47 +31,47 @@ public class PostoperativeDiagnosisSectionImpl
 		org.openhealthtools.mdht.uml.cda.consol.impl.PostoperativeDiagnosisSectionImpl
 		implements PostoperativeDiagnosisSection {
 	/**
-   * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * @generated
-   */
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * @generated
+	 */
 	protected PostoperativeDiagnosisSectionImpl() {
-    super();
-  }
+		super();
+	}
 
 	/**
-   * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * @generated
-   */
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * @generated
+	 */
 	@Override
 	protected EClass eStaticClass() {
-    return Mu2consolPackage.Literals.POSTOPERATIVE_DIAGNOSIS_SECTION;
-  }
+		return Mu2consolPackage.Literals.POSTOPERATIVE_DIAGNOSIS_SECTION;
+	}
 
 	/**
-   * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * @generated
-   */
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * @generated
+	 */
 	public boolean validateMu2consolPostoperativeDiagnosisSectionProblemObservation(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return PostoperativeDiagnosisSectionOperations.validateMu2consolPostoperativeDiagnosisSectionProblemObservation(this, diagnostics, context);
-  }
+		return PostoperativeDiagnosisSectionOperations.validateMu2consolPostoperativeDiagnosisSectionProblemObservation(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * @generated
-   */
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * @generated
+	 */
 	public ProblemObservation getProblemObservation() {
-    return PostoperativeDiagnosisSectionOperations.getProblemObservation(this);
-  }
+		return PostoperativeDiagnosisSectionOperations.getProblemObservation(this);
+	}
 
 	/**
-   * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * @generated
-   */
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * @generated
+	 */
 	@Override
 	public PostoperativeDiagnosisSection init() {
-      return Initializer.Util.init(this);
-  }
+	    return Initializer.Util.init(this);
+	}
 
 	/**
      * <!-- begin-user-doc --> <!-- end-user-doc -->

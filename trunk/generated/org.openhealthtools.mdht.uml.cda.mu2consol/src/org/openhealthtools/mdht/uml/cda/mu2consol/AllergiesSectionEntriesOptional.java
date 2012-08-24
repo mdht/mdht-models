@@ -57,9 +57,9 @@ public interface AllergiesSectionEntriesOptional extends
 	AllergyProblemAct getmu2consolAllergyProblemAct();
 
 	/**
-   * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * @generated
-   */
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * @generated
+	 */
 	public AllergiesSectionEntriesOptional init();
 
 	/**

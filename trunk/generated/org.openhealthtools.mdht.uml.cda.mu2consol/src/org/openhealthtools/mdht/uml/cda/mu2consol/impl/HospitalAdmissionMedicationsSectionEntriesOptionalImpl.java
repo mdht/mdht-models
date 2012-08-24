@@ -33,47 +33,47 @@ public class HospitalAdmissionMedicationsSectionEntriesOptionalImpl
 		org.openhealthtools.mdht.uml.cda.consol.impl.HospitalAdmissionMedicationsSectionEntriesOptionalImpl
 		implements HospitalAdmissionMedicationsSectionEntriesOptional {
 	/**
-   * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * @generated
-   */
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * @generated
+	 */
 	protected HospitalAdmissionMedicationsSectionEntriesOptionalImpl() {
-    super();
-  }
+		super();
+	}
 
 	/**
-   * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * @generated
-   */
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * @generated
+	 */
 	@Override
 	protected EClass eStaticClass() {
-    return Mu2consolPackage.Literals.HOSPITAL_ADMISSION_MEDICATIONS_SECTION_ENTRIES_OPTIONAL;
-  }
+		return Mu2consolPackage.Literals.HOSPITAL_ADMISSION_MEDICATIONS_SECTION_ENTRIES_OPTIONAL;
+	}
 
 	/**
-   * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * @generated
-   */
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * @generated
+	 */
 	public boolean validateMu2consolHospitalAdmissionMedicationsSectionEntriesOptionalAdmissionMedication(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return HospitalAdmissionMedicationsSectionEntriesOptionalOperations.validateMu2consolHospitalAdmissionMedicationsSectionEntriesOptionalAdmissionMedication(this, diagnostics, context);
-  }
+		return HospitalAdmissionMedicationsSectionEntriesOptionalOperations.validateMu2consolHospitalAdmissionMedicationsSectionEntriesOptionalAdmissionMedication(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * @generated
-   */
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * @generated
+	 */
 	public EList<AdmissionMedication> getmu2consolAdmissionMedications() {
-    return HospitalAdmissionMedicationsSectionEntriesOptionalOperations.getmu2consolAdmissionMedications(this);
-  }
+		return HospitalAdmissionMedicationsSectionEntriesOptionalOperations.getmu2consolAdmissionMedications(this);
+	}
 
 	/**
-   * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * @generated
-   */
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * @generated
+	 */
 	@Override
 	public HospitalAdmissionMedicationsSectionEntriesOptional init() {
-      return Initializer.Util.init(this);
-  }
+	    return Initializer.Util.init(this);
+	}
 
 	/**
      * <!-- begin-user-doc --> <!-- end-user-doc -->

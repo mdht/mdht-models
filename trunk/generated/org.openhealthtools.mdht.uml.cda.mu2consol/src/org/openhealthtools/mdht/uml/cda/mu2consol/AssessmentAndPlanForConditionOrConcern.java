@@ -59,9 +59,9 @@ public interface AssessmentAndPlanForConditionOrConcern extends
 	ProblemObservation getProblemObservation();
 
 	/**
-   * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * @generated
-   */
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * @generated
+	 */
 	public AssessmentAndPlanForConditionOrConcern init();
 
 	/**
