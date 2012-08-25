@@ -46,29 +46,29 @@ public class PostoperativeDiagnosisSectionOperations
 		extends
 		org.openhealthtools.mdht.uml.cda.consol.operations.PostoperativeDiagnosisSectionOperations {
 	/**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @generated
-	 */
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @generated
+   */
 	protected PostoperativeDiagnosisSectionOperations() {
-		super();
-	}
+    super();
+  }
 
 	/**
-	 * The cached OCL expression body for the '{@link #validateMu2consolPostoperativeDiagnosisSectionProblemObservation(PostoperativeDiagnosisSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Mu2consol Postoperative Diagnosis Section Problem Observation</em>}' operation.
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @see #validateMu2consolPostoperativeDiagnosisSectionProblemObservation(PostoperativeDiagnosisSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
+   * The cached OCL expression body for the '{@link #validateMu2consolPostoperativeDiagnosisSectionProblemObservation(PostoperativeDiagnosisSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Mu2consol Postoperative Diagnosis Section Problem Observation</em>}' operation.
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @see #validateMu2consolPostoperativeDiagnosisSectionProblemObservation(PostoperativeDiagnosisSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+   * @generated
+   * @ordered
+   */
 	protected static final String VALIDATE_MU2CONSOL_POSTOPERATIVE_DIAGNOSIS_SECTION_PROBLEM_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entry->one(entry : cda::Entry | not entry.observation.oclIsUndefined() and entry.observation.oclIsKindOf(consol::ProblemObservation))";
 
 	/**
-	 * The cached OCL invariant for the '{@link #validateMu2consolPostoperativeDiagnosisSectionProblemObservation(PostoperativeDiagnosisSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Mu2consol Postoperative Diagnosis Section Problem Observation</em>}' invariant operation.
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @see #validateMu2consolPostoperativeDiagnosisSectionProblemObservation(PostoperativeDiagnosisSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
+   * The cached OCL invariant for the '{@link #validateMu2consolPostoperativeDiagnosisSectionProblemObservation(PostoperativeDiagnosisSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Mu2consol Postoperative Diagnosis Section Problem Observation</em>}' invariant operation.
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @see #validateMu2consolPostoperativeDiagnosisSectionProblemObservation(PostoperativeDiagnosisSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+   * @generated
+   * @ordered
+   */
 
 	protected static Constraint VALIDATE_MU2CONSOL_POSTOPERATIVE_DIAGNOSIS_SECTION_PROBLEM_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
@@ -93,50 +93,54 @@ public class PostoperativeDiagnosisSectionOperations
 			PostoperativeDiagnosisSection postoperativeDiagnosisSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
   	  
-		if (VALIDATE_MU2CONSOL_POSTOPERATIVE_DIAGNOSIS_SECTION_PROBLEM_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setContext(Mu2consolPackage.Literals.POSTOPERATIVE_DIAGNOSIS_SECTION);
-			try {
-				VALIDATE_MU2CONSOL_POSTOPERATIVE_DIAGNOSIS_SECTION_PROBLEM_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_MU2CONSOL_POSTOPERATIVE_DIAGNOSIS_SECTION_PROBLEM_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
-				throw new UnsupportedOperationException(pe.getLocalizedMessage());
-			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_MU2CONSOL_POSTOPERATIVE_DIAGNOSIS_SECTION_PROBLEM_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(postoperativeDiagnosisSection)) {
-			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 Mu2consolValidator.DIAGNOSTIC_SOURCE,
-						 Mu2consolValidator.POSTOPERATIVE_DIAGNOSIS_SECTION__MU2CONSOL_POSTOPERATIVE_DIAGNOSIS_SECTION_PROBLEM_OBSERVATION,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "Mu2consolPostoperativeDiagnosisSectionProblemObservation", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(postoperativeDiagnosisSection, context) }),
-						 new Object [] { postoperativeDiagnosisSection }));
-			}
-			 
-			return false;
-		}
-		return true;
-	}
+    if (VALIDATE_MU2CONSOL_POSTOPERATIVE_DIAGNOSIS_SECTION_PROBLEM_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+      OCL.Helper helper = EOCL_ENV.createOCLHelper();
+      helper.setContext(Mu2consolPackage.Literals.POSTOPERATIVE_DIAGNOSIS_SECTION);
+      try
+      {
+        VALIDATE_MU2CONSOL_POSTOPERATIVE_DIAGNOSIS_SECTION_PROBLEM_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_MU2CONSOL_POSTOPERATIVE_DIAGNOSIS_SECTION_PROBLEM_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+      }
+      catch (ParserException pe)
+      {
+        throw new UnsupportedOperationException(pe.getLocalizedMessage());
+      }
+    }
+    if (!EOCL_ENV.createQuery(VALIDATE_MU2CONSOL_POSTOPERATIVE_DIAGNOSIS_SECTION_PROBLEM_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(postoperativeDiagnosisSection))
+    {
+      if (diagnostics != null)
+      {
+        diagnostics.add
+          (new BasicDiagnostic
+            (Diagnostic.ERROR,
+             Mu2consolValidator.DIAGNOSTIC_SOURCE,
+             Mu2consolValidator.POSTOPERATIVE_DIAGNOSIS_SECTION__MU2CONSOL_POSTOPERATIVE_DIAGNOSIS_SECTION_PROBLEM_OBSERVATION,
+             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "Mu2consolPostoperativeDiagnosisSectionProblemObservation", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(postoperativeDiagnosisSection, context) }),
+             new Object [] { postoperativeDiagnosisSection }));
+      }
+       
+      return false;
+    }
+    return true;
+  }
 
 	/**
-	 * The cached OCL expression body for the '{@link #getProblemObservation(PostoperativeDiagnosisSection) <em>Get Problem Observation</em>}' operation.
-	 * <!-- begin-user-doc -->
+   * The cached OCL expression body for the '{@link #getProblemObservation(PostoperativeDiagnosisSection) <em>Get Problem Observation</em>}' operation.
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getProblemObservation(PostoperativeDiagnosisSection)
-	 * @generated
-	 * @ordered
-	 */
+   * @see #getProblemObservation(PostoperativeDiagnosisSection)
+   * @generated
+   * @ordered
+   */
 	protected static final String GET_PROBLEM_OBSERVATION__EOCL_EXP = "self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::ProblemObservation))->asSequence()->any(true).oclAsType(consol::ProblemObservation)";
 
 	/**
-	 * The cached OCL query for the '{@link #getProblemObservation(PostoperativeDiagnosisSection) <em>Get Problem Observation</em>}' query operation.
-	 * <!-- begin-user-doc
+   * The cached OCL query for the '{@link #getProblemObservation(PostoperativeDiagnosisSection) <em>Get Problem Observation</em>}' query operation.
+   * <!-- begin-user-doc
 	 * --> <!-- end-user-doc -->
-	 * @see #getProblemObservation(PostoperativeDiagnosisSection)
-	 * @generated
-	 * @ordered
-	 */
+   * @see #getProblemObservation(PostoperativeDiagnosisSection)
+   * @generated
+   * @ordered
+   */
 	protected static OCLExpression<EClassifier> GET_PROBLEM_OBSERVATION__EOCL_QRY;
 
 	/**
@@ -154,18 +158,21 @@ public class PostoperativeDiagnosisSectionOperations
 
 	public static ProblemObservation getProblemObservation(
 			PostoperativeDiagnosisSection postoperativeDiagnosisSection) {
-		if (GET_PROBLEM_OBSERVATION__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(Mu2consolPackage.Literals.POSTOPERATIVE_DIAGNOSIS_SECTION, Mu2consolPackage.Literals.POSTOPERATIVE_DIAGNOSIS_SECTION.getEAllOperations().get(61));
-			try {
-				GET_PROBLEM_OBSERVATION__EOCL_QRY = helper.createQuery(GET_PROBLEM_OBSERVATION__EOCL_EXP);
-			}
-			catch (ParserException pe) {
-				throw new UnsupportedOperationException(pe.getLocalizedMessage());
-			}
-		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_PROBLEM_OBSERVATION__EOCL_QRY);
-		return (ProblemObservation) query.evaluate(postoperativeDiagnosisSection);
-	}
+    if (GET_PROBLEM_OBSERVATION__EOCL_QRY == null)
+    {
+      OCL.Helper helper = EOCL_ENV.createOCLHelper();
+      helper.setOperationContext(Mu2consolPackage.Literals.POSTOPERATIVE_DIAGNOSIS_SECTION, Mu2consolPackage.Literals.POSTOPERATIVE_DIAGNOSIS_SECTION.getEAllOperations().get(61));
+      try
+      {
+        GET_PROBLEM_OBSERVATION__EOCL_QRY = helper.createQuery(GET_PROBLEM_OBSERVATION__EOCL_EXP);
+      }
+      catch (ParserException pe)
+      {
+        throw new UnsupportedOperationException(pe.getLocalizedMessage());
+      }
+    }
+    OCL.Query query = EOCL_ENV.createQuery(GET_PROBLEM_OBSERVATION__EOCL_QRY);
+    return (ProblemObservation) query.evaluate(postoperativeDiagnosisSection);
+  }
 
 } // PostoperativeDiagnosisSectionOperations

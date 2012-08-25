@@ -31,47 +31,47 @@ public class PostprocedureDiagnosisSectionImpl
 		org.openhealthtools.mdht.uml.cda.consol.impl.PostprocedureDiagnosisSectionImpl
 		implements PostprocedureDiagnosisSection {
 	/**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @generated
-	 */
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @generated
+   */
 	protected PostprocedureDiagnosisSectionImpl() {
-		super();
-	}
+    super();
+  }
 
 	/**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @generated
-	 */
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @generated
+   */
 	@Override
 	protected EClass eStaticClass() {
-		return Mu2consolPackage.Literals.POSTPROCEDURE_DIAGNOSIS_SECTION;
-	}
+    return Mu2consolPackage.Literals.POSTPROCEDURE_DIAGNOSIS_SECTION;
+  }
 
 	/**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @generated
-	 */
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @generated
+   */
 	public boolean validateMu2consolPostprocedureDiagnosisSectionPostprocedureDiagnosis(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return PostprocedureDiagnosisSectionOperations.validateMu2consolPostprocedureDiagnosisSectionPostprocedureDiagnosis(this, diagnostics, context);
-	}
+    return PostprocedureDiagnosisSectionOperations.validateMu2consolPostprocedureDiagnosisSectionPostprocedureDiagnosis(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @generated
-	 */
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @generated
+   */
 	public PostprocedureDiagnosis getmu2consolPostprocedureDiagnosis() {
-		return PostprocedureDiagnosisSectionOperations.getmu2consolPostprocedureDiagnosis(this);
-	}
+    return PostprocedureDiagnosisSectionOperations.getmu2consolPostprocedureDiagnosis(this);
+  }
 
 	/**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @generated
-	 */
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @generated
+   */
 	@Override
 	public PostprocedureDiagnosisSection init() {
-	    return Initializer.Util.init(this);
-	}
+      return Initializer.Util.init(this);
+  }
 
 	/**
      * <!-- begin-user-doc --> <!-- end-user-doc -->
