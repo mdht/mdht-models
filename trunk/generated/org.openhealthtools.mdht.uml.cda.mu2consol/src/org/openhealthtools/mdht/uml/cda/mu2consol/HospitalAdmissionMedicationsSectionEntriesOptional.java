@@ -60,9 +60,9 @@ public interface HospitalAdmissionMedicationsSectionEntriesOptional
 	EList<AdmissionMedication> getmu2consolAdmissionMedications();
 
 	/**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @generated
-	 */
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @generated
+   */
 	public HospitalAdmissionMedicationsSectionEntriesOptional init();
 
 	/**

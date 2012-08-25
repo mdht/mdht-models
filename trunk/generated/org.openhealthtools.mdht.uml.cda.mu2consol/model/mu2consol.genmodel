@@ -486,6 +486,94 @@
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="mu2consol.ecore#//VDTInpatientPatientInfo/getPlanOfCareSection"/>
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="mu2consol.ecore#//VDTInpatientPatientInfo/getProceduresSection"/>
     </genClasses>
-    <genClasses xsi:type="genmodel:GenClass" ecoreClass="mu2consol.ecore#//VDTAmbulatoryPatientInfo"/>
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="mu2consol.ecore#//VDTAmbulatoryPatientInfo">
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="mu2consol.ecore#//VDTAmbulatoryPatientInfo/VDTAmbulatoryPatientInfoMedicationList">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="mu2consol.ecore#//VDTAmbulatoryPatientInfo/VDTAmbulatoryPatientInfoMedicationList/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="mu2consol.ecore#//VDTAmbulatoryPatientInfo/VDTAmbulatoryPatientInfoMedicationList/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="mu2consol.ecore#//VDTAmbulatoryPatientInfo/VDTAmbulatoryPatientInfoMedicationAllergy">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="mu2consol.ecore#//VDTAmbulatoryPatientInfo/VDTAmbulatoryPatientInfoMedicationAllergy/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="mu2consol.ecore#//VDTAmbulatoryPatientInfo/VDTAmbulatoryPatientInfoMedicationAllergy/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="mu2consol.ecore#//VDTAmbulatoryPatientInfo/VDTAmbulatoryPatientInfoCanHaveEitherVitalSignsRequiedOrOptionalEntry">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="mu2consol.ecore#//VDTAmbulatoryPatientInfo/VDTAmbulatoryPatientInfoCanHaveEitherVitalSignsRequiedOrOptionalEntry/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="mu2consol.ecore#//VDTAmbulatoryPatientInfo/VDTAmbulatoryPatientInfoCanHaveEitherVitalSignsRequiedOrOptionalEntry/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="mu2consol.ecore#//VDTAmbulatoryPatientInfo/VDTAmbulatoryPatientInfoCanHaveEitherAllergyRequiredOrOptionalEntry">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="mu2consol.ecore#//VDTAmbulatoryPatientInfo/VDTAmbulatoryPatientInfoCanHaveEitherAllergyRequiredOrOptionalEntry/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="mu2consol.ecore#//VDTAmbulatoryPatientInfo/VDTAmbulatoryPatientInfoCanHaveEitherAllergyRequiredOrOptionalEntry/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="mu2consol.ecore#//VDTAmbulatoryPatientInfo/VDTAmbulatoryPatientInfoCanHaveEitherEncountersRequiredOrOptionalEntry">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="mu2consol.ecore#//VDTAmbulatoryPatientInfo/VDTAmbulatoryPatientInfoCanHaveEitherEncountersRequiredOrOptionalEntry/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="mu2consol.ecore#//VDTAmbulatoryPatientInfo/VDTAmbulatoryPatientInfoCanHaveEitherEncountersRequiredOrOptionalEntry/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="mu2consol.ecore#//VDTAmbulatoryPatientInfo/VDTAmbulatoryPatientInfoReasonForHospitalization">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="mu2consol.ecore#//VDTAmbulatoryPatientInfo/VDTAmbulatoryPatientInfoReasonForHospitalization/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="mu2consol.ecore#//VDTAmbulatoryPatientInfo/VDTAmbulatoryPatientInfoReasonForHospitalization/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="mu2consol.ecore#//VDTAmbulatoryPatientInfo/VDTAmbulatoryPatientInfoSocialHistorySection">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="mu2consol.ecore#//VDTAmbulatoryPatientInfo/VDTAmbulatoryPatientInfoSocialHistorySection/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="mu2consol.ecore#//VDTAmbulatoryPatientInfo/VDTAmbulatoryPatientInfoSocialHistorySection/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="mu2consol.ecore#//VDTAmbulatoryPatientInfo/VDTAmbulatoryPatientInfoProblemSection">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="mu2consol.ecore#//VDTAmbulatoryPatientInfo/VDTAmbulatoryPatientInfoProblemSection/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="mu2consol.ecore#//VDTAmbulatoryPatientInfo/VDTAmbulatoryPatientInfoProblemSection/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="mu2consol.ecore#//VDTAmbulatoryPatientInfo/VDTAmbulatoryPatientInfoResultsSection">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="mu2consol.ecore#//VDTAmbulatoryPatientInfo/VDTAmbulatoryPatientInfoResultsSection/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="mu2consol.ecore#//VDTAmbulatoryPatientInfo/VDTAmbulatoryPatientInfoResultsSection/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="mu2consol.ecore#//VDTAmbulatoryPatientInfo/VDTAmbulatoryPatientInfoPlanOfCareSection">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="mu2consol.ecore#//VDTAmbulatoryPatientInfo/VDTAmbulatoryPatientInfoPlanOfCareSection/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="mu2consol.ecore#//VDTAmbulatoryPatientInfo/VDTAmbulatoryPatientInfoPlanOfCareSection/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="mu2consol.ecore#//VDTAmbulatoryPatientInfo/VDTAmbulatoryPatientInfoProceduresSection">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="mu2consol.ecore#//VDTAmbulatoryPatientInfo/VDTAmbulatoryPatientInfoProceduresSection/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="mu2consol.ecore#//VDTAmbulatoryPatientInfo/VDTAmbulatoryPatientInfoProceduresSection/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="mu2consol.ecore#//VDTAmbulatoryPatientInfo/VDTAmbulatoryPatientInfoHospitalDischargeInstructionsSection">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="mu2consol.ecore#//VDTAmbulatoryPatientInfo/VDTAmbulatoryPatientInfoHospitalDischargeInstructionsSection/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="mu2consol.ecore#//VDTAmbulatoryPatientInfo/VDTAmbulatoryPatientInfoHospitalDischargeInstructionsSection/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="mu2consol.ecore#//VDTAmbulatoryPatientInfo/VDTAmbulatoryPatientInfomu2consolSocialHistorySectionSmokingStatusObservation">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="mu2consol.ecore#//VDTAmbulatoryPatientInfo/VDTAmbulatoryPatientInfomu2consolSocialHistorySectionSmokingStatusObservation/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="mu2consol.ecore#//VDTAmbulatoryPatientInfo/VDTAmbulatoryPatientInfomu2consolSocialHistorySectionSmokingStatusObservation/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="mu2consol.ecore#//VDTAmbulatoryPatientInfo/VDTAmbulatoryPatientInfomu2consolHospitalAdmissionMedicationsSectionEntriesOptionalAdmissionMedication">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="mu2consol.ecore#//VDTAmbulatoryPatientInfo/VDTAmbulatoryPatientInfomu2consolHospitalAdmissionMedicationsSectionEntriesOptionalAdmissionMedication/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="mu2consol.ecore#//VDTAmbulatoryPatientInfo/VDTAmbulatoryPatientInfomu2consolHospitalAdmissionMedicationsSectionEntriesOptionalAdmissionMedication/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="mu2consol.ecore#//VDTAmbulatoryPatientInfo/VDTAmbulatoryPatientInfomu2consolAllergiesSectionEntriesOptionalAllergyProblemAct">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="mu2consol.ecore#//VDTAmbulatoryPatientInfo/VDTAmbulatoryPatientInfomu2consolAllergiesSectionEntriesOptionalAllergyProblemAct/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="mu2consol.ecore#//VDTAmbulatoryPatientInfo/VDTAmbulatoryPatientInfomu2consolAllergiesSectionEntriesOptionalAllergyProblemAct/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="mu2consol.ecore#//VDTAmbulatoryPatientInfo/VDTAmbulatoryPatientInfomu2consolPlanOfCareSectionCarePlanningForPlanOfCare">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="mu2consol.ecore#//VDTAmbulatoryPatientInfo/VDTAmbulatoryPatientInfomu2consolPlanOfCareSectionCarePlanningForPlanOfCare/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="mu2consol.ecore#//VDTAmbulatoryPatientInfo/VDTAmbulatoryPatientInfomu2consolPlanOfCareSectionCarePlanningForPlanOfCare/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="mu2consol.ecore#//VDTAmbulatoryPatientInfo/VDTAmbulatoryPatientInfomu2consolHospitalAdmissionDiagnosisSectionHospitalAdmissionDiagnosis">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="mu2consol.ecore#//VDTAmbulatoryPatientInfo/VDTAmbulatoryPatientInfomu2consolHospitalAdmissionDiagnosisSectionHospitalAdmissionDiagnosis/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="mu2consol.ecore#//VDTAmbulatoryPatientInfo/VDTAmbulatoryPatientInfomu2consolHospitalAdmissionDiagnosisSectionHospitalAdmissionDiagnosis/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="mu2consol.ecore#//VDTAmbulatoryPatientInfo/getSocialHistorySection"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="mu2consol.ecore#//VDTAmbulatoryPatientInfo/getProblemSection"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="mu2consol.ecore#//VDTAmbulatoryPatientInfo/getMedicationsSection"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="mu2consol.ecore#//VDTAmbulatoryPatientInfo/getHospitalAdmissionMedicationsSectionEntriesOptional"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="mu2consol.ecore#//VDTAmbulatoryPatientInfo/getHospitalDischargeMedicationsSection"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="mu2consol.ecore#//VDTAmbulatoryPatientInfo/getAllergiesSection"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="mu2consol.ecore#//VDTAmbulatoryPatientInfo/getAllergiesSectionEntriesOptional"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="mu2consol.ecore#//VDTAmbulatoryPatientInfo/getResultsSection"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="mu2consol.ecore#//VDTAmbulatoryPatientInfo/getVitalSignsSection"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="mu2consol.ecore#//VDTAmbulatoryPatientInfo/getVitalSignsSectionEntriesOptional"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="mu2consol.ecore#//VDTAmbulatoryPatientInfo/getPlanOfCareSection"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="mu2consol.ecore#//VDTAmbulatoryPatientInfo/getProceduresSection"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="mu2consol.ecore#//VDTAmbulatoryPatientInfo/getHospitalDischargeInstructionsSection"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="mu2consol.ecore#//VDTAmbulatoryPatientInfo/getEncountersSection"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="mu2consol.ecore#//VDTAmbulatoryPatientInfo/getEncountersSectionEntriesOptional"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="mu2consol.ecore#//VDTAmbulatoryPatientInfo/getHospitalAdmissionDiagnosisSection"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="mu2consol.ecore#//VDTAmbulatoryPatientInfo/getReasonForVisitSection"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="mu2consol.ecore#//VDTAmbulatoryPatientInfo/getChiefComplaintSection"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="mu2consol.ecore#//VDTAmbulatoryPatientInfo/getChiefComplaintAndReasonForVisitSection"/>
+    </genClasses>
   </genPackages>
 </genmodel:GenModel>

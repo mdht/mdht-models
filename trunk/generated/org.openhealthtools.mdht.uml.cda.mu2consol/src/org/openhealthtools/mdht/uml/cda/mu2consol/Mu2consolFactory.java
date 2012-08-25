@@ -16,11 +16,11 @@ import org.eclipse.emf.ecore.EFactory;
  */
 public interface Mu2consolFactory extends EFactory {
 	/**
-	 * The singleton instance of the factory.
-	 * <!-- begin-user-doc --> <!--
+   * The singleton instance of the factory.
+   * <!-- begin-user-doc --> <!--
 	 * end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	Mu2consolFactory eINSTANCE = org.openhealthtools.mdht.uml.cda.mu2consol.impl.Mu2consolFactoryImpl.init();
 
 	/**
@@ -42,12 +42,12 @@ public interface Mu2consolFactory extends EFactory {
 	SummaryOfCareRecord createSummaryOfCareRecord();
 
 	/**
-	 * Returns a new object of class '<em>Assessment And Plan For Care Planning</em>'.
-	 * <!-- begin-user-doc -->
+   * Returns a new object of class '<em>Assessment And Plan For Care Planning</em>'.
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Assessment And Plan For Care Planning</em>'.
-	 * @generated
-	 */
+   * @return a new object of class '<em>Assessment And Plan For Care Planning</em>'.
+   * @generated
+   */
 	AssessmentAndPlanForCarePlanning createAssessmentAndPlanForCarePlanning();
 
 	/**
@@ -71,11 +71,11 @@ public interface Mu2consolFactory extends EFactory {
 	AssessmentAndPlanForConditionOrConcern createAssessmentAndPlanForConditionOrConcern();
 
 	/**
-	 * Returns a new object of class '<em>Assessment And Plan Section</em>'.
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @return a new object of class '<em>Assessment And Plan Section</em>'.
-	 * @generated
-	 */
+   * Returns a new object of class '<em>Assessment And Plan Section</em>'.
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @return a new object of class '<em>Assessment And Plan Section</em>'.
+   * @generated
+   */
 	AssessmentAndPlanSection createAssessmentAndPlanSection();
 
 	/**
@@ -88,29 +88,29 @@ public interface Mu2consolFactory extends EFactory {
 	InstructionsSection createInstructionsSection();
 
 	/**
-	 * Returns a new object of class '<em>Clinical Office Visit Summary</em>'.
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @return a new object of class '<em>Clinical Office Visit Summary</em>'.
-	 * @generated
-	 */
+   * Returns a new object of class '<em>Clinical Office Visit Summary</em>'.
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @return a new object of class '<em>Clinical Office Visit Summary</em>'.
+   * @generated
+   */
 	ClinicalOfficeVisitSummary createClinicalOfficeVisitSummary();
 
 	/**
-	 * Returns a new object of class '<em>VDT Inpatient Patient Info</em>'.
-	 * <!-- begin-user-doc -->
+   * Returns a new object of class '<em>VDT Inpatient Patient Info</em>'.
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>VDT Inpatient Patient Info</em>'.
-	 * @generated
-	 */
+   * @return a new object of class '<em>VDT Inpatient Patient Info</em>'.
+   * @generated
+   */
 	VDTInpatientPatientInfo createVDTInpatientPatientInfo();
 
 	/**
-	 * Returns a new object of class '<em>VDT Ambulatory Patient Info</em>'.
-	 * <!-- begin-user-doc -->
+   * Returns a new object of class '<em>VDT Ambulatory Patient Info</em>'.
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>VDT Ambulatory Patient Info</em>'.
-	 * @generated
-	 */
+   * @return a new object of class '<em>VDT Ambulatory Patient Info</em>'.
+   * @generated
+   */
 	VDTAmbulatoryPatientInfo createVDTAmbulatoryPatientInfo();
 
 	/**
@@ -123,53 +123,53 @@ public interface Mu2consolFactory extends EFactory {
 	AssessmentSection createAssessmentSection();
 
 	/**
-	 * Returns a new object of class '<em>Hospital Admission Diagnosis Section</em>'.
-	 * <!-- begin-user-doc -->
+   * Returns a new object of class '<em>Hospital Admission Diagnosis Section</em>'.
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Hospital Admission Diagnosis Section</em>'.
-	 * @generated
-	 */
+   * @return a new object of class '<em>Hospital Admission Diagnosis Section</em>'.
+   * @generated
+   */
 	HospitalAdmissionDiagnosisSection createHospitalAdmissionDiagnosisSection();
 
 	/**
-	 * Returns a new object of class '<em>Hospital Discharge Diagnosis Section</em>'.
-	 * <!-- begin-user-doc -->
+   * Returns a new object of class '<em>Hospital Discharge Diagnosis Section</em>'.
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Hospital Discharge Diagnosis Section</em>'.
-	 * @generated
-	 */
+   * @return a new object of class '<em>Hospital Discharge Diagnosis Section</em>'.
+   * @generated
+   */
 	HospitalDischargeDiagnosisSection createHospitalDischargeDiagnosisSection();
 
 	/**
-	 * Returns a new object of class '<em>Postoperative Diagnosis Section</em>'.
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @return a new object of class '<em>Postoperative Diagnosis Section</em>'.
-	 * @generated
-	 */
+   * Returns a new object of class '<em>Postoperative Diagnosis Section</em>'.
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @return a new object of class '<em>Postoperative Diagnosis Section</em>'.
+   * @generated
+   */
 	PostoperativeDiagnosisSection createPostoperativeDiagnosisSection();
 
 	/**
-	 * Returns a new object of class '<em>Postprocedure Diagnosis Section</em>'.
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @return a new object of class '<em>Postprocedure Diagnosis Section</em>'.
-	 * @generated
-	 */
+   * Returns a new object of class '<em>Postprocedure Diagnosis Section</em>'.
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @return a new object of class '<em>Postprocedure Diagnosis Section</em>'.
+   * @generated
+   */
 	PostprocedureDiagnosisSection createPostprocedureDiagnosisSection();
 
 	/**
-	 * Returns a new object of class '<em>Preoperative Diagnosis Section</em>'.
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @return a new object of class '<em>Preoperative Diagnosis Section</em>'.
-	 * @generated
-	 */
+   * Returns a new object of class '<em>Preoperative Diagnosis Section</em>'.
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @return a new object of class '<em>Preoperative Diagnosis Section</em>'.
+   * @generated
+   */
 	PreoperativeDiagnosisSection createPreoperativeDiagnosisSection();
 
 	/**
-	 * Returns a new object of class '<em>Medications Administered Section</em>'.
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @return a new object of class '<em>Medications Administered Section</em>'.
-	 * @generated
-	 */
+   * Returns a new object of class '<em>Medications Administered Section</em>'.
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @return a new object of class '<em>Medications Administered Section</em>'.
+   * @generated
+   */
 	MedicationsAdministeredSection createMedicationsAdministeredSection();
 
 	/**
@@ -194,21 +194,21 @@ public interface Mu2consolFactory extends EFactory {
 	SocialHistorySection createSocialHistorySection();
 
 	/**
-	 * Returns a new object of class '<em>Allergies Section Entries Optional</em>'.
-	 * <!-- begin-user-doc -->
+   * Returns a new object of class '<em>Allergies Section Entries Optional</em>'.
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Allergies Section Entries Optional</em>'.
-	 * @generated
-	 */
+   * @return a new object of class '<em>Allergies Section Entries Optional</em>'.
+   * @generated
+   */
 	AllergiesSectionEntriesOptional createAllergiesSectionEntriesOptional();
 
 	/**
-	 * Returns the package supported by this factory.
-	 * <!-- begin-user-doc -->
+   * Returns the package supported by this factory.
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the package supported by this factory.
-	 * @generated
-	 */
+   * @return the package supported by this factory.
+   * @generated
+   */
 	Mu2consolPackage getMu2consolPackage();
 
 } // Mu2consolFactory
