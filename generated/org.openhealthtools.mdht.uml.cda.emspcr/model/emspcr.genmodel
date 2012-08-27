@@ -911,19 +911,5 @@
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="emspcr.ecore#//DerivedEntry/DerivedEntryTypeCode/context"/>
       </genOperations>
     </genClasses>
-    <genClasses xsi:type="genmodel:GenClass" ecoreClass="emspcr.ecore#//AAAAA">
-      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="emspcr.ecore#//AAAAA/AAAAARecordTarget">
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="emspcr.ecore#//AAAAA/AAAAARecordTarget/diagnostics"/>
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="emspcr.ecore#//AAAAA/AAAAARecordTarget/context"/>
-      </genOperations>
-      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="emspcr.ecore#//AAAAA/AAAAAComponent2StructuredBodyComponent3SectionCode">
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="emspcr.ecore#//AAAAA/AAAAAComponent2StructuredBodyComponent3SectionCode/diagnostics"/>
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="emspcr.ecore#//AAAAA/AAAAAComponent2StructuredBodyComponent3SectionCode/context"/>
-      </genOperations>
-      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="emspcr.ecore#//AAAAA/AAAAAComponent2StructuredBodyComponent3Section">
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="emspcr.ecore#//AAAAA/AAAAAComponent2StructuredBodyComponent3Section/diagnostics"/>
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="emspcr.ecore#//AAAAA/AAAAAComponent2StructuredBodyComponent3Section/context"/>
-      </genOperations>
-    </genClasses>
   </genPackages>
 </genmodel:GenModel>
