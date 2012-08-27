@@ -91,7 +91,6 @@ public class EmspcrFactoryImpl extends EFactoryImpl implements EmspcrFactory
       case EmspcrPackage.EMS_TIMES_SECTION: return createEMSTimesSection();
       case EmspcrPackage.EMS_VITAL_SIGNS_SECTION: return createEMSVitalSignsSection();
       case EmspcrPackage.DERIVED_ENTRY: return createDerivedEntry();
-      case EmspcrPackage.AAAAA: return createAAAAA();
       default:
         throw new IllegalArgumentException("The class '" + eClass.getName() + "' is not a valid classifier");
     }
@@ -348,17 +347,6 @@ public class EmspcrFactoryImpl extends EFactoryImpl implements EmspcrFactory
   {
     DerivedEntryImpl derivedEntry = new DerivedEntryImpl();
     return derivedEntry;
-  }
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public AAAAA createAAAAA()
-  {
-    AAAAAImpl aaaaa = new AAAAAImpl();
-    return aaaaa;
   }
 
   /**

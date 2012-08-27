@@ -417,30 +417,6 @@ public class EmspcrValidator extends EObjectValidator
   public static final int DERIVED_ENTRY__DERIVED_ENTRY_TYPE_CODE = 205;
 
   /**
-   * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate AAAAA Record Target' of 'AAAAA'.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public static final int AAAAA__AAAAA_RECORD_TARGET = 206;
-
-  /**
-   * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate AAAAA Component2 Structured Body Component3 Section Code' of 'AAAAA'.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public static final int AAAAA__AAAAA_COMPONENT2_STRUCTURED_BODY_COMPONENT3_SECTION_CODE = 207;
-
-  /**
-   * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate AAAAA Component2 Structured Body Component3 Section' of 'AAAAA'.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public static final int AAAAA__AAAAA_COMPONENT2_STRUCTURED_BODY_COMPONENT3_SECTION = 208;
-
-  /**
    * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate EMS Injury Incident Description Section Template Id' of 'EMS Injury Incident Description Section'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
@@ -1718,7 +1694,7 @@ public class EmspcrValidator extends EObjectValidator
    * <!-- end-user-doc -->
    * @generated
    */
-  private static final int GENERATED_DIAGNOSTIC_CODE_COUNT = 208;
+  private static final int GENERATED_DIAGNOSTIC_CODE_COUNT = 205;
 
   /**
    * A constant with a fixed name that can be used as the base value for additional hand written constants in a derived class.
@@ -1826,8 +1802,6 @@ public class EmspcrValidator extends EObjectValidator
         return validateEMSVitalSignsSection((EMSVitalSignsSection)value, diagnostics, context);
       case EmspcrPackage.DERIVED_ENTRY:
         return validateDerivedEntry((DerivedEntry)value, diagnostics, context);
-      case EmspcrPackage.AAAAA:
-        return validateAAAAA((AAAAA)value, diagnostics, context);
       default:
         return true;
     }
@@ -2583,203 +2557,6 @@ public class EmspcrValidator extends EObjectValidator
   public boolean validateDerivedEntry_validateDerivedEntryTypeCode(DerivedEntry derivedEntry, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
     return derivedEntry.validateDerivedEntryTypeCode(diagnostics, context);
-  }
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public boolean validateAAAAA(AAAAA aaaaa, DiagnosticChain diagnostics, Map<Object, Object> context)
-  {
-    if (!validate_NoCircularContainment(aaaaa, diagnostics, context)) return false;
-    boolean result = validate_EveryMultiplicityConforms(aaaaa, diagnostics, context);
-    if (result || diagnostics != null) result &= validate_EveryDataValueConforms(aaaaa, diagnostics, context);
-    if (result || diagnostics != null) result &= validate_EveryReferenceIsContained(aaaaa, diagnostics, context);
-    if (result || diagnostics != null) result &= validate_EveryProxyResolves(aaaaa, diagnostics, context);
-    if (result || diagnostics != null) result &= validate_UniqueID(aaaaa, diagnostics, context);
-    if (result || diagnostics != null) result &= validate_EveryKeyUnique(aaaaa, diagnostics, context);
-    if (result || diagnostics != null) result &= validate_EveryMapEntryUnique(aaaaa, diagnostics, context);
-    if (result || diagnostics != null) result &= cdaValidator.validateClinicalDocument_validateClassCode(aaaaa, diagnostics, context);
-    if (result || diagnostics != null) result &= cdaValidator.validateClinicalDocument_validateMoodCode(aaaaa, diagnostics, context);
-    if (result || diagnostics != null) result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsUSRealmAddressSHALL(aaaaa, diagnostics, context);
-    if (result || diagnostics != null) result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsUSRealmAddressSHOULD(aaaaa, diagnostics, context);
-    if (result || diagnostics != null) result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsUSRealmPatientName(aaaaa, diagnostics, context);
-    if (result || diagnostics != null) result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsTypeIdRoot(aaaaa, diagnostics, context);
-    if (result || diagnostics != null) result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsTypeIdExtension(aaaaa, diagnostics, context);
-    if (result || diagnostics != null) result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsSetIdVersionNumber(aaaaa, diagnostics, context);
-    if (result || diagnostics != null) result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsVersionNumberSetId(aaaaa, diagnostics, context);
-    if (result || diagnostics != null) result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsUSRealmPatientNameMixedContent(aaaaa, diagnostics, context);
-    if (result || diagnostics != null) result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsTemplateId(aaaaa, diagnostics, context);
-    if (result || diagnostics != null) result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRealmCode(aaaaa, diagnostics, context);
-    if (result || diagnostics != null) result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsTypeId(aaaaa, diagnostics, context);
-    if (result || diagnostics != null) result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsId(aaaaa, diagnostics, context);
-    if (result || diagnostics != null) result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsCode(aaaaa, diagnostics, context);
-    if (result || diagnostics != null) result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsTitle(aaaaa, diagnostics, context);
-    if (result || diagnostics != null) result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsEffectiveTime(aaaaa, diagnostics, context);
-    if (result || diagnostics != null) result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsConfidentialityCode(aaaaa, diagnostics, context);
-    if (result || diagnostics != null) result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsLanguageCode(aaaaa, diagnostics, context);
-    if (result || diagnostics != null) result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsSetId(aaaaa, diagnostics, context);
-    if (result || diagnostics != null) result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsVersionNumber(aaaaa, diagnostics, context);
-    if (result || diagnostics != null) result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsAuthor(aaaaa, diagnostics, context);
-    if (result || diagnostics != null) result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsDataEnterer(aaaaa, diagnostics, context);
-    if (result || diagnostics != null) result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsCustodian(aaaaa, diagnostics, context);
-    if (result || diagnostics != null) result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsInformationRecipient(aaaaa, diagnostics, context);
-    if (result || diagnostics != null) result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsLegalAuthenticator(aaaaa, diagnostics, context);
-    if (result || diagnostics != null) result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsAuthenticator(aaaaa, diagnostics, context);
-    if (result || diagnostics != null) result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTarget(aaaaa, diagnostics, context);
-    if (result || diagnostics != null) result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsComponentOf(aaaaa, diagnostics, context);
-    if (result || diagnostics != null) result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsInformant(aaaaa, diagnostics, context);
-    if (result || diagnostics != null) result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsSupportParticipant(aaaaa, diagnostics, context);
-    if (result || diagnostics != null) result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsInFulfillmentOf(aaaaa, diagnostics, context);
-    if (result || diagnostics != null) result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsDocumentationOf(aaaaa, diagnostics, context);
-    if (result || diagnostics != null) result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRolePatientGuardianTELUse(aaaaa, diagnostics, context);
-    if (result || diagnostics != null) result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRolePatientGuardianPersonName(aaaaa, diagnostics, context);
-    if (result || diagnostics != null) result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRolePatientGuardianAddr(aaaaa, diagnostics, context);
-    if (result || diagnostics != null) result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRolePatientGuardianCodeP(aaaaa, diagnostics, context);
-    if (result || diagnostics != null) result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRolePatientGuardianCode(aaaaa, diagnostics, context);
-    if (result || diagnostics != null) result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRolePatientGuardianTelecom(aaaaa, diagnostics, context);
-    if (result || diagnostics != null) result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRolePatientGuardianGuardianPerson(aaaaa, diagnostics, context);
-    if (result || diagnostics != null) result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRolePatientBirthplacePlaceAddr(aaaaa, diagnostics, context);
-    if (result || diagnostics != null) result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRolePatientBirthplacePlace(aaaaa, diagnostics, context);
-    if (result || diagnostics != null) result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRolePatientLanguageCommunicationPreferenceInd(aaaaa, diagnostics, context);
-    if (result || diagnostics != null) result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRolePatientLanguageCommunicationProficiencyLevelCodeP(aaaaa, diagnostics, context);
-    if (result || diagnostics != null) result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRolePatientLanguageCommunicationProficiencyLevelCode(aaaaa, diagnostics, context);
-    if (result || diagnostics != null) result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRolePatientLanguageCommunicationModeCodeP(aaaaa, diagnostics, context);
-    if (result || diagnostics != null) result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRolePatientLanguageCommunicationModeCode(aaaaa, diagnostics, context);
-    if (result || diagnostics != null) result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRolePatientLanguageCommunicationLanguageCode(aaaaa, diagnostics, context);
-    if (result || diagnostics != null) result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRolePatientLanguageCommunicationLanguageCodeP(aaaaa, diagnostics, context);
-    if (result || diagnostics != null) result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRolePatientBirthTimePreciseToYear(aaaaa, diagnostics, context);
-    if (result || diagnostics != null) result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRolePatientBirthTimePreciseToDay(aaaaa, diagnostics, context);
-    if (result || diagnostics != null) result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRolePatientAdministrativeGenderCode(aaaaa, diagnostics, context);
-    if (result || diagnostics != null) result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRolePatientBirthTime(aaaaa, diagnostics, context);
-    if (result || diagnostics != null) result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRolePatientEthnicGroupCodeP(aaaaa, diagnostics, context);
-    if (result || diagnostics != null) result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRolePatientEthnicGroupCode(aaaaa, diagnostics, context);
-    if (result || diagnostics != null) result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRolePatientMaritalStatusCode(aaaaa, diagnostics, context);
-    if (result || diagnostics != null) result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRolePatientName(aaaaa, diagnostics, context);
-    if (result || diagnostics != null) result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRolePatientRaceCodeP(aaaaa, diagnostics, context);
-    if (result || diagnostics != null) result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRolePatientRaceCode(aaaaa, diagnostics, context);
-    if (result || diagnostics != null) result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRolePatientReligiousAffiliationCode(aaaaa, diagnostics, context);
-    if (result || diagnostics != null) result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRolePatientSDTCRaceCodeP(aaaaa, diagnostics, context);
-    if (result || diagnostics != null) result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRolePatientSDTCRaceCode(aaaaa, diagnostics, context);
-    if (result || diagnostics != null) result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRolePatientGuardian(aaaaa, diagnostics, context);
-    if (result || diagnostics != null) result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRolePatientBirthplace(aaaaa, diagnostics, context);
-    if (result || diagnostics != null) result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRolePatientLanguageCommunication(aaaaa, diagnostics, context);
-    if (result || diagnostics != null) result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRoleProviderOrganizationTELUse(aaaaa, diagnostics, context);
-    if (result || diagnostics != null) result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRoleProviderOrganizationHasNationalProviderIdentifier(aaaaa, diagnostics, context);
-    if (result || diagnostics != null) result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRoleProviderOrganizationAddr(aaaaa, diagnostics, context);
-    if (result || diagnostics != null) result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRoleProviderOrganizationId(aaaaa, diagnostics, context);
-    if (result || diagnostics != null) result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRoleProviderOrganizationName(aaaaa, diagnostics, context);
-    if (result || diagnostics != null) result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRoleProviderOrganizationTelecom(aaaaa, diagnostics, context);
-    if (result || diagnostics != null) result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRoleAddr(aaaaa, diagnostics, context);
-    if (result || diagnostics != null) result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRoleId(aaaaa, diagnostics, context);
-    if (result || diagnostics != null) result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRoleTelecom(aaaaa, diagnostics, context);
-    if (result || diagnostics != null) result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRolePatient(aaaaa, diagnostics, context);
-    if (result || diagnostics != null) result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRole(aaaaa, diagnostics, context);
-    if (result || diagnostics != null) result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsComponentOfEncompassingEncounterEffectiveTime(aaaaa, diagnostics, context);
-    if (result || diagnostics != null) result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsComponentOfEncompassingEncounterId(aaaaa, diagnostics, context);
-    if (result || diagnostics != null) result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsComponentOfEncompassingEncounter(aaaaa, diagnostics, context);
-    if (result || diagnostics != null) result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsAuthorAssignedAuthorAuthoringDeviceManufacturerModelName(aaaaa, diagnostics, context);
-    if (result || diagnostics != null) result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsAuthorAssignedAuthorAuthoringDeviceSoftwareName(aaaaa, diagnostics, context);
-    if (result || diagnostics != null) result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsAuthorAssignedAuthorPersonName(aaaaa, diagnostics, context);
-    if (result || diagnostics != null) result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsAuthorAssignedAuthorHasAssignedPersonOrAssignedAuthoringDevice(aaaaa, diagnostics, context);
-    if (result || diagnostics != null) result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsAuthorAssignedAuthorHasNationalProviderIdentifier(aaaaa, diagnostics, context);
-    if (result || diagnostics != null) result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsAuthorAssignedAuthorAddr(aaaaa, diagnostics, context);
-    if (result || diagnostics != null) result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsAuthorAssignedAuthorCodeP(aaaaa, diagnostics, context);
-    if (result || diagnostics != null) result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsAuthorAssignedAuthorCode(aaaaa, diagnostics, context);
-    if (result || diagnostics != null) result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsAuthorAssignedAuthorId(aaaaa, diagnostics, context);
-    if (result || diagnostics != null) result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsAuthorAssignedAuthorTelecom(aaaaa, diagnostics, context);
-    if (result || diagnostics != null) result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsAuthorAssignedAuthor(aaaaa, diagnostics, context);
-    if (result || diagnostics != null) result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsDataEntererAssignedEntityPersonName(aaaaa, diagnostics, context);
-    if (result || diagnostics != null) result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsDataEntererAssignedEntityHasNationalProviderIdentifier(aaaaa, diagnostics, context);
-    if (result || diagnostics != null) result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsDataEntererAssignedEntityAddr(aaaaa, diagnostics, context);
-    if (result || diagnostics != null) result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsDataEntererAssignedEntityCodeP(aaaaa, diagnostics, context);
-    if (result || diagnostics != null) result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsDataEntererAssignedEntityCode(aaaaa, diagnostics, context);
-    if (result || diagnostics != null) result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsDataEntererAssignedEntityId(aaaaa, diagnostics, context);
-    if (result || diagnostics != null) result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsDataEntererAssignedEntityTelecom(aaaaa, diagnostics, context);
-    if (result || diagnostics != null) result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsDataEntererAssignedEntity(aaaaa, diagnostics, context);
-    if (result || diagnostics != null) result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsCustodianAssignedCustodianCustodianOrganizationHasNationalProviderIdentifier(aaaaa, diagnostics, context);
-    if (result || diagnostics != null) result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsCustodianAssignedCustodianCustodianOrganizationAddr(aaaaa, diagnostics, context);
-    if (result || diagnostics != null) result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsCustodianAssignedCustodianCustodianOrganizationId(aaaaa, diagnostics, context);
-    if (result || diagnostics != null) result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsCustodianAssignedCustodianCustodianOrganizationName(aaaaa, diagnostics, context);
-    if (result || diagnostics != null) result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsCustodianAssignedCustodianCustodianOrganizationTelecom(aaaaa, diagnostics, context);
-    if (result || diagnostics != null) result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsCustodianAssignedCustodianRepresentedCustodianOrganization(aaaaa, diagnostics, context);
-    if (result || diagnostics != null) result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsCustodianAssignedCustodian(aaaaa, diagnostics, context);
-    if (result || diagnostics != null) result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsInformationRecipientIntendedRecipientPersonName(aaaaa, diagnostics, context);
-    if (result || diagnostics != null) result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsInformationRecipientIntendedRecipientOrganizationName(aaaaa, diagnostics, context);
-    if (result || diagnostics != null) result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsInformationRecipientIntendedRecipientInformationRecipient(aaaaa, diagnostics, context);
-    if (result || diagnostics != null) result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsInformationRecipientIntendedRecipientRecievedOrganization(aaaaa, diagnostics, context);
-    if (result || diagnostics != null) result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsInformationRecipientIntendedRecipient(aaaaa, diagnostics, context);
-    if (result || diagnostics != null) result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsLegalAuthenticatorAssignedEntityHasNationalProviderIdentifier(aaaaa, diagnostics, context);
-    if (result || diagnostics != null) result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsLegalAuthenticatorAssignedEntityAddr(aaaaa, diagnostics, context);
-    if (result || diagnostics != null) result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsLegalAuthenticatorAssignedEntityCodeP(aaaaa, diagnostics, context);
-    if (result || diagnostics != null) result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsLegalAuthenticatorAssignedEntityCode(aaaaa, diagnostics, context);
-    if (result || diagnostics != null) result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsLegalAuthenticatorAssignedEntityId(aaaaa, diagnostics, context);
-    if (result || diagnostics != null) result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsLegalAuthenticatorAssignedEntityTelecom(aaaaa, diagnostics, context);
-    if (result || diagnostics != null) result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsLegalAuthenticatorTime(aaaaa, diagnostics, context);
-    if (result || diagnostics != null) result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsLegalAuthenticatorSignatureCode(aaaaa, diagnostics, context);
-    if (result || diagnostics != null) result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsAuthenticatorAssignedEntityPersonName(aaaaa, diagnostics, context);
-    if (result || diagnostics != null) result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsAuthenticatorAssignedEntityHasNationalProviderIdentifier(aaaaa, diagnostics, context);
-    if (result || diagnostics != null) result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsAuthenticatorAssignedEntityAddr(aaaaa, diagnostics, context);
-    if (result || diagnostics != null) result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsAuthenticatorAssignedEntityCodeP(aaaaa, diagnostics, context);
-    if (result || diagnostics != null) result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsAuthenticatorAssignedEntityCode(aaaaa, diagnostics, context);
-    if (result || diagnostics != null) result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsAuthenticatorAssignedEntityId(aaaaa, diagnostics, context);
-    if (result || diagnostics != null) result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsAuthenticatorAssignedEntityTelecom(aaaaa, diagnostics, context);
-    if (result || diagnostics != null) result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsAuthenticatorTime(aaaaa, diagnostics, context);
-    if (result || diagnostics != null) result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsAuthenticatorSignatureCode(aaaaa, diagnostics, context);
-    if (result || diagnostics != null) result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsAuthenticatorAssignedEntity(aaaaa, diagnostics, context);
-    if (result || diagnostics != null) result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsInformantAssignedEntityPersonName(aaaaa, diagnostics, context);
-    if (result || diagnostics != null) result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsInformantAssignedEntityHasNationalProviderIdentifier(aaaaa, diagnostics, context);
-    if (result || diagnostics != null) result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsInformantAssignedEntityAddr(aaaaa, diagnostics, context);
-    if (result || diagnostics != null) result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsInformantAssignedEntityCodeP(aaaaa, diagnostics, context);
-    if (result || diagnostics != null) result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsInformantAssignedEntityCode(aaaaa, diagnostics, context);
-    if (result || diagnostics != null) result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsInformantAssignedEntityId(aaaaa, diagnostics, context);
-    if (result || diagnostics != null) result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsInformantRelatedEntityPersonName(aaaaa, diagnostics, context);
-    if (result || diagnostics != null) result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsInformantRelatedEntityAddr(aaaaa, diagnostics, context);
-    if (result || diagnostics != null) result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsInformantRelatedEntityPerson(aaaaa, diagnostics, context);
-    if (result || diagnostics != null) result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsInformantHasAssignedEntityOrRelatedEntity(aaaaa, diagnostics, context);
-    if (result || diagnostics != null) result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsParticipantSupportAssociatedEntityHasAssociatedPersonOrScopingOrganization(aaaaa, diagnostics, context);
-    if (result || diagnostics != null) result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsParticipantSupportUseINDRoleclassCodes(aaaaa, diagnostics, context);
-    if (result || diagnostics != null) result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsParticipantSupportTime(aaaaa, diagnostics, context);
-    if (result || diagnostics != null) result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsInFulfillmentOfOrderId(aaaaa, diagnostics, context);
-    if (result || diagnostics != null) result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsInFulfillmentOfOrder(aaaaa, diagnostics, context);
-    if (result || diagnostics != null) result &= validateAAAAA_validateAAAAARecordTarget(aaaaa, diagnostics, context);
-    if (result || diagnostics != null) result &= validateAAAAA_validateAAAAAComponent2StructuredBodyComponent3SectionCode(aaaaa, diagnostics, context);
-    if (result || diagnostics != null) result &= validateAAAAA_validateAAAAAComponent2StructuredBodyComponent3Section(aaaaa, diagnostics, context);
-    return result;
-  }
-
-  /**
-   * Validates the validateAAAAARecordTarget constraint of '<em>AAAAA</em>'.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public boolean validateAAAAA_validateAAAAARecordTarget(AAAAA aaaaa, DiagnosticChain diagnostics, Map<Object, Object> context)
-  {
-    return aaaaa.validateAAAAARecordTarget(diagnostics, context);
-  }
-
-  /**
-   * Validates the validateAAAAAComponent2StructuredBodyComponent3SectionCode constraint of '<em>AAAAA</em>'.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public boolean validateAAAAA_validateAAAAAComponent2StructuredBodyComponent3SectionCode(AAAAA aaaaa, DiagnosticChain diagnostics, Map<Object, Object> context)
-  {
-    return aaaaa.validateAAAAAComponent2StructuredBodyComponent3SectionCode(diagnostics, context);
-  }
-
-  /**
-   * Validates the validateAAAAAComponent2StructuredBodyComponent3Section constraint of '<em>AAAAA</em>'.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public boolean validateAAAAA_validateAAAAAComponent2StructuredBodyComponent3Section(AAAAA aaaaa, DiagnosticChain diagnostics, Map<Object, Object> context)
-  {
-    return aaaaa.validateAAAAAComponent2StructuredBodyComponent3Section(diagnostics, context);
   }
 
   /**
