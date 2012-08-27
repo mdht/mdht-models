@@ -13,7 +13,7 @@
    <extension point="org.eclipse.emf.ecore.generated_package">
       <package
             uri="http://www.openhealthtools.org/mdht/uml/cda/phcr/chlamydiatrachomatis"
-            class="org.openhealthtools.mdht.uml.cda.phcr/chlamydiatrachomatis.ChlamydiatrachomatisPackage"
+            class="org.openhealthtools.mdht.uml.cda.phcr.chlamydiatrachomatis.ChlamydiatrachomatisPackage"
             genModel="model/chlamydiatrachomatis.genmodel"/>
    </extension>
 
