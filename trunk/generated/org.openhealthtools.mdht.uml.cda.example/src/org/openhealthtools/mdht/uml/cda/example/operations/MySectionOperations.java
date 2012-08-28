@@ -98,26 +98,24 @@ public class MySectionOperations extends SectionOperations {
 	 */
 	public static boolean validateMySectionTemplateId(MySection mySection, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
 		if (VALIDATE_MY_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ExamplePackage.Literals.MY_SECTION);
 			try {
 				VALIDATE_MY_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_MY_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
 		if (!EOCL_ENV.createQuery(VALIDATE_MY_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(mySection)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ExampleValidator.DIAGNOSTIC_SOURCE,
-						 ExampleValidator.MY_SECTION__MY_SECTION_TEMPLATE_ID,
-						 ExamplePlugin.INSTANCE.getString("MySectionTemplateId"),
-						 new Object [] { mySection }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, ExampleValidator.DIAGNOSTIC_SOURCE,
+					ExampleValidator.MY_SECTION__MY_SECTION_TEMPLATE_ID,
+					ExamplePlugin.INSTANCE.getString("MySectionTemplateId"), new Object[] { mySection }));
 			}
+
 			return false;
 		}
 		return true;
@@ -131,9 +129,9 @@ public class MySectionOperations extends SectionOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_MY_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and "+
-"let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in "+
-"value.code = '48764-5' and value.codeSystem = '2.16.840.1.113883.6.1')";
+	protected static final String VALIDATE_MY_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and "
+			+ "let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in "
+			+ "value.code = '48764-5' and value.codeSystem = '2.16.840.1.113883.6.1')";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateMySectionCode(MySection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate My Section Code</em>}' invariant operation.
@@ -160,26 +158,23 @@ public class MySectionOperations extends SectionOperations {
 	 */
 	public static boolean validateMySectionCode(MySection mySection, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
 		if (VALIDATE_MY_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ExamplePackage.Literals.MY_SECTION);
 			try {
 				VALIDATE_MY_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_MY_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
 		if (!EOCL_ENV.createQuery(VALIDATE_MY_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(mySection)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ExampleValidator.DIAGNOSTIC_SOURCE,
-						 ExampleValidator.MY_SECTION__MY_SECTION_CODE,
-						 ExamplePlugin.INSTANCE.getString("MySectionCode"),
-						 new Object [] { mySection }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, ExampleValidator.DIAGNOSTIC_SOURCE, ExampleValidator.MY_SECTION__MY_SECTION_CODE,
+					ExamplePlugin.INSTANCE.getString("MySectionCode"), new Object[] { mySection }));
 			}
+
 			return false;
 		}
 		return true;
@@ -218,26 +213,25 @@ public class MySectionOperations extends SectionOperations {
 	 */
 	public static boolean validateMySectionConfidentialityCode(MySection mySection, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
 		if (VALIDATE_MY_SECTION_CONFIDENTIALITY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ExamplePackage.Literals.MY_SECTION);
 			try {
 				VALIDATE_MY_SECTION_CONFIDENTIALITY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_MY_SECTION_CONFIDENTIALITY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_MY_SECTION_CONFIDENTIALITY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(mySection)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_MY_SECTION_CONFIDENTIALITY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			mySection)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.WARNING,
-						 ExampleValidator.DIAGNOSTIC_SOURCE,
-						 ExampleValidator.MY_SECTION__MY_SECTION_CONFIDENTIALITY_CODE,
-						 ExamplePlugin.INSTANCE.getString("MySectionConfidentialityCode"),
-						 new Object [] { mySection }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.WARNING, ExampleValidator.DIAGNOSTIC_SOURCE,
+					ExampleValidator.MY_SECTION__MY_SECTION_CONFIDENTIALITY_CODE,
+					ExamplePlugin.INSTANCE.getString("MySectionConfidentialityCode"), new Object[] { mySection }));
 			}
+
 			return false;
 		}
 		return true;
@@ -276,26 +270,24 @@ public class MySectionOperations extends SectionOperations {
 	 */
 	public static boolean validateMySectionTitle(MySection mySection, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
 		if (VALIDATE_MY_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ExamplePackage.Literals.MY_SECTION);
 			try {
 				VALIDATE_MY_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_MY_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
 		if (!EOCL_ENV.createQuery(VALIDATE_MY_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(mySection)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ExampleValidator.DIAGNOSTIC_SOURCE,
-						 ExampleValidator.MY_SECTION__MY_SECTION_TITLE,
-						 ExamplePlugin.INSTANCE.getString("MySectionTitle"),
-						 new Object [] { mySection }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, ExampleValidator.DIAGNOSTIC_SOURCE,
+					ExampleValidator.MY_SECTION__MY_SECTION_TITLE, ExamplePlugin.INSTANCE.getString("MySectionTitle"),
+					new Object[] { mySection }));
 			}
+
 			return false;
 		}
 		return true;
@@ -334,26 +326,24 @@ public class MySectionOperations extends SectionOperations {
 	 */
 	public static boolean validateMySectionMyObservation(MySection mySection, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
 		if (VALIDATE_MY_SECTION_MY_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ExamplePackage.Literals.MY_SECTION);
 			try {
 				VALIDATE_MY_SECTION_MY_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_MY_SECTION_MY_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
 		if (!EOCL_ENV.createQuery(VALIDATE_MY_SECTION_MY_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(mySection)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ExampleValidator.DIAGNOSTIC_SOURCE,
-						 ExampleValidator.MY_SECTION__MY_SECTION_MY_OBSERVATION,
-						 ExamplePlugin.INSTANCE.getString("MySectionMyObservation"),
-						 new Object [] { mySection }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, ExampleValidator.DIAGNOSTIC_SOURCE,
+					ExampleValidator.MY_SECTION__MY_SECTION_MY_OBSERVATION,
+					ExamplePlugin.INSTANCE.getString("MySectionMyObservation"), new Object[] { mySection }));
 			}
+
 			return false;
 		}
 		return true;
@@ -390,27 +380,26 @@ public class MySectionOperations extends SectionOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  boolean validateMySectionMedication(MySection mySection, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public static boolean validateMySectionMedication(MySection mySection, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+
 		if (VALIDATE_MY_SECTION_MEDICATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ExamplePackage.Literals.MY_SECTION);
 			try {
 				VALIDATE_MY_SECTION_MEDICATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_MY_SECTION_MEDICATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
 		if (!EOCL_ENV.createQuery(VALIDATE_MY_SECTION_MEDICATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(mySection)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ExampleValidator.DIAGNOSTIC_SOURCE,
-						 ExampleValidator.MY_SECTION__MY_SECTION_MEDICATION,
-						 ExamplePlugin.INSTANCE.getString("MySectionMedication"),
-						 new Object [] { mySection }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, ExampleValidator.DIAGNOSTIC_SOURCE,
+					ExampleValidator.MY_SECTION__MY_SECTION_MEDICATION,
+					ExamplePlugin.INSTANCE.getString("MySectionMedication"), new Object[] { mySection }));
 			}
+
 			return false;
 		}
 		return true;
@@ -447,27 +436,26 @@ public class MySectionOperations extends SectionOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  boolean validateMySectionEncounter(MySection mySection, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public static boolean validateMySectionEncounter(MySection mySection, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+
 		if (VALIDATE_MY_SECTION_ENCOUNTER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ExamplePackage.Literals.MY_SECTION);
 			try {
 				VALIDATE_MY_SECTION_ENCOUNTER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_MY_SECTION_ENCOUNTER__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
 		if (!EOCL_ENV.createQuery(VALIDATE_MY_SECTION_ENCOUNTER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(mySection)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ExampleValidator.DIAGNOSTIC_SOURCE,
-						 ExampleValidator.MY_SECTION__MY_SECTION_ENCOUNTER,
-						 ExamplePlugin.INSTANCE.getString("MySectionEncounter"),
-						 new Object [] { mySection }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, ExampleValidator.DIAGNOSTIC_SOURCE,
+					ExampleValidator.MY_SECTION__MY_SECTION_ENCOUNTER,
+					ExamplePlugin.INSTANCE.getString("MySectionEncounter"), new Object[] { mySection }));
 			}
+
 			return false;
 		}
 		return true;
@@ -505,11 +493,11 @@ public class MySectionOperations extends SectionOperations {
 	public static EList<MyObservation> getMyObservations(MySection mySection) {
 		if (GET_MY_OBSERVATIONS__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(ExamplePackage.Literals.MY_SECTION, ExamplePackage.Literals.MY_SECTION.getEAllOperations().get(62));
+			helper.setOperationContext(
+				ExamplePackage.Literals.MY_SECTION, ExamplePackage.Literals.MY_SECTION.getEAllOperations().get(62));
 			try {
 				GET_MY_OBSERVATIONS__EOCL_QRY = helper.createQuery(GET_MY_OBSERVATIONS__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -548,14 +536,14 @@ public class MySectionOperations extends SectionOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  MedicationActivity getMedication(MySection mySection) {
+	public static MedicationActivity getMedication(MySection mySection) {
 		if (GET_MEDICATION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(ExamplePackage.Literals.MY_SECTION, ExamplePackage.Literals.MY_SECTION.getEAllOperations().get(63));
+			helper.setOperationContext(
+				ExamplePackage.Literals.MY_SECTION, ExamplePackage.Literals.MY_SECTION.getEAllOperations().get(63));
 			try {
 				GET_MEDICATION__EOCL_QRY = helper.createQuery(GET_MEDICATION__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -592,14 +580,14 @@ public class MySectionOperations extends SectionOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  EncounterActivities getEncounter(MySection mySection) {
+	public static EncounterActivities getEncounter(MySection mySection) {
 		if (GET_ENCOUNTER__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(ExamplePackage.Literals.MY_SECTION, ExamplePackage.Literals.MY_SECTION.getEAllOperations().get(64));
+			helper.setOperationContext(
+				ExamplePackage.Literals.MY_SECTION, ExamplePackage.Literals.MY_SECTION.getEAllOperations().get(64));
 			try {
 				GET_ENCOUNTER__EOCL_QRY = helper.createQuery(GET_ENCOUNTER__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}

@@ -10,9 +10,12 @@
  *******************************************************************************/
 package org.openhealthtools.mdht.uml.cda.example;
 
+import java.lang.Iterable;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
+import org.eclipse.emf.ecore.EObject;
+import org.openhealthtools.mdht.emf.runtime.util.Initializer;
 import org.openhealthtools.mdht.uml.cda.consol.GeneralHeaderConstraints;
 
 /**
@@ -84,4 +87,11 @@ public interface MyDocument extends GeneralHeaderConstraints {
 	 * @generated
 	 */
 	public MyDocument init();
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public MyDocument init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // MyDocument
