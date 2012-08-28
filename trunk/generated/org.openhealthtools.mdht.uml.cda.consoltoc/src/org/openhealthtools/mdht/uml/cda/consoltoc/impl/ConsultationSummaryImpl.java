@@ -10,12 +10,15 @@
  *******************************************************************************/
 package org.openhealthtools.mdht.uml.cda.consoltoc.impl;
 
+import java.lang.Iterable;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
 
 import org.eclipse.emf.ecore.EClass;
 
+import org.eclipse.emf.ecore.EObject;
+import org.openhealthtools.mdht.emf.runtime.util.Initializer;
 import org.openhealthtools.mdht.uml.cda.consol.AdvanceDirectivesSectionEntriesOptional;
 import org.openhealthtools.mdht.uml.cda.consol.AllergiesSectionEntriesOptional;
 import org.openhealthtools.mdht.uml.cda.consol.EncountersSectionEntriesOptional;
@@ -37,8 +40,6 @@ import org.openhealthtools.mdht.uml.cda.consoltoc.ConsoltocPackage;
 import org.openhealthtools.mdht.uml.cda.consoltoc.ConsultationSummary;
 
 import org.openhealthtools.mdht.uml.cda.consoltoc.operations.ConsultationSummaryOperations;
-
-import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
 
 /**
  * <!-- begin-user-doc -->
@@ -390,7 +391,17 @@ public class ConsultationSummaryImpl extends GeneralHeaderConstraintsImpl implem
 	 */
   @Override
 public ConsultationSummary init() {
-    	CDAUtil.init(this);
-    	return this;
+	    return Initializer.Util.init(this);
 	}
+
+		/**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    @Override
+	public ConsultationSummary init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
 } //ConsultationSummaryImpl
