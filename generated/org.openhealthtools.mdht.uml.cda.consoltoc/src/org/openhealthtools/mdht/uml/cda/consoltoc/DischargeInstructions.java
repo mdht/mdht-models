@@ -10,8 +10,11 @@
  *******************************************************************************/
 package org.openhealthtools.mdht.uml.cda.consoltoc;
 
+import java.lang.Iterable;
 import java.util.Map;
 import org.eclipse.emf.common.util.DiagnosticChain;
+import org.eclipse.emf.ecore.EObject;
+import org.openhealthtools.mdht.emf.runtime.util.Initializer;
 import org.openhealthtools.mdht.uml.cda.consol.AdvanceDirectivesSectionEntriesOptional;
 import org.openhealthtools.mdht.uml.cda.consol.AllergiesSectionEntriesOptional;
 import org.openhealthtools.mdht.uml.cda.consol.GeneralHeaderConstraints;
@@ -214,4 +217,11 @@ public interface DischargeInstructions extends GeneralHeaderConstraints
 	 * @generated
 	 */
   public DischargeInstructions init();
+
+		/**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    public DischargeInstructions init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // DischargeInstructions
