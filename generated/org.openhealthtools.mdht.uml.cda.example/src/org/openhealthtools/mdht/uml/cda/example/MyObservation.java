@@ -10,9 +10,12 @@
  *******************************************************************************/
 package org.openhealthtools.mdht.uml.cda.example;
 
+import java.lang.Iterable;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
+import org.eclipse.emf.ecore.EObject;
+import org.openhealthtools.mdht.emf.runtime.util.Initializer;
 import org.openhealthtools.mdht.uml.cda.consol.ProblemObservation;
 
 /**
@@ -105,4 +108,11 @@ public interface MyObservation extends ProblemObservation {
 	 * @generated
 	 */
 	public MyObservation init();
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public MyObservation init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // MyObservation
