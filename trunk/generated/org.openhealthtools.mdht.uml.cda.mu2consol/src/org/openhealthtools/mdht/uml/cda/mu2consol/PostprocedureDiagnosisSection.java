@@ -21,7 +21,7 @@ import org.openhealthtools.mdht.uml.cda.consol.PostprocedureDiagnosis;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.mu2consol.Mu2consolPackage#getPostprocedureDiagnosisSection()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='mu2consolPostprocedureDiagnosisSectionPostprocedureDiagnosis'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='mu2consolPostprocedureDiagnosisSectionTemplateId mu2consolPostprocedureDiagnosisSectionPostprocedureDiagnosis' templateId.root='2.16.840.1.113883.10.20.22.2.36'"
  * @generated
  */
 public interface PostprocedureDiagnosisSection extends
@@ -57,9 +57,9 @@ public interface PostprocedureDiagnosisSection extends
 	PostprocedureDiagnosis getmu2consolPostprocedureDiagnosis();
 
 	/**
-   * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * @generated
-   */
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * @generated
+	 */
 	public PostprocedureDiagnosisSection init();
 
 	/**

@@ -23,7 +23,7 @@ import org.openhealthtools.mdht.uml.cda.consol.AdmissionMedication;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.mu2consol.Mu2consolPackage#getHospitalAdmissionMedicationsSectionEntriesOptional()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='mu2consolHospitalAdmissionMedicationsSectionEntriesOptionalAdmissionMedication'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='mu2consolHospitalAdmissionMedicationsSectionEntriesOptionalTemplateId mu2consolHospitalAdmissionMedicationsSectionEntriesOptionalAdmissionMedication' templateId.root='2.16.840.1.113883.10.20.22.2.44'"
  * @generated
  */
 public interface HospitalAdmissionMedicationsSectionEntriesOptional
@@ -60,9 +60,9 @@ public interface HospitalAdmissionMedicationsSectionEntriesOptional
 	EList<AdmissionMedication> getmu2consolAdmissionMedications();
 
 	/**
-   * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * @generated
-   */
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * @generated
+	 */
 	public HospitalAdmissionMedicationsSectionEntriesOptional init();
 
 	/**

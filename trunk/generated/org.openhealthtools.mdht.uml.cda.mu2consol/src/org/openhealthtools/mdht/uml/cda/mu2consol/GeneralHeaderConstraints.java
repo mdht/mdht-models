@@ -125,9 +125,9 @@ public interface GeneralHeaderConstraints extends
 			DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
-   * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * @generated
-   */
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * @generated
+	 */
 	public GeneralHeaderConstraints init();
 
 	/**

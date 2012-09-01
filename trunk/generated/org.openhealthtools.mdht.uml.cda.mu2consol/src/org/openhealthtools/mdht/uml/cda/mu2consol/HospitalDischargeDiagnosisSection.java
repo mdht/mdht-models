@@ -21,7 +21,7 @@ import org.openhealthtools.mdht.uml.cda.consol.HospitalDischargeDiagnosis;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.mu2consol.Mu2consolPackage#getHospitalDischargeDiagnosisSection()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='mu2consolHospitalDischargeDiagnosisSectionHospitalDischargeDiagnosis'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='mu2consolHospitalDischargeDiagnosisSectionTemplateId mu2consolHospitalDischargeDiagnosisSectionHospitalDischargeDiagnosis' templateId.root='2.16.840.1.113883.10.20.22.2.24'"
  * @generated
  */
 public interface HospitalDischargeDiagnosisSection
@@ -58,9 +58,9 @@ public interface HospitalDischargeDiagnosisSection
 	HospitalDischargeDiagnosis getmu2consolHospitalDischargeDiagnosis();
 
 	/**
-   * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * @generated
-   */
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * @generated
+	 */
 	public HospitalDischargeDiagnosisSection init();
 
 	/**

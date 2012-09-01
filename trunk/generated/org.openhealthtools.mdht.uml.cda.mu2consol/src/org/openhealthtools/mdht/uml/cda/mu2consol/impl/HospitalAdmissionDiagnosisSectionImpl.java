@@ -31,47 +31,57 @@ public class HospitalAdmissionDiagnosisSectionImpl
 		org.openhealthtools.mdht.uml.cda.consol.impl.HospitalAdmissionDiagnosisSectionImpl
 		implements HospitalAdmissionDiagnosisSection {
 	/**
-   * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * @generated
-   */
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * @generated
+	 */
 	protected HospitalAdmissionDiagnosisSectionImpl() {
-    super();
-  }
+		super();
+	}
 
 	/**
-   * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * @generated
-   */
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * @generated
+	 */
 	@Override
 	protected EClass eStaticClass() {
-    return Mu2consolPackage.Literals.HOSPITAL_ADMISSION_DIAGNOSIS_SECTION;
-  }
+		return Mu2consolPackage.Literals.HOSPITAL_ADMISSION_DIAGNOSIS_SECTION;
+	}
 
 	/**
-   * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * @generated
-   */
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * @generated
+	 */
 	public boolean validateMu2consolHospitalAdmissionDiagnosisSectionHospitalAdmissionDiagnosis(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return HospitalAdmissionDiagnosisSectionOperations.validateMu2consolHospitalAdmissionDiagnosisSectionHospitalAdmissionDiagnosis(this, diagnostics, context);
-  }
+		return HospitalAdmissionDiagnosisSectionOperations.validateMu2consolHospitalAdmissionDiagnosisSectionHospitalAdmissionDiagnosis(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * @generated
-   */
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * @generated
+	 */
 	public HospitalAdmissionDiagnosis getmu2consolHospitalAdmissionDiagnosis() {
-    return HospitalAdmissionDiagnosisSectionOperations.getmu2consolHospitalAdmissionDiagnosis(this);
-  }
+		return HospitalAdmissionDiagnosisSectionOperations.getmu2consolHospitalAdmissionDiagnosis(this);
+	}
 
 	/**
-   * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * @generated
-   */
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public boolean validateHospitalAdmissionDiagnosisSectionTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return HospitalAdmissionDiagnosisSectionOperations.validateHospitalAdmissionDiagnosisSectionTemplateId(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * @generated
+	 */
 	@Override
 	public HospitalAdmissionDiagnosisSection init() {
-      return Initializer.Util.init(this);
-  }
+	    return Initializer.Util.init(this);
+	}
 
 	/**
      * <!-- begin-user-doc --> <!-- end-user-doc -->
