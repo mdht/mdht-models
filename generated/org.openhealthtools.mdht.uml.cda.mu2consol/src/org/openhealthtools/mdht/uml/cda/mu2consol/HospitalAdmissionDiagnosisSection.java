@@ -21,7 +21,7 @@ import org.openhealthtools.mdht.uml.cda.consol.HospitalAdmissionDiagnosis;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.mu2consol.Mu2consolPackage#getHospitalAdmissionDiagnosisSection()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='mu2consolHospitalAdmissionDiagnosisSectionHospitalAdmissionDiagnosis'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='mu2consolHospitalAdmissionDiagnosisSectionTemplateId mu2consolHospitalAdmissionDiagnosisSectionHospitalAdmissionDiagnosis' templateId.root='2.16.840.1.113883.10.20.22.2.43'"
  * @generated
  */
 public interface HospitalAdmissionDiagnosisSection
@@ -58,9 +58,9 @@ public interface HospitalAdmissionDiagnosisSection
 	HospitalAdmissionDiagnosis getmu2consolHospitalAdmissionDiagnosis();
 
 	/**
-   * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * @generated
-   */
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * @generated
+	 */
 	public HospitalAdmissionDiagnosisSection init();
 
 	/**

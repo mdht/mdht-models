@@ -21,7 +21,7 @@ import org.openhealthtools.mdht.uml.cda.consol.ProblemObservation;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.mu2consol.Mu2consolPackage#getAssessmentSection()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='mu2consolAssessmentSectionProblemObservation'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='mu2consolAssessmentSectionTemplateId mu2consolAssessmentSectionProblemObservation' templateId.root='2.16.840.1.113883.10.20.22.2.8'"
  * @generated
  */
 public interface AssessmentSection extends
@@ -59,9 +59,9 @@ public interface AssessmentSection extends
 	ProblemObservation getProblemObservation();
 
 	/**
-   * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * @generated
-   */
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * @generated
+	 */
 	public AssessmentSection init();
 
 	/**

@@ -29,17 +29,19 @@ public class Test {
 	public static void main(String[] args) {
 
 		// System.out.println("======testSOCR=========");
-		// testSOCR("socr_sample");
-		// System.out.println("=====testSOCR==========");
+//		 testSOCR("socr_sample");
+//		 testSOCR("socr_sample_withDSTemplateId");
+//		 System.out.println("=====testSOCR==========");
 		//
 		// System.out.println("======testAsSOCR=========");
-		// testAsSOCR("socr_sample_withDSTemplateId");
+//		 testAsSOCR("socr_sample");
+		 testAsSOCR("socr_sample_withDSTemplateId");
 		// System.out.println("=====testAsSOCR==========");
 
 		// validateSOCR("socr_sample");
-//		validateDocument("socr_sample", "SummaryOfCareRecord");
+		validateDocument("socr_sample", "SummaryOfCareRecord");
 		// validateDocument("socr_sample","ClinicalOfficeVisitSummary");
-		validateDocument("socr_sample", "VDTInpatientPatientInfo");
+//		validateDocument("socr_sample", "VDTInpatientPatientInfo");
 	}
 
 	public static void testSOCR(String fileName) {

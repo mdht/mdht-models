@@ -21,7 +21,7 @@ import org.openhealthtools.mdht.uml.cda.consol.ProblemObservation;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.mu2consol.Mu2consolPackage#getPostoperativeDiagnosisSection()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='mu2consolPostoperativeDiagnosisSectionProblemObservation'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='mu2consolPostoperativeDiagnosisSectionTemplateId mu2consolPostoperativeDiagnosisSectionProblemObservation' templateId.root='2.16.840.1.113883.10.20.22.2.35'"
  * @generated
  */
 public interface PostoperativeDiagnosisSection extends
@@ -59,9 +59,9 @@ public interface PostoperativeDiagnosisSection extends
 	ProblemObservation getProblemObservation();
 
 	/**
-   * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * @generated
-   */
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * @generated
+	 */
 	public PostoperativeDiagnosisSection init();
 
 	/**

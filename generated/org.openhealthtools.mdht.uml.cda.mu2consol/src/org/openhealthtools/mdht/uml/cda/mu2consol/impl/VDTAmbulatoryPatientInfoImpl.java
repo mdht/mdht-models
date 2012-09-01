@@ -49,357 +49,384 @@ import org.openhealthtools.mdht.uml.cda.mu2consol.operations.VDTAmbulatoryPatien
  */
 public class VDTAmbulatoryPatientInfoImpl extends GeneralHeaderConstraintsImpl implements VDTAmbulatoryPatientInfo {
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	protected VDTAmbulatoryPatientInfoImpl() {
-    super();
-  }
+		super();
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	@Override
 	protected EClass eStaticClass() {
-    return Mu2consolPackage.Literals.VDT_AMBULATORY_PATIENT_INFO;
-  }
+		return Mu2consolPackage.Literals.VDT_AMBULATORY_PATIENT_INFO;
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public boolean validateVDTAmbulatoryPatientInfoMedicationList(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return VDTAmbulatoryPatientInfoOperations.validateVDTAmbulatoryPatientInfoMedicationList(this, diagnostics, context);
-  }
+		return VDTAmbulatoryPatientInfoOperations.validateVDTAmbulatoryPatientInfoMedicationList(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public boolean validateVDTAmbulatoryPatientInfoMedicationAllergy(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return VDTAmbulatoryPatientInfoOperations.validateVDTAmbulatoryPatientInfoMedicationAllergy(this, diagnostics, context);
-  }
+		return VDTAmbulatoryPatientInfoOperations.validateVDTAmbulatoryPatientInfoMedicationAllergy(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public boolean validateVDTAmbulatoryPatientInfoCanHaveEitherVitalSignsRequiedOrOptionalEntry(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return VDTAmbulatoryPatientInfoOperations.validateVDTAmbulatoryPatientInfoCanHaveEitherVitalSignsRequiedOrOptionalEntry(this, diagnostics, context);
-  }
+		return VDTAmbulatoryPatientInfoOperations.validateVDTAmbulatoryPatientInfoCanHaveEitherVitalSignsRequiedOrOptionalEntry(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public boolean validateVDTAmbulatoryPatientInfoCanHaveEitherAllergyRequiredOrOptionalEntry(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return VDTAmbulatoryPatientInfoOperations.validateVDTAmbulatoryPatientInfoCanHaveEitherAllergyRequiredOrOptionalEntry(this, diagnostics, context);
-  }
+		return VDTAmbulatoryPatientInfoOperations.validateVDTAmbulatoryPatientInfoCanHaveEitherAllergyRequiredOrOptionalEntry(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public boolean validateVDTAmbulatoryPatientInfoCanHaveEitherEncountersRequiredOrOptionalEntry(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return VDTAmbulatoryPatientInfoOperations.validateVDTAmbulatoryPatientInfoCanHaveEitherEncountersRequiredOrOptionalEntry(this, diagnostics, context);
-  }
+		return VDTAmbulatoryPatientInfoOperations.validateVDTAmbulatoryPatientInfoCanHaveEitherEncountersRequiredOrOptionalEntry(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public boolean validateVDTAmbulatoryPatientInfoReasonForHospitalization(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return VDTAmbulatoryPatientInfoOperations.validateVDTAmbulatoryPatientInfoReasonForHospitalization(this, diagnostics, context);
-  }
+		return VDTAmbulatoryPatientInfoOperations.validateVDTAmbulatoryPatientInfoReasonForHospitalization(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public boolean validateVDTAmbulatoryPatientInfoSocialHistorySection(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return VDTAmbulatoryPatientInfoOperations.validateVDTAmbulatoryPatientInfoSocialHistorySection(this, diagnostics, context);
-  }
+		return VDTAmbulatoryPatientInfoOperations.validateVDTAmbulatoryPatientInfoSocialHistorySection(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public boolean validateVDTAmbulatoryPatientInfoProblemSection(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return VDTAmbulatoryPatientInfoOperations.validateVDTAmbulatoryPatientInfoProblemSection(this, diagnostics, context);
-  }
+		return VDTAmbulatoryPatientInfoOperations.validateVDTAmbulatoryPatientInfoProblemSection(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public boolean validateVDTAmbulatoryPatientInfoResultsSection(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return VDTAmbulatoryPatientInfoOperations.validateVDTAmbulatoryPatientInfoResultsSection(this, diagnostics, context);
-  }
+		return VDTAmbulatoryPatientInfoOperations.validateVDTAmbulatoryPatientInfoResultsSection(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public boolean validateVDTAmbulatoryPatientInfoPlanOfCareSection(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return VDTAmbulatoryPatientInfoOperations.validateVDTAmbulatoryPatientInfoPlanOfCareSection(this, diagnostics, context);
-  }
+		return VDTAmbulatoryPatientInfoOperations.validateVDTAmbulatoryPatientInfoPlanOfCareSection(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public boolean validateVDTAmbulatoryPatientInfoProceduresSection(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return VDTAmbulatoryPatientInfoOperations.validateVDTAmbulatoryPatientInfoProceduresSection(this, diagnostics, context);
-  }
+		return VDTAmbulatoryPatientInfoOperations.validateVDTAmbulatoryPatientInfoProceduresSection(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public boolean validateVDTAmbulatoryPatientInfoHospitalDischargeInstructionsSection(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return VDTAmbulatoryPatientInfoOperations.validateVDTAmbulatoryPatientInfoHospitalDischargeInstructionsSection(this, diagnostics, context);
-  }
+		return VDTAmbulatoryPatientInfoOperations.validateVDTAmbulatoryPatientInfoHospitalDischargeInstructionsSection(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
+	public boolean validateVDTAmbulatoryPatientInfoSocialHistorySectionTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return VDTAmbulatoryPatientInfoOperations.validateVDTAmbulatoryPatientInfoSocialHistorySectionTemplateId(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public boolean validateVDTAmbulatoryPatientInfomu2consolSocialHistorySectionSmokingStatusObservation(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return VDTAmbulatoryPatientInfoOperations.validateVDTAmbulatoryPatientInfomu2consolSocialHistorySectionSmokingStatusObservation(this, diagnostics, context);
-  }
+		return VDTAmbulatoryPatientInfoOperations.validateVDTAmbulatoryPatientInfomu2consolSocialHistorySectionSmokingStatusObservation(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
+	public boolean validateVDTAmbulatoryPatientInfoHospitalAdmissionMedicationsSectionEntriesOptionalTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return VDTAmbulatoryPatientInfoOperations.validateVDTAmbulatoryPatientInfoHospitalAdmissionMedicationsSectionEntriesOptionalTemplateId(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public boolean validateVDTAmbulatoryPatientInfomu2consolHospitalAdmissionMedicationsSectionEntriesOptionalAdmissionMedication(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return VDTAmbulatoryPatientInfoOperations.validateVDTAmbulatoryPatientInfomu2consolHospitalAdmissionMedicationsSectionEntriesOptionalAdmissionMedication(this, diagnostics, context);
-  }
+		return VDTAmbulatoryPatientInfoOperations.validateVDTAmbulatoryPatientInfomu2consolHospitalAdmissionMedicationsSectionEntriesOptionalAdmissionMedication(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
-	public boolean validateVDTAmbulatoryPatientInfomu2consolAllergiesSectionEntriesOptionalAllergyProblemAct(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return VDTAmbulatoryPatientInfoOperations.validateVDTAmbulatoryPatientInfomu2consolAllergiesSectionEntriesOptionalAllergyProblemAct(this, diagnostics, context);
-  }
-
-	/**
-   * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public boolean validateVDTAmbulatoryPatientInfomu2consolPlanOfCareSectionCarePlanningForPlanOfCare(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return VDTAmbulatoryPatientInfoOperations.validateVDTAmbulatoryPatientInfomu2consolPlanOfCareSectionCarePlanningForPlanOfCare(this, diagnostics, context);
-  }
+		return VDTAmbulatoryPatientInfoOperations.validateVDTAmbulatoryPatientInfomu2consolPlanOfCareSectionCarePlanningForPlanOfCare(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
+	public boolean validateVDTAmbulatoryPatientInfoPlanOfCareSectionTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return VDTAmbulatoryPatientInfoOperations.validateVDTAmbulatoryPatientInfoPlanOfCareSectionTemplateId(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateVDTAmbulatoryPatientInfoHospitalAdmissionDiagnosisSectionTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return VDTAmbulatoryPatientInfoOperations.validateVDTAmbulatoryPatientInfoHospitalAdmissionDiagnosisSectionTemplateId(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public boolean validateVDTAmbulatoryPatientInfomu2consolHospitalAdmissionDiagnosisSectionHospitalAdmissionDiagnosis(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return VDTAmbulatoryPatientInfoOperations.validateVDTAmbulatoryPatientInfomu2consolHospitalAdmissionDiagnosisSectionHospitalAdmissionDiagnosis(this, diagnostics, context);
-  }
+		return VDTAmbulatoryPatientInfoOperations.validateVDTAmbulatoryPatientInfomu2consolHospitalAdmissionDiagnosisSectionHospitalAdmissionDiagnosis(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public SocialHistorySection getSocialHistorySection() {
-    return VDTAmbulatoryPatientInfoOperations.getSocialHistorySection(this);
-  }
+		return VDTAmbulatoryPatientInfoOperations.getSocialHistorySection(this);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public ProblemSection getProblemSection() {
-    return VDTAmbulatoryPatientInfoOperations.getProblemSection(this);
-  }
+		return VDTAmbulatoryPatientInfoOperations.getProblemSection(this);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public MedicationsSection getMedicationsSection() {
-    return VDTAmbulatoryPatientInfoOperations.getMedicationsSection(this);
-  }
+		return VDTAmbulatoryPatientInfoOperations.getMedicationsSection(this);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public HospitalAdmissionMedicationsSectionEntriesOptional getHospitalAdmissionMedicationsSectionEntriesOptional() {
-    return VDTAmbulatoryPatientInfoOperations.getHospitalAdmissionMedicationsSectionEntriesOptional(this);
-  }
+		return VDTAmbulatoryPatientInfoOperations.getHospitalAdmissionMedicationsSectionEntriesOptional(this);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public HospitalDischargeMedicationsSection getHospitalDischargeMedicationsSection() {
-    return VDTAmbulatoryPatientInfoOperations.getHospitalDischargeMedicationsSection(this);
-  }
+		return VDTAmbulatoryPatientInfoOperations.getHospitalDischargeMedicationsSection(this);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public AllergiesSection getAllergiesSection() {
-    return VDTAmbulatoryPatientInfoOperations.getAllergiesSection(this);
-  }
+		return VDTAmbulatoryPatientInfoOperations.getAllergiesSection(this);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public AllergiesSectionEntriesOptional getAllergiesSectionEntriesOptional() {
-    return VDTAmbulatoryPatientInfoOperations.getAllergiesSectionEntriesOptional(this);
-  }
+		return VDTAmbulatoryPatientInfoOperations.getAllergiesSectionEntriesOptional(this);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public ResultsSection getResultsSection() {
-    return VDTAmbulatoryPatientInfoOperations.getResultsSection(this);
-  }
+		return VDTAmbulatoryPatientInfoOperations.getResultsSection(this);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public VitalSignsSection getVitalSignsSection() {
-    return VDTAmbulatoryPatientInfoOperations.getVitalSignsSection(this);
-  }
+		return VDTAmbulatoryPatientInfoOperations.getVitalSignsSection(this);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public VitalSignsSectionEntriesOptional getVitalSignsSectionEntriesOptional() {
-    return VDTAmbulatoryPatientInfoOperations.getVitalSignsSectionEntriesOptional(this);
-  }
+		return VDTAmbulatoryPatientInfoOperations.getVitalSignsSectionEntriesOptional(this);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public PlanOfCareSection getPlanOfCareSection() {
-    return VDTAmbulatoryPatientInfoOperations.getPlanOfCareSection(this);
-  }
+		return VDTAmbulatoryPatientInfoOperations.getPlanOfCareSection(this);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public ProceduresSection getProceduresSection() {
-    return VDTAmbulatoryPatientInfoOperations.getProceduresSection(this);
-  }
+		return VDTAmbulatoryPatientInfoOperations.getProceduresSection(this);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public HospitalDischargeInstructionsSection getHospitalDischargeInstructionsSection() {
-    return VDTAmbulatoryPatientInfoOperations.getHospitalDischargeInstructionsSection(this);
-  }
+		return VDTAmbulatoryPatientInfoOperations.getHospitalDischargeInstructionsSection(this);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public EncountersSection getEncountersSection() {
-    return VDTAmbulatoryPatientInfoOperations.getEncountersSection(this);
-  }
+		return VDTAmbulatoryPatientInfoOperations.getEncountersSection(this);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public EncountersSectionEntriesOptional getEncountersSectionEntriesOptional() {
-    return VDTAmbulatoryPatientInfoOperations.getEncountersSectionEntriesOptional(this);
-  }
+		return VDTAmbulatoryPatientInfoOperations.getEncountersSectionEntriesOptional(this);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public HospitalAdmissionDiagnosisSection getHospitalAdmissionDiagnosisSection() {
-    return VDTAmbulatoryPatientInfoOperations.getHospitalAdmissionDiagnosisSection(this);
-  }
+		return VDTAmbulatoryPatientInfoOperations.getHospitalAdmissionDiagnosisSection(this);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public ReasonForVisitSection getReasonForVisitSection() {
-    return VDTAmbulatoryPatientInfoOperations.getReasonForVisitSection(this);
-  }
+		return VDTAmbulatoryPatientInfoOperations.getReasonForVisitSection(this);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public ChiefComplaintSection getChiefComplaintSection() {
-    return VDTAmbulatoryPatientInfoOperations.getChiefComplaintSection(this);
-  }
+		return VDTAmbulatoryPatientInfoOperations.getChiefComplaintSection(this);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public ChiefComplaintAndReasonForVisitSection getChiefComplaintAndReasonForVisitSection() {
-    return VDTAmbulatoryPatientInfoOperations.getChiefComplaintAndReasonForVisitSection(this);
-  }
+		return VDTAmbulatoryPatientInfoOperations.getChiefComplaintAndReasonForVisitSection(this);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	@Override
 	public VDTAmbulatoryPatientInfo init() {
-      return Initializer.Util.init(this);
-  }
+	    return Initializer.Util.init(this);
+	}
     /**
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->

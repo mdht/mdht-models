@@ -22,7 +22,7 @@ import org.openhealthtools.mdht.uml.cda.consol.MedicationActivity;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.mu2consol.Mu2consolPackage#getMedicationsAdministeredSection()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='mu2consolMedicationsAdministeredSectionMedicationActivity'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='mu2consolMedicationsAdministeredSectionTemplateId mu2consolMedicationsAdministeredSectionMedicationActivity' templateId.root='2.16.840.1.113883.10.20.22.2.38'"
  * @generated
  */
 public interface MedicationsAdministeredSection extends
@@ -61,9 +61,9 @@ public interface MedicationsAdministeredSection extends
 	EList<MedicationActivity> getmu2consolMedicationActivities();
 
 	/**
-   * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * @generated
-   */
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * @generated
+	 */
 	public MedicationsAdministeredSection init();
 
 	/**

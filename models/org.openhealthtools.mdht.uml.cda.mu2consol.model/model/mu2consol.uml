@@ -217,14 +217,6 @@
           <body>SHALL have one of Vital Signs (entries optional: 2.16.840.1.113883.10.20.22.2.4 or entries required: 2.16.840.1.113883.10.20.22.2.4.1)</body>
         </specification>
       </ownedRule>
-      <ownedRule xmi:id="_kx5CgN33EeGdQcioKnmIhA" name="medicationListConstraint" constrainedElement="_VG3DUNkxEeGsqcJR8eqiMw">
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_o21eoN33EeGdQcioKnmIhA">
-          <language>OCL</language>
-          <language>Analysis</language>
-          <body>(self.getAllSections()->one(s : cda::Section | not s.oclIsUndefined() and s.oclIsTypeOf(consol::MedicationsSection)) or  &#xD;&#xA; self.getAllSections()->one(s : cda::Section | not s.oclIsUndefined() and s.oclIsTypeOf(consol::HospitalAdmissionMedicationsSectionEntriesOptional)) or &#xD;&#xA; self.getAllSections()->one(s : cda::Section | not s.oclIsUndefined() and s.oclIsTypeOf(consol::HospitalDischargeMedicationsSection)))</body>
-          <body>SHALL have one of Medications (entries required: 2.16.840.1.113883.10.20.22.2.1.1) or Hospital Admission Medications (2.16.840.1.113883.10.20.22.2.44 ) or Hospital Discharge Medications (entries required: 2.16.840.1.113883.10.20.22.2.11.1)</body>
-        </specification>
-      </ownedRule>
       <ownedRule xmi:id="_gfm_8OvXEeGkopdZmUN1Xw" name="carePlanning" constrainedElement="_VG3DUNkxEeGsqcJR8eqiMw">
         <specification xmi:type="uml:OpaqueExpression" xmi:id="_jopNcOvXEeGkopdZmUN1Xw">
           <language>OCL</language>
@@ -816,9 +808,6 @@
       <ownedEnd xmi:id="_KZhREODrEeGdSJSga09Dyg" type="_HBzuYODrEeGdSJSga09Dyg" association="_KZgqA-DrEeGdSJSga09Dyg"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_szTFwOF8EeGlJOFzBdwM6w" name="AllergiesSectionEntriesOptional">
-      <ownedComment xmi:id="_U6AmUOGFEeG708usbCxwpw">
-        <body>INLINE</body>
-      </ownedComment>
       <generalization xmi:id="_ugMFYOF8EeGlJOFzBdwM6w">
         <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-allergies.uml#_bGzYgBVdEeGQCvUGzi1kDQ"/>
       </generalization>
@@ -1067,7 +1056,7 @@
         <specification xmi:type="uml:OpaqueExpression" xmi:id="_0HuRAO4yEeGT5oaF-4NGAA">
           <language>OCL</language>
           <language>Analysis</language>
-          <body>(self.getAllSections()->one(s : cda::Section | not s.oclIsUndefined() and s.oclIsTypeOf(consol::MedicationsSection)) or  &#xD;&#xA; self.getAllSections()->one(s : cda::Section | not s.oclIsUndefined() and s.oclIsTypeOf(consol::HospitalAdmissionMedicationsSectionEntriesOptional)) or &#xD;&#xA; self.getAllSections()->one(s : cda::Section | not s.oclIsUndefined() and s.oclIsTypeOf(consol::HospitalDischargeMedicationsSection)))</body>
+          <body>(self.getAllSections()->one(s : cda::Section | not s.oclIsUndefined() and s.oclIsTypeOf(consol::MedicationsSection)) or  &#xD;&#xA; self.getAllSections()->one(s : cda::Section | not s.oclIsUndefined() and s.oclIsTypeOf(mu2consol::HospitalAdmissionMedicationsSectionEntriesOptional)) or &#xD;&#xA; self.getAllSections()->one(s : cda::Section | not s.oclIsUndefined() and s.oclIsTypeOf(consol::HospitalDischargeMedicationsSection)))</body>
           <body>SHALL have one of Medications (entries required: 2.16.840.1.113883.10.20.22.2.1.1) or Hospital Admission Medications (2.16.840.1.113883.10.20.22.2.44 ) or Hospital Discharge Medications (entries required: 2.16.840.1.113883.10.20.22.2.11.1)</body>
         </specification>
       </ownedRule>
@@ -1182,7 +1171,7 @@
         <specification xmi:type="uml:OpaqueExpression" xmi:id="_TcvNcO5yEeGT5oaF-4NGAA">
           <language>OCL</language>
           <language>Analysis</language>
-          <body>(self.getAllSections()->one(s : cda::Section | not s.oclIsUndefined() and s.oclIsTypeOf(consol::MedicationsSection)) or  &#xD;&#xA; self.getAllSections()->one(s : cda::Section | not s.oclIsUndefined() and s.oclIsTypeOf(consol::HospitalAdmissionMedicationsSectionEntriesOptional)) or &#xD;&#xA; self.getAllSections()->one(s : cda::Section | not s.oclIsUndefined() and s.oclIsTypeOf(consol::HospitalDischargeMedicationsSection)))</body>
+          <body>(self.getAllSections()->one(s : cda::Section | not s.oclIsUndefined() and s.oclIsTypeOf(consol::MedicationsSection)) or  &#xD;&#xA; self.getAllSections()->one(s : cda::Section | not s.oclIsUndefined() and s.oclIsTypeOf(mu2consol::HospitalAdmissionMedicationsSectionEntriesOptional)) or &#xD;&#xA; self.getAllSections()->one(s : cda::Section | not s.oclIsUndefined() and s.oclIsTypeOf(consol::HospitalDischargeMedicationsSection)))</body>
           <body>SHALL have one of Medications (entries required: 2.16.840.1.113883.10.20.22.2.1.1) or Hospital Admission Medications (2.16.840.1.113883.10.20.22.2.44 ) or Hospital Discharge Medications (entries required: 2.16.840.1.113883.10.20.22.2.11.1)</body>
         </specification>
       </ownedRule>
@@ -1395,7 +1384,6 @@
   <CDA:ConstraintValidation xmi:id="_ywEDAN32EeGdQcioKnmIhA" base_Constraint="_n-eIsN32EeGdQcioKnmIhA"/>
   <CDA:AssociationValidation xmi:id="_2fYNYN32EeGdQcioKnmIhA" base_Association="_6x1tUdpiEeGzu8-aAsCS4g"/>
   <CDA:AssociationValidation xmi:id="_-SBDQN32EeGdQcioKnmIhA" base_Association="_2mtwsdpiEeGzu8-aAsCS4g"/>
-  <CDA:ConstraintValidation xmi:id="_pMEu0N33EeGdQcioKnmIhA" base_Constraint="_kx5CgN33EeGdQcioKnmIhA"/>
   <CDA:AssociationValidation xmi:id="_04kyMN33EeGdQcioKnmIhA" base_Association="_cgJ3gdpiEeGzu8-aAsCS4g"/>
   <CDA:AssociationValidation xmi:id="_c4jm8eDlEeGdSJSga09Dyg" base_Association="_c4i_4-DlEeGdSJSga09Dyg"/>
   <CDA:AssociationValidation xmi:id="_kTLwAODmEeGdSJSga09Dyg" base_Association="_kTKh4uDmEeGdSJSga09Dyg"/>
@@ -1418,7 +1406,7 @@
   <CDA:AssociationValidation xmi:id="_wF4Q0OF8EeGlJOFzBdwM6w" base_Association="_wF3pwOF8EeGlJOFzBdwM6w"/>
   <CDA:AssociationValidation xmi:id="_d0roAOGVEeG708usbCxwpw" base_Association="_bvo0gdk5EeGsqcJR8eqiMw"/>
   <CDA:AssociationValidation xmi:id="_7Y9e0OJREeGzd4w2xo094w" base_Association="_kGkCkeDhEeGdSJSga09Dyg"/>
-  <CDA:CDATemplate xmi:id="_gWeuwOmKEeGNCuDrPdW6ZA" base_Class="_ZK4bUODlEeGdSJSga09Dyg"/>
+  <CDA:CDATemplate xmi:id="_gWeuwOmKEeGNCuDrPdW6ZA" base_Class="_ZK4bUODlEeGdSJSga09Dyg" templateId="2.16.840.1.113883.10.20.22.2.45"/>
   <CDA:ConstraintValidation xmi:id="_7vlYQOvXEeGkopdZmUN1Xw" base_Constraint="_gfm_8OvXEeGkopdZmUN1Xw"/>
   <CDA:ConstraintValidation xmi:id="_62L1oOvYEeGkopdZmUN1Xw" base_Constraint="_n8bhYOvYEeGkopdZmUN1Xw"/>
   <CDA:ConstraintValidation xmi:id="_rb7RoOvZEeGkopdZmUN1Xw" base_Constraint="_VUReAOvZEeGkopdZmUN1Xw"/>
@@ -1475,4 +1463,16 @@
   <CDA:ConstraintValidation xmi:id="_vC6NUO50EeGT5oaF-4NGAA" base_Constraint="_oZlI4O50EeGT5oaF-4NGAA"/>
   <CDA:ConstraintValidation xmi:id="_9cqhIO50EeGT5oaF-4NGAA" base_Constraint="_zZdW0O50EeGT5oaF-4NGAA"/>
   <CDA:ConstraintValidation xmi:id="_RxnyoO52EeGT5oaF-4NGAA" base_Constraint="_MDXPUO52EeGT5oaF-4NGAA"/>
+  <CDA:CDATemplate xmi:id="_CDXuIPK1EeGFZOE6tRcvzg" base_Class="_szTFwOF8EeGlJOFzBdwM6w" templateId="2.16.840.1.113883.10.20.22.2.6"/>
+  <CDA:CDATemplate xmi:id="_TQUy0PM4EeGkZPcEpuFP6w" base_Class="_w2gYkODkEeGdSJSga09Dyg" templateId="2.16.840.1.113883.10.20.22.2.9"/>
+  <CDA:CDATemplate xmi:id="_hwU4kPM4EeGkZPcEpuFP6w" base_Class="_CaN5MODgEeGdSJSga09Dyg" templateId="2.16.840.1.113883.10.20.22.2.8"/>
+  <CDA:CDATemplate xmi:id="_tqLbcPM4EeGkZPcEpuFP6w" base_Class="_gl8CMODmEeGdSJSga09Dyg" templateId="2.16.840.1.113883.10.20.22.2.43"/>
+  <CDA:CDATemplate xmi:id="_zgZn8PM4EeGkZPcEpuFP6w" base_Class="_HBzuYODrEeGdSJSga09Dyg" templateId="2.16.840.1.113883.10.20.22.2.44"/>
+  <CDA:CDATemplate xmi:id="_6V0noPM4EeGkZPcEpuFP6w" base_Class="_qgJokODmEeGdSJSga09Dyg" templateId="2.16.840.1.113883.10.20.22.2.24"/>
+  <CDA:CDATemplate xmi:id="_FuXNMPM5EeGkZPcEpuFP6w" base_Class="_3poqgODqEeGdSJSga09Dyg" templateId="2.16.840.1.113883.10.20.22.2.38"/>
+  <CDA:CDATemplate xmi:id="_JM8z8PM5EeGkZPcEpuFP6w" base_Class="_svnagODKEeGdSJSga09Dyg" templateId="2.16.840.1.113883.10.20.22.2.10"/>
+  <CDA:CDATemplate xmi:id="_L1otcPM5EeGkZPcEpuFP6w" base_Class="_y1mQkODmEeGdSJSga09Dyg" templateId="2.16.840.1.113883.10.20.22.2.35"/>
+  <CDA:CDATemplate xmi:id="_OdNzsPM5EeGkZPcEpuFP6w" base_Class="_uvXlkODnEeGdSJSga09Dyg" templateId="2.16.840.1.113883.10.20.22.2.36"/>
+  <CDA:CDATemplate xmi:id="_QwCx8PM5EeGkZPcEpuFP6w" base_Class="_bRRt0ODqEeGdSJSga09Dyg" templateId="2.16.840.1.113883.10.20.22.2.34"/>
+  <CDA:CDATemplate xmi:id="_TC_sAPM5EeGkZPcEpuFP6w" base_Class="_9frdwO1UEeGT-eFu7Ghgjw" templateId="2.16.840.1.113883.10.20.22.2.17"/>
 </xmi:XMI>

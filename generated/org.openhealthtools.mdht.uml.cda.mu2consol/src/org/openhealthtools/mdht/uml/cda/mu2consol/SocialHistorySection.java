@@ -25,7 +25,7 @@ import org.openhealthtools.mdht.uml.cda.consol.SmokingStatusObservation;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.mu2consol.Mu2consolPackage#getSocialHistorySection()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='mu2consolSocialHistorySectionSmokingStatusObservation'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='mu2consolSocialHistorySectionTemplateId mu2consolSocialHistorySectionSmokingStatusObservation' templateId.root='2.16.840.1.113883.10.20.22.2.17'"
  * @generated
  */
 public interface SocialHistorySection extends
@@ -62,9 +62,9 @@ public interface SocialHistorySection extends
 	EList<SmokingStatusObservation> getmu2consolSmokingStatusObservations();
 
 	/**
-   * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * @generated
-   */
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * @generated
+	 */
 	public SocialHistorySection init();
 
 	/**

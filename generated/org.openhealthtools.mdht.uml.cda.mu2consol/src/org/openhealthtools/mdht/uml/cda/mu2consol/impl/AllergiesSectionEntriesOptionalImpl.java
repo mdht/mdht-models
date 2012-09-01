@@ -31,47 +31,58 @@ public class AllergiesSectionEntriesOptionalImpl
 		org.openhealthtools.mdht.uml.cda.consol.impl.AllergiesSectionEntriesOptionalImpl
 		implements AllergiesSectionEntriesOptional {
 	/**
-   * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * @generated
-   */
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * @generated
+	 */
 	protected AllergiesSectionEntriesOptionalImpl() {
-    super();
-  }
+		super();
+	}
 
 	/**
-   * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * @generated
-   */
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * @generated
+	 */
 	@Override
 	protected EClass eStaticClass() {
-    return Mu2consolPackage.Literals.ALLERGIES_SECTION_ENTRIES_OPTIONAL;
-  }
+		return Mu2consolPackage.Literals.ALLERGIES_SECTION_ENTRIES_OPTIONAL;
+	}
 
 	/**
-   * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * @generated
-   */
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * @generated
+	 */
 	public boolean validateMu2consolAllergiesSectionEntriesOptionalAllergyProblemAct(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return AllergiesSectionEntriesOptionalOperations.validateMu2consolAllergiesSectionEntriesOptionalAllergyProblemAct(this, diagnostics, context);
-  }
+		return AllergiesSectionEntriesOptionalOperations.validateMu2consolAllergiesSectionEntriesOptionalAllergyProblemAct(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * @generated
-   */
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * @generated
+	 */
 	public AllergyProblemAct getmu2consolAllergyProblemAct() {
-    return AllergiesSectionEntriesOptionalOperations.getmu2consolAllergyProblemAct(this);
-  }
+		return AllergiesSectionEntriesOptionalOperations.getmu2consolAllergyProblemAct(this);
+	}
 
 	/**
-   * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * @generated
-   */
+	 * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+	 * @generated
+	 */
+  @Override
+  public boolean validateAllergiesSectionEntriesOptionalTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+		return AllergiesSectionEntriesOptionalOperations.validateAllergiesSectionEntriesOptionalTemplateId(this, diagnostics, context);
+	}
+
+  /**
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * @generated
+	 */
 	@Override
 	public AllergiesSectionEntriesOptional init() {
-      return Initializer.Util.init(this);
-  }
+	    return Initializer.Util.init(this);
+	}
 
 	/**
      * <!-- begin-user-doc --> <!-- end-user-doc -->
