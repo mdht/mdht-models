@@ -113,12 +113,12 @@
     </packagedElement>
     <packagedElement xmi:type="uml:Enumeration" xmi:id="_U5nTAJX9EeGdw75A0B2buQ" name="Substance Use Category">
       <ownedComment xmi:id="_Yso4sJX9EeGdw75A0B2buQ">
-        <body>A list of categories used for organizing substance uses.    The code system to be used is defined by the study sponsor.</body>
+        <body>A list of categories used for organizing substance uses.    The code system to be used is defined by the study sponsor.  The code system to be used is defined by the study sponsor.</body>
       </ownedComment>
     </packagedElement>
     <packagedElement xmi:type="uml:Enumeration" xmi:id="_ZFKGYJX9EeGdw75A0B2buQ" name="Substance Use Sub-Category">
       <ownedComment xmi:id="_gdm6oJX9EeGdw75A0B2buQ">
-        <body>A list of sub-categories used for organizing substance uses.    The code system to be used is defined by the study sponsor.</body>
+        <body>A list of sub-categories used for organizing substance uses.  The code system to be used is defined by the study sponsor.</body>
       </ownedComment>
     </packagedElement>
     <packagedElement xmi:type="uml:Enumeration" xmi:id="_wNFR8JYCEeGdw75A0B2buQ" name="Disposition Item Type">
@@ -223,7 +223,7 @@
     </packagedElement>
     <packagedElement xmi:type="uml:Enumeration" xmi:id="_GduI0JYLEeGdw75A0B2buQ" name="Physical Exam Finding Type">
       <ownedComment xmi:id="_dcj7wJh_EeGrqNwK10mI-w">
-        <body>A list of the different types of physical exam finding.  Is there a standard set?  LOINC?</body>
+        <body>A list of the different types of physical exam finding.  Is there a standard set?  LOINC?    Currently, the code system to be used is defined by the study sponsor.</body>
       </ownedComment>
     </packagedElement>
     <packagedElement xmi:type="uml:Enumeration" xmi:id="_JCdWcJYLEeGdw75A0B2buQ" name="Physical Exam Finding Category">
@@ -268,7 +268,7 @@
     </packagedElement>
     <packagedElement xmi:type="uml:Enumeration" xmi:id="_2y0gwJYLEeGdw75A0B2buQ" name="Microbiology Finding Type">
       <ownedComment xmi:id="_C1SiMJh_EeGrqNwK10mI-w">
-        <body>A list of types of microbiology specimen related finding.  Is there a standard list?  Should LOINC  be suggested.</body>
+        <body>A list of types of microbiology specimen related finding.  Is there a standard list?  Should LOINC  be suggested.  Currently,  the code system to be used is defined by the study sponsor.</body>
       </ownedComment>
     </packagedElement>
     <packagedElement xmi:type="uml:Enumeration" xmi:id="_5HLwEJYLEeGdw75A0B2buQ" name="Microbiology Finding Category ">
@@ -283,7 +283,7 @@
     </packagedElement>
     <packagedElement xmi:type="uml:Enumeration" xmi:id="_BX5CAJYMEeGdw75A0B2buQ" name="Microbiology Susceptibility Finding Type">
       <ownedComment xmi:id="_NtVp0Jh_EeGrqNwK10mI-w">
-        <body>A list of types of microbiology susceptibility related finding.  Is there a standard set?  LOINC?</body>
+        <body>A list of types of microbiology susceptibility related finding.  Is there a standard set?  LOINC?  Currently,  the code system to be used is defined by the study sponsor.</body>
       </ownedComment>
     </packagedElement>
     <packagedElement xmi:type="uml:Enumeration" xmi:id="_DUppoJYMEeGdw75A0B2buQ" name="Microbiology Susceptibility Finding Category ">
@@ -303,7 +303,7 @@
     </packagedElement>
     <packagedElement xmi:type="uml:Enumeration" xmi:id="_LZBIsJYMEeGdw75A0B2buQ" name="Pharmacokinetics Concentration Finding Type">
       <ownedComment xmi:id="_VmnTMJh_EeGrqNwK10mI-w">
-        <body>A list of the different types of pharmacokinetics concentration findings.  Is there a standard?</body>
+        <body>A list of the different types of pharmacokinetics concentration findings.    The code system to be used is defined by the study sponsor.</body>
       </ownedComment>
     </packagedElement>
     <packagedElement xmi:type="uml:Enumeration" xmi:id="_MMoW8JYMEeGdw75A0B2buQ" name="Pharmacokinetics Concentration Category ">
@@ -323,7 +323,7 @@
     </packagedElement>
     <packagedElement xmi:type="uml:Enumeration" xmi:id="_ZpEt8JYMEeGdw75A0B2buQ" name="Pharmacokinetics Parameter Category ">
       <ownedComment xmi:id="_YgmYEJh_EeGrqNwK10mI-w">
-        <body>A list of the different types of pharmacokinetics parameter findings.  Is there a standard?</body>
+        <body>A list of the different types of pharmacokinetics parameter findings.    The code system to be used is defined by the study sponsor.</body>
       </ownedComment>
     </packagedElement>
     <packagedElement xmi:type="uml:Enumeration" xmi:id="_aKQIYJYMEeGdw75A0B2buQ" name="Finding About Finding Type">
@@ -365,36 +365,71 @@
       <ownedComment xmi:id="_JTDRML_OEeGhFNoxTbVL8w">
         <body>A list of the act types, prinicipally observations that are used within the implementation guides for human clinical and non-human non-clinical studies.</body>
       </ownedComment>
-      <ownedLiteral xmi:id="_UQSv8L_QEeGhFNoxTbVL8w" name="C25150"/>
-      <ownedLiteral xmi:id="_jd3mAL_TEeGhFNoxTbVL8w" name="ATPtbd"/>
+      <ownedLiteral xmi:id="_UQSv8L_QEeGhFNoxTbVL8w" name="C25150">
+        <ownedComment xmi:id="_9BUgsPa-EeGUksZfovKicg">
+          <body>An observation to record the age of the subject.</body>
+        </ownedComment>
+      </ownedLiteral>
+      <ownedLiteral xmi:id="_jd3mAL_TEeGhFNoxTbVL8w" name="ATPtbd">
+        <ownedComment xmi:id="_D767UPa_EeGUksZfovKicg">
+          <body>An observation that defines a reference time point against which the occurance of an event is measured.</body>
+        </ownedComment>
+      </ownedLiteral>
       <ownedLiteral xmi:id="_KPmZAL_OEeGhFNoxTbVL8w" name="C49562">
         <ownedComment xmi:id="_Z9H8QPLbEeGfjrJgpaHCTw">
           <body>The code value indicates the presence of an adverse event.</body>
         </ownedComment>
       </ownedLiteral>
-      <ownedLiteral xmi:id="_E-MpcL_REeGhFNoxTbVL8w" name="C83199"/>
-      <ownedLiteral xmi:id="_2jgSUN2cEeGlbbwWT3IpKA" name="AQtbd"/>
+      <ownedLiteral xmi:id="_2jgSUN2cEeGlbbwWT3IpKA" name="AQtbd">
+        <ownedComment xmi:id="_NILPgPa_EeGUksZfovKicg">
+          <body>An observation that records the lower quantitation limit of an assay.</body>
+        </ownedComment>
+      </ownedLiteral>
       <ownedLiteral xmi:id="_czbvIPLoEeGMZ4RBIRkmiw" name="C49569">
         <ownedComment xmi:id="_md8soPLoEeGMZ4RBIRkmiw">
           <body>Identifies an observation as a comment.   Note, the SDTM/SEND concept ID for the domain of the same  name is being used.</body>
         </ownedComment>
       </ownedLiteral>
-      <ownedLiteral xmi:id="_ijo1IN2dEeGlbbwWT3IpKA" name="C83199"/>
-      <ownedLiteral xmi:id="_DIF9oPN9EeGhE7rXK2gWNQ" name="CStbd"/>
+      <ownedLiteral xmi:id="_ijo1IN2dEeGlbbwWT3IpKA" name="C83199">
+        <ownedComment xmi:id="_xXLi4PbAEeG64oSzFW7inA">
+          <body>A observation to record the fact that an event received treatment.</body>
+        </ownedComment>
+      </ownedLiteral>
+      <ownedLiteral xmi:id="_DIF9oPN9EeGhE7rXK2gWNQ" name="CStbd">
+        <ownedComment xmi:id="_4bJ78PbAEeG64oSzFW7inA">
+          <body>An observation to provide information the consciousness state of the subject.</body>
+        </ownedComment>
+      </ownedLiteral>
       <ownedLiteral xmi:id="_iCxd0L_PEeGhFNoxTbVL8w" name="BSOCtbd">
         <ownedComment xmi:id="_8bKoUPLcEeGfjrJgpaHCTw">
           <body>Indicates the observation conveys the identity of a body system or organ class.</body>
         </ownedComment>
       </ownedLiteral>
-      <ownedLiteral xmi:id="_z3QSAN2dEeGlbbwWT3IpKA" name="DCtbd"/>
+      <ownedLiteral xmi:id="_z3QSAN2dEeGlbbwWT3IpKA" name="DCtbd">
+        <ownedComment xmi:id="_APez4PbBEeG64oSzFW7inA">
+          <body>An observation to provide information on whether or when an expected item of data was collected.</body>
+        </ownedComment>
+      </ownedLiteral>
       <ownedLiteral xmi:id="_OXS8EPLwEeGMZ4RBIRkmiw" name="C95087">
         <ownedComment xmi:id="_Y_V40PLwEeGMZ4RBIRkmiw">
           <body>Indicates that the observation carries information about the death diagnosis.</body>
         </ownedComment>
       </ownedLiteral>
-      <ownedLiteral xmi:id="_QsNOcPNzEeGryoymXliRnA" name="DRtbd"/>
-      <ownedLiteral xmi:id="_oRF1QN2fEeGlbbwWT3IpKA" name="DMGtbd"/>
-      <ownedLiteral xmi:id="_kb49wPN2EeGryoymXliRnA" name="C66734"/>
+      <ownedLiteral xmi:id="_QsNOcPNzEeGryoymXliRnA" name="DRtbd">
+        <ownedComment xmi:id="_FuSl8PbBEeG64oSzFW7inA">
+          <body>Captures whether or not an intervention was associated with the death of a subject.</body>
+        </ownedComment>
+      </ownedLiteral>
+      <ownedLiteral xmi:id="_oRF1QN2fEeGlbbwWT3IpKA" name="DMGtbd">
+        <ownedComment xmi:id="_NHr1YPbBEeG64oSzFW7inA">
+          <body>An observation used to collect demographic information for a subject that goes beyond that provided by CDA for a record target.</body>
+        </ownedComment>
+      </ownedLiteral>
+      <ownedLiteral xmi:id="_kb49wPN2EeGryoymXliRnA" name="C66734">
+        <ownedComment xmi:id="_Q2nlQPbBEeG64oSzFW7inA">
+          <body>An observation to note the SEND/SDTM domain assigned to an information item.</body>
+        </ownedComment>
+      </ownedLiteral>
       <ownedLiteral xmi:id="_1uTbAL_UEeGhFNoxTbVL8w" name="DARtbd">
         <ownedComment xmi:id="_XJy88PNzEeGryoymXliRnA">
           <body>A expression of the relationship of a particular finding to the death of a subject.</body>
@@ -452,6 +487,7 @@
       <ownedLiteral xmi:id="_x5C7EPOlEeG_bsiW5N1Utg" name="SCLtbd"/>
       <ownedLiteral xmi:id="_82NzQPOlEeG_bsiW5N1Utg" name="POTtbd"/>
       <ownedLiteral xmi:id="_xmYK0POyEeGaaIebpy5xoQ" name="DOtbd"/>
+      <ownedLiteral xmi:id="_1y8V0Pa7EeGpiqtJ9hvVRQ" name="TRtrbd"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Enumeration" xmi:id="_6APYoMRmEeGx2-Pp6bmfHQ" name="Serious Event Type">
       <ownedComment xmi:id="_8gK-wMRmEeGx2-Pp6bmfHQ">
@@ -561,7 +597,7 @@
     </packagedElement>
     <packagedElement xmi:type="uml:Enumeration" xmi:id="_Xl9RgPOUEeGAVMcEFACySg" name="Microscopic Finding Type">
       <ownedComment xmi:id="_cgw-oPOUEeGAVMcEFACySg">
-        <body>A collection of the different measurements, tests or examinations whose findings are reported as microscopic results.</body>
+        <body>A collection of the different measurements, tests or examinations whose findings are reported as microscopic results.    The code system to be used is defined by the study sponsor.</body>
       </ownedComment>
     </packagedElement>
     <packagedElement xmi:type="uml:Enumeration" xmi:id="_qkeNIPOYEeGAVMcEFACySg" name="Subject Data Interpretation Consolidated Type">
@@ -608,12 +644,12 @@
     </packagedElement>
     <packagedElement xmi:type="uml:Enumeration" xmi:id="_EHuWMPOfEeGJhPNoqwaI2Q" name="Organ Measurement Examination Type">
       <ownedComment xmi:id="_EHuWMfOfEeGJhPNoqwaI2Q">
-        <body>A collection of the different measurements, tests or examinations whose findings are reported as organ measurement results.</body>
+        <body>A collection of the different measurements, tests or examinations whose findings are reported as organ measurement results.    The code system to be used is defined by the study sponsor.</body>
       </ownedComment>
     </packagedElement>
     <packagedElement xmi:type="uml:Enumeration" xmi:id="_GhvFEPOgEeGJhPNoqwaI2Q" name="Palpable Mass Examination Type">
       <ownedComment xmi:id="_GhvFEfOgEeGJhPNoqwaI2Q">
-        <body>A collection of the different measurements, tests or examinations whose findings are reported as palpable mass results.</body>
+        <body>A collection of the different measurements, tests or examinations whose findings are reported as palpable mass results.    The code system to be used is defined by the study sponsor.</body>
       </ownedComment>
     </packagedElement>
     <packagedElement xmi:type="uml:Enumeration" xmi:id="_33kEwPOhEeGJhPNoqwaI2Q" name="Body Position"/>
@@ -666,12 +702,12 @@
     </packagedElement>
     <packagedElement xmi:type="uml:Enumeration" xmi:id="_qSp30POtEeG_bsiW5N1Utg" name="Subject Element Type">
       <ownedComment xmi:id="_5oQv4POtEeG_bsiW5N1Utg">
-        <body>The collection of elements which may be defined to organize the activities within a study.</body>
+        <body>The collection of elements which may be defined to organize the activities within a study.    The code system to be used is defined by the study sponsor.</body>
       </ownedComment>
     </packagedElement>
     <packagedElement xmi:type="uml:Enumeration" xmi:id="_597hEPOxEeGaaIebpy5xoQ" name="Supplemental Value Type">
       <ownedComment xmi:id="_597hEfOxEeGaaIebpy5xoQ">
-        <body>The collection of data time types which are defined to serve as supplemenatal values.  The supplemental values are usd to provide additional data for a finding, event, or intervention that goes beyond existing domain definitions.</body>
+        <body>The collection of data item types which are defined to serve as supplemental values.  The supplemental values are usd to provide additional data for a finding, event, or intervention that goes beyond existing domain definitions.    The code system to be used is defined by the study sponsor.</body>
       </ownedComment>
     </packagedElement>
     <packagedElement xmi:type="uml:Enumeration" xmi:id="__HpXcPOyEeGaaIebpy5xoQ" name="Data Origin Type">
@@ -681,7 +717,7 @@
     </packagedElement>
     <packagedElement xmi:type="uml:Enumeration" xmi:id="_P7wYYPO0EeGaaIebpy5xoQ" name="Tumor Examination Type">
       <ownedComment xmi:id="_P7wYYfO0EeGaaIebpy5xoQ">
-        <body>A collection of the different measurements, tests or examinations whose findings are reported as tumor finding results.</body>
+        <body>A collection of the different measurements, tests or examinations whose findings are reported as tumor finding results.    The code system to be used is defined by the study sponsor.</body>
       </ownedComment>
     </packagedElement>
     <packagedElement xmi:type="uml:Enumeration" xmi:id="_osfHEPO0EeGaaIebpy5xoQ" name="Visit Type">
@@ -764,7 +800,6 @@
   <term:ValueSetCode xmi:id="_zSHCMb_QEeGhFNoxTbVL8w" conceptName="Serious Event Type" base_EnumerationLiteral="_zSHCML_QEeGhFNoxTbVL8w"/>
   <term:ValueSetCode xmi:id="_2BOT0b_QEeGhFNoxTbVL8w" conceptName="Event Pattern" usageNote="Currently, the item is only used for adverse events." base_EnumerationLiteral="_2BOT0L_QEeGhFNoxTbVL8w"/>
   <term:ValueSetCode xmi:id="_AkuHwL_REeGhFNoxTbVL8w" conceptName="Event Outcome" base_EnumerationLiteral="_AkkWwL_REeGhFNoxTbVL8w"/>
-  <term:ValueSetCode xmi:id="_E-Mpcb_REeGhFNoxTbVL8w" conceptName="Adverse Event Concomitant Treatment" base_EnumerationLiteral="_E-MpcL_REeGhFNoxTbVL8w"/>
   <term:ValueSetCode xmi:id="_fSdncb_REeGhFNoxTbVL8w" conceptName="Toxicity Observation" base_EnumerationLiteral="_fSdncL_REeGhFNoxTbVL8w"/>
   <term:ValueSetCode xmi:id="_XonPQb_TEeGhFNoxTbVL8w" conceptName="Indication" base_EnumerationLiteral="_XonPQL_TEeGhFNoxTbVL8w"/>
   <term:ValueSetCode xmi:id="_fltosb_TEeGhFNoxTbVL8w" conceptName="Intended Regimen" base_EnumerationLiteral="_fltosL_TEeGhFNoxTbVL8w"/>
@@ -998,4 +1033,7 @@
   <term:ValueSetCode xmi:id="_osfHHvO0EeGaaIebpy5xoQ" conceptName="Baseline Value" base_EnumerationLiteral="_osfHFvO0EeGaaIebpy5xoQ"/>
   <term:ValueSetCode xmi:id="_osfHH_O0EeGaaIebpy5xoQ" conceptName="Derived Value" base_EnumerationLiteral="_osfHF_O0EeGaaIebpy5xoQ"/>
   <term:ValueSetCode xmi:id="_osfHIPO0EeGaaIebpy5xoQ" conceptName="Excluded value" base_EnumerationLiteral="_osfHGPO0EeGaaIebpy5xoQ"/>
+  <term:ValueSetCode xmi:id="_1y8V0fa7EeGpiqtJ9hvVRQ" conceptName="Timing Reference" base_EnumerationLiteral="_1y8V0Pa7EeGpiqtJ9hvVRQ">
+    <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_dWKSsaDqEd-dVeaMP0XXQw"/>
+  </term:ValueSetCode>
 </xmi:XMI>
