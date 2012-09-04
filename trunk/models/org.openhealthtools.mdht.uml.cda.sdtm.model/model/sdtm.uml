@@ -1412,12 +1412,6 @@ Study arm information may refer either to the planned arm for a subject or to th
       <ownedComment xmi:id="_zRolAGiEEeG7jNHx5OkAWw">
         <body>The timing reference template makes it possible to indicate the timing of a measurement or activity as an offset from an anchoring event.   Note, in SDTM, the anchoring event is known as a &quot;Time Point Reference'.  The reference, described as &quot;an elapsed time relative to a fixed reference point, such as time of last dose&quot;, is known as a &quot;Planned Time Point.  This structure is captured as a template to facilitate its reuse for different types of data within clinical trial reporting.</body>
       </ownedComment>
-      <ownedRule xmi:id="_h-T7sGiHEeG7jNHx5OkAWw" name="effectiveTimeProperty" constrainedElement="_aPyRImiEEeG7jNHx5OkAWw">
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_r5RwAGiHEeG7jNHx5OkAWw">
-          <language>Analysis</language>
-          <body>The width property of the IVL_TS data type is used.</body>
-        </specification>
-      </ownedRule>
       <generalization xmi:id="_IWO1oWiEEeG7jNHx5OkAWw">
         <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_YiANsDxYEd6JwqSGecoePg"/>
       </generalization>
@@ -1440,16 +1434,15 @@ Study arm information may refer either to the planned arm for a subject or to th
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_WTOMcH2iEeGtPaj3RInoHw"/>
         <redefinedProperty href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_FHobYEocEd6c3qsAxlFHaQ"/>
       </ownedAttribute>
-      <ownedAttribute xmi:id="_aPyRIWiEEeG7jNHx5OkAWw" name="code" visibility="private" aggregation="composite">
-        <ownedComment xmi:id="_L24xkGiHEeG7jNHx5OkAWw">
-          <body>A text description of when the measurement should be taken.  This may be captured as an elapsed duration with respect to the anchor time point. [SDTM: VSELTM], [SEND: LBTPT, EGTPT]</body>
+      <ownedAttribute xmi:id="_lMs8UPa7EeGpiqtJ9hvVRQ" name="code" visibility="private" isUnique="false" isReadOnly="true" aggregation="composite">
+        <ownedComment xmi:id="_saMdwPa7EeGpiqtJ9hvVRQ">
+          <body>A fixed code value to indicate the observation contains timing refence information.</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
-        <redefinedProperty href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_HUTHQEocEd6c3qsAxlFHaQ"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_aPyRImiEEeG7jNHx5OkAWw" name="effectiveTime" visibility="private" aggregation="composite">
         <ownedComment xmi:id="_eAgpYGiHEeG7jNHx5OkAWw">
-          <body>The planned elapsed time - a duration - at which the event or measurement is to take place with reference to the anchoring time point.  [SDTM: LBELTM, VSELTM], [SEND: EXELTM, BGELM, CLELTM, VSELTM, EGELTM]</body>
+          <body>The planned elapsed time - a duration - at which the event or measurement is to take place with reference to the anchoring time point.  The width property of the IVL_TS data type is used. [SDTM: LBELTM, VSELTM], [SEND: EXELTM, BGELM, CLELTM, VSELTM, EGELTM]</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_QYeW4D5-Ed6cla2oXsPtlA"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_aPyRI2iEEeG7jNHx5OkAWw" value="1"/>
@@ -1458,6 +1451,14 @@ Study arm information may refer either to the planned arm for a subject or to th
       </ownedAttribute>
       <ownedAttribute xmi:id="_RqZy4GiIEeG7jNHx5OkAWw" name="anchorAssociation" type="_CH_08GiIEeG7jNHx5OkAWw" association="_RqZy4miIEeG7jNHx5OkAWw">
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_RqZy4WiIEeG7jNHx5OkAWw"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_ng4QUPa5EeG8Q_OUVy0V8w" name="text" visibility="private" aggregation="composite">
+        <ownedComment xmi:id="_5A2HIPa5EeG8Q_OUVy0V8w">
+          <body>A text description of the time for a measurement to be taken.  It is expressed as an elapsed time relative to the fixed reference point defined within the Anchor Time Point observation. [SDTM: XTPT, EGTPT, LBTPT, QSTPT, VSTPT, MBTPT, MSTPT, PCTPT], [SEND: EXPTP, LBTPT. PCTPT, VSTPT, EGTPT, [Study Data Tabulation Model: -TPT]</body>
+        </ownedComment>
+        <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_CowXkDxaEd6JwqSGecoePg"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ng4QUfa5EeG8Q_OUVy0V8w" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ng4QUva5EeG8Q_OUVy0V8w"/>
       </ownedAttribute>
       <nestedClassifier xmi:type="uml:Class" xmi:id="_CH_08GiIEeG7jNHx5OkAWw" name="AnchorAssociation">
         <ownedComment xmi:id="_ss3dMGiUEeG7jNHx5OkAWw">
@@ -12075,7 +12076,6 @@ More specifically: The periodic time interval (PIVL_TS) type is used to record r
     <ownedEnd xmi:id="_x4WL82iGEeG7jNHx5OkAWw" type="_pxvVsGSrEeGaWrlBtEAvSQ" association="_x4WL8miGEeG7jNHx5OkAWw"/>
   </uml:Association>
   <CDA:PropertyValidation xmi:id="_8iUbUGiGEeG7jNHx5OkAWw" base_Property="_aPyRIGiEEeG7jNHx5OkAWw"/>
-  <CDA:PropertyValidation xmi:id="__rAqkGiGEeG7jNHx5OkAWw" base_Property="_aPyRIWiEEeG7jNHx5OkAWw"/>
   <CDA:PropertyValidation xmi:id="_M1OCEGiHEeG7jNHx5OkAWw" severity="INFO" base_Property="_aPyRImiEEeG7jNHx5OkAWw"/>
   <CDA:PropertyValidation xmi:id="_2Em7kGiHEeG7jNHx5OkAWw" severity="INFO" base_Property="_aQO9EGiEEeG7jNHx5OkAWw"/>
   <CDA:PropertyValidation xmi:id="_2u3ZgGiHEeG7jNHx5OkAWw" base_Property="_aQO9E2iEEeG7jNHx5OkAWw"/>
@@ -12283,9 +12283,6 @@ More specifically: The periodic time interval (PIVL_TS) type is used to record r
   </CDA:CodeSystemConstraint>
   <CDA:CodeSystemConstraint xmi:id="_WxoFwIjREeGwjb3wu_tBLA" base_Property="_MdU98X5pEeGbfrTsVlSE3Q">
     <reference href="sdtm-vocab.uml#_z4E2wvOpEeG_bsiW5N1Utg"/>
-  </CDA:CodeSystemConstraint>
-  <CDA:CodeSystemConstraint xmi:id="_a7e3EIjREeGwjb3wu_tBLA" code="TRtbd" base_Property="_aPyRIWiEEeG7jNHx5OkAWw">
-    <reference href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_dWKSsaDqEd-dVeaMP0XXQw"/>
   </CDA:CodeSystemConstraint>
   <CDA:PropertyValidation xmi:id="_qJD0gIjREeGwjb3wu_tBLA" base_Property="_DCRYgYjMEeGwjb3wu_tBLA"/>
   <CDA:EntryRelationship xmi:id="_LAmc0IjTEeGwjb3wu_tBLA" base_Association="_I3R_4ojTEeGwjb3wu_tBLA" typeCode="COMP"/>
@@ -13969,4 +13966,9 @@ More specifically: The periodic time interval (PIVL_TS) type is used to record r
   <CDA:ValueSetConstraint xmi:id="_LfB48PO1EeGaaIebpy5xoQ" base_Property="_07kOQLo8EeGWIctMxnxaiQ">
     <reference href="sdtm-vocab.uml#_5FsEkfN8EeGhE7rXK2gWNQ"/>
   </CDA:ValueSetConstraint>
+  <CDA:PropertyValidation xmi:id="_pf7-APa5EeG8Q_OUVy0V8w" severity="INFO" base_Property="_ng4QUPa5EeG8Q_OUVy0V8w"/>
+  <CDA:PropertyValidation xmi:id="_mofk4Pa7EeGpiqtJ9hvVRQ" base_Property="_lMs8UPa7EeGpiqtJ9hvVRQ"/>
+  <CDA:CodeSystemConstraint xmi:id="_s6xbQPa7EeGpiqtJ9hvVRQ" code="TRtbd" base_Property="_lMs8UPa7EeGpiqtJ9hvVRQ">
+    <reference href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_dWKSsaDqEd-dVeaMP0XXQw"/>
+  </CDA:CodeSystemConstraint>
 </xmi:XMI>
