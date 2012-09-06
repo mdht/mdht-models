@@ -3,7 +3,7 @@
   <uml:Package xmi:id="_esc8MLSgEeGhbsXY607ygg" name="vsbr-vocab">
     <packagedElement xmi:type="uml:Enumeration" xmi:id="_pBguULutEeGkEvM80TFRNQ" name="Birth Attendant Titles">
       <ownedComment xmi:id="_d3imYMHmEeGrHfBMjd7c_Q">
-        <body>A list of different titles used by birth attendants to denote professional role</body>
+        <body>A list of different titles used by birth attendants to denote professional role.  Note, the codes used are based on the current worksheet, and may be replaced with code values from a widely used code system.</body>
       </ownedComment>
       <ownedLiteral xmi:id="_u9s_8LutEeGkEvM80TFRNQ" name="MD"/>
       <ownedLiteral xmi:id="_2C4S4LutEeGkEvM80TFRNQ" name="DO"/>
@@ -13,17 +13,26 @@
       <ownedLiteral xmi:id="_Dgr70LuuEeGkEvM80TFRNQ" name="OTH"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Enumeration" xmi:id="_FX6jMLuuEeGkEvM80TFRNQ" name="Fetal Presentations">
+      <ownedComment xmi:id="_Fjs9QMLREeGrHfBMjd7c_Q">
+        <body>A list of the different ways a fetus may present at the point of delivery.  Note, the codes used are imaginary and will be replaced with code values from a widely used code system.</body>
+      </ownedComment>
       <ownedLiteral xmi:id="_HrqHcLuuEeGkEvM80TFRNQ" name="C"/>
       <ownedLiteral xmi:id="_JhQ-MLuuEeGkEvM80TFRNQ" name="B"/>
       <ownedLiteral xmi:id="_Keh3sLuuEeGkEvM80TFRNQ" name="OTH"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Enumeration" xmi:id="_OcUi8LuuEeGkEvM80TFRNQ" name="Delivery Routes">
+      <ownedComment xmi:id="_ydMusMRKEeGoQ8pWsHTi4g">
+        <body>A list of delivery routes that are relevant.  Note, the codes used are imaginary and will be replaced with code values from a widely used code system.</body>
+      </ownedComment>
       <ownedLiteral xmi:id="_QgTM4LuuEeGkEvM80TFRNQ" name="VS"/>
       <ownedLiteral xmi:id="_UZnn0LuuEeGkEvM80TFRNQ" name="VF"/>
       <ownedLiteral xmi:id="_V7o0MLuuEeGkEvM80TFRNQ" name="CE"/>
       <ownedLiteral xmi:id="_V-6xsLuuEeGkEvM80TFRNQ" name="VV"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Enumeration" xmi:id="_5RyFkLuyEeGkEvM80TFRNQ" name="Place where Birth/Delivery Occurred">
+      <ownedComment xmi:id="_MedmQMRNEeGoQ8pWsHTi4g">
+        <body>A list of different types of place or situations in which the birth or delivery occurred.  Note, the codes used are imaginary and will be replaced with code values from a widely used code system.</body>
+      </ownedComment>
       <ownedLiteral xmi:id="_EwSJMLuzEeGkEvM80TFRNQ" name="HOSP"/>
       <ownedLiteral xmi:id="_GmjuULuzEeGkEvM80TFRNQ" name="FBC"/>
       <ownedLiteral xmi:id="_I4pswLuzEeGkEvM80TFRNQ" name="HB"/>
@@ -31,52 +40,55 @@
       <ownedLiteral xmi:id="_Mrvj4LuzEeGkEvM80TFRNQ" name="OTH"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Enumeration" xmi:id="_QY5LELuzEeGkEvM80TFRNQ" name="Fetal Death Time Points">
+      <ownedComment xmi:id="_ugGVEMRMEeGoQ8pWsHTi4g">
+        <body>A list of time points during the delivery process at which the fetal death is thought to have occured.  Note, the codes used are imaginary and will be replaced with code values from a widely used code system.</body>
+      </ownedComment>
       <ownedLiteral xmi:id="_YQojYLuzEeGkEvM80TFRNQ" name="FAwoL"/>
       <ownedLiteral xmi:id="_bgejgLuzEeGkEvM80TFRNQ" name="FAwL"/>
       <ownedLiteral xmi:id="_e2HCkLuzEeGkEvM80TFRNQ" name="DL"/>
       <ownedLiteral xmi:id="_hbskwLuzEeGkEvM80TFRNQ" name="UNK"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Enumeration" xmi:id="_Th118LyYEeGUNfs_q_VvNQ" name="Implementation Guide Templates">
-      <ownedLiteral xmi:id="_YmgpsLyYEeGUNfs_q_VvNQ" name="VSReporting.1"/>
-      <ownedLiteral xmi:id="_e-XjoLyYEeGUNfs_q_VvNQ" name="VSReporting.2"/>
-      <ownedLiteral xmi:id="_nJl4oLyYEeGUNfs_q_VvNQ" name="VSReporting.3"/>
-      <ownedLiteral xmi:id="_zJBfELyYEeGUNfs_q_VvNQ" name="VSReporting.4"/>
-      <ownedLiteral xmi:id="_2hsrELyYEeGUNfs_q_VvNQ" name="VSReporting.5"/>
-      <ownedLiteral xmi:id="_9qKikLyYEeGUNfs_q_VvNQ" name="VSReporting.6"/>
-      <ownedLiteral xmi:id="_-4_GILyYEeGUNfs_q_VvNQ" name="VSReporting.7"/>
-      <ownedLiteral xmi:id="_dQQkAMEiEeGP5fduNvI1Qw" name="VSReporting.8"/>
-      <ownedLiteral xmi:id="_mmO04MEiEeGP5fduNvI1Qw" name="VSReporting.9"/>
-      <ownedLiteral xmi:id="_pE-IMMEiEeGP5fduNvI1Qw" name="VSReporting.10"/>
-      <ownedLiteral xmi:id="_zyEkEMEiEeGP5fduNvI1Qw" name="VSReporting.11"/>
-      <ownedLiteral xmi:id="_2_FSoMEiEeGP5fduNvI1Qw" name="VSReporting.12"/>
-      <ownedLiteral xmi:id="_3uZPsMEiEeGP5fduNvI1Qw" name="VSReporting.13"/>
-      <ownedLiteral xmi:id="_4dtMwMEiEeGP5fduNvI1Qw" name="VSReporting.14"/>
-      <ownedLiteral xmi:id="_5JvMUMEiEeGP5fduNvI1Qw" name="VSReporting.15"/>
-      <ownedLiteral xmi:id="_56sIIMEiEeGP5fduNvI1Qw" name="VSReporting.16"/>
-      <ownedLiteral xmi:id="_63YZ4MEiEeGP5fduNvI1Qw" name="VSReporting.17"/>
-      <ownedLiteral xmi:id="_7oyBoMEiEeGP5fduNvI1Qw" name="VSReporting.18"/>
-      <ownedLiteral xmi:id="_8csx4MEiEeGP5fduNvI1Qw" name="VSReporting.19"/>
-      <ownedLiteral xmi:id="_-NLRAMEiEeGP5fduNvI1Qw" name="VSReporting.20"/>
-      <ownedLiteral xmi:id="__HVzMMEiEeGP5fduNvI1Qw" name="VSReporting.21"/>
-      <ownedLiteral xmi:id="_ACQjUMEjEeGP5fduNvI1Qw" name="VSReporting.22"/>
-      <ownedLiteral xmi:id="_BILpkMEjEeGP5fduNvI1Qw" name="VSReporting.23"/>
-      <ownedLiteral xmi:id="_CAH-MMEjEeGP5fduNvI1Qw" name="VSReporting.24"/>
-      <ownedLiteral xmi:id="_Cpx_MMEjEeGP5fduNvI1Qw" name="VSReporting.25"/>
-      <ownedLiteral xmi:id="_DbBO4MEjEeGP5fduNvI1Qw" name="VSReporting.26"/>
-      <ownedLiteral xmi:id="_EGw6kMEjEeGP5fduNvI1Qw" name="VSReporting.27"/>
-      <ownedLiteral xmi:id="_E8dzgMEjEeGP5fduNvI1Qw" name="VSReporting.28"/>
-      <ownedLiteral xmi:id="_FozVEMEjEeGP5fduNvI1Qw" name="VSReporting.29"/>
-      <ownedLiteral xmi:id="_GQYScMEjEeGP5fduNvI1Qw" name="VSReporting.30"/>
-      <ownedLiteral xmi:id="_ILjlsMEjEeGP5fduNvI1Qw" name="VSReporting.31"/>
-      <ownedLiteral xmi:id="_I76EkMEjEeGP5fduNvI1Qw" name="VSReporting.32"/>
-      <ownedLiteral xmi:id="_JnpwQMEjEeGP5fduNvI1Qw" name="VSReporting.33"/>
-      <ownedLiteral xmi:id="_KYv2AMEjEeGP5fduNvI1Qw" name="VSReporting.34"/>
-      <ownedLiteral xmi:id="_LIWuAMEjEeGP5fduNvI1Qw" name="VSReporting.35"/>
-      <ownedLiteral xmi:id="_L-Dm8MEjEeGP5fduNvI1Qw" name="VSReporting.36"/>
+      <ownedComment xmi:id="_IN5SoMLREeGrHfBMjd7c_Q">
+        <body>A list of the templates that are used within the implementation guide.   Note, the codes used are imaginary and are expected to be replaced with code values from a widely used code system.</body>
+      </ownedComment>
+      <ownedLiteral xmi:id="_dQQkAMEiEeGP5fduNvI1Qw" name="ACN"/>
+      <ownedLiteral xmi:id="_mmO04MEiEeGP5fduNvI1Qw" name="APS"/>
+      <ownedLiteral xmi:id="_2_FSoMEiEeGP5fduNvI1Qw" name="BO"/>
+      <ownedLiteral xmi:id="_4dtMwMEiEeGP5fduNvI1Qw" name="BWD"/>
+      <ownedLiteral xmi:id="_5JvMUMEiEeGP5fduNvI1Qw" name="CLD"/>
+      <ownedLiteral xmi:id="_56sIIMEiEeGP5fduNvI1Qw" name="COAN"/>
+      <ownedLiteral xmi:id="_63YZ4MEiEeGP5fduNvI1Qw" name="DLLB"/>
+      <ownedLiteral xmi:id="_7oyBoMEiEeGP5fduNvI1Qw" name="EG"/>
+      <ownedLiteral xmi:id="_8csx4MEiEeGP5fduNvI1Qw" name="FDO"/>
+      <ownedLiteral xmi:id="_-NLRAMEiEeGP5fduNvI1Qw" name="FP"/>
+      <ownedLiteral xmi:id="__HVzMMEiEeGP5fduNvI1Qw" name="HGT"/>
+      <ownedLiteral xmi:id="_ACQjUMEjEeGP5fduNvI1Qw" name="LDI"/>
+      <ownedLiteral xmi:id="_BILpkMEjEeGP5fduNvI1Qw" name="LO"/>
+      <ownedLiteral xmi:id="_CAH-MMEjEeGP5fduNvI1Qw" name="LMPD"/>
+      <ownedLiteral xmi:id="_Cpx_MMEjEeGP5fduNvI1Qw" name="MM"/>
+      <ownedLiteral xmi:id="_DbBO4MEjEeGP5fduNvI1Qw" name="NBSL"/>
+      <ownedLiteral xmi:id="_EGw6kMEjEeGP5fduNvI1Qw" name="NIBA"/>
+      <ownedLiteral xmi:id="_E8dzgMEjEeGP5fduNvI1Qw" name="NLD"/>
+      <ownedLiteral xmi:id="_FozVEMEjEeGP5fduNvI1Qw" name="OP"/>
+      <ownedLiteral xmi:id="_GQYScMEjEeGP5fduNvI1Qw" name="OPO"/>
+      <ownedLiteral xmi:id="_ILjlsMEjEeGP5fduNvI1Qw" name="PL"/>
+      <ownedLiteral xmi:id="_I76EkMEjEeGP5fduNvI1Qw" name="PNC"/>
+      <ownedLiteral xmi:id="_JnpwQMEjEeGP5fduNvI1Qw" name="PPBW"/>
+      <ownedLiteral xmi:id="_KYv2AMEjEeGP5fduNvI1Qw" name="RF"/>
+      <ownedLiteral xmi:id="_LIWuAMEjEeGP5fduNvI1Qw" name="RMD"/>
+      <ownedLiteral xmi:id="_L-Dm8MEjEeGP5fduNvI1Qw" name="WGT"/>
+      <ownedLiteral xmi:id="_HDJdINZhEeGsoMExnOQfKQ" name="AP"/>
+      <ownedLiteral xmi:id="_x5P1wNZhEeGsoMExnOQfKQ" name="HBP"/>
+      <ownedLiteral xmi:id="_zz_EINZhEeGsoMExnOQfKQ" name="IB"/>
+      <ownedLiteral xmi:id="_1XgsYNZhEeGsoMExnOQfKQ" name="IL"/>
+      <ownedLiteral xmi:id="_2b8k4NZhEeGsoMExnOQfKQ" name="INT"/>
+      <ownedLiteral xmi:id="_4IjQoNZhEeGsoMExnOQfKQ" name="IP"/>
+      <ownedLiteral xmi:id="_FX0HQNZiEeGsoMExnOQfKQ" name="MT"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Enumeration" xmi:id="_WfZfULywEeGUNfs_q_VvNQ" name="Delivery Payment Source">
       <ownedComment xmi:id="_7bArUMHmEeGrHfBMjd7c_Q">
-        <body>A list of different types of payment that may be used to support the expenese of labor and delivery.</body>
+        <body>A list of different types of payment that may be used to support the expense of labor and delivery.  Note, the codes used are based on the current worksheet, and may be replaced with code values from a widely used code system.</body>
       </ownedComment>
       <ownedLiteral xmi:id="_eUBSMLywEeGUNfs_q_VvNQ" name="PI"/>
       <ownedLiteral xmi:id="_gP6XILywEeGUNfs_q_VvNQ" name="MD"/>
@@ -138,12 +150,18 @@
     </packagedElement>
     <packagedElement xmi:type="uml:EnumerationLiteral" xmi:id="_XrLX8L8LEeGJd49YTXcCkg" name="TRAN"/>
     <packagedElement xmi:type="uml:Enumeration" xmi:id="_m4J2QL78EeGdruZFgBKbQw" name="Labor Onsets">
+      <ownedComment xmi:id="_CTzJEMRNEeGoQ8pWsHTi4g">
+        <body>A list of possible onsets of labor.  Note, the codes used are imaginary and will be replaced with code values from a widely used code system.</body>
+      </ownedComment>
       <ownedLiteral xmi:id="_rpcbAL78EeGdruZFgBKbQw" name="PR"/>
       <ownedLiteral xmi:id="_z1kH4L78EeGdruZFgBKbQw" name="PPL"/>
       <ownedLiteral xmi:id="_2Eig4L78EeGdruZFgBKbQw" name="PLL"/>
       <ownedLiteral xmi:id="_3yepYL78EeGdruZFgBKbQw" name="NONE"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Enumeration" xmi:id="_94as4L78EeGdruZFgBKbQw" name="Labor and Delivery Characteristics">
+      <ownedComment xmi:id="_BOBz0MRNEeGoQ8pWsHTi4g">
+        <body>A list of relevant characteristics that can affect the labor and delivery process.  Note, the codes used are imaginary and will be replaced with code values from a widely used code system.</body>
+      </ownedComment>
       <ownedLiteral xmi:id="_CZx_QL79EeGdruZFgBKbQw" name="IL"/>
       <ownedLiteral xmi:id="_GB3gQL79EeGdruZFgBKbQw" name="AL"/>
       <ownedLiteral xmi:id="_H4lxUL79EeGdruZFgBKbQw" name="NVP"/>
@@ -157,7 +175,7 @@
     </packagedElement>
     <packagedElement xmi:type="uml:Enumeration" xmi:id="_Ut8x0L8LEeGJd49YTXcCkg" name="Maternal Morbidities">
       <ownedComment xmi:id="_NlJVQMCOEeGP5fduNvI1Qw">
-        <body>A list of maternal morbidities that may be experienced by the mother during labor and delivery.</body>
+        <body>A list of maternal morbidities that may be experienced by the mother during labor and delivery.  Note, the codes used are imaginary and will be replaced with code values from a widely used code system.</body>
       </ownedComment>
       <ownedLiteral xmi:id="_bDO44L8LEeGJd49YTXcCkg" name="PL"/>
       <ownedLiteral xmi:id="_fAyTkL8LEeGJd49YTXcCkg" name="RU"/>
@@ -165,6 +183,7 @@
       <ownedLiteral xmi:id="_kevKAL8LEeGJd49YTXcCkg" name="ICU"/>
       <ownedLiteral xmi:id="_nDcicL8LEeGJd49YTXcCkg" name="OR"/>
       <ownedLiteral xmi:id="_pI9dcL8LEeGJd49YTXcCkg" name="NONE"/>
+      <ownedLiteral xmi:id="_ga5SUNXOEeGb1t7PnGJ-bA" name="MT"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Enumeration" xmi:id="_ROHnEMCOEeGP5fduNvI1Qw" name="Abnormal Conditions of the Newborn">
       <ownedComment xmi:id="_h6wjgMCOEeGP5fduNvI1Qw">
@@ -195,11 +214,30 @@
       <ownedLiteral xmi:id="_Hw8FgMCPEeGP5fduNvI1Qw" name="DSP"/>
       <ownedLiteral xmi:id="_JQdXgMCPEeGP5fduNvI1Qw" name="HY"/>
       <ownedLiteral xmi:id="_PnpjEMCPEeGP5fduNvI1Qw" name="None"/>
+      <ownedLiteral xmi:id="_GmGaYNXVEeGb1t7PnGJ-bA" name="DS"/>
+      <ownedLiteral xmi:id="_SQPGQNXVEeGb1t7PnGJ-bA" name="SCD"/>
+      <ownedLiteral xmi:id="_TVHqsNXVEeGb1t7PnGJ-bA" name="SCDC"/>
+      <ownedLiteral xmi:id="_ZgHNUNXVEeGb1t7PnGJ-bA" name="SCDP"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Enumeration" xmi:id="_tlqFEMHmEeGrHfBMjd7c_Q" name="Act Codes">
       <ownedComment xmi:id="_2GKtkMHmEeGrHfBMjd7c_Q">
         <body>A list of the different act codes -most are observations - which are used within the implementation guide.</body>
       </ownedComment>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_0jVIUNZfEeGsoMExnOQfKQ" name="Implementation Guide Sections">
+      <ownedComment xmi:id="_nep7oNZgEeGsoMExnOQfKQ">
+        <body>A list of the sections that have been created for the implementation guide.  Note, the codes used are imaginary and are expected to be replaced with code values from a widely used code system.</body>
+      </ownedComment>
+      <ownedLiteral xmi:id="_3zAwYNZfEeGsoMExnOQfKQ" name="ATS"/>
+      <ownedLiteral xmi:id="_8538gNZfEeGsoMExnOQfKQ" name="F"/>
+      <ownedLiteral xmi:id="_-G8MkNZfEeGsoMExnOQfKQ" name="HI"/>
+      <ownedLiteral xmi:id="__nMeYNZfEeGsoMExnOQfKQ" name="LDO"/>
+      <ownedLiteral xmi:id="_B0YHoNZgEeGsoMExnOQfKQ" name="LDP"/>
+      <ownedLiteral xmi:id="_D7BEANZgEeGsoMExnOQfKQ" name="LD"/>
+      <ownedLiteral xmi:id="_FptacNZgEeGsoMExnOQfKQ" name="ND"/>
+      <ownedLiteral xmi:id="_HHb8sNZgEeGsoMExnOQfKQ" name="PH"/>
+      <ownedLiteral xmi:id="_I3dI0NZgEeGsoMExnOQfKQ" name="VSM"/>
+      <ownedLiteral xmi:id="_KfAVcNZgEeGsoMExnOQfKQ" name="VSN"/>
     </packagedElement>
     <profileApplication xmi:id="_esc8MbSgEeGhbsXY607ygg">
       <eAnnotations xmi:id="_esc8MrSgEeGhbsXY607ygg" source="http://www.eclipse.org/uml2/2.0.0/UML">
@@ -236,13 +274,6 @@
   <term:ValueSetCode xmi:id="_e2HCkbuzEeGkEvM80TFRNQ" conceptName="Died during labor after first assessment" base_EnumerationLiteral="_e2HCkLuzEeGkEvM80TFRNQ"/>
   <term:ValueSetCode xmi:id="_hbskwbuzEeGkEvM80TFRNQ" conceptName="Unknown time of fetal death" base_EnumerationLiteral="_hbskwLuzEeGkEvM80TFRNQ"/>
   <term:ValueSetVersion xmi:id="_Th2dALyYEeGUNfs_q_VvNQ" base_Enumeration="_Th118LyYEeGUNfs_q_VvNQ"/>
-  <term:ValueSetCode xmi:id="_YmhQwLyYEeGUNfs_q_VvNQ" conceptName="Reporting Birth Information from a clinical setting to vital records" base_EnumerationLiteral="_YmgpsLyYEeGUNfs_q_VvNQ"/>
-  <term:ValueSetCode xmi:id="_e-YKsLyYEeGUNfs_q_VvNQ" conceptName="Reporting Fetal Death Information from a clinical setting to vital records" base_EnumerationLiteral="_e-XjoLyYEeGUNfs_q_VvNQ"/>
-  <term:ValueSetCode xmi:id="_nJmfsLyYEeGUNfs_q_VvNQ" conceptName="Birth Reporting - Prenatal Experience Section" base_EnumerationLiteral="_nJl4oLyYEeGUNfs_q_VvNQ"/>
-  <term:ValueSetCode xmi:id="_zJBfEbyYEeGUNfs_q_VvNQ" conceptName="Fetal Death Reporting - Prenatal Experience Section" base_EnumerationLiteral="_zJBfELyYEeGUNfs_q_VvNQ"/>
-  <term:ValueSetCode xmi:id="_2htSILyYEeGUNfs_q_VvNQ" conceptName="Labor and Delivery Section" base_EnumerationLiteral="_2hsrELyYEeGUNfs_q_VvNQ"/>
-  <term:ValueSetCode xmi:id="_9qLJoLyYEeGUNfs_q_VvNQ" conceptName="Newborn Section" base_EnumerationLiteral="_9qKikLyYEeGUNfs_q_VvNQ"/>
-  <term:ValueSetCode xmi:id="_-4_tMLyYEeGUNfs_q_VvNQ" conceptName="Fetus Section" base_EnumerationLiteral="_-4_GILyYEeGUNfs_q_VvNQ"/>
   <term:ValueSetVersion xmi:id="_WfZfUbywEeGUNfs_q_VvNQ" base_Enumeration="_WfZfULywEeGUNfs_q_VvNQ"/>
   <term:ValueSetCode xmi:id="_eUB5QLywEeGUNfs_q_VvNQ" conceptName="Private Insurance" base_EnumerationLiteral="_eUBSMLywEeGUNfs_q_VvNQ"/>
   <term:ValueSetCode xmi:id="_gP6-MLywEeGUNfs_q_VvNQ" conceptName="Medicaid" base_EnumerationLiteral="_gP6XILywEeGUNfs_q_VvNQ"/>
@@ -302,7 +333,7 @@
   <term:ValueSetCode xmi:id="_ZUiDwb79EeGdruZFgBKbQw" conceptName="Anesthesia" base_EnumerationLiteral="_ZUiDwL79EeGdruZFgBKbQw"/>
   <term:ValueSetCode xmi:id="_beARsb79EeGdruZFgBKbQw" conceptName="None of the cited characteristics" base_EnumerationLiteral="_beARsL79EeGdruZFgBKbQw"/>
   <term:ValueSetVersion xmi:id="_Uv_ZML8LEeGJd49YTXcCkg" base_Enumeration="_Ut8x0L8LEeGJd49YTXcCkg"/>
-  <term:ValueSetCode xmi:id="_bDPf8L8LEeGJd49YTXcCkg" conceptName="Perinea Laceration" base_EnumerationLiteral="_bDO44L8LEeGJd49YTXcCkg"/>
+  <term:ValueSetCode xmi:id="_bDPf8L8LEeGJd49YTXcCkg" conceptName="Perineal Laceration" base_EnumerationLiteral="_bDO44L8LEeGJd49YTXcCkg"/>
   <term:ValueSetCode xmi:id="_fAy6oL8LEeGJd49YTXcCkg" conceptName="Ruptured Uterus" base_EnumerationLiteral="_fAyTkL8LEeGJd49YTXcCkg"/>
   <term:ValueSetCode xmi:id="_g-vOAL8LEeGJd49YTXcCkg" conceptName="Unplanned Hysterectomy" base_EnumerationLiteral="_g-um8L8LEeGJd49YTXcCkg"/>
   <term:ValueSetCode xmi:id="_kevxEL8LEeGJd49YTXcCkg" conceptName="Admission to Intensive Care" base_EnumerationLiteral="_kevKAL8LEeGJd49YTXcCkg"/>
@@ -333,19 +364,16 @@
   <term:ValueSetCode xmi:id="_Qzw0EcCTEeGP5fduNvI1Qw" conceptName="None of the Cited Abnormal Conditions" base_EnumerationLiteral="_Qzw0EMCTEeGP5fduNvI1Qw"/>
   <term:ValueSetCode xmi:id="_dQQkAcEiEeGP5fduNvI1Qw" conceptName="Abnormal Conditions of the Newborn" base_EnumerationLiteral="_dQQkAMEiEeGP5fduNvI1Qw"/>
   <term:ValueSetCode xmi:id="_mmO04cEiEeGP5fduNvI1Qw" conceptName="Apgar Score" base_EnumerationLiteral="_mmO04MEiEeGP5fduNvI1Qw"/>
-  <term:ValueSetCode xmi:id="_pE-IMcEiEeGP5fduNvI1Qw" conceptName="Attempted Forceps Delivery" base_EnumerationLiteral="_pE-IMMEiEeGP5fduNvI1Qw"/>
-  <term:ValueSetCode xmi:id="_zyEkEcEiEeGP5fduNvI1Qw" conceptName="Attempted Vacuum Extraction" base_EnumerationLiteral="_zyEkEMEiEeGP5fduNvI1Qw"/>
   <term:ValueSetCode xmi:id="_2_FSocEiEeGP5fduNvI1Qw" conceptName="Birth Order" base_EnumerationLiteral="_2_FSoMEiEeGP5fduNvI1Qw"/>
-  <term:ValueSetCode xmi:id="_3uZPscEiEeGP5fduNvI1Qw" conceptName="Birth Reporting – Infections Present" base_EnumerationLiteral="_3uZPsMEiEeGP5fduNvI1Qw"/>
   <term:ValueSetCode xmi:id="_4dtMwcEiEeGP5fduNvI1Qw" conceptName="Body weight at delivery" base_EnumerationLiteral="_4dtMwMEiEeGP5fduNvI1Qw"/>
   <term:ValueSetCode xmi:id="_5JvMUcEiEeGP5fduNvI1Qw" conceptName="Characteristics of Labor and Delivery" base_EnumerationLiteral="_5JvMUMEiEeGP5fduNvI1Qw"/>
   <term:ValueSetCode xmi:id="_56sIIcEiEeGP5fduNvI1Qw" conceptName="Congenital Anomalies of the Newborn" base_EnumerationLiteral="_56sIIMEiEeGP5fduNvI1Qw"/>
   <term:ValueSetCode xmi:id="_63YZ4cEiEeGP5fduNvI1Qw" conceptName="Date of Last Live Birth" base_EnumerationLiteral="_63YZ4MEiEeGP5fduNvI1Qw"/>
   <term:ValueSetCode xmi:id="_7oyBocEiEeGP5fduNvI1Qw" conceptName="Estimate of Gestation" base_EnumerationLiteral="_7oyBoMEiEeGP5fduNvI1Qw"/>
-  <term:ValueSetCode xmi:id="_8csx4cEiEeGP5fduNvI1Qw" conceptName="Fetal Death Reporting – Infections Present" base_EnumerationLiteral="_8csx4MEiEeGP5fduNvI1Qw"/>
+  <term:ValueSetCode xmi:id="_8csx4cEiEeGP5fduNvI1Qw" conceptName="Fetal Death Occurance" base_EnumerationLiteral="_8csx4MEiEeGP5fduNvI1Qw"/>
   <term:ValueSetCode xmi:id="_-NLRAcEiEeGP5fduNvI1Qw" conceptName="Fetal Presentations" base_EnumerationLiteral="_-NLRAMEiEeGP5fduNvI1Qw"/>
   <term:ValueSetCode xmi:id="__HVzMcEiEeGP5fduNvI1Qw" conceptName="Height" base_EnumerationLiteral="__HVzMMEiEeGP5fduNvI1Qw"/>
-  <term:ValueSetCode xmi:id="_ACQjUcEjEeGP5fduNvI1Qw" conceptName="Labor &amp; Delivery Information" base_EnumerationLiteral="_ACQjUMEjEeGP5fduNvI1Qw"/>
+  <term:ValueSetCode xmi:id="_ACQjUcEjEeGP5fduNvI1Qw" conceptName="Labor and Delivery Information" base_EnumerationLiteral="_ACQjUMEjEeGP5fduNvI1Qw"/>
   <term:ValueSetCode xmi:id="_BILpkcEjEeGP5fduNvI1Qw" conceptName="Labor Onsets" base_EnumerationLiteral="_BILpkMEjEeGP5fduNvI1Qw"/>
   <term:ValueSetCode xmi:id="_CAH-McEjEeGP5fduNvI1Qw" conceptName="Last Menstrual Period Date" base_EnumerationLiteral="_CAH-MMEjEeGP5fduNvI1Qw"/>
   <term:ValueSetCode xmi:id="_Cpx_McEjEeGP5fduNvI1Qw" conceptName="Maternal Morbidities" base_EnumerationLiteral="_Cpx_MMEjEeGP5fduNvI1Qw"/>
@@ -355,10 +383,33 @@
   <term:ValueSetCode xmi:id="_FozVEcEjEeGP5fduNvI1Qw" conceptName="Obstetric Procedures" base_EnumerationLiteral="_FozVEMEjEeGP5fduNvI1Qw"/>
   <term:ValueSetCode xmi:id="_GQYSccEjEeGP5fduNvI1Qw" conceptName="Other pregnancy outcomes" base_EnumerationLiteral="_GQYScMEjEeGP5fduNvI1Qw"/>
   <term:ValueSetCode xmi:id="_ILjlscEjEeGP5fduNvI1Qw" conceptName="Plurality" base_EnumerationLiteral="_ILjlsMEjEeGP5fduNvI1Qw"/>
-  <term:ValueSetCode xmi:id="_I76EkcEjEeGP5fduNvI1Qw" conceptName="Pre-Natal Care" base_EnumerationLiteral="_I76EkMEjEeGP5fduNvI1Qw"/>
-  <term:ValueSetCode xmi:id="_JnpwQcEjEeGP5fduNvI1Qw" conceptName="Pre-pregnancy Body Weight" base_EnumerationLiteral="_JnpwQMEjEeGP5fduNvI1Qw"/>
+  <term:ValueSetCode xmi:id="_I76EkcEjEeGP5fduNvI1Qw" conceptName="PreNatal Care" base_EnumerationLiteral="_I76EkMEjEeGP5fduNvI1Qw"/>
+  <term:ValueSetCode xmi:id="_JnpwQcEjEeGP5fduNvI1Qw" conceptName="PrePregnancy Body Weight" base_EnumerationLiteral="_JnpwQMEjEeGP5fduNvI1Qw"/>
   <term:ValueSetCode xmi:id="_KYv2AcEjEeGP5fduNvI1Qw" conceptName="Risk Factors" base_EnumerationLiteral="_KYv2AMEjEeGP5fduNvI1Qw"/>
   <term:ValueSetCode xmi:id="_LIWuAcEjEeGP5fduNvI1Qw" conceptName="Route and Method of Delivery" base_EnumerationLiteral="_LIWuAMEjEeGP5fduNvI1Qw"/>
   <term:ValueSetCode xmi:id="_L-Dm8cEjEeGP5fduNvI1Qw" conceptName="Weight" base_EnumerationLiteral="_L-Dm8MEjEeGP5fduNvI1Qw"/>
   <term:ValueSetVersion xmi:id="_tnTD0MHmEeGrHfBMjd7c_Q" base_Enumeration="_tlqFEMHmEeGrHfBMjd7c_Q"/>
+  <term:ValueSetCode xmi:id="_gdbB4NXOEeGb1t7PnGJ-bA" conceptName="Maternal Transfusion" base_EnumerationLiteral="_ga5SUNXOEeGb1t7PnGJ-bA"/>
+  <term:ValueSetCode xmi:id="_GmPkUNXVEeGb1t7PnGJ-bA" conceptName="Down Syndrome" base_EnumerationLiteral="_GmGaYNXVEeGb1t7PnGJ-bA"/>
+  <term:ValueSetCode xmi:id="_SQPGQdXVEeGb1t7PnGJ-bA" conceptName="Suspected Chromosomal Disorder" base_EnumerationLiteral="_SQPGQNXVEeGb1t7PnGJ-bA"/>
+  <term:ValueSetCode xmi:id="_TVHqsdXVEeGb1t7PnGJ-bA" conceptName="Suspected Chromosomal Disorder Karyotype Confirmed" base_EnumerationLiteral="_TVHqsNXVEeGb1t7PnGJ-bA"/>
+  <term:ValueSetCode xmi:id="_ZgHNUdXVEeGb1t7PnGJ-bA" conceptName="Suspected Chromosomal Disorder Karyotype Pending" base_EnumerationLiteral="_ZgHNUNXVEeGb1t7PnGJ-bA"/>
+  <term:ValueSetVersion xmi:id="_0jVIUdZfEeGsoMExnOQfKQ" base_Enumeration="_0jVIUNZfEeGsoMExnOQfKQ"/>
+  <term:ValueSetCode xmi:id="_3zAwYdZfEeGsoMExnOQfKQ" conceptName="Antenatal Testing and Surveillance" base_EnumerationLiteral="_3zAwYNZfEeGsoMExnOQfKQ"/>
+  <term:ValueSetCode xmi:id="_8538gdZfEeGsoMExnOQfKQ" conceptName="Fetus" base_EnumerationLiteral="_8538gNZfEeGsoMExnOQfKQ"/>
+  <term:ValueSetCode xmi:id="_-G8MkdZfEeGsoMExnOQfKQ" conceptName="History of Infection" base_EnumerationLiteral="_-G8MkNZfEeGsoMExnOQfKQ"/>
+  <term:ValueSetCode xmi:id="__nMeYdZfEeGsoMExnOQfKQ" conceptName="Labor and Delivery Outcomes" base_EnumerationLiteral="__nMeYNZfEeGsoMExnOQfKQ"/>
+  <term:ValueSetCode xmi:id="_B0YHodZgEeGsoMExnOQfKQ" conceptName="Labor and Delivery Procedures" base_EnumerationLiteral="_B0YHoNZgEeGsoMExnOQfKQ"/>
+  <term:ValueSetCode xmi:id="_D7BEAdZgEeGsoMExnOQfKQ" conceptName="Labor and Delivery" base_EnumerationLiteral="_D7BEANZgEeGsoMExnOQfKQ"/>
+  <term:ValueSetCode xmi:id="_FptacdZgEeGsoMExnOQfKQ" conceptName="Newborn Delivery" base_EnumerationLiteral="_FptacNZgEeGsoMExnOQfKQ"/>
+  <term:ValueSetCode xmi:id="_HHlGoNZgEeGsoMExnOQfKQ" conceptName="Pregancy History" base_EnumerationLiteral="_HHb8sNZgEeGsoMExnOQfKQ"/>
+  <term:ValueSetCode xmi:id="_I3dI0dZgEeGsoMExnOQfKQ" conceptName="Vital Signs Mother" base_EnumerationLiteral="_I3dI0NZgEeGsoMExnOQfKQ"/>
+  <term:ValueSetCode xmi:id="_KfAVcdZgEeGsoMExnOQfKQ" conceptName="Vital Signs Newborn" base_EnumerationLiteral="_KfAVcNZgEeGsoMExnOQfKQ"/>
+  <term:ValueSetCode xmi:id="_HDJdIdZhEeGsoMExnOQfKQ" conceptName="Autopsy Performance" base_EnumerationLiteral="_HDJdINZhEeGsoMExnOQfKQ"/>
+  <term:ValueSetCode xmi:id="_x5P1wdZhEeGsoMExnOQfKQ" conceptName="Home Birth Plan" base_EnumerationLiteral="_x5P1wNZhEeGsoMExnOQfKQ"/>
+  <term:ValueSetCode xmi:id="_zz_EIdZhEeGsoMExnOQfKQ" conceptName="Infant Breastfed" base_EnumerationLiteral="_zz_EINZhEeGsoMExnOQfKQ"/>
+  <term:ValueSetCode xmi:id="_1XgsYdZhEeGsoMExnOQfKQ" conceptName="Infant Living" base_EnumerationLiteral="_1XgsYNZhEeGsoMExnOQfKQ"/>
+  <term:ValueSetCode xmi:id="_2b8k4dZhEeGsoMExnOQfKQ" conceptName="Infant Transfer" base_EnumerationLiteral="_2b8k4NZhEeGsoMExnOQfKQ"/>
+  <term:ValueSetCode xmi:id="_4IjQodZhEeGsoMExnOQfKQ" conceptName="Infections Present" base_EnumerationLiteral="_4IjQoNZhEeGsoMExnOQfKQ"/>
+  <term:ValueSetCode xmi:id="_FX0HQdZiEeGsoMExnOQfKQ" conceptName="Maternal Transfer" base_EnumerationLiteral="_FX0HQNZiEeGsoMExnOQfKQ"/>
 </xmi:XMI>
