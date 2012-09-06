@@ -8,10 +8,8 @@
 <resourceid id="2.16.840.1.113883.10.20.26.7"/>
 </prolog>
 <body>
-<section id="knownSubclasses">
-</section>
 <section id="description">
-<p><lines><i>The section contains information on the delivered fetus.  Note, if there is a multiple delivery, there will be a separate report for each delivered fetus.  The content is drawn from labor and delivery records, patient's medical records.</i></lines></p>
+<p>The section contains information on the delivered fetus.  Note, if there is a multiple delivery, there will be a separate report for each delivered fetus.  The content of the section is drawn from labor and delivery records, patient's medical records.</p>
 </section>
 <ol id="conformance">
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>@classCode</b>="DOCSECT" </tt> (CodeSystem:<tt> 2.16.840.1.113883.5.6 HL7ActClass</tt>)
@@ -19,19 +17,18 @@
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>@moodCode</b>="EVN" </tt><i>Event</i> (CodeSystem:<tt> 2.16.840.1.113883.5.1001 HL7ActMood</tt>)
 </li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt>, where the @code <b>SHALL</b> be selected from (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>)
-<ul><li><p><lines><i>A code value that indicates the nature of the section - it contains information regarding the delivered fetus.</i></lines></p></li></ul></li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>text</b></tt>
+<ul><li>A code value that indicates the nature of the section - it contains information regarding the delivered fetus.</li></ul></li>
+<li><b>SHOULD</b> contain zero or one [0..1] <tt><b>text</b></tt>
 </li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>subject</b></tt>
-<ol>
-<li>Contains exactly one [1..1] CDA Subject</li></ol></li>
+</li>
 <li><b>SHALL</b> contain at least one [1..*] <tt><b>entry</b></tt>
 <ol>
 <li>Contains exactly one [1..1] <xref href="../AbnormalConditionsOfTheNewborn.dita">Abnormal Conditions of the Newborn</xref> (templateId: <tt>2.16.840.1.113883.10.20.26.8</tt>)</li></ol></li>
-<li><b>MAY</b> contain zero or one [0..1] <tt><b>entry</b></tt>
-<ul><li><p><lines><i>Record birth order if not a single delivery.</i></lines></p></li></ul><ol>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>entry</b></tt>
+<ul><li>Record birth order if not a single delivery.</li></ul><ol>
 <li>Contains exactly one [1..1] <xref href="../BirthOrder.dita">Birth Order</xref> (templateId: <tt>2.16.840.1.113883.10.20.26.12</tt>)</li></ol></li>
-<li><b>SHALL</b> contain zero or one [0..1] <tt><b>entry</b></tt>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>entry</b></tt>
 <ol>
 <li>Contains exactly one [1..1] <xref href="../NumberOfInfantsBornAlive.dita">Number of Infants Born Alive</xref> (templateId: <tt>2.16.840.1.113883.10.20.26.27</tt>)</li></ol></li>
 <li><b>SHALL</b> contain at least one [1..*] <tt><b>entry</b></tt>
@@ -40,10 +37,12 @@
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>entry</b></tt>
 <ol>
 <li>Contains exactly one [1..1] <xref href="../Weight.dita">Weight</xref> (templateId: <tt>2.16.840.1.113883.10.20.26.36</tt>)</li></ol></li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>timeOfDeathAssociation</b></tt> <ol><li> This timeOfDeathAssociation <b>SHALL</b> conform to <xref href="../TimeOfDeathAssociation.dita">time Of Death Association</xref></li></ol>
-</li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>autopsyPerformanceAssociation</b></tt> <ol><li> This autopsyPerformanceAssociation <b>SHALL</b> contain exactly one [1..1] <tt><b>@typeCode</b>="COMP" </tt></li><li> This autopsyPerformanceAssociation <b>SHALL</b> contain exactly one [1..1] <tt><b>observation</b></tt> <ol><li> This observation <b>SHALL</b> contain exactly one [1..1] <tt><b>@classCode</b>="OBS" </tt><i>Observation</i> (CodeSystem:<tt> 2.16.840.1.113883.5.6 HL7ActClass</tt>)</li><li> This observation <b>SHALL</b> contain exactly one [1..1] <tt><b>@moodCode</b>="EVN" </tt><i>Event</i> (CodeSystem:<tt> 2.16.840.1.113883.5.1001 HL7ActMood</tt>)</li><li> This observation <b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt><p><lines><i>A code value that indicates the nature of the observation - that it indicates whether an autopsy was performed</i></lines></p></li><li> This observation <b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> with data type BL<p><lines><i>Information to identify whether an autopsy was performed.</i></lines></p></li></ol> </li></ol>
-</li>
+<li><b>SHOULD</b> contain zero or one [0..1] <tt><b>entry</b></tt>
+<ol>
+<li>Contains exactly one [1..1] <xref href="../AutopsyPerformance.dita">Autopsy Performance</xref> (templateId: <tt>2.16.840.1.113883.10.20.26.xxx</tt>)</li></ol></li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>entry</b></tt>
+<ol>
+<li>Contains exactly one [1..1] <xref href="../FetalDeathOccurrance.dita">Fetal Death Occurrance</xref> (templateId: <tt>2.16.840.1.113883.10.20.26.xxx</tt>)</li></ol></li>
 </ol>
 <ol id="aggregate">
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>@classCode</b>="DOCSECT" </tt> (CodeSystem:<tt> 2.16.840.1.113883.5.6 HL7ActClass</tt>)
@@ -51,19 +50,18 @@
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>@moodCode</b>="EVN" </tt><i>Event</i> (CodeSystem:<tt> 2.16.840.1.113883.5.1001 HL7ActMood</tt>)
 </li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt>, where the @code <b>SHALL</b> be selected from (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>)
-<ul><li><p><lines><i>A code value that indicates the nature of the section - it contains information regarding the delivered fetus.</i></lines></p></li></ul></li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>text</b></tt>
+<ul><li>A code value that indicates the nature of the section - it contains information regarding the delivered fetus.</li></ul></li>
+<li><b>SHOULD</b> contain zero or one [0..1] <tt><b>text</b></tt>
 </li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>subject</b></tt>
-<ol>
-<li>Contains exactly one [1..1] CDA Subject</li></ol></li>
+</li>
 <li><b>SHALL</b> contain at least one [1..*] <tt><b>entry</b></tt>
 <ol>
 <li>Contains exactly one [1..1] <xref href="../AbnormalConditionsOfTheNewborn.dita">Abnormal Conditions of the Newborn</xref> (templateId: <tt>2.16.840.1.113883.10.20.26.8</tt>)</li></ol></li>
-<li><b>MAY</b> contain zero or one [0..1] <tt><b>entry</b></tt>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>entry</b></tt>
 <ol>
-<li>Contains exactly one [1..1] <xref href="../BirthOrder.dita">Birth Order</xref> (templateId: <tt>2.16.840.1.113883.10.20.26.12</tt>)</li></ol><ul><li><p><lines><i>Record birth order if not a single delivery.</i></lines></p></li></ul></li>
-<li><b>SHALL</b> contain zero or one [0..1] <tt><b>entry</b></tt>
+<li>Contains exactly one [1..1] <xref href="../BirthOrder.dita">Birth Order</xref> (templateId: <tt>2.16.840.1.113883.10.20.26.12</tt>)</li></ol><ul><li>Record birth order if not a single delivery.</li></ul></li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>entry</b></tt>
 <ol>
 <li>Contains exactly one [1..1] <xref href="../NumberOfInfantsBornAlive.dita">Number of Infants Born Alive</xref> (templateId: <tt>2.16.840.1.113883.10.20.26.27</tt>)</li></ol></li>
 <li><b>SHALL</b> contain at least one [1..*] <tt><b>entry</b></tt>
@@ -72,10 +70,12 @@
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>entry</b></tt>
 <ol>
 <li>Contains exactly one [1..1] <xref href="../Weight.dita">Weight</xref> (templateId: <tt>2.16.840.1.113883.10.20.26.36</tt>)</li></ol></li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>timeOfDeathAssociation</b></tt> <ol><li> This timeOfDeathAssociation <b>SHALL</b> conform to <xref href="../TimeOfDeathAssociation.dita">time Of Death Association</xref></li></ol>
-</li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>autopsyPerformanceAssociation</b></tt> <ol><li> This autopsyPerformanceAssociation <b>SHALL</b> contain exactly one [1..1] <tt><b>@typeCode</b>="COMP" </tt></li><li> This autopsyPerformanceAssociation <b>SHALL</b> contain exactly one [1..1] <tt><b>observation</b></tt> <ol><li> This observation <b>SHALL</b> contain exactly one [1..1] <tt><b>@classCode</b>="OBS" </tt><i>Observation</i> (CodeSystem:<tt> 2.16.840.1.113883.5.6 HL7ActClass</tt>)</li><li> This observation <b>SHALL</b> contain exactly one [1..1] <tt><b>@moodCode</b>="EVN" </tt><i>Event</i> (CodeSystem:<tt> 2.16.840.1.113883.5.1001 HL7ActMood</tt>)</li><li> This observation <b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt><p><lines><i>A code value that indicates the nature of the observation - that it indicates whether an autopsy was performed</i></lines></p></li><li> This observation <b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> with data type BL<p><lines><i>Information to identify whether an autopsy was performed.</i></lines></p></li></ol> </li></ol>
-</li>
+<li><b>SHOULD</b> contain zero or one [0..1] <tt><b>entry</b></tt>
+<ol>
+<li>Contains exactly one [1..1] <xref href="../AutopsyPerformance.dita">Autopsy Performance</xref> (templateId: <tt>2.16.840.1.113883.10.20.26.xxx</tt>)</li></ol></li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>entry</b></tt>
+<ol>
+<li>Contains exactly one [1..1] <xref href="../FetalDeathOccurrance.dita">Fetal Death Occurrance</xref> (templateId: <tt>2.16.840.1.113883.10.20.26.xxx</tt>)</li></ol></li>
 </ol>
 <section id="tableconformance"><p><table frame="all" scale="80" pgwide="1" ><tgroup cols="8" align="left" colsep = "1" rowsep = "1" > <colspec colname="col0" colnum="0" /><colspec colname="col1" colnum="1" /><colspec colname="col2" colnum="2" /><colspec colname="col3" colnum="3" /><colspec colname="col4" colnum="4" /><colspec colname="col5" colnum="5" /><colspec colname="col6" colnum="6" /><colspec colname="col7" colnum="7" /><thead> <row><entry namest="col0" nameend="col7" >vsbr::Fetus Section</entry>  </row>  <row><entry namest="col0" nameend="col7" >/cda:ClinicalDocument/cda:component/cda:structuredBody/cda:component/cda:section[cda:templateId/@root = 2.16.840.1.113883.10.20.26.7]/</entry>  </row>  <row><entry>Name</entry><entry>XPath</entry><entry>Cardinality</entry><entry>Severity</entry><entry>Nullable</entry><entry>Data Type</entry><entry>Conformance</entry><entry>Value(s)</entry></row></thead><tbody><row><entry>classCode</entry><entry>@classCode</entry><entry>1..1</entry><entry>SHALL</entry><entry>NO</entry><entry>ActClass</entry><entry></entry><entry> DOCSECT</entry></row> 
 <row><entry>moodCode</entry><entry>@moodCode</entry><entry>1..1</entry><entry>SHALL</entry><entry>NO</entry><entry>ActMood</entry><entry></entry><entry> EVN</entry></row> 
@@ -90,23 +90,23 @@
 <row><entry>title</entry><entry>title</entry><entry>0..1</entry><entry></entry><entry>YES</entry><entry>ST</entry><entry></entry><entry> </entry></row> 
 <row><entry>abnormal Conditions of the Newborn</entry><entry>cda:entry/cda:observation[cda:templateId/@root = 2.16.840.1.113883.10.20.26.8]</entry><entry>1..*</entry><entry>SHALL</entry><entry>YES</entry><entry>Abnormal Conditions of the Newborn</entry><entry></entry><entry> </entry></row> 
 <row><entry>author</entry><entry>author</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>Author</entry><entry></entry><entry> </entry></row> 
-<row><entry>autopsyPerformanceAssociation</entry><entry>autopsyPerformanceAssociation</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>autopsyPerformanceAssociation</entry><entry></entry><entry> </entry></row> 
-<row><entry>birth Order</entry><entry>cda:entry/cda:observation[cda:templateId/@root = 2.16.840.1.113883.10.20.26.12]</entry><entry>0..1</entry><entry>MAY</entry><entry>YES</entry><entry>Birth Order</entry><entry></entry><entry> </entry></row> 
+<row><entry>autopsy Performance</entry><entry>cda:entry/cda:observation[cda:templateId/@root = 2.16.840.1.113883.10.20.26.xxx]</entry><entry>0..1</entry><entry>SHOULD</entry><entry>YES</entry><entry>Autopsy Performance</entry><entry></entry><entry> </entry></row> 
+<row><entry>birth Order</entry><entry>cda:entry/cda:observation[cda:templateId/@root = 2.16.840.1.113883.10.20.26.12]</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>Birth Order</entry><entry></entry><entry> </entry></row> 
 <row><entry>component</entry><entry>component</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>Component5</entry><entry></entry><entry> </entry></row> 
 <row><entry>congenital Anomalies of the Newborn2</entry><entry>cda:entry/cda:observation[cda:templateId/@root = 2.16.840.1.113883.10.20.26.16]</entry><entry>1..*</entry><entry>SHALL</entry><entry>YES</entry><entry>Congenital Anomalies of the Newborn</entry><entry></entry><entry> </entry></row> 
 <row><entry>entry</entry><entry>entry</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>Entry</entry><entry></entry><entry> MISSINGTYPE</entry></row> 
+<row><entry>fetal Death Occurrance</entry><entry>cda:entry/cda:observation[cda:templateId/@root = 2.16.840.1.113883.10.20.26.xxx]</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>Fetal Death Occurrance</entry><entry></entry><entry> </entry></row> 
 <row><entry>informant</entry><entry>informant</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>Informant12</entry><entry></entry><entry> </entry></row> 
-<row><entry>number of Infants Born Alive</entry><entry>cda:entry/cda:observation[cda:templateId/@root = 2.16.840.1.113883.10.20.26.27]</entry><entry>0..1</entry><entry>SHALL</entry><entry>YES</entry><entry>Number of Infants Born Alive</entry><entry></entry><entry> </entry></row> 
+<row><entry>number of Infants Born Alive</entry><entry>cda:entry/cda:observation[cda:templateId/@root = 2.16.840.1.113883.10.20.26.27]</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>Number of Infants Born Alive</entry><entry></entry><entry> </entry></row> 
 <row><entry>subject</entry><entry>subject</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>Subject</entry><entry></entry><entry> </entry></row> 
-<row><entry>text</entry><entry>text</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>StrucDocText</entry><entry></entry><entry> </entry></row> 
-<row><entry>timeOfDeathAssociation</entry><entry>timeOfDeathAssociation</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>fetalDeath</entry><entry></entry><entry> </entry></row> 
+<row><entry>text</entry><entry>text</entry><entry>0..1</entry><entry>SHOULD</entry><entry>YES</entry><entry>StrucDocText</entry><entry></entry><entry> </entry></row> 
 <row><entry>typeId</entry><entry>typeId</entry><entry>0..1</entry><entry></entry><entry>YES</entry><entry>InfrastructureRootTypeId</entry><entry></entry><entry> </entry></row> 
 <row><entry>weight</entry><entry>cda:entry/cda:observation[cda:templateId/@root = 2.16.840.1.113883.10.20.26.36]</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>Weight</entry><entry></entry><entry> </entry></row> 
 </tbody></tgroup></table></p></section>
 <codeblock id="example"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
 <section xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd" classCode="DOCSECT" moodCode="EVN">
   <templateId root="2.16.840.1.113883.10.20.26.7"/>
-  <id root="MDHT" extension="308028612"/>
+  <id root="1726869967" extension="MDHT"/>
   <code codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
   <title>TEXT FOR TITLE</title>
   <text/>
@@ -117,7 +117,7 @@
   <entry>
     <observation classCode="OBS">
       <templateId root="2.16.840.1.113883.10.20.26.12"/>
-      <id root="MDHT" extension="1579005616"/>
+      <id root="1544396000" extension="MDHT"/>
       <code codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
       <text>Text Value</text>
       <effectiveTime>
@@ -135,8 +135,32 @@
   <entry>
     <observation classCode="OBS" moodCode="EVN">
       <templateId root="2.16.840.1.113883.10.20.26.36"/>
-      <id root="MDHT" extension="1397779980"/>
-      <code code="541088669"/>
+      <id root="1894456203" extension="MDHT"/>
+      <code code="1728067563"/>
+      <text>Text Value</text>
+      <effectiveTime>
+        <low value="2012"/>
+        <high value="2012"/>
+      </effectiveTime>
+    </observation>
+  </entry>
+  <entry>
+    <observation classCode="OBS" moodCode="EVN">
+      <templateId root="2.16.840.1.113883.10.20.26.xxx"/>
+      <id root="1509474551" extension="MDHT"/>
+      <code code="533416514"/>
+      <text>Text Value</text>
+      <effectiveTime>
+        <low value="2012"/>
+        <high value="2012"/>
+      </effectiveTime>
+    </observation>
+  </entry>
+  <entry>
+    <observation moodCode="EVN">
+      <templateId root="2.16.840.1.113883.10.20.26.xxx"/>
+      <id root="1454594951" extension="MDHT"/>
+      <code code="319501924"/>
       <text>Text Value</text>
       <effectiveTime>
         <low value="2012"/>

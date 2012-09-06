@@ -8,10 +8,8 @@
 <resourceid id="2.16.840.1.113883.10.20.26.30"/>
 </prolog>
 <body>
-<section id="knownSubclasses">
-</section>
 <section id="description">
-<p><lines><i>Total number of other pregnancy outcomes that did not result in a live birth. Includes pregnancy losses of any gestation age.  For multiple deliveries include all previous pregnancy losses before this infant in this pregnancy and in previous pregnancies.</i></lines></p>
+<p>Total number of other pregnancy outcomes that did not result in a live birth. Includes pregnancy losses of any gestation age.  For multiple deliveries include all previous pregnancy losses before this infant in this pregnancy and in previous pregnancies.</p>
 </section>
 <ol id="conformance">
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>@classCode</b>="OBS" </tt><i>Observation</i> (CodeSystem:<tt> 2.16.840.1.113883.5.6 HL7ActClass</tt>)
@@ -19,11 +17,11 @@
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>@moodCode</b>="EVN" </tt><i>Event</i> (CodeSystem:<tt> 2.16.840.1.113883.5.1001 HL7ActMood</tt>)
 </li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt>
-<ul><li><p><lines><i>A code to indicate the observation contains information on the total number of other pregnancy outcomes that did not result in a live birth.</i></lines></p></li></ul></li>
+<ul><li>A code to indicate the observation contains information on the total number of other pregnancy outcomes that did not result in a live birth.</li></ul></li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> with data type INT
-<ul><li><p><lines><i>Total number of other pregnancy outcomes that did not result in a live birth.</i></lines></p></li></ul></li>
+<ul><li>Total number of other pregnancy outcomes that did not result in a live birth.</li></ul></li>
 <li><b>SHOULD</b> contain zero or one [0..1] <tt><b>effectiveTime</b></tt>
-<ul><li><p><lines><i>The date of the most recent pregnancy outcome that did not result in a live birth.  Value the high property of the interval data type.</i></lines></p></li></ul></li>
+<ul><li>The date of the most recent pregnancy outcome that did not result in a live birth.  Value the high property of the interval data type.</li></ul></li>
 </ol>
 <ol id="aggregate">
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>@classCode</b>="OBS" </tt><i>Observation</i> (CodeSystem:<tt> 2.16.840.1.113883.5.6 HL7ActClass</tt>)
@@ -31,11 +29,11 @@
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>@moodCode</b>="EVN" </tt><i>Event</i> (CodeSystem:<tt> 2.16.840.1.113883.5.1001 HL7ActMood</tt>)
 </li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt>
-<ul><li><p><lines><i>A code to indicate the observation contains information on the total number of other pregnancy outcomes that did not result in a live birth.</i></lines></p></li></ul></li>
+<ul><li>A code to indicate the observation contains information on the total number of other pregnancy outcomes that did not result in a live birth.</li></ul></li>
 <li><b>SHOULD</b> contain zero or one [0..1] <tt><b>effectiveTime</b></tt>
-<ul><li><p><lines><i>The date of the most recent pregnancy outcome that did not result in a live birth.  Value the high property of the interval data type.</i></lines></p></li></ul></li>
+<ul><li>The date of the most recent pregnancy outcome that did not result in a live birth.  Value the high property of the interval data type.</li></ul></li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> with data type INT
-<ul><li><p><lines><i>Total number of other pregnancy outcomes that did not result in a live birth.</i></lines></p></li></ul></li>
+<ul><li>Total number of other pregnancy outcomes that did not result in a live birth.</li></ul></li>
 </ol>
 <section id="tableconformance"><p><table frame="all" scale="80" pgwide="1" ><tgroup cols="8" align="left" colsep = "1" rowsep = "1" > <colspec colname="col0" colnum="0" /><colspec colname="col1" colnum="1" /><colspec colname="col2" colnum="2" /><colspec colname="col3" colnum="3" /><colspec colname="col4" colnum="4" /><colspec colname="col5" colnum="5" /><colspec colname="col6" colnum="6" /><colspec colname="col7" colnum="7" /><thead> <row><entry namest="col0" nameend="col7" >vsbr::Other Pregnancy Outcomes</entry>  </row>  <row><entry namest="col0" nameend="col7" >cda::observation[cda:templateId/@root = 2.16.840.1.113883.10.20.26.30]/</entry>  </row>  <row><entry>Name</entry><entry>XPath</entry><entry>Cardinality</entry><entry>Severity</entry><entry>Nullable</entry><entry>Data Type</entry><entry>Conformance</entry><entry>Value(s)</entry></row></thead><tbody><row><entry>classCode</entry><entry>@classCode</entry><entry>1..1</entry><entry>SHALL</entry><entry>NO</entry><entry>ActClassObservation</entry><entry></entry><entry> ALRT</entry></row> 
 <row><entry>moodCode</entry><entry>@moodCode</entry><entry>1..1</entry><entry>SHALL</entry><entry>NO</entry><entry>x_ActMoodDocumentObservation</entry><entry></entry><entry> DEF</entry></row> 
@@ -71,8 +69,8 @@
 <codeblock id="example"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
 <observation xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd" classCode="OBS" moodCode="EVN">
   <templateId root="2.16.840.1.113883.10.20.26.30"/>
-  <id root="MDHT" extension="572955309"/>
-  <code code="13942871"/>
+  <id root="1465380435" extension="MDHT"/>
+  <code code="125481548"/>
   <effectiveTime>
     <low value="2012"/>
     <high value="2012"/>

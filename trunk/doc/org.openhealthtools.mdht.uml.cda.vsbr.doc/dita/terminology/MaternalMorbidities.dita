@@ -13,22 +13,24 @@
 <colspec colname="col2" colwidth="4*"/>
 <tbody>
 <row><entry>Value Set</entry><entry>Maternal Morbidities - (OID not specified)</entry></row>
-<row><entry>Description</entry><entry>A list of maternal morbidities that may be experienced by the mother during labor and delivery.
+<row><entry>Description</entry><entry>A list of maternal morbidities that may be experienced by the mother during labor and delivery.  Note, the codes used are imaginary and will be replaced with code values from a widely used code system.
 </entry></row>
 </tbody></tgroup></table>
-<table><tgroup cols="3">
+<table><tgroup cols="4">
 <colspec colname="col1" colwidth="1*"/>
-<colspec colname="col2" colwidth="1*"/>
-<colspec colname="col3" colwidth="2*"/>
+<colspec colname="col2" colwidth="2*"/>
+<colspec colname="col3" colwidth="1*"/>
+<colspec colname="col4" colwidth="3*"/>
 <thead><row>
-<entry>Code</entry><entry>Code System</entry><entry>Print Name</entry>
+<entry>Concept Code</entry><entry>Concept Name</entry><entry>Code System</entry><entry>Description</entry>
 </row></thead><tbody>
-<row><entry>PL</entry><entry></entry><entry>Perinea Laceration</entry></row>
-<row><entry>RU</entry><entry></entry><entry>Ruptured Uterus</entry></row>
-<row><entry>UH</entry><entry></entry><entry>Unplanned Hysterectomy</entry></row>
-<row><entry>ICU</entry><entry></entry><entry>Admission to Intensive Care</entry></row>
-<row><entry>OR</entry><entry></entry><entry>Unplanned Operating Room Procedure</entry></row>
-<row><entry>NONE</entry><entry></entry><entry>None of the Cited Maternal Morbidities</entry></row>
+<row><entry>PL</entry><entry>Perineal Laceration</entry><entry></entry><entry></entry></row>
+<row><entry>RU</entry><entry>Ruptured Uterus</entry><entry></entry><entry></entry></row>
+<row><entry>UH</entry><entry>Unplanned Hysterectomy</entry><entry></entry><entry></entry></row>
+<row><entry>ICU</entry><entry>Admission to Intensive Care</entry><entry></entry><entry></entry></row>
+<row><entry>OR</entry><entry>Unplanned Operating Room Procedure</entry><entry></entry><entry></entry></row>
+<row><entry>NONE</entry><entry>None of the Cited Maternal Morbidities</entry><entry></entry><entry></entry></row>
+<row><entry>MT</entry><entry>Maternal Transfusion</entry><entry></entry><entry></entry></row>
 </tbody></tgroup></table>
 </section>
 </body>

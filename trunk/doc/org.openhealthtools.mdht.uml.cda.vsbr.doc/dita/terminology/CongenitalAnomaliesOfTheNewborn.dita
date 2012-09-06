@@ -16,25 +16,30 @@
 <row><entry>Description</entry><entry>A list of malformations of the newborn or fetus diagnosed prenatally or after delivery.  Note, the codes used are imaginary and will be replaced with code values from a widely used code system.
 </entry></row>
 </tbody></tgroup></table>
-<table><tgroup cols="3">
+<table><tgroup cols="4">
 <colspec colname="col1" colwidth="1*"/>
-<colspec colname="col2" colwidth="1*"/>
-<colspec colname="col3" colwidth="2*"/>
+<colspec colname="col2" colwidth="2*"/>
+<colspec colname="col3" colwidth="1*"/>
+<colspec colname="col4" colwidth="3*"/>
 <thead><row>
-<entry>Code</entry><entry>Code System</entry><entry>Print Name</entry>
+<entry>Concept Code</entry><entry>Concept Name</entry><entry>Code System</entry><entry>Description</entry>
 </row></thead><tbody>
-<row><entry>AN</entry><entry></entry><entry>Anencephaly</entry></row>
-<row><entry>MSB</entry><entry></entry><entry>Meningomyelocele Spina Bifida</entry></row>
-<row><entry>CGHD</entry><entry></entry><entry>Cyanotic Congenital Heart Disease</entry></row>
-<row><entry>OM</entry><entry></entry><entry>Omphalocele</entry></row>
-<row><entry>GA</entry><entry></entry><entry>Gastroschisis</entry></row>
-<row><entry>LRD</entry><entry></entry><entry>Limb Reduction Defect</entry></row>
-<row><entry>CL</entry><entry></entry><entry>Cleft Lip with or without Cleft Palate</entry></row>
-<row><entry>CP</entry><entry></entry><entry>Cleft Palate Alone</entry></row>
-<row><entry>DSC</entry><entry></entry><entry>Down Syndrome Karyotype Confirmed</entry></row>
-<row><entry>DSP</entry><entry></entry><entry>Down Syndrome Karyotype Pending</entry></row>
-<row><entry>HY</entry><entry></entry><entry>Hypospadias</entry></row>
-<row><entry>None</entry><entry></entry><entry>None of the Cited Anomalies</entry></row>
+<row><entry>AN</entry><entry>Anencephaly</entry><entry></entry><entry></entry></row>
+<row><entry>MSB</entry><entry>Meningomyelocele Spina Bifida</entry><entry></entry><entry></entry></row>
+<row><entry>CGHD</entry><entry>Cyanotic Congenital Heart Disease</entry><entry></entry><entry></entry></row>
+<row><entry>OM</entry><entry>Omphalocele</entry><entry></entry><entry></entry></row>
+<row><entry>GA</entry><entry>Gastroschisis</entry><entry></entry><entry></entry></row>
+<row><entry>LRD</entry><entry>Limb Reduction Defect</entry><entry></entry><entry></entry></row>
+<row><entry>CL</entry><entry>Cleft Lip with or without Cleft Palate</entry><entry></entry><entry></entry></row>
+<row><entry>CP</entry><entry>Cleft Palate Alone</entry><entry></entry><entry></entry></row>
+<row><entry>DSC</entry><entry>Down Syndrome Karyotype Confirmed</entry><entry></entry><entry></entry></row>
+<row><entry>DSP</entry><entry>Down Syndrome Karyotype Pending</entry><entry></entry><entry></entry></row>
+<row><entry>HY</entry><entry>Hypospadias</entry><entry></entry><entry></entry></row>
+<row><entry>None</entry><entry>None of the Cited Anomalies</entry><entry></entry><entry></entry></row>
+<row><entry>DS</entry><entry>Down Syndrome</entry><entry></entry><entry></entry></row>
+<row><entry>SCD</entry><entry>Suspected Chromosomal Disorder</entry><entry></entry><entry></entry></row>
+<row><entry>SCDC</entry><entry>Suspected Chromosomal Disorder Karyotype Confirmed</entry><entry></entry><entry></entry></row>
+<row><entry>SCDP</entry><entry>Suspected Chromosomal Disorder Karyotype Pending</entry><entry></entry><entry></entry></row>
 </tbody></tgroup></table>
 </section>
 </body>

@@ -4,11 +4,17 @@
 <topic id="topicId" xml:lang="en-us">
 	<title>Overview</title>
 	<body>
-		<p>This implementation guide is generated from UML models developed in
+		<p>This implementation guide provides a format for using HL7's Clinical Document Architecture to
+		 transmit medical/health information on live births and fetal deaths from a birthing facility setting
+		  to a jurisdictional vital records electronic registration system. Vital Records birth certificates and
+		   fetal death reports include important demographic, medical and key information about the antepartum
+		    period, the labor and delivery process and the newborn/fetal death .  Medical and health information
+		     collected from Electronic Health Record (EHR) and data for the birth certificate and fetal death
+		      report once gathered, can be provided public health agencies to track maternal and infant health
+		       to target interventions for at risk populations.</p>
+		 
+		 <p>The document is generated from UML models developed in
 			the Open Health Tools (OHT) Model-Driven Health Tools (MDHT) project.
-			The data specifications have been formalized into computational
-			models expressed in UML. These models are used by automated tooling
-			to generate this publication, plus validation tools and Java libraries
-			for implementers.</p>
+			</p>
 	</body>
 </topic>

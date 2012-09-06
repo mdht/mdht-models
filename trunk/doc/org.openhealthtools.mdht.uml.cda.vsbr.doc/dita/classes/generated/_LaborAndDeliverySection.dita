@@ -8,48 +8,58 @@
 <resourceid id="2.16.840.1.113883.10.20.26.5"/>
 </prolog>
 <body>
-<section id="knownSubclasses">
-</section>
 <section id="description">
-<p><lines><i>The section contains information on the mother's labor and the delivery of the baby or fetus.  The content is drawn from labor and delivery records, mother's medical records.</i></lines></p>
+<p>This section SHALL contain information pertinent to the labor and delivery process and outcome (e.g. type of labor, method of delivery, membrane detail, placenta detail, admission reason, gestational age at delivery, fetal surveillance, labor complications, and delivery complications).  This section shall include the following sections:  Procedures and Interventions, Vital Signs, and  Event Outcomes subsections.</p>
 </section>
 <ol id="conformance">
-<li><b>SHALL</b> contain zero or one [0..1] <tt><b>@classCode</b>="DOCSECT" </tt> (CodeSystem:<tt> 2.16.840.1.113883.5.6 HL7ActClass</tt>)
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@classCode</b>="DOCSECT" </tt> (CodeSystem:<tt> 2.16.840.1.113883.5.6 HL7ActClass</tt>)
 </li>
-<li><b>SHALL</b> contain zero or one [0..1] <tt><b>@moodCode</b>="EVN" </tt><i>Event</i> (CodeSystem:<tt> 2.16.840.1.113883.5.1001 HL7ActMood</tt>)
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@moodCode</b>="EVN" </tt><i>Event</i> (CodeSystem:<tt> 2.16.840.1.113883.5.1001 HL7ActMood</tt>)
 </li>
-<li><b>SHALL</b> contain zero or one [0..1] <tt><b>code</b></tt>, where the @code <b>SHALL</b> be selected from (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>)
-<ul><li><p><lines><i>A code value that indicates the nature of the section - it is the labor and delivery section.</i></lines></p></li></ul></li>
-<li><b>SHALL</b> contain zero or one [0..1] <tt><b>text</b></tt>
-<ul><li><p><lines><i>A text representation of the structured section content.</i></lines></p></li></ul></li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt>, where the @code <b>SHALL</b> be selected from (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>)
+<ul><li>A code value that indicates the nature of the section - it is the labor and delivery section.</li></ul></li>
+<li><b>SHOULD</b> contain zero or one [0..1] <tt><b>text</b></tt>
+<ul><li>A text representation of the structured section content.</li></ul></li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>entry</b></tt>
 <ol>
 <li>Contains exactly one [1..1] <xref href="../LaborAndDeliveryInformation.dita">Labor and Delivery Information</xref> (templateId: <tt>2.16.840.1.113883.10.20.26.22</tt>)</li></ol></li>
-<li><b>SHOULD</b> contain zero or one [0..1] <tt><b>entry</b></tt>
+<li><b>SHALL</b> contain zero or one [0..1] <tt><b>component</b></tt>
 <ol>
-<li>Contains exactly one [1..1] <xref href="../BodyWeightAtDelivery.dita">Body Weight at Delivery</xref> (templateId: <tt>2.16.840.1.113883.10.20.26.14</tt>)</li></ol></li>
+<li>Contains exactly one [1..1] <xref href="../VitalSignMother.dita">Vital Sign - Mother</xref> (templateId: <tt>2.16.840.1.113883.10.20.26.xxx</tt>)</li></ol></li>
+<li>Contains zero or one [0..1] <tt><b>component</b></tt>
+<ol>
+<li>Contains exactly one [1..1] <xref href="../LaborAndDeliveryProceduresSection.dita">Labor and Delivery Procedures Section</xref> (templateId: <tt>2.16.840.1.113883.10.20.26.xxx</tt>)</li></ol></li>
+<li>Contains zero or one [0..1] <tt><b>component</b></tt>
+<ol>
+<li>Contains exactly one [1..1] <xref href="../LaborAndDeliveryOutcomesSection.dita">Labor and Delivery Outcomes Section</xref> (templateId: <tt>2.16.840.1.113883.10.20.26.xxx</tt>)</li></ol></li>
 </ol>
 <ol id="aggregate">
-<li><b>SHALL</b> contain zero or one [0..1] <tt><b>@classCode</b>="DOCSECT" </tt> (CodeSystem:<tt> 2.16.840.1.113883.5.6 HL7ActClass</tt>)
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@classCode</b>="DOCSECT" </tt> (CodeSystem:<tt> 2.16.840.1.113883.5.6 HL7ActClass</tt>)
 </li>
-<li><b>SHALL</b> contain zero or one [0..1] <tt><b>@moodCode</b>="EVN" </tt><i>Event</i> (CodeSystem:<tt> 2.16.840.1.113883.5.1001 HL7ActMood</tt>)
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@moodCode</b>="EVN" </tt><i>Event</i> (CodeSystem:<tt> 2.16.840.1.113883.5.1001 HL7ActMood</tt>)
 </li>
-<li><b>SHALL</b> contain zero or one [0..1] <tt><b>code</b></tt>, where the @code <b>SHALL</b> be selected from (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>)
-<ul><li><p><lines><i>A code value that indicates the nature of the section - it is the labor and delivery section.</i></lines></p></li></ul></li>
-<li><b>SHALL</b> contain zero or one [0..1] <tt><b>text</b></tt>
-<ul><li><p><lines><i>A text representation of the structured section content.</i></lines></p></li></ul></li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt>, where the @code <b>SHALL</b> be selected from (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>)
+<ul><li>A code value that indicates the nature of the section - it is the labor and delivery section.</li></ul></li>
+<li><b>SHOULD</b> contain zero or one [0..1] <tt><b>text</b></tt>
+<ul><li>A text representation of the structured section content.</li></ul></li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>entry</b></tt>
 <ol>
 <li>Contains exactly one [1..1] <xref href="../LaborAndDeliveryInformation.dita">Labor and Delivery Information</xref> (templateId: <tt>2.16.840.1.113883.10.20.26.22</tt>)</li></ol></li>
-<li><b>SHOULD</b> contain zero or one [0..1] <tt><b>entry</b></tt>
+<li><b>SHALL</b> contain zero or one [0..1] <tt><b>component</b></tt>
 <ol>
-<li>Contains exactly one [1..1] <xref href="../BodyWeightAtDelivery.dita">Body Weight at Delivery</xref> (templateId: <tt>2.16.840.1.113883.10.20.26.14</tt>)</li></ol></li>
+<li>Contains exactly one [1..1] <xref href="../VitalSignMother.dita">Vital Sign - Mother</xref> (templateId: <tt>2.16.840.1.113883.10.20.26.xxx</tt>)</li></ol></li>
+<li>Contains zero or one [0..1] <tt><b>component</b></tt>
+<ol>
+<li>Contains exactly one [1..1] <xref href="../LaborAndDeliveryProceduresSection.dita">Labor and Delivery Procedures Section</xref> (templateId: <tt>2.16.840.1.113883.10.20.26.xxx</tt>)</li></ol></li>
+<li>Contains zero or one [0..1] <tt><b>component</b></tt>
+<ol>
+<li>Contains exactly one [1..1] <xref href="../LaborAndDeliveryOutcomesSection.dita">Labor and Delivery Outcomes Section</xref> (templateId: <tt>2.16.840.1.113883.10.20.26.xxx</tt>)</li></ol></li>
 </ol>
-<section id="tableconformance"><p><table frame="all" scale="80" pgwide="1" ><tgroup cols="8" align="left" colsep = "1" rowsep = "1" > <colspec colname="col0" colnum="0" /><colspec colname="col1" colnum="1" /><colspec colname="col2" colnum="2" /><colspec colname="col3" colnum="3" /><colspec colname="col4" colnum="4" /><colspec colname="col5" colnum="5" /><colspec colname="col6" colnum="6" /><colspec colname="col7" colnum="7" /><thead> <row><entry namest="col0" nameend="col7" >vsbr::Labor and Delivery Section</entry>  </row>  <row><entry namest="col0" nameend="col7" >/cda:ClinicalDocument/cda:component/cda:structuredBody/cda:component/cda:section[cda:templateId/@root = 2.16.840.1.113883.10.20.26.5]/</entry>  </row>  <row><entry>Name</entry><entry>XPath</entry><entry>Cardinality</entry><entry>Severity</entry><entry>Nullable</entry><entry>Data Type</entry><entry>Conformance</entry><entry>Value(s)</entry></row></thead><tbody><row><entry>classCode</entry><entry>@classCode</entry><entry>0..1</entry><entry>SHALL</entry><entry>NO</entry><entry>ActClass</entry><entry></entry><entry> DOCSECT</entry></row> 
-<row><entry>moodCode</entry><entry>@moodCode</entry><entry>0..1</entry><entry>SHALL</entry><entry>NO</entry><entry>ActMood</entry><entry></entry><entry> EVN</entry></row> 
+<section id="tableconformance"><p><table frame="all" scale="80" pgwide="1" ><tgroup cols="8" align="left" colsep = "1" rowsep = "1" > <colspec colname="col0" colnum="0" /><colspec colname="col1" colnum="1" /><colspec colname="col2" colnum="2" /><colspec colname="col3" colnum="3" /><colspec colname="col4" colnum="4" /><colspec colname="col5" colnum="5" /><colspec colname="col6" colnum="6" /><colspec colname="col7" colnum="7" /><thead> <row><entry namest="col0" nameend="col7" >vsbr::Labor and Delivery Section</entry>  </row>  <row><entry namest="col0" nameend="col7" >/cda:ClinicalDocument/cda:component/cda:structuredBody/cda:component/cda:section[cda:templateId/@root = 2.16.840.1.113883.10.20.26.5]/</entry>  </row>  <row><entry>Name</entry><entry>XPath</entry><entry>Cardinality</entry><entry>Severity</entry><entry>Nullable</entry><entry>Data Type</entry><entry>Conformance</entry><entry>Value(s)</entry></row></thead><tbody><row><entry>classCode</entry><entry>@classCode</entry><entry>1..1</entry><entry>SHALL</entry><entry>NO</entry><entry>ActClass</entry><entry></entry><entry> DOCSECT</entry></row> 
+<row><entry>moodCode</entry><entry>@moodCode</entry><entry>1..1</entry><entry>SHALL</entry><entry>NO</entry><entry>ActMood</entry><entry></entry><entry> EVN</entry></row> 
 <row><entry>nullFlavor</entry><entry>@nullFlavor</entry><entry>0..1</entry><entry></entry><entry>NO</entry><entry>NullFlavor</entry><entry></entry><entry> ASKU</entry></row> 
 <row><entry>sectionId</entry><entry>@sectionId</entry><entry>0..1</entry><entry></entry><entry>NO</entry><entry>String</entry><entry></entry><entry> </entry></row> 
-<row><entry>code</entry><entry>code</entry><entry>0..1</entry><entry>SHALL</entry><entry>YES</entry><entry>CE</entry><entry></entry><entry>LOINC 2.16.840.1.113883.6.1 null</entry></row> 
+<row><entry>code</entry><entry>code</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>CE</entry><entry></entry><entry>LOINC 2.16.840.1.113883.6.1 null</entry></row> 
 <row><entry>confidentialityCode</entry><entry>confidentialityCode</entry><entry>0..1</entry><entry></entry><entry>YES</entry><entry>CE</entry><entry></entry><entry> </entry></row> 
 <row><entry>id</entry><entry>id</entry><entry>0..1</entry><entry></entry><entry>YES</entry><entry>II</entry><entry></entry><entry> </entry></row> 
 <row><entry>languageCode</entry><entry>languageCode</entry><entry>0..1</entry><entry></entry><entry>YES</entry><entry>CS</entry><entry></entry><entry> </entry></row> 
@@ -57,28 +67,36 @@
 <row><entry>templateId</entry><entry>templateId</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>II</entry><entry></entry><entry> 2.16.840.1.113883.10.20.26.5</entry></row> 
 <row><entry>title</entry><entry>title</entry><entry>0..1</entry><entry></entry><entry>YES</entry><entry>ST</entry><entry></entry><entry> </entry></row> 
 <row><entry>author</entry><entry>author</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>Author</entry><entry></entry><entry> </entry></row> 
-<row><entry>body Weight at Delivery</entry><entry>cda:entry/cda:observation[cda:templateId/@root = 2.16.840.1.113883.10.20.26.14]</entry><entry>0..1</entry><entry>SHOULD</entry><entry>YES</entry><entry>Body Weight at Delivery</entry><entry></entry><entry> </entry></row> 
 <row><entry>component</entry><entry>component</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>Component5</entry><entry></entry><entry> </entry></row> 
-<row><entry>entry</entry><entry>entry</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>Entry</entry><entry></entry><entry> MISSINGTYPE</entry></row> 
+<row><entry>entry</entry><entry>entry</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>Entry</entry><entry></entry><entry> </entry></row> 
 <row><entry>informant</entry><entry>informant</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>Informant12</entry><entry></entry><entry> </entry></row> 
 <row><entry>labor and Delivery Information</entry><entry>cda:entry/cda:act[cda:templateId/@root = 2.16.840.1.113883.10.20.26.22]</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>Labor and Delivery Information</entry><entry></entry><entry> </entry></row> 
+<row><entry>labor and Delivery Outcomes</entry><entry>labor and Delivery Outcomes</entry><entry>0..1</entry><entry></entry><entry>YES</entry><entry>Labor and Delivery Outcomes Section</entry><entry></entry><entry> </entry></row> 
+<row><entry>labor and Delivery Procedures</entry><entry>labor and Delivery Procedures</entry><entry>0..1</entry><entry></entry><entry>YES</entry><entry>Labor and Delivery Procedures Section</entry><entry></entry><entry> </entry></row> 
 <row><entry>subject</entry><entry>subject</entry><entry>0..1</entry><entry></entry><entry>YES</entry><entry>Subject</entry><entry></entry><entry> </entry></row> 
-<row><entry>text</entry><entry>text</entry><entry>0..1</entry><entry>SHALL</entry><entry>YES</entry><entry>StrucDocText</entry><entry></entry><entry> </entry></row> 
+<row><entry>text</entry><entry>text</entry><entry>0..1</entry><entry>SHOULD</entry><entry>YES</entry><entry>StrucDocText</entry><entry></entry><entry> </entry></row> 
 <row><entry>typeId</entry><entry>typeId</entry><entry>0..1</entry><entry></entry><entry>YES</entry><entry>InfrastructureRootTypeId</entry><entry></entry><entry> </entry></row> 
+<row><entry>vital Sign - Mother</entry><entry>vital Sign - Mother</entry><entry>0..1</entry><entry>SHALL</entry><entry>YES</entry><entry>Vital Sign - Mother</entry><entry></entry><entry> </entry></row> 
 </tbody></tgroup></table></p></section>
 <codeblock id="example"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
 <section xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd" classCode="DOCSECT" moodCode="EVN">
   <templateId root="2.16.840.1.113883.10.20.26.5"/>
-  <id root="MDHT" extension="2052145375"/>
+  <id root="1682646069" extension="MDHT"/>
   <code codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
   <title>TEXT FOR TITLE</title>
   <text/>
   <entry>
     <act/>
   </entry>
-  <entry>
-    <observation/>
-  </entry>
+  <component>
+    <section/>
+  </component>
+  <component>
+    <section/>
+  </component>
+  <component>
+    <section/>
+  </component>
 </section>]]></codeblock>
 <section id="changes">
 </section>

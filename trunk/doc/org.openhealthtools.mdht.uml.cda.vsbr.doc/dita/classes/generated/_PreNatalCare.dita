@@ -8,10 +8,8 @@
 <resourceid id="2.16.840.1.113883.10.20.26.32"/>
 </prolog>
 <body>
-<section id="knownSubclasses">
-</section>
 <section id="description">
-<p><lines><i>Information on whether the mother received prenatal care, and on the dates of prenatal care visits.</i></lines></p>
+<p>Information on whether the mother received prenatal care, and on the dates of prenatal care visits.</p>
 </section>
 <ol id="conformance">
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>@classCode</b>="ACT" </tt><i>Act</i> (CodeSystem:<tt> 2.16.840.1.113883.5.6 HL7ActClass</tt>)
@@ -19,12 +17,12 @@
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>@moodCode</b>="DEF" </tt> (CodeSystem:<tt> 2.16.840.1.113883.5.1001 HL7ActMood</tt>)
 </li>
 <li><b>MAY</b> contain zero or one [0..1] <tt><b>@negationInd</b></tt>
-<ul><li><p><lines><i>Value the negation indicator as true if the mother did not receive prenatal care.</i></lines></p></li></ul></li>
+<ul><li>Value the negation indicator as true if the mother did not receive prenatal care.</li></ul></li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt>
-<ul><li><p><lines><i>A code value that indicates the nature of the observation - it includes information about prenatal care received by the mother.</i></lines></p></li></ul></li>
+<ul><li>A code value that indicates the nature of the observation - it includes information about prenatal care received by the mother.</li></ul></li>
 <li><b>SHOULD</b> contain zero or one [0..1] <tt><b>effectiveTime</b></tt>
-<ul><li><p><lines><i>The time interval is used to indicate the date of the first prenatal care visit, and the date of the last visit.</i></lines></p></li></ul></li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>entryRelationship</b></tt> <ol><li> This entryRelationship <b>SHALL</b> contain exactly one [1..1] <tt><b>@typeCode</b>="COMP" </tt></li><li> This entryRelationship <b>SHALL</b> contain zero or one [0..1] <tt><b>observation</b></tt> <ol><li> This observation <b>SHALL</b> contain exactly one [1..1] <tt><b>@classCode</b>="OBS" </tt><i>Observation</i> (CodeSystem:<tt> 2.16.840.1.113883.5.6 HL7ActClass</tt>)</li><li> This observation <b>SHALL</b> contain exactly one [1..1] <tt><b>@moodCode</b>="EVN" </tt><i>Event</i> (CodeSystem:<tt> 2.16.840.1.113883.5.1001 HL7ActMood</tt>)</li><li> This observation <b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt></li><li> This observation <b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> with data type INT<p><lines><i>The number of prenatal visits for this pregnancy.</i></lines></p></li></ol> </li></ol>
+<ul><li>The time interval is used to indicate the date of the first prenatal care visit, and the date of the last visit.</li></ul></li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>entryRelationship</b></tt> <ol><li> This entryRelationship <b>SHALL</b> contain exactly one [1..1] <tt><b>@typeCode</b>="COMP" </tt></li><li> This entryRelationship <b>SHALL</b> contain zero or one [0..1] <tt><b>observation</b></tt> <ol><li> This observation <b>SHALL</b> contain exactly one [1..1] <tt><b>@classCode</b>="OBS" </tt><i>Observation</i> (CodeSystem:<tt> 2.16.840.1.113883.5.6 HL7ActClass</tt>)</li><li> This observation <b>SHALL</b> contain exactly one [1..1] <tt><b>@moodCode</b>="EVN" </tt><i>Event</i> (CodeSystem:<tt> 2.16.840.1.113883.5.1001 HL7ActMood</tt>)</li><li> This observation <b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt></li><li> This observation <b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> with data type INT<p><i>The number of prenatal visits for this pregnancy.</i></p></li></ol> </li></ol>
 </li>
 </ol>
 <ol id="aggregate">
@@ -33,12 +31,12 @@
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>@moodCode</b>="DEF" </tt> (CodeSystem:<tt> 2.16.840.1.113883.5.1001 HL7ActMood</tt>)
 </li>
 <li><b>MAY</b> contain zero or one [0..1] <tt><b>@negationInd</b></tt>
-<ul><li><p><lines><i>Value the negation indicator as true if the mother did not receive prenatal care.</i></lines></p></li></ul></li>
+<ul><li>Value the negation indicator as true if the mother did not receive prenatal care.</li></ul></li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt>
-<ul><li><p><lines><i>A code value that indicates the nature of the observation - it includes information about prenatal care received by the mother.</i></lines></p></li></ul></li>
+<ul><li>A code value that indicates the nature of the observation - it includes information about prenatal care received by the mother.</li></ul></li>
 <li><b>SHOULD</b> contain zero or one [0..1] <tt><b>effectiveTime</b></tt>
-<ul><li><p><lines><i>The time interval is used to indicate the date of the first prenatal care visit, and the date of the last visit.</i></lines></p></li></ul></li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>entryRelationship</b></tt> <ol><li> This entryRelationship <b>SHALL</b> contain exactly one [1..1] <tt><b>@typeCode</b>="COMP" </tt></li><li> This entryRelationship <b>SHALL</b> contain zero or one [0..1] <tt><b>observation</b></tt> <ol><li> This observation <b>SHALL</b> contain exactly one [1..1] <tt><b>@classCode</b>="OBS" </tt><i>Observation</i> (CodeSystem:<tt> 2.16.840.1.113883.5.6 HL7ActClass</tt>)</li><li> This observation <b>SHALL</b> contain exactly one [1..1] <tt><b>@moodCode</b>="EVN" </tt><i>Event</i> (CodeSystem:<tt> 2.16.840.1.113883.5.1001 HL7ActMood</tt>)</li><li> This observation <b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt></li><li> This observation <b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> with data type INT<p><lines><i>The number of prenatal visits for this pregnancy.</i></lines></p></li></ol> </li></ol>
+<ul><li>The time interval is used to indicate the date of the first prenatal care visit, and the date of the last visit.</li></ul></li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>entryRelationship</b></tt> <ol><li> This entryRelationship <b>SHALL</b> contain exactly one [1..1] <tt><b>@typeCode</b>="COMP" </tt></li><li> This entryRelationship <b>SHALL</b> contain zero or one [0..1] <tt><b>observation</b></tt> <ol><li> This observation <b>SHALL</b> contain exactly one [1..1] <tt><b>@classCode</b>="OBS" </tt><i>Observation</i> (CodeSystem:<tt> 2.16.840.1.113883.5.6 HL7ActClass</tt>)</li><li> This observation <b>SHALL</b> contain exactly one [1..1] <tt><b>@moodCode</b>="EVN" </tt><i>Event</i> (CodeSystem:<tt> 2.16.840.1.113883.5.1001 HL7ActMood</tt>)</li><li> This observation <b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt></li><li> This observation <b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> with data type INT<p><i>The number of prenatal visits for this pregnancy.</i></p></li></ol> </li></ol>
 </li>
 </ol>
 <section id="tableconformance"><p><table frame="all" scale="80" pgwide="1" ><tgroup cols="8" align="left" colsep = "1" rowsep = "1" > <colspec colname="col0" colnum="0" /><colspec colname="col1" colnum="1" /><colspec colname="col2" colnum="2" /><colspec colname="col3" colnum="3" /><colspec colname="col4" colnum="4" /><colspec colname="col5" colnum="5" /><colspec colname="col6" colnum="6" /><colspec colname="col7" colnum="7" /><thead> <row><entry namest="col0" nameend="col7" >vsbr::Pre-Natal Care</entry>  </row>  <row><entry namest="col0" nameend="col7" >cda::act[cda:templateId/@root = 2.16.840.1.113883.10.20.26.32]/</entry>  </row>  <row><entry>Name</entry><entry>XPath</entry><entry>Cardinality</entry><entry>Severity</entry><entry>Nullable</entry><entry>Data Type</entry><entry>Conformance</entry><entry>Value(s)</entry></row></thead><tbody><row><entry>classCode</entry><entry>@classCode</entry><entry>1..1</entry><entry>SHALL</entry><entry>NO</entry><entry>x_ActClassDocumentEntryAct</entry><entry></entry><entry> ACCM</entry></row> 
@@ -68,15 +66,15 @@
 <codeblock id="example"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
 <act xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd" classCode="ACT" moodCode="DEF">
   <templateId root="2.16.840.1.113883.10.20.26.32"/>
-  <id root="MDHT" extension="447294864"/>
-  <code code="538180573"/>
+  <id root="535821853" extension="MDHT"/>
+  <code code="723578702"/>
   <effectiveTime>
     <low value="2012"/>
     <high value="2012"/>
   </effectiveTime>
   <entryRelationship typeCode="COMP">
     <observation classCode="OBS" moodCode="EVN">
-      <code code="1251513274"/>
+      <code code="587128622"/>
       <value xsi:type="INT" value="1"/>
     </observation>
   </entryRelationship>

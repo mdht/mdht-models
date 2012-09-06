@@ -13,17 +13,20 @@
 <colspec colname="col2" colwidth="4*"/>
 <tbody>
 <row><entry>Value Set</entry><entry>Fetal Presentations - (OID not specified)</entry></row>
+<row><entry>Description</entry><entry>A list of the different ways a fetus may present at the point of delivery.  Note, the codes used are imaginary and will be replaced with code values from a widely used code system.
+</entry></row>
 </tbody></tgroup></table>
-<table><tgroup cols="3">
+<table><tgroup cols="4">
 <colspec colname="col1" colwidth="1*"/>
-<colspec colname="col2" colwidth="1*"/>
-<colspec colname="col3" colwidth="2*"/>
+<colspec colname="col2" colwidth="2*"/>
+<colspec colname="col3" colwidth="1*"/>
+<colspec colname="col4" colwidth="3*"/>
 <thead><row>
-<entry>Code</entry><entry>Code System</entry><entry>Print Name</entry>
+<entry>Concept Code</entry><entry>Concept Name</entry><entry>Code System</entry><entry>Description</entry>
 </row></thead><tbody>
-<row><entry>C</entry><entry></entry><entry>Cephalic</entry></row>
-<row><entry>B</entry><entry></entry><entry>Breech</entry></row>
-<row><entry>OTH</entry><entry></entry><entry>Other</entry></row>
+<row><entry>C</entry><entry>Cephalic</entry><entry></entry><entry></entry></row>
+<row><entry>B</entry><entry>Breech</entry><entry></entry><entry></entry></row>
+<row><entry>OTH</entry><entry>Other</entry><entry></entry><entry></entry></row>
 </tbody></tgroup></table>
 </section>
 </body>
