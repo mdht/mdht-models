@@ -8,20 +8,18 @@
 <resourceid id="2.16.840.1.113883.10.20.26.1.1"/>
 </prolog>
 <body>
-<section id="knownSubclasses">
-</section>
 <section id="description">
 </section>
 <ol id="conformance">
 <li><b>SHALL</b> contain zero or one [0..1] <tt><b>code</b></tt>, where the @code <b>SHALL</b> be selected from (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>)
-<ul><li><p><lines><i>A code to indicate this is the section containing death reporting information.</i></lines></p></li></ul></li>
+<ul><li>A code to indicate this is the section containing death reporting information.</li></ul></li>
 <li>Contains zero or one [0..1] <tt><b>text</b></tt>
-<ul><li><p><lines><i>Contains, as text entries that can be rendered using a browser, the content of the structured information from the entries within the section.</i></lines></p></li></ul></li>
+<ul><li>Contains, as text entries that can be rendered using a browser, the content of the structured information from the entries within the section.</li></ul></li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>entry</b></tt>
 <ol>
 <li>Contains exactly one [1..1] <xref href="../TimeOfDeath.dita">Time of Death</xref> (templateId: <tt>2.16.840.1.113883.10.20.26.1.13</tt>)</li></ol></li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>entry</b></tt>
-<ul><li><p><lines><i>The report is expected to capture information about the physical location of death, either as an address or as a description.</i></lines></p></li></ul><ol>
+<ul><li>The report is expected to capture information about the physical location of death, either as an address or as a description.</li></ul><ol>
 <li>Contains exactly one [1..1] <xref href="../LocationOfDeath.dita">Location of Death</xref> (templateId: <tt>2.16.840.1.113883.10.20.26.1.10</tt>)</li></ol></li>
 <li><b>MAY</b> contain zero or one [0..1] <tt><b>entry</b></tt>
 <ol>
@@ -59,15 +57,15 @@
 </ol>
 <ol id="aggregate">
 <li><b>SHALL</b> contain zero or one [0..1] <tt><b>code</b></tt>, where the @code <b>SHALL</b> be selected from (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>)
-<ul><li><p><lines><i>A code to indicate this is the section containing death reporting information.</i></lines></p></li></ul></li>
+<ul><li>A code to indicate this is the section containing death reporting information.</li></ul></li>
 <li>Contains zero or one [0..1] <tt><b>text</b></tt>
-<ul><li><p><lines><i>Contains, as text entries that can be rendered using a browser, the content of the structured information from the entries within the section.</i></lines></p></li></ul></li>
+<ul><li>Contains, as text entries that can be rendered using a browser, the content of the structured information from the entries within the section.</li></ul></li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>entry</b></tt>
 <ol>
 <li>Contains exactly one [1..1] <xref href="../TimeOfDeath.dita">Time of Death</xref> (templateId: <tt>2.16.840.1.113883.10.20.26.1.13</tt>)</li></ol></li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>entry</b></tt>
 <ol>
-<li>Contains exactly one [1..1] <xref href="../LocationOfDeath.dita">Location of Death</xref> (templateId: <tt>2.16.840.1.113883.10.20.26.1.10</tt>)</li></ol><ul><li><p><lines><i>The report is expected to capture information about the physical location of death, either as an address or as a description.</i></lines></p></li></ul></li>
+<li>Contains exactly one [1..1] <xref href="../LocationOfDeath.dita">Location of Death</xref> (templateId: <tt>2.16.840.1.113883.10.20.26.1.10</tt>)</li></ol><ul><li>The report is expected to capture information about the physical location of death, either as an address or as a description.</li></ul></li>
 <li><b>MAY</b> contain zero or one [0..1] <tt><b>entry</b></tt>
 <ol>
 <li>Contains exactly one [1..1] <xref href="../DeathCertification.dita">Death Certification</xref> (templateId: <tt>2.16.840.1.113883.10.20.26.1.7</tt>)</li></ol></li>
@@ -102,16 +100,16 @@
 <ol>
 <li>Contains exactly one [1..1] <xref href="../DeathLocationType.dita">Death Location Type</xref> (templateId: <tt>2.16.840.1.113883.10.20.26.1.8</tt>)</li></ol></li>
 </ol>
-<section id="tableconformance"><p><table frame="all" scale="80" pgwide="1" ><tgroup cols="8" align="left" colsep = "1" rowsep = "1" > <colspec colname="col0" colnum="0" /><colspec colname="col1" colnum="1" /><colspec colname="col2" colnum="2" /><colspec colname="col3" colnum="3" /><colspec colname="col4" colnum="4" /><colspec colname="col5" colnum="5" /><colspec colname="col6" colnum="6" /><colspec colname="col7" colnum="7" /><thead> <row><entry namest="col0" nameend="col7" >vsdr::Death Report Document Body</entry>  </row>  <row><entry namest="col0" nameend="col7" >/cda:ClinicalDocument/cda:component/cda:structuredBody/cda:component/cda:section[cda:templateId/@root = 2.16.840.1.113883.10.20.26.1.1]/</entry>  </row>  <row><entry>Name</entry><entry>XPath</entry><entry>Cardinality</entry><entry>Severity</entry><entry>Nullable</entry><entry>Data Type</entry><entry>Conformance</entry><entry>Value(s)</entry></row></thead><tbody><row><entry>classCode</entry><entry>@classCode</entry><entry>0..1</entry><entry></entry><entry>NO</entry><entry>ActClass</entry><entry></entry><entry> DOCSECT</entry></row> 
+<section id="tableconformance"><p><table frame="all" scale="80" pgwide="1" ><tgroup cols="8" align="left" colsep = "1" rowsep = "1" > <colspec colname="col0" colnum="0" /><colspec colname="col1" colnum="1" /><colspec colname="col2" colnum="2" /><colspec colname="col3" colnum="3" /><colspec colname="col4" colnum="4" /><colspec colname="col5" colnum="5" /><colspec colname="col6" colnum="6" /><colspec colname="col7" colnum="7" /><thead> <row><entry namest="col0" nameend="col7" >vsdr::Death Report Document Body</entry>  </row>  <row><entry namest="col0" nameend="col7" >/cda:ClinicalDocument/cda:component/cda:structuredBody/cda:component/cda:section/</entry>  </row>  <row><entry>Name</entry><entry>XPath</entry><entry>Cardinality</entry><entry>Severity</entry><entry>Nullable</entry><entry>Data Type</entry><entry>Conformance</entry><entry>Value(s)</entry></row></thead><tbody><row><entry>classCode</entry><entry>@classCode</entry><entry>0..1</entry><entry></entry><entry>NO</entry><entry>ActClass</entry><entry></entry><entry> DOCSECT</entry></row> 
 <row><entry>moodCode</entry><entry>@moodCode</entry><entry>0..1</entry><entry></entry><entry>NO</entry><entry>ActMood</entry><entry></entry><entry> EVN</entry></row> 
 <row><entry>nullFlavor</entry><entry>@nullFlavor</entry><entry>0..1</entry><entry></entry><entry>NO</entry><entry>NullFlavor</entry><entry></entry><entry> ASKU</entry></row> 
 <row><entry>sectionId</entry><entry>@sectionId</entry><entry>0..1</entry><entry></entry><entry>NO</entry><entry>String</entry><entry></entry><entry> </entry></row> 
-<row><entry>code</entry><entry>code</entry><entry>0..1</entry><entry>SHALL</entry><entry>NO</entry><entry>CE</entry><entry></entry><entry>LOINC 2.16.840.1.113883.6.1 null</entry></row> 
+<row><entry>code</entry><entry>code</entry><entry>0..1</entry><entry>SHALL</entry><entry>NO</entry><entry>CE</entry><entry></entry><entry>LOINC 2.16.840.1.113883.6.1 </entry></row> 
 <row><entry>confidentialityCode</entry><entry>confidentialityCode</entry><entry>0..1</entry><entry></entry><entry>YES</entry><entry>CE</entry><entry></entry><entry> </entry></row> 
 <row><entry>id</entry><entry>id</entry><entry>0..1</entry><entry></entry><entry>YES</entry><entry>II</entry><entry></entry><entry> </entry></row> 
 <row><entry>languageCode</entry><entry>languageCode</entry><entry>0..1</entry><entry></entry><entry>YES</entry><entry>CS</entry><entry></entry><entry> </entry></row> 
 <row><entry>realmCode</entry><entry>realmCode</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>CS</entry><entry></entry><entry> </entry></row> 
-<row><entry>templateId</entry><entry>templateId</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>II</entry><entry></entry><entry> 2.16.840.1.113883.10.20.26.1.1</entry></row> 
+<row><entry>templateId</entry><entry>templateId</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>II</entry><entry></entry><entry> </entry></row> 
 <row><entry>title</entry><entry>title</entry><entry>0..1</entry><entry></entry><entry>YES</entry><entry>ST</entry><entry></entry><entry> </entry></row> 
 <row><entry>author</entry><entry>author</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>Author</entry><entry></entry><entry> </entry></row> 
 <row><entry>autopsy Performance</entry><entry>cda:entry/cda:observation[cda:templateId/@root = 2.16.840.1.113883.10.20.26.1.2]</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>Autopsy Performance</entry><entry></entry><entry> </entry></row> 
@@ -119,13 +117,13 @@
 <row><entry>cause of Death</entry><entry>cda:entry/cda:organizer[cda:templateId/@root = 2.16.840.1.113883.10.20.26.1.6]</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>Death Causal Information</entry><entry></entry><entry> </entry></row> 
 <row><entry>component</entry><entry>component</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>Component5</entry><entry></entry><entry> </entry></row> 
 <row><entry>coroner Case Transfer</entry><entry>cda:entry/cda:observation[cda:templateId/@root = 2.16.840.1.113883.10.20.26.1.4]</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>Coroner Case Transfer</entry><entry></entry><entry> </entry></row> 
-<row><entry>coroner Referral</entry><entry>cda:entry/cda:observation[cda:templateId/@root = 2.16.840.1.113883.10.20.26.1.5]</entry><entry>0..1</entry><entry>MAY</entry><entry>YES</entry><entry>Coroner Referral</entry><entry></entry><entry> </entry></row> 
+<row><entry>coroner Referral</entry><entry>cda:entry/cda:observation</entry><entry>0..1</entry><entry>MAY</entry><entry>YES</entry><entry>Coroner Referral</entry><entry></entry><entry> </entry></row> 
 <row><entry>death Certification</entry><entry>cda:entry/cda:observation[cda:templateId/@root = 2.16.840.1.113883.10.20.26.1.7]</entry><entry>0..1</entry><entry>MAY</entry><entry>YES</entry><entry>Death Certification</entry><entry></entry><entry> </entry></row> 
 <row><entry>deathLocationType</entry><entry>cda:entry/cda:observation[cda:templateId/@root = 2.16.840.1.113883.10.20.26.1.8]</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>DeathLocationType</entry><entry></entry><entry> </entry></row> 
 <row><entry>entry</entry><entry>entry</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>Entry</entry><entry></entry><entry> MISSINGTYPE</entry></row> 
 <row><entry>informant</entry><entry>informant</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>Informant12</entry><entry></entry><entry> </entry></row> 
 <row><entry>injury</entry><entry>cda:entry/cda:organizer[cda:templateId/@root = 2.16.840.1.113883.10.20.26.1.9]</entry><entry>0..1</entry><entry>SHOULD</entry><entry>YES</entry><entry>Injury</entry><entry></entry><entry> </entry></row> 
-<row><entry>location of Death</entry><entry>cda:entry/cda:observation[cda:templateId/@root = 2.16.840.1.113883.10.20.26.1.10]</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>Location of Death</entry><entry></entry><entry> </entry></row> 
+<row><entry>location of Death</entry><entry>cda:entry/cda:observation</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>Location of Death</entry><entry></entry><entry> </entry></row> 
 <row><entry>manner of Death</entry><entry>cda:entry/cda:observation[cda:templateId/@root = 2.16.840.1.113883.10.20.26.1.11]</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>Manner of Death</entry><entry></entry><entry> </entry></row> 
 <row><entry>pregnancy Status</entry><entry>cda:entry/cda:observation[cda:templateId/@root = 2.16.840.1.113883.10.20.26.1.12]</entry><entry>0..1</entry><entry>MAY</entry><entry>YES</entry><entry>Pregnancy Status</entry><entry></entry><entry> </entry></row> 
 <row><entry>subject</entry><entry>subject</entry><entry>0..1</entry><entry></entry><entry>YES</entry><entry>Subject</entry><entry></entry><entry> </entry></row> 
@@ -136,9 +134,8 @@
 </tbody></tgroup></table></p></section>
 <codeblock id="example"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
 <section xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd">
-  <templateId root="2.16.840.1.113883.10.20.26.1.1"/>
-  <id root="MDHT" extension="932228780"/>
-  <code codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+  <id root="914307331" extension="MDHT"/>
+  <code code="1924392694"/>
   <title>TEXT FOR TITLE</title>
   <entry>
     <observation/>
@@ -149,7 +146,7 @@
   <entry>
     <observation>
       <templateId root="2.16.840.1.113883.10.20.26.1.7"/>
-      <id root="MDHT" extension="207805920"/>
+      <id root="1528735073" extension="MDHT"/>
       <code code="69437-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Death Certifier"/>
       <effectiveTime>
         <low value="2012"/>
@@ -166,10 +163,10 @@
     <observation/>
   </entry>
   <entry>
-    <observation classCode="OBS">
+    <observation>
       <templateId root="2.16.840.1.113883.10.20.26.1.12"/>
-      <id root="MDHT" extension="1111222242"/>
-      <code code="69442-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Timing of recent pregancy related to death"/>
+      <id root="95568158" extension="MDHT"/>
+      <code codeSystem="2.16.840.1.113883.6.1" displayName="Timing of recent pregancy related to death"/>
       <effectiveTime>
         <low value="2012"/>
         <high value="2012"/>
@@ -179,7 +176,7 @@
   <entry>
     <observation classCode="OBS" moodCode="EVN">
       <templateId root="2.16.840.1.113883.10.20.26.1.14"/>
-      <id root="MDHT" extension="1638200094"/>
+      <id root="722606563" extension="MDHT"/>
       <code code="69443-0" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Tobacco Use"/>
       <effectiveTime>
         <low value="2012"/>
@@ -190,7 +187,7 @@
   <entry>
     <organizer classCode="CLUSTER" moodCode="EVN">
       <templateId root="2.16.840.1.113883.10.20.26.1.9"/>
-      <id root="MDHT" extension="719425091"/>
+      <id root="906054802" extension="MDHT"/>
       <code code="LOINC TBD" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Injury Cluster"/>
       <statusCode code="completed"/>
       <effectiveTime>
@@ -220,10 +217,10 @@
     </organizer>
   </entry>
   <entry>
-    <organizer classCode="CLUSTER" moodCode="EVN">
+    <organizer>
       <templateId root="2.16.840.1.113883.10.20.26.1.6"/>
-      <id root="MDHT" extension="89979735"/>
-      <code code="69453-9" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Cause Of Death"/>
+      <id root="1693372647" extension="MDHT"/>
+      <code code="69453-9" codeSystem="2.16.840.1.113883.6.1" displayName="Cause Of Death"/>
       <statusCode code="completed"/>
       <effectiveTime>
         <low value="2012"/>
@@ -249,10 +246,10 @@
     </organizer>
   </entry>
   <entry>
-    <observation classCode="OBS">
+    <observation>
       <templateId root="2.16.840.1.113883.10.20.26.1.2"/>
-      <id root="MDHT" extension="773435569"/>
-      <code code="21986-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Autopsy Status"/>
+      <id root="1094519191" extension="MDHT"/>
+      <code codeSystem="2.16.840.1.113883.6.1" displayName="Autopsy Status"/>
       <effectiveTime>
         <low value="2012"/>
         <high value="2012"/>
@@ -263,10 +260,10 @@
     </observation>
   </entry>
   <entry>
-    <observation classCode="OBS">
+    <observation>
       <templateId root="2.16.840.1.113883.10.20.26.1.3"/>
-      <id root="MDHT" extension="1713689971"/>
-      <code code="69436-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Autopsy results available"/>
+      <id root="489104827" extension="MDHT"/>
+      <code codeSystem="2.16.840.1.113883.6.1" displayName="Autopsy results available"/>
       <effectiveTime>
         <low value="2012"/>
         <high value="2012"/>
@@ -274,10 +271,9 @@
     </observation>
   </entry>
   <entry>
-    <observation classCode="OBS">
-      <templateId root="2.16.840.1.113883.10.20.26.1.5"/>
-      <id root="MDHT" extension="713385423"/>
-      <code code="69438-0" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Coroner Referral Reason"/>
+    <observation>
+      <id root="1073194271" extension="MDHT"/>
+      <code code="1881855674"/>
       <effectiveTime>
         <low value="2012"/>
         <high value="2012"/>
@@ -287,7 +283,7 @@
   <entry>
     <observation classCode="OBS">
       <templateId root="2.16.840.1.113883.10.20.26.1.4"/>
-      <id root="MDHT" extension="1485078984"/>
+      <id root="281913885" extension="MDHT"/>
       <code code="LOINC TBD" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Coroner Assignment"/>
       <effectiveTime>
         <low value="2012"/>
@@ -298,7 +294,7 @@
   <entry>
     <observation classCode="OBS" moodCode="EVN">
       <templateId root="2.16.840.1.113883.10.20.26.1.8"/>
-      <id root="MDHT" extension="452340146"/>
+      <id root="1844453330" extension="MDHT"/>
       <code code="LOINC TBD" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
       <effectiveTime>
         <low value="2012"/>

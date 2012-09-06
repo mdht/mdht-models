@@ -15,19 +15,20 @@
 <row><entry>Value Set</entry><entry>DeathLocationTypeCodes - (OID not specified)</entry></row>
 <row><entry>Code System</entry><entry>Death Location Types - OID TBD</entry></row>
 </tbody></tgroup></table>
-<table><tgroup cols="3">
+<table><tgroup cols="4">
 <colspec colname="col1" colwidth="1*"/>
-<colspec colname="col2" colwidth="1*"/>
-<colspec colname="col3" colwidth="2*"/>
+<colspec colname="col2" colwidth="2*"/>
+<colspec colname="col3" colwidth="1*"/>
+<colspec colname="col4" colwidth="3*"/>
 <thead><row>
-<entry>Code</entry><entry>Code System</entry><entry>Print Name</entry>
+<entry>Concept Code</entry><entry>Concept Name</entry><entry>Code System</entry><entry>Description</entry>
 </row></thead><tbody>
-<row><entry>H-IN</entry><entry>Death Location Types</entry><entry>Hospital Inpatient</entry></row>
-<row><entry>H-ER/OP</entry><entry>Death Location Types</entry><entry>Hospital Emergency Department or Outpatient</entry></row>
-<row><entry>H-DOA</entry><entry>Death Location Types</entry><entry>Hospital Dead on Arrival</entry></row>
-<row><entry>NH</entry><entry>Death Location Types</entry><entry>Nursing Home</entry></row>
-<row><entry>RES</entry><entry>Death Location Types</entry><entry>Residence</entry></row>
-<row><entry>OTH</entry><entry>Death Location Types</entry><entry>Other</entry></row>
+<row><entry>H-IN</entry><entry>Hospital Inpatient</entry><entry>Death Location Types</entry><entry></entry></row>
+<row><entry>H-ER/OP</entry><entry>Hospital Emergency Department or Outpatient</entry><entry>Death Location Types</entry><entry></entry></row>
+<row><entry>H-DOA</entry><entry>Hospital Dead on Arrival</entry><entry>Death Location Types</entry><entry></entry></row>
+<row><entry>NH</entry><entry>Nursing Home</entry><entry>Death Location Types</entry><entry></entry></row>
+<row><entry>RES</entry><entry>Residence</entry><entry>Death Location Types</entry><entry></entry></row>
+<row><entry>OTH</entry><entry>Other</entry><entry>Death Location Types</entry><entry></entry></row>
 </tbody></tgroup></table>
 </section>
 </body>
