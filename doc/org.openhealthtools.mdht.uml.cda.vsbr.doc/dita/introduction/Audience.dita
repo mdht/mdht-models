@@ -4,7 +4,8 @@
 <topic id="topicId" xml:lang="en-us">
 	<title>Audience</title>
 	<body>
-		<p>The audience for this document includes software developers and
-			implementers who wish to develop...</p>
+		<p>The audience for this document includes software developers and implementers who wish to develop
+		 specifications for reporting the vital records birth and fetal death information spcecified within
+		 this document.</p>
 	</body>
 </topic>

@@ -2,22 +2,14 @@
 <!DOCTYPE bookmap PUBLIC "-//OASIS//DTD DITA BookMap//EN" "bookmap.dtd">
 <bookmap id="cdabook">
 	<booktitle>
-		<booklibrary>Implementation Guide for Reporting Birth and Fetal Death Information</booklibrary>
-		<mainbooktitle>HL7 Implementation Guide</mainbooktitle>
-		<booktitlealt>Optional Subtitle</booktitlealt>
+		<booklibrary>HL7 Implementation Guide</booklibrary>
+		<mainbooktitle>Reporting Birth and Fetal Death</mainbooktitle>
+		<booktitlealt>US Realm</booktitlealt>
 		<booktitlealt><image href="images/CDAToolsLogo.png"/></booktitlealt>
-		<booktitlealt>Ballot Version</booktitlealt>
+		<booktitlealt>DSTU Ballot</booktitlealt>
 		<booktitlealt audience="developer">(Consolidated Developer Documentation)</booktitlealt>
 	</booktitle>
 	<bookmeta>
-	
-	  <prodinfo>
-					<prodname>CDAR2L3_IG_VSBR</prodname>
-					<vrmlist>
-						<vrm release="DSTUR1" version="2012JUL" ></vrm>
-					</vrmlist>
-				</prodinfo>
-				
 		<bookid><booknumber></booknumber>
 			<maintainer><organization>Open Health Tools, Model Driven Health Tools (MDHT)</organization><person></person></maintainer>
 		</bookid>
@@ -38,9 +30,9 @@
 			<toc/><figurelist/><tablelist/>
 		</booklists> 
 	</frontmatter>
-	
+
 	<chapter format="ditamap" href="introduction/introduction.ditamap"/>
-	
+
 	<chapter format="ditamap" href="content/content.ditamap"/>
 
 	<backmatter>

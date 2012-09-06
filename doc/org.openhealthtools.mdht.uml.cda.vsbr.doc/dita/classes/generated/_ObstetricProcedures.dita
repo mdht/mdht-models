@@ -8,10 +8,8 @@
 <resourceid id="2.16.840.1.113883.10.20.26.29"/>
 </prolog>
 <body>
-<section id="knownSubclasses">
-</section>
 <section id="description">
-<p><lines><i>Information on whether a particular medical treatment or invasive/manipulative procedure was performed during this pregnancy specifically in the treatment of the pregnancy, management of labor and/or delivery.</i></lines></p>
+<p>Information on whether a particular medical treatment or invasive/manipulative procedure was performed during this pregnancy specifically in the treatment of the pregnancy, management of labor and/or delivery.</p>
 </section>
 <ol id="conformance">
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>@classCode</b>="OBS" </tt><i>Observation</i> (CodeSystem:<tt> 2.16.840.1.113883.5.6 HL7ActClass</tt>)
@@ -19,7 +17,7 @@
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>@moodCode</b>="EVN" </tt><i>Event</i> (CodeSystem:<tt> 2.16.840.1.113883.5.1001 HL7ActMood</tt>)
 </li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt>, where the @code <b>SHALL</b> be selected from ValueSet<tt> <xref href="../../terminology/ObstetricProcedures.dita">Obstetric Procedures</xref></tt><b> STATIC</b>
-<ul><li><p><lines><i>A code value that indicates the nature of the observation - it specifies the nature of the obstetric procedure about which information is provided.</i></lines></p></li></ul></li>
+<ul><li>A code value that indicates the nature of the observation - it specifies the nature of the obstetric procedure about which information is provided.</li></ul></li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> with data type BL
 </li>
 </ol>
@@ -29,7 +27,7 @@
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>@moodCode</b>="EVN" </tt><i>Event</i> (CodeSystem:<tt> 2.16.840.1.113883.5.1001 HL7ActMood</tt>)
 </li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt>, where the @code <b>SHALL</b> be selected from ValueSet<tt> <xref href="../../terminology/ObstetricProcedures.dita">Obstetric Procedures</xref></tt><b> STATIC</b>
-<ul><li><p><lines><i>A code value that indicates the nature of the observation - it specifies the nature of the obstetric procedure about which information is provided.</i></lines></p></li></ul></li>
+<ul><li>A code value that indicates the nature of the observation - it specifies the nature of the obstetric procedure about which information is provided.</li></ul></li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> with data type BL
 </li>
 </ol>
@@ -67,8 +65,8 @@
 <codeblock id="example"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
 <observation xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd" classCode="OBS" moodCode="EVN">
   <templateId root="2.16.840.1.113883.10.20.26.29"/>
-  <id root="MDHT" extension="1711053697"/>
-  <code code="442193511"/>
+  <id root="1355414907" extension="MDHT"/>
+  <code code="1848643567"/>
   <effectiveTime>
     <low value="2012"/>
     <high value="2012"/>

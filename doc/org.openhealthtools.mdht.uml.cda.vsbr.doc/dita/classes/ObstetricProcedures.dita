@@ -5,8 +5,6 @@
 <shortdesc conref="generated/_ObstetricProcedures.dita#classId/shortdesc"></shortdesc>
 <prolog conref="generated/_ObstetricProcedures.dita#classId/prolog"></prolog>
 <body>
-<section conref="generated/_ObstetricProcedures.dita#classId/knownSubclasses">
-</section>
 <!-- TODO: insert non-model class description markup here -->
 <section conref="generated/_ObstetricProcedures.dita#classId/description">
 </section>

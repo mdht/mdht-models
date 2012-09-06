@@ -13,18 +13,21 @@
 <colspec colname="col2" colwidth="4*"/>
 <tbody>
 <row><entry>Value Set</entry><entry>Labor Onsets - (OID not specified)</entry></row>
+<row><entry>Description</entry><entry>A list of possible onsets of labor.  Note, the codes used are imaginary and will be replaced with code values from a widely used code system.
+</entry></row>
 </tbody></tgroup></table>
-<table><tgroup cols="3">
+<table><tgroup cols="4">
 <colspec colname="col1" colwidth="1*"/>
-<colspec colname="col2" colwidth="1*"/>
-<colspec colname="col3" colwidth="2*"/>
+<colspec colname="col2" colwidth="2*"/>
+<colspec colname="col3" colwidth="1*"/>
+<colspec colname="col4" colwidth="3*"/>
 <thead><row>
-<entry>Code</entry><entry>Code System</entry><entry>Print Name</entry>
+<entry>Concept Code</entry><entry>Concept Name</entry><entry>Code System</entry><entry>Description</entry>
 </row></thead><tbody>
-<row><entry>PR</entry><entry></entry><entry>Premature Rupture</entry></row>
-<row><entry>PPL</entry><entry></entry><entry>Precipitous labor</entry></row>
-<row><entry>PLL</entry><entry></entry><entry>Prolonged Labor</entry></row>
-<row><entry>NONE</entry><entry></entry><entry>Note of the cited unusual onsets</entry></row>
+<row><entry>PR</entry><entry>Premature Rupture</entry><entry></entry><entry></entry></row>
+<row><entry>PPL</entry><entry>Precipitous labor</entry><entry></entry><entry></entry></row>
+<row><entry>PLL</entry><entry>Prolonged Labor</entry><entry></entry><entry></entry></row>
+<row><entry>NONE</entry><entry>Note of the cited unusual onsets</entry><entry></entry><entry></entry></row>
 </tbody></tgroup></table>
 </section>
 </body>
