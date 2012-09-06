@@ -65,12 +65,12 @@ public class PreoperativeDiagnosisSectionImpl
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @generated
 	 */
 	@Override
-	public boolean validatePreoperativeDiagnosisSectionTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validatePreoperativeDiagnosisSectionTemplateId(
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return PreoperativeDiagnosisSectionOperations.validatePreoperativeDiagnosisSectionTemplateId(this, diagnostics, context);
 	}
 

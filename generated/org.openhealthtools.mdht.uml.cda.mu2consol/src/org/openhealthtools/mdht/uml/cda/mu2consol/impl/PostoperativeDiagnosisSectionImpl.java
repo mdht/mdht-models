@@ -65,12 +65,12 @@ public class PostoperativeDiagnosisSectionImpl
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @generated
 	 */
 	@Override
-	public boolean validatePostoperativeDiagnosisSectionTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validatePostoperativeDiagnosisSectionTemplateId(
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return PostoperativeDiagnosisSectionOperations.validatePostoperativeDiagnosisSectionTemplateId(this, diagnostics, context);
 	}
 

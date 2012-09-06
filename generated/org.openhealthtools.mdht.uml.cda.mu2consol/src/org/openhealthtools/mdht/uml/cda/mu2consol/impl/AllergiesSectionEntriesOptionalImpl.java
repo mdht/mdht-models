@@ -65,17 +65,16 @@ public class AllergiesSectionEntriesOptionalImpl
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @generated
 	 */
-  @Override
-  public boolean validateAllergiesSectionEntriesOptionalTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context)
-  {
+	@Override
+	public boolean validateAllergiesSectionEntriesOptionalTemplateId(
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return AllergiesSectionEntriesOptionalOperations.validateAllergiesSectionEntriesOptionalTemplateId(this, diagnostics, context);
 	}
 
-  /**
+	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @generated
 	 */

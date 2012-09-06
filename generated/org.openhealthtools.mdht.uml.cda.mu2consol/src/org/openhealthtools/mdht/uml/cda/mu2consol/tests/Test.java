@@ -29,19 +29,35 @@ public class Test {
 	public static void main(String[] args) {
 
 		// System.out.println("======testSOCR=========");
-//		 testSOCR("socr_sample");
-//		 testSOCR("socr_sample_withDSTemplateId");
-//		 System.out.println("=====testSOCR==========");
-		//
+		// testSOCR("socr_sample");
+		// testSOCR("socr_sample_withDSTemplateId");
+		// System.out.println("=====testSOCR==========");
+
 		// System.out.println("======testAsSOCR=========");
-//		 testAsSOCR("socr_sample");
-		 testAsSOCR("socr_sample_withDSTemplateId");
+		// testAsSOCR("socr_sample");
+//		testAsSOCR("socr_sample_withDSTemplateId");
 		// System.out.println("=====testAsSOCR==========");
 
+		// System.out.println("======validateSOCR=========");
 		// validateSOCR("socr_sample");
-		validateDocument("socr_sample", "SummaryOfCareRecord");
+		// System.out.println("======validateSOCR=========");
+
+		// System.out.println("======validateDocument=========");
+		// validateDocument("socr_sample", "SummaryOfCareRecord");
+		// validateDocument("DischargeSummary_2014Edition_sample",
+		// "SummaryOfCareRecord");
+//		validateDocument("DischargeSummary_2014Edition_sample",
+//				"ClinicalOfficeVisitSummary");
+//		validateDocument("socr_sample_withDSTemplateId",
+//		"SummaryOfCareRecord");
+		validateDocument("socr_sample_withDSTemplateId",
+		"TransitionsOfCareInpatientSummary");
+//		validateDocument("cdabook.pdf",
+//		"TransitionsOfCareAmbulatorySummary");
 		// validateDocument("socr_sample","ClinicalOfficeVisitSummary");
-//		validateDocument("socr_sample", "VDTInpatientPatientInfo");
+		// validateDocument("socr_sample", "VDTInpatientPatientInfo");
+
+		// System.out.println("======validateDocument=========");
 	}
 
 	public static void testSOCR(String fileName) {
@@ -106,14 +122,14 @@ public class Test {
 				.equalsIgnoreCase("ClinicalOfficeVisitSummary")) {
 			docType = Mu2consolPackage.eINSTANCE
 					.getClinicalOfficeVisitSummary();
-		}else if (asDocumentType
-				.equalsIgnoreCase("VDTAmbulatoryPatientInfo")) {
-			docType = Mu2consolPackage.eINSTANCE
-					.getVDTAmbulatoryPatientInfo();
-		}else if (asDocumentType
-				.equalsIgnoreCase("VDTInpatientPatientInfo")) {
-			docType = Mu2consolPackage.eINSTANCE
-					.getVDTInpatientPatientInfo();
+		} else if (asDocumentType.equalsIgnoreCase("VDTAmbulatoryPatientInfo")) {
+			docType = Mu2consolPackage.eINSTANCE.getVDTAmbulatoryPatientInfo();
+		} else if (asDocumentType.equalsIgnoreCase("VDTInpatientPatientInfo")) {
+			docType = Mu2consolPackage.eINSTANCE.getVDTInpatientPatientInfo();
+		}else if (asDocumentType.equalsIgnoreCase("TransitionsOfCareAmbulatorySummary")) {
+			docType = Mu2consolPackage.eINSTANCE.getTransitionOfCareAmbulatorySummary();
+		}else if (asDocumentType.equalsIgnoreCase("TransitionsOfCareInpatientSummary")) {
+			docType = Mu2consolPackage.eINSTANCE.getTransitionOfCareInpatientSummary();
 		}
 
 		try {
