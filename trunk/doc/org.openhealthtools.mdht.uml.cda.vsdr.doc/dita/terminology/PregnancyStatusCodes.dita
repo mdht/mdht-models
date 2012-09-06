@@ -17,20 +17,21 @@
 <row><entry>Description</entry><entry>The value set includes all the values from the Prenancy Statuses coding system.
 </entry></row>
 </tbody></tgroup></table>
-<table><tgroup cols="3">
+<table><tgroup cols="4">
 <colspec colname="col1" colwidth="1*"/>
-<colspec colname="col2" colwidth="1*"/>
-<colspec colname="col3" colwidth="2*"/>
+<colspec colname="col2" colwidth="2*"/>
+<colspec colname="col3" colwidth="1*"/>
+<colspec colname="col4" colwidth="3*"/>
 <thead><row>
-<entry>Code</entry><entry>Code System</entry><entry>Print Name</entry>
+<entry>Concept Code</entry><entry>Concept Name</entry><entry>Code System</entry><entry>Description</entry>
 </row></thead><tbody>
-<row><entry>1</entry><entry>Pregnancy Statuses</entry><entry>Not pregnant within the past year</entry></row>
-<row><entry>2</entry><entry>Pregnancy Statuses</entry><entry>Pregnant at the time of death</entry></row>
-<row><entry>3</entry><entry>Pregnancy Statuses</entry><entry>Not pregnant, but pregnant within 42 days of death</entry></row>
-<row><entry>4</entry><entry>Pregnancy Statuses</entry><entry>Not pregnant, but pregnant 43 days to 1 year before death</entry></row>
-<row><entry>9</entry><entry>Pregnancy Statuses</entry><entry>Unknown if pregnant within the past year</entry></row>
-<row><entry>8</entry><entry>Pregnancy Statuses</entry><entry>Not Applicable: Computer Generated</entry></row>
-<row><entry>7</entry><entry>Pregnancy Statuses</entry><entry>Not on Certificate</entry></row>
+<row><entry>1</entry><entry>Not pregnant within the past year</entry><entry>Pregnancy Statuses</entry><entry></entry></row>
+<row><entry>2</entry><entry>Pregnant at the time of death</entry><entry>Pregnancy Statuses</entry><entry></entry></row>
+<row><entry>3</entry><entry>Not pregnant, but pregnant within 42 days of death</entry><entry>Pregnancy Statuses</entry><entry></entry></row>
+<row><entry>4</entry><entry>Not pregnant, but pregnant 43 days to 1 year before death</entry><entry>Pregnancy Statuses</entry><entry></entry></row>
+<row><entry>9</entry><entry>Unknown if pregnant within the past year</entry><entry>Pregnancy Statuses</entry><entry></entry></row>
+<row><entry>8</entry><entry>Not Applicable: Computer Generated</entry><entry>Pregnancy Statuses</entry><entry></entry></row>
+<row><entry>7</entry><entry>Not on Certificate</entry><entry>Pregnancy Statuses</entry><entry></entry></row>
 </tbody></tgroup></table>
 </section>
 </body>

@@ -17,22 +17,23 @@
 <row><entry>Description</entry><entry>The value set includes all members of the Manners of Death coding system.
 </entry></row>
 </tbody></tgroup></table>
-<table><tgroup cols="3">
+<table><tgroup cols="4">
 <colspec colname="col1" colwidth="1*"/>
-<colspec colname="col2" colwidth="1*"/>
-<colspec colname="col3" colwidth="2*"/>
+<colspec colname="col2" colwidth="2*"/>
+<colspec colname="col3" colwidth="1*"/>
+<colspec colname="col4" colwidth="3*"/>
 <thead><row>
-<entry>Code</entry><entry>Code System</entry><entry>Print Name</entry>
+<entry>Concept Code</entry><entry>Concept Name</entry><entry>Code System</entry><entry>Description</entry>
 </row></thead><tbody>
-<row><entry>A</entry><entry>Manners Of Death</entry><entry>Accident</entry></row>
-<row><entry>C</entry><entry>Manners Of Death</entry><entry>Could not be determined</entry></row>
-<row><entry>H</entry><entry>Manners Of Death</entry><entry>Homicide</entry></row>
-<row><entry>N</entry><entry>Manners Of Death</entry><entry>Natural</entry></row>
-<row><entry>NOS</entry><entry>Manners Of Death</entry><entry>Not on Standard</entry></row>
-<row><entry>NS</entry><entry>Manners Of Death</entry><entry>Not Specified</entry></row>
-<row><entry>P</entry><entry>Manners Of Death</entry><entry>Pending Investigation</entry></row>
-<row><entry>SI</entry><entry>Manners Of Death</entry><entry>Self Inflicted</entry></row>
-<row><entry>S</entry><entry>Manners Of Death</entry><entry>Suicide</entry></row>
+<row><entry>A</entry><entry>Accident</entry><entry>Manners Of Death</entry><entry></entry></row>
+<row><entry>C</entry><entry>Could not be determined</entry><entry>Manners Of Death</entry><entry></entry></row>
+<row><entry>H</entry><entry>Homicide</entry><entry>Manners Of Death</entry><entry></entry></row>
+<row><entry>N</entry><entry>Natural</entry><entry>Manners Of Death</entry><entry></entry></row>
+<row><entry>NOS</entry><entry>Not on Standard</entry><entry>Manners Of Death</entry><entry>A value for manner of death has been provided that does not appear on the standard list.</entry></row>
+<row><entry>NS</entry><entry>Not Specified</entry><entry>Manners Of Death</entry><entry>The manner of death is not specified.</entry></row>
+<row><entry>P</entry><entry>Pending Investigation</entry><entry>Manners Of Death</entry><entry></entry></row>
+<row><entry>SI</entry><entry>Self Inflicted</entry><entry>Manners Of Death</entry><entry>The death was self-inflicted.  This could include injury, and is therefore not identical with suicide.</entry></row>
+<row><entry>S</entry><entry>Suicide</entry><entry>Manners Of Death</entry><entry></entry></row>
 </tbody></tgroup></table>
 </section>
 </body>

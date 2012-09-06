@@ -8,10 +8,8 @@
 <resourceid id="2.16.840.1.113883.10.20.26.1.12"/>
 </prolog>
 <body>
-<section id="knownSubclasses">
-</section>
 <section id="description">
-<p><lines><i>This template contains information on the pregnancy status of the deceased.</i></lines></p>
+<p>This template contains information on the pregnancy status of the deceased.</p>
 </section>
 <ol id="conformance">
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>@classCode</b>="OBS" </tt><i>Observation</i> (CodeSystem:<tt> 2.16.840.1.113883.5.6 HL7ActClass</tt>)
@@ -21,8 +19,8 @@
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt><tt><b>/@code</b>="69442-2" </tt><i>Timing of recent pregancy related to death</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>)
 </li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> with data type CE, where the @code <b>SHALL</b> be selected from (CodeSystem:<tt> 2.16.840.1.114222.4.11.6003 Pregnancy Statuses</tt>)
-<ul><li><p><lines><i>A code that provides information regarding whether or not the person was pregnant at the time of her death, or whether she was pregnant around the time of death.
-Required if the person is female and in the age range 5 to 75 years.</i></lines></p></li></ul></li>
+<ul><li>A code that provides information regarding whether or not the person was pregnant at the time of her death, or whether she was pregnant around the time of death.
+Required if the person is female and in the age range 5 to 75 years.</li></ul></li>
 </ol>
 <ol id="aggregate">
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>@classCode</b>="OBS" </tt><i>Observation</i> (CodeSystem:<tt> 2.16.840.1.113883.5.6 HL7ActClass</tt>)
@@ -32,14 +30,14 @@ Required if the person is female and in the age range 5 to 75 years.</i></lines>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt><tt><b>/@code</b>="69442-2" </tt><i>Timing of recent pregancy related to death</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>)
 </li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> with data type CE, where the @code <b>SHALL</b> be selected from (CodeSystem:<tt> 2.16.840.1.114222.4.11.6003 Pregnancy Statuses</tt>)
-<ul><li><p><lines><i>A code that provides information regarding whether or not the person was pregnant at the time of her death, or whether she was pregnant around the time of death.
-Required if the person is female and in the age range 5 to 75 years.</i></lines></p></li></ul></li>
+<ul><li>A code that provides information regarding whether or not the person was pregnant at the time of her death, or whether she was pregnant around the time of death.
+Required if the person is female and in the age range 5 to 75 years.</li></ul></li>
 </ol>
 <section id="tableconformance"><p><table frame="all" scale="80" pgwide="1" ><tgroup cols="8" align="left" colsep = "1" rowsep = "1" > <colspec colname="col0" colnum="0" /><colspec colname="col1" colnum="1" /><colspec colname="col2" colnum="2" /><colspec colname="col3" colnum="3" /><colspec colname="col4" colnum="4" /><colspec colname="col5" colnum="5" /><colspec colname="col6" colnum="6" /><colspec colname="col7" colnum="7" /><thead> <row><entry namest="col0" nameend="col7" >vsdr::Pregnancy Status</entry>  </row>  <row><entry namest="col0" nameend="col7" >cda::observation[cda:templateId/@root = 2.16.840.1.113883.10.20.26.1.12]/</entry>  </row>  <row><entry>Name</entry><entry>XPath</entry><entry>Cardinality</entry><entry>Severity</entry><entry>Nullable</entry><entry>Data Type</entry><entry>Conformance</entry><entry>Value(s)</entry></row></thead><tbody><row><entry>classCode</entry><entry>@classCode</entry><entry>1..1</entry><entry>SHALL</entry><entry>NO</entry><entry>ActClassObservation</entry><entry></entry><entry> ALRT</entry></row> 
 <row><entry>moodCode</entry><entry>@moodCode</entry><entry>1..1</entry><entry>SHALL</entry><entry>NO</entry><entry>x_ActMoodDocumentObservation</entry><entry></entry><entry> DEF</entry></row> 
 <row><entry>negationInd</entry><entry>@negationInd</entry><entry>0..1</entry><entry></entry><entry>NO</entry><entry>Boolean</entry><entry></entry><entry> </entry></row> 
 <row><entry>nullFlavor</entry><entry>@nullFlavor</entry><entry>0..1</entry><entry></entry><entry>NO</entry><entry>NullFlavor</entry><entry></entry><entry> ASKU</entry></row> 
-<row><entry>code</entry><entry>code</entry><entry>1..1</entry><entry>SHALL</entry><entry>NO</entry><entry>CD</entry><entry></entry><entry>LOINC 2.16.840.1.113883.6.1 69442-2</entry></row> 
+<row><entry>code</entry><entry>code</entry><entry>1..1</entry><entry>SHALL</entry><entry>NO</entry><entry>CD</entry><entry></entry><entry>LOINC 2.16.840.1.113883.6.1 null</entry></row> 
 <row><entry>derivationExpr</entry><entry>derivationExpr</entry><entry>0..1</entry><entry></entry><entry>YES</entry><entry>ST</entry><entry></entry><entry> </entry></row> 
 <row><entry>effectiveTime</entry><entry>effectiveTime</entry><entry>0..1</entry><entry></entry><entry>YES</entry><entry>IVL_TS</entry><entry></entry><entry> </entry></row> 
 <row><entry>id</entry><entry>id</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>II</entry><entry></entry><entry> </entry></row> 
@@ -67,15 +65,15 @@ Required if the person is female and in the age range 5 to 75 years.</i></lines>
 <row><entry>typeId</entry><entry>typeId</entry><entry>0..1</entry><entry></entry><entry>YES</entry><entry>InfrastructureRootTypeId</entry><entry></entry><entry> </entry></row> 
 </tbody></tgroup></table></p></section>
 <codeblock id="example"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
-<observation xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd" classCode="OBS">
+<observation xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd">
   <templateId root="2.16.840.1.113883.10.20.26.1.12"/>
-  <id root="MDHT" extension="2128531352"/>
-  <code code="69442-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Timing of recent pregancy related to death"/>
+  <id root="195598376" extension="MDHT"/>
+  <code codeSystem="2.16.840.1.113883.6.1" displayName="Timing of recent pregancy related to death"/>
   <effectiveTime>
     <low value="2012"/>
     <high value="2012"/>
   </effectiveTime>
-  <value xsi:type="CE" code="1887886786"/>
+  <value xsi:type="CE" code="2021992563"/>
 </observation>]]></codeblock>
 <section id="changes">
 </section>
