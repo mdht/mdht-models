@@ -66,12 +66,12 @@ public class MedicationsAdministeredSectionImpl
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @generated
 	 */
 	@Override
-	public boolean validateMedicationsAdministeredSectionTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateMedicationsAdministeredSectionTemplateId(
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return MedicationsAdministeredSectionOperations.validateMedicationsAdministeredSectionTemplateId(this, diagnostics, context);
 	}
 

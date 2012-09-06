@@ -96,9 +96,9 @@ public interface Mu2consolFactory extends EFactory {
 	ClinicalOfficeVisitSummary createClinicalOfficeVisitSummary();
 
 	/**
-	 * Returns a new object of class '<em>VDT Inpatient Patient Info</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * Returns a new object of class '<em>VDT Inpatient Patient Info</em>'. <!--
+	 * begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @return a new object of class '<em>VDT Inpatient Patient Info</em>'.
 	 * @generated
 	 */
@@ -106,12 +106,29 @@ public interface Mu2consolFactory extends EFactory {
 
 	/**
 	 * Returns a new object of class '<em>VDT Ambulatory Patient Info</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @return a new object of class '<em>VDT Ambulatory Patient Info</em>'.
 	 * @generated
 	 */
 	VDTAmbulatoryPatientInfo createVDTAmbulatoryPatientInfo();
+
+	/**
+	 * Returns a new object of class '<em>Transition Of Care Ambulatory Summary</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Transition Of Care Ambulatory Summary</em>'.
+	 * @generated
+	 */
+	TransitionOfCareAmbulatorySummary createTransitionOfCareAmbulatorySummary();
+
+	/**
+	 * Returns a new object of class '<em>Transition Of Care Inpatient Summary</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Transition Of Care Inpatient Summary</em>'.
+	 * @generated
+	 */
+	TransitionOfCareInpatientSummary createTransitionOfCareInpatientSummary();
 
 	/**
 	 * Returns a new object of class '<em>Assessment Section</em>'. <!--

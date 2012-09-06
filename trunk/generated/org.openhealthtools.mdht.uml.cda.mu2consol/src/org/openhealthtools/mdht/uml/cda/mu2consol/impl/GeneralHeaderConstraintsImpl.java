@@ -96,39 +96,19 @@ public class GeneralHeaderConstraintsImpl
 	 * @generated
 	 */
 	@Override
-	public boolean validateGeneralHeaderConstraintsRecordTargetPatientRolePatientLanguageCommunicationLanguageCode(
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsRecordTargetPatientRolePatientLanguageCommunicationLanguageCode(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public boolean validateGeneralHeaderConstraintsRecordTargetPatientRolePatientName(
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsRecordTargetPatientRolePatientName(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public boolean validateGeneralHeaderConstraintsRecordTargetPatientRolePatientAdministrativeGenderCode(
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsRecordTargetPatientRolePatientAdministrativeGenderCode(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
 	public boolean validateGeneralHeaderConstraintsRecordTargetPatientRolePatientEthnicGroupCode(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsRecordTargetPatientRolePatientEthnicGroupCode(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public boolean validateGeneralHeaderConstraintsRecordTargetPatientRolePatientEthnicGroupCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsRecordTargetPatientRolePatientEthnicGroupCodeP(this, diagnostics, context);
 	}
 
 	/**
@@ -142,13 +122,13 @@ public class GeneralHeaderConstraintsImpl
 	}
 
 	/**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
 	@Override
-	public boolean validateGeneralHeaderConstraintsRecordTargetPatientRolePatientBirthTime(
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsRecordTargetPatientRolePatientBirthTime(this, diagnostics, context);
+	public boolean validateGeneralHeaderConstraintsRecordTargetPatientRolePatientRaceCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsRecordTargetPatientRolePatientRaceCodeP(this, diagnostics, context);
 	}
 
 	/**

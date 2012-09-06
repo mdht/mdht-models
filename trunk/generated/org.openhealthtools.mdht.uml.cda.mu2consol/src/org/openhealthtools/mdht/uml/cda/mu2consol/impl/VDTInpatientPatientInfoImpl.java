@@ -36,18 +36,17 @@ import org.openhealthtools.mdht.uml.cda.mu2consol.VDTInpatientPatientInfo;
 import org.openhealthtools.mdht.uml.cda.mu2consol.operations.VDTInpatientPatientInfoOperations;
 
 /**
- * <!-- begin-user-doc -->
- * An implementation of the model object '<em><b>VDT Inpatient Patient Info</b></em>'.
- * <!-- end-user-doc -->
+ * <!-- begin-user-doc --> An implementation of the model object '
+ * <em><b>VDT Inpatient Patient Info</b></em>'. <!-- end-user-doc -->
  * <p>
  * </p>
  *
  * @generated
  */
-public class VDTInpatientPatientInfoImpl extends GeneralHeaderConstraintsImpl implements VDTInpatientPatientInfo {
+public class VDTInpatientPatientInfoImpl extends GeneralHeaderConstraintsImpl
+		implements VDTInpatientPatientInfo {
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @generated
 	 */
 	protected VDTInpatientPatientInfoImpl() {
@@ -55,8 +54,7 @@ public class VDTInpatientPatientInfoImpl extends GeneralHeaderConstraintsImpl im
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @generated
 	 */
 	@Override
@@ -65,143 +63,142 @@ public class VDTInpatientPatientInfoImpl extends GeneralHeaderConstraintsImpl im
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateVDTInpatientPatientInfoResponsibleParty(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateVDTInpatientPatientInfoResponsibleParty(
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return VDTInpatientPatientInfoOperations.validateVDTInpatientPatientInfoResponsibleParty(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateVDTInpatientPatientInfoMedicationList(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateVDTInpatientPatientInfoMedicationList(
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return VDTInpatientPatientInfoOperations.validateVDTInpatientPatientInfoMedicationList(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateVDTInpatientPatientInfoCanHaveEitherVitalSignsRequiedOrOptionalEntry(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateVDTInpatientPatientInfoCanHaveEitherVitalSignsRequiedOrOptionalEntry(
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return VDTInpatientPatientInfoOperations.validateVDTInpatientPatientInfoCanHaveEitherVitalSignsRequiedOrOptionalEntry(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateVDTInpatientPatientInfoCanHaveEitherAllergyRequiredOrOptionalEntry(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateVDTInpatientPatientInfoCanHaveEitherAllergyRequiredOrOptionalEntry(
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return VDTInpatientPatientInfoOperations.validateVDTInpatientPatientInfoCanHaveEitherAllergyRequiredOrOptionalEntry(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateVDTInpatientPatientInfoSocialHistorySection(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateVDTInpatientPatientInfoSocialHistorySection(
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return VDTInpatientPatientInfoOperations.validateVDTInpatientPatientInfoSocialHistorySection(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateVDTInpatientPatientInfoProblemSection(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateVDTInpatientPatientInfoProblemSection(
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return VDTInpatientPatientInfoOperations.validateVDTInpatientPatientInfoProblemSection(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateVDTInpatientPatientInfoResultsSection(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateVDTInpatientPatientInfoResultsSection(
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return VDTInpatientPatientInfoOperations.validateVDTInpatientPatientInfoResultsSection(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateVDTInpatientPatientInfoPlanOfCareSection(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateVDTInpatientPatientInfoPlanOfCareSection(
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return VDTInpatientPatientInfoOperations.validateVDTInpatientPatientInfoPlanOfCareSection(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateVDTInpatientPatientInfoProceduresSection(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateVDTInpatientPatientInfoProceduresSection(
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return VDTInpatientPatientInfoOperations.validateVDTInpatientPatientInfoProceduresSection(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateVDTInpatientPatientInfoSocialHistorySectionTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateVDTInpatientPatientInfoSocialHistorySectionTemplateId(
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return VDTInpatientPatientInfoOperations.validateVDTInpatientPatientInfoSocialHistorySectionTemplateId(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateVDTInpatientPatientInfomu2consolSocialHistorySectionSmokingStatusObservation(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateVDTInpatientPatientInfomu2consolSocialHistorySectionSmokingStatusObservation(
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return VDTInpatientPatientInfoOperations.validateVDTInpatientPatientInfomu2consolSocialHistorySectionSmokingStatusObservation(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateVDTInpatientPatientInfoHospitalAdmissionMedicationsSectionEntriesOptionalTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateVDTInpatientPatientInfoHospitalAdmissionMedicationsSectionEntriesOptionalTemplateId(
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return VDTInpatientPatientInfoOperations.validateVDTInpatientPatientInfoHospitalAdmissionMedicationsSectionEntriesOptionalTemplateId(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateVDTInpatientPatientInfomu2consolHospitalAdmissionMedicationsSectionEntriesOptionalAdmissionMedication(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateVDTInpatientPatientInfomu2consolHospitalAdmissionMedicationsSectionEntriesOptionalAdmissionMedication(
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return VDTInpatientPatientInfoOperations.validateVDTInpatientPatientInfomu2consolHospitalAdmissionMedicationsSectionEntriesOptionalAdmissionMedication(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateVDTInpatientPatientInfomu2consolPlanOfCareSectionCarePlanningForPlanOfCare(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateVDTInpatientPatientInfomu2consolPlanOfCareSectionCarePlanningForPlanOfCare(
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return VDTInpatientPatientInfoOperations.validateVDTInpatientPatientInfomu2consolPlanOfCareSectionCarePlanningForPlanOfCare(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateVDTInpatientPatientInfoPlanOfCareSectionTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateVDTInpatientPatientInfoPlanOfCareSectionTemplateId(
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return VDTInpatientPatientInfoOperations.validateVDTInpatientPatientInfoPlanOfCareSectionTemplateId(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @generated
 	 */
 	public SocialHistorySection getSocialHistorySection() {
@@ -209,8 +206,7 @@ public class VDTInpatientPatientInfoImpl extends GeneralHeaderConstraintsImpl im
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @generated
 	 */
 	public ProblemSection getProblemSection() {
@@ -218,8 +214,7 @@ public class VDTInpatientPatientInfoImpl extends GeneralHeaderConstraintsImpl im
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @generated
 	 */
 	public MedicationsSection getMedicationsSection() {
@@ -227,8 +222,7 @@ public class VDTInpatientPatientInfoImpl extends GeneralHeaderConstraintsImpl im
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @generated
 	 */
 	public HospitalAdmissionMedicationsSectionEntriesOptional getHospitalAdmissionMedicationsSectionEntriesOptional() {
@@ -236,8 +230,7 @@ public class VDTInpatientPatientInfoImpl extends GeneralHeaderConstraintsImpl im
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @generated
 	 */
 	public HospitalDischargeMedicationsSection getHospitalDischargeMedicationsSection() {
@@ -245,8 +238,7 @@ public class VDTInpatientPatientInfoImpl extends GeneralHeaderConstraintsImpl im
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @generated
 	 */
 	public AllergiesSection getAllergiesSection() {
@@ -254,8 +246,7 @@ public class VDTInpatientPatientInfoImpl extends GeneralHeaderConstraintsImpl im
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @generated
 	 */
 	public AllergiesSectionEntriesOptional getAllergiesSectionEntriesOptional() {
@@ -263,8 +254,7 @@ public class VDTInpatientPatientInfoImpl extends GeneralHeaderConstraintsImpl im
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @generated
 	 */
 	public ResultsSection getResultsSection() {
@@ -272,8 +262,7 @@ public class VDTInpatientPatientInfoImpl extends GeneralHeaderConstraintsImpl im
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @generated
 	 */
 	public VitalSignsSection getVitalSignsSection() {
@@ -281,8 +270,7 @@ public class VDTInpatientPatientInfoImpl extends GeneralHeaderConstraintsImpl im
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @generated
 	 */
 	public VitalSignsSectionEntriesOptional getVitalSignsSectionEntriesOptional() {
@@ -290,8 +278,7 @@ public class VDTInpatientPatientInfoImpl extends GeneralHeaderConstraintsImpl im
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @generated
 	 */
 	public PlanOfCareSection getPlanOfCareSection() {
@@ -299,8 +286,7 @@ public class VDTInpatientPatientInfoImpl extends GeneralHeaderConstraintsImpl im
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @generated
 	 */
 	public ProceduresSection getProceduresSection() {
@@ -308,22 +294,22 @@ public class VDTInpatientPatientInfoImpl extends GeneralHeaderConstraintsImpl im
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @generated
 	 */
 	@Override
 	public VDTInpatientPatientInfo init() {
 	    return Initializer.Util.init(this);
 	}
-    /**
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+
+	/**
+     * <!-- begin-user-doc --> <!-- end-user-doc -->
      * @generated
      */
-    @Override
-	public VDTInpatientPatientInfo init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+	@Override
+	public VDTInpatientPatientInfo init(
+			Iterable<? extends Initializer<? extends EObject>> initializers) {
         Initializer.Util.init(this, initializers);
         return this;
     }
-} //VDTInpatientPatientInfoImpl
+} // VDTInpatientPatientInfoImpl

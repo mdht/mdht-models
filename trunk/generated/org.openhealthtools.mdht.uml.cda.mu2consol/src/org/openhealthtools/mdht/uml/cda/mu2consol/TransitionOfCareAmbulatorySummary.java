@@ -1,0 +1,88 @@
+/**
+ * <copyright>
+ * </copyright>
+ *
+ * $Id$
+ */
+package org.openhealthtools.mdht.uml.cda.mu2consol;
+
+import java.lang.Iterable;
+
+import java.util.Map;
+
+import org.eclipse.emf.common.util.DiagnosticChain;
+
+import org.eclipse.emf.ecore.EObject;
+
+import org.openhealthtools.mdht.emf.runtime.util.Initializer;
+
+import org.openhealthtools.mdht.uml.cda.consol.ReasonForReferralSection;
+
+/**
+ * <!-- begin-user-doc --> A representation of the model object '
+ * <em><b>Transition Of Care Ambulatory Summary</b></em>'. <!-- end-user-doc -->
+ *
+ *
+ * @see org.openhealthtools.mdht.uml.cda.mu2consol.Mu2consolPackage#getTransitionOfCareAmbulatorySummary()
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.query='TransitionOfCareAmbulatorySummaryResponsibleParty' constraints.validation.error='TransitionOfCareAmbulatorySummaryResponsibleParty TransitionOfCareAmbulatorySummaryReasonForReferralSection'"
+ * @generated
+ */
+public interface TransitionOfCareAmbulatorySummary extends SummaryOfCareRecord {
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * self.componentOf->excluding(null).encompassingEncounter->excluding(null)->reject(responsibleParty->one(responsibleParty : cda::ResponsibleParty | not responsibleParty.oclIsUndefined() and responsibleParty.oclIsKindOf(rim::Participation)))
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.componentOf->excluding(null).encompassingEncounter->excluding(null)->reject(responsibleParty->one(responsibleParty : cda::ResponsibleParty | not responsibleParty.oclIsUndefined() and responsibleParty.oclIsKindOf(rim::Participation)))'"
+	 * @generated
+	 */
+	boolean validateTransitionOfCareAmbulatorySummaryResponsibleParty(DiagnosticChain diagnostics, Map<Object, Object> context);
+
+	/**
+	 * <!-- begin-user-doc --> <!-- end-user-doc --> <!-- begin-model-doc -->
+	 * self.getAllSections()->one(section : cda::Section | not
+	 * section.oclIsUndefined() and
+	 * section.oclIsKindOf(consol::ReasonForReferralSection))
+	 * 
+	 * @param diagnostics
+	 *            The chain of diagnostics to which problems are to be appended.
+	 * @param context
+	 *            The cache of context-specific information. <!-- end-model-doc
+	 *            -->
+	 * @model annotation=
+	 *        "http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::ReasonForReferralSection))'"
+	 * @generated
+	 */
+	boolean validateTransitionOfCareAmbulatorySummaryReasonForReferralSection(
+			DiagnosticChain diagnostics, Map<Object, Object> context);
+
+	/**
+	 * <!-- begin-user-doc --> <!-- end-user-doc --> <!-- begin-model-doc -->
+	 * self.getAllSections()->select(section : cda::Section | not
+	 * section.oclIsUndefined() and
+	 * section.oclIsKindOf(consol::ReasonForReferralSection
+	 * ))->asSequence()->any(true).oclAsType(consol::ReasonForReferralSection)
+	 * <!-- end-model-doc -->
+	 * 
+	 * @model required="true" ordered="false" annotation=
+	 *        "http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::ReasonForReferralSection))->asSequence()->any(true).oclAsType(consol::ReasonForReferralSection)'"
+	 * @generated
+	 */
+	ReasonForReferralSection getmu2consolReasonForReferralSection();
+
+	/**
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * @generated
+	 */
+	public TransitionOfCareAmbulatorySummary init();
+
+	/**
+     * <!-- begin-user-doc --> <!-- end-user-doc -->
+     * @generated
+     */
+	public TransitionOfCareAmbulatorySummary init(
+			Iterable<? extends Initializer<? extends EObject>> initializers);
+} // TransitionOfCareAmbulatorySummary

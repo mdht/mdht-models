@@ -64,17 +64,16 @@ public class AssessmentSectionImpl extends
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @generated
 	 */
-  @Override
-  public boolean validateAssessmentSectionTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context)
-  {
+	@Override
+	public boolean validateAssessmentSectionTemplateId(
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return AssessmentSectionOperations.validateAssessmentSectionTemplateId(this, diagnostics, context);
 	}
 
-  /**
+	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @generated
 	 */

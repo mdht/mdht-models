@@ -71,12 +71,12 @@ public class SocialHistorySectionImpl extends
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @generated
 	 */
 	@Override
-	public boolean validateSocialHistorySectionTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateSocialHistorySectionTemplateId(
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return SocialHistorySectionOperations.validateSocialHistorySectionTemplateId(this, diagnostics, context);
 	}
 

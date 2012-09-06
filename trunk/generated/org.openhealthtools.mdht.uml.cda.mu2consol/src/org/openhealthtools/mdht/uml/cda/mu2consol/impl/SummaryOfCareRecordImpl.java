@@ -12,7 +12,6 @@ import org.openhealthtools.mdht.uml.cda.consol.ChiefComplaintAndReasonForVisitSe
 import org.openhealthtools.mdht.uml.cda.consol.ChiefComplaintSection;
 import org.openhealthtools.mdht.uml.cda.consol.EncountersSection;
 import org.openhealthtools.mdht.uml.cda.consol.HistoryOfPastIllnessSection;
-import org.openhealthtools.mdht.uml.cda.consol.HospitalDischargeInstructionsSection;
 import org.openhealthtools.mdht.uml.cda.consol.HospitalDischargeMedicationsSection;
 import org.openhealthtools.mdht.uml.cda.consol.ImmunizationsSection;
 import org.openhealthtools.mdht.uml.cda.consol.InterventionsSection;
@@ -132,11 +131,11 @@ public class SummaryOfCareRecordImpl extends GeneralHeaderConstraintsImpl
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateSummaryOfCareRecordCanHaveEitherAllergyRequiredOrOptionalEntry(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateSummaryOfCareRecordCanHaveEitherAllergyRequiredOrOptionalEntry(
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return SummaryOfCareRecordOperations.validateSummaryOfCareRecordCanHaveEitherAllergyRequiredOrOptionalEntry(this, diagnostics, context);
 	}
 
@@ -156,15 +155,6 @@ public class SummaryOfCareRecordImpl extends GeneralHeaderConstraintsImpl
 	public boolean validateSummaryOfCareRecordInstructionsSection(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return SummaryOfCareRecordOperations.validateSummaryOfCareRecordInstructionsSection(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateSummaryOfCareRecordHospitalDischargeInstructionsSection(
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return SummaryOfCareRecordOperations.validateSummaryOfCareRecordHospitalDischargeInstructionsSection(this, diagnostics, context);
 	}
 
 	/**
@@ -222,11 +212,11 @@ public class SummaryOfCareRecordImpl extends GeneralHeaderConstraintsImpl
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateSummaryOfCareRecordSocialHistorySectionTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateSummaryOfCareRecordSocialHistorySectionTemplateId(
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return SummaryOfCareRecordOperations.validateSummaryOfCareRecordSocialHistorySectionTemplateId(this, diagnostics, context);
 	}
 
@@ -240,11 +230,11 @@ public class SummaryOfCareRecordImpl extends GeneralHeaderConstraintsImpl
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateSummaryOfCareRecordHospitalAdmissionMedicationsSectionEntriesOptionalTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateSummaryOfCareRecordHospitalAdmissionMedicationsSectionEntriesOptionalTemplateId(
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return SummaryOfCareRecordOperations.validateSummaryOfCareRecordHospitalAdmissionMedicationsSectionEntriesOptionalTemplateId(this, diagnostics, context);
 	}
 
@@ -267,20 +257,20 @@ public class SummaryOfCareRecordImpl extends GeneralHeaderConstraintsImpl
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateSummaryOfCareRecordPlanOfCareSectionTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateSummaryOfCareRecordPlanOfCareSectionTemplateId(
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return SummaryOfCareRecordOperations.validateSummaryOfCareRecordPlanOfCareSectionTemplateId(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateSummaryOfCareRecordMedicationsAdministeredSectionTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateSummaryOfCareRecordMedicationsAdministeredSectionTemplateId(
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return SummaryOfCareRecordOperations.validateSummaryOfCareRecordMedicationsAdministeredSectionTemplateId(this, diagnostics, context);
 	}
 
@@ -294,16 +284,15 @@ public class SummaryOfCareRecordImpl extends GeneralHeaderConstraintsImpl
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @generated
 	 */
-  public boolean validateSummaryOfCareRecordAssessmentAndPlanSectionTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context)
-  {
+	public boolean validateSummaryOfCareRecordAssessmentAndPlanSectionTemplateId(
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return SummaryOfCareRecordOperations.validateSummaryOfCareRecordAssessmentAndPlanSectionTemplateId(this, diagnostics, context);
 	}
 
-  /**
+	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @generated
 	 */
@@ -322,16 +311,15 @@ public class SummaryOfCareRecordImpl extends GeneralHeaderConstraintsImpl
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @generated
 	 */
-  public boolean validateSummaryOfCareRecordAssessmentSectionTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context)
-  {
+	public boolean validateSummaryOfCareRecordAssessmentSectionTemplateId(
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return SummaryOfCareRecordOperations.validateSummaryOfCareRecordAssessmentSectionTemplateId(this, diagnostics, context);
 	}
 
-  /**
+	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @generated
 	 */
@@ -341,11 +329,11 @@ public class SummaryOfCareRecordImpl extends GeneralHeaderConstraintsImpl
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateSummaryOfCareRecordHospitalAdmissionDiagnosisSectionTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateSummaryOfCareRecordHospitalAdmissionDiagnosisSectionTemplateId(
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return SummaryOfCareRecordOperations.validateSummaryOfCareRecordHospitalAdmissionDiagnosisSectionTemplateId(this, diagnostics, context);
 	}
 
@@ -359,11 +347,11 @@ public class SummaryOfCareRecordImpl extends GeneralHeaderConstraintsImpl
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateSummaryOfCareRecordHospitalDischargeDiagnosisSectionTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateSummaryOfCareRecordHospitalDischargeDiagnosisSectionTemplateId(
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return SummaryOfCareRecordOperations.validateSummaryOfCareRecordHospitalDischargeDiagnosisSectionTemplateId(this, diagnostics, context);
 	}
 
@@ -377,11 +365,11 @@ public class SummaryOfCareRecordImpl extends GeneralHeaderConstraintsImpl
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateSummaryOfCareRecordPostoperativeDiagnosisSectionTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateSummaryOfCareRecordPostoperativeDiagnosisSectionTemplateId(
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return SummaryOfCareRecordOperations.validateSummaryOfCareRecordPostoperativeDiagnosisSectionTemplateId(this, diagnostics, context);
 	}
 
@@ -395,11 +383,11 @@ public class SummaryOfCareRecordImpl extends GeneralHeaderConstraintsImpl
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateSummaryOfCareRecordPostprocedureDiagnosisSectionTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateSummaryOfCareRecordPostprocedureDiagnosisSectionTemplateId(
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return SummaryOfCareRecordOperations.validateSummaryOfCareRecordPostprocedureDiagnosisSectionTemplateId(this, diagnostics, context);
 	}
 
@@ -413,11 +401,11 @@ public class SummaryOfCareRecordImpl extends GeneralHeaderConstraintsImpl
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateSummaryOfCareRecordPreoperativeDiagnosisSectionTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateSummaryOfCareRecordPreoperativeDiagnosisSectionTemplateId(
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return SummaryOfCareRecordOperations.validateSummaryOfCareRecordPreoperativeDiagnosisSectionTemplateId(this, diagnostics, context);
 	}
 
@@ -468,14 +456,6 @@ public class SummaryOfCareRecordImpl extends GeneralHeaderConstraintsImpl
 	 */
 	public InstructionsSection getInstructionsSection() {
 		return SummaryOfCareRecordOperations.getInstructionsSection(this);
-	}
-
-	/**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @generated
-	 */
-	public HospitalDischargeInstructionsSection getHospitalDischargeInstructionsSection() {
-		return SummaryOfCareRecordOperations.getHospitalDischargeInstructionsSection(this);
 	}
 
 	/**

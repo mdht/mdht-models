@@ -294,6 +294,30 @@ public class Mu2consolSwitch<T> {
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
+			case Mu2consolPackage.TRANSITION_OF_CARE_AMBULATORY_SUMMARY: {
+				TransitionOfCareAmbulatorySummary transitionOfCareAmbulatorySummary = (TransitionOfCareAmbulatorySummary)theEObject;
+				T result = caseTransitionOfCareAmbulatorySummary(transitionOfCareAmbulatorySummary);
+				if (result == null) result = caseSummaryOfCareRecord(transitionOfCareAmbulatorySummary);
+				if (result == null) result = caseGeneralHeaderConstraints(transitionOfCareAmbulatorySummary);
+				if (result == null) result = caseConsol_GeneralHeaderConstraints(transitionOfCareAmbulatorySummary);
+				if (result == null) result = caseClinicalDocument(transitionOfCareAmbulatorySummary);
+				if (result == null) result = caseAct(transitionOfCareAmbulatorySummary);
+				if (result == null) result = caseInfrastructureRoot(transitionOfCareAmbulatorySummary);
+				if (result == null) result = defaultCase(theEObject);
+				return result;
+			}
+			case Mu2consolPackage.TRANSITION_OF_CARE_INPATIENT_SUMMARY: {
+				TransitionOfCareInpatientSummary transitionOfCareInpatientSummary = (TransitionOfCareInpatientSummary)theEObject;
+				T result = caseTransitionOfCareInpatientSummary(transitionOfCareInpatientSummary);
+				if (result == null) result = caseSummaryOfCareRecord(transitionOfCareInpatientSummary);
+				if (result == null) result = caseGeneralHeaderConstraints(transitionOfCareInpatientSummary);
+				if (result == null) result = caseConsol_GeneralHeaderConstraints(transitionOfCareInpatientSummary);
+				if (result == null) result = caseClinicalDocument(transitionOfCareInpatientSummary);
+				if (result == null) result = caseAct(transitionOfCareInpatientSummary);
+				if (result == null) result = caseInfrastructureRoot(transitionOfCareInpatientSummary);
+				if (result == null) result = defaultCase(theEObject);
+				return result;
+			}
 			default: return defaultCase(theEObject);
 		}
 	}
@@ -417,10 +441,9 @@ public class Mu2consolSwitch<T> {
 
 	/**
 	 * Returns the result of interpreting the object as an instance of '<em>VDT Inpatient Patient Info</em>'.
-	 * <!-- begin-user-doc -->
-	 * This implementation returns null;
-	 * returning a non-null result will terminate the switch.
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> This
+	 * implementation returns null; returning a non-null result will terminate
+	 * the switch. <!-- end-user-doc -->
 	 * @param object the target of the switch.
 	 * @return the result of interpreting the object as an instance of '<em>VDT Inpatient Patient Info</em>'.
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
@@ -432,16 +455,45 @@ public class Mu2consolSwitch<T> {
 
 	/**
 	 * Returns the result of interpreting the object as an instance of '<em>VDT Ambulatory Patient Info</em>'.
-	 * <!-- begin-user-doc -->
-	 * This implementation returns null;
-	 * returning a non-null result will terminate the switch.
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> This
+	 * implementation returns null; returning a non-null result will terminate
+	 * the switch. <!-- end-user-doc -->
 	 * @param object the target of the switch.
 	 * @return the result of interpreting the object as an instance of '<em>VDT Ambulatory Patient Info</em>'.
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
 	public T caseVDTAmbulatoryPatientInfo(VDTAmbulatoryPatientInfo object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Transition Of Care Ambulatory Summary</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null; returning a non-null result will
+	 * terminate the switch. <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Transition Of Care Ambulatory Summary</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseTransitionOfCareAmbulatorySummary(
+			TransitionOfCareAmbulatorySummary object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Transition Of Care Inpatient Summary</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Transition Of Care Inpatient Summary</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseTransitionOfCareInpatientSummary(TransitionOfCareInpatientSummary object) {
 		return null;
 	}
 

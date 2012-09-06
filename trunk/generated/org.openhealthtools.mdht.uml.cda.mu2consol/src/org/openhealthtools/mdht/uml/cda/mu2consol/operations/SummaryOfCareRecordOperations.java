@@ -17,7 +17,6 @@ import org.openhealthtools.mdht.uml.cda.consol.ChiefComplaintAndReasonForVisitSe
 import org.openhealthtools.mdht.uml.cda.consol.ChiefComplaintSection;
 import org.openhealthtools.mdht.uml.cda.consol.EncountersSection;
 import org.openhealthtools.mdht.uml.cda.consol.HistoryOfPastIllnessSection;
-import org.openhealthtools.mdht.uml.cda.consol.HospitalDischargeInstructionsSection;
 import org.openhealthtools.mdht.uml.cda.consol.HospitalDischargeMedicationsSection;
 import org.openhealthtools.mdht.uml.cda.consol.ImmunizationsSection;
 import org.openhealthtools.mdht.uml.cda.consol.InterventionsSection;
@@ -65,7 +64,6 @@ import org.openhealthtools.mdht.uml.cda.mu2consol.util.Mu2consolValidator;
  *   <li>{@link org.openhealthtools.mdht.uml.cda.mu2consol.SummaryOfCareRecord#validateSummaryOfCareRecordCanHaveEitherAllergyRequiredOrOptionalEntry(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Summary Of Care Record Can Have Either Allergy Required Or Optional Entry</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.mu2consol.SummaryOfCareRecord#validateSummaryOfCareRecordPlanOfCareSection(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Summary Of Care Record Plan Of Care Section</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.mu2consol.SummaryOfCareRecord#validateSummaryOfCareRecordInstructionsSection(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Summary Of Care Record Instructions Section</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.mu2consol.SummaryOfCareRecord#validateSummaryOfCareRecordHospitalDischargeInstructionsSection(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Summary Of Care Record Hospital Discharge Instructions Section</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.mu2consol.SummaryOfCareRecord#validateSummaryOfCareRecordProblemSection(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Summary Of Care Record Problem Section</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.mu2consol.SummaryOfCareRecord#validateSummaryOfCareRecordImmunizationsSection(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Summary Of Care Record Immunizations Section</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.mu2consol.SummaryOfCareRecord#validateSummaryOfCareRecordMedicationsAdministeredSection(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Summary Of Care Record Medications Administered Section</em>}</li>
@@ -100,7 +98,6 @@ import org.openhealthtools.mdht.uml.cda.mu2consol.util.Mu2consolValidator;
  *   <li>{@link org.openhealthtools.mdht.uml.cda.mu2consol.SummaryOfCareRecord#getAssessmentAndPlanSection() <em>Get Assessment And Plan Section</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.mu2consol.SummaryOfCareRecord#getInterventionsSection() <em>Get Interventions Section</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.mu2consol.SummaryOfCareRecord#getInstructionsSection() <em>Get Instructions Section</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.mu2consol.SummaryOfCareRecord#getHospitalDischargeInstructionsSection() <em>Get Hospital Discharge Instructions Section</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.mu2consol.SummaryOfCareRecord#getAssessmentSection() <em>Get Assessment Section</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.mu2consol.SummaryOfCareRecord#getHospitalAdmissionDiagnosisSection() <em>Get Hospital Admission Diagnosis Section</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.mu2consol.SummaryOfCareRecord#getHospitalDischargeDiagnosisSection() <em>Get Hospital Discharge Diagnosis Section</em>}</li>
@@ -853,72 +850,6 @@ public class SummaryOfCareRecordOperations extends
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #validateSummaryOfCareRecordHospitalDischargeInstructionsSection(SummaryOfCareRecord, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Summary Of Care Record Hospital Discharge Instructions Section</em>}' operation.
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @see #validateSummaryOfCareRecordHospitalDischargeInstructionsSection(SummaryOfCareRecord, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
-	protected static final String VALIDATE_SUMMARY_OF_CARE_RECORD_HOSPITAL_DISCHARGE_INSTRUCTIONS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::HospitalDischargeInstructionsSection))";
-
-	/**
-	 * The cached OCL invariant for the '{@link #validateSummaryOfCareRecordHospitalDischargeInstructionsSection(SummaryOfCareRecord, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Summary Of Care Record Hospital Discharge Instructions Section</em>}' invariant operation.
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @see #validateSummaryOfCareRecordHospitalDischargeInstructionsSection(SummaryOfCareRecord, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
-
-	protected static Constraint VALIDATE_SUMMARY_OF_CARE_RECORD_HOSPITAL_DISCHARGE_INSTRUCTIONS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-
-	/**
-	 * <!-- begin-user-doc --> <!-- end-user-doc --> <!-- begin-model-doc -->
-	 * self.getAllSections()->one(section : cda::Section | not
-	 * section.oclIsUndefined() and
-	 * section.oclIsKindOf(consol::HospitalDischargeInstructionsSection))
-	 * 
-	 * @param summaryOfCareRecord
-	 *            The receiving '<em><b>Summary Of Care Record</b></em>' model
-	 *            object.
-	 * @param diagnostics
-	 *            The chain of diagnostics to which problems are to be appended.
-	 * @param context
-	 *            The cache of context-specific information. <!-- end-model-doc
-	 *            -->
-	 * @generated
-	 */
-
-	public static boolean validateSummaryOfCareRecordHospitalDischargeInstructionsSection(
-			SummaryOfCareRecord summaryOfCareRecord,
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
-		if (VALIDATE_SUMMARY_OF_CARE_RECORD_HOSPITAL_DISCHARGE_INSTRUCTIONS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setContext(Mu2consolPackage.Literals.SUMMARY_OF_CARE_RECORD);
-			try {
-				VALIDATE_SUMMARY_OF_CARE_RECORD_HOSPITAL_DISCHARGE_INSTRUCTIONS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_SUMMARY_OF_CARE_RECORD_HOSPITAL_DISCHARGE_INSTRUCTIONS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
-				throw new UnsupportedOperationException(pe.getLocalizedMessage());
-			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_SUMMARY_OF_CARE_RECORD_HOSPITAL_DISCHARGE_INSTRUCTIONS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(summaryOfCareRecord)) {
-			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 Mu2consolValidator.DIAGNOSTIC_SOURCE,
-						 Mu2consolValidator.SUMMARY_OF_CARE_RECORD__SUMMARY_OF_CARE_RECORD_HOSPITAL_DISCHARGE_INSTRUCTIONS_SECTION,
-						 Mu2consolPlugin.INSTANCE.getString("SummaryOfCareRecordHospitalDischargeInstructionsSection"),
-						 new Object [] { summaryOfCareRecord }));
-			}
-			 
-			return false;
-		}
-		return true;
-	}
-
-	/**
 	 * The cached OCL expression body for the '{@link #validateSummaryOfCareRecordProblemSection(SummaryOfCareRecord, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Summary Of Care Record Problem Section</em>}' operation.
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @see #validateSummaryOfCareRecordProblemSection(SummaryOfCareRecord, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
@@ -1314,8 +1245,7 @@ public class SummaryOfCareRecordOperations extends
 
 	/**
 	 * The cached OCL expression body for the '{@link #validateSummaryOfCareRecordSocialHistorySectionTemplateId(SummaryOfCareRecord, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Summary Of Care Record Social History Section Template Id</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @see #validateSummaryOfCareRecordSocialHistorySectionTemplateId(SummaryOfCareRecord, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	 * @generated
 	 * @ordered
@@ -1324,28 +1254,34 @@ public class SummaryOfCareRecordOperations extends
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateSummaryOfCareRecordSocialHistorySectionTemplateId(SummaryOfCareRecord, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Summary Of Care Record Social History Section Template Id</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @see #validateSummaryOfCareRecordSocialHistorySectionTemplateId(SummaryOfCareRecord, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	 * @generated
 	 * @ordered
 	 */
-	
+
 	protected static Query<?, ?, ?> VALIDATE_SUMMARY_OF_CARE_RECORD_SOCIAL_HISTORY_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY;
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.getSocialHistorySection()->excluding(null)->reject(getSocialHistorySection().templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.22.2.17'))
-	 * @param summaryOfCareRecord The receiving '<em><b>Summary Of Care Record</b></em>' model object.
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc --> <!-- begin-model-doc -->
+	 * self.getSocialHistorySection()->excluding(null)->reject(
+	 * getSocialHistorySection().templateId->exists(id : datatypes::II | id.root
+	 * = '2.16.840.1.113883.10.20.22.2.17'))
+	 * 
+	 * @param summaryOfCareRecord
+	 *            The receiving '<em><b>Summary Of Care Record</b></em>' model
+	 *            object.
+	 * @param diagnostics
+	 *            The chain of diagnostics to which problems are to be appended.
+	 * @param context
+	 *            The cache of context-specific information. <!-- end-model-doc
+	 *            -->
 	 * @generated
 	 */
 	@SuppressWarnings("unchecked")
-	public static  boolean validateSummaryOfCareRecordSocialHistorySectionTemplateId(SummaryOfCareRecord summaryOfCareRecord, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public static boolean validateSummaryOfCareRecordSocialHistorySectionTemplateId(
+			SummaryOfCareRecord summaryOfCareRecord,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
   	  
 		
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
@@ -1454,8 +1390,7 @@ public class SummaryOfCareRecordOperations extends
 
 	/**
 	 * The cached OCL expression body for the '{@link #validateSummaryOfCareRecordHospitalAdmissionMedicationsSectionEntriesOptionalTemplateId(SummaryOfCareRecord, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Summary Of Care Record Hospital Admission Medications Section Entries Optional Template Id</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @see #validateSummaryOfCareRecordHospitalAdmissionMedicationsSectionEntriesOptionalTemplateId(SummaryOfCareRecord, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	 * @generated
 	 * @ordered
@@ -1464,28 +1399,36 @@ public class SummaryOfCareRecordOperations extends
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateSummaryOfCareRecordHospitalAdmissionMedicationsSectionEntriesOptionalTemplateId(SummaryOfCareRecord, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Summary Of Care Record Hospital Admission Medications Section Entries Optional Template Id</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @see #validateSummaryOfCareRecordHospitalAdmissionMedicationsSectionEntriesOptionalTemplateId(SummaryOfCareRecord, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	 * @generated
 	 * @ordered
 	 */
-	
+
 	protected static Query<?, ?, ?> VALIDATE_SUMMARY_OF_CARE_RECORD_HOSPITAL_ADMISSION_MEDICATIONS_SECTION_ENTRIES_OPTIONAL_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY;
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.getHospitalAdmissionMedicationsSectionEntriesOptional()->excluding(null)->reject(getHospitalAdmissionMedicationsSectionEntriesOptional().templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.22.2.44'))
-	 * @param summaryOfCareRecord The receiving '<em><b>Summary Of Care Record</b></em>' model object.
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc --> <!-- begin-model-doc -->
+	 * self
+	 * .getHospitalAdmissionMedicationsSectionEntriesOptional()->excluding(null
+	 * )->reject(getHospitalAdmissionMedicationsSectionEntriesOptional().
+	 * templateId->exists(id : datatypes::II | id.root =
+	 * '2.16.840.1.113883.10.20.22.2.44'))
+	 * 
+	 * @param summaryOfCareRecord
+	 *            The receiving '<em><b>Summary Of Care Record</b></em>' model
+	 *            object.
+	 * @param diagnostics
+	 *            The chain of diagnostics to which problems are to be appended.
+	 * @param context
+	 *            The cache of context-specific information. <!-- end-model-doc
+	 *            -->
 	 * @generated
 	 */
 	@SuppressWarnings("unchecked")
-	public static  boolean validateSummaryOfCareRecordHospitalAdmissionMedicationsSectionEntriesOptionalTemplateId(SummaryOfCareRecord summaryOfCareRecord, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public static boolean validateSummaryOfCareRecordHospitalAdmissionMedicationsSectionEntriesOptionalTemplateId(
+			SummaryOfCareRecord summaryOfCareRecord,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
   	  
 		
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
@@ -1672,8 +1615,7 @@ public class SummaryOfCareRecordOperations extends
 
 	/**
 	 * The cached OCL expression body for the '{@link #validateSummaryOfCareRecordPlanOfCareSectionTemplateId(SummaryOfCareRecord, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Summary Of Care Record Plan Of Care Section Template Id</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @see #validateSummaryOfCareRecordPlanOfCareSectionTemplateId(SummaryOfCareRecord, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	 * @generated
 	 * @ordered
@@ -1682,28 +1624,35 @@ public class SummaryOfCareRecordOperations extends
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateSummaryOfCareRecordPlanOfCareSectionTemplateId(SummaryOfCareRecord, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Summary Of Care Record Plan Of Care Section Template Id</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @see #validateSummaryOfCareRecordPlanOfCareSectionTemplateId(SummaryOfCareRecord, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	 * @generated
 	 * @ordered
 	 */
-	
+
 	protected static Query<?, ?, ?> VALIDATE_SUMMARY_OF_CARE_RECORD_PLAN_OF_CARE_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY;
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.getPlanOfCareSection()->excluding(null)->reject(getPlanOfCareSection().templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.22.2.10'))
-	 * @param summaryOfCareRecord The receiving '<em><b>Summary Of Care Record</b></em>' model object.
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc --> <!-- begin-model-doc -->
+	 * self
+	 * .getPlanOfCareSection()->excluding(null)->reject(getPlanOfCareSection(
+	 * ).templateId->exists(id : datatypes::II | id.root =
+	 * '2.16.840.1.113883.10.20.22.2.10'))
+	 * 
+	 * @param summaryOfCareRecord
+	 *            The receiving '<em><b>Summary Of Care Record</b></em>' model
+	 *            object.
+	 * @param diagnostics
+	 *            The chain of diagnostics to which problems are to be appended.
+	 * @param context
+	 *            The cache of context-specific information. <!-- end-model-doc
+	 *            -->
 	 * @generated
 	 */
 	@SuppressWarnings("unchecked")
-	public static  boolean validateSummaryOfCareRecordPlanOfCareSectionTemplateId(SummaryOfCareRecord summaryOfCareRecord, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public static boolean validateSummaryOfCareRecordPlanOfCareSectionTemplateId(
+			SummaryOfCareRecord summaryOfCareRecord,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
   	  
 		
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
@@ -1739,8 +1688,7 @@ public class SummaryOfCareRecordOperations extends
 
 	/**
 	 * The cached OCL expression body for the '{@link #validateSummaryOfCareRecordMedicationsAdministeredSectionTemplateId(SummaryOfCareRecord, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Summary Of Care Record Medications Administered Section Template Id</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @see #validateSummaryOfCareRecordMedicationsAdministeredSectionTemplateId(SummaryOfCareRecord, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	 * @generated
 	 * @ordered
@@ -1749,28 +1697,34 @@ public class SummaryOfCareRecordOperations extends
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateSummaryOfCareRecordMedicationsAdministeredSectionTemplateId(SummaryOfCareRecord, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Summary Of Care Record Medications Administered Section Template Id</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @see #validateSummaryOfCareRecordMedicationsAdministeredSectionTemplateId(SummaryOfCareRecord, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	 * @generated
 	 * @ordered
 	 */
-	
+
 	protected static Query<?, ?, ?> VALIDATE_SUMMARY_OF_CARE_RECORD_MEDICATIONS_ADMINISTERED_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY;
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.getMedicationsAdministeredSection()->excluding(null)->reject(getMedicationsAdministeredSection().templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.22.2.38'))
-	 * @param summaryOfCareRecord The receiving '<em><b>Summary Of Care Record</b></em>' model object.
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc --> <!-- begin-model-doc -->
+	 * self.getMedicationsAdministeredSection()->excluding(null)->reject(
+	 * getMedicationsAdministeredSection().templateId->exists(id : datatypes::II
+	 * | id.root = '2.16.840.1.113883.10.20.22.2.38'))
+	 * 
+	 * @param summaryOfCareRecord
+	 *            The receiving '<em><b>Summary Of Care Record</b></em>' model
+	 *            object.
+	 * @param diagnostics
+	 *            The chain of diagnostics to which problems are to be appended.
+	 * @param context
+	 *            The cache of context-specific information. <!-- end-model-doc
+	 *            -->
 	 * @generated
 	 */
 	@SuppressWarnings("unchecked")
-	public static  boolean validateSummaryOfCareRecordMedicationsAdministeredSectionTemplateId(SummaryOfCareRecord summaryOfCareRecord, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public static boolean validateSummaryOfCareRecordMedicationsAdministeredSectionTemplateId(
+			SummaryOfCareRecord summaryOfCareRecord,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
   	  
 		
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
@@ -1879,39 +1833,43 @@ public class SummaryOfCareRecordOperations extends
 
 	/**
 	 * The cached OCL expression body for the '{@link #validateSummaryOfCareRecordAssessmentAndPlanSectionTemplateId(SummaryOfCareRecord, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Summary Of Care Record Assessment And Plan Section Template Id</em>}' operation.
-	 * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @see #validateSummaryOfCareRecordAssessmentAndPlanSectionTemplateId(SummaryOfCareRecord, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	 * @generated
 	 * @ordered
 	 */
-  protected static final String VALIDATE_SUMMARY_OF_CARE_RECORD_ASSESSMENT_AND_PLAN_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.getAssessmentAndPlanSection()->excluding(null)->reject(getAssessmentAndPlanSection().templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.22.2.9'))";
+	protected static final String VALIDATE_SUMMARY_OF_CARE_RECORD_ASSESSMENT_AND_PLAN_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.getAssessmentAndPlanSection()->excluding(null)->reject(getAssessmentAndPlanSection().templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.22.2.9'))";
 
-  /**
+	/**
 	 * The cached OCL invariant for the '{@link #validateSummaryOfCareRecordAssessmentAndPlanSectionTemplateId(SummaryOfCareRecord, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Summary Of Care Record Assessment And Plan Section Template Id</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @see #validateSummaryOfCareRecordAssessmentAndPlanSectionTemplateId(SummaryOfCareRecord, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	 * @generated
 	 * @ordered
 	 */
-  
-  protected static Query<?, ?, ?> VALIDATE_SUMMARY_OF_CARE_RECORD_ASSESSMENT_AND_PLAN_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY;
 
-  /**
-	 * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.getAssessmentAndPlanSection()->excluding(null)->reject(getAssessmentAndPlanSection().templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.22.2.9'))
-	 * @param summaryOfCareRecord The receiving '<em><b>Summary Of Care Record</b></em>' model object.
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
+	protected static Query<?, ?, ?> VALIDATE_SUMMARY_OF_CARE_RECORD_ASSESSMENT_AND_PLAN_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY;
+
+	/**
+	 * <!-- begin-user-doc --> <!-- end-user-doc --> <!-- begin-model-doc -->
+	 * self.getAssessmentAndPlanSection()->excluding(null)->reject(
+	 * getAssessmentAndPlanSection().templateId->exists(id : datatypes::II |
+	 * id.root = '2.16.840.1.113883.10.20.22.2.9'))
+	 * 
+	 * @param summaryOfCareRecord
+	 *            The receiving '<em><b>Summary Of Care Record</b></em>' model
+	 *            object.
+	 * @param diagnostics
+	 *            The chain of diagnostics to which problems are to be appended.
+	 * @param context
+	 *            The cache of context-specific information. <!-- end-model-doc
+	 *            -->
 	 * @generated
 	 */
-  @SuppressWarnings("unchecked")
-  public static  boolean validateSummaryOfCareRecordAssessmentAndPlanSectionTemplateId(SummaryOfCareRecord summaryOfCareRecord, DiagnosticChain diagnostics, Map<Object, Object> context)
-  {
+	@SuppressWarnings("unchecked")
+	public static boolean validateSummaryOfCareRecordAssessmentAndPlanSectionTemplateId(
+			SummaryOfCareRecord summaryOfCareRecord,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
   	  
 		
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
@@ -1945,7 +1903,7 @@ public class SummaryOfCareRecordOperations extends
 		return true;
 	}
 
-  /**
+	/**
 	 * The cached OCL expression body for the '{@link #validateSummaryOfCareRecordInstructionsSectionTemplateId(SummaryOfCareRecord, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Summary Of Care Record Instructions Section Template Id</em>}' operation.
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @see #validateSummaryOfCareRecordInstructionsSectionTemplateId(SummaryOfCareRecord, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
@@ -2092,39 +2050,44 @@ public class SummaryOfCareRecordOperations extends
 
 	/**
 	 * The cached OCL expression body for the '{@link #validateSummaryOfCareRecordAssessmentSectionTemplateId(SummaryOfCareRecord, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Summary Of Care Record Assessment Section Template Id</em>}' operation.
-	 * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @see #validateSummaryOfCareRecordAssessmentSectionTemplateId(SummaryOfCareRecord, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	 * @generated
 	 * @ordered
 	 */
-  protected static final String VALIDATE_SUMMARY_OF_CARE_RECORD_ASSESSMENT_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.getAssessmentSection()->excluding(null)->reject(getAssessmentSection().templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.22.2.8'))";
+	protected static final String VALIDATE_SUMMARY_OF_CARE_RECORD_ASSESSMENT_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.getAssessmentSection()->excluding(null)->reject(getAssessmentSection().templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.22.2.8'))";
 
-  /**
+	/**
 	 * The cached OCL invariant for the '{@link #validateSummaryOfCareRecordAssessmentSectionTemplateId(SummaryOfCareRecord, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Summary Of Care Record Assessment Section Template Id</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @see #validateSummaryOfCareRecordAssessmentSectionTemplateId(SummaryOfCareRecord, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	 * @generated
 	 * @ordered
 	 */
-  
-  protected static Query<?, ?, ?> VALIDATE_SUMMARY_OF_CARE_RECORD_ASSESSMENT_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY;
 
-  /**
-	 * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.getAssessmentSection()->excluding(null)->reject(getAssessmentSection().templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.22.2.8'))
-	 * @param summaryOfCareRecord The receiving '<em><b>Summary Of Care Record</b></em>' model object.
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
+	protected static Query<?, ?, ?> VALIDATE_SUMMARY_OF_CARE_RECORD_ASSESSMENT_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY;
+
+	/**
+	 * <!-- begin-user-doc --> <!-- end-user-doc --> <!-- begin-model-doc -->
+	 * self
+	 * .getAssessmentSection()->excluding(null)->reject(getAssessmentSection(
+	 * ).templateId->exists(id : datatypes::II | id.root =
+	 * '2.16.840.1.113883.10.20.22.2.8'))
+	 * 
+	 * @param summaryOfCareRecord
+	 *            The receiving '<em><b>Summary Of Care Record</b></em>' model
+	 *            object.
+	 * @param diagnostics
+	 *            The chain of diagnostics to which problems are to be appended.
+	 * @param context
+	 *            The cache of context-specific information. <!-- end-model-doc
+	 *            -->
 	 * @generated
 	 */
-  @SuppressWarnings("unchecked")
-  public static  boolean validateSummaryOfCareRecordAssessmentSectionTemplateId(SummaryOfCareRecord summaryOfCareRecord, DiagnosticChain diagnostics, Map<Object, Object> context)
-  {
+	@SuppressWarnings("unchecked")
+	public static boolean validateSummaryOfCareRecordAssessmentSectionTemplateId(
+			SummaryOfCareRecord summaryOfCareRecord,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
   	  
 		
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
@@ -2158,7 +2121,7 @@ public class SummaryOfCareRecordOperations extends
 		return true;
 	}
 
-  /**
+	/**
 	 * The cached OCL expression body for the '{@link #validateSummaryOfCareRecordmu2consolAssessmentSectionProblemObservation(SummaryOfCareRecord, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Summary Of Care Recordmu2consol Assessment Section Problem Observation</em>}' operation.
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @see #validateSummaryOfCareRecordmu2consolAssessmentSectionProblemObservation(SummaryOfCareRecord, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
@@ -2237,8 +2200,7 @@ public class SummaryOfCareRecordOperations extends
 
 	/**
 	 * The cached OCL expression body for the '{@link #validateSummaryOfCareRecordHospitalAdmissionDiagnosisSectionTemplateId(SummaryOfCareRecord, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Summary Of Care Record Hospital Admission Diagnosis Section Template Id</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @see #validateSummaryOfCareRecordHospitalAdmissionDiagnosisSectionTemplateId(SummaryOfCareRecord, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	 * @generated
 	 * @ordered
@@ -2247,28 +2209,34 @@ public class SummaryOfCareRecordOperations extends
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateSummaryOfCareRecordHospitalAdmissionDiagnosisSectionTemplateId(SummaryOfCareRecord, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Summary Of Care Record Hospital Admission Diagnosis Section Template Id</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @see #validateSummaryOfCareRecordHospitalAdmissionDiagnosisSectionTemplateId(SummaryOfCareRecord, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	 * @generated
 	 * @ordered
 	 */
-	
+
 	protected static Query<?, ?, ?> VALIDATE_SUMMARY_OF_CARE_RECORD_HOSPITAL_ADMISSION_DIAGNOSIS_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY;
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.getHospitalAdmissionDiagnosisSection()->excluding(null)->reject(getHospitalAdmissionDiagnosisSection().templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.22.2.43'))
-	 * @param summaryOfCareRecord The receiving '<em><b>Summary Of Care Record</b></em>' model object.
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc --> <!-- begin-model-doc -->
+	 * self.getHospitalAdmissionDiagnosisSection()->excluding(null)->reject(
+	 * getHospitalAdmissionDiagnosisSection().templateId->exists(id :
+	 * datatypes::II | id.root = '2.16.840.1.113883.10.20.22.2.43'))
+	 * 
+	 * @param summaryOfCareRecord
+	 *            The receiving '<em><b>Summary Of Care Record</b></em>' model
+	 *            object.
+	 * @param diagnostics
+	 *            The chain of diagnostics to which problems are to be appended.
+	 * @param context
+	 *            The cache of context-specific information. <!-- end-model-doc
+	 *            -->
 	 * @generated
 	 */
 	@SuppressWarnings("unchecked")
-	public static  boolean validateSummaryOfCareRecordHospitalAdmissionDiagnosisSectionTemplateId(SummaryOfCareRecord summaryOfCareRecord, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public static boolean validateSummaryOfCareRecordHospitalAdmissionDiagnosisSectionTemplateId(
+			SummaryOfCareRecord summaryOfCareRecord,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
   	  
 		
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
@@ -2377,8 +2345,7 @@ public class SummaryOfCareRecordOperations extends
 
 	/**
 	 * The cached OCL expression body for the '{@link #validateSummaryOfCareRecordHospitalDischargeDiagnosisSectionTemplateId(SummaryOfCareRecord, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Summary Of Care Record Hospital Discharge Diagnosis Section Template Id</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @see #validateSummaryOfCareRecordHospitalDischargeDiagnosisSectionTemplateId(SummaryOfCareRecord, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	 * @generated
 	 * @ordered
@@ -2387,28 +2354,34 @@ public class SummaryOfCareRecordOperations extends
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateSummaryOfCareRecordHospitalDischargeDiagnosisSectionTemplateId(SummaryOfCareRecord, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Summary Of Care Record Hospital Discharge Diagnosis Section Template Id</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @see #validateSummaryOfCareRecordHospitalDischargeDiagnosisSectionTemplateId(SummaryOfCareRecord, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	 * @generated
 	 * @ordered
 	 */
-	
+
 	protected static Query<?, ?, ?> VALIDATE_SUMMARY_OF_CARE_RECORD_HOSPITAL_DISCHARGE_DIAGNOSIS_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY;
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.getHospitalDischargeDiagnosisSection()->excluding(null)->reject(getHospitalDischargeDiagnosisSection().templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.22.2.24'))
-	 * @param summaryOfCareRecord The receiving '<em><b>Summary Of Care Record</b></em>' model object.
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc --> <!-- begin-model-doc -->
+	 * self.getHospitalDischargeDiagnosisSection()->excluding(null)->reject(
+	 * getHospitalDischargeDiagnosisSection().templateId->exists(id :
+	 * datatypes::II | id.root = '2.16.840.1.113883.10.20.22.2.24'))
+	 * 
+	 * @param summaryOfCareRecord
+	 *            The receiving '<em><b>Summary Of Care Record</b></em>' model
+	 *            object.
+	 * @param diagnostics
+	 *            The chain of diagnostics to which problems are to be appended.
+	 * @param context
+	 *            The cache of context-specific information. <!-- end-model-doc
+	 *            -->
 	 * @generated
 	 */
 	@SuppressWarnings("unchecked")
-	public static  boolean validateSummaryOfCareRecordHospitalDischargeDiagnosisSectionTemplateId(SummaryOfCareRecord summaryOfCareRecord, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public static boolean validateSummaryOfCareRecordHospitalDischargeDiagnosisSectionTemplateId(
+			SummaryOfCareRecord summaryOfCareRecord,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
   	  
 		
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
@@ -2517,8 +2490,7 @@ public class SummaryOfCareRecordOperations extends
 
 	/**
 	 * The cached OCL expression body for the '{@link #validateSummaryOfCareRecordPostoperativeDiagnosisSectionTemplateId(SummaryOfCareRecord, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Summary Of Care Record Postoperative Diagnosis Section Template Id</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @see #validateSummaryOfCareRecordPostoperativeDiagnosisSectionTemplateId(SummaryOfCareRecord, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	 * @generated
 	 * @ordered
@@ -2527,28 +2499,34 @@ public class SummaryOfCareRecordOperations extends
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateSummaryOfCareRecordPostoperativeDiagnosisSectionTemplateId(SummaryOfCareRecord, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Summary Of Care Record Postoperative Diagnosis Section Template Id</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @see #validateSummaryOfCareRecordPostoperativeDiagnosisSectionTemplateId(SummaryOfCareRecord, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	 * @generated
 	 * @ordered
 	 */
-	
+
 	protected static Query<?, ?, ?> VALIDATE_SUMMARY_OF_CARE_RECORD_POSTOPERATIVE_DIAGNOSIS_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY;
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.getPostoperativeDiagnosisSection()->excluding(null)->reject(getPostoperativeDiagnosisSection().templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.22.2.35'))
-	 * @param summaryOfCareRecord The receiving '<em><b>Summary Of Care Record</b></em>' model object.
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc --> <!-- begin-model-doc -->
+	 * self.getPostoperativeDiagnosisSection()->excluding(null)->reject(
+	 * getPostoperativeDiagnosisSection().templateId->exists(id : datatypes::II
+	 * | id.root = '2.16.840.1.113883.10.20.22.2.35'))
+	 * 
+	 * @param summaryOfCareRecord
+	 *            The receiving '<em><b>Summary Of Care Record</b></em>' model
+	 *            object.
+	 * @param diagnostics
+	 *            The chain of diagnostics to which problems are to be appended.
+	 * @param context
+	 *            The cache of context-specific information. <!-- end-model-doc
+	 *            -->
 	 * @generated
 	 */
 	@SuppressWarnings("unchecked")
-	public static  boolean validateSummaryOfCareRecordPostoperativeDiagnosisSectionTemplateId(SummaryOfCareRecord summaryOfCareRecord, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public static boolean validateSummaryOfCareRecordPostoperativeDiagnosisSectionTemplateId(
+			SummaryOfCareRecord summaryOfCareRecord,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
   	  
 		
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
@@ -2657,8 +2635,7 @@ public class SummaryOfCareRecordOperations extends
 
 	/**
 	 * The cached OCL expression body for the '{@link #validateSummaryOfCareRecordPostprocedureDiagnosisSectionTemplateId(SummaryOfCareRecord, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Summary Of Care Record Postprocedure Diagnosis Section Template Id</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @see #validateSummaryOfCareRecordPostprocedureDiagnosisSectionTemplateId(SummaryOfCareRecord, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	 * @generated
 	 * @ordered
@@ -2667,28 +2644,34 @@ public class SummaryOfCareRecordOperations extends
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateSummaryOfCareRecordPostprocedureDiagnosisSectionTemplateId(SummaryOfCareRecord, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Summary Of Care Record Postprocedure Diagnosis Section Template Id</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @see #validateSummaryOfCareRecordPostprocedureDiagnosisSectionTemplateId(SummaryOfCareRecord, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	 * @generated
 	 * @ordered
 	 */
-	
+
 	protected static Query<?, ?, ?> VALIDATE_SUMMARY_OF_CARE_RECORD_POSTPROCEDURE_DIAGNOSIS_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY;
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.getPostprocedureDiagnosisSection()->excluding(null)->reject(getPostprocedureDiagnosisSection().templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.22.2.36'))
-	 * @param summaryOfCareRecord The receiving '<em><b>Summary Of Care Record</b></em>' model object.
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc --> <!-- begin-model-doc -->
+	 * self.getPostprocedureDiagnosisSection()->excluding(null)->reject(
+	 * getPostprocedureDiagnosisSection().templateId->exists(id : datatypes::II
+	 * | id.root = '2.16.840.1.113883.10.20.22.2.36'))
+	 * 
+	 * @param summaryOfCareRecord
+	 *            The receiving '<em><b>Summary Of Care Record</b></em>' model
+	 *            object.
+	 * @param diagnostics
+	 *            The chain of diagnostics to which problems are to be appended.
+	 * @param context
+	 *            The cache of context-specific information. <!-- end-model-doc
+	 *            -->
 	 * @generated
 	 */
 	@SuppressWarnings("unchecked")
-	public static  boolean validateSummaryOfCareRecordPostprocedureDiagnosisSectionTemplateId(SummaryOfCareRecord summaryOfCareRecord, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public static boolean validateSummaryOfCareRecordPostprocedureDiagnosisSectionTemplateId(
+			SummaryOfCareRecord summaryOfCareRecord,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
   	  
 		
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
@@ -2797,8 +2780,7 @@ public class SummaryOfCareRecordOperations extends
 
 	/**
 	 * The cached OCL expression body for the '{@link #validateSummaryOfCareRecordPreoperativeDiagnosisSectionTemplateId(SummaryOfCareRecord, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Summary Of Care Record Preoperative Diagnosis Section Template Id</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @see #validateSummaryOfCareRecordPreoperativeDiagnosisSectionTemplateId(SummaryOfCareRecord, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	 * @generated
 	 * @ordered
@@ -2807,28 +2789,34 @@ public class SummaryOfCareRecordOperations extends
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateSummaryOfCareRecordPreoperativeDiagnosisSectionTemplateId(SummaryOfCareRecord, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Summary Of Care Record Preoperative Diagnosis Section Template Id</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @see #validateSummaryOfCareRecordPreoperativeDiagnosisSectionTemplateId(SummaryOfCareRecord, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	 * @generated
 	 * @ordered
 	 */
-	
+
 	protected static Query<?, ?, ?> VALIDATE_SUMMARY_OF_CARE_RECORD_PREOPERATIVE_DIAGNOSIS_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY;
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.getPreoperativeDiagnosisSection()->excluding(null)->reject(getPreoperativeDiagnosisSection().templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.22.2.34'))
-	 * @param summaryOfCareRecord The receiving '<em><b>Summary Of Care Record</b></em>' model object.
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc --> <!-- begin-model-doc -->
+	 * self.getPreoperativeDiagnosisSection()->excluding(null)->reject(
+	 * getPreoperativeDiagnosisSection().templateId->exists(id : datatypes::II |
+	 * id.root = '2.16.840.1.113883.10.20.22.2.34'))
+	 * 
+	 * @param summaryOfCareRecord
+	 *            The receiving '<em><b>Summary Of Care Record</b></em>' model
+	 *            object.
+	 * @param diagnostics
+	 *            The chain of diagnostics to which problems are to be appended.
+	 * @param context
+	 *            The cache of context-specific information. <!-- end-model-doc
+	 *            -->
 	 * @generated
 	 */
 	@SuppressWarnings("unchecked")
-	public static  boolean validateSummaryOfCareRecordPreoperativeDiagnosisSectionTemplateId(SummaryOfCareRecord summaryOfCareRecord, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public static boolean validateSummaryOfCareRecordPreoperativeDiagnosisSectionTemplateId(
+			SummaryOfCareRecord summaryOfCareRecord,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
   	  
 		
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
@@ -2972,7 +2960,7 @@ public class SummaryOfCareRecordOperations extends
 			SummaryOfCareRecord summaryOfCareRecord) {
 		if (GET_ENCOUNTERS_SECTION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(Mu2consolPackage.Literals.SUMMARY_OF_CARE_RECORD, Mu2consolPackage.Literals.SUMMARY_OF_CARE_RECORD.getEAllOperations().get(215));
+			helper.setOperationContext(Mu2consolPackage.Literals.SUMMARY_OF_CARE_RECORD, Mu2consolPackage.Literals.SUMMARY_OF_CARE_RECORD.getEAllOperations().get(214));
 			try {
 				GET_ENCOUNTERS_SECTION__EOCL_QRY = helper.createQuery(GET_ENCOUNTERS_SECTION__EOCL_EXP);
 			}
@@ -3021,7 +3009,7 @@ public class SummaryOfCareRecordOperations extends
 			SummaryOfCareRecord summaryOfCareRecord) {
 		if (GET_PLAN_OF_CARE_SECTION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(Mu2consolPackage.Literals.SUMMARY_OF_CARE_RECORD, Mu2consolPackage.Literals.SUMMARY_OF_CARE_RECORD.getEAllOperations().get(216));
+			helper.setOperationContext(Mu2consolPackage.Literals.SUMMARY_OF_CARE_RECORD, Mu2consolPackage.Literals.SUMMARY_OF_CARE_RECORD.getEAllOperations().get(215));
 			try {
 				GET_PLAN_OF_CARE_SECTION__EOCL_QRY = helper.createQuery(GET_PLAN_OF_CARE_SECTION__EOCL_EXP);
 			}
@@ -3073,7 +3061,7 @@ public class SummaryOfCareRecordOperations extends
 			SummaryOfCareRecord summaryOfCareRecord) {
 		if (GET_ASSESSMENT_AND_PLAN_SECTION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(Mu2consolPackage.Literals.SUMMARY_OF_CARE_RECORD, Mu2consolPackage.Literals.SUMMARY_OF_CARE_RECORD.getEAllOperations().get(217));
+			helper.setOperationContext(Mu2consolPackage.Literals.SUMMARY_OF_CARE_RECORD, Mu2consolPackage.Literals.SUMMARY_OF_CARE_RECORD.getEAllOperations().get(216));
 			try {
 				GET_ASSESSMENT_AND_PLAN_SECTION__EOCL_QRY = helper.createQuery(GET_ASSESSMENT_AND_PLAN_SECTION__EOCL_EXP);
 			}
@@ -3122,7 +3110,7 @@ public class SummaryOfCareRecordOperations extends
 			SummaryOfCareRecord summaryOfCareRecord) {
 		if (GET_INTERVENTIONS_SECTION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(Mu2consolPackage.Literals.SUMMARY_OF_CARE_RECORD, Mu2consolPackage.Literals.SUMMARY_OF_CARE_RECORD.getEAllOperations().get(218));
+			helper.setOperationContext(Mu2consolPackage.Literals.SUMMARY_OF_CARE_RECORD, Mu2consolPackage.Literals.SUMMARY_OF_CARE_RECORD.getEAllOperations().get(217));
 			try {
 				GET_INTERVENTIONS_SECTION__EOCL_QRY = helper.createQuery(GET_INTERVENTIONS_SECTION__EOCL_EXP);
 			}
@@ -3171,7 +3159,7 @@ public class SummaryOfCareRecordOperations extends
 			SummaryOfCareRecord summaryOfCareRecord) {
 		if (GET_INSTRUCTIONS_SECTION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(Mu2consolPackage.Literals.SUMMARY_OF_CARE_RECORD, Mu2consolPackage.Literals.SUMMARY_OF_CARE_RECORD.getEAllOperations().get(219));
+			helper.setOperationContext(Mu2consolPackage.Literals.SUMMARY_OF_CARE_RECORD, Mu2consolPackage.Literals.SUMMARY_OF_CARE_RECORD.getEAllOperations().get(218));
 			try {
 				GET_INSTRUCTIONS_SECTION__EOCL_QRY = helper.createQuery(GET_INSTRUCTIONS_SECTION__EOCL_EXP);
 			}
@@ -3181,57 +3169,6 @@ public class SummaryOfCareRecordOperations extends
 		}
 		OCL.Query query = EOCL_ENV.createQuery(GET_INSTRUCTIONS_SECTION__EOCL_QRY);
 		return (InstructionsSection) query.evaluate(summaryOfCareRecord);
-	}
-
-	/**
-	 * The cached OCL expression body for the '
-	 * {@link #getHospitalDischargeInstructionsSection(SummaryOfCareRecord)
-	 * <em>Get Hospital Discharge Instructions Section</em>}' operation. <!--
-	 * begin-user-doc --> <!-- end-user-doc -->
-	 * 
-	 * @see #getHospitalDischargeInstructionsSection(SummaryOfCareRecord)
-	 * @generated
-	 * @ordered
-	 */
-	protected static final String GET_HOSPITAL_DISCHARGE_INSTRUCTIONS_SECTION__EOCL_EXP = "self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::HospitalDischargeInstructionsSection))->asSequence()->any(true).oclAsType(consol::HospitalDischargeInstructionsSection)";
-
-	/**
-	 * The cached OCL query for the '{@link #getHospitalDischargeInstructionsSection(SummaryOfCareRecord) <em>Get Hospital Discharge Instructions Section</em>}' query operation.
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @see #getHospitalDischargeInstructionsSection(SummaryOfCareRecord)
-	 * @generated
-	 * @ordered
-	 */
-	protected static OCLExpression<EClassifier> GET_HOSPITAL_DISCHARGE_INSTRUCTIONS_SECTION__EOCL_QRY;
-
-	/**
-	 * <!-- begin-user-doc --> <!-- end-user-doc --> <!-- begin-model-doc -->
-	 * self.getAllSections()->select(section : cda::Section | not
-	 * section.oclIsUndefined() and
-	 * section.oclIsKindOf(consol::HospitalDischargeInstructionsSection
-	 * ))->asSequence
-	 * ()->any(true).oclAsType(consol::HospitalDischargeInstructionsSection)
-	 * 
-	 * @param summaryOfCareRecord
-	 *            The receiving '<em><b>Summary Of Care Record</b></em>' model
-	 *            object. <!-- end-model-doc -->
-	 * @generated
-	 */
-
-	public static HospitalDischargeInstructionsSection getHospitalDischargeInstructionsSection(
-			SummaryOfCareRecord summaryOfCareRecord) {
-		if (GET_HOSPITAL_DISCHARGE_INSTRUCTIONS_SECTION__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(Mu2consolPackage.Literals.SUMMARY_OF_CARE_RECORD, Mu2consolPackage.Literals.SUMMARY_OF_CARE_RECORD.getEAllOperations().get(220));
-			try {
-				GET_HOSPITAL_DISCHARGE_INSTRUCTIONS_SECTION__EOCL_QRY = helper.createQuery(GET_HOSPITAL_DISCHARGE_INSTRUCTIONS_SECTION__EOCL_EXP);
-			}
-			catch (ParserException pe) {
-				throw new UnsupportedOperationException(pe.getLocalizedMessage());
-			}
-		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_HOSPITAL_DISCHARGE_INSTRUCTIONS_SECTION__EOCL_QRY);
-		return (HospitalDischargeInstructionsSection) query.evaluate(summaryOfCareRecord);
 	}
 
 	/**
@@ -3271,7 +3208,7 @@ public class SummaryOfCareRecordOperations extends
 			SummaryOfCareRecord summaryOfCareRecord) {
 		if (GET_ASSESSMENT_SECTION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(Mu2consolPackage.Literals.SUMMARY_OF_CARE_RECORD, Mu2consolPackage.Literals.SUMMARY_OF_CARE_RECORD.getEAllOperations().get(221));
+			helper.setOperationContext(Mu2consolPackage.Literals.SUMMARY_OF_CARE_RECORD, Mu2consolPackage.Literals.SUMMARY_OF_CARE_RECORD.getEAllOperations().get(219));
 			try {
 				GET_ASSESSMENT_SECTION__EOCL_QRY = helper.createQuery(GET_ASSESSMENT_SECTION__EOCL_EXP);
 			}
@@ -3325,7 +3262,7 @@ public class SummaryOfCareRecordOperations extends
 			SummaryOfCareRecord summaryOfCareRecord) {
 		if (GET_HOSPITAL_ADMISSION_DIAGNOSIS_SECTION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(Mu2consolPackage.Literals.SUMMARY_OF_CARE_RECORD, Mu2consolPackage.Literals.SUMMARY_OF_CARE_RECORD.getEAllOperations().get(222));
+			helper.setOperationContext(Mu2consolPackage.Literals.SUMMARY_OF_CARE_RECORD, Mu2consolPackage.Literals.SUMMARY_OF_CARE_RECORD.getEAllOperations().get(220));
 			try {
 				GET_HOSPITAL_ADMISSION_DIAGNOSIS_SECTION__EOCL_QRY = helper.createQuery(GET_HOSPITAL_ADMISSION_DIAGNOSIS_SECTION__EOCL_EXP);
 			}
@@ -3379,7 +3316,7 @@ public class SummaryOfCareRecordOperations extends
 			SummaryOfCareRecord summaryOfCareRecord) {
 		if (GET_HOSPITAL_DISCHARGE_DIAGNOSIS_SECTION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(Mu2consolPackage.Literals.SUMMARY_OF_CARE_RECORD, Mu2consolPackage.Literals.SUMMARY_OF_CARE_RECORD.getEAllOperations().get(223));
+			helper.setOperationContext(Mu2consolPackage.Literals.SUMMARY_OF_CARE_RECORD, Mu2consolPackage.Literals.SUMMARY_OF_CARE_RECORD.getEAllOperations().get(221));
 			try {
 				GET_HOSPITAL_DISCHARGE_DIAGNOSIS_SECTION__EOCL_QRY = helper.createQuery(GET_HOSPITAL_DISCHARGE_DIAGNOSIS_SECTION__EOCL_EXP);
 			}
@@ -3433,7 +3370,7 @@ public class SummaryOfCareRecordOperations extends
 			SummaryOfCareRecord summaryOfCareRecord) {
 		if (GET_POSTOPERATIVE_DIAGNOSIS_SECTION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(Mu2consolPackage.Literals.SUMMARY_OF_CARE_RECORD, Mu2consolPackage.Literals.SUMMARY_OF_CARE_RECORD.getEAllOperations().get(224));
+			helper.setOperationContext(Mu2consolPackage.Literals.SUMMARY_OF_CARE_RECORD, Mu2consolPackage.Literals.SUMMARY_OF_CARE_RECORD.getEAllOperations().get(222));
 			try {
 				GET_POSTOPERATIVE_DIAGNOSIS_SECTION__EOCL_QRY = helper.createQuery(GET_POSTOPERATIVE_DIAGNOSIS_SECTION__EOCL_EXP);
 			}
@@ -3482,7 +3419,7 @@ public class SummaryOfCareRecordOperations extends
 			SummaryOfCareRecord summaryOfCareRecord) {
 		if (GET_PROBLEM_SECTION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(Mu2consolPackage.Literals.SUMMARY_OF_CARE_RECORD, Mu2consolPackage.Literals.SUMMARY_OF_CARE_RECORD.getEAllOperations().get(225));
+			helper.setOperationContext(Mu2consolPackage.Literals.SUMMARY_OF_CARE_RECORD, Mu2consolPackage.Literals.SUMMARY_OF_CARE_RECORD.getEAllOperations().get(223));
 			try {
 				GET_PROBLEM_SECTION__EOCL_QRY = helper.createQuery(GET_PROBLEM_SECTION__EOCL_EXP);
 			}
@@ -3531,7 +3468,7 @@ public class SummaryOfCareRecordOperations extends
 			SummaryOfCareRecord summaryOfCareRecord) {
 		if (GET_ALLERGIES_SECTION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(Mu2consolPackage.Literals.SUMMARY_OF_CARE_RECORD, Mu2consolPackage.Literals.SUMMARY_OF_CARE_RECORD.getEAllOperations().get(226));
+			helper.setOperationContext(Mu2consolPackage.Literals.SUMMARY_OF_CARE_RECORD, Mu2consolPackage.Literals.SUMMARY_OF_CARE_RECORD.getEAllOperations().get(224));
 			try {
 				GET_ALLERGIES_SECTION__EOCL_QRY = helper.createQuery(GET_ALLERGIES_SECTION__EOCL_EXP);
 			}
@@ -3585,7 +3522,7 @@ public class SummaryOfCareRecordOperations extends
 			SummaryOfCareRecord summaryOfCareRecord) {
 		if (GET_HISTORY_OF_PAST_ILLNESS_SECTION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(Mu2consolPackage.Literals.SUMMARY_OF_CARE_RECORD, Mu2consolPackage.Literals.SUMMARY_OF_CARE_RECORD.getEAllOperations().get(227));
+			helper.setOperationContext(Mu2consolPackage.Literals.SUMMARY_OF_CARE_RECORD, Mu2consolPackage.Literals.SUMMARY_OF_CARE_RECORD.getEAllOperations().get(225));
 			try {
 				GET_HISTORY_OF_PAST_ILLNESS_SECTION__EOCL_QRY = helper.createQuery(GET_HISTORY_OF_PAST_ILLNESS_SECTION__EOCL_EXP);
 			}
@@ -3636,7 +3573,7 @@ public class SummaryOfCareRecordOperations extends
 			SummaryOfCareRecord summaryOfCareRecord) {
 		if (GET_REASON_FOR_VISIT_SECTION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(Mu2consolPackage.Literals.SUMMARY_OF_CARE_RECORD, Mu2consolPackage.Literals.SUMMARY_OF_CARE_RECORD.getEAllOperations().get(228));
+			helper.setOperationContext(Mu2consolPackage.Literals.SUMMARY_OF_CARE_RECORD, Mu2consolPackage.Literals.SUMMARY_OF_CARE_RECORD.getEAllOperations().get(226));
 			try {
 				GET_REASON_FOR_VISIT_SECTION__EOCL_QRY = helper.createQuery(GET_REASON_FOR_VISIT_SECTION__EOCL_EXP);
 			}
@@ -3687,7 +3624,7 @@ public class SummaryOfCareRecordOperations extends
 			SummaryOfCareRecord summaryOfCareRecord) {
 		if (GET_CHIEF_COMPLAINT_SECTION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(Mu2consolPackage.Literals.SUMMARY_OF_CARE_RECORD, Mu2consolPackage.Literals.SUMMARY_OF_CARE_RECORD.getEAllOperations().get(229));
+			helper.setOperationContext(Mu2consolPackage.Literals.SUMMARY_OF_CARE_RECORD, Mu2consolPackage.Literals.SUMMARY_OF_CARE_RECORD.getEAllOperations().get(227));
 			try {
 				GET_CHIEF_COMPLAINT_SECTION__EOCL_QRY = helper.createQuery(GET_CHIEF_COMPLAINT_SECTION__EOCL_EXP);
 			}
@@ -3735,7 +3672,7 @@ public class SummaryOfCareRecordOperations extends
 			SummaryOfCareRecord summaryOfCareRecord) {
 		if (GET_CHIEF_COMPLAINT_AND_REASON_FOR_VISIT_SECTION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(Mu2consolPackage.Literals.SUMMARY_OF_CARE_RECORD, Mu2consolPackage.Literals.SUMMARY_OF_CARE_RECORD.getEAllOperations().get(230));
+			helper.setOperationContext(Mu2consolPackage.Literals.SUMMARY_OF_CARE_RECORD, Mu2consolPackage.Literals.SUMMARY_OF_CARE_RECORD.getEAllOperations().get(228));
 			try {
 				GET_CHIEF_COMPLAINT_AND_REASON_FOR_VISIT_SECTION__EOCL_QRY = helper.createQuery(GET_CHIEF_COMPLAINT_AND_REASON_FOR_VISIT_SECTION__EOCL_EXP);
 			}
@@ -3789,7 +3726,7 @@ public class SummaryOfCareRecordOperations extends
 			SummaryOfCareRecord summaryOfCareRecord) {
 		if (GET_PREOPERATIVE_DIAGNOSIS_SECTION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(Mu2consolPackage.Literals.SUMMARY_OF_CARE_RECORD, Mu2consolPackage.Literals.SUMMARY_OF_CARE_RECORD.getEAllOperations().get(231));
+			helper.setOperationContext(Mu2consolPackage.Literals.SUMMARY_OF_CARE_RECORD, Mu2consolPackage.Literals.SUMMARY_OF_CARE_RECORD.getEAllOperations().get(229));
 			try {
 				GET_PREOPERATIVE_DIAGNOSIS_SECTION__EOCL_QRY = helper.createQuery(GET_PREOPERATIVE_DIAGNOSIS_SECTION__EOCL_EXP);
 			}
@@ -3838,7 +3775,7 @@ public class SummaryOfCareRecordOperations extends
 			SummaryOfCareRecord summaryOfCareRecord) {
 		if (GET_IMMUNIZATIONS_SECTION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(Mu2consolPackage.Literals.SUMMARY_OF_CARE_RECORD, Mu2consolPackage.Literals.SUMMARY_OF_CARE_RECORD.getEAllOperations().get(232));
+			helper.setOperationContext(Mu2consolPackage.Literals.SUMMARY_OF_CARE_RECORD, Mu2consolPackage.Literals.SUMMARY_OF_CARE_RECORD.getEAllOperations().get(230));
 			try {
 				GET_IMMUNIZATIONS_SECTION__EOCL_QRY = helper.createQuery(GET_IMMUNIZATIONS_SECTION__EOCL_EXP);
 			}
@@ -3892,7 +3829,7 @@ public class SummaryOfCareRecordOperations extends
 			SummaryOfCareRecord summaryOfCareRecord) {
 		if (GET_MEDICATIONS_ADMINISTERED_SECTION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(Mu2consolPackage.Literals.SUMMARY_OF_CARE_RECORD, Mu2consolPackage.Literals.SUMMARY_OF_CARE_RECORD.getEAllOperations().get(233));
+			helper.setOperationContext(Mu2consolPackage.Literals.SUMMARY_OF_CARE_RECORD, Mu2consolPackage.Literals.SUMMARY_OF_CARE_RECORD.getEAllOperations().get(231));
 			try {
 				GET_MEDICATIONS_ADMINISTERED_SECTION__EOCL_QRY = helper.createQuery(GET_MEDICATIONS_ADMINISTERED_SECTION__EOCL_EXP);
 			}
@@ -3941,7 +3878,7 @@ public class SummaryOfCareRecordOperations extends
 			SummaryOfCareRecord summaryOfCareRecord) {
 		if (GET_MEDICATIONS_SECTION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(Mu2consolPackage.Literals.SUMMARY_OF_CARE_RECORD, Mu2consolPackage.Literals.SUMMARY_OF_CARE_RECORD.getEAllOperations().get(234));
+			helper.setOperationContext(Mu2consolPackage.Literals.SUMMARY_OF_CARE_RECORD, Mu2consolPackage.Literals.SUMMARY_OF_CARE_RECORD.getEAllOperations().get(232));
 			try {
 				GET_MEDICATIONS_SECTION__EOCL_QRY = helper.createQuery(GET_MEDICATIONS_SECTION__EOCL_EXP);
 			}
@@ -3989,7 +3926,7 @@ public class SummaryOfCareRecordOperations extends
 			SummaryOfCareRecord summaryOfCareRecord) {
 		if (GET_HOSPITAL_ADMISSION_MEDICATIONS_SECTION_ENTRIES_OPTIONAL__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(Mu2consolPackage.Literals.SUMMARY_OF_CARE_RECORD, Mu2consolPackage.Literals.SUMMARY_OF_CARE_RECORD.getEAllOperations().get(235));
+			helper.setOperationContext(Mu2consolPackage.Literals.SUMMARY_OF_CARE_RECORD, Mu2consolPackage.Literals.SUMMARY_OF_CARE_RECORD.getEAllOperations().get(233));
 			try {
 				GET_HOSPITAL_ADMISSION_MEDICATIONS_SECTION_ENTRIES_OPTIONAL__EOCL_QRY = helper.createQuery(GET_HOSPITAL_ADMISSION_MEDICATIONS_SECTION_ENTRIES_OPTIONAL__EOCL_EXP);
 			}
@@ -4040,7 +3977,7 @@ public class SummaryOfCareRecordOperations extends
 			SummaryOfCareRecord summaryOfCareRecord) {
 		if (GET_HOSPITAL_DISCHARGE_MEDICATIONS_SECTION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(Mu2consolPackage.Literals.SUMMARY_OF_CARE_RECORD, Mu2consolPackage.Literals.SUMMARY_OF_CARE_RECORD.getEAllOperations().get(236));
+			helper.setOperationContext(Mu2consolPackage.Literals.SUMMARY_OF_CARE_RECORD, Mu2consolPackage.Literals.SUMMARY_OF_CARE_RECORD.getEAllOperations().get(234));
 			try {
 				GET_HOSPITAL_DISCHARGE_MEDICATIONS_SECTION__EOCL_QRY = helper.createQuery(GET_HOSPITAL_DISCHARGE_MEDICATIONS_SECTION__EOCL_EXP);
 			}
@@ -4091,7 +4028,7 @@ public class SummaryOfCareRecordOperations extends
 			SummaryOfCareRecord summaryOfCareRecord) {
 		if (GET_SOCIAL_HISTORY_SECTION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(Mu2consolPackage.Literals.SUMMARY_OF_CARE_RECORD, Mu2consolPackage.Literals.SUMMARY_OF_CARE_RECORD.getEAllOperations().get(237));
+			helper.setOperationContext(Mu2consolPackage.Literals.SUMMARY_OF_CARE_RECORD, Mu2consolPackage.Literals.SUMMARY_OF_CARE_RECORD.getEAllOperations().get(235));
 			try {
 				GET_SOCIAL_HISTORY_SECTION__EOCL_QRY = helper.createQuery(GET_SOCIAL_HISTORY_SECTION__EOCL_EXP);
 			}
@@ -4140,7 +4077,7 @@ public class SummaryOfCareRecordOperations extends
 			SummaryOfCareRecord summaryOfCareRecord) {
 		if (GET_RESULTS_SECTION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(Mu2consolPackage.Literals.SUMMARY_OF_CARE_RECORD, Mu2consolPackage.Literals.SUMMARY_OF_CARE_RECORD.getEAllOperations().get(238));
+			helper.setOperationContext(Mu2consolPackage.Literals.SUMMARY_OF_CARE_RECORD, Mu2consolPackage.Literals.SUMMARY_OF_CARE_RECORD.getEAllOperations().get(236));
 			try {
 				GET_RESULTS_SECTION__EOCL_QRY = helper.createQuery(GET_RESULTS_SECTION__EOCL_EXP);
 			}
@@ -4189,7 +4126,7 @@ public class SummaryOfCareRecordOperations extends
 			SummaryOfCareRecord summaryOfCareRecord) {
 		if (GET_VITAL_SIGNS_SECTION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(Mu2consolPackage.Literals.SUMMARY_OF_CARE_RECORD, Mu2consolPackage.Literals.SUMMARY_OF_CARE_RECORD.getEAllOperations().get(239));
+			helper.setOperationContext(Mu2consolPackage.Literals.SUMMARY_OF_CARE_RECORD, Mu2consolPackage.Literals.SUMMARY_OF_CARE_RECORD.getEAllOperations().get(237));
 			try {
 				GET_VITAL_SIGNS_SECTION__EOCL_QRY = helper.createQuery(GET_VITAL_SIGNS_SECTION__EOCL_EXP);
 			}
@@ -4243,7 +4180,7 @@ public class SummaryOfCareRecordOperations extends
 			SummaryOfCareRecord summaryOfCareRecord) {
 		if (GET_VITAL_SIGNS_SECTION_ENTRIES_OPTIONAL__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(Mu2consolPackage.Literals.SUMMARY_OF_CARE_RECORD, Mu2consolPackage.Literals.SUMMARY_OF_CARE_RECORD.getEAllOperations().get(240));
+			helper.setOperationContext(Mu2consolPackage.Literals.SUMMARY_OF_CARE_RECORD, Mu2consolPackage.Literals.SUMMARY_OF_CARE_RECORD.getEAllOperations().get(238));
 			try {
 				GET_VITAL_SIGNS_SECTION_ENTRIES_OPTIONAL__EOCL_QRY = helper.createQuery(GET_VITAL_SIGNS_SECTION_ENTRIES_OPTIONAL__EOCL_EXP);
 			}
@@ -4292,7 +4229,7 @@ public class SummaryOfCareRecordOperations extends
 			SummaryOfCareRecord summaryOfCareRecord) {
 		if (GET_PROCEDURES_SECTION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(Mu2consolPackage.Literals.SUMMARY_OF_CARE_RECORD, Mu2consolPackage.Literals.SUMMARY_OF_CARE_RECORD.getEAllOperations().get(241));
+			helper.setOperationContext(Mu2consolPackage.Literals.SUMMARY_OF_CARE_RECORD, Mu2consolPackage.Literals.SUMMARY_OF_CARE_RECORD.getEAllOperations().get(239));
 			try {
 				GET_PROCEDURES_SECTION__EOCL_QRY = helper.createQuery(GET_PROCEDURES_SECTION__EOCL_EXP);
 			}
@@ -4346,7 +4283,7 @@ public class SummaryOfCareRecordOperations extends
 			SummaryOfCareRecord summaryOfCareRecord) {
 		if (GET_ALLERGIES_SECTION_ENTRIES_OPTIONAL__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(Mu2consolPackage.Literals.SUMMARY_OF_CARE_RECORD, Mu2consolPackage.Literals.SUMMARY_OF_CARE_RECORD.getEAllOperations().get(242));
+			helper.setOperationContext(Mu2consolPackage.Literals.SUMMARY_OF_CARE_RECORD, Mu2consolPackage.Literals.SUMMARY_OF_CARE_RECORD.getEAllOperations().get(240));
 			try {
 				GET_ALLERGIES_SECTION_ENTRIES_OPTIONAL__EOCL_QRY = helper.createQuery(GET_ALLERGIES_SECTION_ENTRIES_OPTIONAL__EOCL_EXP);
 			}
@@ -4400,7 +4337,7 @@ public class SummaryOfCareRecordOperations extends
 			SummaryOfCareRecord summaryOfCareRecord) {
 		if (GET_POSTPROCEDURE_DIAGNOSIS_SECTION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(Mu2consolPackage.Literals.SUMMARY_OF_CARE_RECORD, Mu2consolPackage.Literals.SUMMARY_OF_CARE_RECORD.getEAllOperations().get(243));
+			helper.setOperationContext(Mu2consolPackage.Literals.SUMMARY_OF_CARE_RECORD, Mu2consolPackage.Literals.SUMMARY_OF_CARE_RECORD.getEAllOperations().get(241));
 			try {
 				GET_POSTPROCEDURE_DIAGNOSIS_SECTION__EOCL_QRY = helper.createQuery(GET_POSTPROCEDURE_DIAGNOSIS_SECTION__EOCL_EXP);
 			}
@@ -4451,7 +4388,7 @@ public class SummaryOfCareRecordOperations extends
 			SummaryOfCareRecord summaryOfCareRecord) {
 		if (GET_REASON_FOR_REFERRAL_SECTION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(Mu2consolPackage.Literals.SUMMARY_OF_CARE_RECORD, Mu2consolPackage.Literals.SUMMARY_OF_CARE_RECORD.getEAllOperations().get(244));
+			helper.setOperationContext(Mu2consolPackage.Literals.SUMMARY_OF_CARE_RECORD, Mu2consolPackage.Literals.SUMMARY_OF_CARE_RECORD.getEAllOperations().get(242));
 			try {
 				GET_REASON_FOR_REFERRAL_SECTION__EOCL_QRY = helper.createQuery(GET_REASON_FOR_REFERRAL_SECTION__EOCL_EXP);
 			}
