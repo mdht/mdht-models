@@ -44,44 +44,45 @@ import org.openhealthtools.mdht.uml.cda.operations.SectionOperations;
  */
 public class HospitalDischargeInstructionsSectionOperations extends SectionOperations {
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	protected HospitalDischargeInstructionsSectionOperations() {
 		super();
 	}
 
 	/**
-	* The cached OCL expression body for the '{@link #validateHospitalDischargeInstructionsSectionTemplateId(HospitalDischargeInstructionsSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Hospital Discharge Instructions Section Template Id</em>}' operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL expression body for the '{@link #validateHospitalDischargeInstructionsSectionTemplateId(HospitalDischargeInstructionsSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Hospital Discharge Instructions Section Template Id</em>}' operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateHospitalDischargeInstructionsSectionTemplateId(HospitalDischargeInstructionsSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateHospitalDischargeInstructionsSectionTemplateId(HospitalDischargeInstructionsSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 	protected static final String VALIDATE_HOSPITAL_DISCHARGE_INSTRUCTIONS_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.22.2.41')";
 
 	/**
-	* The cached OCL invariant for the '{@link #validateHospitalDischargeInstructionsSectionTemplateId(HospitalDischargeInstructionsSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Hospital Discharge Instructions Section Template Id</em>}' invariant operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL invariant for the '{@link #validateHospitalDischargeInstructionsSectionTemplateId(HospitalDischargeInstructionsSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Hospital Discharge Instructions Section Template Id</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateHospitalDischargeInstructionsSectionTemplateId(HospitalDischargeInstructionsSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateHospitalDischargeInstructionsSectionTemplateId(HospitalDischargeInstructionsSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 	protected static Constraint VALIDATE_HOSPITAL_DISCHARGE_INSTRUCTIONS_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* <!-- begin-model-doc -->
-	* @param hospitalDischargeInstructionsSection The receiving '<em><b>Hospital Discharge Instructions Section</b></em>' model object.
-	* @param diagnostics The chain of diagnostics to which problems are to be appended.
-	* @param context The cache of context-specific information.
-	* <!-- end-model-doc -->
-	* @generated
-	*/
+	 * <!-- begin-model-doc -->
+	 * self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.22.2.41')
+	 * @param hospitalDischargeInstructionsSection The receiving '<em><b>Hospital Discharge Instructions Section</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
 	public static boolean validateHospitalDischargeInstructionsSectionTemplateId(
 			HospitalDischargeInstructionsSection hospitalDischargeInstructionsSection, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
@@ -113,37 +114,40 @@ public class HospitalDischargeInstructionsSectionOperations extends SectionOpera
 	}
 
 	/**
-	* The cached OCL expression body for the '{@link #validateHospitalDischargeInstructionsSectionCode(HospitalDischargeInstructionsSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Hospital Discharge Instructions Section Code</em>}' operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL expression body for the '{@link #validateHospitalDischargeInstructionsSectionCode(HospitalDischargeInstructionsSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Hospital Discharge Instructions Section Code</em>}' operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateHospitalDischargeInstructionsSectionCode(HospitalDischargeInstructionsSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateHospitalDischargeInstructionsSectionCode(HospitalDischargeInstructionsSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 	protected static final String VALIDATE_HOSPITAL_DISCHARGE_INSTRUCTIONS_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and "
 			+ "let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in "
 			+ "value.code = '8653-8' and value.codeSystem = '2.16.840.1.113883.6.1')";
 
 	/**
-	* The cached OCL invariant for the '{@link #validateHospitalDischargeInstructionsSectionCode(HospitalDischargeInstructionsSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Hospital Discharge Instructions Section Code</em>}' invariant operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL invariant for the '{@link #validateHospitalDischargeInstructionsSectionCode(HospitalDischargeInstructionsSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Hospital Discharge Instructions Section Code</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateHospitalDischargeInstructionsSectionCode(HospitalDischargeInstructionsSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateHospitalDischargeInstructionsSectionCode(HospitalDischargeInstructionsSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 	protected static Constraint VALIDATE_HOSPITAL_DISCHARGE_INSTRUCTIONS_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* <!-- begin-model-doc -->
-	* @param hospitalDischargeInstructionsSection The receiving '<em><b>Hospital Discharge Instructions Section</b></em>' model object.
-	* @param diagnostics The chain of diagnostics to which problems are to be appended.
-	* @param context The cache of context-specific information.
-	* <!-- end-model-doc -->
-	* @generated
-	*/
+	 * <!-- begin-model-doc -->
+	 * (self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and 
+	 * let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in 
+	 * value.code = '8653-8' and value.codeSystem = '2.16.840.1.113883.6.1')
+	 * @param hospitalDischargeInstructionsSection The receiving '<em><b>Hospital Discharge Instructions Section</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
 	public static boolean validateHospitalDischargeInstructionsSectionCode(
 			HospitalDischargeInstructionsSection hospitalDischargeInstructionsSection, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
@@ -174,36 +178,37 @@ public class HospitalDischargeInstructionsSectionOperations extends SectionOpera
 	}
 
 	/**
-	* The cached OCL expression body for the '{@link #validateHospitalDischargeInstructionsSectionCodeP(HospitalDischargeInstructionsSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Hospital Discharge Instructions Section Code P</em>}' operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL expression body for the '{@link #validateHospitalDischargeInstructionsSectionCodeP(HospitalDischargeInstructionsSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Hospital Discharge Instructions Section Code P</em>}' operation.
+	 * <!-- begin-user-doc -->
 	* <!-- end-user-doc -->
-	* @see #validateHospitalDischargeInstructionsSectionCodeP(HospitalDischargeInstructionsSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateHospitalDischargeInstructionsSectionCodeP(HospitalDischargeInstructionsSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 	protected static final String VALIDATE_HOSPITAL_DISCHARGE_INSTRUCTIONS_SECTION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined())";
 
 	/**
-	* The cached OCL invariant for the '{@link #validateHospitalDischargeInstructionsSectionCodeP(HospitalDischargeInstructionsSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Hospital Discharge Instructions Section Code P</em>}' invariant operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL invariant for the '{@link #validateHospitalDischargeInstructionsSectionCodeP(HospitalDischargeInstructionsSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Hospital Discharge Instructions Section Code P</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateHospitalDischargeInstructionsSectionCodeP(HospitalDischargeInstructionsSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateHospitalDischargeInstructionsSectionCodeP(HospitalDischargeInstructionsSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 
 	protected static Constraint VALIDATE_HOSPITAL_DISCHARGE_INSTRUCTIONS_SECTION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* <!-- begin-model-doc -->
-	* @param hospitalDischargeInstructionsSection The receiving '<em><b>Hospital Discharge Instructions Section</b></em>' model object.
-	* @param diagnostics The chain of diagnostics to which problems are to be appended.
-	* @param context The cache of context-specific information.
-	* <!-- end-model-doc -->
-	* @generated
-	*/
+	 * <!-- begin-model-doc -->
+	 * (self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined())
+	 * @param hospitalDischargeInstructionsSection The receiving '<em><b>Hospital Discharge Instructions Section</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
 
 	public static boolean validateHospitalDischargeInstructionsSectionCodeP(
 			HospitalDischargeInstructionsSection hospitalDischargeInstructionsSection, DiagnosticChain diagnostics,
@@ -236,15 +241,16 @@ public class HospitalDischargeInstructionsSectionOperations extends SectionOpera
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* <!-- begin-model-doc -->
-	* @param hospitalDischargeInstructionsSection The receiving '<em><b>Hospital Discharge Instructions Section</b></em>' model object.
-	* @param diagnostics The chain of diagnostics to which problems are to be appended.
-	* @param context The cache of context-specific information.
-	* <!-- end-model-doc -->
-	* @generated
-	*/
+	 * <!-- begin-model-doc -->
+	 * not self.text.oclIsUndefined()
+	 * @param hospitalDischargeInstructionsSection The receiving '<em><b>Hospital Discharge Instructions Section</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
 	public static boolean validateHospitalDischargeInstructionsSectionText(
 			HospitalDischargeInstructionsSection hospitalDischargeInstructionsSection, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
@@ -275,55 +281,56 @@ public class HospitalDischargeInstructionsSectionOperations extends SectionOpera
 	}
 
 	/**
-	* The cached OCL expression body for the '{@link #validateHospitalDischargeInstructionsSectionTitle(HospitalDischargeInstructionsSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Hospital Discharge Instructions Section Title</em>}' operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL expression body for the '{@link #validateHospitalDischargeInstructionsSectionTitle(HospitalDischargeInstructionsSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Hospital Discharge Instructions Section Title</em>}' operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateHospitalDischargeInstructionsSectionTitle(HospitalDischargeInstructionsSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateHospitalDischargeInstructionsSectionTitle(HospitalDischargeInstructionsSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 	protected static final String VALIDATE_HOSPITAL_DISCHARGE_INSTRUCTIONS_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.title.oclIsUndefined() or self.title.isNullFlavorUndefined()) implies (not self.title.oclIsUndefined())";
 
 	/**
-	* The cached OCL invariant for the '{@link #validateHospitalDischargeInstructionsSectionTitle(HospitalDischargeInstructionsSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Hospital Discharge Instructions Section Title</em>}' invariant operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL invariant for the '{@link #validateHospitalDischargeInstructionsSectionTitle(HospitalDischargeInstructionsSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Hospital Discharge Instructions Section Title</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateHospitalDischargeInstructionsSectionTitle(HospitalDischargeInstructionsSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateHospitalDischargeInstructionsSectionTitle(HospitalDischargeInstructionsSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 	protected static Constraint VALIDATE_HOSPITAL_DISCHARGE_INSTRUCTIONS_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
-	* The cached OCL expression body for the '{@link #validateHospitalDischargeInstructionsSectionText(HospitalDischargeInstructionsSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Hospital Discharge Instructions Section Text</em>}' operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL expression body for the '{@link #validateHospitalDischargeInstructionsSectionText(HospitalDischargeInstructionsSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Hospital Discharge Instructions Section Text</em>}' operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateHospitalDischargeInstructionsSectionText(HospitalDischargeInstructionsSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateHospitalDischargeInstructionsSectionText(HospitalDischargeInstructionsSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 	protected static final String VALIDATE_HOSPITAL_DISCHARGE_INSTRUCTIONS_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "not self.text.oclIsUndefined()";
 
 	/**
-	* The cached OCL invariant for the '{@link #validateHospitalDischargeInstructionsSectionText(HospitalDischargeInstructionsSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Hospital Discharge Instructions Section Text</em>}' invariant operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL invariant for the '{@link #validateHospitalDischargeInstructionsSectionText(HospitalDischargeInstructionsSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Hospital Discharge Instructions Section Text</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateHospitalDischargeInstructionsSectionText(HospitalDischargeInstructionsSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateHospitalDischargeInstructionsSectionText(HospitalDischargeInstructionsSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 	protected static Constraint VALIDATE_HOSPITAL_DISCHARGE_INSTRUCTIONS_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* <!-- begin-model-doc -->
-	* @param hospitalDischargeInstructionsSection The receiving '<em><b>Hospital Discharge Instructions Section</b></em>' model object.
-	* @param diagnostics The chain of diagnostics to which problems are to be appended.
-	* @param context The cache of context-specific information.
-	* <!-- end-model-doc -->
-	* @generated
-	*/
+	 * <!-- begin-model-doc -->
+	 * (self.title.oclIsUndefined() or self.title.isNullFlavorUndefined()) implies (not self.title.oclIsUndefined())
+	 * @param hospitalDischargeInstructionsSection The receiving '<em><b>Hospital Discharge Instructions Section</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
 	public static boolean validateHospitalDischargeInstructionsSectionTitle(
 			HospitalDischargeInstructionsSection hospitalDischargeInstructionsSection, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {

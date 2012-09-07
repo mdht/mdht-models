@@ -22,8 +22,6 @@ import org.openhealthtools.mdht.uml.cda.emspcr.operations.EMSSocialHistorySectio
 
 import org.openhealthtools.mdht.uml.cda.impl.SectionImpl;
 
-import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
-
 /**
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>EMS Social History Section</b></em>'.
@@ -33,115 +31,105 @@ import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
  *
  * @generated
  */
-public class EMSSocialHistorySectionImpl extends SectionImpl implements EMSSocialHistorySection
-{
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  protected EMSSocialHistorySectionImpl()
-  {
-    super();
-  }
+public class EMSSocialHistorySectionImpl extends SectionImpl implements EMSSocialHistorySection {
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected EMSSocialHistorySectionImpl() {
+		super();
+	}
 
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  @Override
-  protected EClass eStaticClass()
-  {
-    return EmspcrPackage.Literals.EMS_SOCIAL_HISTORY_SECTION;
-  }
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	protected EClass eStaticClass() {
+		return EmspcrPackage.Literals.EMS_SOCIAL_HISTORY_SECTION;
+	}
 
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public boolean validateEMSSocialHistorySectionTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context)
-  {
-    return EMSSocialHistorySectionOperations.validateEMSSocialHistorySectionTemplateId(this, diagnostics, context);
-  }
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateEMSSocialHistorySectionTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return EMSSocialHistorySectionOperations.validateEMSSocialHistorySectionTemplateId(this, diagnostics, context);
+	}
 
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public boolean validateEMSSocialHistorySectionCode(DiagnosticChain diagnostics, Map<Object, Object> context)
-  {
-    return EMSSocialHistorySectionOperations.validateEMSSocialHistorySectionCode(this, diagnostics, context);
-  }
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateEMSSocialHistorySectionCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return EMSSocialHistorySectionOperations.validateEMSSocialHistorySectionCode(this, diagnostics, context);
+	}
 
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public boolean validateEMSSocialHistorySectionCodeP(DiagnosticChain diagnostics, Map<Object, Object> context)
-  {
-    return EMSSocialHistorySectionOperations.validateEMSSocialHistorySectionCodeP(this, diagnostics, context);
-  }
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateEMSSocialHistorySectionCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return EMSSocialHistorySectionOperations.validateEMSSocialHistorySectionCodeP(this, diagnostics, context);
+	}
 
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public boolean validateEMSSocialHistorySectionTitle(DiagnosticChain diagnostics, Map<Object, Object> context)
-  {
-    return EMSSocialHistorySectionOperations.validateEMSSocialHistorySectionTitle(this, diagnostics, context);
-  }
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateEMSSocialHistorySectionTitle(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return EMSSocialHistorySectionOperations.validateEMSSocialHistorySectionTitle(this, diagnostics, context);
+	}
 
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public boolean validateEMSSocialHistorySectionText(DiagnosticChain diagnostics, Map<Object, Object> context)
-  {
-    return EMSSocialHistorySectionOperations.validateEMSSocialHistorySectionText(this, diagnostics, context);
-  }
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateEMSSocialHistorySectionText(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return EMSSocialHistorySectionOperations.validateEMSSocialHistorySectionText(this, diagnostics, context);
+	}
 
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public boolean validateEMSSocialHistorySectionEntry1(DiagnosticChain diagnostics, Map<Object, Object> context)
-  {
-    return EMSSocialHistorySectionOperations.validateEMSSocialHistorySectionEntry1(this, diagnostics, context);
-  }
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateEMSSocialHistorySectionEntry1(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return EMSSocialHistorySectionOperations.validateEMSSocialHistorySectionEntry1(this, diagnostics, context);
+	}
 
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public boolean validateEMSSocialHistorySectionEntry2(DiagnosticChain diagnostics, Map<Object, Object> context)
-  {
-    return EMSSocialHistorySectionOperations.validateEMSSocialHistorySectionEntry2(this, diagnostics, context);
-  }
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateEMSSocialHistorySectionEntry2(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return EMSSocialHistorySectionOperations.validateEMSSocialHistorySectionEntry2(this, diagnostics, context);
+	}
 
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public EMSSocialHistorySection init() {
-      return Initializer.Util.init(this);
-  }
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EMSSocialHistorySection init() {
+		return Initializer.Util.init(this);
+	}
 
-  /**
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    public EMSSocialHistorySection init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-        Initializer.Util.init(this, initializers);
-        return this;
-    }
-} //EMSSocialHistorySectionImpl
+	/**
+	   * <!-- begin-user-doc -->
+	   * <!-- end-user-doc -->
+	   * @generated
+	   */
+	public EMSSocialHistorySection init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+		Initializer.Util.init(this, initializers);
+		return this;
+	}
+} // EMSSocialHistorySectionImpl

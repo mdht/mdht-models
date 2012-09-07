@@ -32,54 +32,56 @@ import org.openhealthtools.mdht.uml.cda.consol.GeneralHeaderConstraints;
  *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrAAAAAComponent2StructuredBodyComponent3Section constraints.validation.error='SectionCode'"
  * @generated
  */
-public interface AAAAA extends GeneralHeaderConstraints
-{
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * <!-- begin-model-doc -->
-   * @param diagnostics The chain of diagnostics to which problems are to be appended.
-   * @param context The cache of context-specific information.
-   * <!-- end-model-doc -->
-   * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.recordTarget->exists(recordTarget : cda::RecordTarget | not recordTarget.oclIsUndefined() and recordTarget.oclIsKindOf(cda::RecordTarget))'"
-   * @generated
-   */
-  boolean validateAAAAARecordTarget(DiagnosticChain diagnostics, Map<Object, Object> context);
+public interface AAAAA extends GeneralHeaderConstraints {
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.recordTarget->exists(recordTarget : cda::RecordTarget | not recordTarget.oclIsUndefined() and recordTarget.oclIsKindOf(cda::RecordTarget))'"
+	 * @generated
+	 */
+	boolean validateAAAAARecordTarget(DiagnosticChain diagnostics, Map<Object, Object> context);
 
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * <!-- begin-model-doc -->
-   * @param diagnostics The chain of diagnostics to which problems are to be appended.
-   * @param context The cache of context-specific information.
-   * <!-- end-model-doc -->
-   * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.component->excluding(null)->select(typeCode=vocab::ParticipationType::CST).structuredBody->excluding(null).component->excluding(null).section->excluding(null)->reject((code.oclIsUndefined() or code.isNullFlavorUndefined()) implies (not code.oclIsUndefined()))'"
-   * @generated
-   */
-  boolean validateAAAAAComponent2StructuredBodyComponent3SectionCode(DiagnosticChain diagnostics, Map<Object, Object> context);
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.component->excluding(null)->select(typeCode=vocab::ParticipationType::CST).structuredBody->excluding(null).component->excluding(null).section->excluding(null)->reject((code.oclIsUndefined() or code.isNullFlavorUndefined()) implies (not code.oclIsUndefined()))'"
+	 * @generated
+	 */
+	boolean validateAAAAAComponent2StructuredBodyComponent3SectionCode(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
 
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * <!-- begin-model-doc -->
-   * @param diagnostics The chain of diagnostics to which problems are to be appended.
-   * @param context The cache of context-specific information.
-   * <!-- end-model-doc -->
-   * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.component->excluding(null)->select(typeCode=vocab::ParticipationType::CST).structuredBody->excluding(null).component->excluding(null)->reject(section->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::AllergiesSection))->select(typeCode=vocab::ParticipationType::CST)->size() = 1)'"
-   * @generated
-   */
-  boolean validateAAAAAComponent2StructuredBodyComponent3Section(DiagnosticChain diagnostics, Map<Object, Object> context);
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.component->excluding(null)->select(typeCode=vocab::ParticipationType::CST).structuredBody->excluding(null).component->excluding(null)->reject(section->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::AllergiesSection))->select(typeCode=vocab::ParticipationType::CST)->size() = 1)'"
+	 * @generated
+	 */
+	boolean validateAAAAAComponent2StructuredBodyComponent3Section(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
 
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public AAAAA init();
-    /**
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    public AAAAA init(Iterable<? extends Initializer<? extends EObject>> initializers);
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public AAAAA init();
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public AAAAA init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // AAAAA

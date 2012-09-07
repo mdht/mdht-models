@@ -201,6 +201,9 @@
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_nYX0IBt5EeGnMahsPjlwOw"/>
     </ownedAttribute>
     <nestedClassifier xmi:type="uml:Class" xmi:id="_VboYkG65EeGeVrQbtyMiPg" name="Consumable">
+      <ownedComment xmi:id="_RofYEPEkEeGPm_ynmLKd6Q">
+        <body>INLINE</body>
+      </ownedComment>
       <generalization xmi:id="_c8MnAG65EeGeVrQbtyMiPg">
         <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_gRI5MEcEEd6besF9iFIJkQ"/>
       </generalization>

@@ -168,7 +168,7 @@ with respect to the payer, so that the identifiers can be recorded.&#xD;
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_t6hXIOWbEeGKmvzED_He2w" value="1"/>
         </ownedAttribute>
         <ownedAttribute xmi:id="_s4EMEF0ZEeGt2doqSDULjA" name="addr">
-          <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_v0zRUD5yEd6cla2oXsPtlA"/>
+          <type xmi:type="uml:Class" href="consol-documents.uml#_i4zXgPIPEeGu1M-cCXg0Dg"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_v6xvIF0ZEeGt2doqSDULjA" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_v6xvIV0ZEeGt2doqSDULjA"/>
         </ownedAttribute>
@@ -249,7 +249,7 @@ with respect to the payer, so that the identifiers can be recorded.&#xD;
           <ownedComment xmi:id="_mQ0iUG7gEeGO5JJTinolhw">
             <body>The content of addr SHALL be a conformant US Realm Address (AD.US.FIELDED) (2.16.840.1.113883.10.20.22.5.2) (CONF:10482)</body>
           </ownedComment>
-          <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_v0zRUD5yEd6cla2oXsPtlA"/>
+          <type xmi:type="uml:Class" href="consol-documents.uml#_i4zXgPIPEeGu1M-cCXg0Dg"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_RLNzcF16EeGt2doqSDULjA" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_RLNzcV16EeGt2doqSDULjA"/>
         </ownedAttribute>
@@ -314,7 +314,7 @@ with respect to the payer, so that the identifiers can be recorded.&#xD;
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_-X_kQeWdEeGKmvzED_He2w" value="1"/>
         </ownedAttribute>
         <ownedAttribute xmi:id="_YqD1gF_pEeGt2doqSDULjA" name="addr">
-          <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_v0zRUD5yEd6cla2oXsPtlA"/>
+          <type xmi:type="uml:Class" href="consol-documents.uml#_i4zXgPIPEeGu1M-cCXg0Dg"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_pJeOQF_pEeGt2doqSDULjA" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_pJeOQV_pEeGt2doqSDULjA"/>
         </ownedAttribute>
@@ -382,7 +382,7 @@ with respect to the payer, so that the identifiers can be recorded.&#xD;
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_HwIoMWAvEeGt2doqSDULjA" value="1"/>
         </ownedAttribute>
         <ownedAttribute xmi:id="_Qtp80GAvEeGt2doqSDULjA" name="addr">
-          <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_v0zRUD5yEd6cla2oXsPtlA"/>
+          <type xmi:type="uml:Class" href="consol-documents.uml#_i4zXgPIPEeGu1M-cCXg0Dg"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_S_UdcGAvEeGt2doqSDULjA" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_S_UdcWAvEeGt2doqSDULjA"/>
         </ownedAttribute>

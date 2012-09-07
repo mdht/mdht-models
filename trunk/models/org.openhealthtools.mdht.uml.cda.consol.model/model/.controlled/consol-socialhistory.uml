@@ -343,7 +343,7 @@
       <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_tRpv0Eo-Ed6c3qsAxlFHaQ"/>
     </ownedAttribute>
   </uml:Class>
-  <CDA:CDATemplate xmi:id="_moWLAOWQEeGKmvzED_He2w" base_Class="_gIH_QOWQEeGKmvzED_He2w" templateId="2.16.840.1.113883.10.22.4.78">
+  <CDA:CDATemplate xmi:id="_moWLAOWQEeGKmvzED_He2w" base_Class="_gIH_QOWQEeGKmvzED_He2w" templateId="2.16.840.1.113883.10.20.22.4.85">
     <ruleId>CONF:16566</ruleId>
     <ruleId>CONF:16567</ruleId>
   </CDA:CDATemplate>

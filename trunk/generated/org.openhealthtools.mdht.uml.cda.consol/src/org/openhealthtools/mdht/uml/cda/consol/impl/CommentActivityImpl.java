@@ -33,110 +33,198 @@ import org.openhealthtools.mdht.uml.cda.impl.ActImpl;
  */
 public class CommentActivityImpl extends ActImpl implements CommentActivity {
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	protected CommentActivityImpl() {
 		super();
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	@Override
 	protected EClass eStaticClass() {
 		return ConsolPackage.Literals.COMMENT_ACTIVITY;
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	* <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateCommentActivityTextReference(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return CommentActivityOperations.validateCommentActivityTextReference(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateCommentActivityTextReferenceValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return CommentActivityOperations.validateCommentActivityTextReferenceValue(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateCommentActivityReferenceValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return CommentActivityOperations.validateCommentActivityReferenceValue(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateCommentActivityTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return CommentActivityOperations.validateCommentActivityTemplateId(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateCommentActivityClassCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return CommentActivityOperations.validateCommentActivityClassCode(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateCommentActivityMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return CommentActivityOperations.validateCommentActivityMoodCode(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateCommentActivityCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return CommentActivityOperations.validateCommentActivityCode(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateCommentActivityText(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return CommentActivityOperations.validateCommentActivityText(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateCommentActivityAuthor(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return CommentActivityOperations.validateCommentActivityAuthor(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
+	public boolean validateCommentActivityAuthorAssignedAuthorUSRealmAddressStreet(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return CommentActivityOperations.validateCommentActivityAuthorAssignedAuthorUSRealmAddressStreet(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateCommentActivityAuthorAssignedAuthorUSRealmAddressCity(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return CommentActivityOperations.validateCommentActivityAuthorAssignedAuthorUSRealmAddressCity(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateCommentActivityAuthorAssignedAuthorUSRealmAddressCountry(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return CommentActivityOperations.validateCommentActivityAuthorAssignedAuthorUSRealmAddressCountry(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateCommentActivityAuthorAssignedAuthorUSRealmAddressPostalCode(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return CommentActivityOperations.validateCommentActivityAuthorAssignedAuthorUSRealmAddressPostalCode(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateCommentActivityAuthorAssignedAuthorUSRealmAddressState(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return CommentActivityOperations.validateCommentActivityAuthorAssignedAuthorUSRealmAddressState(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateCommentActivityAuthorAssignedAuthorUSRealmAddressStreetAddressLine(
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return CommentActivityOperations.validateCommentActivityAuthorAssignedAuthorUSRealmAddressStreetAddressLine(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateCommentActivityAuthorAssignedAuthorUSRealmAddressUseP(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return CommentActivityOperations.validateCommentActivityAuthorAssignedAuthorUSRealmAddressUseP(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateCommentActivityAuthorAssignedAuthorUSRealmAddressUse(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return CommentActivityOperations.validateCommentActivityAuthorAssignedAuthorUSRealmAddressUse(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public boolean validateCommentActivityAuthorAssignedAuthorHasPersonOrOrganization(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return CommentActivityOperations.validateCommentActivityAuthorAssignedAuthorHasPersonOrOrganization(
@@ -144,10 +232,10 @@ public class CommentActivityImpl extends ActImpl implements CommentActivity {
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateCommentActivityAuthorAssignedAuthorAssignPersonName(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return CommentActivityOperations.validateCommentActivityAuthorAssignedAuthorAssignPersonName(
@@ -155,48 +243,48 @@ public class CommentActivityImpl extends ActImpl implements CommentActivity {
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateCommentActivityAuthorAssignedAuthorAddr(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return CommentActivityOperations.validateCommentActivityAuthorAssignedAuthorAddr(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateCommentActivityAuthorAssignedAuthorId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return CommentActivityOperations.validateCommentActivityAuthorAssignedAuthorId(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateCommentActivityAuthorTime(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return CommentActivityOperations.validateCommentActivityAuthorTime(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateCommentActivityAuthorAssignedAuthor(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return CommentActivityOperations.validateCommentActivityAuthorAssignedAuthor(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public CommentActivity init() {
 		return Initializer.Util.init(this);
 	}

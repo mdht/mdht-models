@@ -151,7 +151,7 @@ The Assessment and Plan section represents both the clinician's conclusions and 
           <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_z2vcQEcDEd6besF9iFIJkQ"/>
         </generalization>
         <ownedAttribute xmi:id="_S78McHegEeGLwesdFe7o6w" name="addr" visibility="private" aggregation="composite">
-          <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_v0zRUD5yEd6cla2oXsPtlA"/>
+          <type xmi:type="uml:Class" href="consol-documents.uml#_i4zXgPIPEeGu1M-cCXg0Dg"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_YeUP4HegEeGLwesdFe7o6w" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_YeUP4XegEeGLwesdFe7o6w" value="1"/>
         </ownedAttribute>

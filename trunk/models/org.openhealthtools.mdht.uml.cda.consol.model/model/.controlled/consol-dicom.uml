@@ -68,9 +68,13 @@ DICOM Object Catalog sections are not intended for viewing and contain empty sec
       <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_3_p4cErfEd6FXKclYGEDCw"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_1B44wErXEeGJpZWiuxRVIw" name="assignedEntity" type="_kAWv0EVEEeGAh_iQGJvI5w" association="_1B44wkrXEeGJpZWiuxRVIw">
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_1B44wUrXEeGJpZWiuxRVIw"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_VSKYAPElEeGPm_ynmLKd6Q" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_VSKYAfElEeGPm_ynmLKd6Q" value="1"/>
     </ownedAttribute>
     <nestedClassifier xmi:type="uml:Class" xmi:id="_kAWv0EVEEeGAh_iQGJvI5w" name="AssignedEntity">
+      <ownedComment xmi:id="_qe2NoPEkEeGPm_ynmLKd6Q">
+        <body>INLINE</body>
+      </ownedComment>
       <ownedRule xmi:id="_JHwgQEVFEeGAh_iQGJvI5w" name="hasNationalProviderId" constrainedElement="_kAWv0EVEEeGAh_iQGJvI5w">
         <specification xmi:type="uml:OpaqueExpression" xmi:id="_MuIKAEVFEeGAh_iQGJvI5w">
           <language>Analysis</language>
@@ -209,6 +213,14 @@ DICOM Object Catalog sections are not intended for viewing and contain empty sec
           <language>OCL</language>
           <body>SHALL contain a valid DICOM Organizational Role from DICOM CID 7452  (Value Set 1.2.840.10008.6.1.516)(@codeSystem is 1.2.840.10008.2.16.4) or an appropriate national health care provider coding system (e.g., NUCC in the U.S., where @codeSystem is 2.16.840.1.113883.6.101) (CONF:8889).</body>
           <body>self.code.codeSystem = '1.2.840.10008.2.16.4' or self.code.codeSystem = '2.16.840.1.113883.6.101'</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_xsB-EParEeGwLN-1_ZfJEQ" name="hasNationalProviderId" constrainedElement="_kAWv0EVEEeGAh_iQGJvI5w">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_xsB-EfarEeGwLN-1_ZfJEQ">
+          <language>Analysis</language>
+          <language>OCL</language>
+          <body>The id SHOULD include zero or one [0..1] id where id/@root =&quot;2.16.840.1.113883.4.6&quot; National Provider Identifier</body>
+          <body>self.id->exists( root='2.16.840.1.113883.4.6' )</body>
         </specification>
       </ownedRule>
       <generalization xmi:id="_pdJL4Eb1EeGp67IkyTw1fg">
@@ -1320,4 +1332,7 @@ In both cases, inFulfillmentOf/order/id is mapped to the DICOM Accession Number 
     <ruleId>CONF:9302</ruleId>
     <ruleId>CONF:15942</ruleId>
   </CDA:EntryRelationship>
+  <CDA:ConstraintValidation xmi:id="_xtRUMParEeGwLN-1_ZfJEQ" severity="WARNING" base_Constraint="_xsB-EParEeGwLN-1_ZfJEQ">
+    <ruleId>CONF:10034</ruleId>
+  </CDA:ConstraintValidation>
 </xmi:XMI>

@@ -22,8 +22,6 @@ import org.openhealthtools.mdht.uml.cda.emspcr.operations.DerivedEntryOperations
 
 import org.openhealthtools.mdht.uml.cda.impl.EntryImpl;
 
-import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
-
 /**
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Derived Entry</b></em>'.
@@ -33,65 +31,60 @@ import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
  *
  * @generated
  */
-public class DerivedEntryImpl extends EntryImpl implements DerivedEntry
-{
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  protected DerivedEntryImpl()
-  {
-    super();
-  }
+public class DerivedEntryImpl extends EntryImpl implements DerivedEntry {
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected DerivedEntryImpl() {
+		super();
+	}
 
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  @Override
-  protected EClass eStaticClass()
-  {
-    return EmspcrPackage.Literals.DERIVED_ENTRY;
-  }
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	protected EClass eStaticClass() {
+		return EmspcrPackage.Literals.DERIVED_ENTRY;
+	}
 
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public boolean validateDerivedEntryTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context)
-  {
-    return DerivedEntryOperations.validateDerivedEntryTemplateId(this, diagnostics, context);
-  }
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateDerivedEntryTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return DerivedEntryOperations.validateDerivedEntryTemplateId(this, diagnostics, context);
+	}
 
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public boolean validateDerivedEntryTypeCode(DiagnosticChain diagnostics, Map<Object, Object> context)
-  {
-    return DerivedEntryOperations.validateDerivedEntryTypeCode(this, diagnostics, context);
-  }
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateDerivedEntryTypeCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return DerivedEntryOperations.validateDerivedEntryTypeCode(this, diagnostics, context);
+	}
 
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public DerivedEntry init() {
-      return Initializer.Util.init(this);
-  }
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public DerivedEntry init() {
+		return Initializer.Util.init(this);
+	}
 
-  /**
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    public DerivedEntry init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-        Initializer.Util.init(this, initializers);
-        return this;
-    }
-} //DerivedEntryImpl
+	/**
+	   * <!-- begin-user-doc -->
+	   * <!-- end-user-doc -->
+	   * @generated
+	   */
+	public DerivedEntry init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+		Initializer.Util.init(this, initializers);
+		return this;
+	}
+} // DerivedEntryImpl

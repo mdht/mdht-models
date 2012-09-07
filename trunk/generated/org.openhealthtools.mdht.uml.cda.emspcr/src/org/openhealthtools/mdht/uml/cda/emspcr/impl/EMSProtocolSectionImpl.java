@@ -22,8 +22,6 @@ import org.openhealthtools.mdht.uml.cda.emspcr.operations.EMSProtocolSectionOper
 
 import org.openhealthtools.mdht.uml.cda.impl.SectionImpl;
 
-import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
-
 /**
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>EMS Protocol Section</b></em>'.
@@ -33,115 +31,105 @@ import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
  *
  * @generated
  */
-public class EMSProtocolSectionImpl extends SectionImpl implements EMSProtocolSection
-{
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  protected EMSProtocolSectionImpl()
-  {
-    super();
-  }
+public class EMSProtocolSectionImpl extends SectionImpl implements EMSProtocolSection {
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected EMSProtocolSectionImpl() {
+		super();
+	}
 
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  @Override
-  protected EClass eStaticClass()
-  {
-    return EmspcrPackage.Literals.EMS_PROTOCOL_SECTION;
-  }
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	protected EClass eStaticClass() {
+		return EmspcrPackage.Literals.EMS_PROTOCOL_SECTION;
+	}
 
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public boolean validateEMSProtocolSectionTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context)
-  {
-    return EMSProtocolSectionOperations.validateEMSProtocolSectionTemplateId(this, diagnostics, context);
-  }
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateEMSProtocolSectionTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return EMSProtocolSectionOperations.validateEMSProtocolSectionTemplateId(this, diagnostics, context);
+	}
 
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public boolean validateEMSProtocolSectionCode(DiagnosticChain diagnostics, Map<Object, Object> context)
-  {
-    return EMSProtocolSectionOperations.validateEMSProtocolSectionCode(this, diagnostics, context);
-  }
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateEMSProtocolSectionCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return EMSProtocolSectionOperations.validateEMSProtocolSectionCode(this, diagnostics, context);
+	}
 
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public boolean validateEMSProtocolSectionTitle(DiagnosticChain diagnostics, Map<Object, Object> context)
-  {
-    return EMSProtocolSectionOperations.validateEMSProtocolSectionTitle(this, diagnostics, context);
-  }
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateEMSProtocolSectionTitle(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return EMSProtocolSectionOperations.validateEMSProtocolSectionTitle(this, diagnostics, context);
+	}
 
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public boolean validateEMSProtocolSectionText(DiagnosticChain diagnostics, Map<Object, Object> context)
-  {
-    return EMSProtocolSectionOperations.validateEMSProtocolSectionText(this, diagnostics, context);
-  }
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateEMSProtocolSectionText(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return EMSProtocolSectionOperations.validateEMSProtocolSectionText(this, diagnostics, context);
+	}
 
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public boolean validateEMSProtocolSectionEntry1(DiagnosticChain diagnostics, Map<Object, Object> context)
-  {
-    return EMSProtocolSectionOperations.validateEMSProtocolSectionEntry1(this, diagnostics, context);
-  }
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateEMSProtocolSectionEntry1(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return EMSProtocolSectionOperations.validateEMSProtocolSectionEntry1(this, diagnostics, context);
+	}
 
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public boolean validateEMSProtocolSectionEntry2(DiagnosticChain diagnostics, Map<Object, Object> context)
-  {
-    return EMSProtocolSectionOperations.validateEMSProtocolSectionEntry2(this, diagnostics, context);
-  }
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateEMSProtocolSectionEntry2(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return EMSProtocolSectionOperations.validateEMSProtocolSectionEntry2(this, diagnostics, context);
+	}
 
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public boolean validateEMSProtocolSectionEntry3(DiagnosticChain diagnostics, Map<Object, Object> context)
-  {
-    return EMSProtocolSectionOperations.validateEMSProtocolSectionEntry3(this, diagnostics, context);
-  }
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateEMSProtocolSectionEntry3(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return EMSProtocolSectionOperations.validateEMSProtocolSectionEntry3(this, diagnostics, context);
+	}
 
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public EMSProtocolSection init() {
-      return Initializer.Util.init(this);
-  }
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EMSProtocolSection init() {
+		return Initializer.Util.init(this);
+	}
 
-  /**
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    public EMSProtocolSection init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-        Initializer.Util.init(this, initializers);
-        return this;
-    }
-} //EMSProtocolSectionImpl
+	/**
+	   * <!-- begin-user-doc -->
+	   * <!-- end-user-doc -->
+	   * @generated
+	   */
+	public EMSProtocolSection init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+		Initializer.Util.init(this, initializers);
+		return this;
+	}
+} // EMSProtocolSectionImpl

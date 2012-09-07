@@ -45,479 +45,436 @@ import org.openhealthtools.mdht.uml.cda.operations.SectionOperations;
  *
  * @generated
  */
-public class EMSCurrentMedicationSectionOperations extends SectionOperations
-{
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  protected EMSCurrentMedicationSectionOperations() {
-    super();
-  }
+public class EMSCurrentMedicationSectionOperations extends SectionOperations {
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected EMSCurrentMedicationSectionOperations() {
+		super();
+	}
 
-  /**
-   * The cached OCL expression body for the '{@link #validateEMSCurrentMedicationSectionTemplateId(EMSCurrentMedicationSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate EMS Current Medication Section Template Id</em>}' operation.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @see #validateEMSCurrentMedicationSectionTemplateId(EMSCurrentMedicationSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-   * @generated
-   * @ordered
-   */
-  protected static final String VALIDATE_EMS_CURRENT_MEDICATION_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.17.3.10.1.15')";
+	/**
+	 * The cached OCL expression body for the '{@link #validateEMSCurrentMedicationSectionTemplateId(EMSCurrentMedicationSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate EMS Current Medication Section Template Id</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateEMSCurrentMedicationSectionTemplateId(EMSCurrentMedicationSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String VALIDATE_EMS_CURRENT_MEDICATION_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.17.3.10.1.15')";
 
-  /**
-   * The cached OCL invariant for the '{@link #validateEMSCurrentMedicationSectionTemplateId(EMSCurrentMedicationSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate EMS Current Medication Section Template Id</em>}' invariant operation.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @see #validateEMSCurrentMedicationSectionTemplateId(EMSCurrentMedicationSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-   * @generated
-   * @ordered
-   */
-  
-  protected static Constraint VALIDATE_EMS_CURRENT_MEDICATION_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-  
+	/**
+	 * The cached OCL invariant for the '{@link #validateEMSCurrentMedicationSectionTemplateId(EMSCurrentMedicationSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate EMS Current Medication Section Template Id</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateEMSCurrentMedicationSectionTemplateId(EMSCurrentMedicationSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * <!-- begin-model-doc -->
-   * @param emsCurrentMedicationSection The receiving '<em><b>EMS Current Medication Section</b></em>' model object.
-   * @param diagnostics The chain of diagnostics to which problems are to be appended.
-   * @param context The cache of context-specific information.
-   * <!-- end-model-doc -->
-   * @generated
-   */
-  
-  public static  boolean validateEMSCurrentMedicationSectionTemplateId(EMSCurrentMedicationSection emsCurrentMedicationSection, DiagnosticChain diagnostics, Map<Object, Object> context)
-  {
-  	  
-    if (VALIDATE_EMS_CURRENT_MEDICATION_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-      OCL.Helper helper = EOCL_ENV.createOCLHelper();
-      helper.setContext(EmspcrPackage.Literals.EMS_CURRENT_MEDICATION_SECTION);
-      try
-      {
-        VALIDATE_EMS_CURRENT_MEDICATION_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_EMS_CURRENT_MEDICATION_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-      }
-      catch (ParserException pe)
-      {
-        throw new UnsupportedOperationException(pe.getLocalizedMessage());
-      }
-    }
-    if (!EOCL_ENV.createQuery(VALIDATE_EMS_CURRENT_MEDICATION_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(emsCurrentMedicationSection))
-    {
-      if (diagnostics != null)
-      {
-        diagnostics.add
-          (new BasicDiagnostic
-            (Diagnostic.ERROR,
-             EmspcrValidator.DIAGNOSTIC_SOURCE,
-             EmspcrValidator.EMS_CURRENT_MEDICATION_SECTION__EMS_CURRENT_MEDICATION_SECTION_TEMPLATE_ID,
-             EmspcrPlugin.INSTANCE.getString("EMSCurrentMedicationSectionTemplateId"),
-             new Object [] { emsCurrentMedicationSection }));
-      }
-       
-      return false;
-    }
-    return true;
-  }
+	protected static Constraint VALIDATE_EMS_CURRENT_MEDICATION_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
-  /**
-   * The cached OCL expression body for the '{@link #validateEMSCurrentMedicationSectionCode(EMSCurrentMedicationSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate EMS Current Medication Section Code</em>}' operation.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @see #validateEMSCurrentMedicationSectionCode(EMSCurrentMedicationSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-   * @generated
-   * @ordered
-   */
-  protected static final String VALIDATE_EMS_CURRENT_MEDICATION_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and "+
-"let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in "+
-"value.code = '67844-1' and value.codeSystem = '2.16.840.1.113883.6.1')";
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param emsCurrentMedicationSection The receiving '<em><b>EMS Current Medication Section</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
 
-  /**
-   * The cached OCL invariant for the '{@link #validateEMSCurrentMedicationSectionCode(EMSCurrentMedicationSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate EMS Current Medication Section Code</em>}' invariant operation.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @see #validateEMSCurrentMedicationSectionCode(EMSCurrentMedicationSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-   * @generated
-   * @ordered
-   */
-  
-  protected static Constraint VALIDATE_EMS_CURRENT_MEDICATION_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-  
+	public static boolean validateEMSCurrentMedicationSectionTemplateId(
+			EMSCurrentMedicationSection emsCurrentMedicationSection, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * <!-- begin-model-doc -->
-   * @param emsCurrentMedicationSection The receiving '<em><b>EMS Current Medication Section</b></em>' model object.
-   * @param diagnostics The chain of diagnostics to which problems are to be appended.
-   * @param context The cache of context-specific information.
-   * <!-- end-model-doc -->
-   * @generated
-   */
-  
-  public static  boolean validateEMSCurrentMedicationSectionCode(EMSCurrentMedicationSection emsCurrentMedicationSection, DiagnosticChain diagnostics, Map<Object, Object> context)
-  {
-  	  
-    if (VALIDATE_EMS_CURRENT_MEDICATION_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-      OCL.Helper helper = EOCL_ENV.createOCLHelper();
-      helper.setContext(EmspcrPackage.Literals.EMS_CURRENT_MEDICATION_SECTION);
-      try
-      {
-        VALIDATE_EMS_CURRENT_MEDICATION_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_EMS_CURRENT_MEDICATION_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-      }
-      catch (ParserException pe)
-      {
-        throw new UnsupportedOperationException(pe.getLocalizedMessage());
-      }
-    }
-    if (!EOCL_ENV.createQuery(VALIDATE_EMS_CURRENT_MEDICATION_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(emsCurrentMedicationSection))
-    {
-      if (diagnostics != null)
-      {
-        diagnostics.add
-          (new BasicDiagnostic
-            (Diagnostic.ERROR,
-             EmspcrValidator.DIAGNOSTIC_SOURCE,
-             EmspcrValidator.EMS_CURRENT_MEDICATION_SECTION__EMS_CURRENT_MEDICATION_SECTION_CODE,
-             EmspcrPlugin.INSTANCE.getString("EMSCurrentMedicationSectionCode"),
-             new Object [] { emsCurrentMedicationSection }));
-      }
-       
-      return false;
-    }
-    return true;
-  }
+		if (VALIDATE_EMS_CURRENT_MEDICATION_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+			helper.setContext(EmspcrPackage.Literals.EMS_CURRENT_MEDICATION_SECTION);
+			try {
+				VALIDATE_EMS_CURRENT_MEDICATION_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_EMS_CURRENT_MEDICATION_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+			} catch (ParserException pe) {
+				throw new UnsupportedOperationException(pe.getLocalizedMessage());
+			}
+		}
+		if (!EOCL_ENV.createQuery(VALIDATE_EMS_CURRENT_MEDICATION_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			emsCurrentMedicationSection)) {
+			if (diagnostics != null) {
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
+					EmspcrValidator.EMS_CURRENT_MEDICATION_SECTION__EMS_CURRENT_MEDICATION_SECTION_TEMPLATE_ID,
+					EmspcrPlugin.INSTANCE.getString("EMSCurrentMedicationSectionTemplateId"),
+					new Object[] { emsCurrentMedicationSection }));
+			}
 
-  /**
-   * The cached OCL expression body for the '{@link #validateEMSCurrentMedicationSectionTitle(EMSCurrentMedicationSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate EMS Current Medication Section Title</em>}' operation.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @see #validateEMSCurrentMedicationSectionTitle(EMSCurrentMedicationSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-   * @generated
-   * @ordered
-   */
-  protected static final String VALIDATE_EMS_CURRENT_MEDICATION_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.title.oclIsUndefined() or self.title.isNullFlavorUndefined()) implies (not self.title.oclIsUndefined() and self.title.getText() = 'EMS Current Medications Section')";
+			return false;
+		}
+		return true;
+	}
 
-  /**
-   * The cached OCL invariant for the '{@link #validateEMSCurrentMedicationSectionTitle(EMSCurrentMedicationSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate EMS Current Medication Section Title</em>}' invariant operation.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @see #validateEMSCurrentMedicationSectionTitle(EMSCurrentMedicationSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-   * @generated
-   * @ordered
-   */
-  
-  protected static Constraint VALIDATE_EMS_CURRENT_MEDICATION_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-  
+	/**
+	 * The cached OCL expression body for the '{@link #validateEMSCurrentMedicationSectionCode(EMSCurrentMedicationSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate EMS Current Medication Section Code</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateEMSCurrentMedicationSectionCode(EMSCurrentMedicationSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String VALIDATE_EMS_CURRENT_MEDICATION_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and "
+			+ "let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in "
+			+ "value.code = '67844-1' and value.codeSystem = '2.16.840.1.113883.6.1')";
 
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * <!-- begin-model-doc -->
-   * @param emsCurrentMedicationSection The receiving '<em><b>EMS Current Medication Section</b></em>' model object.
-   * @param diagnostics The chain of diagnostics to which problems are to be appended.
-   * @param context The cache of context-specific information.
-   * <!-- end-model-doc -->
-   * @generated
-   */
-  
-  public static  boolean validateEMSCurrentMedicationSectionTitle(EMSCurrentMedicationSection emsCurrentMedicationSection, DiagnosticChain diagnostics, Map<Object, Object> context)
-  {
-  	  
-    if (VALIDATE_EMS_CURRENT_MEDICATION_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-      OCL.Helper helper = EOCL_ENV.createOCLHelper();
-      helper.setContext(EmspcrPackage.Literals.EMS_CURRENT_MEDICATION_SECTION);
-      try
-      {
-        VALIDATE_EMS_CURRENT_MEDICATION_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_EMS_CURRENT_MEDICATION_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-      }
-      catch (ParserException pe)
-      {
-        throw new UnsupportedOperationException(pe.getLocalizedMessage());
-      }
-    }
-    if (!EOCL_ENV.createQuery(VALIDATE_EMS_CURRENT_MEDICATION_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(emsCurrentMedicationSection))
-    {
-      if (diagnostics != null)
-      {
-        diagnostics.add
-          (new BasicDiagnostic
-            (Diagnostic.ERROR,
-             EmspcrValidator.DIAGNOSTIC_SOURCE,
-             EmspcrValidator.EMS_CURRENT_MEDICATION_SECTION__EMS_CURRENT_MEDICATION_SECTION_TITLE,
-             EmspcrPlugin.INSTANCE.getString("EMSCurrentMedicationSectionTitle"),
-             new Object [] { emsCurrentMedicationSection }));
-      }
-       
-      return false;
-    }
-    return true;
-  }
+	/**
+	 * The cached OCL invariant for the '{@link #validateEMSCurrentMedicationSectionCode(EMSCurrentMedicationSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate EMS Current Medication Section Code</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateEMSCurrentMedicationSectionCode(EMSCurrentMedicationSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 
-  /**
-   * The cached OCL expression body for the '{@link #validateEMSCurrentMedicationSectionText(EMSCurrentMedicationSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate EMS Current Medication Section Text</em>}' operation.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @see #validateEMSCurrentMedicationSectionText(EMSCurrentMedicationSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-   * @generated
-   * @ordered
-   */
-  protected static final String VALIDATE_EMS_CURRENT_MEDICATION_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "not self.text.oclIsUndefined()";
+	protected static Constraint VALIDATE_EMS_CURRENT_MEDICATION_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
-  /**
-   * The cached OCL invariant for the '{@link #validateEMSCurrentMedicationSectionText(EMSCurrentMedicationSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate EMS Current Medication Section Text</em>}' invariant operation.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @see #validateEMSCurrentMedicationSectionText(EMSCurrentMedicationSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-   * @generated
-   * @ordered
-   */
-  
-  protected static Constraint VALIDATE_EMS_CURRENT_MEDICATION_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param emsCurrentMedicationSection The receiving '<em><b>EMS Current Medication Section</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
 
+	public static boolean validateEMSCurrentMedicationSectionCode(
+			EMSCurrentMedicationSection emsCurrentMedicationSection, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * <!-- begin-model-doc -->
-   * @param emsCurrentMedicationSection The receiving '<em><b>EMS Current Medication Section</b></em>' model object.
-   * @param diagnostics The chain of diagnostics to which problems are to be appended.
-   * @param context The cache of context-specific information.
-   * <!-- end-model-doc -->
-   * @generated
-   */
-  
-  public static  boolean validateEMSCurrentMedicationSectionText(EMSCurrentMedicationSection emsCurrentMedicationSection, DiagnosticChain diagnostics, Map<Object, Object> context)
-  {
-  	  
-    if (VALIDATE_EMS_CURRENT_MEDICATION_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-      OCL.Helper helper = EOCL_ENV.createOCLHelper();
-      helper.setContext(EmspcrPackage.Literals.EMS_CURRENT_MEDICATION_SECTION);
-      try
-      {
-        VALIDATE_EMS_CURRENT_MEDICATION_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_EMS_CURRENT_MEDICATION_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-      }
-      catch (ParserException pe)
-      {
-        throw new UnsupportedOperationException(pe.getLocalizedMessage());
-      }
-    }
-    if (!EOCL_ENV.createQuery(VALIDATE_EMS_CURRENT_MEDICATION_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(emsCurrentMedicationSection))
-    {
-      if (diagnostics != null)
-      {
-        diagnostics.add
-          (new BasicDiagnostic
-            (Diagnostic.ERROR,
-             EmspcrValidator.DIAGNOSTIC_SOURCE,
-             EmspcrValidator.EMS_CURRENT_MEDICATION_SECTION__EMS_CURRENT_MEDICATION_SECTION_TEXT,
-             EmspcrPlugin.INSTANCE.getString("EMSCurrentMedicationSectionText"),
-             new Object [] { emsCurrentMedicationSection }));
-      }
-       
-      return false;
-    }
-    return true;
-  }
+		if (VALIDATE_EMS_CURRENT_MEDICATION_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+			helper.setContext(EmspcrPackage.Literals.EMS_CURRENT_MEDICATION_SECTION);
+			try {
+				VALIDATE_EMS_CURRENT_MEDICATION_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_EMS_CURRENT_MEDICATION_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+			} catch (ParserException pe) {
+				throw new UnsupportedOperationException(pe.getLocalizedMessage());
+			}
+		}
+		if (!EOCL_ENV.createQuery(VALIDATE_EMS_CURRENT_MEDICATION_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			emsCurrentMedicationSection)) {
+			if (diagnostics != null) {
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
+					EmspcrValidator.EMS_CURRENT_MEDICATION_SECTION__EMS_CURRENT_MEDICATION_SECTION_CODE,
+					EmspcrPlugin.INSTANCE.getString("EMSCurrentMedicationSectionCode"),
+					new Object[] { emsCurrentMedicationSection }));
+			}
 
-  /**
-   * The cached OCL expression body for the '{@link #validateEMSCurrentMedicationSectionEntry1(EMSCurrentMedicationSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate EMS Current Medication Section Entry1</em>}' operation.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @see #validateEMSCurrentMedicationSectionEntry1(EMSCurrentMedicationSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-   * @generated
-   * @ordered
-   */
-  protected static final String VALIDATE_EMS_CURRENT_MEDICATION_SECTION_ENTRY1__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entry->one(entry : cda::Entry | not entry.oclIsUndefined() and entry.oclIsKindOf(emspcr::DerivedEntry))";
+			return false;
+		}
+		return true;
+	}
 
-  /**
-   * The cached OCL invariant for the '{@link #validateEMSCurrentMedicationSectionEntry1(EMSCurrentMedicationSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate EMS Current Medication Section Entry1</em>}' invariant operation.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @see #validateEMSCurrentMedicationSectionEntry1(EMSCurrentMedicationSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-   * @generated
-   * @ordered
-   */
-  
-  protected static Constraint VALIDATE_EMS_CURRENT_MEDICATION_SECTION_ENTRY1__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-  
+	/**
+	 * The cached OCL expression body for the '{@link #validateEMSCurrentMedicationSectionTitle(EMSCurrentMedicationSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate EMS Current Medication Section Title</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateEMSCurrentMedicationSectionTitle(EMSCurrentMedicationSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String VALIDATE_EMS_CURRENT_MEDICATION_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.title.oclIsUndefined() or self.title.isNullFlavorUndefined()) implies (not self.title.oclIsUndefined() and self.title.getText() = 'EMS Current Medications Section')";
 
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * <!-- begin-model-doc -->
-   * @param emsCurrentMedicationSection The receiving '<em><b>EMS Current Medication Section</b></em>' model object.
-   * @param diagnostics The chain of diagnostics to which problems are to be appended.
-   * @param context The cache of context-specific information.
-   * <!-- end-model-doc -->
-   * @generated
-   */
-  
-  public static  boolean validateEMSCurrentMedicationSectionEntry1(EMSCurrentMedicationSection emsCurrentMedicationSection, DiagnosticChain diagnostics, Map<Object, Object> context)
-  {
-  	  
-    if (VALIDATE_EMS_CURRENT_MEDICATION_SECTION_ENTRY1__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-      OCL.Helper helper = EOCL_ENV.createOCLHelper();
-      helper.setContext(EmspcrPackage.Literals.EMS_CURRENT_MEDICATION_SECTION);
-      try
-      {
-        VALIDATE_EMS_CURRENT_MEDICATION_SECTION_ENTRY1__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_EMS_CURRENT_MEDICATION_SECTION_ENTRY1__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-      }
-      catch (ParserException pe)
-      {
-        throw new UnsupportedOperationException(pe.getLocalizedMessage());
-      }
-    }
-    if (!EOCL_ENV.createQuery(VALIDATE_EMS_CURRENT_MEDICATION_SECTION_ENTRY1__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(emsCurrentMedicationSection))
-    {
-      if (diagnostics != null)
-      {
-        diagnostics.add
-          (new BasicDiagnostic
-            (Diagnostic.ERROR,
-             EmspcrValidator.DIAGNOSTIC_SOURCE,
-             EmspcrValidator.EMS_CURRENT_MEDICATION_SECTION__EMS_CURRENT_MEDICATION_SECTION_ENTRY1,
-             EmspcrPlugin.INSTANCE.getString("EMSCurrentMedicationSectionEntry1"),
-             new Object [] { emsCurrentMedicationSection }));
-      }
-       
-      return false;
-    }
-    return true;
-  }
+	/**
+	 * The cached OCL invariant for the '{@link #validateEMSCurrentMedicationSectionTitle(EMSCurrentMedicationSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate EMS Current Medication Section Title</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateEMSCurrentMedicationSectionTitle(EMSCurrentMedicationSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 
-  /**
-   * The cached OCL expression body for the '{@link #validateEMSCurrentMedicationSectionEntry2(EMSCurrentMedicationSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate EMS Current Medication Section Entry2</em>}' operation.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @see #validateEMSCurrentMedicationSectionEntry2(EMSCurrentMedicationSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-   * @generated
-   * @ordered
-   */
-  protected static final String VALIDATE_EMS_CURRENT_MEDICATION_SECTION_ENTRY2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entry->one(entry : cda::Entry | not entry.oclIsUndefined() and entry.oclIsKindOf(emspcr::DerivedEntry))";
+	protected static Constraint VALIDATE_EMS_CURRENT_MEDICATION_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
-  /**
-   * The cached OCL invariant for the '{@link #validateEMSCurrentMedicationSectionEntry2(EMSCurrentMedicationSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate EMS Current Medication Section Entry2</em>}' invariant operation.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @see #validateEMSCurrentMedicationSectionEntry2(EMSCurrentMedicationSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-   * @generated
-   * @ordered
-   */
-  
-  protected static Constraint VALIDATE_EMS_CURRENT_MEDICATION_SECTION_ENTRY2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-  
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param emsCurrentMedicationSection The receiving '<em><b>EMS Current Medication Section</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
 
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * <!-- begin-model-doc -->
-   * @param emsCurrentMedicationSection The receiving '<em><b>EMS Current Medication Section</b></em>' model object.
-   * @param diagnostics The chain of diagnostics to which problems are to be appended.
-   * @param context The cache of context-specific information.
-   * <!-- end-model-doc -->
-   * @generated
-   */
-  
-  public static  boolean validateEMSCurrentMedicationSectionEntry2(EMSCurrentMedicationSection emsCurrentMedicationSection, DiagnosticChain diagnostics, Map<Object, Object> context)
-  {
-  	  
-    if (VALIDATE_EMS_CURRENT_MEDICATION_SECTION_ENTRY2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-      OCL.Helper helper = EOCL_ENV.createOCLHelper();
-      helper.setContext(EmspcrPackage.Literals.EMS_CURRENT_MEDICATION_SECTION);
-      try
-      {
-        VALIDATE_EMS_CURRENT_MEDICATION_SECTION_ENTRY2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_EMS_CURRENT_MEDICATION_SECTION_ENTRY2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-      }
-      catch (ParserException pe)
-      {
-        throw new UnsupportedOperationException(pe.getLocalizedMessage());
-      }
-    }
-    if (!EOCL_ENV.createQuery(VALIDATE_EMS_CURRENT_MEDICATION_SECTION_ENTRY2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(emsCurrentMedicationSection))
-    {
-      if (diagnostics != null)
-      {
-        diagnostics.add
-          (new BasicDiagnostic
-            (Diagnostic.ERROR,
-             EmspcrValidator.DIAGNOSTIC_SOURCE,
-             EmspcrValidator.EMS_CURRENT_MEDICATION_SECTION__EMS_CURRENT_MEDICATION_SECTION_ENTRY2,
-             EmspcrPlugin.INSTANCE.getString("EMSCurrentMedicationSectionEntry2"),
-             new Object [] { emsCurrentMedicationSection }));
-      }
-       
-      return false;
-    }
-    return true;
-  }
+	public static boolean validateEMSCurrentMedicationSectionTitle(
+			EMSCurrentMedicationSection emsCurrentMedicationSection, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 
-  /**
-   * The cached OCL expression body for the '{@link #validateEMSCurrentMedicationSectionEntry3(EMSCurrentMedicationSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate EMS Current Medication Section Entry3</em>}' operation.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @see #validateEMSCurrentMedicationSectionEntry3(EMSCurrentMedicationSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-   * @generated
-   * @ordered
-   */
-  protected static final String VALIDATE_EMS_CURRENT_MEDICATION_SECTION_ENTRY3__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entry->one(entry : cda::Entry | not entry.oclIsUndefined() and entry.oclIsKindOf(emspcr::DerivedEntry))";
+		if (VALIDATE_EMS_CURRENT_MEDICATION_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+			helper.setContext(EmspcrPackage.Literals.EMS_CURRENT_MEDICATION_SECTION);
+			try {
+				VALIDATE_EMS_CURRENT_MEDICATION_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_EMS_CURRENT_MEDICATION_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+			} catch (ParserException pe) {
+				throw new UnsupportedOperationException(pe.getLocalizedMessage());
+			}
+		}
+		if (!EOCL_ENV.createQuery(VALIDATE_EMS_CURRENT_MEDICATION_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			emsCurrentMedicationSection)) {
+			if (diagnostics != null) {
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
+					EmspcrValidator.EMS_CURRENT_MEDICATION_SECTION__EMS_CURRENT_MEDICATION_SECTION_TITLE,
+					EmspcrPlugin.INSTANCE.getString("EMSCurrentMedicationSectionTitle"),
+					new Object[] { emsCurrentMedicationSection }));
+			}
 
-  /**
-   * The cached OCL invariant for the '{@link #validateEMSCurrentMedicationSectionEntry3(EMSCurrentMedicationSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate EMS Current Medication Section Entry3</em>}' invariant operation.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @see #validateEMSCurrentMedicationSectionEntry3(EMSCurrentMedicationSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-   * @generated
-   * @ordered
-   */
-  
-  protected static Constraint VALIDATE_EMS_CURRENT_MEDICATION_SECTION_ENTRY3__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-  
+			return false;
+		}
+		return true;
+	}
 
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * <!-- begin-model-doc -->
-   * @param emsCurrentMedicationSection The receiving '<em><b>EMS Current Medication Section</b></em>' model object.
-   * @param diagnostics The chain of diagnostics to which problems are to be appended.
-   * @param context The cache of context-specific information.
-   * <!-- end-model-doc -->
-   * @generated
-   */
-  
-  public static  boolean validateEMSCurrentMedicationSectionEntry3(EMSCurrentMedicationSection emsCurrentMedicationSection, DiagnosticChain diagnostics, Map<Object, Object> context)
-  {
-  	  
-    if (VALIDATE_EMS_CURRENT_MEDICATION_SECTION_ENTRY3__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-      OCL.Helper helper = EOCL_ENV.createOCLHelper();
-      helper.setContext(EmspcrPackage.Literals.EMS_CURRENT_MEDICATION_SECTION);
-      try
-      {
-        VALIDATE_EMS_CURRENT_MEDICATION_SECTION_ENTRY3__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_EMS_CURRENT_MEDICATION_SECTION_ENTRY3__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-      }
-      catch (ParserException pe)
-      {
-        throw new UnsupportedOperationException(pe.getLocalizedMessage());
-      }
-    }
-    if (!EOCL_ENV.createQuery(VALIDATE_EMS_CURRENT_MEDICATION_SECTION_ENTRY3__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(emsCurrentMedicationSection))
-    {
-      if (diagnostics != null)
-      {
-        diagnostics.add
-          (new BasicDiagnostic
-            (Diagnostic.ERROR,
-             EmspcrValidator.DIAGNOSTIC_SOURCE,
-             EmspcrValidator.EMS_CURRENT_MEDICATION_SECTION__EMS_CURRENT_MEDICATION_SECTION_ENTRY3,
-             EmspcrPlugin.INSTANCE.getString("EMSCurrentMedicationSectionEntry3"),
-             new Object [] { emsCurrentMedicationSection }));
-      }
-       
-      return false;
-    }
-    return true;
-  }
+	/**
+	 * The cached OCL expression body for the '{@link #validateEMSCurrentMedicationSectionText(EMSCurrentMedicationSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate EMS Current Medication Section Text</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateEMSCurrentMedicationSectionText(EMSCurrentMedicationSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String VALIDATE_EMS_CURRENT_MEDICATION_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "not self.text.oclIsUndefined()";
+
+	/**
+	 * The cached OCL invariant for the '{@link #validateEMSCurrentMedicationSectionText(EMSCurrentMedicationSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate EMS Current Medication Section Text</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateEMSCurrentMedicationSectionText(EMSCurrentMedicationSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+
+	protected static Constraint VALIDATE_EMS_CURRENT_MEDICATION_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param emsCurrentMedicationSection The receiving '<em><b>EMS Current Medication Section</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
+
+	public static boolean validateEMSCurrentMedicationSectionText(
+			EMSCurrentMedicationSection emsCurrentMedicationSection, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+
+		if (VALIDATE_EMS_CURRENT_MEDICATION_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+			helper.setContext(EmspcrPackage.Literals.EMS_CURRENT_MEDICATION_SECTION);
+			try {
+				VALIDATE_EMS_CURRENT_MEDICATION_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_EMS_CURRENT_MEDICATION_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+			} catch (ParserException pe) {
+				throw new UnsupportedOperationException(pe.getLocalizedMessage());
+			}
+		}
+		if (!EOCL_ENV.createQuery(VALIDATE_EMS_CURRENT_MEDICATION_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			emsCurrentMedicationSection)) {
+			if (diagnostics != null) {
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
+					EmspcrValidator.EMS_CURRENT_MEDICATION_SECTION__EMS_CURRENT_MEDICATION_SECTION_TEXT,
+					EmspcrPlugin.INSTANCE.getString("EMSCurrentMedicationSectionText"),
+					new Object[] { emsCurrentMedicationSection }));
+			}
+
+			return false;
+		}
+		return true;
+	}
+
+	/**
+	 * The cached OCL expression body for the '{@link #validateEMSCurrentMedicationSectionEntry1(EMSCurrentMedicationSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate EMS Current Medication Section Entry1</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateEMSCurrentMedicationSectionEntry1(EMSCurrentMedicationSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String VALIDATE_EMS_CURRENT_MEDICATION_SECTION_ENTRY1__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entry->one(entry : cda::Entry | not entry.oclIsUndefined() and entry.oclIsKindOf(emspcr::DerivedEntry))";
+
+	/**
+	 * The cached OCL invariant for the '{@link #validateEMSCurrentMedicationSectionEntry1(EMSCurrentMedicationSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate EMS Current Medication Section Entry1</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateEMSCurrentMedicationSectionEntry1(EMSCurrentMedicationSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+
+	protected static Constraint VALIDATE_EMS_CURRENT_MEDICATION_SECTION_ENTRY1__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param emsCurrentMedicationSection The receiving '<em><b>EMS Current Medication Section</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
+
+	public static boolean validateEMSCurrentMedicationSectionEntry1(
+			EMSCurrentMedicationSection emsCurrentMedicationSection, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+
+		if (VALIDATE_EMS_CURRENT_MEDICATION_SECTION_ENTRY1__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+			helper.setContext(EmspcrPackage.Literals.EMS_CURRENT_MEDICATION_SECTION);
+			try {
+				VALIDATE_EMS_CURRENT_MEDICATION_SECTION_ENTRY1__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_EMS_CURRENT_MEDICATION_SECTION_ENTRY1__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+			} catch (ParserException pe) {
+				throw new UnsupportedOperationException(pe.getLocalizedMessage());
+			}
+		}
+		if (!EOCL_ENV.createQuery(VALIDATE_EMS_CURRENT_MEDICATION_SECTION_ENTRY1__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			emsCurrentMedicationSection)) {
+			if (diagnostics != null) {
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
+					EmspcrValidator.EMS_CURRENT_MEDICATION_SECTION__EMS_CURRENT_MEDICATION_SECTION_ENTRY1,
+					EmspcrPlugin.INSTANCE.getString("EMSCurrentMedicationSectionEntry1"),
+					new Object[] { emsCurrentMedicationSection }));
+			}
+
+			return false;
+		}
+		return true;
+	}
+
+	/**
+	 * The cached OCL expression body for the '{@link #validateEMSCurrentMedicationSectionEntry2(EMSCurrentMedicationSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate EMS Current Medication Section Entry2</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateEMSCurrentMedicationSectionEntry2(EMSCurrentMedicationSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String VALIDATE_EMS_CURRENT_MEDICATION_SECTION_ENTRY2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entry->one(entry : cda::Entry | not entry.oclIsUndefined() and entry.oclIsKindOf(emspcr::DerivedEntry))";
+
+	/**
+	 * The cached OCL invariant for the '{@link #validateEMSCurrentMedicationSectionEntry2(EMSCurrentMedicationSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate EMS Current Medication Section Entry2</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateEMSCurrentMedicationSectionEntry2(EMSCurrentMedicationSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+
+	protected static Constraint VALIDATE_EMS_CURRENT_MEDICATION_SECTION_ENTRY2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param emsCurrentMedicationSection The receiving '<em><b>EMS Current Medication Section</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
+
+	public static boolean validateEMSCurrentMedicationSectionEntry2(
+			EMSCurrentMedicationSection emsCurrentMedicationSection, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+
+		if (VALIDATE_EMS_CURRENT_MEDICATION_SECTION_ENTRY2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+			helper.setContext(EmspcrPackage.Literals.EMS_CURRENT_MEDICATION_SECTION);
+			try {
+				VALIDATE_EMS_CURRENT_MEDICATION_SECTION_ENTRY2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_EMS_CURRENT_MEDICATION_SECTION_ENTRY2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+			} catch (ParserException pe) {
+				throw new UnsupportedOperationException(pe.getLocalizedMessage());
+			}
+		}
+		if (!EOCL_ENV.createQuery(VALIDATE_EMS_CURRENT_MEDICATION_SECTION_ENTRY2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			emsCurrentMedicationSection)) {
+			if (diagnostics != null) {
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
+					EmspcrValidator.EMS_CURRENT_MEDICATION_SECTION__EMS_CURRENT_MEDICATION_SECTION_ENTRY2,
+					EmspcrPlugin.INSTANCE.getString("EMSCurrentMedicationSectionEntry2"),
+					new Object[] { emsCurrentMedicationSection }));
+			}
+
+			return false;
+		}
+		return true;
+	}
+
+	/**
+	 * The cached OCL expression body for the '{@link #validateEMSCurrentMedicationSectionEntry3(EMSCurrentMedicationSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate EMS Current Medication Section Entry3</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateEMSCurrentMedicationSectionEntry3(EMSCurrentMedicationSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String VALIDATE_EMS_CURRENT_MEDICATION_SECTION_ENTRY3__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entry->one(entry : cda::Entry | not entry.oclIsUndefined() and entry.oclIsKindOf(emspcr::DerivedEntry))";
+
+	/**
+	 * The cached OCL invariant for the '{@link #validateEMSCurrentMedicationSectionEntry3(EMSCurrentMedicationSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate EMS Current Medication Section Entry3</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateEMSCurrentMedicationSectionEntry3(EMSCurrentMedicationSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+
+	protected static Constraint VALIDATE_EMS_CURRENT_MEDICATION_SECTION_ENTRY3__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param emsCurrentMedicationSection The receiving '<em><b>EMS Current Medication Section</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
+
+	public static boolean validateEMSCurrentMedicationSectionEntry3(
+			EMSCurrentMedicationSection emsCurrentMedicationSection, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+
+		if (VALIDATE_EMS_CURRENT_MEDICATION_SECTION_ENTRY3__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+			helper.setContext(EmspcrPackage.Literals.EMS_CURRENT_MEDICATION_SECTION);
+			try {
+				VALIDATE_EMS_CURRENT_MEDICATION_SECTION_ENTRY3__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_EMS_CURRENT_MEDICATION_SECTION_ENTRY3__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+			} catch (ParserException pe) {
+				throw new UnsupportedOperationException(pe.getLocalizedMessage());
+			}
+		}
+		if (!EOCL_ENV.createQuery(VALIDATE_EMS_CURRENT_MEDICATION_SECTION_ENTRY3__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			emsCurrentMedicationSection)) {
+			if (diagnostics != null) {
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
+					EmspcrValidator.EMS_CURRENT_MEDICATION_SECTION__EMS_CURRENT_MEDICATION_SECTION_ENTRY3,
+					EmspcrPlugin.INSTANCE.getString("EMSCurrentMedicationSectionEntry3"),
+					new Object[] { emsCurrentMedicationSection }));
+			}
+
+			return false;
+		}
+		return true;
+	}
 
 } // EMSCurrentMedicationSectionOperations

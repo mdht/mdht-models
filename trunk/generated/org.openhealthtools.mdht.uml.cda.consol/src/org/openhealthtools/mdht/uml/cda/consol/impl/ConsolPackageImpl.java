@@ -1070,6 +1070,20 @@ public class ConsolPackageImpl extends EPackageImpl implements ConsolPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	private EClass fetusSubjectContextEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass observerContextEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	private EClass medicationsAdministeredSectionEClass = null;
 
 	/**
@@ -2979,7 +2993,7 @@ public class ConsolPackageImpl extends EPackageImpl implements ConsolPackage {
 	public EClass getOperativeNote() {
 		if (operativeNoteEClass == null) {
 			operativeNoteEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(ConsolPackage.eNS_URI).getEClassifiers().get(
-				151);
+				152);
 		}
 		return operativeNoteEClass;
 	}
@@ -2992,7 +3006,7 @@ public class ConsolPackageImpl extends EPackageImpl implements ConsolPackage {
 	public EClass getProcedureNote() {
 		if (procedureNoteEClass == null) {
 			procedureNoteEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(ConsolPackage.eNS_URI).getEClassifiers().get(
-				152);
+				153);
 		}
 		return procedureNoteEClass;
 	}
@@ -3005,7 +3019,7 @@ public class ConsolPackageImpl extends EPackageImpl implements ConsolPackage {
 	public EClass getProgressNote() {
 		if (progressNoteEClass == null) {
 			progressNoteEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(ConsolPackage.eNS_URI).getEClassifiers().get(
-				153);
+				154);
 		}
 		return progressNoteEClass;
 	}
@@ -3031,7 +3045,7 @@ public class ConsolPackageImpl extends EPackageImpl implements ConsolPackage {
 	public EClass getInstructionsSection() {
 		if (instructionsSectionEClass == null) {
 			instructionsSectionEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(ConsolPackage.eNS_URI).getEClassifiers().get(
-				154);
+				151);
 		}
 		return instructionsSectionEClass;
 	}
@@ -3164,6 +3178,32 @@ public class ConsolPackageImpl extends EPackageImpl implements ConsolPackage {
 				163);
 		}
 		return deceasedObservationEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EClass getFetusSubjectContext() {
+		if (fetusSubjectContextEClass == null) {
+			fetusSubjectContextEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(ConsolPackage.eNS_URI).getEClassifiers().get(
+				164);
+		}
+		return fetusSubjectContextEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EClass getObserverContext() {
+		if (observerContextEClass == null) {
+			observerContextEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(ConsolPackage.eNS_URI).getEClassifiers().get(
+				165);
+		}
+		return observerContextEClass;
 	}
 
 	/**

@@ -22,8 +22,6 @@ import org.openhealthtools.mdht.uml.cda.emspcr.operations.EMSPastMedicalHistoryS
 
 import org.openhealthtools.mdht.uml.cda.impl.SectionImpl;
 
-import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
-
 /**
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>EMS Past Medical History Section</b></em>'.
@@ -33,115 +31,113 @@ import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
  *
  * @generated
  */
-public class EMSPastMedicalHistorySectionImpl extends SectionImpl implements EMSPastMedicalHistorySection
-{
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  protected EMSPastMedicalHistorySectionImpl()
-  {
-    super();
-  }
+public class EMSPastMedicalHistorySectionImpl extends SectionImpl implements EMSPastMedicalHistorySection {
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected EMSPastMedicalHistorySectionImpl() {
+		super();
+	}
 
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  @Override
-  protected EClass eStaticClass()
-  {
-    return EmspcrPackage.Literals.EMS_PAST_MEDICAL_HISTORY_SECTION;
-  }
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	protected EClass eStaticClass() {
+		return EmspcrPackage.Literals.EMS_PAST_MEDICAL_HISTORY_SECTION;
+	}
 
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public boolean validateEMSPastMedicalHistorySectionTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context)
-  {
-    return EMSPastMedicalHistorySectionOperations.validateEMSPastMedicalHistorySectionTemplateId(this, diagnostics, context);
-  }
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateEMSPastMedicalHistorySectionTemplateId(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return EMSPastMedicalHistorySectionOperations.validateEMSPastMedicalHistorySectionTemplateId(
+			this, diagnostics, context);
+	}
 
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public boolean validateEMSPastMedicalHistorySectionCode(DiagnosticChain diagnostics, Map<Object, Object> context)
-  {
-    return EMSPastMedicalHistorySectionOperations.validateEMSPastMedicalHistorySectionCode(this, diagnostics, context);
-  }
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateEMSPastMedicalHistorySectionCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return EMSPastMedicalHistorySectionOperations.validateEMSPastMedicalHistorySectionCode(
+			this, diagnostics, context);
+	}
 
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public boolean validateEMSPastMedicalHistorySectionCodeP(DiagnosticChain diagnostics, Map<Object, Object> context)
-  {
-    return EMSPastMedicalHistorySectionOperations.validateEMSPastMedicalHistorySectionCodeP(this, diagnostics, context);
-  }
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateEMSPastMedicalHistorySectionCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return EMSPastMedicalHistorySectionOperations.validateEMSPastMedicalHistorySectionCodeP(
+			this, diagnostics, context);
+	}
 
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public boolean validateEMSPastMedicalHistorySectionTitle(DiagnosticChain diagnostics, Map<Object, Object> context)
-  {
-    return EMSPastMedicalHistorySectionOperations.validateEMSPastMedicalHistorySectionTitle(this, diagnostics, context);
-  }
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateEMSPastMedicalHistorySectionTitle(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return EMSPastMedicalHistorySectionOperations.validateEMSPastMedicalHistorySectionTitle(
+			this, diagnostics, context);
+	}
 
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public boolean validateEMSPastMedicalHistorySectionText(DiagnosticChain diagnostics, Map<Object, Object> context)
-  {
-    return EMSPastMedicalHistorySectionOperations.validateEMSPastMedicalHistorySectionText(this, diagnostics, context);
-  }
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateEMSPastMedicalHistorySectionText(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return EMSPastMedicalHistorySectionOperations.validateEMSPastMedicalHistorySectionText(
+			this, diagnostics, context);
+	}
 
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public boolean validateEMSPastMedicalHistorySectionEntry1(DiagnosticChain diagnostics, Map<Object, Object> context)
-  {
-    return EMSPastMedicalHistorySectionOperations.validateEMSPastMedicalHistorySectionEntry1(this, diagnostics, context);
-  }
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateEMSPastMedicalHistorySectionEntry1(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return EMSPastMedicalHistorySectionOperations.validateEMSPastMedicalHistorySectionEntry1(
+			this, diagnostics, context);
+	}
 
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public boolean validateEMSPastMedicalHistorySectionEntry2(DiagnosticChain diagnostics, Map<Object, Object> context)
-  {
-    return EMSPastMedicalHistorySectionOperations.validateEMSPastMedicalHistorySectionEntry2(this, diagnostics, context);
-  }
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateEMSPastMedicalHistorySectionEntry2(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return EMSPastMedicalHistorySectionOperations.validateEMSPastMedicalHistorySectionEntry2(
+			this, diagnostics, context);
+	}
 
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public EMSPastMedicalHistorySection init() {
-      return Initializer.Util.init(this);
-  }
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EMSPastMedicalHistorySection init() {
+		return Initializer.Util.init(this);
+	}
 
-  /**
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    public EMSPastMedicalHistorySection init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-        Initializer.Util.init(this, initializers);
-        return this;
-    }
-} //EMSPastMedicalHistorySectionImpl
+	/**
+	   * <!-- begin-user-doc -->
+	   * <!-- end-user-doc -->
+	   * @generated
+	   */
+	public EMSPastMedicalHistorySection init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+		Initializer.Util.init(this, initializers);
+		return this;
+	}
+} // EMSPastMedicalHistorySectionImpl
