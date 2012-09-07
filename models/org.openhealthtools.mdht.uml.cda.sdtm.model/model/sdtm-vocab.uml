@@ -3,25 +3,25 @@
   <uml:Package xmi:id="_BLRzsF10EeGh_7NFCJ3fGA" name="sdtm-vocab">
     <packagedElement xmi:type="uml:Enumeration" xmi:id="_nHo8AJU0EeGQdOfWx-E9xw" name="Anatomical Location">
       <ownedComment xmi:id="_BLb1EJU1EeGQdOfWx-E9xw">
-        <body>Captures the list of relevant body sites.  MeDRA may be used.  However, given there is no CDISC list, the code system to be used is defined by the study sponsor.</body>
+        <body>Captures the list of relevant body sites.</body>
       </ownedComment>
     </packagedElement>
-    <packagedElement xmi:type="uml:Enumeration" xmi:id="_Taln8JVHEeGtdYJw1d93Dg" name="Adverse Event Category">
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_Taln8JVHEeGtdYJw1d93Dg" name="Adverse Event Category Type">
       <ownedComment xmi:id="_Zz8WsJVHEeGtdYJw1d93Dg">
-        <body>Captures the list of categories for adverse events.  The code system to be used is defined by the study sponsor.</body>
+        <body>The locally defined universe of adverse event categories.</body>
       </ownedComment>
     </packagedElement>
-    <packagedElement xmi:type="uml:Enumeration" xmi:id="_ag4VMJVHEeGtdYJw1d93Dg" name="Adverse Event Sub-Category">
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_ag4VMJVHEeGtdYJw1d93Dg" name="Adverse Event Sub-Category Type">
       <ownedComment xmi:id="_cH7ykJVHEeGtdYJw1d93Dg">
-        <body>Captures the list of sub-categories for adverse events.  The code system to be used is defined by the study sponsor.</body>
+        <body>The locally defined universe of adverse event sub-categories.</body>
       </ownedComment>
     </packagedElement>
-    <packagedElement xmi:type="uml:Enumeration" xmi:id="_fmLbEJVHEeGtdYJw1d93Dg" name="Body System/Organ Class Type">
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_fmLbEJVHEeGtdYJw1d93Dg" name="Body System/Organ Class">
       <ownedComment xmi:id="_mM0-8JVHEeGtdYJw1d93Dg">
         <body>Captures the list of body systems and organ types. We need an EVS cite.</body>
       </ownedComment>
     </packagedElement>
-    <packagedElement xmi:type="uml:Enumeration" xmi:id="_S4Z2AJVJEeGtdYJw1d93Dg" name="Event Severity Type">
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_S4Z2AJVJEeGtdYJw1d93Dg" name="Event Severity">
       <ownedComment xmi:id="_Yfc-EJVJEeGtdYJw1d93Dg">
         <body>A list of possible values for event severity. Is there a list in EVS?</body>
       </ownedComment>
@@ -61,7 +61,7 @@
         <body>A list of the valid race codes to be used when categorizing study subjects.</body>
       </ownedComment>
     </packagedElement>
-    <packagedElement xmi:type="uml:Enumeration" xmi:id="_X3OlkJX7EeGdw75A0B2buQ" name="Event Pattern Type">
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_X3OlkJX7EeGdw75A0B2buQ" name="Event Pattern">
       <ownedComment xmi:id="_fNwHMJX7EeGdw75A0B2buQ">
         <body>A list of different patterns that can be assigned to an event.  Is this in EVS?</body>
       </ownedComment>
@@ -78,7 +78,7 @@
     </packagedElement>
     <packagedElement xmi:type="uml:Enumeration" xmi:id="_YUDPAJX8EeGdw75A0B2buQ" name="Concurrent Medication Category">
       <ownedComment xmi:id="_g6b2AJX8EeGdw75A0B2buQ">
-        <body>A list of categories used for organizing concurrent medications.  The code system to be used is defined by the study sponsor.</body>
+        <body>The universe of categories that could be used for organizing concurrent medications.  The code system to be used is defined by the study sponsor.</body>
       </ownedComment>
     </packagedElement>
     <packagedElement xmi:type="uml:Enumeration" xmi:id="_lxXvwJX8EeGdw75A0B2buQ" name="Concurrent Medication Sub-Category">
@@ -400,7 +400,7 @@
           <body>An observation to provide information the consciousness state of the subject.</body>
         </ownedComment>
       </ownedLiteral>
-      <ownedLiteral xmi:id="_iCxd0L_PEeGhFNoxTbVL8w" name="BSOCtbd">
+      <ownedLiteral xmi:id="_iCxd0L_PEeGhFNoxTbVL8w" name="C88026">
         <ownedComment xmi:id="_8bKoUPLcEeGfjrJgpaHCTw">
           <body>Indicates the observation conveys the identity of a body system or organ class.</body>
         </ownedComment>
@@ -408,6 +408,11 @@
       <ownedLiteral xmi:id="_z3QSAN2dEeGlbbwWT3IpKA" name="DCtbd">
         <ownedComment xmi:id="_APez4PbBEeG64oSzFW7inA">
           <body>An observation to provide information on whether or when an expected item of data was collected.</body>
+        </ownedComment>
+      </ownedLiteral>
+      <ownedLiteral xmi:id="_xmYK0POyEeGaaIebpy5xoQ" name="DOtbd">
+        <ownedComment xmi:id="_mJMCQPj2EeG9SuM8Du0jIw">
+          <body>An observation that records the source of data which is added to the report as a supplemental value.</body>
         </ownedComment>
       </ownedLiteral>
       <ownedLiteral xmi:id="_OXS8EPLwEeGMZ4RBIRkmiw" name="C95087">
@@ -435,59 +440,236 @@
           <body>A expression of the relationship of a particular finding to the death of a subject.</body>
         </ownedComment>
       </ownedLiteral>
-      <ownedLiteral xmi:id="_-X4f8L_UEeGhFNoxTbVL8w" name="ELtbd"/>
-      <ownedLiteral xmi:id="_8vvdcL_UEeGhFNoxTbVL8w" name="ELOtbd"/>
-      <ownedLiteral xmi:id="_kxIhgL_PEeGhFNoxTbVL8w" name="C66769"/>
-      <ownedLiteral xmi:id="_AkkWwL_REeGhFNoxTbVL8w" name="C49489"/>
-      <ownedLiteral xmi:id="_2BOT0L_QEeGhFNoxTbVL8w" name="C83208"/>
-      <ownedLiteral xmi:id="_QQQB8L_QEeGhFNoxTbVL8w" name="ESDtbd"/>
-      <ownedLiteral xmi:id="_fmlI8N2vEeGftNOzPM2U7g" name="EXCtbd"/>
-      <ownedLiteral xmi:id="_VBP8QN2fEeGlbbwWT3IpKA" name="EXPtbd"/>
-      <ownedLiteral xmi:id="_ybfpMN2eEeGlbbwWT3IpKA" name="FStbd"/>
+      <ownedLiteral xmi:id="_8vvdcL_UEeGhFNoxTbVL8w" name="ELOtbd">
+        <ownedComment xmi:id="_ymwMAPbOEeGXHJw8CF46KA">
+          <body>An observation to record the order assigned to an element within an arm.</body>
+        </ownedComment>
+      </ownedLiteral>
+      <ownedLiteral xmi:id="_G57FsPj9EeG7pMUQbTahtA" name="EDtbd">
+        <ownedComment xmi:id="_NOuroPj9EeG7pMUQbTahtA">
+          <body>An observation to capture the duration of an event.</body>
+        </ownedComment>
+      </ownedLiteral>
+      <ownedLiteral xmi:id="_kxIhgL_PEeGhFNoxTbVL8w" name="C66769">
+        <ownedComment xmi:id="_1DjloPbOEeGXHJw8CF46KA">
+          <body>An observation to record the severity of an event or finding.</body>
+        </ownedComment>
+      </ownedLiteral>
+      <ownedLiteral xmi:id="_AkkWwL_REeGhFNoxTbVL8w" name="C49489">
+        <ownedComment xmi:id="_4FQcEPbOEeGXHJw8CF46KA">
+          <body>An observation to record the outcome of an event.</body>
+        </ownedComment>
+      </ownedLiteral>
+      <ownedLiteral xmi:id="_2BOT0L_QEeGhFNoxTbVL8w" name="C83208">
+        <ownedComment xmi:id="_9ZWy8PbOEeGXHJw8CF46KA">
+          <body>An observation to record the temporal pattern of an event that occurs multiple times.</body>
+        </ownedComment>
+      </ownedLiteral>
+      <ownedLiteral xmi:id="_QQQB8L_QEeGhFNoxTbVL8w" name="ESDtbd">
+        <ownedComment xmi:id="_A2SM0PbPEeGXHJw8CF46KA">
+          <body>An observation to record the study day on which an event occurrs.</body>
+        </ownedComment>
+      </ownedLiteral>
+      <ownedLiteral xmi:id="_fmlI8N2vEeGftNOzPM2U7g" name="EXCtbd">
+        <ownedComment xmi:id="_F9ld0PbPEeGXHJw8CF46KA">
+          <body>An observation to record the reason for excluding a finding from tabulation of study results.</body>
+        </ownedComment>
+      </ownedLiteral>
+      <ownedLiteral xmi:id="_ybfpMN2eEeGlbbwWT3IpKA" name="FStbd">
+        <ownedComment xmi:id="_LjL3cPhbEeGT_PTNDmnEsQ">
+          <body>An observation to record the fasting status of the subject.</body>
+        </ownedComment>
+      </ownedLiteral>
+      <ownedLiteral xmi:id="_VaWscPkBEeGSwNE8SoqTXQ" name="FAOtbd">
+        <ownedComment xmi:id="_cH3GQPkBEeGSwNE8SoqTXQ">
+          <body>An observation to record the object of a finding about observation.</body>
+        </ownedComment>
+      </ownedLiteral>
       <ownedLiteral xmi:id="_OQro0L_OEeGhFNoxTbVL8w" name="C83204">
         <ownedComment xmi:id="_2tfT0PLcEeGfjrJgpaHCTw">
           <body>The code value indicates that the act is the group identifier.</body>
         </ownedComment>
       </ownedLiteral>
-      <ownedLiteral xmi:id="_iQRu4PODEeGnUIlsvzjovQ" name="HUStbd"/>
-      <ownedLiteral xmi:id="_XonPQL_TEeGhFNoxTbVL8w" name="C83085"/>
-      <ownedLiteral xmi:id="_fltosL_TEeGhFNoxTbVL8w" name="IRtbd"/>
-      <ownedLiteral xmi:id="_aUa7gN2eEeGlbbwWT3IpKA" name="C87881"/>
-      <ownedLiteral xmi:id="_zFlhUPOSEeGPpLm0F8gjDw" name="MHItbd"/>
-      <ownedLiteral xmi:id="_TFWv8PObEeGAVMcEFACySg" name="NHStbd"/>
-      <ownedLiteral xmi:id="_X3oqEL_QEeGhFNoxTbVL8w" name="NPRtbd"/>
-      <ownedLiteral xmi:id="_rVUl0N2gEeGlbbwWT3IpKA" name="NSTtbd"/>
-      <ownedLiteral xmi:id="_uoIaYN2gEeGlbbwWT3IpKA" name="OATtbd"/>
-      <ownedLiteral xmi:id="_gMYugL_QEeGhFNoxTbVL8w" name="C83450"/>
-      <ownedLiteral xmi:id="_m2SQIL_PEeGhFNoxTbVL8w" name="C71148"/>
-      <ownedLiteral xmi:id="_AN5XMN2hEeGlbbwWT3IpKA" name="PSEtbd"/>
-      <ownedLiteral xmi:id="_UiaqMPOjEeG_bsiW5N1Utg" name="PDtbd"/>
-      <ownedLiteral xmi:id="_ZOtJQN2hEeGlbbwWT3IpKA" name="RPtbd"/>
-      <ownedLiteral xmi:id="_cuwIkN2hEeGlbbwWT3IpKA" name="RRtbd"/>
-      <ownedLiteral xmi:id="_t_AdgN2jEeGlbbwWT3IpKA" name="C78736"/>
-      <ownedLiteral xmi:id="_zSHCML_QEeGhFNoxTbVL8w" name="SETtbd"/>
-      <ownedLiteral xmi:id="_jrU0kN_PEeGAf6Q5S77gJQ" name="SPCtbd"/>
-      <ownedLiteral xmi:id="_wiTLkN2hEeGlbbwWT3IpKA" name="C78733"/>
-      <ownedLiteral xmi:id="_qyZCcN2hEeGlbbwWT3IpKA" name="C78734"/>
-      <ownedLiteral xmi:id="_2RoF4N2hEeGlbbwWT3IpKA" name="SUtbd"/>
-      <ownedLiteral xmi:id="_AIbL4N2iEeGlbbwWT3IpKA" name="STRPtbd"/>
-      <ownedLiteral xmi:id="_FFBBsN2iEeGlbbwWT3IpKA" name="ENRPtbd"/>
-      <ownedLiteral xmi:id="_oF_pEN_PEeGAf6Q5S77gJQ" name="SStbd"/>
-      <ownedLiteral xmi:id="_lHM7UL_TEeGhFNoxTbVL8w" name="STPtbd"/>
-      <ownedLiteral xmi:id="_IALLQN2iEeGlbbwWT3IpKA" name="ARMtbd"/>
-      <ownedLiteral xmi:id="_4FTuoL_UEeGhFNoxTbVL8w" name="C99079"/>
-      <ownedLiteral xmi:id="_-bsu4N2iEeGlbbwWT3IpKA" name="STAtbd"/>
-      <ownedLiteral xmi:id="_AX7LAN2jEeGlbbwWT3IpKA" name="STCtbd"/>
-      <ownedLiteral xmi:id="_rUay4L_QEeGhFNoxTbVL8w" name="C53252"/>
-      <ownedLiteral xmi:id="_D_9ZkN_QEeGAf6Q5S77gJQ" name="SPtbd"/>
-      <ownedLiteral xmi:id="_g_uIkL_TEeGhFNoxTbVL8w" name="TRtbd"/>
-      <ownedLiteral xmi:id="_fSdncL_REeGhFNoxTbVL8w" name="TOtbd"/>
-      <ownedLiteral xmi:id="_sRyUEN_PEeGAf6Q5S77gJQ" name="TStbd"/>
-      <ownedLiteral xmi:id="_l5bdgN2jEeGlbbwWT3IpKA" name="VTtbd"/>
-      <ownedLiteral xmi:id="_x5C7EPOlEeG_bsiW5N1Utg" name="SCLtbd"/>
-      <ownedLiteral xmi:id="_82NzQPOlEeG_bsiW5N1Utg" name="POTtbd"/>
-      <ownedLiteral xmi:id="_xmYK0POyEeGaaIebpy5xoQ" name="DOtbd"/>
-      <ownedLiteral xmi:id="_1y8V0Pa7EeGpiqtJ9hvVRQ" name="TRtrbd"/>
+      <ownedLiteral xmi:id="_iQRu4PODEeGnUIlsvzjovQ" name="HUStbd">
+        <ownedComment xmi:id="_U80gUPhbEeGT_PTNDmnEsQ">
+          <body>Identifies the document as a Human Clinical Subject Report</body>
+        </ownedComment>
+      </ownedLiteral>
+      <ownedLiteral xmi:id="_XonPQL_TEeGhFNoxTbVL8w" name="C83085">
+        <ownedComment xmi:id="_YwEIcPhbEeGT_PTNDmnEsQ">
+          <body>An observation of the reason for performing an intervention.</body>
+        </ownedComment>
+      </ownedLiteral>
+      <ownedLiteral xmi:id="_fltosL_TEeGhFNoxTbVL8w" name="IRtbd">
+        <ownedComment xmi:id="_etOqcPhbEeGT_PTNDmnEsQ">
+          <body>An observation of the intended pattern of events for a  subject.  It is used to supplement frequency information provided as the effective time for an act.</body>
+        </ownedComment>
+      </ownedLiteral>
+      <ownedLiteral xmi:id="_aUa7gN2eEeGlbbwWT3IpKA" name="C87881">
+        <ownedComment xmi:id="_il-doPhbEeGT_PTNDmnEsQ">
+          <body>An observation of the location of a particular ECG lead on the subject's body.</body>
+        </ownedComment>
+      </ownedLiteral>
+      <ownedLiteral xmi:id="_zFlhUPOSEeGPpLm0F8gjDw" name="MHItbd">
+        <ownedComment xmi:id="_mCKQoPhbEeGT_PTNDmnEsQ">
+          <body>An observation that records an item of the subject's medical history</body>
+        </ownedComment>
+      </ownedLiteral>
+      <ownedLiteral xmi:id="_TFWv8PObEeGAVMcEFACySg" name="NHStbd">
+        <ownedComment xmi:id="_ymbpgPhbEeGT_PTNDmnEsQ">
+          <body>Identifies the document as a Non-Human Subject Report</body>
+        </ownedComment>
+      </ownedLiteral>
+      <ownedLiteral xmi:id="_X3oqEL_QEeGhFNoxTbVL8w" name="NPRtbd">
+        <ownedComment xmi:id="_K1Pv8Pj2EeG9SuM8Du0jIw">
+          <body>An observation recording the reason for not performing a scheduled activity or collecting a scheduled data item.</body>
+        </ownedComment>
+      </ownedLiteral>
+      <ownedLiteral xmi:id="_rVUl0N2gEeGlbbwWT3IpKA" name="NSTtbd">
+        <ownedComment xmi:id="_QNp_EPj2EeG9SuM8Du0jIw">
+          <body>A observation recording the association of an event with a treatment other than that mandated by the study.</body>
+        </ownedComment>
+      </ownedLiteral>
+      <ownedLiteral xmi:id="_7cCNsPhaEeGT_PTNDmnEsQ" name="OWAtbd">
+        <ownedComment xmi:id="_HLyZYPhbEeGT_PTNDmnEsQ">
+          <body>An observation to record the order in which an element is to be performed within the designated arm.</body>
+        </ownedComment>
+      </ownedLiteral>
+      <ownedLiteral xmi:id="_uoIaYN2gEeGlbbwWT3IpKA" name="OATtbd">
+        <ownedComment xmi:id="_Ysho0Pj2EeG9SuM8Du0jIw">
+          <body>An observation recording action, other than adjustment to the study treatment, which is taken to address the occurance of an event.</body>
+        </ownedComment>
+      </ownedLiteral>
+      <ownedLiteral xmi:id="_gMYugL_QEeGhFNoxTbVL8w" name="C83450">
+        <ownedComment xmi:id="_d6OcwPj2EeG9SuM8Du0jIw">
+          <body>An observation to record the study data on which an event is planned to occur.</body>
+        </ownedComment>
+      </ownedLiteral>
+      <ownedLiteral xmi:id="_82NzQPOlEeG_bsiW5N1Utg" name="POTtbd">
+        <ownedComment xmi:id="_ue_PkPj2EeG9SuM8Du0jIw">
+          <body>An observation to record the relationship of an extracted specimen to the structure from which it is extracted.</body>
+        </ownedComment>
+      </ownedLiteral>
+      <ownedLiteral xmi:id="_m2SQIL_PEeGhFNoxTbVL8w" name="C71148">
+        <ownedComment xmi:id="_yUwnQPj2EeG9SuM8Du0jIw">
+          <body>An observation to record the body position of the subject during the collection of a finding.</body>
+        </ownedComment>
+      </ownedLiteral>
+      <ownedLiteral xmi:id="_AN5XMN2hEeGlbbwWT3IpKA" name="PSEtbd">
+        <ownedComment xmi:id="_Ah6pgPj3EeG9SuM8Du0jIw">
+          <body>An observation to record the fact that collection of information regarding an event or to record a finding was prespecified on the CRF.</body>
+        </ownedComment>
+      </ownedLiteral>
+      <ownedLiteral xmi:id="_UiaqMPOjEeG_bsiW5N1Utg" name="PDtbd">
+        <ownedComment xmi:id="_DaZSgPj3EeG9SuM8Du0jIw">
+          <body>An observation to record a deviation from the study protocol.</body>
+        </ownedComment>
+      </ownedLiteral>
+      <ownedLiteral xmi:id="_ZOtJQN2hEeGlbbwWT3IpKA" name="RPtbd">
+        <ownedComment xmi:id="_HlSloPj3EeG9SuM8Du0jIw">
+          <body>An observation to record the reference period for a study subject - typically the time period between a subject's first exposure to the study drug and the time the subject left the study.</body>
+        </ownedComment>
+      </ownedLiteral>
+      <ownedLiteral xmi:id="_cuwIkN2hEeGlbbwWT3IpKA" name="RRtbd">
+        <ownedComment xmi:id="_jiJSEPj3EeG9SuM8Du0jIw">
+          <body>An observation to establish a relationship between two data items defined within the subject data report.</body>
+        </ownedComment>
+      </ownedLiteral>
+      <ownedLiteral xmi:id="_t_AdgN2jEeGlbbwWT3IpKA" name="C78736">
+        <ownedComment xmi:id="_nxzJYPj3EeG9SuM8Du0jIw">
+          <body>An observation used to  convey information about the standard - normal - values for a given finding.</body>
+        </ownedComment>
+      </ownedLiteral>
+      <ownedLiteral xmi:id="_zSHCML_QEeGhFNoxTbVL8w" name="SETtbd">
+        <ownedComment xmi:id="_0yCskPj3EeG9SuM8Du0jIw">
+          <body>An observation that defines a type of consequence of an adverse event that classifies that event as serious.</body>
+        </ownedComment>
+      </ownedLiteral>
+      <ownedLiteral xmi:id="_rUay4L_QEeGhFNoxTbVL8w" name="C53252">
+        <ownedComment xmi:id="_38E_oPj3EeG9SuM8Du0jIw">
+          <body>An observation to indicate whether or not an adverse event is considered to be serious.</body>
+        </ownedComment>
+      </ownedLiteral>
+      <ownedLiteral xmi:id="_jrU0kN_PEeGAf6Q5S77gJQ" name="SPCtbd">
+        <ownedComment xmi:id="_6Ep1sPj3EeG9SuM8Du0jIw">
+          <body>An observation to record the species of a living subject.</body>
+        </ownedComment>
+      </ownedLiteral>
+      <ownedLiteral xmi:id="_x5C7EPOlEeG_bsiW5N1Utg" name="SCLtbd">
+        <ownedComment xmi:id="_8S4AwPj3EeG9SuM8Du0jIw">
+          <body>An observation to record the collection of a specimen.</body>
+        </ownedComment>
+      </ownedLiteral>
+      <ownedLiteral xmi:id="_wiTLkN2hEeGlbbwWT3IpKA" name="C78733">
+        <ownedComment xmi:id="_9x8m0Pj3EeG9SuM8Du0jIw">
+          <body>An observation to record the condition of a specimen.</body>
+        </ownedComment>
+      </ownedLiteral>
+      <ownedLiteral xmi:id="_qyZCcN2hEeGlbbwWT3IpKA" name="C78734">
+        <ownedComment xmi:id="_C5GG0Pj4EeG9SuM8Du0jIw">
+          <body>An observation to record the specimen type - the type of tissue or body structure form which the specimen was extracted.</body>
+        </ownedComment>
+      </ownedLiteral>
+      <ownedLiteral xmi:id="_2RoF4N2hEeGlbbwWT3IpKA" name="SUtbd">
+        <ownedComment xmi:id="_GBDWQPj4EeG9SuM8Du0jIw">
+          <body>An observation to record whether or not the specimen can be used to perform a desired observation.</body>
+        </ownedComment>
+      </ownedLiteral>
+      <ownedLiteral xmi:id="_AIbL4N2iEeGlbbwWT3IpKA" name="STRPtbd">
+        <ownedComment xmi:id="_LU_8IPj4EeG9SuM8Du0jIw">
+          <body>An observation that records the relationship of the beginning of an event to the established reference period for the subject.</body>
+        </ownedComment>
+      </ownedLiteral>
+      <ownedLiteral xmi:id="_FFBBsN2iEeGlbbwWT3IpKA" name="ENRPtbd">
+        <ownedComment xmi:id="_N_BSYPj4EeG9SuM8Du0jIw">
+          <body>An observation that records the relationship of the end of an event to the established reference period for the subject.</body>
+        </ownedComment>
+      </ownedLiteral>
+      <ownedLiteral xmi:id="_oF_pEN_PEeGAf6Q5S77gJQ" name="SStbd">
+        <ownedComment xmi:id="_Q6flAPj4EeG9SuM8Du0jIw">
+          <body>An observation that records the strain and or substrain designation given to a living subject.</body>
+        </ownedComment>
+      </ownedLiteral>
+      <ownedLiteral xmi:id="_lHM7UL_TEeGhFNoxTbVL8w" name="STPtbd">
+        <ownedComment xmi:id="_UxAjkPj4EeG9SuM8Du0jIw">
+          <body>An observation that records the study data period during which an event occurred.</body>
+        </ownedComment>
+      </ownedLiteral>
+      <ownedLiteral xmi:id="_IALLQN2iEeGlbbwWT3IpKA" name="ARMtbd">
+        <ownedComment xmi:id="_X24IUPj4EeG9SuM8Du0jIw">
+          <body>An observation to record an arm defined for a study.</body>
+        </ownedComment>
+      </ownedLiteral>
+      <ownedLiteral xmi:id="_4FTuoL_UEeGhFNoxTbVL8w" name="C99079">
+        <ownedComment xmi:id="_Z-kNkPj4EeG9SuM8Du0jIw">
+          <body>An observation to record an epoch defined for a study.</body>
+        </ownedComment>
+      </ownedLiteral>
+      <ownedLiteral xmi:id="_-bsu4N2iEeGlbbwWT3IpKA" name="STAtbd">
+        <ownedComment xmi:id="_dtWMcPj4EeG9SuM8Du0jIw">
+          <body>An observation to record the action taken with the study treatment in response to an event.</body>
+        </ownedComment>
+      </ownedLiteral>
+      <ownedLiteral xmi:id="_AX7LAN2jEeGlbbwWT3IpKA" name="STCtbd">
+        <ownedComment xmi:id="_kUdDUPj4EeG9SuM8Du0jIw">
+          <body>An observation to record the causal relationship beween an event and the study treatment provided to a subject.</body>
+        </ownedComment>
+      </ownedLiteral>
+      <ownedLiteral xmi:id="_D_9ZkN_QEeGAf6Q5S77gJQ" name="SPtbd">
+        <ownedComment xmi:id="_mt_GgPj4EeG9SuM8Du0jIw">
+          <body>An act which establishes a pool used to define a group of subjects for which findings, interventions or events may be recorded.</body>
+        </ownedComment>
+      </ownedLiteral>
+      <ownedLiteral xmi:id="_g_uIkL_TEeGhFNoxTbVL8w" name="TRtbd">
+        <ownedComment xmi:id="_wgLZUPj4EeG9SuM8Du0jIw">
+          <body>An act which is defined to create a relationship between the timing of an event and either a specific point in time, or an anchoring time point.</body>
+        </ownedComment>
+      </ownedLiteral>
+      <ownedLiteral xmi:id="_fSdncL_REeGhFNoxTbVL8w" name="TOtbd">
+        <ownedComment xmi:id="_-7KcMPj4EeG9SuM8Du0jIw">
+          <body>An observation of the toxicity of an event or finding.</body>
+        </ownedComment>
+      </ownedLiteral>
     </packagedElement>
     <packagedElement xmi:type="uml:Enumeration" xmi:id="_6APYoMRmEeGx2-Pp6bmfHQ" name="Serious Event Type">
       <ownedComment xmi:id="_8gK-wMRmEeGx2-Pp6bmfHQ">
@@ -539,17 +721,17 @@
     </packagedElement>
     <packagedElement xmi:type="uml:Enumeration" xmi:id="_KuWn0PLiEeGfjrJgpaHCTw" name="Clinical Event Type">
       <ownedComment xmi:id="_hW4T4PLiEeGfjrJgpaHCTw">
-        <body>The set of possible clincial events that could be recorded for a study subject.  The set of concepts is defined as a locally defined, sponsor generated code system.  However, there would be a strong case for using a generally available clincial vocabulary such as SNOMED.</body>
+        <body>The universe of possible clincial events.  The set of concepts is defined as a locally defined, sponsor generated code system.  However, there would be a strong case for using a generally available clincial vocabulary such as SNOMED.</body>
       </ownedComment>
     </packagedElement>
     <packagedElement xmi:type="uml:Enumeration" xmi:id="_Pjn4MPLjEeGfjrJgpaHCTw" name="Clinical Observation Type">
       <ownedComment xmi:id="_eTeX0PLjEeGfjrJgpaHCTw">
-        <body>The set of possible clincial observations that could be recorded for a study subject.  The set of concepts is defined as a locally defined, sponsor generated code system.  However, there would be a strong case for using a generally available clincial vocabulary such as LOINC or SNOMED.</body>
+        <body>The universe of possible clincial observations..  The set of concepts is defined as a locally defined, sponsor generated code system.  However, there would be a strong case for using a generally available clincial vocabulary such as LOINC or SNOMED.</body>
       </ownedComment>
     </packagedElement>
     <packagedElement xmi:type="uml:Enumeration" xmi:id="_AGOgoPLkEeGfjrJgpaHCTw" name="Adverse Event Type">
       <ownedComment xmi:id="_PQ7wQPLkEeGfjrJgpaHCTw">
-        <body>The set of possible adverse events that could be recorded for a study subject.  The set of concepts is defined as a locally defined, sponsor generated code system.  However, there is a strong case, and perhaps compelling case  for using a generally available clincial vocabulary such as MedDRA or SNOMED.</body>
+        <body>The universe of possible adverse events.  The set of concepts is defined as a locally defined, sponsor generated code system.  However, there is a strong case, and perhaps compelling case  for using a generally available clincial vocabulary such as MedDRA or SNOMED.</body>
       </ownedComment>
     </packagedElement>
     <packagedElement xmi:type="uml:Enumeration" xmi:id="_VsEY8PLqEeGMZ4RBIRkmiw" name="Pharmaceutical Dose Form"/>
@@ -652,7 +834,11 @@
         <body>A collection of the different measurements, tests or examinations whose findings are reported as palpable mass results.    The code system to be used is defined by the study sponsor.</body>
       </ownedComment>
     </packagedElement>
-    <packagedElement xmi:type="uml:Enumeration" xmi:id="_33kEwPOhEeGJhPNoqwaI2Q" name="Body Position"/>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_33kEwPOhEeGJhPNoqwaI2Q" name="Body Position">
+      <ownedComment xmi:id="_qzA8APkVEeGwf5s3BarCgA">
+        <body>A list of body positions that may be referred to as context for a finding.</body>
+      </ownedComment>
+    </packagedElement>
     <packagedElement xmi:type="uml:Enumeration" xmi:id="_L6f8sPOkEeG_bsiW5N1Utg" name="Reference Range">
       <ownedComment xmi:id="_L6f8sfOkEeG_bsiW5N1Utg">
         <body>A collection of values used to aid in interpreting subject data laboratory results.  It includes statements  about the relationship between a laboratory test result, and the reference range defined for the relevant lab test.</body>
@@ -732,6 +918,31 @@
       <ownedLiteral xmi:id="_osfHF_O0EeGaaIebpy5xoQ" name="CXXXXX"/>
       <ownedLiteral xmi:id="_osfHGPO0EeGaaIebpy5xoQ" name="CXXXXX"/>
     </packagedElement>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_WASnIPhpEeGKX9gkh5I9OA" name="Adverse Event Category">
+      <ownedComment xmi:id="_zSsKMPhpEeGKX9gkh5I9OA">
+        <body>A record of  the list of categories used to group adverse events by a study sponsor.  The value set is drawn from a locally defined code system.  In practice, the code system and value set will be identical.</body>
+      </ownedComment>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_mFPQMPkTEeGwf5s3BarCgA" name="Adverse Event Sub-Category">
+      <ownedComment xmi:id="_M5T90PkUEeGwf5s3BarCgA">
+        <body>A record of  the list of sub-categories used to group adverse events by a study sponsor.  The value set is drawn from a locally defined code system.  In practice, the code system and value set will be identical.</body>
+      </ownedComment>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_dDcDEPkUEeGwf5s3BarCgA" name="Adverse Event">
+      <ownedComment xmi:id="_8QRSgPkUEeGwf5s3BarCgA">
+        <body>A record of  the list of adverse events  that may be reported on within a subject data report.  The value set is drawn from a locally defined code system.  In practice, the code system and value set are likely to be identical.</body>
+      </ownedComment>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_CHx4cPkVEeGwf5s3BarCgA" name="Clinical Event">
+      <ownedComment xmi:id="_MIiywPkVEeGwf5s3BarCgA">
+        <body>A record of  the list of clinical events that may be reported on within a subject data report.  The value set is drawn from a locally defined code system.  In practice, the code system and value set are likely to be identical.</body>
+      </ownedComment>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_qmLdEPkZEeGRIL1cFfwcSA" name="Clinical Observation">
+      <ownedComment xmi:id="_2bI44PkZEeGRIL1cFfwcSA">
+        <body>A record of  the list of clinical observations that may be reported on within a subject data report.  The value set is drawn from a locally defined code system.  In practice, the code system and value set are likely to be identical.</body>
+      </ownedComment>
+    </packagedElement>
     <profileApplication xmi:id="_BLRzsV10EeGh_7NFCJ3fGA">
       <eAnnotations xmi:id="_BLRzsl10EeGh_7NFCJ3fGA" source="http://www.eclipse.org/uml2/2.0.0/UML">
         <references xmi:type="ecore:EPackage" href="http://www.openhealthtools.org/mdht/schemas/term/1#/"/>
@@ -809,7 +1020,6 @@
   <term:ValueSetCode xmi:id="_1uTbAb_UEeGhFNoxTbVL8w" conceptName="Dose Adjustment Reason" base_EnumerationLiteral="_1uTbAL_UEeGhFNoxTbVL8w"/>
   <term:ValueSetCode xmi:id="_4FTuob_UEeGhFNoxTbVL8w" conceptName="Study Epoch" base_EnumerationLiteral="_4FTuoL_UEeGhFNoxTbVL8w"/>
   <term:ValueSetCode xmi:id="_8vvdcb_UEeGhFNoxTbVL8w" conceptName="Element Order" base_EnumerationLiteral="_8vvdcL_UEeGhFNoxTbVL8w"/>
-  <term:ValueSetCode xmi:id="_-X4f8b_UEeGhFNoxTbVL8w" conceptName="Element" base_EnumerationLiteral="_-X4f8L_UEeGhFNoxTbVL8w"/>
   <term:ValueSetVersion xmi:id="_6APYocRmEeGx2-Pp6bmfHQ" identifier="CXXXXX" source="NCI EVS" url="http://www.cancer.gov/cancertopics/cancerlibrary/terminologyresources/fda" codeSystem="_jhVS8PIWEeG8oIw0LZ57PA" base_Enumeration="_6APYoMRmEeGx2-Pp6bmfHQ"/>
   <term:ValueSetCode xmi:id="_AY6x8cRnEeGx2-Pp6bmfHQ" conceptName="Involves Cancer" base_EnumerationLiteral="_AY6x8MRnEeGx2-Pp6bmfHQ"/>
   <term:ValueSetCode xmi:id="_DR_Q0MRnEeGx2-Pp6bmfHQ" conceptName="Congenital Anomaly or Birth Defect" base_EnumerationLiteral="_DR2G4MRnEeGx2-Pp6bmfHQ"/>
@@ -824,7 +1034,6 @@
   <term:ValueSetCode xmi:id="_z3QSAd2dEeGlbbwWT3IpKA" conceptName="Data Collection" base_EnumerationLiteral="_z3QSAN2dEeGlbbwWT3IpKA"/>
   <term:ValueSetCode xmi:id="_aUa7gd2eEeGlbbwWT3IpKA" conceptName="Lead Location" base_EnumerationLiteral="_aUa7gN2eEeGlbbwWT3IpKA"/>
   <term:ValueSetCode xmi:id="_ybfpMd2eEeGlbbwWT3IpKA" conceptName="Fasting Status" base_EnumerationLiteral="_ybfpMN2eEeGlbbwWT3IpKA"/>
-  <term:ValueSetCode xmi:id="_VBP8Qd2fEeGlbbwWT3IpKA" conceptName="Exposure" base_EnumerationLiteral="_VBP8QN2fEeGlbbwWT3IpKA"/>
   <term:ValueSetCode xmi:id="_oRF1Qd2fEeGlbbwWT3IpKA" conceptName="Demographics" base_EnumerationLiteral="_oRF1QN2fEeGlbbwWT3IpKA"/>
   <term:ValueSetCode xmi:id="_rVUl0d2gEeGlbbwWT3IpKA" conceptName="Non-Study Treatment Relationship" base_EnumerationLiteral="_rVUl0N2gEeGlbbwWT3IpKA"/>
   <term:ValueSetCode xmi:id="_uoIaYd2gEeGlbbwWT3IpKA" conceptName="Other Action Taken" base_EnumerationLiteral="_uoIaYN2gEeGlbbwWT3IpKA"/>
@@ -839,12 +1048,10 @@
   <term:ValueSetCode xmi:id="_IALLQd2iEeGlbbwWT3IpKA" conceptName="Study Arm" base_EnumerationLiteral="_IALLQN2iEeGlbbwWT3IpKA"/>
   <term:ValueSetCode xmi:id="_-bsu4d2iEeGlbbwWT3IpKA" conceptName="Study Treatment Action Taken" base_EnumerationLiteral="_-bsu4N2iEeGlbbwWT3IpKA"/>
   <term:ValueSetCode xmi:id="_AX7LAd2jEeGlbbwWT3IpKA" conceptName="Study Treatment Causality" base_EnumerationLiteral="_AX7LAN2jEeGlbbwWT3IpKA"/>
-  <term:ValueSetCode xmi:id="_l5bdgd2jEeGlbbwWT3IpKA" conceptName="Visit Type" base_EnumerationLiteral="_l5bdgN2jEeGlbbwWT3IpKA"/>
   <term:ValueSetCode xmi:id="_t_Adgd2jEeGlbbwWT3IpKA" conceptName="Reference Range" base_EnumerationLiteral="_t_AdgN2jEeGlbbwWT3IpKA"/>
   <term:ValueSetCode xmi:id="_fqTLUN2vEeGftNOzPM2U7g" conceptName="Exclusion Reason" base_EnumerationLiteral="_fmlI8N2vEeGftNOzPM2U7g"/>
   <term:ValueSetCode xmi:id="_js9MQN_PEeGAf6Q5S77gJQ" conceptName="Species" base_EnumerationLiteral="_jrU0kN_PEeGAf6Q5S77gJQ"/>
   <term:ValueSetCode xmi:id="_oF_pEd_PEeGAf6Q5S77gJQ" conceptName="Strain/Substrain" base_EnumerationLiteral="_oF_pEN_PEeGAf6Q5S77gJQ"/>
-  <term:ValueSetCode xmi:id="_sRyUEd_PEeGAf6Q5S77gJQ" conceptName="Trial Set" base_EnumerationLiteral="_sRyUEN_PEeGAf6Q5S77gJQ"/>
   <term:ValueSetCode xmi:id="_D_9Zkd_QEeGAf6Q5S77gJQ" conceptName="Subject Pool" base_EnumerationLiteral="_D_9ZkN_QEeGAf6Q5S77gJQ"/>
   <term:CodeSystemVersion xmi:id="_jhVS8PIWEeG8oIw0LZ57PA" identifier="2.16.840.1.113883.3.26.1.1" fullName="National Cancer Institute Thesaurus" source="NCI EVS" url="http://www.cancer.gov/cancertopics/cancerlibrary/terminologyresources/fda" base_Enumeration="_jdxBkPIWEeG8oIw0LZ57PA"/>
   <term:ValueSetVersion xmi:id="_a072MPKoEeG3WIkxKilK7g" identifier="C66731" source="NCI EVS" url="http://www.cancer.gov/cancertopics/cancerlibrary/terminologyresources/fda" codeSystem="_jhVS8PIWEeG8oIw0LZ57PA" base_Enumeration="_1yps8JX6EeGdw75A0B2buQ"/>
@@ -1033,7 +1240,18 @@
   <term:ValueSetCode xmi:id="_osfHHvO0EeGaaIebpy5xoQ" conceptName="Baseline Value" base_EnumerationLiteral="_osfHFvO0EeGaaIebpy5xoQ"/>
   <term:ValueSetCode xmi:id="_osfHH_O0EeGaaIebpy5xoQ" conceptName="Derived Value" base_EnumerationLiteral="_osfHF_O0EeGaaIebpy5xoQ"/>
   <term:ValueSetCode xmi:id="_osfHIPO0EeGaaIebpy5xoQ" conceptName="Excluded value" base_EnumerationLiteral="_osfHGPO0EeGaaIebpy5xoQ"/>
-  <term:ValueSetCode xmi:id="_1y8V0fa7EeGpiqtJ9hvVRQ" conceptName="Timing Reference" base_EnumerationLiteral="_1y8V0Pa7EeGpiqtJ9hvVRQ">
+  <term:ValueSetCode xmi:id="_7eazUPhaEeGT_PTNDmnEsQ" conceptName="Order Within Arm" base_EnumerationLiteral="_7cCNsPhaEeGT_PTNDmnEsQ">
     <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_dWKSsaDqEd-dVeaMP0XXQw"/>
   </term:ValueSetCode>
+  <term:ValueSetVersion xmi:id="_WChbwPhpEeGKX9gkh5I9OA" identifier="locally defined" codeSystem="_TcpdcJVHEeGtdYJw1d93Dg" base_Enumeration="_WASnIPhpEeGKX9gkh5I9OA"/>
+  <term:ValueSetCode xmi:id="_G7jdYPj9EeG7pMUQbTahtA" conceptName="Event Duration" base_EnumerationLiteral="_G57FsPj9EeG7pMUQbTahtA">
+    <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_dWKSsaDqEd-dVeaMP0XXQw"/>
+  </term:ValueSetCode>
+  <term:ValueSetCode xmi:id="_VaWscfkBEeGSwNE8SoqTXQ" conceptName="Finding About Object Type" base_EnumerationLiteral="_VaWscPkBEeGSwNE8SoqTXQ">
+    <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_dWKSsaDqEd-dVeaMP0XXQw"/>
+  </term:ValueSetCode>
+  <term:ValueSetVersion xmi:id="_mHU64PkTEeGwf5s3BarCgA" identifier="locally defined" codeSystem="_ag4VMZVHEeGtdYJw1d93Dg" base_Enumeration="_mFPQMPkTEeGwf5s3BarCgA"/>
+  <term:ValueSetVersion xmi:id="_dDcDEfkUEeGwf5s3BarCgA" identifier="locally defined" codeSystem="_AGOgofLkEeGfjrJgpaHCTw" base_Enumeration="_dDcDEPkUEeGwf5s3BarCgA"/>
+  <term:ValueSetVersion xmi:id="_CHx4cfkVEeGwf5s3BarCgA" identifier="locally defined" codeSystem="_KuXO4PLiEeGfjrJgpaHCTw" base_Enumeration="_CHx4cPkVEeGwf5s3BarCgA"/>
+  <term:ValueSetVersion xmi:id="_qnqq0PkZEeGRIL1cFfwcSA" identifier="locally defined" codeSystem="_Pjn4MfLjEeGfjrJgpaHCTw" base_Enumeration="_qmLdEPkZEeGRIL1cFfwcSA"/>
 </xmi:XMI>
