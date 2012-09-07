@@ -93,8 +93,6 @@ public class Mu2consolFactoryImpl extends EFactoryImpl implements
 			case Mu2consolPackage.INSTRUCTIONS_SECTION: return createInstructionsSection();
 			case Mu2consolPackage.ALLERGIES_SECTION_ENTRIES_OPTIONAL: return createAllergiesSectionEntriesOptional();
 			case Mu2consolPackage.CLINICAL_OFFICE_VISIT_SUMMARY: return createClinicalOfficeVisitSummary();
-			case Mu2consolPackage.VDT_INPATIENT_PATIENT_INFO: return createVDTInpatientPatientInfo();
-			case Mu2consolPackage.VDT_AMBULATORY_PATIENT_INFO: return createVDTAmbulatoryPatientInfo();
 			case Mu2consolPackage.TRANSITION_OF_CARE_AMBULATORY_SUMMARY: return createTransitionOfCareAmbulatorySummary();
 			case Mu2consolPackage.TRANSITION_OF_CARE_INPATIENT_SUMMARY: return createTransitionOfCareInpatientSummary();
 			case Mu2consolPackage.VIEW_DOWNLOAD_TRANSMIT_SUMMARY: return createViewDownloadTransmitSummary();
@@ -175,24 +173,6 @@ public class Mu2consolFactoryImpl extends EFactoryImpl implements
 	public ClinicalOfficeVisitSummary createClinicalOfficeVisitSummary() {
 		ClinicalOfficeVisitSummaryImpl clinicalOfficeVisitSummary = new ClinicalOfficeVisitSummaryImpl();
 		return clinicalOfficeVisitSummary;
-	}
-
-	/**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @generated
-	 */
-	public VDTInpatientPatientInfo createVDTInpatientPatientInfo() {
-		VDTInpatientPatientInfoImpl vdtInpatientPatientInfo = new VDTInpatientPatientInfoImpl();
-		return vdtInpatientPatientInfo;
-	}
-
-	/**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @generated
-	 */
-	public VDTAmbulatoryPatientInfo createVDTAmbulatoryPatientInfo() {
-		VDTAmbulatoryPatientInfoImpl vdtAmbulatoryPatientInfo = new VDTAmbulatoryPatientInfoImpl();
-		return vdtAmbulatoryPatientInfo;
 	}
 
 	/**

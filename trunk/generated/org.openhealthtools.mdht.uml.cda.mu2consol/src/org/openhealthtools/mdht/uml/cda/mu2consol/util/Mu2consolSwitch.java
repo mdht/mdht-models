@@ -282,28 +282,6 @@ public class Mu2consolSwitch<T> {
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case Mu2consolPackage.VDT_INPATIENT_PATIENT_INFO: {
-				VDTInpatientPatientInfo vdtInpatientPatientInfo = (VDTInpatientPatientInfo)theEObject;
-				T result = caseVDTInpatientPatientInfo(vdtInpatientPatientInfo);
-				if (result == null) result = caseGeneralHeaderConstraints(vdtInpatientPatientInfo);
-				if (result == null) result = caseConsol_GeneralHeaderConstraints(vdtInpatientPatientInfo);
-				if (result == null) result = caseClinicalDocument(vdtInpatientPatientInfo);
-				if (result == null) result = caseAct(vdtInpatientPatientInfo);
-				if (result == null) result = caseInfrastructureRoot(vdtInpatientPatientInfo);
-				if (result == null) result = defaultCase(theEObject);
-				return result;
-			}
-			case Mu2consolPackage.VDT_AMBULATORY_PATIENT_INFO: {
-				VDTAmbulatoryPatientInfo vdtAmbulatoryPatientInfo = (VDTAmbulatoryPatientInfo)theEObject;
-				T result = caseVDTAmbulatoryPatientInfo(vdtAmbulatoryPatientInfo);
-				if (result == null) result = caseGeneralHeaderConstraints(vdtAmbulatoryPatientInfo);
-				if (result == null) result = caseConsol_GeneralHeaderConstraints(vdtAmbulatoryPatientInfo);
-				if (result == null) result = caseClinicalDocument(vdtAmbulatoryPatientInfo);
-				if (result == null) result = caseAct(vdtAmbulatoryPatientInfo);
-				if (result == null) result = caseInfrastructureRoot(vdtAmbulatoryPatientInfo);
-				if (result == null) result = defaultCase(theEObject);
-				return result;
-			}
 			case Mu2consolPackage.TRANSITION_OF_CARE_AMBULATORY_SUMMARY: {
 				TransitionOfCareAmbulatorySummary transitionOfCareAmbulatorySummary = (TransitionOfCareAmbulatorySummary)theEObject;
 				T result = caseTransitionOfCareAmbulatorySummary(transitionOfCareAmbulatorySummary);
@@ -481,34 +459,6 @@ public class Mu2consolSwitch<T> {
 	 * @generated
 	 */
 	public T caseClinicalOfficeVisitSummary(ClinicalOfficeVisitSummary object) {
-		return null;
-	}
-
-	/**
-	 * Returns the result of interpreting the object as an instance of '<em>VDT Inpatient Patient Info</em>'.
-	 * <!-- begin-user-doc --> This
-	 * implementation returns null; returning a non-null result will terminate
-	 * the switch. <!-- end-user-doc -->
-	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>VDT Inpatient Patient Info</em>'.
-	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
-	 * @generated
-	 */
-	public T caseVDTInpatientPatientInfo(VDTInpatientPatientInfo object) {
-		return null;
-	}
-
-	/**
-	 * Returns the result of interpreting the object as an instance of '<em>VDT Ambulatory Patient Info</em>'.
-	 * <!-- begin-user-doc --> This
-	 * implementation returns null; returning a non-null result will terminate
-	 * the switch. <!-- end-user-doc -->
-	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>VDT Ambulatory Patient Info</em>'.
-	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
-	 * @generated
-	 */
-	public T caseVDTAmbulatoryPatientInfo(VDTAmbulatoryPatientInfo object) {
 		return null;
 	}
 
