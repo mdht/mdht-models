@@ -40,7 +40,7 @@
           <instance xmi:type="uml:EnumerationLiteral" href="../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__yeW30DcEd6xYZuu1VKCVw"/>
         </defaultValue>
       </ownedAttribute>
-      <ownedAttribute xmi:id="_TwGYlGStEeGaWrlBtEAvSQ" name="code" visibility="private" aggregation="composite">
+      <ownedAttribute xmi:id="_TwGYlGStEeGaWrlBtEAvSQ" name="code" visibility="private" isUnique="false" isReadOnly="true" aggregation="composite">
         <ownedComment xmi:id="_jBzigPIPEeGGNaZBWfrK-A">
           <body>The code value identifies the document as a human clinical subject data report.</body>
         </ownedComment>
@@ -542,7 +542,7 @@
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_1uQRINWgEeGnt_U1oKRe-A" value="*"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_1uQRIdWgEeGnt_U1oKRe-A"/>
       </ownedAttribute>
-      <ownedAttribute xmi:id="_6E53oWSqEeGaWrlBtEAvSQ" name="code" visibility="private" aggregation="composite">
+      <ownedAttribute xmi:id="_6E53oWSqEeGaWrlBtEAvSQ" name="code" visibility="private" isUnique="false" isReadOnly="true" aggregation="composite">
         <ownedComment xmi:id="_fSd4QGcNEeGQg8E6pm8Qdw">
           <body>Indicates that the contained information includes subject demographic data that is not acommodated by the record target participation.</body>
         </ownedComment>
@@ -550,6 +550,7 @@
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_f8tvIGcNEeGQg8E6pm8Qdw" value="1"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_f8tvIWcNEeGQg8E6pm8Qdw" value="1"/>
         <redefinedProperty href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_JKfJkErcEd6FXKclYGEDCw"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_TRqsMPkCEeGSwNE8SoqTXQ" value="DMGtbd"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_N9IjENW5EeGKmsh0mvGT9Q" name="reference Period" type="_XrR40NW4EeGKmsh0mvGT9Q" association="_N9IjEtW5EeGKmsh0mvGT9Q">
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_O4WOINW5EeGKmsh0mvGT9Q" value="1"/>
@@ -673,7 +674,7 @@
         <redefinedProperty href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_SaymoEo0Ed6c3qsAxlFHaQ"/>
         <defaultValue xmi:type="uml:LiteralString" xmi:id="_tjvmYGiKEeG7jNHx5OkAWw" value="EVN"/>
       </ownedAttribute>
-      <ownedAttribute xmi:id="_RyZAoWSrEeGaWrlBtEAvSQ" name="code" visibility="private" aggregation="composite">
+      <ownedAttribute xmi:id="_RyZAoWSrEeGaWrlBtEAvSQ" name="code" visibility="private" isUnique="false" aggregation="composite">
         <ownedComment xmi:id="_h3qcEGcREeGQg8E6pm8Qdw">
           <body>A coded value that indicates the type or name of the vist.  If this information is not formally condified, the value may be placed in the original text property of the coded data type.  [SDTM: VISIT].</body>
         </ownedComment>
@@ -798,7 +799,7 @@
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_YLBfwJh2EeGrqNwK10mI-w" value="1"/>
         <redefinedProperty href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_UGBfwEo8Ed6c3qsAxlFHaQ"/>
       </ownedAttribute>
-      <ownedAttribute xmi:id="_fVmG8WSrEeGaWrlBtEAvSQ" name="code" visibility="private" aggregation="composite">
+      <ownedAttribute xmi:id="_fVmG8WSrEeGaWrlBtEAvSQ" name="code" visibility="private" isUnique="false" isReadOnly="true" aggregation="composite">
         <ownedComment xmi:id="_JyxygGiMEeG7jNHx5OkAWw">
           <body>The code value indicates that this observation is an adverse event.</body>
         </ownedComment>
@@ -875,6 +876,9 @@
       <ownedAttribute xmi:id="_bJrusNc_EeGpIJX6e1rAMA" name="toxicity" type="_sYRDz7ZmEeGvx_6yr-0T9g" association="_bJrustc_EeGpIJX6e1rAMA">
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_bJrusdc_EeGpIJX6e1rAMA"/>
       </ownedAttribute>
+      <ownedAttribute xmi:id="_AyrlMPj-EeG7pMUQbTahtA" name="event Duration" type="_-HQWMPj8EeG7pMUQbTahtA" association="_AyrlMvj-EeG7pMUQbTahtA">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_AyrlMfj-EeG7pMUQbTahtA"/>
+      </ownedAttribute>
       <ownedAttribute xmi:id="_nOI7wJlJEeGGPbk7a3RIVg" name="study Day Period" type="_1TzacJk_EeGGPbk7a3RIVg" association="_nOI7wplJEeGGPbk7a3RIVg">
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_nOI7wZlJEeGGPbk7a3RIVg"/>
       </ownedAttribute>
@@ -934,7 +938,7 @@
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_9AFH8LogEeGWIctMxnxaiQ" value="1"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_9AFH8bogEeGWIctMxnxaiQ" value="1"/>
       </ownedAttribute>
-      <ownedAttribute xmi:id="_tFb7EWSrEeGaWrlBtEAvSQ" name="code" visibility="private" aggregation="composite">
+      <ownedAttribute xmi:id="_tFb7EWSrEeGaWrlBtEAvSQ" name="code" visibility="private" isUnique="false" aggregation="composite">
         <ownedComment xmi:id="_ToYV4GbwEeGjiJmz4TzZew">
           <body>A coded indication of the nature of the vital sign.  [SDTM, VSTESTCD, VSTEST], [SEND, VSTESTCD, VSTEST]- the descriptive text associated with the code.</body>
         </ownedComment>
@@ -979,7 +983,7 @@
       </ownedAttribute>
       <ownedAttribute xmi:id="_71muIGb4EeGjiJmz4TzZew" name="targetSiteCode" visibility="private" aggregation="composite">
         <ownedComment xmi:id="_lrENQGe2EeGFKaG0B9CEsg">
-          <body>The body locatin relevant to the vital sign measurement.   [SDTM: VSLOC], [SEND: VSLOC]</body>
+          <body>The body location relevant to the vital sign measurement.   [SDTM: VSLOC], [SEND: VSLOC]</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_fjDGIGe2EeGFKaG0B9CEsg" value="1"/>
@@ -999,14 +1003,17 @@
       <ownedAttribute xmi:id="_59e34MXMEeGAALP3Wz5mAg" name="exclusion Reason" type="_mZNiwLWAEeGLXdg8xIiGrA" association="_59e34sXMEeGAALP3Wz5mAg">
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_59e34cXMEeGAALP3Wz5mAg"/>
       </ownedAttribute>
+      <ownedAttribute xmi:id="_dwEFkNgEEeGTW4_acnW5rA" name="position of Subject" type="_FhxtaYsoEeGEXvbgIb1duQ" association="_dwEFktgEEeGTW4_acnW5rA">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_dwEFkdgEEeGTW4_acnW5rA"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_J1VSYLo9EeGWIctMxnxaiQ" name="consciousnessState" type="_07kOObo8EeGWIctMxnxaiQ" association="_J1VSYro9EeGWIctMxnxaiQ">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_J1VSYbo9EeGWIctMxnxaiQ"/>
+      </ownedAttribute>
       <ownedAttribute xmi:id="__ZqH0Ge1EeGFKaG0B9CEsg" name="event Study Day" type="_j42pwGerEeGFKaG0B9CEsg" association="__ZqH0me1EeGFKaG0B9CEsg">
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="__ZqH0We1EeGFKaG0B9CEsg"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_x4WL8GiGEeG7jNHx5OkAWw" name="timingReference" type="_IWO1oGiEEeG7jNHx5OkAWw" association="_x4WL8miGEeG7jNHx5OkAWw">
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_x4WL8WiGEeG7jNHx5OkAWw"/>
-      </ownedAttribute>
-      <ownedAttribute xmi:id="_J1VSYLo9EeGWIctMxnxaiQ" name="consciousnessState" type="_07kOObo8EeGWIctMxnxaiQ" association="_J1VSYro9EeGWIctMxnxaiQ">
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_J1VSYbo9EeGWIctMxnxaiQ"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_F91xgLo_EeGWIctMxnxaiQ" name="planned Study Day" type="_li9xQGeiEeGFKaG0B9CEsg" association="_F91xgro_EeGWIctMxnxaiQ">
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_F91xgbo_EeGWIctMxnxaiQ"/>
@@ -1019,9 +1026,6 @@
       </ownedAttribute>
       <ownedAttribute xmi:id="_aAP20NgCEeGEv9qe5Ch_sQ" name="sub-Category" type="_EtyC8Nf7EeGEv9qe5Ch_sQ" association="_aAP20tgCEeGEv9qe5Ch_sQ">
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_aAP20dgCEeGEv9qe5Ch_sQ"/>
-      </ownedAttribute>
-      <ownedAttribute xmi:id="_dwEFkNgEEeGTW4_acnW5rA" name="position of Subject" type="_FhxtaYsoEeGEXvbgIb1duQ" association="_dwEFktgEEeGTW4_acnW5rA">
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_dwEFkdgEEeGTW4_acnW5rA"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_DmgSANWvEeGKmsh0mvGT9Q" name="related Record" type="_iMrPgNKNEeGX6v8HTY_PeQ" association="_DmgSAtWvEeGKmsh0mvGT9Q">
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_IQn3wNWvEeGKmsh0mvGT9Q" value="*"/>
@@ -1120,7 +1124,7 @@
           <instance xmi:type="uml:EnumerationLiteral" href="../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__yeW30DcEd6xYZuu1VKCVw"/>
         </defaultValue>
       </ownedAttribute>
-      <ownedAttribute xmi:id="_LhanRGSqEeGaWrlBtEAvSQ" name="code" visibility="private" aggregation="composite">
+      <ownedAttribute xmi:id="_LhanRGSqEeGaWrlBtEAvSQ" name="code" visibility="private" isUnique="false" aggregation="composite">
         <ownedComment xmi:id="_kNPmUN2UEeGajPLAbtmXCg">
           <body>A code to indicate the nature of the section.  This code should indicate the primary domain association for the section.</body>
         </ownedComment>
@@ -1204,6 +1208,10 @@
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_dZCN8N2cEeGlbbwWT3IpKA" value="1"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_dZCN8d2cEeGlbbwWT3IpKA" value="1"/>
       </ownedAttribute>
+      <ownedAttribute xmi:id="_GvBrAPkCEeGSwNE8SoqTXQ" name="finding About" type="_x1wssJOhEeG_Gqo8Ix5ECw" association="_GvBrAvkCEeGSwNE8SoqTXQ">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_NVZiEPkCEeGSwNE8SoqTXQ" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_NVZiEfkCEeGSwNE8SoqTXQ"/>
+      </ownedAttribute>
       <nestedClassifier xmi:type="uml:Class" xmi:id="_hnZAkH5sEeGbfrTsVlSE3Q" name="exposureAssociation">
         <ownedComment xmi:id="_98vFgH5sEeGbfrTsVlSE3Q">
           <body>INLINE</body>
@@ -1273,7 +1281,7 @@ Study arm information may refer either to the planned arm for a subject or to th
         <redefinedProperty href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_yWn-AEocEd6c3qsAxlFHaQ"/>
         <defaultValue xmi:type="uml:LiteralString" xmi:id="_fUhTYL_FEeGDAa8F3PhF3A" value="INT"/>
       </ownedAttribute>
-      <ownedAttribute xmi:id="_UhpyIWbuEeGjiJmz4TzZew" name="code" visibility="private" isReadOnly="true" aggregation="composite">
+      <ownedAttribute xmi:id="_UhpyIWbuEeGjiJmz4TzZew" name="code" visibility="private" isUnique="false" aggregation="composite">
         <ownedComment xmi:id="_DUUG8GbvEeGjiJmz4TzZew">
           <body>The fixed value includes the code for the study arm.  [SDTM:  ARMCD]</body>
         </ownedComment>
@@ -1316,12 +1324,13 @@ Study arm information may refer either to the planned arm for a subject or to th
         <redefinedProperty href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_FcjT0EbtEd6besF9iFIJkQ"/>
         <defaultValue xmi:type="uml:LiteralString" xmi:id="_bd9iMGiJEeG7jNHx5OkAWw" value="OBS"/>
       </ownedAttribute>
-      <ownedAttribute xmi:id="_A7FWAWcAEeGjiJmz4TzZew" name="code" visibility="private" aggregation="composite">
+      <ownedAttribute xmi:id="_A7FWAWcAEeGjiJmz4TzZew" name="code" visibility="private" isUnique="false" isReadOnly="true" aggregation="composite">
         <ownedComment xmi:id="_dO2GkGcAEeGjiJmz4TzZew">
           <body>The code value identifies this observation as a non-performance reason.</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
         <redefinedProperty href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_WEYp4Eo8Ed6c3qsAxlFHaQ"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_7oQVcPkCEeGSwNE8SoqTXQ" value="C66727"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_A7FWAmcAEeGjiJmz4TzZew" name="moodCode" visibility="private" isReadOnly="true">
         <type xmi:type="uml:Enumeration" href="../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__zOoCEDcEd6xYZuu1VKCVw"/>
@@ -1355,12 +1364,13 @@ Study arm information may refer either to the planned arm for a subject or to th
         <redefinedProperty href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_BLZhcEo_Ed6c3qsAxlFHaQ"/>
         <defaultValue xmi:type="uml:LiteralString" xmi:id="_CiR10GiLEeG7jNHx5OkAWw" value="INT"/>
       </ownedAttribute>
-      <ownedAttribute xmi:id="_p5UtgWeiEeGFKaG0B9CEsg" name="code" visibility="private" isReadOnly="true" aggregation="composite">
+      <ownedAttribute xmi:id="_p5UtgWeiEeGFKaG0B9CEsg" name="code" visibility="private" isUnique="false" isReadOnly="true" aggregation="composite">
         <ownedComment xmi:id="_zWhcMGesEeGFKaG0B9CEsg">
           <body>A fixed value that indicates the observation captures the planned study day for an event.</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
         <redefinedProperty href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_WEYp4Eo8Ed6c3qsAxlFHaQ"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_qEAmIPkDEeGSwNE8SoqTXQ" value="C83450"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_p5Utg2eiEeGFKaG0B9CEsg" name="value" visibility="private" aggregation="composite">
         <ownedComment xmi:id="_2_8Z8GesEeGFKaG0B9CEsg">
@@ -1389,12 +1399,13 @@ Study arm information may refer either to the planned arm for a subject or to th
         <redefinedProperty href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_BLZhcEo_Ed6c3qsAxlFHaQ"/>
         <defaultValue xmi:type="uml:LiteralString" xmi:id="_vg2zUGiKEeG7jNHx5OkAWw" value="EVN"/>
       </ownedAttribute>
-      <ownedAttribute xmi:id="_j42pw2erEeGFKaG0B9CEsg" name="code" visibility="private" isReadOnly="true" aggregation="composite">
+      <ownedAttribute xmi:id="_j42pw2erEeGFKaG0B9CEsg" name="code" visibility="private" isUnique="false" isReadOnly="true" aggregation="composite">
         <ownedComment xmi:id="_EVKuoGetEeGFKaG0B9CEsg">
           <body>A fixed value that indicates the observation captures the actual study day for an event.</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
         <redefinedProperty href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_WEYp4Eo8Ed6c3qsAxlFHaQ"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_8VPCIPkAEeGSwNE8SoqTXQ" value="ESDtbd"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_j42pxWerEeGFKaG0B9CEsg" name="value" visibility="private" aggregation="composite">
         <ownedComment xmi:id="_9Ozv8GesEeGFKaG0B9CEsg">
@@ -1439,6 +1450,7 @@ Study arm information may refer either to the planned arm for a subject or to th
           <body>A fixed code value to indicate the observation contains timing refence information.</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_ShpAoPkGEeGSwNE8SoqTXQ" value="TRtbd"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_aPyRImiEEeG7jNHx5OkAWw" name="effectiveTime" visibility="private" aggregation="composite">
         <ownedComment xmi:id="_eAgpYGiHEeG7jNHx5OkAWw">
@@ -1497,12 +1509,13 @@ Study arm information may refer either to the planned arm for a subject or to th
             <type xmi:type="uml:Enumeration" href="../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__zOpkkDcEd6xYZuu1VKCVw"/>
             <redefinedProperty href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_yWn-AEocEd6c3qsAxlFHaQ"/>
           </ownedAttribute>
-          <ownedAttribute xmi:id="_slzCUWiIEeG7jNHx5OkAWw" name="code" visibility="private" aggregation="composite">
+          <ownedAttribute xmi:id="_slzCUWiIEeG7jNHx5OkAWw" name="code" visibility="private" isUnique="false" isReadOnly="true" aggregation="composite">
             <ownedComment xmi:id="_D_pdoGiJEeG7jNHx5OkAWw">
               <body>A code that indicates the nature of the fixed reference point that is referred to by the timing reference.  If a suitable value set has not been defined, the original text property of the coded type is used.  [SDTM: LBTPTFEF, VSTPTREF]. [SEND: EXTPTREF, BGTPTREF, CLTPTREF. LBTPTREF, VSTPTREF, EGTPTREF]</body>
             </ownedComment>
             <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
             <redefinedProperty href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_HUTHQEocEd6c3qsAxlFHaQ"/>
+            <defaultValue xmi:type="uml:LiteralString" xmi:id="_UjqiwPkGEeGSwNE8SoqTXQ" value="ATPtbd"/>
           </ownedAttribute>
           <ownedAttribute xmi:id="_slzCUmiIEeG7jNHx5OkAWw" name="effectiveTime" visibility="private" aggregation="composite">
             <ownedComment xmi:id="_I7MKkGiJEeG7jNHx5OkAWw">
@@ -1545,12 +1558,13 @@ Study arm information may refer either to the planned arm for a subject or to th
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_7d1kcYjQEeGwjb3wu_tBLA" value="1"/>
         <redefinedProperty href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_FHobYEocEd6c3qsAxlFHaQ"/>
       </ownedAttribute>
-      <ownedAttribute xmi:id="_9fP7UWn_EeGH0KSwdtr7gA" name="code" visibility="private" isReadOnly="true" aggregation="composite">
+      <ownedAttribute xmi:id="_9fP7UWn_EeGH0KSwdtr7gA" name="code" visibility="private" isUnique="false" isReadOnly="true" aggregation="composite">
         <ownedComment xmi:id="_eAO9YG05EeGmSMmsbVJxcQ">
           <body>The code value indicates that the act contains group identifier information.</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
         <redefinedProperty href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_HUTHQEocEd6c3qsAxlFHaQ"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_rNZiAPkBEeGSwNE8SoqTXQ" value="C83204"/>
       </ownedAttribute>
     </packagedElement>
     <packagedElement xmi:type="uml:Association" href="#_hEq7omoAEeGH0KSwdtr7gA"/>
@@ -1571,7 +1585,7 @@ Study arm information may refer either to the planned arm for a subject or to th
         <redefinedProperty href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_BLZhcEo_Ed6c3qsAxlFHaQ"/>
         <defaultValue xmi:type="uml:LiteralString" xmi:id="_xHoTMO4pEeGUDPBPrXZ7kg" value="EVN"/>
       </ownedAttribute>
-      <ownedAttribute xmi:id="_SitW8WoUEeGH0KSwdtr7gA" name="code" visibility="private" aggregation="composite">
+      <ownedAttribute xmi:id="_SitW8WoUEeGH0KSwdtr7gA" name="code" visibility="private" isUnique="false" isReadOnly="true" aggregation="composite">
         <ownedComment xmi:id="_iYUwcO7JEeGRMNEUCrt21A">
           <body>The code value identifies this as a body system or organ class observation.</body>
         </ownedComment>
@@ -1601,12 +1615,13 @@ Study arm information may refer either to the planned arm for a subject or to th
         <redefinedProperty href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_FcjT0EbtEd6besF9iFIJkQ"/>
         <defaultValue xmi:type="uml:LiteralString" xmi:id="_OdhQ8GoZEeGH0KSwdtr7gA" value="OBS"/>
       </ownedAttribute>
-      <ownedAttribute xmi:id="_pbjaIWoYEeGH0KSwdtr7gA" name="code" visibility="private" isReadOnly="true" aggregation="composite">
+      <ownedAttribute xmi:id="_pbjaIWoYEeGH0KSwdtr7gA" name="code" visibility="private" isUnique="false" isReadOnly="true" aggregation="composite">
         <ownedComment xmi:id="_O3OvkO7uEeG90Pj2MVp3YQ">
           <body>The code value indicates this is a severity observation.</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
         <redefinedProperty href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_WEYp4Eo8Ed6c3qsAxlFHaQ"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_9Tv5IPedEeG2MYjazOje-A" value="C66769"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_pbjaImoYEeGH0KSwdtr7gA" name="moodCode" visibility="private" isReadOnly="true">
         <type xmi:type="uml:Enumeration" href="../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__zOoCEDcEd6xYZuu1VKCVw"/>
@@ -1736,6 +1751,9 @@ More specifically: The periodic time interval (PIVL_TS) type is used to record r
       <ownedAttribute xmi:id="_3npHUIMwEeGuDKqPeNB_5w" name="pre-Specified Event" type="__G5heXIJEeGL-K1S1E9LrQ" association="_3npHUoMwEeGuDKqPeNB_5w">
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_3npHUYMwEeGuDKqPeNB_5w"/>
       </ownedAttribute>
+      <ownedAttribute xmi:id="_DudkYPj_EeG7pMUQbTahtA" name="event Duration" type="_-HQWMPj8EeG7pMUQbTahtA" association="_DudkYvj_EeG7pMUQbTahtA">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_DudkYfj_EeG7pMUQbTahtA"/>
+      </ownedAttribute>
       <ownedAttribute xmi:id="_yE5uIJlCEeGGPbk7a3RIVg" name="study Day Period" type="_1TzacJk_EeGGPbk7a3RIVg" association="_yE5uIplCEeGGPbk7a3RIVg">
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_yE5uIZlCEeGGPbk7a3RIVg"/>
       </ownedAttribute>
@@ -1769,6 +1787,9 @@ More specifically: The periodic time interval (PIVL_TS) type is used to record r
       <ownedAttribute xmi:id="_yHo0wPBEEeGaQask1xXq5Q" name="finding About" type="_x1wssJOhEeG_Gqo8Ix5ECw" association="_yH3eQPBEEeGaQask1xXq5Q">
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_0teOkPBEEeGaQask1xXq5Q" value="*"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_0teOkfBEEeGaQask1xXq5Q"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_CS0FwPj_EeG7pMUQbTahtA" name="ageAssociation" type="_-N5OoGcNEeGQg8E6pm8Qdw" association="_CS0Fwvj_EeG7pMUQbTahtA">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_CS0Fwfj_EeG7pMUQbTahtA"/>
       </ownedAttribute>
     </packagedElement>
     <packagedElement xmi:type="uml:Association" xmi:id="_c4D6kXH-EeGL-K1S1E9LrQ" memberEnd="_c4DTgHH-EeGL-K1S1E9LrQ _c4D6knH-EeGL-K1S1E9LrQ">
@@ -1871,7 +1892,7 @@ More specifically: The periodic time interval (PIVL_TS) type is used to record r
               <instance xmi:type="uml:EnumerationLiteral" href="../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__yoODEDcEd6xYZuu1VKCVw"/>
             </defaultValue>
           </ownedAttribute>
-          <ownedAttribute xmi:id="_1jWEYHIFEeGL-K1S1E9LrQ" name="code" visibility="private" aggregation="composite">
+          <ownedAttribute xmi:id="_1jWEYHIFEeGL-K1S1E9LrQ" name="code" visibility="private" isUnique="false" aggregation="composite">
             <ownedComment xmi:id="_EErfgHIJEeGL-K1S1E9LrQ">
               <body>The code attribute captures information about the nature of the drug, medication or therapy.  Within SDTM, medication information can appear as a concommitant medication, as the study medication within the exposure domain, or as a substance that is used. The standard code for the substance is captured using the code property of the CD type.  A verbatim description of the substance is recored using original text, while sponsor specific coding uses the translation property of the type.&#xD;
 &#xD;
@@ -2131,6 +2152,9 @@ More specifically: The periodic time interval (PIVL_TS) type is used to record r
       <ownedAttribute xmi:id="_OxV_QH56EeGbfrTsVlSE3Q" name="elementOrderAssociation" type="_5bmJsH55EeGbfrTsVlSE3Q" association="_OxV_Qn56EeGbfrTsVlSE3Q">
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_OxV_QX56EeGbfrTsVlSE3Q"/>
       </ownedAttribute>
+      <ownedAttribute xmi:id="_u9OpwPkBEeGSwNE8SoqTXQ" name="event Duration" type="_-HQWMPj8EeG7pMUQbTahtA" association="_u9OpwvkBEeGSwNE8SoqTXQ">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_u9OpwfkBEeGSwNE8SoqTXQ"/>
+      </ownedAttribute>
       <ownedAttribute xmi:id="_dgTcIH58EeGbfrTsVlSE3Q" name="timing Reference" type="_IWO1oGiEEeG7jNHx5OkAWw" association="_dgTcIn58EeGbfrTsVlSE3Q">
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_dgTcIX58EeGbfrTsVlSE3Q"/>
       </ownedAttribute>
@@ -2243,7 +2267,7 @@ More specifically: The periodic time interval (PIVL_TS) type is used to record r
         <type xmi:type="uml:Enumeration" href="../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__zOpkkDcEd6xYZuu1VKCVw"/>
         <defaultValue xmi:type="uml:LiteralString" xmi:id="_WMZEQH5pEeGbfrTsVlSE3Q" value="EVN"/>
       </ownedAttribute>
-      <ownedAttribute xmi:id="_MdU98X5pEeGbfrTsVlSE3Q" name="code" visibility="private" aggregation="composite">
+      <ownedAttribute xmi:id="_MdU98X5pEeGbfrTsVlSE3Q" name="code" visibility="private" isUnique="false" aggregation="composite">
         <ownedComment xmi:id="_YypfYH5qEeGbfrTsVlSE3Q">
           <body>A code value for the epoch.</body>
         </ownedComment>
@@ -2311,7 +2335,7 @@ More specifically: The periodic time interval (PIVL_TS) type is used to record r
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_PJb70H9OEeG03tOkpWkfyg" value="1"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_PJb70X9OEeG03tOkpWkfyg" value="1"/>
       </ownedAttribute>
-      <ownedAttribute xmi:id="_qH6w8H9NEeG03tOkpWkfyg" name="code" visibility="private" aggregation="composite">
+      <ownedAttribute xmi:id="_qH6w8H9NEeG03tOkpWkfyg" name="code" visibility="private" isUnique="false" aggregation="composite">
         <ownedComment xmi:id="_Q4Tb8H9PEeG03tOkpWkfyg">
           <body>The code value indicates the nature of the element.   If the element is unplanned, the code value should indicate this.  Uose original text to provide the verbatim content of the element - whether planned or unplanned.  [SDTM: ETCD, ELEMENT, SEUPDES], [SEND: ETCD, ELEMENT, SEUPDES]</body>
         </ownedComment>
@@ -2546,6 +2570,9 @@ More specifically: The periodic time interval (PIVL_TS) type is used to record r
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_MznrMPBxEeGBOvjqivZe9A" value="*"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_MznrMfBxEeGBOvjqivZe9A"/>
       </ownedAttribute>
+      <ownedAttribute xmi:id="_MxuQcPkGEeGSwNE8SoqTXQ" name="event Duration" type="_-HQWMPj8EeG7pMUQbTahtA" association="_Mx4BcPkGEeGSwNE8SoqTXQ">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_MxuQcfkGEeGSwNE8SoqTXQ"/>
+      </ownedAttribute>
     </packagedElement>
     <packagedElement xmi:type="uml:Association" xmi:id="_4Yi2QoMkEeGuDKqPeNB_5w" memberEnd="_4Yi2QIMkEeGuDKqPeNB_5w _4Yi2Q4MkEeGuDKqPeNB_5w">
       <ownedComment xmi:id="_PzZgoJnuEeGhE8cxrj1YAg">
@@ -2588,7 +2615,7 @@ More specifically: The periodic time interval (PIVL_TS) type is used to record r
         <type xmi:type="uml:Enumeration" href="../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__zOntkDcEd6xYZuu1VKCVw"/>
         <defaultValue xmi:type="uml:LiteralString" xmi:id="_hIGkoIjBEeGwjb3wu_tBLA" value="ACT"/>
       </ownedAttribute>
-      <ownedAttribute xmi:id="_UtBZcYjAEeGwjb3wu_tBLA" name="code" visibility="private" aggregation="composite">
+      <ownedAttribute xmi:id="_UtBZcYjAEeGwjb3wu_tBLA" name="code" visibility="private" isUnique="false" aggregation="composite">
         <ownedComment xmi:id="_IeFsgIjCEeGwjb3wu_tBLA">
           <body>A code drawn from a controlled terminology for the disposition event or protocol milestone.  The verbatim name for the term must be captured as well.  [SDTM:DSTERM; DSDECOD]</body>
         </ownedComment>
@@ -2671,12 +2698,12 @@ More specifically: The periodic time interval (PIVL_TS) type is used to record r
         <type xmi:type="uml:Enumeration" href="../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__zOpkkDcEd6xYZuu1VKCVw"/>
         <defaultValue xmi:type="uml:LiteralString" xmi:id="_KCXwcIjHEeGwjb3wu_tBLA" value="EVN"/>
       </ownedAttribute>
-      <ownedAttribute xmi:id="_aJMfgYjGEeGwjb3wu_tBLA" name="code" visibility="private" isReadOnly="true" aggregation="composite">
+      <ownedAttribute xmi:id="_aJMfgYjGEeGwjb3wu_tBLA" name="code" visibility="private" isUnique="false" isReadOnly="true" aggregation="composite">
         <ownedComment xmi:id="_3z2KgIjGEeGwjb3wu_tBLA">
           <body>The code value indicates the information relates to the collection of data regarding an event or activity.</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
-        <defaultValue xmi:type="uml:LiteralString" xmi:id="_3XL2cPLvEeGMZ4RBIRkmiw" value="tbd"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_ez0oIPj_EeG7pMUQbTahtA" value="DCtbd"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_aJMfgojGEeGwjb3wu_tBLA" name="effectiveTime" visibility="private" aggregation="composite">
         <ownedComment xmi:id="_D-YNsIjHEeGwjb3wu_tBLA">
@@ -2738,6 +2765,7 @@ More specifically: The periodic time interval (PIVL_TS) type is used to record r
           <body>The code value indicates that this observation is a medical history item.</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_m1obEPkCEeGSwNE8SoqTXQ" value="MHtbd"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_DCRYiYjMEeGwjb3wu_tBLA" name="statusCode" visibility="private" aggregation="composite">
         <ownedComment xmi:id="_sKyw0IjTEeGwjb3wu_tBLA">
@@ -2763,8 +2791,15 @@ More specifically: The periodic time interval (PIVL_TS) type is used to record r
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_rNmkIIplEeGissEAbjTgHg" value="1"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_rNmkIYplEeGissEAbjTgHg" value="1"/>
       </ownedAttribute>
+      <ownedAttribute xmi:id="_4SaagNWhEeGnt_U1oKRe-A" name="domain Assignment" type="_ys8oENKGEeGO8bQEpB8bpQ" association="_4SaagtWhEeGnt_U1oKRe-A">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_88iAQNWhEeGnt_U1oKRe-A" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_88iAQdWhEeGnt_U1oKRe-A" value="1"/>
+      </ownedAttribute>
       <ownedAttribute xmi:id="_78TekIjPEeGwjb3wu_tBLA" name="group Identifier" type="_8Ae3QGn_EeGH0KSwdtr7gA" association="_78TekojPEeGwjb3wu_tBLA">
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_78TekYjPEeGwjb3wu_tBLA"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_4AuAUIsgEeGEXvbgIb1duQ" name="data Collection" type="_YOwMEIjGEeGwjb3wu_tBLA" association="_4AuAUosgEeGEXvbgIb1duQ">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_4AuAUYsgEeGEXvbgIb1duQ"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_I3R_4IjTEeGwjb3wu_tBLA" name="pre-Specified Event" type="__G5heXIJEeGL-K1S1E9LrQ" association="_I3R_4ojTEeGwjb3wu_tBLA">
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_I3R_4YjTEeGwjb3wu_tBLA"/>
@@ -2774,25 +2809,6 @@ More specifically: The periodic time interval (PIVL_TS) type is used to record r
       </ownedAttribute>
       <ownedAttribute xmi:id="_RMOs8IplEeGissEAbjTgHg" name="body System or Organ Class" type="_QmoEwGoUEeGH0KSwdtr7gA" association="_RM-T0YplEeGissEAbjTgHg">
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_RM-T0IplEeGissEAbjTgHg"/>
-      </ownedAttribute>
-      <ownedAttribute xmi:id="_4AuAUIsgEeGEXvbgIb1duQ" name="data Collection" type="_YOwMEIjGEeGwjb3wu_tBLA" association="_4AuAUosgEeGEXvbgIb1duQ">
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_4AuAUYsgEeGEXvbgIb1duQ"/>
-      </ownedAttribute>
-      <ownedAttribute xmi:id="_3Os6wNWhEeGnt_U1oKRe-A" name="comment" type="_FydD4NKIEeGO8bQEpB8bpQ" association="_3Os6wtWhEeGnt_U1oKRe-A">
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_92IhwNWhEeGnt_U1oKRe-A" value="*"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_92IhwdWhEeGnt_U1oKRe-A"/>
-      </ownedAttribute>
-      <ownedAttribute xmi:id="_4SaagNWhEeGnt_U1oKRe-A" name="domain Assignment" type="_ys8oENKGEeGO8bQEpB8bpQ" association="_4SaagtWhEeGnt_U1oKRe-A">
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_88iAQNWhEeGnt_U1oKRe-A" value="1"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_88iAQdWhEeGnt_U1oKRe-A" value="1"/>
-      </ownedAttribute>
-      <ownedAttribute xmi:id="_5lMRANWhEeGnt_U1oKRe-A" name="related Record" type="_iMrPgNKNEeGX6v8HTY_PeQ" association="_5lMRAtWhEeGnt_U1oKRe-A">
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_8elgANWhEeGnt_U1oKRe-A" value="*"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_8elgAdWhEeGnt_U1oKRe-A"/>
-      </ownedAttribute>
-      <ownedAttribute xmi:id="_6iIaYNWhEeGnt_U1oKRe-A" name="supplemental Value" type="_MltKQNKREeGX6v8HTY_PeQ" association="_6iIaYtWhEeGnt_U1oKRe-A">
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_78WVoNWhEeGnt_U1oKRe-A" value="*"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_78WVodWhEeGnt_U1oKRe-A"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_EOdFANW-EeGJ8IViYnBfBA" name="start Relative to Reference Period" type="_w_aIINW7EeGJ8IViYnBfBA" association="_EOdFAtW-EeGJ8IViYnBfBA">
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_EOdFAdW-EeGJ8IViYnBfBA"/>
@@ -2805,6 +2821,18 @@ More specifically: The periodic time interval (PIVL_TS) type is used to record r
       </ownedAttribute>
       <ownedAttribute xmi:id="_bD8aYNgAEeGEv9qe5Ch_sQ" name="sub-Category" type="_EtyC8Nf7EeGEv9qe5Ch_sQ" association="_bD8aYtgAEeGEv9qe5Ch_sQ">
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_bD8aYdgAEeGEv9qe5Ch_sQ"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_5lMRANWhEeGnt_U1oKRe-A" name="related Record" type="_iMrPgNKNEeGX6v8HTY_PeQ" association="_5lMRAtWhEeGnt_U1oKRe-A">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_8elgANWhEeGnt_U1oKRe-A" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_8elgAdWhEeGnt_U1oKRe-A"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_6iIaYNWhEeGnt_U1oKRe-A" name="supplemental Value" type="_MltKQNKREeGX6v8HTY_PeQ" association="_6iIaYtWhEeGnt_U1oKRe-A">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_78WVoNWhEeGnt_U1oKRe-A" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_78WVodWhEeGnt_U1oKRe-A"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3Os6wNWhEeGnt_U1oKRe-A" name="comment" type="_FydD4NKIEeGO8bQEpB8bpQ" association="_3Os6wtWhEeGnt_U1oKRe-A">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_92IhwNWhEeGnt_U1oKRe-A" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_92IhwdWhEeGnt_U1oKRe-A"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_oJCrkPBuEeGBOvjqivZe9A" name="finding About" type="_x1wssJOhEeG_Gqo8Ix5ECw" association="_oJD5sPBuEeGBOvjqivZe9A">
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_qaUxsPBuEeGBOvjqivZe9A" value="*"/>
@@ -2862,11 +2890,12 @@ More specifically: The periodic time interval (PIVL_TS) type is used to record r
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_uBNFcIprEeGissEAbjTgHg" value="3"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_uBNFcYprEeGissEAbjTgHg" value="1"/>
       </ownedAttribute>
-      <ownedAttribute xmi:id="_72OxAYpqEeGissEAbjTgHg" name="code" visibility="private" aggregation="composite">
+      <ownedAttribute xmi:id="_72OxAYpqEeGissEAbjTgHg" name="code" visibility="private" isUnique="false" isReadOnly="true" aggregation="composite">
         <ownedComment xmi:id="_YXrYQIprEeGissEAbjTgHg">
           <body>A fixed value that indicates the observation carries protocol deviation information.</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_w1FRUPkDEeGSwNE8SoqTXQ" value="PDtbd"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_72OxAopqEeGissEAbjTgHg" name="effectiveTime" visibility="private" aggregation="composite">
         <ownedComment xmi:id="_jC_rcIprEeGissEAbjTgHg">
@@ -2935,7 +2964,7 @@ More specifically: The periodic time interval (PIVL_TS) type is used to record r
         <type xmi:type="uml:Enumeration" href="../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__zOoCEDcEd6xYZuu1VKCVw"/>
         <defaultValue xmi:type="uml:LiteralString" xmi:id="_vhY0oIsBEeGEXvbgIb1duQ" value="EVN"/>
       </ownedAttribute>
-      <ownedAttribute xmi:id="_qEJI0YsBEeGEXvbgIb1duQ" name="code" visibility="private" aggregation="composite">
+      <ownedAttribute xmi:id="_qEJI0YsBEeGEXvbgIb1duQ" name="code" visibility="private" isUnique="false" aggregation="composite">
         <ownedComment xmi:id="_0a6IUIsBEeGEXvbgIb1duQ">
           <body>The code value indicates that this observation records a clinical event.</body>
         </ownedComment>
@@ -3128,7 +3157,7 @@ More specifically: The periodic time interval (PIVL_TS) type is used to record r
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_W1AaoIsmEeGEXvbgIb1duQ" value="3"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_W1AaoYsmEeGEXvbgIb1duQ" value="1"/>
       </ownedAttribute>
-      <ownedAttribute xmi:id="_RQ3SEYslEeGEXvbgIb1duQ" name="code" visibility="private" aggregation="composite">
+      <ownedAttribute xmi:id="_RQ3SEYslEeGEXvbgIb1duQ" name="code" visibility="private" isUnique="false" aggregation="composite">
         <ownedComment xmi:id="_tVasgIsmEeGEXvbgIb1duQ">
           <body>A coded value that indentifies the measurement, test, or examination whose result is being conveyed.  The verbatim text is placed within the original text property of the CD data type.  [SDTM: EGTESTCD, EGTEST], [SEND: EGTESTCD, EGTEST]</body>
         </ownedComment>
@@ -3399,7 +3428,7 @@ More specifically: The periodic time interval (PIVL_TS) type is used to record r
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_gyi3AI41EeGz0ZL5qt1C9w" value="2"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_gyi3AY41EeGz0ZL5qt1C9w" value="1"/>
       </ownedAttribute>
-      <ownedAttribute xmi:id="_BTazIY40EeGz0ZL5qt1C9w" name="code" visibility="private" aggregation="composite">
+      <ownedAttribute xmi:id="_BTazIY40EeGz0ZL5qt1C9w" name="code" visibility="private" isUnique="false" aggregation="composite">
         <ownedComment xmi:id="_OJ_AcI41EeGz0ZL5qt1C9w">
           <body>A coded value that indentifies the inclusion or exclusion criteria that was not met.  The verbatim text is placed within the original text property of the CD data type.  [SDTM: IETESTCD, IETEST]</body>
         </ownedComment>
@@ -3461,7 +3490,7 @@ More specifically: The periodic time interval (PIVL_TS) type is used to record r
         <type xmi:type="uml:Enumeration" href="../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__yVecEDcEd6xYZuu1VKCVw"/>
         <defaultValue xmi:type="uml:LiteralString" xmi:id="_3HfFII-oEeGSf7-C4p-dMA" value="OBS"/>
       </ownedAttribute>
-      <ownedAttribute xmi:id="_X_zbcI-oEeGSf7-C4p-dMA" name="code" visibility="private" aggregation="composite">
+      <ownedAttribute xmi:id="_X_zbcI-oEeGSf7-C4p-dMA" name="code" visibility="private" isUnique="false" aggregation="composite">
         <ownedComment xmi:id="_-J1e0I-uEeGSf7-C4p-dMA">
           <body>A coded value that identifies the laboratory test result.  The verbatim text is placed within the original text property of the CD data type.  [SEND: LBTESTCD, LBTEST]</body>
         </ownedComment>
@@ -3588,11 +3617,12 @@ More specifically: The periodic time interval (PIVL_TS) type is used to record r
         <type xmi:type="uml:Enumeration" href="../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__zOoCEDcEd6xYZuu1VKCVw"/>
         <defaultValue xmi:type="uml:LiteralString" xmi:id="_Gk7YoI-rEeGSf7-C4p-dMA" value="EVN"/>
       </ownedAttribute>
-      <ownedAttribute xmi:id="_J2PYYI-rEeGSf7-C4p-dMA" name="code" visibility="private" isReadOnly="true" aggregation="composite">
+      <ownedAttribute xmi:id="_J2PYYI-rEeGSf7-C4p-dMA" name="code" visibility="private" isUnique="false" isReadOnly="true" aggregation="composite">
         <ownedComment xmi:id="_OzOSoPBJEeGaQask1xXq5Q">
           <body>A fixed code value to indicate the act is one of specimen collection.</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_HfYCgPkFEeGSwNE8SoqTXQ" value="SCLtbd"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_shuVcY-qEeGSf7-C4p-dMA" name="effectiveTime" visibility="private" aggregation="composite">
         <ownedComment xmi:id="_QXYUsI-sEeGSf7-C4p-dMA">
@@ -3744,11 +3774,12 @@ More specifically: The periodic time interval (PIVL_TS) type is used to record r
             <type xmi:type="uml:Enumeration" href="../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__zOoCEDcEd6xYZuu1VKCVw"/>
             <defaultValue xmi:type="uml:LiteralString" xmi:id="_N-DW8I_aEeG51rA0mhosMg" value="EVN"/>
           </ownedAttribute>
-          <ownedAttribute xmi:id="_2au2kY_ZEeG51rA0mhosMg" name="code" visibility="private" isReadOnly="true" aggregation="composite">
+          <ownedAttribute xmi:id="_2au2kY_ZEeG51rA0mhosMg" name="code" visibility="private" isUnique="false" isReadOnly="true" aggregation="composite">
             <ownedComment xmi:id="_XQoVkI_aEeG51rA0mhosMg">
               <body>A fixed value that indicates the nature of the observation.  It provides information on the relationship of the specmen to the anatomic structure it was drawn from..</body>
             </ownedComment>
             <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
+            <defaultValue xmi:type="uml:LiteralString" xmi:id="_Kh-Q0PkFEeGSwNE8SoqTXQ" value="POTtbd"/>
           </ownedAttribute>
           <ownedAttribute xmi:id="_2au2k4_ZEeG51rA0mhosMg" name="value" visibility="private" aggregation="composite">
             <ownedComment xmi:id="_86pgUI_ZEeG51rA0mhosMg">
@@ -3837,11 +3868,12 @@ More specifically: The periodic time interval (PIVL_TS) type is used to record r
             <type xmi:type="uml:Enumeration" href="../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__zOoCEDcEd6xYZuu1VKCVw"/>
             <defaultValue xmi:type="uml:LiteralString" xmi:id="_SMhTALcgEeGK_ZDUrEhURQ" value="EVN"/>
           </ownedAttribute>
-          <ownedAttribute xmi:id="_SMhS_bcgEeGK_ZDUrEhURQ" name="code" visibility="private" isReadOnly="true" aggregation="composite">
+          <ownedAttribute xmi:id="_SMhS_bcgEeGK_ZDUrEhURQ" name="code" visibility="private" isUnique="false" isReadOnly="true" aggregation="composite">
             <ownedComment xmi:id="_SMhS_rcgEeGK_ZDUrEhURQ">
               <body>The value indicates the nature of the observation.  It provides information on the usability of the specimen.</body>
             </ownedComment>
             <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
+            <defaultValue xmi:type="uml:LiteralString" xmi:id="_WDJN8PkFEeGSwNE8SoqTXQ" value="SUtbd"/>
           </ownedAttribute>
           <ownedAttribute xmi:id="_SMhTAbcgEeGK_ZDUrEhURQ" name="value" visibility="private" aggregation="composite">
             <ownedComment xmi:id="_SMhTArcgEeGK_ZDUrEhURQ">
@@ -3998,7 +4030,7 @@ More specifically: The periodic time interval (PIVL_TS) type is used to record r
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_rczOwI_sEeG51rA0mhosMg" value="2"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_rcz10I_sEeG51rA0mhosMg" value="1"/>
       </ownedAttribute>
-      <ownedAttribute xmi:id="_xzUhYY_rEeG51rA0mhosMg" name="code" visibility="private" aggregation="composite">
+      <ownedAttribute xmi:id="_xzUhYY_rEeG51rA0mhosMg" name="code" visibility="private" isUnique="false" aggregation="composite">
         <ownedComment xmi:id="_KY3eUI_tEeG51rA0mhosMg">
           <body>A coded value that identifies the physical exam finding.  The verbatim text is placed within the original text property of the CD data type.  [SDTM: PETESTCD, PETEST]</body>
         </ownedComment>
@@ -4125,7 +4157,7 @@ More specifically: The periodic time interval (PIVL_TS) type is used to record r
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_UskosJBvEeGHg6ZmktWLJQ" value="2"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_UslPwJBvEeGHg6ZmktWLJQ" value="1"/>
       </ownedAttribute>
-      <ownedAttribute xmi:id="_Mv1boJBvEeGHg6ZmktWLJQ" name="code" visibility="private" aggregation="composite">
+      <ownedAttribute xmi:id="_Mv1boJBvEeGHg6ZmktWLJQ" name="code" visibility="private" isUnique="false" aggregation="composite">
         <ownedComment xmi:id="_AK3CsJBwEeGHg6ZmktWLJQ">
           <body>A coded value that identifies the questionnaire finding.  The verbatim text is placed within the original text property of the CD data type.  [SDTM: QSTESTCD, QSTEST]</body>
         </ownedComment>
@@ -4249,7 +4281,7 @@ More specifically: The periodic time interval (PIVL_TS) type is used to record r
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xM_7QJB6EeGHg6ZmktWLJQ" value="2"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xM_7QZB6EeGHg6ZmktWLJQ" value="1"/>
       </ownedAttribute>
-      <ownedAttribute xmi:id="_SjMyUZB4EeGHg6ZmktWLJQ" name="code" visibility="private" aggregation="composite">
+      <ownedAttribute xmi:id="_SjMyUZB4EeGHg6ZmktWLJQ" name="code" visibility="private" isUnique="false" aggregation="composite">
         <ownedComment xmi:id="_lPSMEJB6EeGHg6ZmktWLJQ">
           <body>A coded value that identifies the subject charateristic.  The verbatim text is placed within the original text property of the CD data type.  [SDTM: SCTESTCD, SCTEST], [SEND: SCTESTCD, SCTEST]</body>
         </ownedComment>
@@ -4354,7 +4386,7 @@ More specifically: The periodic time interval (PIVL_TS) type is used to record r
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_IoIuoMXyEeGra4vMSZIJ6A" value="2"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_IoIuocXyEeGra4vMSZIJ6A" value="1"/>
       </ownedAttribute>
-      <ownedAttribute xmi:id="_Fpw9YJLLEeGM5Pa1LbomZA" name="code" visibility="private" aggregation="composite">
+      <ownedAttribute xmi:id="_Fpw9YJLLEeGM5Pa1LbomZA" name="code" visibility="private" isUnique="false" aggregation="composite">
         <ownedComment xmi:id="_zmtq0JLOEeGM5Pa1LbomZA">
           <body>A coded value that identifies the microbiology finding.  The verbatim text is placed within the original text property of the CD data type.  [SDTM: MBTESTCD, MBTEST. MBLOINC]  If the LOINC code is available it should be used as the base code within the CD type.</body>
         </ownedComment>
@@ -4384,17 +4416,21 @@ More specifically: The periodic time interval (PIVL_TS) type is used to record r
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_CGqT0POTEeGPpLm0F8gjDw" value="1"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_CGqT0fOTEeGPpLm0F8gjDw"/>
       </ownedAttribute>
+      <ownedAttribute xmi:id="_XIJYkNWiEeGnt_U1oKRe-A" name="domain Assignment" type="_ys8oENKGEeGO8bQEpB8bpQ" association="_XIJYktWiEeGnt_U1oKRe-A">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_dAwKsNWiEeGnt_U1oKRe-A" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_dAwKsdWiEeGnt_U1oKRe-A" value="1"/>
+      </ownedAttribute>
       <ownedAttribute xmi:id="_iZBPwJLOEeGM5Pa1LbomZA" name="group Identifier" type="_8Ae3QGn_EeGH0KSwdtr7gA" association="_iZB20ZLOEeGM5Pa1LbomZA">
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_iZB20JLOEeGM5Pa1LbomZA"/>
-      </ownedAttribute>
-      <ownedAttribute xmi:id="_DDBD8JLTEeGM5Pa1LbomZA" name="study Test Performer" type="_dS2eEI_XEeG51rA0mhosMg" association="_DDBrAJLTEeGM5Pa1LbomZA">
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_DDBD8ZLTEeGM5Pa1LbomZA"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_CuskUJLUEeGM5Pa1LbomZA" name="nonPerformanceReason" type="_xvcSQGb_EeGjiJmz4TzZew" association="_CutLYZLUEeGM5Pa1LbomZA">
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_CutLYJLUEeGM5Pa1LbomZA"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_TWGbcJLUEeGM5Pa1LbomZA" name="specimen Information" type="_mLJN4I-qEeGSf7-C4p-dMA" association="_TWHCgJLUEeGM5Pa1LbomZA">
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_TWGbcZLUEeGM5Pa1LbomZA"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_DDBD8JLTEeGM5Pa1LbomZA" name="study Test Performer" type="_dS2eEI_XEeG51rA0mhosMg" association="_DDBrAJLTEeGM5Pa1LbomZA">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_DDBD8ZLTEeGM5Pa1LbomZA"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_SsMm4MUpEeGz4OogUTGcuA" name="interpretationCode" visibility="private" isUnique="false" aggregation="composite">
         <ownedComment xmi:id="_nfIDQMUpEeGz4OogUTGcuA">
@@ -4404,13 +4440,14 @@ More specifically: The periodic time interval (PIVL_TS) type is used to record r
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_i7OaQMUpEeGz4OogUTGcuA" value="2"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_i7OaQcUpEeGz4OogUTGcuA"/>
       </ownedAttribute>
-      <ownedAttribute xmi:id="_VpKSENWiEeGnt_U1oKRe-A" name="comment" type="_FydD4NKIEeGO8bQEpB8bpQ" association="_VpQYsNWiEeGnt_U1oKRe-A">
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_dqnnENWiEeGnt_U1oKRe-A" value="*"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_dqnnEdWiEeGnt_U1oKRe-A"/>
+      <ownedAttribute xmi:id="_zoJ7kNf2EeGtopD3oyn5uA" name="category" type="_sYRD5rZmEeGvx_6yr-0T9g" association="_zoTskNf2EeGtopD3oyn5uA">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_zoJ7kdf2EeGtopD3oyn5uA"/>
       </ownedAttribute>
-      <ownedAttribute xmi:id="_XIJYkNWiEeGnt_U1oKRe-A" name="domain Assignment" type="_ys8oENKGEeGO8bQEpB8bpQ" association="_XIJYktWiEeGnt_U1oKRe-A">
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_dAwKsNWiEeGnt_U1oKRe-A" value="1"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_dAwKsdWiEeGnt_U1oKRe-A" value="1"/>
+      <ownedAttribute xmi:id="_kAISQNgAEeGEv9qe5Ch_sQ" name="sub-Category" type="_EtyC8Nf7EeGEv9qe5Ch_sQ" association="_kAISQtgAEeGEv9qe5Ch_sQ">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_kAISQdgAEeGEv9qe5Ch_sQ"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_CKCp8NpjEeG9W8qc6K-erg" name="result Category" type="_2TrjZLZmEeGvx_6yr-0T9g" association="_CKDRANpjEeG9W8qc6K-erg">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_CKCp8dpjEeG9W8qc6K-erg"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_ZaoYkNWiEeGnt_U1oKRe-A" name="related Record" type="_iMrPgNKNEeGX6v8HTY_PeQ" association="_ZaufMNWiEeGnt_U1oKRe-A">
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_chwhkNWiEeGnt_U1oKRe-A" value="*"/>
@@ -4420,14 +4457,9 @@ More specifically: The periodic time interval (PIVL_TS) type is used to record r
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_b5IbUNWiEeGnt_U1oKRe-A" value="*"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_b5IbUdWiEeGnt_U1oKRe-A"/>
       </ownedAttribute>
-      <ownedAttribute xmi:id="_zoJ7kNf2EeGtopD3oyn5uA" name="category" type="_sYRD5rZmEeGvx_6yr-0T9g" association="_zoTskNf2EeGtopD3oyn5uA">
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_zoJ7kdf2EeGtopD3oyn5uA"/>
-      </ownedAttribute>
-      <ownedAttribute xmi:id="_kAISQNgAEeGEv9qe5Ch_sQ" name="sub-Category" type="_EtyC8Nf7EeGEv9qe5Ch_sQ" association="_kAISQtgAEeGEv9qe5Ch_sQ">
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_kAISQdgAEeGEv9qe5Ch_sQ"/>
-      </ownedAttribute>
-      <ownedAttribute xmi:id="_CKCp8NpjEeG9W8qc6K-erg" name="result Category" type="_2TrjZLZmEeGvx_6yr-0T9g" association="_CKDRANpjEeG9W8qc6K-erg">
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_CKCp8dpjEeG9W8qc6K-erg"/>
+      <ownedAttribute xmi:id="_VpKSENWiEeGnt_U1oKRe-A" name="comment" type="_FydD4NKIEeGO8bQEpB8bpQ" association="_VpQYsNWiEeGnt_U1oKRe-A">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_dqnnENWiEeGnt_U1oKRe-A" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_dqnnEdWiEeGnt_U1oKRe-A"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_wzALAPBuEeGBOvjqivZe9A" name="finding About" type="_x1wssJOhEeG_Gqo8Ix5ECw" association="_wzBZIPBuEeGBOvjqivZe9A">
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_y0s9APBuEeGBOvjqivZe9A" value="*"/>
@@ -4484,7 +4516,7 @@ More specifically: The periodic time interval (PIVL_TS) type is used to record r
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_zXC1KZLkEeGM5Pa1LbomZA" value="3"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_zXC1KpLkEeGM5Pa1LbomZA" value="1"/>
       </ownedAttribute>
-      <ownedAttribute xmi:id="_zXC1JZLkEeGM5Pa1LbomZA" name="code" visibility="private" aggregation="composite">
+      <ownedAttribute xmi:id="_zXC1JZLkEeGM5Pa1LbomZA" name="code" visibility="private" isUnique="false" aggregation="composite">
         <ownedComment xmi:id="_zXC1JpLkEeGM5Pa1LbomZA">
           <body>A coded value that identifies the microbiology susceptibility result.  The verbatim text is placed within the original text property of the CD data type.  [SDTM: MSTESTCD, MSTEST. MSLOINC]  If the LOINC code is available it should be used as the base code within the CD type.</body>
         </ownedComment>
@@ -4613,7 +4645,7 @@ More specifically: The periodic time interval (PIVL_TS) type is used to record r
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_mcctUJLsEeGM5Pa1LbomZA" value="3"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_mcctUZLsEeGM5Pa1LbomZA" value="1"/>
       </ownedAttribute>
-      <ownedAttribute xmi:id="_CwmU5ZLsEeGM5Pa1LbomZA" name="code" visibility="private" aggregation="composite">
+      <ownedAttribute xmi:id="_CwmU5ZLsEeGM5Pa1LbomZA" name="code" visibility="private" isUnique="false" aggregation="composite">
         <ownedComment xmi:id="_CwmU5pLsEeGM5Pa1LbomZA">
           <body>A coded value that identifies the pharmacokinetics result.  The verbatim text is placed within the original text property of the CD data type.  [SDTM: PCTESTCD, PCTEST], [SEND: PCTESTCD, PCTEST].</body>
         </ownedComment>
@@ -4725,7 +4757,7 @@ More specifically: The periodic time interval (PIVL_TS) type is used to record r
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_C5XGsJOZEeGM5Pa1LbomZA" value="1"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_C5XGsZOZEeGM5Pa1LbomZA" value="1"/>
       </ownedAttribute>
-      <ownedAttribute xmi:id="_olGlNZOXEeGM5Pa1LbomZA" name="code" visibility="private" aggregation="composite">
+      <ownedAttribute xmi:id="_olGlNZOXEeGM5Pa1LbomZA" name="code" visibility="private" isUnique="false" aggregation="composite">
         <ownedComment xmi:id="_olGlNpOXEeGM5Pa1LbomZA">
           <body>A coded value that identifies the pharmacokinetics parameter result.  The verbatim text is placed within the original text property of the CD data type.  [SDTM: PPTESTCD, PPTEST], [SEND: PPTESTCD, PPTEST]</body>
         </ownedComment>
@@ -4845,11 +4877,9 @@ More specifically: The periodic time interval (PIVL_TS) type is used to record r
         <type xmi:type="uml:Enumeration" href="../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__yVecEDcEd6xYZuu1VKCVw"/>
         <defaultValue xmi:type="uml:LiteralString" xmi:id="_R9SCwJOiEeG_Gqo8Ix5ECw" value="OBS"/>
       </ownedAttribute>
-      <ownedAttribute xmi:id="_2HXEwZOhEeG_Gqo8Ix5ECw" name="code" visibility="private" aggregation="composite">
-        <ownedComment xmi:id="_sA2SUJOiEeG_Gqo8Ix5ECw">
-          <body>A coded value that identifies the findings about result.  The verbatim text is placed within the original text property of the CD data type.  [SDTM: FATESTCD, FATEST]</body>
-        </ownedComment>
-        <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
+      <ownedAttribute xmi:id="_2HXEyJOhEeG_Gqo8Ix5ECw" name="moodCode" visibility="private" isReadOnly="true">
+        <type xmi:type="uml:Enumeration" href="../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__zOoCEDcEd6xYZuu1VKCVw"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_QTGY4JOiEeG_Gqo8Ix5ECw" value="EVN"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_2HXEwpOhEeG_Gqo8Ix5ECw" name="effectiveTime" visibility="private" aggregation="composite">
         <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_QYeW4D5-Ed6cla2oXsPtlA"/>
@@ -4864,10 +4894,6 @@ More specifically: The periodic time interval (PIVL_TS) type is used to record r
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_cKL7oJOiEeG_Gqo8Ix5ECw" value="2"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_cKL7oZOiEeG_Gqo8Ix5ECw" value="1"/>
       </ownedAttribute>
-      <ownedAttribute xmi:id="_2HXEyJOhEeG_Gqo8Ix5ECw" name="moodCode" visibility="private" isReadOnly="true">
-        <type xmi:type="uml:Enumeration" href="../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__zOoCEDcEd6xYZuu1VKCVw"/>
-        <defaultValue xmi:type="uml:LiteralString" xmi:id="_QTGY4JOiEeG_Gqo8Ix5ECw" value="EVN"/>
-      </ownedAttribute>
       <ownedAttribute xmi:id="_2HXEyZOhEeG_Gqo8Ix5ECw" name="statusCode" visibility="private" aggregation="composite">
         <ownedComment xmi:id="_la1gQJOlEeG_Gqo8Ix5ECw">
           <body>Used to indicate whether or not a measurement has been performed.  [SDTM: FASTAT]</body>
@@ -4876,13 +4902,11 @@ More specifically: The periodic time interval (PIVL_TS) type is used to record r
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_2HXEypOhEeG_Gqo8Ix5ECw" value="1"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_2HXEy5OhEeG_Gqo8Ix5ECw"/>
       </ownedAttribute>
-      <ownedAttribute xmi:id="_2HXr0JOhEeG_Gqo8Ix5ECw" name="targetSiteCode" visibility="private" aggregation="composite">
-        <ownedComment xmi:id="_0A8OAJOlEeG_Gqo8Ix5ECw">
-          <body>Used to specify the location of a clinical evaluation.  [SDTM: FALOC]</body>
+      <ownedAttribute xmi:id="_2HXEwZOhEeG_Gqo8Ix5ECw" name="code" visibility="private" aggregation="composite">
+        <ownedComment xmi:id="_sA2SUJOiEeG_Gqo8Ix5ECw">
+          <body>A coded value that identifies the findings about result.  The verbatim text is placed within the original text property of the CD data type.  [SDTM: FATESTCD, FATEST]</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_z5mS0PN_EeGhE7rXK2gWNQ" value="1"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_z5mS0fN_EeGhE7rXK2gWNQ"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_2HXr05OhEeG_Gqo8Ix5ECw" name="value" visibility="private" aggregation="composite">
         <ownedComment xmi:id="_YzlE0JOlEeG_Gqo8Ix5ECw">
@@ -4892,17 +4916,28 @@ More specifically: The periodic time interval (PIVL_TS) type is used to record r
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_aQ_eAJOlEeG_Gqo8Ix5ECw" value="1"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_aRAFEJOlEeG_Gqo8Ix5ECw" value="1"/>
       </ownedAttribute>
-      <ownedAttribute xmi:id="_03tlUJOiEeG_Gqo8Ix5ECw" name="group Identifier" type="_8Ae3QGn_EeGH0KSwdtr7gA" association="_03tlUpOiEeG_Gqo8Ix5ECw">
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_03tlUZOiEeG_Gqo8Ix5ECw"/>
+      <ownedAttribute xmi:id="_2HXr0JOhEeG_Gqo8Ix5ECw" name="targetSiteCode" visibility="private" aggregation="composite">
+        <ownedComment xmi:id="_0A8OAJOlEeG_Gqo8Ix5ECw">
+          <body>Used to specify the location of a clinical evaluation.  [SDTM: FALOC]</body>
+        </ownedComment>
+        <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_z5mS0PN_EeGhE7rXK2gWNQ" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_z5mS0fN_EeGhE7rXK2gWNQ"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_nli94O62EeGmHpfciYwK5Q" name="domain Assignment" type="_ys8oENKGEeGO8bQEpB8bpQ" association="_nlkMAO62EeGmHpfciYwK5Q">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_nljk8O62EeGmHpfciYwK5Q"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_duMaIJOkEeG_Gqo8Ix5ECw" name="findingObservationObjectAssociation" type="_FKvH4JOjEeG_Gqo8Ix5ECw" association="_duNBMJOkEeG_Gqo8Ix5ECw">
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_duMaIZOkEeG_Gqo8Ix5ECw"/>
       </ownedAttribute>
-      <ownedAttribute xmi:id="_pP000JOlEeG_Gqo8Ix5ECw" name="non Performance Reason" type="_xvcSQGb_EeGjiJmz4TzZew" association="_pP1b4JOlEeG_Gqo8Ix5ECw">
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_pP000ZOlEeG_Gqo8Ix5ECw"/>
+      <ownedAttribute xmi:id="_03tlUJOiEeG_Gqo8Ix5ECw" name="group Identifier" type="_8Ae3QGn_EeGH0KSwdtr7gA" association="_03tlUpOiEeG_Gqo8Ix5ECw">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_03tlUZOiEeG_Gqo8Ix5ECw"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_wGWLQJOmEeG_Gqo8Ix5ECw" name="data Collection" type="_YOwMEIjGEeGwjb3wu_tBLA" association="_wGWyUJOmEeG_Gqo8Ix5ECw">
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_wGWLQZOmEeG_Gqo8Ix5ECw"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_pP000JOlEeG_Gqo8Ix5ECw" name="non Performance Reason" type="_xvcSQGb_EeGjiJmz4TzZew" association="_pP1b4JOlEeG_Gqo8Ix5ECw">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_pP000ZOlEeG_Gqo8Ix5ECw"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_lIhRIJO5EeG_Gqo8Ix5ECw" name="study Finding Evaluator" type="_wllcQJO3EeG_Gqo8Ix5ECw" association="_lIh4MJO5EeG_Gqo8Ix5ECw">
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_lIhRIZO5EeG_Gqo8Ix5ECw"/>
@@ -4920,9 +4955,6 @@ More specifically: The periodic time interval (PIVL_TS) type is used to record r
       </ownedAttribute>
       <ownedAttribute xmi:id="_hvEggNf-EeGEv9qe5Ch_sQ" name="sub-Category" type="_EtyC8Nf7EeGEv9qe5Ch_sQ" association="_hvEggtf-EeGEv9qe5Ch_sQ">
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_hvEggdf-EeGEv9qe5Ch_sQ"/>
-      </ownedAttribute>
-      <ownedAttribute xmi:id="_nli94O62EeGmHpfciYwK5Q" name="domain Assignment" type="_ys8oENKGEeGO8bQEpB8bpQ" association="_nlkMAO62EeGmHpfciYwK5Q">
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_nljk8O62EeGmHpfciYwK5Q"/>
       </ownedAttribute>
       <nestedClassifier xmi:type="uml:Class" xmi:id="_FKvH4JOjEeG_Gqo8Ix5ECw" name="findingObservationObjectAssociation">
         <ownedComment xmi:id="_ugDDMJOjEeG_Gqo8Ix5ECw">
@@ -4962,8 +4994,8 @@ More specifically: The periodic time interval (PIVL_TS) type is used to record r
               <body>A coded value to identify the concept which is considered to be the object of the finding about observation.  [SDTM: FAOBJ]</body>
             </ownedComment>
             <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
-            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_B1zW9JOkEeG_Gqo8Ix5ECw" value="*"/>
-            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_B1zW9ZOkEeG_Gqo8Ix5ECw"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_FFEgEPkBEeGSwNE8SoqTXQ" value="1"/>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_FFEgEfkBEeGSwNE8SoqTXQ" value="1"/>
           </ownedAttribute>
         </nestedClassifier>
       </nestedClassifier>
@@ -5029,7 +5061,7 @@ More specifically: The periodic time interval (PIVL_TS) type is used to record r
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_wllcS5O3EeG_Gqo8Ix5ECw"/>
           <defaultValue xmi:type="uml:LiteralString" xmi:id="_wllcTJO3EeG_Gqo8Ix5ECw" value="ASSIGNED"/>
         </ownedAttribute>
-        <ownedAttribute xmi:id="_TSzMwJO5EeG_Gqo8Ix5ECw" name="code" visibility="private" aggregation="composite">
+        <ownedAttribute xmi:id="_TSzMwJO5EeG_Gqo8Ix5ECw" name="code" visibility="private" isUnique="false" aggregation="composite">
           <ownedComment xmi:id="_XDMVMJO5EeG_Gqo8Ix5ECw">
             <body>The role of the person providing the evaluation.  This is used only for results that are subjective. [SDTM: PEEVAL, FAEVAL], [SEND: CLEVAL, DDEVAL, MAEVAL, MIEVAL, PMEVAL, EGEVAL], [Study Data Tabulation Model: -EVAL]</body>
           </ownedComment>
@@ -5074,7 +5106,7 @@ More specifically: The periodic time interval (PIVL_TS) type is used to record r
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ilB0EJSSEeGlSMYQDPvGqQ" value="3"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ilCbIJSSEeGlSMYQDPvGqQ" value="1"/>
       </ownedAttribute>
-      <ownedAttribute xmi:id="_J6K5UJSREeGlSMYQDPvGqQ" name="code" visibility="private" aggregation="composite">
+      <ownedAttribute xmi:id="_J6K5UJSREeGlSMYQDPvGqQ" name="code" visibility="private" isUnique="false" aggregation="composite">
         <ownedComment xmi:id="_x-_AoJSSEeGlSMYQDPvGqQ">
           <body>A coded value that indentifies the drug accountability item whose value is being conveyed.  The verbatim text is placed within the original text property of the CD data type.  [SDTM: DATESTCD, DATEST]</body>
         </ownedComment>
@@ -5182,12 +5214,13 @@ More specifically: The periodic time interval (PIVL_TS) type is used to record r
         <redefinedProperty href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_BLZhcEo_Ed6c3qsAxlFHaQ"/>
         <defaultValue xmi:type="uml:LiteralString" xmi:id="_1TzaeJk_EeGGPbk7a3RIVg" value="EVN"/>
       </ownedAttribute>
-      <ownedAttribute xmi:id="_1TzadZk_EeGGPbk7a3RIVg" name="code" visibility="private" isReadOnly="true" aggregation="composite">
+      <ownedAttribute xmi:id="_1TzadZk_EeGGPbk7a3RIVg" name="code" visibility="private" isUnique="false" isReadOnly="true" aggregation="composite">
         <ownedComment xmi:id="_1Tzadpk_EeGGPbk7a3RIVg">
           <body>A fixed value that indicates the observation captures the actual study day for an event.</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
         <redefinedProperty href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_WEYp4Eo8Ed6c3qsAxlFHaQ"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_gN2TAPg3EeGu38MuASg7ew" value="STPtbd"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_1TzaeZk_EeGGPbk7a3RIVg" name="value" visibility="private" aggregation="composite">
         <ownedComment xmi:id="_1Tzaepk_EeGGPbk7a3RIVg">
@@ -5286,7 +5319,7 @@ More specifically: The periodic time interval (PIVL_TS) type is used to record r
           <instance xmi:type="uml:EnumerationLiteral" href="../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__yeW30DcEd6xYZuu1VKCVw"/>
         </defaultValue>
       </ownedAttribute>
-      <ownedAttribute xmi:id="_YK0sh5oYEeG78ZMLtGK0RQ" name="code" visibility="private" aggregation="composite">
+      <ownedAttribute xmi:id="_YK0sh5oYEeG78ZMLtGK0RQ" name="code" visibility="private" isUnique="false" isReadOnly="true" aggregation="composite">
         <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_Z1EGIDxaEd6JwqSGecoePg"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_YK0siJoYEeG78ZMLtGK0RQ" value="1"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_YK0siZoYEeG78ZMLtGK0RQ" value="1"/>
@@ -5850,6 +5883,9 @@ More specifically: The periodic time interval (PIVL_TS) type is used to record r
       <ownedAttribute xmi:id="_gpCLEO4vEeGUDPBPrXZ7kg" name="sub-Category" type="_EtyC8Nf7EeGEv9qe5Ch_sQ" association="_gpDZMO4vEeGUDPBPrXZ7kg">
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_gpCLEe4vEeGUDPBPrXZ7kg"/>
       </ownedAttribute>
+      <ownedAttribute xmi:id="_DbPwoPkDEeGSwNE8SoqTXQ" name="event Duration" type="_-HQWMPj8EeG7pMUQbTahtA" association="_DbPwovkDEeGSwNE8SoqTXQ">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_DbPwofkDEeGSwNE8SoqTXQ"/>
+      </ownedAttribute>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_6IIqEJoZEeG78ZMLtGK0RQ" name="Non-human Disposition">
       <ownedComment xmi:id="_6IIqEZoZEeG78ZMLtGK0RQ">
@@ -5874,7 +5910,7 @@ More specifically: The periodic time interval (PIVL_TS) type is used to record r
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_1ZwbQKnDEeGxNZJ-RFOuKQ" value="1"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_1ZwbQanDEeGxNZJ-RFOuKQ" value="1"/>
       </ownedAttribute>
-      <ownedAttribute xmi:id="_6IIqFZoZEeG78ZMLtGK0RQ" name="code" visibility="private" aggregation="composite">
+      <ownedAttribute xmi:id="_6IIqFZoZEeG78ZMLtGK0RQ" name="code" visibility="private" isUnique="false" aggregation="composite">
         <ownedComment xmi:id="_6IIqFpoZEeG78ZMLtGK0RQ">
           <body>A code drawn from a controlled terminology for the event or protocol milestone.  The verbatim name for the term must be captured as well.  [SEND: DSTERM; DSDECOD]</body>
         </ownedComment>
@@ -5934,7 +5970,7 @@ More specifically: The periodic time interval (PIVL_TS) type is used to record r
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_jQ-2uZoaEeG78ZMLtGK0RQ" value="2"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_jQ-2upoaEeG78ZMLtGK0RQ" value="1"/>
       </ownedAttribute>
-      <ownedAttribute xmi:id="_jQ-2tZoaEeG78ZMLtGK0RQ" name="code" visibility="private" aggregation="composite">
+      <ownedAttribute xmi:id="_jQ-2tZoaEeG78ZMLtGK0RQ" name="code" visibility="private" isUnique="false" aggregation="composite">
         <ownedComment xmi:id="_jQ-2tpoaEeG78ZMLtGK0RQ">
           <body>A coded value that identifies the laboratory test result.  The verbatim text is placed within the original text property of the CD data type.  [SDTM: LBTESTCD, LBTEST. LBLOINC]  If the LOINC code is available it should be situated using the translation property within the CD type.</body>
         </ownedComment>
@@ -6046,7 +6082,7 @@ More specifically: The periodic time interval (PIVL_TS) type is used to record r
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_av-cEKnKEeGxNZJ-RFOuKQ" value="1"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_av-cEanKEeGxNZJ-RFOuKQ" value="1"/>
       </ownedAttribute>
-      <ownedAttribute xmi:id="_XO9Z0ZobEeG78ZMLtGK0RQ" name="code" visibility="private" aggregation="composite">
+      <ownedAttribute xmi:id="_XO9Z0ZobEeG78ZMLtGK0RQ" name="code" visibility="private" isUnique="false" aggregation="composite">
         <ownedComment xmi:id="_PLiIgKnKEeGxNZJ-RFOuKQ">
           <body>A value to indicate the nature of the observation recording the subject's body weight. Use the code property of the CD type to capture the test code, and the original text property to capture a verbatim description of the test.  [SEND: BWTESTCD, BWTEST]</body>
         </ownedComment>
@@ -6128,7 +6164,7 @@ More specifically: The periodic time interval (PIVL_TS) type is used to record r
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_fR_b8LTREeGSobMv4aV6Lw" value="1"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_fR_b8bTREeGSobMv4aV6Lw" value="1"/>
       </ownedAttribute>
-      <ownedAttribute xmi:id="_e9VaxJobEeG78ZMLtGK0RQ" name="code" visibility="private" aggregation="composite">
+      <ownedAttribute xmi:id="_e9VaxJobEeG78ZMLtGK0RQ" name="code" visibility="private" isUnique="false" aggregation="composite">
         <ownedComment xmi:id="_gu3SQLWEEeGLXdg8xIiGrA">
           <body>A value to indicate the nature of the observation recording the subject's the subject's change in weight. Use the code property of the CD type to capture the test code, and the original text property to capture a verbatim description of the test. [SEND: BGTESTCD, BGTEST]</body>
         </ownedComment>
@@ -6337,7 +6373,7 @@ More specifically: The periodic time interval (PIVL_TS) type is used to record r
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_srOG4LTREeGSobMv4aV6Lw" value="1"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_srOG4bTREeGSobMv4aV6Lw" value="1"/>
       </ownedAttribute>
-      <ownedAttribute xmi:id="_voyEZJobEeG78ZMLtGK0RQ" name="code" visibility="private" isReadOnly="true" aggregation="composite">
+      <ownedAttribute xmi:id="_voyEZJobEeG78ZMLtGK0RQ" name="code" visibility="private" isUnique="false" isReadOnly="true" aggregation="composite">
         <ownedComment xmi:id="_LAqr4LcCEeGK_ZDUrEhURQ">
           <body>A value to indicate the observation records diagnosis information assoicated with the subject's death.  Note, the SEND instruction is for the value to always equal &quot;death diagnosis&quot;. [SEND: DDTESTCD, DDTEST]</body>
         </ownedComment>
@@ -6401,7 +6437,7 @@ More specifically: The periodic time interval (PIVL_TS) type is used to record r
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xmnp4LTREeGSobMv4aV6Lw" value="1"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xmnp4bTREeGSobMv4aV6Lw" value="1"/>
       </ownedAttribute>
-      <ownedAttribute xmi:id="__eYEFJobEeG78ZMLtGK0RQ" name="code" visibility="private" aggregation="composite">
+      <ownedAttribute xmi:id="__eYEFJobEeG78ZMLtGK0RQ" name="code" visibility="private" isUnique="false" aggregation="composite">
         <ownedComment xmi:id="_MaGVQLcIEeGK_ZDUrEhURQ">
           <body>A value to indicate the particular food and water consumption related observation. [SEND: FWTESTCD, FWTEST]</body>
         </ownedComment>
@@ -6483,7 +6519,7 @@ More specifically: The periodic time interval (PIVL_TS) type is used to record r
         <type xmi:type="uml:Enumeration" href="../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__zOoCEDcEd6xYZuu1VKCVw"/>
         <defaultValue xmi:type="uml:LiteralString" xmi:id="_6XpaoLTREeGSobMv4aV6Lw" value="EVN"/>
       </ownedAttribute>
-      <ownedAttribute xmi:id="_Lrb21JocEeG78ZMLtGK0RQ" name="code" visibility="private" aggregation="composite">
+      <ownedAttribute xmi:id="_Lrb21JocEeG78ZMLtGK0RQ" name="code" visibility="private" isUnique="false" aggregation="composite">
         <ownedComment xmi:id="_YNADILcqEeGbTfv2pIp07Q">
           <body>A value to indicate the particular macroscopic finding observation. [SEND: MATESTCD, MATEST]</body>
         </ownedComment>
@@ -6583,7 +6619,7 @@ More specifically: The periodic time interval (PIVL_TS) type is used to record r
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_KNPaULTSEeGSobMv4aV6Lw" value="1"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_KNPaUbTSEeGSobMv4aV6Lw" value="1"/>
       </ownedAttribute>
-      <ownedAttribute xmi:id="_mxZXhJocEeG78ZMLtGK0RQ" name="code" visibility="private" aggregation="composite">
+      <ownedAttribute xmi:id="_mxZXhJocEeG78ZMLtGK0RQ" name="code" visibility="private" isUnique="false" aggregation="composite">
         <ownedComment xmi:id="_VGqjULc1EeGbTfv2pIp07Q">
           <body>A value to indicate the particular microscopic finding observation. [SEND: MITESTCD, MITEST]</body>
         </ownedComment>
@@ -6630,6 +6666,10 @@ More specifically: The periodic time interval (PIVL_TS) type is used to record r
       <ownedAttribute xmi:id="_BLwTsLlcEeGiKOTkJtG-hw" name="event Severity" type="_nrFiEGoYEeGH0KSwdtr7gA" association="_BLwTsrlcEeGiKOTkJtG-hw">
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_BLwTsblcEeGiKOTkJtG-hw"/>
       </ownedAttribute>
+      <ownedAttribute xmi:id="_D31wENWjEeGnt_U1oKRe-A" name="related Record" type="_iMrPgNKNEeGX6v8HTY_PeQ" association="_D31wEtWjEeGnt_U1oKRe-A">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_HStUcNWjEeGnt_U1oKRe-A" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_HStUcdWjEeGnt_U1oKRe-A"/>
+      </ownedAttribute>
       <ownedAttribute xmi:id="_x35kkLlaEeGiKOTkJtG-hw" name="study Test Performer" type="_dS2eEI_XEeG51rA0mhosMg" association="_x35kkrlaEeGiKOTkJtG-hw">
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_x35kkblaEeGiKOTkJtG-hw"/>
       </ownedAttribute>
@@ -6647,16 +6687,12 @@ More specifically: The periodic time interval (PIVL_TS) type is used to record r
       <ownedAttribute xmi:id="_rAYxUNpjEeG9W8qc6K-erg" name="result Category" type="_2TrjZLZmEeGvx_6yr-0T9g" association="_rAZ_cNpjEeG9W8qc6K-erg">
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_rAZYYNpjEeG9W8qc6K-erg"/>
       </ownedAttribute>
-      <ownedAttribute xmi:id="_D31wENWjEeGnt_U1oKRe-A" name="related Record" type="_iMrPgNKNEeGX6v8HTY_PeQ" association="_D31wEtWjEeGnt_U1oKRe-A">
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_HStUcNWjEeGnt_U1oKRe-A" value="*"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_HStUcdWjEeGnt_U1oKRe-A"/>
+      <ownedAttribute xmi:id="_5r5lsNpyEeGwZdMPbuS7rw" name="death Relationship" type="_P_ecgLc0EeGbTfv2pIp07Q" association="_5r6z0NpyEeGwZdMPbuS7rw">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_5r6MwNpyEeGwZdMPbuS7rw"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_Fvbj0NWjEeGnt_U1oKRe-A" name="supplemental Value" type="_MltKQNKREeGX6v8HTY_PeQ" association="_Fvbj0tWjEeGnt_U1oKRe-A">
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_G2MXkNWjEeGnt_U1oKRe-A" value="*"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_G2MXkdWjEeGnt_U1oKRe-A"/>
-      </ownedAttribute>
-      <ownedAttribute xmi:id="_5r5lsNpyEeGwZdMPbuS7rw" name="death Relationship" type="_P_ecgLc0EeGbTfv2pIp07Q" association="_5r6z0NpyEeGwZdMPbuS7rw">
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_5r6MwNpyEeGwZdMPbuS7rw"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_AxGBkNWjEeGnt_U1oKRe-A" name="comment" type="_FydD4NKIEeGO8bQEpB8bpQ" association="_AxMIMNWjEeGnt_U1oKRe-A">
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_IhATkNWjEeGnt_U1oKRe-A" value="*"/>
@@ -6686,7 +6722,7 @@ More specifically: The periodic time interval (PIVL_TS) type is used to record r
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_3uX10LTSEeGSobMv4aV6Lw" value="1"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_3uX10bTSEeGSobMv4aV6Lw" value="1"/>
       </ownedAttribute>
-      <ownedAttribute xmi:id="_0P_DlJocEeG78ZMLtGK0RQ" name="code" visibility="private" aggregation="composite">
+      <ownedAttribute xmi:id="_0P_DlJocEeG78ZMLtGK0RQ" name="code" visibility="private" isUnique="false" aggregation="composite">
         <ownedComment xmi:id="_aFmFoLldEeGiKOTkJtG-hw">
           <body>A value to indicate the particular organ measurement observation. [SEND: OMTESTCD, OMTEST]</body>
         </ownedComment>
@@ -6766,7 +6802,7 @@ More specifically: The periodic time interval (PIVL_TS) type is used to record r
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_2EmboLTSEeGSobMv4aV6Lw" value="1"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_2EmbobTSEeGSobMv4aV6Lw" value="1"/>
       </ownedAttribute>
-      <ownedAttribute xmi:id="_0rD0xJrGEeGpk_Q1ImbEig" name="code" visibility="private" aggregation="composite">
+      <ownedAttribute xmi:id="_0rD0xJrGEeGpk_Q1ImbEig" name="code" visibility="private" isUnique="false" aggregation="composite">
         <ownedComment xmi:id="_7IudcLlfEeGiKOTkJtG-hw">
           <body>A value to indicate the particular palpable observation. [SEND: PMTESTCD, PMTEST]</body>
         </ownedComment>
@@ -6851,7 +6887,7 @@ More specifically: The periodic time interval (PIVL_TS) type is used to record r
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_55LggLTSEeGSobMv4aV6Lw" value="1"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_55LggbTSEeGSobMv4aV6Lw" value="1"/>
       </ownedAttribute>
-      <ownedAttribute xmi:id="_1B8qxJrGEeGpk_Q1ImbEig" name="code" visibility="private" aggregation="composite">
+      <ownedAttribute xmi:id="_1B8qxJrGEeGpk_Q1ImbEig" name="code" visibility="private" isUnique="false" aggregation="composite">
         <ownedComment xmi:id="_-Tpa4LobEeGWIctMxnxaiQ">
           <body>A value to indicate the particular tumor finding observation. [SEND: TFTESTCD, TFTEST]</body>
         </ownedComment>
@@ -6977,11 +7013,12 @@ More specifically: The periodic time interval (PIVL_TS) type is used to record r
         <type xmi:type="uml:Enumeration" href="../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__zOoCEDcEd6xYZuu1VKCVw"/>
         <defaultValue xmi:type="uml:LiteralString" xmi:id="_WlICsPCLEeGh3MBMz4mmQA" value="EVN"/>
       </ownedAttribute>
-      <ownedAttribute xmi:id="_1gqABJrGEeGpk_Q1ImbEig" name="code" visibility="private" aggregation="composite">
+      <ownedAttribute xmi:id="_1gqABJrGEeGpk_Q1ImbEig" name="code" visibility="private" isUnique="false" isReadOnly="true" aggregation="composite">
         <ownedComment xmi:id="_5BuEoPCJEeGh3MBMz4mmQA">
           <body>A code to indicate the act of joining a group of subjects into a pool for the purpose of structuring reporting from the trial.</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_JpU8IPkGEeGSwNE8SoqTXQ" value="SPtbd"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_1gqABZrGEeGpk_Q1ImbEig" name="id" visibility="private" aggregation="composite">
         <ownedComment xmi:id="_7Yvb0PCIEeGh3MBMz4mmQA">
@@ -7059,13 +7096,14 @@ More specifically: The periodic time interval (PIVL_TS) type is used to record r
           <instance xmi:type="uml:EnumerationLiteral" href="../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__yeW30DcEd6xYZuu1VKCVw"/>
         </defaultValue>
       </ownedAttribute>
-      <ownedAttribute xmi:id="_uARO1KaaEeGlCYcoCUv7-w" name="code" visibility="private" aggregation="composite">
+      <ownedAttribute xmi:id="_uARO1KaaEeGlCYcoCUv7-w" name="code" visibility="private" isUnique="false" isReadOnly="true" aggregation="composite">
         <ownedComment xmi:id="_Zf1u0N2cEeGlbbwWT3IpKA">
           <body>A code to indicate the nature of the section.  This code should indicate the primary domain association for the section.</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_Z1EGIDxaEd6JwqSGecoePg"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_uARO1aaaEeGlCYcoCUv7-w" value="1"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_uARO1qaaEeGlCYcoCUv7-w"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_P6KIYPkDEeGSwNE8SoqTXQ" value="NHStbd"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_7FeBsKmTEeGQftsict2bpw" name="non-human Subject Demographics" type="_ohZpkKmTEeGQftsict2bpw" association="_7FeowamTEeGQftsict2bpw">
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_bLsxsPE6EeG4b6eeWwJjVg" value="1"/>
@@ -7194,7 +7232,7 @@ More specifically: The periodic time interval (PIVL_TS) type is used to record r
         <redefinedProperty href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_Z5I4MErcEd6FXKclYGEDCw"/>
         <defaultValue xmi:type="uml:LiteralString" xmi:id="_ohZpnKmTEeGQftsict2bpw" value="EVN"/>
       </ownedAttribute>
-      <ownedAttribute xmi:id="_ohZplamTEeGQftsict2bpw" name="code" visibility="private" aggregation="composite">
+      <ownedAttribute xmi:id="_ohZplamTEeGQftsict2bpw" name="code" visibility="private" isUnique="false" isReadOnly="true" aggregation="composite">
         <ownedComment xmi:id="_ohZplqmTEeGQftsict2bpw">
           <body>Indicates that the contained information includes subject demographic data that is not acommodated by the record target participation.</body>
         </ownedComment>
@@ -7202,6 +7240,7 @@ More specifically: The periodic time interval (PIVL_TS) type is used to record r
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ohZpl6mTEeGQftsict2bpw" value="1"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ohZpmKmTEeGQftsict2bpw" value="1"/>
         <redefinedProperty href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_JKfJkErcEd6FXKclYGEDCw"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_TDmlkPkDEeGSwNE8SoqTXQ" value="DMGtbd"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_IzqTMKmYEeGQftsict2bpw" name="strainAssociation" type="_r5JWkKmVEeGQftsict2bpw" association="_IzqTMqmYEeGQftsict2bpw">
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_IzqTMamYEeGQftsict2bpw"/>
@@ -7633,11 +7672,12 @@ More specifically: The periodic time interval (PIVL_TS) type is used to record r
         <type xmi:type="uml:Enumeration" href="../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__zOoCEDcEd6xYZuu1VKCVw"/>
         <defaultValue xmi:type="uml:LiteralString" xmi:id="_mZNiyLWAEeGLXdg8xIiGrA" value="EVN"/>
       </ownedAttribute>
-      <ownedAttribute xmi:id="_mZNixbWAEeGLXdg8xIiGrA" name="code" visibility="private" isReadOnly="true" aggregation="composite">
+      <ownedAttribute xmi:id="_mZNixbWAEeGLXdg8xIiGrA" name="code" visibility="private" isUnique="false" isReadOnly="true" aggregation="composite">
         <ownedComment xmi:id="_mZNixrWAEeGLXdg8xIiGrA">
           <body>A code value that indicates the observation indicates the reason for excluding a value from calculations.</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_aCGVAPbPEeGXHJw8CF46KA" value="EXCtbd"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_mZNiybWAEeGLXdg8xIiGrA" name="value" visibility="private" aggregation="composite">
         <ownedComment xmi:id="_mZNiyrWAEeGLXdg8xIiGrA">
@@ -7872,6 +7912,9 @@ More specifically: The periodic time interval (PIVL_TS) type is used to record r
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_0EuvkPBwEeGBOvjqivZe9A" value="*"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_0EuvkfBwEeGBOvjqivZe9A"/>
       </ownedAttribute>
+      <ownedAttribute xmi:id="_w57qMPkFEeGSwNE8SoqTXQ" name="event Duration" type="_-HQWMPj8EeG7pMUQbTahtA" association="_w57qMvkFEeGSwNE8SoqTXQ">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_w57qMfkFEeGSwNE8SoqTXQ"/>
+      </ownedAttribute>
       <nestedClassifier xmi:type="uml:Class" xmi:id="_YbytrLZmEeGvx_6yr-0T9g" name="elementOrderAssociation">
         <ownedComment xmi:id="_YbytrbZmEeGvx_6yr-0T9g">
           <body>INLINE</body>
@@ -8060,6 +8103,9 @@ More specifically: The periodic time interval (PIVL_TS) type is used to record r
       <ownedAttribute xmi:id="_jegkMPBwEeGBOvjqivZe9A" name="finding About" type="_x1wssJOhEeG_Gqo8Ix5ECw" association="_jehyUPBwEeGBOvjqivZe9A">
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_lAJWEPBwEeGBOvjqivZe9A" value="*"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_lAJ9IPBwEeGBOvjqivZe9A"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_pfCl8PkFEeGSwNE8SoqTXQ" name="event Duration" type="_-HQWMPj8EeG7pMUQbTahtA" association="_pfCl8vkFEeGSwNE8SoqTXQ">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_pfCl8fkFEeGSwNE8SoqTXQ"/>
       </ownedAttribute>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_2Tri4LZmEeGvx_6yr-0T9g" name="Study Subject Finding">
@@ -8843,7 +8889,7 @@ More specifically: The periodic time interval (PIVL_TS) type is used to record r
         <type xmi:type="uml:Enumeration" href="../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__zOntkDcEd6xYZuu1VKCVw"/>
         <defaultValue xmi:type="uml:LiteralString" xmi:id="_1lAuwOJHEeGNSt5eWAxryA" value="ACT"/>
       </ownedAttribute>
-      <ownedAttribute xmi:id="_z2n6UeJHEeGNSt5eWAxryA" name="code" visibility="private" aggregation="composite">
+      <ownedAttribute xmi:id="_z2n6UeJHEeGNSt5eWAxryA" name="code" visibility="private" isUnique="false" aggregation="composite">
         <ownedComment xmi:id="_C312wOJIEeGNSt5eWAxryA">
           <body>Designation of the SDTM or SEND domain that a data instance is assigned to.</body>
         </ownedComment>
@@ -8878,13 +8924,14 @@ More specifically: The periodic time interval (PIVL_TS) type is used to record r
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_u-H7ANKIEeGO8bQEpB8bpQ" value="1"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_u-H7AdKIEeGO8bQEpB8bpQ" value="1"/>
       </ownedAttribute>
-      <ownedAttribute xmi:id="_NX5LQdKIEeGO8bQEpB8bpQ" name="code" visibility="private" aggregation="composite">
+      <ownedAttribute xmi:id="_NX5LQdKIEeGO8bQEpB8bpQ" name="code" visibility="private" isUnique="false" isReadOnly="true" aggregation="composite">
         <ownedComment xmi:id="_dczucNKKEeGO8bQEpB8bpQ">
           <body>The code value indicates that this observation is a comment.</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_aq4ZYNKKEeGO8bQEpB8bpQ" value="1"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_aq4ZYdKKEeGO8bQEpB8bpQ" value="1"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_ATUTMPj_EeG7pMUQbTahtA" value="C49569"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_NX5LQtKIEeGO8bQEpB8bpQ" name="effectiveTime" visibility="private" aggregation="composite">
         <ownedComment xmi:id="_fJRQQNKKEeGO8bQEpB8bpQ">
@@ -8995,11 +9042,12 @@ More specifically: The periodic time interval (PIVL_TS) type is used to record r
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_2gb8APB7EeGn3-EIJQy-pA" value="1"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_2ge_UPB7EeGn3-EIJQy-pA" value="1"/>
       </ownedAttribute>
-      <ownedAttribute xmi:id="_nUk9cdKNEeGX6v8HTY_PeQ" name="code" visibility="private" aggregation="composite">
+      <ownedAttribute xmi:id="_nUk9cdKNEeGX6v8HTY_PeQ" name="code" visibility="private" isUnique="false" isReadOnly="true" aggregation="composite">
         <ownedComment xmi:id="_xEOyQNKQEeGX6v8HTY_PeQ">
           <body>An indication of the nature of the relationship, specifically of its cardinality. [SDTM: RELTYPE], [SEND: RELTYPE]</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_yRXzsPkEEeGSwNE8SoqTXQ" value="RRtbd"/>
       </ownedAttribute>
     </packagedElement>
     <packagedElement xmi:type="uml:Association" xmi:id="_zqaKUtKQEeGX6v8HTY_PeQ" memberEnd="_zqaKUNKQEeGX6v8HTY_PeQ _zqaKU9KQEeGX6v8HTY_PeQ">
@@ -9023,7 +9071,7 @@ More specifically: The periodic time interval (PIVL_TS) type is used to record r
         <type xmi:type="uml:Enumeration" href="../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__zOoCEDcEd6xYZuu1VKCVw"/>
         <defaultValue xmi:type="uml:LiteralString" xmi:id="_vTZRUNKREeGX6v8HTY_PeQ" value="EVN"/>
       </ownedAttribute>
-      <ownedAttribute xmi:id="_PRieYdKREeGX6v8HTY_PeQ" name="code" visibility="private" aggregation="composite">
+      <ownedAttribute xmi:id="_PRieYdKREeGX6v8HTY_PeQ" name="code" visibility="private" isUnique="false" aggregation="composite">
         <ownedComment xmi:id="_BocgkNKTEeGX6v8HTY_PeQ">
           <body>A code that indicates the type of information being provided.  [SDTM: QNAM, QLABEL],  [SEND: QNAM, QLABEL]</body>
         </ownedComment>
@@ -10017,6 +10065,7 @@ More specifically: The periodic time interval (PIVL_TS) type is used to record r
           <body>A code value that indicates that the act captures reference period information.</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_2sS8UPkDEeGSwNE8SoqTXQ" value="RPtbd"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_Z3bAQtW4EeGKmsh0mvGT9Q" name="effectiveTime" visibility="private" aggregation="composite">
         <ownedComment xmi:id="_js4pgNW4EeGKmsh0mvGT9Q">
@@ -10059,6 +10108,7 @@ More specifically: The periodic time interval (PIVL_TS) type is used to record r
           <body>The fixed code value indicates the observation captures information regarding the start of an activity relative to the previously defined reference period.</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_aFkhkPkFEeGSwNE8SoqTXQ" value="STRPtbd"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_0NhC49W7EeGJ8IViYnBfBA" name="value" visibility="private" aggregation="composite">
         <ownedComment xmi:id="_Wdbo0NW8EeGJ8IViYnBfBA">
@@ -10084,11 +10134,12 @@ More specifically: The periodic time interval (PIVL_TS) type is used to record r
         <type xmi:type="uml:Enumeration" href="../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__zOoCEDcEd6xYZuu1VKCVw"/>
         <defaultValue xmi:type="uml:LiteralString" xmi:id="_PTdgCNW9EeGJ8IViYnBfBA" value="EVN"/>
       </ownedAttribute>
-      <ownedAttribute xmi:id="_PTdgBdW9EeGJ8IViYnBfBA" name="code" visibility="private" isReadOnly="true" aggregation="composite">
+      <ownedAttribute xmi:id="_PTdgBdW9EeGJ8IViYnBfBA" name="code" visibility="private" isUnique="false" isReadOnly="true" aggregation="composite">
         <ownedComment xmi:id="_PTdgBtW9EeGJ8IViYnBfBA">
           <body>The fixed code value indicates the observation captures information regarding the ending of an activity relative to the previously defined reference period.</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_dPdDoPkFEeGSwNE8SoqTXQ" value="ENRPtbd"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_PTdgCdW9EeGJ8IViYnBfBA" name="value" visibility="private" aggregation="composite">
         <ownedComment xmi:id="_PTdgCtW9EeGJ8IViYnBfBA">
@@ -10174,11 +10225,12 @@ More specifically: The periodic time interval (PIVL_TS) type is used to record r
         <type xmi:type="uml:Enumeration" href="../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__zOoCEDcEd6xYZuu1VKCVw"/>
         <defaultValue xmi:type="uml:LiteralString" xmi:id="_Rn_r0HIPEeGL-K1S1E9LrQ" value="EVN"/>
       </ownedAttribute>
-      <ownedAttribute xmi:id="__OSJkXIOEeGL-K1S1E9LrQ" name="code" visibility="private" aggregation="composite">
+      <ownedAttribute xmi:id="__OSJkXIOEeGL-K1S1E9LrQ" name="code" visibility="private" isUnique="false" isReadOnly="true" aggregation="composite">
         <ownedComment xmi:id="_SOKf4NZoEeGuB6oePFgHkw">
           <body>A code value to indicate the observation contains indication information.</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_Z3cGUPkCEeGSwNE8SoqTXQ" value="C83085"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="__OSwoXIOEeGL-K1S1E9LrQ" name="value" visibility="private" aggregation="composite">
         <ownedComment xmi:id="_NPFx4HIPEeGL-K1S1E9LrQ">
@@ -10213,11 +10265,12 @@ More specifically: The periodic time interval (PIVL_TS) type is used to record r
         <type xmi:type="uml:Enumeration" href="../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__zOoCEDcEd6xYZuu1VKCVw"/>
         <defaultValue xmi:type="uml:LiteralString" xmi:id="_YbytkrZmEeGvx_6yr-0T9g" value="EVN"/>
       </ownedAttribute>
-      <ownedAttribute xmi:id="_Ybytk7ZmEeGvx_6yr-0T9g" name="code" visibility="private" aggregation="composite">
+      <ownedAttribute xmi:id="_Ybytk7ZmEeGvx_6yr-0T9g" name="code" visibility="private" isUnique="false" isReadOnly="true" aggregation="composite">
         <ownedComment xmi:id="_XTGSANZrEeGuB6oePFgHkw">
           <body>A code to indicate the information refers to an intended regimen for an intervention.</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_ddu3kPkCEeGSwNE8SoqTXQ" value="IRtbd"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_YbytlLZmEeGvx_6yr-0T9g" name="value" visibility="private" aggregation="composite">
         <ownedComment xmi:id="_YbytlbZmEeGvx_6yr-0T9g">
@@ -10270,11 +10323,12 @@ More specifically: The periodic time interval (PIVL_TS) type is used to record r
         <type xmi:type="uml:Enumeration" href="../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__zOoCEDcEd6xYZuu1VKCVw"/>
         <defaultValue xmi:type="uml:LiteralString" xmi:id="_YbytprZmEeGvx_6yr-0T9g" value="EVN"/>
       </ownedAttribute>
-      <ownedAttribute xmi:id="_Ybytp7ZmEeGvx_6yr-0T9g" name="code" visibility="private" aggregation="composite">
+      <ownedAttribute xmi:id="_Ybytp7ZmEeGvx_6yr-0T9g" name="code" visibility="private" isUnique="false" isReadOnly="true" aggregation="composite">
         <ownedComment xmi:id="_othqEO7sEeG90Pj2MVp3YQ">
           <body>The code value indicates this is a dose adjustment observation.</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_1m5-YPj_EeG7pMUQbTahtA" value="DARtbd"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_YbytqLZmEeGvx_6yr-0T9g" name="value" visibility="private" aggregation="composite">
         <ownedComment xmi:id="_YbytqbZmEeGvx_6yr-0T9g">
@@ -10329,12 +10383,13 @@ More specifically: The periodic time interval (PIVL_TS) type is used to record r
         <redefinedProperty href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_BLZhcEo_Ed6c3qsAxlFHaQ"/>
         <defaultValue xmi:type="uml:LiteralString" xmi:id="_sYRDCbZmEeGvx_6yr-0T9g" value="EVN"/>
       </ownedAttribute>
-      <ownedAttribute xmi:id="_sYRDB7ZmEeGvx_6yr-0T9g" name="code" visibility="private" aggregation="composite">
+      <ownedAttribute xmi:id="_sYRDB7ZmEeGvx_6yr-0T9g" name="code" visibility="private" isUnique="false" isReadOnly="true" aggregation="composite">
         <ownedComment xmi:id="_YVl4kPB8EeGn3-EIJQy-pA">
           <body>A code value that indicates that the observation captures event seriousness information.</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
         <redefinedProperty href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_WEYp4Eo8Ed6c3qsAxlFHaQ"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_9gQG8PkEEeGSwNE8SoqTXQ" value="SEtbd"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_sYRDCrZmEeGvx_6yr-0T9g" name="value" visibility="private" aggregation="composite">
         <ownedComment xmi:id="_sYRDC7ZmEeGvx_6yr-0T9g">
@@ -10386,12 +10441,13 @@ More specifically: The periodic time interval (PIVL_TS) type is used to record r
             <redefinedProperty href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_BLZhcEo_Ed6c3qsAxlFHaQ"/>
             <defaultValue xmi:type="uml:LiteralString" xmi:id="_sYRDIbZmEeGvx_6yr-0T9g" value="EVN"/>
           </ownedAttribute>
-          <ownedAttribute xmi:id="_sYRDHrZmEeGvx_6yr-0T9g" name="code" visibility="private" aggregation="composite">
+          <ownedAttribute xmi:id="_sYRDHrZmEeGvx_6yr-0T9g" name="code" visibility="private" isUnique="false" isReadOnly="true" aggregation="composite">
             <ownedComment xmi:id="_sYRDH7ZmEeGvx_6yr-0T9g">
               <body>The code value indicates the observation conveys information on the nature of the seriousness of the adverse event.</body>
             </ownedComment>
             <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
             <redefinedProperty href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_WEYp4Eo8Ed6c3qsAxlFHaQ"/>
+            <defaultValue xmi:type="uml:LiteralString" xmi:id="_BqG4QPkFEeGSwNE8SoqTXQ" value="SETtbd"/>
           </ownedAttribute>
           <ownedAttribute xmi:id="_sYRDIrZmEeGvx_6yr-0T9g" name="value" visibility="private" aggregation="composite">
             <ownedComment xmi:id="_sYRDI7ZmEeGvx_6yr-0T9g">
@@ -10434,12 +10490,13 @@ More specifically: The periodic time interval (PIVL_TS) type is used to record r
         <redefinedProperty href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_BLZhcEo_Ed6c3qsAxlFHaQ"/>
         <defaultValue xmi:type="uml:LiteralString" xmi:id="_sYRDNrZmEeGvx_6yr-0T9g" value="EVN"/>
       </ownedAttribute>
-      <ownedAttribute xmi:id="_sYRDNLZmEeGvx_6yr-0T9g" name="code" visibility="private" aggregation="composite">
+      <ownedAttribute xmi:id="_sYRDNLZmEeGvx_6yr-0T9g" name="code" visibility="private" isUnique="false" isReadOnly="true" aggregation="composite">
         <ownedComment xmi:id="_2hs4kPCBEeGn3-EIJQy-pA">
           <body>A fixed value that indicates the observation carries information about action taken with the study treatment.</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
         <redefinedProperty href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_WEYp4Eo8Ed6c3qsAxlFHaQ"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_6XlQYPkFEeGSwNE8SoqTXQ" value="C66767"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_sYRDN7ZmEeGvx_6yr-0T9g" name="value" visibility="private" aggregation="composite">
         <ownedComment xmi:id="_sYRDOLZmEeGvx_6yr-0T9g">
@@ -10480,12 +10537,13 @@ More specifically: The periodic time interval (PIVL_TS) type is used to record r
         <redefinedProperty href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_BLZhcEo_Ed6c3qsAxlFHaQ"/>
         <defaultValue xmi:type="uml:LiteralString" xmi:id="_sYRDTbZmEeGvx_6yr-0T9g" value="EVN"/>
       </ownedAttribute>
-      <ownedAttribute xmi:id="_sYRDSrZmEeGvx_6yr-0T9g" name="code" visibility="private" aggregation="composite">
+      <ownedAttribute xmi:id="_sYRDSrZmEeGvx_6yr-0T9g" name="code" visibility="private" isUnique="false" isReadOnly="true" aggregation="composite">
         <ownedComment xmi:id="_sYRDS7ZmEeGvx_6yr-0T9g">
           <body>A code value to indicate information regarding other actions - unrelated to the study treatment - that were taken as a result of the adverse event.</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
         <redefinedProperty href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_WEYp4Eo8Ed6c3qsAxlFHaQ"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_Z_PiAPkDEeGSwNE8SoqTXQ" value="OATtbd"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_sYRDTrZmEeGvx_6yr-0T9g" name="value" visibility="private" aggregation="composite">
         <ownedComment xmi:id="_sYRDT7ZmEeGvx_6yr-0T9g">
@@ -10526,12 +10584,13 @@ More specifically: The periodic time interval (PIVL_TS) type is used to record r
         <redefinedProperty href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_BLZhcEo_Ed6c3qsAxlFHaQ"/>
         <defaultValue xmi:type="uml:LiteralString" xmi:id="_sYRDZLZmEeGvx_6yr-0T9g" value="EVN"/>
       </ownedAttribute>
-      <ownedAttribute xmi:id="_sYRDYbZmEeGvx_6yr-0T9g" name="code" visibility="private" aggregation="composite">
+      <ownedAttribute xmi:id="_sYRDYbZmEeGvx_6yr-0T9g" name="code" visibility="private" isUnique="false" isReadOnly="true" aggregation="composite">
         <ownedComment xmi:id="_sYRDYrZmEeGvx_6yr-0T9g">
           <body>A value to indicate that the observation provides the investigator's opinon regarding the causality of the event to the treatment.</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
         <redefinedProperty href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_WEYp4Eo8Ed6c3qsAxlFHaQ"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_8iisEPkFEeGSwNE8SoqTXQ" value="STCtbd"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_sYRDZbZmEeGvx_6yr-0T9g" name="value" visibility="private" aggregation="composite">
         <ownedComment xmi:id="_sYRDZrZmEeGvx_6yr-0T9g">
@@ -10567,12 +10626,13 @@ More specifically: The periodic time interval (PIVL_TS) type is used to record r
         <redefinedProperty href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_FcjT0EbtEd6besF9iFIJkQ"/>
         <defaultValue xmi:type="uml:LiteralString" xmi:id="_sYRDd7ZmEeGvx_6yr-0T9g" value="OBS"/>
       </ownedAttribute>
-      <ownedAttribute xmi:id="_sYRDeLZmEeGvx_6yr-0T9g" name="code" visibility="private" isReadOnly="true" aggregation="composite">
+      <ownedAttribute xmi:id="_sYRDeLZmEeGvx_6yr-0T9g" name="code" visibility="private" isUnique="false" isReadOnly="true" aggregation="composite">
         <ownedComment xmi:id="_sYRDebZmEeGvx_6yr-0T9g">
           <body>A value to indicate that the observation provides the investigator's opinon regarding the causality of the event to a non-study treatment.</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
         <redefinedProperty href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_WEYp4Eo8Ed6c3qsAxlFHaQ"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_Ve6xcPkDEeGSwNE8SoqTXQ" value="NSTtbd"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_sYRDerZmEeGvx_6yr-0T9g" name="moodCode" visibility="private" isReadOnly="true">
         <type xmi:type="uml:Enumeration" href="../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__zOoCEDcEd6xYZuu1VKCVw"/>
@@ -10613,12 +10673,13 @@ More specifically: The periodic time interval (PIVL_TS) type is used to record r
         <redefinedProperty href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_FcjT0EbtEd6besF9iFIJkQ"/>
         <defaultValue xmi:type="uml:LiteralString" xmi:id="_sYRDjrZmEeGvx_6yr-0T9g" value="OBS"/>
       </ownedAttribute>
-      <ownedAttribute xmi:id="_sYRDj7ZmEeGvx_6yr-0T9g" name="code" visibility="private" aggregation="composite">
+      <ownedAttribute xmi:id="_sYRDj7ZmEeGvx_6yr-0T9g" name="code" visibility="private" isUnique="false" isReadOnly="true" aggregation="composite">
         <ownedComment xmi:id="_sYRDkLZmEeGvx_6yr-0T9g">
           <body>A code that indicates the observation contains information regarding the pattern of the adverse event over time.</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
         <redefinedProperty href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_WEYp4Eo8Ed6c3qsAxlFHaQ"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_3nYL4PkAEeGSwNE8SoqTXQ" value="C83208"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_sYRDkbZmEeGvx_6yr-0T9g" name="moodCode" visibility="private" isReadOnly="true">
         <type xmi:type="uml:Enumeration" href="../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__zOoCEDcEd6xYZuu1VKCVw"/>
@@ -10659,12 +10720,13 @@ More specifically: The periodic time interval (PIVL_TS) type is used to record r
         <redefinedProperty href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_FcjT0EbtEd6besF9iFIJkQ"/>
         <defaultValue xmi:type="uml:LiteralString" xmi:id="_sYRDpbZmEeGvx_6yr-0T9g" value="OBS"/>
       </ownedAttribute>
-      <ownedAttribute xmi:id="_sYRDprZmEeGvx_6yr-0T9g" name="code" visibility="private" aggregation="composite">
+      <ownedAttribute xmi:id="_sYRDprZmEeGvx_6yr-0T9g" name="code" visibility="private" isUnique="false" isReadOnly="true" aggregation="composite">
         <ownedComment xmi:id="_sYRDp7ZmEeGvx_6yr-0T9g">
           <body>A code that indicates this observation contains adverse event outcome information.</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
         <redefinedProperty href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_WEYp4Eo8Ed6c3qsAxlFHaQ"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_0CtyUPkAEeGSwNE8SoqTXQ" value="C49489"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_sYRDqLZmEeGvx_6yr-0T9g" name="moodCode" visibility="private" isReadOnly="true">
         <type xmi:type="uml:Enumeration" href="../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__zOoCEDcEd6xYZuu1VKCVw"/>
@@ -10710,12 +10772,13 @@ More specifically: The periodic time interval (PIVL_TS) type is used to record r
         <redefinedProperty href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_BLZhcEo_Ed6c3qsAxlFHaQ"/>
         <defaultValue xmi:type="uml:LiteralString" xmi:id="_sYRDwLZmEeGvx_6yr-0T9g" value="EVN"/>
       </ownedAttribute>
-      <ownedAttribute xmi:id="_sYRDvbZmEeGvx_6yr-0T9g" name="code" visibility="private" isReadOnly="true" aggregation="composite">
+      <ownedAttribute xmi:id="_sYRDvbZmEeGvx_6yr-0T9g" name="code" visibility="private" isUnique="false" isReadOnly="true" aggregation="composite">
         <ownedComment xmi:id="_sYRDvrZmEeGvx_6yr-0T9g">
           <body>The code value indicates the observation contains concomitant or additional treatment information.</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
         <redefinedProperty href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_WEYp4Eo8Ed6c3qsAxlFHaQ"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_RMTpkPj_EeG7pMUQbTahtA" value="C83199"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_sYRDwbZmEeGvx_6yr-0T9g" name="value" visibility="private" aggregation="composite">
         <ownedComment xmi:id="_sYRDwrZmEeGvx_6yr-0T9g">
@@ -10756,12 +10819,13 @@ More specifically: The periodic time interval (PIVL_TS) type is used to record r
         <redefinedProperty href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_BLZhcEo_Ed6c3qsAxlFHaQ"/>
         <defaultValue xmi:type="uml:LiteralString" xmi:id="_sYRD17ZmEeGvx_6yr-0T9g" value="EVN"/>
       </ownedAttribute>
-      <ownedAttribute xmi:id="_sYRD1LZmEeGvx_6yr-0T9g" name="code" visibility="private" isReadOnly="true" aggregation="composite">
+      <ownedAttribute xmi:id="_sYRD1LZmEeGvx_6yr-0T9g" name="code" visibility="private" isUnique="false" isReadOnly="true" aggregation="composite">
         <ownedComment xmi:id="_sYRD1bZmEeGvx_6yr-0T9g">
           <body>The code value indicates that toxicity information is being provided.</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
         <redefinedProperty href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_WEYp4Eo8Ed6c3qsAxlFHaQ"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_XnTS4PkGEeGSwNE8SoqTXQ" value="TOtbd"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_sYRD2LZmEeGvx_6yr-0T9g" name="value" visibility="private" aggregation="composite">
         <ownedComment xmi:id="_sYRD2bZmEeGvx_6yr-0T9g">
@@ -11202,7 +11266,7 @@ More specifically: The periodic time interval (PIVL_TS) type is used to record r
         <type xmi:type="uml:Enumeration" href="../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__zOoCEDcEd6xYZuu1VKCVw"/>
         <redefinedProperty href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_BLZhcEo_Ed6c3qsAxlFHaQ"/>
       </ownedAttribute>
-      <ownedAttribute xmi:id="_FhxtbYsoEeGEXvbgIb1duQ" name="code" visibility="private" isReadOnly="true" aggregation="composite">
+      <ownedAttribute xmi:id="_FhxtbYsoEeGEXvbgIb1duQ" name="code" visibility="private" isUnique="false" isReadOnly="true" aggregation="composite">
         <ownedComment xmi:id="_FhxtbosoEeGEXvbgIb1duQ">
           <body>A code value that indicates that the observation is that of body position.</body>
         </ownedComment>
@@ -11263,13 +11327,14 @@ More specifically: The periodic time interval (PIVL_TS) type is used to record r
           <instance xmi:type="uml:EnumerationLiteral" href="../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__yeW70DcEd6xYZuu1VKCVw"/>
         </defaultValue>
       </ownedAttribute>
-      <ownedAttribute xmi:id="_2TrjIbZmEeGvx_6yr-0T9g" name="code" visibility="private" isReadOnly="true" aggregation="composite">
+      <ownedAttribute xmi:id="_2TrjIbZmEeGvx_6yr-0T9g" name="code" visibility="private" isUnique="false" isReadOnly="true" aggregation="composite">
         <ownedComment xmi:id="_KQTncNpYEeG9W8qc6K-erg">
           <body>The code value indicates the observation includes reference range information, as well as conveying whether the reference range is provided in original units or standard units.</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_2TrjIrZmEeGvx_6yr-0T9g" value="1"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_2TrjI7ZmEeGvx_6yr-0T9g" value="1"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_sML-IPkEEeGSwNE8SoqTXQ" value="D78736"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_2TrjLbZmEeGvx_6yr-0T9g" name="value" visibility="private" aggregation="composite">
         <ownedComment xmi:id="_2TrjLrZmEeGvx_6yr-0T9g">
@@ -11387,11 +11452,12 @@ More specifically: The periodic time interval (PIVL_TS) type is used to record r
         <type xmi:type="uml:Enumeration" href="../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__yVecEDcEd6xYZuu1VKCVw"/>
         <defaultValue xmi:type="uml:LiteralString" xmi:id="_2TrjO7ZmEeGvx_6yr-0T9g" value="OBS"/>
       </ownedAttribute>
-      <ownedAttribute xmi:id="_2TrjPLZmEeGvx_6yr-0T9g" name="code" visibility="private" isReadOnly="true" aggregation="composite">
+      <ownedAttribute xmi:id="_2TrjPLZmEeGvx_6yr-0T9g" name="code" visibility="private" isUnique="false" isReadOnly="true" aggregation="composite">
         <ownedComment xmi:id="_2TrjPbZmEeGvx_6yr-0T9g">
           <body>The code value indicates the observation concerns the subject's fasting status.</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_lNP-0PbPEeGXHJw8CF46KA" value="FStbd"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_2TrjPrZmEeGvx_6yr-0T9g" name="moodCode" visibility="private" isReadOnly="true">
         <type xmi:type="uml:Enumeration" href="../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__zOoCEDcEd6xYZuu1VKCVw"/>
@@ -11453,11 +11519,12 @@ More specifically: The periodic time interval (PIVL_TS) type is used to record r
         <type xmi:type="uml:Enumeration" href="../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__yVecEDcEd6xYZuu1VKCVw"/>
         <defaultValue xmi:type="uml:LiteralString" xmi:id="_d8tzcLc0EeGbTfv2pIp07Q" value="OBS"/>
       </ownedAttribute>
-      <ownedAttribute xmi:id="_R-1FIbc0EeGbTfv2pIp07Q" name="code" visibility="private" isReadOnly="true" aggregation="composite">
+      <ownedAttribute xmi:id="_R-1FIbc0EeGbTfv2pIp07Q" name="code" visibility="private" isUnique="false" isReadOnly="true" aggregation="composite">
         <ownedComment xmi:id="_mRBzALc0EeGbTfv2pIp07Q">
           <body>The code value indicates this is a death relationship observation.</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_wI1zMPj_EeG7pMUQbTahtA" value="C95087"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_R--PELc0EeGbTfv2pIp07Q" name="moodCode" visibility="private" isReadOnly="true">
         <type xmi:type="uml:Enumeration" href="../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__zOoCEDcEd6xYZuu1VKCVw"/>
@@ -11541,7 +11608,7 @@ More specifically: The periodic time interval (PIVL_TS) type is used to record r
     <packagedElement xmi:type="uml:Artifact" xmi:id="_RzMJANsnEeGjc49r42wDag" name="Subject Data Non-Clinical TrialsSample" fileName="Subject Data Non-Clinical TrialsSample.xml"/>
     <packagedElement xmi:type="uml:Association" xmi:id="_SKCm8N2REeGajPLAbtmXCg" memberEnd="_SJ418N2REeGajPLAbtmXCg _SKCm8d2REeGajPLAbtmXCg">
       <ownedComment xmi:id="_QMlJEPCHEeGh3MBMz4mmQA">
-        <body>A required CDA association - it identifies the person responsible for the content of the subject data report.</body>
+        <body>A required CDA association - it identifies the person responsible for the content of the subject data report.  It is true that the investigator is not the absolute source of all the content included within the subject data document, given that some of the information is derived by the sponsor.  However, the subject data document is based on information collected, and therefore &quot;authored&quot; by the investigator.  In the last analysis, the investigator is the primary source of the information.</body>
       </ownedComment>
       <ownedEnd xmi:id="_SKCm8d2REeGajPLAbtmXCg" type="_BMxBcV10EeGh_7NFCJ3fGA" association="_SKCm8N2REeGajPLAbtmXCg"/>
     </packagedElement>
@@ -11679,12 +11746,13 @@ More specifically: The periodic time interval (PIVL_TS) type is used to record r
         <redefinedProperty href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_BLZhcEo_Ed6c3qsAxlFHaQ"/>
         <defaultValue xmi:type="uml:LiteralString" xmi:id="__G5hgHIJEeGL-K1S1E9LrQ" value="EVN"/>
       </ownedAttribute>
-      <ownedAttribute xmi:id="__G5hfnIJEeGL-K1S1E9LrQ" name="code" visibility="private" isReadOnly="true" aggregation="composite">
+      <ownedAttribute xmi:id="__G5hfnIJEeGL-K1S1E9LrQ" name="code" visibility="private" isUnique="false" isReadOnly="true" aggregation="composite">
         <ownedComment xmi:id="_GI2jcIMwEeGuDKqPeNB_5w">
           <body>The code value indicates that the observation refers to the occurrence of a pre-specified event.</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
         <redefinedProperty href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_WEYp4Eo8Ed6c3qsAxlFHaQ"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_tVLb8PkDEeGSwNE8SoqTXQ" value="PSEtbd"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="__G5hgXIJEeGL-K1S1E9LrQ" name="value" visibility="private" aggregation="composite">
         <ownedComment xmi:id="__G5hgnIJEeGL-K1S1E9LrQ">
@@ -11893,6 +11961,88 @@ More specifically: The periodic time interval (PIVL_TS) type is used to record r
     </packagedElement>
     <packagedElement xmi:type="uml:Association" xmi:id="_DZ89QvIKEeGS7-J3ZE8_nw" memberEnd="_DZ89QPIKEeGS7-J3ZE8_nw _DZ89Q_IKEeGS7-J3ZE8_nw">
       <ownedEnd xmi:id="_DZ89Q_IKEeGS7-J3ZE8_nw" type="_JhW-kGSrEeGaWrlBtEAvSQ" association="_DZ89QvIKEeGS7-J3ZE8_nw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_-HQWMPj8EeG7pMUQbTahtA" name="Event Duration">
+      <ownedComment xmi:id="_cG4LoPj9EeG7pMUQbTahtA">
+        <body>An observation that captures the duration of an event.  The rationale for this observation is the presense within SDTM and SEND domains of elements to record start time , stop time AND duration of an event.  It is to be used only when duration is provided directly, and cannot be derived from existing start and stop values.</body>
+      </ownedComment>
+      <generalization xmi:id="_-HQWMfj8EeG7pMUQbTahtA">
+        <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_bJyIQDxYEd6JwqSGecoePg"/>
+      </generalization>
+      <ownedAttribute xmi:id="_D0zH0Pj9EeG7pMUQbTahtA" name="classCode" visibility="private" isUnique="false" isReadOnly="true">
+        <type xmi:type="uml:Enumeration" href="../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__yVecEDcEd6xYZuu1VKCVw"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_pZa_wPj9EeG7pMUQbTahtA" value="OBS"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_D0zH0fj9EeG7pMUQbTahtA" name="code" visibility="private" isUnique="false" isReadOnly="true" aggregation="composite">
+        <ownedComment xmi:id="_nnKX8Pj9EeG7pMUQbTahtA">
+          <body>A code that indicates the observation records the duration of an event.</body>
+        </ownedComment>
+        <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_r0vLoPj9EeG7pMUQbTahtA" value="EDtbd"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_D0zH0vj9EeG7pMUQbTahtA" name="moodCode" visibility="private" isUnique="false" isReadOnly="true">
+        <type xmi:type="uml:Enumeration" href="../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__zOoCEDcEd6xYZuu1VKCVw"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_xQuTMPj9EeG7pMUQbTahtA" value="EVN"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_D0zH0_j9EeG7pMUQbTahtA" name="value" visibility="private" aggregation="composite">
+        <ownedComment xmi:id="_6pKpQPj9EeG7pMUQbTahtA">
+          <body>Captures the duration of an event.</body>
+        </ownedComment>
+        <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_P7FswD59Ed6cla2oXsPtlA"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_el7A8Pj9EeG7pMUQbTahtA" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_el7A8fj9EeG7pMUQbTahtA" value="1"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_AyrlMvj-EeG7pMUQbTahtA" memberEnd="_AyrlMPj-EeG7pMUQbTahtA _AyrlM_j-EeG7pMUQbTahtA">
+      <ownedComment xmi:id="_HwZlQPj-EeG7pMUQbTahtA">
+        <body>Records the duration of an event in cases in which this cannot be derived from existing start and stop information.</body>
+      </ownedComment>
+      <ownedEnd xmi:id="_AyrlM_j-EeG7pMUQbTahtA" type="_aI700GSrEeGaWrlBtEAvSQ" association="_AyrlMvj-EeG7pMUQbTahtA"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_CS0Fwvj_EeG7pMUQbTahtA" memberEnd="_CS0FwPj_EeG7pMUQbTahtA _CS0Fw_j_EeG7pMUQbTahtA">
+      <ownedEnd xmi:id="_CS0Fw_j_EeG7pMUQbTahtA" type="_If_OMHH-EeGL-K1S1E9LrQ" association="_CS0Fwvj_EeG7pMUQbTahtA"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_DudkYvj_EeG7pMUQbTahtA" memberEnd="_DudkYPj_EeG7pMUQbTahtA _DudkY_j_EeG7pMUQbTahtA">
+      <ownedComment xmi:id="_MKzekPj_EeG7pMUQbTahtA">
+        <body>Records the duration of an event in cases in which this cannot be derived from existing start and stop information.</body>
+      </ownedComment>
+      <ownedEnd xmi:id="_DudkY_j_EeG7pMUQbTahtA" type="_If_OMHH-EeGL-K1S1E9LrQ" association="_DudkYvj_EeG7pMUQbTahtA"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_u9OpwvkBEeGSwNE8SoqTXQ" memberEnd="_u9OpwPkBEeGSwNE8SoqTXQ _u9Opw_kBEeGSwNE8SoqTXQ">
+      <ownedComment xmi:id="_w71EcPkBEeGSwNE8SoqTXQ">
+        <body>Records the duration of an event in cases in which this cannot be derived from existing start and stop information.</body>
+      </ownedComment>
+      <ownedEnd xmi:id="_u9Opw_kBEeGSwNE8SoqTXQ" type="_lbhbAHXQEeGBQKUAtfSaGA" association="_u9OpwvkBEeGSwNE8SoqTXQ"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_GvBrAvkCEeGSwNE8SoqTXQ" memberEnd="_GvBrAPkCEeGSwNE8SoqTXQ _GvBrA_kCEeGSwNE8SoqTXQ">
+      <ownedComment xmi:id="_JjpHsPkCEeGSwNE8SoqTXQ">
+        <body>The section may include general findings for the report.</body>
+      </ownedComment>
+      <ownedEnd xmi:id="_GvBrA_kCEeGSwNE8SoqTXQ" type="_FmC1AGSqEeGaWrlBtEAvSQ" association="_GvBrAvkCEeGSwNE8SoqTXQ"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_DbPwovkDEeGSwNE8SoqTXQ" memberEnd="_DbPwoPkDEeGSwNE8SoqTXQ _DbPwo_kDEeGSwNE8SoqTXQ">
+      <ownedComment xmi:id="_HKxWYPkDEeGSwNE8SoqTXQ">
+        <body>Records the duration of an event in cases in which this cannot be derived from existing start and stop information.</body>
+      </ownedComment>
+      <ownedEnd xmi:id="_DbPwo_kDEeGSwNE8SoqTXQ" type="_eh5t4JoZEeG78ZMLtGK0RQ" association="_DbPwovkDEeGSwNE8SoqTXQ"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_pfCl8vkFEeGSwNE8SoqTXQ" memberEnd="_pfCl8PkFEeGSwNE8SoqTXQ _pfCl8_kFEeGSwNE8SoqTXQ">
+      <ownedComment xmi:id="_slgnoPkFEeGSwNE8SoqTXQ">
+        <body>Records the duration of an event in cases in which this cannot be derived from existing start and stop information.</body>
+      </ownedComment>
+      <ownedEnd xmi:id="_pfCl8_kFEeGSwNE8SoqTXQ" type="_sYRCoLZmEeGvx_6yr-0T9g" association="_pfCl8vkFEeGSwNE8SoqTXQ"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_w57qMvkFEeGSwNE8SoqTXQ" memberEnd="_w57qMPkFEeGSwNE8SoqTXQ _w57qM_kFEeGSwNE8SoqTXQ">
+      <ownedComment xmi:id="_zgZ9MPkFEeGSwNE8SoqTXQ">
+        <body>Records the duration of an intervention in cases in which this cannot be derived from existing start and stop information.</body>
+      </ownedComment>
+      <ownedEnd xmi:id="_w57qM_kFEeGSwNE8SoqTXQ" type="_YbytILZmEeGvx_6yr-0T9g" association="_w57qMvkFEeGSwNE8SoqTXQ"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_Mx4BcPkGEeGSwNE8SoqTXQ" memberEnd="_MxuQcPkGEeGSwNE8SoqTXQ _Mx4BcfkGEeGSwNE8SoqTXQ">
+      <ownedComment xmi:id="_NxPzwPkGEeGSwNE8SoqTXQ">
+        <body>Records the duration of an event in cases in which this cannot be derived from existing start and stop information.</body>
+      </ownedComment>
+      <ownedEnd xmi:id="_Mx4BcfkGEeGSwNE8SoqTXQ" type="_61u8UIMiEeGuDKqPeNB_5w" association="_Mx4BcPkGEeGSwNE8SoqTXQ"/>
     </packagedElement>
     <profileApplication xmi:id="_BK1HwV10EeGh_7NFCJ3fGA">
       <eAnnotations xmi:id="_BK1Hwl10EeGh_7NFCJ3fGA" source="http://www.eclipse.org/uml2/2.0.0/UML">
@@ -12686,7 +12836,7 @@ More specifically: The periodic time interval (PIVL_TS) type is used to record r
   <CDA:PropertyValidation xmi:id="_Y1PNsKnKEeGxNZJ-RFOuKQ" base_Property="_XO9Z0pobEeG78ZMLtGK0RQ"/>
   <CDA:PropertyValidation xmi:id="_2CbgoKnKEeGxNZJ-RFOuKQ" severity="WARNING" base_Property="_XO9Z1pobEeG78ZMLtGK0RQ"/>
   <CDA:PropertyValidation xmi:id="_dCFzMKnLEeG6bpy7Oel2CA" severity="INFO" base_Property="_UCL48KnLEeG6bpy7Oel2CA"/>
-  <CDA:CodeSystemConstraint xmi:id="_FvjqYKnXEeG6bpy7Oel2CA" code="TBD" displayName="Body System or Organ Class" base_Property="_SitW8WoUEeGH0KSwdtr7gA">
+  <CDA:CodeSystemConstraint xmi:id="_FvjqYKnXEeG6bpy7Oel2CA" code="C88026" displayName="Body System or Organ Class" base_Property="_SitW8WoUEeGH0KSwdtr7gA">
     <reference href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_dWKSsaDqEd-dVeaMP0XXQw"/>
   </CDA:CodeSystemConstraint>
   <CDA:EntryRelationship xmi:id="_s8BJ8KpzEeG4RYq0e_tItg" severity="WARNING" base_Association="_qk3FUapzEeG4RYq0e_tItg" typeCode="COMP"/>
@@ -12815,7 +12965,7 @@ More specifically: The periodic time interval (PIVL_TS) type is used to record r
   <CDA:PropertyValidation xmi:id="_Rj5z2bcgEeGK_ZDUrEhURQ" base_Property="_Rj5z0bcgEeGK_ZDUrEhURQ"/>
   <CDA:PropertyValidation xmi:id="_SMhTBbcgEeGK_ZDUrEhURQ" base_Property="_SMhS9rcgEeGK_ZDUrEhURQ"/>
   <CDA:PropertyValidation xmi:id="_SMhTBrcgEeGK_ZDUrEhURQ" base_Property="_SMhS_bcgEeGK_ZDUrEhURQ"/>
-  <CDA:CodeSystemConstraint xmi:id="_SMhTB7cgEeGK_ZDUrEhURQ" base_Property="_SMhS_bcgEeGK_ZDUrEhURQ">
+  <CDA:CodeSystemConstraint xmi:id="_SMhTB7cgEeGK_ZDUrEhURQ" code="SUtbd" base_Property="_SMhS_bcgEeGK_ZDUrEhURQ">
     <reference href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_dWKSsaDqEd-dVeaMP0XXQw"/>
   </CDA:CodeSystemConstraint>
   <CDA:PropertyValidation xmi:id="_SMhTCLcgEeGK_ZDUrEhURQ" base_Property="_SMhS_7cgEeGK_ZDUrEhURQ"/>
@@ -13236,7 +13386,7 @@ More specifically: The periodic time interval (PIVL_TS) type is used to record r
   <CDA:EntryRelationship xmi:id="_HiIvINZ1EeGuB6oePFgHkw" severity="INFO" base_Association="_GoaR0NZ1EeGuB6oePFgHkw" typeCode="COMP"/>
   <CDA:PropertyValidation xmi:id="_sYRD_7ZmEeGvx_6yr-0T9g" base_Property="_sYRDBbZmEeGvx_6yr-0T9g"/>
   <CDA:PropertyValidation xmi:id="_sYREALZmEeGvx_6yr-0T9g" base_Property="_sYRDB7ZmEeGvx_6yr-0T9g"/>
-  <CDA:CodeSystemConstraint xmi:id="_sYREAbZmEeGvx_6yr-0T9g" code="SETtbd" displayName="Serious Event" base_Property="_sYRDB7ZmEeGvx_6yr-0T9g">
+  <CDA:CodeSystemConstraint xmi:id="_sYREAbZmEeGvx_6yr-0T9g" code="SEtbd" displayName="Serious Event" base_Property="_sYRDB7ZmEeGvx_6yr-0T9g">
     <reference href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_dWKSsaDqEd-dVeaMP0XXQw"/>
   </CDA:CodeSystemConstraint>
   <CDA:PropertyValidation xmi:id="_sYREArZmEeGvx_6yr-0T9g" base_Property="_sYRDCLZmEeGvx_6yr-0T9g"/>
@@ -13397,7 +13547,7 @@ More specifically: The periodic time interval (PIVL_TS) type is used to record r
   <CDA:EntryRelationship xmi:id="_yhTN8NgGEeGTW4_acnW5rA" severity="INFO" base_Association="_xC1E0tgGEeGTW4_acnW5rA" typeCode="COMP"/>
   <CDA:PropertyValidation xmi:id="_2Trjj7ZmEeGvx_6yr-0T9g" base_Property="_2TrjHbZmEeGvx_6yr-0T9g"/>
   <CDA:PropertyValidation xmi:id="_2TrjkLZmEeGvx_6yr-0T9g" base_Property="_2TrjIbZmEeGvx_6yr-0T9g"/>
-  <CDA:CodeSystemConstraint xmi:id="_2TrjkbZmEeGvx_6yr-0T9g" base_Property="_2TrjIbZmEeGvx_6yr-0T9g">
+  <CDA:CodeSystemConstraint xmi:id="_2TrjkbZmEeGvx_6yr-0T9g" code="C78736" base_Property="_2TrjIbZmEeGvx_6yr-0T9g">
     <reference href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_dWKSsaDqEd-dVeaMP0XXQw"/>
   </CDA:CodeSystemConstraint>
   <CDA:PropertyValidation xmi:id="_2Trjk7ZmEeGvx_6yr-0T9g" base_Property="_2TrjKbZmEeGvx_6yr-0T9g"/>
@@ -13440,14 +13590,14 @@ More specifically: The periodic time interval (PIVL_TS) type is used to record r
   <CDA:PropertyValidation xmi:id="_geudMLc0EeGbTfv2pIp07Q" base_Property="_R--PEbc0EeGbTfv2pIp07Q"/>
   <CDA:CDATemplate xmi:id="_rOHGcNpyEeGwZdMPbuS7rw" base_Class="_P_ecgLc0EeGbTfv2pIp07Q" templateId="2.16.840.1.113883.10.20.23.29"/>
   <CDA:EntryRelationship xmi:id="_7eQ7MNpyEeGwZdMPbuS7rw" severity="INFO" base_Association="_5r6z0NpyEeGwZdMPbuS7rw" typeCode="COMP"/>
-  <CDA:CodeSystemConstraint xmi:id="_ATm5gNpzEeGwZdMPbuS7rw" base_Property="_R-1FIbc0EeGbTfv2pIp07Q">
+  <CDA:CodeSystemConstraint xmi:id="_ATm5gNpzEeGwZdMPbuS7rw" code="C95087" base_Property="_R-1FIbc0EeGbTfv2pIp07Q">
     <reference href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_dWKSsaDqEd-dVeaMP0XXQw"/>
   </CDA:CodeSystemConstraint>
   <CDA:EntryRelationship xmi:id="_MiZVINp0EeGwZdMPbuS7rw" severity="INFO" base_Association="_K-SeENp0EeGwZdMPbuS7rw" typeCode="COMP"/>
   <CDA:EntryRelationship xmi:id="_Vj-DUNp0EeGwZdMPbuS7rw" base_Association="_T8quUNp0EeGwZdMPbuS7rw" typeCode="COMP"/>
   <CDA:PropertyValidation xmi:id="_LujhkJOgEeG_Gqo8Ix5ECw" base_Property="_In55sJOgEeG_Gqo8Ix5ECw"/>
   <CDA:PropertyValidation xmi:id="_MJFhcJOgEeG_Gqo8Ix5ECw" base_Property="_In6gwJOgEeG_Gqo8Ix5ECw"/>
-  <CDA:CodeSystemConstraint xmi:id="_uT0scJOgEeG_Gqo8Ix5ECw" base_Property="_In6gwJOgEeG_Gqo8Ix5ECw">
+  <CDA:CodeSystemConstraint xmi:id="_uT0scJOgEeG_Gqo8Ix5ECw" code="AQtbd" base_Property="_In6gwJOgEeG_Gqo8Ix5ECw">
     <reference href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_dWKSsaDqEd-dVeaMP0XXQw"/>
   </CDA:CodeSystemConstraint>
   <CDA:PropertyValidation xmi:id="_MqdwMJOgEeG_Gqo8Ix5ECw" base_Property="_In6gwZOgEeG_Gqo8Ix5ECw"/>
@@ -13648,9 +13798,6 @@ More specifically: The periodic time interval (PIVL_TS) type is used to record r
     <reference href="sdtm-vocab.uml#_s0HVwPLuEeGMZ4RBIRkmiw"/>
   </CDA:CodeSystemConstraint>
   <CDA:ValueSetConstraint xmi:id="_xKZkEPLvEeGMZ4RBIRkmiw" base_Property="_aJMfgYjGEeGwjb3wu_tBLA">
-    <reference href="sdtm-vocab.uml#_8wRGEL_NEeGhFNoxTbVL8w"/>
-  </CDA:ValueSetConstraint>
-  <CDA:ValueSetConstraint xmi:id="_jAQkIPLwEeGMZ4RBIRkmiw" base_Property="_voyEZJobEeG78ZMLtGK0RQ">
     <reference href="sdtm-vocab.uml#_8wRGEL_NEeGhFNoxTbVL8w"/>
   </CDA:ValueSetConstraint>
   <CDA:CodeSystemConstraint xmi:id="_urzEIPNyEeGryoymXliRnA" base_Property="_voyEaZobEeG78ZMLtGK0RQ">
@@ -13971,4 +14118,38 @@ More specifically: The periodic time interval (PIVL_TS) type is used to record r
   <CDA:CodeSystemConstraint xmi:id="_s6xbQPa7EeGpiqtJ9hvVRQ" code="TRtbd" base_Property="_lMs8UPa7EeGpiqtJ9hvVRQ">
     <reference href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_dWKSsaDqEd-dVeaMP0XXQw"/>
   </CDA:CodeSystemConstraint>
+  <CDA:ValueSetConstraint xmi:id="_TjFicPj5EeG9SuM8Du0jIw" base_Property="_RyZAoWSrEeGaWrlBtEAvSQ">
+    <reference href="sdtm-vocab.uml#_osfHGfO0EeGaaIebpy5xoQ"/>
+  </CDA:ValueSetConstraint>
+  <CDA:PropertyValidation xmi:id="_fJLfAPj9EeG7pMUQbTahtA" base_Property="_D0zH0Pj9EeG7pMUQbTahtA"/>
+  <CDA:PropertyValidation xmi:id="_ftyA4Pj9EeG7pMUQbTahtA" base_Property="_D0zH0fj9EeG7pMUQbTahtA"/>
+  <CDA:PropertyValidation xmi:id="_gZ0AcPj9EeG7pMUQbTahtA" base_Property="_D0zH0vj9EeG7pMUQbTahtA"/>
+  <CDA:PropertyValidation xmi:id="_g_m1IPj9EeG7pMUQbTahtA" base_Property="_D0zH0_j9EeG7pMUQbTahtA"/>
+  <CDA:CDATemplate xmi:id="_k5GPMPj9EeG7pMUQbTahtA" base_Class="_-HQWMPj8EeG7pMUQbTahtA" templateId="2.16.840.1.113883.10.20.23.102"/>
+  <CDA:CodeSystemConstraint xmi:id="_s1AV0Pj9EeG7pMUQbTahtA" code="EDtbd" base_Property="_D0zH0fj9EeG7pMUQbTahtA">
+    <reference href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_dWKSsaDqEd-dVeaMP0XXQw"/>
+  </CDA:CodeSystemConstraint>
+  <CDA:EntryRelationship xmi:id="_Ix3CQPj-EeG7pMUQbTahtA" severity="INFO" base_Association="_AyrlMvj-EeG7pMUQbTahtA" typeCode="COMP"/>
+  <CDA:CodeSystemConstraint xmi:id="_x47GMPj-EeG7pMUQbTahtA" base_Property="_l-7ONJobEeG78ZMLtGK0RQ">
+    <reference href="sdtm-vocab.uml#_Pjn4MfLjEeGfjrJgpaHCTw"/>
+  </CDA:CodeSystemConstraint>
+  <CDA:CodeSystemConstraint xmi:id="_5Y3CgPj-EeG7pMUQbTahtA" code="C49569" base_Property="_NX5LQdKIEeGO8bQEpB8bpQ">
+    <reference href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_dWKSsaDqEd-dVeaMP0XXQw"/>
+  </CDA:CodeSystemConstraint>
+  <CDA:EntryRelationship xmi:id="_GStCwPj_EeG7pMUQbTahtA" severity="INFO" base_Association="_DudkYvj_EeG7pMUQbTahtA" typeCode="COMP"/>
+  <CDA:CodeSystemConstraint xmi:id="_biy8QPj_EeG7pMUQbTahtA" code="DCtbd" base_Property="_aJMfgYjGEeGwjb3wu_tBLA">
+    <reference href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_dWKSsaDqEd-dVeaMP0XXQw"/>
+  </CDA:CodeSystemConstraint>
+  <CDA:CodeSystemConstraint xmi:id="_ies-cPj_EeG7pMUQbTahtA" code="C95087" base_Property="_voyEZJobEeG78ZMLtGK0RQ">
+    <reference href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_dWKSsaDqEd-dVeaMP0XXQw"/>
+  </CDA:CodeSystemConstraint>
+  <CDA:CodeSystemConstraint xmi:id="_MWll4PkBEeGSwNE8SoqTXQ" base_Property="_B1zW85OkEeG_Gqo8Ix5ECw">
+    <reference href="sdtm-vocab.uml#_ucVhgJYMEeGdw75A0B2buQ"/>
+  </CDA:CodeSystemConstraint>
+  <CDA:EntryRelationship xmi:id="_x0EUAPkBEeGSwNE8SoqTXQ" severity="INFO" base_Association="_u9OpwvkBEeGSwNE8SoqTXQ" typeCode="COMP"/>
+  <CDA:Entry xmi:id="_OR8p4PkCEeGSwNE8SoqTXQ" severity="INFO" base_Association="_GvBrAvkCEeGSwNE8SoqTXQ"/>
+  <CDA:EntryRelationship xmi:id="_FK-o4PkDEeGSwNE8SoqTXQ" severity="INFO" base_Association="_DbPwovkDEeGSwNE8SoqTXQ" typeCode="COMP"/>
+  <CDA:EntryRelationship xmi:id="_q2YMUPkFEeGSwNE8SoqTXQ" severity="INFO" base_Association="_pfCl8vkFEeGSwNE8SoqTXQ" typeCode="COMP"/>
+  <CDA:EntryRelationship xmi:id="_0emDwPkFEeGSwNE8SoqTXQ" severity="INFO" base_Association="_w57qMvkFEeGSwNE8SoqTXQ" typeCode="COMP"/>
+  <CDA:EntryRelationship xmi:id="_OoJmkPkGEeGSwNE8SoqTXQ" severity="INFO" base_Association="_Mx4BcPkGEeGSwNE8SoqTXQ" typeCode="COMP"/>
 </xmi:XMI>
