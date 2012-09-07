@@ -235,8 +235,8 @@ Medication timing is complex. This template requires that there be a substanceAd
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_S8fa4SAQEeGKirKJsFylGA"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_2GHb2BSVEeGGzu7fmW9pXw" name="medicationSupplyOrder" type="_j3aTQBrTEeGo461UQq-B1g" association="_2GjgYxSVEeGGzu7fmW9pXw">
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_2GHb2RSVEeGGzu7fmW9pXw" value="*"/>
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_2GHb2hSVEeGGzu7fmW9pXw" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_dOQhUPEkEeGPm_ynmLKd6Q" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_dOQhUfEkEeGPm_ynmLKd6Q"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_2GHb2xSVEeGGzu7fmW9pXw" name="reactionObservation" association="_2GjgZRSVEeGGzu7fmW9pXw">
       <type xmi:type="uml:Class" href="consol-allergies.uml#_2E_aIRSVEeGGzu7fmW9pXw"/>
@@ -249,7 +249,8 @@ Medication timing is complex. This template requires that there be a substanceAd
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_FuGuASAQEeGKirKJsFylGA"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_H7DfgBUUEeG6PvUxSTZnaw" name="medicationDispense" type="_DpoGkBUUEeG6PvUxSTZnaw" association="_H7DfghUUEeG6PvUxSTZnaw">
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_H7DfgRUUEeG6PvUxSTZnaw"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_d3RpIPEkEeGPm_ynmLKd6Q" value="*"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_d3RpIfEkEeGPm_ynmLKd6Q"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_tZP_UBUUEeG6PvUxSTZnaw" name="precondition" type="_chEhQBUUEeG6PvUxSTZnaw" association="_tZZwUBUUEeG6PvUxSTZnaw">
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_30xEcB-zEeGKirKJsFylGA" value="*"/>
@@ -281,6 +282,9 @@ Medication timing is complex. This template requires that there be a substanceAd
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_bb-nAEOvEeG2teg5w9C5Rg" value="1"/>
     </ownedAttribute>
     <nestedClassifier xmi:type="uml:Class" xmi:id="_ou3j0G65EeGeVrQbtyMiPg" name="Consumable">
+      <ownedComment xmi:id="_Wzk84PEkEeGPm_ynmLKd6Q">
+        <body>INLINE</body>
+      </ownedComment>
       <generalization xmi:id="_rMAUoG65EeGeVrQbtyMiPg">
         <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_gRI5MEcEEd6besF9iFIJkQ"/>
       </generalization>
@@ -469,20 +473,11 @@ Medication timing is complex. This template requires that there be a substanceAd
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_fqu8EeATEeGlGcipF_0y2A" value="1"/>
       </ownedAttribute>
       <nestedClassifier xmi:type="uml:Class" xmi:id="_M7xhgEIxEeG4bZAl2IGXmQ" name="MedicationDispenseAssignedEntity">
-        <ownedRule xmi:id="_yWhZkELSEeGo1o5_NrjDhQ" name="addrUSRealm" constrainedElement="_M7xhgEIxEeG4bZAl2IGXmQ">
-          <ownedComment xmi:id="_1NQUUMbjEeGp28IjMvW3Ag">
-            <body>UNIMPLEMENTABLE</body>
-          </ownedComment>
-          <specification xmi:type="uml:OpaqueExpression" xmi:id="_0mX8UELSEeGo1o5_NrjDhQ">
-            <language>Analysis</language>
-            <body>The content of addr SHALL be a conformant US Realm Address (AD.US.FIELDED) (2.16.840.1.113883.10.20.22.5.2)</body>
-          </specification>
-        </ownedRule>
         <generalization xmi:id="_M7xhgUIxEeG4bZAl2IGXmQ">
           <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_6qmVsEcDEd6besF9iFIJkQ"/>
         </generalization>
         <ownedAttribute xmi:id="_pLd_QELSEeGo1o5_NrjDhQ" name="addr" visibility="private" aggregation="composite">
-          <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_v0zRUD5yEd6cla2oXsPtlA"/>
+          <type xmi:type="uml:Class" href="consol-documents.uml#_i4zXgPIPEeGu1M-cCXg0Dg"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_vU2_YELSEeGo1o5_NrjDhQ" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_vU2_YULSEeGo1o5_NrjDhQ"/>
           <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_DBIXAEoeEd6c3qsAxlFHaQ"/>
@@ -1420,9 +1415,6 @@ The UDI should be sent in the participantRole/id.</body>
   <CDA:AssociationValidation xmi:id="_f4d2EOATEeGlGcipF_0y2A" base_Association="_ei0RwOATEeGlGcipF_0y2A">
     <ruleId>CONF:7467</ruleId>
   </CDA:AssociationValidation>
-  <CDA:ConstraintValidation xmi:id="_07yysELSEeGo1o5_NrjDhQ" base_Constraint="_yWhZkELSEeGo1o5_NrjDhQ">
-    <ruleId>CONF:10565</ruleId>
-  </CDA:ConstraintValidation>
   <CDA:PropertyValidation xmi:id="_vjxlIELSEeGo1o5_NrjDhQ" severity="WARNING" base_Property="_pLd_QELSEeGo1o5_NrjDhQ">
     <ruleId>CONF:7468</ruleId>
   </CDA:PropertyValidation>

@@ -332,7 +332,7 @@ http://www.fda.gov/ForIndustry/DataStandards/StructuredProductLabeling/ucm162523
     <packagedElement xmi:type="uml:Enumeration" xmi:id="_RSgFgG1EEeGCevFpokwODw" name="EntityNameUse"/>
     <packagedElement xmi:type="uml:Enumeration" xmi:id="_WCEzAG1EEeGCevFpokwODw" name="EntityPersonNamePartQualifier"/>
     <packagedElement xmi:type="uml:Enumeration" xmi:id="_bkwYcG1EEeGCevFpokwODw" name="FamilyHistoryRelatedSubjectCode"/>
-    <packagedElement xmi:type="uml:Enumeration" xmi:id="_fgBpQG1GEeGCevFpokwODw" name="HITSP Ethnicity Value Set"/>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_fgBpQG1GEeGCevFpokwODw" name="Ethnicity Value Set"/>
     <packagedElement xmi:type="uml:Enumeration" xmi:id="_mYWWgG1HEeGCevFpokwODw" name="Plan of Care moodCode (Act/Encounter/Procedure)"/>
     <packagedElement xmi:type="uml:Enumeration" xmi:id="_rCMPcG1HEeGCevFpokwODw" name="Plan of Care moodCode (Observation)"/>
     <packagedElement xmi:type="uml:Enumeration" xmi:id="_u3oP8G1HEeGCevFpokwODw" name="Plan of Care moodCode (SubstanceAdministration/Supply)"/>
@@ -377,7 +377,7 @@ http://www.fda.gov/ForIndustry/DataStandards/StructuredProductLabeling/ucm162523
     </packagedElement>
     <packagedElement xmi:type="uml:Enumeration" xmi:id="_VwxrcOcFEeGINOJ_SD9_dA" name="Pressure Point"/>
     <packagedElement xmi:type="uml:Enumeration" xmi:id="_tCvWEOcFEeGINOJ_SD9_dA" name="TargetSite Qualifiers"/>
-    <packagedElement xmi:type="uml:Enumeration" xmi:id="_SizqcOxyEeG7k4bbVdXbXw" name="ParticiaptionFunction"/>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_SizqcOxyEeG7k4bbVdXbXw" name="ParticipationFunction"/>
     <profileApplication xmi:id="_2B97WxSVEeGGzu7fmW9pXw">
       <eAnnotations xmi:id="_2B97XBSVEeGGzu7fmW9pXw" source="http://www.eclipse.org/uml2/2.0.0/UML">
         <references xmi:type="ecore:EPackage" href="http://www.openhealthtools.org/mdht/schemas/term/1#/"/>
@@ -750,7 +750,7 @@ http://www.fda.gov/ForIndustry/DataStandards/StructuredProductLabeling/ucm162523
   <term:ValueSetVersion xmi:id="_bkwYcW1EEeGCevFpokwODw" identifier="2.16.840.1.113883.1.11.19579" base_Enumeration="_bkwYcG1EEeGCevFpokwODw">
     <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_ywdZ4Gg7Ed-ilOLYnIx0jA"/>
   </term:ValueSetVersion>
-  <term:ValueSetVersion xmi:id="_fgCQUG1GEeGCevFpokwODw" identifier="2.16.840.1.113883.1.11.15836" base_Enumeration="_fgBpQG1GEeGCevFpokwODw">
+  <term:ValueSetVersion xmi:id="_fgCQUG1GEeGCevFpokwODw" identifier="2.16.840.1.114222.4.11.837" base_Enumeration="_fgBpQG1GEeGCevFpokwODw">
     <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_dfdYoKDqEd-dVeaMP0XXQw"/>
   </term:ValueSetVersion>
   <term:ValueSetVersion xmi:id="_mYW9kG1HEeGCevFpokwODw" identifier="2.16.840.1.113883.11.20.9.23" base_Enumeration="_mYWWgG1HEeGCevFpokwODw">

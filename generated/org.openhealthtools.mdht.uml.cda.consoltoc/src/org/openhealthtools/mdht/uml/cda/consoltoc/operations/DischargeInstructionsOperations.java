@@ -544,7 +544,7 @@ public class DischargeInstructionsOperations extends GeneralHeaderConstraintsOpe
   {
 		if (GET_PLAN_OF_CARE_SECTION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(ConsoltocPackage.Literals.DISCHARGE_INSTRUCTIONS, ConsoltocPackage.Literals.DISCHARGE_INSTRUCTIONS.getEAllOperations().get(177));
+			helper.setOperationContext(ConsoltocPackage.Literals.DISCHARGE_INSTRUCTIONS, ConsoltocPackage.Literals.DISCHARGE_INSTRUCTIONS.getEAllOperations().get(297));
 			try {
 				GET_PLAN_OF_CARE_SECTION__EOCL_QRY = helper.createQuery(GET_PLAN_OF_CARE_SECTION__EOCL_EXP);
 			}
@@ -589,7 +589,7 @@ public class DischargeInstructionsOperations extends GeneralHeaderConstraintsOpe
   {
 		if (GET_ALLERGIES_SECTION_ENTRIES_OPTIONAL__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(ConsoltocPackage.Literals.DISCHARGE_INSTRUCTIONS, ConsoltocPackage.Literals.DISCHARGE_INSTRUCTIONS.getEAllOperations().get(178));
+			helper.setOperationContext(ConsoltocPackage.Literals.DISCHARGE_INSTRUCTIONS, ConsoltocPackage.Literals.DISCHARGE_INSTRUCTIONS.getEAllOperations().get(298));
 			try {
 				GET_ALLERGIES_SECTION_ENTRIES_OPTIONAL__EOCL_QRY = helper.createQuery(GET_ALLERGIES_SECTION_ENTRIES_OPTIONAL__EOCL_EXP);
 			}
@@ -634,7 +634,7 @@ public class DischargeInstructionsOperations extends GeneralHeaderConstraintsOpe
   {
 		if (GET_PROBLEM_SECTION_ENTRIES_OPTIONAL__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(ConsoltocPackage.Literals.DISCHARGE_INSTRUCTIONS, ConsoltocPackage.Literals.DISCHARGE_INSTRUCTIONS.getEAllOperations().get(179));
+			helper.setOperationContext(ConsoltocPackage.Literals.DISCHARGE_INSTRUCTIONS, ConsoltocPackage.Literals.DISCHARGE_INSTRUCTIONS.getEAllOperations().get(299));
 			try {
 				GET_PROBLEM_SECTION_ENTRIES_OPTIONAL__EOCL_QRY = helper.createQuery(GET_PROBLEM_SECTION_ENTRIES_OPTIONAL__EOCL_EXP);
 			}
@@ -679,7 +679,7 @@ public class DischargeInstructionsOperations extends GeneralHeaderConstraintsOpe
   {
 		if (GET_HOSPITAL_DISCHARGE_MEDICATIONS_SECTION_ENTRIES_OPTIONAL__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(ConsoltocPackage.Literals.DISCHARGE_INSTRUCTIONS, ConsoltocPackage.Literals.DISCHARGE_INSTRUCTIONS.getEAllOperations().get(180));
+			helper.setOperationContext(ConsoltocPackage.Literals.DISCHARGE_INSTRUCTIONS, ConsoltocPackage.Literals.DISCHARGE_INSTRUCTIONS.getEAllOperations().get(300));
 			try {
 				GET_HOSPITAL_DISCHARGE_MEDICATIONS_SECTION_ENTRIES_OPTIONAL__EOCL_QRY = helper.createQuery(GET_HOSPITAL_DISCHARGE_MEDICATIONS_SECTION_ENTRIES_OPTIONAL__EOCL_EXP);
 			}
@@ -724,7 +724,7 @@ public class DischargeInstructionsOperations extends GeneralHeaderConstraintsOpe
   {
 		if (GET_ADVANCE_DIRECTIVES_SECTION_ENTRIES_OPTIONAL__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(ConsoltocPackage.Literals.DISCHARGE_INSTRUCTIONS, ConsoltocPackage.Literals.DISCHARGE_INSTRUCTIONS.getEAllOperations().get(181));
+			helper.setOperationContext(ConsoltocPackage.Literals.DISCHARGE_INSTRUCTIONS, ConsoltocPackage.Literals.DISCHARGE_INSTRUCTIONS.getEAllOperations().get(301));
 			try {
 				GET_ADVANCE_DIRECTIVES_SECTION_ENTRIES_OPTIONAL__EOCL_QRY = helper.createQuery(GET_ADVANCE_DIRECTIVES_SECTION_ENTRIES_OPTIONAL__EOCL_EXP);
 			}
@@ -769,7 +769,7 @@ public class DischargeInstructionsOperations extends GeneralHeaderConstraintsOpe
   {
 		if (GET_IMMUNIZATIONS_SECTION_ENTRIES_OPTIONAL__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(ConsoltocPackage.Literals.DISCHARGE_INSTRUCTIONS, ConsoltocPackage.Literals.DISCHARGE_INSTRUCTIONS.getEAllOperations().get(182));
+			helper.setOperationContext(ConsoltocPackage.Literals.DISCHARGE_INSTRUCTIONS, ConsoltocPackage.Literals.DISCHARGE_INSTRUCTIONS.getEAllOperations().get(302));
 			try {
 				GET_IMMUNIZATIONS_SECTION_ENTRIES_OPTIONAL__EOCL_QRY = helper.createQuery(GET_IMMUNIZATIONS_SECTION_ENTRIES_OPTIONAL__EOCL_EXP);
 			}
@@ -814,7 +814,7 @@ public class DischargeInstructionsOperations extends GeneralHeaderConstraintsOpe
   {
 		if (GET_MEDICAL_EQUIPMENT_SECTION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(ConsoltocPackage.Literals.DISCHARGE_INSTRUCTIONS, ConsoltocPackage.Literals.DISCHARGE_INSTRUCTIONS.getEAllOperations().get(183));
+			helper.setOperationContext(ConsoltocPackage.Literals.DISCHARGE_INSTRUCTIONS, ConsoltocPackage.Literals.DISCHARGE_INSTRUCTIONS.getEAllOperations().get(303));
 			try {
 				GET_MEDICAL_EQUIPMENT_SECTION__EOCL_QRY = helper.createQuery(GET_MEDICAL_EQUIPMENT_SECTION__EOCL_EXP);
 			}

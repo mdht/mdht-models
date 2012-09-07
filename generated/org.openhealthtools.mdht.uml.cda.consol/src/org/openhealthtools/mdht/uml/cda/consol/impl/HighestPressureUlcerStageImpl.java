@@ -35,94 +35,94 @@ import org.openhealthtools.mdht.uml.cda.impl.ObservationImpl;
  */
 public class HighestPressureUlcerStageImpl extends ObservationImpl implements HighestPressureUlcerStage {
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	protected HighestPressureUlcerStageImpl() {
 		super();
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	@Override
 	protected EClass eStaticClass() {
 		return ConsolPackage.Literals.HIGHEST_PRESSURE_ULCER_STAGE;
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateHighestPressureUlcerStageTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return HighestPressureUlcerStageOperations.validateHighestPressureUlcerStageTemplateId(
 			this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateHighestPressureUlcerStageClassCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return HighestPressureUlcerStageOperations.validateHighestPressureUlcerStageClassCode(
 			this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateHighestPressureUlcerStageMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return HighestPressureUlcerStageOperations.validateHighestPressureUlcerStageMoodCode(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateHighestPressureUlcerStageId(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return HighestPressureUlcerStageOperations.validateHighestPressureUlcerStageId(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateHighestPressureUlcerStageCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return HighestPressureUlcerStageOperations.validateHighestPressureUlcerStageCodeP(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateHighestPressureUlcerStageCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return HighestPressureUlcerStageOperations.validateHighestPressureUlcerStageCode(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateHighestPressureUlcerStageValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return HighestPressureUlcerStageOperations.validateHighestPressureUlcerStageValue(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public HighestPressureUlcerStage init() {
 		return Initializer.Util.init(this);
 	}
