@@ -131,16 +131,6 @@ public class Mu2consolSwitch<T> {
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case Mu2consolPackage.INSTRUCTIONS_SECTION: {
-				InstructionsSection instructionsSection = (InstructionsSection)theEObject;
-				T result = caseInstructionsSection(instructionsSection);
-				if (result == null) result = caseConsol_InstructionsSection(instructionsSection);
-				if (result == null) result = caseSection(instructionsSection);
-				if (result == null) result = caseAct(instructionsSection);
-				if (result == null) result = caseInfrastructureRoot(instructionsSection);
-				if (result == null) result = defaultCase(theEObject);
-				return result;
-			}
 			case Mu2consolPackage.ASSESSMENT_SECTION: {
 				AssessmentSection assessmentSection = (AssessmentSection)theEObject;
 				T result = caseAssessmentSection(assessmentSection);
@@ -221,16 +211,6 @@ public class Mu2consolSwitch<T> {
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case Mu2consolPackage.ALLERGIES_SECTION_ENTRIES_OPTIONAL: {
-				AllergiesSectionEntriesOptional allergiesSectionEntriesOptional = (AllergiesSectionEntriesOptional)theEObject;
-				T result = caseAllergiesSectionEntriesOptional(allergiesSectionEntriesOptional);
-				if (result == null) result = caseConsol_AllergiesSectionEntriesOptional(allergiesSectionEntriesOptional);
-				if (result == null) result = caseSection(allergiesSectionEntriesOptional);
-				if (result == null) result = caseAct(allergiesSectionEntriesOptional);
-				if (result == null) result = caseInfrastructureRoot(allergiesSectionEntriesOptional);
-				if (result == null) result = defaultCase(theEObject);
-				return result;
-			}
 			case Mu2consolPackage.POSTPROCEDURE_DIAGNOSIS_SECTION: {
 				PostprocedureDiagnosisSection postprocedureDiagnosisSection = (PostprocedureDiagnosisSection)theEObject;
 				T result = casePostprocedureDiagnosisSection(postprocedureDiagnosisSection);
@@ -238,6 +218,16 @@ public class Mu2consolSwitch<T> {
 				if (result == null) result = caseSection(postprocedureDiagnosisSection);
 				if (result == null) result = caseAct(postprocedureDiagnosisSection);
 				if (result == null) result = caseInfrastructureRoot(postprocedureDiagnosisSection);
+				if (result == null) result = defaultCase(theEObject);
+				return result;
+			}
+			case Mu2consolPackage.FUNCTIONAL_STATUS_SECTION: {
+				FunctionalStatusSection functionalStatusSection = (FunctionalStatusSection)theEObject;
+				T result = caseFunctionalStatusSection(functionalStatusSection);
+				if (result == null) result = caseConsol_FunctionalStatusSection(functionalStatusSection);
+				if (result == null) result = caseSection(functionalStatusSection);
+				if (result == null) result = caseAct(functionalStatusSection);
+				if (result == null) result = caseInfrastructureRoot(functionalStatusSection);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
@@ -258,6 +248,26 @@ public class Mu2consolSwitch<T> {
 				if (result == null) result = caseSection(assessmentAndPlanForConditionOrConcern);
 				if (result == null) result = caseAct(assessmentAndPlanForConditionOrConcern);
 				if (result == null) result = caseInfrastructureRoot(assessmentAndPlanForConditionOrConcern);
+				if (result == null) result = defaultCase(theEObject);
+				return result;
+			}
+			case Mu2consolPackage.INSTRUCTIONS_SECTION: {
+				InstructionsSection instructionsSection = (InstructionsSection)theEObject;
+				T result = caseInstructionsSection(instructionsSection);
+				if (result == null) result = caseConsol_InstructionsSection(instructionsSection);
+				if (result == null) result = caseSection(instructionsSection);
+				if (result == null) result = caseAct(instructionsSection);
+				if (result == null) result = caseInfrastructureRoot(instructionsSection);
+				if (result == null) result = defaultCase(theEObject);
+				return result;
+			}
+			case Mu2consolPackage.ALLERGIES_SECTION_ENTRIES_OPTIONAL: {
+				AllergiesSectionEntriesOptional allergiesSectionEntriesOptional = (AllergiesSectionEntriesOptional)theEObject;
+				T result = caseAllergiesSectionEntriesOptional(allergiesSectionEntriesOptional);
+				if (result == null) result = caseConsol_AllergiesSectionEntriesOptional(allergiesSectionEntriesOptional);
+				if (result == null) result = caseSection(allergiesSectionEntriesOptional);
+				if (result == null) result = caseAct(allergiesSectionEntriesOptional);
+				if (result == null) result = caseInfrastructureRoot(allergiesSectionEntriesOptional);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
@@ -315,6 +325,41 @@ public class Mu2consolSwitch<T> {
 				if (result == null) result = caseClinicalDocument(transitionOfCareInpatientSummary);
 				if (result == null) result = caseAct(transitionOfCareInpatientSummary);
 				if (result == null) result = caseInfrastructureRoot(transitionOfCareInpatientSummary);
+				if (result == null) result = defaultCase(theEObject);
+				return result;
+			}
+			case Mu2consolPackage.VIEW_DOWNLOAD_TRANSMIT_SUMMARY: {
+				ViewDownloadTransmitSummary viewDownloadTransmitSummary = (ViewDownloadTransmitSummary)theEObject;
+				T result = caseViewDownloadTransmitSummary(viewDownloadTransmitSummary);
+				if (result == null) result = caseGeneralHeaderConstraints(viewDownloadTransmitSummary);
+				if (result == null) result = caseConsol_GeneralHeaderConstraints(viewDownloadTransmitSummary);
+				if (result == null) result = caseClinicalDocument(viewDownloadTransmitSummary);
+				if (result == null) result = caseAct(viewDownloadTransmitSummary);
+				if (result == null) result = caseInfrastructureRoot(viewDownloadTransmitSummary);
+				if (result == null) result = defaultCase(theEObject);
+				return result;
+			}
+			case Mu2consolPackage.VDT_INPATIENT_SUMMARY: {
+				VDTInpatientSummary vdtInpatientSummary = (VDTInpatientSummary)theEObject;
+				T result = caseVDTInpatientSummary(vdtInpatientSummary);
+				if (result == null) result = caseViewDownloadTransmitSummary(vdtInpatientSummary);
+				if (result == null) result = caseGeneralHeaderConstraints(vdtInpatientSummary);
+				if (result == null) result = caseConsol_GeneralHeaderConstraints(vdtInpatientSummary);
+				if (result == null) result = caseClinicalDocument(vdtInpatientSummary);
+				if (result == null) result = caseAct(vdtInpatientSummary);
+				if (result == null) result = caseInfrastructureRoot(vdtInpatientSummary);
+				if (result == null) result = defaultCase(theEObject);
+				return result;
+			}
+			case Mu2consolPackage.VDT_AMBULATORY_SUMMARY: {
+				VDTAmbulatorySummary vdtAmbulatorySummary = (VDTAmbulatorySummary)theEObject;
+				T result = caseVDTAmbulatorySummary(vdtAmbulatorySummary);
+				if (result == null) result = caseViewDownloadTransmitSummary(vdtAmbulatorySummary);
+				if (result == null) result = caseGeneralHeaderConstraints(vdtAmbulatorySummary);
+				if (result == null) result = caseConsol_GeneralHeaderConstraints(vdtAmbulatorySummary);
+				if (result == null) result = caseClinicalDocument(vdtAmbulatorySummary);
+				if (result == null) result = caseAct(vdtAmbulatorySummary);
+				if (result == null) result = caseInfrastructureRoot(vdtAmbulatorySummary);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
@@ -498,6 +543,51 @@ public class Mu2consolSwitch<T> {
 	}
 
 	/**
+	 * Returns the result of interpreting the object as an instance of '<em>View Download Transmit Summary</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>View Download Transmit Summary</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseViewDownloadTransmitSummary(ViewDownloadTransmitSummary object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>VDT Inpatient Summary</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>VDT Inpatient Summary</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseVDTInpatientSummary(VDTInpatientSummary object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>VDT Ambulatory Summary</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>VDT Ambulatory Summary</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseVDTAmbulatorySummary(VDTAmbulatorySummary object) {
+		return null;
+	}
+
+	/**
 	 * Returns the result of interpreting the object as an instance of '<em>Hospital Admission Diagnosis Section</em>'.
 	 * <!-- begin-user-doc -->
 	 * This implementation returns null; returning a non-null result will
@@ -554,6 +644,21 @@ public class Mu2consolSwitch<T> {
 	 */
 	public T casePostprocedureDiagnosisSection(
 			PostprocedureDiagnosisSection object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Functional Status Section</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Functional Status Section</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseFunctionalStatusSection(FunctionalStatusSection object) {
 		return null;
 	}
 
@@ -840,6 +945,21 @@ public class Mu2consolSwitch<T> {
 	 */
 	public T caseConsol_PostprocedureDiagnosisSection(
 			org.openhealthtools.mdht.uml.cda.consol.PostprocedureDiagnosisSection object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Functional Status Section</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Functional Status Section</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseConsol_FunctionalStatusSection(org.openhealthtools.mdht.uml.cda.consol.FunctionalStatusSection object) {
 		return null;
 	}
 

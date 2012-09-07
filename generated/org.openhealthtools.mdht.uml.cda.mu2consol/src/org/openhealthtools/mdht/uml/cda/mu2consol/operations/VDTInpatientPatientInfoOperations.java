@@ -65,6 +65,7 @@ import org.openhealthtools.mdht.uml.cda.mu2consol.util.Mu2consolValidator;
  *   <li>{@link org.openhealthtools.mdht.uml.cda.mu2consol.VDTInpatientPatientInfo#validateVDTInpatientPatientInfoHospitalAdmissionMedicationsSectionEntriesOptionalTemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate VDT Inpatient Patient Info Hospital Admission Medications Section Entries Optional Template Id</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.mu2consol.VDTInpatientPatientInfo#validateVDTInpatientPatientInfomu2consolHospitalAdmissionMedicationsSectionEntriesOptionalAdmissionMedication(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate VDT Inpatient Patient Infomu2consol Hospital Admission Medications Section Entries Optional Admission Medication</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.mu2consol.VDTInpatientPatientInfo#validateVDTInpatientPatientInfomu2consolPlanOfCareSectionCarePlanningForPlanOfCare(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate VDT Inpatient Patient Infomu2consol Plan Of Care Section Care Planning For Plan Of Care</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.mu2consol.VDTInpatientPatientInfo#validateVDTInpatientPatientInfomu2consolPlanOfCareSectionMu2consolPlanOfCareSectionPlanOfCareActivityObservation(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate VDT Inpatient Patient Infomu2consol Plan Of Care Section Mu2consol Plan Of Care Section Plan Of Care Activity Observation</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.mu2consol.VDTInpatientPatientInfo#validateVDTInpatientPatientInfoPlanOfCareSectionTemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate VDT Inpatient Patient Info Plan Of Care Section Template Id</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.mu2consol.VDTInpatientPatientInfo#getSocialHistorySection() <em>Get Social History Section</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.mu2consol.VDTInpatientPatientInfo#getProblemSection() <em>Get Problem Section</em>}</li>
@@ -1076,6 +1077,73 @@ public class VDTInpatientPatientInfoOperations extends
 	}
 
 	/**
+	 * The cached OCL expression body for the '{@link #validateVDTInpatientPatientInfomu2consolPlanOfCareSectionMu2consolPlanOfCareSectionPlanOfCareActivityObservation(VDTInpatientPatientInfo, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate VDT Inpatient Patient Infomu2consol Plan Of Care Section Mu2consol Plan Of Care Section Plan Of Care Activity Observation</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateVDTInpatientPatientInfomu2consolPlanOfCareSectionMu2consolPlanOfCareSectionPlanOfCareActivityObservation(VDTInpatientPatientInfo, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String VALIDATE_VDT_INPATIENT_PATIENT_INFOMU2CONSOL_PLAN_OF_CARE_SECTION_MU2CONSOL_PLAN_OF_CARE_SECTION_PLAN_OF_CARE_ACTIVITY_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.getPlanOfCareSection()->excluding(null)->reject(getPlanOfCareSection().entry->one(entry : cda::Entry | not entry.observation.oclIsUndefined() and entry.observation.oclIsKindOf(consol::PlanOfCareActivityObservation)))";
+
+	/**
+	 * The cached OCL invariant for the '{@link #validateVDTInpatientPatientInfomu2consolPlanOfCareSectionMu2consolPlanOfCareSectionPlanOfCareActivityObservation(VDTInpatientPatientInfo, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate VDT Inpatient Patient Infomu2consol Plan Of Care Section Mu2consol Plan Of Care Section Plan Of Care Activity Observation</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateVDTInpatientPatientInfomu2consolPlanOfCareSectionMu2consolPlanOfCareSectionPlanOfCareActivityObservation(VDTInpatientPatientInfo, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+	
+	protected static Query<?, ?, ?> VALIDATE_VDT_INPATIENT_PATIENT_INFOMU2CONSOL_PLAN_OF_CARE_SECTION_MU2CONSOL_PLAN_OF_CARE_SECTION_PLAN_OF_CARE_ACTIVITY_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * self.getPlanOfCareSection()->excluding(null)->reject(getPlanOfCareSection().entry->one(entry : cda::Entry | not entry.observation.oclIsUndefined() and entry.observation.oclIsKindOf(consol::PlanOfCareActivityObservation)))
+	 * @param vdtInpatientPatientInfo The receiving '<em><b>VDT Inpatient Patient Info</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
+	@SuppressWarnings("unchecked")
+	public static  boolean validateVDTInpatientPatientInfomu2consolPlanOfCareSectionMu2consolPlanOfCareSectionPlanOfCareActivityObservation(VDTInpatientPatientInfo vdtInpatientPatientInfo, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
+		
+			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+			helper.setContext(Mu2consolPackage.Literals.VDT_INPATIENT_PATIENT_INFO);
+			try {
+				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_VDT_INPATIENT_PATIENT_INFOMU2CONSOL_PLAN_OF_CARE_SECTION_MU2CONSOL_PLAN_OF_CARE_SECTION_PLAN_OF_CARE_ACTIVITY_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_VDT_INPATIENT_PATIENT_INFOMU2CONSOL_PLAN_OF_CARE_SECTION_MU2CONSOL_PLAN_OF_CARE_SECTION_PLAN_OF_CARE_ACTIVITY_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(oclExpression);
+			}
+			catch (ParserException pe) {
+				throw new UnsupportedOperationException(pe.getLocalizedMessage());
+			}
+		
+		Object oclResult = VALIDATE_VDT_INPATIENT_PATIENT_INFOMU2CONSOL_PLAN_OF_CARE_SECTION_MU2CONSOL_PLAN_OF_CARE_SECTION_PLAN_OF_CARE_ACTIVITY_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(vdtInpatientPatientInfo);		
+		if (oclResult != null && oclResult instanceof Collection) {
+			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
+  			
+			if (diagnostics != null) {
+				for (EObject eObject : oclResultSet) {
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 Mu2consolValidator.DIAGNOSTIC_SOURCE,
+						 Mu2consolValidator.VDT_INPATIENT_PATIENT_INFO__VDT_INPATIENT_PATIENT_INFOMU2CONSOL_PLAN_OF_CARE_SECTION_MU2CONSOL_PLAN_OF_CARE_SECTION_PLAN_OF_CARE_ACTIVITY_OBSERVATION,
+						 Mu2consolPlugin.INSTANCE.getString("VDTInpatientPatientInfomu2consolPlanOfCareSectionMu2consolPlanOfCareSectionPlanOfCareActivityObservation"),
+						 new Object [] { eObject }));
+				}
+				 
+			}
+			return oclResultSet.isEmpty();
+		}
+		return true;
+	}
+
+	/**
 	 * The cached OCL expression body for the '{@link #validateVDTInpatientPatientInfoPlanOfCareSectionTemplateId(VDTInpatientPatientInfo, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate VDT Inpatient Patient Info Plan Of Care Section Template Id</em>}' operation.
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @see #validateVDTInpatientPatientInfoPlanOfCareSectionTemplateId(VDTInpatientPatientInfo, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
@@ -1187,7 +1255,7 @@ public class VDTInpatientPatientInfoOperations extends
 			VDTInpatientPatientInfo vdtInpatientPatientInfo) {
 		if (GET_SOCIAL_HISTORY_SECTION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(Mu2consolPackage.Literals.VDT_INPATIENT_PATIENT_INFO, Mu2consolPackage.Literals.VDT_INPATIENT_PATIENT_INFO.getEAllOperations().get(190));
+			helper.setOperationContext(Mu2consolPackage.Literals.VDT_INPATIENT_PATIENT_INFO, Mu2consolPackage.Literals.VDT_INPATIENT_PATIENT_INFO.getEAllOperations().get(194));
 			try {
 				GET_SOCIAL_HISTORY_SECTION__EOCL_QRY = helper.createQuery(GET_SOCIAL_HISTORY_SECTION__EOCL_EXP);
 			}
@@ -1236,7 +1304,7 @@ public class VDTInpatientPatientInfoOperations extends
 			VDTInpatientPatientInfo vdtInpatientPatientInfo) {
 		if (GET_PROBLEM_SECTION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(Mu2consolPackage.Literals.VDT_INPATIENT_PATIENT_INFO, Mu2consolPackage.Literals.VDT_INPATIENT_PATIENT_INFO.getEAllOperations().get(191));
+			helper.setOperationContext(Mu2consolPackage.Literals.VDT_INPATIENT_PATIENT_INFO, Mu2consolPackage.Literals.VDT_INPATIENT_PATIENT_INFO.getEAllOperations().get(195));
 			try {
 				GET_PROBLEM_SECTION__EOCL_QRY = helper.createQuery(GET_PROBLEM_SECTION__EOCL_EXP);
 			}
@@ -1285,7 +1353,7 @@ public class VDTInpatientPatientInfoOperations extends
 			VDTInpatientPatientInfo vdtInpatientPatientInfo) {
 		if (GET_MEDICATIONS_SECTION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(Mu2consolPackage.Literals.VDT_INPATIENT_PATIENT_INFO, Mu2consolPackage.Literals.VDT_INPATIENT_PATIENT_INFO.getEAllOperations().get(192));
+			helper.setOperationContext(Mu2consolPackage.Literals.VDT_INPATIENT_PATIENT_INFO, Mu2consolPackage.Literals.VDT_INPATIENT_PATIENT_INFO.getEAllOperations().get(196));
 			try {
 				GET_MEDICATIONS_SECTION__EOCL_QRY = helper.createQuery(GET_MEDICATIONS_SECTION__EOCL_EXP);
 			}
@@ -1333,7 +1401,7 @@ public class VDTInpatientPatientInfoOperations extends
 			VDTInpatientPatientInfo vdtInpatientPatientInfo) {
 		if (GET_HOSPITAL_ADMISSION_MEDICATIONS_SECTION_ENTRIES_OPTIONAL__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(Mu2consolPackage.Literals.VDT_INPATIENT_PATIENT_INFO, Mu2consolPackage.Literals.VDT_INPATIENT_PATIENT_INFO.getEAllOperations().get(193));
+			helper.setOperationContext(Mu2consolPackage.Literals.VDT_INPATIENT_PATIENT_INFO, Mu2consolPackage.Literals.VDT_INPATIENT_PATIENT_INFO.getEAllOperations().get(197));
 			try {
 				GET_HOSPITAL_ADMISSION_MEDICATIONS_SECTION_ENTRIES_OPTIONAL__EOCL_QRY = helper.createQuery(GET_HOSPITAL_ADMISSION_MEDICATIONS_SECTION_ENTRIES_OPTIONAL__EOCL_EXP);
 			}
@@ -1384,7 +1452,7 @@ public class VDTInpatientPatientInfoOperations extends
 			VDTInpatientPatientInfo vdtInpatientPatientInfo) {
 		if (GET_HOSPITAL_DISCHARGE_MEDICATIONS_SECTION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(Mu2consolPackage.Literals.VDT_INPATIENT_PATIENT_INFO, Mu2consolPackage.Literals.VDT_INPATIENT_PATIENT_INFO.getEAllOperations().get(194));
+			helper.setOperationContext(Mu2consolPackage.Literals.VDT_INPATIENT_PATIENT_INFO, Mu2consolPackage.Literals.VDT_INPATIENT_PATIENT_INFO.getEAllOperations().get(198));
 			try {
 				GET_HOSPITAL_DISCHARGE_MEDICATIONS_SECTION__EOCL_QRY = helper.createQuery(GET_HOSPITAL_DISCHARGE_MEDICATIONS_SECTION__EOCL_EXP);
 			}
@@ -1433,7 +1501,7 @@ public class VDTInpatientPatientInfoOperations extends
 			VDTInpatientPatientInfo vdtInpatientPatientInfo) {
 		if (GET_ALLERGIES_SECTION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(Mu2consolPackage.Literals.VDT_INPATIENT_PATIENT_INFO, Mu2consolPackage.Literals.VDT_INPATIENT_PATIENT_INFO.getEAllOperations().get(195));
+			helper.setOperationContext(Mu2consolPackage.Literals.VDT_INPATIENT_PATIENT_INFO, Mu2consolPackage.Literals.VDT_INPATIENT_PATIENT_INFO.getEAllOperations().get(199));
 			try {
 				GET_ALLERGIES_SECTION__EOCL_QRY = helper.createQuery(GET_ALLERGIES_SECTION__EOCL_EXP);
 			}
@@ -1487,7 +1555,7 @@ public class VDTInpatientPatientInfoOperations extends
 			VDTInpatientPatientInfo vdtInpatientPatientInfo) {
 		if (GET_ALLERGIES_SECTION_ENTRIES_OPTIONAL__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(Mu2consolPackage.Literals.VDT_INPATIENT_PATIENT_INFO, Mu2consolPackage.Literals.VDT_INPATIENT_PATIENT_INFO.getEAllOperations().get(196));
+			helper.setOperationContext(Mu2consolPackage.Literals.VDT_INPATIENT_PATIENT_INFO, Mu2consolPackage.Literals.VDT_INPATIENT_PATIENT_INFO.getEAllOperations().get(200));
 			try {
 				GET_ALLERGIES_SECTION_ENTRIES_OPTIONAL__EOCL_QRY = helper.createQuery(GET_ALLERGIES_SECTION_ENTRIES_OPTIONAL__EOCL_EXP);
 			}
@@ -1536,7 +1604,7 @@ public class VDTInpatientPatientInfoOperations extends
 			VDTInpatientPatientInfo vdtInpatientPatientInfo) {
 		if (GET_RESULTS_SECTION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(Mu2consolPackage.Literals.VDT_INPATIENT_PATIENT_INFO, Mu2consolPackage.Literals.VDT_INPATIENT_PATIENT_INFO.getEAllOperations().get(197));
+			helper.setOperationContext(Mu2consolPackage.Literals.VDT_INPATIENT_PATIENT_INFO, Mu2consolPackage.Literals.VDT_INPATIENT_PATIENT_INFO.getEAllOperations().get(201));
 			try {
 				GET_RESULTS_SECTION__EOCL_QRY = helper.createQuery(GET_RESULTS_SECTION__EOCL_EXP);
 			}
@@ -1585,7 +1653,7 @@ public class VDTInpatientPatientInfoOperations extends
 			VDTInpatientPatientInfo vdtInpatientPatientInfo) {
 		if (GET_VITAL_SIGNS_SECTION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(Mu2consolPackage.Literals.VDT_INPATIENT_PATIENT_INFO, Mu2consolPackage.Literals.VDT_INPATIENT_PATIENT_INFO.getEAllOperations().get(198));
+			helper.setOperationContext(Mu2consolPackage.Literals.VDT_INPATIENT_PATIENT_INFO, Mu2consolPackage.Literals.VDT_INPATIENT_PATIENT_INFO.getEAllOperations().get(202));
 			try {
 				GET_VITAL_SIGNS_SECTION__EOCL_QRY = helper.createQuery(GET_VITAL_SIGNS_SECTION__EOCL_EXP);
 			}
@@ -1639,7 +1707,7 @@ public class VDTInpatientPatientInfoOperations extends
 			VDTInpatientPatientInfo vdtInpatientPatientInfo) {
 		if (GET_VITAL_SIGNS_SECTION_ENTRIES_OPTIONAL__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(Mu2consolPackage.Literals.VDT_INPATIENT_PATIENT_INFO, Mu2consolPackage.Literals.VDT_INPATIENT_PATIENT_INFO.getEAllOperations().get(199));
+			helper.setOperationContext(Mu2consolPackage.Literals.VDT_INPATIENT_PATIENT_INFO, Mu2consolPackage.Literals.VDT_INPATIENT_PATIENT_INFO.getEAllOperations().get(203));
 			try {
 				GET_VITAL_SIGNS_SECTION_ENTRIES_OPTIONAL__EOCL_QRY = helper.createQuery(GET_VITAL_SIGNS_SECTION_ENTRIES_OPTIONAL__EOCL_EXP);
 			}
@@ -1688,7 +1756,7 @@ public class VDTInpatientPatientInfoOperations extends
 			VDTInpatientPatientInfo vdtInpatientPatientInfo) {
 		if (GET_PLAN_OF_CARE_SECTION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(Mu2consolPackage.Literals.VDT_INPATIENT_PATIENT_INFO, Mu2consolPackage.Literals.VDT_INPATIENT_PATIENT_INFO.getEAllOperations().get(200));
+			helper.setOperationContext(Mu2consolPackage.Literals.VDT_INPATIENT_PATIENT_INFO, Mu2consolPackage.Literals.VDT_INPATIENT_PATIENT_INFO.getEAllOperations().get(204));
 			try {
 				GET_PLAN_OF_CARE_SECTION__EOCL_QRY = helper.createQuery(GET_PLAN_OF_CARE_SECTION__EOCL_EXP);
 			}
@@ -1737,7 +1805,7 @@ public class VDTInpatientPatientInfoOperations extends
 			VDTInpatientPatientInfo vdtInpatientPatientInfo) {
 		if (GET_PROCEDURES_SECTION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(Mu2consolPackage.Literals.VDT_INPATIENT_PATIENT_INFO, Mu2consolPackage.Literals.VDT_INPATIENT_PATIENT_INFO.getEAllOperations().get(201));
+			helper.setOperationContext(Mu2consolPackage.Literals.VDT_INPATIENT_PATIENT_INFO, Mu2consolPackage.Literals.VDT_INPATIENT_PATIENT_INFO.getEAllOperations().get(205));
 			try {
 				GET_PROCEDURES_SECTION__EOCL_QRY = helper.createQuery(GET_PROCEDURES_SECTION__EOCL_EXP);
 			}

@@ -131,6 +131,33 @@ public interface Mu2consolFactory extends EFactory {
 	TransitionOfCareInpatientSummary createTransitionOfCareInpatientSummary();
 
 	/**
+	 * Returns a new object of class '<em>View Download Transmit Summary</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>View Download Transmit Summary</em>'.
+	 * @generated
+	 */
+	ViewDownloadTransmitSummary createViewDownloadTransmitSummary();
+
+	/**
+	 * Returns a new object of class '<em>VDT Inpatient Summary</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>VDT Inpatient Summary</em>'.
+	 * @generated
+	 */
+	VDTInpatientSummary createVDTInpatientSummary();
+
+	/**
+	 * Returns a new object of class '<em>VDT Ambulatory Summary</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>VDT Ambulatory Summary</em>'.
+	 * @generated
+	 */
+	VDTAmbulatorySummary createVDTAmbulatorySummary();
+
+	/**
 	 * Returns a new object of class '<em>Assessment Section</em>'. <!--
 	 * begin-user-doc --> <!-- end-user-doc -->
 	 * 
@@ -172,6 +199,15 @@ public interface Mu2consolFactory extends EFactory {
 	 * @generated
 	 */
 	PostprocedureDiagnosisSection createPostprocedureDiagnosisSection();
+
+	/**
+	 * Returns a new object of class '<em>Functional Status Section</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Functional Status Section</em>'.
+	 * @generated
+	 */
+	FunctionalStatusSection createFunctionalStatusSection();
 
 	/**
 	 * Returns a new object of class '<em>Preoperative Diagnosis Section</em>'.
