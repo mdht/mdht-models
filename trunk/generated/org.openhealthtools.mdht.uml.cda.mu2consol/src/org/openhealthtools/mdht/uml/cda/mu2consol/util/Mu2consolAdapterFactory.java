@@ -92,10 +92,6 @@ public class Mu2consolAdapterFactory extends AdapterFactoryImpl {
 				return createAssessmentAndPlanSectionAdapter();
 			}
 			@Override
-			public Adapter caseInstructionsSection(InstructionsSection object) {
-				return createInstructionsSectionAdapter();
-			}
-			@Override
 			public Adapter caseAssessmentSection(AssessmentSection object) {
 				return createAssessmentSectionAdapter();
 			}
@@ -128,12 +124,12 @@ public class Mu2consolAdapterFactory extends AdapterFactoryImpl {
 				return createSocialHistorySectionAdapter();
 			}
 			@Override
-			public Adapter caseAllergiesSectionEntriesOptional(AllergiesSectionEntriesOptional object) {
-				return createAllergiesSectionEntriesOptionalAdapter();
-			}
-			@Override
 			public Adapter casePostprocedureDiagnosisSection(PostprocedureDiagnosisSection object) {
 				return createPostprocedureDiagnosisSectionAdapter();
+			}
+			@Override
+			public Adapter caseFunctionalStatusSection(FunctionalStatusSection object) {
+				return createFunctionalStatusSectionAdapter();
 			}
 			@Override
 			public Adapter caseAssessmentAndPlanForCarePlanning(AssessmentAndPlanForCarePlanning object) {
@@ -142,6 +138,14 @@ public class Mu2consolAdapterFactory extends AdapterFactoryImpl {
 			@Override
 			public Adapter caseAssessmentAndPlanForConditionOrConcern(AssessmentAndPlanForConditionOrConcern object) {
 				return createAssessmentAndPlanForConditionOrConcernAdapter();
+			}
+			@Override
+			public Adapter caseInstructionsSection(InstructionsSection object) {
+				return createInstructionsSectionAdapter();
+			}
+			@Override
+			public Adapter caseAllergiesSectionEntriesOptional(AllergiesSectionEntriesOptional object) {
+				return createAllergiesSectionEntriesOptionalAdapter();
 			}
 			@Override
 			public Adapter caseClinicalOfficeVisitSummary(ClinicalOfficeVisitSummary object) {
@@ -162,6 +166,18 @@ public class Mu2consolAdapterFactory extends AdapterFactoryImpl {
 			@Override
 			public Adapter caseTransitionOfCareInpatientSummary(TransitionOfCareInpatientSummary object) {
 				return createTransitionOfCareInpatientSummaryAdapter();
+			}
+			@Override
+			public Adapter caseViewDownloadTransmitSummary(ViewDownloadTransmitSummary object) {
+				return createViewDownloadTransmitSummaryAdapter();
+			}
+			@Override
+			public Adapter caseVDTInpatientSummary(VDTInpatientSummary object) {
+				return createVDTInpatientSummaryAdapter();
+			}
+			@Override
+			public Adapter caseVDTAmbulatorySummary(VDTAmbulatorySummary object) {
+				return createVDTAmbulatorySummaryAdapter();
 			}
 			@Override
 			public Adapter caseInfrastructureRoot(InfrastructureRoot object) {
@@ -190,10 +206,6 @@ public class Mu2consolAdapterFactory extends AdapterFactoryImpl {
 			@Override
 			public Adapter caseConsol_AssessmentAndPlanSection(org.openhealthtools.mdht.uml.cda.consol.AssessmentAndPlanSection object) {
 				return createConsol_AssessmentAndPlanSectionAdapter();
-			}
-			@Override
-			public Adapter caseConsol_InstructionsSection(org.openhealthtools.mdht.uml.cda.consol.InstructionsSection object) {
-				return createConsol_InstructionsSectionAdapter();
 			}
 			@Override
 			public Adapter caseConsol_AssessmentSection(org.openhealthtools.mdht.uml.cda.consol.AssessmentSection object) {
@@ -228,12 +240,20 @@ public class Mu2consolAdapterFactory extends AdapterFactoryImpl {
 				return createConsol_SocialHistorySectionAdapter();
 			}
 			@Override
-			public Adapter caseConsol_AllergiesSectionEntriesOptional(org.openhealthtools.mdht.uml.cda.consol.AllergiesSectionEntriesOptional object) {
-				return createConsol_AllergiesSectionEntriesOptionalAdapter();
-			}
-			@Override
 			public Adapter caseConsol_PostprocedureDiagnosisSection(org.openhealthtools.mdht.uml.cda.consol.PostprocedureDiagnosisSection object) {
 				return createConsol_PostprocedureDiagnosisSectionAdapter();
+			}
+			@Override
+			public Adapter caseConsol_FunctionalStatusSection(org.openhealthtools.mdht.uml.cda.consol.FunctionalStatusSection object) {
+				return createConsol_FunctionalStatusSectionAdapter();
+			}
+			@Override
+			public Adapter caseConsol_InstructionsSection(org.openhealthtools.mdht.uml.cda.consol.InstructionsSection object) {
+				return createConsol_InstructionsSectionAdapter();
+			}
+			@Override
+			public Adapter caseConsol_AllergiesSectionEntriesOptional(org.openhealthtools.mdht.uml.cda.consol.AllergiesSectionEntriesOptional object) {
+				return createConsol_AllergiesSectionEntriesOptionalAdapter();
 			}
 			@Override
 			public Adapter defaultCase(EObject object) {
@@ -425,6 +445,48 @@ public class Mu2consolAdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
+	 * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.mu2consol.ViewDownloadTransmitSummary <em>View Download Transmit Summary</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see org.openhealthtools.mdht.uml.cda.mu2consol.ViewDownloadTransmitSummary
+	 * @generated
+	 */
+	public Adapter createViewDownloadTransmitSummaryAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.mu2consol.VDTInpatientSummary <em>VDT Inpatient Summary</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see org.openhealthtools.mdht.uml.cda.mu2consol.VDTInpatientSummary
+	 * @generated
+	 */
+	public Adapter createVDTInpatientSummaryAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.mu2consol.VDTAmbulatorySummary <em>VDT Ambulatory Summary</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see org.openhealthtools.mdht.uml.cda.mu2consol.VDTAmbulatorySummary
+	 * @generated
+	 */
+	public Adapter createVDTAmbulatorySummaryAdapter() {
+		return null;
+	}
+
+	/**
 	 * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.mu2consol.HospitalAdmissionDiagnosisSection <em>Hospital Admission Diagnosis Section</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore
@@ -477,6 +539,20 @@ public class Mu2consolAdapterFactory extends AdapterFactoryImpl {
 	 * @generated
 	 */
 	public Adapter createPostprocedureDiagnosisSectionAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.mu2consol.FunctionalStatusSection <em>Functional Status Section</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see org.openhealthtools.mdht.uml.cda.mu2consol.FunctionalStatusSection
+	 * @generated
+	 */
+	public Adapter createFunctionalStatusSectionAdapter() {
 		return null;
 	}
 
@@ -747,6 +823,20 @@ public class Mu2consolAdapterFactory extends AdapterFactoryImpl {
 	 * @generated
 	 */
 	public Adapter createConsol_PostprocedureDiagnosisSectionAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.consol.FunctionalStatusSection <em>Functional Status Section</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see org.openhealthtools.mdht.uml.cda.consol.FunctionalStatusSection
+	 * @generated
+	 */
+	public Adapter createConsol_FunctionalStatusSectionAdapter() {
 		return null;
 	}
 

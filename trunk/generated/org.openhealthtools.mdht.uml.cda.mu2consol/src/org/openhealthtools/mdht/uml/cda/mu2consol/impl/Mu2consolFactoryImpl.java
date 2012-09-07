@@ -78,7 +78,6 @@ public class Mu2consolFactoryImpl extends EFactoryImpl implements
 			case Mu2consolPackage.SUMMARY_OF_CARE_RECORD: return createSummaryOfCareRecord();
 			case Mu2consolPackage.PLAN_OF_CARE_SECTION: return createPlanOfCareSection();
 			case Mu2consolPackage.ASSESSMENT_AND_PLAN_SECTION: return createAssessmentAndPlanSection();
-			case Mu2consolPackage.INSTRUCTIONS_SECTION: return createInstructionsSection();
 			case Mu2consolPackage.ASSESSMENT_SECTION: return createAssessmentSection();
 			case Mu2consolPackage.HOSPITAL_ADMISSION_DIAGNOSIS_SECTION: return createHospitalAdmissionDiagnosisSection();
 			case Mu2consolPackage.HOSPITAL_DISCHARGE_DIAGNOSIS_SECTION: return createHospitalDischargeDiagnosisSection();
@@ -87,15 +86,20 @@ public class Mu2consolFactoryImpl extends EFactoryImpl implements
 			case Mu2consolPackage.MEDICATIONS_ADMINISTERED_SECTION: return createMedicationsAdministeredSection();
 			case Mu2consolPackage.HOSPITAL_ADMISSION_MEDICATIONS_SECTION_ENTRIES_OPTIONAL: return createHospitalAdmissionMedicationsSectionEntriesOptional();
 			case Mu2consolPackage.SOCIAL_HISTORY_SECTION: return createSocialHistorySection();
-			case Mu2consolPackage.ALLERGIES_SECTION_ENTRIES_OPTIONAL: return createAllergiesSectionEntriesOptional();
 			case Mu2consolPackage.POSTPROCEDURE_DIAGNOSIS_SECTION: return createPostprocedureDiagnosisSection();
+			case Mu2consolPackage.FUNCTIONAL_STATUS_SECTION: return createFunctionalStatusSection();
 			case Mu2consolPackage.ASSESSMENT_AND_PLAN_FOR_CARE_PLANNING: return createAssessmentAndPlanForCarePlanning();
 			case Mu2consolPackage.ASSESSMENT_AND_PLAN_FOR_CONDITION_OR_CONCERN: return createAssessmentAndPlanForConditionOrConcern();
+			case Mu2consolPackage.INSTRUCTIONS_SECTION: return createInstructionsSection();
+			case Mu2consolPackage.ALLERGIES_SECTION_ENTRIES_OPTIONAL: return createAllergiesSectionEntriesOptional();
 			case Mu2consolPackage.CLINICAL_OFFICE_VISIT_SUMMARY: return createClinicalOfficeVisitSummary();
 			case Mu2consolPackage.VDT_INPATIENT_PATIENT_INFO: return createVDTInpatientPatientInfo();
 			case Mu2consolPackage.VDT_AMBULATORY_PATIENT_INFO: return createVDTAmbulatoryPatientInfo();
 			case Mu2consolPackage.TRANSITION_OF_CARE_AMBULATORY_SUMMARY: return createTransitionOfCareAmbulatorySummary();
 			case Mu2consolPackage.TRANSITION_OF_CARE_INPATIENT_SUMMARY: return createTransitionOfCareInpatientSummary();
+			case Mu2consolPackage.VIEW_DOWNLOAD_TRANSMIT_SUMMARY: return createViewDownloadTransmitSummary();
+			case Mu2consolPackage.VDT_INPATIENT_SUMMARY: return createVDTInpatientSummary();
+			case Mu2consolPackage.VDT_AMBULATORY_SUMMARY: return createVDTAmbulatorySummary();
 			default:
 				throw new IllegalArgumentException("The class '" + eClass.getName() + "' is not a valid classifier");
 		}
@@ -211,6 +215,36 @@ public class Mu2consolFactoryImpl extends EFactoryImpl implements
 	}
 
 	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public ViewDownloadTransmitSummary createViewDownloadTransmitSummary() {
+		ViewDownloadTransmitSummaryImpl viewDownloadTransmitSummary = new ViewDownloadTransmitSummaryImpl();
+		return viewDownloadTransmitSummary;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public VDTInpatientSummary createVDTInpatientSummary() {
+		VDTInpatientSummaryImpl vdtInpatientSummary = new VDTInpatientSummaryImpl();
+		return vdtInpatientSummary;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public VDTAmbulatorySummary createVDTAmbulatorySummary() {
+		VDTAmbulatorySummaryImpl vdtAmbulatorySummary = new VDTAmbulatorySummaryImpl();
+		return vdtAmbulatorySummary;
+	}
+
+	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @generated
 	 */
@@ -253,6 +287,16 @@ public class Mu2consolFactoryImpl extends EFactoryImpl implements
 	public PostprocedureDiagnosisSection createPostprocedureDiagnosisSection() {
 		PostprocedureDiagnosisSectionImpl postprocedureDiagnosisSection = new PostprocedureDiagnosisSectionImpl();
 		return postprocedureDiagnosisSection;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public FunctionalStatusSection createFunctionalStatusSection() {
+		FunctionalStatusSectionImpl functionalStatusSection = new FunctionalStatusSectionImpl();
+		return functionalStatusSection;
 	}
 
 	/**

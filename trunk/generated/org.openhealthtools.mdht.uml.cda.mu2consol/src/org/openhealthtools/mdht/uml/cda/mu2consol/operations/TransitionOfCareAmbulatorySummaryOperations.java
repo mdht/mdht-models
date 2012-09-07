@@ -42,7 +42,7 @@ import org.openhealthtools.mdht.uml.cda.mu2consol.util.Mu2consolValidator;
  * <ul>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.mu2consol.TransitionOfCareAmbulatorySummary#validateTransitionOfCareAmbulatorySummaryResponsibleParty(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Transition Of Care Ambulatory Summary Responsible Party</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.mu2consol.TransitionOfCareAmbulatorySummary#validateTransitionOfCareAmbulatorySummaryReasonForReferralSection(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Transition Of Care Ambulatory Summary Reason For Referral Section</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.mu2consol.TransitionOfCareAmbulatorySummary#getmu2consolReasonForReferralSection() <em>Getmu2consol Reason For Referral Section</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.mu2consol.TransitionOfCareAmbulatorySummary#getReasonForReferralSection() <em>Get Reason For Referral Section</em>}</li>
  * </ul>
  * </p>
  *
@@ -193,56 +193,47 @@ public class TransitionOfCareAmbulatorySummaryOperations extends
 	}
 
 	/**
-	 * The cached OCL expression body for the '
-	 * {@link #getmu2consolReasonForReferralSection(TransitionOfCareAmbulatorySummary)
-	 * <em>Getmu2consol Reason For Referral Section</em>}' operation. <!--
-	 * begin-user-doc --> <!-- end-user-doc -->
-	 * 
-	 * @see #getmu2consolReasonForReferralSection(TransitionOfCareAmbulatorySummary)
+	 * The cached OCL expression body for the '{@link #getReasonForReferralSection(TransitionOfCareAmbulatorySummary) <em>Get Reason For Referral Section</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getReasonForReferralSection(TransitionOfCareAmbulatorySummary)
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String GETMU2CONSOL_REASON_FOR_REFERRAL_SECTION__EOCL_EXP = "self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::ReasonForReferralSection))->asSequence()->any(true).oclAsType(consol::ReasonForReferralSection)";
+	protected static final String GET_REASON_FOR_REFERRAL_SECTION__EOCL_EXP = "self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::ReasonForReferralSection))->asSequence()->any(true).oclAsType(consol::ReasonForReferralSection)";
 
 	/**
-	 * The cached OCL query for the '
-	 * {@link #getmu2consolReasonForReferralSection(TransitionOfCareAmbulatorySummary)
-	 * <em>Getmu2consol Reason For Referral Section</em>}' query operation. <!--
-	 * begin-user-doc --> <!-- end-user-doc -->
-	 * 
-	 * @see #getmu2consolReasonForReferralSection(TransitionOfCareAmbulatorySummary)
+	 * The cached OCL query for the '{@link #getReasonForReferralSection(TransitionOfCareAmbulatorySummary) <em>Get Reason For Referral Section</em>}' query operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getReasonForReferralSection(TransitionOfCareAmbulatorySummary)
 	 * @generated
 	 * @ordered
 	 */
-	protected static OCLExpression<EClassifier> GETMU2CONSOL_REASON_FOR_REFERRAL_SECTION__EOCL_QRY;
+	protected static OCLExpression<EClassifier> GET_REASON_FOR_REFERRAL_SECTION__EOCL_QRY;
 
 	/**
-	 * <!-- begin-user-doc --> <!-- end-user-doc --> <!-- begin-model-doc -->
-	 * self.getAllSections()->select(section : cda::Section | not
-	 * section.oclIsUndefined() and
-	 * section.oclIsKindOf(consol::ReasonForReferralSection
-	 * ))->asSequence()->any(true).oclAsType(consol::ReasonForReferralSection)
-	 * 
-	 * @param transitionOfCareAmbulatorySummary
-	 *            The receiving '
-	 *            <em><b>Transition Of Care Ambulatory Summary</b></em>' model
-	 *            object. <!-- end-model-doc -->
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::ReasonForReferralSection))->asSequence()->any(true).oclAsType(consol::ReasonForReferralSection)
+	 * @param transitionOfCareAmbulatorySummary The receiving '<em><b>Transition Of Care Ambulatory Summary</b></em>' model object.
+	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-
-	public static ReasonForReferralSection getmu2consolReasonForReferralSection(
-			TransitionOfCareAmbulatorySummary transitionOfCareAmbulatorySummary) {
-		if (GETMU2CONSOL_REASON_FOR_REFERRAL_SECTION__EOCL_QRY == null) {
+	
+	public static  ReasonForReferralSection getReasonForReferralSection(TransitionOfCareAmbulatorySummary transitionOfCareAmbulatorySummary) {
+		if (GET_REASON_FOR_REFERRAL_SECTION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(Mu2consolPackage.Literals.TRANSITION_OF_CARE_AMBULATORY_SUMMARY, Mu2consolPackage.Literals.TRANSITION_OF_CARE_AMBULATORY_SUMMARY.getEAllOperations().get(245));
+			helper.setOperationContext(Mu2consolPackage.Literals.TRANSITION_OF_CARE_AMBULATORY_SUMMARY, Mu2consolPackage.Literals.TRANSITION_OF_CARE_AMBULATORY_SUMMARY.getEAllOperations().get(249));
 			try {
-				GETMU2CONSOL_REASON_FOR_REFERRAL_SECTION__EOCL_QRY = helper.createQuery(GETMU2CONSOL_REASON_FOR_REFERRAL_SECTION__EOCL_EXP);
+				GET_REASON_FOR_REFERRAL_SECTION__EOCL_QRY = helper.createQuery(GET_REASON_FOR_REFERRAL_SECTION__EOCL_EXP);
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		OCL.Query query = EOCL_ENV.createQuery(GETMU2CONSOL_REASON_FOR_REFERRAL_SECTION__EOCL_QRY);
+		OCL.Query query = EOCL_ENV.createQuery(GET_REASON_FOR_REFERRAL_SECTION__EOCL_QRY);
 		return (ReasonForReferralSection) query.evaluate(transitionOfCareAmbulatorySummary);
 	}
 

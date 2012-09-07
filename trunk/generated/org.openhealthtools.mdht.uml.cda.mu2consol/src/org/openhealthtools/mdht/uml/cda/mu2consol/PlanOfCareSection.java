@@ -23,7 +23,7 @@ import org.openhealthtools.mdht.uml.cda.consol.PlanOfCareActivityObservation;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.mu2consol.Mu2consolPackage#getPlanOfCareSection()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='mu2consolPlanOfCareSectionTemplateId mu2consolPlanOfCareSectionCarePlanningForPlanOfCare' templateId.root='2.16.840.1.113883.10.20.22.2.10'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='mu2consolPlanOfCareSectionPlanOfCareActivityObservation mu2consolPlanOfCareSectionTemplateId mu2consolPlanOfCareSectionCarePlanningForPlanOfCare' templateId.root='2.16.840.1.113883.10.20.22.2.10'"
  * @generated
  */
 public interface PlanOfCareSection extends
@@ -48,6 +48,19 @@ public interface PlanOfCareSection extends
 	 */
 	boolean validateMu2consolPlanOfCareSectionCarePlanningForPlanOfCare(
 			DiagnosticChain diagnostics, Map<Object, Object> context);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * self.entry->one(entry : cda::Entry | not entry.observation.oclIsUndefined() and entry.observation.oclIsKindOf(consol::PlanOfCareActivityObservation))
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entry->one(entry : cda::Entry | not entry.observation.oclIsUndefined() and entry.observation.oclIsKindOf(consol::PlanOfCareActivityObservation))'"
+	 * @generated
+	 */
+	boolean validateMu2consolPlanOfCareSectionMu2consolPlanOfCareSectionPlanOfCareActivityObservation(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc --> <!-- begin-model-doc -->

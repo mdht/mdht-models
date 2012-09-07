@@ -70,11 +70,12 @@ public class TransitionOfCareAmbulatorySummaryImpl extends
 	}
 
 	/**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public ReasonForReferralSection getmu2consolReasonForReferralSection() {
-		return TransitionOfCareAmbulatorySummaryOperations.getmu2consolReasonForReferralSection(this);
+	public ReasonForReferralSection getReasonForReferralSection() {
+		return TransitionOfCareAmbulatorySummaryOperations.getReasonForReferralSection(this);
 	}
 
 	/**
