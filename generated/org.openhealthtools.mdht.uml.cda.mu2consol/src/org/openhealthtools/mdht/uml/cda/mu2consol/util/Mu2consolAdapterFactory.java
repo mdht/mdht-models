@@ -152,14 +152,6 @@ public class Mu2consolAdapterFactory extends AdapterFactoryImpl {
 				return createClinicalOfficeVisitSummaryAdapter();
 			}
 			@Override
-			public Adapter caseVDTInpatientPatientInfo(VDTInpatientPatientInfo object) {
-				return createVDTInpatientPatientInfoAdapter();
-			}
-			@Override
-			public Adapter caseVDTAmbulatoryPatientInfo(VDTAmbulatoryPatientInfo object) {
-				return createVDTAmbulatoryPatientInfoAdapter();
-			}
-			@Override
 			public Adapter caseTransitionOfCareAmbulatorySummary(TransitionOfCareAmbulatorySummary object) {
 				return createTransitionOfCareAmbulatorySummaryAdapter();
 			}
@@ -385,34 +377,6 @@ public class Mu2consolAdapterFactory extends AdapterFactoryImpl {
 	 * @generated
 	 */
 	public Adapter createClinicalOfficeVisitSummaryAdapter() {
-		return null;
-	}
-
-	/**
-	 * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.mu2consol.VDTInpatientPatientInfo <em>VDT Inpatient Patient Info</em>}'.
-	 * <!-- begin-user-doc --> This
-	 * default implementation returns null so that we can easily ignore cases;
-	 * it's useful to ignore a case when inheritance will catch all the cases
-	 * anyway. <!-- end-user-doc -->
-	 * @return the new adapter.
-	 * @see org.openhealthtools.mdht.uml.cda.mu2consol.VDTInpatientPatientInfo
-	 * @generated
-	 */
-	public Adapter createVDTInpatientPatientInfoAdapter() {
-		return null;
-	}
-
-	/**
-	 * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.mu2consol.VDTAmbulatoryPatientInfo <em>VDT Ambulatory Patient Info</em>}'.
-	 * <!-- begin-user-doc --> This
-	 * default implementation returns null so that we can easily ignore cases;
-	 * it's useful to ignore a case when inheritance will catch all the cases
-	 * anyway. <!-- end-user-doc -->
-	 * @return the new adapter.
-	 * @see org.openhealthtools.mdht.uml.cda.mu2consol.VDTAmbulatoryPatientInfo
-	 * @generated
-	 */
-	public Adapter createVDTAmbulatoryPatientInfoAdapter() {
 		return null;
 	}
 
