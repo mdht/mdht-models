@@ -1640,12 +1640,6 @@ Study arm information may refer either to the planned arm for a subject or to th
     </packagedElement>
     <packagedElement xmi:type="uml:Association" href="#_Zp_SkWxMEeGBdraXZT60fA"/>
     <packagedElement xmi:type="uml:Association" href="#_353DImxPEeGBdraXZT60fA"/>
-    <packagedElement xmi:type="uml:Association" xmi:id="_O3sy0POSEeGPpLm0F8gjDw" memberEnd="_O3sy0vOSEeGPpLm0F8gjDw">
-      <ownedComment xmi:id="_O3sy0fOSEeGPpLm0F8gjDw">
-        <body>A place to insert comments related to a particular finding.</body>
-      </ownedComment>
-      <ownedEnd xmi:id="_O3sy0vOSEeGPpLm0F8gjDw" type="_Lrb20JocEeG78ZMLtGK0RQ" association="_O3sy0POSEeGPpLm0F8gjDw"/>
-    </packagedElement>
     <packagedElement xmi:type="uml:Artifact" xmi:id="_x_-BEG0fEeGiP4Zd1ERrDw" name="Subject Data Human Clinical TrialsSample" fileName="Subject Data Human Clinical TrialsSample.xml"/>
     <packagedElement xmi:type="uml:Class" xmi:id="_If_OMHH-EeGL-K1S1E9LrQ" name="Concomitant Medication">
       <ownedComment xmi:id="_kdWk0IsUEeGEXvbgIb1duQ">
@@ -12097,13 +12091,6 @@ More specifically: The periodic time interval (PIVL_TS) type is used to record r
   <CDA:CodeSystemConstraint xmi:id="_B97L4GS3EeGmtJmF5xvQEQ" code="HUStbd" base_Property="_LhanRGSqEeGaWrlBtEAvSQ">
     <reference href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_dWKSsaDqEd-dVeaMP0XXQw"/>
   </CDA:CodeSystemConstraint>
-  <uml:Association xmi:id="_j4Bu8mbdEeGjiJmz4TzZew" memberEnd="_j4Bu82bdEeGjiJmz4TzZew">
-    <ownedEnd xmi:id="_j4Bu82bdEeGjiJmz4TzZew" association="_j4Bu8mbdEeGjiJmz4TzZew"/>
-  </uml:Association>
-  <CDA:AssociationValidation xmi:id="_l8SFsGbdEeGjiJmz4TzZew" base_Association="_j4Bu8mbdEeGjiJmz4TzZew"/>
-  <uml:Association xmi:id="_ONPBAmbeEeGjiJmz4TzZew" memberEnd="_ONPBA2beEeGjiJmz4TzZew">
-    <ownedEnd xmi:id="_ONPBA2beEeGjiJmz4TzZew" association="_ONPBAmbeEeGjiJmz4TzZew"/>
-  </uml:Association>
   <uml:Association xmi:id="_X0jYMmbsEeGjiJmz4TzZew" memberEnd="_X0jYMGbsEeGjiJmz4TzZew _X0tJMGbsEeGjiJmz4TzZew">
     <ownedComment xmi:id="_I1SycPCHEeGh3MBMz4mmQA">
       <body>Identifies the study the subject data report is associated with.</body>
@@ -12192,7 +12179,6 @@ More specifically: The periodic time interval (PIVL_TS) type is used to record r
   <CDA:PropertyValidation xmi:id="_0FdCMGcREeGQg8E6pm8Qdw" base_Property="_i_rNAGcREeGQg8E6pm8Qdw"/>
   <CDA:CDATemplate xmi:id="_Lc9rAGedEeGFKaG0B9CEsg" base_Class="_xvcSQGb_EeGjiJmz4TzZew" templateId="2.16.840.1.113883.10.20.23.56"/>
   <CDA:ConstraintValidation xmi:id="_nJSoIGedEeGFKaG0B9CEsg" base_Constraint="_jtM7wGedEeGFKaG0B9CEsg"/>
-  <CDA:AssociationValidation xmi:id="_cG8fkGeeEeGFKaG0B9CEsg" base_Association="_ONPBAmbeEeGjiJmz4TzZew"/>
   <CDA:CDATemplate xmi:id="_xCrLQGehEeGFKaG0B9CEsg" base_Class="_NPsncGbuEeGjiJmz4TzZew" templateId="2.16.840.1.113883.10.20.23.81"/>
   <CDA:CDATemplate xmi:id="_sVrbMGeiEeGFKaG0B9CEsg" base_Class="_li9xQGeiEeGFKaG0B9CEsg" templateId="2.16.840.1.113883.10.20.23.68"/>
   <CDA:PropertyValidation xmi:id="_XV_fwGejEeGFKaG0B9CEsg" base_Property="_p5UtgGeiEeGFKaG0B9CEsg"/>
@@ -12307,14 +12293,6 @@ More specifically: The periodic time interval (PIVL_TS) type is used to record r
   </uml:Association>
   <CDA:EntryRelationship xmi:id="_c1p9UGxMEeGBdraXZT60fA" severity="INFO" base_Association="_Zp_SkWxMEeGBdraXZT60fA" typeCode="COMP"/>
   <CDA:ActRelationship xmi:id="_esrJUGxMEeGBdraXZT60fA" base_Association="_Zp_SkWxMEeGBdraXZT60fA"/>
-  <uml:Association xmi:id="_0E-uMmxNEeGBdraXZT60fA" memberEnd="_0E-uM2xNEeGBdraXZT60fA">
-    <ownedEnd xmi:id="_0E-uM2xNEeGBdraXZT60fA" association="_0E-uMmxNEeGBdraXZT60fA"/>
-  </uml:Association>
-  <CDA:AssociationValidation xmi:id="_AUafgGxOEeGBdraXZT60fA" severity="INFO" base_Association="_0E-uMmxNEeGBdraXZT60fA"/>
-  <uml:Association xmi:id="_HI65MmxOEeGBdraXZT60fA" memberEnd="_HI65M2xOEeGBdraXZT60fA">
-    <ownedEnd xmi:id="_HI65M2xOEeGBdraXZT60fA" association="_HI65MmxOEeGBdraXZT60fA"/>
-  </uml:Association>
-  <CDA:AssociationValidation xmi:id="_OBIuMGxOEeGBdraXZT60fA" base_Association="_HI65MmxOEeGBdraXZT60fA"/>
   <uml:Association xmi:id="_353DImxPEeGBdraXZT60fA" memberEnd="_353DIGxPEeGBdraXZT60fA _353DI2xPEeGBdraXZT60fA">
     <ownedComment xmi:id="_1l-xgJntEeGhE8cxrj1YAg">
       <body>Provides a reason for not capturing information for the vital sign.</body>
@@ -13864,7 +13842,6 @@ More specifically: The periodic time interval (PIVL_TS) type is used to record r
   <CDA:CodeSystemConstraint xmi:id="_FXBGwPOSEeGPpLm0F8gjDw" base_Property="_Lrb21JocEeG78ZMLtGK0RQ">
     <reference href="sdtm-vocab.uml#_57MjsfOREeGPpLm0F8gjDw"/>
   </CDA:CodeSystemConstraint>
-  <CDA:EntryRelationship xmi:id="_O3sy0_OSEeGPpLm0F8gjDw" severity="INFO" base_Association="_O3sy0POSEeGPpLm0F8gjDw" typeCode="COMP"/>
   <CDA:CodeSystemConstraint xmi:id="_oEjc0POSEeGPpLm0F8gjDw" base_Property="_DCRYjIjMEeGwjb3wu_tBLA">
     <reference href="sdtm-vocab.uml#_AR740JYHEeGdw75A0B2buQ"/>
   </CDA:CodeSystemConstraint>
