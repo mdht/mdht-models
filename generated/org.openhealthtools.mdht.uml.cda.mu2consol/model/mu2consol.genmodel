@@ -334,6 +334,16 @@
       </genOperations>
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="mu2consol.ecore#//SocialHistorySection/getmu2consolSmokingStatusObservations"/>
     </genClasses>
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="mu2consol.ecore#//SmokingStatusObservation">
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="mu2consol.ecore#//SmokingStatusObservation/SmokingStatusObservationValueP">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="mu2consol.ecore#//SmokingStatusObservation/SmokingStatusObservationValueP/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="mu2consol.ecore#//SmokingStatusObservation/SmokingStatusObservationValueP/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="mu2consol.ecore#//SmokingStatusObservation/SmokingStatusObservationValue">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="mu2consol.ecore#//SmokingStatusObservation/SmokingStatusObservationValue/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="mu2consol.ecore#//SmokingStatusObservation/SmokingStatusObservationValue/context"/>
+      </genOperations>
+    </genClasses>
     <genClasses xsi:type="genmodel:GenClass" ecoreClass="mu2consol.ecore#//PostprocedureDiagnosisSection">
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="mu2consol.ecore#//PostprocedureDiagnosisSection/mu2consolPostprocedureDiagnosisSectionPostprocedureDiagnosis">
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="mu2consol.ecore#//PostprocedureDiagnosisSection/mu2consolPostprocedureDiagnosisSectionPostprocedureDiagnosis/diagnostics"/>

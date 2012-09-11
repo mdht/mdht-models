@@ -593,7 +593,7 @@ public interface Mu2consolPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.mu2consol.impl.Mu2consolPackageImpl#getAssessmentAndPlanForCarePlanning()
 	 * @generated
 	 */
-	int ASSESSMENT_AND_PLAN_FOR_CARE_PLANNING = 14;
+	int ASSESSMENT_AND_PLAN_FOR_CARE_PLANNING = 15;
 
 	/**
      * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.mu2consol.impl.PlanOfCareSectionImpl <em>Plan Of Care Section</em>}' class.
@@ -615,7 +615,7 @@ public interface Mu2consolPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.mu2consol.impl.Mu2consolPackageImpl#getAssessmentAndPlanForConditionOrConcern()
 	 * @generated
 	 */
-	int ASSESSMENT_AND_PLAN_FOR_CONDITION_OR_CONCERN = 15;
+	int ASSESSMENT_AND_PLAN_FOR_CONDITION_OR_CONCERN = 16;
 
 	/**
      * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.mu2consol.impl.AssessmentAndPlanSectionImpl <em>Assessment And Plan Section</em>}' class.
@@ -635,7 +635,7 @@ public interface Mu2consolPackage extends EPackage {
      * @see org.openhealthtools.mdht.uml.cda.mu2consol.impl.Mu2consolPackageImpl#getInstructionsSection()
      * @generated
      */
-	int INSTRUCTIONS_SECTION = 16;
+	int INSTRUCTIONS_SECTION = 17;
 
 	/**
      * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.mu2consol.impl.AssessmentSectionImpl <em>Assessment Section</em>}' class.
@@ -689,7 +689,7 @@ public interface Mu2consolPackage extends EPackage {
      * @see org.openhealthtools.mdht.uml.cda.mu2consol.impl.Mu2consolPackageImpl#getPostprocedureDiagnosisSection()
      * @generated
      */
-	int POSTPROCEDURE_DIAGNOSIS_SECTION = 12;
+	int POSTPROCEDURE_DIAGNOSIS_SECTION = 13;
 
 	/**
      * The feature id for the '<em><b>Realm Code</b></em>' containment reference list.
@@ -897,7 +897,7 @@ public interface Mu2consolPackage extends EPackage {
      * @see org.openhealthtools.mdht.uml.cda.mu2consol.impl.Mu2consolPackageImpl#getAllergiesSectionEntriesOptional()
      * @generated
      */
-	int ALLERGIES_SECTION_ENTRIES_OPTIONAL = 17;
+	int ALLERGIES_SECTION_ENTRIES_OPTIONAL = 18;
 
 	/**
      * The feature id for the '<em><b>Realm Code</b></em>' containment reference list.
@@ -2337,6 +2337,295 @@ public interface Mu2consolPackage extends EPackage {
 	int SOCIAL_HISTORY_SECTION_FEATURE_COUNT = ConsolPackage.SOCIAL_HISTORY_SECTION_FEATURE_COUNT + 0;
 
 	/**
+     * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.mu2consol.impl.SmokingStatusObservationImpl <em>Smoking Status Observation</em>}' class.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @see org.openhealthtools.mdht.uml.cda.mu2consol.impl.SmokingStatusObservationImpl
+     * @see org.openhealthtools.mdht.uml.cda.mu2consol.impl.Mu2consolPackageImpl#getSmokingStatusObservation()
+     * @generated
+     */
+    int SMOKING_STATUS_OBSERVATION = 12;
+
+	/**
+     * The feature id for the '<em><b>Realm Code</b></em>' containment reference list.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     * @ordered
+     */
+    int SMOKING_STATUS_OBSERVATION__REALM_CODE = ConsolPackage.TOBACCO_USE__REALM_CODE;
+
+	/**
+     * The feature id for the '<em><b>Type Id</b></em>' containment reference.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     * @ordered
+     */
+    int SMOKING_STATUS_OBSERVATION__TYPE_ID = ConsolPackage.TOBACCO_USE__TYPE_ID;
+
+	/**
+     * The feature id for the '<em><b>Template Id</b></em>' containment reference list.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     * @ordered
+     */
+    int SMOKING_STATUS_OBSERVATION__TEMPLATE_ID = ConsolPackage.TOBACCO_USE__TEMPLATE_ID;
+
+	/**
+     * The feature id for the '<em><b>Id</b></em>' containment reference list.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     * @ordered
+     */
+    int SMOKING_STATUS_OBSERVATION__ID = ConsolPackage.TOBACCO_USE__ID;
+
+	/**
+     * The feature id for the '<em><b>Code</b></em>' containment reference.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     * @ordered
+     */
+    int SMOKING_STATUS_OBSERVATION__CODE = ConsolPackage.TOBACCO_USE__CODE;
+
+	/**
+     * The feature id for the '<em><b>Derivation Expr</b></em>' containment reference.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     * @ordered
+     */
+    int SMOKING_STATUS_OBSERVATION__DERIVATION_EXPR = ConsolPackage.TOBACCO_USE__DERIVATION_EXPR;
+
+	/**
+     * The feature id for the '<em><b>Text</b></em>' containment reference.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     * @ordered
+     */
+    int SMOKING_STATUS_OBSERVATION__TEXT = ConsolPackage.TOBACCO_USE__TEXT;
+
+	/**
+     * The feature id for the '<em><b>Status Code</b></em>' containment reference.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     * @ordered
+     */
+    int SMOKING_STATUS_OBSERVATION__STATUS_CODE = ConsolPackage.TOBACCO_USE__STATUS_CODE;
+
+	/**
+     * The feature id for the '<em><b>Effective Time</b></em>' containment reference.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     * @ordered
+     */
+    int SMOKING_STATUS_OBSERVATION__EFFECTIVE_TIME = ConsolPackage.TOBACCO_USE__EFFECTIVE_TIME;
+
+	/**
+     * The feature id for the '<em><b>Priority Code</b></em>' containment reference.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     * @ordered
+     */
+    int SMOKING_STATUS_OBSERVATION__PRIORITY_CODE = ConsolPackage.TOBACCO_USE__PRIORITY_CODE;
+
+	/**
+     * The feature id for the '<em><b>Repeat Number</b></em>' containment reference.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     * @ordered
+     */
+    int SMOKING_STATUS_OBSERVATION__REPEAT_NUMBER = ConsolPackage.TOBACCO_USE__REPEAT_NUMBER;
+
+	/**
+     * The feature id for the '<em><b>Language Code</b></em>' containment reference.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     * @ordered
+     */
+    int SMOKING_STATUS_OBSERVATION__LANGUAGE_CODE = ConsolPackage.TOBACCO_USE__LANGUAGE_CODE;
+
+	/**
+     * The feature id for the '<em><b>Value</b></em>' containment reference list.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     * @ordered
+     */
+    int SMOKING_STATUS_OBSERVATION__VALUE = ConsolPackage.TOBACCO_USE__VALUE;
+
+	/**
+     * The feature id for the '<em><b>Interpretation Code</b></em>' containment reference list.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     * @ordered
+     */
+    int SMOKING_STATUS_OBSERVATION__INTERPRETATION_CODE = ConsolPackage.TOBACCO_USE__INTERPRETATION_CODE;
+
+	/**
+     * The feature id for the '<em><b>Method Code</b></em>' containment reference list.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     * @ordered
+     */
+    int SMOKING_STATUS_OBSERVATION__METHOD_CODE = ConsolPackage.TOBACCO_USE__METHOD_CODE;
+
+	/**
+     * The feature id for the '<em><b>Target Site Code</b></em>' containment reference list.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     * @ordered
+     */
+    int SMOKING_STATUS_OBSERVATION__TARGET_SITE_CODE = ConsolPackage.TOBACCO_USE__TARGET_SITE_CODE;
+
+	/**
+     * The feature id for the '<em><b>Subject</b></em>' containment reference.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     * @ordered
+     */
+    int SMOKING_STATUS_OBSERVATION__SUBJECT = ConsolPackage.TOBACCO_USE__SUBJECT;
+
+	/**
+     * The feature id for the '<em><b>Specimen</b></em>' containment reference list.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     * @ordered
+     */
+    int SMOKING_STATUS_OBSERVATION__SPECIMEN = ConsolPackage.TOBACCO_USE__SPECIMEN;
+
+	/**
+     * The feature id for the '<em><b>Performer</b></em>' containment reference list.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     * @ordered
+     */
+    int SMOKING_STATUS_OBSERVATION__PERFORMER = ConsolPackage.TOBACCO_USE__PERFORMER;
+
+	/**
+     * The feature id for the '<em><b>Author</b></em>' containment reference list.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     * @ordered
+     */
+    int SMOKING_STATUS_OBSERVATION__AUTHOR = ConsolPackage.TOBACCO_USE__AUTHOR;
+
+	/**
+     * The feature id for the '<em><b>Informant</b></em>' containment reference list.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     * @ordered
+     */
+    int SMOKING_STATUS_OBSERVATION__INFORMANT = ConsolPackage.TOBACCO_USE__INFORMANT;
+
+	/**
+     * The feature id for the '<em><b>Participant</b></em>' containment reference list.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     * @ordered
+     */
+    int SMOKING_STATUS_OBSERVATION__PARTICIPANT = ConsolPackage.TOBACCO_USE__PARTICIPANT;
+
+	/**
+     * The feature id for the '<em><b>Entry Relationship</b></em>' containment reference list.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     * @ordered
+     */
+    int SMOKING_STATUS_OBSERVATION__ENTRY_RELATIONSHIP = ConsolPackage.TOBACCO_USE__ENTRY_RELATIONSHIP;
+
+	/**
+     * The feature id for the '<em><b>Reference</b></em>' containment reference list.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     * @ordered
+     */
+    int SMOKING_STATUS_OBSERVATION__REFERENCE = ConsolPackage.TOBACCO_USE__REFERENCE;
+
+	/**
+     * The feature id for the '<em><b>Precondition</b></em>' containment reference list.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     * @ordered
+     */
+    int SMOKING_STATUS_OBSERVATION__PRECONDITION = ConsolPackage.TOBACCO_USE__PRECONDITION;
+
+	/**
+     * The feature id for the '<em><b>Reference Range</b></em>' containment reference list.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     * @ordered
+     */
+    int SMOKING_STATUS_OBSERVATION__REFERENCE_RANGE = ConsolPackage.TOBACCO_USE__REFERENCE_RANGE;
+
+	/**
+     * The feature id for the '<em><b>Null Flavor</b></em>' attribute.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     * @ordered
+     */
+    int SMOKING_STATUS_OBSERVATION__NULL_FLAVOR = ConsolPackage.TOBACCO_USE__NULL_FLAVOR;
+
+	/**
+     * The feature id for the '<em><b>Class Code</b></em>' attribute.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     * @ordered
+     */
+    int SMOKING_STATUS_OBSERVATION__CLASS_CODE = ConsolPackage.TOBACCO_USE__CLASS_CODE;
+
+	/**
+     * The feature id for the '<em><b>Mood Code</b></em>' attribute.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     * @ordered
+     */
+    int SMOKING_STATUS_OBSERVATION__MOOD_CODE = ConsolPackage.TOBACCO_USE__MOOD_CODE;
+
+	/**
+     * The feature id for the '<em><b>Negation Ind</b></em>' attribute.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     * @ordered
+     */
+    int SMOKING_STATUS_OBSERVATION__NEGATION_IND = ConsolPackage.TOBACCO_USE__NEGATION_IND;
+
+	/**
+     * The number of structural features of the '<em>Smoking Status Observation</em>' class.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     * @ordered
+     */
+    int SMOKING_STATUS_OBSERVATION_FEATURE_COUNT = ConsolPackage.TOBACCO_USE_FEATURE_COUNT + 0;
+
+	/**
      * The feature id for the '<em><b>Realm Code</b></em>' containment reference list.
      * <!-- begin-user-doc --> <!-- end-user-doc -->
      * @generated
@@ -2504,7 +2793,7 @@ public interface Mu2consolPackage extends EPackage {
      * @see org.openhealthtools.mdht.uml.cda.mu2consol.impl.Mu2consolPackageImpl#getFunctionalStatusSection()
      * @generated
      */
-    int FUNCTIONAL_STATUS_SECTION = 13;
+    int FUNCTIONAL_STATUS_SECTION = 14;
 
 	/**
      * The feature id for the '<em><b>Realm Code</b></em>' containment reference list.
@@ -3326,7 +3615,7 @@ public interface Mu2consolPackage extends EPackage {
      * @see org.openhealthtools.mdht.uml.cda.mu2consol.impl.Mu2consolPackageImpl#getClinicalOfficeVisitSummary()
      * @generated
      */
-	int CLINICAL_OFFICE_VISIT_SUMMARY = 18;
+	int CLINICAL_OFFICE_VISIT_SUMMARY = 19;
 
 	/**
      * The feature id for the '<em><b>Realm Code</b></em>' containment reference list.
@@ -3592,7 +3881,7 @@ public interface Mu2consolPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.mu2consol.impl.Mu2consolPackageImpl#getTransitionOfCareAmbulatorySummary()
 	 * @generated
 	 */
-	int TRANSITION_OF_CARE_AMBULATORY_SUMMARY = 19;
+	int TRANSITION_OF_CARE_AMBULATORY_SUMMARY = 20;
 
 	/**
      * The feature id for the '<em><b>Realm Code</b></em>' containment reference list.
@@ -3857,7 +4146,7 @@ public interface Mu2consolPackage extends EPackage {
      * @see org.openhealthtools.mdht.uml.cda.mu2consol.impl.Mu2consolPackageImpl#getTransitionOfCareInpatientSummary()
      * @generated
      */
-    int TRANSITION_OF_CARE_INPATIENT_SUMMARY = 20;
+    int TRANSITION_OF_CARE_INPATIENT_SUMMARY = 21;
 
 	/**
      * The feature id for the '<em><b>Realm Code</b></em>' containment reference list.
@@ -4146,7 +4435,7 @@ public interface Mu2consolPackage extends EPackage {
      * @see org.openhealthtools.mdht.uml.cda.mu2consol.impl.Mu2consolPackageImpl#getViewDownloadTransmitSummary()
      * @generated
      */
-    int VIEW_DOWNLOAD_TRANSMIT_SUMMARY = 21;
+    int VIEW_DOWNLOAD_TRANSMIT_SUMMARY = 22;
 
 	/**
      * The feature id for the '<em><b>Realm Code</b></em>' containment reference list.
@@ -4435,7 +4724,7 @@ public interface Mu2consolPackage extends EPackage {
      * @see org.openhealthtools.mdht.uml.cda.mu2consol.impl.Mu2consolPackageImpl#getVDTInpatientSummary()
      * @generated
      */
-    int VDT_INPATIENT_SUMMARY = 22;
+    int VDT_INPATIENT_SUMMARY = 23;
 
 	/**
      * The feature id for the '<em><b>Realm Code</b></em>' containment reference list.
@@ -4724,7 +5013,7 @@ public interface Mu2consolPackage extends EPackage {
      * @see org.openhealthtools.mdht.uml.cda.mu2consol.impl.Mu2consolPackageImpl#getVDTAmbulatorySummary()
      * @generated
      */
-    int VDT_AMBULATORY_SUMMARY = 23;
+    int VDT_AMBULATORY_SUMMARY = 24;
 
 	/**
      * The feature id for the '<em><b>Realm Code</b></em>' containment reference list.
@@ -5245,6 +5534,16 @@ public interface Mu2consolPackage extends EPackage {
 	EClass getSocialHistorySection();
 
 	/**
+     * Returns the meta object for class '{@link org.openhealthtools.mdht.uml.cda.mu2consol.SmokingStatusObservation <em>Smoking Status Observation</em>}'.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @return the meta object for class '<em>Smoking Status Observation</em>'.
+     * @see org.openhealthtools.mdht.uml.cda.mu2consol.SmokingStatusObservation
+     * @generated
+     */
+    EClass getSmokingStatusObservation();
+
+	/**
      * Returns the meta object for class '{@link org.openhealthtools.mdht.uml.cda.mu2consol.AllergiesSectionEntriesOptional <em>Allergies Section Entries Optional</em>}'.
      * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -5516,6 +5815,16 @@ public interface Mu2consolPackage extends EPackage {
          * @generated
          */
 		EClass SOCIAL_HISTORY_SECTION = eINSTANCE.getSocialHistorySection();
+
+		/**
+         * The meta object literal for the '{@link org.openhealthtools.mdht.uml.cda.mu2consol.impl.SmokingStatusObservationImpl <em>Smoking Status Observation</em>}' class.
+         * <!-- begin-user-doc -->
+         * <!-- end-user-doc -->
+         * @see org.openhealthtools.mdht.uml.cda.mu2consol.impl.SmokingStatusObservationImpl
+         * @see org.openhealthtools.mdht.uml.cda.mu2consol.impl.Mu2consolPackageImpl#getSmokingStatusObservation()
+         * @generated
+         */
+        EClass SMOKING_STATUS_OBSERVATION = eINSTANCE.getSmokingStatusObservation();
 
 		/**
 		 * The meta object literal for the '

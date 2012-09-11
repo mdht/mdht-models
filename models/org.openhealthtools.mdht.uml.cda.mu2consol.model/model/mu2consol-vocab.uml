@@ -1,9 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<uml:Package xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML" xmi:id="_mZ-K0Nd5EeGtNLA6W-IQeQ" name="mu2consol-vocab">
-  <profileApplication xmi:id="_mZ-K0dd5EeGtNLA6W-IQeQ">
-    <eAnnotations xmi:id="_mZ-K0td5EeGtNLA6W-IQeQ" source="http://www.eclipse.org/uml2/2.0.0/UML">
-      <references xmi:type="ecore:EPackage" href="http://www.openhealthtools.org/mdht/schemas/term/1#/"/>
-    </eAnnotations>
-    <appliedProfile href="pathmap://MDHT_TERM_PROFILES/Terminology.profile.uml#_cxOJEIEVEd6H8o-hO3-B4Q"/>
-  </profileApplication>
-</uml:Package>
+<xmi:XMI xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:term="http://www.openhealthtools.org/mdht/schemas/term/1" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML">
+  <uml:Package xmi:id="_mZ-K0Nd5EeGtNLA6W-IQeQ" name="mu2consol-vocab">
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_ey3cgPuJEeGx4ophOjh2tw" name="Smoking Status">
+      <ownedLiteral xmi:id="_oFwkMPuJEeGx4ophOjh2tw" name="449868002"/>
+      <ownedLiteral xmi:id="_7HAnkPuJEeGx4ophOjh2tw" name="428041000124106"/>
+      <ownedLiteral xmi:id="__7lJ0PuJEeGx4ophOjh2tw" name="8517006"/>
+      <ownedLiteral xmi:id="_DvgHYPuKEeGx4ophOjh2tw" name="266919005"/>
+      <ownedLiteral xmi:id="_LxIbgPuKEeGx4ophOjh2tw" name="77176002"/>
+      <ownedLiteral xmi:id="_P00TYPuKEeGx4ophOjh2tw" name="266927001"/>
+      <ownedLiteral xmi:id="_YzPQ0PuTEeGx4ophOjh2tw" name="428071000124103"/>
+      <ownedLiteral xmi:id="_eBxyQPuTEeGx4ophOjh2tw" name="428061000124105"/>
+    </packagedElement>
+    <profileApplication xmi:id="_mZ-K0dd5EeGtNLA6W-IQeQ">
+      <eAnnotations xmi:id="_mZ-K0td5EeGtNLA6W-IQeQ" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.openhealthtools.org/mdht/schemas/term/1#/"/>
+      </eAnnotations>
+      <appliedProfile href="pathmap://MDHT_TERM_PROFILES/Terminology.profile.uml#_cxOJEIEVEd6H8o-hO3-B4Q"/>
+    </profileApplication>
+  </uml:Package>
+  <term:ValueSetVersion xmi:id="_ezB0kPuJEeGx4ophOjh2tw" base_Enumeration="_ey3cgPuJEeGx4ophOjh2tw">
+    <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_ya6aMCWsEd-iTYfpNb4PkQ"/>
+  </term:ValueSetVersion>
+  <term:ValueSetCode xmi:id="_zhFYAPuJEeGx4ophOjh2tw" conceptName="Current every day smoker" base_EnumerationLiteral="_oFwkMPuJEeGx4ophOjh2tw"/>
+  <term:ValueSetCode xmi:id="_7HBOoPuJEeGx4ophOjh2tw" conceptName="Current some day smoker" base_EnumerationLiteral="_7HAnkPuJEeGx4ophOjh2tw"/>
+  <term:ValueSetCode xmi:id="__7lw4PuJEeGx4ophOjh2tw" conceptName="Former smoker" base_EnumerationLiteral="__7lJ0PuJEeGx4ophOjh2tw"/>
+  <term:ValueSetCode xmi:id="_DvgHYfuKEeGx4ophOjh2tw" conceptName="Never smoker (Never Smoked)" base_EnumerationLiteral="_DvgHYPuKEeGx4ophOjh2tw"/>
+  <term:ValueSetCode xmi:id="_LxK3wPuKEeGx4ophOjh2tw" conceptName="Smoker, current status unknown" base_EnumerationLiteral="_LxIbgPuKEeGx4ophOjh2tw"/>
+  <term:ValueSetCode xmi:id="_P006cPuKEeGx4ophOjh2tw" conceptName="Unknown if ever smoked" base_EnumerationLiteral="_P00TYPuKEeGx4ophOjh2tw"/>
+  <term:ValueSetCode xmi:id="_YzP34PuTEeGx4ophOjh2tw" conceptName="Heavy tobacco smoker" base_EnumerationLiteral="_YzPQ0PuTEeGx4ophOjh2tw"/>
+  <term:ValueSetCode xmi:id="_eByZUPuTEeGx4ophOjh2tw" conceptName="Light tobacco smoker" base_EnumerationLiteral="_eBxyQPuTEeGx4ophOjh2tw"/>
+</xmi:XMI>
