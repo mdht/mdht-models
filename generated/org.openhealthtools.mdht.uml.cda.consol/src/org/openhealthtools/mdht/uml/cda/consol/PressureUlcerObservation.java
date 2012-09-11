@@ -297,11 +297,11 @@ public interface PressureUlcerObservation extends Observation {
 	 * <!-- begin-model-doc -->
 	 * (self.targetSiteCode->isEmpty() or self.targetSiteCode->exists(element | element.isNullFlavorUndefined())) implies (not self.targetSiteCode->isEmpty() and self.targetSiteCode->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and 
 	 * let value : datatypes::CD = element.oclAsType(datatypes::CD) in 
-	 * value.codeSystem = '2.16.840.1.113883.6.96' and not value.code.oclIsUndefined()))
+	 * value.codeSystem = '2.16.840.1.113883.6.96' and (value.code = '79951008' or value.code = '23747009' or value.code = '76552005' or value.code = '45980000' or value.code = '74757004' or value.code = '51027004' or value.code = '304037003' or value.code = '286591006' or value.code = '49812005' or value.code = '29850006' or value.code = '22180002')))
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.targetSiteCode->isEmpty() or self.targetSiteCode->exists(element | element.isNullFlavorUndefined())) implies (not self.targetSiteCode->isEmpty() and self.targetSiteCode->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and \r\nlet value : datatypes::CD = element.oclAsType(datatypes::CD) in \r\nvalue.codeSystem = \'2.16.840.1.113883.6.96\' and not value.code.oclIsUndefined()))'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.targetSiteCode->isEmpty() or self.targetSiteCode->exists(element | element.isNullFlavorUndefined())) implies (not self.targetSiteCode->isEmpty() and self.targetSiteCode->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and \r\nlet value : datatypes::CD = element.oclAsType(datatypes::CD) in \r\nvalue.codeSystem = \'2.16.840.1.113883.6.96\' and (value.code = \'79951008\' or value.code = \'23747009\' or value.code = \'76552005\' or value.code = \'45980000\' or value.code = \'74757004\' or value.code = \'51027004\' or value.code = \'304037003\' or value.code = \'286591006\' or value.code = \'49812005\' or value.code = \'29850006\' or value.code = \'22180002\')))'"
 	 * @generated
 	 */
 	boolean validatePressureUlcerObservationTargetSiteCode(DiagnosticChain diagnostics, Map<Object, Object> context);

@@ -990,7 +990,7 @@ public class ProcedureActivityActOperations extends ClinicalStatementOperations 
 	 * <!-- begin-model-doc -->
 	 * (self.priorityCode.oclIsUndefined() or self.priorityCode.isNullFlavorUndefined()) implies (not self.priorityCode.oclIsUndefined() and self.priorityCode.oclIsKindOf(datatypes::CE) and 
 	 * let value : datatypes::CE = self.priorityCode.oclAsType(datatypes::CE) in 
-	 * value.codeSystem = '2.16.840.1.113883.5.7' and not value.code.oclIsUndefined())
+	 * value.codeSystem = '2.16.840.1.113883.5.7' and (value.code = 'A' or value.code = 'CR' or value.code = 'CS' or value.code = 'CSP' or value.code = 'CSR' or value.code = 'EL' or value.code = 'EM' or value.code = 'P' or value.code = 'PRN' or value.code = 'R' or value.code = 'RR' or value.code = 'S' or value.code = 'T' or value.code = 'UD' or value.code = 'UR'))
 	 * @param procedureActivityAct The receiving '<em><b>Procedure Activity Act</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -1064,7 +1064,7 @@ public class ProcedureActivityActOperations extends ClinicalStatementOperations 
 	 */
 	protected static final String VALIDATE_PROCEDURE_ACTIVITY_ACT_PRIORITY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.priorityCode.oclIsUndefined() or self.priorityCode.isNullFlavorUndefined()) implies (not self.priorityCode.oclIsUndefined() and self.priorityCode.oclIsKindOf(datatypes::CE) and "
 			+ "let value : datatypes::CE = self.priorityCode.oclAsType(datatypes::CE) in "
-			+ "value.codeSystem = '2.16.840.1.113883.5.7' and not value.code.oclIsUndefined())";
+			+ "value.codeSystem = '2.16.840.1.113883.5.7' and (value.code = 'A' or value.code = 'CR' or value.code = 'CS' or value.code = 'CSP' or value.code = 'CSR' or value.code = 'EL' or value.code = 'EM' or value.code = 'P' or value.code = 'PRN' or value.code = 'R' or value.code = 'RR' or value.code = 'S' or value.code = 'T' or value.code = 'UD' or value.code = 'UR'))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateProcedureActivityActPriorityCode(ProcedureActivityAct, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Procedure Activity Act Priority Code</em>}' invariant operation.

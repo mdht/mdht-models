@@ -1289,7 +1289,7 @@ public class PressureUlcerObservationOperations extends ClinicalStatementOperati
 	 */
 	protected static final String VALIDATE_PRESSURE_ULCER_OBSERVATION_TARGET_SITE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.targetSiteCode->isEmpty() or self.targetSiteCode->exists(element | element.isNullFlavorUndefined())) implies (not self.targetSiteCode->isEmpty() and self.targetSiteCode->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and "
 			+ "let value : datatypes::CD = element.oclAsType(datatypes::CD) in "
-			+ "value.codeSystem = '2.16.840.1.113883.6.96' and not value.code.oclIsUndefined()))";
+			+ "value.codeSystem = '2.16.840.1.113883.6.96' and (value.code = '79951008' or value.code = '23747009' or value.code = '76552005' or value.code = '45980000' or value.code = '74757004' or value.code = '51027004' or value.code = '304037003' or value.code = '286591006' or value.code = '49812005' or value.code = '29850006' or value.code = '22180002')))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validatePressureUlcerObservationTargetSiteCode(PressureUlcerObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Pressure Ulcer Observation Target Site Code</em>}' invariant operation.
@@ -1308,7 +1308,7 @@ public class PressureUlcerObservationOperations extends ClinicalStatementOperati
 	 * <!-- begin-model-doc -->
 	 * (self.targetSiteCode->isEmpty() or self.targetSiteCode->exists(element | element.isNullFlavorUndefined())) implies (not self.targetSiteCode->isEmpty() and self.targetSiteCode->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and 
 	 * let value : datatypes::CD = element.oclAsType(datatypes::CD) in 
-	 * value.codeSystem = '2.16.840.1.113883.6.96' and not value.code.oclIsUndefined()))
+	 * value.codeSystem = '2.16.840.1.113883.6.96' and (value.code = '79951008' or value.code = '23747009' or value.code = '76552005' or value.code = '45980000' or value.code = '74757004' or value.code = '51027004' or value.code = '304037003' or value.code = '286591006' or value.code = '49812005' or value.code = '29850006' or value.code = '22180002')))
 	 * @param pressureUlcerObservation The receiving '<em><b>Pressure Ulcer Observation</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.

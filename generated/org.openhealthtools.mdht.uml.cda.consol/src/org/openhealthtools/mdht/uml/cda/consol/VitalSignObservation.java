@@ -139,11 +139,11 @@ public interface VitalSignObservation extends Observation {
 	 * <!-- begin-model-doc -->
 	 * (self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and 
 	 * let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in 
-	 * value.codeSystem = '2.16.840.1.113883.6.1' and (value.code = '8310-5' or value.code = '8462-4' or value.code = '8480-6' or value.code = '8287-5' or value.code = '8867-4' or value.code = '8302-2' or value.code = '8306-3' or value.code = '2710-2' or value.code = '9279-1' or value.code = '3141-9'))
+	 * value.codeSystem = '2.16.840.1.113883.6.1' and (value.code = '9279-1' or value.code = '8867-4' or value.code = '2710-2' or value.code = '8480-6' or value.code = '8462-4' or value.code = '8310-5' or value.code = '8302-2' or value.code = '8306-3' or value.code = '8287-5' or value.code = '3141-9' or value.code = '39156-5' or value.code = '3140-1'))
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and \r\nlet value : datatypes::CD = self.code.oclAsType(datatypes::CD) in \r\nvalue.codeSystem = \'2.16.840.1.113883.6.1\' and (value.code = \'8310-5\' or value.code = \'8462-4\' or value.code = \'8480-6\' or value.code = \'8287-5\' or value.code = \'8867-4\' or value.code = \'8302-2\' or value.code = \'8306-3\' or value.code = \'2710-2\' or value.code = \'9279-1\' or value.code = \'3141-9\'))'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and \r\nlet value : datatypes::CD = self.code.oclAsType(datatypes::CD) in \r\nvalue.codeSystem = \'2.16.840.1.113883.6.1\' and (value.code = \'9279-1\' or value.code = \'8867-4\' or value.code = \'2710-2\' or value.code = \'8480-6\' or value.code = \'8462-4\' or value.code = \'8310-5\' or value.code = \'8302-2\' or value.code = \'8306-3\' or value.code = \'8287-5\' or value.code = \'3141-9\' or value.code = \'39156-5\' or value.code = \'3140-1\'))'"
 	 * @generated
 	 */
 	boolean validateVitalSignObservationCode(DiagnosticChain diagnostics, Map<Object, Object> context);

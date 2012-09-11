@@ -253,7 +253,7 @@ public class OperativeNoteOperations extends GeneralHeaderConstraintsOperations 
 	 */
 	protected static final String VALIDATE_OPERATIVE_NOTE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and "
 			+ "let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in "
-			+ "value.codeSystem = '2.16.840.1.113883.6.1' and not value.code.oclIsUndefined())";
+			+ "value.codeSystem = '2.16.840.1.113883.6.1' and (value.code = '11504-8' or value.code = '34137-0' or value.code = '28583-3' or value.code = '28624-5' or value.code = '28573-4' or value.code = '34877-1' or value.code = '34874-8' or value.code = '34870-6' or value.code = '34868-0' or value.code = '34818-5'))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateOperativeNoteCode(OperativeNote, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Operative Note Code</em>}' invariant operation.
@@ -272,7 +272,7 @@ public class OperativeNoteOperations extends GeneralHeaderConstraintsOperations 
 	 * <!-- begin-model-doc -->
 	 * (self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and 
 	 * let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in 
-	 * value.codeSystem = '2.16.840.1.113883.6.1' and not value.code.oclIsUndefined())
+	 * value.codeSystem = '2.16.840.1.113883.6.1' and (value.code = '11504-8' or value.code = '34137-0' or value.code = '28583-3' or value.code = '28624-5' or value.code = '28573-4' or value.code = '34877-1' or value.code = '34874-8' or value.code = '34870-6' or value.code = '34868-0' or value.code = '34818-5'))
 	 * @param operativeNote The receiving '<em><b>Operative Note</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.

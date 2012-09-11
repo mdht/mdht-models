@@ -517,7 +517,7 @@ public class HistoryAndPhysicalNoteOperations extends GeneralHeaderConstraintsOp
 	 */
 	protected static final String VALIDATE_HISTORY_AND_PHYSICAL_NOTE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and "
 			+ "let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in "
-			+ "value.codeSystem = '2.16.840.1.113883.6.1' and not value.code.oclIsUndefined())";
+			+ "value.codeSystem = '2.16.840.1.113883.6.1' and (value.code = '34117-2' or value.code = '11492-6' or value.code = '28626-0' or value.code = '34774-0' or value.code = '34115-6' or value.code = '34116-4' or value.code = '34095-0' or value.code = '34096-8' or value.code = '51849-8' or value.code = '47039-3' or value.code = '34763-3' or value.code = '34094-3' or value.code = '34138-8'))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateHistoryAndPhysicalNoteCode(HistoryAndPhysicalNote, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate History And Physical Note Code</em>}' invariant operation.
@@ -536,7 +536,7 @@ public class HistoryAndPhysicalNoteOperations extends GeneralHeaderConstraintsOp
 	 * <!-- begin-model-doc -->
 	 * (self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and 
 	 * let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in 
-	 * value.codeSystem = '2.16.840.1.113883.6.1' and not value.code.oclIsUndefined())
+	 * value.codeSystem = '2.16.840.1.113883.6.1' and (value.code = '34117-2' or value.code = '11492-6' or value.code = '28626-0' or value.code = '34774-0' or value.code = '34115-6' or value.code = '34116-4' or value.code = '34095-0' or value.code = '34096-8' or value.code = '51849-8' or value.code = '47039-3' or value.code = '34763-3' or value.code = '34094-3' or value.code = '34138-8'))
 	 * @param historyAndPhysicalNote The receiving '<em><b>History And Physical Note</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.

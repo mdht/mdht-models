@@ -59,11 +59,13 @@ public interface PlanOfCareActivityEncounter extends Encounter {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * not self.moodCode.oclIsUndefined() and self.moodCode.oclIsKindOf(vocab::x_DocumentEncounterMood)
+	 * not self.moodCode.oclIsUndefined() and self.moodCode.oclIsKindOf(vocab::x_DocumentEncounterMood) and 
+	 * let value : vocab::x_DocumentEncounterMood = self.moodCode.oclAsType(vocab::x_DocumentEncounterMood) in 
+	 * value = vocab::x_DocumentEncounterMood::INT or value = vocab::x_DocumentEncounterMood::ARQ or value = vocab::x_DocumentEncounterMood::PRMS or value = vocab::x_DocumentEncounterMood::PRP or value = vocab::x_DocumentEncounterMood::RQO
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='not self.moodCode.oclIsUndefined() and self.moodCode.oclIsKindOf(vocab::x_DocumentEncounterMood)'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='not self.moodCode.oclIsUndefined() and self.moodCode.oclIsKindOf(vocab::x_DocumentEncounterMood) and \r\nlet value : vocab::x_DocumentEncounterMood = self.moodCode.oclAsType(vocab::x_DocumentEncounterMood) in \r\nvalue = vocab::x_DocumentEncounterMood::INT or value = vocab::x_DocumentEncounterMood::ARQ or value = vocab::x_DocumentEncounterMood::PRMS or value = vocab::x_DocumentEncounterMood::PRP or value = vocab::x_DocumentEncounterMood::RQO'"
 	 * @generated
 	 */
 	boolean validatePlanOfCareActivityEncounterMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context);
