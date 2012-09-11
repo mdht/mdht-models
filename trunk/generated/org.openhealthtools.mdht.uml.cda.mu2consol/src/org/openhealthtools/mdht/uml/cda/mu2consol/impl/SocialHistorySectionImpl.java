@@ -18,9 +18,10 @@ import org.eclipse.emf.ecore.EObject;
 
 import org.openhealthtools.mdht.emf.runtime.util.Initializer;
 
-import org.openhealthtools.mdht.uml.cda.consol.SmokingStatusObservation;
+//import org.openhealthtools.mdht.uml.cda.consol.SmokingStatusObservation;
 
 import org.openhealthtools.mdht.uml.cda.mu2consol.Mu2consolPackage;
+import org.openhealthtools.mdht.uml.cda.mu2consol.SmokingStatusObservation;
 import org.openhealthtools.mdht.uml.cda.mu2consol.SocialHistorySection;
 
 import org.openhealthtools.mdht.uml.cda.mu2consol.operations.SocialHistorySectionOperations;

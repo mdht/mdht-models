@@ -230,6 +230,15 @@ public interface Mu2consolFactory extends EFactory {
 	SocialHistorySection createSocialHistorySection();
 
 	/**
+	 * Returns a new object of class '<em>Smoking Status Observation</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Smoking Status Observation</em>'.
+	 * @generated
+	 */
+	SmokingStatusObservation createSmokingStatusObservation();
+
+	/**
 	 * Returns a new object of class '<em>Allergies Section Entries Optional</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->

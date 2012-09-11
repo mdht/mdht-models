@@ -86,6 +86,7 @@ public class Mu2consolFactoryImpl extends EFactoryImpl implements
 			case Mu2consolPackage.MEDICATIONS_ADMINISTERED_SECTION: return createMedicationsAdministeredSection();
 			case Mu2consolPackage.HOSPITAL_ADMISSION_MEDICATIONS_SECTION_ENTRIES_OPTIONAL: return createHospitalAdmissionMedicationsSectionEntriesOptional();
 			case Mu2consolPackage.SOCIAL_HISTORY_SECTION: return createSocialHistorySection();
+			case Mu2consolPackage.SMOKING_STATUS_OBSERVATION: return createSmokingStatusObservation();
 			case Mu2consolPackage.POSTPROCEDURE_DIAGNOSIS_SECTION: return createPostprocedureDiagnosisSection();
 			case Mu2consolPackage.FUNCTIONAL_STATUS_SECTION: return createFunctionalStatusSection();
 			case Mu2consolPackage.ASSESSMENT_AND_PLAN_FOR_CARE_PLANNING: return createAssessmentAndPlanForCarePlanning();
@@ -313,6 +314,16 @@ public class Mu2consolFactoryImpl extends EFactoryImpl implements
 	public SocialHistorySection createSocialHistorySection() {
 		SocialHistorySectionImpl socialHistorySection = new SocialHistorySectionImpl();
 		return socialHistorySection;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public SmokingStatusObservation createSmokingStatusObservation() {
+		SmokingStatusObservationImpl smokingStatusObservation = new SmokingStatusObservationImpl();
+		return smokingStatusObservation;
 	}
 
 	/**

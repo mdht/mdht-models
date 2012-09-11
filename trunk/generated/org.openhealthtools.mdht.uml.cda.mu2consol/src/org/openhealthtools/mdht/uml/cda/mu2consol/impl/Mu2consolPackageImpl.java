@@ -33,6 +33,7 @@ import org.openhealthtools.mdht.uml.cda.mu2consol.PlanOfCareSection;
 import org.openhealthtools.mdht.uml.cda.mu2consol.PostoperativeDiagnosisSection;
 import org.openhealthtools.mdht.uml.cda.mu2consol.PostprocedureDiagnosisSection;
 import org.openhealthtools.mdht.uml.cda.mu2consol.PreoperativeDiagnosisSection;
+import org.openhealthtools.mdht.uml.cda.mu2consol.SmokingStatusObservation;
 import org.openhealthtools.mdht.uml.cda.mu2consol.SocialHistorySection;
 import org.openhealthtools.mdht.uml.cda.mu2consol.SummaryOfCareRecord;
 import org.openhealthtools.mdht.uml.cda.mu2consol.TransitionOfCareAmbulatorySummary;
@@ -192,6 +193,13 @@ public class Mu2consolPackageImpl extends EPackageImpl implements
      * @generated
      */
 	private EClass socialHistorySectionEClass = null;
+
+	/**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    private EClass smokingStatusObservationEClass = null;
 
 	/**
      * <!-- begin-user-doc --> <!-- end-user-doc -->
@@ -468,6 +476,15 @@ public class Mu2consolPackageImpl extends EPackageImpl implements
     }
 
 	/**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    public EClass getSmokingStatusObservation() {
+        return smokingStatusObservationEClass;
+    }
+
+	/**
      * <!-- begin-user-doc --> <!-- end-user-doc -->
      * @generated
      */
@@ -524,6 +541,8 @@ public class Mu2consolPackageImpl extends EPackageImpl implements
         hospitalAdmissionMedicationsSectionEntriesOptionalEClass = createEClass(HOSPITAL_ADMISSION_MEDICATIONS_SECTION_ENTRIES_OPTIONAL);
 
         socialHistorySectionEClass = createEClass(SOCIAL_HISTORY_SECTION);
+
+        smokingStatusObservationEClass = createEClass(SMOKING_STATUS_OBSERVATION);
 
         postprocedureDiagnosisSectionEClass = createEClass(POSTPROCEDURE_DIAGNOSIS_SECTION);
 
@@ -592,6 +611,7 @@ public class Mu2consolPackageImpl extends EPackageImpl implements
         medicationsAdministeredSectionEClass.getESuperTypes().add(theConsolPackage.getMedicationsAdministeredSection());
         hospitalAdmissionMedicationsSectionEntriesOptionalEClass.getESuperTypes().add(theConsolPackage.getHospitalAdmissionMedicationsSectionEntriesOptional());
         socialHistorySectionEClass.getESuperTypes().add(theConsolPackage.getSocialHistorySection());
+        smokingStatusObservationEClass.getESuperTypes().add(theConsolPackage.getTobaccoUse());
         postprocedureDiagnosisSectionEClass.getESuperTypes().add(theConsolPackage.getPostprocedureDiagnosisSection());
         functionalStatusSectionEClass.getESuperTypes().add(theConsolPackage.getFunctionalStatusSection());
         assessmentAndPlanForCarePlanningEClass.getESuperTypes().add(theConsolPackage.getAssessmentAndPlanSection());
@@ -1253,7 +1273,27 @@ public class Mu2consolPackageImpl extends EPackageImpl implements
         g1.getETypeArguments().add(g2);
         addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
 
-        addEOperation(socialHistorySectionEClass, theConsolPackage.getSmokingStatusObservation(), "getmu2consolSmokingStatusObservations", 1, -1, IS_UNIQUE, !IS_ORDERED);
+        addEOperation(socialHistorySectionEClass, this.getSmokingStatusObservation(), "getmu2consolSmokingStatusObservations", 1, -1, IS_UNIQUE, !IS_ORDERED);
+
+        initEClass(smokingStatusObservationEClass, SmokingStatusObservation.class, "SmokingStatusObservation", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+
+        op = addEOperation(smokingStatusObservationEClass, ecorePackage.getEBoolean(), "validateSmokingStatusObservationValueP", 0, 1, IS_UNIQUE, IS_ORDERED);
+        addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
+        g1 = createEGenericType(ecorePackage.getEMap());
+        g2 = createEGenericType(ecorePackage.getEJavaObject());
+        g1.getETypeArguments().add(g2);
+        g2 = createEGenericType(ecorePackage.getEJavaObject());
+        g1.getETypeArguments().add(g2);
+        addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
+
+        op = addEOperation(smokingStatusObservationEClass, ecorePackage.getEBoolean(), "validateSmokingStatusObservationValue", 0, 1, IS_UNIQUE, IS_ORDERED);
+        addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
+        g1 = createEGenericType(ecorePackage.getEMap());
+        g2 = createEGenericType(ecorePackage.getEJavaObject());
+        g1.getETypeArguments().add(g2);
+        g2 = createEGenericType(ecorePackage.getEJavaObject());
+        g1.getETypeArguments().add(g2);
+        addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
 
         initEClass(postprocedureDiagnosisSectionEClass, PostprocedureDiagnosisSection.class, "PostprocedureDiagnosisSection", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 
@@ -2024,7 +2064,7 @@ public class Mu2consolPackageImpl extends EPackageImpl implements
            source, 
            new String[] {
              "initializers", "org.openhealthtools.mdht.uml.cda.mu2consol"
-           });                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           
+           });                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     
     }
 
 	/**
@@ -2123,6 +2163,16 @@ public class Mu2consolPackageImpl extends EPackageImpl implements
              "templateId.root", "2.16.840.1.113883.10.20.22.2.17"
            });            
         addAnnotation
+          (smokingStatusObservationEClass, 
+           source, 
+           new String[] {
+             "constraints.validation.error", "SmokingStatusObservationTemplateId SmokingStatusObservationValue SmokingStatusObservationValueP",
+             "templateId.root", "2.16.840.1.113883.10.22.4.78",
+             "value.codeSystem", "2.16.840.1.113883.6.96",
+             "value.codeSystemName", "SNOMEDCT",
+             "constraints.validation.dependOn.SmokingStatusObservationValue", "SmokingStatusObservationValueP"
+           });              
+        addAnnotation
           (postprocedureDiagnosisSectionEClass, 
            source, 
            new String[] {
@@ -2217,7 +2267,7 @@ public class Mu2consolPackageImpl extends EPackageImpl implements
            new String[] {
              "constraints.validation.error", "RecordTargetPatientRole RecordTargetPatientRolePatientEthnicGroupCode RecordTargetPatientRolePatientEthnicGroupCodeP RecordTargetPatientRolePatientRaceCode RecordTargetPatientRolePatientRaceCodeP RecordTargetPatientRolePatientLanguageCommunication RecordTargetPatientRolePatient",
              "constraints.validation.query", "RecordTargetPatientRolePatientEthnicGroupCode RecordTargetPatientRolePatientEthnicGroupCodeP RecordTargetPatientRolePatientRaceCode RecordTargetPatientRolePatientRaceCodeP RecordTargetPatientRolePatientLanguageCommunication RecordTargetPatientRolePatient"
-           });                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         
+           });                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   
     }
 
 	/**
@@ -2233,7 +2283,7 @@ public class Mu2consolPackageImpl extends EPackageImpl implements
            new String[] {
              "constraints.validation.error", "PatientRolePatient PatientRolePatientEthnicGroupCode PatientRolePatientEthnicGroupCodeP PatientRolePatientRaceCode PatientRolePatientRaceCodeP PatientRolePatientLanguageCommunication",
              "constraints.validation.query", "PatientRolePatientEthnicGroupCode PatientRolePatientEthnicGroupCodeP PatientRolePatientRaceCode PatientRolePatientRaceCodeP PatientRolePatientLanguageCommunication"
-           });                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        
+           });                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  
     }
 
 	/**
@@ -2255,7 +2305,7 @@ public class Mu2consolPackageImpl extends EPackageImpl implements
              "constraints.validation.error", "PatientEthnicGroupCode PatientEthnicGroupCodeP PatientRaceCode PatientRaceCodeP PatientLanguageCommunication",
              "raceCode.codeSystem", "2.16.840.1.113883.6.238",
              "raceCode.codeSystemName", "Race and Ethnicity - CDC"
-           });                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       
+           });                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 
     }
 
 	/**
@@ -2271,7 +2321,7 @@ public class Mu2consolPackageImpl extends EPackageImpl implements
            new String[] {
              "constraints.validation.error", "DocumentationOfServiceEvent DocumentationOfServiceEventPerformer1AssignedEntityAssignedPerson DocumentationOfServiceEventPerformer1AssignedEntity DocumentationOfServiceEventPerformer",
              "constraints.validation.query", "DocumentationOfServiceEventPerformer1AssignedEntityAssignedPerson DocumentationOfServiceEventPerformer1AssignedEntity DocumentationOfServiceEventPerformer"
-           });                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      
+           });                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                
     }
 
 	/**
@@ -2290,7 +2340,7 @@ public class Mu2consolPackageImpl extends EPackageImpl implements
            new String[] {
              "constraints.validation.error", "ServiceEventPerformer ServiceEventPerformer1AssignedEntityAssignedPerson ServiceEventPerformer1AssignedEntity",
              "constraints.validation.query", "ServiceEventPerformer1AssignedEntityAssignedPerson ServiceEventPerformer1AssignedEntity"
-           });                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     
+           });                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               
     }
 
 	/**
@@ -2306,7 +2356,7 @@ public class Mu2consolPackageImpl extends EPackageImpl implements
            new String[] {
              "constraints.validation.error", "Performer1AssignedEntity Performer1AssignedEntityAssignedPerson",
              "constraints.validation.query", "Performer1AssignedEntityAssignedPerson"
-           });                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    
+           });                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              
     }
 
 	/**
@@ -2322,7 +2372,7 @@ public class Mu2consolPackageImpl extends EPackageImpl implements
            source, 
            new String[] {
              "constraints.validation.error", "AssignedEntityAssignedPerson"
-           });                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   
+           });                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             
     }
 
 	/**
@@ -2339,7 +2389,7 @@ public class Mu2consolPackageImpl extends EPackageImpl implements
            new String[] {
              "constraints.validation.error", "Component1EncompassingEncounter Component1EncompassingEncounterEncounterParticipant",
              "constraints.validation.query", "Component1EncompassingEncounterEncounterParticipant"
-           });                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  
+           });                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            
     }
 
 	/**
@@ -2354,7 +2404,7 @@ public class Mu2consolPackageImpl extends EPackageImpl implements
            source, 
            new String[] {
              "constraints.validation.error", "EncompassingEncounterEncounterParticipant"
-           });                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 
+           });                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           
     }
 
 	/**
@@ -2425,6 +2475,11 @@ public class Mu2consolPackageImpl extends EPackageImpl implements
            source, 
            new String[] {
            });            
+        addAnnotation
+          (smokingStatusObservationEClass, 
+           source, 
+           new String[] {
+           });              
         addAnnotation
           (postprocedureDiagnosisSectionEClass, 
            source, 

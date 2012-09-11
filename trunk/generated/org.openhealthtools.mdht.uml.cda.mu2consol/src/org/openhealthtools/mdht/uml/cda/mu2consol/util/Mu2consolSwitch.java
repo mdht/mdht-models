@@ -13,7 +13,10 @@ import org.eclipse.emf.ecore.EObject;
 
 import org.openhealthtools.mdht.uml.cda.ClinicalDocument;
 
+import org.openhealthtools.mdht.uml.cda.ClinicalStatement;
+import org.openhealthtools.mdht.uml.cda.Observation;
 import org.openhealthtools.mdht.uml.cda.Section;
+import org.openhealthtools.mdht.uml.cda.consol.TobaccoUse;
 import org.openhealthtools.mdht.uml.cda.consol.AssessmentSection;
 import org.openhealthtools.mdht.uml.cda.mu2consol.*;
 
@@ -208,6 +211,17 @@ public class Mu2consolSwitch<T> {
 				if (result == null) result = caseSection(socialHistorySection);
 				if (result == null) result = caseAct(socialHistorySection);
 				if (result == null) result = caseInfrastructureRoot(socialHistorySection);
+				if (result == null) result = defaultCase(theEObject);
+				return result;
+			}
+			case Mu2consolPackage.SMOKING_STATUS_OBSERVATION: {
+				SmokingStatusObservation smokingStatusObservation = (SmokingStatusObservation)theEObject;
+				T result = caseSmokingStatusObservation(smokingStatusObservation);
+				if (result == null) result = caseTobaccoUse(smokingStatusObservation);
+				if (result == null) result = caseObservation(smokingStatusObservation);
+				if (result == null) result = caseClinicalStatement(smokingStatusObservation);
+				if (result == null) result = caseAct(smokingStatusObservation);
+				if (result == null) result = caseInfrastructureRoot(smokingStatusObservation);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
@@ -676,6 +690,21 @@ public class Mu2consolSwitch<T> {
 	}
 
 	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Smoking Status Observation</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Smoking Status Observation</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseSmokingStatusObservation(SmokingStatusObservation object) {
+		return null;
+	}
+
+	/**
 	 * Returns the result of interpreting the object as an instance of '<em>Allergies Section Entries Optional</em>'.
 	 * <!-- begin-user-doc -->
 	 * This implementation returns null; returning a non-null result will
@@ -974,6 +1003,51 @@ public class Mu2consolSwitch<T> {
 	 */
 	public T caseConsol_SocialHistorySection(
 			org.openhealthtools.mdht.uml.cda.consol.SocialHistorySection object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Clinical Statement</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Clinical Statement</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseClinicalStatement(ClinicalStatement object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Observation</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Observation</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseObservation(Observation object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Tobacco Use</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Tobacco Use</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseTobaccoUse(TobaccoUse object) {
 		return null;
 	}
 

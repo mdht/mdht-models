@@ -15,7 +15,10 @@ import org.eclipse.emf.ecore.EObject;
 
 import org.openhealthtools.mdht.uml.cda.ClinicalDocument;
 
+import org.openhealthtools.mdht.uml.cda.ClinicalStatement;
+import org.openhealthtools.mdht.uml.cda.Observation;
 import org.openhealthtools.mdht.uml.cda.Section;
+import org.openhealthtools.mdht.uml.cda.consol.TobaccoUse;
 import org.openhealthtools.mdht.uml.cda.consol.AssessmentSection;
 import org.openhealthtools.mdht.uml.cda.mu2consol.*;
 
@@ -124,6 +127,10 @@ public class Mu2consolAdapterFactory extends AdapterFactoryImpl {
 				return createSocialHistorySectionAdapter();
 			}
 			@Override
+			public Adapter caseSmokingStatusObservation(SmokingStatusObservation object) {
+				return createSmokingStatusObservationAdapter();
+			}
+			@Override
 			public Adapter casePostprocedureDiagnosisSection(PostprocedureDiagnosisSection object) {
 				return createPostprocedureDiagnosisSectionAdapter();
 			}
@@ -230,6 +237,18 @@ public class Mu2consolAdapterFactory extends AdapterFactoryImpl {
 			@Override
 			public Adapter caseConsol_SocialHistorySection(org.openhealthtools.mdht.uml.cda.consol.SocialHistorySection object) {
 				return createConsol_SocialHistorySectionAdapter();
+			}
+			@Override
+			public Adapter caseClinicalStatement(ClinicalStatement object) {
+				return createClinicalStatementAdapter();
+			}
+			@Override
+			public Adapter caseObservation(Observation object) {
+				return createObservationAdapter();
+			}
+			@Override
+			public Adapter caseTobaccoUse(TobaccoUse object) {
+				return createTobaccoUseAdapter();
 			}
 			@Override
 			public Adapter caseConsol_PostprocedureDiagnosisSection(org.openhealthtools.mdht.uml.cda.consol.PostprocedureDiagnosisSection object) {
@@ -579,6 +598,20 @@ public class Mu2consolAdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
+	 * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.mu2consol.SmokingStatusObservation <em>Smoking Status Observation</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see org.openhealthtools.mdht.uml.cda.mu2consol.SmokingStatusObservation
+	 * @generated
+	 */
+	public Adapter createSmokingStatusObservationAdapter() {
+		return null;
+	}
+
+	/**
 	 * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.mu2consol.AllergiesSectionEntriesOptional <em>Allergies Section Entries Optional</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore
@@ -859,6 +892,48 @@ public class Mu2consolAdapterFactory extends AdapterFactoryImpl {
 	 * @generated
 	 */
 	public Adapter createConsol_SocialHistorySectionAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.ClinicalStatement <em>Clinical Statement</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see org.openhealthtools.mdht.uml.cda.ClinicalStatement
+	 * @generated
+	 */
+	public Adapter createClinicalStatementAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.Observation <em>Observation</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see org.openhealthtools.mdht.uml.cda.Observation
+	 * @generated
+	 */
+	public Adapter createObservationAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.consol.TobaccoUse <em>Tobacco Use</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see org.openhealthtools.mdht.uml.cda.consol.TobaccoUse
+	 * @generated
+	 */
+	public Adapter createTobaccoUseAdapter() {
 		return null;
 	}
 
