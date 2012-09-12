@@ -67,15 +67,6 @@ public class ViewDownloadTransmitSummaryImpl extends GeneralHeaderConstraintsImp
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateViewDownloadTransmitSummaryMedicationAllergy(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ViewDownloadTransmitSummaryOperations.validateViewDownloadTransmitSummaryMedicationAllergy(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	public boolean validateViewDownloadTransmitSummaryCarePlanFields(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ViewDownloadTransmitSummaryOperations.validateViewDownloadTransmitSummaryCarePlanFields(this, diagnostics, context);
 	}

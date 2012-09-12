@@ -946,14 +946,6 @@ MU2 170.314(b)(7) Export Summary  - For Inpatient Care</body>
       <ownedEnd xmi:id="_0UMFcfhTEeGPm7sA61ixGw" type="_zprI0PhTEeGPm7sA61ixGw" association="_0UMFcPhTEeGPm7sA61ixGw"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_i2IoQPhVEeGPm7sA61ixGw" name="ViewDownloadTransmitSummary">
-      <ownedRule xmi:id="_D4WE8PhWEeGPm7sA61ixGw" name="medicationAllergy">
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_D4WE8fhWEeGPm7sA61ixGw">
-          <language>OCL</language>
-          <language>Analysis</language>
-          <body>(self.getAllSections()->one(s : cda::Section | not s.oclIsUndefined() and s.oclIsTypeOf(consol::AllergiesSection)) or &#xD;&#xA;self.getAllSections()->one(s : cda::Section | not s.oclIsUndefined() and s.oclIsTypeOf(mu2consol::AllergiesSectionEntriesOptional)))</body>
-          <body>SHALL have one of Allergies (entries optional: 2.16.840.1.113883.10.20.22.2.6 or entries required: 2.16.840.1.113883.10.20.22.2.6.1)</body>
-        </specification>
-      </ownedRule>
       <ownedRule xmi:id="_CrzxoPhcEeGPm7sA61ixGw" name="carePlanFields" constrainedElement="_i2IoQPhVEeGPm7sA61ixGw">
         <specification xmi:type="uml:OpaqueExpression" xmi:id="_FGH38PhcEeGPm7sA61ixGw">
           <language>Analysis</language>
@@ -1317,7 +1309,6 @@ MU2 170.314(b)(7) Export Summary  - For Inpatient Care</body>
   <CDA:AssociationValidation xmi:id="_VMuBsPhUEeGPm7sA61ixGw" base_Association="_bd9ywPhTEeGPm7sA61ixGw"/>
   <CDA:AssociationValidation xmi:id="_XHN_gPhUEeGPm7sA61ixGw" base_Association="_xapsg_hTEeGPm7sA61ixGw"/>
   <CDA:AssociationValidation xmi:id="_acl_4PhUEeGPm7sA61ixGw" base_Association="_0UMFcPhTEeGPm7sA61ixGw"/>
-  <CDA:ConstraintValidation xmi:id="_D4WE8vhWEeGPm7sA61ixGw" base_Constraint="_D4WE8PhWEeGPm7sA61ixGw"/>
   <CDA:AssociationValidation xmi:id="_wpSZoPhWEeGPm7sA61ixGw" base_Association="_ZS4T4fhWEeGPm7sA61ixGw"/>
   <CDA:AssociationValidation xmi:id="_e1ytYPhXEeGPm7sA61ixGw" base_Association="_d7lu8fhXEeGPm7sA61ixGw"/>
   <CDA:AssociationValidation xmi:id="_pP0cQPhXEeGPm7sA61ixGw" base_Association="_oLSdIfhXEeGPm7sA61ixGw"/>
