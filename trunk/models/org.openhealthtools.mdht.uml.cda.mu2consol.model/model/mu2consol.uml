@@ -837,7 +837,6 @@
       <ownedAttribute xmi:id="_BjLvcO1VEeGT-eFu7Ghgjw" name="smokingStatusObservation" type="_xbrkwPwYEeGx4ophOjh2tw" association="_BjMWgO1VEeGT-eFu7Ghgjw">
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_C39xEO1VEeGT-eFu7Ghgjw" value="*"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_C39xEe1VEeGT-eFu7Ghgjw" value="1"/>
-        <redefinedProperty href="../../org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-socialhistory.uml#_VdJ4EOWVEeGKmvzED_He2w"/>
       </ownedAttribute>
     </packagedElement>
     <packagedElement xmi:type="uml:Association" xmi:id="_BjMWgO1VEeGT-eFu7Ghgjw" memberEnd="_BjLvcO1VEeGT-eFu7Ghgjw _BjMWge1VEeGT-eFu7Ghgjw">
