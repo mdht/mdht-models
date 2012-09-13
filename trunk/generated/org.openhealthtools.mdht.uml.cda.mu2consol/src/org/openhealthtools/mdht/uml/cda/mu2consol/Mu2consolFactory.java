@@ -42,15 +42,6 @@ public interface Mu2consolFactory extends EFactory {
 	SummaryOfCareRecord createSummaryOfCareRecord();
 
 	/**
-	 * Returns a new object of class '<em>Assessment And Plan For Care Planning</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Assessment And Plan For Care Planning</em>'.
-	 * @generated
-	 */
-	AssessmentAndPlanForCarePlanning createAssessmentAndPlanForCarePlanning();
-
-	/**
 	 * Returns a new object of class '<em>Plan Of Care Section</em>'. <!--
 	 * begin-user-doc --> <!-- end-user-doc -->
 	 * 
@@ -58,17 +49,6 @@ public interface Mu2consolFactory extends EFactory {
 	 * @generated
 	 */
 	PlanOfCareSection createPlanOfCareSection();
-
-	/**
-	 * Returns a new object of class '
-	 * <em>Assessment And Plan For Condition Or Concern</em>'. <!--
-	 * begin-user-doc --> <!-- end-user-doc -->
-	 * 
-	 * @return a new object of class '
-	 *         <em>Assessment And Plan For Condition Or Concern</em>'.
-	 * @generated
-	 */
-	AssessmentAndPlanForConditionOrConcern createAssessmentAndPlanForConditionOrConcern();
 
 	/**
 	 * Returns a new object of class '<em>Assessment And Plan Section</em>'.
@@ -237,15 +217,6 @@ public interface Mu2consolFactory extends EFactory {
 	 * @generated
 	 */
 	SmokingStatusObservation createSmokingStatusObservation();
-
-	/**
-	 * Returns a new object of class '<em>Allergies Section Entries Optional</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Allergies Section Entries Optional</em>'.
-	 * @generated
-	 */
-	AllergiesSectionEntriesOptional createAllergiesSectionEntriesOptional();
 
 	/**
 	 * Returns the package supported by this factory.

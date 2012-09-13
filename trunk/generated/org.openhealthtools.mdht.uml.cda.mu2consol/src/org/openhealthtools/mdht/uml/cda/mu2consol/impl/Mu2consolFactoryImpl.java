@@ -12,9 +12,6 @@ import org.eclipse.emf.ecore.EPackage;
 import org.eclipse.emf.ecore.impl.EFactoryImpl;
 import org.eclipse.emf.ecore.plugin.EcorePlugin;
 import org.openhealthtools.mdht.uml.cda.mu2consol.*;
-import org.openhealthtools.mdht.uml.cda.mu2consol.AllergiesSectionEntriesOptional;
-import org.openhealthtools.mdht.uml.cda.mu2consol.AssessmentAndPlanForCarePlanning;
-import org.openhealthtools.mdht.uml.cda.mu2consol.AssessmentAndPlanForConditionOrConcern;
 import org.openhealthtools.mdht.uml.cda.mu2consol.AssessmentAndPlanSection;
 import org.openhealthtools.mdht.uml.cda.mu2consol.AssessmentSection;
 import org.openhealthtools.mdht.uml.cda.mu2consol.GeneralHeaderConstraints;
@@ -89,10 +86,7 @@ public class Mu2consolFactoryImpl extends EFactoryImpl implements
 			case Mu2consolPackage.SMOKING_STATUS_OBSERVATION: return createSmokingStatusObservation();
 			case Mu2consolPackage.POSTPROCEDURE_DIAGNOSIS_SECTION: return createPostprocedureDiagnosisSection();
 			case Mu2consolPackage.FUNCTIONAL_STATUS_SECTION: return createFunctionalStatusSection();
-			case Mu2consolPackage.ASSESSMENT_AND_PLAN_FOR_CARE_PLANNING: return createAssessmentAndPlanForCarePlanning();
-			case Mu2consolPackage.ASSESSMENT_AND_PLAN_FOR_CONDITION_OR_CONCERN: return createAssessmentAndPlanForConditionOrConcern();
 			case Mu2consolPackage.INSTRUCTIONS_SECTION: return createInstructionsSection();
-			case Mu2consolPackage.ALLERGIES_SECTION_ENTRIES_OPTIONAL: return createAllergiesSectionEntriesOptional();
 			case Mu2consolPackage.CLINICAL_OFFICE_VISIT_SUMMARY: return createClinicalOfficeVisitSummary();
 			case Mu2consolPackage.TRANSITION_OF_CARE_AMBULATORY_SUMMARY: return createTransitionOfCareAmbulatorySummary();
 			case Mu2consolPackage.TRANSITION_OF_CARE_INPATIENT_SUMMARY: return createTransitionOfCareInpatientSummary();
@@ -126,27 +120,9 @@ public class Mu2consolFactoryImpl extends EFactoryImpl implements
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @generated
 	 */
-	public AssessmentAndPlanForCarePlanning createAssessmentAndPlanForCarePlanning() {
-		AssessmentAndPlanForCarePlanningImpl assessmentAndPlanForCarePlanning = new AssessmentAndPlanForCarePlanningImpl();
-		return assessmentAndPlanForCarePlanning;
-	}
-
-	/**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @generated
-	 */
 	public PlanOfCareSection createPlanOfCareSection() {
 		PlanOfCareSectionImpl planOfCareSection = new PlanOfCareSectionImpl();
 		return planOfCareSection;
-	}
-
-	/**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @generated
-	 */
-	public AssessmentAndPlanForConditionOrConcern createAssessmentAndPlanForConditionOrConcern() {
-		AssessmentAndPlanForConditionOrConcernImpl assessmentAndPlanForConditionOrConcern = new AssessmentAndPlanForConditionOrConcernImpl();
-		return assessmentAndPlanForConditionOrConcern;
 	}
 
 	/**
@@ -324,15 +300,6 @@ public class Mu2consolFactoryImpl extends EFactoryImpl implements
 	public SmokingStatusObservation createSmokingStatusObservation() {
 		SmokingStatusObservationImpl smokingStatusObservation = new SmokingStatusObservationImpl();
 		return smokingStatusObservation;
-	}
-
-	/**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @generated
-	 */
-	public AllergiesSectionEntriesOptional createAllergiesSectionEntriesOptional() {
-		AllergiesSectionEntriesOptionalImpl allergiesSectionEntriesOptional = new AllergiesSectionEntriesOptionalImpl();
-		return allergiesSectionEntriesOptional;
 	}
 
 	/**
