@@ -139,20 +139,8 @@ public class Mu2consolAdapterFactory extends AdapterFactoryImpl {
 				return createFunctionalStatusSectionAdapter();
 			}
 			@Override
-			public Adapter caseAssessmentAndPlanForCarePlanning(AssessmentAndPlanForCarePlanning object) {
-				return createAssessmentAndPlanForCarePlanningAdapter();
-			}
-			@Override
-			public Adapter caseAssessmentAndPlanForConditionOrConcern(AssessmentAndPlanForConditionOrConcern object) {
-				return createAssessmentAndPlanForConditionOrConcernAdapter();
-			}
-			@Override
 			public Adapter caseInstructionsSection(InstructionsSection object) {
 				return createInstructionsSectionAdapter();
-			}
-			@Override
-			public Adapter caseAllergiesSectionEntriesOptional(AllergiesSectionEntriesOptional object) {
-				return createAllergiesSectionEntriesOptionalAdapter();
 			}
 			@Override
 			public Adapter caseClinicalOfficeVisitSummary(ClinicalOfficeVisitSummary object) {
@@ -263,10 +251,6 @@ public class Mu2consolAdapterFactory extends AdapterFactoryImpl {
 				return createConsol_InstructionsSectionAdapter();
 			}
 			@Override
-			public Adapter caseConsol_AllergiesSectionEntriesOptional(org.openhealthtools.mdht.uml.cda.consol.AllergiesSectionEntriesOptional object) {
-				return createConsol_AllergiesSectionEntriesOptionalAdapter();
-			}
-			@Override
 			public Adapter defaultCase(EObject object) {
 				return createEObjectAdapter();
 			}
@@ -314,20 +298,6 @@ public class Mu2consolAdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.mu2consol.AssessmentAndPlanForCarePlanning <em>Assessment And Plan For Care Planning</em>}'.
-	 * <!-- begin-user-doc -->
-	 * This default implementation returns null so that we can easily ignore
-	 * cases; it's useful to ignore a case when inheritance will catch all the
-	 * cases anyway. <!-- end-user-doc -->
-	 * @return the new adapter.
-	 * @see org.openhealthtools.mdht.uml.cda.mu2consol.AssessmentAndPlanForCarePlanning
-	 * @generated
-	 */
-	public Adapter createAssessmentAndPlanForCarePlanningAdapter() {
-		return null;
-	}
-
-	/**
 	 * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.mu2consol.PlanOfCareSection <em>Plan Of Care Section</em>}'.
 	 * <!-- begin-user-doc --> This default
 	 * implementation returns null so that we can easily ignore cases; it's
@@ -338,22 +308,6 @@ public class Mu2consolAdapterFactory extends AdapterFactoryImpl {
 	 * @generated
 	 */
 	public Adapter createPlanOfCareSectionAdapter() {
-		return null;
-	}
-
-	/**
-	 * Creates a new adapter for an object of class '
-	 * {@link org.openhealthtools.mdht.uml.cda.mu2consol.AssessmentAndPlanForConditionOrConcern
-	 * <em>Assessment And Plan For Condition Or Concern</em>}'. <!--
-	 * begin-user-doc --> This default implementation returns null so that we
-	 * can easily ignore cases; it's useful to ignore a case when inheritance
-	 * will catch all the cases anyway. <!-- end-user-doc -->
-	 * 
-	 * @return the new adapter.
-	 * @see org.openhealthtools.mdht.uml.cda.mu2consol.AssessmentAndPlanForConditionOrConcern
-	 * @generated
-	 */
-	public Adapter createAssessmentAndPlanForConditionOrConcernAdapter() {
 		return null;
 	}
 
@@ -608,20 +562,6 @@ public class Mu2consolAdapterFactory extends AdapterFactoryImpl {
 	 * @generated
 	 */
 	public Adapter createSmokingStatusObservationAdapter() {
-		return null;
-	}
-
-	/**
-	 * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.mu2consol.AllergiesSectionEntriesOptional <em>Allergies Section Entries Optional</em>}'.
-	 * <!-- begin-user-doc -->
-	 * This default implementation returns null so that we can easily ignore
-	 * cases; it's useful to ignore a case when inheritance will catch all the
-	 * cases anyway. <!-- end-user-doc -->
-	 * @return the new adapter.
-	 * @see org.openhealthtools.mdht.uml.cda.mu2consol.AllergiesSectionEntriesOptional
-	 * @generated
-	 */
-	public Adapter createAllergiesSectionEntriesOptionalAdapter() {
 		return null;
 	}
 
@@ -934,20 +874,6 @@ public class Mu2consolAdapterFactory extends AdapterFactoryImpl {
 	 * @generated
 	 */
 	public Adapter createTobaccoUseAdapter() {
-		return null;
-	}
-
-	/**
-	 * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.consol.AllergiesSectionEntriesOptional <em>Allergies Section Entries Optional</em>}'.
-	 * <!-- begin-user-doc -->
-	 * This default implementation returns null so that we can easily ignore
-	 * cases; it's useful to ignore a case when inheritance will catch all the
-	 * cases anyway. <!-- end-user-doc -->
-	 * @return the new adapter.
-	 * @see org.openhealthtools.mdht.uml.cda.consol.AllergiesSectionEntriesOptional
-	 * @generated
-	 */
-	public Adapter createConsol_AllergiesSectionEntriesOptionalAdapter() {
 		return null;
 	}
 

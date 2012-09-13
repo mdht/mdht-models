@@ -442,16 +442,6 @@ public class ClinicalOfficeVisitSummaryImpl extends
 	 * @generated
 	 */
 	@Override
-	public boolean validateGeneralHeaderConstraintsTemplateId(
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ClinicalOfficeVisitSummaryOperations.validateGeneralHeaderConstraintsTemplateId(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
 	public ClinicalOfficeVisitSummary init() {
 	    return Initializer.Util.init(this);
 	}

@@ -245,26 +245,6 @@ public class Mu2consolSwitch<T> {
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case Mu2consolPackage.ASSESSMENT_AND_PLAN_FOR_CARE_PLANNING: {
-				AssessmentAndPlanForCarePlanning assessmentAndPlanForCarePlanning = (AssessmentAndPlanForCarePlanning)theEObject;
-				T result = caseAssessmentAndPlanForCarePlanning(assessmentAndPlanForCarePlanning);
-				if (result == null) result = caseConsol_AssessmentAndPlanSection(assessmentAndPlanForCarePlanning);
-				if (result == null) result = caseSection(assessmentAndPlanForCarePlanning);
-				if (result == null) result = caseAct(assessmentAndPlanForCarePlanning);
-				if (result == null) result = caseInfrastructureRoot(assessmentAndPlanForCarePlanning);
-				if (result == null) result = defaultCase(theEObject);
-				return result;
-			}
-			case Mu2consolPackage.ASSESSMENT_AND_PLAN_FOR_CONDITION_OR_CONCERN: {
-				AssessmentAndPlanForConditionOrConcern assessmentAndPlanForConditionOrConcern = (AssessmentAndPlanForConditionOrConcern)theEObject;
-				T result = caseAssessmentAndPlanForConditionOrConcern(assessmentAndPlanForConditionOrConcern);
-				if (result == null) result = caseConsol_AssessmentAndPlanSection(assessmentAndPlanForConditionOrConcern);
-				if (result == null) result = caseSection(assessmentAndPlanForConditionOrConcern);
-				if (result == null) result = caseAct(assessmentAndPlanForConditionOrConcern);
-				if (result == null) result = caseInfrastructureRoot(assessmentAndPlanForConditionOrConcern);
-				if (result == null) result = defaultCase(theEObject);
-				return result;
-			}
 			case Mu2consolPackage.INSTRUCTIONS_SECTION: {
 				InstructionsSection instructionsSection = (InstructionsSection)theEObject;
 				T result = caseInstructionsSection(instructionsSection);
@@ -272,16 +252,6 @@ public class Mu2consolSwitch<T> {
 				if (result == null) result = caseSection(instructionsSection);
 				if (result == null) result = caseAct(instructionsSection);
 				if (result == null) result = caseInfrastructureRoot(instructionsSection);
-				if (result == null) result = defaultCase(theEObject);
-				return result;
-			}
-			case Mu2consolPackage.ALLERGIES_SECTION_ENTRIES_OPTIONAL: {
-				AllergiesSectionEntriesOptional allergiesSectionEntriesOptional = (AllergiesSectionEntriesOptional)theEObject;
-				T result = caseAllergiesSectionEntriesOptional(allergiesSectionEntriesOptional);
-				if (result == null) result = caseConsol_AllergiesSectionEntriesOptional(allergiesSectionEntriesOptional);
-				if (result == null) result = caseSection(allergiesSectionEntriesOptional);
-				if (result == null) result = caseAct(allergiesSectionEntriesOptional);
-				if (result == null) result = caseInfrastructureRoot(allergiesSectionEntriesOptional);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
@@ -388,21 +358,6 @@ public class Mu2consolSwitch<T> {
 	}
 
 	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Assessment And Plan For Care Planning</em>'.
-	 * <!-- begin-user-doc -->
-	 * This implementation returns null; returning a non-null result will
-	 * terminate the switch. <!-- end-user-doc -->
-	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Assessment And Plan For Care Planning</em>'.
-	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
-	 * @generated
-	 */
-	public T caseAssessmentAndPlanForCarePlanning(
-			AssessmentAndPlanForCarePlanning object) {
-		return null;
-	}
-
-	/**
 	 * Returns the result of interpreting the object as an instance of '<em>Plan Of Care Section</em>'.
 	 * <!-- begin-user-doc --> This
 	 * implementation returns null; returning a non-null result will terminate
@@ -413,24 +368,6 @@ public class Mu2consolSwitch<T> {
 	 * @generated
 	 */
 	public T casePlanOfCareSection(PlanOfCareSection object) {
-		return null;
-	}
-
-	/**
-	 * Returns the result of interpreting the object as an instance of '
-	 * <em>Assessment And Plan For Condition Or Concern</em>'. <!--
-	 * begin-user-doc --> This implementation returns null; returning a non-null
-	 * result will terminate the switch. <!-- end-user-doc -->
-	 * 
-	 * @param object
-	 *            the target of the switch.
-	 * @return the result of interpreting the object as an instance of '
-	 *         <em>Assessment And Plan For Condition Or Concern</em>'.
-	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
-	 * @generated
-	 */
-	public T caseAssessmentAndPlanForConditionOrConcern(
-			AssessmentAndPlanForConditionOrConcern object) {
 		return null;
 	}
 
@@ -701,21 +638,6 @@ public class Mu2consolSwitch<T> {
 	 * @generated
 	 */
 	public T caseSmokingStatusObservation(SmokingStatusObservation object) {
-		return null;
-	}
-
-	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Allergies Section Entries Optional</em>'.
-	 * <!-- begin-user-doc -->
-	 * This implementation returns null; returning a non-null result will
-	 * terminate the switch. <!-- end-user-doc -->
-	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Allergies Section Entries Optional</em>'.
-	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
-	 * @generated
-	 */
-	public T caseAllergiesSectionEntriesOptional(
-			AllergiesSectionEntriesOptional object) {
 		return null;
 	}
 
@@ -1048,21 +970,6 @@ public class Mu2consolSwitch<T> {
 	 * @generated
 	 */
 	public T caseTobaccoUse(TobaccoUse object) {
-		return null;
-	}
-
-	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Allergies Section Entries Optional</em>'.
-	 * <!-- begin-user-doc -->
-	 * This implementation returns null; returning a non-null result will
-	 * terminate the switch. <!-- end-user-doc -->
-	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Allergies Section Entries Optional</em>'.
-	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
-	 * @generated
-	 */
-	public T caseConsol_AllergiesSectionEntriesOptional(
-			org.openhealthtools.mdht.uml.cda.consol.AllergiesSectionEntriesOptional object) {
 		return null;
 	}
 

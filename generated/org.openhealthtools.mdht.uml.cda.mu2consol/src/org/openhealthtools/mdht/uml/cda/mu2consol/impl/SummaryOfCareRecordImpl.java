@@ -665,16 +665,6 @@ public class SummaryOfCareRecordImpl extends GeneralHeaderConstraintsImpl
 	 * @generated
 	 */
 	@Override
-	public boolean validateGeneralHeaderConstraintsTemplateId(
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return SummaryOfCareRecordOperations.validateGeneralHeaderConstraintsTemplateId(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
 	public SummaryOfCareRecord init() {
 	    return Initializer.Util.init(this);
 	}

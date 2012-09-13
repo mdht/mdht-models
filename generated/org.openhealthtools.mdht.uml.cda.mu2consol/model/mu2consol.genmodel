@@ -391,35 +391,12 @@
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="mu2consol.ecore#//FunctionalStatusSection/getmu2consolFunctionalStatusResultObservations"/>
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="mu2consol.ecore#//FunctionalStatusSection/getmu2consolFunctionalStatusResultOrganizers"/>
     </genClasses>
-    <genClasses xsi:type="genmodel:GenClass" ecoreClass="mu2consol.ecore#//AssessmentAndPlanForCarePlanning">
-      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="mu2consol.ecore#//AssessmentAndPlanForCarePlanning/AssessmentAndPlanForCarePlanningOneOfPlanOfCareEntry">
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="mu2consol.ecore#//AssessmentAndPlanForCarePlanning/AssessmentAndPlanForCarePlanningOneOfPlanOfCareEntry/diagnostics"/>
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="mu2consol.ecore#//AssessmentAndPlanForCarePlanning/AssessmentAndPlanForCarePlanningOneOfPlanOfCareEntry/context"/>
-      </genOperations>
-      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="mu2consol.ecore#//AssessmentAndPlanForCarePlanning/getPlanOfCareActivityProcedure"/>
-      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="mu2consol.ecore#//AssessmentAndPlanForCarePlanning/getPlanOfCareActivitySubstanceAdministration"/>
-      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="mu2consol.ecore#//AssessmentAndPlanForCarePlanning/getPlanOfCareActivitySupply"/>
-    </genClasses>
-    <genClasses xsi:type="genmodel:GenClass" ecoreClass="mu2consol.ecore#//AssessmentAndPlanForConditionOrConcern">
-      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="mu2consol.ecore#//AssessmentAndPlanForConditionOrConcern/AssessmentAndPlanForConditionOrConcernProblemObservation">
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="mu2consol.ecore#//AssessmentAndPlanForConditionOrConcern/AssessmentAndPlanForConditionOrConcernProblemObservation/diagnostics"/>
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="mu2consol.ecore#//AssessmentAndPlanForConditionOrConcern/AssessmentAndPlanForConditionOrConcernProblemObservation/context"/>
-      </genOperations>
-      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="mu2consol.ecore#//AssessmentAndPlanForConditionOrConcern/getProblemObservation"/>
-    </genClasses>
     <genClasses xsi:type="genmodel:GenClass" ecoreClass="mu2consol.ecore#//InstructionsSection">
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="mu2consol.ecore#//InstructionsSection/mu2consolInstructionsSectionInstructions">
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="mu2consol.ecore#//InstructionsSection/mu2consolInstructionsSectionInstructions/diagnostics"/>
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="mu2consol.ecore#//InstructionsSection/mu2consolInstructionsSectionInstructions/context"/>
       </genOperations>
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="mu2consol.ecore#//InstructionsSection/getmu2consolInstructionss"/>
-    </genClasses>
-    <genClasses xsi:type="genmodel:GenClass" ecoreClass="mu2consol.ecore#//AllergiesSectionEntriesOptional">
-      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="mu2consol.ecore#//AllergiesSectionEntriesOptional/mu2consolAllergiesSectionEntriesOptionalAllergyProblemAct">
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="mu2consol.ecore#//AllergiesSectionEntriesOptional/mu2consolAllergiesSectionEntriesOptionalAllergyProblemAct/diagnostics"/>
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="mu2consol.ecore#//AllergiesSectionEntriesOptional/mu2consolAllergiesSectionEntriesOptionalAllergyProblemAct/context"/>
-      </genOperations>
-      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="mu2consol.ecore#//AllergiesSectionEntriesOptional/getmu2consolAllergyProblemAct"/>
     </genClasses>
     <genClasses xsi:type="genmodel:GenClass" ecoreClass="mu2consol.ecore#//ClinicalOfficeVisitSummary">
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="mu2consol.ecore#//ClinicalOfficeVisitSummary/ClinicalOfficeVisitSummaryResponsibleParty">
