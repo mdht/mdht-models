@@ -237,6 +237,15 @@ public class ClinicalOfficeVisitSummaryImpl extends
 	}
 
 	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public PlanOfCareSection retrievePlanOfCareSection() {
+		return ClinicalOfficeVisitSummaryOperations.retrievePlanOfCareSection(this);
+	}
+
+	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @generated
 	 */

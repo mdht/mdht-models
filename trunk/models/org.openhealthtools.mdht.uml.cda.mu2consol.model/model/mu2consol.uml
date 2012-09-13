@@ -752,7 +752,7 @@
           <language>Analysis</language>
           <language>OCL</language>
           <body>Future Scheduled Appointments and Referrals to Other Providers</body>
-          <body>self.getAllSections()->exists(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(mu2consol::PlanOfCareSection)and ( section.getActs()->exists(a : cda::Act | a.oclIsKindOf(consol::PlanOfCareActivityAct)) or section.getEncounters()->exists(e : cda::Encounter | e.oclIsKindOf(consol::PlanOfCareActivityEncounter))))</body>
+          <body>self.retrievePlanOfCareSection()->excluding(null)->reject(retrievePlanOfCareSection().getActs()->exists(a : cda::Act | a.oclIsKindOf(consol::PlanOfCareActivityAct)) or retrievePlanOfCareSection().getEncounters()->exists(e : cda::Encounter | e.oclIsKindOf(consol::PlanOfCareActivityEncounter)))</body>
         </specification>
       </ownedRule>
       <generalization xmi:id="_7D0pUOzmEeGT-eFu7Ghgjw" general="_v-6qsNkMEeGsqcJR8eqiMw"/>
@@ -823,6 +823,15 @@
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_DCzUUPhnEeGPm7sA61ixGw" value="1"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_DCz7YPhnEeGPm7sA61ixGw" value="1"/>
       </ownedAttribute>
+      <ownedOperation xmi:id="_viwLAP0aEeGlaomQ_EyHlg" name="retrievePlanOfCareSection" isQuery="true" bodyCondition="_F6QYgP0bEeGlaomQ_EyHlg">
+        <ownedRule xmi:id="_F6QYgP0bEeGlaomQ_EyHlg" name="body" constrainedElement="_viwLAP0aEeGlaomQ_EyHlg">
+          <specification xmi:type="uml:OpaqueExpression" xmi:id="_IoybUP0bEeGlaomQ_EyHlg">
+            <language>OCL</language>
+            <body>self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(mu2consol::PlanOfCareSection))->asSequence()->any(true).oclAsType(mu2consol::PlanOfCareSection)</body>
+          </specification>
+        </ownedRule>
+        <ownedParameter xmi:id="_9Ec1cP0aEeGlaomQ_EyHlg" name="" type="_svnagODKEeGdSJSga09Dyg" direction="return"/>
+      </ownedOperation>
     </packagedElement>
     <packagedElement xmi:type="uml:Association" xmi:id="_jg8_ceznEeGT-eFu7Ghgjw" memberEnd="_jg8YYOznEeGT-eFu7Ghgjw _jg8_cuznEeGT-eFu7Ghgjw">
       <ownedEnd xmi:id="_jg8_cuznEeGT-eFu7Ghgjw" type="_7D0CQOzmEeGT-eFu7Ghgjw" association="_jg8_ceznEeGT-eFu7Ghgjw"/>
