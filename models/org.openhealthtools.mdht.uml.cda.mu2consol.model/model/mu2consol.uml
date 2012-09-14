@@ -110,8 +110,8 @@
             <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-documents.uml#_7HSQoOxwEeG7k4bbVdXbXw"/>
           </generalization>
           <ownedAttribute xmi:id="_bd9LsPhTEeGPm7sA61ixGw" name="performer" visibility="private" type="_nm_rwNkzEeGsqcJR8eqiMw" aggregation="composite" association="_bd9ywPhTEeGPm7sA61ixGw">
-            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_UmwN4PhUEeGPm7sA61ixGw" value="1"/>
-            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_UmwN4fhUEeGPm7sA61ixGw" value="1"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_YDNmAP6cEeGmWJiRRvMaXA" value="*"/>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_YDNmAf6cEeGmWJiRRvMaXA" value="1"/>
             <redefinedProperty href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_6MIl4EoVEd6c3qsAxlFHaQ"/>
             <redefinedProperty href="../../org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-documents.uml#_IT-UYOxxEeG7k4bbVdXbXw"/>
           </ownedAttribute>
@@ -199,14 +199,6 @@
           <body>SHALL have one of Plan of Care (2.16.840.1.113883.10.20.22.2.10) or Assessment and Plan (2.16.840.1.113883.10.20.22.2.9) or Interventions (2.16.840.1.113883.10.20.21.2.3)</body>
         </specification>
       </ownedRule>
-      <ownedRule xmi:id="_VUReAOvZEeGkopdZmUN1Xw" name="reasonForHospitalization" constrainedElement="_VG3DUNkxEeGsqcJR8eqiMw">
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_ZBL0oOvZEeGkopdZmUN1Xw">
-          <language>OCL</language>
-          <language>Analysis</language>
-          <body>(self.getAllSections()->one(s : cda::Section | not s.oclIsUndefined() and s.oclIsTypeOf(mu2consol::HospitalAdmissionDiagnosisSection)) or &#xD;&#xA;self.getAllSections()->one(s : cda::Section | not s.oclIsUndefined() and s.oclIsTypeOf(mu2consol::PreoperativeDiagnosisSection)))</body>
-          <body>SHALL have one of Hospital Admission Diagnosis (2.16.840.1.113883.10.20.22.2.43) or Preoperative Diagnosis (2.16.840.1.113883.10.20.22.2.35)</body>
-        </specification>
-      </ownedRule>
       <generalization xmi:id="_VG3qYNkxEeGsqcJR8eqiMw" general="_v-6qsNkMEeGsqcJR8eqiMw"/>
       <ownedAttribute xmi:id="_2mtJoNpiEeGzu8-aAsCS4g" name="socialHistorySection" type="_9frdwO1UEeGT-eFu7Ghgjw" association="_2mtwsdpiEeGzu8-aAsCS4g">
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_9knKsN32EeGdQcioKnmIhA" value="1"/>
@@ -258,10 +250,6 @@
         <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-immunizations.uml#_2L7voBSVEeGGzu7fmW9pXw"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_6iJCwN33EeGdQcioKnmIhA" value="1"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_6iJp0N33EeGdQcioKnmIhA" value="1"/>
-      </ownedAttribute>
-      <ownedAttribute xmi:id="_cgJQcNpiEeGzu8-aAsCS4g" name="medicationsAdministeredSection" type="_3poqgODqEeGdSJSga09Dyg" association="_cgJ3gdpiEeGzu8-aAsCS4g">
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_0ID7QN33EeGdQcioKnmIhA" value="1"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_0IEiUN33EeGdQcioKnmIhA" value="1"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_CHFtANk5EeGsqcJR8eqiMw" name="assessmentAndPlanSection" type="_w2gYkODkEeGdSJSga09Dyg" association="_CHFtAtk5EeGsqcJR8eqiMw">
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_CHFtAdk5EeGsqcJR8eqiMw"/>
@@ -358,9 +346,6 @@
     </packagedElement>
     <packagedElement xmi:type="uml:Association" xmi:id="_1OLEYdk5EeGsqcJR8eqiMw" memberEnd="_1OKdUNk5EeGsqcJR8eqiMw _1OLEYtk5EeGsqcJR8eqiMw">
       <ownedEnd xmi:id="_1OLEYtk5EeGsqcJR8eqiMw" type="_VG3DUNkxEeGsqcJR8eqiMw" association="_1OLEYdk5EeGsqcJR8eqiMw"/>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Association" xmi:id="_cgJ3gdpiEeGzu8-aAsCS4g" memberEnd="_cgJQcNpiEeGzu8-aAsCS4g _cgJ3gtpiEeGzu8-aAsCS4g">
-      <ownedEnd xmi:id="_cgJ3gtpiEeGzu8-aAsCS4g" type="_VG3DUNkxEeGsqcJR8eqiMw" association="_cgJ3gdpiEeGzu8-aAsCS4g"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Association" xmi:id="_g_V_otpiEeGzu8-aAsCS4g" memberEnd="_g_V_oNpiEeGzu8-aAsCS4g _g_V_o9piEeGzu8-aAsCS4g">
       <ownedComment xmi:id="_HF_IAOAgEeGioIEuA5-ofg">
@@ -1177,7 +1162,6 @@ MU2 170.314(b)(7) Export Summary  - For Inpatient Care</body>
   <CDA:AssociationValidation xmi:id="_Pwx1oN32EeGdQcioKnmIhA" base_Association="_DoUl0tpjEeGzu8-aAsCS4g"/>
   <CDA:AssociationValidation xmi:id="_2fYNYN32EeGdQcioKnmIhA" base_Association="_6x1tUdpiEeGzu8-aAsCS4g"/>
   <CDA:AssociationValidation xmi:id="_-SBDQN32EeGdQcioKnmIhA" base_Association="_2mtwsdpiEeGzu8-aAsCS4g"/>
-  <CDA:AssociationValidation xmi:id="_04kyMN33EeGdQcioKnmIhA" base_Association="_cgJ3gdpiEeGzu8-aAsCS4g"/>
   <CDA:AssociationValidation xmi:id="_c4jm8eDlEeGdSJSga09Dyg" base_Association="_c4i_4-DlEeGdSJSga09Dyg"/>
   <CDA:AssociationValidation xmi:id="_kTLwAODmEeGdSJSga09Dyg" base_Association="_kTKh4uDmEeGdSJSga09Dyg"/>
   <CDA:AssociationValidation xmi:id="_r6pQoODmEeGdSJSga09Dyg" base_Association="_r6oCguDmEeGdSJSga09Dyg">
@@ -1199,7 +1183,6 @@ MU2 170.314(b)(7) Export Summary  - For Inpatient Care</body>
   <CDA:AssociationValidation xmi:id="_d0roAOGVEeG708usbCxwpw" base_Association="_bvo0gdk5EeGsqcJR8eqiMw"/>
   <CDA:CDATemplate xmi:id="_gWeuwOmKEeGNCuDrPdW6ZA" base_Class="_ZK4bUODlEeGdSJSga09Dyg" templateId="2.16.840.1.113883.10.20.22.2.45"/>
   <CDA:ConstraintValidation xmi:id="_7vlYQOvXEeGkopdZmUN1Xw" base_Constraint="_gfm_8OvXEeGkopdZmUN1Xw"/>
-  <CDA:ConstraintValidation xmi:id="_rb7RoOvZEeGkopdZmUN1Xw" base_Constraint="_VUReAOvZEeGkopdZmUN1Xw"/>
   <CDA:ConstraintValidation xmi:id="_f8jZYOvbEeGkopdZmUN1Xw" base_Constraint="_2nwZAN3EEeGdQcioKnmIhA"/>
   <CDA:AssociationValidation xmi:id="_C3dNQOyxEeGT-eFu7Ghgjw" base_Association="_UQ1IUNkzEeGsqcJR8eqiMw"/>
   <CDA:PropertyValidation xmi:id="_njlW8OyxEeGT-eFu7Ghgjw"/>
@@ -1277,7 +1260,6 @@ MU2 170.314(b)(7) Export Summary  - For Inpatient Care</body>
   <CDA:AssociationValidation xmi:id="_06bDYPhxEeGPm7sA61ixGw" base_Association="_9j4-MNpiEeGzu8-aAsCS4g"/>
   <CDA:AssociationValidation xmi:id="_YmfeQPhyEeGPm7sA61ixGw" base_Association="_ytrpotpiEeGzu8-aAsCS4g"/>
   <CDA:AssociationValidation xmi:id="_gNmZkPhyEeGPm7sA61ixGw" base_Association="_g_V_otpiEeGzu8-aAsCS4g"/>
-  <CDA:AssociationValidation xmi:id="_imOBUfhzEeGPm7sA61ixGw" severity="INFO" base_Association="_imNaQ_hzEeGPm7sA61ixGw"/>
   <CDA:AssociationValidation xmi:id="_imPPcvhzEeGPm7sA61ixGw" severity="INFO" base_Association="_imPPcPhzEeGPm7sA61ixGw"/>
   <CDA:AssociationValidation xmi:id="_imQdkvhzEeGPm7sA61ixGw" severity="INFO" base_Association="_imQdkPhzEeGPm7sA61ixGw"/>
   <CDA:AssociationValidation xmi:id="_imRrsvhzEeGPm7sA61ixGw" severity="INFO" base_Association="_imRrsPhzEeGPm7sA61ixGw"/>

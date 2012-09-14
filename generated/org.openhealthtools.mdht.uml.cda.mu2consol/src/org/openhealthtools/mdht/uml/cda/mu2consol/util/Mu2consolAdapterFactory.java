@@ -115,10 +115,6 @@ public class Mu2consolAdapterFactory extends AdapterFactoryImpl {
 				return createPreoperativeDiagnosisSectionAdapter();
 			}
 			@Override
-			public Adapter caseMedicationsAdministeredSection(MedicationsAdministeredSection object) {
-				return createMedicationsAdministeredSectionAdapter();
-			}
-			@Override
 			public Adapter caseHospitalAdmissionMedicationsSectionEntriesOptional(HospitalAdmissionMedicationsSectionEntriesOptional object) {
 				return createHospitalAdmissionMedicationsSectionEntriesOptionalAdapter();
 			}
@@ -141,6 +137,10 @@ public class Mu2consolAdapterFactory extends AdapterFactoryImpl {
 			@Override
 			public Adapter caseInstructionsSection(InstructionsSection object) {
 				return createInstructionsSectionAdapter();
+			}
+			@Override
+			public Adapter caseMedicationsAdministeredSection(MedicationsAdministeredSection object) {
+				return createMedicationsAdministeredSectionAdapter();
 			}
 			@Override
 			public Adapter caseClinicalOfficeVisitSummary(ClinicalOfficeVisitSummary object) {
@@ -215,10 +215,6 @@ public class Mu2consolAdapterFactory extends AdapterFactoryImpl {
 				return createConsol_PreoperativeDiagnosisSectionAdapter();
 			}
 			@Override
-			public Adapter caseConsol_MedicationsAdministeredSection(org.openhealthtools.mdht.uml.cda.consol.MedicationsAdministeredSection object) {
-				return createConsol_MedicationsAdministeredSectionAdapter();
-			}
-			@Override
 			public Adapter caseConsol_HospitalAdmissionMedicationsSectionEntriesOptional(org.openhealthtools.mdht.uml.cda.consol.HospitalAdmissionMedicationsSectionEntriesOptional object) {
 				return createConsol_HospitalAdmissionMedicationsSectionEntriesOptionalAdapter();
 			}
@@ -249,6 +245,10 @@ public class Mu2consolAdapterFactory extends AdapterFactoryImpl {
 			@Override
 			public Adapter caseConsol_InstructionsSection(org.openhealthtools.mdht.uml.cda.consol.InstructionsSection object) {
 				return createConsol_InstructionsSectionAdapter();
+			}
+			@Override
+			public Adapter caseConsol_MedicationsAdministeredSection(org.openhealthtools.mdht.uml.cda.consol.MedicationsAdministeredSection object) {
+				return createConsol_MedicationsAdministeredSectionAdapter();
 			}
 			@Override
 			public Adapter defaultCase(EObject object) {

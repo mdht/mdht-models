@@ -184,16 +184,6 @@ public class Mu2consolSwitch<T> {
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case Mu2consolPackage.MEDICATIONS_ADMINISTERED_SECTION: {
-				MedicationsAdministeredSection medicationsAdministeredSection = (MedicationsAdministeredSection)theEObject;
-				T result = caseMedicationsAdministeredSection(medicationsAdministeredSection);
-				if (result == null) result = caseConsol_MedicationsAdministeredSection(medicationsAdministeredSection);
-				if (result == null) result = caseSection(medicationsAdministeredSection);
-				if (result == null) result = caseAct(medicationsAdministeredSection);
-				if (result == null) result = caseInfrastructureRoot(medicationsAdministeredSection);
-				if (result == null) result = defaultCase(theEObject);
-				return result;
-			}
 			case Mu2consolPackage.HOSPITAL_ADMISSION_MEDICATIONS_SECTION_ENTRIES_OPTIONAL: {
 				HospitalAdmissionMedicationsSectionEntriesOptional hospitalAdmissionMedicationsSectionEntriesOptional = (HospitalAdmissionMedicationsSectionEntriesOptional)theEObject;
 				T result = caseHospitalAdmissionMedicationsSectionEntriesOptional(hospitalAdmissionMedicationsSectionEntriesOptional);
@@ -252,6 +242,16 @@ public class Mu2consolSwitch<T> {
 				if (result == null) result = caseSection(instructionsSection);
 				if (result == null) result = caseAct(instructionsSection);
 				if (result == null) result = caseInfrastructureRoot(instructionsSection);
+				if (result == null) result = defaultCase(theEObject);
+				return result;
+			}
+			case Mu2consolPackage.MEDICATIONS_ADMINISTERED_SECTION: {
+				MedicationsAdministeredSection medicationsAdministeredSection = (MedicationsAdministeredSection)theEObject;
+				T result = caseMedicationsAdministeredSection(medicationsAdministeredSection);
+				if (result == null) result = caseConsol_MedicationsAdministeredSection(medicationsAdministeredSection);
+				if (result == null) result = caseSection(medicationsAdministeredSection);
+				if (result == null) result = caseAct(medicationsAdministeredSection);
+				if (result == null) result = caseInfrastructureRoot(medicationsAdministeredSection);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
