@@ -24,7 +24,6 @@ import org.openhealthtools.mdht.uml.cda.mu2consol.FunctionalStatusSection;
 import org.openhealthtools.mdht.uml.cda.mu2consol.HospitalAdmissionDiagnosisSection;
 import org.openhealthtools.mdht.uml.cda.mu2consol.HospitalAdmissionMedicationsSectionEntriesOptional;
 import org.openhealthtools.mdht.uml.cda.mu2consol.HospitalDischargeDiagnosisSection;
-import org.openhealthtools.mdht.uml.cda.mu2consol.MedicationsAdministeredSection;
 import org.openhealthtools.mdht.uml.cda.mu2consol.Mu2consolPackage;
 import org.openhealthtools.mdht.uml.cda.mu2consol.PlanOfCareSection;
 import org.openhealthtools.mdht.uml.cda.mu2consol.PostoperativeDiagnosisSection;
@@ -83,15 +82,6 @@ public class SummaryOfCareRecordImpl extends GeneralHeaderConstraintsImpl
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateSummaryOfCareRecordReasonForHospitalization(
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return SummaryOfCareRecordOperations.validateSummaryOfCareRecordReasonForHospitalization(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @generated
-	 */
 	public boolean validateSummaryOfCareRecordPlanOfCareSection(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return SummaryOfCareRecordOperations.validateSummaryOfCareRecordPlanOfCareSection(this, diagnostics, context);
@@ -122,15 +112,6 @@ public class SummaryOfCareRecordImpl extends GeneralHeaderConstraintsImpl
 	public boolean validateSummaryOfCareRecordImmunizationsSection(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return SummaryOfCareRecordOperations.validateSummaryOfCareRecordImmunizationsSection(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateSummaryOfCareRecordMedicationsAdministeredSection(
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return SummaryOfCareRecordOperations.validateSummaryOfCareRecordMedicationsAdministeredSection(this, diagnostics, context);
 	}
 
 	/**
@@ -257,24 +238,6 @@ public class SummaryOfCareRecordImpl extends GeneralHeaderConstraintsImpl
 	public boolean validateSummaryOfCareRecordPlanOfCareSectionTemplateId(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return SummaryOfCareRecordOperations.validateSummaryOfCareRecordPlanOfCareSectionTemplateId(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateSummaryOfCareRecordMedicationsAdministeredSectionTemplateId(
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return SummaryOfCareRecordOperations.validateSummaryOfCareRecordMedicationsAdministeredSectionTemplateId(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateSummaryOfCareRecordmu2consolMedicationsAdministeredSectionMedicationActivity(
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return SummaryOfCareRecordOperations.validateSummaryOfCareRecordmu2consolMedicationsAdministeredSectionMedicationActivity(this, diagnostics, context);
 	}
 
 	/**
@@ -426,15 +389,6 @@ public class SummaryOfCareRecordImpl extends GeneralHeaderConstraintsImpl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateSummaryOfCareRecordmu2consolFunctionalStatusSectionCognitiveStatusProblemObservation(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return SummaryOfCareRecordOperations.validateSummaryOfCareRecordmu2consolFunctionalStatusSectionCognitiveStatusProblemObservation(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	public boolean validateSummaryOfCareRecordmu2consolFunctionalStatusSectionCognitiveStatusResultObservation(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return SummaryOfCareRecordOperations.validateSummaryOfCareRecordmu2consolFunctionalStatusSectionCognitiveStatusResultObservation(this, diagnostics, context);
 	}
@@ -577,14 +531,6 @@ public class SummaryOfCareRecordImpl extends GeneralHeaderConstraintsImpl
 	 */
 	public ImmunizationsSection getImmunizationsSection() {
 		return SummaryOfCareRecordOperations.getImmunizationsSection(this);
-	}
-
-	/**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @generated
-	 */
-	public MedicationsAdministeredSection getMedicationsAdministeredSection() {
-		return SummaryOfCareRecordOperations.getMedicationsAdministeredSection(this);
 	}
 
 	/**
