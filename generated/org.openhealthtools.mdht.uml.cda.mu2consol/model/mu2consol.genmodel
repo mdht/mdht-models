@@ -195,25 +195,9 @@
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="mu2consol.ecore#//SummaryOfCareRecord/SummaryOfCareRecordFunctionalStatusSectionTemplateId/diagnostics"/>
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="mu2consol.ecore#//SummaryOfCareRecord/SummaryOfCareRecordFunctionalStatusSectionTemplateId/context"/>
       </genOperations>
-      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="mu2consol.ecore#//SummaryOfCareRecord/SummaryOfCareRecordmu2consolFunctionalStatusSectionCognitiveStatusResultObservation">
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="mu2consol.ecore#//SummaryOfCareRecord/SummaryOfCareRecordmu2consolFunctionalStatusSectionCognitiveStatusResultObservation/diagnostics"/>
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="mu2consol.ecore#//SummaryOfCareRecord/SummaryOfCareRecordmu2consolFunctionalStatusSectionCognitiveStatusResultObservation/context"/>
-      </genOperations>
-      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="mu2consol.ecore#//SummaryOfCareRecord/SummaryOfCareRecordmu2consolFunctionalStatusSectionCognitiveStatusResultOrganizer">
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="mu2consol.ecore#//SummaryOfCareRecord/SummaryOfCareRecordmu2consolFunctionalStatusSectionCognitiveStatusResultOrganizer/diagnostics"/>
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="mu2consol.ecore#//SummaryOfCareRecord/SummaryOfCareRecordmu2consolFunctionalStatusSectionCognitiveStatusResultOrganizer/context"/>
-      </genOperations>
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="mu2consol.ecore#//SummaryOfCareRecord/SummaryOfCareRecordmu2consolFunctionalStatusSectionFunctionalStatusProblemObservation">
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="mu2consol.ecore#//SummaryOfCareRecord/SummaryOfCareRecordmu2consolFunctionalStatusSectionFunctionalStatusProblemObservation/diagnostics"/>
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="mu2consol.ecore#//SummaryOfCareRecord/SummaryOfCareRecordmu2consolFunctionalStatusSectionFunctionalStatusProblemObservation/context"/>
-      </genOperations>
-      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="mu2consol.ecore#//SummaryOfCareRecord/SummaryOfCareRecordmu2consolFunctionalStatusSectionFunctionalStatusResultObservation">
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="mu2consol.ecore#//SummaryOfCareRecord/SummaryOfCareRecordmu2consolFunctionalStatusSectionFunctionalStatusResultObservation/diagnostics"/>
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="mu2consol.ecore#//SummaryOfCareRecord/SummaryOfCareRecordmu2consolFunctionalStatusSectionFunctionalStatusResultObservation/context"/>
-      </genOperations>
-      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="mu2consol.ecore#//SummaryOfCareRecord/SummaryOfCareRecordmu2consolFunctionalStatusSectionFunctionalStatusResultOrganizer">
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="mu2consol.ecore#//SummaryOfCareRecord/SummaryOfCareRecordmu2consolFunctionalStatusSectionFunctionalStatusResultOrganizer/diagnostics"/>
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="mu2consol.ecore#//SummaryOfCareRecord/SummaryOfCareRecordmu2consolFunctionalStatusSectionFunctionalStatusResultOrganizer/context"/>
       </genOperations>
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="mu2consol.ecore#//SummaryOfCareRecord/getEncountersSection"/>
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="mu2consol.ecore#//SummaryOfCareRecord/getPlanOfCareSection"/>
@@ -332,25 +316,9 @@
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="mu2consol.ecore#//FunctionalStatusSection/mu2consolFunctionalStatusSectionFunctionalStatus/diagnostics"/>
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="mu2consol.ecore#//FunctionalStatusSection/mu2consolFunctionalStatusSectionFunctionalStatus/context"/>
       </genOperations>
-      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="mu2consol.ecore#//FunctionalStatusSection/mu2consolFunctionalStatusSectionCognitiveStatusResultObservation">
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="mu2consol.ecore#//FunctionalStatusSection/mu2consolFunctionalStatusSectionCognitiveStatusResultObservation/diagnostics"/>
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="mu2consol.ecore#//FunctionalStatusSection/mu2consolFunctionalStatusSectionCognitiveStatusResultObservation/context"/>
-      </genOperations>
-      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="mu2consol.ecore#//FunctionalStatusSection/mu2consolFunctionalStatusSectionCognitiveStatusResultOrganizer">
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="mu2consol.ecore#//FunctionalStatusSection/mu2consolFunctionalStatusSectionCognitiveStatusResultOrganizer/diagnostics"/>
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="mu2consol.ecore#//FunctionalStatusSection/mu2consolFunctionalStatusSectionCognitiveStatusResultOrganizer/context"/>
-      </genOperations>
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="mu2consol.ecore#//FunctionalStatusSection/mu2consolFunctionalStatusSectionFunctionalStatusProblemObservation">
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="mu2consol.ecore#//FunctionalStatusSection/mu2consolFunctionalStatusSectionFunctionalStatusProblemObservation/diagnostics"/>
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="mu2consol.ecore#//FunctionalStatusSection/mu2consolFunctionalStatusSectionFunctionalStatusProblemObservation/context"/>
-      </genOperations>
-      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="mu2consol.ecore#//FunctionalStatusSection/mu2consolFunctionalStatusSectionFunctionalStatusResultObservation">
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="mu2consol.ecore#//FunctionalStatusSection/mu2consolFunctionalStatusSectionFunctionalStatusResultObservation/diagnostics"/>
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="mu2consol.ecore#//FunctionalStatusSection/mu2consolFunctionalStatusSectionFunctionalStatusResultObservation/context"/>
-      </genOperations>
-      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="mu2consol.ecore#//FunctionalStatusSection/mu2consolFunctionalStatusSectionFunctionalStatusResultOrganizer">
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="mu2consol.ecore#//FunctionalStatusSection/mu2consolFunctionalStatusSectionFunctionalStatusResultOrganizer/diagnostics"/>
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="mu2consol.ecore#//FunctionalStatusSection/mu2consolFunctionalStatusSectionFunctionalStatusResultOrganizer/context"/>
       </genOperations>
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="mu2consol.ecore#//FunctionalStatusSection/getmu2consolCognitiveStatusProblemObservations"/>
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="mu2consol.ecore#//FunctionalStatusSection/getmu2consolCognitiveStatusResultObservations"/>

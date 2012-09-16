@@ -1260,11 +1260,6 @@ MU2 170.314(b)(7) Export Summary  - For Inpatient Care</body>
   <CDA:AssociationValidation xmi:id="_06bDYPhxEeGPm7sA61ixGw" base_Association="_9j4-MNpiEeGzu8-aAsCS4g"/>
   <CDA:AssociationValidation xmi:id="_YmfeQPhyEeGPm7sA61ixGw" base_Association="_ytrpotpiEeGzu8-aAsCS4g"/>
   <CDA:AssociationValidation xmi:id="_gNmZkPhyEeGPm7sA61ixGw" base_Association="_g_V_otpiEeGzu8-aAsCS4g"/>
-  <CDA:AssociationValidation xmi:id="_imPPcvhzEeGPm7sA61ixGw" severity="INFO" base_Association="_imPPcPhzEeGPm7sA61ixGw"/>
-  <CDA:AssociationValidation xmi:id="_imQdkvhzEeGPm7sA61ixGw" severity="INFO" base_Association="_imQdkPhzEeGPm7sA61ixGw"/>
-  <CDA:AssociationValidation xmi:id="_imRrsvhzEeGPm7sA61ixGw" severity="INFO" base_Association="_imRrsPhzEeGPm7sA61ixGw"/>
-  <CDA:AssociationValidation xmi:id="_imS50fhzEeGPm7sA61ixGw" severity="INFO" base_Association="_imSSw_hzEeGPm7sA61ixGw"/>
-  <CDA:AssociationValidation xmi:id="_imUH8fhzEeGPm7sA61ixGw" severity="INFO" base_Association="_imTg4_hzEeGPm7sA61ixGw"/>
   <CDA:CDATemplate xmi:id="_md_kIPhzEeGPm7sA61ixGw" base_Class="_do39kPhzEeGPm7sA61ixGw" templateId="2.16.840.1.113883.10.20.22.2.14"/>
   <CDA:ConstraintValidation xmi:id="_SH3toPh1EeGPm7sA61ixGw" base_Constraint="_JoyBcPh1EeGPm7sA61ixGw"/>
   <CDA:ConstraintValidation xmi:id="_e2YAkPh1EeGPm7sA61ixGw" base_Constraint="_bj0qsPh1EeGPm7sA61ixGw"/>
@@ -1287,4 +1282,5 @@ MU2 170.314(b)(7) Export Summary  - For Inpatient Care</body>
   <CDA:PropertyValidation xmi:id="__5bnwPwYEeGx4ophOjh2tw" base_Property="__5ZLgPwYEeGx4ophOjh2tw"/>
   <CDA:CDATemplate xmi:id="_JW-gQPwZEeGx4ophOjh2tw" base_Class="_xbrkwPwYEeGx4ophOjh2tw" templateId="2.16.840.1.113883.10.22.4.78"/>
   <CDA:CDATemplate xmi:id="_Mm36EP3iEeGmWJiRRvMaXA" base_Class="_v-6qsNkMEeGsqcJR8eqiMw" templateId="2.16.840.1.113883.10.20.22.1.1"/>
+  <CDA:AssociationValidation xmi:id="_U-y6oP_MEeGEPqejBtSXZw" base_Association="_imRrsPhzEeGPm7sA61ixGw"/>
 </xmi:XMI>
