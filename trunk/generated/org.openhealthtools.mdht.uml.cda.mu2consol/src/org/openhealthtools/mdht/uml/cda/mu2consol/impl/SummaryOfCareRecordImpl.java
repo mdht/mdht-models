@@ -389,44 +389,8 @@ public class SummaryOfCareRecordImpl extends GeneralHeaderConstraintsImpl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateSummaryOfCareRecordmu2consolFunctionalStatusSectionCognitiveStatusResultObservation(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return SummaryOfCareRecordOperations.validateSummaryOfCareRecordmu2consolFunctionalStatusSectionCognitiveStatusResultObservation(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateSummaryOfCareRecordmu2consolFunctionalStatusSectionCognitiveStatusResultOrganizer(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return SummaryOfCareRecordOperations.validateSummaryOfCareRecordmu2consolFunctionalStatusSectionCognitiveStatusResultOrganizer(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	public boolean validateSummaryOfCareRecordmu2consolFunctionalStatusSectionFunctionalStatusProblemObservation(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return SummaryOfCareRecordOperations.validateSummaryOfCareRecordmu2consolFunctionalStatusSectionFunctionalStatusProblemObservation(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateSummaryOfCareRecordmu2consolFunctionalStatusSectionFunctionalStatusResultObservation(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return SummaryOfCareRecordOperations.validateSummaryOfCareRecordmu2consolFunctionalStatusSectionFunctionalStatusResultObservation(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateSummaryOfCareRecordmu2consolFunctionalStatusSectionFunctionalStatusResultOrganizer(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return SummaryOfCareRecordOperations.validateSummaryOfCareRecordmu2consolFunctionalStatusSectionFunctionalStatusResultOrganizer(this, diagnostics, context);
 	}
 
 	/**

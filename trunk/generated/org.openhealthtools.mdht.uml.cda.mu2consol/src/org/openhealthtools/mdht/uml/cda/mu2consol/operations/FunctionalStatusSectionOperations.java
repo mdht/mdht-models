@@ -1,39 +1,26 @@
-/**
- * <copyright>
- * </copyright>
- *
- * $Id$
- */
 package org.openhealthtools.mdht.uml.cda.mu2consol.operations;
+
 
 import java.util.Collection;
 import java.util.Map;
-
 import org.eclipse.emf.common.util.BasicDiagnostic;
 import org.eclipse.emf.common.util.BasicEList;
 import org.eclipse.emf.common.util.Diagnostic;
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.common.util.EList;
-
 import org.eclipse.emf.ecore.EClassifier;
-
 import org.eclipse.ocl.ParserException;
-
 import org.eclipse.ocl.ecore.Constraint;
 import org.eclipse.ocl.ecore.OCL;
-
 import org.eclipse.ocl.expressions.OCLExpression;
-
 import org.openhealthtools.mdht.uml.cda.consol.CognitiveStatusProblemObservation;
 import org.openhealthtools.mdht.uml.cda.consol.CognitiveStatusResultObservation;
 import org.openhealthtools.mdht.uml.cda.consol.CognitiveStatusResultOrganizer;
 import org.openhealthtools.mdht.uml.cda.consol.FunctionalStatusProblemObservation;
 import org.openhealthtools.mdht.uml.cda.consol.FunctionalStatusResultObservation;
 import org.openhealthtools.mdht.uml.cda.consol.FunctionalStatusResultOrganizer;
-
 import org.openhealthtools.mdht.uml.cda.mu2consol.FunctionalStatusSection;
 import org.openhealthtools.mdht.uml.cda.mu2consol.Mu2consolPackage;
-
 import org.openhealthtools.mdht.uml.cda.mu2consol.util.Mu2consolValidator;
 
 /**
@@ -46,11 +33,7 @@ import org.openhealthtools.mdht.uml.cda.mu2consol.util.Mu2consolValidator;
  * <ul>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.mu2consol.FunctionalStatusSection#validateMu2consolFunctionalStatusSectionCognitiveStatus(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Mu2consol Functional Status Section Cognitive Status</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.mu2consol.FunctionalStatusSection#validateMu2consolFunctionalStatusSectionFunctionalStatus(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Mu2consol Functional Status Section Functional Status</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.mu2consol.FunctionalStatusSection#validateMu2consolFunctionalStatusSectionCognitiveStatusResultObservation(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Mu2consol Functional Status Section Cognitive Status Result Observation</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.mu2consol.FunctionalStatusSection#validateMu2consolFunctionalStatusSectionCognitiveStatusResultOrganizer(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Mu2consol Functional Status Section Cognitive Status Result Organizer</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.mu2consol.FunctionalStatusSection#validateMu2consolFunctionalStatusSectionFunctionalStatusProblemObservation(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Mu2consol Functional Status Section Functional Status Problem Observation</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.mu2consol.FunctionalStatusSection#validateMu2consolFunctionalStatusSectionFunctionalStatusResultObservation(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Mu2consol Functional Status Section Functional Status Result Observation</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.mu2consol.FunctionalStatusSection#validateMu2consolFunctionalStatusSectionFunctionalStatusResultOrganizer(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Mu2consol Functional Status Section Functional Status Result Organizer</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.mu2consol.FunctionalStatusSection#getmu2consolCognitiveStatusProblemObservations() <em>Getmu2consol Cognitive Status Problem Observations</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.mu2consol.FunctionalStatusSection#getmu2consolCognitiveStatusResultObservations() <em>Getmu2consol Cognitive Status Result Observations</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.mu2consol.FunctionalStatusSection#getmu2consolCognitiveStatusResultOrganizers() <em>Getmu2consol Cognitive Status Result Organizers</em>}</li>
@@ -198,130 +181,6 @@ public class FunctionalStatusSectionOperations extends org.openhealthtools.mdht.
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #validateMu2consolFunctionalStatusSectionCognitiveStatusResultObservation(FunctionalStatusSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Mu2consol Functional Status Section Cognitive Status Result Observation</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #validateMu2consolFunctionalStatusSectionCognitiveStatusResultObservation(FunctionalStatusSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
-	protected static final String VALIDATE_MU2CONSOL_FUNCTIONAL_STATUS_SECTION_COGNITIVE_STATUS_RESULT_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entry->exists(entry : cda::Entry | not entry.observation.oclIsUndefined() and entry.observation.oclIsKindOf(consol::CognitiveStatusResultObservation))";
-
-	/**
-	 * The cached OCL invariant for the '{@link #validateMu2consolFunctionalStatusSectionCognitiveStatusResultObservation(FunctionalStatusSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Mu2consol Functional Status Section Cognitive Status Result Observation</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #validateMu2consolFunctionalStatusSectionCognitiveStatusResultObservation(FunctionalStatusSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
-	
-	protected static Constraint VALIDATE_MU2CONSOL_FUNCTIONAL_STATUS_SECTION_COGNITIVE_STATUS_RESULT_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-	
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.entry->exists(entry : cda::Entry | not entry.observation.oclIsUndefined() and entry.observation.oclIsKindOf(consol::CognitiveStatusResultObservation))
-	 * @param functionalStatusSection The receiving '<em><b>Functional Status Section</b></em>' model object.
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
-	
-	public static  boolean validateMu2consolFunctionalStatusSectionCognitiveStatusResultObservation(FunctionalStatusSection functionalStatusSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
-		if (VALIDATE_MU2CONSOL_FUNCTIONAL_STATUS_SECTION_COGNITIVE_STATUS_RESULT_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setContext(Mu2consolPackage.Literals.FUNCTIONAL_STATUS_SECTION);
-			try {
-				VALIDATE_MU2CONSOL_FUNCTIONAL_STATUS_SECTION_COGNITIVE_STATUS_RESULT_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_MU2CONSOL_FUNCTIONAL_STATUS_SECTION_COGNITIVE_STATUS_RESULT_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
-				throw new UnsupportedOperationException(pe.getLocalizedMessage());
-			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_MU2CONSOL_FUNCTIONAL_STATUS_SECTION_COGNITIVE_STATUS_RESULT_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(functionalStatusSection)) {
-			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 Mu2consolValidator.DIAGNOSTIC_SOURCE,
-						 Mu2consolValidator.FUNCTIONAL_STATUS_SECTION__MU2CONSOL_FUNCTIONAL_STATUS_SECTION_COGNITIVE_STATUS_RESULT_OBSERVATION,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "Mu2consolFunctionalStatusSectionCognitiveStatusResultObservation", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(functionalStatusSection, context) }),
-						 new Object [] { functionalStatusSection }));
-			}
-			 
-			return false;
-		}
-		return true;
-	}
-
-	/**
-	 * The cached OCL expression body for the '{@link #validateMu2consolFunctionalStatusSectionCognitiveStatusResultOrganizer(FunctionalStatusSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Mu2consol Functional Status Section Cognitive Status Result Organizer</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #validateMu2consolFunctionalStatusSectionCognitiveStatusResultOrganizer(FunctionalStatusSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
-	protected static final String VALIDATE_MU2CONSOL_FUNCTIONAL_STATUS_SECTION_COGNITIVE_STATUS_RESULT_ORGANIZER__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entry->exists(entry : cda::Entry | not entry.organizer.oclIsUndefined() and entry.organizer.oclIsKindOf(consol::CognitiveStatusResultOrganizer))";
-
-	/**
-	 * The cached OCL invariant for the '{@link #validateMu2consolFunctionalStatusSectionCognitiveStatusResultOrganizer(FunctionalStatusSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Mu2consol Functional Status Section Cognitive Status Result Organizer</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #validateMu2consolFunctionalStatusSectionCognitiveStatusResultOrganizer(FunctionalStatusSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
-	
-	protected static Constraint VALIDATE_MU2CONSOL_FUNCTIONAL_STATUS_SECTION_COGNITIVE_STATUS_RESULT_ORGANIZER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-	
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.entry->exists(entry : cda::Entry | not entry.organizer.oclIsUndefined() and entry.organizer.oclIsKindOf(consol::CognitiveStatusResultOrganizer))
-	 * @param functionalStatusSection The receiving '<em><b>Functional Status Section</b></em>' model object.
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
-	
-	public static  boolean validateMu2consolFunctionalStatusSectionCognitiveStatusResultOrganizer(FunctionalStatusSection functionalStatusSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
-		if (VALIDATE_MU2CONSOL_FUNCTIONAL_STATUS_SECTION_COGNITIVE_STATUS_RESULT_ORGANIZER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setContext(Mu2consolPackage.Literals.FUNCTIONAL_STATUS_SECTION);
-			try {
-				VALIDATE_MU2CONSOL_FUNCTIONAL_STATUS_SECTION_COGNITIVE_STATUS_RESULT_ORGANIZER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_MU2CONSOL_FUNCTIONAL_STATUS_SECTION_COGNITIVE_STATUS_RESULT_ORGANIZER__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
-				throw new UnsupportedOperationException(pe.getLocalizedMessage());
-			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_MU2CONSOL_FUNCTIONAL_STATUS_SECTION_COGNITIVE_STATUS_RESULT_ORGANIZER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(functionalStatusSection)) {
-			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 Mu2consolValidator.DIAGNOSTIC_SOURCE,
-						 Mu2consolValidator.FUNCTIONAL_STATUS_SECTION__MU2CONSOL_FUNCTIONAL_STATUS_SECTION_COGNITIVE_STATUS_RESULT_ORGANIZER,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "Mu2consolFunctionalStatusSectionCognitiveStatusResultOrganizer", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(functionalStatusSection, context) }),
-						 new Object [] { functionalStatusSection }));
-			}
-			 
-			return false;
-		}
-		return true;
-	}
-
-	/**
 	 * The cached OCL expression body for the '{@link #validateMu2consolFunctionalStatusSectionFunctionalStatusProblemObservation(FunctionalStatusSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Mu2consol Functional Status Section Functional Status Problem Observation</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -384,130 +243,6 @@ public class FunctionalStatusSectionOperations extends org.openhealthtools.mdht.
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #validateMu2consolFunctionalStatusSectionFunctionalStatusResultObservation(FunctionalStatusSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Mu2consol Functional Status Section Functional Status Result Observation</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #validateMu2consolFunctionalStatusSectionFunctionalStatusResultObservation(FunctionalStatusSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
-	protected static final String VALIDATE_MU2CONSOL_FUNCTIONAL_STATUS_SECTION_FUNCTIONAL_STATUS_RESULT_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entry->exists(entry : cda::Entry | not entry.observation.oclIsUndefined() and entry.observation.oclIsKindOf(consol::FunctionalStatusResultObservation))";
-
-	/**
-	 * The cached OCL invariant for the '{@link #validateMu2consolFunctionalStatusSectionFunctionalStatusResultObservation(FunctionalStatusSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Mu2consol Functional Status Section Functional Status Result Observation</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #validateMu2consolFunctionalStatusSectionFunctionalStatusResultObservation(FunctionalStatusSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
-	
-	protected static Constraint VALIDATE_MU2CONSOL_FUNCTIONAL_STATUS_SECTION_FUNCTIONAL_STATUS_RESULT_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-	
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.entry->exists(entry : cda::Entry | not entry.observation.oclIsUndefined() and entry.observation.oclIsKindOf(consol::FunctionalStatusResultObservation))
-	 * @param functionalStatusSection The receiving '<em><b>Functional Status Section</b></em>' model object.
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
-	
-	public static  boolean validateMu2consolFunctionalStatusSectionFunctionalStatusResultObservation(FunctionalStatusSection functionalStatusSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
-		if (VALIDATE_MU2CONSOL_FUNCTIONAL_STATUS_SECTION_FUNCTIONAL_STATUS_RESULT_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setContext(Mu2consolPackage.Literals.FUNCTIONAL_STATUS_SECTION);
-			try {
-				VALIDATE_MU2CONSOL_FUNCTIONAL_STATUS_SECTION_FUNCTIONAL_STATUS_RESULT_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_MU2CONSOL_FUNCTIONAL_STATUS_SECTION_FUNCTIONAL_STATUS_RESULT_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
-				throw new UnsupportedOperationException(pe.getLocalizedMessage());
-			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_MU2CONSOL_FUNCTIONAL_STATUS_SECTION_FUNCTIONAL_STATUS_RESULT_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(functionalStatusSection)) {
-			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 Mu2consolValidator.DIAGNOSTIC_SOURCE,
-						 Mu2consolValidator.FUNCTIONAL_STATUS_SECTION__MU2CONSOL_FUNCTIONAL_STATUS_SECTION_FUNCTIONAL_STATUS_RESULT_OBSERVATION,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "Mu2consolFunctionalStatusSectionFunctionalStatusResultObservation", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(functionalStatusSection, context) }),
-						 new Object [] { functionalStatusSection }));
-			}
-			 
-			return false;
-		}
-		return true;
-	}
-
-	/**
-	 * The cached OCL expression body for the '{@link #validateMu2consolFunctionalStatusSectionFunctionalStatusResultOrganizer(FunctionalStatusSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Mu2consol Functional Status Section Functional Status Result Organizer</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #validateMu2consolFunctionalStatusSectionFunctionalStatusResultOrganizer(FunctionalStatusSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
-	protected static final String VALIDATE_MU2CONSOL_FUNCTIONAL_STATUS_SECTION_FUNCTIONAL_STATUS_RESULT_ORGANIZER__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entry->exists(entry : cda::Entry | not entry.organizer.oclIsUndefined() and entry.organizer.oclIsKindOf(consol::FunctionalStatusResultOrganizer))";
-
-	/**
-	 * The cached OCL invariant for the '{@link #validateMu2consolFunctionalStatusSectionFunctionalStatusResultOrganizer(FunctionalStatusSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Mu2consol Functional Status Section Functional Status Result Organizer</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #validateMu2consolFunctionalStatusSectionFunctionalStatusResultOrganizer(FunctionalStatusSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
-	
-	protected static Constraint VALIDATE_MU2CONSOL_FUNCTIONAL_STATUS_SECTION_FUNCTIONAL_STATUS_RESULT_ORGANIZER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-	
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.entry->exists(entry : cda::Entry | not entry.organizer.oclIsUndefined() and entry.organizer.oclIsKindOf(consol::FunctionalStatusResultOrganizer))
-	 * @param functionalStatusSection The receiving '<em><b>Functional Status Section</b></em>' model object.
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
-	
-	public static  boolean validateMu2consolFunctionalStatusSectionFunctionalStatusResultOrganizer(FunctionalStatusSection functionalStatusSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
-		if (VALIDATE_MU2CONSOL_FUNCTIONAL_STATUS_SECTION_FUNCTIONAL_STATUS_RESULT_ORGANIZER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setContext(Mu2consolPackage.Literals.FUNCTIONAL_STATUS_SECTION);
-			try {
-				VALIDATE_MU2CONSOL_FUNCTIONAL_STATUS_SECTION_FUNCTIONAL_STATUS_RESULT_ORGANIZER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_MU2CONSOL_FUNCTIONAL_STATUS_SECTION_FUNCTIONAL_STATUS_RESULT_ORGANIZER__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
-				throw new UnsupportedOperationException(pe.getLocalizedMessage());
-			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_MU2CONSOL_FUNCTIONAL_STATUS_SECTION_FUNCTIONAL_STATUS_RESULT_ORGANIZER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(functionalStatusSection)) {
-			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 Mu2consolValidator.DIAGNOSTIC_SOURCE,
-						 Mu2consolValidator.FUNCTIONAL_STATUS_SECTION__MU2CONSOL_FUNCTIONAL_STATUS_SECTION_FUNCTIONAL_STATUS_RESULT_ORGANIZER,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "Mu2consolFunctionalStatusSectionFunctionalStatusResultOrganizer", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(functionalStatusSection, context) }),
-						 new Object [] { functionalStatusSection }));
-			}
-			 
-			return false;
-		}
-		return true;
-	}
-
-	/**
 	 * The cached OCL expression body for the '{@link #getmu2consolCognitiveStatusProblemObservations(FunctionalStatusSection) <em>Getmu2consol Cognitive Status Problem Observations</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -540,7 +275,7 @@ public class FunctionalStatusSectionOperations extends org.openhealthtools.mdht.
 	public static  EList<CognitiveStatusProblemObservation> getmu2consolCognitiveStatusProblemObservations(FunctionalStatusSection functionalStatusSection) {
 		if (GETMU2CONSOL_COGNITIVE_STATUS_PROBLEM_OBSERVATIONS__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(Mu2consolPackage.Literals.FUNCTIONAL_STATUS_SECTION, Mu2consolPackage.Literals.FUNCTIONAL_STATUS_SECTION.getEAllOperations().get(90));
+			helper.setOperationContext(Mu2consolPackage.Literals.FUNCTIONAL_STATUS_SECTION, Mu2consolPackage.Literals.FUNCTIONAL_STATUS_SECTION.getEAllOperations().get(86));
 			try {
 				GETMU2CONSOL_COGNITIVE_STATUS_PROBLEM_OBSERVATIONS__EOCL_QRY = helper.createQuery(GETMU2CONSOL_COGNITIVE_STATUS_PROBLEM_OBSERVATIONS__EOCL_EXP);
 			}
@@ -587,7 +322,7 @@ public class FunctionalStatusSectionOperations extends org.openhealthtools.mdht.
 	public static  EList<CognitiveStatusResultObservation> getmu2consolCognitiveStatusResultObservations(FunctionalStatusSection functionalStatusSection) {
 		if (GETMU2CONSOL_COGNITIVE_STATUS_RESULT_OBSERVATIONS__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(Mu2consolPackage.Literals.FUNCTIONAL_STATUS_SECTION, Mu2consolPackage.Literals.FUNCTIONAL_STATUS_SECTION.getEAllOperations().get(91));
+			helper.setOperationContext(Mu2consolPackage.Literals.FUNCTIONAL_STATUS_SECTION, Mu2consolPackage.Literals.FUNCTIONAL_STATUS_SECTION.getEAllOperations().get(87));
 			try {
 				GETMU2CONSOL_COGNITIVE_STATUS_RESULT_OBSERVATIONS__EOCL_QRY = helper.createQuery(GETMU2CONSOL_COGNITIVE_STATUS_RESULT_OBSERVATIONS__EOCL_EXP);
 			}
@@ -634,7 +369,7 @@ public class FunctionalStatusSectionOperations extends org.openhealthtools.mdht.
 	public static  EList<CognitiveStatusResultOrganizer> getmu2consolCognitiveStatusResultOrganizers(FunctionalStatusSection functionalStatusSection) {
 		if (GETMU2CONSOL_COGNITIVE_STATUS_RESULT_ORGANIZERS__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(Mu2consolPackage.Literals.FUNCTIONAL_STATUS_SECTION, Mu2consolPackage.Literals.FUNCTIONAL_STATUS_SECTION.getEAllOperations().get(92));
+			helper.setOperationContext(Mu2consolPackage.Literals.FUNCTIONAL_STATUS_SECTION, Mu2consolPackage.Literals.FUNCTIONAL_STATUS_SECTION.getEAllOperations().get(88));
 			try {
 				GETMU2CONSOL_COGNITIVE_STATUS_RESULT_ORGANIZERS__EOCL_QRY = helper.createQuery(GETMU2CONSOL_COGNITIVE_STATUS_RESULT_ORGANIZERS__EOCL_EXP);
 			}
@@ -681,7 +416,7 @@ public class FunctionalStatusSectionOperations extends org.openhealthtools.mdht.
 	public static  EList<FunctionalStatusProblemObservation> getmu2consolFunctionalStatusProblemObservations(FunctionalStatusSection functionalStatusSection) {
 		if (GETMU2CONSOL_FUNCTIONAL_STATUS_PROBLEM_OBSERVATIONS__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(Mu2consolPackage.Literals.FUNCTIONAL_STATUS_SECTION, Mu2consolPackage.Literals.FUNCTIONAL_STATUS_SECTION.getEAllOperations().get(93));
+			helper.setOperationContext(Mu2consolPackage.Literals.FUNCTIONAL_STATUS_SECTION, Mu2consolPackage.Literals.FUNCTIONAL_STATUS_SECTION.getEAllOperations().get(89));
 			try {
 				GETMU2CONSOL_FUNCTIONAL_STATUS_PROBLEM_OBSERVATIONS__EOCL_QRY = helper.createQuery(GETMU2CONSOL_FUNCTIONAL_STATUS_PROBLEM_OBSERVATIONS__EOCL_EXP);
 			}
@@ -728,7 +463,7 @@ public class FunctionalStatusSectionOperations extends org.openhealthtools.mdht.
 	public static  EList<FunctionalStatusResultObservation> getmu2consolFunctionalStatusResultObservations(FunctionalStatusSection functionalStatusSection) {
 		if (GETMU2CONSOL_FUNCTIONAL_STATUS_RESULT_OBSERVATIONS__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(Mu2consolPackage.Literals.FUNCTIONAL_STATUS_SECTION, Mu2consolPackage.Literals.FUNCTIONAL_STATUS_SECTION.getEAllOperations().get(94));
+			helper.setOperationContext(Mu2consolPackage.Literals.FUNCTIONAL_STATUS_SECTION, Mu2consolPackage.Literals.FUNCTIONAL_STATUS_SECTION.getEAllOperations().get(90));
 			try {
 				GETMU2CONSOL_FUNCTIONAL_STATUS_RESULT_OBSERVATIONS__EOCL_QRY = helper.createQuery(GETMU2CONSOL_FUNCTIONAL_STATUS_RESULT_OBSERVATIONS__EOCL_EXP);
 			}
@@ -775,7 +510,7 @@ public class FunctionalStatusSectionOperations extends org.openhealthtools.mdht.
 	public static  EList<FunctionalStatusResultOrganizer> getmu2consolFunctionalStatusResultOrganizers(FunctionalStatusSection functionalStatusSection) {
 		if (GETMU2CONSOL_FUNCTIONAL_STATUS_RESULT_ORGANIZERS__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(Mu2consolPackage.Literals.FUNCTIONAL_STATUS_SECTION, Mu2consolPackage.Literals.FUNCTIONAL_STATUS_SECTION.getEAllOperations().get(95));
+			helper.setOperationContext(Mu2consolPackage.Literals.FUNCTIONAL_STATUS_SECTION, Mu2consolPackage.Literals.FUNCTIONAL_STATUS_SECTION.getEAllOperations().get(91));
 			try {
 				GETMU2CONSOL_FUNCTIONAL_STATUS_RESULT_ORGANIZERS__EOCL_QRY = helper.createQuery(GETMU2CONSOL_FUNCTIONAL_STATUS_RESULT_ORGANIZERS__EOCL_EXP);
 			}
