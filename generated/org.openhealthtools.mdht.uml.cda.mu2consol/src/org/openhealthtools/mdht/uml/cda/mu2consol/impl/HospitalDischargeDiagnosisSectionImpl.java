@@ -57,11 +57,12 @@ public class HospitalDischargeDiagnosisSectionImpl
 	}
 
 	/**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public HospitalDischargeDiagnosis getmu2consolHospitalDischargeDiagnosis() {
-		return HospitalDischargeDiagnosisSectionOperations.getmu2consolHospitalDischargeDiagnosis(this);
+	public HospitalDischargeDiagnosis getMu2consolHospitalDischargeDiagnosis() {
+		return HospitalDischargeDiagnosisSectionOperations.getMu2consolHospitalDischargeDiagnosis(this);
 	}
 
 	/**

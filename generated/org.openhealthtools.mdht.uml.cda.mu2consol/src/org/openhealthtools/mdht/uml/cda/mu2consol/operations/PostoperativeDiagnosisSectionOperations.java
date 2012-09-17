@@ -23,6 +23,7 @@ import org.eclipse.ocl.expressions.OCLExpression;
 
 import org.openhealthtools.mdht.uml.cda.consol.ProblemObservation;
 import org.openhealthtools.mdht.uml.cda.mu2consol.Mu2consolPackage;
+import org.openhealthtools.mdht.uml.cda.mu2consol.Mu2consolPlugin;
 import org.openhealthtools.mdht.uml.cda.mu2consol.PostoperativeDiagnosisSection;
 
 import org.openhealthtools.mdht.uml.cda.mu2consol.util.Mu2consolValidator;
@@ -111,7 +112,7 @@ public class PostoperativeDiagnosisSectionOperations
 						(Diagnostic.ERROR,
 						 Mu2consolValidator.DIAGNOSTIC_SOURCE,
 						 Mu2consolValidator.POSTOPERATIVE_DIAGNOSIS_SECTION__MU2CONSOL_POSTOPERATIVE_DIAGNOSIS_SECTION_PROBLEM_OBSERVATION,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "Mu2consolPostoperativeDiagnosisSectionProblemObservation", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(postoperativeDiagnosisSection, context) }),
+						 Mu2consolPlugin.INSTANCE.getString("Mu2consolPostoperativeDiagnosisSectionProblemObservation"),
 						 new Object [] { postoperativeDiagnosisSection }));
 			}
 			 

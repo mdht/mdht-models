@@ -166,8 +166,8 @@ public class ViewDownloadTransmitSummaryImpl extends GeneralHeaderConstraintsImp
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateViewDownloadTransmitSummarymu2consolPlanOfCareSectionCarePlanningForPlanOfCare(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ViewDownloadTransmitSummaryOperations.validateViewDownloadTransmitSummarymu2consolPlanOfCareSectionCarePlanningForPlanOfCare(this, diagnostics, context);
+	public boolean validateViewDownloadTransmitSummaryMu2consolPlanOfCareSectionCarePlanningForPlanOfCare(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ViewDownloadTransmitSummaryOperations.validateViewDownloadTransmitSummaryMu2consolPlanOfCareSectionCarePlanningForPlanOfCare(this, diagnostics, context);
 	}
 
 	/**
@@ -175,8 +175,8 @@ public class ViewDownloadTransmitSummaryImpl extends GeneralHeaderConstraintsImp
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateViewDownloadTransmitSummarymu2consolPlanOfCareSectionMu2consolPlanOfCareSectionPlanOfCareActivityObservation(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ViewDownloadTransmitSummaryOperations.validateViewDownloadTransmitSummarymu2consolPlanOfCareSectionMu2consolPlanOfCareSectionPlanOfCareActivityObservation(this, diagnostics, context);
+	public boolean validateViewDownloadTransmitSummaryMu2consolPlanOfCareSectionPlanOfCareActivityObservation(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ViewDownloadTransmitSummaryOperations.validateViewDownloadTransmitSummaryMu2consolPlanOfCareSectionPlanOfCareActivityObservation(this, diagnostics, context);
 	}
 
 	/**
@@ -202,8 +202,8 @@ public class ViewDownloadTransmitSummaryImpl extends GeneralHeaderConstraintsImp
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateViewDownloadTransmitSummarymu2consolSocialHistorySectionSmokingStatusObservation(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ViewDownloadTransmitSummaryOperations.validateViewDownloadTransmitSummarymu2consolSocialHistorySectionSmokingStatusObservation(this, diagnostics, context);
+	public boolean validateViewDownloadTransmitSummaryMu2consolSocialHistorySectionSmokingStatusObservation(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ViewDownloadTransmitSummaryOperations.validateViewDownloadTransmitSummaryMu2consolSocialHistorySectionSmokingStatusObservation(this, diagnostics, context);
 	}
 
 	/**

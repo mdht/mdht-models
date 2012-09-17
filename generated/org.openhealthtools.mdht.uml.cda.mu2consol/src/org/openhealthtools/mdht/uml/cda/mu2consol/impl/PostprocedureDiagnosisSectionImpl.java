@@ -57,11 +57,12 @@ public class PostprocedureDiagnosisSectionImpl
 	}
 
 	/**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public PostprocedureDiagnosis getmu2consolPostprocedureDiagnosis() {
-		return PostprocedureDiagnosisSectionOperations.getmu2consolPostprocedureDiagnosis(this);
+	public PostprocedureDiagnosis getMu2consolPostprocedureDiagnosis() {
+		return PostprocedureDiagnosisSectionOperations.getMu2consolPostprocedureDiagnosis(this);
 	}
 
 	/**

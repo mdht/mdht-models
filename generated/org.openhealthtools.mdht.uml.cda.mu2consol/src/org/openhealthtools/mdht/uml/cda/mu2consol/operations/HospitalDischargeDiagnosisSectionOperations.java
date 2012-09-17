@@ -25,6 +25,7 @@ import org.openhealthtools.mdht.uml.cda.consol.HospitalDischargeDiagnosis;
 import org.openhealthtools.mdht.uml.cda.mu2consol.HospitalDischargeDiagnosisSection;
 import org.openhealthtools.mdht.uml.cda.mu2consol.Mu2consolPackage;
 
+import org.openhealthtools.mdht.uml.cda.mu2consol.Mu2consolPlugin;
 import org.openhealthtools.mdht.uml.cda.mu2consol.util.Mu2consolValidator;
 
 /**
@@ -36,7 +37,7 @@ import org.openhealthtools.mdht.uml.cda.mu2consol.util.Mu2consolValidator;
  * The following operations are supported:
  * <ul>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.mu2consol.HospitalDischargeDiagnosisSection#validateMu2consolHospitalDischargeDiagnosisSectionHospitalDischargeDiagnosis(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Mu2consol Hospital Discharge Diagnosis Section Hospital Discharge Diagnosis</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.mu2consol.HospitalDischargeDiagnosisSection#getmu2consolHospitalDischargeDiagnosis() <em>Getmu2consol Hospital Discharge Diagnosis</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.mu2consol.HospitalDischargeDiagnosisSection#getMu2consolHospitalDischargeDiagnosis() <em>Get Mu2consol Hospital Discharge Diagnosis</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.mu2consol.HospitalDischargeDiagnosisSection#validateHospitalDischargeDiagnosisSectionTemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Hospital Discharge Diagnosis Section Template Id</em>}</li>
  * </ul>
  * </p>
@@ -111,7 +112,7 @@ public class HospitalDischargeDiagnosisSectionOperations
 						(Diagnostic.ERROR,
 						 Mu2consolValidator.DIAGNOSTIC_SOURCE,
 						 Mu2consolValidator.HOSPITAL_DISCHARGE_DIAGNOSIS_SECTION__MU2CONSOL_HOSPITAL_DISCHARGE_DIAGNOSIS_SECTION_HOSPITAL_DISCHARGE_DIAGNOSIS,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "Mu2consolHospitalDischargeDiagnosisSectionHospitalDischargeDiagnosis", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(hospitalDischargeDiagnosisSection, context) }),
+						 Mu2consolPlugin.INSTANCE.getString("Mu2consolHospitalDischargeDiagnosisSectionHospitalDischargeDiagnosis"),
 						 new Object [] { hospitalDischargeDiagnosisSection }));
 			}
 			 
@@ -121,53 +122,47 @@ public class HospitalDischargeDiagnosisSectionOperations
 	}
 
 	/**
-	 * The cached OCL expression body for the '
-	 * {@link #getmu2consolHospitalDischargeDiagnosis(HospitalDischargeDiagnosisSection)
-	 * <em>Getmu2consol Hospital Discharge Diagnosis</em>}' operation. <!--
-	 * begin-user-doc --> <!-- end-user-doc -->
-	 * 
-	 * @see #getmu2consolHospitalDischargeDiagnosis(HospitalDischargeDiagnosisSection)
+	 * The cached OCL expression body for the '{@link #getMu2consolHospitalDischargeDiagnosis(HospitalDischargeDiagnosisSection) <em>Get Mu2consol Hospital Discharge Diagnosis</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getMu2consolHospitalDischargeDiagnosis(HospitalDischargeDiagnosisSection)
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String GETMU2CONSOL_HOSPITAL_DISCHARGE_DIAGNOSIS__EOCL_EXP = "self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(consol::HospitalDischargeDiagnosis))->asSequence()->any(true).oclAsType(consol::HospitalDischargeDiagnosis)";
+	protected static final String GET_MU2CONSOL_HOSPITAL_DISCHARGE_DIAGNOSIS__EOCL_EXP = "self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(consol::HospitalDischargeDiagnosis))->asSequence()->any(true).oclAsType(consol::HospitalDischargeDiagnosis)";
 
 	/**
-	 * The cached OCL query for the '{@link #getmu2consolHospitalDischargeDiagnosis(HospitalDischargeDiagnosisSection) <em>Getmu2consol Hospital Discharge Diagnosis</em>}' query operation.
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @see #getmu2consolHospitalDischargeDiagnosis(HospitalDischargeDiagnosisSection)
+	 * The cached OCL query for the '{@link #getMu2consolHospitalDischargeDiagnosis(HospitalDischargeDiagnosisSection) <em>Get Mu2consol Hospital Discharge Diagnosis</em>}' query operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getMu2consolHospitalDischargeDiagnosis(HospitalDischargeDiagnosisSection)
 	 * @generated
 	 * @ordered
 	 */
-	protected static OCLExpression<EClassifier> GETMU2CONSOL_HOSPITAL_DISCHARGE_DIAGNOSIS__EOCL_QRY;
+	protected static OCLExpression<EClassifier> GET_MU2CONSOL_HOSPITAL_DISCHARGE_DIAGNOSIS__EOCL_QRY;
 
 	/**
-	 * <!-- begin-user-doc --> <!-- end-user-doc --> <!-- begin-model-doc -->
-	 * self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and
-	 * act.oclIsKindOf
-	 * (consol::HospitalDischargeDiagnosis))->asSequence()->any(true
-	 * ).oclAsType(consol::HospitalDischargeDiagnosis)
-	 * 
-	 * @param hospitalDischargeDiagnosisSection
-	 *            The receiving '
-	 *            <em><b>Hospital Discharge Diagnosis Section</b></em>' model
-	 *            object. <!-- end-model-doc -->
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(consol::HospitalDischargeDiagnosis))->asSequence()->any(true).oclAsType(consol::HospitalDischargeDiagnosis)
+	 * @param hospitalDischargeDiagnosisSection The receiving '<em><b>Hospital Discharge Diagnosis Section</b></em>' model object.
+	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-
-	public static HospitalDischargeDiagnosis getmu2consolHospitalDischargeDiagnosis(
-			HospitalDischargeDiagnosisSection hospitalDischargeDiagnosisSection) {
-		if (GETMU2CONSOL_HOSPITAL_DISCHARGE_DIAGNOSIS__EOCL_QRY == null) {
+	
+	public static  HospitalDischargeDiagnosis getMu2consolHospitalDischargeDiagnosis(HospitalDischargeDiagnosisSection hospitalDischargeDiagnosisSection) {
+		if (GET_MU2CONSOL_HOSPITAL_DISCHARGE_DIAGNOSIS__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(Mu2consolPackage.Literals.HOSPITAL_DISCHARGE_DIAGNOSIS_SECTION, Mu2consolPackage.Literals.HOSPITAL_DISCHARGE_DIAGNOSIS_SECTION.getEAllOperations().get(63));
 			try {
-				GETMU2CONSOL_HOSPITAL_DISCHARGE_DIAGNOSIS__EOCL_QRY = helper.createQuery(GETMU2CONSOL_HOSPITAL_DISCHARGE_DIAGNOSIS__EOCL_EXP);
+				GET_MU2CONSOL_HOSPITAL_DISCHARGE_DIAGNOSIS__EOCL_QRY = helper.createQuery(GET_MU2CONSOL_HOSPITAL_DISCHARGE_DIAGNOSIS__EOCL_EXP);
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		OCL.Query query = EOCL_ENV.createQuery(GETMU2CONSOL_HOSPITAL_DISCHARGE_DIAGNOSIS__EOCL_QRY);
+		OCL.Query query = EOCL_ENV.createQuery(GET_MU2CONSOL_HOSPITAL_DISCHARGE_DIAGNOSIS__EOCL_QRY);
 		return (HospitalDischargeDiagnosis) query.evaluate(hospitalDischargeDiagnosisSection);
 	}
 

@@ -27,6 +27,7 @@ import org.eclipse.ocl.expressions.OCLExpression;
 //import org.openhealthtools.mdht.uml.cda.consol.SmokingStatusObservation;
 
 import org.openhealthtools.mdht.uml.cda.mu2consol.Mu2consolPackage;
+import org.openhealthtools.mdht.uml.cda.mu2consol.Mu2consolPlugin;
 import org.openhealthtools.mdht.uml.cda.mu2consol.SmokingStatusObservation;
 import org.openhealthtools.mdht.uml.cda.mu2consol.SocialHistorySection;
 
@@ -41,7 +42,7 @@ import org.openhealthtools.mdht.uml.cda.mu2consol.util.Mu2consolValidator;
  * The following operations are supported:
  * <ul>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.mu2consol.SocialHistorySection#validateMu2consolSocialHistorySectionSmokingStatusObservation(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Mu2consol Social History Section Smoking Status Observation</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.mu2consol.SocialHistorySection#getmu2consolSmokingStatusObservations() <em>Getmu2consol Smoking Status Observations</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.mu2consol.SocialHistorySection#getMu2consolSmokingStatusObservations() <em>Get Mu2consol Smoking Status Observations</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.mu2consol.SocialHistorySection#validateSocialHistorySectionTemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Social History Section Template Id</em>}</li>
  * </ul>
  * </p>
@@ -116,7 +117,7 @@ public class SocialHistorySectionOperations
 						(Diagnostic.ERROR,
 						 Mu2consolValidator.DIAGNOSTIC_SOURCE,
 						 Mu2consolValidator.SOCIAL_HISTORY_SECTION__MU2CONSOL_SOCIAL_HISTORY_SECTION_SMOKING_STATUS_OBSERVATION,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "Mu2consolSocialHistorySectionSmokingStatusObservation", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(socialHistorySection, context) }),
+						 Mu2consolPlugin.INSTANCE.getString("Mu2consolSocialHistorySectionSmokingStatusObservation"),
 						 new Object [] { socialHistorySection }));
 			}
 			 
@@ -126,55 +127,47 @@ public class SocialHistorySectionOperations
 	}
 
 	/**
-	 * The cached OCL expression body for the '
-	 * {@link #getmu2consolSmokingStatusObservations(SocialHistorySection)
-	 * <em>Getmu2consol Smoking Status Observations</em>}' operation. <!--
-	 * begin-user-doc --> <!-- end-user-doc -->
-	 * 
-	 * @see #getmu2consolSmokingStatusObservations(SocialHistorySection)
+	 * The cached OCL expression body for the '{@link #getMu2consolSmokingStatusObservations(SocialHistorySection) <em>Get Mu2consol Smoking Status Observations</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getMu2consolSmokingStatusObservations(SocialHistorySection)
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String GETMU2CONSOL_SMOKING_STATUS_OBSERVATIONS__EOCL_EXP = "self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(mu2consol::SmokingStatusObservation)).oclAsType(mu2consol::SmokingStatusObservation)";
+	protected static final String GET_MU2CONSOL_SMOKING_STATUS_OBSERVATIONS__EOCL_EXP = "self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(mu2consol::SmokingStatusObservation)).oclAsType(mu2consol::SmokingStatusObservation)";
 
 	/**
-	 * The cached OCL query for the '
-	 * {@link #getmu2consolSmokingStatusObservations(SocialHistorySection)
-	 * <em>Getmu2consol Smoking Status Observations</em>}' query operation. <!--
-	 * begin-user-doc --> <!-- end-user-doc -->
-	 * 
-	 * @see #getmu2consolSmokingStatusObservations(SocialHistorySection)
+	 * The cached OCL query for the '{@link #getMu2consolSmokingStatusObservations(SocialHistorySection) <em>Get Mu2consol Smoking Status Observations</em>}' query operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getMu2consolSmokingStatusObservations(SocialHistorySection)
 	 * @generated
 	 * @ordered
 	 */
-	protected static OCLExpression<EClassifier> GETMU2CONSOL_SMOKING_STATUS_OBSERVATIONS__EOCL_QRY;
+	protected static OCLExpression<EClassifier> GET_MU2CONSOL_SMOKING_STATUS_OBSERVATIONS__EOCL_QRY;
 
 	/**
-	 * <!-- begin-user-doc --> <!-- end-user-doc --> <!-- begin-model-doc -->
-	 * self.getObservations()->select(observation : cda::Observation | not
-	 * observation.oclIsUndefined() and
-	 * observation.oclIsKindOf(consol::SmokingStatusObservation
-	 * )).oclAsType(consol::SmokingStatusObservation)
-	 * 
-	 * @param socialHistorySection
-	 *            The receiving '<em><b>Social History Section</b></em>' model
-	 *            object. <!-- end-model-doc -->
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(mu2consol::SmokingStatusObservation)).oclAsType(mu2consol::SmokingStatusObservation)
+	 * @param socialHistorySection The receiving '<em><b>Social History Section</b></em>' model object.
+	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-
-	public static EList<SmokingStatusObservation> getmu2consolSmokingStatusObservations(
-			SocialHistorySection socialHistorySection) {
-		if (GETMU2CONSOL_SMOKING_STATUS_OBSERVATIONS__EOCL_QRY == null) {
+	
+	public static  EList<SmokingStatusObservation> getMu2consolSmokingStatusObservations(SocialHistorySection socialHistorySection) {
+		if (GET_MU2CONSOL_SMOKING_STATUS_OBSERVATIONS__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(Mu2consolPackage.Literals.SOCIAL_HISTORY_SECTION, Mu2consolPackage.Literals.SOCIAL_HISTORY_SECTION.getEAllOperations().get(69));
 			try {
-				GETMU2CONSOL_SMOKING_STATUS_OBSERVATIONS__EOCL_QRY = helper.createQuery(GETMU2CONSOL_SMOKING_STATUS_OBSERVATIONS__EOCL_EXP);
+				GET_MU2CONSOL_SMOKING_STATUS_OBSERVATIONS__EOCL_QRY = helper.createQuery(GET_MU2CONSOL_SMOKING_STATUS_OBSERVATIONS__EOCL_EXP);
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		OCL.Query query = EOCL_ENV.createQuery(GETMU2CONSOL_SMOKING_STATUS_OBSERVATIONS__EOCL_QRY);
+		OCL.Query query = EOCL_ENV.createQuery(GET_MU2CONSOL_SMOKING_STATUS_OBSERVATIONS__EOCL_QRY);
 		@SuppressWarnings("unchecked")
 		Collection<SmokingStatusObservation> result = (Collection<SmokingStatusObservation>) query.evaluate(socialHistorySection);
 		return new BasicEList.UnmodifiableEList<SmokingStatusObservation>(result.size(), result.toArray());

@@ -21,7 +21,7 @@ import org.openhealthtools.mdht.uml.cda.consol.PostprocedureDiagnosis;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.mu2consol.Mu2consolPackage#getPostprocedureDiagnosisSection()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='mu2consolPostprocedureDiagnosisSectionTemplateId mu2consolPostprocedureDiagnosisSectionPostprocedureDiagnosis' templateId.root='2.16.840.1.113883.10.20.22.2.36'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='Mu2consolPostprocedureDiagnosisSectionTemplateId Mu2consolPostprocedureDiagnosisSectionPostprocedureDiagnosis' templateId.root='2.16.840.1.113883.10.20.22.2.36'"
  * @generated
  */
 public interface PostprocedureDiagnosisSection extends
@@ -44,17 +44,16 @@ public interface PostprocedureDiagnosisSection extends
 			DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
-	 * <!-- begin-user-doc --> <!-- end-user-doc --> <!-- begin-model-doc -->
-	 * self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and
-	 * act.oclIsKindOf
-	 * (consol::PostprocedureDiagnosis))->asSequence()->any(true).
-	 * oclAsType(consol::PostprocedureDiagnosis) <!-- end-model-doc -->
-	 * 
-	 * @model required="true" ordered="false" annotation=
-	 *        "http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(consol::PostprocedureDiagnosis))->asSequence()->any(true).oclAsType(consol::PostprocedureDiagnosis)'"
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(consol::PostprocedureDiagnosis))->asSequence()->any(true).oclAsType(consol::PostprocedureDiagnosis)
+	 * <!-- end-model-doc -->
+	 * @model kind="operation" required="true" ordered="false"
+	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(consol::PostprocedureDiagnosis))->asSequence()->any(true).oclAsType(consol::PostprocedureDiagnosis)'"
 	 * @generated
 	 */
-	PostprocedureDiagnosis getmu2consolPostprocedureDiagnosis();
+	PostprocedureDiagnosis getMu2consolPostprocedureDiagnosis();
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->

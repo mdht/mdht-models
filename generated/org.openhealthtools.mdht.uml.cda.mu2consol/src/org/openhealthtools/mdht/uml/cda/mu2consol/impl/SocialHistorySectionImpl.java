@@ -64,11 +64,12 @@ public class SocialHistorySectionImpl extends
 	}
 
 	/**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<SmokingStatusObservation> getmu2consolSmokingStatusObservations() {
-		return SocialHistorySectionOperations.getmu2consolSmokingStatusObservations(this);
+	public EList<SmokingStatusObservation> getMu2consolSmokingStatusObservations() {
+		return SocialHistorySectionOperations.getMu2consolSmokingStatusObservations(this);
 	}
 
 	/**

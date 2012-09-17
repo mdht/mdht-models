@@ -26,6 +26,7 @@ import org.openhealthtools.mdht.uml.cda.consol.ProblemObservation;
 import org.openhealthtools.mdht.uml.cda.mu2consol.AssessmentSection;
 import org.openhealthtools.mdht.uml.cda.mu2consol.Mu2consolPackage;
 
+import org.openhealthtools.mdht.uml.cda.mu2consol.Mu2consolPlugin;
 import org.openhealthtools.mdht.uml.cda.mu2consol.util.Mu2consolValidator;
 
 /**
@@ -112,7 +113,7 @@ public class AssessmentSectionOperations
 						(Diagnostic.ERROR,
 						 Mu2consolValidator.DIAGNOSTIC_SOURCE,
 						 Mu2consolValidator.ASSESSMENT_SECTION__MU2CONSOL_ASSESSMENT_SECTION_PROBLEM_OBSERVATION,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "Mu2consolAssessmentSectionProblemObservation", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(assessmentSection, context) }),
+						 Mu2consolPlugin.INSTANCE.getString("Mu2consolAssessmentSectionProblemObservation"),
 						 new Object [] { assessmentSection }));
 			}
 			 

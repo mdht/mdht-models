@@ -59,11 +59,12 @@ public class HospitalAdmissionMedicationsSectionEntriesOptionalImpl
 	}
 
 	/**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<AdmissionMedication> getmu2consolAdmissionMedications() {
-		return HospitalAdmissionMedicationsSectionEntriesOptionalOperations.getmu2consolAdmissionMedications(this);
+	public EList<AdmissionMedication> getMu2consolAdmissionMedications() {
+		return HospitalAdmissionMedicationsSectionEntriesOptionalOperations.getMu2consolAdmissionMedications(this);
 	}
 
 	/**

@@ -25,7 +25,7 @@ import org.openhealthtools.mdht.uml.cda.mu2consol.SmokingStatusObservation;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.mu2consol.Mu2consolPackage#getSocialHistorySection()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='mu2consolSocialHistorySectionTemplateId mu2consolSocialHistorySectionSmokingStatusObservation' templateId.root='2.16.840.1.113883.10.20.22.2.17'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='Mu2consolSocialHistorySectionTemplateId Mu2consolSocialHistorySectionSmokingStatusObservation' templateId.root='2.16.840.1.113883.10.20.22.2.17'"
  * @generated
  */
 public interface SocialHistorySection extends
@@ -49,17 +49,16 @@ public interface SocialHistorySection extends
 			DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
-	 * <!-- begin-user-doc --> <!-- end-user-doc --> <!-- begin-model-doc -->
-	 * self.getObservations()->select(observation : cda::Observation | not
-	 * observation.oclIsUndefined() and
-	 * observation.oclIsKindOf(consol::SmokingStatusObservation
-	 * )).oclAsType(consol::SmokingStatusObservation) <!-- end-model-doc -->
-	 * 
-	 * @model required="true" ordered="false" annotation=
-	 *        "http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::SmokingStatusObservation)).oclAsType(consol::SmokingStatusObservation)'"
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(mu2consol::SmokingStatusObservation)).oclAsType(mu2consol::SmokingStatusObservation)
+	 * <!-- end-model-doc -->
+	 * @model kind="operation" required="true" ordered="false"
+	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(mu2consol::SmokingStatusObservation)).oclAsType(mu2consol::SmokingStatusObservation)'"
 	 * @generated
 	 */
-	EList<SmokingStatusObservation> getmu2consolSmokingStatusObservations();
+	EList<SmokingStatusObservation> getMu2consolSmokingStatusObservations();
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->

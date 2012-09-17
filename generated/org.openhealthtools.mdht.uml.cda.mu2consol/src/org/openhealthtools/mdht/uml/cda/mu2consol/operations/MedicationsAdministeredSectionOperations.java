@@ -28,6 +28,7 @@ import org.openhealthtools.mdht.uml.cda.consol.MedicationActivity;
 import org.openhealthtools.mdht.uml.cda.mu2consol.MedicationsAdministeredSection;
 import org.openhealthtools.mdht.uml.cda.mu2consol.Mu2consolPackage;
 
+import org.openhealthtools.mdht.uml.cda.mu2consol.Mu2consolPlugin;
 import org.openhealthtools.mdht.uml.cda.mu2consol.util.Mu2consolValidator;
 
 /**
@@ -39,7 +40,7 @@ import org.openhealthtools.mdht.uml.cda.mu2consol.util.Mu2consolValidator;
  * The following operations are supported:
  * <ul>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.mu2consol.MedicationsAdministeredSection#validateMu2consolMedicationsAdministeredSectionMedicationActivity(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Mu2consol Medications Administered Section Medication Activity</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.mu2consol.MedicationsAdministeredSection#getmu2consolMedicationActivities() <em>Getmu2consol Medication Activities</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.mu2consol.MedicationsAdministeredSection#getMu2consolMedicationActivities() <em>Get Mu2consol Medication Activities</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.mu2consol.MedicationsAdministeredSection#validateMedicationsAdministeredSectionTemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medications Administered Section Template Id</em>}</li>
  * </ul>
  * </p>
@@ -115,7 +116,7 @@ public class MedicationsAdministeredSectionOperations
 						(Diagnostic.ERROR,
 						 Mu2consolValidator.DIAGNOSTIC_SOURCE,
 						 Mu2consolValidator.MEDICATIONS_ADMINISTERED_SECTION__MU2CONSOL_MEDICATIONS_ADMINISTERED_SECTION_MEDICATION_ACTIVITY,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "Mu2consolMedicationsAdministeredSectionMedicationActivity", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(medicationsAdministeredSection, context) }),
+						 Mu2consolPlugin.INSTANCE.getString("Mu2consolMedicationsAdministeredSectionMedicationActivity"),
 						 new Object [] { medicationsAdministeredSection }));
 			}
 			 
@@ -125,57 +126,47 @@ public class MedicationsAdministeredSectionOperations
 	}
 
 	/**
-	 * The cached OCL expression body for the '
-	 * {@link #getmu2consolMedicationActivities(MedicationsAdministeredSection)
-	 * <em>Getmu2consol Medication Activities</em>}' operation. <!--
-	 * begin-user-doc --> <!-- end-user-doc -->
-	 * 
-	 * @see #getmu2consolMedicationActivities(MedicationsAdministeredSection)
+	 * The cached OCL expression body for the '{@link #getMu2consolMedicationActivities(MedicationsAdministeredSection) <em>Get Mu2consol Medication Activities</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getMu2consolMedicationActivities(MedicationsAdministeredSection)
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String GETMU2CONSOL_MEDICATION_ACTIVITIES__EOCL_EXP = "self.getSubstanceAdministrations()->select(substanceAdministration : cda::SubstanceAdministration | not substanceAdministration.oclIsUndefined() and substanceAdministration.oclIsKindOf(consol::MedicationActivity)).oclAsType(consol::MedicationActivity)";
+	protected static final String GET_MU2CONSOL_MEDICATION_ACTIVITIES__EOCL_EXP = "self.getSubstanceAdministrations()->select(substanceAdministration : cda::SubstanceAdministration | not substanceAdministration.oclIsUndefined() and substanceAdministration.oclIsKindOf(consol::MedicationActivity)).oclAsType(consol::MedicationActivity)";
 
 	/**
-	 * The cached OCL query for the '
-	 * {@link #getmu2consolMedicationActivities(MedicationsAdministeredSection)
-	 * <em>Getmu2consol Medication Activities</em>}' query operation. <!--
-	 * begin-user-doc --> <!-- end-user-doc -->
-	 * 
-	 * @see #getmu2consolMedicationActivities(MedicationsAdministeredSection)
+	 * The cached OCL query for the '{@link #getMu2consolMedicationActivities(MedicationsAdministeredSection) <em>Get Mu2consol Medication Activities</em>}' query operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getMu2consolMedicationActivities(MedicationsAdministeredSection)
 	 * @generated
 	 * @ordered
 	 */
-	protected static OCLExpression<EClassifier> GETMU2CONSOL_MEDICATION_ACTIVITIES__EOCL_QRY;
+	protected static OCLExpression<EClassifier> GET_MU2CONSOL_MEDICATION_ACTIVITIES__EOCL_QRY;
 
 	/**
-	 * <!-- begin-user-doc --> <!-- end-user-doc --> <!-- begin-model-doc -->
-	 * self.getSubstanceAdministrations()->select(substanceAdministration :
-	 * cda::SubstanceAdministration | not
-	 * substanceAdministration.oclIsUndefined() and
-	 * substanceAdministration.oclIsKindOf
-	 * (consol::MedicationActivity)).oclAsType(consol::MedicationActivity)
-	 * 
-	 * @param medicationsAdministeredSection
-	 *            The receiving '
-	 *            <em><b>Medications Administered Section</b></em>' model
-	 *            object. <!-- end-model-doc -->
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * self.getSubstanceAdministrations()->select(substanceAdministration : cda::SubstanceAdministration | not substanceAdministration.oclIsUndefined() and substanceAdministration.oclIsKindOf(consol::MedicationActivity)).oclAsType(consol::MedicationActivity)
+	 * @param medicationsAdministeredSection The receiving '<em><b>Medications Administered Section</b></em>' model object.
+	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-
-	public static EList<MedicationActivity> getmu2consolMedicationActivities(
-			MedicationsAdministeredSection medicationsAdministeredSection) {
-		if (GETMU2CONSOL_MEDICATION_ACTIVITIES__EOCL_QRY == null) {
+	
+	public static  EList<MedicationActivity> getMu2consolMedicationActivities(MedicationsAdministeredSection medicationsAdministeredSection) {
+		if (GET_MU2CONSOL_MEDICATION_ACTIVITIES__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(Mu2consolPackage.Literals.MEDICATIONS_ADMINISTERED_SECTION, Mu2consolPackage.Literals.MEDICATIONS_ADMINISTERED_SECTION.getEAllOperations().get(63));
 			try {
-				GETMU2CONSOL_MEDICATION_ACTIVITIES__EOCL_QRY = helper.createQuery(GETMU2CONSOL_MEDICATION_ACTIVITIES__EOCL_EXP);
+				GET_MU2CONSOL_MEDICATION_ACTIVITIES__EOCL_QRY = helper.createQuery(GET_MU2CONSOL_MEDICATION_ACTIVITIES__EOCL_EXP);
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		OCL.Query query = EOCL_ENV.createQuery(GETMU2CONSOL_MEDICATION_ACTIVITIES__EOCL_QRY);
+		OCL.Query query = EOCL_ENV.createQuery(GET_MU2CONSOL_MEDICATION_ACTIVITIES__EOCL_QRY);
 		@SuppressWarnings("unchecked")
 		Collection<MedicationActivity> result = (Collection<MedicationActivity>) query.evaluate(medicationsAdministeredSection);
 		return new BasicEList.UnmodifiableEList<MedicationActivity>(result.size(), result.toArray());

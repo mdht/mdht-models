@@ -57,11 +57,12 @@ public class HospitalAdmissionDiagnosisSectionImpl
 	}
 
 	/**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public HospitalAdmissionDiagnosis getmu2consolHospitalAdmissionDiagnosis() {
-		return HospitalAdmissionDiagnosisSectionOperations.getmu2consolHospitalAdmissionDiagnosis(this);
+	public HospitalAdmissionDiagnosis getMu2consolHospitalAdmissionDiagnosis() {
+		return HospitalAdmissionDiagnosisSectionOperations.getMu2consolHospitalAdmissionDiagnosis(this);
 	}
 
 	/**

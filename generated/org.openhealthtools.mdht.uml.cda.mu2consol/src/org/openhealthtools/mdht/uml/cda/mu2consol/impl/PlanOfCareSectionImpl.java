@@ -62,32 +62,35 @@ public class PlanOfCareSectionImpl extends
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateMu2consolPlanOfCareSectionMu2consolPlanOfCareSectionPlanOfCareActivityObservation(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return PlanOfCareSectionOperations.validateMu2consolPlanOfCareSectionMu2consolPlanOfCareSectionPlanOfCareActivityObservation(this, diagnostics, context);
+	public boolean validateMu2consolPlanOfCareSectionPlanOfCareActivityObservation(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return PlanOfCareSectionOperations.validateMu2consolPlanOfCareSectionPlanOfCareActivityObservation(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public PlanOfCareActivityAct getmu2consolPlanOfCareActivityAct() {
-		return PlanOfCareSectionOperations.getmu2consolPlanOfCareActivityAct(this);
+	public PlanOfCareActivityAct getMu2consolPlanOfCareActivityAct() {
+		return PlanOfCareSectionOperations.getMu2consolPlanOfCareActivityAct(this);
 	}
 
 	/**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public PlanOfCareActivityEncounter getmu2consolPlanOfCareActivityEncounter() {
-		return PlanOfCareSectionOperations.getmu2consolPlanOfCareActivityEncounter(this);
+	public PlanOfCareActivityEncounter getMu2consolPlanOfCareActivityEncounter() {
+		return PlanOfCareSectionOperations.getMu2consolPlanOfCareActivityEncounter(this);
 	}
 
 	/**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public PlanOfCareActivityObservation getmu2consolPlanOfCareActivityObservation() {
-		return PlanOfCareSectionOperations.getmu2consolPlanOfCareActivityObservation(this);
+	public PlanOfCareActivityObservation getMu2consolPlanOfCareActivityObservation() {
+		return PlanOfCareSectionOperations.getMu2consolPlanOfCareActivityObservation(this);
 	}
 
 	/**

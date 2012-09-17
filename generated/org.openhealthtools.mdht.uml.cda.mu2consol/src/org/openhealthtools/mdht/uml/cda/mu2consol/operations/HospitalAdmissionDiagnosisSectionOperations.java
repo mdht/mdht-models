@@ -25,6 +25,7 @@ import org.openhealthtools.mdht.uml.cda.consol.HospitalAdmissionDiagnosis;
 import org.openhealthtools.mdht.uml.cda.mu2consol.HospitalAdmissionDiagnosisSection;
 import org.openhealthtools.mdht.uml.cda.mu2consol.Mu2consolPackage;
 
+import org.openhealthtools.mdht.uml.cda.mu2consol.Mu2consolPlugin;
 import org.openhealthtools.mdht.uml.cda.mu2consol.util.Mu2consolValidator;
 
 /**
@@ -36,7 +37,7 @@ import org.openhealthtools.mdht.uml.cda.mu2consol.util.Mu2consolValidator;
  * The following operations are supported:
  * <ul>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.mu2consol.HospitalAdmissionDiagnosisSection#validateMu2consolHospitalAdmissionDiagnosisSectionHospitalAdmissionDiagnosis(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Mu2consol Hospital Admission Diagnosis Section Hospital Admission Diagnosis</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.mu2consol.HospitalAdmissionDiagnosisSection#getmu2consolHospitalAdmissionDiagnosis() <em>Getmu2consol Hospital Admission Diagnosis</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.mu2consol.HospitalAdmissionDiagnosisSection#getMu2consolHospitalAdmissionDiagnosis() <em>Get Mu2consol Hospital Admission Diagnosis</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.mu2consol.HospitalAdmissionDiagnosisSection#validateHospitalAdmissionDiagnosisSectionTemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Hospital Admission Diagnosis Section Template Id</em>}</li>
  * </ul>
  * </p>
@@ -111,7 +112,7 @@ public class HospitalAdmissionDiagnosisSectionOperations
 						(Diagnostic.ERROR,
 						 Mu2consolValidator.DIAGNOSTIC_SOURCE,
 						 Mu2consolValidator.HOSPITAL_ADMISSION_DIAGNOSIS_SECTION__MU2CONSOL_HOSPITAL_ADMISSION_DIAGNOSIS_SECTION_HOSPITAL_ADMISSION_DIAGNOSIS,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "Mu2consolHospitalAdmissionDiagnosisSectionHospitalAdmissionDiagnosis", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(hospitalAdmissionDiagnosisSection, context) }),
+						 Mu2consolPlugin.INSTANCE.getString("Mu2consolHospitalAdmissionDiagnosisSectionHospitalAdmissionDiagnosis"),
 						 new Object [] { hospitalAdmissionDiagnosisSection }));
 			}
 			 
@@ -121,53 +122,47 @@ public class HospitalAdmissionDiagnosisSectionOperations
 	}
 
 	/**
-	 * The cached OCL expression body for the '
-	 * {@link #getmu2consolHospitalAdmissionDiagnosis(HospitalAdmissionDiagnosisSection)
-	 * <em>Getmu2consol Hospital Admission Diagnosis</em>}' operation. <!--
-	 * begin-user-doc --> <!-- end-user-doc -->
-	 * 
-	 * @see #getmu2consolHospitalAdmissionDiagnosis(HospitalAdmissionDiagnosisSection)
+	 * The cached OCL expression body for the '{@link #getMu2consolHospitalAdmissionDiagnosis(HospitalAdmissionDiagnosisSection) <em>Get Mu2consol Hospital Admission Diagnosis</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getMu2consolHospitalAdmissionDiagnosis(HospitalAdmissionDiagnosisSection)
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String GETMU2CONSOL_HOSPITAL_ADMISSION_DIAGNOSIS__EOCL_EXP = "self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(consol::HospitalAdmissionDiagnosis))->asSequence()->any(true).oclAsType(consol::HospitalAdmissionDiagnosis)";
+	protected static final String GET_MU2CONSOL_HOSPITAL_ADMISSION_DIAGNOSIS__EOCL_EXP = "self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(consol::HospitalAdmissionDiagnosis))->asSequence()->any(true).oclAsType(consol::HospitalAdmissionDiagnosis)";
 
 	/**
-	 * The cached OCL query for the '{@link #getmu2consolHospitalAdmissionDiagnosis(HospitalAdmissionDiagnosisSection) <em>Getmu2consol Hospital Admission Diagnosis</em>}' query operation.
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @see #getmu2consolHospitalAdmissionDiagnosis(HospitalAdmissionDiagnosisSection)
+	 * The cached OCL query for the '{@link #getMu2consolHospitalAdmissionDiagnosis(HospitalAdmissionDiagnosisSection) <em>Get Mu2consol Hospital Admission Diagnosis</em>}' query operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getMu2consolHospitalAdmissionDiagnosis(HospitalAdmissionDiagnosisSection)
 	 * @generated
 	 * @ordered
 	 */
-	protected static OCLExpression<EClassifier> GETMU2CONSOL_HOSPITAL_ADMISSION_DIAGNOSIS__EOCL_QRY;
+	protected static OCLExpression<EClassifier> GET_MU2CONSOL_HOSPITAL_ADMISSION_DIAGNOSIS__EOCL_QRY;
 
 	/**
-	 * <!-- begin-user-doc --> <!-- end-user-doc --> <!-- begin-model-doc -->
-	 * self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and
-	 * act.oclIsKindOf
-	 * (consol::HospitalAdmissionDiagnosis))->asSequence()->any(true
-	 * ).oclAsType(consol::HospitalAdmissionDiagnosis)
-	 * 
-	 * @param hospitalAdmissionDiagnosisSection
-	 *            The receiving '
-	 *            <em><b>Hospital Admission Diagnosis Section</b></em>' model
-	 *            object. <!-- end-model-doc -->
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(consol::HospitalAdmissionDiagnosis))->asSequence()->any(true).oclAsType(consol::HospitalAdmissionDiagnosis)
+	 * @param hospitalAdmissionDiagnosisSection The receiving '<em><b>Hospital Admission Diagnosis Section</b></em>' model object.
+	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-
-	public static HospitalAdmissionDiagnosis getmu2consolHospitalAdmissionDiagnosis(
-			HospitalAdmissionDiagnosisSection hospitalAdmissionDiagnosisSection) {
-		if (GETMU2CONSOL_HOSPITAL_ADMISSION_DIAGNOSIS__EOCL_QRY == null) {
+	
+	public static  HospitalAdmissionDiagnosis getMu2consolHospitalAdmissionDiagnosis(HospitalAdmissionDiagnosisSection hospitalAdmissionDiagnosisSection) {
+		if (GET_MU2CONSOL_HOSPITAL_ADMISSION_DIAGNOSIS__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(Mu2consolPackage.Literals.HOSPITAL_ADMISSION_DIAGNOSIS_SECTION, Mu2consolPackage.Literals.HOSPITAL_ADMISSION_DIAGNOSIS_SECTION.getEAllOperations().get(63));
 			try {
-				GETMU2CONSOL_HOSPITAL_ADMISSION_DIAGNOSIS__EOCL_QRY = helper.createQuery(GETMU2CONSOL_HOSPITAL_ADMISSION_DIAGNOSIS__EOCL_EXP);
+				GET_MU2CONSOL_HOSPITAL_ADMISSION_DIAGNOSIS__EOCL_QRY = helper.createQuery(GET_MU2CONSOL_HOSPITAL_ADMISSION_DIAGNOSIS__EOCL_EXP);
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		OCL.Query query = EOCL_ENV.createQuery(GETMU2CONSOL_HOSPITAL_ADMISSION_DIAGNOSIS__EOCL_QRY);
+		OCL.Query query = EOCL_ENV.createQuery(GET_MU2CONSOL_HOSPITAL_ADMISSION_DIAGNOSIS__EOCL_QRY);
 		return (HospitalAdmissionDiagnosis) query.evaluate(hospitalAdmissionDiagnosisSection);
 	}
 
