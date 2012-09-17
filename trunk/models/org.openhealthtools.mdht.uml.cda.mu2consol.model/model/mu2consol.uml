@@ -1282,5 +1282,4 @@ MU2 170.314(b)(7) Export Summary  - For Inpatient Care</body>
   <CDA:PropertyValidation xmi:id="__5bnwPwYEeGx4ophOjh2tw" base_Property="__5ZLgPwYEeGx4ophOjh2tw"/>
   <CDA:CDATemplate xmi:id="_JW-gQPwZEeGx4ophOjh2tw" base_Class="_xbrkwPwYEeGx4ophOjh2tw" templateId="2.16.840.1.113883.10.22.4.78"/>
   <CDA:CDATemplate xmi:id="_Mm36EP3iEeGmWJiRRvMaXA" base_Class="_v-6qsNkMEeGsqcJR8eqiMw" templateId="2.16.840.1.113883.10.20.22.1.1"/>
-  <CDA:AssociationValidation xmi:id="_U-y6oP_MEeGEPqejBtSXZw" base_Association="_imRrsPhzEeGPm7sA61ixGw"/>
 </xmi:XMI>
