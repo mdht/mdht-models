@@ -82,15 +82,6 @@ public class FunctionalStatusSectionImpl extends org.openhealthtools.mdht.uml.cd
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateMu2consolFunctionalStatusSectionFunctionalStatusProblemObservation(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return FunctionalStatusSectionOperations.validateMu2consolFunctionalStatusSectionFunctionalStatusProblemObservation(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	public EList<CognitiveStatusProblemObservation> getmu2consolCognitiveStatusProblemObservations() {
 		return FunctionalStatusSectionOperations.getmu2consolCognitiveStatusProblemObservations(this);
 	}
