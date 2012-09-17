@@ -57,11 +57,12 @@ public class PreoperativeDiagnosisSectionImpl
 	}
 
 	/**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public PreoperativeDiagnosis getmu2consolPreoperativeDiagnosis() {
-		return PreoperativeDiagnosisSectionOperations.getmu2consolPreoperativeDiagnosis(this);
+	public PreoperativeDiagnosis getMu2consolPreoperativeDiagnosis() {
+		return PreoperativeDiagnosisSectionOperations.getMu2consolPreoperativeDiagnosis(this);
 	}
 
 	/**

@@ -31,7 +31,7 @@ import org.openhealthtools.mdht.uml.cda.consol.FunctionalStatusResultOrganizer;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.mu2consol.Mu2consolPackage#getFunctionalStatusSection()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='mu2consolFunctionalStatusSectionTemplateId mu2consolFunctionalStatusSectionCognitiveStatus mu2consolFunctionalStatusSectionFunctionalStatus' templateId.root='2.16.840.1.113883.10.20.22.2.14'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='Mu2consolFunctionalStatusSectionTemplateId Mu2consolFunctionalStatusSectionCognitiveStatus Mu2consolFunctionalStatusSectionFunctionalStatus' templateId.root='2.16.840.1.113883.10.20.22.2.14'"
  * @generated
  */
 public interface FunctionalStatusSection extends org.openhealthtools.mdht.uml.cda.consol.FunctionalStatusSection {
@@ -67,11 +67,11 @@ public interface FunctionalStatusSection extends org.openhealthtools.mdht.uml.cd
 	 * <!-- begin-model-doc -->
 	 * self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::CognitiveStatusProblemObservation)).oclAsType(consol::CognitiveStatusProblemObservation)
 	 * <!-- end-model-doc -->
-	 * @model required="true" ordered="false"
+	 * @model kind="operation" required="true" ordered="false"
 	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::CognitiveStatusProblemObservation)).oclAsType(consol::CognitiveStatusProblemObservation)'"
 	 * @generated
 	 */
-	EList<CognitiveStatusProblemObservation> getmu2consolCognitiveStatusProblemObservations();
+	EList<CognitiveStatusProblemObservation> getMu2consolCognitiveStatusProblemObservations();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -79,11 +79,11 @@ public interface FunctionalStatusSection extends org.openhealthtools.mdht.uml.cd
 	 * <!-- begin-model-doc -->
 	 * self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::CognitiveStatusResultObservation)).oclAsType(consol::CognitiveStatusResultObservation)
 	 * <!-- end-model-doc -->
-	 * @model required="true" ordered="false"
+	 * @model kind="operation" required="true" ordered="false"
 	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::CognitiveStatusResultObservation)).oclAsType(consol::CognitiveStatusResultObservation)'"
 	 * @generated
 	 */
-	EList<CognitiveStatusResultObservation> getmu2consolCognitiveStatusResultObservations();
+	EList<CognitiveStatusResultObservation> getMu2consolCognitiveStatusResultObservations();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -91,11 +91,11 @@ public interface FunctionalStatusSection extends org.openhealthtools.mdht.uml.cd
 	 * <!-- begin-model-doc -->
 	 * self.getOrganizers()->select(organizer : cda::Organizer | not organizer.oclIsUndefined() and organizer.oclIsKindOf(consol::CognitiveStatusResultOrganizer)).oclAsType(consol::CognitiveStatusResultOrganizer)
 	 * <!-- end-model-doc -->
-	 * @model required="true" ordered="false"
+	 * @model kind="operation" required="true" ordered="false"
 	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getOrganizers()->select(organizer : cda::Organizer | not organizer.oclIsUndefined() and organizer.oclIsKindOf(consol::CognitiveStatusResultOrganizer)).oclAsType(consol::CognitiveStatusResultOrganizer)'"
 	 * @generated
 	 */
-	EList<CognitiveStatusResultOrganizer> getmu2consolCognitiveStatusResultOrganizers();
+	EList<CognitiveStatusResultOrganizer> getMu2consolCognitiveStatusResultOrganizers();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -103,11 +103,11 @@ public interface FunctionalStatusSection extends org.openhealthtools.mdht.uml.cd
 	 * <!-- begin-model-doc -->
 	 * self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::FunctionalStatusProblemObservation)).oclAsType(consol::FunctionalStatusProblemObservation)
 	 * <!-- end-model-doc -->
-	 * @model required="true" ordered="false"
+	 * @model kind="operation" required="true" ordered="false"
 	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::FunctionalStatusProblemObservation)).oclAsType(consol::FunctionalStatusProblemObservation)'"
 	 * @generated
 	 */
-	EList<FunctionalStatusProblemObservation> getmu2consolFunctionalStatusProblemObservations();
+	EList<FunctionalStatusProblemObservation> getMu2consolFunctionalStatusProblemObservations();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -115,11 +115,11 @@ public interface FunctionalStatusSection extends org.openhealthtools.mdht.uml.cd
 	 * <!-- begin-model-doc -->
 	 * self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::FunctionalStatusResultObservation)).oclAsType(consol::FunctionalStatusResultObservation)
 	 * <!-- end-model-doc -->
-	 * @model required="true" ordered="false"
+	 * @model kind="operation" required="true" ordered="false"
 	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::FunctionalStatusResultObservation)).oclAsType(consol::FunctionalStatusResultObservation)'"
 	 * @generated
 	 */
-	EList<FunctionalStatusResultObservation> getmu2consolFunctionalStatusResultObservations();
+	EList<FunctionalStatusResultObservation> getMu2consolFunctionalStatusResultObservations();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -127,11 +127,11 @@ public interface FunctionalStatusSection extends org.openhealthtools.mdht.uml.cd
 	 * <!-- begin-model-doc -->
 	 * self.getOrganizers()->select(organizer : cda::Organizer | not organizer.oclIsUndefined() and organizer.oclIsKindOf(consol::FunctionalStatusResultOrganizer)).oclAsType(consol::FunctionalStatusResultOrganizer)
 	 * <!-- end-model-doc -->
-	 * @model required="true" ordered="false"
+	 * @model kind="operation" required="true" ordered="false"
 	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getOrganizers()->select(organizer : cda::Organizer | not organizer.oclIsUndefined() and organizer.oclIsKindOf(consol::FunctionalStatusResultOrganizer)).oclAsType(consol::FunctionalStatusResultOrganizer)'"
 	 * @generated
 	 */
-	EList<FunctionalStatusResultOrganizer> getmu2consolFunctionalStatusResultOrganizers();
+	EList<FunctionalStatusResultOrganizer> getMu2consolFunctionalStatusResultOrganizers();
 
 	/**
 	 * <!-- begin-user-doc -->

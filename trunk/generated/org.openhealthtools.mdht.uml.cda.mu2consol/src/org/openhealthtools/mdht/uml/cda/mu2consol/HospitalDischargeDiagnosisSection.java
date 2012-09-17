@@ -21,7 +21,7 @@ import org.openhealthtools.mdht.uml.cda.consol.HospitalDischargeDiagnosis;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.mu2consol.Mu2consolPackage#getHospitalDischargeDiagnosisSection()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='mu2consolHospitalDischargeDiagnosisSectionTemplateId mu2consolHospitalDischargeDiagnosisSectionHospitalDischargeDiagnosis' templateId.root='2.16.840.1.113883.10.20.22.2.24'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='Mu2consolHospitalDischargeDiagnosisSectionTemplateId Mu2consolHospitalDischargeDiagnosisSectionHospitalDischargeDiagnosis' templateId.root='2.16.840.1.113883.10.20.22.2.24'"
  * @generated
  */
 public interface HospitalDischargeDiagnosisSection
@@ -45,17 +45,16 @@ public interface HospitalDischargeDiagnosisSection
 			DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
-	 * <!-- begin-user-doc --> <!-- end-user-doc --> <!-- begin-model-doc -->
-	 * self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and
-	 * act.oclIsKindOf
-	 * (consol::HospitalDischargeDiagnosis))->asSequence()->any(true
-	 * ).oclAsType(consol::HospitalDischargeDiagnosis) <!-- end-model-doc -->
-	 * 
-	 * @model required="true" ordered="false" annotation=
-	 *        "http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(consol::HospitalDischargeDiagnosis))->asSequence()->any(true).oclAsType(consol::HospitalDischargeDiagnosis)'"
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(consol::HospitalDischargeDiagnosis))->asSequence()->any(true).oclAsType(consol::HospitalDischargeDiagnosis)
+	 * <!-- end-model-doc -->
+	 * @model kind="operation" required="true" ordered="false"
+	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(consol::HospitalDischargeDiagnosis))->asSequence()->any(true).oclAsType(consol::HospitalDischargeDiagnosis)'"
 	 * @generated
 	 */
-	HospitalDischargeDiagnosis getmu2consolHospitalDischargeDiagnosis();
+	HospitalDischargeDiagnosis getMu2consolHospitalDischargeDiagnosis();
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->

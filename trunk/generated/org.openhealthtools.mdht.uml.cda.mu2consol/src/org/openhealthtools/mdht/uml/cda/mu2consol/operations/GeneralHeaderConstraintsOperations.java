@@ -125,7 +125,7 @@ public class GeneralHeaderConstraintsOperations
 						(Diagnostic.ERROR,
 						 Mu2consolValidator.DIAGNOSTIC_SOURCE,
 						 Mu2consolValidator.GENERAL_HEADER_CONSTRAINTS__MU2CONSOL_GENERAL_HEADER_CONSTRAINTS_RECORD_TARGET,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "Mu2consolGeneralHeaderConstraintsRecordTarget", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(generalHeaderConstraints, context) }),
+						 Mu2consolPlugin.INSTANCE.getString("Mu2consolGeneralHeaderConstraintsRecordTarget"),
 						 new Object [] { generalHeaderConstraints }));
 			}
 			 
@@ -191,7 +191,7 @@ public class GeneralHeaderConstraintsOperations
 						(Diagnostic.ERROR,
 						 Mu2consolValidator.DIAGNOSTIC_SOURCE,
 						 Mu2consolValidator.GENERAL_HEADER_CONSTRAINTS__MU2CONSOL_GENERAL_HEADER_CONSTRAINTS_DOCUMENTATION_OF,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "Mu2consolGeneralHeaderConstraintsDocumentationOf", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(generalHeaderConstraints, context) }),
+						 Mu2consolPlugin.INSTANCE.getString("Mu2consolGeneralHeaderConstraintsDocumentationOf"),
 						 new Object [] { generalHeaderConstraints }));
 			}
 			 

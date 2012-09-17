@@ -28,6 +28,7 @@ import org.openhealthtools.mdht.uml.cda.consol.AdmissionMedication;
 import org.openhealthtools.mdht.uml.cda.mu2consol.HospitalAdmissionMedicationsSectionEntriesOptional;
 import org.openhealthtools.mdht.uml.cda.mu2consol.Mu2consolPackage;
 
+import org.openhealthtools.mdht.uml.cda.mu2consol.Mu2consolPlugin;
 import org.openhealthtools.mdht.uml.cda.mu2consol.util.Mu2consolValidator;
 
 /**
@@ -40,7 +41,7 @@ import org.openhealthtools.mdht.uml.cda.mu2consol.util.Mu2consolValidator;
  * The following operations are supported:
  * <ul>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.mu2consol.HospitalAdmissionMedicationsSectionEntriesOptional#validateMu2consolHospitalAdmissionMedicationsSectionEntriesOptionalAdmissionMedication(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Mu2consol Hospital Admission Medications Section Entries Optional Admission Medication</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.mu2consol.HospitalAdmissionMedicationsSectionEntriesOptional#getmu2consolAdmissionMedications() <em>Getmu2consol Admission Medications</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.mu2consol.HospitalAdmissionMedicationsSectionEntriesOptional#getMu2consolAdmissionMedications() <em>Get Mu2consol Admission Medications</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.mu2consol.HospitalAdmissionMedicationsSectionEntriesOptional#validateHospitalAdmissionMedicationsSectionEntriesOptionalTemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Hospital Admission Medications Section Entries Optional Template Id</em>}</li>
  * </ul>
  * </p>
@@ -115,7 +116,7 @@ public class HospitalAdmissionMedicationsSectionEntriesOptionalOperations
 						(Diagnostic.ERROR,
 						 Mu2consolValidator.DIAGNOSTIC_SOURCE,
 						 Mu2consolValidator.HOSPITAL_ADMISSION_MEDICATIONS_SECTION_ENTRIES_OPTIONAL__MU2CONSOL_HOSPITAL_ADMISSION_MEDICATIONS_SECTION_ENTRIES_OPTIONAL_ADMISSION_MEDICATION,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "Mu2consolHospitalAdmissionMedicationsSectionEntriesOptionalAdmissionMedication", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(hospitalAdmissionMedicationsSectionEntriesOptional, context) }),
+						 Mu2consolPlugin.INSTANCE.getString("Mu2consolHospitalAdmissionMedicationsSectionEntriesOptionalAdmissionMedication"),
 						 new Object [] { hospitalAdmissionMedicationsSectionEntriesOptional }));
 			}
 			 
@@ -125,55 +126,47 @@ public class HospitalAdmissionMedicationsSectionEntriesOptionalOperations
 	}
 
 	/**
-	 * The cached OCL expression body for the '
-	 * {@link #getmu2consolAdmissionMedications(HospitalAdmissionMedicationsSectionEntriesOptional)
-	 * <em>Getmu2consol Admission Medications</em>}' operation. <!--
-	 * begin-user-doc --> <!-- end-user-doc -->
-	 * 
-	 * @see #getmu2consolAdmissionMedications(HospitalAdmissionMedicationsSectionEntriesOptional)
+	 * The cached OCL expression body for the '{@link #getMu2consolAdmissionMedications(HospitalAdmissionMedicationsSectionEntriesOptional) <em>Get Mu2consol Admission Medications</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getMu2consolAdmissionMedications(HospitalAdmissionMedicationsSectionEntriesOptional)
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String GETMU2CONSOL_ADMISSION_MEDICATIONS__EOCL_EXP = "self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(consol::AdmissionMedication)).oclAsType(consol::AdmissionMedication)";
+	protected static final String GET_MU2CONSOL_ADMISSION_MEDICATIONS__EOCL_EXP = "self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(consol::AdmissionMedication)).oclAsType(consol::AdmissionMedication)";
 
 	/**
-	 * The cached OCL query for the '
-	 * {@link #getmu2consolAdmissionMedications(HospitalAdmissionMedicationsSectionEntriesOptional)
-	 * <em>Getmu2consol Admission Medications</em>}' query operation. <!--
-	 * begin-user-doc --> <!-- end-user-doc -->
-	 * 
-	 * @see #getmu2consolAdmissionMedications(HospitalAdmissionMedicationsSectionEntriesOptional)
+	 * The cached OCL query for the '{@link #getMu2consolAdmissionMedications(HospitalAdmissionMedicationsSectionEntriesOptional) <em>Get Mu2consol Admission Medications</em>}' query operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getMu2consolAdmissionMedications(HospitalAdmissionMedicationsSectionEntriesOptional)
 	 * @generated
 	 * @ordered
 	 */
-	protected static OCLExpression<EClassifier> GETMU2CONSOL_ADMISSION_MEDICATIONS__EOCL_QRY;
+	protected static OCLExpression<EClassifier> GET_MU2CONSOL_ADMISSION_MEDICATIONS__EOCL_QRY;
 
 	/**
-	 * <!-- begin-user-doc --> <!-- end-user-doc --> <!-- begin-model-doc -->
-	 * self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and
-	 * act.oclIsKindOf
-	 * (consol::AdmissionMedication)).oclAsType(consol::AdmissionMedication)
-	 * 
-	 * @param hospitalAdmissionMedicationsSectionEntriesOptional
-	 *            The receiving '
-	 *            <em><b>Hospital Admission Medications Section Entries Optional</b></em>
-	 *            ' model object. <!-- end-model-doc -->
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(consol::AdmissionMedication)).oclAsType(consol::AdmissionMedication)
+	 * @param hospitalAdmissionMedicationsSectionEntriesOptional The receiving '<em><b>Hospital Admission Medications Section Entries Optional</b></em>' model object.
+	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-
-	public static EList<AdmissionMedication> getmu2consolAdmissionMedications(
-			HospitalAdmissionMedicationsSectionEntriesOptional hospitalAdmissionMedicationsSectionEntriesOptional) {
-		if (GETMU2CONSOL_ADMISSION_MEDICATIONS__EOCL_QRY == null) {
+	
+	public static  EList<AdmissionMedication> getMu2consolAdmissionMedications(HospitalAdmissionMedicationsSectionEntriesOptional hospitalAdmissionMedicationsSectionEntriesOptional) {
+		if (GET_MU2CONSOL_ADMISSION_MEDICATIONS__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(Mu2consolPackage.Literals.HOSPITAL_ADMISSION_MEDICATIONS_SECTION_ENTRIES_OPTIONAL, Mu2consolPackage.Literals.HOSPITAL_ADMISSION_MEDICATIONS_SECTION_ENTRIES_OPTIONAL.getEAllOperations().get(63));
 			try {
-				GETMU2CONSOL_ADMISSION_MEDICATIONS__EOCL_QRY = helper.createQuery(GETMU2CONSOL_ADMISSION_MEDICATIONS__EOCL_EXP);
+				GET_MU2CONSOL_ADMISSION_MEDICATIONS__EOCL_QRY = helper.createQuery(GET_MU2CONSOL_ADMISSION_MEDICATIONS__EOCL_EXP);
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		OCL.Query query = EOCL_ENV.createQuery(GETMU2CONSOL_ADMISSION_MEDICATIONS__EOCL_QRY);
+		OCL.Query query = EOCL_ENV.createQuery(GET_MU2CONSOL_ADMISSION_MEDICATIONS__EOCL_QRY);
 		@SuppressWarnings("unchecked")
 		Collection<AdmissionMedication> result = (Collection<AdmissionMedication>) query.evaluate(hospitalAdmissionMedicationsSectionEntriesOptional);
 		return new BasicEList.UnmodifiableEList<AdmissionMedication>(result.size(), result.toArray());

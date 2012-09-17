@@ -20,7 +20,7 @@ import org.openhealthtools.mdht.uml.cda.consol.ProblemObservation;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.mu2consol.Mu2consolPackage#getAssessmentAndPlanSection()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='mu2consolAssessmentAndPlanSectionTemplateId' templateId.root='2.16.840.1.113883.10.20.22.2.9'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='Mu2consolAssessmentAndPlanSectionTemplateId' templateId.root='2.16.840.1.113883.10.20.22.2.9'"
  * @generated
  */
 public interface AssessmentAndPlanSection extends
