@@ -77,7 +77,7 @@
         <language>Analysis</language>
         <language>OCL</language>
         <body>code, if present, SHOULD contain zero or one [0..1] originalText</body>
-        <body>self.code.originalText->size() = 1</body>
+        <body>not code.oclIsUndefined() implies not code.originalText.oclIsUndefined()</body>
       </specification>
     </ownedRule>
     <ownedRule xmi:id="_fTZ7wCwaEeGKLc4ckmfDag" name="codeOriginalTextReference" constrainedElement="_a_2b4CwaEeGKLc4ckmfDag">
