@@ -1209,13 +1209,13 @@ In a CCD the encompassingEncounter may be used when documenting a specific encou
             <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_NMTVQuxxEeG7k4bbVdXbXw"/>
             <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_xEWTMErfEd6FXKclYGEDCw"/>
           </ownedAttribute>
-          <ownedAttribute xmi:id="_NMTVQ-xxEeG7k4bbVdXbXw" name="typeCode" visibility="private">
+          <ownedAttribute xmi:id="_NMTVQ-xxEeG7k4bbVdXbXw" name="typeCode" visibility="private" isReadOnly="true">
             <ownedComment xmi:id="_CkYOEPI0EeGu1M-cCXg0Dg">
               <body>The performer participant represents clinicians who actually and principally carry out the serviceEvent. In a transfer of care this represents the healthcare providers involved in the current or pertinent historical care of the patient. Preferably, the patient's key healthcare care team members would be listed, particularly their primary physician and any active consulting physicians, therapists, and counselors (CONF:16753).</body>
             </ownedComment>
             <type xmi:type="uml:Enumeration" href="../../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__zOqckDcEd6xYZuu1VKCVw"/>
             <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_3_p4cErfEd6FXKclYGEDCw"/>
-            <defaultValue xmi:type="uml:LiteralString" xmi:id="_Rle8AOxxEeG7k4bbVdXbXw" value="PRF"/>
+            <defaultValue xmi:type="uml:LiteralString" xmi:id="_qwCUsAEREeKL0Ohby4AyRg" value="PRF"/>
           </ownedAttribute>
           <ownedAttribute xmi:id="_NMT8UOxxEeG7k4bbVdXbXw" name="assignedEntity" visibility="private" type="_YzQKQOxxEeG7k4bbVdXbXw" aggregation="composite">
             <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_NMT8UexxEeG7k4bbVdXbXw" value="1"/>

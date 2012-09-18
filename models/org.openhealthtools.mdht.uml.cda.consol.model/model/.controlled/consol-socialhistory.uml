@@ -389,7 +389,7 @@ The smoking status value set includes a special code to communicate if the smoki
         <language>Analysis</language>
         <language>OCL</language>
         <body>effectiveTime SHALL contain exactly one [1..1] low</body>
-        <body>self.effectiveTime.low->size() = 1</body>
+        <body>not self.effectiveTime.oclIsUndefined() implies not self.effectiveTime.low.oclIsUndefined()</body>
       </specification>
     </ownedRule>
     <generalization xmi:id="_reIG0OWTEeGKmvzED_He2w" general="_gIH_QOWQEeGKmvzED_He2w"/>

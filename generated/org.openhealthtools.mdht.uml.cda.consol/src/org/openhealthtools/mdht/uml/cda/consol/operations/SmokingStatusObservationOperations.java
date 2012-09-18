@@ -66,7 +66,7 @@ public class SmokingStatusObservationOperations extends TobaccoUseOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_SMOKING_STATUS_OBSERVATION_EFFECTIVE_TIME_LOW__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.effectiveTime.low->size() = 1";
+	protected static final String VALIDATE_SMOKING_STATUS_OBSERVATION_EFFECTIVE_TIME_LOW__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "not self.effectiveTime.oclIsUndefined() implies not self.effectiveTime.low.oclIsUndefined()";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateSmokingStatusObservationEffectiveTimeLow(SmokingStatusObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Smoking Status Observation Effective Time Low</em>}' invariant operation.
@@ -83,7 +83,7 @@ public class SmokingStatusObservationOperations extends TobaccoUseOperations {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.effectiveTime.low->size() = 1
+	 * not self.effectiveTime.oclIsUndefined() implies not self.effectiveTime.low.oclIsUndefined()
 	 * @param smokingStatusObservation The receiving '<em><b>Smoking Status Observation</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.

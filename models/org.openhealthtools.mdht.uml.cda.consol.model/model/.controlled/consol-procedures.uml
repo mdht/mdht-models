@@ -115,7 +115,7 @@ This clinical statement represents procedures that result in new information abo
         <language>Analysis</language>
         <language>OCL</language>
         <body>code SHOULD contain zero or one [0..1] originalText</body>
-        <body>self.code.originalText->size() = 1</body>
+        <body>not code.oclIsUndefined() implies not code.originalText.oclIsUndefined()</body>
       </specification>
     </ownedRule>
     <ownedRule xmi:id="_iKsikBxvEeGXP8PxDYviDg" name="originalTextReference" constrainedElement="_N4ba0BrQEeGxIZCGAXKxsQ">
@@ -123,7 +123,7 @@ This clinical statement represents procedures that result in new information abo
         <language>Analysis</language>
         <language>OCL</language>
         <body>originalText, if present, SHOULD contain zero or one [0..1] reference</body>
-        <body>self.code.originalText->size() = 1 implies self.code.originalText->one(reference->size() = 1)</body>
+        <body>not self.code.originalText.oclIsUndefined() implies self.code.originalText->one(reference->size() = 1)</body>
       </specification>
     </ownedRule>
     <ownedRule xmi:id="_Q_qfQOV4EeGpoIKFyl7L7w" name="originalTextReferenceValue" constrainedElement="_iKsikBxvEeGXP8PxDYviDg">
@@ -417,7 +417,7 @@ This clinical statement represents any procedure that cannot be classified as an
         <language>Analysis</language>
         <language>OCL</language>
         <body>code SHOULD contain zero or one [0..1] originalText</body>
-        <body>self.code.originalText->size() = 1</body>
+        <body>not code.oclIsUndefined() implies not code.originalText.oclIsUndefined()</body>
       </specification>
     </ownedRule>
     <ownedRule xmi:id="_rX9yIBxpEeGXP8PxDYviDg" name="originalTextReference" constrainedElement="_N4ba0BrQEeGxIZCGAXKxsQ">
@@ -425,7 +425,7 @@ This clinical statement represents any procedure that cannot be classified as an
         <language>Analysis</language>
         <language>OCL</language>
         <body>originalText, if present, SHOULD contain zero or one [0..1] reference</body>
-        <body>self.code.originalText->size() = 1 implies self.code.originalText->one(reference->size() = 1)</body>
+        <body>not self.code.originalText.oclIsUndefined() implies self.code.originalText->one(reference->size() = 1)</body>
       </specification>
     </ownedRule>
     <ownedRule xmi:id="_XONdcOV-EeGpoIKFyl7L7w" name="originalTextReferenceValue" constrainedElement="_rX9yIBxpEeGXP8PxDYviDg">
@@ -692,7 +692,7 @@ This clinical statement represents procedures whose immediate and primary outcom
         <language>Analysis</language>
         <language>OCL</language>
         <body>code SHOULD contain zero or one [0..1] originalText</body>
-        <body>self.code.originalText->size() = 1</body>
+        <body>not code.oclIsUndefined() implies not code.originalText.oclIsUndefined()</body>
       </specification>
     </ownedRule>
     <ownedRule xmi:id="_WEQMwBrQEeGxIZCGAXKxsQ" name="originalTextReference" constrainedElement="_N4ba0BrQEeGxIZCGAXKxsQ">
@@ -700,7 +700,7 @@ This clinical statement represents procedures whose immediate and primary outcom
         <language>Analysis</language>
         <language>OCL</language>
         <body>originalText, if present, SHOULD contain zero or one [0..1] reference</body>
-        <body>self.code.originalText->size() = 1 implies self.code.originalText->one(reference->size() = 1)</body>
+        <body>not self.code.originalText.oclIsUndefined() implies self.code.originalText->one(reference->size() = 1)</body>
       </specification>
     </ownedRule>
     <ownedRule xmi:id="_oeKDoOVwEeGpoIKFyl7L7w" name="originalTextReferenceValue" constrainedElement="_WEQMwBrQEeGxIZCGAXKxsQ">
