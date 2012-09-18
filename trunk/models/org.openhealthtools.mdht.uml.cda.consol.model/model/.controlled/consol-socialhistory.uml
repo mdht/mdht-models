@@ -304,7 +304,7 @@
         <language>Analysis</language>
         <language>OCL</language>
         <body>effectiveTime SHALL contain exactly one [1..1] low</body>
-        <body>self.effectiveTime.low->size() = 1</body>
+        <body>not self.effectiveTime.oclIsUndefined() implies not self.effectiveTime.low.oclIsUndefined()</body>
       </specification>
     </ownedRule>
     <generalization xmi:id="_gIH_QeWQEeGKmvzED_He2w">
