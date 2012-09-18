@@ -12,18 +12,13 @@ import java.util.Map;
 import org.eclipse.emf.common.util.BasicDiagnostic;
 import org.eclipse.emf.common.util.Diagnostic;
 import org.eclipse.emf.common.util.DiagnosticChain;
-
 import org.eclipse.ocl.ParserException;
-
 import org.eclipse.ocl.ecore.Constraint;
 import org.eclipse.ocl.ecore.OCL;
-
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPlugin;
 import org.openhealthtools.mdht.uml.cda.consol.TobaccoUse;
-
 import org.openhealthtools.mdht.uml.cda.consol.util.ConsolValidator;
-
 import org.openhealthtools.mdht.uml.cda.operations.ClinicalStatementOperations;
 
 /**
@@ -68,7 +63,7 @@ public class TobaccoUseOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_TOBACCO_USE_EFFECTIVE_TIME_LOW__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.effectiveTime.low->size() = 1";
+	protected static final String VALIDATE_TOBACCO_USE_EFFECTIVE_TIME_LOW__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "not self.effectiveTime.oclIsUndefined() implies not self.effectiveTime.low.oclIsUndefined()";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateTobaccoUseEffectiveTimeLow(TobaccoUse, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Tobacco Use Effective Time Low</em>}' invariant operation.
@@ -85,7 +80,7 @@ public class TobaccoUseOperations extends ClinicalStatementOperations {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.effectiveTime.low->size() = 1
+	 * not self.effectiveTime.oclIsUndefined() implies not self.effectiveTime.low.oclIsUndefined()
 	 * @param tobaccoUse The receiving '<em><b>Tobacco Use</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
