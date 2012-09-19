@@ -296,6 +296,30 @@
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="mu2consol.ecore#//SmokingStatusObservation/SmokingStatusObservationValue/context"/>
       </genOperations>
     </genClasses>
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="mu2consol.ecore#//ResultsSection">
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="mu2consol.ecore#//ResultsSection/Mu2consolResultsSectionResultOrganizer">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="mu2consol.ecore#//ResultsSection/Mu2consolResultsSectionResultOrganizer/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="mu2consol.ecore#//ResultsSection/Mu2consolResultsSectionResultOrganizer/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="mu2consol.ecore#//ResultsSection/getMu2consolResultOrganizers"/>
+    </genClasses>
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="mu2consol.ecore#//ResultOrganizer">
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="mu2consol.ecore#//ResultOrganizer/Mu2consolResultOrganizerResultObservation">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="mu2consol.ecore#//ResultOrganizer/Mu2consolResultOrganizerResultObservation/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="mu2consol.ecore#//ResultOrganizer/Mu2consolResultOrganizerResultObservation/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="mu2consol.ecore#//ResultOrganizer/getMu2consolResultObservations"/>
+    </genClasses>
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="mu2consol.ecore#//ResultObservation">
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="mu2consol.ecore#//ResultObservation/Mu2consolResultObservationResultObservationCodeValue">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="mu2consol.ecore#//ResultObservation/Mu2consolResultObservationResultObservationCodeValue/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="mu2consol.ecore#//ResultObservation/Mu2consolResultObservationResultObservationCodeValue/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="mu2consol.ecore#//ResultObservation/Mu2consolResultObservationCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="mu2consol.ecore#//ResultObservation/Mu2consolResultObservationCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="mu2consol.ecore#//ResultObservation/Mu2consolResultObservationCode/context"/>
+      </genOperations>
+    </genClasses>
     <genClasses xsi:type="genmodel:GenClass" ecoreClass="mu2consol.ecore#//PostprocedureDiagnosisSection">
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="mu2consol.ecore#//PostprocedureDiagnosisSection/Mu2consolPostprocedureDiagnosisSectionPostprocedureDiagnosis">
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="mu2consol.ecore#//PostprocedureDiagnosisSection/Mu2consolPostprocedureDiagnosisSectionPostprocedureDiagnosis/diagnostics"/>

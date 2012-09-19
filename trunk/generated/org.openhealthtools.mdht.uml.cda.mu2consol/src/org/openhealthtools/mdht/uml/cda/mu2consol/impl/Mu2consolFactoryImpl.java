@@ -83,6 +83,9 @@ public class Mu2consolFactoryImpl extends EFactoryImpl implements
 			case Mu2consolPackage.HOSPITAL_ADMISSION_MEDICATIONS_SECTION_ENTRIES_OPTIONAL: return createHospitalAdmissionMedicationsSectionEntriesOptional();
 			case Mu2consolPackage.SOCIAL_HISTORY_SECTION: return createSocialHistorySection();
 			case Mu2consolPackage.SMOKING_STATUS_OBSERVATION: return createSmokingStatusObservation();
+			case Mu2consolPackage.RESULTS_SECTION: return createResultsSection();
+			case Mu2consolPackage.RESULT_ORGANIZER: return createResultOrganizer();
+			case Mu2consolPackage.RESULT_OBSERVATION: return createResultObservation();
 			case Mu2consolPackage.POSTPROCEDURE_DIAGNOSIS_SECTION: return createPostprocedureDiagnosisSection();
 			case Mu2consolPackage.FUNCTIONAL_STATUS_SECTION: return createFunctionalStatusSection();
 			case Mu2consolPackage.INSTRUCTIONS_SECTION: return createInstructionsSection();
@@ -199,6 +202,36 @@ public class Mu2consolFactoryImpl extends EFactoryImpl implements
 	public VDTAmbulatorySummary createVDTAmbulatorySummary() {
 		VDTAmbulatorySummaryImpl vdtAmbulatorySummary = new VDTAmbulatorySummaryImpl();
 		return vdtAmbulatorySummary;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public ResultObservation createResultObservation() {
+		ResultObservationImpl resultObservation = new ResultObservationImpl();
+		return resultObservation;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public ResultOrganizer createResultOrganizer() {
+		ResultOrganizerImpl resultOrganizer = new ResultOrganizerImpl();
+		return resultOrganizer;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public ResultsSection createResultsSection() {
+		ResultsSectionImpl resultsSection = new ResultsSectionImpl();
+		return resultsSection;
 	}
 
 	/**
