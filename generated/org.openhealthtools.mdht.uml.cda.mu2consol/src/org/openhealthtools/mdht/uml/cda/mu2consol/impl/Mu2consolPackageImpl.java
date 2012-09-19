@@ -1566,7 +1566,7 @@ public class Mu2consolPackageImpl extends EPackageImpl implements
 
         addEOperation(clinicalOfficeVisitSummaryEClass, theConsolPackage.getAllergiesSection(), "getAllergiesSection", 1, 1, IS_UNIQUE, !IS_ORDERED);
 
-        addEOperation(clinicalOfficeVisitSummaryEClass, theConsolPackage.getResultsSection(), "getResultsSection", 1, 1, IS_UNIQUE, !IS_ORDERED);
+        addEOperation(clinicalOfficeVisitSummaryEClass, this.getResultsSection(), "getResultsSection", 1, 1, IS_UNIQUE, !IS_ORDERED);
 
         addEOperation(clinicalOfficeVisitSummaryEClass, theConsolPackage.getVitalSignsSection(), "getVitalSignsSection", 1, 1, IS_UNIQUE, !IS_ORDERED);
 
@@ -1783,7 +1783,7 @@ public class Mu2consolPackageImpl extends EPackageImpl implements
 
         addEOperation(viewDownloadTransmitSummaryEClass, theConsolPackage.getVitalSignsSection(), "getVitalSignsSection", 1, 1, IS_UNIQUE, !IS_ORDERED);
 
-        addEOperation(viewDownloadTransmitSummaryEClass, theConsolPackage.getResultsSection(), "getResultsSection", 1, 1, IS_UNIQUE, !IS_ORDERED);
+        addEOperation(viewDownloadTransmitSummaryEClass, this.getResultsSection(), "getResultsSection", 1, 1, IS_UNIQUE, !IS_ORDERED);
 
         addEOperation(viewDownloadTransmitSummaryEClass, this.getAssessmentAndPlanSection(), "getAssessmentAndPlanSection", 1, 1, IS_UNIQUE, !IS_ORDERED);
 

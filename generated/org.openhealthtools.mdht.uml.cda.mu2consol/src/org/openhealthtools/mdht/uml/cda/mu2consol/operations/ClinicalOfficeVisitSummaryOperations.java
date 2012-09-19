@@ -33,7 +33,6 @@ import org.openhealthtools.mdht.uml.cda.consol.ProblemSection;
 
 import org.openhealthtools.mdht.uml.cda.consol.ProceduresSection;
 import org.openhealthtools.mdht.uml.cda.consol.ReasonForVisitSection;
-import org.openhealthtools.mdht.uml.cda.consol.ResultsSection;
 import org.openhealthtools.mdht.uml.cda.consol.VitalSignsSection;
 import org.openhealthtools.mdht.uml.cda.mu2consol.AssessmentAndPlanSection;
 import org.openhealthtools.mdht.uml.cda.mu2consol.ClinicalOfficeVisitSummary;
@@ -42,6 +41,7 @@ import org.openhealthtools.mdht.uml.cda.mu2consol.MedicationsAdministeredSection
 import org.openhealthtools.mdht.uml.cda.mu2consol.Mu2consolPackage;
 import org.openhealthtools.mdht.uml.cda.mu2consol.Mu2consolPlugin;
 import org.openhealthtools.mdht.uml.cda.mu2consol.PlanOfCareSection;
+import org.openhealthtools.mdht.uml.cda.mu2consol.ResultsSection;
 import org.openhealthtools.mdht.uml.cda.mu2consol.SocialHistorySection;
 
 import org.openhealthtools.mdht.uml.cda.mu2consol.util.Mu2consolValidator;
@@ -879,7 +879,7 @@ public class ClinicalOfficeVisitSummaryOperations extends
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_CLINICAL_OFFICE_VISIT_SUMMARY_RESULTS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::ResultsSection))";
+	protected static final String VALIDATE_CLINICAL_OFFICE_VISIT_SUMMARY_RESULTS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(mu2consol::ResultsSection))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateClinicalOfficeVisitSummaryResultsSection(ClinicalOfficeVisitSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Clinical Office Visit Summary Results Section</em>}' invariant operation.
@@ -2170,7 +2170,7 @@ public class ClinicalOfficeVisitSummaryOperations extends
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String GET_RESULTS_SECTION__EOCL_EXP = "self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::ResultsSection))->asSequence()->any(true).oclAsType(consol::ResultsSection)";
+	protected static final String GET_RESULTS_SECTION__EOCL_EXP = "self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(mu2consol::ResultsSection))->asSequence()->any(true).oclAsType(mu2consol::ResultsSection)";
 
 	/**
 	 * The cached OCL query for the '{@link #getResultsSection(ClinicalOfficeVisitSummary) <em>Get Results Section</em>}' query operation.
