@@ -1000,7 +1000,7 @@ public interface Mu2consolPackage extends EPackage {
      * @see org.openhealthtools.mdht.uml.cda.mu2consol.impl.Mu2consolPackageImpl#getInstructionsSection()
      * @generated
      */
-	int INSTRUCTIONS_SECTION = 19;
+	int INSTRUCTIONS_SECTION = 21;
 
 	/**
      * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.mu2consol.impl.AssessmentSectionImpl <em>Assessment Section</em>}' class.
@@ -1054,7 +1054,7 @@ public interface Mu2consolPackage extends EPackage {
      * @see org.openhealthtools.mdht.uml.cda.mu2consol.impl.Mu2consolPackageImpl#getPostprocedureDiagnosisSection()
      * @generated
      */
-	int POSTPROCEDURE_DIAGNOSIS_SECTION = 17;
+	int POSTPROCEDURE_DIAGNOSIS_SECTION = 19;
 
 	/**
      * The feature id for the '<em><b>Realm Code</b></em>' containment reference list.
@@ -1233,7 +1233,7 @@ public interface Mu2consolPackage extends EPackage {
      * @see org.openhealthtools.mdht.uml.cda.mu2consol.impl.Mu2consolPackageImpl#getMedicationsAdministeredSection()
      * @generated
      */
-	int MEDICATIONS_ADMINISTERED_SECTION = 20;
+	int MEDICATIONS_ADMINISTERED_SECTION = 22;
 
 	/**
      * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.mu2consol.impl.HospitalAdmissionMedicationsSectionEntriesOptionalImpl <em>Hospital Admission Medications Section Entries Optional</em>}' class.
@@ -2828,7 +2828,7 @@ public interface Mu2consolPackage extends EPackage {
      * @see org.openhealthtools.mdht.uml.cda.mu2consol.impl.Mu2consolPackageImpl#getFunctionalStatusSection()
      * @generated
      */
-    int FUNCTIONAL_STATUS_SECTION = 18;
+    int FUNCTIONAL_STATUS_SECTION = 20;
 
 	/**
      * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.mu2consol.impl.ClinicalOfficeVisitSummaryImpl <em>Clinical Office Visit Summary</em>}' class.
@@ -2838,7 +2838,7 @@ public interface Mu2consolPackage extends EPackage {
      * @see org.openhealthtools.mdht.uml.cda.mu2consol.impl.Mu2consolPackageImpl#getClinicalOfficeVisitSummary()
      * @generated
      */
-	int CLINICAL_OFFICE_VISIT_SUMMARY = 21;
+	int CLINICAL_OFFICE_VISIT_SUMMARY = 23;
 
 	/**
 	 * The meta object id for the '
@@ -2850,7 +2850,7 @@ public interface Mu2consolPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.mu2consol.impl.Mu2consolPackageImpl#getTransitionOfCareAmbulatorySummary()
 	 * @generated
 	 */
-	int TRANSITION_OF_CARE_AMBULATORY_SUMMARY = 22;
+	int TRANSITION_OF_CARE_AMBULATORY_SUMMARY = 24;
 
 	/**
      * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.mu2consol.impl.TransitionOfCareInpatientSummaryImpl <em>Transition Of Care Inpatient Summary</em>}' class.
@@ -2860,7 +2860,7 @@ public interface Mu2consolPackage extends EPackage {
      * @see org.openhealthtools.mdht.uml.cda.mu2consol.impl.Mu2consolPackageImpl#getTransitionOfCareInpatientSummary()
      * @generated
      */
-    int TRANSITION_OF_CARE_INPATIENT_SUMMARY = 23;
+    int TRANSITION_OF_CARE_INPATIENT_SUMMARY = 25;
 
 	/**
      * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.mu2consol.impl.ViewDownloadTransmitSummaryImpl <em>View Download Transmit Summary</em>}' class.
@@ -2870,7 +2870,7 @@ public interface Mu2consolPackage extends EPackage {
      * @see org.openhealthtools.mdht.uml.cda.mu2consol.impl.Mu2consolPackageImpl#getViewDownloadTransmitSummary()
      * @generated
      */
-    int VIEW_DOWNLOAD_TRANSMIT_SUMMARY = 24;
+    int VIEW_DOWNLOAD_TRANSMIT_SUMMARY = 26;
 
 	/**
      * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.mu2consol.impl.VDTInpatientSummaryImpl <em>VDT Inpatient Summary</em>}' class.
@@ -2880,7 +2880,7 @@ public interface Mu2consolPackage extends EPackage {
      * @see org.openhealthtools.mdht.uml.cda.mu2consol.impl.Mu2consolPackageImpl#getVDTInpatientSummary()
      * @generated
      */
-    int VDT_INPATIENT_SUMMARY = 25;
+    int VDT_INPATIENT_SUMMARY = 27;
 
 	/**
      * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.mu2consol.impl.VDTAmbulatorySummaryImpl <em>VDT Ambulatory Summary</em>}' class.
@@ -2890,7 +2890,7 @@ public interface Mu2consolPackage extends EPackage {
      * @see org.openhealthtools.mdht.uml.cda.mu2consol.impl.Mu2consolPackageImpl#getVDTAmbulatorySummary()
      * @generated
      */
-    int VDT_AMBULATORY_SUMMARY = 26;
+    int VDT_AMBULATORY_SUMMARY = 28;
 
 	/**
      * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.mu2consol.impl.ResultObservationImpl <em>Result Observation</em>}' class.
@@ -3551,6 +3551,440 @@ public interface Mu2consolPackage extends EPackage {
      * @ordered
      */
     int RESULT_OBSERVATION_FEATURE_COUNT = ConsolPackage.RESULT_OBSERVATION_FEATURE_COUNT + 0;
+
+	/**
+     * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.mu2consol.impl.ProceduresSectionImpl <em>Procedures Section</em>}' class.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @see org.openhealthtools.mdht.uml.cda.mu2consol.impl.ProceduresSectionImpl
+     * @see org.openhealthtools.mdht.uml.cda.mu2consol.impl.Mu2consolPackageImpl#getProceduresSection()
+     * @generated
+     */
+    int PROCEDURES_SECTION = 17;
+
+	/**
+     * The feature id for the '<em><b>Realm Code</b></em>' containment reference list.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     * @ordered
+     */
+    int PROCEDURES_SECTION__REALM_CODE = ConsolPackage.PROCEDURES_SECTION__REALM_CODE;
+
+	/**
+     * The feature id for the '<em><b>Type Id</b></em>' containment reference.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     * @ordered
+     */
+    int PROCEDURES_SECTION__TYPE_ID = ConsolPackage.PROCEDURES_SECTION__TYPE_ID;
+
+	/**
+     * The feature id for the '<em><b>Template Id</b></em>' containment reference list.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     * @ordered
+     */
+    int PROCEDURES_SECTION__TEMPLATE_ID = ConsolPackage.PROCEDURES_SECTION__TEMPLATE_ID;
+
+	/**
+     * The feature id for the '<em><b>Id</b></em>' containment reference.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     * @ordered
+     */
+    int PROCEDURES_SECTION__ID = ConsolPackage.PROCEDURES_SECTION__ID;
+
+	/**
+     * The feature id for the '<em><b>Code</b></em>' containment reference.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     * @ordered
+     */
+    int PROCEDURES_SECTION__CODE = ConsolPackage.PROCEDURES_SECTION__CODE;
+
+	/**
+     * The feature id for the '<em><b>Title</b></em>' containment reference.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     * @ordered
+     */
+    int PROCEDURES_SECTION__TITLE = ConsolPackage.PROCEDURES_SECTION__TITLE;
+
+	/**
+     * The feature id for the '<em><b>Text</b></em>' containment reference.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     * @ordered
+     */
+    int PROCEDURES_SECTION__TEXT = ConsolPackage.PROCEDURES_SECTION__TEXT;
+
+	/**
+     * The feature id for the '<em><b>Confidentiality Code</b></em>' containment reference.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     * @ordered
+     */
+    int PROCEDURES_SECTION__CONFIDENTIALITY_CODE = ConsolPackage.PROCEDURES_SECTION__CONFIDENTIALITY_CODE;
+
+	/**
+     * The feature id for the '<em><b>Language Code</b></em>' containment reference.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     * @ordered
+     */
+    int PROCEDURES_SECTION__LANGUAGE_CODE = ConsolPackage.PROCEDURES_SECTION__LANGUAGE_CODE;
+
+	/**
+     * The feature id for the '<em><b>Subject</b></em>' containment reference.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     * @ordered
+     */
+    int PROCEDURES_SECTION__SUBJECT = ConsolPackage.PROCEDURES_SECTION__SUBJECT;
+
+	/**
+     * The feature id for the '<em><b>Author</b></em>' containment reference list.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     * @ordered
+     */
+    int PROCEDURES_SECTION__AUTHOR = ConsolPackage.PROCEDURES_SECTION__AUTHOR;
+
+	/**
+     * The feature id for the '<em><b>Informant</b></em>' containment reference list.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     * @ordered
+     */
+    int PROCEDURES_SECTION__INFORMANT = ConsolPackage.PROCEDURES_SECTION__INFORMANT;
+
+	/**
+     * The feature id for the '<em><b>Entry</b></em>' containment reference list.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     * @ordered
+     */
+    int PROCEDURES_SECTION__ENTRY = ConsolPackage.PROCEDURES_SECTION__ENTRY;
+
+	/**
+     * The feature id for the '<em><b>Component</b></em>' containment reference list.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     * @ordered
+     */
+    int PROCEDURES_SECTION__COMPONENT = ConsolPackage.PROCEDURES_SECTION__COMPONENT;
+
+	/**
+     * The feature id for the '<em><b>Section Id</b></em>' attribute.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     * @ordered
+     */
+    int PROCEDURES_SECTION__SECTION_ID = ConsolPackage.PROCEDURES_SECTION__SECTION_ID;
+
+	/**
+     * The feature id for the '<em><b>Null Flavor</b></em>' attribute.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     * @ordered
+     */
+    int PROCEDURES_SECTION__NULL_FLAVOR = ConsolPackage.PROCEDURES_SECTION__NULL_FLAVOR;
+
+	/**
+     * The feature id for the '<em><b>Class Code</b></em>' attribute.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     * @ordered
+     */
+    int PROCEDURES_SECTION__CLASS_CODE = ConsolPackage.PROCEDURES_SECTION__CLASS_CODE;
+
+	/**
+     * The feature id for the '<em><b>Mood Code</b></em>' attribute.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     * @ordered
+     */
+    int PROCEDURES_SECTION__MOOD_CODE = ConsolPackage.PROCEDURES_SECTION__MOOD_CODE;
+
+	/**
+     * The number of structural features of the '<em>Procedures Section</em>' class.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     * @ordered
+     */
+    int PROCEDURES_SECTION_FEATURE_COUNT = ConsolPackage.PROCEDURES_SECTION_FEATURE_COUNT + 0;
+
+	/**
+     * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.mu2consol.impl.ProcedureActivityProcedureImpl <em>Procedure Activity Procedure</em>}' class.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @see org.openhealthtools.mdht.uml.cda.mu2consol.impl.ProcedureActivityProcedureImpl
+     * @see org.openhealthtools.mdht.uml.cda.mu2consol.impl.Mu2consolPackageImpl#getProcedureActivityProcedure()
+     * @generated
+     */
+    int PROCEDURE_ACTIVITY_PROCEDURE = 18;
+
+	/**
+     * The feature id for the '<em><b>Realm Code</b></em>' containment reference list.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     * @ordered
+     */
+    int PROCEDURE_ACTIVITY_PROCEDURE__REALM_CODE = ConsolPackage.PROCEDURE_ACTIVITY_PROCEDURE__REALM_CODE;
+
+	/**
+     * The feature id for the '<em><b>Type Id</b></em>' containment reference.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     * @ordered
+     */
+    int PROCEDURE_ACTIVITY_PROCEDURE__TYPE_ID = ConsolPackage.PROCEDURE_ACTIVITY_PROCEDURE__TYPE_ID;
+
+	/**
+     * The feature id for the '<em><b>Template Id</b></em>' containment reference list.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     * @ordered
+     */
+    int PROCEDURE_ACTIVITY_PROCEDURE__TEMPLATE_ID = ConsolPackage.PROCEDURE_ACTIVITY_PROCEDURE__TEMPLATE_ID;
+
+	/**
+     * The feature id for the '<em><b>Id</b></em>' containment reference list.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     * @ordered
+     */
+    int PROCEDURE_ACTIVITY_PROCEDURE__ID = ConsolPackage.PROCEDURE_ACTIVITY_PROCEDURE__ID;
+
+	/**
+     * The feature id for the '<em><b>Code</b></em>' containment reference.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     * @ordered
+     */
+    int PROCEDURE_ACTIVITY_PROCEDURE__CODE = ConsolPackage.PROCEDURE_ACTIVITY_PROCEDURE__CODE;
+
+	/**
+     * The feature id for the '<em><b>Text</b></em>' containment reference.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     * @ordered
+     */
+    int PROCEDURE_ACTIVITY_PROCEDURE__TEXT = ConsolPackage.PROCEDURE_ACTIVITY_PROCEDURE__TEXT;
+
+	/**
+     * The feature id for the '<em><b>Status Code</b></em>' containment reference.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     * @ordered
+     */
+    int PROCEDURE_ACTIVITY_PROCEDURE__STATUS_CODE = ConsolPackage.PROCEDURE_ACTIVITY_PROCEDURE__STATUS_CODE;
+
+	/**
+     * The feature id for the '<em><b>Effective Time</b></em>' containment reference.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     * @ordered
+     */
+    int PROCEDURE_ACTIVITY_PROCEDURE__EFFECTIVE_TIME = ConsolPackage.PROCEDURE_ACTIVITY_PROCEDURE__EFFECTIVE_TIME;
+
+	/**
+     * The feature id for the '<em><b>Priority Code</b></em>' containment reference.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     * @ordered
+     */
+    int PROCEDURE_ACTIVITY_PROCEDURE__PRIORITY_CODE = ConsolPackage.PROCEDURE_ACTIVITY_PROCEDURE__PRIORITY_CODE;
+
+	/**
+     * The feature id for the '<em><b>Language Code</b></em>' containment reference.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     * @ordered
+     */
+    int PROCEDURE_ACTIVITY_PROCEDURE__LANGUAGE_CODE = ConsolPackage.PROCEDURE_ACTIVITY_PROCEDURE__LANGUAGE_CODE;
+
+	/**
+     * The feature id for the '<em><b>Method Code</b></em>' containment reference list.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     * @ordered
+     */
+    int PROCEDURE_ACTIVITY_PROCEDURE__METHOD_CODE = ConsolPackage.PROCEDURE_ACTIVITY_PROCEDURE__METHOD_CODE;
+
+	/**
+     * The feature id for the '<em><b>Approach Site Code</b></em>' containment reference list.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     * @ordered
+     */
+    int PROCEDURE_ACTIVITY_PROCEDURE__APPROACH_SITE_CODE = ConsolPackage.PROCEDURE_ACTIVITY_PROCEDURE__APPROACH_SITE_CODE;
+
+	/**
+     * The feature id for the '<em><b>Target Site Code</b></em>' containment reference list.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     * @ordered
+     */
+    int PROCEDURE_ACTIVITY_PROCEDURE__TARGET_SITE_CODE = ConsolPackage.PROCEDURE_ACTIVITY_PROCEDURE__TARGET_SITE_CODE;
+
+	/**
+     * The feature id for the '<em><b>Subject</b></em>' containment reference.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     * @ordered
+     */
+    int PROCEDURE_ACTIVITY_PROCEDURE__SUBJECT = ConsolPackage.PROCEDURE_ACTIVITY_PROCEDURE__SUBJECT;
+
+	/**
+     * The feature id for the '<em><b>Specimen</b></em>' containment reference list.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     * @ordered
+     */
+    int PROCEDURE_ACTIVITY_PROCEDURE__SPECIMEN = ConsolPackage.PROCEDURE_ACTIVITY_PROCEDURE__SPECIMEN;
+
+	/**
+     * The feature id for the '<em><b>Performer</b></em>' containment reference list.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     * @ordered
+     */
+    int PROCEDURE_ACTIVITY_PROCEDURE__PERFORMER = ConsolPackage.PROCEDURE_ACTIVITY_PROCEDURE__PERFORMER;
+
+	/**
+     * The feature id for the '<em><b>Author</b></em>' containment reference list.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     * @ordered
+     */
+    int PROCEDURE_ACTIVITY_PROCEDURE__AUTHOR = ConsolPackage.PROCEDURE_ACTIVITY_PROCEDURE__AUTHOR;
+
+	/**
+     * The feature id for the '<em><b>Informant</b></em>' containment reference list.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     * @ordered
+     */
+    int PROCEDURE_ACTIVITY_PROCEDURE__INFORMANT = ConsolPackage.PROCEDURE_ACTIVITY_PROCEDURE__INFORMANT;
+
+	/**
+     * The feature id for the '<em><b>Participant</b></em>' containment reference list.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     * @ordered
+     */
+    int PROCEDURE_ACTIVITY_PROCEDURE__PARTICIPANT = ConsolPackage.PROCEDURE_ACTIVITY_PROCEDURE__PARTICIPANT;
+
+	/**
+     * The feature id for the '<em><b>Entry Relationship</b></em>' containment reference list.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     * @ordered
+     */
+    int PROCEDURE_ACTIVITY_PROCEDURE__ENTRY_RELATIONSHIP = ConsolPackage.PROCEDURE_ACTIVITY_PROCEDURE__ENTRY_RELATIONSHIP;
+
+	/**
+     * The feature id for the '<em><b>Reference</b></em>' containment reference list.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     * @ordered
+     */
+    int PROCEDURE_ACTIVITY_PROCEDURE__REFERENCE = ConsolPackage.PROCEDURE_ACTIVITY_PROCEDURE__REFERENCE;
+
+	/**
+     * The feature id for the '<em><b>Precondition</b></em>' containment reference list.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     * @ordered
+     */
+    int PROCEDURE_ACTIVITY_PROCEDURE__PRECONDITION = ConsolPackage.PROCEDURE_ACTIVITY_PROCEDURE__PRECONDITION;
+
+	/**
+     * The feature id for the '<em><b>Null Flavor</b></em>' attribute.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     * @ordered
+     */
+    int PROCEDURE_ACTIVITY_PROCEDURE__NULL_FLAVOR = ConsolPackage.PROCEDURE_ACTIVITY_PROCEDURE__NULL_FLAVOR;
+
+	/**
+     * The feature id for the '<em><b>Class Code</b></em>' attribute.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     * @ordered
+     */
+    int PROCEDURE_ACTIVITY_PROCEDURE__CLASS_CODE = ConsolPackage.PROCEDURE_ACTIVITY_PROCEDURE__CLASS_CODE;
+
+	/**
+     * The feature id for the '<em><b>Mood Code</b></em>' attribute.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     * @ordered
+     */
+    int PROCEDURE_ACTIVITY_PROCEDURE__MOOD_CODE = ConsolPackage.PROCEDURE_ACTIVITY_PROCEDURE__MOOD_CODE;
+
+	/**
+     * The feature id for the '<em><b>Negation Ind</b></em>' attribute.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     * @ordered
+     */
+    int PROCEDURE_ACTIVITY_PROCEDURE__NEGATION_IND = ConsolPackage.PROCEDURE_ACTIVITY_PROCEDURE__NEGATION_IND;
+
+	/**
+     * The number of structural features of the '<em>Procedure Activity Procedure</em>' class.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     * @ordered
+     */
+    int PROCEDURE_ACTIVITY_PROCEDURE_FEATURE_COUNT = ConsolPackage.PROCEDURE_ACTIVITY_PROCEDURE_FEATURE_COUNT + 0;
 
 	/**
      * The feature id for the '<em><b>Realm Code</b></em>' containment reference list.
@@ -5968,6 +6402,26 @@ public interface Mu2consolPackage extends EPackage {
     EClass getResultObservation();
 
 	/**
+     * Returns the meta object for class '{@link org.openhealthtools.mdht.uml.cda.mu2consol.ProceduresSection <em>Procedures Section</em>}'.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @return the meta object for class '<em>Procedures Section</em>'.
+     * @see org.openhealthtools.mdht.uml.cda.mu2consol.ProceduresSection
+     * @generated
+     */
+    EClass getProceduresSection();
+
+	/**
+     * Returns the meta object for class '{@link org.openhealthtools.mdht.uml.cda.mu2consol.ProcedureActivityProcedure <em>Procedure Activity Procedure</em>}'.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @return the meta object for class '<em>Procedure Activity Procedure</em>'.
+     * @see org.openhealthtools.mdht.uml.cda.mu2consol.ProcedureActivityProcedure
+     * @generated
+     */
+    EClass getProcedureActivityProcedure();
+
+	/**
      * Returns the meta object for class '{@link org.openhealthtools.mdht.uml.cda.mu2consol.ResultOrganizer <em>Result Organizer</em>}'.
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
@@ -6266,6 +6720,26 @@ public interface Mu2consolPackage extends EPackage {
          * @generated
          */
         EClass RESULT_OBSERVATION = eINSTANCE.getResultObservation();
+
+		/**
+         * The meta object literal for the '{@link org.openhealthtools.mdht.uml.cda.mu2consol.impl.ProceduresSectionImpl <em>Procedures Section</em>}' class.
+         * <!-- begin-user-doc -->
+         * <!-- end-user-doc -->
+         * @see org.openhealthtools.mdht.uml.cda.mu2consol.impl.ProceduresSectionImpl
+         * @see org.openhealthtools.mdht.uml.cda.mu2consol.impl.Mu2consolPackageImpl#getProceduresSection()
+         * @generated
+         */
+        EClass PROCEDURES_SECTION = eINSTANCE.getProceduresSection();
+
+		/**
+         * The meta object literal for the '{@link org.openhealthtools.mdht.uml.cda.mu2consol.impl.ProcedureActivityProcedureImpl <em>Procedure Activity Procedure</em>}' class.
+         * <!-- begin-user-doc -->
+         * <!-- end-user-doc -->
+         * @see org.openhealthtools.mdht.uml.cda.mu2consol.impl.ProcedureActivityProcedureImpl
+         * @see org.openhealthtools.mdht.uml.cda.mu2consol.impl.Mu2consolPackageImpl#getProcedureActivityProcedure()
+         * @generated
+         */
+        EClass PROCEDURE_ACTIVITY_PROCEDURE = eINSTANCE.getProcedureActivityProcedure();
 
 		/**
          * The meta object literal for the '{@link org.openhealthtools.mdht.uml.cda.mu2consol.impl.ResultOrganizerImpl <em>Result Organizer</em>}' class.

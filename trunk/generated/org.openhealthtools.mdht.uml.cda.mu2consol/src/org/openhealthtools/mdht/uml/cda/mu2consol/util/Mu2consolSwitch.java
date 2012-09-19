@@ -17,8 +17,10 @@ import org.openhealthtools.mdht.uml.cda.ClinicalStatement;
 import org.openhealthtools.mdht.uml.cda.Encounter;
 import org.openhealthtools.mdht.uml.cda.Observation;
 import org.openhealthtools.mdht.uml.cda.Organizer;
+import org.openhealthtools.mdht.uml.cda.Procedure;
 import org.openhealthtools.mdht.uml.cda.Section;
 import org.openhealthtools.mdht.uml.cda.consol.EncountersSectionEntriesOptional;
+import org.openhealthtools.mdht.uml.cda.consol.ProceduresSectionEntriesOptional;
 import org.openhealthtools.mdht.uml.cda.consol.ResultsSectionEntriesOptional;
 import org.openhealthtools.mdht.uml.cda.consol.TobaccoUse;
 import org.openhealthtools.mdht.uml.cda.consol.AssessmentSection;
@@ -271,6 +273,28 @@ public class Mu2consolSwitch<T> {
 				if (result == null) result = caseClinicalStatement(resultObservation);
 				if (result == null) result = caseAct(resultObservation);
 				if (result == null) result = caseInfrastructureRoot(resultObservation);
+				if (result == null) result = defaultCase(theEObject);
+				return result;
+			}
+			case Mu2consolPackage.PROCEDURES_SECTION: {
+				ProceduresSection proceduresSection = (ProceduresSection)theEObject;
+				T result = caseProceduresSection(proceduresSection);
+				if (result == null) result = caseConsol_ProceduresSection(proceduresSection);
+				if (result == null) result = caseProceduresSectionEntriesOptional(proceduresSection);
+				if (result == null) result = caseSection(proceduresSection);
+				if (result == null) result = caseAct(proceduresSection);
+				if (result == null) result = caseInfrastructureRoot(proceduresSection);
+				if (result == null) result = defaultCase(theEObject);
+				return result;
+			}
+			case Mu2consolPackage.PROCEDURE_ACTIVITY_PROCEDURE: {
+				ProcedureActivityProcedure procedureActivityProcedure = (ProcedureActivityProcedure)theEObject;
+				T result = caseProcedureActivityProcedure(procedureActivityProcedure);
+				if (result == null) result = caseConsol_ProcedureActivityProcedure(procedureActivityProcedure);
+				if (result == null) result = caseProcedure(procedureActivityProcedure);
+				if (result == null) result = caseClinicalStatement(procedureActivityProcedure);
+				if (result == null) result = caseAct(procedureActivityProcedure);
+				if (result == null) result = caseInfrastructureRoot(procedureActivityProcedure);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
@@ -589,6 +613,36 @@ public class Mu2consolSwitch<T> {
 	 * @generated
 	 */
 	public T caseResultObservation(ResultObservation object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Procedures Section</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Procedures Section</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseProceduresSection(ProceduresSection object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Procedure Activity Procedure</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Procedure Activity Procedure</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseProcedureActivityProcedure(ProcedureActivityProcedure object) {
 		return null;
 	}
 
@@ -1070,6 +1124,66 @@ public class Mu2consolSwitch<T> {
 	 * @generated
 	 */
 	public T caseConsol_ResultObservation(org.openhealthtools.mdht.uml.cda.consol.ResultObservation object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Procedures Section Entries Optional</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Procedures Section Entries Optional</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseProceduresSectionEntriesOptional(ProceduresSectionEntriesOptional object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Procedures Section</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Procedures Section</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseConsol_ProceduresSection(org.openhealthtools.mdht.uml.cda.consol.ProceduresSection object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Procedure</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Procedure</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseProcedure(Procedure object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Procedure Activity Procedure</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Procedure Activity Procedure</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseConsol_ProcedureActivityProcedure(org.openhealthtools.mdht.uml.cda.consol.ProcedureActivityProcedure object) {
 		return null;
 	}
 

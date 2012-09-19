@@ -19,8 +19,10 @@ import org.openhealthtools.mdht.uml.cda.ClinicalStatement;
 import org.openhealthtools.mdht.uml.cda.Encounter;
 import org.openhealthtools.mdht.uml.cda.Observation;
 import org.openhealthtools.mdht.uml.cda.Organizer;
+import org.openhealthtools.mdht.uml.cda.Procedure;
 import org.openhealthtools.mdht.uml.cda.Section;
 import org.openhealthtools.mdht.uml.cda.consol.EncountersSectionEntriesOptional;
+import org.openhealthtools.mdht.uml.cda.consol.ProceduresSectionEntriesOptional;
 import org.openhealthtools.mdht.uml.cda.consol.ResultsSectionEntriesOptional;
 import org.openhealthtools.mdht.uml.cda.consol.TobaccoUse;
 import org.openhealthtools.mdht.uml.cda.consol.AssessmentSection;
@@ -149,6 +151,14 @@ public class Mu2consolAdapterFactory extends AdapterFactoryImpl {
 			@Override
 			public Adapter caseResultObservation(ResultObservation object) {
 				return createResultObservationAdapter();
+			}
+			@Override
+			public Adapter caseProceduresSection(ProceduresSection object) {
+				return createProceduresSectionAdapter();
+			}
+			@Override
+			public Adapter caseProcedureActivityProcedure(ProcedureActivityProcedure object) {
+				return createProcedureActivityProcedureAdapter();
 			}
 			@Override
 			public Adapter casePostprocedureDiagnosisSection(PostprocedureDiagnosisSection object) {
@@ -293,6 +303,22 @@ public class Mu2consolAdapterFactory extends AdapterFactoryImpl {
 			@Override
 			public Adapter caseConsol_ResultObservation(org.openhealthtools.mdht.uml.cda.consol.ResultObservation object) {
 				return createConsol_ResultObservationAdapter();
+			}
+			@Override
+			public Adapter caseProceduresSectionEntriesOptional(ProceduresSectionEntriesOptional object) {
+				return createProceduresSectionEntriesOptionalAdapter();
+			}
+			@Override
+			public Adapter caseConsol_ProceduresSection(org.openhealthtools.mdht.uml.cda.consol.ProceduresSection object) {
+				return createConsol_ProceduresSectionAdapter();
+			}
+			@Override
+			public Adapter caseProcedure(Procedure object) {
+				return createProcedureAdapter();
+			}
+			@Override
+			public Adapter caseConsol_ProcedureActivityProcedure(org.openhealthtools.mdht.uml.cda.consol.ProcedureActivityProcedure object) {
+				return createConsol_ProcedureActivityProcedureAdapter();
 			}
 			@Override
 			public Adapter caseConsol_PostprocedureDiagnosisSection(org.openhealthtools.mdht.uml.cda.consol.PostprocedureDiagnosisSection object) {
@@ -522,6 +548,34 @@ public class Mu2consolAdapterFactory extends AdapterFactoryImpl {
 	 * @generated
 	 */
 	public Adapter createResultObservationAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.mu2consol.ProceduresSection <em>Procedures Section</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see org.openhealthtools.mdht.uml.cda.mu2consol.ProceduresSection
+	 * @generated
+	 */
+	public Adapter createProceduresSectionAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.mu2consol.ProcedureActivityProcedure <em>Procedure Activity Procedure</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see org.openhealthtools.mdht.uml.cda.mu2consol.ProcedureActivityProcedure
+	 * @generated
+	 */
+	public Adapter createProcedureActivityProcedureAdapter() {
 		return null;
 	}
 
@@ -974,6 +1028,62 @@ public class Mu2consolAdapterFactory extends AdapterFactoryImpl {
 	 * @generated
 	 */
 	public Adapter createConsol_ResultObservationAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.consol.ProceduresSectionEntriesOptional <em>Procedures Section Entries Optional</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see org.openhealthtools.mdht.uml.cda.consol.ProceduresSectionEntriesOptional
+	 * @generated
+	 */
+	public Adapter createProceduresSectionEntriesOptionalAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.consol.ProceduresSection <em>Procedures Section</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see org.openhealthtools.mdht.uml.cda.consol.ProceduresSection
+	 * @generated
+	 */
+	public Adapter createConsol_ProceduresSectionAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.Procedure <em>Procedure</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see org.openhealthtools.mdht.uml.cda.Procedure
+	 * @generated
+	 */
+	public Adapter createProcedureAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.consol.ProcedureActivityProcedure <em>Procedure Activity Procedure</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see org.openhealthtools.mdht.uml.cda.consol.ProcedureActivityProcedure
+	 * @generated
+	 */
+	public Adapter createConsol_ProcedureActivityProcedureAdapter() {
 		return null;
 	}
 

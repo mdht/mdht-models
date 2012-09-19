@@ -148,6 +148,24 @@ public interface Mu2consolFactory extends EFactory {
 	ResultObservation createResultObservation();
 
 	/**
+	 * Returns a new object of class '<em>Procedures Section</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Procedures Section</em>'.
+	 * @generated
+	 */
+	ProceduresSection createProceduresSection();
+
+	/**
+	 * Returns a new object of class '<em>Procedure Activity Procedure</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Procedure Activity Procedure</em>'.
+	 * @generated
+	 */
+	ProcedureActivityProcedure createProcedureActivityProcedure();
+
+	/**
 	 * Returns a new object of class '<em>Result Organizer</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
