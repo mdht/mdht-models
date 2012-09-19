@@ -690,8 +690,7 @@
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_L6gxUPhmEeGPm7sA61ixGw" value="1"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_L6gxUfhmEeGPm7sA61ixGw" value="1"/>
       </ownedAttribute>
-      <ownedAttribute xmi:id="_cdo40O1XEeGT-eFu7Ghgjw" name="resultsSection" association="_cdpf4e1XEeGT-eFu7Ghgjw">
-        <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-results.uml#_2Js7AxSVEeGGzu7fmW9pXw"/>
+      <ownedAttribute xmi:id="_cdo40O1XEeGT-eFu7Ghgjw" name="resultsSection" type="_R5ZkQAJvEeKIhvHOhwsFvA" association="_cdpf4e1XEeGT-eFu7Ghgjw">
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_dw9h4O1XEeGT-eFu7Ghgjw" value="1"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_dw9h4e1XEeGT-eFu7Ghgjw" value="1"/>
       </ownedAttribute>
@@ -912,8 +911,7 @@ MU2 170.314(b)(7) Export Summary  - For Inpatient Care</body>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_SeKM4PhYEeGPm7sA61ixGw" value="1"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_SeKz8PhYEeGPm7sA61ixGw" value="1"/>
       </ownedAttribute>
-      <ownedAttribute xmi:id="_Vkj9IPhYEeGPm7sA61ixGw" name="resultsSection" association="_VkkkMfhYEeGPm7sA61ixGw">
-        <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-results.uml#_2Js7AxSVEeGGzu7fmW9pXw"/>
+      <ownedAttribute xmi:id="_Vkj9IPhYEeGPm7sA61ixGw" name="resultsSection" type="_R5ZkQAJvEeKIhvHOhwsFvA" association="_VkkkMfhYEeGPm7sA61ixGw">
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_W1NFoPhYEeGPm7sA61ixGw" value="1"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_W1NFofhYEeGPm7sA61ixGw" value="1"/>
       </ownedAttribute>
