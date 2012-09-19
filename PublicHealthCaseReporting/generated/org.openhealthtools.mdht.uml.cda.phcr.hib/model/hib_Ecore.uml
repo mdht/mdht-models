@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:CDA="http://www.openhealthtools.org/mdht/schemas/cda/4" xmlns:Ecore="http://www.eclipse.org/uml2/schemas/Ecore/5" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML" xsi:schemaLocation="http://www.eclipse.org/uml2/schemas/Ecore/5 pathmap://UML_PROFILES/Ecore.profile.uml#_z1OFcHjqEdy8S4Cr8Rc_NA">
+  <uml:Package xmi:id="_NS3yoeCYEeGLd5Icz0Pibg" name="hib">
+    <packageImport xmi:id="_NYsGoOCYEeGLd5Icz0Pibg">
+      <importedPackage href="../../org.openhealthtools.mdht.uml.cda.phcr/model/phcr_Ecore.uml#_6MwukMgnEeCI5ZpfyBisiQ"/>
+    </packageImport>
+    <packageImport xmi:id="_NYsGoeCYEeGLd5Icz0Pibg">
+      <importedPackage href="../../org.openhealthtools.mdht.uml.cda.ccd/model/ccd_Ecore.uml#_qQyD8jxVEd6JwqSGecoePg"/>
+    </packageImport>
+    <packageImport xmi:id="_NYsGouCYEeGLd5Icz0Pibg">
+      <importedPackage href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_ii81kjxVEd6JwqSGecoePg"/>
+    </packageImport>
+    <packageImport xmi:id="_NY1QkOCYEeGLd5Icz0Pibg">
+      <importedPackage href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_XgMSwzxVEd6JwqSGecoePg"/>
+    </packageImport>
+    <packageImport xmi:id="_NY1QkeCYEeGLd5Icz0Pibg">
+      <importedPackage href="../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__yVbeUDcEd6xYZuu1VKCVw"/>
+    </packageImport>
+    <packageImport xmi:id="_NY1QkuCYEeGLd5Icz0Pibg">
+      <importedPackage href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_KnCD4CFjEd-3s7f6mWX-3A"/>
+    </packageImport>
+    <packageImport xmi:id="_NY1Qk-CYEeGLd5Icz0Pibg">
+      <importedPackage href="../../org.openhealthtools.mdht.uml.cda.phcr.hib.model/model/hib-vocab.uml#_NTUecOCYEeGLd5Icz0Pibg"/>
+    </packageImport>
+    <packagedElement xmi:type="uml:Class" xmi:id="_NXo9weCYEeGLd5Icz0Pibg" name="HIBCaseReport">
+      <ownedRule xmi:id="_ovaaUwHNEeKhqM1LVJhYIg" name="PublicHealthCaseReportTemplateId" constrainedElement="_NXo9weCYEeGLd5Icz0Pibg">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_ovaaVAHNEeKhqM1LVJhYIg">
+          <language>OCL</language>
+          <body>self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.15.1.14')</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_ovgg8AHNEeKhqM1LVJhYIg" name="HIBCaseReportTitle" constrainedElement="_NXo9weCYEeGLd5Icz0Pibg">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_ovgg8QHNEeKhqM1LVJhYIg">
+          <language>OCL</language>
+          <body>(self.title.oclIsUndefined() or self.title.isNullFlavorUndefined()) implies (self.title.getText() = 'Public Health Case Report - Haemophilus Influenzae Type B')</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_ov47cAHNEeKhqM1LVJhYIg" name="HIBCaseReportHibPhcrClinicalInformationSection " constrainedElement="_NXo9weCYEeGLd5Icz0Pibg">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_ov47cQHNEeKhqM1LVJhYIg">
+          <language>OCL</language>
+          <body>self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hib::HibPhcrClinicalInformationSection ))</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_ov47dwHNEeKhqM1LVJhYIg" name="HIBCaseReportHibPhcrRelevantDxTestsSection" constrainedElement="_NXo9weCYEeGLd5Icz0Pibg">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_ov47eAHNEeKhqM1LVJhYIg">
+          <language>OCL</language>
+          <body>self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hib::HibPhcrRelevantDxTestsSection))</body>
+        </specification>
+      </ownedRule>
+      <generalization xmi:id="_NXo9w-CYEeGLd5Icz0Pibg">
+        <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.phcr/model/phcr_Ecore.uml#_6PmAIcgnEeCI5ZpfyBisiQ"/>
+      </generalization>
+      <ownedOperation xmi:id="_ov47cgHNEeKhqM1LVJhYIg" name="getHibPhcrClinicalInformationSection " isQuery="true" bodyCondition="_ov47dQHNEeKhqM1LVJhYIg">
+        <ownedRule xmi:id="_ov47dQHNEeKhqM1LVJhYIg" name="body" constrainedElement="_ov47cgHNEeKhqM1LVJhYIg">
+          <specification xmi:type="uml:OpaqueExpression" xmi:id="_ov47dgHNEeKhqM1LVJhYIg">
+            <language>OCL</language>
+            <body>self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hib::HibPhcrClinicalInformationSection ))->asSequence()->first().oclAsType(hib::HibPhcrClinicalInformationSection )</body>
+          </specification>
+        </ownedRule>
+        <ownedParameter xmi:id="_ov47cwHNEeKhqM1LVJhYIg" type="_Vjqq4OuXEeGku7aGn3pxJA" direction="return">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ov47dAHNEeKhqM1LVJhYIg" value="1"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_ov47eQHNEeKhqM1LVJhYIg" name="getHibPhcrRelevantDxTestsSection" isQuery="true" bodyCondition="_ov47fAHNEeKhqM1LVJhYIg">
+        <ownedRule xmi:id="_ov47fAHNEeKhqM1LVJhYIg" name="body" constrainedElement="_ov47eQHNEeKhqM1LVJhYIg">
+          <specification xmi:type="uml:OpaqueExpression" xmi:id="_ov47fQHNEeKhqM1LVJhYIg">
+            <language>OCL</language>
+            <body>self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hib::HibPhcrRelevantDxTestsSection))->asSequence()->first().oclAsType(hib::HibPhcrRelevantDxTestsSection)</body>
+          </specification>
+        </ownedRule>
+        <ownedParameter xmi:id="_ov47egHNEeKhqM1LVJhYIg" type="_dTZ2YOuaEeGku7aGn3pxJA" direction="return">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ov47ewHNEeKhqM1LVJhYIg" value="1"/>
+        </ownedParameter>
+      </ownedOperation>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_Vjqq4OuXEeGku7aGn3pxJA" name="HibPhcrClinicalInformationSection ">
+      <ownedRule xmi:id="_ovgg8wHNEeKhqM1LVJhYIg" name="PhcrClinicalInformationSectionTemplateId" constrainedElement="_Vjqq4OuXEeGku7aGn3pxJA">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_ovgg9AHNEeKhqM1LVJhYIg">
+          <language>OCL</language>
+          <body>self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.15.2.57')</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_ov47fgHNEeKhqM1LVJhYIg" name="HibPhcrClinicalInformationSection HibCaseObservation" constrainedElement="_Vjqq4OuXEeGku7aGn3pxJA">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_ov_CEAHNEeKhqM1LVJhYIg">
+          <language>OCL</language>
+          <body>self.entry->one(entry : cda::Entry | not entry.observation.oclIsUndefined() and entry.observation.oclIsKindOf(hib::HibCaseObservation) and entry.typeCode = vocab::x_ActRelationshipEntry::DRIV)</body>
+        </specification>
+      </ownedRule>
+      <generalization xmi:id="_VjrR8OuXEeGku7aGn3pxJA">
+        <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.phcr/model/phcr_Ecore.uml#_84uJEMqZEeCRBIG_Gkv9FQ"/>
+      </generalization>
+      <ownedOperation xmi:id="_ov_CEQHNEeKhqM1LVJhYIg" name="getHibCaseObservation" isQuery="true" bodyCondition="_ov_CFAHNEeKhqM1LVJhYIg">
+        <ownedRule xmi:id="_ov_CFAHNEeKhqM1LVJhYIg" name="body" constrainedElement="_ov_CEQHNEeKhqM1LVJhYIg">
+          <specification xmi:type="uml:OpaqueExpression" xmi:id="_ov_CFQHNEeKhqM1LVJhYIg">
+            <language>OCL</language>
+            <body>self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(hib::HibCaseObservation))->asSequence()->first().oclAsType(hib::HibCaseObservation)</body>
+          </specification>
+        </ownedRule>
+        <ownedParameter xmi:id="_ov_CEgHNEeKhqM1LVJhYIg" type="_qTA1gOucEeGku7aGn3pxJA" direction="return">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ov_CEwHNEeKhqM1LVJhYIg" value="1"/>
+        </ownedParameter>
+      </ownedOperation>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_dTZ2YOuaEeGku7aGn3pxJA" name="HibPhcrRelevantDxTestsSection">
+      <ownedRule xmi:id="_ovmnkQHNEeKhqM1LVJhYIg" name="ResultsSectionTemplateId" constrainedElement="_dTZ2YOuaEeGku7aGn3pxJA">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_ovmnkgHNEeKhqM1LVJhYIg">
+          <language>OCL</language>
+          <body>self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.15.2.58')</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_ov_CHQHNEeKhqM1LVJhYIg" name="HibPhcrRelevantDxTestsSectionHibResultObservation" constrainedElement="_dTZ2YOuaEeGku7aGn3pxJA">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_ov_CHgHNEeKhqM1LVJhYIg">
+          <language>OCL</language>
+          <body>self.entry->exists(entry : cda::Entry | not entry.observation.oclIsUndefined() and entry.observation.oclIsKindOf(hib::HibResultObservation) and entry.typeCode = vocab::x_ActRelationshipEntry::DRIV)</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_owFItQHNEeKhqM1LVJhYIg" name="HibPhcrRelevantDxTestsSectionHibResultOrganizer" constrainedElement="_dTZ2YOuaEeGku7aGn3pxJA">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_owFItgHNEeKhqM1LVJhYIg">
+          <language>OCL</language>
+          <body>self.entry->exists(entry : cda::Entry | not entry.organizer.oclIsUndefined() and entry.organizer.oclIsKindOf(hib::HibResultOrganizer) and entry.typeCode = vocab::x_ActRelationshipEntry::DRIV)</body>
+        </specification>
+      </ownedRule>
+      <generalization xmi:id="_dTZ2YeuaEeGku7aGn3pxJA">
+        <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.phcr/model/phcr_Ecore.uml#_2dxgkNM5EeCbJdgmSYxI0g"/>
+      </generalization>
+      <ownedOperation xmi:id="_owFIsAHNEeKhqM1LVJhYIg" name="getHibResultObservations" isQuery="true" bodyCondition="_owFIswHNEeKhqM1LVJhYIg">
+        <ownedRule xmi:id="_owFIswHNEeKhqM1LVJhYIg" name="body" constrainedElement="_owFIsAHNEeKhqM1LVJhYIg">
+          <specification xmi:type="uml:OpaqueExpression" xmi:id="_owFItAHNEeKhqM1LVJhYIg">
+            <language>OCL</language>
+            <body>self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(hib::HibResultObservation)).oclAsType(hib::HibResultObservation)</body>
+          </specification>
+        </ownedRule>
+        <ownedParameter xmi:id="_owFIsQHNEeKhqM1LVJhYIg" type="_TNyJ4OudEeGku7aGn3pxJA" direction="return">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_owFIsgHNEeKhqM1LVJhYIg" value="*"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_owFItwHNEeKhqM1LVJhYIg" name="getHibResultOrganizers" isQuery="true" bodyCondition="_owFIugHNEeKhqM1LVJhYIg">
+        <ownedRule xmi:id="_owFIugHNEeKhqM1LVJhYIg" name="body" constrainedElement="_owFItwHNEeKhqM1LVJhYIg">
+          <specification xmi:type="uml:OpaqueExpression" xmi:id="_owFIuwHNEeKhqM1LVJhYIg">
+            <language>OCL</language>
+            <body>self.getOrganizers()->select(organizer : cda::Organizer | not organizer.oclIsUndefined() and organizer.oclIsKindOf(hib::HibResultOrganizer)).oclAsType(hib::HibResultOrganizer)</body>
+          </specification>
+        </ownedRule>
+        <ownedParameter xmi:id="_owFIuAHNEeKhqM1LVJhYIg" type="_LyOXQOudEeGku7aGn3pxJA" direction="return">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_owFIuQHNEeKhqM1LVJhYIg" value="*"/>
+        </ownedParameter>
+      </ownedOperation>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_qTA1gOucEeGku7aGn3pxJA" name="HibCaseObservation">
+      <ownedRule xmi:id="_ovmnlgHNEeKhqM1LVJhYIg" name="ProblemObservationTemplateId" constrainedElement="_qTA1gOucEeGku7aGn3pxJA">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_ovmnlwHNEeKhqM1LVJhYIg">
+          <language>OCL</language>
+          <body>self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.15.3.134')</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_ov_CFgHNEeKhqM1LVJhYIg" name="HibCaseObservationHibSignsAndSymptoms" constrainedElement="_qTA1gOucEeGku7aGn3pxJA">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_ov_CFwHNEeKhqM1LVJhYIg">
+          <language>OCL</language>
+          <body>self.entryRelationship->exists(entryRelationship : cda::EntryRelationship | not entryRelationship.observation.oclIsUndefined() and entryRelationship.observation.oclIsKindOf(hib::HibSignsAndSymptoms) and entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::MFST)</body>
+        </specification>
+      </ownedRule>
+      <generalization xmi:id="_qTBckOucEeGku7aGn3pxJA">
+        <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.phcr/model/phcr_Ecore.uml#_p8bDQNTCEeC18pmrrt-Mbg"/>
+      </generalization>
+      <ownedOperation xmi:id="_ov_CGAHNEeKhqM1LVJhYIg" name="getHibSignsAndSymptomss" isQuery="true" bodyCondition="_ov_CGwHNEeKhqM1LVJhYIg">
+        <ownedRule xmi:id="_ov_CGwHNEeKhqM1LVJhYIg" name="body" constrainedElement="_ov_CGAHNEeKhqM1LVJhYIg">
+          <specification xmi:type="uml:OpaqueExpression" xmi:id="_ov_CHAHNEeKhqM1LVJhYIg">
+            <language>OCL</language>
+            <body>self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(hib::HibSignsAndSymptoms)).oclAsType(hib::HibSignsAndSymptoms)</body>
+          </specification>
+        </ownedRule>
+        <ownedParameter xmi:id="_ov_CGQHNEeKhqM1LVJhYIg" type="_AgKNIOudEeGku7aGn3pxJA" direction="return">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ov_CGgHNEeKhqM1LVJhYIg" value="*"/>
+        </ownedParameter>
+      </ownedOperation>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_AgKNIOudEeGku7aGn3pxJA" name="HibSignsAndSymptoms">
+      <ownedRule xmi:id="_ovsuMgHNEeKhqM1LVJhYIg" name="SignsAndSymptomsObservationTemplateId" constrainedElement="_AgKNIOudEeGku7aGn3pxJA">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_ovsuMwHNEeKhqM1LVJhYIg">
+          <language>OCL</language>
+          <body>self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.15.3.135')</body>
+        </specification>
+      </ownedRule>
+      <generalization xmi:id="_AgK0MOudEeGku7aGn3pxJA">
+        <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.phcr/model/phcr_Ecore.uml#__cLgwNQPEeC4C5jYVS2kfQ"/>
+      </generalization>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_LyOXQOudEeGku7aGn3pxJA" name="HibResultOrganizer">
+      <ownedRule xmi:id="_ovy00QHNEeKhqM1LVJhYIg" name="ResultOrganizerTemplateId" constrainedElement="_LyOXQOudEeGku7aGn3pxJA">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_ovy00gHNEeKhqM1LVJhYIg">
+          <language>OCL</language>
+          <body>self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.15.3.136')</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_owFIvAHNEeKhqM1LVJhYIg" name="HibResultOrganizerHibResultObservation" constrainedElement="_LyOXQOudEeGku7aGn3pxJA">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_owFIvQHNEeKhqM1LVJhYIg">
+          <language>OCL</language>
+          <body>self.component->one(component : cda::Component4 | not component.observation.oclIsUndefined() and component.observation.oclIsKindOf(hib::HibResultObservation))</body>
+        </specification>
+      </ownedRule>
+      <generalization xmi:id="_LyOXQeudEeGku7aGn3pxJA">
+        <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.phcr/model/phcr_Ecore.uml#_0r8IYPNrEeCOm7Y48UO5Tg"/>
+      </generalization>
+      <ownedOperation xmi:id="_owLPUAHNEeKhqM1LVJhYIg" name="getHibResultObservation" isQuery="true" bodyCondition="_owLPUwHNEeKhqM1LVJhYIg">
+        <ownedRule xmi:id="_owLPUwHNEeKhqM1LVJhYIg" name="body" constrainedElement="_owLPUAHNEeKhqM1LVJhYIg">
+          <specification xmi:type="uml:OpaqueExpression" xmi:id="_owLPVAHNEeKhqM1LVJhYIg">
+            <language>OCL</language>
+            <body>self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(hib::HibResultObservation))->asSequence()->first().oclAsType(hib::HibResultObservation)</body>
+          </specification>
+        </ownedRule>
+        <ownedParameter xmi:id="_owLPUQHNEeKhqM1LVJhYIg" type="_TNyJ4OudEeGku7aGn3pxJA" direction="return">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_owLPUgHNEeKhqM1LVJhYIg" value="1"/>
+        </ownedParameter>
+      </ownedOperation>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_TNyJ4OudEeGku7aGn3pxJA" name="HibResultObservation">
+      <ownedRule xmi:id="_ovy01gHNEeKhqM1LVJhYIg" name="ResultObservationTemplateId" constrainedElement="_TNyJ4OudEeGku7aGn3pxJA">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_ovy01wHNEeKhqM1LVJhYIg">
+          <language>OCL</language>
+          <body>self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.15.3.137')</body>
+        </specification>
+      </ownedRule>
+      <generalization xmi:id="_TNyJ4eudEeGku7aGn3pxJA">
+        <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.phcr/model/phcr_Ecore.uml#__3pL0PNrEeCOm7Y48UO5Tg"/>
+      </generalization>
+    </packagedElement>
+    <profileApplication xmi:id="_NS3youCYEeGLd5Icz0Pibg">
+      <eAnnotations xmi:id="_NS3yo-CYEeGLd5Icz0Pibg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="pathmap://UML_PROFILES/Standard.profile.uml#_yzU58YinEdqtvbnfB2L_5w"/>
+      </eAnnotations>
+      <appliedProfile href="pathmap://UML_PROFILES/Standard.profile.uml#_0"/>
+    </profileApplication>
+    <profileApplication xmi:id="_NS3ypOCYEeGLd5Icz0Pibg">
+      <eAnnotations xmi:id="_NS3ypeCYEeGLd5Icz0Pibg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.openhealthtools.org/mdht/schemas/cda/4#/"/>
+      </eAnnotations>
+      <appliedProfile href="pathmap://CDA_PROFILES/CDA.profile.uml#_cxOJEIEVEd6H8o-hO3-B4Q"/>
+    </profileApplication>
+    <profileApplication xmi:id="_ovUTsAHNEeKhqM1LVJhYIg">
+      <eAnnotations xmi:id="_ovaaUAHNEeKhqM1LVJhYIg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="pathmap://UML_PROFILES/Ecore.profile.uml#_z1OFcHjqEdy8S4Cr8Rc_NA"/>
+      </eAnnotations>
+      <appliedProfile href="pathmap://UML_PROFILES/Ecore.profile.uml#_0"/>
+    </profileApplication>
+  </uml:Package>
+  <CDA:CodegenSupport xmi:id="_NXo9wOCYEeGLd5Icz0Pibg" basePackage="org.openhealthtools.mdht.uml.cda" nsPrefix="hib" nsURI="http://www.openhealthtools.org/mdht/uml/cda/phcr/hib" packageName="hib" prefix="hib" base_Namespace="_NS3yoeCYEeGLd5Icz0Pibg"/>
+  <CDA:CDATemplate xmi:id="_NXo9wuCYEeGLd5Icz0Pibg" base_Class="_NXo9weCYEeGLd5Icz0Pibg" templateId="2.16.840.1.113883.10.20.15.1.14" assigningAuthorityName=""/>
+  <CDA:CodeSystemConstraint xmi:id="_2ZFhE-DIEeGLd5Icz0Pibg" code="29762-2" displayName="Social History">
+    <reference href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+    <ruleId>CONF:1894</ruleId>
+  </CDA:CodeSystemConstraint>
+  <CDA:PropertyValidation xmi:id="_2aIC4ODIEeGLd5Icz0Pibg">
+    <ruleId>CONF:1894</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:AssociationValidation xmi:id="_5nxDkODIEeGLd5Icz0Pibg" severity="WARNING"/>
+  <CDA:CDATemplate xmi:id="_JPO9cOuaEeGku7aGn3pxJA" base_Class="_Vjqq4OuXEeGku7aGn3pxJA" templateId="2.16.840.1.113883.10.20.15.2.57"/>
+  <CDA:CDATemplate xmi:id="_gmsrwOudEeGku7aGn3pxJA" base_Class="_dTZ2YOuaEeGku7aGn3pxJA" templateId="2.16.840.1.113883.10.20.15.2.58"/>
+  <CDA:CDATemplate xmi:id="_p10GsOudEeGku7aGn3pxJA" base_Class="_qTA1gOucEeGku7aGn3pxJA" templateId="2.16.840.1.113883.10.20.15.3.134"/>
+  <CDA:CDATemplate xmi:id="_xuQCkOudEeGku7aGn3pxJA" base_Class="_AgKNIOudEeGku7aGn3pxJA" templateId="2.16.840.1.113883.10.20.15.3.135"/>
+  <CDA:CDATemplate xmi:id="_3f4qAOudEeGku7aGn3pxJA" base_Class="_TNyJ4OudEeGku7aGn3pxJA" templateId="2.16.840.1.113883.10.20.15.3.137"/>
+  <CDA:CDATemplate xmi:id="_9CglEOudEeGku7aGn3pxJA" base_Class="_LyOXQOudEeGku7aGn3pxJA" templateId="2.16.840.1.113883.10.20.15.3.136"/>
+  <Ecore:EPackage xmi:id="_ovaaUQHNEeKhqM1LVJhYIg" base_Package="_NS3yoeCYEeGLd5Icz0Pibg" packageName="hib" nsPrefix="hib" nsURI="http://www.openhealthtools.org/mdht/uml/cda/phcr/hib" basePackage="org.openhealthtools.mdht.uml.cda" prefix="hib"/>
+  <CDA:ConformsTo xmi:id="_ovaaUgHNEeKhqM1LVJhYIg" base_Generalization="_NXo9w-CYEeGLd5Icz0Pibg"/>
+  <Ecore:EClass xmi:id="_ovaaVQHNEeKhqM1LVJhYIg" base_Class="_NXo9weCYEeGLd5Icz0Pibg">
+    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation title.mixed='Public Health Case Report - Haemophilus Influenzae Type B' templateId.root='2.16.840.1.113883.10.20.15.1.14' constraints.validation.error='HIBCaseReportTemplateId HIBCaseReportTitle HIBCaseReportHibPhcrClinicalInformationSection' constraints.validation.warning='HIBCaseReportHibPhcrRelevantDxTestsSection'</annotation>
+  </Ecore:EClass>
+  <CDA:ConformsTo xmi:id="_ovgg8gHNEeKhqM1LVJhYIg" base_Generalization="_VjrR8OuXEeGku7aGn3pxJA"/>
+  <Ecore:EClass xmi:id="_ovgg9QHNEeKhqM1LVJhYIg" base_Class="_Vjqq4OuXEeGku7aGn3pxJA">
+    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation templateId.root='2.16.840.1.113883.10.20.15.2.57' constraints.validation.error='HibPhcrClinicalInformationSection TemplateId HibPhcrClinicalInformationSection HibCaseObservation'</annotation>
+  </Ecore:EClass>
+  <CDA:ConformsTo xmi:id="_ovgg9gHNEeKhqM1LVJhYIg" base_Generalization="_dTZ2YeuaEeGku7aGn3pxJA"/>
+  <Ecore:EClass xmi:id="_ovmnkwHNEeKhqM1LVJhYIg" base_Class="_dTZ2YOuaEeGku7aGn3pxJA">
+    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation templateId.root='2.16.840.1.113883.10.20.15.2.58' constraints.validation.error='HibPhcrRelevantDxTestsSectionTemplateId' constraints.validation.warning='HibPhcrRelevantDxTestsSectionHibResultObservation' constraints.validation.info='HibPhcrRelevantDxTestsSectionHibResultOrganizer'</annotation>
+  </Ecore:EClass>
+  <CDA:ConformsTo xmi:id="_ovmnlAHNEeKhqM1LVJhYIg" base_Generalization="_qTBckOucEeGku7aGn3pxJA"/>
+  <Ecore:EClass xmi:id="_ovsuMAHNEeKhqM1LVJhYIg" base_Class="_qTA1gOucEeGku7aGn3pxJA">
+    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation templateId.root='2.16.840.1.113883.10.20.15.3.134' constraints.validation.error='HibCaseObservationTemplateId' constraints.validation.warning='HibCaseObservationHibSignsAndSymptoms'</annotation>
+  </Ecore:EClass>
+  <CDA:ConformsTo xmi:id="_ovsuMQHNEeKhqM1LVJhYIg" base_Generalization="_AgK0MOudEeGku7aGn3pxJA"/>
+  <Ecore:EClass xmi:id="_ovsuNAHNEeKhqM1LVJhYIg" base_Class="_AgKNIOudEeGku7aGn3pxJA">
+    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation templateId.root='2.16.840.1.113883.10.20.15.3.135' constraints.validation.error='HibSignsAndSymptomsTemplateId'</annotation>
+  </Ecore:EClass>
+  <CDA:ConformsTo xmi:id="_ovsuNQHNEeKhqM1LVJhYIg" base_Generalization="_LyOXQeudEeGku7aGn3pxJA"/>
+  <Ecore:EClass xmi:id="_ovy00wHNEeKhqM1LVJhYIg" base_Class="_LyOXQOudEeGku7aGn3pxJA">
+    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation templateId.root='2.16.840.1.113883.10.20.15.3.136' constraints.validation.error='HibResultOrganizerTemplateId HibResultOrganizerHibResultObservation'</annotation>
+  </Ecore:EClass>
+  <CDA:ConformsTo xmi:id="_ovy01AHNEeKhqM1LVJhYIg" base_Generalization="_TNyJ4eudEeGku7aGn3pxJA"/>
+  <Ecore:EClass xmi:id="_ovy02AHNEeKhqM1LVJhYIg" base_Class="_TNyJ4OudEeGku7aGn3pxJA">
+    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation templateId.root='2.16.840.1.113883.10.20.15.3.137' constraints.validation.error='HibResultObservationTemplateId'</annotation>
+  </Ecore:EClass>
+</xmi:XMI>

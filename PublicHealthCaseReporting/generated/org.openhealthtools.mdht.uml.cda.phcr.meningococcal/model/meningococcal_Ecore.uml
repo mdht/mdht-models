@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:CDA="http://www.openhealthtools.org/mdht/schemas/cda/4" xmlns:Ecore="http://www.eclipse.org/uml2/schemas/Ecore/5" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML" xsi:schemaLocation="http://www.eclipse.org/uml2/schemas/Ecore/5 pathmap://UML_PROFILES/Ecore.profile.uml#_z1OFcHjqEdy8S4Cr8Rc_NA">
+  <uml:Package xmi:id="_wIq80ODREeG8NZ3bKbYxZw" name="meningococcal">
+    <packageImport xmi:id="_wOVf8ODREeG8NZ3bKbYxZw">
+      <importedPackage href="../../org.openhealthtools.mdht.uml.cda.phcr/model/phcr_Ecore.uml#_6MwukMgnEeCI5ZpfyBisiQ"/>
+    </packageImport>
+    <packageImport xmi:id="_wOVf8eDREeG8NZ3bKbYxZw">
+      <importedPackage href="../../org.openhealthtools.mdht.uml.cda.ccd/model/ccd_Ecore.uml#_qQyD8jxVEd6JwqSGecoePg"/>
+    </packageImport>
+    <packageImport xmi:id="_wOVf8uDREeG8NZ3bKbYxZw">
+      <importedPackage href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_ii81kjxVEd6JwqSGecoePg"/>
+    </packageImport>
+    <packageImport xmi:id="_wOVf8-DREeG8NZ3bKbYxZw">
+      <importedPackage href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_XgMSwzxVEd6JwqSGecoePg"/>
+    </packageImport>
+    <packageImport xmi:id="_wOVf9ODREeG8NZ3bKbYxZw">
+      <importedPackage href="../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__yVbeUDcEd6xYZuu1VKCVw"/>
+    </packageImport>
+    <packageImport xmi:id="_wOVf9eDREeG8NZ3bKbYxZw">
+      <importedPackage href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_KnCD4CFjEd-3s7f6mWX-3A"/>
+    </packageImport>
+    <packageImport xmi:id="_wOVf9uDREeG8NZ3bKbYxZw">
+      <importedPackage href="../../org.openhealthtools.mdht.uml.cda.phcr.meningococcal.model/model/meningococcal-vocab.uml#_wI0t0ODREeG8NZ3bKbYxZw"/>
+    </packageImport>
+    <packagedElement xmi:type="uml:Class" xmi:id="_wNJNIeDREeG8NZ3bKbYxZw" name="MeningococcalCaseReport">
+      <ownedRule xmi:id="_W8UXtAHDEeKd8ar76RTW2A" name="PublicHealthCaseReportTemplateId" constrainedElement="_wNJNIeDREeG8NZ3bKbYxZw">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_W8UXtQHDEeKd8ar76RTW2A">
+          <language>OCL</language>
+          <body>self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.15.1.15')</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_W8aeUAHDEeKd8ar76RTW2A" name="MeningococcalCaseReportTitle" constrainedElement="_wNJNIeDREeG8NZ3bKbYxZw">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_W8aeUQHDEeKd8ar76RTW2A">
+          <language>OCL</language>
+          <body>(self.title.oclIsUndefined() or self.title.isNullFlavorUndefined()) implies (not self.title.oclIsUndefined() and self.title.getText() = 'Public Health Case Report - Meningococcal')</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_W8unYQHDEeKd8ar76RTW2A" name="MeningococcalCaseReportMeningococcalPhcrClinicalInformationSection" constrainedElement="_wNJNIeDREeG8NZ3bKbYxZw">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_W8unYgHDEeKd8ar76RTW2A">
+          <language>OCL</language>
+          <body>self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(meningococcal::MeningococcalPhcrClinicalInformationSection))</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_W8unaAHDEeKd8ar76RTW2A" name="MeningococcalCaseReportMeningococcalPhcrRelevantDxTestsSection" constrainedElement="_wNJNIeDREeG8NZ3bKbYxZw">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_W8unaQHDEeKd8ar76RTW2A">
+          <language>OCL</language>
+          <body>self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(meningococcal::MeningococcalPhcrRelevantDxTestsSection))</body>
+        </specification>
+      </ownedRule>
+      <generalization xmi:id="_wNJNI-DREeG8NZ3bKbYxZw">
+        <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.phcr/model/phcr_Ecore.uml#_6PmAIcgnEeCI5ZpfyBisiQ"/>
+      </generalization>
+      <ownedOperation xmi:id="_W8unYwHDEeKd8ar76RTW2A" name="getMeningococcalPhcrClinicalInformationSection" isQuery="true" bodyCondition="_W8unZgHDEeKd8ar76RTW2A">
+        <ownedRule xmi:id="_W8unZgHDEeKd8ar76RTW2A" name="body" constrainedElement="_W8unYwHDEeKd8ar76RTW2A">
+          <specification xmi:type="uml:OpaqueExpression" xmi:id="_W8unZwHDEeKd8ar76RTW2A">
+            <language>OCL</language>
+            <body>self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(meningococcal::MeningococcalPhcrClinicalInformationSection))->asSequence()->first().oclAsType(meningococcal::MeningococcalPhcrClinicalInformationSection)</body>
+          </specification>
+        </ownedRule>
+        <ownedParameter xmi:id="_W8unZAHDEeKd8ar76RTW2A" type="_9sYNMOu4EeGku7aGn3pxJA" direction="return">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_W8unZQHDEeKd8ar76RTW2A" value="1"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_W8unagHDEeKd8ar76RTW2A" name="getMeningococcalPhcrRelevantDxTestsSection" isQuery="true" bodyCondition="_W80uAgHDEeKd8ar76RTW2A">
+        <ownedRule xmi:id="_W80uAgHDEeKd8ar76RTW2A" name="body" constrainedElement="_W8unagHDEeKd8ar76RTW2A">
+          <specification xmi:type="uml:OpaqueExpression" xmi:id="_W80uAwHDEeKd8ar76RTW2A">
+            <language>OCL</language>
+            <body>self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(meningococcal::MeningococcalPhcrRelevantDxTestsSection))->asSequence()->first().oclAsType(meningococcal::MeningococcalPhcrRelevantDxTestsSection)</body>
+          </specification>
+        </ownedRule>
+        <ownedParameter xmi:id="_W80uAAHDEeKd8ar76RTW2A" type="_J9QwAOu5EeGku7aGn3pxJA" direction="return">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_W80uAQHDEeKd8ar76RTW2A" value="1"/>
+        </ownedParameter>
+      </ownedOperation>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_9sYNMOu4EeGku7aGn3pxJA" name="MeningococcalPhcrClinicalInformationSection">
+      <ownedRule xmi:id="_W8aeUwHDEeKd8ar76RTW2A" name="PhcrClinicalInformationSectionTemplateId" constrainedElement="_9sYNMOu4EeGku7aGn3pxJA">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_W8aeVAHDEeKd8ar76RTW2A">
+          <language>OCL</language>
+          <body>self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.15.2.59')</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_W80uBAHDEeKd8ar76RTW2A" name="MeningococcalPhcrClinicalInformationSectionMeningococcalCaseObservation" constrainedElement="_9sYNMOu4EeGku7aGn3pxJA">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_W80uBQHDEeKd8ar76RTW2A">
+          <language>OCL</language>
+          <body>self.entry->one(entry : cda::Entry | not entry.observation.oclIsUndefined() and entry.observation.oclIsKindOf(meningococcal::MeningococcalCaseObservation) and entry.typeCode = vocab::x_ActRelationshipEntry::DRIV)</body>
+        </specification>
+      </ownedRule>
+      <generalization xmi:id="_9sYNMeu4EeGku7aGn3pxJA">
+        <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.phcr/model/phcr_Ecore.uml#_84uJEMqZEeCRBIG_Gkv9FQ"/>
+      </generalization>
+      <ownedOperation xmi:id="_W80uBgHDEeKd8ar76RTW2A" name="getMeningococcalCaseObservation" isQuery="true" bodyCondition="_W80uCQHDEeKd8ar76RTW2A">
+        <ownedRule xmi:id="_W80uCQHDEeKd8ar76RTW2A" name="body" constrainedElement="_W80uBgHDEeKd8ar76RTW2A">
+          <specification xmi:type="uml:OpaqueExpression" xmi:id="_W80uCgHDEeKd8ar76RTW2A">
+            <language>OCL</language>
+            <body>self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(meningococcal::MeningococcalCaseObservation))->asSequence()->first().oclAsType(meningococcal::MeningococcalCaseObservation)</body>
+          </specification>
+        </ownedRule>
+        <ownedParameter xmi:id="_W80uBwHDEeKd8ar76RTW2A" type="_SWEOAOu5EeGku7aGn3pxJA" direction="return">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_W80uCAHDEeKd8ar76RTW2A" value="1"/>
+        </ownedParameter>
+      </ownedOperation>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_J9QwAOu5EeGku7aGn3pxJA" name="MeningococcalPhcrRelevantDxTestsSection">
+      <ownedRule xmi:id="_W8aeWAHDEeKd8ar76RTW2A" name="ResultsSectionTemplateId" constrainedElement="_J9QwAOu5EeGku7aGn3pxJA">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_W8aeWQHDEeKd8ar76RTW2A">
+          <language>OCL</language>
+          <body>self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.15.2.60')</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_W80uEgHDEeKd8ar76RTW2A" name="MeningococcalPhcrRelevantDxTestsSectionMeningococcalResultObservation" constrainedElement="_J9QwAOu5EeGku7aGn3pxJA">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_W80uEwHDEeKd8ar76RTW2A">
+          <language>OCL</language>
+          <body>self.entry->exists(entry : cda::Entry | not entry.observation.oclIsUndefined() and entry.observation.oclIsKindOf(meningococcal::MeningococcalResultObservation) and entry.typeCode = vocab::x_ActRelationshipEntry::DRIV)</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_W860pQHDEeKd8ar76RTW2A" name="MeningococcalPhcrRelevantDxTestsSectionMeningococcalResultOrganizer" constrainedElement="_J9QwAOu5EeGku7aGn3pxJA">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_W860pgHDEeKd8ar76RTW2A">
+          <language>OCL</language>
+          <body>self.entry->exists(entry : cda::Entry | not entry.organizer.oclIsUndefined() and entry.organizer.oclIsKindOf(meningococcal::MeningococcalResultOrganizer) and entry.typeCode = vocab::x_ActRelationshipEntry::DRIV)</body>
+        </specification>
+      </ownedRule>
+      <generalization xmi:id="_J9QwAeu5EeGku7aGn3pxJA">
+        <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.phcr/model/phcr_Ecore.uml#_2dxgkNM5EeCbJdgmSYxI0g"/>
+      </generalization>
+      <ownedOperation xmi:id="_W860oAHDEeKd8ar76RTW2A" name="getMeningococcalResultObservations" isQuery="true" bodyCondition="_W860owHDEeKd8ar76RTW2A">
+        <ownedRule xmi:id="_W860owHDEeKd8ar76RTW2A" name="body" constrainedElement="_W860oAHDEeKd8ar76RTW2A">
+          <specification xmi:type="uml:OpaqueExpression" xmi:id="_W860pAHDEeKd8ar76RTW2A">
+            <language>OCL</language>
+            <body>self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(meningococcal::MeningococcalResultObservation)).oclAsType(meningococcal::MeningococcalResultObservation)</body>
+          </specification>
+        </ownedRule>
+        <ownedParameter xmi:id="_W860oQHDEeKd8ar76RTW2A" type="_soW2EOu5EeGku7aGn3pxJA" direction="return">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_W860ogHDEeKd8ar76RTW2A" value="*"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_W860pwHDEeKd8ar76RTW2A" name="getMeningococcalResultOrganizers" isQuery="true" bodyCondition="_W860qgHDEeKd8ar76RTW2A">
+        <ownedRule xmi:id="_W860qgHDEeKd8ar76RTW2A" name="body" constrainedElement="_W860pwHDEeKd8ar76RTW2A">
+          <specification xmi:type="uml:OpaqueExpression" xmi:id="_W860qwHDEeKd8ar76RTW2A">
+            <language>OCL</language>
+            <body>self.getOrganizers()->select(organizer : cda::Organizer | not organizer.oclIsUndefined() and organizer.oclIsKindOf(meningococcal::MeningococcalResultOrganizer)).oclAsType(meningococcal::MeningococcalResultOrganizer)</body>
+          </specification>
+        </ownedRule>
+        <ownedParameter xmi:id="_W860qAHDEeKd8ar76RTW2A" type="_10mjMOu5EeGku7aGn3pxJA" direction="return">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_W860qQHDEeKd8ar76RTW2A" value="*"/>
+        </ownedParameter>
+      </ownedOperation>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_SWEOAOu5EeGku7aGn3pxJA" name="MeningococcalCaseObservation">
+      <ownedRule xmi:id="_W8gk8gHDEeKd8ar76RTW2A" name="ProblemObservationTemplateId" constrainedElement="_SWEOAOu5EeGku7aGn3pxJA">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_W8gk8wHDEeKd8ar76RTW2A">
+          <language>OCL</language>
+          <body>self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.15.3.138')</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_W80uCwHDEeKd8ar76RTW2A" name="MeningococcalCaseObservationMeningococcalSignsAndSymptomsObservation" constrainedElement="_SWEOAOu5EeGku7aGn3pxJA">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_W80uDAHDEeKd8ar76RTW2A">
+          <language>OCL</language>
+          <body>self.entryRelationship->exists(entryRelationship : cda::EntryRelationship | not entryRelationship.observation.oclIsUndefined() and entryRelationship.observation.oclIsKindOf(meningococcal::MeningococcalSignsAndSymptomsObservation) and entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::MFST)</body>
+        </specification>
+      </ownedRule>
+      <generalization xmi:id="_SWEOAeu5EeGku7aGn3pxJA">
+        <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.phcr/model/phcr_Ecore.uml#_p8bDQNTCEeC18pmrrt-Mbg"/>
+      </generalization>
+      <ownedOperation xmi:id="_W80uDQHDEeKd8ar76RTW2A" name="getMeningococcalSignsAndSymptomsObservations" isQuery="true" bodyCondition="_W80uEAHDEeKd8ar76RTW2A">
+        <ownedRule xmi:id="_W80uEAHDEeKd8ar76RTW2A" name="body" constrainedElement="_W80uDQHDEeKd8ar76RTW2A">
+          <specification xmi:type="uml:OpaqueExpression" xmi:id="_W80uEQHDEeKd8ar76RTW2A">
+            <language>OCL</language>
+            <body>self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(meningococcal::MeningococcalSignsAndSymptomsObservation)).oclAsType(meningococcal::MeningococcalSignsAndSymptomsObservation)</body>
+          </specification>
+        </ownedRule>
+        <ownedParameter xmi:id="_W80uDgHDEeKd8ar76RTW2A" type="_k3HuYOu5EeGku7aGn3pxJA" direction="return">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_W80uDwHDEeKd8ar76RTW2A" value="*"/>
+        </ownedParameter>
+      </ownedOperation>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_k3HuYOu5EeGku7aGn3pxJA" name="MeningococcalSignsAndSymptomsObservation">
+      <ownedRule xmi:id="_W8gk9gHDEeKd8ar76RTW2A" name="SignsAndSymptomsObservationTemplateId" constrainedElement="_k3HuYOu5EeGku7aGn3pxJA">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_W8gk9wHDEeKd8ar76RTW2A">
+          <language>OCL</language>
+          <body>self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.15.3.139')</body>
+        </specification>
+      </ownedRule>
+      <generalization xmi:id="_k3HuYeu5EeGku7aGn3pxJA">
+        <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.phcr/model/phcr_Ecore.uml#__cLgwNQPEeC4C5jYVS2kfQ"/>
+      </generalization>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_soW2EOu5EeGku7aGn3pxJA" name="MeningococcalResultObservation">
+      <ownedRule xmi:id="_W8mrkgHDEeKd8ar76RTW2A" name="ResultObservationTemplateId" constrainedElement="_soW2EOu5EeGku7aGn3pxJA">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_W8mrkwHDEeKd8ar76RTW2A">
+          <language>OCL</language>
+          <body>self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.15.3.141')</body>
+        </specification>
+      </ownedRule>
+      <generalization xmi:id="_soW2Eeu5EeGku7aGn3pxJA">
+        <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.phcr/model/phcr_Ecore.uml#__3pL0PNrEeCOm7Y48UO5Tg"/>
+      </generalization>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_10mjMOu5EeGku7aGn3pxJA" name="MeningococcalResultOrganizer">
+      <ownedRule xmi:id="_W8syMgHDEeKd8ar76RTW2A" name="ResultOrganizerTemplateId" constrainedElement="_10mjMOu5EeGku7aGn3pxJA">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_W8syMwHDEeKd8ar76RTW2A">
+          <language>OCL</language>
+          <body>self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.15.3.140')</body>
+        </specification>
+      </ownedRule>
+      <generalization xmi:id="_10nKQOu5EeGku7aGn3pxJA">
+        <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.phcr/model/phcr_Ecore.uml#_0r8IYPNrEeCOm7Y48UO5Tg"/>
+      </generalization>
+      <ownedOperation xmi:id="_W860rAHDEeKd8ar76RTW2A" name="getMeningococcalResultObservation" isQuery="true" bodyCondition="_W860rwHDEeKd8ar76RTW2A">
+        <ownedRule xmi:id="_W860rwHDEeKd8ar76RTW2A" name="body" constrainedElement="_W860rAHDEeKd8ar76RTW2A">
+          <specification xmi:type="uml:OpaqueExpression" xmi:id="_W860sAHDEeKd8ar76RTW2A">
+            <language>OCL</language>
+            <body>self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(meningococcal::MeningococcalResultObservation))->asSequence()->first().oclAsType(meningococcal::MeningococcalResultObservation)</body>
+          </specification>
+        </ownedRule>
+        <ownedParameter xmi:id="_W860rQHDEeKd8ar76RTW2A" type="_soW2EOu5EeGku7aGn3pxJA" direction="return">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_W860rgHDEeKd8ar76RTW2A" value="1"/>
+        </ownedParameter>
+      </ownedOperation>
+    </packagedElement>
+    <profileApplication xmi:id="_wIq80eDREeG8NZ3bKbYxZw">
+      <eAnnotations xmi:id="_wIq80uDREeG8NZ3bKbYxZw" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="pathmap://UML_PROFILES/Standard.profile.uml#_yzU58YinEdqtvbnfB2L_5w"/>
+      </eAnnotations>
+      <appliedProfile href="pathmap://UML_PROFILES/Standard.profile.uml#_0"/>
+    </profileApplication>
+    <profileApplication xmi:id="_wIq80-DREeG8NZ3bKbYxZw">
+      <eAnnotations xmi:id="_wIq81ODREeG8NZ3bKbYxZw" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.openhealthtools.org/mdht/schemas/cda/4#/"/>
+      </eAnnotations>
+      <appliedProfile href="pathmap://CDA_PROFILES/CDA.profile.uml#_cxOJEIEVEd6H8o-hO3-B4Q"/>
+    </profileApplication>
+    <profileApplication xmi:id="_W8UXsAHDEeKd8ar76RTW2A">
+      <eAnnotations xmi:id="_W8UXsQHDEeKd8ar76RTW2A" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="pathmap://UML_PROFILES/Ecore.profile.uml#_z1OFcHjqEdy8S4Cr8Rc_NA"/>
+      </eAnnotations>
+      <appliedProfile href="pathmap://UML_PROFILES/Ecore.profile.uml#_0"/>
+    </profileApplication>
+  </uml:Package>
+  <CDA:CodegenSupport xmi:id="_wNJNIODREeG8NZ3bKbYxZw" basePackage="org.openhealthtools.mdht.uml.cda.phcr" nsPrefix="meningococcal" nsURI="http://www.openhealthtools.org/mdht/uml/cda/phcr/meningococcal" packageName="meningococcal" prefix="meningococcal" base_Namespace="_wIq80ODREeG8NZ3bKbYxZw"/>
+  <CDA:CDATemplate xmi:id="_wNJNIuDREeG8NZ3bKbYxZw" base_Class="_wNJNIeDREeG8NZ3bKbYxZw" templateId="2.16.840.1.113883.10.20.15.1.15" assigningAuthorityName=""/>
+  <CDA:CodeSystemConstraint xmi:id="_Rb2kk-FdEeG8NZ3bKbYxZw" code="29762-2" displayName="Social History">
+    <reference href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+    <ruleId>CONF:1894</ruleId>
+  </CDA:CodeSystemConstraint>
+  <CDA:PropertyValidation xmi:id="_RcAVkOFdEeG8NZ3bKbYxZw">
+    <ruleId>CONF:1894</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:AssociationValidation xmi:id="_T1CCcOFdEeG8NZ3bKbYxZw" severity="WARNING"/>
+  <CDA:CDATemplate xmi:id="_N9-n4OvDEeGku7aGn3pxJA" base_Class="_SWEOAOu5EeGku7aGn3pxJA" templateId="2.16.840.1.113883.10.20.15.3.138"/>
+  <CDA:CDATemplate xmi:id="_SW6-EOvDEeGku7aGn3pxJA" base_Class="_9sYNMOu4EeGku7aGn3pxJA" templateId="2.16.840.1.113883.10.20.15.2.59"/>
+  <CDA:CDATemplate xmi:id="_VyCaEOvDEeGku7aGn3pxJA" base_Class="_J9QwAOu5EeGku7aGn3pxJA" templateId="2.16.840.1.113883.10.20.15.2.60"/>
+  <CDA:CDATemplate xmi:id="_ai9LYOvDEeGku7aGn3pxJA" base_Class="_soW2EOu5EeGku7aGn3pxJA" templateId="2.16.840.1.113883.10.20.15.3.141"/>
+  <CDA:CDATemplate xmi:id="_du2foOvDEeGku7aGn3pxJA" base_Class="_10mjMOu5EeGku7aGn3pxJA" templateId="2.16.840.1.113883.10.20.15.3.140"/>
+  <CDA:CDATemplate xmi:id="_hDNzYOvDEeGku7aGn3pxJA" base_Class="_k3HuYOu5EeGku7aGn3pxJA" templateId="2.16.840.1.113883.10.20.15.3.139"/>
+  <Ecore:EPackage xmi:id="_W8UXsgHDEeKd8ar76RTW2A" base_Package="_wIq80ODREeG8NZ3bKbYxZw" packageName="meningococcal" nsPrefix="meningococcal" nsURI="http://www.openhealthtools.org/mdht/uml/cda/phcr/meningococcal" basePackage="org.openhealthtools.mdht.uml.cda.phcr" prefix="meningococcal"/>
+  <CDA:ConformsTo xmi:id="_W8UXswHDEeKd8ar76RTW2A" base_Generalization="_wNJNI-DREeG8NZ3bKbYxZw"/>
+  <Ecore:EClass xmi:id="_W8UXtgHDEeKd8ar76RTW2A" base_Class="_wNJNIeDREeG8NZ3bKbYxZw">
+    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation title.mixed='Public Health Case Report - Meningococcal' templateId.root='2.16.840.1.113883.10.20.15.1.15' constraints.validation.error='MeningococcalCaseReportTemplateId MeningococcalCaseReportTitle MeningococcalCaseReportMeningococcalPhcrClinicalInformationSection' constraints.validation.warning='MeningococcalCaseReportMeningococcalPhcrRelevantDxTestsSection'</annotation>
+  </Ecore:EClass>
+  <CDA:ConformsTo xmi:id="_W8aeUgHDEeKd8ar76RTW2A" base_Generalization="_9sYNMeu4EeGku7aGn3pxJA"/>
+  <Ecore:EClass xmi:id="_W8aeVQHDEeKd8ar76RTW2A" base_Class="_9sYNMOu4EeGku7aGn3pxJA">
+    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation templateId.root='2.16.840.1.113883.10.20.15.2.59' constraints.validation.error='MeningococcalPhcrClinicalInformationSectionTemplateId MeningococcalPhcrClinicalInformationSectionMeningococcalCaseObservation'</annotation>
+  </Ecore:EClass>
+  <CDA:ConformsTo xmi:id="_W8aeVgHDEeKd8ar76RTW2A" base_Generalization="_J9QwAeu5EeGku7aGn3pxJA"/>
+  <Ecore:EClass xmi:id="_W8aeWgHDEeKd8ar76RTW2A" base_Class="_J9QwAOu5EeGku7aGn3pxJA">
+    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation templateId.root='2.16.840.1.113883.10.20.15.2.60' constraints.validation.error='MeningococcalPhcrRelevantDxTestsSectionTemplateId' constraints.validation.warning='MeningococcalPhcrRelevantDxTestsSectionMeningococcalResultObservation' constraints.validation.info='MeningococcalPhcrRelevantDxTestsSectionMeningococcalResultOrganizer'</annotation>
+  </Ecore:EClass>
+  <CDA:ConformsTo xmi:id="_W8gk8AHDEeKd8ar76RTW2A" base_Generalization="_SWEOAeu5EeGku7aGn3pxJA"/>
+  <Ecore:EClass xmi:id="_W8gk9AHDEeKd8ar76RTW2A" base_Class="_SWEOAOu5EeGku7aGn3pxJA">
+    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation templateId.root='2.16.840.1.113883.10.20.15.3.138' constraints.validation.error='MeningococcalCaseObservationTemplateId' constraints.validation.warning='MeningococcalCaseObservationMeningococcalSignsAndSymptomsObservation'</annotation>
+  </Ecore:EClass>
+  <CDA:ConformsTo xmi:id="_W8gk9QHDEeKd8ar76RTW2A" base_Generalization="_k3HuYeu5EeGku7aGn3pxJA"/>
+  <Ecore:EClass xmi:id="_W8gk-AHDEeKd8ar76RTW2A" base_Class="_k3HuYOu5EeGku7aGn3pxJA">
+    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation templateId.root='2.16.840.1.113883.10.20.15.3.139' constraints.validation.error='MeningococcalSignsAndSymptomsObservationTemplateId'</annotation>
+  </Ecore:EClass>
+  <CDA:ConformsTo xmi:id="_W8mrkAHDEeKd8ar76RTW2A" base_Generalization="_soW2Eeu5EeGku7aGn3pxJA"/>
+  <Ecore:EClass xmi:id="_W8mrlAHDEeKd8ar76RTW2A" base_Class="_soW2EOu5EeGku7aGn3pxJA">
+    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation templateId.root='2.16.840.1.113883.10.20.15.3.141' constraints.validation.error='MeningococcalResultObservationTemplateId'</annotation>
+  </Ecore:EClass>
+  <CDA:ConformsTo xmi:id="_W8syMAHDEeKd8ar76RTW2A" base_Generalization="_10nKQOu5EeGku7aGn3pxJA"/>
+  <Ecore:EClass xmi:id="_W8unYAHDEeKd8ar76RTW2A" base_Class="_10mjMOu5EeGku7aGn3pxJA">
+    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation templateId.root='2.16.840.1.113883.10.20.15.3.140' constraints.validation.error='MeningococcalResultOrganizerTemplateId'</annotation>
+  </Ecore:EClass>
+</xmi:XMI>
