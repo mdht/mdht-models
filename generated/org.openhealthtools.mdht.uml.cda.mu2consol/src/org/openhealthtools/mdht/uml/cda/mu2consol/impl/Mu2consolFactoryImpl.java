@@ -88,6 +88,8 @@ public class Mu2consolFactoryImpl extends EFactoryImpl implements
 			case Mu2consolPackage.RESULTS_SECTION: return createResultsSection();
 			case Mu2consolPackage.RESULT_ORGANIZER: return createResultOrganizer();
 			case Mu2consolPackage.RESULT_OBSERVATION: return createResultObservation();
+			case Mu2consolPackage.PROCEDURES_SECTION: return createProceduresSection();
+			case Mu2consolPackage.PROCEDURE_ACTIVITY_PROCEDURE: return createProcedureActivityProcedure();
 			case Mu2consolPackage.POSTPROCEDURE_DIAGNOSIS_SECTION: return createPostprocedureDiagnosisSection();
 			case Mu2consolPackage.FUNCTIONAL_STATUS_SECTION: return createFunctionalStatusSection();
 			case Mu2consolPackage.INSTRUCTIONS_SECTION: return createInstructionsSection();
@@ -234,6 +236,26 @@ public class Mu2consolFactoryImpl extends EFactoryImpl implements
 	public ResultObservation createResultObservation() {
 		ResultObservationImpl resultObservation = new ResultObservationImpl();
 		return resultObservation;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public ProceduresSection createProceduresSection() {
+		ProceduresSectionImpl proceduresSection = new ProceduresSectionImpl();
+		return proceduresSection;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public ProcedureActivityProcedure createProcedureActivityProcedure() {
+		ProcedureActivityProcedureImpl procedureActivityProcedure = new ProcedureActivityProcedureImpl();
+		return procedureActivityProcedure;
 	}
 
 	/**
