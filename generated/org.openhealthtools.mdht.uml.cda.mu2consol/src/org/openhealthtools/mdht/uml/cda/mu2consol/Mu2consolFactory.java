@@ -121,6 +121,33 @@ public interface Mu2consolFactory extends EFactory {
 	VDTAmbulatorySummary createVDTAmbulatorySummary();
 
 	/**
+	 * Returns a new object of class '<em>Result Observation</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Result Observation</em>'.
+	 * @generated
+	 */
+	ResultObservation createResultObservation();
+
+	/**
+	 * Returns a new object of class '<em>Result Organizer</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Result Organizer</em>'.
+	 * @generated
+	 */
+	ResultOrganizer createResultOrganizer();
+
+	/**
+	 * Returns a new object of class '<em>Results Section</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Results Section</em>'.
+	 * @generated
+	 */
+	ResultsSection createResultsSection();
+
+	/**
 	 * Returns a new object of class '<em>Assessment Section</em>'. <!--
 	 * begin-user-doc --> <!-- end-user-doc -->
 	 * 
