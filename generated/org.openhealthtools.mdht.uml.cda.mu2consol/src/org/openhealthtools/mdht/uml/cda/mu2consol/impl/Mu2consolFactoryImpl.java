@@ -73,6 +73,8 @@ public class Mu2consolFactoryImpl extends EFactoryImpl implements
 		switch (eClass.getClassifierID()) {
 			case Mu2consolPackage.GENERAL_HEADER_CONSTRAINTS: return createGeneralHeaderConstraints();
 			case Mu2consolPackage.SUMMARY_OF_CARE_RECORD: return createSummaryOfCareRecord();
+			case Mu2consolPackage.ENCOUNTERS_SECTION: return createEncountersSection();
+			case Mu2consolPackage.ENCOUNTER_ACTIVITIES: return createEncounterActivities();
 			case Mu2consolPackage.PLAN_OF_CARE_SECTION: return createPlanOfCareSection();
 			case Mu2consolPackage.ASSESSMENT_AND_PLAN_SECTION: return createAssessmentAndPlanSection();
 			case Mu2consolPackage.ASSESSMENT_SECTION: return createAssessmentSection();
@@ -117,6 +119,26 @@ public class Mu2consolFactoryImpl extends EFactoryImpl implements
 	public SummaryOfCareRecord createSummaryOfCareRecord() {
 		SummaryOfCareRecordImpl summaryOfCareRecord = new SummaryOfCareRecordImpl();
 		return summaryOfCareRecord;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EncountersSection createEncountersSection() {
+		EncountersSectionImpl encountersSection = new EncountersSectionImpl();
+		return encountersSection;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EncounterActivities createEncounterActivities() {
+		EncounterActivitiesImpl encounterActivities = new EncounterActivitiesImpl();
+		return encounterActivities;
 	}
 
 	/**

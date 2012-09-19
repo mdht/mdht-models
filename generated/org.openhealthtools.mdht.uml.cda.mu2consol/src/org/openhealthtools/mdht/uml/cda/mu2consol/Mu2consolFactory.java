@@ -42,6 +42,24 @@ public interface Mu2consolFactory extends EFactory {
 	SummaryOfCareRecord createSummaryOfCareRecord();
 
 	/**
+	 * Returns a new object of class '<em>Encounters Section</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Encounters Section</em>'.
+	 * @generated
+	 */
+	EncountersSection createEncountersSection();
+
+	/**
+	 * Returns a new object of class '<em>Encounter Activities</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Encounter Activities</em>'.
+	 * @generated
+	 */
+	EncounterActivities createEncounterActivities();
+
+	/**
 	 * Returns a new object of class '<em>Plan Of Care Section</em>'. <!--
 	 * begin-user-doc --> <!-- end-user-doc -->
 	 * 
