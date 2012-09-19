@@ -266,8 +266,7 @@
       <ownedAttribute xmi:id="_TQZ-YNk5EeGsqcJR8eqiMw" name="hospitalDischargeDiagnosisSection" type="_qgJokODmEeGdSJSga09Dyg" association="_TQalcdk5EeGsqcJR8eqiMw">
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_TQalcNk5EeGsqcJR8eqiMw"/>
       </ownedAttribute>
-      <ownedAttribute xmi:id="_QFsyYNk4EeGsqcJR8eqiMw" name="encountersSection" association="_QFtZcdk4EeGsqcJR8eqiMw">
-        <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-encounters.uml#_2LWg0BSVEeGGzu7fmW9pXw"/>
+      <ownedAttribute xmi:id="_QFsyYNk4EeGsqcJR8eqiMw" name="encountersSection" type="_9AQcQAKcEeKIhvHOhwsFvA" association="_QFtZcdk4EeGsqcJR8eqiMw">
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_kTAbAN3fEeGdQcioKnmIhA" value="1"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_kTAbAd3fEeGdQcioKnmIhA"/>
       </ownedAttribute>
@@ -1181,6 +1180,38 @@ MU2 170.314(b)(7) Export Summary  - For Inpatient Care</body>
     <packagedElement xmi:type="uml:Association" xmi:id="_SwLbQAJvEeKIhvHOhwsFvA" memberEnd="_SwK0MAJvEeKIhvHOhwsFvA _SwLbQQJvEeKIhvHOhwsFvA">
       <ownedEnd xmi:id="_SwLbQQJvEeKIhvHOhwsFvA" type="_R5ZkQAJvEeKIhvHOhwsFvA" association="_SwLbQAJvEeKIhvHOhwsFvA"/>
     </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_zL3xEAKcEeKIhvHOhwsFvA" name="EncounterActivities">
+      <ownedRule xmi:id="_QLlMMAKeEeKIhvHOhwsFvA" name="codeValue" constrainedElement="_zL3xEAKcEeKIhvHOhwsFvA">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_WnjxIAKeEeKIhvHOhwsFvA">
+          <language>Analysis</language>
+          <language>OCL</language>
+          <body>The value for 'code' for encounter activities  SHOULD be selected from ICD-10(codeSystem 2.16.840.1.113883.6.3) or SNOMED CT (codeSystem 2.16.840.1.113883.6.96)</body>
+          <body>self.code.codeSystem = '2.16.840.1.113883.6.3' xor self.code.codeSystem = '2.16.840.1.113883.6.96'</body>
+        </specification>
+      </ownedRule>
+      <generalization xmi:id="_zL4YIAKcEeKIhvHOhwsFvA">
+        <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-encounters.uml#_2LayQBSVEeGGzu7fmW9pXw"/>
+      </generalization>
+      <ownedAttribute xmi:id="_0Sfa4AKcEeKIhvHOhwsFvA" name="code" visibility="private">
+        <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_0Sfa4QKcEeKIhvHOhwsFvA" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_0Sfa4gKcEeKIhvHOhwsFvA"/>
+        <redefinedProperty href="../../org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-encounters.uml#_2LayUhSVEeGGzu7fmW9pXw"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_9AQcQAKcEeKIhvHOhwsFvA" name="EncountersSection">
+      <generalization xmi:id="_9AQcQQKcEeKIhvHOhwsFvA">
+        <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-encounters.uml#_2LWg0BSVEeGGzu7fmW9pXw"/>
+      </generalization>
+      <ownedAttribute xmi:id="_-ZNMMAKcEeKIhvHOhwsFvA" name="encounterActivities" type="_zL3xEAKcEeKIhvHOhwsFvA" association="_-ZNzQAKcEeKIhvHOhwsFvA">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_-ZNMMQKcEeKIhvHOhwsFvA" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_-ZNMMgKcEeKIhvHOhwsFvA" value="1"/>
+        <redefinedProperty href="../../org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-encounters.uml#_qg2HIDFVEeGbx9xBxK_Upg"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_-ZNzQAKcEeKIhvHOhwsFvA" memberEnd="_-ZNMMAKcEeKIhvHOhwsFvA _-ZNzQQKcEeKIhvHOhwsFvA">
+      <ownedEnd xmi:id="_-ZNzQQKcEeKIhvHOhwsFvA" type="_9AQcQAKcEeKIhvHOhwsFvA" association="_-ZNzQAKcEeKIhvHOhwsFvA"/>
+    </packagedElement>
     <profileApplication xmi:id="_mZtsIdd5EeGtNLA6W-IQeQ">
       <eAnnotations xmi:id="_mZtsItd5EeGtNLA6W-IQeQ" source="http://www.eclipse.org/uml2/2.0.0/UML">
         <references xmi:type="ecore:EPackage" href="pathmap://UML_PROFILES/Standard.profile.uml#_yzU58YinEdqtvbnfB2L_5w"/>
@@ -1337,4 +1368,11 @@ MU2 170.314(b)(7) Export Summary  - For Inpatient Care</body>
   </CDA:AssociationValidation>
   <CDA:CDATemplate xmi:id="_Yt5W4AJvEeKIhvHOhwsFvA" base_Class="_R5ZkQAJvEeKIhvHOhwsFvA" templateId="2.16.840.1.113883.10.20.22.2.3.1"/>
   <CDA:ConstraintValidation xmi:id="_twd_gAJ0EeKIhvHOhwsFvA" base_Constraint="_wYmuIAJuEeKIhvHOhwsFvA"/>
+  <CDA:CDATemplate xmi:id="_2A5dcAKcEeKIhvHOhwsFvA" base_Class="_zL3xEAKcEeKIhvHOhwsFvA" templateId="2.16.840.1.113883.10.20.22.4.49"/>
+  <CDA:AssociationValidation xmi:id="_-ZNzQgKcEeKIhvHOhwsFvA" base_Association="_-ZNzQAKcEeKIhvHOhwsFvA">
+    <ruleId>CONF:8709</ruleId>
+    <ruleId>CONF:8803</ruleId>
+  </CDA:AssociationValidation>
+  <CDA:CDATemplate xmi:id="_BArkwAKdEeKIhvHOhwsFvA" base_Class="_9AQcQAKcEeKIhvHOhwsFvA" templateId="2.16.840.1.113883.10.20.22.2.22.1"/>
+  <CDA:ConstraintValidation xmi:id="_kLGOoAKeEeKIhvHOhwsFvA" severity="WARNING" base_Constraint="_QLlMMAKeEeKIhvHOhwsFvA"/>
 </xmi:XMI>

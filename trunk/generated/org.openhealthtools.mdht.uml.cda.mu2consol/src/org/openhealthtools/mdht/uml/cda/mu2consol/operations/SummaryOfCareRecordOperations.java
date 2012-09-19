@@ -14,7 +14,6 @@ import org.eclipse.ocl.ecore.Constraint;
 import org.eclipse.ocl.ecore.OCL;
 import org.eclipse.ocl.expressions.OCLExpression;
 import org.openhealthtools.mdht.uml.cda.consol.AllergiesSection;
-import org.openhealthtools.mdht.uml.cda.consol.EncountersSection;
 import org.openhealthtools.mdht.uml.cda.consol.HistoryOfPastIllnessSection;
 import org.openhealthtools.mdht.uml.cda.consol.HospitalDischargeMedicationsSection;
 import org.openhealthtools.mdht.uml.cda.consol.ImmunizationsSection;
@@ -25,6 +24,7 @@ import org.openhealthtools.mdht.uml.cda.consol.ProceduresSection;
 import org.openhealthtools.mdht.uml.cda.consol.VitalSignsSection;
 import org.openhealthtools.mdht.uml.cda.mu2consol.AssessmentAndPlanSection;
 import org.openhealthtools.mdht.uml.cda.mu2consol.AssessmentSection;
+import org.openhealthtools.mdht.uml.cda.mu2consol.EncountersSection;
 import org.openhealthtools.mdht.uml.cda.mu2consol.FunctionalStatusSection;
 import org.openhealthtools.mdht.uml.cda.mu2consol.HospitalAdmissionDiagnosisSection;
 import org.openhealthtools.mdht.uml.cda.mu2consol.HospitalAdmissionMedicationsSectionEntriesOptional;
@@ -2517,7 +2517,7 @@ public class SummaryOfCareRecordOperations extends GeneralHeaderConstraintsOpera
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String GET_ENCOUNTERS_SECTION__EOCL_EXP = "self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::EncountersSection))->asSequence()->any(true).oclAsType(consol::EncountersSection)";
+	protected static final String GET_ENCOUNTERS_SECTION__EOCL_EXP = "self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(mu2consol::EncountersSection))->asSequence()->any(true).oclAsType(mu2consol::EncountersSection)";
 
 	/**
 	 * The cached OCL query for the '{@link #getEncountersSection(SummaryOfCareRecord) <em>Get Encounters Section</em>}' query operation.
@@ -2533,7 +2533,7 @@ public class SummaryOfCareRecordOperations extends GeneralHeaderConstraintsOpera
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::EncountersSection))->asSequence()->any(true).oclAsType(consol::EncountersSection)
+	 * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(mu2consol::EncountersSection))->asSequence()->any(true).oclAsType(mu2consol::EncountersSection)
 	 * @param summaryOfCareRecord The receiving '<em><b>Summary Of Care Record</b></em>' model object.
 	 * <!-- end-model-doc -->
 	 * @generated

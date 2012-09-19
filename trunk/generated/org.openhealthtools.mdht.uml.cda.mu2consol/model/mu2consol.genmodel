@@ -218,6 +218,19 @@
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="mu2consol.ecore#//SummaryOfCareRecord/getPostprocedureDiagnosisSection"/>
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="mu2consol.ecore#//SummaryOfCareRecord/getFunctionalStatusSection"/>
     </genClasses>
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="mu2consol.ecore#//EncountersSection">
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="mu2consol.ecore#//EncountersSection/Mu2consolEncountersSectionEncounterActivities">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="mu2consol.ecore#//EncountersSection/Mu2consolEncountersSectionEncounterActivities/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="mu2consol.ecore#//EncountersSection/Mu2consolEncountersSectionEncounterActivities/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="mu2consol.ecore#//EncountersSection/getMu2consolEncounterActivitiess"/>
+    </genClasses>
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="mu2consol.ecore#//EncounterActivities">
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="mu2consol.ecore#//EncounterActivities/Mu2consolEncounterActivitiesCodeValue">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="mu2consol.ecore#//EncounterActivities/Mu2consolEncounterActivitiesCodeValue/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="mu2consol.ecore#//EncounterActivities/Mu2consolEncounterActivitiesCodeValue/context"/>
+      </genOperations>
+    </genClasses>
     <genClasses xsi:type="genmodel:GenClass" ecoreClass="mu2consol.ecore#//PlanOfCareSection">
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="mu2consol.ecore#//PlanOfCareSection/Mu2consolPlanOfCareSectionCarePlanningForPlanOfCare">
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="mu2consol.ecore#//PlanOfCareSection/Mu2consolPlanOfCareSectionCarePlanningForPlanOfCare/diagnostics"/>
