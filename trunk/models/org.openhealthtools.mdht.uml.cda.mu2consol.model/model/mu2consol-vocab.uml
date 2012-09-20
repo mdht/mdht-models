@@ -11,6 +11,18 @@
       <ownedLiteral xmi:id="_YzPQ0PuTEeGx4ophOjh2tw" name="428071000124103"/>
       <ownedLiteral xmi:id="_eBxyQPuTEeGx4ophOjh2tw" name="428061000124105"/>
     </packagedElement>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_GE1KkALeEeK7TpEj_YCJGQ" name="Race Category">
+      <ownedLiteral xmi:id="_R4yg0ALeEeK7TpEj_YCJGQ" name="2135-2"/>
+      <ownedLiteral xmi:id="_YkRhYALeEeK7TpEj_YCJGQ" name="2186-5"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_iw_NAALeEeK7TpEj_YCJGQ" name="Ethnicity Category">
+      <ownedLiteral xmi:id="_q3PicALeEeK7TpEj_YCJGQ" name="2058-6"/>
+      <ownedLiteral xmi:id="_vxkucALeEeK7TpEj_YCJGQ" name="1002-5"/>
+      <ownedLiteral xmi:id="_3hIbIALeEeK7TpEj_YCJGQ" name="2056-0"/>
+      <ownedLiteral xmi:id="_8m3l4ALeEeK7TpEj_YCJGQ" name="2028-9"/>
+      <ownedLiteral xmi:id="_AYSCAALfEeK7TpEj_YCJGQ" name="2076-8"/>
+      <ownedLiteral xmi:id="_FnfR0ALfEeK7TpEj_YCJGQ" name="2106-3"/>
+    </packagedElement>
     <profileApplication xmi:id="_mZ-K0dd5EeGtNLA6W-IQeQ">
       <eAnnotations xmi:id="_mZ-K0td5EeGtNLA6W-IQeQ" source="http://www.eclipse.org/uml2/2.0.0/UML">
         <references xmi:type="ecore:EPackage" href="http://www.openhealthtools.org/mdht/schemas/term/1#/"/>
@@ -29,4 +41,18 @@
   <term:ValueSetCode xmi:id="_P006cPuKEeGx4ophOjh2tw" conceptName="Unknown if ever smoked" base_EnumerationLiteral="_P00TYPuKEeGx4ophOjh2tw"/>
   <term:ValueSetCode xmi:id="_YzP34PuTEeGx4ophOjh2tw" conceptName="Heavy tobacco smoker" base_EnumerationLiteral="_YzPQ0PuTEeGx4ophOjh2tw"/>
   <term:ValueSetCode xmi:id="_eByZUPuTEeGx4ophOjh2tw" conceptName="Light tobacco smoker" base_EnumerationLiteral="_eBxyQPuTEeGx4ophOjh2tw"/>
+  <term:ValueSetVersion xmi:id="_GE2YsALeEeK7TpEj_YCJGQ" base_Enumeration="_GE1KkALeEeK7TpEj_YCJGQ">
+    <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_dfdYoKDqEd-dVeaMP0XXQw"/>
+  </term:ValueSetVersion>
+  <term:ValueSetCode xmi:id="_R4zH4ALeEeK7TpEj_YCJGQ" conceptName="Hispanic or Latino" base_EnumerationLiteral="_R4yg0ALeEeK7TpEj_YCJGQ"/>
+  <term:ValueSetCode xmi:id="_YkSIcALeEeK7TpEj_YCJGQ" conceptName="Not Hispanic or Latino" base_EnumerationLiteral="_YkRhYALeEeK7TpEj_YCJGQ"/>
+  <term:ValueSetVersion xmi:id="_iw_0EALeEeK7TpEj_YCJGQ" base_Enumeration="_iw_NAALeEeK7TpEj_YCJGQ">
+    <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_dfdYoKDqEd-dVeaMP0XXQw"/>
+  </term:ValueSetVersion>
+  <term:ValueSetCode xmi:id="_q3QJgALeEeK7TpEj_YCJGQ" conceptName="African American" base_EnumerationLiteral="_q3PicALeEeK7TpEj_YCJGQ"/>
+  <term:ValueSetCode xmi:id="_vxlVgALeEeK7TpEj_YCJGQ" conceptName="American Indian or Alaska Native" base_EnumerationLiteral="_vxkucALeEeK7TpEj_YCJGQ"/>
+  <term:ValueSetCode xmi:id="_3hJCMALeEeK7TpEj_YCJGQ" conceptName="Black" base_EnumerationLiteral="_3hIbIALeEeK7TpEj_YCJGQ"/>
+  <term:ValueSetCode xmi:id="_8m3l4QLeEeK7TpEj_YCJGQ" conceptName="Asian" base_EnumerationLiteral="_8m3l4ALeEeK7TpEj_YCJGQ"/>
+  <term:ValueSetCode xmi:id="_AYSpEALfEeK7TpEj_YCJGQ" conceptName="Native Hawaiian or Other Pacific Islander" base_EnumerationLiteral="_AYSCAALfEeK7TpEj_YCJGQ"/>
+  <term:ValueSetCode xmi:id="_Fnf44ALfEeK7TpEj_YCJGQ" conceptName="White" base_EnumerationLiteral="_FnfR0ALfEeK7TpEj_YCJGQ"/>
 </xmi:XMI>

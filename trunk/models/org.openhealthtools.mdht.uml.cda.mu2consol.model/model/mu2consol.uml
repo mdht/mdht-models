@@ -1308,11 +1308,11 @@ MU2 170.314(b)(7) Export Summary  - For Inpatient Care</body>
   <CDA:AssociationValidation xmi:id="_eDAjUPabEeGi99B_x568TQ" base_Association="_aVRGQvabEeGi99B_x568TQ"/>
   <CDA:AssociationValidation xmi:id="_Fy-4tfbBEeGulbiehZqi1g" base_Association="_Fy-4s_bBEeGulbiehZqi1g"/>
   <CDA:ValueSetConstraint xmi:id="_SFkru_bBEeGulbiehZqi1g" base_Property="_SFkruPbBEeGulbiehZqi1g">
-    <reference href="../../org.openhealthtools.mdht.uml.cda.consol.model/model/consol-vocab.uml#_fgCQUG1GEeGCevFpokwODw"/>
+    <reference href="mu2consol-vocab.uml#_iw_0EALeEeK7TpEj_YCJGQ"/>
   </CDA:ValueSetConstraint>
   <CDA:PropertyValidation xmi:id="_SFkrvPbBEeGulbiehZqi1g" base_Property="_SFkruPbBEeGulbiehZqi1g"/>
   <CDA:ValueSetConstraint xmi:id="_SFucsPbBEeGulbiehZqi1g" base_Property="_SFkrwfbBEeGulbiehZqi1g">
-    <reference href="../../org.openhealthtools.mdht.uml.cda.consol.model/model/consol-vocab.uml#_0Uo48EFaEeGFqszUdHc61Q"/>
+    <reference href="mu2consol-vocab.uml#_GE2YsALeEeK7TpEj_YCJGQ"/>
   </CDA:ValueSetConstraint>
   <CDA:PropertyValidation xmi:id="_SFucsfbBEeGulbiehZqi1g" base_Property="_SFkrwfbBEeGulbiehZqi1g"/>
   <CDA:AssociationValidation xmi:id="_SFuctvbBEeGulbiehZqi1g" base_Association="_SFuctPbBEeGulbiehZqi1g"/>
