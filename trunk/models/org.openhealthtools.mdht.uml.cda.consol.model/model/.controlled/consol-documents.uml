@@ -5153,7 +5153,7 @@ OIDs SHALL be no more than 64 characters in length..</body>
     <ruleId>CONF:14847</ruleId>
   </CDA:ConstraintValidation>
   <CDA:CodeSystemConstraint xmi:id="_t3eyAOxxEeG7k4bbVdXbXw" base_Property="_NMTVQOxxEeG7k4bbVdXbXw" severity="WARNING">
-    <reference href="../consol-vocab.uml#_Si0RgOxyEeG7k4bbVdXbXw"/>
+    <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_Si0RgOxyEeG7k4bbVdXbXw"/>
     <ruleId>CONF:16819</ruleId>
   </CDA:CodeSystemConstraint>
   <CDA:ConstraintValidation xmi:id="_GTIrw-x2EeG7k4bbVdXbXw" base_Constraint="_GTIrwOx2EeG7k4bbVdXbXw"/>
@@ -5334,7 +5334,7 @@ OIDs SHALL be no more than 64 characters in length..</body>
   </CDA:PropertyValidation>
   <CDA:PropertyValidation xmi:id="_xNEQoPK6EeGFUPBL8qS7yQ" base_Property="_lDmkcPK6EeGFUPBL8qS7yQ"/>
   <CDA:CodeSystemConstraint xmi:id="_z2r-QPK6EeGFUPBL8qS7yQ" code="PCP" displayName="Primary Care Physician" base_Property="_lDmkcPK6EeGFUPBL8qS7yQ">
-    <reference href="../consol-vocab.uml#_Si0RgOxyEeG7k4bbVdXbXw"/>
+    <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_Si0RgOxyEeG7k4bbVdXbXw"/>
   </CDA:CodeSystemConstraint>
   <CDA:PropertyValidation xmi:id="_RdPzcPK7EeGFUPBL8qS7yQ" base_Property="_QXuV0PK7EeGFUPBL8qS7yQ">
     <ruleId>CONF:8507</ruleId>
