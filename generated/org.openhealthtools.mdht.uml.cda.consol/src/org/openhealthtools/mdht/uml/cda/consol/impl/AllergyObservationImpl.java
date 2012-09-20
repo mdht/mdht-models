@@ -129,6 +129,17 @@ public class AllergyObservationImpl extends ObservationImpl implements AllergyOb
 
 	/**
 	 * <!-- begin-user-doc -->
+	* <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateAllergyObservationAllergyPlayingEntityCodeSystems(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return AllergyObservationOperations.validateAllergyObservationAllergyPlayingEntityCodeSystems(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
