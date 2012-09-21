@@ -18,7 +18,6 @@ import org.eclipse.emf.ecore.EObject;
 import org.openhealthtools.mdht.emf.runtime.util.Initializer;
 
 import org.openhealthtools.mdht.uml.cda.consol.AllergiesSection;
-import org.openhealthtools.mdht.uml.cda.consol.HospitalDischargeMedicationsSection;
 import org.openhealthtools.mdht.uml.cda.consol.MedicationsSection;
 import org.openhealthtools.mdht.uml.cda.consol.ProblemSection;
 import org.openhealthtools.mdht.uml.cda.consol.VitalSignsSection;
@@ -87,15 +86,6 @@ public class ViewDownloadTransmitSummaryImpl extends GeneralHeaderConstraintsImp
 	 */
 	public boolean validateViewDownloadTransmitSummaryMedicationsSection(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ViewDownloadTransmitSummaryOperations.validateViewDownloadTransmitSummaryMedicationsSection(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateViewDownloadTransmitSummaryHospitalDischargeMedicationsSection(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ViewDownloadTransmitSummaryOperations.validateViewDownloadTransmitSummaryHospitalDischargeMedicationsSection(this, diagnostics, context);
 	}
 
 	/**
@@ -222,15 +212,6 @@ public class ViewDownloadTransmitSummaryImpl extends GeneralHeaderConstraintsImp
 	 */
 	public MedicationsSection getMedicationsSection() {
 		return ViewDownloadTransmitSummaryOperations.getMedicationsSection(this);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public HospitalDischargeMedicationsSection getHospitalDischargeMedicationsSection() {
-		return ViewDownloadTransmitSummaryOperations.getHospitalDischargeMedicationsSection(this);
 	}
 
 	/**

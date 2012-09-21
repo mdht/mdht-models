@@ -172,26 +172,6 @@ public class Mu2consolSwitch<T> {
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case Mu2consolPackage.HOSPITAL_ADMISSION_DIAGNOSIS_SECTION: {
-				HospitalAdmissionDiagnosisSection hospitalAdmissionDiagnosisSection = (HospitalAdmissionDiagnosisSection)theEObject;
-				T result = caseHospitalAdmissionDiagnosisSection(hospitalAdmissionDiagnosisSection);
-				if (result == null) result = caseConsol_HospitalAdmissionDiagnosisSection(hospitalAdmissionDiagnosisSection);
-				if (result == null) result = caseSection(hospitalAdmissionDiagnosisSection);
-				if (result == null) result = caseAct(hospitalAdmissionDiagnosisSection);
-				if (result == null) result = caseInfrastructureRoot(hospitalAdmissionDiagnosisSection);
-				if (result == null) result = defaultCase(theEObject);
-				return result;
-			}
-			case Mu2consolPackage.HOSPITAL_DISCHARGE_DIAGNOSIS_SECTION: {
-				HospitalDischargeDiagnosisSection hospitalDischargeDiagnosisSection = (HospitalDischargeDiagnosisSection)theEObject;
-				T result = caseHospitalDischargeDiagnosisSection(hospitalDischargeDiagnosisSection);
-				if (result == null) result = caseConsol_HospitalDischargeDiagnosisSection(hospitalDischargeDiagnosisSection);
-				if (result == null) result = caseSection(hospitalDischargeDiagnosisSection);
-				if (result == null) result = caseAct(hospitalDischargeDiagnosisSection);
-				if (result == null) result = caseInfrastructureRoot(hospitalDischargeDiagnosisSection);
-				if (result == null) result = defaultCase(theEObject);
-				return result;
-			}
 			case Mu2consolPackage.POSTOPERATIVE_DIAGNOSIS_SECTION: {
 				PostoperativeDiagnosisSection postoperativeDiagnosisSection = (PostoperativeDiagnosisSection)theEObject;
 				T result = casePostoperativeDiagnosisSection(postoperativeDiagnosisSection);
@@ -325,6 +305,26 @@ public class Mu2consolSwitch<T> {
 				if (result == null) result = caseSection(instructionsSection);
 				if (result == null) result = caseAct(instructionsSection);
 				if (result == null) result = caseInfrastructureRoot(instructionsSection);
+				if (result == null) result = defaultCase(theEObject);
+				return result;
+			}
+			case Mu2consolPackage.HOSPITAL_ADMISSION_DIAGNOSIS_SECTION: {
+				HospitalAdmissionDiagnosisSection hospitalAdmissionDiagnosisSection = (HospitalAdmissionDiagnosisSection)theEObject;
+				T result = caseHospitalAdmissionDiagnosisSection(hospitalAdmissionDiagnosisSection);
+				if (result == null) result = caseConsol_HospitalAdmissionDiagnosisSection(hospitalAdmissionDiagnosisSection);
+				if (result == null) result = caseSection(hospitalAdmissionDiagnosisSection);
+				if (result == null) result = caseAct(hospitalAdmissionDiagnosisSection);
+				if (result == null) result = caseInfrastructureRoot(hospitalAdmissionDiagnosisSection);
+				if (result == null) result = defaultCase(theEObject);
+				return result;
+			}
+			case Mu2consolPackage.HOSPITAL_DISCHARGE_DIAGNOSIS_SECTION: {
+				HospitalDischargeDiagnosisSection hospitalDischargeDiagnosisSection = (HospitalDischargeDiagnosisSection)theEObject;
+				T result = caseHospitalDischargeDiagnosisSection(hospitalDischargeDiagnosisSection);
+				if (result == null) result = caseConsol_HospitalDischargeDiagnosisSection(hospitalDischargeDiagnosisSection);
+				if (result == null) result = caseSection(hospitalDischargeDiagnosisSection);
+				if (result == null) result = caseAct(hospitalDischargeDiagnosisSection);
+				if (result == null) result = caseInfrastructureRoot(hospitalDischargeDiagnosisSection);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}

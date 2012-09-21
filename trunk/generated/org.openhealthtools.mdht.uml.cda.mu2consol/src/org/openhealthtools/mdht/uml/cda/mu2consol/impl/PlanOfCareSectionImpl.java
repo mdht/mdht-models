@@ -10,6 +10,7 @@ import java.lang.Iterable;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
+import org.eclipse.emf.common.util.EList;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EObject;
 import org.openhealthtools.mdht.emf.runtime.util.Initializer;
@@ -71,8 +72,8 @@ public class PlanOfCareSectionImpl extends
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public PlanOfCareActivityAct getMu2consolPlanOfCareActivityAct() {
-		return PlanOfCareSectionOperations.getMu2consolPlanOfCareActivityAct(this);
+	public EList<PlanOfCareActivityAct> getMu2consolPlanOfCareActivityActs() {
+		return PlanOfCareSectionOperations.getMu2consolPlanOfCareActivityActs(this);
 	}
 
 	/**
@@ -80,8 +81,8 @@ public class PlanOfCareSectionImpl extends
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public PlanOfCareActivityEncounter getMu2consolPlanOfCareActivityEncounter() {
-		return PlanOfCareSectionOperations.getMu2consolPlanOfCareActivityEncounter(this);
+	public EList<PlanOfCareActivityEncounter> getMu2consolPlanOfCareActivityEncounters() {
+		return PlanOfCareSectionOperations.getMu2consolPlanOfCareActivityEncounters(this);
 	}
 
 	/**
@@ -89,8 +90,8 @@ public class PlanOfCareSectionImpl extends
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public PlanOfCareActivityObservation getMu2consolPlanOfCareActivityObservation() {
-		return PlanOfCareSectionOperations.getMu2consolPlanOfCareActivityObservation(this);
+	public EList<PlanOfCareActivityObservation> getMu2consolPlanOfCareActivityObservations() {
+		return PlanOfCareSectionOperations.getMu2consolPlanOfCareActivityObservations(this);
 	}
 
 	/**

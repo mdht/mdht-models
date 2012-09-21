@@ -20,6 +20,7 @@ import org.openhealthtools.mdht.emf.runtime.util.Initializer;
 import org.openhealthtools.mdht.uml.cda.consol.ChiefComplaintAndReasonForVisitSection;
 import org.openhealthtools.mdht.uml.cda.consol.ChiefComplaintSection;
 import org.openhealthtools.mdht.uml.cda.consol.HospitalDischargeInstructionsSection;
+import org.openhealthtools.mdht.uml.cda.consol.HospitalDischargeMedicationsSection;
 import org.openhealthtools.mdht.uml.cda.consol.ReasonForVisitSection;
 
 import org.openhealthtools.mdht.uml.cda.mu2consol.HospitalAdmissionDiagnosisSection;
@@ -107,6 +108,15 @@ public class VDTInpatientSummaryImpl extends ViewDownloadTransmitSummaryImpl imp
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public boolean validateVDTInpatientSummaryHospitalDischargeMedicationsSection(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return VDTInpatientSummaryOperations.validateVDTInpatientSummaryHospitalDischargeMedicationsSection(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public boolean validateVDTInpatientSummaryHospitalAdmissionDiagnosisSectionTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return VDTInpatientSummaryOperations.validateVDTInpatientSummaryHospitalAdmissionDiagnosisSectionTemplateId(this, diagnostics, context);
 	}
@@ -163,6 +173,15 @@ public class VDTInpatientSummaryImpl extends ViewDownloadTransmitSummaryImpl imp
 	 */
 	public ChiefComplaintAndReasonForVisitSection getChiefComplaintAndReasonForVisitSection() {
 		return VDTInpatientSummaryOperations.getChiefComplaintAndReasonForVisitSection(this);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public HospitalDischargeMedicationsSection getHospitalDischargeMedicationsSection() {
+		return VDTInpatientSummaryOperations.getHospitalDischargeMedicationsSection(this);
 	}
 
 	/**
