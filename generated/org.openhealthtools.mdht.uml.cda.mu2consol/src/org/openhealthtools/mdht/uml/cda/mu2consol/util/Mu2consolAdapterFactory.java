@@ -113,14 +113,6 @@ public class Mu2consolAdapterFactory extends AdapterFactoryImpl {
 				return createAssessmentSectionAdapter();
 			}
 			@Override
-			public Adapter caseHospitalAdmissionDiagnosisSection(HospitalAdmissionDiagnosisSection object) {
-				return createHospitalAdmissionDiagnosisSectionAdapter();
-			}
-			@Override
-			public Adapter caseHospitalDischargeDiagnosisSection(HospitalDischargeDiagnosisSection object) {
-				return createHospitalDischargeDiagnosisSectionAdapter();
-			}
-			@Override
 			public Adapter casePostoperativeDiagnosisSection(PostoperativeDiagnosisSection object) {
 				return createPostoperativeDiagnosisSectionAdapter();
 			}
@@ -171,6 +163,14 @@ public class Mu2consolAdapterFactory extends AdapterFactoryImpl {
 			@Override
 			public Adapter caseInstructionsSection(InstructionsSection object) {
 				return createInstructionsSectionAdapter();
+			}
+			@Override
+			public Adapter caseHospitalAdmissionDiagnosisSection(HospitalAdmissionDiagnosisSection object) {
+				return createHospitalAdmissionDiagnosisSectionAdapter();
+			}
+			@Override
+			public Adapter caseHospitalDischargeDiagnosisSection(HospitalDischargeDiagnosisSection object) {
+				return createHospitalDischargeDiagnosisSectionAdapter();
 			}
 			@Override
 			public Adapter caseMedicationsAdministeredSection(MedicationsAdministeredSection object) {
@@ -253,14 +253,6 @@ public class Mu2consolAdapterFactory extends AdapterFactoryImpl {
 				return createConsol_AssessmentSectionAdapter();
 			}
 			@Override
-			public Adapter caseConsol_HospitalAdmissionDiagnosisSection(org.openhealthtools.mdht.uml.cda.consol.HospitalAdmissionDiagnosisSection object) {
-				return createConsol_HospitalAdmissionDiagnosisSectionAdapter();
-			}
-			@Override
-			public Adapter caseConsol_HospitalDischargeDiagnosisSection(org.openhealthtools.mdht.uml.cda.consol.HospitalDischargeDiagnosisSection object) {
-				return createConsol_HospitalDischargeDiagnosisSectionAdapter();
-			}
-			@Override
 			public Adapter caseConsol_PostoperativeDiagnosisSection(org.openhealthtools.mdht.uml.cda.consol.PostoperativeDiagnosisSection object) {
 				return createConsol_PostoperativeDiagnosisSectionAdapter();
 			}
@@ -331,6 +323,14 @@ public class Mu2consolAdapterFactory extends AdapterFactoryImpl {
 			@Override
 			public Adapter caseConsol_InstructionsSection(org.openhealthtools.mdht.uml.cda.consol.InstructionsSection object) {
 				return createConsol_InstructionsSectionAdapter();
+			}
+			@Override
+			public Adapter caseConsol_HospitalAdmissionDiagnosisSection(org.openhealthtools.mdht.uml.cda.consol.HospitalAdmissionDiagnosisSection object) {
+				return createConsol_HospitalAdmissionDiagnosisSectionAdapter();
+			}
+			@Override
+			public Adapter caseConsol_HospitalDischargeDiagnosisSection(org.openhealthtools.mdht.uml.cda.consol.HospitalDischargeDiagnosisSection object) {
+				return createConsol_HospitalDischargeDiagnosisSectionAdapter();
 			}
 			@Override
 			public Adapter caseConsol_MedicationsAdministeredSection(org.openhealthtools.mdht.uml.cda.consol.MedicationsAdministeredSection object) {
