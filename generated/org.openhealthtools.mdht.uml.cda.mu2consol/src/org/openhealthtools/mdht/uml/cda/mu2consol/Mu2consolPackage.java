@@ -1000,7 +1000,7 @@ public interface Mu2consolPackage extends EPackage {
      * @see org.openhealthtools.mdht.uml.cda.mu2consol.impl.Mu2consolPackageImpl#getInstructionsSection()
      * @generated
      */
-	int INSTRUCTIONS_SECTION = 19;
+	int INSTRUCTIONS_SECTION = 18;
 
 	/**
      * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.mu2consol.impl.AssessmentSectionImpl <em>Assessment Section</em>}' class.
@@ -1022,7 +1022,7 @@ public interface Mu2consolPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.mu2consol.impl.Mu2consolPackageImpl#getHospitalAdmissionDiagnosisSection()
 	 * @generated
 	 */
-	int HOSPITAL_ADMISSION_DIAGNOSIS_SECTION = 20;
+	int HOSPITAL_ADMISSION_DIAGNOSIS_SECTION = 19;
 
 	/**
 	 * The meta object id for the '
@@ -1034,7 +1034,7 @@ public interface Mu2consolPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.mu2consol.impl.Mu2consolPackageImpl#getHospitalDischargeDiagnosisSection()
 	 * @generated
 	 */
-	int HOSPITAL_DISCHARGE_DIAGNOSIS_SECTION = 21;
+	int HOSPITAL_DISCHARGE_DIAGNOSIS_SECTION = 20;
 
 	/**
      * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.mu2consol.impl.PostoperativeDiagnosisSectionImpl <em>Postoperative Diagnosis Section</em>}' class.
@@ -1233,7 +1233,7 @@ public interface Mu2consolPackage extends EPackage {
      * @see org.openhealthtools.mdht.uml.cda.mu2consol.impl.Mu2consolPackageImpl#getMedicationsAdministeredSection()
      * @generated
      */
-	int MEDICATIONS_ADMINISTERED_SECTION = 22;
+	int MEDICATIONS_ADMINISTERED_SECTION = 21;
 
 	/**
      * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.mu2consol.impl.HospitalAdmissionMedicationsSectionEntriesOptionalImpl <em>Hospital Admission Medications Section Entries Optional</em>}' class.
@@ -2501,16 +2501,6 @@ public interface Mu2consolPackage extends EPackage {
     int SMOKING_STATUS_OBSERVATION_FEATURE_COUNT = ConsolPackage.TOBACCO_USE_FEATURE_COUNT + 0;
 
 	/**
-     * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.mu2consol.impl.FunctionalStatusSectionImpl <em>Functional Status Section</em>}' class.
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @see org.openhealthtools.mdht.uml.cda.mu2consol.impl.FunctionalStatusSectionImpl
-     * @see org.openhealthtools.mdht.uml.cda.mu2consol.impl.Mu2consolPackageImpl#getFunctionalStatusSection()
-     * @generated
-     */
-    int FUNCTIONAL_STATUS_SECTION = 18;
-
-	/**
      * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.mu2consol.impl.ClinicalOfficeVisitSummaryImpl <em>Clinical Office Visit Summary</em>}' class.
      * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -2518,7 +2508,7 @@ public interface Mu2consolPackage extends EPackage {
      * @see org.openhealthtools.mdht.uml.cda.mu2consol.impl.Mu2consolPackageImpl#getClinicalOfficeVisitSummary()
      * @generated
      */
-	int CLINICAL_OFFICE_VISIT_SUMMARY = 23;
+	int CLINICAL_OFFICE_VISIT_SUMMARY = 22;
 
 	/**
 	 * The meta object id for the '
@@ -2530,7 +2520,7 @@ public interface Mu2consolPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.mu2consol.impl.Mu2consolPackageImpl#getTransitionOfCareAmbulatorySummary()
 	 * @generated
 	 */
-	int TRANSITION_OF_CARE_AMBULATORY_SUMMARY = 24;
+	int TRANSITION_OF_CARE_AMBULATORY_SUMMARY = 23;
 
 	/**
      * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.mu2consol.impl.TransitionOfCareInpatientSummaryImpl <em>Transition Of Care Inpatient Summary</em>}' class.
@@ -2540,7 +2530,7 @@ public interface Mu2consolPackage extends EPackage {
      * @see org.openhealthtools.mdht.uml.cda.mu2consol.impl.Mu2consolPackageImpl#getTransitionOfCareInpatientSummary()
      * @generated
      */
-    int TRANSITION_OF_CARE_INPATIENT_SUMMARY = 25;
+    int TRANSITION_OF_CARE_INPATIENT_SUMMARY = 24;
 
 	/**
      * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.mu2consol.impl.ViewDownloadTransmitSummaryImpl <em>View Download Transmit Summary</em>}' class.
@@ -2550,7 +2540,7 @@ public interface Mu2consolPackage extends EPackage {
      * @see org.openhealthtools.mdht.uml.cda.mu2consol.impl.Mu2consolPackageImpl#getViewDownloadTransmitSummary()
      * @generated
      */
-    int VIEW_DOWNLOAD_TRANSMIT_SUMMARY = 26;
+    int VIEW_DOWNLOAD_TRANSMIT_SUMMARY = 25;
 
 	/**
      * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.mu2consol.impl.VDTInpatientSummaryImpl <em>VDT Inpatient Summary</em>}' class.
@@ -2560,7 +2550,7 @@ public interface Mu2consolPackage extends EPackage {
      * @see org.openhealthtools.mdht.uml.cda.mu2consol.impl.Mu2consolPackageImpl#getVDTInpatientSummary()
      * @generated
      */
-    int VDT_INPATIENT_SUMMARY = 27;
+    int VDT_INPATIENT_SUMMARY = 26;
 
 	/**
      * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.mu2consol.impl.VDTAmbulatorySummaryImpl <em>VDT Ambulatory Summary</em>}' class.
@@ -2570,7 +2560,7 @@ public interface Mu2consolPackage extends EPackage {
      * @see org.openhealthtools.mdht.uml.cda.mu2consol.impl.Mu2consolPackageImpl#getVDTAmbulatorySummary()
      * @generated
      */
-    int VDT_AMBULATORY_SUMMARY = 28;
+    int VDT_AMBULATORY_SUMMARY = 27;
 
 	/**
      * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.mu2consol.impl.ResultObservationImpl <em>Result Observation</em>}' class.
@@ -3825,177 +3815,6 @@ public interface Mu2consolPackage extends EPackage {
      * @ordered
      */
 	int POSTPROCEDURE_DIAGNOSIS_SECTION_FEATURE_COUNT = ConsolPackage.POSTPROCEDURE_DIAGNOSIS_SECTION_FEATURE_COUNT + 0;
-
-	/**
-     * The feature id for the '<em><b>Realm Code</b></em>' containment reference list.
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     * @ordered
-     */
-    int FUNCTIONAL_STATUS_SECTION__REALM_CODE = ConsolPackage.FUNCTIONAL_STATUS_SECTION__REALM_CODE;
-
-	/**
-     * The feature id for the '<em><b>Type Id</b></em>' containment reference.
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     * @ordered
-     */
-    int FUNCTIONAL_STATUS_SECTION__TYPE_ID = ConsolPackage.FUNCTIONAL_STATUS_SECTION__TYPE_ID;
-
-	/**
-     * The feature id for the '<em><b>Template Id</b></em>' containment reference list.
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     * @ordered
-     */
-    int FUNCTIONAL_STATUS_SECTION__TEMPLATE_ID = ConsolPackage.FUNCTIONAL_STATUS_SECTION__TEMPLATE_ID;
-
-	/**
-     * The feature id for the '<em><b>Id</b></em>' containment reference.
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     * @ordered
-     */
-    int FUNCTIONAL_STATUS_SECTION__ID = ConsolPackage.FUNCTIONAL_STATUS_SECTION__ID;
-
-	/**
-     * The feature id for the '<em><b>Code</b></em>' containment reference.
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     * @ordered
-     */
-    int FUNCTIONAL_STATUS_SECTION__CODE = ConsolPackage.FUNCTIONAL_STATUS_SECTION__CODE;
-
-	/**
-     * The feature id for the '<em><b>Title</b></em>' containment reference.
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     * @ordered
-     */
-    int FUNCTIONAL_STATUS_SECTION__TITLE = ConsolPackage.FUNCTIONAL_STATUS_SECTION__TITLE;
-
-	/**
-     * The feature id for the '<em><b>Text</b></em>' containment reference.
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     * @ordered
-     */
-    int FUNCTIONAL_STATUS_SECTION__TEXT = ConsolPackage.FUNCTIONAL_STATUS_SECTION__TEXT;
-
-	/**
-     * The feature id for the '<em><b>Confidentiality Code</b></em>' containment reference.
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     * @ordered
-     */
-    int FUNCTIONAL_STATUS_SECTION__CONFIDENTIALITY_CODE = ConsolPackage.FUNCTIONAL_STATUS_SECTION__CONFIDENTIALITY_CODE;
-
-	/**
-     * The feature id for the '<em><b>Language Code</b></em>' containment reference.
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     * @ordered
-     */
-    int FUNCTIONAL_STATUS_SECTION__LANGUAGE_CODE = ConsolPackage.FUNCTIONAL_STATUS_SECTION__LANGUAGE_CODE;
-
-	/**
-     * The feature id for the '<em><b>Subject</b></em>' containment reference.
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     * @ordered
-     */
-    int FUNCTIONAL_STATUS_SECTION__SUBJECT = ConsolPackage.FUNCTIONAL_STATUS_SECTION__SUBJECT;
-
-	/**
-     * The feature id for the '<em><b>Author</b></em>' containment reference list.
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     * @ordered
-     */
-    int FUNCTIONAL_STATUS_SECTION__AUTHOR = ConsolPackage.FUNCTIONAL_STATUS_SECTION__AUTHOR;
-
-	/**
-     * The feature id for the '<em><b>Informant</b></em>' containment reference list.
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     * @ordered
-     */
-    int FUNCTIONAL_STATUS_SECTION__INFORMANT = ConsolPackage.FUNCTIONAL_STATUS_SECTION__INFORMANT;
-
-	/**
-     * The feature id for the '<em><b>Entry</b></em>' containment reference list.
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     * @ordered
-     */
-    int FUNCTIONAL_STATUS_SECTION__ENTRY = ConsolPackage.FUNCTIONAL_STATUS_SECTION__ENTRY;
-
-	/**
-     * The feature id for the '<em><b>Component</b></em>' containment reference list.
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     * @ordered
-     */
-    int FUNCTIONAL_STATUS_SECTION__COMPONENT = ConsolPackage.FUNCTIONAL_STATUS_SECTION__COMPONENT;
-
-	/**
-     * The feature id for the '<em><b>Section Id</b></em>' attribute.
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     * @ordered
-     */
-    int FUNCTIONAL_STATUS_SECTION__SECTION_ID = ConsolPackage.FUNCTIONAL_STATUS_SECTION__SECTION_ID;
-
-	/**
-     * The feature id for the '<em><b>Null Flavor</b></em>' attribute.
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     * @ordered
-     */
-    int FUNCTIONAL_STATUS_SECTION__NULL_FLAVOR = ConsolPackage.FUNCTIONAL_STATUS_SECTION__NULL_FLAVOR;
-
-	/**
-     * The feature id for the '<em><b>Class Code</b></em>' attribute.
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     * @ordered
-     */
-    int FUNCTIONAL_STATUS_SECTION__CLASS_CODE = ConsolPackage.FUNCTIONAL_STATUS_SECTION__CLASS_CODE;
-
-	/**
-     * The feature id for the '<em><b>Mood Code</b></em>' attribute.
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     * @ordered
-     */
-    int FUNCTIONAL_STATUS_SECTION__MOOD_CODE = ConsolPackage.FUNCTIONAL_STATUS_SECTION__MOOD_CODE;
-
-	/**
-     * The number of structural features of the '<em>Functional Status Section</em>' class.
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     * @ordered
-     */
-    int FUNCTIONAL_STATUS_SECTION_FEATURE_COUNT = ConsolPackage.FUNCTIONAL_STATUS_SECTION_FEATURE_COUNT + 0;
 
 	/**
      * The feature id for the '<em><b>Realm Code</b></em>' containment reference list.
@@ -6494,16 +6313,6 @@ public interface Mu2consolPackage extends EPackage {
 	EClass getPostprocedureDiagnosisSection();
 
 	/**
-     * Returns the meta object for class '{@link org.openhealthtools.mdht.uml.cda.mu2consol.FunctionalStatusSection <em>Functional Status Section</em>}'.
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @return the meta object for class '<em>Functional Status Section</em>'.
-     * @see org.openhealthtools.mdht.uml.cda.mu2consol.FunctionalStatusSection
-     * @generated
-     */
-    EClass getFunctionalStatusSection();
-
-	/**
      * Returns the meta object for class '{@link org.openhealthtools.mdht.uml.cda.mu2consol.PreoperativeDiagnosisSection <em>Preoperative Diagnosis Section</em>}'.
      * <!-- begin-user-doc --> <!--
 	 * end-user-doc -->
@@ -6814,16 +6623,6 @@ public interface Mu2consolPackage extends EPackage {
          * @generated
          */
 		EClass POSTPROCEDURE_DIAGNOSIS_SECTION = eINSTANCE.getPostprocedureDiagnosisSection();
-
-		/**
-         * The meta object literal for the '{@link org.openhealthtools.mdht.uml.cda.mu2consol.impl.FunctionalStatusSectionImpl <em>Functional Status Section</em>}' class.
-         * <!-- begin-user-doc -->
-         * <!-- end-user-doc -->
-         * @see org.openhealthtools.mdht.uml.cda.mu2consol.impl.FunctionalStatusSectionImpl
-         * @see org.openhealthtools.mdht.uml.cda.mu2consol.impl.Mu2consolPackageImpl#getFunctionalStatusSection()
-         * @generated
-         */
-        EClass FUNCTIONAL_STATUS_SECTION = eINSTANCE.getFunctionalStatusSection();
 
 		/**
          * The meta object literal for the '{@link org.openhealthtools.mdht.uml.cda.mu2consol.impl.PreoperativeDiagnosisSectionImpl <em>Preoperative Diagnosis Section</em>}' class.

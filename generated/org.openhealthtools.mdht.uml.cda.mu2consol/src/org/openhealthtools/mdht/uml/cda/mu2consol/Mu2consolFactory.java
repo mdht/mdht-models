@@ -227,15 +227,6 @@ public interface Mu2consolFactory extends EFactory {
 	PostprocedureDiagnosisSection createPostprocedureDiagnosisSection();
 
 	/**
-	 * Returns a new object of class '<em>Functional Status Section</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Functional Status Section</em>'.
-	 * @generated
-	 */
-	FunctionalStatusSection createFunctionalStatusSection();
-
-	/**
 	 * Returns a new object of class '<em>Preoperative Diagnosis Section</em>'.
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @return a new object of class '<em>Preoperative Diagnosis Section</em>'.

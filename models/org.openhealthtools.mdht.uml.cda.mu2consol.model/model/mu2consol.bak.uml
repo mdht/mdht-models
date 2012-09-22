@@ -28,10 +28,12 @@
       <ownedAttribute xmi:id="_UQ1vYNkzEeGsqcJR8eqiMw" name="documentationOf" visibility="private" type="_WwN74NkzEeGsqcJR8eqiMw" aggregation="composite" association="_UQ1IUNkzEeGsqcJR8eqiMw">
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Ck6EsOyxEeGT-eFu7Ghgjw" value="*"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Ck6rwOyxEeGT-eFu7Ghgjw" value="1"/>
+        <redefinedProperty href="../../org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-documents.uml#_wZOLcOxwEeG7k4bbVdXbXw"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_IXAd0Nk3EeGsqcJR8eqiMw" name="componentOf" visibility="private" type="_LVzxQNk3EeGsqcJR8eqiMw" aggregation="composite" association="_IW_2wNk3EeGsqcJR8eqiMw">
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_IXAd0dk3EeGsqcJR8eqiMw" value="1"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_IXAd0tk3EeGsqcJR8eqiMw"/>
+        <redefinedProperty href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_8etaMUAJEd6wZe6nFLrjsw"/>
       </ownedAttribute>
       <nestedClassifier xmi:type="uml:Class" xmi:id="_3AG1gNkMEeGsqcJR8eqiMw" name="RecordTarget">
         <ownedComment xmi:id="_awVCsNkwEeGsqcJR8eqiMw">
@@ -88,7 +90,7 @@
         </nestedClassifier>
       </nestedClassifier>
       <nestedClassifier xmi:type="uml:Class" xmi:id="_WwN74NkzEeGsqcJR8eqiMw" name="DocumentationOf">
-        <ownedComment xmi:id="_yLbT0NkzEeGsqcJR8eqiMw">
+        <ownedComment xmi:id="_hdi1sPj6EeGg7d8H4gpYZQ">
           <body>INLINE</body>
         </ownedComment>
         <generalization xmi:id="_ZBgpENkzEeGsqcJR8eqiMw">
@@ -108,8 +110,8 @@
             <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-documents.uml#_7HSQoOxwEeG7k4bbVdXbXw"/>
           </generalization>
           <ownedAttribute xmi:id="_bd9LsPhTEeGPm7sA61ixGw" name="performer" visibility="private" type="_nm_rwNkzEeGsqcJR8eqiMw" aggregation="composite" association="_bd9ywPhTEeGPm7sA61ixGw">
-            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_UmwN4PhUEeGPm7sA61ixGw" value="1"/>
-            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_UmwN4fhUEeGPm7sA61ixGw" value="1"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_YDNmAP6cEeGmWJiRRvMaXA" value="*"/>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_YDNmAf6cEeGmWJiRRvMaXA" value="1"/>
             <redefinedProperty href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_6MIl4EoVEd6c3qsAxlFHaQ"/>
             <redefinedProperty href="../../org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-documents.uml#_IT-UYOxxEeG7k4bbVdXbXw"/>
           </ownedAttribute>
@@ -181,68 +183,12 @@
       <ownedComment xmi:id="_OaVzYNpiEeGzu8-aAsCS4g">
         <body>Summary Of Care Record</body>
       </ownedComment>
-      <ownedRule xmi:id="_OxIpQN3EEeGdQcioKnmIhA" name="cannotHaveChiefComplaintAndReasonForVisitWithChiefComplaintSectionOrReasonSection" constrainedElement="_VG3DUNkxEeGsqcJR8eqiMw">
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_UQ6EoN3EEeGdQcioKnmIhA">
-          <language>OCL</language>
-          <language>Analysis</language>
-          <body>(self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::ChiefComplaintSection)) or &#xD;&#xA; self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::ReasonForVisitSection))) xor &#xD;&#xA; self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::ChiefComplaintAndReasonForVisitSection))</body>
-          <body>SHALL have one of Reason for Visit (2.16.840.1.113883.10.20.22.2.12)  or Chief Complaint (1.3.6.1.4.1.19376.1.5.3.1.1.13.2.1) or Chief Complaint and Reason for Visit (2.16.840.1.113883.10.20.22.2.13)</body>
-        </specification>
-      </ownedRule>
-      <ownedRule xmi:id="_2nwZAN3EEeGdQcioKnmIhA" name="mu2EncounterDiagnosesRequirements" constrainedElement="_VG3DUNkxEeGsqcJR8eqiMw">
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_K7mFoN3FEeGdQcioKnmIhA">
-          <language>Analysis</language>
-          <language>OCL</language>
-          <body>SHALL have one of Assessment (2.16.840.1.113883.10.20.22.2.8) or Assessment and Plan (2.16.840.1.113883.10.20.22.2.9) or  Hospital Admission Diagnosis (2.16.840.1.113883.10.20.22.2.43) or Hospital Discharge Diagnosis (2.16.840.1.113883.10.20.22.2.24) or Postoperative Diagnosis (2.16.840.1.113883.10.20.22.2.35)  or  Postprocedure Diagnosis (2.16.840.1.113883.10.20.22.2.36) or Encounters (entries required: 2.16.840.1.113883.10.20.22.2.22.1) or Problem (entries required: 2.16.840.1.113883.10.20.22.2.5.1)</body>
-          <body>(self.getAllSections()->one(s : cda::Section | not s.oclIsUndefined() and s.oclIsTypeOf(mu2consol::AssessmentSection)) or &#xD;&#xA;self.getAllSections()->one(s : cda::Section | not s.oclIsUndefined() and s.oclIsTypeOf(mu2consol::AssessmentAndPlanSection)) or &#xD;&#xA;self.getAllSections()->one(s : cda::Section | not s.oclIsUndefined() and s.oclIsTypeOf(mu2consol::HospitalAdmissionDiagnosisSection)) or &#xD;&#xA;self.getAllSections()->one(s : cda::Section | not s.oclIsUndefined() and s.oclIsTypeOf(mu2consol::HospitalDischargeDiagnosisSection)) or &#xD;&#xA;self.getAllSections()->one(s : cda::Section | not s.oclIsUndefined() and s.oclIsTypeOf(mu2consol::PostoperativeDiagnosisSection)) or  &#xD;&#xA;self.getAllSections()->one(s : cda::Section | not s.oclIsUndefined() and s.oclIsTypeOf(mu2consol::PostprocedureDiagnosisSection)) or &#xD;&#xA;self.getAllSections()->one(s : cda::Section | not s.oclIsUndefined() and s.oclIsTypeOf(consol::EncountersSection)) or &#xD;&#xA;self.getAllSections()->one(s : cda::Section | not s.oclIsUndefined() and s.oclIsTypeOf(consol::ProblemSection)) )</body>
-        </specification>
-      </ownedRule>
-      <ownedRule xmi:id="_n-eIsN32EeGdQcioKnmIhA" name="canHaveEitherRequiredOrOptionalVitalSigns" constrainedElement="_VG3DUNkxEeGsqcJR8eqiMw">
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_wbQu0N32EeGdQcioKnmIhA">
-          <language>OCL</language>
-          <language>Analysis</language>
-          <body>(self.getAllSections()->one(s : cda::Section | not s.oclIsUndefined() and s.oclIsTypeOf(consol::VitalSignsSection)) or  &#xD;&#xA;self.getAllSections()->one(s : cda::Section | not s.oclIsUndefined() and s.oclIsTypeOf(consol::VitalSignsSectionEntriesOptional)))</body>
-          <body>SHALL have one of Vital Signs (entries optional: 2.16.840.1.113883.10.20.22.2.4 or entries required: 2.16.840.1.113883.10.20.22.2.4.1)</body>
-        </specification>
-      </ownedRule>
       <ownedRule xmi:id="_gfm_8OvXEeGkopdZmUN1Xw" name="carePlanning" constrainedElement="_VG3DUNkxEeGsqcJR8eqiMw">
         <specification xmi:type="uml:OpaqueExpression" xmi:id="_jopNcOvXEeGkopdZmUN1Xw">
           <language>OCL</language>
           <language>Analysis</language>
-          <body>(self.getAllSections()->one(s : cda::Section | not s.oclIsUndefined() and s.oclIsTypeOf(mu2consol::PlanOfCareSection)) or &#xD;&#xA;self.getAllSections()->one(s : cda::Section | not s.oclIsUndefined() and s.oclIsTypeOf(mu2consol::AssessmentAndPlanSection)) or &#xD;&#xA;self.getAllSections()->one(s : cda::Section | not s.oclIsUndefined() and s.oclIsTypeOf(consol::InterventionsSection)))</body>
+          <body>(self.getAllSections()->one(s : cda::Section | not s.oclIsUndefined() and s.oclIsTypeOf(mu2consol::PlanOfCareSection)) or &#xD;&#xA;self.getAllSections()->one(s : cda::Section | not s.oclIsUndefined() and s.oclIsTypeOf(mu2consol::AssessmentAndPlanSection)))</body>
           <body>SHALL have one of Plan of Care (2.16.840.1.113883.10.20.22.2.10) or Assessment and Plan (2.16.840.1.113883.10.20.22.2.9) or Interventions (2.16.840.1.113883.10.20.21.2.3)</body>
-        </specification>
-      </ownedRule>
-      <ownedRule xmi:id="_n8bhYOvYEeGkopdZmUN1Xw" name="medicationAllergy" constrainedElement="_VG3DUNkxEeGsqcJR8eqiMw">
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_tP9QgOvYEeGkopdZmUN1Xw">
-          <language>OCL</language>
-          <language>Analysis</language>
-          <body>(self.getAllSections()->one(s : cda::Section | not s.oclIsUndefined() and s.oclIsTypeOf(consol::AllergiesSection)) or &#xD;&#xA;self.getAllSections()->one(s : cda::Section | not s.oclIsUndefined() and s.oclIsTypeOf(mu2consol::AllergiesSectionEntriesOptional)))</body>
-          <body>SHALL have one of Allergies (entries optional: 2.16.840.1.113883.10.20.22.2.6 or entries required: 2.16.840.1.113883.10.20.22.2.6.1)</body>
-        </specification>
-      </ownedRule>
-      <ownedRule xmi:id="_VUReAOvZEeGkopdZmUN1Xw" name="reasonForHospitalization" constrainedElement="_VG3DUNkxEeGsqcJR8eqiMw">
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_ZBL0oOvZEeGkopdZmUN1Xw">
-          <language>OCL</language>
-          <language>Analysis</language>
-          <body>(self.getAllSections()->one(s : cda::Section | not s.oclIsUndefined() and s.oclIsTypeOf(mu2consol::HospitalAdmissionDiagnosisSection)) or &#xD;&#xA;self.getAllSections()->one(s : cda::Section | not s.oclIsUndefined() and s.oclIsTypeOf(mu2consol::PreoperativeDiagnosisSection)))</body>
-          <body>SHALL have one of Hospital Admission Diagnosis (2.16.840.1.113883.10.20.22.2.43) or Preoperative Diagnosis (2.16.840.1.113883.10.20.22.2.35)</body>
-        </specification>
-      </ownedRule>
-      <ownedRule xmi:id="_izlGUOvaEeGkopdZmUN1Xw" name="medicationList" constrainedElement="_VG3DUNkxEeGsqcJR8eqiMw">
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_pYRiYOvaEeGkopdZmUN1Xw">
-          <language>OCL</language>
-          <language>Analysis</language>
-          <body>(self.getAllSections()->one(s : cda::Section | not s.oclIsUndefined() and s.oclIsTypeOf(consol::MedicationsSection)) or &#xD;&#xA;self.getAllSections()->one(s : cda::Section | not s.oclIsUndefined() and s.oclIsTypeOf(consol::HospitalDischargeMedicationsSection)) or &#xD;&#xA;self.getAllSections()->one(s : cda::Section | not s.oclIsUndefined() and s.oclIsTypeOf(mu2consol::HospitalAdmissionMedicationsSectionEntriesOptional)))</body>
-          <body>SHALL have one of Medications (entries required: 2.16.840.1.113883.10.20.22.2.1.1) or Hospital Admission Medications (2.16.840.1.113883.10.20.22.2.44 ) or Hospital Discharge Medications (entries required: 2.16.840.1.113883.10.20.22.2.11.1)</body>
-        </specification>
-      </ownedRule>
-      <ownedRule xmi:id="__TV_cO4zEeGT5oaF-4NGAA" name="canHaveEitherAllergyRequiredOrOptionalEntry" constrainedElement="_VG3DUNkxEeGsqcJR8eqiMw">
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_D7OJgO40EeGT5oaF-4NGAA">
-          <language>OCL</language>
-          <language>Analysis</language>
-          <body>(self.getAllSections()->one(s : cda::Section | not s.oclIsUndefined() and s.oclIsTypeOf(consol::AllergiesSection)) or  &#xD;&#xA;self.getAllSections()->one(s : cda::Section | not s.oclIsUndefined() and s.oclIsTypeOf(mu2consol::AllergiesSectionEntriesOptional)))</body>
-          <body>SHALL have one of Allergies (entries optional: 2.16.840.1.113883.10.20.22.2.6 or &#xA;entries required: 2.16.840.1.113883.10.20.22.2.6.1)</body>
         </specification>
       </ownedRule>
       <generalization xmi:id="_VG3qYNkxEeGsqcJR8eqiMw" general="_v-6qsNkMEeGsqcJR8eqiMw"/>
@@ -257,41 +203,31 @@
       </ownedAttribute>
       <ownedAttribute xmi:id="_g_V_oNpiEeGzu8-aAsCS4g" name="medicationsSection" association="_g_V_otpiEeGzu8-aAsCS4g">
         <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-medications.uml#_2NIpgBSVEeGGzu7fmW9pXw"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_g_V_odpiEeGzu8-aAsCS4g"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_fjr54PhyEeGPm7sA61ixGw" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_fjr54fhyEeGPm7sA61ixGw" value="1"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_vDvHcNpiEeGzu8-aAsCS4g" name="hospitalAdmissionMedicationsSectionEntriesOptional" type="_HBzuYODrEeGdSJSga09Dyg" association="_vDvugNpiEeGzu8-aAsCS4g">
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_vDvHcdpiEeGzu8-aAsCS4g"/>
       </ownedAttribute>
-      <ownedAttribute xmi:id="_ytrpoNpiEeGzu8-aAsCS4g" name="hospitalDischargeMedicationsSection" association="_ytrpotpiEeGzu8-aAsCS4g">
-        <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-discharge.uml#_TytVkCUQEeGiOPpZVnfEJA"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ytrpodpiEeGzu8-aAsCS4g"/>
-      </ownedAttribute>
       <ownedAttribute xmi:id="_d0u4wNk5EeGsqcJR8eqiMw" name="allergiesSection" association="_d0vf0dk5EeGsqcJR8eqiMw">
         <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-allergies.uml#_2LMIwBSVEeGGzu7fmW9pXw"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_d0vf0Nk5EeGsqcJR8eqiMw"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_7Dwn4PhrEeGPm7sA61ixGw" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_7Dwn4fhrEeGPm7sA61ixGw" value="1"/>
       </ownedAttribute>
-      <ownedAttribute xmi:id="_zrGKsOAhEeGioIEuA5-ofg" name="allergiesSectionEntriesOptional" type="_szTFwOF8EeGlJOFzBdwM6w" association="_zrGKsuAhEeGioIEuA5-ofg">
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_zrGKseAhEeGioIEuA5-ofg"/>
-      </ownedAttribute>
-      <ownedAttribute xmi:id="_6x1GQNpiEeGzu8-aAsCS4g" name="resultsSection" association="_6x1tUdpiEeGzu8-aAsCS4g">
-        <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-results.uml#_2Js7AxSVEeGGzu7fmW9pXw"/>
+      <ownedAttribute xmi:id="_6x1GQNpiEeGzu8-aAsCS4g" name="resultsSection" type="_R5ZkQAJvEeKIhvHOhwsFvA" association="_6x1tUdpiEeGzu8-aAsCS4g">
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_3qk1MN32EeGdQcioKnmIhA" value="1"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_3qk1Md32EeGdQcioKnmIhA" value="1"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_9j4XINpiEeGzu8-aAsCS4g" name="vitalSignsSection" association="_9j4-MNpiEeGzu8-aAsCS4g">
         <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-vitalsigns.uml#_2OfUcxSVEeGGzu7fmW9pXw"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_9j4XIdpiEeGzu8-aAsCS4g"/>
-      </ownedAttribute>
-      <ownedAttribute xmi:id="_BHaIQNpjEeGzu8-aAsCS4g" name="vitalSignsSectionEntriesOptional" association="_BHaIQtpjEeGzu8-aAsCS4g">
-        <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-vitalsigns.uml#_bRH8sBVeEeGQCvUGzi1kDQ"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_BHaIQdpjEeGzu8-aAsCS4g"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_1hcAEPhxEeGPm7sA61ixGw" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_1hcAEfhxEeGPm7sA61ixGw" value="1"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_owEaYNk4EeGsqcJR8eqiMw" name="planOfCareSection" type="_svnagODKEeGdSJSga09Dyg" association="_owEaYtk4EeGsqcJR8eqiMw">
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_cH_74N30EeGdQcioKnmIhA" value="1"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_cH_74d30EeGdQcioKnmIhA" value="1"/>
       </ownedAttribute>
-      <ownedAttribute xmi:id="_DoUl0NpjEeGzu8-aAsCS4g" name="proceduresSection" association="_DoUl0tpjEeGzu8-aAsCS4g">
-        <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-procedures.uml#_2OAzQRSVEeGGzu7fmW9pXw"/>
+      <ownedAttribute xmi:id="_DoUl0NpjEeGzu8-aAsCS4g" name="proceduresSection" type="_oJZzEAKlEeKIhvHOhwsFvA" association="_DoUl0tpjEeGzu8-aAsCS4g">
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_PXWB8N32EeGdQcioKnmIhA" value="1"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_PXWpAN32EeGdQcioKnmIhA" value="1"/>
       </ownedAttribute>
@@ -300,49 +236,13 @@
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_6iJCwN33EeGdQcioKnmIhA" value="1"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_6iJp0N33EeGdQcioKnmIhA" value="1"/>
       </ownedAttribute>
-      <ownedAttribute xmi:id="_cgJQcNpiEeGzu8-aAsCS4g" name="medicationsAdministeredSection" type="_3poqgODqEeGdSJSga09Dyg" association="_cgJ3gdpiEeGzu8-aAsCS4g">
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_0ID7QN33EeGdQcioKnmIhA" value="1"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_0IEiUN33EeGdQcioKnmIhA" value="1"/>
-      </ownedAttribute>
-      <ownedAttribute xmi:id="_l7asANk5EeGsqcJR8eqiMw" name="reasonForVisitSection" association="_l7bTEdk5EeGsqcJR8eqiMw">
-        <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-other.uml#_Nm64UCscEeGHF88-qhhUMA"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_l7bTENk5EeGsqcJR8eqiMw"/>
-      </ownedAttribute>
-      <ownedAttribute xmi:id="_pPBx0Nk5EeGsqcJR8eqiMw" name="chiefComplaintSection" association="_pPCY4dk5EeGsqcJR8eqiMw">
-        <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-other.uml#_2PWQCBSVEeGGzu7fmW9pXw"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_pPCY4Nk5EeGsqcJR8eqiMw"/>
-      </ownedAttribute>
-      <ownedAttribute xmi:id="_uEHRcNk5EeGsqcJR8eqiMw" name="chiefComplaintAndReasonForVisitSection" association="_uEHRctk5EeGsqcJR8eqiMw">
-        <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-other.uml#_oI7CQCsaEeGHF88-qhhUMA"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_uEHRcdk5EeGsqcJR8eqiMw"/>
-      </ownedAttribute>
       <ownedAttribute xmi:id="_CHFtANk5EeGsqcJR8eqiMw" name="assessmentAndPlanSection" type="_w2gYkODkEeGdSJSga09Dyg" association="_CHFtAtk5EeGsqcJR8eqiMw">
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_CHFtAdk5EeGsqcJR8eqiMw"/>
-      </ownedAttribute>
-      <ownedAttribute xmi:id="_HUPuYNk5EeGsqcJR8eqiMw" name="instructionsSection" type="_ZK4bUODlEeGdSJSga09Dyg" association="_HUQVcdk5EeGsqcJR8eqiMw">
-        <ownedComment xmi:id="_IGBD0N2-EeGdQcioKnmIhA">
-          <body>Instructions Section will satisfy the following MU2 elements :&#xD;
-- Clinical instructions&#xD;
-- Recommended patient decision aids (if applicable to the visit)</body>
-        </ownedComment>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xIMdMN29EeGdQcioKnmIhA" value="1"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xIMdMd29EeGdQcioKnmIhA" value="1"/>
-      </ownedAttribute>
-      <ownedAttribute xmi:id="_DibpoNk5EeGsqcJR8eqiMw" name="interventionsSection" association="_DicQsdk5EeGsqcJR8eqiMw">
-        <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-other.uml#_hqzJADVyEeGaW4kr-GbV8Q"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_DicQsNk5EeGsqcJR8eqiMw"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_NOhUcNk5EeGsqcJR8eqiMw" name="assessmentSection" type="_CaN5MODgEeGdSJSga09Dyg" association="_NOh7gNk5EeGsqcJR8eqiMw">
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_NOhUcdk5EeGsqcJR8eqiMw"/>
       </ownedAttribute>
-      <ownedAttribute xmi:id="_RWi5wNk5EeGsqcJR8eqiMw" name="hospitalAdmissionDiagnosisSection" type="_gl8CMODmEeGdSJSga09Dyg" association="_RWjg0dk5EeGsqcJR8eqiMw">
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_RWjg0Nk5EeGsqcJR8eqiMw"/>
-      </ownedAttribute>
-      <ownedAttribute xmi:id="_TQZ-YNk5EeGsqcJR8eqiMw" name="hospitalDischargeDiagnosisSection" type="_qgJokODmEeGdSJSga09Dyg" association="_TQalcdk5EeGsqcJR8eqiMw">
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_TQalcNk5EeGsqcJR8eqiMw"/>
-      </ownedAttribute>
-      <ownedAttribute xmi:id="_QFsyYNk4EeGsqcJR8eqiMw" name="encountersSection" association="_QFtZcdk4EeGsqcJR8eqiMw">
-        <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-encounters.uml#_2LWg0BSVEeGGzu7fmW9pXw"/>
+      <ownedAttribute xmi:id="_QFsyYNk4EeGsqcJR8eqiMw" name="encountersSection" type="_9AQcQAKcEeKIhvHOhwsFvA" association="_QFtZcdk4EeGsqcJR8eqiMw">
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_kTAbAN3fEeGdQcioKnmIhA" value="1"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_kTAbAd3fEeGdQcioKnmIhA"/>
       </ownedAttribute>
@@ -359,9 +259,9 @@
       <ownedAttribute xmi:id="_xZM98Nk5EeGsqcJR8eqiMw" name="preoperativeDiagnosisSection" type="_bRRt0ODqEeGdSJSga09Dyg" association="_xZNlAdk5EeGsqcJR8eqiMw">
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xZNlANk5EeGsqcJR8eqiMw"/>
       </ownedAttribute>
-      <ownedAttribute xmi:id="_-Hls0OAjEeGioIEuA5-ofg" name="reasonForReferralSection" association="_-Hvd0eAjEeGioIEuA5-ofg">
-        <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-other.uml#_2PWQFxSVEeGGzu7fmW9pXw"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_-Hvd0OAjEeGioIEuA5-ofg"/>
+      <ownedAttribute xmi:id="_kIJcMPh1EeGPm7sA61ixGw" name="functionalStatusSection" type="_do39kPhzEeGPm7sA61ixGw" association="_kIKDQfh1EeGPm7sA61ixGw">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_lkoBQPh1EeGPm7sA61ixGw" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_lkooUPh1EeGPm7sA61ixGw" value="1"/>
       </ownedAttribute>
     </packagedElement>
     <packagedElement xmi:type="uml:Association" xmi:id="_UQ1IUNkzEeGsqcJR8eqiMw" memberEnd="_UQ1vYNkzEeGsqcJR8eqiMw _UQ1IUdkzEeGsqcJR8eqiMw">
@@ -388,20 +288,8 @@
     <packagedElement xmi:type="uml:Association" xmi:id="_CHFtAtk5EeGsqcJR8eqiMw" memberEnd="_CHFtANk5EeGsqcJR8eqiMw _CHGUENk5EeGsqcJR8eqiMw">
       <ownedEnd xmi:id="_CHGUENk5EeGsqcJR8eqiMw" type="_VG3DUNkxEeGsqcJR8eqiMw" association="_CHFtAtk5EeGsqcJR8eqiMw"/>
     </packagedElement>
-    <packagedElement xmi:type="uml:Association" xmi:id="_DicQsdk5EeGsqcJR8eqiMw" memberEnd="_DibpoNk5EeGsqcJR8eqiMw _DicQstk5EeGsqcJR8eqiMw">
-      <ownedEnd xmi:id="_DicQstk5EeGsqcJR8eqiMw" type="_VG3DUNkxEeGsqcJR8eqiMw" association="_DicQsdk5EeGsqcJR8eqiMw"/>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Association" xmi:id="_HUQVcdk5EeGsqcJR8eqiMw" memberEnd="_HUPuYNk5EeGsqcJR8eqiMw _HUQVctk5EeGsqcJR8eqiMw">
-      <ownedEnd xmi:id="_HUQVctk5EeGsqcJR8eqiMw" type="_VG3DUNkxEeGsqcJR8eqiMw" association="_HUQVcdk5EeGsqcJR8eqiMw"/>
-    </packagedElement>
     <packagedElement xmi:type="uml:Association" xmi:id="_NOh7gNk5EeGsqcJR8eqiMw" memberEnd="_NOhUcNk5EeGsqcJR8eqiMw _NOh7gdk5EeGsqcJR8eqiMw">
       <ownedEnd xmi:id="_NOh7gdk5EeGsqcJR8eqiMw" type="_VG3DUNkxEeGsqcJR8eqiMw" association="_NOh7gNk5EeGsqcJR8eqiMw"/>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Association" xmi:id="_RWjg0dk5EeGsqcJR8eqiMw" memberEnd="_RWi5wNk5EeGsqcJR8eqiMw _RWkH4Nk5EeGsqcJR8eqiMw">
-      <ownedEnd xmi:id="_RWkH4Nk5EeGsqcJR8eqiMw" type="_VG3DUNkxEeGsqcJR8eqiMw" association="_RWjg0dk5EeGsqcJR8eqiMw"/>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Association" xmi:id="_TQalcdk5EeGsqcJR8eqiMw" memberEnd="_TQZ-YNk5EeGsqcJR8eqiMw _TQbMgNk5EeGsqcJR8eqiMw">
-      <ownedEnd xmi:id="_TQbMgNk5EeGsqcJR8eqiMw" type="_VG3DUNkxEeGsqcJR8eqiMw" association="_TQalcdk5EeGsqcJR8eqiMw"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Association" xmi:id="_WNQxENk5EeGsqcJR8eqiMw" memberEnd="_WNQKANk5EeGsqcJR8eqiMw _WNQxEdk5EeGsqcJR8eqiMw">
       <ownedEnd xmi:id="_WNQxEdk5EeGsqcJR8eqiMw" type="_VG3DUNkxEeGsqcJR8eqiMw" association="_WNQxENk5EeGsqcJR8eqiMw"/>
@@ -418,23 +306,11 @@
     <packagedElement xmi:type="uml:Association" xmi:id="_jNnB8dk5EeGsqcJR8eqiMw" memberEnd="_jNma4Nk5EeGsqcJR8eqiMw _jNnpANk5EeGsqcJR8eqiMw">
       <ownedEnd xmi:id="_jNnpANk5EeGsqcJR8eqiMw" type="_VG3DUNkxEeGsqcJR8eqiMw" association="_jNnB8dk5EeGsqcJR8eqiMw"/>
     </packagedElement>
-    <packagedElement xmi:type="uml:Association" xmi:id="_l7bTEdk5EeGsqcJR8eqiMw" memberEnd="_l7asANk5EeGsqcJR8eqiMw _l7b6INk5EeGsqcJR8eqiMw">
-      <ownedEnd xmi:id="_l7b6INk5EeGsqcJR8eqiMw" type="_VG3DUNkxEeGsqcJR8eqiMw" association="_l7bTEdk5EeGsqcJR8eqiMw"/>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Association" xmi:id="_pPCY4dk5EeGsqcJR8eqiMw" memberEnd="_pPBx0Nk5EeGsqcJR8eqiMw _pPCY4tk5EeGsqcJR8eqiMw">
-      <ownedEnd xmi:id="_pPCY4tk5EeGsqcJR8eqiMw" type="_VG3DUNkxEeGsqcJR8eqiMw" association="_pPCY4dk5EeGsqcJR8eqiMw"/>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Association" xmi:id="_uEHRctk5EeGsqcJR8eqiMw" memberEnd="_uEHRcNk5EeGsqcJR8eqiMw _uEH4gNk5EeGsqcJR8eqiMw">
-      <ownedEnd xmi:id="_uEH4gNk5EeGsqcJR8eqiMw" type="_VG3DUNkxEeGsqcJR8eqiMw" association="_uEHRctk5EeGsqcJR8eqiMw"/>
-    </packagedElement>
     <packagedElement xmi:type="uml:Association" xmi:id="_xZNlAdk5EeGsqcJR8eqiMw" memberEnd="_xZM98Nk5EeGsqcJR8eqiMw _xZOMENk5EeGsqcJR8eqiMw">
       <ownedEnd xmi:id="_xZOMENk5EeGsqcJR8eqiMw" type="_VG3DUNkxEeGsqcJR8eqiMw" association="_xZNlAdk5EeGsqcJR8eqiMw"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Association" xmi:id="_1OLEYdk5EeGsqcJR8eqiMw" memberEnd="_1OKdUNk5EeGsqcJR8eqiMw _1OLEYtk5EeGsqcJR8eqiMw">
       <ownedEnd xmi:id="_1OLEYtk5EeGsqcJR8eqiMw" type="_VG3DUNkxEeGsqcJR8eqiMw" association="_1OLEYdk5EeGsqcJR8eqiMw"/>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Association" xmi:id="_cgJ3gdpiEeGzu8-aAsCS4g" memberEnd="_cgJQcNpiEeGzu8-aAsCS4g _cgJ3gtpiEeGzu8-aAsCS4g">
-      <ownedEnd xmi:id="_cgJ3gtpiEeGzu8-aAsCS4g" type="_VG3DUNkxEeGsqcJR8eqiMw" association="_cgJ3gdpiEeGzu8-aAsCS4g"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Association" xmi:id="_g_V_otpiEeGzu8-aAsCS4g" memberEnd="_g_V_oNpiEeGzu8-aAsCS4g _g_V_o9piEeGzu8-aAsCS4g">
       <ownedComment xmi:id="_HF_IAOAgEeGioIEuA5-ofg">
@@ -448,12 +324,6 @@
       </ownedComment>
       <ownedEnd xmi:id="_vDvugdpiEeGzu8-aAsCS4g" type="_VG3DUNkxEeGsqcJR8eqiMw" association="_vDvugNpiEeGzu8-aAsCS4g"/>
     </packagedElement>
-    <packagedElement xmi:type="uml:Association" xmi:id="_ytrpotpiEeGzu8-aAsCS4g" memberEnd="_ytrpoNpiEeGzu8-aAsCS4g _ytrpo9piEeGzu8-aAsCS4g">
-      <ownedComment xmi:id="_VWtboOAgEeGioIEuA5-ofg">
-        <body>MU2 Requirement for : 'Medications'</body>
-      </ownedComment>
-      <ownedEnd xmi:id="_ytrpo9piEeGzu8-aAsCS4g" type="_VG3DUNkxEeGsqcJR8eqiMw" association="_ytrpotpiEeGzu8-aAsCS4g"/>
-    </packagedElement>
     <packagedElement xmi:type="uml:Association" xmi:id="_2mtwsdpiEeGzu8-aAsCS4g" memberEnd="_2mtJoNpiEeGzu8-aAsCS4g _2mtwstpiEeGzu8-aAsCS4g">
       <ownedComment xmi:id="_w2OhQOAfEeGioIEuA5-ofg">
         <body>MU2 Requirement for 'Smoking status'</body>
@@ -466,20 +336,11 @@
     <packagedElement xmi:type="uml:Association" xmi:id="_9j4-MNpiEeGzu8-aAsCS4g" memberEnd="_9j4XINpiEeGzu8-aAsCS4g _9j4-MdpiEeGzu8-aAsCS4g">
       <ownedEnd xmi:id="_9j4-MdpiEeGzu8-aAsCS4g" type="_VG3DUNkxEeGsqcJR8eqiMw" association="_9j4-MNpiEeGzu8-aAsCS4g"/>
     </packagedElement>
-    <packagedElement xmi:type="uml:Association" xmi:id="_BHaIQtpjEeGzu8-aAsCS4g" memberEnd="_BHaIQNpjEeGzu8-aAsCS4g _BHaIQ9pjEeGzu8-aAsCS4g">
-      <ownedEnd xmi:id="_BHaIQ9pjEeGzu8-aAsCS4g" type="_VG3DUNkxEeGsqcJR8eqiMw" association="_BHaIQtpjEeGzu8-aAsCS4g"/>
-    </packagedElement>
     <packagedElement xmi:type="uml:Association" xmi:id="_DoUl0tpjEeGzu8-aAsCS4g" memberEnd="_DoUl0NpjEeGzu8-aAsCS4g _DoVM4NpjEeGzu8-aAsCS4g">
       <ownedEnd xmi:id="_DoVM4NpjEeGzu8-aAsCS4g" type="_VG3DUNkxEeGsqcJR8eqiMw" association="_DoUl0tpjEeGzu8-aAsCS4g"/>
     </packagedElement>
-    <packagedElement xmi:type="uml:Association" xmi:id="_zrGKsuAhEeGioIEuA5-ofg" memberEnd="_zrGKsOAhEeGioIEuA5-ofg _zrGKs-AhEeGioIEuA5-ofg">
-      <ownedEnd xmi:id="_zrGKs-AhEeGioIEuA5-ofg" type="_VG3DUNkxEeGsqcJR8eqiMw" association="_zrGKsuAhEeGioIEuA5-ofg"/>
-    </packagedElement>
     <packagedElement xmi:type="uml:Association" xmi:id="_zjuFcuAjEeGioIEuA5-ofg" memberEnd="_zjuFcOAjEeGioIEuA5-ofg _zjuFc-AjEeGioIEuA5-ofg">
       <ownedEnd xmi:id="_zjuFc-AjEeGioIEuA5-ofg" type="_VG3DUNkxEeGsqcJR8eqiMw" association="_zjuFcuAjEeGioIEuA5-ofg"/>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Association" xmi:id="_-Hvd0eAjEeGioIEuA5-ofg" memberEnd="_-Hls0OAjEeGioIEuA5-ofg _-Hvd0uAjEeGioIEuA5-ofg">
-      <ownedEnd xmi:id="_-Hvd0uAjEeGioIEuA5-ofg" type="_VG3DUNkxEeGsqcJR8eqiMw" association="_-Hvd0eAjEeGioIEuA5-ofg"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Association" xmi:id="_4lJeEODKEeGdSJSga09Dyg" memberEnd="_4lI3AODKEeGdSJSga09Dyg _4lJeEeDKEeGdSJSga09Dyg">
       <ownedEnd xmi:id="_4lJeEeDKEeGdSJSga09Dyg" type="_svnagODKEeGdSJSga09Dyg" association="_4lJeEODKEeGdSJSga09Dyg"/>
@@ -489,41 +350,6 @@
     </packagedElement>
     <packagedElement xmi:type="uml:Association" xmi:id="_4lQLw-DKEeGdSJSga09Dyg" memberEnd="_4lQLwODKEeGdSJSga09Dyg _4lQy0ODKEeGdSJSga09Dyg">
       <ownedEnd xmi:id="_4lQy0ODKEeGdSJSga09Dyg" type="_svnagODKEeGdSJSga09Dyg" association="_4lQLw-DKEeGdSJSga09Dyg"/>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Class" xmi:id="_Ec-GAODeEeGdSJSga09Dyg" name="AssessmentAndPlanForCarePlanning">
-      <ownedComment xmi:id="_XvBEkOGFEeG708usbCxwpw">
-        <body>INLINE</body>
-      </ownedComment>
-      <ownedRule xmi:id="_VDXc8OJREeGzd4w2xo094w" name="oneOfPlanOfCareEntry" constrainedElement="_Ec-GAODeEeGdSJSga09Dyg">
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_uj1mgOJREeGzd4w2xo094w">
-          <language>OCL</language>
-          <body>self.getProcedures()->exists(p : cda::Procedure | p.oclIsKindOf(consol::PlanOfCareActivityProcedure)) or self.getSubstanceAdministrations()->exists(s : cda::SubstanceAdministration | s.oclIsKindOf(consol::PlanOfCareActivitySubstanceAdministration)) or self.getSupplies()->exists(sp : cda::Supply | sp.oclIsKindOf(consol::PlanOfCareActivitySupply))</body>
-        </specification>
-      </ownedRule>
-      <generalization xmi:id="_FkUIkODeEeGdSJSga09Dyg">
-        <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-other.uml#_2Rwq0BSVEeGGzu7fmW9pXw"/>
-      </generalization>
-      <ownedAttribute xmi:id="_KOL2sODeEeGdSJSga09Dyg" name="planOfCareActivityProcedure" association="_KOMdweDeEeGdSJSga09Dyg">
-        <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-planofcare.uml#_2NiSKhSVEeGGzu7fmW9pXw"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_KOMdwODeEeGdSJSga09Dyg"/>
-      </ownedAttribute>
-      <ownedAttribute xmi:id="_XM5v4ODeEeGdSJSga09Dyg" name="planOfCareActivitySubstanceAdministration" association="_XM6W8eDeEeGdSJSga09Dyg">
-        <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-planofcare.uml#_2NoYwxSVEeGGzu7fmW9pXw"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XM6W8ODeEeGdSJSga09Dyg"/>
-      </ownedAttribute>
-      <ownedAttribute xmi:id="_c8csoODeEeGdSJSga09Dyg" name="planOfCareActivitySupply" association="_c8dTsODeEeGdSJSga09Dyg">
-        <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-planofcare.uml#_2NoY5BSVEeGGzu7fmW9pXw"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_c8csoeDeEeGdSJSga09Dyg"/>
-      </ownedAttribute>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Association" xmi:id="_KOMdweDeEeGdSJSga09Dyg" memberEnd="_KOL2sODeEeGdSJSga09Dyg _KONE0ODeEeGdSJSga09Dyg">
-      <ownedEnd xmi:id="_KONE0ODeEeGdSJSga09Dyg" type="_Ec-GAODeEeGdSJSga09Dyg" association="_KOMdweDeEeGdSJSga09Dyg"/>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Association" xmi:id="_XM6W8eDeEeGdSJSga09Dyg" memberEnd="_XM5v4ODeEeGdSJSga09Dyg _XM6W8uDeEeGdSJSga09Dyg">
-      <ownedEnd xmi:id="_XM6W8uDeEeGdSJSga09Dyg" type="_Ec-GAODeEeGdSJSga09Dyg" association="_XM6W8eDeEeGdSJSga09Dyg"/>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Association" xmi:id="_c8dTsODeEeGdSJSga09Dyg" memberEnd="_c8csoODeEeGdSJSga09Dyg _c8dTseDeEeGdSJSga09Dyg">
-      <ownedEnd xmi:id="_c8dTseDeEeGdSJSga09Dyg" type="_Ec-GAODeEeGdSJSga09Dyg" association="_c8dTsODeEeGdSJSga09Dyg"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_svnagODKEeGdSJSga09Dyg" name="PlanOfCareSection">
       <ownedComment xmi:id="_wajPYOFzEeGlJOFzBdwM6w">
@@ -542,20 +368,20 @@
       </generalization>
       <ownedAttribute xmi:id="_4lI3AODKEeGdSJSga09Dyg" name="planOfCareActivityAct" visibility="private" association="_4lJeEODKEeGdSJSga09Dyg">
         <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-planofcare.uml#_2NWE5xSVEeGGzu7fmW9pXw"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Kk8rgODLEeGdSJSga09Dyg" value="1"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Kk8rgeDLEeGdSJSga09Dyg"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_5u6i0AQGEeKNWa1y_3e0dw" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_5u6i0QQGEeKNWa1y_3e0dw"/>
         <redefinedProperty href="../../org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-planofcare.uml#_2NWE5BSVEeGGzu7fmW9pXw"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_4lNvgODKEeGdSJSga09Dyg" name="planOfCareActivityEncounter" visibility="private" association="_4lOWkODKEeGdSJSga09Dyg">
         <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-planofcare.uml#_2NWFBBSVEeGGzu7fmW9pXw"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_LBfdkODLEeGdSJSga09Dyg" value="1"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_LBfdkeDLEeGdSJSga09Dyg"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_4y_GEAQGEeKNWa1y_3e0dw" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_4y_GEQQGEeKNWa1y_3e0dw"/>
         <redefinedProperty href="../../org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-planofcare.uml#_2NWFARSVEeGGzu7fmW9pXw"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_4lQLwODKEeGdSJSga09Dyg" name="planOfCareActivityObservation" visibility="private" association="_4lQLw-DKEeGdSJSga09Dyg">
         <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-planofcare.uml#_2NcLjhSVEeGGzu7fmW9pXw"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_EW2pEPhaEeGPm7sA61ixGw" value="1"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_EW3QIPhaEeGPm7sA61ixGw" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_wf5OgAQGEeKNWa1y_3e0dw" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_wf51kAQGEeKNWa1y_3e0dw" value="1"/>
         <redefinedProperty href="../../org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-planofcare.uml#_2NcLixSVEeGGzu7fmW9pXw"/>
       </ownedAttribute>
     </packagedElement>
@@ -575,24 +401,8 @@
     <packagedElement xmi:type="uml:Association" xmi:id="_GmMxceDgEeGdSJSga09Dyg" memberEnd="_GmK8QODgEeGdSJSga09Dyg _GmNYgODgEeGdSJSga09Dyg">
       <ownedEnd xmi:id="_GmNYgODgEeGdSJSga09Dyg" type="_CaN5MODgEeGdSJSga09Dyg" association="_GmMxceDgEeGdSJSga09Dyg"/>
     </packagedElement>
-    <packagedElement xmi:type="uml:Class" xmi:id="_g1AyQODhEeGdSJSga09Dyg" name="AssessmentAndPlanForConditionOrConcern">
-      <ownedComment xmi:id="_Zls5YOGFEeG708usbCxwpw">
-        <body>INLINE</body>
-      </ownedComment>
-      <generalization xmi:id="_iIDHcODhEeGdSJSga09Dyg">
-        <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-other.uml#_2Rwq0BSVEeGGzu7fmW9pXw"/>
-      </generalization>
-      <ownedAttribute xmi:id="_kGi0cODhEeGdSJSga09Dyg" name="problemObservation" association="_kGkCkeDhEeGdSJSga09Dyg">
-        <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-problems.uml#_5Ha7ABUyEeGbmN_W114JUw"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_6SSKoOJREeGzd4w2xo094w" value="1"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_6SSKoeJREeGzd4w2xo094w" value="1"/>
-      </ownedAttribute>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Association" xmi:id="_kGkCkeDhEeGdSJSga09Dyg" memberEnd="_kGi0cODhEeGdSJSga09Dyg _kGkCkuDhEeGdSJSga09Dyg">
-      <ownedEnd xmi:id="_kGkCkuDhEeGdSJSga09Dyg" type="_g1AyQODhEeGdSJSga09Dyg" association="_kGkCkeDhEeGdSJSga09Dyg"/>
-    </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_w2gYkODkEeGdSJSga09Dyg" name="AssessmentAndPlanSection">
-      <ownedComment xmi:id="_b1SWYOGFEeG708usbCxwpw">
+      <ownedComment xmi:id="_jFHLgPhtEeGPm7sA61ixGw">
         <body>INLINE</body>
       </ownedComment>
       <generalization xmi:id="_ySywYODkEeGdSJSga09Dyg">
@@ -762,21 +572,10 @@
     <packagedElement xmi:type="uml:Association" xmi:id="_KZgqA-DrEeGdSJSga09Dyg" memberEnd="_KZgqAODrEeGdSJSga09Dyg _KZhREODrEeGdSJSga09Dyg">
       <ownedEnd xmi:id="_KZhREODrEeGdSJSga09Dyg" type="_HBzuYODrEeGdSJSga09Dyg" association="_KZgqA-DrEeGdSJSga09Dyg"/>
     </packagedElement>
-    <packagedElement xmi:type="uml:Class" xmi:id="_szTFwOF8EeGlJOFzBdwM6w" name="AllergiesSectionEntriesOptional">
-      <generalization xmi:id="_ugMFYOF8EeGlJOFzBdwM6w">
-        <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-allergies.uml#_bGzYgBVdEeGQCvUGzi1kDQ"/>
-      </generalization>
-      <ownedAttribute xmi:id="_wF3CsOF8EeGlJOFzBdwM6w" name="allergyProblemAct" association="_wF3pwOF8EeGlJOFzBdwM6w">
-        <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-allergies.uml#_2EAisBSVEeGGzu7fmW9pXw"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_w6wDUOF8EeGlJOFzBdwM6w" value="1"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_w6wDUeF8EeGlJOFzBdwM6w" value="1"/>
-        <redefinedProperty href="../../org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-allergies.uml#_lqJOQB0aEeGGdsHVD60BZA"/>
-      </ownedAttribute>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Association" xmi:id="_wF3pwOF8EeGlJOFzBdwM6w" memberEnd="_wF3CsOF8EeGlJOFzBdwM6w _wF3pweF8EeGlJOFzBdwM6w">
-      <ownedEnd xmi:id="_wF3pweF8EeGlJOFzBdwM6w" type="_szTFwOF8EeGlJOFzBdwM6w" association="_wF3pwOF8EeGlJOFzBdwM6w"/>
-    </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_7D0CQOzmEeGT-eFu7Ghgjw" name="ClinicalOfficeVisitSummary">
+      <ownedComment xmi:id="_V_Po0PhqEeGPm7sA61ixGw">
+        <body>MU2 170.314(e)(2) Clinical Summary</body>
+      </ownedComment>
       <ownedRule xmi:id="_F7KU8O1YEeGT-eFu7Ghgjw" name="responsibleParty" constrainedElement="_7D0CQOzmEeGT-eFu7Ghgjw">
         <ownedComment xmi:id="_HLw1oO1iEeGT-eFu7Ghgjw">
           <body>QUERY</body>
@@ -784,39 +583,6 @@
         <specification xmi:type="uml:OpaqueExpression" xmi:id="_Ke17gO1YEeGT-eFu7Ghgjw">
           <language>OCL</language>
           <body>self.componentOf->excluding(null).encompassingEncounter->excluding(null)->reject(responsibleParty->one(responsibleParty : &#xD;&#xD;&#xA;cda::ResponsibleParty | not responsibleParty.oclIsUndefined() and responsibleParty.oclIsKindOf(rim::Participation)))</body>
-        </specification>
-      </ownedRule>
-      <ownedRule xmi:id="_Zuc5QO1YEeGT-eFu7Ghgjw" name="location" constrainedElement="_7D0CQOzmEeGT-eFu7Ghgjw">
-        <ownedComment xmi:id="_eM8kMO1gEeGT-eFu7Ghgjw">
-          <body>QUERY</body>
-        </ownedComment>
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_cyHekO1YEeGT-eFu7Ghgjw">
-          <language>OCL</language>
-          <body>self.componentOf->excluding(null).encompassingEncounter->excluding(null)->reject(location->one(location : cda::Location | not &#xD;&#xD;&#xA;location.oclIsUndefined() and location.oclIsKindOf(rim::Participation)))</body>
-        </specification>
-      </ownedRule>
-      <ownedRule xmi:id="_yi4xUO1aEeGT-eFu7Ghgjw" name="medicationList" constrainedElement="_7D0CQOzmEeGT-eFu7Ghgjw">
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_zMWlEO1aEeGT-eFu7Ghgjw">
-          <language>OCL</language>
-          <language>Analysis</language>
-          <body>(self.getAllSections()->one(s : cda::Section | not s.oclIsUndefined() and s.oclIsTypeOf(consol::MedicationsSection)) or &#xD;&#xA;self.getAllSections()->one(s : cda::Section | not s.oclIsUndefined() and s.oclIsTypeOf(consol::HospitalDischargeMedicationsSection)) or &#xD;&#xA;self.getAllSections()->one(s : cda::Section | not s.oclIsUndefined() and s.oclIsTypeOf(mu2consol::HospitalAdmissionMedicationsSectionEntriesOptional)))</body>
-          <body>SHALL have one of Medications (entries required: 2.16.840.1.113883.10.20.22.2.1.1) or Hospital Admission Medications (2.16.840.1.113883.10.20.22.2.44 ) or Hospital Discharge Medications (entries required: 2.16.840.1.113883.10.20.22.2.11.1)</body>
-        </specification>
-      </ownedRule>
-      <ownedRule xmi:id="_GlWaEO1bEeGT-eFu7Ghgjw" name="medicationAllergy" constrainedElement="_7D0CQOzmEeGT-eFu7Ghgjw">
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_IcWX8O1bEeGT-eFu7Ghgjw">
-          <language>OCL</language>
-          <language>Analysis</language>
-          <body>(self.getAllSections()->one(s : cda::Section | not s.oclIsUndefined() and s.oclIsTypeOf(consol::AllergiesSection)) or &#xD;&#xA;self.getAllSections()->one(s : cda::Section | not s.oclIsUndefined() and s.oclIsTypeOf(mu2consol::AllergiesSectionEntriesOptional)))</body>
-          <body>SHALL have one of Allergies (entries optional: 2.16.840.1.113883.10.20.22.2.6 or entries required: 2.16.840.1.113883.10.20.22.2.6.1)</body>
-        </specification>
-      </ownedRule>
-      <ownedRule xmi:id="_VchCoO1bEeGT-eFu7Ghgjw" name="vitalSigns" constrainedElement="_7D0CQOzmEeGT-eFu7Ghgjw">
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_XSEPAO1bEeGT-eFu7Ghgjw">
-          <language>OCL</language>
-          <language>Analysis</language>
-          <body>(self.getAllSections()->one(s : cda::Section | not s.oclIsUndefined() and s.oclIsTypeOf(consol::VitalSignsSection)) or  &#xD;&#xA;self.getAllSections()->one(s : cda::Section | not s.oclIsUndefined() and s.oclIsTypeOf(consol::VitalSignsSectionEntriesOptional)))</body>
-          <body>SHALL have one of Vital Signs (entries optional: 2.16.840.1.113883.10.20.22.2.4 or entries required: 2.16.840.1.113883.10.20.22.2.4.1)</body>
         </specification>
       </ownedRule>
       <ownedRule xmi:id="_kNHwMO1bEeGT-eFu7Ghgjw" name="reasonForOfficeVisit" constrainedElement="_7D0CQOzmEeGT-eFu7Ghgjw">
@@ -831,15 +597,44 @@
         <specification xmi:type="uml:OpaqueExpression" xmi:id="_DrZ8AO1cEeGT-eFu7Ghgjw">
           <language>OCL</language>
           <language>Analysis</language>
-          <body>(self.getAllSections()->one(s : cda::Section | not s.oclIsUndefined() and s.oclIsTypeOf(mu2consol::PlanOfCareSection)) or &#xD;&#xA;self.getAllSections()->one(s : cda::Section | not s.oclIsUndefined() and s.oclIsTypeOf(mu2consol::AssessmentAndPlanSection)) or &#xD;&#xA;self.getAllSections()->one(s : cda::Section | not s.oclIsUndefined() and s.oclIsTypeOf(consol::InterventionsSection)))</body>
+          <body>(self.getAllSections()->one(s : cda::Section | not s.oclIsUndefined() and s.oclIsTypeOf(mu2consol::PlanOfCareSection)) or &#xD;&#xA;self.getAllSections()->one(s : cda::Section | not s.oclIsUndefined() and s.oclIsTypeOf(mu2consol::AssessmentAndPlanSection)))</body>
           <body>SHALL have one of Plan of Care (2.16.840.1.113883.10.20.22.2.10) or Assessment and Plan (2.16.840.1.113883.10.20.22.2.9) or Interventions (2.16.840.1.113883.10.20.21.2.3)</body>
         </specification>
       </ownedRule>
+      <ownedRule xmi:id="_fRfCgPhlEeGPm7sA61ixGw" name="effectiveTime" constrainedElement="_7D0CQOzmEeGT-eFu7Ghgjw">
+        <ownedComment xmi:id="_fRfCgfhlEeGPm7sA61ixGw">
+          <body>QUERY</body>
+        </ownedComment>
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_fRfCgvhlEeGPm7sA61ixGw">
+          <language>OCL</language>
+          <language>Analysis</language>
+          <body>self.componentOf->excluding(null).encompassingEncounter->excluding(null)->reject((effectiveTime.oclIsUndefined() or &#xD;&#xD;&#xA;effectiveTime.isNullFlavorUndefined()) implies (not effectiveTime.oclIsUndefined()))</body>
+          <body>Date of Visit</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_8kY74PhlEeGPm7sA61ixGw" name="location" constrainedElement="_7D0CQOzmEeGT-eFu7Ghgjw">
+        <ownedComment xmi:id="_BORREPhmEeGPm7sA61ixGw">
+          <body>QUERY</body>
+        </ownedComment>
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_-WWowPhlEeGPm7sA61ixGw">
+          <language>OCL</language>
+          <language>Analysis</language>
+          <body>self.componentOf->excluding(null).encompassingEncounter->excluding(null)->reject(location->one(location : cda::Location | &#xD;&#xD;&#xA;not location.oclIsUndefined() and location.oclIsKindOf(rim::Participation)))</body>
+          <body>Visit Location</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_1Y4aoPhpEeGPm7sA61ixGw" name="planOfCareActOrEncounter" constrainedElement="_7D0CQOzmEeGT-eFu7Ghgjw">
+        <ownedComment xmi:id="_6FsIAPhpEeGPm7sA61ixGw">
+          <body>QUERY</body>
+        </ownedComment>
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_5W3TIPhpEeGPm7sA61ixGw">
+          <language>Analysis</language>
+          <language>OCL</language>
+          <body>Future Scheduled Appointments and Referrals to Other Providers</body>
+          <body>self.retrievePlanOfCareSection()->excluding(null)->reject(retrievePlanOfCareSection().getActs()->exists(a : cda::Act | a.oclIsKindOf(consol::PlanOfCareActivityAct)) or retrievePlanOfCareSection().getEncounters()->exists(e : cda::Encounter | e.oclIsKindOf(consol::PlanOfCareActivityEncounter)))</body>
+        </specification>
+      </ownedRule>
       <generalization xmi:id="_7D0pUOzmEeGT-eFu7Ghgjw" general="_v-6qsNkMEeGsqcJR8eqiMw"/>
-      <ownedAttribute xmi:id="_M6ZpUOznEeGT-eFu7Ghgjw" name="socialHistorySection" type="_9frdwO1UEeGT-eFu7Ghgjw" association="_M6aQYeznEeGT-eFu7Ghgjw">
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Ovp6wOznEeGT-eFu7Ghgjw" value="1"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Ovqh0OznEeGT-eFu7Ghgjw" value="1"/>
-      </ownedAttribute>
       <ownedAttribute xmi:id="_jg8YYOznEeGT-eFu7Ghgjw" name="problemSection" association="_jg8_ceznEeGT-eFu7Ghgjw">
         <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-problems.uml#_2LSPYBSVEeGGzu7fmW9pXw"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_lcQ1kOznEeGT-eFu7Ghgjw" value="1"/>
@@ -847,50 +642,39 @@
       </ownedAttribute>
       <ownedAttribute xmi:id="_JU004O1XEeGT-eFu7Ghgjw" name="medicationsSection" association="_JU1b8O1XEeGT-eFu7Ghgjw">
         <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-medications.uml#_2NIpgBSVEeGGzu7fmW9pXw"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_JU004e1XEeGT-eFu7Ghgjw"/>
-      </ownedAttribute>
-      <ownedAttribute xmi:id="_NLyfYO1XEeGT-eFu7Ghgjw" name="hospitalAdmissionMedicationsSectionEntriesOptional" type="_HBzuYODrEeGdSJSga09Dyg" association="_NLzGce1XEeGT-eFu7Ghgjw">
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_NLzGcO1XEeGT-eFu7Ghgjw"/>
-      </ownedAttribute>
-      <ownedAttribute xmi:id="_RTbqMO1XEeGT-eFu7Ghgjw" name="hospitalDischargeMedicationsSection" association="_RTcRQO1XEeGT-eFu7Ghgjw">
-        <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-discharge.uml#_TytVkCUQEeGiOPpZVnfEJA"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_RTbqMe1XEeGT-eFu7Ghgjw"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_VP-E0PhmEeGPm7sA61ixGw" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_VP-E0fhmEeGPm7sA61ixGw" value="1"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_WZ5NsO1XEeGT-eFu7Ghgjw" name="allergiesSection" association="_WZ50wO1XEeGT-eFu7Ghgjw">
         <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-allergies.uml#_2LMIwBSVEeGGzu7fmW9pXw"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_WZ5Nse1XEeGT-eFu7Ghgjw"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_L6gxUPhmEeGPm7sA61ixGw" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_L6gxUfhmEeGPm7sA61ixGw" value="1"/>
       </ownedAttribute>
-      <ownedAttribute xmi:id="_Zkp5gO1XEeGT-eFu7Ghgjw" name="allergiesSectionEntriesOptional" type="_szTFwOF8EeGlJOFzBdwM6w" association="_Zkqgke1XEeGT-eFu7Ghgjw">
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ZkqgkO1XEeGT-eFu7Ghgjw"/>
-      </ownedAttribute>
-      <ownedAttribute xmi:id="_cdo40O1XEeGT-eFu7Ghgjw" name="resultsSection" association="_cdpf4e1XEeGT-eFu7Ghgjw">
-        <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-results.uml#_2Js7AxSVEeGGzu7fmW9pXw"/>
+      <ownedAttribute xmi:id="_cdo40O1XEeGT-eFu7Ghgjw" name="resultsSection" type="_R5ZkQAJvEeKIhvHOhwsFvA" association="_cdpf4e1XEeGT-eFu7Ghgjw">
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_dw9h4O1XEeGT-eFu7Ghgjw" value="1"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_dw9h4e1XEeGT-eFu7Ghgjw" value="1"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_jPHzsO1XEeGT-eFu7Ghgjw" name="vitalSignsSection" association="_jPHzsu1XEeGT-eFu7Ghgjw">
         <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-vitalsigns.uml#_2OfUcxSVEeGGzu7fmW9pXw"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_jPHzse1XEeGT-eFu7Ghgjw"/>
-      </ownedAttribute>
-      <ownedAttribute xmi:id="_kb-BUO1XEeGT-eFu7Ghgjw" name="vitalSignsSectionEntriesOptional" association="_kb-oYO1XEeGT-eFu7Ghgjw">
-        <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-vitalsigns.uml#_bRH8sBVeEeGQCvUGzi1kDQ"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_kb-BUe1XEeGT-eFu7Ghgjw"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_1a6iUPhmEeGPm7sA61ixGw" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_1a7JYPhmEeGPm7sA61ixGw" value="1"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_oCkUkO1XEeGT-eFu7Ghgjw" name="planOfCareSection" type="_svnagODKEeGdSJSga09Dyg" association="_oCk7oe1XEeGT-eFu7Ghgjw">
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_qgDqsO1XEeGT-eFu7Ghgjw" value="1"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_qgERwO1XEeGT-eFu7Ghgjw" value="1"/>
       </ownedAttribute>
-      <ownedAttribute xmi:id="_u5An8O1XEeGT-eFu7Ghgjw" name="proceduresSection" association="_u5BPAe1XEeGT-eFu7Ghgjw">
-        <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-procedures.uml#_2OAzQRSVEeGGzu7fmW9pXw"/>
+      <ownedAttribute xmi:id="_u5An8O1XEeGT-eFu7Ghgjw" name="proceduresSection" type="_oJZzEAKlEeKIhvHOhwsFvA" association="_u5BPAe1XEeGT-eFu7Ghgjw">
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_w3VV0O1XEeGT-eFu7Ghgjw" value="1"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_w3VV0e1XEeGT-eFu7Ghgjw" value="1"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_TUY_4O1YEeGT-eFu7Ghgjw" name="immunizationsSection" association="_TUZm8e1YEeGT-eFu7Ghgjw">
         <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-immunizations.uml#_2L7voBSVEeGGzu7fmW9pXw"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_TUZm8O1YEeGT-eFu7Ghgjw"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_x0VdMPhmEeGPm7sA61ixGw" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_x0VdMfhmEeGPm7sA61ixGw" value="1"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_VvV_YO1YEeGT-eFu7Ghgjw" name="medicationsAdministeredSection" type="_3poqgODqEeGdSJSga09Dyg" association="_VvWmce1YEeGT-eFu7Ghgjw">
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_VvWmcO1YEeGT-eFu7Ghgjw"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_kAhvEPhmEeGPm7sA61ixGw" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_kAhvEfhmEeGPm7sA61ixGw" value="1"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_hzqs4O1YEeGT-eFu7Ghgjw" name="reasonForVisitSection" association="_hzrT8e1YEeGT-eFu7Ghgjw">
         <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-other.uml#_Nm64UCscEeGHF88-qhhUMA"/>
@@ -905,20 +689,26 @@
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_luKzkO1YEeGT-eFu7Ghgjw"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_Eqd3MO1aEeGT-eFu7Ghgjw" name="assessmentAndPlanSection" type="_w2gYkODkEeGdSJSga09Dyg" association="_EqeeQe1aEeGT-eFu7Ghgjw">
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_FmDVsO1aEeGT-eFu7Ghgjw" value="1"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_FmD8wO1aEeGT-eFu7Ghgjw" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_zjaYsPhnEeGPm7sA61ixGw" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_zjaYsfhnEeGPm7sA61ixGw"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_Jd9bYO1aEeGT-eFu7Ghgjw" name="instructionsSection" type="_ZK4bUODlEeGdSJSga09Dyg" association="_Jd-Cce1aEeGT-eFu7Ghgjw">
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_K6o0wO1aEeGT-eFu7Ghgjw" value="1"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_K6qC4O1aEeGT-eFu7Ghgjw" value="1"/>
       </ownedAttribute>
-      <ownedAttribute xmi:id="_WnO-wO1aEeGT-eFu7Ghgjw" name="interventionsSection" association="_WnPl0e1aEeGT-eFu7Ghgjw">
-        <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-other.uml#_hqzJADVyEeGaW4kr-GbV8Q"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_WnPl0O1aEeGT-eFu7Ghgjw"/>
+      <ownedAttribute xmi:id="_Ba9z0PhnEeGPm7sA61ixGw" name="socialHistorySection" type="_9frdwO1UEeGT-eFu7Ghgjw" association="_Ba_B8PhnEeGPm7sA61ixGw">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_DCzUUPhnEeGPm7sA61ixGw" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_DCz7YPhnEeGPm7sA61ixGw" value="1"/>
       </ownedAttribute>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Association" xmi:id="_M6aQYeznEeGT-eFu7Ghgjw" memberEnd="_M6ZpUOznEeGT-eFu7Ghgjw _M6aQYuznEeGT-eFu7Ghgjw">
-      <ownedEnd xmi:id="_M6aQYuznEeGT-eFu7Ghgjw" type="_7D0CQOzmEeGT-eFu7Ghgjw" association="_M6aQYeznEeGT-eFu7Ghgjw"/>
+      <ownedOperation xmi:id="_viwLAP0aEeGlaomQ_EyHlg" name="retrievePlanOfCareSection" isQuery="true" bodyCondition="_F6QYgP0bEeGlaomQ_EyHlg">
+        <ownedRule xmi:id="_F6QYgP0bEeGlaomQ_EyHlg" name="body" constrainedElement="_viwLAP0aEeGlaomQ_EyHlg">
+          <specification xmi:type="uml:OpaqueExpression" xmi:id="_IoybUP0bEeGlaomQ_EyHlg">
+            <language>OCL</language>
+            <body>self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(mu2consol::PlanOfCareSection))->asSequence()->any(true).oclAsType(mu2consol::PlanOfCareSection)</body>
+          </specification>
+        </ownedRule>
+        <ownedParameter xmi:id="_9Ec1cP0aEeGlaomQ_EyHlg" name="" type="_svnagODKEeGdSJSga09Dyg" direction="return"/>
+      </ownedOperation>
     </packagedElement>
     <packagedElement xmi:type="uml:Association" xmi:id="_jg8_ceznEeGT-eFu7Ghgjw" memberEnd="_jg8YYOznEeGT-eFu7Ghgjw _jg8_cuznEeGT-eFu7Ghgjw">
       <ownedEnd xmi:id="_jg8_cuznEeGT-eFu7Ghgjw" type="_7D0CQOzmEeGT-eFu7Ghgjw" association="_jg8_ceznEeGT-eFu7Ghgjw"/>
@@ -930,11 +720,9 @@
       <generalization xmi:id="_-2YyAO1UEeGT-eFu7Ghgjw">
         <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-socialhistory.uml#_2JKvgBSVEeGGzu7fmW9pXw"/>
       </generalization>
-      <ownedAttribute xmi:id="_BjLvcO1VEeGT-eFu7Ghgjw" name="smokingStatusObservation" association="_BjMWgO1VEeGT-eFu7Ghgjw">
-        <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-socialhistory.uml#_RYJj0OWQEeGKmvzED_He2w"/>
+      <ownedAttribute xmi:id="_BjLvcO1VEeGT-eFu7Ghgjw" name="smokingStatusObservation" type="_xbrkwPwYEeGx4ophOjh2tw" association="_BjMWgO1VEeGT-eFu7Ghgjw">
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_C39xEO1VEeGT-eFu7Ghgjw" value="*"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_C39xEe1VEeGT-eFu7Ghgjw" value="1"/>
-        <redefinedProperty href="../../org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-socialhistory.uml#_VdJ4EOWVEeGKmvzED_He2w"/>
       </ownedAttribute>
     </packagedElement>
     <packagedElement xmi:type="uml:Association" xmi:id="_BjMWgO1VEeGT-eFu7Ghgjw" memberEnd="_BjLvcO1VEeGT-eFu7Ghgjw _BjMWge1VEeGT-eFu7Ghgjw">
@@ -943,26 +731,14 @@
     <packagedElement xmi:type="uml:Association" xmi:id="_JU1b8O1XEeGT-eFu7Ghgjw" memberEnd="_JU004O1XEeGT-eFu7Ghgjw _JU1b8e1XEeGT-eFu7Ghgjw">
       <ownedEnd xmi:id="_JU1b8e1XEeGT-eFu7Ghgjw" type="_7D0CQOzmEeGT-eFu7Ghgjw" association="_JU1b8O1XEeGT-eFu7Ghgjw"/>
     </packagedElement>
-    <packagedElement xmi:type="uml:Association" xmi:id="_NLzGce1XEeGT-eFu7Ghgjw" memberEnd="_NLyfYO1XEeGT-eFu7Ghgjw _NLztgO1XEeGT-eFu7Ghgjw">
-      <ownedEnd xmi:id="_NLztgO1XEeGT-eFu7Ghgjw" type="_7D0CQOzmEeGT-eFu7Ghgjw" association="_NLzGce1XEeGT-eFu7Ghgjw"/>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Association" xmi:id="_RTcRQO1XEeGT-eFu7Ghgjw" memberEnd="_RTbqMO1XEeGT-eFu7Ghgjw _RTcRQe1XEeGT-eFu7Ghgjw">
-      <ownedEnd xmi:id="_RTcRQe1XEeGT-eFu7Ghgjw" type="_7D0CQOzmEeGT-eFu7Ghgjw" association="_RTcRQO1XEeGT-eFu7Ghgjw"/>
-    </packagedElement>
     <packagedElement xmi:type="uml:Association" xmi:id="_WZ50wO1XEeGT-eFu7Ghgjw" memberEnd="_WZ5NsO1XEeGT-eFu7Ghgjw _WZ50we1XEeGT-eFu7Ghgjw">
       <ownedEnd xmi:id="_WZ50we1XEeGT-eFu7Ghgjw" type="_7D0CQOzmEeGT-eFu7Ghgjw" association="_WZ50wO1XEeGT-eFu7Ghgjw"/>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Association" xmi:id="_Zkqgke1XEeGT-eFu7Ghgjw" memberEnd="_Zkp5gO1XEeGT-eFu7Ghgjw _ZkrHoO1XEeGT-eFu7Ghgjw">
-      <ownedEnd xmi:id="_ZkrHoO1XEeGT-eFu7Ghgjw" type="_7D0CQOzmEeGT-eFu7Ghgjw" association="_Zkqgke1XEeGT-eFu7Ghgjw"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Association" xmi:id="_cdpf4e1XEeGT-eFu7Ghgjw" memberEnd="_cdo40O1XEeGT-eFu7Ghgjw _cdrVEO1XEeGT-eFu7Ghgjw">
       <ownedEnd xmi:id="_cdrVEO1XEeGT-eFu7Ghgjw" type="_7D0CQOzmEeGT-eFu7Ghgjw" association="_cdpf4e1XEeGT-eFu7Ghgjw"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Association" xmi:id="_jPHzsu1XEeGT-eFu7Ghgjw" memberEnd="_jPHzsO1XEeGT-eFu7Ghgjw _jPIawO1XEeGT-eFu7Ghgjw">
       <ownedEnd xmi:id="_jPIawO1XEeGT-eFu7Ghgjw" type="_7D0CQOzmEeGT-eFu7Ghgjw" association="_jPHzsu1XEeGT-eFu7Ghgjw"/>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Association" xmi:id="_kb-oYO1XEeGT-eFu7Ghgjw" memberEnd="_kb-BUO1XEeGT-eFu7Ghgjw _kb-oYe1XEeGT-eFu7Ghgjw">
-      <ownedEnd xmi:id="_kb-oYe1XEeGT-eFu7Ghgjw" type="_7D0CQOzmEeGT-eFu7Ghgjw" association="_kb-oYO1XEeGT-eFu7Ghgjw"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Association" xmi:id="_oCk7oe1XEeGT-eFu7Ghgjw" memberEnd="_oCkUkO1XEeGT-eFu7Ghgjw _oClisO1XEeGT-eFu7Ghgjw">
       <ownedEnd xmi:id="_oClisO1XEeGT-eFu7Ghgjw" type="_7D0CQOzmEeGT-eFu7Ghgjw" association="_oCk7oe1XEeGT-eFu7Ghgjw"/>
@@ -991,321 +767,6 @@
     <packagedElement xmi:type="uml:Association" xmi:id="_Jd-Cce1aEeGT-eFu7Ghgjw" memberEnd="_Jd9bYO1aEeGT-eFu7Ghgjw _Jd-pgO1aEeGT-eFu7Ghgjw">
       <ownedEnd xmi:id="_Jd-pgO1aEeGT-eFu7Ghgjw" type="_7D0CQOzmEeGT-eFu7Ghgjw" association="_Jd-Cce1aEeGT-eFu7Ghgjw"/>
     </packagedElement>
-    <packagedElement xmi:type="uml:Association" xmi:id="_WnPl0e1aEeGT-eFu7Ghgjw" memberEnd="_WnO-wO1aEeGT-eFu7Ghgjw _WnWTgO1aEeGT-eFu7Ghgjw">
-      <ownedEnd xmi:id="_WnWTgO1aEeGT-eFu7Ghgjw" type="_7D0CQOzmEeGT-eFu7Ghgjw" association="_WnPl0e1aEeGT-eFu7Ghgjw"/>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Class" xmi:id="_C0_BkO4xEeGT5oaF-4NGAA" name="VDTInpatientPatientInfo">
-      <ownedComment xmi:id="_JC7xkO4xEeGT5oaF-4NGAA">
-        <body>Objective : 170.314(e)(1) (View, download, and transmit to 3rd party)  for EP</body>
-      </ownedComment>
-      <ownedRule xmi:id="_bnbyEO4yEeGT5oaF-4NGAA" name="responsibleParty" constrainedElement="_C0_BkO4xEeGT5oaF-4NGAA">
-        <ownedComment xmi:id="_gMvwUO4yEeGT5oaF-4NGAA">
-          <body>QUERY</body>
-        </ownedComment>
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_hhmqcO4yEeGT5oaF-4NGAA">
-          <language>OCL</language>
-          <body>self.componentOf->excluding(null).encompassingEncounter->excluding(null)->reject(responsibleParty->one(responsibleParty : &#xD;&#xD;&#xA;cda::ResponsibleParty | not responsibleParty.oclIsUndefined() and responsibleParty.oclIsKindOf(rim::Participation)))</body>
-        </specification>
-      </ownedRule>
-      <ownedRule xmi:id="_xGJ9cO4yEeGT5oaF-4NGAA" name="medicationList" constrainedElement="_C0_BkO4xEeGT5oaF-4NGAA">
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_0HuRAO4yEeGT5oaF-4NGAA">
-          <language>OCL</language>
-          <language>Analysis</language>
-          <body>(self.getAllSections()->one(s : cda::Section | not s.oclIsUndefined() and s.oclIsTypeOf(consol::MedicationsSection)) or  &#xD;&#xA; self.getAllSections()->one(s : cda::Section | not s.oclIsUndefined() and s.oclIsTypeOf(mu2consol::HospitalAdmissionMedicationsSectionEntriesOptional)) or &#xD;&#xA; self.getAllSections()->one(s : cda::Section | not s.oclIsUndefined() and s.oclIsTypeOf(consol::HospitalDischargeMedicationsSection)))</body>
-          <body>SHALL have one of Medications (entries required: 2.16.840.1.113883.10.20.22.2.1.1) or Hospital Admission Medications (2.16.840.1.113883.10.20.22.2.44 ) or Hospital Discharge Medications (entries required: 2.16.840.1.113883.10.20.22.2.11.1)</body>
-        </specification>
-      </ownedRule>
-      <ownedRule xmi:id="_F8DOQO4zEeGT5oaF-4NGAA" name="canHaveEitherVitalSignsRequiedOrOptionalEntry" constrainedElement="_C0_BkO4xEeGT5oaF-4NGAA">
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_LMd_AO4zEeGT5oaF-4NGAA">
-          <language>OCL</language>
-          <language>Analysis</language>
-          <body>(self.getAllSections()->one(s : cda::Section | not s.oclIsUndefined() and s.oclIsTypeOf(consol::VitalSignsSection)) or  &#xD;&#xA;self.getAllSections()->one(s : cda::Section | not s.oclIsUndefined() and s.oclIsTypeOf(consol::VitalSignsSectionEntriesOptional)))</body>
-          <body>SHALL have one of Vital Signs (entries optional: 2.16.840.1.113883.10.20.22.2.4 or entries required: 2.16.840.1.113883.10.20.22.2.4.1)</body>
-        </specification>
-      </ownedRule>
-      <ownedRule xmi:id="_1NTjkO4zEeGT5oaF-4NGAA" name="canHaveEitherAllergyRequiredOrOptionalEntry" constrainedElement="_C0_BkO4xEeGT5oaF-4NGAA">
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_647CkO4zEeGT5oaF-4NGAA">
-          <language>OCL</language>
-          <language>Analysis</language>
-          <body>(self.getAllSections()->one(s : cda::Section | not s.oclIsUndefined() and s.oclIsTypeOf(consol::AllergiesSection)) or  &#xD;&#xA;self.getAllSections()->one(s : cda::Section | not s.oclIsUndefined() and s.oclIsTypeOf(mu2consol::AllergiesSectionEntriesOptional)))</body>
-          <body>SHALL have one of Allergies (entries optional: 2.16.840.1.113883.10.20.22.2.6 or &#xA;entries required: 2.16.840.1.113883.10.20.22.2.6.1)</body>
-        </specification>
-      </ownedRule>
-      <generalization xmi:id="_C1DTAO4xEeGT5oaF-4NGAA" general="_v-6qsNkMEeGsqcJR8eqiMw"/>
-      <ownedAttribute xmi:id="_YP8HQO4xEeGT5oaF-4NGAA" name="socialHistorySection" type="_9frdwO1UEeGT-eFu7Ghgjw" association="_YP9VYO4xEeGT5oaF-4NGAA">
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ZHGYwO4xEeGT5oaF-4NGAA" value="1"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ZHGYwe4xEeGT5oaF-4NGAA" value="1"/>
-      </ownedAttribute>
-      <ownedAttribute xmi:id="_ckDAwO4xEeGT5oaF-4NGAA" name="problemSection" association="_ckDn0e4xEeGT5oaF-4NGAA">
-        <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-problems.uml#_2LSPYBSVEeGGzu7fmW9pXw"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_dYR6EO4xEeGT5oaF-4NGAA" value="1"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_dYR6Ee4xEeGT5oaF-4NGAA" value="1"/>
-      </ownedAttribute>
-      <ownedAttribute xmi:id="_kSXXUO4xEeGT5oaF-4NGAA" name="medicationsSection" association="_kSX-Ye4xEeGT5oaF-4NGAA">
-        <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-medications.uml#_2NIpgBSVEeGGzu7fmW9pXw"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_kSX-YO4xEeGT5oaF-4NGAA"/>
-      </ownedAttribute>
-      <ownedAttribute xmi:id="_nFqlYO4xEeGT5oaF-4NGAA" name="hospitalAdmissionMedicationsSectionEntriesOptional" type="_HBzuYODrEeGdSJSga09Dyg" association="_nFrMcO4xEeGT5oaF-4NGAA">
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_nFqlYe4xEeGT5oaF-4NGAA"/>
-      </ownedAttribute>
-      <ownedAttribute xmi:id="_qVWNcO4xEeGT5oaF-4NGAA" name="hospitalDischargeMedicationsSection" association="_qVW0ge4xEeGT5oaF-4NGAA">
-        <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-discharge.uml#_TytVkCUQEeGiOPpZVnfEJA"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_qVW0gO4xEeGT5oaF-4NGAA"/>
-      </ownedAttribute>
-      <ownedAttribute xmi:id="_ykXdUO4xEeGT5oaF-4NGAA" name="allergiesSection" association="_ykXdUu4xEeGT5oaF-4NGAA">
-        <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-allergies.uml#_2LMIwBSVEeGGzu7fmW9pXw"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ykXdUe4xEeGT5oaF-4NGAA"/>
-      </ownedAttribute>
-      <ownedAttribute xmi:id="_5hj48O4xEeGT5oaF-4NGAA" name="allergiesSectionEntriesOptional" type="_szTFwOF8EeGlJOFzBdwM6w" association="_5hkgAO4xEeGT5oaF-4NGAA">
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_5hj48e4xEeGT5oaF-4NGAA"/>
-      </ownedAttribute>
-      <ownedAttribute xmi:id="_8WQ1MO4xEeGT5oaF-4NGAA" name="resultsSection" association="_8WSDUO4xEeGT5oaF-4NGAA">
-        <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-results.uml#_2Js7AxSVEeGGzu7fmW9pXw"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_9L0kMO4xEeGT5oaF-4NGAA" value="1"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_9L1LQO4xEeGT5oaF-4NGAA" value="1"/>
-      </ownedAttribute>
-      <ownedAttribute xmi:id="_BVg9cO4yEeGT5oaF-4NGAA" name="vitalSignsSection" association="_BVg9cu4yEeGT5oaF-4NGAA">
-        <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-vitalsigns.uml#_2OfUcxSVEeGGzu7fmW9pXw"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_BVg9ce4yEeGT5oaF-4NGAA"/>
-      </ownedAttribute>
-      <ownedAttribute xmi:id="_D3H-kO4yEeGT5oaF-4NGAA" name="vitalSignsSectionEntriesOptional" association="_D3Iloe4yEeGT5oaF-4NGAA">
-        <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-vitalsigns.uml#_bRH8sBVeEeGQCvUGzi1kDQ"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_D3IloO4yEeGT5oaF-4NGAA"/>
-      </ownedAttribute>
-      <ownedAttribute xmi:id="_I58YMO4yEeGT5oaF-4NGAA" name="planOfCareSection" type="_svnagODKEeGdSJSga09Dyg" association="_I59mUO4yEeGT5oaF-4NGAA">
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_JkcGsO4yEeGT5oaF-4NGAA" value="1"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_JkctwO4yEeGT5oaF-4NGAA" value="1"/>
-      </ownedAttribute>
-      <ownedAttribute xmi:id="_S-9gYO4yEeGT5oaF-4NGAA" name="proceduresSection" association="_S--ugO4yEeGT5oaF-4NGAA">
-        <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-procedures.uml#_2OAzQRSVEeGGzu7fmW9pXw"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_UydeUO4yEeGT5oaF-4NGAA" value="1"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_UyescO4yEeGT5oaF-4NGAA" value="1"/>
-      </ownedAttribute>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Association" xmi:id="_YP9VYO4xEeGT5oaF-4NGAA" memberEnd="_YP8HQO4xEeGT5oaF-4NGAA _YP9VYe4xEeGT5oaF-4NGAA">
-      <ownedEnd xmi:id="_YP9VYe4xEeGT5oaF-4NGAA" type="_C0_BkO4xEeGT5oaF-4NGAA" association="_YP9VYO4xEeGT5oaF-4NGAA"/>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Association" xmi:id="_ckDn0e4xEeGT5oaF-4NGAA" memberEnd="_ckDAwO4xEeGT5oaF-4NGAA _ckDn0u4xEeGT5oaF-4NGAA">
-      <ownedEnd xmi:id="_ckDn0u4xEeGT5oaF-4NGAA" type="_C0_BkO4xEeGT5oaF-4NGAA" association="_ckDn0e4xEeGT5oaF-4NGAA"/>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Association" xmi:id="_kSX-Ye4xEeGT5oaF-4NGAA" memberEnd="_kSXXUO4xEeGT5oaF-4NGAA _kSX-Yu4xEeGT5oaF-4NGAA">
-      <ownedEnd xmi:id="_kSX-Yu4xEeGT5oaF-4NGAA" type="_C0_BkO4xEeGT5oaF-4NGAA" association="_kSX-Ye4xEeGT5oaF-4NGAA"/>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Association" xmi:id="_nFrMcO4xEeGT5oaF-4NGAA" memberEnd="_nFqlYO4xEeGT5oaF-4NGAA _nFrzgO4xEeGT5oaF-4NGAA">
-      <ownedEnd xmi:id="_nFrzgO4xEeGT5oaF-4NGAA" type="_C0_BkO4xEeGT5oaF-4NGAA" association="_nFrMcO4xEeGT5oaF-4NGAA"/>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Association" xmi:id="_qVW0ge4xEeGT5oaF-4NGAA" memberEnd="_qVWNcO4xEeGT5oaF-4NGAA _qVXbkO4xEeGT5oaF-4NGAA">
-      <ownedEnd xmi:id="_qVXbkO4xEeGT5oaF-4NGAA" type="_C0_BkO4xEeGT5oaF-4NGAA" association="_qVW0ge4xEeGT5oaF-4NGAA"/>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Association" xmi:id="_ykXdUu4xEeGT5oaF-4NGAA" memberEnd="_ykXdUO4xEeGT5oaF-4NGAA _ykYEYO4xEeGT5oaF-4NGAA">
-      <ownedEnd xmi:id="_ykYEYO4xEeGT5oaF-4NGAA" type="_C0_BkO4xEeGT5oaF-4NGAA" association="_ykXdUu4xEeGT5oaF-4NGAA"/>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Association" xmi:id="_5hkgAO4xEeGT5oaF-4NGAA" memberEnd="_5hj48O4xEeGT5oaF-4NGAA _5hlHEO4xEeGT5oaF-4NGAA">
-      <ownedEnd xmi:id="_5hlHEO4xEeGT5oaF-4NGAA" type="_C0_BkO4xEeGT5oaF-4NGAA" association="_5hkgAO4xEeGT5oaF-4NGAA"/>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Association" xmi:id="_8WSDUO4xEeGT5oaF-4NGAA" memberEnd="_8WQ1MO4xEeGT5oaF-4NGAA _8WSDUe4xEeGT5oaF-4NGAA">
-      <ownedEnd xmi:id="_8WSDUe4xEeGT5oaF-4NGAA" type="_C0_BkO4xEeGT5oaF-4NGAA" association="_8WSDUO4xEeGT5oaF-4NGAA"/>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Association" xmi:id="_BVg9cu4yEeGT5oaF-4NGAA" memberEnd="_BVg9cO4yEeGT5oaF-4NGAA _BVhkgO4yEeGT5oaF-4NGAA">
-      <ownedEnd xmi:id="_BVhkgO4yEeGT5oaF-4NGAA" type="_C0_BkO4xEeGT5oaF-4NGAA" association="_BVg9cu4yEeGT5oaF-4NGAA"/>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Association" xmi:id="_D3Iloe4yEeGT5oaF-4NGAA" memberEnd="_D3H-kO4yEeGT5oaF-4NGAA _D3JMsO4yEeGT5oaF-4NGAA">
-      <ownedEnd xmi:id="_D3JMsO4yEeGT5oaF-4NGAA" type="_C0_BkO4xEeGT5oaF-4NGAA" association="_D3Iloe4yEeGT5oaF-4NGAA"/>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Association" xmi:id="_I59mUO4yEeGT5oaF-4NGAA" memberEnd="_I58YMO4yEeGT5oaF-4NGAA _I5-0cO4yEeGT5oaF-4NGAA">
-      <ownedEnd xmi:id="_I5-0cO4yEeGT5oaF-4NGAA" type="_C0_BkO4xEeGT5oaF-4NGAA" association="_I59mUO4yEeGT5oaF-4NGAA"/>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Association" xmi:id="_S--ugO4yEeGT5oaF-4NGAA" memberEnd="_S-9gYO4yEeGT5oaF-4NGAA _S--uge4yEeGT5oaF-4NGAA">
-      <ownedEnd xmi:id="_S--uge4yEeGT5oaF-4NGAA" type="_C0_BkO4xEeGT5oaF-4NGAA" association="_S--ugO4yEeGT5oaF-4NGAA"/>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Class" xmi:id="_tzbWgO40EeGT5oaF-4NGAA" name="VDTAmbulatoryPatientInfo">
-      <ownedComment xmi:id="_eqorEO43EeGT5oaF-4NGAA">
-        <body>Objective : 170.314(e)(1) (View, download, and transmit to 3rd party)  for EH/CAH</body>
-      </ownedComment>
-      <ownedRule xmi:id="_PI9EEO5yEeGT5oaF-4NGAA" name="medicationList" constrainedElement="_tzbWgO40EeGT5oaF-4NGAA">
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_TcvNcO5yEeGT5oaF-4NGAA">
-          <language>OCL</language>
-          <language>Analysis</language>
-          <body>(self.getAllSections()->one(s : cda::Section | not s.oclIsUndefined() and s.oclIsTypeOf(consol::MedicationsSection)) or  &#xD;&#xA; self.getAllSections()->one(s : cda::Section | not s.oclIsUndefined() and s.oclIsTypeOf(mu2consol::HospitalAdmissionMedicationsSectionEntriesOptional)) or &#xD;&#xA; self.getAllSections()->one(s : cda::Section | not s.oclIsUndefined() and s.oclIsTypeOf(consol::HospitalDischargeMedicationsSection)))</body>
-          <body>SHALL have one of Medications (entries required: 2.16.840.1.113883.10.20.22.2.1.1) or Hospital Admission Medications (2.16.840.1.113883.10.20.22.2.44 ) or Hospital Discharge Medications (entries required: 2.16.840.1.113883.10.20.22.2.11.1)</body>
-        </specification>
-      </ownedRule>
-      <ownedRule xmi:id="_lQwBoO5yEeGT5oaF-4NGAA" name="medicationAllergy" constrainedElement="_tzbWgO40EeGT5oaF-4NGAA">
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_poy_8O5yEeGT5oaF-4NGAA">
-          <language>OCL</language>
-          <language>Analysis</language>
-          <body>(self.getAllSections()->one(s : cda::Section | not s.oclIsUndefined() and s.oclIsTypeOf(consol::AllergiesSection)) or &#xD;&#xA;self.getAllSections()->one(s : cda::Section | not s.oclIsUndefined() and s.oclIsTypeOf(mu2consol::AllergiesSectionEntriesOptional)))</body>
-          <body>SHALL have one of Allergies (entries optional: 2.16.840.1.113883.10.20.22.2.6 or entries required: 2.16.840.1.113883.10.20.22.2.6.1)</body>
-        </specification>
-      </ownedRule>
-      <ownedRule xmi:id="_nAedYO5zEeGT5oaF-4NGAA" name="canHaveEitherVitalSignsRequiedOrOptionalEntry" constrainedElement="_tzbWgO40EeGT5oaF-4NGAA">
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_p0ljwO5zEeGT5oaF-4NGAA">
-          <language>OCL</language>
-          <language>Analysis</language>
-          <body>(self.getAllSections()->one(s : cda::Section | not s.oclIsUndefined() and s.oclIsTypeOf(consol::VitalSignsSection)) or  &#xD;&#xA;self.getAllSections()->one(s : cda::Section | not s.oclIsUndefined() and s.oclIsTypeOf(consol::VitalSignsSectionEntriesOptional)))</body>
-          <body>SHALL have one of Vital Signs (entries optional: 2.16.840.1.113883.10.20.22.2.4 or entries required: 2.16.840.1.113883.10.20.22.2.4.1)</body>
-        </specification>
-      </ownedRule>
-      <ownedRule xmi:id="_oZlI4O50EeGT5oaF-4NGAA" name="canHaveEitherAllergyRequiredOrOptionalEntry" constrainedElement="_tzbWgO40EeGT5oaF-4NGAA">
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_tDcP8O50EeGT5oaF-4NGAA">
-          <language>OCL</language>
-          <language>Analysis</language>
-          <body>(self.getAllSections()->one(s : cda::Section | not s.oclIsUndefined() and s.oclIsTypeOf(consol::AllergiesSection)) or &#xD;&#xA;self.getAllSections()->one(s : cda::Section | not s.oclIsUndefined() and s.oclIsTypeOf(mu2consol::AllergiesSectionEntriesOptional)))</body>
-          <body>SHALL have one of Allergies (entries optional: 2.16.840.1.113883.10.20.22.2.6 or entries required: 2.16.840.1.113883.10.20.22.2.6.1)</body>
-        </specification>
-      </ownedRule>
-      <ownedRule xmi:id="_zZdW0O50EeGT5oaF-4NGAA" name="canHaveEitherEncountersRequiredOrOptionalEntry" constrainedElement="_tzbWgO40EeGT5oaF-4NGAA">
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_2vamAO50EeGT5oaF-4NGAA">
-          <language>OCL</language>
-          <language>Analysis</language>
-          <body>(self.getAllSections()->one(s : cda::Section | not s.oclIsUndefined() and s.oclIsTypeOf(consol::EncountersSection)) or  &#xD;&#xA;self.getAllSections()->one(s : cda::Section | not s.oclIsUndefined() and s.oclIsTypeOf(consol::EncountersSectionEntriesOptional)))</body>
-          <body>SHALL have one of Encounters (entries optional: 2.16.840.1.113883.10.20.22.2.22 OR &#xA;entries required: 2.16.840.1.113883.10.20.22.2.22.1)</body>
-        </specification>
-      </ownedRule>
-      <ownedRule xmi:id="_MDXPUO52EeGT5oaF-4NGAA" name="reasonForHospitalization" constrainedElement="_tzbWgO40EeGT5oaF-4NGAA">
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_P2QSIO52EeGT5oaF-4NGAA">
-          <language>OCL</language>
-          <language>Analysis</language>
-          <body>(self.getAllSections()->one(s : cda::Section | not s.oclIsUndefined() and s.oclIsTypeOf(consol::HospitalAdmissionDiagnosisSection))) or&#xD;&#xA;(self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::ChiefComplaintSection)) or &#xD;&#xA; self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::ReasonForVisitSection))) xor &#xD;&#xA; self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::ChiefComplaintAndReasonForVisitSection))</body>
-          <body>SHALL have one of Reason for Visit (2.16.840.1.113883.10.20.22.2.12)  or Chief Complaint (1.3.6.1.4.1.19376.1.5.3.1.1.13.2.1) or Chief Complaint and Reason for Visit (2.16.840.1.113883.10.20.22.2.13) or Hospital Admission Diagnosis (2.16.840.1.113883.10.20.22.2.43)</body>
-        </specification>
-      </ownedRule>
-      <generalization xmi:id="_tzb9kO40EeGT5oaF-4NGAA" general="_v-6qsNkMEeGsqcJR8eqiMw"/>
-      <ownedAttribute xmi:id="_tNw4IO5JEeGT5oaF-4NGAA" name="socialHistorySection" type="_9frdwO1UEeGT-eFu7Ghgjw" association="_tNxfMO5JEeGT5oaF-4NGAA">
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_t3X10O5JEeGT5oaF-4NGAA" value="1"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_t3X10e5JEeGT5oaF-4NGAA" value="1"/>
-      </ownedAttribute>
-      <ownedAttribute xmi:id="_xSuiYO5JEeGT5oaF-4NGAA" name="problemSection" association="_xSvJce5JEeGT5oaF-4NGAA">
-        <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-problems.uml#_2LSPYBSVEeGGzu7fmW9pXw"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_x9Np0O5JEeGT5oaF-4NGAA" value="1"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_x9Np0e5JEeGT5oaF-4NGAA" value="1"/>
-      </ownedAttribute>
-      <ownedAttribute xmi:id="_2vEPQO5JEeGT5oaF-4NGAA" name="medicationsSection" association="_2vE2UO5JEeGT5oaF-4NGAA">
-        <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-medications.uml#_2NIpgBSVEeGGzu7fmW9pXw"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_2vEPQe5JEeGT5oaF-4NGAA"/>
-      </ownedAttribute>
-      <ownedAttribute xmi:id="_43QDwO5JEeGT5oaF-4NGAA" name="hospitalAdmissionMedicationsSectionEntriesOptional" type="_HBzuYODrEeGdSJSga09Dyg" association="_43Qq0O5JEeGT5oaF-4NGAA">
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_43QDwe5JEeGT5oaF-4NGAA"/>
-      </ownedAttribute>
-      <ownedAttribute xmi:id="_7-MmkO5JEeGT5oaF-4NGAA" name="hospitalDischargeMedicationsSection" association="_7-NNoO5JEeGT5oaF-4NGAA">
-        <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-discharge.uml#_TytVkCUQEeGiOPpZVnfEJA"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_7-Mmke5JEeGT5oaF-4NGAA"/>
-      </ownedAttribute>
-      <ownedAttribute xmi:id="__VRQEO5JEeGT5oaF-4NGAA" name="allergiesSection" association="__VR3Ie5JEeGT5oaF-4NGAA">
-        <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-allergies.uml#_2LMIwBSVEeGGzu7fmW9pXw"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="__VR3IO5JEeGT5oaF-4NGAA"/>
-      </ownedAttribute>
-      <ownedAttribute xmi:id="_BG17YO5KEeGT5oaF-4NGAA" name="allergiesSectionEntriesOptional" type="_szTFwOF8EeGlJOFzBdwM6w" association="_BG2ice5KEeGT5oaF-4NGAA">
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_BG2icO5KEeGT5oaF-4NGAA"/>
-      </ownedAttribute>
-      <ownedAttribute xmi:id="_d_HEMO5rEeGT5oaF-4NGAA" name="resultsSection" association="_d_HrQe5rEeGT5oaF-4NGAA">
-        <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-results.uml#_2Js7AxSVEeGGzu7fmW9pXw"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_fLFvIO5rEeGT5oaF-4NGAA" value="1"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_fLGWMO5rEeGT5oaF-4NGAA" value="1"/>
-      </ownedAttribute>
-      <ownedAttribute xmi:id="_jWFv8O5rEeGT5oaF-4NGAA" name="vitalSignsSection" association="_jWGXAe5rEeGT5oaF-4NGAA">
-        <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-vitalsigns.uml#_2OfUcxSVEeGGzu7fmW9pXw"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_jWGXAO5rEeGT5oaF-4NGAA"/>
-      </ownedAttribute>
-      <ownedAttribute xmi:id="_k0uRIO5rEeGT5oaF-4NGAA" name="vitalSignsSectionEntriesOptional" association="_k0u4Me5rEeGT5oaF-4NGAA">
-        <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-vitalsigns.uml#_bRH8sBVeEeGQCvUGzi1kDQ"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_k0u4MO5rEeGT5oaF-4NGAA"/>
-      </ownedAttribute>
-      <ownedAttribute xmi:id="_AD7_AO5tEeGT5oaF-4NGAA" name="planOfCareSection" type="_svnagODKEeGdSJSga09Dyg" association="_AD7_Au5tEeGT5oaF-4NGAA">
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_AqC8wO5tEeGT5oaF-4NGAA" value="1"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_AqC8we5tEeGT5oaF-4NGAA" value="1"/>
-      </ownedAttribute>
-      <ownedAttribute xmi:id="_F9Rw8O5tEeGT5oaF-4NGAA" name="proceduresSection" association="_F9SYAO5tEeGT5oaF-4NGAA">
-        <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-procedures.uml#_2OAzQRSVEeGGzu7fmW9pXw"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_HKnt0O5tEeGT5oaF-4NGAA" value="1"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_HKxe0O5tEeGT5oaF-4NGAA" value="1"/>
-      </ownedAttribute>
-      <ownedAttribute xmi:id="_EQDksO5uEeGT5oaF-4NGAA" name="hospitalDischargeInstructionsSection" association="_EQELwO5uEeGT5oaF-4NGAA">
-        <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-discharge.uml#_lBergCUMEeGiOPpZVnfEJA"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_guSf4O5uEeGT5oaF-4NGAA" value="1"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_guTG8O5uEeGT5oaF-4NGAA" value="1"/>
-      </ownedAttribute>
-      <ownedAttribute xmi:id="_pr-MkO5uEeGT5oaF-4NGAA" name="encountersSection" association="_pr-zoe5uEeGT5oaF-4NGAA">
-        <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-encounters.uml#_2LWg0BSVEeGGzu7fmW9pXw"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_pr-zoO5uEeGT5oaF-4NGAA"/>
-      </ownedAttribute>
-      <ownedAttribute xmi:id="_rwgQIO5uEeGT5oaF-4NGAA" name="encountersSectionEntriesOptional" association="_rwg3Me5uEeGT5oaF-4NGAA">
-        <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-encounters.uml#_4yj2wBVdEeGQCvUGzi1kDQ"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_rwg3MO5uEeGT5oaF-4NGAA"/>
-      </ownedAttribute>
-      <ownedAttribute xmi:id="_Dl5_AO5vEeGT5oaF-4NGAA" name="hospitalAdmissionDiagnosisSection" type="_gl8CMODmEeGdSJSga09Dyg" association="_Dl7NIO5vEeGT5oaF-4NGAA">
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Dl6mEO5vEeGT5oaF-4NGAA"/>
-      </ownedAttribute>
-      <ownedAttribute xmi:id="_Z1o7IO5wEeGT5oaF-4NGAA" name="reasonForVisitSection" association="_Z1piMO5wEeGT5oaF-4NGAA">
-        <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-other.uml#_Nm64UCscEeGHF88-qhhUMA"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Z1o7Ie5wEeGT5oaF-4NGAA"/>
-      </ownedAttribute>
-      <ownedAttribute xmi:id="_dKQGgO5wEeGT5oaF-4NGAA" name="chiefComplaintSection" association="_dKQGgu5wEeGT5oaF-4NGAA">
-        <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-other.uml#_2PWQCBSVEeGGzu7fmW9pXw"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_dKQGge5wEeGT5oaF-4NGAA"/>
-      </ownedAttribute>
-      <ownedAttribute xmi:id="_fxsC0O5wEeGT5oaF-4NGAA" name="chiefComplaintAndReasonForVisitSection" association="_fxsp4e5wEeGT5oaF-4NGAA">
-        <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-other.uml#_oI7CQCsaEeGHF88-qhhUMA"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_fxsp4O5wEeGT5oaF-4NGAA"/>
-      </ownedAttribute>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Association" xmi:id="_tNxfMO5JEeGT5oaF-4NGAA" memberEnd="_tNw4IO5JEeGT5oaF-4NGAA _tNxfMe5JEeGT5oaF-4NGAA">
-      <ownedEnd xmi:id="_tNxfMe5JEeGT5oaF-4NGAA" type="_tzbWgO40EeGT5oaF-4NGAA" association="_tNxfMO5JEeGT5oaF-4NGAA"/>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Association" xmi:id="_xSvJce5JEeGT5oaF-4NGAA" memberEnd="_xSuiYO5JEeGT5oaF-4NGAA _xSvwgO5JEeGT5oaF-4NGAA">
-      <ownedEnd xmi:id="_xSvwgO5JEeGT5oaF-4NGAA" type="_tzbWgO40EeGT5oaF-4NGAA" association="_xSvJce5JEeGT5oaF-4NGAA"/>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Association" xmi:id="_2vE2UO5JEeGT5oaF-4NGAA" memberEnd="_2vEPQO5JEeGT5oaF-4NGAA _2vE2Ue5JEeGT5oaF-4NGAA">
-      <ownedEnd xmi:id="_2vE2Ue5JEeGT5oaF-4NGAA" type="_tzbWgO40EeGT5oaF-4NGAA" association="_2vE2UO5JEeGT5oaF-4NGAA"/>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Association" xmi:id="_43Qq0O5JEeGT5oaF-4NGAA" memberEnd="_43QDwO5JEeGT5oaF-4NGAA _43Qq0e5JEeGT5oaF-4NGAA">
-      <ownedEnd xmi:id="_43Qq0e5JEeGT5oaF-4NGAA" type="_tzbWgO40EeGT5oaF-4NGAA" association="_43Qq0O5JEeGT5oaF-4NGAA"/>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Association" xmi:id="_7-NNoO5JEeGT5oaF-4NGAA" memberEnd="_7-MmkO5JEeGT5oaF-4NGAA _7-NNoe5JEeGT5oaF-4NGAA">
-      <ownedEnd xmi:id="_7-NNoe5JEeGT5oaF-4NGAA" type="_tzbWgO40EeGT5oaF-4NGAA" association="_7-NNoO5JEeGT5oaF-4NGAA"/>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Association" xmi:id="__VR3Ie5JEeGT5oaF-4NGAA" memberEnd="__VRQEO5JEeGT5oaF-4NGAA __VTFQO5JEeGT5oaF-4NGAA">
-      <ownedEnd xmi:id="__VTFQO5JEeGT5oaF-4NGAA" type="_tzbWgO40EeGT5oaF-4NGAA" association="__VR3Ie5JEeGT5oaF-4NGAA"/>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Association" xmi:id="_BG2ice5KEeGT5oaF-4NGAA" memberEnd="_BG17YO5KEeGT5oaF-4NGAA _BG2icu5KEeGT5oaF-4NGAA">
-      <ownedEnd xmi:id="_BG2icu5KEeGT5oaF-4NGAA" type="_tzbWgO40EeGT5oaF-4NGAA" association="_BG2ice5KEeGT5oaF-4NGAA"/>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Association" xmi:id="_d_HrQe5rEeGT5oaF-4NGAA" memberEnd="_d_HEMO5rEeGT5oaF-4NGAA _d_HrQu5rEeGT5oaF-4NGAA">
-      <ownedEnd xmi:id="_d_HrQu5rEeGT5oaF-4NGAA" type="_tzbWgO40EeGT5oaF-4NGAA" association="_d_HrQe5rEeGT5oaF-4NGAA"/>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Association" xmi:id="_jWGXAe5rEeGT5oaF-4NGAA" memberEnd="_jWFv8O5rEeGT5oaF-4NGAA _jWG-EO5rEeGT5oaF-4NGAA">
-      <ownedEnd xmi:id="_jWG-EO5rEeGT5oaF-4NGAA" type="_tzbWgO40EeGT5oaF-4NGAA" association="_jWGXAe5rEeGT5oaF-4NGAA"/>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Association" xmi:id="_k0u4Me5rEeGT5oaF-4NGAA" memberEnd="_k0uRIO5rEeGT5oaF-4NGAA _k0u4Mu5rEeGT5oaF-4NGAA">
-      <ownedEnd xmi:id="_k0u4Mu5rEeGT5oaF-4NGAA" type="_tzbWgO40EeGT5oaF-4NGAA" association="_k0u4Me5rEeGT5oaF-4NGAA"/>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Association" xmi:id="_AD7_Au5tEeGT5oaF-4NGAA" memberEnd="_AD7_AO5tEeGT5oaF-4NGAA _AD8mEO5tEeGT5oaF-4NGAA">
-      <ownedEnd xmi:id="_AD8mEO5tEeGT5oaF-4NGAA" type="_tzbWgO40EeGT5oaF-4NGAA" association="_AD7_Au5tEeGT5oaF-4NGAA"/>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Association" xmi:id="_F9SYAO5tEeGT5oaF-4NGAA" memberEnd="_F9Rw8O5tEeGT5oaF-4NGAA _F9SYAe5tEeGT5oaF-4NGAA">
-      <ownedEnd xmi:id="_F9SYAe5tEeGT5oaF-4NGAA" type="_tzbWgO40EeGT5oaF-4NGAA" association="_F9SYAO5tEeGT5oaF-4NGAA"/>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Association" xmi:id="_EQELwO5uEeGT5oaF-4NGAA" memberEnd="_EQDksO5uEeGT5oaF-4NGAA _EQELwe5uEeGT5oaF-4NGAA">
-      <ownedEnd xmi:id="_EQELwe5uEeGT5oaF-4NGAA" type="_tzbWgO40EeGT5oaF-4NGAA" association="_EQELwO5uEeGT5oaF-4NGAA"/>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Association" xmi:id="_pr-zoe5uEeGT5oaF-4NGAA" memberEnd="_pr-MkO5uEeGT5oaF-4NGAA _pr_asO5uEeGT5oaF-4NGAA">
-      <ownedEnd xmi:id="_pr_asO5uEeGT5oaF-4NGAA" type="_tzbWgO40EeGT5oaF-4NGAA" association="_pr-zoe5uEeGT5oaF-4NGAA"/>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Association" xmi:id="_rwg3Me5uEeGT5oaF-4NGAA" memberEnd="_rwgQIO5uEeGT5oaF-4NGAA _rwheQO5uEeGT5oaF-4NGAA">
-      <ownedEnd xmi:id="_rwheQO5uEeGT5oaF-4NGAA" type="_tzbWgO40EeGT5oaF-4NGAA" association="_rwg3Me5uEeGT5oaF-4NGAA"/>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Association" xmi:id="_Dl7NIO5vEeGT5oaF-4NGAA" memberEnd="_Dl5_AO5vEeGT5oaF-4NGAA _Dl7NIe5vEeGT5oaF-4NGAA">
-      <ownedEnd xmi:id="_Dl7NIe5vEeGT5oaF-4NGAA" type="_tzbWgO40EeGT5oaF-4NGAA" association="_Dl7NIO5vEeGT5oaF-4NGAA"/>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Association" xmi:id="_Z1piMO5wEeGT5oaF-4NGAA" memberEnd="_Z1o7IO5wEeGT5oaF-4NGAA _Z1piMe5wEeGT5oaF-4NGAA">
-      <ownedEnd xmi:id="_Z1piMe5wEeGT5oaF-4NGAA" type="_tzbWgO40EeGT5oaF-4NGAA" association="_Z1piMO5wEeGT5oaF-4NGAA"/>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Association" xmi:id="_dKQGgu5wEeGT5oaF-4NGAA" memberEnd="_dKQGgO5wEeGT5oaF-4NGAA _dKQtkO5wEeGT5oaF-4NGAA">
-      <ownedEnd xmi:id="_dKQtkO5wEeGT5oaF-4NGAA" type="_tzbWgO40EeGT5oaF-4NGAA" association="_dKQGgu5wEeGT5oaF-4NGAA"/>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Association" xmi:id="_fxsp4e5wEeGT5oaF-4NGAA" memberEnd="_fxsC0O5wEeGT5oaF-4NGAA _fxtQ8O5wEeGT5oaF-4NGAA">
-      <ownedEnd xmi:id="_fxtQ8O5wEeGT5oaF-4NGAA" type="_tzbWgO40EeGT5oaF-4NGAA" association="_fxsp4e5wEeGT5oaF-4NGAA"/>
-    </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_UGcMgPabEeGi99B_x568TQ" name="TransitionOfCareAmbulatorySummary">
       <ownedComment xmi:id="_ottgoPhKEeGQQ6aVp7opYg">
         <body>MU2 170.314(b)(2) Transition of Care/Referral Summary - For Ambulatory Care&#xD;
@@ -1320,8 +781,16 @@ MU2 170.314(b)(7) Export Summary  - For Ambulatory Care</body>
           <body>self.componentOf->excluding(null).encompassingEncounter->excluding(null)->reject(responsibleParty->one(responsibleParty : cda::ResponsibleParty | not responsibleParty.oclIsUndefined() and responsibleParty.oclIsKindOf(rim::Participation)))</body>
         </specification>
       </ownedRule>
+      <ownedRule xmi:id="_ujInEAQrEeKNWa1y_3e0dw" name="ambulatoryEncounterDiagnoses" constrainedElement="_UGcMgPabEeGi99B_x568TQ">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_yMSfEAQrEeKNWa1y_3e0dw">
+          <language>Analysis</language>
+          <language>OCL</language>
+          <body>SHALL have one of Assessment (2.16.840.1.113883.10.20.22.2.8) or Assessment and Plan (2.16.840.1.113883.10.20.22.2.9) or Postoperative Diagnosis (2.16.840.1.113883.10.20.22.2.35)  or  Postprocedure Diagnosis (2.16.840.1.113883.10.20.22.2.36) or Encounters (entries required: 2.16.840.1.113883.10.20.22.2.22.1) or Problem (entries required: 2.16.840.1.113883.10.20.22.2.5.1)</body>
+          <body>( self.getAllSections()->one(s : cda::Section | not s.oclIsUndefined() and s.oclIsTypeOf(consol::ProblemSection)) or &#xD;&#xA;self.getAllSections()->one(s : cda::Section | not s.oclIsUndefined() and s.oclIsTypeOf(mu2consol::PostoperativeDiagnosisSection)) or  &#xD;&#xA;self.getAllSections()->one(s : cda::Section | not s.oclIsUndefined() and s.oclIsTypeOf(mu2consol::PostprocedureDiagnosisSection)) or &#xD;&#xA;self.getAllSections()->one(s : cda::Section | not s.oclIsUndefined() and s.oclIsTypeOf(mu2consol::EncountersSection)) or &#xD;&#xA;self.getAllSections()->one(s : cda::Section | not s.oclIsUndefined() and s.oclIsTypeOf(mu2consol::AssessmentSection)) or &#xD;&#xA;self.getAllSections()->one(s : cda::Section | not s.oclIsUndefined() and s.oclIsTypeOf(mu2consol::AssessmentAndPlanSection)) )</body>
+        </specification>
+      </ownedRule>
       <generalization xmi:id="_WN-gwPabEeGi99B_x568TQ" general="_VG3DUNkxEeGsqcJR8eqiMw"/>
-      <ownedAttribute xmi:id="_aVRGQPabEeGi99B_x568TQ" name="reasonForReferralSection" redefinedProperty="_-Hls0OAjEeGioIEuA5-ofg" association="_aVRGQvabEeGi99B_x568TQ">
+      <ownedAttribute xmi:id="_aVRGQPabEeGi99B_x568TQ" name="reasonForReferralSection" association="_aVRGQvabEeGi99B_x568TQ">
         <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-other.uml#_2PWQFxSVEeGGzu7fmW9pXw"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_c-UzMPabEeGi99B_x568TQ" value="1"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_c-UzMfabEeGi99B_x568TQ" value="1"/>
@@ -1341,11 +810,30 @@ MU2 170.314(b)(7) Export Summary  - For Ambulatory Care</body>
         <body>MU2 170.314(b)(2) Transition of Care/Referral Summary - For Inpatient Care&#xD;
 MU2 170.314(b)(7) Export Summary  - For Inpatient Care</body>
       </ownedComment>
+      <ownedRule xmi:id="_jVFaQAQrEeKNWa1y_3e0dw" name="inpatientEncounterDiagnoses" constrainedElement="_uu2T0PdyEeG_npP0e3OOEw">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_m3iNUAQrEeKNWa1y_3e0dw">
+          <language>Analysis</language>
+          <language>OCL</language>
+          <body>SHALL have one of Assessment (2.16.840.1.113883.10.20.22.2.8) or Assessment and Plan (2.16.840.1.113883.10.20.22.2.9) or  Hospital Admission Diagnosis (2.16.840.1.113883.10.20.22.2.43) or Hospital Discharge Diagnosis (2.16.840.1.113883.10.20.22.2.24) or Postoperative Diagnosis (2.16.840.1.113883.10.20.22.2.35)  or  Postprocedure Diagnosis (2.16.840.1.113883.10.20.22.2.36) or Encounters (entries required: 2.16.840.1.113883.10.20.22.2.22.1) or Problem (entries required: 2.16.840.1.113883.10.20.22.2.5.1)</body>
+          <body>( self.getAllSections()->one(s : cda::Section | not s.oclIsUndefined() and s.oclIsTypeOf(consol::ProblemSection)) or &#xD;&#xA;self.getAllSections()->one(s : cda::Section | not s.oclIsUndefined() and s.oclIsTypeOf(mu2consol::PostoperativeDiagnosisSection)) or  &#xD;&#xA;self.getAllSections()->one(s : cda::Section | not s.oclIsUndefined() and s.oclIsTypeOf(mu2consol::PostprocedureDiagnosisSection)) or &#xD;&#xA;self.getAllSections()->one(s : cda::Section | not s.oclIsUndefined() and s.oclIsTypeOf(mu2consol::EncountersSection)) or &#xD;&#xA;self.getAllSections()->one(s : cda::Section | not s.oclIsUndefined() and s.oclIsTypeOf(mu2consol::AssessmentSection)) or &#xD;&#xA;self.getAllSections()->one(s : cda::Section | not s.oclIsUndefined() and s.oclIsTypeOf(mu2consol::AssessmentAndPlanSection)) or &#xD;&#xA;self.getAllSections()->one(s : cda::Section | not s.oclIsUndefined() and s.oclIsTypeOf(mu2consol::HospitalAdmissionDiagnosisSection)) or &#xD;&#xA;self.getAllSections()->one(s : cda::Section | not s.oclIsUndefined() and s.oclIsTypeOf(mu2consol::HospitalDischargeDiagnosisSection)) )</body>
+        </specification>
+      </ownedRule>
       <generalization xmi:id="_vutOUPdyEeG_npP0e3OOEw" general="_VG3DUNkxEeGsqcJR8eqiMw"/>
       <ownedAttribute xmi:id="_b_hiYPd8EeG_npP0e3OOEw" name="hospitalDischargeInstructionsSection" association="_b_iJcPd8EeG_npP0e3OOEw">
         <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-discharge.uml#_lBergCUMEeGiOPpZVnfEJA"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_eExXoPd8EeG_npP0e3OOEw" value="1"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_eExXofd8EeG_npP0e3OOEw" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_2Mgs4AQjEeKNWa1y_3e0dw" name="hospitalDischargeMedicationsSection" association="_2MhT8AQjEeKNWa1y_3e0dw">
+        <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-discharge.uml#_TytVkCUQEeGiOPpZVnfEJA"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_5U1IsAQjEeKNWa1y_3e0dw" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_5U1IsQQjEeKNWa1y_3e0dw" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_ubIl0AQkEeKNWa1y_3e0dw" name="hospitalAdmissionDiagnosisSection" type="_gl8CMODmEeGdSJSga09Dyg" association="_ubIl0gQkEeKNWa1y_3e0dw">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ubIl0QQkEeKNWa1y_3e0dw"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_x3btkAQkEeKNWa1y_3e0dw" name="hospitalDischargeDiagnosisSection" type="_qgJokODmEeGdSJSga09Dyg" association="_x3cUoQQkEeKNWa1y_3e0dw">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_x3cUoAQkEeKNWa1y_3e0dw"/>
       </ownedAttribute>
     </packagedElement>
     <packagedElement xmi:type="uml:Association" xmi:id="_b_iJcPd8EeG_npP0e3OOEw" memberEnd="_b_hiYPd8EeG_npP0e3OOEw _b_iJcfd8EeG_npP0e3OOEw">
@@ -1370,20 +858,12 @@ MU2 170.314(b)(7) Export Summary  - For Inpatient Care</body>
       <ownedEnd xmi:id="_0UMFcfhTEeGPm7sA61ixGw" type="_zprI0PhTEeGPm7sA61ixGw" association="_0UMFcPhTEeGPm7sA61ixGw"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_i2IoQPhVEeGPm7sA61ixGw" name="ViewDownloadTransmitSummary">
-      <ownedRule xmi:id="_D4WE8PhWEeGPm7sA61ixGw" name="medicationAllergy" constrainedElement="_tzbWgO40EeGT5oaF-4NGAA">
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_D4WE8fhWEeGPm7sA61ixGw">
-          <language>OCL</language>
+      <ownedRule xmi:id="_CrzxoPhcEeGPm7sA61ixGw" name="carePlanFields" constrainedElement="_i2IoQPhVEeGPm7sA61ixGw">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_FGH38PhcEeGPm7sA61ixGw">
           <language>Analysis</language>
-          <body>(self.getAllSections()->one(s : cda::Section | not s.oclIsUndefined() and s.oclIsTypeOf(consol::AllergiesSection)) or &#xD;&#xA;self.getAllSections()->one(s : cda::Section | not s.oclIsUndefined() and s.oclIsTypeOf(mu2consol::AllergiesSectionEntriesOptional)))</body>
-          <body>SHALL have one of Allergies (entries optional: 2.16.840.1.113883.10.20.22.2.6 or entries required: 2.16.840.1.113883.10.20.22.2.6.1)</body>
-        </specification>
-      </ownedRule>
-      <ownedRule xmi:id="_rlqVcPhbEeGPm7sA61ixGw" name="carePlanFields" constrainedElement="_i2IoQPhVEeGPm7sA61ixGw">
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_uDH2YPhbEeGPm7sA61ixGw">
           <language>OCL</language>
-          <language>Analysis</language>
-          <body>(self.getAllSections()->one(s : cda::Section | not s.oclIsUndefined() and s.oclIsTypeOf(mu2consol::PlanOfCareSection)) or &#xD;&#xA;self.getAllSections()->one(s : cda::Section | not s.oclIsUndefined() and s.oclIsTypeOf(mu2consol::AssessmentAndPlanSection)))</body>
           <body>SHALL have one of Assessment and Plan section or Plan of Care section</body>
+          <body>(self.getAllSections()->one(s : cda::Section | not s.oclIsUndefined() and s.oclIsTypeOf(mu2consol::PlanOfCareSection)) or &#xD;&#xA;self.getAllSections()->one(s : cda::Section | not s.oclIsUndefined() and s.oclIsTypeOf(mu2consol::AssessmentAndPlanSection)))</body>
         </specification>
       </ownedRule>
       <generalization xmi:id="_kFewQPhVEeGPm7sA61ixGw" general="_v-6qsNkMEeGsqcJR8eqiMw"/>
@@ -1397,18 +877,12 @@ MU2 170.314(b)(7) Export Summary  - For Inpatient Care</body>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_fTJ-0PhXEeGPm7sA61ixGw" value="1"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_fTKl4PhXEeGPm7sA61ixGw" value="1"/>
       </ownedAttribute>
-      <ownedAttribute xmi:id="_oLR2EPhXEeGPm7sA61ixGw" name="hospitalDischargeMedicationsSection" association="_oLSdIfhXEeGPm7sA61ixGw">
-        <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-discharge.uml#_TytVkCUQEeGiOPpZVnfEJA"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_pzETQPhXEeGPm7sA61ixGw" value="1"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_pzETQfhXEeGPm7sA61ixGw" value="1"/>
-      </ownedAttribute>
       <ownedAttribute xmi:id="_0EF3IPhXEeGPm7sA61ixGw" name="problemSection" association="_0EGeMPhXEeGPm7sA61ixGw">
         <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-problems.uml#_2LSPYBSVEeGGzu7fmW9pXw"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_1wiK0PhXEeGPm7sA61ixGw" value="1"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_1wiK0fhXEeGPm7sA61ixGw" value="1"/>
       </ownedAttribute>
-      <ownedAttribute xmi:id="_8M2G8PhXEeGPm7sA61ixGw" name="proceduresSection" association="_8M2uAfhXEeGPm7sA61ixGw">
-        <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-procedures.uml#_2OAzQRSVEeGGzu7fmW9pXw"/>
+      <ownedAttribute xmi:id="_8M2G8PhXEeGPm7sA61ixGw" name="proceduresSection" type="_oJZzEAKlEeKIhvHOhwsFvA" association="_8M2uAfhXEeGPm7sA61ixGw">
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_9aj3QPhXEeGPm7sA61ixGw" value="1"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_9aj3QfhXEeGPm7sA61ixGw" value="1"/>
       </ownedAttribute>
@@ -1417,8 +891,7 @@ MU2 170.314(b)(7) Export Summary  - For Inpatient Care</body>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_SeKM4PhYEeGPm7sA61ixGw" value="1"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_SeKz8PhYEeGPm7sA61ixGw" value="1"/>
       </ownedAttribute>
-      <ownedAttribute xmi:id="_Vkj9IPhYEeGPm7sA61ixGw" name="resultsSection" association="_VkkkMfhYEeGPm7sA61ixGw">
-        <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-results.uml#_2Js7AxSVEeGGzu7fmW9pXw"/>
+      <ownedAttribute xmi:id="_Vkj9IPhYEeGPm7sA61ixGw" name="resultsSection" type="_R5ZkQAJvEeKIhvHOhwsFvA" association="_VkkkMfhYEeGPm7sA61ixGw">
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_W1NFoPhYEeGPm7sA61ixGw" value="1"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_W1NFofhYEeGPm7sA61ixGw" value="1"/>
       </ownedAttribute>
@@ -1439,9 +912,6 @@ MU2 170.314(b)(7) Export Summary  - For Inpatient Care</body>
     </packagedElement>
     <packagedElement xmi:type="uml:Association" xmi:id="_d7lu8fhXEeGPm7sA61ixGw" memberEnd="_d7lH4PhXEeGPm7sA61ixGw _d7lu8vhXEeGPm7sA61ixGw">
       <ownedEnd xmi:id="_d7lu8vhXEeGPm7sA61ixGw" type="_i2IoQPhVEeGPm7sA61ixGw" association="_d7lu8fhXEeGPm7sA61ixGw"/>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Association" xmi:id="_oLSdIfhXEeGPm7sA61ixGw" memberEnd="_oLR2EPhXEeGPm7sA61ixGw _oLSdIvhXEeGPm7sA61ixGw">
-      <ownedEnd xmi:id="_oLSdIvhXEeGPm7sA61ixGw" type="_i2IoQPhVEeGPm7sA61ixGw" association="_oLSdIfhXEeGPm7sA61ixGw"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Association" xmi:id="_0EGeMPhXEeGPm7sA61ixGw" memberEnd="_0EF3IPhXEeGPm7sA61ixGw _0EGeMfhXEeGPm7sA61ixGw">
       <ownedEnd xmi:id="_0EGeMfhXEeGPm7sA61ixGw" type="_i2IoQPhVEeGPm7sA61ixGw" association="_0EGeMPhXEeGPm7sA61ixGw"/>
@@ -1464,6 +934,309 @@ MU2 170.314(b)(7) Export Summary  - For Inpatient Care</body>
     <packagedElement xmi:type="uml:Association" xmi:id="_dsy9ofhaEeGPm7sA61ixGw" memberEnd="_dsyWkPhaEeGPm7sA61ixGw _dsy9ovhaEeGPm7sA61ixGw">
       <ownedEnd xmi:id="_dsy9ovhaEeGPm7sA61ixGw" type="_i2IoQPhVEeGPm7sA61ixGw" association="_dsy9ofhaEeGPm7sA61ixGw"/>
     </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_rsKJkPhcEeGPm7sA61ixGw" name="VDTInpatientSummary">
+      <ownedComment xmi:id="_qrDxkPhfEeGPm7sA61ixGw">
+        <body>MU2 170.314 (e)(1)  Inpatient Summary</body>
+      </ownedComment>
+      <ownedRule xmi:id="_EFIqIPheEeGPm7sA61ixGw" name="effectiveTime" constrainedElement="_rsKJkPhcEeGPm7sA61ixGw">
+        <ownedComment xmi:id="_LpyuYPheEeGPm7sA61ixGw">
+          <body>QUERY</body>
+        </ownedComment>
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_IaNM8PheEeGPm7sA61ixGw">
+          <language>OCL</language>
+          <language>Analysis</language>
+          <body>self.componentOf->excluding(null).encompassingEncounter->excluding(null)->reject((effectiveTime.oclIsUndefined() or &#xD;&#xD;&#xA;effectiveTime.isNullFlavorUndefined()) implies (not effectiveTime.oclIsUndefined()))</body>
+          <body>Admission and Discharge Dates</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_WH_yoPheEeGPm7sA61ixGw" name="location" constrainedElement="_rsKJkPhcEeGPm7sA61ixGw">
+        <ownedComment xmi:id="_bra-8PheEeGPm7sA61ixGw">
+          <body>QUERY</body>
+        </ownedComment>
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_aLjusPheEeGPm7sA61ixGw">
+          <language>Analysis</language>
+          <language>OCL</language>
+          <body>Admission and Discharge Location</body>
+          <body>self.componentOf->excluding(null).encompassingEncounter->excluding(null)->reject(location->one(location : cda::Location | &#xD;&#xD;&#xA;not location.oclIsUndefined() and location.oclIsKindOf(rim::Participation)))</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_GUuRsPhfEeGPm7sA61ixGw" name="chiefComplaintOrReasonForVisit" constrainedElement="_rsKJkPhcEeGPm7sA61ixGw">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_JY5NUPhfEeGPm7sA61ixGw">
+          <language>OCL</language>
+          <language>Analysis</language>
+          <body>(self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::ChiefComplaintSection)) or &#xD;&#xA; self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::ReasonForVisitSection))) xor &#xD;&#xA; self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::ChiefComplaintAndReasonForVisitSection))</body>
+          <body>SHALL have one of Reason for Visit (2.16.840.1.113883.10.20.22.2.12)  or Chief Complaint (1.3.6.1.4.1.19376.1.5.3.1.1.13.2.1) or Chief Complaint and Reason for Visit (2.16.840.1.113883.10.20.22.2.13)</body>
+        </specification>
+      </ownedRule>
+      <generalization xmi:id="_tK1HAPhcEeGPm7sA61ixGw" general="_i2IoQPhVEeGPm7sA61ixGw"/>
+      <ownedAttribute xmi:id="_kLSHMPheEeGPm7sA61ixGw" name="hospitalDischargeInstructionsSection" association="_kLSuQPheEeGPm7sA61ixGw">
+        <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-discharge.uml#_lBergCUMEeGiOPpZVnfEJA"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_mFNdQPheEeGPm7sA61ixGw" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_mFNdQfheEeGPm7sA61ixGw" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_sMdvYPheEeGPm7sA61ixGw" name="hospitalAdmissionDiagnosisSection" type="_gl8CMODmEeGdSJSga09Dyg" association="_sMeWcfheEeGPm7sA61ixGw">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_tMrPMPheEeGPm7sA61ixGw" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_tMrPMfheEeGPm7sA61ixGw" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_zOSMUPheEeGPm7sA61ixGw" name="chiefComplaintSection" association="_zOSzYfheEeGPm7sA61ixGw">
+        <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-other.uml#_2PWQCBSVEeGGzu7fmW9pXw"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_zOSzYPheEeGPm7sA61ixGw"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_0_qDUPheEeGPm7sA61ixGw" name="reasonForVisitSection" association="_0_qqYfheEeGPm7sA61ixGw">
+        <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-other.uml#_Nm64UCscEeGHF88-qhhUMA"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_0_qqYPheEeGPm7sA61ixGw"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_2wGtQPheEeGPm7sA61ixGw" name="chiefComplaintAndReasonForVisitSection" association="_2wHUUfheEeGPm7sA61ixGw">
+        <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-other.uml#_oI7CQCsaEeGHF88-qhhUMA"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_2wHUUPheEeGPm7sA61ixGw"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_GKEVwAQkEeKNWa1y_3e0dw" name="hospitalDischargeMedicationsSection" association="_GKEVwgQkEeKNWa1y_3e0dw">
+        <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-discharge.uml#_TytVkCUQEeGiOPpZVnfEJA"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_HR45cAQkEeKNWa1y_3e0dw" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_HR45cQQkEeKNWa1y_3e0dw" value="1"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_2FvMgPhcEeGPm7sA61ixGw" name="VDTAmbulatorySummary">
+      <ownedComment xmi:id="_sjR3cPhfEeGPm7sA61ixGw">
+        <body>MU2 170.314 (e)(1) Ambulatory Summary</body>
+      </ownedComment>
+      <ownedRule xmi:id="_-3broPhcEeGPm7sA61ixGw" name="responsibleParty" constrainedElement="_2FvMgPhcEeGPm7sA61ixGw">
+        <ownedComment xmi:id="_B5gVgPhdEeGPm7sA61ixGw">
+          <body>QUERY</body>
+        </ownedComment>
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_A_BqQPhdEeGPm7sA61ixGw">
+          <language>OCL</language>
+          <language>Analysis</language>
+          <body>self.componentOf->excluding(null).encompassingEncounter->excluding(null)->reject(responsibleParty->one(responsibleParty : &#xD;&#xD;&#xA;cda::ResponsibleParty | not responsibleParty.oclIsUndefined() and responsibleParty.oclIsKindOf(rim::Participation)))</body>
+          <body>Provider Name and Office Contact Information</body>
+        </specification>
+      </ownedRule>
+      <generalization xmi:id="_2j8ygPhcEeGPm7sA61ixGw" general="_i2IoQPhVEeGPm7sA61ixGw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_kLSuQPheEeGPm7sA61ixGw" memberEnd="_kLSHMPheEeGPm7sA61ixGw _kLSuQfheEeGPm7sA61ixGw">
+      <ownedEnd xmi:id="_kLSuQfheEeGPm7sA61ixGw" type="_rsKJkPhcEeGPm7sA61ixGw" association="_kLSuQPheEeGPm7sA61ixGw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_sMeWcfheEeGPm7sA61ixGw" memberEnd="_sMdvYPheEeGPm7sA61ixGw _sMeWcvheEeGPm7sA61ixGw">
+      <ownedEnd xmi:id="_sMeWcvheEeGPm7sA61ixGw" type="_rsKJkPhcEeGPm7sA61ixGw" association="_sMeWcfheEeGPm7sA61ixGw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_zOSzYfheEeGPm7sA61ixGw" memberEnd="_zOSMUPheEeGPm7sA61ixGw _zOSzYvheEeGPm7sA61ixGw">
+      <ownedEnd xmi:id="_zOSzYvheEeGPm7sA61ixGw" type="_rsKJkPhcEeGPm7sA61ixGw" association="_zOSzYfheEeGPm7sA61ixGw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_0_qqYfheEeGPm7sA61ixGw" memberEnd="_0_qDUPheEeGPm7sA61ixGw _0_qqYvheEeGPm7sA61ixGw">
+      <ownedEnd xmi:id="_0_qqYvheEeGPm7sA61ixGw" type="_rsKJkPhcEeGPm7sA61ixGw" association="_0_qqYfheEeGPm7sA61ixGw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_2wHUUfheEeGPm7sA61ixGw" memberEnd="_2wGtQPheEeGPm7sA61ixGw _2wHUUvheEeGPm7sA61ixGw">
+      <ownedEnd xmi:id="_2wHUUvheEeGPm7sA61ixGw" type="_rsKJkPhcEeGPm7sA61ixGw" association="_2wHUUfheEeGPm7sA61ixGw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_Ba_B8PhnEeGPm7sA61ixGw" memberEnd="_Ba9z0PhnEeGPm7sA61ixGw _Ba_pAPhnEeGPm7sA61ixGw">
+      <ownedEnd xmi:id="_Ba_pAPhnEeGPm7sA61ixGw" type="_7D0CQOzmEeGT-eFu7Ghgjw" association="_Ba_B8PhnEeGPm7sA61ixGw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_do39kPhzEeGPm7sA61ixGw" name="FunctionalStatusSection">
+      <ownedComment xmi:id="_kRURMPhzEeGPm7sA61ixGw">
+        <body>INLINE</body>
+      </ownedComment>
+      <ownedRule xmi:id="_JoyBcPh1EeGPm7sA61ixGw" name="cognitiveStatus" constrainedElement="_do39kPhzEeGPm7sA61ixGw">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_QyDKMPh1EeGPm7sA61ixGw">
+          <language>OCL</language>
+          <body>self.entry->exists(entry : cda::Entry | not entry.observation.oclIsUndefined() and entry.observation.oclIsKindOf(consol::CognitiveStatusProblemObservation)) or self.entry->exists(entry : cda::Entry | not entry.observation.oclIsUndefined() and entry.observation.oclIsKindOf(consol::CognitiveStatusResultObservation)) or  self.entry->exists(entry : cda::Entry | not entry.organizer.oclIsUndefined() and entry.organizer.oclIsKindOf(consol::CognitiveStatusResultOrganizer))</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_bj0qsPh1EeGPm7sA61ixGw" name="functionalStatus" constrainedElement="_do39kPhzEeGPm7sA61ixGw">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_en9xIPh1EeGPm7sA61ixGw">
+          <language>OCL</language>
+          <body>self.entry->exists(entry : cda::Entry | not entry.observation.oclIsUndefined() and entry.observation.oclIsKindOf(consol::FunctionalStatusProblemObservation)) or self.entry->exists(entry : cda::Entry | not entry.observation.oclIsUndefined() and entry.observation.oclIsKindOf(consol::FunctionalStatusResultObservation)) or self.entry->exists(entry : cda::Entry | not entry.organizer.oclIsUndefined() and entry.organizer.oclIsKindOf(consol::FunctionalStatusResultOrganizer))</body>
+        </specification>
+      </ownedRule>
+      <generalization xmi:id="_do4koPhzEeGPm7sA61ixGw">
+        <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-other.uml#_2KKOBhSVEeGGzu7fmW9pXw"/>
+      </generalization>
+      <ownedAttribute xmi:id="_imNaQPhzEeGPm7sA61ixGw" name="cognitiveStatusProblemObservation" association="_imNaQ_hzEeGPm7sA61ixGw">
+        <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.consol.model/model/consol.uml#_dXKPQOZbEeGINOJ_SD9_dA"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_imNaQfhzEeGPm7sA61ixGw" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_imNaQvhzEeGPm7sA61ixGw"/>
+        <redefinedProperty href="../../org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-other.uml#_tJI4AOcQEeGINOJ_SD9_dA"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_imOoYPhzEeGPm7sA61ixGw" name="cognitiveStatusResultObservation" association="_imPPcPhzEeGPm7sA61ixGw">
+        <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.consol.model/model/consol.uml#_gkBM0OZbEeGINOJ_SD9_dA"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_imOoYfhzEeGPm7sA61ixGw" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_imOoYvhzEeGPm7sA61ixGw"/>
+        <redefinedProperty href="../../org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-other.uml#_oUSB4OcQEeGINOJ_SD9_dA"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_imP2gPhzEeGPm7sA61ixGw" name="cognitiveStatusResultOrganizer" association="_imQdkPhzEeGPm7sA61ixGw">
+        <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.consol.model/model/consol.uml#_jfoCUOZbEeGINOJ_SD9_dA"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_imP2gfhzEeGPm7sA61ixGw" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_imP2gvhzEeGPm7sA61ixGw"/>
+        <redefinedProperty href="../../org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-other.uml#_iy8gQOcQEeGINOJ_SD9_dA"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_imREoPhzEeGPm7sA61ixGw" name="functionalStatusProblemObservation" association="_imRrsPhzEeGPm7sA61ixGw">
+        <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.consol.model/model/consol.uml#_rVl5AOZbEeGINOJ_SD9_dA"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_imREofhzEeGPm7sA61ixGw" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_imREovhzEeGPm7sA61ixGw"/>
+        <redefinedProperty href="../../org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-other.uml#_rciMQOcQEeGINOJ_SD9_dA"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_imSSwPhzEeGPm7sA61ixGw" name="functionalStatusResultObservation" association="_imSSw_hzEeGPm7sA61ixGw">
+        <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.consol.model/model/consol.uml#_viRU0OZbEeGINOJ_SD9_dA"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_imSSwfhzEeGPm7sA61ixGw" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_imSSwvhzEeGPm7sA61ixGw"/>
+        <redefinedProperty href="../../org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-other.uml#_lOjnEOcQEeGINOJ_SD9_dA"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_imTg4PhzEeGPm7sA61ixGw" name="functionalStatusResultOrganizer" association="_imTg4_hzEeGPm7sA61ixGw">
+        <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.consol.model/model/consol.uml#_zBlUUOZbEeGINOJ_SD9_dA"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_imTg4fhzEeGPm7sA61ixGw" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_imTg4vhzEeGPm7sA61ixGw"/>
+        <redefinedProperty href="../../org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-other.uml#_gmf20OcQEeGINOJ_SD9_dA"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_imNaQ_hzEeGPm7sA61ixGw" memberEnd="_imNaQPhzEeGPm7sA61ixGw _imOBUPhzEeGPm7sA61ixGw">
+      <ownedEnd xmi:id="_imOBUPhzEeGPm7sA61ixGw" type="_do39kPhzEeGPm7sA61ixGw" association="_imNaQ_hzEeGPm7sA61ixGw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_imPPcPhzEeGPm7sA61ixGw" memberEnd="_imOoYPhzEeGPm7sA61ixGw _imPPcfhzEeGPm7sA61ixGw">
+      <ownedEnd xmi:id="_imPPcfhzEeGPm7sA61ixGw" type="_do39kPhzEeGPm7sA61ixGw" association="_imPPcPhzEeGPm7sA61ixGw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_imQdkPhzEeGPm7sA61ixGw" memberEnd="_imP2gPhzEeGPm7sA61ixGw _imQdkfhzEeGPm7sA61ixGw">
+      <ownedEnd xmi:id="_imQdkfhzEeGPm7sA61ixGw" type="_do39kPhzEeGPm7sA61ixGw" association="_imQdkPhzEeGPm7sA61ixGw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_imRrsPhzEeGPm7sA61ixGw" memberEnd="_imREoPhzEeGPm7sA61ixGw _imRrsfhzEeGPm7sA61ixGw">
+      <ownedEnd xmi:id="_imRrsfhzEeGPm7sA61ixGw" type="_do39kPhzEeGPm7sA61ixGw" association="_imRrsPhzEeGPm7sA61ixGw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_imSSw_hzEeGPm7sA61ixGw" memberEnd="_imSSwPhzEeGPm7sA61ixGw _imS50PhzEeGPm7sA61ixGw">
+      <ownedEnd xmi:id="_imS50PhzEeGPm7sA61ixGw" type="_do39kPhzEeGPm7sA61ixGw" association="_imSSw_hzEeGPm7sA61ixGw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_imTg4_hzEeGPm7sA61ixGw" memberEnd="_imTg4PhzEeGPm7sA61ixGw _imUH8PhzEeGPm7sA61ixGw">
+      <ownedEnd xmi:id="_imUH8PhzEeGPm7sA61ixGw" type="_do39kPhzEeGPm7sA61ixGw" association="_imTg4_hzEeGPm7sA61ixGw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_kIKDQfh1EeGPm7sA61ixGw" memberEnd="_kIJcMPh1EeGPm7sA61ixGw _kIKqUPh1EeGPm7sA61ixGw">
+      <ownedEnd xmi:id="_kIKqUPh1EeGPm7sA61ixGw" type="_VG3DUNkxEeGsqcJR8eqiMw" association="_kIKDQfh1EeGPm7sA61ixGw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_xbrkwPwYEeGx4ophOjh2tw" name="SmokingStatusObservation">
+      <generalization xmi:id="_yhogMPwYEeGx4ophOjh2tw">
+        <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-socialhistory.uml#_gIH_QOWQEeGKmvzED_He2w"/>
+      </generalization>
+      <ownedAttribute xmi:id="__5ZLgPwYEeGx4ophOjh2tw" name="value" visibility="private" aggregation="composite">
+        <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="__5ZLgfwYEeGx4ophOjh2tw" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="__5ZLgvwYEeGx4ophOjh2tw" value="1"/>
+        <redefinedProperty href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_tRpv0Eo-Ed6c3qsAxlFHaQ"/>
+        <redefinedProperty href="../../org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-socialhistory.uml#_kh-7c-WQEeGKmvzED_He2w"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_tAOdEAJuEeKIhvHOhwsFvA" name="ResultObservation">
+      <ownedRule xmi:id="_wYmuIAJuEeKIhvHOhwsFvA" name="resultObservationCodeValue" constrainedElement="_tAOdEAJuEeKIhvHOhwsFvA">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_zUi60AJuEeKIhvHOhwsFvA">
+          <language>Analysis</language>
+          <language>OCL</language>
+          <body>The value for 'code' in a result observation SHOULD be selected from LOINC (codeSystem 2.16.840.1.113883.6.1)</body>
+          <body>self.code.codeSystem = '2.16.840.1.113883.6.1'</body>
+        </specification>
+      </ownedRule>
+      <generalization xmi:id="_tAPEIAJuEeKIhvHOhwsFvA">
+        <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-results.uml#_2J1d4BSVEeGGzu7fmW9pXw"/>
+      </generalization>
+      <ownedAttribute xmi:id="_ub5J0AJuEeKIhvHOhwsFvA" name="code" visibility="private">
+        <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_Z1EGIDxaEd6JwqSGecoePg"/>
+        <redefinedProperty href="../../org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-results.uml#_2J1d6hSVEeGGzu7fmW9pXw"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_--CGcAJuEeKIhvHOhwsFvA" name="ResultOrganizer">
+      <generalization xmi:id="_--CGcQJuEeKIhvHOhwsFvA">
+        <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-results.uml#_2JxzgBSVEeGGzu7fmW9pXw"/>
+      </generalization>
+      <ownedAttribute xmi:id="_AUBB8AJvEeKIhvHOhwsFvA" name="resultObservation" type="_tAOdEAJuEeKIhvHOhwsFvA" association="_AUBpAAJvEeKIhvHOhwsFvA">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_AUBB8QJvEeKIhvHOhwsFvA" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_AUBB8gJvEeKIhvHOhwsFvA" value="1"/>
+        <redefinedProperty href="../../org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-results.uml#_2JxzgxSVEeGGzu7fmW9pXw"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_AUBpAAJvEeKIhvHOhwsFvA" memberEnd="_AUBB8AJvEeKIhvHOhwsFvA _AUBpAQJvEeKIhvHOhwsFvA">
+      <ownedEnd xmi:id="_AUBpAQJvEeKIhvHOhwsFvA" type="_--CGcAJuEeKIhvHOhwsFvA" association="_AUBpAAJvEeKIhvHOhwsFvA"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_R5ZkQAJvEeKIhvHOhwsFvA" name="ResultsSection">
+      <generalization xmi:id="_R5ZkQQJvEeKIhvHOhwsFvA">
+        <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-results.uml#_2Js7AxSVEeGGzu7fmW9pXw"/>
+      </generalization>
+      <ownedAttribute xmi:id="_SwK0MAJvEeKIhvHOhwsFvA" name="resultOrganizer" type="_--CGcAJuEeKIhvHOhwsFvA" association="_SwLbQAJvEeKIhvHOhwsFvA">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_SwK0MQJvEeKIhvHOhwsFvA" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_SwK0MgJvEeKIhvHOhwsFvA" value="1"/>
+        <redefinedProperty href="../../org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-results.uml#_wGYWEBrJEeGZ46SdiDZtPQ"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_SwLbQAJvEeKIhvHOhwsFvA" memberEnd="_SwK0MAJvEeKIhvHOhwsFvA _SwLbQQJvEeKIhvHOhwsFvA">
+      <ownedEnd xmi:id="_SwLbQQJvEeKIhvHOhwsFvA" type="_R5ZkQAJvEeKIhvHOhwsFvA" association="_SwLbQAJvEeKIhvHOhwsFvA"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_zL3xEAKcEeKIhvHOhwsFvA" name="EncounterActivities">
+      <ownedRule xmi:id="_QLlMMAKeEeKIhvHOhwsFvA" name="codeValue" constrainedElement="_zL3xEAKcEeKIhvHOhwsFvA">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_WnjxIAKeEeKIhvHOhwsFvA">
+          <language>Analysis</language>
+          <language>OCL</language>
+          <body>The value for 'code' for encounter activities  SHOULD be selected from ICD-10(codeSystem 2.16.840.1.113883.6.3) or SNOMED CT (codeSystem 2.16.840.1.113883.6.96)</body>
+          <body>self.code.codeSystem = '2.16.840.1.113883.6.3' xor self.code.codeSystem = '2.16.840.1.113883.6.96'</body>
+        </specification>
+      </ownedRule>
+      <generalization xmi:id="_zL4YIAKcEeKIhvHOhwsFvA">
+        <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-encounters.uml#_2LayQBSVEeGGzu7fmW9pXw"/>
+      </generalization>
+      <ownedAttribute xmi:id="_0Sfa4AKcEeKIhvHOhwsFvA" name="code" visibility="private">
+        <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_0Sfa4QKcEeKIhvHOhwsFvA" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_0Sfa4gKcEeKIhvHOhwsFvA"/>
+        <redefinedProperty href="../../org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-encounters.uml#_2LayUhSVEeGGzu7fmW9pXw"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_9AQcQAKcEeKIhvHOhwsFvA" name="EncountersSection">
+      <generalization xmi:id="_9AQcQQKcEeKIhvHOhwsFvA">
+        <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-encounters.uml#_2LWg0BSVEeGGzu7fmW9pXw"/>
+      </generalization>
+      <ownedAttribute xmi:id="_-ZNMMAKcEeKIhvHOhwsFvA" name="encounterActivities" type="_zL3xEAKcEeKIhvHOhwsFvA" association="_-ZNzQAKcEeKIhvHOhwsFvA">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_-ZNMMQKcEeKIhvHOhwsFvA" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_-ZNMMgKcEeKIhvHOhwsFvA" value="1"/>
+        <redefinedProperty href="../../org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-encounters.uml#_qg2HIDFVEeGbx9xBxK_Upg"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_-ZNzQAKcEeKIhvHOhwsFvA" memberEnd="_-ZNMMAKcEeKIhvHOhwsFvA _-ZNzQQKcEeKIhvHOhwsFvA">
+      <ownedEnd xmi:id="_-ZNzQQKcEeKIhvHOhwsFvA" type="_9AQcQAKcEeKIhvHOhwsFvA" association="_-ZNzQAKcEeKIhvHOhwsFvA"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_KmS6gAKlEeKIhvHOhwsFvA" name="ProcedureActivityProcedure">
+      <ownedRule xmi:id="_Xm1YoAKlEeKIhvHOhwsFvA" name="codeValue" constrainedElement="_KmS6gAKlEeKIhvHOhwsFvA">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_blLdgAKlEeKIhvHOhwsFvA">
+          <language>Analysis</language>
+          <language>OCL</language>
+          <body>'code' SHOULD be selected from SNOMED CT (codeSystem 2.16.840.1.113883.6.96) or CPT-4 (CodeSystem 2.16.840.1.113883.6.12)</body>
+          <body>self.code.codeSystem = '2.16.840.1.113883.6.96' xor self.code.codeSystem = '2.16.840.1.113883.6.12'</body>
+        </specification>
+      </ownedRule>
+      <generalization xmi:id="_KmThkAKlEeKIhvHOhwsFvA">
+        <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-procedures.uml#_2OG58RSVEeGGzu7fmW9pXw"/>
+      </generalization>
+      <ownedAttribute xmi:id="_MyjWsAKlEeKIhvHOhwsFvA" name="code" visibility="private" aggregation="composite">
+        <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_Z1EGIDxaEd6JwqSGecoePg"/>
+        <redefinedProperty href="../../org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-procedures.uml#_2OTHKhSVEeGGzu7fmW9pXw"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_oJZzEAKlEeKIhvHOhwsFvA" name="ProceduresSection">
+      <generalization xmi:id="_oJZzEQKlEeKIhvHOhwsFvA">
+        <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-procedures.uml#_2OAzQRSVEeGGzu7fmW9pXw"/>
+      </generalization>
+      <ownedAttribute xmi:id="_pebFQAKlEeKIhvHOhwsFvA" name="procedureActivityProcedure" type="_KmS6gAKlEeKIhvHOhwsFvA" association="_pebFQwKlEeKIhvHOhwsFvA">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_pebFQQKlEeKIhvHOhwsFvA" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_pebFQgKlEeKIhvHOhwsFvA"/>
+        <redefinedProperty href="../../org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-procedures.uml#_CMyXQOVsEeGpoIKFyl7L7w"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_pebFQwKlEeKIhvHOhwsFvA" memberEnd="_pebFQAKlEeKIhvHOhwsFvA _pebsUAKlEeKIhvHOhwsFvA">
+      <ownedEnd xmi:id="_pebsUAKlEeKIhvHOhwsFvA" type="_oJZzEAKlEeKIhvHOhwsFvA" association="_pebFQwKlEeKIhvHOhwsFvA"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_2MhT8AQjEeKNWa1y_3e0dw" memberEnd="_2Mgs4AQjEeKNWa1y_3e0dw _2MhT8QQjEeKNWa1y_3e0dw">
+      <ownedEnd xmi:id="_2MhT8QQjEeKNWa1y_3e0dw" type="_uu2T0PdyEeG_npP0e3OOEw" association="_2MhT8AQjEeKNWa1y_3e0dw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_GKEVwgQkEeKNWa1y_3e0dw" memberEnd="_GKEVwAQkEeKNWa1y_3e0dw _GKE80AQkEeKNWa1y_3e0dw">
+      <ownedEnd xmi:id="_GKE80AQkEeKNWa1y_3e0dw" type="_rsKJkPhcEeGPm7sA61ixGw" association="_GKEVwgQkEeKNWa1y_3e0dw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_ubIl0gQkEeKNWa1y_3e0dw" memberEnd="_ubIl0AQkEeKNWa1y_3e0dw _ubIl0wQkEeKNWa1y_3e0dw">
+      <ownedEnd xmi:id="_ubIl0wQkEeKNWa1y_3e0dw" type="_uu2T0PdyEeG_npP0e3OOEw" association="_ubIl0gQkEeKNWa1y_3e0dw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_x3cUoQQkEeKNWa1y_3e0dw" memberEnd="_x3btkAQkEeKNWa1y_3e0dw _x3cUogQkEeKNWa1y_3e0dw">
+      <ownedEnd xmi:id="_x3cUogQkEeKNWa1y_3e0dw" type="_uu2T0PdyEeG_npP0e3OOEw" association="_x3cUoQQkEeKNWa1y_3e0dw"/>
+    </packagedElement>
     <profileApplication xmi:id="_mZtsIdd5EeGtNLA6W-IQeQ">
       <eAnnotations xmi:id="_mZtsItd5EeGtNLA6W-IQeQ" source="http://www.eclipse.org/uml2/2.0.0/UML">
         <references xmi:type="ecore:EPackage" href="pathmap://UML_PROFILES/Standard.profile.uml#_yzU58YinEdqtvbnfB2L_5w"/>
@@ -1477,21 +1250,14 @@ MU2 170.314(b)(7) Export Summary  - For Inpatient Care</body>
       <appliedProfile href="pathmap://CDA_PROFILES/CDA.profile.uml#_cxOJEIEVEd6H8o-hO3-B4Q"/>
     </profileApplication>
   </uml:Package>
-  <CDA:CodegenSupport xmi:id="_mbrbANd5EeGtNLA6W-IQeQ" basePackage="org.openhealthtools.mdht.uml.cda" nsPrefix="mu2consol" nsURI="http://www.openhealthtools.org/mdht/uml/cda/mu2consol" packageName="mu2consol" prefix="mu2consol" base_Namespace="_mZtsINd5EeGtNLA6W-IQeQ"/>
-  <CDA:CDATemplate xmi:id="_Su_88NpWEeGzu8-aAsCS4g" base_Class="_VG3DUNkxEeGsqcJR8eqiMw" templateId="2.16.840.1.113883.11.11.11.1.1" assigningAuthorityName="TEMP"/>
+  <CDA:CodegenSupport xmi:id="_mbrbANd5EeGtNLA6W-IQeQ" basePackage="org.openhealthtools.mdht.uml.cda" nsPrefix="mu2consol" nsURI="http://www.openhealthtools.org/mdht/uml/cda/mu2consol" packageName="mu2consol" prefix="Mu2consol" base_Namespace="_mZtsINd5EeGtNLA6W-IQeQ"/>
   <CDA:AssociationValidation xmi:id="_-OBq4NpjEeGzu8-aAsCS4g" base_Association="_zQyEE9kMEeGsqcJR8eqiMw"/>
   <CDA:AssociationValidation xmi:id="_BDI20NpkEeGzu8-aAsCS4g" base_Association="_5PVGINkMEeGsqcJR8eqiMw"/>
-  <CDA:AssociationValidation xmi:id="_a04WsN2-EeGdQcioKnmIhA" base_Association="_HUQVcdk5EeGsqcJR8eqiMw"/>
-  <CDA:ConstraintValidation xmi:id="_p6VEIN3EEeGdQcioKnmIhA" base_Constraint="_OxIpQN3EEeGdQcioKnmIhA">
-    <ruleId>CONF:10055</ruleId>
-  </CDA:ConstraintValidation>
   <CDA:PropertyValidation xmi:id="_fQJ6QN3hEeGdQcioKnmIhA" base_Property="_QFsyYNk4EeGsqcJR8eqiMw"/>
   <CDA:AssociationValidation xmi:id="_cyEMkN30EeGdQcioKnmIhA" base_Association="_owEaYtk4EeGsqcJR8eqiMw"/>
   <CDA:AssociationValidation xmi:id="_Pwx1oN32EeGdQcioKnmIhA" base_Association="_DoUl0tpjEeGzu8-aAsCS4g"/>
-  <CDA:ConstraintValidation xmi:id="_ywEDAN32EeGdQcioKnmIhA" base_Constraint="_n-eIsN32EeGdQcioKnmIhA"/>
   <CDA:AssociationValidation xmi:id="_2fYNYN32EeGdQcioKnmIhA" base_Association="_6x1tUdpiEeGzu8-aAsCS4g"/>
   <CDA:AssociationValidation xmi:id="_-SBDQN32EeGdQcioKnmIhA" base_Association="_2mtwsdpiEeGzu8-aAsCS4g"/>
-  <CDA:AssociationValidation xmi:id="_04kyMN33EeGdQcioKnmIhA" base_Association="_cgJ3gdpiEeGzu8-aAsCS4g"/>
   <CDA:AssociationValidation xmi:id="_c4jm8eDlEeGdSJSga09Dyg" base_Association="_c4i_4-DlEeGdSJSga09Dyg"/>
   <CDA:AssociationValidation xmi:id="_kTLwAODmEeGdSJSga09Dyg" base_Association="_kTKh4uDmEeGdSJSga09Dyg"/>
   <CDA:AssociationValidation xmi:id="_r6pQoODmEeGdSJSga09Dyg" base_Association="_r6oCguDmEeGdSJSga09Dyg">
@@ -1510,56 +1276,21 @@ MU2 170.314(b)(7) Export Summary  - For Inpatient Care</body>
   <CDA:AssociationValidation xmi:id="_KZh4IODrEeGdSJSga09Dyg" base_Association="_KZgqA-DrEeGdSJSga09Dyg"/>
   <CDA:ConstraintValidation xmi:id="_39anEOF3EeGlJOFzBdwM6w" base_Constraint="_j1rcwOF3EeGlJOFzBdwM6w"/>
   <CDA:AssociationValidation xmi:id="_3nXMoOF5EeGlJOFzBdwM6w" base_Association="_GmMxceDgEeGdSJSga09Dyg"/>
-  <CDA:AssociationValidation xmi:id="_wF4Q0OF8EeGlJOFzBdwM6w" base_Association="_wF3pwOF8EeGlJOFzBdwM6w"/>
   <CDA:AssociationValidation xmi:id="_d0roAOGVEeG708usbCxwpw" base_Association="_bvo0gdk5EeGsqcJR8eqiMw"/>
-  <CDA:AssociationValidation xmi:id="_7Y9e0OJREeGzd4w2xo094w" base_Association="_kGkCkeDhEeGdSJSga09Dyg"/>
   <CDA:CDATemplate xmi:id="_gWeuwOmKEeGNCuDrPdW6ZA" base_Class="_ZK4bUODlEeGdSJSga09Dyg" templateId="2.16.840.1.113883.10.20.22.2.45"/>
   <CDA:ConstraintValidation xmi:id="_7vlYQOvXEeGkopdZmUN1Xw" base_Constraint="_gfm_8OvXEeGkopdZmUN1Xw"/>
-  <CDA:ConstraintValidation xmi:id="_62L1oOvYEeGkopdZmUN1Xw" base_Constraint="_n8bhYOvYEeGkopdZmUN1Xw"/>
-  <CDA:ConstraintValidation xmi:id="_rb7RoOvZEeGkopdZmUN1Xw" base_Constraint="_VUReAOvZEeGkopdZmUN1Xw"/>
-  <CDA:ConstraintValidation xmi:id="_eegHAOvbEeGkopdZmUN1Xw" base_Constraint="_izlGUOvaEeGkopdZmUN1Xw"/>
-  <CDA:ConstraintValidation xmi:id="_f8jZYOvbEeGkopdZmUN1Xw" base_Constraint="_2nwZAN3EEeGdQcioKnmIhA"/>
   <CDA:AssociationValidation xmi:id="_C3dNQOyxEeGT-eFu7Ghgjw" base_Association="_UQ1IUNkzEeGsqcJR8eqiMw"/>
   <CDA:PropertyValidation xmi:id="_njlW8OyxEeGT-eFu7Ghgjw"/>
   <CDA:AssociationValidation xmi:id="_qLdh4OziEeGT-eFu7Ghgjw" base_Association="_1OLEYdk5EeGsqcJR8eqiMw"/>
-  <CDA:AssociationValidation xmi:id="_PlWMoOznEeGT-eFu7Ghgjw" base_Association="_M6aQYeznEeGT-eFu7Ghgjw"/>
   <CDA:AssociationValidation xmi:id="_mZ1REOznEeGT-eFu7Ghgjw" base_Association="_jg8_ceznEeGT-eFu7Ghgjw"/>
   <CDA:AssociationValidation xmi:id="_BjMWgu1VEeGT-eFu7Ghgjw" base_Association="_BjMWgO1VEeGT-eFu7Ghgjw"/>
-  <CDA:CDATemplate xmi:id="_PEUjwO1WEeGT-eFu7Ghgjw" base_Class="_7D0CQOzmEeGT-eFu7Ghgjw"/>
   <CDA:AssociationValidation xmi:id="_ekyykO1XEeGT-eFu7Ghgjw" base_Association="_cdpf4e1XEeGT-eFu7Ghgjw"/>
   <CDA:AssociationValidation xmi:id="_rJBvMO1XEeGT-eFu7Ghgjw" base_Association="_oCk7oe1XEeGT-eFu7Ghgjw"/>
   <CDA:AssociationValidation xmi:id="_wVsoYO1XEeGT-eFu7Ghgjw" base_Association="_u5BPAe1XEeGT-eFu7Ghgjw"/>
   <CDA:ConstraintValidation xmi:id="_LX7foO1YEeGT-eFu7Ghgjw" base_Constraint="_F7KU8O1YEeGT-eFu7Ghgjw"/>
-  <CDA:ConstraintValidation xmi:id="_dNwRsO1YEeGT-eFu7Ghgjw" base_Constraint="_Zuc5QO1YEeGT-eFu7Ghgjw"/>
-  <CDA:AssociationValidation xmi:id="_GchDoO1aEeGT-eFu7Ghgjw" base_Association="_EqeeQe1aEeGT-eFu7Ghgjw"/>
   <CDA:AssociationValidation xmi:id="_J71qMO1aEeGT-eFu7Ghgjw" base_Association="_Jd-Cce1aEeGT-eFu7Ghgjw"/>
-  <CDA:ConstraintValidation xmi:id="_38GRsO1aEeGT-eFu7Ghgjw" base_Constraint="_yi4xUO1aEeGT-eFu7Ghgjw"/>
-  <CDA:ConstraintValidation xmi:id="_JCz7AO1bEeGT-eFu7Ghgjw" base_Constraint="_GlWaEO1bEeGT-eFu7Ghgjw"/>
-  <CDA:ConstraintValidation xmi:id="_XmnisO1bEeGT-eFu7Ghgjw" base_Constraint="_VchCoO1bEeGT-eFu7Ghgjw"/>
   <CDA:ConstraintValidation xmi:id="_nFpcgO1bEeGT-eFu7Ghgjw" base_Constraint="_kNHwMO1bEeGT-eFu7Ghgjw"/>
   <CDA:ConstraintValidation xmi:id="_EAFLgO1cEeGT-eFu7Ghgjw" base_Constraint="_CFE3YO1cEeGT-eFu7Ghgjw"/>
-  <CDA:AssociationValidation xmi:id="_Z4Z54O4xEeGT5oaF-4NGAA" base_Association="_YP9VYO4xEeGT5oaF-4NGAA"/>
-  <CDA:AssociationValidation xmi:id="_d203QO4xEeGT5oaF-4NGAA" base_Association="_ckDn0e4xEeGT5oaF-4NGAA"/>
-  <CDA:AssociationValidation xmi:id="_9szKUO4xEeGT5oaF-4NGAA" base_Association="_8WSDUO4xEeGT5oaF-4NGAA"/>
-  <CDA:AssociationValidation xmi:id="_KIhEIO4yEeGT5oaF-4NGAA" base_Association="_I59mUO4yEeGT5oaF-4NGAA"/>
-  <CDA:AssociationValidation xmi:id="_UNizYO4yEeGT5oaF-4NGAA" base_Association="_S--ugO4yEeGT5oaF-4NGAA"/>
-  <CDA:ConstraintValidation xmi:id="_OB8-YO4zEeGT5oaF-4NGAA" base_Constraint="_xGJ9cO4yEeGT5oaF-4NGAA"/>
-  <CDA:ConstraintValidation xmi:id="_Zv0TsO4zEeGT5oaF-4NGAA" base_Constraint="_F8DOQO4zEeGT5oaF-4NGAA"/>
-  <CDA:ConstraintValidation xmi:id="_apqs0O4zEeGT5oaF-4NGAA" base_Constraint="_bnbyEO4yEeGT5oaF-4NGAA"/>
-  <CDA:ConstraintValidation xmi:id="_7w4lUO4zEeGT5oaF-4NGAA" base_Constraint="_1NTjkO4zEeGT5oaF-4NGAA"/>
-  <CDA:AssociationValidation xmi:id="_udrn4O5JEeGT5oaF-4NGAA" base_Association="_tNxfMO5JEeGT5oaF-4NGAA"/>
-  <CDA:AssociationValidation xmi:id="_yoh3sO5JEeGT5oaF-4NGAA" base_Association="_xSvJce5JEeGT5oaF-4NGAA"/>
-  <CDA:AssociationValidation xmi:id="_ejx3gO5rEeGT5oaF-4NGAA" base_Association="_d_HrQe5rEeGT5oaF-4NGAA"/>
-  <CDA:AssociationValidation xmi:id="_BPQioO5tEeGT5oaF-4NGAA" base_Association="_AD7_Au5tEeGT5oaF-4NGAA"/>
-  <CDA:AssociationValidation xmi:id="_GZdWoO5tEeGT5oaF-4NGAA" base_Association="_F9SYAO5tEeGT5oaF-4NGAA"/>
-  <CDA:AssociationValidation xmi:id="_hOBI0O5uEeGT5oaF-4NGAA" base_Association="_EQELwO5uEeGT5oaF-4NGAA"/>
-  <CDA:ConstraintValidation xmi:id="_VvkywO5yEeGT5oaF-4NGAA" base_Constraint="_PI9EEO5yEeGT5oaF-4NGAA"/>
-  <CDA:ConstraintValidation xmi:id="_r7whEO5yEeGT5oaF-4NGAA" base_Constraint="_lQwBoO5yEeGT5oaF-4NGAA"/>
-  <CDA:ConstraintValidation xmi:id="_ru4GMO5zEeGT5oaF-4NGAA" base_Constraint="_nAedYO5zEeGT5oaF-4NGAA"/>
-  <CDA:ConstraintValidation xmi:id="_vC6NUO50EeGT5oaF-4NGAA" base_Constraint="_oZlI4O50EeGT5oaF-4NGAA"/>
-  <CDA:ConstraintValidation xmi:id="_9cqhIO50EeGT5oaF-4NGAA" base_Constraint="_zZdW0O50EeGT5oaF-4NGAA"/>
-  <CDA:ConstraintValidation xmi:id="_RxnyoO52EeGT5oaF-4NGAA" base_Constraint="_MDXPUO52EeGT5oaF-4NGAA"/>
-  <CDA:CDATemplate xmi:id="_CDXuIPK1EeGFZOE6tRcvzg" base_Class="_szTFwOF8EeGlJOFzBdwM6w" templateId="2.16.840.1.113883.10.20.22.2.6"/>
   <CDA:CDATemplate xmi:id="_TQUy0PM4EeGkZPcEpuFP6w" base_Class="_w2gYkODkEeGdSJSga09Dyg" templateId="2.16.840.1.113883.10.20.22.2.9"/>
   <CDA:CDATemplate xmi:id="_hwU4kPM4EeGkZPcEpuFP6w" base_Class="_CaN5MODgEeGdSJSga09Dyg" templateId="2.16.840.1.113883.10.20.22.2.8"/>
   <CDA:CDATemplate xmi:id="_tqLbcPM4EeGkZPcEpuFP6w" base_Class="_gl8CMODmEeGdSJSga09Dyg" templateId="2.16.840.1.113883.10.20.22.2.43"/>
@@ -1574,11 +1305,11 @@ MU2 170.314(b)(7) Export Summary  - For Inpatient Care</body>
   <CDA:AssociationValidation xmi:id="_eDAjUPabEeGi99B_x568TQ" base_Association="_aVRGQvabEeGi99B_x568TQ"/>
   <CDA:AssociationValidation xmi:id="_Fy-4tfbBEeGulbiehZqi1g" base_Association="_Fy-4s_bBEeGulbiehZqi1g"/>
   <CDA:ValueSetConstraint xmi:id="_SFkru_bBEeGulbiehZqi1g" base_Property="_SFkruPbBEeGulbiehZqi1g">
-    <reference href="../../org.openhealthtools.mdht.uml.cda.consol.model/model/consol-vocab.uml#_fgCQUG1GEeGCevFpokwODw"/>
+    <reference href="mu2consol-vocab.uml#_GE2YsALeEeK7TpEj_YCJGQ"/>
   </CDA:ValueSetConstraint>
   <CDA:PropertyValidation xmi:id="_SFkrvPbBEeGulbiehZqi1g" base_Property="_SFkruPbBEeGulbiehZqi1g"/>
   <CDA:ValueSetConstraint xmi:id="_SFucsPbBEeGulbiehZqi1g" base_Property="_SFkrwfbBEeGulbiehZqi1g">
-    <reference href="../../org.openhealthtools.mdht.uml.cda.consol.model/model/consol-vocab.uml#_0Uo48EFaEeGFqszUdHc61Q"/>
+    <reference href="mu2consol-vocab.uml#_iw_0EALeEeK7TpEj_YCJGQ"/>
   </CDA:ValueSetConstraint>
   <CDA:PropertyValidation xmi:id="_SFucsfbBEeGulbiehZqi1g" base_Property="_SFkrwfbBEeGulbiehZqi1g"/>
   <CDA:AssociationValidation xmi:id="_SFuctvbBEeGulbiehZqi1g" base_Association="_SFuctPbBEeGulbiehZqi1g"/>
@@ -1594,10 +1325,8 @@ MU2 170.314(b)(7) Export Summary  - For Inpatient Care</body>
   <CDA:AssociationValidation xmi:id="_VMuBsPhUEeGPm7sA61ixGw" base_Association="_bd9ywPhTEeGPm7sA61ixGw"/>
   <CDA:AssociationValidation xmi:id="_XHN_gPhUEeGPm7sA61ixGw" base_Association="_xapsg_hTEeGPm7sA61ixGw"/>
   <CDA:AssociationValidation xmi:id="_acl_4PhUEeGPm7sA61ixGw" base_Association="_0UMFcPhTEeGPm7sA61ixGw"/>
-  <CDA:ConstraintValidation xmi:id="_D4WE8vhWEeGPm7sA61ixGw" base_Constraint="_D4WE8PhWEeGPm7sA61ixGw"/>
   <CDA:AssociationValidation xmi:id="_wpSZoPhWEeGPm7sA61ixGw" base_Association="_ZS4T4fhWEeGPm7sA61ixGw"/>
   <CDA:AssociationValidation xmi:id="_e1ytYPhXEeGPm7sA61ixGw" base_Association="_d7lu8fhXEeGPm7sA61ixGw"/>
-  <CDA:AssociationValidation xmi:id="_pP0cQPhXEeGPm7sA61ixGw" base_Association="_oLSdIfhXEeGPm7sA61ixGw"/>
   <CDA:AssociationValidation xmi:id="_1QVAwPhXEeGPm7sA61ixGw" base_Association="_0EGeMPhXEeGPm7sA61ixGw"/>
   <CDA:AssociationValidation xmi:id="_84DAEPhXEeGPm7sA61ixGw" base_Association="_8M2uAfhXEeGPm7sA61ixGw"/>
   <CDA:AssociationValidation xmi:id="_R8u60PhYEeGPm7sA61ixGw" base_Association="_RSENMvhYEeGPm7sA61ixGw"/>
@@ -1605,5 +1334,81 @@ MU2 170.314(b)(7) Export Summary  - For Inpatient Care</body>
   <CDA:AssociationValidation xmi:id="_DznZIPhaEeGPm7sA61ixGw" base_Association="_4lQLw-DKEeGdSJSga09Dyg"/>
   <CDA:AssociationValidation xmi:id="_V2ZCEPhaEeGPm7sA61ixGw" base_Association="_05-g0PhYEeGPm7sA61ixGw"/>
   <CDA:AssociationValidation xmi:id="_edPjIPhaEeGPm7sA61ixGw" base_Association="_dsy9ofhaEeGPm7sA61ixGw"/>
-  <CDA:ConstraintValidation xmi:id="_uUTtAPhbEeGPm7sA61ixGw" base_Constraint="_rlqVcPhbEeGPm7sA61ixGw"/>
+  <CDA:ConstraintValidation xmi:id="_HrUYkPhcEeGPm7sA61ixGw" base_Constraint="_CrzxoPhcEeGPm7sA61ixGw"/>
+  <CDA:ConstraintValidation xmi:id="_CUb-APhdEeGPm7sA61ixGw" base_Constraint="_-3broPhcEeGPm7sA61ixGw"/>
+  <CDA:ConstraintValidation xmi:id="_cP8oUPheEeGPm7sA61ixGw" base_Constraint="_WH_yoPheEeGPm7sA61ixGw"/>
+  <CDA:ConstraintValidation xmi:id="_dEY9APheEeGPm7sA61ixGw" base_Constraint="_EFIqIPheEeGPm7sA61ixGw"/>
+  <CDA:AssociationValidation xmi:id="_ljTDAPheEeGPm7sA61ixGw" base_Association="_kLSuQPheEeGPm7sA61ixGw"/>
+  <CDA:AssociationValidation xmi:id="_svPFQPheEeGPm7sA61ixGw" base_Association="_sMeWcfheEeGPm7sA61ixGw"/>
+  <CDA:ConstraintValidation xmi:id="_Jsk-UPhfEeGPm7sA61ixGw" base_Constraint="_GUuRsPhfEeGPm7sA61ixGw"/>
+  <CDA:ConstraintValidation xmi:id="_fRfpkPhlEeGPm7sA61ixGw" base_Constraint="_fRfCgPhlEeGPm7sA61ixGw"/>
+  <CDA:ConstraintValidation xmi:id="_AgV0EPhmEeGPm7sA61ixGw" base_Constraint="_8kY74PhlEeGPm7sA61ixGw"/>
+  <CDA:AssociationValidation xmi:id="_LQeV0PhmEeGPm7sA61ixGw" base_Association="_WZ50wO1XEeGT-eFu7Ghgjw"/>
+  <CDA:AssociationValidation xmi:id="_UzarsPhmEeGPm7sA61ixGw" base_Association="_JU1b8O1XEeGT-eFu7Ghgjw"/>
+  <CDA:AssociationValidation xmi:id="_jj2aIPhmEeGPm7sA61ixGw" base_Association="_VvWmce1YEeGT-eFu7Ghgjw"/>
+  <CDA:AssociationValidation xmi:id="_xHY3oPhmEeGPm7sA61ixGw" base_Association="_TUZm8e1YEeGT-eFu7Ghgjw"/>
+  <CDA:AssociationValidation xmi:id="_1CXfcPhmEeGPm7sA61ixGw" base_Association="_jPHzsu1XEeGT-eFu7Ghgjw"/>
+  <CDA:AssociationValidation xmi:id="_COQR8PhnEeGPm7sA61ixGw" base_Association="_Ba_B8PhnEeGPm7sA61ixGw"/>
+  <CDA:ConstraintValidation xmi:id="_6XGoIPhpEeGPm7sA61ixGw" base_Constraint="_1Y4aoPhpEeGPm7sA61ixGw"/>
+  <CDA:AssociationValidation xmi:id="_6mfdEPhrEeGPm7sA61ixGw" base_Association="_d0vf0dk5EeGsqcJR8eqiMw"/>
+  <CDA:AssociationValidation xmi:id="_06bDYPhxEeGPm7sA61ixGw" base_Association="_9j4-MNpiEeGzu8-aAsCS4g"/>
+  <CDA:AssociationValidation xmi:id="_gNmZkPhyEeGPm7sA61ixGw" base_Association="_g_V_otpiEeGzu8-aAsCS4g"/>
+  <CDA:CDATemplate xmi:id="_md_kIPhzEeGPm7sA61ixGw" base_Class="_do39kPhzEeGPm7sA61ixGw" templateId="2.16.840.1.113883.10.20.22.2.14"/>
+  <CDA:ConstraintValidation xmi:id="_SH3toPh1EeGPm7sA61ixGw" base_Constraint="_JoyBcPh1EeGPm7sA61ixGw"/>
+  <CDA:ConstraintValidation xmi:id="_e2YAkPh1EeGPm7sA61ixGw" base_Constraint="_bj0qsPh1EeGPm7sA61ixGw"/>
+  <CDA:AssociationValidation xmi:id="_k9yDsPh1EeGPm7sA61ixGw" base_Association="_kIKDQfh1EeGPm7sA61ixGw"/>
+  <CDA:PropertyValidation xmi:id="_4W8twPwYEeGx4ophOjh2tw">
+    <ruleId>CONF:16558</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_4W9U0PwYEeGx4ophOjh2tw">
+    <ruleId>CONF:16560</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:CodeSystemConstraint xmi:id="_4W974PwYEeGx4ophOjh2tw" code="ASSERTION" displayName="Assertion">
+    <reference href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_4AnRQCYWEd-iTYfpNb4PkQ"/>
+  </CDA:CodeSystemConstraint>
+  <CDA:PropertyValidation xmi:id="_4XA_MvwYEeGx4ophOjh2tw">
+    <ruleId>CONF:16559</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:ValueSetConstraint xmi:id="__5ZykPwYEeGx4ophOjh2tw" base_Property="__5ZLgPwYEeGx4ophOjh2tw">
+    <reference href="mu2consol-vocab.uml#_ezB0kPuJEeGx4ophOjh2tw"/>
+  </CDA:ValueSetConstraint>
+  <CDA:PropertyValidation xmi:id="__5bnwPwYEeGx4ophOjh2tw" base_Property="__5ZLgPwYEeGx4ophOjh2tw"/>
+  <CDA:CDATemplate xmi:id="_JW-gQPwZEeGx4ophOjh2tw" base_Class="_xbrkwPwYEeGx4ophOjh2tw" templateId="2.16.840.1.113883.10.22.4.78"/>
+  <CDA:CDATemplate xmi:id="_Mm36EP3iEeGmWJiRRvMaXA" base_Class="_v-6qsNkMEeGsqcJR8eqiMw" templateId="2.16.840.1.113883.10.20.22.1.1"/>
+  <CDA:PropertyValidation xmi:id="_ub5J0QJuEeKIhvHOhwsFvA" base_Property="_ub5J0AJuEeKIhvHOhwsFvA">
+    <ruleId>CONF:7133</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:CDATemplate xmi:id="_65PbUAJuEeKIhvHOhwsFvA" base_Class="_tAOdEAJuEeKIhvHOhwsFvA" templateId="2.16.840.1.113883.10.20.22.4.2"/>
+  <CDA:AssociationValidation xmi:id="_AUBpAgJvEeKIhvHOhwsFvA" base_Association="_AUBpAAJvEeKIhvHOhwsFvA">
+    <ruleId>CONF:7124</ruleId>
+    <ruleId>CONF:14850</ruleId>
+  </CDA:AssociationValidation>
+  <CDA:CDATemplate xmi:id="_Kc_dEAJvEeKIhvHOhwsFvA" base_Class="_--CGcAJuEeKIhvHOhwsFvA" templateId="2.16.840.1.113883.10.20.22.4.1"/>
+  <CDA:AssociationValidation xmi:id="_SwLbQgJvEeKIhvHOhwsFvA" base_Association="_SwLbQAJvEeKIhvHOhwsFvA">
+    <ruleId>CONF:7112</ruleId>
+    <ruleId>CONF:7113</ruleId>
+  </CDA:AssociationValidation>
+  <CDA:CDATemplate xmi:id="_Yt5W4AJvEeKIhvHOhwsFvA" base_Class="_R5ZkQAJvEeKIhvHOhwsFvA" templateId="2.16.840.1.113883.10.20.22.2.3.1"/>
+  <CDA:ConstraintValidation xmi:id="_twd_gAJ0EeKIhvHOhwsFvA" base_Constraint="_wYmuIAJuEeKIhvHOhwsFvA"/>
+  <CDA:CDATemplate xmi:id="_2A5dcAKcEeKIhvHOhwsFvA" base_Class="_zL3xEAKcEeKIhvHOhwsFvA" templateId="2.16.840.1.113883.10.20.22.4.49"/>
+  <CDA:AssociationValidation xmi:id="_-ZNzQgKcEeKIhvHOhwsFvA" base_Association="_-ZNzQAKcEeKIhvHOhwsFvA">
+    <ruleId>CONF:8709</ruleId>
+    <ruleId>CONF:8803</ruleId>
+  </CDA:AssociationValidation>
+  <CDA:CDATemplate xmi:id="_BArkwAKdEeKIhvHOhwsFvA" base_Class="_9AQcQAKcEeKIhvHOhwsFvA" templateId="2.16.840.1.113883.10.20.22.2.22.1"/>
+  <CDA:ConstraintValidation xmi:id="_kLGOoAKeEeKIhvHOhwsFvA" severity="WARNING" base_Constraint="_QLlMMAKeEeKIhvHOhwsFvA"/>
+  <CDA:PropertyValidation xmi:id="_Myj9wAKlEeKIhvHOhwsFvA" base_Property="_MyjWsAKlEeKIhvHOhwsFvA">
+    <ruleId>CONF:7656</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:CDATemplate xmi:id="_SzQU4AKlEeKIhvHOhwsFvA" base_Class="_KmS6gAKlEeKIhvHOhwsFvA" templateId="2.16.840.1.113883.10.20.22.4.14"/>
+  <CDA:ConstraintValidation xmi:id="_elkFUAKlEeKIhvHOhwsFvA" severity="WARNING" base_Constraint="_Xm1YoAKlEeKIhvHOhwsFvA"/>
+  <CDA:AssociationValidation xmi:id="_pebsUQKlEeKIhvHOhwsFvA" severity="INFO" base_Association="_pebFQwKlEeKIhvHOhwsFvA">
+    <ruleId>CONF:7895</ruleId>
+    <ruleId>CONF:7896</ruleId>
+  </CDA:AssociationValidation>
+  <CDA:CDATemplate xmi:id="_tu9GUAKlEeKIhvHOhwsFvA" base_Class="_oJZzEAKlEeKIhvHOhwsFvA" templateId="2.16.840.1.113883.10.20.22.2.7.1"/>
+  <CDA:AssociationValidation xmi:id="_7Pb0MAQjEeKNWa1y_3e0dw" base_Association="_2MhT8AQjEeKNWa1y_3e0dw"/>
+  <CDA:AssociationValidation xmi:id="_H3wmoAQkEeKNWa1y_3e0dw" base_Association="_GKEVwgQkEeKNWa1y_3e0dw"/>
+  <CDA:ConstraintValidation xmi:id="_15qvwAQrEeKNWa1y_3e0dw" base_Constraint="_ujInEAQrEeKNWa1y_3e0dw"/>
+  <CDA:ConstraintValidation xmi:id="_3NehAAQrEeKNWa1y_3e0dw" base_Constraint="_jVFaQAQrEeKNWa1y_3e0dw"/>
 </xmi:XMI>
