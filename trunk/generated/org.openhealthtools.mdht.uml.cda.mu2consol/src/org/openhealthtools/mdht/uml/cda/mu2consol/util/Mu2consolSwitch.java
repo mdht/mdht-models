@@ -288,16 +288,6 @@ public class Mu2consolSwitch<T> {
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case Mu2consolPackage.FUNCTIONAL_STATUS_SECTION: {
-				FunctionalStatusSection functionalStatusSection = (FunctionalStatusSection)theEObject;
-				T result = caseFunctionalStatusSection(functionalStatusSection);
-				if (result == null) result = caseConsol_FunctionalStatusSection(functionalStatusSection);
-				if (result == null) result = caseSection(functionalStatusSection);
-				if (result == null) result = caseAct(functionalStatusSection);
-				if (result == null) result = caseInfrastructureRoot(functionalStatusSection);
-				if (result == null) result = defaultCase(theEObject);
-				return result;
-			}
 			case Mu2consolPackage.INSTRUCTIONS_SECTION: {
 				InstructionsSection instructionsSection = (InstructionsSection)theEObject;
 				T result = caseInstructionsSection(instructionsSection);
@@ -737,21 +727,6 @@ public class Mu2consolSwitch<T> {
 	}
 
 	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Functional Status Section</em>'.
-	 * <!-- begin-user-doc -->
-	 * This implementation returns null;
-	 * returning a non-null result will terminate the switch.
-	 * <!-- end-user-doc -->
-	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Functional Status Section</em>'.
-	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
-	 * @generated
-	 */
-	public T caseFunctionalStatusSection(FunctionalStatusSection object) {
-		return null;
-	}
-
-	/**
 	 * Returns the result of interpreting the object as an instance of '<em>Preoperative Diagnosis Section</em>'.
 	 * <!-- begin-user-doc --> This
 	 * implementation returns null; returning a non-null result will terminate
@@ -1064,21 +1039,6 @@ public class Mu2consolSwitch<T> {
 	 */
 	public T caseConsol_PostprocedureDiagnosisSection(
 			org.openhealthtools.mdht.uml.cda.consol.PostprocedureDiagnosisSection object) {
-		return null;
-	}
-
-	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Functional Status Section</em>'.
-	 * <!-- begin-user-doc -->
-	 * This implementation returns null;
-	 * returning a non-null result will terminate the switch.
-	 * <!-- end-user-doc -->
-	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Functional Status Section</em>'.
-	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
-	 * @generated
-	 */
-	public T caseConsol_FunctionalStatusSection(org.openhealthtools.mdht.uml.cda.consol.FunctionalStatusSection object) {
 		return null;
 	}
 

@@ -191,6 +191,28 @@
           <body>SHALL have one of Plan of Care (2.16.840.1.113883.10.20.22.2.10) or Assessment and Plan (2.16.840.1.113883.10.20.22.2.9) or Interventions (2.16.840.1.113883.10.20.21.2.3)</body>
         </specification>
       </ownedRule>
+      <ownedRule xmi:id="_0v2AIARbEeKNWa1y_3e0dw" name="cognitiveStatusEntries" constrainedElement="_VG3DUNkxEeGsqcJR8eqiMw">
+        <ownedComment xmi:id="_8qlCEARbEeKNWa1y_3e0dw">
+          <body>QUERY</body>
+        </ownedComment>
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_7Dtx8ARbEeKNWa1y_3e0dw">
+          <language>OCL</language>
+          <language>Analysis</language>
+          <body>self.retrieveFunctionalStatusSection()->excluding(null)->reject( retrieveFunctionalStatusSection().getObservations()->exists(o : cda::Observation | o.oclIsKindOf(consol::CognitiveStatusProblemObservation)) or retrieveFunctionalStatusSection().getObservations()->exists(o : cda::Observation | o.oclIsKindOf(consol::CognitiveStatusResultObservation)) or retrieveFunctionalStatusSection().getOrganizers()->exists(org : cda::Organizer | org.oclIsKindOf(consol::CognitiveStatusResultOrganizer)))</body>
+          <body>SHALL have one of CognitiveStatusProblemObservation or CognitiveStatusResultObservation or CognitiveStatusResultOrganizer</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_2PJgoARkEeKNWa1y_3e0dw" name="functionalStatusEntries" constrainedElement="_VG3DUNkxEeGsqcJR8eqiMw">
+        <ownedComment xmi:id="_7gT4QARkEeKNWa1y_3e0dw">
+          <body>QUERY</body>
+        </ownedComment>
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_50jhEARkEeKNWa1y_3e0dw">
+          <language>OCL</language>
+          <language>Analysis</language>
+          <body>self.retrieveFunctionalStatusSection()->excluding(null)->reject( retrieveFunctionalStatusSection().getObservations()->exists(o : cda::Observation | o.oclIsKindOf(consol::FunctionalStatusProblemObservation)) or retrieveFunctionalStatusSection().getObservations()->exists(o : cda::Observation | o.oclIsKindOf(consol::FunctionalStatusResultObservation)) or retrieveFunctionalStatusSection().getOrganizers()->exists(org : cda::Organizer | org.oclIsKindOf(consol::FunctionalStatusResultOrganizer)))</body>
+          <body>SHALL have one of FunctionalStatusProblemObservation or FunctionalStatusResultObservation or FunctionalStatusResultOrganizer</body>
+        </specification>
+      </ownedRule>
       <generalization xmi:id="_VG3qYNkxEeGsqcJR8eqiMw" general="_v-6qsNkMEeGsqcJR8eqiMw"/>
       <ownedAttribute xmi:id="_2mtJoNpiEeGzu8-aAsCS4g" name="socialHistorySection" type="_9frdwO1UEeGT-eFu7Ghgjw" association="_2mtwsdpiEeGzu8-aAsCS4g">
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_9knKsN32EeGdQcioKnmIhA" value="1"/>
@@ -259,10 +281,21 @@
       <ownedAttribute xmi:id="_xZM98Nk5EeGsqcJR8eqiMw" name="preoperativeDiagnosisSection" type="_bRRt0ODqEeGdSJSga09Dyg" association="_xZNlAdk5EeGsqcJR8eqiMw">
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xZNlANk5EeGsqcJR8eqiMw"/>
       </ownedAttribute>
-      <ownedAttribute xmi:id="_kIJcMPh1EeGPm7sA61ixGw" name="functionalStatusSection" type="_do39kPhzEeGPm7sA61ixGw" association="_kIKDQfh1EeGPm7sA61ixGw">
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_lkoBQPh1EeGPm7sA61ixGw" value="1"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_lkooUPh1EeGPm7sA61ixGw" value="1"/>
+      <ownedAttribute xmi:id="_fo8IwARkEeKNWa1y_3e0dw" name="functionalStatusSection" association="_fo8v0QRkEeKNWa1y_3e0dw">
+        <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-other.uml#_2KKOBhSVEeGGzu7fmW9pXw"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_fo8v0ARkEeKNWa1y_3e0dw"/>
       </ownedAttribute>
+      <ownedOperation xmi:id="_P7O_8ARHEeKNWa1y_3e0dw" name="retrieveFunctionalStatusSection" isQuery="true" bodyCondition="_XgorEARHEeKNWa1y_3e0dw">
+        <ownedRule xmi:id="_XgorEARHEeKNWa1y_3e0dw" name="body" constrainedElement="_P7O_8ARHEeKNWa1y_3e0dw">
+          <specification xmi:type="uml:OpaqueExpression" xmi:id="_bjD-sARHEeKNWa1y_3e0dw">
+            <language>OCL</language>
+            <body>self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::FunctionalStatusSection))->asSequence()->any(true).oclAsType(consol::FunctionalStatusSection)</body>
+          </specification>
+        </ownedRule>
+        <ownedParameter xmi:id="_33h54ARHEeKNWa1y_3e0dw" name="return" direction="return">
+          <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-other.uml#_2KKOBhSVEeGGzu7fmW9pXw"/>
+        </ownedParameter>
+      </ownedOperation>
     </packagedElement>
     <packagedElement xmi:type="uml:Association" xmi:id="_UQ1IUNkzEeGsqcJR8eqiMw" memberEnd="_UQ1vYNkzEeGsqcJR8eqiMw _UQ1IUdkzEeGsqcJR8eqiMw">
       <ownedEnd xmi:id="_UQ1IUdkzEeGsqcJR8eqiMw" name="" visibility="private" type="_v-6qsNkMEeGsqcJR8eqiMw" association="_UQ1IUNkzEeGsqcJR8eqiMw">
@@ -1031,83 +1064,6 @@ MU2 170.314(b)(7) Export Summary  - For Inpatient Care</body>
     <packagedElement xmi:type="uml:Association" xmi:id="_Ba_B8PhnEeGPm7sA61ixGw" memberEnd="_Ba9z0PhnEeGPm7sA61ixGw _Ba_pAPhnEeGPm7sA61ixGw">
       <ownedEnd xmi:id="_Ba_pAPhnEeGPm7sA61ixGw" type="_7D0CQOzmEeGT-eFu7Ghgjw" association="_Ba_B8PhnEeGPm7sA61ixGw"/>
     </packagedElement>
-    <packagedElement xmi:type="uml:Class" xmi:id="_do39kPhzEeGPm7sA61ixGw" name="FunctionalStatusSection">
-      <ownedComment xmi:id="_kRURMPhzEeGPm7sA61ixGw">
-        <body>INLINE</body>
-      </ownedComment>
-      <ownedRule xmi:id="_JoyBcPh1EeGPm7sA61ixGw" name="cognitiveStatus" constrainedElement="_do39kPhzEeGPm7sA61ixGw">
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_QyDKMPh1EeGPm7sA61ixGw">
-          <language>OCL</language>
-          <body>self.entry->exists(entry : cda::Entry | not entry.observation.oclIsUndefined() and entry.observation.oclIsKindOf(consol::CognitiveStatusProblemObservation)) or self.entry->exists(entry : cda::Entry | not entry.observation.oclIsUndefined() and entry.observation.oclIsKindOf(consol::CognitiveStatusResultObservation)) or  self.entry->exists(entry : cda::Entry | not entry.organizer.oclIsUndefined() and entry.organizer.oclIsKindOf(consol::CognitiveStatusResultOrganizer))</body>
-        </specification>
-      </ownedRule>
-      <ownedRule xmi:id="_bj0qsPh1EeGPm7sA61ixGw" name="functionalStatus" constrainedElement="_do39kPhzEeGPm7sA61ixGw">
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_en9xIPh1EeGPm7sA61ixGw">
-          <language>OCL</language>
-          <body>self.entry->exists(entry : cda::Entry | not entry.observation.oclIsUndefined() and entry.observation.oclIsKindOf(consol::FunctionalStatusProblemObservation)) or self.entry->exists(entry : cda::Entry | not entry.observation.oclIsUndefined() and entry.observation.oclIsKindOf(consol::FunctionalStatusResultObservation)) or self.entry->exists(entry : cda::Entry | not entry.organizer.oclIsUndefined() and entry.organizer.oclIsKindOf(consol::FunctionalStatusResultOrganizer))</body>
-        </specification>
-      </ownedRule>
-      <generalization xmi:id="_do4koPhzEeGPm7sA61ixGw">
-        <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-other.uml#_2KKOBhSVEeGGzu7fmW9pXw"/>
-      </generalization>
-      <ownedAttribute xmi:id="_imNaQPhzEeGPm7sA61ixGw" name="cognitiveStatusProblemObservation" association="_imNaQ_hzEeGPm7sA61ixGw">
-        <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.consol.model/model/consol.uml#_dXKPQOZbEeGINOJ_SD9_dA"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_imNaQfhzEeGPm7sA61ixGw" value="*"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_imNaQvhzEeGPm7sA61ixGw"/>
-        <redefinedProperty href="../../org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-other.uml#_tJI4AOcQEeGINOJ_SD9_dA"/>
-      </ownedAttribute>
-      <ownedAttribute xmi:id="_imOoYPhzEeGPm7sA61ixGw" name="cognitiveStatusResultObservation" association="_imPPcPhzEeGPm7sA61ixGw">
-        <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.consol.model/model/consol.uml#_gkBM0OZbEeGINOJ_SD9_dA"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_imOoYfhzEeGPm7sA61ixGw" value="*"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_imOoYvhzEeGPm7sA61ixGw"/>
-        <redefinedProperty href="../../org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-other.uml#_oUSB4OcQEeGINOJ_SD9_dA"/>
-      </ownedAttribute>
-      <ownedAttribute xmi:id="_imP2gPhzEeGPm7sA61ixGw" name="cognitiveStatusResultOrganizer" association="_imQdkPhzEeGPm7sA61ixGw">
-        <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.consol.model/model/consol.uml#_jfoCUOZbEeGINOJ_SD9_dA"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_imP2gfhzEeGPm7sA61ixGw" value="*"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_imP2gvhzEeGPm7sA61ixGw"/>
-        <redefinedProperty href="../../org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-other.uml#_iy8gQOcQEeGINOJ_SD9_dA"/>
-      </ownedAttribute>
-      <ownedAttribute xmi:id="_imREoPhzEeGPm7sA61ixGw" name="functionalStatusProblemObservation" association="_imRrsPhzEeGPm7sA61ixGw">
-        <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.consol.model/model/consol.uml#_rVl5AOZbEeGINOJ_SD9_dA"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_imREofhzEeGPm7sA61ixGw" value="*"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_imREovhzEeGPm7sA61ixGw"/>
-        <redefinedProperty href="../../org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-other.uml#_rciMQOcQEeGINOJ_SD9_dA"/>
-      </ownedAttribute>
-      <ownedAttribute xmi:id="_imSSwPhzEeGPm7sA61ixGw" name="functionalStatusResultObservation" association="_imSSw_hzEeGPm7sA61ixGw">
-        <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.consol.model/model/consol.uml#_viRU0OZbEeGINOJ_SD9_dA"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_imSSwfhzEeGPm7sA61ixGw" value="*"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_imSSwvhzEeGPm7sA61ixGw"/>
-        <redefinedProperty href="../../org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-other.uml#_lOjnEOcQEeGINOJ_SD9_dA"/>
-      </ownedAttribute>
-      <ownedAttribute xmi:id="_imTg4PhzEeGPm7sA61ixGw" name="functionalStatusResultOrganizer" association="_imTg4_hzEeGPm7sA61ixGw">
-        <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.consol.model/model/consol.uml#_zBlUUOZbEeGINOJ_SD9_dA"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_imTg4fhzEeGPm7sA61ixGw" value="*"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_imTg4vhzEeGPm7sA61ixGw"/>
-        <redefinedProperty href="../../org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-other.uml#_gmf20OcQEeGINOJ_SD9_dA"/>
-      </ownedAttribute>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Association" xmi:id="_imNaQ_hzEeGPm7sA61ixGw" memberEnd="_imNaQPhzEeGPm7sA61ixGw _imOBUPhzEeGPm7sA61ixGw">
-      <ownedEnd xmi:id="_imOBUPhzEeGPm7sA61ixGw" type="_do39kPhzEeGPm7sA61ixGw" association="_imNaQ_hzEeGPm7sA61ixGw"/>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Association" xmi:id="_imPPcPhzEeGPm7sA61ixGw" memberEnd="_imOoYPhzEeGPm7sA61ixGw _imPPcfhzEeGPm7sA61ixGw">
-      <ownedEnd xmi:id="_imPPcfhzEeGPm7sA61ixGw" type="_do39kPhzEeGPm7sA61ixGw" association="_imPPcPhzEeGPm7sA61ixGw"/>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Association" xmi:id="_imQdkPhzEeGPm7sA61ixGw" memberEnd="_imP2gPhzEeGPm7sA61ixGw _imQdkfhzEeGPm7sA61ixGw">
-      <ownedEnd xmi:id="_imQdkfhzEeGPm7sA61ixGw" type="_do39kPhzEeGPm7sA61ixGw" association="_imQdkPhzEeGPm7sA61ixGw"/>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Association" xmi:id="_imRrsPhzEeGPm7sA61ixGw" memberEnd="_imREoPhzEeGPm7sA61ixGw _imRrsfhzEeGPm7sA61ixGw">
-      <ownedEnd xmi:id="_imRrsfhzEeGPm7sA61ixGw" type="_do39kPhzEeGPm7sA61ixGw" association="_imRrsPhzEeGPm7sA61ixGw"/>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Association" xmi:id="_imSSw_hzEeGPm7sA61ixGw" memberEnd="_imSSwPhzEeGPm7sA61ixGw _imS50PhzEeGPm7sA61ixGw">
-      <ownedEnd xmi:id="_imS50PhzEeGPm7sA61ixGw" type="_do39kPhzEeGPm7sA61ixGw" association="_imSSw_hzEeGPm7sA61ixGw"/>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Association" xmi:id="_imTg4_hzEeGPm7sA61ixGw" memberEnd="_imTg4PhzEeGPm7sA61ixGw _imUH8PhzEeGPm7sA61ixGw">
-      <ownedEnd xmi:id="_imUH8PhzEeGPm7sA61ixGw" type="_do39kPhzEeGPm7sA61ixGw" association="_imTg4_hzEeGPm7sA61ixGw"/>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Association" xmi:id="_kIKDQfh1EeGPm7sA61ixGw" memberEnd="_kIJcMPh1EeGPm7sA61ixGw _kIKqUPh1EeGPm7sA61ixGw">
-      <ownedEnd xmi:id="_kIKqUPh1EeGPm7sA61ixGw" type="_VG3DUNkxEeGsqcJR8eqiMw" association="_kIKDQfh1EeGPm7sA61ixGw"/>
-    </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_xbrkwPwYEeGx4ophOjh2tw" name="SmokingStatusObservation">
       <generalization xmi:id="_yhogMPwYEeGx4ophOjh2tw">
         <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-socialhistory.uml#_gIH_QOWQEeGKmvzED_He2w"/>
@@ -1237,6 +1193,9 @@ MU2 170.314(b)(7) Export Summary  - For Inpatient Care</body>
     <packagedElement xmi:type="uml:Association" xmi:id="_x3cUoQQkEeKNWa1y_3e0dw" memberEnd="_x3btkAQkEeKNWa1y_3e0dw _x3cUogQkEeKNWa1y_3e0dw">
       <ownedEnd xmi:id="_x3cUogQkEeKNWa1y_3e0dw" type="_uu2T0PdyEeG_npP0e3OOEw" association="_x3cUoQQkEeKNWa1y_3e0dw"/>
     </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_fo8v0QRkEeKNWa1y_3e0dw" memberEnd="_fo8IwARkEeKNWa1y_3e0dw _fo9W4ARkEeKNWa1y_3e0dw">
+      <ownedEnd xmi:id="_fo9W4ARkEeKNWa1y_3e0dw" type="_VG3DUNkxEeGsqcJR8eqiMw" association="_fo8v0QRkEeKNWa1y_3e0dw"/>
+    </packagedElement>
     <profileApplication xmi:id="_mZtsIdd5EeGtNLA6W-IQeQ">
       <eAnnotations xmi:id="_mZtsItd5EeGtNLA6W-IQeQ" source="http://www.eclipse.org/uml2/2.0.0/UML">
         <references xmi:type="ecore:EPackage" href="pathmap://UML_PROFILES/Standard.profile.uml#_yzU58YinEdqtvbnfB2L_5w"/>
@@ -1353,10 +1312,6 @@ MU2 170.314(b)(7) Export Summary  - For Inpatient Care</body>
   <CDA:AssociationValidation xmi:id="_6mfdEPhrEeGPm7sA61ixGw" base_Association="_d0vf0dk5EeGsqcJR8eqiMw"/>
   <CDA:AssociationValidation xmi:id="_06bDYPhxEeGPm7sA61ixGw" base_Association="_9j4-MNpiEeGzu8-aAsCS4g"/>
   <CDA:AssociationValidation xmi:id="_gNmZkPhyEeGPm7sA61ixGw" base_Association="_g_V_otpiEeGzu8-aAsCS4g"/>
-  <CDA:CDATemplate xmi:id="_md_kIPhzEeGPm7sA61ixGw" base_Class="_do39kPhzEeGPm7sA61ixGw" templateId="2.16.840.1.113883.10.20.22.2.14"/>
-  <CDA:ConstraintValidation xmi:id="_SH3toPh1EeGPm7sA61ixGw" base_Constraint="_JoyBcPh1EeGPm7sA61ixGw"/>
-  <CDA:ConstraintValidation xmi:id="_e2YAkPh1EeGPm7sA61ixGw" base_Constraint="_bj0qsPh1EeGPm7sA61ixGw"/>
-  <CDA:AssociationValidation xmi:id="_k9yDsPh1EeGPm7sA61ixGw" base_Association="_kIKDQfh1EeGPm7sA61ixGw"/>
   <CDA:PropertyValidation xmi:id="_4W8twPwYEeGx4ophOjh2tw">
     <ruleId>CONF:16558</ruleId>
   </CDA:PropertyValidation>
@@ -1411,4 +1366,6 @@ MU2 170.314(b)(7) Export Summary  - For Inpatient Care</body>
   <CDA:AssociationValidation xmi:id="_H3wmoAQkEeKNWa1y_3e0dw" base_Association="_GKEVwgQkEeKNWa1y_3e0dw"/>
   <CDA:ConstraintValidation xmi:id="_15qvwAQrEeKNWa1y_3e0dw" base_Constraint="_ujInEAQrEeKNWa1y_3e0dw"/>
   <CDA:ConstraintValidation xmi:id="_3NehAAQrEeKNWa1y_3e0dw" base_Constraint="_jVFaQAQrEeKNWa1y_3e0dw"/>
+  <CDA:ConstraintValidation xmi:id="_gIu8wARcEeKNWa1y_3e0dw" base_Constraint="_0v2AIARbEeKNWa1y_3e0dw"/>
+  <CDA:ConstraintValidation xmi:id="_CkmaYARlEeKNWa1y_3e0dw" base_Constraint="_2PJgoARkEeKNWa1y_3e0dw"/>
 </xmi:XMI>

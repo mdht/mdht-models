@@ -89,7 +89,6 @@ public class Mu2consolFactoryImpl extends EFactoryImpl implements
 			case Mu2consolPackage.PROCEDURES_SECTION: return createProceduresSection();
 			case Mu2consolPackage.PROCEDURE_ACTIVITY_PROCEDURE: return createProcedureActivityProcedure();
 			case Mu2consolPackage.POSTPROCEDURE_DIAGNOSIS_SECTION: return createPostprocedureDiagnosisSection();
-			case Mu2consolPackage.FUNCTIONAL_STATUS_SECTION: return createFunctionalStatusSection();
 			case Mu2consolPackage.INSTRUCTIONS_SECTION: return createInstructionsSection();
 			case Mu2consolPackage.HOSPITAL_ADMISSION_DIAGNOSIS_SECTION: return createHospitalAdmissionDiagnosisSection();
 			case Mu2consolPackage.HOSPITAL_DISCHARGE_DIAGNOSIS_SECTION: return createHospitalDischargeDiagnosisSection();
@@ -321,16 +320,6 @@ public class Mu2consolFactoryImpl extends EFactoryImpl implements
 	public PostprocedureDiagnosisSection createPostprocedureDiagnosisSection() {
 		PostprocedureDiagnosisSectionImpl postprocedureDiagnosisSection = new PostprocedureDiagnosisSectionImpl();
 		return postprocedureDiagnosisSection;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public FunctionalStatusSection createFunctionalStatusSection() {
-		FunctionalStatusSectionImpl functionalStatusSection = new FunctionalStatusSectionImpl();
-		return functionalStatusSection;
 	}
 
 	/**
