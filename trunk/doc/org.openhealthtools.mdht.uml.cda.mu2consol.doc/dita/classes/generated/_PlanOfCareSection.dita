@@ -15,92 +15,58 @@
 </section>
 <ol id="conformance">
 <li><b>SHALL</b> conform to <xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.consol.doc/classes/PlanOfCareSection.html">Consol Plan Of Care Section</xref> template (templateId: <tt>2.16.840.1.113883.10.20.22.2.10</tt>)</li>
-<li>Contains zero or one [0..1] <tt><b>entry</b></tt>
+<li>Contains zero or more [0..*] <tt><b>entry</b></tt>
 <ol>
 <li>Contains exactly one [1..1] <xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.consol.doc/classes/PlanOfCareActivityAct.html">Consol Plan Of Care Activity Act</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.4.39</tt>)</li></ol></li>
-<li>Contains zero or one [0..1] <tt><b>entry</b></tt>
+<li>Contains zero or more [0..*] <tt><b>entry</b></tt>
 <ol>
 <li>Contains exactly one [1..1] <xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.consol.doc/classes/PlanOfCareActivityEncounter.html">Consol Plan Of Care Activity Encounter</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.4.40</tt>)</li></ol></li>
-<li>Contains zero or one [0..1] <tt><b>entry</b></tt>
+<li><b>SHALL</b> contain at least one [1..*] <tt><b>entry</b></tt>
 <ol>
-<li>Contains exactly one [1..1] <xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.consol.doc/classes/PlanOfCareActivityObservation.html">Consol Plan Of Care Activity Observation</xref> (templateId: <tt>2.16.840.1.113883.10.20.1.25</tt>)</li></ol></li>
+<li>Contains exactly one [1..1] <xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.consol.doc/classes/PlanOfCareActivityObservation.html">Consol Plan Of Care Activity Observation</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.4.44</tt>)</li></ol></li>
 <li><b>SHALL</b> contain one of Plan of Care Activity Act (2.16.840.1.113883.10.20.22.4.39) or  Plan of Care Activity Encounter  (2.16.840.1.113883.10.20.22.4.40) or Plan of Care Activity Observation (2.16.840.1.113883.10.20.22.4.44)</li>
 </ol>
 <ol id="aggregate">
 <li><b>SHALL</b> conform to <xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.consol.doc/classes/PlanOfCareSection.html">Consol Plan Of Care Section</xref> template (templateId: <tt>2.16.840.1.113883.10.20.22.2.10</tt>)</li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt><tt><b>/@code</b>="18776-5" </tt><i>Treatment plan</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:7724)
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:14749)<tt><b>/@code</b>="18776-5" </tt><i>Treatment plan</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:14750)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>title</b></tt> (CONF:16986)
 </li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>text</b></tt> (CONF:7725)
 </li>
-<li><b>MAY</b> contain zero or one [0..1] <tt><b>entry</b></tt> (CONF:7726.CONF:8804)
+<li><b>MAY</b> contain zero or more [0..*] <tt><b>entry</b></tt> (CONF:7726.CONF:8804)
 <ol>
 <li>Contains exactly one [1..1] <xref href="../PlanOfCareActivityAct.dita">Plan Of Care Activity Act</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.4.39</tt>)</li></ol></li>
-<li><b>MAY</b> contain zero or one [0..1] <tt><b>entry</b></tt> (CONF:8805, CONF:8806)
+<li><b>MAY</b> contain zero or more [0..*] <tt><b>entry</b></tt> (CONF:8805, CONF:8806)
 <ol>
 <li>Contains exactly one [1..1] <xref href="../PlanOfCareActivityEncounter.dita">Plan Of Care Activity Encounter</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.4.40</tt>)</li></ol></li>
-<li><b>MAY</b> contain zero or one [0..1] <tt><b>entry</b></tt> (CONF:8808, CONF:8807)
+<li><b>MAY</b> contain zero or more [0..*] <tt><b>entry</b></tt> (CONF:8808, CONF:8807)
 <ol>
-<li>Contains exactly one [1..1] <xref href="../PlanOfCareActivityObservation.dita">Plan Of Care Activity Observation</xref> (templateId: <tt>2.16.840.1.113883.10.20.1.25</tt>)</li></ol></li>
-<li><b>MAY</b> contain zero or one [0..1] <tt><b>entry</b></tt> (CONF:8809, CONF:8810)
+<li>Contains exactly one [1..1] <xref href="../PlanOfCareActivityObservation.dita">Plan Of Care Activity Observation</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.4.44</tt>)</li></ol></li>
+<li><b>MAY</b> contain zero or more [0..*] <tt><b>entry</b></tt> (CONF:8809, CONF:8810)
 <ol>
 <li>Contains exactly one [1..1] <xref href="../PlanOfCareActivityProcedure.dita">Plan Of Care Activity Procedure</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.4.41</tt>)</li></ol></li>
-<li><b>MAY</b> contain zero or one [0..1] <tt><b>entry</b></tt> (CONF:8811, CONF:8812)
+<li><b>MAY</b> contain zero or more [0..*] <tt><b>entry</b></tt> (CONF:8811, CONF:8812)
 <ol>
-<li>Contains exactly one [1..1] <xref href="../PlanOfCareActivitySubstanceAdministration.dita">Plan Of Care Activity Substance Administration</xref> (templateId: <tt>2.16.840.1.113883.10.20.1.25</tt>)</li></ol></li>
-<li><b>MAY</b> contain zero or one [0..1] <tt><b>entry</b></tt> (CONF:8813, CONF:8814)
+<li>Contains exactly one [1..1] <xref href="../PlanOfCareActivitySubstanceAdministration.dita">Plan Of Care Activity Substance Administration</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.4.42</tt>)</li></ol></li>
+<li><b>MAY</b> contain zero or more [0..*] <tt><b>entry</b></tt> (CONF:8813, CONF:14756)
 <ol>
 <li>Contains exactly one [1..1] <xref href="../PlanOfCareActivitySupply.dita">Plan Of Care Activity Supply</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.4.43</tt>)</li></ol></li>
-<li>Contains zero or one [0..1] <tt><b>entry</b></tt>
+<li><b>MAY</b> contain zero or more [0..*] <tt><b>entry</b></tt> (CONF:14695, CONF:16751)
+<ol>
+<li>Contains exactly one [1..1] <xref href="../Instructions.dita">Instructions</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.4.20</tt>)</li></ol></li>
+<li>Contains zero or more [0..*] <tt><b>entry</b></tt>
 <ol>
 <li>Contains exactly one [1..1] <xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.consol.doc/classes/PlanOfCareActivityAct.html">Consol Plan Of Care Activity Act</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.4.39</tt>)</li></ol></li>
-<li>Contains zero or one [0..1] <tt><b>entry</b></tt>
+<li>Contains zero or more [0..*] <tt><b>entry</b></tt>
 <ol>
 <li>Contains exactly one [1..1] <xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.consol.doc/classes/PlanOfCareActivityEncounter.html">Consol Plan Of Care Activity Encounter</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.4.40</tt>)</li></ol></li>
-<li>Contains zero or one [0..1] <tt><b>entry</b></tt>
+<li><b>SHALL</b> contain at least one [1..*] <tt><b>entry</b></tt>
 <ol>
-<li>Contains exactly one [1..1] <xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.consol.doc/classes/PlanOfCareActivityObservation.html">Consol Plan Of Care Activity Observation</xref> (templateId: <tt>2.16.840.1.113883.10.20.1.25</tt>)</li></ol></li>
+<li>Contains exactly one [1..1] <xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.consol.doc/classes/PlanOfCareActivityObservation.html">Consol Plan Of Care Activity Observation</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.4.44</tt>)</li></ol></li>
 <li><b>SHALL</b> contain one of Plan of Care Activity Act (2.16.840.1.113883.10.20.22.4.39) or  Plan of Care Activity Encounter  (2.16.840.1.113883.10.20.22.4.40) or Plan of Care Activity Observation (2.16.840.1.113883.10.20.22.4.44)</li>
 </ol>
-<section id="tableconformance"><p><table frame="all" scale="80" pgwide="1" ><tgroup cols="8" align="left" colsep = "1" rowsep = "1" > <colspec colname="col0" colnum="0" /><colspec colname="col1" colnum="1" /><colspec colname="col2" colnum="2" /><colspec colname="col3" colnum="3" /><colspec colname="col4" colnum="4" /><colspec colname="col5" colnum="5" /><colspec colname="col6" colnum="6" /><colspec colname="col7" colnum="7" /><thead> <row><entry namest="col0" nameend="col7" >mu2consol::PlanOfCareSection</entry>  </row>  <row><entry namest="col0" nameend="col7" >/cda:ClinicalDocument/cda:component/cda:structuredBody/cda:component/cda:section/</entry>  </row>  <row><entry>Name</entry><entry>XPath</entry><entry>Cardinality</entry><entry>Severity</entry><entry>Nullable</entry><entry>Data Type</entry><entry>Conformance</entry><entry>Value(s)</entry></row></thead><tbody><row><entry>classCode</entry><entry>@classCode</entry><entry>0..1</entry><entry></entry><entry>NO</entry><entry>ActClass</entry><entry></entry><entry> DOCSECT</entry></row> 
-<row><entry>moodCode</entry><entry>@moodCode</entry><entry>0..1</entry><entry></entry><entry>NO</entry><entry>ActMood</entry><entry></entry><entry> EVN</entry></row> 
-<row><entry>nullFlavor</entry><entry>@nullFlavor</entry><entry>0..1</entry><entry></entry><entry>NO</entry><entry>NullFlavor</entry><entry></entry><entry> ASKU</entry></row> 
-<row><entry>sectionId</entry><entry>@sectionId</entry><entry>0..1</entry><entry></entry><entry>NO</entry><entry>String</entry><entry></entry><entry> </entry></row> 
-<row><entry>code</entry><entry>code</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>CE</entry><entry>CONF:7724</entry><entry>LOINC 2.16.840.1.113883.6.1 </entry></row> 
-<row><entry>confidentialityCode</entry><entry>confidentialityCode</entry><entry>0..1</entry><entry></entry><entry>YES</entry><entry>CE</entry><entry></entry><entry> </entry></row> 
-<row><entry>id</entry><entry>id</entry><entry>0..1</entry><entry></entry><entry>YES</entry><entry>II</entry><entry></entry><entry> </entry></row> 
-<row><entry>languageCode</entry><entry>languageCode</entry><entry>0..1</entry><entry></entry><entry>YES</entry><entry>CS</entry><entry></entry><entry> </entry></row> 
-<row><entry>realmCode</entry><entry>realmCode</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>CS</entry><entry></entry><entry> </entry></row> 
-<row><entry>templateId</entry><entry>templateId</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>II</entry><entry></entry><entry> </entry></row> 
-<row><entry>title</entry><entry>title</entry><entry>0..1</entry><entry></entry><entry>YES</entry><entry>ST</entry><entry></entry><entry> </entry></row> 
-<row><entry>author</entry><entry>author</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>Author</entry><entry></entry><entry> </entry></row> 
-<row><entry>component</entry><entry>component</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>Component5</entry><entry></entry><entry> </entry></row> 
-<row><entry>entry</entry><entry>entry</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>Entry</entry><entry></entry><entry> </entry></row> 
-<row><entry>informant</entry><entry>informant</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>Informant12</entry><entry></entry><entry> </entry></row> 
-<row><entry>planOfCareActivityAct</entry><entry>cda:entry/cda:act</entry><entry>0..1</entry><entry>MAY</entry><entry>YES</entry><entry>PlanOfCareActivityAct</entry><entry>CONF:7726.CONF:8804</entry><entry> </entry></row> 
-<row><entry>planOfCareActivityEncounter</entry><entry>cda:entry/cda:encounter</entry><entry>0..1</entry><entry>MAY</entry><entry>YES</entry><entry>PlanOfCareActivityEncounter</entry><entry>CONF:8805CONF:8806</entry><entry> </entry></row> 
-<row><entry>planOfCareActivityObservation</entry><entry>cda:entry/cda:observation</entry><entry>0..1</entry><entry>MAY</entry><entry>YES</entry><entry>PlanOfCareActivityObservation</entry><entry>CONF:8808CONF:8807</entry><entry> </entry></row> 
-<row><entry>planOfCareActivityProcedure</entry><entry>cda:entry/cda:procedure</entry><entry>0..1</entry><entry>MAY</entry><entry>YES</entry><entry>PlanOfCareActivityProcedure</entry><entry>CONF:8809CONF:8810</entry><entry> </entry></row> 
-<row><entry>planOfCareActivitySubstanceAdministration</entry><entry>cda:entry/cda:substanceAdministration</entry><entry>0..1</entry><entry>MAY</entry><entry>YES</entry><entry>PlanOfCareActivitySubstanceAdministration</entry><entry>CONF:8811CONF:8812</entry><entry> </entry></row> 
-<row><entry>planOfCareActivitySupply</entry><entry>cda:entry/cda:supply</entry><entry>0..1</entry><entry>MAY</entry><entry>YES</entry><entry>PlanOfCareActivitySupply</entry><entry>CONF:8813CONF:8814</entry><entry> </entry></row> 
-<row><entry>subject</entry><entry>subject</entry><entry>0..1</entry><entry></entry><entry>YES</entry><entry>Subject</entry><entry></entry><entry> </entry></row> 
-<row><entry>text</entry><entry>text</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>StrucDocText</entry><entry>CONF:7725</entry><entry> </entry></row> 
-<row><entry>typeId</entry><entry>typeId</entry><entry>0..1</entry><entry></entry><entry>YES</entry><entry>InfrastructureRootTypeId</entry><entry></entry><entry> </entry></row> 
-</tbody></tgroup></table></p></section>
-<codeblock id="example"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
-<section xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd">
-  <id root="MDHT" extension="977119538"/>
-  <title>TEXT FOR TITLE</title>
-  <text/>
-  <entry>
-    <act/>
-  </entry>
-  <entry>
-    <encounter/>
-  </entry>
-  <entry>
-    <observation/>
-  </entry>
-</section>]]></codeblock>
+<codeblock id="example"><![CDATA[Error: Missing Runtime Class]]></codeblock>
 <section id="changes">
 </section>
 <p><ph id="classformalname">Plan Of Care Section</ph></p>

@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd">
 <map title="Section Templates">
-<topicref href="AllergiesSectionEntriesOptional.dita" type="topic" />
-<topicref href="AssessmentAndPlanForCarePlanning.dita" type="topic" />
-<topicref href="AssessmentAndPlanForConditionOrConcern.dita" type="topic" />
 <topicref href="AssessmentAndPlanSection.dita" type="topic" />
 <topicref href="AssessmentSection.dita" type="topic" />
+<topicref href="EncountersSection.dita" type="topic" />
 <topicref href="HospitalAdmissionDiagnosisSection.dita" type="topic" />
 <topicref href="HospitalAdmissionMedicationsSectionEntriesOptional.dita" type="topic" />
 <topicref href="HospitalDischargeDiagnosisSection.dita" type="topic" />
@@ -15,4 +13,7 @@
 <topicref href="PostoperativeDiagnosisSection.dita" type="topic" />
 <topicref href="PostprocedureDiagnosisSection.dita" type="topic" />
 <topicref href="PreoperativeDiagnosisSection.dita" type="topic" />
+<topicref href="ProceduresSection.dita" type="topic" />
+<topicref href="ResultsSection.dita" type="topic" />
+<topicref href="SocialHistorySection.dita" type="topic" />
 </map>

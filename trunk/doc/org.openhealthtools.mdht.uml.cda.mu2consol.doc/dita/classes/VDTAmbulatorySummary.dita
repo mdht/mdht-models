@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="classId" xml:lang="en-us">
+<title>VDT Ambulatory Summary</title>
+<shortdesc conref="generated/_VDTAmbulatorySummary.dita#classId/shortdesc"></shortdesc>
+<prolog conref="generated/_VDTAmbulatorySummary.dita#classId/prolog"></prolog>
+<body>
+<section conref="generated/_VDTAmbulatorySummary.dita#classId/knownSubclasses">
+</section>
+<!-- TODO: insert non-model class description markup here -->
+<section conref="generated/_VDTAmbulatorySummary.dita#classId/description">
+</section>
+<!-- TODO: insert UML class diagram here -->
+
+<ol audience="standards" conref="generated/_VDTAmbulatorySummary.dita#classId/conformance">
+<li></li>
+</ol>
+<ol audience="developer" conref="generated/_VDTAmbulatorySummary.dita#classId/aggregate">
+<li></li>
+</ol>
+<p> </p>
+<p><b>VDT Ambulatory Summary example</b></p>
+<!-- TODO: insert custom instance example here -->
+<!-- generated instance example follows -->
+<codeblock conref="generated/_VDTAmbulatorySummary.dita#classId/example">
+</codeblock>
+</body>
+</topic>

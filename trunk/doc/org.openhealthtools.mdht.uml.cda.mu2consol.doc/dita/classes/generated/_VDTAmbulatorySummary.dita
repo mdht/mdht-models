@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
 <topic id="classId" xml:lang="en-us">
-<title>Summary Of Care Record - conformance rules</title>
+<title>VDT Ambulatory Summary - conformance rules</title>
 <shortdesc id="shortdesc">[ClinicalDocument: templateId <tt>2.16.840.1.113883.10.20.22.1.1</tt>]</shortdesc>
 <prolog id="prolog">
 <metadata><category>ClinicalDocument</category></metadata>
@@ -9,74 +9,18 @@
 </prolog>
 <body>
 <section id="knownSubclasses">
-<p>Known Subclasses: <xref href="../TransitionOfCareAmbulatorySummary.dita">Transition Of Care Ambulatory Summary</xref>, <xref href="../TransitionOfCareInpatientSummary.dita">Transition Of Care Inpatient Summary</xref></p>
 </section>
 <section id="description">
-<p><lines><i>Summary Of Care Record</i></lines></p>
+<p><lines><i>MU2 170.314 (e)(1) Ambulatory Summary</i></lines></p>
 </section>
 <ol id="conformance">
-<li><b>SHALL</b> conform to <xref href="../GeneralHeaderConstraints.dita">General Header Constraints</xref> template (templateId: <tt>2.16.840.1.113883.10.20.22.1.1</tt>)</li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>component</b></tt>
-<ul><li><p><lines><i>MU2 Requirement for 'Smoking status'</i></lines></p></li></ul><ol>
-<li>Contains exactly one [1..1] <xref href="../SocialHistorySection.dita">Social History Section</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.2.17</tt>)</li></ol></li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>component</b></tt>
-<ul><li><p><lines><i>MU2 Requirement for 'Problems'</i></lines></p></li></ul><ol>
-<li>Contains exactly one [1..1] <xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.consol.doc/classes/ProblemSection.html">Consol Problem Section</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.2.5.1</tt>)</li></ol></li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>component</b></tt>
-<ul><li><p><lines><i>MU2 Requirement for : 'Medications'</i></lines></p></li></ul><ol>
-<li>Contains exactly one [1..1] <xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.consol.doc/classes/MedicationsSection.html">Consol Medications Section</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.2.1.1</tt>)</li></ol></li>
-<li>Contains zero or one [0..1] <tt><b>component</b></tt>
-<ul><li><p><lines><i>MU2 Requirement for : 'Medications'</i></lines></p></li></ul><ol>
-<li>Contains exactly one [1..1] <xref href="../HospitalAdmissionMedicationsSectionEntriesOptional.dita">Hospital Admission Medications Section Entries Optional</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.2.44</tt>)</li></ol></li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>component</b></tt>
-<ol>
-<li>Contains exactly one [1..1] <xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.consol.doc/classes/AllergiesSection.html">Consol Allergies Section</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.2.6.1</tt>)</li></ol></li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>component</b></tt>
-<ol>
-<li>Contains exactly one [1..1] <xref href="../ResultsSection.dita">Results Section</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.2.3.1</tt>)</li></ol></li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>component</b></tt>
-<ol>
-<li>Contains exactly one [1..1] <xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.consol.doc/classes/VitalSignsSection.html">Consol Vital Signs Section</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.2.4.1</tt>)</li></ol></li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>component</b></tt>
-<ol>
-<li>Contains exactly one [1..1] <xref href="../PlanOfCareSection.dita">Plan Of Care Section</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.2.10</tt>)</li></ol></li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>component</b></tt>
-<ol>
-<li>Contains exactly one [1..1] <xref href="../ProceduresSection.dita">Procedures Section</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.2.7.1</tt>)</li></ol></li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>component</b></tt>
-<ol>
-<li>Contains exactly one [1..1] <xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.consol.doc/classes/ImmunizationsSection.html">Consol Immunizations Section</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.2.2.1</tt>)</li></ol></li>
-<li>Contains zero or one [0..1] <tt><b>component</b></tt>
-<ol>
-<li>Contains exactly one [1..1] <xref href="../AssessmentAndPlanSection.dita">Assessment And Plan Section</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.2.9</tt>)</li></ol></li>
-<li>Contains zero or one [0..1] <tt><b>component</b></tt>
-<ol>
-<li>Contains exactly one [1..1] <xref href="../AssessmentSection.dita">Assessment Section</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.2.8</tt>)</li></ol></li>
-<li>Contains zero or one [0..1] <tt><b>component</b></tt>
-<ul><li><p><lines><i>Captured in Encounters section if using CCD</i></lines></p></li></ul><ol>
-<li>Contains exactly one [1..1] <xref href="../EncountersSection.dita">Encounters Section</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.2.22.1</tt>)</li></ol></li>
-<li>Contains zero or one [0..1] <tt><b>component</b></tt>
-<ol>
-<li>Contains exactly one [1..1] <xref href="../PostoperativeDiagnosisSection.dita">Postoperative Diagnosis Section</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.2.35</tt>)</li></ol></li>
-<li>Contains zero or one [0..1] <tt><b>component</b></tt>
-<ol>
-<li>Contains exactly one [1..1] <xref href="../PostprocedureDiagnosisSection.dita">Postprocedure Diagnosis Section</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.2.36</tt>)</li></ol></li>
-<li>Contains zero or one [0..1] <tt><b>component</b></tt>
-<ol>
-<li>Contains exactly one [1..1] <xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.consol.doc/classes/HistoryOfPastIllnessSection.html">Consol History Of Past Illness Section</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.2.20</tt>)</li></ol></li>
-<li>Contains zero or one [0..1] <tt><b>component</b></tt>
-<ol>
-<li>Contains exactly one [1..1] <xref href="../PreoperativeDiagnosisSection.dita">Preoperative Diagnosis Section</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.2.34</tt>)</li></ol></li>
-<li>Contains zero or one [0..1] <tt><b>component</b></tt>
-<ol>
-<li>Contains exactly one [1..1] <xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.consol.doc/classes/FunctionalStatusSection.html">Consol Functional Status Section</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.2.14</tt>)</li></ol></li>
-<li><b>SHALL</b> have one of Plan of Care (2.16.840.1.113883.10.20.22.2.10) or Assessment and Plan (2.16.840.1.113883.10.20.22.2.9) or Interventions (2.16.840.1.113883.10.20.21.2.3)</li>
-<li><b>SHALL</b> have one of CognitiveStatusProblemObservation or CognitiveStatusResultObservation or CognitiveStatusResultOrganizer</li>
-<li><b>SHALL</b> have one of FunctionalStatusProblemObservation or FunctionalStatusResultObservation or FunctionalStatusResultOrganizer</li>
+<li><b>SHALL</b> conform to <xref href="../ViewDownloadTransmitSummary.dita">View Download Transmit Summary</xref> template (templateId: <tt>2.16.840.1.113883.10.20.22.1.1</tt>)</li>
+<li><b>SHALL</b> satisfy: Provider Name and Office Contact Information</li>
 </ol>
 <ol id="aggregate">
 <li><b>SHALL</b> conform to <xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.consol.doc/classes/GeneralHeaderConstraints.html">Consol General Header Constraints</xref> template (templateId: <tt>2.16.840.1.113883.10.20.22.1.1</tt>)</li>
 <li><b>SHALL</b> conform to <xref href="../GeneralHeaderConstraints.dita">General Header Constraints</xref> template (templateId: <tt>2.16.840.1.113883.10.20.22.1.1</tt>)</li>
+<li><b>SHALL</b> conform to <xref href="../ViewDownloadTransmitSummary.dita">View Download Transmit Summary</xref> template (templateId: <tt>2.16.840.1.113883.10.20.22.1.1</tt>)</li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>realmCode</b></tt><tt><b>/@code</b>="US" </tt> (CONF:16791)
 </li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>typeId</b></tt> (CONF:5361)
@@ -130,58 +74,31 @@
 </li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>component</b></tt>
 <ol>
-<li>Contains exactly one [1..1] <xref href="../SocialHistorySection.dita">Social History Section</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.2.17</tt>)</li></ol><ul><li><p><lines><i>MU2 Requirement for 'Smoking status'</i></lines></p></li></ul></li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>component</b></tt>
-<ol>
-<li>Contains exactly one [1..1] <xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.consol.doc/classes/ProblemSection.html">Consol Problem Section</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.2.5.1</tt>)</li></ol><ul><li><p><lines><i>MU2 Requirement for 'Problems'</i></lines></p></li></ul></li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>component</b></tt>
-<ol>
-<li>Contains exactly one [1..1] <xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.consol.doc/classes/MedicationsSection.html">Consol Medications Section</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.2.1.1</tt>)</li></ol><ul><li><p><lines><i>MU2 Requirement for : 'Medications'</i></lines></p></li></ul></li>
-<li>Contains zero or one [0..1] <tt><b>component</b></tt>
-<ol>
-<li>Contains exactly one [1..1] <xref href="../HospitalAdmissionMedicationsSectionEntriesOptional.dita">Hospital Admission Medications Section Entries Optional</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.2.44</tt>)</li></ol><ul><li><p><lines><i>MU2 Requirement for : 'Medications'</i></lines></p></li></ul></li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>component</b></tt>
-<ol>
 <li>Contains exactly one [1..1] <xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.consol.doc/classes/AllergiesSection.html">Consol Allergies Section</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.2.6.1</tt>)</li></ol></li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>component</b></tt>
 <ol>
-<li>Contains exactly one [1..1] <xref href="../ResultsSection.dita">Results Section</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.2.3.1</tt>)</li></ol></li>
+<li>Contains exactly one [1..1] <xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.consol.doc/classes/MedicationsSection.html">Consol Medications Section</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.2.1.1</tt>)</li></ol></li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>component</b></tt>
 <ol>
-<li>Contains exactly one [1..1] <xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.consol.doc/classes/VitalSignsSection.html">Consol Vital Signs Section</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.2.4.1</tt>)</li></ol></li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>component</b></tt>
-<ol>
-<li>Contains exactly one [1..1] <xref href="../PlanOfCareSection.dita">Plan Of Care Section</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.2.10</tt>)</li></ol></li>
+<li>Contains exactly one [1..1] <xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.consol.doc/classes/ProblemSection.html">Consol Problem Section</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.2.5.1</tt>)</li></ol></li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>component</b></tt>
 <ol>
 <li>Contains exactly one [1..1] <xref href="../ProceduresSection.dita">Procedures Section</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.2.7.1</tt>)</li></ol></li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>component</b></tt>
 <ol>
-<li>Contains exactly one [1..1] <xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.consol.doc/classes/ImmunizationsSection.html">Consol Immunizations Section</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.2.2.1</tt>)</li></ol></li>
+<li>Contains exactly one [1..1] <xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.consol.doc/classes/VitalSignsSection.html">Consol Vital Signs Section</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.2.4.1</tt>)</li></ol></li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>component</b></tt>
+<ol>
+<li>Contains exactly one [1..1] <xref href="../ResultsSection.dita">Results Section</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.2.3.1</tt>)</li></ol></li>
 <li>Contains zero or one [0..1] <tt><b>component</b></tt>
 <ol>
 <li>Contains exactly one [1..1] <xref href="../AssessmentAndPlanSection.dita">Assessment And Plan Section</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.2.9</tt>)</li></ol></li>
-<li>Contains zero or one [0..1] <tt><b>component</b></tt>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>component</b></tt>
 <ol>
-<li>Contains exactly one [1..1] <xref href="../AssessmentSection.dita">Assessment Section</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.2.8</tt>)</li></ol></li>
-<li>Contains zero or one [0..1] <tt><b>component</b></tt>
+<li>Contains exactly one [1..1] <xref href="../PlanOfCareSection.dita">Plan Of Care Section</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.2.10</tt>)</li></ol></li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>component</b></tt>
 <ol>
-<li>Contains exactly one [1..1] <xref href="../EncountersSection.dita">Encounters Section</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.2.22.1</tt>)</li></ol><ul><li><p><lines><i>Captured in Encounters section if using CCD</i></lines></p></li></ul></li>
-<li>Contains zero or one [0..1] <tt><b>component</b></tt>
-<ol>
-<li>Contains exactly one [1..1] <xref href="../PostoperativeDiagnosisSection.dita">Postoperative Diagnosis Section</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.2.35</tt>)</li></ol></li>
-<li>Contains zero or one [0..1] <tt><b>component</b></tt>
-<ol>
-<li>Contains exactly one [1..1] <xref href="../PostprocedureDiagnosisSection.dita">Postprocedure Diagnosis Section</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.2.36</tt>)</li></ol></li>
-<li>Contains zero or one [0..1] <tt><b>component</b></tt>
-<ol>
-<li>Contains exactly one [1..1] <xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.consol.doc/classes/HistoryOfPastIllnessSection.html">Consol History Of Past Illness Section</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.2.20</tt>)</li></ol></li>
-<li>Contains zero or one [0..1] <tt><b>component</b></tt>
-<ol>
-<li>Contains exactly one [1..1] <xref href="../PreoperativeDiagnosisSection.dita">Preoperative Diagnosis Section</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.2.34</tt>)</li></ol></li>
-<li>Contains zero or one [0..1] <tt><b>component</b></tt>
-<ol>
-<li>Contains exactly one [1..1] <xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.consol.doc/classes/FunctionalStatusSection.html">Consol Functional Status Section</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.2.14</tt>)</li></ol></li>
+<li>Contains exactly one [1..1] <xref href="../SocialHistorySection.dita">Social History Section</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.2.17</tt>)</li></ol></li>
 <li><b>SHALL</b> satisfy: The US Realm Clinical Document Date and Time datatype flavor records date and time information. If no time zone offset 
 is provided, you can make no assumption about time, unless you have made a local exchange agreement.
 This data type uses the same rules as US Realm Date and Time (DTM.US.FIELDED),  but is used with the effectiveTime 
@@ -196,14 +113,13 @@ element.</li>
 <li>code <b>SHALL</b> specify the particular kind of document (e.g. History and Physical, Discharge Summary, Progress Note). (CONF:9992)</li>
 <li>If setId is present versionNumber <b>SHALL</b> be present (CONF:6380)</li>
 <li>If versionNumber is present setId <b>SHALL</b> be present (CONF:6387)</li>
-<li><b>SHALL</b> have one of Plan of Care (2.16.840.1.113883.10.20.22.2.10) or Assessment and Plan (2.16.840.1.113883.10.20.22.2.9) or Interventions (2.16.840.1.113883.10.20.21.2.3)</li>
-<li><b>SHALL</b> have one of CognitiveStatusProblemObservation or CognitiveStatusResultObservation or CognitiveStatusResultOrganizer</li>
-<li><b>SHALL</b> have one of FunctionalStatusProblemObservation or FunctionalStatusResultObservation or FunctionalStatusResultOrganizer</li>
+<li><b>SHALL</b> have one of Assessment and Plan section or Plan of Care section</li>
+<li><b>SHALL</b> satisfy: Provider Name and Office Contact Information</li>
 </ol>
 <codeblock id="example"><![CDATA[Error: Missing Runtime Class]]></codeblock>
 <section id="changes">
 </section>
-<p><ph id="classformalname">Summary Of Care Record</ph></p>
+<p><ph id="classformalname">VDT Ambulatory Summary</ph></p>
 <p id="shortdesc">[ClinicalDocument: templateId <tt>2.16.840.1.113883.10.20.22.1.1</tt>]</p>
 </body>
 </topic>
