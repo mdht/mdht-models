@@ -240,7 +240,9 @@
   <term:ValueSetCode xmi:id="_AYSpEALfEeK7TpEj_YCJGQ" conceptName="Native Hawaiian or Other Pacific Islander" base_EnumerationLiteral="_AYSCAALfEeK7TpEj_YCJGQ"/>
   <term:ValueSetCode xmi:id="_Fnf44ALfEeK7TpEj_YCJGQ" conceptName="White" base_EnumerationLiteral="_FnfR0ALfEeK7TpEj_YCJGQ"/>
   <term:ValueSetCode xmi:id="_SNDt8ANdEeKNWa1y_3e0dw" conceptName="Black or African American" base_EnumerationLiteral="_SNCf0ANdEeKNWa1y_3e0dw"/>
-  <term:ValueSetVersion xmi:id="_bjYjEAQsEeKhXbyWShxPyQ" base_Enumeration="_bjPZIAQsEeKhXbyWShxPyQ"/>
+  <term:ValueSetVersion xmi:id="_bjYjEAQsEeKhXbyWShxPyQ" base_Enumeration="_bjPZIAQsEeKhXbyWShxPyQ">
+    <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+  </term:ValueSetVersion>
   <term:ValueSetCode xmi:id="_-OczkAZTEeKw_PsLFI_pog" conceptName="Afar" base_EnumerationLiteral="_9617EAZTEeKw_PsLFI_pog"/>
   <term:ValueSetCode xmi:id="_kmEj0AZWEeKw_PsLFI_pog" conceptName="Abkhazian" base_EnumerationLiteral="_kmD8wAZWEeKw_PsLFI_pog"/>
   <term:ValueSetCode xmi:id="_mf5MMQZWEeKw_PsLFI_pog" conceptName="Afrikaans" base_EnumerationLiteral="_mf5MMAZWEeKw_PsLFI_pog"/>
