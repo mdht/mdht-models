@@ -158,20 +158,15 @@
   <CDA:CDATemplate xmi:id="_XA0IoKCIEeGzToMRDovxkA" base_Class="_if0XUJfcEeGIls8OsXqV-w" templateId="2.16.840.1.113883.10.20.15.3.100"/>
   <CDA:CDATemplate xmi:id="_CDBDkKCJEeGzToMRDovxkA" base_Class="_8H8MQKCIEeGzToMRDovxkA" templateId="2.16.840.1.113883.10.20.15.3.101"/>
   <CDA:CDATemplate xmi:id="_N3O4gKCJEeGzToMRDovxkA" base_Class="_Jiz18KCJEeGzToMRDovxkA" templateId="2.16.840.1.113883.10.20.15.3.102"/>
-  <CDA:PropertyValidation xmi:id="_nL0iM6CJEeGzToMRDovxkA" message="SHALL contain [1..1] value/@code, which SHALL be fixed to &quot;240450004&quot; staphylococcal toxic shock syndrome (CodeSystem:&#xD;&#xA;&#xD;&#xA;2.16.840.1.113883.6.96 SNOMEDCT)" base_Property="_nL0iMKCJEeGzToMRDovxkA">
-    <ruleId>CONF:1874</ruleId>
-  </CDA:PropertyValidation>
   <CDA:ActRelationship xmi:id="_vsoFoKCJEeGzToMRDovxkA" base_Association="_fZ4P4qCJEeGzToMRDovxkA"/>
   <CDA:EntryRelationship xmi:id="_9gCyMKCJEeGzToMRDovxkA" severity="WARNING" base_Association="_fZ4P4qCJEeGzToMRDovxkA" typeCode="MFST"/>
   <CDA:Entry xmi:id="_Y16-MKCKEeGzToMRDovxkA" severity="INFO" base_Association="_Ic6vcqCKEeGzToMRDovxkA" typeCode="DRIV"/>
   <CDA:Entry xmi:id="_aT8bYKCKEeGzToMRDovxkA" severity="WARNING" base_Association="_MQBNoqCKEeGzToMRDovxkA" typeCode="DRIV"/>
   <CDA:AssociationValidation xmi:id="_s4f7sKCKEeGzToMRDovxkA" base_Association="_kMYgIqCKEeGzToMRDovxkA"/>
   <CDA:Entry xmi:id="_5Bt60KCLEeGzToMRDovxkA" base_Association="_u2igQqCLEeGzToMRDovxkA" typeCode="DRIV"/>
-  <CDA:PropertyValidation xmi:id="_55lqoKESEeG115cBYsOPJg" base_Property="_55hZMKESEeG115cBYsOPJg"/>
-  <CDA:PropertyValidation xmi:id="_8ZIPMKESEeG115cBYsOPJg" base_Property="_8ZHoIKESEeG115cBYsOPJg"/>
-  <CDA:PropertyValidation xmi:id="_Cq8LgKETEeG115cBYsOPJg" base_Property="_Cq7kcKETEeG115cBYsOPJg"/>
   <CDA:CodeSystemConstraint xmi:id="_fXSB4KEYEeG115cBYsOPJg" code="240450004" base_Property="_nL0iMKCJEeGzToMRDovxkA">
     <reference href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_ya6aMCWsEd-iTYfpNb4PkQ"/>
+    <ruleId>CONF:1874</ruleId>
   </CDA:CodeSystemConstraint>
   <CDA:ValueSetConstraint xmi:id="_bO7P8KEZEeG115cBYsOPJg" base_Property="_Cq7kcKETEeG115cBYsOPJg">
     <reference href="tss-vocab.uml#_3sfnEaQqEeGjTMjq9OgX9g"/>

@@ -285,7 +285,6 @@
   <CDA:Entry xmi:id="_w3T68I4QEeGnn9Ym-bOQjQ" base_Association="_qCn7IohqEeG_q_uXE1KvCg" typeCode="DRIV"/>
   <CDA:Entry xmi:id="_AOybQI4REeGnn9Ym-bOQjQ" severity="WARNING" base_Association="_Xt0msYhtEeG_q_uXE1KvCg" typeCode="DRIV"/>
   <CDA:Entry xmi:id="_GID7wI4REeGnn9Ym-bOQjQ" severity="WARNING" typeCode="DRIV"/>
-  <CDA:PropertyValidation xmi:id="_B6WIsI4SEeGnn9Ym-bOQjQ" base_Property="_wbu8wI4REeGnn9Ym-bOQjQ"/>
   <CDA:CodeSystemConstraint xmi:id="_LCUZ0I4SEeGnn9Ym-bOQjQ" code="completed" base_Property="_wbu8wI4REeGnn9Ym-bOQjQ">
     <reference href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_e8ZEoCWvEd-iTYfpNb4PkQ"/>
   </CDA:CodeSystemConstraint>
@@ -312,9 +311,6 @@
     <reference href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_e8ZEoCWvEd-iTYfpNb4PkQ"/>
     <ruleId>CONF:1872</ruleId>
   </CDA:CodeSystemConstraint>
-  <CDA:PropertyValidation xmi:id="_sMrp9Y4zEeGy-7mVPNtnag" base_Property="_sMrp8o4zEeGy-7mVPNtnag">
-    <ruleId>CONF:1874</ruleId>
-  </CDA:PropertyValidation>
   <CDA:PropertyValidation xmi:id="_vqD6UI40EeGy-7mVPNtnag" severity="WARNING" base_Property="_sMrC4I4zEeGy-7mVPNtnag"/>
   <CDA:ConstraintValidation xmi:id="_3gE0UI40EeGy-7mVPNtnag" message="SHALL contain [1..1] time &#xA;SHALL contain [1..1] assignedAuthor, which&#xA;&#x9;SHALL contain [1..*] id&#xA;&#x9;    MAY contain [0..*] addr &#xA;&#x9;MAY contain [0..*] telecom &#xA;&#x9;MAY contain [0..1] assignedPerson, which if present&#xA;&#x9;&#x9;MAY contain [0..1] name &#xA;&#x9;MAY contain [0..1] representedOrganization" severity="WARNING"/>
   <CDA:PropertyValidation xmi:id="_ibfVUI42EeGy-7mVPNtnag"/>
@@ -323,10 +319,6 @@
   <CDA:ConstraintValidation xmi:id="_hl6l8I47EeGy-7mVPNtnag" message="SHALL contain [1..*] participant, which &#xA;&#x9;SHALL contain [1..1] @typeCode=&quot;LOC&quot; Location (CodeSystem: 2.16.840.1.113883.5.90 HL7ParticipationType) STATIC &#xA;&#x9;SHOULD contain [0..1] time&#xA;&#x9;SHALL contain [1..1] participantRole, which &#xA;&#x9;&#x9;SHALL contain [1..1] @classCode=&quot;LOCE&quot; Located entity (CodeSystem: 2.16.840.1.113883.5.110 HL7RoleClass) STATIC&#xA;&#x9;&#x9;SHOULD contain [0..*] addr &#xA;&#x9;&#x9;SHOULD contain [0..*] telecom &#xA;&#x9;&#x9;SHOULD contain [0..1] playingEntity, which if present&#xA;&#x9;&#x9;&#x9;SHALL contain [1..1] @classCode=&quot;PLC&quot; Place (CodeSystem: 2.16.840.1.113883.5.41 HL7EntityClass) STATIC &#xA;&#x9;&#x9;&#x9;SHALL contain [1..1] code/@code, which SHALL be selected from ValueSet 2.16.840.1.114222.4.11.3209 Exposure Location DYNAMIC" base_Constraint="_aocdgI47EeGy-7mVPNtnag"/>
   <CDA:PropertyValidation xmi:id="_NgTGEo48EeGy-7mVPNtnag">
     <ruleId>CONF:1996</ruleId>
-  </CDA:PropertyValidation>
-  <CDA:PropertyValidation xmi:id="_NgTtIY48EeGy-7mVPNtnag" base_Property="_NgTtII48EeGy-7mVPNtnag">
-    <ruleId>CONF-397</ruleId>
-    <ruleId>CONF:1999</ruleId>
   </CDA:PropertyValidation>
   <CDA:PropertyValidation xmi:id="_NgUUM448EeGy-7mVPNtnag" mandatory="true">
     <ruleId>CONF:2001</ruleId>
@@ -351,12 +343,11 @@
   </CDA:AssociationValidation>
   <CDA:ValueSetConstraint xmi:id="_XvZ-YI48EeGy-7mVPNtnag" base_Property="_NgTtII48EeGy-7mVPNtnag">
     <reference href="salmonellosis-vocab.uml#_FSVAsbAKEeGmK64uBMysNg"/>
+    <ruleId>CONF-397</ruleId>
+    <ruleId>CONF:1999</ruleId>
   </CDA:ValueSetConstraint>
   <CDA:Entry xmi:id="_2LUHMI48EeGy-7mVPNtnag" severity="INFO" base_Association="_zy0l0o48EeGy-7mVPNtnag" typeCode="DRIV"/>
   <CDA:PropertyValidation xmi:id="_rO_HEo49EeGy-7mVPNtnag"/>
-  <CDA:PropertyValidation xmi:id="_rO_uII49EeGy-7mVPNtnag" base_Property="_rO_HE449EeGy-7mVPNtnag">
-    <ruleId>CONF-412</ruleId>
-  </CDA:PropertyValidation>
   <CDA:PropertyValidation xmi:id="_rO_uJI49EeGy-7mVPNtnag" severity="WARNING">
     <ruleId>CONF-411</ruleId>
   </CDA:PropertyValidation>
@@ -377,6 +368,7 @@
   </CDA:PropertyValidation>
   <CDA:ValueSetConstraint xmi:id="_0HwekI49EeGy-7mVPNtnag" base_Property="_rO_HE449EeGy-7mVPNtnag">
     <reference href="salmonellosis-vocab.uml#_FSVAsbAKEeGmK64uBMysNg"/>
+    <ruleId>CONF-412</ruleId>
   </CDA:ValueSetConstraint>
   <CDA:ConstraintValidation xmi:id="_ZxvXoI4-EeGy-7mVPNtnag" message="MAY contain [0..1] specimen, which if present&#xA;&#x9;SHALL contain [1..1] specimenRole, which &#xA;&#x9;&#x9;SHOULD contain [0..1] id&#xA;&#x9;&#x9;MAY contain [0..1] specimenPlayingEntity, which if present &#xA;&#x9;&#x9;&#x9;SHALL contain [1..1] code/@code, which SHALL be selected from ValueSet 2.16.840.1.114222.4.11.946 Specimen DYNAMIC" severity="INFO"/>
   <CDA:ConstraintValidation xmi:id="_6nE18I4-EeGy-7mVPNtnag" message="SHOULD contain [0..1] performer, which if present&#xA;&#x9;SHOULD contain [0..1] time &#xA;&#x9;SHALL contain [1..1] assignedEntity, which&#xA;&#x9;&#x9;SHALL contain [1..*] id" severity="WARNING"/>
@@ -429,14 +421,13 @@
   <CDA:ConstraintValidation xmi:id="_9D7EII5EEeGy-7mVPNtnag" message="SHALL contain [1..1] observation which&#xA;&#x9;SHALL contain [1..1] @classCode=&quot;OBS&quot; Observation (CodeSystem: 2.16.840.1.113883.5.6 HL7ActClass) STATIC &#xA;&#x9;SHALL contain [1..1] @moodCode=&quot;EVN&quot; Event (CodeSystem: 2.16.840.1.113883.5.1001 HL7ActMood) STATIC &#xA;     observation/id SHALL be present, and SHALL equal the tuberculosis case observation's observation/id &#xA;&#x9;SHALL contain [1..1] code/@code=&quot;ASSERTION&quot; (CodeSystem: 2.16.840.1.113883.5.4 HL7ActCode) STATIC&#xA;&#x9;SHALL contain [1..1] value/@code, which SHALL be selected from ValueSet XX Disease Type (Salm) (CodeSystem: 2.16.840.1.113883.6.96 SNOMEDCT) DYNAMIC"/>
   <CDA:ValueSetConstraint xmi:id="_K04N4JH7EeG1cN68X_AUqA" base_Property="_sMrp8o4zEeGy-7mVPNtnag">
     <reference href="salmonellosis-vocab.uml#_-WdhMJIBEeGH07zfn-H_Sw"/>
+    <ruleId>CONF:1874</ruleId>
   </CDA:ValueSetConstraint>
   <CDA:PropertyValidation xmi:id="_MFm1IJIrEeG8oN-7sTL44Q"/>
   <CDA:PropertyValidation xmi:id="_NmRWoJIrEeG8oN-7sTL44Q"/>
-  <CDA:PropertyValidation xmi:id="_OK34gJIrEeG8oN-7sTL44Q" base_Property="_INO1YZIrEeG8oN-7sTL44Q"/>
   <CDA:CodeSystemConstraint xmi:id="_Qm-HgJIrEeG8oN-7sTL44Q" code="ASSERTION" base_Property="_INO1YZIrEeG8oN-7sTL44Q">
     <reference href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_4AnRQCYWEd-iTYfpNb4PkQ"/>
   </CDA:CodeSystemConstraint>
-  <CDA:PropertyValidation xmi:id="_gkqTQJIrEeG8oN-7sTL44Q" base_Property="_INQDgJIrEeG8oN-7sTL44Q"/>
   <CDA:ValueSetConstraint xmi:id="_jBXmQJIrEeG8oN-7sTL44Q" base_Property="_INQDgJIrEeG8oN-7sTL44Q">
     <reference href="salmonellosis-vocab.uml#_OA4foJOXEeGS4vT0_mgBnw"/>
   </CDA:ValueSetConstraint>
@@ -461,11 +452,9 @@
   <CDA:ValueSetConstraint xmi:id="_OsXMQJI8EeG8oN-7sTL44Q" base_Property="_sMrC4I4zEeGy-7mVPNtnag">
     <reference href="../../org.openhealthtools.mdht.uml.cda.phcr.model/model/phcr-vocab.uml#_0NOq8TMYEeGXS8s8x7j2Fg"/>
   </CDA:ValueSetConstraint>
-  <CDA:PropertyValidation xmi:id="_d8t7c5I9EeG8oN-7sTL44Q" base_Property="_d8t7cJI9EeG8oN-7sTL44Q">
-    <ruleId>CONF:1867</ruleId>
-  </CDA:PropertyValidation>
   <CDA:ValueSetConstraint xmi:id="_hK1dQJI9EeG8oN-7sTL44Q" base_Property="_d8t7cJI9EeG8oN-7sTL44Q">
     <reference href="salmonellosis-vocab.uml#_f-ODMY6aEeGpzoDeHkfBHw"/>
+    <ruleId>CONF:1867</ruleId>
   </CDA:ValueSetConstraint>
   <CDA:AssociationValidation xmi:id="_vnJV0JI9EeG8oN-7sTL44Q" severity="WARNING" base_Association="_ty2GopI9EeG8oN-7sTL44Q"/>
   <CDA:Entry xmi:id="_SRCiAJI-EeG8oN-7sTL44Q" typeCode="DRIV"/>

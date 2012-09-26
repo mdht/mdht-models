@@ -356,37 +356,29 @@
     <ruleId>CONF:1873</ruleId>
   </CDA:PropertyValidation>
   <CDA:CDATemplate xmi:id="_ARuQIGS0EeGFY81qWTDU9g" base_Class="_51RKEGSzEeGFY81qWTDU9g" templateId="2.16.840.1.113883.10.20.15.3.35"/>
-  <CDA:PropertyValidation xmi:id="_jykBQGe7EeGcR5CQkyNBsg" base_Property="_jyaQQGe7EeGcR5CQkyNBsg">
-    <ruleId>CONF:1303</ruleId>
-  </CDA:PropertyValidation>
   <CDA:ValueSetConstraint xmi:id="_m56zwGe7EeGcR5CQkyNBsg" base_Property="_jyaQQGe7EeGcR5CQkyNBsg">
     <reference href="anthrax-vocab.uml#_aQfhbWf4EeGcR5CQkyNBsg"/>
+    <ruleId>CONF:1303</ruleId>
   </CDA:ValueSetConstraint>
   <CDA:ActRelationship xmi:id="_aogakGe9EeGcR5CQkyNBsg"/>
   <CDA:Entry xmi:id="_eHXuIGe9EeGcR5CQkyNBsg" typeCode="DRIV"/>
-  <CDA:PropertyValidation xmi:id="_tO_Ng2e9EeGcR5CQkyNBsg" base_Property="_tO_NgGe9EeGcR5CQkyNBsg">
-    <ruleId>CONF:1294</ruleId>
-  </CDA:PropertyValidation>
   <CDA:ActRelationship xmi:id="_qT2coGe-EeGcR5CQkyNBsg"/>
   <CDA:ValueSetConstraint xmi:id="_taAf0Ge_EeGcR5CQkyNBsg" base_Property="_tO_NgGe9EeGcR5CQkyNBsg">
     <reference href="anthrax-vocab.uml#_fZIPIGf4EeGcR5CQkyNBsg"/>
+    <ruleId>CONF:1294</ruleId>
   </CDA:ValueSetConstraint>
   <CDA:EntryRelationship xmi:id="_DFZKAGfHEeGcR5CQkyNBsg" severity="WARNING" typeCode="MFST"/>
   <CDA:TextValue xmi:id="_nwzAgGf_EeGcR5CQkyNBsg" base_Property="_Vyx7wGf_EeGcR5CQkyNBsg" value="Public Health Case Report - Anthrax">
     <ruleId>CONF:1534</ruleId>
   </CDA:TextValue>
-  <CDA:PropertyValidation xmi:id="_RNOwIWgDEeGcR5CQkyNBsg" base_Property="_RNOwIGgDEeGcR5CQkyNBsg">
-    <ruleId>CONF-412</ruleId>
-  </CDA:PropertyValidation>
   <CDA:ValueSetConstraint xmi:id="_U8KgAGgDEeGcR5CQkyNBsg" base_Property="_RNOwIGgDEeGcR5CQkyNBsg">
     <reference href="anthrax-vocab.uml#_MOfmQmf4EeGcR5CQkyNBsg"/>
+    <ruleId>CONF-412</ruleId>
   </CDA:ValueSetConstraint>
-  <CDA:PropertyValidation xmi:id="_kj64AWgDEeGcR5CQkyNBsg" base_Property="_kj64AGgDEeGcR5CQkyNBsg">
-    <ruleId>CONF-397</ruleId>
-    <ruleId>CONF:1999</ruleId>
-  </CDA:PropertyValidation>
   <CDA:ValueSetConstraint xmi:id="_lrx38GgDEeGcR5CQkyNBsg" base_Property="_kj64AGgDEeGcR5CQkyNBsg">
     <reference href="anthrax-vocab.uml#_MOfmQmf4EeGcR5CQkyNBsg"/>
+    <ruleId>CONF-397</ruleId>
+    <ruleId>CONF:1999</ruleId>
   </CDA:ValueSetConstraint>
   <CDA:ValueSetConstraint xmi:id="_yDxZ0Gh7EeGcR5CQkyNBsg">
     <reference href="anthrax-vocab.uml#_dEghIGf4EeGcR5CQkyNBsg"/>

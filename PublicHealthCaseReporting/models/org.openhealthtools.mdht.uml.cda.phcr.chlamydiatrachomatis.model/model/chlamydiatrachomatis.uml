@@ -255,24 +255,19 @@
   <CDA:EntryRelationship xmi:id="_dTQVIIAdEeGJRbKnXRYheg" severity="WARNING" base_Association="_RvYCQoAdEeGJRbKnXRYheg" typeCode="COMP"/>
   <CDA:EntryRelationship xmi:id="_zB5L0IAdEeGJRbKnXRYheg" severity="INFO" base_Association="_uVJv4oAdEeGJRbKnXRYheg" typeCode="COMP"/>
   <CDA:PropertyValidation xmi:id="_IG7SUIDCEeGJRbKnXRYheg"/>
-  <CDA:PropertyValidation xmi:id="_AnFHkIJtEeGJRbKnXRYheg" base_Property="_4tSg0IJsEeGJRbKnXRYheg"/>
   <CDA:ClassValidation xmi:id="_PsaX4IKBEeGJRbKnXRYheg" base_Class="_u6lQoIJsEeGJRbKnXRYheg"/>
   <CDA:Entry xmi:id="_wcDOQMCEEeGGU7JFW58CtA" severity="WARNING" base_Association="_OXjqQoC_EeGJRbKnXRYheg" typeCode="DRIV"/>
   <CDA:Entry xmi:id="_zjdrIMCEEeGGU7JFW58CtA" severity="INFO" base_Association="_VYqwEoKBEeGJRbKnXRYheg" typeCode="DRIV"/>
-  <CDA:PropertyValidation xmi:id="_7f8ZgcCEEeGGU7JFW58CtA" base_Property="_7f8ZgMCEEeGGU7JFW58CtA">
-    <ruleId>CONF-412</ruleId>
-  </CDA:PropertyValidation>
   <CDA:ValueSetConstraint xmi:id="_F-xv4MCFEeGGU7JFW58CtA" base_Property="_7f8ZgMCEEeGGU7JFW58CtA">
     <reference href="chlamydiatrachomatis-vocab.uml#_ZYuAEcCFEeGGU7JFW58CtA"/>
+    <ruleId>CONF-412</ruleId>
   </CDA:ValueSetConstraint>
   <CDA:ValueSetConstraint xmi:id="_2GCgIMCFEeGGU7JFW58CtA" base_Property="_4tSg0IJsEeGJRbKnXRYheg">
     <reference href="chlamydiatrachomatis-vocab.uml#_ZYuAEcCFEeGGU7JFW58CtA"/>
   </CDA:ValueSetConstraint>
-  <CDA:PropertyValidation xmi:id="_gLwvQ8CHEeGGU7JFW58CtA" base_Property="_gLwvQMCHEeGGU7JFW58CtA">
-    <ruleId>CONF:1874</ruleId>
-  </CDA:PropertyValidation>
   <CDA:CodeSystemConstraint xmi:id="_joYAEMCHEeGGU7JFW58CtA" code="105629000" displayName="Chlamydial infection" base_Property="_gLwvQMCHEeGGU7JFW58CtA">
     <reference href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_ya6aMCWsEd-iTYfpNb4PkQ"/>
+    <ruleId>CONF:1874</ruleId>
   </CDA:CodeSystemConstraint>
   <CDA:AssociationValidation xmi:id="_MNoIoMFSEeGQ1oYRXtYJxg"/>
   <CDA:Entry xmi:id="_TnfSIMFSEeGQ1oYRXtYJxg" base_Association="_RIC0MsFSEeGQ1oYRXtYJxg" typeCode="DRIV"/>

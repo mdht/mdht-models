@@ -298,11 +298,9 @@
     <reference href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_e8ZEoCWvEd-iTYfpNb4PkQ"/>
     <ruleId>CONF:1872</ruleId>
   </CDA:CodeSystemConstraint>
-  <CDA:PropertyValidation xmi:id="_Sxhoo5ItEeG8oN-7sTL44Q" base_Property="_SxhooJItEeG8oN-7sTL44Q">
-    <ruleId>CONF:1874</ruleId>
-  </CDA:PropertyValidation>
   <CDA:ValueSetConstraint xmi:id="_cnfoMJItEeG8oN-7sTL44Q" base_Property="_SxhooJItEeG8oN-7sTL44Q">
     <reference href="silicosis-vocab.uml#_ttUk4JImEeG8oN-7sTL44Q"/>
+    <ruleId>CONF:1874</ruleId>
   </CDA:ValueSetConstraint>
   <CDA:Entry xmi:id="_k1KNMJItEeG8oN-7sTL44Q" base_Association="_j4w2YpItEeG8oN-7sTL44Q" typeCode="DRIV"/>
   <CDA:PropertyValidation xmi:id="_8Rc4gJItEeG8oN-7sTL44Q">
@@ -325,11 +323,9 @@
     <reference href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_e8ZEoCWvEd-iTYfpNb4PkQ"/>
     <ruleId>CONF:1865</ruleId>
   </CDA:CodeSystemConstraint>
-  <CDA:PropertyValidation xmi:id="_8Rf705ItEeG8oN-7sTL44Q" base_Property="_8Rf70JItEeG8oN-7sTL44Q">
-    <ruleId>CONF:1867</ruleId>
-  </CDA:PropertyValidation>
   <CDA:ValueSetConstraint xmi:id="__j3EcJItEeG8oN-7sTL44Q" base_Property="_8Rf70JItEeG8oN-7sTL44Q">
     <reference href="silicosis-vocab.uml#_f-ODMY6aEeGpzoDeHkfBHw"/>
+    <ruleId>CONF:1867</ruleId>
   </CDA:ValueSetConstraint>
   <CDA:PropertyValidation xmi:id="_kdvWQJIuEeG8oN-7sTL44Q">
     <ruleId>CONF:1996</ruleId>
@@ -385,7 +381,6 @@
   <CDA:Entry xmi:id="_icjFIJIvEeG8oN-7sTL44Q" severity="INFO" typeCode="DRIV"/>
   <CDA:Entry xmi:id="_nkP-wJIvEeG8oN-7sTL44Q" severity="WARNING" typeCode="DRIV"/>
   <CDA:PropertyValidation xmi:id="_VR4lMJIwEeG8oN-7sTL44Q"/>
-  <CDA:PropertyValidation xmi:id="_VyL14JIwEeG8oN-7sTL44Q" base_Property="_SoI7wJIwEeG8oN-7sTL44Q"/>
   <CDA:CodeSystemConstraint xmi:id="_XefmsJIwEeG8oN-7sTL44Q" code="ASSERTION" base_Property="_SoI7wJIwEeG8oN-7sTL44Q">
     <reference href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_4AnRQCYWEd-iTYfpNb4PkQ"/>
   </CDA:CodeSystemConstraint>
@@ -440,11 +435,9 @@
   <CDA:CodeSystemConstraint xmi:id="_ndlLoKQuEeGRePMoDoYb3A" code="102445001" displayName="Exposure to toxic dust" base_Property="_CCmX4KQuEeGRePMoDoYb3A">
     <reference href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_ya6aMCWsEd-iTYfpNb4PkQ"/>
   </CDA:CodeSystemConstraint>
-  <CDA:PropertyValidation xmi:id="_6pg2YKbeEeGPkYBS3YlgqQ" base_Property="_6pgPUKbeEeGPkYBS3YlgqQ">
-    <ruleId>CONF:825</ruleId>
-  </CDA:PropertyValidation>
   <CDA:ValueSetConstraint xmi:id="_TyBykKkGEeG1ttSAj8fPmg" base_Property="_6pgPUKbeEeGPkYBS3YlgqQ">
     <reference href="silicosis-vocab.uml#_T4OWoKkFEeG1ttSAj8fPmg"/>
+    <ruleId>CONF:825</ruleId>
   </CDA:ValueSetConstraint>
   <CDA:CDATemplate xmi:id="_38MesKkGEeG1ttSAj8fPmg" base_Class="_yNtR4KkGEeG1ttSAj8fPmg" templateId="2.16.840.1.113883.10.20.15.2.35"/>
   <CDA:Entry xmi:id="_-j4kYKkGEeG1ttSAj8fPmg" severity="INFO" base_Association="_9hIt8akGEeG1ttSAj8fPmg" typeCode="DRIV"/>
@@ -458,7 +451,6 @@
     <ruleId>CONF-155</ruleId>
   </CDA:PropertyValidation>
   <CDA:PropertyValidation xmi:id="_k7WOgKkHEeG1ttSAj8fPmg" base_Property="_gWsXkKkHEeG1ttSAj8fPmg"/>
-  <CDA:PropertyValidation xmi:id="_3xZHcKkHEeG1ttSAj8fPmg" base_Property="_gWuMxqkHEeG1ttSAj8fPmg"/>
   <CDA:ValueSetConstraint xmi:id="_7NRYcKkHEeG1ttSAj8fPmg" base_Property="_gWuMxqkHEeG1ttSAj8fPmg">
     <reference href="../../org.openhealthtools.mdht.uml.cda.phcr.tuberculosis.model/model/tuberculosis-vocab.uml#_kw5BwJHsEeG1cN68X_AUqA"/>
   </CDA:ValueSetConstraint>

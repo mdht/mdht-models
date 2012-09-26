@@ -19,6 +19,7 @@
     <packageImport xmi:id="_Iva-1UkhEeG_D8F8rok7RQ">
       <importedPackage href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_KnCD4CFjEd-3s7f6mWX-3A"/>
     </packageImport>
+    <!--
     <packagedElement xmi:type="uml:Association" xmi:id="_ItV7MUkhEeG_D8F8rok7RQ" memberEnd="_ItV7MkkhEeG_D8F8rok7RQ">
       <ownedEnd xmi:id="_ItV7MkkhEeG_D8F8rok7RQ" name="" visibility="private" association="_ItV7MUkhEeG_D8F8rok7RQ">
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ItV7M0khEeG_D8F8rok7RQ" value="*"/>
@@ -31,6 +32,7 @@
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ItV7OEkhEeG_D8F8rok7RQ"/>
       </ownedEnd>
     </packagedElement>
+    -->
     <packagedElement xmi:type="uml:Class" xmi:id="_Iu-S4UkhEeG_D8F8rok7RQ" name="WestNileVirusCaseReport">
       <generalization xmi:id="_Iu-S40khEeG_D8F8rok7RQ">
         <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.phcr.model/model/phcr.uml#_6PmAIcgnEeCI5ZpfyBisiQ"/>
@@ -169,35 +171,27 @@
   <CDA:CDATemplate xmi:id="__yvtQKCMEeGzToMRDovxkA" base_Class="_kAixoKCMEeGzToMRDovxkA" templateId="2.16.840.1.113883.10.20.15.3.106"/>
   <CDA:CDATemplate xmi:id="_CFS-sKCNEeGzToMRDovxkA" base_Class="_qnpogKCMEeGzToMRDovxkA" templateId="2.16.840.1.113883.10.20.15.3.105"/>
   <CDA:CDATemplate xmi:id="_GXCgsKCNEeGzToMRDovxkA" base_Class="_0WQ0cJfcEeGIls8OsXqV-w" templateId="2.16.840.1.113883.10.20.15.3.104"/>
-  <CDA:PropertyValidation xmi:id="_NuM7g6CNEeGzToMRDovxkA" base_Property="_NuM7gKCNEeGzToMRDovxkA">
-    <ruleId>CONF:1874</ruleId>
-  </CDA:PropertyValidation>
   <CDA:EntryRelationship xmi:id="_TAqToKCNEeGzToMRDovxkA" severity="WARNING" base_Association="_Lipp8qCNEeGzToMRDovxkA" typeCode="MFST"/>
   <CDA:Entry xmi:id="_co4LEKCNEeGzToMRDovxkA" base_Association="_Z8v8AqCNEeGzToMRDovxkA" typeCode="DRIV"/>
   <CDA:Entry xmi:id="_pcBtcKCNEeGzToMRDovxkA" severity="INFO" typeCode="DRIV"/>
   <CDA:Entry xmi:id="_rdnKsKCNEeGzToMRDovxkA" severity="WARNING" base_Association="_lbsEgqCNEeGzToMRDovxkA" typeCode="DRIV"/>
   <CDA:AssociationValidation xmi:id="_x_9dYKCNEeGzToMRDovxkA" base_Association="_vcc-0qCNEeGzToMRDovxkA"/>
-  <CDA:PropertyValidation xmi:id="_bvPWcKETEeG115cBYsOPJg" base_Property="_bvOvYKETEeG115cBYsOPJg">
-    <ruleId>CONF-412</ruleId>
-  </CDA:PropertyValidation>
-  <CDA:PropertyValidation xmi:id="_edByYaETEeG115cBYsOPJg" base_Property="_edByYKETEeG115cBYsOPJg">
-    <ruleId>CONF-397</ruleId>
-    <ruleId>CONF:1999</ruleId>
-  </CDA:PropertyValidation>
-  <CDA:PropertyValidation xmi:id="_gdvs8KETEeG115cBYsOPJg" base_Property="_gdvF4KETEeG115cBYsOPJg">
-    <ruleId>CONF:1867</ruleId>
-  </CDA:PropertyValidation>
   <CDA:ValueSetConstraint xmi:id="_ugUEQKEdEeG115cBYsOPJg" base_Property="_NuM7gKCNEeGzToMRDovxkA">
     <reference href="wnv-vocab.uml#_aQfhbWf4EeGcR5CQkyNBsg"/>
+    <ruleId>CONF:1874</ruleId>
   </CDA:ValueSetConstraint>
   <CDA:ValueSetConstraint xmi:id="_yakTUKEdEeG115cBYsOPJg" base_Property="_bvOvYKETEeG115cBYsOPJg">
     <reference href="wnv-vocab.uml#_YX4TYKwnEeGXksLhwMR99Q"/>
+    <ruleId>CONF-412</ruleId>
   </CDA:ValueSetConstraint>
   <CDA:ValueSetConstraint xmi:id="_2ecYcKEdEeG115cBYsOPJg" base_Property="_edByYKETEeG115cBYsOPJg">
     <reference href="wnv-vocab.uml#_YX4TYKwnEeGXksLhwMR99Q"/>
+    <ruleId>CONF-397</ruleId>
+    <ruleId>CONF:1999</ruleId>
   </CDA:ValueSetConstraint>
   <CDA:ValueSetConstraint xmi:id="_8PAB0KEdEeG115cBYsOPJg" base_Property="_gdvF4KETEeG115cBYsOPJg">
     <reference href="wnv-vocab.uml#_fZIPIGf4EeGcR5CQkyNBsg"/>
+    <ruleId>CONF:1867</ruleId>
   </CDA:ValueSetConstraint>
   <CDA:Entry xmi:id="_jAinEKwaEeGX4Lb7iWiw0A" severity="INFO" base_Association="_aE8lEawaEeGX4Lb7iWiw0A" typeCode="DRIV"/>
 </xmi:XMI>

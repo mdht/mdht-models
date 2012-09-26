@@ -167,29 +167,22 @@
   <CDA:AssociationValidation xmi:id="__wTy0OvDEeGku7aGn3pxJA" severity="WARNING" base_Association="_t7DogevDEeGku7aGn3pxJA"/>
   <CDA:Entry xmi:id="_LqV74OvEEeGku7aGn3pxJA" base_Association="_IiHmsuvEEeGku7aGn3pxJA" typeCode="DRIV"/>
   <CDA:EntryRelationship xmi:id="_W8Y34OvEEeGku7aGn3pxJA" severity="WARNING" base_Association="_Rxs7suvEEeGku7aGn3pxJA" typeCode="MFST"/>
-  <CDA:PropertyValidation xmi:id="_eYh5UOvEEeGku7aGn3pxJA" base_Property="_eYgrMOvEEeGku7aGn3pxJA">
-    <ruleId>CONF:1874</ruleId>
-  </CDA:PropertyValidation>
-  <CDA:PropertyValidation xmi:id="_k82h8OvEEeGku7aGn3pxJA" base_Property="_k8164OvEEeGku7aGn3pxJA">
-    <ruleId>CONF:1867</ruleId>
-  </CDA:PropertyValidation>
   <CDA:Entry xmi:id="_5azz4OvEEeGku7aGn3pxJA" severity="INFO" base_Association="_xpX34OvEEeGku7aGn3pxJA" typeCode="DRIV"/>
   <CDA:Entry xmi:id="_BAWo8OvFEeGku7aGn3pxJA" severity="WARNING" base_Association="_tKCl0uvEEeGku7aGn3pxJA" typeCode="DRIV"/>
-  <CDA:PropertyValidation xmi:id="_Kt2B8OvFEeGku7aGn3pxJA" base_Property="_Kt1a4OvFEeGku7aGn3pxJA">
-    <ruleId>CONF-412</ruleId>
-  </CDA:PropertyValidation>
-  <CDA:PropertyValidation xmi:id="_biH3cevFEeGku7aGn3pxJA" base_Property="_biH3cOvFEeGku7aGn3pxJA">
-    <ruleId>CONF-397</ruleId>
-    <ruleId>CONF:1999</ruleId>
-  </CDA:PropertyValidation>
   <CDA:ValueSetConstraint xmi:id="_AAiUQOvREeGku7aGn3pxJA" base_Property="_Kt1a4OvFEeGku7aGn3pxJA">
     <reference href="meningococcal-vocab.uml#_oGx1YAG_EeKd8ar76RTW2A"/>
+    <ruleId>CONF-412</ruleId>
   </CDA:ValueSetConstraint>
-  <CDA:ValueSetConstraint xmi:id="_cEkmwOvREeGku7aGn3pxJA" identifier="2.16.840.1.114222.4.11.4176" name="Lab Test Name (Meningococcal Disease)" base_Property="_biH3cOvFEeGku7aGn3pxJA"/>
+  <CDA:ValueSetConstraint xmi:id="_cEkmwOvREeGku7aGn3pxJA" identifier="2.16.840.1.114222.4.11.4176" name="Lab Test Name (Meningococcal Disease)" base_Property="_biH3cOvFEeGku7aGn3pxJA">
+    <ruleId>CONF-397</ruleId>
+    <ruleId>CONF:1999</ruleId>
+  </CDA:ValueSetConstraint>
   <CDA:ValueSetConstraint xmi:id="_HbKW8AHDEeKd8ar76RTW2A" base_Property="_eYgrMOvEEeGku7aGn3pxJA">
     <reference href="meningococcal-vocab.uml#_Xoy4oQHCEeKd8ar76RTW2A"/>
+    <ruleId>CONF:1874</ruleId>
   </CDA:ValueSetConstraint>
   <CDA:ValueSetConstraint xmi:id="_LH1dAAHDEeKd8ar76RTW2A" base_Property="_k8164OvEEeGku7aGn3pxJA">
     <reference href="meningococcal-vocab.uml#_1OytIQHCEeKd8ar76RTW2A"/>
+    <ruleId>CONF:1867</ruleId>
   </CDA:ValueSetConstraint>
 </xmi:XMI>

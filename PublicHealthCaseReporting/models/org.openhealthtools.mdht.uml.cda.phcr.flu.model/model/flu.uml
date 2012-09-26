@@ -373,11 +373,9 @@
     <reference href="flu-vocab.uml#_L3el0K1DEeGiKq3XX8XCzA"/>
   </CDA:ValueSetConstraint>
   <CDA:ConformsTo xmi:id="_ImRscKPPEeGdKsw0tXkvXQ" base_Generalization="_80rGoKPOEeGdKsw0tXkvXQ"/>
-  <CDA:PropertyValidation xmi:id="_Oh_c8KPPEeGdKsw0tXkvXQ" base_Property="_Oh-14KPPEeGdKsw0tXkvXQ">
-    <ruleId>CONF:1867</ruleId>
-  </CDA:PropertyValidation>
   <CDA:ValueSetConstraint xmi:id="_PXh90KPPEeGdKsw0tXkvXQ" base_Property="_Oh-14KPPEeGdKsw0tXkvXQ">
     <reference href="flu-vocab.uml#_kNYkoKPKEeGdKsw0tXkvXQ"/>
+    <ruleId>CONF:1867</ruleId>
   </CDA:ValueSetConstraint>
   <CDA:EntryRelationship xmi:id="_CQNs0KPQEeGdKsw0tXkvXQ" severity="WARNING" base_Association="_1nyzwaPPEeGdKsw0tXkvXQ" typeCode="MFST"/>
   <CDA:ActRelationship xmi:id="_HJvAgKPQEeGdKsw0tXkvXQ" base_Association="_1nyzwaPPEeGdKsw0tXkvXQ"/>
@@ -411,14 +409,9 @@
   <CDA:Entry xmi:id="_CFEQsKlKEeGC1bRFR6-SQw" base_Association="_-rcpgalJEeGC1bRFR6-SQw" typeCode="DRIV"/>
   <CDA:ActRelationship xmi:id="_CtGhEKlKEeGC1bRFR6-SQw" base_Association="_-rcpgalJEeGC1bRFR6-SQw"/>
   <CDA:CDATemplate xmi:id="_Fza8UKlLEeGC1bRFR6-SQw" base_Class="_DHNNsKlLEeGC1bRFR6-SQw" templateId="2.16.840.1.113883.10.20.15.3.81"/>
-  <CDA:PropertyValidation xmi:id="_NUN0QKlLEeGC1bRFR6-SQw" base_Property="_NUNNMKlLEeGC1bRFR6-SQw">
-    <ruleId>CONF-412</ruleId>
-  </CDA:PropertyValidation>
-  <CDA:PropertyValidation xmi:id="_TRRBgKlLEeGC1bRFR6-SQw" severity="WARNING" base_Property="_TRQacKlLEeGC1bRFR6-SQw">
-    <ruleId>CONF-418</ruleId>
-  </CDA:PropertyValidation>
   <CDA:ValueSetConstraint xmi:id="_W5240KlLEeGC1bRFR6-SQw" base_Property="_TRQacKlLEeGC1bRFR6-SQw" severity="WARNING">
     <reference href="flu-vocab.uml#_9nACkKlMEeGC1bRFR6-SQw"/>
+    <ruleId>CONF-418</ruleId>
   </CDA:ValueSetConstraint>
   <CDA:ConstraintValidation xmi:id="_vB03AKlOEeGC1bRFR6-SQw" message="11.&#x9;MAY contain [0..1] specimen (CONF:1246), which if present &#xD;&#xA;a.&#x9;SHALL contain [1..1] specimenRole , which &#xD;&#xA;i.&#x9;SHOULD contain [0..1] id &#xD;&#xA;ii.&#x9;MAY contain [0..1] specimenPlayingEntity , which if present &#xD;&#xA;1.&#x9;SHALL contain [1..1] code/@code, which SHALL be selected from ValueSet 2.16.840.1.114222.4.11.3246 PHVS_Specimen_Flu DYNAMIC" severity="INFO" base_Constraint="_uh4LoKlOEeGC1bRFR6-SQw"/>
   <CDA:Entry xmi:id="_HDbO0KlPEeGC1bRFR6-SQw" severity="WARNING" base_Association="_D1mn8alPEeGC1bRFR6-SQw" typeCode="DRIV"/>
@@ -498,5 +491,6 @@
   <CDA:AssociationValidation xmi:id="_8IIG4MFgEeGQ1oYRXtYJxg" severity="WARNING" base_Association="_7UkjAsFgEeGQ1oYRXtYJxg"/>
   <CDA:ValueSetConstraint xmi:id="_tN4LoOyCEeGTq5iwfcrWEw" base_Property="_NUNNMKlLEeGC1bRFR6-SQw">
     <reference href="flu-vocab.uml#_XEyQ8arAEeGIk6WTSrP2zg"/>
+    <ruleId>CONF-412</ruleId>
   </CDA:ValueSetConstraint>
 </xmi:XMI>

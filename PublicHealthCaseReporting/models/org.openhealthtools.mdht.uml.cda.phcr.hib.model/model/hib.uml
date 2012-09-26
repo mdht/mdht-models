@@ -168,30 +168,23 @@
   <CDA:AssociationValidation xmi:id="_lXnAkOueEeGku7aGn3pxJA" severity="WARNING" base_Association="_cIpWouueEeGku7aGn3pxJA"/>
   <CDA:Entry xmi:id="_xXaZcOupEeGku7aGn3pxJA" base_Association="_occpkuupEeGku7aGn3pxJA" typeCode="DRIV"/>
   <CDA:EntryRelationship xmi:id="___VsIOupEeGku7aGn3pxJA" severity="WARNING" base_Association="_4I5UUuupEeGku7aGn3pxJA" typeCode="MFST"/>
-  <CDA:PropertyValidation xmi:id="_FxBW4OuqEeGku7aGn3pxJA" base_Property="_FxAv0OuqEeGku7aGn3pxJA">
-    <ruleId>CONF:1874</ruleId>
-  </CDA:PropertyValidation>
   <CDA:Entry xmi:id="_ZZd9IOuqEeGku7aGn3pxJA" severity="WARNING" base_Association="_QMfQMeuqEeGku7aGn3pxJA" typeCode="DRIV"/>
   <CDA:Entry xmi:id="_buxnoOuqEeGku7aGn3pxJA" severity="INFO" base_Association="_TMePYuuqEeGku7aGn3pxJA" typeCode="DRIV"/>
-  <CDA:PropertyValidation xmi:id="_l9T4MOuqEeGku7aGn3pxJA" base_Property="_l9TRIOuqEeGku7aGn3pxJA">
-    <ruleId>CONF-412</ruleId>
-  </CDA:PropertyValidation>
   <CDA:AssociationValidation xmi:id="_x5EfkOuqEeGku7aGn3pxJA" base_Association="_tXHXUeuqEeGku7aGn3pxJA"/>
-  <CDA:PropertyValidation xmi:id="_ZYG1w-urEeGku7aGn3pxJA" base_Property="_ZYG1wOurEeGku7aGn3pxJA">
-    <ruleId>CONF:1867</ruleId>
-  </CDA:PropertyValidation>
-  <CDA:PropertyValidation xmi:id="_oMXVcevFEeGku7aGn3pxJA" base_Property="_oMXVcOvFEeGku7aGn3pxJA">
-    <ruleId>CONF-397</ruleId>
-    <ruleId>CONF:1999</ruleId>
-  </CDA:PropertyValidation>
   <CDA:ValueSetConstraint xmi:id="_EawnYOvSEeGku7aGn3pxJA" base_Property="_l9TRIOuqEeGku7aGn3pxJA">
     <reference href="hib-vocab.uml#_Ksnj0AHHEeKhqM1LVJhYIg"/>
+    <ruleId>CONF-412</ruleId>
   </CDA:ValueSetConstraint>
-  <CDA:ValueSetConstraint xmi:id="_J2ZJoOvSEeGku7aGn3pxJA" identifier="2.16.840.1.114222.4.11.4153" name="Lab Test Name (Haemophilus influenzae)" base_Property="_oMXVcOvFEeGku7aGn3pxJA"/>
+  <CDA:ValueSetConstraint xmi:id="_J2ZJoOvSEeGku7aGn3pxJA" identifier="2.16.840.1.114222.4.11.4153" name="Lab Test Name (Haemophilus influenzae)" base_Property="_oMXVcOvFEeGku7aGn3pxJA">
+    <ruleId>CONF-397</ruleId>
+    <ruleId>CONF:1999</ruleId>
+  </CDA:ValueSetConstraint>
   <CDA:ValueSetConstraint xmi:id="_j70hwAHIEeKhqM1LVJhYIg" base_Property="_ZYG1wOurEeGku7aGn3pxJA">
     <reference href="hib-vocab.uml#_KQ4NkQHIEeKhqM1LVJhYIg"/>
+    <ruleId>CONF:1867</ruleId>
   </CDA:ValueSetConstraint>
   <CDA:ValueSetConstraint xmi:id="_pUnycAHIEeKhqM1LVJhYIg" base_Property="_FxAv0OuqEeGku7aGn3pxJA">
     <reference href="hib-vocab.uml#_2-SikQHHEeKhqM1LVJhYIg"/>
+    <ruleId>CONF:1874</ruleId>
   </CDA:ValueSetConstraint>
 </xmi:XMI>
