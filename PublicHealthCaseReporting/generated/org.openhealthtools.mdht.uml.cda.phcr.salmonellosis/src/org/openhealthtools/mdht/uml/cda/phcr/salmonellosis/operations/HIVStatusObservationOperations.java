@@ -6,7 +6,6 @@
  */
 package org.openhealthtools.mdht.uml.cda.phcr.salmonellosis.operations;
 
-import java.util.Collection;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.BasicDiagnostic;
@@ -35,10 +34,8 @@ import org.openhealthtools.mdht.uml.cda.phcr.salmonellosis.util.SalmonellosisVal
  * The following operations are supported:
  * <ul>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.phcr.salmonellosis.HIVStatusObservation#validateHIVStatusObservationTemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate HIV Status Observation Template Id</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.phcr.salmonellosis.HIVStatusObservation#validateHIVStatusObservationCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate HIV Status Observation Code P</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.phcr.salmonellosis.HIVStatusObservation#validateHIVStatusObservationCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate HIV Status Observation Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.phcr.salmonellosis.HIVStatusObservation#validateHIVStatusObservationStatusCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate HIV Status Observation Status Code</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.phcr.salmonellosis.HIVStatusObservation#validateHIVStatusObservationValue(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate HIV Status Observation Value</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.phcr.salmonellosis.HIVStatusObservation#validateHIVStatusObservationClassCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate HIV Status Observation Class Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.phcr.salmonellosis.HIVStatusObservation#validateHIVStatusObservationMoodCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate HIV Status Observation Mood Code</em>}</li>
  * </ul>
@@ -83,6 +80,7 @@ public class HIVStatusObservationOperations extends ClinicalStatementOperations
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
+   * self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.15.3.4')
    * @param hivStatusObservation The receiving '<em><b>HIV Status Observation</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -92,8 +90,8 @@ public class HIVStatusObservationOperations extends ClinicalStatementOperations
   
   public static  boolean validateHIVStatusObservationTemplateId(HIVStatusObservation hivStatusObservation, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
-  	  
-    if (VALIDATE_HIV_STATUS_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+    if (VALIDATE_HIV_STATUS_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null)
+    {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(SalmonellosisPackage.Literals.HIV_STATUS_OBSERVATION);
       try
@@ -114,10 +112,9 @@ public class HIVStatusObservationOperations extends ClinicalStatementOperations
             (Diagnostic.ERROR,
              SalmonellosisValidator.DIAGNOSTIC_SOURCE,
              SalmonellosisValidator.HIV_STATUS_OBSERVATION__HIV_STATUS_OBSERVATION_TEMPLATE_ID,
-             SalmonellosisPlugin.INSTANCE.getString("HIVStatusObservationTemplateId"),
+             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "validateHIVStatusObservationTemplateId", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(hivStatusObservation, context) }),
              new Object [] { hivStatusObservation }));
       }
-       
       return false;
     }
     return true;
@@ -149,6 +146,7 @@ public class HIVStatusObservationOperations extends ClinicalStatementOperations
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
+   * (self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined())
    * @param hivStatusObservation The receiving '<em><b>HIV Status Observation</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -158,8 +156,8 @@ public class HIVStatusObservationOperations extends ClinicalStatementOperations
   
   public static  boolean validateHIVStatusObservationCodeP(HIVStatusObservation hivStatusObservation, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
-  	  
-    if (VALIDATE_HIV_STATUS_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+    if (VALIDATE_HIV_STATUS_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null)
+    {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(SalmonellosisPackage.Literals.HIV_STATUS_OBSERVATION);
       try
@@ -180,22 +178,9 @@ public class HIVStatusObservationOperations extends ClinicalStatementOperations
             (Diagnostic.ERROR,
              SalmonellosisValidator.DIAGNOSTIC_SOURCE,
              SalmonellosisValidator.HIV_STATUS_OBSERVATION__HIV_STATUS_OBSERVATION_CODE_P,
-             SalmonellosisPlugin.INSTANCE.getString("HIVStatusObservationCodeP"),
+             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "validateHIVStatusObservationCodeP", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(hivStatusObservation, context) }),
              new Object [] { hivStatusObservation }));
       }
-      
-      if (context != null) {
-        // generate a pass token for my dependent constraints to short-circuit or filter results
-        @SuppressWarnings("unchecked")
-        Collection<Object> passToken = (Collection<Object>) context.get("org.openhealthtools.mdht.uml.cda.phcr.salmonellosis.HIVStatusObservationCodeP");
-        if (passToken == null) {
-          // anticipate a reasonably healthy model
-          passToken = new java.util.ArrayList<Object>(3);
-          context.put("org.openhealthtools.mdht.uml.cda.phcr.salmonellosis.HIVStatusObservationCodeP", passToken);
-        }
-        passToken.add(hivStatusObservation);
-      }
-       
       return false;
     }
     return true;
@@ -229,6 +214,9 @@ public class HIVStatusObservationOperations extends ClinicalStatementOperations
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
+   * (self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and 
+   * let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in 
+   * value.code = 'ASSERTION' and value.codeSystem = '2.16.840.1.113883.5.4')
    * @param hivStatusObservation The receiving '<em><b>HIV Status Observation</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -238,14 +226,8 @@ public class HIVStatusObservationOperations extends ClinicalStatementOperations
   
   public static  boolean validateHIVStatusObservationCode(HIVStatusObservation hivStatusObservation, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
-  	  
-    Object passToken = (context == null) ? null : context.get("org.openhealthtools.mdht.uml.cda.phcr.salmonellosis.HIVStatusObservationCodeP");
-    if ((passToken instanceof Collection<?>) && ((Collection<?>) passToken).contains(hivStatusObservation)) {
-      // I have a free pass to short-circuit
-      return true;
-    }
-  	  
-    if (VALIDATE_HIV_STATUS_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+    if (VALIDATE_HIV_STATUS_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null)
+    {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(SalmonellosisPackage.Literals.HIV_STATUS_OBSERVATION);
       try
@@ -266,10 +248,9 @@ public class HIVStatusObservationOperations extends ClinicalStatementOperations
             (Diagnostic.ERROR,
              SalmonellosisValidator.DIAGNOSTIC_SOURCE,
              SalmonellosisValidator.HIV_STATUS_OBSERVATION__HIV_STATUS_OBSERVATION_CODE,
-             SalmonellosisPlugin.INSTANCE.getString("HIVStatusObservationCode"),
+             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "validateHIVStatusObservationCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(hivStatusObservation, context) }),
              new Object [] { hivStatusObservation }));
       }
-       
       return false;
     }
     return true;
@@ -303,6 +284,9 @@ public class HIVStatusObservationOperations extends ClinicalStatementOperations
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
+   * (self.statusCode.oclIsUndefined() or self.statusCode.isNullFlavorUndefined()) implies (not self.statusCode.oclIsUndefined() and self.statusCode.oclIsKindOf(datatypes::CS) and 
+   * let value : datatypes::CS = self.statusCode.oclAsType(datatypes::CS) in 
+   * value.code = 'completed')
    * @param hivStatusObservation The receiving '<em><b>HIV Status Observation</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -312,8 +296,8 @@ public class HIVStatusObservationOperations extends ClinicalStatementOperations
   
   public static  boolean validateHIVStatusObservationStatusCode(HIVStatusObservation hivStatusObservation, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
-  	  
-    if (VALIDATE_HIV_STATUS_OBSERVATION_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+    if (VALIDATE_HIV_STATUS_OBSERVATION_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null)
+    {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(SalmonellosisPackage.Literals.HIV_STATUS_OBSERVATION);
       try
@@ -334,10 +318,9 @@ public class HIVStatusObservationOperations extends ClinicalStatementOperations
             (Diagnostic.ERROR,
              SalmonellosisValidator.DIAGNOSTIC_SOURCE,
              SalmonellosisValidator.HIV_STATUS_OBSERVATION__HIV_STATUS_OBSERVATION_STATUS_CODE,
-             SalmonellosisPlugin.INSTANCE.getString("HIVStatusObservationStatusCode"),
+             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "validateHIVStatusObservationStatusCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(hivStatusObservation, context) }),
              new Object [] { hivStatusObservation }));
       }
-       
       return false;
     }
     return true;
@@ -369,6 +352,7 @@ public class HIVStatusObservationOperations extends ClinicalStatementOperations
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
+   * (self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (self.value->size() = 1 and self.value->forAll(element | element.oclIsTypeOf(datatypes::CD)))
    * @param hivStatusObservation The receiving '<em><b>HIV Status Observation</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -378,8 +362,8 @@ public class HIVStatusObservationOperations extends ClinicalStatementOperations
   
   public static  boolean validateHIVStatusObservationValue(HIVStatusObservation hivStatusObservation, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
-  	  
-    if (VALIDATE_HIV_STATUS_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+    if (VALIDATE_HIV_STATUS_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null)
+    {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(SalmonellosisPackage.Literals.HIV_STATUS_OBSERVATION);
       try
@@ -400,10 +384,9 @@ public class HIVStatusObservationOperations extends ClinicalStatementOperations
             (Diagnostic.ERROR,
              SalmonellosisValidator.DIAGNOSTIC_SOURCE,
              SalmonellosisValidator.HIV_STATUS_OBSERVATION__HIV_STATUS_OBSERVATION_VALUE,
-             SalmonellosisPlugin.INSTANCE.getString("HIVStatusObservationValue"),
+             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "validateHIVStatusObservationValue", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(hivStatusObservation, context) }),
              new Object [] { hivStatusObservation }));
       }
-       
       return false;
     }
     return true;
@@ -435,6 +418,7 @@ public class HIVStatusObservationOperations extends ClinicalStatementOperations
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
+   * isDefined('classCode')
    * @param hivStatusObservation The receiving '<em><b>HIV Status Observation</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -444,8 +428,8 @@ public class HIVStatusObservationOperations extends ClinicalStatementOperations
   
   public static  boolean validateHIVStatusObservationClassCode(HIVStatusObservation hivStatusObservation, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
-  	  
-    if (VALIDATE_HIV_STATUS_OBSERVATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+    if (VALIDATE_HIV_STATUS_OBSERVATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null)
+    {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(SalmonellosisPackage.Literals.HIV_STATUS_OBSERVATION);
       try
@@ -466,10 +450,9 @@ public class HIVStatusObservationOperations extends ClinicalStatementOperations
             (Diagnostic.ERROR,
              SalmonellosisValidator.DIAGNOSTIC_SOURCE,
              SalmonellosisValidator.HIV_STATUS_OBSERVATION__HIV_STATUS_OBSERVATION_CLASS_CODE,
-             SalmonellosisPlugin.INSTANCE.getString("HIVStatusObservationClassCode"),
+             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "validateHIVStatusObservationClassCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(hivStatusObservation, context) }),
              new Object [] { hivStatusObservation }));
       }
-       
       return false;
     }
     return true;
@@ -501,6 +484,7 @@ public class HIVStatusObservationOperations extends ClinicalStatementOperations
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
+   * isDefined('moodCode')
    * @param hivStatusObservation The receiving '<em><b>HIV Status Observation</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -510,8 +494,8 @@ public class HIVStatusObservationOperations extends ClinicalStatementOperations
   
   public static  boolean validateHIVStatusObservationMoodCode(HIVStatusObservation hivStatusObservation, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
-  	  
-    if (VALIDATE_HIV_STATUS_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+    if (VALIDATE_HIV_STATUS_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null)
+    {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(SalmonellosisPackage.Literals.HIV_STATUS_OBSERVATION);
       try
@@ -532,10 +516,9 @@ public class HIVStatusObservationOperations extends ClinicalStatementOperations
             (Diagnostic.ERROR,
              SalmonellosisValidator.DIAGNOSTIC_SOURCE,
              SalmonellosisValidator.HIV_STATUS_OBSERVATION__HIV_STATUS_OBSERVATION_MOOD_CODE,
-             SalmonellosisPlugin.INSTANCE.getString("HIVStatusObservationMoodCode"),
+             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "validateHIVStatusObservationMoodCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(hivStatusObservation, context) }),
              new Object [] { hivStatusObservation }));
       }
-       
       return false;
     }
     return true;

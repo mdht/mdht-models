@@ -25,7 +25,6 @@ import org.openhealthtools.mdht.uml.cda.phcr.anthrax.AnthraxPhcrSocialHistorySec
 import org.openhealthtools.mdht.uml.cda.phcr.anthrax.AnthraxPhcrTreatmentInformationSection;
 import org.openhealthtools.mdht.uml.cda.phcr.anthrax.operations.AnthraxCaseReportOperations;
 import org.openhealthtools.mdht.uml.cda.phcr.impl.PublicHealthCaseReportImpl;
-import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
 
 /**
  * <!-- begin-user-doc -->
@@ -146,23 +145,4 @@ public class AnthraxCaseReportImpl extends PublicHealthCaseReportImpl implements
 	public boolean validatePublicHealthCaseReportTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
     return AnthraxCaseReportOperations.validatePublicHealthCaseReportTemplateId(this, diagnostics, context);
   }
-
-	/**
-   * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-   * @generated
-   */
-	public AnthraxCaseReport init() {
-      return Initializer.Util.init(this);
-  }
-
-  /**
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    public AnthraxCaseReport init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-        Initializer.Util.init(this, initializers);
-        return this;
-    }
 } //AnthraxCaseReportImpl

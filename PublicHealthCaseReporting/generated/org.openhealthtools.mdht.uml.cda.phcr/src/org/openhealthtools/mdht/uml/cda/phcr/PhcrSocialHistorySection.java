@@ -34,6 +34,7 @@ public interface PhcrSocialHistorySection extends SocialHistorySection {
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
+   * (self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined())
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
    * <!-- end-model-doc -->
@@ -46,6 +47,9 @@ public interface PhcrSocialHistorySection extends SocialHistorySection {
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
+   * (self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and 
+   * let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in 
+   * value.code = '29762-2' and value.codeSystem = '2.16.840.1.113883.6.1')
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
    * <!-- end-model-doc -->
@@ -58,6 +62,7 @@ public interface PhcrSocialHistorySection extends SocialHistorySection {
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
+   * (self.title.oclIsUndefined() or self.title.isNullFlavorUndefined()) implies (self.title.getText() = 'Social History')
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
    * <!-- end-model-doc -->
@@ -70,6 +75,7 @@ public interface PhcrSocialHistorySection extends SocialHistorySection {
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
+   * not self.text.oclIsUndefined()
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
    * <!-- end-model-doc -->
@@ -82,6 +88,7 @@ public interface PhcrSocialHistorySection extends SocialHistorySection {
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
+   * self.entry->exists(entry : cda::Entry | not entry.observation.oclIsUndefined() and entry.observation.oclIsKindOf(phcr::GeotemporalHistoryObservation) and entry.typeCode = vocab::x_ActRelationshipEntry::DRIV)
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
    * <!-- end-model-doc -->
@@ -94,6 +101,7 @@ public interface PhcrSocialHistorySection extends SocialHistorySection {
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
+   * self.entry->one(entry : cda::Entry | not entry.observation.oclIsUndefined() and entry.observation.oclIsKindOf(phcr::MostRecentTimeArrivedInUSAObservation) and entry.typeCode = vocab::x_ActRelationshipEntry::DRIV)
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
    * <!-- end-model-doc -->
@@ -106,6 +114,7 @@ public interface PhcrSocialHistorySection extends SocialHistorySection {
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
+   * self.entry->exists(entry : cda::Entry | not entry.observation.oclIsUndefined() and entry.observation.oclIsKindOf(phcr::RaceObservation) and entry.typeCode = vocab::x_ActRelationshipEntry::DRIV)
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
    * <!-- end-model-doc -->
@@ -118,6 +127,7 @@ public interface PhcrSocialHistorySection extends SocialHistorySection {
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
+   * self.entry->exists(entry : cda::Entry | not entry.observation.oclIsUndefined() and entry.observation.oclIsKindOf(phcr::OccupationObservation) and entry.typeCode = vocab::x_ActRelationshipEntry::DRIV)
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
    * <!-- end-model-doc -->
@@ -130,6 +140,7 @@ public interface PhcrSocialHistorySection extends SocialHistorySection {
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
+   * self.entry->exists(entry : cda::Entry | not entry.observation.oclIsUndefined() and entry.observation.oclIsKindOf(phcr::PregnancyObservation) and entry.typeCode = vocab::x_ActRelationshipEntry::DRIV)
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
    * <!-- end-model-doc -->
@@ -141,6 +152,9 @@ public interface PhcrSocialHistorySection extends SocialHistorySection {
 	/**
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
+   * <!-- begin-model-doc -->
+   * self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(phcr::GeotemporalHistoryObservation)).oclAsType(phcr::GeotemporalHistoryObservation)
+   * <!-- end-model-doc -->
    * @model kind="operation" required="true" ordered="false"
    *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(phcr::GeotemporalHistoryObservation)).oclAsType(phcr::GeotemporalHistoryObservation)'"
    * @generated
@@ -150,6 +164,9 @@ public interface PhcrSocialHistorySection extends SocialHistorySection {
 	/**
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
+   * <!-- begin-model-doc -->
+   * self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(phcr::MostRecentTimeArrivedInUSAObservation))->asSequence()->any(true).oclAsType(phcr::MostRecentTimeArrivedInUSAObservation)
+   * <!-- end-model-doc -->
    * @model kind="operation" required="true" ordered="false"
    *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(phcr::MostRecentTimeArrivedInUSAObservation))->asSequence()->any(true).oclAsType(phcr::MostRecentTimeArrivedInUSAObservation)'"
    * @generated
@@ -159,6 +176,9 @@ public interface PhcrSocialHistorySection extends SocialHistorySection {
 	/**
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
+   * <!-- begin-model-doc -->
+   * self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(phcr::RaceObservation)).oclAsType(phcr::RaceObservation)
+   * <!-- end-model-doc -->
    * @model kind="operation" required="true" ordered="false"
    *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(phcr::RaceObservation)).oclAsType(phcr::RaceObservation)'"
    * @generated
@@ -168,6 +188,9 @@ public interface PhcrSocialHistorySection extends SocialHistorySection {
 	/**
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
+   * <!-- begin-model-doc -->
+   * self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(phcr::OccupationObservation)).oclAsType(phcr::OccupationObservation)
+   * <!-- end-model-doc -->
    * @model kind="operation" required="true" ordered="false"
    *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(phcr::OccupationObservation)).oclAsType(phcr::OccupationObservation)'"
    * @generated
@@ -177,24 +200,13 @@ public interface PhcrSocialHistorySection extends SocialHistorySection {
 	/**
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
+   * <!-- begin-model-doc -->
+   * self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(phcr::PregnancyObservation)).oclAsType(phcr::PregnancyObservation)
+   * <!-- end-model-doc -->
    * @model kind="operation" required="true" ordered="false"
    *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(phcr::PregnancyObservation)).oclAsType(phcr::PregnancyObservation)'"
    * @generated
    */
 	EList<PregnancyObservation> getPregnancyObservations();
-
-	/**
-   * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-   * @generated
-   */
-	public PhcrSocialHistorySection init();
-
-  /**
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    public PhcrSocialHistorySection init(Iterable<? extends Initializer<? extends EObject>> initializers);
 		
 } // PhcrSocialHistorySection

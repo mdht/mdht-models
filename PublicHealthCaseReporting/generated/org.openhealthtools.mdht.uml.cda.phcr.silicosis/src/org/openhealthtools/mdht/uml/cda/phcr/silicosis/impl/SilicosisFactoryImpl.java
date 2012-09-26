@@ -28,182 +28,178 @@ import org.openhealthtools.mdht.uml.cda.phcr.silicosis.*;
  */
 public class SilicosisFactoryImpl extends EFactoryImpl implements SilicosisFactory {
 	/**
-   * Creates the default factory implementation.
-   * <!-- begin-user-doc -->
+	 * Creates the default factory implementation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public static SilicosisFactory init() {
-    try
-    {
-      SilicosisFactory theSilicosisFactory = (SilicosisFactory)EPackage.Registry.INSTANCE.getEFactory("http://www.openhealthtools.org/mdht/uml/cda/phcr/silicosis"); 
-      if (theSilicosisFactory != null)
-      {
-        return theSilicosisFactory;
-      }
-    }
-    catch (Exception exception)
-    {
-      EcorePlugin.INSTANCE.log(exception);
-    }
-    return new SilicosisFactoryImpl();
-  }
+		try {
+			SilicosisFactory theSilicosisFactory = (SilicosisFactory)EPackage.Registry.INSTANCE.getEFactory("http://www.openhealthtools.org/mdht/uml/cda/phcr/silicosis"); 
+			if (theSilicosisFactory != null) {
+				return theSilicosisFactory;
+			}
+		}
+		catch (Exception exception) {
+			EcorePlugin.INSTANCE.log(exception);
+		}
+		return new SilicosisFactoryImpl();
+	}
 
 	/**
-   * Creates an instance of the factory.
-   * <!-- begin-user-doc -->
+	 * Creates an instance of the factory.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public SilicosisFactoryImpl() {
-    super();
-  }
+		super();
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	@Override
 	public EObject create(EClass eClass) {
-    switch (eClass.getClassifierID())
-    {
-      case SilicosisPackage.SILICOSIS_CASE_REPORT: return createSilicosisCaseReport();
-      case SilicosisPackage.SILICOSIS_PHCR_SOCIAL_HISTORY_SECTION: return createSilicosisPHCRSocialHistorySection();
-      case SilicosisPackage.SILICOSIS_SOCIO_BEHAVIORAL_BOOLEAN_RISK_FACTOR_OBSERVATION: return createSilicosisSocioBehavioralBooleanRiskFactorObservation();
-      case SilicosisPackage.SILICOSIS_POSSIBLE_EXPOSURE_LOCATION_AND_TYPE_ACT: return createSilicosisPossibleExposureLocationAndTypeAct();
-      case SilicosisPackage.SILICOSIS_PHCR_CLINICAL_INFORMATION_SECTION: return createSilicosisPHCRClinicalInformationSection();
-      case SilicosisPackage.SILICOSIS_CASE_OBSERVATION: return createSilicosisCaseObservation();
-      case SilicosisPackage.SILICOSIS_SIGNS_AND_SYMPTOMS_OBSERVATION: return createSilicosisSignsAndSymptomsObservation();
-      case SilicosisPackage.SILICOSIS_HISTORY_OF_TUBERCULOSIS_OBSERVATION: return createSilicosisHistoryOfTuberculosisObservation();
-      case SilicosisPackage.SILICOSIS_PHCR_RELEVANT_DX_TESTS_SECTION: return createSilicosisPHCRRelevantDxTestsSection();
-      case SilicosisPackage.SILICOSIS_IMAGING_OBSERVATION: return createSilicosisImagingObservation();
-      default:
-        throw new IllegalArgumentException("The class '" + eClass.getName() + "' is not a valid classifier");
-    }
-  }
+		switch (eClass.getClassifierID()) {
+			case SilicosisPackage.SILICOSIS_CASE_REPORT: return createSilicosisCaseReport();
+			case SilicosisPackage.SILICOSIS_PHCR_SOCIAL_HISTORY_SECTION: return createSilicosisPHCRSocialHistorySection();
+			case SilicosisPackage.SILICOSIS_SOCIO_BEHAVIORAL_BOOLEAN_RISK_FACTOR_OBSERVATION: return createSilicosisSocioBehavioralBooleanRiskFactorObservation();
+			case SilicosisPackage.SILICOSIS_POSSIBLE_EXPOSURE_LOCATION_AND_TYPE_ACT: return createSilicosisPossibleExposureLocationAndTypeAct();
+			case SilicosisPackage.SILICOSIS_PHCR_CLINICAL_INFORMATION_SECTION: return createSilicosisPHCRClinicalInformationSection();
+			case SilicosisPackage.SILICOSIS_CASE_OBSERVATION: return createSilicosisCaseObservation();
+			case SilicosisPackage.SILICOSIS_SIGNS_AND_SYMPTOMS_OBSERVATION: return createSilicosisSignsAndSymptomsObservation();
+			case SilicosisPackage.SILICOSIS_HISTORY_OF_TUBERCULOSIS_OBSERVATION: return createSilicosisHistoryOfTuberculosisObservation();
+			case SilicosisPackage.SILICOSIS_PHCR_RELEVANT_DX_TESTS_SECTION: return createSilicosisPHCRRelevantDxTestsSection();
+			case SilicosisPackage.SILICOSIS_IMAGING_OBSERVATION: return createSilicosisImagingObservation();
+			default:
+				throw new IllegalArgumentException("The class '" + eClass.getName() + "' is not a valid classifier");
+		}
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public SilicosisCaseReport createSilicosisCaseReport() {
-    SilicosisCaseReportImpl silicosisCaseReport = new SilicosisCaseReportImpl();
-    return silicosisCaseReport;
-  }
+		SilicosisCaseReportImpl silicosisCaseReport = new SilicosisCaseReportImpl();
+		return silicosisCaseReport;
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public SilicosisPHCRSocialHistorySection createSilicosisPHCRSocialHistorySection() {
-    SilicosisPHCRSocialHistorySectionImpl silicosisPHCRSocialHistorySection = new SilicosisPHCRSocialHistorySectionImpl();
-    return silicosisPHCRSocialHistorySection;
-  }
+		SilicosisPHCRSocialHistorySectionImpl silicosisPHCRSocialHistorySection = new SilicosisPHCRSocialHistorySectionImpl();
+		return silicosisPHCRSocialHistorySection;
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public SilicosisSocioBehavioralBooleanRiskFactorObservation createSilicosisSocioBehavioralBooleanRiskFactorObservation() {
-    SilicosisSocioBehavioralBooleanRiskFactorObservationImpl silicosisSocioBehavioralBooleanRiskFactorObservation = new SilicosisSocioBehavioralBooleanRiskFactorObservationImpl();
-    return silicosisSocioBehavioralBooleanRiskFactorObservation;
-  }
+		SilicosisSocioBehavioralBooleanRiskFactorObservationImpl silicosisSocioBehavioralBooleanRiskFactorObservation = new SilicosisSocioBehavioralBooleanRiskFactorObservationImpl();
+		return silicosisSocioBehavioralBooleanRiskFactorObservation;
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public SilicosisPHCRClinicalInformationSection createSilicosisPHCRClinicalInformationSection() {
-    SilicosisPHCRClinicalInformationSectionImpl silicosisPHCRClinicalInformationSection = new SilicosisPHCRClinicalInformationSectionImpl();
-    return silicosisPHCRClinicalInformationSection;
-  }
+		SilicosisPHCRClinicalInformationSectionImpl silicosisPHCRClinicalInformationSection = new SilicosisPHCRClinicalInformationSectionImpl();
+		return silicosisPHCRClinicalInformationSection;
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public SilicosisCaseObservation createSilicosisCaseObservation() {
-    SilicosisCaseObservationImpl silicosisCaseObservation = new SilicosisCaseObservationImpl();
-    return silicosisCaseObservation;
-  }
+		SilicosisCaseObservationImpl silicosisCaseObservation = new SilicosisCaseObservationImpl();
+		return silicosisCaseObservation;
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public SilicosisSignsAndSymptomsObservation createSilicosisSignsAndSymptomsObservation() {
-    SilicosisSignsAndSymptomsObservationImpl silicosisSignsAndSymptomsObservation = new SilicosisSignsAndSymptomsObservationImpl();
-    return silicosisSignsAndSymptomsObservation;
-  }
+		SilicosisSignsAndSymptomsObservationImpl silicosisSignsAndSymptomsObservation = new SilicosisSignsAndSymptomsObservationImpl();
+		return silicosisSignsAndSymptomsObservation;
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   public SilicosisHistoryOfTuberculosisObservation createSilicosisHistoryOfTuberculosisObservation()
   {
-    SilicosisHistoryOfTuberculosisObservationImpl silicosisHistoryOfTuberculosisObservation = new SilicosisHistoryOfTuberculosisObservationImpl();
-    return silicosisHistoryOfTuberculosisObservation;
-  }
+		SilicosisHistoryOfTuberculosisObservationImpl silicosisHistoryOfTuberculosisObservation = new SilicosisHistoryOfTuberculosisObservationImpl();
+		return silicosisHistoryOfTuberculosisObservation;
+	}
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   public SilicosisPHCRRelevantDxTestsSection createSilicosisPHCRRelevantDxTestsSection()
   {
-    SilicosisPHCRRelevantDxTestsSectionImpl silicosisPHCRRelevantDxTestsSection = new SilicosisPHCRRelevantDxTestsSectionImpl();
-    return silicosisPHCRRelevantDxTestsSection;
-  }
+		SilicosisPHCRRelevantDxTestsSectionImpl silicosisPHCRRelevantDxTestsSection = new SilicosisPHCRRelevantDxTestsSectionImpl();
+		return silicosisPHCRRelevantDxTestsSection;
+	}
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   public SilicosisImagingObservation createSilicosisImagingObservation()
   {
-    SilicosisImagingObservationImpl silicosisImagingObservation = new SilicosisImagingObservationImpl();
-    return silicosisImagingObservation;
-  }
+		SilicosisImagingObservationImpl silicosisImagingObservation = new SilicosisImagingObservationImpl();
+		return silicosisImagingObservation;
+	}
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public SilicosisPossibleExposureLocationAndTypeAct createSilicosisPossibleExposureLocationAndTypeAct() {
-    SilicosisPossibleExposureLocationAndTypeActImpl silicosisPossibleExposureLocationAndTypeAct = new SilicosisPossibleExposureLocationAndTypeActImpl();
-    return silicosisPossibleExposureLocationAndTypeAct;
-  }
+		SilicosisPossibleExposureLocationAndTypeActImpl silicosisPossibleExposureLocationAndTypeAct = new SilicosisPossibleExposureLocationAndTypeActImpl();
+		return silicosisPossibleExposureLocationAndTypeAct;
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public SilicosisPackage getSilicosisPackage() {
-    return (SilicosisPackage)getEPackage();
-  }
+		return (SilicosisPackage)getEPackage();
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @deprecated
-   * @generated
-   */
+	 * @deprecated
+	 * @generated
+	 */
 	@Deprecated
 	public static SilicosisPackage getPackage() {
-    return SilicosisPackage.eINSTANCE;
-  }
+		return SilicosisPackage.eINSTANCE;
+	}
 
 } //SilicosisFactoryImpl

@@ -68,10 +68,6 @@
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="silicosis.ecore#//SilicosisPHCRSocialHistorySection/getSilicosisPossibleExposureLocationAndTypeActs"/>
     </genClasses>
     <genClasses xsi:type="genmodel:GenClass" ecoreClass="silicosis.ecore#//SilicosisSocioBehavioralBooleanRiskFactorObservation">
-      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="silicosis.ecore#//SilicosisSocioBehavioralBooleanRiskFactorObservation/SilicosisSocioBehavioralBooleanRiskFactorObservationCodeP">
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="silicosis.ecore#//SilicosisSocioBehavioralBooleanRiskFactorObservation/SilicosisSocioBehavioralBooleanRiskFactorObservationCodeP/diagnostics"/>
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="silicosis.ecore#//SilicosisSocioBehavioralBooleanRiskFactorObservation/SilicosisSocioBehavioralBooleanRiskFactorObservationCodeP/context"/>
-      </genOperations>
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="silicosis.ecore#//SilicosisSocioBehavioralBooleanRiskFactorObservation/SilicosisSocioBehavioralBooleanRiskFactorObservationCode">
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="silicosis.ecore#//SilicosisSocioBehavioralBooleanRiskFactorObservation/SilicosisSocioBehavioralBooleanRiskFactorObservationCode/diagnostics"/>
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="silicosis.ecore#//SilicosisSocioBehavioralBooleanRiskFactorObservation/SilicosisSocioBehavioralBooleanRiskFactorObservationCode/context"/>
@@ -124,22 +120,13 @@
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="silicosis.ecore#//SilicosisPHCRClinicalInformationSection/getSilicosisHistoryOfTuberculosisObservation"/>
     </genClasses>
     <genClasses xsi:type="genmodel:GenClass" ecoreClass="silicosis.ecore#//SilicosisCaseObservation">
-      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="silicosis.ecore#//SilicosisCaseObservation/SilicosisCaseObservationValue">
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="silicosis.ecore#//SilicosisCaseObservation/SilicosisCaseObservationValue/diagnostics"/>
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="silicosis.ecore#//SilicosisCaseObservation/SilicosisCaseObservationValue/context"/>
-      </genOperations>
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="silicosis.ecore#//SilicosisCaseObservation/SilicosisCaseObservationSilicosisSignsAndSymptomsObservation">
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="silicosis.ecore#//SilicosisCaseObservation/SilicosisCaseObservationSilicosisSignsAndSymptomsObservation/diagnostics"/>
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="silicosis.ecore#//SilicosisCaseObservation/SilicosisCaseObservationSilicosisSignsAndSymptomsObservation/context"/>
       </genOperations>
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="silicosis.ecore#//SilicosisCaseObservation/getSilicosisSignsAndSymptomsObservations"/>
     </genClasses>
-    <genClasses xsi:type="genmodel:GenClass" ecoreClass="silicosis.ecore#//SilicosisSignsAndSymptomsObservation">
-      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="silicosis.ecore#//SilicosisSignsAndSymptomsObservation/SilicosisSignsAndSymptomsObservationValue">
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="silicosis.ecore#//SilicosisSignsAndSymptomsObservation/SilicosisSignsAndSymptomsObservationValue/diagnostics"/>
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="silicosis.ecore#//SilicosisSignsAndSymptomsObservation/SilicosisSignsAndSymptomsObservationValue/context"/>
-      </genOperations>
-    </genClasses>
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="silicosis.ecore#//SilicosisSignsAndSymptomsObservation"/>
     <genClasses xsi:type="genmodel:GenClass" ecoreClass="silicosis.ecore#//SilicosisHistoryOfTuberculosisObservation">
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="silicosis.ecore#//SilicosisHistoryOfTuberculosisObservation/SilicosisHistoryOfTuberculosisObservationClassCode">
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="silicosis.ecore#//SilicosisHistoryOfTuberculosisObservation/SilicosisHistoryOfTuberculosisObservationClassCode/diagnostics"/>
@@ -149,10 +136,6 @@
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="silicosis.ecore#//SilicosisHistoryOfTuberculosisObservation/SilicosisHistoryOfTuberculosisObservationValue/diagnostics"/>
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="silicosis.ecore#//SilicosisHistoryOfTuberculosisObservation/SilicosisHistoryOfTuberculosisObservationValue/context"/>
       </genOperations>
-      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="silicosis.ecore#//SilicosisHistoryOfTuberculosisObservation/SilicosisHistoryOfTuberculosisObservationValueP">
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="silicosis.ecore#//SilicosisHistoryOfTuberculosisObservation/SilicosisHistoryOfTuberculosisObservationValueP/diagnostics"/>
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="silicosis.ecore#//SilicosisHistoryOfTuberculosisObservation/SilicosisHistoryOfTuberculosisObservationValueP/context"/>
-      </genOperations>
     </genClasses>
     <genClasses xsi:type="genmodel:GenClass" ecoreClass="silicosis.ecore#//SilicosisPHCRRelevantDxTestsSection">
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="silicosis.ecore#//SilicosisPHCRRelevantDxTestsSection/SilicosisPHCRRelevantDxTestsSectionSilicosisImagingObservation">
@@ -161,11 +144,6 @@
       </genOperations>
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="silicosis.ecore#//SilicosisPHCRRelevantDxTestsSection/getSilicosisImagingObservations"/>
     </genClasses>
-    <genClasses xsi:type="genmodel:GenClass" ecoreClass="silicosis.ecore#//SilicosisImagingObservation">
-      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="silicosis.ecore#//SilicosisImagingObservation/SilicosisImagingObservationValue">
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="silicosis.ecore#//SilicosisImagingObservation/SilicosisImagingObservationValue/diagnostics"/>
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="silicosis.ecore#//SilicosisImagingObservation/SilicosisImagingObservationValue/context"/>
-      </genOperations>
-    </genClasses>
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="silicosis.ecore#//SilicosisImagingObservation"/>
   </genPackages>
 </genmodel:GenModel>

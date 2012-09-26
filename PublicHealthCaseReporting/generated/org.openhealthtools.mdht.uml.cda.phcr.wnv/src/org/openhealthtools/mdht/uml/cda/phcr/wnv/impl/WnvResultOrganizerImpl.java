@@ -28,8 +28,6 @@ import org.openhealthtools.mdht.uml.cda.phcr.wnv.WnvResultOrganizer;
 
 import org.openhealthtools.mdht.uml.cda.phcr.wnv.operations.WnvResultOrganizerOperations;
 
-import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
-
 /**
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Result Organizer</b></em>'.
@@ -106,23 +104,4 @@ public class WnvResultOrganizerImpl extends ResultOrganizerImpl implements WnvRe
 	public boolean validateResultOrganizerTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
     return WnvResultOrganizerOperations.validateResultOrganizerTemplateId(this, diagnostics, context);
   }
-
-	/**
-   * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-   * @generated
-   */
-	public WnvResultOrganizer init() {
-      return Initializer.Util.init(this);
-  }
-
-  /**
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    public WnvResultOrganizer init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-        Initializer.Util.init(this, initializers);
-        return this;
-    }
 } //WnvResultOrganizerImpl

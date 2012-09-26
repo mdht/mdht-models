@@ -24,7 +24,6 @@ import org.openhealthtools.mdht.uml.cda.phcr.wnv.WnvPhcrRelevantDxTestsSection;
 import org.openhealthtools.mdht.uml.cda.phcr.wnv.WnvResultObservation;
 import org.openhealthtools.mdht.uml.cda.phcr.wnv.WnvResultOrganizer;
 import org.openhealthtools.mdht.uml.cda.phcr.wnv.operations.WnvPhcrRelevantDxTestsSectionOperations;
-import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
 
 /**
  * <!-- begin-user-doc -->
@@ -103,23 +102,4 @@ public class WnvPhcrRelevantDxTestsSectionImpl extends PhcrRelevantDxTestsSectio
 	public boolean validateResultsSectionTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
     return WnvPhcrRelevantDxTestsSectionOperations.validateResultsSectionTemplateId(this, diagnostics, context);
   }
-
-		/**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public WnvPhcrRelevantDxTestsSection init() {
-      return Initializer.Util.init(this);
-  }
-
-    /**
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    public WnvPhcrRelevantDxTestsSection init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-        Initializer.Util.init(this, initializers);
-        return this;
-    }
 } //WnvPhcrRelevantDxTestsSectionImpl

@@ -34,6 +34,7 @@ public interface PublicHealthCaseReport extends ClinicalDocument {
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
+   * self.recordTarget->one(recordTarget : cda::RecordTarget | not recordTarget.oclIsUndefined())
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
    * <!-- end-model-doc -->
@@ -46,6 +47,7 @@ public interface PublicHealthCaseReport extends ClinicalDocument {
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
+   * self.recordTarget.patientRole->one(patientRole : cda::PatientRole | not patientRole.oclIsUndefined())
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
    * <!-- end-model-doc -->
@@ -58,6 +60,7 @@ public interface PublicHealthCaseReport extends ClinicalDocument {
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
+   * self.recordTarget.patientRole.id->exists(id : datatypes::II | not id.root.oclIsUndefined() or not id.extension.oclIsUndefined() or not id.nullFlavor.oclIsUndefined())
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
    * <!-- end-model-doc -->
@@ -70,6 +73,7 @@ public interface PublicHealthCaseReport extends ClinicalDocument {
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
+   * self.author->exists(author : cda::Author | not author.oclIsUndefined())
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
    * <!-- end-model-doc -->
@@ -82,6 +86,7 @@ public interface PublicHealthCaseReport extends ClinicalDocument {
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
+   * self.author.time->one(time : datatypes::TS | not time.value.oclIsUndefined() or not time.nullFlavor.oclIsUndefined())
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
    * <!-- end-model-doc -->
@@ -94,6 +99,7 @@ public interface PublicHealthCaseReport extends ClinicalDocument {
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
+   * self.author.assignedAuthor->one(assignedAuthor : cda::AssignedAuthor | not assignedAuthor.oclIsUndefined())
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
    * <!-- end-model-doc -->
@@ -106,6 +112,7 @@ public interface PublicHealthCaseReport extends ClinicalDocument {
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
+   * self.author.assignedAuthor.id->exists(id : datatypes::II | not id.root.oclIsUndefined() or not id.extension.oclIsUndefined() or not id.nullFlavor.oclIsUndefined())
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
    * <!-- end-model-doc -->
@@ -118,6 +125,7 @@ public interface PublicHealthCaseReport extends ClinicalDocument {
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
+   * self.author.assignedAuthor.addr->one(addr : datatypes::AD | not addr.oclIsUndefined())
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
    * <!-- end-model-doc -->
@@ -130,6 +138,7 @@ public interface PublicHealthCaseReport extends ClinicalDocument {
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
+   * self.author.assignedAuthor.telecom->one(tel : datatypes::TEL | not tel.oclIsUndefined())
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
    * <!-- end-model-doc -->
@@ -142,6 +151,7 @@ public interface PublicHealthCaseReport extends ClinicalDocument {
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
+   * self.author.assignedAuthor.assignedPerson->one(assignedPerson : cda::Person | not assignedPerson.oclIsUndefined()) and self.author.assignedAuthor.assignedPerson.name->one(name : datatypes::PN | not name.oclIsUndefined())
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
    * <!-- end-model-doc -->
@@ -154,6 +164,7 @@ public interface PublicHealthCaseReport extends ClinicalDocument {
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
+   * self.legalAuthenticator->one(legalAuthenticator : cda::LegalAuthenticator | not legalAuthenticator.oclIsUndefined())
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
    * <!-- end-model-doc -->
@@ -166,6 +177,7 @@ public interface PublicHealthCaseReport extends ClinicalDocument {
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
+   * self.legalAuthenticator.time->one(time : datatypes::TS | not time.value.oclIsUndefined() or not time.nullFlavor.oclIsUndefined())
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
    * <!-- end-model-doc -->
@@ -178,6 +190,7 @@ public interface PublicHealthCaseReport extends ClinicalDocument {
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
+   * self.legalAuthenticator.assignedEntity->one(assignedEntity : cda::AssignedEntity | not assignedEntity.oclIsUndefined())
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
    * <!-- end-model-doc -->
@@ -190,6 +203,7 @@ public interface PublicHealthCaseReport extends ClinicalDocument {
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
+   * self.legalAuthenticator.assignedEntity.id->exists(id : datatypes::II | not id.root.oclIsUndefined() or not id.extension.oclIsUndefined() or not id.nullFlavor.oclIsUndefined())
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
    * <!-- end-model-doc -->
@@ -202,6 +216,7 @@ public interface PublicHealthCaseReport extends ClinicalDocument {
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
+   * self.legalAuthenticator.assignedEntity.addr->one(addr : datatypes::AD | not addr.oclIsUndefined())
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
    * <!-- end-model-doc -->
@@ -214,6 +229,7 @@ public interface PublicHealthCaseReport extends ClinicalDocument {
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
+   * self.legalAuthenticator.assignedEntity.assignedPerson->one(assignedPerson : cda::Person | not assignedPerson.oclIsUndefined()) and self.legalAuthenticator.assignedEntity.assignedPerson.name->one(name : datatypes::PN | not name.oclIsUndefined())
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
    * <!-- end-model-doc -->
@@ -226,6 +242,7 @@ public interface PublicHealthCaseReport extends ClinicalDocument {
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
+   * self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.15')
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
    * <!-- end-model-doc -->
@@ -238,6 +255,7 @@ public interface PublicHealthCaseReport extends ClinicalDocument {
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
+   * (self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined())
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
    * <!-- end-model-doc -->
@@ -250,6 +268,9 @@ public interface PublicHealthCaseReport extends ClinicalDocument {
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
+   * (self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and 
+   * let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in 
+   * value.code = '55751-2' and value.codeSystem = '2.16.840.1.113883.6.1')
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
    * <!-- end-model-doc -->
@@ -262,6 +283,7 @@ public interface PublicHealthCaseReport extends ClinicalDocument {
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
+   * self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(phcr::PhcrSocialHistorySection))
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
    * <!-- end-model-doc -->
@@ -274,6 +296,7 @@ public interface PublicHealthCaseReport extends ClinicalDocument {
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
+   * self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(phcr::PhcrClinicalInformationSection))
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
    * <!-- end-model-doc -->
@@ -286,6 +309,7 @@ public interface PublicHealthCaseReport extends ClinicalDocument {
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
+   * self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(phcr::PhcrTreatmentInformationSection))
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
    * <!-- end-model-doc -->
@@ -298,6 +322,7 @@ public interface PublicHealthCaseReport extends ClinicalDocument {
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
+   * self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(phcr::PhcrEncountersSection))
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
    * <!-- end-model-doc -->
@@ -310,6 +335,7 @@ public interface PublicHealthCaseReport extends ClinicalDocument {
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
+   * self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(phcr::PhcrRelevantDxTestsSection))
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
    * <!-- end-model-doc -->
@@ -322,6 +348,7 @@ public interface PublicHealthCaseReport extends ClinicalDocument {
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
+   * self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(ccd::ImmunizationsSection))
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
    * <!-- end-model-doc -->
@@ -333,6 +360,9 @@ public interface PublicHealthCaseReport extends ClinicalDocument {
 	/**
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
+   * <!-- begin-model-doc -->
+   * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(phcr::PhcrSocialHistorySection))->asSequence()->any(true).oclAsType(phcr::PhcrSocialHistorySection)
+   * <!-- end-model-doc -->
    * @model kind="operation" required="true" ordered="false"
    *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(phcr::PhcrSocialHistorySection))->asSequence()->any(true).oclAsType(phcr::PhcrSocialHistorySection)'"
    * @generated
@@ -342,6 +372,9 @@ public interface PublicHealthCaseReport extends ClinicalDocument {
 	/**
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
+   * <!-- begin-model-doc -->
+   * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(phcr::PhcrClinicalInformationSection))->asSequence()->any(true).oclAsType(phcr::PhcrClinicalInformationSection)
+   * <!-- end-model-doc -->
    * @model kind="operation" required="true" ordered="false"
    *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(phcr::PhcrClinicalInformationSection))->asSequence()->any(true).oclAsType(phcr::PhcrClinicalInformationSection)'"
    * @generated
@@ -351,6 +384,9 @@ public interface PublicHealthCaseReport extends ClinicalDocument {
 	/**
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
+   * <!-- begin-model-doc -->
+   * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(phcr::PhcrTreatmentInformationSection))->asSequence()->any(true).oclAsType(phcr::PhcrTreatmentInformationSection)
+   * <!-- end-model-doc -->
    * @model kind="operation" required="true" ordered="false"
    *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(phcr::PhcrTreatmentInformationSection))->asSequence()->any(true).oclAsType(phcr::PhcrTreatmentInformationSection)'"
    * @generated
@@ -360,6 +396,9 @@ public interface PublicHealthCaseReport extends ClinicalDocument {
 	/**
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
+   * <!-- begin-model-doc -->
+   * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(phcr::PhcrEncountersSection))->asSequence()->any(true).oclAsType(phcr::PhcrEncountersSection)
+   * <!-- end-model-doc -->
    * @model kind="operation" required="true" ordered="false"
    *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(phcr::PhcrEncountersSection))->asSequence()->any(true).oclAsType(phcr::PhcrEncountersSection)'"
    * @generated
@@ -369,6 +408,9 @@ public interface PublicHealthCaseReport extends ClinicalDocument {
 	/**
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
+   * <!-- begin-model-doc -->
+   * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(phcr::PhcrRelevantDxTestsSection))->asSequence()->any(true).oclAsType(phcr::PhcrRelevantDxTestsSection)
+   * <!-- end-model-doc -->
    * @model kind="operation" required="true" ordered="false"
    *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(phcr::PhcrRelevantDxTestsSection))->asSequence()->any(true).oclAsType(phcr::PhcrRelevantDxTestsSection)'"
    * @generated
@@ -378,23 +420,12 @@ public interface PublicHealthCaseReport extends ClinicalDocument {
 	/**
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
+   * <!-- begin-model-doc -->
+   * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(ccd::ImmunizationsSection))->asSequence()->any(true).oclAsType(ccd::ImmunizationsSection)
+   * <!-- end-model-doc -->
    * @model kind="operation" required="true" ordered="false"
    *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(ccd::ImmunizationsSection))->asSequence()->any(true).oclAsType(ccd::ImmunizationsSection)'"
    * @generated
    */
 	ImmunizationsSection getImmunizationsSection();
-
-	/**
-   * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-   * @generated
-   */
-	public PublicHealthCaseReport init();
-
-  /**
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    public PublicHealthCaseReport init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // PublicHealthCaseReport

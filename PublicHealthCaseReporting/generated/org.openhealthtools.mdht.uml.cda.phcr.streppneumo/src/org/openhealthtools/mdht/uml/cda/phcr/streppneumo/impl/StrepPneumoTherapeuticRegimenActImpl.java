@@ -29,8 +29,6 @@ import org.openhealthtools.mdht.uml.cda.phcr.streppneumo.StrepPneumoTreatmentNot
 
 import org.openhealthtools.mdht.uml.cda.phcr.streppneumo.operations.StrepPneumoTherapeuticRegimenActOperations;
 
-import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
-
 /**
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Therapeutic Regimen Act</b></em>'.
@@ -42,85 +40,87 @@ import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
  */
 public class StrepPneumoTherapeuticRegimenActImpl extends TherapeuticRegimenActImpl implements StrepPneumoTherapeuticRegimenAct {
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	protected StrepPneumoTherapeuticRegimenActImpl() {
-    super();
-  }
+		super();
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	@Override
 	protected EClass eStaticClass() {
-    return StrepPneumoPackage.Literals.STREP_PNEUMO_THERAPEUTIC_REGIMEN_ACT;
-  }
+		return StrepPneumoPackage.Literals.STREP_PNEUMO_THERAPEUTIC_REGIMEN_ACT;
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public boolean validateStrepPneumoTherapeuticRegimenActStrepPneumoTreatmentGivenSubstanceAdministration(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return StrepPneumoTherapeuticRegimenActOperations.validateStrepPneumoTherapeuticRegimenActStrepPneumoTreatmentGivenSubstanceAdministration(this, diagnostics, context);
-  }
+		return StrepPneumoTherapeuticRegimenActOperations.validateStrepPneumoTherapeuticRegimenActStrepPneumoTreatmentGivenSubstanceAdministration(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public boolean validateStrepPneumoTherapeuticRegimenActStrepPneumoTreatmentNotGivenSubstanceAdministration(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return StrepPneumoTherapeuticRegimenActOperations.validateStrepPneumoTherapeuticRegimenActStrepPneumoTreatmentNotGivenSubstanceAdministration(this, diagnostics, context);
-  }
+		return StrepPneumoTherapeuticRegimenActOperations.validateStrepPneumoTherapeuticRegimenActStrepPneumoTreatmentNotGivenSubstanceAdministration(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public EList<StrepPneumoTreatmentGivenSubstanceAdministration> getStrepPneumoTreatmentGivenSubstanceAdministrations() {
-    return StrepPneumoTherapeuticRegimenActOperations.getStrepPneumoTreatmentGivenSubstanceAdministrations(this);
-  }
+		return StrepPneumoTherapeuticRegimenActOperations.getStrepPneumoTreatmentGivenSubstanceAdministrations(this);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public EList<StrepPneumoTreatmentNotGivenSubstanceAdministration> getStrepPneumoTreatmentNotGivenSubstanceAdministrations() {
-    return StrepPneumoTherapeuticRegimenActOperations.getStrepPneumoTreatmentNotGivenSubstanceAdministrations(this);
-  }
+		return StrepPneumoTherapeuticRegimenActOperations.getStrepPneumoTreatmentNotGivenSubstanceAdministrations(this);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	@Override
 	public boolean validateTherapeuticRegimenActTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return StrepPneumoTherapeuticRegimenActOperations.validateTherapeuticRegimenActTemplateId(this, diagnostics, context);
-  }
+		return StrepPneumoTherapeuticRegimenActOperations.validateTherapeuticRegimenActTemplateId(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
+	@Override
 	public StrepPneumoTherapeuticRegimenAct init() {
-      return Initializer.Util.init(this);
-  }
+	    return Initializer.Util.init(this);
+	}
 
   /**
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
      * @generated
      */
-    public StrepPneumoTherapeuticRegimenAct init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+    @Override
+	public StrepPneumoTherapeuticRegimenAct init(Iterable<? extends Initializer<? extends EObject>> initializers) {
         Initializer.Util.init(this, initializers);
         return this;
     }

@@ -85,6 +85,7 @@ public class CoccidioidesPHCRClinicalInformationSectionOperations extends PhcrCl
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
+   * self.entry->one(entry : cda::Entry | not entry.observation.oclIsUndefined() and entry.observation.oclIsKindOf(cocci::CoccidioidesCaseObservation) and entry.typeCode = vocab::x_ActRelationshipEntry::DRIV)
    * @param coccidioidesPHCRClinicalInformationSection The receiving '<em><b>Coccidioides PHCR Clinical Information Section</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -93,8 +94,8 @@ public class CoccidioidesPHCRClinicalInformationSectionOperations extends PhcrCl
    */
 	
 	public static  boolean validateCoccidioidesPHCRClinicalInformationSectionCoccidioidesCaseObservation(CoccidioidesPHCRClinicalInformationSection coccidioidesPHCRClinicalInformationSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
-    if (VALIDATE_COCCIDIOIDES_PHCR_CLINICAL_INFORMATION_SECTION_COCCIDIOIDES_CASE_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+    if (VALIDATE_COCCIDIOIDES_PHCR_CLINICAL_INFORMATION_SECTION_COCCIDIOIDES_CASE_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null)
+    {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(CocciPackage.Literals.COCCIDIOIDES_PHCR_CLINICAL_INFORMATION_SECTION);
       try
@@ -115,10 +116,9 @@ public class CoccidioidesPHCRClinicalInformationSectionOperations extends PhcrCl
             (Diagnostic.ERROR,
              CocciValidator.DIAGNOSTIC_SOURCE,
              CocciValidator.COCCIDIOIDES_PHCR_CLINICAL_INFORMATION_SECTION__COCCIDIOIDES_PHCR_CLINICAL_INFORMATION_SECTION_COCCIDIOIDES_CASE_OBSERVATION,
-             CocciPlugin.INSTANCE.getString("CoccidioidesPHCRClinicalInformationSectionCoccidioidesCaseObservation"),
+             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "validateCoccidioidesPHCRClinicalInformationSectionCoccidioidesCaseObservation", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(coccidioidesPHCRClinicalInformationSection, context) }),
              new Object [] { coccidioidesPHCRClinicalInformationSection }));
       }
-       
       return false;
     }
     return true;
@@ -150,6 +150,7 @@ public class CoccidioidesPHCRClinicalInformationSectionOperations extends PhcrCl
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
+   * self.entry->exists(entry : cda::Entry | not entry.observation.oclIsUndefined() and entry.observation.oclIsKindOf(cocci::CoccidioidesImmunosuppressedMedicalConditionHistoryObservation) and entry.typeCode = vocab::x_ActRelationshipEntry::DRIV)
    * @param coccidioidesPHCRClinicalInformationSection The receiving '<em><b>Coccidioides PHCR Clinical Information Section</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -158,8 +159,8 @@ public class CoccidioidesPHCRClinicalInformationSectionOperations extends PhcrCl
    */
 	
 	public static  boolean validateCoccidioidesPHCRClinicalInformationSectionCoccidioidesImmunosuppressedMedicalConditionHistoryObservation(CoccidioidesPHCRClinicalInformationSection coccidioidesPHCRClinicalInformationSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
-    if (VALIDATE_COCCIDIOIDES_PHCR_CLINICAL_INFORMATION_SECTION_COCCIDIOIDES_IMMUNOSUPPRESSED_MEDICAL_CONDITION_HISTORY_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+    if (VALIDATE_COCCIDIOIDES_PHCR_CLINICAL_INFORMATION_SECTION_COCCIDIOIDES_IMMUNOSUPPRESSED_MEDICAL_CONDITION_HISTORY_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null)
+    {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(CocciPackage.Literals.COCCIDIOIDES_PHCR_CLINICAL_INFORMATION_SECTION);
       try
@@ -177,13 +178,12 @@ public class CoccidioidesPHCRClinicalInformationSectionOperations extends PhcrCl
       {
         diagnostics.add
           (new BasicDiagnostic
-            (Diagnostic.INFO,
+            (Diagnostic.ERROR,
              CocciValidator.DIAGNOSTIC_SOURCE,
              CocciValidator.COCCIDIOIDES_PHCR_CLINICAL_INFORMATION_SECTION__COCCIDIOIDES_PHCR_CLINICAL_INFORMATION_SECTION_COCCIDIOIDES_IMMUNOSUPPRESSED_MEDICAL_CONDITION_HISTORY_OBSERVATION,
-             CocciPlugin.INSTANCE.getString("CoccidioidesPHCRClinicalInformationSectionCoccidioidesImmunosuppressedMedicalConditionHistoryObservation"),
+             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "validateCoccidioidesPHCRClinicalInformationSectionCoccidioidesImmunosuppressedMedicalConditionHistoryObservation", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(coccidioidesPHCRClinicalInformationSection, context) }),
              new Object [] { coccidioidesPHCRClinicalInformationSection }));
       }
-       
       return false;
     }
     return true;
@@ -212,6 +212,10 @@ public class CoccidioidesPHCRClinicalInformationSectionOperations extends PhcrCl
 	/**
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
+   * <!-- begin-model-doc -->
+   * self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(cocci::CoccidioidesCaseObservation))->asSequence()->any(true).oclAsType(cocci::CoccidioidesCaseObservation)
+   * @param coccidioidesPHCRClinicalInformationSection The receiving '<em><b>Coccidioides PHCR Clinical Information Section</b></em>' model object.
+   * <!-- end-model-doc -->
    * @generated
    */
 	
@@ -257,6 +261,10 @@ public class CoccidioidesPHCRClinicalInformationSectionOperations extends PhcrCl
 	/**
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
+   * <!-- begin-model-doc -->
+   * self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(cocci::CoccidioidesImmunosuppressedMedicalConditionHistoryObservation)).oclAsType(cocci::CoccidioidesImmunosuppressedMedicalConditionHistoryObservation)
+   * @param coccidioidesPHCRClinicalInformationSection The receiving '<em><b>Coccidioides PHCR Clinical Information Section</b></em>' model object.
+   * <!-- end-model-doc -->
    * @generated
    */
 	
@@ -306,6 +314,7 @@ public class CoccidioidesPHCRClinicalInformationSectionOperations extends PhcrCl
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
+   * self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.15.2.30')
    * @param coccidioidesPHCRClinicalInformationSection The receiving '<em><b>Coccidioides PHCR Clinical Information Section</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -314,8 +323,8 @@ public class CoccidioidesPHCRClinicalInformationSectionOperations extends PhcrCl
    */
 	
 	public static  boolean validatePhcrClinicalInformationSectionTemplateId(CoccidioidesPHCRClinicalInformationSection coccidioidesPHCRClinicalInformationSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
-    if (VALIDATE_PHCR_CLINICAL_INFORMATION_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+    if (VALIDATE_PHCR_CLINICAL_INFORMATION_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null)
+    {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(CocciPackage.Literals.COCCIDIOIDES_PHCR_CLINICAL_INFORMATION_SECTION);
       try
@@ -336,10 +345,9 @@ public class CoccidioidesPHCRClinicalInformationSectionOperations extends PhcrCl
             (Diagnostic.ERROR,
              CocciValidator.DIAGNOSTIC_SOURCE,
              CocciValidator.COCCIDIOIDES_PHCR_CLINICAL_INFORMATION_SECTION__PHCR_CLINICAL_INFORMATION_SECTION_TEMPLATE_ID,
-             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "PhcrClinicalInformationSectionTemplateId", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(coccidioidesPHCRClinicalInformationSection, context) }),
+             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "validatePhcrClinicalInformationSectionTemplateId", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(coccidioidesPHCRClinicalInformationSection, context) }),
              new Object [] { coccidioidesPHCRClinicalInformationSection }));
       }
-       
       return false;
     }
     return true;

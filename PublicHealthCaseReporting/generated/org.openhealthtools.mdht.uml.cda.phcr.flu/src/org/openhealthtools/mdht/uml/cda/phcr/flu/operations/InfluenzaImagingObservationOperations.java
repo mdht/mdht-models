@@ -38,6 +38,7 @@ import org.openhealthtools.mdht.uml.cda.phcr.operations.ImagingObservationOperat
  * <p>
  * The following operations are supported:
  * <ul>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.phcr.flu.InfluenzaImagingObservation#validateInfluenzaImagingObservationMethodCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Influenza Imaging Observation Method Code P</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.phcr.flu.InfluenzaImagingObservation#validateInfluenzaImagingObservationMethodCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Influenza Imaging Observation Method Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.phcr.flu.InfluenzaImagingObservation#validateProblemObservationTemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Problem Observation Template Id</em>}</li>
  * </ul>
@@ -56,6 +57,80 @@ public class InfluenzaImagingObservationOperations extends ImagingObservationOpe
 	}
 
 	/**
+	 * The cached OCL expression body for the '{@link #validateInfluenzaImagingObservationMethodCodeP(InfluenzaImagingObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Influenza Imaging Observation Method Code P</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateInfluenzaImagingObservationMethodCodeP(InfluenzaImagingObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String VALIDATE_INFLUENZA_IMAGING_OBSERVATION_METHOD_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.methodCode->isEmpty() or self.methodCode->exists(element | element.isNullFlavorUndefined())) implies (not self.methodCode->isEmpty())";
+
+	/**
+	 * The cached OCL invariant for the '{@link #validateInfluenzaImagingObservationMethodCodeP(InfluenzaImagingObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Influenza Imaging Observation Method Code P</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateInfluenzaImagingObservationMethodCodeP(InfluenzaImagingObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+	
+	protected static Constraint VALIDATE_INFLUENZA_IMAGING_OBSERVATION_METHOD_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * (self.methodCode->isEmpty() or self.methodCode->exists(element | element.isNullFlavorUndefined())) implies (not self.methodCode->isEmpty())
+	 * @param influenzaImagingObservation The receiving '<em><b>Influenza Imaging Observation</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
+	
+	public static  boolean validateInfluenzaImagingObservationMethodCodeP(InfluenzaImagingObservation influenzaImagingObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
+		if (VALIDATE_INFLUENZA_IMAGING_OBSERVATION_METHOD_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+			helper.setContext(fluPackage.Literals.INFLUENZA_IMAGING_OBSERVATION);
+			try {
+				VALIDATE_INFLUENZA_IMAGING_OBSERVATION_METHOD_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_INFLUENZA_IMAGING_OBSERVATION_METHOD_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+			}
+			catch (ParserException pe) {
+				throw new UnsupportedOperationException(pe.getLocalizedMessage());
+			}
+		}
+		if (!EOCL_ENV.createQuery(VALIDATE_INFLUENZA_IMAGING_OBSERVATION_METHOD_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(influenzaImagingObservation)) {
+			if (diagnostics != null) {
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.INFO,
+						 fluValidator.DIAGNOSTIC_SOURCE,
+						 fluValidator.INFLUENZA_IMAGING_OBSERVATION__INFLUENZA_IMAGING_OBSERVATION_METHOD_CODE_P,
+						 FluPlugin.INSTANCE.getString("InfluenzaImagingObservationMethodCodeP"),
+						 new Object [] { influenzaImagingObservation }));
+			}
+			
+			if (context != null) {
+				// generate a pass token for my dependent constraints to short-circuit or filter results
+				@SuppressWarnings("unchecked")
+				Collection<Object> passToken = (Collection<Object>) context.get("org.openhealthtools.mdht.uml.cda.phcr.flu.InfluenzaImagingObservationMethodCodeP");
+				if (passToken == null) {
+					// anticipate a reasonably healthy model
+					passToken = new java.util.ArrayList<Object>(3);
+					context.put("org.openhealthtools.mdht.uml.cda.phcr.flu.InfluenzaImagingObservationMethodCodeP", passToken);
+				}
+				passToken.add(influenzaImagingObservation);
+			}
+			 
+			return false;
+		}
+		return true;
+	}
+
+	/**
 	 * The cached OCL expression body for the '{@link #validateInfluenzaImagingObservationMethodCode(InfluenzaImagingObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Influenza Imaging Observation Method Code</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -65,7 +140,7 @@ public class InfluenzaImagingObservationOperations extends ImagingObservationOpe
 	 */
 	protected static final String VALIDATE_INFLUENZA_IMAGING_OBSERVATION_METHOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.methodCode->isEmpty() or self.methodCode->exists(element | element.isNullFlavorUndefined())) implies (self.methodCode->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CE) and "+
 "let value : datatypes::CE = element.oclAsType(datatypes::CE) in "+
-"not value.codeSystem.oclIsUndefined() or not value.codeSystemName.oclIsUndefined()))";
+"value.codeSystem = '2.16.840.1.113883.6.1' and (value.code = '24642-1' or value.code = '36687-2' or value.code = '30745-4' or value.code = '37439-7' or value.code = '37441-3' or value.code = '39341-3' or value.code = '42272-5')))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateInfluenzaImagingObservationMethodCode(InfluenzaImagingObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Influenza Imaging Observation Method Code</em>}' invariant operation.
@@ -85,7 +160,7 @@ public class InfluenzaImagingObservationOperations extends ImagingObservationOpe
 	 * <!-- begin-model-doc -->
 	 * (self.methodCode->isEmpty() or self.methodCode->exists(element | element.isNullFlavorUndefined())) implies (self.methodCode->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CE) and 
 	 * let value : datatypes::CE = element.oclAsType(datatypes::CE) in 
-	 * not value.codeSystem.oclIsUndefined() or not value.codeSystemName.oclIsUndefined()))
+	 * value.codeSystem = '2.16.840.1.113883.6.1' and (value.code = '24642-1' or value.code = '36687-2' or value.code = '30745-4' or value.code = '37439-7' or value.code = '37441-3' or value.code = '39341-3' or value.code = '42272-5')))
 	 * @param influenzaImagingObservation The receiving '<em><b>Influenza Imaging Observation</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -94,6 +169,12 @@ public class InfluenzaImagingObservationOperations extends ImagingObservationOpe
 	 */
 	
 	public static  boolean validateInfluenzaImagingObservationMethodCode(InfluenzaImagingObservation influenzaImagingObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
+		Object passToken = (context == null) ? null : context.get("org.openhealthtools.mdht.uml.cda.phcr.flu.InfluenzaImagingObservationMethodCodeP");
+		if ((passToken instanceof Collection<?>) && ((Collection<?>) passToken).contains(influenzaImagingObservation)) {
+			// I have a free pass to short-circuit
+			return true;
+		}
   	  
 		if (VALIDATE_INFLUENZA_IMAGING_OBSERVATION_METHOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
@@ -109,7 +190,7 @@ public class InfluenzaImagingObservationOperations extends ImagingObservationOpe
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
-						(Diagnostic.INFO,
+						(Diagnostic.ERROR,
 						 fluValidator.DIAGNOSTIC_SOURCE,
 						 fluValidator.INFLUENZA_IMAGING_OBSERVATION__INFLUENZA_IMAGING_OBSERVATION_METHOD_CODE,
 						 FluPlugin.INSTANCE.getString("InfluenzaImagingObservationMethodCode"),

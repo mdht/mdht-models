@@ -125,22 +125,4 @@ public class HIVStatusObservationImpl extends ObservationImpl implements HIVStat
   {
     return HIVStatusObservationOperations.validateHIVStatusObservationMoodCode(this, diagnostics, context);
   }
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public HIVStatusObservation init() {
-      return Initializer.Util.init(this);
-  }
-    /**
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    public HIVStatusObservation init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-        Initializer.Util.init(this, initializers);
-        return this;
-    }
 } //HIVStatusObservationImpl

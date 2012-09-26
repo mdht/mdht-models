@@ -3,11 +3,14 @@
     xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="flu"
     nsURI="http://www.openhealthtools.org/mdht/uml/cda/phcr/flu" nsPrefix="flu">
+  <eAnnotations source="http://www.openhealthtools.org/mdht/uml">
+    <details key="initializers" value="org.openhealthtools.mdht.uml.cda.phcr.flu"/>
+  </eAnnotations>
   <eClassifiers xsi:type="ecore:EClass" name="InfluenzaCaseReport" eSuperTypes="../../org.openhealthtools.mdht.uml.cda.phcr/model/phcr.ecore#//PublicHealthCaseReport">
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
-      <details key="title.mixed" value="Public Health Case Report - Influenza"/>
-      <details key="templateId.root" value="2.16.840.1.113883.10.20.15.1.11"/>
       <details key="constraints.validation.error" value="InfluenzaCaseReportTemplateId InfluenzaCaseReportTitle InfluenzaCaseReportInfluenzaPHCRClinicalInformationSection"/>
+      <details key="templateId.root" value="2.16.840.1.113883.10.20.15.1.11"/>
+      <details key="title.mixed" value="Public Health Case Report - Influenza"/>
       <details key="constraints.validation.warning" value="InfluenzaCaseReportInfluenzaImmunizationSection InfluenzaCaseReportInfluenzaPHCRTreatmentInformationSection InfluenzaCaseReportInfluenzaPHCRRelevantDiagnosticTestsAndOrLaboratoryDataSection InfluenzaCaseReportInfluenzaPHCRSocialHistorySection"/>
     </eAnnotations>
     <eAnnotations source="duplicates">
@@ -174,53 +177,53 @@
     <eOperations name="getInfluenzaImmunizationSection" ordered="false" lowerBound="1"
         eType="#//InfluenzaImmunizationSection">
       <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(flu::InfluenzaImmunizationSection))->asSequence()->first().oclAsType(flu::InfluenzaImmunizationSection)"/>
+        <details key="documentation" value="self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(flu::InfluenzaImmunizationSection))->asSequence()->any(true).oclAsType(flu::InfluenzaImmunizationSection)"/>
       </eAnnotations>
       <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
-        <details key="body" value="self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(flu::InfluenzaImmunizationSection))->asSequence()->first().oclAsType(flu::InfluenzaImmunizationSection)"/>
+        <details key="body" value="self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(flu::InfluenzaImmunizationSection))->asSequence()->any(true).oclAsType(flu::InfluenzaImmunizationSection)"/>
       </eAnnotations>
     </eOperations>
     <eOperations name="getInfluenzaPHCRClinicalInformationSection" ordered="false"
         lowerBound="1" eType="#//InfluenzaPHCRClinicalInformationSection">
       <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(flu::InfluenzaPHCRClinicalInformationSection))->asSequence()->first().oclAsType(flu::InfluenzaPHCRClinicalInformationSection)"/>
+        <details key="documentation" value="self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(flu::InfluenzaPHCRClinicalInformationSection))->asSequence()->any(true).oclAsType(flu::InfluenzaPHCRClinicalInformationSection)"/>
       </eAnnotations>
       <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
-        <details key="body" value="self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(flu::InfluenzaPHCRClinicalInformationSection))->asSequence()->first().oclAsType(flu::InfluenzaPHCRClinicalInformationSection)"/>
+        <details key="body" value="self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(flu::InfluenzaPHCRClinicalInformationSection))->asSequence()->any(true).oclAsType(flu::InfluenzaPHCRClinicalInformationSection)"/>
       </eAnnotations>
     </eOperations>
     <eOperations name="getInfluenzaPHCRTreatmentInformationSection" ordered="false"
         lowerBound="1" eType="#//InfluenzaPHCRTreatmentInformationSection">
       <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(flu::InfluenzaPHCRTreatmentInformationSection))->asSequence()->first().oclAsType(flu::InfluenzaPHCRTreatmentInformationSection)"/>
+        <details key="documentation" value="self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(flu::InfluenzaPHCRTreatmentInformationSection))->asSequence()->any(true).oclAsType(flu::InfluenzaPHCRTreatmentInformationSection)"/>
       </eAnnotations>
       <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
-        <details key="body" value="self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(flu::InfluenzaPHCRTreatmentInformationSection))->asSequence()->first().oclAsType(flu::InfluenzaPHCRTreatmentInformationSection)"/>
+        <details key="body" value="self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(flu::InfluenzaPHCRTreatmentInformationSection))->asSequence()->any(true).oclAsType(flu::InfluenzaPHCRTreatmentInformationSection)"/>
       </eAnnotations>
     </eOperations>
     <eOperations name="getInfluenzaPHCRRelevantDiagnosticTestsAndOrLaboratoryDataSection"
         ordered="false" lowerBound="1" eType="#//InfluenzaPHCRRelevantDiagnosticTestsAndOrLaboratoryDataSection">
       <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(flu::InfluenzaPHCRRelevantDiagnosticTestsAndOrLaboratoryDataSection))->asSequence()->first().oclAsType(flu::InfluenzaPHCRRelevantDiagnosticTestsAndOrLaboratoryDataSection)"/>
+        <details key="documentation" value="self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(flu::InfluenzaPHCRRelevantDiagnosticTestsAndOrLaboratoryDataSection))->asSequence()->any(true).oclAsType(flu::InfluenzaPHCRRelevantDiagnosticTestsAndOrLaboratoryDataSection)"/>
       </eAnnotations>
       <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
-        <details key="body" value="self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(flu::InfluenzaPHCRRelevantDiagnosticTestsAndOrLaboratoryDataSection))->asSequence()->first().oclAsType(flu::InfluenzaPHCRRelevantDiagnosticTestsAndOrLaboratoryDataSection)"/>
+        <details key="body" value="self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(flu::InfluenzaPHCRRelevantDiagnosticTestsAndOrLaboratoryDataSection))->asSequence()->any(true).oclAsType(flu::InfluenzaPHCRRelevantDiagnosticTestsAndOrLaboratoryDataSection)"/>
       </eAnnotations>
     </eOperations>
     <eOperations name="getInfluenzaPHCRSocialHistorySection" ordered="false" lowerBound="1"
         eType="#//InfluenzaPHCRSocialHistorySection">
       <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(flu::InfluenzaPHCRSocialHistorySection))->asSequence()->first().oclAsType(flu::InfluenzaPHCRSocialHistorySection)"/>
+        <details key="documentation" value="self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(flu::InfluenzaPHCRSocialHistorySection))->asSequence()->any(true).oclAsType(flu::InfluenzaPHCRSocialHistorySection)"/>
       </eAnnotations>
       <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
-        <details key="body" value="self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(flu::InfluenzaPHCRSocialHistorySection))->asSequence()->first().oclAsType(flu::InfluenzaPHCRSocialHistorySection)"/>
+        <details key="body" value="self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(flu::InfluenzaPHCRSocialHistorySection))->asSequence()->any(true).oclAsType(flu::InfluenzaPHCRSocialHistorySection)"/>
       </eAnnotations>
     </eOperations>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="InfluenzaImmunizationSection" eSuperTypes="platform:/plugin/org.openhealthtools.mdht.uml.cda.ccd/model/ccd.ecore#//ImmunizationsSection">
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
-      <details key="templateId.root" value="2.16.840.1.113883.10.20.15.2.47"/>
       <details key="constraints.validation.error" value="InfluenzaImmunizationSectionTemplateId InfluenzaImmunizationSectionInfluenzaImmunizationActivity"/>
+      <details key="templateId.root" value="2.16.840.1.113883.10.20.15.2.47"/>
     </eAnnotations>
     <eAnnotations source="duplicates">
       <contents xsi:type="ecore:EOperation" name="ImmunizationsSectionTemplateId"
@@ -283,8 +286,8 @@
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="InfluenzaImmunizationActivity" eSuperTypes="platform:/plugin/org.openhealthtools.mdht.uml.cda.ccd/model/ccd.ecore#//MedicationActivity">
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
-      <details key="templateId.root" value="2.16.840.1.113883.10.20.15.3.77"/>
       <details key="constraints.validation.error" value="InfluenzaImmunizationActivityTemplateId"/>
+      <details key="templateId.root" value="2.16.840.1.113883.10.20.15.3.77"/>
     </eAnnotations>
     <eAnnotations source="duplicates">
       <contents xsi:type="ecore:EOperation" name="MedicationActivityTemplateId" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
@@ -315,8 +318,8 @@
   <eClassifiers xsi:type="ecore:EClass" name="InfluenzaPHCRClinicalInformationSection"
       eSuperTypes="../../org.openhealthtools.mdht.uml.cda.phcr/model/phcr.ecore#//PhcrClinicalInformationSection">
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
-      <details key="templateId.root" value="2.16.840.1.113883.10.20.15.2.50"/>
       <details key="constraints.validation.error" value="InfluenzaPHCRClinicalInformationSectionTemplateId InfluenzaPHCRClinicalInformationSectionInfluenzaCaseObservation"/>
+      <details key="templateId.root" value="2.16.840.1.113883.10.20.15.2.50"/>
     </eAnnotations>
     <eAnnotations source="duplicates">
       <contents xsi:type="ecore:EOperation" name="PhcrClinicalInformationSectionTemplateId"
@@ -370,20 +373,20 @@
     <eOperations name="getInfluenzaCaseObservation" ordered="false" lowerBound="1"
         eType="#//InfluenzaCaseObservation">
       <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(flu::InfluenzaCaseObservation))->asSequence()->first().oclAsType(flu::InfluenzaCaseObservation)"/>
+        <details key="documentation" value="self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(flu::InfluenzaCaseObservation))->asSequence()->any(true).oclAsType(flu::InfluenzaCaseObservation)"/>
       </eAnnotations>
       <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
-        <details key="body" value="self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(flu::InfluenzaCaseObservation))->asSequence()->first().oclAsType(flu::InfluenzaCaseObservation)"/>
+        <details key="body" value="self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(flu::InfluenzaCaseObservation))->asSequence()->any(true).oclAsType(flu::InfluenzaCaseObservation)"/>
       </eAnnotations>
     </eOperations>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="InfluenzaCaseObservation" eSuperTypes="../../org.openhealthtools.mdht.uml.cda.phcr/model/phcr.ecore#//CaseObservation">
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
-      <details key="value.codeSystemName" value="SNOMEDCT"/>
+      <details key="constraints.validation.error" value="InfluenzaCaseObservationTemplateId InfluenzaCaseObservationValue"/>
       <details key="templateId.root" value="2.16.840.1.113883.10.20.15.3.78"/>
-      <details key="constraints.validation.error" value="InfluenzaCaseObservationTemplateId CaseObservationValue"/>
-      <details key="constraints.validation.warning" value="InfluenzaCaseObservationInfluenzaSignsAndSymptomsObservation"/>
       <details key="value.codeSystem" value="2.16.840.1.113883.6.96"/>
+      <details key="value.codeSystemName" value="SNOMEDCT"/>
+      <details key="constraints.validation.warning" value="InfluenzaCaseObservationInfluenzaSignsAndSymptomsObservation"/>
     </eAnnotations>
     <eAnnotations source="duplicates">
       <contents xsi:type="ecore:EOperation" name="ProblemObservationTemplateId" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
@@ -409,30 +412,29 @@
           </eGenericType>
         </eParameters>
       </contents>
-      <contents xsi:type="ecore:EOperation" name="CaseObservationValue" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
-        <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
-          <details key="body" value="(self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (self.value->size() = 1 and self.value->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and &#xD;&#xA;let value : datatypes::CD = element.oclAsType(datatypes::CD) in &#xD;&#xA;value.codeSystem = '2.16.840.1.113883.6.96' and not value.code.oclIsUndefined()))"/>
-        </eAnnotations>
-        <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-          <details key="documentation" value="(self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (self.value->size() = 1 and self.value->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and &#xD;&#xA;let value : datatypes::CD = element.oclAsType(datatypes::CD) in &#xD;&#xA;value.codeSystem = '2.16.840.1.113883.6.96' and not value.code.oclIsUndefined()))"/>
-        </eAnnotations>
-        <eAnnotations source="redefines" references="../../org.openhealthtools.mdht.uml.cda.phcr/model/phcr.ecore#//CaseObservation/CaseObservationValue"/>
-        <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain">
-          <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-            <details key="documentation" value="The chain of diagnostics to which problems are to be appended."/>
-          </eAnnotations>
-        </eParameters>
-        <eParameters name="context">
-          <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-            <details key="documentation" value="The cache of context-specific information."/>
-          </eAnnotations>
-          <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
-            <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
-            <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
-          </eGenericType>
-        </eParameters>
-      </contents>
     </eAnnotations>
+    <eOperations name="InfluenzaCaseObservationValue" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
+      <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
+        <details key="body" value="(self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (self.value->size() = 1 and self.value->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and &#xD;&#xA;let value : datatypes::CD = element.oclAsType(datatypes::CD) in &#xD;&#xA;value.codeSystem = '2.16.840.1.113883.6.96' and not value.code.oclIsUndefined()))"/>
+      </eAnnotations>
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="(self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (self.value->size() = 1 and self.value->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and &#xD;&#xA;let value : datatypes::CD = element.oclAsType(datatypes::CD) in &#xD;&#xA;value.codeSystem = '2.16.840.1.113883.6.96' and not value.code.oclIsUndefined()))"/>
+      </eAnnotations>
+      <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain">
+        <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+          <details key="documentation" value="The chain of diagnostics to which problems are to be appended."/>
+        </eAnnotations>
+      </eParameters>
+      <eParameters name="context">
+        <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+          <details key="documentation" value="The cache of context-specific information."/>
+        </eAnnotations>
+        <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+        </eGenericType>
+      </eParameters>
+    </eOperations>
     <eOperations name="InfluenzaCaseObservationInfluenzaSignsAndSymptomsObservation"
         eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
       <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
@@ -469,10 +471,10 @@
   <eClassifiers xsi:type="ecore:EClass" name="InfluenzaSignsAndSymptomsObservation"
       eSuperTypes="../../org.openhealthtools.mdht.uml.cda.phcr/model/phcr.ecore#//SignsAndSymptomsObservation">
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
-      <details key="value.codeSystemName" value="SNOMEDCT"/>
+      <details key="constraints.validation.error" value="InfluenzaSignsAndSymptomsObservationTemplateId InfluenzaSignsAndSymptomsObservationValue"/>
       <details key="templateId.root" value="2.16.840.1.113883.10.20.15.3.74"/>
-      <details key="constraints.validation.error" value="InfluenzaSignsAndSymptomsObservationTemplateId SignsAndSymptomsObservationValue"/>
       <details key="value.codeSystem" value="2.16.840.1.113883.6.96"/>
+      <details key="value.codeSystemName" value="SNOMEDCT"/>
     </eAnnotations>
     <eAnnotations source="duplicates">
       <contents xsi:type="ecore:EOperation" name="SignsAndSymptomsObservationTemplateId"
@@ -499,37 +501,35 @@
           </eGenericType>
         </eParameters>
       </contents>
-      <contents xsi:type="ecore:EOperation" name="SignsAndSymptomsObservationValue"
-          eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
-        <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
-          <details key="body" value="(self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (self.value->size() = 1 and self.value->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and &#xD;&#xA;let value : datatypes::CD = element.oclAsType(datatypes::CD) in &#xD;&#xA;value.codeSystem = '2.16.840.1.113883.6.96' and not value.code.oclIsUndefined()))"/>
-        </eAnnotations>
-        <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-          <details key="documentation" value="(self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (self.value->size() = 1 and self.value->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and &#xD;&#xA;let value : datatypes::CD = element.oclAsType(datatypes::CD) in &#xD;&#xA;value.codeSystem = '2.16.840.1.113883.6.96' and not value.code.oclIsUndefined()))"/>
-        </eAnnotations>
-        <eAnnotations source="redefines" references="../../org.openhealthtools.mdht.uml.cda.phcr/model/phcr.ecore#//SignsAndSymptomsObservation/SignsAndSymptomsObservationValue"/>
-        <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain">
-          <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-            <details key="documentation" value="The chain of diagnostics to which problems are to be appended."/>
-          </eAnnotations>
-        </eParameters>
-        <eParameters name="context">
-          <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-            <details key="documentation" value="The cache of context-specific information."/>
-          </eAnnotations>
-          <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
-            <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
-            <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
-          </eGenericType>
-        </eParameters>
-      </contents>
     </eAnnotations>
+    <eOperations name="InfluenzaSignsAndSymptomsObservationValue" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
+      <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
+        <details key="body" value="(self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (self.value->size() = 1 and self.value->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and &#xD;&#xA;let value : datatypes::CD = element.oclAsType(datatypes::CD) in &#xD;&#xA;value.codeSystem = '2.16.840.1.113883.6.96' and not value.code.oclIsUndefined()))"/>
+      </eAnnotations>
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="(self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (self.value->size() = 1 and self.value->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and &#xD;&#xA;let value : datatypes::CD = element.oclAsType(datatypes::CD) in &#xD;&#xA;value.codeSystem = '2.16.840.1.113883.6.96' and not value.code.oclIsUndefined()))"/>
+      </eAnnotations>
+      <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain">
+        <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+          <details key="documentation" value="The chain of diagnostics to which problems are to be appended."/>
+        </eAnnotations>
+      </eParameters>
+      <eParameters name="context">
+        <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+          <details key="documentation" value="The cache of context-specific information."/>
+        </eAnnotations>
+        <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+        </eGenericType>
+      </eParameters>
+    </eOperations>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="InfluenzaPHCRTreatmentInformationSection"
       eSuperTypes="../../org.openhealthtools.mdht.uml.cda.phcr/model/phcr.ecore#//PhcrTreatmentInformationSection">
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
-      <details key="templateId.root" value="2.16.840.1.113883.10.20.15.2.48"/>
       <details key="constraints.validation.error" value="InfluenzaPHCRTreatmentInformationSectionTemplateId InfluenzaPHCRTreatmentInformationSectionInfluenzaTherapeuticRegimenAct"/>
+      <details key="templateId.root" value="2.16.840.1.113883.10.20.15.2.48"/>
     </eAnnotations>
     <eAnnotations source="duplicates">
       <contents xsi:type="ecore:EOperation" name="PhcrTreatmentInformationSectionTemplateId"
@@ -583,17 +583,17 @@
     <eOperations name="getInfluenzaTherapeuticRegimenAct" ordered="false" lowerBound="1"
         eType="#//InfluenzaTherapeuticRegimenAct">
       <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(flu::InfluenzaTherapeuticRegimenAct))->asSequence()->first().oclAsType(flu::InfluenzaTherapeuticRegimenAct)"/>
+        <details key="documentation" value="self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(flu::InfluenzaTherapeuticRegimenAct))->asSequence()->any(true).oclAsType(flu::InfluenzaTherapeuticRegimenAct)"/>
       </eAnnotations>
       <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
-        <details key="body" value="self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(flu::InfluenzaTherapeuticRegimenAct))->asSequence()->first().oclAsType(flu::InfluenzaTherapeuticRegimenAct)"/>
+        <details key="body" value="self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(flu::InfluenzaTherapeuticRegimenAct))->asSequence()->any(true).oclAsType(flu::InfluenzaTherapeuticRegimenAct)"/>
       </eAnnotations>
     </eOperations>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="InfluenzaTherapeuticRegimenAct" eSuperTypes="../../org.openhealthtools.mdht.uml.cda.phcr/model/phcr.ecore#//TherapeuticRegimenAct">
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
-      <details key="templateId.root" value="2.16.840.1.113883.10.20.15.3.75"/>
       <details key="constraints.validation.error" value="InfluenzaTherapeuticRegimenActTemplateId"/>
+      <details key="templateId.root" value="2.16.840.1.113883.10.20.15.3.75"/>
       <details key="constraints.validation.warning" value="InfluenzaTherapeuticRegimenActInfluenzaTreatmentGivenSubstanceAdministration"/>
       <details key="constraints.validation.info" value="InfluenzaTherapeuticRegimenActInfluenzaTreatmentNotGivenSubstanceAdministration"/>
     </eAnnotations>
@@ -691,8 +691,8 @@
   <eClassifiers xsi:type="ecore:EClass" name="InfluenzaTreatmentGivenSubstanceAdministration"
       eSuperTypes="../../org.openhealthtools.mdht.uml.cda.phcr/model/phcr.ecore#//TreatmentGivenSubstanceAdministration">
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
-      <details key="templateId.root" value="2.16.840.1.113883.10.20.15.3.79"/>
       <details key="constraints.validation.error" value="InfluenzaTreatmentGivenSubstanceAdministrationTemplateId"/>
+      <details key="templateId.root" value="2.16.840.1.113883.10.20.15.3.79"/>
     </eAnnotations>
     <eAnnotations source="duplicates">
       <contents xsi:type="ecore:EOperation" name="TreatmentGivenSubstanceAdministrationTemplateId"
@@ -724,8 +724,8 @@
   <eClassifiers xsi:type="ecore:EClass" name="InfluenzaTreatmentNotGivenSubstanceAdministration"
       eSuperTypes="../../org.openhealthtools.mdht.uml.cda.phcr/model/phcr.ecore#//TreatmentNotGivenSubstanceAdministration">
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
-      <details key="templateId.root" value="2.16.840.1.113883.10.20.15.3.80"/>
       <details key="constraints.validation.error" value="InfluenzaTreatmentNotGivenSubstanceAdministrationTemplateId"/>
+      <details key="templateId.root" value="2.16.840.1.113883.10.20.15.3.80"/>
     </eAnnotations>
     <eAnnotations source="duplicates">
       <contents xsi:type="ecore:EOperation" name="TreatmentNotGivenSubstanceAdministrationTemplateId"
@@ -757,8 +757,8 @@
   <eClassifiers xsi:type="ecore:EClass" name="InfluenzaPHCRRelevantDiagnosticTestsAndOrLaboratoryDataSection"
       eSuperTypes="../../org.openhealthtools.mdht.uml.cda.phcr/model/phcr.ecore#//PhcrRelevantDxTestsSection">
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
-      <details key="templateId.root" value="2.16.840.1.113883.10.20.15.2.51"/>
       <details key="constraints.validation.error" value="InfluenzaPHCRRelevantDiagnosticTestsAndOrLaboratoryDataSectionTemplateId"/>
+      <details key="templateId.root" value="2.16.840.1.113883.10.20.15.2.51"/>
       <details key="constraints.validation.warning" value="InfluenzaPHCRRelevantDiagnosticTestsAndOrLaboratoryDataSectionInfluenzaResultObservation"/>
       <details key="constraints.validation.info" value="InfluenzaPHCRRelevantDiagnosticTestsAndOrLaboratoryDataSectionInfluenzaImagingObservation"/>
     </eAnnotations>
@@ -854,13 +854,13 @@
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="InfluenzaResultObservation" eSuperTypes="../../org.openhealthtools.mdht.uml.cda.phcr/model/phcr.ecore#//ResultObservation">
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
-      <details key="interpretationCode.codeSystemName" value="SNOMEDCT"/>
-      <details key="code.codeSystem" value="2.16.840.1.113883.6.1"/>
+      <details key="constraints.validation.error" value="InfluenzaResultObservationTemplateId InfluenzaResultObservationCode"/>
       <details key="templateId.root" value="2.16.840.1.113883.10.20.15.3.81"/>
-      <details key="constraints.validation.error" value="InfluenzaResultObservationTemplateId ResultObservationCode"/>
+      <details key="code.codeSystem" value="2.16.840.1.113883.6.1"/>
       <details key="code.codeSystemName" value="LOINC"/>
-      <details key="constraints.validation.warning" value="InfluenzaResultObservationInterpretationCode"/>
       <details key="interpretationCode.codeSystem" value="2.16.840.1.113883.6.96"/>
+      <details key="interpretationCode.codeSystemName" value="SNOMEDCT"/>
+      <details key="constraints.validation.warning" value="InfluenzaResultObservationInterpretationCode"/>
     </eAnnotations>
     <eAnnotations source="duplicates">
       <contents xsi:type="ecore:EOperation" name="ResultObservationTemplateId" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
@@ -886,30 +886,29 @@
           </eGenericType>
         </eParameters>
       </contents>
-      <contents xsi:type="ecore:EOperation" name="ResultObservationCode" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
-        <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
-          <details key="body" value="(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and &#xD;&#xA;let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in (&#xD;&#xA;value.codeSystem = '2.16.840.1.113883.6.1' and not value.code.oclIsUndefined()))"/>
-        </eAnnotations>
-        <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-          <details key="documentation" value="(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and &#xD;&#xA;let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in (&#xD;&#xA;value.codeSystem = '2.16.840.1.113883.6.1' and not value.code.oclIsUndefined()))"/>
-        </eAnnotations>
-        <eAnnotations source="redefines" references="platform:/plugin/org.openhealthtools.mdht.uml.cda.ccd/model/ccd.ecore#//ResultObservation/ResultObservationCode"/>
-        <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain">
-          <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-            <details key="documentation" value="The chain of diagnostics to which problems are to be appended."/>
-          </eAnnotations>
-        </eParameters>
-        <eParameters name="context">
-          <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-            <details key="documentation" value="The cache of context-specific information."/>
-          </eAnnotations>
-          <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
-            <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
-            <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
-          </eGenericType>
-        </eParameters>
-      </contents>
     </eAnnotations>
+    <eOperations name="InfluenzaResultObservationCode" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
+      <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
+        <details key="body" value="(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and &#xD;&#xA;let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in &#xD;&#xA;value.codeSystem = '2.16.840.1.113883.6.1' and not value.code.oclIsUndefined())"/>
+      </eAnnotations>
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and &#xD;&#xA;let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in &#xD;&#xA;value.codeSystem = '2.16.840.1.113883.6.1' and not value.code.oclIsUndefined())"/>
+      </eAnnotations>
+      <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain">
+        <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+          <details key="documentation" value="The chain of diagnostics to which problems are to be appended."/>
+        </eAnnotations>
+      </eParameters>
+      <eParameters name="context">
+        <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+          <details key="documentation" value="The cache of context-specific information."/>
+        </eAnnotations>
+        <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+        </eGenericType>
+      </eParameters>
+    </eOperations>
     <eOperations name="InfluenzaResultObservationInterpretationCode" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
       <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
         <details key="body" value="(self.interpretationCode->isEmpty() or self.interpretationCode->exists(element | element.isNullFlavorUndefined())) implies (self.interpretationCode->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CE) and &#xD;&#xA;let value : datatypes::CE = element.oclAsType(datatypes::CE) in &#xD;&#xA;value.codeSystem = '2.16.840.1.113883.6.96' and (value.code = '82334004' or value.code = 'PLR1' or value.code = 'PLR3' or value.code = 'PLR19' or value.code = '407479009' or value.code = '442352004' or value.code = '407480007' or value.code = '260385009')))"/>
@@ -935,9 +934,13 @@
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="InfluenzaImagingObservation" eSuperTypes="../../org.openhealthtools.mdht.uml.cda.phcr/model/phcr.ecore#//ImagingObservation">
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
+      <details key="constraints.validation.error" value="InfluenzaImagingObservationTemplateId InfluenzaImagingObservationMethodCode"/>
       <details key="templateId.root" value="2.16.840.1.113883.10.20.15.3.83"/>
-      <details key="constraints.validation.error" value="InfluenzaImagingObservationTemplateId"/>
-      <details key="constraints.validation.info" value="InfluenzaImagingObservationMethodCode"/>
+      <details key="methodCode.codeSystem" value="2.16.840.1.113883.6.1"/>
+      <details key="methodCode.codeSystemName" value="LOINC"/>
+      <details key="constraints.validation.info" value="InfluenzaImagingObservationMethodCodeP"/>
+      <details key="constraints.validation.dependOn.InfluenzaImagingObservationMethodCode"
+          value="InfluenzaImagingObservationMethodCodeP"/>
     </eAnnotations>
     <eAnnotations source="duplicates">
       <contents xsi:type="ecore:EOperation" name="ProblemObservationTemplateId" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
@@ -964,12 +967,34 @@
         </eParameters>
       </contents>
     </eAnnotations>
-    <eOperations name="InfluenzaImagingObservationMethodCode" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
+    <eOperations name="InfluenzaImagingObservationMethodCodeP" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
       <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
-        <details key="body" value="(self.methodCode->isEmpty() or self.methodCode->exists(element | element.isNullFlavorUndefined())) implies (self.methodCode->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CE) and &#xD;&#xA;let value : datatypes::CE = element.oclAsType(datatypes::CE) in &#xD;&#xA;not value.codeSystem.oclIsUndefined() or not value.codeSystemName.oclIsUndefined()))"/>
+        <details key="body" value="(self.methodCode->isEmpty() or self.methodCode->exists(element | element.isNullFlavorUndefined())) implies (not self.methodCode->isEmpty())"/>
       </eAnnotations>
       <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="(self.methodCode->isEmpty() or self.methodCode->exists(element | element.isNullFlavorUndefined())) implies (self.methodCode->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CE) and &#xD;&#xA;let value : datatypes::CE = element.oclAsType(datatypes::CE) in &#xD;&#xA;not value.codeSystem.oclIsUndefined() or not value.codeSystemName.oclIsUndefined()))"/>
+        <details key="documentation" value="(self.methodCode->isEmpty() or self.methodCode->exists(element | element.isNullFlavorUndefined())) implies (not self.methodCode->isEmpty())"/>
+      </eAnnotations>
+      <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain">
+        <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+          <details key="documentation" value="The chain of diagnostics to which problems are to be appended."/>
+        </eAnnotations>
+      </eParameters>
+      <eParameters name="context">
+        <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+          <details key="documentation" value="The cache of context-specific information."/>
+        </eAnnotations>
+        <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+        </eGenericType>
+      </eParameters>
+    </eOperations>
+    <eOperations name="InfluenzaImagingObservationMethodCode" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
+      <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
+        <details key="body" value="(self.methodCode->isEmpty() or self.methodCode->exists(element | element.isNullFlavorUndefined())) implies (self.methodCode->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CE) and &#xD;&#xA;let value : datatypes::CE = element.oclAsType(datatypes::CE) in &#xD;&#xA;value.codeSystem = '2.16.840.1.113883.6.1' and (value.code = '24642-1' or value.code = '36687-2' or value.code = '30745-4' or value.code = '37439-7' or value.code = '37441-3' or value.code = '39341-3' or value.code = '42272-5')))"/>
+      </eAnnotations>
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="(self.methodCode->isEmpty() or self.methodCode->exists(element | element.isNullFlavorUndefined())) implies (self.methodCode->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CE) and &#xD;&#xA;let value : datatypes::CE = element.oclAsType(datatypes::CE) in &#xD;&#xA;value.codeSystem = '2.16.840.1.113883.6.1' and (value.code = '24642-1' or value.code = '36687-2' or value.code = '30745-4' or value.code = '37439-7' or value.code = '37441-3' or value.code = '39341-3' or value.code = '42272-5')))"/>
       </eAnnotations>
       <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain">
         <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
@@ -989,9 +1014,9 @@
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="InfluenzaPHCRSocialHistorySection" eSuperTypes="../../org.openhealthtools.mdht.uml.cda.phcr/model/phcr.ecore#//PhcrSocialHistorySection">
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
-      <details key="templateId.root" value="2.16.840.1.113883.10.20.15.2.49"/>
-      <details key="constraints.validation.error" value="InfluenzaPHCRSocialHistorySectionTemplateId InfluenzaPHCRSocialHistorySectionInfluenzaEmploymentStatusObservation"/>
       <details key="constraints.validation.warning" value="InfluenzaPHCRSocialHistorySectionInfluenzaEmploymentStatusObservation InfluenzaPHCRSocialHistorySectionInfluenzaPossibleExposureLocationAct"/>
+      <details key="constraints.validation.error" value="InfluenzaPHCRSocialHistorySectionTemplateId"/>
+      <details key="templateId.root" value="2.16.840.1.113883.10.20.15.2.49"/>
     </eAnnotations>
     <eAnnotations source="duplicates">
       <contents xsi:type="ecore:EOperation" name="SocialHistorySectionTemplateId"
@@ -1068,10 +1093,10 @@
     <eOperations name="getInfluenzaEmploymentStatusObservation" ordered="false" lowerBound="1"
         eType="#//InfluenzaEmploymentStatusObservation">
       <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(flu::InfluenzaEmploymentStatusObservation))->asSequence()->first().oclAsType(flu::InfluenzaEmploymentStatusObservation)"/>
+        <details key="documentation" value="self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(flu::InfluenzaEmploymentStatusObservation))->asSequence()->any(true).oclAsType(flu::InfluenzaEmploymentStatusObservation)"/>
       </eAnnotations>
       <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
-        <details key="body" value="self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(flu::InfluenzaEmploymentStatusObservation))->asSequence()->first().oclAsType(flu::InfluenzaEmploymentStatusObservation)"/>
+        <details key="body" value="self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(flu::InfluenzaEmploymentStatusObservation))->asSequence()->any(true).oclAsType(flu::InfluenzaEmploymentStatusObservation)"/>
       </eAnnotations>
     </eOperations>
     <eOperations name="getInfluenzaPossibleExposureLocationActs" ordered="false" lowerBound="1"
@@ -1087,15 +1112,15 @@
   <eClassifiers xsi:type="ecore:EClass" name="InfluenzaEmploymentStatusObservation"
       eSuperTypes="platform:/plugin/org.openhealthtools.mdht.uml.cda/model/cda.ecore#//Observation">
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
-      <details key="value.codeSystemName" value="SNOMEDCT"/>
-      <details key="code.codeSystem" value="2.16.840.1.113883.5.6"/>
-      <details key="templateId.root" value="2.16.840.1.113883.10.20.15.3.84"/>
       <details key="constraints.validation.error" value="InfluenzaEmploymentStatusObservationTemplateId InfluenzaEmploymentStatusObservationCode InfluenzaEmploymentStatusObservationValue"/>
-      <details key="code.codeSystemName" value="HL7ActClass"/>
+      <details key="templateId.root" value="2.16.840.1.113883.10.20.15.3.84"/>
       <details key="classCode" value="OBS"/>
       <details key="code.code" value="ASSERTION"/>
+      <details key="code.codeSystem" value="2.16.840.1.113883.5.6"/>
+      <details key="code.codeSystemName" value="HL7ActClass"/>
       <details key="moodCode" value="EVN"/>
       <details key="value.codeSystem" value="2.16.840.1.113883.6.96"/>
+      <details key="value.codeSystemName" value="SNOMEDCT"/>
     </eAnnotations>
     <eOperations name="InfluenzaEmploymentStatusObservationTemplateId" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
       <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
@@ -1121,10 +1146,10 @@
     </eOperations>
     <eOperations name="InfluenzaEmploymentStatusObservationCode" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
       <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
-        <details key="body" value="(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and &#xD;&#xA;let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in (&#xD;&#xA;value.code = 'ASSERTION' and value.codeSystem = '2.16.840.1.113883.5.6'))"/>
+        <details key="body" value="(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and &#xD;&#xA;let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in &#xD;&#xA;value.code = 'ASSERTION' and value.codeSystem = '2.16.840.1.113883.5.6')"/>
       </eAnnotations>
       <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and &#xD;&#xA;let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in (&#xD;&#xA;value.code = 'ASSERTION' and value.codeSystem = '2.16.840.1.113883.5.6'))"/>
+        <details key="documentation" value="(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and &#xD;&#xA;let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in &#xD;&#xA;value.code = 'ASSERTION' and value.codeSystem = '2.16.840.1.113883.5.6')"/>
       </eAnnotations>
       <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain">
         <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
@@ -1167,14 +1192,14 @@
   <eClassifiers xsi:type="ecore:EClass" name="InfluenzaPossibleExposureLocationAct"
       eSuperTypes="platform:/plugin/org.openhealthtools.mdht.uml.cda/model/cda.ecore#//Act">
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
-      <details key="statusCode.code" value="completed"/>
-      <details key="code.codeSystem" value="2.16.840.1.113883.6.96"/>
-      <details key="templateId.root" value="2.16.840.1.113883.10.20.15.3.82"/>
       <details key="constraints.validation.error" value="InfluenzaPossibleExposureLocationActTemplateId InfluenzaPossibleExposureLocationActCode InfluenzaPossibleExposureLocationActStatusCode"/>
-      <details key="code.codeSystemName" value="SNOMEDCT"/>
+      <details key="templateId.root" value="2.16.840.1.113883.10.20.15.3.82"/>
       <details key="classCode" value="ACT"/>
       <details key="code.code" value="413350009"/>
+      <details key="code.codeSystem" value="2.16.840.1.113883.6.96"/>
+      <details key="code.codeSystemName" value="SNOMEDCT"/>
       <details key="moodCode" value="EVN"/>
+      <details key="statusCode.code" value="completed"/>
     </eAnnotations>
     <eOperations name="InfluenzaPossibleExposureLocationActTemplateId" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
       <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
@@ -1200,10 +1225,10 @@
     </eOperations>
     <eOperations name="InfluenzaPossibleExposureLocationActCode" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
       <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
-        <details key="body" value="(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and &#xD;&#xA;let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in (&#xD;&#xA;value.code = '413350009' and value.codeSystem = '2.16.840.1.113883.6.96'))"/>
+        <details key="body" value="(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and &#xD;&#xA;let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in &#xD;&#xA;value.code = '413350009' and value.codeSystem = '2.16.840.1.113883.6.96')"/>
       </eAnnotations>
       <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and &#xD;&#xA;let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in (&#xD;&#xA;value.code = '413350009' and value.codeSystem = '2.16.840.1.113883.6.96'))"/>
+        <details key="documentation" value="(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and &#xD;&#xA;let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in &#xD;&#xA;value.code = '413350009' and value.codeSystem = '2.16.840.1.113883.6.96')"/>
       </eAnnotations>
       <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain">
         <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
@@ -1222,10 +1247,10 @@
     </eOperations>
     <eOperations name="InfluenzaPossibleExposureLocationActStatusCode" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
       <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
-        <details key="body" value="(self.statusCode.oclIsUndefined() or self.statusCode.isNullFlavorUndefined()) implies (self.statusCode.oclIsKindOf(datatypes::CS) and &#xD;&#xA;let value : datatypes::CS = self.statusCode.oclAsType(datatypes::CS) in (&#xD;&#xA;value.code = 'completed'))"/>
+        <details key="body" value="(self.statusCode.oclIsUndefined() or self.statusCode.isNullFlavorUndefined()) implies (not self.statusCode.oclIsUndefined() and self.statusCode.oclIsKindOf(datatypes::CS) and &#xD;&#xA;let value : datatypes::CS = self.statusCode.oclAsType(datatypes::CS) in &#xD;&#xA;value.code = 'completed')"/>
       </eAnnotations>
       <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="(self.statusCode.oclIsUndefined() or self.statusCode.isNullFlavorUndefined()) implies (self.statusCode.oclIsKindOf(datatypes::CS) and &#xD;&#xA;let value : datatypes::CS = self.statusCode.oclAsType(datatypes::CS) in (&#xD;&#xA;value.code = 'completed'))"/>
+        <details key="documentation" value="(self.statusCode.oclIsUndefined() or self.statusCode.isNullFlavorUndefined()) implies (not self.statusCode.oclIsUndefined() and self.statusCode.oclIsKindOf(datatypes::CS) and &#xD;&#xA;let value : datatypes::CS = self.statusCode.oclAsType(datatypes::CS) in &#xD;&#xA;value.code = 'completed')"/>
       </eAnnotations>
       <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain">
         <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
@@ -1245,8 +1270,8 @@
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="InfluenzaImmunizationProduct" eSuperTypes="platform:/plugin/org.openhealthtools.mdht.uml.cda.ccd/model/ccd.ecore#//Product">
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
-      <details key="templateId.root" value="2.16.840.1.113883.10.20.15.3.76"/>
       <details key="constraints.validation.error" value="InfluenzaImmunizationProduct TemplateId"/>
+      <details key="templateId.root" value="2.16.840.1.113883.10.20.15.3.76"/>
     </eAnnotations>
     <eAnnotations source="duplicates">
       <contents xsi:type="ecore:EOperation" name="ProductTemplateId" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">

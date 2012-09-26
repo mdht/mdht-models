@@ -26,8 +26,6 @@ import org.openhealthtools.mdht.uml.cda.phcr.tuberculosis.TuberculosisSignsAndSy
 
 import org.openhealthtools.mdht.uml.cda.phcr.tuberculosis.operations.TuberculosisSignsAndSymptomsObservationOperations;
 
-import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
-
 /**
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Signs And Symptoms Observation</b></em>'.
@@ -39,59 +37,51 @@ import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
  */
 public class TuberculosisSignsAndSymptomsObservationImpl extends SignsAndSymptomsObservationImpl implements TuberculosisSignsAndSymptomsObservation {
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	protected TuberculosisSignsAndSymptomsObservationImpl() {
-    super();
-  }
+		super();
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	@Override
 	protected EClass eStaticClass() {
-    return TuberculosisPackage.Literals.TUBERCULOSIS_SIGNS_AND_SYMPTOMS_OBSERVATION;
-  }
+		return TuberculosisPackage.Literals.TUBERCULOSIS_SIGNS_AND_SYMPTOMS_OBSERVATION;
+	}
 
 	/**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public boolean validateTuberculosisSignsAndSymptomsObservationValue(DiagnosticChain diagnostics, Map<Object, Object> context)
-  {
-    return TuberculosisSignsAndSymptomsObservationOperations.validateTuberculosisSignsAndSymptomsObservationValue(this, diagnostics, context);
-  }
-
-  /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	@Override
 	public boolean validateSignsAndSymptomsObservationTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return TuberculosisSignsAndSymptomsObservationOperations.validateSignsAndSymptomsObservationTemplateId(this, diagnostics, context);
-  }
+		return TuberculosisSignsAndSymptomsObservationOperations.validateSignsAndSymptomsObservationTemplateId(this, diagnostics, context);
+	}
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
-  public TuberculosisSignsAndSymptomsObservation init() {
-      return Initializer.Util.init(this);
-  }
+	 * @generated
+	 */
+  @Override
+public TuberculosisSignsAndSymptomsObservation init() {
+	    return Initializer.Util.init(this);
+	}
 
   /**
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
      * @generated
      */
-    public TuberculosisSignsAndSymptomsObservation init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+    @Override
+	public TuberculosisSignsAndSymptomsObservation init(Iterable<? extends Initializer<? extends EObject>> initializers) {
         Initializer.Util.init(this, initializers);
         return this;
     }

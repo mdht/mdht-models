@@ -28,8 +28,6 @@ import org.openhealthtools.mdht.uml.cda.phcr.silicosis.SilicosisPackage;
 
 import org.openhealthtools.mdht.uml.cda.phcr.silicosis.operations.SilicosisPHCRRelevantDxTestsSectionOperations;
 
-import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
-
 /**
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>PHCR Relevant Dx Tests Section</b></em>'.
@@ -92,23 +90,4 @@ public class SilicosisPHCRRelevantDxTestsSectionImpl extends PhcrRelevantDxTests
   {
     return SilicosisPHCRRelevantDxTestsSectionOperations.validateResultsSectionTemplateId(this, diagnostics, context);
   }
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public SilicosisPHCRRelevantDxTestsSection init() {
-      return Initializer.Util.init(this);
-  }
-
-  /**
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    public SilicosisPHCRRelevantDxTestsSection init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-        Initializer.Util.init(this, initializers);
-        return this;
-    }
 } //SilicosisPHCRRelevantDxTestsSectionImpl

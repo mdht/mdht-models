@@ -34,6 +34,7 @@ public interface CoccidioidesPHCRClinicalInformationSection extends PhcrClinical
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
+   * self.entry->one(entry : cda::Entry | not entry.observation.oclIsUndefined() and entry.observation.oclIsKindOf(cocci::CoccidioidesCaseObservation) and entry.typeCode = vocab::x_ActRelationshipEntry::DRIV)
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
    * <!-- end-model-doc -->
@@ -46,6 +47,7 @@ public interface CoccidioidesPHCRClinicalInformationSection extends PhcrClinical
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
+   * self.entry->exists(entry : cda::Entry | not entry.observation.oclIsUndefined() and entry.observation.oclIsKindOf(cocci::CoccidioidesImmunosuppressedMedicalConditionHistoryObservation) and entry.typeCode = vocab::x_ActRelationshipEntry::DRIV)
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
    * <!-- end-model-doc -->
@@ -57,6 +59,9 @@ public interface CoccidioidesPHCRClinicalInformationSection extends PhcrClinical
 	/**
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
+   * <!-- begin-model-doc -->
+   * self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(cocci::CoccidioidesCaseObservation))->asSequence()->any(true).oclAsType(cocci::CoccidioidesCaseObservation)
+   * <!-- end-model-doc -->
    * @model kind="operation" required="true" ordered="false"
    *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(cocci::CoccidioidesCaseObservation))->asSequence()->any(true).oclAsType(cocci::CoccidioidesCaseObservation)'"
    * @generated
@@ -66,23 +71,12 @@ public interface CoccidioidesPHCRClinicalInformationSection extends PhcrClinical
 	/**
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
+   * <!-- begin-model-doc -->
+   * self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(cocci::CoccidioidesImmunosuppressedMedicalConditionHistoryObservation)).oclAsType(cocci::CoccidioidesImmunosuppressedMedicalConditionHistoryObservation)
+   * <!-- end-model-doc -->
    * @model kind="operation" required="true" ordered="false"
    *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(cocci::CoccidioidesImmunosuppressedMedicalConditionHistoryObservation)).oclAsType(cocci::CoccidioidesImmunosuppressedMedicalConditionHistoryObservation)'"
    * @generated
    */
 	EList<CoccidioidesImmunosuppressedMedicalConditionHistoryObservation> getCoccidioidesImmunosuppressedMedicalConditionHistoryObservations();
-
-	/**
-   * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-   * @generated
-   */
-	public CoccidioidesPHCRClinicalInformationSection init();
-
-  /**
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    public CoccidioidesPHCRClinicalInformationSection init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // CoccidioidesPHCRClinicalInformationSection

@@ -23,7 +23,6 @@ import org.openhealthtools.mdht.uml.cda.ccd.impl.EncountersSectionImpl;
 import org.openhealthtools.mdht.uml.cda.phcr.PhcrEncountersSection;
 import org.openhealthtools.mdht.uml.cda.phcr.PhcrPackage;
 import org.openhealthtools.mdht.uml.cda.phcr.operations.PhcrEncountersSectionOperations;
-import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
 
 /**
  * <!-- begin-user-doc -->
@@ -99,24 +98,5 @@ public class PhcrEncountersSectionImpl extends EncountersSectionImpl implements 
 	public boolean validateEncountersSectionTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
     return PhcrEncountersSectionOperations.validateEncountersSectionTemplateId(this, diagnostics, context);
   }
-
-	/**
-   * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-   * @generated
-   */
-	public PhcrEncountersSection init() {
-      return Initializer.Util.init(this);
-  }
-
-  /**
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    public PhcrEncountersSection init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-        Initializer.Util.init(this, initializers);
-        return this;
-    }
 	
 } //PhcrEncountersSectionImpl

@@ -10,6 +10,9 @@
  *******************************************************************************/
 package org.openhealthtools.mdht.uml.cda.phcr.hib;
 
+import java.lang.Iterable;
+import org.eclipse.emf.ecore.EObject;
+import org.openhealthtools.mdht.emf.runtime.util.Initializer;
 import org.openhealthtools.mdht.uml.cda.phcr.ResultObservation;
 
 /**
@@ -19,7 +22,7 @@ import org.openhealthtools.mdht.uml.cda.phcr.ResultObservation;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.phcr.hib.HibPackage#getHibResultObservation()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation templateId.root='2.16.840.1.113883.10.20.15.3.137' constraints.validation.error='HibResultObservationTemplateId'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='HibResultObservationTemplateId' templateId.root='2.16.840.1.113883.10.20.15.3.137'"
  * @generated
  */
 public interface HibResultObservation extends ResultObservation {
@@ -29,4 +32,11 @@ public interface HibResultObservation extends ResultObservation {
 	 * @generated
 	 */
 	public HibResultObservation init();
+
+	/**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    public HibResultObservation init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // HibResultObservation

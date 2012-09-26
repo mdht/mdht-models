@@ -10,6 +10,7 @@
  *******************************************************************************/
 package org.openhealthtools.mdht.uml.cda.phcr.hib.impl;
 
+import java.lang.Iterable;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
@@ -18,15 +19,14 @@ import org.eclipse.emf.ecore.EClass;
 
 
 
+import org.eclipse.emf.ecore.EObject;
+import org.openhealthtools.mdht.emf.runtime.util.Initializer;
 import org.openhealthtools.mdht.uml.cda.phcr.hib.HIBCaseReport;
-import org.openhealthtools.mdht.uml.cda.phcr.hib.HIBSocialHistorySection;
 import org.openhealthtools.mdht.uml.cda.phcr.hib.HibPackage;
 import org.openhealthtools.mdht.uml.cda.phcr.hib.HibPhcrClinicalInformationSection;
 import org.openhealthtools.mdht.uml.cda.phcr.hib.HibPhcrRelevantDxTestsSection;
 import org.openhealthtools.mdht.uml.cda.phcr.hib.operations.HIBCaseReportOperations;
 import org.openhealthtools.mdht.uml.cda.phcr.impl.PublicHealthCaseReportImpl;
-
-import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
 
 /**
  * <!-- begin-user-doc -->
@@ -121,8 +121,19 @@ public class HIBCaseReportImpl extends PublicHealthCaseReportImpl implements HIB
    * <!-- end-user-doc -->
 	 * @generated
 	 */
-  public HIBCaseReport init() {
-    	CDAUtil.init(this);
-    	return this;
+  @Override
+public HIBCaseReport init() {
+	    return Initializer.Util.init(this);
 	}
+
+		/**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    @Override
+	public HIBCaseReport init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
 } //HIBCaseReportImpl

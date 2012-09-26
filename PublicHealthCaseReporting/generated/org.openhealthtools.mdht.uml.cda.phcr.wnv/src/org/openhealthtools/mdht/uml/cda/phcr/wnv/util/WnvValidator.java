@@ -12,6 +12,7 @@ package org.openhealthtools.mdht.uml.cda.phcr.wnv.util;
 
 import java.util.Map;
 
+import org.eclipse.emf.common.util.Diagnostic;
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.common.util.ResourceLocator;
 import org.eclipse.emf.ecore.EPackage;
@@ -409,7 +410,28 @@ public class WnvValidator extends EObjectValidator
    */
   public boolean validateWestNileVirusCaseReport_validatePublicHealthCaseReportTemplateId(WestNileVirusCaseReport westNileVirusCaseReport, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
-    return westNileVirusCaseReport.validatePublicHealthCaseReportTemplateId(diagnostics, context);
+    // TODO override the constraint, if desired
+    // -> uncomment the scaffolding
+    // -> specify the condition that violates the constraint
+    // -> verify the diagnostic details, including severity, code, and message
+    // Ensure that you remove @generated or mark it @generated NOT
+    if (false)
+    {
+      if (diagnostics != null)
+      {
+        diagnostics.add
+          (createDiagnostic
+            (Diagnostic.ERROR,
+             DIAGNOSTIC_SOURCE,
+             0,
+             "_UI_GenericConstraint_diagnostic",
+             new Object[] { "validatePublicHealthCaseReportTemplateId", getObjectLabel(westNileVirusCaseReport, context) },
+             new Object[] { westNileVirusCaseReport },
+             context));
+      }
+      return false;
+    }
+    return phcrValidator.validatePublicHealthCaseReport_validatePublicHealthCaseReportTemplateId(westNileVirusCaseReport, diagnostics, context);
   }
 
   /**
@@ -460,7 +482,28 @@ public class WnvValidator extends EObjectValidator
    * @generated
    */
 	public boolean validateWnvPhcrClinicalInformationSection_validatePhcrClinicalInformationSectionTemplateId(WnvPhcrClinicalInformationSection wnvPhcrClinicalInformationSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return wnvPhcrClinicalInformationSection.validatePhcrClinicalInformationSectionTemplateId(diagnostics, context);
+    // TODO override the constraint, if desired
+    // -> uncomment the scaffolding
+    // -> specify the condition that violates the constraint
+    // -> verify the diagnostic details, including severity, code, and message
+    // Ensure that you remove @generated or mark it @generated NOT
+    if (false)
+    {
+      if (diagnostics != null)
+      {
+        diagnostics.add
+          (createDiagnostic
+            (Diagnostic.ERROR,
+             DIAGNOSTIC_SOURCE,
+             0,
+             "_UI_GenericConstraint_diagnostic",
+             new Object[] { "validatePhcrClinicalInformationSectionTemplateId", getObjectLabel(wnvPhcrClinicalInformationSection, context) },
+             new Object[] { wnvPhcrClinicalInformationSection },
+             context));
+      }
+      return false;
+    }
+    return phcrValidator.validatePhcrClinicalInformationSection_validatePhcrClinicalInformationSectionTemplateId(wnvPhcrClinicalInformationSection, diagnostics, context);
   }
 
 		/**
@@ -534,7 +577,28 @@ public class WnvValidator extends EObjectValidator
    * @generated
    */
 	public boolean validateWnvCaseObservation_validateProblemObservationTemplateId(WnvCaseObservation wnvCaseObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return wnvCaseObservation.validateProblemObservationTemplateId(diagnostics, context);
+    // TODO override the constraint, if desired
+    // -> uncomment the scaffolding
+    // -> specify the condition that violates the constraint
+    // -> verify the diagnostic details, including severity, code, and message
+    // Ensure that you remove @generated or mark it @generated NOT
+    if (false)
+    {
+      if (diagnostics != null)
+      {
+        diagnostics.add
+          (createDiagnostic
+            (Diagnostic.ERROR,
+             DIAGNOSTIC_SOURCE,
+             0,
+             "_UI_GenericConstraint_diagnostic",
+             new Object[] { "validateProblemObservationTemplateId", getObjectLabel(wnvCaseObservation, context) },
+             new Object[] { wnvCaseObservation },
+             context));
+      }
+      return false;
+    }
+    return phcrValidator.validateCaseObservation_validateProblemObservationTemplateId(wnvCaseObservation, diagnostics, context);
   }
 
 		/**
@@ -584,7 +648,28 @@ public class WnvValidator extends EObjectValidator
    * @generated
    */
 	public boolean validateWnvSignsAndSymptomsObservation_validateSignsAndSymptomsObservationTemplateId(WnvSignsAndSymptomsObservation wnvSignsAndSymptomsObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return wnvSignsAndSymptomsObservation.validateSignsAndSymptomsObservationTemplateId(diagnostics, context);
+    // TODO override the constraint, if desired
+    // -> uncomment the scaffolding
+    // -> specify the condition that violates the constraint
+    // -> verify the diagnostic details, including severity, code, and message
+    // Ensure that you remove @generated or mark it @generated NOT
+    if (false)
+    {
+      if (diagnostics != null)
+      {
+        diagnostics.add
+          (createDiagnostic
+            (Diagnostic.ERROR,
+             DIAGNOSTIC_SOURCE,
+             0,
+             "_UI_GenericConstraint_diagnostic",
+             new Object[] { "validateSignsAndSymptomsObservationTemplateId", getObjectLabel(wnvSignsAndSymptomsObservation, context) },
+             new Object[] { wnvSignsAndSymptomsObservation },
+             context));
+      }
+      return false;
+    }
+    return phcrValidator.validateSignsAndSymptomsObservation_validateSignsAndSymptomsObservationTemplateId(wnvSignsAndSymptomsObservation, diagnostics, context);
   }
 
 		/**
@@ -648,7 +733,28 @@ public class WnvValidator extends EObjectValidator
    * @generated
    */
 	public boolean validateWnvPhcrRelevantDxTestsSection_validateResultsSectionTemplateId(WnvPhcrRelevantDxTestsSection wnvPhcrRelevantDxTestsSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return wnvPhcrRelevantDxTestsSection.validateResultsSectionTemplateId(diagnostics, context);
+    // TODO override the constraint, if desired
+    // -> uncomment the scaffolding
+    // -> specify the condition that violates the constraint
+    // -> verify the diagnostic details, including severity, code, and message
+    // Ensure that you remove @generated or mark it @generated NOT
+    if (false)
+    {
+      if (diagnostics != null)
+      {
+        diagnostics.add
+          (createDiagnostic
+            (Diagnostic.ERROR,
+             DIAGNOSTIC_SOURCE,
+             0,
+             "_UI_GenericConstraint_diagnostic",
+             new Object[] { "validateResultsSectionTemplateId", getObjectLabel(wnvPhcrRelevantDxTestsSection, context) },
+             new Object[] { wnvPhcrRelevantDxTestsSection },
+             context));
+      }
+      return false;
+    }
+    return phcrValidator.validatePhcrRelevantDxTestsSection_validateResultsSectionTemplateId(wnvPhcrRelevantDxTestsSection, diagnostics, context);
   }
 
 		/**
@@ -717,7 +823,28 @@ public class WnvValidator extends EObjectValidator
    * @generated
    */
 	public boolean validateWnvResultObservation_validateResultObservationTemplateId(WnvResultObservation wnvResultObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return wnvResultObservation.validateResultObservationTemplateId(diagnostics, context);
+    // TODO override the constraint, if desired
+    // -> uncomment the scaffolding
+    // -> specify the condition that violates the constraint
+    // -> verify the diagnostic details, including severity, code, and message
+    // Ensure that you remove @generated or mark it @generated NOT
+    if (false)
+    {
+      if (diagnostics != null)
+      {
+        diagnostics.add
+          (createDiagnostic
+            (Diagnostic.ERROR,
+             DIAGNOSTIC_SOURCE,
+             0,
+             "_UI_GenericConstraint_diagnostic",
+             new Object[] { "validateResultObservationTemplateId", getObjectLabel(wnvResultObservation, context) },
+             new Object[] { wnvResultObservation },
+             context));
+      }
+      return false;
+    }
+    return phcrValidator.validateResultObservation_validateResultObservationTemplateId(wnvResultObservation, diagnostics, context);
   }
 
 		/**
@@ -743,7 +870,6 @@ public class WnvValidator extends EObjectValidator
     if (result || diagnostics != null) result &= ccdValidator.validateResultOrganizer_validateResultOrganizerCode(wnvResultOrganizer, diagnostics, context);
     if (result || diagnostics != null) result &= ccdValidator.validateResultOrganizer_validateResultOrganizerStatusCode(wnvResultOrganizer, diagnostics, context);
     if (result || diagnostics != null) result &= ccdValidator.validateResultOrganizer_validateResultOrganizerResultObservation(wnvResultOrganizer, diagnostics, context);
-    if (result || diagnostics != null) result &= ccdValidator.validateResultOrganizer_validateResultOrganizerSpecimen(wnvResultOrganizer, diagnostics, context);
     if (result || diagnostics != null) result &= phcrValidator.validateResultOrganizer_validatePHCRResultOrganizerClassCode(wnvResultOrganizer, diagnostics, context);
     if (result || diagnostics != null) result &= phcrValidator.validateResultOrganizer_validatePHCRResultOrganizerMoodCode(wnvResultOrganizer, diagnostics, context);
     if (result || diagnostics != null) result &= phcrValidator.validateResultOrganizer_validatePHCRResultOrganizerId(wnvResultOrganizer, diagnostics, context);
@@ -798,7 +924,28 @@ public class WnvValidator extends EObjectValidator
    * @generated
    */
 	public boolean validateWnvResultOrganizer_validateResultOrganizerTemplateId(WnvResultOrganizer wnvResultOrganizer, DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return wnvResultOrganizer.validateResultOrganizerTemplateId(diagnostics, context);
+    // TODO override the constraint, if desired
+    // -> uncomment the scaffolding
+    // -> specify the condition that violates the constraint
+    // -> verify the diagnostic details, including severity, code, and message
+    // Ensure that you remove @generated or mark it @generated NOT
+    if (false)
+    {
+      if (diagnostics != null)
+      {
+        diagnostics.add
+          (createDiagnostic
+            (Diagnostic.ERROR,
+             DIAGNOSTIC_SOURCE,
+             0,
+             "_UI_GenericConstraint_diagnostic",
+             new Object[] { "validateResultOrganizerTemplateId", getObjectLabel(wnvResultOrganizer, context) },
+             new Object[] { wnvResultOrganizer },
+             context));
+      }
+      return false;
+    }
+    return phcrValidator.validateResultOrganizer_validateResultOrganizerTemplateId(wnvResultOrganizer, diagnostics, context);
   }
 
 		/**

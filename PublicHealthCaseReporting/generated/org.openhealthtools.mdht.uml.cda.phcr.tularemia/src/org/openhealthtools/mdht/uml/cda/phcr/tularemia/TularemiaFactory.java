@@ -22,146 +22,146 @@ import org.eclipse.emf.ecore.EFactory;
  */
 public interface TularemiaFactory extends EFactory {
 	/**
-   * The singleton instance of the factory.
-   * <!-- begin-user-doc -->
+	 * The singleton instance of the factory.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	TularemiaFactory eINSTANCE = org.openhealthtools.mdht.uml.cda.phcr.tularemia.impl.TularemiaFactoryImpl.init();
 
 	/**
-   * Returns a new object of class '<em>Case Report</em>'.
-   * <!-- begin-user-doc -->
+	 * Returns a new object of class '<em>Case Report</em>'.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @return a new object of class '<em>Case Report</em>'.
-   * @generated
-   */
+	 * @return a new object of class '<em>Case Report</em>'.
+	 * @generated
+	 */
 	TularemiaCaseReport createTularemiaCaseReport();
 
 	/**
-   * Returns a new object of class '<em>PHCR Social History Section</em>'.
-   * <!-- begin-user-doc -->
+	 * Returns a new object of class '<em>PHCR Social History Section</em>'.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @return a new object of class '<em>PHCR Social History Section</em>'.
-   * @generated
-   */
+	 * @return a new object of class '<em>PHCR Social History Section</em>'.
+	 * @generated
+	 */
 	TularemiaPHCRSocialHistorySection createTularemiaPHCRSocialHistorySection();
 
 	/**
-   * Returns a new object of class '<em>Possible Exposure Location And Type Act</em>'.
-   * <!-- begin-user-doc -->
+	 * Returns a new object of class '<em>Possible Exposure Location And Type Act</em>'.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @return a new object of class '<em>Possible Exposure Location And Type Act</em>'.
-   * @generated
-   */
+	 * @return a new object of class '<em>Possible Exposure Location And Type Act</em>'.
+	 * @generated
+	 */
 	TularemiaPossibleExposureLocationAndTypeAct createTularemiaPossibleExposureLocationAndTypeAct();
 
 	/**
-   * Returns a new object of class '<em>PHCR Clinical Information Section</em>'.
-   * <!-- begin-user-doc -->
+	 * Returns a new object of class '<em>PHCR Clinical Information Section</em>'.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @return a new object of class '<em>PHCR Clinical Information Section</em>'.
-   * @generated
-   */
+	 * @return a new object of class '<em>PHCR Clinical Information Section</em>'.
+	 * @generated
+	 */
 	TularemiaPHCRClinicalInformationSection createTularemiaPHCRClinicalInformationSection();
 
 	/**
-   * Returns a new object of class '<em>Case Observation</em>'.
-   * <!-- begin-user-doc -->
+	 * Returns a new object of class '<em>Case Observation</em>'.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @return a new object of class '<em>Case Observation</em>'.
-   * @generated
-   */
+	 * @return a new object of class '<em>Case Observation</em>'.
+	 * @generated
+	 */
 	TularemiaCaseObservation createTularemiaCaseObservation();
 
 	/**
-   * Returns a new object of class '<em>Signs And Symptoms Observation</em>'.
-   * <!-- begin-user-doc -->
+	 * Returns a new object of class '<em>Signs And Symptoms Observation</em>'.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @return a new object of class '<em>Signs And Symptoms Observation</em>'.
-   * @generated
-   */
+	 * @return a new object of class '<em>Signs And Symptoms Observation</em>'.
+	 * @generated
+	 */
 	TularemiaSignsAndSymptomsObservation createTularemiaSignsAndSymptomsObservation();
 
 	/**
-   * Returns a new object of class '<em>Location Of Lesion Observation</em>'.
-   * <!-- begin-user-doc -->
+	 * Returns a new object of class '<em>Location Of Lesion Observation</em>'.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @return a new object of class '<em>Location Of Lesion Observation</em>'.
-   * @generated
-   */
+	 * @return a new object of class '<em>Location Of Lesion Observation</em>'.
+	 * @generated
+	 */
 	LocationOfLesionObservation createLocationOfLesionObservation();
 
 	/**
-   * Returns a new object of class '<em>PHCR Treatment Information Section</em>'.
-   * <!-- begin-user-doc -->
+	 * Returns a new object of class '<em>PHCR Treatment Information Section</em>'.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @return a new object of class '<em>PHCR Treatment Information Section</em>'.
-   * @generated
-   */
+	 * @return a new object of class '<em>PHCR Treatment Information Section</em>'.
+	 * @generated
+	 */
 	TularemiaPHCRTreatmentInformationSection createTularemiaPHCRTreatmentInformationSection();
 
 	/**
-   * Returns a new object of class '<em>Therapeutic Regimen Act</em>'.
-   * <!-- begin-user-doc -->
+	 * Returns a new object of class '<em>Therapeutic Regimen Act</em>'.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @return a new object of class '<em>Therapeutic Regimen Act</em>'.
-   * @generated
-   */
+	 * @return a new object of class '<em>Therapeutic Regimen Act</em>'.
+	 * @generated
+	 */
 	TularemiaTherapeuticRegimenAct createTularemiaTherapeuticRegimenAct();
 
 	/**
-   * Returns a new object of class '<em>Treatment Given Substance Administration</em>'.
-   * <!-- begin-user-doc -->
+	 * Returns a new object of class '<em>Treatment Given Substance Administration</em>'.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @return a new object of class '<em>Treatment Given Substance Administration</em>'.
-   * @generated
-   */
+	 * @return a new object of class '<em>Treatment Given Substance Administration</em>'.
+	 * @generated
+	 */
 	TularemiaTreatmentGivenSubstanceAdministration createTularemiaTreatmentGivenSubstanceAdministration();
 
 	/**
-   * Returns a new object of class '<em>Treatment Not Given Substance Administration</em>'.
-   * <!-- begin-user-doc -->
+	 * Returns a new object of class '<em>Treatment Not Given Substance Administration</em>'.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @return a new object of class '<em>Treatment Not Given Substance Administration</em>'.
-   * @generated
-   */
+	 * @return a new object of class '<em>Treatment Not Given Substance Administration</em>'.
+	 * @generated
+	 */
 	TularemiaTreatmentNotGivenSubstanceAdministration createTularemiaTreatmentNotGivenSubstanceAdministration();
 
 	/**
-   * Returns a new object of class '<em>PHCR Relevant Dx Tests Section</em>'.
-   * <!-- begin-user-doc -->
+	 * Returns a new object of class '<em>PHCR Relevant Dx Tests Section</em>'.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @return a new object of class '<em>PHCR Relevant Dx Tests Section</em>'.
-   * @generated
-   */
+	 * @return a new object of class '<em>PHCR Relevant Dx Tests Section</em>'.
+	 * @generated
+	 */
 	TularemiaPHCRRelevantDxTestsSection createTularemiaPHCRRelevantDxTestsSection();
 
 	/**
-   * Returns a new object of class '<em>Result Organizer</em>'.
-   * <!-- begin-user-doc -->
+	 * Returns a new object of class '<em>Result Organizer</em>'.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @return a new object of class '<em>Result Organizer</em>'.
-   * @generated
-   */
+	 * @return a new object of class '<em>Result Organizer</em>'.
+	 * @generated
+	 */
 	TularemiaResultOrganizer createTularemiaResultOrganizer();
 
 	/**
-   * Returns a new object of class '<em>Result Observation</em>'.
-   * <!-- begin-user-doc -->
+	 * Returns a new object of class '<em>Result Observation</em>'.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @return a new object of class '<em>Result Observation</em>'.
-   * @generated
-   */
+	 * @return a new object of class '<em>Result Observation</em>'.
+	 * @generated
+	 */
 	TularemiaResultObservation createTularemiaResultObservation();
 
 	/**
-   * Returns the package supported by this factory.
-   * <!-- begin-user-doc -->
+	 * Returns the package supported by this factory.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @return the package supported by this factory.
-   * @generated
-   */
+	 * @return the package supported by this factory.
+	 * @generated
+	 */
 	TularemiaPackage getTularemiaPackage();
 
 } //TularemiaFactory

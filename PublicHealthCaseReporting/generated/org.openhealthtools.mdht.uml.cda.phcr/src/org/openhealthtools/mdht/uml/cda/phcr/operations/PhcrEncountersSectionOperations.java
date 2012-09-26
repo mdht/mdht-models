@@ -82,6 +82,7 @@ public class PhcrEncountersSectionOperations extends EncountersSectionOperations
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
+   * (self.title.oclIsUndefined() or self.title.isNullFlavorUndefined()) implies (self.title.getText() = 'Encounters')
    * @param phcrEncountersSection The receiving '<em><b>Encounters Section</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -89,8 +90,8 @@ public class PhcrEncountersSectionOperations extends EncountersSectionOperations
    * @generated
    */
 	public static  boolean validatePhcrEncountersSectionTitle(PhcrEncountersSection phcrEncountersSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
-    if (VALIDATE_PHCR_ENCOUNTERS_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+    if (VALIDATE_PHCR_ENCOUNTERS_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null)
+    {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(PhcrPackage.Literals.PHCR_ENCOUNTERS_SECTION);
       try
@@ -111,10 +112,9 @@ public class PhcrEncountersSectionOperations extends EncountersSectionOperations
             (Diagnostic.ERROR,
              PhcrValidator.DIAGNOSTIC_SOURCE,
              PhcrValidator.PHCR_ENCOUNTERS_SECTION__PHCR_ENCOUNTERS_SECTION_TITLE,
-             PhcrPlugin.INSTANCE.getString("PhcrEncountersSectionTitle"),
+             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "validatePhcrEncountersSectionTitle", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(phcrEncountersSection, context) }),
              new Object [] { phcrEncountersSection }));
       }
-       
       return false;
     }
     return true;
@@ -144,6 +144,7 @@ public class PhcrEncountersSectionOperations extends EncountersSectionOperations
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
+   * not self.text.oclIsUndefined()
    * @param phcrEncountersSection The receiving '<em><b>Encounters Section</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -151,8 +152,8 @@ public class PhcrEncountersSectionOperations extends EncountersSectionOperations
    * @generated
    */
 	public static  boolean validatePhcrEncountersSectionText(PhcrEncountersSection phcrEncountersSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
-    if (VALIDATE_PHCR_ENCOUNTERS_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+    if (VALIDATE_PHCR_ENCOUNTERS_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null)
+    {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(PhcrPackage.Literals.PHCR_ENCOUNTERS_SECTION);
       try
@@ -173,10 +174,9 @@ public class PhcrEncountersSectionOperations extends EncountersSectionOperations
             (Diagnostic.ERROR,
              PhcrValidator.DIAGNOSTIC_SOURCE,
              PhcrValidator.PHCR_ENCOUNTERS_SECTION__PHCR_ENCOUNTERS_SECTION_TEXT,
-             PhcrPlugin.INSTANCE.getString("PhcrEncountersSectionText"),
+             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "validatePhcrEncountersSectionText", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(phcrEncountersSection, context) }),
              new Object [] { phcrEncountersSection }));
       }
-       
       return false;
     }
     return true;
@@ -206,6 +206,7 @@ public class PhcrEncountersSectionOperations extends EncountersSectionOperations
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
+   * self.entry->exists(entry : cda::Entry | not entry.encounter.oclIsUndefined() and entry.encounter.oclIsKindOf(ccd::EncountersActivity) and entry.typeCode = vocab::x_ActRelationshipEntry::DRIV)
    * @param phcrEncountersSection The receiving '<em><b>Encounters Section</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -213,8 +214,8 @@ public class PhcrEncountersSectionOperations extends EncountersSectionOperations
    * @generated
    */
 	public static  boolean validatePhcrEncountersSectionEncountersActivity(PhcrEncountersSection phcrEncountersSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
-    if (VALIDATE_PHCR_ENCOUNTERS_SECTION_ENCOUNTERS_ACTIVITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+    if (VALIDATE_PHCR_ENCOUNTERS_SECTION_ENCOUNTERS_ACTIVITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null)
+    {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(PhcrPackage.Literals.PHCR_ENCOUNTERS_SECTION);
       try
@@ -235,10 +236,9 @@ public class PhcrEncountersSectionOperations extends EncountersSectionOperations
             (Diagnostic.ERROR,
              PhcrValidator.DIAGNOSTIC_SOURCE,
              PhcrValidator.PHCR_ENCOUNTERS_SECTION__PHCR_ENCOUNTERS_SECTION_ENCOUNTERS_ACTIVITY,
-             PhcrPlugin.INSTANCE.getString("PhcrEncountersSectionEncountersActivity"),
+             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "validatePhcrEncountersSectionEncountersActivity", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(phcrEncountersSection, context) }),
              new Object [] { phcrEncountersSection }));
       }
-       
       return false;
     }
     return true;
@@ -267,6 +267,10 @@ public class PhcrEncountersSectionOperations extends EncountersSectionOperations
 	/**
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
+   * <!-- begin-model-doc -->
+   * self.getEncounters()->select(encounter : cda::Encounter | not encounter.oclIsUndefined() and encounter.oclIsKindOf(ccd::EncountersActivity)).oclAsType(ccd::EncountersActivity)
+   * @param phcrEncountersSection The receiving '<em><b>Encounters Section</b></em>' model object.
+   * <!-- end-model-doc -->
    * @generated
    */
 	public static  EList<EncountersActivity> getPHCREncountersActivities(PhcrEncountersSection phcrEncountersSection) {
@@ -313,6 +317,7 @@ public class PhcrEncountersSectionOperations extends EncountersSectionOperations
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
+   * self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.15.2.2')
    * @param phcrEncountersSection The receiving '<em><b>Encounters Section</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -320,8 +325,8 @@ public class PhcrEncountersSectionOperations extends EncountersSectionOperations
    * @generated
    */
 	public static  boolean validateEncountersSectionTemplateId(PhcrEncountersSection phcrEncountersSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
-    if (VALIDATE_ENCOUNTERS_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+    if (VALIDATE_ENCOUNTERS_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null)
+    {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(PhcrPackage.Literals.PHCR_ENCOUNTERS_SECTION);
       try
@@ -342,10 +347,9 @@ public class PhcrEncountersSectionOperations extends EncountersSectionOperations
             (Diagnostic.ERROR,
              PhcrValidator.DIAGNOSTIC_SOURCE,
              PhcrValidator.PHCR_ENCOUNTERS_SECTION__ENCOUNTERS_SECTION_TEMPLATE_ID,
-             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "EncountersSectionTemplateId", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(phcrEncountersSection, context) }),
+             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "validateEncountersSectionTemplateId", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(phcrEncountersSection, context) }),
              new Object [] { phcrEncountersSection }));
       }
-       
       return false;
     }
     return true;

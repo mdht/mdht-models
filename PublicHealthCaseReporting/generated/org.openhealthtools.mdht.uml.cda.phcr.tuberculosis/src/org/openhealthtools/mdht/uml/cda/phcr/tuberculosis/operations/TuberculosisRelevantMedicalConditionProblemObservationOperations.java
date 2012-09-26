@@ -38,7 +38,6 @@ import org.openhealthtools.mdht.uml.cda.phcr.tuberculosis.util.TuberculosisValid
  * The following operations are supported:
  * <ul>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.phcr.tuberculosis.TuberculosisRelevantMedicalConditionProblemObservation#validateTuberculosisRelevantMedicalConditionProblemObservationCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Tuberculosis Relevant Medical Condition Problem Observation Code</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.phcr.tuberculosis.TuberculosisRelevantMedicalConditionProblemObservation#validateTuberculosisRelevantMedicalConditionProblemObservationValue(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Tuberculosis Relevant Medical Condition Problem Observation Value</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.phcr.tuberculosis.TuberculosisRelevantMedicalConditionProblemObservation#validateProblemObservationTemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Problem Observation Template Id</em>}</li>
  * </ul>
  * </p>
@@ -48,212 +47,142 @@ import org.openhealthtools.mdht.uml.cda.phcr.tuberculosis.util.TuberculosisValid
 public class TuberculosisRelevantMedicalConditionProblemObservationOperations extends ProblemObservationOperations
 {
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   protected TuberculosisRelevantMedicalConditionProblemObservationOperations() {
-    super();
-  }
+		super();
+	}
 
   /**
-   * The cached OCL expression body for the '{@link #validateTuberculosisRelevantMedicalConditionProblemObservationCode(TuberculosisRelevantMedicalConditionProblemObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Tuberculosis Relevant Medical Condition Problem Observation Code</em>}' operation.
-   * <!-- begin-user-doc -->
+	 * The cached OCL expression body for the '{@link #validateTuberculosisRelevantMedicalConditionProblemObservationCode(TuberculosisRelevantMedicalConditionProblemObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Tuberculosis Relevant Medical Condition Problem Observation Code</em>}' operation.
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @see #validateTuberculosisRelevantMedicalConditionProblemObservationCode(TuberculosisRelevantMedicalConditionProblemObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-   * @generated
-   * @ordered
-   */
+	 * @see #validateTuberculosisRelevantMedicalConditionProblemObservationCode(TuberculosisRelevantMedicalConditionProblemObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
   protected static final String VALIDATE_TUBERCULOSIS_RELEVANT_MEDICAL_CONDITION_PROBLEM_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and "+
 "let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in "+
 "value.code = '64572001' and value.codeSystem = '2.16.840.1.113883.6.96')";
 
   /**
-   * The cached OCL invariant for the '{@link #validateTuberculosisRelevantMedicalConditionProblemObservationCode(TuberculosisRelevantMedicalConditionProblemObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Tuberculosis Relevant Medical Condition Problem Observation Code</em>}' invariant operation.
-   * <!-- begin-user-doc -->
+	 * The cached OCL invariant for the '{@link #validateTuberculosisRelevantMedicalConditionProblemObservationCode(TuberculosisRelevantMedicalConditionProblemObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Tuberculosis Relevant Medical Condition Problem Observation Code</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @see #validateTuberculosisRelevantMedicalConditionProblemObservationCode(TuberculosisRelevantMedicalConditionProblemObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-   * @generated
-   * @ordered
-   */
+	 * @see #validateTuberculosisRelevantMedicalConditionProblemObservationCode(TuberculosisRelevantMedicalConditionProblemObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
   
   protected static Constraint VALIDATE_TUBERCULOSIS_RELEVANT_MEDICAL_CONDITION_PROBLEM_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * <!-- begin-model-doc -->
-   * @param tuberculosisRelevantMedicalConditionProblemObservation The receiving '<em><b>Relevant Medical Condition Problem Observation</b></em>' model object.
-   * @param diagnostics The chain of diagnostics to which problems are to be appended.
-   * @param context The cache of context-specific information.
-   * <!-- end-model-doc -->
-   * @generated
-   */
+	 * <!-- begin-model-doc -->
+	 * (self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and 
+	 * let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in 
+	 * value.code = '64572001' and value.codeSystem = '2.16.840.1.113883.6.96')
+	 * @param tuberculosisRelevantMedicalConditionProblemObservation The receiving '<em><b>Relevant Medical Condition Problem Observation</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
   
   public static  boolean validateTuberculosisRelevantMedicalConditionProblemObservationCode(TuberculosisRelevantMedicalConditionProblemObservation tuberculosisRelevantMedicalConditionProblemObservation, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
   	  
-    if (VALIDATE_TUBERCULOSIS_RELEVANT_MEDICAL_CONDITION_PROBLEM_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-      OCL.Helper helper = EOCL_ENV.createOCLHelper();
-      helper.setContext(TuberculosisPackage.Literals.TUBERCULOSIS_RELEVANT_MEDICAL_CONDITION_PROBLEM_OBSERVATION);
-      try
-      {
-        VALIDATE_TUBERCULOSIS_RELEVANT_MEDICAL_CONDITION_PROBLEM_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_TUBERCULOSIS_RELEVANT_MEDICAL_CONDITION_PROBLEM_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-      }
-      catch (ParserException pe)
-      {
-        throw new UnsupportedOperationException(pe.getLocalizedMessage());
-      }
-    }
-    if (!EOCL_ENV.createQuery(VALIDATE_TUBERCULOSIS_RELEVANT_MEDICAL_CONDITION_PROBLEM_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(tuberculosisRelevantMedicalConditionProblemObservation))
-    {
-      if (diagnostics != null)
-      {
-        diagnostics.add
-          (new BasicDiagnostic
-            (Diagnostic.ERROR,
-             TuberculosisValidator.DIAGNOSTIC_SOURCE,
-             TuberculosisValidator.TUBERCULOSIS_RELEVANT_MEDICAL_CONDITION_PROBLEM_OBSERVATION__TUBERCULOSIS_RELEVANT_MEDICAL_CONDITION_PROBLEM_OBSERVATION_CODE,
-             TuberculosisPlugin.INSTANCE.getString("TuberculosisRelevantMedicalConditionProblemObservationCode"),
-             new Object [] { tuberculosisRelevantMedicalConditionProblemObservation }));
-      }
-       
-      return false;
-    }
-    return true;
-  }
+		if (VALIDATE_TUBERCULOSIS_RELEVANT_MEDICAL_CONDITION_PROBLEM_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+			helper.setContext(TuberculosisPackage.Literals.TUBERCULOSIS_RELEVANT_MEDICAL_CONDITION_PROBLEM_OBSERVATION);
+			try {
+				VALIDATE_TUBERCULOSIS_RELEVANT_MEDICAL_CONDITION_PROBLEM_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_TUBERCULOSIS_RELEVANT_MEDICAL_CONDITION_PROBLEM_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+			}
+			catch (ParserException pe) {
+				throw new UnsupportedOperationException(pe.getLocalizedMessage());
+			}
+		}
+		if (!EOCL_ENV.createQuery(VALIDATE_TUBERCULOSIS_RELEVANT_MEDICAL_CONDITION_PROBLEM_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(tuberculosisRelevantMedicalConditionProblemObservation)) {
+			if (diagnostics != null) {
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 TuberculosisValidator.DIAGNOSTIC_SOURCE,
+						 TuberculosisValidator.TUBERCULOSIS_RELEVANT_MEDICAL_CONDITION_PROBLEM_OBSERVATION__TUBERCULOSIS_RELEVANT_MEDICAL_CONDITION_PROBLEM_OBSERVATION_CODE,
+						 TuberculosisPlugin.INSTANCE.getString("TuberculosisRelevantMedicalConditionProblemObservationCode"),
+						 new Object [] { tuberculosisRelevantMedicalConditionProblemObservation }));
+			}
+			 
+			return false;
+		}
+		return true;
+	}
 
   /**
-   * The cached OCL expression body for the '{@link #validateTuberculosisRelevantMedicalConditionProblemObservationValue(TuberculosisRelevantMedicalConditionProblemObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Tuberculosis Relevant Medical Condition Problem Observation Value</em>}' operation.
-   * <!-- begin-user-doc -->
+	 * The cached OCL expression body for the '{@link #validateProblemObservationTemplateId(TuberculosisRelevantMedicalConditionProblemObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Problem Observation Template Id</em>}' operation.
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @see #validateTuberculosisRelevantMedicalConditionProblemObservationValue(TuberculosisRelevantMedicalConditionProblemObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-   * @generated
-   * @ordered
-   */
-  protected static final String VALIDATE_TUBERCULOSIS_RELEVANT_MEDICAL_CONDITION_PROBLEM_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (self.value->size() = 1 and self.value->forAll(element | element.oclIsTypeOf(datatypes::CE)))";
-
-  /**
-   * The cached OCL invariant for the '{@link #validateTuberculosisRelevantMedicalConditionProblemObservationValue(TuberculosisRelevantMedicalConditionProblemObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Tuberculosis Relevant Medical Condition Problem Observation Value</em>}' invariant operation.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @see #validateTuberculosisRelevantMedicalConditionProblemObservationValue(TuberculosisRelevantMedicalConditionProblemObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-   * @generated
-   * @ordered
-   */
-  
-  protected static Constraint VALIDATE_TUBERCULOSIS_RELEVANT_MEDICAL_CONDITION_PROBLEM_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * <!-- begin-model-doc -->
-   * @param tuberculosisRelevantMedicalConditionProblemObservation The receiving '<em><b>Relevant Medical Condition Problem Observation</b></em>' model object.
-   * @param diagnostics The chain of diagnostics to which problems are to be appended.
-   * @param context The cache of context-specific information.
-   * <!-- end-model-doc -->
-   * @generated
-   */
-  
-  public static  boolean validateTuberculosisRelevantMedicalConditionProblemObservationValue(TuberculosisRelevantMedicalConditionProblemObservation tuberculosisRelevantMedicalConditionProblemObservation, DiagnosticChain diagnostics, Map<Object, Object> context)
-  {
-  	  
-    if (VALIDATE_TUBERCULOSIS_RELEVANT_MEDICAL_CONDITION_PROBLEM_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-      OCL.Helper helper = EOCL_ENV.createOCLHelper();
-      helper.setContext(TuberculosisPackage.Literals.TUBERCULOSIS_RELEVANT_MEDICAL_CONDITION_PROBLEM_OBSERVATION);
-      try
-      {
-        VALIDATE_TUBERCULOSIS_RELEVANT_MEDICAL_CONDITION_PROBLEM_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_TUBERCULOSIS_RELEVANT_MEDICAL_CONDITION_PROBLEM_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-      }
-      catch (ParserException pe)
-      {
-        throw new UnsupportedOperationException(pe.getLocalizedMessage());
-      }
-    }
-    if (!EOCL_ENV.createQuery(VALIDATE_TUBERCULOSIS_RELEVANT_MEDICAL_CONDITION_PROBLEM_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(tuberculosisRelevantMedicalConditionProblemObservation))
-    {
-      if (diagnostics != null)
-      {
-        diagnostics.add
-          (new BasicDiagnostic
-            (Diagnostic.ERROR,
-             TuberculosisValidator.DIAGNOSTIC_SOURCE,
-             TuberculosisValidator.TUBERCULOSIS_RELEVANT_MEDICAL_CONDITION_PROBLEM_OBSERVATION__TUBERCULOSIS_RELEVANT_MEDICAL_CONDITION_PROBLEM_OBSERVATION_VALUE,
-             TuberculosisPlugin.INSTANCE.getString("TuberculosisRelevantMedicalConditionProblemObservationValue"),
-             new Object [] { tuberculosisRelevantMedicalConditionProblemObservation }));
-      }
-       
-      return false;
-    }
-    return true;
-  }
-
-  /**
-   * The cached OCL expression body for the '{@link #validateProblemObservationTemplateId(TuberculosisRelevantMedicalConditionProblemObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Problem Observation Template Id</em>}' operation.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @see #validateProblemObservationTemplateId(TuberculosisRelevantMedicalConditionProblemObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-   * @generated
-   * @ordered
-   */
+	 * @see #validateProblemObservationTemplateId(TuberculosisRelevantMedicalConditionProblemObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
   protected static final String VALIDATE_PROBLEM_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.15.3.108')";
 
   /**
-   * The cached OCL invariant for the '{@link #validateProblemObservationTemplateId(TuberculosisRelevantMedicalConditionProblemObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Problem Observation Template Id</em>}' invariant operation.
-   * <!-- begin-user-doc -->
+	 * The cached OCL invariant for the '{@link #validateProblemObservationTemplateId(TuberculosisRelevantMedicalConditionProblemObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Problem Observation Template Id</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @see #validateProblemObservationTemplateId(TuberculosisRelevantMedicalConditionProblemObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-   * @generated
-   * @ordered
-   */
+	 * @see #validateProblemObservationTemplateId(TuberculosisRelevantMedicalConditionProblemObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
   
   protected static Constraint VALIDATE_PROBLEM_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * <!-- begin-model-doc -->
-   * @param tuberculosisRelevantMedicalConditionProblemObservation The receiving '<em><b>Relevant Medical Condition Problem Observation</b></em>' model object.
-   * @param diagnostics The chain of diagnostics to which problems are to be appended.
-   * @param context The cache of context-specific information.
-   * <!-- end-model-doc -->
-   * @generated
-   */
+	 * <!-- begin-model-doc -->
+	 * self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.15.3.108')
+	 * @param tuberculosisRelevantMedicalConditionProblemObservation The receiving '<em><b>Relevant Medical Condition Problem Observation</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
   
   public static  boolean validateProblemObservationTemplateId(TuberculosisRelevantMedicalConditionProblemObservation tuberculosisRelevantMedicalConditionProblemObservation, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
   	  
-    if (VALIDATE_PROBLEM_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-      OCL.Helper helper = EOCL_ENV.createOCLHelper();
-      helper.setContext(TuberculosisPackage.Literals.TUBERCULOSIS_RELEVANT_MEDICAL_CONDITION_PROBLEM_OBSERVATION);
-      try
-      {
-        VALIDATE_PROBLEM_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PROBLEM_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-      }
-      catch (ParserException pe)
-      {
-        throw new UnsupportedOperationException(pe.getLocalizedMessage());
-      }
-    }
-    if (!EOCL_ENV.createQuery(VALIDATE_PROBLEM_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(tuberculosisRelevantMedicalConditionProblemObservation))
-    {
-      if (diagnostics != null)
-      {
-        diagnostics.add
-          (new BasicDiagnostic
-            (Diagnostic.ERROR,
-             TuberculosisValidator.DIAGNOSTIC_SOURCE,
-             TuberculosisValidator.TUBERCULOSIS_RELEVANT_MEDICAL_CONDITION_PROBLEM_OBSERVATION__PROBLEM_OBSERVATION_TEMPLATE_ID,
-             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "ProblemObservationTemplateId", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(tuberculosisRelevantMedicalConditionProblemObservation, context) }),
-             new Object [] { tuberculosisRelevantMedicalConditionProblemObservation }));
-      }
-       
-      return false;
-    }
-    return true;
-  }
+		if (VALIDATE_PROBLEM_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+			helper.setContext(TuberculosisPackage.Literals.TUBERCULOSIS_RELEVANT_MEDICAL_CONDITION_PROBLEM_OBSERVATION);
+			try {
+				VALIDATE_PROBLEM_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PROBLEM_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+			}
+			catch (ParserException pe) {
+				throw new UnsupportedOperationException(pe.getLocalizedMessage());
+			}
+		}
+		if (!EOCL_ENV.createQuery(VALIDATE_PROBLEM_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(tuberculosisRelevantMedicalConditionProblemObservation)) {
+			if (diagnostics != null) {
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 TuberculosisValidator.DIAGNOSTIC_SOURCE,
+						 TuberculosisValidator.TUBERCULOSIS_RELEVANT_MEDICAL_CONDITION_PROBLEM_OBSERVATION__PROBLEM_OBSERVATION_TEMPLATE_ID,
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "ProblemObservationTemplateId", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(tuberculosisRelevantMedicalConditionProblemObservation, context) }),
+						 new Object [] { tuberculosisRelevantMedicalConditionProblemObservation }));
+			}
+			 
+			return false;
+		}
+		return true;
+	}
 
 } // TuberculosisRelevantMedicalConditionProblemObservationOperations

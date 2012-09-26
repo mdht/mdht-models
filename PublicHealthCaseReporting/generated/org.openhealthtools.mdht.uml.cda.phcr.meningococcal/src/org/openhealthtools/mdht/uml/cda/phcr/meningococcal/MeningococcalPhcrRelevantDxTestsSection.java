@@ -14,7 +14,8 @@ import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.common.util.EList;
-
+import org.eclipse.emf.ecore.EObject;
+import org.openhealthtools.mdht.emf.runtime.util.Initializer;
 import org.openhealthtools.mdht.uml.cda.phcr.PhcrRelevantDxTestsSection;
 
 /**
@@ -24,7 +25,7 @@ import org.openhealthtools.mdht.uml.cda.phcr.PhcrRelevantDxTestsSection;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.phcr.meningococcal.MeningococcalPackage#getMeningococcalPhcrRelevantDxTestsSection()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation templateId.root='2.16.840.1.113883.10.20.15.2.60' constraints.validation.error='MeningococcalPhcrRelevantDxTestsSectionTemplateId' constraints.validation.warning='MeningococcalPhcrRelevantDxTestsSectionMeningococcalResultObservation' constraints.validation.info='MeningococcalPhcrRelevantDxTestsSectionMeningococcalResultOrganizer'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='MeningococcalPhcrRelevantDxTestsSectionTemplateId' templateId.root='2.16.840.1.113883.10.20.15.2.60' constraints.validation.warning='MeningococcalPhcrRelevantDxTestsSectionMeningococcalResultObservation' constraints.validation.info='MeningococcalPhcrRelevantDxTestsSectionMeningococcalResultOrganizer'"
  * @generated
  */
 public interface MeningococcalPhcrRelevantDxTestsSection extends PhcrRelevantDxTestsSection {
@@ -84,4 +85,11 @@ public interface MeningococcalPhcrRelevantDxTestsSection extends PhcrRelevantDxT
 	 * @generated
 	 */
 	public MeningococcalPhcrRelevantDxTestsSection init();
+
+	/**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    public MeningococcalPhcrRelevantDxTestsSection init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // MeningococcalPhcrRelevantDxTestsSection

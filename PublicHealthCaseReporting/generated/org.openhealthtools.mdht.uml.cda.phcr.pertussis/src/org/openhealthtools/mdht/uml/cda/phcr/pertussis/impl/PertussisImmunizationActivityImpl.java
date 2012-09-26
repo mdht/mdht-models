@@ -26,8 +26,6 @@ import org.openhealthtools.mdht.uml.cda.phcr.pertussis.PertussisPackage;
 
 import org.openhealthtools.mdht.uml.cda.phcr.pertussis.operations.PertussisImmunizationActivityOperations;
 
-import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
-
 /**
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Immunization Activity</b></em>'.
@@ -39,58 +37,60 @@ import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
  */
 public class PertussisImmunizationActivityImpl extends MedicationActivityImpl implements PertussisImmunizationActivity {
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	protected PertussisImmunizationActivityImpl() {
-    super();
-  }
+		super();
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	@Override
 	protected EClass eStaticClass() {
-    return PertussisPackage.Literals.PERTUSSIS_IMMUNIZATION_ACTIVITY;
-  }
+		return PertussisPackage.Literals.PERTUSSIS_IMMUNIZATION_ACTIVITY;
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public boolean validatePertussisImmunizationActivityMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return PertussisImmunizationActivityOperations.validatePertussisImmunizationActivityMoodCode(this, diagnostics, context);
-  }
+		return PertussisImmunizationActivityOperations.validatePertussisImmunizationActivityMoodCode(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	@Override
 	public boolean validateMedicationActivityTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return PertussisImmunizationActivityOperations.validateMedicationActivityTemplateId(this, diagnostics, context);
-  }
+		return PertussisImmunizationActivityOperations.validateMedicationActivityTemplateId(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
+	@Override
 	public PertussisImmunizationActivity init() {
-      return Initializer.Util.init(this);
-  }
+	    return Initializer.Util.init(this);
+	}
 
   /**
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
      * @generated
      */
-    public PertussisImmunizationActivity init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+    @Override
+	public PertussisImmunizationActivity init(Iterable<? extends Initializer<? extends EObject>> initializers) {
         Initializer.Util.init(this, initializers);
         return this;
     }

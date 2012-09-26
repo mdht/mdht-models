@@ -10,6 +10,8 @@
  *******************************************************************************/
 package org.openhealthtools.mdht.uml.cda.phcr.meningococcal;
 
+import org.eclipse.emf.ecore.EObject;
+import org.openhealthtools.mdht.emf.runtime.util.Initializer;
 import org.openhealthtools.mdht.uml.cda.phcr.ResultOrganizer;
 
 /**
@@ -19,7 +21,7 @@ import org.openhealthtools.mdht.uml.cda.phcr.ResultOrganizer;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.phcr.meningococcal.MeningococcalPackage#getMeningococcalResultOrganizer()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation templateId.root='2.16.840.1.113883.10.20.15.3.140' constraints.validation.error='MeningococcalResultOrganizerTemplateId'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='MeningococcalResultOrganizerTemplateId' templateId.root='2.16.840.1.113883.10.20.15.3.140'"
  * @generated
  */
 public interface MeningococcalResultOrganizer extends ResultOrganizer {
@@ -27,10 +29,10 @@ public interface MeningococcalResultOrganizer extends ResultOrganizer {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(meningococcal::MeningococcalResultObservation))->asSequence()->first().oclAsType(meningococcal::MeningococcalResultObservation)
+	 * self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(meningococcal::MeningococcalResultObservation))->asSequence()->any(true).oclAsType(meningococcal::MeningococcalResultObservation)
 	 * <!-- end-model-doc -->
 	 * @model kind="operation" required="true" ordered="false"
-	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(meningococcal::MeningococcalResultObservation))->asSequence()->first().oclAsType(meningococcal::MeningococcalResultObservation)'"
+	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(meningococcal::MeningococcalResultObservation))->asSequence()->any(true).oclAsType(meningococcal::MeningococcalResultObservation)'"
 	 * @generated
 	 */
 	MeningococcalResultObservation getMeningococcalResultObservation();
@@ -41,4 +43,11 @@ public interface MeningococcalResultOrganizer extends ResultOrganizer {
 	 * @generated
 	 */
 	public MeningococcalResultOrganizer init();
+
+	/**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    public MeningococcalResultOrganizer init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // MeningococcalResultOrganizer

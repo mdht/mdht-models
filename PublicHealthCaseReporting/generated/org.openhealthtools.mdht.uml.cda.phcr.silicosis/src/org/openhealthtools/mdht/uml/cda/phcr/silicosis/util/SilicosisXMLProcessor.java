@@ -29,31 +29,30 @@ import org.openhealthtools.mdht.uml.cda.phcr.silicosis.SilicosisPackage;
 public class SilicosisXMLProcessor extends XMLProcessor {
 
 	/**
-   * Public constructor to instantiate the helper.
-   * <!-- begin-user-doc -->
+	 * Public constructor to instantiate the helper.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public SilicosisXMLProcessor() {
-    super((EPackage.Registry.INSTANCE));
-    SilicosisPackage.eINSTANCE.eClass();
-  }
+		super((EPackage.Registry.INSTANCE));
+		SilicosisPackage.eINSTANCE.eClass();
+	}
 	
 	/**
-   * Register for "*" and "xml" file extensions the SilicosisResourceFactoryImpl factory.
-   * <!-- begin-user-doc -->
+	 * Register for "*" and "xml" file extensions the SilicosisResourceFactoryImpl factory.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	@Override
 	protected Map<String, Resource.Factory> getRegistrations() {
-    if (registrations == null)
-    {
-      super.getRegistrations();
-      registrations.put(XML_EXTENSION, new SilicosisResourceFactoryImpl());
-      registrations.put(STAR_EXTENSION, new SilicosisResourceFactoryImpl());
-    }
-    return registrations;
-  }
+		if (registrations == null) {
+			super.getRegistrations();
+			registrations.put(XML_EXTENSION, new SilicosisResourceFactoryImpl());
+			registrations.put(STAR_EXTENSION, new SilicosisResourceFactoryImpl());
+		}
+		return registrations;
+	}
 
 } //SilicosisXMLProcessor

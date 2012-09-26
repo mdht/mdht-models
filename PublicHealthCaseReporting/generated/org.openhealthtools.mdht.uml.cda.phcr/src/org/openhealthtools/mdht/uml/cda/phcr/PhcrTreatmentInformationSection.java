@@ -33,6 +33,7 @@ public interface PhcrTreatmentInformationSection extends Section {
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
+   * self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.15.2.4')
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
    * <!-- end-model-doc -->
@@ -45,6 +46,9 @@ public interface PhcrTreatmentInformationSection extends Section {
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
+   * (self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and 
+   * let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in 
+   * value.code = '55753-8' and value.codeSystem = '2.16.840.1.113883.6.1')
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
    * <!-- end-model-doc -->
@@ -57,6 +61,7 @@ public interface PhcrTreatmentInformationSection extends Section {
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
+   * (self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined())
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
    * <!-- end-model-doc -->
@@ -69,6 +74,7 @@ public interface PhcrTreatmentInformationSection extends Section {
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
+   * (self.title.oclIsUndefined() or self.title.isNullFlavorUndefined()) implies (not self.title.oclIsUndefined() and self.title.getText() = 'Treatment Information')
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
    * <!-- end-model-doc -->
@@ -81,6 +87,7 @@ public interface PhcrTreatmentInformationSection extends Section {
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
+   * not self.text.oclIsUndefined()
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
    * <!-- end-model-doc -->
@@ -93,6 +100,7 @@ public interface PhcrTreatmentInformationSection extends Section {
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
+   * self.entry->one(entry : cda::Entry | not entry.act.oclIsUndefined() and entry.act.oclIsKindOf(phcr::TherapeuticRegimenAct) and entry.typeCode = vocab::x_ActRelationshipEntry::DRIV)
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
    * <!-- end-model-doc -->
@@ -104,25 +112,14 @@ public interface PhcrTreatmentInformationSection extends Section {
 	/**
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
+   * <!-- begin-model-doc -->
+   * self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(phcr::TherapeuticRegimenAct))->asSequence()->any(true).oclAsType(phcr::TherapeuticRegimenAct)
+   * <!-- end-model-doc -->
    * @model kind="operation" required="true" ordered="false"
    *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(phcr::TherapeuticRegimenAct))->asSequence()->any(true).oclAsType(phcr::TherapeuticRegimenAct)'"
    * @generated
    */
 	TherapeuticRegimenAct getTherapeuticRegimenAct();
-
-	/**
-   * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-   * @generated
-   */
-	public PhcrTreatmentInformationSection init();
-
-  /**
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    public PhcrTreatmentInformationSection init(Iterable<? extends Initializer<? extends EObject>> initializers);
 	
     
 } // PhcrTreatmentInformationSection

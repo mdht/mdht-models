@@ -86,6 +86,7 @@ public class ChlamydiatrachomatisPHCRClinicalInformationSectionOperations extend
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
+   * self.entry->one(entry : cda::Entry | not entry.observation.oclIsUndefined() and entry.observation.oclIsKindOf(chlamydiatrachomatis::ChlamydiatrachomatisCaseObservation) and entry.typeCode = vocab::x_ActRelationshipEntry::DRIV)
    * @param chlamydiatrachomatisPHCRClinicalInformationSection The receiving '<em><b>PHCR Clinical Information Section</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -94,8 +95,8 @@ public class ChlamydiatrachomatisPHCRClinicalInformationSectionOperations extend
    */
 	
 	public static  boolean validateChlamydiatrachomatisPHCRClinicalInformationSectionChlamydiatrachomatisCaseObservation(ChlamydiatrachomatisPHCRClinicalInformationSection chlamydiatrachomatisPHCRClinicalInformationSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
-    if (VALIDATE_CHLAMYDIATRACHOMATIS_PHCR_CLINICAL_INFORMATION_SECTION_CHLAMYDIATRACHOMATIS_CASE_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+    if (VALIDATE_CHLAMYDIATRACHOMATIS_PHCR_CLINICAL_INFORMATION_SECTION_CHLAMYDIATRACHOMATIS_CASE_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null)
+    {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(ChlamydiatrachomatisPackage.Literals.CHLAMYDIATRACHOMATIS_PHCR_CLINICAL_INFORMATION_SECTION);
       try
@@ -116,10 +117,9 @@ public class ChlamydiatrachomatisPHCRClinicalInformationSectionOperations extend
             (Diagnostic.ERROR,
              ChlamydiatrachomatisValidator.DIAGNOSTIC_SOURCE,
              ChlamydiatrachomatisValidator.CHLAMYDIATRACHOMATIS_PHCR_CLINICAL_INFORMATION_SECTION__CHLAMYDIATRACHOMATIS_PHCR_CLINICAL_INFORMATION_SECTION_CHLAMYDIATRACHOMATIS_CASE_OBSERVATION,
-             ChlamydiatrachomatisPlugin.INSTANCE.getString("ChlamydiatrachomatisPHCRClinicalInformationSectionChlamydiatrachomatisCaseObservation"),
+             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "validateChlamydiatrachomatisPHCRClinicalInformationSectionChlamydiatrachomatisCaseObservation", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(chlamydiatrachomatisPHCRClinicalInformationSection, context) }),
              new Object [] { chlamydiatrachomatisPHCRClinicalInformationSection }));
       }
-       
       return false;
     }
     return true;
@@ -148,6 +148,10 @@ public class ChlamydiatrachomatisPHCRClinicalInformationSectionOperations extend
 	/**
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
+   * <!-- begin-model-doc -->
+   * self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(chlamydiatrachomatis::ChlamydiatrachomatisCaseObservation))->asSequence()->any(true).oclAsType(chlamydiatrachomatis::ChlamydiatrachomatisCaseObservation)
+   * @param chlamydiatrachomatisPHCRClinicalInformationSection The receiving '<em><b>PHCR Clinical Information Section</b></em>' model object.
+   * <!-- end-model-doc -->
    * @generated
    */
 	
@@ -195,6 +199,7 @@ public class ChlamydiatrachomatisPHCRClinicalInformationSectionOperations extend
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
+   * self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.15.2.39')
    * @param chlamydiatrachomatisPHCRClinicalInformationSection The receiving '<em><b>PHCR Clinical Information Section</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -203,8 +208,8 @@ public class ChlamydiatrachomatisPHCRClinicalInformationSectionOperations extend
    */
 	
 	public static  boolean validatePhcrClinicalInformationSectionTemplateId(ChlamydiatrachomatisPHCRClinicalInformationSection chlamydiatrachomatisPHCRClinicalInformationSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
-    if (VALIDATE_PHCR_CLINICAL_INFORMATION_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+    if (VALIDATE_PHCR_CLINICAL_INFORMATION_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null)
+    {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(ChlamydiatrachomatisPackage.Literals.CHLAMYDIATRACHOMATIS_PHCR_CLINICAL_INFORMATION_SECTION);
       try
@@ -225,10 +230,9 @@ public class ChlamydiatrachomatisPHCRClinicalInformationSectionOperations extend
             (Diagnostic.ERROR,
              ChlamydiatrachomatisValidator.DIAGNOSTIC_SOURCE,
              ChlamydiatrachomatisValidator.CHLAMYDIATRACHOMATIS_PHCR_CLINICAL_INFORMATION_SECTION__PHCR_CLINICAL_INFORMATION_SECTION_TEMPLATE_ID,
-             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "PhcrClinicalInformationSectionTemplateId", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(chlamydiatrachomatisPHCRClinicalInformationSection, context) }),
+             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "validatePhcrClinicalInformationSectionTemplateId", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(chlamydiatrachomatisPHCRClinicalInformationSection, context) }),
              new Object [] { chlamydiatrachomatisPHCRClinicalInformationSection }));
       }
-       
       return false;
     }
     return true;

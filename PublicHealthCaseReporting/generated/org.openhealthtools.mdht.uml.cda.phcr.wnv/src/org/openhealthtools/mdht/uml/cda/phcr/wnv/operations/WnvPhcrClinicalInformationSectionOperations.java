@@ -79,6 +79,7 @@ public class WnvPhcrClinicalInformationSectionOperations extends PhcrClinicalInf
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
+   * self.entry->one(entry : cda::Entry | not entry.observation.oclIsUndefined() and entry.observation.oclIsKindOf(wnv::WnvCaseObservation) and entry.typeCode = vocab::x_ActRelationshipEntry::DRIV)
    * @param wnvPhcrClinicalInformationSection The receiving '<em><b>Phcr Clinical Information Section</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -87,8 +88,8 @@ public class WnvPhcrClinicalInformationSectionOperations extends PhcrClinicalInf
    */
 	
 	public static  boolean validateWnvPhcrClinicalInformationSectionWnvCaseObservation(WnvPhcrClinicalInformationSection wnvPhcrClinicalInformationSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
-    if (VALIDATE_WNV_PHCR_CLINICAL_INFORMATION_SECTION_WNV_CASE_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+    if (VALIDATE_WNV_PHCR_CLINICAL_INFORMATION_SECTION_WNV_CASE_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null)
+    {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(WnvPackage.Literals.WNV_PHCR_CLINICAL_INFORMATION_SECTION);
       try
@@ -109,10 +110,9 @@ public class WnvPhcrClinicalInformationSectionOperations extends PhcrClinicalInf
             (Diagnostic.ERROR,
              WnvValidator.DIAGNOSTIC_SOURCE,
              WnvValidator.WNV_PHCR_CLINICAL_INFORMATION_SECTION__WNV_PHCR_CLINICAL_INFORMATION_SECTION_WNV_CASE_OBSERVATION,
-             WnvPlugin.INSTANCE.getString("WnvPhcrClinicalInformationSectionWnvCaseObservation"),
+             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "validateWnvPhcrClinicalInformationSectionWnvCaseObservation", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(wnvPhcrClinicalInformationSection, context) }),
              new Object [] { wnvPhcrClinicalInformationSection }));
       }
-       
       return false;
     }
     return true;
@@ -141,6 +141,10 @@ public class WnvPhcrClinicalInformationSectionOperations extends PhcrClinicalInf
 	/**
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
+   * <!-- begin-model-doc -->
+   * self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(wnv::WnvCaseObservation))->asSequence()->any(true).oclAsType(wnv::WnvCaseObservation)
+   * @param wnvPhcrClinicalInformationSection The receiving '<em><b>Phcr Clinical Information Section</b></em>' model object.
+   * <!-- end-model-doc -->
    * @generated
    */
 	
@@ -188,6 +192,7 @@ public class WnvPhcrClinicalInformationSectionOperations extends PhcrClinicalInf
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
+   * self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.15.2.45')
    * @param wnvPhcrClinicalInformationSection The receiving '<em><b>Phcr Clinical Information Section</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -196,8 +201,8 @@ public class WnvPhcrClinicalInformationSectionOperations extends PhcrClinicalInf
    */
 	
 	public static  boolean validatePhcrClinicalInformationSectionTemplateId(WnvPhcrClinicalInformationSection wnvPhcrClinicalInformationSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
-    if (VALIDATE_PHCR_CLINICAL_INFORMATION_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+    if (VALIDATE_PHCR_CLINICAL_INFORMATION_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null)
+    {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(WnvPackage.Literals.WNV_PHCR_CLINICAL_INFORMATION_SECTION);
       try
@@ -218,10 +223,9 @@ public class WnvPhcrClinicalInformationSectionOperations extends PhcrClinicalInf
             (Diagnostic.ERROR,
              WnvValidator.DIAGNOSTIC_SOURCE,
              WnvValidator.WNV_PHCR_CLINICAL_INFORMATION_SECTION__PHCR_CLINICAL_INFORMATION_SECTION_TEMPLATE_ID,
-             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "PhcrClinicalInformationSectionTemplateId", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(wnvPhcrClinicalInformationSection, context) }),
+             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "validatePhcrClinicalInformationSectionTemplateId", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(wnvPhcrClinicalInformationSection, context) }),
              new Object [] { wnvPhcrClinicalInformationSection }));
       }
-       
       return false;
     }
     return true;

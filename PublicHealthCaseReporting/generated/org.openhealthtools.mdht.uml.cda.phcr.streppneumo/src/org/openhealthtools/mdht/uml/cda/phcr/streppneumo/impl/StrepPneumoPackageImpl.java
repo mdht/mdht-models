@@ -224,10 +224,8 @@ public class StrepPneumoPackageImpl extends EPackageImpl implements StrepPneumoP
         // Register package validator
         EValidator.Registry.INSTANCE.put
             (theStrepPneumoPackage, 
-             new EValidator.Descriptor()
-             {
-                 public EValidator getEValidator()
-                 {
+             new EValidator.Descriptor() {
+                 public EValidator getEValidator() {
                      return StrepPneumoValidator.INSTANCE;
                  }
              });
@@ -595,15 +593,6 @@ public class StrepPneumoPackageImpl extends EPackageImpl implements StrepPneumoP
 
         initEClass(strepPneumoSignsAndSymptomsObservationEClass, StrepPneumoSignsAndSymptomsObservation.class, "StrepPneumoSignsAndSymptomsObservation", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 
-        op = addEOperation(strepPneumoSignsAndSymptomsObservationEClass, ecorePackage.getEBoolean(), "validateStrepPneumoSignsAndSymptomsObservationValueP", 0, 1, IS_UNIQUE, IS_ORDERED);
-        addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
-        g1 = createEGenericType(ecorePackage.getEMap());
-        g2 = createEGenericType(ecorePackage.getEJavaObject());
-        g1.getETypeArguments().add(g2);
-        g2 = createEGenericType(ecorePackage.getEJavaObject());
-        g1.getETypeArguments().add(g2);
-        addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
-
         op = addEOperation(strepPneumoSignsAndSymptomsObservationEClass, ecorePackage.getEBoolean(), "validateStrepPneumoSignsAndSymptomsObservationValue", 0, 1, IS_UNIQUE, IS_ORDERED);
         addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
         g1 = createEGenericType(ecorePackage.getEMap());
@@ -680,25 +669,7 @@ public class StrepPneumoPackageImpl extends EPackageImpl implements StrepPneumoP
 
         initEClass(strepPneumoResultObservationEClass, StrepPneumoResultObservation.class, "StrepPneumoResultObservation", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 
-        op = addEOperation(strepPneumoResultObservationEClass, ecorePackage.getEBoolean(), "validateStrepPneumoResultObservationCode", 0, 1, IS_UNIQUE, IS_ORDERED);
-        addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
-        g1 = createEGenericType(ecorePackage.getEMap());
-        g2 = createEGenericType(ecorePackage.getEJavaObject());
-        g1.getETypeArguments().add(g2);
-        g2 = createEGenericType(ecorePackage.getEJavaObject());
-        g1.getETypeArguments().add(g2);
-        addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
-
         initEClass(strepPneumoResultOrganizerEClass, StrepPneumoResultOrganizer.class, "StrepPneumoResultOrganizer", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-
-        op = addEOperation(strepPneumoResultOrganizerEClass, ecorePackage.getEBoolean(), "validateStrepPneumoResultOrganizerCode", 0, 1, IS_UNIQUE, IS_ORDERED);
-        addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
-        g1 = createEGenericType(ecorePackage.getEMap());
-        g2 = createEGenericType(ecorePackage.getEJavaObject());
-        g1.getETypeArguments().add(g2);
-        g2 = createEGenericType(ecorePackage.getEJavaObject());
-        g1.getETypeArguments().add(g2);
-        addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
 
         op = addEOperation(strepPneumoResultOrganizerEClass, ecorePackage.getEBoolean(), "validateStrepPneumoResultOrganizerStrepPneumoResultObservation", 0, 1, IS_UNIQUE, IS_ORDERED);
         addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
@@ -830,10 +801,9 @@ public class StrepPneumoPackageImpl extends EPackageImpl implements StrepPneumoP
         addAnnotation
           (this, 
            source, 
-           new String[] 
-           {
+           new String[] {
              "initializers", "org.openhealthtools.mdht.uml.cda.phcr.streppneumo"
-           });                                                                                                                               
+           });                                                                                                                                                             
     }
 
   /**
@@ -847,115 +817,101 @@ public class StrepPneumoPackageImpl extends EPackageImpl implements StrepPneumoP
         addAnnotation
           (strepPneumoCaseReportEClass, 
            source, 
-           new String[] 
-           {
+           new String[] {
              "constraints.validation.error", "StrepPneumoCaseReportTemplateId StrepPneumoCaseReportTitle StrepPneumoCaseReportStrepPneumoPHCRClinicalInformationSection",
              "templateId.root", "2.16.840.1.113883.10.20.15.1.12",
              "title.mixed", "Public Health Case Report - Streptococcus pneumoniae",
              "constraints.validation.warning", "StrepPneumoCaseReportStrepPneumoPHCRTreatmentInformationSection StrepPneumoCaseReportStrepPneumoRelevantDiagnosticTestsAndOrLaboratoryDataSection StrepPneumoCaseReportStrepPneumoSocialHistorySection StrepPneumoCaseReportStrepPneumoImmunizationSection"
-           });                             
+           });                                        
         addAnnotation
           (strepPneumoPHCRClinicalInformationSectionEClass, 
            source, 
-           new String[] 
-           {
+           new String[] {
              "constraints.validation.error", "StrepPneumoPHCRClinicalInformationSectionTemplateId StrepPneumoPHCRClinicalInformationSectionStrepPneumoCaseObservation",
              "templateId.root", "2.16.840.1.113883.10.20.15.2.55"
-           });          
+           });            
         addAnnotation
           (strepPneumoCaseObservationEClass, 
            source, 
-           new String[] 
-           {
+           new String[] {
              "constraints.validation.error", "StrepPneumoCaseObservationTemplateId",
              "templateId.root", "2.16.840.1.113883.10.20.15.3.125",
              "constraints.validation.warning", "StrepPneumoCaseObservationStrepPneumoSignsAndSymptomsObservation"
-           });          
+           });            
         addAnnotation
           (strepPneumoSignsAndSymptomsObservationEClass, 
            source, 
-           new String[] 
-           {
-             "constraints.validation.error", "StrepPneumoSignsAndSymptomsObservationTemplateId StrepPneumoSignsAndSymptomsObservationValue StrepPneumoSignsAndSymptomsObservationValueP",
+           new String[] {
+             "constraints.validation.error", "StrepPneumoSignsAndSymptomsObservationTemplateId StrepPneumoSignsAndSymptomsObservationValue",
              "templateId.root", "2.16.840.1.113883.10.20.15.3.121",
              "value.codeSystem", "2.16.840.1.113883.6.96",
-             "value.codeSystemName", "SNOMEDCT",
-             "constraints.validation.dependOn.StrepPneumoSignsAndSymptomsObservationValue", "StrepPneumoSignsAndSymptomsObservationValueP"
-           });            
+             "value.codeSystemName", "SNOMEDCT"
+           });          
         addAnnotation
           (strepPneumoPHCRTreatmentInformationSectionEClass, 
            source, 
-           new String[] 
-           {
+           new String[] {
              "constraints.validation.error", "StrepPneumoPHCRTreatmentInformationSectionTemplateId StrepPneumoPHCRTreatmentInformationSectionStrepPneumoTherapeuticRegimenAct",
              "templateId.root", "2.16.840.1.113883.10.20.15.2.53"
-           });          
+           });            
         addAnnotation
           (strepPneumoTherapeuticRegimenActEClass, 
            source, 
-           new String[] 
-           {
+           new String[] {
              "constraints.validation.error", "StrepPneumoTherapeuticRegimenActTemplateId",
              "templateId.root", "2.16.840.1.113883.10.20.15.3.122",
              "constraints.validation.warning", "StrepPneumoTherapeuticRegimenActStrepPneumoTreatmentGivenSubstanceAdministration",
              "constraints.validation.info", "StrepPneumoTherapeuticRegimenActStrepPneumoTreatmentNotGivenSubstanceAdministration"
-           });              
+           });                  
         addAnnotation
           (strepPneumoTreatmentGivenSubstanceAdministrationEClass, 
            source, 
-           new String[] 
-           {
+           new String[] {
              "constraints.validation.error", "StrepPneumoTreatmentGivenSubstanceAdministrationTemplateId",
              "templateId.root", "2.16.840.1.113883.10.20.15.3.126"
            });      
         addAnnotation
           (strepPneumoTreatmentNotGivenSubstanceAdministrationEClass, 
            source, 
-           new String[] 
-           {
+           new String[] {
              "constraints.validation.error", "StrepPneumoTreatmentNotGivenSubstanceAdministrationTemplateId",
              "templateId.root", "2.16.840.1.113883.10.20.15.3.127"
            });      
         addAnnotation
           (strepPneumoRelevantDiagnosticTestsAndOrLaboratoryDataSectionEClass, 
            source, 
-           new String[] 
-           {
+           new String[] {
              "constraints.validation.error", "StrepPneumoRelevantDiagnosticTestsAndOrLaboratoryDataSectionTemplateId",
              "templateId.root", "2.16.840.1.113883.10.20.15.2.56",
              "constraints.validation.warning", "StrepPneumoRelevantDiagnosticTestsAndOrLaboratoryDataSectionStrepPneumoResultObservation",
              "constraints.validation.info", "StrepPneumoRelevantDiagnosticTestsAndOrLaboratoryDataSectionStrepPneumoResultOrganizer"
-           });              
+           });                  
         addAnnotation
           (strepPneumoResultObservationEClass, 
            source, 
-           new String[] 
-           {
-             "constraints.validation.error", "StrepPneumoResultObservationTemplateId StrepPneumoResultObservationCode",
+           new String[] {
+             "constraints.validation.error", "StrepPneumoResultObservationTemplateId",
              "templateId.root", "2.16.840.1.113883.10.20.15.3.128"
-           });         
+           });      
         addAnnotation
           (strepPneumoResultOrganizerEClass, 
            source, 
-           new String[] 
-           {
-             "constraints.validation.error", "StrepPneumoResultOrganizerTemplateId StrepPneumoResultOrganizerCode StrepPneumoResultOrganizerStrepPneumoResultObservation",
+           new String[] {
+             "constraints.validation.error", "StrepPneumoResultOrganizerTemplateId StrepPneumoResultOrganizerStrepPneumoResultObservation",
              "templateId.root", "2.16.840.1.113883.10.20.15.3.130"
-           });             
+           });            
         addAnnotation
           (strepPneumoSocialHistorySectionEClass, 
            source, 
-           new String[] 
-           {
+           new String[] {
              "constraints.validation.error", "StrepPneumoSocialHistorySectionTemplateId",
              "templateId.root", "2.16.840.1.113883.10.20.15.2.54",
              "constraints.validation.warning", "StrepPneumoSocialHistorySectionStrepPneumoPossibleExposureLocationAndTypeAct"
-           });          
+           });            
         addAnnotation
           (strepPneumoPossibleExposureLocationActEClass, 
            source, 
-           new String[] 
-           {
+           new String[] {
              "constraints.validation.error", "StrepPneumoPossibleExposureLocationActTemplateId StrepPneumoPossibleExposureLocationActClassCode StrepPneumoPossibleExposureLocationActCode StrepPneumoPossibleExposureLocationActMoodCode StrepPneumoPossibleExposureLocationActStatusCode StrepPneumoPossibleExposureLocationActStatusCodeP",
              "templateId.root", "2.16.840.1.113883.10.20.15.3.129",
              "classCode", "ACT",
@@ -964,31 +920,28 @@ public class StrepPneumoPackageImpl extends EPackageImpl implements StrepPneumoP
              "code.codeSystemName", "SNOMEDCT",
              "moodCode", "EVN",
              "statusCode.code", "completed"
-           });                       
+           });                             
         addAnnotation
           (strepPneumoImmunizationSectionEClass, 
            source, 
-           new String[] 
-           {
+           new String[] {
              "constraints.validation.error", "StrepPneumoImmunizationSectionTemplateId StrepPneumoImmunizationSectionStrepPneumoImmunizationActivity",
              "templateId.root", "2.16.840.1.113883.10.20.15.2.52"
-           });          
+           });            
         addAnnotation
           (strepPneumoImmunizationActivityEClass, 
            source, 
-           new String[] 
-           {
+           new String[] {
              "constraints.validation.error", "StrepPneumoImmunizationActivityTemplateId",
              "templateId.root", "2.16.840.1.113883.10.20.15.3.124"
            });       
         addAnnotation
           (strepPneumoImmunizationProductEClass, 
            source, 
-           new String[] 
-           {
+           new String[] {
              "constraints.validation.error", "StrepPneumoImmunizationProductTemplateId",
              "templateId.root", "2.16.840.1.113883.10.20.15.3.123"
-           });   
+           });    
     }
 
 	/**
@@ -1002,87 +955,73 @@ public class StrepPneumoPackageImpl extends EPackageImpl implements StrepPneumoP
         addAnnotation
           (strepPneumoCaseReportEClass, 
            source, 
-           new String[] 
-           {
-           });                             
+           new String[] {
+           });                                        
         addAnnotation
           (strepPneumoPHCRClinicalInformationSectionEClass, 
            source, 
-           new String[] 
-           {
-           });          
+           new String[] {
+           });            
         addAnnotation
           (strepPneumoCaseObservationEClass, 
            source, 
-           new String[] 
-           {
-           });          
+           new String[] {
+           });            
         addAnnotation
           (strepPneumoSignsAndSymptomsObservationEClass, 
            source, 
-           new String[] 
-           {
-           });            
+           new String[] {
+           });          
         addAnnotation
           (strepPneumoPHCRTreatmentInformationSectionEClass, 
            source, 
-           new String[] 
-           {
-           });          
+           new String[] {
+           });            
         addAnnotation
           (strepPneumoTherapeuticRegimenActEClass, 
            source, 
-           new String[] 
-           {
-           });              
+           new String[] {
+           });                  
         addAnnotation
           (strepPneumoTreatmentGivenSubstanceAdministrationEClass, 
            source, 
-           new String[] 
-           {
+           new String[] {
            });      
         addAnnotation
           (strepPneumoTreatmentNotGivenSubstanceAdministrationEClass, 
            source, 
-           new String[] 
-           {
+           new String[] {
            });      
         addAnnotation
           (strepPneumoRelevantDiagnosticTestsAndOrLaboratoryDataSectionEClass, 
            source, 
-           new String[] 
-           {
-           });              
+           new String[] {
+           });                  
         addAnnotation
           (strepPneumoResultObservationEClass, 
            source, 
-           new String[] 
-           {
-           });         
+           new String[] {
+           });      
         addAnnotation
           (strepPneumoResultOrganizerEClass, 
            source, 
-           new String[] 
-           {
-           });             
+           new String[] {
+           });            
         addAnnotation
           (strepPneumoSocialHistorySectionEClass, 
            source, 
-           new String[] 
-           {
-           });                             
+           new String[] {
+           });                                     
         addAnnotation
           (strepPneumoImmunizationSectionEClass, 
            source, 
-           new String[] 
-           {
-           });          
+           new String[] {
+           });            
         addAnnotation
           (strepPneumoImmunizationActivityEClass, 
            source, 
-           new String[] 
-           {
-           });     
+           new String[] {
+           });      
     }
 
 } //StrepPneumoPackageImpl

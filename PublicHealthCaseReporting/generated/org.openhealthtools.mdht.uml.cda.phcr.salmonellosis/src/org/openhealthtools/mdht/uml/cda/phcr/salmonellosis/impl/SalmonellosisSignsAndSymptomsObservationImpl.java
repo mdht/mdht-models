@@ -76,22 +76,4 @@ public class SalmonellosisSignsAndSymptomsObservationImpl extends SignsAndSympto
   {
     return SalmonellosisSignsAndSymptomsObservationOperations.validateSignsAndSymptomsObservationTemplateId(this, diagnostics, context);
   }
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public SalmonellosisSignsAndSymptomsObservation init() {
-      return Initializer.Util.init(this);
-  }
-    /**
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    public SalmonellosisSignsAndSymptomsObservation init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-        Initializer.Util.init(this, initializers);
-        return this;
-    }
 } //SalmonellosisSignsAndSymptomsObservationImpl

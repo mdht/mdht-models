@@ -22,7 +22,6 @@ import org.openhealthtools.mdht.uml.cda.phcr.pertussis.PertussisPackage;
 import org.openhealthtools.mdht.uml.cda.phcr.pertussis.PertussisTherapeuticRegimenAct;
 import org.openhealthtools.mdht.uml.cda.phcr.pertussis.PertussisTreatmentInformationSection;
 import org.openhealthtools.mdht.uml.cda.phcr.pertussis.operations.PertussisTreatmentInformationSectionOperations;
-import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
 
 /**
  * <!-- begin-user-doc -->
@@ -35,67 +34,69 @@ import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
  */
 public class PertussisTreatmentInformationSectionImpl extends PhcrTreatmentInformationSectionImpl implements PertussisTreatmentInformationSection {
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	protected PertussisTreatmentInformationSectionImpl() {
-    super();
-  }
+		super();
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	@Override
 	protected EClass eStaticClass() {
-    return PertussisPackage.Literals.PERTUSSIS_TREATMENT_INFORMATION_SECTION;
-  }
+		return PertussisPackage.Literals.PERTUSSIS_TREATMENT_INFORMATION_SECTION;
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public boolean validatePertussisTreatmentInformationSectionPertussisTherapeuticRegimen(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return PertussisTreatmentInformationSectionOperations.validatePertussisTreatmentInformationSectionPertussisTherapeuticRegimen(this, diagnostics, context);
-  }
+		return PertussisTreatmentInformationSectionOperations.validatePertussisTreatmentInformationSectionPertussisTherapeuticRegimen(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public PertussisTherapeuticRegimenAct getPertussisTherapeuticRegimen() {
-    return PertussisTreatmentInformationSectionOperations.getPertussisTherapeuticRegimen(this);
-  }
+		return PertussisTreatmentInformationSectionOperations.getPertussisTherapeuticRegimen(this);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	@Override
 	public boolean validatePhcrTreatmentInformationSectionTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return PertussisTreatmentInformationSectionOperations.validatePhcrTreatmentInformationSectionTemplateId(this, diagnostics, context);
-  }
+		return PertussisTreatmentInformationSectionOperations.validatePhcrTreatmentInformationSectionTemplateId(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
+	@Override
 	public PertussisTreatmentInformationSection init() {
-      return Initializer.Util.init(this);
-  }
+	    return Initializer.Util.init(this);
+	}
 
   /**
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
      * @generated
      */
-    public PertussisTreatmentInformationSection init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+    @Override
+	public PertussisTreatmentInformationSection init(Iterable<? extends Initializer<? extends EObject>> initializers) {
         Initializer.Util.init(this, initializers);
         return this;
     }

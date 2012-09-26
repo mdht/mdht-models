@@ -10,11 +10,14 @@
  *******************************************************************************/
 package org.openhealthtools.mdht.uml.cda.phcr.flu;
 
+import java.lang.Iterable;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.common.util.EList;
 
+import org.eclipse.emf.ecore.EObject;
+import org.openhealthtools.mdht.emf.runtime.util.Initializer;
 import org.openhealthtools.mdht.uml.cda.phcr.TherapeuticRegimenAct;
 
 /**
@@ -24,7 +27,7 @@ import org.openhealthtools.mdht.uml.cda.phcr.TherapeuticRegimenAct;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.phcr.flu.fluPackage#getInfluenzaTherapeuticRegimenAct()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation templateId.root='2.16.840.1.113883.10.20.15.3.75' constraints.validation.error='InfluenzaTherapeuticRegimenActTemplateId' constraints.validation.warning='InfluenzaTherapeuticRegimenActInfluenzaTreatmentGivenSubstanceAdministration' constraints.validation.info='InfluenzaTherapeuticRegimenActInfluenzaTreatmentNotGivenSubstanceAdministration'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='InfluenzaTherapeuticRegimenActTemplateId' templateId.root='2.16.840.1.113883.10.20.15.3.75' constraints.validation.warning='InfluenzaTherapeuticRegimenActInfluenzaTreatmentGivenSubstanceAdministration' constraints.validation.info='InfluenzaTherapeuticRegimenActInfluenzaTreatmentNotGivenSubstanceAdministration'"
  * @generated
  */
 public interface InfluenzaTherapeuticRegimenAct extends TherapeuticRegimenAct {
@@ -84,4 +87,11 @@ public interface InfluenzaTherapeuticRegimenAct extends TherapeuticRegimenAct {
 	 * @generated
 	 */
 	public InfluenzaTherapeuticRegimenAct init();
+
+	/**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    public InfluenzaTherapeuticRegimenAct init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // InfluenzaTherapeuticRegimenAct

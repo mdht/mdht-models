@@ -29,8 +29,6 @@ import org.openhealthtools.mdht.uml.cda.phcr.pertussis.PertussisResultOrganizer;
 
 import org.openhealthtools.mdht.uml.cda.phcr.pertussis.operations.PertussisRelevantDxTestsSectionOperations;
 
-import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
-
 /**
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Relevant Dx Tests Section</b></em>'.
@@ -42,85 +40,87 @@ import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
  */
 public class PertussisRelevantDxTestsSectionImpl extends PhcrRelevantDxTestsSectionImpl implements PertussisRelevantDxTestsSection {
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	protected PertussisRelevantDxTestsSectionImpl() {
-    super();
-  }
+		super();
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	@Override
 	protected EClass eStaticClass() {
-    return PertussisPackage.Literals.PERTUSSIS_RELEVANT_DX_TESTS_SECTION;
-  }
+		return PertussisPackage.Literals.PERTUSSIS_RELEVANT_DX_TESTS_SECTION;
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public boolean validatePertussisRelevantDxTestsSectionPertussisResultObservation(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return PertussisRelevantDxTestsSectionOperations.validatePertussisRelevantDxTestsSectionPertussisResultObservation(this, diagnostics, context);
-  }
+		return PertussisRelevantDxTestsSectionOperations.validatePertussisRelevantDxTestsSectionPertussisResultObservation(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public boolean validatePertussisRelevantDxTestsSectionPertussisResultOrganizer(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return PertussisRelevantDxTestsSectionOperations.validatePertussisRelevantDxTestsSectionPertussisResultOrganizer(this, diagnostics, context);
-  }
+		return PertussisRelevantDxTestsSectionOperations.validatePertussisRelevantDxTestsSectionPertussisResultOrganizer(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public EList<PertussisResultObservation> getPertussisResultObservations() {
-    return PertussisRelevantDxTestsSectionOperations.getPertussisResultObservations(this);
-  }
+		return PertussisRelevantDxTestsSectionOperations.getPertussisResultObservations(this);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public EList<PertussisResultOrganizer> getPertussisResultOrganizers() {
-    return PertussisRelevantDxTestsSectionOperations.getPertussisResultOrganizers(this);
-  }
+		return PertussisRelevantDxTestsSectionOperations.getPertussisResultOrganizers(this);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	@Override
 	public boolean validateResultsSectionTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return PertussisRelevantDxTestsSectionOperations.validateResultsSectionTemplateId(this, diagnostics, context);
-  }
+		return PertussisRelevantDxTestsSectionOperations.validateResultsSectionTemplateId(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
+	@Override
 	public PertussisRelevantDxTestsSection init() {
-      return Initializer.Util.init(this);
-  }
+	    return Initializer.Util.init(this);
+	}
 
   /**
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
      * @generated
      */
-    public PertussisRelevantDxTestsSection init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+    @Override
+	public PertussisRelevantDxTestsSection init(Iterable<? extends Initializer<? extends EObject>> initializers) {
         Initializer.Util.init(this, initializers);
         return this;
     }

@@ -92,6 +92,7 @@ public class ChlamydiatrachomatisPHCRRelevantDxTestsSectionOperations extends Ph
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
+   * self.entry->exists(entry : cda::Entry | not entry.observation.oclIsUndefined() and entry.observation.oclIsKindOf(chlamydiatrachomatis::ChlamydiatrachomatisResultObservation) and entry.typeCode = vocab::x_ActRelationshipEntry::DRIV)
    * @param chlamydiatrachomatisPHCRRelevantDxTestsSection The receiving '<em><b>PHCR Relevant Dx Tests Section</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -100,8 +101,8 @@ public class ChlamydiatrachomatisPHCRRelevantDxTestsSectionOperations extends Ph
    */
 	
 	public static  boolean validateChlamydiatrachomatisPHCRRelevantDxTestsSectionChlamydiatrachomatisResultObservation(ChlamydiatrachomatisPHCRRelevantDxTestsSection chlamydiatrachomatisPHCRRelevantDxTestsSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
-    if (VALIDATE_CHLAMYDIATRACHOMATIS_PHCR_RELEVANT_DX_TESTS_SECTION_CHLAMYDIATRACHOMATIS_RESULT_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+    if (VALIDATE_CHLAMYDIATRACHOMATIS_PHCR_RELEVANT_DX_TESTS_SECTION_CHLAMYDIATRACHOMATIS_RESULT_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null)
+    {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(ChlamydiatrachomatisPackage.Literals.CHLAMYDIATRACHOMATIS_PHCR_RELEVANT_DX_TESTS_SECTION);
       try
@@ -119,13 +120,12 @@ public class ChlamydiatrachomatisPHCRRelevantDxTestsSectionOperations extends Ph
       {
         diagnostics.add
           (new BasicDiagnostic
-            (Diagnostic.WARNING,
+            (Diagnostic.ERROR,
              ChlamydiatrachomatisValidator.DIAGNOSTIC_SOURCE,
              ChlamydiatrachomatisValidator.CHLAMYDIATRACHOMATIS_PHCR_RELEVANT_DX_TESTS_SECTION__CHLAMYDIATRACHOMATIS_PHCR_RELEVANT_DX_TESTS_SECTION_CHLAMYDIATRACHOMATIS_RESULT_OBSERVATION,
-             ChlamydiatrachomatisPlugin.INSTANCE.getString("ChlamydiatrachomatisPHCRRelevantDxTestsSectionChlamydiatrachomatisResultObservation"),
+             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "validateChlamydiatrachomatisPHCRRelevantDxTestsSectionChlamydiatrachomatisResultObservation", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(chlamydiatrachomatisPHCRRelevantDxTestsSection, context) }),
              new Object [] { chlamydiatrachomatisPHCRRelevantDxTestsSection }));
       }
-       
       return false;
     }
     return true;
@@ -157,6 +157,7 @@ public class ChlamydiatrachomatisPHCRRelevantDxTestsSectionOperations extends Ph
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
+   * self.entry->exists(entry : cda::Entry | not entry.organizer.oclIsUndefined() and entry.organizer.oclIsKindOf(chlamydiatrachomatis::chlamydiatrachomatisResultOrganizer) and entry.typeCode = vocab::x_ActRelationshipEntry::DRIV)
    * @param chlamydiatrachomatisPHCRRelevantDxTestsSection The receiving '<em><b>PHCR Relevant Dx Tests Section</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -165,8 +166,8 @@ public class ChlamydiatrachomatisPHCRRelevantDxTestsSectionOperations extends Ph
    */
 	
 	public static  boolean validateChlamydiatrachomatisPHCRRelevantDxTestsSectionChlamydiatrachomatisResultOrganizer(ChlamydiatrachomatisPHCRRelevantDxTestsSection chlamydiatrachomatisPHCRRelevantDxTestsSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
-    if (VALIDATE_CHLAMYDIATRACHOMATIS_PHCR_RELEVANT_DX_TESTS_SECTION_CHLAMYDIATRACHOMATIS_RESULT_ORGANIZER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+    if (VALIDATE_CHLAMYDIATRACHOMATIS_PHCR_RELEVANT_DX_TESTS_SECTION_CHLAMYDIATRACHOMATIS_RESULT_ORGANIZER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null)
+    {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(ChlamydiatrachomatisPackage.Literals.CHLAMYDIATRACHOMATIS_PHCR_RELEVANT_DX_TESTS_SECTION);
       try
@@ -184,13 +185,12 @@ public class ChlamydiatrachomatisPHCRRelevantDxTestsSectionOperations extends Ph
       {
         diagnostics.add
           (new BasicDiagnostic
-            (Diagnostic.INFO,
+            (Diagnostic.ERROR,
              ChlamydiatrachomatisValidator.DIAGNOSTIC_SOURCE,
              ChlamydiatrachomatisValidator.CHLAMYDIATRACHOMATIS_PHCR_RELEVANT_DX_TESTS_SECTION__CHLAMYDIATRACHOMATIS_PHCR_RELEVANT_DX_TESTS_SECTION_CHLAMYDIATRACHOMATIS_RESULT_ORGANIZER,
-             ChlamydiatrachomatisPlugin.INSTANCE.getString("ChlamydiatrachomatisPHCRRelevantDxTestsSectionChlamydiatrachomatisResultOrganizer"),
+             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "validateChlamydiatrachomatisPHCRRelevantDxTestsSectionChlamydiatrachomatisResultOrganizer", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(chlamydiatrachomatisPHCRRelevantDxTestsSection, context) }),
              new Object [] { chlamydiatrachomatisPHCRRelevantDxTestsSection }));
       }
-       
       return false;
     }
     return true;
@@ -219,6 +219,10 @@ public class ChlamydiatrachomatisPHCRRelevantDxTestsSectionOperations extends Ph
 	/**
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
+   * <!-- begin-model-doc -->
+   * self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(chlamydiatrachomatis::ChlamydiatrachomatisResultObservation)).oclAsType(chlamydiatrachomatis::ChlamydiatrachomatisResultObservation)
+   * @param chlamydiatrachomatisPHCRRelevantDxTestsSection The receiving '<em><b>PHCR Relevant Dx Tests Section</b></em>' model object.
+   * <!-- end-model-doc -->
    * @generated
    */
 	
@@ -265,6 +269,10 @@ public class ChlamydiatrachomatisPHCRRelevantDxTestsSectionOperations extends Ph
 	/**
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
+   * <!-- begin-model-doc -->
+   * self.getOrganizers()->select(organizer : cda::Organizer | not organizer.oclIsUndefined() and organizer.oclIsKindOf(chlamydiatrachomatis::chlamydiatrachomatisResultOrganizer)).oclAsType(chlamydiatrachomatis::chlamydiatrachomatisResultOrganizer)
+   * @param chlamydiatrachomatisPHCRRelevantDxTestsSection The receiving '<em><b>PHCR Relevant Dx Tests Section</b></em>' model object.
+   * <!-- end-model-doc -->
    * @generated
    */
 	
@@ -314,6 +322,7 @@ public class ChlamydiatrachomatisPHCRRelevantDxTestsSectionOperations extends Ph
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
+   * self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.15.2.41')
    * @param chlamydiatrachomatisPHCRRelevantDxTestsSection The receiving '<em><b>PHCR Relevant Dx Tests Section</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -322,8 +331,8 @@ public class ChlamydiatrachomatisPHCRRelevantDxTestsSectionOperations extends Ph
    */
 	
 	public static  boolean validateResultsSectionTemplateId(ChlamydiatrachomatisPHCRRelevantDxTestsSection chlamydiatrachomatisPHCRRelevantDxTestsSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
-    if (VALIDATE_RESULTS_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+    if (VALIDATE_RESULTS_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null)
+    {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(ChlamydiatrachomatisPackage.Literals.CHLAMYDIATRACHOMATIS_PHCR_RELEVANT_DX_TESTS_SECTION);
       try
@@ -344,10 +353,9 @@ public class ChlamydiatrachomatisPHCRRelevantDxTestsSectionOperations extends Ph
             (Diagnostic.ERROR,
              ChlamydiatrachomatisValidator.DIAGNOSTIC_SOURCE,
              ChlamydiatrachomatisValidator.CHLAMYDIATRACHOMATIS_PHCR_RELEVANT_DX_TESTS_SECTION__RESULTS_SECTION_TEMPLATE_ID,
-             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "ResultsSectionTemplateId", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(chlamydiatrachomatisPHCRRelevantDxTestsSection, context) }),
+             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "validateResultsSectionTemplateId", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(chlamydiatrachomatisPHCRRelevantDxTestsSection, context) }),
              new Object [] { chlamydiatrachomatisPHCRRelevantDxTestsSection }));
       }
-       
       return false;
     }
     return true;

@@ -27,10 +27,10 @@ import org.openhealthtools.mdht.uml.cda.phcr.TreatmentGivenSubstanceAdministrati
  */
 public interface StrepPneumoTreatmentGivenSubstanceAdministration extends TreatmentGivenSubstanceAdministration {
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public StrepPneumoTreatmentGivenSubstanceAdministration init();
 
   /**

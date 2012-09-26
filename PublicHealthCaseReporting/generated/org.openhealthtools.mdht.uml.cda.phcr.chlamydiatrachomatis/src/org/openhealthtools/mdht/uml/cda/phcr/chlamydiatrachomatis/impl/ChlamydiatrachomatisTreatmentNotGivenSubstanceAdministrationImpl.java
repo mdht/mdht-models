@@ -23,8 +23,6 @@ import org.openhealthtools.mdht.uml.cda.phcr.chlamydiatrachomatis.Chlamydiatrach
 import org.openhealthtools.mdht.uml.cda.phcr.chlamydiatrachomatis.operations.ChlamydiatrachomatisTreatmentNotGivenSubstanceAdministrationOperations;
 import org.openhealthtools.mdht.uml.cda.phcr.impl.TreatmentNotGivenSubstanceAdministrationImpl;
 
-import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
-
 /**
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Treatment Not Given Substance Administration</b></em>'.
@@ -63,23 +61,4 @@ public class ChlamydiatrachomatisTreatmentNotGivenSubstanceAdministrationImpl ex
 	public boolean validateTreatmentNotGivenSubstanceAdministrationTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
     return ChlamydiatrachomatisTreatmentNotGivenSubstanceAdministrationOperations.validateTreatmentNotGivenSubstanceAdministrationTemplateId(this, diagnostics, context);
   }
-
-	/**
-   * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-   * @generated
-   */
-	public ChlamydiatrachomatisTreatmentNotGivenSubstanceAdministration init() {
-      return Initializer.Util.init(this);
-  }
-
-  /**
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    public ChlamydiatrachomatisTreatmentNotGivenSubstanceAdministration init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-        Initializer.Util.init(this, initializers);
-        return this;
-    }
 } //ChlamydiatrachomatisTreatmentNotGivenSubstanceAdministrationImpl

@@ -38,7 +38,6 @@ import org.openhealthtools.mdht.uml.cda.phcr.wnv.util.WnvValidator;
  * <p>
  * The following operations are supported:
  * <ul>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.phcr.wnv.WnvCaseObservation#validateWnvCaseObservationValue(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Wnv Case Observation Value</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.phcr.wnv.WnvCaseObservation#validateWnvCaseObservationWnvSignsAndSymptomsObservation(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Wnv Case Observation Wnv Signs And Symptoms Observation</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.phcr.wnv.WnvCaseObservation#getWnvSignsAndSymptomsObservations() <em>Get Wnv Signs And Symptoms Observations</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.phcr.wnv.WnvCaseObservation#validateProblemObservationTemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Problem Observation Template Id</em>}</li>
@@ -83,6 +82,7 @@ public class WnvCaseObservationOperations extends CaseObservationOperations {
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
+   * (self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (not self.value->isEmpty())
    * @param wnvCaseObservation The receiving '<em><b>Case Observation</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -92,8 +92,8 @@ public class WnvCaseObservationOperations extends CaseObservationOperations {
   
   public static  boolean validateWnvCaseObservationValue(WnvCaseObservation wnvCaseObservation, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
-  	  
-    if (VALIDATE_WNV_CASE_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+    if (VALIDATE_WNV_CASE_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null)
+    {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(WnvPackage.Literals.WNV_CASE_OBSERVATION);
       try
@@ -114,10 +114,9 @@ public class WnvCaseObservationOperations extends CaseObservationOperations {
             (Diagnostic.ERROR,
              WnvValidator.DIAGNOSTIC_SOURCE,
              WnvValidator.WNV_CASE_OBSERVATION__WNV_CASE_OBSERVATION_VALUE,
-             WnvPlugin.INSTANCE.getString("WnvCaseObservationValue"),
+             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "validateWnvCaseObservationValue", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(wnvCaseObservation, context) }),
              new Object [] { wnvCaseObservation }));
       }
-       
       return false;
     }
     return true;
@@ -149,6 +148,7 @@ public class WnvCaseObservationOperations extends CaseObservationOperations {
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
+   * self.entryRelationship->exists(entryRelationship : cda::EntryRelationship | not entryRelationship.observation.oclIsUndefined() and entryRelationship.observation.oclIsKindOf(wnv::WnvSignsAndSymptomsObservation) and entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::MFST)
    * @param wnvCaseObservation The receiving '<em><b>Case Observation</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -157,8 +157,8 @@ public class WnvCaseObservationOperations extends CaseObservationOperations {
    */
 	
 	public static  boolean validateWnvCaseObservationWnvSignsAndSymptomsObservation(WnvCaseObservation wnvCaseObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
-    if (VALIDATE_WNV_CASE_OBSERVATION_WNV_SIGNS_AND_SYMPTOMS_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+    if (VALIDATE_WNV_CASE_OBSERVATION_WNV_SIGNS_AND_SYMPTOMS_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null)
+    {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(WnvPackage.Literals.WNV_CASE_OBSERVATION);
       try
@@ -176,13 +176,12 @@ public class WnvCaseObservationOperations extends CaseObservationOperations {
       {
         diagnostics.add
           (new BasicDiagnostic
-            (Diagnostic.WARNING,
+            (Diagnostic.ERROR,
              WnvValidator.DIAGNOSTIC_SOURCE,
              WnvValidator.WNV_CASE_OBSERVATION__WNV_CASE_OBSERVATION_WNV_SIGNS_AND_SYMPTOMS_OBSERVATION,
-             WnvPlugin.INSTANCE.getString("WnvCaseObservationWnvSignsAndSymptomsObservation"),
+             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "validateWnvCaseObservationWnvSignsAndSymptomsObservation", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(wnvCaseObservation, context) }),
              new Object [] { wnvCaseObservation }));
       }
-       
       return false;
     }
     return true;
@@ -211,6 +210,10 @@ public class WnvCaseObservationOperations extends CaseObservationOperations {
 	/**
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
+   * <!-- begin-model-doc -->
+   * self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(wnv::WnvSignsAndSymptomsObservation)).oclAsType(wnv::WnvSignsAndSymptomsObservation)
+   * @param wnvCaseObservation The receiving '<em><b>Case Observation</b></em>' model object.
+   * <!-- end-model-doc -->
    * @generated
    */
 	
@@ -218,7 +221,7 @@ public class WnvCaseObservationOperations extends CaseObservationOperations {
     if (GET_WNV_SIGNS_AND_SYMPTOMS_OBSERVATIONS__EOCL_QRY == null)
     {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
-      helper.setOperationContext(WnvPackage.Literals.WNV_CASE_OBSERVATION, WnvPackage.Literals.WNV_CASE_OBSERVATION.getEAllOperations().get(81));
+      helper.setOperationContext(WnvPackage.Literals.WNV_CASE_OBSERVATION, WnvPackage.Literals.WNV_CASE_OBSERVATION.getEAllOperations().get(79));
       try
       {
         GET_WNV_SIGNS_AND_SYMPTOMS_OBSERVATIONS__EOCL_QRY = helper.createQuery(GET_WNV_SIGNS_AND_SYMPTOMS_OBSERVATIONS__EOCL_EXP);
@@ -260,6 +263,7 @@ public class WnvCaseObservationOperations extends CaseObservationOperations {
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
+   * self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.15.3.103')
    * @param wnvCaseObservation The receiving '<em><b>Case Observation</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -268,8 +272,8 @@ public class WnvCaseObservationOperations extends CaseObservationOperations {
    */
 	
 	public static  boolean validateProblemObservationTemplateId(WnvCaseObservation wnvCaseObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
-    if (VALIDATE_PROBLEM_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+    if (VALIDATE_PROBLEM_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null)
+    {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(WnvPackage.Literals.WNV_CASE_OBSERVATION);
       try
@@ -290,10 +294,9 @@ public class WnvCaseObservationOperations extends CaseObservationOperations {
             (Diagnostic.ERROR,
              WnvValidator.DIAGNOSTIC_SOURCE,
              WnvValidator.WNV_CASE_OBSERVATION__PROBLEM_OBSERVATION_TEMPLATE_ID,
-             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "ProblemObservationTemplateId", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(wnvCaseObservation, context) }),
+             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "validateProblemObservationTemplateId", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(wnvCaseObservation, context) }),
              new Object [] { wnvCaseObservation }));
       }
-       
       return false;
     }
     return true;

@@ -228,10 +228,8 @@ public class PertussisPackageImpl extends EPackageImpl implements PertussisPacka
         // Register package validator
         EValidator.Registry.INSTANCE.put
             (thePertussisPackage, 
-             new EValidator.Descriptor()
-             {
-                 public EValidator getEValidator()
-                 {
+             new EValidator.Descriptor() {
+                 public EValidator getEValidator() {
                      return PertussisValidator.INSTANCE;
                  }
              });
@@ -963,10 +961,9 @@ public class PertussisPackageImpl extends EPackageImpl implements PertussisPacka
         addAnnotation
           (this, 
            source, 
-           new String[] 
-           {
+           new String[] {
              "initializers", "org.openhealthtools.mdht.uml.cda.phcr.pertussis"
-           });                                                                                                                                                                     
+           });                                                                                                                                                                                                                            
     }
 
   /**
@@ -981,27 +978,24 @@ public class PertussisPackageImpl extends EPackageImpl implements PertussisPacka
         addAnnotation
           (pertussisCaseReportEClass, 
            source, 
-           new String[] 
-           {
+           new String[] {
              "constraints.validation.error", "PertussisCaseReportTemplateId PertussisCaseReportTitle PertussisCaseReportPertussisClinicalInformationSection",
              "templateId.root", "2.16.840.1.113883.10.20.15.1.5",
              "title.mixed", "Public Health Case Report - Pertussis",
              "constraints.validation.warning", "PertussisCaseReportPertussisSocialHistorySection PertussisCaseReportPertussisTreatmentInformationSection PertussisCaseReportPertussisRelevantDxTestsSection PertussisCaseReportPertussisImmunizationsSection"
-           });                             
+           });                                        
         addAnnotation
           (pertussisSocialHistorySectionEClass, 
            source, 
-           new String[] 
-           {
+           new String[] {
              "constraints.validation.error", "PertussisSocialHistorySectionTemplateId",
              "templateId.root", "2.16.840.1.113883.10.20.15.2.24",
              "constraints.validation.info", "PertussisSocialHistorySectionPertussisPossibleExposureLocationAct PertussisSocialHistorySectionPertussisPossibleCaseContactLocationAct"
-           });              
+           });                  
         addAnnotation
           (pertussisPossibleExposureLocationActEClass, 
            source, 
-           new String[] 
-           {
+           new String[] {
              "constraints.validation.error", "PertussisPossibleExposureLocationActTemplateId PertussisPossibleExposureLocationActClassCode PertussisPossibleExposureLocationActCode PertussisPossibleExposureLocationActCodeP PertussisPossibleExposureLocationActMoodCode PertussisPossibleExposureLocationActStatusCode PertussisPossibleExposureLocationActStatusCodeP",
              "templateId.root", "2.16.840.1.113883.10.20.15.3.63",
              "classCode", "ACT",
@@ -1012,12 +1006,11 @@ public class PertussisPackageImpl extends EPackageImpl implements PertussisPacka
              "constraints.validation.dependOn.PertussisPossibleExposureLocationActCode", "PertussisPossibleExposureLocationActCodeP",
              "moodCode", "EVN",
              "statusCode.code", "completed"
-           });                          
+           });                                 
         addAnnotation
           (pertussisPossibleCaseContactLocationActEClass, 
            source, 
-           new String[] 
-           {
+           new String[] {
              "constraints.validation.error", "PertussisPossibleCaseContactLocationActTemplateId PertussisPossibleCaseContactLocationActClassCode PertussisPossibleCaseContactLocationActCode PertussisPossibleCaseContactLocationActCodeP PertussisPossibleCaseContactLocationActMoodCode PertussisPossibleCaseContactLocationActStatusCode PertussisPossibleCaseContactLocationActStatusCodeP",
              "templateId.root", "2.16.840.1.113883.10.20.15.3.64",
              "classCode", "ACT",
@@ -1028,20 +1021,18 @@ public class PertussisPackageImpl extends EPackageImpl implements PertussisPacka
              "constraints.validation.dependOn.PertussisPossibleCaseContactLocationActCode", "PertussisPossibleCaseContactLocationActCodeP",
              "moodCode", "EVN",
              "statusCode.code", "completed"
-           });                          
+           });                                 
         addAnnotation
           (pertussisClinicalInformationSectionEClass, 
            source, 
-           new String[] 
-           {
+           new String[] {
              "constraints.validation.error", "PertussisClinicalInformationSectionTemplateId PertussisClinicalInformationSectionPertussisCaseObservation",
              "templateId.root", "2.16.840.1.113883.10.20.15.2.25"
-           });          
+           });            
         addAnnotation
           (pertussisCaseObservationEClass, 
            source, 
-           new String[] 
-           {
+           new String[] {
              "constraints.validation.error", "PertussisCaseObservationTemplateId PertussisCaseObservationValue PertussisCaseObservationValueP",
              "templateId.root", "2.16.840.1.113883.10.20.15.3.65",
              "value.code", "27836007",
@@ -1050,103 +1041,92 @@ public class PertussisPackageImpl extends EPackageImpl implements PertussisPacka
              "value.displayName", "Pertussis",
              "constraints.validation.dependOn.PertussisCaseObservationValue", "PertussisCaseObservationValueP",
              "constraints.validation.warning", "PertussisCaseObservationPertussisSignsAndSymptomsObservation"
-           });                
+           });                    
         addAnnotation
           (pertussisSignsAndSymptomsObservationEClass, 
            source, 
-           new String[] 
-           {
+           new String[] {
              "constraints.validation.error", "PertussisSignsAndSymptomsObservationTemplateId PertussisSignsAndSymptomsObservationValue PertussisSignsAndSymptomsObservationValueP",
              "templateId.root", "2.16.840.1.113883.10.20.15.3.66",
              "value.codeSystem", "2.16.840.1.113883.6.96",
              "value.codeSystemName", "SNOMEDCT",
              "constraints.validation.dependOn.PertussisSignsAndSymptomsObservationValue", "PertussisSignsAndSymptomsObservationValueP"
-           });            
+           });              
         addAnnotation
           (pertussisTreatmentInformationSectionEClass, 
            source, 
-           new String[] 
-           {
+           new String[] {
              "constraints.validation.error", "PertussisTreatmentInformationSectionTemplateId PertussisTreatmentInformationSectionPertussisTherapeuticRegimen",
              "templateId.root", "2.16.840.1.113883.10.20.15.2.26"
-           });          
+           });            
         addAnnotation
           (pertussisTherapeuticRegimenActEClass, 
            source, 
-           new String[] 
-           {
+           new String[] {
              "constraints.validation.error", "PertussisTherapeuticRegimenActTemplateId",
              "templateId.root", "2.16.840.1.113883.10.20.15.3.67",
              "constraints.validation.warning", "PertussisTherapeuticRegimenActPertussisTreatmentGivenSubstanceAdministration",
              "constraints.validation.info", "PertussisTherapeuticRegimenActPertussisTreatmentNotGivenSubstanceAdministration"
-           });              
+           });                  
         addAnnotation
           (pertussisTreatmentGivenSubstanceAdministrationEClass, 
            source, 
-           new String[] 
-           {
+           new String[] {
              "constraints.validation.error", "PertussisTreatmentGivenSubstanceAdministrationTemplateId",
              "templateId.root", "2.16.840.1.113883.10.20.15.3.68"
            });      
         addAnnotation
           (pertussisTreatmentNotGivenSubstanceAdministrationEClass, 
            source, 
-           new String[] 
-           {
+           new String[] {
              "constraints.validation.error", "PertussisTreatmentNotGivenSubstanceAdministrationTemplateId",
              "templateId.root", "2.16.840.1.113883.10.20.15.3.69"
            });      
         addAnnotation
           (pertussisRelevantDxTestsSectionEClass, 
            source, 
-           new String[] 
-           {
+           new String[] {
              "constraints.validation.error", "PertussisRelevantDxTestsSectionTemplateId",
              "templateId.root", "2.16.840.1.113883.10.20.15.2.27",
              "constraints.validation.warning", "PertussisRelevantDxTestsSectionPertussisResultObservation",
              "constraints.validation.info", "PertussisRelevantDxTestsSectionPertussisResultOrganizer"
-           });              
+           });                  
         addAnnotation
           (pertussisResultObservationEClass, 
            source, 
-           new String[] 
-           {
+           new String[] {
              "constraints.validation.error", "PertussisResultObservationTemplateId PertussisResultObservationCode PertussisResultObservationCodeP",
              "templateId.root", "2.16.840.1.113883.10.20.15.3.71",
              "code.codeSystem", "2.16.840.1.113883.6.1",
              "code.codeSystemName", "LOINC",
              "constraints.validation.dependOn.PertussisResultObservationCode", "PertussisResultObservationCodeP"
-           });            
+           });              
         addAnnotation
           (pertussisResultOrganizerEClass, 
            source, 
-           new String[] 
-           {
+           new String[] {
              "constraints.validation.error", "PertussisResultOrganizerTemplateId PertussisResultOrganizerCode PertussisResultOrganizerPertussisResultObservation",
              "templateId.root", "2.16.840.1.113883.10.20.15.3.70"
-           });             
+           });                
         addAnnotation
           (pertussisImmunizationsSectionEClass, 
            source, 
-           new String[] 
-           {
+           new String[] {
              "constraints.validation.error", "PertussisImmunizationsSectionTemplateId",
              "templateId.root", "2.16.840.1.113883.10.20.15.2.28",
              "constraints.validation.warning", "PertussisImmunizationsSectionPertussisImmunizationActivity"
-           });          
+           });            
         addAnnotation
           (pertussisImmunizationActivityEClass, 
            source, 
-           new String[] 
-           {
+           new String[] {
              "constraints.validation.error", "PertussisImmunizationActivityTemplateId PertussisImmunizationActivityMoodCode",
              "templateId.root", "2.16.840.1.113883.10.20.15.3.72"
-           });         
+           });          
         addAnnotation
           (pertussisImmunizationProductEClass, 
            source, 
-           new String[] 
-           {
+           new String[] {
              "constraints.validation.error", "PertussisImmunizationProductTemplateId",
              "templateId.root", "2.16.840.1.113883.10.20.15.3.73"
            }); 
@@ -1164,92 +1144,77 @@ public class PertussisPackageImpl extends EPackageImpl implements PertussisPacka
         addAnnotation
           (pertussisCaseReportEClass, 
            source, 
-           new String[] 
-           {
-           });                             
+           new String[] {
+           });                                        
         addAnnotation
           (pertussisSocialHistorySectionEClass, 
            source, 
-           new String[] 
-           {
-           });                                                          
+           new String[] {
+           });                                                                            
         addAnnotation
           (pertussisClinicalInformationSectionEClass, 
            source, 
-           new String[] 
-           {
-           });          
+           new String[] {
+           });            
         addAnnotation
           (pertussisCaseObservationEClass, 
            source, 
-           new String[] 
-           {
-           });                
+           new String[] {
+           });                    
         addAnnotation
           (pertussisSignsAndSymptomsObservationEClass, 
            source, 
-           new String[] 
-           {
-           });            
+           new String[] {
+           });              
         addAnnotation
           (pertussisTreatmentInformationSectionEClass, 
            source, 
-           new String[] 
-           {
-           });          
+           new String[] {
+           });            
         addAnnotation
           (pertussisTherapeuticRegimenActEClass, 
            source, 
-           new String[] 
-           {
-           });              
+           new String[] {
+           });                  
         addAnnotation
           (pertussisTreatmentGivenSubstanceAdministrationEClass, 
            source, 
-           new String[] 
-           {
+           new String[] {
            });      
         addAnnotation
           (pertussisTreatmentNotGivenSubstanceAdministrationEClass, 
            source, 
-           new String[] 
-           {
+           new String[] {
            });      
         addAnnotation
           (pertussisRelevantDxTestsSectionEClass, 
            source, 
-           new String[] 
-           {
-           });              
+           new String[] {
+           });                  
         addAnnotation
           (pertussisResultObservationEClass, 
            source, 
-           new String[] 
-           {
-           });            
+           new String[] {
+           });              
         addAnnotation
           (pertussisResultOrganizerEClass, 
            source, 
-           new String[] 
-           {
-           });             
+           new String[] {
+           });                
         addAnnotation
           (pertussisImmunizationsSectionEClass, 
            source, 
-           new String[] 
-           {
-           });          
+           new String[] {
+           });            
         addAnnotation
           (pertussisImmunizationActivityEClass, 
            source, 
-           new String[] 
-           {
-           });         
+           new String[] {
+           });          
         addAnnotation
           (pertussisImmunizationProductEClass, 
            source, 
-           new String[] 
-           {
+           new String[] {
            });
     }
 

@@ -28,10 +28,10 @@ import org.openhealthtools.mdht.uml.cda.ccd.MedicationActivity;
 public interface TuberculosisImmunizationActivitySubstanceAdministration extends MedicationActivity
 {
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   public TuberculosisImmunizationActivitySubstanceAdministration init();
 
   /**

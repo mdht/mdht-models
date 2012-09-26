@@ -34,6 +34,7 @@ public interface SilicosisSocioBehavioralBooleanRiskFactorObservation extends So
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
+   * (self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined())
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
    * <!-- end-model-doc -->
@@ -46,6 +47,9 @@ public interface SilicosisSocioBehavioralBooleanRiskFactorObservation extends So
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
+   * (self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and 
+   * let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in 
+   * value.code = 'ASSERTION' and value.codeSystem = '2.16.840.1.113883.5.4')
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
    * <!-- end-model-doc -->
@@ -58,6 +62,7 @@ public interface SilicosisSocioBehavioralBooleanRiskFactorObservation extends So
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
+   * not self.negationInd.oclIsUndefined()
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
    * <!-- end-model-doc -->
@@ -70,6 +75,7 @@ public interface SilicosisSocioBehavioralBooleanRiskFactorObservation extends So
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
+   * (self.effectiveTime.oclIsUndefined() or self.effectiveTime.isNullFlavorUndefined()) implies (not self.effectiveTime.oclIsUndefined())
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
    * <!-- end-model-doc -->
@@ -82,6 +88,9 @@ public interface SilicosisSocioBehavioralBooleanRiskFactorObservation extends So
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
+   * (self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (self.value->size() = 1 and self.value->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and 
+   * let value : datatypes::CD = element.oclAsType(datatypes::CD) in 
+   * value.code = '102445001' and value.codeSystem = '2.16.840.1.113883.6.96'))
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
    * <!-- end-model-doc -->
@@ -89,19 +98,5 @@ public interface SilicosisSocioBehavioralBooleanRiskFactorObservation extends So
    * @generated
    */
   boolean validateSilicosisSocioBehavioralBooleanRiskFactorObservationValue(DiagnosticChain diagnostics, Map<Object, Object> context);
-
-  /**
-   * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-   * @generated
-   */
-	public SilicosisSocioBehavioralBooleanRiskFactorObservation init();
-
-  /**
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    public SilicosisSocioBehavioralBooleanRiskFactorObservation init(Iterable<? extends Initializer<? extends EObject>> initializers);
 
 } // SilicosisSocioBehavioralBooleanRiskFactorObservation

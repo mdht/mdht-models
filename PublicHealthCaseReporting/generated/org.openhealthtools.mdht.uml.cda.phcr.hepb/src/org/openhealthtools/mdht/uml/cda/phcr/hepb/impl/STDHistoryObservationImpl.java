@@ -19,8 +19,6 @@ import org.eclipse.emf.ecore.EClass;
 
 import org.eclipse.emf.ecore.EObject;
 import org.openhealthtools.mdht.emf.runtime.util.Initializer;
-import org.openhealthtools.mdht.uml.cda.ClinicalStatement;
-
 import org.openhealthtools.mdht.uml.cda.ccd.ProblemStatusObservation;
 
 import org.openhealthtools.mdht.uml.cda.ccd.impl.ProblemObservationImpl;
@@ -29,8 +27,6 @@ import org.openhealthtools.mdht.uml.cda.phcr.hepb.HepbPackage;
 import org.openhealthtools.mdht.uml.cda.phcr.hepb.STDHistoryObservation;
 
 import org.openhealthtools.mdht.uml.cda.phcr.hepb.operations.STDHistoryObservationOperations;
-
-import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
 
 /**
  * <!-- begin-user-doc -->
@@ -43,133 +39,125 @@ import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
  */
 public class STDHistoryObservationImpl extends ProblemObservationImpl implements STDHistoryObservation {
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	protected STDHistoryObservationImpl() {
-    super();
-  }
+		super();
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	@Override
 	protected EClass eStaticClass() {
-    return HepbPackage.Literals.STD_HISTORY_OBSERVATION;
-  }
+		return HepbPackage.Literals.STD_HISTORY_OBSERVATION;
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public boolean validateSTDHistoryObservationClassCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return STDHistoryObservationOperations.validateSTDHistoryObservationClassCode(this, diagnostics, context);
-  }
+		return STDHistoryObservationOperations.validateSTDHistoryObservationClassCode(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   public boolean validateSTDHistoryObservationCode(DiagnosticChain diagnostics, Map<Object, Object> context)
   {
-    return STDHistoryObservationOperations.validateSTDHistoryObservationCode(this, diagnostics, context);
-  }
+		return STDHistoryObservationOperations.validateSTDHistoryObservationCode(this, diagnostics, context);
+	}
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public boolean validateSTDHistoryObservationEffectiveTime(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return STDHistoryObservationOperations.validateSTDHistoryObservationEffectiveTime(this, diagnostics, context);
-  }
+		return STDHistoryObservationOperations.validateSTDHistoryObservationEffectiveTime(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public boolean validateSTDHistoryObservationId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return STDHistoryObservationOperations.validateSTDHistoryObservationId(this, diagnostics, context);
-  }
+		return STDHistoryObservationOperations.validateSTDHistoryObservationId(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public boolean validateSTDHistoryObservationMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return STDHistoryObservationOperations.validateSTDHistoryObservationMoodCode(this, diagnostics, context);
-  }
+		return STDHistoryObservationOperations.validateSTDHistoryObservationMoodCode(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   public boolean validateSTDHistoryObservationStatusCode(DiagnosticChain diagnostics, Map<Object, Object> context)
   {
-    return STDHistoryObservationOperations.validateSTDHistoryObservationStatusCode(this, diagnostics, context);
-  }
+		return STDHistoryObservationOperations.validateSTDHistoryObservationStatusCode(this, diagnostics, context);
+	}
 
   /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public boolean validateSTDHistoryObservationValue(DiagnosticChain diagnostics, Map<Object, Object> context)
-  {
-    return STDHistoryObservationOperations.validateSTDHistoryObservationValue(this, diagnostics, context);
-  }
-
-  /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public boolean validateSTDHistoryObservationProblemStatus(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return STDHistoryObservationOperations.validateSTDHistoryObservationProblemStatus(this, diagnostics, context);
-  }
+		return STDHistoryObservationOperations.validateSTDHistoryObservationProblemStatus(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public ProblemStatusObservation gethepbProblemStatus() {
-    return STDHistoryObservationOperations.gethepbProblemStatus(this);
-  }
+		return STDHistoryObservationOperations.gethepbProblemStatus(this);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	@Override
 	public boolean validateProblemObservationTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return STDHistoryObservationOperations.validateProblemObservationTemplateId(this, diagnostics, context);
-  }
+		return STDHistoryObservationOperations.validateProblemObservationTemplateId(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
+	@Override
 	public STDHistoryObservation init() {
-      return Initializer.Util.init(this);
-  }
+	    return Initializer.Util.init(this);
+	}
 
   /**
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
      * @generated
      */
-    public STDHistoryObservation init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+    @Override
+	public STDHistoryObservation init(Iterable<? extends Initializer<? extends EObject>> initializers) {
         Initializer.Util.init(this, initializers);
         return this;
     }

@@ -18,32 +18,23 @@ import org.eclipse.emf.common.util.BasicEList;
 import org.eclipse.emf.common.util.Diagnostic;
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.common.util.EList;
-
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EClassifier;
-
+import org.eclipse.emf.ecore.EObject;
 import org.eclipse.emf.ecore.plugin.EcorePlugin;
-
 import org.eclipse.emf.ecore.util.EObjectValidator;
-
 import org.eclipse.ocl.ParserException;
-
 import org.eclipse.ocl.ecore.Constraint;
 import org.eclipse.ocl.ecore.OCL;
-
 import org.eclipse.ocl.expressions.OCLExpression;
-
+import org.openhealthtools.mdht.emf.runtime.util.Initializer;
 import org.openhealthtools.mdht.uml.cda.phcr.impl.PhcrRelevantDxTestsSectionImpl;
-
 import org.openhealthtools.mdht.uml.cda.phcr.meningococcal.MeningococcalPackage;
 import org.openhealthtools.mdht.uml.cda.phcr.meningococcal.MeningococcalPhcrRelevantDxTestsSection;
 import org.openhealthtools.mdht.uml.cda.phcr.meningococcal.MeningococcalPlugin;
 import org.openhealthtools.mdht.uml.cda.phcr.meningococcal.MeningococcalResultObservation;
 import org.openhealthtools.mdht.uml.cda.phcr.meningococcal.MeningococcalResultOrganizer;
-
 import org.openhealthtools.mdht.uml.cda.phcr.meningococcal.util.MeningococcalValidator;
-
-import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
 
 /**
  * <!-- begin-user-doc -->
@@ -326,8 +317,19 @@ public class MeningococcalPhcrRelevantDxTestsSectionImpl extends PhcrRelevantDxT
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public MeningococcalPhcrRelevantDxTestsSection init() {
-    	CDAUtil.init(this);
-    	return this;
+	    return Initializer.Util.init(this);
 	}
+
+	/**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    @Override
+	public MeningococcalPhcrRelevantDxTestsSection init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
 } //MeningococcalPhcrRelevantDxTestsSectionImpl

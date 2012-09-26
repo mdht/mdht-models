@@ -95,6 +95,7 @@ public class HibResultOrganizerOperations extends ResultOrganizerOperations {
 	 */
 	
 	public static  boolean validateHibResultOrganizerHibResultObservation(HibResultOrganizer hibResultOrganizer, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
 		if (VALIDATE_HIB_RESULT_ORGANIZER_HIB_RESULT_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(HibPackage.Literals.HIB_RESULT_ORGANIZER);
@@ -115,6 +116,7 @@ public class HibResultOrganizerOperations extends ResultOrganizerOperations {
 						 HibPlugin.INSTANCE.getString("HibResultOrganizerHibResultObservation"),
 						 new Object [] { hibResultOrganizer }));
 			}
+			 
 			return false;
 		}
 		return true;
@@ -128,7 +130,7 @@ public class HibResultOrganizerOperations extends ResultOrganizerOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String GET_HIB_RESULT_OBSERVATION__EOCL_EXP = "self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(hib::HibResultObservation))->asSequence()->first().oclAsType(hib::HibResultObservation)";
+	protected static final String GET_HIB_RESULT_OBSERVATION__EOCL_EXP = "self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(hib::HibResultObservation))->asSequence()->any(true).oclAsType(hib::HibResultObservation)";
 
 	/**
 	 * The cached OCL query for the '{@link #getHibResultObservation(HibResultOrganizer) <em>Get Hib Result Observation</em>}' query operation.
@@ -144,7 +146,7 @@ public class HibResultOrganizerOperations extends ResultOrganizerOperations {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(hib::HibResultObservation))->asSequence()->first().oclAsType(hib::HibResultObservation)
+	 * self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(hib::HibResultObservation))->asSequence()->any(true).oclAsType(hib::HibResultObservation)
 	 * @param hibResultOrganizer The receiving '<em><b>Result Organizer</b></em>' model object.
 	 * <!-- end-model-doc -->
 	 * @generated
@@ -153,7 +155,7 @@ public class HibResultOrganizerOperations extends ResultOrganizerOperations {
 	public static  HibResultObservation getHibResultObservation(HibResultOrganizer hibResultOrganizer) {
 		if (GET_HIB_RESULT_OBSERVATION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(HibPackage.Literals.HIB_RESULT_ORGANIZER, HibPackage.Literals.HIB_RESULT_ORGANIZER.getEAllOperations().get(72));
+			helper.setOperationContext(HibPackage.Literals.HIB_RESULT_ORGANIZER, HibPackage.Literals.HIB_RESULT_ORGANIZER.getEAllOperations().get(74));
 			try {
 				GET_HIB_RESULT_OBSERVATION__EOCL_QRY = helper.createQuery(GET_HIB_RESULT_OBSERVATION__EOCL_EXP);
 			}
@@ -200,6 +202,7 @@ public class HibResultOrganizerOperations extends ResultOrganizerOperations {
 	 */
 	
 	public static  boolean validateResultOrganizerTemplateId(HibResultOrganizer hibResultOrganizer, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
 		if (VALIDATE_RESULT_ORGANIZER_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(HibPackage.Literals.HIB_RESULT_ORGANIZER);
@@ -220,6 +223,7 @@ public class HibResultOrganizerOperations extends ResultOrganizerOperations {
 						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "ResultOrganizerTemplateId", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(hibResultOrganizer, context) }),
 						 new Object [] { hibResultOrganizer }));
 			}
+			 
 			return false;
 		}
 		return true;

@@ -201,10 +201,8 @@ public class TularemiaPackageImpl extends EPackageImpl implements TularemiaPacka
         // Register package validator
         EValidator.Registry.INSTANCE.put
             (theTularemiaPackage, 
-             new EValidator.Descriptor()
-             {
-                 public EValidator getEValidator()
-                 {
+             new EValidator.Descriptor() {
+                 public EValidator getEValidator() {
                      return TularemiaValidator.INSTANCE;
                  }
              });
@@ -897,10 +895,9 @@ public class TularemiaPackageImpl extends EPackageImpl implements TularemiaPacka
         addAnnotation
           (this, 
            source, 
-           new String[] 
-           {
+           new String[] {
              "initializers", "org.openhealthtools.mdht.uml.cda.phcr.tularemia"
-           });                                                                                                                                                                  
+           });                                                                                                                                                                                                                          
     }
 
   /**
@@ -914,27 +911,24 @@ public class TularemiaPackageImpl extends EPackageImpl implements TularemiaPacka
         addAnnotation
           (tularemiaCaseReportEClass, 
            source, 
-           new String[] 
-           {
+           new String[] {
              "constraints.validation.error", "TularemiaCaseReportTemplateId TularemiaCaseReportTitle TularemiaCaseReportTularemiaPHCRClinicalInformationSection",
              "templateId.root", "2.16.840.1.113883.10.20.15.1.4",
              "title.mixed", "Public Health Case Report - Tularemia",
              "constraints.validation.warning", "TularemiaCaseReportTularemiaPHCRSocialHistorySection TularemiaCaseReportTularemiaPHCRTreatmentInformationSection TularemiaCaseReportPhcrEncountersSection TularemiaCaseReportTularemiaPHCRRelevantDxTestsSection"
-           });                             
+           });                                        
         addAnnotation
           (tularemiaPHCRSocialHistorySectionEClass, 
            source, 
-           new String[] 
-           {
+           new String[] {
              "constraints.validation.error", "TularemiaPHCRSocialHistorySectionTemplateId",
              "templateId.root", "2.16.840.1.113883.10.20.15.2.18",
              "constraints.validation.info", "TularemiaPHCRSocialHistorySectionTularemiaPossibleExposureLocationAndTypeAct"
-           });          
+           });            
         addAnnotation
           (tularemiaPossibleExposureLocationAndTypeActEClass, 
            source, 
-           new String[] 
-           {
+           new String[] {
              "constraints.validation.error", "TularemiaPossibleExposureLocationAndTypeActTemplateId TularemiaPossibleExposureLocationAndTypeActClassCode TularemiaPossibleExposureLocationAndTypeActMoodCode TularemiaPossibleExposureLocationAndTypeActCode TularemiaPossibleExposureLocationAndTypeActCodeP TularemiaPossibleExposureLocationAndTypeActStatusCode TularemiaPossibleExposureLocationAndTypeActStatusCodeP",
              "templateId.root", "2.16.840.1.113883.10.20.15.3.43",
              "classCode", "ACT",
@@ -945,37 +939,33 @@ public class TularemiaPackageImpl extends EPackageImpl implements TularemiaPacka
              "code.displayName", "Finding with explicit context",
              "constraints.validation.dependOn.TularemiaPossibleExposureLocationAndTypeActCode", "TularemiaPossibleExposureLocationAndTypeActCodeP",
              "statusCode.code", "completed"
-           });                          
+           });                                 
         addAnnotation
           (tularemiaPHCRClinicalInformationSectionEClass, 
            source, 
-           new String[] 
-           {
+           new String[] {
              "constraints.validation.error", "TularemiaPHCRClinicalInformationSectionTemplateId TularemiaPHCRClinicalInformationSectionTularemiaCaseObservation",
              "templateId.root", "2.16.840.1.113883.10.20.15.2.19"
-           });          
+           });            
         addAnnotation
           (tularemiaCaseObservationEClass, 
            source, 
-           new String[] 
-           {
+           new String[] {
              "constraints.validation.error", "TularemiaCaseObservationTemplateId TularemiaCaseObservationValue TularemiaCaseObservationTularemiaSignsAndSymptomsObservation",
              "templateId.root", "2.16.840.1.113883.10.20.15.3.46",
              "constraints.validation.info", "TularemiaCaseObservationLocationOfLesionObservation"
-           });                 
+           });                      
         addAnnotation
           (tularemiaSignsAndSymptomsObservationEClass, 
            source, 
-           new String[] 
-           {
+           new String[] {
              "constraints.validation.error", "TularemiaSignsAndSymptomsObservationTemplateId TularemiaSignsAndSymptomsObservationValue",
              "templateId.root", "2.16.840.1.113883.10.20.15.3.45"
-           });         
+           });          
         addAnnotation
           (locationOfLesionObservationEClass, 
            source, 
-           new String[] 
-           {
+           new String[] {
              "constraints.validation.error", "LocationOfLesionObservationTemplateId LocationOfLesionObservationClassCode LocationOfLesionObservationMoodCode LocationOfLesionObservationCode LocationOfLesionObservationCodeP LocationOfLesionObservationStatusCode LocationOfLesionObservationStatusCodeP LocationOfLesionObservationValue LocationOfLesionObservationTargetSiteCode",
              "templateId.root", "2.16.840.1.113883.10.20.15.3.44",
              "classCode", "OBS",
@@ -986,73 +976,66 @@ public class TularemiaPackageImpl extends EPackageImpl implements TularemiaPacka
              "constraints.validation.dependOn.LocationOfLesionObservationCode", "LocationOfLesionObservationCodeP",
              "statusCode.code", "completed",
              "constraints.validation.warning", "LocationOfLesionObservationEffectiveTime"
-           });                                   
+           });                                             
         addAnnotation
           (tularemiaPHCRTreatmentInformationSectionEClass, 
            source, 
-           new String[] 
-           {
+           new String[] {
              "constraints.validation.error", "TularemiaPHCRTreatmentInformationSectionTemplateId TularemiaPHCRTreatmentInformationSectionTularemiaTherapeuticRegimenAct",
              "templateId.root", "2.16.840.1.113883.10.20.15.2.20"
-           });          
+           });            
         addAnnotation
           (tularemiaTherapeuticRegimenActEClass, 
            source, 
-           new String[] 
-           {
+           new String[] {
              "constraints.validation.error", "TularemiaTherapeuticRegimenActTemplateId",
              "templateId.root", "2.16.840.1.113883.10.20.15.3.48",
              "constraints.validation.warning", "TularemiaTherapeuticRegimenActTularemiaTreatmentGivenSubstanceAdministration",
              "constraints.validation.info", "TularemiaTherapeuticRegimenActTularemiaTreatmentNotGivenSubstanceAdministration"
-           });              
+           });                  
         addAnnotation
           (tularemiaTreatmentGivenSubstanceAdministrationEClass, 
            source, 
-           new String[] 
-           {
+           new String[] {
              "constraints.validation.error", "TularemiaTreatmentGivenSubstanceAdministrationTemplateId",
              "templateId.root", "2.16.840.1.113883.10.20.15.3.47"
            });      
         addAnnotation
           (tularemiaTreatmentNotGivenSubstanceAdministrationEClass, 
            source, 
-           new String[] 
-           {
+           new String[] {
              "constraints.validation.error", "TularemiaTreatmentNotGivenSubstanceAdministrationTemplateId",
              "templateId.root", "2.16.840.1.113883.10.20.15.3.50"
            });      
         addAnnotation
           (tularemiaPHCRRelevantDxTestsSectionEClass, 
            source, 
-           new String[] 
-           {
+           new String[] {
              "constraints.validation.error", "TularemiaPHCRRelevantDxTestsSectionTemplateId",
              "templateId.root", "2.16.840.1.113883.10.20.15.2.21",
              "constraints.validation.info", "TularemiaPHCRRelevantDxTestsSectionTularemiaResultOrganizer TularemiaPHCRRelevantDxTestsSectionImagingObservation",
              "constraints.validation.warning", "TularemiaPHCRRelevantDxTestsSectionTularemiaResultObservation"
-           });                  
+           });                        
         addAnnotation
           (tularemiaResultOrganizerEClass, 
            source, 
-           new String[] 
-           {
+           new String[] {
              "constraints.validation.error", "TularemiaResultOrganizerTemplateId TularemiaResultOrganizerCode TularemiaResultOrganizerCodeP TularemiaResultOrganizerTularemiaResultObservation",
              "templateId.root", "2.16.840.1.113883.10.20.15.3.52",
              "code.codeSystem", "2.16.840.1.113883.6.1",
              "code.codeSystemName", "LOINC",
              "constraints.validation.dependOn.TularemiaResultOrganizerCode", "TularemiaResultOrganizerCodeP"
-           });                
+           });                    
         addAnnotation
           (tularemiaResultObservationEClass, 
            source, 
-           new String[] 
-           {
+           new String[] {
              "constraints.validation.error", "TularemiaResultObservationTemplateId TularemiaResultObservationCode TularemiaResultObservationCodeP",
              "templateId.root", "2.16.840.1.113883.10.20.15.3.51",
              "code.codeSystem", "2.16.840.1.113883.6.1",
              "code.codeSystemName", "LOINC",
              "constraints.validation.dependOn.TularemiaResultObservationCode", "TularemiaResultObservationCodeP"
-           });       
+           });         
     }
 
 	/**
@@ -1066,75 +1049,63 @@ public class TularemiaPackageImpl extends EPackageImpl implements TularemiaPacka
         addAnnotation
           (tularemiaCaseReportEClass, 
            source, 
-           new String[] 
-           {
-           });                             
+           new String[] {
+           });                                        
         addAnnotation
           (tularemiaPHCRSocialHistorySectionEClass, 
            source, 
-           new String[] 
-           {
-           });                                
+           new String[] {
+           });                                         
         addAnnotation
           (tularemiaPHCRClinicalInformationSectionEClass, 
            source, 
-           new String[] 
-           {
-           });          
+           new String[] {
+           });            
         addAnnotation
           (tularemiaCaseObservationEClass, 
            source, 
-           new String[] 
-           {
-           });                 
+           new String[] {
+           });                      
         addAnnotation
           (tularemiaSignsAndSymptomsObservationEClass, 
            source, 
-           new String[] 
-           {
-           });                                        
+           new String[] {
+           });                                                   
         addAnnotation
           (tularemiaPHCRTreatmentInformationSectionEClass, 
            source, 
-           new String[] 
-           {
-           });          
+           new String[] {
+           });            
         addAnnotation
           (tularemiaTherapeuticRegimenActEClass, 
            source, 
-           new String[] 
-           {
-           });              
+           new String[] {
+           });                  
         addAnnotation
           (tularemiaTreatmentGivenSubstanceAdministrationEClass, 
            source, 
-           new String[] 
-           {
+           new String[] {
            });      
         addAnnotation
           (tularemiaTreatmentNotGivenSubstanceAdministrationEClass, 
            source, 
-           new String[] 
-           {
+           new String[] {
            });      
         addAnnotation
           (tularemiaPHCRRelevantDxTestsSectionEClass, 
            source, 
-           new String[] 
-           {
-           });                  
+           new String[] {
+           });                        
         addAnnotation
           (tularemiaResultOrganizerEClass, 
            source, 
-           new String[] 
-           {
-           });                
+           new String[] {
+           });                    
         addAnnotation
           (tularemiaResultObservationEClass, 
            source, 
-           new String[] 
-           {
-           });      
+           new String[] {
+           });        
     }
 
 } //TularemiaPackageImpl

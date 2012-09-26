@@ -82,6 +82,7 @@ public class AnthraxPhcrSocialHistorySectionOperations extends PhcrSocialHistory
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
+   * self.entry->exists(entry : cda::Entry | not entry.act.oclIsUndefined() and entry.act.oclIsKindOf(anthrax::AnthraxPossibleExpossureLocationAndTypeAct) and entry.typeCode = vocab::x_ActRelationshipEntry::DRIV)
    * @param anthraxPhcrSocialHistorySection The receiving '<em><b>Phcr Social History Section</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -90,8 +91,8 @@ public class AnthraxPhcrSocialHistorySectionOperations extends PhcrSocialHistory
    */
 	
 	public static  boolean validateAnthraxPhcrSocialHistorySectionAnthraxPossibleExpossureLocationAndTypeAct(AnthraxPhcrSocialHistorySection anthraxPhcrSocialHistorySection, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
-    if (VALIDATE_ANTHRAX_PHCR_SOCIAL_HISTORY_SECTION_ANTHRAX_POSSIBLE_EXPOSSURE_LOCATION_AND_TYPE_ACT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+    if (VALIDATE_ANTHRAX_PHCR_SOCIAL_HISTORY_SECTION_ANTHRAX_POSSIBLE_EXPOSSURE_LOCATION_AND_TYPE_ACT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null)
+    {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(AnthraxPackage.Literals.ANTHRAX_PHCR_SOCIAL_HISTORY_SECTION);
       try
@@ -109,13 +110,12 @@ public class AnthraxPhcrSocialHistorySectionOperations extends PhcrSocialHistory
       {
         diagnostics.add
           (new BasicDiagnostic
-            (Diagnostic.INFO,
+            (Diagnostic.ERROR,
              AnthraxValidator.DIAGNOSTIC_SOURCE,
              AnthraxValidator.ANTHRAX_PHCR_SOCIAL_HISTORY_SECTION__ANTHRAX_PHCR_SOCIAL_HISTORY_SECTION_ANTHRAX_POSSIBLE_EXPOSSURE_LOCATION_AND_TYPE_ACT,
-             AnthraxPlugin.INSTANCE.getString("AnthraxPhcrSocialHistorySectionAnthraxPossibleExpossureLocationAndTypeAct"),
+             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "validateAnthraxPhcrSocialHistorySectionAnthraxPossibleExpossureLocationAndTypeAct", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(anthraxPhcrSocialHistorySection, context) }),
              new Object [] { anthraxPhcrSocialHistorySection }));
       }
-       
       return false;
     }
     return true;
@@ -145,6 +145,10 @@ public class AnthraxPhcrSocialHistorySectionOperations extends PhcrSocialHistory
 	/**
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
+   * <!-- begin-model-doc -->
+   * self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(anthrax::AnthraxPossibleExpossureLocationAndTypeAct)).oclAsType(anthrax::AnthraxPossibleExpossureLocationAndTypeAct)
+   * @param anthraxPhcrSocialHistorySection The receiving '<em><b>Phcr Social History Section</b></em>' model object.
+   * <!-- end-model-doc -->
    * @generated
    */
 	
@@ -152,7 +156,7 @@ public class AnthraxPhcrSocialHistorySectionOperations extends PhcrSocialHistory
     if (GET_ANTHRAX_POSSIBLE_EXPOSSURE_LOCATION_AND_TYPE_ACTS__EOCL_QRY == null)
     {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
-      helper.setOperationContext(AnthraxPackage.Literals.ANTHRAX_PHCR_SOCIAL_HISTORY_SECTION, AnthraxPackage.Literals.ANTHRAX_PHCR_SOCIAL_HISTORY_SECTION.getEAllOperations().get(82));
+      helper.setOperationContext(AnthraxPackage.Literals.ANTHRAX_PHCR_SOCIAL_HISTORY_SECTION, AnthraxPackage.Literals.ANTHRAX_PHCR_SOCIAL_HISTORY_SECTION.getEAllOperations().get(76));
       try
       {
         GET_ANTHRAX_POSSIBLE_EXPOSSURE_LOCATION_AND_TYPE_ACTS__EOCL_QRY = helper.createQuery(GET_ANTHRAX_POSSIBLE_EXPOSSURE_LOCATION_AND_TYPE_ACTS__EOCL_EXP);
@@ -194,6 +198,7 @@ public class AnthraxPhcrSocialHistorySectionOperations extends PhcrSocialHistory
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
+   * self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.15.2.17')
    * @param anthraxPhcrSocialHistorySection The receiving '<em><b>Phcr Social History Section</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -202,8 +207,8 @@ public class AnthraxPhcrSocialHistorySectionOperations extends PhcrSocialHistory
    */
 	
 	public static  boolean validateSocialHistorySectionTemplateId(AnthraxPhcrSocialHistorySection anthraxPhcrSocialHistorySection, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
-    if (VALIDATE_SOCIAL_HISTORY_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+    if (VALIDATE_SOCIAL_HISTORY_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null)
+    {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(AnthraxPackage.Literals.ANTHRAX_PHCR_SOCIAL_HISTORY_SECTION);
       try
@@ -224,10 +229,9 @@ public class AnthraxPhcrSocialHistorySectionOperations extends PhcrSocialHistory
             (Diagnostic.ERROR,
              AnthraxValidator.DIAGNOSTIC_SOURCE,
              AnthraxValidator.ANTHRAX_PHCR_SOCIAL_HISTORY_SECTION__SOCIAL_HISTORY_SECTION_TEMPLATE_ID,
-             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "SocialHistorySectionTemplateId", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(anthraxPhcrSocialHistorySection, context) }),
+             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "validateSocialHistorySectionTemplateId", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(anthraxPhcrSocialHistorySection, context) }),
              new Object [] { anthraxPhcrSocialHistorySection }));
       }
-       
       return false;
     }
     return true;

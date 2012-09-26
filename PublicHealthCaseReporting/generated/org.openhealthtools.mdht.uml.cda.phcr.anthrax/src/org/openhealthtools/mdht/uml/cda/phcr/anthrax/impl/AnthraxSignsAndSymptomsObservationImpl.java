@@ -26,8 +26,6 @@ import org.openhealthtools.mdht.uml.cda.phcr.anthrax.operations.AnthraxSignsAndS
 
 import org.openhealthtools.mdht.uml.cda.phcr.impl.SignsAndSymptomsObservationImpl;
 
-import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
-
 /**
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Signs And Symptoms Observation</b></em>'.
@@ -76,23 +74,4 @@ public class AnthraxSignsAndSymptomsObservationImpl extends SignsAndSymptomsObse
 	public boolean validateSignsAndSymptomsObservationTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
     return AnthraxSignsAndSymptomsObservationOperations.validateSignsAndSymptomsObservationTemplateId(this, diagnostics, context);
   }
-
-	/**
-   * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-   * @generated
-   */
-	public AnthraxSignsAndSymptomsObservation init() {
-      return Initializer.Util.init(this);
-  }
-
-  /**
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    public AnthraxSignsAndSymptomsObservation init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-        Initializer.Util.init(this, initializers);
-        return this;
-    }
 } //AnthraxSignsAndSymptomsObservationImpl

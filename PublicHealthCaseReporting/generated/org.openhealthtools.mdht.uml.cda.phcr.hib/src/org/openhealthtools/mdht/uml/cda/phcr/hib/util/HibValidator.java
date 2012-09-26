@@ -302,7 +302,6 @@ public class HibValidator extends EObjectValidator
 		if (result || diagnostics != null) result &= phcrValidator.validatePublicHealthCaseReport_validatePublicHealthCaseReportPHCRLegalAuthenticatorAssignedEntityAddr(hibCaseReport, diagnostics, context);
 		if (result || diagnostics != null) result &= phcrValidator.validatePublicHealthCaseReport_validatePublicHealthCaseReportPHCRLegalAuthenticatorAssignedEntityAssignedPersonName(hibCaseReport, diagnostics, context);
 		if (result || diagnostics != null) result &= validateHIBCaseReport_validatePublicHealthCaseReportTemplateId(hibCaseReport, diagnostics, context);
-		if (result || diagnostics != null) result &= phcrValidator.validatePublicHealthCaseReport_validatePublicHealthCaseReportCodeP(hibCaseReport, diagnostics, context);
 		if (result || diagnostics != null) result &= phcrValidator.validatePublicHealthCaseReport_validatePublicHealthCaseReportCode(hibCaseReport, diagnostics, context);
 		if (result || diagnostics != null) result &= phcrValidator.validatePublicHealthCaseReport_validatePublicHealthCaseReportPhcrSocialHistorySection(hibCaseReport, diagnostics, context);
 		if (result || diagnostics != null) result &= phcrValidator.validatePublicHealthCaseReport_validatePublicHealthCaseReportPhcrClinicalInformationSection(hibCaseReport, diagnostics, context);
@@ -376,7 +375,6 @@ public class HibValidator extends EObjectValidator
 		if (result || diagnostics != null) result &= phcrValidator.validatePhcrClinicalInformationSection_validatePhcrClinicalInformationSectionPatientConditionConstraint(hibPhcrClinicalInformationSection, diagnostics, context);
 		if (result || diagnostics != null) result &= validateHibPhcrClinicalInformationSection_validatePhcrClinicalInformationSectionTemplateId(hibPhcrClinicalInformationSection, diagnostics, context);
 		if (result || diagnostics != null) result &= phcrValidator.validatePhcrClinicalInformationSection_validatePhcrClinicalInformationSectionCode(hibPhcrClinicalInformationSection, diagnostics, context);
-		if (result || diagnostics != null) result &= phcrValidator.validatePhcrClinicalInformationSection_validatePhcrClinicalInformationSectionCodeP(hibPhcrClinicalInformationSection, diagnostics, context);
 		if (result || diagnostics != null) result &= phcrValidator.validatePhcrClinicalInformationSection_validatePhcrClinicalInformationSectionTitle(hibPhcrClinicalInformationSection, diagnostics, context);
 		if (result || diagnostics != null) result &= phcrValidator.validatePhcrClinicalInformationSection_validatePhcrClinicalInformationSectionText(hibPhcrClinicalInformationSection, diagnostics, context);
 		if (result || diagnostics != null) result &= phcrValidator.validatePhcrClinicalInformationSection_validatePhcrClinicalInformationSectionCaseObservation(hibPhcrClinicalInformationSection, diagnostics, context);
@@ -425,7 +423,7 @@ public class HibValidator extends EObjectValidator
 		if (result || diagnostics != null) result &= ccdValidator.validateProblemObservation_validateProblemObservationContainsPatientAwareness(hibCaseObservation, diagnostics, context);
 		if (result || diagnostics != null) result &= validateHibCaseObservation_validateProblemObservationTemplateId(hibCaseObservation, diagnostics, context);
 		if (result || diagnostics != null) result &= ccdValidator.validateProblemObservation_validateProblemObservationMoodCode(hibCaseObservation, diagnostics, context);
-		if (result || diagnostics != null) result &= phcrValidator.validateCaseObservation_validateProblemObservationStatusCode(hibCaseObservation, diagnostics, context);
+		if (result || diagnostics != null) result &= ccdValidator.validateProblemObservation_validateProblemObservationStatusCode(hibCaseObservation, diagnostics, context);
 		if (result || diagnostics != null) result &= ccdValidator.validateProblemObservation_validateProblemObservationEffectiveTime(hibCaseObservation, diagnostics, context);
 		if (result || diagnostics != null) result &= ccdValidator.validateProblemObservation_validateProblemObservationProblemStatus(hibCaseObservation, diagnostics, context);
 		if (result || diagnostics != null) result &= ccdValidator.validateProblemObservation_validateProblemObservationProblemHealthStatus(hibCaseObservation, diagnostics, context);
@@ -437,7 +435,6 @@ public class HibValidator extends EObjectValidator
 		if (result || diagnostics != null) result &= phcrValidator.validateCaseObservation_validateCaseObservationMoodCode(hibCaseObservation, diagnostics, context);
 		if (result || diagnostics != null) result &= phcrValidator.validateCaseObservation_validateCaseObservationId(hibCaseObservation, diagnostics, context);
 		if (result || diagnostics != null) result &= phcrValidator.validateCaseObservation_validateCaseObservationCode(hibCaseObservation, diagnostics, context);
-		if (result || diagnostics != null) result &= phcrValidator.validateCaseObservation_validateProblemObservationCode(hibCaseObservation, diagnostics, context);
 		if (result || diagnostics != null) result &= phcrValidator.validateCaseObservation_validateCaseObservationStatusCode(hibCaseObservation, diagnostics, context);
 		if (result || diagnostics != null) result &= phcrValidator.validateCaseObservation_validateCaseObservationEffectiveTime(hibCaseObservation, diagnostics, context);
 		if (result || diagnostics != null) result &= phcrValidator.validateCaseObservation_validateCaseObservationValue(hibCaseObservation, diagnostics, context);
@@ -485,10 +482,8 @@ public class HibValidator extends EObjectValidator
 		if (result || diagnostics != null) result &= phcrValidator.validateSignsAndSymptomsObservation_validateSignsAndSymptomsObservationClassCode(hibSignsAndSymptoms, diagnostics, context);
 		if (result || diagnostics != null) result &= phcrValidator.validateSignsAndSymptomsObservation_validateSignsAndSymptomsObservationMoodCode(hibSignsAndSymptoms, diagnostics, context);
 		if (result || diagnostics != null) result &= phcrValidator.validateSignsAndSymptomsObservation_validateSignsAndSymptomsObservationNegationInd(hibSignsAndSymptoms, diagnostics, context);
-		if (result || diagnostics != null) result &= phcrValidator.validateSignsAndSymptomsObservation_validateSignsAndSymptomsObservationCodeP(hibSignsAndSymptoms, diagnostics, context);
 		if (result || diagnostics != null) result &= phcrValidator.validateSignsAndSymptomsObservation_validateSignsAndSymptomsObservationCode(hibSignsAndSymptoms, diagnostics, context);
 		if (result || diagnostics != null) result &= phcrValidator.validateSignsAndSymptomsObservation_validateSignsAndSymptomsObservationStatusCode(hibSignsAndSymptoms, diagnostics, context);
-		if (result || diagnostics != null) result &= phcrValidator.validateSignsAndSymptomsObservation_validateSignsAndSymptomsObservationStatusCodeP(hibSignsAndSymptoms, diagnostics, context);
 		if (result || diagnostics != null) result &= phcrValidator.validateSignsAndSymptomsObservation_validateSignsAndSymptomsObservationEffectiveTime(hibSignsAndSymptoms, diagnostics, context);
 		if (result || diagnostics != null) result &= phcrValidator.validateSignsAndSymptomsObservation_validateSignsAndSymptomsObservationValue(hibSignsAndSymptoms, diagnostics, context);
 		return result;
@@ -521,7 +516,7 @@ public class HibValidator extends EObjectValidator
 		if (result || diagnostics != null) result &= cdaValidator.validateSection_validateClassCode(hibPhcrRelevantDxTestsSection, diagnostics, context);
 		if (result || diagnostics != null) result &= cdaValidator.validateSection_validateMoodCode(hibPhcrRelevantDxTestsSection, diagnostics, context);
 		if (result || diagnostics != null) result &= validateHibPhcrRelevantDxTestsSection_validateResultsSectionTemplateId(hibPhcrRelevantDxTestsSection, diagnostics, context);
-		if (result || diagnostics != null) result &= phcrValidator.validatePhcrRelevantDxTestsSection_validateResultsSectionCode(hibPhcrRelevantDxTestsSection, diagnostics, context);
+		if (result || diagnostics != null) result &= ccdValidator.validateResultsSection_validateResultsSectionCode(hibPhcrRelevantDxTestsSection, diagnostics, context);
 		if (result || diagnostics != null) result &= ccdValidator.validateResultsSection_validateResultsSectionTitle(hibPhcrRelevantDxTestsSection, diagnostics, context);
 		if (result || diagnostics != null) result &= ccdValidator.validateResultsSection_validateResultsSectionText(hibPhcrRelevantDxTestsSection, diagnostics, context);
 		if (result || diagnostics != null) result &= ccdValidator.validateResultsSection_validateResultsSectionResultOrganizer(hibPhcrRelevantDxTestsSection, diagnostics, context);
@@ -588,7 +583,7 @@ public class HibValidator extends EObjectValidator
 		if (result || diagnostics != null) result &= ccdValidator.validateResultObservation_validateResultObservationMoodCode(hibResultObservation, diagnostics, context);
 		if (result || diagnostics != null) result &= ccdValidator.validateResultObservation_validateResultObservationId(hibResultObservation, diagnostics, context);
 		if (result || diagnostics != null) result &= ccdValidator.validateResultObservation_validateResultObservationEffectiveTime(hibResultObservation, diagnostics, context);
-		if (result || diagnostics != null) result &= phcrValidator.validateResultObservation_validateResultObservationStatusCode(hibResultObservation, diagnostics, context);
+		if (result || diagnostics != null) result &= ccdValidator.validateResultObservation_validateResultObservationStatusCode(hibResultObservation, diagnostics, context);
 		if (result || diagnostics != null) result &= ccdValidator.validateResultObservation_validateResultObservationCode(hibResultObservation, diagnostics, context);
 		if (result || diagnostics != null) result &= ccdValidator.validateResultObservation_validateResultObservationMethodCode(hibResultObservation, diagnostics, context);
 		if (result || diagnostics != null) result &= ccdValidator.validateResultObservation_validateResultObservationInterpretationCode(hibResultObservation, diagnostics, context);
@@ -631,7 +626,7 @@ public class HibValidator extends EObjectValidator
 		if (result || diagnostics != null) result &= ccdValidator.validateResultOrganizer_validateResultOrganizerMoodCode(hibResultOrganizer, diagnostics, context);
 		if (result || diagnostics != null) result &= ccdValidator.validateResultOrganizer_validateResultOrganizerId(hibResultOrganizer, diagnostics, context);
 		if (result || diagnostics != null) result &= ccdValidator.validateResultOrganizer_validateResultOrganizerCode(hibResultOrganizer, diagnostics, context);
-		if (result || diagnostics != null) result &= phcrValidator.validateResultOrganizer_validateResultOrganizerStatusCode(hibResultOrganizer, diagnostics, context);
+		if (result || diagnostics != null) result &= ccdValidator.validateResultOrganizer_validateResultOrganizerStatusCode(hibResultOrganizer, diagnostics, context);
 		if (result || diagnostics != null) result &= ccdValidator.validateResultOrganizer_validateResultOrganizerResultObservation(hibResultOrganizer, diagnostics, context);
 		if (result || diagnostics != null) result &= ccdValidator.validateResultOrganizer_validateResultOrganizerSpecimen(hibResultOrganizer, diagnostics, context);
 		if (result || diagnostics != null) result &= phcrValidator.validateResultOrganizer_validatePHCRResultOrganizerClassCode(hibResultOrganizer, diagnostics, context);

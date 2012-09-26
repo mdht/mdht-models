@@ -33,6 +33,7 @@ public interface CoccidioidesTherapeuticRegimenAct extends TherapeuticRegimenAct
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
+   * self.entryRelationship->exists(entryRelationship : cda::EntryRelationship | not entryRelationship.substanceAdministration.oclIsUndefined() and entryRelationship.substanceAdministration.oclIsKindOf(cocci::CoccidioidesTreatmentGivenSubstanceAdministration) and entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::COMP)
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
    * <!-- end-model-doc -->
@@ -45,6 +46,7 @@ public interface CoccidioidesTherapeuticRegimenAct extends TherapeuticRegimenAct
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
+   * self.entryRelationship->exists(entryRelationship : cda::EntryRelationship | not entryRelationship.substanceAdministration.oclIsUndefined() and entryRelationship.substanceAdministration.oclIsKindOf(cocci::CoccidioidesTreatmentNotGivenSubstanceAdministration) and entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::COMP)
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
    * <!-- end-model-doc -->
@@ -56,6 +58,9 @@ public interface CoccidioidesTherapeuticRegimenAct extends TherapeuticRegimenAct
 	/**
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
+   * <!-- begin-model-doc -->
+   * self.getSubstanceAdministrations()->select(substanceAdministration : cda::SubstanceAdministration | not substanceAdministration.oclIsUndefined() and substanceAdministration.oclIsKindOf(cocci::CoccidioidesTreatmentGivenSubstanceAdministration)).oclAsType(cocci::CoccidioidesTreatmentGivenSubstanceAdministration)
+   * <!-- end-model-doc -->
    * @model kind="operation" required="true" ordered="false"
    *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getSubstanceAdministrations()->select(substanceAdministration : cda::SubstanceAdministration | not substanceAdministration.oclIsUndefined() and substanceAdministration.oclIsKindOf(cocci::CoccidioidesTreatmentGivenSubstanceAdministration)).oclAsType(cocci::CoccidioidesTreatmentGivenSubstanceAdministration)'"
    * @generated
@@ -65,23 +70,12 @@ public interface CoccidioidesTherapeuticRegimenAct extends TherapeuticRegimenAct
 	/**
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
+   * <!-- begin-model-doc -->
+   * self.getSubstanceAdministrations()->select(substanceAdministration : cda::SubstanceAdministration | not substanceAdministration.oclIsUndefined() and substanceAdministration.oclIsKindOf(cocci::CoccidioidesTreatmentNotGivenSubstanceAdministration)).oclAsType(cocci::CoccidioidesTreatmentNotGivenSubstanceAdministration)
+   * <!-- end-model-doc -->
    * @model kind="operation" required="true" ordered="false"
    *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getSubstanceAdministrations()->select(substanceAdministration : cda::SubstanceAdministration | not substanceAdministration.oclIsUndefined() and substanceAdministration.oclIsKindOf(cocci::CoccidioidesTreatmentNotGivenSubstanceAdministration)).oclAsType(cocci::CoccidioidesTreatmentNotGivenSubstanceAdministration)'"
    * @generated
    */
 	EList<CoccidioidesTreatmentNotGivenSubstanceAdministration> getCoccidioidesTreatmentNotGivenSubstanceAdministrations();
-
-	/**
-   * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-   * @generated
-   */
-	public CoccidioidesTherapeuticRegimenAct init();
-
-  /**
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    public CoccidioidesTherapeuticRegimenAct init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // CoccidioidesTherapeuticRegimenAct

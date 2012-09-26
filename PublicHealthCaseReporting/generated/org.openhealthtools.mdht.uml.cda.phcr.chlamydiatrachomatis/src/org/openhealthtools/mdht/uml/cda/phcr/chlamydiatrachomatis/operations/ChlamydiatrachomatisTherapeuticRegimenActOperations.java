@@ -92,6 +92,7 @@ public class ChlamydiatrachomatisTherapeuticRegimenActOperations extends Therape
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
+   * self.entryRelationship->exists(entryRelationship : cda::EntryRelationship | not entryRelationship.substanceAdministration.oclIsUndefined() and entryRelationship.substanceAdministration.oclIsKindOf(chlamydiatrachomatis::ChlamydiatrachomatisTreatmentGivenSubstanceAdministration) and entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::COMP)
    * @param chlamydiatrachomatisTherapeuticRegimenAct The receiving '<em><b>Therapeutic Regimen Act</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -100,8 +101,8 @@ public class ChlamydiatrachomatisTherapeuticRegimenActOperations extends Therape
    */
 	
 	public static  boolean validateChlamydiatrachomatisTherapeuticRegimenActChlamydiatrachomatisTreatmentGivenSubstanceAdministration(ChlamydiatrachomatisTherapeuticRegimenAct chlamydiatrachomatisTherapeuticRegimenAct, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
-    if (VALIDATE_CHLAMYDIATRACHOMATIS_THERAPEUTIC_REGIMEN_ACT_CHLAMYDIATRACHOMATIS_TREATMENT_GIVEN_SUBSTANCE_ADMINISTRATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+    if (VALIDATE_CHLAMYDIATRACHOMATIS_THERAPEUTIC_REGIMEN_ACT_CHLAMYDIATRACHOMATIS_TREATMENT_GIVEN_SUBSTANCE_ADMINISTRATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null)
+    {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(ChlamydiatrachomatisPackage.Literals.CHLAMYDIATRACHOMATIS_THERAPEUTIC_REGIMEN_ACT);
       try
@@ -119,13 +120,12 @@ public class ChlamydiatrachomatisTherapeuticRegimenActOperations extends Therape
       {
         diagnostics.add
           (new BasicDiagnostic
-            (Diagnostic.WARNING,
+            (Diagnostic.ERROR,
              ChlamydiatrachomatisValidator.DIAGNOSTIC_SOURCE,
              ChlamydiatrachomatisValidator.CHLAMYDIATRACHOMATIS_THERAPEUTIC_REGIMEN_ACT__CHLAMYDIATRACHOMATIS_THERAPEUTIC_REGIMEN_ACT_CHLAMYDIATRACHOMATIS_TREATMENT_GIVEN_SUBSTANCE_ADMINISTRATION,
-             ChlamydiatrachomatisPlugin.INSTANCE.getString("ChlamydiatrachomatisTherapeuticRegimenActChlamydiatrachomatisTreatmentGivenSubstanceAdministration"),
+             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "validateChlamydiatrachomatisTherapeuticRegimenActChlamydiatrachomatisTreatmentGivenSubstanceAdministration", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(chlamydiatrachomatisTherapeuticRegimenAct, context) }),
              new Object [] { chlamydiatrachomatisTherapeuticRegimenAct }));
       }
-       
       return false;
     }
     return true;
@@ -157,6 +157,7 @@ public class ChlamydiatrachomatisTherapeuticRegimenActOperations extends Therape
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
+   * self.entryRelationship->exists(entryRelationship : cda::EntryRelationship | not entryRelationship.substanceAdministration.oclIsUndefined() and entryRelationship.substanceAdministration.oclIsKindOf(chlamydiatrachomatis::ChlamydiatrachomatisTreatmentNotGivenSubstanceAdministration) and entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::COMP)
    * @param chlamydiatrachomatisTherapeuticRegimenAct The receiving '<em><b>Therapeutic Regimen Act</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -165,8 +166,8 @@ public class ChlamydiatrachomatisTherapeuticRegimenActOperations extends Therape
    */
 	
 	public static  boolean validateChlamydiatrachomatisTherapeuticRegimenActChlamydiatrachomatisTreatmentNotGivenSubstanceAdministration(ChlamydiatrachomatisTherapeuticRegimenAct chlamydiatrachomatisTherapeuticRegimenAct, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
-    if (VALIDATE_CHLAMYDIATRACHOMATIS_THERAPEUTIC_REGIMEN_ACT_CHLAMYDIATRACHOMATIS_TREATMENT_NOT_GIVEN_SUBSTANCE_ADMINISTRATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+    if (VALIDATE_CHLAMYDIATRACHOMATIS_THERAPEUTIC_REGIMEN_ACT_CHLAMYDIATRACHOMATIS_TREATMENT_NOT_GIVEN_SUBSTANCE_ADMINISTRATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null)
+    {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(ChlamydiatrachomatisPackage.Literals.CHLAMYDIATRACHOMATIS_THERAPEUTIC_REGIMEN_ACT);
       try
@@ -184,13 +185,12 @@ public class ChlamydiatrachomatisTherapeuticRegimenActOperations extends Therape
       {
         diagnostics.add
           (new BasicDiagnostic
-            (Diagnostic.INFO,
+            (Diagnostic.ERROR,
              ChlamydiatrachomatisValidator.DIAGNOSTIC_SOURCE,
              ChlamydiatrachomatisValidator.CHLAMYDIATRACHOMATIS_THERAPEUTIC_REGIMEN_ACT__CHLAMYDIATRACHOMATIS_THERAPEUTIC_REGIMEN_ACT_CHLAMYDIATRACHOMATIS_TREATMENT_NOT_GIVEN_SUBSTANCE_ADMINISTRATION,
-             ChlamydiatrachomatisPlugin.INSTANCE.getString("ChlamydiatrachomatisTherapeuticRegimenActChlamydiatrachomatisTreatmentNotGivenSubstanceAdministration"),
+             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "validateChlamydiatrachomatisTherapeuticRegimenActChlamydiatrachomatisTreatmentNotGivenSubstanceAdministration", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(chlamydiatrachomatisTherapeuticRegimenAct, context) }),
              new Object [] { chlamydiatrachomatisTherapeuticRegimenAct }));
       }
-       
       return false;
     }
     return true;
@@ -219,6 +219,10 @@ public class ChlamydiatrachomatisTherapeuticRegimenActOperations extends Therape
 	/**
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
+   * <!-- begin-model-doc -->
+   * self.getSubstanceAdministrations()->select(substanceAdministration : cda::SubstanceAdministration | not substanceAdministration.oclIsUndefined() and substanceAdministration.oclIsKindOf(chlamydiatrachomatis::ChlamydiatrachomatisTreatmentGivenSubstanceAdministration)).oclAsType(chlamydiatrachomatis::ChlamydiatrachomatisTreatmentGivenSubstanceAdministration)
+   * @param chlamydiatrachomatisTherapeuticRegimenAct The receiving '<em><b>Therapeutic Regimen Act</b></em>' model object.
+   * <!-- end-model-doc -->
    * @generated
    */
 	
@@ -226,7 +230,7 @@ public class ChlamydiatrachomatisTherapeuticRegimenActOperations extends Therape
     if (GET_CHLAMYDIATRACHOMATIS_TREATMENT_GIVEN_SUBSTANCE_ADMINISTRATIONS__EOCL_QRY == null)
     {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
-      helper.setOperationContext(ChlamydiatrachomatisPackage.Literals.CHLAMYDIATRACHOMATIS_THERAPEUTIC_REGIMEN_ACT, ChlamydiatrachomatisPackage.Literals.CHLAMYDIATRACHOMATIS_THERAPEUTIC_REGIMEN_ACT.getEAllOperations().get(65));
+      helper.setOperationContext(ChlamydiatrachomatisPackage.Literals.CHLAMYDIATRACHOMATIS_THERAPEUTIC_REGIMEN_ACT, ChlamydiatrachomatisPackage.Literals.CHLAMYDIATRACHOMATIS_THERAPEUTIC_REGIMEN_ACT.getEAllOperations().get(63));
       try
       {
         GET_CHLAMYDIATRACHOMATIS_TREATMENT_GIVEN_SUBSTANCE_ADMINISTRATIONS__EOCL_QRY = helper.createQuery(GET_CHLAMYDIATRACHOMATIS_TREATMENT_GIVEN_SUBSTANCE_ADMINISTRATIONS__EOCL_EXP);
@@ -265,6 +269,10 @@ public class ChlamydiatrachomatisTherapeuticRegimenActOperations extends Therape
 	/**
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
+   * <!-- begin-model-doc -->
+   * self.getSubstanceAdministrations()->select(substanceAdministration : cda::SubstanceAdministration | not substanceAdministration.oclIsUndefined() and substanceAdministration.oclIsKindOf(chlamydiatrachomatis::ChlamydiatrachomatisTreatmentNotGivenSubstanceAdministration)).oclAsType(chlamydiatrachomatis::ChlamydiatrachomatisTreatmentNotGivenSubstanceAdministration)
+   * @param chlamydiatrachomatisTherapeuticRegimenAct The receiving '<em><b>Therapeutic Regimen Act</b></em>' model object.
+   * <!-- end-model-doc -->
    * @generated
    */
 	
@@ -272,7 +280,7 @@ public class ChlamydiatrachomatisTherapeuticRegimenActOperations extends Therape
     if (GET_CHLAMYDIATRACHOMATIS_TREATMENT_NOT_GIVEN_SUBSTANCE_ADMINISTRATIONS__EOCL_QRY == null)
     {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
-      helper.setOperationContext(ChlamydiatrachomatisPackage.Literals.CHLAMYDIATRACHOMATIS_THERAPEUTIC_REGIMEN_ACT, ChlamydiatrachomatisPackage.Literals.CHLAMYDIATRACHOMATIS_THERAPEUTIC_REGIMEN_ACT.getEAllOperations().get(66));
+      helper.setOperationContext(ChlamydiatrachomatisPackage.Literals.CHLAMYDIATRACHOMATIS_THERAPEUTIC_REGIMEN_ACT, ChlamydiatrachomatisPackage.Literals.CHLAMYDIATRACHOMATIS_THERAPEUTIC_REGIMEN_ACT.getEAllOperations().get(64));
       try
       {
         GET_CHLAMYDIATRACHOMATIS_TREATMENT_NOT_GIVEN_SUBSTANCE_ADMINISTRATIONS__EOCL_QRY = helper.createQuery(GET_CHLAMYDIATRACHOMATIS_TREATMENT_NOT_GIVEN_SUBSTANCE_ADMINISTRATIONS__EOCL_EXP);
@@ -314,6 +322,7 @@ public class ChlamydiatrachomatisTherapeuticRegimenActOperations extends Therape
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
+   * self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.15.3.131')
    * @param chlamydiatrachomatisTherapeuticRegimenAct The receiving '<em><b>Therapeutic Regimen Act</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -322,8 +331,8 @@ public class ChlamydiatrachomatisTherapeuticRegimenActOperations extends Therape
    */
 	
 	public static  boolean validateTherapeuticRegimenActTemplateId(ChlamydiatrachomatisTherapeuticRegimenAct chlamydiatrachomatisTherapeuticRegimenAct, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
-    if (VALIDATE_THERAPEUTIC_REGIMEN_ACT_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+    if (VALIDATE_THERAPEUTIC_REGIMEN_ACT_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null)
+    {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(ChlamydiatrachomatisPackage.Literals.CHLAMYDIATRACHOMATIS_THERAPEUTIC_REGIMEN_ACT);
       try
@@ -344,10 +353,9 @@ public class ChlamydiatrachomatisTherapeuticRegimenActOperations extends Therape
             (Diagnostic.ERROR,
              ChlamydiatrachomatisValidator.DIAGNOSTIC_SOURCE,
              ChlamydiatrachomatisValidator.CHLAMYDIATRACHOMATIS_THERAPEUTIC_REGIMEN_ACT__THERAPEUTIC_REGIMEN_ACT_TEMPLATE_ID,
-             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "TherapeuticRegimenActTemplateId", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(chlamydiatrachomatisTherapeuticRegimenAct, context) }),
+             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "validateTherapeuticRegimenActTemplateId", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(chlamydiatrachomatisTherapeuticRegimenAct, context) }),
              new Object [] { chlamydiatrachomatisTherapeuticRegimenAct }));
       }
-       
       return false;
     }
     return true;

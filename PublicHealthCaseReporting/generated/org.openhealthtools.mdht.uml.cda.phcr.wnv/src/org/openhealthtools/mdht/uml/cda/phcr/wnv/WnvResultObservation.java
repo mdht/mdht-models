@@ -32,6 +32,7 @@ public interface WnvResultObservation extends ResultObservation {
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
+   * (self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined())
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
    * <!-- end-model-doc -->
@@ -44,6 +45,9 @@ public interface WnvResultObservation extends ResultObservation {
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
+   * (self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and 
+   * let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in 
+   * not value.code.oclIsUndefined())
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
    * <!-- end-model-doc -->
@@ -51,18 +55,4 @@ public interface WnvResultObservation extends ResultObservation {
    * @generated
    */
   boolean validateWnvResultObservationCode(DiagnosticChain diagnostics, Map<Object, Object> context);
-
-  /**
-   * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-   * @generated
-   */
-	public WnvResultObservation init();
-
-  /**
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    public WnvResultObservation init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // WnvResultObservation

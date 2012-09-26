@@ -10,8 +10,11 @@
  *******************************************************************************/
 package org.openhealthtools.mdht.uml.cda.phcr.flu;
 
+import java.lang.Iterable;
 import java.util.Map;
 import org.eclipse.emf.common.util.DiagnosticChain;
+import org.eclipse.emf.ecore.EObject;
+import org.openhealthtools.mdht.emf.runtime.util.Initializer;
 import org.openhealthtools.mdht.uml.cda.phcr.PublicHealthCaseReport;
 
 /**
@@ -21,7 +24,7 @@ import org.openhealthtools.mdht.uml.cda.phcr.PublicHealthCaseReport;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.phcr.flu.fluPackage#getInfluenzaCaseReport()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation title.mixed='Public Health Case Report - Influenza' templateId.root='2.16.840.1.113883.10.20.15.1.11' constraints.validation.error='InfluenzaCaseReportTemplateId InfluenzaCaseReportTitle InfluenzaCaseReportInfluenzaPHCRClinicalInformationSection' constraints.validation.warning='InfluenzaCaseReportInfluenzaImmunizationSection InfluenzaCaseReportInfluenzaPHCRTreatmentInformationSection InfluenzaCaseReportInfluenzaPHCRRelevantDiagnosticTestsAndOrLaboratoryDataSection InfluenzaCaseReportInfluenzaPHCRSocialHistorySection'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='InfluenzaCaseReportTemplateId InfluenzaCaseReportTitle InfluenzaCaseReportInfluenzaPHCRClinicalInformationSection' templateId.root='2.16.840.1.113883.10.20.15.1.11' title.mixed='Public Health Case Report - Influenza' constraints.validation.warning='InfluenzaCaseReportInfluenzaImmunizationSection InfluenzaCaseReportInfluenzaPHCRTreatmentInformationSection InfluenzaCaseReportInfluenzaPHCRRelevantDiagnosticTestsAndOrLaboratoryDataSection InfluenzaCaseReportInfluenzaPHCRSocialHistorySection'"
  * @generated
  */
 public interface InfluenzaCaseReport extends PublicHealthCaseReport {
@@ -107,10 +110,10 @@ public interface InfluenzaCaseReport extends PublicHealthCaseReport {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(flu::InfluenzaImmunizationSection))->asSequence()->first().oclAsType(flu::InfluenzaImmunizationSection)
+	 * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(flu::InfluenzaImmunizationSection))->asSequence()->any(true).oclAsType(flu::InfluenzaImmunizationSection)
 	 * <!-- end-model-doc -->
 	 * @model kind="operation" required="true" ordered="false"
-	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(flu::InfluenzaImmunizationSection))->asSequence()->first().oclAsType(flu::InfluenzaImmunizationSection)'"
+	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(flu::InfluenzaImmunizationSection))->asSequence()->any(true).oclAsType(flu::InfluenzaImmunizationSection)'"
 	 * @generated
 	 */
 	InfluenzaImmunizationSection getInfluenzaImmunizationSection();
@@ -119,10 +122,10 @@ public interface InfluenzaCaseReport extends PublicHealthCaseReport {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(flu::InfluenzaPHCRClinicalInformationSection))->asSequence()->first().oclAsType(flu::InfluenzaPHCRClinicalInformationSection)
+	 * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(flu::InfluenzaPHCRClinicalInformationSection))->asSequence()->any(true).oclAsType(flu::InfluenzaPHCRClinicalInformationSection)
 	 * <!-- end-model-doc -->
 	 * @model kind="operation" required="true" ordered="false"
-	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(flu::InfluenzaPHCRClinicalInformationSection))->asSequence()->first().oclAsType(flu::InfluenzaPHCRClinicalInformationSection)'"
+	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(flu::InfluenzaPHCRClinicalInformationSection))->asSequence()->any(true).oclAsType(flu::InfluenzaPHCRClinicalInformationSection)'"
 	 * @generated
 	 */
 	InfluenzaPHCRClinicalInformationSection getInfluenzaPHCRClinicalInformationSection();
@@ -131,10 +134,10 @@ public interface InfluenzaCaseReport extends PublicHealthCaseReport {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(flu::InfluenzaPHCRTreatmentInformationSection))->asSequence()->first().oclAsType(flu::InfluenzaPHCRTreatmentInformationSection)
+	 * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(flu::InfluenzaPHCRTreatmentInformationSection))->asSequence()->any(true).oclAsType(flu::InfluenzaPHCRTreatmentInformationSection)
 	 * <!-- end-model-doc -->
 	 * @model kind="operation" required="true" ordered="false"
-	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(flu::InfluenzaPHCRTreatmentInformationSection))->asSequence()->first().oclAsType(flu::InfluenzaPHCRTreatmentInformationSection)'"
+	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(flu::InfluenzaPHCRTreatmentInformationSection))->asSequence()->any(true).oclAsType(flu::InfluenzaPHCRTreatmentInformationSection)'"
 	 * @generated
 	 */
 	InfluenzaPHCRTreatmentInformationSection getInfluenzaPHCRTreatmentInformationSection();
@@ -143,10 +146,10 @@ public interface InfluenzaCaseReport extends PublicHealthCaseReport {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(flu::InfluenzaPHCRRelevantDiagnosticTestsAndOrLaboratoryDataSection))->asSequence()->first().oclAsType(flu::InfluenzaPHCRRelevantDiagnosticTestsAndOrLaboratoryDataSection)
+	 * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(flu::InfluenzaPHCRRelevantDiagnosticTestsAndOrLaboratoryDataSection))->asSequence()->any(true).oclAsType(flu::InfluenzaPHCRRelevantDiagnosticTestsAndOrLaboratoryDataSection)
 	 * <!-- end-model-doc -->
 	 * @model kind="operation" required="true" ordered="false"
-	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(flu::InfluenzaPHCRRelevantDiagnosticTestsAndOrLaboratoryDataSection))->asSequence()->first().oclAsType(flu::InfluenzaPHCRRelevantDiagnosticTestsAndOrLaboratoryDataSection)'"
+	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(flu::InfluenzaPHCRRelevantDiagnosticTestsAndOrLaboratoryDataSection))->asSequence()->any(true).oclAsType(flu::InfluenzaPHCRRelevantDiagnosticTestsAndOrLaboratoryDataSection)'"
 	 * @generated
 	 */
 	InfluenzaPHCRRelevantDiagnosticTestsAndOrLaboratoryDataSection getInfluenzaPHCRRelevantDiagnosticTestsAndOrLaboratoryDataSection();
@@ -155,10 +158,10 @@ public interface InfluenzaCaseReport extends PublicHealthCaseReport {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(flu::InfluenzaPHCRSocialHistorySection))->asSequence()->first().oclAsType(flu::InfluenzaPHCRSocialHistorySection)
+	 * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(flu::InfluenzaPHCRSocialHistorySection))->asSequence()->any(true).oclAsType(flu::InfluenzaPHCRSocialHistorySection)
 	 * <!-- end-model-doc -->
 	 * @model kind="operation" required="true" ordered="false"
-	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(flu::InfluenzaPHCRSocialHistorySection))->asSequence()->first().oclAsType(flu::InfluenzaPHCRSocialHistorySection)'"
+	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(flu::InfluenzaPHCRSocialHistorySection))->asSequence()->any(true).oclAsType(flu::InfluenzaPHCRSocialHistorySection)'"
 	 * @generated
 	 */
 	InfluenzaPHCRSocialHistorySection getInfluenzaPHCRSocialHistorySection();
@@ -169,4 +172,11 @@ public interface InfluenzaCaseReport extends PublicHealthCaseReport {
 	 * @generated
 	 */
 	public InfluenzaCaseReport init();
+
+	/**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    public InfluenzaCaseReport init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // InfluenzaCaseReport

@@ -78,6 +78,7 @@ public class ChlamydiatrachomatisTreatmentGivenSubstanceAdministrationOperations
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
+   * self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.15.3.132')
    * @param chlamydiatrachomatisTreatmentGivenSubstanceAdministration The receiving '<em><b>Treatment Given Substance Administration</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -86,8 +87,8 @@ public class ChlamydiatrachomatisTreatmentGivenSubstanceAdministrationOperations
    */
 	
 	public static  boolean validateTreatmentGivenSubstanceAdministrationTemplateId(ChlamydiatrachomatisTreatmentGivenSubstanceAdministration chlamydiatrachomatisTreatmentGivenSubstanceAdministration, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
-    if (VALIDATE_TREATMENT_GIVEN_SUBSTANCE_ADMINISTRATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+    if (VALIDATE_TREATMENT_GIVEN_SUBSTANCE_ADMINISTRATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null)
+    {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(ChlamydiatrachomatisPackage.Literals.CHLAMYDIATRACHOMATIS_TREATMENT_GIVEN_SUBSTANCE_ADMINISTRATION);
       try
@@ -108,10 +109,9 @@ public class ChlamydiatrachomatisTreatmentGivenSubstanceAdministrationOperations
             (Diagnostic.ERROR,
              ChlamydiatrachomatisValidator.DIAGNOSTIC_SOURCE,
              ChlamydiatrachomatisValidator.CHLAMYDIATRACHOMATIS_TREATMENT_GIVEN_SUBSTANCE_ADMINISTRATION__TREATMENT_GIVEN_SUBSTANCE_ADMINISTRATION_TEMPLATE_ID,
-             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "TreatmentGivenSubstanceAdministrationTemplateId", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(chlamydiatrachomatisTreatmentGivenSubstanceAdministration, context) }),
+             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "validateTreatmentGivenSubstanceAdministrationTemplateId", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(chlamydiatrachomatisTreatmentGivenSubstanceAdministration, context) }),
              new Object [] { chlamydiatrachomatisTreatmentGivenSubstanceAdministration }));
       }
-       
       return false;
     }
     return true;

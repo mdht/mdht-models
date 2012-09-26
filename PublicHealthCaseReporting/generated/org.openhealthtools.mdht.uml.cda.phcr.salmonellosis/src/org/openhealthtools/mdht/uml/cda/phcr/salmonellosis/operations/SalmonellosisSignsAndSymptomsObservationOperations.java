@@ -20,7 +20,6 @@ import org.eclipse.ocl.ecore.OCL;
 import org.openhealthtools.mdht.uml.cda.phcr.operations.SignsAndSymptomsObservationOperations;
 
 import org.openhealthtools.mdht.uml.cda.phcr.salmonellosis.SalmonellosisPackage;
-import org.openhealthtools.mdht.uml.cda.phcr.salmonellosis.SalmonellosisPlugin;
 import org.openhealthtools.mdht.uml.cda.phcr.salmonellosis.SalmonellosisSignsAndSymptomsObservation;
 
 import org.openhealthtools.mdht.uml.cda.phcr.salmonellosis.util.SalmonellosisValidator;
@@ -33,7 +32,6 @@ import org.openhealthtools.mdht.uml.cda.phcr.salmonellosis.util.SalmonellosisVal
  * <p>
  * The following operations are supported:
  * <ul>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.phcr.salmonellosis.SalmonellosisSignsAndSymptomsObservation#validateSalmonellosisSignsAndSymptomsObservationValue(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Salmonellosis Signs And Symptoms Observation Value</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.phcr.salmonellosis.SalmonellosisSignsAndSymptomsObservation#validateSignsAndSymptomsObservationTemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Signs And Symptoms Observation Template Id</em>}</li>
  * </ul>
  * </p>
@@ -77,6 +75,7 @@ public class SalmonellosisSignsAndSymptomsObservationOperations extends SignsAnd
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
+   * (self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (not self.value->isEmpty())
    * @param salmonellosisSignsAndSymptomsObservation The receiving '<em><b>Signs And Symptoms Observation</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -86,8 +85,8 @@ public class SalmonellosisSignsAndSymptomsObservationOperations extends SignsAnd
   
   public static  boolean validateSalmonellosisSignsAndSymptomsObservationValue(SalmonellosisSignsAndSymptomsObservation salmonellosisSignsAndSymptomsObservation, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
-  	  
-    if (VALIDATE_SALMONELLOSIS_SIGNS_AND_SYMPTOMS_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+    if (VALIDATE_SALMONELLOSIS_SIGNS_AND_SYMPTOMS_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null)
+    {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(SalmonellosisPackage.Literals.SALMONELLOSIS_SIGNS_AND_SYMPTOMS_OBSERVATION);
       try
@@ -108,10 +107,9 @@ public class SalmonellosisSignsAndSymptomsObservationOperations extends SignsAnd
             (Diagnostic.ERROR,
              SalmonellosisValidator.DIAGNOSTIC_SOURCE,
              SalmonellosisValidator.SALMONELLOSIS_SIGNS_AND_SYMPTOMS_OBSERVATION__SALMONELLOSIS_SIGNS_AND_SYMPTOMS_OBSERVATION_VALUE,
-             SalmonellosisPlugin.INSTANCE.getString("SalmonellosisSignsAndSymptomsObservationValue"),
+             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "validateSalmonellosisSignsAndSymptomsObservationValue", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(salmonellosisSignsAndSymptomsObservation, context) }),
              new Object [] { salmonellosisSignsAndSymptomsObservation }));
       }
-       
       return false;
     }
     return true;
@@ -143,6 +141,7 @@ public class SalmonellosisSignsAndSymptomsObservationOperations extends SignsAnd
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
+   * self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.15.3.117')
    * @param salmonellosisSignsAndSymptomsObservation The receiving '<em><b>Signs And Symptoms Observation</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -152,8 +151,8 @@ public class SalmonellosisSignsAndSymptomsObservationOperations extends SignsAnd
   
   public static  boolean validateSignsAndSymptomsObservationTemplateId(SalmonellosisSignsAndSymptomsObservation salmonellosisSignsAndSymptomsObservation, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
-  	  
-    if (VALIDATE_SIGNS_AND_SYMPTOMS_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+    if (VALIDATE_SIGNS_AND_SYMPTOMS_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null)
+    {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(SalmonellosisPackage.Literals.SALMONELLOSIS_SIGNS_AND_SYMPTOMS_OBSERVATION);
       try
@@ -174,10 +173,9 @@ public class SalmonellosisSignsAndSymptomsObservationOperations extends SignsAnd
             (Diagnostic.ERROR,
              SalmonellosisValidator.DIAGNOSTIC_SOURCE,
              SalmonellosisValidator.SALMONELLOSIS_SIGNS_AND_SYMPTOMS_OBSERVATION__SIGNS_AND_SYMPTOMS_OBSERVATION_TEMPLATE_ID,
-             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "SignsAndSymptomsObservationTemplateId", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(salmonellosisSignsAndSymptomsObservation, context) }),
+             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "validateSignsAndSymptomsObservationTemplateId", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(salmonellosisSignsAndSymptomsObservation, context) }),
              new Object [] { salmonellosisSignsAndSymptomsObservation }));
       }
-       
       return false;
     }
     return true;

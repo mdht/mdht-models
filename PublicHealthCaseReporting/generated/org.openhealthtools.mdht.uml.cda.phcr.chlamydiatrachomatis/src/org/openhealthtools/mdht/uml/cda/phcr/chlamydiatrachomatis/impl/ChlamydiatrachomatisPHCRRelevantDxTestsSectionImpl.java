@@ -29,8 +29,6 @@ import org.openhealthtools.mdht.uml.cda.phcr.chlamydiatrachomatis.operations.Chl
 
 import org.openhealthtools.mdht.uml.cda.phcr.impl.PhcrRelevantDxTestsSectionImpl;
 
-import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
-
 /**
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>PHCR Relevant Dx Tests Section</b></em>'.
@@ -105,23 +103,4 @@ public class ChlamydiatrachomatisPHCRRelevantDxTestsSectionImpl extends PhcrRele
 	public boolean validateResultsSectionTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
     return ChlamydiatrachomatisPHCRRelevantDxTestsSectionOperations.validateResultsSectionTemplateId(this, diagnostics, context);
   }
-
-	/**
-   * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-   * @generated
-   */
-	public ChlamydiatrachomatisPHCRRelevantDxTestsSection init() {
-      return Initializer.Util.init(this);
-  }
-
-  /**
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    public ChlamydiatrachomatisPHCRRelevantDxTestsSection init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-        Initializer.Util.init(this, initializers);
-        return this;
-    }
 } //ChlamydiatrachomatisPHCRRelevantDxTestsSectionImpl

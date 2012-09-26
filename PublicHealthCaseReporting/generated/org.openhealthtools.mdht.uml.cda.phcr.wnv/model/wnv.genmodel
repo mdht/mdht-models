@@ -56,22 +56,13 @@
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="wnv.ecore#//WnvPhcrClinicalInformationSection/getWnvCaseObservation"/>
     </genClasses>
     <genClasses xsi:type="genmodel:GenClass" ecoreClass="wnv.ecore#//WnvCaseObservation">
-      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="wnv.ecore#//WnvCaseObservation/WnvCaseObservationValue">
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="wnv.ecore#//WnvCaseObservation/WnvCaseObservationValue/diagnostics"/>
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="wnv.ecore#//WnvCaseObservation/WnvCaseObservationValue/context"/>
-      </genOperations>
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="wnv.ecore#//WnvCaseObservation/WnvCaseObservationWnvSignsAndSymptomsObservation">
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="wnv.ecore#//WnvCaseObservation/WnvCaseObservationWnvSignsAndSymptomsObservation/diagnostics"/>
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="wnv.ecore#//WnvCaseObservation/WnvCaseObservationWnvSignsAndSymptomsObservation/context"/>
       </genOperations>
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="wnv.ecore#//WnvCaseObservation/getWnvSignsAndSymptomsObservations"/>
     </genClasses>
-    <genClasses xsi:type="genmodel:GenClass" ecoreClass="wnv.ecore#//WnvSignsAndSymptomsObservation">
-      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="wnv.ecore#//WnvSignsAndSymptomsObservation/WnvSignsAndSymptomsObservationValue">
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="wnv.ecore#//WnvSignsAndSymptomsObservation/WnvSignsAndSymptomsObservationValue/diagnostics"/>
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="wnv.ecore#//WnvSignsAndSymptomsObservation/WnvSignsAndSymptomsObservationValue/context"/>
-      </genOperations>
-    </genClasses>
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="wnv.ecore#//WnvSignsAndSymptomsObservation"/>
     <genClasses xsi:type="genmodel:GenClass" ecoreClass="wnv.ecore#//WnvPhcrRelevantDxTestsSection">
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="wnv.ecore#//WnvPhcrRelevantDxTestsSection/WnvPhcrRelevantDxTestsSectionWnvResultObservation">
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="wnv.ecore#//WnvPhcrRelevantDxTestsSection/WnvPhcrRelevantDxTestsSectionWnvResultObservation/diagnostics"/>
@@ -85,20 +76,12 @@
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="wnv.ecore#//WnvPhcrRelevantDxTestsSection/getWnvResultOrganizers"/>
     </genClasses>
     <genClasses xsi:type="genmodel:GenClass" ecoreClass="wnv.ecore#//WnvResultObservation">
-      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="wnv.ecore#//WnvResultObservation/WnvResultObservationCodeP">
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="wnv.ecore#//WnvResultObservation/WnvResultObservationCodeP/diagnostics"/>
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="wnv.ecore#//WnvResultObservation/WnvResultObservationCodeP/context"/>
-      </genOperations>
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="wnv.ecore#//WnvResultObservation/WnvResultObservationCode">
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="wnv.ecore#//WnvResultObservation/WnvResultObservationCode/diagnostics"/>
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="wnv.ecore#//WnvResultObservation/WnvResultObservationCode/context"/>
       </genOperations>
     </genClasses>
     <genClasses xsi:type="genmodel:GenClass" ecoreClass="wnv.ecore#//WnvResultOrganizer">
-      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="wnv.ecore#//WnvResultOrganizer/WnvResultOrganizerCodeP">
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="wnv.ecore#//WnvResultOrganizer/WnvResultOrganizerCodeP/diagnostics"/>
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="wnv.ecore#//WnvResultOrganizer/WnvResultOrganizerCodeP/context"/>
-      </genOperations>
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="wnv.ecore#//WnvResultOrganizer/WnvResultOrganizerCode">
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="wnv.ecore#//WnvResultOrganizer/WnvResultOrganizerCode/diagnostics"/>
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="wnv.ecore#//WnvResultOrganizer/WnvResultOrganizerCode/context"/>

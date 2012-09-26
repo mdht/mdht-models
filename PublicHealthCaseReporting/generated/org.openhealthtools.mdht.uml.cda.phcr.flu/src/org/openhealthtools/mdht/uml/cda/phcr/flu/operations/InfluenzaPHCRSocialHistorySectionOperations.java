@@ -116,7 +116,7 @@ public class InfluenzaPHCRSocialHistorySectionOperations extends PhcrSocialHisto
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
-						(Diagnostic.ERROR,
+						(Diagnostic.WARNING,
 						 fluValidator.DIAGNOSTIC_SOURCE,
 						 fluValidator.INFLUENZA_PHCR_SOCIAL_HISTORY_SECTION__INFLUENZA_PHCR_SOCIAL_HISTORY_SECTION_INFLUENZA_EMPLOYMENT_STATUS_OBSERVATION,
 						 FluPlugin.INSTANCE.getString("InfluenzaPHCRSocialHistorySectionInfluenzaEmploymentStatusObservation"),
@@ -198,7 +198,7 @@ public class InfluenzaPHCRSocialHistorySectionOperations extends PhcrSocialHisto
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String GET_INFLUENZA_EMPLOYMENT_STATUS_OBSERVATION__EOCL_EXP = "self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(flu::InfluenzaEmploymentStatusObservation))->asSequence()->first().oclAsType(flu::InfluenzaEmploymentStatusObservation)";
+	protected static final String GET_INFLUENZA_EMPLOYMENT_STATUS_OBSERVATION__EOCL_EXP = "self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(flu::InfluenzaEmploymentStatusObservation))->asSequence()->any(true).oclAsType(flu::InfluenzaEmploymentStatusObservation)";
 
 	/**
 	 * The cached OCL query for the '{@link #getInfluenzaEmploymentStatusObservation(InfluenzaPHCRSocialHistorySection) <em>Get Influenza Employment Status Observation</em>}' query operation.
@@ -214,7 +214,7 @@ public class InfluenzaPHCRSocialHistorySectionOperations extends PhcrSocialHisto
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(flu::InfluenzaEmploymentStatusObservation))->asSequence()->first().oclAsType(flu::InfluenzaEmploymentStatusObservation)
+	 * self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(flu::InfluenzaEmploymentStatusObservation))->asSequence()->any(true).oclAsType(flu::InfluenzaEmploymentStatusObservation)
 	 * @param influenzaPHCRSocialHistorySection The receiving '<em><b>Influenza PHCR Social History Section</b></em>' model object.
 	 * <!-- end-model-doc -->
 	 * @generated
@@ -223,7 +223,7 @@ public class InfluenzaPHCRSocialHistorySectionOperations extends PhcrSocialHisto
 	public static  InfluenzaEmploymentStatusObservation getInfluenzaEmploymentStatusObservation(InfluenzaPHCRSocialHistorySection influenzaPHCRSocialHistorySection) {
 		if (GET_INFLUENZA_EMPLOYMENT_STATUS_OBSERVATION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(fluPackage.Literals.INFLUENZA_PHCR_SOCIAL_HISTORY_SECTION, fluPackage.Literals.INFLUENZA_PHCR_SOCIAL_HISTORY_SECTION.getEAllOperations().get(81));
+			helper.setOperationContext(fluPackage.Literals.INFLUENZA_PHCR_SOCIAL_HISTORY_SECTION, fluPackage.Literals.INFLUENZA_PHCR_SOCIAL_HISTORY_SECTION.getEAllOperations().get(82));
 			try {
 				GET_INFLUENZA_EMPLOYMENT_STATUS_OBSERVATION__EOCL_QRY = helper.createQuery(GET_INFLUENZA_EMPLOYMENT_STATUS_OBSERVATION__EOCL_EXP);
 			}
@@ -268,7 +268,7 @@ public class InfluenzaPHCRSocialHistorySectionOperations extends PhcrSocialHisto
 	public static  EList<InfluenzaPossibleExposureLocationAct> getInfluenzaPossibleExposureLocationActs(InfluenzaPHCRSocialHistorySection influenzaPHCRSocialHistorySection) {
 		if (GET_INFLUENZA_POSSIBLE_EXPOSURE_LOCATION_ACTS__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(fluPackage.Literals.INFLUENZA_PHCR_SOCIAL_HISTORY_SECTION, fluPackage.Literals.INFLUENZA_PHCR_SOCIAL_HISTORY_SECTION.getEAllOperations().get(82));
+			helper.setOperationContext(fluPackage.Literals.INFLUENZA_PHCR_SOCIAL_HISTORY_SECTION, fluPackage.Literals.INFLUENZA_PHCR_SOCIAL_HISTORY_SECTION.getEAllOperations().get(83));
 			try {
 				GET_INFLUENZA_POSSIBLE_EXPOSURE_LOCATION_ACTS__EOCL_QRY = helper.createQuery(GET_INFLUENZA_POSSIBLE_EXPOSURE_LOCATION_ACTS__EOCL_EXP);
 			}

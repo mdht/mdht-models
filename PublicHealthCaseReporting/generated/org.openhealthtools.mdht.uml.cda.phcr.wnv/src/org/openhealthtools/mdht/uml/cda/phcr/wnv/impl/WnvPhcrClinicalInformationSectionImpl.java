@@ -22,7 +22,6 @@ import org.openhealthtools.mdht.uml.cda.phcr.wnv.WnvCaseObservation;
 import org.openhealthtools.mdht.uml.cda.phcr.wnv.WnvPackage;
 import org.openhealthtools.mdht.uml.cda.phcr.wnv.WnvPhcrClinicalInformationSection;
 import org.openhealthtools.mdht.uml.cda.phcr.wnv.operations.WnvPhcrClinicalInformationSectionOperations;
-import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
 
 /**
  * <!-- begin-user-doc -->
@@ -83,23 +82,4 @@ public class WnvPhcrClinicalInformationSectionImpl extends PhcrClinicalInformati
 	public boolean validatePhcrClinicalInformationSectionTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
     return WnvPhcrClinicalInformationSectionOperations.validatePhcrClinicalInformationSectionTemplateId(this, diagnostics, context);
   }
-
-		/**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public WnvPhcrClinicalInformationSection init() {
-      return Initializer.Util.init(this);
-  }
-
-    /**
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    public WnvPhcrClinicalInformationSection init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-        Initializer.Util.init(this, initializers);
-        return this;
-    }
 } //WnvPhcrClinicalInformationSectionImpl

@@ -40,7 +40,6 @@ import org.openhealthtools.mdht.uml.cda.phcr.util.PhcrValidator;
  * <p>
  * The following operations are supported:
  * <ul>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.phcr.PhcrRelevantDxTestsSection#validatePhcrRelevantDxTestsSectionCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Phcr Relevant Dx Tests Section Code P</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.phcr.PhcrRelevantDxTestsSection#validatePhcrRelevantDxTestsSectionCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Phcr Relevant Dx Tests Section Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.phcr.PhcrRelevantDxTestsSection#validatePhcrRelevantDxTestsSectionTitle(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Phcr Relevant Dx Tests Section Title</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.phcr.PhcrRelevantDxTestsSection#validatePhcrRelevantDxTestsSectionText(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Phcr Relevant Dx Tests Section Text</em>}</li>
@@ -91,6 +90,7 @@ public class PhcrRelevantDxTestsSectionOperations extends ResultsSectionOperatio
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
+   * (self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined())
    * @param phcrRelevantDxTestsSection The receiving '<em><b>Relevant Dx Tests Section</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -100,8 +100,8 @@ public class PhcrRelevantDxTestsSectionOperations extends ResultsSectionOperatio
   
   public static  boolean validatePhcrRelevantDxTestsSectionCodeP(PhcrRelevantDxTestsSection phcrRelevantDxTestsSection, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
-  	  
-    if (VALIDATE_PHCR_RELEVANT_DX_TESTS_SECTION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+    if (VALIDATE_PHCR_RELEVANT_DX_TESTS_SECTION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null)
+    {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(PhcrPackage.Literals.PHCR_RELEVANT_DX_TESTS_SECTION);
       try
@@ -122,22 +122,9 @@ public class PhcrRelevantDxTestsSectionOperations extends ResultsSectionOperatio
             (Diagnostic.ERROR,
              PhcrValidator.DIAGNOSTIC_SOURCE,
              PhcrValidator.PHCR_RELEVANT_DX_TESTS_SECTION__PHCR_RELEVANT_DX_TESTS_SECTION_CODE_P,
-             PhcrPlugin.INSTANCE.getString("PhcrRelevantDxTestsSectionCodeP"),
+             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "validatePhcrRelevantDxTestsSectionCodeP", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(phcrRelevantDxTestsSection, context) }),
              new Object [] { phcrRelevantDxTestsSection }));
       }
-      
-      if (context != null) {
-        // generate a pass token for my dependent constraints to short-circuit or filter results
-        @SuppressWarnings("unchecked")
-        Collection<Object> passToken = (Collection<Object>) context.get("org.openhealthtools.mdht.uml.cda.phcr.PhcrRelevantDxTestsSectionCodeP");
-        if (passToken == null) {
-          // anticipate a reasonably healthy model
-          passToken = new java.util.ArrayList<Object>(3);
-          context.put("org.openhealthtools.mdht.uml.cda.phcr.PhcrRelevantDxTestsSectionCodeP", passToken);
-        }
-        passToken.add(phcrRelevantDxTestsSection);
-      }
-       
       return false;
     }
     return true;
@@ -170,6 +157,9 @@ public class PhcrRelevantDxTestsSectionOperations extends ResultsSectionOperatio
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
+   * (self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and 
+   * let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in 
+   * value.code = '30954-2' and value.codeSystem = '2.16.840.1.113883.6.1')
    * @param phcrRelevantDxTestsSection The receiving '<em><b>Relevant Dx Tests Section</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -178,14 +168,8 @@ public class PhcrRelevantDxTestsSectionOperations extends ResultsSectionOperatio
    */
 	
 	public static  boolean validatePhcrRelevantDxTestsSectionCode(PhcrRelevantDxTestsSection phcrRelevantDxTestsSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
-    Object passToken = (context == null) ? null : context.get("org.openhealthtools.mdht.uml.cda.phcr.PhcrRelevantDxTestsSectionCodeP");
-    if ((passToken instanceof Collection<?>) && ((Collection<?>) passToken).contains(phcrRelevantDxTestsSection)) {
-      // I have a free pass to short-circuit
-      return true;
-    }
-  	  
-    if (VALIDATE_PHCR_RELEVANT_DX_TESTS_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+    if (VALIDATE_PHCR_RELEVANT_DX_TESTS_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null)
+    {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(PhcrPackage.Literals.PHCR_RELEVANT_DX_TESTS_SECTION);
       try
@@ -206,10 +190,9 @@ public class PhcrRelevantDxTestsSectionOperations extends ResultsSectionOperatio
             (Diagnostic.ERROR,
              PhcrValidator.DIAGNOSTIC_SOURCE,
              PhcrValidator.PHCR_RELEVANT_DX_TESTS_SECTION__PHCR_RELEVANT_DX_TESTS_SECTION_CODE,
-             PhcrPlugin.INSTANCE.getString("PhcrRelevantDxTestsSectionCode"),
+             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "validatePhcrRelevantDxTestsSectionCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(phcrRelevantDxTestsSection, context) }),
              new Object [] { phcrRelevantDxTestsSection }));
       }
-       
       return false;
     }
     return true;
@@ -239,6 +222,7 @@ public class PhcrRelevantDxTestsSectionOperations extends ResultsSectionOperatio
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
+   * (self.title.oclIsUndefined() or self.title.isNullFlavorUndefined()) implies (self.title.getText() = 'Relevant diagnostic tests and/or laboratory data')
    * @param phcrRelevantDxTestsSection The receiving '<em><b>Relevant Dx Tests Section</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -246,8 +230,8 @@ public class PhcrRelevantDxTestsSectionOperations extends ResultsSectionOperatio
    * @generated
    */
 	public static  boolean validatePhcrRelevantDxTestsSectionTitle(PhcrRelevantDxTestsSection phcrRelevantDxTestsSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
-    if (VALIDATE_PHCR_RELEVANT_DX_TESTS_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+    if (VALIDATE_PHCR_RELEVANT_DX_TESTS_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null)
+    {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(PhcrPackage.Literals.PHCR_RELEVANT_DX_TESTS_SECTION);
       try
@@ -268,10 +252,9 @@ public class PhcrRelevantDxTestsSectionOperations extends ResultsSectionOperatio
             (Diagnostic.ERROR,
              PhcrValidator.DIAGNOSTIC_SOURCE,
              PhcrValidator.PHCR_RELEVANT_DX_TESTS_SECTION__PHCR_RELEVANT_DX_TESTS_SECTION_TITLE,
-             PhcrPlugin.INSTANCE.getString("PhcrRelevantDxTestsSectionTitle"),
+             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "validatePhcrRelevantDxTestsSectionTitle", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(phcrRelevantDxTestsSection, context) }),
              new Object [] { phcrRelevantDxTestsSection }));
       }
-       
       return false;
     }
     return true;
@@ -301,6 +284,7 @@ public class PhcrRelevantDxTestsSectionOperations extends ResultsSectionOperatio
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
+   * not self.text.oclIsUndefined()
    * @param phcrRelevantDxTestsSection The receiving '<em><b>Relevant Dx Tests Section</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -308,8 +292,8 @@ public class PhcrRelevantDxTestsSectionOperations extends ResultsSectionOperatio
    * @generated
    */
 	public static  boolean validatePhcrRelevantDxTestsSectionText(PhcrRelevantDxTestsSection phcrRelevantDxTestsSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
-    if (VALIDATE_PHCR_RELEVANT_DX_TESTS_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+    if (VALIDATE_PHCR_RELEVANT_DX_TESTS_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null)
+    {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(PhcrPackage.Literals.PHCR_RELEVANT_DX_TESTS_SECTION);
       try
@@ -330,10 +314,9 @@ public class PhcrRelevantDxTestsSectionOperations extends ResultsSectionOperatio
             (Diagnostic.ERROR,
              PhcrValidator.DIAGNOSTIC_SOURCE,
              PhcrValidator.PHCR_RELEVANT_DX_TESTS_SECTION__PHCR_RELEVANT_DX_TESTS_SECTION_TEXT,
-             PhcrPlugin.INSTANCE.getString("PhcrRelevantDxTestsSectionText"),
+             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "validatePhcrRelevantDxTestsSectionText", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(phcrRelevantDxTestsSection, context) }),
              new Object [] { phcrRelevantDxTestsSection }));
       }
-       
       return false;
     }
     return true;
@@ -363,6 +346,7 @@ public class PhcrRelevantDxTestsSectionOperations extends ResultsSectionOperatio
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
+   * self.entry->exists(entry : cda::Entry | not entry.organizer.oclIsUndefined() and entry.organizer.oclIsKindOf(phcr::ResultOrganizer) and entry.typeCode = vocab::x_ActRelationshipEntry::DRIV)
    * @param phcrRelevantDxTestsSection The receiving '<em><b>Relevant Dx Tests Section</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -370,8 +354,8 @@ public class PhcrRelevantDxTestsSectionOperations extends ResultsSectionOperatio
    * @generated
    */
 	public static  boolean validatePhcrRelevantDxTestsSectionResultOrganizer(PhcrRelevantDxTestsSection phcrRelevantDxTestsSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
-    if (VALIDATE_PHCR_RELEVANT_DX_TESTS_SECTION_RESULT_ORGANIZER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+    if (VALIDATE_PHCR_RELEVANT_DX_TESTS_SECTION_RESULT_ORGANIZER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null)
+    {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(PhcrPackage.Literals.PHCR_RELEVANT_DX_TESTS_SECTION);
       try
@@ -389,13 +373,12 @@ public class PhcrRelevantDxTestsSectionOperations extends ResultsSectionOperatio
       {
         diagnostics.add
           (new BasicDiagnostic
-            (Diagnostic.INFO,
+            (Diagnostic.ERROR,
              PhcrValidator.DIAGNOSTIC_SOURCE,
              PhcrValidator.PHCR_RELEVANT_DX_TESTS_SECTION__PHCR_RELEVANT_DX_TESTS_SECTION_RESULT_ORGANIZER,
-             PhcrPlugin.INSTANCE.getString("PhcrRelevantDxTestsSectionResultOrganizer"),
+             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "validatePhcrRelevantDxTestsSectionResultOrganizer", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(phcrRelevantDxTestsSection, context) }),
              new Object [] { phcrRelevantDxTestsSection }));
       }
-       
       return false;
     }
     return true;
@@ -425,6 +408,7 @@ public class PhcrRelevantDxTestsSectionOperations extends ResultsSectionOperatio
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
+   * self.entry->exists(entry : cda::Entry | not entry.observation.oclIsUndefined() and entry.observation.oclIsKindOf(phcr::ResultObservation) and entry.typeCode = vocab::x_ActRelationshipEntry::DRIV)
    * @param phcrRelevantDxTestsSection The receiving '<em><b>Relevant Dx Tests Section</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -432,8 +416,8 @@ public class PhcrRelevantDxTestsSectionOperations extends ResultsSectionOperatio
    * @generated
    */
 	public static  boolean validatePhcrRelevantDxTestsSectionResultObservation(PhcrRelevantDxTestsSection phcrRelevantDxTestsSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
-    if (VALIDATE_PHCR_RELEVANT_DX_TESTS_SECTION_RESULT_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+    if (VALIDATE_PHCR_RELEVANT_DX_TESTS_SECTION_RESULT_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null)
+    {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(PhcrPackage.Literals.PHCR_RELEVANT_DX_TESTS_SECTION);
       try
@@ -451,13 +435,12 @@ public class PhcrRelevantDxTestsSectionOperations extends ResultsSectionOperatio
       {
         diagnostics.add
           (new BasicDiagnostic
-            (Diagnostic.INFO,
+            (Diagnostic.ERROR,
              PhcrValidator.DIAGNOSTIC_SOURCE,
              PhcrValidator.PHCR_RELEVANT_DX_TESTS_SECTION__PHCR_RELEVANT_DX_TESTS_SECTION_RESULT_OBSERVATION,
-             PhcrPlugin.INSTANCE.getString("PhcrRelevantDxTestsSectionResultObservation"),
+             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "validatePhcrRelevantDxTestsSectionResultObservation", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(phcrRelevantDxTestsSection, context) }),
              new Object [] { phcrRelevantDxTestsSection }));
       }
-       
       return false;
     }
     return true;
@@ -487,6 +470,7 @@ public class PhcrRelevantDxTestsSectionOperations extends ResultsSectionOperatio
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
+   * self.entry->exists(entry : cda::Entry | not entry.observation.oclIsUndefined() and entry.observation.oclIsKindOf(phcr::ImagingObservation) and entry.typeCode = vocab::x_ActRelationshipEntry::DRIV)
    * @param phcrRelevantDxTestsSection The receiving '<em><b>Relevant Dx Tests Section</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -494,8 +478,8 @@ public class PhcrRelevantDxTestsSectionOperations extends ResultsSectionOperatio
    * @generated
    */
 	public static  boolean validatePhcrRelevantDxTestsSectionImagingObservation(PhcrRelevantDxTestsSection phcrRelevantDxTestsSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
-    if (VALIDATE_PHCR_RELEVANT_DX_TESTS_SECTION_IMAGING_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+    if (VALIDATE_PHCR_RELEVANT_DX_TESTS_SECTION_IMAGING_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null)
+    {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(PhcrPackage.Literals.PHCR_RELEVANT_DX_TESTS_SECTION);
       try
@@ -513,13 +497,12 @@ public class PhcrRelevantDxTestsSectionOperations extends ResultsSectionOperatio
       {
         diagnostics.add
           (new BasicDiagnostic
-            (Diagnostic.INFO,
+            (Diagnostic.ERROR,
              PhcrValidator.DIAGNOSTIC_SOURCE,
              PhcrValidator.PHCR_RELEVANT_DX_TESTS_SECTION__PHCR_RELEVANT_DX_TESTS_SECTION_IMAGING_OBSERVATION,
-             PhcrPlugin.INSTANCE.getString("PhcrRelevantDxTestsSectionImagingObservation"),
+             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "validatePhcrRelevantDxTestsSectionImagingObservation", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(phcrRelevantDxTestsSection, context) }),
              new Object [] { phcrRelevantDxTestsSection }));
       }
-       
       return false;
     }
     return true;
@@ -548,6 +531,10 @@ public class PhcrRelevantDxTestsSectionOperations extends ResultsSectionOperatio
 	/**
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
+   * <!-- begin-model-doc -->
+   * self.getOrganizers()->select(organizer : cda::Organizer | not organizer.oclIsUndefined() and organizer.oclIsKindOf(phcr::ResultOrganizer)).oclAsType(phcr::ResultOrganizer)
+   * @param phcrRelevantDxTestsSection The receiving '<em><b>Relevant Dx Tests Section</b></em>' model object.
+   * <!-- end-model-doc -->
    * @generated
    */
 	public static  EList<ResultOrganizer> getPHCRResultOrganizers(PhcrRelevantDxTestsSection phcrRelevantDxTestsSection) {
@@ -593,6 +580,10 @@ public class PhcrRelevantDxTestsSectionOperations extends ResultsSectionOperatio
 	/**
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
+   * <!-- begin-model-doc -->
+   * self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(phcr::ResultObservation)).oclAsType(phcr::ResultObservation)
+   * @param phcrRelevantDxTestsSection The receiving '<em><b>Relevant Dx Tests Section</b></em>' model object.
+   * <!-- end-model-doc -->
    * @generated
    */
 	public static  EList<ResultObservation> getResultObservations(PhcrRelevantDxTestsSection phcrRelevantDxTestsSection) {
@@ -638,6 +629,10 @@ public class PhcrRelevantDxTestsSectionOperations extends ResultsSectionOperatio
 	/**
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
+   * <!-- begin-model-doc -->
+   * self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(phcr::ImagingObservation)).oclAsType(phcr::ImagingObservation)
+   * @param phcrRelevantDxTestsSection The receiving '<em><b>Relevant Dx Tests Section</b></em>' model object.
+   * <!-- end-model-doc -->
    * @generated
    */
 	public static  EList<ImagingObservation> getImagingObservations(PhcrRelevantDxTestsSection phcrRelevantDxTestsSection) {
@@ -684,6 +679,7 @@ public class PhcrRelevantDxTestsSectionOperations extends ResultsSectionOperatio
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
+   * self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.15.2.3')
    * @param phcrRelevantDxTestsSection The receiving '<em><b>Relevant Dx Tests Section</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -691,8 +687,8 @@ public class PhcrRelevantDxTestsSectionOperations extends ResultsSectionOperatio
    * @generated
    */
 	public static  boolean validateResultsSectionTemplateId(PhcrRelevantDxTestsSection phcrRelevantDxTestsSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
-    if (VALIDATE_RESULTS_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+    if (VALIDATE_RESULTS_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null)
+    {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(PhcrPackage.Literals.PHCR_RELEVANT_DX_TESTS_SECTION);
       try
@@ -713,10 +709,9 @@ public class PhcrRelevantDxTestsSectionOperations extends ResultsSectionOperatio
             (Diagnostic.ERROR,
              PhcrValidator.DIAGNOSTIC_SOURCE,
              PhcrValidator.PHCR_RELEVANT_DX_TESTS_SECTION__RESULTS_SECTION_TEMPLATE_ID,
-             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "ResultsSectionTemplateId", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(phcrRelevantDxTestsSection, context) }),
+             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "validateResultsSectionTemplateId", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(phcrRelevantDxTestsSection, context) }),
              new Object [] { phcrRelevantDxTestsSection }));
       }
-       
       return false;
     }
     return true;

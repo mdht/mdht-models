@@ -27,10 +27,10 @@ import org.openhealthtools.mdht.uml.cda.phcr.TreatmentNotGivenSubstanceAdministr
  */
 public interface PertussisTreatmentNotGivenSubstanceAdministration extends TreatmentNotGivenSubstanceAdministration {
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public PertussisTreatmentNotGivenSubstanceAdministration init();
 
   /**

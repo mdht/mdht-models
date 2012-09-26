@@ -85,6 +85,7 @@ public class ChlamydiatrachomatisPublicHealthCaseReportOperations extends Public
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
+   * (self.title.oclIsUndefined() or self.title.isNullFlavorUndefined()) implies (not self.title.oclIsUndefined() and self.title.getText() = 'Public Health Case Report - Chlamydia trachomatis')
    * @param chlamydiatrachomatisPublicHealthCaseReport The receiving '<em><b>Public Health Case Report</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -93,8 +94,8 @@ public class ChlamydiatrachomatisPublicHealthCaseReportOperations extends Public
    */
 	
 	public static  boolean validateChlamydiatrachomatisPublicHealthCaseReportTitle(ChlamydiatrachomatisPublicHealthCaseReport chlamydiatrachomatisPublicHealthCaseReport, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
-    if (VALIDATE_CHLAMYDIATRACHOMATIS_PUBLIC_HEALTH_CASE_REPORT_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+    if (VALIDATE_CHLAMYDIATRACHOMATIS_PUBLIC_HEALTH_CASE_REPORT_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null)
+    {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(ChlamydiatrachomatisPackage.Literals.CHLAMYDIATRACHOMATIS_PUBLIC_HEALTH_CASE_REPORT);
       try
@@ -115,10 +116,9 @@ public class ChlamydiatrachomatisPublicHealthCaseReportOperations extends Public
             (Diagnostic.ERROR,
              ChlamydiatrachomatisValidator.DIAGNOSTIC_SOURCE,
              ChlamydiatrachomatisValidator.CHLAMYDIATRACHOMATIS_PUBLIC_HEALTH_CASE_REPORT__CHLAMYDIATRACHOMATIS_PUBLIC_HEALTH_CASE_REPORT_TITLE,
-             ChlamydiatrachomatisPlugin.INSTANCE.getString("ChlamydiatrachomatisPublicHealthCaseReportTitle"),
+             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "validateChlamydiatrachomatisPublicHealthCaseReportTitle", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(chlamydiatrachomatisPublicHealthCaseReport, context) }),
              new Object [] { chlamydiatrachomatisPublicHealthCaseReport }));
       }
-       
       return false;
     }
     return true;
@@ -149,6 +149,7 @@ public class ChlamydiatrachomatisPublicHealthCaseReportOperations extends Public
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
+   * self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(chlamydiatrachomatis::ChlamydiatrachomatisPHCRClinicalInformationSection))
    * @param chlamydiatrachomatisPublicHealthCaseReport The receiving '<em><b>Public Health Case Report</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -157,8 +158,8 @@ public class ChlamydiatrachomatisPublicHealthCaseReportOperations extends Public
    */
 	
 	public static  boolean validateChlamydiatrachomatisPublicHealthCaseReportChlamydiatrachomatisPHCRClinicalInformationSection(ChlamydiatrachomatisPublicHealthCaseReport chlamydiatrachomatisPublicHealthCaseReport, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
-    if (VALIDATE_CHLAMYDIATRACHOMATIS_PUBLIC_HEALTH_CASE_REPORT_CHLAMYDIATRACHOMATIS_PHCR_CLINICAL_INFORMATION_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+    if (VALIDATE_CHLAMYDIATRACHOMATIS_PUBLIC_HEALTH_CASE_REPORT_CHLAMYDIATRACHOMATIS_PHCR_CLINICAL_INFORMATION_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null)
+    {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(ChlamydiatrachomatisPackage.Literals.CHLAMYDIATRACHOMATIS_PUBLIC_HEALTH_CASE_REPORT);
       try
@@ -179,10 +180,9 @@ public class ChlamydiatrachomatisPublicHealthCaseReportOperations extends Public
             (Diagnostic.ERROR,
              ChlamydiatrachomatisValidator.DIAGNOSTIC_SOURCE,
              ChlamydiatrachomatisValidator.CHLAMYDIATRACHOMATIS_PUBLIC_HEALTH_CASE_REPORT__CHLAMYDIATRACHOMATIS_PUBLIC_HEALTH_CASE_REPORT_CHLAMYDIATRACHOMATIS_PHCR_CLINICAL_INFORMATION_SECTION,
-             ChlamydiatrachomatisPlugin.INSTANCE.getString("ChlamydiatrachomatisPublicHealthCaseReportChlamydiatrachomatisPHCRClinicalInformationSection"),
+             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "validateChlamydiatrachomatisPublicHealthCaseReportChlamydiatrachomatisPHCRClinicalInformationSection", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(chlamydiatrachomatisPublicHealthCaseReport, context) }),
              new Object [] { chlamydiatrachomatisPublicHealthCaseReport }));
       }
-       
       return false;
     }
     return true;
@@ -213,6 +213,7 @@ public class ChlamydiatrachomatisPublicHealthCaseReportOperations extends Public
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
+   * self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(chlamydiatrachomatis::ChlamydiatrachomatisPHCRRelevantDxTestsSection))
    * @param chlamydiatrachomatisPublicHealthCaseReport The receiving '<em><b>Public Health Case Report</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -221,8 +222,8 @@ public class ChlamydiatrachomatisPublicHealthCaseReportOperations extends Public
    */
 	
 	public static  boolean validateChlamydiatrachomatisPublicHealthCaseReportChlamydiatrachomatisPHCRRelevantDxTestsSection(ChlamydiatrachomatisPublicHealthCaseReport chlamydiatrachomatisPublicHealthCaseReport, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
-    if (VALIDATE_CHLAMYDIATRACHOMATIS_PUBLIC_HEALTH_CASE_REPORT_CHLAMYDIATRACHOMATIS_PHCR_RELEVANT_DX_TESTS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+    if (VALIDATE_CHLAMYDIATRACHOMATIS_PUBLIC_HEALTH_CASE_REPORT_CHLAMYDIATRACHOMATIS_PHCR_RELEVANT_DX_TESTS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null)
+    {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(ChlamydiatrachomatisPackage.Literals.CHLAMYDIATRACHOMATIS_PUBLIC_HEALTH_CASE_REPORT);
       try
@@ -240,13 +241,12 @@ public class ChlamydiatrachomatisPublicHealthCaseReportOperations extends Public
       {
         diagnostics.add
           (new BasicDiagnostic
-            (Diagnostic.WARNING,
+            (Diagnostic.ERROR,
              ChlamydiatrachomatisValidator.DIAGNOSTIC_SOURCE,
              ChlamydiatrachomatisValidator.CHLAMYDIATRACHOMATIS_PUBLIC_HEALTH_CASE_REPORT__CHLAMYDIATRACHOMATIS_PUBLIC_HEALTH_CASE_REPORT_CHLAMYDIATRACHOMATIS_PHCR_RELEVANT_DX_TESTS_SECTION,
-             ChlamydiatrachomatisPlugin.INSTANCE.getString("ChlamydiatrachomatisPublicHealthCaseReportChlamydiatrachomatisPHCRRelevantDxTestsSection"),
+             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "validateChlamydiatrachomatisPublicHealthCaseReportChlamydiatrachomatisPHCRRelevantDxTestsSection", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(chlamydiatrachomatisPublicHealthCaseReport, context) }),
              new Object [] { chlamydiatrachomatisPublicHealthCaseReport }));
       }
-       
       return false;
     }
     return true;
@@ -277,6 +277,7 @@ public class ChlamydiatrachomatisPublicHealthCaseReportOperations extends Public
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
+   * self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(chlamydiatrachomatis::ChlamydiatrachomatisPHCRTreatmentInformationSection))
    * @param chlamydiatrachomatisPublicHealthCaseReport The receiving '<em><b>Public Health Case Report</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -285,8 +286,8 @@ public class ChlamydiatrachomatisPublicHealthCaseReportOperations extends Public
    */
 	
 	public static  boolean validateChlamydiatrachomatisPublicHealthCaseReportChlamydiatrachomatisPHCRTreatmentInformationSection(ChlamydiatrachomatisPublicHealthCaseReport chlamydiatrachomatisPublicHealthCaseReport, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
-    if (VALIDATE_CHLAMYDIATRACHOMATIS_PUBLIC_HEALTH_CASE_REPORT_CHLAMYDIATRACHOMATIS_PHCR_TREATMENT_INFORMATION_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+    if (VALIDATE_CHLAMYDIATRACHOMATIS_PUBLIC_HEALTH_CASE_REPORT_CHLAMYDIATRACHOMATIS_PHCR_TREATMENT_INFORMATION_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null)
+    {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(ChlamydiatrachomatisPackage.Literals.CHLAMYDIATRACHOMATIS_PUBLIC_HEALTH_CASE_REPORT);
       try
@@ -304,13 +305,12 @@ public class ChlamydiatrachomatisPublicHealthCaseReportOperations extends Public
       {
         diagnostics.add
           (new BasicDiagnostic
-            (Diagnostic.WARNING,
+            (Diagnostic.ERROR,
              ChlamydiatrachomatisValidator.DIAGNOSTIC_SOURCE,
              ChlamydiatrachomatisValidator.CHLAMYDIATRACHOMATIS_PUBLIC_HEALTH_CASE_REPORT__CHLAMYDIATRACHOMATIS_PUBLIC_HEALTH_CASE_REPORT_CHLAMYDIATRACHOMATIS_PHCR_TREATMENT_INFORMATION_SECTION,
-             ChlamydiatrachomatisPlugin.INSTANCE.getString("ChlamydiatrachomatisPublicHealthCaseReportChlamydiatrachomatisPHCRTreatmentInformationSection"),
+             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "validateChlamydiatrachomatisPublicHealthCaseReportChlamydiatrachomatisPHCRTreatmentInformationSection", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(chlamydiatrachomatisPublicHealthCaseReport, context) }),
              new Object [] { chlamydiatrachomatisPublicHealthCaseReport }));
       }
-       
       return false;
     }
     return true;
@@ -339,6 +339,10 @@ public class ChlamydiatrachomatisPublicHealthCaseReportOperations extends Public
 	/**
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
+   * <!-- begin-model-doc -->
+   * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(chlamydiatrachomatis::ChlamydiatrachomatisPHCRClinicalInformationSection))->asSequence()->any(true).oclAsType(chlamydiatrachomatis::ChlamydiatrachomatisPHCRClinicalInformationSection)
+   * @param chlamydiatrachomatisPublicHealthCaseReport The receiving '<em><b>Public Health Case Report</b></em>' model object.
+   * <!-- end-model-doc -->
    * @generated
    */
 	
@@ -383,6 +387,10 @@ public class ChlamydiatrachomatisPublicHealthCaseReportOperations extends Public
 	/**
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
+   * <!-- begin-model-doc -->
+   * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(chlamydiatrachomatis::ChlamydiatrachomatisPHCRRelevantDxTestsSection))->asSequence()->any(true).oclAsType(chlamydiatrachomatis::ChlamydiatrachomatisPHCRRelevantDxTestsSection)
+   * @param chlamydiatrachomatisPublicHealthCaseReport The receiving '<em><b>Public Health Case Report</b></em>' model object.
+   * <!-- end-model-doc -->
    * @generated
    */
 	
@@ -427,6 +435,10 @@ public class ChlamydiatrachomatisPublicHealthCaseReportOperations extends Public
 	/**
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
+   * <!-- begin-model-doc -->
+   * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(chlamydiatrachomatis::ChlamydiatrachomatisPHCRTreatmentInformationSection))->asSequence()->any(true).oclAsType(chlamydiatrachomatis::ChlamydiatrachomatisPHCRTreatmentInformationSection)
+   * @param chlamydiatrachomatisPublicHealthCaseReport The receiving '<em><b>Public Health Case Report</b></em>' model object.
+   * <!-- end-model-doc -->
    * @generated
    */
 	
@@ -472,6 +484,7 @@ public class ChlamydiatrachomatisPublicHealthCaseReportOperations extends Public
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
+   * self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.15.1.13')
    * @param chlamydiatrachomatisPublicHealthCaseReport The receiving '<em><b>Public Health Case Report</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -479,8 +492,8 @@ public class ChlamydiatrachomatisPublicHealthCaseReportOperations extends Public
    * @generated
    */
 	public static  boolean validatePublicHealthCaseReportTemplateId(ChlamydiatrachomatisPublicHealthCaseReport chlamydiatrachomatisPublicHealthCaseReport, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
-    if (VALIDATE_PUBLIC_HEALTH_CASE_REPORT_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+    if (VALIDATE_PUBLIC_HEALTH_CASE_REPORT_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null)
+    {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(ChlamydiatrachomatisPackage.Literals.CHLAMYDIATRACHOMATIS_PUBLIC_HEALTH_CASE_REPORT);
       try
@@ -501,10 +514,9 @@ public class ChlamydiatrachomatisPublicHealthCaseReportOperations extends Public
             (Diagnostic.ERROR,
              ChlamydiatrachomatisValidator.DIAGNOSTIC_SOURCE,
              ChlamydiatrachomatisValidator.CHLAMYDIATRACHOMATIS_PUBLIC_HEALTH_CASE_REPORT__PUBLIC_HEALTH_CASE_REPORT_TEMPLATE_ID,
-             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "PublicHealthCaseReportTemplateId", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(chlamydiatrachomatisPublicHealthCaseReport, context) }),
+             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "validatePublicHealthCaseReportTemplateId", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(chlamydiatrachomatisPublicHealthCaseReport, context) }),
              new Object [] { chlamydiatrachomatisPublicHealthCaseReport }));
       }
-       
       return false;
     }
     return true;

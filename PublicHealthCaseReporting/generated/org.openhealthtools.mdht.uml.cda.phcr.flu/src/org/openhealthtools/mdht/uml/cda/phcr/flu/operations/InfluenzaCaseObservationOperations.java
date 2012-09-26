@@ -45,10 +45,10 @@ import org.openhealthtools.mdht.uml.cda.phcr.operations.CaseObservationOperation
  * <p>
  * The following operations are supported:
  * <ul>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.phcr.flu.InfluenzaCaseObservation#validateInfluenzaCaseObservationValue(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Influenza Case Observation Value</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.phcr.flu.InfluenzaCaseObservation#validateInfluenzaCaseObservationInfluenzaSignsAndSymptomsObservation(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Influenza Case Observation Influenza Signs And Symptoms Observation</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.phcr.flu.InfluenzaCaseObservation#getInfluenzaSignsAndSymptomsObservations() <em>Get Influenza Signs And Symptoms Observations</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.phcr.flu.InfluenzaCaseObservation#validateProblemObservationTemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Problem Observation Template Id</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.phcr.flu.InfluenzaCaseObservation#validateCaseObservationValue(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Case Observation Value</em>}</li>
  * </ul>
  * </p>
  *
@@ -62,6 +62,72 @@ public class InfluenzaCaseObservationOperations extends CaseObservationOperation
 	 */
 	protected InfluenzaCaseObservationOperations() {
 		super();
+	}
+
+	/**
+	 * The cached OCL expression body for the '{@link #validateInfluenzaCaseObservationValue(InfluenzaCaseObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Influenza Case Observation Value</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateInfluenzaCaseObservationValue(InfluenzaCaseObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String VALIDATE_INFLUENZA_CASE_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (self.value->size() = 1 and self.value->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and "+
+"let value : datatypes::CD = element.oclAsType(datatypes::CD) in "+
+"value.codeSystem = '2.16.840.1.113883.6.96' and not value.code.oclIsUndefined()))";
+
+	/**
+	 * The cached OCL invariant for the '{@link #validateInfluenzaCaseObservationValue(InfluenzaCaseObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Influenza Case Observation Value</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateInfluenzaCaseObservationValue(InfluenzaCaseObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+	
+	protected static Constraint VALIDATE_INFLUENZA_CASE_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * (self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (self.value->size() = 1 and self.value->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and 
+	 * let value : datatypes::CD = element.oclAsType(datatypes::CD) in 
+	 * value.codeSystem = '2.16.840.1.113883.6.96' and not value.code.oclIsUndefined()))
+	 * @param influenzaCaseObservation The receiving '<em><b>Influenza Case Observation</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
+	
+	public static  boolean validateInfluenzaCaseObservationValue(InfluenzaCaseObservation influenzaCaseObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
+		if (VALIDATE_INFLUENZA_CASE_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+			helper.setContext(fluPackage.Literals.INFLUENZA_CASE_OBSERVATION);
+			try {
+				VALIDATE_INFLUENZA_CASE_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_INFLUENZA_CASE_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+			}
+			catch (ParserException pe) {
+				throw new UnsupportedOperationException(pe.getLocalizedMessage());
+			}
+		}
+		if (!EOCL_ENV.createQuery(VALIDATE_INFLUENZA_CASE_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(influenzaCaseObservation)) {
+			if (diagnostics != null) {
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 fluValidator.DIAGNOSTIC_SOURCE,
+						 fluValidator.INFLUENZA_CASE_OBSERVATION__INFLUENZA_CASE_OBSERVATION_VALUE,
+						 FluPlugin.INSTANCE.getString("InfluenzaCaseObservationValue"),
+						 new Object [] { influenzaCaseObservation }));
+			}
+			 
+			return false;
+		}
+		return true;
 	}
 
 	/**
@@ -159,7 +225,7 @@ public class InfluenzaCaseObservationOperations extends CaseObservationOperation
 	public static  EList<InfluenzaSignsAndSymptomsObservation> getInfluenzaSignsAndSymptomsObservations(InfluenzaCaseObservation influenzaCaseObservation) {
 		if (GET_INFLUENZA_SIGNS_AND_SYMPTOMS_OBSERVATIONS__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(fluPackage.Literals.INFLUENZA_CASE_OBSERVATION, fluPackage.Literals.INFLUENZA_CASE_OBSERVATION.getEAllOperations().get(77));
+			helper.setOperationContext(fluPackage.Literals.INFLUENZA_CASE_OBSERVATION, fluPackage.Literals.INFLUENZA_CASE_OBSERVATION.getEAllOperations().get(79));
 			try {
 				GET_INFLUENZA_SIGNS_AND_SYMPTOMS_OBSERVATIONS__EOCL_QRY = helper.createQuery(GET_INFLUENZA_SIGNS_AND_SYMPTOMS_OBSERVATIONS__EOCL_EXP);
 			}
@@ -227,72 +293,6 @@ public class InfluenzaCaseObservationOperations extends CaseObservationOperation
 						 fluValidator.DIAGNOSTIC_SOURCE,
 						 fluValidator.INFLUENZA_CASE_OBSERVATION__PROBLEM_OBSERVATION_TEMPLATE_ID,
 						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "ProblemObservationTemplateId", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(influenzaCaseObservation, context) }),
-						 new Object [] { influenzaCaseObservation }));
-			}
-			 
-			return false;
-		}
-		return true;
-	}
-
-	/**
-	 * The cached OCL expression body for the '{@link #validateCaseObservationValue(InfluenzaCaseObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Case Observation Value</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #validateCaseObservationValue(InfluenzaCaseObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
-	protected static final String VALIDATE_CASE_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (self.value->size() = 1 and self.value->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and "+
-"let value : datatypes::CD = element.oclAsType(datatypes::CD) in "+
-"value.codeSystem = '2.16.840.1.113883.6.96' and not value.code.oclIsUndefined()))";
-
-	/**
-	 * The cached OCL invariant for the '{@link #validateCaseObservationValue(InfluenzaCaseObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Case Observation Value</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #validateCaseObservationValue(InfluenzaCaseObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
-	
-	protected static Constraint VALIDATE_CASE_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-	
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * (self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (self.value->size() = 1 and self.value->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and 
-	 * let value : datatypes::CD = element.oclAsType(datatypes::CD) in 
-	 * value.codeSystem = '2.16.840.1.113883.6.96' and not value.code.oclIsUndefined()))
-	 * @param influenzaCaseObservation The receiving '<em><b>Influenza Case Observation</b></em>' model object.
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
-	
-	public static  boolean validateCaseObservationValue(InfluenzaCaseObservation influenzaCaseObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
-		if (VALIDATE_CASE_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setContext(fluPackage.Literals.INFLUENZA_CASE_OBSERVATION);
-			try {
-				VALIDATE_CASE_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_CASE_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
-				throw new UnsupportedOperationException(pe.getLocalizedMessage());
-			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_CASE_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(influenzaCaseObservation)) {
-			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 fluValidator.DIAGNOSTIC_SOURCE,
-						 fluValidator.INFLUENZA_CASE_OBSERVATION__CASE_OBSERVATION_VALUE,
-						 FluPlugin.INSTANCE.getString("CaseObservationValue"),
 						 new Object [] { influenzaCaseObservation }));
 			}
 			 

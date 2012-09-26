@@ -34,6 +34,7 @@ public interface CoccidioidesPHCRRelevantDxTestsSection extends PhcrRelevantDxTe
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
+   * self.entry->exists(entry : cda::Entry | not entry.observation.oclIsUndefined() and entry.observation.oclIsKindOf(cocci::CoccidioidesResultObservation) and entry.typeCode = vocab::x_ActRelationshipEntry::DRIV)
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
    * <!-- end-model-doc -->
@@ -46,6 +47,7 @@ public interface CoccidioidesPHCRRelevantDxTestsSection extends PhcrRelevantDxTe
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
+   * self.entry->exists(entry : cda::Entry | not entry.organizer.oclIsUndefined() and entry.organizer.oclIsKindOf(cocci::CoccidioidesResultOrganizer) and entry.typeCode = vocab::x_ActRelationshipEntry::DRIV)
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
    * <!-- end-model-doc -->
@@ -57,6 +59,9 @@ public interface CoccidioidesPHCRRelevantDxTestsSection extends PhcrRelevantDxTe
 	/**
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
+   * <!-- begin-model-doc -->
+   * self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(cocci::CoccidioidesResultObservation)).oclAsType(cocci::CoccidioidesResultObservation)
+   * <!-- end-model-doc -->
    * @model kind="operation" required="true" ordered="false"
    *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(cocci::CoccidioidesResultObservation)).oclAsType(cocci::CoccidioidesResultObservation)'"
    * @generated
@@ -66,23 +71,12 @@ public interface CoccidioidesPHCRRelevantDxTestsSection extends PhcrRelevantDxTe
 	/**
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
+   * <!-- begin-model-doc -->
+   * self.getOrganizers()->select(organizer : cda::Organizer | not organizer.oclIsUndefined() and organizer.oclIsKindOf(cocci::CoccidioidesResultOrganizer)).oclAsType(cocci::CoccidioidesResultOrganizer)
+   * <!-- end-model-doc -->
    * @model kind="operation" required="true" ordered="false"
    *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getOrganizers()->select(organizer : cda::Organizer | not organizer.oclIsUndefined() and organizer.oclIsKindOf(cocci::CoccidioidesResultOrganizer)).oclAsType(cocci::CoccidioidesResultOrganizer)'"
    * @generated
    */
 	EList<CoccidioidesResultOrganizer> getCoccidioidesResultOrganizers();
-
-	/**
-   * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-   * @generated
-   */
-	public CoccidioidesPHCRRelevantDxTestsSection init();
-
-  /**
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    public CoccidioidesPHCRRelevantDxTestsSection init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // CoccidioidesPHCRRelevantDxTestsSection

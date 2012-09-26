@@ -28,10 +28,10 @@ import org.openhealthtools.mdht.uml.cda.ccd.Product;
 public interface TuberculosisImmunizationManufacturedProduct extends Product
 {
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   public TuberculosisImmunizationManufacturedProduct init();
 
   /**

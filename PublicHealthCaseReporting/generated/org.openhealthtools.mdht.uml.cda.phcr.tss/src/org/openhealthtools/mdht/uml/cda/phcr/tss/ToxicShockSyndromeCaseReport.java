@@ -32,6 +32,7 @@ public interface ToxicShockSyndromeCaseReport extends PublicHealthCaseReport {
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
+   * (self.title.oclIsUndefined() or self.title.isNullFlavorUndefined()) implies (not self.title.oclIsUndefined() and self.title.getText() = 'Public Health Case Report - Toxic Shock Syndrome')
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
    * <!-- end-model-doc -->
@@ -44,6 +45,7 @@ public interface ToxicShockSyndromeCaseReport extends PublicHealthCaseReport {
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
+   * self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(tss::TssPhcrClinicalInformationSection))
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
    * <!-- end-model-doc -->
@@ -56,6 +58,7 @@ public interface ToxicShockSyndromeCaseReport extends PublicHealthCaseReport {
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
+   * self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(tss::TssPhcrRelevantDxTestsSection))
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
    * <!-- end-model-doc -->
@@ -67,6 +70,9 @@ public interface ToxicShockSyndromeCaseReport extends PublicHealthCaseReport {
 	/**
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
+   * <!-- begin-model-doc -->
+   * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(tss::TssPhcrClinicalInformationSection))->asSequence()->any(true).oclAsType(tss::TssPhcrClinicalInformationSection)
+   * <!-- end-model-doc -->
    * @model kind="operation" required="true" ordered="false"
    *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(tss::TssPhcrClinicalInformationSection))->asSequence()->any(true).oclAsType(tss::TssPhcrClinicalInformationSection)'"
    * @generated
@@ -76,23 +82,12 @@ public interface ToxicShockSyndromeCaseReport extends PublicHealthCaseReport {
 	/**
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
+   * <!-- begin-model-doc -->
+   * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(tss::TssPhcrRelevantDxTestsSection))->asSequence()->any(true).oclAsType(tss::TssPhcrRelevantDxTestsSection)
+   * <!-- end-model-doc -->
    * @model kind="operation" required="true" ordered="false"
    *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(tss::TssPhcrRelevantDxTestsSection))->asSequence()->any(true).oclAsType(tss::TssPhcrRelevantDxTestsSection)'"
    * @generated
    */
 	TssPhcrRelevantDxTestsSection getTssPhcrRelevantDxTestsSection();
-
-	/**
-   * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-   * @generated
-   */
-	public ToxicShockSyndromeCaseReport init();
-
-  /**
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    public ToxicShockSyndromeCaseReport init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // ToxicShockSyndromeCaseReport

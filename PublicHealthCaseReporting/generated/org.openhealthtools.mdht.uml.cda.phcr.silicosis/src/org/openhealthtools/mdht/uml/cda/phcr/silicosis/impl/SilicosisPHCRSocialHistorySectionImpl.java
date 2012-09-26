@@ -24,7 +24,6 @@ import org.openhealthtools.mdht.uml.cda.phcr.silicosis.SilicosisPackage;
 import org.openhealthtools.mdht.uml.cda.phcr.silicosis.SilicosisPossibleExposureLocationAndTypeAct;
 import org.openhealthtools.mdht.uml.cda.phcr.silicosis.SilicosisSocioBehavioralBooleanRiskFactorObservation;
 import org.openhealthtools.mdht.uml.cda.phcr.silicosis.operations.SilicosisPHCRSocialHistorySectionOperations;
-import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
 
 /**
  * <!-- begin-user-doc -->
@@ -101,24 +100,5 @@ public class SilicosisPHCRSocialHistorySectionImpl extends PhcrSocialHistorySect
   {
     return SilicosisPHCRSocialHistorySectionOperations.validateSocialHistorySectionTemplateId(this, diagnostics, context);
   }
-
-  /**
-   * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-   * @generated
-   */
-	public SilicosisPHCRSocialHistorySection init() {
-      return Initializer.Util.init(this);
-  }
-
-  /**
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    public SilicosisPHCRSocialHistorySection init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-        Initializer.Util.init(this, initializers);
-        return this;
-    }
 
 } //SilicosisPHCRSocialHistorySectionImpl

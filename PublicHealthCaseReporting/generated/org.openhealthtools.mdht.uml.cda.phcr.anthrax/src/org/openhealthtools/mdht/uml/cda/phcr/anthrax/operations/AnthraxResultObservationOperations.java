@@ -10,7 +10,6 @@
  *******************************************************************************/
 package org.openhealthtools.mdht.uml.cda.phcr.anthrax.operations;
 
-import java.util.Collection;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.BasicDiagnostic;
@@ -38,7 +37,6 @@ import org.openhealthtools.mdht.uml.cda.phcr.operations.ResultObservationOperati
  * <p>
  * The following operations are supported:
  * <ul>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.phcr.anthrax.AnthraxResultObservation#validateAnthraxResultObservationCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Anthrax Result Observation Code P</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.phcr.anthrax.AnthraxResultObservation#validateAnthraxResultObservationCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Anthrax Result Observation Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.phcr.anthrax.AnthraxResultObservation#validateResultObservationTemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Result Observation Template Id</em>}</li>
  * </ul>
@@ -82,6 +80,7 @@ public class AnthraxResultObservationOperations extends ResultObservationOperati
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
+   * (self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined())
    * @param anthraxResultObservation The receiving '<em><b>Result Observation</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -91,8 +90,8 @@ public class AnthraxResultObservationOperations extends ResultObservationOperati
   
   public static  boolean validateAnthraxResultObservationCodeP(AnthraxResultObservation anthraxResultObservation, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
-  	  
-    if (VALIDATE_ANTHRAX_RESULT_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+    if (VALIDATE_ANTHRAX_RESULT_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null)
+    {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(AnthraxPackage.Literals.ANTHRAX_RESULT_OBSERVATION);
       try
@@ -113,22 +112,9 @@ public class AnthraxResultObservationOperations extends ResultObservationOperati
             (Diagnostic.ERROR,
              AnthraxValidator.DIAGNOSTIC_SOURCE,
              AnthraxValidator.ANTHRAX_RESULT_OBSERVATION__ANTHRAX_RESULT_OBSERVATION_CODE_P,
-             AnthraxPlugin.INSTANCE.getString("AnthraxResultObservationCodeP"),
+             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "validateAnthraxResultObservationCodeP", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(anthraxResultObservation, context) }),
              new Object [] { anthraxResultObservation }));
       }
-      
-      if (context != null) {
-        // generate a pass token for my dependent constraints to short-circuit or filter results
-        @SuppressWarnings("unchecked")
-        Collection<Object> passToken = (Collection<Object>) context.get("org.openhealthtools.mdht.uml.cda.phcr.anthrax.AnthraxResultObservationCodeP");
-        if (passToken == null) {
-          // anticipate a reasonably healthy model
-          passToken = new java.util.ArrayList<Object>(3);
-          context.put("org.openhealthtools.mdht.uml.cda.phcr.anthrax.AnthraxResultObservationCodeP", passToken);
-        }
-        passToken.add(anthraxResultObservation);
-      }
-       
       return false;
     }
     return true;
@@ -162,6 +148,9 @@ public class AnthraxResultObservationOperations extends ResultObservationOperati
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
+   * (self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and 
+   * let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in 
+   * value.codeSystem = '2.16.840.1.113883.6.1' and (value.code = '11468-6' or value.code = '33697-4' or value.code = '22866-8' or value.code = '22867-6' or value.code = '51976-9' or value.code = '44269-9' or value.code = '33698-2' or value.code = '44270-7' or value.code = '11469-4' or value.code = '17928-3' or value.code = '17915-0' or value.code = '622-1' or value.code = '21020-3' or value.code = '41622-2'))
    * @param anthraxResultObservation The receiving '<em><b>Result Observation</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -171,14 +160,8 @@ public class AnthraxResultObservationOperations extends ResultObservationOperati
   
   public static  boolean validateAnthraxResultObservationCode(AnthraxResultObservation anthraxResultObservation, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
-  	  
-    Object passToken = (context == null) ? null : context.get("org.openhealthtools.mdht.uml.cda.phcr.anthrax.AnthraxResultObservationCodeP");
-    if ((passToken instanceof Collection<?>) && ((Collection<?>) passToken).contains(anthraxResultObservation)) {
-      // I have a free pass to short-circuit
-      return true;
-    }
-  	  
-    if (VALIDATE_ANTHRAX_RESULT_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+    if (VALIDATE_ANTHRAX_RESULT_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null)
+    {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(AnthraxPackage.Literals.ANTHRAX_RESULT_OBSERVATION);
       try
@@ -199,10 +182,9 @@ public class AnthraxResultObservationOperations extends ResultObservationOperati
             (Diagnostic.ERROR,
              AnthraxValidator.DIAGNOSTIC_SOURCE,
              AnthraxValidator.ANTHRAX_RESULT_OBSERVATION__ANTHRAX_RESULT_OBSERVATION_CODE,
-             AnthraxPlugin.INSTANCE.getString("AnthraxResultObservationCode"),
+             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "validateAnthraxResultObservationCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(anthraxResultObservation, context) }),
              new Object [] { anthraxResultObservation }));
       }
-       
       return false;
     }
     return true;
@@ -234,6 +216,7 @@ public class AnthraxResultObservationOperations extends ResultObservationOperati
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
+   * self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.15.3.39')
    * @param anthraxResultObservation The receiving '<em><b>Result Observation</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -242,8 +225,8 @@ public class AnthraxResultObservationOperations extends ResultObservationOperati
    */
 	
 	public static  boolean validateResultObservationTemplateId(AnthraxResultObservation anthraxResultObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
-    if (VALIDATE_RESULT_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+    if (VALIDATE_RESULT_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null)
+    {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(AnthraxPackage.Literals.ANTHRAX_RESULT_OBSERVATION);
       try
@@ -264,10 +247,9 @@ public class AnthraxResultObservationOperations extends ResultObservationOperati
             (Diagnostic.ERROR,
              AnthraxValidator.DIAGNOSTIC_SOURCE,
              AnthraxValidator.ANTHRAX_RESULT_OBSERVATION__RESULT_OBSERVATION_TEMPLATE_ID,
-             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "ResultObservationTemplateId", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(anthraxResultObservation, context) }),
+             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "validateResultObservationTemplateId", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(anthraxResultObservation, context) }),
              new Object [] { anthraxResultObservation }));
       }
-       
       return false;
     }
     return true;

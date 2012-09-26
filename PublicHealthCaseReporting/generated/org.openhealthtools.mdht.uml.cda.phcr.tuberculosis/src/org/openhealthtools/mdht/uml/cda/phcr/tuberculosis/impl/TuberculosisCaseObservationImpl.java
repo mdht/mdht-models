@@ -29,8 +29,6 @@ import org.openhealthtools.mdht.uml.cda.phcr.tuberculosis.TuberculosisSignsAndSy
 import org.openhealthtools.mdht.uml.cda.phcr.tuberculosis.TuberculosisSiteOfTBDiseaseObservation;
 import org.openhealthtools.mdht.uml.cda.phcr.tuberculosis.operations.TuberculosisCaseObservationOperations;
 
-import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
-
 /**
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Case Observation</b></em>'.
@@ -42,107 +40,99 @@ import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
  */
 public class TuberculosisCaseObservationImpl extends CaseObservationImpl implements TuberculosisCaseObservation {
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	protected TuberculosisCaseObservationImpl() {
-    super();
-  }
+		super();
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	@Override
 	protected EClass eStaticClass() {
-    return TuberculosisPackage.Literals.TUBERCULOSIS_CASE_OBSERVATION;
-  }
+		return TuberculosisPackage.Literals.TUBERCULOSIS_CASE_OBSERVATION;
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
-  public boolean validateTuberculosisCaseObservationValueP(DiagnosticChain diagnostics, Map<Object, Object> context)
-  {
-    return TuberculosisCaseObservationOperations.validateTuberculosisCaseObservationValueP(this, diagnostics, context);
-  }
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   public boolean validateTuberculosisCaseObservationValue(DiagnosticChain diagnostics, Map<Object, Object> context)
   {
-    return TuberculosisCaseObservationOperations.validateTuberculosisCaseObservationValue(this, diagnostics, context);
-  }
+		return TuberculosisCaseObservationOperations.validateTuberculosisCaseObservationValue(this, diagnostics, context);
+	}
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public boolean validateTuberculosisCaseObservationTuberculosisSignsAndSymptomsObservation(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return TuberculosisCaseObservationOperations.validateTuberculosisCaseObservationTuberculosisSignsAndSymptomsObservation(this, diagnostics, context);
-  }
+		return TuberculosisCaseObservationOperations.validateTuberculosisCaseObservationTuberculosisSignsAndSymptomsObservation(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   public boolean validateTuberculosisCaseObservationTuberculosisSiteOfTBDiseaseObservation(DiagnosticChain diagnostics, Map<Object, Object> context)
   {
-    return TuberculosisCaseObservationOperations.validateTuberculosisCaseObservationTuberculosisSiteOfTBDiseaseObservation(this, diagnostics, context);
-  }
+		return TuberculosisCaseObservationOperations.validateTuberculosisCaseObservationTuberculosisSiteOfTBDiseaseObservation(this, diagnostics, context);
+	}
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public EList<TuberculosisSignsAndSymptomsObservation> getTuberculosisSignsAndSymptomsObservations() {
-    return TuberculosisCaseObservationOperations.getTuberculosisSignsAndSymptomsObservations(this);
-  }
+		return TuberculosisCaseObservationOperations.getTuberculosisSignsAndSymptomsObservations(this);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   public EList<TuberculosisSiteOfTBDiseaseObservation> getTuberculosisSiteOfTBDiseaseObservations()
   {
-    return TuberculosisCaseObservationOperations.getTuberculosisSiteOfTBDiseaseObservations(this);
-  }
+		return TuberculosisCaseObservationOperations.getTuberculosisSiteOfTBDiseaseObservations(this);
+	}
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	@Override
 	public boolean validateProblemObservationTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return TuberculosisCaseObservationOperations.validateProblemObservationTemplateId(this, diagnostics, context);
-  }
+		return TuberculosisCaseObservationOperations.validateProblemObservationTemplateId(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
-  public TuberculosisCaseObservation init() {
-      return Initializer.Util.init(this);
-  }
+	 * @generated
+	 */
+  @Override
+public TuberculosisCaseObservation init() {
+	    return Initializer.Util.init(this);
+	}
 
   /**
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
      * @generated
      */
-    public TuberculosisCaseObservation init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+    @Override
+	public TuberculosisCaseObservation init(Iterable<? extends Initializer<? extends EObject>> initializers) {
         Initializer.Util.init(this, initializers);
         return this;
     }

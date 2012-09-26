@@ -26,8 +26,6 @@ import org.openhealthtools.mdht.uml.cda.phcr.tularemia.TularemiaSignsAndSymptoms
 
 import org.openhealthtools.mdht.uml.cda.phcr.tularemia.operations.TularemiaSignsAndSymptomsObservationOperations;
 
-import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
-
 /**
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Signs And Symptoms Observation</b></em>'.
@@ -39,58 +37,60 @@ import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
  */
 public class TularemiaSignsAndSymptomsObservationImpl extends SignsAndSymptomsObservationImpl implements TularemiaSignsAndSymptomsObservation {
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	protected TularemiaSignsAndSymptomsObservationImpl() {
-    super();
-  }
+		super();
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	@Override
 	protected EClass eStaticClass() {
-    return TularemiaPackage.Literals.TULAREMIA_SIGNS_AND_SYMPTOMS_OBSERVATION;
-  }
+		return TularemiaPackage.Literals.TULAREMIA_SIGNS_AND_SYMPTOMS_OBSERVATION;
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public boolean validateTularemiaSignsAndSymptomsObservationValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return TularemiaSignsAndSymptomsObservationOperations.validateTularemiaSignsAndSymptomsObservationValue(this, diagnostics, context);
-  }
+		return TularemiaSignsAndSymptomsObservationOperations.validateTularemiaSignsAndSymptomsObservationValue(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	@Override
 	public boolean validateSignsAndSymptomsObservationTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return TularemiaSignsAndSymptomsObservationOperations.validateSignsAndSymptomsObservationTemplateId(this, diagnostics, context);
-  }
+		return TularemiaSignsAndSymptomsObservationOperations.validateSignsAndSymptomsObservationTemplateId(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
+	@Override
 	public TularemiaSignsAndSymptomsObservation init() {
-      return Initializer.Util.init(this);
-  }
+	    return Initializer.Util.init(this);
+	}
 
   /**
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
      * @generated
      */
-    public TularemiaSignsAndSymptomsObservation init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+    @Override
+	public TularemiaSignsAndSymptomsObservation init(Iterable<? extends Initializer<? extends EObject>> initializers) {
         Initializer.Util.init(this, initializers);
         return this;
     }

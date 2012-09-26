@@ -28,8 +28,6 @@ import org.openhealthtools.mdht.uml.cda.phcr.anthrax.operations.AnthraxResultOrg
 
 import org.openhealthtools.mdht.uml.cda.phcr.impl.ResultOrganizerImpl;
 
-import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
-
 /**
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Result Organizer</b></em>'.
@@ -106,23 +104,4 @@ public class AnthraxResultOrganizerImpl extends ResultOrganizerImpl implements A
 	public boolean validateResultOrganizerTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
     return AnthraxResultOrganizerOperations.validateResultOrganizerTemplateId(this, diagnostics, context);
   }
-
-	/**
-   * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-   * @generated
-   */
-	public AnthraxResultOrganizer init() {
-      return Initializer.Util.init(this);
-  }
-
-  /**
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    public AnthraxResultOrganizer init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-        Initializer.Util.init(this, initializers);
-        return this;
-    }
 } //AnthraxResultOrganizerImpl

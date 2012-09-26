@@ -40,9 +40,7 @@ import org.openhealthtools.mdht.uml.cda.phcr.hepb.util.HepbValidator;
  *   <li>{@link org.openhealthtools.mdht.uml.cda.phcr.hepb.JobRelatedBodyFluidExposureRiskFrequencyObservation#validateJobRelatedBodyFluidExposureRiskFrequencyObservationTemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Job Related Body Fluid Exposure Risk Frequency Observation Template Id</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.phcr.hepb.JobRelatedBodyFluidExposureRiskFrequencyObservation#validateJobRelatedBodyFluidExposureRiskFrequencyObservationCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Job Related Body Fluid Exposure Risk Frequency Observation Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.phcr.hepb.JobRelatedBodyFluidExposureRiskFrequencyObservation#validateJobRelatedBodyFluidExposureRiskFrequencyObservationStatusCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Job Related Body Fluid Exposure Risk Frequency Observation Status Code</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.phcr.hepb.JobRelatedBodyFluidExposureRiskFrequencyObservation#validateJobRelatedBodyFluidExposureRiskFrequencyObservationStatusCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Job Related Body Fluid Exposure Risk Frequency Observation Status Code P</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.phcr.hepb.JobRelatedBodyFluidExposureRiskFrequencyObservation#validateJobRelatedBodyFluidExposureRiskFrequencyObservationValue(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Job Related Body Fluid Exposure Risk Frequency Observation Value</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.phcr.hepb.JobRelatedBodyFluidExposureRiskFrequencyObservation#validateJobRelatedBodyFluidExposureRiskFrequencyObservationValueP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Job Related Body Fluid Exposure Risk Frequency Observation Value P</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.phcr.hepb.JobRelatedBodyFluidExposureRiskFrequencyObservation#validateJobRelatedBodyFluidExposureRiskFrequencyObservationClassCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Job Related Body Fluid Exposure Risk Frequency Observation Class Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.phcr.hepb.JobRelatedBodyFluidExposureRiskFrequencyObservation#validateJobRelatedBodyFluidExposureRiskFrequencyObservationMoodCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Job Related Body Fluid Exposure Risk Frequency Observation Mood Code</em>}</li>
  * </ul>
@@ -52,540 +50,396 @@ import org.openhealthtools.mdht.uml.cda.phcr.hepb.util.HepbValidator;
  */
 public class JobRelatedBodyFluidExposureRiskFrequencyObservationOperations extends ClinicalStatementOperations {
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	protected JobRelatedBodyFluidExposureRiskFrequencyObservationOperations() {
-    super();
-  }
+		super();
+	}
 
 	/**
-   * The cached OCL expression body for the '{@link #validateJobRelatedBodyFluidExposureRiskFrequencyObservationTemplateId(JobRelatedBodyFluidExposureRiskFrequencyObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Job Related Body Fluid Exposure Risk Frequency Observation Template Id</em>}' operation.
-   * <!-- begin-user-doc -->
+	 * The cached OCL expression body for the '{@link #validateJobRelatedBodyFluidExposureRiskFrequencyObservationTemplateId(JobRelatedBodyFluidExposureRiskFrequencyObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Job Related Body Fluid Exposure Risk Frequency Observation Template Id</em>}' operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @see #validateJobRelatedBodyFluidExposureRiskFrequencyObservationTemplateId(JobRelatedBodyFluidExposureRiskFrequencyObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-   * @generated
-   * @ordered
-   */
+	 * @see #validateJobRelatedBodyFluidExposureRiskFrequencyObservationTemplateId(JobRelatedBodyFluidExposureRiskFrequencyObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 	protected static final String VALIDATE_JOB_RELATED_BODY_FLUID_EXPOSURE_RISK_FREQUENCY_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.15.3.29')";
 
 	/**
-   * The cached OCL invariant for the '{@link #validateJobRelatedBodyFluidExposureRiskFrequencyObservationTemplateId(JobRelatedBodyFluidExposureRiskFrequencyObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Job Related Body Fluid Exposure Risk Frequency Observation Template Id</em>}' invariant operation.
-   * <!-- begin-user-doc -->
+	 * The cached OCL invariant for the '{@link #validateJobRelatedBodyFluidExposureRiskFrequencyObservationTemplateId(JobRelatedBodyFluidExposureRiskFrequencyObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Job Related Body Fluid Exposure Risk Frequency Observation Template Id</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @see #validateJobRelatedBodyFluidExposureRiskFrequencyObservationTemplateId(JobRelatedBodyFluidExposureRiskFrequencyObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-   * @generated
-   * @ordered
-   */
+	 * @see #validateJobRelatedBodyFluidExposureRiskFrequencyObservationTemplateId(JobRelatedBodyFluidExposureRiskFrequencyObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 	
 	protected static Constraint VALIDATE_JOB_RELATED_BODY_FLUID_EXPOSURE_RISK_FREQUENCY_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 	
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * <!-- begin-model-doc -->
-   * @param jobRelatedBodyFluidExposureRiskFrequencyObservation The receiving '<em><b>Job Related Body Fluid Exposure Risk Frequency Observation</b></em>' model object.
-   * @param diagnostics The chain of diagnostics to which problems are to be appended.
-   * @param context The cache of context-specific information.
-   * <!-- end-model-doc -->
-   * @generated
-   */
+	 * <!-- begin-model-doc -->
+	 * self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.15.3.29')
+	 * @param jobRelatedBodyFluidExposureRiskFrequencyObservation The receiving '<em><b>Job Related Body Fluid Exposure Risk Frequency Observation</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
 	
 	public static  boolean validateJobRelatedBodyFluidExposureRiskFrequencyObservationTemplateId(JobRelatedBodyFluidExposureRiskFrequencyObservation jobRelatedBodyFluidExposureRiskFrequencyObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
   	  
-    if (VALIDATE_JOB_RELATED_BODY_FLUID_EXPOSURE_RISK_FREQUENCY_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-      OCL.Helper helper = EOCL_ENV.createOCLHelper();
-      helper.setContext(HepbPackage.Literals.JOB_RELATED_BODY_FLUID_EXPOSURE_RISK_FREQUENCY_OBSERVATION);
-      try
-      {
-        VALIDATE_JOB_RELATED_BODY_FLUID_EXPOSURE_RISK_FREQUENCY_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_JOB_RELATED_BODY_FLUID_EXPOSURE_RISK_FREQUENCY_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-      }
-      catch (ParserException pe)
-      {
-        throw new UnsupportedOperationException(pe.getLocalizedMessage());
-      }
-    }
-    if (!EOCL_ENV.createQuery(VALIDATE_JOB_RELATED_BODY_FLUID_EXPOSURE_RISK_FREQUENCY_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(jobRelatedBodyFluidExposureRiskFrequencyObservation))
-    {
-      if (diagnostics != null)
-      {
-        diagnostics.add
-          (new BasicDiagnostic
-            (Diagnostic.ERROR,
-             HepbValidator.DIAGNOSTIC_SOURCE,
-             HepbValidator.JOB_RELATED_BODY_FLUID_EXPOSURE_RISK_FREQUENCY_OBSERVATION__JOB_RELATED_BODY_FLUID_EXPOSURE_RISK_FREQUENCY_OBSERVATION_TEMPLATE_ID,
-             HepbPlugin.INSTANCE.getString("JobRelatedBodyFluidExposureRiskFrequencyObservationTemplateId"),
-             new Object [] { jobRelatedBodyFluidExposureRiskFrequencyObservation }));
-      }
-       
-      return false;
-    }
-    return true;
-  }
+		if (VALIDATE_JOB_RELATED_BODY_FLUID_EXPOSURE_RISK_FREQUENCY_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+			helper.setContext(HepbPackage.Literals.JOB_RELATED_BODY_FLUID_EXPOSURE_RISK_FREQUENCY_OBSERVATION);
+			try {
+				VALIDATE_JOB_RELATED_BODY_FLUID_EXPOSURE_RISK_FREQUENCY_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_JOB_RELATED_BODY_FLUID_EXPOSURE_RISK_FREQUENCY_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+			}
+			catch (ParserException pe) {
+				throw new UnsupportedOperationException(pe.getLocalizedMessage());
+			}
+		}
+		if (!EOCL_ENV.createQuery(VALIDATE_JOB_RELATED_BODY_FLUID_EXPOSURE_RISK_FREQUENCY_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(jobRelatedBodyFluidExposureRiskFrequencyObservation)) {
+			if (diagnostics != null) {
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 HepbValidator.DIAGNOSTIC_SOURCE,
+						 HepbValidator.JOB_RELATED_BODY_FLUID_EXPOSURE_RISK_FREQUENCY_OBSERVATION__JOB_RELATED_BODY_FLUID_EXPOSURE_RISK_FREQUENCY_OBSERVATION_TEMPLATE_ID,
+						 HepbPlugin.INSTANCE.getString("JobRelatedBodyFluidExposureRiskFrequencyObservationTemplateId"),
+						 new Object [] { jobRelatedBodyFluidExposureRiskFrequencyObservation }));
+			}
+			 
+			return false;
+		}
+		return true;
+	}
 
 	/**
-   * The cached OCL expression body for the '{@link #validateJobRelatedBodyFluidExposureRiskFrequencyObservationCode(JobRelatedBodyFluidExposureRiskFrequencyObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Job Related Body Fluid Exposure Risk Frequency Observation Code</em>}' operation.
-   * <!-- begin-user-doc -->
+	 * The cached OCL expression body for the '{@link #validateJobRelatedBodyFluidExposureRiskFrequencyObservationCode(JobRelatedBodyFluidExposureRiskFrequencyObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Job Related Body Fluid Exposure Risk Frequency Observation Code</em>}' operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @see #validateJobRelatedBodyFluidExposureRiskFrequencyObservationCode(JobRelatedBodyFluidExposureRiskFrequencyObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-   * @generated
-   * @ordered
-   */
+	 * @see #validateJobRelatedBodyFluidExposureRiskFrequencyObservationCode(JobRelatedBodyFluidExposureRiskFrequencyObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 	protected static final String VALIDATE_JOB_RELATED_BODY_FLUID_EXPOSURE_RISK_FREQUENCY_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and "+
 "let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in "+
 "value.code = '55212-5' and value.codeSystem = '2.16.840.1.113883.6.1')";
 
 	/**
-   * The cached OCL invariant for the '{@link #validateJobRelatedBodyFluidExposureRiskFrequencyObservationCode(JobRelatedBodyFluidExposureRiskFrequencyObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Job Related Body Fluid Exposure Risk Frequency Observation Code</em>}' invariant operation.
-   * <!-- begin-user-doc -->
+	 * The cached OCL invariant for the '{@link #validateJobRelatedBodyFluidExposureRiskFrequencyObservationCode(JobRelatedBodyFluidExposureRiskFrequencyObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Job Related Body Fluid Exposure Risk Frequency Observation Code</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @see #validateJobRelatedBodyFluidExposureRiskFrequencyObservationCode(JobRelatedBodyFluidExposureRiskFrequencyObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-   * @generated
-   * @ordered
-   */
+	 * @see #validateJobRelatedBodyFluidExposureRiskFrequencyObservationCode(JobRelatedBodyFluidExposureRiskFrequencyObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 	
 	protected static Constraint VALIDATE_JOB_RELATED_BODY_FLUID_EXPOSURE_RISK_FREQUENCY_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 	
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * <!-- begin-model-doc -->
-   * @param jobRelatedBodyFluidExposureRiskFrequencyObservation The receiving '<em><b>Job Related Body Fluid Exposure Risk Frequency Observation</b></em>' model object.
-   * @param diagnostics The chain of diagnostics to which problems are to be appended.
-   * @param context The cache of context-specific information.
-   * <!-- end-model-doc -->
-   * @generated
-   */
+	 * <!-- begin-model-doc -->
+	 * (self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and 
+	 * let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in 
+	 * value.code = '55212-5' and value.codeSystem = '2.16.840.1.113883.6.1')
+	 * @param jobRelatedBodyFluidExposureRiskFrequencyObservation The receiving '<em><b>Job Related Body Fluid Exposure Risk Frequency Observation</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
 	
 	public static  boolean validateJobRelatedBodyFluidExposureRiskFrequencyObservationCode(JobRelatedBodyFluidExposureRiskFrequencyObservation jobRelatedBodyFluidExposureRiskFrequencyObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
   	  
-    if (VALIDATE_JOB_RELATED_BODY_FLUID_EXPOSURE_RISK_FREQUENCY_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-      OCL.Helper helper = EOCL_ENV.createOCLHelper();
-      helper.setContext(HepbPackage.Literals.JOB_RELATED_BODY_FLUID_EXPOSURE_RISK_FREQUENCY_OBSERVATION);
-      try
-      {
-        VALIDATE_JOB_RELATED_BODY_FLUID_EXPOSURE_RISK_FREQUENCY_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_JOB_RELATED_BODY_FLUID_EXPOSURE_RISK_FREQUENCY_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-      }
-      catch (ParserException pe)
-      {
-        throw new UnsupportedOperationException(pe.getLocalizedMessage());
-      }
-    }
-    if (!EOCL_ENV.createQuery(VALIDATE_JOB_RELATED_BODY_FLUID_EXPOSURE_RISK_FREQUENCY_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(jobRelatedBodyFluidExposureRiskFrequencyObservation))
-    {
-      if (diagnostics != null)
-      {
-        diagnostics.add
-          (new BasicDiagnostic
-            (Diagnostic.ERROR,
-             HepbValidator.DIAGNOSTIC_SOURCE,
-             HepbValidator.JOB_RELATED_BODY_FLUID_EXPOSURE_RISK_FREQUENCY_OBSERVATION__JOB_RELATED_BODY_FLUID_EXPOSURE_RISK_FREQUENCY_OBSERVATION_CODE,
-             HepbPlugin.INSTANCE.getString("JobRelatedBodyFluidExposureRiskFrequencyObservationCode"),
-             new Object [] { jobRelatedBodyFluidExposureRiskFrequencyObservation }));
-      }
-       
-      return false;
-    }
-    return true;
-  }
+		if (VALIDATE_JOB_RELATED_BODY_FLUID_EXPOSURE_RISK_FREQUENCY_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+			helper.setContext(HepbPackage.Literals.JOB_RELATED_BODY_FLUID_EXPOSURE_RISK_FREQUENCY_OBSERVATION);
+			try {
+				VALIDATE_JOB_RELATED_BODY_FLUID_EXPOSURE_RISK_FREQUENCY_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_JOB_RELATED_BODY_FLUID_EXPOSURE_RISK_FREQUENCY_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+			}
+			catch (ParserException pe) {
+				throw new UnsupportedOperationException(pe.getLocalizedMessage());
+			}
+		}
+		if (!EOCL_ENV.createQuery(VALIDATE_JOB_RELATED_BODY_FLUID_EXPOSURE_RISK_FREQUENCY_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(jobRelatedBodyFluidExposureRiskFrequencyObservation)) {
+			if (diagnostics != null) {
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 HepbValidator.DIAGNOSTIC_SOURCE,
+						 HepbValidator.JOB_RELATED_BODY_FLUID_EXPOSURE_RISK_FREQUENCY_OBSERVATION__JOB_RELATED_BODY_FLUID_EXPOSURE_RISK_FREQUENCY_OBSERVATION_CODE,
+						 HepbPlugin.INSTANCE.getString("JobRelatedBodyFluidExposureRiskFrequencyObservationCode"),
+						 new Object [] { jobRelatedBodyFluidExposureRiskFrequencyObservation }));
+			}
+			 
+			return false;
+		}
+		return true;
+	}
 
 	/**
-   * The cached OCL expression body for the '{@link #validateJobRelatedBodyFluidExposureRiskFrequencyObservationStatusCode(JobRelatedBodyFluidExposureRiskFrequencyObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Job Related Body Fluid Exposure Risk Frequency Observation Status Code</em>}' operation.
-   * <!-- begin-user-doc -->
+	 * The cached OCL expression body for the '{@link #validateJobRelatedBodyFluidExposureRiskFrequencyObservationStatusCode(JobRelatedBodyFluidExposureRiskFrequencyObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Job Related Body Fluid Exposure Risk Frequency Observation Status Code</em>}' operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @see #validateJobRelatedBodyFluidExposureRiskFrequencyObservationStatusCode(JobRelatedBodyFluidExposureRiskFrequencyObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-   * @generated
-   * @ordered
-   */
+	 * @see #validateJobRelatedBodyFluidExposureRiskFrequencyObservationStatusCode(JobRelatedBodyFluidExposureRiskFrequencyObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 	protected static final String VALIDATE_JOB_RELATED_BODY_FLUID_EXPOSURE_RISK_FREQUENCY_OBSERVATION_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.statusCode.oclIsUndefined() or self.statusCode.isNullFlavorUndefined()) implies (not self.statusCode.oclIsUndefined() and self.statusCode.oclIsKindOf(datatypes::CS) and "+
 "let value : datatypes::CS = self.statusCode.oclAsType(datatypes::CS) in "+
 "value.code = 'completed')";
 
 	/**
-   * The cached OCL invariant for the '{@link #validateJobRelatedBodyFluidExposureRiskFrequencyObservationStatusCode(JobRelatedBodyFluidExposureRiskFrequencyObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Job Related Body Fluid Exposure Risk Frequency Observation Status Code</em>}' invariant operation.
-   * <!-- begin-user-doc -->
+	 * The cached OCL invariant for the '{@link #validateJobRelatedBodyFluidExposureRiskFrequencyObservationStatusCode(JobRelatedBodyFluidExposureRiskFrequencyObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Job Related Body Fluid Exposure Risk Frequency Observation Status Code</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @see #validateJobRelatedBodyFluidExposureRiskFrequencyObservationStatusCode(JobRelatedBodyFluidExposureRiskFrequencyObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-   * @generated
-   * @ordered
-   */
+	 * @see #validateJobRelatedBodyFluidExposureRiskFrequencyObservationStatusCode(JobRelatedBodyFluidExposureRiskFrequencyObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 	
 	protected static Constraint VALIDATE_JOB_RELATED_BODY_FLUID_EXPOSURE_RISK_FREQUENCY_OBSERVATION_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 	
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * <!-- begin-model-doc -->
-   * @param jobRelatedBodyFluidExposureRiskFrequencyObservation The receiving '<em><b>Job Related Body Fluid Exposure Risk Frequency Observation</b></em>' model object.
-   * @param diagnostics The chain of diagnostics to which problems are to be appended.
-   * @param context The cache of context-specific information.
-   * <!-- end-model-doc -->
-   * @generated
-   */
+	 * <!-- begin-model-doc -->
+	 * (self.statusCode.oclIsUndefined() or self.statusCode.isNullFlavorUndefined()) implies (not self.statusCode.oclIsUndefined() and self.statusCode.oclIsKindOf(datatypes::CS) and 
+	 * let value : datatypes::CS = self.statusCode.oclAsType(datatypes::CS) in 
+	 * value.code = 'completed')
+	 * @param jobRelatedBodyFluidExposureRiskFrequencyObservation The receiving '<em><b>Job Related Body Fluid Exposure Risk Frequency Observation</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
 	
 	public static  boolean validateJobRelatedBodyFluidExposureRiskFrequencyObservationStatusCode(JobRelatedBodyFluidExposureRiskFrequencyObservation jobRelatedBodyFluidExposureRiskFrequencyObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
   	  
-    if (VALIDATE_JOB_RELATED_BODY_FLUID_EXPOSURE_RISK_FREQUENCY_OBSERVATION_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-      OCL.Helper helper = EOCL_ENV.createOCLHelper();
-      helper.setContext(HepbPackage.Literals.JOB_RELATED_BODY_FLUID_EXPOSURE_RISK_FREQUENCY_OBSERVATION);
-      try
-      {
-        VALIDATE_JOB_RELATED_BODY_FLUID_EXPOSURE_RISK_FREQUENCY_OBSERVATION_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_JOB_RELATED_BODY_FLUID_EXPOSURE_RISK_FREQUENCY_OBSERVATION_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-      }
-      catch (ParserException pe)
-      {
-        throw new UnsupportedOperationException(pe.getLocalizedMessage());
-      }
-    }
-    if (!EOCL_ENV.createQuery(VALIDATE_JOB_RELATED_BODY_FLUID_EXPOSURE_RISK_FREQUENCY_OBSERVATION_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(jobRelatedBodyFluidExposureRiskFrequencyObservation))
-    {
-      if (diagnostics != null)
-      {
-        diagnostics.add
-          (new BasicDiagnostic
-            (Diagnostic.ERROR,
-             HepbValidator.DIAGNOSTIC_SOURCE,
-             HepbValidator.JOB_RELATED_BODY_FLUID_EXPOSURE_RISK_FREQUENCY_OBSERVATION__JOB_RELATED_BODY_FLUID_EXPOSURE_RISK_FREQUENCY_OBSERVATION_STATUS_CODE,
-             HepbPlugin.INSTANCE.getString("JobRelatedBodyFluidExposureRiskFrequencyObservationStatusCode"),
-             new Object [] { jobRelatedBodyFluidExposureRiskFrequencyObservation }));
-      }
-       
-      return false;
-    }
-    return true;
-  }
+		if (VALIDATE_JOB_RELATED_BODY_FLUID_EXPOSURE_RISK_FREQUENCY_OBSERVATION_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+			helper.setContext(HepbPackage.Literals.JOB_RELATED_BODY_FLUID_EXPOSURE_RISK_FREQUENCY_OBSERVATION);
+			try {
+				VALIDATE_JOB_RELATED_BODY_FLUID_EXPOSURE_RISK_FREQUENCY_OBSERVATION_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_JOB_RELATED_BODY_FLUID_EXPOSURE_RISK_FREQUENCY_OBSERVATION_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+			}
+			catch (ParserException pe) {
+				throw new UnsupportedOperationException(pe.getLocalizedMessage());
+			}
+		}
+		if (!EOCL_ENV.createQuery(VALIDATE_JOB_RELATED_BODY_FLUID_EXPOSURE_RISK_FREQUENCY_OBSERVATION_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(jobRelatedBodyFluidExposureRiskFrequencyObservation)) {
+			if (diagnostics != null) {
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 HepbValidator.DIAGNOSTIC_SOURCE,
+						 HepbValidator.JOB_RELATED_BODY_FLUID_EXPOSURE_RISK_FREQUENCY_OBSERVATION__JOB_RELATED_BODY_FLUID_EXPOSURE_RISK_FREQUENCY_OBSERVATION_STATUS_CODE,
+						 HepbPlugin.INSTANCE.getString("JobRelatedBodyFluidExposureRiskFrequencyObservationStatusCode"),
+						 new Object [] { jobRelatedBodyFluidExposureRiskFrequencyObservation }));
+			}
+			 
+			return false;
+		}
+		return true;
+	}
 
 	/**
-   * The cached OCL expression body for the '{@link #validateJobRelatedBodyFluidExposureRiskFrequencyObservationStatusCodeP(JobRelatedBodyFluidExposureRiskFrequencyObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Job Related Body Fluid Exposure Risk Frequency Observation Status Code P</em>}' operation.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @see #validateJobRelatedBodyFluidExposureRiskFrequencyObservationStatusCodeP(JobRelatedBodyFluidExposureRiskFrequencyObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-   * @generated
-   * @ordered
-   */
-  protected static final String VALIDATE_JOB_RELATED_BODY_FLUID_EXPOSURE_RISK_FREQUENCY_OBSERVATION_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.statusCode.oclIsUndefined() or self.statusCode.isNullFlavorUndefined()) implies (not self.statusCode.oclIsUndefined())";
-
-  /**
-   * The cached OCL invariant for the '{@link #validateJobRelatedBodyFluidExposureRiskFrequencyObservationStatusCodeP(JobRelatedBodyFluidExposureRiskFrequencyObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Job Related Body Fluid Exposure Risk Frequency Observation Status Code P</em>}' invariant operation.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @see #validateJobRelatedBodyFluidExposureRiskFrequencyObservationStatusCodeP(JobRelatedBodyFluidExposureRiskFrequencyObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-   * @generated
-   * @ordered
-   */
-  
-  protected static Constraint VALIDATE_JOB_RELATED_BODY_FLUID_EXPOSURE_RISK_FREQUENCY_OBSERVATION_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * <!-- begin-model-doc -->
-   * @param jobRelatedBodyFluidExposureRiskFrequencyObservation The receiving '<em><b>Job Related Body Fluid Exposure Risk Frequency Observation</b></em>' model object.
-   * @param diagnostics The chain of diagnostics to which problems are to be appended.
-   * @param context The cache of context-specific information.
-   * <!-- end-model-doc -->
-   * @generated
-   */
-  
-  public static  boolean validateJobRelatedBodyFluidExposureRiskFrequencyObservationStatusCodeP(JobRelatedBodyFluidExposureRiskFrequencyObservation jobRelatedBodyFluidExposureRiskFrequencyObservation, DiagnosticChain diagnostics, Map<Object, Object> context)
-  {
-  	  
-    if (VALIDATE_JOB_RELATED_BODY_FLUID_EXPOSURE_RISK_FREQUENCY_OBSERVATION_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-      OCL.Helper helper = EOCL_ENV.createOCLHelper();
-      helper.setContext(HepbPackage.Literals.JOB_RELATED_BODY_FLUID_EXPOSURE_RISK_FREQUENCY_OBSERVATION);
-      try
-      {
-        VALIDATE_JOB_RELATED_BODY_FLUID_EXPOSURE_RISK_FREQUENCY_OBSERVATION_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_JOB_RELATED_BODY_FLUID_EXPOSURE_RISK_FREQUENCY_OBSERVATION_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-      }
-      catch (ParserException pe)
-      {
-        throw new UnsupportedOperationException(pe.getLocalizedMessage());
-      }
-    }
-    if (!EOCL_ENV.createQuery(VALIDATE_JOB_RELATED_BODY_FLUID_EXPOSURE_RISK_FREQUENCY_OBSERVATION_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(jobRelatedBodyFluidExposureRiskFrequencyObservation))
-    {
-      if (diagnostics != null)
-      {
-        diagnostics.add
-          (new BasicDiagnostic
-            (Diagnostic.ERROR,
-             HepbValidator.DIAGNOSTIC_SOURCE,
-             HepbValidator.JOB_RELATED_BODY_FLUID_EXPOSURE_RISK_FREQUENCY_OBSERVATION__JOB_RELATED_BODY_FLUID_EXPOSURE_RISK_FREQUENCY_OBSERVATION_STATUS_CODE_P,
-             HepbPlugin.INSTANCE.getString("JobRelatedBodyFluidExposureRiskFrequencyObservationStatusCodeP"),
-             new Object [] { jobRelatedBodyFluidExposureRiskFrequencyObservation }));
-      }
-       
-      return false;
-    }
-    return true;
-  }
-
-  /**
-   * The cached OCL expression body for the '{@link #validateJobRelatedBodyFluidExposureRiskFrequencyObservationValue(JobRelatedBodyFluidExposureRiskFrequencyObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Job Related Body Fluid Exposure Risk Frequency Observation Value</em>}' operation.
-   * <!-- begin-user-doc -->
+	 * The cached OCL expression body for the '{@link #validateJobRelatedBodyFluidExposureRiskFrequencyObservationValue(JobRelatedBodyFluidExposureRiskFrequencyObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Job Related Body Fluid Exposure Risk Frequency Observation Value</em>}' operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @see #validateJobRelatedBodyFluidExposureRiskFrequencyObservationValue(JobRelatedBodyFluidExposureRiskFrequencyObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-   * @generated
-   * @ordered
-   */
+	 * @see #validateJobRelatedBodyFluidExposureRiskFrequencyObservationValue(JobRelatedBodyFluidExposureRiskFrequencyObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 	protected static final String VALIDATE_JOB_RELATED_BODY_FLUID_EXPOSURE_RISK_FREQUENCY_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (self.value->size() = 1 and self.value->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and "+
 "let value : datatypes::CD = element.oclAsType(datatypes::CD) in "+
 "value.codeSystem = '2.16.840.1.113883.6.96' and (value.code = '70232002' or value.code = '27789000')))";
 
 	/**
-   * The cached OCL invariant for the '{@link #validateJobRelatedBodyFluidExposureRiskFrequencyObservationValue(JobRelatedBodyFluidExposureRiskFrequencyObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Job Related Body Fluid Exposure Risk Frequency Observation Value</em>}' invariant operation.
-   * <!-- begin-user-doc -->
+	 * The cached OCL invariant for the '{@link #validateJobRelatedBodyFluidExposureRiskFrequencyObservationValue(JobRelatedBodyFluidExposureRiskFrequencyObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Job Related Body Fluid Exposure Risk Frequency Observation Value</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @see #validateJobRelatedBodyFluidExposureRiskFrequencyObservationValue(JobRelatedBodyFluidExposureRiskFrequencyObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-   * @generated
-   * @ordered
-   */
+	 * @see #validateJobRelatedBodyFluidExposureRiskFrequencyObservationValue(JobRelatedBodyFluidExposureRiskFrequencyObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 	
 	protected static Constraint VALIDATE_JOB_RELATED_BODY_FLUID_EXPOSURE_RISK_FREQUENCY_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 	
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * <!-- begin-model-doc -->
-   * @param jobRelatedBodyFluidExposureRiskFrequencyObservation The receiving '<em><b>Job Related Body Fluid Exposure Risk Frequency Observation</b></em>' model object.
-   * @param diagnostics The chain of diagnostics to which problems are to be appended.
-   * @param context The cache of context-specific information.
-   * <!-- end-model-doc -->
-   * @generated
-   */
+	 * <!-- begin-model-doc -->
+	 * (self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (self.value->size() = 1 and self.value->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and 
+	 * let value : datatypes::CD = element.oclAsType(datatypes::CD) in 
+	 * value.codeSystem = '2.16.840.1.113883.6.96' and (value.code = '70232002' or value.code = '27789000')))
+	 * @param jobRelatedBodyFluidExposureRiskFrequencyObservation The receiving '<em><b>Job Related Body Fluid Exposure Risk Frequency Observation</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
 	
 	public static  boolean validateJobRelatedBodyFluidExposureRiskFrequencyObservationValue(JobRelatedBodyFluidExposureRiskFrequencyObservation jobRelatedBodyFluidExposureRiskFrequencyObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
   	  
-    if (VALIDATE_JOB_RELATED_BODY_FLUID_EXPOSURE_RISK_FREQUENCY_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-      OCL.Helper helper = EOCL_ENV.createOCLHelper();
-      helper.setContext(HepbPackage.Literals.JOB_RELATED_BODY_FLUID_EXPOSURE_RISK_FREQUENCY_OBSERVATION);
-      try
-      {
-        VALIDATE_JOB_RELATED_BODY_FLUID_EXPOSURE_RISK_FREQUENCY_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_JOB_RELATED_BODY_FLUID_EXPOSURE_RISK_FREQUENCY_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-      }
-      catch (ParserException pe)
-      {
-        throw new UnsupportedOperationException(pe.getLocalizedMessage());
-      }
-    }
-    if (!EOCL_ENV.createQuery(VALIDATE_JOB_RELATED_BODY_FLUID_EXPOSURE_RISK_FREQUENCY_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(jobRelatedBodyFluidExposureRiskFrequencyObservation))
-    {
-      if (diagnostics != null)
-      {
-        diagnostics.add
-          (new BasicDiagnostic
-            (Diagnostic.ERROR,
-             HepbValidator.DIAGNOSTIC_SOURCE,
-             HepbValidator.JOB_RELATED_BODY_FLUID_EXPOSURE_RISK_FREQUENCY_OBSERVATION__JOB_RELATED_BODY_FLUID_EXPOSURE_RISK_FREQUENCY_OBSERVATION_VALUE,
-             HepbPlugin.INSTANCE.getString("JobRelatedBodyFluidExposureRiskFrequencyObservationValue"),
-             new Object [] { jobRelatedBodyFluidExposureRiskFrequencyObservation }));
-      }
-       
-      return false;
-    }
-    return true;
-  }
+		if (VALIDATE_JOB_RELATED_BODY_FLUID_EXPOSURE_RISK_FREQUENCY_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+			helper.setContext(HepbPackage.Literals.JOB_RELATED_BODY_FLUID_EXPOSURE_RISK_FREQUENCY_OBSERVATION);
+			try {
+				VALIDATE_JOB_RELATED_BODY_FLUID_EXPOSURE_RISK_FREQUENCY_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_JOB_RELATED_BODY_FLUID_EXPOSURE_RISK_FREQUENCY_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+			}
+			catch (ParserException pe) {
+				throw new UnsupportedOperationException(pe.getLocalizedMessage());
+			}
+		}
+		if (!EOCL_ENV.createQuery(VALIDATE_JOB_RELATED_BODY_FLUID_EXPOSURE_RISK_FREQUENCY_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(jobRelatedBodyFluidExposureRiskFrequencyObservation)) {
+			if (diagnostics != null) {
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 HepbValidator.DIAGNOSTIC_SOURCE,
+						 HepbValidator.JOB_RELATED_BODY_FLUID_EXPOSURE_RISK_FREQUENCY_OBSERVATION__JOB_RELATED_BODY_FLUID_EXPOSURE_RISK_FREQUENCY_OBSERVATION_VALUE,
+						 HepbPlugin.INSTANCE.getString("JobRelatedBodyFluidExposureRiskFrequencyObservationValue"),
+						 new Object [] { jobRelatedBodyFluidExposureRiskFrequencyObservation }));
+			}
+			 
+			return false;
+		}
+		return true;
+	}
 
 	/**
-   * The cached OCL expression body for the '{@link #validateJobRelatedBodyFluidExposureRiskFrequencyObservationValueP(JobRelatedBodyFluidExposureRiskFrequencyObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Job Related Body Fluid Exposure Risk Frequency Observation Value P</em>}' operation.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @see #validateJobRelatedBodyFluidExposureRiskFrequencyObservationValueP(JobRelatedBodyFluidExposureRiskFrequencyObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-   * @generated
-   * @ordered
-   */
-  protected static final String VALIDATE_JOB_RELATED_BODY_FLUID_EXPOSURE_RISK_FREQUENCY_OBSERVATION_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (self.value->size() = 1 and self.value->forAll(element | element.oclIsTypeOf(datatypes::CD)))";
-
-  /**
-   * The cached OCL invariant for the '{@link #validateJobRelatedBodyFluidExposureRiskFrequencyObservationValueP(JobRelatedBodyFluidExposureRiskFrequencyObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Job Related Body Fluid Exposure Risk Frequency Observation Value P</em>}' invariant operation.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @see #validateJobRelatedBodyFluidExposureRiskFrequencyObservationValueP(JobRelatedBodyFluidExposureRiskFrequencyObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-   * @generated
-   * @ordered
-   */
-  
-  protected static Constraint VALIDATE_JOB_RELATED_BODY_FLUID_EXPOSURE_RISK_FREQUENCY_OBSERVATION_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * <!-- begin-model-doc -->
-   * @param jobRelatedBodyFluidExposureRiskFrequencyObservation The receiving '<em><b>Job Related Body Fluid Exposure Risk Frequency Observation</b></em>' model object.
-   * @param diagnostics The chain of diagnostics to which problems are to be appended.
-   * @param context The cache of context-specific information.
-   * <!-- end-model-doc -->
-   * @generated
-   */
-  
-  public static  boolean validateJobRelatedBodyFluidExposureRiskFrequencyObservationValueP(JobRelatedBodyFluidExposureRiskFrequencyObservation jobRelatedBodyFluidExposureRiskFrequencyObservation, DiagnosticChain diagnostics, Map<Object, Object> context)
-  {
-  	  
-    if (VALIDATE_JOB_RELATED_BODY_FLUID_EXPOSURE_RISK_FREQUENCY_OBSERVATION_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-      OCL.Helper helper = EOCL_ENV.createOCLHelper();
-      helper.setContext(HepbPackage.Literals.JOB_RELATED_BODY_FLUID_EXPOSURE_RISK_FREQUENCY_OBSERVATION);
-      try
-      {
-        VALIDATE_JOB_RELATED_BODY_FLUID_EXPOSURE_RISK_FREQUENCY_OBSERVATION_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_JOB_RELATED_BODY_FLUID_EXPOSURE_RISK_FREQUENCY_OBSERVATION_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-      }
-      catch (ParserException pe)
-      {
-        throw new UnsupportedOperationException(pe.getLocalizedMessage());
-      }
-    }
-    if (!EOCL_ENV.createQuery(VALIDATE_JOB_RELATED_BODY_FLUID_EXPOSURE_RISK_FREQUENCY_OBSERVATION_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(jobRelatedBodyFluidExposureRiskFrequencyObservation))
-    {
-      if (diagnostics != null)
-      {
-        diagnostics.add
-          (new BasicDiagnostic
-            (Diagnostic.ERROR,
-             HepbValidator.DIAGNOSTIC_SOURCE,
-             HepbValidator.JOB_RELATED_BODY_FLUID_EXPOSURE_RISK_FREQUENCY_OBSERVATION__JOB_RELATED_BODY_FLUID_EXPOSURE_RISK_FREQUENCY_OBSERVATION_VALUE_P,
-             HepbPlugin.INSTANCE.getString("JobRelatedBodyFluidExposureRiskFrequencyObservationValueP"),
-             new Object [] { jobRelatedBodyFluidExposureRiskFrequencyObservation }));
-      }
-       
-      return false;
-    }
-    return true;
-  }
-
-  /**
-   * The cached OCL expression body for the '{@link #validateJobRelatedBodyFluidExposureRiskFrequencyObservationClassCode(JobRelatedBodyFluidExposureRiskFrequencyObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Job Related Body Fluid Exposure Risk Frequency Observation Class Code</em>}' operation.
-   * <!-- begin-user-doc -->
+	 * The cached OCL expression body for the '{@link #validateJobRelatedBodyFluidExposureRiskFrequencyObservationClassCode(JobRelatedBodyFluidExposureRiskFrequencyObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Job Related Body Fluid Exposure Risk Frequency Observation Class Code</em>}' operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @see #validateJobRelatedBodyFluidExposureRiskFrequencyObservationClassCode(JobRelatedBodyFluidExposureRiskFrequencyObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-   * @generated
-   * @ordered
-   */
+	 * @see #validateJobRelatedBodyFluidExposureRiskFrequencyObservationClassCode(JobRelatedBodyFluidExposureRiskFrequencyObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 	protected static final String VALIDATE_JOB_RELATED_BODY_FLUID_EXPOSURE_RISK_FREQUENCY_OBSERVATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "isDefined('classCode')";
 
 	/**
-   * The cached OCL invariant for the '{@link #validateJobRelatedBodyFluidExposureRiskFrequencyObservationClassCode(JobRelatedBodyFluidExposureRiskFrequencyObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Job Related Body Fluid Exposure Risk Frequency Observation Class Code</em>}' invariant operation.
-   * <!-- begin-user-doc -->
+	 * The cached OCL invariant for the '{@link #validateJobRelatedBodyFluidExposureRiskFrequencyObservationClassCode(JobRelatedBodyFluidExposureRiskFrequencyObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Job Related Body Fluid Exposure Risk Frequency Observation Class Code</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @see #validateJobRelatedBodyFluidExposureRiskFrequencyObservationClassCode(JobRelatedBodyFluidExposureRiskFrequencyObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-   * @generated
-   * @ordered
-   */
+	 * @see #validateJobRelatedBodyFluidExposureRiskFrequencyObservationClassCode(JobRelatedBodyFluidExposureRiskFrequencyObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 	
 	protected static Constraint VALIDATE_JOB_RELATED_BODY_FLUID_EXPOSURE_RISK_FREQUENCY_OBSERVATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * <!-- begin-model-doc -->
-   * @param jobRelatedBodyFluidExposureRiskFrequencyObservation The receiving '<em><b>Job Related Body Fluid Exposure Risk Frequency Observation</b></em>' model object.
-   * @param diagnostics The chain of diagnostics to which problems are to be appended.
-   * @param context The cache of context-specific information.
-   * <!-- end-model-doc -->
-   * @generated
-   */
+	 * <!-- begin-model-doc -->
+	 * isDefined('classCode')
+	 * @param jobRelatedBodyFluidExposureRiskFrequencyObservation The receiving '<em><b>Job Related Body Fluid Exposure Risk Frequency Observation</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
 	
 	public static  boolean validateJobRelatedBodyFluidExposureRiskFrequencyObservationClassCode(JobRelatedBodyFluidExposureRiskFrequencyObservation jobRelatedBodyFluidExposureRiskFrequencyObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
   	  
-    if (VALIDATE_JOB_RELATED_BODY_FLUID_EXPOSURE_RISK_FREQUENCY_OBSERVATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-      OCL.Helper helper = EOCL_ENV.createOCLHelper();
-      helper.setContext(HepbPackage.Literals.JOB_RELATED_BODY_FLUID_EXPOSURE_RISK_FREQUENCY_OBSERVATION);
-      try
-      {
-        VALIDATE_JOB_RELATED_BODY_FLUID_EXPOSURE_RISK_FREQUENCY_OBSERVATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_JOB_RELATED_BODY_FLUID_EXPOSURE_RISK_FREQUENCY_OBSERVATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-      }
-      catch (ParserException pe)
-      {
-        throw new UnsupportedOperationException(pe.getLocalizedMessage());
-      }
-    }
-    if (!EOCL_ENV.createQuery(VALIDATE_JOB_RELATED_BODY_FLUID_EXPOSURE_RISK_FREQUENCY_OBSERVATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(jobRelatedBodyFluidExposureRiskFrequencyObservation))
-    {
-      if (diagnostics != null)
-      {
-        diagnostics.add
-          (new BasicDiagnostic
-            (Diagnostic.ERROR,
-             HepbValidator.DIAGNOSTIC_SOURCE,
-             HepbValidator.JOB_RELATED_BODY_FLUID_EXPOSURE_RISK_FREQUENCY_OBSERVATION__JOB_RELATED_BODY_FLUID_EXPOSURE_RISK_FREQUENCY_OBSERVATION_CLASS_CODE,
-             HepbPlugin.INSTANCE.getString("JobRelatedBodyFluidExposureRiskFrequencyObservationClassCode"),
-             new Object [] { jobRelatedBodyFluidExposureRiskFrequencyObservation }));
-      }
-       
-      return false;
-    }
-    return true;
-  }
+		if (VALIDATE_JOB_RELATED_BODY_FLUID_EXPOSURE_RISK_FREQUENCY_OBSERVATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+			helper.setContext(HepbPackage.Literals.JOB_RELATED_BODY_FLUID_EXPOSURE_RISK_FREQUENCY_OBSERVATION);
+			try {
+				VALIDATE_JOB_RELATED_BODY_FLUID_EXPOSURE_RISK_FREQUENCY_OBSERVATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_JOB_RELATED_BODY_FLUID_EXPOSURE_RISK_FREQUENCY_OBSERVATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+			}
+			catch (ParserException pe) {
+				throw new UnsupportedOperationException(pe.getLocalizedMessage());
+			}
+		}
+		if (!EOCL_ENV.createQuery(VALIDATE_JOB_RELATED_BODY_FLUID_EXPOSURE_RISK_FREQUENCY_OBSERVATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(jobRelatedBodyFluidExposureRiskFrequencyObservation)) {
+			if (diagnostics != null) {
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 HepbValidator.DIAGNOSTIC_SOURCE,
+						 HepbValidator.JOB_RELATED_BODY_FLUID_EXPOSURE_RISK_FREQUENCY_OBSERVATION__JOB_RELATED_BODY_FLUID_EXPOSURE_RISK_FREQUENCY_OBSERVATION_CLASS_CODE,
+						 HepbPlugin.INSTANCE.getString("JobRelatedBodyFluidExposureRiskFrequencyObservationClassCode"),
+						 new Object [] { jobRelatedBodyFluidExposureRiskFrequencyObservation }));
+			}
+			 
+			return false;
+		}
+		return true;
+	}
 
 	/**
-   * The cached OCL expression body for the '{@link #validateJobRelatedBodyFluidExposureRiskFrequencyObservationMoodCode(JobRelatedBodyFluidExposureRiskFrequencyObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Job Related Body Fluid Exposure Risk Frequency Observation Mood Code</em>}' operation.
-   * <!-- begin-user-doc -->
+	 * The cached OCL expression body for the '{@link #validateJobRelatedBodyFluidExposureRiskFrequencyObservationMoodCode(JobRelatedBodyFluidExposureRiskFrequencyObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Job Related Body Fluid Exposure Risk Frequency Observation Mood Code</em>}' operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @see #validateJobRelatedBodyFluidExposureRiskFrequencyObservationMoodCode(JobRelatedBodyFluidExposureRiskFrequencyObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-   * @generated
-   * @ordered
-   */
+	 * @see #validateJobRelatedBodyFluidExposureRiskFrequencyObservationMoodCode(JobRelatedBodyFluidExposureRiskFrequencyObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 	protected static final String VALIDATE_JOB_RELATED_BODY_FLUID_EXPOSURE_RISK_FREQUENCY_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "isDefined('moodCode')";
 
 	/**
-   * The cached OCL invariant for the '{@link #validateJobRelatedBodyFluidExposureRiskFrequencyObservationMoodCode(JobRelatedBodyFluidExposureRiskFrequencyObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Job Related Body Fluid Exposure Risk Frequency Observation Mood Code</em>}' invariant operation.
-   * <!-- begin-user-doc -->
+	 * The cached OCL invariant for the '{@link #validateJobRelatedBodyFluidExposureRiskFrequencyObservationMoodCode(JobRelatedBodyFluidExposureRiskFrequencyObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Job Related Body Fluid Exposure Risk Frequency Observation Mood Code</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @see #validateJobRelatedBodyFluidExposureRiskFrequencyObservationMoodCode(JobRelatedBodyFluidExposureRiskFrequencyObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-   * @generated
-   * @ordered
-   */
+	 * @see #validateJobRelatedBodyFluidExposureRiskFrequencyObservationMoodCode(JobRelatedBodyFluidExposureRiskFrequencyObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 	
 	protected static Constraint VALIDATE_JOB_RELATED_BODY_FLUID_EXPOSURE_RISK_FREQUENCY_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * <!-- begin-model-doc -->
-   * @param jobRelatedBodyFluidExposureRiskFrequencyObservation The receiving '<em><b>Job Related Body Fluid Exposure Risk Frequency Observation</b></em>' model object.
-   * @param diagnostics The chain of diagnostics to which problems are to be appended.
-   * @param context The cache of context-specific information.
-   * <!-- end-model-doc -->
-   * @generated
-   */
+	 * <!-- begin-model-doc -->
+	 * isDefined('moodCode')
+	 * @param jobRelatedBodyFluidExposureRiskFrequencyObservation The receiving '<em><b>Job Related Body Fluid Exposure Risk Frequency Observation</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
 	
 	public static  boolean validateJobRelatedBodyFluidExposureRiskFrequencyObservationMoodCode(JobRelatedBodyFluidExposureRiskFrequencyObservation jobRelatedBodyFluidExposureRiskFrequencyObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
   	  
-    if (VALIDATE_JOB_RELATED_BODY_FLUID_EXPOSURE_RISK_FREQUENCY_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-      OCL.Helper helper = EOCL_ENV.createOCLHelper();
-      helper.setContext(HepbPackage.Literals.JOB_RELATED_BODY_FLUID_EXPOSURE_RISK_FREQUENCY_OBSERVATION);
-      try
-      {
-        VALIDATE_JOB_RELATED_BODY_FLUID_EXPOSURE_RISK_FREQUENCY_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_JOB_RELATED_BODY_FLUID_EXPOSURE_RISK_FREQUENCY_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-      }
-      catch (ParserException pe)
-      {
-        throw new UnsupportedOperationException(pe.getLocalizedMessage());
-      }
-    }
-    if (!EOCL_ENV.createQuery(VALIDATE_JOB_RELATED_BODY_FLUID_EXPOSURE_RISK_FREQUENCY_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(jobRelatedBodyFluidExposureRiskFrequencyObservation))
-    {
-      if (diagnostics != null)
-      {
-        diagnostics.add
-          (new BasicDiagnostic
-            (Diagnostic.ERROR,
-             HepbValidator.DIAGNOSTIC_SOURCE,
-             HepbValidator.JOB_RELATED_BODY_FLUID_EXPOSURE_RISK_FREQUENCY_OBSERVATION__JOB_RELATED_BODY_FLUID_EXPOSURE_RISK_FREQUENCY_OBSERVATION_MOOD_CODE,
-             HepbPlugin.INSTANCE.getString("JobRelatedBodyFluidExposureRiskFrequencyObservationMoodCode"),
-             new Object [] { jobRelatedBodyFluidExposureRiskFrequencyObservation }));
-      }
-       
-      return false;
-    }
-    return true;
-  }
+		if (VALIDATE_JOB_RELATED_BODY_FLUID_EXPOSURE_RISK_FREQUENCY_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+			helper.setContext(HepbPackage.Literals.JOB_RELATED_BODY_FLUID_EXPOSURE_RISK_FREQUENCY_OBSERVATION);
+			try {
+				VALIDATE_JOB_RELATED_BODY_FLUID_EXPOSURE_RISK_FREQUENCY_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_JOB_RELATED_BODY_FLUID_EXPOSURE_RISK_FREQUENCY_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+			}
+			catch (ParserException pe) {
+				throw new UnsupportedOperationException(pe.getLocalizedMessage());
+			}
+		}
+		if (!EOCL_ENV.createQuery(VALIDATE_JOB_RELATED_BODY_FLUID_EXPOSURE_RISK_FREQUENCY_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(jobRelatedBodyFluidExposureRiskFrequencyObservation)) {
+			if (diagnostics != null) {
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 HepbValidator.DIAGNOSTIC_SOURCE,
+						 HepbValidator.JOB_RELATED_BODY_FLUID_EXPOSURE_RISK_FREQUENCY_OBSERVATION__JOB_RELATED_BODY_FLUID_EXPOSURE_RISK_FREQUENCY_OBSERVATION_MOOD_CODE,
+						 HepbPlugin.INSTANCE.getString("JobRelatedBodyFluidExposureRiskFrequencyObservationMoodCode"),
+						 new Object [] { jobRelatedBodyFluidExposureRiskFrequencyObservation }));
+			}
+			 
+			return false;
+		}
+		return true;
+	}
 
 } // JobRelatedBodyFluidExposureRiskFrequencyObservationOperations

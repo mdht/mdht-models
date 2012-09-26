@@ -10,7 +10,6 @@
  *******************************************************************************/
 package org.openhealthtools.mdht.uml.cda.phcr.operations;
 
-import java.util.Collection;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.BasicDiagnostic;
@@ -58,7 +57,6 @@ import org.openhealthtools.mdht.uml.cda.phcr.util.PhcrValidator;
  *   <li>{@link org.openhealthtools.mdht.uml.cda.phcr.PublicHealthCaseReport#validatePublicHealthCaseReportPHCRLegalAuthenticatorAssignedEntityAddr(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Public Health Case Report PHCR Legal Authenticator Assigned Entity Addr</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.phcr.PublicHealthCaseReport#validatePublicHealthCaseReportPHCRLegalAuthenticatorAssignedEntityAssignedPersonName(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Public Health Case Report PHCR Legal Authenticator Assigned Entity Assigned Person Name</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.phcr.PublicHealthCaseReport#validatePublicHealthCaseReportTemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Public Health Case Report Template Id</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.phcr.PublicHealthCaseReport#validatePublicHealthCaseReportCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Public Health Case Report Code P</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.phcr.PublicHealthCaseReport#validatePublicHealthCaseReportCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Public Health Case Report Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.phcr.PublicHealthCaseReport#validatePublicHealthCaseReportPhcrSocialHistorySection(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Public Health Case Report Phcr Social History Section</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.phcr.PublicHealthCaseReport#validatePublicHealthCaseReportPhcrClinicalInformationSection(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Public Health Case Report Phcr Clinical Information Section</em>}</li>
@@ -111,6 +109,7 @@ public class PublicHealthCaseReportOperations extends ClinicalDocumentOperations
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
+   * self.recordTarget->one(recordTarget : cda::RecordTarget | not recordTarget.oclIsUndefined())
    * @param publicHealthCaseReport The receiving '<em><b>Public Health Case Report</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -118,8 +117,8 @@ public class PublicHealthCaseReportOperations extends ClinicalDocumentOperations
    * @generated
    */
 	public static  boolean validatePublicHealthCaseReportPHCRRecordTarget(PublicHealthCaseReport publicHealthCaseReport, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
-    if (VALIDATE_PUBLIC_HEALTH_CASE_REPORT_PHCR_RECORD_TARGET__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+    if (VALIDATE_PUBLIC_HEALTH_CASE_REPORT_PHCR_RECORD_TARGET__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null)
+    {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(PhcrPackage.Literals.PUBLIC_HEALTH_CASE_REPORT);
       try
@@ -140,10 +139,9 @@ public class PublicHealthCaseReportOperations extends ClinicalDocumentOperations
             (Diagnostic.ERROR,
              PhcrValidator.DIAGNOSTIC_SOURCE,
              PhcrValidator.PUBLIC_HEALTH_CASE_REPORT__PUBLIC_HEALTH_CASE_REPORT_PHCR_RECORD_TARGET,
-             PhcrPlugin.INSTANCE.getString("PublicHealthCaseReportPHCRRecordTarget"),
+             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "validatePublicHealthCaseReportPHCRRecordTarget", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(publicHealthCaseReport, context) }),
              new Object [] { publicHealthCaseReport }));
       }
-       
       return false;
     }
     return true;
@@ -173,6 +171,7 @@ public class PublicHealthCaseReportOperations extends ClinicalDocumentOperations
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
+   * self.recordTarget.patientRole->one(patientRole : cda::PatientRole | not patientRole.oclIsUndefined())
    * @param publicHealthCaseReport The receiving '<em><b>Public Health Case Report</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -180,8 +179,8 @@ public class PublicHealthCaseReportOperations extends ClinicalDocumentOperations
    * @generated
    */
 	public static  boolean validatePublicHealthCaseReportPHCRRecordTargetPatientRole(PublicHealthCaseReport publicHealthCaseReport, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
-    if (VALIDATE_PUBLIC_HEALTH_CASE_REPORT_PHCR_RECORD_TARGET_PATIENT_ROLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+    if (VALIDATE_PUBLIC_HEALTH_CASE_REPORT_PHCR_RECORD_TARGET_PATIENT_ROLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null)
+    {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(PhcrPackage.Literals.PUBLIC_HEALTH_CASE_REPORT);
       try
@@ -202,10 +201,9 @@ public class PublicHealthCaseReportOperations extends ClinicalDocumentOperations
             (Diagnostic.ERROR,
              PhcrValidator.DIAGNOSTIC_SOURCE,
              PhcrValidator.PUBLIC_HEALTH_CASE_REPORT__PUBLIC_HEALTH_CASE_REPORT_PHCR_RECORD_TARGET_PATIENT_ROLE,
-             PhcrPlugin.INSTANCE.getString("PublicHealthCaseReportPHCRRecordTargetPatientRole"),
+             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "validatePublicHealthCaseReportPHCRRecordTargetPatientRole", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(publicHealthCaseReport, context) }),
              new Object [] { publicHealthCaseReport }));
       }
-       
       return false;
     }
     return true;
@@ -235,6 +233,7 @@ public class PublicHealthCaseReportOperations extends ClinicalDocumentOperations
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
+   * self.recordTarget.patientRole.id->exists(id : datatypes::II | not id.root.oclIsUndefined() or not id.extension.oclIsUndefined() or not id.nullFlavor.oclIsUndefined())
    * @param publicHealthCaseReport The receiving '<em><b>Public Health Case Report</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -242,8 +241,8 @@ public class PublicHealthCaseReportOperations extends ClinicalDocumentOperations
    * @generated
    */
 	public static  boolean validatePublicHealthCaseReportPHCRRecordTargetPatientRoleId(PublicHealthCaseReport publicHealthCaseReport, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
-    if (VALIDATE_PUBLIC_HEALTH_CASE_REPORT_PHCR_RECORD_TARGET_PATIENT_ROLE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+    if (VALIDATE_PUBLIC_HEALTH_CASE_REPORT_PHCR_RECORD_TARGET_PATIENT_ROLE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null)
+    {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(PhcrPackage.Literals.PUBLIC_HEALTH_CASE_REPORT);
       try
@@ -264,10 +263,9 @@ public class PublicHealthCaseReportOperations extends ClinicalDocumentOperations
             (Diagnostic.ERROR,
              PhcrValidator.DIAGNOSTIC_SOURCE,
              PhcrValidator.PUBLIC_HEALTH_CASE_REPORT__PUBLIC_HEALTH_CASE_REPORT_PHCR_RECORD_TARGET_PATIENT_ROLE_ID,
-             PhcrPlugin.INSTANCE.getString("PublicHealthCaseReportPHCRRecordTargetPatientRoleId"),
+             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "validatePublicHealthCaseReportPHCRRecordTargetPatientRoleId", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(publicHealthCaseReport, context) }),
              new Object [] { publicHealthCaseReport }));
       }
-       
       return false;
     }
     return true;
@@ -297,6 +295,7 @@ public class PublicHealthCaseReportOperations extends ClinicalDocumentOperations
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
+   * self.author->exists(author : cda::Author | not author.oclIsUndefined())
    * @param publicHealthCaseReport The receiving '<em><b>Public Health Case Report</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -304,8 +303,8 @@ public class PublicHealthCaseReportOperations extends ClinicalDocumentOperations
    * @generated
    */
 	public static  boolean validatePublicHealthCaseReportPHCRAuthor(PublicHealthCaseReport publicHealthCaseReport, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
-    if (VALIDATE_PUBLIC_HEALTH_CASE_REPORT_PHCR_AUTHOR__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+    if (VALIDATE_PUBLIC_HEALTH_CASE_REPORT_PHCR_AUTHOR__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null)
+    {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(PhcrPackage.Literals.PUBLIC_HEALTH_CASE_REPORT);
       try
@@ -326,10 +325,9 @@ public class PublicHealthCaseReportOperations extends ClinicalDocumentOperations
             (Diagnostic.ERROR,
              PhcrValidator.DIAGNOSTIC_SOURCE,
              PhcrValidator.PUBLIC_HEALTH_CASE_REPORT__PUBLIC_HEALTH_CASE_REPORT_PHCR_AUTHOR,
-             PhcrPlugin.INSTANCE.getString("PublicHealthCaseReportPHCRAuthor"),
+             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "validatePublicHealthCaseReportPHCRAuthor", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(publicHealthCaseReport, context) }),
              new Object [] { publicHealthCaseReport }));
       }
-       
       return false;
     }
     return true;
@@ -359,6 +357,7 @@ public class PublicHealthCaseReportOperations extends ClinicalDocumentOperations
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
+   * self.author.time->one(time : datatypes::TS | not time.value.oclIsUndefined() or not time.nullFlavor.oclIsUndefined())
    * @param publicHealthCaseReport The receiving '<em><b>Public Health Case Report</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -366,8 +365,8 @@ public class PublicHealthCaseReportOperations extends ClinicalDocumentOperations
    * @generated
    */
 	public static  boolean validatePublicHealthCaseReportPHCRAuthorTiime(PublicHealthCaseReport publicHealthCaseReport, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
-    if (VALIDATE_PUBLIC_HEALTH_CASE_REPORT_PHCR_AUTHOR_TIIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+    if (VALIDATE_PUBLIC_HEALTH_CASE_REPORT_PHCR_AUTHOR_TIIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null)
+    {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(PhcrPackage.Literals.PUBLIC_HEALTH_CASE_REPORT);
       try
@@ -388,10 +387,9 @@ public class PublicHealthCaseReportOperations extends ClinicalDocumentOperations
             (Diagnostic.ERROR,
              PhcrValidator.DIAGNOSTIC_SOURCE,
              PhcrValidator.PUBLIC_HEALTH_CASE_REPORT__PUBLIC_HEALTH_CASE_REPORT_PHCR_AUTHOR_TIIME,
-             PhcrPlugin.INSTANCE.getString("PublicHealthCaseReportPHCRAuthorTiime"),
+             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "validatePublicHealthCaseReportPHCRAuthorTiime", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(publicHealthCaseReport, context) }),
              new Object [] { publicHealthCaseReport }));
       }
-       
       return false;
     }
     return true;
@@ -421,6 +419,7 @@ public class PublicHealthCaseReportOperations extends ClinicalDocumentOperations
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
+   * self.author.assignedAuthor->one(assignedAuthor : cda::AssignedAuthor | not assignedAuthor.oclIsUndefined())
    * @param publicHealthCaseReport The receiving '<em><b>Public Health Case Report</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -428,8 +427,8 @@ public class PublicHealthCaseReportOperations extends ClinicalDocumentOperations
    * @generated
    */
 	public static  boolean validatePublicHealthCaseReportPHCRAuthorAssignedAuthor(PublicHealthCaseReport publicHealthCaseReport, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
-    if (VALIDATE_PUBLIC_HEALTH_CASE_REPORT_PHCR_AUTHOR_ASSIGNED_AUTHOR__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+    if (VALIDATE_PUBLIC_HEALTH_CASE_REPORT_PHCR_AUTHOR_ASSIGNED_AUTHOR__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null)
+    {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(PhcrPackage.Literals.PUBLIC_HEALTH_CASE_REPORT);
       try
@@ -450,10 +449,9 @@ public class PublicHealthCaseReportOperations extends ClinicalDocumentOperations
             (Diagnostic.ERROR,
              PhcrValidator.DIAGNOSTIC_SOURCE,
              PhcrValidator.PUBLIC_HEALTH_CASE_REPORT__PUBLIC_HEALTH_CASE_REPORT_PHCR_AUTHOR_ASSIGNED_AUTHOR,
-             PhcrPlugin.INSTANCE.getString("PublicHealthCaseReportPHCRAuthorAssignedAuthor"),
+             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "validatePublicHealthCaseReportPHCRAuthorAssignedAuthor", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(publicHealthCaseReport, context) }),
              new Object [] { publicHealthCaseReport }));
       }
-       
       return false;
     }
     return true;
@@ -483,6 +481,7 @@ public class PublicHealthCaseReportOperations extends ClinicalDocumentOperations
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
+   * self.author.assignedAuthor.id->exists(id : datatypes::II | not id.root.oclIsUndefined() or not id.extension.oclIsUndefined() or not id.nullFlavor.oclIsUndefined())
    * @param publicHealthCaseReport The receiving '<em><b>Public Health Case Report</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -490,8 +489,8 @@ public class PublicHealthCaseReportOperations extends ClinicalDocumentOperations
    * @generated
    */
 	public static  boolean validatePublicHealthCaseReportPHCRAuthorAssignedAuthorId(PublicHealthCaseReport publicHealthCaseReport, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
-    if (VALIDATE_PUBLIC_HEALTH_CASE_REPORT_PHCR_AUTHOR_ASSIGNED_AUTHOR_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+    if (VALIDATE_PUBLIC_HEALTH_CASE_REPORT_PHCR_AUTHOR_ASSIGNED_AUTHOR_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null)
+    {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(PhcrPackage.Literals.PUBLIC_HEALTH_CASE_REPORT);
       try
@@ -512,10 +511,9 @@ public class PublicHealthCaseReportOperations extends ClinicalDocumentOperations
             (Diagnostic.ERROR,
              PhcrValidator.DIAGNOSTIC_SOURCE,
              PhcrValidator.PUBLIC_HEALTH_CASE_REPORT__PUBLIC_HEALTH_CASE_REPORT_PHCR_AUTHOR_ASSIGNED_AUTHOR_ID,
-             PhcrPlugin.INSTANCE.getString("PublicHealthCaseReportPHCRAuthorAssignedAuthorId"),
+             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "validatePublicHealthCaseReportPHCRAuthorAssignedAuthorId", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(publicHealthCaseReport, context) }),
              new Object [] { publicHealthCaseReport }));
       }
-       
       return false;
     }
     return true;
@@ -545,6 +543,7 @@ public class PublicHealthCaseReportOperations extends ClinicalDocumentOperations
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
+   * self.author.assignedAuthor.addr->one(addr : datatypes::AD | not addr.oclIsUndefined())
    * @param publicHealthCaseReport The receiving '<em><b>Public Health Case Report</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -552,8 +551,8 @@ public class PublicHealthCaseReportOperations extends ClinicalDocumentOperations
    * @generated
    */
 	public static  boolean validatePublicHealthCaseReportPHCRAuthorAssignedAuthorAddr(PublicHealthCaseReport publicHealthCaseReport, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
-    if (VALIDATE_PUBLIC_HEALTH_CASE_REPORT_PHCR_AUTHOR_ASSIGNED_AUTHOR_ADDR__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+    if (VALIDATE_PUBLIC_HEALTH_CASE_REPORT_PHCR_AUTHOR_ASSIGNED_AUTHOR_ADDR__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null)
+    {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(PhcrPackage.Literals.PUBLIC_HEALTH_CASE_REPORT);
       try
@@ -574,10 +573,9 @@ public class PublicHealthCaseReportOperations extends ClinicalDocumentOperations
             (Diagnostic.ERROR,
              PhcrValidator.DIAGNOSTIC_SOURCE,
              PhcrValidator.PUBLIC_HEALTH_CASE_REPORT__PUBLIC_HEALTH_CASE_REPORT_PHCR_AUTHOR_ASSIGNED_AUTHOR_ADDR,
-             PhcrPlugin.INSTANCE.getString("PublicHealthCaseReportPHCRAuthorAssignedAuthorAddr"),
+             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "validatePublicHealthCaseReportPHCRAuthorAssignedAuthorAddr", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(publicHealthCaseReport, context) }),
              new Object [] { publicHealthCaseReport }));
       }
-       
       return false;
     }
     return true;
@@ -607,6 +605,7 @@ public class PublicHealthCaseReportOperations extends ClinicalDocumentOperations
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
+   * self.author.assignedAuthor.telecom->one(tel : datatypes::TEL | not tel.oclIsUndefined())
    * @param publicHealthCaseReport The receiving '<em><b>Public Health Case Report</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -614,8 +613,8 @@ public class PublicHealthCaseReportOperations extends ClinicalDocumentOperations
    * @generated
    */
 	public static  boolean validatePublicHealthCaseReportPHCRAuthorAssignedAuthorTelecom(PublicHealthCaseReport publicHealthCaseReport, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
-    if (VALIDATE_PUBLIC_HEALTH_CASE_REPORT_PHCR_AUTHOR_ASSIGNED_AUTHOR_TELECOM__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+    if (VALIDATE_PUBLIC_HEALTH_CASE_REPORT_PHCR_AUTHOR_ASSIGNED_AUTHOR_TELECOM__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null)
+    {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(PhcrPackage.Literals.PUBLIC_HEALTH_CASE_REPORT);
       try
@@ -636,10 +635,9 @@ public class PublicHealthCaseReportOperations extends ClinicalDocumentOperations
             (Diagnostic.ERROR,
              PhcrValidator.DIAGNOSTIC_SOURCE,
              PhcrValidator.PUBLIC_HEALTH_CASE_REPORT__PUBLIC_HEALTH_CASE_REPORT_PHCR_AUTHOR_ASSIGNED_AUTHOR_TELECOM,
-             PhcrPlugin.INSTANCE.getString("PublicHealthCaseReportPHCRAuthorAssignedAuthorTelecom"),
+             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "validatePublicHealthCaseReportPHCRAuthorAssignedAuthorTelecom", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(publicHealthCaseReport, context) }),
              new Object [] { publicHealthCaseReport }));
       }
-       
       return false;
     }
     return true;
@@ -669,6 +667,7 @@ public class PublicHealthCaseReportOperations extends ClinicalDocumentOperations
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
+   * self.author.assignedAuthor.assignedPerson->one(assignedPerson : cda::Person | not assignedPerson.oclIsUndefined()) and self.author.assignedAuthor.assignedPerson.name->one(name : datatypes::PN | not name.oclIsUndefined())
    * @param publicHealthCaseReport The receiving '<em><b>Public Health Case Report</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -676,8 +675,8 @@ public class PublicHealthCaseReportOperations extends ClinicalDocumentOperations
    * @generated
    */
 	public static  boolean validatePublicHealthCaseReportPHCRAuthorAssignedAuthorAssignedPersonName(PublicHealthCaseReport publicHealthCaseReport, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
-    if (VALIDATE_PUBLIC_HEALTH_CASE_REPORT_PHCR_AUTHOR_ASSIGNED_AUTHOR_ASSIGNED_PERSON_NAME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+    if (VALIDATE_PUBLIC_HEALTH_CASE_REPORT_PHCR_AUTHOR_ASSIGNED_AUTHOR_ASSIGNED_PERSON_NAME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null)
+    {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(PhcrPackage.Literals.PUBLIC_HEALTH_CASE_REPORT);
       try
@@ -698,10 +697,9 @@ public class PublicHealthCaseReportOperations extends ClinicalDocumentOperations
             (Diagnostic.ERROR,
              PhcrValidator.DIAGNOSTIC_SOURCE,
              PhcrValidator.PUBLIC_HEALTH_CASE_REPORT__PUBLIC_HEALTH_CASE_REPORT_PHCR_AUTHOR_ASSIGNED_AUTHOR_ASSIGNED_PERSON_NAME,
-             PhcrPlugin.INSTANCE.getString("PublicHealthCaseReportPHCRAuthorAssignedAuthorAssignedPersonName"),
+             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "validatePublicHealthCaseReportPHCRAuthorAssignedAuthorAssignedPersonName", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(publicHealthCaseReport, context) }),
              new Object [] { publicHealthCaseReport }));
       }
-       
       return false;
     }
     return true;
@@ -731,6 +729,7 @@ public class PublicHealthCaseReportOperations extends ClinicalDocumentOperations
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
+   * self.legalAuthenticator->one(legalAuthenticator : cda::LegalAuthenticator | not legalAuthenticator.oclIsUndefined())
    * @param publicHealthCaseReport The receiving '<em><b>Public Health Case Report</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -738,8 +737,8 @@ public class PublicHealthCaseReportOperations extends ClinicalDocumentOperations
    * @generated
    */
 	public static  boolean validatePublicHealthCaseReportPHCRLegalAuthenticator(PublicHealthCaseReport publicHealthCaseReport, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
-    if (VALIDATE_PUBLIC_HEALTH_CASE_REPORT_PHCR_LEGAL_AUTHENTICATOR__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+    if (VALIDATE_PUBLIC_HEALTH_CASE_REPORT_PHCR_LEGAL_AUTHENTICATOR__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null)
+    {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(PhcrPackage.Literals.PUBLIC_HEALTH_CASE_REPORT);
       try
@@ -760,10 +759,9 @@ public class PublicHealthCaseReportOperations extends ClinicalDocumentOperations
             (Diagnostic.ERROR,
              PhcrValidator.DIAGNOSTIC_SOURCE,
              PhcrValidator.PUBLIC_HEALTH_CASE_REPORT__PUBLIC_HEALTH_CASE_REPORT_PHCR_LEGAL_AUTHENTICATOR,
-             PhcrPlugin.INSTANCE.getString("PublicHealthCaseReportPHCRLegalAuthenticator"),
+             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "validatePublicHealthCaseReportPHCRLegalAuthenticator", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(publicHealthCaseReport, context) }),
              new Object [] { publicHealthCaseReport }));
       }
-       
       return false;
     }
     return true;
@@ -793,6 +791,7 @@ public class PublicHealthCaseReportOperations extends ClinicalDocumentOperations
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
+   * self.legalAuthenticator.time->one(time : datatypes::TS | not time.value.oclIsUndefined() or not time.nullFlavor.oclIsUndefined())
    * @param publicHealthCaseReport The receiving '<em><b>Public Health Case Report</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -800,8 +799,8 @@ public class PublicHealthCaseReportOperations extends ClinicalDocumentOperations
    * @generated
    */
 	public static  boolean validatePublicHealthCaseReportPHCRLegalAuthenticatorTime(PublicHealthCaseReport publicHealthCaseReport, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
-    if (VALIDATE_PUBLIC_HEALTH_CASE_REPORT_PHCR_LEGAL_AUTHENTICATOR_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+    if (VALIDATE_PUBLIC_HEALTH_CASE_REPORT_PHCR_LEGAL_AUTHENTICATOR_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null)
+    {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(PhcrPackage.Literals.PUBLIC_HEALTH_CASE_REPORT);
       try
@@ -822,10 +821,9 @@ public class PublicHealthCaseReportOperations extends ClinicalDocumentOperations
             (Diagnostic.ERROR,
              PhcrValidator.DIAGNOSTIC_SOURCE,
              PhcrValidator.PUBLIC_HEALTH_CASE_REPORT__PUBLIC_HEALTH_CASE_REPORT_PHCR_LEGAL_AUTHENTICATOR_TIME,
-             PhcrPlugin.INSTANCE.getString("PublicHealthCaseReportPHCRLegalAuthenticatorTime"),
+             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "validatePublicHealthCaseReportPHCRLegalAuthenticatorTime", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(publicHealthCaseReport, context) }),
              new Object [] { publicHealthCaseReport }));
       }
-       
       return false;
     }
     return true;
@@ -855,6 +853,7 @@ public class PublicHealthCaseReportOperations extends ClinicalDocumentOperations
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
+   * self.legalAuthenticator.assignedEntity->one(assignedEntity : cda::AssignedEntity | not assignedEntity.oclIsUndefined())
    * @param publicHealthCaseReport The receiving '<em><b>Public Health Case Report</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -862,8 +861,8 @@ public class PublicHealthCaseReportOperations extends ClinicalDocumentOperations
    * @generated
    */
 	public static  boolean validatePublicHealthCaseReportPHCRLegalAuthenticatorAssignedEntity(PublicHealthCaseReport publicHealthCaseReport, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
-    if (VALIDATE_PUBLIC_HEALTH_CASE_REPORT_PHCR_LEGAL_AUTHENTICATOR_ASSIGNED_ENTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+    if (VALIDATE_PUBLIC_HEALTH_CASE_REPORT_PHCR_LEGAL_AUTHENTICATOR_ASSIGNED_ENTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null)
+    {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(PhcrPackage.Literals.PUBLIC_HEALTH_CASE_REPORT);
       try
@@ -884,10 +883,9 @@ public class PublicHealthCaseReportOperations extends ClinicalDocumentOperations
             (Diagnostic.ERROR,
              PhcrValidator.DIAGNOSTIC_SOURCE,
              PhcrValidator.PUBLIC_HEALTH_CASE_REPORT__PUBLIC_HEALTH_CASE_REPORT_PHCR_LEGAL_AUTHENTICATOR_ASSIGNED_ENTITY,
-             PhcrPlugin.INSTANCE.getString("PublicHealthCaseReportPHCRLegalAuthenticatorAssignedEntity"),
+             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "validatePublicHealthCaseReportPHCRLegalAuthenticatorAssignedEntity", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(publicHealthCaseReport, context) }),
              new Object [] { publicHealthCaseReport }));
       }
-       
       return false;
     }
     return true;
@@ -917,6 +915,7 @@ public class PublicHealthCaseReportOperations extends ClinicalDocumentOperations
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
+   * self.legalAuthenticator.assignedEntity.id->exists(id : datatypes::II | not id.root.oclIsUndefined() or not id.extension.oclIsUndefined() or not id.nullFlavor.oclIsUndefined())
    * @param publicHealthCaseReport The receiving '<em><b>Public Health Case Report</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -924,8 +923,8 @@ public class PublicHealthCaseReportOperations extends ClinicalDocumentOperations
    * @generated
    */
 	public static  boolean validatePublicHealthCaseReportPHCRLegalAuthenticatorAssignedEntityId(PublicHealthCaseReport publicHealthCaseReport, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
-    if (VALIDATE_PUBLIC_HEALTH_CASE_REPORT_PHCR_LEGAL_AUTHENTICATOR_ASSIGNED_ENTITY_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+    if (VALIDATE_PUBLIC_HEALTH_CASE_REPORT_PHCR_LEGAL_AUTHENTICATOR_ASSIGNED_ENTITY_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null)
+    {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(PhcrPackage.Literals.PUBLIC_HEALTH_CASE_REPORT);
       try
@@ -946,10 +945,9 @@ public class PublicHealthCaseReportOperations extends ClinicalDocumentOperations
             (Diagnostic.ERROR,
              PhcrValidator.DIAGNOSTIC_SOURCE,
              PhcrValidator.PUBLIC_HEALTH_CASE_REPORT__PUBLIC_HEALTH_CASE_REPORT_PHCR_LEGAL_AUTHENTICATOR_ASSIGNED_ENTITY_ID,
-             PhcrPlugin.INSTANCE.getString("PublicHealthCaseReportPHCRLegalAuthenticatorAssignedEntityId"),
+             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "validatePublicHealthCaseReportPHCRLegalAuthenticatorAssignedEntityId", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(publicHealthCaseReport, context) }),
              new Object [] { publicHealthCaseReport }));
       }
-       
       return false;
     }
     return true;
@@ -979,6 +977,7 @@ public class PublicHealthCaseReportOperations extends ClinicalDocumentOperations
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
+   * self.legalAuthenticator.assignedEntity.addr->one(addr : datatypes::AD | not addr.oclIsUndefined())
    * @param publicHealthCaseReport The receiving '<em><b>Public Health Case Report</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -986,8 +985,8 @@ public class PublicHealthCaseReportOperations extends ClinicalDocumentOperations
    * @generated
    */
 	public static  boolean validatePublicHealthCaseReportPHCRLegalAuthenticatorAssignedEntityAddr(PublicHealthCaseReport publicHealthCaseReport, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
-    if (VALIDATE_PUBLIC_HEALTH_CASE_REPORT_PHCR_LEGAL_AUTHENTICATOR_ASSIGNED_ENTITY_ADDR__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+    if (VALIDATE_PUBLIC_HEALTH_CASE_REPORT_PHCR_LEGAL_AUTHENTICATOR_ASSIGNED_ENTITY_ADDR__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null)
+    {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(PhcrPackage.Literals.PUBLIC_HEALTH_CASE_REPORT);
       try
@@ -1008,10 +1007,9 @@ public class PublicHealthCaseReportOperations extends ClinicalDocumentOperations
             (Diagnostic.ERROR,
              PhcrValidator.DIAGNOSTIC_SOURCE,
              PhcrValidator.PUBLIC_HEALTH_CASE_REPORT__PUBLIC_HEALTH_CASE_REPORT_PHCR_LEGAL_AUTHENTICATOR_ASSIGNED_ENTITY_ADDR,
-             PhcrPlugin.INSTANCE.getString("PublicHealthCaseReportPHCRLegalAuthenticatorAssignedEntityAddr"),
+             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "validatePublicHealthCaseReportPHCRLegalAuthenticatorAssignedEntityAddr", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(publicHealthCaseReport, context) }),
              new Object [] { publicHealthCaseReport }));
       }
-       
       return false;
     }
     return true;
@@ -1041,6 +1039,7 @@ public class PublicHealthCaseReportOperations extends ClinicalDocumentOperations
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
+   * self.legalAuthenticator.assignedEntity.assignedPerson->one(assignedPerson : cda::Person | not assignedPerson.oclIsUndefined()) and self.legalAuthenticator.assignedEntity.assignedPerson.name->one(name : datatypes::PN | not name.oclIsUndefined())
    * @param publicHealthCaseReport The receiving '<em><b>Public Health Case Report</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -1048,8 +1047,8 @@ public class PublicHealthCaseReportOperations extends ClinicalDocumentOperations
    * @generated
    */
 	public static  boolean validatePublicHealthCaseReportPHCRLegalAuthenticatorAssignedEntityAssignedPersonName(PublicHealthCaseReport publicHealthCaseReport, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
-    if (VALIDATE_PUBLIC_HEALTH_CASE_REPORT_PHCR_LEGAL_AUTHENTICATOR_ASSIGNED_ENTITY_ASSIGNED_PERSON_NAME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+    if (VALIDATE_PUBLIC_HEALTH_CASE_REPORT_PHCR_LEGAL_AUTHENTICATOR_ASSIGNED_ENTITY_ASSIGNED_PERSON_NAME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null)
+    {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(PhcrPackage.Literals.PUBLIC_HEALTH_CASE_REPORT);
       try
@@ -1070,10 +1069,9 @@ public class PublicHealthCaseReportOperations extends ClinicalDocumentOperations
             (Diagnostic.ERROR,
              PhcrValidator.DIAGNOSTIC_SOURCE,
              PhcrValidator.PUBLIC_HEALTH_CASE_REPORT__PUBLIC_HEALTH_CASE_REPORT_PHCR_LEGAL_AUTHENTICATOR_ASSIGNED_ENTITY_ASSIGNED_PERSON_NAME,
-             PhcrPlugin.INSTANCE.getString("PublicHealthCaseReportPHCRLegalAuthenticatorAssignedEntityAssignedPersonName"),
+             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "validatePublicHealthCaseReportPHCRLegalAuthenticatorAssignedEntityAssignedPersonName", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(publicHealthCaseReport, context) }),
              new Object [] { publicHealthCaseReport }));
       }
-       
       return false;
     }
     return true;
@@ -1103,6 +1101,7 @@ public class PublicHealthCaseReportOperations extends ClinicalDocumentOperations
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
+   * self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.15')
    * @param publicHealthCaseReport The receiving '<em><b>Public Health Case Report</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -1110,8 +1109,8 @@ public class PublicHealthCaseReportOperations extends ClinicalDocumentOperations
    * @generated
    */
 	public static  boolean validatePublicHealthCaseReportTemplateId(PublicHealthCaseReport publicHealthCaseReport, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
-    if (VALIDATE_PUBLIC_HEALTH_CASE_REPORT_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+    if (VALIDATE_PUBLIC_HEALTH_CASE_REPORT_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null)
+    {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(PhcrPackage.Literals.PUBLIC_HEALTH_CASE_REPORT);
       try
@@ -1132,10 +1131,9 @@ public class PublicHealthCaseReportOperations extends ClinicalDocumentOperations
             (Diagnostic.ERROR,
              PhcrValidator.DIAGNOSTIC_SOURCE,
              PhcrValidator.PUBLIC_HEALTH_CASE_REPORT__PUBLIC_HEALTH_CASE_REPORT_TEMPLATE_ID,
-             PhcrPlugin.INSTANCE.getString("PublicHealthCaseReportTemplateId"),
+             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "validatePublicHealthCaseReportTemplateId", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(publicHealthCaseReport, context) }),
              new Object [] { publicHealthCaseReport }));
       }
-       
       return false;
     }
     return true;
@@ -1166,6 +1164,7 @@ public class PublicHealthCaseReportOperations extends ClinicalDocumentOperations
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
+   * (self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined())
    * @param publicHealthCaseReport The receiving '<em><b>Public Health Case Report</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -1174,8 +1173,8 @@ public class PublicHealthCaseReportOperations extends ClinicalDocumentOperations
    */
 	
 	public static  boolean validatePublicHealthCaseReportCodeP(PublicHealthCaseReport publicHealthCaseReport, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
-    if (VALIDATE_PUBLIC_HEALTH_CASE_REPORT_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+    if (VALIDATE_PUBLIC_HEALTH_CASE_REPORT_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null)
+    {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(PhcrPackage.Literals.PUBLIC_HEALTH_CASE_REPORT);
       try
@@ -1196,22 +1195,9 @@ public class PublicHealthCaseReportOperations extends ClinicalDocumentOperations
             (Diagnostic.ERROR,
              PhcrValidator.DIAGNOSTIC_SOURCE,
              PhcrValidator.PUBLIC_HEALTH_CASE_REPORT__PUBLIC_HEALTH_CASE_REPORT_CODE_P,
-             PhcrPlugin.INSTANCE.getString("PublicHealthCaseReportCodeP"),
+             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "validatePublicHealthCaseReportCodeP", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(publicHealthCaseReport, context) }),
              new Object [] { publicHealthCaseReport }));
       }
-      
-      if (context != null) {
-        // generate a pass token for my dependent constraints to short-circuit or filter results
-        @SuppressWarnings("unchecked")
-        Collection<Object> passToken = (Collection<Object>) context.get("org.openhealthtools.mdht.uml.cda.phcr.PublicHealthCaseReportCodeP");
-        if (passToken == null) {
-          // anticipate a reasonably healthy model
-          passToken = new java.util.ArrayList<Object>(3);
-          context.put("org.openhealthtools.mdht.uml.cda.phcr.PublicHealthCaseReportCodeP", passToken);
-        }
-        passToken.add(publicHealthCaseReport);
-      }
-       
       return false;
     }
     return true;
@@ -1243,6 +1229,9 @@ public class PublicHealthCaseReportOperations extends ClinicalDocumentOperations
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
+   * (self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and 
+   * let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in 
+   * value.code = '55751-2' and value.codeSystem = '2.16.840.1.113883.6.1')
    * @param publicHealthCaseReport The receiving '<em><b>Public Health Case Report</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -1250,14 +1239,8 @@ public class PublicHealthCaseReportOperations extends ClinicalDocumentOperations
    * @generated
    */
 	public static  boolean validatePublicHealthCaseReportCode(PublicHealthCaseReport publicHealthCaseReport, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
-    Object passToken = (context == null) ? null : context.get("org.openhealthtools.mdht.uml.cda.phcr.PublicHealthCaseReportCodeP");
-    if ((passToken instanceof Collection<?>) && ((Collection<?>) passToken).contains(publicHealthCaseReport)) {
-      // I have a free pass to short-circuit
-      return true;
-    }
-  	  
-    if (VALIDATE_PUBLIC_HEALTH_CASE_REPORT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+    if (VALIDATE_PUBLIC_HEALTH_CASE_REPORT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null)
+    {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(PhcrPackage.Literals.PUBLIC_HEALTH_CASE_REPORT);
       try
@@ -1278,10 +1261,9 @@ public class PublicHealthCaseReportOperations extends ClinicalDocumentOperations
             (Diagnostic.ERROR,
              PhcrValidator.DIAGNOSTIC_SOURCE,
              PhcrValidator.PUBLIC_HEALTH_CASE_REPORT__PUBLIC_HEALTH_CASE_REPORT_CODE,
-             PhcrPlugin.INSTANCE.getString("PublicHealthCaseReportCode"),
+             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "validatePublicHealthCaseReportCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(publicHealthCaseReport, context) }),
              new Object [] { publicHealthCaseReport }));
       }
-       
       return false;
     }
     return true;
@@ -1311,6 +1293,7 @@ public class PublicHealthCaseReportOperations extends ClinicalDocumentOperations
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
+   * self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(phcr::PhcrSocialHistorySection))
    * @param publicHealthCaseReport The receiving '<em><b>Public Health Case Report</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -1318,8 +1301,8 @@ public class PublicHealthCaseReportOperations extends ClinicalDocumentOperations
    * @generated
    */
 	public static  boolean validatePublicHealthCaseReportPhcrSocialHistorySection(PublicHealthCaseReport publicHealthCaseReport, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
-    if (VALIDATE_PUBLIC_HEALTH_CASE_REPORT_PHCR_SOCIAL_HISTORY_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+    if (VALIDATE_PUBLIC_HEALTH_CASE_REPORT_PHCR_SOCIAL_HISTORY_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null)
+    {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(PhcrPackage.Literals.PUBLIC_HEALTH_CASE_REPORT);
       try
@@ -1337,13 +1320,12 @@ public class PublicHealthCaseReportOperations extends ClinicalDocumentOperations
       {
         diagnostics.add
           (new BasicDiagnostic
-            (Diagnostic.WARNING,
+            (Diagnostic.ERROR,
              PhcrValidator.DIAGNOSTIC_SOURCE,
              PhcrValidator.PUBLIC_HEALTH_CASE_REPORT__PUBLIC_HEALTH_CASE_REPORT_PHCR_SOCIAL_HISTORY_SECTION,
-             PhcrPlugin.INSTANCE.getString("PublicHealthCaseReportPhcrSocialHistorySection"),
+             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "validatePublicHealthCaseReportPhcrSocialHistorySection", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(publicHealthCaseReport, context) }),
              new Object [] { publicHealthCaseReport }));
       }
-       
       return false;
     }
     return true;
@@ -1373,6 +1355,7 @@ public class PublicHealthCaseReportOperations extends ClinicalDocumentOperations
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
+   * self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(phcr::PhcrClinicalInformationSection))
    * @param publicHealthCaseReport The receiving '<em><b>Public Health Case Report</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -1380,8 +1363,8 @@ public class PublicHealthCaseReportOperations extends ClinicalDocumentOperations
    * @generated
    */
 	public static  boolean validatePublicHealthCaseReportPhcrClinicalInformationSection(PublicHealthCaseReport publicHealthCaseReport, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
-    if (VALIDATE_PUBLIC_HEALTH_CASE_REPORT_PHCR_CLINICAL_INFORMATION_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+    if (VALIDATE_PUBLIC_HEALTH_CASE_REPORT_PHCR_CLINICAL_INFORMATION_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null)
+    {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(PhcrPackage.Literals.PUBLIC_HEALTH_CASE_REPORT);
       try
@@ -1402,10 +1385,9 @@ public class PublicHealthCaseReportOperations extends ClinicalDocumentOperations
             (Diagnostic.ERROR,
              PhcrValidator.DIAGNOSTIC_SOURCE,
              PhcrValidator.PUBLIC_HEALTH_CASE_REPORT__PUBLIC_HEALTH_CASE_REPORT_PHCR_CLINICAL_INFORMATION_SECTION,
-             PhcrPlugin.INSTANCE.getString("PublicHealthCaseReportPhcrClinicalInformationSection"),
+             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "validatePublicHealthCaseReportPhcrClinicalInformationSection", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(publicHealthCaseReport, context) }),
              new Object [] { publicHealthCaseReport }));
       }
-       
       return false;
     }
     return true;
@@ -1435,6 +1417,7 @@ public class PublicHealthCaseReportOperations extends ClinicalDocumentOperations
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
+   * self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(phcr::PhcrTreatmentInformationSection))
    * @param publicHealthCaseReport The receiving '<em><b>Public Health Case Report</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -1442,8 +1425,8 @@ public class PublicHealthCaseReportOperations extends ClinicalDocumentOperations
    * @generated
    */
 	public static  boolean validatePublicHealthCaseReportPhcrTreatmentInformationSection(PublicHealthCaseReport publicHealthCaseReport, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
-    if (VALIDATE_PUBLIC_HEALTH_CASE_REPORT_PHCR_TREATMENT_INFORMATION_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+    if (VALIDATE_PUBLIC_HEALTH_CASE_REPORT_PHCR_TREATMENT_INFORMATION_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null)
+    {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(PhcrPackage.Literals.PUBLIC_HEALTH_CASE_REPORT);
       try
@@ -1461,13 +1444,12 @@ public class PublicHealthCaseReportOperations extends ClinicalDocumentOperations
       {
         diagnostics.add
           (new BasicDiagnostic
-            (Diagnostic.WARNING,
+            (Diagnostic.ERROR,
              PhcrValidator.DIAGNOSTIC_SOURCE,
              PhcrValidator.PUBLIC_HEALTH_CASE_REPORT__PUBLIC_HEALTH_CASE_REPORT_PHCR_TREATMENT_INFORMATION_SECTION,
-             PhcrPlugin.INSTANCE.getString("PublicHealthCaseReportPhcrTreatmentInformationSection"),
+             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "validatePublicHealthCaseReportPhcrTreatmentInformationSection", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(publicHealthCaseReport, context) }),
              new Object [] { publicHealthCaseReport }));
       }
-       
       return false;
     }
     return true;
@@ -1497,6 +1479,7 @@ public class PublicHealthCaseReportOperations extends ClinicalDocumentOperations
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
+   * self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(phcr::PhcrEncountersSection))
    * @param publicHealthCaseReport The receiving '<em><b>Public Health Case Report</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -1504,8 +1487,8 @@ public class PublicHealthCaseReportOperations extends ClinicalDocumentOperations
    * @generated
    */
 	public static  boolean validatePublicHealthCaseReportPhcrEncountersSection(PublicHealthCaseReport publicHealthCaseReport, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
-    if (VALIDATE_PUBLIC_HEALTH_CASE_REPORT_PHCR_ENCOUNTERS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+    if (VALIDATE_PUBLIC_HEALTH_CASE_REPORT_PHCR_ENCOUNTERS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null)
+    {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(PhcrPackage.Literals.PUBLIC_HEALTH_CASE_REPORT);
       try
@@ -1523,13 +1506,12 @@ public class PublicHealthCaseReportOperations extends ClinicalDocumentOperations
       {
         diagnostics.add
           (new BasicDiagnostic
-            (Diagnostic.WARNING,
+            (Diagnostic.ERROR,
              PhcrValidator.DIAGNOSTIC_SOURCE,
              PhcrValidator.PUBLIC_HEALTH_CASE_REPORT__PUBLIC_HEALTH_CASE_REPORT_PHCR_ENCOUNTERS_SECTION,
-             PhcrPlugin.INSTANCE.getString("PublicHealthCaseReportPhcrEncountersSection"),
+             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "validatePublicHealthCaseReportPhcrEncountersSection", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(publicHealthCaseReport, context) }),
              new Object [] { publicHealthCaseReport }));
       }
-       
       return false;
     }
     return true;
@@ -1559,6 +1541,7 @@ public class PublicHealthCaseReportOperations extends ClinicalDocumentOperations
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
+   * self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(phcr::PhcrRelevantDxTestsSection))
    * @param publicHealthCaseReport The receiving '<em><b>Public Health Case Report</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -1566,8 +1549,8 @@ public class PublicHealthCaseReportOperations extends ClinicalDocumentOperations
    * @generated
    */
 	public static  boolean validatePublicHealthCaseReportPhcrRelevantDxTestsSection(PublicHealthCaseReport publicHealthCaseReport, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
-    if (VALIDATE_PUBLIC_HEALTH_CASE_REPORT_PHCR_RELEVANT_DX_TESTS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+    if (VALIDATE_PUBLIC_HEALTH_CASE_REPORT_PHCR_RELEVANT_DX_TESTS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null)
+    {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(PhcrPackage.Literals.PUBLIC_HEALTH_CASE_REPORT);
       try
@@ -1585,13 +1568,12 @@ public class PublicHealthCaseReportOperations extends ClinicalDocumentOperations
       {
         diagnostics.add
           (new BasicDiagnostic
-            (Diagnostic.WARNING,
+            (Diagnostic.ERROR,
              PhcrValidator.DIAGNOSTIC_SOURCE,
              PhcrValidator.PUBLIC_HEALTH_CASE_REPORT__PUBLIC_HEALTH_CASE_REPORT_PHCR_RELEVANT_DX_TESTS_SECTION,
-             PhcrPlugin.INSTANCE.getString("PublicHealthCaseReportPhcrRelevantDxTestsSection"),
+             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "validatePublicHealthCaseReportPhcrRelevantDxTestsSection", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(publicHealthCaseReport, context) }),
              new Object [] { publicHealthCaseReport }));
       }
-       
       return false;
     }
     return true;
@@ -1621,6 +1603,7 @@ public class PublicHealthCaseReportOperations extends ClinicalDocumentOperations
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
+   * self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(ccd::ImmunizationsSection))
    * @param publicHealthCaseReport The receiving '<em><b>Public Health Case Report</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -1628,8 +1611,8 @@ public class PublicHealthCaseReportOperations extends ClinicalDocumentOperations
    * @generated
    */
 	public static  boolean validatePublicHealthCaseReportImmunizationsSection(PublicHealthCaseReport publicHealthCaseReport, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
-    if (VALIDATE_PUBLIC_HEALTH_CASE_REPORT_IMMUNIZATIONS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+    if (VALIDATE_PUBLIC_HEALTH_CASE_REPORT_IMMUNIZATIONS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null)
+    {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(PhcrPackage.Literals.PUBLIC_HEALTH_CASE_REPORT);
       try
@@ -1647,13 +1630,12 @@ public class PublicHealthCaseReportOperations extends ClinicalDocumentOperations
       {
         diagnostics.add
           (new BasicDiagnostic
-            (Diagnostic.INFO,
+            (Diagnostic.ERROR,
              PhcrValidator.DIAGNOSTIC_SOURCE,
              PhcrValidator.PUBLIC_HEALTH_CASE_REPORT__PUBLIC_HEALTH_CASE_REPORT_IMMUNIZATIONS_SECTION,
-             PhcrPlugin.INSTANCE.getString("PublicHealthCaseReportImmunizationsSection"),
+             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "validatePublicHealthCaseReportImmunizationsSection", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(publicHealthCaseReport, context) }),
              new Object [] { publicHealthCaseReport }));
       }
-       
       return false;
     }
     return true;
@@ -1682,6 +1664,10 @@ public class PublicHealthCaseReportOperations extends ClinicalDocumentOperations
 	/**
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
+   * <!-- begin-model-doc -->
+   * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(phcr::PhcrSocialHistorySection))->asSequence()->any(true).oclAsType(phcr::PhcrSocialHistorySection)
+   * @param publicHealthCaseReport The receiving '<em><b>Public Health Case Report</b></em>' model object.
+   * <!-- end-model-doc -->
    * @generated
    */
 	public static  PhcrSocialHistorySection getPhcrSocialHistorySection(PublicHealthCaseReport publicHealthCaseReport) {
@@ -1725,6 +1711,10 @@ public class PublicHealthCaseReportOperations extends ClinicalDocumentOperations
 	/**
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
+   * <!-- begin-model-doc -->
+   * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(phcr::PhcrClinicalInformationSection))->asSequence()->any(true).oclAsType(phcr::PhcrClinicalInformationSection)
+   * @param publicHealthCaseReport The receiving '<em><b>Public Health Case Report</b></em>' model object.
+   * <!-- end-model-doc -->
    * @generated
    */
 	public static  PhcrClinicalInformationSection getPhcrClinicalInformationSection(PublicHealthCaseReport publicHealthCaseReport) {
@@ -1768,6 +1758,10 @@ public class PublicHealthCaseReportOperations extends ClinicalDocumentOperations
 	/**
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
+   * <!-- begin-model-doc -->
+   * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(phcr::PhcrTreatmentInformationSection))->asSequence()->any(true).oclAsType(phcr::PhcrTreatmentInformationSection)
+   * @param publicHealthCaseReport The receiving '<em><b>Public Health Case Report</b></em>' model object.
+   * <!-- end-model-doc -->
    * @generated
    */
 	public static  PhcrTreatmentInformationSection getPhcrTreatmentInformationSection(PublicHealthCaseReport publicHealthCaseReport) {
@@ -1811,6 +1805,10 @@ public class PublicHealthCaseReportOperations extends ClinicalDocumentOperations
 	/**
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
+   * <!-- begin-model-doc -->
+   * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(phcr::PhcrEncountersSection))->asSequence()->any(true).oclAsType(phcr::PhcrEncountersSection)
+   * @param publicHealthCaseReport The receiving '<em><b>Public Health Case Report</b></em>' model object.
+   * <!-- end-model-doc -->
    * @generated
    */
 	public static  PhcrEncountersSection getPhcrEncountersSection(PublicHealthCaseReport publicHealthCaseReport) {
@@ -1854,6 +1852,10 @@ public class PublicHealthCaseReportOperations extends ClinicalDocumentOperations
 	/**
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
+   * <!-- begin-model-doc -->
+   * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(phcr::PhcrRelevantDxTestsSection))->asSequence()->any(true).oclAsType(phcr::PhcrRelevantDxTestsSection)
+   * @param publicHealthCaseReport The receiving '<em><b>Public Health Case Report</b></em>' model object.
+   * <!-- end-model-doc -->
    * @generated
    */
 	public static  PhcrRelevantDxTestsSection getPhcrRelevantDxTestsSection(PublicHealthCaseReport publicHealthCaseReport) {
@@ -1897,6 +1899,10 @@ public class PublicHealthCaseReportOperations extends ClinicalDocumentOperations
 	/**
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
+   * <!-- begin-model-doc -->
+   * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(ccd::ImmunizationsSection))->asSequence()->any(true).oclAsType(ccd::ImmunizationsSection)
+   * @param publicHealthCaseReport The receiving '<em><b>Public Health Case Report</b></em>' model object.
+   * <!-- end-model-doc -->
    * @generated
    */
 	public static  ImmunizationsSection getImmunizationsSection(PublicHealthCaseReport publicHealthCaseReport) {

@@ -36,7 +36,6 @@ import org.openhealthtools.mdht.uml.cda.phcr.salmonellosis.util.SalmonellosisVal
  *   <li>{@link org.openhealthtools.mdht.uml.cda.phcr.salmonellosis.SalmonellosisPossibleExposureLocationAndTypeAct#validateSalmonellosisPossibleExposureLocationAndTypeActTemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Salmonellosis Possible Exposure Location And Type Act Template Id</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.phcr.salmonellosis.SalmonellosisPossibleExposureLocationAndTypeAct#validateSalmonellosisPossibleExposureLocationAndTypeActCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Salmonellosis Possible Exposure Location And Type Act Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.phcr.salmonellosis.SalmonellosisPossibleExposureLocationAndTypeAct#validateSalmonellosisPossibleExposureLocationAndTypeActStatusCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Salmonellosis Possible Exposure Location And Type Act Status Code</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.phcr.salmonellosis.SalmonellosisPossibleExposureLocationAndTypeAct#validateSalmonellosisPossibleExposureLocationAndTypeActStatusCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Salmonellosis Possible Exposure Location And Type Act Status Code P</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.phcr.salmonellosis.SalmonellosisPossibleExposureLocationAndTypeAct#validateSalmonellosisPossibleExposureLocationAndTypeActClassCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Salmonellosis Possible Exposure Location And Type Act Class Code</em>}</li>
  * </ul>
  * </p>
@@ -80,6 +79,7 @@ public class SalmonellosisPossibleExposureLocationAndTypeActOperations extends C
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
+   * self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.15.3.115')
    * @param salmonellosisPossibleExposureLocationAndTypeAct The receiving '<em><b>Possible Exposure Location And Type Act</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -89,8 +89,8 @@ public class SalmonellosisPossibleExposureLocationAndTypeActOperations extends C
   
   public static  boolean validateSalmonellosisPossibleExposureLocationAndTypeActTemplateId(SalmonellosisPossibleExposureLocationAndTypeAct salmonellosisPossibleExposureLocationAndTypeAct, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
-  	  
-    if (VALIDATE_SALMONELLOSIS_POSSIBLE_EXPOSURE_LOCATION_AND_TYPE_ACT_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+    if (VALIDATE_SALMONELLOSIS_POSSIBLE_EXPOSURE_LOCATION_AND_TYPE_ACT_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null)
+    {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(SalmonellosisPackage.Literals.SALMONELLOSIS_POSSIBLE_EXPOSURE_LOCATION_AND_TYPE_ACT);
       try
@@ -111,10 +111,9 @@ public class SalmonellosisPossibleExposureLocationAndTypeActOperations extends C
             (Diagnostic.ERROR,
              SalmonellosisValidator.DIAGNOSTIC_SOURCE,
              SalmonellosisValidator.SALMONELLOSIS_POSSIBLE_EXPOSURE_LOCATION_AND_TYPE_ACT__SALMONELLOSIS_POSSIBLE_EXPOSURE_LOCATION_AND_TYPE_ACT_TEMPLATE_ID,
-             SalmonellosisPlugin.INSTANCE.getString("SalmonellosisPossibleExposureLocationAndTypeActTemplateId"),
+             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "validateSalmonellosisPossibleExposureLocationAndTypeActTemplateId", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(salmonellosisPossibleExposureLocationAndTypeAct, context) }),
              new Object [] { salmonellosisPossibleExposureLocationAndTypeAct }));
       }
-       
       return false;
     }
     return true;
@@ -148,6 +147,9 @@ public class SalmonellosisPossibleExposureLocationAndTypeActOperations extends C
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
+   * (self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and 
+   * let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in 
+   * value.code = '413350009' and value.codeSystem = '2.16.840.1.113883.6.96')
    * @param salmonellosisPossibleExposureLocationAndTypeAct The receiving '<em><b>Possible Exposure Location And Type Act</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -157,8 +159,8 @@ public class SalmonellosisPossibleExposureLocationAndTypeActOperations extends C
   
   public static  boolean validateSalmonellosisPossibleExposureLocationAndTypeActCode(SalmonellosisPossibleExposureLocationAndTypeAct salmonellosisPossibleExposureLocationAndTypeAct, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
-  	  
-    if (VALIDATE_SALMONELLOSIS_POSSIBLE_EXPOSURE_LOCATION_AND_TYPE_ACT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+    if (VALIDATE_SALMONELLOSIS_POSSIBLE_EXPOSURE_LOCATION_AND_TYPE_ACT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null)
+    {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(SalmonellosisPackage.Literals.SALMONELLOSIS_POSSIBLE_EXPOSURE_LOCATION_AND_TYPE_ACT);
       try
@@ -179,10 +181,9 @@ public class SalmonellosisPossibleExposureLocationAndTypeActOperations extends C
             (Diagnostic.ERROR,
              SalmonellosisValidator.DIAGNOSTIC_SOURCE,
              SalmonellosisValidator.SALMONELLOSIS_POSSIBLE_EXPOSURE_LOCATION_AND_TYPE_ACT__SALMONELLOSIS_POSSIBLE_EXPOSURE_LOCATION_AND_TYPE_ACT_CODE,
-             SalmonellosisPlugin.INSTANCE.getString("SalmonellosisPossibleExposureLocationAndTypeActCode"),
+             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "validateSalmonellosisPossibleExposureLocationAndTypeActCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(salmonellosisPossibleExposureLocationAndTypeAct, context) }),
              new Object [] { salmonellosisPossibleExposureLocationAndTypeAct }));
       }
-       
       return false;
     }
     return true;
@@ -216,6 +217,9 @@ public class SalmonellosisPossibleExposureLocationAndTypeActOperations extends C
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
+   * (self.statusCode.oclIsUndefined() or self.statusCode.isNullFlavorUndefined()) implies (not self.statusCode.oclIsUndefined() and self.statusCode.oclIsKindOf(datatypes::CS) and 
+   * let value : datatypes::CS = self.statusCode.oclAsType(datatypes::CS) in 
+   * value.code = 'completed')
    * @param salmonellosisPossibleExposureLocationAndTypeAct The receiving '<em><b>Possible Exposure Location And Type Act</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -225,8 +229,8 @@ public class SalmonellosisPossibleExposureLocationAndTypeActOperations extends C
   
   public static  boolean validateSalmonellosisPossibleExposureLocationAndTypeActStatusCode(SalmonellosisPossibleExposureLocationAndTypeAct salmonellosisPossibleExposureLocationAndTypeAct, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
-  	  
-    if (VALIDATE_SALMONELLOSIS_POSSIBLE_EXPOSURE_LOCATION_AND_TYPE_ACT_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+    if (VALIDATE_SALMONELLOSIS_POSSIBLE_EXPOSURE_LOCATION_AND_TYPE_ACT_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null)
+    {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(SalmonellosisPackage.Literals.SALMONELLOSIS_POSSIBLE_EXPOSURE_LOCATION_AND_TYPE_ACT);
       try
@@ -247,10 +251,9 @@ public class SalmonellosisPossibleExposureLocationAndTypeActOperations extends C
             (Diagnostic.ERROR,
              SalmonellosisValidator.DIAGNOSTIC_SOURCE,
              SalmonellosisValidator.SALMONELLOSIS_POSSIBLE_EXPOSURE_LOCATION_AND_TYPE_ACT__SALMONELLOSIS_POSSIBLE_EXPOSURE_LOCATION_AND_TYPE_ACT_STATUS_CODE,
-             SalmonellosisPlugin.INSTANCE.getString("SalmonellosisPossibleExposureLocationAndTypeActStatusCode"),
+             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "validateSalmonellosisPossibleExposureLocationAndTypeActStatusCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(salmonellosisPossibleExposureLocationAndTypeAct, context) }),
              new Object [] { salmonellosisPossibleExposureLocationAndTypeAct }));
       }
-       
       return false;
     }
     return true;
@@ -282,6 +285,7 @@ public class SalmonellosisPossibleExposureLocationAndTypeActOperations extends C
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
+   * (self.statusCode.oclIsUndefined() or self.statusCode.isNullFlavorUndefined()) implies (not self.statusCode.oclIsUndefined())
    * @param salmonellosisPossibleExposureLocationAndTypeAct The receiving '<em><b>Possible Exposure Location And Type Act</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -291,8 +295,8 @@ public class SalmonellosisPossibleExposureLocationAndTypeActOperations extends C
   
   public static  boolean validateSalmonellosisPossibleExposureLocationAndTypeActStatusCodeP(SalmonellosisPossibleExposureLocationAndTypeAct salmonellosisPossibleExposureLocationAndTypeAct, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
-  	  
-    if (VALIDATE_SALMONELLOSIS_POSSIBLE_EXPOSURE_LOCATION_AND_TYPE_ACT_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+    if (VALIDATE_SALMONELLOSIS_POSSIBLE_EXPOSURE_LOCATION_AND_TYPE_ACT_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null)
+    {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(SalmonellosisPackage.Literals.SALMONELLOSIS_POSSIBLE_EXPOSURE_LOCATION_AND_TYPE_ACT);
       try
@@ -313,10 +317,9 @@ public class SalmonellosisPossibleExposureLocationAndTypeActOperations extends C
             (Diagnostic.ERROR,
              SalmonellosisValidator.DIAGNOSTIC_SOURCE,
              SalmonellosisValidator.SALMONELLOSIS_POSSIBLE_EXPOSURE_LOCATION_AND_TYPE_ACT__SALMONELLOSIS_POSSIBLE_EXPOSURE_LOCATION_AND_TYPE_ACT_STATUS_CODE_P,
-             SalmonellosisPlugin.INSTANCE.getString("SalmonellosisPossibleExposureLocationAndTypeActStatusCodeP"),
+             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "validateSalmonellosisPossibleExposureLocationAndTypeActStatusCodeP", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(salmonellosisPossibleExposureLocationAndTypeAct, context) }),
              new Object [] { salmonellosisPossibleExposureLocationAndTypeAct }));
       }
-       
       return false;
     }
     return true;
@@ -348,6 +351,7 @@ public class SalmonellosisPossibleExposureLocationAndTypeActOperations extends C
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
+   * isDefined('classCode')
    * @param salmonellosisPossibleExposureLocationAndTypeAct The receiving '<em><b>Possible Exposure Location And Type Act</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -357,8 +361,8 @@ public class SalmonellosisPossibleExposureLocationAndTypeActOperations extends C
   
   public static  boolean validateSalmonellosisPossibleExposureLocationAndTypeActClassCode(SalmonellosisPossibleExposureLocationAndTypeAct salmonellosisPossibleExposureLocationAndTypeAct, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
-  	  
-    if (VALIDATE_SALMONELLOSIS_POSSIBLE_EXPOSURE_LOCATION_AND_TYPE_ACT_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+    if (VALIDATE_SALMONELLOSIS_POSSIBLE_EXPOSURE_LOCATION_AND_TYPE_ACT_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null)
+    {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(SalmonellosisPackage.Literals.SALMONELLOSIS_POSSIBLE_EXPOSURE_LOCATION_AND_TYPE_ACT);
       try
@@ -379,10 +383,9 @@ public class SalmonellosisPossibleExposureLocationAndTypeActOperations extends C
             (Diagnostic.ERROR,
              SalmonellosisValidator.DIAGNOSTIC_SOURCE,
              SalmonellosisValidator.SALMONELLOSIS_POSSIBLE_EXPOSURE_LOCATION_AND_TYPE_ACT__SALMONELLOSIS_POSSIBLE_EXPOSURE_LOCATION_AND_TYPE_ACT_CLASS_CODE,
-             SalmonellosisPlugin.INSTANCE.getString("SalmonellosisPossibleExposureLocationAndTypeActClassCode"),
+             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "validateSalmonellosisPossibleExposureLocationAndTypeActClassCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(salmonellosisPossibleExposureLocationAndTypeAct, context) }),
              new Object [] { salmonellosisPossibleExposureLocationAndTypeAct }));
       }
-       
       return false;
     }
     return true;

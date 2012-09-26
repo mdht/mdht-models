@@ -70,6 +70,7 @@ public class AnthraxPhcrRelevantDxTestsSectionOperations extends PhcrRelevantDxT
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
+   * self.entry->exists(entry : cda::Entry | not entry.observation.oclIsUndefined() and entry.observation.oclIsKindOf(anthrax::AnthraxResultObservation) and entry.typeCode = vocab::x_ActRelationshipEntry::DRIV)
    * @param anthraxPhcrRelevantDxTestsSection The receiving '<em><b>Phcr Relevant Dx Tests Section</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -78,8 +79,8 @@ public class AnthraxPhcrRelevantDxTestsSectionOperations extends PhcrRelevantDxT
    */
 	
 	public static  boolean validateAnthraxPhcrRelevantDxTestsSectionAnthraxResultObservation(AnthraxPhcrRelevantDxTestsSection anthraxPhcrRelevantDxTestsSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
-    if (VALIDATE_ANTHRAX_PHCR_RELEVANT_DX_TESTS_SECTION_ANTHRAX_RESULT_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+    if (VALIDATE_ANTHRAX_PHCR_RELEVANT_DX_TESTS_SECTION_ANTHRAX_RESULT_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null)
+    {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(AnthraxPackage.Literals.ANTHRAX_PHCR_RELEVANT_DX_TESTS_SECTION);
       try
@@ -97,13 +98,12 @@ public class AnthraxPhcrRelevantDxTestsSectionOperations extends PhcrRelevantDxT
       {
         diagnostics.add
           (new BasicDiagnostic
-            (Diagnostic.WARNING,
+            (Diagnostic.ERROR,
              AnthraxValidator.DIAGNOSTIC_SOURCE,
              AnthraxValidator.ANTHRAX_PHCR_RELEVANT_DX_TESTS_SECTION__ANTHRAX_PHCR_RELEVANT_DX_TESTS_SECTION_ANTHRAX_RESULT_OBSERVATION,
-             AnthraxPlugin.INSTANCE.getString("AnthraxPhcrRelevantDxTestsSectionAnthraxResultObservation"),
+             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "validateAnthraxPhcrRelevantDxTestsSectionAnthraxResultObservation", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(anthraxPhcrRelevantDxTestsSection, context) }),
              new Object [] { anthraxPhcrRelevantDxTestsSection }));
       }
-       
       return false;
     }
     return true;
@@ -156,6 +156,7 @@ public class AnthraxPhcrRelevantDxTestsSectionOperations extends PhcrRelevantDxT
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
+   * self.entry->exists(entry : cda::Entry | not entry.organizer.oclIsUndefined() and entry.organizer.oclIsKindOf(anthrax::AnthraxResultOrganizer) and entry.typeCode = vocab::x_ActRelationshipEntry::DRIV)
    * @param anthraxPhcrRelevantDxTestsSection The receiving '<em><b>Phcr Relevant Dx Tests Section</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -164,8 +165,8 @@ public class AnthraxPhcrRelevantDxTestsSectionOperations extends PhcrRelevantDxT
    */
 	
 	public static  boolean validateAnthraxPhcrRelevantDxTestsSectionAnthraxResultOrganizer(AnthraxPhcrRelevantDxTestsSection anthraxPhcrRelevantDxTestsSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
-    if (VALIDATE_ANTHRAX_PHCR_RELEVANT_DX_TESTS_SECTION_ANTHRAX_RESULT_ORGANIZER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+    if (VALIDATE_ANTHRAX_PHCR_RELEVANT_DX_TESTS_SECTION_ANTHRAX_RESULT_ORGANIZER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null)
+    {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(AnthraxPackage.Literals.ANTHRAX_PHCR_RELEVANT_DX_TESTS_SECTION);
       try
@@ -183,13 +184,12 @@ public class AnthraxPhcrRelevantDxTestsSectionOperations extends PhcrRelevantDxT
       {
         diagnostics.add
           (new BasicDiagnostic
-            (Diagnostic.INFO,
+            (Diagnostic.ERROR,
              AnthraxValidator.DIAGNOSTIC_SOURCE,
              AnthraxValidator.ANTHRAX_PHCR_RELEVANT_DX_TESTS_SECTION__ANTHRAX_PHCR_RELEVANT_DX_TESTS_SECTION_ANTHRAX_RESULT_ORGANIZER,
-             AnthraxPlugin.INSTANCE.getString("AnthraxPhcrRelevantDxTestsSectionAnthraxResultOrganizer"),
+             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "validateAnthraxPhcrRelevantDxTestsSectionAnthraxResultOrganizer", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(anthraxPhcrRelevantDxTestsSection, context) }),
              new Object [] { anthraxPhcrRelevantDxTestsSection }));
       }
-       
       return false;
     }
     return true;
@@ -198,6 +198,10 @@ public class AnthraxPhcrRelevantDxTestsSectionOperations extends PhcrRelevantDxT
 	/**
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
+   * <!-- begin-model-doc -->
+   * self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(anthrax::AnthraxResultObservation)).oclAsType(anthrax::AnthraxResultObservation)
+   * @param anthraxPhcrRelevantDxTestsSection The receiving '<em><b>Phcr Relevant Dx Tests Section</b></em>' model object.
+   * <!-- end-model-doc -->
    * @generated
    */
 	
@@ -264,6 +268,10 @@ public class AnthraxPhcrRelevantDxTestsSectionOperations extends PhcrRelevantDxT
 	/**
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
+   * <!-- begin-model-doc -->
+   * self.getOrganizers()->select(organizer : cda::Organizer | not organizer.oclIsUndefined() and organizer.oclIsKindOf(anthrax::AnthraxResultOrganizer)).oclAsType(anthrax::AnthraxResultOrganizer)
+   * @param anthraxPhcrRelevantDxTestsSection The receiving '<em><b>Phcr Relevant Dx Tests Section</b></em>' model object.
+   * <!-- end-model-doc -->
    * @generated
    */
 	
@@ -313,6 +321,7 @@ public class AnthraxPhcrRelevantDxTestsSectionOperations extends PhcrRelevantDxT
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
+   * self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.15.2.16')
    * @param anthraxPhcrRelevantDxTestsSection The receiving '<em><b>Phcr Relevant Dx Tests Section</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -321,8 +330,8 @@ public class AnthraxPhcrRelevantDxTestsSectionOperations extends PhcrRelevantDxT
    */
 	
 	public static  boolean validateResultsSectionTemplateId(AnthraxPhcrRelevantDxTestsSection anthraxPhcrRelevantDxTestsSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
-    if (VALIDATE_RESULTS_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+    if (VALIDATE_RESULTS_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null)
+    {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(AnthraxPackage.Literals.ANTHRAX_PHCR_RELEVANT_DX_TESTS_SECTION);
       try
@@ -343,10 +352,9 @@ public class AnthraxPhcrRelevantDxTestsSectionOperations extends PhcrRelevantDxT
             (Diagnostic.ERROR,
              AnthraxValidator.DIAGNOSTIC_SOURCE,
              AnthraxValidator.ANTHRAX_PHCR_RELEVANT_DX_TESTS_SECTION__RESULTS_SECTION_TEMPLATE_ID,
-             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "ResultsSectionTemplateId", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(anthraxPhcrRelevantDxTestsSection, context) }),
+             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "validateResultsSectionTemplateId", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(anthraxPhcrRelevantDxTestsSection, context) }),
              new Object [] { anthraxPhcrRelevantDxTestsSection }));
       }
-       
       return false;
     }
     return true;

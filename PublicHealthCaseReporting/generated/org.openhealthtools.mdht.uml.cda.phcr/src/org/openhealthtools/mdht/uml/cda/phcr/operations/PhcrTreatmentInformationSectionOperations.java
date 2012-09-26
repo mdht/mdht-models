@@ -37,7 +37,6 @@ import org.openhealthtools.mdht.uml.cda.phcr.util.PhcrValidator;
  * <ul>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.phcr.PhcrTreatmentInformationSection#validatePhcrTreatmentInformationSectionTemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Phcr Treatment Information Section Template Id</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.phcr.PhcrTreatmentInformationSection#validatePhcrTreatmentInformationSectionCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Phcr Treatment Information Section Code</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.phcr.PhcrTreatmentInformationSection#validatePhcrTreatmentInformationSectionCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Phcr Treatment Information Section Code P</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.phcr.PhcrTreatmentInformationSection#validatePhcrTreatmentInformationSectionTitle(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Phcr Treatment Information Section Title</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.phcr.PhcrTreatmentInformationSection#validatePhcrTreatmentInformationSectionText(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Phcr Treatment Information Section Text</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.phcr.PhcrTreatmentInformationSection#validatePhcrTreatmentInformationSectionTherapeuticRegimenAct(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Phcr Treatment Information Section Therapeutic Regimen Act</em>}</li>
@@ -81,6 +80,7 @@ public class PhcrTreatmentInformationSectionOperations extends SectionOperations
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
+   * self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.15.2.4')
    * @param phcrTreatmentInformationSection The receiving '<em><b>Treatment Information Section</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -88,8 +88,8 @@ public class PhcrTreatmentInformationSectionOperations extends SectionOperations
    * @generated
    */
 	public static  boolean validatePhcrTreatmentInformationSectionTemplateId(PhcrTreatmentInformationSection phcrTreatmentInformationSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
-    if (VALIDATE_PHCR_TREATMENT_INFORMATION_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+    if (VALIDATE_PHCR_TREATMENT_INFORMATION_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null)
+    {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(PhcrPackage.Literals.PHCR_TREATMENT_INFORMATION_SECTION);
       try
@@ -110,10 +110,9 @@ public class PhcrTreatmentInformationSectionOperations extends SectionOperations
             (Diagnostic.ERROR,
              PhcrValidator.DIAGNOSTIC_SOURCE,
              PhcrValidator.PHCR_TREATMENT_INFORMATION_SECTION__PHCR_TREATMENT_INFORMATION_SECTION_TEMPLATE_ID,
-             PhcrPlugin.INSTANCE.getString("PhcrTreatmentInformationSectionTemplateId"),
+             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "validatePhcrTreatmentInformationSectionTemplateId", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(phcrTreatmentInformationSection, context) }),
              new Object [] { phcrTreatmentInformationSection }));
       }
-       
       return false;
     }
     return true;
@@ -145,6 +144,9 @@ public class PhcrTreatmentInformationSectionOperations extends SectionOperations
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
+   * (self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and 
+   * let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in 
+   * value.code = '55753-8' and value.codeSystem = '2.16.840.1.113883.6.1')
    * @param phcrTreatmentInformationSection The receiving '<em><b>Treatment Information Section</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -152,8 +154,8 @@ public class PhcrTreatmentInformationSectionOperations extends SectionOperations
    * @generated
    */
 	public static  boolean validatePhcrTreatmentInformationSectionCode(PhcrTreatmentInformationSection phcrTreatmentInformationSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
-    if (VALIDATE_PHCR_TREATMENT_INFORMATION_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+    if (VALIDATE_PHCR_TREATMENT_INFORMATION_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null)
+    {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(PhcrPackage.Literals.PHCR_TREATMENT_INFORMATION_SECTION);
       try
@@ -174,10 +176,9 @@ public class PhcrTreatmentInformationSectionOperations extends SectionOperations
             (Diagnostic.ERROR,
              PhcrValidator.DIAGNOSTIC_SOURCE,
              PhcrValidator.PHCR_TREATMENT_INFORMATION_SECTION__PHCR_TREATMENT_INFORMATION_SECTION_CODE,
-             PhcrPlugin.INSTANCE.getString("PhcrTreatmentInformationSectionCode"),
+             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "validatePhcrTreatmentInformationSectionCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(phcrTreatmentInformationSection, context) }),
              new Object [] { phcrTreatmentInformationSection }));
       }
-       
       return false;
     }
     return true;
@@ -208,6 +209,7 @@ public class PhcrTreatmentInformationSectionOperations extends SectionOperations
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
+   * (self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined())
    * @param phcrTreatmentInformationSection The receiving '<em><b>Treatment Information Section</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -216,8 +218,8 @@ public class PhcrTreatmentInformationSectionOperations extends SectionOperations
    */
 	
 	public static  boolean validatePhcrTreatmentInformationSectionCodeP(PhcrTreatmentInformationSection phcrTreatmentInformationSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
-    if (VALIDATE_PHCR_TREATMENT_INFORMATION_SECTION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+    if (VALIDATE_PHCR_TREATMENT_INFORMATION_SECTION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null)
+    {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(PhcrPackage.Literals.PHCR_TREATMENT_INFORMATION_SECTION);
       try
@@ -238,10 +240,9 @@ public class PhcrTreatmentInformationSectionOperations extends SectionOperations
             (Diagnostic.ERROR,
              PhcrValidator.DIAGNOSTIC_SOURCE,
              PhcrValidator.PHCR_TREATMENT_INFORMATION_SECTION__PHCR_TREATMENT_INFORMATION_SECTION_CODE_P,
-             PhcrPlugin.INSTANCE.getString("PhcrTreatmentInformationSectionCodeP"),
+             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "validatePhcrTreatmentInformationSectionCodeP", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(phcrTreatmentInformationSection, context) }),
              new Object [] { phcrTreatmentInformationSection }));
       }
-       
       return false;
     }
     return true;
@@ -271,6 +272,7 @@ public class PhcrTreatmentInformationSectionOperations extends SectionOperations
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
+   * (self.title.oclIsUndefined() or self.title.isNullFlavorUndefined()) implies (not self.title.oclIsUndefined() and self.title.getText() = 'Treatment Information')
    * @param phcrTreatmentInformationSection The receiving '<em><b>Treatment Information Section</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -278,8 +280,8 @@ public class PhcrTreatmentInformationSectionOperations extends SectionOperations
    * @generated
    */
 	public static  boolean validatePhcrTreatmentInformationSectionTitle(PhcrTreatmentInformationSection phcrTreatmentInformationSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
-    if (VALIDATE_PHCR_TREATMENT_INFORMATION_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+    if (VALIDATE_PHCR_TREATMENT_INFORMATION_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null)
+    {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(PhcrPackage.Literals.PHCR_TREATMENT_INFORMATION_SECTION);
       try
@@ -300,10 +302,9 @@ public class PhcrTreatmentInformationSectionOperations extends SectionOperations
             (Diagnostic.ERROR,
              PhcrValidator.DIAGNOSTIC_SOURCE,
              PhcrValidator.PHCR_TREATMENT_INFORMATION_SECTION__PHCR_TREATMENT_INFORMATION_SECTION_TITLE,
-             PhcrPlugin.INSTANCE.getString("PhcrTreatmentInformationSectionTitle"),
+             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "validatePhcrTreatmentInformationSectionTitle", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(phcrTreatmentInformationSection, context) }),
              new Object [] { phcrTreatmentInformationSection }));
       }
-       
       return false;
     }
     return true;
@@ -333,6 +334,7 @@ public class PhcrTreatmentInformationSectionOperations extends SectionOperations
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
+   * not self.text.oclIsUndefined()
    * @param phcrTreatmentInformationSection The receiving '<em><b>Treatment Information Section</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -340,8 +342,8 @@ public class PhcrTreatmentInformationSectionOperations extends SectionOperations
    * @generated
    */
 	public static  boolean validatePhcrTreatmentInformationSectionText(PhcrTreatmentInformationSection phcrTreatmentInformationSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
-    if (VALIDATE_PHCR_TREATMENT_INFORMATION_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+    if (VALIDATE_PHCR_TREATMENT_INFORMATION_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null)
+    {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(PhcrPackage.Literals.PHCR_TREATMENT_INFORMATION_SECTION);
       try
@@ -362,10 +364,9 @@ public class PhcrTreatmentInformationSectionOperations extends SectionOperations
             (Diagnostic.ERROR,
              PhcrValidator.DIAGNOSTIC_SOURCE,
              PhcrValidator.PHCR_TREATMENT_INFORMATION_SECTION__PHCR_TREATMENT_INFORMATION_SECTION_TEXT,
-             PhcrPlugin.INSTANCE.getString("PhcrTreatmentInformationSectionText"),
+             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "validatePhcrTreatmentInformationSectionText", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(phcrTreatmentInformationSection, context) }),
              new Object [] { phcrTreatmentInformationSection }));
       }
-       
       return false;
     }
     return true;
@@ -395,6 +396,7 @@ public class PhcrTreatmentInformationSectionOperations extends SectionOperations
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
+   * self.entry->one(entry : cda::Entry | not entry.act.oclIsUndefined() and entry.act.oclIsKindOf(phcr::TherapeuticRegimenAct) and entry.typeCode = vocab::x_ActRelationshipEntry::DRIV)
    * @param phcrTreatmentInformationSection The receiving '<em><b>Treatment Information Section</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -402,8 +404,8 @@ public class PhcrTreatmentInformationSectionOperations extends SectionOperations
    * @generated
    */
 	public static  boolean validatePhcrTreatmentInformationSectionTherapeuticRegimenAct(PhcrTreatmentInformationSection phcrTreatmentInformationSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
-    if (VALIDATE_PHCR_TREATMENT_INFORMATION_SECTION_THERAPEUTIC_REGIMEN_ACT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+    if (VALIDATE_PHCR_TREATMENT_INFORMATION_SECTION_THERAPEUTIC_REGIMEN_ACT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null)
+    {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(PhcrPackage.Literals.PHCR_TREATMENT_INFORMATION_SECTION);
       try
@@ -424,10 +426,9 @@ public class PhcrTreatmentInformationSectionOperations extends SectionOperations
             (Diagnostic.ERROR,
              PhcrValidator.DIAGNOSTIC_SOURCE,
              PhcrValidator.PHCR_TREATMENT_INFORMATION_SECTION__PHCR_TREATMENT_INFORMATION_SECTION_THERAPEUTIC_REGIMEN_ACT,
-             PhcrPlugin.INSTANCE.getString("PhcrTreatmentInformationSectionTherapeuticRegimenAct"),
+             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "validatePhcrTreatmentInformationSectionTherapeuticRegimenAct", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(phcrTreatmentInformationSection, context) }),
              new Object [] { phcrTreatmentInformationSection }));
       }
-       
       return false;
     }
     return true;
@@ -456,6 +457,10 @@ public class PhcrTreatmentInformationSectionOperations extends SectionOperations
 	/**
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
+   * <!-- begin-model-doc -->
+   * self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(phcr::TherapeuticRegimenAct))->asSequence()->any(true).oclAsType(phcr::TherapeuticRegimenAct)
+   * @param phcrTreatmentInformationSection The receiving '<em><b>Treatment Information Section</b></em>' model object.
+   * <!-- end-model-doc -->
    * @generated
    */
 	public static  TherapeuticRegimenAct getTherapeuticRegimenAct(PhcrTreatmentInformationSection phcrTreatmentInformationSection) {

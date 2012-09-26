@@ -89,6 +89,7 @@ public class SalmonellosisPHCRRelevantDxTestsSectionOperations extends PhcrRelev
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
+   * self.entry->exists(entry : cda::Entry | not entry.organizer.oclIsUndefined() and entry.organizer.oclIsKindOf(salmonellosis::SalmonellosisResultOrganizer) and entry.typeCode = vocab::x_ActRelationshipEntry::DRIV)
    * @param salmonellosisPHCRRelevantDxTestsSection The receiving '<em><b>PHCR Relevant Dx Tests Section</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -98,8 +99,8 @@ public class SalmonellosisPHCRRelevantDxTestsSectionOperations extends PhcrRelev
   
   public static  boolean validateSalmonellosisPHCRRelevantDxTestsSectionSalmonellosisResultOrganizer(SalmonellosisPHCRRelevantDxTestsSection salmonellosisPHCRRelevantDxTestsSection, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
-  	  
-    if (VALIDATE_SALMONELLOSIS_PHCR_RELEVANT_DX_TESTS_SECTION_SALMONELLOSIS_RESULT_ORGANIZER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+    if (VALIDATE_SALMONELLOSIS_PHCR_RELEVANT_DX_TESTS_SECTION_SALMONELLOSIS_RESULT_ORGANIZER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null)
+    {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(SalmonellosisPackage.Literals.SALMONELLOSIS_PHCR_RELEVANT_DX_TESTS_SECTION);
       try
@@ -117,13 +118,12 @@ public class SalmonellosisPHCRRelevantDxTestsSectionOperations extends PhcrRelev
       {
         diagnostics.add
           (new BasicDiagnostic
-            (Diagnostic.INFO,
+            (Diagnostic.ERROR,
              SalmonellosisValidator.DIAGNOSTIC_SOURCE,
              SalmonellosisValidator.SALMONELLOSIS_PHCR_RELEVANT_DX_TESTS_SECTION__SALMONELLOSIS_PHCR_RELEVANT_DX_TESTS_SECTION_SALMONELLOSIS_RESULT_ORGANIZER,
-             SalmonellosisPlugin.INSTANCE.getString("SalmonellosisPHCRRelevantDxTestsSectionSalmonellosisResultOrganizer"),
+             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "validateSalmonellosisPHCRRelevantDxTestsSectionSalmonellosisResultOrganizer", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(salmonellosisPHCRRelevantDxTestsSection, context) }),
              new Object [] { salmonellosisPHCRRelevantDxTestsSection }));
       }
-       
       return false;
     }
     return true;
@@ -155,6 +155,7 @@ public class SalmonellosisPHCRRelevantDxTestsSectionOperations extends PhcrRelev
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
+   * self.entry->exists(entry : cda::Entry | not entry.observation.oclIsUndefined() and entry.observation.oclIsKindOf(salmonellosis::SalmonellosisResultObservation) and entry.typeCode = vocab::x_ActRelationshipEntry::DRIV)
    * @param salmonellosisPHCRRelevantDxTestsSection The receiving '<em><b>PHCR Relevant Dx Tests Section</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -164,8 +165,8 @@ public class SalmonellosisPHCRRelevantDxTestsSectionOperations extends PhcrRelev
   
   public static  boolean validateSalmonellosisPHCRRelevantDxTestsSectionSalmonellosisResultObservation(SalmonellosisPHCRRelevantDxTestsSection salmonellosisPHCRRelevantDxTestsSection, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
-  	  
-    if (VALIDATE_SALMONELLOSIS_PHCR_RELEVANT_DX_TESTS_SECTION_SALMONELLOSIS_RESULT_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+    if (VALIDATE_SALMONELLOSIS_PHCR_RELEVANT_DX_TESTS_SECTION_SALMONELLOSIS_RESULT_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null)
+    {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(SalmonellosisPackage.Literals.SALMONELLOSIS_PHCR_RELEVANT_DX_TESTS_SECTION);
       try
@@ -183,13 +184,12 @@ public class SalmonellosisPHCRRelevantDxTestsSectionOperations extends PhcrRelev
       {
         diagnostics.add
           (new BasicDiagnostic
-            (Diagnostic.WARNING,
+            (Diagnostic.ERROR,
              SalmonellosisValidator.DIAGNOSTIC_SOURCE,
              SalmonellosisValidator.SALMONELLOSIS_PHCR_RELEVANT_DX_TESTS_SECTION__SALMONELLOSIS_PHCR_RELEVANT_DX_TESTS_SECTION_SALMONELLOSIS_RESULT_OBSERVATION,
-             SalmonellosisPlugin.INSTANCE.getString("SalmonellosisPHCRRelevantDxTestsSectionSalmonellosisResultObservation"),
+             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "validateSalmonellosisPHCRRelevantDxTestsSectionSalmonellosisResultObservation", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(salmonellosisPHCRRelevantDxTestsSection, context) }),
              new Object [] { salmonellosisPHCRRelevantDxTestsSection }));
       }
-       
       return false;
     }
     return true;
@@ -218,6 +218,10 @@ public class SalmonellosisPHCRRelevantDxTestsSectionOperations extends PhcrRelev
   /**
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
+   * <!-- begin-model-doc -->
+   * self.getOrganizers()->select(organizer : cda::Organizer | not organizer.oclIsUndefined() and organizer.oclIsKindOf(salmonellosis::SalmonellosisResultOrganizer)).oclAsType(salmonellosis::SalmonellosisResultOrganizer)
+   * @param salmonellosisPHCRRelevantDxTestsSection The receiving '<em><b>PHCR Relevant Dx Tests Section</b></em>' model object.
+   * <!-- end-model-doc -->
    * @generated
    */
   
@@ -265,6 +269,10 @@ public class SalmonellosisPHCRRelevantDxTestsSectionOperations extends PhcrRelev
   /**
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
+   * <!-- begin-model-doc -->
+   * self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(salmonellosis::SalmonellosisResultObservation)).oclAsType(salmonellosis::SalmonellosisResultObservation)
+   * @param salmonellosisPHCRRelevantDxTestsSection The receiving '<em><b>PHCR Relevant Dx Tests Section</b></em>' model object.
+   * <!-- end-model-doc -->
    * @generated
    */
   
@@ -315,6 +323,7 @@ public class SalmonellosisPHCRRelevantDxTestsSectionOperations extends PhcrRelev
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
+   * self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.15.2.38')
    * @param salmonellosisPHCRRelevantDxTestsSection The receiving '<em><b>PHCR Relevant Dx Tests Section</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -324,8 +333,8 @@ public class SalmonellosisPHCRRelevantDxTestsSectionOperations extends PhcrRelev
   
   public static  boolean validateResultsSectionTemplateId(SalmonellosisPHCRRelevantDxTestsSection salmonellosisPHCRRelevantDxTestsSection, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
-  	  
-    if (VALIDATE_RESULTS_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+    if (VALIDATE_RESULTS_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null)
+    {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(SalmonellosisPackage.Literals.SALMONELLOSIS_PHCR_RELEVANT_DX_TESTS_SECTION);
       try
@@ -346,10 +355,9 @@ public class SalmonellosisPHCRRelevantDxTestsSectionOperations extends PhcrRelev
             (Diagnostic.ERROR,
              SalmonellosisValidator.DIAGNOSTIC_SOURCE,
              SalmonellosisValidator.SALMONELLOSIS_PHCR_RELEVANT_DX_TESTS_SECTION__RESULTS_SECTION_TEMPLATE_ID,
-             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "ResultsSectionTemplateId", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(salmonellosisPHCRRelevantDxTestsSection, context) }),
+             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "validateResultsSectionTemplateId", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(salmonellosisPHCRRelevantDxTestsSection, context) }),
              new Object [] { salmonellosisPHCRRelevantDxTestsSection }));
       }
-       
       return false;
     }
     return true;

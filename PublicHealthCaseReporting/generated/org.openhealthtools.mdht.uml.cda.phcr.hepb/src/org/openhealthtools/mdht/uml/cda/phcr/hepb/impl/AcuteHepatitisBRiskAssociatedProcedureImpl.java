@@ -26,8 +26,6 @@ import org.openhealthtools.mdht.uml.cda.phcr.hepb.HepbPackage;
 
 import org.openhealthtools.mdht.uml.cda.phcr.hepb.operations.AcuteHepatitisBRiskAssociatedProcedureOperations;
 
-import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
-
 /**
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Acute Hepatitis BRisk Associated Procedure</b></em>'.
@@ -39,96 +37,86 @@ import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
  */
 public class AcuteHepatitisBRiskAssociatedProcedureImpl extends ProcedureImpl implements AcuteHepatitisBRiskAssociatedProcedure {
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	protected AcuteHepatitisBRiskAssociatedProcedureImpl() {
-    super();
-  }
+		super();
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	@Override
 	protected EClass eStaticClass() {
-    return HepbPackage.Literals.ACUTE_HEPATITIS_BRISK_ASSOCIATED_PROCEDURE;
-  }
+		return HepbPackage.Literals.ACUTE_HEPATITIS_BRISK_ASSOCIATED_PROCEDURE;
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public boolean validateAcuteHepatitisBRiskAssociatedProcedureTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return AcuteHepatitisBRiskAssociatedProcedureOperations.validateAcuteHepatitisBRiskAssociatedProcedureTemplateId(this, diagnostics, context);
-  }
+		return AcuteHepatitisBRiskAssociatedProcedureOperations.validateAcuteHepatitisBRiskAssociatedProcedureTemplateId(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public boolean validateAcuteHepatitisBRiskAssociatedProcedureClassCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return AcuteHepatitisBRiskAssociatedProcedureOperations.validateAcuteHepatitisBRiskAssociatedProcedureClassCode(this, diagnostics, context);
-  }
+		return AcuteHepatitisBRiskAssociatedProcedureOperations.validateAcuteHepatitisBRiskAssociatedProcedureClassCode(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public boolean validateAcuteHepatitisBRiskAssociatedProcedureCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return AcuteHepatitisBRiskAssociatedProcedureOperations.validateAcuteHepatitisBRiskAssociatedProcedureCode(this, diagnostics, context);
-  }
+		return AcuteHepatitisBRiskAssociatedProcedureOperations.validateAcuteHepatitisBRiskAssociatedProcedureCode(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public boolean validateAcuteHepatitisBRiskAssociatedProcedureMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return AcuteHepatitisBRiskAssociatedProcedureOperations.validateAcuteHepatitisBRiskAssociatedProcedureMoodCode(this, diagnostics, context);
-  }
+		return AcuteHepatitisBRiskAssociatedProcedureOperations.validateAcuteHepatitisBRiskAssociatedProcedureMoodCode(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public boolean validateAcuteHepatitisBRiskAssociatedProcedureStatusCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return AcuteHepatitisBRiskAssociatedProcedureOperations.validateAcuteHepatitisBRiskAssociatedProcedureStatusCode(this, diagnostics, context);
-  }
+		return AcuteHepatitisBRiskAssociatedProcedureOperations.validateAcuteHepatitisBRiskAssociatedProcedureStatusCode(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public boolean validateAcuteHepatitisBRiskAssociatedProcedureStatusCodeP(DiagnosticChain diagnostics, Map<Object, Object> context)
-  {
-    return AcuteHepatitisBRiskAssociatedProcedureOperations.validateAcuteHepatitisBRiskAssociatedProcedureStatusCodeP(this, diagnostics, context);
-  }
-
-  /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public boolean validateAcuteHepatitisBRiskAssociatedProcedureEffectiveTime(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return AcuteHepatitisBRiskAssociatedProcedureOperations.validateAcuteHepatitisBRiskAssociatedProcedureEffectiveTime(this, diagnostics, context);
-  }
+		return AcuteHepatitisBRiskAssociatedProcedureOperations.validateAcuteHepatitisBRiskAssociatedProcedureEffectiveTime(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public AcuteHepatitisBRiskAssociatedProcedure init() {
-      return Initializer.Util.init(this);
-  }
+	    return Initializer.Util.init(this);
+	}
 
   /**
      * <!-- begin-user-doc -->

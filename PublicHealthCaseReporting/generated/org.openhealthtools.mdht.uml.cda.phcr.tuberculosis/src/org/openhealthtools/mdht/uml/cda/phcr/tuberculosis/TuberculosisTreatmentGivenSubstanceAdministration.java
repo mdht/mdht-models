@@ -28,10 +28,10 @@ import org.openhealthtools.mdht.uml.cda.phcr.TreatmentGivenSubstanceAdministrati
 public interface TuberculosisTreatmentGivenSubstanceAdministration extends TreatmentGivenSubstanceAdministration {
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   public TuberculosisTreatmentGivenSubstanceAdministration init();
 
   /**

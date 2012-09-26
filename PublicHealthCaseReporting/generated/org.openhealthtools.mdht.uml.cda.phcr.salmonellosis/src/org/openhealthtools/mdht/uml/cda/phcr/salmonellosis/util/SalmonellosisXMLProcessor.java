@@ -29,31 +29,30 @@ import org.openhealthtools.mdht.uml.cda.phcr.salmonellosis.SalmonellosisPackage;
 public class SalmonellosisXMLProcessor extends XMLProcessor {
 
 	/**
-   * Public constructor to instantiate the helper.
-   * <!-- begin-user-doc -->
+	 * Public constructor to instantiate the helper.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public SalmonellosisXMLProcessor() {
-    super((EPackage.Registry.INSTANCE));
-    SalmonellosisPackage.eINSTANCE.eClass();
-  }
+		super((EPackage.Registry.INSTANCE));
+		SalmonellosisPackage.eINSTANCE.eClass();
+	}
 	
 	/**
-   * Register for "*" and "xml" file extensions the SalmonellosisResourceFactoryImpl factory.
-   * <!-- begin-user-doc -->
+	 * Register for "*" and "xml" file extensions the SalmonellosisResourceFactoryImpl factory.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	@Override
 	protected Map<String, Resource.Factory> getRegistrations() {
-    if (registrations == null)
-    {
-      super.getRegistrations();
-      registrations.put(XML_EXTENSION, new SalmonellosisResourceFactoryImpl());
-      registrations.put(STAR_EXTENSION, new SalmonellosisResourceFactoryImpl());
-    }
-    return registrations;
-  }
+		if (registrations == null) {
+			super.getRegistrations();
+			registrations.put(XML_EXTENSION, new SalmonellosisResourceFactoryImpl());
+			registrations.put(STAR_EXTENSION, new SalmonellosisResourceFactoryImpl());
+		}
+		return registrations;
+	}
 
 } //SalmonellosisXMLProcessor

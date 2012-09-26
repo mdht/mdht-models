@@ -29,8 +29,6 @@ import org.openhealthtools.mdht.uml.cda.phcr.tss.operations.TssCaseObservationOp
 
 import org.openhealthtools.mdht.uml.cda.phcr.tss.tssPackage;
 
-import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
-
 /**
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Tss Case Observation</b></em>'.
@@ -107,23 +105,4 @@ public class TssCaseObservationImpl extends CaseObservationImpl implements TssCa
 	public boolean validateProblemObservationTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
     return TssCaseObservationOperations.validateProblemObservationTemplateId(this, diagnostics, context);
   }
-
-	/**
-   * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-   * @generated
-   */
-	public TssCaseObservation init() {
-      return Initializer.Util.init(this);
-  }
-
-  /**
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    public TssCaseObservation init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-        Initializer.Util.init(this, initializers);
-        return this;
-    }
 } //TssCaseObservationImpl

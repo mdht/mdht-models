@@ -26,7 +26,6 @@ import org.eclipse.ocl.ecore.OCL;
 
 import org.eclipse.ocl.expressions.OCLExpression;
 import org.openhealthtools.mdht.uml.cda.phcr.hib.HIBCaseReport;
-import org.openhealthtools.mdht.uml.cda.phcr.hib.HIBSocialHistorySection;
 import org.openhealthtools.mdht.uml.cda.phcr.hib.HibPackage;
 import org.openhealthtools.mdht.uml.cda.phcr.hib.HibPhcrClinicalInformationSection;
 import org.openhealthtools.mdht.uml.cda.phcr.hib.HibPhcrRelevantDxTestsSection;
@@ -99,6 +98,7 @@ public class HIBCaseReportOperations extends PublicHealthCaseReportOperations
 	 */
 	
 	public static  boolean validateHIBCaseReportTitle(HIBCaseReport hibCaseReport, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
 		if (VALIDATE_HIB_CASE_REPORT_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(HibPackage.Literals.HIB_CASE_REPORT);
@@ -119,6 +119,7 @@ public class HIBCaseReportOperations extends PublicHealthCaseReportOperations
 						 HibPlugin.INSTANCE.getString("HIBCaseReportTitle"),
 						 new Object [] { hibCaseReport }));
 			}
+			 
 			return false;
 		}
 		return true;
@@ -159,6 +160,7 @@ public class HIBCaseReportOperations extends PublicHealthCaseReportOperations
 	 */
 	
 	public static  boolean validateHIBCaseReportHibPhcrClinicalInformationSection(HIBCaseReport hibCaseReport, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
 		if (VALIDATE_HIB_CASE_REPORT_HIB_PHCR_CLINICAL_INFORMATION_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(HibPackage.Literals.HIB_CASE_REPORT);
@@ -179,6 +181,7 @@ public class HIBCaseReportOperations extends PublicHealthCaseReportOperations
 						 HibPlugin.INSTANCE.getString("HIBCaseReportHibPhcrClinicalInformationSection"),
 						 new Object [] { hibCaseReport }));
 			}
+			 
 			return false;
 		}
 		return true;
@@ -219,6 +222,7 @@ public class HIBCaseReportOperations extends PublicHealthCaseReportOperations
 	 */
 	
 	public static  boolean validateHIBCaseReportHibPhcrRelevantDxTestsSection(HIBCaseReport hibCaseReport, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
 		if (VALIDATE_HIB_CASE_REPORT_HIB_PHCR_RELEVANT_DX_TESTS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(HibPackage.Literals.HIB_CASE_REPORT);
@@ -239,6 +243,7 @@ public class HIBCaseReportOperations extends PublicHealthCaseReportOperations
 						 HibPlugin.INSTANCE.getString("HIBCaseReportHibPhcrRelevantDxTestsSection"),
 						 new Object [] { hibCaseReport }));
 			}
+			 
 			return false;
 		}
 		return true;
@@ -252,7 +257,7 @@ public class HIBCaseReportOperations extends PublicHealthCaseReportOperations
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String GET_HIB_PHCR_CLINICAL_INFORMATION_SECTION__EOCL_EXP = "self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hib::HibPhcrClinicalInformationSection ))->asSequence()->first().oclAsType(hib::HibPhcrClinicalInformationSection )";
+	protected static final String GET_HIB_PHCR_CLINICAL_INFORMATION_SECTION__EOCL_EXP = "self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hib::HibPhcrClinicalInformationSection ))->asSequence()->any(true).oclAsType(hib::HibPhcrClinicalInformationSection )";
 
 		/**
 	 * The cached OCL query for the '{@link #getHibPhcrClinicalInformationSection(HIBCaseReport) <em>Get Hib Phcr Clinical Information Section</em>}' query operation.
@@ -269,7 +274,7 @@ public class HIBCaseReportOperations extends PublicHealthCaseReportOperations
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hib::HibPhcrClinicalInformationSection ))->asSequence()->first().oclAsType(hib::HibPhcrClinicalInformationSection )
+	 * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hib::HibPhcrClinicalInformationSection ))->asSequence()->any(true).oclAsType(hib::HibPhcrClinicalInformationSection )
 	 * @param hibCaseReport The receiving '<em><b>HIB Case Report</b></em>' model object.
 	 * <!-- end-model-doc -->
 	 * @generated
@@ -278,7 +283,7 @@ public class HIBCaseReportOperations extends PublicHealthCaseReportOperations
 	public static  HibPhcrClinicalInformationSection getHibPhcrClinicalInformationSection(HIBCaseReport hibCaseReport) {
 		if (GET_HIB_PHCR_CLINICAL_INFORMATION_SECTION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(HibPackage.Literals.HIB_CASE_REPORT, HibPackage.Literals.HIB_CASE_REPORT.getEAllOperations().get(63));
+			helper.setOperationContext(HibPackage.Literals.HIB_CASE_REPORT, HibPackage.Literals.HIB_CASE_REPORT.getEAllOperations().get(62));
 			try {
 				GET_HIB_PHCR_CLINICAL_INFORMATION_SECTION__EOCL_QRY = helper.createQuery(GET_HIB_PHCR_CLINICAL_INFORMATION_SECTION__EOCL_EXP);
 			}
@@ -298,7 +303,7 @@ public class HIBCaseReportOperations extends PublicHealthCaseReportOperations
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String GET_HIB_PHCR_RELEVANT_DX_TESTS_SECTION__EOCL_EXP = "self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hib::HibPhcrRelevantDxTestsSection))->asSequence()->first().oclAsType(hib::HibPhcrRelevantDxTestsSection)";
+	protected static final String GET_HIB_PHCR_RELEVANT_DX_TESTS_SECTION__EOCL_EXP = "self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hib::HibPhcrRelevantDxTestsSection))->asSequence()->any(true).oclAsType(hib::HibPhcrRelevantDxTestsSection)";
 
 		/**
 	 * The cached OCL query for the '{@link #getHibPhcrRelevantDxTestsSection(HIBCaseReport) <em>Get Hib Phcr Relevant Dx Tests Section</em>}' query operation.
@@ -315,7 +320,7 @@ public class HIBCaseReportOperations extends PublicHealthCaseReportOperations
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hib::HibPhcrRelevantDxTestsSection))->asSequence()->first().oclAsType(hib::HibPhcrRelevantDxTestsSection)
+	 * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hib::HibPhcrRelevantDxTestsSection))->asSequence()->any(true).oclAsType(hib::HibPhcrRelevantDxTestsSection)
 	 * @param hibCaseReport The receiving '<em><b>HIB Case Report</b></em>' model object.
 	 * <!-- end-model-doc -->
 	 * @generated
@@ -324,7 +329,7 @@ public class HIBCaseReportOperations extends PublicHealthCaseReportOperations
 	public static  HibPhcrRelevantDxTestsSection getHibPhcrRelevantDxTestsSection(HIBCaseReport hibCaseReport) {
 		if (GET_HIB_PHCR_RELEVANT_DX_TESTS_SECTION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(HibPackage.Literals.HIB_CASE_REPORT, HibPackage.Literals.HIB_CASE_REPORT.getEAllOperations().get(64));
+			helper.setOperationContext(HibPackage.Literals.HIB_CASE_REPORT, HibPackage.Literals.HIB_CASE_REPORT.getEAllOperations().get(63));
 			try {
 				GET_HIB_PHCR_RELEVANT_DX_TESTS_SECTION__EOCL_QRY = helper.createQuery(GET_HIB_PHCR_RELEVANT_DX_TESTS_SECTION__EOCL_EXP);
 			}
@@ -372,6 +377,7 @@ public class HIBCaseReportOperations extends PublicHealthCaseReportOperations
   
   public static  boolean validatePublicHealthCaseReportTemplateId(HIBCaseReport hibCaseReport, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
+  	  
 		if (VALIDATE_PUBLIC_HEALTH_CASE_REPORT_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(HibPackage.Literals.HIB_CASE_REPORT);
@@ -392,6 +398,7 @@ public class HIBCaseReportOperations extends PublicHealthCaseReportOperations
 						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "PublicHealthCaseReportTemplateId", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(hibCaseReport, context) }),
 						 new Object [] { hibCaseReport }));
 			}
+			 
 			return false;
 		}
 		return true;

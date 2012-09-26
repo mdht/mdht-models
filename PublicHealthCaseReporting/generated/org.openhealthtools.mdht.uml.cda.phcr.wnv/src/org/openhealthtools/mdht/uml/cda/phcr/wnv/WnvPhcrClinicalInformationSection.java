@@ -34,6 +34,7 @@ public interface WnvPhcrClinicalInformationSection extends PhcrClinicalInformati
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
+   * self.entry->one(entry : cda::Entry | not entry.observation.oclIsUndefined() and entry.observation.oclIsKindOf(wnv::WnvCaseObservation) and entry.typeCode = vocab::x_ActRelationshipEntry::DRIV)
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
    * <!-- end-model-doc -->
@@ -45,23 +46,12 @@ public interface WnvPhcrClinicalInformationSection extends PhcrClinicalInformati
 	/**
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
+   * <!-- begin-model-doc -->
+   * self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(wnv::WnvCaseObservation))->asSequence()->any(true).oclAsType(wnv::WnvCaseObservation)
+   * <!-- end-model-doc -->
    * @model kind="operation" required="true" ordered="false"
    *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(wnv::WnvCaseObservation))->asSequence()->any(true).oclAsType(wnv::WnvCaseObservation)'"
    * @generated
    */
 	WnvCaseObservation getWnvCaseObservation();
-
-		/**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public WnvPhcrClinicalInformationSection init();
-
-    /**
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    public WnvPhcrClinicalInformationSection init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // WnvPhcrClinicalInformationSection

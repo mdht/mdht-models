@@ -223,7 +223,7 @@ public class InfluenzaPHCRRelevantDiagnosticTestsAndOrLaboratoryDataSectionOpera
 	public static  EList<InfluenzaResultObservation> getInfluenzaResultObservations(InfluenzaPHCRRelevantDiagnosticTestsAndOrLaboratoryDataSection influenzaPHCRRelevantDiagnosticTestsAndOrLaboratoryDataSection) {
 		if (GET_INFLUENZA_RESULT_OBSERVATIONS__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(fluPackage.Literals.INFLUENZA_PHCR_RELEVANT_DIAGNOSTIC_TESTS_AND_OR_LABORATORY_DATA_SECTION, fluPackage.Literals.INFLUENZA_PHCR_RELEVANT_DIAGNOSTIC_TESTS_AND_OR_LABORATORY_DATA_SECTION.getEAllOperations().get(71));
+			helper.setOperationContext(fluPackage.Literals.INFLUENZA_PHCR_RELEVANT_DIAGNOSTIC_TESTS_AND_OR_LABORATORY_DATA_SECTION, fluPackage.Literals.INFLUENZA_PHCR_RELEVANT_DIAGNOSTIC_TESTS_AND_OR_LABORATORY_DATA_SECTION.getEAllOperations().get(72));
 			try {
 				GET_INFLUENZA_RESULT_OBSERVATIONS__EOCL_QRY = helper.createQuery(GET_INFLUENZA_RESULT_OBSERVATIONS__EOCL_EXP);
 			}
@@ -270,7 +270,7 @@ public class InfluenzaPHCRRelevantDiagnosticTestsAndOrLaboratoryDataSectionOpera
 	public static  EList<InfluenzaImagingObservation> getInfluenzaImagingObservations(InfluenzaPHCRRelevantDiagnosticTestsAndOrLaboratoryDataSection influenzaPHCRRelevantDiagnosticTestsAndOrLaboratoryDataSection) {
 		if (GET_INFLUENZA_IMAGING_OBSERVATIONS__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(fluPackage.Literals.INFLUENZA_PHCR_RELEVANT_DIAGNOSTIC_TESTS_AND_OR_LABORATORY_DATA_SECTION, fluPackage.Literals.INFLUENZA_PHCR_RELEVANT_DIAGNOSTIC_TESTS_AND_OR_LABORATORY_DATA_SECTION.getEAllOperations().get(72));
+			helper.setOperationContext(fluPackage.Literals.INFLUENZA_PHCR_RELEVANT_DIAGNOSTIC_TESTS_AND_OR_LABORATORY_DATA_SECTION, fluPackage.Literals.INFLUENZA_PHCR_RELEVANT_DIAGNOSTIC_TESTS_AND_OR_LABORATORY_DATA_SECTION.getEAllOperations().get(73));
 			try {
 				GET_INFLUENZA_IMAGING_OBSERVATIONS__EOCL_QRY = helper.createQuery(GET_INFLUENZA_IMAGING_OBSERVATIONS__EOCL_EXP);
 			}

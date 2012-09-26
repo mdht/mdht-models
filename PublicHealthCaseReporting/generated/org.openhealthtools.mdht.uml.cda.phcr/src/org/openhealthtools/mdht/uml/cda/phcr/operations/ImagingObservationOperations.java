@@ -10,7 +10,6 @@
  *******************************************************************************/
 package org.openhealthtools.mdht.uml.cda.phcr.operations;
 
-import java.util.Collection;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.BasicDiagnostic;
@@ -37,7 +36,6 @@ import org.openhealthtools.mdht.uml.cda.phcr.util.PhcrValidator;
  *   <li>{@link org.openhealthtools.mdht.uml.cda.phcr.ImagingObservation#validateImagingObservationMoodCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Imaging Observation Mood Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.phcr.ImagingObservation#validateImagingObservationId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Imaging Observation Id</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.phcr.ImagingObservation#validateImagingObservationCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Imaging Observation Code</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.phcr.ImagingObservation#validateImagingObservationStatusCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Imaging Observation Status Code P</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.phcr.ImagingObservation#validateImagingObservationStatusCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Imaging Observation Status Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.phcr.ImagingObservation#validateImagingObservationEffectiveTime(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Imaging Observation Effective Time</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.phcr.ImagingObservation#validateImagingObservationValue(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Imaging Observation Value</em>}</li>
@@ -82,6 +80,7 @@ public class ImagingObservationOperations extends ProblemObservationOperations {
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
+   * self.classCode=vocab::ActClassObservation::OBS
    * @param imagingObservation The receiving '<em><b>Imaging Observation</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -89,8 +88,8 @@ public class ImagingObservationOperations extends ProblemObservationOperations {
    * @generated
    */
 	public static  boolean validateImagingObservationClassCode(ImagingObservation imagingObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
-    if (VALIDATE_IMAGING_OBSERVATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+    if (VALIDATE_IMAGING_OBSERVATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null)
+    {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(PhcrPackage.Literals.IMAGING_OBSERVATION);
       try
@@ -111,10 +110,9 @@ public class ImagingObservationOperations extends ProblemObservationOperations {
             (Diagnostic.ERROR,
              PhcrValidator.DIAGNOSTIC_SOURCE,
              PhcrValidator.IMAGING_OBSERVATION__IMAGING_OBSERVATION_CLASS_CODE,
-             PhcrPlugin.INSTANCE.getString("ImagingObservationClassCode"),
+             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "validateImagingObservationClassCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(imagingObservation, context) }),
              new Object [] { imagingObservation }));
       }
-       
       return false;
     }
     return true;
@@ -144,6 +142,7 @@ public class ImagingObservationOperations extends ProblemObservationOperations {
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
+   * self.moodCode=vocab::x_ActMoodDocumentObservation::EVN
    * @param imagingObservation The receiving '<em><b>Imaging Observation</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -151,8 +150,8 @@ public class ImagingObservationOperations extends ProblemObservationOperations {
    * @generated
    */
 	public static  boolean validateImagingObservationMoodCode(ImagingObservation imagingObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
-    if (VALIDATE_IMAGING_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+    if (VALIDATE_IMAGING_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null)
+    {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(PhcrPackage.Literals.IMAGING_OBSERVATION);
       try
@@ -173,10 +172,9 @@ public class ImagingObservationOperations extends ProblemObservationOperations {
             (Diagnostic.ERROR,
              PhcrValidator.DIAGNOSTIC_SOURCE,
              PhcrValidator.IMAGING_OBSERVATION__IMAGING_OBSERVATION_MOOD_CODE,
-             PhcrPlugin.INSTANCE.getString("ImagingObservationMoodCode"),
+             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "validateImagingObservationMoodCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(imagingObservation, context) }),
              new Object [] { imagingObservation }));
       }
-       
       return false;
     }
     return true;
@@ -206,6 +204,7 @@ public class ImagingObservationOperations extends ProblemObservationOperations {
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
+   * (self.id->isEmpty() or self.id->exists(element | element.isNullFlavorUndefined())) implies (not self.id->isEmpty())
    * @param imagingObservation The receiving '<em><b>Imaging Observation</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -213,8 +212,8 @@ public class ImagingObservationOperations extends ProblemObservationOperations {
    * @generated
    */
 	public static  boolean validateImagingObservationId(ImagingObservation imagingObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
-    if (VALIDATE_IMAGING_OBSERVATION_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+    if (VALIDATE_IMAGING_OBSERVATION_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null)
+    {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(PhcrPackage.Literals.IMAGING_OBSERVATION);
       try
@@ -235,10 +234,9 @@ public class ImagingObservationOperations extends ProblemObservationOperations {
             (Diagnostic.ERROR,
              PhcrValidator.DIAGNOSTIC_SOURCE,
              PhcrValidator.IMAGING_OBSERVATION__IMAGING_OBSERVATION_ID,
-             PhcrPlugin.INSTANCE.getString("ImagingObservationId"),
+             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "validateImagingObservationId", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(imagingObservation, context) }),
              new Object [] { imagingObservation }));
       }
-       
       return false;
     }
     return true;
@@ -269,6 +267,7 @@ public class ImagingObservationOperations extends ProblemObservationOperations {
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
+   * (self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined())
    * @param imagingObservation The receiving '<em><b>Imaging Observation</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -277,8 +276,8 @@ public class ImagingObservationOperations extends ProblemObservationOperations {
    */
 	
 	public static  boolean validateImagingObservationCode(ImagingObservation imagingObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
-    if (VALIDATE_IMAGING_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+    if (VALIDATE_IMAGING_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null)
+    {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(PhcrPackage.Literals.IMAGING_OBSERVATION);
       try
@@ -299,10 +298,9 @@ public class ImagingObservationOperations extends ProblemObservationOperations {
             (Diagnostic.ERROR,
              PhcrValidator.DIAGNOSTIC_SOURCE,
              PhcrValidator.IMAGING_OBSERVATION__IMAGING_OBSERVATION_CODE,
-             PhcrPlugin.INSTANCE.getString("ImagingObservationCode"),
+             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "validateImagingObservationCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(imagingObservation, context) }),
              new Object [] { imagingObservation }));
       }
-       
       return false;
     }
     return true;
@@ -333,6 +331,7 @@ public class ImagingObservationOperations extends ProblemObservationOperations {
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
+   * (self.statusCode.oclIsUndefined() or self.statusCode.isNullFlavorUndefined()) implies (not self.statusCode.oclIsUndefined())
    * @param imagingObservation The receiving '<em><b>Imaging Observation</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -342,8 +341,8 @@ public class ImagingObservationOperations extends ProblemObservationOperations {
   
   public static  boolean validateImagingObservationStatusCodeP(ImagingObservation imagingObservation, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
-  	  
-    if (VALIDATE_IMAGING_OBSERVATION_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+    if (VALIDATE_IMAGING_OBSERVATION_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null)
+    {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(PhcrPackage.Literals.IMAGING_OBSERVATION);
       try
@@ -364,22 +363,9 @@ public class ImagingObservationOperations extends ProblemObservationOperations {
             (Diagnostic.ERROR,
              PhcrValidator.DIAGNOSTIC_SOURCE,
              PhcrValidator.IMAGING_OBSERVATION__IMAGING_OBSERVATION_STATUS_CODE_P,
-             PhcrPlugin.INSTANCE.getString("ImagingObservationStatusCodeP"),
+             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "validateImagingObservationStatusCodeP", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(imagingObservation, context) }),
              new Object [] { imagingObservation }));
       }
-      
-      if (context != null) {
-        // generate a pass token for my dependent constraints to short-circuit or filter results
-        @SuppressWarnings("unchecked")
-        Collection<Object> passToken = (Collection<Object>) context.get("org.openhealthtools.mdht.uml.cda.phcr.ImagingObservationStatusCodeP");
-        if (passToken == null) {
-          // anticipate a reasonably healthy model
-          passToken = new java.util.ArrayList<Object>(3);
-          context.put("org.openhealthtools.mdht.uml.cda.phcr.ImagingObservationStatusCodeP", passToken);
-        }
-        passToken.add(imagingObservation);
-      }
-       
       return false;
     }
     return true;
@@ -412,6 +398,9 @@ public class ImagingObservationOperations extends ProblemObservationOperations {
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
+   * (self.statusCode.oclIsUndefined() or self.statusCode.isNullFlavorUndefined()) implies (not self.statusCode.oclIsUndefined() and self.statusCode.oclIsKindOf(datatypes::CS) and 
+   * let value : datatypes::CS = self.statusCode.oclAsType(datatypes::CS) in 
+   * value.code = 'completed')
    * @param imagingObservation The receiving '<em><b>Imaging Observation</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -420,14 +409,8 @@ public class ImagingObservationOperations extends ProblemObservationOperations {
    */
 	
 	public static  boolean validateImagingObservationStatusCode(ImagingObservation imagingObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
-    Object passToken = (context == null) ? null : context.get("org.openhealthtools.mdht.uml.cda.phcr.ImagingObservationStatusCodeP");
-    if ((passToken instanceof Collection<?>) && ((Collection<?>) passToken).contains(imagingObservation)) {
-      // I have a free pass to short-circuit
-      return true;
-    }
-  	  
-    if (VALIDATE_IMAGING_OBSERVATION_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+    if (VALIDATE_IMAGING_OBSERVATION_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null)
+    {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(PhcrPackage.Literals.IMAGING_OBSERVATION);
       try
@@ -448,10 +431,9 @@ public class ImagingObservationOperations extends ProblemObservationOperations {
             (Diagnostic.ERROR,
              PhcrValidator.DIAGNOSTIC_SOURCE,
              PhcrValidator.IMAGING_OBSERVATION__IMAGING_OBSERVATION_STATUS_CODE,
-             PhcrPlugin.INSTANCE.getString("ImagingObservationStatusCode"),
+             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "validateImagingObservationStatusCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(imagingObservation, context) }),
              new Object [] { imagingObservation }));
       }
-       
       return false;
     }
     return true;
@@ -481,6 +463,7 @@ public class ImagingObservationOperations extends ProblemObservationOperations {
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
+   * (self.effectiveTime.oclIsUndefined() or self.effectiveTime.isNullFlavorUndefined()) implies (not self.effectiveTime.oclIsUndefined())
    * @param imagingObservation The receiving '<em><b>Imaging Observation</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -488,8 +471,8 @@ public class ImagingObservationOperations extends ProblemObservationOperations {
    * @generated
    */
 	public static  boolean validateImagingObservationEffectiveTime(ImagingObservation imagingObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
-    if (VALIDATE_IMAGING_OBSERVATION_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+    if (VALIDATE_IMAGING_OBSERVATION_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null)
+    {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(PhcrPackage.Literals.IMAGING_OBSERVATION);
       try
@@ -507,13 +490,12 @@ public class ImagingObservationOperations extends ProblemObservationOperations {
       {
         diagnostics.add
           (new BasicDiagnostic
-            (Diagnostic.WARNING,
+            (Diagnostic.ERROR,
              PhcrValidator.DIAGNOSTIC_SOURCE,
              PhcrValidator.IMAGING_OBSERVATION__IMAGING_OBSERVATION_EFFECTIVE_TIME,
-             PhcrPlugin.INSTANCE.getString("ImagingObservationEffectiveTime"),
+             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "validateImagingObservationEffectiveTime", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(imagingObservation, context) }),
              new Object [] { imagingObservation }));
       }
-       
       return false;
     }
     return true;
@@ -543,6 +525,7 @@ public class ImagingObservationOperations extends ProblemObservationOperations {
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
+   * (self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (self.value->size() = 1)
    * @param imagingObservation The receiving '<em><b>Imaging Observation</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -550,8 +533,8 @@ public class ImagingObservationOperations extends ProblemObservationOperations {
    * @generated
    */
 	public static  boolean validateImagingObservationValue(ImagingObservation imagingObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
-    if (VALIDATE_IMAGING_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+    if (VALIDATE_IMAGING_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null)
+    {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(PhcrPackage.Literals.IMAGING_OBSERVATION);
       try
@@ -572,10 +555,9 @@ public class ImagingObservationOperations extends ProblemObservationOperations {
             (Diagnostic.ERROR,
              PhcrValidator.DIAGNOSTIC_SOURCE,
              PhcrValidator.IMAGING_OBSERVATION__IMAGING_OBSERVATION_VALUE,
-             PhcrPlugin.INSTANCE.getString("ImagingObservationValue"),
+             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "validateImagingObservationValue", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(imagingObservation, context) }),
              new Object [] { imagingObservation }));
       }
-       
       return false;
     }
     return true;
@@ -605,6 +587,7 @@ public class ImagingObservationOperations extends ProblemObservationOperations {
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
+   * (self.methodCode->isEmpty() or self.methodCode->exists(element | element.isNullFlavorUndefined())) implies (not self.methodCode->isEmpty())
    * @param imagingObservation The receiving '<em><b>Imaging Observation</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -612,8 +595,8 @@ public class ImagingObservationOperations extends ProblemObservationOperations {
    * @generated
    */
 	public static  boolean validateImagingObservationMethodCode(ImagingObservation imagingObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
-    if (VALIDATE_IMAGING_OBSERVATION_METHOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+    if (VALIDATE_IMAGING_OBSERVATION_METHOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null)
+    {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(PhcrPackage.Literals.IMAGING_OBSERVATION);
       try
@@ -631,13 +614,12 @@ public class ImagingObservationOperations extends ProblemObservationOperations {
       {
         diagnostics.add
           (new BasicDiagnostic
-            (Diagnostic.INFO,
+            (Diagnostic.ERROR,
              PhcrValidator.DIAGNOSTIC_SOURCE,
              PhcrValidator.IMAGING_OBSERVATION__IMAGING_OBSERVATION_METHOD_CODE,
-             PhcrPlugin.INSTANCE.getString("ImagingObservationMethodCode"),
+             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "validateImagingObservationMethodCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(imagingObservation, context) }),
              new Object [] { imagingObservation }));
       }
-       
       return false;
     }
     return true;
@@ -667,6 +649,7 @@ public class ImagingObservationOperations extends ProblemObservationOperations {
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
+   * self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.15.3.5')
    * @param imagingObservation The receiving '<em><b>Imaging Observation</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -674,8 +657,8 @@ public class ImagingObservationOperations extends ProblemObservationOperations {
    * @generated
    */
 	public static  boolean validateProblemObservationTemplateId(ImagingObservation imagingObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
-    if (VALIDATE_PROBLEM_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+    if (VALIDATE_PROBLEM_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null)
+    {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(PhcrPackage.Literals.IMAGING_OBSERVATION);
       try
@@ -696,10 +679,9 @@ public class ImagingObservationOperations extends ProblemObservationOperations {
             (Diagnostic.ERROR,
              PhcrValidator.DIAGNOSTIC_SOURCE,
              PhcrValidator.IMAGING_OBSERVATION__PROBLEM_OBSERVATION_TEMPLATE_ID,
-             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "ProblemObservationTemplateId", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(imagingObservation, context) }),
+             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "validateProblemObservationTemplateId", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(imagingObservation, context) }),
              new Object [] { imagingObservation }));
       }
-       
       return false;
     }
     return true;

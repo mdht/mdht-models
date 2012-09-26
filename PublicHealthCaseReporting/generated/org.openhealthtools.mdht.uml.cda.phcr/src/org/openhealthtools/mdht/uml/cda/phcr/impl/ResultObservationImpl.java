@@ -23,7 +23,6 @@ import org.openhealthtools.mdht.uml.cda.phcr.ResultObservation;
 import org.openhealthtools.mdht.uml.cda.phcr.SpecimenCollectionProcedure;
 import org.openhealthtools.mdht.uml.cda.phcr.SusceptibilityResult;
 import org.openhealthtools.mdht.uml.cda.phcr.operations.ResultObservationOperations;
-import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
 
 /**
  * <!-- begin-user-doc -->
@@ -127,23 +126,4 @@ public class ResultObservationImpl extends org.openhealthtools.mdht.uml.cda.ccd.
 	public boolean validateResultObservationTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
     return ResultObservationOperations.validateResultObservationTemplateId(this, diagnostics, context);
   }
-
-	/**
-   * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-   * @generated
-   */
-	public ResultObservation init() {
-      return Initializer.Util.init(this);
-  }
-
-  /**
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    public ResultObservation init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-        Initializer.Util.init(this, initializers);
-        return this;
-    }
 } //ResultObservationImpl

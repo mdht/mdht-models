@@ -23,7 +23,6 @@ import org.openhealthtools.mdht.uml.cda.phcr.cocci.CoccidioidesResultObservation
 import org.openhealthtools.mdht.uml.cda.phcr.cocci.CoccidioidesResultOrganizer;
 import org.openhealthtools.mdht.uml.cda.phcr.cocci.operations.CoccidioidesResultOrganizerOperations;
 import org.openhealthtools.mdht.uml.cda.phcr.impl.ResultOrganizerImpl;
-import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
 
 /**
  * <!-- begin-user-doc -->
@@ -90,23 +89,4 @@ public class CoccidioidesResultOrganizerImpl extends ResultOrganizerImpl impleme
 	public boolean validateResultOrganizerTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
     return CoccidioidesResultOrganizerOperations.validateResultOrganizerTemplateId(this, diagnostics, context);
   }
-
-	/**
-   * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-   * @generated
-   */
-	public CoccidioidesResultOrganizer init() {
-      return Initializer.Util.init(this);
-  }
-
-  /**
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    public CoccidioidesResultOrganizer init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-        Initializer.Util.init(this, initializers);
-        return this;
-    }
 } //CoccidioidesResultOrganizerImpl

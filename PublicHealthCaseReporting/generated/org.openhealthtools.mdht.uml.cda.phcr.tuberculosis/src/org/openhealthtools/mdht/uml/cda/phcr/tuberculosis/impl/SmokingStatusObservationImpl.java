@@ -26,8 +26,6 @@ import org.openhealthtools.mdht.uml.cda.phcr.tuberculosis.TuberculosisPackage;
 
 import org.openhealthtools.mdht.uml.cda.phcr.tuberculosis.operations.SmokingStatusObservationOperations;
 
-import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
-
 /**
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Smoking Status Observation</b></em>'.
@@ -39,78 +37,70 @@ import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
  */
 public class SmokingStatusObservationImpl extends SocialHistoryObservationImpl implements SmokingStatusObservation {
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	protected SmokingStatusObservationImpl() {
-    super();
-  }
+		super();
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	@Override
 	protected EClass eStaticClass() {
-    return TuberculosisPackage.Literals.SMOKING_STATUS_OBSERVATION;
-  }
+		return TuberculosisPackage.Literals.SMOKING_STATUS_OBSERVATION;
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public boolean validateSmokingStatusObservationCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return SmokingStatusObservationOperations.validateSmokingStatusObservationCode(this, diagnostics, context);
-  }
+		return SmokingStatusObservationOperations.validateSmokingStatusObservationCode(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public boolean validateSmokingStatusObservationEffectiveTime(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return SmokingStatusObservationOperations.validateSmokingStatusObservationEffectiveTime(this, diagnostics, context);
-  }
+		return SmokingStatusObservationOperations.validateSmokingStatusObservationEffectiveTime(this, diagnostics, context);
+	}
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
-  public boolean validateSmokingStatusObservationValue(DiagnosticChain diagnostics, Map<Object, Object> context)
-  {
-    return SmokingStatusObservationOperations.validateSmokingStatusObservationValue(this, diagnostics, context);
-  }
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   @Override
   public boolean validateSocialHistoryObservationTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context)
   {
-    return SmokingStatusObservationOperations.validateSocialHistoryObservationTemplateId(this, diagnostics, context);
-  }
+		return SmokingStatusObservationOperations.validateSocialHistoryObservationTemplateId(this, diagnostics, context);
+	}
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
-  public SmokingStatusObservation init() {
-      return Initializer.Util.init(this);
-  }
+	 * @generated
+	 */
+  @Override
+public SmokingStatusObservation init() {
+	    return Initializer.Util.init(this);
+	}
 
   /**
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
      * @generated
      */
-    public SmokingStatusObservation init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+    @Override
+	public SmokingStatusObservation init(Iterable<? extends Initializer<? extends EObject>> initializers) {
         Initializer.Util.init(this, initializers);
         return this;
     }

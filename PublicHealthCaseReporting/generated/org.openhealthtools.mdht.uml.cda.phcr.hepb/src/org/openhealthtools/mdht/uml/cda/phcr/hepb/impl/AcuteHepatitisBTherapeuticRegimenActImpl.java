@@ -19,16 +19,12 @@ import org.eclipse.emf.ecore.EClass;
 
 import org.eclipse.emf.ecore.EObject;
 import org.openhealthtools.mdht.emf.runtime.util.Initializer;
-import org.openhealthtools.mdht.uml.cda.ClinicalStatement;
-
 import org.openhealthtools.mdht.uml.cda.phcr.hepb.AcuteHepatitisBTherapeuticRegimenAct;
 import org.openhealthtools.mdht.uml.cda.phcr.hepb.HepbPackage;
 
 import org.openhealthtools.mdht.uml.cda.phcr.hepb.operations.AcuteHepatitisBTherapeuticRegimenActOperations;
 
 import org.openhealthtools.mdht.uml.cda.phcr.impl.TherapeuticRegimenActImpl;
-
-import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
 
 /**
  * <!-- begin-user-doc -->
@@ -41,49 +37,51 @@ import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
  */
 public class AcuteHepatitisBTherapeuticRegimenActImpl extends TherapeuticRegimenActImpl implements AcuteHepatitisBTherapeuticRegimenAct {
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	protected AcuteHepatitisBTherapeuticRegimenActImpl() {
-    super();
-  }
+		super();
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	@Override
 	protected EClass eStaticClass() {
-    return HepbPackage.Literals.ACUTE_HEPATITIS_BTHERAPEUTIC_REGIMEN_ACT;
-  }
+		return HepbPackage.Literals.ACUTE_HEPATITIS_BTHERAPEUTIC_REGIMEN_ACT;
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	@Override
 	public boolean validateTherapeuticRegimenActTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return AcuteHepatitisBTherapeuticRegimenActOperations.validateTherapeuticRegimenActTemplateId(this, diagnostics, context);
-  }
+		return AcuteHepatitisBTherapeuticRegimenActOperations.validateTherapeuticRegimenActTemplateId(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
+	@Override
 	public AcuteHepatitisBTherapeuticRegimenAct init() {
-      return Initializer.Util.init(this);
-  }
+	    return Initializer.Util.init(this);
+	}
 
   /**
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
      * @generated
      */
-    public AcuteHepatitisBTherapeuticRegimenAct init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+    @Override
+	public AcuteHepatitisBTherapeuticRegimenAct init(Iterable<? extends Initializer<? extends EObject>> initializers) {
         Initializer.Util.init(this, initializers);
         return this;
     }

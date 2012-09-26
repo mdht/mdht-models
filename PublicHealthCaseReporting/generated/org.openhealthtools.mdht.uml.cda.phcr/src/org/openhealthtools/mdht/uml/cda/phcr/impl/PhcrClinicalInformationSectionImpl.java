@@ -26,7 +26,6 @@ import org.openhealthtools.mdht.uml.cda.phcr.PhcrClinicalInformationSection;
 import org.openhealthtools.mdht.uml.cda.phcr.PhcrPackage;
 import org.openhealthtools.mdht.uml.cda.phcr.PhcrRelevantMedicalConditionHistoryObservation;
 import org.openhealthtools.mdht.uml.cda.phcr.operations.PhcrClinicalInformationSectionOperations;
-import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
 
 /**
  * <!-- begin-user-doc -->
@@ -182,24 +181,5 @@ public class PhcrClinicalInformationSectionImpl extends SectionImpl implements P
 	public EList<PhcrRelevantMedicalConditionHistoryObservation> getPhcrRelevantMedicalConditionHistoryObservations() {
     return PhcrClinicalInformationSectionOperations.getPhcrRelevantMedicalConditionHistoryObservations(this);
   }
-
-	/**
-   * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-   * @generated
-   */
-	public PhcrClinicalInformationSection init() {
-      return Initializer.Util.init(this);
-  }
-
-  /**
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    public PhcrClinicalInformationSection init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-        Initializer.Util.init(this, initializers);
-        return this;
-    }
 	  
 } //PhcrClinicalInformationSectionImpl

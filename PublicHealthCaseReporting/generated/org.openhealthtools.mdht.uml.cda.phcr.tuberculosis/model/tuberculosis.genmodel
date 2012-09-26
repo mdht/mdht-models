@@ -118,14 +118,6 @@
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="tuberculosis.ecore#//TuberculosisSocioBehavioralBooleanRiskFactorObservation/TuberculosisSocioBehavioralBooleanRiskFactorObservationNegationInd/diagnostics"/>
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="tuberculosis.ecore#//TuberculosisSocioBehavioralBooleanRiskFactorObservation/TuberculosisSocioBehavioralBooleanRiskFactorObservationNegationInd/context"/>
       </genOperations>
-      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="tuberculosis.ecore#//TuberculosisSocioBehavioralBooleanRiskFactorObservation/TuberculosisSocioBehavioralBooleanRiskFactorObservationValue">
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="tuberculosis.ecore#//TuberculosisSocioBehavioralBooleanRiskFactorObservation/TuberculosisSocioBehavioralBooleanRiskFactorObservationValue/diagnostics"/>
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="tuberculosis.ecore#//TuberculosisSocioBehavioralBooleanRiskFactorObservation/TuberculosisSocioBehavioralBooleanRiskFactorObservationValue/context"/>
-      </genOperations>
-      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="tuberculosis.ecore#//TuberculosisSocioBehavioralBooleanRiskFactorObservation/TuberculosisSocioBehavioralBooleanRiskFactorObservationCodeP">
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="tuberculosis.ecore#//TuberculosisSocioBehavioralBooleanRiskFactorObservation/TuberculosisSocioBehavioralBooleanRiskFactorObservationCodeP/diagnostics"/>
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="tuberculosis.ecore#//TuberculosisSocioBehavioralBooleanRiskFactorObservation/TuberculosisSocioBehavioralBooleanRiskFactorObservationCodeP/context"/>
-      </genOperations>
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="tuberculosis.ecore#//TuberculosisSocioBehavioralBooleanRiskFactorObservation/TuberculosisSocioBehavioralBooleanRiskFactorObservationCode">
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="tuberculosis.ecore#//TuberculosisSocioBehavioralBooleanRiskFactorObservation/TuberculosisSocioBehavioralBooleanRiskFactorObservationCode/diagnostics"/>
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="tuberculosis.ecore#//TuberculosisSocioBehavioralBooleanRiskFactorObservation/TuberculosisSocioBehavioralBooleanRiskFactorObservationCode/context"/>
@@ -139,10 +131,6 @@
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="tuberculosis.ecore#//SmokingStatusObservation/SmokingStatusObservationEffectiveTime">
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="tuberculosis.ecore#//SmokingStatusObservation/SmokingStatusObservationEffectiveTime/diagnostics"/>
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="tuberculosis.ecore#//SmokingStatusObservation/SmokingStatusObservationEffectiveTime/context"/>
-      </genOperations>
-      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="tuberculosis.ecore#//SmokingStatusObservation/SmokingStatusObservationValue">
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="tuberculosis.ecore#//SmokingStatusObservation/SmokingStatusObservationValue/diagnostics"/>
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="tuberculosis.ecore#//SmokingStatusObservation/SmokingStatusObservationValue/context"/>
       </genOperations>
     </genClasses>
     <genClasses xsi:type="genmodel:GenClass" ecoreClass="tuberculosis.ecore#//HIVStatusObservation">
@@ -162,14 +150,6 @@
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="tuberculosis.ecore#//HIVStatusObservation/HIVStatusObservationStatusCode/diagnostics"/>
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="tuberculosis.ecore#//HIVStatusObservation/HIVStatusObservationStatusCode/context"/>
       </genOperations>
-      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="tuberculosis.ecore#//HIVStatusObservation/HIVStatusObservationStatusCodeP">
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="tuberculosis.ecore#//HIVStatusObservation/HIVStatusObservationStatusCodeP/diagnostics"/>
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="tuberculosis.ecore#//HIVStatusObservation/HIVStatusObservationStatusCodeP/context"/>
-      </genOperations>
-      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="tuberculosis.ecore#//HIVStatusObservation/HIVStatusObservationValue">
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="tuberculosis.ecore#//HIVStatusObservation/HIVStatusObservationValue/diagnostics"/>
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="tuberculosis.ecore#//HIVStatusObservation/HIVStatusObservationValue/context"/>
-      </genOperations>
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="tuberculosis.ecore#//HIVStatusObservation/HIVStatusObservationMoodCode">
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="tuberculosis.ecore#//HIVStatusObservation/HIVStatusObservationMoodCode/diagnostics"/>
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="tuberculosis.ecore#//HIVStatusObservation/HIVStatusObservationMoodCode/context"/>
@@ -188,10 +168,6 @@
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="tuberculosis.ecore#//TuberculosisPHCRClinicalInformationSection/getTuberculosisRelevantMedicalConditionHistoryObservations"/>
     </genClasses>
     <genClasses xsi:type="genmodel:GenClass" ecoreClass="tuberculosis.ecore#//TuberculosisCaseObservation">
-      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="tuberculosis.ecore#//TuberculosisCaseObservation/TuberculosisCaseObservationValueP">
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="tuberculosis.ecore#//TuberculosisCaseObservation/TuberculosisCaseObservationValueP/diagnostics"/>
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="tuberculosis.ecore#//TuberculosisCaseObservation/TuberculosisCaseObservationValueP/context"/>
-      </genOperations>
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="tuberculosis.ecore#//TuberculosisCaseObservation/TuberculosisCaseObservationValue">
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="tuberculosis.ecore#//TuberculosisCaseObservation/TuberculosisCaseObservationValue/diagnostics"/>
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="tuberculosis.ecore#//TuberculosisCaseObservation/TuberculosisCaseObservationValue/context"/>
@@ -207,12 +183,7 @@
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="tuberculosis.ecore#//TuberculosisCaseObservation/getTuberculosisSignsAndSymptomsObservations"/>
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="tuberculosis.ecore#//TuberculosisCaseObservation/getTuberculosisSiteOfTBDiseaseObservations"/>
     </genClasses>
-    <genClasses xsi:type="genmodel:GenClass" ecoreClass="tuberculosis.ecore#//TuberculosisSignsAndSymptomsObservation">
-      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="tuberculosis.ecore#//TuberculosisSignsAndSymptomsObservation/TuberculosisSignsAndSymptomsObservationValue">
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="tuberculosis.ecore#//TuberculosisSignsAndSymptomsObservation/TuberculosisSignsAndSymptomsObservationValue/diagnostics"/>
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="tuberculosis.ecore#//TuberculosisSignsAndSymptomsObservation/TuberculosisSignsAndSymptomsObservationValue/context"/>
-      </genOperations>
-    </genClasses>
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="tuberculosis.ecore#//TuberculosisSignsAndSymptomsObservation"/>
     <genClasses xsi:type="genmodel:GenClass" ecoreClass="tuberculosis.ecore#//TuberculosisSiteOfTBDiseaseObservation">
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="tuberculosis.ecore#//TuberculosisSiteOfTBDiseaseObservation/TuberculosisSiteOfTBDiseaseObservationTemplateId">
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="tuberculosis.ecore#//TuberculosisSiteOfTBDiseaseObservation/TuberculosisSiteOfTBDiseaseObservationTemplateId/diagnostics"/>
@@ -259,10 +230,6 @@
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="tuberculosis.ecore#//TuberculosisRelevantMedicalConditionProblemObservation/TuberculosisRelevantMedicalConditionProblemObservationCode/diagnostics"/>
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="tuberculosis.ecore#//TuberculosisRelevantMedicalConditionProblemObservation/TuberculosisRelevantMedicalConditionProblemObservationCode/context"/>
       </genOperations>
-      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="tuberculosis.ecore#//TuberculosisRelevantMedicalConditionProblemObservation/TuberculosisRelevantMedicalConditionProblemObservationValue">
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="tuberculosis.ecore#//TuberculosisRelevantMedicalConditionProblemObservation/TuberculosisRelevantMedicalConditionProblemObservationValue/diagnostics"/>
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="tuberculosis.ecore#//TuberculosisRelevantMedicalConditionProblemObservation/TuberculosisRelevantMedicalConditionProblemObservationValue/context"/>
-      </genOperations>
     </genClasses>
     <genClasses xsi:type="genmodel:GenClass" ecoreClass="tuberculosis.ecore#//TuberculosisPHCRRelevantDxTestsSection">
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="tuberculosis.ecore#//TuberculosisPHCRRelevantDxTestsSection/TuberculosisPHCRRelevantDxTestsSectionTuberculosisResultOrganizer">
@@ -277,10 +244,6 @@
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="tuberculosis.ecore#//TuberculosisPHCRRelevantDxTestsSection/getTuberculosisResultObservations"/>
     </genClasses>
     <genClasses xsi:type="genmodel:GenClass" ecoreClass="tuberculosis.ecore#//TuberculosisResultOrganizer">
-      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="tuberculosis.ecore#//TuberculosisResultOrganizer/TuberculosisResultOrganizerCodeP">
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="tuberculosis.ecore#//TuberculosisResultOrganizer/TuberculosisResultOrganizerCodeP/diagnostics"/>
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="tuberculosis.ecore#//TuberculosisResultOrganizer/TuberculosisResultOrganizerCodeP/context"/>
-      </genOperations>
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="tuberculosis.ecore#//TuberculosisResultOrganizer/TuberculosisResultOrganizerCode">
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="tuberculosis.ecore#//TuberculosisResultOrganizer/TuberculosisResultOrganizerCode/diagnostics"/>
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="tuberculosis.ecore#//TuberculosisResultOrganizer/TuberculosisResultOrganizerCode/context"/>
@@ -292,10 +255,6 @@
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="tuberculosis.ecore#//TuberculosisResultOrganizer/getTuberculosisResultObservations"/>
     </genClasses>
     <genClasses xsi:type="genmodel:GenClass" ecoreClass="tuberculosis.ecore#//TuberculosisResultObservation">
-      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="tuberculosis.ecore#//TuberculosisResultObservation/TuberculosisResultObservationCodeP">
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="tuberculosis.ecore#//TuberculosisResultObservation/TuberculosisResultObservationCodeP/diagnostics"/>
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="tuberculosis.ecore#//TuberculosisResultObservation/TuberculosisResultObservationCodeP/context"/>
-      </genOperations>
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="tuberculosis.ecore#//TuberculosisResultObservation/TuberculosisResultObservationCode">
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="tuberculosis.ecore#//TuberculosisResultObservation/TuberculosisResultObservationCode/diagnostics"/>
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="tuberculosis.ecore#//TuberculosisResultObservation/TuberculosisResultObservationCode/context"/>

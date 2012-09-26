@@ -10,6 +10,9 @@
  *******************************************************************************/
 package org.openhealthtools.mdht.uml.cda.phcr.flu;
 
+import java.lang.Iterable;
+import org.eclipse.emf.ecore.EObject;
+import org.openhealthtools.mdht.emf.runtime.util.Initializer;
 import org.openhealthtools.mdht.uml.cda.ccd.MedicationActivity;
 
 /**
@@ -19,7 +22,7 @@ import org.openhealthtools.mdht.uml.cda.ccd.MedicationActivity;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.phcr.flu.fluPackage#getInfluenzaImmunizationActivity()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation templateId.root='2.16.840.1.113883.10.20.15.3.77' constraints.validation.error='InfluenzaImmunizationActivityTemplateId'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='InfluenzaImmunizationActivityTemplateId' templateId.root='2.16.840.1.113883.10.20.15.3.77'"
  * @generated
  */
 public interface InfluenzaImmunizationActivity extends MedicationActivity {
@@ -29,4 +32,11 @@ public interface InfluenzaImmunizationActivity extends MedicationActivity {
 	 * @generated
 	 */
 	public InfluenzaImmunizationActivity init();
+
+	/**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    public InfluenzaImmunizationActivity init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // InfluenzaImmunizationActivity

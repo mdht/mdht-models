@@ -63,6 +63,7 @@ public class WnvPhcrRelevantDxTestsSectionOperations extends PhcrRelevantDxTests
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
+   * self.entry->exists(entry : cda::Entry | not entry.organizer.oclIsUndefined() and entry.organizer.oclIsKindOf(wnv::WnvResultOrganizer) and entry.typeCode = vocab::x_ActRelationshipEntry::DRIV)
    * @param wnvPhcrRelevantDxTestsSection The receiving '<em><b>Phcr Relevant Dx Tests Section</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -70,8 +71,8 @@ public class WnvPhcrRelevantDxTestsSectionOperations extends PhcrRelevantDxTests
    * @generated
    */
 	public static  boolean validateWnvPhcrRelevantDxTestsSectionWnvResultOrganizer(WnvPhcrRelevantDxTestsSection wnvPhcrRelevantDxTestsSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
-    if (VALIDATE_WNV_PHCR_RELEVANT_DX_TESTS_SECTION_WNV_RESULT_ORGANIZER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+    if (VALIDATE_WNV_PHCR_RELEVANT_DX_TESTS_SECTION_WNV_RESULT_ORGANIZER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null)
+    {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(WnvPackage.Literals.WNV_PHCR_RELEVANT_DX_TESTS_SECTION);
       try
@@ -89,13 +90,12 @@ public class WnvPhcrRelevantDxTestsSectionOperations extends PhcrRelevantDxTests
       {
         diagnostics.add
           (new BasicDiagnostic
-            (Diagnostic.INFO,
+            (Diagnostic.ERROR,
              WnvValidator.DIAGNOSTIC_SOURCE,
              WnvValidator.WNV_PHCR_RELEVANT_DX_TESTS_SECTION__WNV_PHCR_RELEVANT_DX_TESTS_SECTION_WNV_RESULT_ORGANIZER,
-             WnvPlugin.INSTANCE.getString("WnvPhcrRelevantDxTestsSectionWnvResultOrganizer"),
+             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "validateWnvPhcrRelevantDxTestsSectionWnvResultOrganizer", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(wnvPhcrRelevantDxTestsSection, context) }),
              new Object [] { wnvPhcrRelevantDxTestsSection }));
       }
-       
       return false;
     }
     return true;
@@ -149,6 +149,7 @@ public class WnvPhcrRelevantDxTestsSectionOperations extends PhcrRelevantDxTests
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
+   * self.entry->exists(entry : cda::Entry | not entry.observation.oclIsUndefined() and entry.observation.oclIsKindOf(wnv::WnvResultObservation) and entry.typeCode = vocab::x_ActRelationshipEntry::DRIV)
    * @param wnvPhcrRelevantDxTestsSection The receiving '<em><b>Phcr Relevant Dx Tests Section</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -157,8 +158,8 @@ public class WnvPhcrRelevantDxTestsSectionOperations extends PhcrRelevantDxTests
    */
 	
 	public static  boolean validateWnvPhcrRelevantDxTestsSectionWnvResultObservation(WnvPhcrRelevantDxTestsSection wnvPhcrRelevantDxTestsSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
-    if (VALIDATE_WNV_PHCR_RELEVANT_DX_TESTS_SECTION_WNV_RESULT_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+    if (VALIDATE_WNV_PHCR_RELEVANT_DX_TESTS_SECTION_WNV_RESULT_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null)
+    {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(WnvPackage.Literals.WNV_PHCR_RELEVANT_DX_TESTS_SECTION);
       try
@@ -176,13 +177,12 @@ public class WnvPhcrRelevantDxTestsSectionOperations extends PhcrRelevantDxTests
       {
         diagnostics.add
           (new BasicDiagnostic
-            (Diagnostic.WARNING,
+            (Diagnostic.ERROR,
              WnvValidator.DIAGNOSTIC_SOURCE,
              WnvValidator.WNV_PHCR_RELEVANT_DX_TESTS_SECTION__WNV_PHCR_RELEVANT_DX_TESTS_SECTION_WNV_RESULT_OBSERVATION,
-             WnvPlugin.INSTANCE.getString("WnvPhcrRelevantDxTestsSectionWnvResultObservation"),
+             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "validateWnvPhcrRelevantDxTestsSectionWnvResultObservation", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(wnvPhcrRelevantDxTestsSection, context) }),
              new Object [] { wnvPhcrRelevantDxTestsSection }));
       }
-       
       return false;
     }
     return true;
@@ -191,6 +191,10 @@ public class WnvPhcrRelevantDxTestsSectionOperations extends PhcrRelevantDxTests
 	/**
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
+   * <!-- begin-model-doc -->
+   * self.getOrganizers()->select(organizer : cda::Organizer | not organizer.oclIsUndefined() and organizer.oclIsKindOf(wnv::WnvResultOrganizer)).oclAsType(wnv::WnvResultOrganizer)
+   * @param wnvPhcrRelevantDxTestsSection The receiving '<em><b>Phcr Relevant Dx Tests Section</b></em>' model object.
+   * <!-- end-model-doc -->
    * @generated
    */
 	public static  EList<WnvResultOrganizer> getWnvResultOrganizers(WnvPhcrRelevantDxTestsSection wnvPhcrRelevantDxTestsSection) {
@@ -257,6 +261,10 @@ public class WnvPhcrRelevantDxTestsSectionOperations extends PhcrRelevantDxTests
 	/**
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
+   * <!-- begin-model-doc -->
+   * self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(wnv::WnvResultObservation)).oclAsType(wnv::WnvResultObservation)
+   * @param wnvPhcrRelevantDxTestsSection The receiving '<em><b>Phcr Relevant Dx Tests Section</b></em>' model object.
+   * <!-- end-model-doc -->
    * @generated
    */
 	
@@ -306,6 +314,7 @@ public class WnvPhcrRelevantDxTestsSectionOperations extends PhcrRelevantDxTests
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
+   * self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.15.2.46')
    * @param wnvPhcrRelevantDxTestsSection The receiving '<em><b>Phcr Relevant Dx Tests Section</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -314,8 +323,8 @@ public class WnvPhcrRelevantDxTestsSectionOperations extends PhcrRelevantDxTests
    */
 	
 	public static  boolean validateResultsSectionTemplateId(WnvPhcrRelevantDxTestsSection wnvPhcrRelevantDxTestsSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
-    if (VALIDATE_RESULTS_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+    if (VALIDATE_RESULTS_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null)
+    {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(WnvPackage.Literals.WNV_PHCR_RELEVANT_DX_TESTS_SECTION);
       try
@@ -336,10 +345,9 @@ public class WnvPhcrRelevantDxTestsSectionOperations extends PhcrRelevantDxTests
             (Diagnostic.ERROR,
              WnvValidator.DIAGNOSTIC_SOURCE,
              WnvValidator.WNV_PHCR_RELEVANT_DX_TESTS_SECTION__RESULTS_SECTION_TEMPLATE_ID,
-             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "ResultsSectionTemplateId", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(wnvPhcrRelevantDxTestsSection, context) }),
+             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "validateResultsSectionTemplateId", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(wnvPhcrRelevantDxTestsSection, context) }),
              new Object [] { wnvPhcrRelevantDxTestsSection }));
       }
-       
       return false;
     }
     return true;

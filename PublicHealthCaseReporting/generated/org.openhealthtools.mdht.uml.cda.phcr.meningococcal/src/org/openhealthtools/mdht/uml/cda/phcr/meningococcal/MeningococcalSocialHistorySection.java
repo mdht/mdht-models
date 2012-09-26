@@ -13,7 +13,6 @@ package org.openhealthtools.mdht.uml.cda.phcr.meningococcal;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
-
 import org.openhealthtools.mdht.uml.cda.phcr.PhcrSocialHistorySection;
 
 /**

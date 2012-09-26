@@ -21,7 +21,6 @@ import org.openhealthtools.mdht.uml.cda.impl.ObservationImpl;
 import org.openhealthtools.mdht.uml.cda.phcr.PhcrPackage;
 import org.openhealthtools.mdht.uml.cda.phcr.SusceptibilityResult;
 import org.openhealthtools.mdht.uml.cda.phcr.operations.SusceptibilityResultOperations;
-import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
 
 /**
  * <!-- begin-user-doc -->
@@ -114,23 +113,4 @@ public class SusceptibilityResultImpl extends ObservationImpl implements Suscept
 	public boolean validateSusceptibilityResultStatusCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
     return SusceptibilityResultOperations.validateSusceptibilityResultStatusCodeP(this, diagnostics, context);
   }
-
-	/**
-   * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-   * @generated
-   */
-	public SusceptibilityResult init() {
-      return Initializer.Util.init(this);
-  }
-
-  /**
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    public SusceptibilityResult init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-        Initializer.Util.init(this, initializers);
-        return this;
-    }
 } //SusceptibilityResultImpl

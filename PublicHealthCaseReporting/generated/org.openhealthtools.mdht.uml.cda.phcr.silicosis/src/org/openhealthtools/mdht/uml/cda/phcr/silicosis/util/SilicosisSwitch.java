@@ -29,7 +29,6 @@ import org.openhealthtools.mdht.uml.cda.phcr.PhcrRelevantDxTestsSection;
 import org.openhealthtools.mdht.uml.cda.phcr.PhcrSocialHistorySection;
 import org.openhealthtools.mdht.uml.cda.phcr.PublicHealthCaseReport;
 import org.openhealthtools.mdht.uml.cda.phcr.SignsAndSymptomsObservation;
-import org.openhealthtools.mdht.uml.cda.phcr.silicosis.*;
 import org.openhealthtools.mdht.uml.cda.phcr.silicosis.SilicosisCaseObservation;
 import org.openhealthtools.mdht.uml.cda.phcr.silicosis.SilicosisCaseReport;
 import org.openhealthtools.mdht.uml.cda.phcr.silicosis.SilicosisHistoryOfTuberculosisObservation;
@@ -59,631 +58,617 @@ import org.openhealthtools.mdht.uml.hl7.rim.InfrastructureRoot;
  */
 public class SilicosisSwitch<T> {
 	/**
-   * The cached model package
-   * <!-- begin-user-doc -->
+	 * The cached model package
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	protected static SilicosisPackage modelPackage;
 
 	/**
-   * Creates an instance of the switch.
-   * <!-- begin-user-doc -->
+	 * Creates an instance of the switch.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public SilicosisSwitch() {
-    if (modelPackage == null)
-    {
-      modelPackage = SilicosisPackage.eINSTANCE;
-    }
-  }
+		if (modelPackage == null) {
+			modelPackage = SilicosisPackage.eINSTANCE;
+		}
+	}
 
 	/**
-   * Calls <code>caseXXX</code> for each class of the model until one returns a non null result; it yields that result.
-   * <!-- begin-user-doc -->
+	 * Calls <code>caseXXX</code> for each class of the model until one returns a non null result; it yields that result.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @return the first non-null result returned by a <code>caseXXX</code> call.
-   * @generated
-   */
+	 * @return the first non-null result returned by a <code>caseXXX</code> call.
+	 * @generated
+	 */
 	public T doSwitch(EObject theEObject) {
-    return doSwitch(theEObject.eClass(), theEObject);
-  }
+		return doSwitch(theEObject.eClass(), theEObject);
+	}
 
 	/**
-   * Calls <code>caseXXX</code> for each class of the model until one returns a non null result; it yields that result.
-   * <!-- begin-user-doc -->
+	 * Calls <code>caseXXX</code> for each class of the model until one returns a non null result; it yields that result.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @return the first non-null result returned by a <code>caseXXX</code> call.
-   * @generated
-   */
+	 * @return the first non-null result returned by a <code>caseXXX</code> call.
+	 * @generated
+	 */
 	protected T doSwitch(EClass theEClass, EObject theEObject) {
-    if (theEClass.eContainer() == modelPackage)
-    {
-      return doSwitch(theEClass.getClassifierID(), theEObject);
-    }
-    else
-    {
-      List<EClass> eSuperTypes = theEClass.getESuperTypes();
-      return
-        eSuperTypes.isEmpty() ?
-          defaultCase(theEObject) :
-          doSwitch(eSuperTypes.get(0), theEObject);
-    }
-  }
+		if (theEClass.eContainer() == modelPackage) {
+			return doSwitch(theEClass.getClassifierID(), theEObject);
+		}
+		else {
+			List<EClass> eSuperTypes = theEClass.getESuperTypes();
+			return
+				eSuperTypes.isEmpty() ?
+					defaultCase(theEObject) :
+					doSwitch(eSuperTypes.get(0), theEObject);
+		}
+	}
 
 	/**
-   * Calls <code>caseXXX</code> for each class of the model until one returns a non null result; it yields that result.
-   * <!-- begin-user-doc -->
+	 * Calls <code>caseXXX</code> for each class of the model until one returns a non null result; it yields that result.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @return the first non-null result returned by a <code>caseXXX</code> call.
-   * @generated
-   */
+	 * @return the first non-null result returned by a <code>caseXXX</code> call.
+	 * @generated
+	 */
 	protected T doSwitch(int classifierID, EObject theEObject) {
-    switch (classifierID)
-    {
-      case SilicosisPackage.SILICOSIS_CASE_REPORT:
-      {
-        SilicosisCaseReport silicosisCaseReport = (SilicosisCaseReport)theEObject;
-        T result = caseSilicosisCaseReport(silicosisCaseReport);
-        if (result == null) result = casePublicHealthCaseReport(silicosisCaseReport);
-        if (result == null) result = caseClinicalDocument(silicosisCaseReport);
-        if (result == null) result = caseAct(silicosisCaseReport);
-        if (result == null) result = caseInfrastructureRoot(silicosisCaseReport);
-        if (result == null) result = defaultCase(theEObject);
-        return result;
-      }
-      case SilicosisPackage.SILICOSIS_PHCR_SOCIAL_HISTORY_SECTION:
-      {
-        SilicosisPHCRSocialHistorySection silicosisPHCRSocialHistorySection = (SilicosisPHCRSocialHistorySection)theEObject;
-        T result = caseSilicosisPHCRSocialHistorySection(silicosisPHCRSocialHistorySection);
-        if (result == null) result = casePhcrSocialHistorySection(silicosisPHCRSocialHistorySection);
-        if (result == null) result = caseSocialHistorySection(silicosisPHCRSocialHistorySection);
-        if (result == null) result = caseSection(silicosisPHCRSocialHistorySection);
-        if (result == null) result = caseAct(silicosisPHCRSocialHistorySection);
-        if (result == null) result = caseInfrastructureRoot(silicosisPHCRSocialHistorySection);
-        if (result == null) result = defaultCase(theEObject);
-        return result;
-      }
-      case SilicosisPackage.SILICOSIS_SOCIO_BEHAVIORAL_BOOLEAN_RISK_FACTOR_OBSERVATION:
-      {
-        SilicosisSocioBehavioralBooleanRiskFactorObservation silicosisSocioBehavioralBooleanRiskFactorObservation = (SilicosisSocioBehavioralBooleanRiskFactorObservation)theEObject;
-        T result = caseSilicosisSocioBehavioralBooleanRiskFactorObservation(silicosisSocioBehavioralBooleanRiskFactorObservation);
-        if (result == null) result = caseSocialHistoryObservation(silicosisSocioBehavioralBooleanRiskFactorObservation);
-        if (result == null) result = caseObservation(silicosisSocioBehavioralBooleanRiskFactorObservation);
-        if (result == null) result = caseClinicalStatement(silicosisSocioBehavioralBooleanRiskFactorObservation);
-        if (result == null) result = caseAct(silicosisSocioBehavioralBooleanRiskFactorObservation);
-        if (result == null) result = caseInfrastructureRoot(silicosisSocioBehavioralBooleanRiskFactorObservation);
-        if (result == null) result = defaultCase(theEObject);
-        return result;
-      }
-      case SilicosisPackage.SILICOSIS_POSSIBLE_EXPOSURE_LOCATION_AND_TYPE_ACT:
-      {
-        SilicosisPossibleExposureLocationAndTypeAct silicosisPossibleExposureLocationAndTypeAct = (SilicosisPossibleExposureLocationAndTypeAct)theEObject;
-        T result = caseSilicosisPossibleExposureLocationAndTypeAct(silicosisPossibleExposureLocationAndTypeAct);
-        if (result == null) result = caseCDA_Act(silicosisPossibleExposureLocationAndTypeAct);
-        if (result == null) result = caseClinicalStatement(silicosisPossibleExposureLocationAndTypeAct);
-        if (result == null) result = caseAct(silicosisPossibleExposureLocationAndTypeAct);
-        if (result == null) result = caseInfrastructureRoot(silicosisPossibleExposureLocationAndTypeAct);
-        if (result == null) result = defaultCase(theEObject);
-        return result;
-      }
-      case SilicosisPackage.SILICOSIS_PHCR_CLINICAL_INFORMATION_SECTION:
-      {
-        SilicosisPHCRClinicalInformationSection silicosisPHCRClinicalInformationSection = (SilicosisPHCRClinicalInformationSection)theEObject;
-        T result = caseSilicosisPHCRClinicalInformationSection(silicosisPHCRClinicalInformationSection);
-        if (result == null) result = casePhcrClinicalInformationSection(silicosisPHCRClinicalInformationSection);
-        if (result == null) result = caseSection(silicosisPHCRClinicalInformationSection);
-        if (result == null) result = caseAct(silicosisPHCRClinicalInformationSection);
-        if (result == null) result = caseInfrastructureRoot(silicosisPHCRClinicalInformationSection);
-        if (result == null) result = defaultCase(theEObject);
-        return result;
-      }
-      case SilicosisPackage.SILICOSIS_CASE_OBSERVATION:
-      {
-        SilicosisCaseObservation silicosisCaseObservation = (SilicosisCaseObservation)theEObject;
-        T result = caseSilicosisCaseObservation(silicosisCaseObservation);
-        if (result == null) result = caseCaseObservation(silicosisCaseObservation);
-        if (result == null) result = caseProblemObservation(silicosisCaseObservation);
-        if (result == null) result = caseObservation(silicosisCaseObservation);
-        if (result == null) result = caseClinicalStatement(silicosisCaseObservation);
-        if (result == null) result = caseAct(silicosisCaseObservation);
-        if (result == null) result = caseInfrastructureRoot(silicosisCaseObservation);
-        if (result == null) result = defaultCase(theEObject);
-        return result;
-      }
-      case SilicosisPackage.SILICOSIS_SIGNS_AND_SYMPTOMS_OBSERVATION:
-      {
-        SilicosisSignsAndSymptomsObservation silicosisSignsAndSymptomsObservation = (SilicosisSignsAndSymptomsObservation)theEObject;
-        T result = caseSilicosisSignsAndSymptomsObservation(silicosisSignsAndSymptomsObservation);
-        if (result == null) result = caseSignsAndSymptomsObservation(silicosisSignsAndSymptomsObservation);
-        if (result == null) result = caseObservation(silicosisSignsAndSymptomsObservation);
-        if (result == null) result = caseClinicalStatement(silicosisSignsAndSymptomsObservation);
-        if (result == null) result = caseAct(silicosisSignsAndSymptomsObservation);
-        if (result == null) result = caseInfrastructureRoot(silicosisSignsAndSymptomsObservation);
-        if (result == null) result = defaultCase(theEObject);
-        return result;
-      }
-      case SilicosisPackage.SILICOSIS_HISTORY_OF_TUBERCULOSIS_OBSERVATION:
-      {
-        SilicosisHistoryOfTuberculosisObservation silicosisHistoryOfTuberculosisObservation = (SilicosisHistoryOfTuberculosisObservation)theEObject;
-        T result = caseSilicosisHistoryOfTuberculosisObservation(silicosisHistoryOfTuberculosisObservation);
-        if (result == null) result = caseProblemObservation(silicosisHistoryOfTuberculosisObservation);
-        if (result == null) result = caseObservation(silicosisHistoryOfTuberculosisObservation);
-        if (result == null) result = caseClinicalStatement(silicosisHistoryOfTuberculosisObservation);
-        if (result == null) result = caseAct(silicosisHistoryOfTuberculosisObservation);
-        if (result == null) result = caseInfrastructureRoot(silicosisHistoryOfTuberculosisObservation);
-        if (result == null) result = defaultCase(theEObject);
-        return result;
-      }
-      case SilicosisPackage.SILICOSIS_PHCR_RELEVANT_DX_TESTS_SECTION:
-      {
-        SilicosisPHCRRelevantDxTestsSection silicosisPHCRRelevantDxTestsSection = (SilicosisPHCRRelevantDxTestsSection)theEObject;
-        T result = caseSilicosisPHCRRelevantDxTestsSection(silicosisPHCRRelevantDxTestsSection);
-        if (result == null) result = casePhcrRelevantDxTestsSection(silicosisPHCRRelevantDxTestsSection);
-        if (result == null) result = caseResultsSection(silicosisPHCRRelevantDxTestsSection);
-        if (result == null) result = caseSection(silicosisPHCRRelevantDxTestsSection);
-        if (result == null) result = caseAct(silicosisPHCRRelevantDxTestsSection);
-        if (result == null) result = caseInfrastructureRoot(silicosisPHCRRelevantDxTestsSection);
-        if (result == null) result = defaultCase(theEObject);
-        return result;
-      }
-      case SilicosisPackage.SILICOSIS_IMAGING_OBSERVATION:
-      {
-        SilicosisImagingObservation silicosisImagingObservation = (SilicosisImagingObservation)theEObject;
-        T result = caseSilicosisImagingObservation(silicosisImagingObservation);
-        if (result == null) result = caseImagingObservation(silicosisImagingObservation);
-        if (result == null) result = caseProblemObservation(silicosisImagingObservation);
-        if (result == null) result = caseObservation(silicosisImagingObservation);
-        if (result == null) result = caseClinicalStatement(silicosisImagingObservation);
-        if (result == null) result = caseAct(silicosisImagingObservation);
-        if (result == null) result = caseInfrastructureRoot(silicosisImagingObservation);
-        if (result == null) result = defaultCase(theEObject);
-        return result;
-      }
-      default: return defaultCase(theEObject);
-    }
-  }
+		switch (classifierID) {
+			case SilicosisPackage.SILICOSIS_CASE_REPORT: {
+				SilicosisCaseReport silicosisCaseReport = (SilicosisCaseReport)theEObject;
+				T result = caseSilicosisCaseReport(silicosisCaseReport);
+				if (result == null) result = casePublicHealthCaseReport(silicosisCaseReport);
+				if (result == null) result = caseClinicalDocument(silicosisCaseReport);
+				if (result == null) result = caseAct(silicosisCaseReport);
+				if (result == null) result = caseInfrastructureRoot(silicosisCaseReport);
+				if (result == null) result = defaultCase(theEObject);
+				return result;
+			}
+			case SilicosisPackage.SILICOSIS_PHCR_SOCIAL_HISTORY_SECTION: {
+				SilicosisPHCRSocialHistorySection silicosisPHCRSocialHistorySection = (SilicosisPHCRSocialHistorySection)theEObject;
+				T result = caseSilicosisPHCRSocialHistorySection(silicosisPHCRSocialHistorySection);
+				if (result == null) result = casePhcrSocialHistorySection(silicosisPHCRSocialHistorySection);
+				if (result == null) result = caseSocialHistorySection(silicosisPHCRSocialHistorySection);
+				if (result == null) result = caseSection(silicosisPHCRSocialHistorySection);
+				if (result == null) result = caseAct(silicosisPHCRSocialHistorySection);
+				if (result == null) result = caseInfrastructureRoot(silicosisPHCRSocialHistorySection);
+				if (result == null) result = defaultCase(theEObject);
+				return result;
+			}
+			case SilicosisPackage.SILICOSIS_SOCIO_BEHAVIORAL_BOOLEAN_RISK_FACTOR_OBSERVATION: {
+				SilicosisSocioBehavioralBooleanRiskFactorObservation silicosisSocioBehavioralBooleanRiskFactorObservation = (SilicosisSocioBehavioralBooleanRiskFactorObservation)theEObject;
+				T result = caseSilicosisSocioBehavioralBooleanRiskFactorObservation(silicosisSocioBehavioralBooleanRiskFactorObservation);
+				if (result == null) result = caseSocialHistoryObservation(silicosisSocioBehavioralBooleanRiskFactorObservation);
+				if (result == null) result = caseObservation(silicosisSocioBehavioralBooleanRiskFactorObservation);
+				if (result == null) result = caseClinicalStatement(silicosisSocioBehavioralBooleanRiskFactorObservation);
+				if (result == null) result = caseAct(silicosisSocioBehavioralBooleanRiskFactorObservation);
+				if (result == null) result = caseInfrastructureRoot(silicosisSocioBehavioralBooleanRiskFactorObservation);
+				if (result == null) result = defaultCase(theEObject);
+				return result;
+			}
+			case SilicosisPackage.SILICOSIS_POSSIBLE_EXPOSURE_LOCATION_AND_TYPE_ACT: {
+				SilicosisPossibleExposureLocationAndTypeAct silicosisPossibleExposureLocationAndTypeAct = (SilicosisPossibleExposureLocationAndTypeAct)theEObject;
+				T result = caseSilicosisPossibleExposureLocationAndTypeAct(silicosisPossibleExposureLocationAndTypeAct);
+				if (result == null) result = caseCDA_Act(silicosisPossibleExposureLocationAndTypeAct);
+				if (result == null) result = caseClinicalStatement(silicosisPossibleExposureLocationAndTypeAct);
+				if (result == null) result = caseAct(silicosisPossibleExposureLocationAndTypeAct);
+				if (result == null) result = caseInfrastructureRoot(silicosisPossibleExposureLocationAndTypeAct);
+				if (result == null) result = defaultCase(theEObject);
+				return result;
+			}
+			case SilicosisPackage.SILICOSIS_PHCR_CLINICAL_INFORMATION_SECTION: {
+				SilicosisPHCRClinicalInformationSection silicosisPHCRClinicalInformationSection = (SilicosisPHCRClinicalInformationSection)theEObject;
+				T result = caseSilicosisPHCRClinicalInformationSection(silicosisPHCRClinicalInformationSection);
+				if (result == null) result = casePhcrClinicalInformationSection(silicosisPHCRClinicalInformationSection);
+				if (result == null) result = caseSection(silicosisPHCRClinicalInformationSection);
+				if (result == null) result = caseAct(silicosisPHCRClinicalInformationSection);
+				if (result == null) result = caseInfrastructureRoot(silicosisPHCRClinicalInformationSection);
+				if (result == null) result = defaultCase(theEObject);
+				return result;
+			}
+			case SilicosisPackage.SILICOSIS_CASE_OBSERVATION: {
+				SilicosisCaseObservation silicosisCaseObservation = (SilicosisCaseObservation)theEObject;
+				T result = caseSilicosisCaseObservation(silicosisCaseObservation);
+				if (result == null) result = caseCaseObservation(silicosisCaseObservation);
+				if (result == null) result = caseProblemObservation(silicosisCaseObservation);
+				if (result == null) result = caseObservation(silicosisCaseObservation);
+				if (result == null) result = caseClinicalStatement(silicosisCaseObservation);
+				if (result == null) result = caseAct(silicosisCaseObservation);
+				if (result == null) result = caseInfrastructureRoot(silicosisCaseObservation);
+				if (result == null) result = defaultCase(theEObject);
+				return result;
+			}
+			case SilicosisPackage.SILICOSIS_SIGNS_AND_SYMPTOMS_OBSERVATION: {
+				SilicosisSignsAndSymptomsObservation silicosisSignsAndSymptomsObservation = (SilicosisSignsAndSymptomsObservation)theEObject;
+				T result = caseSilicosisSignsAndSymptomsObservation(silicosisSignsAndSymptomsObservation);
+				if (result == null) result = caseSignsAndSymptomsObservation(silicosisSignsAndSymptomsObservation);
+				if (result == null) result = caseObservation(silicosisSignsAndSymptomsObservation);
+				if (result == null) result = caseClinicalStatement(silicosisSignsAndSymptomsObservation);
+				if (result == null) result = caseAct(silicosisSignsAndSymptomsObservation);
+				if (result == null) result = caseInfrastructureRoot(silicosisSignsAndSymptomsObservation);
+				if (result == null) result = defaultCase(theEObject);
+				return result;
+			}
+			case SilicosisPackage.SILICOSIS_HISTORY_OF_TUBERCULOSIS_OBSERVATION: {
+				SilicosisHistoryOfTuberculosisObservation silicosisHistoryOfTuberculosisObservation = (SilicosisHistoryOfTuberculosisObservation)theEObject;
+				T result = caseSilicosisHistoryOfTuberculosisObservation(silicosisHistoryOfTuberculosisObservation);
+				if (result == null) result = caseProblemObservation(silicosisHistoryOfTuberculosisObservation);
+				if (result == null) result = caseObservation(silicosisHistoryOfTuberculosisObservation);
+				if (result == null) result = caseClinicalStatement(silicosisHistoryOfTuberculosisObservation);
+				if (result == null) result = caseAct(silicosisHistoryOfTuberculosisObservation);
+				if (result == null) result = caseInfrastructureRoot(silicosisHistoryOfTuberculosisObservation);
+				if (result == null) result = defaultCase(theEObject);
+				return result;
+			}
+			case SilicosisPackage.SILICOSIS_PHCR_RELEVANT_DX_TESTS_SECTION: {
+				SilicosisPHCRRelevantDxTestsSection silicosisPHCRRelevantDxTestsSection = (SilicosisPHCRRelevantDxTestsSection)theEObject;
+				T result = caseSilicosisPHCRRelevantDxTestsSection(silicosisPHCRRelevantDxTestsSection);
+				if (result == null) result = casePhcrRelevantDxTestsSection(silicosisPHCRRelevantDxTestsSection);
+				if (result == null) result = caseResultsSection(silicosisPHCRRelevantDxTestsSection);
+				if (result == null) result = caseSection(silicosisPHCRRelevantDxTestsSection);
+				if (result == null) result = caseAct(silicosisPHCRRelevantDxTestsSection);
+				if (result == null) result = caseInfrastructureRoot(silicosisPHCRRelevantDxTestsSection);
+				if (result == null) result = defaultCase(theEObject);
+				return result;
+			}
+			case SilicosisPackage.SILICOSIS_IMAGING_OBSERVATION: {
+				SilicosisImagingObservation silicosisImagingObservation = (SilicosisImagingObservation)theEObject;
+				T result = caseSilicosisImagingObservation(silicosisImagingObservation);
+				if (result == null) result = caseImagingObservation(silicosisImagingObservation);
+				if (result == null) result = caseProblemObservation(silicosisImagingObservation);
+				if (result == null) result = caseObservation(silicosisImagingObservation);
+				if (result == null) result = caseClinicalStatement(silicosisImagingObservation);
+				if (result == null) result = caseAct(silicosisImagingObservation);
+				if (result == null) result = caseInfrastructureRoot(silicosisImagingObservation);
+				if (result == null) result = defaultCase(theEObject);
+				return result;
+			}
+			default: return defaultCase(theEObject);
+		}
+	}
 
 	/**
-   * Returns the result of interpreting the object as an instance of '<em>Case Report</em>'.
-   * <!-- begin-user-doc -->
+	 * Returns the result of interpreting the object as an instance of '<em>Case Report</em>'.
+	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
 	 * returning a non-null result will terminate the switch.
 	 * <!-- end-user-doc -->
-   * @param object the target of the switch.
-   * @return the result of interpreting the object as an instance of '<em>Case Report</em>'.
-   * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
-   * @generated
-   */
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Case Report</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
 	public T caseSilicosisCaseReport(SilicosisCaseReport object) {
-    return null;
-  }
+		return null;
+	}
 
 	/**
-   * Returns the result of interpreting the object as an instance of '<em>PHCR Social History Section</em>'.
-   * <!-- begin-user-doc -->
+	 * Returns the result of interpreting the object as an instance of '<em>PHCR Social History Section</em>'.
+	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
 	 * returning a non-null result will terminate the switch.
 	 * <!-- end-user-doc -->
-   * @param object the target of the switch.
-   * @return the result of interpreting the object as an instance of '<em>PHCR Social History Section</em>'.
-   * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
-   * @generated
-   */
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>PHCR Social History Section</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
 	public T caseSilicosisPHCRSocialHistorySection(SilicosisPHCRSocialHistorySection object) {
-    return null;
-  }
+		return null;
+	}
 
 	/**
-   * Returns the result of interpreting the object as an instance of '<em>Socio Behavioral Boolean Risk Factor Observation</em>'.
-   * <!-- begin-user-doc -->
+	 * Returns the result of interpreting the object as an instance of '<em>Socio Behavioral Boolean Risk Factor Observation</em>'.
+	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
 	 * returning a non-null result will terminate the switch.
 	 * <!-- end-user-doc -->
-   * @param object the target of the switch.
-   * @return the result of interpreting the object as an instance of '<em>Socio Behavioral Boolean Risk Factor Observation</em>'.
-   * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
-   * @generated
-   */
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Socio Behavioral Boolean Risk Factor Observation</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
 	public T caseSilicosisSocioBehavioralBooleanRiskFactorObservation(SilicosisSocioBehavioralBooleanRiskFactorObservation object) {
-    return null;
-  }
+		return null;
+	}
 
 	/**
-   * Returns the result of interpreting the object as an instance of '<em>PHCR Clinical Information Section</em>'.
-   * <!-- begin-user-doc -->
+	 * Returns the result of interpreting the object as an instance of '<em>PHCR Clinical Information Section</em>'.
+	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
 	 * returning a non-null result will terminate the switch.
 	 * <!-- end-user-doc -->
-   * @param object the target of the switch.
-   * @return the result of interpreting the object as an instance of '<em>PHCR Clinical Information Section</em>'.
-   * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
-   * @generated
-   */
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>PHCR Clinical Information Section</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
 	public T caseSilicosisPHCRClinicalInformationSection(SilicosisPHCRClinicalInformationSection object) {
-    return null;
-  }
+		return null;
+	}
 
 	/**
-   * Returns the result of interpreting the object as an instance of '<em>Case Observation</em>'.
-   * <!-- begin-user-doc -->
+	 * Returns the result of interpreting the object as an instance of '<em>Case Observation</em>'.
+	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
 	 * returning a non-null result will terminate the switch.
 	 * <!-- end-user-doc -->
-   * @param object the target of the switch.
-   * @return the result of interpreting the object as an instance of '<em>Case Observation</em>'.
-   * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
-   * @generated
-   */
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Case Observation</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
 	public T caseSilicosisCaseObservation(SilicosisCaseObservation object) {
-    return null;
-  }
+		return null;
+	}
 
 	/**
-   * Returns the result of interpreting the object as an instance of '<em>Signs And Symptoms Observation</em>'.
-   * <!-- begin-user-doc -->
+	 * Returns the result of interpreting the object as an instance of '<em>Signs And Symptoms Observation</em>'.
+	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
 	 * returning a non-null result will terminate the switch.
 	 * <!-- end-user-doc -->
-   * @param object the target of the switch.
-   * @return the result of interpreting the object as an instance of '<em>Signs And Symptoms Observation</em>'.
-   * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
-   * @generated
-   */
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Signs And Symptoms Observation</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
 	public T caseSilicosisSignsAndSymptomsObservation(SilicosisSignsAndSymptomsObservation object) {
-    return null;
-  }
+		return null;
+	}
 
 	/**
-   * Returns the result of interpreting the object as an instance of '<em>History Of Tuberculosis Observation</em>'.
-   * <!-- begin-user-doc -->
+	 * Returns the result of interpreting the object as an instance of '<em>History Of Tuberculosis Observation</em>'.
+	 * <!-- begin-user-doc -->
    * This implementation returns null;
    * returning a non-null result will terminate the switch.
    * <!-- end-user-doc -->
-   * @param object the target of the switch.
-   * @return the result of interpreting the object as an instance of '<em>History Of Tuberculosis Observation</em>'.
-   * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
-   * @generated
-   */
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>History Of Tuberculosis Observation</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
   public T caseSilicosisHistoryOfTuberculosisObservation(SilicosisHistoryOfTuberculosisObservation object)
   {
-    return null;
-  }
+		return null;
+	}
 
   /**
-   * Returns the result of interpreting the object as an instance of '<em>PHCR Relevant Dx Tests Section</em>'.
-   * <!-- begin-user-doc -->
+	 * Returns the result of interpreting the object as an instance of '<em>PHCR Relevant Dx Tests Section</em>'.
+	 * <!-- begin-user-doc -->
    * This implementation returns null;
    * returning a non-null result will terminate the switch.
    * <!-- end-user-doc -->
-   * @param object the target of the switch.
-   * @return the result of interpreting the object as an instance of '<em>PHCR Relevant Dx Tests Section</em>'.
-   * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
-   * @generated
-   */
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>PHCR Relevant Dx Tests Section</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
   public T caseSilicosisPHCRRelevantDxTestsSection(SilicosisPHCRRelevantDxTestsSection object)
   {
-    return null;
-  }
+		return null;
+	}
 
   /**
-   * Returns the result of interpreting the object as an instance of '<em>Imaging Observation</em>'.
-   * <!-- begin-user-doc -->
+	 * Returns the result of interpreting the object as an instance of '<em>Imaging Observation</em>'.
+	 * <!-- begin-user-doc -->
    * This implementation returns null;
    * returning a non-null result will terminate the switch.
    * <!-- end-user-doc -->
-   * @param object the target of the switch.
-   * @return the result of interpreting the object as an instance of '<em>Imaging Observation</em>'.
-   * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
-   * @generated
-   */
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Imaging Observation</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
   public T caseSilicosisImagingObservation(SilicosisImagingObservation object)
   {
-    return null;
-  }
+		return null;
+	}
 
   /**
-   * Returns the result of interpreting the object as an instance of '<em>Possible Exposure Location And Type Act</em>'.
-   * <!-- begin-user-doc -->
+	 * Returns the result of interpreting the object as an instance of '<em>Possible Exposure Location And Type Act</em>'.
+	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
 	 * returning a non-null result will terminate the switch.
 	 * <!-- end-user-doc -->
-   * @param object the target of the switch.
-   * @return the result of interpreting the object as an instance of '<em>Possible Exposure Location And Type Act</em>'.
-   * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
-   * @generated
-   */
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Possible Exposure Location And Type Act</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
 	public T caseSilicosisPossibleExposureLocationAndTypeAct(SilicosisPossibleExposureLocationAndTypeAct object) {
-    return null;
-  }
+		return null;
+	}
 
 	/**
-   * Returns the result of interpreting the object as an instance of '<em>Infrastructure Root</em>'.
-   * <!-- begin-user-doc -->
+	 * Returns the result of interpreting the object as an instance of '<em>Infrastructure Root</em>'.
+	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
 	 * returning a non-null result will terminate the switch.
 	 * <!-- end-user-doc -->
-   * @param object the target of the switch.
-   * @return the result of interpreting the object as an instance of '<em>Infrastructure Root</em>'.
-   * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
-   * @generated
-   */
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Infrastructure Root</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
 	public T caseInfrastructureRoot(InfrastructureRoot object) {
-    return null;
-  }
+		return null;
+	}
 
 	/**
-   * Returns the result of interpreting the object as an instance of '<em>Act</em>'.
-   * <!-- begin-user-doc -->
+	 * Returns the result of interpreting the object as an instance of '<em>Act</em>'.
+	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
 	 * returning a non-null result will terminate the switch.
 	 * <!-- end-user-doc -->
-   * @param object the target of the switch.
-   * @return the result of interpreting the object as an instance of '<em>Act</em>'.
-   * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
-   * @generated
-   */
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Act</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
 	public T caseAct(Act object) {
-    return null;
-  }
+		return null;
+	}
 
 	/**
-   * Returns the result of interpreting the object as an instance of '<em>Clinical Document</em>'.
-   * <!-- begin-user-doc -->
+	 * Returns the result of interpreting the object as an instance of '<em>Clinical Document</em>'.
+	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
 	 * returning a non-null result will terminate the switch.
 	 * <!-- end-user-doc -->
-   * @param object the target of the switch.
-   * @return the result of interpreting the object as an instance of '<em>Clinical Document</em>'.
-   * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
-   * @generated
-   */
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Clinical Document</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
 	public T caseClinicalDocument(ClinicalDocument object) {
-    return null;
-  }
+		return null;
+	}
 
 	/**
-   * Returns the result of interpreting the object as an instance of '<em>Public Health Case Report</em>'.
-   * <!-- begin-user-doc -->
+	 * Returns the result of interpreting the object as an instance of '<em>Public Health Case Report</em>'.
+	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
 	 * returning a non-null result will terminate the switch.
 	 * <!-- end-user-doc -->
-   * @param object the target of the switch.
-   * @return the result of interpreting the object as an instance of '<em>Public Health Case Report</em>'.
-   * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
-   * @generated
-   */
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Public Health Case Report</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
 	public T casePublicHealthCaseReport(PublicHealthCaseReport object) {
-    return null;
-  }
+		return null;
+	}
 
 	/**
-   * Returns the result of interpreting the object as an instance of '<em>Section</em>'.
-   * <!-- begin-user-doc -->
+	 * Returns the result of interpreting the object as an instance of '<em>Section</em>'.
+	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
 	 * returning a non-null result will terminate the switch.
 	 * <!-- end-user-doc -->
-   * @param object the target of the switch.
-   * @return the result of interpreting the object as an instance of '<em>Section</em>'.
-   * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
-   * @generated
-   */
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Section</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
 	public T caseSection(Section object) {
-    return null;
-  }
+		return null;
+	}
 
 	/**
-   * Returns the result of interpreting the object as an instance of '<em>Social History Section</em>'.
-   * <!-- begin-user-doc -->
+	 * Returns the result of interpreting the object as an instance of '<em>Social History Section</em>'.
+	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
 	 * returning a non-null result will terminate the switch.
 	 * <!-- end-user-doc -->
-   * @param object the target of the switch.
-   * @return the result of interpreting the object as an instance of '<em>Social History Section</em>'.
-   * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
-   * @generated
-   */
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Social History Section</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
 	public T caseSocialHistorySection(SocialHistorySection object) {
-    return null;
-  }
+		return null;
+	}
 
 	/**
-   * Returns the result of interpreting the object as an instance of '<em>Social History Section</em>'.
-   * <!-- begin-user-doc -->
+	 * Returns the result of interpreting the object as an instance of '<em>Social History Section</em>'.
+	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
 	 * returning a non-null result will terminate the switch.
 	 * <!-- end-user-doc -->
-   * @param object the target of the switch.
-   * @return the result of interpreting the object as an instance of '<em>Social History Section</em>'.
-   * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
-   * @generated
-   */
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Social History Section</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
 	public T casePhcrSocialHistorySection(PhcrSocialHistorySection object) {
-    return null;
-  }
+		return null;
+	}
 
 	/**
-   * Returns the result of interpreting the object as an instance of '<em>Clinical Statement</em>'.
-   * <!-- begin-user-doc -->
+	 * Returns the result of interpreting the object as an instance of '<em>Clinical Statement</em>'.
+	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
 	 * returning a non-null result will terminate the switch.
 	 * <!-- end-user-doc -->
-   * @param object the target of the switch.
-   * @return the result of interpreting the object as an instance of '<em>Clinical Statement</em>'.
-   * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
-   * @generated
-   */
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Clinical Statement</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
 	public T caseClinicalStatement(ClinicalStatement object) {
-    return null;
-  }
+		return null;
+	}
 
 	/**
-   * Returns the result of interpreting the object as an instance of '<em>Observation</em>'.
-   * <!-- begin-user-doc -->
+	 * Returns the result of interpreting the object as an instance of '<em>Observation</em>'.
+	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
 	 * returning a non-null result will terminate the switch.
 	 * <!-- end-user-doc -->
-   * @param object the target of the switch.
-   * @return the result of interpreting the object as an instance of '<em>Observation</em>'.
-   * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
-   * @generated
-   */
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Observation</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
 	public T caseObservation(Observation object) {
-    return null;
-  }
+		return null;
+	}
 
 	/**
-   * Returns the result of interpreting the object as an instance of '<em>Social History Observation</em>'.
-   * <!-- begin-user-doc -->
+	 * Returns the result of interpreting the object as an instance of '<em>Social History Observation</em>'.
+	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
 	 * returning a non-null result will terminate the switch.
 	 * <!-- end-user-doc -->
-   * @param object the target of the switch.
-   * @return the result of interpreting the object as an instance of '<em>Social History Observation</em>'.
-   * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
-   * @generated
-   */
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Social History Observation</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
 	public T caseSocialHistoryObservation(SocialHistoryObservation object) {
-    return null;
-  }
+		return null;
+	}
 
 	/**
-   * Returns the result of interpreting the object as an instance of '<em>Clinical Information Section</em>'.
-   * <!-- begin-user-doc -->
+	 * Returns the result of interpreting the object as an instance of '<em>Clinical Information Section</em>'.
+	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
 	 * returning a non-null result will terminate the switch.
 	 * <!-- end-user-doc -->
-   * @param object the target of the switch.
-   * @return the result of interpreting the object as an instance of '<em>Clinical Information Section</em>'.
-   * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
-   * @generated
-   */
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Clinical Information Section</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
 	public T casePhcrClinicalInformationSection(PhcrClinicalInformationSection object) {
-    return null;
-  }
+		return null;
+	}
 
 	/**
-   * Returns the result of interpreting the object as an instance of '<em>Problem Observation</em>'.
-   * <!-- begin-user-doc -->
+	 * Returns the result of interpreting the object as an instance of '<em>Problem Observation</em>'.
+	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
 	 * returning a non-null result will terminate the switch.
 	 * <!-- end-user-doc -->
-   * @param object the target of the switch.
-   * @return the result of interpreting the object as an instance of '<em>Problem Observation</em>'.
-   * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
-   * @generated
-   */
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Problem Observation</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
 	public T caseProblemObservation(ProblemObservation object) {
-    return null;
-  }
+		return null;
+	}
 
 	/**
-   * Returns the result of interpreting the object as an instance of '<em>Case Observation</em>'.
-   * <!-- begin-user-doc -->
+	 * Returns the result of interpreting the object as an instance of '<em>Case Observation</em>'.
+	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
 	 * returning a non-null result will terminate the switch.
 	 * <!-- end-user-doc -->
-   * @param object the target of the switch.
-   * @return the result of interpreting the object as an instance of '<em>Case Observation</em>'.
-   * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
-   * @generated
-   */
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Case Observation</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
 	public T caseCaseObservation(CaseObservation object) {
-    return null;
-  }
+		return null;
+	}
 
 	/**
-   * Returns the result of interpreting the object as an instance of '<em>Signs And Symptoms Observation</em>'.
-   * <!-- begin-user-doc -->
+	 * Returns the result of interpreting the object as an instance of '<em>Signs And Symptoms Observation</em>'.
+	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
 	 * returning a non-null result will terminate the switch.
 	 * <!-- end-user-doc -->
-   * @param object the target of the switch.
-   * @return the result of interpreting the object as an instance of '<em>Signs And Symptoms Observation</em>'.
-   * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
-   * @generated
-   */
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Signs And Symptoms Observation</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
 	public T caseSignsAndSymptomsObservation(SignsAndSymptomsObservation object) {
-    return null;
-  }
+		return null;
+	}
 
 	/**
-   * Returns the result of interpreting the object as an instance of '<em>Imaging Observation</em>'.
-   * <!-- begin-user-doc -->
+	 * Returns the result of interpreting the object as an instance of '<em>Imaging Observation</em>'.
+	 * <!-- begin-user-doc -->
    * This implementation returns null;
    * returning a non-null result will terminate the switch.
    * <!-- end-user-doc -->
-   * @param object the target of the switch.
-   * @return the result of interpreting the object as an instance of '<em>Imaging Observation</em>'.
-   * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
-   * @generated
-   */
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Imaging Observation</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
   public T caseImagingObservation(ImagingObservation object)
   {
-    return null;
-  }
+		return null;
+	}
 
   /**
-   * Returns the result of interpreting the object as an instance of '<em>Results Section</em>'.
-   * <!-- begin-user-doc -->
+	 * Returns the result of interpreting the object as an instance of '<em>Results Section</em>'.
+	 * <!-- begin-user-doc -->
    * This implementation returns null;
    * returning a non-null result will terminate the switch.
    * <!-- end-user-doc -->
-   * @param object the target of the switch.
-   * @return the result of interpreting the object as an instance of '<em>Results Section</em>'.
-   * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
-   * @generated
-   */
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Results Section</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
   public T caseResultsSection(ResultsSection object)
   {
-    return null;
-  }
+		return null;
+	}
 
   /**
-   * Returns the result of interpreting the object as an instance of '<em>Relevant Dx Tests Section</em>'.
-   * <!-- begin-user-doc -->
+	 * Returns the result of interpreting the object as an instance of '<em>Relevant Dx Tests Section</em>'.
+	 * <!-- begin-user-doc -->
    * This implementation returns null;
    * returning a non-null result will terminate the switch.
    * <!-- end-user-doc -->
-   * @param object the target of the switch.
-   * @return the result of interpreting the object as an instance of '<em>Relevant Dx Tests Section</em>'.
-   * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
-   * @generated
-   */
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Relevant Dx Tests Section</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
   public T casePhcrRelevantDxTestsSection(PhcrRelevantDxTestsSection object)
   {
-    return null;
-  }
+		return null;
+	}
 
   /**
-   * Returns the result of interpreting the object as an instance of '<em>Act</em>'.
-   * <!-- begin-user-doc -->
+	 * Returns the result of interpreting the object as an instance of '<em>Act</em>'.
+	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
 	 * returning a non-null result will terminate the switch.
 	 * <!-- end-user-doc -->
-   * @param object the target of the switch.
-   * @return the result of interpreting the object as an instance of '<em>Act</em>'.
-   * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
-   * @generated
-   */
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Act</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
 	public T caseCDA_Act(org.openhealthtools.mdht.uml.cda.Act object) {
-    return null;
-  }
+		return null;
+	}
 
 	/**
-   * Returns the result of interpreting the object as an instance of '<em>EObject</em>'.
-   * <!-- begin-user-doc -->
+	 * Returns the result of interpreting the object as an instance of '<em>EObject</em>'.
+	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
 	 * returning a non-null result will terminate the switch, but this is the last case anyway.
 	 * <!-- end-user-doc -->
-   * @param object the target of the switch.
-   * @return the result of interpreting the object as an instance of '<em>EObject</em>'.
-   * @see #doSwitch(org.eclipse.emf.ecore.EObject)
-   * @generated
-   */
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>EObject</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject)
+	 * @generated
+	 */
 	public T defaultCase(EObject object) {
-    return null;
-  }
+		return null;
+	}
 
 } //SilicosisSwitch

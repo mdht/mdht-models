@@ -10,10 +10,13 @@
  *******************************************************************************/
 package org.openhealthtools.mdht.uml.cda.phcr.hib;
 
+import java.lang.Iterable;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
 
+import org.eclipse.emf.ecore.EObject;
+import org.openhealthtools.mdht.emf.runtime.util.Initializer;
 import org.openhealthtools.mdht.uml.cda.phcr.ResultOrganizer;
 
 /**
@@ -23,7 +26,7 @@ import org.openhealthtools.mdht.uml.cda.phcr.ResultOrganizer;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.phcr.hib.HibPackage#getHibResultOrganizer()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation templateId.root='2.16.840.1.113883.10.20.15.3.136' constraints.validation.error='HibResultOrganizerTemplateId HibResultOrganizerHibResultObservation'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='HibResultOrganizerTemplateId HibResultOrganizerHibResultObservation' templateId.root='2.16.840.1.113883.10.20.15.3.136'"
  * @generated
  */
 public interface HibResultOrganizer extends ResultOrganizer {
@@ -44,10 +47,10 @@ public interface HibResultOrganizer extends ResultOrganizer {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(hib::HibResultObservation))->asSequence()->first().oclAsType(hib::HibResultObservation)
+	 * self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(hib::HibResultObservation))->asSequence()->any(true).oclAsType(hib::HibResultObservation)
 	 * <!-- end-model-doc -->
 	 * @model kind="operation" required="true" ordered="false"
-	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(hib::HibResultObservation))->asSequence()->first().oclAsType(hib::HibResultObservation)'"
+	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(hib::HibResultObservation))->asSequence()->any(true).oclAsType(hib::HibResultObservation)'"
 	 * @generated
 	 */
 	HibResultObservation getHibResultObservation();
@@ -58,4 +61,11 @@ public interface HibResultOrganizer extends ResultOrganizer {
 	 * @generated
 	 */
 	public HibResultOrganizer init();
+
+	/**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    public HibResultOrganizer init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // HibResultOrganizer

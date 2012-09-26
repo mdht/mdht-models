@@ -11,8 +11,6 @@
 package org.openhealthtools.mdht.uml.cda.phcr.chlamydiatrachomatis;
 
 import java.lang.Iterable;
-import java.util.Map;
-import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.ecore.EObject;
 import org.openhealthtools.mdht.emf.runtime.util.Initializer;
 import org.openhealthtools.mdht.uml.cda.phcr.ResultOrganizer;
@@ -32,6 +30,7 @@ public interface chlamydiatrachomatisResultOrganizer extends ResultOrganizer {
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
+   * (self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined())
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
    * <!-- end-model-doc -->
@@ -39,18 +38,4 @@ public interface chlamydiatrachomatisResultOrganizer extends ResultOrganizer {
    * @generated
    */
   boolean validateChlamydiatrachomatisResultOrganizerCode(DiagnosticChain diagnostics, Map<Object, Object> context);
-
-  /**
-   * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-   * @generated
-   */
-	public chlamydiatrachomatisResultOrganizer init();
-
-  /**
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    public chlamydiatrachomatisResultOrganizer init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // chlamydiatrachomatisResultOrganizer

@@ -29,8 +29,6 @@ import org.openhealthtools.mdht.uml.cda.phcr.streppneumo.StrepPneumoResultOrgani
 
 import org.openhealthtools.mdht.uml.cda.phcr.streppneumo.operations.StrepPneumoRelevantDiagnosticTestsAndOrLaboratoryDataSectionOperations;
 
-import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
-
 /**
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Relevant Diagnostic Tests And Or Laboratory Data Section</b></em>'.
@@ -42,85 +40,87 @@ import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
  */
 public class StrepPneumoRelevantDiagnosticTestsAndOrLaboratoryDataSectionImpl extends PhcrRelevantDxTestsSectionImpl implements StrepPneumoRelevantDiagnosticTestsAndOrLaboratoryDataSection {
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	protected StrepPneumoRelevantDiagnosticTestsAndOrLaboratoryDataSectionImpl() {
-    super();
-  }
+		super();
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	@Override
 	protected EClass eStaticClass() {
-    return StrepPneumoPackage.Literals.STREP_PNEUMO_RELEVANT_DIAGNOSTIC_TESTS_AND_OR_LABORATORY_DATA_SECTION;
-  }
+		return StrepPneumoPackage.Literals.STREP_PNEUMO_RELEVANT_DIAGNOSTIC_TESTS_AND_OR_LABORATORY_DATA_SECTION;
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public boolean validateStrepPneumoRelevantDiagnosticTestsAndOrLaboratoryDataSectionStrepPneumoResultObservation(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return StrepPneumoRelevantDiagnosticTestsAndOrLaboratoryDataSectionOperations.validateStrepPneumoRelevantDiagnosticTestsAndOrLaboratoryDataSectionStrepPneumoResultObservation(this, diagnostics, context);
-  }
+		return StrepPneumoRelevantDiagnosticTestsAndOrLaboratoryDataSectionOperations.validateStrepPneumoRelevantDiagnosticTestsAndOrLaboratoryDataSectionStrepPneumoResultObservation(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public boolean validateStrepPneumoRelevantDiagnosticTestsAndOrLaboratoryDataSectionStrepPneumoResultOrganizer(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return StrepPneumoRelevantDiagnosticTestsAndOrLaboratoryDataSectionOperations.validateStrepPneumoRelevantDiagnosticTestsAndOrLaboratoryDataSectionStrepPneumoResultOrganizer(this, diagnostics, context);
-  }
+		return StrepPneumoRelevantDiagnosticTestsAndOrLaboratoryDataSectionOperations.validateStrepPneumoRelevantDiagnosticTestsAndOrLaboratoryDataSectionStrepPneumoResultOrganizer(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public EList<StrepPneumoResultObservation> getStrepPneumoResultObservations() {
-    return StrepPneumoRelevantDiagnosticTestsAndOrLaboratoryDataSectionOperations.getStrepPneumoResultObservations(this);
-  }
+		return StrepPneumoRelevantDiagnosticTestsAndOrLaboratoryDataSectionOperations.getStrepPneumoResultObservations(this);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public EList<StrepPneumoResultOrganizer> getStrepPneumoResultOrganizers() {
-    return StrepPneumoRelevantDiagnosticTestsAndOrLaboratoryDataSectionOperations.getStrepPneumoResultOrganizers(this);
-  }
+		return StrepPneumoRelevantDiagnosticTestsAndOrLaboratoryDataSectionOperations.getStrepPneumoResultOrganizers(this);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	@Override
 	public boolean validateResultsSectionTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return StrepPneumoRelevantDiagnosticTestsAndOrLaboratoryDataSectionOperations.validateResultsSectionTemplateId(this, diagnostics, context);
-  }
+		return StrepPneumoRelevantDiagnosticTestsAndOrLaboratoryDataSectionOperations.validateResultsSectionTemplateId(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
+	@Override
 	public StrepPneumoRelevantDiagnosticTestsAndOrLaboratoryDataSection init() {
-      return Initializer.Util.init(this);
-  }
+	    return Initializer.Util.init(this);
+	}
 
   /**
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
      * @generated
      */
-    public StrepPneumoRelevantDiagnosticTestsAndOrLaboratoryDataSection init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+    @Override
+	public StrepPneumoRelevantDiagnosticTestsAndOrLaboratoryDataSection init(Iterable<? extends Initializer<? extends EObject>> initializers) {
         Initializer.Util.init(this, initializers);
         return this;
     }

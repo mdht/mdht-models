@@ -21,7 +21,6 @@ import org.openhealthtools.mdht.uml.cda.impl.ActImpl;
 import org.openhealthtools.mdht.uml.cda.phcr.cocci.CocciPackage;
 import org.openhealthtools.mdht.uml.cda.phcr.cocci.CoccidioidesPossibleExposureLocationAct;
 import org.openhealthtools.mdht.uml.cda.phcr.cocci.operations.CoccidioidesPossibleExposureLocationActOperations;
-import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
 
 /**
  * <!-- begin-user-doc -->
@@ -106,23 +105,4 @@ public class CoccidioidesPossibleExposureLocationActImpl extends ActImpl impleme
 	public boolean validateCoccidioidesPossibleExposureLocationActStatusCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
     return CoccidioidesPossibleExposureLocationActOperations.validateCoccidioidesPossibleExposureLocationActStatusCode(this, diagnostics, context);
   }
-
-	/**
-   * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-   * @generated
-   */
-	public CoccidioidesPossibleExposureLocationAct init() {
-      return Initializer.Util.init(this);
-  }
-
-  /**
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    public CoccidioidesPossibleExposureLocationAct init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-        Initializer.Util.init(this, initializers);
-        return this;
-    }
 } //CoccidioidesPossibleExposureLocationActImpl

@@ -23,7 +23,6 @@ import org.openhealthtools.mdht.uml.cda.phcr.wnv.WnvCaseObservation;
 import org.openhealthtools.mdht.uml.cda.phcr.wnv.WnvPackage;
 import org.openhealthtools.mdht.uml.cda.phcr.wnv.WnvSignsAndSymptomsObservation;
 import org.openhealthtools.mdht.uml.cda.phcr.wnv.operations.WnvCaseObservationOperations;
-import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
 
 /**
  * <!-- begin-user-doc -->
@@ -94,23 +93,4 @@ public class WnvCaseObservationImpl extends CaseObservationImpl implements WnvCa
 	public boolean validateProblemObservationTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
     return WnvCaseObservationOperations.validateProblemObservationTemplateId(this, diagnostics, context);
   }
-
-		/**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public WnvCaseObservation init() {
-      return Initializer.Util.init(this);
-  }
-
-    /**
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    public WnvCaseObservation init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-        Initializer.Util.init(this, initializers);
-        return this;
-    }
 } //WnvCaseObservationImpl

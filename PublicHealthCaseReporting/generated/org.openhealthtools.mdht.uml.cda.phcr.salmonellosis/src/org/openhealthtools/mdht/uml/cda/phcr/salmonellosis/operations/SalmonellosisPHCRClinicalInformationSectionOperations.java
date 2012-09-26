@@ -83,6 +83,7 @@ public class SalmonellosisPHCRClinicalInformationSectionOperations extends PhcrC
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
+   * self.entry->one(entry : cda::Entry | not entry.observation.oclIsUndefined() and entry.observation.oclIsKindOf(salmonellosis::SalmonellosisCaseObservation) and entry.typeCode = vocab::x_ActRelationshipEntry::DRIV)
    * @param salmonellosisPHCRClinicalInformationSection The receiving '<em><b>PHCR Clinical Information Section</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -92,8 +93,8 @@ public class SalmonellosisPHCRClinicalInformationSectionOperations extends PhcrC
   
   public static  boolean validateSalmonellosisPHCRClinicalInformationSectionSalmonellosisCaseObservation(SalmonellosisPHCRClinicalInformationSection salmonellosisPHCRClinicalInformationSection, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
-  	  
-    if (VALIDATE_SALMONELLOSIS_PHCR_CLINICAL_INFORMATION_SECTION_SALMONELLOSIS_CASE_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+    if (VALIDATE_SALMONELLOSIS_PHCR_CLINICAL_INFORMATION_SECTION_SALMONELLOSIS_CASE_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null)
+    {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(SalmonellosisPackage.Literals.SALMONELLOSIS_PHCR_CLINICAL_INFORMATION_SECTION);
       try
@@ -114,10 +115,9 @@ public class SalmonellosisPHCRClinicalInformationSectionOperations extends PhcrC
             (Diagnostic.ERROR,
              SalmonellosisValidator.DIAGNOSTIC_SOURCE,
              SalmonellosisValidator.SALMONELLOSIS_PHCR_CLINICAL_INFORMATION_SECTION__SALMONELLOSIS_PHCR_CLINICAL_INFORMATION_SECTION_SALMONELLOSIS_CASE_OBSERVATION,
-             SalmonellosisPlugin.INSTANCE.getString("SalmonellosisPHCRClinicalInformationSectionSalmonellosisCaseObservation"),
+             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "validateSalmonellosisPHCRClinicalInformationSectionSalmonellosisCaseObservation", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(salmonellosisPHCRClinicalInformationSection, context) }),
              new Object [] { salmonellosisPHCRClinicalInformationSection }));
       }
-       
       return false;
     }
     return true;
@@ -146,6 +146,10 @@ public class SalmonellosisPHCRClinicalInformationSectionOperations extends PhcrC
   /**
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
+   * <!-- begin-model-doc -->
+   * self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(salmonellosis::SalmonellosisCaseObservation))->asSequence()->any(true).oclAsType(salmonellosis::SalmonellosisCaseObservation)
+   * @param salmonellosisPHCRClinicalInformationSection The receiving '<em><b>PHCR Clinical Information Section</b></em>' model object.
+   * <!-- end-model-doc -->
    * @generated
    */
   
@@ -194,6 +198,7 @@ public class SalmonellosisPHCRClinicalInformationSectionOperations extends PhcrC
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
+   * self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.15.2.37')
    * @param salmonellosisPHCRClinicalInformationSection The receiving '<em><b>PHCR Clinical Information Section</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -203,8 +208,8 @@ public class SalmonellosisPHCRClinicalInformationSectionOperations extends PhcrC
   
   public static  boolean validatePhcrClinicalInformationSectionTemplateId(SalmonellosisPHCRClinicalInformationSection salmonellosisPHCRClinicalInformationSection, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
-  	  
-    if (VALIDATE_PHCR_CLINICAL_INFORMATION_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+    if (VALIDATE_PHCR_CLINICAL_INFORMATION_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null)
+    {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(SalmonellosisPackage.Literals.SALMONELLOSIS_PHCR_CLINICAL_INFORMATION_SECTION);
       try
@@ -225,10 +230,9 @@ public class SalmonellosisPHCRClinicalInformationSectionOperations extends PhcrC
             (Diagnostic.ERROR,
              SalmonellosisValidator.DIAGNOSTIC_SOURCE,
              SalmonellosisValidator.SALMONELLOSIS_PHCR_CLINICAL_INFORMATION_SECTION__PHCR_CLINICAL_INFORMATION_SECTION_TEMPLATE_ID,
-             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "PhcrClinicalInformationSectionTemplateId", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(salmonellosisPHCRClinicalInformationSection, context) }),
+             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "validatePhcrClinicalInformationSectionTemplateId", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(salmonellosisPHCRClinicalInformationSection, context) }),
              new Object [] { salmonellosisPHCRClinicalInformationSection }));
       }
-       
       return false;
     }
     return true;

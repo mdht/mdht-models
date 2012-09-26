@@ -18,31 +18,22 @@ import org.eclipse.emf.common.util.BasicEList;
 import org.eclipse.emf.common.util.Diagnostic;
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.common.util.EList;
-
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EClassifier;
-
+import org.eclipse.emf.ecore.EObject;
 import org.eclipse.emf.ecore.plugin.EcorePlugin;
-
 import org.eclipse.emf.ecore.util.EObjectValidator;
-
 import org.eclipse.ocl.ParserException;
-
 import org.eclipse.ocl.ecore.Constraint;
 import org.eclipse.ocl.ecore.OCL;
-
 import org.eclipse.ocl.expressions.OCLExpression;
-
+import org.openhealthtools.mdht.emf.runtime.util.Initializer;
 import org.openhealthtools.mdht.uml.cda.phcr.impl.CaseObservationImpl;
-
 import org.openhealthtools.mdht.uml.cda.phcr.meningococcal.MeningococcalCaseObservation;
 import org.openhealthtools.mdht.uml.cda.phcr.meningococcal.MeningococcalPackage;
 import org.openhealthtools.mdht.uml.cda.phcr.meningococcal.MeningococcalPlugin;
 import org.openhealthtools.mdht.uml.cda.phcr.meningococcal.MeningococcalSignsAndSymptomsObservation;
-
 import org.openhealthtools.mdht.uml.cda.phcr.meningococcal.util.MeningococcalValidator;
-
-import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
 
 /**
  * <!-- begin-user-doc -->
@@ -152,7 +143,7 @@ public class MeningococcalCaseObservationImpl extends CaseObservationImpl implem
 	public EList<MeningococcalSignsAndSymptomsObservation> getMeningococcalSignsAndSymptomsObservations() {
 		if (GET_MENINGOCOCCAL_SIGNS_AND_SYMPTOMS_OBSERVATIONS__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(MeningococcalPackage.Literals.MENINGOCOCCAL_CASE_OBSERVATION, MeningococcalPackage.Literals.MENINGOCOCCAL_CASE_OBSERVATION.getEAllOperations().get(77));
+			helper.setOperationContext(MeningococcalPackage.Literals.MENINGOCOCCAL_CASE_OBSERVATION, MeningococcalPackage.Literals.MENINGOCOCCAL_CASE_OBSERVATION.getEAllOperations().get(78));
 			try {
 				GET_MENINGOCOCCAL_SIGNS_AND_SYMPTOMS_OBSERVATIONS__EOCL_QRY = helper.createQuery(GET_MENINGOCOCCAL_SIGNS_AND_SYMPTOMS_OBSERVATIONS__EOCL_EXP);
 			}
@@ -232,8 +223,19 @@ public class MeningococcalCaseObservationImpl extends CaseObservationImpl implem
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public MeningococcalCaseObservation init() {
-    	CDAUtil.init(this);
-    	return this;
+	    return Initializer.Util.init(this);
 	}
+
+	/**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    @Override
+	public MeningococcalCaseObservation init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
 } //MeningococcalCaseObservationImpl

@@ -10,6 +10,8 @@
  *******************************************************************************/
 package org.openhealthtools.mdht.uml.cda.phcr.meningococcal;
 
+import org.eclipse.emf.ecore.EObject;
+import org.openhealthtools.mdht.emf.runtime.util.Initializer;
 import org.openhealthtools.mdht.uml.cda.phcr.ResultObservation;
 
 /**
@@ -19,7 +21,7 @@ import org.openhealthtools.mdht.uml.cda.phcr.ResultObservation;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.phcr.meningococcal.MeningococcalPackage#getMeningococcalResultObservation()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation templateId.root='2.16.840.1.113883.10.20.15.3.141' constraints.validation.error='MeningococcalResultObservationTemplateId'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='MeningococcalResultObservationTemplateId' templateId.root='2.16.840.1.113883.10.20.15.3.141'"
  * @generated
  */
 public interface MeningococcalResultObservation extends ResultObservation {
@@ -29,4 +31,11 @@ public interface MeningococcalResultObservation extends ResultObservation {
 	 * @generated
 	 */
 	public MeningococcalResultObservation init();
+
+	/**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    public MeningococcalResultObservation init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // MeningococcalResultObservation

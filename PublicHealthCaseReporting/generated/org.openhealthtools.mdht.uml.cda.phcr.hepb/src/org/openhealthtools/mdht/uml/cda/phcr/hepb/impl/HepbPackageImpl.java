@@ -36,7 +36,6 @@ import org.openhealthtools.mdht.uml.cda.phcr.hepb.AcuteHepatitisBSignsAndSymptom
 import org.openhealthtools.mdht.uml.cda.phcr.hepb.AcuteHepatitisBSocialHistorySection;
 import org.openhealthtools.mdht.uml.cda.phcr.hepb.AcuteHepatitisBSocioBehavioralBooleanRiskFactorObservation;
 import org.openhealthtools.mdht.uml.cda.phcr.hepb.AcuteHepatitisBTherapeuticRegimenAct;
-import org.openhealthtools.mdht.uml.cda.phcr.hepb.AcuteHepatitisBTherapeuticRegimenAct_JobRelatedBodyFluidExposureRiskFrequencyObservation;
 import org.openhealthtools.mdht.uml.cda.phcr.hepb.HepbFactory;
 import org.openhealthtools.mdht.uml.cda.phcr.hepb.HepbPackage;
 import org.openhealthtools.mdht.uml.cda.phcr.hepb.JobRelatedBodyFluidExposureRiskFrequencyObservation;
@@ -233,10 +232,8 @@ public class HepbPackageImpl extends EPackageImpl implements HepbPackage {
         // Register package validator
         EValidator.Registry.INSTANCE.put
             (theHepbPackage, 
-             new EValidator.Descriptor()
-             {
-                 public EValidator getEValidator()
-                 {
+             new EValidator.Descriptor() {
+                 public EValidator getEValidator() {
                      return HepbValidator.INSTANCE;
                  }
              });
@@ -687,25 +684,7 @@ public class HepbPackageImpl extends EPackageImpl implements HepbPackage {
         g1.getETypeArguments().add(g2);
         addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
 
-        op = addEOperation(jobRelatedBodyFluidExposureRiskFrequencyObservationEClass, ecorePackage.getEBoolean(), "validateJobRelatedBodyFluidExposureRiskFrequencyObservationStatusCodeP", 0, 1, IS_UNIQUE, IS_ORDERED);
-        addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
-        g1 = createEGenericType(ecorePackage.getEMap());
-        g2 = createEGenericType(ecorePackage.getEJavaObject());
-        g1.getETypeArguments().add(g2);
-        g2 = createEGenericType(ecorePackage.getEJavaObject());
-        g1.getETypeArguments().add(g2);
-        addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
-
         op = addEOperation(jobRelatedBodyFluidExposureRiskFrequencyObservationEClass, ecorePackage.getEBoolean(), "validateJobRelatedBodyFluidExposureRiskFrequencyObservationValue", 0, 1, IS_UNIQUE, IS_ORDERED);
-        addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
-        g1 = createEGenericType(ecorePackage.getEMap());
-        g2 = createEGenericType(ecorePackage.getEJavaObject());
-        g1.getETypeArguments().add(g2);
-        g2 = createEGenericType(ecorePackage.getEJavaObject());
-        g1.getETypeArguments().add(g2);
-        addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
-
-        op = addEOperation(jobRelatedBodyFluidExposureRiskFrequencyObservationEClass, ecorePackage.getEBoolean(), "validateJobRelatedBodyFluidExposureRiskFrequencyObservationValueP", 0, 1, IS_UNIQUE, IS_ORDERED);
         addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
         g1 = createEGenericType(ecorePackage.getEMap());
         g2 = createEGenericType(ecorePackage.getEJavaObject());
@@ -799,24 +778,6 @@ public class HepbPackageImpl extends EPackageImpl implements HepbPackage {
         g1.getETypeArguments().add(g2);
         addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
 
-        op = addEOperation(acuteHepatitisBSocioBehavioralBooleanRiskFactorObservationEClass, ecorePackage.getEBoolean(), "validateAcuteHepatitisBSocioBehavioralBooleanRiskFactorObservationValueP", 0, 1, IS_UNIQUE, IS_ORDERED);
-        addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
-        g1 = createEGenericType(ecorePackage.getEMap());
-        g2 = createEGenericType(ecorePackage.getEJavaObject());
-        g1.getETypeArguments().add(g2);
-        g2 = createEGenericType(ecorePackage.getEJavaObject());
-        g1.getETypeArguments().add(g2);
-        addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
-
-        op = addEOperation(acuteHepatitisBSocioBehavioralBooleanRiskFactorObservationEClass, ecorePackage.getEBoolean(), "validateAcuteHepatitisBSocioBehavioralBooleanRiskFactorObservationCodeP", 0, 1, IS_UNIQUE, IS_ORDERED);
-        addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
-        g1 = createEGenericType(ecorePackage.getEMap());
-        g2 = createEGenericType(ecorePackage.getEJavaObject());
-        g1.getETypeArguments().add(g2);
-        g2 = createEGenericType(ecorePackage.getEJavaObject());
-        g1.getETypeArguments().add(g2);
-        addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
-
         op = addEOperation(acuteHepatitisBSocioBehavioralBooleanRiskFactorObservationEClass, ecorePackage.getEBoolean(), "validateAcuteHepatitisBSocioBehavioralBooleanRiskFactorObservationCode", 0, 1, IS_UNIQUE, IS_ORDERED);
         addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
         g1 = createEGenericType(ecorePackage.getEMap());
@@ -846,15 +807,6 @@ public class HepbPackageImpl extends EPackageImpl implements HepbPackage {
         g1.getETypeArguments().add(g2);
         addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
 
-        op = addEOperation(acuteHepatitisBActualBloodAndOrBodyFluidExposureObservationEClass, ecorePackage.getEBoolean(), "validateAcuteHepatitisBActualBloodAndOrBodyFluidExposureObservationCodeP", 0, 1, IS_UNIQUE, IS_ORDERED);
-        addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
-        g1 = createEGenericType(ecorePackage.getEMap());
-        g2 = createEGenericType(ecorePackage.getEJavaObject());
-        g1.getETypeArguments().add(g2);
-        g2 = createEGenericType(ecorePackage.getEJavaObject());
-        g1.getETypeArguments().add(g2);
-        addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
-
         op = addEOperation(acuteHepatitisBActualBloodAndOrBodyFluidExposureObservationEClass, ecorePackage.getEBoolean(), "validateAcuteHepatitisBActualBloodAndOrBodyFluidExposureObservationCode", 0, 1, IS_UNIQUE, IS_ORDERED);
         addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
         g1 = createEGenericType(ecorePackage.getEMap());
@@ -865,15 +817,6 @@ public class HepbPackageImpl extends EPackageImpl implements HepbPackage {
         addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
 
         op = addEOperation(acuteHepatitisBActualBloodAndOrBodyFluidExposureObservationEClass, ecorePackage.getEBoolean(), "validateAcuteHepatitisBActualBloodAndOrBodyFluidExposureObservationStatusCode", 0, 1, IS_UNIQUE, IS_ORDERED);
-        addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
-        g1 = createEGenericType(ecorePackage.getEMap());
-        g2 = createEGenericType(ecorePackage.getEJavaObject());
-        g1.getETypeArguments().add(g2);
-        g2 = createEGenericType(ecorePackage.getEJavaObject());
-        g1.getETypeArguments().add(g2);
-        addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
-
-        op = addEOperation(acuteHepatitisBActualBloodAndOrBodyFluidExposureObservationEClass, ecorePackage.getEBoolean(), "validateAcuteHepatitisBActualBloodAndOrBodyFluidExposureObservationStatusCodeP", 0, 1, IS_UNIQUE, IS_ORDERED);
         addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
         g1 = createEGenericType(ecorePackage.getEMap());
         g2 = createEGenericType(ecorePackage.getEJavaObject());
@@ -957,15 +900,6 @@ public class HepbPackageImpl extends EPackageImpl implements HepbPackage {
 
         initEClass(acuteHepatitisBCaseObservationEClass, AcuteHepatitisBCaseObservation.class, "AcuteHepatitisBCaseObservation", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 
-        op = addEOperation(acuteHepatitisBCaseObservationEClass, ecorePackage.getEBoolean(), "validateAcuteHepatitisBCaseObservationValueP", 0, 1, IS_UNIQUE, IS_ORDERED);
-        addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
-        g1 = createEGenericType(ecorePackage.getEMap());
-        g2 = createEGenericType(ecorePackage.getEJavaObject());
-        g1.getETypeArguments().add(g2);
-        g2 = createEGenericType(ecorePackage.getEJavaObject());
-        g1.getETypeArguments().add(g2);
-        addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
-
         op = addEOperation(acuteHepatitisBCaseObservationEClass, ecorePackage.getEBoolean(), "validateAcuteHepatitisBCaseObservationValue", 0, 1, IS_UNIQUE, IS_ORDERED);
         addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
         g1 = createEGenericType(ecorePackage.getEMap());
@@ -987,15 +921,6 @@ public class HepbPackageImpl extends EPackageImpl implements HepbPackage {
         addEOperation(acuteHepatitisBCaseObservationEClass, this.getAcuteHepatitisBSignsAndSymptomsObservation(), "getAcuteHepatitisBSignsAndSymptomsObservations", 1, -1, IS_UNIQUE, !IS_ORDERED);
 
         initEClass(acuteHepatitisBSignsAndSymptomsObservationEClass, AcuteHepatitisBSignsAndSymptomsObservation.class, "AcuteHepatitisBSignsAndSymptomsObservation", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-
-        op = addEOperation(acuteHepatitisBSignsAndSymptomsObservationEClass, ecorePackage.getEBoolean(), "validateAcuteHepatitisBSignsAndSymptomsObservationValueP", 0, 1, IS_UNIQUE, IS_ORDERED);
-        addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
-        g1 = createEGenericType(ecorePackage.getEMap());
-        g2 = createEGenericType(ecorePackage.getEJavaObject());
-        g1.getETypeArguments().add(g2);
-        g2 = createEGenericType(ecorePackage.getEJavaObject());
-        g1.getETypeArguments().add(g2);
-        addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
 
         op = addEOperation(acuteHepatitisBSignsAndSymptomsObservationEClass, ecorePackage.getEBoolean(), "validateAcuteHepatitisBSignsAndSymptomsObservationValue", 0, 1, IS_UNIQUE, IS_ORDERED);
         addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
@@ -1053,15 +978,6 @@ public class HepbPackageImpl extends EPackageImpl implements HepbPackage {
         g1.getETypeArguments().add(g2);
         addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
 
-        op = addEOperation(acuteHepatitisBRiskAssociatedProcedureEClass, ecorePackage.getEBoolean(), "validateAcuteHepatitisBRiskAssociatedProcedureStatusCodeP", 0, 1, IS_UNIQUE, IS_ORDERED);
-        addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
-        g1 = createEGenericType(ecorePackage.getEMap());
-        g2 = createEGenericType(ecorePackage.getEJavaObject());
-        g1.getETypeArguments().add(g2);
-        g2 = createEGenericType(ecorePackage.getEJavaObject());
-        g1.getETypeArguments().add(g2);
-        addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
-
         op = addEOperation(acuteHepatitisBRiskAssociatedProcedureEClass, ecorePackage.getEBoolean(), "validateAcuteHepatitisBRiskAssociatedProcedureEffectiveTime", 0, 1, IS_UNIQUE, IS_ORDERED);
         addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
         g1 = createEGenericType(ecorePackage.getEMap());
@@ -1083,15 +999,6 @@ public class HepbPackageImpl extends EPackageImpl implements HepbPackage {
         addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
 
         op = addEOperation(viralHepatitisHistoryObservationEClass, ecorePackage.getEBoolean(), "validateViralHepatitisHistoryObservationValue", 0, 1, IS_UNIQUE, IS_ORDERED);
-        addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
-        g1 = createEGenericType(ecorePackage.getEMap());
-        g2 = createEGenericType(ecorePackage.getEJavaObject());
-        g1.getETypeArguments().add(g2);
-        g2 = createEGenericType(ecorePackage.getEJavaObject());
-        g1.getETypeArguments().add(g2);
-        addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
-
-        op = addEOperation(viralHepatitisHistoryObservationEClass, ecorePackage.getEBoolean(), "validateViralHepatitisHistoryObservationValueP", 0, 1, IS_UNIQUE, IS_ORDERED);
         addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
         g1 = createEGenericType(ecorePackage.getEMap());
         g2 = createEGenericType(ecorePackage.getEJavaObject());
@@ -1165,15 +1072,6 @@ public class HepbPackageImpl extends EPackageImpl implements HepbPackage {
         g1.getETypeArguments().add(g2);
         addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
 
-        op = addEOperation(stdHistoryObservationEClass, ecorePackage.getEBoolean(), "validateSTDHistoryObservationValue", 0, 1, IS_UNIQUE, IS_ORDERED);
-        addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
-        g1 = createEGenericType(ecorePackage.getEMap());
-        g2 = createEGenericType(ecorePackage.getEJavaObject());
-        g1.getETypeArguments().add(g2);
-        g2 = createEGenericType(ecorePackage.getEJavaObject());
-        g1.getETypeArguments().add(g2);
-        addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
-
         op = addEOperation(stdHistoryObservationEClass, ecorePackage.getEBoolean(), "validateSTDHistoryObservationProblemStatus", 0, 1, IS_UNIQUE, IS_ORDERED);
         addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
         g1 = createEGenericType(ecorePackage.getEMap());
@@ -1230,15 +1128,6 @@ public class HepbPackageImpl extends EPackageImpl implements HepbPackage {
 
         initEClass(acuteHepatitisBResultObservationEClass, AcuteHepatitisBResultObservation.class, "AcuteHepatitisBResultObservation", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 
-        op = addEOperation(acuteHepatitisBResultObservationEClass, ecorePackage.getEBoolean(), "validateAcuteHepatitisBResultObservationCode", 0, 1, IS_UNIQUE, IS_ORDERED);
-        addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
-        g1 = createEGenericType(ecorePackage.getEMap());
-        g2 = createEGenericType(ecorePackage.getEJavaObject());
-        g1.getETypeArguments().add(g2);
-        g2 = createEGenericType(ecorePackage.getEJavaObject());
-        g1.getETypeArguments().add(g2);
-        addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
-
         op = addEOperation(acuteHepatitisBResultObservationEClass, ecorePackage.getEBoolean(), "validateAcuteHepatitisBResultObservationInterpretationCode", 0, 1, IS_UNIQUE, IS_ORDERED);
         addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
         g1 = createEGenericType(ecorePackage.getEMap());
@@ -1274,10 +1163,9 @@ public class HepbPackageImpl extends EPackageImpl implements HepbPackage {
         addAnnotation
           (this, 
            source, 
-           new String[] 
-           {
+           new String[] {
              "initializers", "org.openhealthtools.mdht.uml.cda.phcr.hepb"
-           });                                                                                                                                                                                                                                                                      
+           });                                                                                                                                                                                                                                                                                                              
     }
 
   /**
@@ -1291,29 +1179,26 @@ public class HepbPackageImpl extends EPackageImpl implements HepbPackage {
         addAnnotation
           (acuteHepatitisBCaseReportEClass, 
            source, 
-           new String[] 
-           {
+           new String[] {
              "constraints.validation.error", "AcuteHepatitisBCaseReportTemplateId AcuteHepatitisBCaseReportTitle AcuteHepatitisBCaseReportAcuteHepatitisBPHCRClinicalInformationSection",
              "templateId.root", "2.16.840.1.113883.10.20.15.1.2",
              "title.mixed", "Public Health Case Report - Acute Hepatitis B",
              "constraints.validation.warning", "AcuteHepatitisBCaseReportAcuteHepatitisBSocialHistorySection AcuteHepatitisBCaseReportAcuteHepatitisBImmunizationSection AcuteHepatitisBCaseReportAcuteHepatitisBPHCRTreatmentInformationSection AcuteHepatitisBCaseReportAcuteHepatitisBPHCRRelevantDiagnosticTestsAndOrLaboratoryDataSection"
-           });                             
+           });                                        
         addAnnotation
           (acuteHepatitisBSocialHistorySectionEClass, 
            source, 
-           new String[] 
-           {
+           new String[] {
              "constraints.validation.error", "AcuteHepatitisBSocialHistorySectionTemplateId",
              "templateId.root", "2.16.840.1.113883.10.20.15.2.11",
              "constraints.validation.warning", "AcuteHepatitisBSocialHistorySectionJobRelatedBodyFluidExposureRiskFrequencyObservation AcuteHepatitisBSocialHistorySectionAcuteHepatitisBSocioBehavioralBooleanRiskFactorObservation",
              "constraints.validation.info", "AcuteHepatitisBSocialHistorySectionAcuteHepatitisBPossibleExposureLocationAndTypeAct AcuteHepatitisBSocialHistorySectionAcuteHepatitisBActualBloodAndOrBodyFluidExposureObservation "
-           });                      
+           });                              
         addAnnotation
           (jobRelatedBodyFluidExposureRiskFrequencyObservationEClass, 
            source, 
-           new String[] 
-           {
-             "constraints.validation.error", "JobRelatedBodyFluidExposureRiskFrequencyObservationTemplateId JobRelatedBodyFluidExposureRiskFrequencyObservationCode JobRelatedBodyFluidExposureRiskFrequencyObservationStatusCode JobRelatedBodyFluidExposureRiskFrequencyObservationStatusCodeP JobRelatedBodyFluidExposureRiskFrequencyObservationValue JobRelatedBodyFluidExposureRiskFrequencyObservationValueP JobRelatedBodyFluidExposureRiskFrequencyObservationClassCode JobRelatedBodyFluidExposureRiskFrequencyObservationMoodCode",
+           new String[] {
+             "constraints.validation.error", "JobRelatedBodyFluidExposureRiskFrequencyObservationTemplateId JobRelatedBodyFluidExposureRiskFrequencyObservationCode JobRelatedBodyFluidExposureRiskFrequencyObservationStatusCode JobRelatedBodyFluidExposureRiskFrequencyObservationValue JobRelatedBodyFluidExposureRiskFrequencyObservationClassCode JobRelatedBodyFluidExposureRiskFrequencyObservationMoodCode",
              "templateId.root", "2.16.840.1.113883.10.20.15.3.29",
              "code.code", "55212-5",
              "code.codeSystem", "2.16.840.1.113883.6.1",
@@ -1328,8 +1213,7 @@ public class HepbPackageImpl extends EPackageImpl implements HepbPackage {
         addAnnotation
           (acuteHepatitisBPossibleExposureLocationAndTypeActEClass, 
            source, 
-           new String[] 
-           {
+           new String[] {
              "constraints.validation.error", "AcuteHepatitisBPossibleExposureLocationAndTypeActTemplateId AcuteHepatitisBPossibleExposureLocationAndTypeActClassCode AcuteHepatitisBPossibleExposureLocationAndTypeActCode AcuteHepatitisBPossibleExposureLocationAndTypeActMoodCode AcuteHepatitisBPossibleExposureLocationAndTypeActStatusCode",
              "templateId.root", "2.16.840.1.113883.10.20.15.3.27",
              "classCode", "ACT",
@@ -1337,69 +1221,63 @@ public class HepbPackageImpl extends EPackageImpl implements HepbPackage {
              "code.codeSystem", "2.16.840.1.113883.6.96",
              "code.codeSystemName", "SNOMEDCT",
              "moodCode", "EVN"
-           });                    
+           });                         
         addAnnotation
           (acuteHepatitisBSocioBehavioralBooleanRiskFactorObservationEClass, 
            source, 
-           new String[] 
-           {
-             "constraints.validation.error", "AcuteHepatitisBSocioBehavioralBooleanRiskFactorObservationTemplateId AcuteHepatitisBSocioBehavioralBooleanRiskFactorObservationNegationInd AcuteHepatitisBSocioBehavioralBooleanRiskFactorObservationValue AcuteHepatitisBSocioBehavioralBooleanRiskFactorObservationValueP AcuteHepatitisBSocioBehavioralBooleanRiskFactorObservationCode AcuteHepatitisBSocioBehavioralBooleanRiskFactorObservationCodeP",
+           new String[] {
+             "constraints.validation.error", "AcuteHepatitisBSocioBehavioralBooleanRiskFactorObservationTemplateId AcuteHepatitisBSocioBehavioralBooleanRiskFactorObservationNegationInd AcuteHepatitisBSocioBehavioralBooleanRiskFactorObservationValue AcuteHepatitisBSocioBehavioralBooleanRiskFactorObservationCode",
              "templateId.root", "2.16.840.1.113883.10.20.15.3.28",
              "value.codeSystem", "2.16.840.1.113883.6.96",
              "value.codeSystemName", "SNOMEDCT",
              "code.code", "ASSERTION",
              "code.codeSystem", "2.16.840.1.113883.5.4",
              "code.codeSystemName", "HL7ActCode",
-             "constraints.validation.dependOn.AcuteHepatitisBSocioBehavioralBooleanRiskFactorObservationCode", "AcuteHepatitisBSocioBehavioralBooleanRiskFactorObservationCodeP",
              "constraints.validation.warning", "AcuteHepatitisBSocioBehavioralBooleanRiskFactorObservationEffectiveTime"
-           });                        
+           });                      
         addAnnotation
           (acuteHepatitisBActualBloodAndOrBodyFluidExposureObservationEClass, 
            source, 
-           new String[] 
-           {
-             "constraints.validation.error", "AcuteHepatitisBActualBloodAndOrBodyFluidExposureObservation TemplateId AcuteHepatitisBActualBloodAndOrBodyFluidExposureObservation Code AcuteHepatitisBActualBloodAndOrBodyFluidExposureObservation CodeP AcuteHepatitisBActualBloodAndOrBodyFluidExposureObservation StatusCode AcuteHepatitisBActualBloodAndOrBodyFluidExposureObservation StatusCodeP AcuteHepatitisBActualBloodAndOrBodyFluidExposureObservation ClassCode AcuteHepatitisBActualBloodAndOrBodyFluidExposureObservation Id AcuteHepatitisBActualBloodAndOrBodyFluidExposureObservation MoodCode",
+           new String[] {
+             "constraints.validation.error", "AcuteHepatitisBActualBloodAndOrBodyFluidExposureObservation TemplateId AcuteHepatitisBActualBloodAndOrBodyFluidExposureObservation Code AcuteHepatitisBActualBloodAndOrBodyFluidExposureObservation StatusCode AcuteHepatitisBActualBloodAndOrBodyFluidExposureObservation ClassCode AcuteHepatitisBActualBloodAndOrBodyFluidExposureObservation Id AcuteHepatitisBActualBloodAndOrBodyFluidExposureObservation MoodCode",
              "templateId.root", "2.16.840.1.113883.10.20.15.3.26",
              "code.codeSystem", "2.16.840.1.113883.6.1",
-             "code.codeSystemName", "LOINC"
+             "code.codeSystemName", "LOINC",
+             "statusCode.code", "completed",
+             "classCode", "OBS",
+             "moodCode", "EVN"
            });                             
         addAnnotation
           (acuteHepatitisBPHCRClinicalInformationSectionEClass, 
            source, 
-           new String[] 
-           {
+           new String[] {
              "constraints.validation.error", "AcuteHepatitisBPHCRClinicalInformationSectionTemplateId AcuteHepatitisBPHCRClinicalInformationSectionAcuteHepatitisBCaseObservation",
              "templateId.root", "2.16.840.1.113883.10.20.15.2.12",
              "constraints.validation.warning", "AcuteHepatitisBPHCRClinicalInformationSectionAcuteHepatitisBRiskAssociatedProcedure AcuteHepatitisBPHCRClinicalInformationSectionViralHepatitisHistoryObservation AcuteHepatitisBPHCRClinicalInformationSectionSTDHistoryObservation"
-           });                      
+           });                              
         addAnnotation
           (acuteHepatitisBCaseObservationEClass, 
            source, 
-           new String[] 
-           {
-             "constraints.validation.error", "AcuteHepatitisBCaseObservationTemplateId AcuteHepatitisBCaseObservationValue AcuteHepatitisBCaseObservationValueP AcuteHepatitisBCaseObservationAcuteHepatitisBSignsAndSymptomsObservation",
+           new String[] {
+             "constraints.validation.error", "AcuteHepatitisBCaseObservationTemplateId AcuteHepatitisBCaseObservationValue AcuteHepatitisBCaseObservationAcuteHepatitisBSignsAndSymptomsObservation",
              "templateId.root", "2.16.840.1.113883.10.20.15.3.30",
              "value.codeSystem", "2.16.840.1.113883.6.96",
-             "value.codeSystemName", "SNOMEDCT",
-             "constraints.validation.dependOn.AcuteHepatitisBCaseObservationValue", "AcuteHepatitisBCaseObservationValueP"
+             "value.codeSystemName", "SNOMEDCT"
            });                
         addAnnotation
           (acuteHepatitisBSignsAndSymptomsObservationEClass, 
            source, 
-           new String[] 
-           {
-             "constraints.validation.error", "AcuteHepatitisBSignsAndSymptomsObservationTemplateId AcuteHepatitisBSignsAndSymptomsObservationValue AcuteHepatitisBSignsAndSymptomsObservationValueP",
+           new String[] {
+             "constraints.validation.error", "AcuteHepatitisBSignsAndSymptomsObservationTemplateId AcuteHepatitisBSignsAndSymptomsObservationValue",
              "templateId.root", "2.16.840.1.113883.10.20.15.3.22",
              "value.codeSystem", "2.16.840.1.113883.6.96",
-             "value.codeSystemName", "SNOMEDCT",
-             "constraints.validation.dependOn.AcuteHepatitisBSignsAndSymptomsObservationValue", "AcuteHepatitisBSignsAndSymptomsObservationValueP"
-           });            
+             "value.codeSystemName", "SNOMEDCT"
+           });          
         addAnnotation
           (acuteHepatitisBRiskAssociatedProcedureEClass, 
            source, 
-           new String[] 
-           {
-             "constraints.validation.error", "AcuteHepatitisBRiskAssociatedProcedureTemplateId AcuteHepatitisBRiskAssociatedProcedureClassCode AcuteHepatitisBRiskAssociatedProcedureCode AcuteHepatitisBRiskAssociatedProcedureMoodCode AcuteHepatitisBRiskAssociatedProcedureStatusCode AcuteHepatitisBRiskAssociatedProcedureStatusCodeP",
+           new String[] {
+             "constraints.validation.error", "AcuteHepatitisBRiskAssociatedProcedureTemplateId AcuteHepatitisBRiskAssociatedProcedureClassCode AcuteHepatitisBRiskAssociatedProcedureCode AcuteHepatitisBRiskAssociatedProcedureMoodCode AcuteHepatitisBRiskAssociatedProcedureStatusCode",
              "templateId.root", "2.16.840.1.113883.10.20.15.3.31",
              "classCode", "PROC",
              "code.codeSystem", "2.16.840.1.113883.6.96",
@@ -1407,13 +1285,12 @@ public class HepbPackageImpl extends EPackageImpl implements HepbPackage {
              "moodCode", "EVN",
              "statusCode.code", "completed",
              "constraints.validation.warning", "AcuteHepatitisBRiskAssociatedProcedureEffectiveTime"
-           });                          
+           });                             
         addAnnotation
           (viralHepatitisHistoryObservationEClass, 
            source, 
-           new String[] 
-           {
-             "constraints.validation.error", "ViralHepatitisHistoryObservationTemplateId ViralHepatitisHistoryObservationCode ViralHepatitisHistoryObservationValue ViralHepatitisHistoryObservationValueP",
+           new String[] {
+             "constraints.validation.error", "ViralHepatitisHistoryObservationTemplateId ViralHepatitisHistoryObservationCode ViralHepatitisHistoryObservationValue",
              "templateId.root", "2.16.840.1.113883.10.20.15.3.32",
              "code.code", "ASSERTION",
              "code.codeSystem", "2.16.840.1.113883.5.4",
@@ -1426,9 +1303,8 @@ public class HepbPackageImpl extends EPackageImpl implements HepbPackage {
         addAnnotation
           (stdHistoryObservationEClass, 
            source, 
-           new String[] 
-           {
-             "constraints.validation.error", "STDHistoryObservationTemplateId STDHistoryObservationClassCode STDHistoryObservationCode STDHistoryObservationMoodCode STDHistoryObservationStatusCode STDHistoryObservationValue",
+           new String[] {
+             "constraints.validation.error", "STDHistoryObservationTemplateId STDHistoryObservationClassCode STDHistoryObservationCode STDHistoryObservationMoodCode STDHistoryObservationStatusCode",
              "templateId.root", "2.16.840.1.113883.10.20.15.3.33",
              "classCode", "OBS",
              "code.code", "ASSERTION",
@@ -1439,62 +1315,55 @@ public class HepbPackageImpl extends EPackageImpl implements HepbPackage {
              "constraints.validation.info", "STDHistoryObservationId STDHistoryObservationProblemStatus",
              "moodCode", "EVN",
              "statusCode.code", "completed"
-           });                               
+           });                                    
         addAnnotation
           (acuteHepatitisBImmunizationSectionEClass, 
            source, 
-           new String[] 
-           {
+           new String[] {
              "constraints.validation.error", "AcuteHepatitisBImmunizationSectionTemplateId AcuteHepatitisBImmunizationSectionAcuteHepatitisBImmunizationActivity",
              "templateId.root", "2.16.840.1.113883.10.20.15.2.9"
-           });          
+           });            
         addAnnotation
           (acuteHepatitisBImmunizationActivityEClass, 
            source, 
-           new String[] 
-           {
+           new String[] {
              "constraints.validation.error", "AcuteHepatitisBImmunizationActivityTemplateId",
              "templateId.root", "2.16.840.1.113883.10.20.15.3.25"
            });      
         addAnnotation
           (acuteHepatitisBPHCRTreatmentInformationSectionEClass, 
            source, 
-           new String[] 
-           {
+           new String[] {
              "constraints.validation.error", "AcuteHepatitisBPHCRTreatmentInformationSectionTemplateId AcuteHepatitisBPHCRTreatmentInformationSectionAcuteHepatitisBTherapeuticRegimenAct",
              "templateId.root", "2.16.840.1.113883.10.20.15.2.10"
-           });          
+           });            
         addAnnotation
           (acuteHepatitisBTherapeuticRegimenActEClass, 
            source, 
-           new String[] 
-           {
+           new String[] {
              "constraints.validation.error", "AcuteHepatitisBTherapeuticRegimenActTemplateId",
              "templateId.root", "2.16.840.1.113883.10.20.15.3.23"
            });      
         addAnnotation
           (acuteHepatitisBPHCRRelevantDiagnosticTestsAndOrLaboratoryDataSectionEClass, 
            source, 
-           new String[] 
-           {
+           new String[] {
              "constraints.validation.error", "AcuteHepatitisBPHCRRelevantDiagnosticTestsAndOrLaboratoryDataSectionTemplateId",
              "templateId.root", "2.16.840.1.113883.10.20.15.2.13",
              "constraints.validation.warning", "AcuteHepatitisBPHCRRelevantDiagnosticTestsAndOrLaboratoryDataSectionAcuteHepatitisBResultObservation"
-           });          
+           });            
         addAnnotation
           (acuteHepatitisBResultObservationEClass, 
            source, 
-           new String[] 
-           {
-             "constraints.validation.error", "AcuteHepatitisBResultObservationTemplateId AcuteHepatitisBResultObservationCode",
+           new String[] {
+             "constraints.validation.error", "AcuteHepatitisBResultObservationTemplateId",
              "templateId.root", "2.16.840.1.113883.10.20.15.3.34",
              "constraints.validation.warning", "AcuteHepatitisBResultObservationInterpretationCode"
-           });            
+           });          
         addAnnotation
           (acuteHepatitisBImmunizationProductEClass, 
            source, 
-           new String[] 
-           {
+           new String[] {
              "constraints.validation.error", "AcuteHepatitisBImmunizationProductTemplateId",
              "templateId.root", "2.16.840.1.113883.10.20.15.3.24"
            }); 
@@ -1511,92 +1380,77 @@ public class HepbPackageImpl extends EPackageImpl implements HepbPackage {
         addAnnotation
           (acuteHepatitisBCaseReportEClass, 
            source, 
-           new String[] 
-           {
-           });                             
+           new String[] {
+           });                                        
         addAnnotation
           (acuteHepatitisBSocialHistorySectionEClass, 
            source, 
-           new String[] 
-           {
-           });                                                               
+           new String[] {
+           });                                                                            
         addAnnotation
           (acuteHepatitisBSocioBehavioralBooleanRiskFactorObservationEClass, 
            source, 
-           new String[] 
-           {
-           });                                                 
+           new String[] {
+           });                                               
         addAnnotation
           (acuteHepatitisBPHCRClinicalInformationSectionEClass, 
            source, 
-           new String[] 
-           {
-           });                      
+           new String[] {
+           });                              
         addAnnotation
           (acuteHepatitisBCaseObservationEClass, 
            source, 
-           new String[] 
-           {
+           new String[] {
            });                
         addAnnotation
           (acuteHepatitisBSignsAndSymptomsObservationEClass, 
            source, 
-           new String[] 
-           {
-           });                                  
+           new String[] {
+           });                                   
         addAnnotation
           (viralHepatitisHistoryObservationEClass, 
            source, 
-           new String[] 
-           {
+           new String[] {
            });                  
         addAnnotation
           (stdHistoryObservationEClass, 
            source, 
-           new String[] 
-           {
-           });                               
+           new String[] {
+           });                                    
         addAnnotation
           (acuteHepatitisBImmunizationSectionEClass, 
            source, 
-           new String[] 
-           {
-           });          
+           new String[] {
+           });            
         addAnnotation
           (acuteHepatitisBImmunizationActivityEClass, 
            source, 
-           new String[] 
-           {
+           new String[] {
            });      
         addAnnotation
           (acuteHepatitisBPHCRTreatmentInformationSectionEClass, 
            source, 
-           new String[] 
-           {
-           });          
+           new String[] {
+           });            
         addAnnotation
           (acuteHepatitisBTherapeuticRegimenActEClass, 
            source, 
-           new String[] 
-           {
+           new String[] {
            });      
         addAnnotation
           (acuteHepatitisBPHCRRelevantDiagnosticTestsAndOrLaboratoryDataSectionEClass, 
            source, 
-           new String[] 
-           {
-           });          
+           new String[] {
+           });            
         addAnnotation
           (acuteHepatitisBResultObservationEClass, 
            source, 
-           new String[] 
-           {
-           });            
+           new String[] {
+           });          
         addAnnotation
           (acuteHepatitisBImmunizationProductEClass, 
            source, 
-           new String[] 
-           {
+           new String[] {
            });
     }
 

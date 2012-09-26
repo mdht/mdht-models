@@ -41,7 +41,6 @@ import org.openhealthtools.mdht.uml.cda.phcr.salmonellosis.util.SalmonellosisVal
  * <p>
  * The following operations are supported:
  * <ul>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.phcr.salmonellosis.SalmonellosisResultOrganizer#validateSalmonellosisResultOrganizerCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Salmonellosis Result Organizer Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.phcr.salmonellosis.SalmonellosisResultOrganizer#validateSalmonellosisResultOrganizerSalmonellosisResultObservation(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Salmonellosis Result Organizer Salmonellosis Result Observation</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.phcr.salmonellosis.SalmonellosisResultOrganizer#getSalmonellosisResultObservations() <em>Get Salmonellosis Result Observations</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.phcr.salmonellosis.SalmonellosisResultOrganizer#validateResultOrganizerTemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Result Organizer Template Id</em>}</li>
@@ -87,6 +86,7 @@ public class SalmonellosisResultOrganizerOperations extends ResultOrganizerOpera
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
+   * (self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined())
    * @param salmonellosisResultOrganizer The receiving '<em><b>Result Organizer</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -96,8 +96,8 @@ public class SalmonellosisResultOrganizerOperations extends ResultOrganizerOpera
   
   public static  boolean validateSalmonellosisResultOrganizerCode(SalmonellosisResultOrganizer salmonellosisResultOrganizer, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
-  	  
-    if (VALIDATE_SALMONELLOSIS_RESULT_ORGANIZER_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+    if (VALIDATE_SALMONELLOSIS_RESULT_ORGANIZER_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null)
+    {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(SalmonellosisPackage.Literals.SALMONELLOSIS_RESULT_ORGANIZER);
       try
@@ -118,10 +118,9 @@ public class SalmonellosisResultOrganizerOperations extends ResultOrganizerOpera
             (Diagnostic.ERROR,
              SalmonellosisValidator.DIAGNOSTIC_SOURCE,
              SalmonellosisValidator.SALMONELLOSIS_RESULT_ORGANIZER__SALMONELLOSIS_RESULT_ORGANIZER_CODE,
-             SalmonellosisPlugin.INSTANCE.getString("SalmonellosisResultOrganizerCode"),
+             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "validateSalmonellosisResultOrganizerCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(salmonellosisResultOrganizer, context) }),
              new Object [] { salmonellosisResultOrganizer }));
       }
-       
       return false;
     }
     return true;
@@ -153,6 +152,7 @@ public class SalmonellosisResultOrganizerOperations extends ResultOrganizerOpera
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
+   * self.component->exists(component : cda::Component4 | not component.observation.oclIsUndefined() and component.observation.oclIsKindOf(salmonellosis::SalmonellosisResultObservation))
    * @param salmonellosisResultOrganizer The receiving '<em><b>Result Organizer</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -162,8 +162,8 @@ public class SalmonellosisResultOrganizerOperations extends ResultOrganizerOpera
   
   public static  boolean validateSalmonellosisResultOrganizerSalmonellosisResultObservation(SalmonellosisResultOrganizer salmonellosisResultOrganizer, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
-  	  
-    if (VALIDATE_SALMONELLOSIS_RESULT_ORGANIZER_SALMONELLOSIS_RESULT_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+    if (VALIDATE_SALMONELLOSIS_RESULT_ORGANIZER_SALMONELLOSIS_RESULT_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null)
+    {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(SalmonellosisPackage.Literals.SALMONELLOSIS_RESULT_ORGANIZER);
       try
@@ -184,10 +184,9 @@ public class SalmonellosisResultOrganizerOperations extends ResultOrganizerOpera
             (Diagnostic.ERROR,
              SalmonellosisValidator.DIAGNOSTIC_SOURCE,
              SalmonellosisValidator.SALMONELLOSIS_RESULT_ORGANIZER__SALMONELLOSIS_RESULT_ORGANIZER_SALMONELLOSIS_RESULT_OBSERVATION,
-             SalmonellosisPlugin.INSTANCE.getString("SalmonellosisResultOrganizerSalmonellosisResultObservation"),
+             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "validateSalmonellosisResultOrganizerSalmonellosisResultObservation", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(salmonellosisResultOrganizer, context) }),
              new Object [] { salmonellosisResultOrganizer }));
       }
-       
       return false;
     }
     return true;
@@ -216,6 +215,10 @@ public class SalmonellosisResultOrganizerOperations extends ResultOrganizerOpera
   /**
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
+   * <!-- begin-model-doc -->
+   * self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(salmonellosis::SalmonellosisResultObservation)).oclAsType(salmonellosis::SalmonellosisResultObservation)
+   * @param salmonellosisResultOrganizer The receiving '<em><b>Result Organizer</b></em>' model object.
+   * <!-- end-model-doc -->
    * @generated
    */
   
@@ -224,7 +227,7 @@ public class SalmonellosisResultOrganizerOperations extends ResultOrganizerOpera
     if (GET_SALMONELLOSIS_RESULT_OBSERVATIONS__EOCL_QRY == null)
     {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
-      helper.setOperationContext(SalmonellosisPackage.Literals.SALMONELLOSIS_RESULT_ORGANIZER, SalmonellosisPackage.Literals.SALMONELLOSIS_RESULT_ORGANIZER.getEAllOperations().get(76));
+      helper.setOperationContext(SalmonellosisPackage.Literals.SALMONELLOSIS_RESULT_ORGANIZER, SalmonellosisPackage.Literals.SALMONELLOSIS_RESULT_ORGANIZER.getEAllOperations().get(73));
       try
       {
         GET_SALMONELLOSIS_RESULT_OBSERVATIONS__EOCL_QRY = helper.createQuery(GET_SALMONELLOSIS_RESULT_OBSERVATIONS__EOCL_EXP);
@@ -266,6 +269,7 @@ public class SalmonellosisResultOrganizerOperations extends ResultOrganizerOpera
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
+   * self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.15.3.118')
    * @param salmonellosisResultOrganizer The receiving '<em><b>Result Organizer</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -275,8 +279,8 @@ public class SalmonellosisResultOrganizerOperations extends ResultOrganizerOpera
   
   public static  boolean validateResultOrganizerTemplateId(SalmonellosisResultOrganizer salmonellosisResultOrganizer, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
-  	  
-    if (VALIDATE_RESULT_ORGANIZER_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+    if (VALIDATE_RESULT_ORGANIZER_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null)
+    {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(SalmonellosisPackage.Literals.SALMONELLOSIS_RESULT_ORGANIZER);
       try
@@ -297,10 +301,9 @@ public class SalmonellosisResultOrganizerOperations extends ResultOrganizerOpera
             (Diagnostic.ERROR,
              SalmonellosisValidator.DIAGNOSTIC_SOURCE,
              SalmonellosisValidator.SALMONELLOSIS_RESULT_ORGANIZER__RESULT_ORGANIZER_TEMPLATE_ID,
-             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "ResultOrganizerTemplateId", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(salmonellosisResultOrganizer, context) }),
+             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "validateResultOrganizerTemplateId", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(salmonellosisResultOrganizer, context) }),
              new Object [] { salmonellosisResultOrganizer }));
       }
-       
       return false;
     }
     return true;

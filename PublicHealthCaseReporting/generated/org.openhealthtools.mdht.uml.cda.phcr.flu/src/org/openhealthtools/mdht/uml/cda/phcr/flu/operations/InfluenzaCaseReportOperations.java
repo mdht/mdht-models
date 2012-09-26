@@ -28,11 +28,6 @@ import org.openhealthtools.mdht.uml.cda.phcr.flu.InfluenzaPHCRRelevantDiagnostic
 import org.openhealthtools.mdht.uml.cda.phcr.flu.InfluenzaPHCRSocialHistorySection;
 import org.openhealthtools.mdht.uml.cda.phcr.flu.InfluenzaPHCRTreatmentInformationSection;
 import org.openhealthtools.mdht.uml.cda.phcr.flu.fluPackage;
-import org.openhealthtools.mdht.uml.cda.phcr.flu.InfluenzaImmunizationSection;
-import org.openhealthtools.mdht.uml.cda.phcr.flu.InfluenzaPHCRClinicalInformationSection;
-import org.openhealthtools.mdht.uml.cda.phcr.flu.InfluenzaPHCRRelevantDiagnosticTestsAndOrLaboratoryDataSection;
-import org.openhealthtools.mdht.uml.cda.phcr.flu.InfluenzaPHCRSocialHistorySection;
-import org.openhealthtools.mdht.uml.cda.phcr.flu.InfluenzaPHCRTreatmentInformationSection;
 import org.openhealthtools.mdht.uml.cda.phcr.flu.util.fluValidator;
 import org.openhealthtools.mdht.uml.cda.phcr.operations.PublicHealthCaseReportOperations;
 
@@ -451,7 +446,7 @@ public class InfluenzaCaseReportOperations extends PublicHealthCaseReportOperati
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String GET_INFLUENZA_IMMUNIZATION_SECTION__EOCL_EXP = "self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(flu::InfluenzaImmunizationSection))->asSequence()->first().oclAsType(flu::InfluenzaImmunizationSection)";
+	protected static final String GET_INFLUENZA_IMMUNIZATION_SECTION__EOCL_EXP = "self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(flu::InfluenzaImmunizationSection))->asSequence()->any(true).oclAsType(flu::InfluenzaImmunizationSection)";
 
 	/**
 	 * The cached OCL query for the '{@link #getInfluenzaImmunizationSection(InfluenzaCaseReport) <em>Get Influenza Immunization Section</em>}' query operation.
@@ -468,7 +463,7 @@ public class InfluenzaCaseReportOperations extends PublicHealthCaseReportOperati
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(flu::InfluenzaImmunizationSection))->asSequence()->first().oclAsType(flu::InfluenzaImmunizationSection)
+	 * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(flu::InfluenzaImmunizationSection))->asSequence()->any(true).oclAsType(flu::InfluenzaImmunizationSection)
 	 * @param influenzaCaseReport The receiving '<em><b>Influenza Case Report</b></em>' model object.
 	 * <!-- end-model-doc -->
 	 * @generated
@@ -497,7 +492,7 @@ public class InfluenzaCaseReportOperations extends PublicHealthCaseReportOperati
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String GET_INFLUENZA_PHCR_CLINICAL_INFORMATION_SECTION__EOCL_EXP = "self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(flu::InfluenzaPHCRClinicalInformationSection))->asSequence()->first().oclAsType(flu::InfluenzaPHCRClinicalInformationSection)";
+	protected static final String GET_INFLUENZA_PHCR_CLINICAL_INFORMATION_SECTION__EOCL_EXP = "self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(flu::InfluenzaPHCRClinicalInformationSection))->asSequence()->any(true).oclAsType(flu::InfluenzaPHCRClinicalInformationSection)";
 
 	/**
 	 * The cached OCL query for the '{@link #getInfluenzaPHCRClinicalInformationSection(InfluenzaCaseReport) <em>Get Influenza PHCR Clinical Information Section</em>}' query operation.
@@ -514,7 +509,7 @@ public class InfluenzaCaseReportOperations extends PublicHealthCaseReportOperati
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(flu::InfluenzaPHCRClinicalInformationSection))->asSequence()->first().oclAsType(flu::InfluenzaPHCRClinicalInformationSection)
+	 * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(flu::InfluenzaPHCRClinicalInformationSection))->asSequence()->any(true).oclAsType(flu::InfluenzaPHCRClinicalInformationSection)
 	 * @param influenzaCaseReport The receiving '<em><b>Influenza Case Report</b></em>' model object.
 	 * <!-- end-model-doc -->
 	 * @generated
@@ -543,7 +538,7 @@ public class InfluenzaCaseReportOperations extends PublicHealthCaseReportOperati
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String GET_INFLUENZA_PHCR_TREATMENT_INFORMATION_SECTION__EOCL_EXP = "self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(flu::InfluenzaPHCRTreatmentInformationSection))->asSequence()->first().oclAsType(flu::InfluenzaPHCRTreatmentInformationSection)";
+	protected static final String GET_INFLUENZA_PHCR_TREATMENT_INFORMATION_SECTION__EOCL_EXP = "self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(flu::InfluenzaPHCRTreatmentInformationSection))->asSequence()->any(true).oclAsType(flu::InfluenzaPHCRTreatmentInformationSection)";
 
 	/**
 	 * The cached OCL query for the '{@link #getInfluenzaPHCRTreatmentInformationSection(InfluenzaCaseReport) <em>Get Influenza PHCR Treatment Information Section</em>}' query operation.
@@ -560,7 +555,7 @@ public class InfluenzaCaseReportOperations extends PublicHealthCaseReportOperati
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(flu::InfluenzaPHCRTreatmentInformationSection))->asSequence()->first().oclAsType(flu::InfluenzaPHCRTreatmentInformationSection)
+	 * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(flu::InfluenzaPHCRTreatmentInformationSection))->asSequence()->any(true).oclAsType(flu::InfluenzaPHCRTreatmentInformationSection)
 	 * @param influenzaCaseReport The receiving '<em><b>Influenza Case Report</b></em>' model object.
 	 * <!-- end-model-doc -->
 	 * @generated
@@ -589,7 +584,7 @@ public class InfluenzaCaseReportOperations extends PublicHealthCaseReportOperati
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String GET_INFLUENZA_PHCR_RELEVANT_DIAGNOSTIC_TESTS_AND_OR_LABORATORY_DATA_SECTION__EOCL_EXP = "self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(flu::InfluenzaPHCRRelevantDiagnosticTestsAndOrLaboratoryDataSection))->asSequence()->first().oclAsType(flu::InfluenzaPHCRRelevantDiagnosticTestsAndOrLaboratoryDataSection)";
+	protected static final String GET_INFLUENZA_PHCR_RELEVANT_DIAGNOSTIC_TESTS_AND_OR_LABORATORY_DATA_SECTION__EOCL_EXP = "self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(flu::InfluenzaPHCRRelevantDiagnosticTestsAndOrLaboratoryDataSection))->asSequence()->any(true).oclAsType(flu::InfluenzaPHCRRelevantDiagnosticTestsAndOrLaboratoryDataSection)";
 
 	/**
 	 * The cached OCL query for the '{@link #getInfluenzaPHCRRelevantDiagnosticTestsAndOrLaboratoryDataSection(InfluenzaCaseReport) <em>Get Influenza PHCR Relevant Diagnostic Tests And Or Laboratory Data Section</em>}' query operation.
@@ -606,7 +601,7 @@ public class InfluenzaCaseReportOperations extends PublicHealthCaseReportOperati
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(flu::InfluenzaPHCRRelevantDiagnosticTestsAndOrLaboratoryDataSection))->asSequence()->first().oclAsType(flu::InfluenzaPHCRRelevantDiagnosticTestsAndOrLaboratoryDataSection)
+	 * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(flu::InfluenzaPHCRRelevantDiagnosticTestsAndOrLaboratoryDataSection))->asSequence()->any(true).oclAsType(flu::InfluenzaPHCRRelevantDiagnosticTestsAndOrLaboratoryDataSection)
 	 * @param influenzaCaseReport The receiving '<em><b>Influenza Case Report</b></em>' model object.
 	 * <!-- end-model-doc -->
 	 * @generated
@@ -635,7 +630,7 @@ public class InfluenzaCaseReportOperations extends PublicHealthCaseReportOperati
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String GET_INFLUENZA_PHCR_SOCIAL_HISTORY_SECTION__EOCL_EXP = "self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(flu::InfluenzaPHCRSocialHistorySection))->asSequence()->first().oclAsType(flu::InfluenzaPHCRSocialHistorySection)";
+	protected static final String GET_INFLUENZA_PHCR_SOCIAL_HISTORY_SECTION__EOCL_EXP = "self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(flu::InfluenzaPHCRSocialHistorySection))->asSequence()->any(true).oclAsType(flu::InfluenzaPHCRSocialHistorySection)";
 
 	/**
 	 * The cached OCL query for the '{@link #getInfluenzaPHCRSocialHistorySection(InfluenzaCaseReport) <em>Get Influenza PHCR Social History Section</em>}' query operation.
@@ -652,7 +647,7 @@ public class InfluenzaCaseReportOperations extends PublicHealthCaseReportOperati
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(flu::InfluenzaPHCRSocialHistorySection))->asSequence()->first().oclAsType(flu::InfluenzaPHCRSocialHistorySection)
+	 * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(flu::InfluenzaPHCRSocialHistorySection))->asSequence()->any(true).oclAsType(flu::InfluenzaPHCRSocialHistorySection)
 	 * @param influenzaCaseReport The receiving '<em><b>Influenza Case Report</b></em>' model object.
 	 * <!-- end-model-doc -->
 	 * @generated

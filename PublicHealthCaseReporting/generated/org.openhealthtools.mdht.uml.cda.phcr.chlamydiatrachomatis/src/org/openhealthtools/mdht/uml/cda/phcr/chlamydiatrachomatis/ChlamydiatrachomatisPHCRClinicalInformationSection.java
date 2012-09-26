@@ -34,6 +34,7 @@ public interface ChlamydiatrachomatisPHCRClinicalInformationSection extends Phcr
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
+   * self.entry->one(entry : cda::Entry | not entry.observation.oclIsUndefined() and entry.observation.oclIsKindOf(chlamydiatrachomatis::ChlamydiatrachomatisCaseObservation) and entry.typeCode = vocab::x_ActRelationshipEntry::DRIV)
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
    * <!-- end-model-doc -->
@@ -45,23 +46,12 @@ public interface ChlamydiatrachomatisPHCRClinicalInformationSection extends Phcr
 	/**
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
+   * <!-- begin-model-doc -->
+   * self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(chlamydiatrachomatis::ChlamydiatrachomatisCaseObservation))->asSequence()->any(true).oclAsType(chlamydiatrachomatis::ChlamydiatrachomatisCaseObservation)
+   * <!-- end-model-doc -->
    * @model kind="operation" required="true" ordered="false"
    *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(chlamydiatrachomatis::ChlamydiatrachomatisCaseObservation))->asSequence()->any(true).oclAsType(chlamydiatrachomatis::ChlamydiatrachomatisCaseObservation)'"
    * @generated
    */
 	ChlamydiatrachomatisCaseObservation getChlamydiatrachomatisCaseObservation();
-
-	/**
-   * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-   * @generated
-   */
-	public ChlamydiatrachomatisPHCRClinicalInformationSection init();
-
-  /**
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    public ChlamydiatrachomatisPHCRClinicalInformationSection init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // ChlamydiatrachomatisPHCRClinicalInformationSection

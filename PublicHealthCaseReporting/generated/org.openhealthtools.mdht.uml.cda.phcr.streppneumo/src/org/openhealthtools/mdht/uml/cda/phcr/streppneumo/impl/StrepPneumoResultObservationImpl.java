@@ -26,8 +26,6 @@ import org.openhealthtools.mdht.uml.cda.phcr.streppneumo.StrepPneumoResultObserv
 
 import org.openhealthtools.mdht.uml.cda.phcr.streppneumo.operations.StrepPneumoResultObservationOperations;
 
-import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
-
 /**
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Result Observation</b></em>'.
@@ -39,59 +37,51 @@ import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
  */
 public class StrepPneumoResultObservationImpl extends ResultObservationImpl implements StrepPneumoResultObservation {
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	protected StrepPneumoResultObservationImpl() {
-    super();
-  }
+		super();
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	@Override
 	protected EClass eStaticClass() {
-    return StrepPneumoPackage.Literals.STREP_PNEUMO_RESULT_OBSERVATION;
-  }
+		return StrepPneumoPackage.Literals.STREP_PNEUMO_RESULT_OBSERVATION;
+	}
 
 	/**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public boolean validateStrepPneumoResultObservationCode(DiagnosticChain diagnostics, Map<Object, Object> context)
-  {
-    return StrepPneumoResultObservationOperations.validateStrepPneumoResultObservationCode(this, diagnostics, context);
-  }
-
-  /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	@Override
 	public boolean validateResultObservationTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return StrepPneumoResultObservationOperations.validateResultObservationTemplateId(this, diagnostics, context);
-  }
+		return StrepPneumoResultObservationOperations.validateResultObservationTemplateId(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
+	@Override
 	public StrepPneumoResultObservation init() {
-      return Initializer.Util.init(this);
-  }
+	    return Initializer.Util.init(this);
+	}
 
   /**
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
      * @generated
      */
-    public StrepPneumoResultObservation init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+    @Override
+	public StrepPneumoResultObservation init(Iterable<? extends Initializer<? extends EObject>> initializers) {
         Initializer.Util.init(this, initializers);
         return this;
     }

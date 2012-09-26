@@ -105,22 +105,4 @@ public class SalmonellosisPossibleExposureLocationAndTypeActImpl extends ActImpl
   {
     return SalmonellosisPossibleExposureLocationAndTypeActOperations.validateSalmonellosisPossibleExposureLocationAndTypeActClassCode(this, diagnostics, context);
   }
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public SalmonellosisPossibleExposureLocationAndTypeAct init() {
-      return Initializer.Util.init(this);
-  }
-    /**
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    public SalmonellosisPossibleExposureLocationAndTypeAct init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-        Initializer.Util.init(this, initializers);
-        return this;
-    }
 } //SalmonellosisPossibleExposureLocationAndTypeActImpl

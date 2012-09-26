@@ -27,8 +27,6 @@ import org.openhealthtools.mdht.uml.cda.phcr.pertussis.PertussisPackage;
 
 import org.openhealthtools.mdht.uml.cda.phcr.pertussis.operations.PertussisClinicalInformationSectionOperations;
 
-import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
-
 /**
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Clinical Information Section</b></em>'.
@@ -40,67 +38,69 @@ import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
  */
 public class PertussisClinicalInformationSectionImpl extends PhcrClinicalInformationSectionImpl implements PertussisClinicalInformationSection {
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	protected PertussisClinicalInformationSectionImpl() {
-    super();
-  }
+		super();
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	@Override
 	protected EClass eStaticClass() {
-    return PertussisPackage.Literals.PERTUSSIS_CLINICAL_INFORMATION_SECTION;
-  }
+		return PertussisPackage.Literals.PERTUSSIS_CLINICAL_INFORMATION_SECTION;
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public boolean validatePertussisClinicalInformationSectionPertussisCaseObservation(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return PertussisClinicalInformationSectionOperations.validatePertussisClinicalInformationSectionPertussisCaseObservation(this, diagnostics, context);
-  }
+		return PertussisClinicalInformationSectionOperations.validatePertussisClinicalInformationSectionPertussisCaseObservation(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public PertussisCaseObservation getPertussisCaseObservation() {
-    return PertussisClinicalInformationSectionOperations.getPertussisCaseObservation(this);
-  }
+		return PertussisClinicalInformationSectionOperations.getPertussisCaseObservation(this);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	@Override
 	public boolean validatePhcrClinicalInformationSectionTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return PertussisClinicalInformationSectionOperations.validatePhcrClinicalInformationSectionTemplateId(this, diagnostics, context);
-  }
+		return PertussisClinicalInformationSectionOperations.validatePhcrClinicalInformationSectionTemplateId(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
+	@Override
 	public PertussisClinicalInformationSection init() {
-      return Initializer.Util.init(this);
-  }
+	    return Initializer.Util.init(this);
+	}
 
   /**
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
      * @generated
      */
-    public PertussisClinicalInformationSection init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+    @Override
+	public PertussisClinicalInformationSection init(Iterable<? extends Initializer<? extends EObject>> initializers) {
         Initializer.Util.init(this, initializers);
         return this;
     }

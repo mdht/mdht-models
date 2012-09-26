@@ -33,6 +33,7 @@ public interface AnthraxCaseReport extends PublicHealthCaseReport {
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
+   * (self.title.oclIsUndefined() or self.title.isNullFlavorUndefined()) implies (not self.title.oclIsUndefined() and self.title.getText() = 'Public Health Case Report - Anthrax')
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
    * <!-- end-model-doc -->
@@ -45,6 +46,7 @@ public interface AnthraxCaseReport extends PublicHealthCaseReport {
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
+   * self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(anthrax::AnthraxPhcrClinicalInformationSection))
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
    * <!-- end-model-doc -->
@@ -57,6 +59,7 @@ public interface AnthraxCaseReport extends PublicHealthCaseReport {
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
+   * self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(anthrax::AnthraxPhcrRelevantDxTestsSection))
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
    * <!-- end-model-doc -->
@@ -69,6 +72,7 @@ public interface AnthraxCaseReport extends PublicHealthCaseReport {
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
+   * self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(anthrax::AnthraxPhcrSocialHistorySection))
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
    * <!-- end-model-doc -->
@@ -81,6 +85,7 @@ public interface AnthraxCaseReport extends PublicHealthCaseReport {
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
+   * self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(anthrax::AnthraxPhcrTreatmentInformationSection))
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
    * <!-- end-model-doc -->
@@ -92,6 +97,9 @@ public interface AnthraxCaseReport extends PublicHealthCaseReport {
 	/**
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
+   * <!-- begin-model-doc -->
+   * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(anthrax::AnthraxPhcrClinicalInformationSection))->asSequence()->any(true).oclAsType(anthrax::AnthraxPhcrClinicalInformationSection)
+   * <!-- end-model-doc -->
    * @model kind="operation" required="true" ordered="false"
    *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(anthrax::AnthraxPhcrClinicalInformationSection))->asSequence()->any(true).oclAsType(anthrax::AnthraxPhcrClinicalInformationSection)'"
    * @generated
@@ -101,6 +109,9 @@ public interface AnthraxCaseReport extends PublicHealthCaseReport {
 	/**
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
+   * <!-- begin-model-doc -->
+   * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(anthrax::AnthraxPhcrRelevantDxTestsSection))->asSequence()->any(true).oclAsType(anthrax::AnthraxPhcrRelevantDxTestsSection)
+   * <!-- end-model-doc -->
    * @model kind="operation" required="true" ordered="false"
    *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(anthrax::AnthraxPhcrRelevantDxTestsSection))->asSequence()->any(true).oclAsType(anthrax::AnthraxPhcrRelevantDxTestsSection)'"
    * @generated
@@ -110,6 +121,9 @@ public interface AnthraxCaseReport extends PublicHealthCaseReport {
 	/**
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
+   * <!-- begin-model-doc -->
+   * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(anthrax::AnthraxPhcrSocialHistorySection))->asSequence()->any(true).oclAsType(anthrax::AnthraxPhcrSocialHistorySection)
+   * <!-- end-model-doc -->
    * @model kind="operation" required="true" ordered="false"
    *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(anthrax::AnthraxPhcrSocialHistorySection))->asSequence()->any(true).oclAsType(anthrax::AnthraxPhcrSocialHistorySection)'"
    * @generated
@@ -119,23 +133,12 @@ public interface AnthraxCaseReport extends PublicHealthCaseReport {
 	/**
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
+   * <!-- begin-model-doc -->
+   * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(anthrax::AnthraxPhcrTreatmentInformationSection))->asSequence()->any(true).oclAsType(anthrax::AnthraxPhcrTreatmentInformationSection)
+   * <!-- end-model-doc -->
    * @model kind="operation" required="true" ordered="false"
    *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(anthrax::AnthraxPhcrTreatmentInformationSection))->asSequence()->any(true).oclAsType(anthrax::AnthraxPhcrTreatmentInformationSection)'"
    * @generated
    */
 	AnthraxPhcrTreatmentInformationSection getAnthraxPhcrTreatmentInformationSection();
-
-	/**
-   * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-   * @generated
-   */
-	public AnthraxCaseReport init();
-
-  /**
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    public AnthraxCaseReport init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // AnthraxCaseReport

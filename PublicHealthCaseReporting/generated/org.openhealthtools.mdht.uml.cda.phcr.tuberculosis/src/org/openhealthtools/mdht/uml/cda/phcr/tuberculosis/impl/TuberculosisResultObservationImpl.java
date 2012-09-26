@@ -26,8 +26,6 @@ import org.openhealthtools.mdht.uml.cda.phcr.tuberculosis.TuberculosisResultObse
 
 import org.openhealthtools.mdht.uml.cda.phcr.tuberculosis.operations.TuberculosisResultObservationOperations;
 
-import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
-
 /**
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Result Observation</b></em>'.
@@ -39,69 +37,61 @@ import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
  */
 public class TuberculosisResultObservationImpl extends ResultObservationImpl implements TuberculosisResultObservation {
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	protected TuberculosisResultObservationImpl() {
-    super();
-  }
+		super();
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	@Override
 	protected EClass eStaticClass() {
-    return TuberculosisPackage.Literals.TUBERCULOSIS_RESULT_OBSERVATION;
-  }
+		return TuberculosisPackage.Literals.TUBERCULOSIS_RESULT_OBSERVATION;
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
-  public boolean validateTuberculosisResultObservationCodeP(DiagnosticChain diagnostics, Map<Object, Object> context)
-  {
-    return TuberculosisResultObservationOperations.validateTuberculosisResultObservationCodeP(this, diagnostics, context);
-  }
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   public boolean validateTuberculosisResultObservationCode(DiagnosticChain diagnostics, Map<Object, Object> context)
   {
-    return TuberculosisResultObservationOperations.validateTuberculosisResultObservationCode(this, diagnostics, context);
-  }
+		return TuberculosisResultObservationOperations.validateTuberculosisResultObservationCode(this, diagnostics, context);
+	}
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	@Override
 	public boolean validateResultObservationTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return TuberculosisResultObservationOperations.validateResultObservationTemplateId(this, diagnostics, context);
-  }
+		return TuberculosisResultObservationOperations.validateResultObservationTemplateId(this, diagnostics, context);
+	}
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
-  public TuberculosisResultObservation init() {
-      return Initializer.Util.init(this);
-  }
+	 * @generated
+	 */
+  @Override
+public TuberculosisResultObservation init() {
+	    return Initializer.Util.init(this);
+	}
 
   /**
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
      * @generated
      */
-    public TuberculosisResultObservation init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+    @Override
+	public TuberculosisResultObservation init(Iterable<? extends Initializer<? extends EObject>> initializers) {
         Initializer.Util.init(this, initializers);
         return this;
     }

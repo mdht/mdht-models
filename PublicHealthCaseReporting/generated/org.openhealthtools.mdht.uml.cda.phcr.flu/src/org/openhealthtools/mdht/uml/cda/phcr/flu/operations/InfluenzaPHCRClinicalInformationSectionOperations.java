@@ -130,7 +130,7 @@ public class InfluenzaPHCRClinicalInformationSectionOperations extends PhcrClini
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String GET_INFLUENZA_CASE_OBSERVATION__EOCL_EXP = "self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(flu::InfluenzaCaseObservation))->asSequence()->first().oclAsType(flu::InfluenzaCaseObservation)";
+	protected static final String GET_INFLUENZA_CASE_OBSERVATION__EOCL_EXP = "self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(flu::InfluenzaCaseObservation))->asSequence()->any(true).oclAsType(flu::InfluenzaCaseObservation)";
 
 	/**
 	 * The cached OCL query for the '{@link #getInfluenzaCaseObservation(InfluenzaPHCRClinicalInformationSection) <em>Get Influenza Case Observation</em>}' query operation.
@@ -146,7 +146,7 @@ public class InfluenzaPHCRClinicalInformationSectionOperations extends PhcrClini
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(flu::InfluenzaCaseObservation))->asSequence()->first().oclAsType(flu::InfluenzaCaseObservation)
+	 * self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(flu::InfluenzaCaseObservation))->asSequence()->any(true).oclAsType(flu::InfluenzaCaseObservation)
 	 * @param influenzaPHCRClinicalInformationSection The receiving '<em><b>Influenza PHCR Clinical Information Section</b></em>' model object.
 	 * <!-- end-model-doc -->
 	 * @generated

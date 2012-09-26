@@ -48,181 +48,176 @@ import org.openhealthtools.mdht.uml.cda.phcr.tularemia.util.TularemiaValidator;
  */
 public class TularemiaPHCRSocialHistorySectionOperations extends PhcrSocialHistorySectionOperations {
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	protected TularemiaPHCRSocialHistorySectionOperations() {
-    super();
-  }
+		super();
+	}
 
 	/**
-   * The cached OCL expression body for the '{@link #validateTularemiaPHCRSocialHistorySectionTularemiaPossibleExposureLocationAndTypeAct(TularemiaPHCRSocialHistorySection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Tularemia PHCR Social History Section Tularemia Possible Exposure Location And Type Act</em>}' operation.
-   * <!-- begin-user-doc -->
+	 * The cached OCL expression body for the '{@link #validateTularemiaPHCRSocialHistorySectionTularemiaPossibleExposureLocationAndTypeAct(TularemiaPHCRSocialHistorySection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Tularemia PHCR Social History Section Tularemia Possible Exposure Location And Type Act</em>}' operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @see #validateTularemiaPHCRSocialHistorySectionTularemiaPossibleExposureLocationAndTypeAct(TularemiaPHCRSocialHistorySection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-   * @generated
-   * @ordered
-   */
+	 * @see #validateTularemiaPHCRSocialHistorySectionTularemiaPossibleExposureLocationAndTypeAct(TularemiaPHCRSocialHistorySection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 	protected static final String VALIDATE_TULAREMIA_PHCR_SOCIAL_HISTORY_SECTION_TULAREMIA_POSSIBLE_EXPOSURE_LOCATION_AND_TYPE_ACT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entry->exists(entry : cda::Entry | not entry.act.oclIsUndefined() and entry.act.oclIsKindOf(tularemia::TularemiaPossibleExposureLocationAndTypeAct) and entry.typeCode = vocab::x_ActRelationshipEntry::DRIV)";
 
 	/**
-   * The cached OCL invariant for the '{@link #validateTularemiaPHCRSocialHistorySectionTularemiaPossibleExposureLocationAndTypeAct(TularemiaPHCRSocialHistorySection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Tularemia PHCR Social History Section Tularemia Possible Exposure Location And Type Act</em>}' invariant operation.
-   * <!-- begin-user-doc -->
+	 * The cached OCL invariant for the '{@link #validateTularemiaPHCRSocialHistorySectionTularemiaPossibleExposureLocationAndTypeAct(TularemiaPHCRSocialHistorySection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Tularemia PHCR Social History Section Tularemia Possible Exposure Location And Type Act</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @see #validateTularemiaPHCRSocialHistorySectionTularemiaPossibleExposureLocationAndTypeAct(TularemiaPHCRSocialHistorySection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-   * @generated
-   * @ordered
-   */
+	 * @see #validateTularemiaPHCRSocialHistorySectionTularemiaPossibleExposureLocationAndTypeAct(TularemiaPHCRSocialHistorySection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 	protected static Constraint VALIDATE_TULAREMIA_PHCR_SOCIAL_HISTORY_SECTION_TULAREMIA_POSSIBLE_EXPOSURE_LOCATION_AND_TYPE_ACT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * <!-- begin-model-doc -->
-   * @param tularemiaPHCRSocialHistorySection The receiving '<em><b>PHCR Social History Section</b></em>' model object.
-   * @param diagnostics The chain of diagnostics to which problems are to be appended.
-   * @param context The cache of context-specific information.
-   * <!-- end-model-doc -->
-   * @generated
-   */
+	 * <!-- begin-model-doc -->
+	 * self.entry->exists(entry : cda::Entry | not entry.act.oclIsUndefined() and entry.act.oclIsKindOf(tularemia::TularemiaPossibleExposureLocationAndTypeAct) and entry.typeCode = vocab::x_ActRelationshipEntry::DRIV)
+	 * @param tularemiaPHCRSocialHistorySection The receiving '<em><b>PHCR Social History Section</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
 	public static  boolean validateTularemiaPHCRSocialHistorySectionTularemiaPossibleExposureLocationAndTypeAct(TularemiaPHCRSocialHistorySection tularemiaPHCRSocialHistorySection, DiagnosticChain diagnostics, Map<Object, Object> context) {
   	  
-    if (VALIDATE_TULAREMIA_PHCR_SOCIAL_HISTORY_SECTION_TULAREMIA_POSSIBLE_EXPOSURE_LOCATION_AND_TYPE_ACT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-      OCL.Helper helper = EOCL_ENV.createOCLHelper();
-      helper.setContext(TularemiaPackage.Literals.TULAREMIA_PHCR_SOCIAL_HISTORY_SECTION);
-      try
-      {
-        VALIDATE_TULAREMIA_PHCR_SOCIAL_HISTORY_SECTION_TULAREMIA_POSSIBLE_EXPOSURE_LOCATION_AND_TYPE_ACT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_TULAREMIA_PHCR_SOCIAL_HISTORY_SECTION_TULAREMIA_POSSIBLE_EXPOSURE_LOCATION_AND_TYPE_ACT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-      }
-      catch (ParserException pe)
-      {
-        throw new UnsupportedOperationException(pe.getLocalizedMessage());
-      }
-    }
-    if (!EOCL_ENV.createQuery(VALIDATE_TULAREMIA_PHCR_SOCIAL_HISTORY_SECTION_TULAREMIA_POSSIBLE_EXPOSURE_LOCATION_AND_TYPE_ACT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(tularemiaPHCRSocialHistorySection))
-    {
-      if (diagnostics != null)
-      {
-        diagnostics.add
-          (new BasicDiagnostic
-            (Diagnostic.INFO,
-             TularemiaValidator.DIAGNOSTIC_SOURCE,
-             TularemiaValidator.TULAREMIA_PHCR_SOCIAL_HISTORY_SECTION__TULAREMIA_PHCR_SOCIAL_HISTORY_SECTION_TULAREMIA_POSSIBLE_EXPOSURE_LOCATION_AND_TYPE_ACT,
-             TularemiaPlugin.INSTANCE.getString("TularemiaPHCRSocialHistorySectionTularemiaPossibleExposureLocationAndTypeAct"),
-             new Object [] { tularemiaPHCRSocialHistorySection }));
-      }
-       
-      return false;
-    }
-    return true;
-  }
+		if (VALIDATE_TULAREMIA_PHCR_SOCIAL_HISTORY_SECTION_TULAREMIA_POSSIBLE_EXPOSURE_LOCATION_AND_TYPE_ACT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+			helper.setContext(TularemiaPackage.Literals.TULAREMIA_PHCR_SOCIAL_HISTORY_SECTION);
+			try {
+				VALIDATE_TULAREMIA_PHCR_SOCIAL_HISTORY_SECTION_TULAREMIA_POSSIBLE_EXPOSURE_LOCATION_AND_TYPE_ACT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_TULAREMIA_PHCR_SOCIAL_HISTORY_SECTION_TULAREMIA_POSSIBLE_EXPOSURE_LOCATION_AND_TYPE_ACT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+			}
+			catch (ParserException pe) {
+				throw new UnsupportedOperationException(pe.getLocalizedMessage());
+			}
+		}
+		if (!EOCL_ENV.createQuery(VALIDATE_TULAREMIA_PHCR_SOCIAL_HISTORY_SECTION_TULAREMIA_POSSIBLE_EXPOSURE_LOCATION_AND_TYPE_ACT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(tularemiaPHCRSocialHistorySection)) {
+			if (diagnostics != null) {
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.INFO,
+						 TularemiaValidator.DIAGNOSTIC_SOURCE,
+						 TularemiaValidator.TULAREMIA_PHCR_SOCIAL_HISTORY_SECTION__TULAREMIA_PHCR_SOCIAL_HISTORY_SECTION_TULAREMIA_POSSIBLE_EXPOSURE_LOCATION_AND_TYPE_ACT,
+						 TularemiaPlugin.INSTANCE.getString("TularemiaPHCRSocialHistorySectionTularemiaPossibleExposureLocationAndTypeAct"),
+						 new Object [] { tularemiaPHCRSocialHistorySection }));
+			}
+			 
+			return false;
+		}
+		return true;
+	}
 
 	/**
-   * The cached OCL expression body for the '{@link #getTularemiaPossibleExposureLocationAndTypeActs(TularemiaPHCRSocialHistorySection) <em>Get Tularemia Possible Exposure Location And Type Acts</em>}' operation.
-   * <!-- begin-user-doc -->
+	 * The cached OCL expression body for the '{@link #getTularemiaPossibleExposureLocationAndTypeActs(TularemiaPHCRSocialHistorySection) <em>Get Tularemia Possible Exposure Location And Type Acts</em>}' operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @see #getTularemiaPossibleExposureLocationAndTypeActs(TularemiaPHCRSocialHistorySection)
-   * @generated
-   * @ordered
-   */
+	 * @see #getTularemiaPossibleExposureLocationAndTypeActs(TularemiaPHCRSocialHistorySection)
+	 * @generated
+	 * @ordered
+	 */
 	protected static final String GET_TULAREMIA_POSSIBLE_EXPOSURE_LOCATION_AND_TYPE_ACTS__EOCL_EXP = "self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(tularemia::TularemiaPossibleExposureLocationAndTypeAct)).oclAsType(tularemia::TularemiaPossibleExposureLocationAndTypeAct)";
 
 	/**
-   * The cached OCL query for the '{@link #getTularemiaPossibleExposureLocationAndTypeActs(TularemiaPHCRSocialHistorySection) <em>Get Tularemia Possible Exposure Location And Type Acts</em>}' query operation.
-   * <!-- begin-user-doc -->
+	 * The cached OCL query for the '{@link #getTularemiaPossibleExposureLocationAndTypeActs(TularemiaPHCRSocialHistorySection) <em>Get Tularemia Possible Exposure Location And Type Acts</em>}' query operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @see #getTularemiaPossibleExposureLocationAndTypeActs(TularemiaPHCRSocialHistorySection)
-   * @generated
-   * @ordered
-   */
+	 * @see #getTularemiaPossibleExposureLocationAndTypeActs(TularemiaPHCRSocialHistorySection)
+	 * @generated
+	 * @ordered
+	 */
 	protected static OCLExpression<EClassifier> GET_TULAREMIA_POSSIBLE_EXPOSURE_LOCATION_AND_TYPE_ACTS__EOCL_QRY;
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * <!-- begin-model-doc -->
+	 * self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(tularemia::TularemiaPossibleExposureLocationAndTypeAct)).oclAsType(tularemia::TularemiaPossibleExposureLocationAndTypeAct)
+	 * @param tularemiaPHCRSocialHistorySection The receiving '<em><b>PHCR Social History Section</b></em>' model object.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
 	public static  EList<TularemiaPossibleExposureLocationAndTypeAct> getTularemiaPossibleExposureLocationAndTypeActs(TularemiaPHCRSocialHistorySection tularemiaPHCRSocialHistorySection) {
-    if (GET_TULAREMIA_POSSIBLE_EXPOSURE_LOCATION_AND_TYPE_ACTS__EOCL_QRY == null)
-    {
-      OCL.Helper helper = EOCL_ENV.createOCLHelper();
-      helper.setOperationContext(TularemiaPackage.Literals.TULAREMIA_PHCR_SOCIAL_HISTORY_SECTION, TularemiaPackage.Literals.TULAREMIA_PHCR_SOCIAL_HISTORY_SECTION.getEAllOperations().get(82));
-      try
-      {
-        GET_TULAREMIA_POSSIBLE_EXPOSURE_LOCATION_AND_TYPE_ACTS__EOCL_QRY = helper.createQuery(GET_TULAREMIA_POSSIBLE_EXPOSURE_LOCATION_AND_TYPE_ACTS__EOCL_EXP);
-      }
-      catch (ParserException pe)
-      {
-        throw new UnsupportedOperationException(pe.getLocalizedMessage());
-      }
-    }
-    OCL.Query query = EOCL_ENV.createQuery(GET_TULAREMIA_POSSIBLE_EXPOSURE_LOCATION_AND_TYPE_ACTS__EOCL_QRY);
-    @SuppressWarnings("unchecked")
-    Collection<TularemiaPossibleExposureLocationAndTypeAct> result = (Collection<TularemiaPossibleExposureLocationAndTypeAct>) query.evaluate(tularemiaPHCRSocialHistorySection);
-    return new BasicEList.UnmodifiableEList<TularemiaPossibleExposureLocationAndTypeAct>(result.size(), result.toArray());
-  }
+		if (GET_TULAREMIA_POSSIBLE_EXPOSURE_LOCATION_AND_TYPE_ACTS__EOCL_QRY == null) {
+			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+			helper.setOperationContext(TularemiaPackage.Literals.TULAREMIA_PHCR_SOCIAL_HISTORY_SECTION, TularemiaPackage.Literals.TULAREMIA_PHCR_SOCIAL_HISTORY_SECTION.getEAllOperations().get(81));
+			try {
+				GET_TULAREMIA_POSSIBLE_EXPOSURE_LOCATION_AND_TYPE_ACTS__EOCL_QRY = helper.createQuery(GET_TULAREMIA_POSSIBLE_EXPOSURE_LOCATION_AND_TYPE_ACTS__EOCL_EXP);
+			}
+			catch (ParserException pe) {
+				throw new UnsupportedOperationException(pe.getLocalizedMessage());
+			}
+		}
+		OCL.Query query = EOCL_ENV.createQuery(GET_TULAREMIA_POSSIBLE_EXPOSURE_LOCATION_AND_TYPE_ACTS__EOCL_QRY);
+		@SuppressWarnings("unchecked")
+		Collection<TularemiaPossibleExposureLocationAndTypeAct> result = (Collection<TularemiaPossibleExposureLocationAndTypeAct>) query.evaluate(tularemiaPHCRSocialHistorySection);
+		return new BasicEList.UnmodifiableEList<TularemiaPossibleExposureLocationAndTypeAct>(result.size(), result.toArray());
+	}
 
 	/**
-   * The cached OCL expression body for the '{@link #validateSocialHistorySectionTemplateId(TularemiaPHCRSocialHistorySection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Social History Section Template Id</em>}' operation.
-   * <!-- begin-user-doc -->
+	 * The cached OCL expression body for the '{@link #validateSocialHistorySectionTemplateId(TularemiaPHCRSocialHistorySection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Social History Section Template Id</em>}' operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @see #validateSocialHistorySectionTemplateId(TularemiaPHCRSocialHistorySection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-   * @generated
-   * @ordered
-   */
+	 * @see #validateSocialHistorySectionTemplateId(TularemiaPHCRSocialHistorySection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 	protected static final String VALIDATE_SOCIAL_HISTORY_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.15.2.18')";
 
 	/**
-   * The cached OCL invariant for the '{@link #validateSocialHistorySectionTemplateId(TularemiaPHCRSocialHistorySection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Social History Section Template Id</em>}' invariant operation.
-   * <!-- begin-user-doc -->
+	 * The cached OCL invariant for the '{@link #validateSocialHistorySectionTemplateId(TularemiaPHCRSocialHistorySection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Social History Section Template Id</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @see #validateSocialHistorySectionTemplateId(TularemiaPHCRSocialHistorySection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-   * @generated
-   * @ordered
-   */
+	 * @see #validateSocialHistorySectionTemplateId(TularemiaPHCRSocialHistorySection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 	protected static Constraint VALIDATE_SOCIAL_HISTORY_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * <!-- begin-model-doc -->
-   * @param tularemiaPHCRSocialHistorySection The receiving '<em><b>PHCR Social History Section</b></em>' model object.
-   * @param diagnostics The chain of diagnostics to which problems are to be appended.
-   * @param context The cache of context-specific information.
-   * <!-- end-model-doc -->
-   * @generated
-   */
+	 * <!-- begin-model-doc -->
+	 * self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.15.2.18')
+	 * @param tularemiaPHCRSocialHistorySection The receiving '<em><b>PHCR Social History Section</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
 	public static  boolean validateSocialHistorySectionTemplateId(TularemiaPHCRSocialHistorySection tularemiaPHCRSocialHistorySection, DiagnosticChain diagnostics, Map<Object, Object> context) {
   	  
-    if (VALIDATE_SOCIAL_HISTORY_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-      OCL.Helper helper = EOCL_ENV.createOCLHelper();
-      helper.setContext(TularemiaPackage.Literals.TULAREMIA_PHCR_SOCIAL_HISTORY_SECTION);
-      try
-      {
-        VALIDATE_SOCIAL_HISTORY_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_SOCIAL_HISTORY_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-      }
-      catch (ParserException pe)
-      {
-        throw new UnsupportedOperationException(pe.getLocalizedMessage());
-      }
-    }
-    if (!EOCL_ENV.createQuery(VALIDATE_SOCIAL_HISTORY_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(tularemiaPHCRSocialHistorySection))
-    {
-      if (diagnostics != null)
-      {
-        diagnostics.add
-          (new BasicDiagnostic
-            (Diagnostic.ERROR,
-             TularemiaValidator.DIAGNOSTIC_SOURCE,
-             TularemiaValidator.TULAREMIA_PHCR_SOCIAL_HISTORY_SECTION__SOCIAL_HISTORY_SECTION_TEMPLATE_ID,
-             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "SocialHistorySectionTemplateId", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(tularemiaPHCRSocialHistorySection, context) }),
-             new Object [] { tularemiaPHCRSocialHistorySection }));
-      }
-       
-      return false;
-    }
-    return true;
-  }
+		if (VALIDATE_SOCIAL_HISTORY_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+			helper.setContext(TularemiaPackage.Literals.TULAREMIA_PHCR_SOCIAL_HISTORY_SECTION);
+			try {
+				VALIDATE_SOCIAL_HISTORY_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_SOCIAL_HISTORY_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+			}
+			catch (ParserException pe) {
+				throw new UnsupportedOperationException(pe.getLocalizedMessage());
+			}
+		}
+		if (!EOCL_ENV.createQuery(VALIDATE_SOCIAL_HISTORY_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(tularemiaPHCRSocialHistorySection)) {
+			if (diagnostics != null) {
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 TularemiaValidator.DIAGNOSTIC_SOURCE,
+						 TularemiaValidator.TULAREMIA_PHCR_SOCIAL_HISTORY_SECTION__SOCIAL_HISTORY_SECTION_TEMPLATE_ID,
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "SocialHistorySectionTemplateId", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(tularemiaPHCRSocialHistorySection, context) }),
+						 new Object [] { tularemiaPHCRSocialHistorySection }));
+			}
+			 
+			return false;
+		}
+		return true;
+	}
 
 } // TularemiaPHCRSocialHistorySectionOperations

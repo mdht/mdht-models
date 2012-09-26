@@ -10,8 +10,11 @@
  *******************************************************************************/
 package org.openhealthtools.mdht.uml.cda.phcr.hib;
 
+import java.lang.Iterable;
 import java.util.Map;
 import org.eclipse.emf.common.util.DiagnosticChain;
+import org.eclipse.emf.ecore.EObject;
+import org.openhealthtools.mdht.emf.runtime.util.Initializer;
 import org.openhealthtools.mdht.uml.cda.phcr.PublicHealthCaseReport;
 
 /**
@@ -21,7 +24,7 @@ import org.openhealthtools.mdht.uml.cda.phcr.PublicHealthCaseReport;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.phcr.hib.HibPackage#getHIBCaseReport()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation title.mixed='Public Health Case Report - Haemophilus Influenzae Type B' templateId.root='2.16.840.1.113883.10.20.15.1.14' constraints.validation.error='HIBCaseReportTemplateId HIBCaseReportTitle HIBCaseReportHibPhcrClinicalInformationSection' constraints.validation.warning='HIBCaseReportHibPhcrRelevantDxTestsSection'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='HIBCaseReportTemplateId HIBCaseReportTitle HIBCaseReportHibPhcrClinicalInformationSection ' templateId.root='2.16.840.1.113883.10.20.15.1.14' title.mixed='Public Health Case Report - Haemophilus Influenzae Type B' constraints.validation.warning='HIBCaseReportHibPhcrRelevantDxTestsSection'"
  * @generated
  */
 public interface HIBCaseReport extends PublicHealthCaseReport
@@ -69,10 +72,10 @@ public interface HIBCaseReport extends PublicHealthCaseReport
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hib::HibPhcrClinicalInformationSection ))->asSequence()->first().oclAsType(hib::HibPhcrClinicalInformationSection )
+	 * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hib::HibPhcrClinicalInformationSection ))->asSequence()->any(true).oclAsType(hib::HibPhcrClinicalInformationSection )
 	 * <!-- end-model-doc -->
 	 * @model kind="operation" required="true" ordered="false"
-	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hib::HibPhcrClinicalInformationSection ))->asSequence()->first().oclAsType(hib::HibPhcrClinicalInformationSection )'"
+	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hib::HibPhcrClinicalInformationSection ))->asSequence()->any(true).oclAsType(hib::HibPhcrClinicalInformationSection )'"
 	 * @generated
 	 */
 	HibPhcrClinicalInformationSection getHibPhcrClinicalInformationSection();
@@ -81,10 +84,10 @@ public interface HIBCaseReport extends PublicHealthCaseReport
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hib::HibPhcrRelevantDxTestsSection))->asSequence()->first().oclAsType(hib::HibPhcrRelevantDxTestsSection)
+	 * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hib::HibPhcrRelevantDxTestsSection))->asSequence()->any(true).oclAsType(hib::HibPhcrRelevantDxTestsSection)
 	 * <!-- end-model-doc -->
 	 * @model kind="operation" required="true" ordered="false"
-	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hib::HibPhcrRelevantDxTestsSection))->asSequence()->first().oclAsType(hib::HibPhcrRelevantDxTestsSection)'"
+	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hib::HibPhcrRelevantDxTestsSection))->asSequence()->any(true).oclAsType(hib::HibPhcrRelevantDxTestsSection)'"
 	 * @generated
 	 */
 	HibPhcrRelevantDxTestsSection getHibPhcrRelevantDxTestsSection();
@@ -95,4 +98,11 @@ public interface HIBCaseReport extends PublicHealthCaseReport
 	 * @generated
 	 */
   public HIBCaseReport init();
+
+		/**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    public HIBCaseReport init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // HIBCaseReport

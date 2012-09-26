@@ -33,6 +33,7 @@ public interface TreatmentNotGivenSubstanceAdministration extends SubstanceAdmin
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
+   * self.negationInd=true
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
    * <!-- end-model-doc -->
@@ -45,6 +46,7 @@ public interface TreatmentNotGivenSubstanceAdministration extends SubstanceAdmin
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
+   * self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.15.3.56')
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
    * <!-- end-model-doc -->
@@ -57,6 +59,7 @@ public interface TreatmentNotGivenSubstanceAdministration extends SubstanceAdmin
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
+   * self.classCode=vocab::ActClass::SBADM
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
    * <!-- end-model-doc -->
@@ -69,6 +72,7 @@ public interface TreatmentNotGivenSubstanceAdministration extends SubstanceAdmin
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
+   * self.moodCode=vocab::x_DocumentSubstanceMood::EVN
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
    * <!-- end-model-doc -->
@@ -81,6 +85,7 @@ public interface TreatmentNotGivenSubstanceAdministration extends SubstanceAdmin
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
+   * not self.negationInd.oclIsUndefined()
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
    * <!-- end-model-doc -->
@@ -93,6 +98,9 @@ public interface TreatmentNotGivenSubstanceAdministration extends SubstanceAdmin
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
+   * (self.statusCode.oclIsUndefined() or self.statusCode.isNullFlavorUndefined()) implies (not self.statusCode.oclIsUndefined() and self.statusCode.oclIsKindOf(datatypes::CS) and 
+   * let value : datatypes::CS = self.statusCode.oclAsType(datatypes::CS) in 
+   * value.code = 'completed')
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
    * <!-- end-model-doc -->
@@ -105,6 +113,7 @@ public interface TreatmentNotGivenSubstanceAdministration extends SubstanceAdmin
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
+   * (self.statusCode.oclIsUndefined() or self.statusCode.isNullFlavorUndefined()) implies (not self.statusCode.oclIsUndefined())
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
    * <!-- end-model-doc -->
@@ -112,18 +121,4 @@ public interface TreatmentNotGivenSubstanceAdministration extends SubstanceAdmin
    * @generated
    */
 	boolean validateTreatmentNotGivenSubstanceAdministrationStatusCodeP(DiagnosticChain diagnostics, Map<Object, Object> context);
-
-	/**
-   * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-   * @generated
-   */
-	public TreatmentNotGivenSubstanceAdministration init();
-
-  /**
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    public TreatmentNotGivenSubstanceAdministration init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // TreatmentNotGivenSubstanceAdministration

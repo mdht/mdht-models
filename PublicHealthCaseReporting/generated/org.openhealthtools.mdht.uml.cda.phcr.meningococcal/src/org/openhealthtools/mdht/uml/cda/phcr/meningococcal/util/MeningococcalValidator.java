@@ -14,16 +14,19 @@ import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.common.util.ResourceLocator;
-
 import org.eclipse.emf.ecore.EPackage;
-
 import org.eclipse.emf.ecore.util.EObjectValidator;
-
-
 import org.openhealthtools.mdht.uml.cda.ccd.util.CCDValidator;
-import org.openhealthtools.mdht.uml.cda.phcr.meningococcal.*;
+import org.openhealthtools.mdht.uml.cda.phcr.meningococcal.MeningococcalCaseObservation;
+import org.openhealthtools.mdht.uml.cda.phcr.meningococcal.MeningococcalCaseReport;
+import org.openhealthtools.mdht.uml.cda.phcr.meningococcal.MeningococcalPackage;
+import org.openhealthtools.mdht.uml.cda.phcr.meningococcal.MeningococcalPhcrClinicalInformationSection;
+import org.openhealthtools.mdht.uml.cda.phcr.meningococcal.MeningococcalPhcrRelevantDxTestsSection;
+import org.openhealthtools.mdht.uml.cda.phcr.meningococcal.MeningococcalPlugin;
+import org.openhealthtools.mdht.uml.cda.phcr.meningococcal.MeningococcalResultObservation;
+import org.openhealthtools.mdht.uml.cda.phcr.meningococcal.MeningococcalResultOrganizer;
+import org.openhealthtools.mdht.uml.cda.phcr.meningococcal.MeningococcalSignsAndSymptomsObservation;
 import org.openhealthtools.mdht.uml.cda.phcr.util.PhcrValidator;
-
 import org.openhealthtools.mdht.uml.cda.util.CDAValidator;
 
 /**
@@ -294,7 +297,6 @@ public class MeningococcalValidator extends EObjectValidator
 		if (result || diagnostics != null) result &= phcrValidator.validatePublicHealthCaseReport_validatePublicHealthCaseReportPHCRLegalAuthenticatorAssignedEntityAddr(meningococcalCaseReport, diagnostics, context);
 		if (result || diagnostics != null) result &= phcrValidator.validatePublicHealthCaseReport_validatePublicHealthCaseReportPHCRLegalAuthenticatorAssignedEntityAssignedPersonName(meningococcalCaseReport, diagnostics, context);
 		if (result || diagnostics != null) result &= validateMeningococcalCaseReport_validatePublicHealthCaseReportTemplateId(meningococcalCaseReport, diagnostics, context);
-		if (result || diagnostics != null) result &= phcrValidator.validatePublicHealthCaseReport_validatePublicHealthCaseReportCodeP(meningococcalCaseReport, diagnostics, context);
 		if (result || diagnostics != null) result &= phcrValidator.validatePublicHealthCaseReport_validatePublicHealthCaseReportCode(meningococcalCaseReport, diagnostics, context);
 		if (result || diagnostics != null) result &= phcrValidator.validatePublicHealthCaseReport_validatePublicHealthCaseReportPhcrSocialHistorySection(meningococcalCaseReport, diagnostics, context);
 		if (result || diagnostics != null) result &= phcrValidator.validatePublicHealthCaseReport_validatePublicHealthCaseReportPhcrClinicalInformationSection(meningococcalCaseReport, diagnostics, context);
@@ -368,7 +370,6 @@ public class MeningococcalValidator extends EObjectValidator
 		if (result || diagnostics != null) result &= phcrValidator.validatePhcrClinicalInformationSection_validatePhcrClinicalInformationSectionPatientConditionConstraint(meningococcalPhcrClinicalInformationSection, diagnostics, context);
 		if (result || diagnostics != null) result &= validateMeningococcalPhcrClinicalInformationSection_validatePhcrClinicalInformationSectionTemplateId(meningococcalPhcrClinicalInformationSection, diagnostics, context);
 		if (result || diagnostics != null) result &= phcrValidator.validatePhcrClinicalInformationSection_validatePhcrClinicalInformationSectionCode(meningococcalPhcrClinicalInformationSection, diagnostics, context);
-		if (result || diagnostics != null) result &= phcrValidator.validatePhcrClinicalInformationSection_validatePhcrClinicalInformationSectionCodeP(meningococcalPhcrClinicalInformationSection, diagnostics, context);
 		if (result || diagnostics != null) result &= phcrValidator.validatePhcrClinicalInformationSection_validatePhcrClinicalInformationSectionTitle(meningococcalPhcrClinicalInformationSection, diagnostics, context);
 		if (result || diagnostics != null) result &= phcrValidator.validatePhcrClinicalInformationSection_validatePhcrClinicalInformationSectionText(meningococcalPhcrClinicalInformationSection, diagnostics, context);
 		if (result || diagnostics != null) result &= phcrValidator.validatePhcrClinicalInformationSection_validatePhcrClinicalInformationSectionCaseObservation(meningococcalPhcrClinicalInformationSection, diagnostics, context);
@@ -417,7 +418,7 @@ public class MeningococcalValidator extends EObjectValidator
 		if (result || diagnostics != null) result &= ccdValidator.validateProblemObservation_validateProblemObservationContainsPatientAwareness(meningococcalCaseObservation, diagnostics, context);
 		if (result || diagnostics != null) result &= validateMeningococcalCaseObservation_validateProblemObservationTemplateId(meningococcalCaseObservation, diagnostics, context);
 		if (result || diagnostics != null) result &= ccdValidator.validateProblemObservation_validateProblemObservationMoodCode(meningococcalCaseObservation, diagnostics, context);
-		if (result || diagnostics != null) result &= phcrValidator.validateCaseObservation_validateProblemObservationStatusCode(meningococcalCaseObservation, diagnostics, context);
+		if (result || diagnostics != null) result &= ccdValidator.validateProblemObservation_validateProblemObservationStatusCode(meningococcalCaseObservation, diagnostics, context);
 		if (result || diagnostics != null) result &= ccdValidator.validateProblemObservation_validateProblemObservationEffectiveTime(meningococcalCaseObservation, diagnostics, context);
 		if (result || diagnostics != null) result &= ccdValidator.validateProblemObservation_validateProblemObservationProblemStatus(meningococcalCaseObservation, diagnostics, context);
 		if (result || diagnostics != null) result &= ccdValidator.validateProblemObservation_validateProblemObservationProblemHealthStatus(meningococcalCaseObservation, diagnostics, context);
@@ -429,7 +430,6 @@ public class MeningococcalValidator extends EObjectValidator
 		if (result || diagnostics != null) result &= phcrValidator.validateCaseObservation_validateCaseObservationMoodCode(meningococcalCaseObservation, diagnostics, context);
 		if (result || diagnostics != null) result &= phcrValidator.validateCaseObservation_validateCaseObservationId(meningococcalCaseObservation, diagnostics, context);
 		if (result || diagnostics != null) result &= phcrValidator.validateCaseObservation_validateCaseObservationCode(meningococcalCaseObservation, diagnostics, context);
-		if (result || diagnostics != null) result &= phcrValidator.validateCaseObservation_validateProblemObservationCode(meningococcalCaseObservation, diagnostics, context);
 		if (result || diagnostics != null) result &= phcrValidator.validateCaseObservation_validateCaseObservationStatusCode(meningococcalCaseObservation, diagnostics, context);
 		if (result || diagnostics != null) result &= phcrValidator.validateCaseObservation_validateCaseObservationEffectiveTime(meningococcalCaseObservation, diagnostics, context);
 		if (result || diagnostics != null) result &= phcrValidator.validateCaseObservation_validateCaseObservationValue(meningococcalCaseObservation, diagnostics, context);
@@ -477,10 +477,8 @@ public class MeningococcalValidator extends EObjectValidator
 		if (result || diagnostics != null) result &= phcrValidator.validateSignsAndSymptomsObservation_validateSignsAndSymptomsObservationClassCode(meningococcalSignsAndSymptomsObservation, diagnostics, context);
 		if (result || diagnostics != null) result &= phcrValidator.validateSignsAndSymptomsObservation_validateSignsAndSymptomsObservationMoodCode(meningococcalSignsAndSymptomsObservation, diagnostics, context);
 		if (result || diagnostics != null) result &= phcrValidator.validateSignsAndSymptomsObservation_validateSignsAndSymptomsObservationNegationInd(meningococcalSignsAndSymptomsObservation, diagnostics, context);
-		if (result || diagnostics != null) result &= phcrValidator.validateSignsAndSymptomsObservation_validateSignsAndSymptomsObservationCodeP(meningococcalSignsAndSymptomsObservation, diagnostics, context);
 		if (result || diagnostics != null) result &= phcrValidator.validateSignsAndSymptomsObservation_validateSignsAndSymptomsObservationCode(meningococcalSignsAndSymptomsObservation, diagnostics, context);
 		if (result || diagnostics != null) result &= phcrValidator.validateSignsAndSymptomsObservation_validateSignsAndSymptomsObservationStatusCode(meningococcalSignsAndSymptomsObservation, diagnostics, context);
-		if (result || diagnostics != null) result &= phcrValidator.validateSignsAndSymptomsObservation_validateSignsAndSymptomsObservationStatusCodeP(meningococcalSignsAndSymptomsObservation, diagnostics, context);
 		if (result || diagnostics != null) result &= phcrValidator.validateSignsAndSymptomsObservation_validateSignsAndSymptomsObservationEffectiveTime(meningococcalSignsAndSymptomsObservation, diagnostics, context);
 		if (result || diagnostics != null) result &= phcrValidator.validateSignsAndSymptomsObservation_validateSignsAndSymptomsObservationValue(meningococcalSignsAndSymptomsObservation, diagnostics, context);
 		return result;
@@ -513,7 +511,7 @@ public class MeningococcalValidator extends EObjectValidator
 		if (result || diagnostics != null) result &= cdaValidator.validateSection_validateClassCode(meningococcalPhcrRelevantDxTestsSection, diagnostics, context);
 		if (result || diagnostics != null) result &= cdaValidator.validateSection_validateMoodCode(meningococcalPhcrRelevantDxTestsSection, diagnostics, context);
 		if (result || diagnostics != null) result &= validateMeningococcalPhcrRelevantDxTestsSection_validateResultsSectionTemplateId(meningococcalPhcrRelevantDxTestsSection, diagnostics, context);
-		if (result || diagnostics != null) result &= phcrValidator.validatePhcrRelevantDxTestsSection_validateResultsSectionCode(meningococcalPhcrRelevantDxTestsSection, diagnostics, context);
+		if (result || diagnostics != null) result &= ccdValidator.validateResultsSection_validateResultsSectionCode(meningococcalPhcrRelevantDxTestsSection, diagnostics, context);
 		if (result || diagnostics != null) result &= ccdValidator.validateResultsSection_validateResultsSectionTitle(meningococcalPhcrRelevantDxTestsSection, diagnostics, context);
 		if (result || diagnostics != null) result &= ccdValidator.validateResultsSection_validateResultsSectionText(meningococcalPhcrRelevantDxTestsSection, diagnostics, context);
 		if (result || diagnostics != null) result &= ccdValidator.validateResultsSection_validateResultsSectionResultOrganizer(meningococcalPhcrRelevantDxTestsSection, diagnostics, context);
@@ -580,7 +578,7 @@ public class MeningococcalValidator extends EObjectValidator
 		if (result || diagnostics != null) result &= ccdValidator.validateResultObservation_validateResultObservationMoodCode(meningococcalResultObservation, diagnostics, context);
 		if (result || diagnostics != null) result &= ccdValidator.validateResultObservation_validateResultObservationId(meningococcalResultObservation, diagnostics, context);
 		if (result || diagnostics != null) result &= ccdValidator.validateResultObservation_validateResultObservationEffectiveTime(meningococcalResultObservation, diagnostics, context);
-		if (result || diagnostics != null) result &= phcrValidator.validateResultObservation_validateResultObservationStatusCode(meningococcalResultObservation, diagnostics, context);
+		if (result || diagnostics != null) result &= ccdValidator.validateResultObservation_validateResultObservationStatusCode(meningococcalResultObservation, diagnostics, context);
 		if (result || diagnostics != null) result &= ccdValidator.validateResultObservation_validateResultObservationCode(meningococcalResultObservation, diagnostics, context);
 		if (result || diagnostics != null) result &= ccdValidator.validateResultObservation_validateResultObservationMethodCode(meningococcalResultObservation, diagnostics, context);
 		if (result || diagnostics != null) result &= ccdValidator.validateResultObservation_validateResultObservationInterpretationCode(meningococcalResultObservation, diagnostics, context);
@@ -623,7 +621,7 @@ public class MeningococcalValidator extends EObjectValidator
 		if (result || diagnostics != null) result &= ccdValidator.validateResultOrganizer_validateResultOrganizerMoodCode(meningococcalResultOrganizer, diagnostics, context);
 		if (result || diagnostics != null) result &= ccdValidator.validateResultOrganizer_validateResultOrganizerId(meningococcalResultOrganizer, diagnostics, context);
 		if (result || diagnostics != null) result &= ccdValidator.validateResultOrganizer_validateResultOrganizerCode(meningococcalResultOrganizer, diagnostics, context);
-		if (result || diagnostics != null) result &= phcrValidator.validateResultOrganizer_validateResultOrganizerStatusCode(meningococcalResultOrganizer, diagnostics, context);
+		if (result || diagnostics != null) result &= ccdValidator.validateResultOrganizer_validateResultOrganizerStatusCode(meningococcalResultOrganizer, diagnostics, context);
 		if (result || diagnostics != null) result &= ccdValidator.validateResultOrganizer_validateResultOrganizerResultObservation(meningococcalResultOrganizer, diagnostics, context);
 		if (result || diagnostics != null) result &= ccdValidator.validateResultOrganizer_validateResultOrganizerSpecimen(meningococcalResultOrganizer, diagnostics, context);
 		if (result || diagnostics != null) result &= phcrValidator.validateResultOrganizer_validatePHCRResultOrganizerClassCode(meningococcalResultOrganizer, diagnostics, context);

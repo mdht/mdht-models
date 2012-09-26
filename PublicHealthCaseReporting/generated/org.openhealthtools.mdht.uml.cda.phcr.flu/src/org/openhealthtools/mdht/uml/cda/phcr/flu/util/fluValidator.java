@@ -149,12 +149,20 @@ public class fluValidator extends EObjectValidator {
 	public static final int INFLUENZA_PHCR_CLINICAL_INFORMATION_SECTION__PHCR_CLINICAL_INFORMATION_SECTION_TEMPLATE_ID = 12;
 
 	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Influenza Case Observation Value' of 'Influenza Case Observation'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int INFLUENZA_CASE_OBSERVATION__INFLUENZA_CASE_OBSERVATION_VALUE = 13;
+
+	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Influenza Case Observation Influenza Signs And Symptoms Observation' of 'Influenza Case Observation'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int INFLUENZA_CASE_OBSERVATION__INFLUENZA_CASE_OBSERVATION_INFLUENZA_SIGNS_AND_SYMPTOMS_OBSERVATION = 13;
+	public static final int INFLUENZA_CASE_OBSERVATION__INFLUENZA_CASE_OBSERVATION_INFLUENZA_SIGNS_AND_SYMPTOMS_OBSERVATION = 14;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Problem Observation Template Id' of 'Influenza Case Observation'.
@@ -162,15 +170,15 @@ public class fluValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int INFLUENZA_CASE_OBSERVATION__PROBLEM_OBSERVATION_TEMPLATE_ID = 14;
+	public static final int INFLUENZA_CASE_OBSERVATION__PROBLEM_OBSERVATION_TEMPLATE_ID = 15;
 
 	/**
-	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Case Observation Value' of 'Influenza Case Observation'.
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Influenza Signs And Symptoms Observation Value' of 'Influenza Signs And Symptoms Observation'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int INFLUENZA_CASE_OBSERVATION__CASE_OBSERVATION_VALUE = 15;
+	public static final int INFLUENZA_SIGNS_AND_SYMPTOMS_OBSERVATION__INFLUENZA_SIGNS_AND_SYMPTOMS_OBSERVATION_VALUE = 16;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Signs And Symptoms Observation Template Id' of 'Influenza Signs And Symptoms Observation'.
@@ -178,15 +186,7 @@ public class fluValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int INFLUENZA_SIGNS_AND_SYMPTOMS_OBSERVATION__SIGNS_AND_SYMPTOMS_OBSERVATION_TEMPLATE_ID = 16;
-
-	/**
-	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Signs And Symptoms Observation Value' of 'Influenza Signs And Symptoms Observation'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public static final int INFLUENZA_SIGNS_AND_SYMPTOMS_OBSERVATION__SIGNS_AND_SYMPTOMS_OBSERVATION_VALUE = 17;
+	public static final int INFLUENZA_SIGNS_AND_SYMPTOMS_OBSERVATION__SIGNS_AND_SYMPTOMS_OBSERVATION_TEMPLATE_ID = 17;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Influenza PHCR Treatment Information Section Influenza Therapeutic Regimen Act' of 'Influenza PHCR Treatment Information Section'.
@@ -269,12 +269,20 @@ public class fluValidator extends EObjectValidator {
 	public static final int INFLUENZA_PHCR_RELEVANT_DIAGNOSTIC_TESTS_AND_OR_LABORATORY_DATA_SECTION__RESULTS_SECTION_TEMPLATE_ID = 27;
 
 	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Influenza Result Observation Code' of 'Influenza Result Observation'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int INFLUENZA_RESULT_OBSERVATION__INFLUENZA_RESULT_OBSERVATION_CODE = 28;
+
+	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Influenza Result Observation Interpretation Code' of 'Influenza Result Observation'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int INFLUENZA_RESULT_OBSERVATION__INFLUENZA_RESULT_OBSERVATION_INTERPRETATION_CODE = 28;
+	public static final int INFLUENZA_RESULT_OBSERVATION__INFLUENZA_RESULT_OBSERVATION_INTERPRETATION_CODE = 29;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Result Observation Template Id' of 'Influenza Result Observation'.
@@ -282,15 +290,15 @@ public class fluValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int INFLUENZA_RESULT_OBSERVATION__RESULT_OBSERVATION_TEMPLATE_ID = 29;
+	public static final int INFLUENZA_RESULT_OBSERVATION__RESULT_OBSERVATION_TEMPLATE_ID = 30;
 
 	/**
-	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Result Observation Code' of 'Influenza Result Observation'.
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Influenza Imaging Observation Method Code P' of 'Influenza Imaging Observation'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int INFLUENZA_RESULT_OBSERVATION__RESULT_OBSERVATION_CODE = 30;
+	public static final int INFLUENZA_IMAGING_OBSERVATION__INFLUENZA_IMAGING_OBSERVATION_METHOD_CODE_P = 31;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Influenza Imaging Observation Method Code' of 'Influenza Imaging Observation'.
@@ -298,7 +306,7 @@ public class fluValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int INFLUENZA_IMAGING_OBSERVATION__INFLUENZA_IMAGING_OBSERVATION_METHOD_CODE = 31;
+	public static final int INFLUENZA_IMAGING_OBSERVATION__INFLUENZA_IMAGING_OBSERVATION_METHOD_CODE = 32;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Problem Observation Template Id' of 'Influenza Imaging Observation'.
@@ -306,7 +314,7 @@ public class fluValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int INFLUENZA_IMAGING_OBSERVATION__PROBLEM_OBSERVATION_TEMPLATE_ID = 32;
+	public static final int INFLUENZA_IMAGING_OBSERVATION__PROBLEM_OBSERVATION_TEMPLATE_ID = 33;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Influenza PHCR Social History Section Influenza Employment Status Observation' of 'Influenza PHCR Social History Section'.
@@ -314,7 +322,7 @@ public class fluValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int INFLUENZA_PHCR_SOCIAL_HISTORY_SECTION__INFLUENZA_PHCR_SOCIAL_HISTORY_SECTION_INFLUENZA_EMPLOYMENT_STATUS_OBSERVATION = 33;
+	public static final int INFLUENZA_PHCR_SOCIAL_HISTORY_SECTION__INFLUENZA_PHCR_SOCIAL_HISTORY_SECTION_INFLUENZA_EMPLOYMENT_STATUS_OBSERVATION = 34;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Influenza PHCR Social History Section Influenza Possible Exposure Location Act' of 'Influenza PHCR Social History Section'.
@@ -322,7 +330,7 @@ public class fluValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int INFLUENZA_PHCR_SOCIAL_HISTORY_SECTION__INFLUENZA_PHCR_SOCIAL_HISTORY_SECTION_INFLUENZA_POSSIBLE_EXPOSURE_LOCATION_ACT = 34;
+	public static final int INFLUENZA_PHCR_SOCIAL_HISTORY_SECTION__INFLUENZA_PHCR_SOCIAL_HISTORY_SECTION_INFLUENZA_POSSIBLE_EXPOSURE_LOCATION_ACT = 35;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Social History Section Template Id' of 'Influenza PHCR Social History Section'.
@@ -330,7 +338,7 @@ public class fluValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int INFLUENZA_PHCR_SOCIAL_HISTORY_SECTION__SOCIAL_HISTORY_SECTION_TEMPLATE_ID = 35;
+	public static final int INFLUENZA_PHCR_SOCIAL_HISTORY_SECTION__SOCIAL_HISTORY_SECTION_TEMPLATE_ID = 36;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Influenza Employment Status Observation Template Id' of 'Influenza Employment Status Observation'.
@@ -338,7 +346,7 @@ public class fluValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int INFLUENZA_EMPLOYMENT_STATUS_OBSERVATION__INFLUENZA_EMPLOYMENT_STATUS_OBSERVATION_TEMPLATE_ID = 36;
+	public static final int INFLUENZA_EMPLOYMENT_STATUS_OBSERVATION__INFLUENZA_EMPLOYMENT_STATUS_OBSERVATION_TEMPLATE_ID = 37;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Influenza Employment Status Observation Code' of 'Influenza Employment Status Observation'.
@@ -346,7 +354,7 @@ public class fluValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int INFLUENZA_EMPLOYMENT_STATUS_OBSERVATION__INFLUENZA_EMPLOYMENT_STATUS_OBSERVATION_CODE = 37;
+	public static final int INFLUENZA_EMPLOYMENT_STATUS_OBSERVATION__INFLUENZA_EMPLOYMENT_STATUS_OBSERVATION_CODE = 38;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Influenza Employment Status Observation Value' of 'Influenza Employment Status Observation'.
@@ -354,7 +362,7 @@ public class fluValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int INFLUENZA_EMPLOYMENT_STATUS_OBSERVATION__INFLUENZA_EMPLOYMENT_STATUS_OBSERVATION_VALUE = 38;
+	public static final int INFLUENZA_EMPLOYMENT_STATUS_OBSERVATION__INFLUENZA_EMPLOYMENT_STATUS_OBSERVATION_VALUE = 39;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Influenza Possible Exposure Location Act Template Id' of 'Influenza Possible Exposure Location Act'.
@@ -362,7 +370,7 @@ public class fluValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int INFLUENZA_POSSIBLE_EXPOSURE_LOCATION_ACT__INFLUENZA_POSSIBLE_EXPOSURE_LOCATION_ACT_TEMPLATE_ID = 39;
+	public static final int INFLUENZA_POSSIBLE_EXPOSURE_LOCATION_ACT__INFLUENZA_POSSIBLE_EXPOSURE_LOCATION_ACT_TEMPLATE_ID = 40;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Influenza Possible Exposure Location Act Code' of 'Influenza Possible Exposure Location Act'.
@@ -370,7 +378,7 @@ public class fluValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int INFLUENZA_POSSIBLE_EXPOSURE_LOCATION_ACT__INFLUENZA_POSSIBLE_EXPOSURE_LOCATION_ACT_CODE = 40;
+	public static final int INFLUENZA_POSSIBLE_EXPOSURE_LOCATION_ACT__INFLUENZA_POSSIBLE_EXPOSURE_LOCATION_ACT_CODE = 41;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Influenza Possible Exposure Location Act Status Code' of 'Influenza Possible Exposure Location Act'.
@@ -378,7 +386,7 @@ public class fluValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int INFLUENZA_POSSIBLE_EXPOSURE_LOCATION_ACT__INFLUENZA_POSSIBLE_EXPOSURE_LOCATION_ACT_STATUS_CODE = 41;
+	public static final int INFLUENZA_POSSIBLE_EXPOSURE_LOCATION_ACT__INFLUENZA_POSSIBLE_EXPOSURE_LOCATION_ACT_STATUS_CODE = 42;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Product Template Id' of 'Influenza Immunization Product'.
@@ -386,7 +394,7 @@ public class fluValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int INFLUENZA_IMMUNIZATION_PRODUCT__PRODUCT_TEMPLATE_ID = 42;
+	public static final int INFLUENZA_IMMUNIZATION_PRODUCT__PRODUCT_TEMPLATE_ID = 43;
 
 	/**
 	 * A constant with a fixed name that can be used as the base value for additional hand written constants.
@@ -394,7 +402,7 @@ public class fluValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	private static final int GENERATED_DIAGNOSTIC_CODE_COUNT = 42;
+	private static final int GENERATED_DIAGNOSTIC_CODE_COUNT = 43;
 
 	/**
 	 * A constant with a fixed name that can be used as the base value for additional hand written constants in a derived class.
@@ -783,7 +791,7 @@ public class fluValidator extends EObjectValidator {
 		if (result || diagnostics != null) result &= ccdValidator.validateProblemObservation_validateProblemObservationContainsPatientAwareness(influenzaCaseObservation, diagnostics, context);
 		if (result || diagnostics != null) result &= validateInfluenzaCaseObservation_validateProblemObservationTemplateId(influenzaCaseObservation, diagnostics, context);
 		if (result || diagnostics != null) result &= ccdValidator.validateProblemObservation_validateProblemObservationMoodCode(influenzaCaseObservation, diagnostics, context);
-		if (result || diagnostics != null) result &= phcrValidator.validateCaseObservation_validateProblemObservationStatusCode(influenzaCaseObservation, diagnostics, context);
+		if (result || diagnostics != null) result &= ccdValidator.validateProblemObservation_validateProblemObservationStatusCode(influenzaCaseObservation, diagnostics, context);
 		if (result || diagnostics != null) result &= ccdValidator.validateProblemObservation_validateProblemObservationEffectiveTime(influenzaCaseObservation, diagnostics, context);
 		if (result || diagnostics != null) result &= ccdValidator.validateProblemObservation_validateProblemObservationProblemStatus(influenzaCaseObservation, diagnostics, context);
 		if (result || diagnostics != null) result &= ccdValidator.validateProblemObservation_validateProblemObservationProblemHealthStatus(influenzaCaseObservation, diagnostics, context);
@@ -794,13 +802,25 @@ public class fluValidator extends EObjectValidator {
 		if (result || diagnostics != null) result &= phcrValidator.validateCaseObservation_validateCaseObservationClassCode(influenzaCaseObservation, diagnostics, context);
 		if (result || diagnostics != null) result &= phcrValidator.validateCaseObservation_validateCaseObservationMoodCode(influenzaCaseObservation, diagnostics, context);
 		if (result || diagnostics != null) result &= phcrValidator.validateCaseObservation_validateCaseObservationId(influenzaCaseObservation, diagnostics, context);
-		if (result || diagnostics != null) result &= phcrValidator.validateCaseObservation_validateProblemObservationCode(influenzaCaseObservation, diagnostics, context);
+		if (result || diagnostics != null) result &= phcrValidator.validateCaseObservation_validateCaseObservationCode(influenzaCaseObservation, diagnostics, context);
+		if (result || diagnostics != null) result &= phcrValidator.validateCaseObservation_validateCaseObservationStatusCode(influenzaCaseObservation, diagnostics, context);
 		if (result || diagnostics != null) result &= phcrValidator.validateCaseObservation_validateCaseObservationEffectiveTime(influenzaCaseObservation, diagnostics, context);
-		if (result || diagnostics != null) result &= validateInfluenzaCaseObservation_validateCaseObservationValue(influenzaCaseObservation, diagnostics, context);
+		if (result || diagnostics != null) result &= phcrValidator.validateCaseObservation_validateCaseObservationValue(influenzaCaseObservation, diagnostics, context);
 		if (result || diagnostics != null) result &= phcrValidator.validateCaseObservation_validateCaseObservationProblemStatusObservation(influenzaCaseObservation, diagnostics, context);
 		if (result || diagnostics != null) result &= phcrValidator.validateCaseObservation_validateCaseObservationSignsAndSymptomsObservation(influenzaCaseObservation, diagnostics, context);
+		if (result || diagnostics != null) result &= validateInfluenzaCaseObservation_validateInfluenzaCaseObservationValue(influenzaCaseObservation, diagnostics, context);
 		if (result || diagnostics != null) result &= validateInfluenzaCaseObservation_validateInfluenzaCaseObservationInfluenzaSignsAndSymptomsObservation(influenzaCaseObservation, diagnostics, context);
 		return result;
+	}
+
+	/**
+	 * Validates the validateInfluenzaCaseObservationValue constraint of '<em>Influenza Case Observation</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateInfluenzaCaseObservation_validateInfluenzaCaseObservationValue(InfluenzaCaseObservation influenzaCaseObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return influenzaCaseObservation.validateInfluenzaCaseObservationValue(diagnostics, context);
 	}
 
 	/**
@@ -824,16 +844,6 @@ public class fluValidator extends EObjectValidator {
 	}
 
 	/**
-	 * Validates the validateCaseObservationValue constraint of '<em>Influenza Case Observation</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateInfluenzaCaseObservation_validateCaseObservationValue(InfluenzaCaseObservation influenzaCaseObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return influenzaCaseObservation.validateCaseObservationValue(diagnostics, context);
-	}
-
-	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
@@ -854,8 +864,19 @@ public class fluValidator extends EObjectValidator {
 		if (result || diagnostics != null) result &= phcrValidator.validateSignsAndSymptomsObservation_validateSignsAndSymptomsObservationCode(influenzaSignsAndSymptomsObservation, diagnostics, context);
 		if (result || diagnostics != null) result &= phcrValidator.validateSignsAndSymptomsObservation_validateSignsAndSymptomsObservationStatusCode(influenzaSignsAndSymptomsObservation, diagnostics, context);
 		if (result || diagnostics != null) result &= phcrValidator.validateSignsAndSymptomsObservation_validateSignsAndSymptomsObservationEffectiveTime(influenzaSignsAndSymptomsObservation, diagnostics, context);
-		if (result || diagnostics != null) result &= validateInfluenzaSignsAndSymptomsObservation_validateSignsAndSymptomsObservationValue(influenzaSignsAndSymptomsObservation, diagnostics, context);
+		if (result || diagnostics != null) result &= phcrValidator.validateSignsAndSymptomsObservation_validateSignsAndSymptomsObservationValue(influenzaSignsAndSymptomsObservation, diagnostics, context);
+		if (result || diagnostics != null) result &= validateInfluenzaSignsAndSymptomsObservation_validateInfluenzaSignsAndSymptomsObservationValue(influenzaSignsAndSymptomsObservation, diagnostics, context);
 		return result;
+	}
+
+	/**
+	 * Validates the validateInfluenzaSignsAndSymptomsObservationValue constraint of '<em>Influenza Signs And Symptoms Observation</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateInfluenzaSignsAndSymptomsObservation_validateInfluenzaSignsAndSymptomsObservationValue(InfluenzaSignsAndSymptomsObservation influenzaSignsAndSymptomsObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return influenzaSignsAndSymptomsObservation.validateInfluenzaSignsAndSymptomsObservationValue(diagnostics, context);
 	}
 
 	/**
@@ -866,16 +887,6 @@ public class fluValidator extends EObjectValidator {
 	 */
 	public boolean validateInfluenzaSignsAndSymptomsObservation_validateSignsAndSymptomsObservationTemplateId(InfluenzaSignsAndSymptomsObservation influenzaSignsAndSymptomsObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return influenzaSignsAndSymptomsObservation.validateSignsAndSymptomsObservationTemplateId(diagnostics, context);
-	}
-
-	/**
-	 * Validates the validateSignsAndSymptomsObservationValue constraint of '<em>Influenza Signs And Symptoms Observation</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateInfluenzaSignsAndSymptomsObservation_validateSignsAndSymptomsObservationValue(InfluenzaSignsAndSymptomsObservation influenzaSignsAndSymptomsObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return influenzaSignsAndSymptomsObservation.validateSignsAndSymptomsObservationValue(diagnostics, context);
 	}
 
 	/**
@@ -1001,6 +1012,8 @@ public class fluValidator extends EObjectValidator {
 		if (result || diagnostics != null) result &= phcrValidator.validateTreatmentGivenSubstanceAdministration_validateTreatmentGivenSubstanceAdministrationMoodCode(influenzaTreatmentGivenSubstanceAdministration, diagnostics, context);
 		if (result || diagnostics != null) result &= phcrValidator.validateTreatmentGivenSubstanceAdministration_validateTreatmentGivenSubstanceAdministrationNegationInd(influenzaTreatmentGivenSubstanceAdministration, diagnostics, context);
 		if (result || diagnostics != null) result &= phcrValidator.validateTreatmentGivenSubstanceAdministration_validateTreatmentGivenSubstanceAdministrationEffectiveTime(influenzaTreatmentGivenSubstanceAdministration, diagnostics, context);
+		if (result || diagnostics != null) result &= phcrValidator.validateTreatmentGivenSubstanceAdministration_validateTreatmentGivenSubstanceAdministrationRouteCodeP(influenzaTreatmentGivenSubstanceAdministration, diagnostics, context);
+		if (result || diagnostics != null) result &= phcrValidator.validateTreatmentGivenSubstanceAdministration_validateTreatmentGivenSubstanceAdministrationRouteCode(influenzaTreatmentGivenSubstanceAdministration, diagnostics, context);
 		return result;
 	}
 
@@ -1065,10 +1078,11 @@ public class fluValidator extends EObjectValidator {
 		if (result || diagnostics != null) result &= cdaValidator.validateSection_validateClassCode(influenzaPHCRRelevantDiagnosticTestsAndOrLaboratoryDataSection, diagnostics, context);
 		if (result || diagnostics != null) result &= cdaValidator.validateSection_validateMoodCode(influenzaPHCRRelevantDiagnosticTestsAndOrLaboratoryDataSection, diagnostics, context);
 		if (result || diagnostics != null) result &= validateInfluenzaPHCRRelevantDiagnosticTestsAndOrLaboratoryDataSection_validateResultsSectionTemplateId(influenzaPHCRRelevantDiagnosticTestsAndOrLaboratoryDataSection, diagnostics, context);
-		if (result || diagnostics != null) result &= phcrValidator.validatePhcrRelevantDxTestsSection_validateResultsSectionCode(influenzaPHCRRelevantDiagnosticTestsAndOrLaboratoryDataSection, diagnostics, context);
+		if (result || diagnostics != null) result &= ccdValidator.validateResultsSection_validateResultsSectionCode(influenzaPHCRRelevantDiagnosticTestsAndOrLaboratoryDataSection, diagnostics, context);
 		if (result || diagnostics != null) result &= ccdValidator.validateResultsSection_validateResultsSectionTitle(influenzaPHCRRelevantDiagnosticTestsAndOrLaboratoryDataSection, diagnostics, context);
 		if (result || diagnostics != null) result &= ccdValidator.validateResultsSection_validateResultsSectionText(influenzaPHCRRelevantDiagnosticTestsAndOrLaboratoryDataSection, diagnostics, context);
 		if (result || diagnostics != null) result &= ccdValidator.validateResultsSection_validateResultsSectionResultOrganizer(influenzaPHCRRelevantDiagnosticTestsAndOrLaboratoryDataSection, diagnostics, context);
+		if (result || diagnostics != null) result &= phcrValidator.validatePhcrRelevantDxTestsSection_validatePhcrRelevantDxTestsSectionCode(influenzaPHCRRelevantDiagnosticTestsAndOrLaboratoryDataSection, diagnostics, context);
 		if (result || diagnostics != null) result &= phcrValidator.validatePhcrRelevantDxTestsSection_validatePhcrRelevantDxTestsSectionTitle(influenzaPHCRRelevantDiagnosticTestsAndOrLaboratoryDataSection, diagnostics, context);
 		if (result || diagnostics != null) result &= phcrValidator.validatePhcrRelevantDxTestsSection_validatePhcrRelevantDxTestsSectionText(influenzaPHCRRelevantDiagnosticTestsAndOrLaboratoryDataSection, diagnostics, context);
 		if (result || diagnostics != null) result &= phcrValidator.validatePhcrRelevantDxTestsSection_validatePhcrRelevantDxTestsSectionResultOrganizer(influenzaPHCRRelevantDiagnosticTestsAndOrLaboratoryDataSection, diagnostics, context);
@@ -1131,16 +1145,28 @@ public class fluValidator extends EObjectValidator {
 		if (result || diagnostics != null) result &= ccdValidator.validateResultObservation_validateResultObservationMoodCode(influenzaResultObservation, diagnostics, context);
 		if (result || diagnostics != null) result &= ccdValidator.validateResultObservation_validateResultObservationId(influenzaResultObservation, diagnostics, context);
 		if (result || diagnostics != null) result &= ccdValidator.validateResultObservation_validateResultObservationEffectiveTime(influenzaResultObservation, diagnostics, context);
-		if (result || diagnostics != null) result &= phcrValidator.validateResultObservation_validateResultObservationStatusCode(influenzaResultObservation, diagnostics, context);
-		if (result || diagnostics != null) result &= validateInfluenzaResultObservation_validateResultObservationCode(influenzaResultObservation, diagnostics, context);
+		if (result || diagnostics != null) result &= ccdValidator.validateResultObservation_validateResultObservationStatusCode(influenzaResultObservation, diagnostics, context);
+		if (result || diagnostics != null) result &= ccdValidator.validateResultObservation_validateResultObservationCode(influenzaResultObservation, diagnostics, context);
 		if (result || diagnostics != null) result &= ccdValidator.validateResultObservation_validateResultObservationMethodCode(influenzaResultObservation, diagnostics, context);
 		if (result || diagnostics != null) result &= ccdValidator.validateResultObservation_validateResultObservationInterpretationCode(influenzaResultObservation, diagnostics, context);
 		if (result || diagnostics != null) result &= ccdValidator.validateResultObservation_validateResultObservationValue(influenzaResultObservation, diagnostics, context);
 		if (result || diagnostics != null) result &= phcrValidator.validateResultObservation_validatePHCRResultObservationClassCode(influenzaResultObservation, diagnostics, context);
+		if (result || diagnostics != null) result &= phcrValidator.validateResultObservation_validatePHCRResultObservationStatusCode(influenzaResultObservation, diagnostics, context);
 		if (result || diagnostics != null) result &= phcrValidator.validateResultObservation_validatePHCRResultObservationSpecimenCollectionProcedure(influenzaResultObservation, diagnostics, context);
 		if (result || diagnostics != null) result &= phcrValidator.validateResultObservation_validatePHCRResultObservationSusceptibilityResult(influenzaResultObservation, diagnostics, context);
+		if (result || diagnostics != null) result &= validateInfluenzaResultObservation_validateInfluenzaResultObservationCode(influenzaResultObservation, diagnostics, context);
 		if (result || diagnostics != null) result &= validateInfluenzaResultObservation_validateInfluenzaResultObservationInterpretationCode(influenzaResultObservation, diagnostics, context);
 		return result;
+	}
+
+	/**
+	 * Validates the validateInfluenzaResultObservationCode constraint of '<em>Influenza Result Observation</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateInfluenzaResultObservation_validateInfluenzaResultObservationCode(InfluenzaResultObservation influenzaResultObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return influenzaResultObservation.validateInfluenzaResultObservationCode(diagnostics, context);
 	}
 
 	/**
@@ -1164,16 +1190,6 @@ public class fluValidator extends EObjectValidator {
 	}
 
 	/**
-	 * Validates the validateResultObservationCode constraint of '<em>Influenza Result Observation</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateInfluenzaResultObservation_validateResultObservationCode(InfluenzaResultObservation influenzaResultObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return influenzaResultObservation.validateResultObservationCode(diagnostics, context);
-	}
-
-	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
@@ -1191,7 +1207,7 @@ public class fluValidator extends EObjectValidator {
 		if (result || diagnostics != null) result &= ccdValidator.validateProblemObservation_validateProblemObservationContainsPatientAwareness(influenzaImagingObservation, diagnostics, context);
 		if (result || diagnostics != null) result &= validateInfluenzaImagingObservation_validateProblemObservationTemplateId(influenzaImagingObservation, diagnostics, context);
 		if (result || diagnostics != null) result &= ccdValidator.validateProblemObservation_validateProblemObservationMoodCode(influenzaImagingObservation, diagnostics, context);
-		if (result || diagnostics != null) result &= phcrValidator.validateImagingObservation_validateProblemObservationStatusCode(influenzaImagingObservation, diagnostics, context);
+		if (result || diagnostics != null) result &= ccdValidator.validateProblemObservation_validateProblemObservationStatusCode(influenzaImagingObservation, diagnostics, context);
 		if (result || diagnostics != null) result &= ccdValidator.validateProblemObservation_validateProblemObservationEffectiveTime(influenzaImagingObservation, diagnostics, context);
 		if (result || diagnostics != null) result &= ccdValidator.validateProblemObservation_validateProblemObservationProblemStatus(influenzaImagingObservation, diagnostics, context);
 		if (result || diagnostics != null) result &= ccdValidator.validateProblemObservation_validateProblemObservationProblemHealthStatus(influenzaImagingObservation, diagnostics, context);
@@ -1199,11 +1215,24 @@ public class fluValidator extends EObjectValidator {
 		if (result || diagnostics != null) result &= phcrValidator.validateImagingObservation_validateImagingObservationClassCode(influenzaImagingObservation, diagnostics, context);
 		if (result || diagnostics != null) result &= phcrValidator.validateImagingObservation_validateImagingObservationMoodCode(influenzaImagingObservation, diagnostics, context);
 		if (result || diagnostics != null) result &= phcrValidator.validateImagingObservation_validateImagingObservationId(influenzaImagingObservation, diagnostics, context);
+		if (result || diagnostics != null) result &= phcrValidator.validateImagingObservation_validateImagingObservationCode(influenzaImagingObservation, diagnostics, context);
+		if (result || diagnostics != null) result &= phcrValidator.validateImagingObservation_validateImagingObservationStatusCode(influenzaImagingObservation, diagnostics, context);
 		if (result || diagnostics != null) result &= phcrValidator.validateImagingObservation_validateImagingObservationEffectiveTime(influenzaImagingObservation, diagnostics, context);
 		if (result || diagnostics != null) result &= phcrValidator.validateImagingObservation_validateImagingObservationValue(influenzaImagingObservation, diagnostics, context);
 		if (result || diagnostics != null) result &= phcrValidator.validateImagingObservation_validateImagingObservationMethodCode(influenzaImagingObservation, diagnostics, context);
+		if (result || diagnostics != null) result &= validateInfluenzaImagingObservation_validateInfluenzaImagingObservationMethodCodeP(influenzaImagingObservation, diagnostics, context);
 		if (result || diagnostics != null) result &= validateInfluenzaImagingObservation_validateInfluenzaImagingObservationMethodCode(influenzaImagingObservation, diagnostics, context);
 		return result;
+	}
+
+	/**
+	 * Validates the validateInfluenzaImagingObservationMethodCodeP constraint of '<em>Influenza Imaging Observation</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateInfluenzaImagingObservation_validateInfluenzaImagingObservationMethodCodeP(InfluenzaImagingObservation influenzaImagingObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return influenzaImagingObservation.validateInfluenzaImagingObservationMethodCodeP(diagnostics, context);
 	}
 
 	/**
@@ -1249,10 +1278,11 @@ public class fluValidator extends EObjectValidator {
 		if (result || diagnostics != null) result &= ccdValidator.validateSocialHistorySection_validateSocialHistorySectionPatientEthnicity(influenzaPHCRSocialHistorySection, diagnostics, context);
 		if (result || diagnostics != null) result &= ccdValidator.validateSocialHistorySection_validateSocialHistorySectionPatientEthnicityCodeSystem(influenzaPHCRSocialHistorySection, diagnostics, context);
 		if (result || diagnostics != null) result &= validateInfluenzaPHCRSocialHistorySection_validateSocialHistorySectionTemplateId(influenzaPHCRSocialHistorySection, diagnostics, context);
-		if (result || diagnostics != null) result &= phcrValidator.validatePhcrSocialHistorySection_validateSocialHistorySectionCode(influenzaPHCRSocialHistorySection, diagnostics, context);
+		if (result || diagnostics != null) result &= ccdValidator.validateSocialHistorySection_validateSocialHistorySectionCode(influenzaPHCRSocialHistorySection, diagnostics, context);
 		if (result || diagnostics != null) result &= ccdValidator.validateSocialHistorySection_validateSocialHistorySectionTitle(influenzaPHCRSocialHistorySection, diagnostics, context);
 		if (result || diagnostics != null) result &= ccdValidator.validateSocialHistorySection_validateSocialHistorySectionText(influenzaPHCRSocialHistorySection, diagnostics, context);
 		if (result || diagnostics != null) result &= ccdValidator.validateSocialHistorySection_validateSocialHistorySectionSocialHistoryObservation(influenzaPHCRSocialHistorySection, diagnostics, context);
+		if (result || diagnostics != null) result &= phcrValidator.validatePhcrSocialHistorySection_validatePhcrSocialHistorySectionCode(influenzaPHCRSocialHistorySection, diagnostics, context);
 		if (result || diagnostics != null) result &= phcrValidator.validatePhcrSocialHistorySection_validatePhcrSocialHistorySectionTitle(influenzaPHCRSocialHistorySection, diagnostics, context);
 		if (result || diagnostics != null) result &= phcrValidator.validatePhcrSocialHistorySection_validatePhcrSocialHistorySectionText(influenzaPHCRSocialHistorySection, diagnostics, context);
 		if (result || diagnostics != null) result &= phcrValidator.validatePhcrSocialHistorySection_validatePhcrSocialHistorySectionGeotemporalHistoryObservation(influenzaPHCRSocialHistorySection, diagnostics, context);

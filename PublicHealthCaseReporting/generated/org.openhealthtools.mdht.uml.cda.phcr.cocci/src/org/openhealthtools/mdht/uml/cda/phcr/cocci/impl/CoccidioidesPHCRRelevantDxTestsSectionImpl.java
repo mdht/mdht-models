@@ -24,7 +24,6 @@ import org.openhealthtools.mdht.uml.cda.phcr.cocci.CoccidioidesResultObservation
 import org.openhealthtools.mdht.uml.cda.phcr.cocci.CoccidioidesResultOrganizer;
 import org.openhealthtools.mdht.uml.cda.phcr.cocci.operations.CoccidioidesPHCRRelevantDxTestsSectionOperations;
 import org.openhealthtools.mdht.uml.cda.phcr.impl.PhcrRelevantDxTestsSectionImpl;
-import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
 
 /**
  * <!-- begin-user-doc -->
@@ -100,23 +99,4 @@ public class CoccidioidesPHCRRelevantDxTestsSectionImpl extends PhcrRelevantDxTe
 	public boolean validateResultsSectionTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
     return CoccidioidesPHCRRelevantDxTestsSectionOperations.validateResultsSectionTemplateId(this, diagnostics, context);
   }
-
-	/**
-   * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-   * @generated
-   */
-	public CoccidioidesPHCRRelevantDxTestsSection init() {
-      return Initializer.Util.init(this);
-  }
-
-  /**
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    public CoccidioidesPHCRRelevantDxTestsSection init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-        Initializer.Util.init(this, initializers);
-        return this;
-    }
 } //CoccidioidesPHCRRelevantDxTestsSectionImpl

@@ -87,6 +87,7 @@ public class SilicosisPHCRClinicalInformationSectionOperations extends PhcrClini
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
+   * self.entry->one(entry : cda::Entry | not entry.observation.oclIsUndefined() and entry.observation.oclIsKindOf(silicosis::SilicosisCaseObservation) and entry.typeCode = vocab::x_ActRelationshipEntry::DRIV)
    * @param silicosisPHCRClinicalInformationSection The receiving '<em><b>PHCR Clinical Information Section</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -94,8 +95,8 @@ public class SilicosisPHCRClinicalInformationSectionOperations extends PhcrClini
    * @generated
    */
 	public static  boolean validateSilicosisPHCRClinicalInformationSectionSilicosisCaseObservation(SilicosisPHCRClinicalInformationSection silicosisPHCRClinicalInformationSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
-    if (VALIDATE_SILICOSIS_PHCR_CLINICAL_INFORMATION_SECTION_SILICOSIS_CASE_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+    if (VALIDATE_SILICOSIS_PHCR_CLINICAL_INFORMATION_SECTION_SILICOSIS_CASE_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null)
+    {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(SilicosisPackage.Literals.SILICOSIS_PHCR_CLINICAL_INFORMATION_SECTION);
       try
@@ -116,10 +117,9 @@ public class SilicosisPHCRClinicalInformationSectionOperations extends PhcrClini
             (Diagnostic.ERROR,
              SilicosisValidator.DIAGNOSTIC_SOURCE,
              SilicosisValidator.SILICOSIS_PHCR_CLINICAL_INFORMATION_SECTION__SILICOSIS_PHCR_CLINICAL_INFORMATION_SECTION_SILICOSIS_CASE_OBSERVATION,
-             SilicosisPlugin.INSTANCE.getString("SilicosisPHCRClinicalInformationSectionSilicosisCaseObservation"),
+             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "validateSilicosisPHCRClinicalInformationSectionSilicosisCaseObservation", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(silicosisPHCRClinicalInformationSection, context) }),
              new Object [] { silicosisPHCRClinicalInformationSection }));
       }
-       
       return false;
     }
     return true;
@@ -150,6 +150,7 @@ public class SilicosisPHCRClinicalInformationSectionOperations extends PhcrClini
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
+   * self.entry->one(entry : cda::Entry | not entry.observation.oclIsUndefined() and entry.observation.oclIsKindOf(silicosis::SilicosisHistoryOfTuberculosisObservation) and entry.typeCode = vocab::x_ActRelationshipEntry::DRIV)
    * @param silicosisPHCRClinicalInformationSection The receiving '<em><b>PHCR Clinical Information Section</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -159,8 +160,8 @@ public class SilicosisPHCRClinicalInformationSectionOperations extends PhcrClini
   
   public static  boolean validateSilicosisPHCRClinicalInformationSectionSilicosisHistoryOfTuberculosisObservation(SilicosisPHCRClinicalInformationSection silicosisPHCRClinicalInformationSection, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
-  	  
-    if (VALIDATE_SILICOSIS_PHCR_CLINICAL_INFORMATION_SECTION_SILICOSIS_HISTORY_OF_TUBERCULOSIS_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+    if (VALIDATE_SILICOSIS_PHCR_CLINICAL_INFORMATION_SECTION_SILICOSIS_HISTORY_OF_TUBERCULOSIS_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null)
+    {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(SilicosisPackage.Literals.SILICOSIS_PHCR_CLINICAL_INFORMATION_SECTION);
       try
@@ -178,13 +179,12 @@ public class SilicosisPHCRClinicalInformationSectionOperations extends PhcrClini
       {
         diagnostics.add
           (new BasicDiagnostic
-            (Diagnostic.WARNING,
+            (Diagnostic.ERROR,
              SilicosisValidator.DIAGNOSTIC_SOURCE,
              SilicosisValidator.SILICOSIS_PHCR_CLINICAL_INFORMATION_SECTION__SILICOSIS_PHCR_CLINICAL_INFORMATION_SECTION_SILICOSIS_HISTORY_OF_TUBERCULOSIS_OBSERVATION,
-             SilicosisPlugin.INSTANCE.getString("SilicosisPHCRClinicalInformationSectionSilicosisHistoryOfTuberculosisObservation"),
+             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "validateSilicosisPHCRClinicalInformationSectionSilicosisHistoryOfTuberculosisObservation", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(silicosisPHCRClinicalInformationSection, context) }),
              new Object [] { silicosisPHCRClinicalInformationSection }));
       }
-       
       return false;
     }
     return true;
@@ -213,6 +213,10 @@ public class SilicosisPHCRClinicalInformationSectionOperations extends PhcrClini
 	/**
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
+   * <!-- begin-model-doc -->
+   * self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(silicosis::SilicosisCaseObservation))->asSequence()->any(true).oclAsType(silicosis::SilicosisCaseObservation)
+   * @param silicosisPHCRClinicalInformationSection The receiving '<em><b>PHCR Clinical Information Section</b></em>' model object.
+   * <!-- end-model-doc -->
    * @generated
    */
 	public static  SilicosisCaseObservation getSilicosisCaseObservation(SilicosisPHCRClinicalInformationSection silicosisPHCRClinicalInformationSection) {
@@ -256,6 +260,10 @@ public class SilicosisPHCRClinicalInformationSectionOperations extends PhcrClini
   /**
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
+   * <!-- begin-model-doc -->
+   * self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(silicosis::SilicosisHistoryOfTuberculosisObservation))->asSequence()->any(true).oclAsType(silicosis::SilicosisHistoryOfTuberculosisObservation)
+   * @param silicosisPHCRClinicalInformationSection The receiving '<em><b>PHCR Clinical Information Section</b></em>' model object.
+   * <!-- end-model-doc -->
    * @generated
    */
   
@@ -303,6 +311,7 @@ public class SilicosisPHCRClinicalInformationSectionOperations extends PhcrClini
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
+   * self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.15.2.34')
    * @param silicosisPHCRClinicalInformationSection The receiving '<em><b>PHCR Clinical Information Section</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -312,8 +321,8 @@ public class SilicosisPHCRClinicalInformationSectionOperations extends PhcrClini
   
   public static  boolean validatePhcrClinicalInformationSectionTemplateId(SilicosisPHCRClinicalInformationSection silicosisPHCRClinicalInformationSection, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
-  	  
-    if (VALIDATE_PHCR_CLINICAL_INFORMATION_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+    if (VALIDATE_PHCR_CLINICAL_INFORMATION_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null)
+    {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(SilicosisPackage.Literals.SILICOSIS_PHCR_CLINICAL_INFORMATION_SECTION);
       try
@@ -334,10 +343,9 @@ public class SilicosisPHCRClinicalInformationSectionOperations extends PhcrClini
             (Diagnostic.ERROR,
              SilicosisValidator.DIAGNOSTIC_SOURCE,
              SilicosisValidator.SILICOSIS_PHCR_CLINICAL_INFORMATION_SECTION__PHCR_CLINICAL_INFORMATION_SECTION_TEMPLATE_ID,
-             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "PhcrClinicalInformationSectionTemplateId", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(silicosisPHCRClinicalInformationSection, context) }),
+             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "validatePhcrClinicalInformationSectionTemplateId", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(silicosisPHCRClinicalInformationSection, context) }),
              new Object [] { silicosisPHCRClinicalInformationSection }));
       }
-       
       return false;
     }
     return true;

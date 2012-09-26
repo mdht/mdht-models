@@ -28,8 +28,6 @@ import org.openhealthtools.mdht.uml.cda.phcr.streppneumo.StrepPneumoPackage;
 
 import org.openhealthtools.mdht.uml.cda.phcr.streppneumo.operations.StrepPneumoImmunizationSectionOperations;
 
-import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
-
 /**
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Immunization Section</b></em>'.
@@ -41,67 +39,69 @@ import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
  */
 public class StrepPneumoImmunizationSectionImpl extends ImmunizationsSectionImpl implements StrepPneumoImmunizationSection {
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	protected StrepPneumoImmunizationSectionImpl() {
-    super();
-  }
+		super();
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	@Override
 	protected EClass eStaticClass() {
-    return StrepPneumoPackage.Literals.STREP_PNEUMO_IMMUNIZATION_SECTION;
-  }
+		return StrepPneumoPackage.Literals.STREP_PNEUMO_IMMUNIZATION_SECTION;
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public boolean validateStrepPneumoImmunizationSectionStrepPneumoImmunizationActivity(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return StrepPneumoImmunizationSectionOperations.validateStrepPneumoImmunizationSectionStrepPneumoImmunizationActivity(this, diagnostics, context);
-  }
+		return StrepPneumoImmunizationSectionOperations.validateStrepPneumoImmunizationSectionStrepPneumoImmunizationActivity(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public EList<StrepPneumoImmunizationActivity> getStrepPneumoImmunizationActivities() {
-    return StrepPneumoImmunizationSectionOperations.getStrepPneumoImmunizationActivities(this);
-  }
+		return StrepPneumoImmunizationSectionOperations.getStrepPneumoImmunizationActivities(this);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	@Override
 	public boolean validateImmunizationsSectionTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return StrepPneumoImmunizationSectionOperations.validateImmunizationsSectionTemplateId(this, diagnostics, context);
-  }
+		return StrepPneumoImmunizationSectionOperations.validateImmunizationsSectionTemplateId(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
+	@Override
 	public StrepPneumoImmunizationSection init() {
-      return Initializer.Util.init(this);
-  }
+	    return Initializer.Util.init(this);
+	}
 
   /**
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
      * @generated
      */
-    public StrepPneumoImmunizationSection init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+    @Override
+	public StrepPneumoImmunizationSection init(Iterable<? extends Initializer<? extends EObject>> initializers) {
         Initializer.Util.init(this, initializers);
         return this;
     }

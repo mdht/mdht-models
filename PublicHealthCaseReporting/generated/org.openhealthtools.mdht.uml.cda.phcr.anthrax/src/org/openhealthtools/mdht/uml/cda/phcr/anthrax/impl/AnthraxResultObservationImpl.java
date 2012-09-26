@@ -26,8 +26,6 @@ import org.openhealthtools.mdht.uml.cda.phcr.anthrax.operations.AnthraxResultObs
 
 import org.openhealthtools.mdht.uml.cda.phcr.impl.ResultObservationImpl;
 
-import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
-
 /**
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Result Observation</b></em>'.
@@ -86,23 +84,4 @@ public class AnthraxResultObservationImpl extends ResultObservationImpl implemen
 	public boolean validateResultObservationTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
     return AnthraxResultObservationOperations.validateResultObservationTemplateId(this, diagnostics, context);
   }
-
-	/**
-   * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-   * @generated
-   */
-	public AnthraxResultObservation init() {
-      return Initializer.Util.init(this);
-  }
-
-  /**
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    public AnthraxResultObservation init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-        Initializer.Util.init(this, initializers);
-        return this;
-    }
 } //AnthraxResultObservationImpl

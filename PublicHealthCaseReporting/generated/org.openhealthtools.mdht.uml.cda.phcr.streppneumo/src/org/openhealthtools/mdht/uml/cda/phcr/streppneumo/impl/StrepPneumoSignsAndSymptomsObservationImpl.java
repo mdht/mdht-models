@@ -26,8 +26,6 @@ import org.openhealthtools.mdht.uml.cda.phcr.streppneumo.StrepPneumoSignsAndSymp
 
 import org.openhealthtools.mdht.uml.cda.phcr.streppneumo.operations.StrepPneumoSignsAndSymptomsObservationOperations;
 
-import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
-
 /**
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Signs And Symptoms Observation</b></em>'.
@@ -39,69 +37,61 @@ import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
  */
 public class StrepPneumoSignsAndSymptomsObservationImpl extends SignsAndSymptomsObservationImpl implements StrepPneumoSignsAndSymptomsObservation {
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	protected StrepPneumoSignsAndSymptomsObservationImpl() {
-    super();
-  }
+		super();
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	@Override
 	protected EClass eStaticClass() {
-    return StrepPneumoPackage.Literals.STREP_PNEUMO_SIGNS_AND_SYMPTOMS_OBSERVATION;
-  }
+		return StrepPneumoPackage.Literals.STREP_PNEUMO_SIGNS_AND_SYMPTOMS_OBSERVATION;
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
-  public boolean validateStrepPneumoSignsAndSymptomsObservationValueP(DiagnosticChain diagnostics, Map<Object, Object> context)
-  {
-    return StrepPneumoSignsAndSymptomsObservationOperations.validateStrepPneumoSignsAndSymptomsObservationValueP(this, diagnostics, context);
-  }
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   public boolean validateStrepPneumoSignsAndSymptomsObservationValue(DiagnosticChain diagnostics, Map<Object, Object> context)
   {
-    return StrepPneumoSignsAndSymptomsObservationOperations.validateStrepPneumoSignsAndSymptomsObservationValue(this, diagnostics, context);
-  }
+		return StrepPneumoSignsAndSymptomsObservationOperations.validateStrepPneumoSignsAndSymptomsObservationValue(this, diagnostics, context);
+	}
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	@Override
 	public boolean validateSignsAndSymptomsObservationTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return StrepPneumoSignsAndSymptomsObservationOperations.validateSignsAndSymptomsObservationTemplateId(this, diagnostics, context);
-  }
+		return StrepPneumoSignsAndSymptomsObservationOperations.validateSignsAndSymptomsObservationTemplateId(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
+	@Override
 	public StrepPneumoSignsAndSymptomsObservation init() {
-      return Initializer.Util.init(this);
-  }
+	    return Initializer.Util.init(this);
+	}
 
   /**
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
      * @generated
      */
-    public StrepPneumoSignsAndSymptomsObservation init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+    @Override
+	public StrepPneumoSignsAndSymptomsObservation init(Iterable<? extends Initializer<? extends EObject>> initializers) {
         Initializer.Util.init(this, initializers);
         return this;
     }

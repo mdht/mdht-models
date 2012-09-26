@@ -87,22 +87,4 @@ public class SalmonellosisPHCRClinicalInformationSectionImpl extends PhcrClinica
   {
     return SalmonellosisPHCRClinicalInformationSectionOperations.validatePhcrClinicalInformationSectionTemplateId(this, diagnostics, context);
   }
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public SalmonellosisPHCRClinicalInformationSection init() {
-      return Initializer.Util.init(this);
-  }
-    /**
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    public SalmonellosisPHCRClinicalInformationSection init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-        Initializer.Util.init(this, initializers);
-        return this;
-    }
 } //SalmonellosisPHCRClinicalInformationSectionImpl

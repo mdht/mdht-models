@@ -11,10 +11,6 @@
 package org.openhealthtools.mdht.uml.cda.phcr.silicosis;
 
 import java.lang.Iterable;
-import java.util.Map;
-
-import org.eclipse.emf.common.util.DiagnosticChain;
-
 import org.eclipse.emf.ecore.EObject;
 import org.openhealthtools.mdht.emf.runtime.util.Initializer;
 import org.openhealthtools.mdht.uml.cda.phcr.ImagingObservation;
@@ -35,6 +31,7 @@ public interface SilicosisImagingObservation extends ImagingObservation
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
+   * (self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (self.value->forAll(element | element.oclIsTypeOf(datatypes::CD)))
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
    * <!-- end-model-doc -->
@@ -42,18 +39,4 @@ public interface SilicosisImagingObservation extends ImagingObservation
    * @generated
    */
 	boolean validateSilicosisImagingObservationValue(DiagnosticChain diagnostics, Map<Object, Object> context);
-
-		/**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public SilicosisImagingObservation init();
-
-    /**
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    public SilicosisImagingObservation init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // SilicosisImagingObservation

@@ -17,21 +17,21 @@ import org.eclipse.emf.common.util.Diagnostic;
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EClassifier;
+import org.eclipse.emf.ecore.EObject;
 import org.eclipse.emf.ecore.plugin.EcorePlugin;
 import org.eclipse.emf.ecore.util.EObjectValidator;
 import org.eclipse.ocl.ParserException;
 import org.eclipse.ocl.ecore.Constraint;
 import org.eclipse.ocl.ecore.OCL;
 import org.eclipse.ocl.expressions.OCLExpression;
+import org.openhealthtools.mdht.emf.runtime.util.Initializer;
 import org.openhealthtools.mdht.uml.cda.phcr.impl.PublicHealthCaseReportImpl;
 import org.openhealthtools.mdht.uml.cda.phcr.meningococcal.MeningococcalCaseReport;
 import org.openhealthtools.mdht.uml.cda.phcr.meningococcal.MeningococcalPackage;
 import org.openhealthtools.mdht.uml.cda.phcr.meningococcal.MeningococcalPhcrClinicalInformationSection;
 import org.openhealthtools.mdht.uml.cda.phcr.meningococcal.MeningococcalPhcrRelevantDxTestsSection;
 import org.openhealthtools.mdht.uml.cda.phcr.meningococcal.MeningococcalPlugin;
-import org.openhealthtools.mdht.uml.cda.phcr.meningococcal.MeningococcalSocialHistorySection;
 import org.openhealthtools.mdht.uml.cda.phcr.meningococcal.util.MeningococcalValidator;
-import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
 
 /**
  * <!-- begin-user-doc -->
@@ -223,7 +223,7 @@ public class MeningococcalCaseReportImpl extends PublicHealthCaseReportImpl impl
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String GET_MENINGOCOCCAL_PHCR_CLINICAL_INFORMATION_SECTION__EOCL_EXP = "self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(meningococcal::MeningococcalPhcrClinicalInformationSection))->asSequence()->first().oclAsType(meningococcal::MeningococcalPhcrClinicalInformationSection)";
+	protected static final String GET_MENINGOCOCCAL_PHCR_CLINICAL_INFORMATION_SECTION__EOCL_EXP = "self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(meningococcal::MeningococcalPhcrClinicalInformationSection))->asSequence()->any(true).oclAsType(meningococcal::MeningococcalPhcrClinicalInformationSection)";
 		/**
 	 * The cached OCL query for the '{@link #getMeningococcalPhcrClinicalInformationSection() <em>Get Meningococcal Phcr Clinical Information Section</em>}' query operation.
 	 * <!-- begin-user-doc -->
@@ -242,7 +242,7 @@ public class MeningococcalCaseReportImpl extends PublicHealthCaseReportImpl impl
 	public MeningococcalPhcrClinicalInformationSection getMeningococcalPhcrClinicalInformationSection() {
 		if (GET_MENINGOCOCCAL_PHCR_CLINICAL_INFORMATION_SECTION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(MeningococcalPackage.Literals.MENINGOCOCCAL_CASE_REPORT, MeningococcalPackage.Literals.MENINGOCOCCAL_CASE_REPORT.getEAllOperations().get(63));
+			helper.setOperationContext(MeningococcalPackage.Literals.MENINGOCOCCAL_CASE_REPORT, MeningococcalPackage.Literals.MENINGOCOCCAL_CASE_REPORT.getEAllOperations().get(62));
 			try {
 				GET_MENINGOCOCCAL_PHCR_CLINICAL_INFORMATION_SECTION__EOCL_QRY = helper.createQuery(GET_MENINGOCOCCAL_PHCR_CLINICAL_INFORMATION_SECTION__EOCL_EXP);
 			}
@@ -262,7 +262,7 @@ public class MeningococcalCaseReportImpl extends PublicHealthCaseReportImpl impl
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String GET_MENINGOCOCCAL_PHCR_RELEVANT_DX_TESTS_SECTION__EOCL_EXP = "self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(meningococcal::MeningococcalPhcrRelevantDxTestsSection))->asSequence()->first().oclAsType(meningococcal::MeningococcalPhcrRelevantDxTestsSection)";
+	protected static final String GET_MENINGOCOCCAL_PHCR_RELEVANT_DX_TESTS_SECTION__EOCL_EXP = "self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(meningococcal::MeningococcalPhcrRelevantDxTestsSection))->asSequence()->any(true).oclAsType(meningococcal::MeningococcalPhcrRelevantDxTestsSection)";
 		/**
 	 * The cached OCL query for the '{@link #getMeningococcalPhcrRelevantDxTestsSection() <em>Get Meningococcal Phcr Relevant Dx Tests Section</em>}' query operation.
 	 * <!-- begin-user-doc -->
@@ -281,7 +281,7 @@ public class MeningococcalCaseReportImpl extends PublicHealthCaseReportImpl impl
 	public MeningococcalPhcrRelevantDxTestsSection getMeningococcalPhcrRelevantDxTestsSection() {
 		if (GET_MENINGOCOCCAL_PHCR_RELEVANT_DX_TESTS_SECTION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(MeningococcalPackage.Literals.MENINGOCOCCAL_CASE_REPORT, MeningococcalPackage.Literals.MENINGOCOCCAL_CASE_REPORT.getEAllOperations().get(64));
+			helper.setOperationContext(MeningococcalPackage.Literals.MENINGOCOCCAL_CASE_REPORT, MeningococcalPackage.Literals.MENINGOCOCCAL_CASE_REPORT.getEAllOperations().get(63));
 			try {
 				GET_MENINGOCOCCAL_PHCR_RELEVANT_DX_TESTS_SECTION__EOCL_QRY = helper.createQuery(GET_MENINGOCOCCAL_PHCR_RELEVANT_DX_TESTS_SECTION__EOCL_EXP);
 			}
@@ -359,8 +359,19 @@ public class MeningococcalCaseReportImpl extends PublicHealthCaseReportImpl impl
    * <!-- end-user-doc -->
 	 * @generated
 	 */
-  public MeningococcalCaseReport init() {
-    	CDAUtil.init(this);
-    	return this;
+  @Override
+public MeningococcalCaseReport init() {
+	    return Initializer.Util.init(this);
 	}
+
+		/**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    @Override
+	public MeningococcalCaseReport init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
 } //MeningococcalCaseReportImpl

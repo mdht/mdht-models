@@ -27,10 +27,10 @@ import org.openhealthtools.mdht.uml.cda.ccd.MedicationActivity;
  */
 public interface AcuteHepatitisBImmunizationActivity extends MedicationActivity {
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public AcuteHepatitisBImmunizationActivity init();
 
   /**

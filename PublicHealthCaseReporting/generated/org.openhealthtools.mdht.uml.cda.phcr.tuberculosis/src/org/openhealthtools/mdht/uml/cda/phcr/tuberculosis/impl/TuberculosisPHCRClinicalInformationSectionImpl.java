@@ -29,8 +29,6 @@ import org.openhealthtools.mdht.uml.cda.phcr.tuberculosis.TuberculosisPackage;
 import org.openhealthtools.mdht.uml.cda.phcr.tuberculosis.TuberculosisRelevantMedicalConditionHistoryObservation;
 import org.openhealthtools.mdht.uml.cda.phcr.tuberculosis.operations.TuberculosisPHCRClinicalInformationSectionOperations;
 
-import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
-
 /**
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>PHCR Clinical Information Section</b></em>'.
@@ -42,87 +40,89 @@ import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
  */
 public class TuberculosisPHCRClinicalInformationSectionImpl extends PhcrClinicalInformationSectionImpl implements TuberculosisPHCRClinicalInformationSection {
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	protected TuberculosisPHCRClinicalInformationSectionImpl() {
-    super();
-  }
+		super();
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	@Override
 	protected EClass eStaticClass() {
-    return TuberculosisPackage.Literals.TUBERCULOSIS_PHCR_CLINICAL_INFORMATION_SECTION;
-  }
+		return TuberculosisPackage.Literals.TUBERCULOSIS_PHCR_CLINICAL_INFORMATION_SECTION;
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public boolean validateTuberculosisPHCRClinicalInformationSectionTuberculosisCaseObservation(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return TuberculosisPHCRClinicalInformationSectionOperations.validateTuberculosisPHCRClinicalInformationSectionTuberculosisCaseObservation(this, diagnostics, context);
-  }
+		return TuberculosisPHCRClinicalInformationSectionOperations.validateTuberculosisPHCRClinicalInformationSectionTuberculosisCaseObservation(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   public boolean validateTuberculosisPHCRClinicalInformationSectionTuberculosisRelevantMedicalConditionHistoryObservation(DiagnosticChain diagnostics, Map<Object, Object> context)
   {
-    return TuberculosisPHCRClinicalInformationSectionOperations.validateTuberculosisPHCRClinicalInformationSectionTuberculosisRelevantMedicalConditionHistoryObservation(this, diagnostics, context);
-  }
+		return TuberculosisPHCRClinicalInformationSectionOperations.validateTuberculosisPHCRClinicalInformationSectionTuberculosisRelevantMedicalConditionHistoryObservation(this, diagnostics, context);
+	}
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public TuberculosisCaseObservation getTuberculosisCaseObservation() {
-    return TuberculosisPHCRClinicalInformationSectionOperations.getTuberculosisCaseObservation(this);
-  }
+		return TuberculosisPHCRClinicalInformationSectionOperations.getTuberculosisCaseObservation(this);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   public EList<TuberculosisRelevantMedicalConditionHistoryObservation> getTuberculosisRelevantMedicalConditionHistoryObservations()
   {
-    return TuberculosisPHCRClinicalInformationSectionOperations.getTuberculosisRelevantMedicalConditionHistoryObservations(this);
-  }
+		return TuberculosisPHCRClinicalInformationSectionOperations.getTuberculosisRelevantMedicalConditionHistoryObservations(this);
+	}
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	@Override
 	public boolean validatePhcrClinicalInformationSectionTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return TuberculosisPHCRClinicalInformationSectionOperations.validatePhcrClinicalInformationSectionTemplateId(this, diagnostics, context);
-  }
+		return TuberculosisPHCRClinicalInformationSectionOperations.validatePhcrClinicalInformationSectionTemplateId(this, diagnostics, context);
+	}
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
-  public TuberculosisPHCRClinicalInformationSection init() {
-      return Initializer.Util.init(this);
-  }
+	 * @generated
+	 */
+  @Override
+public TuberculosisPHCRClinicalInformationSection init() {
+	    return Initializer.Util.init(this);
+	}
 
   /**
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
      * @generated
      */
-    public TuberculosisPHCRClinicalInformationSection init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+    @Override
+	public TuberculosisPHCRClinicalInformationSection init(Iterable<? extends Initializer<? extends EObject>> initializers) {
         Initializer.Util.init(this, initializers);
         return this;
     }

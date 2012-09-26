@@ -25,7 +25,6 @@ import org.openhealthtools.mdht.uml.cda.phcr.cocci.CoccidioidesPHCRSocialHistory
 import org.openhealthtools.mdht.uml.cda.phcr.cocci.CoccidioidesPHCRTreatmentInformationSection;
 import org.openhealthtools.mdht.uml.cda.phcr.cocci.operations.CoccidioidesCaseReportOperations;
 import org.openhealthtools.mdht.uml.cda.phcr.impl.PublicHealthCaseReportImpl;
-import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
 
 /**
  * <!-- begin-user-doc -->
@@ -146,23 +145,4 @@ public class CoccidioidesCaseReportImpl extends PublicHealthCaseReportImpl imple
 	public boolean validatePublicHealthCaseReportTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
     return CoccidioidesCaseReportOperations.validatePublicHealthCaseReportTemplateId(this, diagnostics, context);
   }
-
-	/**
-   * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-   * @generated
-   */
-	public CoccidioidesCaseReport init() {
-      return Initializer.Util.init(this);
-  }
-
-  /**
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    public CoccidioidesCaseReport init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-        Initializer.Util.init(this, initializers);
-        return this;
-    }
 } //CoccidioidesCaseReportImpl

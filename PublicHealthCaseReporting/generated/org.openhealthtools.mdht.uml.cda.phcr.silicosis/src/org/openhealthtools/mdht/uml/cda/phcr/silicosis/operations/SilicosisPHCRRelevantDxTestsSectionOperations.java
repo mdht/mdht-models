@@ -90,6 +90,7 @@ public class SilicosisPHCRRelevantDxTestsSectionOperations extends PhcrRelevantD
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
+   * self.entry->exists(entry : cda::Entry | not entry.observation.oclIsUndefined() and entry.observation.oclIsKindOf(silicosis::SilicosisImagingObservation) and entry.typeCode = vocab::x_ActRelationshipEntry::DRIV)
    * @param silicosisPHCRRelevantDxTestsSection The receiving '<em><b>PHCR Relevant Dx Tests Section</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -99,8 +100,8 @@ public class SilicosisPHCRRelevantDxTestsSectionOperations extends PhcrRelevantD
   
   public static  boolean validateSilicosisPHCRRelevantDxTestsSectionSilicosisImagingObservation(SilicosisPHCRRelevantDxTestsSection silicosisPHCRRelevantDxTestsSection, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
-  	  
-    if (VALIDATE_SILICOSIS_PHCR_RELEVANT_DX_TESTS_SECTION_SILICOSIS_IMAGING_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+    if (VALIDATE_SILICOSIS_PHCR_RELEVANT_DX_TESTS_SECTION_SILICOSIS_IMAGING_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null)
+    {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(SilicosisPackage.Literals.SILICOSIS_PHCR_RELEVANT_DX_TESTS_SECTION);
       try
@@ -118,13 +119,12 @@ public class SilicosisPHCRRelevantDxTestsSectionOperations extends PhcrRelevantD
       {
         diagnostics.add
           (new BasicDiagnostic
-            (Diagnostic.INFO,
+            (Diagnostic.ERROR,
              SilicosisValidator.DIAGNOSTIC_SOURCE,
              SilicosisValidator.SILICOSIS_PHCR_RELEVANT_DX_TESTS_SECTION__SILICOSIS_PHCR_RELEVANT_DX_TESTS_SECTION_SILICOSIS_IMAGING_OBSERVATION,
-             SilicosisPlugin.INSTANCE.getString("SilicosisPHCRRelevantDxTestsSectionSilicosisImagingObservation"),
+             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "validateSilicosisPHCRRelevantDxTestsSectionSilicosisImagingObservation", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(silicosisPHCRRelevantDxTestsSection, context) }),
              new Object [] { silicosisPHCRRelevantDxTestsSection }));
       }
-       
       return false;
     }
     return true;
@@ -153,6 +153,10 @@ public class SilicosisPHCRRelevantDxTestsSectionOperations extends PhcrRelevantD
   /**
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
+   * <!-- begin-model-doc -->
+   * self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(silicosis::SilicosisImagingObservation)).oclAsType(silicosis::SilicosisImagingObservation)
+   * @param silicosisPHCRRelevantDxTestsSection The receiving '<em><b>PHCR Relevant Dx Tests Section</b></em>' model object.
+   * <!-- end-model-doc -->
    * @generated
    */
   
@@ -203,6 +207,7 @@ public class SilicosisPHCRRelevantDxTestsSectionOperations extends PhcrRelevantD
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
+   * self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.15.2.35')
    * @param silicosisPHCRRelevantDxTestsSection The receiving '<em><b>PHCR Relevant Dx Tests Section</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -212,8 +217,8 @@ public class SilicosisPHCRRelevantDxTestsSectionOperations extends PhcrRelevantD
   
   public static  boolean validateResultsSectionTemplateId(SilicosisPHCRRelevantDxTestsSection silicosisPHCRRelevantDxTestsSection, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
-  	  
-    if (VALIDATE_RESULTS_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+    if (VALIDATE_RESULTS_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null)
+    {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(SilicosisPackage.Literals.SILICOSIS_PHCR_RELEVANT_DX_TESTS_SECTION);
       try
@@ -234,10 +239,9 @@ public class SilicosisPHCRRelevantDxTestsSectionOperations extends PhcrRelevantD
             (Diagnostic.ERROR,
              SilicosisValidator.DIAGNOSTIC_SOURCE,
              SilicosisValidator.SILICOSIS_PHCR_RELEVANT_DX_TESTS_SECTION__RESULTS_SECTION_TEMPLATE_ID,
-             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "ResultsSectionTemplateId", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(silicosisPHCRRelevantDxTestsSection, context) }),
+             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "validateResultsSectionTemplateId", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(silicosisPHCRRelevantDxTestsSection, context) }),
              new Object [] { silicosisPHCRRelevantDxTestsSection }));
       }
-       
       return false;
     }
     return true;

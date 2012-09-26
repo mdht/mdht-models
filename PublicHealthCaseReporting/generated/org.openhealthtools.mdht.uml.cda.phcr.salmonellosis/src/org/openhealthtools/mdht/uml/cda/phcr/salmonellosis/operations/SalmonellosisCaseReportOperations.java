@@ -90,6 +90,7 @@ public class SalmonellosisCaseReportOperations extends PublicHealthCaseReportOpe
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
+   * (self.title.oclIsUndefined() or self.title.isNullFlavorUndefined()) implies (not self.title.oclIsUndefined() and self.title.getText() = 'Public Health Case Report -  Salmonellosis')
    * @param salmonellosisCaseReport The receiving '<em><b>Case Report</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -99,8 +100,8 @@ public class SalmonellosisCaseReportOperations extends PublicHealthCaseReportOpe
   
   public static  boolean validateSalmonellosisCaseReportTitle(SalmonellosisCaseReport salmonellosisCaseReport, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
-  	  
-    if (VALIDATE_SALMONELLOSIS_CASE_REPORT_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+    if (VALIDATE_SALMONELLOSIS_CASE_REPORT_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null)
+    {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(SalmonellosisPackage.Literals.SALMONELLOSIS_CASE_REPORT);
       try
@@ -121,10 +122,9 @@ public class SalmonellosisCaseReportOperations extends PublicHealthCaseReportOpe
             (Diagnostic.ERROR,
              SalmonellosisValidator.DIAGNOSTIC_SOURCE,
              SalmonellosisValidator.SALMONELLOSIS_CASE_REPORT__SALMONELLOSIS_CASE_REPORT_TITLE,
-             SalmonellosisPlugin.INSTANCE.getString("SalmonellosisCaseReportTitle"),
+             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "validateSalmonellosisCaseReportTitle", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(salmonellosisCaseReport, context) }),
              new Object [] { salmonellosisCaseReport }));
       }
-       
       return false;
     }
     return true;
@@ -156,6 +156,7 @@ public class SalmonellosisCaseReportOperations extends PublicHealthCaseReportOpe
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
+   * self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(salmonellosis::SalmonellosisPHCRSocialHistorySection))
    * @param salmonellosisCaseReport The receiving '<em><b>Case Report</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -165,8 +166,8 @@ public class SalmonellosisCaseReportOperations extends PublicHealthCaseReportOpe
   
   public static  boolean validateSalmonellosisCaseReportSalmonellosisSocialHistorySection(SalmonellosisCaseReport salmonellosisCaseReport, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
-  	  
-    if (VALIDATE_SALMONELLOSIS_CASE_REPORT_SALMONELLOSIS_SOCIAL_HISTORY_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+    if (VALIDATE_SALMONELLOSIS_CASE_REPORT_SALMONELLOSIS_SOCIAL_HISTORY_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null)
+    {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(SalmonellosisPackage.Literals.SALMONELLOSIS_CASE_REPORT);
       try
@@ -184,13 +185,12 @@ public class SalmonellosisCaseReportOperations extends PublicHealthCaseReportOpe
       {
         diagnostics.add
           (new BasicDiagnostic
-            (Diagnostic.WARNING,
+            (Diagnostic.ERROR,
              SalmonellosisValidator.DIAGNOSTIC_SOURCE,
              SalmonellosisValidator.SALMONELLOSIS_CASE_REPORT__SALMONELLOSIS_CASE_REPORT_SALMONELLOSIS_SOCIAL_HISTORY_SECTION,
-             SalmonellosisPlugin.INSTANCE.getString("SalmonellosisCaseReportSalmonellosisSocialHistorySection"),
+             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "validateSalmonellosisCaseReportSalmonellosisSocialHistorySection", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(salmonellosisCaseReport, context) }),
              new Object [] { salmonellosisCaseReport }));
       }
-       
       return false;
     }
     return true;
@@ -222,6 +222,7 @@ public class SalmonellosisCaseReportOperations extends PublicHealthCaseReportOpe
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
+   * self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(salmonellosis::SalmonellosisPHCRRelevantDxTestsSection))
    * @param salmonellosisCaseReport The receiving '<em><b>Case Report</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -231,8 +232,8 @@ public class SalmonellosisCaseReportOperations extends PublicHealthCaseReportOpe
   
   public static  boolean validateSalmonellosisCaseReportSalmonellosisRelevantDxTestsSection(SalmonellosisCaseReport salmonellosisCaseReport, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
-  	  
-    if (VALIDATE_SALMONELLOSIS_CASE_REPORT_SALMONELLOSIS_RELEVANT_DX_TESTS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+    if (VALIDATE_SALMONELLOSIS_CASE_REPORT_SALMONELLOSIS_RELEVANT_DX_TESTS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null)
+    {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(SalmonellosisPackage.Literals.SALMONELLOSIS_CASE_REPORT);
       try
@@ -250,13 +251,12 @@ public class SalmonellosisCaseReportOperations extends PublicHealthCaseReportOpe
       {
         diagnostics.add
           (new BasicDiagnostic
-            (Diagnostic.WARNING,
+            (Diagnostic.ERROR,
              SalmonellosisValidator.DIAGNOSTIC_SOURCE,
              SalmonellosisValidator.SALMONELLOSIS_CASE_REPORT__SALMONELLOSIS_CASE_REPORT_SALMONELLOSIS_RELEVANT_DX_TESTS_SECTION,
-             SalmonellosisPlugin.INSTANCE.getString("SalmonellosisCaseReportSalmonellosisRelevantDxTestsSection"),
+             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "validateSalmonellosisCaseReportSalmonellosisRelevantDxTestsSection", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(salmonellosisCaseReport, context) }),
              new Object [] { salmonellosisCaseReport }));
       }
-       
       return false;
     }
     return true;
@@ -288,6 +288,7 @@ public class SalmonellosisCaseReportOperations extends PublicHealthCaseReportOpe
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
+   * self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(salmonellosis::SalmonellosisPHCRClinicalInformationSection))
    * @param salmonellosisCaseReport The receiving '<em><b>Case Report</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -297,8 +298,8 @@ public class SalmonellosisCaseReportOperations extends PublicHealthCaseReportOpe
   
   public static  boolean validateSalmonellosisCaseReportSalmonellosisPHCRClinicalInformationSection(SalmonellosisCaseReport salmonellosisCaseReport, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
-  	  
-    if (VALIDATE_SALMONELLOSIS_CASE_REPORT_SALMONELLOSIS_PHCR_CLINICAL_INFORMATION_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+    if (VALIDATE_SALMONELLOSIS_CASE_REPORT_SALMONELLOSIS_PHCR_CLINICAL_INFORMATION_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null)
+    {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(SalmonellosisPackage.Literals.SALMONELLOSIS_CASE_REPORT);
       try
@@ -319,10 +320,9 @@ public class SalmonellosisCaseReportOperations extends PublicHealthCaseReportOpe
             (Diagnostic.ERROR,
              SalmonellosisValidator.DIAGNOSTIC_SOURCE,
              SalmonellosisValidator.SALMONELLOSIS_CASE_REPORT__SALMONELLOSIS_CASE_REPORT_SALMONELLOSIS_PHCR_CLINICAL_INFORMATION_SECTION,
-             SalmonellosisPlugin.INSTANCE.getString("SalmonellosisCaseReportSalmonellosisPHCRClinicalInformationSection"),
+             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "validateSalmonellosisCaseReportSalmonellosisPHCRClinicalInformationSection", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(salmonellosisCaseReport, context) }),
              new Object [] { salmonellosisCaseReport }));
       }
-       
       return false;
     }
     return true;
@@ -351,6 +351,10 @@ public class SalmonellosisCaseReportOperations extends PublicHealthCaseReportOpe
   /**
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
+   * <!-- begin-model-doc -->
+   * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(salmselectllosis::SalmselectllosisPHCRSocialHistorySection))->asSequence()->any(true).oclAsType(salmonellosis::SalmonellosisPHCRSocialHistorySection)
+   * @param salmonellosisCaseReport The receiving '<em><b>Case Report</b></em>' model object.
+   * <!-- end-model-doc -->
    * @generated
    */
   
@@ -396,6 +400,10 @@ public class SalmonellosisCaseReportOperations extends PublicHealthCaseReportOpe
   /**
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
+   * <!-- begin-model-doc -->
+   * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(salmselectllosis::SalmselectllosisPHCRRelevantDxTestsSection))->asSequence()->any(true).oclAsType(salmonellosis::SalmonellosisPHCRRelevantDxTestsSection)
+   * @param salmonellosisCaseReport The receiving '<em><b>Case Report</b></em>' model object.
+   * <!-- end-model-doc -->
    * @generated
    */
   
@@ -441,6 +449,10 @@ public class SalmonellosisCaseReportOperations extends PublicHealthCaseReportOpe
   /**
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
+   * <!-- begin-model-doc -->
+   * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(salmselectllosis::SalmselectllosisPHCRClinicalInformationSection))->asSequence()->any(true).oclAsType(salmonellosis::SalmonellosisPHCRClinicalInformationSection)
+   * @param salmonellosisCaseReport The receiving '<em><b>Case Report</b></em>' model object.
+   * <!-- end-model-doc -->
    * @generated
    */
   
@@ -489,6 +501,7 @@ public class SalmonellosisCaseReportOperations extends PublicHealthCaseReportOpe
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
+   * self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.15.1.9')
    * @param salmonellosisCaseReport The receiving '<em><b>Case Report</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -498,8 +511,8 @@ public class SalmonellosisCaseReportOperations extends PublicHealthCaseReportOpe
   
   public static  boolean validatePublicHealthCaseReportTemplateId(SalmonellosisCaseReport salmonellosisCaseReport, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
-  	  
-    if (VALIDATE_PUBLIC_HEALTH_CASE_REPORT_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+    if (VALIDATE_PUBLIC_HEALTH_CASE_REPORT_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null)
+    {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(SalmonellosisPackage.Literals.SALMONELLOSIS_CASE_REPORT);
       try
@@ -520,10 +533,9 @@ public class SalmonellosisCaseReportOperations extends PublicHealthCaseReportOpe
             (Diagnostic.ERROR,
              SalmonellosisValidator.DIAGNOSTIC_SOURCE,
              SalmonellosisValidator.SALMONELLOSIS_CASE_REPORT__PUBLIC_HEALTH_CASE_REPORT_TEMPLATE_ID,
-             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "PublicHealthCaseReportTemplateId", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(salmonellosisCaseReport, context) }),
+             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "validatePublicHealthCaseReportTemplateId", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(salmonellosisCaseReport, context) }),
              new Object [] { salmonellosisCaseReport }));
       }
-       
       return false;
     }
     return true;

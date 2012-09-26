@@ -12,6 +12,7 @@ package org.openhealthtools.mdht.uml.cda.phcr.tss.util;
 
 import java.util.Map;
 
+import org.eclipse.emf.common.util.Diagnostic;
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.common.util.ResourceLocator;
 
@@ -405,7 +406,28 @@ public class tssValidator extends EObjectValidator {
    * @generated
    */
 	public boolean validateToxicShockSyndromeCaseReport_validatePublicHealthCaseReportTemplateId(ToxicShockSyndromeCaseReport toxicShockSyndromeCaseReport, DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return toxicShockSyndromeCaseReport.validatePublicHealthCaseReportTemplateId(diagnostics, context);
+    // TODO override the constraint, if desired
+    // -> uncomment the scaffolding
+    // -> specify the condition that violates the constraint
+    // -> verify the diagnostic details, including severity, code, and message
+    // Ensure that you remove @generated or mark it @generated NOT
+    if (false)
+    {
+      if (diagnostics != null)
+      {
+        diagnostics.add
+          (createDiagnostic
+            (Diagnostic.ERROR,
+             DIAGNOSTIC_SOURCE,
+             0,
+             "_UI_GenericConstraint_diagnostic",
+             new Object[] { "validatePublicHealthCaseReportTemplateId", getObjectLabel(toxicShockSyndromeCaseReport, context) },
+             new Object[] { toxicShockSyndromeCaseReport },
+             context));
+      }
+      return false;
+    }
+    return phcrValidator.validatePublicHealthCaseReport_validatePublicHealthCaseReportTemplateId(toxicShockSyndromeCaseReport, diagnostics, context);
   }
 
 	/**
@@ -455,7 +477,28 @@ public class tssValidator extends EObjectValidator {
    * @generated
    */
 	public boolean validateTssPhcrClinicalInformationSection_validatePhcrClinicalInformationSectionTemplateId(TssPhcrClinicalInformationSection tssPhcrClinicalInformationSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return tssPhcrClinicalInformationSection.validatePhcrClinicalInformationSectionTemplateId(diagnostics, context);
+    // TODO override the constraint, if desired
+    // -> uncomment the scaffolding
+    // -> specify the condition that violates the constraint
+    // -> verify the diagnostic details, including severity, code, and message
+    // Ensure that you remove @generated or mark it @generated NOT
+    if (false)
+    {
+      if (diagnostics != null)
+      {
+        diagnostics.add
+          (createDiagnostic
+            (Diagnostic.ERROR,
+             DIAGNOSTIC_SOURCE,
+             0,
+             "_UI_GenericConstraint_diagnostic",
+             new Object[] { "validatePhcrClinicalInformationSectionTemplateId", getObjectLabel(tssPhcrClinicalInformationSection, context) },
+             new Object[] { tssPhcrClinicalInformationSection },
+             context));
+      }
+      return false;
+    }
+    return phcrValidator.validatePhcrClinicalInformationSection_validatePhcrClinicalInformationSectionTemplateId(tssPhcrClinicalInformationSection, diagnostics, context);
   }
 
 	/**
@@ -540,7 +583,28 @@ public class tssValidator extends EObjectValidator {
    * @generated
    */
 	public boolean validateTssCaseObservation_validateProblemObservationTemplateId(TssCaseObservation tssCaseObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return tssCaseObservation.validateProblemObservationTemplateId(diagnostics, context);
+    // TODO override the constraint, if desired
+    // -> uncomment the scaffolding
+    // -> specify the condition that violates the constraint
+    // -> verify the diagnostic details, including severity, code, and message
+    // Ensure that you remove @generated or mark it @generated NOT
+    if (false)
+    {
+      if (diagnostics != null)
+      {
+        diagnostics.add
+          (createDiagnostic
+            (Diagnostic.ERROR,
+             DIAGNOSTIC_SOURCE,
+             0,
+             "_UI_GenericConstraint_diagnostic",
+             new Object[] { "validateProblemObservationTemplateId", getObjectLabel(tssCaseObservation, context) },
+             new Object[] { tssCaseObservation },
+             context));
+      }
+      return false;
+    }
+    return phcrValidator.validateCaseObservation_validateProblemObservationTemplateId(tssCaseObservation, diagnostics, context);
   }
 
 	/**
@@ -589,7 +653,28 @@ public class tssValidator extends EObjectValidator {
    * @generated
    */
 	public boolean validateTssSignsAndSymptomsObservation_validateSignsAndSymptomsObservationTemplateId(TssSignsAndSymptomsObservation tssSignsAndSymptomsObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return tssSignsAndSymptomsObservation.validateSignsAndSymptomsObservationTemplateId(diagnostics, context);
+    // TODO override the constraint, if desired
+    // -> uncomment the scaffolding
+    // -> specify the condition that violates the constraint
+    // -> verify the diagnostic details, including severity, code, and message
+    // Ensure that you remove @generated or mark it @generated NOT
+    if (false)
+    {
+      if (diagnostics != null)
+      {
+        diagnostics.add
+          (createDiagnostic
+            (Diagnostic.ERROR,
+             DIAGNOSTIC_SOURCE,
+             0,
+             "_UI_GenericConstraint_diagnostic",
+             new Object[] { "validateSignsAndSymptomsObservationTemplateId", getObjectLabel(tssSignsAndSymptomsObservation, context) },
+             new Object[] { tssSignsAndSymptomsObservation },
+             context));
+      }
+      return false;
+    }
+    return phcrValidator.validateSignsAndSymptomsObservation_validateSignsAndSymptomsObservationTemplateId(tssSignsAndSymptomsObservation, diagnostics, context);
   }
 
 	/**
@@ -652,7 +737,28 @@ public class tssValidator extends EObjectValidator {
    * @generated
    */
 	public boolean validateTssPhcrRelevantDxTestsSection_validateResultsSectionTemplateId(TssPhcrRelevantDxTestsSection tssPhcrRelevantDxTestsSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return tssPhcrRelevantDxTestsSection.validateResultsSectionTemplateId(diagnostics, context);
+    // TODO override the constraint, if desired
+    // -> uncomment the scaffolding
+    // -> specify the condition that violates the constraint
+    // -> verify the diagnostic details, including severity, code, and message
+    // Ensure that you remove @generated or mark it @generated NOT
+    if (false)
+    {
+      if (diagnostics != null)
+      {
+        diagnostics.add
+          (createDiagnostic
+            (Diagnostic.ERROR,
+             DIAGNOSTIC_SOURCE,
+             0,
+             "_UI_GenericConstraint_diagnostic",
+             new Object[] { "validateResultsSectionTemplateId", getObjectLabel(tssPhcrRelevantDxTestsSection, context) },
+             new Object[] { tssPhcrRelevantDxTestsSection },
+             context));
+      }
+      return false;
+    }
+    return phcrValidator.validatePhcrRelevantDxTestsSection_validateResultsSectionTemplateId(tssPhcrRelevantDxTestsSection, diagnostics, context);
   }
 
 	/**
@@ -678,7 +784,6 @@ public class tssValidator extends EObjectValidator {
     if (result || diagnostics != null) result &= ccdValidator.validateResultOrganizer_validateResultOrganizerCode(tssResultOrganizer, diagnostics, context);
     if (result || diagnostics != null) result &= ccdValidator.validateResultOrganizer_validateResultOrganizerStatusCode(tssResultOrganizer, diagnostics, context);
     if (result || diagnostics != null) result &= ccdValidator.validateResultOrganizer_validateResultOrganizerResultObservation(tssResultOrganizer, diagnostics, context);
-    if (result || diagnostics != null) result &= ccdValidator.validateResultOrganizer_validateResultOrganizerSpecimen(tssResultOrganizer, diagnostics, context);
     if (result || diagnostics != null) result &= phcrValidator.validateResultOrganizer_validatePHCRResultOrganizerClassCode(tssResultOrganizer, diagnostics, context);
     if (result || diagnostics != null) result &= phcrValidator.validateResultOrganizer_validatePHCRResultOrganizerMoodCode(tssResultOrganizer, diagnostics, context);
     if (result || diagnostics != null) result &= phcrValidator.validateResultOrganizer_validatePHCRResultOrganizerId(tssResultOrganizer, diagnostics, context);
@@ -733,7 +838,28 @@ public class tssValidator extends EObjectValidator {
    * @generated
    */
 	public boolean validateTssResultOrganizer_validateResultOrganizerTemplateId(TssResultOrganizer tssResultOrganizer, DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return tssResultOrganizer.validateResultOrganizerTemplateId(diagnostics, context);
+    // TODO override the constraint, if desired
+    // -> uncomment the scaffolding
+    // -> specify the condition that violates the constraint
+    // -> verify the diagnostic details, including severity, code, and message
+    // Ensure that you remove @generated or mark it @generated NOT
+    if (false)
+    {
+      if (diagnostics != null)
+      {
+        diagnostics.add
+          (createDiagnostic
+            (Diagnostic.ERROR,
+             DIAGNOSTIC_SOURCE,
+             0,
+             "_UI_GenericConstraint_diagnostic",
+             new Object[] { "validateResultOrganizerTemplateId", getObjectLabel(tssResultOrganizer, context) },
+             new Object[] { tssResultOrganizer },
+             context));
+      }
+      return false;
+    }
+    return phcrValidator.validateResultOrganizer_validateResultOrganizerTemplateId(tssResultOrganizer, diagnostics, context);
   }
 
 	/**
@@ -802,7 +928,28 @@ public class tssValidator extends EObjectValidator {
    * @generated
    */
 	public boolean validateTssResultObservation_validateResultObservationTemplateId(TssResultObservation tssResultObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return tssResultObservation.validateResultObservationTemplateId(diagnostics, context);
+    // TODO override the constraint, if desired
+    // -> uncomment the scaffolding
+    // -> specify the condition that violates the constraint
+    // -> verify the diagnostic details, including severity, code, and message
+    // Ensure that you remove @generated or mark it @generated NOT
+    if (false)
+    {
+      if (diagnostics != null)
+      {
+        diagnostics.add
+          (createDiagnostic
+            (Diagnostic.ERROR,
+             DIAGNOSTIC_SOURCE,
+             0,
+             "_UI_GenericConstraint_diagnostic",
+             new Object[] { "validateResultObservationTemplateId", getObjectLabel(tssResultObservation, context) },
+             new Object[] { tssResultObservation },
+             context));
+      }
+      return false;
+    }
+    return phcrValidator.validateResultObservation_validateResultObservationTemplateId(tssResultObservation, diagnostics, context);
   }
 
 	/**

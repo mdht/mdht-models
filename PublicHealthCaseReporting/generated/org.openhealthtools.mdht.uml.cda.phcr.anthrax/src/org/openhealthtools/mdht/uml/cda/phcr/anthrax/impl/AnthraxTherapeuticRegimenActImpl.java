@@ -29,8 +29,6 @@ import org.openhealthtools.mdht.uml.cda.phcr.anthrax.operations.AnthraxTherapeut
 
 import org.openhealthtools.mdht.uml.cda.phcr.impl.TherapeuticRegimenActImpl;
 
-import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
-
 /**
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Therapeutic Regimen Act</b></em>'.
@@ -105,23 +103,4 @@ public class AnthraxTherapeuticRegimenActImpl extends TherapeuticRegimenActImpl 
 	public boolean validateTherapeuticRegimenActTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
     return AnthraxTherapeuticRegimenActOperations.validateTherapeuticRegimenActTemplateId(this, diagnostics, context);
   }
-
-	/**
-   * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-   * @generated
-   */
-	public AnthraxTherapeuticRegimenAct init() {
-      return Initializer.Util.init(this);
-  }
-
-  /**
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    public AnthraxTherapeuticRegimenAct init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-        Initializer.Util.init(this, initializers);
-        return this;
-    }
 } //AnthraxTherapeuticRegimenActImpl

@@ -13,11 +13,8 @@ package org.openhealthtools.mdht.uml.cda.phcr.meningococcal.util;
 import java.util.Map;
 
 import org.eclipse.emf.ecore.EPackage;
-
 import org.eclipse.emf.ecore.resource.Resource;
-
 import org.eclipse.emf.ecore.xmi.util.XMLProcessor;
-
 import org.openhealthtools.mdht.uml.cda.phcr.meningococcal.MeningococcalPackage;
 
 /**

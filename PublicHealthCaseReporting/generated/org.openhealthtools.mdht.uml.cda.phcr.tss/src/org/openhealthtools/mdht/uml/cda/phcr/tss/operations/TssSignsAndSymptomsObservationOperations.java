@@ -23,7 +23,6 @@ import org.eclipse.ocl.ecore.OCL;
 
 import org.openhealthtools.mdht.uml.cda.phcr.operations.SignsAndSymptomsObservationOperations;
 
-import org.openhealthtools.mdht.uml.cda.phcr.tss.TssPlugin;
 import org.openhealthtools.mdht.uml.cda.phcr.tss.TssSignsAndSymptomsObservation;
 import org.openhealthtools.mdht.uml.cda.phcr.tss.tssPackage;
 
@@ -37,7 +36,6 @@ import org.openhealthtools.mdht.uml.cda.phcr.tss.util.tssValidator;
  * <p>
  * The following operations are supported:
  * <ul>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.phcr.tss.TssSignsAndSymptomsObservation#validateTssSignsAndSymptomsObservationValue(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Tss Signs And Symptoms Observation Value</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.phcr.tss.TssSignsAndSymptomsObservation#validateSignsAndSymptomsObservationTemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Signs And Symptoms Observation Template Id</em>}</li>
  * </ul>
  * </p>
@@ -80,6 +78,7 @@ public class TssSignsAndSymptomsObservationOperations extends SignsAndSymptomsOb
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
+   * (self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (not self.value->isEmpty())
    * @param tssSignsAndSymptomsObservation The receiving '<em><b>Tss Signs And Symptoms Observation</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -89,8 +88,8 @@ public class TssSignsAndSymptomsObservationOperations extends SignsAndSymptomsOb
   
   public static  boolean validateTssSignsAndSymptomsObservationValue(TssSignsAndSymptomsObservation tssSignsAndSymptomsObservation, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
-  	  
-    if (VALIDATE_TSS_SIGNS_AND_SYMPTOMS_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+    if (VALIDATE_TSS_SIGNS_AND_SYMPTOMS_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null)
+    {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(tssPackage.Literals.TSS_SIGNS_AND_SYMPTOMS_OBSERVATION);
       try
@@ -111,10 +110,9 @@ public class TssSignsAndSymptomsObservationOperations extends SignsAndSymptomsOb
             (Diagnostic.ERROR,
              tssValidator.DIAGNOSTIC_SOURCE,
              tssValidator.TSS_SIGNS_AND_SYMPTOMS_OBSERVATION__TSS_SIGNS_AND_SYMPTOMS_OBSERVATION_VALUE,
-             TssPlugin.INSTANCE.getString("TssSignsAndSymptomsObservationValue"),
+             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "validateTssSignsAndSymptomsObservationValue", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(tssSignsAndSymptomsObservation, context) }),
              new Object [] { tssSignsAndSymptomsObservation }));
       }
-       
       return false;
     }
     return true;
@@ -146,6 +144,7 @@ public class TssSignsAndSymptomsObservationOperations extends SignsAndSymptomsOb
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
+   * self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.15.3.100')
    * @param tssSignsAndSymptomsObservation The receiving '<em><b>Tss Signs And Symptoms Observation</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -154,8 +153,8 @@ public class TssSignsAndSymptomsObservationOperations extends SignsAndSymptomsOb
    */
 	
 	public static  boolean validateSignsAndSymptomsObservationTemplateId(TssSignsAndSymptomsObservation tssSignsAndSymptomsObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
-    if (VALIDATE_SIGNS_AND_SYMPTOMS_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+    if (VALIDATE_SIGNS_AND_SYMPTOMS_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null)
+    {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(tssPackage.Literals.TSS_SIGNS_AND_SYMPTOMS_OBSERVATION);
       try
@@ -176,10 +175,9 @@ public class TssSignsAndSymptomsObservationOperations extends SignsAndSymptomsOb
             (Diagnostic.ERROR,
              tssValidator.DIAGNOSTIC_SOURCE,
              tssValidator.TSS_SIGNS_AND_SYMPTOMS_OBSERVATION__SIGNS_AND_SYMPTOMS_OBSERVATION_TEMPLATE_ID,
-             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "SignsAndSymptomsObservationTemplateId", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(tssSignsAndSymptomsObservation, context) }),
+             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "validateSignsAndSymptomsObservationTemplateId", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(tssSignsAndSymptomsObservation, context) }),
              new Object [] { tssSignsAndSymptomsObservation }));
       }
-       
       return false;
     }
     return true;

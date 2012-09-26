@@ -23,7 +23,6 @@ import org.openhealthtools.mdht.uml.cda.phcr.silicosis.SilicosisHistoryOfTubercu
 import org.openhealthtools.mdht.uml.cda.phcr.silicosis.SilicosisPHCRClinicalInformationSection;
 import org.openhealthtools.mdht.uml.cda.phcr.silicosis.SilicosisPackage;
 import org.openhealthtools.mdht.uml.cda.phcr.silicosis.operations.SilicosisPHCRClinicalInformationSectionOperations;
-import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
 
 /**
  * <!-- begin-user-doc -->
@@ -102,24 +101,5 @@ public class SilicosisPHCRClinicalInformationSectionImpl extends PhcrClinicalInf
   {
     return SilicosisPHCRClinicalInformationSectionOperations.validatePhcrClinicalInformationSectionTemplateId(this, diagnostics, context);
   }
-
-  /**
-   * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-   * @generated
-   */
-	public SilicosisPHCRClinicalInformationSection init() {
-      return Initializer.Util.init(this);
-  }
-
-  /**
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    public SilicosisPHCRClinicalInformationSection init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-        Initializer.Util.init(this, initializers);
-        return this;
-    }
 
 } //SilicosisPHCRClinicalInformationSectionImpl

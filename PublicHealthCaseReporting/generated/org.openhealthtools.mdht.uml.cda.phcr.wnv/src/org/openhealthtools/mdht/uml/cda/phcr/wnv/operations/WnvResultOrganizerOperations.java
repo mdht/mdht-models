@@ -45,7 +45,6 @@ import org.openhealthtools.mdht.uml.cda.phcr.wnv.util.WnvValidator;
  * <p>
  * The following operations are supported:
  * <ul>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.phcr.wnv.WnvResultOrganizer#validateWnvResultOrganizerCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Wnv Result Organizer Code P</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.phcr.wnv.WnvResultOrganizer#validateWnvResultOrganizerCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Wnv Result Organizer Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.phcr.wnv.WnvResultOrganizer#validateWnvResultOrganizerWnvResultObservation(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Wnv Result Organizer Wnv Result Observation</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.phcr.wnv.WnvResultOrganizer#getWnvResultObservations() <em>Get Wnv Result Observations</em>}</li>
@@ -91,6 +90,7 @@ public class WnvResultOrganizerOperations extends ResultOrganizerOperations {
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
+   * (self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined())
    * @param wnvResultOrganizer The receiving '<em><b>Result Organizer</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -100,8 +100,8 @@ public class WnvResultOrganizerOperations extends ResultOrganizerOperations {
   
   public static  boolean validateWnvResultOrganizerCodeP(WnvResultOrganizer wnvResultOrganizer, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
-  	  
-    if (VALIDATE_WNV_RESULT_ORGANIZER_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+    if (VALIDATE_WNV_RESULT_ORGANIZER_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null)
+    {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(WnvPackage.Literals.WNV_RESULT_ORGANIZER);
       try
@@ -122,22 +122,9 @@ public class WnvResultOrganizerOperations extends ResultOrganizerOperations {
             (Diagnostic.ERROR,
              WnvValidator.DIAGNOSTIC_SOURCE,
              WnvValidator.WNV_RESULT_ORGANIZER__WNV_RESULT_ORGANIZER_CODE_P,
-             WnvPlugin.INSTANCE.getString("WnvResultOrganizerCodeP"),
+             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "validateWnvResultOrganizerCodeP", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(wnvResultOrganizer, context) }),
              new Object [] { wnvResultOrganizer }));
       }
-      
-      if (context != null) {
-        // generate a pass token for my dependent constraints to short-circuit or filter results
-        @SuppressWarnings("unchecked")
-        Collection<Object> passToken = (Collection<Object>) context.get("org.openhealthtools.mdht.uml.cda.phcr.wnv.WnvResultOrganizerCodeP");
-        if (passToken == null) {
-          // anticipate a reasonably healthy model
-          passToken = new java.util.ArrayList<Object>(3);
-          context.put("org.openhealthtools.mdht.uml.cda.phcr.wnv.WnvResultOrganizerCodeP", passToken);
-        }
-        passToken.add(wnvResultOrganizer);
-      }
-       
       return false;
     }
     return true;
@@ -171,6 +158,9 @@ public class WnvResultOrganizerOperations extends ResultOrganizerOperations {
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
+   * (self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and 
+   * let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in 
+   * not value.code.oclIsUndefined())
    * @param wnvResultOrganizer The receiving '<em><b>Result Organizer</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -180,14 +170,8 @@ public class WnvResultOrganizerOperations extends ResultOrganizerOperations {
   
   public static  boolean validateWnvResultOrganizerCode(WnvResultOrganizer wnvResultOrganizer, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
-  	  
-    Object passToken = (context == null) ? null : context.get("org.openhealthtools.mdht.uml.cda.phcr.wnv.WnvResultOrganizerCodeP");
-    if ((passToken instanceof Collection<?>) && ((Collection<?>) passToken).contains(wnvResultOrganizer)) {
-      // I have a free pass to short-circuit
-      return true;
-    }
-  	  
-    if (VALIDATE_WNV_RESULT_ORGANIZER_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+    if (VALIDATE_WNV_RESULT_ORGANIZER_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null)
+    {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(WnvPackage.Literals.WNV_RESULT_ORGANIZER);
       try
@@ -208,10 +192,9 @@ public class WnvResultOrganizerOperations extends ResultOrganizerOperations {
             (Diagnostic.ERROR,
              WnvValidator.DIAGNOSTIC_SOURCE,
              WnvValidator.WNV_RESULT_ORGANIZER__WNV_RESULT_ORGANIZER_CODE,
-             WnvPlugin.INSTANCE.getString("WnvResultOrganizerCode"),
+             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "validateWnvResultOrganizerCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(wnvResultOrganizer, context) }),
              new Object [] { wnvResultOrganizer }));
       }
-       
       return false;
     }
     return true;
@@ -243,6 +226,7 @@ public class WnvResultOrganizerOperations extends ResultOrganizerOperations {
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
+   * self.component->exists(component : cda::Component4 | not component.observation.oclIsUndefined() and component.observation.oclIsKindOf(wnv::WnvResultObservation))
    * @param wnvResultOrganizer The receiving '<em><b>Result Organizer</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -251,8 +235,8 @@ public class WnvResultOrganizerOperations extends ResultOrganizerOperations {
    */
 	
 	public static  boolean validateWnvResultOrganizerWnvResultObservation(WnvResultOrganizer wnvResultOrganizer, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
-    if (VALIDATE_WNV_RESULT_ORGANIZER_WNV_RESULT_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+    if (VALIDATE_WNV_RESULT_ORGANIZER_WNV_RESULT_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null)
+    {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(WnvPackage.Literals.WNV_RESULT_ORGANIZER);
       try
@@ -273,10 +257,9 @@ public class WnvResultOrganizerOperations extends ResultOrganizerOperations {
             (Diagnostic.ERROR,
              WnvValidator.DIAGNOSTIC_SOURCE,
              WnvValidator.WNV_RESULT_ORGANIZER__WNV_RESULT_ORGANIZER_WNV_RESULT_OBSERVATION,
-             WnvPlugin.INSTANCE.getString("WnvResultOrganizerWnvResultObservation"),
+             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "validateWnvResultOrganizerWnvResultObservation", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(wnvResultOrganizer, context) }),
              new Object [] { wnvResultOrganizer }));
       }
-       
       return false;
     }
     return true;
@@ -305,6 +288,10 @@ public class WnvResultOrganizerOperations extends ResultOrganizerOperations {
 	/**
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
+   * <!-- begin-model-doc -->
+   * self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(wnv::WnvResultObservation)).oclAsType(wnv::WnvResultObservation)
+   * @param wnvResultOrganizer The receiving '<em><b>Result Organizer</b></em>' model object.
+   * <!-- end-model-doc -->
    * @generated
    */
 	
@@ -312,7 +299,7 @@ public class WnvResultOrganizerOperations extends ResultOrganizerOperations {
     if (GET_WNV_RESULT_OBSERVATIONS__EOCL_QRY == null)
     {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
-      helper.setOperationContext(WnvPackage.Literals.WNV_RESULT_ORGANIZER, WnvPackage.Literals.WNV_RESULT_ORGANIZER.getEAllOperations().get(77));
+      helper.setOperationContext(WnvPackage.Literals.WNV_RESULT_ORGANIZER, WnvPackage.Literals.WNV_RESULT_ORGANIZER.getEAllOperations().get(74));
       try
       {
         GET_WNV_RESULT_OBSERVATIONS__EOCL_QRY = helper.createQuery(GET_WNV_RESULT_OBSERVATIONS__EOCL_EXP);
@@ -354,6 +341,7 @@ public class WnvResultOrganizerOperations extends ResultOrganizerOperations {
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
+   * self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.15.3.105')
    * @param wnvResultOrganizer The receiving '<em><b>Result Organizer</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -362,8 +350,8 @@ public class WnvResultOrganizerOperations extends ResultOrganizerOperations {
    */
 	
 	public static  boolean validateResultOrganizerTemplateId(WnvResultOrganizer wnvResultOrganizer, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
-    if (VALIDATE_RESULT_ORGANIZER_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+    if (VALIDATE_RESULT_ORGANIZER_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null)
+    {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(WnvPackage.Literals.WNV_RESULT_ORGANIZER);
       try
@@ -384,10 +372,9 @@ public class WnvResultOrganizerOperations extends ResultOrganizerOperations {
             (Diagnostic.ERROR,
              WnvValidator.DIAGNOSTIC_SOURCE,
              WnvValidator.WNV_RESULT_ORGANIZER__RESULT_ORGANIZER_TEMPLATE_ID,
-             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "ResultOrganizerTemplateId", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(wnvResultOrganizer, context) }),
+             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "validateResultOrganizerTemplateId", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(wnvResultOrganizer, context) }),
              new Object [] { wnvResultOrganizer }));
       }
-       
       return false;
     }
     return true;

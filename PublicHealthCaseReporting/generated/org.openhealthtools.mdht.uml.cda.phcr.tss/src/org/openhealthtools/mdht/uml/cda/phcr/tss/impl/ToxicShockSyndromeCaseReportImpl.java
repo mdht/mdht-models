@@ -23,7 +23,6 @@ import org.openhealthtools.mdht.uml.cda.phcr.tss.TssPhcrClinicalInformationSecti
 import org.openhealthtools.mdht.uml.cda.phcr.tss.TssPhcrRelevantDxTestsSection;
 import org.openhealthtools.mdht.uml.cda.phcr.tss.tssPackage;
 import org.openhealthtools.mdht.uml.cda.phcr.tss.operations.ToxicShockSyndromeCaseReportOperations;
-import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
 
 /**
  * <!-- begin-user-doc -->
@@ -108,23 +107,4 @@ public class ToxicShockSyndromeCaseReportImpl extends PublicHealthCaseReportImpl
 	public boolean validatePublicHealthCaseReportTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
     return ToxicShockSyndromeCaseReportOperations.validatePublicHealthCaseReportTemplateId(this, diagnostics, context);
   }
-
-	/**
-   * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-   * @generated
-   */
-	public ToxicShockSyndromeCaseReport init() {
-      return Initializer.Util.init(this);
-  }
-
-  /**
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    public ToxicShockSyndromeCaseReport init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-        Initializer.Util.init(this, initializers);
-        return this;
-    }
 } //ToxicShockSyndromeCaseReportImpl

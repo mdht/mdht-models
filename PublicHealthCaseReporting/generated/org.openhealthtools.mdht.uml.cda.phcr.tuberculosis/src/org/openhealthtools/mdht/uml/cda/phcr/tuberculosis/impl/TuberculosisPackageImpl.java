@@ -266,10 +266,8 @@ public class TuberculosisPackageImpl extends EPackageImpl implements Tuberculosi
         // Register package validator
         EValidator.Registry.INSTANCE.put
             (theTuberculosisPackage, 
-             new EValidator.Descriptor()
-             {
-                 public EValidator getEValidator()
-                 {
+             new EValidator.Descriptor() {
+                 public EValidator getEValidator() {
                      return TuberculosisValidator.INSTANCE;
                  }
              });
@@ -799,24 +797,6 @@ public class TuberculosisPackageImpl extends EPackageImpl implements Tuberculosi
         g1.getETypeArguments().add(g2);
         addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
 
-        op = addEOperation(tuberculosisSocioBehavioralBooleanRiskFactorObservationEClass, ecorePackage.getEBoolean(), "validateTuberculosisSocioBehavioralBooleanRiskFactorObservationValue", 0, 1, IS_UNIQUE, IS_ORDERED);
-        addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
-        g1 = createEGenericType(ecorePackage.getEMap());
-        g2 = createEGenericType(ecorePackage.getEJavaObject());
-        g1.getETypeArguments().add(g2);
-        g2 = createEGenericType(ecorePackage.getEJavaObject());
-        g1.getETypeArguments().add(g2);
-        addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
-
-        op = addEOperation(tuberculosisSocioBehavioralBooleanRiskFactorObservationEClass, ecorePackage.getEBoolean(), "validateTuberculosisSocioBehavioralBooleanRiskFactorObservationCodeP", 0, 1, IS_UNIQUE, IS_ORDERED);
-        addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
-        g1 = createEGenericType(ecorePackage.getEMap());
-        g2 = createEGenericType(ecorePackage.getEJavaObject());
-        g1.getETypeArguments().add(g2);
-        g2 = createEGenericType(ecorePackage.getEJavaObject());
-        g1.getETypeArguments().add(g2);
-        addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
-
         op = addEOperation(tuberculosisSocioBehavioralBooleanRiskFactorObservationEClass, ecorePackage.getEBoolean(), "validateTuberculosisSocioBehavioralBooleanRiskFactorObservationCode", 0, 1, IS_UNIQUE, IS_ORDERED);
         addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
         g1 = createEGenericType(ecorePackage.getEMap());
@@ -838,15 +818,6 @@ public class TuberculosisPackageImpl extends EPackageImpl implements Tuberculosi
         addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
 
         op = addEOperation(smokingStatusObservationEClass, ecorePackage.getEBoolean(), "validateSmokingStatusObservationEffectiveTime", 0, 1, IS_UNIQUE, IS_ORDERED);
-        addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
-        g1 = createEGenericType(ecorePackage.getEMap());
-        g2 = createEGenericType(ecorePackage.getEJavaObject());
-        g1.getETypeArguments().add(g2);
-        g2 = createEGenericType(ecorePackage.getEJavaObject());
-        g1.getETypeArguments().add(g2);
-        addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
-
-        op = addEOperation(smokingStatusObservationEClass, ecorePackage.getEBoolean(), "validateSmokingStatusObservationValue", 0, 1, IS_UNIQUE, IS_ORDERED);
         addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
         g1 = createEGenericType(ecorePackage.getEMap());
         g2 = createEGenericType(ecorePackage.getEJavaObject());
@@ -893,24 +864,6 @@ public class TuberculosisPackageImpl extends EPackageImpl implements Tuberculosi
         g1.getETypeArguments().add(g2);
         addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
 
-        op = addEOperation(hivStatusObservationEClass, ecorePackage.getEBoolean(), "validateHIVStatusObservationStatusCodeP", 0, 1, IS_UNIQUE, IS_ORDERED);
-        addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
-        g1 = createEGenericType(ecorePackage.getEMap());
-        g2 = createEGenericType(ecorePackage.getEJavaObject());
-        g1.getETypeArguments().add(g2);
-        g2 = createEGenericType(ecorePackage.getEJavaObject());
-        g1.getETypeArguments().add(g2);
-        addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
-
-        op = addEOperation(hivStatusObservationEClass, ecorePackage.getEBoolean(), "validateHIVStatusObservationValue", 0, 1, IS_UNIQUE, IS_ORDERED);
-        addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
-        g1 = createEGenericType(ecorePackage.getEMap());
-        g2 = createEGenericType(ecorePackage.getEJavaObject());
-        g1.getETypeArguments().add(g2);
-        g2 = createEGenericType(ecorePackage.getEJavaObject());
-        g1.getETypeArguments().add(g2);
-        addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
-
         op = addEOperation(hivStatusObservationEClass, ecorePackage.getEBoolean(), "validateHIVStatusObservationMoodCode", 0, 1, IS_UNIQUE, IS_ORDERED);
         addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
         g1 = createEGenericType(ecorePackage.getEMap());
@@ -946,15 +899,6 @@ public class TuberculosisPackageImpl extends EPackageImpl implements Tuberculosi
 
         initEClass(tuberculosisCaseObservationEClass, TuberculosisCaseObservation.class, "TuberculosisCaseObservation", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 
-        op = addEOperation(tuberculosisCaseObservationEClass, ecorePackage.getEBoolean(), "validateTuberculosisCaseObservationValueP", 0, 1, IS_UNIQUE, IS_ORDERED);
-        addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
-        g1 = createEGenericType(ecorePackage.getEMap());
-        g2 = createEGenericType(ecorePackage.getEJavaObject());
-        g1.getETypeArguments().add(g2);
-        g2 = createEGenericType(ecorePackage.getEJavaObject());
-        g1.getETypeArguments().add(g2);
-        addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
-
         op = addEOperation(tuberculosisCaseObservationEClass, ecorePackage.getEBoolean(), "validateTuberculosisCaseObservationValue", 0, 1, IS_UNIQUE, IS_ORDERED);
         addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
         g1 = createEGenericType(ecorePackage.getEMap());
@@ -987,15 +931,6 @@ public class TuberculosisPackageImpl extends EPackageImpl implements Tuberculosi
         addEOperation(tuberculosisCaseObservationEClass, this.getTuberculosisSiteOfTBDiseaseObservation(), "getTuberculosisSiteOfTBDiseaseObservations", 1, -1, IS_UNIQUE, !IS_ORDERED);
 
         initEClass(tuberculosisSignsAndSymptomsObservationEClass, TuberculosisSignsAndSymptomsObservation.class, "TuberculosisSignsAndSymptomsObservation", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-
-        op = addEOperation(tuberculosisSignsAndSymptomsObservationEClass, ecorePackage.getEBoolean(), "validateTuberculosisSignsAndSymptomsObservationValue", 0, 1, IS_UNIQUE, IS_ORDERED);
-        addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
-        g1 = createEGenericType(ecorePackage.getEMap());
-        g2 = createEGenericType(ecorePackage.getEJavaObject());
-        g1.getETypeArguments().add(g2);
-        g2 = createEGenericType(ecorePackage.getEJavaObject());
-        g1.getETypeArguments().add(g2);
-        addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
 
         initEClass(tuberculosisSiteOfTBDiseaseObservationEClass, TuberculosisSiteOfTBDiseaseObservation.class, "TuberculosisSiteOfTBDiseaseObservation", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 
@@ -1095,15 +1030,6 @@ public class TuberculosisPackageImpl extends EPackageImpl implements Tuberculosi
         g1.getETypeArguments().add(g2);
         addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
 
-        op = addEOperation(tuberculosisRelevantMedicalConditionProblemObservationEClass, ecorePackage.getEBoolean(), "validateTuberculosisRelevantMedicalConditionProblemObservationValue", 0, 1, IS_UNIQUE, IS_ORDERED);
-        addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
-        g1 = createEGenericType(ecorePackage.getEMap());
-        g2 = createEGenericType(ecorePackage.getEJavaObject());
-        g1.getETypeArguments().add(g2);
-        g2 = createEGenericType(ecorePackage.getEJavaObject());
-        g1.getETypeArguments().add(g2);
-        addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
-
         initEClass(tuberculosisPHCRRelevantDxTestsSectionEClass, TuberculosisPHCRRelevantDxTestsSection.class, "TuberculosisPHCRRelevantDxTestsSection", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 
         op = addEOperation(tuberculosisPHCRRelevantDxTestsSectionEClass, ecorePackage.getEBoolean(), "validateTuberculosisPHCRRelevantDxTestsSectionTuberculosisResultOrganizer", 0, 1, IS_UNIQUE, IS_ORDERED);
@@ -1130,15 +1056,6 @@ public class TuberculosisPackageImpl extends EPackageImpl implements Tuberculosi
 
         initEClass(tuberculosisResultOrganizerEClass, TuberculosisResultOrganizer.class, "TuberculosisResultOrganizer", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 
-        op = addEOperation(tuberculosisResultOrganizerEClass, ecorePackage.getEBoolean(), "validateTuberculosisResultOrganizerCodeP", 0, 1, IS_UNIQUE, IS_ORDERED);
-        addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
-        g1 = createEGenericType(ecorePackage.getEMap());
-        g2 = createEGenericType(ecorePackage.getEJavaObject());
-        g1.getETypeArguments().add(g2);
-        g2 = createEGenericType(ecorePackage.getEJavaObject());
-        g1.getETypeArguments().add(g2);
-        addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
-
         op = addEOperation(tuberculosisResultOrganizerEClass, ecorePackage.getEBoolean(), "validateTuberculosisResultOrganizerCode", 0, 1, IS_UNIQUE, IS_ORDERED);
         addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
         g1 = createEGenericType(ecorePackage.getEMap());
@@ -1160,15 +1077,6 @@ public class TuberculosisPackageImpl extends EPackageImpl implements Tuberculosi
         addEOperation(tuberculosisResultOrganizerEClass, this.getTuberculosisResultObservation(), "getTuberculosisResultObservations", 1, -1, IS_UNIQUE, !IS_ORDERED);
 
         initEClass(tuberculosisResultObservationEClass, TuberculosisResultObservation.class, "TuberculosisResultObservation", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-
-        op = addEOperation(tuberculosisResultObservationEClass, ecorePackage.getEBoolean(), "validateTuberculosisResultObservationCodeP", 0, 1, IS_UNIQUE, IS_ORDERED);
-        addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
-        g1 = createEGenericType(ecorePackage.getEMap());
-        g2 = createEGenericType(ecorePackage.getEJavaObject());
-        g1.getETypeArguments().add(g2);
-        g2 = createEGenericType(ecorePackage.getEJavaObject());
-        g1.getETypeArguments().add(g2);
-        addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
 
         op = addEOperation(tuberculosisResultObservationEClass, ecorePackage.getEBoolean(), "validateTuberculosisResultObservationCode", 0, 1, IS_UNIQUE, IS_ORDERED);
         addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
@@ -1261,10 +1169,9 @@ public class TuberculosisPackageImpl extends EPackageImpl implements Tuberculosi
         addAnnotation
           (this, 
            source, 
-           new String[] 
-           {
+           new String[] {
              "initializers", "org.openhealthtools.mdht.uml.cda.phcr.tuberculosis"
-           });                                                                                                                                                                                                                                               
+           });                                                                                                                                                                                                                                                                                       
     }
 
   /**
@@ -1278,28 +1185,25 @@ public class TuberculosisPackageImpl extends EPackageImpl implements Tuberculosi
         addAnnotation
           (tuberculosisCaseReportEClass, 
            source, 
-           new String[] 
-           {
+           new String[] {
              "constraints.validation.error", "TuberculosisCaseReportTemplateId TuberculosisCaseReportTitle TuberculosisCaseReportTuberculosisPHCRClinicalInformationSection",
              "templateId.root", "2.16.840.1.113883.10.20.15.1.1",
              "title.mixed", "Public Health Case Report - Tuberculosis",
              "constraints.validation.warning", "TuberculosisCaseReportTuberculosisPHCRSocialHistorySection TuberculosisCaseReportTuberculosisPHCRRelevantDxTestsSection TuberculosisCaseReportTuberculosisPHCRTreatmentInformationSection",
              "constraints.validation.info", "TuberculosisCaseReportTuberculosisPHCRImmunizationSection"
-           });                             
+           });                                        
         addAnnotation
           (tuberculosisPHCRSocialHistorySectionEClass, 
            source, 
-           new String[] 
-           {
+           new String[] {
              "constraints.validation.error", "TuberculosisPHCRSocialHistorySectionTemplateId",
              "templateId.root", "2.16.840.1.113883.10.20.15.2.7",
              "constraints.validation.warning", "TuberculosisPHCRSocialHistorySectionTuberculosisPossibleExposureLocationAct TuberculosisPHCRSocialHistorySectionTuberculosisSocioBehavioralBooleanRiskFactorObservation TuberculosisPHCRSocialHistorySectionSmokingStatusObservation TuberculosisPHCRSocialHistorySectionHIVStatusObservation"
-           });                      
+           });                              
         addAnnotation
           (tuberculosisPossibleExposureLocationActEClass, 
            source, 
-           new String[] 
-           {
+           new String[] {
              "constraints.validation.error", "TuberculosisPossibleExposureLocationActTemplateId TuberculosisPossibleExposureLocationActClassCode TuberculosisPossibleExposureLocationActCode TuberculosisPossibleExposureLocationActMoodCode TuberculosisPossibleExposureLocationActStatusCode",
              "templateId.root", "2.16.840.1.113883.10.20.15.3.12",
              "classCode", "ACT",
@@ -1309,39 +1213,35 @@ public class TuberculosisPackageImpl extends EPackageImpl implements Tuberculosi
              "code.displayName", "Finding with explicit context",
              "moodCode", "EVN",
              "statusCode.code", "completed"
-           });                    
+           });                         
         addAnnotation
           (tuberculosisSocioBehavioralBooleanRiskFactorObservationEClass, 
            source, 
-           new String[] 
-           {
-             "constraints.validation.error", "TuberculosisSocioBehavioralBooleanRiskFactorObservationTemplateId TuberculosisSocioBehavioralBooleanRiskFactorObservationNegationInd TuberculosisSocioBehavioralBooleanRiskFactorObservationValue TuberculosisSocioBehavioralBooleanRiskFactorObservationCode TuberculosisSocioBehavioralBooleanRiskFactorObservationCodeP",
+           new String[] {
+             "constraints.validation.error", "TuberculosisSocioBehavioralBooleanRiskFactorObservationTemplateId TuberculosisSocioBehavioralBooleanRiskFactorObservationNegationInd TuberculosisSocioBehavioralBooleanRiskFactorObservationCode",
              "templateId.root", "2.16.840.1.113883.10.20.15.3.15",
              "constraints.validation.warning", "TuberculosisSocioBehavioralBooleanRiskFactorObservationEffectiveTime",
              "code.code", "ASSERTION",
              "code.codeSystem", "2.16.840.1.113883.5.4",
-             "code.codeSystemName", "HL7ActCode",
-             "constraints.validation.dependOn.TuberculosisSocioBehavioralBooleanRiskFactorObservationCode", "TuberculosisSocioBehavioralBooleanRiskFactorObservationCodeP"
-           });                     
+             "code.codeSystemName", "HL7ActCode"
+           });                  
         addAnnotation
           (smokingStatusObservationEClass, 
            source, 
-           new String[] 
-           {
-             "constraints.validation.error", "SmokingStatusObservationTemplateId SmokingStatusObservationCode SmokingStatusObservationValue",
+           new String[] {
+             "constraints.validation.error", "SmokingStatusObservationTemplateId SmokingStatusObservationCode",
              "templateId.root", "2.16.840.1.113883.10.20.15.3.85",
              "code.code", "266918002",
              "code.codeSystem", "2.16.840.1.113883.6.96",
              "code.codeSystemName", "SNOMEDCT",
              "code.displayName", "Tobacco use and exposure",
              "constraints.validation.warning", "SmokingStatusObservationEffectiveTime"
-           });               
+           });              
         addAnnotation
           (hivStatusObservationEClass, 
            source, 
-           new String[] 
-           {
-             "constraints.validation.error", "HIVStatusObservationTemplateId HIVStatusObservationClassCode HIVStatusObservationCode HIVStatusObservationStatusCode HIVStatusObservationStatusCodeP HIVStatusObservationValue HIVStatusObservationMoodCode",
+           new String[] {
+             "constraints.validation.error", "HIVStatusObservationTemplateId HIVStatusObservationClassCode HIVStatusObservationCode HIVStatusObservationStatusCode HIVStatusObservationMoodCode",
              "templateId.root", "2.16.840.1.113883.10.20.15.3.4",
              "classCode", "OBS",
              "code.code", "ASSERTION",
@@ -1349,41 +1249,36 @@ public class TuberculosisPackageImpl extends EPackageImpl implements Tuberculosi
              "code.codeSystemName", "HL7ActCode",
              "statusCode.code", "completed",
              "moodCode", "EVN"
-           });                          
+           });                         
         addAnnotation
           (tuberculosisPHCRClinicalInformationSectionEClass, 
            source, 
-           new String[] 
-           {
+           new String[] {
              "constraints.validation.error", "TuberculosisPHCRClinicalInformationSectionTemplateId TuberculosisPHCRClinicalInformationSectionTuberculosisCaseObservation",
              "templateId.root", "2.16.840.1.113883.10.20.15.2.5",
              "constraints.validation.warning", "TuberculosisPHCRClinicalInformationSectionTuberculosisRelevantMedicalConditionHistoryObservation"
-           });              
+           });                  
         addAnnotation
           (tuberculosisCaseObservationEClass, 
            source, 
-           new String[] 
-           {
-             "constraints.validation.error", "TuberculosisCaseObservationTemplateId TuberculosisCaseObservationValue TuberculosisCaseObservationValueP",
+           new String[] {
+             "constraints.validation.error", "TuberculosisCaseObservationTemplateId TuberculosisCaseObservationValue",
              "templateId.root", "2.16.840.1.113883.10.20.15.3.54",
              "value.codeSystem", "2.16.840.1.113883.6.96",
              "value.codeSystemName", "SNOMEDCT",
-             "constraints.validation.dependOn.TuberculosisCaseObservationValue", "TuberculosisCaseObservationValueP",
              "constraints.validation.warning", "TuberculosisCaseObservationTuberculosisSignsAndSymptomsObservation TuberculosisCaseObservationTuberculosisSiteOfTBDiseaseObservation"
-           });                    
+           });                      
         addAnnotation
           (tuberculosisSignsAndSymptomsObservationEClass, 
            source, 
-           new String[] 
-           {
-             "constraints.validation.error", "TuberculosisSignsAndSymptomsObservationTemplateId TuberculosisSignsAndSymptomsObservationValue",
+           new String[] {
+             "constraints.validation.error", "TuberculosisSignsAndSymptomsObservationTemplateId",
              "templateId.root", "2.16.840.1.113883.10.20.15.3.14"
-           });         
+           });      
         addAnnotation
           (tuberculosisSiteOfTBDiseaseObservationEClass, 
            source, 
-           new String[] 
-           {
+           new String[] {
              "constraints.validation.error", "TuberculosisSiteOfTBDiseaseObservationTemplateId TuberculosisSiteOfTBDiseaseObservationClassCode TuberculosisSiteOfTBDiseaseObservationCode TuberculosisSiteOfTBDiseaseObservationMoodCode TuberculosisSiteOfTBDiseaseObservationStatusCode TuberculosisSiteOfTBDiseaseObservationValue",
              "templateId.root", "2.16.840.1.113883.10.20.15.3.98",
              "classCode", "OBS",
@@ -1395,118 +1290,104 @@ public class TuberculosisPackageImpl extends EPackageImpl implements Tuberculosi
              "statusCode.code", "completed",
              "value.codeSystem", "2.16.840.1.113883.6.96",
              "value.codeSystemName", "SNOMEDCT"
-           });                          
+           });                                 
         addAnnotation
           (tuberculosisRelevantMedicalConditionHistoryObservationEClass, 
            source, 
-           new String[] 
-           {
+           new String[] {
              "constraints.validation.error", "TuberculosisRelevantMedicalConditionHistoryObservationTemplateId TuberculosisRelevantMedicalConditionHistoryObservationValue TuberculosisRelevantMedicalConditionHistoryObservationTuberculosisRelevantMedicalConditionProblemObservation",
              "templateId.root", "2.16.840.1.113883.10.20.15.3.107",
              "value.code", "398192003",
              "value.codeSystem", "2.16.840.1.113883.6.96",
              "value.codeSystemName", "SNOMEDCT",
              "value.displayName", "Co-morbid conditions"
-           });             
+           });                
         addAnnotation
           (tuberculosisRelevantMedicalConditionProblemObservationEClass, 
            source, 
-           new String[] 
-           {
-             "constraints.validation.error", "TuberculosisRelevantMedicalConditionProblemObservationTemplateId TuberculosisRelevantMedicalConditionProblemObservationCode TuberculosisRelevantMedicalConditionProblemObservationValue",
+           new String[] {
+             "constraints.validation.error", "TuberculosisRelevantMedicalConditionProblemObservationTemplateId TuberculosisRelevantMedicalConditionProblemObservationCode",
              "templateId.root", "2.16.840.1.113883.10.20.15.3.108",
              "code.code", "64572001",
              "code.codeSystem", "2.16.840.1.113883.6.96",
              "code.codeSystemName", "SNOMEDCT",
              "code.displayName", "Condition"
-           });            
+           });          
         addAnnotation
           (tuberculosisPHCRRelevantDxTestsSectionEClass, 
            source, 
-           new String[] 
-           {
+           new String[] {
              "constraints.validation.error", "TuberculosisPHCRRelevantDxTestsSectionTemplateId",
              "templateId.root", "2.16.840.1.113883.10.20.15.2.6",
              "constraints.validation.info", "TuberculosisPHCRRelevantDxTestsSectionTuberculosisResultOrganizer",
              "constraints.validation.warning", "TuberculosisPHCRRelevantDxTestsSectionTuberculosisResultObservation"
-           });              
+           });                  
         addAnnotation
           (tuberculosisResultOrganizerEClass, 
            source, 
-           new String[] 
-           {
-             "constraints.validation.error", "TuberculosisResultOrganizerTemplateId TuberculosisResultOrganizerCode TuberculosisResultOrganizerCodeP TuberculosisResultOrganizerTuberculosisResultObservation",
+           new String[] {
+             "constraints.validation.error", "TuberculosisResultOrganizerTemplateId TuberculosisResultOrganizerCode TuberculosisResultOrganizerTuberculosisResultObservation",
              "templateId.root", "2.16.840.1.113883.10.20.15.3.21",
              "code.codeSystem", "2.16.840.1.113883.6.1",
-             "code.codeSystemName", "LOINC",
-             "constraints.validation.dependOn.TuberculosisResultOrganizerCode", "TuberculosisResultOrganizerCodeP"
+             "code.codeSystemName", "LOINC"
            });                
         addAnnotation
           (tuberculosisResultObservationEClass, 
            source, 
-           new String[] 
-           {
-             "constraints.validation.error", "TuberculosisResultObservationTemplateId TuberculosisResultObservationCode TuberculosisResultObservationCodeP",
+           new String[] {
+             "constraints.validation.error", "TuberculosisResultObservationTemplateId TuberculosisResultObservationCode",
              "templateId.root", "2.16.840.1.113883.10.20.15.3.13",
              "code.codeSystem", "2.16.840.1.113883.6.1",
-             "code.codeSystemName", "LOINC",
-             "constraints.validation.dependOn.TuberculosisResultObservationCode", "TuberculosisResultObservationCodeP"
-           });            
+             "code.codeSystemName", "LOINC"
+           });          
         addAnnotation
           (tuberculosisPHCRTreatmentInformationSectionEClass, 
            source, 
-           new String[] 
-           {
+           new String[] {
              "constraints.validation.error", "TuberculosisPHCRTreatmentInformationSectionTemplateId TuberculosisPHCRTreatmentInformationSectionTuberculosisTherapeuticRegimenAct",
              "templateId.root", "2.16.840.1.113883.10.20.15.2.8"
-           });          
+           });            
         addAnnotation
           (tuberculosisTherapeuticRegimenActEClass, 
            source, 
-           new String[] 
-           {
+           new String[] {
              "constraints.validation.error", "TuberculosisTherapeuticRegimenActTemplateId",
              "templateId.root", "2.16.840.1.113883.10.20.15.3.18",
              "constraints.validation.warning", "TuberculosisTherapeuticRegimenActTuberculosisTreatmentGivenSubstanceAdministration",
              "constraints.validation.info", "TuberculosisTherapeuticRegimenActTuberculosisTreatmentNotGivenSubstanceAdministration"
-           });              
+           });                  
         addAnnotation
           (tuberculosisTreatmentGivenSubstanceAdministrationEClass, 
            source, 
-           new String[] 
-           {
+           new String[] {
              "constraints.validation.error", "TuberculosisTreatmentGivenSubstanceAdministrationTemplateId",
              "templateId.root", "2.16.840.1.113883.10.20.15.3.16"
            });      
         addAnnotation
           (tuberculosisTreatmentNotGivenSubstanceAdministrationEClass, 
            source, 
-           new String[] 
-           {
+           new String[] {
              "constraints.validation.error", "TuberculosisTreatmentNotGivenSubstanceAdministrationTemplateId",
              "templateId.root", "2.16.840.1.113883.10.20.15.3.19"
            });      
         addAnnotation
           (tuberculosisPHCRImmunizationSectionEClass, 
            source, 
-           new String[] 
-           {
+           new String[] {
              "constraints.validation.error", "TuberculosisPHCRImmunizationSectionTemplateId TuberculosisPHCRImmunizationSectionTuberculosisImmunizationActivitySubstanceAdministration",
              "templateId.root", "2.16.840.1.113883.10.20.15.2.23"
-           });          
+           });            
         addAnnotation
           (tuberculosisImmunizationActivitySubstanceAdministrationEClass, 
            source, 
-           new String[] 
-           {
+           new String[] {
              "constraints.validation.error", "TuberculosisImmunizationActivitySubstanceAdministrationTemplateId",
              "templateId.root", "2.16.840.1.113883.10.20.15.3.60"
            });      
         addAnnotation
           (tuberculosisImmunizationManufacturedProductEClass, 
            source, 
-           new String[] 
-           {
+           new String[] {
              "constraints.validation.error", "TuberculosisImmunizationManufacturedProductTemplateId",
              "templateId.root", "2.16.840.1.113883.10.20.15.3.61"
            }); 
@@ -1523,116 +1404,97 @@ public class TuberculosisPackageImpl extends EPackageImpl implements Tuberculosi
         addAnnotation
           (tuberculosisCaseReportEClass, 
            source, 
-           new String[] 
-           {
-           });                             
+           new String[] {
+           });                                        
         addAnnotation
           (tuberculosisPHCRSocialHistorySectionEClass, 
            source, 
-           new String[] 
-           {
-           });                                      
+           new String[] {
+           });                                                   
         addAnnotation
           (tuberculosisSocioBehavioralBooleanRiskFactorObservationEClass, 
            source, 
-           new String[] 
-           {
-           });                     
+           new String[] {
+           });                  
         addAnnotation
           (smokingStatusObservationEClass, 
            source, 
-           new String[] 
-           {
-           });                                     
+           new String[] {
+           });                                   
         addAnnotation
           (tuberculosisPHCRClinicalInformationSectionEClass, 
            source, 
-           new String[] 
-           {
-           });              
+           new String[] {
+           });                  
         addAnnotation
           (tuberculosisCaseObservationEClass, 
            source, 
-           new String[] 
-           {
-           });                    
+           new String[] {
+           });                      
         addAnnotation
           (tuberculosisSignsAndSymptomsObservationEClass, 
            source, 
-           new String[] 
-           {
-           });                               
+           new String[] {
+           });                                   
         addAnnotation
           (tuberculosisRelevantMedicalConditionHistoryObservationEClass, 
            source, 
-           new String[] 
-           {
-           });             
+           new String[] {
+           });                
         addAnnotation
           (tuberculosisRelevantMedicalConditionProblemObservationEClass, 
            source, 
-           new String[] 
-           {
-           });            
+           new String[] {
+           });          
         addAnnotation
           (tuberculosisPHCRRelevantDxTestsSectionEClass, 
            source, 
-           new String[] 
-           {
-           });              
+           new String[] {
+           });                  
         addAnnotation
           (tuberculosisResultOrganizerEClass, 
            source, 
-           new String[] 
-           {
+           new String[] {
            });                
         addAnnotation
           (tuberculosisResultObservationEClass, 
            source, 
-           new String[] 
-           {
-           });            
+           new String[] {
+           });          
         addAnnotation
           (tuberculosisPHCRTreatmentInformationSectionEClass, 
            source, 
-           new String[] 
-           {
-           });          
+           new String[] {
+           });            
         addAnnotation
           (tuberculosisTherapeuticRegimenActEClass, 
            source, 
-           new String[] 
-           {
-           });              
+           new String[] {
+           });                  
         addAnnotation
           (tuberculosisTreatmentGivenSubstanceAdministrationEClass, 
            source, 
-           new String[] 
-           {
+           new String[] {
            });      
         addAnnotation
           (tuberculosisTreatmentNotGivenSubstanceAdministrationEClass, 
            source, 
-           new String[] 
-           {
+           new String[] {
            });      
         addAnnotation
           (tuberculosisPHCRImmunizationSectionEClass, 
            source, 
-           new String[] 
-           {
-           });          
+           new String[] {
+           });            
         addAnnotation
           (tuberculosisImmunizationActivitySubstanceAdministrationEClass, 
            source, 
-           new String[] 
-           {
+           new String[] {
            });      
         addAnnotation
           (tuberculosisImmunizationManufacturedProductEClass, 
            source, 
-           new String[] 
-           {
+           new String[] {
            });
     }
 

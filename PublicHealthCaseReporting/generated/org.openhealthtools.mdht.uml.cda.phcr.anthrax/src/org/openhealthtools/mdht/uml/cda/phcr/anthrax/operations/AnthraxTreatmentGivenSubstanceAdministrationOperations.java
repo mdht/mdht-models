@@ -73,6 +73,7 @@ public class AnthraxTreatmentGivenSubstanceAdministrationOperations extends Trea
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
+   * self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.15.3.38')
    * @param anthraxTreatmentGivenSubstanceAdministration The receiving '<em><b>Treatment Given Substance Administration</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -81,8 +82,8 @@ public class AnthraxTreatmentGivenSubstanceAdministrationOperations extends Trea
    */
 	
 	public static  boolean validateTreatmentGivenSubstanceAdministrationTemplateId(AnthraxTreatmentGivenSubstanceAdministration anthraxTreatmentGivenSubstanceAdministration, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
-    if (VALIDATE_TREATMENT_GIVEN_SUBSTANCE_ADMINISTRATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+    if (VALIDATE_TREATMENT_GIVEN_SUBSTANCE_ADMINISTRATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null)
+    {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(AnthraxPackage.Literals.ANTHRAX_TREATMENT_GIVEN_SUBSTANCE_ADMINISTRATION);
       try
@@ -103,10 +104,9 @@ public class AnthraxTreatmentGivenSubstanceAdministrationOperations extends Trea
             (Diagnostic.ERROR,
              AnthraxValidator.DIAGNOSTIC_SOURCE,
              AnthraxValidator.ANTHRAX_TREATMENT_GIVEN_SUBSTANCE_ADMINISTRATION__TREATMENT_GIVEN_SUBSTANCE_ADMINISTRATION_TEMPLATE_ID,
-             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "TreatmentGivenSubstanceAdministrationTemplateId", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(anthraxTreatmentGivenSubstanceAdministration, context) }),
+             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "validateTreatmentGivenSubstanceAdministrationTemplateId", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(anthraxTreatmentGivenSubstanceAdministration, context) }),
              new Object [] { anthraxTreatmentGivenSubstanceAdministration }));
       }
-       
       return false;
     }
     return true;

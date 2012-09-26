@@ -32,7 +32,6 @@ import org.openhealthtools.mdht.uml.cda.phcr.operations.ResultOrganizerOperation
  * <p>
  * The following operations are supported:
  * <ul>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.phcr.chlamydiatrachomatis.chlamydiatrachomatisResultOrganizer#validateChlamydiatrachomatisResultOrganizerCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Chlamydiatrachomatis Result Organizer Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.phcr.chlamydiatrachomatis.chlamydiatrachomatisResultOrganizer#validateResultOrganizerTemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Result Organizer Template Id</em>}</li>
  * </ul>
  * </p>
@@ -76,6 +75,7 @@ public class chlamydiatrachomatisResultOrganizerOperations extends ResultOrganiz
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
+   * (self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined())
    * @param chlamydiatrachomatisResultOrganizer The receiving '<em><b>chlamydiatrachomatis Result Organizer</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -85,8 +85,8 @@ public class chlamydiatrachomatisResultOrganizerOperations extends ResultOrganiz
   
   public static  boolean validateChlamydiatrachomatisResultOrganizerCode(chlamydiatrachomatisResultOrganizer chlamydiatrachomatisResultOrganizer, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
-  	  
-    if (VALIDATE_CHLAMYDIATRACHOMATIS_RESULT_ORGANIZER_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+    if (VALIDATE_CHLAMYDIATRACHOMATIS_RESULT_ORGANIZER_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null)
+    {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(ChlamydiatrachomatisPackage.Literals.CHLAMYDIATRACHOMATIS_RESULT_ORGANIZER);
       try
@@ -107,10 +107,9 @@ public class chlamydiatrachomatisResultOrganizerOperations extends ResultOrganiz
             (Diagnostic.ERROR,
              ChlamydiatrachomatisValidator.DIAGNOSTIC_SOURCE,
              ChlamydiatrachomatisValidator.CHLAMYDIATRACHOMATIS_RESULT_ORGANIZER__CHLAMYDIATRACHOMATIS_RESULT_ORGANIZER_CODE,
-             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "ChlamydiatrachomatisResultOrganizerCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(chlamydiatrachomatisResultOrganizer, context) }),
+             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "validateChlamydiatrachomatisResultOrganizerCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(chlamydiatrachomatisResultOrganizer, context) }),
              new Object [] { chlamydiatrachomatisResultOrganizer }));
       }
-       
       return false;
     }
     return true;
@@ -142,6 +141,7 @@ public class chlamydiatrachomatisResultOrganizerOperations extends ResultOrganiz
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
+   * self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.15.3.114')
    * @param chlamydiatrachomatisResultOrganizer The receiving '<em><b>chlamydiatrachomatis Result Organizer</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -151,8 +151,8 @@ public class chlamydiatrachomatisResultOrganizerOperations extends ResultOrganiz
   
   public static  boolean validateResultOrganizerTemplateId(chlamydiatrachomatisResultOrganizer chlamydiatrachomatisResultOrganizer, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
-  	  
-    if (VALIDATE_RESULT_ORGANIZER_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+    if (VALIDATE_RESULT_ORGANIZER_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null)
+    {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(ChlamydiatrachomatisPackage.Literals.CHLAMYDIATRACHOMATIS_RESULT_ORGANIZER);
       try
@@ -173,10 +173,9 @@ public class chlamydiatrachomatisResultOrganizerOperations extends ResultOrganiz
             (Diagnostic.ERROR,
              ChlamydiatrachomatisValidator.DIAGNOSTIC_SOURCE,
              ChlamydiatrachomatisValidator.CHLAMYDIATRACHOMATIS_RESULT_ORGANIZER__RESULT_ORGANIZER_TEMPLATE_ID,
-             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "ResultOrganizerTemplateId", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(chlamydiatrachomatisResultOrganizer, context) }),
+             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "validateResultOrganizerTemplateId", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(chlamydiatrachomatisResultOrganizer, context) }),
              new Object [] { chlamydiatrachomatisResultOrganizer }));
       }
-       
       return false;
     }
     return true;

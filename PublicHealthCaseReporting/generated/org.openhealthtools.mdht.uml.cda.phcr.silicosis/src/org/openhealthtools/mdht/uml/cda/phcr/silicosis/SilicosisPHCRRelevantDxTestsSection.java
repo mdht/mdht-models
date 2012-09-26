@@ -36,6 +36,7 @@ public interface SilicosisPHCRRelevantDxTestsSection extends PhcrRelevantDxTests
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
+   * self.entry->exists(entry : cda::Entry | not entry.observation.oclIsUndefined() and entry.observation.oclIsKindOf(silicosis::SilicosisImagingObservation) and entry.typeCode = vocab::x_ActRelationshipEntry::DRIV)
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
    * <!-- end-model-doc -->
@@ -47,23 +48,12 @@ public interface SilicosisPHCRRelevantDxTestsSection extends PhcrRelevantDxTests
   /**
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
+   * <!-- begin-model-doc -->
+   * self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(silicosis::SilicosisImagingObservation)).oclAsType(silicosis::SilicosisImagingObservation)
+   * <!-- end-model-doc -->
    * @model kind="operation" required="true" ordered="false"
    *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(silicosis::SilicosisImagingObservation)).oclAsType(silicosis::SilicosisImagingObservation)'"
    * @generated
    */
   EList<SilicosisImagingObservation> getSilicosisImagingObservations();
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public SilicosisPHCRRelevantDxTestsSection init();
-
-  /**
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    public SilicosisPHCRRelevantDxTestsSection init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // SilicosisPHCRRelevantDxTestsSection

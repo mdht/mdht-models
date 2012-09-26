@@ -26,8 +26,6 @@ import org.openhealthtools.mdht.uml.cda.phcr.streppneumo.StrepPneumoPackage;
 
 import org.openhealthtools.mdht.uml.cda.phcr.streppneumo.operations.StrepPneumoImmunizationProductOperations;
 
-import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
-
 /**
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Immunization Product</b></em>'.
@@ -39,41 +37,41 @@ import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
  */
 public class StrepPneumoImmunizationProductImpl extends ProductImpl implements StrepPneumoImmunizationProduct {
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	protected StrepPneumoImmunizationProductImpl() {
-    super();
-  }
+		super();
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	@Override
 	protected EClass eStaticClass() {
-    return StrepPneumoPackage.Literals.STREP_PNEUMO_IMMUNIZATION_PRODUCT;
-  }
+		return StrepPneumoPackage.Literals.STREP_PNEUMO_IMMUNIZATION_PRODUCT;
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public boolean validateStrepPneumoImmunizationProductTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return StrepPneumoImmunizationProductOperations.validateStrepPneumoImmunizationProductTemplateId(this, diagnostics, context);
-  }
+		return StrepPneumoImmunizationProductOperations.validateStrepPneumoImmunizationProductTemplateId(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public StrepPneumoImmunizationProduct init() {
-      return Initializer.Util.init(this);
-  }
+	    return Initializer.Util.init(this);
+	}
 
   /**
      * <!-- begin-user-doc -->

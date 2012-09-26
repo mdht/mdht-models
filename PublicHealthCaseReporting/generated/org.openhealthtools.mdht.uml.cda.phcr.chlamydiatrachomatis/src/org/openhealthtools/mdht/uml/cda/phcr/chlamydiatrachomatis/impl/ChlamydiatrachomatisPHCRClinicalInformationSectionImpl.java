@@ -27,8 +27,6 @@ import org.openhealthtools.mdht.uml.cda.phcr.chlamydiatrachomatis.operations.Chl
 
 import org.openhealthtools.mdht.uml.cda.phcr.impl.PhcrClinicalInformationSectionImpl;
 
-import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
-
 /**
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>PHCR Clinical Information Section</b></em>'.
@@ -85,23 +83,4 @@ public class ChlamydiatrachomatisPHCRClinicalInformationSectionImpl extends Phcr
 	public boolean validatePhcrClinicalInformationSectionTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
     return ChlamydiatrachomatisPHCRClinicalInformationSectionOperations.validatePhcrClinicalInformationSectionTemplateId(this, diagnostics, context);
   }
-
-	/**
-   * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-   * @generated
-   */
-	public ChlamydiatrachomatisPHCRClinicalInformationSection init() {
-      return Initializer.Util.init(this);
-  }
-
-  /**
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    public ChlamydiatrachomatisPHCRClinicalInformationSection init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-        Initializer.Util.init(this, initializers);
-        return this;
-    }
 } //ChlamydiatrachomatisPHCRClinicalInformationSectionImpl

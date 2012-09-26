@@ -10,7 +10,6 @@
  *******************************************************************************/
 package org.openhealthtools.mdht.uml.cda.phcr.operations;
 
-import java.util.Collection;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.BasicDiagnostic;
@@ -36,10 +35,8 @@ import org.openhealthtools.mdht.uml.cda.phcr.util.PhcrValidator;
  *   <li>{@link org.openhealthtools.mdht.uml.cda.phcr.MostRecentTimeArrivedInUSAObservation#validateMostRecentTimeArrivedInUSAObservationTemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Most Recent Time Arrived In USA Observation Template Id</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.phcr.MostRecentTimeArrivedInUSAObservation#validateMostRecentTimeArrivedInUSAObservationClassCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Most Recent Time Arrived In USA Observation Class Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.phcr.MostRecentTimeArrivedInUSAObservation#validateMostRecentTimeArrivedInUSAObservationMoodCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Most Recent Time Arrived In USA Observation Mood Code</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.phcr.MostRecentTimeArrivedInUSAObservation#validateMostRecentTimeArrivedInUSAObservationCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Most Recent Time Arrived In USA Observation Code P</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.phcr.MostRecentTimeArrivedInUSAObservation#validateMostRecentTimeArrivedInUSAObservationCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Most Recent Time Arrived In USA Observation Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.phcr.MostRecentTimeArrivedInUSAObservation#validateMostRecentTimeArrivedInUSAObservationStatusCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Most Recent Time Arrived In USA Observation Status Code</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.phcr.MostRecentTimeArrivedInUSAObservation#validateMostRecentTimeArrivedInUSAObservationStatusCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Most Recent Time Arrived In USA Observation Status Code P</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.phcr.MostRecentTimeArrivedInUSAObservation#validateMostRecentTimeArrivedInUSAObservationValue(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Most Recent Time Arrived In USA Observation Value</em>}</li>
  * </ul>
  * </p>
@@ -80,6 +77,7 @@ public class MostRecentTimeArrivedInUSAObservationOperations extends ClinicalSta
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
+   * self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.15.3.6')
    * @param mostRecentTimeArrivedInUSAObservation The receiving '<em><b>Most Recent Time Arrived In USA Observation</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -87,8 +85,8 @@ public class MostRecentTimeArrivedInUSAObservationOperations extends ClinicalSta
    * @generated
    */
 	public static  boolean validateMostRecentTimeArrivedInUSAObservationTemplateId(MostRecentTimeArrivedInUSAObservation mostRecentTimeArrivedInUSAObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
-    if (VALIDATE_MOST_RECENT_TIME_ARRIVED_IN_USA_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+    if (VALIDATE_MOST_RECENT_TIME_ARRIVED_IN_USA_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null)
+    {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(PhcrPackage.Literals.MOST_RECENT_TIME_ARRIVED_IN_USA_OBSERVATION);
       try
@@ -109,10 +107,9 @@ public class MostRecentTimeArrivedInUSAObservationOperations extends ClinicalSta
             (Diagnostic.ERROR,
              PhcrValidator.DIAGNOSTIC_SOURCE,
              PhcrValidator.MOST_RECENT_TIME_ARRIVED_IN_USA_OBSERVATION__MOST_RECENT_TIME_ARRIVED_IN_USA_OBSERVATION_TEMPLATE_ID,
-             PhcrPlugin.INSTANCE.getString("MostRecentTimeArrivedInUSAObservationTemplateId"),
+             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "validateMostRecentTimeArrivedInUSAObservationTemplateId", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(mostRecentTimeArrivedInUSAObservation, context) }),
              new Object [] { mostRecentTimeArrivedInUSAObservation }));
       }
-       
       return false;
     }
     return true;
@@ -142,6 +139,7 @@ public class MostRecentTimeArrivedInUSAObservationOperations extends ClinicalSta
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
+   * self.classCode=vocab::ActClassObservation::OBS
    * @param mostRecentTimeArrivedInUSAObservation The receiving '<em><b>Most Recent Time Arrived In USA Observation</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -149,8 +147,8 @@ public class MostRecentTimeArrivedInUSAObservationOperations extends ClinicalSta
    * @generated
    */
 	public static  boolean validateMostRecentTimeArrivedInUSAObservationClassCode(MostRecentTimeArrivedInUSAObservation mostRecentTimeArrivedInUSAObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
-    if (VALIDATE_MOST_RECENT_TIME_ARRIVED_IN_USA_OBSERVATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+    if (VALIDATE_MOST_RECENT_TIME_ARRIVED_IN_USA_OBSERVATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null)
+    {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(PhcrPackage.Literals.MOST_RECENT_TIME_ARRIVED_IN_USA_OBSERVATION);
       try
@@ -171,10 +169,9 @@ public class MostRecentTimeArrivedInUSAObservationOperations extends ClinicalSta
             (Diagnostic.ERROR,
              PhcrValidator.DIAGNOSTIC_SOURCE,
              PhcrValidator.MOST_RECENT_TIME_ARRIVED_IN_USA_OBSERVATION__MOST_RECENT_TIME_ARRIVED_IN_USA_OBSERVATION_CLASS_CODE,
-             PhcrPlugin.INSTANCE.getString("MostRecentTimeArrivedInUSAObservationClassCode"),
+             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "validateMostRecentTimeArrivedInUSAObservationClassCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(mostRecentTimeArrivedInUSAObservation, context) }),
              new Object [] { mostRecentTimeArrivedInUSAObservation }));
       }
-       
       return false;
     }
     return true;
@@ -204,6 +201,7 @@ public class MostRecentTimeArrivedInUSAObservationOperations extends ClinicalSta
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
+   * self.moodCode=vocab::x_ActMoodDocumentObservation::EVN
    * @param mostRecentTimeArrivedInUSAObservation The receiving '<em><b>Most Recent Time Arrived In USA Observation</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -211,8 +209,8 @@ public class MostRecentTimeArrivedInUSAObservationOperations extends ClinicalSta
    * @generated
    */
 	public static  boolean validateMostRecentTimeArrivedInUSAObservationMoodCode(MostRecentTimeArrivedInUSAObservation mostRecentTimeArrivedInUSAObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
-    if (VALIDATE_MOST_RECENT_TIME_ARRIVED_IN_USA_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+    if (VALIDATE_MOST_RECENT_TIME_ARRIVED_IN_USA_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null)
+    {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(PhcrPackage.Literals.MOST_RECENT_TIME_ARRIVED_IN_USA_OBSERVATION);
       try
@@ -233,10 +231,9 @@ public class MostRecentTimeArrivedInUSAObservationOperations extends ClinicalSta
             (Diagnostic.ERROR,
              PhcrValidator.DIAGNOSTIC_SOURCE,
              PhcrValidator.MOST_RECENT_TIME_ARRIVED_IN_USA_OBSERVATION__MOST_RECENT_TIME_ARRIVED_IN_USA_OBSERVATION_MOOD_CODE,
-             PhcrPlugin.INSTANCE.getString("MostRecentTimeArrivedInUSAObservationMoodCode"),
+             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "validateMostRecentTimeArrivedInUSAObservationMoodCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(mostRecentTimeArrivedInUSAObservation, context) }),
              new Object [] { mostRecentTimeArrivedInUSAObservation }));
       }
-       
       return false;
     }
     return true;
@@ -267,6 +264,7 @@ public class MostRecentTimeArrivedInUSAObservationOperations extends ClinicalSta
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
+   * (self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined())
    * @param mostRecentTimeArrivedInUSAObservation The receiving '<em><b>Most Recent Time Arrived In USA Observation</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -275,8 +273,8 @@ public class MostRecentTimeArrivedInUSAObservationOperations extends ClinicalSta
    */
 	
 	public static  boolean validateMostRecentTimeArrivedInUSAObservationCodeP(MostRecentTimeArrivedInUSAObservation mostRecentTimeArrivedInUSAObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
-    if (VALIDATE_MOST_RECENT_TIME_ARRIVED_IN_USA_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+    if (VALIDATE_MOST_RECENT_TIME_ARRIVED_IN_USA_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null)
+    {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(PhcrPackage.Literals.MOST_RECENT_TIME_ARRIVED_IN_USA_OBSERVATION);
       try
@@ -297,22 +295,9 @@ public class MostRecentTimeArrivedInUSAObservationOperations extends ClinicalSta
             (Diagnostic.ERROR,
              PhcrValidator.DIAGNOSTIC_SOURCE,
              PhcrValidator.MOST_RECENT_TIME_ARRIVED_IN_USA_OBSERVATION__MOST_RECENT_TIME_ARRIVED_IN_USA_OBSERVATION_CODE_P,
-             PhcrPlugin.INSTANCE.getString("MostRecentTimeArrivedInUSAObservationCodeP"),
+             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "validateMostRecentTimeArrivedInUSAObservationCodeP", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(mostRecentTimeArrivedInUSAObservation, context) }),
              new Object [] { mostRecentTimeArrivedInUSAObservation }));
       }
-      
-      if (context != null) {
-        // generate a pass token for my dependent constraints to short-circuit or filter results
-        @SuppressWarnings("unchecked")
-        Collection<Object> passToken = (Collection<Object>) context.get("org.openhealthtools.mdht.uml.cda.phcr.MostRecentTimeArrivedInUSAObservationCodeP");
-        if (passToken == null) {
-          // anticipate a reasonably healthy model
-          passToken = new java.util.ArrayList<Object>(3);
-          context.put("org.openhealthtools.mdht.uml.cda.phcr.MostRecentTimeArrivedInUSAObservationCodeP", passToken);
-        }
-        passToken.add(mostRecentTimeArrivedInUSAObservation);
-      }
-       
       return false;
     }
     return true;
@@ -322,6 +307,9 @@ public class MostRecentTimeArrivedInUSAObservationOperations extends ClinicalSta
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
+   * (self.statusCode.oclIsUndefined() or self.statusCode.isNullFlavorUndefined()) implies (not self.statusCode.oclIsUndefined() and self.statusCode.oclIsKindOf(datatypes::CS) and 
+   * let value : datatypes::CS = self.statusCode.oclAsType(datatypes::CS) in 
+   * value.code = 'completed')
    * @param mostRecentTimeArrivedInUSAObservation The receiving '<em><b>Most Recent Time Arrived In USA Observation</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -329,8 +317,8 @@ public class MostRecentTimeArrivedInUSAObservationOperations extends ClinicalSta
    * @generated
    */
 	public static  boolean validateMostRecentTimeArrivedInUSAObservationStatusCode(MostRecentTimeArrivedInUSAObservation mostRecentTimeArrivedInUSAObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
-    if (VALIDATE_MOST_RECENT_TIME_ARRIVED_IN_USA_OBSERVATION_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+    if (VALIDATE_MOST_RECENT_TIME_ARRIVED_IN_USA_OBSERVATION_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null)
+    {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(PhcrPackage.Literals.MOST_RECENT_TIME_ARRIVED_IN_USA_OBSERVATION);
       try
@@ -351,10 +339,9 @@ public class MostRecentTimeArrivedInUSAObservationOperations extends ClinicalSta
             (Diagnostic.ERROR,
              PhcrValidator.DIAGNOSTIC_SOURCE,
              PhcrValidator.MOST_RECENT_TIME_ARRIVED_IN_USA_OBSERVATION__MOST_RECENT_TIME_ARRIVED_IN_USA_OBSERVATION_STATUS_CODE,
-             PhcrPlugin.INSTANCE.getString("MostRecentTimeArrivedInUSAObservationStatusCode"),
+             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "validateMostRecentTimeArrivedInUSAObservationStatusCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(mostRecentTimeArrivedInUSAObservation, context) }),
              new Object [] { mostRecentTimeArrivedInUSAObservation }));
       }
-       
       return false;
     }
     return true;
@@ -364,6 +351,7 @@ public class MostRecentTimeArrivedInUSAObservationOperations extends ClinicalSta
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
+   * (self.statusCode.oclIsUndefined() or self.statusCode.isNullFlavorUndefined()) implies (not self.statusCode.oclIsUndefined())
    * @param mostRecentTimeArrivedInUSAObservation The receiving '<em><b>Most Recent Time Arrived In USA Observation</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -372,8 +360,8 @@ public class MostRecentTimeArrivedInUSAObservationOperations extends ClinicalSta
    */
 	
 	public static  boolean validateMostRecentTimeArrivedInUSAObservationStatusCodeP(MostRecentTimeArrivedInUSAObservation mostRecentTimeArrivedInUSAObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
-    if (VALIDATE_MOST_RECENT_TIME_ARRIVED_IN_USA_OBSERVATION_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+    if (VALIDATE_MOST_RECENT_TIME_ARRIVED_IN_USA_OBSERVATION_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null)
+    {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(PhcrPackage.Literals.MOST_RECENT_TIME_ARRIVED_IN_USA_OBSERVATION);
       try
@@ -394,10 +382,9 @@ public class MostRecentTimeArrivedInUSAObservationOperations extends ClinicalSta
             (Diagnostic.ERROR,
              PhcrValidator.DIAGNOSTIC_SOURCE,
              PhcrValidator.MOST_RECENT_TIME_ARRIVED_IN_USA_OBSERVATION__MOST_RECENT_TIME_ARRIVED_IN_USA_OBSERVATION_STATUS_CODE_P,
-             PhcrPlugin.INSTANCE.getString("MostRecentTimeArrivedInUSAObservationStatusCodeP"),
+             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "validateMostRecentTimeArrivedInUSAObservationStatusCodeP", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(mostRecentTimeArrivedInUSAObservation, context) }),
              new Object [] { mostRecentTimeArrivedInUSAObservation }));
       }
-       
       return false;
     }
     return true;
@@ -407,6 +394,7 @@ public class MostRecentTimeArrivedInUSAObservationOperations extends ClinicalSta
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
+   * (self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (self.value->size() = 1 and self.value->forAll(element | element.oclIsTypeOf(datatypes::TS)))
    * @param mostRecentTimeArrivedInUSAObservation The receiving '<em><b>Most Recent Time Arrived In USA Observation</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -414,8 +402,8 @@ public class MostRecentTimeArrivedInUSAObservationOperations extends ClinicalSta
    * @generated
    */
 	public static  boolean validateMostRecentTimeArrivedInUSAObservationValue(MostRecentTimeArrivedInUSAObservation mostRecentTimeArrivedInUSAObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
-    if (VALIDATE_MOST_RECENT_TIME_ARRIVED_IN_USA_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+    if (VALIDATE_MOST_RECENT_TIME_ARRIVED_IN_USA_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null)
+    {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(PhcrPackage.Literals.MOST_RECENT_TIME_ARRIVED_IN_USA_OBSERVATION);
       try
@@ -436,10 +424,9 @@ public class MostRecentTimeArrivedInUSAObservationOperations extends ClinicalSta
             (Diagnostic.ERROR,
              PhcrValidator.DIAGNOSTIC_SOURCE,
              PhcrValidator.MOST_RECENT_TIME_ARRIVED_IN_USA_OBSERVATION__MOST_RECENT_TIME_ARRIVED_IN_USA_OBSERVATION_VALUE,
-             PhcrPlugin.INSTANCE.getString("MostRecentTimeArrivedInUSAObservationValue"),
+             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "validateMostRecentTimeArrivedInUSAObservationValue", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(mostRecentTimeArrivedInUSAObservation, context) }),
              new Object [] { mostRecentTimeArrivedInUSAObservation }));
       }
-       
       return false;
     }
     return true;
@@ -534,6 +521,9 @@ public class MostRecentTimeArrivedInUSAObservationOperations extends ClinicalSta
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
+   * (self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and 
+   * let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in 
+   * value.code = '55209-1' and value.codeSystem = '2.16.840.1.113883.6.1')
    * @param mostRecentTimeArrivedInUSAObservation The receiving '<em><b>Most Recent Time Arrived In USA Observation</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -541,14 +531,8 @@ public class MostRecentTimeArrivedInUSAObservationOperations extends ClinicalSta
    * @generated
    */
 	public static  boolean validateMostRecentTimeArrivedInUSAObservationCode(MostRecentTimeArrivedInUSAObservation mostRecentTimeArrivedInUSAObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
-    Object passToken = (context == null) ? null : context.get("org.openhealthtools.mdht.uml.cda.phcr.MostRecentTimeArrivedInUSAObservationCodeP");
-    if ((passToken instanceof Collection<?>) && ((Collection<?>) passToken).contains(mostRecentTimeArrivedInUSAObservation)) {
-      // I have a free pass to short-circuit
-      return true;
-    }
-  	  
-    if (VALIDATE_MOST_RECENT_TIME_ARRIVED_IN_USA_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+    if (VALIDATE_MOST_RECENT_TIME_ARRIVED_IN_USA_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null)
+    {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(PhcrPackage.Literals.MOST_RECENT_TIME_ARRIVED_IN_USA_OBSERVATION);
       try
@@ -569,10 +553,9 @@ public class MostRecentTimeArrivedInUSAObservationOperations extends ClinicalSta
             (Diagnostic.ERROR,
              PhcrValidator.DIAGNOSTIC_SOURCE,
              PhcrValidator.MOST_RECENT_TIME_ARRIVED_IN_USA_OBSERVATION__MOST_RECENT_TIME_ARRIVED_IN_USA_OBSERVATION_CODE,
-             PhcrPlugin.INSTANCE.getString("MostRecentTimeArrivedInUSAObservationCode"),
+             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "validateMostRecentTimeArrivedInUSAObservationCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(mostRecentTimeArrivedInUSAObservation, context) }),
              new Object [] { mostRecentTimeArrivedInUSAObservation }));
       }
-       
       return false;
     }
     return true;

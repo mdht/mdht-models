@@ -26,8 +26,6 @@ import org.openhealthtools.mdht.uml.cda.phcr.pertussis.PertussisSignsAndSymptoms
 
 import org.openhealthtools.mdht.uml.cda.phcr.pertussis.operations.PertussisSignsAndSymptomsObservationOperations;
 
-import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
-
 /**
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Signs And Symptoms Observation</b></em>'.
@@ -39,69 +37,71 @@ import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
  */
 public class PertussisSignsAndSymptomsObservationImpl extends SignsAndSymptomsObservationImpl implements PertussisSignsAndSymptomsObservation {
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	protected PertussisSignsAndSymptomsObservationImpl() {
-    super();
-  }
+		super();
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	@Override
 	protected EClass eStaticClass() {
-    return PertussisPackage.Literals.PERTUSSIS_SIGNS_AND_SYMPTOMS_OBSERVATION;
-  }
+		return PertussisPackage.Literals.PERTUSSIS_SIGNS_AND_SYMPTOMS_OBSERVATION;
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   public boolean validatePertussisSignsAndSymptomsObservationValueP(DiagnosticChain diagnostics, Map<Object, Object> context)
   {
-    return PertussisSignsAndSymptomsObservationOperations.validatePertussisSignsAndSymptomsObservationValueP(this, diagnostics, context);
-  }
+		return PertussisSignsAndSymptomsObservationOperations.validatePertussisSignsAndSymptomsObservationValueP(this, diagnostics, context);
+	}
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   public boolean validatePertussisSignsAndSymptomsObservationValue(DiagnosticChain diagnostics, Map<Object, Object> context)
   {
-    return PertussisSignsAndSymptomsObservationOperations.validatePertussisSignsAndSymptomsObservationValue(this, diagnostics, context);
-  }
+		return PertussisSignsAndSymptomsObservationOperations.validatePertussisSignsAndSymptomsObservationValue(this, diagnostics, context);
+	}
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	@Override
 	public boolean validateSignsAndSymptomsObservationTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return PertussisSignsAndSymptomsObservationOperations.validateSignsAndSymptomsObservationTemplateId(this, diagnostics, context);
-  }
+		return PertussisSignsAndSymptomsObservationOperations.validateSignsAndSymptomsObservationTemplateId(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
+	@Override
 	public PertussisSignsAndSymptomsObservation init() {
-      return Initializer.Util.init(this);
-  }
+	    return Initializer.Util.init(this);
+	}
 
   /**
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
      * @generated
      */
-    public PertussisSignsAndSymptomsObservation init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+    @Override
+	public PertussisSignsAndSymptomsObservation init(Iterable<? extends Initializer<? extends EObject>> initializers) {
         Initializer.Util.init(this, initializers);
         return this;
     }

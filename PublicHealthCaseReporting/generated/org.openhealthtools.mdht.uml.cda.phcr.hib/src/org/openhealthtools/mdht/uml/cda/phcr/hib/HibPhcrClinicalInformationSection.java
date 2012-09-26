@@ -10,10 +10,13 @@
  *******************************************************************************/
 package org.openhealthtools.mdht.uml.cda.phcr.hib;
 
+import java.lang.Iterable;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
 
+import org.eclipse.emf.ecore.EObject;
+import org.openhealthtools.mdht.emf.runtime.util.Initializer;
 import org.openhealthtools.mdht.uml.cda.phcr.PhcrClinicalInformationSection;
 
 /**
@@ -23,7 +26,7 @@ import org.openhealthtools.mdht.uml.cda.phcr.PhcrClinicalInformationSection;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.phcr.hib.HibPackage#getHibPhcrClinicalInformationSection()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation templateId.root='2.16.840.1.113883.10.20.15.2.57' constraints.validation.error='HibPhcrClinicalInformationSection TemplateId HibPhcrClinicalInformationSection HibCaseObservation'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='HibPhcrClinicalInformationSection TemplateId HibPhcrClinicalInformationSection HibCaseObservation' templateId.root='2.16.840.1.113883.10.20.15.2.57'"
  * @generated
  */
 public interface HibPhcrClinicalInformationSection extends PhcrClinicalInformationSection {
@@ -44,10 +47,10 @@ public interface HibPhcrClinicalInformationSection extends PhcrClinicalInformati
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(hib::HibCaseObservation))->asSequence()->first().oclAsType(hib::HibCaseObservation)
+	 * self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(hib::HibCaseObservation))->asSequence()->any(true).oclAsType(hib::HibCaseObservation)
 	 * <!-- end-model-doc -->
 	 * @model kind="operation" required="true" ordered="false"
-	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(hib::HibCaseObservation))->asSequence()->first().oclAsType(hib::HibCaseObservation)'"
+	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(hib::HibCaseObservation))->asSequence()->any(true).oclAsType(hib::HibCaseObservation)'"
 	 * @generated
 	 */
 	HibCaseObservation getHibCaseObservation();
@@ -58,4 +61,11 @@ public interface HibPhcrClinicalInformationSection extends PhcrClinicalInformati
 	 * @generated
 	 */
 	public HibPhcrClinicalInformationSection init();
+
+	/**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    public HibPhcrClinicalInformationSection init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // HibPhcrClinicalInformationSection

@@ -44,7 +44,6 @@ import org.openhealthtools.mdht.uml.cda.phcr.util.PhcrValidator;
  *   <li>{@link org.openhealthtools.mdht.uml.cda.phcr.PhcrClinicalInformationSection#validatePhcrClinicalInformationSectionPatientConditionConstraint(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Phcr Clinical Information Section Patient Condition Constraint</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.phcr.PhcrClinicalInformationSection#validatePhcrClinicalInformationSectionTemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Phcr Clinical Information Section Template Id</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.phcr.PhcrClinicalInformationSection#validatePhcrClinicalInformationSectionCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Phcr Clinical Information Section Code</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.phcr.PhcrClinicalInformationSection#validatePhcrClinicalInformationSectionCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Phcr Clinical Information Section Code P</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.phcr.PhcrClinicalInformationSection#validatePhcrClinicalInformationSectionTitle(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Phcr Clinical Information Section Title</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.phcr.PhcrClinicalInformationSection#validatePhcrClinicalInformationSectionText(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Phcr Clinical Information Section Text</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.phcr.PhcrClinicalInformationSection#validatePhcrClinicalInformationSectionCaseObservation(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Phcr Clinical Information Section Case Observation</em>}</li>
@@ -94,6 +93,7 @@ public class PhcrClinicalInformationSectionOperations extends SectionOperations 
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
+   * self.getObservations()->exists(obs3 : cda::Observation | obs3.oclIsKindOf(phcr::PatientConditionAliveObservation) and not self.getObservations()->exists(obs4 : cda::Observation | obs4.oclIsKindOf(phcr::PatientConditionDeceasedObservation))) or self.getObservations()->exists(obs1 : cda::Observation | obs1.oclIsKindOf(phcr::PatientConditionDeceasedObservation) and not self.getObservations()->exists(obs2 : cda::Observation | obs2.oclIsKindOf(phcr::PatientConditionAliveObservation))) or self.getObservations()->forAll(obs : cda::Observation | not obs.oclIsKindOf(phcr::PatientConditionAliveObservation) and not obs.oclIsKindOf(phcr::PatientConditionDeceasedObservation))
    * @param phcrClinicalInformationSection The receiving '<em><b>Clinical Information Section</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -101,8 +101,8 @@ public class PhcrClinicalInformationSectionOperations extends SectionOperations 
    * @generated
    */
 	public static  boolean validatePhcrClinicalInformationSectionPatientConditionConstraint(PhcrClinicalInformationSection phcrClinicalInformationSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
-    if (VALIDATE_PHCR_CLINICAL_INFORMATION_SECTION_PATIENT_CONDITION_CONSTRAINT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+    if (VALIDATE_PHCR_CLINICAL_INFORMATION_SECTION_PATIENT_CONDITION_CONSTRAINT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null)
+    {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(PhcrPackage.Literals.PHCR_CLINICAL_INFORMATION_SECTION);
       try
@@ -123,10 +123,9 @@ public class PhcrClinicalInformationSectionOperations extends SectionOperations 
             (Diagnostic.ERROR,
              PhcrValidator.DIAGNOSTIC_SOURCE,
              PhcrValidator.PHCR_CLINICAL_INFORMATION_SECTION__PHCR_CLINICAL_INFORMATION_SECTION_PATIENT_CONDITION_CONSTRAINT,
-             PhcrPlugin.INSTANCE.getString("PhcrClinicalInformationSectionPatientConditionConstraint"),
+             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "validatePhcrClinicalInformationSectionPatientConditionConstraint", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(phcrClinicalInformationSection, context) }),
              new Object [] { phcrClinicalInformationSection }));
       }
-       
       return false;
     }
     return true;
@@ -156,6 +155,7 @@ public class PhcrClinicalInformationSectionOperations extends SectionOperations 
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
+   * self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.15.2.1')
    * @param phcrClinicalInformationSection The receiving '<em><b>Clinical Information Section</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -163,8 +163,8 @@ public class PhcrClinicalInformationSectionOperations extends SectionOperations 
    * @generated
    */
 	public static  boolean validatePhcrClinicalInformationSectionTemplateId(PhcrClinicalInformationSection phcrClinicalInformationSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
-    if (VALIDATE_PHCR_CLINICAL_INFORMATION_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+    if (VALIDATE_PHCR_CLINICAL_INFORMATION_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null)
+    {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(PhcrPackage.Literals.PHCR_CLINICAL_INFORMATION_SECTION);
       try
@@ -185,10 +185,9 @@ public class PhcrClinicalInformationSectionOperations extends SectionOperations 
             (Diagnostic.ERROR,
              PhcrValidator.DIAGNOSTIC_SOURCE,
              PhcrValidator.PHCR_CLINICAL_INFORMATION_SECTION__PHCR_CLINICAL_INFORMATION_SECTION_TEMPLATE_ID,
-             PhcrPlugin.INSTANCE.getString("PhcrClinicalInformationSectionTemplateId"),
+             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "validatePhcrClinicalInformationSectionTemplateId", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(phcrClinicalInformationSection, context) }),
              new Object [] { phcrClinicalInformationSection }));
       }
-       
       return false;
     }
     return true;
@@ -220,6 +219,9 @@ public class PhcrClinicalInformationSectionOperations extends SectionOperations 
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
+   * (self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and 
+   * let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in 
+   * value.code = '55752-0' and value.codeSystem = '2.16.840.1.113883.6.1')
    * @param phcrClinicalInformationSection The receiving '<em><b>Clinical Information Section</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -227,8 +229,8 @@ public class PhcrClinicalInformationSectionOperations extends SectionOperations 
    * @generated
    */
 	public static  boolean validatePhcrClinicalInformationSectionCode(PhcrClinicalInformationSection phcrClinicalInformationSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
-    if (VALIDATE_PHCR_CLINICAL_INFORMATION_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+    if (VALIDATE_PHCR_CLINICAL_INFORMATION_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null)
+    {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(PhcrPackage.Literals.PHCR_CLINICAL_INFORMATION_SECTION);
       try
@@ -249,10 +251,9 @@ public class PhcrClinicalInformationSectionOperations extends SectionOperations 
             (Diagnostic.ERROR,
              PhcrValidator.DIAGNOSTIC_SOURCE,
              PhcrValidator.PHCR_CLINICAL_INFORMATION_SECTION__PHCR_CLINICAL_INFORMATION_SECTION_CODE,
-             PhcrPlugin.INSTANCE.getString("PhcrClinicalInformationSectionCode"),
+             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "validatePhcrClinicalInformationSectionCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(phcrClinicalInformationSection, context) }),
              new Object [] { phcrClinicalInformationSection }));
       }
-       
       return false;
     }
     return true;
@@ -283,6 +284,7 @@ public class PhcrClinicalInformationSectionOperations extends SectionOperations 
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
+   * (self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined())
    * @param phcrClinicalInformationSection The receiving '<em><b>Clinical Information Section</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -291,8 +293,8 @@ public class PhcrClinicalInformationSectionOperations extends SectionOperations 
    */
 	
 	public static  boolean validatePhcrClinicalInformationSectionCodeP(PhcrClinicalInformationSection phcrClinicalInformationSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
-    if (VALIDATE_PHCR_CLINICAL_INFORMATION_SECTION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+    if (VALIDATE_PHCR_CLINICAL_INFORMATION_SECTION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null)
+    {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(PhcrPackage.Literals.PHCR_CLINICAL_INFORMATION_SECTION);
       try
@@ -313,10 +315,9 @@ public class PhcrClinicalInformationSectionOperations extends SectionOperations 
             (Diagnostic.ERROR,
              PhcrValidator.DIAGNOSTIC_SOURCE,
              PhcrValidator.PHCR_CLINICAL_INFORMATION_SECTION__PHCR_CLINICAL_INFORMATION_SECTION_CODE_P,
-             PhcrPlugin.INSTANCE.getString("PhcrClinicalInformationSectionCodeP"),
+             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "validatePhcrClinicalInformationSectionCodeP", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(phcrClinicalInformationSection, context) }),
              new Object [] { phcrClinicalInformationSection }));
       }
-       
       return false;
     }
     return true;
@@ -346,6 +347,7 @@ public class PhcrClinicalInformationSectionOperations extends SectionOperations 
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
+   * (self.title.oclIsUndefined() or self.title.isNullFlavorUndefined()) implies (not self.title.oclIsUndefined() and self.title.getText() = 'Clinical Information')
    * @param phcrClinicalInformationSection The receiving '<em><b>Clinical Information Section</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -353,8 +355,8 @@ public class PhcrClinicalInformationSectionOperations extends SectionOperations 
    * @generated
    */
 	public static  boolean validatePhcrClinicalInformationSectionTitle(PhcrClinicalInformationSection phcrClinicalInformationSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
-    if (VALIDATE_PHCR_CLINICAL_INFORMATION_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+    if (VALIDATE_PHCR_CLINICAL_INFORMATION_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null)
+    {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(PhcrPackage.Literals.PHCR_CLINICAL_INFORMATION_SECTION);
       try
@@ -375,10 +377,9 @@ public class PhcrClinicalInformationSectionOperations extends SectionOperations 
             (Diagnostic.ERROR,
              PhcrValidator.DIAGNOSTIC_SOURCE,
              PhcrValidator.PHCR_CLINICAL_INFORMATION_SECTION__PHCR_CLINICAL_INFORMATION_SECTION_TITLE,
-             PhcrPlugin.INSTANCE.getString("PhcrClinicalInformationSectionTitle"),
+             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "validatePhcrClinicalInformationSectionTitle", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(phcrClinicalInformationSection, context) }),
              new Object [] { phcrClinicalInformationSection }));
       }
-       
       return false;
     }
     return true;
@@ -408,6 +409,7 @@ public class PhcrClinicalInformationSectionOperations extends SectionOperations 
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
+   * not self.text.oclIsUndefined()
    * @param phcrClinicalInformationSection The receiving '<em><b>Clinical Information Section</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -415,8 +417,8 @@ public class PhcrClinicalInformationSectionOperations extends SectionOperations 
    * @generated
    */
 	public static  boolean validatePhcrClinicalInformationSectionText(PhcrClinicalInformationSection phcrClinicalInformationSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
-    if (VALIDATE_PHCR_CLINICAL_INFORMATION_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+    if (VALIDATE_PHCR_CLINICAL_INFORMATION_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null)
+    {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(PhcrPackage.Literals.PHCR_CLINICAL_INFORMATION_SECTION);
       try
@@ -437,10 +439,9 @@ public class PhcrClinicalInformationSectionOperations extends SectionOperations 
             (Diagnostic.ERROR,
              PhcrValidator.DIAGNOSTIC_SOURCE,
              PhcrValidator.PHCR_CLINICAL_INFORMATION_SECTION__PHCR_CLINICAL_INFORMATION_SECTION_TEXT,
-             PhcrPlugin.INSTANCE.getString("PhcrClinicalInformationSectionText"),
+             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "validatePhcrClinicalInformationSectionText", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(phcrClinicalInformationSection, context) }),
              new Object [] { phcrClinicalInformationSection }));
       }
-       
       return false;
     }
     return true;
@@ -470,6 +471,7 @@ public class PhcrClinicalInformationSectionOperations extends SectionOperations 
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
+   * self.entry->one(entry : cda::Entry | not entry.observation.oclIsUndefined() and entry.observation.oclIsKindOf(phcr::CaseObservation) and entry.typeCode = vocab::x_ActRelationshipEntry::DRIV)
    * @param phcrClinicalInformationSection The receiving '<em><b>Clinical Information Section</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -477,8 +479,8 @@ public class PhcrClinicalInformationSectionOperations extends SectionOperations 
    * @generated
    */
 	public static  boolean validatePhcrClinicalInformationSectionCaseObservation(PhcrClinicalInformationSection phcrClinicalInformationSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
-    if (VALIDATE_PHCR_CLINICAL_INFORMATION_SECTION_CASE_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+    if (VALIDATE_PHCR_CLINICAL_INFORMATION_SECTION_CASE_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null)
+    {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(PhcrPackage.Literals.PHCR_CLINICAL_INFORMATION_SECTION);
       try
@@ -499,10 +501,9 @@ public class PhcrClinicalInformationSectionOperations extends SectionOperations 
             (Diagnostic.ERROR,
              PhcrValidator.DIAGNOSTIC_SOURCE,
              PhcrValidator.PHCR_CLINICAL_INFORMATION_SECTION__PHCR_CLINICAL_INFORMATION_SECTION_CASE_OBSERVATION,
-             PhcrPlugin.INSTANCE.getString("PhcrClinicalInformationSectionCaseObservation"),
+             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "validatePhcrClinicalInformationSectionCaseObservation", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(phcrClinicalInformationSection, context) }),
              new Object [] { phcrClinicalInformationSection }));
       }
-       
       return false;
     }
     return true;
@@ -532,6 +533,7 @@ public class PhcrClinicalInformationSectionOperations extends SectionOperations 
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
+   * self.entry->one(entry : cda::Entry | not entry.observation.oclIsUndefined() and entry.observation.oclIsKindOf(phcr::PatientConditionAliveObservation) and entry.typeCode = vocab::x_ActRelationshipEntry::DRIV)
    * @param phcrClinicalInformationSection The receiving '<em><b>Clinical Information Section</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -539,8 +541,8 @@ public class PhcrClinicalInformationSectionOperations extends SectionOperations 
    * @generated
    */
 	public static  boolean validatePhcrClinicalInformationSectionPatientConditionAliveObservation(PhcrClinicalInformationSection phcrClinicalInformationSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
-    if (VALIDATE_PHCR_CLINICAL_INFORMATION_SECTION_PATIENT_CONDITION_ALIVE_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+    if (VALIDATE_PHCR_CLINICAL_INFORMATION_SECTION_PATIENT_CONDITION_ALIVE_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null)
+    {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(PhcrPackage.Literals.PHCR_CLINICAL_INFORMATION_SECTION);
       try
@@ -558,13 +560,12 @@ public class PhcrClinicalInformationSectionOperations extends SectionOperations 
       {
         diagnostics.add
           (new BasicDiagnostic
-            (Diagnostic.INFO,
+            (Diagnostic.ERROR,
              PhcrValidator.DIAGNOSTIC_SOURCE,
              PhcrValidator.PHCR_CLINICAL_INFORMATION_SECTION__PHCR_CLINICAL_INFORMATION_SECTION_PATIENT_CONDITION_ALIVE_OBSERVATION,
-             PhcrPlugin.INSTANCE.getString("PhcrClinicalInformationSectionPatientConditionAliveObservation"),
+             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "validatePhcrClinicalInformationSectionPatientConditionAliveObservation", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(phcrClinicalInformationSection, context) }),
              new Object [] { phcrClinicalInformationSection }));
       }
-       
       return false;
     }
     return true;
@@ -594,6 +595,7 @@ public class PhcrClinicalInformationSectionOperations extends SectionOperations 
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
+   * self.entry->one(entry : cda::Entry | not entry.observation.oclIsUndefined() and entry.observation.oclIsKindOf(phcr::PatientConditionDeceasedObservation) and entry.typeCode = vocab::x_ActRelationshipEntry::DRIV)
    * @param phcrClinicalInformationSection The receiving '<em><b>Clinical Information Section</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -601,8 +603,8 @@ public class PhcrClinicalInformationSectionOperations extends SectionOperations 
    * @generated
    */
 	public static  boolean validatePhcrClinicalInformationSectionPatientConditionDeceasedObservation(PhcrClinicalInformationSection phcrClinicalInformationSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
-    if (VALIDATE_PHCR_CLINICAL_INFORMATION_SECTION_PATIENT_CONDITION_DECEASED_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+    if (VALIDATE_PHCR_CLINICAL_INFORMATION_SECTION_PATIENT_CONDITION_DECEASED_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null)
+    {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(PhcrPackage.Literals.PHCR_CLINICAL_INFORMATION_SECTION);
       try
@@ -620,13 +622,12 @@ public class PhcrClinicalInformationSectionOperations extends SectionOperations 
       {
         diagnostics.add
           (new BasicDiagnostic
-            (Diagnostic.INFO,
+            (Diagnostic.ERROR,
              PhcrValidator.DIAGNOSTIC_SOURCE,
              PhcrValidator.PHCR_CLINICAL_INFORMATION_SECTION__PHCR_CLINICAL_INFORMATION_SECTION_PATIENT_CONDITION_DECEASED_OBSERVATION,
-             PhcrPlugin.INSTANCE.getString("PhcrClinicalInformationSectionPatientConditionDeceasedObservation"),
+             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "validatePhcrClinicalInformationSectionPatientConditionDeceasedObservation", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(phcrClinicalInformationSection, context) }),
              new Object [] { phcrClinicalInformationSection }));
       }
-       
       return false;
     }
     return true;
@@ -657,6 +658,7 @@ public class PhcrClinicalInformationSectionOperations extends SectionOperations 
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
+   * self.entry->exists(entry : cda::Entry | not entry.observation.oclIsUndefined() and entry.observation.oclIsKindOf(phcr::PhcrRelevantMedicalConditionHistoryObservation) and entry.typeCode = vocab::x_ActRelationshipEntry::DRIV)
    * @param phcrClinicalInformationSection The receiving '<em><b>Clinical Information Section</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -665,8 +667,8 @@ public class PhcrClinicalInformationSectionOperations extends SectionOperations 
    */
 	
 	public static  boolean validatePhcrClinicalInformationSectionPhcrRelevantMedicalConditionHistoryObservation(PhcrClinicalInformationSection phcrClinicalInformationSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
-    if (VALIDATE_PHCR_CLINICAL_INFORMATION_SECTION_PHCR_RELEVANT_MEDICAL_CONDITION_HISTORY_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+    if (VALIDATE_PHCR_CLINICAL_INFORMATION_SECTION_PHCR_RELEVANT_MEDICAL_CONDITION_HISTORY_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null)
+    {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(PhcrPackage.Literals.PHCR_CLINICAL_INFORMATION_SECTION);
       try
@@ -684,13 +686,12 @@ public class PhcrClinicalInformationSectionOperations extends SectionOperations 
       {
         diagnostics.add
           (new BasicDiagnostic
-            (Diagnostic.WARNING,
+            (Diagnostic.ERROR,
              PhcrValidator.DIAGNOSTIC_SOURCE,
              PhcrValidator.PHCR_CLINICAL_INFORMATION_SECTION__PHCR_CLINICAL_INFORMATION_SECTION_PHCR_RELEVANT_MEDICAL_CONDITION_HISTORY_OBSERVATION,
-             PhcrPlugin.INSTANCE.getString("PhcrClinicalInformationSectionPhcrRelevantMedicalConditionHistoryObservation"),
+             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "validatePhcrClinicalInformationSectionPhcrRelevantMedicalConditionHistoryObservation", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(phcrClinicalInformationSection, context) }),
              new Object [] { phcrClinicalInformationSection }));
       }
-       
       return false;
     }
     return true;
@@ -719,6 +720,10 @@ public class PhcrClinicalInformationSectionOperations extends SectionOperations 
 	/**
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
+   * <!-- begin-model-doc -->
+   * self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(phcr::CaseObservation))->asSequence()->any(true).oclAsType(phcr::CaseObservation)
+   * @param phcrClinicalInformationSection The receiving '<em><b>Clinical Information Section</b></em>' model object.
+   * <!-- end-model-doc -->
    * @generated
    */
 	public static  CaseObservation getCaseObservation(PhcrClinicalInformationSection phcrClinicalInformationSection) {
@@ -762,6 +767,10 @@ public class PhcrClinicalInformationSectionOperations extends SectionOperations 
 	/**
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
+   * <!-- begin-model-doc -->
+   * self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(phcr::PatientConditionAliveObservation))->asSequence()->any(true).oclAsType(phcr::PatientConditionAliveObservation)
+   * @param phcrClinicalInformationSection The receiving '<em><b>Clinical Information Section</b></em>' model object.
+   * <!-- end-model-doc -->
    * @generated
    */
 	public static  PatientConditionAliveObservation getPatientConditionAliveObservation(PhcrClinicalInformationSection phcrClinicalInformationSection) {
@@ -805,6 +814,10 @@ public class PhcrClinicalInformationSectionOperations extends SectionOperations 
 	/**
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
+   * <!-- begin-model-doc -->
+   * self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(phcr::PatientConditionDeceasedObservation))->asSequence()->any(true).oclAsType(phcr::PatientConditionDeceasedObservation)
+   * @param phcrClinicalInformationSection The receiving '<em><b>Clinical Information Section</b></em>' model object.
+   * <!-- end-model-doc -->
    * @generated
    */
 	public static  PatientConditionDeceasedObservation getPatientConditionDeceasedObservation(PhcrClinicalInformationSection phcrClinicalInformationSection) {
@@ -848,6 +861,10 @@ public class PhcrClinicalInformationSectionOperations extends SectionOperations 
 	/**
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
+   * <!-- begin-model-doc -->
+   * self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(phcr::PhcrRelevantMedicalConditionHistoryObservation)).oclAsType(phcr::PhcrRelevantMedicalConditionHistoryObservation)
+   * @param phcrClinicalInformationSection The receiving '<em><b>Clinical Information Section</b></em>' model object.
+   * <!-- end-model-doc -->
    * @generated
    */
 	

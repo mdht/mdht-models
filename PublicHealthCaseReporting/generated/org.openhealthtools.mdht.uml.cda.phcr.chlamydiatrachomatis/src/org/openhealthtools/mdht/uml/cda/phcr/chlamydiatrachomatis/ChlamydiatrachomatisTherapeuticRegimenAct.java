@@ -35,6 +35,7 @@ public interface ChlamydiatrachomatisTherapeuticRegimenAct extends TherapeuticRe
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
+   * self.entryRelationship->exists(entryRelationship : cda::EntryRelationship | not entryRelationship.substanceAdministration.oclIsUndefined() and entryRelationship.substanceAdministration.oclIsKindOf(chlamydiatrachomatis::ChlamydiatrachomatisTreatmentGivenSubstanceAdministration) and entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::COMP)
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
    * <!-- end-model-doc -->
@@ -47,6 +48,7 @@ public interface ChlamydiatrachomatisTherapeuticRegimenAct extends TherapeuticRe
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
+   * self.entryRelationship->exists(entryRelationship : cda::EntryRelationship | not entryRelationship.substanceAdministration.oclIsUndefined() and entryRelationship.substanceAdministration.oclIsKindOf(chlamydiatrachomatis::ChlamydiatrachomatisTreatmentNotGivenSubstanceAdministration) and entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::COMP)
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
    * <!-- end-model-doc -->
@@ -58,6 +60,9 @@ public interface ChlamydiatrachomatisTherapeuticRegimenAct extends TherapeuticRe
 	/**
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
+   * <!-- begin-model-doc -->
+   * self.getSubstanceAdministrations()->select(substanceAdministration : cda::SubstanceAdministration | not substanceAdministration.oclIsUndefined() and substanceAdministration.oclIsKindOf(chlamydiatrachomatis::ChlamydiatrachomatisTreatmentGivenSubstanceAdministration)).oclAsType(chlamydiatrachomatis::ChlamydiatrachomatisTreatmentGivenSubstanceAdministration)
+   * <!-- end-model-doc -->
    * @model kind="operation" required="true" ordered="false"
    *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getSubstanceAdministrations()->select(substanceAdministration : cda::SubstanceAdministration | not substanceAdministration.oclIsUndefined() and substanceAdministration.oclIsKindOf(chlamydiatrachomatis::ChlamydiatrachomatisTreatmentGivenSubstanceAdministration)).oclAsType(chlamydiatrachomatis::ChlamydiatrachomatisTreatmentGivenSubstanceAdministration)'"
    * @generated
@@ -67,23 +72,12 @@ public interface ChlamydiatrachomatisTherapeuticRegimenAct extends TherapeuticRe
 	/**
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
+   * <!-- begin-model-doc -->
+   * self.getSubstanceAdministrations()->select(substanceAdministration : cda::SubstanceAdministration | not substanceAdministration.oclIsUndefined() and substanceAdministration.oclIsKindOf(chlamydiatrachomatis::ChlamydiatrachomatisTreatmentNotGivenSubstanceAdministration)).oclAsType(chlamydiatrachomatis::ChlamydiatrachomatisTreatmentNotGivenSubstanceAdministration)
+   * <!-- end-model-doc -->
    * @model kind="operation" required="true" ordered="false"
    *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getSubstanceAdministrations()->select(substanceAdministration : cda::SubstanceAdministration | not substanceAdministration.oclIsUndefined() and substanceAdministration.oclIsKindOf(chlamydiatrachomatis::ChlamydiatrachomatisTreatmentNotGivenSubstanceAdministration)).oclAsType(chlamydiatrachomatis::ChlamydiatrachomatisTreatmentNotGivenSubstanceAdministration)'"
    * @generated
    */
 	EList<ChlamydiatrachomatisTreatmentNotGivenSubstanceAdministration> getChlamydiatrachomatisTreatmentNotGivenSubstanceAdministrations();
-
-	/**
-   * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-   * @generated
-   */
-	public ChlamydiatrachomatisTherapeuticRegimenAct init();
-
-  /**
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    public ChlamydiatrachomatisTherapeuticRegimenAct init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // ChlamydiatrachomatisTherapeuticRegimenAct

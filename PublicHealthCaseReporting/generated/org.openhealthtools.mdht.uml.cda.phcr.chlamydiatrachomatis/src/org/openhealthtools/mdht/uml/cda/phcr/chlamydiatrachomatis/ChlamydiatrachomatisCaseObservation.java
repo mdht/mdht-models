@@ -32,6 +32,7 @@ public interface ChlamydiatrachomatisCaseObservation extends CaseObservation {
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
+   * (self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (not self.value->isEmpty())
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
    * <!-- end-model-doc -->
@@ -44,6 +45,9 @@ public interface ChlamydiatrachomatisCaseObservation extends CaseObservation {
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
+   * (self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (self.value->size() = 1 and self.value->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and 
+   * let value : datatypes::CD = element.oclAsType(datatypes::CD) in 
+   * value.code = '105629000' and value.codeSystem = '2.16.840.1.113883.6.96'))
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
    * <!-- end-model-doc -->
@@ -51,18 +55,4 @@ public interface ChlamydiatrachomatisCaseObservation extends CaseObservation {
    * @generated
    */
   boolean validateChlamydiatrachomatisCaseObservationValue(DiagnosticChain diagnostics, Map<Object, Object> context);
-
-  /**
-   * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-   * @generated
-   */
-	public ChlamydiatrachomatisCaseObservation init();
-
-  /**
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    public ChlamydiatrachomatisCaseObservation init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // ChlamydiatrachomatisCaseObservation

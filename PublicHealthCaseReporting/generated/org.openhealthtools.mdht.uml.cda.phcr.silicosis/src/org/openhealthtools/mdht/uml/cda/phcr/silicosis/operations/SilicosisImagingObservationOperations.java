@@ -25,8 +25,6 @@ import org.openhealthtools.mdht.uml.cda.phcr.operations.ImagingObservationOperat
 
 import org.openhealthtools.mdht.uml.cda.phcr.silicosis.SilicosisImagingObservation;
 import org.openhealthtools.mdht.uml.cda.phcr.silicosis.SilicosisPackage;
-import org.openhealthtools.mdht.uml.cda.phcr.silicosis.SilicosisPlugin;
-
 import org.openhealthtools.mdht.uml.cda.phcr.silicosis.util.SilicosisValidator;
 
 /**
@@ -37,7 +35,6 @@ import org.openhealthtools.mdht.uml.cda.phcr.silicosis.util.SilicosisValidator;
  * <p>
  * The following operations are supported:
  * <ul>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.phcr.silicosis.SilicosisImagingObservation#validateSilicosisImagingObservationValue(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Silicosis Imaging Observation Value</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.phcr.silicosis.SilicosisImagingObservation#validateProblemObservationTemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Problem Observation Template Id</em>}</li>
  * </ul>
  * </p>
@@ -81,6 +78,7 @@ public class SilicosisImagingObservationOperations extends ImagingObservationOpe
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
+   * (self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (self.value->forAll(element | element.oclIsTypeOf(datatypes::CD)))
    * @param silicosisImagingObservation The receiving '<em><b>Imaging Observation</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -89,8 +87,8 @@ public class SilicosisImagingObservationOperations extends ImagingObservationOpe
    */
 	
 	public static  boolean validateSilicosisImagingObservationValue(SilicosisImagingObservation silicosisImagingObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
-    if (VALIDATE_SILICOSIS_IMAGING_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+    if (VALIDATE_SILICOSIS_IMAGING_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null)
+    {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(SilicosisPackage.Literals.SILICOSIS_IMAGING_OBSERVATION);
       try
@@ -111,10 +109,9 @@ public class SilicosisImagingObservationOperations extends ImagingObservationOpe
             (Diagnostic.ERROR,
              SilicosisValidator.DIAGNOSTIC_SOURCE,
              SilicosisValidator.SILICOSIS_IMAGING_OBSERVATION__SILICOSIS_IMAGING_OBSERVATION_VALUE,
-             SilicosisPlugin.INSTANCE.getString("SilicosisImagingObservationValue"),
+             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "validateSilicosisImagingObservationValue", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(silicosisImagingObservation, context) }),
              new Object [] { silicosisImagingObservation }));
       }
-       
       return false;
     }
     return true;
@@ -146,6 +143,7 @@ public class SilicosisImagingObservationOperations extends ImagingObservationOpe
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
+   * self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.15.3.108')
    * @param silicosisImagingObservation The receiving '<em><b>Imaging Observation</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -155,8 +153,8 @@ public class SilicosisImagingObservationOperations extends ImagingObservationOpe
   
   public static  boolean validateProblemObservationTemplateId(SilicosisImagingObservation silicosisImagingObservation, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
-  	  
-    if (VALIDATE_PROBLEM_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+    if (VALIDATE_PROBLEM_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null)
+    {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(SilicosisPackage.Literals.SILICOSIS_IMAGING_OBSERVATION);
       try
@@ -177,10 +175,9 @@ public class SilicosisImagingObservationOperations extends ImagingObservationOpe
             (Diagnostic.ERROR,
              SilicosisValidator.DIAGNOSTIC_SOURCE,
              SilicosisValidator.SILICOSIS_IMAGING_OBSERVATION__PROBLEM_OBSERVATION_TEMPLATE_ID,
-             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "ProblemObservationTemplateId", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(silicosisImagingObservation, context) }),
+             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "validateProblemObservationTemplateId", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(silicosisImagingObservation, context) }),
              new Object [] { silicosisImagingObservation }));
       }
-       
       return false;
     }
     return true;

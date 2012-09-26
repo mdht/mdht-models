@@ -11,8 +11,6 @@
 package org.openhealthtools.mdht.uml.cda.phcr.cocci;
 
 import java.lang.Iterable;
-import java.util.Map;
-import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.ecore.EObject;
 import org.openhealthtools.mdht.emf.runtime.util.Initializer;
 import org.openhealthtools.mdht.uml.cda.ccd.ProblemObservation;
@@ -32,6 +30,7 @@ public interface CoccidioidesImmunosuppressedMedicalConditionProblemObservation 
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
+   * (self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (self.value->forAll(element | element.oclIsTypeOf(datatypes::CD)))
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
    * <!-- end-model-doc -->
@@ -39,18 +38,4 @@ public interface CoccidioidesImmunosuppressedMedicalConditionProblemObservation 
    * @generated
    */
   boolean validateCoccidioidesImmunosuppressedMedicalConditionProblemObservationValue(DiagnosticChain diagnostics, Map<Object, Object> context);
-
-  /**
-   * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-   * @generated
-   */
-	public CoccidioidesImmunosuppressedMedicalConditionProblemObservation init();
-
-  /**
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    public CoccidioidesImmunosuppressedMedicalConditionProblemObservation init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // CoccidioidesImmunosuppressedMedicalConditionProblemObservation

@@ -139,22 +139,4 @@ public class SalmonellosisCaseReportImpl extends PublicHealthCaseReportImpl impl
   {
     return SalmonellosisCaseReportOperations.validatePublicHealthCaseReportTemplateId(this, diagnostics, context);
   }
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public SalmonellosisCaseReport init() {
-      return Initializer.Util.init(this);
-  }
-    /**
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    public SalmonellosisCaseReport init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-        Initializer.Util.init(this, initializers);
-        return this;
-    }
 } //SalmonellosisCaseReportImpl

@@ -92,6 +92,7 @@ public class TssPhcrRelevantDxTestsSectionOperations extends PhcrRelevantDxTests
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
+   * self.entry->exists(entry : cda::Entry | not entry.organizer.oclIsUndefined() and entry.organizer.oclIsKindOf(tss::TssResultOrganizer) and entry.typeCode = vocab::x_ActRelationshipEntry::DRIV)
    * @param tssPhcrRelevantDxTestsSection The receiving '<em><b>Tss Phcr Relevant Dx Tests Section</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -100,8 +101,8 @@ public class TssPhcrRelevantDxTestsSectionOperations extends PhcrRelevantDxTests
    */
 	
 	public static  boolean validateTssPhcrRelevantDxTestsSectionTssResultOrganizer(TssPhcrRelevantDxTestsSection tssPhcrRelevantDxTestsSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
-    if (VALIDATE_TSS_PHCR_RELEVANT_DX_TESTS_SECTION_TSS_RESULT_ORGANIZER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+    if (VALIDATE_TSS_PHCR_RELEVANT_DX_TESTS_SECTION_TSS_RESULT_ORGANIZER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null)
+    {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(tssPackage.Literals.TSS_PHCR_RELEVANT_DX_TESTS_SECTION);
       try
@@ -119,13 +120,12 @@ public class TssPhcrRelevantDxTestsSectionOperations extends PhcrRelevantDxTests
       {
         diagnostics.add
           (new BasicDiagnostic
-            (Diagnostic.INFO,
+            (Diagnostic.ERROR,
              tssValidator.DIAGNOSTIC_SOURCE,
              tssValidator.TSS_PHCR_RELEVANT_DX_TESTS_SECTION__TSS_PHCR_RELEVANT_DX_TESTS_SECTION_TSS_RESULT_ORGANIZER,
-             TssPlugin.INSTANCE.getString("TssPhcrRelevantDxTestsSectionTssResultOrganizer"),
+             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "validateTssPhcrRelevantDxTestsSectionTssResultOrganizer", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(tssPhcrRelevantDxTestsSection, context) }),
              new Object [] { tssPhcrRelevantDxTestsSection }));
       }
-       
       return false;
     }
     return true;
@@ -157,6 +157,7 @@ public class TssPhcrRelevantDxTestsSectionOperations extends PhcrRelevantDxTests
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
+   * self.entry->exists(entry : cda::Entry | not entry.observation.oclIsUndefined() and entry.observation.oclIsKindOf(tss::TssResultObservation) and entry.typeCode = vocab::x_ActRelationshipEntry::DRIV)
    * @param tssPhcrRelevantDxTestsSection The receiving '<em><b>Tss Phcr Relevant Dx Tests Section</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -165,8 +166,8 @@ public class TssPhcrRelevantDxTestsSectionOperations extends PhcrRelevantDxTests
    */
 	
 	public static  boolean validateTssPhcrRelevantDxTestsSectionTssResultObservation(TssPhcrRelevantDxTestsSection tssPhcrRelevantDxTestsSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
-    if (VALIDATE_TSS_PHCR_RELEVANT_DX_TESTS_SECTION_TSS_RESULT_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+    if (VALIDATE_TSS_PHCR_RELEVANT_DX_TESTS_SECTION_TSS_RESULT_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null)
+    {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(tssPackage.Literals.TSS_PHCR_RELEVANT_DX_TESTS_SECTION);
       try
@@ -184,13 +185,12 @@ public class TssPhcrRelevantDxTestsSectionOperations extends PhcrRelevantDxTests
       {
         diagnostics.add
           (new BasicDiagnostic
-            (Diagnostic.WARNING,
+            (Diagnostic.ERROR,
              tssValidator.DIAGNOSTIC_SOURCE,
              tssValidator.TSS_PHCR_RELEVANT_DX_TESTS_SECTION__TSS_PHCR_RELEVANT_DX_TESTS_SECTION_TSS_RESULT_OBSERVATION,
-             TssPlugin.INSTANCE.getString("TssPhcrRelevantDxTestsSectionTssResultObservation"),
+             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "validateTssPhcrRelevantDxTestsSectionTssResultObservation", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(tssPhcrRelevantDxTestsSection, context) }),
              new Object [] { tssPhcrRelevantDxTestsSection }));
       }
-       
       return false;
     }
     return true;
@@ -219,6 +219,10 @@ public class TssPhcrRelevantDxTestsSectionOperations extends PhcrRelevantDxTests
 	/**
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
+   * <!-- begin-model-doc -->
+   * self.getOrganizers()->select(organizer : cda::Organizer | not organizer.oclIsUndefined() and organizer.oclIsKindOf(tss::TssResultOrganizer)).oclAsType(tss::TssResultOrganizer)
+   * @param tssPhcrRelevantDxTestsSection The receiving '<em><b>Tss Phcr Relevant Dx Tests Section</b></em>' model object.
+   * <!-- end-model-doc -->
    * @generated
    */
 	
@@ -265,6 +269,10 @@ public class TssPhcrRelevantDxTestsSectionOperations extends PhcrRelevantDxTests
 	/**
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
+   * <!-- begin-model-doc -->
+   * self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(tss::TssResultObservation)).oclAsType(tss::TssResultObservation)
+   * @param tssPhcrRelevantDxTestsSection The receiving '<em><b>Tss Phcr Relevant Dx Tests Section</b></em>' model object.
+   * <!-- end-model-doc -->
    * @generated
    */
 	
@@ -314,6 +322,7 @@ public class TssPhcrRelevantDxTestsSectionOperations extends PhcrRelevantDxTests
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
+   * self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.15.2.43')
    * @param tssPhcrRelevantDxTestsSection The receiving '<em><b>Tss Phcr Relevant Dx Tests Section</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -322,8 +331,8 @@ public class TssPhcrRelevantDxTestsSectionOperations extends PhcrRelevantDxTests
    */
 	
 	public static  boolean validateResultsSectionTemplateId(TssPhcrRelevantDxTestsSection tssPhcrRelevantDxTestsSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
-    if (VALIDATE_RESULTS_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+    if (VALIDATE_RESULTS_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null)
+    {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(tssPackage.Literals.TSS_PHCR_RELEVANT_DX_TESTS_SECTION);
       try
@@ -344,10 +353,9 @@ public class TssPhcrRelevantDxTestsSectionOperations extends PhcrRelevantDxTests
             (Diagnostic.ERROR,
              tssValidator.DIAGNOSTIC_SOURCE,
              tssValidator.TSS_PHCR_RELEVANT_DX_TESTS_SECTION__RESULTS_SECTION_TEMPLATE_ID,
-             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "ResultsSectionTemplateId", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(tssPhcrRelevantDxTestsSection, context) }),
+             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "validateResultsSectionTemplateId", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(tssPhcrRelevantDxTestsSection, context) }),
              new Object [] { tssPhcrRelevantDxTestsSection }));
       }
-       
       return false;
     }
     return true;

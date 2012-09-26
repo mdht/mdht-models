@@ -29,31 +29,30 @@ import org.openhealthtools.mdht.uml.cda.phcr.tss.tssPackage;
 public class tssXMLProcessor extends XMLProcessor {
 
 	/**
-   * Public constructor to instantiate the helper.
-   * <!-- begin-user-doc -->
+	 * Public constructor to instantiate the helper.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public tssXMLProcessor() {
-    super((EPackage.Registry.INSTANCE));
-    tssPackage.eINSTANCE.eClass();
-  }
+		super((EPackage.Registry.INSTANCE));
+		tssPackage.eINSTANCE.eClass();
+	}
 	
 	/**
-   * Register for "*" and "xml" file extensions the tssResourceFactoryImpl factory.
-   * <!-- begin-user-doc -->
+	 * Register for "*" and "xml" file extensions the tssResourceFactoryImpl factory.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	@Override
 	protected Map<String, Resource.Factory> getRegistrations() {
-    if (registrations == null)
-    {
-      super.getRegistrations();
-      registrations.put(XML_EXTENSION, new tssResourceFactoryImpl());
-      registrations.put(STAR_EXTENSION, new tssResourceFactoryImpl());
-    }
-    return registrations;
-  }
+		if (registrations == null) {
+			super.getRegistrations();
+			registrations.put(XML_EXTENSION, new tssResourceFactoryImpl());
+			registrations.put(STAR_EXTENSION, new tssResourceFactoryImpl());
+		}
+		return registrations;
+	}
 
 } //tssXMLProcessor

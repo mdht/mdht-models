@@ -24,7 +24,6 @@ import org.openhealthtools.mdht.uml.cda.phcr.cocci.CoccidioidesTreatmentGivenSub
 import org.openhealthtools.mdht.uml.cda.phcr.cocci.CoccidioidesTreatmentNotGivenSubstanceAdministration;
 import org.openhealthtools.mdht.uml.cda.phcr.cocci.operations.CoccidioidesTherapeuticRegimenActOperations;
 import org.openhealthtools.mdht.uml.cda.phcr.impl.TherapeuticRegimenActImpl;
-import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
 
 /**
  * <!-- begin-user-doc -->
@@ -100,23 +99,4 @@ public class CoccidioidesTherapeuticRegimenActImpl extends TherapeuticRegimenAct
 	public boolean validateTherapeuticRegimenActTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
     return CoccidioidesTherapeuticRegimenActOperations.validateTherapeuticRegimenActTemplateId(this, diagnostics, context);
   }
-
-	/**
-   * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-   * @generated
-   */
-	public CoccidioidesTherapeuticRegimenAct init() {
-      return Initializer.Util.init(this);
-  }
-
-  /**
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    public CoccidioidesTherapeuticRegimenAct init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-        Initializer.Util.init(this, initializers);
-        return this;
-    }
 } //CoccidioidesTherapeuticRegimenActImpl

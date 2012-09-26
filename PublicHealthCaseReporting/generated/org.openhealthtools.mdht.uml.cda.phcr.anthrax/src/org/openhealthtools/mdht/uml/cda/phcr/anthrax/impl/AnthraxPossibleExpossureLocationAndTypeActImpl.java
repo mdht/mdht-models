@@ -26,8 +26,6 @@ import org.openhealthtools.mdht.uml.cda.phcr.anthrax.AnthraxPossibleExpossureLoc
 
 import org.openhealthtools.mdht.uml.cda.phcr.anthrax.operations.AnthraxPossibleExpossureLocationAndTypeActOperations;
 
-import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
-
 /**
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Possible Expossure Location And Type Act</b></em>'.
@@ -101,23 +99,4 @@ public class AnthraxPossibleExpossureLocationAndTypeActImpl extends ActImpl impl
 	public boolean validateAnthraxPossibleExpossureLocationAndTypeActStatusCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
     return AnthraxPossibleExpossureLocationAndTypeActOperations.validateAnthraxPossibleExpossureLocationAndTypeActStatusCode(this, diagnostics, context);
   }
-
-	/**
-   * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-   * @generated
-   */
-	public AnthraxPossibleExpossureLocationAndTypeAct init() {
-      return Initializer.Util.init(this);
-  }
-
-  /**
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    public AnthraxPossibleExpossureLocationAndTypeAct init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-        Initializer.Util.init(this, initializers);
-        return this;
-    }
 } //AnthraxPossibleExpossureLocationAndTypeActImpl

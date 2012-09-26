@@ -26,8 +26,6 @@ import org.openhealthtools.mdht.uml.cda.phcr.tuberculosis.TuberculosisRelevantMe
 
 import org.openhealthtools.mdht.uml.cda.phcr.tuberculosis.operations.TuberculosisRelevantMedicalConditionProblemObservationOperations;
 
-import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
-
 /**
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Relevant Medical Condition Problem Observation</b></em>'.
@@ -40,72 +38,64 @@ import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
 public class TuberculosisRelevantMedicalConditionProblemObservationImpl extends ProblemObservationImpl implements TuberculosisRelevantMedicalConditionProblemObservation
 {
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   protected TuberculosisRelevantMedicalConditionProblemObservationImpl()
   {
-    super();
-  }
+		super();
+	}
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   @Override
   protected EClass eStaticClass()
   {
-    return TuberculosisPackage.Literals.TUBERCULOSIS_RELEVANT_MEDICAL_CONDITION_PROBLEM_OBSERVATION;
-  }
+		return TuberculosisPackage.Literals.TUBERCULOSIS_RELEVANT_MEDICAL_CONDITION_PROBLEM_OBSERVATION;
+	}
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   public boolean validateTuberculosisRelevantMedicalConditionProblemObservationCode(DiagnosticChain diagnostics, Map<Object, Object> context)
   {
-    return TuberculosisRelevantMedicalConditionProblemObservationOperations.validateTuberculosisRelevantMedicalConditionProblemObservationCode(this, diagnostics, context);
-  }
+		return TuberculosisRelevantMedicalConditionProblemObservationOperations.validateTuberculosisRelevantMedicalConditionProblemObservationCode(this, diagnostics, context);
+	}
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
-  public boolean validateTuberculosisRelevantMedicalConditionProblemObservationValue(DiagnosticChain diagnostics, Map<Object, Object> context)
-  {
-    return TuberculosisRelevantMedicalConditionProblemObservationOperations.validateTuberculosisRelevantMedicalConditionProblemObservationValue(this, diagnostics, context);
-  }
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   @Override
   public boolean validateProblemObservationTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context)
   {
-    return TuberculosisRelevantMedicalConditionProblemObservationOperations.validateProblemObservationTemplateId(this, diagnostics, context);
-  }
+		return TuberculosisRelevantMedicalConditionProblemObservationOperations.validateProblemObservationTemplateId(this, diagnostics, context);
+	}
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
-  public TuberculosisRelevantMedicalConditionProblemObservation init() {
-      return Initializer.Util.init(this);
-  }
+	 * @generated
+	 */
+  @Override
+public TuberculosisRelevantMedicalConditionProblemObservation init() {
+	    return Initializer.Util.init(this);
+	}
 
   /**
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
      * @generated
      */
-    public TuberculosisRelevantMedicalConditionProblemObservation init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+    @Override
+	public TuberculosisRelevantMedicalConditionProblemObservation init(Iterable<? extends Initializer<? extends EObject>> initializers) {
         Initializer.Util.init(this, initializers);
         return this;
     }

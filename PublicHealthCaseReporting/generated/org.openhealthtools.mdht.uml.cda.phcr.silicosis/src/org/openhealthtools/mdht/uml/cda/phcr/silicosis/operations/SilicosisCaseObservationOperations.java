@@ -45,7 +45,6 @@ import org.openhealthtools.mdht.uml.cda.phcr.silicosis.util.SilicosisValidator;
  * <p>
  * The following operations are supported:
  * <ul>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.phcr.silicosis.SilicosisCaseObservation#validateSilicosisCaseObservationValue(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Silicosis Case Observation Value</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.phcr.silicosis.SilicosisCaseObservation#validateSilicosisCaseObservationSilicosisSignsAndSymptomsObservation(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Silicosis Case Observation Silicosis Signs And Symptoms Observation</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.phcr.silicosis.SilicosisCaseObservation#getSilicosisSignsAndSymptomsObservations() <em>Get Silicosis Signs And Symptoms Observations</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.phcr.silicosis.SilicosisCaseObservation#validateProblemObservationTemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Problem Observation Template Id</em>}</li>
@@ -89,6 +88,7 @@ public class SilicosisCaseObservationOperations extends CaseObservationOperation
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
+   * (self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (not self.value->isEmpty())
    * @param silicosisCaseObservation The receiving '<em><b>Case Observation</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -97,8 +97,8 @@ public class SilicosisCaseObservationOperations extends CaseObservationOperation
    */
 	
 	public static  boolean validateSilicosisCaseObservationValue(SilicosisCaseObservation silicosisCaseObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
-    if (VALIDATE_SILICOSIS_CASE_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+    if (VALIDATE_SILICOSIS_CASE_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null)
+    {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(SilicosisPackage.Literals.SILICOSIS_CASE_OBSERVATION);
       try
@@ -119,10 +119,9 @@ public class SilicosisCaseObservationOperations extends CaseObservationOperation
             (Diagnostic.ERROR,
              SilicosisValidator.DIAGNOSTIC_SOURCE,
              SilicosisValidator.SILICOSIS_CASE_OBSERVATION__SILICOSIS_CASE_OBSERVATION_VALUE,
-             SilicosisPlugin.INSTANCE.getString("SilicosisCaseObservationValue"),
+             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "validateSilicosisCaseObservationValue", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(silicosisCaseObservation, context) }),
              new Object [] { silicosisCaseObservation }));
       }
-       
       return false;
     }
     return true;
@@ -152,6 +151,7 @@ public class SilicosisCaseObservationOperations extends CaseObservationOperation
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
+   * self.entryRelationship->exists(entryRelationship : cda::EntryRelationship | not entryRelationship.observation.oclIsUndefined() and entryRelationship.observation.oclIsKindOf(silicosis::SilicosisSignsAndSymptomsObservation) and entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::MFST)
    * @param silicosisCaseObservation The receiving '<em><b>Case Observation</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -159,8 +159,8 @@ public class SilicosisCaseObservationOperations extends CaseObservationOperation
    * @generated
    */
 	public static  boolean validateSilicosisCaseObservationSilicosisSignsAndSymptomsObservation(SilicosisCaseObservation silicosisCaseObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
-    if (VALIDATE_SILICOSIS_CASE_OBSERVATION_SILICOSIS_SIGNS_AND_SYMPTOMS_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+    if (VALIDATE_SILICOSIS_CASE_OBSERVATION_SILICOSIS_SIGNS_AND_SYMPTOMS_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null)
+    {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(SilicosisPackage.Literals.SILICOSIS_CASE_OBSERVATION);
       try
@@ -178,13 +178,12 @@ public class SilicosisCaseObservationOperations extends CaseObservationOperation
       {
         diagnostics.add
           (new BasicDiagnostic
-            (Diagnostic.WARNING,
+            (Diagnostic.ERROR,
              SilicosisValidator.DIAGNOSTIC_SOURCE,
              SilicosisValidator.SILICOSIS_CASE_OBSERVATION__SILICOSIS_CASE_OBSERVATION_SILICOSIS_SIGNS_AND_SYMPTOMS_OBSERVATION,
-             SilicosisPlugin.INSTANCE.getString("SilicosisCaseObservationSilicosisSignsAndSymptomsObservation"),
+             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "validateSilicosisCaseObservationSilicosisSignsAndSymptomsObservation", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(silicosisCaseObservation, context) }),
              new Object [] { silicosisCaseObservation }));
       }
-       
       return false;
     }
     return true;
@@ -213,13 +212,17 @@ public class SilicosisCaseObservationOperations extends CaseObservationOperation
 	/**
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
+   * <!-- begin-model-doc -->
+   * self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(silicosis::SilicosisSignsAndSymptomsObservation)).oclAsType(silicosis::SilicosisSignsAndSymptomsObservation)
+   * @param silicosisCaseObservation The receiving '<em><b>Case Observation</b></em>' model object.
+   * <!-- end-model-doc -->
    * @generated
    */
 	public static  EList<SilicosisSignsAndSymptomsObservation> getSilicosisSignsAndSymptomsObservations(SilicosisCaseObservation silicosisCaseObservation) {
     if (GET_SILICOSIS_SIGNS_AND_SYMPTOMS_OBSERVATIONS__EOCL_QRY == null)
     {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
-      helper.setOperationContext(SilicosisPackage.Literals.SILICOSIS_CASE_OBSERVATION, SilicosisPackage.Literals.SILICOSIS_CASE_OBSERVATION.getEAllOperations().get(81));
+      helper.setOperationContext(SilicosisPackage.Literals.SILICOSIS_CASE_OBSERVATION, SilicosisPackage.Literals.SILICOSIS_CASE_OBSERVATION.getEAllOperations().get(79));
       try
       {
         GET_SILICOSIS_SIGNS_AND_SYMPTOMS_OBSERVATIONS__EOCL_QRY = helper.createQuery(GET_SILICOSIS_SIGNS_AND_SYMPTOMS_OBSERVATIONS__EOCL_EXP);
@@ -260,6 +263,7 @@ public class SilicosisCaseObservationOperations extends CaseObservationOperation
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
+   * self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.15.3.111')
    * @param silicosisCaseObservation The receiving '<em><b>Case Observation</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -269,8 +273,8 @@ public class SilicosisCaseObservationOperations extends CaseObservationOperation
   
   public static  boolean validateProblemObservationTemplateId(SilicosisCaseObservation silicosisCaseObservation, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
-  	  
-    if (VALIDATE_PROBLEM_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+    if (VALIDATE_PROBLEM_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null)
+    {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(SilicosisPackage.Literals.SILICOSIS_CASE_OBSERVATION);
       try
@@ -291,10 +295,9 @@ public class SilicosisCaseObservationOperations extends CaseObservationOperation
             (Diagnostic.ERROR,
              SilicosisValidator.DIAGNOSTIC_SOURCE,
              SilicosisValidator.SILICOSIS_CASE_OBSERVATION__PROBLEM_OBSERVATION_TEMPLATE_ID,
-             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "ProblemObservationTemplateId", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(silicosisCaseObservation, context) }),
+             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "validateProblemObservationTemplateId", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(silicosisCaseObservation, context) }),
              new Object [] { silicosisCaseObservation }));
       }
-       
       return false;
     }
     return true;

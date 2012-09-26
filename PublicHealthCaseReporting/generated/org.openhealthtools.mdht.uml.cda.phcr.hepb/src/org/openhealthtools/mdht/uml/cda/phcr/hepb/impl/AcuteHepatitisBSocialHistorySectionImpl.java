@@ -22,12 +22,10 @@ import org.openhealthtools.mdht.uml.cda.phcr.hepb.AcuteHepatitisBActualBloodAndO
 import org.openhealthtools.mdht.uml.cda.phcr.hepb.AcuteHepatitisBPossibleExposureLocationAndTypeAct;
 import org.openhealthtools.mdht.uml.cda.phcr.hepb.AcuteHepatitisBSocialHistorySection;
 import org.openhealthtools.mdht.uml.cda.phcr.hepb.AcuteHepatitisBSocioBehavioralBooleanRiskFactorObservation;
-import org.openhealthtools.mdht.uml.cda.phcr.hepb.AcuteHepatitisBTherapeuticRegimenAct_JobRelatedBodyFluidExposureRiskFrequencyObservation;
 import org.openhealthtools.mdht.uml.cda.phcr.hepb.HepbPackage;
 import org.openhealthtools.mdht.uml.cda.phcr.hepb.JobRelatedBodyFluidExposureRiskFrequencyObservation;
 import org.openhealthtools.mdht.uml.cda.phcr.hepb.operations.AcuteHepatitisBSocialHistorySectionOperations;
 import org.openhealthtools.mdht.uml.cda.phcr.impl.PhcrSocialHistorySectionImpl;
-import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
 
 /**
  * <!-- begin-user-doc -->
@@ -40,121 +38,123 @@ import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
  */
 public class AcuteHepatitisBSocialHistorySectionImpl extends PhcrSocialHistorySectionImpl implements AcuteHepatitisBSocialHistorySection {
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	protected AcuteHepatitisBSocialHistorySectionImpl() {
-    super();
-  }
+		super();
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	@Override
 	protected EClass eStaticClass() {
-    return HepbPackage.Literals.ACUTE_HEPATITIS_BSOCIAL_HISTORY_SECTION;
-  }
+		return HepbPackage.Literals.ACUTE_HEPATITIS_BSOCIAL_HISTORY_SECTION;
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public boolean validateAcuteHepatitisBSocialHistorySectionJobRelatedBodyFluidExposureRiskFrequencyObservation(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return AcuteHepatitisBSocialHistorySectionOperations.validateAcuteHepatitisBSocialHistorySectionJobRelatedBodyFluidExposureRiskFrequencyObservation(this, diagnostics, context);
-  }
+		return AcuteHepatitisBSocialHistorySectionOperations.validateAcuteHepatitisBSocialHistorySectionJobRelatedBodyFluidExposureRiskFrequencyObservation(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public boolean validateAcuteHepatitisBSocialHistorySectionAcuteHepatitisBPossibleExposureLocationAndTypeAct(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return AcuteHepatitisBSocialHistorySectionOperations.validateAcuteHepatitisBSocialHistorySectionAcuteHepatitisBPossibleExposureLocationAndTypeAct(this, diagnostics, context);
-  }
+		return AcuteHepatitisBSocialHistorySectionOperations.validateAcuteHepatitisBSocialHistorySectionAcuteHepatitisBPossibleExposureLocationAndTypeAct(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public boolean validateAcuteHepatitisBSocialHistorySectionAcuteHepatitisBSocioBehavioralBooleanRiskFactorObservation(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return AcuteHepatitisBSocialHistorySectionOperations.validateAcuteHepatitisBSocialHistorySectionAcuteHepatitisBSocioBehavioralBooleanRiskFactorObservation(this, diagnostics, context);
-  }
+		return AcuteHepatitisBSocialHistorySectionOperations.validateAcuteHepatitisBSocialHistorySectionAcuteHepatitisBSocioBehavioralBooleanRiskFactorObservation(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public boolean validateAcuteHepatitisBSocialHistorySectionAcuteHepatitisBActualBloodAndOrBodyFluidExposureObservation(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return AcuteHepatitisBSocialHistorySectionOperations.validateAcuteHepatitisBSocialHistorySectionAcuteHepatitisBActualBloodAndOrBodyFluidExposureObservation(this, diagnostics, context);
-  }
+		return AcuteHepatitisBSocialHistorySectionOperations.validateAcuteHepatitisBSocialHistorySectionAcuteHepatitisBActualBloodAndOrBodyFluidExposureObservation(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public EList<JobRelatedBodyFluidExposureRiskFrequencyObservation> getJobRelatedBodyFluidExposureRiskFrequencyObservations() {
-    return AcuteHepatitisBSocialHistorySectionOperations.getJobRelatedBodyFluidExposureRiskFrequencyObservations(this);
-  }
+		return AcuteHepatitisBSocialHistorySectionOperations.getJobRelatedBodyFluidExposureRiskFrequencyObservations(this);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public EList<AcuteHepatitisBPossibleExposureLocationAndTypeAct> getAcuteHepatitisBPossibleExposureLocationAndTypeActs() {
-    return AcuteHepatitisBSocialHistorySectionOperations.getAcuteHepatitisBPossibleExposureLocationAndTypeActs(this);
-  }
+		return AcuteHepatitisBSocialHistorySectionOperations.getAcuteHepatitisBPossibleExposureLocationAndTypeActs(this);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public EList<AcuteHepatitisBSocioBehavioralBooleanRiskFactorObservation> getAcuteHepatitisBSocioBehavioralBooleanRiskFactorObservations() {
-    return AcuteHepatitisBSocialHistorySectionOperations.getAcuteHepatitisBSocioBehavioralBooleanRiskFactorObservations(this);
-  }
+		return AcuteHepatitisBSocialHistorySectionOperations.getAcuteHepatitisBSocioBehavioralBooleanRiskFactorObservations(this);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public EList<AcuteHepatitisBActualBloodAndOrBodyFluidExposureObservation> getAcuteHepatitisBActualBloodAndOrBodyFluidExposureObservations() {
-    return AcuteHepatitisBSocialHistorySectionOperations.getAcuteHepatitisBActualBloodAndOrBodyFluidExposureObservations(this);
-  }
+		return AcuteHepatitisBSocialHistorySectionOperations.getAcuteHepatitisBActualBloodAndOrBodyFluidExposureObservations(this);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	@Override
 	public boolean validateSocialHistorySectionTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return AcuteHepatitisBSocialHistorySectionOperations.validateSocialHistorySectionTemplateId(this, diagnostics, context);
-  }
+		return AcuteHepatitisBSocialHistorySectionOperations.validateSocialHistorySectionTemplateId(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
+	@Override
 	public AcuteHepatitisBSocialHistorySection init() {
-      return Initializer.Util.init(this);
-  }
+	    return Initializer.Util.init(this);
+	}
 
   /**
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
      * @generated
      */
-    public AcuteHepatitisBSocialHistorySection init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+    @Override
+	public AcuteHepatitisBSocialHistorySection init(Iterable<? extends Initializer<? extends EObject>> initializers) {
         Initializer.Util.init(this, initializers);
         return this;
     }

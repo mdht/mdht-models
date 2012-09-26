@@ -23,7 +23,6 @@ import org.openhealthtools.mdht.uml.cda.phcr.tularemia.TularemiaPackage;
 import org.openhealthtools.mdht.uml.cda.phcr.tularemia.TularemiaResultObservation;
 import org.openhealthtools.mdht.uml.cda.phcr.tularemia.TularemiaResultOrganizer;
 import org.openhealthtools.mdht.uml.cda.phcr.tularemia.operations.TularemiaResultOrganizerOperations;
-import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
 
 /**
  * <!-- begin-user-doc -->
@@ -37,91 +36,93 @@ import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
 public class TularemiaResultOrganizerImpl extends ResultOrganizerImpl implements TularemiaResultOrganizer
 {
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   protected TularemiaResultOrganizerImpl()
   {
-    super();
-  }
+		super();
+	}
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   @Override
   protected EClass eStaticClass()
   {
-    return TularemiaPackage.Literals.TULAREMIA_RESULT_ORGANIZER;
-  }
+		return TularemiaPackage.Literals.TULAREMIA_RESULT_ORGANIZER;
+	}
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   public boolean validateTularemiaResultOrganizerCodeP(DiagnosticChain diagnostics, Map<Object, Object> context)
   {
-    return TularemiaResultOrganizerOperations.validateTularemiaResultOrganizerCodeP(this, diagnostics, context);
-  }
+		return TularemiaResultOrganizerOperations.validateTularemiaResultOrganizerCodeP(this, diagnostics, context);
+	}
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public boolean validateTularemiaResultOrganizerCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return TularemiaResultOrganizerOperations.validateTularemiaResultOrganizerCode(this, diagnostics, context);
-  }
+		return TularemiaResultOrganizerOperations.validateTularemiaResultOrganizerCode(this, diagnostics, context);
+	}
 
 		/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   public boolean validateTularemiaResultOrganizerTularemiaResultObservation(DiagnosticChain diagnostics, Map<Object, Object> context)
   {
-    return TularemiaResultOrganizerOperations.validateTularemiaResultOrganizerTularemiaResultObservation(this, diagnostics, context);
-  }
+		return TularemiaResultOrganizerOperations.validateTularemiaResultOrganizerTularemiaResultObservation(this, diagnostics, context);
+	}
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   public EList<TularemiaResultObservation> getTularemiaResultObservations()
   {
-    return TularemiaResultOrganizerOperations.getTularemiaResultObservations(this);
-  }
+		return TularemiaResultOrganizerOperations.getTularemiaResultObservations(this);
+	}
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   @Override
   public boolean validateResultOrganizerTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context)
   {
-    return TularemiaResultOrganizerOperations.validateResultOrganizerTemplateId(this, diagnostics, context);
-  }
+		return TularemiaResultOrganizerOperations.validateResultOrganizerTemplateId(this, diagnostics, context);
+	}
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
-  public TularemiaResultOrganizer init() {
-      return Initializer.Util.init(this);
-  }
+	 * @generated
+	 */
+  @Override
+public TularemiaResultOrganizer init() {
+	    return Initializer.Util.init(this);
+	}
 
   /**
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
      * @generated
      */
-    public TularemiaResultOrganizer init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+    @Override
+	public TularemiaResultOrganizer init(Iterable<? extends Initializer<? extends EObject>> initializers) {
         Initializer.Util.init(this, initializers);
         return this;
     }

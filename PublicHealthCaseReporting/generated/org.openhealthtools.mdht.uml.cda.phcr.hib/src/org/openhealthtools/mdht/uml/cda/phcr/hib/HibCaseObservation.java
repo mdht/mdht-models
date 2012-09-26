@@ -10,11 +10,14 @@
  *******************************************************************************/
 package org.openhealthtools.mdht.uml.cda.phcr.hib;
 
+import java.lang.Iterable;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.common.util.EList;
 
+import org.eclipse.emf.ecore.EObject;
+import org.openhealthtools.mdht.emf.runtime.util.Initializer;
 import org.openhealthtools.mdht.uml.cda.phcr.CaseObservation;
 
 /**
@@ -24,7 +27,7 @@ import org.openhealthtools.mdht.uml.cda.phcr.CaseObservation;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.phcr.hib.HibPackage#getHibCaseObservation()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation templateId.root='2.16.840.1.113883.10.20.15.3.134' constraints.validation.error='HibCaseObservationTemplateId' constraints.validation.warning='HibCaseObservationHibSignsAndSymptoms'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='HibCaseObservationTemplateId' templateId.root='2.16.840.1.113883.10.20.15.3.134' constraints.validation.warning='HibCaseObservationHibSignsAndSymptoms'"
  * @generated
  */
 public interface HibCaseObservation extends CaseObservation {
@@ -59,4 +62,11 @@ public interface HibCaseObservation extends CaseObservation {
 	 * @generated
 	 */
 	public HibCaseObservation init();
+
+	/**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    public HibCaseObservation init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // HibCaseObservation

@@ -130,7 +130,7 @@ public class InfluenzaPHCRTreatmentInformationSectionOperations extends PhcrTrea
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String GET_INFLUENZA_THERAPEUTIC_REGIMEN_ACT__EOCL_EXP = "self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(flu::InfluenzaTherapeuticRegimenAct))->asSequence()->first().oclAsType(flu::InfluenzaTherapeuticRegimenAct)";
+	protected static final String GET_INFLUENZA_THERAPEUTIC_REGIMEN_ACT__EOCL_EXP = "self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(flu::InfluenzaTherapeuticRegimenAct))->asSequence()->any(true).oclAsType(flu::InfluenzaTherapeuticRegimenAct)";
 
 	/**
 	 * The cached OCL query for the '{@link #getInfluenzaTherapeuticRegimenAct(InfluenzaPHCRTreatmentInformationSection) <em>Get Influenza Therapeutic Regimen Act</em>}' query operation.
@@ -146,7 +146,7 @@ public class InfluenzaPHCRTreatmentInformationSectionOperations extends PhcrTrea
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(flu::InfluenzaTherapeuticRegimenAct))->asSequence()->first().oclAsType(flu::InfluenzaTherapeuticRegimenAct)
+	 * self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(flu::InfluenzaTherapeuticRegimenAct))->asSequence()->any(true).oclAsType(flu::InfluenzaTherapeuticRegimenAct)
 	 * @param influenzaPHCRTreatmentInformationSection The receiving '<em><b>Influenza PHCR Treatment Information Section</b></em>' model object.
 	 * <!-- end-model-doc -->
 	 * @generated

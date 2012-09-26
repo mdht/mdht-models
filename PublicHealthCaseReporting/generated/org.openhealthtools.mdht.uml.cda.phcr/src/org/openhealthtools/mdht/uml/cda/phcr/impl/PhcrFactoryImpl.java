@@ -15,7 +15,6 @@ import org.eclipse.emf.ecore.EObject;
 import org.eclipse.emf.ecore.EPackage;
 import org.eclipse.emf.ecore.impl.EFactoryImpl;
 import org.eclipse.emf.ecore.plugin.EcorePlugin;
-import org.openhealthtools.mdht.uml.cda.phcr.*;
 import org.openhealthtools.mdht.uml.cda.phcr.CaseObservation;
 import org.openhealthtools.mdht.uml.cda.phcr.EstimatedDateOfDeliveryObservation;
 import org.openhealthtools.mdht.uml.cda.phcr.GeotemporalHistoryObservation;
@@ -53,349 +52,345 @@ import org.openhealthtools.mdht.uml.cda.phcr.TreatmentNotGivenSubstanceAdministr
 public class PhcrFactoryImpl extends EFactoryImpl implements PhcrFactory
 {
   /**
-   * Creates the default factory implementation.
-   * <!-- begin-user-doc -->
+	 * Creates the default factory implementation.
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   public static PhcrFactory init()
   {
-    try
-    {
-      PhcrFactory thePhcrFactory = (PhcrFactory)EPackage.Registry.INSTANCE.getEFactory("http://www.openhealthtools.org/mdht/uml/cda/phcr"); 
-      if (thePhcrFactory != null)
-      {
-        return thePhcrFactory;
-      }
-    }
-    catch (Exception exception)
-    {
-      EcorePlugin.INSTANCE.log(exception);
-    }
-    return new PhcrFactoryImpl();
-  }
+		try {
+			PhcrFactory thePhcrFactory = (PhcrFactory)EPackage.Registry.INSTANCE.getEFactory("http://www.openhealthtools.org/mdht/uml/cda/phcr"); 
+			if (thePhcrFactory != null) {
+				return thePhcrFactory;
+			}
+		}
+		catch (Exception exception) {
+			EcorePlugin.INSTANCE.log(exception);
+		}
+		return new PhcrFactoryImpl();
+	}
 
   /**
-   * Creates an instance of the factory.
-   * <!-- begin-user-doc -->
+	 * Creates an instance of the factory.
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   public PhcrFactoryImpl()
   {
-    super();
-  }
+		super();
+	}
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   @Override
   public EObject create(EClass eClass)
   {
-    switch (eClass.getClassifierID())
-    {
-      case PhcrPackage.PUBLIC_HEALTH_CASE_REPORT: return createPublicHealthCaseReport();
-      case PhcrPackage.PHCR_SOCIAL_HISTORY_SECTION: return createPhcrSocialHistorySection();
-      case PhcrPackage.GEOTEMPORAL_HISTORY_OBSERVATION: return createGeotemporalHistoryObservation();
-      case PhcrPackage.MOST_RECENT_TIME_ARRIVED_IN_USA_OBSERVATION: return createMostRecentTimeArrivedInUSAObservation();
-      case PhcrPackage.RACE_OBSERVATION: return createRaceObservation();
-      case PhcrPackage.OCCUPATION_OBSERVATION: return createOccupationObservation();
-      case PhcrPackage.PREGNANCY_OBSERVATION: return createPregnancyObservation();
-      case PhcrPackage.ESTIMATED_DATE_OF_DELIVERY_OBSERVATION: return createEstimatedDateOfDeliveryObservation();
-      case PhcrPackage.PHCR_CLINICAL_INFORMATION_SECTION: return createPhcrClinicalInformationSection();
-      case PhcrPackage.CASE_OBSERVATION: return createCaseObservation();
-      case PhcrPackage.SIGNS_AND_SYMPTOMS_OBSERVATION: return createSignsAndSymptomsObservation();
-      case PhcrPackage.PATIENT_CONDITION_ALIVE_OBSERVATION: return createPatientConditionAliveObservation();
-      case PhcrPackage.PATIENT_CONDITION_DECEASED_OBSERVATION: return createPatientConditionDeceasedObservation();
-      case PhcrPackage.PHCR_RELEVANT_MEDICAL_CONDITION_HISTORY_OBSERVATION: return createPhcrRelevantMedicalConditionHistoryObservation();
-      case PhcrPackage.PHCR_TREATMENT_INFORMATION_SECTION: return createPhcrTreatmentInformationSection();
-      case PhcrPackage.THERAPEUTIC_REGIMEN_ACT: return createTherapeuticRegimenAct();
-      case PhcrPackage.TREATMENT_GIVEN_SUBSTANCE_ADMINISTRATION: return createTreatmentGivenSubstanceAdministration();
-      case PhcrPackage.TREATMENT_NOT_GIVEN_SUBSTANCE_ADMINISTRATION: return createTreatmentNotGivenSubstanceAdministration();
-      case PhcrPackage.PHCR_ENCOUNTERS_SECTION: return createPhcrEncountersSection();
-      case PhcrPackage.PHCR_RELEVANT_DX_TESTS_SECTION: return createPhcrRelevantDxTestsSection();
-      case PhcrPackage.RESULT_ORGANIZER: return createResultOrganizer();
-      case PhcrPackage.RESULT_OBSERVATION: return createResultObservation();
-      case PhcrPackage.SPECIMEN_COLLECTION_PROCEDURE: return createSpecimenCollectionProcedure();
-      case PhcrPackage.SUSCEPTIBILITY_RESULT: return createSusceptibilityResult();
-      case PhcrPackage.IMAGING_OBSERVATION: return createImagingObservation();
-      default:
-        throw new IllegalArgumentException("The class '" + eClass.getName() + "' is not a valid classifier");
-    }
-  }
+		switch (eClass.getClassifierID()) {
+			case PhcrPackage.PUBLIC_HEALTH_CASE_REPORT: return createPublicHealthCaseReport();
+			case PhcrPackage.PHCR_SOCIAL_HISTORY_SECTION: return createPhcrSocialHistorySection();
+			case PhcrPackage.GEOTEMPORAL_HISTORY_OBSERVATION: return createGeotemporalHistoryObservation();
+			case PhcrPackage.MOST_RECENT_TIME_ARRIVED_IN_USA_OBSERVATION: return createMostRecentTimeArrivedInUSAObservation();
+			case PhcrPackage.RACE_OBSERVATION: return createRaceObservation();
+			case PhcrPackage.OCCUPATION_OBSERVATION: return createOccupationObservation();
+			case PhcrPackage.PREGNANCY_OBSERVATION: return createPregnancyObservation();
+			case PhcrPackage.ESTIMATED_DATE_OF_DELIVERY_OBSERVATION: return createEstimatedDateOfDeliveryObservation();
+			case PhcrPackage.PHCR_CLINICAL_INFORMATION_SECTION: return createPhcrClinicalInformationSection();
+			case PhcrPackage.CASE_OBSERVATION: return createCaseObservation();
+			case PhcrPackage.SIGNS_AND_SYMPTOMS_OBSERVATION: return createSignsAndSymptomsObservation();
+			case PhcrPackage.PATIENT_CONDITION_ALIVE_OBSERVATION: return createPatientConditionAliveObservation();
+			case PhcrPackage.PATIENT_CONDITION_DECEASED_OBSERVATION: return createPatientConditionDeceasedObservation();
+			case PhcrPackage.PHCR_RELEVANT_MEDICAL_CONDITION_HISTORY_OBSERVATION: return createPhcrRelevantMedicalConditionHistoryObservation();
+			case PhcrPackage.PHCR_TREATMENT_INFORMATION_SECTION: return createPhcrTreatmentInformationSection();
+			case PhcrPackage.THERAPEUTIC_REGIMEN_ACT: return createTherapeuticRegimenAct();
+			case PhcrPackage.TREATMENT_GIVEN_SUBSTANCE_ADMINISTRATION: return createTreatmentGivenSubstanceAdministration();
+			case PhcrPackage.TREATMENT_NOT_GIVEN_SUBSTANCE_ADMINISTRATION: return createTreatmentNotGivenSubstanceAdministration();
+			case PhcrPackage.PHCR_ENCOUNTERS_SECTION: return createPhcrEncountersSection();
+			case PhcrPackage.PHCR_RELEVANT_DX_TESTS_SECTION: return createPhcrRelevantDxTestsSection();
+			case PhcrPackage.RESULT_ORGANIZER: return createResultOrganizer();
+			case PhcrPackage.RESULT_OBSERVATION: return createResultObservation();
+			case PhcrPackage.SPECIMEN_COLLECTION_PROCEDURE: return createSpecimenCollectionProcedure();
+			case PhcrPackage.SUSCEPTIBILITY_RESULT: return createSusceptibilityResult();
+			case PhcrPackage.IMAGING_OBSERVATION: return createImagingObservation();
+			default:
+				throw new IllegalArgumentException("The class '" + eClass.getName() + "' is not a valid classifier");
+		}
+	}
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public PublicHealthCaseReport createPublicHealthCaseReport() {
-    PublicHealthCaseReportImpl publicHealthCaseReport = new PublicHealthCaseReportImpl();
-    return publicHealthCaseReport;
-  }
+		PublicHealthCaseReportImpl publicHealthCaseReport = new PublicHealthCaseReportImpl();
+		return publicHealthCaseReport;
+	}
 
 		/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public PhcrSocialHistorySection createPhcrSocialHistorySection() {
-    PhcrSocialHistorySectionImpl phcrSocialHistorySection = new PhcrSocialHistorySectionImpl();
-    return phcrSocialHistorySection;
-  }
+		PhcrSocialHistorySectionImpl phcrSocialHistorySection = new PhcrSocialHistorySectionImpl();
+		return phcrSocialHistorySection;
+	}
 
 		/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public GeotemporalHistoryObservation createGeotemporalHistoryObservation() {
-    GeotemporalHistoryObservationImpl geotemporalHistoryObservation = new GeotemporalHistoryObservationImpl();
-    return geotemporalHistoryObservation;
-  }
+		GeotemporalHistoryObservationImpl geotemporalHistoryObservation = new GeotemporalHistoryObservationImpl();
+		return geotemporalHistoryObservation;
+	}
 
 		/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public MostRecentTimeArrivedInUSAObservation createMostRecentTimeArrivedInUSAObservation() {
-    MostRecentTimeArrivedInUSAObservationImpl mostRecentTimeArrivedInUSAObservation = new MostRecentTimeArrivedInUSAObservationImpl();
-    return mostRecentTimeArrivedInUSAObservation;
-  }
+		MostRecentTimeArrivedInUSAObservationImpl mostRecentTimeArrivedInUSAObservation = new MostRecentTimeArrivedInUSAObservationImpl();
+		return mostRecentTimeArrivedInUSAObservation;
+	}
 
 		/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public RaceObservation createRaceObservation() {
-    RaceObservationImpl raceObservation = new RaceObservationImpl();
-    return raceObservation;
-  }
+		RaceObservationImpl raceObservation = new RaceObservationImpl();
+		return raceObservation;
+	}
 
 		/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public OccupationObservation createOccupationObservation() {
-    OccupationObservationImpl occupationObservation = new OccupationObservationImpl();
-    return occupationObservation;
-  }
+		OccupationObservationImpl occupationObservation = new OccupationObservationImpl();
+		return occupationObservation;
+	}
 
 		/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public PregnancyObservation createPregnancyObservation() {
-    PregnancyObservationImpl pregnancyObservation = new PregnancyObservationImpl();
-    return pregnancyObservation;
-  }
+		PregnancyObservationImpl pregnancyObservation = new PregnancyObservationImpl();
+		return pregnancyObservation;
+	}
 
 		/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public EstimatedDateOfDeliveryObservation createEstimatedDateOfDeliveryObservation() {
-    EstimatedDateOfDeliveryObservationImpl estimatedDateOfDeliveryObservation = new EstimatedDateOfDeliveryObservationImpl();
-    return estimatedDateOfDeliveryObservation;
-  }
+		EstimatedDateOfDeliveryObservationImpl estimatedDateOfDeliveryObservation = new EstimatedDateOfDeliveryObservationImpl();
+		return estimatedDateOfDeliveryObservation;
+	}
 
 		/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public PhcrClinicalInformationSection createPhcrClinicalInformationSection() {
-    PhcrClinicalInformationSectionImpl phcrClinicalInformationSection = new PhcrClinicalInformationSectionImpl();
-    return phcrClinicalInformationSection;
-  }
+		PhcrClinicalInformationSectionImpl phcrClinicalInformationSection = new PhcrClinicalInformationSectionImpl();
+		return phcrClinicalInformationSection;
+	}
 
 		/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public PhcrTreatmentInformationSection createPhcrTreatmentInformationSection() {
-    PhcrTreatmentInformationSectionImpl phcrTreatmentInformationSection = new PhcrTreatmentInformationSectionImpl();
-    return phcrTreatmentInformationSection;
-  }
+		PhcrTreatmentInformationSectionImpl phcrTreatmentInformationSection = new PhcrTreatmentInformationSectionImpl();
+		return phcrTreatmentInformationSection;
+	}
 
 		/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public TherapeuticRegimenAct createTherapeuticRegimenAct() {
-    TherapeuticRegimenActImpl therapeuticRegimenAct = new TherapeuticRegimenActImpl();
-    return therapeuticRegimenAct;
-  }
+		TherapeuticRegimenActImpl therapeuticRegimenAct = new TherapeuticRegimenActImpl();
+		return therapeuticRegimenAct;
+	}
 
 		/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public PhcrEncountersSection createPhcrEncountersSection() {
-    PhcrEncountersSectionImpl phcrEncountersSection = new PhcrEncountersSectionImpl();
-    return phcrEncountersSection;
-  }
+		PhcrEncountersSectionImpl phcrEncountersSection = new PhcrEncountersSectionImpl();
+		return phcrEncountersSection;
+	}
 
 		/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public PhcrRelevantDxTestsSection createPhcrRelevantDxTestsSection() {
-    PhcrRelevantDxTestsSectionImpl phcrRelevantDxTestsSection = new PhcrRelevantDxTestsSectionImpl();
-    return phcrRelevantDxTestsSection;
-  }
+		PhcrRelevantDxTestsSectionImpl phcrRelevantDxTestsSection = new PhcrRelevantDxTestsSectionImpl();
+		return phcrRelevantDxTestsSection;
+	}
 
 		/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public ResultOrganizer createResultOrganizer() {
-    ResultOrganizerImpl resultOrganizer = new ResultOrganizerImpl();
-    return resultOrganizer;
-  }
+		ResultOrganizerImpl resultOrganizer = new ResultOrganizerImpl();
+		return resultOrganizer;
+	}
 
 		/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public ResultObservation createResultObservation() {
-    ResultObservationImpl resultObservation = new ResultObservationImpl();
-    return resultObservation;
-  }
+		ResultObservationImpl resultObservation = new ResultObservationImpl();
+		return resultObservation;
+	}
 
 		/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public SpecimenCollectionProcedure createSpecimenCollectionProcedure() {
-    SpecimenCollectionProcedureImpl specimenCollectionProcedure = new SpecimenCollectionProcedureImpl();
-    return specimenCollectionProcedure;
-  }
+		SpecimenCollectionProcedureImpl specimenCollectionProcedure = new SpecimenCollectionProcedureImpl();
+		return specimenCollectionProcedure;
+	}
 
 		/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public ImagingObservation createImagingObservation() {
-    ImagingObservationImpl imagingObservation = new ImagingObservationImpl();
-    return imagingObservation;
-  }
+		ImagingObservationImpl imagingObservation = new ImagingObservationImpl();
+		return imagingObservation;
+	}
 
 		/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public PatientConditionAliveObservation createPatientConditionAliveObservation() {
-    PatientConditionAliveObservationImpl patientConditionAliveObservation = new PatientConditionAliveObservationImpl();
-    return patientConditionAliveObservation;
-  }
+		PatientConditionAliveObservationImpl patientConditionAliveObservation = new PatientConditionAliveObservationImpl();
+		return patientConditionAliveObservation;
+	}
 
 		/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public PatientConditionDeceasedObservation createPatientConditionDeceasedObservation() {
-    PatientConditionDeceasedObservationImpl patientConditionDeceasedObservation = new PatientConditionDeceasedObservationImpl();
-    return patientConditionDeceasedObservation;
-  }
+		PatientConditionDeceasedObservationImpl patientConditionDeceasedObservation = new PatientConditionDeceasedObservationImpl();
+		return patientConditionDeceasedObservation;
+	}
 
 		/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public PhcrRelevantMedicalConditionHistoryObservation createPhcrRelevantMedicalConditionHistoryObservation() {
-    PhcrRelevantMedicalConditionHistoryObservationImpl phcrRelevantMedicalConditionHistoryObservation = new PhcrRelevantMedicalConditionHistoryObservationImpl();
-    return phcrRelevantMedicalConditionHistoryObservation;
-  }
+		PhcrRelevantMedicalConditionHistoryObservationImpl phcrRelevantMedicalConditionHistoryObservation = new PhcrRelevantMedicalConditionHistoryObservationImpl();
+		return phcrRelevantMedicalConditionHistoryObservation;
+	}
 
 		/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public SignsAndSymptomsObservation createSignsAndSymptomsObservation() {
-    SignsAndSymptomsObservationImpl signsAndSymptomsObservation = new SignsAndSymptomsObservationImpl();
-    return signsAndSymptomsObservation;
-  }
+		SignsAndSymptomsObservationImpl signsAndSymptomsObservation = new SignsAndSymptomsObservationImpl();
+		return signsAndSymptomsObservation;
+	}
 
 		/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public SusceptibilityResult createSusceptibilityResult() {
-    SusceptibilityResultImpl susceptibilityResult = new SusceptibilityResultImpl();
-    return susceptibilityResult;
-  }
+		SusceptibilityResultImpl susceptibilityResult = new SusceptibilityResultImpl();
+		return susceptibilityResult;
+	}
 
 		/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public TreatmentGivenSubstanceAdministration createTreatmentGivenSubstanceAdministration() {
-    TreatmentGivenSubstanceAdministrationImpl treatmentGivenSubstanceAdministration = new TreatmentGivenSubstanceAdministrationImpl();
-    return treatmentGivenSubstanceAdministration;
-  }
+		TreatmentGivenSubstanceAdministrationImpl treatmentGivenSubstanceAdministration = new TreatmentGivenSubstanceAdministrationImpl();
+		return treatmentGivenSubstanceAdministration;
+	}
 
 		/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public TreatmentNotGivenSubstanceAdministration createTreatmentNotGivenSubstanceAdministration() {
-    TreatmentNotGivenSubstanceAdministrationImpl treatmentNotGivenSubstanceAdministration = new TreatmentNotGivenSubstanceAdministrationImpl();
-    return treatmentNotGivenSubstanceAdministration;
-  }
+		TreatmentNotGivenSubstanceAdministrationImpl treatmentNotGivenSubstanceAdministration = new TreatmentNotGivenSubstanceAdministrationImpl();
+		return treatmentNotGivenSubstanceAdministration;
+	}
 
 		/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public CaseObservation createCaseObservation() {
-    CaseObservationImpl caseObservation = new CaseObservationImpl();
-    return caseObservation;
-  }
+		CaseObservationImpl caseObservation = new CaseObservationImpl();
+		return caseObservation;
+	}
 
 		/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   public PhcrPackage getPhcrPackage()
   {
-    return (PhcrPackage)getEPackage();
-  }
+		return (PhcrPackage)getEPackage();
+	}
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @deprecated
-   * @generated
-   */
+	 * @deprecated
+	 * @generated
+	 */
   @Deprecated
   public static PhcrPackage getPackage()
   {
-    return PhcrPackage.eINSTANCE;
-  }
+		return PhcrPackage.eINSTANCE;
+	}
 
 } //PhcrFactoryImpl

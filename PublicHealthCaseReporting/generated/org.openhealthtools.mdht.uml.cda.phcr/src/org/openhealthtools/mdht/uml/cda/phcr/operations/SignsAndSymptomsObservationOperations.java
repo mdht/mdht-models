@@ -10,7 +10,6 @@
  *******************************************************************************/
 package org.openhealthtools.mdht.uml.cda.phcr.operations;
 
-import java.util.Collection;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.BasicDiagnostic;
@@ -37,10 +36,8 @@ import org.openhealthtools.mdht.uml.cda.phcr.util.PhcrValidator;
  *   <li>{@link org.openhealthtools.mdht.uml.cda.phcr.SignsAndSymptomsObservation#validateSignsAndSymptomsObservationClassCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Signs And Symptoms Observation Class Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.phcr.SignsAndSymptomsObservation#validateSignsAndSymptomsObservationMoodCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Signs And Symptoms Observation Mood Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.phcr.SignsAndSymptomsObservation#validateSignsAndSymptomsObservationNegationInd(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Signs And Symptoms Observation Negation Ind</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.phcr.SignsAndSymptomsObservation#validateSignsAndSymptomsObservationCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Signs And Symptoms Observation Code P</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.phcr.SignsAndSymptomsObservation#validateSignsAndSymptomsObservationCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Signs And Symptoms Observation Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.phcr.SignsAndSymptomsObservation#validateSignsAndSymptomsObservationStatusCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Signs And Symptoms Observation Status Code</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.phcr.SignsAndSymptomsObservation#validateSignsAndSymptomsObservationStatusCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Signs And Symptoms Observation Status Code P</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.phcr.SignsAndSymptomsObservation#validateSignsAndSymptomsObservationEffectiveTime(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Signs And Symptoms Observation Effective Time</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.phcr.SignsAndSymptomsObservation#validateSignsAndSymptomsObservationValue(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Signs And Symptoms Observation Value</em>}</li>
  * </ul>
@@ -82,6 +79,7 @@ public class SignsAndSymptomsObservationOperations extends ClinicalStatementOper
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
+   * self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.15.3.53')
    * @param signsAndSymptomsObservation The receiving '<em><b>Signs And Symptoms Observation</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -89,8 +87,8 @@ public class SignsAndSymptomsObservationOperations extends ClinicalStatementOper
    * @generated
    */
 	public static  boolean validateSignsAndSymptomsObservationTemplateId(SignsAndSymptomsObservation signsAndSymptomsObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
-    if (VALIDATE_SIGNS_AND_SYMPTOMS_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+    if (VALIDATE_SIGNS_AND_SYMPTOMS_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null)
+    {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(PhcrPackage.Literals.SIGNS_AND_SYMPTOMS_OBSERVATION);
       try
@@ -111,10 +109,9 @@ public class SignsAndSymptomsObservationOperations extends ClinicalStatementOper
             (Diagnostic.ERROR,
              PhcrValidator.DIAGNOSTIC_SOURCE,
              PhcrValidator.SIGNS_AND_SYMPTOMS_OBSERVATION__SIGNS_AND_SYMPTOMS_OBSERVATION_TEMPLATE_ID,
-             PhcrPlugin.INSTANCE.getString("SignsAndSymptomsObservationTemplateId"),
+             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "validateSignsAndSymptomsObservationTemplateId", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(signsAndSymptomsObservation, context) }),
              new Object [] { signsAndSymptomsObservation }));
       }
-       
       return false;
     }
     return true;
@@ -144,6 +141,7 @@ public class SignsAndSymptomsObservationOperations extends ClinicalStatementOper
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
+   * self.classCode=vocab::ActClassObservation::OBS
    * @param signsAndSymptomsObservation The receiving '<em><b>Signs And Symptoms Observation</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -151,8 +149,8 @@ public class SignsAndSymptomsObservationOperations extends ClinicalStatementOper
    * @generated
    */
 	public static  boolean validateSignsAndSymptomsObservationClassCode(SignsAndSymptomsObservation signsAndSymptomsObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
-    if (VALIDATE_SIGNS_AND_SYMPTOMS_OBSERVATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+    if (VALIDATE_SIGNS_AND_SYMPTOMS_OBSERVATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null)
+    {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(PhcrPackage.Literals.SIGNS_AND_SYMPTOMS_OBSERVATION);
       try
@@ -173,10 +171,9 @@ public class SignsAndSymptomsObservationOperations extends ClinicalStatementOper
             (Diagnostic.ERROR,
              PhcrValidator.DIAGNOSTIC_SOURCE,
              PhcrValidator.SIGNS_AND_SYMPTOMS_OBSERVATION__SIGNS_AND_SYMPTOMS_OBSERVATION_CLASS_CODE,
-             PhcrPlugin.INSTANCE.getString("SignsAndSymptomsObservationClassCode"),
+             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "validateSignsAndSymptomsObservationClassCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(signsAndSymptomsObservation, context) }),
              new Object [] { signsAndSymptomsObservation }));
       }
-       
       return false;
     }
     return true;
@@ -186,6 +183,9 @@ public class SignsAndSymptomsObservationOperations extends ClinicalStatementOper
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
+   * (self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and 
+   * let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in 
+   * value.code = 'ASSERTION' and value.codeSystem = '2.16.840.1.113883.5.4')
    * @param signsAndSymptomsObservation The receiving '<em><b>Signs And Symptoms Observation</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -193,14 +193,8 @@ public class SignsAndSymptomsObservationOperations extends ClinicalStatementOper
    * @generated
    */
 	public static  boolean validateSignsAndSymptomsObservationCode(SignsAndSymptomsObservation signsAndSymptomsObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
-    Object passToken = (context == null) ? null : context.get("org.openhealthtools.mdht.uml.cda.phcr.SignsAndSymptomsObservationCodeP");
-    if ((passToken instanceof Collection<?>) && ((Collection<?>) passToken).contains(signsAndSymptomsObservation)) {
-      // I have a free pass to short-circuit
-      return true;
-    }
-  	  
-    if (VALIDATE_SIGNS_AND_SYMPTOMS_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+    if (VALIDATE_SIGNS_AND_SYMPTOMS_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null)
+    {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(PhcrPackage.Literals.SIGNS_AND_SYMPTOMS_OBSERVATION);
       try
@@ -221,10 +215,9 @@ public class SignsAndSymptomsObservationOperations extends ClinicalStatementOper
             (Diagnostic.ERROR,
              PhcrValidator.DIAGNOSTIC_SOURCE,
              PhcrValidator.SIGNS_AND_SYMPTOMS_OBSERVATION__SIGNS_AND_SYMPTOMS_OBSERVATION_CODE,
-             PhcrPlugin.INSTANCE.getString("SignsAndSymptomsObservationCode"),
+             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "validateSignsAndSymptomsObservationCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(signsAndSymptomsObservation, context) }),
              new Object [] { signsAndSymptomsObservation }));
       }
-       
       return false;
     }
     return true;
@@ -254,6 +247,7 @@ public class SignsAndSymptomsObservationOperations extends ClinicalStatementOper
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
+   * self.moodCode=vocab::x_ActMoodDocumentObservation::EVN
    * @param signsAndSymptomsObservation The receiving '<em><b>Signs And Symptoms Observation</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -261,8 +255,8 @@ public class SignsAndSymptomsObservationOperations extends ClinicalStatementOper
    * @generated
    */
 	public static  boolean validateSignsAndSymptomsObservationMoodCode(SignsAndSymptomsObservation signsAndSymptomsObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
-    if (VALIDATE_SIGNS_AND_SYMPTOMS_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+    if (VALIDATE_SIGNS_AND_SYMPTOMS_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null)
+    {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(PhcrPackage.Literals.SIGNS_AND_SYMPTOMS_OBSERVATION);
       try
@@ -283,10 +277,9 @@ public class SignsAndSymptomsObservationOperations extends ClinicalStatementOper
             (Diagnostic.ERROR,
              PhcrValidator.DIAGNOSTIC_SOURCE,
              PhcrValidator.SIGNS_AND_SYMPTOMS_OBSERVATION__SIGNS_AND_SYMPTOMS_OBSERVATION_MOOD_CODE,
-             PhcrPlugin.INSTANCE.getString("SignsAndSymptomsObservationMoodCode"),
+             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "validateSignsAndSymptomsObservationMoodCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(signsAndSymptomsObservation, context) }),
              new Object [] { signsAndSymptomsObservation }));
       }
-       
       return false;
     }
     return true;
@@ -316,6 +309,7 @@ public class SignsAndSymptomsObservationOperations extends ClinicalStatementOper
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
+   * not self.negationInd.oclIsUndefined()
    * @param signsAndSymptomsObservation The receiving '<em><b>Signs And Symptoms Observation</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -323,8 +317,8 @@ public class SignsAndSymptomsObservationOperations extends ClinicalStatementOper
    * @generated
    */
 	public static  boolean validateSignsAndSymptomsObservationNegationInd(SignsAndSymptomsObservation signsAndSymptomsObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
-    if (VALIDATE_SIGNS_AND_SYMPTOMS_OBSERVATION_NEGATION_IND__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+    if (VALIDATE_SIGNS_AND_SYMPTOMS_OBSERVATION_NEGATION_IND__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null)
+    {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(PhcrPackage.Literals.SIGNS_AND_SYMPTOMS_OBSERVATION);
       try
@@ -345,10 +339,9 @@ public class SignsAndSymptomsObservationOperations extends ClinicalStatementOper
             (Diagnostic.ERROR,
              PhcrValidator.DIAGNOSTIC_SOURCE,
              PhcrValidator.SIGNS_AND_SYMPTOMS_OBSERVATION__SIGNS_AND_SYMPTOMS_OBSERVATION_NEGATION_IND,
-             PhcrPlugin.INSTANCE.getString("SignsAndSymptomsObservationNegationInd"),
+             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "validateSignsAndSymptomsObservationNegationInd", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(signsAndSymptomsObservation, context) }),
              new Object [] { signsAndSymptomsObservation }));
       }
-       
       return false;
     }
     return true;
@@ -401,6 +394,7 @@ public class SignsAndSymptomsObservationOperations extends ClinicalStatementOper
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
+   * (self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined())
    * @param signsAndSymptomsObservation The receiving '<em><b>Signs And Symptoms Observation</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -409,8 +403,8 @@ public class SignsAndSymptomsObservationOperations extends ClinicalStatementOper
    */
 	
 	public static  boolean validateSignsAndSymptomsObservationCodeP(SignsAndSymptomsObservation signsAndSymptomsObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
-    if (VALIDATE_SIGNS_AND_SYMPTOMS_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+    if (VALIDATE_SIGNS_AND_SYMPTOMS_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null)
+    {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(PhcrPackage.Literals.SIGNS_AND_SYMPTOMS_OBSERVATION);
       try
@@ -431,22 +425,9 @@ public class SignsAndSymptomsObservationOperations extends ClinicalStatementOper
             (Diagnostic.ERROR,
              PhcrValidator.DIAGNOSTIC_SOURCE,
              PhcrValidator.SIGNS_AND_SYMPTOMS_OBSERVATION__SIGNS_AND_SYMPTOMS_OBSERVATION_CODE_P,
-             PhcrPlugin.INSTANCE.getString("SignsAndSymptomsObservationCodeP"),
+             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "validateSignsAndSymptomsObservationCodeP", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(signsAndSymptomsObservation, context) }),
              new Object [] { signsAndSymptomsObservation }));
       }
-      
-      if (context != null) {
-        // generate a pass token for my dependent constraints to short-circuit or filter results
-        @SuppressWarnings("unchecked")
-        Collection<Object> passToken = (Collection<Object>) context.get("org.openhealthtools.mdht.uml.cda.phcr.SignsAndSymptomsObservationCodeP");
-        if (passToken == null) {
-          // anticipate a reasonably healthy model
-          passToken = new java.util.ArrayList<Object>(3);
-          context.put("org.openhealthtools.mdht.uml.cda.phcr.SignsAndSymptomsObservationCodeP", passToken);
-        }
-        passToken.add(signsAndSymptomsObservation);
-      }
-       
       return false;
     }
     return true;
@@ -478,6 +459,9 @@ public class SignsAndSymptomsObservationOperations extends ClinicalStatementOper
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
+   * (self.statusCode.oclIsUndefined() or self.statusCode.isNullFlavorUndefined()) implies (not self.statusCode.oclIsUndefined() and self.statusCode.oclIsKindOf(datatypes::CS) and 
+   * let value : datatypes::CS = self.statusCode.oclAsType(datatypes::CS) in 
+   * value.code = 'completed')
    * @param signsAndSymptomsObservation The receiving '<em><b>Signs And Symptoms Observation</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -485,8 +469,8 @@ public class SignsAndSymptomsObservationOperations extends ClinicalStatementOper
    * @generated
    */
 	public static  boolean validateSignsAndSymptomsObservationStatusCode(SignsAndSymptomsObservation signsAndSymptomsObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
-    if (VALIDATE_SIGNS_AND_SYMPTOMS_OBSERVATION_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+    if (VALIDATE_SIGNS_AND_SYMPTOMS_OBSERVATION_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null)
+    {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(PhcrPackage.Literals.SIGNS_AND_SYMPTOMS_OBSERVATION);
       try
@@ -507,10 +491,9 @@ public class SignsAndSymptomsObservationOperations extends ClinicalStatementOper
             (Diagnostic.ERROR,
              PhcrValidator.DIAGNOSTIC_SOURCE,
              PhcrValidator.SIGNS_AND_SYMPTOMS_OBSERVATION__SIGNS_AND_SYMPTOMS_OBSERVATION_STATUS_CODE,
-             PhcrPlugin.INSTANCE.getString("SignsAndSymptomsObservationStatusCode"),
+             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "validateSignsAndSymptomsObservationStatusCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(signsAndSymptomsObservation, context) }),
              new Object [] { signsAndSymptomsObservation }));
       }
-       
       return false;
     }
     return true;
@@ -541,6 +524,7 @@ public class SignsAndSymptomsObservationOperations extends ClinicalStatementOper
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
+   * (self.statusCode.oclIsUndefined() or self.statusCode.isNullFlavorUndefined()) implies (not self.statusCode.oclIsUndefined())
    * @param signsAndSymptomsObservation The receiving '<em><b>Signs And Symptoms Observation</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -549,8 +533,8 @@ public class SignsAndSymptomsObservationOperations extends ClinicalStatementOper
    */
 	
 	public static  boolean validateSignsAndSymptomsObservationStatusCodeP(SignsAndSymptomsObservation signsAndSymptomsObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
-    if (VALIDATE_SIGNS_AND_SYMPTOMS_OBSERVATION_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+    if (VALIDATE_SIGNS_AND_SYMPTOMS_OBSERVATION_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null)
+    {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(PhcrPackage.Literals.SIGNS_AND_SYMPTOMS_OBSERVATION);
       try
@@ -571,10 +555,9 @@ public class SignsAndSymptomsObservationOperations extends ClinicalStatementOper
             (Diagnostic.ERROR,
              PhcrValidator.DIAGNOSTIC_SOURCE,
              PhcrValidator.SIGNS_AND_SYMPTOMS_OBSERVATION__SIGNS_AND_SYMPTOMS_OBSERVATION_STATUS_CODE_P,
-             PhcrPlugin.INSTANCE.getString("SignsAndSymptomsObservationStatusCodeP"),
+             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "validateSignsAndSymptomsObservationStatusCodeP", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(signsAndSymptomsObservation, context) }),
              new Object [] { signsAndSymptomsObservation }));
       }
-       
       return false;
     }
     return true;
@@ -584,6 +567,7 @@ public class SignsAndSymptomsObservationOperations extends ClinicalStatementOper
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
+   * (self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (self.value->size() = 1 and self.value->forAll(element | element.oclIsTypeOf(datatypes::CD)))
    * @param signsAndSymptomsObservation The receiving '<em><b>Signs And Symptoms Observation</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -591,8 +575,8 @@ public class SignsAndSymptomsObservationOperations extends ClinicalStatementOper
    * @generated
    */
 	public static  boolean validateSignsAndSymptomsObservationValue(SignsAndSymptomsObservation signsAndSymptomsObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
-    if (VALIDATE_SIGNS_AND_SYMPTOMS_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+    if (VALIDATE_SIGNS_AND_SYMPTOMS_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null)
+    {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(PhcrPackage.Literals.SIGNS_AND_SYMPTOMS_OBSERVATION);
       try
@@ -613,10 +597,9 @@ public class SignsAndSymptomsObservationOperations extends ClinicalStatementOper
             (Diagnostic.ERROR,
              PhcrValidator.DIAGNOSTIC_SOURCE,
              PhcrValidator.SIGNS_AND_SYMPTOMS_OBSERVATION__SIGNS_AND_SYMPTOMS_OBSERVATION_VALUE,
-             PhcrPlugin.INSTANCE.getString("SignsAndSymptomsObservationValue"),
+             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "validateSignsAndSymptomsObservationValue", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(signsAndSymptomsObservation, context) }),
              new Object [] { signsAndSymptomsObservation }));
       }
-       
       return false;
     }
     return true;
@@ -666,6 +649,7 @@ public class SignsAndSymptomsObservationOperations extends ClinicalStatementOper
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
+   * (self.effectiveTime.oclIsUndefined() or self.effectiveTime.isNullFlavorUndefined()) implies (not self.effectiveTime.oclIsUndefined())
    * @param signsAndSymptomsObservation The receiving '<em><b>Signs And Symptoms Observation</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -673,8 +657,8 @@ public class SignsAndSymptomsObservationOperations extends ClinicalStatementOper
    * @generated
    */
 	public static  boolean validateSignsAndSymptomsObservationEffectiveTime(SignsAndSymptomsObservation signsAndSymptomsObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
-    if (VALIDATE_SIGNS_AND_SYMPTOMS_OBSERVATION_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+    if (VALIDATE_SIGNS_AND_SYMPTOMS_OBSERVATION_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null)
+    {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(PhcrPackage.Literals.SIGNS_AND_SYMPTOMS_OBSERVATION);
       try
@@ -692,13 +676,12 @@ public class SignsAndSymptomsObservationOperations extends ClinicalStatementOper
       {
         diagnostics.add
           (new BasicDiagnostic
-            (Diagnostic.WARNING,
+            (Diagnostic.ERROR,
              PhcrValidator.DIAGNOSTIC_SOURCE,
              PhcrValidator.SIGNS_AND_SYMPTOMS_OBSERVATION__SIGNS_AND_SYMPTOMS_OBSERVATION_EFFECTIVE_TIME,
-             PhcrPlugin.INSTANCE.getString("SignsAndSymptomsObservationEffectiveTime"),
+             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "validateSignsAndSymptomsObservationEffectiveTime", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(signsAndSymptomsObservation, context) }),
              new Object [] { signsAndSymptomsObservation }));
       }
-       
       return false;
     }
     return true;
