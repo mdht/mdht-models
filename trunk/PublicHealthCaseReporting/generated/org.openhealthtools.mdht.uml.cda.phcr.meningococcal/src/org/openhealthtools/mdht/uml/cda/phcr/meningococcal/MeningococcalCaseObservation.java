@@ -14,7 +14,8 @@ import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.common.util.EList;
-
+import org.eclipse.emf.ecore.EObject;
+import org.openhealthtools.mdht.emf.runtime.util.Initializer;
 import org.openhealthtools.mdht.uml.cda.phcr.CaseObservation;
 
 /**
@@ -24,7 +25,7 @@ import org.openhealthtools.mdht.uml.cda.phcr.CaseObservation;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.phcr.meningococcal.MeningococcalPackage#getMeningococcalCaseObservation()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation templateId.root='2.16.840.1.113883.10.20.15.3.138' constraints.validation.error='MeningococcalCaseObservationTemplateId' constraints.validation.warning='MeningococcalCaseObservationMeningococcalSignsAndSymptomsObservation'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='MeningococcalCaseObservationTemplateId' templateId.root='2.16.840.1.113883.10.20.15.3.138' constraints.validation.warning='MeningococcalCaseObservationMeningococcalSignsAndSymptomsObservation'"
  * @generated
  */
 public interface MeningococcalCaseObservation extends CaseObservation {
@@ -59,4 +60,11 @@ public interface MeningococcalCaseObservation extends CaseObservation {
 	 * @generated
 	 */
 	public MeningococcalCaseObservation init();
+
+	/**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    public MeningococcalCaseObservation init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // MeningococcalCaseObservation

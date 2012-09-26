@@ -10,10 +10,9 @@
  *******************************************************************************/
 package org.openhealthtools.mdht.uml.cda.phcr.hib;
 
-import java.util.Map;
-
-import org.eclipse.emf.common.util.DiagnosticChain;
-
+import java.lang.Iterable;
+import org.eclipse.emf.ecore.EObject;
+import org.openhealthtools.mdht.emf.runtime.util.Initializer;
 import org.openhealthtools.mdht.uml.cda.phcr.SignsAndSymptomsObservation;
 
 /**
@@ -23,7 +22,7 @@ import org.openhealthtools.mdht.uml.cda.phcr.SignsAndSymptomsObservation;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.phcr.hib.HibPackage#getHibSignsAndSymptoms()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation templateId.root='2.16.840.1.113883.10.20.15.3.135' constraints.validation.error='HibSignsAndSymptomsTemplateId'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='HibSignsAndSymptomsTemplateId' templateId.root='2.16.840.1.113883.10.20.15.3.135'"
  * @generated
  */
 public interface HibSignsAndSymptoms extends SignsAndSymptomsObservation {
@@ -33,4 +32,11 @@ public interface HibSignsAndSymptoms extends SignsAndSymptomsObservation {
 	 * @generated
 	 */
 	public HibSignsAndSymptoms init();
+
+	/**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    public HibSignsAndSymptoms init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // HibSignsAndSymptoms

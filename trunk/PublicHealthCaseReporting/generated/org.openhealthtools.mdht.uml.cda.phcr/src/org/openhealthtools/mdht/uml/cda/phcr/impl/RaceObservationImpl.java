@@ -21,7 +21,6 @@ import org.openhealthtools.mdht.uml.cda.impl.ObservationImpl;
 import org.openhealthtools.mdht.uml.cda.phcr.PhcrPackage;
 import org.openhealthtools.mdht.uml.cda.phcr.RaceObservation;
 import org.openhealthtools.mdht.uml.cda.phcr.operations.RaceObservationOperations;
-import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
 
 /**
  * <!-- begin-user-doc -->
@@ -123,25 +122,6 @@ public class RaceObservationImpl extends ObservationImpl implements RaceObservat
 	public boolean validateRaceObservationValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
     return RaceObservationOperations.validateRaceObservationValue(this, diagnostics, context);
   }
-
-	/**
-   * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-   * @generated
-   */
-	public RaceObservation init() {
-      return Initializer.Util.init(this);
-  }
-
-  /**
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    public RaceObservation init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-        Initializer.Util.init(this, initializers);
-        return this;
-    }
 
 	
 } //RaceObservationImpl

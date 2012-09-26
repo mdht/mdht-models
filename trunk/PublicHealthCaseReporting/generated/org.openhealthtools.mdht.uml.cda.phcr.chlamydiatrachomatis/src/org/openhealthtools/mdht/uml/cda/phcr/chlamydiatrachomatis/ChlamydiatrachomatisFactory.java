@@ -22,110 +22,110 @@ import org.eclipse.emf.ecore.EFactory;
  */
 public interface ChlamydiatrachomatisFactory extends EFactory {
 	/**
-   * The singleton instance of the factory.
-   * <!-- begin-user-doc -->
+	 * The singleton instance of the factory.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	ChlamydiatrachomatisFactory eINSTANCE = org.openhealthtools.mdht.uml.cda.phcr.chlamydiatrachomatis.impl.ChlamydiatrachomatisFactoryImpl.init();
 
 	/**
-   * Returns a new object of class '<em>Public Health Case Report</em>'.
-   * <!-- begin-user-doc -->
+	 * Returns a new object of class '<em>Public Health Case Report</em>'.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @return a new object of class '<em>Public Health Case Report</em>'.
-   * @generated
-   */
+	 * @return a new object of class '<em>Public Health Case Report</em>'.
+	 * @generated
+	 */
 	ChlamydiatrachomatisPublicHealthCaseReport createChlamydiatrachomatisPublicHealthCaseReport();
 
 	/**
-   * Returns a new object of class '<em>PHCR Clinical Information Section</em>'.
-   * <!-- begin-user-doc -->
+	 * Returns a new object of class '<em>PHCR Clinical Information Section</em>'.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @return a new object of class '<em>PHCR Clinical Information Section</em>'.
-   * @generated
-   */
+	 * @return a new object of class '<em>PHCR Clinical Information Section</em>'.
+	 * @generated
+	 */
 	ChlamydiatrachomatisPHCRClinicalInformationSection createChlamydiatrachomatisPHCRClinicalInformationSection();
 
 	/**
-   * Returns a new object of class '<em>Case Observation</em>'.
-   * <!-- begin-user-doc -->
+	 * Returns a new object of class '<em>Case Observation</em>'.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @return a new object of class '<em>Case Observation</em>'.
-   * @generated
-   */
+	 * @return a new object of class '<em>Case Observation</em>'.
+	 * @generated
+	 */
 	ChlamydiatrachomatisCaseObservation createChlamydiatrachomatisCaseObservation();
 
 	/**
-   * Returns a new object of class '<em>PHCR Relevant Dx Tests Section</em>'.
-   * <!-- begin-user-doc -->
+	 * Returns a new object of class '<em>PHCR Relevant Dx Tests Section</em>'.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @return a new object of class '<em>PHCR Relevant Dx Tests Section</em>'.
-   * @generated
-   */
+	 * @return a new object of class '<em>PHCR Relevant Dx Tests Section</em>'.
+	 * @generated
+	 */
 	ChlamydiatrachomatisPHCRRelevantDxTestsSection createChlamydiatrachomatisPHCRRelevantDxTestsSection();
 
 	/**
-   * Returns a new object of class '<em>Result Observation</em>'.
-   * <!-- begin-user-doc -->
+	 * Returns a new object of class '<em>Result Observation</em>'.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @return a new object of class '<em>Result Observation</em>'.
-   * @generated
-   */
+	 * @return a new object of class '<em>Result Observation</em>'.
+	 * @generated
+	 */
 	ChlamydiatrachomatisResultObservation createChlamydiatrachomatisResultObservation();
 
 	/**
-   * Returns a new object of class '<em>chlamydiatrachomatis Result Organizer</em>'.
-   * <!-- begin-user-doc -->
+	 * Returns a new object of class '<em>chlamydiatrachomatis Result Organizer</em>'.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @return a new object of class '<em>chlamydiatrachomatis Result Organizer</em>'.
-   * @generated
-   */
+	 * @return a new object of class '<em>chlamydiatrachomatis Result Organizer</em>'.
+	 * @generated
+	 */
 	chlamydiatrachomatisResultOrganizer createchlamydiatrachomatisResultOrganizer();
 
 	/**
-   * Returns a new object of class '<em>PHCR Treatment Information Section</em>'.
-   * <!-- begin-user-doc -->
+	 * Returns a new object of class '<em>PHCR Treatment Information Section</em>'.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @return a new object of class '<em>PHCR Treatment Information Section</em>'.
-   * @generated
-   */
+	 * @return a new object of class '<em>PHCR Treatment Information Section</em>'.
+	 * @generated
+	 */
 	ChlamydiatrachomatisPHCRTreatmentInformationSection createChlamydiatrachomatisPHCRTreatmentInformationSection();
 
 	/**
-   * Returns a new object of class '<em>Therapeutic Regimen Act</em>'.
-   * <!-- begin-user-doc -->
+	 * Returns a new object of class '<em>Therapeutic Regimen Act</em>'.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @return a new object of class '<em>Therapeutic Regimen Act</em>'.
-   * @generated
-   */
+	 * @return a new object of class '<em>Therapeutic Regimen Act</em>'.
+	 * @generated
+	 */
 	ChlamydiatrachomatisTherapeuticRegimenAct createChlamydiatrachomatisTherapeuticRegimenAct();
 
 	/**
-   * Returns a new object of class '<em>Treatment Given Substance Administration</em>'.
-   * <!-- begin-user-doc -->
+	 * Returns a new object of class '<em>Treatment Given Substance Administration</em>'.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @return a new object of class '<em>Treatment Given Substance Administration</em>'.
-   * @generated
-   */
+	 * @return a new object of class '<em>Treatment Given Substance Administration</em>'.
+	 * @generated
+	 */
 	ChlamydiatrachomatisTreatmentGivenSubstanceAdministration createChlamydiatrachomatisTreatmentGivenSubstanceAdministration();
 
 	/**
-   * Returns a new object of class '<em>Treatment Not Given Substance Administration</em>'.
-   * <!-- begin-user-doc -->
+	 * Returns a new object of class '<em>Treatment Not Given Substance Administration</em>'.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @return a new object of class '<em>Treatment Not Given Substance Administration</em>'.
-   * @generated
-   */
+	 * @return a new object of class '<em>Treatment Not Given Substance Administration</em>'.
+	 * @generated
+	 */
 	ChlamydiatrachomatisTreatmentNotGivenSubstanceAdministration createChlamydiatrachomatisTreatmentNotGivenSubstanceAdministration();
 
 	/**
-   * Returns the package supported by this factory.
-   * <!-- begin-user-doc -->
+	 * Returns the package supported by this factory.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @return the package supported by this factory.
-   * @generated
-   */
+	 * @return the package supported by this factory.
+	 * @generated
+	 */
 	ChlamydiatrachomatisPackage getChlamydiatrachomatisPackage();
 
 } //ChlamydiatrachomatisFactory

@@ -26,8 +26,6 @@ import org.openhealthtools.mdht.uml.cda.phcr.pertussis.PertussisPackage;
 
 import org.openhealthtools.mdht.uml.cda.phcr.pertussis.operations.PertussisImmunizationProductOperations;
 
-import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
-
 /**
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Immunization Product</b></em>'.
@@ -39,49 +37,51 @@ import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
  */
 public class PertussisImmunizationProductImpl extends ProductImpl implements PertussisImmunizationProduct {
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	protected PertussisImmunizationProductImpl() {
-    super();
-  }
+		super();
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	@Override
 	protected EClass eStaticClass() {
-    return PertussisPackage.Literals.PERTUSSIS_IMMUNIZATION_PRODUCT;
-  }
+		return PertussisPackage.Literals.PERTUSSIS_IMMUNIZATION_PRODUCT;
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	@Override
 	public boolean validateProductTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return PertussisImmunizationProductOperations.validateProductTemplateId(this, diagnostics, context);
-  }
+		return PertussisImmunizationProductOperations.validateProductTemplateId(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
+	@Override
 	public PertussisImmunizationProduct init() {
-      return Initializer.Util.init(this);
-  }
+	    return Initializer.Util.init(this);
+	}
 
   /**
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
      * @generated
      */
-    public PertussisImmunizationProduct init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+    @Override
+	public PertussisImmunizationProduct init(Iterable<? extends Initializer<? extends EObject>> initializers) {
         Initializer.Util.init(this, initializers);
         return this;
     }

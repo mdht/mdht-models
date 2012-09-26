@@ -26,8 +26,6 @@ import org.openhealthtools.mdht.uml.cda.phcr.hepb.HepbPackage;
 
 import org.openhealthtools.mdht.uml.cda.phcr.hepb.operations.AcuteHepatitisBImmunizationProductOperations;
 
-import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
-
 /**
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Acute Hepatitis BImmunization Product</b></em>'.
@@ -39,49 +37,51 @@ import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
  */
 public class AcuteHepatitisBImmunizationProductImpl extends ProductImpl implements AcuteHepatitisBImmunizationProduct {
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	protected AcuteHepatitisBImmunizationProductImpl() {
-    super();
-  }
+		super();
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	@Override
 	protected EClass eStaticClass() {
-    return HepbPackage.Literals.ACUTE_HEPATITIS_BIMMUNIZATION_PRODUCT;
-  }
+		return HepbPackage.Literals.ACUTE_HEPATITIS_BIMMUNIZATION_PRODUCT;
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	@Override
 	public boolean validateProductTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return AcuteHepatitisBImmunizationProductOperations.validateProductTemplateId(this, diagnostics, context);
-  }
+		return AcuteHepatitisBImmunizationProductOperations.validateProductTemplateId(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
+	@Override
 	public AcuteHepatitisBImmunizationProduct init() {
-      return Initializer.Util.init(this);
-  }
+	    return Initializer.Util.init(this);
+	}
 
   /**
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
      * @generated
      */
-    public AcuteHepatitisBImmunizationProduct init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+    @Override
+	public AcuteHepatitisBImmunizationProduct init(Iterable<? extends Initializer<? extends EObject>> initializers) {
         Initializer.Util.init(this, initializers);
         return this;
     }

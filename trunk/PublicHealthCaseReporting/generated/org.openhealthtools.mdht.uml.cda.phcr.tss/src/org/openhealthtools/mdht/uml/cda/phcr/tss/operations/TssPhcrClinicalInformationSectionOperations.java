@@ -86,6 +86,7 @@ public class TssPhcrClinicalInformationSectionOperations extends PhcrClinicalInf
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
+   * self.entry->one(entry : cda::Entry | not entry.observation.oclIsUndefined() and entry.observation.oclIsKindOf(tss::TssCaseObservation) and entry.typeCode = vocab::x_ActRelationshipEntry::DRIV)
    * @param tssPhcrClinicalInformationSection The receiving '<em><b>Tss Phcr Clinical Information Section</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -94,8 +95,8 @@ public class TssPhcrClinicalInformationSectionOperations extends PhcrClinicalInf
    */
 	
 	public static  boolean validateTssPhcrClinicalInformationSectionTssCaseObservation(TssPhcrClinicalInformationSection tssPhcrClinicalInformationSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
-    if (VALIDATE_TSS_PHCR_CLINICAL_INFORMATION_SECTION_TSS_CASE_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+    if (VALIDATE_TSS_PHCR_CLINICAL_INFORMATION_SECTION_TSS_CASE_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null)
+    {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(tssPackage.Literals.TSS_PHCR_CLINICAL_INFORMATION_SECTION);
       try
@@ -116,10 +117,9 @@ public class TssPhcrClinicalInformationSectionOperations extends PhcrClinicalInf
             (Diagnostic.ERROR,
              tssValidator.DIAGNOSTIC_SOURCE,
              tssValidator.TSS_PHCR_CLINICAL_INFORMATION_SECTION__TSS_PHCR_CLINICAL_INFORMATION_SECTION_TSS_CASE_OBSERVATION,
-             TssPlugin.INSTANCE.getString("TssPhcrClinicalInformationSectionTssCaseObservation"),
+             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "validateTssPhcrClinicalInformationSectionTssCaseObservation", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(tssPhcrClinicalInformationSection, context) }),
              new Object [] { tssPhcrClinicalInformationSection }));
       }
-       
       return false;
     }
     return true;
@@ -148,6 +148,10 @@ public class TssPhcrClinicalInformationSectionOperations extends PhcrClinicalInf
 	/**
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
+   * <!-- begin-model-doc -->
+   * self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(tss::TssCaseObservation))->asSequence()->any(true).oclAsType(tss::TssCaseObservation)
+   * @param tssPhcrClinicalInformationSection The receiving '<em><b>Tss Phcr Clinical Information Section</b></em>' model object.
+   * <!-- end-model-doc -->
    * @generated
    */
 	
@@ -195,6 +199,7 @@ public class TssPhcrClinicalInformationSectionOperations extends PhcrClinicalInf
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
+   * self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.15.2.42')
    * @param tssPhcrClinicalInformationSection The receiving '<em><b>Tss Phcr Clinical Information Section</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -203,8 +208,8 @@ public class TssPhcrClinicalInformationSectionOperations extends PhcrClinicalInf
    */
 	
 	public static  boolean validatePhcrClinicalInformationSectionTemplateId(TssPhcrClinicalInformationSection tssPhcrClinicalInformationSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
-    if (VALIDATE_PHCR_CLINICAL_INFORMATION_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+    if (VALIDATE_PHCR_CLINICAL_INFORMATION_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null)
+    {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(tssPackage.Literals.TSS_PHCR_CLINICAL_INFORMATION_SECTION);
       try
@@ -225,10 +230,9 @@ public class TssPhcrClinicalInformationSectionOperations extends PhcrClinicalInf
             (Diagnostic.ERROR,
              tssValidator.DIAGNOSTIC_SOURCE,
              tssValidator.TSS_PHCR_CLINICAL_INFORMATION_SECTION__PHCR_CLINICAL_INFORMATION_SECTION_TEMPLATE_ID,
-             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "PhcrClinicalInformationSectionTemplateId", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(tssPhcrClinicalInformationSection, context) }),
+             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "validatePhcrClinicalInformationSectionTemplateId", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(tssPhcrClinicalInformationSection, context) }),
              new Object [] { tssPhcrClinicalInformationSection }));
       }
-       
       return false;
     }
     return true;

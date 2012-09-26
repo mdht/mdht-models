@@ -34,6 +34,7 @@ public interface SilicosisPHCRSocialHistorySection extends PhcrSocialHistorySect
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
+   * self.entry->one(entry : cda::Entry | not entry.observation.oclIsUndefined() and entry.observation.oclIsKindOf(silicosis::SilicosisSocioBehavioralBooleanRiskFactorObservation) and entry.typeCode = vocab::x_ActRelationshipEntry::DRIV)
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
    * <!-- end-model-doc -->
@@ -46,6 +47,7 @@ public interface SilicosisPHCRSocialHistorySection extends PhcrSocialHistorySect
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
+   * self.entry->exists(entry : cda::Entry | not entry.act.oclIsUndefined() and entry.act.oclIsKindOf(silicosis::SilicosisPossibleExposureLocationAndTypeAct) and entry.typeCode = vocab::x_ActRelationshipEntry::DRIV)
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
    * <!-- end-model-doc -->
@@ -57,6 +59,9 @@ public interface SilicosisPHCRSocialHistorySection extends PhcrSocialHistorySect
 	/**
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
+   * <!-- begin-model-doc -->
+   * self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(silicosis::SilicosisSocioBehavioralBooleanRiskFactorObservation))->asSequence()->any(true).oclAsType(silicosis::SilicosisSocioBehavioralBooleanRiskFactorObservation)
+   * <!-- end-model-doc -->
    * @model kind="operation" required="true" ordered="false"
    *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(silicosis::SilicosisSocioBehavioralBooleanRiskFactorObservation))->asSequence()->any(true).oclAsType(silicosis::SilicosisSocioBehavioralBooleanRiskFactorObservation)'"
    * @generated
@@ -66,24 +71,13 @@ public interface SilicosisPHCRSocialHistorySection extends PhcrSocialHistorySect
 	/**
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
+   * <!-- begin-model-doc -->
+   * self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(silicosis::SilicosisPossibleExposureLocationAndTypeAct)).oclAsType(silicosis::SilicosisPossibleExposureLocationAndTypeAct)
+   * <!-- end-model-doc -->
    * @model kind="operation" required="true" ordered="false"
    *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(silicosis::SilicosisPossibleExposureLocationAndTypeAct)).oclAsType(silicosis::SilicosisPossibleExposureLocationAndTypeAct)'"
    * @generated
    */
 	EList<SilicosisPossibleExposureLocationAndTypeAct> getSilicosisPossibleExposureLocationAndTypeActs();
-
-	/**
-   * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-   * @generated
-   */
-	public SilicosisPHCRSocialHistorySection init();
-
-  /**
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    public SilicosisPHCRSocialHistorySection init(Iterable<? extends Initializer<? extends EObject>> initializers);
 
 } // SilicosisPHCRSocialHistorySection

@@ -26,8 +26,6 @@ import org.openhealthtools.mdht.uml.cda.phcr.hepb.JobRelatedBodyFluidExposureRis
 
 import org.openhealthtools.mdht.uml.cda.phcr.hepb.operations.JobRelatedBodyFluidExposureRiskFrequencyObservationOperations;
 
-import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
-
 /**
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Job Related Body Fluid Exposure Risk Frequency Observation</b></em>'.
@@ -39,106 +37,86 @@ import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
  */
 public class JobRelatedBodyFluidExposureRiskFrequencyObservationImpl extends ObservationImpl implements JobRelatedBodyFluidExposureRiskFrequencyObservation {
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	protected JobRelatedBodyFluidExposureRiskFrequencyObservationImpl() {
-    super();
-  }
+		super();
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	@Override
 	protected EClass eStaticClass() {
-    return HepbPackage.Literals.JOB_RELATED_BODY_FLUID_EXPOSURE_RISK_FREQUENCY_OBSERVATION;
-  }
+		return HepbPackage.Literals.JOB_RELATED_BODY_FLUID_EXPOSURE_RISK_FREQUENCY_OBSERVATION;
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public boolean validateJobRelatedBodyFluidExposureRiskFrequencyObservationTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return JobRelatedBodyFluidExposureRiskFrequencyObservationOperations.validateJobRelatedBodyFluidExposureRiskFrequencyObservationTemplateId(this, diagnostics, context);
-  }
+		return JobRelatedBodyFluidExposureRiskFrequencyObservationOperations.validateJobRelatedBodyFluidExposureRiskFrequencyObservationTemplateId(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public boolean validateJobRelatedBodyFluidExposureRiskFrequencyObservationCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return JobRelatedBodyFluidExposureRiskFrequencyObservationOperations.validateJobRelatedBodyFluidExposureRiskFrequencyObservationCode(this, diagnostics, context);
-  }
+		return JobRelatedBodyFluidExposureRiskFrequencyObservationOperations.validateJobRelatedBodyFluidExposureRiskFrequencyObservationCode(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public boolean validateJobRelatedBodyFluidExposureRiskFrequencyObservationStatusCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return JobRelatedBodyFluidExposureRiskFrequencyObservationOperations.validateJobRelatedBodyFluidExposureRiskFrequencyObservationStatusCode(this, diagnostics, context);
-  }
+		return JobRelatedBodyFluidExposureRiskFrequencyObservationOperations.validateJobRelatedBodyFluidExposureRiskFrequencyObservationStatusCode(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public boolean validateJobRelatedBodyFluidExposureRiskFrequencyObservationStatusCodeP(DiagnosticChain diagnostics, Map<Object, Object> context)
-  {
-    return JobRelatedBodyFluidExposureRiskFrequencyObservationOperations.validateJobRelatedBodyFluidExposureRiskFrequencyObservationStatusCodeP(this, diagnostics, context);
-  }
-
-  /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public boolean validateJobRelatedBodyFluidExposureRiskFrequencyObservationValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return JobRelatedBodyFluidExposureRiskFrequencyObservationOperations.validateJobRelatedBodyFluidExposureRiskFrequencyObservationValue(this, diagnostics, context);
-  }
+		return JobRelatedBodyFluidExposureRiskFrequencyObservationOperations.validateJobRelatedBodyFluidExposureRiskFrequencyObservationValue(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public boolean validateJobRelatedBodyFluidExposureRiskFrequencyObservationValueP(DiagnosticChain diagnostics, Map<Object, Object> context)
-  {
-    return JobRelatedBodyFluidExposureRiskFrequencyObservationOperations.validateJobRelatedBodyFluidExposureRiskFrequencyObservationValueP(this, diagnostics, context);
-  }
-
-  /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public boolean validateJobRelatedBodyFluidExposureRiskFrequencyObservationClassCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return JobRelatedBodyFluidExposureRiskFrequencyObservationOperations.validateJobRelatedBodyFluidExposureRiskFrequencyObservationClassCode(this, diagnostics, context);
-  }
+		return JobRelatedBodyFluidExposureRiskFrequencyObservationOperations.validateJobRelatedBodyFluidExposureRiskFrequencyObservationClassCode(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public boolean validateJobRelatedBodyFluidExposureRiskFrequencyObservationMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return JobRelatedBodyFluidExposureRiskFrequencyObservationOperations.validateJobRelatedBodyFluidExposureRiskFrequencyObservationMoodCode(this, diagnostics, context);
-  }
+		return JobRelatedBodyFluidExposureRiskFrequencyObservationOperations.validateJobRelatedBodyFluidExposureRiskFrequencyObservationMoodCode(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public JobRelatedBodyFluidExposureRiskFrequencyObservation init() {
-      return Initializer.Util.init(this);
-  }
+	    return Initializer.Util.init(this);
+	}
 
   /**
      * <!-- begin-user-doc -->

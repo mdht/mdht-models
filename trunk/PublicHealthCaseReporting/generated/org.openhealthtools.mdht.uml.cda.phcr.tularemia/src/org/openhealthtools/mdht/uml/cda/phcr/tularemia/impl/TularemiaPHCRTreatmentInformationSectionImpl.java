@@ -22,7 +22,6 @@ import org.openhealthtools.mdht.uml.cda.phcr.tularemia.TularemiaPHCRTreatmentInf
 import org.openhealthtools.mdht.uml.cda.phcr.tularemia.TularemiaPackage;
 import org.openhealthtools.mdht.uml.cda.phcr.tularemia.TularemiaTherapeuticRegimenAct;
 import org.openhealthtools.mdht.uml.cda.phcr.tularemia.operations.TularemiaPHCRTreatmentInformationSectionOperations;
-import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
 
 /**
  * <!-- begin-user-doc -->
@@ -35,67 +34,69 @@ import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
  */
 public class TularemiaPHCRTreatmentInformationSectionImpl extends PhcrTreatmentInformationSectionImpl implements TularemiaPHCRTreatmentInformationSection {
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	protected TularemiaPHCRTreatmentInformationSectionImpl() {
-    super();
-  }
+		super();
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	@Override
 	protected EClass eStaticClass() {
-    return TularemiaPackage.Literals.TULAREMIA_PHCR_TREATMENT_INFORMATION_SECTION;
-  }
+		return TularemiaPackage.Literals.TULAREMIA_PHCR_TREATMENT_INFORMATION_SECTION;
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public boolean validateTularemiaPHCRTreatmentInformationSectionTularemiaTherapeuticRegimenAct(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return TularemiaPHCRTreatmentInformationSectionOperations.validateTularemiaPHCRTreatmentInformationSectionTularemiaTherapeuticRegimenAct(this, diagnostics, context);
-  }
+		return TularemiaPHCRTreatmentInformationSectionOperations.validateTularemiaPHCRTreatmentInformationSectionTularemiaTherapeuticRegimenAct(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public TularemiaTherapeuticRegimenAct getTularemiaTherapeuticRegimenAct() {
-    return TularemiaPHCRTreatmentInformationSectionOperations.getTularemiaTherapeuticRegimenAct(this);
-  }
+		return TularemiaPHCRTreatmentInformationSectionOperations.getTularemiaTherapeuticRegimenAct(this);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	@Override
 	public boolean validatePhcrTreatmentInformationSectionTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return TularemiaPHCRTreatmentInformationSectionOperations.validatePhcrTreatmentInformationSectionTemplateId(this, diagnostics, context);
-  }
+		return TularemiaPHCRTreatmentInformationSectionOperations.validatePhcrTreatmentInformationSectionTemplateId(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
+	@Override
 	public TularemiaPHCRTreatmentInformationSection init() {
-      return Initializer.Util.init(this);
-  }
+	    return Initializer.Util.init(this);
+	}
 
   /**
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
      * @generated
      */
-    public TularemiaPHCRTreatmentInformationSection init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+    @Override
+	public TularemiaPHCRTreatmentInformationSection init(Iterable<? extends Initializer<? extends EObject>> initializers) {
         Initializer.Util.init(this, initializers);
         return this;
     }

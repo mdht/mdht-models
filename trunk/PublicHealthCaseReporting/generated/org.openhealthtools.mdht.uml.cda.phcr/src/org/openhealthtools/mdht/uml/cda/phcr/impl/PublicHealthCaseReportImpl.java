@@ -27,7 +27,6 @@ import org.openhealthtools.mdht.uml.cda.phcr.PhcrSocialHistorySection;
 import org.openhealthtools.mdht.uml.cda.phcr.PhcrTreatmentInformationSection;
 import org.openhealthtools.mdht.uml.cda.phcr.PublicHealthCaseReport;
 import org.openhealthtools.mdht.uml.cda.phcr.operations.PublicHealthCaseReportOperations;
-import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
 
 /**
  * <!-- begin-user-doc -->
@@ -336,23 +335,4 @@ public class PublicHealthCaseReportImpl extends ClinicalDocumentImpl implements 
 	public ImmunizationsSection getImmunizationsSection() {
     return PublicHealthCaseReportOperations.getImmunizationsSection(this);
   }
-
-	/**
-   * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-   * @generated
-   */
-	public PublicHealthCaseReport init() {
-      return Initializer.Util.init(this);
-  }
-
-  /**
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    public PublicHealthCaseReport init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-        Initializer.Util.init(this, initializers);
-        return this;
-    }
 } //PublicHealthCaseReportImpl

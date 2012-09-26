@@ -82,6 +82,7 @@ public class WestNileVirusCaseReportOperations extends PublicHealthCaseReportOpe
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
+   * (self.title.oclIsUndefined() or self.title.isNullFlavorUndefined()) implies (self.title.getText() = 'Public Health Case Report - West Nile Virus')
    * @param westNileVirusCaseReport The receiving '<em><b>West Nile Virus Case Report</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -90,8 +91,8 @@ public class WestNileVirusCaseReportOperations extends PublicHealthCaseReportOpe
    */
   public static  boolean validateWestNileVirusCaseReportTitle(WestNileVirusCaseReport westNileVirusCaseReport, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
-  	  
-    if (VALIDATE_WEST_NILE_VIRUS_CASE_REPORT_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+    if (VALIDATE_WEST_NILE_VIRUS_CASE_REPORT_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null)
+    {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(WnvPackage.Literals.WEST_NILE_VIRUS_CASE_REPORT);
       try
@@ -112,10 +113,9 @@ public class WestNileVirusCaseReportOperations extends PublicHealthCaseReportOpe
             (Diagnostic.ERROR,
              WnvValidator.DIAGNOSTIC_SOURCE,
              WnvValidator.WEST_NILE_VIRUS_CASE_REPORT__WEST_NILE_VIRUS_CASE_REPORT_TITLE,
-             WnvPlugin.INSTANCE.getString("WestNileVirusCaseReportTitle"),
+             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "validateWestNileVirusCaseReportTitle", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(westNileVirusCaseReport, context) }),
              new Object [] { westNileVirusCaseReport }));
       }
-       
       return false;
     }
     return true;
@@ -145,6 +145,7 @@ public class WestNileVirusCaseReportOperations extends PublicHealthCaseReportOpe
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
+   * self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(wnv::WnvPhcrClinicalInformationSection))
    * @param westNileVirusCaseReport The receiving '<em><b>West Nile Virus Case Report</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -153,8 +154,8 @@ public class WestNileVirusCaseReportOperations extends PublicHealthCaseReportOpe
    */
   public static  boolean validateWestNileVirusCaseReportWnvPhcrClinicalInformationSection(WestNileVirusCaseReport westNileVirusCaseReport, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
-  	  
-    if (VALIDATE_WEST_NILE_VIRUS_CASE_REPORT_WNV_PHCR_CLINICAL_INFORMATION_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+    if (VALIDATE_WEST_NILE_VIRUS_CASE_REPORT_WNV_PHCR_CLINICAL_INFORMATION_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null)
+    {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(WnvPackage.Literals.WEST_NILE_VIRUS_CASE_REPORT);
       try
@@ -175,10 +176,9 @@ public class WestNileVirusCaseReportOperations extends PublicHealthCaseReportOpe
             (Diagnostic.ERROR,
              WnvValidator.DIAGNOSTIC_SOURCE,
              WnvValidator.WEST_NILE_VIRUS_CASE_REPORT__WEST_NILE_VIRUS_CASE_REPORT_WNV_PHCR_CLINICAL_INFORMATION_SECTION,
-             WnvPlugin.INSTANCE.getString("WestNileVirusCaseReportWnvPhcrClinicalInformationSection"),
+             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "validateWestNileVirusCaseReportWnvPhcrClinicalInformationSection", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(westNileVirusCaseReport, context) }),
              new Object [] { westNileVirusCaseReport }));
       }
-       
       return false;
     }
     return true;
@@ -208,6 +208,7 @@ public class WestNileVirusCaseReportOperations extends PublicHealthCaseReportOpe
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
+   * self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(wnv::WnvPhcrRelevantDxTestsSection))
    * @param westNileVirusCaseReport The receiving '<em><b>West Nile Virus Case Report</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -216,8 +217,8 @@ public class WestNileVirusCaseReportOperations extends PublicHealthCaseReportOpe
    */
   public static  boolean validateWestNileVirusCaseReportWnvPhcrRelevantDxTestsSection(WestNileVirusCaseReport westNileVirusCaseReport, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
-  	  
-    if (VALIDATE_WEST_NILE_VIRUS_CASE_REPORT_WNV_PHCR_RELEVANT_DX_TESTS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+    if (VALIDATE_WEST_NILE_VIRUS_CASE_REPORT_WNV_PHCR_RELEVANT_DX_TESTS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null)
+    {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(WnvPackage.Literals.WEST_NILE_VIRUS_CASE_REPORT);
       try
@@ -235,13 +236,12 @@ public class WestNileVirusCaseReportOperations extends PublicHealthCaseReportOpe
       {
         diagnostics.add
           (new BasicDiagnostic
-            (Diagnostic.WARNING,
+            (Diagnostic.ERROR,
              WnvValidator.DIAGNOSTIC_SOURCE,
              WnvValidator.WEST_NILE_VIRUS_CASE_REPORT__WEST_NILE_VIRUS_CASE_REPORT_WNV_PHCR_RELEVANT_DX_TESTS_SECTION,
-             WnvPlugin.INSTANCE.getString("WestNileVirusCaseReportWnvPhcrRelevantDxTestsSection"),
+             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "validateWestNileVirusCaseReportWnvPhcrRelevantDxTestsSection", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(westNileVirusCaseReport, context) }),
              new Object [] { westNileVirusCaseReport }));
       }
-       
       return false;
     }
     return true;
@@ -270,6 +270,10 @@ public class WestNileVirusCaseReportOperations extends PublicHealthCaseReportOpe
   /**
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
+   * <!-- begin-model-doc -->
+   * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(wnv::WnvPhcrClinicalInformationSection))->asSequence()->any(true).oclAsType(wnv::WnvPhcrClinicalInformationSection)
+   * @param westNileVirusCaseReport The receiving '<em><b>West Nile Virus Case Report</b></em>' model object.
+   * <!-- end-model-doc -->
    * @generated
    */
   public static  WnvPhcrClinicalInformationSection getWnvPhcrClinicalInformationSection(WestNileVirusCaseReport westNileVirusCaseReport)
@@ -314,6 +318,10 @@ public class WestNileVirusCaseReportOperations extends PublicHealthCaseReportOpe
   /**
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
+   * <!-- begin-model-doc -->
+   * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(wnv::WnvPhcrRelevantDxTestsSection))->asSequence()->any(true).oclAsType(wnv::WnvPhcrRelevantDxTestsSection)
+   * @param westNileVirusCaseReport The receiving '<em><b>West Nile Virus Case Report</b></em>' model object.
+   * <!-- end-model-doc -->
    * @generated
    */
   public static  WnvPhcrRelevantDxTestsSection getWnvPhcrRelevantDxTestsSection(WestNileVirusCaseReport westNileVirusCaseReport)
@@ -359,6 +367,7 @@ public class WestNileVirusCaseReportOperations extends PublicHealthCaseReportOpe
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
+   * self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.15.1.7')
    * @param westNileVirusCaseReport The receiving '<em><b>West Nile Virus Case Report</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -367,8 +376,8 @@ public class WestNileVirusCaseReportOperations extends PublicHealthCaseReportOpe
    */
   public static  boolean validatePublicHealthCaseReportTemplateId(WestNileVirusCaseReport westNileVirusCaseReport, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
-  	  
-    if (VALIDATE_PUBLIC_HEALTH_CASE_REPORT_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+    if (VALIDATE_PUBLIC_HEALTH_CASE_REPORT_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null)
+    {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(WnvPackage.Literals.WEST_NILE_VIRUS_CASE_REPORT);
       try
@@ -389,10 +398,9 @@ public class WestNileVirusCaseReportOperations extends PublicHealthCaseReportOpe
             (Diagnostic.ERROR,
              WnvValidator.DIAGNOSTIC_SOURCE,
              WnvValidator.WEST_NILE_VIRUS_CASE_REPORT__PUBLIC_HEALTH_CASE_REPORT_TEMPLATE_ID,
-             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "PublicHealthCaseReportTemplateId", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(westNileVirusCaseReport, context) }),
+             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "validatePublicHealthCaseReportTemplateId", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(westNileVirusCaseReport, context) }),
              new Object [] { westNileVirusCaseReport }));
       }
-       
       return false;
     }
     return true;

@@ -11,7 +11,10 @@
 package org.openhealthtools.mdht.uml.cda.phcr.meningococcal;
 
 import java.util.Map;
+
 import org.eclipse.emf.common.util.DiagnosticChain;
+import org.eclipse.emf.ecore.EObject;
+import org.openhealthtools.mdht.emf.runtime.util.Initializer;
 import org.openhealthtools.mdht.uml.cda.phcr.PublicHealthCaseReport;
 
 /**
@@ -21,7 +24,7 @@ import org.openhealthtools.mdht.uml.cda.phcr.PublicHealthCaseReport;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.phcr.meningococcal.MeningococcalPackage#getMeningococcalCaseReport()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation title.mixed='Public Health Case Report - Meningococcal' templateId.root='2.16.840.1.113883.10.20.15.1.15' constraints.validation.error='MeningococcalCaseReportTemplateId MeningococcalCaseReportTitle MeningococcalCaseReportMeningococcalPhcrClinicalInformationSection' constraints.validation.warning='MeningococcalCaseReportMeningococcalPhcrRelevantDxTestsSection'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='MeningococcalCaseReportTemplateId MeningococcalCaseReportTitle MeningococcalCaseReportMeningococcalPhcrClinicalInformationSection' templateId.root='2.16.840.1.113883.10.20.15.1.15' title.mixed='Public Health Case Report - Meningococcal' constraints.validation.warning='MeningococcalCaseReportMeningococcalPhcrRelevantDxTestsSection'"
  * @generated
  */
 public interface MeningococcalCaseReport extends PublicHealthCaseReport
@@ -69,10 +72,10 @@ public interface MeningococcalCaseReport extends PublicHealthCaseReport
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(meningococcal::MeningococcalPhcrClinicalInformationSection))->asSequence()->first().oclAsType(meningococcal::MeningococcalPhcrClinicalInformationSection)
+	 * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(meningococcal::MeningococcalPhcrClinicalInformationSection))->asSequence()->any(true).oclAsType(meningococcal::MeningococcalPhcrClinicalInformationSection)
 	 * <!-- end-model-doc -->
 	 * @model kind="operation" required="true" ordered="false"
-	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(meningococcal::MeningococcalPhcrClinicalInformationSection))->asSequence()->first().oclAsType(meningococcal::MeningococcalPhcrClinicalInformationSection)'"
+	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(meningococcal::MeningococcalPhcrClinicalInformationSection))->asSequence()->any(true).oclAsType(meningococcal::MeningococcalPhcrClinicalInformationSection)'"
 	 * @generated
 	 */
 	MeningococcalPhcrClinicalInformationSection getMeningococcalPhcrClinicalInformationSection();
@@ -81,10 +84,10 @@ public interface MeningococcalCaseReport extends PublicHealthCaseReport
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(meningococcal::MeningococcalPhcrRelevantDxTestsSection))->asSequence()->first().oclAsType(meningococcal::MeningococcalPhcrRelevantDxTestsSection)
+	 * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(meningococcal::MeningococcalPhcrRelevantDxTestsSection))->asSequence()->any(true).oclAsType(meningococcal::MeningococcalPhcrRelevantDxTestsSection)
 	 * <!-- end-model-doc -->
 	 * @model kind="operation" required="true" ordered="false"
-	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(meningococcal::MeningococcalPhcrRelevantDxTestsSection))->asSequence()->first().oclAsType(meningococcal::MeningococcalPhcrRelevantDxTestsSection)'"
+	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(meningococcal::MeningococcalPhcrRelevantDxTestsSection))->asSequence()->any(true).oclAsType(meningococcal::MeningococcalPhcrRelevantDxTestsSection)'"
 	 * @generated
 	 */
 	MeningococcalPhcrRelevantDxTestsSection getMeningococcalPhcrRelevantDxTestsSection();
@@ -95,4 +98,11 @@ public interface MeningococcalCaseReport extends PublicHealthCaseReport
 	 * @generated
 	 */
   public MeningococcalCaseReport init();
+
+		/**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    public MeningococcalCaseReport init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // MeningococcalCaseReport

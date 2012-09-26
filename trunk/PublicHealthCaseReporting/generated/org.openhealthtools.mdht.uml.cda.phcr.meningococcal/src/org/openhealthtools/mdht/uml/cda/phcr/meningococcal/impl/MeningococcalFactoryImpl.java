@@ -13,12 +13,17 @@ package org.openhealthtools.mdht.uml.cda.phcr.meningococcal.impl;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EObject;
 import org.eclipse.emf.ecore.EPackage;
-
 import org.eclipse.emf.ecore.impl.EFactoryImpl;
-
 import org.eclipse.emf.ecore.plugin.EcorePlugin;
-
-import org.openhealthtools.mdht.uml.cda.phcr.meningococcal.*;
+import org.openhealthtools.mdht.uml.cda.phcr.meningococcal.MeningococcalCaseObservation;
+import org.openhealthtools.mdht.uml.cda.phcr.meningococcal.MeningococcalCaseReport;
+import org.openhealthtools.mdht.uml.cda.phcr.meningococcal.MeningococcalFactory;
+import org.openhealthtools.mdht.uml.cda.phcr.meningococcal.MeningococcalPackage;
+import org.openhealthtools.mdht.uml.cda.phcr.meningococcal.MeningococcalPhcrClinicalInformationSection;
+import org.openhealthtools.mdht.uml.cda.phcr.meningococcal.MeningococcalPhcrRelevantDxTestsSection;
+import org.openhealthtools.mdht.uml.cda.phcr.meningococcal.MeningococcalResultObservation;
+import org.openhealthtools.mdht.uml.cda.phcr.meningococcal.MeningococcalResultOrganizer;
+import org.openhealthtools.mdht.uml.cda.phcr.meningococcal.MeningococcalSignsAndSymptomsObservation;
 
 /**
  * <!-- begin-user-doc -->

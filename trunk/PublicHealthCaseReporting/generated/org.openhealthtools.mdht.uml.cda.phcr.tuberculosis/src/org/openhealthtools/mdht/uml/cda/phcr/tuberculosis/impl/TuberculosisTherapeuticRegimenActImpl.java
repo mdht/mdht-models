@@ -29,8 +29,6 @@ import org.openhealthtools.mdht.uml.cda.phcr.tuberculosis.TuberculosisTreatmentN
 
 import org.openhealthtools.mdht.uml.cda.phcr.tuberculosis.operations.TuberculosisTherapeuticRegimenActOperations;
 
-import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
-
 /**
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Therapeutic Regimen Act</b></em>'.
@@ -42,85 +40,87 @@ import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
  */
 public class TuberculosisTherapeuticRegimenActImpl extends TherapeuticRegimenActImpl implements TuberculosisTherapeuticRegimenAct {
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	protected TuberculosisTherapeuticRegimenActImpl() {
-    super();
-  }
+		super();
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	@Override
 	protected EClass eStaticClass() {
-    return TuberculosisPackage.Literals.TUBERCULOSIS_THERAPEUTIC_REGIMEN_ACT;
-  }
+		return TuberculosisPackage.Literals.TUBERCULOSIS_THERAPEUTIC_REGIMEN_ACT;
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public boolean validateTuberculosisTherapeuticRegimenActTuberculosisTreatmentGivenSubstanceAdministration(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return TuberculosisTherapeuticRegimenActOperations.validateTuberculosisTherapeuticRegimenActTuberculosisTreatmentGivenSubstanceAdministration(this, diagnostics, context);
-  }
+		return TuberculosisTherapeuticRegimenActOperations.validateTuberculosisTherapeuticRegimenActTuberculosisTreatmentGivenSubstanceAdministration(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public boolean validateTuberculosisTherapeuticRegimenActTuberculosisTreatmentNotGivenSubstanceAdministration(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return TuberculosisTherapeuticRegimenActOperations.validateTuberculosisTherapeuticRegimenActTuberculosisTreatmentNotGivenSubstanceAdministration(this, diagnostics, context);
-  }
+		return TuberculosisTherapeuticRegimenActOperations.validateTuberculosisTherapeuticRegimenActTuberculosisTreatmentNotGivenSubstanceAdministration(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public EList<TuberculosisTreatmentGivenSubstanceAdministration> getTuberculosisTreatmentGivenSubstanceAdministrations() {
-    return TuberculosisTherapeuticRegimenActOperations.getTuberculosisTreatmentGivenSubstanceAdministrations(this);
-  }
+		return TuberculosisTherapeuticRegimenActOperations.getTuberculosisTreatmentGivenSubstanceAdministrations(this);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public EList<TuberculosisTreatmentNotGivenSubstanceAdministration> getTuberculosisTreatmentNotGivenSubstanceAdministrations() {
-    return TuberculosisTherapeuticRegimenActOperations.getTuberculosisTreatmentNotGivenSubstanceAdministrations(this);
-  }
+		return TuberculosisTherapeuticRegimenActOperations.getTuberculosisTreatmentNotGivenSubstanceAdministrations(this);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	@Override
 	public boolean validateTherapeuticRegimenActTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return TuberculosisTherapeuticRegimenActOperations.validateTherapeuticRegimenActTemplateId(this, diagnostics, context);
-  }
+		return TuberculosisTherapeuticRegimenActOperations.validateTherapeuticRegimenActTemplateId(this, diagnostics, context);
+	}
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
-  public TuberculosisTherapeuticRegimenAct init() {
-      return Initializer.Util.init(this);
-  }
+	 * @generated
+	 */
+  @Override
+public TuberculosisTherapeuticRegimenAct init() {
+	    return Initializer.Util.init(this);
+	}
 
   /**
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
      * @generated
      */
-    public TuberculosisTherapeuticRegimenAct init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+    @Override
+	public TuberculosisTherapeuticRegimenAct init(Iterable<? extends Initializer<? extends EObject>> initializers) {
         Initializer.Util.init(this, initializers);
         return this;
     }

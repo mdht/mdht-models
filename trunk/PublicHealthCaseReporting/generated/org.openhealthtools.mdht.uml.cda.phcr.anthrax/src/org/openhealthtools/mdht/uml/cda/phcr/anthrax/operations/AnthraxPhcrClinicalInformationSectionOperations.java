@@ -86,6 +86,7 @@ public class AnthraxPhcrClinicalInformationSectionOperations extends PhcrClinica
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
+   * self.entry->one(entry : cda::Entry | not entry.observation.oclIsUndefined() and entry.observation.oclIsKindOf(anthrax::AnthraxCaseObservation) and entry.typeCode = vocab::x_ActRelationshipEntry::DRIV)
    * @param anthraxPhcrClinicalInformationSection The receiving '<em><b>Phcr Clinical Information Section</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -94,8 +95,8 @@ public class AnthraxPhcrClinicalInformationSectionOperations extends PhcrClinica
    */
 	
 	public static  boolean validateAnthraxPhcrClinicalInformationSectionAnthraxCaseObservation(AnthraxPhcrClinicalInformationSection anthraxPhcrClinicalInformationSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
-    if (VALIDATE_ANTHRAX_PHCR_CLINICAL_INFORMATION_SECTION_ANTHRAX_CASE_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+    if (VALIDATE_ANTHRAX_PHCR_CLINICAL_INFORMATION_SECTION_ANTHRAX_CASE_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null)
+    {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(AnthraxPackage.Literals.ANTHRAX_PHCR_CLINICAL_INFORMATION_SECTION);
       try
@@ -116,10 +117,9 @@ public class AnthraxPhcrClinicalInformationSectionOperations extends PhcrClinica
             (Diagnostic.ERROR,
              AnthraxValidator.DIAGNOSTIC_SOURCE,
              AnthraxValidator.ANTHRAX_PHCR_CLINICAL_INFORMATION_SECTION__ANTHRAX_PHCR_CLINICAL_INFORMATION_SECTION_ANTHRAX_CASE_OBSERVATION,
-             AnthraxPlugin.INSTANCE.getString("AnthraxPhcrClinicalInformationSectionAnthraxCaseObservation"),
+             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "validateAnthraxPhcrClinicalInformationSectionAnthraxCaseObservation", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(anthraxPhcrClinicalInformationSection, context) }),
              new Object [] { anthraxPhcrClinicalInformationSection }));
       }
-       
       return false;
     }
     return true;
@@ -148,6 +148,10 @@ public class AnthraxPhcrClinicalInformationSectionOperations extends PhcrClinica
 	/**
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
+   * <!-- begin-model-doc -->
+   * self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(anthrax::AnthraxCaseObservation))->asSequence()->any(true).oclAsType(anthrax::AnthraxCaseObservation)
+   * @param anthraxPhcrClinicalInformationSection The receiving '<em><b>Phcr Clinical Information Section</b></em>' model object.
+   * <!-- end-model-doc -->
    * @generated
    */
 	
@@ -195,6 +199,7 @@ public class AnthraxPhcrClinicalInformationSectionOperations extends PhcrClinica
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
+   * self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.15.2.15')
    * @param anthraxPhcrClinicalInformationSection The receiving '<em><b>Phcr Clinical Information Section</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -203,8 +208,8 @@ public class AnthraxPhcrClinicalInformationSectionOperations extends PhcrClinica
    */
 	
 	public static  boolean validatePhcrClinicalInformationSectionTemplateId(AnthraxPhcrClinicalInformationSection anthraxPhcrClinicalInformationSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
-    if (VALIDATE_PHCR_CLINICAL_INFORMATION_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+    if (VALIDATE_PHCR_CLINICAL_INFORMATION_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null)
+    {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(AnthraxPackage.Literals.ANTHRAX_PHCR_CLINICAL_INFORMATION_SECTION);
       try
@@ -225,10 +230,9 @@ public class AnthraxPhcrClinicalInformationSectionOperations extends PhcrClinica
             (Diagnostic.ERROR,
              AnthraxValidator.DIAGNOSTIC_SOURCE,
              AnthraxValidator.ANTHRAX_PHCR_CLINICAL_INFORMATION_SECTION__PHCR_CLINICAL_INFORMATION_SECTION_TEMPLATE_ID,
-             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "PhcrClinicalInformationSectionTemplateId", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(anthraxPhcrClinicalInformationSection, context) }),
+             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "validatePhcrClinicalInformationSectionTemplateId", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(anthraxPhcrClinicalInformationSection, context) }),
              new Object [] { anthraxPhcrClinicalInformationSection }));
       }
-       
       return false;
     }
     return true;

@@ -26,8 +26,6 @@ import org.openhealthtools.mdht.uml.cda.phcr.tuberculosis.TuberculosisSocioBehav
 
 import org.openhealthtools.mdht.uml.cda.phcr.tuberculosis.operations.TuberculosisSocioBehavioralBooleanRiskFactorObservationOperations;
 
-import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
-
 /**
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Socio Behavioral Boolean Risk Factor Observation</b></em>'.
@@ -39,96 +37,78 @@ import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
  */
 public class TuberculosisSocioBehavioralBooleanRiskFactorObservationImpl extends SocialHistoryObservationImpl implements TuberculosisSocioBehavioralBooleanRiskFactorObservation {
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	protected TuberculosisSocioBehavioralBooleanRiskFactorObservationImpl() {
-    super();
-  }
+		super();
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	@Override
 	protected EClass eStaticClass() {
-    return TuberculosisPackage.Literals.TUBERCULOSIS_SOCIO_BEHAVIORAL_BOOLEAN_RISK_FACTOR_OBSERVATION;
-  }
+		return TuberculosisPackage.Literals.TUBERCULOSIS_SOCIO_BEHAVIORAL_BOOLEAN_RISK_FACTOR_OBSERVATION;
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public boolean validateTuberculosisSocioBehavioralBooleanRiskFactorObservationEffectiveTime(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return TuberculosisSocioBehavioralBooleanRiskFactorObservationOperations.validateTuberculosisSocioBehavioralBooleanRiskFactorObservationEffectiveTime(this, diagnostics, context);
-  }
+		return TuberculosisSocioBehavioralBooleanRiskFactorObservationOperations.validateTuberculosisSocioBehavioralBooleanRiskFactorObservationEffectiveTime(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public boolean validateTuberculosisSocioBehavioralBooleanRiskFactorObservationNegationInd(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return TuberculosisSocioBehavioralBooleanRiskFactorObservationOperations.validateTuberculosisSocioBehavioralBooleanRiskFactorObservationNegationInd(this, diagnostics, context);
-  }
+		return TuberculosisSocioBehavioralBooleanRiskFactorObservationOperations.validateTuberculosisSocioBehavioralBooleanRiskFactorObservationNegationInd(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public boolean validateTuberculosisSocioBehavioralBooleanRiskFactorObservationValue(DiagnosticChain diagnostics, Map<Object, Object> context)
-  {
-    return TuberculosisSocioBehavioralBooleanRiskFactorObservationOperations.validateTuberculosisSocioBehavioralBooleanRiskFactorObservationValue(this, diagnostics, context);
-  }
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public boolean validateTuberculosisSocioBehavioralBooleanRiskFactorObservationCodeP(DiagnosticChain diagnostics, Map<Object, Object> context)
-  {
-    return TuberculosisSocioBehavioralBooleanRiskFactorObservationOperations.validateTuberculosisSocioBehavioralBooleanRiskFactorObservationCodeP(this, diagnostics, context);
-  }
-
-  /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public boolean validateTuberculosisSocioBehavioralBooleanRiskFactorObservationCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return TuberculosisSocioBehavioralBooleanRiskFactorObservationOperations.validateTuberculosisSocioBehavioralBooleanRiskFactorObservationCode(this, diagnostics, context);
-  }
+		return TuberculosisSocioBehavioralBooleanRiskFactorObservationOperations.validateTuberculosisSocioBehavioralBooleanRiskFactorObservationCode(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	@Override
 	public boolean validateSocialHistoryObservationTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return TuberculosisSocioBehavioralBooleanRiskFactorObservationOperations.validateSocialHistoryObservationTemplateId(this, diagnostics, context);
-  }
+		return TuberculosisSocioBehavioralBooleanRiskFactorObservationOperations.validateSocialHistoryObservationTemplateId(this, diagnostics, context);
+	}
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
-  public TuberculosisSocioBehavioralBooleanRiskFactorObservation init() {
-      return Initializer.Util.init(this);
-  }
+	 * @generated
+	 */
+  @Override
+public TuberculosisSocioBehavioralBooleanRiskFactorObservation init() {
+	    return Initializer.Util.init(this);
+	}
 
   /**
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
      * @generated
      */
-    public TuberculosisSocioBehavioralBooleanRiskFactorObservation init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+    @Override
+	public TuberculosisSocioBehavioralBooleanRiskFactorObservation init(Iterable<? extends Initializer<? extends EObject>> initializers) {
         Initializer.Util.init(this, initializers);
         return this;
     }

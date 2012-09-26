@@ -10,7 +10,6 @@
  *******************************************************************************/
 package org.openhealthtools.mdht.uml.cda.phcr.operations;
 
-import java.util.Collection;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.BasicDiagnostic;
@@ -36,13 +35,10 @@ import org.openhealthtools.mdht.uml.cda.phcr.util.PhcrValidator;
  *   <li>{@link org.openhealthtools.mdht.uml.cda.phcr.PatientConditionDeceasedObservation#validatePatientConditionDeceasedObservationTemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Patient Condition Deceased Observation Template Id</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.phcr.PatientConditionDeceasedObservation#validatePatientConditionDeceasedObservationClassCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Patient Condition Deceased Observation Class Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.phcr.PatientConditionDeceasedObservation#validatePatientConditionDeceasedObservationMoodCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Patient Condition Deceased Observation Mood Code</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.phcr.PatientConditionDeceasedObservation#validatePatientConditionDeceasedObservationCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Patient Condition Deceased Observation Code P</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.phcr.PatientConditionDeceasedObservation#validatePatientConditionDeceasedObservationCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Patient Condition Deceased Observation Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.phcr.PatientConditionDeceasedObservation#validatePatientConditionDeceasedObservationStatusCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Patient Condition Deceased Observation Status Code</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.phcr.PatientConditionDeceasedObservation#validatePatientConditionDeceasedObservationStatusCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Patient Condition Deceased Observation Status Code P</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.phcr.PatientConditionDeceasedObservation#validatePatientConditionDeceasedObservationEffectiveTime(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Patient Condition Deceased Observation Effective Time</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.phcr.PatientConditionDeceasedObservation#validatePatientConditionDeceasedObservationValue(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Patient Condition Deceased Observation Value</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.phcr.PatientConditionDeceasedObservation#validatePatientConditionDeceasedObservationValueP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Patient Condition Deceased Observation Value P</em>}</li>
  * </ul>
  * </p>
  *
@@ -82,6 +78,7 @@ public class PatientConditionDeceasedObservationOperations extends ClinicalState
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
+   * self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.15.3.17')
    * @param patientConditionDeceasedObservation The receiving '<em><b>Patient Condition Deceased Observation</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -89,8 +86,8 @@ public class PatientConditionDeceasedObservationOperations extends ClinicalState
    * @generated
    */
 	public static  boolean validatePatientConditionDeceasedObservationTemplateId(PatientConditionDeceasedObservation patientConditionDeceasedObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
-    if (VALIDATE_PATIENT_CONDITION_DECEASED_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+    if (VALIDATE_PATIENT_CONDITION_DECEASED_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null)
+    {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(PhcrPackage.Literals.PATIENT_CONDITION_DECEASED_OBSERVATION);
       try
@@ -111,10 +108,9 @@ public class PatientConditionDeceasedObservationOperations extends ClinicalState
             (Diagnostic.ERROR,
              PhcrValidator.DIAGNOSTIC_SOURCE,
              PhcrValidator.PATIENT_CONDITION_DECEASED_OBSERVATION__PATIENT_CONDITION_DECEASED_OBSERVATION_TEMPLATE_ID,
-             PhcrPlugin.INSTANCE.getString("PatientConditionDeceasedObservationTemplateId"),
+             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "validatePatientConditionDeceasedObservationTemplateId", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(patientConditionDeceasedObservation, context) }),
              new Object [] { patientConditionDeceasedObservation }));
       }
-       
       return false;
     }
     return true;
@@ -144,6 +140,7 @@ public class PatientConditionDeceasedObservationOperations extends ClinicalState
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
+   * self.classCode=vocab::ActClassObservation::OBS
    * @param patientConditionDeceasedObservation The receiving '<em><b>Patient Condition Deceased Observation</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -151,8 +148,8 @@ public class PatientConditionDeceasedObservationOperations extends ClinicalState
    * @generated
    */
 	public static  boolean validatePatientConditionDeceasedObservationClassCode(PatientConditionDeceasedObservation patientConditionDeceasedObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
-    if (VALIDATE_PATIENT_CONDITION_DECEASED_OBSERVATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+    if (VALIDATE_PATIENT_CONDITION_DECEASED_OBSERVATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null)
+    {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(PhcrPackage.Literals.PATIENT_CONDITION_DECEASED_OBSERVATION);
       try
@@ -173,10 +170,9 @@ public class PatientConditionDeceasedObservationOperations extends ClinicalState
             (Diagnostic.ERROR,
              PhcrValidator.DIAGNOSTIC_SOURCE,
              PhcrValidator.PATIENT_CONDITION_DECEASED_OBSERVATION__PATIENT_CONDITION_DECEASED_OBSERVATION_CLASS_CODE,
-             PhcrPlugin.INSTANCE.getString("PatientConditionDeceasedObservationClassCode"),
+             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "validatePatientConditionDeceasedObservationClassCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(patientConditionDeceasedObservation, context) }),
              new Object [] { patientConditionDeceasedObservation }));
       }
-       
       return false;
     }
     return true;
@@ -186,6 +182,9 @@ public class PatientConditionDeceasedObservationOperations extends ClinicalState
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
+   * (self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and 
+   * let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in 
+   * value.code = 'ASSERTION' and value.codeSystem = '2.16.840.1.113883.5.4')
    * @param patientConditionDeceasedObservation The receiving '<em><b>Patient Condition Deceased Observation</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -193,14 +192,8 @@ public class PatientConditionDeceasedObservationOperations extends ClinicalState
    * @generated
    */
 	public static  boolean validatePatientConditionDeceasedObservationCode(PatientConditionDeceasedObservation patientConditionDeceasedObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
-    Object passToken = (context == null) ? null : context.get("org.openhealthtools.mdht.uml.cda.phcr.PatientConditionDeceasedObservationCodeP");
-    if ((passToken instanceof Collection<?>) && ((Collection<?>) passToken).contains(patientConditionDeceasedObservation)) {
-      // I have a free pass to short-circuit
-      return true;
-    }
-  	  
-    if (VALIDATE_PATIENT_CONDITION_DECEASED_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+    if (VALIDATE_PATIENT_CONDITION_DECEASED_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null)
+    {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(PhcrPackage.Literals.PATIENT_CONDITION_DECEASED_OBSERVATION);
       try
@@ -221,10 +214,9 @@ public class PatientConditionDeceasedObservationOperations extends ClinicalState
             (Diagnostic.ERROR,
              PhcrValidator.DIAGNOSTIC_SOURCE,
              PhcrValidator.PATIENT_CONDITION_DECEASED_OBSERVATION__PATIENT_CONDITION_DECEASED_OBSERVATION_CODE,
-             PhcrPlugin.INSTANCE.getString("PatientConditionDeceasedObservationCode"),
+             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "validatePatientConditionDeceasedObservationCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(patientConditionDeceasedObservation, context) }),
              new Object [] { patientConditionDeceasedObservation }));
       }
-       
       return false;
     }
     return true;
@@ -254,6 +246,7 @@ public class PatientConditionDeceasedObservationOperations extends ClinicalState
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
+   * self.moodCode=vocab::x_ActMoodDocumentObservation::EVN
    * @param patientConditionDeceasedObservation The receiving '<em><b>Patient Condition Deceased Observation</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -261,8 +254,8 @@ public class PatientConditionDeceasedObservationOperations extends ClinicalState
    * @generated
    */
 	public static  boolean validatePatientConditionDeceasedObservationMoodCode(PatientConditionDeceasedObservation patientConditionDeceasedObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
-    if (VALIDATE_PATIENT_CONDITION_DECEASED_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+    if (VALIDATE_PATIENT_CONDITION_DECEASED_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null)
+    {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(PhcrPackage.Literals.PATIENT_CONDITION_DECEASED_OBSERVATION);
       try
@@ -283,10 +276,9 @@ public class PatientConditionDeceasedObservationOperations extends ClinicalState
             (Diagnostic.ERROR,
              PhcrValidator.DIAGNOSTIC_SOURCE,
              PhcrValidator.PATIENT_CONDITION_DECEASED_OBSERVATION__PATIENT_CONDITION_DECEASED_OBSERVATION_MOOD_CODE,
-             PhcrPlugin.INSTANCE.getString("PatientConditionDeceasedObservationMoodCode"),
+             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "validatePatientConditionDeceasedObservationMoodCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(patientConditionDeceasedObservation, context) }),
              new Object [] { patientConditionDeceasedObservation }));
       }
-       
       return false;
     }
     return true;
@@ -339,6 +331,7 @@ public class PatientConditionDeceasedObservationOperations extends ClinicalState
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
+   * (self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined())
    * @param patientConditionDeceasedObservation The receiving '<em><b>Patient Condition Deceased Observation</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -347,8 +340,8 @@ public class PatientConditionDeceasedObservationOperations extends ClinicalState
    */
 	
 	public static  boolean validatePatientConditionDeceasedObservationCodeP(PatientConditionDeceasedObservation patientConditionDeceasedObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
-    if (VALIDATE_PATIENT_CONDITION_DECEASED_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+    if (VALIDATE_PATIENT_CONDITION_DECEASED_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null)
+    {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(PhcrPackage.Literals.PATIENT_CONDITION_DECEASED_OBSERVATION);
       try
@@ -369,22 +362,9 @@ public class PatientConditionDeceasedObservationOperations extends ClinicalState
             (Diagnostic.ERROR,
              PhcrValidator.DIAGNOSTIC_SOURCE,
              PhcrValidator.PATIENT_CONDITION_DECEASED_OBSERVATION__PATIENT_CONDITION_DECEASED_OBSERVATION_CODE_P,
-             PhcrPlugin.INSTANCE.getString("PatientConditionDeceasedObservationCodeP"),
+             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "validatePatientConditionDeceasedObservationCodeP", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(patientConditionDeceasedObservation, context) }),
              new Object [] { patientConditionDeceasedObservation }));
       }
-      
-      if (context != null) {
-        // generate a pass token for my dependent constraints to short-circuit or filter results
-        @SuppressWarnings("unchecked")
-        Collection<Object> passToken = (Collection<Object>) context.get("org.openhealthtools.mdht.uml.cda.phcr.PatientConditionDeceasedObservationCodeP");
-        if (passToken == null) {
-          // anticipate a reasonably healthy model
-          passToken = new java.util.ArrayList<Object>(3);
-          context.put("org.openhealthtools.mdht.uml.cda.phcr.PatientConditionDeceasedObservationCodeP", passToken);
-        }
-        passToken.add(patientConditionDeceasedObservation);
-      }
-       
       return false;
     }
     return true;
@@ -416,6 +396,9 @@ public class PatientConditionDeceasedObservationOperations extends ClinicalState
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
+   * (self.statusCode.oclIsUndefined() or self.statusCode.isNullFlavorUndefined()) implies (not self.statusCode.oclIsUndefined() and self.statusCode.oclIsKindOf(datatypes::CS) and 
+   * let value : datatypes::CS = self.statusCode.oclAsType(datatypes::CS) in 
+   * value.code = 'completed')
    * @param patientConditionDeceasedObservation The receiving '<em><b>Patient Condition Deceased Observation</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -423,8 +406,8 @@ public class PatientConditionDeceasedObservationOperations extends ClinicalState
    * @generated
    */
 	public static  boolean validatePatientConditionDeceasedObservationStatusCode(PatientConditionDeceasedObservation patientConditionDeceasedObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
-    if (VALIDATE_PATIENT_CONDITION_DECEASED_OBSERVATION_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+    if (VALIDATE_PATIENT_CONDITION_DECEASED_OBSERVATION_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null)
+    {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(PhcrPackage.Literals.PATIENT_CONDITION_DECEASED_OBSERVATION);
       try
@@ -445,10 +428,9 @@ public class PatientConditionDeceasedObservationOperations extends ClinicalState
             (Diagnostic.ERROR,
              PhcrValidator.DIAGNOSTIC_SOURCE,
              PhcrValidator.PATIENT_CONDITION_DECEASED_OBSERVATION__PATIENT_CONDITION_DECEASED_OBSERVATION_STATUS_CODE,
-             PhcrPlugin.INSTANCE.getString("PatientConditionDeceasedObservationStatusCode"),
+             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "validatePatientConditionDeceasedObservationStatusCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(patientConditionDeceasedObservation, context) }),
              new Object [] { patientConditionDeceasedObservation }));
       }
-       
       return false;
     }
     return true;
@@ -479,6 +461,7 @@ public class PatientConditionDeceasedObservationOperations extends ClinicalState
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
+   * (self.statusCode.oclIsUndefined() or self.statusCode.isNullFlavorUndefined()) implies (not self.statusCode.oclIsUndefined())
    * @param patientConditionDeceasedObservation The receiving '<em><b>Patient Condition Deceased Observation</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -487,8 +470,8 @@ public class PatientConditionDeceasedObservationOperations extends ClinicalState
    */
 	
 	public static  boolean validatePatientConditionDeceasedObservationStatusCodeP(PatientConditionDeceasedObservation patientConditionDeceasedObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
-    if (VALIDATE_PATIENT_CONDITION_DECEASED_OBSERVATION_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+    if (VALIDATE_PATIENT_CONDITION_DECEASED_OBSERVATION_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null)
+    {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(PhcrPackage.Literals.PATIENT_CONDITION_DECEASED_OBSERVATION);
       try
@@ -509,10 +492,9 @@ public class PatientConditionDeceasedObservationOperations extends ClinicalState
             (Diagnostic.ERROR,
              PhcrValidator.DIAGNOSTIC_SOURCE,
              PhcrValidator.PATIENT_CONDITION_DECEASED_OBSERVATION__PATIENT_CONDITION_DECEASED_OBSERVATION_STATUS_CODE_P,
-             PhcrPlugin.INSTANCE.getString("PatientConditionDeceasedObservationStatusCodeP"),
+             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "validatePatientConditionDeceasedObservationStatusCodeP", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(patientConditionDeceasedObservation, context) }),
              new Object [] { patientConditionDeceasedObservation }));
       }
-       
       return false;
     }
     return true;
@@ -522,6 +504,9 @@ public class PatientConditionDeceasedObservationOperations extends ClinicalState
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
+   * (self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (self.value->size() = 1 and self.value->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and 
+   * let value : datatypes::CD = element.oclAsType(datatypes::CD) in 
+   * value.code = '419099009' and value.codeSystem = '2.16.840.1.113883.6.96'))
    * @param patientConditionDeceasedObservation The receiving '<em><b>Patient Condition Deceased Observation</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -529,8 +514,8 @@ public class PatientConditionDeceasedObservationOperations extends ClinicalState
    * @generated
    */
 	public static  boolean validatePatientConditionDeceasedObservationValue(PatientConditionDeceasedObservation patientConditionDeceasedObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
-    if (VALIDATE_PATIENT_CONDITION_DECEASED_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+    if (VALIDATE_PATIENT_CONDITION_DECEASED_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null)
+    {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(PhcrPackage.Literals.PATIENT_CONDITION_DECEASED_OBSERVATION);
       try
@@ -551,10 +536,9 @@ public class PatientConditionDeceasedObservationOperations extends ClinicalState
             (Diagnostic.ERROR,
              PhcrValidator.DIAGNOSTIC_SOURCE,
              PhcrValidator.PATIENT_CONDITION_DECEASED_OBSERVATION__PATIENT_CONDITION_DECEASED_OBSERVATION_VALUE,
-             PhcrPlugin.INSTANCE.getString("PatientConditionDeceasedObservationValue"),
+             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "validatePatientConditionDeceasedObservationValue", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(patientConditionDeceasedObservation, context) }),
              new Object [] { patientConditionDeceasedObservation }));
       }
-       
       return false;
     }
     return true;
@@ -564,6 +548,7 @@ public class PatientConditionDeceasedObservationOperations extends ClinicalState
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
+   * (self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (self.value->size() = 1 and self.value->forAll(element | element.oclIsTypeOf(datatypes::CD)))
    * @param patientConditionDeceasedObservation The receiving '<em><b>Patient Condition Deceased Observation</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -572,8 +557,8 @@ public class PatientConditionDeceasedObservationOperations extends ClinicalState
    */
 	
 	public static  boolean validatePatientConditionDeceasedObservationValueP(PatientConditionDeceasedObservation patientConditionDeceasedObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
-    if (VALIDATE_PATIENT_CONDITION_DECEASED_OBSERVATION_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+    if (VALIDATE_PATIENT_CONDITION_DECEASED_OBSERVATION_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null)
+    {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(PhcrPackage.Literals.PATIENT_CONDITION_DECEASED_OBSERVATION);
       try
@@ -594,10 +579,9 @@ public class PatientConditionDeceasedObservationOperations extends ClinicalState
             (Diagnostic.ERROR,
              PhcrValidator.DIAGNOSTIC_SOURCE,
              PhcrValidator.PATIENT_CONDITION_DECEASED_OBSERVATION__PATIENT_CONDITION_DECEASED_OBSERVATION_VALUE_P,
-             PhcrPlugin.INSTANCE.getString("PatientConditionDeceasedObservationValueP"),
+             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "validatePatientConditionDeceasedObservationValueP", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(patientConditionDeceasedObservation, context) }),
              new Object [] { patientConditionDeceasedObservation }));
       }
-       
       return false;
     }
     return true;
@@ -670,6 +654,7 @@ public class PatientConditionDeceasedObservationOperations extends ClinicalState
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
+   * (self.effectiveTime.oclIsUndefined() or self.effectiveTime.isNullFlavorUndefined()) implies (not self.effectiveTime.oclIsUndefined())
    * @param patientConditionDeceasedObservation The receiving '<em><b>Patient Condition Deceased Observation</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -677,8 +662,8 @@ public class PatientConditionDeceasedObservationOperations extends ClinicalState
    * @generated
    */
 	public static  boolean validatePatientConditionDeceasedObservationEffectiveTime(PatientConditionDeceasedObservation patientConditionDeceasedObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
-    if (VALIDATE_PATIENT_CONDITION_DECEASED_OBSERVATION_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+    if (VALIDATE_PATIENT_CONDITION_DECEASED_OBSERVATION_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null)
+    {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(PhcrPackage.Literals.PATIENT_CONDITION_DECEASED_OBSERVATION);
       try
@@ -696,13 +681,12 @@ public class PatientConditionDeceasedObservationOperations extends ClinicalState
       {
         diagnostics.add
           (new BasicDiagnostic
-            (Diagnostic.WARNING,
+            (Diagnostic.ERROR,
              PhcrValidator.DIAGNOSTIC_SOURCE,
              PhcrValidator.PATIENT_CONDITION_DECEASED_OBSERVATION__PATIENT_CONDITION_DECEASED_OBSERVATION_EFFECTIVE_TIME,
-             PhcrPlugin.INSTANCE.getString("PatientConditionDeceasedObservationEffectiveTime"),
+             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "validatePatientConditionDeceasedObservationEffectiveTime", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(patientConditionDeceasedObservation, context) }),
              new Object [] { patientConditionDeceasedObservation }));
       }
-       
       return false;
     }
     return true;

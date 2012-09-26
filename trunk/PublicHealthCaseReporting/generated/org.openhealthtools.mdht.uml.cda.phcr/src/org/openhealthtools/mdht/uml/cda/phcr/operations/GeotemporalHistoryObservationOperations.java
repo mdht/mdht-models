@@ -10,7 +10,6 @@
  *******************************************************************************/
 package org.openhealthtools.mdht.uml.cda.phcr.operations;
 
-import java.util.Collection;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.BasicDiagnostic;
@@ -36,13 +35,10 @@ import org.openhealthtools.mdht.uml.cda.phcr.util.PhcrValidator;
  *   <li>{@link org.openhealthtools.mdht.uml.cda.phcr.GeotemporalHistoryObservation#validateGeotemporalHistoryObservationTemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Geotemporal History Observation Template Id</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.phcr.GeotemporalHistoryObservation#validateGeotemporalHistoryObservationClassCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Geotemporal History Observation Class Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.phcr.GeotemporalHistoryObservation#validateGeotemporalHistoryObservationMoodCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Geotemporal History Observation Mood Code</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.phcr.GeotemporalHistoryObservation#validateGeotemporalHistoryObservationCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Geotemporal History Observation Code P</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.phcr.GeotemporalHistoryObservation#validateGeotemporalHistoryObservationCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Geotemporal History Observation Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.phcr.GeotemporalHistoryObservation#validateGeotemporalHistoryObservationText(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Geotemporal History Observation Text</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.phcr.GeotemporalHistoryObservation#validateGeotemporalHistoryObservationStatusCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Geotemporal History Observation Status Code</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.phcr.GeotemporalHistoryObservation#validateGeotemporalHistoryObservationStatusCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Geotemporal History Observation Status Code P</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.phcr.GeotemporalHistoryObservation#validateGeotemporalHistoryObservationEffectiveTime(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Geotemporal History Observation Effective Time</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.phcr.GeotemporalHistoryObservation#validateGeotemporalHistoryObservationValue(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Geotemporal History Observation Value</em>}</li>
  * </ul>
  * </p>
  *
@@ -62,6 +58,7 @@ public class GeotemporalHistoryObservationOperations extends ClinicalStatementOp
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
+   * (self.effectiveTime.oclIsUndefined() or self.effectiveTime.isNullFlavorUndefined()) implies (not self.effectiveTime.oclIsUndefined())
    * @param geotemporalHistoryObservation The receiving '<em><b>Geotemporal History Observation</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -69,8 +66,8 @@ public class GeotemporalHistoryObservationOperations extends ClinicalStatementOp
    * @generated
    */
 	public static  boolean validateGeotemporalHistoryObservationEffectiveTime(GeotemporalHistoryObservation geotemporalHistoryObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
-    if (VALIDATE_GEOTEMPORAL_HISTORY_OBSERVATION_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+    if (VALIDATE_GEOTEMPORAL_HISTORY_OBSERVATION_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null)
+    {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(PhcrPackage.Literals.GEOTEMPORAL_HISTORY_OBSERVATION);
       try
@@ -88,13 +85,12 @@ public class GeotemporalHistoryObservationOperations extends ClinicalStatementOp
       {
         diagnostics.add
           (new BasicDiagnostic
-            (Diagnostic.WARNING,
+            (Diagnostic.ERROR,
              PhcrValidator.DIAGNOSTIC_SOURCE,
              PhcrValidator.GEOTEMPORAL_HISTORY_OBSERVATION__GEOTEMPORAL_HISTORY_OBSERVATION_EFFECTIVE_TIME,
-             PhcrPlugin.INSTANCE.getString("GeotemporalHistoryObservationEffectiveTime"),
+             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "validateGeotemporalHistoryObservationEffectiveTime", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(geotemporalHistoryObservation, context) }),
              new Object [] { geotemporalHistoryObservation }));
       }
-       
       return false;
     }
     return true;
@@ -104,6 +100,7 @@ public class GeotemporalHistoryObservationOperations extends ClinicalStatementOp
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
+   * (self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (self.value->size() = 1 and self.value->forAll(element | element.oclIsTypeOf(datatypes::CD)))
    * @param geotemporalHistoryObservation The receiving '<em><b>Geotemporal History Observation</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -112,8 +109,8 @@ public class GeotemporalHistoryObservationOperations extends ClinicalStatementOp
    */
 	
 	public static  boolean validateGeotemporalHistoryObservationValue(GeotemporalHistoryObservation geotemporalHistoryObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
-    if (VALIDATE_GEOTEMPORAL_HISTORY_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+    if (VALIDATE_GEOTEMPORAL_HISTORY_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null)
+    {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(PhcrPackage.Literals.GEOTEMPORAL_HISTORY_OBSERVATION);
       try
@@ -134,10 +131,9 @@ public class GeotemporalHistoryObservationOperations extends ClinicalStatementOp
             (Diagnostic.ERROR,
              PhcrValidator.DIAGNOSTIC_SOURCE,
              PhcrValidator.GEOTEMPORAL_HISTORY_OBSERVATION__GEOTEMPORAL_HISTORY_OBSERVATION_VALUE,
-             PhcrPlugin.INSTANCE.getString("GeotemporalHistoryObservationValue"),
+             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "validateGeotemporalHistoryObservationValue", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(geotemporalHistoryObservation, context) }),
              new Object [] { geotemporalHistoryObservation }));
       }
-       
       return false;
     }
     return true;
@@ -147,6 +143,7 @@ public class GeotemporalHistoryObservationOperations extends ClinicalStatementOp
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
+   * (self.text.oclIsUndefined() or self.text.isNullFlavorUndefined()) implies (not self.text.oclIsUndefined())
    * @param geotemporalHistoryObservation The receiving '<em><b>Geotemporal History Observation</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -154,8 +151,8 @@ public class GeotemporalHistoryObservationOperations extends ClinicalStatementOp
    * @generated
    */
 	public static  boolean validateGeotemporalHistoryObservationText(GeotemporalHistoryObservation geotemporalHistoryObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
-    if (VALIDATE_GEOTEMPORAL_HISTORY_OBSERVATION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+    if (VALIDATE_GEOTEMPORAL_HISTORY_OBSERVATION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null)
+    {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(PhcrPackage.Literals.GEOTEMPORAL_HISTORY_OBSERVATION);
       try
@@ -173,13 +170,12 @@ public class GeotemporalHistoryObservationOperations extends ClinicalStatementOp
       {
         diagnostics.add
           (new BasicDiagnostic
-            (Diagnostic.INFO,
+            (Diagnostic.ERROR,
              PhcrValidator.DIAGNOSTIC_SOURCE,
              PhcrValidator.GEOTEMPORAL_HISTORY_OBSERVATION__GEOTEMPORAL_HISTORY_OBSERVATION_TEXT,
-             PhcrPlugin.INSTANCE.getString("GeotemporalHistoryObservationText"),
+             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "validateGeotemporalHistoryObservationText", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(geotemporalHistoryObservation, context) }),
              new Object [] { geotemporalHistoryObservation }));
       }
-       
       return false;
     }
     return true;
@@ -209,6 +205,7 @@ public class GeotemporalHistoryObservationOperations extends ClinicalStatementOp
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
+   * self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.15.3.3')
    * @param geotemporalHistoryObservation The receiving '<em><b>Geotemporal History Observation</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -216,8 +213,8 @@ public class GeotemporalHistoryObservationOperations extends ClinicalStatementOp
    * @generated
    */
 	public static  boolean validateGeotemporalHistoryObservationTemplateId(GeotemporalHistoryObservation geotemporalHistoryObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
-    if (VALIDATE_GEOTEMPORAL_HISTORY_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+    if (VALIDATE_GEOTEMPORAL_HISTORY_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null)
+    {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(PhcrPackage.Literals.GEOTEMPORAL_HISTORY_OBSERVATION);
       try
@@ -238,10 +235,9 @@ public class GeotemporalHistoryObservationOperations extends ClinicalStatementOp
             (Diagnostic.ERROR,
              PhcrValidator.DIAGNOSTIC_SOURCE,
              PhcrValidator.GEOTEMPORAL_HISTORY_OBSERVATION__GEOTEMPORAL_HISTORY_OBSERVATION_TEMPLATE_ID,
-             PhcrPlugin.INSTANCE.getString("GeotemporalHistoryObservationTemplateId"),
+             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "validateGeotemporalHistoryObservationTemplateId", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(geotemporalHistoryObservation, context) }),
              new Object [] { geotemporalHistoryObservation }));
       }
-       
       return false;
     }
     return true;
@@ -271,6 +267,7 @@ public class GeotemporalHistoryObservationOperations extends ClinicalStatementOp
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
+   * self.classCode=vocab::ActClassObservation::OBS
    * @param geotemporalHistoryObservation The receiving '<em><b>Geotemporal History Observation</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -278,8 +275,8 @@ public class GeotemporalHistoryObservationOperations extends ClinicalStatementOp
    * @generated
    */
 	public static  boolean validateGeotemporalHistoryObservationClassCode(GeotemporalHistoryObservation geotemporalHistoryObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
-    if (VALIDATE_GEOTEMPORAL_HISTORY_OBSERVATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+    if (VALIDATE_GEOTEMPORAL_HISTORY_OBSERVATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null)
+    {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(PhcrPackage.Literals.GEOTEMPORAL_HISTORY_OBSERVATION);
       try
@@ -300,10 +297,9 @@ public class GeotemporalHistoryObservationOperations extends ClinicalStatementOp
             (Diagnostic.ERROR,
              PhcrValidator.DIAGNOSTIC_SOURCE,
              PhcrValidator.GEOTEMPORAL_HISTORY_OBSERVATION__GEOTEMPORAL_HISTORY_OBSERVATION_CLASS_CODE,
-             PhcrPlugin.INSTANCE.getString("GeotemporalHistoryObservationClassCode"),
+             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "validateGeotemporalHistoryObservationClassCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(geotemporalHistoryObservation, context) }),
              new Object [] { geotemporalHistoryObservation }));
       }
-       
       return false;
     }
     return true;
@@ -313,6 +309,9 @@ public class GeotemporalHistoryObservationOperations extends ClinicalStatementOp
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
+   * (self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and 
+   * let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in 
+   * value.code = '55210-9' and value.codeSystem = '2.16.840.1.113883.6.1')
    * @param geotemporalHistoryObservation The receiving '<em><b>Geotemporal History Observation</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -320,14 +319,8 @@ public class GeotemporalHistoryObservationOperations extends ClinicalStatementOp
    * @generated
    */
 	public static  boolean validateGeotemporalHistoryObservationCode(GeotemporalHistoryObservation geotemporalHistoryObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
-    Object passToken = (context == null) ? null : context.get("org.openhealthtools.mdht.uml.cda.phcr.GeotemporalHistoryObservationCodeP");
-    if ((passToken instanceof Collection<?>) && ((Collection<?>) passToken).contains(geotemporalHistoryObservation)) {
-      // I have a free pass to short-circuit
-      return true;
-    }
-  	  
-    if (VALIDATE_GEOTEMPORAL_HISTORY_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+    if (VALIDATE_GEOTEMPORAL_HISTORY_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null)
+    {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(PhcrPackage.Literals.GEOTEMPORAL_HISTORY_OBSERVATION);
       try
@@ -348,10 +341,9 @@ public class GeotemporalHistoryObservationOperations extends ClinicalStatementOp
             (Diagnostic.ERROR,
              PhcrValidator.DIAGNOSTIC_SOURCE,
              PhcrValidator.GEOTEMPORAL_HISTORY_OBSERVATION__GEOTEMPORAL_HISTORY_OBSERVATION_CODE,
-             PhcrPlugin.INSTANCE.getString("GeotemporalHistoryObservationCode"),
+             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "validateGeotemporalHistoryObservationCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(geotemporalHistoryObservation, context) }),
              new Object [] { geotemporalHistoryObservation }));
       }
-       
       return false;
     }
     return true;
@@ -381,6 +373,7 @@ public class GeotemporalHistoryObservationOperations extends ClinicalStatementOp
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
+   * self.moodCode=vocab::x_ActMoodDocumentObservation::EVN
    * @param geotemporalHistoryObservation The receiving '<em><b>Geotemporal History Observation</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -388,8 +381,8 @@ public class GeotemporalHistoryObservationOperations extends ClinicalStatementOp
    * @generated
    */
 	public static  boolean validateGeotemporalHistoryObservationMoodCode(GeotemporalHistoryObservation geotemporalHistoryObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
-    if (VALIDATE_GEOTEMPORAL_HISTORY_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+    if (VALIDATE_GEOTEMPORAL_HISTORY_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null)
+    {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(PhcrPackage.Literals.GEOTEMPORAL_HISTORY_OBSERVATION);
       try
@@ -410,10 +403,9 @@ public class GeotemporalHistoryObservationOperations extends ClinicalStatementOp
             (Diagnostic.ERROR,
              PhcrValidator.DIAGNOSTIC_SOURCE,
              PhcrValidator.GEOTEMPORAL_HISTORY_OBSERVATION__GEOTEMPORAL_HISTORY_OBSERVATION_MOOD_CODE,
-             PhcrPlugin.INSTANCE.getString("GeotemporalHistoryObservationMoodCode"),
+             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "validateGeotemporalHistoryObservationMoodCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(geotemporalHistoryObservation, context) }),
              new Object [] { geotemporalHistoryObservation }));
       }
-       
       return false;
     }
     return true;
@@ -486,6 +478,7 @@ public class GeotemporalHistoryObservationOperations extends ClinicalStatementOp
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
+   * (self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined())
    * @param geotemporalHistoryObservation The receiving '<em><b>Geotemporal History Observation</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -494,8 +487,8 @@ public class GeotemporalHistoryObservationOperations extends ClinicalStatementOp
    */
 	
 	public static  boolean validateGeotemporalHistoryObservationCodeP(GeotemporalHistoryObservation geotemporalHistoryObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
-    if (VALIDATE_GEOTEMPORAL_HISTORY_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+    if (VALIDATE_GEOTEMPORAL_HISTORY_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null)
+    {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(PhcrPackage.Literals.GEOTEMPORAL_HISTORY_OBSERVATION);
       try
@@ -516,22 +509,9 @@ public class GeotemporalHistoryObservationOperations extends ClinicalStatementOp
             (Diagnostic.ERROR,
              PhcrValidator.DIAGNOSTIC_SOURCE,
              PhcrValidator.GEOTEMPORAL_HISTORY_OBSERVATION__GEOTEMPORAL_HISTORY_OBSERVATION_CODE_P,
-             PhcrPlugin.INSTANCE.getString("GeotemporalHistoryObservationCodeP"),
+             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "validateGeotemporalHistoryObservationCodeP", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(geotemporalHistoryObservation, context) }),
              new Object [] { geotemporalHistoryObservation }));
       }
-      
-      if (context != null) {
-        // generate a pass token for my dependent constraints to short-circuit or filter results
-        @SuppressWarnings("unchecked")
-        Collection<Object> passToken = (Collection<Object>) context.get("org.openhealthtools.mdht.uml.cda.phcr.GeotemporalHistoryObservationCodeP");
-        if (passToken == null) {
-          // anticipate a reasonably healthy model
-          passToken = new java.util.ArrayList<Object>(3);
-          context.put("org.openhealthtools.mdht.uml.cda.phcr.GeotemporalHistoryObservationCodeP", passToken);
-        }
-        passToken.add(geotemporalHistoryObservation);
-      }
-       
       return false;
     }
     return true;
@@ -563,6 +543,9 @@ public class GeotemporalHistoryObservationOperations extends ClinicalStatementOp
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
+   * (self.statusCode.oclIsUndefined() or self.statusCode.isNullFlavorUndefined()) implies (not self.statusCode.oclIsUndefined() and self.statusCode.oclIsKindOf(datatypes::CS) and 
+   * let value : datatypes::CS = self.statusCode.oclAsType(datatypes::CS) in 
+   * value.code = 'completed')
    * @param geotemporalHistoryObservation The receiving '<em><b>Geotemporal History Observation</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -570,8 +553,8 @@ public class GeotemporalHistoryObservationOperations extends ClinicalStatementOp
    * @generated
    */
 	public static  boolean validateGeotemporalHistoryObservationStatusCode(GeotemporalHistoryObservation geotemporalHistoryObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
-    if (VALIDATE_GEOTEMPORAL_HISTORY_OBSERVATION_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+    if (VALIDATE_GEOTEMPORAL_HISTORY_OBSERVATION_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null)
+    {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(PhcrPackage.Literals.GEOTEMPORAL_HISTORY_OBSERVATION);
       try
@@ -592,10 +575,9 @@ public class GeotemporalHistoryObservationOperations extends ClinicalStatementOp
             (Diagnostic.ERROR,
              PhcrValidator.DIAGNOSTIC_SOURCE,
              PhcrValidator.GEOTEMPORAL_HISTORY_OBSERVATION__GEOTEMPORAL_HISTORY_OBSERVATION_STATUS_CODE,
-             PhcrPlugin.INSTANCE.getString("GeotemporalHistoryObservationStatusCode"),
+             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "validateGeotemporalHistoryObservationStatusCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(geotemporalHistoryObservation, context) }),
              new Object [] { geotemporalHistoryObservation }));
       }
-       
       return false;
     }
     return true;
@@ -667,6 +649,7 @@ public class GeotemporalHistoryObservationOperations extends ClinicalStatementOp
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
+   * (self.statusCode.oclIsUndefined() or self.statusCode.isNullFlavorUndefined()) implies (not self.statusCode.oclIsUndefined())
    * @param geotemporalHistoryObservation The receiving '<em><b>Geotemporal History Observation</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -675,8 +658,8 @@ public class GeotemporalHistoryObservationOperations extends ClinicalStatementOp
    */
 	
 	public static  boolean validateGeotemporalHistoryObservationStatusCodeP(GeotemporalHistoryObservation geotemporalHistoryObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
-    if (VALIDATE_GEOTEMPORAL_HISTORY_OBSERVATION_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+    if (VALIDATE_GEOTEMPORAL_HISTORY_OBSERVATION_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null)
+    {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(PhcrPackage.Literals.GEOTEMPORAL_HISTORY_OBSERVATION);
       try
@@ -697,10 +680,9 @@ public class GeotemporalHistoryObservationOperations extends ClinicalStatementOp
             (Diagnostic.ERROR,
              PhcrValidator.DIAGNOSTIC_SOURCE,
              PhcrValidator.GEOTEMPORAL_HISTORY_OBSERVATION__GEOTEMPORAL_HISTORY_OBSERVATION_STATUS_CODE_P,
-             PhcrPlugin.INSTANCE.getString("GeotemporalHistoryObservationStatusCodeP"),
+             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "validateGeotemporalHistoryObservationStatusCodeP", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(geotemporalHistoryObservation, context) }),
              new Object [] { geotemporalHistoryObservation }));
       }
-       
       return false;
     }
     return true;

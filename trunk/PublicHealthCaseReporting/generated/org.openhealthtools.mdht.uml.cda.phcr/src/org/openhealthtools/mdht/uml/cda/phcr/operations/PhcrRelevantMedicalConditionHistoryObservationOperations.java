@@ -40,13 +40,11 @@ import org.openhealthtools.mdht.uml.cda.phcr.util.PhcrValidator;
  * <ul>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.phcr.PhcrRelevantMedicalConditionHistoryObservation#validatePhcrRelevantMedicalConditionHistoryObservationTemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Phcr Relevant Medical Condition History Observation Template Id</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.phcr.PhcrRelevantMedicalConditionHistoryObservation#validatePhcrRelevantMedicalConditionHistoryObservationClassCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Phcr Relevant Medical Condition History Observation Class Code</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.phcr.PhcrRelevantMedicalConditionHistoryObservation#validatePhcrRelevantMedicalConditionHistoryObservationCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Phcr Relevant Medical Condition History Observation Code P</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.phcr.PhcrRelevantMedicalConditionHistoryObservation#validatePhcrRelevantMedicalConditionHistoryObservationCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Phcr Relevant Medical Condition History Observation Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.phcr.PhcrRelevantMedicalConditionHistoryObservation#validatePhcrRelevantMedicalConditionHistoryObservationEffectiveTime(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Phcr Relevant Medical Condition History Observation Effective Time</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.phcr.PhcrRelevantMedicalConditionHistoryObservation#validatePhcrRelevantMedicalConditionHistoryObservationMoodCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Phcr Relevant Medical Condition History Observation Mood Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.phcr.PhcrRelevantMedicalConditionHistoryObservation#validatePhcrRelevantMedicalConditionHistoryObservationNegationInd(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Phcr Relevant Medical Condition History Observation Negation Ind</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.phcr.PhcrRelevantMedicalConditionHistoryObservation#validatePhcrRelevantMedicalConditionHistoryObservationStatusCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Phcr Relevant Medical Condition History Observation Status Code</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.phcr.PhcrRelevantMedicalConditionHistoryObservation#validatePhcrRelevantMedicalConditionHistoryObservationStatusCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Phcr Relevant Medical Condition History Observation Status Code P</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.phcr.PhcrRelevantMedicalConditionHistoryObservation#validatePhcrRelevantMedicalConditionHistoryObservationProblemObservation(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Phcr Relevant Medical Condition History Observation Problem Observation</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.phcr.PhcrRelevantMedicalConditionHistoryObservation#getProblemObservations() <em>Get Problem Observations</em>}</li>
  * </ul>
@@ -90,6 +88,7 @@ public class PhcrRelevantMedicalConditionHistoryObservationOperations extends Cl
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
+   * self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.15.3.62')
    * @param phcrRelevantMedicalConditionHistoryObservation The receiving '<em><b>Relevant Medical Condition History Observation</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -98,8 +97,8 @@ public class PhcrRelevantMedicalConditionHistoryObservationOperations extends Cl
    */
 	
 	public static  boolean validatePhcrRelevantMedicalConditionHistoryObservationTemplateId(PhcrRelevantMedicalConditionHistoryObservation phcrRelevantMedicalConditionHistoryObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
-    if (VALIDATE_PHCR_RELEVANT_MEDICAL_CONDITION_HISTORY_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+    if (VALIDATE_PHCR_RELEVANT_MEDICAL_CONDITION_HISTORY_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null)
+    {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(PhcrPackage.Literals.PHCR_RELEVANT_MEDICAL_CONDITION_HISTORY_OBSERVATION);
       try
@@ -120,10 +119,9 @@ public class PhcrRelevantMedicalConditionHistoryObservationOperations extends Cl
             (Diagnostic.ERROR,
              PhcrValidator.DIAGNOSTIC_SOURCE,
              PhcrValidator.PHCR_RELEVANT_MEDICAL_CONDITION_HISTORY_OBSERVATION__PHCR_RELEVANT_MEDICAL_CONDITION_HISTORY_OBSERVATION_TEMPLATE_ID,
-             PhcrPlugin.INSTANCE.getString("PhcrRelevantMedicalConditionHistoryObservationTemplateId"),
+             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "validatePhcrRelevantMedicalConditionHistoryObservationTemplateId", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(phcrRelevantMedicalConditionHistoryObservation, context) }),
              new Object [] { phcrRelevantMedicalConditionHistoryObservation }));
       }
-       
       return false;
     }
     return true;
@@ -155,6 +153,7 @@ public class PhcrRelevantMedicalConditionHistoryObservationOperations extends Cl
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
+   * self.classCode=vocab::ActClassObservation::OBS
    * @param phcrRelevantMedicalConditionHistoryObservation The receiving '<em><b>Relevant Medical Condition History Observation</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -163,8 +162,8 @@ public class PhcrRelevantMedicalConditionHistoryObservationOperations extends Cl
    */
 	
 	public static  boolean validatePhcrRelevantMedicalConditionHistoryObservationClassCode(PhcrRelevantMedicalConditionHistoryObservation phcrRelevantMedicalConditionHistoryObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
-    if (VALIDATE_PHCR_RELEVANT_MEDICAL_CONDITION_HISTORY_OBSERVATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+    if (VALIDATE_PHCR_RELEVANT_MEDICAL_CONDITION_HISTORY_OBSERVATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null)
+    {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(PhcrPackage.Literals.PHCR_RELEVANT_MEDICAL_CONDITION_HISTORY_OBSERVATION);
       try
@@ -185,10 +184,9 @@ public class PhcrRelevantMedicalConditionHistoryObservationOperations extends Cl
             (Diagnostic.ERROR,
              PhcrValidator.DIAGNOSTIC_SOURCE,
              PhcrValidator.PHCR_RELEVANT_MEDICAL_CONDITION_HISTORY_OBSERVATION__PHCR_RELEVANT_MEDICAL_CONDITION_HISTORY_OBSERVATION_CLASS_CODE,
-             PhcrPlugin.INSTANCE.getString("PhcrRelevantMedicalConditionHistoryObservationClassCode"),
+             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "validatePhcrRelevantMedicalConditionHistoryObservationClassCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(phcrRelevantMedicalConditionHistoryObservation, context) }),
              new Object [] { phcrRelevantMedicalConditionHistoryObservation }));
       }
-       
       return false;
     }
     return true;
@@ -220,6 +218,7 @@ public class PhcrRelevantMedicalConditionHistoryObservationOperations extends Cl
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
+   * (self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined())
    * @param phcrRelevantMedicalConditionHistoryObservation The receiving '<em><b>Relevant Medical Condition History Observation</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -228,8 +227,8 @@ public class PhcrRelevantMedicalConditionHistoryObservationOperations extends Cl
    */
 	
 	public static  boolean validatePhcrRelevantMedicalConditionHistoryObservationCodeP(PhcrRelevantMedicalConditionHistoryObservation phcrRelevantMedicalConditionHistoryObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
-    if (VALIDATE_PHCR_RELEVANT_MEDICAL_CONDITION_HISTORY_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+    if (VALIDATE_PHCR_RELEVANT_MEDICAL_CONDITION_HISTORY_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null)
+    {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(PhcrPackage.Literals.PHCR_RELEVANT_MEDICAL_CONDITION_HISTORY_OBSERVATION);
       try
@@ -250,22 +249,9 @@ public class PhcrRelevantMedicalConditionHistoryObservationOperations extends Cl
             (Diagnostic.ERROR,
              PhcrValidator.DIAGNOSTIC_SOURCE,
              PhcrValidator.PHCR_RELEVANT_MEDICAL_CONDITION_HISTORY_OBSERVATION__PHCR_RELEVANT_MEDICAL_CONDITION_HISTORY_OBSERVATION_CODE_P,
-             PhcrPlugin.INSTANCE.getString("PhcrRelevantMedicalConditionHistoryObservationCodeP"),
+             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "validatePhcrRelevantMedicalConditionHistoryObservationCodeP", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(phcrRelevantMedicalConditionHistoryObservation, context) }),
              new Object [] { phcrRelevantMedicalConditionHistoryObservation }));
       }
-      
-      if (context != null) {
-        // generate a pass token for my dependent constraints to short-circuit or filter results
-        @SuppressWarnings("unchecked")
-        Collection<Object> passToken = (Collection<Object>) context.get("org.openhealthtools.mdht.uml.cda.phcr.PhcrRelevantMedicalConditionHistoryObservationCodeP");
-        if (passToken == null) {
-          // anticipate a reasonably healthy model
-          passToken = new java.util.ArrayList<Object>(3);
-          context.put("org.openhealthtools.mdht.uml.cda.phcr.PhcrRelevantMedicalConditionHistoryObservationCodeP", passToken);
-        }
-        passToken.add(phcrRelevantMedicalConditionHistoryObservation);
-      }
-       
       return false;
     }
     return true;
@@ -299,6 +285,9 @@ public class PhcrRelevantMedicalConditionHistoryObservationOperations extends Cl
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
+   * (self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and 
+   * let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in 
+   * value.code = 'ASSERTION' and value.codeSystem = '2.16.840.1.113883.5.4')
    * @param phcrRelevantMedicalConditionHistoryObservation The receiving '<em><b>Relevant Medical Condition History Observation</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -307,14 +296,8 @@ public class PhcrRelevantMedicalConditionHistoryObservationOperations extends Cl
    */
 	
 	public static  boolean validatePhcrRelevantMedicalConditionHistoryObservationCode(PhcrRelevantMedicalConditionHistoryObservation phcrRelevantMedicalConditionHistoryObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
-    Object passToken = (context == null) ? null : context.get("org.openhealthtools.mdht.uml.cda.phcr.PhcrRelevantMedicalConditionHistoryObservationCodeP");
-    if ((passToken instanceof Collection<?>) && ((Collection<?>) passToken).contains(phcrRelevantMedicalConditionHistoryObservation)) {
-      // I have a free pass to short-circuit
-      return true;
-    }
-  	  
-    if (VALIDATE_PHCR_RELEVANT_MEDICAL_CONDITION_HISTORY_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+    if (VALIDATE_PHCR_RELEVANT_MEDICAL_CONDITION_HISTORY_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null)
+    {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(PhcrPackage.Literals.PHCR_RELEVANT_MEDICAL_CONDITION_HISTORY_OBSERVATION);
       try
@@ -335,10 +318,9 @@ public class PhcrRelevantMedicalConditionHistoryObservationOperations extends Cl
             (Diagnostic.ERROR,
              PhcrValidator.DIAGNOSTIC_SOURCE,
              PhcrValidator.PHCR_RELEVANT_MEDICAL_CONDITION_HISTORY_OBSERVATION__PHCR_RELEVANT_MEDICAL_CONDITION_HISTORY_OBSERVATION_CODE,
-             PhcrPlugin.INSTANCE.getString("PhcrRelevantMedicalConditionHistoryObservationCode"),
+             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "validatePhcrRelevantMedicalConditionHistoryObservationCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(phcrRelevantMedicalConditionHistoryObservation, context) }),
              new Object [] { phcrRelevantMedicalConditionHistoryObservation }));
       }
-       
       return false;
     }
     return true;
@@ -370,6 +352,7 @@ public class PhcrRelevantMedicalConditionHistoryObservationOperations extends Cl
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
+   * (self.effectiveTime.oclIsUndefined() or self.effectiveTime.isNullFlavorUndefined()) implies (not self.effectiveTime.oclIsUndefined())
    * @param phcrRelevantMedicalConditionHistoryObservation The receiving '<em><b>Relevant Medical Condition History Observation</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -378,8 +361,8 @@ public class PhcrRelevantMedicalConditionHistoryObservationOperations extends Cl
    */
 	
 	public static  boolean validatePhcrRelevantMedicalConditionHistoryObservationEffectiveTime(PhcrRelevantMedicalConditionHistoryObservation phcrRelevantMedicalConditionHistoryObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
-    if (VALIDATE_PHCR_RELEVANT_MEDICAL_CONDITION_HISTORY_OBSERVATION_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+    if (VALIDATE_PHCR_RELEVANT_MEDICAL_CONDITION_HISTORY_OBSERVATION_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null)
+    {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(PhcrPackage.Literals.PHCR_RELEVANT_MEDICAL_CONDITION_HISTORY_OBSERVATION);
       try
@@ -397,13 +380,12 @@ public class PhcrRelevantMedicalConditionHistoryObservationOperations extends Cl
       {
         diagnostics.add
           (new BasicDiagnostic
-            (Diagnostic.WARNING,
+            (Diagnostic.ERROR,
              PhcrValidator.DIAGNOSTIC_SOURCE,
              PhcrValidator.PHCR_RELEVANT_MEDICAL_CONDITION_HISTORY_OBSERVATION__PHCR_RELEVANT_MEDICAL_CONDITION_HISTORY_OBSERVATION_EFFECTIVE_TIME,
-             PhcrPlugin.INSTANCE.getString("PhcrRelevantMedicalConditionHistoryObservationEffectiveTime"),
+             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "validatePhcrRelevantMedicalConditionHistoryObservationEffectiveTime", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(phcrRelevantMedicalConditionHistoryObservation, context) }),
              new Object [] { phcrRelevantMedicalConditionHistoryObservation }));
       }
-       
       return false;
     }
     return true;
@@ -435,6 +417,7 @@ public class PhcrRelevantMedicalConditionHistoryObservationOperations extends Cl
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
+   * self.moodCode=vocab::x_ActMoodDocumentObservation::EVN
    * @param phcrRelevantMedicalConditionHistoryObservation The receiving '<em><b>Relevant Medical Condition History Observation</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -443,8 +426,8 @@ public class PhcrRelevantMedicalConditionHistoryObservationOperations extends Cl
    */
 	
 	public static  boolean validatePhcrRelevantMedicalConditionHistoryObservationMoodCode(PhcrRelevantMedicalConditionHistoryObservation phcrRelevantMedicalConditionHistoryObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
-    if (VALIDATE_PHCR_RELEVANT_MEDICAL_CONDITION_HISTORY_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+    if (VALIDATE_PHCR_RELEVANT_MEDICAL_CONDITION_HISTORY_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null)
+    {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(PhcrPackage.Literals.PHCR_RELEVANT_MEDICAL_CONDITION_HISTORY_OBSERVATION);
       try
@@ -465,10 +448,9 @@ public class PhcrRelevantMedicalConditionHistoryObservationOperations extends Cl
             (Diagnostic.ERROR,
              PhcrValidator.DIAGNOSTIC_SOURCE,
              PhcrValidator.PHCR_RELEVANT_MEDICAL_CONDITION_HISTORY_OBSERVATION__PHCR_RELEVANT_MEDICAL_CONDITION_HISTORY_OBSERVATION_MOOD_CODE,
-             PhcrPlugin.INSTANCE.getString("PhcrRelevantMedicalConditionHistoryObservationMoodCode"),
+             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "validatePhcrRelevantMedicalConditionHistoryObservationMoodCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(phcrRelevantMedicalConditionHistoryObservation, context) }),
              new Object [] { phcrRelevantMedicalConditionHistoryObservation }));
       }
-       
       return false;
     }
     return true;
@@ -500,6 +482,7 @@ public class PhcrRelevantMedicalConditionHistoryObservationOperations extends Cl
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
+   * not self.negationInd.oclIsUndefined()
    * @param phcrRelevantMedicalConditionHistoryObservation The receiving '<em><b>Relevant Medical Condition History Observation</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -508,8 +491,8 @@ public class PhcrRelevantMedicalConditionHistoryObservationOperations extends Cl
    */
 	
 	public static  boolean validatePhcrRelevantMedicalConditionHistoryObservationNegationInd(PhcrRelevantMedicalConditionHistoryObservation phcrRelevantMedicalConditionHistoryObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
-    if (VALIDATE_PHCR_RELEVANT_MEDICAL_CONDITION_HISTORY_OBSERVATION_NEGATION_IND__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+    if (VALIDATE_PHCR_RELEVANT_MEDICAL_CONDITION_HISTORY_OBSERVATION_NEGATION_IND__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null)
+    {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(PhcrPackage.Literals.PHCR_RELEVANT_MEDICAL_CONDITION_HISTORY_OBSERVATION);
       try
@@ -527,13 +510,12 @@ public class PhcrRelevantMedicalConditionHistoryObservationOperations extends Cl
       {
         diagnostics.add
           (new BasicDiagnostic
-            (Diagnostic.INFO,
+            (Diagnostic.ERROR,
              PhcrValidator.DIAGNOSTIC_SOURCE,
              PhcrValidator.PHCR_RELEVANT_MEDICAL_CONDITION_HISTORY_OBSERVATION__PHCR_RELEVANT_MEDICAL_CONDITION_HISTORY_OBSERVATION_NEGATION_IND,
-             PhcrPlugin.INSTANCE.getString("PhcrRelevantMedicalConditionHistoryObservationNegationInd"),
+             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "validatePhcrRelevantMedicalConditionHistoryObservationNegationInd", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(phcrRelevantMedicalConditionHistoryObservation, context) }),
              new Object [] { phcrRelevantMedicalConditionHistoryObservation }));
       }
-       
       return false;
     }
     return true;
@@ -567,6 +549,9 @@ public class PhcrRelevantMedicalConditionHistoryObservationOperations extends Cl
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
+   * (self.statusCode.oclIsUndefined() or self.statusCode.isNullFlavorUndefined()) implies (not self.statusCode.oclIsUndefined() and self.statusCode.oclIsKindOf(datatypes::CS) and 
+   * let value : datatypes::CS = self.statusCode.oclAsType(datatypes::CS) in 
+   * value.code = 'completed')
    * @param phcrRelevantMedicalConditionHistoryObservation The receiving '<em><b>Relevant Medical Condition History Observation</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -575,8 +560,8 @@ public class PhcrRelevantMedicalConditionHistoryObservationOperations extends Cl
    */
 	
 	public static  boolean validatePhcrRelevantMedicalConditionHistoryObservationStatusCode(PhcrRelevantMedicalConditionHistoryObservation phcrRelevantMedicalConditionHistoryObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
-    if (VALIDATE_PHCR_RELEVANT_MEDICAL_CONDITION_HISTORY_OBSERVATION_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+    if (VALIDATE_PHCR_RELEVANT_MEDICAL_CONDITION_HISTORY_OBSERVATION_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null)
+    {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(PhcrPackage.Literals.PHCR_RELEVANT_MEDICAL_CONDITION_HISTORY_OBSERVATION);
       try
@@ -597,10 +582,9 @@ public class PhcrRelevantMedicalConditionHistoryObservationOperations extends Cl
             (Diagnostic.ERROR,
              PhcrValidator.DIAGNOSTIC_SOURCE,
              PhcrValidator.PHCR_RELEVANT_MEDICAL_CONDITION_HISTORY_OBSERVATION__PHCR_RELEVANT_MEDICAL_CONDITION_HISTORY_OBSERVATION_STATUS_CODE,
-             PhcrPlugin.INSTANCE.getString("PhcrRelevantMedicalConditionHistoryObservationStatusCode"),
+             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "validatePhcrRelevantMedicalConditionHistoryObservationStatusCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(phcrRelevantMedicalConditionHistoryObservation, context) }),
              new Object [] { phcrRelevantMedicalConditionHistoryObservation }));
       }
-       
       return false;
     }
     return true;
@@ -632,6 +616,7 @@ public class PhcrRelevantMedicalConditionHistoryObservationOperations extends Cl
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
+   * (self.statusCode.oclIsUndefined() or self.statusCode.isNullFlavorUndefined()) implies (not self.statusCode.oclIsUndefined())
    * @param phcrRelevantMedicalConditionHistoryObservation The receiving '<em><b>Relevant Medical Condition History Observation</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -640,8 +625,8 @@ public class PhcrRelevantMedicalConditionHistoryObservationOperations extends Cl
    */
 	
 	public static  boolean validatePhcrRelevantMedicalConditionHistoryObservationStatusCodeP(PhcrRelevantMedicalConditionHistoryObservation phcrRelevantMedicalConditionHistoryObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
-    if (VALIDATE_PHCR_RELEVANT_MEDICAL_CONDITION_HISTORY_OBSERVATION_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+    if (VALIDATE_PHCR_RELEVANT_MEDICAL_CONDITION_HISTORY_OBSERVATION_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null)
+    {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(PhcrPackage.Literals.PHCR_RELEVANT_MEDICAL_CONDITION_HISTORY_OBSERVATION);
       try
@@ -662,10 +647,9 @@ public class PhcrRelevantMedicalConditionHistoryObservationOperations extends Cl
             (Diagnostic.ERROR,
              PhcrValidator.DIAGNOSTIC_SOURCE,
              PhcrValidator.PHCR_RELEVANT_MEDICAL_CONDITION_HISTORY_OBSERVATION__PHCR_RELEVANT_MEDICAL_CONDITION_HISTORY_OBSERVATION_STATUS_CODE_P,
-             PhcrPlugin.INSTANCE.getString("PhcrRelevantMedicalConditionHistoryObservationStatusCodeP"),
+             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "validatePhcrRelevantMedicalConditionHistoryObservationStatusCodeP", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(phcrRelevantMedicalConditionHistoryObservation, context) }),
              new Object [] { phcrRelevantMedicalConditionHistoryObservation }));
       }
-       
       return false;
     }
     return true;
@@ -697,6 +681,7 @@ public class PhcrRelevantMedicalConditionHistoryObservationOperations extends Cl
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
+   * self.entryRelationship->exists(entryRelationship : cda::EntryRelationship | not entryRelationship.observation.oclIsUndefined() and entryRelationship.observation.oclIsKindOf(ccd::ProblemObservation) and entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::REFR)
    * @param phcrRelevantMedicalConditionHistoryObservation The receiving '<em><b>Relevant Medical Condition History Observation</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -705,8 +690,8 @@ public class PhcrRelevantMedicalConditionHistoryObservationOperations extends Cl
    */
 	
 	public static  boolean validatePhcrRelevantMedicalConditionHistoryObservationProblemObservation(PhcrRelevantMedicalConditionHistoryObservation phcrRelevantMedicalConditionHistoryObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
-    if (VALIDATE_PHCR_RELEVANT_MEDICAL_CONDITION_HISTORY_OBSERVATION_PROBLEM_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+    if (VALIDATE_PHCR_RELEVANT_MEDICAL_CONDITION_HISTORY_OBSERVATION_PROBLEM_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null)
+    {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(PhcrPackage.Literals.PHCR_RELEVANT_MEDICAL_CONDITION_HISTORY_OBSERVATION);
       try
@@ -724,13 +709,12 @@ public class PhcrRelevantMedicalConditionHistoryObservationOperations extends Cl
       {
         diagnostics.add
           (new BasicDiagnostic
-            (Diagnostic.WARNING,
+            (Diagnostic.ERROR,
              PhcrValidator.DIAGNOSTIC_SOURCE,
              PhcrValidator.PHCR_RELEVANT_MEDICAL_CONDITION_HISTORY_OBSERVATION__PHCR_RELEVANT_MEDICAL_CONDITION_HISTORY_OBSERVATION_PROBLEM_OBSERVATION,
-             PhcrPlugin.INSTANCE.getString("PhcrRelevantMedicalConditionHistoryObservationProblemObservation"),
+             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "validatePhcrRelevantMedicalConditionHistoryObservationProblemObservation", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(phcrRelevantMedicalConditionHistoryObservation, context) }),
              new Object [] { phcrRelevantMedicalConditionHistoryObservation }));
       }
-       
       return false;
     }
     return true;
@@ -759,6 +743,10 @@ public class PhcrRelevantMedicalConditionHistoryObservationOperations extends Cl
 	/**
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
+   * <!-- begin-model-doc -->
+   * self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(ccd::ProblemObservation)).oclAsType(ccd::ProblemObservation)
+   * @param phcrRelevantMedicalConditionHistoryObservation The receiving '<em><b>Relevant Medical Condition History Observation</b></em>' model object.
+   * <!-- end-model-doc -->
    * @generated
    */
 	
@@ -766,7 +754,7 @@ public class PhcrRelevantMedicalConditionHistoryObservationOperations extends Cl
     if (GET_PROBLEM_OBSERVATIONS__EOCL_QRY == null)
     {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
-      helper.setOperationContext(PhcrPackage.Literals.PHCR_RELEVANT_MEDICAL_CONDITION_HISTORY_OBSERVATION, PhcrPackage.Literals.PHCR_RELEVANT_MEDICAL_CONDITION_HISTORY_OBSERVATION.getEAllOperations().get(61));
+      helper.setOperationContext(PhcrPackage.Literals.PHCR_RELEVANT_MEDICAL_CONDITION_HISTORY_OBSERVATION, PhcrPackage.Literals.PHCR_RELEVANT_MEDICAL_CONDITION_HISTORY_OBSERVATION.getEAllOperations().get(59));
       try
       {
         GET_PROBLEM_OBSERVATIONS__EOCL_QRY = helper.createQuery(GET_PROBLEM_OBSERVATIONS__EOCL_EXP);

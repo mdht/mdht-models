@@ -28,212 +28,208 @@ import org.openhealthtools.mdht.uml.cda.phcr.anthrax.*;
  */
 public class AnthraxFactoryImpl extends EFactoryImpl implements AnthraxFactory {
 	/**
-   * Creates the default factory implementation.
-   * <!-- begin-user-doc -->
+	 * Creates the default factory implementation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public static AnthraxFactory init() {
-    try
-    {
-      AnthraxFactory theAnthraxFactory = (AnthraxFactory)EPackage.Registry.INSTANCE.getEFactory("http://www.openhealthtools.org/mdht/uml/cda/phcr/anthrax"); 
-      if (theAnthraxFactory != null)
-      {
-        return theAnthraxFactory;
-      }
-    }
-    catch (Exception exception)
-    {
-      EcorePlugin.INSTANCE.log(exception);
-    }
-    return new AnthraxFactoryImpl();
-  }
+		try {
+			AnthraxFactory theAnthraxFactory = (AnthraxFactory)EPackage.Registry.INSTANCE.getEFactory("http://www.openhealthtools.org/mdht/uml/cda/phcr/anthrax"); 
+			if (theAnthraxFactory != null) {
+				return theAnthraxFactory;
+			}
+		}
+		catch (Exception exception) {
+			EcorePlugin.INSTANCE.log(exception);
+		}
+		return new AnthraxFactoryImpl();
+	}
 
 	/**
-   * Creates an instance of the factory.
-   * <!-- begin-user-doc -->
+	 * Creates an instance of the factory.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public AnthraxFactoryImpl() {
-    super();
-  }
+		super();
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	@Override
 	public EObject create(EClass eClass) {
-    switch (eClass.getClassifierID())
-    {
-      case AnthraxPackage.ANTHRAX_CASE_REPORT: return createAnthraxCaseReport();
-      case AnthraxPackage.ANTHRAX_PHCR_SOCIAL_HISTORY_SECTION: return createAnthraxPhcrSocialHistorySection();
-      case AnthraxPackage.ANTHRAX_POSSIBLE_EXPOSSURE_LOCATION_AND_TYPE_ACT: return createAnthraxPossibleExpossureLocationAndTypeAct();
-      case AnthraxPackage.ANTHRAX_PHCR_CLINICAL_INFORMATION_SECTION: return createAnthraxPhcrClinicalInformationSection();
-      case AnthraxPackage.ANTHRAX_CASE_OBSERVATION: return createAnthraxCaseObservation();
-      case AnthraxPackage.ANTHRAX_SIGNS_AND_SYMPTOMS_OBSERVATION: return createAnthraxSignsAndSymptomsObservation();
-      case AnthraxPackage.ANTHRAX_PHCR_TREATMENT_INFORMATION_SECTION: return createAnthraxPhcrTreatmentInformationSection();
-      case AnthraxPackage.ANTHRAX_THERAPEUTIC_REGIMEN_ACT: return createAnthraxTherapeuticRegimenAct();
-      case AnthraxPackage.ANTHRAX_TREATMENT_GIVEN_SUBSTANCE_ADMINISTRATION: return createAnthraxTreatmentGivenSubstanceAdministration();
-      case AnthraxPackage.ANTHRAX_TREATMENT_NOT_GIVEN_SUBSTANCE_ADMINISTRATION: return createAnthraxTreatmentNotGivenSubstanceAdministration();
-      case AnthraxPackage.ANTHRAX_PHCR_RELEVANT_DX_TESTS_SECTION: return createAnthraxPhcrRelevantDxTestsSection();
-      case AnthraxPackage.ANTHRAX_RESULT_ORGANIZER: return createAnthraxResultOrganizer();
-      case AnthraxPackage.ANTHRAX_RESULT_OBSERVATION: return createAnthraxResultObservation();
-      default:
-        throw new IllegalArgumentException("The class '" + eClass.getName() + "' is not a valid classifier");
-    }
-  }
+		switch (eClass.getClassifierID()) {
+			case AnthraxPackage.ANTHRAX_CASE_REPORT: return createAnthraxCaseReport();
+			case AnthraxPackage.ANTHRAX_PHCR_SOCIAL_HISTORY_SECTION: return createAnthraxPhcrSocialHistorySection();
+			case AnthraxPackage.ANTHRAX_POSSIBLE_EXPOSSURE_LOCATION_AND_TYPE_ACT: return createAnthraxPossibleExpossureLocationAndTypeAct();
+			case AnthraxPackage.ANTHRAX_PHCR_CLINICAL_INFORMATION_SECTION: return createAnthraxPhcrClinicalInformationSection();
+			case AnthraxPackage.ANTHRAX_CASE_OBSERVATION: return createAnthraxCaseObservation();
+			case AnthraxPackage.ANTHRAX_SIGNS_AND_SYMPTOMS_OBSERVATION: return createAnthraxSignsAndSymptomsObservation();
+			case AnthraxPackage.ANTHRAX_PHCR_TREATMENT_INFORMATION_SECTION: return createAnthraxPhcrTreatmentInformationSection();
+			case AnthraxPackage.ANTHRAX_THERAPEUTIC_REGIMEN_ACT: return createAnthraxTherapeuticRegimenAct();
+			case AnthraxPackage.ANTHRAX_TREATMENT_GIVEN_SUBSTANCE_ADMINISTRATION: return createAnthraxTreatmentGivenSubstanceAdministration();
+			case AnthraxPackage.ANTHRAX_TREATMENT_NOT_GIVEN_SUBSTANCE_ADMINISTRATION: return createAnthraxTreatmentNotGivenSubstanceAdministration();
+			case AnthraxPackage.ANTHRAX_PHCR_RELEVANT_DX_TESTS_SECTION: return createAnthraxPhcrRelevantDxTestsSection();
+			case AnthraxPackage.ANTHRAX_RESULT_ORGANIZER: return createAnthraxResultOrganizer();
+			case AnthraxPackage.ANTHRAX_RESULT_OBSERVATION: return createAnthraxResultObservation();
+			default:
+				throw new IllegalArgumentException("The class '" + eClass.getName() + "' is not a valid classifier");
+		}
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public AnthraxCaseReport createAnthraxCaseReport() {
-    AnthraxCaseReportImpl anthraxCaseReport = new AnthraxCaseReportImpl();
-    return anthraxCaseReport;
-  }
+		AnthraxCaseReportImpl anthraxCaseReport = new AnthraxCaseReportImpl();
+		return anthraxCaseReport;
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public AnthraxPhcrClinicalInformationSection createAnthraxPhcrClinicalInformationSection() {
-    AnthraxPhcrClinicalInformationSectionImpl anthraxPhcrClinicalInformationSection = new AnthraxPhcrClinicalInformationSectionImpl();
-    return anthraxPhcrClinicalInformationSection;
-  }
+		AnthraxPhcrClinicalInformationSectionImpl anthraxPhcrClinicalInformationSection = new AnthraxPhcrClinicalInformationSectionImpl();
+		return anthraxPhcrClinicalInformationSection;
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public AnthraxCaseObservation createAnthraxCaseObservation() {
-    AnthraxCaseObservationImpl anthraxCaseObservation = new AnthraxCaseObservationImpl();
-    return anthraxCaseObservation;
-  }
+		AnthraxCaseObservationImpl anthraxCaseObservation = new AnthraxCaseObservationImpl();
+		return anthraxCaseObservation;
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public AnthraxSignsAndSymptomsObservation createAnthraxSignsAndSymptomsObservation() {
-    AnthraxSignsAndSymptomsObservationImpl anthraxSignsAndSymptomsObservation = new AnthraxSignsAndSymptomsObservationImpl();
-    return anthraxSignsAndSymptomsObservation;
-  }
+		AnthraxSignsAndSymptomsObservationImpl anthraxSignsAndSymptomsObservation = new AnthraxSignsAndSymptomsObservationImpl();
+		return anthraxSignsAndSymptomsObservation;
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public AnthraxPhcrRelevantDxTestsSection createAnthraxPhcrRelevantDxTestsSection() {
-    AnthraxPhcrRelevantDxTestsSectionImpl anthraxPhcrRelevantDxTestsSection = new AnthraxPhcrRelevantDxTestsSectionImpl();
-    return anthraxPhcrRelevantDxTestsSection;
-  }
+		AnthraxPhcrRelevantDxTestsSectionImpl anthraxPhcrRelevantDxTestsSection = new AnthraxPhcrRelevantDxTestsSectionImpl();
+		return anthraxPhcrRelevantDxTestsSection;
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public AnthraxResultObservation createAnthraxResultObservation() {
-    AnthraxResultObservationImpl anthraxResultObservation = new AnthraxResultObservationImpl();
-    return anthraxResultObservation;
-  }
+		AnthraxResultObservationImpl anthraxResultObservation = new AnthraxResultObservationImpl();
+		return anthraxResultObservation;
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public AnthraxResultOrganizer createAnthraxResultOrganizer() {
-    AnthraxResultOrganizerImpl anthraxResultOrganizer = new AnthraxResultOrganizerImpl();
-    return anthraxResultOrganizer;
-  }
+		AnthraxResultOrganizerImpl anthraxResultOrganizer = new AnthraxResultOrganizerImpl();
+		return anthraxResultOrganizer;
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public AnthraxPhcrSocialHistorySection createAnthraxPhcrSocialHistorySection() {
-    AnthraxPhcrSocialHistorySectionImpl anthraxPhcrSocialHistorySection = new AnthraxPhcrSocialHistorySectionImpl();
-    return anthraxPhcrSocialHistorySection;
-  }
+		AnthraxPhcrSocialHistorySectionImpl anthraxPhcrSocialHistorySection = new AnthraxPhcrSocialHistorySectionImpl();
+		return anthraxPhcrSocialHistorySection;
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public AnthraxPossibleExpossureLocationAndTypeAct createAnthraxPossibleExpossureLocationAndTypeAct() {
-    AnthraxPossibleExpossureLocationAndTypeActImpl anthraxPossibleExpossureLocationAndTypeAct = new AnthraxPossibleExpossureLocationAndTypeActImpl();
-    return anthraxPossibleExpossureLocationAndTypeAct;
-  }
+		AnthraxPossibleExpossureLocationAndTypeActImpl anthraxPossibleExpossureLocationAndTypeAct = new AnthraxPossibleExpossureLocationAndTypeActImpl();
+		return anthraxPossibleExpossureLocationAndTypeAct;
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public AnthraxPhcrTreatmentInformationSection createAnthraxPhcrTreatmentInformationSection() {
-    AnthraxPhcrTreatmentInformationSectionImpl anthraxPhcrTreatmentInformationSection = new AnthraxPhcrTreatmentInformationSectionImpl();
-    return anthraxPhcrTreatmentInformationSection;
-  }
+		AnthraxPhcrTreatmentInformationSectionImpl anthraxPhcrTreatmentInformationSection = new AnthraxPhcrTreatmentInformationSectionImpl();
+		return anthraxPhcrTreatmentInformationSection;
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public AnthraxTherapeuticRegimenAct createAnthraxTherapeuticRegimenAct() {
-    AnthraxTherapeuticRegimenActImpl anthraxTherapeuticRegimenAct = new AnthraxTherapeuticRegimenActImpl();
-    return anthraxTherapeuticRegimenAct;
-  }
+		AnthraxTherapeuticRegimenActImpl anthraxTherapeuticRegimenAct = new AnthraxTherapeuticRegimenActImpl();
+		return anthraxTherapeuticRegimenAct;
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public AnthraxTreatmentGivenSubstanceAdministration createAnthraxTreatmentGivenSubstanceAdministration() {
-    AnthraxTreatmentGivenSubstanceAdministrationImpl anthraxTreatmentGivenSubstanceAdministration = new AnthraxTreatmentGivenSubstanceAdministrationImpl();
-    return anthraxTreatmentGivenSubstanceAdministration;
-  }
+		AnthraxTreatmentGivenSubstanceAdministrationImpl anthraxTreatmentGivenSubstanceAdministration = new AnthraxTreatmentGivenSubstanceAdministrationImpl();
+		return anthraxTreatmentGivenSubstanceAdministration;
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public AnthraxTreatmentNotGivenSubstanceAdministration createAnthraxTreatmentNotGivenSubstanceAdministration() {
-    AnthraxTreatmentNotGivenSubstanceAdministrationImpl anthraxTreatmentNotGivenSubstanceAdministration = new AnthraxTreatmentNotGivenSubstanceAdministrationImpl();
-    return anthraxTreatmentNotGivenSubstanceAdministration;
-  }
+		AnthraxTreatmentNotGivenSubstanceAdministrationImpl anthraxTreatmentNotGivenSubstanceAdministration = new AnthraxTreatmentNotGivenSubstanceAdministrationImpl();
+		return anthraxTreatmentNotGivenSubstanceAdministration;
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public AnthraxPackage getAnthraxPackage() {
-    return (AnthraxPackage)getEPackage();
-  }
+		return (AnthraxPackage)getEPackage();
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @deprecated
-   * @generated
-   */
+	 * @deprecated
+	 * @generated
+	 */
 	@Deprecated
 	public static AnthraxPackage getPackage() {
-    return AnthraxPackage.eINSTANCE;
-  }
+		return AnthraxPackage.eINSTANCE;
+	}
 
 } //AnthraxFactoryImpl

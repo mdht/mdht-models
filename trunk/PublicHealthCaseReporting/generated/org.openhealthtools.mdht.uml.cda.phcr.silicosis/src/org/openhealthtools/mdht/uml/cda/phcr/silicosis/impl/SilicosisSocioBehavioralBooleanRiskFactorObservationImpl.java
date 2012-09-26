@@ -26,8 +26,6 @@ import org.openhealthtools.mdht.uml.cda.phcr.silicosis.SilicosisSocioBehavioralB
 
 import org.openhealthtools.mdht.uml.cda.phcr.silicosis.operations.SilicosisSocioBehavioralBooleanRiskFactorObservationOperations;
 
-import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
-
 /**
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Socio Behavioral Boolean Risk Factor Observation</b></em>'.
@@ -111,23 +109,4 @@ public class SilicosisSocioBehavioralBooleanRiskFactorObservationImpl extends So
 	public boolean validateSocialHistoryObservationTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
     return SilicosisSocioBehavioralBooleanRiskFactorObservationOperations.validateSocialHistoryObservationTemplateId(this, diagnostics, context);
   }
-
-	/**
-   * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-   * @generated
-   */
-	public SilicosisSocioBehavioralBooleanRiskFactorObservation init() {
-      return Initializer.Util.init(this);
-  }
-
-  /**
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    public SilicosisSocioBehavioralBooleanRiskFactorObservation init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-        Initializer.Util.init(this, initializers);
-        return this;
-    }
 } //SilicosisSocioBehavioralBooleanRiskFactorObservationImpl

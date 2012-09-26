@@ -94,6 +94,7 @@ public class HibPhcrClinicalInformationSectionOperations extends PhcrClinicalInf
 	 */
 	
 	public static  boolean validateHibPhcrClinicalInformationSectionHibCaseObservation(HibPhcrClinicalInformationSection hibPhcrClinicalInformationSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
 		if (VALIDATE_HIB_PHCR_CLINICAL_INFORMATION_SECTION_HIB_CASE_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(HibPackage.Literals.HIB_PHCR_CLINICAL_INFORMATION_SECTION);
@@ -114,6 +115,7 @@ public class HibPhcrClinicalInformationSectionOperations extends PhcrClinicalInf
 						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "HibPhcrClinicalInformationSectionHibCaseObservation", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(hibPhcrClinicalInformationSection, context) }),
 						 new Object [] { hibPhcrClinicalInformationSection }));
 			}
+			 
 			return false;
 		}
 		return true;
@@ -127,7 +129,7 @@ public class HibPhcrClinicalInformationSectionOperations extends PhcrClinicalInf
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String GET_HIB_CASE_OBSERVATION__EOCL_EXP = "self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(hib::HibCaseObservation))->asSequence()->first().oclAsType(hib::HibCaseObservation)";
+	protected static final String GET_HIB_CASE_OBSERVATION__EOCL_EXP = "self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(hib::HibCaseObservation))->asSequence()->any(true).oclAsType(hib::HibCaseObservation)";
 
 	/**
 	 * The cached OCL query for the '{@link #getHibCaseObservation(HibPhcrClinicalInformationSection) <em>Get Hib Case Observation</em>}' query operation.
@@ -143,7 +145,7 @@ public class HibPhcrClinicalInformationSectionOperations extends PhcrClinicalInf
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(hib::HibCaseObservation))->asSequence()->first().oclAsType(hib::HibCaseObservation)
+	 * self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(hib::HibCaseObservation))->asSequence()->any(true).oclAsType(hib::HibCaseObservation)
 	 * @param hibPhcrClinicalInformationSection The receiving '<em><b>Phcr Clinical Information Section</b></em>' model object.
 	 * <!-- end-model-doc -->
 	 * @generated
@@ -152,7 +154,7 @@ public class HibPhcrClinicalInformationSectionOperations extends PhcrClinicalInf
 	public static  HibCaseObservation getHibCaseObservation(HibPhcrClinicalInformationSection hibPhcrClinicalInformationSection) {
 		if (GET_HIB_CASE_OBSERVATION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(HibPackage.Literals.HIB_PHCR_CLINICAL_INFORMATION_SECTION, HibPackage.Literals.HIB_PHCR_CLINICAL_INFORMATION_SECTION.getEAllOperations().get(70));
+			helper.setOperationContext(HibPackage.Literals.HIB_PHCR_CLINICAL_INFORMATION_SECTION, HibPackage.Literals.HIB_PHCR_CLINICAL_INFORMATION_SECTION.getEAllOperations().get(69));
 			try {
 				GET_HIB_CASE_OBSERVATION__EOCL_QRY = helper.createQuery(GET_HIB_CASE_OBSERVATION__EOCL_EXP);
 			}
@@ -199,6 +201,7 @@ public class HibPhcrClinicalInformationSectionOperations extends PhcrClinicalInf
 	 */
 	
 	public static  boolean validatePhcrClinicalInformationSectionTemplateId(HibPhcrClinicalInformationSection hibPhcrClinicalInformationSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
 		if (VALIDATE_PHCR_CLINICAL_INFORMATION_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(HibPackage.Literals.HIB_PHCR_CLINICAL_INFORMATION_SECTION);
@@ -219,6 +222,7 @@ public class HibPhcrClinicalInformationSectionOperations extends PhcrClinicalInf
 						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "PhcrClinicalInformationSectionTemplateId", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(hibPhcrClinicalInformationSection, context) }),
 						 new Object [] { hibPhcrClinicalInformationSection }));
 			}
+			 
 			return false;
 		}
 		return true;

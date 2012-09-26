@@ -83,6 +83,7 @@ public class SilicosisPHCRSocialHistorySectionOperations extends PhcrSocialHisto
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
+   * self.entry->one(entry : cda::Entry | not entry.observation.oclIsUndefined() and entry.observation.oclIsKindOf(silicosis::SilicosisSocioBehavioralBooleanRiskFactorObservation) and entry.typeCode = vocab::x_ActRelationshipEntry::DRIV)
    * @param silicosisPHCRSocialHistorySection The receiving '<em><b>PHCR Social History Section</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -90,8 +91,8 @@ public class SilicosisPHCRSocialHistorySectionOperations extends PhcrSocialHisto
    * @generated
    */
 	public static  boolean validateSilicosisPHCRSocialHistorySectionSilicosisSocioBehavioralBooleanRiskFactorObservation(SilicosisPHCRSocialHistorySection silicosisPHCRSocialHistorySection, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
-    if (VALIDATE_SILICOSIS_PHCR_SOCIAL_HISTORY_SECTION_SILICOSIS_SOCIO_BEHAVIORAL_BOOLEAN_RISK_FACTOR_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+    if (VALIDATE_SILICOSIS_PHCR_SOCIAL_HISTORY_SECTION_SILICOSIS_SOCIO_BEHAVIORAL_BOOLEAN_RISK_FACTOR_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null)
+    {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(SilicosisPackage.Literals.SILICOSIS_PHCR_SOCIAL_HISTORY_SECTION);
       try
@@ -109,13 +110,12 @@ public class SilicosisPHCRSocialHistorySectionOperations extends PhcrSocialHisto
       {
         diagnostics.add
           (new BasicDiagnostic
-            (Diagnostic.WARNING,
+            (Diagnostic.ERROR,
              SilicosisValidator.DIAGNOSTIC_SOURCE,
              SilicosisValidator.SILICOSIS_PHCR_SOCIAL_HISTORY_SECTION__SILICOSIS_PHCR_SOCIAL_HISTORY_SECTION_SILICOSIS_SOCIO_BEHAVIORAL_BOOLEAN_RISK_FACTOR_OBSERVATION,
-             SilicosisPlugin.INSTANCE.getString("SilicosisPHCRSocialHistorySectionSilicosisSocioBehavioralBooleanRiskFactorObservation"),
+             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "validateSilicosisPHCRSocialHistorySectionSilicosisSocioBehavioralBooleanRiskFactorObservation", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(silicosisPHCRSocialHistorySection, context) }),
              new Object [] { silicosisPHCRSocialHistorySection }));
       }
-       
       return false;
     }
     return true;
@@ -145,6 +145,7 @@ public class SilicosisPHCRSocialHistorySectionOperations extends PhcrSocialHisto
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
+   * self.entry->exists(entry : cda::Entry | not entry.act.oclIsUndefined() and entry.act.oclIsKindOf(silicosis::SilicosisPossibleExposureLocationAndTypeAct) and entry.typeCode = vocab::x_ActRelationshipEntry::DRIV)
    * @param silicosisPHCRSocialHistorySection The receiving '<em><b>PHCR Social History Section</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -152,8 +153,8 @@ public class SilicosisPHCRSocialHistorySectionOperations extends PhcrSocialHisto
    * @generated
    */
 	public static  boolean validateSilicosisPHCRSocialHistorySectionSilicosisPossibleExposureLocationAndTypeAct(SilicosisPHCRSocialHistorySection silicosisPHCRSocialHistorySection, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
-    if (VALIDATE_SILICOSIS_PHCR_SOCIAL_HISTORY_SECTION_SILICOSIS_POSSIBLE_EXPOSURE_LOCATION_AND_TYPE_ACT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+    if (VALIDATE_SILICOSIS_PHCR_SOCIAL_HISTORY_SECTION_SILICOSIS_POSSIBLE_EXPOSURE_LOCATION_AND_TYPE_ACT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null)
+    {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(SilicosisPackage.Literals.SILICOSIS_PHCR_SOCIAL_HISTORY_SECTION);
       try
@@ -171,13 +172,12 @@ public class SilicosisPHCRSocialHistorySectionOperations extends PhcrSocialHisto
       {
         diagnostics.add
           (new BasicDiagnostic
-            (Diagnostic.WARNING,
+            (Diagnostic.ERROR,
              SilicosisValidator.DIAGNOSTIC_SOURCE,
              SilicosisValidator.SILICOSIS_PHCR_SOCIAL_HISTORY_SECTION__SILICOSIS_PHCR_SOCIAL_HISTORY_SECTION_SILICOSIS_POSSIBLE_EXPOSURE_LOCATION_AND_TYPE_ACT,
-             SilicosisPlugin.INSTANCE.getString("SilicosisPHCRSocialHistorySectionSilicosisPossibleExposureLocationAndTypeAct"),
+             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "validateSilicosisPHCRSocialHistorySectionSilicosisPossibleExposureLocationAndTypeAct", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(silicosisPHCRSocialHistorySection, context) }),
              new Object [] { silicosisPHCRSocialHistorySection }));
       }
-       
       return false;
     }
     return true;
@@ -206,13 +206,17 @@ public class SilicosisPHCRSocialHistorySectionOperations extends PhcrSocialHisto
 	/**
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
+   * <!-- begin-model-doc -->
+   * self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(silicosis::SilicosisSocioBehavioralBooleanRiskFactorObservation))->asSequence()->any(true).oclAsType(silicosis::SilicosisSocioBehavioralBooleanRiskFactorObservation)
+   * @param silicosisPHCRSocialHistorySection The receiving '<em><b>PHCR Social History Section</b></em>' model object.
+   * <!-- end-model-doc -->
    * @generated
    */
 	public static  SilicosisSocioBehavioralBooleanRiskFactorObservation getSilicosisSocioBehavioralBooleanRiskFactorObservation(SilicosisPHCRSocialHistorySection silicosisPHCRSocialHistorySection) {
     if (GET_SILICOSIS_SOCIO_BEHAVIORAL_BOOLEAN_RISK_FACTOR_OBSERVATION__EOCL_QRY == null)
     {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
-      helper.setOperationContext(SilicosisPackage.Literals.SILICOSIS_PHCR_SOCIAL_HISTORY_SECTION, SilicosisPackage.Literals.SILICOSIS_PHCR_SOCIAL_HISTORY_SECTION.getEAllOperations().get(83));
+      helper.setOperationContext(SilicosisPackage.Literals.SILICOSIS_PHCR_SOCIAL_HISTORY_SECTION, SilicosisPackage.Literals.SILICOSIS_PHCR_SOCIAL_HISTORY_SECTION.getEAllOperations().get(77));
       try
       {
         GET_SILICOSIS_SOCIO_BEHAVIORAL_BOOLEAN_RISK_FACTOR_OBSERVATION__EOCL_QRY = helper.createQuery(GET_SILICOSIS_SOCIO_BEHAVIORAL_BOOLEAN_RISK_FACTOR_OBSERVATION__EOCL_EXP);
@@ -249,13 +253,17 @@ public class SilicosisPHCRSocialHistorySectionOperations extends PhcrSocialHisto
 	/**
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
+   * <!-- begin-model-doc -->
+   * self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(silicosis::SilicosisPossibleExposureLocationAndTypeAct)).oclAsType(silicosis::SilicosisPossibleExposureLocationAndTypeAct)
+   * @param silicosisPHCRSocialHistorySection The receiving '<em><b>PHCR Social History Section</b></em>' model object.
+   * <!-- end-model-doc -->
    * @generated
    */
 	public static  EList<SilicosisPossibleExposureLocationAndTypeAct> getSilicosisPossibleExposureLocationAndTypeActs(SilicosisPHCRSocialHistorySection silicosisPHCRSocialHistorySection) {
     if (GET_SILICOSIS_POSSIBLE_EXPOSURE_LOCATION_AND_TYPE_ACTS__EOCL_QRY == null)
     {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
-      helper.setOperationContext(SilicosisPackage.Literals.SILICOSIS_PHCR_SOCIAL_HISTORY_SECTION, SilicosisPackage.Literals.SILICOSIS_PHCR_SOCIAL_HISTORY_SECTION.getEAllOperations().get(84));
+      helper.setOperationContext(SilicosisPackage.Literals.SILICOSIS_PHCR_SOCIAL_HISTORY_SECTION, SilicosisPackage.Literals.SILICOSIS_PHCR_SOCIAL_HISTORY_SECTION.getEAllOperations().get(78));
       try
       {
         GET_SILICOSIS_POSSIBLE_EXPOSURE_LOCATION_AND_TYPE_ACTS__EOCL_QRY = helper.createQuery(GET_SILICOSIS_POSSIBLE_EXPOSURE_LOCATION_AND_TYPE_ACTS__EOCL_EXP);
@@ -296,6 +304,7 @@ public class SilicosisPHCRSocialHistorySectionOperations extends PhcrSocialHisto
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
+   * self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.15.2.33')
    * @param silicosisPHCRSocialHistorySection The receiving '<em><b>PHCR Social History Section</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -305,8 +314,8 @@ public class SilicosisPHCRSocialHistorySectionOperations extends PhcrSocialHisto
   
   public static  boolean validateSocialHistorySectionTemplateId(SilicosisPHCRSocialHistorySection silicosisPHCRSocialHistorySection, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
-  	  
-    if (VALIDATE_SOCIAL_HISTORY_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+    if (VALIDATE_SOCIAL_HISTORY_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null)
+    {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(SilicosisPackage.Literals.SILICOSIS_PHCR_SOCIAL_HISTORY_SECTION);
       try
@@ -327,10 +336,9 @@ public class SilicosisPHCRSocialHistorySectionOperations extends PhcrSocialHisto
             (Diagnostic.ERROR,
              SilicosisValidator.DIAGNOSTIC_SOURCE,
              SilicosisValidator.SILICOSIS_PHCR_SOCIAL_HISTORY_SECTION__SOCIAL_HISTORY_SECTION_TEMPLATE_ID,
-             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "SocialHistorySectionTemplateId", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(silicosisPHCRSocialHistorySection, context) }),
+             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "validateSocialHistorySectionTemplateId", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(silicosisPHCRSocialHistorySection, context) }),
              new Object [] { silicosisPHCRSocialHistorySection }));
       }
-       
       return false;
     }
     return true;

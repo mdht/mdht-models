@@ -65,10 +65,6 @@
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="chlamydiatrachomatis.ecore#//ChlamydiatrachomatisPHCRClinicalInformationSection/getChlamydiatrachomatisCaseObservation"/>
     </genClasses>
     <genClasses xsi:type="genmodel:GenClass" ecoreClass="chlamydiatrachomatis.ecore#//ChlamydiatrachomatisCaseObservation">
-      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="chlamydiatrachomatis.ecore#//ChlamydiatrachomatisCaseObservation/ChlamydiatrachomatisCaseObservationValueP">
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="chlamydiatrachomatis.ecore#//ChlamydiatrachomatisCaseObservation/ChlamydiatrachomatisCaseObservationValueP/diagnostics"/>
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="chlamydiatrachomatis.ecore#//ChlamydiatrachomatisCaseObservation/ChlamydiatrachomatisCaseObservationValueP/context"/>
-      </genOperations>
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="chlamydiatrachomatis.ecore#//ChlamydiatrachomatisCaseObservation/ChlamydiatrachomatisCaseObservationValue">
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="chlamydiatrachomatis.ecore#//ChlamydiatrachomatisCaseObservation/ChlamydiatrachomatisCaseObservationValue/diagnostics"/>
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="chlamydiatrachomatis.ecore#//ChlamydiatrachomatisCaseObservation/ChlamydiatrachomatisCaseObservationValue/context"/>
@@ -86,18 +82,8 @@
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="chlamydiatrachomatis.ecore#//ChlamydiatrachomatisPHCRRelevantDxTestsSection/getChlamydiatrachomatisResultObservations"/>
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="chlamydiatrachomatis.ecore#//ChlamydiatrachomatisPHCRRelevantDxTestsSection/getChlamydiatrachomatisResultOrganizers"/>
     </genClasses>
-    <genClasses xsi:type="genmodel:GenClass" ecoreClass="chlamydiatrachomatis.ecore#//ChlamydiatrachomatisResultObservation">
-      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="chlamydiatrachomatis.ecore#//ChlamydiatrachomatisResultObservation/ChlamydiatrachomatisResultObservationCode">
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="chlamydiatrachomatis.ecore#//ChlamydiatrachomatisResultObservation/ChlamydiatrachomatisResultObservationCode/diagnostics"/>
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="chlamydiatrachomatis.ecore#//ChlamydiatrachomatisResultObservation/ChlamydiatrachomatisResultObservationCode/context"/>
-      </genOperations>
-    </genClasses>
-    <genClasses xsi:type="genmodel:GenClass" ecoreClass="chlamydiatrachomatis.ecore#//chlamydiatrachomatisResultOrganizer">
-      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="chlamydiatrachomatis.ecore#//chlamydiatrachomatisResultOrganizer/chlamydiatrachomatisResultOrganizerCode">
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="chlamydiatrachomatis.ecore#//chlamydiatrachomatisResultOrganizer/chlamydiatrachomatisResultOrganizerCode/diagnostics"/>
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="chlamydiatrachomatis.ecore#//chlamydiatrachomatisResultOrganizer/chlamydiatrachomatisResultOrganizerCode/context"/>
-      </genOperations>
-    </genClasses>
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="chlamydiatrachomatis.ecore#//ChlamydiatrachomatisResultObservation"/>
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="chlamydiatrachomatis.ecore#//chlamydiatrachomatisResultOrganizer"/>
     <genClasses xsi:type="genmodel:GenClass" ecoreClass="chlamydiatrachomatis.ecore#//ChlamydiatrachomatisPHCRTreatmentInformationSection">
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="chlamydiatrachomatis.ecore#//ChlamydiatrachomatisPHCRTreatmentInformationSection/ChlamydiatrachomatisPHCRTreatmentInformationSectionChlamydiatrachomatisTherapeuticRegimenAct">
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="chlamydiatrachomatis.ecore#//ChlamydiatrachomatisPHCRTreatmentInformationSection/ChlamydiatrachomatisPHCRTreatmentInformationSectionChlamydiatrachomatisTherapeuticRegimenAct/diagnostics"/>

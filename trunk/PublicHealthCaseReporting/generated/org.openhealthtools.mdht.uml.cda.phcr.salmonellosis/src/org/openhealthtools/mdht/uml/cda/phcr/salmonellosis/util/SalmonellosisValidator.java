@@ -8,6 +8,7 @@ package org.openhealthtools.mdht.uml.cda.phcr.salmonellosis.util;
 
 import java.util.Map;
 
+import org.eclipse.emf.common.util.Diagnostic;
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.common.util.ResourceLocator;
 
@@ -541,7 +542,28 @@ public class SalmonellosisValidator extends EObjectValidator
    */
   public boolean validateSalmonellosisCaseReport_validatePublicHealthCaseReportTemplateId(SalmonellosisCaseReport salmonellosisCaseReport, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
-    return salmonellosisCaseReport.validatePublicHealthCaseReportTemplateId(diagnostics, context);
+    // TODO override the constraint, if desired
+    // -> uncomment the scaffolding
+    // -> specify the condition that violates the constraint
+    // -> verify the diagnostic details, including severity, code, and message
+    // Ensure that you remove @generated or mark it @generated NOT
+    if (false)
+    {
+      if (diagnostics != null)
+      {
+        diagnostics.add
+          (createDiagnostic
+            (Diagnostic.ERROR,
+             DIAGNOSTIC_SOURCE,
+             0,
+             "_UI_GenericConstraint_diagnostic",
+             new Object[] { "validatePublicHealthCaseReportTemplateId", getObjectLabel(salmonellosisCaseReport, context) },
+             new Object[] { salmonellosisCaseReport },
+             context));
+      }
+      return false;
+    }
+    return phcrValidator.validatePublicHealthCaseReport_validatePublicHealthCaseReportTemplateId(salmonellosisCaseReport, diagnostics, context);
   }
 
   /**
@@ -561,12 +583,6 @@ public class SalmonellosisValidator extends EObjectValidator
     if (result || diagnostics != null) result &= validate_EveryMapEntryUnique(salmonellosisPHCRSocialHistorySection, diagnostics, context);
     if (result || diagnostics != null) result &= cdaValidator.validateSection_validateClassCode(salmonellosisPHCRSocialHistorySection, diagnostics, context);
     if (result || diagnostics != null) result &= cdaValidator.validateSection_validateMoodCode(salmonellosisPHCRSocialHistorySection, diagnostics, context);
-    if (result || diagnostics != null) result &= ccdValidator.validateSocialHistorySection_validateSocialHistorySectionMaritalStatus(salmonellosisPHCRSocialHistorySection, diagnostics, context);
-    if (result || diagnostics != null) result &= ccdValidator.validateSocialHistorySection_validateSocialHistorySectionReligiousAffiliation(salmonellosisPHCRSocialHistorySection, diagnostics, context);
-    if (result || diagnostics != null) result &= ccdValidator.validateSocialHistorySection_validateSocialHistorySectionPatientRace(salmonellosisPHCRSocialHistorySection, diagnostics, context);
-    if (result || diagnostics != null) result &= ccdValidator.validateSocialHistorySection_validateSocialHistorySectionPatientRaceCodeSystem(salmonellosisPHCRSocialHistorySection, diagnostics, context);
-    if (result || diagnostics != null) result &= ccdValidator.validateSocialHistorySection_validateSocialHistorySectionPatientEthnicity(salmonellosisPHCRSocialHistorySection, diagnostics, context);
-    if (result || diagnostics != null) result &= ccdValidator.validateSocialHistorySection_validateSocialHistorySectionPatientEthnicityCodeSystem(salmonellosisPHCRSocialHistorySection, diagnostics, context);
     if (result || diagnostics != null) result &= validateSalmonellosisPHCRSocialHistorySection_validateSocialHistorySectionTemplateId(salmonellosisPHCRSocialHistorySection, diagnostics, context);
     if (result || diagnostics != null) result &= ccdValidator.validateSocialHistorySection_validateSocialHistorySectionCode(salmonellosisPHCRSocialHistorySection, diagnostics, context);
     if (result || diagnostics != null) result &= ccdValidator.validateSocialHistorySection_validateSocialHistorySectionTitle(salmonellosisPHCRSocialHistorySection, diagnostics, context);
@@ -616,7 +632,28 @@ public class SalmonellosisValidator extends EObjectValidator
    */
   public boolean validateSalmonellosisPHCRSocialHistorySection_validateSocialHistorySectionTemplateId(SalmonellosisPHCRSocialHistorySection salmonellosisPHCRSocialHistorySection, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
-    return salmonellosisPHCRSocialHistorySection.validateSocialHistorySectionTemplateId(diagnostics, context);
+    // TODO override the constraint, if desired
+    // -> uncomment the scaffolding
+    // -> specify the condition that violates the constraint
+    // -> verify the diagnostic details, including severity, code, and message
+    // Ensure that you remove @generated or mark it @generated NOT
+    if (false)
+    {
+      if (diagnostics != null)
+      {
+        diagnostics.add
+          (createDiagnostic
+            (Diagnostic.ERROR,
+             DIAGNOSTIC_SOURCE,
+             0,
+             "_UI_GenericConstraint_diagnostic",
+             new Object[] { "validateSocialHistorySectionTemplateId", getObjectLabel(salmonellosisPHCRSocialHistorySection, context) },
+             new Object[] { salmonellosisPHCRSocialHistorySection },
+             context));
+      }
+      return false;
+    }
+    return phcrValidator.validatePhcrSocialHistorySection_validateSocialHistorySectionTemplateId(salmonellosisPHCRSocialHistorySection, diagnostics, context);
   }
 
   /**
@@ -863,7 +900,28 @@ public class SalmonellosisValidator extends EObjectValidator
    */
   public boolean validateSalmonellosisPHCRRelevantDxTestsSection_validateResultsSectionTemplateId(SalmonellosisPHCRRelevantDxTestsSection salmonellosisPHCRRelevantDxTestsSection, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
-    return salmonellosisPHCRRelevantDxTestsSection.validateResultsSectionTemplateId(diagnostics, context);
+    // TODO override the constraint, if desired
+    // -> uncomment the scaffolding
+    // -> specify the condition that violates the constraint
+    // -> verify the diagnostic details, including severity, code, and message
+    // Ensure that you remove @generated or mark it @generated NOT
+    if (false)
+    {
+      if (diagnostics != null)
+      {
+        diagnostics.add
+          (createDiagnostic
+            (Diagnostic.ERROR,
+             DIAGNOSTIC_SOURCE,
+             0,
+             "_UI_GenericConstraint_diagnostic",
+             new Object[] { "validateResultsSectionTemplateId", getObjectLabel(salmonellosisPHCRRelevantDxTestsSection, context) },
+             new Object[] { salmonellosisPHCRRelevantDxTestsSection },
+             context));
+      }
+      return false;
+    }
+    return phcrValidator.validatePhcrRelevantDxTestsSection_validateResultsSectionTemplateId(salmonellosisPHCRRelevantDxTestsSection, diagnostics, context);
   }
 
   /**
@@ -890,7 +948,6 @@ public class SalmonellosisValidator extends EObjectValidator
     if (result || diagnostics != null) result &= ccdValidator.validateResultOrganizer_validateResultOrganizerCode(salmonellosisResultOrganizer, diagnostics, context);
     if (result || diagnostics != null) result &= ccdValidator.validateResultOrganizer_validateResultOrganizerStatusCode(salmonellosisResultOrganizer, diagnostics, context);
     if (result || diagnostics != null) result &= ccdValidator.validateResultOrganizer_validateResultOrganizerResultObservation(salmonellosisResultOrganizer, diagnostics, context);
-    if (result || diagnostics != null) result &= ccdValidator.validateResultOrganizer_validateResultOrganizerSpecimen(salmonellosisResultOrganizer, diagnostics, context);
     if (result || diagnostics != null) result &= phcrValidator.validateResultOrganizer_validatePHCRResultOrganizerClassCode(salmonellosisResultOrganizer, diagnostics, context);
     if (result || diagnostics != null) result &= phcrValidator.validateResultOrganizer_validatePHCRResultOrganizerMoodCode(salmonellosisResultOrganizer, diagnostics, context);
     if (result || diagnostics != null) result &= phcrValidator.validateResultOrganizer_validatePHCRResultOrganizerId(salmonellosisResultOrganizer, diagnostics, context);
@@ -935,7 +992,28 @@ public class SalmonellosisValidator extends EObjectValidator
    */
   public boolean validateSalmonellosisResultOrganizer_validateResultOrganizerTemplateId(SalmonellosisResultOrganizer salmonellosisResultOrganizer, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
-    return salmonellosisResultOrganizer.validateResultOrganizerTemplateId(diagnostics, context);
+    // TODO override the constraint, if desired
+    // -> uncomment the scaffolding
+    // -> specify the condition that violates the constraint
+    // -> verify the diagnostic details, including severity, code, and message
+    // Ensure that you remove @generated or mark it @generated NOT
+    if (false)
+    {
+      if (diagnostics != null)
+      {
+        diagnostics.add
+          (createDiagnostic
+            (Diagnostic.ERROR,
+             DIAGNOSTIC_SOURCE,
+             0,
+             "_UI_GenericConstraint_diagnostic",
+             new Object[] { "validateResultOrganizerTemplateId", getObjectLabel(salmonellosisResultOrganizer, context) },
+             new Object[] { salmonellosisResultOrganizer },
+             context));
+      }
+      return false;
+    }
+    return phcrValidator.validateResultOrganizer_validateResultOrganizerTemplateId(salmonellosisResultOrganizer, diagnostics, context);
   }
 
   /**
@@ -994,7 +1072,28 @@ public class SalmonellosisValidator extends EObjectValidator
    */
   public boolean validateSalmonellosisResultObservation_validateResultObservationTemplateId(SalmonellosisResultObservation salmonellosisResultObservation, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
-    return salmonellosisResultObservation.validateResultObservationTemplateId(diagnostics, context);
+    // TODO override the constraint, if desired
+    // -> uncomment the scaffolding
+    // -> specify the condition that violates the constraint
+    // -> verify the diagnostic details, including severity, code, and message
+    // Ensure that you remove @generated or mark it @generated NOT
+    if (false)
+    {
+      if (diagnostics != null)
+      {
+        diagnostics.add
+          (createDiagnostic
+            (Diagnostic.ERROR,
+             DIAGNOSTIC_SOURCE,
+             0,
+             "_UI_GenericConstraint_diagnostic",
+             new Object[] { "validateResultObservationTemplateId", getObjectLabel(salmonellosisResultObservation, context) },
+             new Object[] { salmonellosisResultObservation },
+             context));
+      }
+      return false;
+    }
+    return phcrValidator.validateResultObservation_validateResultObservationTemplateId(salmonellosisResultObservation, diagnostics, context);
   }
 
   /**
@@ -1047,7 +1146,28 @@ public class SalmonellosisValidator extends EObjectValidator
    */
   public boolean validateSalmonellosisPHCRClinicalInformationSection_validatePhcrClinicalInformationSectionTemplateId(SalmonellosisPHCRClinicalInformationSection salmonellosisPHCRClinicalInformationSection, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
-    return salmonellosisPHCRClinicalInformationSection.validatePhcrClinicalInformationSectionTemplateId(diagnostics, context);
+    // TODO override the constraint, if desired
+    // -> uncomment the scaffolding
+    // -> specify the condition that violates the constraint
+    // -> verify the diagnostic details, including severity, code, and message
+    // Ensure that you remove @generated or mark it @generated NOT
+    if (false)
+    {
+      if (diagnostics != null)
+      {
+        diagnostics.add
+          (createDiagnostic
+            (Diagnostic.ERROR,
+             DIAGNOSTIC_SOURCE,
+             0,
+             "_UI_GenericConstraint_diagnostic",
+             new Object[] { "validatePhcrClinicalInformationSectionTemplateId", getObjectLabel(salmonellosisPHCRClinicalInformationSection, context) },
+             new Object[] { salmonellosisPHCRClinicalInformationSection },
+             context));
+      }
+      return false;
+    }
+    return phcrValidator.validatePhcrClinicalInformationSection_validatePhcrClinicalInformationSectionTemplateId(salmonellosisPHCRClinicalInformationSection, diagnostics, context);
   }
 
   /**
@@ -1135,7 +1255,28 @@ public class SalmonellosisValidator extends EObjectValidator
    */
   public boolean validateSalmonellosisCaseObservation_validateProblemObservationTemplateId(SalmonellosisCaseObservation salmonellosisCaseObservation, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
-    return salmonellosisCaseObservation.validateProblemObservationTemplateId(diagnostics, context);
+    // TODO override the constraint, if desired
+    // -> uncomment the scaffolding
+    // -> specify the condition that violates the constraint
+    // -> verify the diagnostic details, including severity, code, and message
+    // Ensure that you remove @generated or mark it @generated NOT
+    if (false)
+    {
+      if (diagnostics != null)
+      {
+        diagnostics.add
+          (createDiagnostic
+            (Diagnostic.ERROR,
+             DIAGNOSTIC_SOURCE,
+             0,
+             "_UI_GenericConstraint_diagnostic",
+             new Object[] { "validateProblemObservationTemplateId", getObjectLabel(salmonellosisCaseObservation, context) },
+             new Object[] { salmonellosisCaseObservation },
+             context));
+      }
+      return false;
+    }
+    return phcrValidator.validateCaseObservation_validateProblemObservationTemplateId(salmonellosisCaseObservation, diagnostics, context);
   }
 
   /**
@@ -1186,7 +1327,28 @@ public class SalmonellosisValidator extends EObjectValidator
    */
   public boolean validateSalmonellosisSignsAndSymptomsObservation_validateSignsAndSymptomsObservationTemplateId(SalmonellosisSignsAndSymptomsObservation salmonellosisSignsAndSymptomsObservation, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
-    return salmonellosisSignsAndSymptomsObservation.validateSignsAndSymptomsObservationTemplateId(diagnostics, context);
+    // TODO override the constraint, if desired
+    // -> uncomment the scaffolding
+    // -> specify the condition that violates the constraint
+    // -> verify the diagnostic details, including severity, code, and message
+    // Ensure that you remove @generated or mark it @generated NOT
+    if (false)
+    {
+      if (diagnostics != null)
+      {
+        diagnostics.add
+          (createDiagnostic
+            (Diagnostic.ERROR,
+             DIAGNOSTIC_SOURCE,
+             0,
+             "_UI_GenericConstraint_diagnostic",
+             new Object[] { "validateSignsAndSymptomsObservationTemplateId", getObjectLabel(salmonellosisSignsAndSymptomsObservation, context) },
+             new Object[] { salmonellosisSignsAndSymptomsObservation },
+             context));
+      }
+      return false;
+    }
+    return phcrValidator.validateSignsAndSymptomsObservation_validateSignsAndSymptomsObservationTemplateId(salmonellosisSignsAndSymptomsObservation, diagnostics, context);
   }
 
   /**

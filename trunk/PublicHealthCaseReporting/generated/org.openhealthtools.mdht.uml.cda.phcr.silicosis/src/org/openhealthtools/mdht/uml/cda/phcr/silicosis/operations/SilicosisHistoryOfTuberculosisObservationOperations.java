@@ -39,7 +39,6 @@ import org.openhealthtools.mdht.uml.cda.phcr.silicosis.util.SilicosisValidator;
  * <ul>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.phcr.silicosis.SilicosisHistoryOfTuberculosisObservation#validateSilicosisHistoryOfTuberculosisObservationClassCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Silicosis History Of Tuberculosis Observation Class Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.phcr.silicosis.SilicosisHistoryOfTuberculosisObservation#validateSilicosisHistoryOfTuberculosisObservationValue(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Silicosis History Of Tuberculosis Observation Value</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.phcr.silicosis.SilicosisHistoryOfTuberculosisObservation#validateSilicosisHistoryOfTuberculosisObservationValueP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Silicosis History Of Tuberculosis Observation Value P</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.phcr.silicosis.SilicosisHistoryOfTuberculosisObservation#validateProblemObservationTemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Problem Observation Template Id</em>}</li>
  * </ul>
  * </p>
@@ -83,6 +82,7 @@ public class SilicosisHistoryOfTuberculosisObservationOperations extends Problem
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
+   * isDefined('classCode')
    * @param silicosisHistoryOfTuberculosisObservation The receiving '<em><b>History Of Tuberculosis Observation</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -92,8 +92,8 @@ public class SilicosisHistoryOfTuberculosisObservationOperations extends Problem
   
   public static  boolean validateSilicosisHistoryOfTuberculosisObservationClassCode(SilicosisHistoryOfTuberculosisObservation silicosisHistoryOfTuberculosisObservation, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
-  	  
-    if (VALIDATE_SILICOSIS_HISTORY_OF_TUBERCULOSIS_OBSERVATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+    if (VALIDATE_SILICOSIS_HISTORY_OF_TUBERCULOSIS_OBSERVATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null)
+    {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(SilicosisPackage.Literals.SILICOSIS_HISTORY_OF_TUBERCULOSIS_OBSERVATION);
       try
@@ -114,10 +114,9 @@ public class SilicosisHistoryOfTuberculosisObservationOperations extends Problem
             (Diagnostic.ERROR,
              SilicosisValidator.DIAGNOSTIC_SOURCE,
              SilicosisValidator.SILICOSIS_HISTORY_OF_TUBERCULOSIS_OBSERVATION__SILICOSIS_HISTORY_OF_TUBERCULOSIS_OBSERVATION_CLASS_CODE,
-             SilicosisPlugin.INSTANCE.getString("SilicosisHistoryOfTuberculosisObservationClassCode"),
+             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "validateSilicosisHistoryOfTuberculosisObservationClassCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(silicosisHistoryOfTuberculosisObservation, context) }),
              new Object [] { silicosisHistoryOfTuberculosisObservation }));
       }
-       
       return false;
     }
     return true;
@@ -151,6 +150,9 @@ public class SilicosisHistoryOfTuberculosisObservationOperations extends Problem
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
+   * (self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (self.value->size() = 1 and self.value->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and 
+   * let value : datatypes::CD = element.oclAsType(datatypes::CD) in 
+   * value.codeSystem = '2.16.840.1.113883.6.96' and not value.code.oclIsUndefined()))
    * @param silicosisHistoryOfTuberculosisObservation The receiving '<em><b>History Of Tuberculosis Observation</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -160,8 +162,8 @@ public class SilicosisHistoryOfTuberculosisObservationOperations extends Problem
   
   public static  boolean validateSilicosisHistoryOfTuberculosisObservationValue(SilicosisHistoryOfTuberculosisObservation silicosisHistoryOfTuberculosisObservation, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
-  	  
-    if (VALIDATE_SILICOSIS_HISTORY_OF_TUBERCULOSIS_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+    if (VALIDATE_SILICOSIS_HISTORY_OF_TUBERCULOSIS_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null)
+    {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(SilicosisPackage.Literals.SILICOSIS_HISTORY_OF_TUBERCULOSIS_OBSERVATION);
       try
@@ -182,10 +184,9 @@ public class SilicosisHistoryOfTuberculosisObservationOperations extends Problem
             (Diagnostic.ERROR,
              SilicosisValidator.DIAGNOSTIC_SOURCE,
              SilicosisValidator.SILICOSIS_HISTORY_OF_TUBERCULOSIS_OBSERVATION__SILICOSIS_HISTORY_OF_TUBERCULOSIS_OBSERVATION_VALUE,
-             SilicosisPlugin.INSTANCE.getString("SilicosisHistoryOfTuberculosisObservationValue"),
+             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "validateSilicosisHistoryOfTuberculosisObservationValue", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(silicosisHistoryOfTuberculosisObservation, context) }),
              new Object [] { silicosisHistoryOfTuberculosisObservation }));
       }
-       
       return false;
     }
     return true;
@@ -217,6 +218,7 @@ public class SilicosisHistoryOfTuberculosisObservationOperations extends Problem
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
+   * (self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (self.value->size() = 1 and self.value->forAll(element | element.oclIsTypeOf(datatypes::CD)))
    * @param silicosisHistoryOfTuberculosisObservation The receiving '<em><b>History Of Tuberculosis Observation</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -226,8 +228,8 @@ public class SilicosisHistoryOfTuberculosisObservationOperations extends Problem
   
   public static  boolean validateSilicosisHistoryOfTuberculosisObservationValueP(SilicosisHistoryOfTuberculosisObservation silicosisHistoryOfTuberculosisObservation, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
-  	  
-    if (VALIDATE_SILICOSIS_HISTORY_OF_TUBERCULOSIS_OBSERVATION_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+    if (VALIDATE_SILICOSIS_HISTORY_OF_TUBERCULOSIS_OBSERVATION_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null)
+    {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(SilicosisPackage.Literals.SILICOSIS_HISTORY_OF_TUBERCULOSIS_OBSERVATION);
       try
@@ -248,10 +250,9 @@ public class SilicosisHistoryOfTuberculosisObservationOperations extends Problem
             (Diagnostic.ERROR,
              SilicosisValidator.DIAGNOSTIC_SOURCE,
              SilicosisValidator.SILICOSIS_HISTORY_OF_TUBERCULOSIS_OBSERVATION__SILICOSIS_HISTORY_OF_TUBERCULOSIS_OBSERVATION_VALUE_P,
-             SilicosisPlugin.INSTANCE.getString("SilicosisHistoryOfTuberculosisObservationValueP"),
+             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "validateSilicosisHistoryOfTuberculosisObservationValueP", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(silicosisHistoryOfTuberculosisObservation, context) }),
              new Object [] { silicosisHistoryOfTuberculosisObservation }));
       }
-       
       return false;
     }
     return true;
@@ -283,6 +284,7 @@ public class SilicosisHistoryOfTuberculosisObservationOperations extends Problem
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
+   * self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.15.3.107')
    * @param silicosisHistoryOfTuberculosisObservation The receiving '<em><b>History Of Tuberculosis Observation</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -292,8 +294,8 @@ public class SilicosisHistoryOfTuberculosisObservationOperations extends Problem
   
   public static  boolean validateProblemObservationTemplateId(SilicosisHistoryOfTuberculosisObservation silicosisHistoryOfTuberculosisObservation, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
-  	  
-    if (VALIDATE_PROBLEM_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+    if (VALIDATE_PROBLEM_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null)
+    {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(SilicosisPackage.Literals.SILICOSIS_HISTORY_OF_TUBERCULOSIS_OBSERVATION);
       try
@@ -314,10 +316,9 @@ public class SilicosisHistoryOfTuberculosisObservationOperations extends Problem
             (Diagnostic.ERROR,
              SilicosisValidator.DIAGNOSTIC_SOURCE,
              SilicosisValidator.SILICOSIS_HISTORY_OF_TUBERCULOSIS_OBSERVATION__PROBLEM_OBSERVATION_TEMPLATE_ID,
-             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "ProblemObservationTemplateId", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(silicosisHistoryOfTuberculosisObservation, context) }),
+             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "validateProblemObservationTemplateId", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(silicosisHistoryOfTuberculosisObservation, context) }),
              new Object [] { silicosisHistoryOfTuberculosisObservation }));
       }
-       
       return false;
     }
     return true;

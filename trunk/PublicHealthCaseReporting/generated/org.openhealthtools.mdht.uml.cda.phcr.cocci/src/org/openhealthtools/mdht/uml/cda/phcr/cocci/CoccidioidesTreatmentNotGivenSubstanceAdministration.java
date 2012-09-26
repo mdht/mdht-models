@@ -26,17 +26,4 @@ import org.openhealthtools.mdht.uml.cda.phcr.TreatmentNotGivenSubstanceAdministr
  * @generated
  */
 public interface CoccidioidesTreatmentNotGivenSubstanceAdministration extends TreatmentNotGivenSubstanceAdministration {
-	/**
-   * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-   * @generated
-   */
-	public CoccidioidesTreatmentNotGivenSubstanceAdministration init();
-
-  /**
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    public CoccidioidesTreatmentNotGivenSubstanceAdministration init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // CoccidioidesTreatmentNotGivenSubstanceAdministration

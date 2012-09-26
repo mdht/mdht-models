@@ -13,7 +13,7 @@
    <extension point="org.eclipse.emf.ecore.generated_package">
       <package
             uri="http://www.openhealthtools.org/mdht/uml/cda/phcr/flu"
-            class="org.openhealthtools.mdht.uml.cda.phcr.flu.FluPackage"
+            class="org.openhealthtools.mdht.uml.cda.phcr.flu.fluPackage"
             genModel="model/flu.genmodel"/>
    </extension>
 

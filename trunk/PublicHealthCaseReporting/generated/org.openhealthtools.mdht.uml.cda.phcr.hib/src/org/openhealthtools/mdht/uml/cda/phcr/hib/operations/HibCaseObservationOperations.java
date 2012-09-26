@@ -98,6 +98,7 @@ public class HibCaseObservationOperations extends CaseObservationOperations {
 	 */
 	
 	public static  boolean validateHibCaseObservationHibSignsAndSymptoms(HibCaseObservation hibCaseObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
 		if (VALIDATE_HIB_CASE_OBSERVATION_HIB_SIGNS_AND_SYMPTOMS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(HibPackage.Literals.HIB_CASE_OBSERVATION);
@@ -118,6 +119,7 @@ public class HibCaseObservationOperations extends CaseObservationOperations {
 						 HibPlugin.INSTANCE.getString("HibCaseObservationHibSignsAndSymptoms"),
 						 new Object [] { hibCaseObservation }));
 			}
+			 
 			return false;
 		}
 		return true;
@@ -156,7 +158,7 @@ public class HibCaseObservationOperations extends CaseObservationOperations {
 	public static  EList<HibSignsAndSymptoms> getHibSignsAndSymptomss(HibCaseObservation hibCaseObservation) {
 		if (GET_HIB_SIGNS_AND_SYMPTOMSS__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(HibPackage.Literals.HIB_CASE_OBSERVATION, HibPackage.Literals.HIB_CASE_OBSERVATION.getEAllOperations().get(77));
+			helper.setOperationContext(HibPackage.Literals.HIB_CASE_OBSERVATION, HibPackage.Literals.HIB_CASE_OBSERVATION.getEAllOperations().get(78));
 			try {
 				GET_HIB_SIGNS_AND_SYMPTOMSS__EOCL_QRY = helper.createQuery(GET_HIB_SIGNS_AND_SYMPTOMSS__EOCL_EXP);
 			}
@@ -205,6 +207,7 @@ public class HibCaseObservationOperations extends CaseObservationOperations {
 	 */
 	
 	public static  boolean validateProblemObservationTemplateId(HibCaseObservation hibCaseObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
 		if (VALIDATE_PROBLEM_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(HibPackage.Literals.HIB_CASE_OBSERVATION);
@@ -225,6 +228,7 @@ public class HibCaseObservationOperations extends CaseObservationOperations {
 						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "ProblemObservationTemplateId", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(hibCaseObservation, context) }),
 						 new Object [] { hibCaseObservation }));
 			}
+			 
 			return false;
 		}
 		return true;

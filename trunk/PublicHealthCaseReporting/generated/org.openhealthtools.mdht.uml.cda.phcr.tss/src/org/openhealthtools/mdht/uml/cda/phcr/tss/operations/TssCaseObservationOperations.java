@@ -45,7 +45,6 @@ import org.openhealthtools.mdht.uml.cda.phcr.tss.util.tssValidator;
  * <p>
  * The following operations are supported:
  * <ul>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.phcr.tss.TssCaseObservation#validateTssCaseObservationValueP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Tss Case Observation Value P</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.phcr.tss.TssCaseObservation#validateTssCaseObservationValue(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Tss Case Observation Value</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.phcr.tss.TssCaseObservation#validateTssCaseObservationTssSignsAndSymptomsObservation(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Tss Case Observation Tss Signs And Symptoms Observation</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.phcr.tss.TssCaseObservation#getTssSignsAndSymptomsObservations() <em>Get Tss Signs And Symptoms Observations</em>}</li>
@@ -91,6 +90,7 @@ public class TssCaseObservationOperations extends CaseObservationOperations {
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
+   * (self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (not self.value->isEmpty())
    * @param tssCaseObservation The receiving '<em><b>Tss Case Observation</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -100,8 +100,8 @@ public class TssCaseObservationOperations extends CaseObservationOperations {
   
   public static  boolean validateTssCaseObservationValueP(TssCaseObservation tssCaseObservation, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
-  	  
-    if (VALIDATE_TSS_CASE_OBSERVATION_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+    if (VALIDATE_TSS_CASE_OBSERVATION_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null)
+    {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(tssPackage.Literals.TSS_CASE_OBSERVATION);
       try
@@ -122,22 +122,9 @@ public class TssCaseObservationOperations extends CaseObservationOperations {
             (Diagnostic.ERROR,
              tssValidator.DIAGNOSTIC_SOURCE,
              tssValidator.TSS_CASE_OBSERVATION__TSS_CASE_OBSERVATION_VALUE_P,
-             TssPlugin.INSTANCE.getString("TssCaseObservationValueP"),
+             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "validateTssCaseObservationValueP", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(tssCaseObservation, context) }),
              new Object [] { tssCaseObservation }));
       }
-      
-      if (context != null) {
-        // generate a pass token for my dependent constraints to short-circuit or filter results
-        @SuppressWarnings("unchecked")
-        Collection<Object> passToken = (Collection<Object>) context.get("org.openhealthtools.mdht.uml.cda.phcr.tss.TssCaseObservationValueP");
-        if (passToken == null) {
-          // anticipate a reasonably healthy model
-          passToken = new java.util.ArrayList<Object>(3);
-          context.put("org.openhealthtools.mdht.uml.cda.phcr.tss.TssCaseObservationValueP", passToken);
-        }
-        passToken.add(tssCaseObservation);
-      }
-       
       return false;
     }
     return true;
@@ -171,6 +158,9 @@ public class TssCaseObservationOperations extends CaseObservationOperations {
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
+   * (self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (self.value->size() = 1 and self.value->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and 
+   * let value : datatypes::CD = element.oclAsType(datatypes::CD) in 
+   * value.code = '240450004' and value.codeSystem = '2.16.840.1.113883.6.96'))
    * @param tssCaseObservation The receiving '<em><b>Tss Case Observation</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -180,14 +170,8 @@ public class TssCaseObservationOperations extends CaseObservationOperations {
   
   public static  boolean validateTssCaseObservationValue(TssCaseObservation tssCaseObservation, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
-  	  
-    Object passToken = (context == null) ? null : context.get("org.openhealthtools.mdht.uml.cda.phcr.tss.TssCaseObservationValueP");
-    if ((passToken instanceof Collection<?>) && ((Collection<?>) passToken).contains(tssCaseObservation)) {
-      // I have a free pass to short-circuit
-      return true;
-    }
-  	  
-    if (VALIDATE_TSS_CASE_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+    if (VALIDATE_TSS_CASE_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null)
+    {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(tssPackage.Literals.TSS_CASE_OBSERVATION);
       try
@@ -208,10 +192,9 @@ public class TssCaseObservationOperations extends CaseObservationOperations {
             (Diagnostic.ERROR,
              tssValidator.DIAGNOSTIC_SOURCE,
              tssValidator.TSS_CASE_OBSERVATION__TSS_CASE_OBSERVATION_VALUE,
-             TssPlugin.INSTANCE.getString("TssCaseObservationValue"),
+             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "validateTssCaseObservationValue", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(tssCaseObservation, context) }),
              new Object [] { tssCaseObservation }));
       }
-       
       return false;
     }
     return true;
@@ -243,6 +226,7 @@ public class TssCaseObservationOperations extends CaseObservationOperations {
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
+   * self.entryRelationship->exists(entryRelationship : cda::EntryRelationship | not entryRelationship.observation.oclIsUndefined() and entryRelationship.observation.oclIsKindOf(tss::TssSignsAndSymptomsObservation) and entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::MFST)
    * @param tssCaseObservation The receiving '<em><b>Tss Case Observation</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -251,8 +235,8 @@ public class TssCaseObservationOperations extends CaseObservationOperations {
    */
 	
 	public static  boolean validateTssCaseObservationTssSignsAndSymptomsObservation(TssCaseObservation tssCaseObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
-    if (VALIDATE_TSS_CASE_OBSERVATION_TSS_SIGNS_AND_SYMPTOMS_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+    if (VALIDATE_TSS_CASE_OBSERVATION_TSS_SIGNS_AND_SYMPTOMS_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null)
+    {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(tssPackage.Literals.TSS_CASE_OBSERVATION);
       try
@@ -270,13 +254,12 @@ public class TssCaseObservationOperations extends CaseObservationOperations {
       {
         diagnostics.add
           (new BasicDiagnostic
-            (Diagnostic.WARNING,
+            (Diagnostic.ERROR,
              tssValidator.DIAGNOSTIC_SOURCE,
              tssValidator.TSS_CASE_OBSERVATION__TSS_CASE_OBSERVATION_TSS_SIGNS_AND_SYMPTOMS_OBSERVATION,
-             TssPlugin.INSTANCE.getString("TssCaseObservationTssSignsAndSymptomsObservation"),
+             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "validateTssCaseObservationTssSignsAndSymptomsObservation", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(tssCaseObservation, context) }),
              new Object [] { tssCaseObservation }));
       }
-       
       return false;
     }
     return true;
@@ -305,6 +288,10 @@ public class TssCaseObservationOperations extends CaseObservationOperations {
 	/**
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
+   * <!-- begin-model-doc -->
+   * self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(tss::TssSignsAndSymptomsObservation)).oclAsType(tss::TssSignsAndSymptomsObservation)
+   * @param tssCaseObservation The receiving '<em><b>Tss Case Observation</b></em>' model object.
+   * <!-- end-model-doc -->
    * @generated
    */
 	
@@ -312,7 +299,7 @@ public class TssCaseObservationOperations extends CaseObservationOperations {
     if (GET_TSS_SIGNS_AND_SYMPTOMS_OBSERVATIONS__EOCL_QRY == null)
     {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
-      helper.setOperationContext(tssPackage.Literals.TSS_CASE_OBSERVATION, tssPackage.Literals.TSS_CASE_OBSERVATION.getEAllOperations().get(82));
+      helper.setOperationContext(tssPackage.Literals.TSS_CASE_OBSERVATION, tssPackage.Literals.TSS_CASE_OBSERVATION.getEAllOperations().get(80));
       try
       {
         GET_TSS_SIGNS_AND_SYMPTOMS_OBSERVATIONS__EOCL_QRY = helper.createQuery(GET_TSS_SIGNS_AND_SYMPTOMS_OBSERVATIONS__EOCL_EXP);
@@ -354,6 +341,7 @@ public class TssCaseObservationOperations extends CaseObservationOperations {
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
+   * self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.15.3.99')
    * @param tssCaseObservation The receiving '<em><b>Tss Case Observation</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -362,8 +350,8 @@ public class TssCaseObservationOperations extends CaseObservationOperations {
    */
 	
 	public static  boolean validateProblemObservationTemplateId(TssCaseObservation tssCaseObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
-    if (VALIDATE_PROBLEM_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+    if (VALIDATE_PROBLEM_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null)
+    {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(tssPackage.Literals.TSS_CASE_OBSERVATION);
       try
@@ -384,10 +372,9 @@ public class TssCaseObservationOperations extends CaseObservationOperations {
             (Diagnostic.ERROR,
              tssValidator.DIAGNOSTIC_SOURCE,
              tssValidator.TSS_CASE_OBSERVATION__PROBLEM_OBSERVATION_TEMPLATE_ID,
-             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "ProblemObservationTemplateId", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(tssCaseObservation, context) }),
+             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "validateProblemObservationTemplateId", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(tssCaseObservation, context) }),
              new Object [] { tssCaseObservation }));
       }
-       
       return false;
     }
     return true;

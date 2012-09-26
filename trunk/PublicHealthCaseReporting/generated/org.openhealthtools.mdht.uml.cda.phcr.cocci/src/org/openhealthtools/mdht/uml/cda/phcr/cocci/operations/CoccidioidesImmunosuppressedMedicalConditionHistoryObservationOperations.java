@@ -79,6 +79,7 @@ public class CoccidioidesImmunosuppressedMedicalConditionHistoryObservationOpera
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
+   * self.entryRelationship->one(entryRelationship : cda::EntryRelationship | not entryRelationship.observation.oclIsUndefined() and entryRelationship.observation.oclIsKindOf(cocci::CoccidioidesImmunosuppressedMedicalConditionProblemObservation) and entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::REFR)
    * @param coccidioidesImmunosuppressedMedicalConditionHistoryObservation The receiving '<em><b>Coccidioides Immunosuppressed Medical Condition History Observation</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -87,8 +88,8 @@ public class CoccidioidesImmunosuppressedMedicalConditionHistoryObservationOpera
    */
 	
 	public static  boolean validateCoccidioidesImmunosuppressedMedicalConditionHistoryObservationCoccidioidesImmunosuppressedMedicalConditionProblemObservation(CoccidioidesImmunosuppressedMedicalConditionHistoryObservation coccidioidesImmunosuppressedMedicalConditionHistoryObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
-    if (VALIDATE_COCCIDIOIDES_IMMUNOSUPPRESSED_MEDICAL_CONDITION_HISTORY_OBSERVATION_COCCIDIOIDES_IMMUNOSUPPRESSED_MEDICAL_CONDITION_PROBLEM_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+    if (VALIDATE_COCCIDIOIDES_IMMUNOSUPPRESSED_MEDICAL_CONDITION_HISTORY_OBSERVATION_COCCIDIOIDES_IMMUNOSUPPRESSED_MEDICAL_CONDITION_PROBLEM_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null)
+    {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(CocciPackage.Literals.COCCIDIOIDES_IMMUNOSUPPRESSED_MEDICAL_CONDITION_HISTORY_OBSERVATION);
       try
@@ -106,13 +107,12 @@ public class CoccidioidesImmunosuppressedMedicalConditionHistoryObservationOpera
       {
         diagnostics.add
           (new BasicDiagnostic
-            (Diagnostic.WARNING,
+            (Diagnostic.ERROR,
              CocciValidator.DIAGNOSTIC_SOURCE,
              CocciValidator.COCCIDIOIDES_IMMUNOSUPPRESSED_MEDICAL_CONDITION_HISTORY_OBSERVATION__COCCIDIOIDES_IMMUNOSUPPRESSED_MEDICAL_CONDITION_HISTORY_OBSERVATION_COCCIDIOIDES_IMMUNOSUPPRESSED_MEDICAL_CONDITION_PROBLEM_OBSERVATION,
-             CocciPlugin.INSTANCE.getString("CoccidioidesImmunosuppressedMedicalConditionHistoryObservationCoccidioidesImmunosuppressedMedicalConditionProblemObservation"),
+             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "validateCoccidioidesImmunosuppressedMedicalConditionHistoryObservationCoccidioidesImmunosuppressedMedicalConditionProblemObservation", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(coccidioidesImmunosuppressedMedicalConditionHistoryObservation, context) }),
              new Object [] { coccidioidesImmunosuppressedMedicalConditionHistoryObservation }));
       }
-       
       return false;
     }
     return true;
@@ -141,6 +141,10 @@ public class CoccidioidesImmunosuppressedMedicalConditionHistoryObservationOpera
 	/**
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
+   * <!-- begin-model-doc -->
+   * self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(cocci::CoccidioidesImmunosuppressedMedicalConditionProblemObservation))->asSequence()->any(true).oclAsType(cocci::CoccidioidesImmunosuppressedMedicalConditionProblemObservation)
+   * @param coccidioidesImmunosuppressedMedicalConditionHistoryObservation The receiving '<em><b>Coccidioides Immunosuppressed Medical Condition History Observation</b></em>' model object.
+   * <!-- end-model-doc -->
    * @generated
    */
 	
@@ -148,7 +152,7 @@ public class CoccidioidesImmunosuppressedMedicalConditionHistoryObservationOpera
     if (GET_COCCIDIOIDES_IMMUNOSUPPRESSED_MEDICAL_CONDITION_PROBLEM_OBSERVATION__EOCL_QRY == null)
     {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
-      helper.setOperationContext(CocciPackage.Literals.COCCIDIOIDES_IMMUNOSUPPRESSED_MEDICAL_CONDITION_HISTORY_OBSERVATION, CocciPackage.Literals.COCCIDIOIDES_IMMUNOSUPPRESSED_MEDICAL_CONDITION_HISTORY_OBSERVATION.getEAllOperations().get(63));
+      helper.setOperationContext(CocciPackage.Literals.COCCIDIOIDES_IMMUNOSUPPRESSED_MEDICAL_CONDITION_HISTORY_OBSERVATION, CocciPackage.Literals.COCCIDIOIDES_IMMUNOSUPPRESSED_MEDICAL_CONDITION_HISTORY_OBSERVATION.getEAllOperations().get(61));
       try
       {
         GET_COCCIDIOIDES_IMMUNOSUPPRESSED_MEDICAL_CONDITION_PROBLEM_OBSERVATION__EOCL_QRY = helper.createQuery(GET_COCCIDIOIDES_IMMUNOSUPPRESSED_MEDICAL_CONDITION_PROBLEM_OBSERVATION__EOCL_EXP);
@@ -188,6 +192,7 @@ public class CoccidioidesImmunosuppressedMedicalConditionHistoryObservationOpera
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
+   * self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.15.3.94')
    * @param coccidioidesImmunosuppressedMedicalConditionHistoryObservation The receiving '<em><b>Coccidioides Immunosuppressed Medical Condition History Observation</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -196,8 +201,8 @@ public class CoccidioidesImmunosuppressedMedicalConditionHistoryObservationOpera
    */
 	
 	public static  boolean validatePhcrRelevantMedicalConditionHistoryObservationTemplateId(CoccidioidesImmunosuppressedMedicalConditionHistoryObservation coccidioidesImmunosuppressedMedicalConditionHistoryObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
-    if (VALIDATE_PHCR_RELEVANT_MEDICAL_CONDITION_HISTORY_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+    if (VALIDATE_PHCR_RELEVANT_MEDICAL_CONDITION_HISTORY_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null)
+    {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(CocciPackage.Literals.COCCIDIOIDES_IMMUNOSUPPRESSED_MEDICAL_CONDITION_HISTORY_OBSERVATION);
       try
@@ -218,10 +223,9 @@ public class CoccidioidesImmunosuppressedMedicalConditionHistoryObservationOpera
             (Diagnostic.ERROR,
              CocciValidator.DIAGNOSTIC_SOURCE,
              CocciValidator.COCCIDIOIDES_IMMUNOSUPPRESSED_MEDICAL_CONDITION_HISTORY_OBSERVATION__PHCR_RELEVANT_MEDICAL_CONDITION_HISTORY_OBSERVATION_TEMPLATE_ID,
-             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "PhcrRelevantMedicalConditionHistoryObservationTemplateId", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(coccidioidesImmunosuppressedMedicalConditionHistoryObservation, context) }),
+             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "validatePhcrRelevantMedicalConditionHistoryObservationTemplateId", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(coccidioidesImmunosuppressedMedicalConditionHistoryObservation, context) }),
              new Object [] { coccidioidesImmunosuppressedMedicalConditionHistoryObservation }));
       }
-       
       return false;
     }
     return true;

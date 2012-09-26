@@ -26,17 +26,4 @@ import org.openhealthtools.mdht.uml.cda.phcr.TreatmentGivenSubstanceAdministrati
  * @generated
  */
 public interface AnthraxTreatmentGivenSubstanceAdministration extends TreatmentGivenSubstanceAdministration {
-	/**
-   * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-   * @generated
-   */
-	public AnthraxTreatmentGivenSubstanceAdministration init();
-
-  /**
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    public AnthraxTreatmentGivenSubstanceAdministration init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // AnthraxTreatmentGivenSubstanceAdministration

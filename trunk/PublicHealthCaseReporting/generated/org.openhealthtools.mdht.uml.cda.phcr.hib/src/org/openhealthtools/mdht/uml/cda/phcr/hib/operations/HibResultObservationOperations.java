@@ -87,6 +87,7 @@ public class HibResultObservationOperations extends ResultObservationOperations 
 	 */
 	
 	public static  boolean validateResultObservationTemplateId(HibResultObservation hibResultObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
 		if (VALIDATE_RESULT_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(HibPackage.Literals.HIB_RESULT_OBSERVATION);
@@ -107,6 +108,7 @@ public class HibResultObservationOperations extends ResultObservationOperations 
 						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "ResultObservationTemplateId", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(hibResultObservation, context) }),
 						 new Object [] { hibResultObservation }));
 			}
+			 
 			return false;
 		}
 		return true;

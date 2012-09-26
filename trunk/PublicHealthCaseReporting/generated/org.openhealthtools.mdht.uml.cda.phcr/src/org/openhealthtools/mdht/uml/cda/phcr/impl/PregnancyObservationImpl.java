@@ -22,7 +22,6 @@ import org.openhealthtools.mdht.uml.cda.phcr.EstimatedDateOfDeliveryObservation;
 import org.openhealthtools.mdht.uml.cda.phcr.PhcrPackage;
 import org.openhealthtools.mdht.uml.cda.phcr.PregnancyObservation;
 import org.openhealthtools.mdht.uml.cda.phcr.operations.PregnancyObservationOperations;
-import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
 
 /**
  * <!-- begin-user-doc -->
@@ -160,24 +159,5 @@ public class PregnancyObservationImpl extends ObservationImpl implements Pregnan
 	public EstimatedDateOfDeliveryObservation getEstimatedDateOfDeliveryObservation() {
     return PregnancyObservationOperations.getEstimatedDateOfDeliveryObservation(this);
   }
-
-	/**
-   * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-   * @generated
-   */
-	public PregnancyObservation init() {
-      return Initializer.Util.init(this);
-  }
-
-  /**
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    public PregnancyObservation init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-        Initializer.Util.init(this, initializers);
-        return this;
-    }
 	
 } //PregnancyObservationImpl

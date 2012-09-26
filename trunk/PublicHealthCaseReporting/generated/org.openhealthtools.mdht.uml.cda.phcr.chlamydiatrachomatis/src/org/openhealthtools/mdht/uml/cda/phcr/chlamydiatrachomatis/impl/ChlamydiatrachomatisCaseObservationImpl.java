@@ -86,22 +86,4 @@ public class ChlamydiatrachomatisCaseObservationImpl extends CaseObservationImpl
   {
     return ChlamydiatrachomatisCaseObservationOperations.validateProblemObservationTemplateId(this, diagnostics, context);
   }
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public ChlamydiatrachomatisCaseObservation init() {
-      return Initializer.Util.init(this);
-  }
-    /**
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    public ChlamydiatrachomatisCaseObservation init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-        Initializer.Util.init(this, initializers);
-        return this;
-    }
 } //ChlamydiatrachomatisCaseObservationImpl

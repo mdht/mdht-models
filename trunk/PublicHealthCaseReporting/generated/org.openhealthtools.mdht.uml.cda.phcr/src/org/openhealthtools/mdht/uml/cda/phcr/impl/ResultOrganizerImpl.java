@@ -23,7 +23,6 @@ import org.openhealthtools.mdht.uml.cda.phcr.ResultObservation;
 import org.openhealthtools.mdht.uml.cda.phcr.ResultOrganizer;
 import org.openhealthtools.mdht.uml.cda.phcr.SpecimenCollectionProcedure;
 import org.openhealthtools.mdht.uml.cda.phcr.operations.ResultOrganizerOperations;
-import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
 
 /**
  * <!-- begin-user-doc -->
@@ -163,24 +162,5 @@ public class ResultOrganizerImpl extends org.openhealthtools.mdht.uml.cda.ccd.im
 	public boolean validateResultOrganizerTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
     return ResultOrganizerOperations.validateResultOrganizerTemplateId(this, diagnostics, context);
   }
-
-	/**
-   * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-   * @generated
-   */
-	public ResultOrganizer init() {
-      return Initializer.Util.init(this);
-  }
-
-  /**
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    public ResultOrganizer init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-        Initializer.Util.init(this, initializers);
-        return this;
-    }
 	
 } //ResultOrganizerImpl

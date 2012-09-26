@@ -30,8 +30,6 @@ import org.openhealthtools.mdht.uml.cda.phcr.tss.operations.TssPhcrRelevantDxTes
 
 import org.openhealthtools.mdht.uml.cda.phcr.tss.tssPackage;
 
-import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
-
 /**
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Tss Phcr Relevant Dx Tests Section</b></em>'.
@@ -106,23 +104,4 @@ public class TssPhcrRelevantDxTestsSectionImpl extends PhcrRelevantDxTestsSectio
 	public boolean validateResultsSectionTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
     return TssPhcrRelevantDxTestsSectionOperations.validateResultsSectionTemplateId(this, diagnostics, context);
   }
-
-	/**
-   * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-   * @generated
-   */
-	public TssPhcrRelevantDxTestsSection init() {
-      return Initializer.Util.init(this);
-  }
-
-  /**
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    public TssPhcrRelevantDxTestsSection init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-        Initializer.Util.init(this, initializers);
-        return this;
-    }
 } //TssPhcrRelevantDxTestsSectionImpl

@@ -3,11 +3,14 @@
     xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="hib"
     nsURI="http://www.openhealthtools.org/mdht/uml/cda/phcr/hib" nsPrefix="hib">
+  <eAnnotations source="http://www.openhealthtools.org/mdht/uml">
+    <details key="initializers" value="org.openhealthtools.mdht.uml.cda.hib"/>
+  </eAnnotations>
   <eClassifiers xsi:type="ecore:EClass" name="HIBCaseReport" eSuperTypes="../../org.openhealthtools.mdht.uml.cda.phcr/model/phcr.ecore#//PublicHealthCaseReport">
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
-      <details key="title.mixed" value="Public Health Case Report - Haemophilus Influenzae Type B"/>
+      <details key="constraints.validation.error" value="HIBCaseReportTemplateId HIBCaseReportTitle HIBCaseReportHibPhcrClinicalInformationSection "/>
       <details key="templateId.root" value="2.16.840.1.113883.10.20.15.1.14"/>
-      <details key="constraints.validation.error" value="HIBCaseReportTemplateId HIBCaseReportTitle HIBCaseReportHibPhcrClinicalInformationSection"/>
+      <details key="title.mixed" value="Public Health Case Report - Haemophilus Influenzae Type B"/>
       <details key="constraints.validation.warning" value="HIBCaseReportHibPhcrRelevantDxTestsSection"/>
     </eAnnotations>
     <eAnnotations source="duplicates">
@@ -105,26 +108,26 @@
     <eOperations name="getHibPhcrClinicalInformationSection" ordered="false" lowerBound="1"
         eType="#//HibPhcrClinicalInformationSection">
       <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hib::HibPhcrClinicalInformationSection ))->asSequence()->first().oclAsType(hib::HibPhcrClinicalInformationSection )"/>
+        <details key="documentation" value="self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hib::HibPhcrClinicalInformationSection ))->asSequence()->any(true).oclAsType(hib::HibPhcrClinicalInformationSection )"/>
       </eAnnotations>
       <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
-        <details key="body" value="self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hib::HibPhcrClinicalInformationSection ))->asSequence()->first().oclAsType(hib::HibPhcrClinicalInformationSection )"/>
+        <details key="body" value="self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hib::HibPhcrClinicalInformationSection ))->asSequence()->any(true).oclAsType(hib::HibPhcrClinicalInformationSection )"/>
       </eAnnotations>
     </eOperations>
     <eOperations name="getHibPhcrRelevantDxTestsSection" ordered="false" lowerBound="1"
         eType="#//HibPhcrRelevantDxTestsSection">
       <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hib::HibPhcrRelevantDxTestsSection))->asSequence()->first().oclAsType(hib::HibPhcrRelevantDxTestsSection)"/>
+        <details key="documentation" value="self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hib::HibPhcrRelevantDxTestsSection))->asSequence()->any(true).oclAsType(hib::HibPhcrRelevantDxTestsSection)"/>
       </eAnnotations>
       <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
-        <details key="body" value="self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hib::HibPhcrRelevantDxTestsSection))->asSequence()->first().oclAsType(hib::HibPhcrRelevantDxTestsSection)"/>
+        <details key="body" value="self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hib::HibPhcrRelevantDxTestsSection))->asSequence()->any(true).oclAsType(hib::HibPhcrRelevantDxTestsSection)"/>
       </eAnnotations>
     </eOperations>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="HibPhcrClinicalInformationSection" eSuperTypes="../../org.openhealthtools.mdht.uml.cda.phcr/model/phcr.ecore#//PhcrClinicalInformationSection">
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
-      <details key="templateId.root" value="2.16.840.1.113883.10.20.15.2.57"/>
       <details key="constraints.validation.error" value="HibPhcrClinicalInformationSection TemplateId HibPhcrClinicalInformationSection HibCaseObservation"/>
+      <details key="templateId.root" value="2.16.840.1.113883.10.20.15.2.57"/>
     </eAnnotations>
     <eAnnotations source="duplicates">
       <contents xsi:type="ecore:EOperation" name="PhcrClinicalInformationSectionTemplateId"
@@ -176,17 +179,17 @@
     </eOperations>
     <eOperations name="getHibCaseObservation" ordered="false" lowerBound="1" eType="#//HibCaseObservation">
       <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(hib::HibCaseObservation))->asSequence()->first().oclAsType(hib::HibCaseObservation)"/>
+        <details key="documentation" value="self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(hib::HibCaseObservation))->asSequence()->any(true).oclAsType(hib::HibCaseObservation)"/>
       </eAnnotations>
       <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
-        <details key="body" value="self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(hib::HibCaseObservation))->asSequence()->first().oclAsType(hib::HibCaseObservation)"/>
+        <details key="body" value="self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(hib::HibCaseObservation))->asSequence()->any(true).oclAsType(hib::HibCaseObservation)"/>
       </eAnnotations>
     </eOperations>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="HibCaseObservation" eSuperTypes="../../org.openhealthtools.mdht.uml.cda.phcr/model/phcr.ecore#//CaseObservation">
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
-      <details key="templateId.root" value="2.16.840.1.113883.10.20.15.3.134"/>
       <details key="constraints.validation.error" value="HibCaseObservationTemplateId"/>
+      <details key="templateId.root" value="2.16.840.1.113883.10.20.15.3.134"/>
       <details key="constraints.validation.warning" value="HibCaseObservationHibSignsAndSymptoms"/>
     </eAnnotations>
     <eAnnotations source="duplicates">
@@ -248,8 +251,8 @@
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="HibSignsAndSymptoms" eSuperTypes="../../org.openhealthtools.mdht.uml.cda.phcr/model/phcr.ecore#//SignsAndSymptomsObservation">
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
-      <details key="templateId.root" value="2.16.840.1.113883.10.20.15.3.135"/>
       <details key="constraints.validation.error" value="HibSignsAndSymptomsTemplateId"/>
+      <details key="templateId.root" value="2.16.840.1.113883.10.20.15.3.135"/>
     </eAnnotations>
     <eAnnotations source="duplicates">
       <contents xsi:type="ecore:EOperation" name="SignsAndSymptomsObservationTemplateId"
@@ -280,8 +283,8 @@
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="HibPhcrRelevantDxTestsSection" eSuperTypes="../../org.openhealthtools.mdht.uml.cda.phcr/model/phcr.ecore#//PhcrRelevantDxTestsSection">
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
-      <details key="templateId.root" value="2.16.840.1.113883.10.20.15.2.58"/>
       <details key="constraints.validation.error" value="HibPhcrRelevantDxTestsSectionTemplateId"/>
+      <details key="templateId.root" value="2.16.840.1.113883.10.20.15.2.58"/>
       <details key="constraints.validation.warning" value="HibPhcrRelevantDxTestsSectionHibResultObservation"/>
       <details key="constraints.validation.info" value="HibPhcrRelevantDxTestsSectionHibResultOrganizer"/>
     </eAnnotations>
@@ -375,8 +378,8 @@
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="HibResultObservation" eSuperTypes="../../org.openhealthtools.mdht.uml.cda.phcr/model/phcr.ecore#//ResultObservation">
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
-      <details key="templateId.root" value="2.16.840.1.113883.10.20.15.3.137"/>
       <details key="constraints.validation.error" value="HibResultObservationTemplateId"/>
+      <details key="templateId.root" value="2.16.840.1.113883.10.20.15.3.137"/>
     </eAnnotations>
     <eAnnotations source="duplicates">
       <contents xsi:type="ecore:EOperation" name="ResultObservationTemplateId" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
@@ -406,8 +409,8 @@
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="HibResultOrganizer" eSuperTypes="../../org.openhealthtools.mdht.uml.cda.phcr/model/phcr.ecore#//ResultOrganizer">
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
-      <details key="templateId.root" value="2.16.840.1.113883.10.20.15.3.136"/>
       <details key="constraints.validation.error" value="HibResultOrganizerTemplateId HibResultOrganizerHibResultObservation"/>
+      <details key="templateId.root" value="2.16.840.1.113883.10.20.15.3.136"/>
     </eAnnotations>
     <eAnnotations source="duplicates">
       <contents xsi:type="ecore:EOperation" name="ResultOrganizerTemplateId" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
@@ -458,10 +461,10 @@
     </eOperations>
     <eOperations name="getHibResultObservation" ordered="false" lowerBound="1" eType="#//HibResultObservation">
       <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(hib::HibResultObservation))->asSequence()->first().oclAsType(hib::HibResultObservation)"/>
+        <details key="documentation" value="self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(hib::HibResultObservation))->asSequence()->any(true).oclAsType(hib::HibResultObservation)"/>
       </eAnnotations>
       <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
-        <details key="body" value="self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(hib::HibResultObservation))->asSequence()->first().oclAsType(hib::HibResultObservation)"/>
+        <details key="body" value="self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(hib::HibResultObservation))->asSequence()->any(true).oclAsType(hib::HibResultObservation)"/>
       </eAnnotations>
     </eOperations>
   </eClassifiers>

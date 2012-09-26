@@ -78,6 +78,7 @@ public class CoccidioidesTreatmentNotGivenSubstanceAdministrationOperations exte
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
+   * self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.15.3.91')
    * @param coccidioidesTreatmentNotGivenSubstanceAdministration The receiving '<em><b>Coccidioides Treatment Not Given Substance Administration</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -86,8 +87,8 @@ public class CoccidioidesTreatmentNotGivenSubstanceAdministrationOperations exte
    */
 	
 	public static  boolean validateTreatmentNotGivenSubstanceAdministrationTemplateId(CoccidioidesTreatmentNotGivenSubstanceAdministration coccidioidesTreatmentNotGivenSubstanceAdministration, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
-    if (VALIDATE_TREATMENT_NOT_GIVEN_SUBSTANCE_ADMINISTRATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+    if (VALIDATE_TREATMENT_NOT_GIVEN_SUBSTANCE_ADMINISTRATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null)
+    {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(CocciPackage.Literals.COCCIDIOIDES_TREATMENT_NOT_GIVEN_SUBSTANCE_ADMINISTRATION);
       try
@@ -108,10 +109,9 @@ public class CoccidioidesTreatmentNotGivenSubstanceAdministrationOperations exte
             (Diagnostic.ERROR,
              CocciValidator.DIAGNOSTIC_SOURCE,
              CocciValidator.COCCIDIOIDES_TREATMENT_NOT_GIVEN_SUBSTANCE_ADMINISTRATION__TREATMENT_NOT_GIVEN_SUBSTANCE_ADMINISTRATION_TEMPLATE_ID,
-             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "TreatmentNotGivenSubstanceAdministrationTemplateId", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(coccidioidesTreatmentNotGivenSubstanceAdministration, context) }),
+             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "validateTreatmentNotGivenSubstanceAdministrationTemplateId", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(coccidioidesTreatmentNotGivenSubstanceAdministration, context) }),
              new Object [] { coccidioidesTreatmentNotGivenSubstanceAdministration }));
       }
-       
       return false;
     }
     return true;

@@ -10,7 +10,6 @@
  *******************************************************************************/
 package org.openhealthtools.mdht.uml.cda.phcr.operations;
 
-import java.util.Collection;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.BasicDiagnostic;
@@ -36,11 +35,8 @@ import org.openhealthtools.mdht.uml.cda.phcr.util.PhcrValidator;
  *   <li>{@link org.openhealthtools.mdht.uml.cda.phcr.RaceObservation#validateRaceObservationTemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Race Observation Template Id</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.phcr.RaceObservation#validateRaceObservationClassCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Race Observation Class Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.phcr.RaceObservation#validateRaceObservationMoodCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Race Observation Mood Code</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.phcr.RaceObservation#validateRaceObservationCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Race Observation Code P</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.phcr.RaceObservation#validateRaceObservationCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Race Observation Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.phcr.RaceObservation#validateRaceObservationStatusCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Race Observation Status Code</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.phcr.RaceObservation#validateRaceObservationStatusCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Race Observation Status Code P</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.phcr.RaceObservation#validateRaceObservationValue(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Race Observation Value</em>}</li>
  * </ul>
  * </p>
  *
@@ -80,6 +76,7 @@ public class RaceObservationOperations extends ClinicalStatementOperations {
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
+   * self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.15.3.9')
    * @param raceObservation The receiving '<em><b>Race Observation</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -87,8 +84,8 @@ public class RaceObservationOperations extends ClinicalStatementOperations {
    * @generated
    */
 	public static  boolean validateRaceObservationTemplateId(RaceObservation raceObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
-    if (VALIDATE_RACE_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+    if (VALIDATE_RACE_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null)
+    {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(PhcrPackage.Literals.RACE_OBSERVATION);
       try
@@ -109,10 +106,9 @@ public class RaceObservationOperations extends ClinicalStatementOperations {
             (Diagnostic.ERROR,
              PhcrValidator.DIAGNOSTIC_SOURCE,
              PhcrValidator.RACE_OBSERVATION__RACE_OBSERVATION_TEMPLATE_ID,
-             PhcrPlugin.INSTANCE.getString("RaceObservationTemplateId"),
+             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "validateRaceObservationTemplateId", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(raceObservation, context) }),
              new Object [] { raceObservation }));
       }
-       
       return false;
     }
     return true;
@@ -142,6 +138,7 @@ public class RaceObservationOperations extends ClinicalStatementOperations {
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
+   * self.classCode=vocab::ActClassObservation::OBS
    * @param raceObservation The receiving '<em><b>Race Observation</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -149,8 +146,8 @@ public class RaceObservationOperations extends ClinicalStatementOperations {
    * @generated
    */
 	public static  boolean validateRaceObservationClassCode(RaceObservation raceObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
-    if (VALIDATE_RACE_OBSERVATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+    if (VALIDATE_RACE_OBSERVATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null)
+    {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(PhcrPackage.Literals.RACE_OBSERVATION);
       try
@@ -171,10 +168,9 @@ public class RaceObservationOperations extends ClinicalStatementOperations {
             (Diagnostic.ERROR,
              PhcrValidator.DIAGNOSTIC_SOURCE,
              PhcrValidator.RACE_OBSERVATION__RACE_OBSERVATION_CLASS_CODE,
-             PhcrPlugin.INSTANCE.getString("RaceObservationClassCode"),
+             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "validateRaceObservationClassCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(raceObservation, context) }),
              new Object [] { raceObservation }));
       }
-       
       return false;
     }
     return true;
@@ -184,6 +180,9 @@ public class RaceObservationOperations extends ClinicalStatementOperations {
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
+   * (self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and 
+   * let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in 
+   * value.code = '32624-9' and value.codeSystem = '2.16.840.1.113883.6.1')
    * @param raceObservation The receiving '<em><b>Race Observation</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -191,14 +190,8 @@ public class RaceObservationOperations extends ClinicalStatementOperations {
    * @generated
    */
 	public static  boolean validateRaceObservationCode(RaceObservation raceObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
-    Object passToken = (context == null) ? null : context.get("org.openhealthtools.mdht.uml.cda.phcr.RaceObservationCodeP");
-    if ((passToken instanceof Collection<?>) && ((Collection<?>) passToken).contains(raceObservation)) {
-      // I have a free pass to short-circuit
-      return true;
-    }
-  	  
-    if (VALIDATE_RACE_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+    if (VALIDATE_RACE_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null)
+    {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(PhcrPackage.Literals.RACE_OBSERVATION);
       try
@@ -219,10 +212,9 @@ public class RaceObservationOperations extends ClinicalStatementOperations {
             (Diagnostic.ERROR,
              PhcrValidator.DIAGNOSTIC_SOURCE,
              PhcrValidator.RACE_OBSERVATION__RACE_OBSERVATION_CODE,
-             PhcrPlugin.INSTANCE.getString("RaceObservationCode"),
+             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "validateRaceObservationCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(raceObservation, context) }),
              new Object [] { raceObservation }));
       }
-       
       return false;
     }
     return true;
@@ -252,6 +244,7 @@ public class RaceObservationOperations extends ClinicalStatementOperations {
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
+   * self.moodCode=vocab::x_ActMoodDocumentObservation::EVN
    * @param raceObservation The receiving '<em><b>Race Observation</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -259,8 +252,8 @@ public class RaceObservationOperations extends ClinicalStatementOperations {
    * @generated
    */
 	public static  boolean validateRaceObservationMoodCode(RaceObservation raceObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
-    if (VALIDATE_RACE_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+    if (VALIDATE_RACE_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null)
+    {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(PhcrPackage.Literals.RACE_OBSERVATION);
       try
@@ -281,10 +274,9 @@ public class RaceObservationOperations extends ClinicalStatementOperations {
             (Diagnostic.ERROR,
              PhcrValidator.DIAGNOSTIC_SOURCE,
              PhcrValidator.RACE_OBSERVATION__RACE_OBSERVATION_MOOD_CODE,
-             PhcrPlugin.INSTANCE.getString("RaceObservationMoodCode"),
+             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "validateRaceObservationMoodCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(raceObservation, context) }),
              new Object [] { raceObservation }));
       }
-       
       return false;
     }
     return true;
@@ -337,6 +329,7 @@ public class RaceObservationOperations extends ClinicalStatementOperations {
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
+   * (self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined())
    * @param raceObservation The receiving '<em><b>Race Observation</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -345,8 +338,8 @@ public class RaceObservationOperations extends ClinicalStatementOperations {
    */
 	
 	public static  boolean validateRaceObservationCodeP(RaceObservation raceObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
-    if (VALIDATE_RACE_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+    if (VALIDATE_RACE_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null)
+    {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(PhcrPackage.Literals.RACE_OBSERVATION);
       try
@@ -367,22 +360,9 @@ public class RaceObservationOperations extends ClinicalStatementOperations {
             (Diagnostic.ERROR,
              PhcrValidator.DIAGNOSTIC_SOURCE,
              PhcrValidator.RACE_OBSERVATION__RACE_OBSERVATION_CODE_P,
-             PhcrPlugin.INSTANCE.getString("RaceObservationCodeP"),
+             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "validateRaceObservationCodeP", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(raceObservation, context) }),
              new Object [] { raceObservation }));
       }
-      
-      if (context != null) {
-        // generate a pass token for my dependent constraints to short-circuit or filter results
-        @SuppressWarnings("unchecked")
-        Collection<Object> passToken = (Collection<Object>) context.get("org.openhealthtools.mdht.uml.cda.phcr.RaceObservationCodeP");
-        if (passToken == null) {
-          // anticipate a reasonably healthy model
-          passToken = new java.util.ArrayList<Object>(3);
-          context.put("org.openhealthtools.mdht.uml.cda.phcr.RaceObservationCodeP", passToken);
-        }
-        passToken.add(raceObservation);
-      }
-       
       return false;
     }
     return true;
@@ -414,6 +394,9 @@ public class RaceObservationOperations extends ClinicalStatementOperations {
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
+   * (self.statusCode.oclIsUndefined() or self.statusCode.isNullFlavorUndefined()) implies (not self.statusCode.oclIsUndefined() and self.statusCode.oclIsKindOf(datatypes::CS) and 
+   * let value : datatypes::CS = self.statusCode.oclAsType(datatypes::CS) in 
+   * value.code = 'completed')
    * @param raceObservation The receiving '<em><b>Race Observation</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -421,8 +404,8 @@ public class RaceObservationOperations extends ClinicalStatementOperations {
    * @generated
    */
 	public static  boolean validateRaceObservationStatusCode(RaceObservation raceObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
-    if (VALIDATE_RACE_OBSERVATION_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+    if (VALIDATE_RACE_OBSERVATION_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null)
+    {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(PhcrPackage.Literals.RACE_OBSERVATION);
       try
@@ -443,10 +426,9 @@ public class RaceObservationOperations extends ClinicalStatementOperations {
             (Diagnostic.ERROR,
              PhcrValidator.DIAGNOSTIC_SOURCE,
              PhcrValidator.RACE_OBSERVATION__RACE_OBSERVATION_STATUS_CODE,
-             PhcrPlugin.INSTANCE.getString("RaceObservationStatusCode"),
+             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "validateRaceObservationStatusCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(raceObservation, context) }),
              new Object [] { raceObservation }));
       }
-       
       return false;
     }
     return true;
@@ -477,6 +459,7 @@ public class RaceObservationOperations extends ClinicalStatementOperations {
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
+   * (self.statusCode.oclIsUndefined() or self.statusCode.isNullFlavorUndefined()) implies (not self.statusCode.oclIsUndefined())
    * @param raceObservation The receiving '<em><b>Race Observation</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -485,8 +468,8 @@ public class RaceObservationOperations extends ClinicalStatementOperations {
    */
 	
 	public static  boolean validateRaceObservationStatusCodeP(RaceObservation raceObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
-    if (VALIDATE_RACE_OBSERVATION_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+    if (VALIDATE_RACE_OBSERVATION_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null)
+    {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(PhcrPackage.Literals.RACE_OBSERVATION);
       try
@@ -507,10 +490,9 @@ public class RaceObservationOperations extends ClinicalStatementOperations {
             (Diagnostic.ERROR,
              PhcrValidator.DIAGNOSTIC_SOURCE,
              PhcrValidator.RACE_OBSERVATION__RACE_OBSERVATION_STATUS_CODE_P,
-             PhcrPlugin.INSTANCE.getString("RaceObservationStatusCodeP"),
+             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "validateRaceObservationStatusCodeP", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(raceObservation, context) }),
              new Object [] { raceObservation }));
       }
-       
       return false;
     }
     return true;
@@ -541,6 +523,7 @@ public class RaceObservationOperations extends ClinicalStatementOperations {
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
+   * (self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (self.value->size() = 1 and self.value->forAll(element | element.oclIsTypeOf(datatypes::CD)))
    * @param raceObservation The receiving '<em><b>Race Observation</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -549,8 +532,8 @@ public class RaceObservationOperations extends ClinicalStatementOperations {
    */
 	
 	public static  boolean validateRaceObservationValue(RaceObservation raceObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
-    if (VALIDATE_RACE_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+    if (VALIDATE_RACE_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null)
+    {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(PhcrPackage.Literals.RACE_OBSERVATION);
       try
@@ -571,10 +554,9 @@ public class RaceObservationOperations extends ClinicalStatementOperations {
             (Diagnostic.ERROR,
              PhcrValidator.DIAGNOSTIC_SOURCE,
              PhcrValidator.RACE_OBSERVATION__RACE_OBSERVATION_VALUE,
-             PhcrPlugin.INSTANCE.getString("RaceObservationValue"),
+             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "validateRaceObservationValue", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(raceObservation, context) }),
              new Object [] { raceObservation }));
       }
-       
       return false;
     }
     return true;

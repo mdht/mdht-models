@@ -20,44 +20,44 @@
       <importedPackage href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_KnCD4CFjEd-3s7f6mWX-3A"/>
     </packageImport>
     <packagedElement xmi:type="uml:Class" xmi:id="_lr8twFZBEeG6GPFMVAzSqg" name="TuberculosisCaseReport">
-      <ownedRule xmi:id="_12KFoO1qEeGeHKjzItayOg" name="PublicHealthCaseReportTemplateId" constrainedElement="_lr8twFZBEeG6GPFMVAzSqg">
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_12KFoe1qEeGeHKjzItayOg">
+      <ownedRule xmi:id="_yjDtIgdIEeK9gYpImj-Uyw" name="PublicHealthCaseReportTemplateId" constrainedElement="_lr8twFZBEeG6GPFMVAzSqg">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_yjDtIwdIEeK9gYpImj-Uyw">
           <language>OCL</language>
           <body>self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.15.1.1')</body>
         </specification>
       </ownedRule>
-      <ownedRule xmi:id="_12L60O1qEeGeHKjzItayOg" name="TuberculosisCaseReportTitle" constrainedElement="_lr8twFZBEeG6GPFMVAzSqg">
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_12L60e1qEeGeHKjzItayOg">
+      <ownedRule xmi:id="_yjDtJQdIEeK9gYpImj-Uyw" name="TuberculosisCaseReportTitle" constrainedElement="_lr8twFZBEeG6GPFMVAzSqg">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_yjDtJgdIEeK9gYpImj-Uyw">
           <language>OCL</language>
           <body>(self.title.oclIsUndefined() or self.title.isNullFlavorUndefined()) implies (not self.title.oclIsUndefined() and self.title.getText() = 'Public Health Case Report - Tuberculosis')</body>
         </specification>
       </ownedRule>
-      <ownedRule xmi:id="_12NwAO1qEeGeHKjzItayOg" name="TuberculosisCaseReportTuberculosisPHCRSocialHistorySection" constrainedElement="_lr8twFZBEeG6GPFMVAzSqg">
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_12NwAe1qEeGeHKjzItayOg">
+      <ownedRule xmi:id="_yjM3EAdIEeK9gYpImj-Uyw" name="TuberculosisCaseReportTuberculosisPHCRSocialHistorySection" constrainedElement="_lr8twFZBEeG6GPFMVAzSqg">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_yjM3EQdIEeK9gYpImj-Uyw">
           <language>OCL</language>
           <body>self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(tuberculosis::TuberculosisPHCRSocialHistorySection))</body>
         </specification>
       </ownedRule>
-      <ownedRule xmi:id="_13x2QO1qEeGeHKjzItayOg" name="TuberculosisCaseReportTuberculosisPHCRClinicalInformationSection" constrainedElement="_lr8twFZBEeG6GPFMVAzSqg">
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_13x2Qe1qEeGeHKjzItayOg">
+      <ownedRule xmi:id="_ylShxwdIEeK9gYpImj-Uyw" name="TuberculosisCaseReportTuberculosisPHCRClinicalInformationSection" constrainedElement="_lr8twFZBEeG6GPFMVAzSqg">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_ylShyAdIEeK9gYpImj-Uyw">
           <language>OCL</language>
           <body>self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(tuberculosis::TuberculosisPHCRClinicalInformationSection))</body>
         </specification>
       </ownedRule>
-      <ownedRule xmi:id="_13zEYO1qEeGeHKjzItayOg" name="TuberculosisCaseReportTuberculosisPHCRRelevantDxTestsSection" constrainedElement="_lr8twFZBEeG6GPFMVAzSqg">
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_13zEYe1qEeGeHKjzItayOg">
+      <ownedRule xmi:id="_ylShzgdIEeK9gYpImj-Uyw" name="TuberculosisCaseReportTuberculosisPHCRRelevantDxTestsSection" constrainedElement="_lr8twFZBEeG6GPFMVAzSqg">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_ylShzwdIEeK9gYpImj-Uyw">
           <language>OCL</language>
           <body>self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(tuberculosis::TuberculosisPHCRRelevantDxTestsSection))</body>
         </specification>
       </ownedRule>
-      <ownedRule xmi:id="_1305kO1qEeGeHKjzItayOg" name="TuberculosisCaseReportTuberculosisPHCRTreatmentInformationSection" constrainedElement="_lr8twFZBEeG6GPFMVAzSqg">
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_1305ke1qEeGeHKjzItayOg">
+      <ownedRule xmi:id="_ylSh1QdIEeK9gYpImj-Uyw" name="TuberculosisCaseReportTuberculosisPHCRTreatmentInformationSection" constrainedElement="_lr8twFZBEeG6GPFMVAzSqg">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_ylSh1gdIEeK9gYpImj-Uyw">
           <language>OCL</language>
           <body>self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(tuberculosis::TuberculosisPHCRTreatmentInformationSection))</body>
         </specification>
       </ownedRule>
-      <ownedRule xmi:id="_13384O1qEeGeHKjzItayOg" name="TuberculosisCaseReportTuberculosisPHCRImmunizationSection" constrainedElement="_lr8twFZBEeG6GPFMVAzSqg">
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_13384e1qEeGeHKjzItayOg">
+      <ownedRule xmi:id="_ylcSyQdIEeK9gYpImj-Uyw" name="TuberculosisCaseReportTuberculosisPHCRImmunizationSection" constrainedElement="_lr8twFZBEeG6GPFMVAzSqg">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_ylcSygdIEeK9gYpImj-Uyw">
           <language>OCL</language>
           <body>self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(tuberculosis::TuberculosisPHCRImmunizationSection))</body>
         </specification>
@@ -65,77 +65,77 @@
       <generalization xmi:id="_lr-i8FZBEeG6GPFMVAzSqg">
         <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.phcr/model/phcr_Ecore.uml#_6PmAIcgnEeCI5ZpfyBisiQ"/>
       </generalization>
-      <ownedOperation xmi:id="_12O-IO1qEeGeHKjzItayOg" name="getTuberculosisPHCRSocialHistorySection" isQuery="true" bodyCondition="_12O-I-1qEeGeHKjzItayOg">
-        <ownedRule xmi:id="_12O-I-1qEeGeHKjzItayOg" name="body" constrainedElement="_12O-IO1qEeGeHKjzItayOg">
-          <specification xmi:type="uml:OpaqueExpression" xmi:id="_12O-JO1qEeGeHKjzItayOg">
+      <ownedOperation xmi:id="_yjM3EgdIEeK9gYpImj-Uyw" name="getTuberculosisPHCRSocialHistorySection" isQuery="true" bodyCondition="_yjM3FQdIEeK9gYpImj-Uyw">
+        <ownedRule xmi:id="_yjM3FQdIEeK9gYpImj-Uyw" name="body" constrainedElement="_yjM3EgdIEeK9gYpImj-Uyw">
+          <specification xmi:type="uml:OpaqueExpression" xmi:id="_yjM3FgdIEeK9gYpImj-Uyw">
             <language>OCL</language>
             <body>self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(tuberculosis::TuberculosisPHCRSocialHistorySection))->asSequence()->any(true).oclAsType(tuberculosis::TuberculosisPHCRSocialHistorySection)</body>
           </specification>
         </ownedRule>
-        <ownedParameter xmi:id="_12O-Ie1qEeGeHKjzItayOg" type="_iYAP8FZxEeG6GPFMVAzSqg" direction="return">
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_12O-Iu1qEeGeHKjzItayOg" value="1"/>
+        <ownedParameter xmi:id="_yjM3EwdIEeK9gYpImj-Uyw" type="_iYAP8FZxEeG6GPFMVAzSqg" direction="return">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_yjM3FAdIEeK9gYpImj-Uyw" value="1"/>
         </ownedParameter>
       </ownedOperation>
-      <ownedOperation xmi:id="_13ydUO1qEeGeHKjzItayOg" name="getTuberculosisPHCRClinicalInformationSection" isQuery="true" bodyCondition="_13ydU-1qEeGeHKjzItayOg">
-        <ownedRule xmi:id="_13ydU-1qEeGeHKjzItayOg" name="body" constrainedElement="_13ydUO1qEeGeHKjzItayOg">
-          <specification xmi:type="uml:OpaqueExpression" xmi:id="_13ydVO1qEeGeHKjzItayOg">
+      <ownedOperation xmi:id="_ylShyQdIEeK9gYpImj-Uyw" name="getTuberculosisPHCRClinicalInformationSection" isQuery="true" bodyCondition="_ylShzAdIEeK9gYpImj-Uyw">
+        <ownedRule xmi:id="_ylShzAdIEeK9gYpImj-Uyw" name="body" constrainedElement="_ylShyQdIEeK9gYpImj-Uyw">
+          <specification xmi:type="uml:OpaqueExpression" xmi:id="_ylShzQdIEeK9gYpImj-Uyw">
             <language>OCL</language>
             <body>self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(tuberculosis::TuberculosisPHCRClinicalInformationSection))->asSequence()->any(true).oclAsType(tuberculosis::TuberculosisPHCRClinicalInformationSection)</body>
           </specification>
         </ownedRule>
-        <ownedParameter xmi:id="_13ydUe1qEeGeHKjzItayOg" type="_RNTKYFZkEeG6GPFMVAzSqg" direction="return">
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_13ydUu1qEeGeHKjzItayOg" value="1"/>
+        <ownedParameter xmi:id="_ylShygdIEeK9gYpImj-Uyw" type="_RNTKYFZkEeG6GPFMVAzSqg" direction="return">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ylShywdIEeK9gYpImj-Uyw" value="1"/>
         </ownedParameter>
       </ownedOperation>
-      <ownedOperation xmi:id="_130SgO1qEeGeHKjzItayOg" name="getTuberculosisPHCRRelevantDxTestsSection" isQuery="true" bodyCondition="_130Sg-1qEeGeHKjzItayOg">
-        <ownedRule xmi:id="_130Sg-1qEeGeHKjzItayOg" name="body" constrainedElement="_130SgO1qEeGeHKjzItayOg">
-          <specification xmi:type="uml:OpaqueExpression" xmi:id="_130ShO1qEeGeHKjzItayOg">
+      <ownedOperation xmi:id="_ylSh0AdIEeK9gYpImj-Uyw" name="getTuberculosisPHCRRelevantDxTestsSection" isQuery="true" bodyCondition="_ylSh0wdIEeK9gYpImj-Uyw">
+        <ownedRule xmi:id="_ylSh0wdIEeK9gYpImj-Uyw" name="body" constrainedElement="_ylSh0AdIEeK9gYpImj-Uyw">
+          <specification xmi:type="uml:OpaqueExpression" xmi:id="_ylSh1AdIEeK9gYpImj-Uyw">
             <language>OCL</language>
             <body>self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(tuberculosis::TuberculosisPHCRRelevantDxTestsSection))->asSequence()->any(true).oclAsType(tuberculosis::TuberculosisPHCRRelevantDxTestsSection)</body>
           </specification>
         </ownedRule>
-        <ownedParameter xmi:id="_130Sge1qEeGeHKjzItayOg" type="_TE9n4FZqEeG6GPFMVAzSqg" direction="return">
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_130Sgu1qEeGeHKjzItayOg" value="1"/>
+        <ownedParameter xmi:id="_ylSh0QdIEeK9gYpImj-Uyw" type="_TE9n4FZqEeG6GPFMVAzSqg" direction="return">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ylSh0gdIEeK9gYpImj-Uyw" value="1"/>
         </ownedParameter>
       </ownedOperation>
-      <ownedOperation xmi:id="_131goO1qEeGeHKjzItayOg" name="getTuberculosisPHCRTreatmentInformationSection" isQuery="true" bodyCondition="_131go-1qEeGeHKjzItayOg">
-        <ownedRule xmi:id="_131go-1qEeGeHKjzItayOg" name="body" constrainedElement="_131goO1qEeGeHKjzItayOg">
-          <specification xmi:type="uml:OpaqueExpression" xmi:id="_131gpO1qEeGeHKjzItayOg">
+      <ownedOperation xmi:id="_ylcSwAdIEeK9gYpImj-Uyw" name="getTuberculosisPHCRTreatmentInformationSection" isQuery="true" bodyCondition="_ylcSwwdIEeK9gYpImj-Uyw">
+        <ownedRule xmi:id="_ylcSwwdIEeK9gYpImj-Uyw" name="body" constrainedElement="_ylcSwAdIEeK9gYpImj-Uyw">
+          <specification xmi:type="uml:OpaqueExpression" xmi:id="_ylcSxAdIEeK9gYpImj-Uyw">
             <language>OCL</language>
             <body>self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(tuberculosis::TuberculosisPHCRTreatmentInformationSection))->asSequence()->any(true).oclAsType(tuberculosis::TuberculosisPHCRTreatmentInformationSection)</body>
           </specification>
         </ownedRule>
-        <ownedParameter xmi:id="_131goe1qEeGeHKjzItayOg" type="_p-v6sFZ4EeG6GPFMVAzSqg" direction="return">
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_131gou1qEeGeHKjzItayOg" value="1"/>
+        <ownedParameter xmi:id="_ylcSwQdIEeK9gYpImj-Uyw" type="_p-v6sFZ4EeG6GPFMVAzSqg" direction="return">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ylcSwgdIEeK9gYpImj-Uyw" value="1"/>
         </ownedParameter>
       </ownedOperation>
-      <ownedOperation xmi:id="_135LAO1qEeGeHKjzItayOg" name="getTuberculosisPHCRImmunizationSection" isQuery="true" bodyCondition="_135LA-1qEeGeHKjzItayOg">
-        <ownedRule xmi:id="_135LA-1qEeGeHKjzItayOg" name="body" constrainedElement="_135LAO1qEeGeHKjzItayOg">
-          <specification xmi:type="uml:OpaqueExpression" xmi:id="_135LBO1qEeGeHKjzItayOg">
+      <ownedOperation xmi:id="_ylcSywdIEeK9gYpImj-Uyw" name="getTuberculosisPHCRImmunizationSection" isQuery="true" bodyCondition="_ylcSzgdIEeK9gYpImj-Uyw">
+        <ownedRule xmi:id="_ylcSzgdIEeK9gYpImj-Uyw" name="body" constrainedElement="_ylcSywdIEeK9gYpImj-Uyw">
+          <specification xmi:type="uml:OpaqueExpression" xmi:id="_ylcSzwdIEeK9gYpImj-Uyw">
             <language>OCL</language>
             <body>self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(tuberculosis::TuberculosisPHCRImmunizationSection))->asSequence()->any(true).oclAsType(tuberculosis::TuberculosisPHCRImmunizationSection)</body>
           </specification>
         </ownedRule>
-        <ownedParameter xmi:id="_135LAe1qEeGeHKjzItayOg" type="_58mB0IJGEeG1NNkgO3XQ5g" direction="return">
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_135LAu1qEeGeHKjzItayOg" value="1"/>
+        <ownedParameter xmi:id="_ylcSzAdIEeK9gYpImj-Uyw" type="_58mB0IJGEeG1NNkgO3XQ5g" direction="return">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ylcSzQdIEeK9gYpImj-Uyw" value="1"/>
         </ownedParameter>
       </ownedOperation>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_RNTKYFZkEeG6GPFMVAzSqg" name="TuberculosisPHCRClinicalInformationSection">
-      <ownedRule xmi:id="_12PlMe1qEeGeHKjzItayOg" name="PhcrClinicalInformationSectionTemplateId" constrainedElement="_RNTKYFZkEeG6GPFMVAzSqg">
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_12PlMu1qEeGeHKjzItayOg">
+      <ownedRule xmi:id="_yjM3GAdIEeK9gYpImj-Uyw" name="PhcrClinicalInformationSectionTemplateId" constrainedElement="_RNTKYFZkEeG6GPFMVAzSqg">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_yjM3GQdIEeK9gYpImj-Uyw">
           <language>OCL</language>
           <body>self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.15.2.5')</body>
         </specification>
       </ownedRule>
-      <ownedRule xmi:id="_12bLYO1qEeGeHKjzItayOg" name="TuberculosisPHCRClinicalInformationSectionTuberculosisCaseObservation" constrainedElement="_RNTKYFZkEeG6GPFMVAzSqg">
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_12bycO1qEeGeHKjzItayOg">
+      <ownedRule xmi:id="_yjgZEAdIEeK9gYpImj-Uyw" name="TuberculosisPHCRClinicalInformationSectionTuberculosisCaseObservation" constrainedElement="_RNTKYFZkEeG6GPFMVAzSqg">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_yjgZEQdIEeK9gYpImj-Uyw">
           <language>OCL</language>
           <body>self.entry->one(entry : cda::Entry | not entry.observation.oclIsUndefined() and entry.observation.oclIsKindOf(tuberculosis::TuberculosisCaseObservation) and entry.typeCode = vocab::x_ActRelationshipEntry::DRIV)</body>
         </specification>
       </ownedRule>
-      <ownedRule xmi:id="_14bWgO1qEeGeHKjzItayOg" name="TuberculosisPHCRClinicalInformationSectionTuberculosisRelevantMedicalConditionHistoryObservation" constrainedElement="_RNTKYFZkEeG6GPFMVAzSqg">
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_14bWge1qEeGeHKjzItayOg">
+      <ownedRule xmi:id="_ymVDkAdIEeK9gYpImj-Uyw" name="TuberculosisPHCRClinicalInformationSectionTuberculosisRelevantMedicalConditionHistoryObservation" constrainedElement="_RNTKYFZkEeG6GPFMVAzSqg">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_ymVDkQdIEeK9gYpImj-Uyw">
           <language>OCL</language>
           <body>self.entry->exists(entry : cda::Entry | not entry.observation.oclIsUndefined() and entry.observation.oclIsKindOf(tuberculosis::TuberculosisRelevantMedicalConditionHistoryObservation) and entry.typeCode = vocab::x_ActRelationshipEntry::DRIV)</body>
         </specification>
@@ -143,58 +143,50 @@
       <generalization xmi:id="_RNTKYVZkEeG6GPFMVAzSqg">
         <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.phcr/model/phcr_Ecore.uml#_84uJEMqZEeCRBIG_Gkv9FQ"/>
       </generalization>
-      <ownedOperation xmi:id="_12cZgO1qEeGeHKjzItayOg" name="getTuberculosisCaseObservation" isQuery="true" bodyCondition="_12cZg-1qEeGeHKjzItayOg">
-        <ownedRule xmi:id="_12cZg-1qEeGeHKjzItayOg" name="body" constrainedElement="_12cZgO1qEeGeHKjzItayOg">
-          <specification xmi:type="uml:OpaqueExpression" xmi:id="_12cZhO1qEeGeHKjzItayOg">
+      <ownedOperation xmi:id="_yjgZEgdIEeK9gYpImj-Uyw" name="getTuberculosisCaseObservation" isQuery="true" bodyCondition="_yjgZFQdIEeK9gYpImj-Uyw">
+        <ownedRule xmi:id="_yjgZFQdIEeK9gYpImj-Uyw" name="body" constrainedElement="_yjgZEgdIEeK9gYpImj-Uyw">
+          <specification xmi:type="uml:OpaqueExpression" xmi:id="_yjgZFgdIEeK9gYpImj-Uyw">
             <language>OCL</language>
             <body>self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(tuberculosis::TuberculosisCaseObservation))->asSequence()->any(true).oclAsType(tuberculosis::TuberculosisCaseObservation)</body>
           </specification>
         </ownedRule>
-        <ownedParameter xmi:id="_12cZge1qEeGeHKjzItayOg" type="_pGwdYFZlEeG6GPFMVAzSqg" direction="return">
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_12cZgu1qEeGeHKjzItayOg" value="1"/>
+        <ownedParameter xmi:id="_yjgZEwdIEeK9gYpImj-Uyw" type="_pGwdYFZlEeG6GPFMVAzSqg" direction="return">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_yjgZFAdIEeK9gYpImj-Uyw" value="1"/>
         </ownedParameter>
       </ownedOperation>
-      <ownedOperation xmi:id="_14ckoO1qEeGeHKjzItayOg" name="getTuberculosisRelevantMedicalConditionHistoryObservations" isQuery="true" bodyCondition="_14cko-1qEeGeHKjzItayOg">
-        <ownedRule xmi:id="_14cko-1qEeGeHKjzItayOg" name="body" constrainedElement="_14ckoO1qEeGeHKjzItayOg">
-          <specification xmi:type="uml:OpaqueExpression" xmi:id="_14ckpO1qEeGeHKjzItayOg">
+      <ownedOperation xmi:id="_ymVDkgdIEeK9gYpImj-Uyw" name="getTuberculosisRelevantMedicalConditionHistoryObservations" isQuery="true" bodyCondition="_ymVDlQdIEeK9gYpImj-Uyw">
+        <ownedRule xmi:id="_ymVDlQdIEeK9gYpImj-Uyw" name="body" constrainedElement="_ymVDkgdIEeK9gYpImj-Uyw">
+          <specification xmi:type="uml:OpaqueExpression" xmi:id="_ymVDlgdIEeK9gYpImj-Uyw">
             <language>OCL</language>
             <body>self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(tuberculosis::TuberculosisRelevantMedicalConditionHistoryObservation)).oclAsType(tuberculosis::TuberculosisRelevantMedicalConditionHistoryObservation)</body>
           </specification>
         </ownedRule>
-        <ownedParameter xmi:id="_14ckoe1qEeGeHKjzItayOg" type="_gUBvEKD5EeGKmOvqoxhXPg" direction="return">
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_14ckou1qEeGeHKjzItayOg" value="*"/>
+        <ownedParameter xmi:id="_ymVDkwdIEeK9gYpImj-Uyw" type="_gUBvEKD5EeGKmOvqoxhXPg" direction="return">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ymVDlAdIEeK9gYpImj-Uyw" value="*"/>
         </ownedParameter>
       </ownedOperation>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_pGwdYFZlEeG6GPFMVAzSqg" name="TuberculosisCaseObservation">
-      <ownedRule xmi:id="_12SBcO1qEeGeHKjzItayOg" name="ProblemObservationTemplateId" constrainedElement="_pGwdYFZlEeG6GPFMVAzSqg">
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_12SBce1qEeGeHKjzItayOg">
+      <ownedRule xmi:id="_yjM3HQdIEeK9gYpImj-Uyw" name="ProblemObservationTemplateId" constrainedElement="_pGwdYFZlEeG6GPFMVAzSqg">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_yjM3HgdIEeK9gYpImj-Uyw">
           <language>OCL</language>
           <body>self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.15.3.54')</body>
         </specification>
       </ownedRule>
-      <ownedRule xmi:id="_12YvIO1qEeGeHKjzItayOg" name="TuberculosisCaseObservationValueP" constrainedElement="_pGwdYFZlEeG6GPFMVAzSqg">
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_12YvIe1qEeGeHKjzItayOg">
+      <ownedRule xmi:id="_yjWoEQdIEeK9gYpImj-Uyw" name="TuberculosisCaseObservationValue" constrainedElement="_pGwdYFZlEeG6GPFMVAzSqg">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_yjWoEgdIEeK9gYpImj-Uyw">
           <language>OCL</language>
-          <body>(self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (not self.value->isEmpty())</body>
+          <body>(self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (self.value->size() = 1 and self.value->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and &#xD;&#xA;let value : datatypes::CD = element.oclAsType(datatypes::CD) in &#xD;&#xA;value.codeSystem = '2.16.840.1.113883.6.96' and not value.code.oclIsUndefined()))</body>
         </specification>
       </ownedRule>
-      <ownedRule xmi:id="_12WS4O1qEeGeHKjzItayOg" name="TuberculosisCaseObservationValue" constrainedElement="_pGwdYFZlEeG6GPFMVAzSqg">
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_12WS4e1qEeGeHKjzItayOg">
-          <language>OCL</language>
-          <body>(self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (self.value->size() = 1 and self.value->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and 
-let value : datatypes::CD = element.oclAsType(datatypes::CD) in 
-value.codeSystem = '2.16.840.1.113883.6.96' and not value.code.oclIsUndefined()))</body>
-        </specification>
-      </ownedRule>
-      <ownedRule xmi:id="_14JCoO1qEeGeHKjzItayOg" name="TuberculosisCaseObservationTuberculosisSignsAndSymptomsObservation" constrainedElement="_pGwdYFZlEeG6GPFMVAzSqg">
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_14JCoe1qEeGeHKjzItayOg">
+      <ownedRule xmi:id="_yl4-sAdIEeK9gYpImj-Uyw" name="TuberculosisCaseObservationTuberculosisSignsAndSymptomsObservation" constrainedElement="_pGwdYFZlEeG6GPFMVAzSqg">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_yl4-sQdIEeK9gYpImj-Uyw">
           <language>OCL</language>
           <body>self.entryRelationship->exists(entryRelationship : cda::EntryRelationship | not entryRelationship.observation.oclIsUndefined() and entryRelationship.observation.oclIsKindOf(tuberculosis::TuberculosisSignsAndSymptomsObservation) and entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::MFST)</body>
         </specification>
       </ownedRule>
-      <ownedRule xmi:id="_148T4O1qEeGeHKjzItayOg" name="TuberculosisCaseObservationTuberculosisSiteOfTBDiseaseObservation" constrainedElement="_pGwdYFZlEeG6GPFMVAzSqg">
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_148T4e1qEeGeHKjzItayOg">
+      <ownedRule xmi:id="_ynObcAdIEeK9gYpImj-Uyw" name="TuberculosisCaseObservationTuberculosisSiteOfTBDiseaseObservation" constrainedElement="_pGwdYFZlEeG6GPFMVAzSqg">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_ynObcQdIEeK9gYpImj-Uyw">
           <language>OCL</language>
           <body>self.entryRelationship->exists(entryRelationship : cda::EntryRelationship | not entryRelationship.observation.oclIsUndefined() and entryRelationship.observation.oclIsKindOf(tuberculosis::TuberculosisSiteOfTBDiseaseObservation) and entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::MFST)</body>
         </specification>
@@ -202,40 +194,34 @@ value.codeSystem = '2.16.840.1.113883.6.96' and not value.code.oclIsUndefined())
       <generalization xmi:id="_pGwdYVZlEeG6GPFMVAzSqg">
         <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.phcr/model/phcr_Ecore.uml#_p8bDQNTCEeC18pmrrt-Mbg"/>
       </generalization>
-      <ownedOperation xmi:id="_14KQwO1qEeGeHKjzItayOg" name="getTuberculosisSignsAndSymptomsObservations" isQuery="true" bodyCondition="_14KQw-1qEeGeHKjzItayOg">
-        <ownedRule xmi:id="_14KQw-1qEeGeHKjzItayOg" name="body" constrainedElement="_14KQwO1qEeGeHKjzItayOg">
-          <specification xmi:type="uml:OpaqueExpression" xmi:id="_14KQxO1qEeGeHKjzItayOg">
+      <ownedOperation xmi:id="_yl4-sgdIEeK9gYpImj-Uyw" name="getTuberculosisSignsAndSymptomsObservations" isQuery="true" bodyCondition="_yl4-tQdIEeK9gYpImj-Uyw">
+        <ownedRule xmi:id="_yl4-tQdIEeK9gYpImj-Uyw" name="body" constrainedElement="_yl4-sgdIEeK9gYpImj-Uyw">
+          <specification xmi:type="uml:OpaqueExpression" xmi:id="_yl4-tgdIEeK9gYpImj-Uyw">
             <language>OCL</language>
             <body>self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(tuberculosis::TuberculosisSignsAndSymptomsObservation)).oclAsType(tuberculosis::TuberculosisSignsAndSymptomsObservation)</body>
           </specification>
         </ownedRule>
-        <ownedParameter xmi:id="_14KQwe1qEeGeHKjzItayOg" type="_pcKawFZnEeG6GPFMVAzSqg" direction="return">
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_14KQwu1qEeGeHKjzItayOg" value="*"/>
+        <ownedParameter xmi:id="_yl4-swdIEeK9gYpImj-Uyw" type="_pcKawFZnEeG6GPFMVAzSqg" direction="return">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_yl4-tAdIEeK9gYpImj-Uyw" value="*"/>
         </ownedParameter>
       </ownedOperation>
-      <ownedOperation xmi:id="_149iAO1qEeGeHKjzItayOg" name="getTuberculosisSiteOfTBDiseaseObservations" isQuery="true" bodyCondition="_149iA-1qEeGeHKjzItayOg">
-        <ownedRule xmi:id="_149iA-1qEeGeHKjzItayOg" name="body" constrainedElement="_149iAO1qEeGeHKjzItayOg">
-          <specification xmi:type="uml:OpaqueExpression" xmi:id="_149iBO1qEeGeHKjzItayOg">
+      <ownedOperation xmi:id="_ynObcgdIEeK9gYpImj-Uyw" name="getTuberculosisSiteOfTBDiseaseObservations" isQuery="true" bodyCondition="_ynObdQdIEeK9gYpImj-Uyw">
+        <ownedRule xmi:id="_ynObdQdIEeK9gYpImj-Uyw" name="body" constrainedElement="_ynObcgdIEeK9gYpImj-Uyw">
+          <specification xmi:type="uml:OpaqueExpression" xmi:id="_ynObdgdIEeK9gYpImj-Uyw">
             <language>OCL</language>
             <body>self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(tuberculosis::TuberculosisSiteOfTBDiseaseObservation)).oclAsType(tuberculosis::TuberculosisSiteOfTBDiseaseObservation)</body>
           </specification>
         </ownedRule>
-        <ownedParameter xmi:id="_149iAe1qEeGeHKjzItayOg" type="_oGK6ULGPEeGsBIJbNs8s8A" direction="return">
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_149iAu1qEeGeHKjzItayOg" value="*"/>
+        <ownedParameter xmi:id="_ynObcwdIEeK9gYpImj-Uyw" type="_oGK6ULGPEeGsBIJbNs8s8A" direction="return">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ynObdAdIEeK9gYpImj-Uyw" value="*"/>
         </ownedParameter>
       </ownedOperation>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_pcKawFZnEeG6GPFMVAzSqg" name="TuberculosisSignsAndSymptomsObservation">
-      <ownedRule xmi:id="_12dAke1qEeGeHKjzItayOg" name="SignsAndSymptomsObservationTemplateId" constrainedElement="_pcKawFZnEeG6GPFMVAzSqg">
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_12dAku1qEeGeHKjzItayOg">
+      <ownedRule xmi:id="_yjgZGAdIEeK9gYpImj-Uyw" name="SignsAndSymptomsObservationTemplateId" constrainedElement="_pcKawFZnEeG6GPFMVAzSqg">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_yjgZGQdIEeK9gYpImj-Uyw">
           <language>OCL</language>
           <body>self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.15.3.14')</body>
-        </specification>
-      </ownedRule>
-      <ownedRule xmi:id="_12gD4O1qEeGeHKjzItayOg" name="TuberculosisSignsAndSymptomsObservationValue" constrainedElement="_pcKawFZnEeG6GPFMVAzSqg">
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_12gD4e1qEeGeHKjzItayOg">
-          <language>OCL</language>
-          <body>(self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (not self.value->isEmpty())</body>
         </specification>
       </ownedRule>
       <generalization xmi:id="_pcKawVZnEeG6GPFMVAzSqg">
@@ -243,20 +229,20 @@ value.codeSystem = '2.16.840.1.113883.6.96' and not value.code.oclIsUndefined())
       </generalization>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_TE9n4FZqEeG6GPFMVAzSqg" name="TuberculosisPHCRRelevantDxTestsSection">
-      <ownedRule xmi:id="_12igIe1qEeGeHKjzItayOg" name="ResultsSectionTemplateId" constrainedElement="_TE9n4FZqEeG6GPFMVAzSqg">
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_12igIu1qEeGeHKjzItayOg">
+      <ownedRule xmi:id="_yjpjAgdIEeK9gYpImj-Uyw" name="ResultsSectionTemplateId" constrainedElement="_TE9n4FZqEeG6GPFMVAzSqg">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_yjpjAwdIEeK9gYpImj-Uyw">
           <language>OCL</language>
           <body>self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.15.2.6')</body>
         </specification>
       </ownedRule>
-      <ownedRule xmi:id="_12s4MO1qEeGeHKjzItayOg" name="TuberculosisPHCRRelevantDxTestsSectionTuberculosisResultOrganizer" constrainedElement="_TE9n4FZqEeG6GPFMVAzSqg">
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_12s4Me1qEeGeHKjzItayOg">
+      <ownedRule xmi:id="_yjzUAgdIEeK9gYpImj-Uyw" name="TuberculosisPHCRRelevantDxTestsSectionTuberculosisResultOrganizer" constrainedElement="_TE9n4FZqEeG6GPFMVAzSqg">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_yjzUAwdIEeK9gYpImj-Uyw">
           <language>OCL</language>
           <body>self.entry->exists(entry : cda::Entry | not entry.organizer.oclIsUndefined() and entry.organizer.oclIsKindOf(tuberculosis::TuberculosisResultOrganizer) and entry.typeCode = vocab::x_ActRelationshipEntry::DRIV)</body>
         </specification>
       </ownedRule>
-      <ownedRule xmi:id="_122pMO1qEeGeHKjzItayOg" name="TuberculosisPHCRRelevantDxTestsSectionTuberculosisResultObservation" constrainedElement="_TE9n4FZqEeG6GPFMVAzSqg">
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_122pMe1qEeGeHKjzItayOg">
+      <ownedRule xmi:id="_yj8d8wdIEeK9gYpImj-Uyw" name="TuberculosisPHCRRelevantDxTestsSectionTuberculosisResultObservation" constrainedElement="_TE9n4FZqEeG6GPFMVAzSqg">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_yj8d9AdIEeK9gYpImj-Uyw">
           <language>OCL</language>
           <body>self.entry->exists(entry : cda::Entry | not entry.observation.oclIsUndefined() and entry.observation.oclIsKindOf(tuberculosis::TuberculosisResultObservation) and entry.typeCode = vocab::x_ActRelationshipEntry::DRIV)</body>
         </specification>
@@ -264,52 +250,44 @@ value.codeSystem = '2.16.840.1.113883.6.96' and not value.code.oclIsUndefined())
       <generalization xmi:id="_TE-O8FZqEeG6GPFMVAzSqg">
         <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.phcr/model/phcr_Ecore.uml#_2dxgkNM5EeCbJdgmSYxI0g"/>
       </generalization>
-      <ownedOperation xmi:id="_12tfQO1qEeGeHKjzItayOg" name="getTuberculosisResultOrganizers" isQuery="true" bodyCondition="_12tfQ-1qEeGeHKjzItayOg">
-        <ownedRule xmi:id="_12tfQ-1qEeGeHKjzItayOg" name="body" constrainedElement="_12tfQO1qEeGeHKjzItayOg">
-          <specification xmi:type="uml:OpaqueExpression" xmi:id="_12tfRO1qEeGeHKjzItayOg">
+      <ownedOperation xmi:id="_yjzUBAdIEeK9gYpImj-Uyw" name="getTuberculosisResultOrganizers" isQuery="true" bodyCondition="_yjzUBwdIEeK9gYpImj-Uyw">
+        <ownedRule xmi:id="_yjzUBwdIEeK9gYpImj-Uyw" name="body" constrainedElement="_yjzUBAdIEeK9gYpImj-Uyw">
+          <specification xmi:type="uml:OpaqueExpression" xmi:id="_yjzUCAdIEeK9gYpImj-Uyw">
             <language>OCL</language>
             <body>self.getOrganizers()->select(organizer : cda::Organizer | not organizer.oclIsUndefined() and organizer.oclIsKindOf(tuberculosis::TuberculosisResultOrganizer)).oclAsType(tuberculosis::TuberculosisResultOrganizer)</body>
           </specification>
         </ownedRule>
-        <ownedParameter xmi:id="_12tfQe1qEeGeHKjzItayOg" type="_ihGlwFZqEeG6GPFMVAzSqg" direction="return">
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_12tfQu1qEeGeHKjzItayOg" value="*"/>
+        <ownedParameter xmi:id="_yjzUBQdIEeK9gYpImj-Uyw" type="_ihGlwFZqEeG6GPFMVAzSqg" direction="return">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_yjzUBgdIEeK9gYpImj-Uyw" value="*"/>
         </ownedParameter>
       </ownedOperation>
-      <ownedOperation xmi:id="_123QQO1qEeGeHKjzItayOg" name="getTuberculosisResultObservations" isQuery="true" bodyCondition="_1233UO1qEeGeHKjzItayOg">
-        <ownedRule xmi:id="_1233UO1qEeGeHKjzItayOg" name="body" constrainedElement="_123QQO1qEeGeHKjzItayOg">
-          <specification xmi:type="uml:OpaqueExpression" xmi:id="_1233Ue1qEeGeHKjzItayOg">
+      <ownedOperation xmi:id="_yj8d9QdIEeK9gYpImj-Uyw" name="getTuberculosisResultObservations" isQuery="true" bodyCondition="_yj8d-AdIEeK9gYpImj-Uyw">
+        <ownedRule xmi:id="_yj8d-AdIEeK9gYpImj-Uyw" name="body" constrainedElement="_yj8d9QdIEeK9gYpImj-Uyw">
+          <specification xmi:type="uml:OpaqueExpression" xmi:id="_yj8d-QdIEeK9gYpImj-Uyw">
             <language>OCL</language>
             <body>self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(tuberculosis::TuberculosisResultObservation)).oclAsType(tuberculosis::TuberculosisResultObservation)</body>
           </specification>
         </ownedRule>
-        <ownedParameter xmi:id="_123QQe1qEeGeHKjzItayOg" type="_UO2gwFZtEeG6GPFMVAzSqg" direction="return">
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_123QQu1qEeGeHKjzItayOg" value="*"/>
+        <ownedParameter xmi:id="_yj8d9gdIEeK9gYpImj-Uyw" type="_UO2gwFZtEeG6GPFMVAzSqg" direction="return">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_yj8d9wdIEeK9gYpImj-Uyw" value="*"/>
         </ownedParameter>
       </ownedOperation>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_ihGlwFZqEeG6GPFMVAzSqg" name="TuberculosisResultOrganizer">
-      <ownedRule xmi:id="_12k8YO1qEeGeHKjzItayOg" name="ResultOrganizerTemplateId" constrainedElement="_ihGlwFZqEeG6GPFMVAzSqg">
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_12k8Ye1qEeGeHKjzItayOg">
+      <ownedRule xmi:id="_yjpjBwdIEeK9gYpImj-Uyw" name="ResultOrganizerTemplateId" constrainedElement="_ihGlwFZqEeG6GPFMVAzSqg">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_yjpjCAdIEeK9gYpImj-Uyw">
           <language>OCL</language>
           <body>self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.15.3.21')</body>
         </specification>
       </ownedRule>
-      <ownedRule xmi:id="_12p04O1qEeGeHKjzItayOg" name="TuberculosisResultOrganizerCodeP" constrainedElement="_ihGlwFZqEeG6GPFMVAzSqg">
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_12p04e1qEeGeHKjzItayOg">
+      <ownedRule xmi:id="_yjzUAAdIEeK9gYpImj-Uyw" name="TuberculosisResultOrganizerCode" constrainedElement="_ihGlwFZqEeG6GPFMVAzSqg">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_yjzUAQdIEeK9gYpImj-Uyw">
           <language>OCL</language>
-          <body>(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined())</body>
+          <body>(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and &#xD;&#xA;let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in &#xD;&#xA;value.codeSystem = '2.16.840.1.113883.6.1' and not value.code.oclIsUndefined())</body>
         </specification>
       </ownedRule>
-      <ownedRule xmi:id="_12nYoO1qEeGeHKjzItayOg" name="TuberculosisResultOrganizerCode" constrainedElement="_ihGlwFZqEeG6GPFMVAzSqg">
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_12nYoe1qEeGeHKjzItayOg">
-          <language>OCL</language>
-          <body>(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and 
-let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in 
-value.codeSystem = '2.16.840.1.113883.6.1' and not value.code.oclIsUndefined())</body>
-        </specification>
-      </ownedRule>
-      <ownedRule xmi:id="_13wBEO1qEeGeHKjzItayOg" name="TuberculosisResultOrganizerTuberculosisResultObservation" constrainedElement="_ihGlwFZqEeG6GPFMVAzSqg">
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_13wBEe1qEeGeHKjzItayOg">
+      <ownedRule xmi:id="_ylShwAdIEeK9gYpImj-Uyw" name="TuberculosisResultOrganizerTuberculosisResultObservation" constrainedElement="_ihGlwFZqEeG6GPFMVAzSqg">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_ylShwQdIEeK9gYpImj-Uyw">
           <language>OCL</language>
           <body>self.component->exists(component : cda::Component4 | not component.observation.oclIsUndefined() and component.observation.oclIsKindOf(tuberculosis::TuberculosisResultObservation))</body>
         </specification>
@@ -317,37 +295,29 @@ value.codeSystem = '2.16.840.1.113883.6.1' and not value.code.oclIsUndefined())<
       <generalization xmi:id="_ihGlwVZqEeG6GPFMVAzSqg">
         <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.phcr/model/phcr_Ecore.uml#_0r8IYPNrEeCOm7Y48UO5Tg"/>
       </generalization>
-      <ownedOperation xmi:id="_13xPMO1qEeGeHKjzItayOg" name="getTuberculosisResultObservations" isQuery="true" bodyCondition="_13xPM-1qEeGeHKjzItayOg">
-        <ownedRule xmi:id="_13xPM-1qEeGeHKjzItayOg" name="body" constrainedElement="_13xPMO1qEeGeHKjzItayOg">
-          <specification xmi:type="uml:OpaqueExpression" xmi:id="_13xPNO1qEeGeHKjzItayOg">
+      <ownedOperation xmi:id="_ylShwgdIEeK9gYpImj-Uyw" name="getTuberculosisResultObservations" isQuery="true" bodyCondition="_ylShxQdIEeK9gYpImj-Uyw">
+        <ownedRule xmi:id="_ylShxQdIEeK9gYpImj-Uyw" name="body" constrainedElement="_ylShwgdIEeK9gYpImj-Uyw">
+          <specification xmi:type="uml:OpaqueExpression" xmi:id="_ylShxgdIEeK9gYpImj-Uyw">
             <language>OCL</language>
             <body>self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(tuberculosis::TuberculosisResultObservation)).oclAsType(tuberculosis::TuberculosisResultObservation)</body>
           </specification>
         </ownedRule>
-        <ownedParameter xmi:id="_13xPMe1qEeGeHKjzItayOg" type="_UO2gwFZtEeG6GPFMVAzSqg" direction="return">
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_13xPMu1qEeGeHKjzItayOg" value="*"/>
+        <ownedParameter xmi:id="_ylShwwdIEeK9gYpImj-Uyw" type="_UO2gwFZtEeG6GPFMVAzSqg" direction="return">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ylShxAdIEeK9gYpImj-Uyw" value="*"/>
         </ownedParameter>
       </ownedOperation>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_UO2gwFZtEeG6GPFMVAzSqg" name="TuberculosisResultObservation">
-      <ownedRule xmi:id="_12utYO1qEeGeHKjzItayOg" name="ResultObservationTemplateId" constrainedElement="_UO2gwFZtEeG6GPFMVAzSqg">
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_12utYe1qEeGeHKjzItayOg">
+      <ownedRule xmi:id="_yjzUCwdIEeK9gYpImj-Uyw" name="ResultObservationTemplateId" constrainedElement="_UO2gwFZtEeG6GPFMVAzSqg">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_yjzUDAdIEeK9gYpImj-Uyw">
           <language>OCL</language>
           <body>self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.15.3.13')</body>
         </specification>
       </ownedRule>
-      <ownedRule xmi:id="_120M8O1qEeGeHKjzItayOg" name="TuberculosisResultObservationCodeP" constrainedElement="_UO2gwFZtEeG6GPFMVAzSqg">
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_120M8e1qEeGeHKjzItayOg">
+      <ownedRule xmi:id="_yj8d8QdIEeK9gYpImj-Uyw" name="TuberculosisResultObservationCode" constrainedElement="_UO2gwFZtEeG6GPFMVAzSqg">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_yj8d8gdIEeK9gYpImj-Uyw">
           <language>OCL</language>
-          <body>(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined())</body>
-        </specification>
-      </ownedRule>
-      <ownedRule xmi:id="_12xJoO1qEeGeHKjzItayOg" name="TuberculosisResultObservationCode" constrainedElement="_UO2gwFZtEeG6GPFMVAzSqg">
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_12xJoe1qEeGeHKjzItayOg">
-          <language>OCL</language>
-          <body>(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and 
-let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in 
-value.codeSystem = '2.16.840.1.113883.6.1' and not value.code.oclIsUndefined())</body>
+          <body>(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and &#xD;&#xA;let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in &#xD;&#xA;value.codeSystem = '2.16.840.1.113883.6.1' and not value.code.oclIsUndefined())</body>
         </specification>
       </ownedRule>
       <generalization xmi:id="_UO2gwVZtEeG6GPFMVAzSqg">
@@ -355,32 +325,32 @@ value.codeSystem = '2.16.840.1.113883.6.1' and not value.code.oclIsUndefined())<
       </generalization>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_iYAP8FZxEeG6GPFMVAzSqg" name="TuberculosisPHCRSocialHistorySection">
-      <ownedRule xmi:id="_124eYe1qEeGeHKjzItayOg" name="SocialHistorySectionTemplateId" constrainedElement="_iYAP8FZxEeG6GPFMVAzSqg">
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_124eYu1qEeGeHKjzItayOg">
+      <ownedRule xmi:id="_ykGO8gdIEeK9gYpImj-Uyw" name="SocialHistorySectionTemplateId" constrainedElement="_iYAP8FZxEeG6GPFMVAzSqg">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_ykGO8wdIEeK9gYpImj-Uyw">
           <language>OCL</language>
           <body>self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.15.2.7')</body>
         </specification>
       </ownedRule>
-      <ownedRule xmi:id="_14K30O1qEeGeHKjzItayOg" name="TuberculosisPHCRSocialHistorySectionTuberculosisPossibleExposureLocationAct" constrainedElement="_iYAP8FZxEeG6GPFMVAzSqg">
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_14K30e1qEeGeHKjzItayOg">
+      <ownedRule xmi:id="_yl4-twdIEeK9gYpImj-Uyw" name="TuberculosisPHCRSocialHistorySectionTuberculosisPossibleExposureLocationAct" constrainedElement="_iYAP8FZxEeG6GPFMVAzSqg">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_yl4-uAdIEeK9gYpImj-Uyw">
           <language>OCL</language>
           <body>self.entry->exists(entry : cda::Entry | not entry.act.oclIsUndefined() and entry.act.oclIsKindOf(tuberculosis::TuberculosisPossibleExposureLocationAct) and entry.typeCode = vocab::x_ActRelationshipEntry::DRIV)</body>
         </specification>
       </ownedRule>
-      <ownedRule xmi:id="_14MtAO1qEeGeHKjzItayOg" name="TuberculosisPHCRSocialHistorySectionTuberculosisSocioBehavioralBooleanRiskFactorObservation" constrainedElement="_iYAP8FZxEeG6GPFMVAzSqg">
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_14MtAe1qEeGeHKjzItayOg">
+      <ownedRule xmi:id="_yl4-vgdIEeK9gYpImj-Uyw" name="TuberculosisPHCRSocialHistorySectionTuberculosisSocioBehavioralBooleanRiskFactorObservation" constrainedElement="_iYAP8FZxEeG6GPFMVAzSqg">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_yl4-vwdIEeK9gYpImj-Uyw">
           <language>OCL</language>
           <body>self.entry->exists(entry : cda::Entry | not entry.observation.oclIsUndefined() and entry.observation.oclIsKindOf(tuberculosis::TuberculosisSocioBehavioralBooleanRiskFactorObservation) and entry.typeCode = vocab::x_ActRelationshipEntry::DRIV)</body>
         </specification>
       </ownedRule>
-      <ownedRule xmi:id="_14OiMO1qEeGeHKjzItayOg" name="TuberculosisPHCRSocialHistorySectionSmokingStatusObservation" constrainedElement="_iYAP8FZxEeG6GPFMVAzSqg">
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_14OiMe1qEeGeHKjzItayOg">
+      <ownedRule xmi:id="_yl4-xQdIEeK9gYpImj-Uyw" name="TuberculosisPHCRSocialHistorySectionSmokingStatusObservation" constrainedElement="_iYAP8FZxEeG6GPFMVAzSqg">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_yl4-xgdIEeK9gYpImj-Uyw">
           <language>OCL</language>
           <body>self.entry->exists(entry : cda::Entry | not entry.observation.oclIsUndefined() and entry.observation.oclIsKindOf(tuberculosis::SmokingStatusObservation) and entry.typeCode = vocab::x_ActRelationshipEntry::DRIV)</body>
         </specification>
       </ownedRule>
-      <ownedRule xmi:id="_14VP4O1qEeGeHKjzItayOg" name="TuberculosisPHCRSocialHistorySectionHIVStatusObservation" constrainedElement="_iYAP8FZxEeG6GPFMVAzSqg">
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_14VP4e1qEeGeHKjzItayOg">
+      <ownedRule xmi:id="_ymL5oAdIEeK9gYpImj-Uyw" name="TuberculosisPHCRSocialHistorySectionHIVStatusObservation" constrainedElement="_iYAP8FZxEeG6GPFMVAzSqg">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_ymL5oQdIEeK9gYpImj-Uyw">
           <language>OCL</language>
           <body>self.entry->one(entry : cda::Entry | not entry.observation.oclIsUndefined() and entry.observation.oclIsKindOf(tuberculosis::HIVStatusObservation) and entry.typeCode = vocab::x_ActRelationshipEntry::DRIV)</body>
         </specification>
@@ -388,94 +358,78 @@ value.codeSystem = '2.16.840.1.113883.6.1' and not value.code.oclIsUndefined())<
       <generalization xmi:id="_iYAP8VZxEeG6GPFMVAzSqg">
         <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.phcr/model/phcr_Ecore.uml#_Fw7f4MgpEeCI5ZpfyBisiQ"/>
       </generalization>
-      <ownedOperation xmi:id="_14MF8O1qEeGeHKjzItayOg" name="getTuberculosisPossibleExposureLocationActs" isQuery="true" bodyCondition="_14MF8-1qEeGeHKjzItayOg">
-        <ownedRule xmi:id="_14MF8-1qEeGeHKjzItayOg" name="body" constrainedElement="_14MF8O1qEeGeHKjzItayOg">
-          <specification xmi:type="uml:OpaqueExpression" xmi:id="_14MF9O1qEeGeHKjzItayOg">
+      <ownedOperation xmi:id="_yl4-uQdIEeK9gYpImj-Uyw" name="getTuberculosisPossibleExposureLocationActs" isQuery="true" bodyCondition="_yl4-vAdIEeK9gYpImj-Uyw">
+        <ownedRule xmi:id="_yl4-vAdIEeK9gYpImj-Uyw" name="body" constrainedElement="_yl4-uQdIEeK9gYpImj-Uyw">
+          <specification xmi:type="uml:OpaqueExpression" xmi:id="_yl4-vQdIEeK9gYpImj-Uyw">
             <language>OCL</language>
             <body>self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(tuberculosis::TuberculosisPossibleExposureLocationAct)).oclAsType(tuberculosis::TuberculosisPossibleExposureLocationAct)</body>
           </specification>
         </ownedRule>
-        <ownedParameter xmi:id="_14MF8e1qEeGeHKjzItayOg" type="_QVT30FZ3EeG6GPFMVAzSqg" direction="return">
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_14MF8u1qEeGeHKjzItayOg" value="*"/>
+        <ownedParameter xmi:id="_yl4-ugdIEeK9gYpImj-Uyw" type="_QVT30FZ3EeG6GPFMVAzSqg" direction="return">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_yl4-uwdIEeK9gYpImj-Uyw" value="*"/>
         </ownedParameter>
       </ownedOperation>
-      <ownedOperation xmi:id="_14N7IO1qEeGeHKjzItayOg" name="getTuberculosisSocioBehavioralBooleanRiskFactorObservations" isQuery="true" bodyCondition="_14N7I-1qEeGeHKjzItayOg">
-        <ownedRule xmi:id="_14N7I-1qEeGeHKjzItayOg" name="body" constrainedElement="_14N7IO1qEeGeHKjzItayOg">
-          <specification xmi:type="uml:OpaqueExpression" xmi:id="_14N7JO1qEeGeHKjzItayOg">
+      <ownedOperation xmi:id="_yl4-wAdIEeK9gYpImj-Uyw" name="getTuberculosisSocioBehavioralBooleanRiskFactorObservations" isQuery="true" bodyCondition="_yl4-wwdIEeK9gYpImj-Uyw">
+        <ownedRule xmi:id="_yl4-wwdIEeK9gYpImj-Uyw" name="body" constrainedElement="_yl4-wAdIEeK9gYpImj-Uyw">
+          <specification xmi:type="uml:OpaqueExpression" xmi:id="_yl4-xAdIEeK9gYpImj-Uyw">
             <language>OCL</language>
             <body>self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(tuberculosis::TuberculosisSocioBehavioralBooleanRiskFactorObservation)).oclAsType(tuberculosis::TuberculosisSocioBehavioralBooleanRiskFactorObservation)</body>
           </specification>
         </ownedRule>
-        <ownedParameter xmi:id="_14N7Ie1qEeGeHKjzItayOg" type="_enE_MFZ1EeG6GPFMVAzSqg" direction="return">
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_14N7Iu1qEeGeHKjzItayOg" value="*"/>
+        <ownedParameter xmi:id="_yl4-wQdIEeK9gYpImj-Uyw" type="_enE_MFZ1EeG6GPFMVAzSqg" direction="return">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_yl4-wgdIEeK9gYpImj-Uyw" value="*"/>
         </ownedParameter>
       </ownedOperation>
-      <ownedOperation xmi:id="_14PwUO1qEeGeHKjzItayOg" name="getSmokingStatusObservations" isQuery="true" bodyCondition="_14PwU-1qEeGeHKjzItayOg">
-        <ownedRule xmi:id="_14PwU-1qEeGeHKjzItayOg" name="body" constrainedElement="_14PwUO1qEeGeHKjzItayOg">
-          <specification xmi:type="uml:OpaqueExpression" xmi:id="_14PwVO1qEeGeHKjzItayOg">
+      <ownedOperation xmi:id="_ymCIoAdIEeK9gYpImj-Uyw" name="getSmokingStatusObservations" isQuery="true" bodyCondition="_ymCIowdIEeK9gYpImj-Uyw">
+        <ownedRule xmi:id="_ymCIowdIEeK9gYpImj-Uyw" name="body" constrainedElement="_ymCIoAdIEeK9gYpImj-Uyw">
+          <specification xmi:type="uml:OpaqueExpression" xmi:id="_ymCIpAdIEeK9gYpImj-Uyw">
             <language>OCL</language>
             <body>self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(tuberculosis::SmokingStatusObservation)).oclAsType(tuberculosis::SmokingStatusObservation)</body>
           </specification>
         </ownedRule>
-        <ownedParameter xmi:id="_14PwUe1qEeGeHKjzItayOg" type="_74VM8IohEeG8p7gRJdN2SA" direction="return">
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_14PwUu1qEeGeHKjzItayOg" value="*"/>
+        <ownedParameter xmi:id="_ymCIoQdIEeK9gYpImj-Uyw" type="_74VM8IohEeG8p7gRJdN2SA" direction="return">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ymCIogdIEeK9gYpImj-Uyw" value="*"/>
         </ownedParameter>
       </ownedOperation>
-      <ownedOperation xmi:id="_14V28O1qEeGeHKjzItayOg" name="getHIVStatusObservation" isQuery="true" bodyCondition="_14V28-1qEeGeHKjzItayOg">
-        <ownedRule xmi:id="_14V28-1qEeGeHKjzItayOg" name="body" constrainedElement="_14V28O1qEeGeHKjzItayOg">
-          <specification xmi:type="uml:OpaqueExpression" xmi:id="_14V29O1qEeGeHKjzItayOg">
+      <ownedOperation xmi:id="_ymL5ogdIEeK9gYpImj-Uyw" name="getHIVStatusObservation" isQuery="true" bodyCondition="_ymL5pQdIEeK9gYpImj-Uyw">
+        <ownedRule xmi:id="_ymL5pQdIEeK9gYpImj-Uyw" name="body" constrainedElement="_ymL5ogdIEeK9gYpImj-Uyw">
+          <specification xmi:type="uml:OpaqueExpression" xmi:id="_ymL5pgdIEeK9gYpImj-Uyw">
             <language>OCL</language>
             <body>self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(tuberculosis::HIVStatusObservation))->asSequence()->any(true).oclAsType(tuberculosis::HIVStatusObservation)</body>
           </specification>
         </ownedRule>
-        <ownedParameter xmi:id="_14V28e1qEeGeHKjzItayOg" type="_SGWUcFZzEeG6GPFMVAzSqg" direction="return">
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_14V28u1qEeGeHKjzItayOg" value="1"/>
+        <ownedParameter xmi:id="_ymL5owdIEeK9gYpImj-Uyw" type="_SGWUcFZzEeG6GPFMVAzSqg" direction="return">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ymL5pAdIEeK9gYpImj-Uyw" value="1"/>
         </ownedParameter>
       </ownedOperation>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_SGWUcFZzEeG6GPFMVAzSqg" name="HIVStatusObservation">
-      <ownedRule xmi:id="_126TkO1qEeGeHKjzItayOg" name="HIVStatusObservationTemplateId" constrainedElement="_SGWUcFZzEeG6GPFMVAzSqg">
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_126Tke1qEeGeHKjzItayOg">
+      <ownedRule xmi:id="_ykGO9QdIEeK9gYpImj-Uyw" name="HIVStatusObservationTemplateId" constrainedElement="_SGWUcFZzEeG6GPFMVAzSqg">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_ykGO9gdIEeK9gYpImj-Uyw">
           <language>OCL</language>
           <body>self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.15.3.4')</body>
         </specification>
       </ownedRule>
-      <ownedRule xmi:id="_127hsO1qEeGeHKjzItayOg" name="HIVStatusObservationClassCode" constrainedElement="_SGWUcFZzEeG6GPFMVAzSqg">
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_127hse1qEeGeHKjzItayOg">
+      <ownedRule xmi:id="_ykGO-AdIEeK9gYpImj-Uyw" name="HIVStatusObservationClassCode" constrainedElement="_SGWUcFZzEeG6GPFMVAzSqg">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_ykGO-QdIEeK9gYpImj-Uyw">
           <language>OCL</language>
           <body>isDefined('classCode')</body>
         </specification>
       </ownedRule>
-      <ownedRule xmi:id="_12998O1qEeGeHKjzItayOg" name="HIVStatusObservationCode" constrainedElement="_SGWUcFZzEeG6GPFMVAzSqg">
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_12998e1qEeGeHKjzItayOg">
+      <ownedRule xmi:id="_ykP_8AdIEeK9gYpImj-Uyw" name="HIVStatusObservationCode" constrainedElement="_SGWUcFZzEeG6GPFMVAzSqg">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_ykP_8QdIEeK9gYpImj-Uyw">
           <language>OCL</language>
-          <body>(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and 
-let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in 
-value.code = 'ASSERTION' and value.codeSystem = '2.16.840.1.113883.5.4')</body>
+          <body>(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and &#xD;&#xA;let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in &#xD;&#xA;value.code = 'ASSERTION' and value.codeSystem = '2.16.840.1.113883.5.4')</body>
         </specification>
       </ownedRule>
-      <ownedRule xmi:id="_13BBQO1qEeGeHKjzItayOg" name="HIVStatusObservationStatusCode" constrainedElement="_SGWUcFZzEeG6GPFMVAzSqg">
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_13BBQe1qEeGeHKjzItayOg">
+      <ownedRule xmi:id="_ykP_8gdIEeK9gYpImj-Uyw" name="HIVStatusObservationStatusCode" constrainedElement="_SGWUcFZzEeG6GPFMVAzSqg">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_ykP_8wdIEeK9gYpImj-Uyw">
           <language>OCL</language>
-          <body>(self.statusCode.oclIsUndefined() or self.statusCode.isNullFlavorUndefined()) implies (not self.statusCode.oclIsUndefined() and self.statusCode.oclIsKindOf(datatypes::CS) and 
-let value : datatypes::CS = self.statusCode.oclAsType(datatypes::CS) in 
-value.code = 'completed')</body>
+          <body>(self.statusCode.oclIsUndefined() or self.statusCode.isNullFlavorUndefined()) implies (not self.statusCode.oclIsUndefined() and self.statusCode.oclIsKindOf(datatypes::CS) and &#xD;&#xA;let value : datatypes::CS = self.statusCode.oclAsType(datatypes::CS) in &#xD;&#xA;value.code = 'completed')</body>
         </specification>
       </ownedRule>
-      <ownedRule xmi:id="_13EEkO1qEeGeHKjzItayOg" name="HIVStatusObservationStatusCodeP" constrainedElement="_SGWUcFZzEeG6GPFMVAzSqg">
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_13EEke1qEeGeHKjzItayOg">
-          <language>OCL</language>
-          <body>(self.statusCode.oclIsUndefined() or self.statusCode.isNullFlavorUndefined()) implies (not self.statusCode.oclIsUndefined())</body>
-        </specification>
-      </ownedRule>
-      <ownedRule xmi:id="_13HH4O1qEeGeHKjzItayOg" name="HIVStatusObservationValue" constrainedElement="_SGWUcFZzEeG6GPFMVAzSqg">
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_13HH4e1qEeGeHKjzItayOg">
-          <language>OCL</language>
-          <body>(self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (self.value->size() = 1 and self.value->forAll(element | element.oclIsTypeOf(datatypes::CD)))</body>
-        </specification>
-      </ownedRule>
-      <ownedRule xmi:id="_13JkIO1qEeGeHKjzItayOg" name="HIVStatusObservationMoodCode" constrainedElement="_SGWUcFZzEeG6GPFMVAzSqg">
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_13KLMO1qEeGeHKjzItayOg">
+      <ownedRule xmi:id="_ykZJ4AdIEeK9gYpImj-Uyw" name="HIVStatusObservationMoodCode" constrainedElement="_SGWUcFZzEeG6GPFMVAzSqg">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_ykZJ4QdIEeK9gYpImj-Uyw">
           <language>OCL</language>
           <body>isDefined('moodCode')</body>
         </specification>
@@ -485,42 +439,28 @@ value.code = 'completed')</body>
       </generalization>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_enE_MFZ1EeG6GPFMVAzSqg" name="TuberculosisSocioBehavioralBooleanRiskFactorObservation">
-      <ownedRule xmi:id="_13MAYO1qEeGeHKjzItayOg" name="SocialHistoryObservationTemplateId" constrainedElement="_enE_MFZ1EeG6GPFMVAzSqg">
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_13MAYe1qEeGeHKjzItayOg">
+      <ownedRule xmi:id="_ykZJ4wdIEeK9gYpImj-Uyw" name="SocialHistoryObservationTemplateId" constrainedElement="_enE_MFZ1EeG6GPFMVAzSqg">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_ykZJ5AdIEeK9gYpImj-Uyw">
           <language>OCL</language>
           <body>self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.15.3.15')</body>
         </specification>
       </ownedRule>
-      <ownedRule xmi:id="_13NOgO1qEeGeHKjzItayOg" name="TuberculosisSocioBehavioralBooleanRiskFactorObservationEffectiveTime" constrainedElement="_enE_MFZ1EeG6GPFMVAzSqg">
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_13NOge1qEeGeHKjzItayOg">
+      <ownedRule xmi:id="_ykZJ5gdIEeK9gYpImj-Uyw" name="TuberculosisSocioBehavioralBooleanRiskFactorObservationEffectiveTime" constrainedElement="_enE_MFZ1EeG6GPFMVAzSqg">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_ykZJ5wdIEeK9gYpImj-Uyw">
           <language>OCL</language>
           <body>(self.effectiveTime.oclIsUndefined() or self.effectiveTime.isNullFlavorUndefined()) implies (not self.effectiveTime.oclIsUndefined())</body>
         </specification>
       </ownedRule>
-      <ownedRule xmi:id="_13PDsO1qEeGeHKjzItayOg" name="TuberculosisSocioBehavioralBooleanRiskFactorObservationNegationInd" constrainedElement="_enE_MFZ1EeG6GPFMVAzSqg">
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_13PDse1qEeGeHKjzItayOg">
+      <ownedRule xmi:id="_yki64AdIEeK9gYpImj-Uyw" name="TuberculosisSocioBehavioralBooleanRiskFactorObservationNegationInd" constrainedElement="_enE_MFZ1EeG6GPFMVAzSqg">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_yki64QdIEeK9gYpImj-Uyw">
           <language>OCL</language>
           <body>not self.negationInd.oclIsUndefined()</body>
         </specification>
       </ownedRule>
-      <ownedRule xmi:id="_13Rf8O1qEeGeHKjzItayOg" name="TuberculosisSocioBehavioralBooleanRiskFactorObservationValue" constrainedElement="_enE_MFZ1EeG6GPFMVAzSqg">
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_13Rf8e1qEeGeHKjzItayOg">
+      <ownedRule xmi:id="_yksr4AdIEeK9gYpImj-Uyw" name="TuberculosisSocioBehavioralBooleanRiskFactorObservationCode" constrainedElement="_enE_MFZ1EeG6GPFMVAzSqg">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_yksr4QdIEeK9gYpImj-Uyw">
           <language>OCL</language>
-          <body>(self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (self.value->size() = 1 and self.value->forAll(element | element.oclIsTypeOf(datatypes::CD)))</body>
-        </specification>
-      </ownedRule>
-      <ownedRule xmi:id="_13XmkO1qEeGeHKjzItayOg" name="TuberculosisSocioBehavioralBooleanRiskFactorObservationCodeP" constrainedElement="_enE_MFZ1EeG6GPFMVAzSqg">
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_13Xmke1qEeGeHKjzItayOg">
-          <language>OCL</language>
-          <body>(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined())</body>
-        </specification>
-      </ownedRule>
-      <ownedRule xmi:id="_13UjQO1qEeGeHKjzItayOg" name="TuberculosisSocioBehavioralBooleanRiskFactorObservationCode" constrainedElement="_enE_MFZ1EeG6GPFMVAzSqg">
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_13UjQe1qEeGeHKjzItayOg">
-          <language>OCL</language>
-          <body>(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and 
-let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in 
-value.code = 'ASSERTION' and value.codeSystem = '2.16.840.1.113883.5.4')</body>
+          <body>(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and &#xD;&#xA;let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in &#xD;&#xA;value.code = 'ASSERTION' and value.codeSystem = '2.16.840.1.113883.5.4')</body>
         </specification>
       </ownedRule>
       <generalization xmi:id="_enFmQFZ1EeG6GPFMVAzSqg">
@@ -528,38 +468,34 @@ value.code = 'ASSERTION' and value.codeSystem = '2.16.840.1.113883.5.4')</body>
       </generalization>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_QVT30FZ3EeG6GPFMVAzSqg" name="TuberculosisPossibleExposureLocationAct">
-      <ownedRule xmi:id="_13ZbwO1qEeGeHKjzItayOg" name="TuberculosisPossibleExposureLocationActTemplateId" constrainedElement="_QVT30FZ3EeG6GPFMVAzSqg">
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_13Zbwe1qEeGeHKjzItayOg">
+      <ownedRule xmi:id="_yksr4gdIEeK9gYpImj-Uyw" name="TuberculosisPossibleExposureLocationActTemplateId" constrainedElement="_QVT30FZ3EeG6GPFMVAzSqg">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_yksr4wdIEeK9gYpImj-Uyw">
           <language>OCL</language>
           <body>self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.15.3.12')</body>
         </specification>
       </ownedRule>
-      <ownedRule xmi:id="_13dGIO1qEeGeHKjzItayOg" name="TuberculosisPossibleExposureLocationActClassCode" constrainedElement="_QVT30FZ3EeG6GPFMVAzSqg">
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_13dGIe1qEeGeHKjzItayOg">
+      <ownedRule xmi:id="_yk110AdIEeK9gYpImj-Uyw" name="TuberculosisPossibleExposureLocationActClassCode" constrainedElement="_QVT30FZ3EeG6GPFMVAzSqg">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_yk110QdIEeK9gYpImj-Uyw">
           <language>OCL</language>
           <body>isDefined('classCode')</body>
         </specification>
       </ownedRule>
-      <ownedRule xmi:id="_13fiYO1qEeGeHKjzItayOg" name="TuberculosisPossibleExposureLocationActCode" constrainedElement="_QVT30FZ3EeG6GPFMVAzSqg">
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_13fiYe1qEeGeHKjzItayOg">
+      <ownedRule xmi:id="_yk110gdIEeK9gYpImj-Uyw" name="TuberculosisPossibleExposureLocationActCode" constrainedElement="_QVT30FZ3EeG6GPFMVAzSqg">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_yk110wdIEeK9gYpImj-Uyw">
           <language>OCL</language>
-          <body>(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and 
-let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in 
-value.code = '413350009' and value.codeSystem = '2.16.840.1.113883.6.96')</body>
+          <body>(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and &#xD;&#xA;let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in &#xD;&#xA;value.code = '413350009' and value.codeSystem = '2.16.840.1.113883.6.96')</body>
         </specification>
       </ownedRule>
-      <ownedRule xmi:id="_13ilsO1qEeGeHKjzItayOg" name="TuberculosisPossibleExposureLocationActMoodCode" constrainedElement="_QVT30FZ3EeG6GPFMVAzSqg">
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_13ilse1qEeGeHKjzItayOg">
+      <ownedRule xmi:id="_yk111AdIEeK9gYpImj-Uyw" name="TuberculosisPossibleExposureLocationActMoodCode" constrainedElement="_QVT30FZ3EeG6GPFMVAzSqg">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_yk111QdIEeK9gYpImj-Uyw">
           <language>OCL</language>
           <body>isDefined('moodCode')</body>
         </specification>
       </ownedRule>
-      <ownedRule xmi:id="_13lB8O1qEeGeHKjzItayOg" name="TuberculosisPossibleExposureLocationActStatusCode" constrainedElement="_QVT30FZ3EeG6GPFMVAzSqg">
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_13lB8e1qEeGeHKjzItayOg">
+      <ownedRule xmi:id="_yk_m0AdIEeK9gYpImj-Uyw" name="TuberculosisPossibleExposureLocationActStatusCode" constrainedElement="_QVT30FZ3EeG6GPFMVAzSqg">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_yk_m0QdIEeK9gYpImj-Uyw">
           <language>OCL</language>
-          <body>(self.statusCode.oclIsUndefined() or self.statusCode.isNullFlavorUndefined()) implies (not self.statusCode.oclIsUndefined() and self.statusCode.oclIsKindOf(datatypes::CS) and 
-let value : datatypes::CS = self.statusCode.oclAsType(datatypes::CS) in 
-value.code = 'completed')</body>
+          <body>(self.statusCode.oclIsUndefined() or self.statusCode.isNullFlavorUndefined()) implies (not self.statusCode.oclIsUndefined() and self.statusCode.oclIsKindOf(datatypes::CS) and &#xD;&#xA;let value : datatypes::CS = self.statusCode.oclAsType(datatypes::CS) in &#xD;&#xA;value.code = 'completed')</body>
         </specification>
       </ownedRule>
       <generalization xmi:id="_QVUe4FZ3EeG6GPFMVAzSqg">
@@ -567,14 +503,14 @@ value.code = 'completed')</body>
       </generalization>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_p-v6sFZ4EeG6GPFMVAzSqg" name="TuberculosisPHCRTreatmentInformationSection">
-      <ownedRule xmi:id="_13neMe1qEeGeHKjzItayOg" name="PhcrTreatmentInformationSectionTemplateId" constrainedElement="_p-v6sFZ4EeG6GPFMVAzSqg">
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_13neMu1qEeGeHKjzItayOg">
+      <ownedRule xmi:id="_yk_m0wdIEeK9gYpImj-Uyw" name="PhcrTreatmentInformationSectionTemplateId" constrainedElement="_p-v6sFZ4EeG6GPFMVAzSqg">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_yk_m1AdIEeK9gYpImj-Uyw">
           <language>OCL</language>
           <body>self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.15.2.8')</body>
         </specification>
       </ownedRule>
-      <ownedRule xmi:id="_14QXYO1qEeGeHKjzItayOg" name="TuberculosisPHCRTreatmentInformationSectionTuberculosisTherapeuticRegimenAct" constrainedElement="_p-v6sFZ4EeG6GPFMVAzSqg">
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_14QXYe1qEeGeHKjzItayOg">
+      <ownedRule xmi:id="_ymCIpQdIEeK9gYpImj-Uyw" name="TuberculosisPHCRTreatmentInformationSectionTuberculosisTherapeuticRegimenAct" constrainedElement="_p-v6sFZ4EeG6GPFMVAzSqg">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_ymCIpgdIEeK9gYpImj-Uyw">
           <language>OCL</language>
           <body>self.entry->one(entry : cda::Entry | not entry.act.oclIsUndefined() and entry.act.oclIsKindOf(tuberculosis::TuberculosisTherapeuticRegimenAct) and entry.typeCode = vocab::x_ActRelationshipEntry::DRIV)</body>
         </specification>
@@ -582,33 +518,33 @@ value.code = 'completed')</body>
       <generalization xmi:id="_p-v6sVZ4EeG6GPFMVAzSqg">
         <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.phcr/model/phcr_Ecore.uml#_XTjpIMqaEeCRBIG_Gkv9FQ"/>
       </generalization>
-      <ownedOperation xmi:id="_14Q-cO1qEeGeHKjzItayOg" name="getTuberculosisTherapeuticRegimenAct" isQuery="true" bodyCondition="_14Q-c-1qEeGeHKjzItayOg">
-        <ownedRule xmi:id="_14Q-c-1qEeGeHKjzItayOg" name="body" constrainedElement="_14Q-cO1qEeGeHKjzItayOg">
-          <specification xmi:type="uml:OpaqueExpression" xmi:id="_14Q-dO1qEeGeHKjzItayOg">
+      <ownedOperation xmi:id="_ymCIpwdIEeK9gYpImj-Uyw" name="getTuberculosisTherapeuticRegimenAct" isQuery="true" bodyCondition="_ymCIqgdIEeK9gYpImj-Uyw">
+        <ownedRule xmi:id="_ymCIqgdIEeK9gYpImj-Uyw" name="body" constrainedElement="_ymCIpwdIEeK9gYpImj-Uyw">
+          <specification xmi:type="uml:OpaqueExpression" xmi:id="_ymCIqwdIEeK9gYpImj-Uyw">
             <language>OCL</language>
             <body>self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(tuberculosis::TuberculosisTherapeuticRegimenAct))->asSequence()->any(true).oclAsType(tuberculosis::TuberculosisTherapeuticRegimenAct)</body>
           </specification>
         </ownedRule>
-        <ownedParameter xmi:id="_14Q-ce1qEeGeHKjzItayOg" type="_tldQwFZ6EeG6GPFMVAzSqg" direction="return">
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_14Q-cu1qEeGeHKjzItayOg" value="1"/>
+        <ownedParameter xmi:id="_ymCIqAdIEeK9gYpImj-Uyw" type="_tldQwFZ6EeG6GPFMVAzSqg" direction="return">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ymCIqQdIEeK9gYpImj-Uyw" value="1"/>
         </ownedParameter>
       </ownedOperation>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_tldQwFZ6EeG6GPFMVAzSqg" name="TuberculosisTherapeuticRegimenAct">
-      <ownedRule xmi:id="_13pTYe1qEeGeHKjzItayOg" name="TherapeuticRegimenActTemplateId" constrainedElement="_tldQwFZ6EeG6GPFMVAzSqg">
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_13pTYu1qEeGeHKjzItayOg">
+      <ownedRule xmi:id="_ylIwwQdIEeK9gYpImj-Uyw" name="TherapeuticRegimenActTemplateId" constrainedElement="_tldQwFZ6EeG6GPFMVAzSqg">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_ylIwwgdIEeK9gYpImj-Uyw">
           <language>OCL</language>
           <body>self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.15.3.18')</body>
         </specification>
       </ownedRule>
-      <ownedRule xmi:id="_14RlgO1qEeGeHKjzItayOg" name="TuberculosisTherapeuticRegimenActTuberculosisTreatmentGivenSubstanceAdministration" constrainedElement="_tldQwFZ6EeG6GPFMVAzSqg">
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_14Rlge1qEeGeHKjzItayOg">
+      <ownedRule xmi:id="_ymCIrAdIEeK9gYpImj-Uyw" name="TuberculosisTherapeuticRegimenActTuberculosisTreatmentGivenSubstanceAdministration" constrainedElement="_tldQwFZ6EeG6GPFMVAzSqg">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_ymCIrQdIEeK9gYpImj-Uyw">
           <language>OCL</language>
           <body>self.entryRelationship->exists(entryRelationship : cda::EntryRelationship | not entryRelationship.substanceAdministration.oclIsUndefined() and entryRelationship.substanceAdministration.oclIsKindOf(tuberculosis::TuberculosisTreatmentGivenSubstanceAdministration) and entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::COMP)</body>
         </specification>
       </ownedRule>
-      <ownedRule xmi:id="_14TasO1qEeGeHKjzItayOg" name="TuberculosisTherapeuticRegimenActTuberculosisTreatmentNotGivenSubstanceAdministration" constrainedElement="_tldQwFZ6EeG6GPFMVAzSqg">
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_14Tase1qEeGeHKjzItayOg">
+      <ownedRule xmi:id="_ymCIswdIEeK9gYpImj-Uyw" name="TuberculosisTherapeuticRegimenActTuberculosisTreatmentNotGivenSubstanceAdministration" constrainedElement="_tldQwFZ6EeG6GPFMVAzSqg">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_ymCItAdIEeK9gYpImj-Uyw">
           <language>OCL</language>
           <body>self.entryRelationship->exists(entryRelationship : cda::EntryRelationship | not entryRelationship.substanceAdministration.oclIsUndefined() and entryRelationship.substanceAdministration.oclIsKindOf(tuberculosis::TuberculosisTreatmentNotGivenSubstanceAdministration) and entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::COMP)</body>
         </specification>
@@ -616,32 +552,32 @@ value.code = 'completed')</body>
       <generalization xmi:id="_tldQwVZ6EeG6GPFMVAzSqg">
         <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.phcr/model/phcr_Ecore.uml#_2p558NSrEeC18pmrrt-Mbg"/>
       </generalization>
-      <ownedOperation xmi:id="_14SzoO1qEeGeHKjzItayOg" name="getTuberculosisTreatmentGivenSubstanceAdministrations" isQuery="true" bodyCondition="_14Szo-1qEeGeHKjzItayOg">
-        <ownedRule xmi:id="_14Szo-1qEeGeHKjzItayOg" name="body" constrainedElement="_14SzoO1qEeGeHKjzItayOg">
-          <specification xmi:type="uml:OpaqueExpression" xmi:id="_14SzpO1qEeGeHKjzItayOg">
+      <ownedOperation xmi:id="_ymCIrgdIEeK9gYpImj-Uyw" name="getTuberculosisTreatmentGivenSubstanceAdministrations" isQuery="true" bodyCondition="_ymCIsQdIEeK9gYpImj-Uyw">
+        <ownedRule xmi:id="_ymCIsQdIEeK9gYpImj-Uyw" name="body" constrainedElement="_ymCIrgdIEeK9gYpImj-Uyw">
+          <specification xmi:type="uml:OpaqueExpression" xmi:id="_ymCIsgdIEeK9gYpImj-Uyw">
             <language>OCL</language>
             <body>self.getSubstanceAdministrations()->select(substanceAdministration : cda::SubstanceAdministration | not substanceAdministration.oclIsUndefined() and substanceAdministration.oclIsKindOf(tuberculosis::TuberculosisTreatmentGivenSubstanceAdministration)).oclAsType(tuberculosis::TuberculosisTreatmentGivenSubstanceAdministration)</body>
           </specification>
         </ownedRule>
-        <ownedParameter xmi:id="_14Szoe1qEeGeHKjzItayOg" type="_7ogX8FZ-EeG6GPFMVAzSqg" direction="return">
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_14Szou1qEeGeHKjzItayOg" value="*"/>
+        <ownedParameter xmi:id="_ymCIrwdIEeK9gYpImj-Uyw" type="_7ogX8FZ-EeG6GPFMVAzSqg" direction="return">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ymCIsAdIEeK9gYpImj-Uyw" value="*"/>
         </ownedParameter>
       </ownedOperation>
-      <ownedOperation xmi:id="_14UBwO1qEeGeHKjzItayOg" name="getTuberculosisTreatmentNotGivenSubstanceAdministrations" isQuery="true" bodyCondition="_14Uo0u1qEeGeHKjzItayOg">
-        <ownedRule xmi:id="_14Uo0u1qEeGeHKjzItayOg" name="body" constrainedElement="_14UBwO1qEeGeHKjzItayOg">
-          <specification xmi:type="uml:OpaqueExpression" xmi:id="_14Uo0-1qEeGeHKjzItayOg">
+      <ownedOperation xmi:id="_ymCItQdIEeK9gYpImj-Uyw" name="getTuberculosisTreatmentNotGivenSubstanceAdministrations" isQuery="true" bodyCondition="_ymCIuAdIEeK9gYpImj-Uyw">
+        <ownedRule xmi:id="_ymCIuAdIEeK9gYpImj-Uyw" name="body" constrainedElement="_ymCItQdIEeK9gYpImj-Uyw">
+          <specification xmi:type="uml:OpaqueExpression" xmi:id="_ymCIuQdIEeK9gYpImj-Uyw">
             <language>OCL</language>
             <body>self.getSubstanceAdministrations()->select(substanceAdministration : cda::SubstanceAdministration | not substanceAdministration.oclIsUndefined() and substanceAdministration.oclIsKindOf(tuberculosis::TuberculosisTreatmentNotGivenSubstanceAdministration)).oclAsType(tuberculosis::TuberculosisTreatmentNotGivenSubstanceAdministration)</body>
           </specification>
         </ownedRule>
-        <ownedParameter xmi:id="_14Uo0O1qEeGeHKjzItayOg" type="_Ts0QEFaAEeG6GPFMVAzSqg" direction="return">
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_14Uo0e1qEeGeHKjzItayOg" value="*"/>
+        <ownedParameter xmi:id="_ymCItgdIEeK9gYpImj-Uyw" type="_Ts0QEFaAEeG6GPFMVAzSqg" direction="return">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ymCItwdIEeK9gYpImj-Uyw" value="*"/>
         </ownedParameter>
       </ownedOperation>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_7ogX8FZ-EeG6GPFMVAzSqg" name="TuberculosisTreatmentGivenSubstanceAdministration">
-      <ownedRule xmi:id="_13rvoe1qEeGeHKjzItayOg" name="TreatmentGivenSubstanceAdministrationTemplateId" constrainedElement="_7ogX8FZ-EeG6GPFMVAzSqg">
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_13rvou1qEeGeHKjzItayOg">
+      <ownedRule xmi:id="_ylIwxQdIEeK9gYpImj-Uyw" name="TreatmentGivenSubstanceAdministrationTemplateId" constrainedElement="_7ogX8FZ-EeG6GPFMVAzSqg">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_ylIwxgdIEeK9gYpImj-Uyw">
           <language>OCL</language>
           <body>self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.15.3.16')</body>
         </specification>
@@ -651,8 +587,8 @@ value.code = 'completed')</body>
       </generalization>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_Ts0QEFaAEeG6GPFMVAzSqg" name="TuberculosisTreatmentNotGivenSubstanceAdministration">
-      <ownedRule xmi:id="_13tk0e1qEeGeHKjzItayOg" name="TreatmentNotGivenSubstanceAdministrationTemplateId" constrainedElement="_Ts0QEFaAEeG6GPFMVAzSqg">
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_13tk0u1qEeGeHKjzItayOg">
+      <ownedRule xmi:id="_ylIwyQdIEeK9gYpImj-Uyw" name="TreatmentNotGivenSubstanceAdministrationTemplateId" constrainedElement="_Ts0QEFaAEeG6GPFMVAzSqg">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_ylIwygdIEeK9gYpImj-Uyw">
           <language>OCL</language>
           <body>self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.15.3.19')</body>
         </specification>
@@ -662,14 +598,14 @@ value.code = 'completed')</body>
       </generalization>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_58mB0IJGEeG1NNkgO3XQ5g" name="TuberculosisPHCRImmunizationSection">
-      <ownedRule xmi:id="_132Hse1qEeGeHKjzItayOg" name="ImmunizationsSectionTemplateId" constrainedElement="_58mB0IJGEeG1NNkgO3XQ5g">
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_132uwO1qEeGeHKjzItayOg">
+      <ownedRule xmi:id="_ylcSxgdIEeK9gYpImj-Uyw" name="ImmunizationsSectionTemplateId" constrainedElement="_58mB0IJGEeG1NNkgO3XQ5g">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_ylcSxwdIEeK9gYpImj-Uyw">
           <language>OCL</language>
           <body>self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.15.2.23')</body>
         </specification>
       </ownedRule>
-      <ownedRule xmi:id="_14qAAO1qEeGeHKjzItayOg" name="TuberculosisPHCRImmunizationSectionTuberculosisImmunizationActivitySubstanceAdministration" constrainedElement="_58mB0IJGEeG1NNkgO3XQ5g">
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_14qAAe1qEeGeHKjzItayOg">
+      <ownedRule xmi:id="_ymollwdIEeK9gYpImj-Uyw" name="TuberculosisPHCRImmunizationSectionTuberculosisImmunizationActivitySubstanceAdministration" constrainedElement="_58mB0IJGEeG1NNkgO3XQ5g">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_ymolmAdIEeK9gYpImj-Uyw">
           <language>OCL</language>
           <body>self.entry->exists(entry : cda::Entry | not entry.substanceAdministration.oclIsUndefined() and entry.substanceAdministration.oclIsKindOf(tuberculosis::TuberculosisImmunizationActivitySubstanceAdministration) and entry.typeCode = vocab::x_ActRelationshipEntry::DRIV)</body>
         </specification>
@@ -677,21 +613,21 @@ value.code = 'completed')</body>
       <generalization xmi:id="_58mo4IJGEeG1NNkgO3XQ5g">
         <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.ccd/model/ccd_Ecore.uml#_CinbMHDPEd6eItyqb1FoWg"/>
       </generalization>
-      <ownedOperation xmi:id="_14qnEO1qEeGeHKjzItayOg" name="getTuberculosisImmunizationActivitySubstanceAdministrations" isQuery="true" bodyCondition="_14qnE-1qEeGeHKjzItayOg">
-        <ownedRule xmi:id="_14qnE-1qEeGeHKjzItayOg" name="body" constrainedElement="_14qnEO1qEeGeHKjzItayOg">
-          <specification xmi:type="uml:OpaqueExpression" xmi:id="_14qnFO1qEeGeHKjzItayOg">
+      <ownedOperation xmi:id="_ymolmQdIEeK9gYpImj-Uyw" name="getTuberculosisImmunizationActivitySubstanceAdministrations" isQuery="true" bodyCondition="_ymolnAdIEeK9gYpImj-Uyw">
+        <ownedRule xmi:id="_ymolnAdIEeK9gYpImj-Uyw" name="body" constrainedElement="_ymolmQdIEeK9gYpImj-Uyw">
+          <specification xmi:type="uml:OpaqueExpression" xmi:id="_ymolnQdIEeK9gYpImj-Uyw">
             <language>OCL</language>
             <body>self.getSubstanceAdministrations()->select(substanceAdministration : cda::SubstanceAdministration | not substanceAdministration.oclIsUndefined() and substanceAdministration.oclIsKindOf(tuberculosis::TuberculosisImmunizationActivitySubstanceAdministration)).oclAsType(tuberculosis::TuberculosisImmunizationActivitySubstanceAdministration)</body>
           </specification>
         </ownedRule>
-        <ownedParameter xmi:id="_14qnEe1qEeGeHKjzItayOg" type="_XdUUwIJHEeG1NNkgO3XQ5g" direction="return">
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_14qnEu1qEeGeHKjzItayOg" value="*"/>
+        <ownedParameter xmi:id="_ymolmgdIEeK9gYpImj-Uyw" type="_XdUUwIJHEeG1NNkgO3XQ5g" direction="return">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ymolmwdIEeK9gYpImj-Uyw" value="*"/>
         </ownedParameter>
       </ownedOperation>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_XdUUwIJHEeG1NNkgO3XQ5g" name="TuberculosisImmunizationActivitySubstanceAdministration">
-      <ownedRule xmi:id="_135yEO1qEeGeHKjzItayOg" name="MedicationActivityTemplateId" constrainedElement="_XdUUwIJHEeG1NNkgO3XQ5g">
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_135yEe1qEeGeHKjzItayOg">
+      <ownedRule xmi:id="_ylcS0QdIEeK9gYpImj-Uyw" name="MedicationActivityTemplateId" constrainedElement="_XdUUwIJHEeG1NNkgO3XQ5g">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_ylcS0gdIEeK9gYpImj-Uyw">
           <language>OCL</language>
           <body>self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.15.3.60')</body>
         </specification>
@@ -701,8 +637,8 @@ value.code = 'completed')</body>
       </generalization>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_ur8XgIJHEeG1NNkgO3XQ5g" name="TuberculosisImmunizationManufacturedProduct">
-      <ownedRule xmi:id="_137nQe1qEeGeHKjzItayOg" name="ProductTemplateId" constrainedElement="_ur8XgIJHEeG1NNkgO3XQ5g">
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_138OUO1qEeGeHKjzItayOg">
+      <ownedRule xmi:id="_yllcsQdIEeK9gYpImj-Uyw" name="ProductTemplateId" constrainedElement="_ur8XgIJHEeG1NNkgO3XQ5g">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_yllcsgdIEeK9gYpImj-Uyw">
           <language>OCL</language>
           <body>self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.15.3.61')</body>
         </specification>
@@ -712,30 +648,22 @@ value.code = 'completed')</body>
       </generalization>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_74VM8IohEeG8p7gRJdN2SA" name="SmokingStatusObservation">
-      <ownedRule xmi:id="_13-DgO1qEeGeHKjzItayOg" name="SocialHistoryObservationTemplateId" constrainedElement="_74VM8IohEeG8p7gRJdN2SA">
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_13-Dge1qEeGeHKjzItayOg">
+      <ownedRule xmi:id="_yllctQdIEeK9gYpImj-Uyw" name="SocialHistoryObservationTemplateId" constrainedElement="_74VM8IohEeG8p7gRJdN2SA">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_yllctgdIEeK9gYpImj-Uyw">
           <language>OCL</language>
           <body>self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.15.3.85')</body>
         </specification>
       </ownedRule>
-      <ownedRule xmi:id="_14AfwO1qEeGeHKjzItayOg" name="SmokingStatusObservationCode" constrainedElement="_74VM8IohEeG8p7gRJdN2SA">
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_14Afwe1qEeGeHKjzItayOg">
+      <ownedRule xmi:id="_yllcuAdIEeK9gYpImj-Uyw" name="SmokingStatusObservationCode" constrainedElement="_74VM8IohEeG8p7gRJdN2SA">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_yllcuQdIEeK9gYpImj-Uyw">
           <language>OCL</language>
-          <body>(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and 
-let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in 
-value.code = '266918002' and value.codeSystem = '2.16.840.1.113883.6.96')</body>
+          <body>(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and &#xD;&#xA;let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in &#xD;&#xA;value.code = '266918002' and value.codeSystem = '2.16.840.1.113883.6.96')</body>
         </specification>
       </ownedRule>
-      <ownedRule xmi:id="_14DjEO1qEeGeHKjzItayOg" name="SmokingStatusObservationEffectiveTime" constrainedElement="_74VM8IohEeG8p7gRJdN2SA">
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_14DjEe1qEeGeHKjzItayOg">
+      <ownedRule xmi:id="_ylvNsAdIEeK9gYpImj-Uyw" name="SmokingStatusObservationEffectiveTime" constrainedElement="_74VM8IohEeG8p7gRJdN2SA">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_ylvNsQdIEeK9gYpImj-Uyw">
           <language>OCL</language>
           <body>(self.effectiveTime.oclIsUndefined() or self.effectiveTime.isNullFlavorUndefined()) implies (not self.effectiveTime.oclIsUndefined())</body>
-        </specification>
-      </ownedRule>
-      <ownedRule xmi:id="_14F_UO1qEeGeHKjzItayOg" name="SmokingStatusObservationValue" constrainedElement="_74VM8IohEeG8p7gRJdN2SA">
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_14GmYO1qEeGeHKjzItayOg">
-          <language>OCL</language>
-          <body>(self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (self.value->size() = 1 and self.value->forAll(element | element.oclIsTypeOf(datatypes::CD)))</body>
         </specification>
       </ownedRule>
       <generalization xmi:id="_74VM8YohEeG8p7gRJdN2SA">
@@ -743,22 +671,20 @@ value.code = '266918002' and value.codeSystem = '2.16.840.1.113883.6.96')</body>
       </generalization>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_gUBvEKD5EeGKmOvqoxhXPg" name="TuberculosisRelevantMedicalConditionHistoryObservation">
-      <ownedRule xmi:id="_14WeAe1qEeGeHKjzItayOg" name="PhcrRelevantMedicalConditionHistoryObservationTemplateId" constrainedElement="_gUBvEKD5EeGKmOvqoxhXPg">
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_14WeAu1qEeGeHKjzItayOg">
+      <ownedRule xmi:id="_ymL5qAdIEeK9gYpImj-Uyw" name="PhcrRelevantMedicalConditionHistoryObservationTemplateId" constrainedElement="_gUBvEKD5EeGKmOvqoxhXPg">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_ymL5qQdIEeK9gYpImj-Uyw">
           <language>OCL</language>
           <body>self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.15.3.107')</body>
         </specification>
       </ownedRule>
-      <ownedRule xmi:id="_14YTMO1qEeGeHKjzItayOg" name="TuberculosisRelevantMedicalConditionHistoryObservationValue" constrainedElement="_gUBvEKD5EeGKmOvqoxhXPg">
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_14Y6QO1qEeGeHKjzItayOg">
+      <ownedRule xmi:id="_ymL5qwdIEeK9gYpImj-Uyw" name="TuberculosisRelevantMedicalConditionHistoryObservationValue" constrainedElement="_gUBvEKD5EeGKmOvqoxhXPg">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_ymL5rAdIEeK9gYpImj-Uyw">
           <language>OCL</language>
-          <body>(self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (self.value->size() = 1 and self.value->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and 
-let value : datatypes::CD = element.oclAsType(datatypes::CD) in 
-value.code = '398192003' and value.codeSystem = '2.16.840.1.113883.6.96'))</body>
+          <body>(self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (self.value->size() = 1 and self.value->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and &#xD;&#xA;let value : datatypes::CD = element.oclAsType(datatypes::CD) in &#xD;&#xA;value.code = '398192003' and value.codeSystem = '2.16.840.1.113883.6.96'))</body>
         </specification>
       </ownedRule>
-      <ownedRule xmi:id="_14oK0O1qEeGeHKjzItayOg" name="TuberculosisRelevantMedicalConditionHistoryObservationTuberculosisRelevantMedicalConditionProblemObservation" constrainedElement="_gUBvEKD5EeGKmOvqoxhXPg">
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_14oK0e1qEeGeHKjzItayOg">
+      <ownedRule xmi:id="_ymolkAdIEeK9gYpImj-Uyw" name="TuberculosisRelevantMedicalConditionHistoryObservationTuberculosisRelevantMedicalConditionProblemObservation" constrainedElement="_gUBvEKD5EeGKmOvqoxhXPg">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_ymolkQdIEeK9gYpImj-Uyw">
           <language>OCL</language>
           <body>self.entryRelationship->one(entryRelationship : cda::EntryRelationship | not entryRelationship.observation.oclIsUndefined() and entryRelationship.observation.oclIsKindOf(tuberculosis::TuberculosisRelevantMedicalConditionProblemObservation))</body>
         </specification>
@@ -766,37 +692,29 @@ value.code = '398192003' and value.codeSystem = '2.16.840.1.113883.6.96'))</body
       <generalization xmi:id="_gUY7cKD5EeGKmOvqoxhXPg">
         <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.phcr/model/phcr_Ecore.uml#__6FcQKBIEeGDSOGpMxCO3w"/>
       </generalization>
-      <ownedOperation xmi:id="_14pY8O1qEeGeHKjzItayOg" name="getTuberculosisRelevantMedicalConditionProblemObservation" isQuery="true" bodyCondition="_14pY8-1qEeGeHKjzItayOg">
-        <ownedRule xmi:id="_14pY8-1qEeGeHKjzItayOg" name="body" constrainedElement="_14pY8O1qEeGeHKjzItayOg">
-          <specification xmi:type="uml:OpaqueExpression" xmi:id="_14pY9O1qEeGeHKjzItayOg">
+      <ownedOperation xmi:id="_ymolkgdIEeK9gYpImj-Uyw" name="getTuberculosisRelevantMedicalConditionProblemObservation" isQuery="true" bodyCondition="_ymollQdIEeK9gYpImj-Uyw">
+        <ownedRule xmi:id="_ymollQdIEeK9gYpImj-Uyw" name="body" constrainedElement="_ymolkgdIEeK9gYpImj-Uyw">
+          <specification xmi:type="uml:OpaqueExpression" xmi:id="_ymollgdIEeK9gYpImj-Uyw">
             <language>OCL</language>
             <body>self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(tuberculosis::TuberculosisRelevantMedicalConditionProblemObservation))->asSequence()->any(true).oclAsType(tuberculosis::TuberculosisRelevantMedicalConditionProblemObservation)</body>
           </specification>
         </ownedRule>
-        <ownedParameter xmi:id="_14pY8e1qEeGeHKjzItayOg" type="_jhuggKEBEeGKmOvqoxhXPg" direction="return">
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_14pY8u1qEeGeHKjzItayOg" value="1"/>
+        <ownedParameter xmi:id="_ymolkwdIEeK9gYpImj-Uyw" type="_jhuggKEBEeGKmOvqoxhXPg" direction="return">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ymollAdIEeK9gYpImj-Uyw" value="1"/>
         </ownedParameter>
       </ownedOperation>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_jhuggKEBEeGKmOvqoxhXPg" name="TuberculosisRelevantMedicalConditionProblemObservation">
-      <ownedRule xmi:id="_14dLse1qEeGeHKjzItayOg" name="ProblemObservationTemplateId" constrainedElement="_jhuggKEBEeGKmOvqoxhXPg">
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_14dywO1qEeGeHKjzItayOg">
+      <ownedRule xmi:id="_ymVDmAdIEeK9gYpImj-Uyw" name="ProblemObservationTemplateId" constrainedElement="_jhuggKEBEeGKmOvqoxhXPg">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_ymVDmQdIEeK9gYpImj-Uyw">
           <language>OCL</language>
           <body>self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.15.3.108')</body>
         </specification>
       </ownedRule>
-      <ownedRule xmi:id="_14gPAO1qEeGeHKjzItayOg" name="TuberculosisRelevantMedicalConditionProblemObservationCode" constrainedElement="_jhuggKEBEeGKmOvqoxhXPg">
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_14gPAe1qEeGeHKjzItayOg">
+      <ownedRule xmi:id="_ymVDmwdIEeK9gYpImj-Uyw" name="TuberculosisRelevantMedicalConditionProblemObservationCode" constrainedElement="_jhuggKEBEeGKmOvqoxhXPg">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_ymVDnAdIEeK9gYpImj-Uyw">
           <language>OCL</language>
-          <body>(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and 
-let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in 
-value.code = '64572001' and value.codeSystem = '2.16.840.1.113883.6.96')</body>
-        </specification>
-      </ownedRule>
-      <ownedRule xmi:id="_14lukO1qEeGeHKjzItayOg" name="TuberculosisRelevantMedicalConditionProblemObservationValue" constrainedElement="_jhuggKEBEeGKmOvqoxhXPg">
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_14luke1qEeGeHKjzItayOg">
-          <language>OCL</language>
-          <body>(self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (self.value->size() = 1 and self.value->forAll(element | element.oclIsTypeOf(datatypes::CE)))</body>
+          <body>(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and &#xD;&#xA;let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in &#xD;&#xA;value.code = '64572001' and value.codeSystem = '2.16.840.1.113883.6.96')</body>
         </specification>
       </ownedRule>
       <generalization xmi:id="_jhvHkKEBEeGKmOvqoxhXPg">
@@ -804,52 +722,46 @@ value.code = '64572001' and value.codeSystem = '2.16.840.1.113883.6.96')</body>
       </generalization>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_oGK6ULGPEeGsBIJbNs8s8A" name="TuberculosisSiteOfTBDiseaseObservation">
-      <ownedRule xmi:id="_14rOIO1qEeGeHKjzItayOg" name="TuberculosisSiteOfTBDiseaseObservationTemplateId" constrainedElement="_oGK6ULGPEeGsBIJbNs8s8A">
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_14rOIe1qEeGeHKjzItayOg">
+      <ownedRule xmi:id="_ymolngdIEeK9gYpImj-Uyw" name="TuberculosisSiteOfTBDiseaseObservationTemplateId" constrainedElement="_oGK6ULGPEeGsBIJbNs8s8A">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_ymolnwdIEeK9gYpImj-Uyw">
           <language>OCL</language>
           <body>self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.15.3.98')</body>
         </specification>
       </ownedRule>
-      <ownedRule xmi:id="_14scQO1qEeGeHKjzItayOg" name="TuberculosisSiteOfTBDiseaseObservationClassCode" constrainedElement="_oGK6ULGPEeGsBIJbNs8s8A">
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_14tDUO1qEeGeHKjzItayOg">
+      <ownedRule xmi:id="_ymxvgAdIEeK9gYpImj-Uyw" name="TuberculosisSiteOfTBDiseaseObservationClassCode" constrainedElement="_oGK6ULGPEeGsBIJbNs8s8A">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_ymxvgQdIEeK9gYpImj-Uyw">
           <language>OCL</language>
           <body>self.classCode=vocab::ActClassObservation::OBS</body>
         </specification>
       </ownedRule>
-      <ownedRule xmi:id="_14u4gO1qEeGeHKjzItayOg" name="TuberculosisSiteOfTBDiseaseObservationCode" constrainedElement="_oGK6ULGPEeGsBIJbNs8s8A">
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_14u4ge1qEeGeHKjzItayOg">
+      <ownedRule xmi:id="_ymxvggdIEeK9gYpImj-Uyw" name="TuberculosisSiteOfTBDiseaseObservationCode" constrainedElement="_oGK6ULGPEeGsBIJbNs8s8A">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_ymxvgwdIEeK9gYpImj-Uyw">
           <language>OCL</language>
-          <body>(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and 
-let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in 
-value.code = 'ASSERTION' and value.codeSystem = '2.16.840.1.113883.5.4')</body>
+          <body>(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and &#xD;&#xA;let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in &#xD;&#xA;value.code = 'ASSERTION' and value.codeSystem = '2.16.840.1.113883.5.4')</body>
         </specification>
       </ownedRule>
-      <ownedRule xmi:id="_14xUwO1qEeGeHKjzItayOg" name="TuberculosisSiteOfTBDiseaseObservationEffectiveTime" constrainedElement="_oGK6ULGPEeGsBIJbNs8s8A">
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_14xUwe1qEeGeHKjzItayOg">
+      <ownedRule xmi:id="_ymxvhAdIEeK9gYpImj-Uyw" name="TuberculosisSiteOfTBDiseaseObservationEffectiveTime" constrainedElement="_oGK6ULGPEeGsBIJbNs8s8A">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_ymxvhQdIEeK9gYpImj-Uyw">
           <language>OCL</language>
           <body>(self.effectiveTime.oclIsUndefined() or self.effectiveTime.isNullFlavorUndefined()) implies (not self.effectiveTime.oclIsUndefined())</body>
         </specification>
       </ownedRule>
-      <ownedRule xmi:id="_14zJ8O1qEeGeHKjzItayOg" name="TuberculosisSiteOfTBDiseaseObservationMoodCode" constrainedElement="_oGK6ULGPEeGsBIJbNs8s8A">
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_14zJ8e1qEeGeHKjzItayOg">
+      <ownedRule xmi:id="_ym7ggAdIEeK9gYpImj-Uyw" name="TuberculosisSiteOfTBDiseaseObservationMoodCode" constrainedElement="_oGK6ULGPEeGsBIJbNs8s8A">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_ym7ggQdIEeK9gYpImj-Uyw">
           <language>OCL</language>
           <body>self.moodCode=vocab::x_ActMoodDocumentObservation::EVN</body>
         </specification>
       </ownedRule>
-      <ownedRule xmi:id="_140_IO1qEeGeHKjzItayOg" name="TuberculosisSiteOfTBDiseaseObservationStatusCode" constrainedElement="_oGK6ULGPEeGsBIJbNs8s8A">
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_140_Ie1qEeGeHKjzItayOg">
+      <ownedRule xmi:id="_ym7gggdIEeK9gYpImj-Uyw" name="TuberculosisSiteOfTBDiseaseObservationStatusCode" constrainedElement="_oGK6ULGPEeGsBIJbNs8s8A">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_ym7ggwdIEeK9gYpImj-Uyw">
           <language>OCL</language>
-          <body>(self.statusCode.oclIsUndefined() or self.statusCode.isNullFlavorUndefined()) implies (not self.statusCode.oclIsUndefined() and self.statusCode.oclIsKindOf(datatypes::CS) and 
-let value : datatypes::CS = self.statusCode.oclAsType(datatypes::CS) in 
-value.code = 'completed')</body>
+          <body>(self.statusCode.oclIsUndefined() or self.statusCode.isNullFlavorUndefined()) implies (not self.statusCode.oclIsUndefined() and self.statusCode.oclIsKindOf(datatypes::CS) and &#xD;&#xA;let value : datatypes::CS = self.statusCode.oclAsType(datatypes::CS) in &#xD;&#xA;value.code = 'completed')</body>
         </specification>
       </ownedRule>
-      <ownedRule xmi:id="_1453oO1qEeGeHKjzItayOg" name="TuberculosisSiteOfTBDiseaseObservationValue" constrainedElement="_oGK6ULGPEeGsBIJbNs8s8A">
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_1453oe1qEeGeHKjzItayOg">
+      <ownedRule xmi:id="_ynFRgAdIEeK9gYpImj-Uyw" name="TuberculosisSiteOfTBDiseaseObservationValue" constrainedElement="_oGK6ULGPEeGsBIJbNs8s8A">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_ynFRgQdIEeK9gYpImj-Uyw">
           <language>OCL</language>
-          <body>(self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (self.value->size() = 1 and self.value->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and 
-let value : datatypes::CD = element.oclAsType(datatypes::CD) in 
-value.codeSystem = '2.16.840.1.113883.6.96' and not value.code.oclIsUndefined()))</body>
+          <body>(self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (self.value->size() = 1 and self.value->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and &#xD;&#xA;let value : datatypes::CD = element.oclAsType(datatypes::CD) in &#xD;&#xA;value.codeSystem = '2.16.840.1.113883.6.96' and not value.code.oclIsUndefined()))</body>
         </specification>
       </ownedRule>
       <generalization xmi:id="_oGlKALGPEeGsBIJbNs8s8A">
@@ -868,8 +780,8 @@ value.codeSystem = '2.16.840.1.113883.6.96' and not value.code.oclIsUndefined())
       </eAnnotations>
       <appliedProfile href="pathmap://CDA_PROFILES/CDA.profile.uml#_cxOJEIEVEd6H8o-hO3-B4Q"/>
     </profileApplication>
-    <profileApplication xmi:id="_12D_AO1qEeGeHKjzItayOg">
-      <eAnnotations xmi:id="_12D_Ae1qEeGeHKjzItayOg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+    <profileApplication xmi:id="_yi58IAdIEeK9gYpImj-Uyw">
+      <eAnnotations xmi:id="_yi58IQdIEeK9gYpImj-Uyw" source="http://www.eclipse.org/uml2/2.0.0/UML">
         <references xmi:type="ecore:EPackage" href="pathmap://UML_PROFILES/Ecore.profile.uml#_z1OFcHjqEdy8S4Cr8Rc_NA"/>
       </eAnnotations>
       <appliedProfile href="pathmap://UML_PROFILES/Ecore.profile.uml#_0"/>
@@ -1372,92 +1284,92 @@ value.codeSystem = '2.16.840.1.113883.6.96' and not value.code.oclIsUndefined())
   <CDA:CDATemplate xmi:id="_5AC6ILGSEeGsBIJbNs8s8A" base_Class="_74VM8IohEeG8p7gRJdN2SA" templateId="2.16.840.1.113883.10.20.15.3.85"/>
   <CDA:CDATemplate xmi:id="_7xa1kLGSEeGsBIJbNs8s8A" base_Class="_oGK6ULGPEeGsBIJbNs8s8A" templateId="2.16.840.1.113883.10.20.15.3.98"/>
   <CDA:Entry xmi:id="_XYHpQMJREeGi5tts-uD2lA" severity="WARNING" typeCode="DRIV"/>
-  <Ecore:EPackage xmi:id="_12I3gO1qEeGeHKjzItayOg" base_Package="_lnNXsFZBEeG6GPFMVAzSqg" packageName="tuberculosis" nsPrefix="tuberculosis" nsURI="http://www.openhealthtools.org/mdht/uml/cda/phcr/tuberculosis" basePackage="org.openhealthtools.mdht.uml.cda.phcr" prefix="Tuberculosis">
+  <Ecore:EPackage xmi:id="_yjDtIAdIEeK9gYpImj-Uyw" base_Package="_lnNXsFZBEeG6GPFMVAzSqg" packageName="tuberculosis" nsPrefix="tuberculosis" nsURI="http://www.openhealthtools.org/mdht/uml/cda/phcr/tuberculosis" basePackage="org.openhealthtools.mdht.uml.cda.phcr" prefix="Tuberculosis">
     <annotation>http://www.openhealthtools.org/mdht/uml initializers='org.openhealthtools.mdht.uml.cda.phcr.tuberculosis'</annotation>
   </Ecore:EPackage>
-  <CDA:ConformsTo xmi:id="_12JekO1qEeGeHKjzItayOg" base_Generalization="_lr-i8FZBEeG6GPFMVAzSqg"/>
-  <Ecore:EClass xmi:id="_12KssO1qEeGeHKjzItayOg" base_Class="_lr8twFZBEeG6GPFMVAzSqg">
+  <CDA:ConformsTo xmi:id="_yjDtIQdIEeK9gYpImj-Uyw" base_Generalization="_lr-i8FZBEeG6GPFMVAzSqg"/>
+  <Ecore:EClass xmi:id="_yjDtJAdIEeK9gYpImj-Uyw" base_Class="_lr8twFZBEeG6GPFMVAzSqg">
     <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='TuberculosisCaseReportTemplateId TuberculosisCaseReportTitle TuberculosisCaseReportTuberculosisPHCRClinicalInformationSection' templateId.root='2.16.840.1.113883.10.20.15.1.1' title.mixed='Public Health Case Report - Tuberculosis' constraints.validation.warning='TuberculosisCaseReportTuberculosisPHCRSocialHistorySection TuberculosisCaseReportTuberculosisPHCRRelevantDxTestsSection TuberculosisCaseReportTuberculosisPHCRTreatmentInformationSection' constraints.validation.info='TuberculosisCaseReportTuberculosisPHCRImmunizationSection'</annotation>
   </Ecore:EClass>
-  <CDA:ConformsTo xmi:id="_12PlMO1qEeGeHKjzItayOg" base_Generalization="_RNTKYVZkEeG6GPFMVAzSqg"/>
-  <Ecore:EClass xmi:id="_12QMQO1qEeGeHKjzItayOg" base_Class="_RNTKYFZkEeG6GPFMVAzSqg">
+  <CDA:ConformsTo xmi:id="_yjM3FwdIEeK9gYpImj-Uyw" base_Generalization="_RNTKYVZkEeG6GPFMVAzSqg"/>
+  <Ecore:EClass xmi:id="_yjM3GgdIEeK9gYpImj-Uyw" base_Class="_RNTKYFZkEeG6GPFMVAzSqg">
     <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='TuberculosisPHCRClinicalInformationSectionTemplateId TuberculosisPHCRClinicalInformationSectionTuberculosisCaseObservation' templateId.root='2.16.840.1.113883.10.20.15.2.5' constraints.validation.warning='TuberculosisPHCRClinicalInformationSectionTuberculosisRelevantMedicalConditionHistoryObservation'</annotation>
   </Ecore:EClass>
-  <CDA:ConformsTo xmi:id="_12RaYO1qEeGeHKjzItayOg" base_Generalization="_pGwdYVZlEeG6GPFMVAzSqg"/>
-  <Ecore:EClass xmi:id="_12SogO1qEeGeHKjzItayOg" base_Class="_pGwdYFZlEeG6GPFMVAzSqg">
-    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='TuberculosisCaseObservationTemplateId TuberculosisCaseObservationValue TuberculosisCaseObservationValueP' templateId.root='2.16.840.1.113883.10.20.15.3.54' value.codeSystem='2.16.840.1.113883.6.96' value.codeSystemName='SNOMEDCT' constraints.validation.dependOn.TuberculosisCaseObservationValue='TuberculosisCaseObservationValueP' constraints.validation.warning='TuberculosisCaseObservationTuberculosisSignsAndSymptomsObservation TuberculosisCaseObservationTuberculosisSiteOfTBDiseaseObservation'</annotation>
+  <CDA:ConformsTo xmi:id="_yjM3GwdIEeK9gYpImj-Uyw" base_Generalization="_pGwdYVZlEeG6GPFMVAzSqg"/>
+  <Ecore:EClass xmi:id="_yjWoEAdIEeK9gYpImj-Uyw" base_Class="_pGwdYFZlEeG6GPFMVAzSqg">
+    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='TuberculosisCaseObservationTemplateId TuberculosisCaseObservationValue' templateId.root='2.16.840.1.113883.10.20.15.3.54' value.codeSystem='2.16.840.1.113883.6.96' value.codeSystemName='SNOMEDCT' constraints.validation.warning='TuberculosisCaseObservationTuberculosisSignsAndSymptomsObservation TuberculosisCaseObservationTuberculosisSiteOfTBDiseaseObservation'</annotation>
   </Ecore:EClass>
-  <CDA:ConformsTo xmi:id="_12dAkO1qEeGeHKjzItayOg" base_Generalization="_pcKawVZnEeG6GPFMVAzSqg"/>
-  <Ecore:EClass xmi:id="_12dnoO1qEeGeHKjzItayOg" base_Class="_pcKawFZnEeG6GPFMVAzSqg">
-    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='TuberculosisSignsAndSymptomsObservationTemplateId TuberculosisSignsAndSymptomsObservationValue' templateId.root='2.16.840.1.113883.10.20.15.3.14'</annotation>
+  <CDA:ConformsTo xmi:id="_yjgZFwdIEeK9gYpImj-Uyw" base_Generalization="_pcKawVZnEeG6GPFMVAzSqg"/>
+  <Ecore:EClass xmi:id="_yjgZGgdIEeK9gYpImj-Uyw" base_Class="_pcKawFZnEeG6GPFMVAzSqg">
+    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='TuberculosisSignsAndSymptomsObservationTemplateId' templateId.root='2.16.840.1.113883.10.20.15.3.14'</annotation>
   </Ecore:EClass>
-  <CDA:ConformsTo xmi:id="_12h5EO1qEeGeHKjzItayOg" base_Generalization="_TE-O8FZqEeG6GPFMVAzSqg"/>
-  <Ecore:EClass xmi:id="_12jHMO1qEeGeHKjzItayOg" base_Class="_TE9n4FZqEeG6GPFMVAzSqg">
+  <CDA:ConformsTo xmi:id="_yjpjAAdIEeK9gYpImj-Uyw" base_Generalization="_TE-O8FZqEeG6GPFMVAzSqg"/>
+  <Ecore:EClass xmi:id="_yjpjBAdIEeK9gYpImj-Uyw" base_Class="_TE9n4FZqEeG6GPFMVAzSqg">
     <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='TuberculosisPHCRRelevantDxTestsSectionTemplateId' templateId.root='2.16.840.1.113883.10.20.15.2.6' constraints.validation.info='TuberculosisPHCRRelevantDxTestsSectionTuberculosisResultOrganizer' constraints.validation.warning='TuberculosisPHCRRelevantDxTestsSectionTuberculosisResultObservation'</annotation>
   </Ecore:EClass>
-  <CDA:ConformsTo xmi:id="_12kVUO1qEeGeHKjzItayOg" base_Generalization="_ihGlwVZqEeG6GPFMVAzSqg"/>
-  <Ecore:EClass xmi:id="_12ljcO1qEeGeHKjzItayOg" base_Class="_ihGlwFZqEeG6GPFMVAzSqg">
-    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='TuberculosisResultOrganizerTemplateId TuberculosisResultOrganizerCode TuberculosisResultOrganizerCodeP TuberculosisResultOrganizerTuberculosisResultObservation' templateId.root='2.16.840.1.113883.10.20.15.3.21' code.codeSystem='2.16.840.1.113883.6.1' code.codeSystemName='LOINC' constraints.validation.dependOn.TuberculosisResultOrganizerCode='TuberculosisResultOrganizerCodeP'</annotation>
+  <CDA:ConformsTo xmi:id="_yjpjBQdIEeK9gYpImj-Uyw" base_Generalization="_ihGlwVZqEeG6GPFMVAzSqg"/>
+  <Ecore:EClass xmi:id="_yjpjCQdIEeK9gYpImj-Uyw" base_Class="_ihGlwFZqEeG6GPFMVAzSqg">
+    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='TuberculosisResultOrganizerTemplateId TuberculosisResultOrganizerCode TuberculosisResultOrganizerTuberculosisResultObservation' templateId.root='2.16.840.1.113883.10.20.15.3.21' code.codeSystem='2.16.840.1.113883.6.1' code.codeSystemName='LOINC'</annotation>
   </Ecore:EClass>
-  <CDA:ConformsTo xmi:id="_12uGUO1qEeGeHKjzItayOg" base_Generalization="_UO2gwVZtEeG6GPFMVAzSqg"/>
-  <Ecore:EClass xmi:id="_12vUcO1qEeGeHKjzItayOg" base_Class="_UO2gwFZtEeG6GPFMVAzSqg">
-    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='TuberculosisResultObservationTemplateId TuberculosisResultObservationCode TuberculosisResultObservationCodeP' templateId.root='2.16.840.1.113883.10.20.15.3.13' code.codeSystem='2.16.840.1.113883.6.1' code.codeSystemName='LOINC' constraints.validation.dependOn.TuberculosisResultObservationCode='TuberculosisResultObservationCodeP'</annotation>
+  <CDA:ConformsTo xmi:id="_yjzUCQdIEeK9gYpImj-Uyw" base_Generalization="_UO2gwVZtEeG6GPFMVAzSqg"/>
+  <Ecore:EClass xmi:id="_yj8d8AdIEeK9gYpImj-Uyw" base_Class="_UO2gwFZtEeG6GPFMVAzSqg">
+    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='TuberculosisResultObservationTemplateId TuberculosisResultObservationCode' templateId.root='2.16.840.1.113883.10.20.15.3.13' code.codeSystem='2.16.840.1.113883.6.1' code.codeSystemName='LOINC'</annotation>
   </Ecore:EClass>
-  <CDA:ConformsTo xmi:id="_1233Uu1qEeGeHKjzItayOg" base_Generalization="_iYAP8VZxEeG6GPFMVAzSqg"/>
-  <Ecore:EClass xmi:id="_125FcO1qEeGeHKjzItayOg" base_Class="_iYAP8FZxEeG6GPFMVAzSqg">
+  <CDA:ConformsTo xmi:id="_ykGO8AdIEeK9gYpImj-Uyw" base_Generalization="_iYAP8VZxEeG6GPFMVAzSqg"/>
+  <Ecore:EClass xmi:id="_ykGO9AdIEeK9gYpImj-Uyw" base_Class="_iYAP8FZxEeG6GPFMVAzSqg">
     <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='TuberculosisPHCRSocialHistorySectionTemplateId' templateId.root='2.16.840.1.113883.10.20.15.2.7' constraints.validation.warning='TuberculosisPHCRSocialHistorySectionTuberculosisPossibleExposureLocationAct TuberculosisPHCRSocialHistorySectionTuberculosisSocioBehavioralBooleanRiskFactorObservation TuberculosisPHCRSocialHistorySectionSmokingStatusObservation TuberculosisPHCRSocialHistorySectionHIVStatusObservation'</annotation>
   </Ecore:EClass>
-  <Ecore:EClass xmi:id="_1266oO1qEeGeHKjzItayOg" base_Class="_SGWUcFZzEeG6GPFMVAzSqg">
-    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='HIVStatusObservationTemplateId HIVStatusObservationClassCode HIVStatusObservationCode HIVStatusObservationStatusCode HIVStatusObservationStatusCodeP HIVStatusObservationValue HIVStatusObservationMoodCode' templateId.root='2.16.840.1.113883.10.20.15.3.4' classCode='OBS' code.code='ASSERTION' code.codeSystem='2.16.840.1.113883.5.4' code.codeSystemName='HL7ActCode' statusCode.code='completed' moodCode='EVN'</annotation>
+  <Ecore:EClass xmi:id="_ykGO9wdIEeK9gYpImj-Uyw" base_Class="_SGWUcFZzEeG6GPFMVAzSqg">
+    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='HIVStatusObservationTemplateId HIVStatusObservationClassCode HIVStatusObservationCode HIVStatusObservationStatusCode HIVStatusObservationMoodCode' templateId.root='2.16.840.1.113883.10.20.15.3.4' classCode='OBS' code.code='ASSERTION' code.codeSystem='2.16.840.1.113883.5.4' code.codeSystemName='HL7ActCode' statusCode.code='completed' moodCode='EVN'</annotation>
   </Ecore:EClass>
-  <CDA:ConformsTo xmi:id="_13LZUO1qEeGeHKjzItayOg" base_Generalization="_enFmQFZ1EeG6GPFMVAzSqg"/>
-  <Ecore:EClass xmi:id="_13MncO1qEeGeHKjzItayOg" base_Class="_enE_MFZ1EeG6GPFMVAzSqg">
-    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='TuberculosisSocioBehavioralBooleanRiskFactorObservationTemplateId TuberculosisSocioBehavioralBooleanRiskFactorObservationNegationInd TuberculosisSocioBehavioralBooleanRiskFactorObservationValue TuberculosisSocioBehavioralBooleanRiskFactorObservationCode TuberculosisSocioBehavioralBooleanRiskFactorObservationCodeP' templateId.root='2.16.840.1.113883.10.20.15.3.15' constraints.validation.warning='TuberculosisSocioBehavioralBooleanRiskFactorObservationEffectiveTime' code.code='ASSERTION' code.codeSystem='2.16.840.1.113883.5.4' code.codeSystemName='HL7ActCode' constraints.validation.dependOn.TuberculosisSocioBehavioralBooleanRiskFactorObservationCode='TuberculosisSocioBehavioralBooleanRiskFactorObservationCodeP'</annotation>
+  <CDA:ConformsTo xmi:id="_ykZJ4gdIEeK9gYpImj-Uyw" base_Generalization="_enFmQFZ1EeG6GPFMVAzSqg"/>
+  <Ecore:EClass xmi:id="_ykZJ5QdIEeK9gYpImj-Uyw" base_Class="_enE_MFZ1EeG6GPFMVAzSqg">
+    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='TuberculosisSocioBehavioralBooleanRiskFactorObservationTemplateId TuberculosisSocioBehavioralBooleanRiskFactorObservationNegationInd TuberculosisSocioBehavioralBooleanRiskFactorObservationCode' templateId.root='2.16.840.1.113883.10.20.15.3.15' constraints.validation.warning='TuberculosisSocioBehavioralBooleanRiskFactorObservationEffectiveTime' code.code='ASSERTION' code.codeSystem='2.16.840.1.113883.5.4' code.codeSystemName='HL7ActCode'</annotation>
   </Ecore:EClass>
-  <Ecore:EClass xmi:id="_13ap4O1qEeGeHKjzItayOg" base_Class="_QVT30FZ3EeG6GPFMVAzSqg">
+  <Ecore:EClass xmi:id="_yksr5AdIEeK9gYpImj-Uyw" base_Class="_QVT30FZ3EeG6GPFMVAzSqg">
     <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='TuberculosisPossibleExposureLocationActTemplateId TuberculosisPossibleExposureLocationActClassCode TuberculosisPossibleExposureLocationActCode TuberculosisPossibleExposureLocationActMoodCode TuberculosisPossibleExposureLocationActStatusCode' templateId.root='2.16.840.1.113883.10.20.15.3.12' classCode='ACT' code.code='413350009' code.codeSystem='2.16.840.1.113883.6.96' code.codeSystemName='SNOMEDCT' code.displayName='Finding with explicit context' moodCode='EVN' statusCode.code='completed'</annotation>
   </Ecore:EClass>
-  <CDA:ConformsTo xmi:id="_13neMO1qEeGeHKjzItayOg" base_Generalization="_p-v6sVZ4EeG6GPFMVAzSqg"/>
-  <Ecore:EClass xmi:id="_13osUO1qEeGeHKjzItayOg" base_Class="_p-v6sFZ4EeG6GPFMVAzSqg">
+  <CDA:ConformsTo xmi:id="_yk_m0gdIEeK9gYpImj-Uyw" base_Generalization="_p-v6sVZ4EeG6GPFMVAzSqg"/>
+  <Ecore:EClass xmi:id="_yk_m1QdIEeK9gYpImj-Uyw" base_Class="_p-v6sFZ4EeG6GPFMVAzSqg">
     <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='TuberculosisPHCRTreatmentInformationSectionTemplateId TuberculosisPHCRTreatmentInformationSectionTuberculosisTherapeuticRegimenAct' templateId.root='2.16.840.1.113883.10.20.15.2.8'</annotation>
   </Ecore:EClass>
-  <CDA:ConformsTo xmi:id="_13pTYO1qEeGeHKjzItayOg" base_Generalization="_tldQwVZ6EeG6GPFMVAzSqg"/>
-  <Ecore:EClass xmi:id="_13p6cO1qEeGeHKjzItayOg" base_Class="_tldQwFZ6EeG6GPFMVAzSqg">
+  <CDA:ConformsTo xmi:id="_ylIwwAdIEeK9gYpImj-Uyw" base_Generalization="_tldQwVZ6EeG6GPFMVAzSqg"/>
+  <Ecore:EClass xmi:id="_ylIwwwdIEeK9gYpImj-Uyw" base_Class="_tldQwFZ6EeG6GPFMVAzSqg">
     <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='TuberculosisTherapeuticRegimenActTemplateId' templateId.root='2.16.840.1.113883.10.20.15.3.18' constraints.validation.warning='TuberculosisTherapeuticRegimenActTuberculosisTreatmentGivenSubstanceAdministration' constraints.validation.info='TuberculosisTherapeuticRegimenActTuberculosisTreatmentNotGivenSubstanceAdministration'</annotation>
   </Ecore:EClass>
-  <CDA:ConformsTo xmi:id="_13rvoO1qEeGeHKjzItayOg" base_Generalization="_7og_AFZ-EeG6GPFMVAzSqg"/>
-  <Ecore:EClass xmi:id="_13sWsO1qEeGeHKjzItayOg" base_Class="_7ogX8FZ-EeG6GPFMVAzSqg">
+  <CDA:ConformsTo xmi:id="_ylIwxAdIEeK9gYpImj-Uyw" base_Generalization="_7og_AFZ-EeG6GPFMVAzSqg"/>
+  <Ecore:EClass xmi:id="_ylIwxwdIEeK9gYpImj-Uyw" base_Class="_7ogX8FZ-EeG6GPFMVAzSqg">
     <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='TuberculosisTreatmentGivenSubstanceAdministrationTemplateId' templateId.root='2.16.840.1.113883.10.20.15.3.16'</annotation>
   </Ecore:EClass>
-  <CDA:ConformsTo xmi:id="_13tk0O1qEeGeHKjzItayOg" base_Generalization="_Ts0QEVaAEeG6GPFMVAzSqg"/>
-  <Ecore:EClass xmi:id="_13uy8O1qEeGeHKjzItayOg" base_Class="_Ts0QEFaAEeG6GPFMVAzSqg">
+  <CDA:ConformsTo xmi:id="_ylIwyAdIEeK9gYpImj-Uyw" base_Generalization="_Ts0QEVaAEeG6GPFMVAzSqg"/>
+  <Ecore:EClass xmi:id="_ylIwywdIEeK9gYpImj-Uyw" base_Class="_Ts0QEFaAEeG6GPFMVAzSqg">
     <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='TuberculosisTreatmentNotGivenSubstanceAdministrationTemplateId' templateId.root='2.16.840.1.113883.10.20.15.3.19'</annotation>
   </Ecore:EClass>
-  <CDA:ConformsTo xmi:id="_132HsO1qEeGeHKjzItayOg" base_Generalization="_58mo4IJGEeG1NNkgO3XQ5g"/>
-  <Ecore:EClass xmi:id="_133V0O1qEeGeHKjzItayOg" base_Class="_58mB0IJGEeG1NNkgO3XQ5g">
+  <CDA:ConformsTo xmi:id="_ylcSxQdIEeK9gYpImj-Uyw" base_Generalization="_58mo4IJGEeG1NNkgO3XQ5g"/>
+  <Ecore:EClass xmi:id="_ylcSyAdIEeK9gYpImj-Uyw" base_Class="_58mB0IJGEeG1NNkgO3XQ5g">
     <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='TuberculosisPHCRImmunizationSectionTemplateId TuberculosisPHCRImmunizationSectionTuberculosisImmunizationActivitySubstanceAdministration' templateId.root='2.16.840.1.113883.10.20.15.2.23'</annotation>
   </Ecore:EClass>
-  <CDA:ConformsTo xmi:id="_135LBe1qEeGeHKjzItayOg" base_Generalization="_rvGNwKEFEeGKmOvqoxhXPg"/>
-  <Ecore:EClass xmi:id="_136ZIO1qEeGeHKjzItayOg" base_Class="_XdUUwIJHEeG1NNkgO3XQ5g">
+  <CDA:ConformsTo xmi:id="_ylcS0AdIEeK9gYpImj-Uyw" base_Generalization="_rvGNwKEFEeGKmOvqoxhXPg"/>
+  <Ecore:EClass xmi:id="_ylcS0wdIEeK9gYpImj-Uyw" base_Class="_XdUUwIJHEeG1NNkgO3XQ5g">
     <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='TuberculosisImmunizationActivitySubstanceAdministrationTemplateId' templateId.root='2.16.840.1.113883.10.20.15.3.60'</annotation>
   </Ecore:EClass>
-  <CDA:ConformsTo xmi:id="_137nQO1qEeGeHKjzItayOg" base_Generalization="_ur8-kIJHEeG1NNkgO3XQ5g"/>
-  <Ecore:EClass xmi:id="_1381YO1qEeGeHKjzItayOg" base_Class="_ur8XgIJHEeG1NNkgO3XQ5g">
+  <CDA:ConformsTo xmi:id="_yllcsAdIEeK9gYpImj-Uyw" base_Generalization="_ur8-kIJHEeG1NNkgO3XQ5g"/>
+  <Ecore:EClass xmi:id="_yllcswdIEeK9gYpImj-Uyw" base_Class="_ur8XgIJHEeG1NNkgO3XQ5g">
     <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='TuberculosisImmunizationManufacturedProductTemplateId' templateId.root='2.16.840.1.113883.10.20.15.3.61'</annotation>
   </Ecore:EClass>
-  <CDA:ConformsTo xmi:id="_139ccO1qEeGeHKjzItayOg" base_Generalization="_74VM8YohEeG8p7gRJdN2SA"/>
-  <Ecore:EClass xmi:id="_13_RoO1qEeGeHKjzItayOg" base_Class="_74VM8IohEeG8p7gRJdN2SA">
-    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='SmokingStatusObservationTemplateId SmokingStatusObservationCode SmokingStatusObservationValue' templateId.root='2.16.840.1.113883.10.20.15.3.85' code.code='266918002' code.codeSystem='2.16.840.1.113883.6.96' code.codeSystemName='SNOMEDCT' code.displayName='Tobacco use and exposure' constraints.validation.warning='SmokingStatusObservationEffectiveTime'</annotation>
+  <CDA:ConformsTo xmi:id="_yllctAdIEeK9gYpImj-Uyw" base_Generalization="_74VM8YohEeG8p7gRJdN2SA"/>
+  <Ecore:EClass xmi:id="_yllctwdIEeK9gYpImj-Uyw" base_Class="_74VM8IohEeG8p7gRJdN2SA">
+    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='SmokingStatusObservationTemplateId SmokingStatusObservationCode' templateId.root='2.16.840.1.113883.10.20.15.3.85' code.code='266918002' code.codeSystem='2.16.840.1.113883.6.96' code.codeSystemName='SNOMEDCT' code.displayName='Tobacco use and exposure' constraints.validation.warning='SmokingStatusObservationEffectiveTime'</annotation>
   </Ecore:EClass>
-  <CDA:ConformsTo xmi:id="_14WeAO1qEeGeHKjzItayOg" base_Generalization="_gUY7cKD5EeGKmOvqoxhXPg"/>
-  <Ecore:EClass xmi:id="_14XFEO1qEeGeHKjzItayOg" base_Class="_gUBvEKD5EeGKmOvqoxhXPg">
+  <CDA:ConformsTo xmi:id="_ymL5pwdIEeK9gYpImj-Uyw" base_Generalization="_gUY7cKD5EeGKmOvqoxhXPg"/>
+  <Ecore:EClass xmi:id="_ymL5qgdIEeK9gYpImj-Uyw" base_Class="_gUBvEKD5EeGKmOvqoxhXPg">
     <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='TuberculosisRelevantMedicalConditionHistoryObservationTemplateId TuberculosisRelevantMedicalConditionHistoryObservationValue TuberculosisRelevantMedicalConditionHistoryObservationTuberculosisRelevantMedicalConditionProblemObservation' templateId.root='2.16.840.1.113883.10.20.15.3.107' value.code='398192003' value.codeSystem='2.16.840.1.113883.6.96' value.codeSystemName='SNOMEDCT' value.displayName='Co-morbid conditions'</annotation>
   </Ecore:EClass>
-  <CDA:ConformsTo xmi:id="_14dLsO1qEeGeHKjzItayOg" base_Generalization="_jhvHkKEBEeGKmOvqoxhXPg"/>
-  <Ecore:EClass xmi:id="_14eZ0O1qEeGeHKjzItayOg" base_Class="_jhuggKEBEeGKmOvqoxhXPg">
-    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='TuberculosisRelevantMedicalConditionProblemObservationTemplateId TuberculosisRelevantMedicalConditionProblemObservationCode TuberculosisRelevantMedicalConditionProblemObservationValue' templateId.root='2.16.840.1.113883.10.20.15.3.108' code.code='64572001' code.codeSystem='2.16.840.1.113883.6.96' code.codeSystemName='SNOMEDCT' code.displayName='Condition'</annotation>
+  <CDA:ConformsTo xmi:id="_ymVDlwdIEeK9gYpImj-Uyw" base_Generalization="_jhvHkKEBEeGKmOvqoxhXPg"/>
+  <Ecore:EClass xmi:id="_ymVDmgdIEeK9gYpImj-Uyw" base_Class="_jhuggKEBEeGKmOvqoxhXPg">
+    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='TuberculosisRelevantMedicalConditionProblemObservationTemplateId TuberculosisRelevantMedicalConditionProblemObservationCode' templateId.root='2.16.840.1.113883.10.20.15.3.108' code.code='64572001' code.codeSystem='2.16.840.1.113883.6.96' code.codeSystemName='SNOMEDCT' code.displayName='Condition'</annotation>
   </Ecore:EClass>
-  <Ecore:EClass xmi:id="_14r1MO1qEeGeHKjzItayOg" base_Class="_oGK6ULGPEeGsBIJbNs8s8A">
+  <Ecore:EClass xmi:id="_ymoloAdIEeK9gYpImj-Uyw" base_Class="_oGK6ULGPEeGsBIJbNs8s8A">
     <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='TuberculosisSiteOfTBDiseaseObservationTemplateId TuberculosisSiteOfTBDiseaseObservationClassCode TuberculosisSiteOfTBDiseaseObservationCode TuberculosisSiteOfTBDiseaseObservationMoodCode TuberculosisSiteOfTBDiseaseObservationStatusCode TuberculosisSiteOfTBDiseaseObservationValue' templateId.root='2.16.840.1.113883.10.20.15.3.98' classCode='OBS' code.code='ASSERTION' code.codeSystem='2.16.840.1.113883.5.4' code.codeSystemName='HL7ActCode' constraints.validation.warning='TuberculosisSiteOfTBDiseaseObservationEffectiveTime' moodCode='EVN' statusCode.code='completed' value.codeSystem='2.16.840.1.113883.6.96' value.codeSystemName='SNOMEDCT'</annotation>
   </Ecore:EClass>
 </xmi:XMI>

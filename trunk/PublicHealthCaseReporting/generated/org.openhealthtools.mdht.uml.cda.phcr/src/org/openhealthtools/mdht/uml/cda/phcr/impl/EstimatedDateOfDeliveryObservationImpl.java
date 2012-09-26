@@ -21,7 +21,6 @@ import org.openhealthtools.mdht.uml.cda.impl.ObservationImpl;
 import org.openhealthtools.mdht.uml.cda.phcr.EstimatedDateOfDeliveryObservation;
 import org.openhealthtools.mdht.uml.cda.phcr.PhcrPackage;
 import org.openhealthtools.mdht.uml.cda.phcr.operations.EstimatedDateOfDeliveryObservationOperations;
-import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
 
 /**
  * <!-- begin-user-doc -->
@@ -123,23 +122,4 @@ public class EstimatedDateOfDeliveryObservationImpl extends ObservationImpl impl
 	public boolean validateEstimatedDateOfDeliveryObservationValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
     return EstimatedDateOfDeliveryObservationOperations.validateEstimatedDateOfDeliveryObservationValue(this, diagnostics, context);
   }
-
-	/**
-   * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-   * @generated
-   */
-	public EstimatedDateOfDeliveryObservation init() {
-      return Initializer.Util.init(this);
-  }
-
-  /**
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    public EstimatedDateOfDeliveryObservation init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-        Initializer.Util.init(this, initializers);
-        return this;
-    }
 } //EstimatedDateOfDeliveryObservationImpl

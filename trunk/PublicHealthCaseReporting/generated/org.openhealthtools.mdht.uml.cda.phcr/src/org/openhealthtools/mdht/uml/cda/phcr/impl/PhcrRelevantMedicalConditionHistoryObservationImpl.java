@@ -23,7 +23,6 @@ import org.openhealthtools.mdht.uml.cda.impl.ObservationImpl;
 import org.openhealthtools.mdht.uml.cda.phcr.PhcrPackage;
 import org.openhealthtools.mdht.uml.cda.phcr.PhcrRelevantMedicalConditionHistoryObservation;
 import org.openhealthtools.mdht.uml.cda.phcr.operations.PhcrRelevantMedicalConditionHistoryObservationOperations;
-import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
 
 /**
  * <!-- begin-user-doc -->
@@ -152,23 +151,4 @@ public class PhcrRelevantMedicalConditionHistoryObservationImpl extends Observat
 	public EList<ProblemObservation> getProblemObservations() {
     return PhcrRelevantMedicalConditionHistoryObservationOperations.getProblemObservations(this);
   }
-
-	/**
-   * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-   * @generated
-   */
-	public PhcrRelevantMedicalConditionHistoryObservation init() {
-      return Initializer.Util.init(this);
-  }
-
-  /**
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    public PhcrRelevantMedicalConditionHistoryObservation init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-        Initializer.Util.init(this, initializers);
-        return this;
-    }
 } //PhcrRelevantMedicalConditionHistoryObservationImpl

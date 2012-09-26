@@ -22,7 +22,6 @@ import org.openhealthtools.mdht.uml.cda.phcr.anthrax.AnthraxPhcrTreatmentInforma
 import org.openhealthtools.mdht.uml.cda.phcr.anthrax.AnthraxTherapeuticRegimenAct;
 import org.openhealthtools.mdht.uml.cda.phcr.anthrax.operations.AnthraxPhcrTreatmentInformationSectionOperations;
 import org.openhealthtools.mdht.uml.cda.phcr.impl.PhcrTreatmentInformationSectionImpl;
-import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
 
 /**
  * <!-- begin-user-doc -->
@@ -80,23 +79,4 @@ public class AnthraxPhcrTreatmentInformationSectionImpl extends PhcrTreatmentInf
 	public boolean validatePhcrTreatmentInformationSectionTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
     return AnthraxPhcrTreatmentInformationSectionOperations.validatePhcrTreatmentInformationSectionTemplateId(this, diagnostics, context);
   }
-
-	/**
-   * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-   * @generated
-   */
-	public AnthraxPhcrTreatmentInformationSection init() {
-      return Initializer.Util.init(this);
-  }
-
-  /**
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    public AnthraxPhcrTreatmentInformationSection init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-        Initializer.Util.init(this, initializers);
-        return this;
-    }
 } //AnthraxPhcrTreatmentInformationSectionImpl

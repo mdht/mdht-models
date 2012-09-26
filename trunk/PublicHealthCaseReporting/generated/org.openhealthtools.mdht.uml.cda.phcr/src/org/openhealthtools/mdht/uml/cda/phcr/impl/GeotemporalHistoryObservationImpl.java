@@ -21,7 +21,6 @@ import org.openhealthtools.mdht.uml.cda.impl.ObservationImpl;
 import org.openhealthtools.mdht.uml.cda.phcr.GeotemporalHistoryObservation;
 import org.openhealthtools.mdht.uml.cda.phcr.PhcrPackage;
 import org.openhealthtools.mdht.uml.cda.phcr.operations.GeotemporalHistoryObservationOperations;
-import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
 
 /**
  * <!-- begin-user-doc -->
@@ -141,25 +140,6 @@ public class GeotemporalHistoryObservationImpl extends ObservationImpl implement
 	public boolean validateGeotemporalHistoryObservationStatusCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
     return GeotemporalHistoryObservationOperations.validateGeotemporalHistoryObservationStatusCodeP(this, diagnostics, context);
   }
-
-	/**
-   * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-   * @generated
-   */
-	public GeotemporalHistoryObservation init() {
-      return Initializer.Util.init(this);
-  }
-
-  /**
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    public GeotemporalHistoryObservation init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-        Initializer.Util.init(this, initializers);
-        return this;
-    }
 	
 	
 } //GeotemporalHistoryObservationImpl

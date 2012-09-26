@@ -10,10 +10,13 @@
  *******************************************************************************/
 package org.openhealthtools.mdht.uml.cda.phcr.flu;
 
+import java.lang.Iterable;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
 
+import org.eclipse.emf.ecore.EObject;
+import org.openhealthtools.mdht.emf.runtime.util.Initializer;
 import org.openhealthtools.mdht.uml.cda.phcr.ResultObservation;
 
 /**
@@ -23,10 +26,25 @@ import org.openhealthtools.mdht.uml.cda.phcr.ResultObservation;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.phcr.flu.fluPackage#getInfluenzaResultObservation()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation interpretationCode.codeSystemName='SNOMEDCT' code.codeSystem='2.16.840.1.113883.6.1' templateId.root='2.16.840.1.113883.10.20.15.3.81' constraints.validation.error='InfluenzaResultObservationTemplateId ResultObservationCode' code.codeSystemName='LOINC' constraints.validation.warning='InfluenzaResultObservationInterpretationCode' interpretationCode.codeSystem='2.16.840.1.113883.6.96'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='InfluenzaResultObservationTemplateId InfluenzaResultObservationCode' templateId.root='2.16.840.1.113883.10.20.15.3.81' code.codeSystem='2.16.840.1.113883.6.1' code.codeSystemName='LOINC' interpretationCode.codeSystem='2.16.840.1.113883.6.96' interpretationCode.codeSystemName='SNOMEDCT' constraints.validation.warning='InfluenzaResultObservationInterpretationCode'"
  * @generated
  */
 public interface InfluenzaResultObservation extends ResultObservation {
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * (self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and 
+	 * let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in 
+	 * value.codeSystem = '2.16.840.1.113883.6.1' and not value.code.oclIsUndefined())
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and \r\nlet value : datatypes::CD = self.code.oclAsType(datatypes::CD) in \r\nvalue.codeSystem = \'2.16.840.1.113883.6.1\' and not value.code.oclIsUndefined())'"
+	 * @generated
+	 */
+	boolean validateInfluenzaResultObservationCode(DiagnosticChain diagnostics, Map<Object, Object> context);
+
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -48,4 +66,11 @@ public interface InfluenzaResultObservation extends ResultObservation {
 	 * @generated
 	 */
 	public InfluenzaResultObservation init();
+
+	/**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    public InfluenzaResultObservation init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // InfluenzaResultObservation

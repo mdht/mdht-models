@@ -13,12 +13,6 @@ package org.openhealthtools.mdht.uml.cda.phcr.hepb;
 import java.lang.Iterable;
 import org.eclipse.emf.ecore.EObject;
 import org.openhealthtools.mdht.emf.runtime.util.Initializer;
-import java.util.Map;
-
-import org.eclipse.emf.common.util.DiagnosticChain;
-
-import org.openhealthtools.mdht.uml.cda.ClinicalStatement;
-
 import org.openhealthtools.mdht.uml.cda.phcr.TherapeuticRegimenAct;
 
 /**
@@ -33,10 +27,10 @@ import org.openhealthtools.mdht.uml.cda.phcr.TherapeuticRegimenAct;
  */
 public interface AcuteHepatitisBTherapeuticRegimenAct extends TherapeuticRegimenAct {
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public AcuteHepatitisBTherapeuticRegimenAct init();
 
   /**

@@ -29,8 +29,6 @@ import org.openhealthtools.mdht.uml.cda.phcr.tuberculosis.TuberculosisResultOrga
 
 import org.openhealthtools.mdht.uml.cda.phcr.tuberculosis.operations.TuberculosisPHCRRelevantDxTestsSectionOperations;
 
-import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
-
 /**
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>PHCR Relevant Dx Tests Section</b></em>'.
@@ -42,85 +40,87 @@ import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
  */
 public class TuberculosisPHCRRelevantDxTestsSectionImpl extends PhcrRelevantDxTestsSectionImpl implements TuberculosisPHCRRelevantDxTestsSection {
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	protected TuberculosisPHCRRelevantDxTestsSectionImpl() {
-    super();
-  }
+		super();
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	@Override
 	protected EClass eStaticClass() {
-    return TuberculosisPackage.Literals.TUBERCULOSIS_PHCR_RELEVANT_DX_TESTS_SECTION;
-  }
+		return TuberculosisPackage.Literals.TUBERCULOSIS_PHCR_RELEVANT_DX_TESTS_SECTION;
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public boolean validateTuberculosisPHCRRelevantDxTestsSectionTuberculosisResultOrganizer(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return TuberculosisPHCRRelevantDxTestsSectionOperations.validateTuberculosisPHCRRelevantDxTestsSectionTuberculosisResultOrganizer(this, diagnostics, context);
-  }
+		return TuberculosisPHCRRelevantDxTestsSectionOperations.validateTuberculosisPHCRRelevantDxTestsSectionTuberculosisResultOrganizer(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public boolean validateTuberculosisPHCRRelevantDxTestsSectionTuberculosisResultObservation(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return TuberculosisPHCRRelevantDxTestsSectionOperations.validateTuberculosisPHCRRelevantDxTestsSectionTuberculosisResultObservation(this, diagnostics, context);
-  }
+		return TuberculosisPHCRRelevantDxTestsSectionOperations.validateTuberculosisPHCRRelevantDxTestsSectionTuberculosisResultObservation(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public EList<TuberculosisResultOrganizer> getTuberculosisResultOrganizers() {
-    return TuberculosisPHCRRelevantDxTestsSectionOperations.getTuberculosisResultOrganizers(this);
-  }
+		return TuberculosisPHCRRelevantDxTestsSectionOperations.getTuberculosisResultOrganizers(this);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public EList<TuberculosisResultObservation> getTuberculosisResultObservations() {
-    return TuberculosisPHCRRelevantDxTestsSectionOperations.getTuberculosisResultObservations(this);
-  }
+		return TuberculosisPHCRRelevantDxTestsSectionOperations.getTuberculosisResultObservations(this);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	@Override
 	public boolean validateResultsSectionTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return TuberculosisPHCRRelevantDxTestsSectionOperations.validateResultsSectionTemplateId(this, diagnostics, context);
-  }
+		return TuberculosisPHCRRelevantDxTestsSectionOperations.validateResultsSectionTemplateId(this, diagnostics, context);
+	}
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
-  public TuberculosisPHCRRelevantDxTestsSection init() {
-      return Initializer.Util.init(this);
-  }
+	 * @generated
+	 */
+  @Override
+public TuberculosisPHCRRelevantDxTestsSection init() {
+	    return Initializer.Util.init(this);
+	}
 
   /**
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
      * @generated
      */
-    public TuberculosisPHCRRelevantDxTestsSection init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+    @Override
+	public TuberculosisPHCRRelevantDxTestsSection init(Iterable<? extends Initializer<? extends EObject>> initializers) {
         Initializer.Util.init(this, initializers);
         return this;
     }

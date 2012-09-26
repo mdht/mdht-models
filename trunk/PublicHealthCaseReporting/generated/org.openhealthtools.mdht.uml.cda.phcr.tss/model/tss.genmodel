@@ -56,10 +56,6 @@
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="tss.ecore#//TssPhcrClinicalInformationSection/getTssCaseObservation"/>
     </genClasses>
     <genClasses xsi:type="genmodel:GenClass" ecoreClass="tss.ecore#//TssCaseObservation">
-      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="tss.ecore#//TssCaseObservation/TssCaseObservationValueP">
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="tss.ecore#//TssCaseObservation/TssCaseObservationValueP/diagnostics"/>
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="tss.ecore#//TssCaseObservation/TssCaseObservationValueP/context"/>
-      </genOperations>
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="tss.ecore#//TssCaseObservation/TssCaseObservationValue">
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="tss.ecore#//TssCaseObservation/TssCaseObservationValue/diagnostics"/>
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="tss.ecore#//TssCaseObservation/TssCaseObservationValue/context"/>
@@ -70,12 +66,7 @@
       </genOperations>
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="tss.ecore#//TssCaseObservation/getTssSignsAndSymptomsObservations"/>
     </genClasses>
-    <genClasses xsi:type="genmodel:GenClass" ecoreClass="tss.ecore#//TssSignsAndSymptomsObservation">
-      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="tss.ecore#//TssSignsAndSymptomsObservation/TssSignsAndSymptomsObservationValue">
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="tss.ecore#//TssSignsAndSymptomsObservation/TssSignsAndSymptomsObservationValue/diagnostics"/>
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="tss.ecore#//TssSignsAndSymptomsObservation/TssSignsAndSymptomsObservationValue/context"/>
-      </genOperations>
-    </genClasses>
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="tss.ecore#//TssSignsAndSymptomsObservation"/>
     <genClasses xsi:type="genmodel:GenClass" ecoreClass="tss.ecore#//TssPhcrRelevantDxTestsSection">
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="tss.ecore#//TssPhcrRelevantDxTestsSection/TssPhcrRelevantDxTestsSectionTssResultOrganizer">
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="tss.ecore#//TssPhcrRelevantDxTestsSection/TssPhcrRelevantDxTestsSectionTssResultOrganizer/diagnostics"/>
@@ -89,10 +80,6 @@
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="tss.ecore#//TssPhcrRelevantDxTestsSection/getTssResultObservations"/>
     </genClasses>
     <genClasses xsi:type="genmodel:GenClass" ecoreClass="tss.ecore#//TssResultOrganizer">
-      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="tss.ecore#//TssResultOrganizer/TssResultOrganizerCodeP">
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="tss.ecore#//TssResultOrganizer/TssResultOrganizerCodeP/diagnostics"/>
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="tss.ecore#//TssResultOrganizer/TssResultOrganizerCodeP/context"/>
-      </genOperations>
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="tss.ecore#//TssResultOrganizer/TssResultOrganizerCode">
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="tss.ecore#//TssResultOrganizer/TssResultOrganizerCode/diagnostics"/>
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="tss.ecore#//TssResultOrganizer/TssResultOrganizerCode/context"/>
@@ -104,10 +91,6 @@
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="tss.ecore#//TssResultOrganizer/getTssResultObservations"/>
     </genClasses>
     <genClasses xsi:type="genmodel:GenClass" ecoreClass="tss.ecore#//TssResultObservation">
-      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="tss.ecore#//TssResultObservation/TssResultObservationCodeP">
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="tss.ecore#//TssResultObservation/TssResultObservationCodeP/diagnostics"/>
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="tss.ecore#//TssResultObservation/TssResultObservationCodeP/context"/>
-      </genOperations>
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="tss.ecore#//TssResultObservation/TssResultObservationCode">
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="tss.ecore#//TssResultObservation/TssResultObservationCode/diagnostics"/>
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="tss.ecore#//TssResultObservation/TssResultObservationCode/context"/>

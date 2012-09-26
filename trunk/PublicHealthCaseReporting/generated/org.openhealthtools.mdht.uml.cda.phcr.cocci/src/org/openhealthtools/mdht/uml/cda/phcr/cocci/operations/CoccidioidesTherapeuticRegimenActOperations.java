@@ -90,6 +90,7 @@ public class CoccidioidesTherapeuticRegimenActOperations extends TherapeuticRegi
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
+   * self.entryRelationship->exists(entryRelationship : cda::EntryRelationship | not entryRelationship.substanceAdministration.oclIsUndefined() and entryRelationship.substanceAdministration.oclIsKindOf(cocci::CoccidioidesTreatmentGivenSubstanceAdministration) and entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::COMP)
    * @param coccidioidesTherapeuticRegimenAct The receiving '<em><b>Coccidioides Therapeutic Regimen Act</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -98,8 +99,8 @@ public class CoccidioidesTherapeuticRegimenActOperations extends TherapeuticRegi
    */
 	
 	public static  boolean validateCoccidioidesTherapeuticRegimenActCoccidioidesTreatmentGivenSubstanceAdministration(CoccidioidesTherapeuticRegimenAct coccidioidesTherapeuticRegimenAct, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
-    if (VALIDATE_COCCIDIOIDES_THERAPEUTIC_REGIMEN_ACT_COCCIDIOIDES_TREATMENT_GIVEN_SUBSTANCE_ADMINISTRATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+    if (VALIDATE_COCCIDIOIDES_THERAPEUTIC_REGIMEN_ACT_COCCIDIOIDES_TREATMENT_GIVEN_SUBSTANCE_ADMINISTRATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null)
+    {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(CocciPackage.Literals.COCCIDIOIDES_THERAPEUTIC_REGIMEN_ACT);
       try
@@ -117,13 +118,12 @@ public class CoccidioidesTherapeuticRegimenActOperations extends TherapeuticRegi
       {
         diagnostics.add
           (new BasicDiagnostic
-            (Diagnostic.WARNING,
+            (Diagnostic.ERROR,
              CocciValidator.DIAGNOSTIC_SOURCE,
              CocciValidator.COCCIDIOIDES_THERAPEUTIC_REGIMEN_ACT__COCCIDIOIDES_THERAPEUTIC_REGIMEN_ACT_COCCIDIOIDES_TREATMENT_GIVEN_SUBSTANCE_ADMINISTRATION,
-             CocciPlugin.INSTANCE.getString("CoccidioidesTherapeuticRegimenActCoccidioidesTreatmentGivenSubstanceAdministration"),
+             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "validateCoccidioidesTherapeuticRegimenActCoccidioidesTreatmentGivenSubstanceAdministration", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(coccidioidesTherapeuticRegimenAct, context) }),
              new Object [] { coccidioidesTherapeuticRegimenAct }));
       }
-       
       return false;
     }
     return true;
@@ -155,6 +155,7 @@ public class CoccidioidesTherapeuticRegimenActOperations extends TherapeuticRegi
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
+   * self.entryRelationship->exists(entryRelationship : cda::EntryRelationship | not entryRelationship.substanceAdministration.oclIsUndefined() and entryRelationship.substanceAdministration.oclIsKindOf(cocci::CoccidioidesTreatmentNotGivenSubstanceAdministration) and entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::COMP)
    * @param coccidioidesTherapeuticRegimenAct The receiving '<em><b>Coccidioides Therapeutic Regimen Act</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -163,8 +164,8 @@ public class CoccidioidesTherapeuticRegimenActOperations extends TherapeuticRegi
    */
 	
 	public static  boolean validateCoccidioidesTherapeuticRegimenActCoccidioidesTreatmentNotGivenSubstanceAdministration(CoccidioidesTherapeuticRegimenAct coccidioidesTherapeuticRegimenAct, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
-    if (VALIDATE_COCCIDIOIDES_THERAPEUTIC_REGIMEN_ACT_COCCIDIOIDES_TREATMENT_NOT_GIVEN_SUBSTANCE_ADMINISTRATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+    if (VALIDATE_COCCIDIOIDES_THERAPEUTIC_REGIMEN_ACT_COCCIDIOIDES_TREATMENT_NOT_GIVEN_SUBSTANCE_ADMINISTRATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null)
+    {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(CocciPackage.Literals.COCCIDIOIDES_THERAPEUTIC_REGIMEN_ACT);
       try
@@ -182,13 +183,12 @@ public class CoccidioidesTherapeuticRegimenActOperations extends TherapeuticRegi
       {
         diagnostics.add
           (new BasicDiagnostic
-            (Diagnostic.INFO,
+            (Diagnostic.ERROR,
              CocciValidator.DIAGNOSTIC_SOURCE,
              CocciValidator.COCCIDIOIDES_THERAPEUTIC_REGIMEN_ACT__COCCIDIOIDES_THERAPEUTIC_REGIMEN_ACT_COCCIDIOIDES_TREATMENT_NOT_GIVEN_SUBSTANCE_ADMINISTRATION,
-             CocciPlugin.INSTANCE.getString("CoccidioidesTherapeuticRegimenActCoccidioidesTreatmentNotGivenSubstanceAdministration"),
+             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "validateCoccidioidesTherapeuticRegimenActCoccidioidesTreatmentNotGivenSubstanceAdministration", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(coccidioidesTherapeuticRegimenAct, context) }),
              new Object [] { coccidioidesTherapeuticRegimenAct }));
       }
-       
       return false;
     }
     return true;
@@ -218,6 +218,10 @@ public class CoccidioidesTherapeuticRegimenActOperations extends TherapeuticRegi
 	/**
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
+   * <!-- begin-model-doc -->
+   * self.getSubstanceAdministrations()->select(substanceAdministration : cda::SubstanceAdministration | not substanceAdministration.oclIsUndefined() and substanceAdministration.oclIsKindOf(cocci::CoccidioidesTreatmentGivenSubstanceAdministration)).oclAsType(cocci::CoccidioidesTreatmentGivenSubstanceAdministration)
+   * @param coccidioidesTherapeuticRegimenAct The receiving '<em><b>Coccidioides Therapeutic Regimen Act</b></em>' model object.
+   * <!-- end-model-doc -->
    * @generated
    */
 	
@@ -225,7 +229,7 @@ public class CoccidioidesTherapeuticRegimenActOperations extends TherapeuticRegi
     if (GET_COCCIDIOIDES_TREATMENT_GIVEN_SUBSTANCE_ADMINISTRATIONS__EOCL_QRY == null)
     {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
-      helper.setOperationContext(CocciPackage.Literals.COCCIDIOIDES_THERAPEUTIC_REGIMEN_ACT, CocciPackage.Literals.COCCIDIOIDES_THERAPEUTIC_REGIMEN_ACT.getEAllOperations().get(65));
+      helper.setOperationContext(CocciPackage.Literals.COCCIDIOIDES_THERAPEUTIC_REGIMEN_ACT, CocciPackage.Literals.COCCIDIOIDES_THERAPEUTIC_REGIMEN_ACT.getEAllOperations().get(63));
       try
       {
         GET_COCCIDIOIDES_TREATMENT_GIVEN_SUBSTANCE_ADMINISTRATIONS__EOCL_QRY = helper.createQuery(GET_COCCIDIOIDES_TREATMENT_GIVEN_SUBSTANCE_ADMINISTRATIONS__EOCL_EXP);
@@ -265,6 +269,10 @@ public class CoccidioidesTherapeuticRegimenActOperations extends TherapeuticRegi
 	/**
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
+   * <!-- begin-model-doc -->
+   * self.getSubstanceAdministrations()->select(substanceAdministration : cda::SubstanceAdministration | not substanceAdministration.oclIsUndefined() and substanceAdministration.oclIsKindOf(cocci::CoccidioidesTreatmentNotGivenSubstanceAdministration)).oclAsType(cocci::CoccidioidesTreatmentNotGivenSubstanceAdministration)
+   * @param coccidioidesTherapeuticRegimenAct The receiving '<em><b>Coccidioides Therapeutic Regimen Act</b></em>' model object.
+   * <!-- end-model-doc -->
    * @generated
    */
 	
@@ -272,7 +280,7 @@ public class CoccidioidesTherapeuticRegimenActOperations extends TherapeuticRegi
     if (GET_COCCIDIOIDES_TREATMENT_NOT_GIVEN_SUBSTANCE_ADMINISTRATIONS__EOCL_QRY == null)
     {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
-      helper.setOperationContext(CocciPackage.Literals.COCCIDIOIDES_THERAPEUTIC_REGIMEN_ACT, CocciPackage.Literals.COCCIDIOIDES_THERAPEUTIC_REGIMEN_ACT.getEAllOperations().get(66));
+      helper.setOperationContext(CocciPackage.Literals.COCCIDIOIDES_THERAPEUTIC_REGIMEN_ACT, CocciPackage.Literals.COCCIDIOIDES_THERAPEUTIC_REGIMEN_ACT.getEAllOperations().get(64));
       try
       {
         GET_COCCIDIOIDES_TREATMENT_NOT_GIVEN_SUBSTANCE_ADMINISTRATIONS__EOCL_QRY = helper.createQuery(GET_COCCIDIOIDES_TREATMENT_NOT_GIVEN_SUBSTANCE_ADMINISTRATIONS__EOCL_EXP);
@@ -314,6 +322,7 @@ public class CoccidioidesTherapeuticRegimenActOperations extends TherapeuticRegi
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
+   * self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.15.3.89')
    * @param coccidioidesTherapeuticRegimenAct The receiving '<em><b>Coccidioides Therapeutic Regimen Act</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -322,8 +331,8 @@ public class CoccidioidesTherapeuticRegimenActOperations extends TherapeuticRegi
    */
 	
 	public static  boolean validateTherapeuticRegimenActTemplateId(CoccidioidesTherapeuticRegimenAct coccidioidesTherapeuticRegimenAct, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
-    if (VALIDATE_THERAPEUTIC_REGIMEN_ACT_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+    if (VALIDATE_THERAPEUTIC_REGIMEN_ACT_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null)
+    {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(CocciPackage.Literals.COCCIDIOIDES_THERAPEUTIC_REGIMEN_ACT);
       try
@@ -344,10 +353,9 @@ public class CoccidioidesTherapeuticRegimenActOperations extends TherapeuticRegi
             (Diagnostic.ERROR,
              CocciValidator.DIAGNOSTIC_SOURCE,
              CocciValidator.COCCIDIOIDES_THERAPEUTIC_REGIMEN_ACT__THERAPEUTIC_REGIMEN_ACT_TEMPLATE_ID,
-             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "TherapeuticRegimenActTemplateId", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(coccidioidesTherapeuticRegimenAct, context) }),
+             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "validateTherapeuticRegimenActTemplateId", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(coccidioidesTherapeuticRegimenAct, context) }),
              new Object [] { coccidioidesTherapeuticRegimenAct }));
       }
-       
       return false;
     }
     return true;

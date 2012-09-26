@@ -22,7 +22,6 @@ import org.openhealthtools.mdht.uml.cda.phcr.impl.SignsAndSymptomsObservationImp
 import org.openhealthtools.mdht.uml.cda.phcr.silicosis.SilicosisPackage;
 import org.openhealthtools.mdht.uml.cda.phcr.silicosis.SilicosisSignsAndSymptomsObservation;
 import org.openhealthtools.mdht.uml.cda.phcr.silicosis.operations.SilicosisSignsAndSymptomsObservationOperations;
-import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
 
 /**
  * <!-- begin-user-doc -->
@@ -72,24 +71,5 @@ public class SilicosisSignsAndSymptomsObservationImpl extends SignsAndSymptomsOb
   {
     return SilicosisSignsAndSymptomsObservationOperations.validateSignsAndSymptomsObservationTemplateId(this, diagnostics, context);
   }
-
-  /**
-   * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-   * @generated
-   */
-	public SilicosisSignsAndSymptomsObservation init() {
-      return Initializer.Util.init(this);
-  }
-
-  /**
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    public SilicosisSignsAndSymptomsObservation init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-        Initializer.Util.init(this, initializers);
-        return this;
-    }
 
 } //SilicosisSignsAndSymptomsObservationImpl

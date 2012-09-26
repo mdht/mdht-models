@@ -12,6 +12,7 @@ package org.openhealthtools.mdht.uml.cda.phcr.anthrax.util;
 
 import java.util.Map;
 
+import org.eclipse.emf.common.util.Diagnostic;
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.common.util.ResourceLocator;
 
@@ -567,7 +568,28 @@ public class AnthraxValidator extends EObjectValidator {
    * @generated
    */
 	public boolean validateAnthraxCaseReport_validatePublicHealthCaseReportTemplateId(AnthraxCaseReport anthraxCaseReport, DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return anthraxCaseReport.validatePublicHealthCaseReportTemplateId(diagnostics, context);
+    // TODO override the constraint, if desired
+    // -> uncomment the scaffolding
+    // -> specify the condition that violates the constraint
+    // -> verify the diagnostic details, including severity, code, and message
+    // Ensure that you remove @generated or mark it @generated NOT
+    if (false)
+    {
+      if (diagnostics != null)
+      {
+        diagnostics.add
+          (createDiagnostic
+            (Diagnostic.ERROR,
+             DIAGNOSTIC_SOURCE,
+             0,
+             "_UI_GenericConstraint_diagnostic",
+             new Object[] { "validatePublicHealthCaseReportTemplateId", getObjectLabel(anthraxCaseReport, context) },
+             new Object[] { anthraxCaseReport },
+             context));
+      }
+      return false;
+    }
+    return phcrValidator.validatePublicHealthCaseReport_validatePublicHealthCaseReportTemplateId(anthraxCaseReport, diagnostics, context);
   }
 
 	/**
@@ -617,7 +639,28 @@ public class AnthraxValidator extends EObjectValidator {
    * @generated
    */
 	public boolean validateAnthraxPhcrClinicalInformationSection_validatePhcrClinicalInformationSectionTemplateId(AnthraxPhcrClinicalInformationSection anthraxPhcrClinicalInformationSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return anthraxPhcrClinicalInformationSection.validatePhcrClinicalInformationSectionTemplateId(diagnostics, context);
+    // TODO override the constraint, if desired
+    // -> uncomment the scaffolding
+    // -> specify the condition that violates the constraint
+    // -> verify the diagnostic details, including severity, code, and message
+    // Ensure that you remove @generated or mark it @generated NOT
+    if (false)
+    {
+      if (diagnostics != null)
+      {
+        diagnostics.add
+          (createDiagnostic
+            (Diagnostic.ERROR,
+             DIAGNOSTIC_SOURCE,
+             0,
+             "_UI_GenericConstraint_diagnostic",
+             new Object[] { "validatePhcrClinicalInformationSectionTemplateId", getObjectLabel(anthraxPhcrClinicalInformationSection, context) },
+             new Object[] { anthraxPhcrClinicalInformationSection },
+             context));
+      }
+      return false;
+    }
+    return phcrValidator.validatePhcrClinicalInformationSection_validatePhcrClinicalInformationSectionTemplateId(anthraxPhcrClinicalInformationSection, diagnostics, context);
   }
 
 	/**
@@ -702,7 +745,28 @@ public class AnthraxValidator extends EObjectValidator {
    * @generated
    */
 	public boolean validateAnthraxCaseObservation_validateProblemObservationTemplateId(AnthraxCaseObservation anthraxCaseObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return anthraxCaseObservation.validateProblemObservationTemplateId(diagnostics, context);
+    // TODO override the constraint, if desired
+    // -> uncomment the scaffolding
+    // -> specify the condition that violates the constraint
+    // -> verify the diagnostic details, including severity, code, and message
+    // Ensure that you remove @generated or mark it @generated NOT
+    if (false)
+    {
+      if (diagnostics != null)
+      {
+        diagnostics.add
+          (createDiagnostic
+            (Diagnostic.ERROR,
+             DIAGNOSTIC_SOURCE,
+             0,
+             "_UI_GenericConstraint_diagnostic",
+             new Object[] { "validateProblemObservationTemplateId", getObjectLabel(anthraxCaseObservation, context) },
+             new Object[] { anthraxCaseObservation },
+             context));
+      }
+      return false;
+    }
+    return phcrValidator.validateCaseObservation_validateProblemObservationTemplateId(anthraxCaseObservation, diagnostics, context);
   }
 
 	/**
@@ -751,7 +815,28 @@ public class AnthraxValidator extends EObjectValidator {
    * @generated
    */
 	public boolean validateAnthraxSignsAndSymptomsObservation_validateSignsAndSymptomsObservationTemplateId(AnthraxSignsAndSymptomsObservation anthraxSignsAndSymptomsObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return anthraxSignsAndSymptomsObservation.validateSignsAndSymptomsObservationTemplateId(diagnostics, context);
+    // TODO override the constraint, if desired
+    // -> uncomment the scaffolding
+    // -> specify the condition that violates the constraint
+    // -> verify the diagnostic details, including severity, code, and message
+    // Ensure that you remove @generated or mark it @generated NOT
+    if (false)
+    {
+      if (diagnostics != null)
+      {
+        diagnostics.add
+          (createDiagnostic
+            (Diagnostic.ERROR,
+             DIAGNOSTIC_SOURCE,
+             0,
+             "_UI_GenericConstraint_diagnostic",
+             new Object[] { "validateSignsAndSymptomsObservationTemplateId", getObjectLabel(anthraxSignsAndSymptomsObservation, context) },
+             new Object[] { anthraxSignsAndSymptomsObservation },
+             context));
+      }
+      return false;
+    }
+    return phcrValidator.validateSignsAndSymptomsObservation_validateSignsAndSymptomsObservationTemplateId(anthraxSignsAndSymptomsObservation, diagnostics, context);
   }
 
 	/**
@@ -814,7 +899,28 @@ public class AnthraxValidator extends EObjectValidator {
    * @generated
    */
 	public boolean validateAnthraxPhcrRelevantDxTestsSection_validateResultsSectionTemplateId(AnthraxPhcrRelevantDxTestsSection anthraxPhcrRelevantDxTestsSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return anthraxPhcrRelevantDxTestsSection.validateResultsSectionTemplateId(diagnostics, context);
+    // TODO override the constraint, if desired
+    // -> uncomment the scaffolding
+    // -> specify the condition that violates the constraint
+    // -> verify the diagnostic details, including severity, code, and message
+    // Ensure that you remove @generated or mark it @generated NOT
+    if (false)
+    {
+      if (diagnostics != null)
+      {
+        diagnostics.add
+          (createDiagnostic
+            (Diagnostic.ERROR,
+             DIAGNOSTIC_SOURCE,
+             0,
+             "_UI_GenericConstraint_diagnostic",
+             new Object[] { "validateResultsSectionTemplateId", getObjectLabel(anthraxPhcrRelevantDxTestsSection, context) },
+             new Object[] { anthraxPhcrRelevantDxTestsSection },
+             context));
+      }
+      return false;
+    }
+    return phcrValidator.validatePhcrRelevantDxTestsSection_validateResultsSectionTemplateId(anthraxPhcrRelevantDxTestsSection, diagnostics, context);
   }
 
 	/**
@@ -883,7 +989,28 @@ public class AnthraxValidator extends EObjectValidator {
    * @generated
    */
 	public boolean validateAnthraxResultObservation_validateResultObservationTemplateId(AnthraxResultObservation anthraxResultObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return anthraxResultObservation.validateResultObservationTemplateId(diagnostics, context);
+    // TODO override the constraint, if desired
+    // -> uncomment the scaffolding
+    // -> specify the condition that violates the constraint
+    // -> verify the diagnostic details, including severity, code, and message
+    // Ensure that you remove @generated or mark it @generated NOT
+    if (false)
+    {
+      if (diagnostics != null)
+      {
+        diagnostics.add
+          (createDiagnostic
+            (Diagnostic.ERROR,
+             DIAGNOSTIC_SOURCE,
+             0,
+             "_UI_GenericConstraint_diagnostic",
+             new Object[] { "validateResultObservationTemplateId", getObjectLabel(anthraxResultObservation, context) },
+             new Object[] { anthraxResultObservation },
+             context));
+      }
+      return false;
+    }
+    return phcrValidator.validateResultObservation_validateResultObservationTemplateId(anthraxResultObservation, diagnostics, context);
   }
 
 	/**
@@ -909,7 +1036,6 @@ public class AnthraxValidator extends EObjectValidator {
     if (result || diagnostics != null) result &= ccdValidator.validateResultOrganizer_validateResultOrganizerCode(anthraxResultOrganizer, diagnostics, context);
     if (result || diagnostics != null) result &= ccdValidator.validateResultOrganizer_validateResultOrganizerStatusCode(anthraxResultOrganizer, diagnostics, context);
     if (result || diagnostics != null) result &= ccdValidator.validateResultOrganizer_validateResultOrganizerResultObservation(anthraxResultOrganizer, diagnostics, context);
-    if (result || diagnostics != null) result &= ccdValidator.validateResultOrganizer_validateResultOrganizerSpecimen(anthraxResultOrganizer, diagnostics, context);
     if (result || diagnostics != null) result &= phcrValidator.validateResultOrganizer_validatePHCRResultOrganizerClassCode(anthraxResultOrganizer, diagnostics, context);
     if (result || diagnostics != null) result &= phcrValidator.validateResultOrganizer_validatePHCRResultOrganizerMoodCode(anthraxResultOrganizer, diagnostics, context);
     if (result || diagnostics != null) result &= phcrValidator.validateResultOrganizer_validatePHCRResultOrganizerId(anthraxResultOrganizer, diagnostics, context);
@@ -964,7 +1090,28 @@ public class AnthraxValidator extends EObjectValidator {
    * @generated
    */
 	public boolean validateAnthraxResultOrganizer_validateResultOrganizerTemplateId(AnthraxResultOrganizer anthraxResultOrganizer, DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return anthraxResultOrganizer.validateResultOrganizerTemplateId(diagnostics, context);
+    // TODO override the constraint, if desired
+    // -> uncomment the scaffolding
+    // -> specify the condition that violates the constraint
+    // -> verify the diagnostic details, including severity, code, and message
+    // Ensure that you remove @generated or mark it @generated NOT
+    if (false)
+    {
+      if (diagnostics != null)
+      {
+        diagnostics.add
+          (createDiagnostic
+            (Diagnostic.ERROR,
+             DIAGNOSTIC_SOURCE,
+             0,
+             "_UI_GenericConstraint_diagnostic",
+             new Object[] { "validateResultOrganizerTemplateId", getObjectLabel(anthraxResultOrganizer, context) },
+             new Object[] { anthraxResultOrganizer },
+             context));
+      }
+      return false;
+    }
+    return phcrValidator.validateResultOrganizer_validateResultOrganizerTemplateId(anthraxResultOrganizer, diagnostics, context);
   }
 
 	/**
@@ -983,12 +1130,6 @@ public class AnthraxValidator extends EObjectValidator {
     if (result || diagnostics != null) result &= validate_EveryMapEntryUnique(anthraxPhcrSocialHistorySection, diagnostics, context);
     if (result || diagnostics != null) result &= cdaValidator.validateSection_validateClassCode(anthraxPhcrSocialHistorySection, diagnostics, context);
     if (result || diagnostics != null) result &= cdaValidator.validateSection_validateMoodCode(anthraxPhcrSocialHistorySection, diagnostics, context);
-    if (result || diagnostics != null) result &= ccdValidator.validateSocialHistorySection_validateSocialHistorySectionMaritalStatus(anthraxPhcrSocialHistorySection, diagnostics, context);
-    if (result || diagnostics != null) result &= ccdValidator.validateSocialHistorySection_validateSocialHistorySectionReligiousAffiliation(anthraxPhcrSocialHistorySection, diagnostics, context);
-    if (result || diagnostics != null) result &= ccdValidator.validateSocialHistorySection_validateSocialHistorySectionPatientRace(anthraxPhcrSocialHistorySection, diagnostics, context);
-    if (result || diagnostics != null) result &= ccdValidator.validateSocialHistorySection_validateSocialHistorySectionPatientRaceCodeSystem(anthraxPhcrSocialHistorySection, diagnostics, context);
-    if (result || diagnostics != null) result &= ccdValidator.validateSocialHistorySection_validateSocialHistorySectionPatientEthnicity(anthraxPhcrSocialHistorySection, diagnostics, context);
-    if (result || diagnostics != null) result &= ccdValidator.validateSocialHistorySection_validateSocialHistorySectionPatientEthnicityCodeSystem(anthraxPhcrSocialHistorySection, diagnostics, context);
     if (result || diagnostics != null) result &= validateAnthraxPhcrSocialHistorySection_validateSocialHistorySectionTemplateId(anthraxPhcrSocialHistorySection, diagnostics, context);
     if (result || diagnostics != null) result &= ccdValidator.validateSocialHistorySection_validateSocialHistorySectionCode(anthraxPhcrSocialHistorySection, diagnostics, context);
     if (result || diagnostics != null) result &= ccdValidator.validateSocialHistorySection_validateSocialHistorySectionTitle(anthraxPhcrSocialHistorySection, diagnostics, context);
@@ -1024,7 +1165,28 @@ public class AnthraxValidator extends EObjectValidator {
    * @generated
    */
 	public boolean validateAnthraxPhcrSocialHistorySection_validateSocialHistorySectionTemplateId(AnthraxPhcrSocialHistorySection anthraxPhcrSocialHistorySection, DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return anthraxPhcrSocialHistorySection.validateSocialHistorySectionTemplateId(diagnostics, context);
+    // TODO override the constraint, if desired
+    // -> uncomment the scaffolding
+    // -> specify the condition that violates the constraint
+    // -> verify the diagnostic details, including severity, code, and message
+    // Ensure that you remove @generated or mark it @generated NOT
+    if (false)
+    {
+      if (diagnostics != null)
+      {
+        diagnostics.add
+          (createDiagnostic
+            (Diagnostic.ERROR,
+             DIAGNOSTIC_SOURCE,
+             0,
+             "_UI_GenericConstraint_diagnostic",
+             new Object[] { "validateSocialHistorySectionTemplateId", getObjectLabel(anthraxPhcrSocialHistorySection, context) },
+             new Object[] { anthraxPhcrSocialHistorySection },
+             context));
+      }
+      return false;
+    }
+    return phcrValidator.validatePhcrSocialHistorySection_validateSocialHistorySectionTemplateId(anthraxPhcrSocialHistorySection, diagnostics, context);
   }
 
 	/**
@@ -1142,7 +1304,28 @@ public class AnthraxValidator extends EObjectValidator {
    * @generated
    */
 	public boolean validateAnthraxPhcrTreatmentInformationSection_validatePhcrTreatmentInformationSectionTemplateId(AnthraxPhcrTreatmentInformationSection anthraxPhcrTreatmentInformationSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return anthraxPhcrTreatmentInformationSection.validatePhcrTreatmentInformationSectionTemplateId(diagnostics, context);
+    // TODO override the constraint, if desired
+    // -> uncomment the scaffolding
+    // -> specify the condition that violates the constraint
+    // -> verify the diagnostic details, including severity, code, and message
+    // Ensure that you remove @generated or mark it @generated NOT
+    if (false)
+    {
+      if (diagnostics != null)
+      {
+        diagnostics.add
+          (createDiagnostic
+            (Diagnostic.ERROR,
+             DIAGNOSTIC_SOURCE,
+             0,
+             "_UI_GenericConstraint_diagnostic",
+             new Object[] { "validatePhcrTreatmentInformationSectionTemplateId", getObjectLabel(anthraxPhcrTreatmentInformationSection, context) },
+             new Object[] { anthraxPhcrTreatmentInformationSection },
+             context));
+      }
+      return false;
+    }
+    return phcrValidator.validatePhcrTreatmentInformationSection_validatePhcrTreatmentInformationSectionTemplateId(anthraxPhcrTreatmentInformationSection, diagnostics, context);
   }
 
 	/**
@@ -1201,7 +1384,28 @@ public class AnthraxValidator extends EObjectValidator {
    * @generated
    */
 	public boolean validateAnthraxTherapeuticRegimenAct_validateTherapeuticRegimenActTemplateId(AnthraxTherapeuticRegimenAct anthraxTherapeuticRegimenAct, DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return anthraxTherapeuticRegimenAct.validateTherapeuticRegimenActTemplateId(diagnostics, context);
+    // TODO override the constraint, if desired
+    // -> uncomment the scaffolding
+    // -> specify the condition that violates the constraint
+    // -> verify the diagnostic details, including severity, code, and message
+    // Ensure that you remove @generated or mark it @generated NOT
+    if (false)
+    {
+      if (diagnostics != null)
+      {
+        diagnostics.add
+          (createDiagnostic
+            (Diagnostic.ERROR,
+             DIAGNOSTIC_SOURCE,
+             0,
+             "_UI_GenericConstraint_diagnostic",
+             new Object[] { "validateTherapeuticRegimenActTemplateId", getObjectLabel(anthraxTherapeuticRegimenAct, context) },
+             new Object[] { anthraxTherapeuticRegimenAct },
+             context));
+      }
+      return false;
+    }
+    return phcrValidator.validateTherapeuticRegimenAct_validateTherapeuticRegimenActTemplateId(anthraxTherapeuticRegimenAct, diagnostics, context);
   }
 
 	/**
@@ -1238,7 +1442,28 @@ public class AnthraxValidator extends EObjectValidator {
    * @generated
    */
 	public boolean validateAnthraxTreatmentGivenSubstanceAdministration_validateTreatmentGivenSubstanceAdministrationTemplateId(AnthraxTreatmentGivenSubstanceAdministration anthraxTreatmentGivenSubstanceAdministration, DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return anthraxTreatmentGivenSubstanceAdministration.validateTreatmentGivenSubstanceAdministrationTemplateId(diagnostics, context);
+    // TODO override the constraint, if desired
+    // -> uncomment the scaffolding
+    // -> specify the condition that violates the constraint
+    // -> verify the diagnostic details, including severity, code, and message
+    // Ensure that you remove @generated or mark it @generated NOT
+    if (false)
+    {
+      if (diagnostics != null)
+      {
+        diagnostics.add
+          (createDiagnostic
+            (Diagnostic.ERROR,
+             DIAGNOSTIC_SOURCE,
+             0,
+             "_UI_GenericConstraint_diagnostic",
+             new Object[] { "validateTreatmentGivenSubstanceAdministrationTemplateId", getObjectLabel(anthraxTreatmentGivenSubstanceAdministration, context) },
+             new Object[] { anthraxTreatmentGivenSubstanceAdministration },
+             context));
+      }
+      return false;
+    }
+    return phcrValidator.validateTreatmentGivenSubstanceAdministration_validateTreatmentGivenSubstanceAdministrationTemplateId(anthraxTreatmentGivenSubstanceAdministration, diagnostics, context);
   }
 
 	/**
@@ -1273,7 +1498,28 @@ public class AnthraxValidator extends EObjectValidator {
    * @generated
    */
 	public boolean validateAnthraxTreatmentNotGivenSubstanceAdministration_validateTreatmentNotGivenSubstanceAdministrationTemplateId(AnthraxTreatmentNotGivenSubstanceAdministration anthraxTreatmentNotGivenSubstanceAdministration, DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return anthraxTreatmentNotGivenSubstanceAdministration.validateTreatmentNotGivenSubstanceAdministrationTemplateId(diagnostics, context);
+    // TODO override the constraint, if desired
+    // -> uncomment the scaffolding
+    // -> specify the condition that violates the constraint
+    // -> verify the diagnostic details, including severity, code, and message
+    // Ensure that you remove @generated or mark it @generated NOT
+    if (false)
+    {
+      if (diagnostics != null)
+      {
+        diagnostics.add
+          (createDiagnostic
+            (Diagnostic.ERROR,
+             DIAGNOSTIC_SOURCE,
+             0,
+             "_UI_GenericConstraint_diagnostic",
+             new Object[] { "validateTreatmentNotGivenSubstanceAdministrationTemplateId", getObjectLabel(anthraxTreatmentNotGivenSubstanceAdministration, context) },
+             new Object[] { anthraxTreatmentNotGivenSubstanceAdministration },
+             context));
+      }
+      return false;
+    }
+    return phcrValidator.validateTreatmentNotGivenSubstanceAdministration_validateTreatmentNotGivenSubstanceAdministrationTemplateId(anthraxTreatmentNotGivenSubstanceAdministration, diagnostics, context);
   }
 
 	/**

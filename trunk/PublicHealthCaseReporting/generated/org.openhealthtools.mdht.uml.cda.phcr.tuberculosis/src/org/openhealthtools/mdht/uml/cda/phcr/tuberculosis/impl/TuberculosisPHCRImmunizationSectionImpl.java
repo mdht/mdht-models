@@ -23,7 +23,6 @@ import org.openhealthtools.mdht.uml.cda.phcr.tuberculosis.TuberculosisImmunizati
 import org.openhealthtools.mdht.uml.cda.phcr.tuberculosis.TuberculosisPHCRImmunizationSection;
 import org.openhealthtools.mdht.uml.cda.phcr.tuberculosis.TuberculosisPackage;
 import org.openhealthtools.mdht.uml.cda.phcr.tuberculosis.operations.TuberculosisPHCRImmunizationSectionOperations;
-import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
 
 /**
  * <!-- begin-user-doc -->
@@ -36,70 +35,72 @@ import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
  */
 public class TuberculosisPHCRImmunizationSectionImpl extends ImmunizationsSectionImpl implements TuberculosisPHCRImmunizationSection {
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	protected TuberculosisPHCRImmunizationSectionImpl() {
-    super();
-  }
+		super();
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	@Override
 	protected EClass eStaticClass() {
-    return TuberculosisPackage.Literals.TUBERCULOSIS_PHCR_IMMUNIZATION_SECTION;
-  }
+		return TuberculosisPackage.Literals.TUBERCULOSIS_PHCR_IMMUNIZATION_SECTION;
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   public boolean validateTuberculosisPHCRImmunizationSectionTuberculosisImmunizationActivitySubstanceAdministration(DiagnosticChain diagnostics, Map<Object, Object> context)
   {
-    return TuberculosisPHCRImmunizationSectionOperations.validateTuberculosisPHCRImmunizationSectionTuberculosisImmunizationActivitySubstanceAdministration(this, diagnostics, context);
-  }
+		return TuberculosisPHCRImmunizationSectionOperations.validateTuberculosisPHCRImmunizationSectionTuberculosisImmunizationActivitySubstanceAdministration(this, diagnostics, context);
+	}
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   public EList<TuberculosisImmunizationActivitySubstanceAdministration> getTuberculosisImmunizationActivitySubstanceAdministrations()
   {
-    return TuberculosisPHCRImmunizationSectionOperations.getTuberculosisImmunizationActivitySubstanceAdministrations(this);
-  }
+		return TuberculosisPHCRImmunizationSectionOperations.getTuberculosisImmunizationActivitySubstanceAdministrations(this);
+	}
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   @Override
   public boolean validateImmunizationsSectionTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context)
   {
-    return TuberculosisPHCRImmunizationSectionOperations.validateImmunizationsSectionTemplateId(this, diagnostics, context);
-  }
+		return TuberculosisPHCRImmunizationSectionOperations.validateImmunizationsSectionTemplateId(this, diagnostics, context);
+	}
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
-  public TuberculosisPHCRImmunizationSection init() {
-      return Initializer.Util.init(this);
-  }
+	 * @generated
+	 */
+  @Override
+public TuberculosisPHCRImmunizationSection init() {
+	    return Initializer.Util.init(this);
+	}
 
   /**
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
      * @generated
      */
-    public TuberculosisPHCRImmunizationSection init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+    @Override
+	public TuberculosisPHCRImmunizationSection init(Iterable<? extends Initializer<? extends EObject>> initializers) {
         Initializer.Util.init(this, initializers);
         return this;
     }

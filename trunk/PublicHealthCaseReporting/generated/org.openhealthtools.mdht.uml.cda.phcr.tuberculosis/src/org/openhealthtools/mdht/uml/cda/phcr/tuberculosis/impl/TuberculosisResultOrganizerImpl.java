@@ -28,8 +28,6 @@ import org.openhealthtools.mdht.uml.cda.phcr.tuberculosis.TuberculosisResultOrga
 
 import org.openhealthtools.mdht.uml.cda.phcr.tuberculosis.operations.TuberculosisResultOrganizerOperations;
 
-import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
-
 /**
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Result Organizer</b></em>'.
@@ -41,87 +39,79 @@ import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
  */
 public class TuberculosisResultOrganizerImpl extends ResultOrganizerImpl implements TuberculosisResultOrganizer {
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	protected TuberculosisResultOrganizerImpl() {
-    super();
-  }
+		super();
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	@Override
 	protected EClass eStaticClass() {
-    return TuberculosisPackage.Literals.TUBERCULOSIS_RESULT_ORGANIZER;
-  }
+		return TuberculosisPackage.Literals.TUBERCULOSIS_RESULT_ORGANIZER;
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
-  public boolean validateTuberculosisResultOrganizerCodeP(DiagnosticChain diagnostics, Map<Object, Object> context)
-  {
-    return TuberculosisResultOrganizerOperations.validateTuberculosisResultOrganizerCodeP(this, diagnostics, context);
-  }
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   public boolean validateTuberculosisResultOrganizerCode(DiagnosticChain diagnostics, Map<Object, Object> context)
   {
-    return TuberculosisResultOrganizerOperations.validateTuberculosisResultOrganizerCode(this, diagnostics, context);
-  }
+		return TuberculosisResultOrganizerOperations.validateTuberculosisResultOrganizerCode(this, diagnostics, context);
+	}
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public boolean validateTuberculosisResultOrganizerTuberculosisResultObservation(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return TuberculosisResultOrganizerOperations.validateTuberculosisResultOrganizerTuberculosisResultObservation(this, diagnostics, context);
-  }
+		return TuberculosisResultOrganizerOperations.validateTuberculosisResultOrganizerTuberculosisResultObservation(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public EList<TuberculosisResultObservation> getTuberculosisResultObservations() {
-    return TuberculosisResultOrganizerOperations.getTuberculosisResultObservations(this);
-  }
+		return TuberculosisResultOrganizerOperations.getTuberculosisResultObservations(this);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	@Override
 	public boolean validateResultOrganizerTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return TuberculosisResultOrganizerOperations.validateResultOrganizerTemplateId(this, diagnostics, context);
-  }
+		return TuberculosisResultOrganizerOperations.validateResultOrganizerTemplateId(this, diagnostics, context);
+	}
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
-  public TuberculosisResultOrganizer init() {
-      return Initializer.Util.init(this);
-  }
+	 * @generated
+	 */
+  @Override
+public TuberculosisResultOrganizer init() {
+	    return Initializer.Util.init(this);
+	}
 
   /**
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
      * @generated
      */
-    public TuberculosisResultOrganizer init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+    @Override
+	public TuberculosisResultOrganizer init(Iterable<? extends Initializer<? extends EObject>> initializers) {
         Initializer.Util.init(this, initializers);
         return this;
     }

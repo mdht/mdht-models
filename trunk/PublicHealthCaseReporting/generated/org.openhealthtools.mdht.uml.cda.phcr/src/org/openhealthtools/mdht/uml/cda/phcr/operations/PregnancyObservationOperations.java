@@ -10,7 +10,6 @@
  *******************************************************************************/
 package org.openhealthtools.mdht.uml.cda.phcr.operations;
 
-import java.util.Collection;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.BasicDiagnostic;
@@ -39,13 +38,10 @@ import org.openhealthtools.mdht.uml.cda.phcr.util.PhcrValidator;
  *   <li>{@link org.openhealthtools.mdht.uml.cda.phcr.PregnancyObservation#validatePregnancyObservationTemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Pregnancy Observation Template Id</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.phcr.PregnancyObservation#validatePregnancyObservationClassCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Pregnancy Observation Class Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.phcr.PregnancyObservation#validatePregnancyObservationMoodCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Pregnancy Observation Mood Code</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.phcr.PregnancyObservation#validatePregnancyObservationCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Pregnancy Observation Code P</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.phcr.PregnancyObservation#validatePregnancyObservationCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Pregnancy Observation Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.phcr.PregnancyObservation#validatePregnancyObservationStatusCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Pregnancy Observation Status Code</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.phcr.PregnancyObservation#validatePregnancyObservationStatusCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Pregnancy Observation Status Code P</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.phcr.PregnancyObservation#validatePregnancyObservationEffectiveTime(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Pregnancy Observation Effective Time</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.phcr.PregnancyObservation#validatePregnancyObservationValue(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Pregnancy Observation Value</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.phcr.PregnancyObservation#validatePregnancyObservationValueP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Pregnancy Observation Value P</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.phcr.PregnancyObservation#validatePregnancyObservationEstimatedDateOfDeliveryObservation(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Pregnancy Observation Estimated Date Of Delivery Observation</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.phcr.PregnancyObservation#getEstimatedDateOfDeliveryObservation() <em>Get Estimated Date Of Delivery Observation</em>}</li>
  * </ul>
@@ -67,6 +63,7 @@ public class PregnancyObservationOperations extends ClinicalStatementOperations 
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
+   * (self.effectiveTime.oclIsUndefined() or self.effectiveTime.isNullFlavorUndefined()) implies (not self.effectiveTime.oclIsUndefined())
    * @param pregnancyObservation The receiving '<em><b>Pregnancy Observation</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -74,8 +71,8 @@ public class PregnancyObservationOperations extends ClinicalStatementOperations 
    * @generated
    */
 	public static  boolean validatePregnancyObservationEffectiveTime(PregnancyObservation pregnancyObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
-    if (VALIDATE_PREGNANCY_OBSERVATION_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+    if (VALIDATE_PREGNANCY_OBSERVATION_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null)
+    {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(PhcrPackage.Literals.PREGNANCY_OBSERVATION);
       try
@@ -93,13 +90,12 @@ public class PregnancyObservationOperations extends ClinicalStatementOperations 
       {
         diagnostics.add
           (new BasicDiagnostic
-            (Diagnostic.WARNING,
+            (Diagnostic.ERROR,
              PhcrValidator.DIAGNOSTIC_SOURCE,
              PhcrValidator.PREGNANCY_OBSERVATION__PREGNANCY_OBSERVATION_EFFECTIVE_TIME,
-             PhcrPlugin.INSTANCE.getString("PregnancyObservationEffectiveTime"),
+             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "validatePregnancyObservationEffectiveTime", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(pregnancyObservation, context) }),
              new Object [] { pregnancyObservation }));
       }
-       
       return false;
     }
     return true;
@@ -129,6 +125,7 @@ public class PregnancyObservationOperations extends ClinicalStatementOperations 
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
+   * self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.15.3.8')
    * @param pregnancyObservation The receiving '<em><b>Pregnancy Observation</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -136,8 +133,8 @@ public class PregnancyObservationOperations extends ClinicalStatementOperations 
    * @generated
    */
 	public static  boolean validatePregnancyObservationTemplateId(PregnancyObservation pregnancyObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
-    if (VALIDATE_PREGNANCY_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+    if (VALIDATE_PREGNANCY_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null)
+    {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(PhcrPackage.Literals.PREGNANCY_OBSERVATION);
       try
@@ -158,10 +155,9 @@ public class PregnancyObservationOperations extends ClinicalStatementOperations 
             (Diagnostic.ERROR,
              PhcrValidator.DIAGNOSTIC_SOURCE,
              PhcrValidator.PREGNANCY_OBSERVATION__PREGNANCY_OBSERVATION_TEMPLATE_ID,
-             PhcrPlugin.INSTANCE.getString("PregnancyObservationTemplateId"),
+             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "validatePregnancyObservationTemplateId", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(pregnancyObservation, context) }),
              new Object [] { pregnancyObservation }));
       }
-       
       return false;
     }
     return true;
@@ -191,6 +187,7 @@ public class PregnancyObservationOperations extends ClinicalStatementOperations 
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
+   * self.classCode=vocab::ActClassObservation::OBS
    * @param pregnancyObservation The receiving '<em><b>Pregnancy Observation</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -198,8 +195,8 @@ public class PregnancyObservationOperations extends ClinicalStatementOperations 
    * @generated
    */
 	public static  boolean validatePregnancyObservationClassCode(PregnancyObservation pregnancyObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
-    if (VALIDATE_PREGNANCY_OBSERVATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+    if (VALIDATE_PREGNANCY_OBSERVATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null)
+    {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(PhcrPackage.Literals.PREGNANCY_OBSERVATION);
       try
@@ -220,10 +217,9 @@ public class PregnancyObservationOperations extends ClinicalStatementOperations 
             (Diagnostic.ERROR,
              PhcrValidator.DIAGNOSTIC_SOURCE,
              PhcrValidator.PREGNANCY_OBSERVATION__PREGNANCY_OBSERVATION_CLASS_CODE,
-             PhcrPlugin.INSTANCE.getString("PregnancyObservationClassCode"),
+             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "validatePregnancyObservationClassCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(pregnancyObservation, context) }),
              new Object [] { pregnancyObservation }));
       }
-       
       return false;
     }
     return true;
@@ -233,6 +229,9 @@ public class PregnancyObservationOperations extends ClinicalStatementOperations 
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
+   * (self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and 
+   * let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in 
+   * value.code = 'ASSERTION' and value.codeSystem = '2.16.840.1.113883.5.4')
    * @param pregnancyObservation The receiving '<em><b>Pregnancy Observation</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -240,14 +239,8 @@ public class PregnancyObservationOperations extends ClinicalStatementOperations 
    * @generated
    */
 	public static  boolean validatePregnancyObservationCode(PregnancyObservation pregnancyObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
-    Object passToken = (context == null) ? null : context.get("org.openhealthtools.mdht.uml.cda.phcr.PregnancyObservationCodeP");
-    if ((passToken instanceof Collection<?>) && ((Collection<?>) passToken).contains(pregnancyObservation)) {
-      // I have a free pass to short-circuit
-      return true;
-    }
-  	  
-    if (VALIDATE_PREGNANCY_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+    if (VALIDATE_PREGNANCY_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null)
+    {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(PhcrPackage.Literals.PREGNANCY_OBSERVATION);
       try
@@ -268,10 +261,9 @@ public class PregnancyObservationOperations extends ClinicalStatementOperations 
             (Diagnostic.ERROR,
              PhcrValidator.DIAGNOSTIC_SOURCE,
              PhcrValidator.PREGNANCY_OBSERVATION__PREGNANCY_OBSERVATION_CODE,
-             PhcrPlugin.INSTANCE.getString("PregnancyObservationCode"),
+             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "validatePregnancyObservationCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(pregnancyObservation, context) }),
              new Object [] { pregnancyObservation }));
       }
-       
       return false;
     }
     return true;
@@ -301,6 +293,7 @@ public class PregnancyObservationOperations extends ClinicalStatementOperations 
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
+   * self.moodCode=vocab::x_ActMoodDocumentObservation::EVN
    * @param pregnancyObservation The receiving '<em><b>Pregnancy Observation</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -308,8 +301,8 @@ public class PregnancyObservationOperations extends ClinicalStatementOperations 
    * @generated
    */
 	public static  boolean validatePregnancyObservationMoodCode(PregnancyObservation pregnancyObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
-    if (VALIDATE_PREGNANCY_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+    if (VALIDATE_PREGNANCY_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null)
+    {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(PhcrPackage.Literals.PREGNANCY_OBSERVATION);
       try
@@ -330,10 +323,9 @@ public class PregnancyObservationOperations extends ClinicalStatementOperations 
             (Diagnostic.ERROR,
              PhcrValidator.DIAGNOSTIC_SOURCE,
              PhcrValidator.PREGNANCY_OBSERVATION__PREGNANCY_OBSERVATION_MOOD_CODE,
-             PhcrPlugin.INSTANCE.getString("PregnancyObservationMoodCode"),
+             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "validatePregnancyObservationMoodCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(pregnancyObservation, context) }),
              new Object [] { pregnancyObservation }));
       }
-       
       return false;
     }
     return true;
@@ -386,6 +378,7 @@ public class PregnancyObservationOperations extends ClinicalStatementOperations 
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
+   * (self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined())
    * @param pregnancyObservation The receiving '<em><b>Pregnancy Observation</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -394,8 +387,8 @@ public class PregnancyObservationOperations extends ClinicalStatementOperations 
    */
 	
 	public static  boolean validatePregnancyObservationCodeP(PregnancyObservation pregnancyObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
-    if (VALIDATE_PREGNANCY_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+    if (VALIDATE_PREGNANCY_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null)
+    {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(PhcrPackage.Literals.PREGNANCY_OBSERVATION);
       try
@@ -416,22 +409,9 @@ public class PregnancyObservationOperations extends ClinicalStatementOperations 
             (Diagnostic.ERROR,
              PhcrValidator.DIAGNOSTIC_SOURCE,
              PhcrValidator.PREGNANCY_OBSERVATION__PREGNANCY_OBSERVATION_CODE_P,
-             PhcrPlugin.INSTANCE.getString("PregnancyObservationCodeP"),
+             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "validatePregnancyObservationCodeP", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(pregnancyObservation, context) }),
              new Object [] { pregnancyObservation }));
       }
-      
-      if (context != null) {
-        // generate a pass token for my dependent constraints to short-circuit or filter results
-        @SuppressWarnings("unchecked")
-        Collection<Object> passToken = (Collection<Object>) context.get("org.openhealthtools.mdht.uml.cda.phcr.PregnancyObservationCodeP");
-        if (passToken == null) {
-          // anticipate a reasonably healthy model
-          passToken = new java.util.ArrayList<Object>(3);
-          context.put("org.openhealthtools.mdht.uml.cda.phcr.PregnancyObservationCodeP", passToken);
-        }
-        passToken.add(pregnancyObservation);
-      }
-       
       return false;
     }
     return true;
@@ -463,6 +443,9 @@ public class PregnancyObservationOperations extends ClinicalStatementOperations 
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
+   * (self.statusCode.oclIsUndefined() or self.statusCode.isNullFlavorUndefined()) implies (not self.statusCode.oclIsUndefined() and self.statusCode.oclIsKindOf(datatypes::CS) and 
+   * let value : datatypes::CS = self.statusCode.oclAsType(datatypes::CS) in 
+   * value.code = 'completed')
    * @param pregnancyObservation The receiving '<em><b>Pregnancy Observation</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -470,8 +453,8 @@ public class PregnancyObservationOperations extends ClinicalStatementOperations 
    * @generated
    */
 	public static  boolean validatePregnancyObservationStatusCode(PregnancyObservation pregnancyObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
-    if (VALIDATE_PREGNANCY_OBSERVATION_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+    if (VALIDATE_PREGNANCY_OBSERVATION_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null)
+    {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(PhcrPackage.Literals.PREGNANCY_OBSERVATION);
       try
@@ -492,10 +475,9 @@ public class PregnancyObservationOperations extends ClinicalStatementOperations 
             (Diagnostic.ERROR,
              PhcrValidator.DIAGNOSTIC_SOURCE,
              PhcrValidator.PREGNANCY_OBSERVATION__PREGNANCY_OBSERVATION_STATUS_CODE,
-             PhcrPlugin.INSTANCE.getString("PregnancyObservationStatusCode"),
+             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "validatePregnancyObservationStatusCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(pregnancyObservation, context) }),
              new Object [] { pregnancyObservation }));
       }
-       
       return false;
     }
     return true;
@@ -546,6 +528,7 @@ public class PregnancyObservationOperations extends ClinicalStatementOperations 
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
+   * (self.statusCode.oclIsUndefined() or self.statusCode.isNullFlavorUndefined()) implies (not self.statusCode.oclIsUndefined())
    * @param pregnancyObservation The receiving '<em><b>Pregnancy Observation</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -554,8 +537,8 @@ public class PregnancyObservationOperations extends ClinicalStatementOperations 
    */
 	
 	public static  boolean validatePregnancyObservationStatusCodeP(PregnancyObservation pregnancyObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
-    if (VALIDATE_PREGNANCY_OBSERVATION_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+    if (VALIDATE_PREGNANCY_OBSERVATION_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null)
+    {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(PhcrPackage.Literals.PREGNANCY_OBSERVATION);
       try
@@ -576,10 +559,9 @@ public class PregnancyObservationOperations extends ClinicalStatementOperations 
             (Diagnostic.ERROR,
              PhcrValidator.DIAGNOSTIC_SOURCE,
              PhcrValidator.PREGNANCY_OBSERVATION__PREGNANCY_OBSERVATION_STATUS_CODE_P,
-             PhcrPlugin.INSTANCE.getString("PregnancyObservationStatusCodeP"),
+             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "validatePregnancyObservationStatusCodeP", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(pregnancyObservation, context) }),
              new Object [] { pregnancyObservation }));
       }
-       
       return false;
     }
     return true;
@@ -611,6 +593,9 @@ public class PregnancyObservationOperations extends ClinicalStatementOperations 
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
+   * (self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (self.value->size() = 1 and self.value->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and 
+   * let value : datatypes::CD = element.oclAsType(datatypes::CD) in 
+   * value.code = '77386006' and value.codeSystem = '2.16.840.1.113883.6.96'))
    * @param pregnancyObservation The receiving '<em><b>Pregnancy Observation</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -618,8 +603,8 @@ public class PregnancyObservationOperations extends ClinicalStatementOperations 
    * @generated
    */
 	public static  boolean validatePregnancyObservationValue(PregnancyObservation pregnancyObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
-    if (VALIDATE_PREGNANCY_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+    if (VALIDATE_PREGNANCY_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null)
+    {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(PhcrPackage.Literals.PREGNANCY_OBSERVATION);
       try
@@ -640,10 +625,9 @@ public class PregnancyObservationOperations extends ClinicalStatementOperations 
             (Diagnostic.ERROR,
              PhcrValidator.DIAGNOSTIC_SOURCE,
              PhcrValidator.PREGNANCY_OBSERVATION__PREGNANCY_OBSERVATION_VALUE,
-             PhcrPlugin.INSTANCE.getString("PregnancyObservationValue"),
+             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "validatePregnancyObservationValue", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(pregnancyObservation, context) }),
              new Object [] { pregnancyObservation }));
       }
-       
       return false;
     }
     return true;
@@ -674,6 +658,7 @@ public class PregnancyObservationOperations extends ClinicalStatementOperations 
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
+   * (self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (self.value->size() = 1 and self.value->forAll(element | element.oclIsTypeOf(datatypes::CD)))
    * @param pregnancyObservation The receiving '<em><b>Pregnancy Observation</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -682,8 +667,8 @@ public class PregnancyObservationOperations extends ClinicalStatementOperations 
    */
 	
 	public static  boolean validatePregnancyObservationValueP(PregnancyObservation pregnancyObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
-    if (VALIDATE_PREGNANCY_OBSERVATION_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+    if (VALIDATE_PREGNANCY_OBSERVATION_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null)
+    {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(PhcrPackage.Literals.PREGNANCY_OBSERVATION);
       try
@@ -704,10 +689,9 @@ public class PregnancyObservationOperations extends ClinicalStatementOperations 
             (Diagnostic.ERROR,
              PhcrValidator.DIAGNOSTIC_SOURCE,
              PhcrValidator.PREGNANCY_OBSERVATION__PREGNANCY_OBSERVATION_VALUE_P,
-             PhcrPlugin.INSTANCE.getString("PregnancyObservationValueP"),
+             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "validatePregnancyObservationValueP", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(pregnancyObservation, context) }),
              new Object [] { pregnancyObservation }));
       }
-       
       return false;
     }
     return true;
@@ -737,6 +721,7 @@ public class PregnancyObservationOperations extends ClinicalStatementOperations 
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
+   * self.entryRelationship->one(entryRelationship : cda::EntryRelationship | not entryRelationship.observation.oclIsUndefined() and entryRelationship.observation.oclIsKindOf(phcr::EstimatedDateOfDeliveryObservation) and entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::REFR)
    * @param pregnancyObservation The receiving '<em><b>Pregnancy Observation</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -744,8 +729,8 @@ public class PregnancyObservationOperations extends ClinicalStatementOperations 
    * @generated
    */
 	public static  boolean validatePregnancyObservationEstimatedDateOfDeliveryObservation(PregnancyObservation pregnancyObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
-    if (VALIDATE_PREGNANCY_OBSERVATION_ESTIMATED_DATE_OF_DELIVERY_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+    if (VALIDATE_PREGNANCY_OBSERVATION_ESTIMATED_DATE_OF_DELIVERY_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null)
+    {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(PhcrPackage.Literals.PREGNANCY_OBSERVATION);
       try
@@ -763,13 +748,12 @@ public class PregnancyObservationOperations extends ClinicalStatementOperations 
       {
         diagnostics.add
           (new BasicDiagnostic
-            (Diagnostic.INFO,
+            (Diagnostic.ERROR,
              PhcrValidator.DIAGNOSTIC_SOURCE,
              PhcrValidator.PREGNANCY_OBSERVATION__PREGNANCY_OBSERVATION_ESTIMATED_DATE_OF_DELIVERY_OBSERVATION,
-             PhcrPlugin.INSTANCE.getString("PregnancyObservationEstimatedDateOfDeliveryObservation"),
+             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "validatePregnancyObservationEstimatedDateOfDeliveryObservation", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(pregnancyObservation, context) }),
              new Object [] { pregnancyObservation }));
       }
-       
       return false;
     }
     return true;
@@ -798,13 +782,17 @@ public class PregnancyObservationOperations extends ClinicalStatementOperations 
 	/**
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
+   * <!-- begin-model-doc -->
+   * self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(phcr::EstimatedDateOfDeliveryObservation))->asSequence()->any(true).oclAsType(phcr::EstimatedDateOfDeliveryObservation)
+   * @param pregnancyObservation The receiving '<em><b>Pregnancy Observation</b></em>' model object.
+   * <!-- end-model-doc -->
    * @generated
    */
 	public static  EstimatedDateOfDeliveryObservation getEstimatedDateOfDeliveryObservation(PregnancyObservation pregnancyObservation) {
     if (GET_ESTIMATED_DATE_OF_DELIVERY_OBSERVATION__EOCL_QRY == null)
     {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
-      helper.setOperationContext(PhcrPackage.Literals.PREGNANCY_OBSERVATION, PhcrPackage.Literals.PREGNANCY_OBSERVATION.getEAllOperations().get(62));
+      helper.setOperationContext(PhcrPackage.Literals.PREGNANCY_OBSERVATION, PhcrPackage.Literals.PREGNANCY_OBSERVATION.getEAllOperations().get(60));
       try
       {
         GET_ESTIMATED_DATE_OF_DELIVERY_OBSERVATION__EOCL_QRY = helper.createQuery(GET_ESTIMATED_DATE_OF_DELIVERY_OBSERVATION__EOCL_EXP);

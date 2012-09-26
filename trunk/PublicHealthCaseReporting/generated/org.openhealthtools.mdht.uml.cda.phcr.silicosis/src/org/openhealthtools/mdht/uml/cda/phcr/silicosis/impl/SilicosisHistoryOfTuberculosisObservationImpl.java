@@ -26,8 +26,6 @@ import org.openhealthtools.mdht.uml.cda.phcr.silicosis.SilicosisPackage;
 
 import org.openhealthtools.mdht.uml.cda.phcr.silicosis.operations.SilicosisHistoryOfTuberculosisObservationOperations;
 
-import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
-
 /**
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>History Of Tuberculosis Observation</b></em>'.
@@ -100,23 +98,4 @@ public class SilicosisHistoryOfTuberculosisObservationImpl extends ProblemObserv
   {
     return SilicosisHistoryOfTuberculosisObservationOperations.validateProblemObservationTemplateId(this, diagnostics, context);
   }
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public SilicosisHistoryOfTuberculosisObservation init() {
-      return Initializer.Util.init(this);
-  }
-
-  /**
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    public SilicosisHistoryOfTuberculosisObservation init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-        Initializer.Util.init(this, initializers);
-        return this;
-    }
 } //SilicosisHistoryOfTuberculosisObservationImpl

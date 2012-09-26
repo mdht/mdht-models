@@ -21,7 +21,6 @@ import org.openhealthtools.mdht.uml.cda.phcr.impl.SignsAndSymptomsObservationImp
 import org.openhealthtools.mdht.uml.cda.phcr.wnv.WnvPackage;
 import org.openhealthtools.mdht.uml.cda.phcr.wnv.WnvSignsAndSymptomsObservation;
 import org.openhealthtools.mdht.uml.cda.phcr.wnv.operations.WnvSignsAndSymptomsObservationOperations;
-import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
 
 /**
  * <!-- begin-user-doc -->
@@ -74,23 +73,4 @@ public class WnvSignsAndSymptomsObservationImpl extends SignsAndSymptomsObservat
 	public boolean validateSignsAndSymptomsObservationTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
     return WnvSignsAndSymptomsObservationOperations.validateSignsAndSymptomsObservationTemplateId(this, diagnostics, context);
   }
-
-		/**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public WnvSignsAndSymptomsObservation init() {
-      return Initializer.Util.init(this);
-  }
-
-    /**
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    public WnvSignsAndSymptomsObservation init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-        Initializer.Util.init(this, initializers);
-        return this;
-    }
 } //WnvSignsAndSymptomsObservationImpl

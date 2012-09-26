@@ -29,8 +29,6 @@ import org.openhealthtools.mdht.uml.cda.phcr.tularemia.TularemiaTreatmentNotGive
 
 import org.openhealthtools.mdht.uml.cda.phcr.tularemia.operations.TularemiaTherapeuticRegimenActOperations;
 
-import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
-
 /**
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Therapeutic Regimen Act</b></em>'.
@@ -42,85 +40,87 @@ import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
  */
 public class TularemiaTherapeuticRegimenActImpl extends TherapeuticRegimenActImpl implements TularemiaTherapeuticRegimenAct {
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	protected TularemiaTherapeuticRegimenActImpl() {
-    super();
-  }
+		super();
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	@Override
 	protected EClass eStaticClass() {
-    return TularemiaPackage.Literals.TULAREMIA_THERAPEUTIC_REGIMEN_ACT;
-  }
+		return TularemiaPackage.Literals.TULAREMIA_THERAPEUTIC_REGIMEN_ACT;
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public boolean validateTularemiaTherapeuticRegimenActTularemiaTreatmentGivenSubstanceAdministration(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return TularemiaTherapeuticRegimenActOperations.validateTularemiaTherapeuticRegimenActTularemiaTreatmentGivenSubstanceAdministration(this, diagnostics, context);
-  }
+		return TularemiaTherapeuticRegimenActOperations.validateTularemiaTherapeuticRegimenActTularemiaTreatmentGivenSubstanceAdministration(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public boolean validateTularemiaTherapeuticRegimenActTularemiaTreatmentNotGivenSubstanceAdministration(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return TularemiaTherapeuticRegimenActOperations.validateTularemiaTherapeuticRegimenActTularemiaTreatmentNotGivenSubstanceAdministration(this, diagnostics, context);
-  }
+		return TularemiaTherapeuticRegimenActOperations.validateTularemiaTherapeuticRegimenActTularemiaTreatmentNotGivenSubstanceAdministration(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public EList<TularemiaTreatmentGivenSubstanceAdministration> getTularemiaTreatmentGivenSubstanceAdministrations() {
-    return TularemiaTherapeuticRegimenActOperations.getTularemiaTreatmentGivenSubstanceAdministrations(this);
-  }
+		return TularemiaTherapeuticRegimenActOperations.getTularemiaTreatmentGivenSubstanceAdministrations(this);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public EList<TularemiaTreatmentNotGivenSubstanceAdministration> getTularemiaTreatmentNotGivenSubstanceAdministrations() {
-    return TularemiaTherapeuticRegimenActOperations.getTularemiaTreatmentNotGivenSubstanceAdministrations(this);
-  }
+		return TularemiaTherapeuticRegimenActOperations.getTularemiaTreatmentNotGivenSubstanceAdministrations(this);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	@Override
 	public boolean validateTherapeuticRegimenActTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return TularemiaTherapeuticRegimenActOperations.validateTherapeuticRegimenActTemplateId(this, diagnostics, context);
-  }
+		return TularemiaTherapeuticRegimenActOperations.validateTherapeuticRegimenActTemplateId(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
+	@Override
 	public TularemiaTherapeuticRegimenAct init() {
-      return Initializer.Util.init(this);
-  }
+	    return Initializer.Util.init(this);
+	}
 
   /**
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
      * @generated
      */
-    public TularemiaTherapeuticRegimenAct init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+    @Override
+	public TularemiaTherapeuticRegimenAct init(Iterable<? extends Initializer<? extends EObject>> initializers) {
         Initializer.Util.init(this, initializers);
         return this;
     }

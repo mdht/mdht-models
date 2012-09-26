@@ -26,17 +26,4 @@ import org.openhealthtools.mdht.uml.cda.phcr.TreatmentNotGivenSubstanceAdministr
  * @generated
  */
 public interface ChlamydiatrachomatisTreatmentNotGivenSubstanceAdministration extends TreatmentNotGivenSubstanceAdministration {
-	/**
-   * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-   * @generated
-   */
-	public ChlamydiatrachomatisTreatmentNotGivenSubstanceAdministration init();
-
-  /**
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    public ChlamydiatrachomatisTreatmentNotGivenSubstanceAdministration init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // ChlamydiatrachomatisTreatmentNotGivenSubstanceAdministration

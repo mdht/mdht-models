@@ -87,6 +87,7 @@ public class ToxicShockSyndromeCaseReportOperations extends PublicHealthCaseRepo
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
+   * (self.title.oclIsUndefined() or self.title.isNullFlavorUndefined()) implies (not self.title.oclIsUndefined() and self.title.getText() = 'Public Health Case Report - Toxic Shock Syndrome')
    * @param toxicShockSyndromeCaseReport The receiving '<em><b>Toxic Shock Syndrome Case Report</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -95,8 +96,8 @@ public class ToxicShockSyndromeCaseReportOperations extends PublicHealthCaseRepo
    */
 	
 	public static  boolean validateToxicShockSyndromeCaseReportTitle(ToxicShockSyndromeCaseReport toxicShockSyndromeCaseReport, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
-    if (VALIDATE_TOXIC_SHOCK_SYNDROME_CASE_REPORT_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+    if (VALIDATE_TOXIC_SHOCK_SYNDROME_CASE_REPORT_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null)
+    {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(tssPackage.Literals.TOXIC_SHOCK_SYNDROME_CASE_REPORT);
       try
@@ -117,10 +118,9 @@ public class ToxicShockSyndromeCaseReportOperations extends PublicHealthCaseRepo
             (Diagnostic.ERROR,
              tssValidator.DIAGNOSTIC_SOURCE,
              tssValidator.TOXIC_SHOCK_SYNDROME_CASE_REPORT__TOXIC_SHOCK_SYNDROME_CASE_REPORT_TITLE,
-             TssPlugin.INSTANCE.getString("ToxicShockSyndromeCaseReportTitle"),
+             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "validateToxicShockSyndromeCaseReportTitle", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(toxicShockSyndromeCaseReport, context) }),
              new Object [] { toxicShockSyndromeCaseReport }));
       }
-       
       return false;
     }
     return true;
@@ -151,6 +151,7 @@ public class ToxicShockSyndromeCaseReportOperations extends PublicHealthCaseRepo
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
+   * self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(tss::TssPhcrClinicalInformationSection))
    * @param toxicShockSyndromeCaseReport The receiving '<em><b>Toxic Shock Syndrome Case Report</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -159,8 +160,8 @@ public class ToxicShockSyndromeCaseReportOperations extends PublicHealthCaseRepo
    */
 	
 	public static  boolean validateToxicShockSyndromeCaseReportTssPhcrClinicalInformationSection(ToxicShockSyndromeCaseReport toxicShockSyndromeCaseReport, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
-    if (VALIDATE_TOXIC_SHOCK_SYNDROME_CASE_REPORT_TSS_PHCR_CLINICAL_INFORMATION_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+    if (VALIDATE_TOXIC_SHOCK_SYNDROME_CASE_REPORT_TSS_PHCR_CLINICAL_INFORMATION_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null)
+    {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(tssPackage.Literals.TOXIC_SHOCK_SYNDROME_CASE_REPORT);
       try
@@ -181,10 +182,9 @@ public class ToxicShockSyndromeCaseReportOperations extends PublicHealthCaseRepo
             (Diagnostic.ERROR,
              tssValidator.DIAGNOSTIC_SOURCE,
              tssValidator.TOXIC_SHOCK_SYNDROME_CASE_REPORT__TOXIC_SHOCK_SYNDROME_CASE_REPORT_TSS_PHCR_CLINICAL_INFORMATION_SECTION,
-             TssPlugin.INSTANCE.getString("ToxicShockSyndromeCaseReportTssPhcrClinicalInformationSection"),
+             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "validateToxicShockSyndromeCaseReportTssPhcrClinicalInformationSection", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(toxicShockSyndromeCaseReport, context) }),
              new Object [] { toxicShockSyndromeCaseReport }));
       }
-       
       return false;
     }
     return true;
@@ -215,6 +215,7 @@ public class ToxicShockSyndromeCaseReportOperations extends PublicHealthCaseRepo
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
+   * self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(tss::TssPhcrRelevantDxTestsSection))
    * @param toxicShockSyndromeCaseReport The receiving '<em><b>Toxic Shock Syndrome Case Report</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -223,8 +224,8 @@ public class ToxicShockSyndromeCaseReportOperations extends PublicHealthCaseRepo
    */
 	
 	public static  boolean validateToxicShockSyndromeCaseReportTssPhcrRelevantDxTestsSection(ToxicShockSyndromeCaseReport toxicShockSyndromeCaseReport, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
-    if (VALIDATE_TOXIC_SHOCK_SYNDROME_CASE_REPORT_TSS_PHCR_RELEVANT_DX_TESTS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+    if (VALIDATE_TOXIC_SHOCK_SYNDROME_CASE_REPORT_TSS_PHCR_RELEVANT_DX_TESTS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null)
+    {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(tssPackage.Literals.TOXIC_SHOCK_SYNDROME_CASE_REPORT);
       try
@@ -242,13 +243,12 @@ public class ToxicShockSyndromeCaseReportOperations extends PublicHealthCaseRepo
       {
         diagnostics.add
           (new BasicDiagnostic
-            (Diagnostic.WARNING,
+            (Diagnostic.ERROR,
              tssValidator.DIAGNOSTIC_SOURCE,
              tssValidator.TOXIC_SHOCK_SYNDROME_CASE_REPORT__TOXIC_SHOCK_SYNDROME_CASE_REPORT_TSS_PHCR_RELEVANT_DX_TESTS_SECTION,
-             TssPlugin.INSTANCE.getString("ToxicShockSyndromeCaseReportTssPhcrRelevantDxTestsSection"),
+             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "validateToxicShockSyndromeCaseReportTssPhcrRelevantDxTestsSection", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(toxicShockSyndromeCaseReport, context) }),
              new Object [] { toxicShockSyndromeCaseReport }));
       }
-       
       return false;
     }
     return true;
@@ -277,6 +277,10 @@ public class ToxicShockSyndromeCaseReportOperations extends PublicHealthCaseRepo
 	/**
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
+   * <!-- begin-model-doc -->
+   * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(tss::TssPhcrClinicalInformationSection))->asSequence()->any(true).oclAsType(tss::TssPhcrClinicalInformationSection)
+   * @param toxicShockSyndromeCaseReport The receiving '<em><b>Toxic Shock Syndrome Case Report</b></em>' model object.
+   * <!-- end-model-doc -->
    * @generated
    */
 	
@@ -321,6 +325,10 @@ public class ToxicShockSyndromeCaseReportOperations extends PublicHealthCaseRepo
 	/**
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
+   * <!-- begin-model-doc -->
+   * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(tss::TssPhcrRelevantDxTestsSection))->asSequence()->any(true).oclAsType(tss::TssPhcrRelevantDxTestsSection)
+   * @param toxicShockSyndromeCaseReport The receiving '<em><b>Toxic Shock Syndrome Case Report</b></em>' model object.
+   * <!-- end-model-doc -->
    * @generated
    */
 	
@@ -366,6 +374,7 @@ public class ToxicShockSyndromeCaseReportOperations extends PublicHealthCaseRepo
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
+   * self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.15.1.6')
    * @param toxicShockSyndromeCaseReport The receiving '<em><b>Toxic Shock Syndrome Case Report</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -373,8 +382,8 @@ public class ToxicShockSyndromeCaseReportOperations extends PublicHealthCaseRepo
    * @generated
    */
 	public static  boolean validatePublicHealthCaseReportTemplateId(ToxicShockSyndromeCaseReport toxicShockSyndromeCaseReport, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
-    if (VALIDATE_PUBLIC_HEALTH_CASE_REPORT_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+    if (VALIDATE_PUBLIC_HEALTH_CASE_REPORT_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null)
+    {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(tssPackage.Literals.TOXIC_SHOCK_SYNDROME_CASE_REPORT);
       try
@@ -395,10 +404,9 @@ public class ToxicShockSyndromeCaseReportOperations extends PublicHealthCaseRepo
             (Diagnostic.ERROR,
              tssValidator.DIAGNOSTIC_SOURCE,
              tssValidator.TOXIC_SHOCK_SYNDROME_CASE_REPORT__PUBLIC_HEALTH_CASE_REPORT_TEMPLATE_ID,
-             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "PublicHealthCaseReportTemplateId", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(toxicShockSyndromeCaseReport, context) }),
+             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "validatePublicHealthCaseReportTemplateId", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(toxicShockSyndromeCaseReport, context) }),
              new Object [] { toxicShockSyndromeCaseReport }));
       }
-       
       return false;
     }
     return true;

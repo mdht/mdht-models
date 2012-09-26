@@ -21,7 +21,6 @@ import org.openhealthtools.mdht.uml.cda.impl.ObservationImpl;
 import org.openhealthtools.mdht.uml.cda.phcr.tularemia.LocationOfLesionObservation;
 import org.openhealthtools.mdht.uml.cda.phcr.tularemia.TularemiaPackage;
 import org.openhealthtools.mdht.uml.cda.phcr.tularemia.operations.LocationOfLesionObservationOperations;
-import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
 
 /**
  * <!-- begin-user-doc -->
@@ -35,131 +34,131 @@ import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
 public class LocationOfLesionObservationImpl extends ObservationImpl implements LocationOfLesionObservation
 {
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   protected LocationOfLesionObservationImpl()
   {
-    super();
-  }
+		super();
+	}
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   @Override
   protected EClass eStaticClass()
   {
-    return TularemiaPackage.Literals.LOCATION_OF_LESION_OBSERVATION;
-  }
+		return TularemiaPackage.Literals.LOCATION_OF_LESION_OBSERVATION;
+	}
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   public boolean validateLocationOfLesionObservationTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context)
   {
-    return LocationOfLesionObservationOperations.validateLocationOfLesionObservationTemplateId(this, diagnostics, context);
-  }
+		return LocationOfLesionObservationOperations.validateLocationOfLesionObservationTemplateId(this, diagnostics, context);
+	}
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   public boolean validateLocationOfLesionObservationClassCode(DiagnosticChain diagnostics, Map<Object, Object> context)
   {
-    return LocationOfLesionObservationOperations.validateLocationOfLesionObservationClassCode(this, diagnostics, context);
-  }
+		return LocationOfLesionObservationOperations.validateLocationOfLesionObservationClassCode(this, diagnostics, context);
+	}
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   public boolean validateLocationOfLesionObservationMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context)
   {
-    return LocationOfLesionObservationOperations.validateLocationOfLesionObservationMoodCode(this, diagnostics, context);
-  }
+		return LocationOfLesionObservationOperations.validateLocationOfLesionObservationMoodCode(this, diagnostics, context);
+	}
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public boolean validateLocationOfLesionObservationCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return LocationOfLesionObservationOperations.validateLocationOfLesionObservationCodeP(this, diagnostics, context);
-  }
+		return LocationOfLesionObservationOperations.validateLocationOfLesionObservationCodeP(this, diagnostics, context);
+	}
 
 		/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   public boolean validateLocationOfLesionObservationCode(DiagnosticChain diagnostics, Map<Object, Object> context)
   {
-    return LocationOfLesionObservationOperations.validateLocationOfLesionObservationCode(this, diagnostics, context);
-  }
+		return LocationOfLesionObservationOperations.validateLocationOfLesionObservationCode(this, diagnostics, context);
+	}
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   public boolean validateLocationOfLesionObservationStatusCode(DiagnosticChain diagnostics, Map<Object, Object> context)
   {
-    return LocationOfLesionObservationOperations.validateLocationOfLesionObservationStatusCode(this, diagnostics, context);
-  }
+		return LocationOfLesionObservationOperations.validateLocationOfLesionObservationStatusCode(this, diagnostics, context);
+	}
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public boolean validateLocationOfLesionObservationStatusCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return LocationOfLesionObservationOperations.validateLocationOfLesionObservationStatusCodeP(this, diagnostics, context);
-  }
+		return LocationOfLesionObservationOperations.validateLocationOfLesionObservationStatusCodeP(this, diagnostics, context);
+	}
 
 		/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   public boolean validateLocationOfLesionObservationEffectiveTime(DiagnosticChain diagnostics, Map<Object, Object> context)
   {
-    return LocationOfLesionObservationOperations.validateLocationOfLesionObservationEffectiveTime(this, diagnostics, context);
-  }
+		return LocationOfLesionObservationOperations.validateLocationOfLesionObservationEffectiveTime(this, diagnostics, context);
+	}
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   public boolean validateLocationOfLesionObservationValue(DiagnosticChain diagnostics, Map<Object, Object> context)
   {
-    return LocationOfLesionObservationOperations.validateLocationOfLesionObservationValue(this, diagnostics, context);
-  }
+		return LocationOfLesionObservationOperations.validateLocationOfLesionObservationValue(this, diagnostics, context);
+	}
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public boolean validateLocationOfLesionObservationTargetSiteCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return LocationOfLesionObservationOperations.validateLocationOfLesionObservationTargetSiteCode(this, diagnostics, context);
-  }
+		return LocationOfLesionObservationOperations.validateLocationOfLesionObservationTargetSiteCode(this, diagnostics, context);
+	}
 
 		/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   public LocationOfLesionObservation init() {
-      return Initializer.Util.init(this);
-  }
+	    return Initializer.Util.init(this);
+	}
 
     /**
      * <!-- begin-user-doc -->

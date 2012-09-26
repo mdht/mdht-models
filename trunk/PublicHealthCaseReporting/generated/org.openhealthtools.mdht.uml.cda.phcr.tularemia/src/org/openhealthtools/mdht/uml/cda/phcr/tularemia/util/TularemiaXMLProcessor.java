@@ -29,31 +29,30 @@ import org.openhealthtools.mdht.uml.cda.phcr.tularemia.TularemiaPackage;
 public class TularemiaXMLProcessor extends XMLProcessor {
 
 	/**
-   * Public constructor to instantiate the helper.
-   * <!-- begin-user-doc -->
+	 * Public constructor to instantiate the helper.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public TularemiaXMLProcessor() {
-    super((EPackage.Registry.INSTANCE));
-    TularemiaPackage.eINSTANCE.eClass();
-  }
+		super((EPackage.Registry.INSTANCE));
+		TularemiaPackage.eINSTANCE.eClass();
+	}
 	
 	/**
-   * Register for "*" and "xml" file extensions the TularemiaResourceFactoryImpl factory.
-   * <!-- begin-user-doc -->
+	 * Register for "*" and "xml" file extensions the TularemiaResourceFactoryImpl factory.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	@Override
 	protected Map<String, Resource.Factory> getRegistrations() {
-    if (registrations == null)
-    {
-      super.getRegistrations();
-      registrations.put(XML_EXTENSION, new TularemiaResourceFactoryImpl());
-      registrations.put(STAR_EXTENSION, new TularemiaResourceFactoryImpl());
-    }
-    return registrations;
-  }
+		if (registrations == null) {
+			super.getRegistrations();
+			registrations.put(XML_EXTENSION, new TularemiaResourceFactoryImpl());
+			registrations.put(STAR_EXTENSION, new TularemiaResourceFactoryImpl());
+		}
+		return registrations;
+	}
 
 } //TularemiaXMLProcessor

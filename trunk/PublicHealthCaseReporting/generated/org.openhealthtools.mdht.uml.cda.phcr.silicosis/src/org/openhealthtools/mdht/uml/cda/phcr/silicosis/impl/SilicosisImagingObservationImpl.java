@@ -26,8 +26,6 @@ import org.openhealthtools.mdht.uml.cda.phcr.silicosis.SilicosisPackage;
 
 import org.openhealthtools.mdht.uml.cda.phcr.silicosis.operations.SilicosisImagingObservationOperations;
 
-import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
-
 /**
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Imaging Observation</b></em>'.
@@ -79,23 +77,4 @@ public class SilicosisImagingObservationImpl extends ImagingObservationImpl impl
   {
     return SilicosisImagingObservationOperations.validateProblemObservationTemplateId(this, diagnostics, context);
   }
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public SilicosisImagingObservation init() {
-      return Initializer.Util.init(this);
-  }
-
-  /**
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    public SilicosisImagingObservation init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-        Initializer.Util.init(this, initializers);
-        return this;
-    }
 } //SilicosisImagingObservationImpl

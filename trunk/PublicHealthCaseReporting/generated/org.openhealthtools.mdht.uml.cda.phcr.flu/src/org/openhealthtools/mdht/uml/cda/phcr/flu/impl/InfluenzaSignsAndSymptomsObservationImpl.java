@@ -10,20 +10,21 @@
  *******************************************************************************/
 package org.openhealthtools.mdht.uml.cda.phcr.flu.impl;
 
+import java.lang.Iterable;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
 
 import org.eclipse.emf.ecore.EClass;
 
+import org.eclipse.emf.ecore.EObject;
+import org.openhealthtools.mdht.emf.runtime.util.Initializer;
 import org.openhealthtools.mdht.uml.cda.phcr.flu.InfluenzaSignsAndSymptomsObservation;
 import org.openhealthtools.mdht.uml.cda.phcr.flu.fluPackage;
 
 import org.openhealthtools.mdht.uml.cda.phcr.flu.operations.InfluenzaSignsAndSymptomsObservationOperations;
 
 import org.openhealthtools.mdht.uml.cda.phcr.impl.SignsAndSymptomsObservationImpl;
-
-import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
 
 /**
  * <!-- begin-user-doc -->
@@ -59,6 +60,15 @@ public class InfluenzaSignsAndSymptomsObservationImpl extends SignsAndSymptomsOb
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public boolean validateInfluenzaSignsAndSymptomsObservationValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return InfluenzaSignsAndSymptomsObservationOperations.validateInfluenzaSignsAndSymptomsObservationValue(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	@Override
 	public boolean validateSignsAndSymptomsObservationTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return InfluenzaSignsAndSymptomsObservationOperations.validateSignsAndSymptomsObservationTemplateId(this, diagnostics, context);
@@ -70,17 +80,18 @@ public class InfluenzaSignsAndSymptomsObservationImpl extends SignsAndSymptomsOb
 	 * @generated
 	 */
 	@Override
-	public boolean validateSignsAndSymptomsObservationValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return InfluenzaSignsAndSymptomsObservationOperations.validateSignsAndSymptomsObservationValue(this, diagnostics, context);
+	public InfluenzaSignsAndSymptomsObservation init() {
+	    return Initializer.Util.init(this);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public InfluenzaSignsAndSymptomsObservation init() {
-    	CDAUtil.init(this);
-    	return this;
-	}
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    @Override
+	public InfluenzaSignsAndSymptomsObservation init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
 } //InfluenzaSignsAndSymptomsObservationImpl

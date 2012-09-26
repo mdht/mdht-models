@@ -24,7 +24,6 @@ import org.openhealthtools.mdht.uml.cda.phcr.tularemia.TularemiaCaseObservation;
 import org.openhealthtools.mdht.uml.cda.phcr.tularemia.TularemiaPackage;
 import org.openhealthtools.mdht.uml.cda.phcr.tularemia.TularemiaSignsAndSymptomsObservation;
 import org.openhealthtools.mdht.uml.cda.phcr.tularemia.operations.TularemiaCaseObservationOperations;
-import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
 
 /**
  * <!-- begin-user-doc -->
@@ -38,99 +37,101 @@ import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
 public class TularemiaCaseObservationImpl extends CaseObservationImpl implements TularemiaCaseObservation
 {
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   protected TularemiaCaseObservationImpl()
   {
-    super();
-  }
+		super();
+	}
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   @Override
   protected EClass eStaticClass()
   {
-    return TularemiaPackage.Literals.TULAREMIA_CASE_OBSERVATION;
-  }
+		return TularemiaPackage.Literals.TULAREMIA_CASE_OBSERVATION;
+	}
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public boolean validateTularemiaCaseObservationValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return TularemiaCaseObservationOperations.validateTularemiaCaseObservationValue(this, diagnostics, context);
-  }
+		return TularemiaCaseObservationOperations.validateTularemiaCaseObservationValue(this, diagnostics, context);
+	}
 
 		/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public boolean validateTularemiaCaseObservationTularemiaSignsAndSymptomsObservation(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return TularemiaCaseObservationOperations.validateTularemiaCaseObservationTularemiaSignsAndSymptomsObservation(this, diagnostics, context);
-  }
+		return TularemiaCaseObservationOperations.validateTularemiaCaseObservationTularemiaSignsAndSymptomsObservation(this, diagnostics, context);
+	}
 
 		/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   public boolean validateTularemiaCaseObservationLocationOfLesionObservation(DiagnosticChain diagnostics, Map<Object, Object> context)
   {
-    return TularemiaCaseObservationOperations.validateTularemiaCaseObservationLocationOfLesionObservation(this, diagnostics, context);
-  }
+		return TularemiaCaseObservationOperations.validateTularemiaCaseObservationLocationOfLesionObservation(this, diagnostics, context);
+	}
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public EList<TularemiaSignsAndSymptomsObservation> getTularemiaSignsAndSymptomsObservations() {
-    return TularemiaCaseObservationOperations.getTularemiaSignsAndSymptomsObservations(this);
-  }
+		return TularemiaCaseObservationOperations.getTularemiaSignsAndSymptomsObservations(this);
+	}
 
 		/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   public EList<LocationOfLesionObservation> getLocationOfLesionObservations()
   {
-    return TularemiaCaseObservationOperations.getLocationOfLesionObservations(this);
-  }
+		return TularemiaCaseObservationOperations.getLocationOfLesionObservations(this);
+	}
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   @Override
   public boolean validateProblemObservationTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context)
   {
-    return TularemiaCaseObservationOperations.validateProblemObservationTemplateId(this, diagnostics, context);
-  }
+		return TularemiaCaseObservationOperations.validateProblemObservationTemplateId(this, diagnostics, context);
+	}
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
-  public TularemiaCaseObservation init() {
-      return Initializer.Util.init(this);
-  }
+	 * @generated
+	 */
+  @Override
+public TularemiaCaseObservation init() {
+	    return Initializer.Util.init(this);
+	}
 
   /**
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
      * @generated
      */
-    public TularemiaCaseObservation init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+    @Override
+	public TularemiaCaseObservation init(Iterable<? extends Initializer<? extends EObject>> initializers) {
         Initializer.Util.init(this, initializers);
         return this;
     }

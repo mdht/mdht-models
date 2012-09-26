@@ -34,6 +34,7 @@ public interface AnthraxPhcrTreatmentInformationSection extends PhcrTreatmentInf
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
+   * self.entry->one(entry : cda::Entry | not entry.act.oclIsUndefined() and entry.act.oclIsKindOf(anthrax::AnthraxTherapeuticRegimenAct) and entry.typeCode = vocab::x_ActRelationshipEntry::DRIV)
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
    * <!-- end-model-doc -->
@@ -45,23 +46,12 @@ public interface AnthraxPhcrTreatmentInformationSection extends PhcrTreatmentInf
 	/**
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
+   * <!-- begin-model-doc -->
+   * self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(anthrax::AnthraxTherapeuticRegimenAct))->asSequence()->any(true).oclAsType(anthrax::AnthraxTherapeuticRegimenAct)
+   * <!-- end-model-doc -->
    * @model kind="operation" required="true" ordered="false"
    *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(anthrax::AnthraxTherapeuticRegimenAct))->asSequence()->any(true).oclAsType(anthrax::AnthraxTherapeuticRegimenAct)'"
    * @generated
    */
 	AnthraxTherapeuticRegimenAct getAnthraxTherapeuticRegimenAct();
-
-	/**
-   * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-   * @generated
-   */
-	public AnthraxPhcrTreatmentInformationSection init();
-
-  /**
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    public AnthraxPhcrTreatmentInformationSection init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // AnthraxPhcrTreatmentInformationSection

@@ -39,7 +39,6 @@ import org.openhealthtools.mdht.uml.cda.phcr.util.PhcrValidator;
  * The following operations are supported:
  * <ul>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.phcr.ResultObservation#validatePHCRResultObservationClassCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate PHCR Result Observation Class Code</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.phcr.ResultObservation#validatePHCRResultObservationStatusCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate PHCR Result Observation Status Code P</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.phcr.ResultObservation#validatePHCRResultObservationStatusCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate PHCR Result Observation Status Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.phcr.ResultObservation#validatePHCRResultObservationSpecimenCollectionProcedure(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate PHCR Result Observation Specimen Collection Procedure</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.phcr.ResultObservation#validatePHCRResultObservationSusceptibilityResult(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate PHCR Result Observation Susceptibility Result</em>}</li>
@@ -85,6 +84,7 @@ public class ResultObservationOperations extends org.openhealthtools.mdht.uml.cd
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
+   * isDefined('classCode')
    * @param resultObservation The receiving '<em><b>Result Observation</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -92,8 +92,8 @@ public class ResultObservationOperations extends org.openhealthtools.mdht.uml.cd
    * @generated
    */
 	public static  boolean validatePHCRResultObservationClassCode(ResultObservation resultObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
-    if (VALIDATE_PHCR_RESULT_OBSERVATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+    if (VALIDATE_PHCR_RESULT_OBSERVATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null)
+    {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(PhcrPackage.Literals.RESULT_OBSERVATION);
       try
@@ -114,10 +114,9 @@ public class ResultObservationOperations extends org.openhealthtools.mdht.uml.cd
             (Diagnostic.ERROR,
              PhcrValidator.DIAGNOSTIC_SOURCE,
              PhcrValidator.RESULT_OBSERVATION__PHCR_RESULT_OBSERVATION_CLASS_CODE,
-             PhcrPlugin.INSTANCE.getString("PHCRResultObservationClassCode"),
+             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "validatePHCRResultObservationClassCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(resultObservation, context) }),
              new Object [] { resultObservation }));
       }
-       
       return false;
     }
     return true;
@@ -148,6 +147,7 @@ public class ResultObservationOperations extends org.openhealthtools.mdht.uml.cd
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
+   * (self.statusCode.oclIsUndefined() or self.statusCode.isNullFlavorUndefined()) implies (not self.statusCode.oclIsUndefined())
    * @param resultObservation The receiving '<em><b>Result Observation</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -157,8 +157,8 @@ public class ResultObservationOperations extends org.openhealthtools.mdht.uml.cd
   
   public static  boolean validatePHCRResultObservationStatusCodeP(ResultObservation resultObservation, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
-  	  
-    if (VALIDATE_PHCR_RESULT_OBSERVATION_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+    if (VALIDATE_PHCR_RESULT_OBSERVATION_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null)
+    {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(PhcrPackage.Literals.RESULT_OBSERVATION);
       try
@@ -179,22 +179,9 @@ public class ResultObservationOperations extends org.openhealthtools.mdht.uml.cd
             (Diagnostic.ERROR,
              PhcrValidator.DIAGNOSTIC_SOURCE,
              PhcrValidator.RESULT_OBSERVATION__PHCR_RESULT_OBSERVATION_STATUS_CODE_P,
-             PhcrPlugin.INSTANCE.getString("PHCRResultObservationStatusCodeP"),
+             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "validatePHCRResultObservationStatusCodeP", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(resultObservation, context) }),
              new Object [] { resultObservation }));
       }
-      
-      if (context != null) {
-        // generate a pass token for my dependent constraints to short-circuit or filter results
-        @SuppressWarnings("unchecked")
-        Collection<Object> passToken = (Collection<Object>) context.get("org.openhealthtools.mdht.uml.cda.phcr.PHCRResultObservationStatusCodeP");
-        if (passToken == null) {
-          // anticipate a reasonably healthy model
-          passToken = new java.util.ArrayList<Object>(3);
-          context.put("org.openhealthtools.mdht.uml.cda.phcr.PHCRResultObservationStatusCodeP", passToken);
-        }
-        passToken.add(resultObservation);
-      }
-       
       return false;
     }
     return true;
@@ -227,6 +214,9 @@ public class ResultObservationOperations extends org.openhealthtools.mdht.uml.cd
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
+   * (self.statusCode.oclIsUndefined() or self.statusCode.isNullFlavorUndefined()) implies (not self.statusCode.oclIsUndefined() and self.statusCode.oclIsKindOf(datatypes::CS) and 
+   * let value : datatypes::CS = self.statusCode.oclAsType(datatypes::CS) in 
+   * value.code = 'completed')
    * @param resultObservation The receiving '<em><b>Result Observation</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -235,14 +225,8 @@ public class ResultObservationOperations extends org.openhealthtools.mdht.uml.cd
    */
 	
 	public static  boolean validatePHCRResultObservationStatusCode(ResultObservation resultObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
-    Object passToken = (context == null) ? null : context.get("org.openhealthtools.mdht.uml.cda.phcr.PHCRResultObservationStatusCodeP");
-    if ((passToken instanceof Collection<?>) && ((Collection<?>) passToken).contains(resultObservation)) {
-      // I have a free pass to short-circuit
-      return true;
-    }
-  	  
-    if (VALIDATE_PHCR_RESULT_OBSERVATION_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+    if (VALIDATE_PHCR_RESULT_OBSERVATION_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null)
+    {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(PhcrPackage.Literals.RESULT_OBSERVATION);
       try
@@ -263,10 +247,9 @@ public class ResultObservationOperations extends org.openhealthtools.mdht.uml.cd
             (Diagnostic.ERROR,
              PhcrValidator.DIAGNOSTIC_SOURCE,
              PhcrValidator.RESULT_OBSERVATION__PHCR_RESULT_OBSERVATION_STATUS_CODE,
-             PhcrPlugin.INSTANCE.getString("PHCRResultObservationStatusCode"),
+             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "validatePHCRResultObservationStatusCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(resultObservation, context) }),
              new Object [] { resultObservation }));
       }
-       
       return false;
     }
     return true;
@@ -297,6 +280,7 @@ public class ResultObservationOperations extends org.openhealthtools.mdht.uml.cd
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
+   * self.entryRelationship->exists(entryRelationship : cda::EntryRelationship | not entryRelationship.procedure.oclIsUndefined() and entryRelationship.procedure.oclIsKindOf(phcr::SpecimenCollectionProcedure) and entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::REFR)
    * @param resultObservation The receiving '<em><b>Result Observation</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -305,8 +289,8 @@ public class ResultObservationOperations extends org.openhealthtools.mdht.uml.cd
    */
 	
 	public static  boolean validatePHCRResultObservationSpecimenCollectionProcedure(ResultObservation resultObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
-    if (VALIDATE_PHCR_RESULT_OBSERVATION_SPECIMEN_COLLECTION_PROCEDURE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+    if (VALIDATE_PHCR_RESULT_OBSERVATION_SPECIMEN_COLLECTION_PROCEDURE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null)
+    {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(PhcrPackage.Literals.RESULT_OBSERVATION);
       try
@@ -324,13 +308,12 @@ public class ResultObservationOperations extends org.openhealthtools.mdht.uml.cd
       {
         diagnostics.add
           (new BasicDiagnostic
-            (Diagnostic.INFO,
+            (Diagnostic.ERROR,
              PhcrValidator.DIAGNOSTIC_SOURCE,
              PhcrValidator.RESULT_OBSERVATION__PHCR_RESULT_OBSERVATION_SPECIMEN_COLLECTION_PROCEDURE,
-             PhcrPlugin.INSTANCE.getString("PHCRResultObservationSpecimenCollectionProcedure"),
+             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "validatePHCRResultObservationSpecimenCollectionProcedure", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(resultObservation, context) }),
              new Object [] { resultObservation }));
       }
-       
       return false;
     }
     return true;
@@ -361,6 +344,7 @@ public class ResultObservationOperations extends org.openhealthtools.mdht.uml.cd
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
+   * self.entryRelationship->exists(entryRelationship : cda::EntryRelationship | not entryRelationship.observation.oclIsUndefined() and entryRelationship.observation.oclIsKindOf(phcr::SusceptibilityResult) and entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::COMP)
    * @param resultObservation The receiving '<em><b>Result Observation</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -369,8 +353,8 @@ public class ResultObservationOperations extends org.openhealthtools.mdht.uml.cd
    */
 	
 	public static  boolean validatePHCRResultObservationSusceptibilityResult(ResultObservation resultObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
-    if (VALIDATE_PHCR_RESULT_OBSERVATION_SUSCEPTIBILITY_RESULT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+    if (VALIDATE_PHCR_RESULT_OBSERVATION_SUSCEPTIBILITY_RESULT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null)
+    {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(PhcrPackage.Literals.RESULT_OBSERVATION);
       try
@@ -388,13 +372,12 @@ public class ResultObservationOperations extends org.openhealthtools.mdht.uml.cd
       {
         diagnostics.add
           (new BasicDiagnostic
-            (Diagnostic.INFO,
+            (Diagnostic.ERROR,
              PhcrValidator.DIAGNOSTIC_SOURCE,
              PhcrValidator.RESULT_OBSERVATION__PHCR_RESULT_OBSERVATION_SUSCEPTIBILITY_RESULT,
-             PhcrPlugin.INSTANCE.getString("PHCRResultObservationSusceptibilityResult"),
+             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "validatePHCRResultObservationSusceptibilityResult", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(resultObservation, context) }),
              new Object [] { resultObservation }));
       }
-       
       return false;
     }
     return true;
@@ -423,6 +406,10 @@ public class ResultObservationOperations extends org.openhealthtools.mdht.uml.cd
 	/**
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
+   * <!-- begin-model-doc -->
+   * self.getProcedures()->select(procedure : cda::Procedure | not procedure.oclIsUndefined() and procedure.oclIsKindOf(phcr::SpecimenCollectionProcedure)).oclAsType(phcr::SpecimenCollectionProcedure)
+   * @param resultObservation The receiving '<em><b>Result Observation</b></em>' model object.
+   * <!-- end-model-doc -->
    * @generated
    */
 	
@@ -430,7 +417,7 @@ public class ResultObservationOperations extends org.openhealthtools.mdht.uml.cd
     if (GET_SPECIMEN_COLLECTION_PROCEDURES__EOCL_QRY == null)
     {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
-      helper.setOperationContext(PhcrPackage.Literals.RESULT_OBSERVATION, PhcrPackage.Literals.RESULT_OBSERVATION.getEAllOperations().get(69));
+      helper.setOperationContext(PhcrPackage.Literals.RESULT_OBSERVATION, PhcrPackage.Literals.RESULT_OBSERVATION.getEAllOperations().get(67));
       try
       {
         GET_SPECIMEN_COLLECTION_PROCEDURES__EOCL_QRY = helper.createQuery(GET_SPECIMEN_COLLECTION_PROCEDURES__EOCL_EXP);
@@ -469,6 +456,10 @@ public class ResultObservationOperations extends org.openhealthtools.mdht.uml.cd
 	/**
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
+   * <!-- begin-model-doc -->
+   * self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(phcr::SusceptibilityResult)).oclAsType(phcr::SusceptibilityResult)
+   * @param resultObservation The receiving '<em><b>Result Observation</b></em>' model object.
+   * <!-- end-model-doc -->
    * @generated
    */
 	
@@ -476,7 +467,7 @@ public class ResultObservationOperations extends org.openhealthtools.mdht.uml.cd
     if (GET_SUSCEPTIBILITY_RESULTS__EOCL_QRY == null)
     {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
-      helper.setOperationContext(PhcrPackage.Literals.RESULT_OBSERVATION, PhcrPackage.Literals.RESULT_OBSERVATION.getEAllOperations().get(70));
+      helper.setOperationContext(PhcrPackage.Literals.RESULT_OBSERVATION, PhcrPackage.Literals.RESULT_OBSERVATION.getEAllOperations().get(68));
       try
       {
         GET_SUSCEPTIBILITY_RESULTS__EOCL_QRY = helper.createQuery(GET_SUSCEPTIBILITY_RESULTS__EOCL_EXP);
@@ -516,6 +507,7 @@ public class ResultObservationOperations extends org.openhealthtools.mdht.uml.cd
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
+   * self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.15.3.58')
    * @param resultObservation The receiving '<em><b>Result Observation</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -523,8 +515,8 @@ public class ResultObservationOperations extends org.openhealthtools.mdht.uml.cd
    * @generated
    */
 	public static  boolean validateResultObservationTemplateId(ResultObservation resultObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
-    if (VALIDATE_RESULT_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+    if (VALIDATE_RESULT_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null)
+    {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(PhcrPackage.Literals.RESULT_OBSERVATION);
       try
@@ -545,10 +537,9 @@ public class ResultObservationOperations extends org.openhealthtools.mdht.uml.cd
             (Diagnostic.ERROR,
              PhcrValidator.DIAGNOSTIC_SOURCE,
              PhcrValidator.RESULT_OBSERVATION__RESULT_OBSERVATION_TEMPLATE_ID,
-             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "ResultObservationTemplateId", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(resultObservation, context) }),
+             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "validateResultObservationTemplateId", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(resultObservation, context) }),
              new Object [] { resultObservation }));
       }
-       
       return false;
     }
     return true;

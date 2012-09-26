@@ -10,10 +10,13 @@
  *******************************************************************************/
 package org.openhealthtools.mdht.uml.cda.phcr.flu;
 
+import java.lang.Iterable;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
 
+import org.eclipse.emf.ecore.EObject;
+import org.openhealthtools.mdht.emf.runtime.util.Initializer;
 import org.openhealthtools.mdht.uml.cda.phcr.PhcrTreatmentInformationSection;
 
 /**
@@ -23,7 +26,7 @@ import org.openhealthtools.mdht.uml.cda.phcr.PhcrTreatmentInformationSection;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.phcr.flu.fluPackage#getInfluenzaPHCRTreatmentInformationSection()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation templateId.root='2.16.840.1.113883.10.20.15.2.48' constraints.validation.error='InfluenzaPHCRTreatmentInformationSectionTemplateId InfluenzaPHCRTreatmentInformationSectionInfluenzaTherapeuticRegimenAct'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='InfluenzaPHCRTreatmentInformationSectionTemplateId InfluenzaPHCRTreatmentInformationSectionInfluenzaTherapeuticRegimenAct' templateId.root='2.16.840.1.113883.10.20.15.2.48'"
  * @generated
  */
 public interface InfluenzaPHCRTreatmentInformationSection extends PhcrTreatmentInformationSection {
@@ -44,10 +47,10 @@ public interface InfluenzaPHCRTreatmentInformationSection extends PhcrTreatmentI
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(flu::InfluenzaTherapeuticRegimenAct))->asSequence()->first().oclAsType(flu::InfluenzaTherapeuticRegimenAct)
+	 * self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(flu::InfluenzaTherapeuticRegimenAct))->asSequence()->any(true).oclAsType(flu::InfluenzaTherapeuticRegimenAct)
 	 * <!-- end-model-doc -->
 	 * @model kind="operation" required="true" ordered="false"
-	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(flu::InfluenzaTherapeuticRegimenAct))->asSequence()->first().oclAsType(flu::InfluenzaTherapeuticRegimenAct)'"
+	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(flu::InfluenzaTherapeuticRegimenAct))->asSequence()->any(true).oclAsType(flu::InfluenzaTherapeuticRegimenAct)'"
 	 * @generated
 	 */
 	InfluenzaTherapeuticRegimenAct getInfluenzaTherapeuticRegimenAct();
@@ -58,4 +61,11 @@ public interface InfluenzaPHCRTreatmentInformationSection extends PhcrTreatmentI
 	 * @generated
 	 */
 	public InfluenzaPHCRTreatmentInformationSection init();
+
+	/**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    public InfluenzaPHCRTreatmentInformationSection init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // InfluenzaPHCRTreatmentInformationSection

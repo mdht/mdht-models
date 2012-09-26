@@ -10,11 +10,14 @@
  *******************************************************************************/
 package org.openhealthtools.mdht.uml.cda.phcr.hib;
 
+import java.lang.Iterable;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.common.util.EList;
 
+import org.eclipse.emf.ecore.EObject;
+import org.openhealthtools.mdht.emf.runtime.util.Initializer;
 import org.openhealthtools.mdht.uml.cda.phcr.PhcrRelevantDxTestsSection;
 
 /**
@@ -24,7 +27,7 @@ import org.openhealthtools.mdht.uml.cda.phcr.PhcrRelevantDxTestsSection;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.phcr.hib.HibPackage#getHibPhcrRelevantDxTestsSection()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation templateId.root='2.16.840.1.113883.10.20.15.2.58' constraints.validation.error='HibPhcrRelevantDxTestsSectionTemplateId' constraints.validation.warning='HibPhcrRelevantDxTestsSectionHibResultObservation' constraints.validation.info='HibPhcrRelevantDxTestsSectionHibResultOrganizer'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='HibPhcrRelevantDxTestsSectionTemplateId' templateId.root='2.16.840.1.113883.10.20.15.2.58' constraints.validation.warning='HibPhcrRelevantDxTestsSectionHibResultObservation' constraints.validation.info='HibPhcrRelevantDxTestsSectionHibResultOrganizer'"
  * @generated
  */
 public interface HibPhcrRelevantDxTestsSection extends PhcrRelevantDxTestsSection {
@@ -84,4 +87,11 @@ public interface HibPhcrRelevantDxTestsSection extends PhcrRelevantDxTestsSectio
 	 * @generated
 	 */
 	public HibPhcrRelevantDxTestsSection init();
+
+	/**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    public HibPhcrRelevantDxTestsSection init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // HibPhcrRelevantDxTestsSection

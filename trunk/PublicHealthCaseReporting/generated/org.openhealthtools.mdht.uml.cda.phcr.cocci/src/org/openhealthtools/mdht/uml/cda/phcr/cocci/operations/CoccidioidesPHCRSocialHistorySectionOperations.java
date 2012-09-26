@@ -89,6 +89,7 @@ public class CoccidioidesPHCRSocialHistorySectionOperations extends PhcrSocialHi
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
+   * self.entry->exists(entry : cda::Entry | not entry.act.oclIsUndefined() and entry.act.oclIsKindOf(cocci::CoccidioidesPossibleExposureLocationAct) and entry.typeCode = vocab::x_ActRelationshipEntry::DRIV)
    * @param coccidioidesPHCRSocialHistorySection The receiving '<em><b>Coccidioides PHCR Social History Section</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -97,8 +98,8 @@ public class CoccidioidesPHCRSocialHistorySectionOperations extends PhcrSocialHi
    */
 	
 	public static  boolean validateCoccidioidesPHCRSocialHistorySectionCoccidioidesPossibleExposureLocationAct(CoccidioidesPHCRSocialHistorySection coccidioidesPHCRSocialHistorySection, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
-    if (VALIDATE_COCCIDIOIDES_PHCR_SOCIAL_HISTORY_SECTION_COCCIDIOIDES_POSSIBLE_EXPOSURE_LOCATION_ACT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+    if (VALIDATE_COCCIDIOIDES_PHCR_SOCIAL_HISTORY_SECTION_COCCIDIOIDES_POSSIBLE_EXPOSURE_LOCATION_ACT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null)
+    {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(CocciPackage.Literals.COCCIDIOIDES_PHCR_SOCIAL_HISTORY_SECTION);
       try
@@ -116,13 +117,12 @@ public class CoccidioidesPHCRSocialHistorySectionOperations extends PhcrSocialHi
       {
         diagnostics.add
           (new BasicDiagnostic
-            (Diagnostic.INFO,
+            (Diagnostic.ERROR,
              CocciValidator.DIAGNOSTIC_SOURCE,
              CocciValidator.COCCIDIOIDES_PHCR_SOCIAL_HISTORY_SECTION__COCCIDIOIDES_PHCR_SOCIAL_HISTORY_SECTION_COCCIDIOIDES_POSSIBLE_EXPOSURE_LOCATION_ACT,
-             CocciPlugin.INSTANCE.getString("CoccidioidesPHCRSocialHistorySectionCoccidioidesPossibleExposureLocationAct"),
+             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "validateCoccidioidesPHCRSocialHistorySectionCoccidioidesPossibleExposureLocationAct", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(coccidioidesPHCRSocialHistorySection, context) }),
              new Object [] { coccidioidesPHCRSocialHistorySection }));
       }
-       
       return false;
     }
     return true;
@@ -151,6 +151,10 @@ public class CoccidioidesPHCRSocialHistorySectionOperations extends PhcrSocialHi
 	/**
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
+   * <!-- begin-model-doc -->
+   * self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(cocci::CoccidioidesPossibleExposureLocationAct)).oclAsType(cocci::CoccidioidesPossibleExposureLocationAct)
+   * @param coccidioidesPHCRSocialHistorySection The receiving '<em><b>Coccidioides PHCR Social History Section</b></em>' model object.
+   * <!-- end-model-doc -->
    * @generated
    */
 	
@@ -158,7 +162,7 @@ public class CoccidioidesPHCRSocialHistorySectionOperations extends PhcrSocialHi
     if (GET_COCCIDIOIDES_POSSIBLE_EXPOSURE_LOCATION_ACTS__EOCL_QRY == null)
     {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
-      helper.setOperationContext(CocciPackage.Literals.COCCIDIOIDES_PHCR_SOCIAL_HISTORY_SECTION, CocciPackage.Literals.COCCIDIOIDES_PHCR_SOCIAL_HISTORY_SECTION.getEAllOperations().get(82));
+      helper.setOperationContext(CocciPackage.Literals.COCCIDIOIDES_PHCR_SOCIAL_HISTORY_SECTION, CocciPackage.Literals.COCCIDIOIDES_PHCR_SOCIAL_HISTORY_SECTION.getEAllOperations().get(76));
       try
       {
         GET_COCCIDIOIDES_POSSIBLE_EXPOSURE_LOCATION_ACTS__EOCL_QRY = helper.createQuery(GET_COCCIDIOIDES_POSSIBLE_EXPOSURE_LOCATION_ACTS__EOCL_EXP);
@@ -200,6 +204,7 @@ public class CoccidioidesPHCRSocialHistorySectionOperations extends PhcrSocialHi
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
+   * self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.15.2.29')
    * @param coccidioidesPHCRSocialHistorySection The receiving '<em><b>Coccidioides PHCR Social History Section</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -208,8 +213,8 @@ public class CoccidioidesPHCRSocialHistorySectionOperations extends PhcrSocialHi
    */
 	
 	public static  boolean validateSocialHistorySectionTemplateId(CoccidioidesPHCRSocialHistorySection coccidioidesPHCRSocialHistorySection, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
-    if (VALIDATE_SOCIAL_HISTORY_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+    if (VALIDATE_SOCIAL_HISTORY_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null)
+    {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(CocciPackage.Literals.COCCIDIOIDES_PHCR_SOCIAL_HISTORY_SECTION);
       try
@@ -230,10 +235,9 @@ public class CoccidioidesPHCRSocialHistorySectionOperations extends PhcrSocialHi
             (Diagnostic.ERROR,
              CocciValidator.DIAGNOSTIC_SOURCE,
              CocciValidator.COCCIDIOIDES_PHCR_SOCIAL_HISTORY_SECTION__SOCIAL_HISTORY_SECTION_TEMPLATE_ID,
-             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "SocialHistorySectionTemplateId", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(coccidioidesPHCRSocialHistorySection, context) }),
+             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "validateSocialHistorySectionTemplateId", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(coccidioidesPHCRSocialHistorySection, context) }),
              new Object [] { coccidioidesPHCRSocialHistorySection }));
       }
-       
       return false;
     }
     return true;

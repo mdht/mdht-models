@@ -45,7 +45,6 @@ import org.openhealthtools.mdht.uml.cda.phcr.operations.CaseObservationOperation
  * <p>
  * The following operations are supported:
  * <ul>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.phcr.cocci.CoccidioidesCaseObservation#validateCoccidioidesCaseObservationValueP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Coccidioides Case Observation Value P</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.phcr.cocci.CoccidioidesCaseObservation#validateCoccidioidesCaseObservationValue(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Coccidioides Case Observation Value</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.phcr.cocci.CoccidioidesCaseObservation#getCoccidioidesSignsAndSymptomsObservations() <em>Get Coccidioides Signs And Symptoms Observations</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.phcr.cocci.CoccidioidesCaseObservation#validateProblemObservationTemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Problem Observation Template Id</em>}</li>
@@ -89,6 +88,7 @@ public class CoccidioidesCaseObservationOperations extends CaseObservationOperat
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
+   * (self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (not self.value->isEmpty())
    * @param coccidioidesCaseObservation The receiving '<em><b>Coccidioides Case Observation</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -98,8 +98,8 @@ public class CoccidioidesCaseObservationOperations extends CaseObservationOperat
   
   public static  boolean validateCoccidioidesCaseObservationValueP(CoccidioidesCaseObservation coccidioidesCaseObservation, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
-  	  
-    if (VALIDATE_COCCIDIOIDES_CASE_OBSERVATION_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+    if (VALIDATE_COCCIDIOIDES_CASE_OBSERVATION_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null)
+    {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(CocciPackage.Literals.COCCIDIOIDES_CASE_OBSERVATION);
       try
@@ -120,22 +120,9 @@ public class CoccidioidesCaseObservationOperations extends CaseObservationOperat
             (Diagnostic.ERROR,
              CocciValidator.DIAGNOSTIC_SOURCE,
              CocciValidator.COCCIDIOIDES_CASE_OBSERVATION__COCCIDIOIDES_CASE_OBSERVATION_VALUE_P,
-             CocciPlugin.INSTANCE.getString("CoccidioidesCaseObservationValueP"),
+             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "validateCoccidioidesCaseObservationValueP", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(coccidioidesCaseObservation, context) }),
              new Object [] { coccidioidesCaseObservation }));
       }
-      
-      if (context != null) {
-        // generate a pass token for my dependent constraints to short-circuit or filter results
-        @SuppressWarnings("unchecked")
-        Collection<Object> passToken = (Collection<Object>) context.get("org.openhealthtools.mdht.uml.cda.phcr.cocci.CoccidioidesCaseObservationValueP");
-        if (passToken == null) {
-          // anticipate a reasonably healthy model
-          passToken = new java.util.ArrayList<Object>(3);
-          context.put("org.openhealthtools.mdht.uml.cda.phcr.cocci.CoccidioidesCaseObservationValueP", passToken);
-        }
-        passToken.add(coccidioidesCaseObservation);
-      }
-       
       return false;
     }
     return true;
@@ -168,6 +155,9 @@ public class CoccidioidesCaseObservationOperations extends CaseObservationOperat
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
+   * (self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (self.value->size() = 1 and self.value->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and 
+   * let value : datatypes::CD = element.oclAsType(datatypes::CD) in 
+   * value.code = '60826002' and value.codeSystem = '2.16.840.1.113883.6.96'))
    * @param coccidioidesCaseObservation The receiving '<em><b>Coccidioides Case Observation</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -177,14 +167,8 @@ public class CoccidioidesCaseObservationOperations extends CaseObservationOperat
   
   public static  boolean validateCoccidioidesCaseObservationValue(CoccidioidesCaseObservation coccidioidesCaseObservation, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
-  	  
-    Object passToken = (context == null) ? null : context.get("org.openhealthtools.mdht.uml.cda.phcr.cocci.CoccidioidesCaseObservationValueP");
-    if ((passToken instanceof Collection<?>) && ((Collection<?>) passToken).contains(coccidioidesCaseObservation)) {
-      // I have a free pass to short-circuit
-      return true;
-    }
-  	  
-    if (VALIDATE_COCCIDIOIDES_CASE_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+    if (VALIDATE_COCCIDIOIDES_CASE_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null)
+    {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(CocciPackage.Literals.COCCIDIOIDES_CASE_OBSERVATION);
       try
@@ -205,10 +189,9 @@ public class CoccidioidesCaseObservationOperations extends CaseObservationOperat
             (Diagnostic.ERROR,
              CocciValidator.DIAGNOSTIC_SOURCE,
              CocciValidator.COCCIDIOIDES_CASE_OBSERVATION__COCCIDIOIDES_CASE_OBSERVATION_VALUE,
-             CocciPlugin.INSTANCE.getString("CoccidioidesCaseObservationValue"),
+             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "validateCoccidioidesCaseObservationValue", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(coccidioidesCaseObservation, context) }),
              new Object [] { coccidioidesCaseObservation }));
       }
-       
       return false;
     }
     return true;
@@ -237,6 +220,10 @@ public class CoccidioidesCaseObservationOperations extends CaseObservationOperat
 	/**
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
+   * <!-- begin-model-doc -->
+   * self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(cocci::CoccidioidesSignsAndSymptomsObservation)).oclAsType(cocci::CoccidioidesSignsAndSymptomsObservation)
+   * @param coccidioidesCaseObservation The receiving '<em><b>Coccidioides Case Observation</b></em>' model object.
+   * <!-- end-model-doc -->
    * @generated
    */
 	
@@ -244,7 +231,7 @@ public class CoccidioidesCaseObservationOperations extends CaseObservationOperat
     if (GET_COCCIDIOIDES_SIGNS_AND_SYMPTOMS_OBSERVATIONS__EOCL_QRY == null)
     {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
-      helper.setOperationContext(CocciPackage.Literals.COCCIDIOIDES_CASE_OBSERVATION, CocciPackage.Literals.COCCIDIOIDES_CASE_OBSERVATION.getEAllOperations().get(81));
+      helper.setOperationContext(CocciPackage.Literals.COCCIDIOIDES_CASE_OBSERVATION, CocciPackage.Literals.COCCIDIOIDES_CASE_OBSERVATION.getEAllOperations().get(79));
       try
       {
         GET_COCCIDIOIDES_SIGNS_AND_SYMPTOMS_OBSERVATIONS__EOCL_QRY = helper.createQuery(GET_COCCIDIOIDES_SIGNS_AND_SYMPTOMS_OBSERVATIONS__EOCL_EXP);
@@ -286,6 +273,7 @@ public class CoccidioidesCaseObservationOperations extends CaseObservationOperat
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
+   * self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.15.3.87')
    * @param coccidioidesCaseObservation The receiving '<em><b>Coccidioides Case Observation</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -294,8 +282,8 @@ public class CoccidioidesCaseObservationOperations extends CaseObservationOperat
    */
 	
 	public static  boolean validateProblemObservationTemplateId(CoccidioidesCaseObservation coccidioidesCaseObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
-    if (VALIDATE_PROBLEM_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+    if (VALIDATE_PROBLEM_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null)
+    {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(CocciPackage.Literals.COCCIDIOIDES_CASE_OBSERVATION);
       try
@@ -316,10 +304,9 @@ public class CoccidioidesCaseObservationOperations extends CaseObservationOperat
             (Diagnostic.ERROR,
              CocciValidator.DIAGNOSTIC_SOURCE,
              CocciValidator.COCCIDIOIDES_CASE_OBSERVATION__PROBLEM_OBSERVATION_TEMPLATE_ID,
-             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "ProblemObservationTemplateId", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(coccidioidesCaseObservation, context) }),
+             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "validateProblemObservationTemplateId", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(coccidioidesCaseObservation, context) }),
              new Object [] { coccidioidesCaseObservation }));
       }
-       
       return false;
     }
     return true;

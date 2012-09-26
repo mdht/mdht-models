@@ -26,8 +26,6 @@ import org.openhealthtools.mdht.uml.cda.phcr.cocci.CoccidioidesImmunosuppressedM
 
 import org.openhealthtools.mdht.uml.cda.phcr.cocci.operations.CoccidioidesImmunosuppressedMedicalConditionProblemObservationOperations;
 
-import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
-
 /**
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Coccidioides Immunosuppressed Medical Condition Problem Observation</b></em>'.
@@ -76,23 +74,4 @@ public class CoccidioidesImmunosuppressedMedicalConditionProblemObservationImpl 
 	public boolean validateProblemObservationTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
     return CoccidioidesImmunosuppressedMedicalConditionProblemObservationOperations.validateProblemObservationTemplateId(this, diagnostics, context);
   }
-
-	/**
-   * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-   * @generated
-   */
-	public CoccidioidesImmunosuppressedMedicalConditionProblemObservation init() {
-      return Initializer.Util.init(this);
-  }
-
-  /**
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    public CoccidioidesImmunosuppressedMedicalConditionProblemObservation init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-        Initializer.Util.init(this, initializers);
-        return this;
-    }
 } //CoccidioidesImmunosuppressedMedicalConditionProblemObservationImpl

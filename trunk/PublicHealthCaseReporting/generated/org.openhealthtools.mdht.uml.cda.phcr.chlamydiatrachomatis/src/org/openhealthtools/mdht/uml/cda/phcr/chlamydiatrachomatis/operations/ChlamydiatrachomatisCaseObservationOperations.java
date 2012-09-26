@@ -6,7 +6,6 @@
  */
 package org.openhealthtools.mdht.uml.cda.phcr.chlamydiatrachomatis.operations;
 
-import java.util.Collection;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.BasicDiagnostic;
@@ -34,7 +33,6 @@ import org.openhealthtools.mdht.uml.cda.phcr.operations.CaseObservationOperation
  * <p>
  * The following operations are supported:
  * <ul>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.phcr.chlamydiatrachomatis.ChlamydiatrachomatisCaseObservation#validateChlamydiatrachomatisCaseObservationValueP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Chlamydiatrachomatis Case Observation Value P</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.phcr.chlamydiatrachomatis.ChlamydiatrachomatisCaseObservation#validateChlamydiatrachomatisCaseObservationValue(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Chlamydiatrachomatis Case Observation Value</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.phcr.chlamydiatrachomatis.ChlamydiatrachomatisCaseObservation#validateProblemObservationTemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Problem Observation Template Id</em>}</li>
  * </ul>
@@ -79,6 +77,7 @@ public class ChlamydiatrachomatisCaseObservationOperations extends CaseObservati
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
+   * (self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (not self.value->isEmpty())
    * @param chlamydiatrachomatisCaseObservation The receiving '<em><b>Case Observation</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -88,8 +87,8 @@ public class ChlamydiatrachomatisCaseObservationOperations extends CaseObservati
   
   public static  boolean validateChlamydiatrachomatisCaseObservationValueP(ChlamydiatrachomatisCaseObservation chlamydiatrachomatisCaseObservation, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
-  	  
-    if (VALIDATE_CHLAMYDIATRACHOMATIS_CASE_OBSERVATION_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+    if (VALIDATE_CHLAMYDIATRACHOMATIS_CASE_OBSERVATION_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null)
+    {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(ChlamydiatrachomatisPackage.Literals.CHLAMYDIATRACHOMATIS_CASE_OBSERVATION);
       try
@@ -110,22 +109,9 @@ public class ChlamydiatrachomatisCaseObservationOperations extends CaseObservati
             (Diagnostic.ERROR,
              ChlamydiatrachomatisValidator.DIAGNOSTIC_SOURCE,
              ChlamydiatrachomatisValidator.CHLAMYDIATRACHOMATIS_CASE_OBSERVATION__CHLAMYDIATRACHOMATIS_CASE_OBSERVATION_VALUE_P,
-             ChlamydiatrachomatisPlugin.INSTANCE.getString("ChlamydiatrachomatisCaseObservationValueP"),
+             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "validateChlamydiatrachomatisCaseObservationValueP", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(chlamydiatrachomatisCaseObservation, context) }),
              new Object [] { chlamydiatrachomatisCaseObservation }));
       }
-      
-      if (context != null) {
-        // generate a pass token for my dependent constraints to short-circuit or filter results
-        @SuppressWarnings("unchecked")
-        Collection<Object> passToken = (Collection<Object>) context.get("org.openhealthtools.mdht.uml.cda.phcr.chlamydiatrachomatis.ChlamydiatrachomatisCaseObservationValueP");
-        if (passToken == null) {
-          // anticipate a reasonably healthy model
-          passToken = new java.util.ArrayList<Object>(3);
-          context.put("org.openhealthtools.mdht.uml.cda.phcr.chlamydiatrachomatis.ChlamydiatrachomatisCaseObservationValueP", passToken);
-        }
-        passToken.add(chlamydiatrachomatisCaseObservation);
-      }
-       
       return false;
     }
     return true;
@@ -159,6 +145,9 @@ public class ChlamydiatrachomatisCaseObservationOperations extends CaseObservati
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
+   * (self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (self.value->size() = 1 and self.value->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and 
+   * let value : datatypes::CD = element.oclAsType(datatypes::CD) in 
+   * value.code = '105629000' and value.codeSystem = '2.16.840.1.113883.6.96'))
    * @param chlamydiatrachomatisCaseObservation The receiving '<em><b>Case Observation</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -168,14 +157,8 @@ public class ChlamydiatrachomatisCaseObservationOperations extends CaseObservati
   
   public static  boolean validateChlamydiatrachomatisCaseObservationValue(ChlamydiatrachomatisCaseObservation chlamydiatrachomatisCaseObservation, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
-  	  
-    Object passToken = (context == null) ? null : context.get("org.openhealthtools.mdht.uml.cda.phcr.chlamydiatrachomatis.ChlamydiatrachomatisCaseObservationValueP");
-    if ((passToken instanceof Collection<?>) && ((Collection<?>) passToken).contains(chlamydiatrachomatisCaseObservation)) {
-      // I have a free pass to short-circuit
-      return true;
-    }
-  	  
-    if (VALIDATE_CHLAMYDIATRACHOMATIS_CASE_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+    if (VALIDATE_CHLAMYDIATRACHOMATIS_CASE_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null)
+    {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(ChlamydiatrachomatisPackage.Literals.CHLAMYDIATRACHOMATIS_CASE_OBSERVATION);
       try
@@ -196,10 +179,9 @@ public class ChlamydiatrachomatisCaseObservationOperations extends CaseObservati
             (Diagnostic.ERROR,
              ChlamydiatrachomatisValidator.DIAGNOSTIC_SOURCE,
              ChlamydiatrachomatisValidator.CHLAMYDIATRACHOMATIS_CASE_OBSERVATION__CHLAMYDIATRACHOMATIS_CASE_OBSERVATION_VALUE,
-             ChlamydiatrachomatisPlugin.INSTANCE.getString("ChlamydiatrachomatisCaseObservationValue"),
+             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "validateChlamydiatrachomatisCaseObservationValue", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(chlamydiatrachomatisCaseObservation, context) }),
              new Object [] { chlamydiatrachomatisCaseObservation }));
       }
-       
       return false;
     }
     return true;
@@ -231,6 +213,7 @@ public class ChlamydiatrachomatisCaseObservationOperations extends CaseObservati
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
+   * self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.15.3.113')
    * @param chlamydiatrachomatisCaseObservation The receiving '<em><b>Case Observation</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -240,8 +223,8 @@ public class ChlamydiatrachomatisCaseObservationOperations extends CaseObservati
   
   public static  boolean validateProblemObservationTemplateId(ChlamydiatrachomatisCaseObservation chlamydiatrachomatisCaseObservation, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
-  	  
-    if (VALIDATE_PROBLEM_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+    if (VALIDATE_PROBLEM_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null)
+    {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(ChlamydiatrachomatisPackage.Literals.CHLAMYDIATRACHOMATIS_CASE_OBSERVATION);
       try
@@ -262,10 +245,9 @@ public class ChlamydiatrachomatisCaseObservationOperations extends CaseObservati
             (Diagnostic.ERROR,
              ChlamydiatrachomatisValidator.DIAGNOSTIC_SOURCE,
              ChlamydiatrachomatisValidator.CHLAMYDIATRACHOMATIS_CASE_OBSERVATION__PROBLEM_OBSERVATION_TEMPLATE_ID,
-             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "ProblemObservationTemplateId", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(chlamydiatrachomatisCaseObservation, context) }),
+             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "validateProblemObservationTemplateId", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(chlamydiatrachomatisCaseObservation, context) }),
              new Object [] { chlamydiatrachomatisCaseObservation }));
       }
-       
       return false;
     }
     return true;

@@ -8,6 +8,7 @@ package org.openhealthtools.mdht.uml.cda.phcr.chlamydiatrachomatis.util;
 
 import java.util.Map;
 
+import org.eclipse.emf.common.util.Diagnostic;
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.common.util.ResourceLocator;
 
@@ -445,7 +446,28 @@ public class ChlamydiatrachomatisValidator extends EObjectValidator
    */
   public boolean validateChlamydiatrachomatisPublicHealthCaseReport_validatePublicHealthCaseReportTemplateId(ChlamydiatrachomatisPublicHealthCaseReport chlamydiatrachomatisPublicHealthCaseReport, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
-    return chlamydiatrachomatisPublicHealthCaseReport.validatePublicHealthCaseReportTemplateId(diagnostics, context);
+    // TODO override the constraint, if desired
+    // -> uncomment the scaffolding
+    // -> specify the condition that violates the constraint
+    // -> verify the diagnostic details, including severity, code, and message
+    // Ensure that you remove @generated or mark it @generated NOT
+    if (false)
+    {
+      if (diagnostics != null)
+      {
+        diagnostics.add
+          (createDiagnostic
+            (Diagnostic.ERROR,
+             DIAGNOSTIC_SOURCE,
+             0,
+             "_UI_GenericConstraint_diagnostic",
+             new Object[] { "validatePublicHealthCaseReportTemplateId", getObjectLabel(chlamydiatrachomatisPublicHealthCaseReport, context) },
+             new Object[] { chlamydiatrachomatisPublicHealthCaseReport },
+             context));
+      }
+      return false;
+    }
+    return phcrValidator.validatePublicHealthCaseReport_validatePublicHealthCaseReportTemplateId(chlamydiatrachomatisPublicHealthCaseReport, diagnostics, context);
   }
 
   /**
@@ -498,7 +520,28 @@ public class ChlamydiatrachomatisValidator extends EObjectValidator
    */
   public boolean validateChlamydiatrachomatisPHCRClinicalInformationSection_validatePhcrClinicalInformationSectionTemplateId(ChlamydiatrachomatisPHCRClinicalInformationSection chlamydiatrachomatisPHCRClinicalInformationSection, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
-    return chlamydiatrachomatisPHCRClinicalInformationSection.validatePhcrClinicalInformationSectionTemplateId(diagnostics, context);
+    // TODO override the constraint, if desired
+    // -> uncomment the scaffolding
+    // -> specify the condition that violates the constraint
+    // -> verify the diagnostic details, including severity, code, and message
+    // Ensure that you remove @generated or mark it @generated NOT
+    if (false)
+    {
+      if (diagnostics != null)
+      {
+        diagnostics.add
+          (createDiagnostic
+            (Diagnostic.ERROR,
+             DIAGNOSTIC_SOURCE,
+             0,
+             "_UI_GenericConstraint_diagnostic",
+             new Object[] { "validatePhcrClinicalInformationSectionTemplateId", getObjectLabel(chlamydiatrachomatisPHCRClinicalInformationSection, context) },
+             new Object[] { chlamydiatrachomatisPHCRClinicalInformationSection },
+             context));
+      }
+      return false;
+    }
+    return phcrValidator.validatePhcrClinicalInformationSection_validatePhcrClinicalInformationSectionTemplateId(chlamydiatrachomatisPHCRClinicalInformationSection, diagnostics, context);
   }
 
   /**
@@ -574,7 +617,28 @@ public class ChlamydiatrachomatisValidator extends EObjectValidator
    */
   public boolean validateChlamydiatrachomatisCaseObservation_validateProblemObservationTemplateId(ChlamydiatrachomatisCaseObservation chlamydiatrachomatisCaseObservation, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
-    return chlamydiatrachomatisCaseObservation.validateProblemObservationTemplateId(diagnostics, context);
+    // TODO override the constraint, if desired
+    // -> uncomment the scaffolding
+    // -> specify the condition that violates the constraint
+    // -> verify the diagnostic details, including severity, code, and message
+    // Ensure that you remove @generated or mark it @generated NOT
+    if (false)
+    {
+      if (diagnostics != null)
+      {
+        diagnostics.add
+          (createDiagnostic
+            (Diagnostic.ERROR,
+             DIAGNOSTIC_SOURCE,
+             0,
+             "_UI_GenericConstraint_diagnostic",
+             new Object[] { "validateProblemObservationTemplateId", getObjectLabel(chlamydiatrachomatisCaseObservation, context) },
+             new Object[] { chlamydiatrachomatisCaseObservation },
+             context));
+      }
+      return false;
+    }
+    return phcrValidator.validateCaseObservation_validateProblemObservationTemplateId(chlamydiatrachomatisCaseObservation, diagnostics, context);
   }
 
   /**
@@ -641,7 +705,28 @@ public class ChlamydiatrachomatisValidator extends EObjectValidator
    */
   public boolean validateChlamydiatrachomatisPHCRRelevantDxTestsSection_validateResultsSectionTemplateId(ChlamydiatrachomatisPHCRRelevantDxTestsSection chlamydiatrachomatisPHCRRelevantDxTestsSection, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
-    return chlamydiatrachomatisPHCRRelevantDxTestsSection.validateResultsSectionTemplateId(diagnostics, context);
+    // TODO override the constraint, if desired
+    // -> uncomment the scaffolding
+    // -> specify the condition that violates the constraint
+    // -> verify the diagnostic details, including severity, code, and message
+    // Ensure that you remove @generated or mark it @generated NOT
+    if (false)
+    {
+      if (diagnostics != null)
+      {
+        diagnostics.add
+          (createDiagnostic
+            (Diagnostic.ERROR,
+             DIAGNOSTIC_SOURCE,
+             0,
+             "_UI_GenericConstraint_diagnostic",
+             new Object[] { "validateResultsSectionTemplateId", getObjectLabel(chlamydiatrachomatisPHCRRelevantDxTestsSection, context) },
+             new Object[] { chlamydiatrachomatisPHCRRelevantDxTestsSection },
+             context));
+      }
+      return false;
+    }
+    return phcrValidator.validatePhcrRelevantDxTestsSection_validateResultsSectionTemplateId(chlamydiatrachomatisPHCRRelevantDxTestsSection, diagnostics, context);
   }
 
   /**
@@ -700,7 +785,28 @@ public class ChlamydiatrachomatisValidator extends EObjectValidator
    */
   public boolean validateChlamydiatrachomatisResultObservation_validateResultObservationTemplateId(ChlamydiatrachomatisResultObservation chlamydiatrachomatisResultObservation, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
-    return chlamydiatrachomatisResultObservation.validateResultObservationTemplateId(diagnostics, context);
+    // TODO override the constraint, if desired
+    // -> uncomment the scaffolding
+    // -> specify the condition that violates the constraint
+    // -> verify the diagnostic details, including severity, code, and message
+    // Ensure that you remove @generated or mark it @generated NOT
+    if (false)
+    {
+      if (diagnostics != null)
+      {
+        diagnostics.add
+          (createDiagnostic
+            (Diagnostic.ERROR,
+             DIAGNOSTIC_SOURCE,
+             0,
+             "_UI_GenericConstraint_diagnostic",
+             new Object[] { "validateResultObservationTemplateId", getObjectLabel(chlamydiatrachomatisResultObservation, context) },
+             new Object[] { chlamydiatrachomatisResultObservation },
+             context));
+      }
+      return false;
+    }
+    return phcrValidator.validateResultObservation_validateResultObservationTemplateId(chlamydiatrachomatisResultObservation, diagnostics, context);
   }
 
   /**
@@ -727,7 +833,6 @@ public class ChlamydiatrachomatisValidator extends EObjectValidator
     if (result || diagnostics != null) result &= ccdValidator.validateResultOrganizer_validateResultOrganizerCode(chlamydiatrachomatisResultOrganizer, diagnostics, context);
     if (result || diagnostics != null) result &= ccdValidator.validateResultOrganizer_validateResultOrganizerStatusCode(chlamydiatrachomatisResultOrganizer, diagnostics, context);
     if (result || diagnostics != null) result &= ccdValidator.validateResultOrganizer_validateResultOrganizerResultObservation(chlamydiatrachomatisResultOrganizer, diagnostics, context);
-    if (result || diagnostics != null) result &= ccdValidator.validateResultOrganizer_validateResultOrganizerSpecimen(chlamydiatrachomatisResultOrganizer, diagnostics, context);
     if (result || diagnostics != null) result &= phcrValidator.validateResultOrganizer_validatePHCRResultOrganizerClassCode(chlamydiatrachomatisResultOrganizer, diagnostics, context);
     if (result || diagnostics != null) result &= phcrValidator.validateResultOrganizer_validatePHCRResultOrganizerMoodCode(chlamydiatrachomatisResultOrganizer, diagnostics, context);
     if (result || diagnostics != null) result &= phcrValidator.validateResultOrganizer_validatePHCRResultOrganizerId(chlamydiatrachomatisResultOrganizer, diagnostics, context);
@@ -760,7 +865,28 @@ public class ChlamydiatrachomatisValidator extends EObjectValidator
    */
   public boolean validatechlamydiatrachomatisResultOrganizer_validateResultOrganizerTemplateId(chlamydiatrachomatisResultOrganizer chlamydiatrachomatisResultOrganizer, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
-    return chlamydiatrachomatisResultOrganizer.validateResultOrganizerTemplateId(diagnostics, context);
+    // TODO override the constraint, if desired
+    // -> uncomment the scaffolding
+    // -> specify the condition that violates the constraint
+    // -> verify the diagnostic details, including severity, code, and message
+    // Ensure that you remove @generated or mark it @generated NOT
+    if (false)
+    {
+      if (diagnostics != null)
+      {
+        diagnostics.add
+          (createDiagnostic
+            (Diagnostic.ERROR,
+             DIAGNOSTIC_SOURCE,
+             0,
+             "_UI_GenericConstraint_diagnostic",
+             new Object[] { "validateResultOrganizerTemplateId", getObjectLabel(chlamydiatrachomatisResultOrganizer, context) },
+             new Object[] { chlamydiatrachomatisResultOrganizer },
+             context));
+      }
+      return false;
+    }
+    return phcrValidator.validateResultOrganizer_validateResultOrganizerTemplateId(chlamydiatrachomatisResultOrganizer, diagnostics, context);
   }
 
   /**
@@ -809,7 +935,28 @@ public class ChlamydiatrachomatisValidator extends EObjectValidator
    */
   public boolean validateChlamydiatrachomatisPHCRTreatmentInformationSection_validatePhcrTreatmentInformationSectionTemplateId(ChlamydiatrachomatisPHCRTreatmentInformationSection chlamydiatrachomatisPHCRTreatmentInformationSection, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
-    return chlamydiatrachomatisPHCRTreatmentInformationSection.validatePhcrTreatmentInformationSectionTemplateId(diagnostics, context);
+    // TODO override the constraint, if desired
+    // -> uncomment the scaffolding
+    // -> specify the condition that violates the constraint
+    // -> verify the diagnostic details, including severity, code, and message
+    // Ensure that you remove @generated or mark it @generated NOT
+    if (false)
+    {
+      if (diagnostics != null)
+      {
+        diagnostics.add
+          (createDiagnostic
+            (Diagnostic.ERROR,
+             DIAGNOSTIC_SOURCE,
+             0,
+             "_UI_GenericConstraint_diagnostic",
+             new Object[] { "validatePhcrTreatmentInformationSectionTemplateId", getObjectLabel(chlamydiatrachomatisPHCRTreatmentInformationSection, context) },
+             new Object[] { chlamydiatrachomatisPHCRTreatmentInformationSection },
+             context));
+      }
+      return false;
+    }
+    return phcrValidator.validatePhcrTreatmentInformationSection_validatePhcrTreatmentInformationSectionTemplateId(chlamydiatrachomatisPHCRTreatmentInformationSection, diagnostics, context);
   }
 
   /**
@@ -872,7 +1019,28 @@ public class ChlamydiatrachomatisValidator extends EObjectValidator
    */
   public boolean validateChlamydiatrachomatisTherapeuticRegimenAct_validateTherapeuticRegimenActTemplateId(ChlamydiatrachomatisTherapeuticRegimenAct chlamydiatrachomatisTherapeuticRegimenAct, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
-    return chlamydiatrachomatisTherapeuticRegimenAct.validateTherapeuticRegimenActTemplateId(diagnostics, context);
+    // TODO override the constraint, if desired
+    // -> uncomment the scaffolding
+    // -> specify the condition that violates the constraint
+    // -> verify the diagnostic details, including severity, code, and message
+    // Ensure that you remove @generated or mark it @generated NOT
+    if (false)
+    {
+      if (diagnostics != null)
+      {
+        diagnostics.add
+          (createDiagnostic
+            (Diagnostic.ERROR,
+             DIAGNOSTIC_SOURCE,
+             0,
+             "_UI_GenericConstraint_diagnostic",
+             new Object[] { "validateTherapeuticRegimenActTemplateId", getObjectLabel(chlamydiatrachomatisTherapeuticRegimenAct, context) },
+             new Object[] { chlamydiatrachomatisTherapeuticRegimenAct },
+             context));
+      }
+      return false;
+    }
+    return phcrValidator.validateTherapeuticRegimenAct_validateTherapeuticRegimenActTemplateId(chlamydiatrachomatisTherapeuticRegimenAct, diagnostics, context);
   }
 
   /**
@@ -911,7 +1079,28 @@ public class ChlamydiatrachomatisValidator extends EObjectValidator
    */
   public boolean validateChlamydiatrachomatisTreatmentGivenSubstanceAdministration_validateTreatmentGivenSubstanceAdministrationTemplateId(ChlamydiatrachomatisTreatmentGivenSubstanceAdministration chlamydiatrachomatisTreatmentGivenSubstanceAdministration, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
-    return chlamydiatrachomatisTreatmentGivenSubstanceAdministration.validateTreatmentGivenSubstanceAdministrationTemplateId(diagnostics, context);
+    // TODO override the constraint, if desired
+    // -> uncomment the scaffolding
+    // -> specify the condition that violates the constraint
+    // -> verify the diagnostic details, including severity, code, and message
+    // Ensure that you remove @generated or mark it @generated NOT
+    if (false)
+    {
+      if (diagnostics != null)
+      {
+        diagnostics.add
+          (createDiagnostic
+            (Diagnostic.ERROR,
+             DIAGNOSTIC_SOURCE,
+             0,
+             "_UI_GenericConstraint_diagnostic",
+             new Object[] { "validateTreatmentGivenSubstanceAdministrationTemplateId", getObjectLabel(chlamydiatrachomatisTreatmentGivenSubstanceAdministration, context) },
+             new Object[] { chlamydiatrachomatisTreatmentGivenSubstanceAdministration },
+             context));
+      }
+      return false;
+    }
+    return phcrValidator.validateTreatmentGivenSubstanceAdministration_validateTreatmentGivenSubstanceAdministrationTemplateId(chlamydiatrachomatisTreatmentGivenSubstanceAdministration, diagnostics, context);
   }
 
   /**
@@ -948,7 +1137,28 @@ public class ChlamydiatrachomatisValidator extends EObjectValidator
    */
   public boolean validateChlamydiatrachomatisTreatmentNotGivenSubstanceAdministration_validateTreatmentNotGivenSubstanceAdministrationTemplateId(ChlamydiatrachomatisTreatmentNotGivenSubstanceAdministration chlamydiatrachomatisTreatmentNotGivenSubstanceAdministration, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
-    return chlamydiatrachomatisTreatmentNotGivenSubstanceAdministration.validateTreatmentNotGivenSubstanceAdministrationTemplateId(diagnostics, context);
+    // TODO override the constraint, if desired
+    // -> uncomment the scaffolding
+    // -> specify the condition that violates the constraint
+    // -> verify the diagnostic details, including severity, code, and message
+    // Ensure that you remove @generated or mark it @generated NOT
+    if (false)
+    {
+      if (diagnostics != null)
+      {
+        diagnostics.add
+          (createDiagnostic
+            (Diagnostic.ERROR,
+             DIAGNOSTIC_SOURCE,
+             0,
+             "_UI_GenericConstraint_diagnostic",
+             new Object[] { "validateTreatmentNotGivenSubstanceAdministrationTemplateId", getObjectLabel(chlamydiatrachomatisTreatmentNotGivenSubstanceAdministration, context) },
+             new Object[] { chlamydiatrachomatisTreatmentNotGivenSubstanceAdministration },
+             context));
+      }
+      return false;
+    }
+    return phcrValidator.validateTreatmentNotGivenSubstanceAdministration_validateTreatmentNotGivenSubstanceAdministrationTemplateId(chlamydiatrachomatisTreatmentNotGivenSubstanceAdministration, diagnostics, context);
   }
 
   /**

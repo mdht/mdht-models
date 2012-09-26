@@ -26,8 +26,6 @@ import org.openhealthtools.mdht.uml.cda.phcr.tuberculosis.TuberculosisPossibleEx
 
 import org.openhealthtools.mdht.uml.cda.phcr.tuberculosis.operations.TuberculosisPossibleExposureLocationActOperations;
 
-import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
-
 /**
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Possible Exposure Location Act</b></em>'.
@@ -39,77 +37,77 @@ import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
  */
 public class TuberculosisPossibleExposureLocationActImpl extends ActImpl implements TuberculosisPossibleExposureLocationAct {
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	protected TuberculosisPossibleExposureLocationActImpl() {
-    super();
-  }
+		super();
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	@Override
 	protected EClass eStaticClass() {
-    return TuberculosisPackage.Literals.TUBERCULOSIS_POSSIBLE_EXPOSURE_LOCATION_ACT;
-  }
+		return TuberculosisPackage.Literals.TUBERCULOSIS_POSSIBLE_EXPOSURE_LOCATION_ACT;
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public boolean validateTuberculosisPossibleExposureLocationActTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return TuberculosisPossibleExposureLocationActOperations.validateTuberculosisPossibleExposureLocationActTemplateId(this, diagnostics, context);
-  }
+		return TuberculosisPossibleExposureLocationActOperations.validateTuberculosisPossibleExposureLocationActTemplateId(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public boolean validateTuberculosisPossibleExposureLocationActClassCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return TuberculosisPossibleExposureLocationActOperations.validateTuberculosisPossibleExposureLocationActClassCode(this, diagnostics, context);
-  }
+		return TuberculosisPossibleExposureLocationActOperations.validateTuberculosisPossibleExposureLocationActClassCode(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public boolean validateTuberculosisPossibleExposureLocationActCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return TuberculosisPossibleExposureLocationActOperations.validateTuberculosisPossibleExposureLocationActCode(this, diagnostics, context);
-  }
+		return TuberculosisPossibleExposureLocationActOperations.validateTuberculosisPossibleExposureLocationActCode(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public boolean validateTuberculosisPossibleExposureLocationActMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return TuberculosisPossibleExposureLocationActOperations.validateTuberculosisPossibleExposureLocationActMoodCode(this, diagnostics, context);
-  }
+		return TuberculosisPossibleExposureLocationActOperations.validateTuberculosisPossibleExposureLocationActMoodCode(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public boolean validateTuberculosisPossibleExposureLocationActStatusCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return TuberculosisPossibleExposureLocationActOperations.validateTuberculosisPossibleExposureLocationActStatusCode(this, diagnostics, context);
-  }
+		return TuberculosisPossibleExposureLocationActOperations.validateTuberculosisPossibleExposureLocationActStatusCode(this, diagnostics, context);
+	}
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   public TuberculosisPossibleExposureLocationAct init() {
-      return Initializer.Util.init(this);
-  }
+	    return Initializer.Util.init(this);
+	}
 
   /**
      * <!-- begin-user-doc -->

@@ -10,20 +10,21 @@
  *******************************************************************************/
 package org.openhealthtools.mdht.uml.cda.phcr.flu.impl;
 
+import java.lang.Iterable;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
 
 import org.eclipse.emf.ecore.EClass;
 
+import org.eclipse.emf.ecore.EObject;
+import org.openhealthtools.mdht.emf.runtime.util.Initializer;
 import org.openhealthtools.mdht.uml.cda.phcr.flu.InfluenzaTreatmentGivenSubstanceAdministration;
 import org.openhealthtools.mdht.uml.cda.phcr.flu.fluPackage;
 
 import org.openhealthtools.mdht.uml.cda.phcr.flu.operations.InfluenzaTreatmentGivenSubstanceAdministrationOperations;
 
 import org.openhealthtools.mdht.uml.cda.phcr.impl.TreatmentGivenSubstanceAdministrationImpl;
-
-import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
 
 /**
  * <!-- begin-user-doc -->
@@ -69,8 +70,19 @@ public class InfluenzaTreatmentGivenSubstanceAdministrationImpl extends Treatmen
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public InfluenzaTreatmentGivenSubstanceAdministration init() {
-    	CDAUtil.init(this);
-    	return this;
+	    return Initializer.Util.init(this);
 	}
+
+	/**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    @Override
+	public InfluenzaTreatmentGivenSubstanceAdministration init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
 } //InfluenzaTreatmentGivenSubstanceAdministrationImpl

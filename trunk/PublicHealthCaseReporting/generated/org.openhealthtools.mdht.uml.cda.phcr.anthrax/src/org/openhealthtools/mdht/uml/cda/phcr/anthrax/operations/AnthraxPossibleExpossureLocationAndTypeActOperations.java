@@ -83,6 +83,7 @@ public class AnthraxPossibleExpossureLocationAndTypeActOperations extends Clinic
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
+   * self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.15.3.41')
    * @param anthraxPossibleExpossureLocationAndTypeAct The receiving '<em><b>Possible Expossure Location And Type Act</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -91,8 +92,8 @@ public class AnthraxPossibleExpossureLocationAndTypeActOperations extends Clinic
    */
 	
 	public static  boolean validateAnthraxPossibleExpossureLocationAndTypeActTemplateId(AnthraxPossibleExpossureLocationAndTypeAct anthraxPossibleExpossureLocationAndTypeAct, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
-    if (VALIDATE_ANTHRAX_POSSIBLE_EXPOSSURE_LOCATION_AND_TYPE_ACT_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+    if (VALIDATE_ANTHRAX_POSSIBLE_EXPOSSURE_LOCATION_AND_TYPE_ACT_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null)
+    {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(AnthraxPackage.Literals.ANTHRAX_POSSIBLE_EXPOSSURE_LOCATION_AND_TYPE_ACT);
       try
@@ -113,10 +114,9 @@ public class AnthraxPossibleExpossureLocationAndTypeActOperations extends Clinic
             (Diagnostic.ERROR,
              AnthraxValidator.DIAGNOSTIC_SOURCE,
              AnthraxValidator.ANTHRAX_POSSIBLE_EXPOSSURE_LOCATION_AND_TYPE_ACT__ANTHRAX_POSSIBLE_EXPOSSURE_LOCATION_AND_TYPE_ACT_TEMPLATE_ID,
-             AnthraxPlugin.INSTANCE.getString("AnthraxPossibleExpossureLocationAndTypeActTemplateId"),
+             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "validateAnthraxPossibleExpossureLocationAndTypeActTemplateId", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(anthraxPossibleExpossureLocationAndTypeAct, context) }),
              new Object [] { anthraxPossibleExpossureLocationAndTypeAct }));
       }
-       
       return false;
     }
     return true;
@@ -148,6 +148,7 @@ public class AnthraxPossibleExpossureLocationAndTypeActOperations extends Clinic
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
+   * self.classCode=vocab::x_ActClassDocumentEntryAct::ACT
    * @param anthraxPossibleExpossureLocationAndTypeAct The receiving '<em><b>Possible Expossure Location And Type Act</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -156,8 +157,8 @@ public class AnthraxPossibleExpossureLocationAndTypeActOperations extends Clinic
    */
 	
 	public static  boolean validateAnthraxPossibleExpossureLocationAndTypeActClassCode(AnthraxPossibleExpossureLocationAndTypeAct anthraxPossibleExpossureLocationAndTypeAct, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
-    if (VALIDATE_ANTHRAX_POSSIBLE_EXPOSSURE_LOCATION_AND_TYPE_ACT_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+    if (VALIDATE_ANTHRAX_POSSIBLE_EXPOSSURE_LOCATION_AND_TYPE_ACT_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null)
+    {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(AnthraxPackage.Literals.ANTHRAX_POSSIBLE_EXPOSSURE_LOCATION_AND_TYPE_ACT);
       try
@@ -178,10 +179,9 @@ public class AnthraxPossibleExpossureLocationAndTypeActOperations extends Clinic
             (Diagnostic.ERROR,
              AnthraxValidator.DIAGNOSTIC_SOURCE,
              AnthraxValidator.ANTHRAX_POSSIBLE_EXPOSSURE_LOCATION_AND_TYPE_ACT__ANTHRAX_POSSIBLE_EXPOSSURE_LOCATION_AND_TYPE_ACT_CLASS_CODE,
-             AnthraxPlugin.INSTANCE.getString("AnthraxPossibleExpossureLocationAndTypeActClassCode"),
+             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "validateAnthraxPossibleExpossureLocationAndTypeActClassCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(anthraxPossibleExpossureLocationAndTypeAct, context) }),
              new Object [] { anthraxPossibleExpossureLocationAndTypeAct }));
       }
-       
       return false;
     }
     return true;
@@ -213,6 +213,7 @@ public class AnthraxPossibleExpossureLocationAndTypeActOperations extends Clinic
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
+   * self.moodCode=vocab::x_DocumentActMood::EVN
    * @param anthraxPossibleExpossureLocationAndTypeAct The receiving '<em><b>Possible Expossure Location And Type Act</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -221,8 +222,8 @@ public class AnthraxPossibleExpossureLocationAndTypeActOperations extends Clinic
    */
 	
 	public static  boolean validateAnthraxPossibleExpossureLocationAndTypeActMoodCode(AnthraxPossibleExpossureLocationAndTypeAct anthraxPossibleExpossureLocationAndTypeAct, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
-    if (VALIDATE_ANTHRAX_POSSIBLE_EXPOSSURE_LOCATION_AND_TYPE_ACT_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+    if (VALIDATE_ANTHRAX_POSSIBLE_EXPOSSURE_LOCATION_AND_TYPE_ACT_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null)
+    {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(AnthraxPackage.Literals.ANTHRAX_POSSIBLE_EXPOSSURE_LOCATION_AND_TYPE_ACT);
       try
@@ -243,10 +244,9 @@ public class AnthraxPossibleExpossureLocationAndTypeActOperations extends Clinic
             (Diagnostic.ERROR,
              AnthraxValidator.DIAGNOSTIC_SOURCE,
              AnthraxValidator.ANTHRAX_POSSIBLE_EXPOSSURE_LOCATION_AND_TYPE_ACT__ANTHRAX_POSSIBLE_EXPOSSURE_LOCATION_AND_TYPE_ACT_MOOD_CODE,
-             AnthraxPlugin.INSTANCE.getString("AnthraxPossibleExpossureLocationAndTypeActMoodCode"),
+             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "validateAnthraxPossibleExpossureLocationAndTypeActMoodCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(anthraxPossibleExpossureLocationAndTypeAct, context) }),
              new Object [] { anthraxPossibleExpossureLocationAndTypeAct }));
       }
-       
       return false;
     }
     return true;
@@ -280,6 +280,9 @@ public class AnthraxPossibleExpossureLocationAndTypeActOperations extends Clinic
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
+   * (self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and 
+   * let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in 
+   * value.code = '413350009' and value.codeSystem = '2.16.840.1.113883.6.96')
    * @param anthraxPossibleExpossureLocationAndTypeAct The receiving '<em><b>Possible Expossure Location And Type Act</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -288,8 +291,8 @@ public class AnthraxPossibleExpossureLocationAndTypeActOperations extends Clinic
    */
 	
 	public static  boolean validateAnthraxPossibleExpossureLocationAndTypeActCode(AnthraxPossibleExpossureLocationAndTypeAct anthraxPossibleExpossureLocationAndTypeAct, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
-    if (VALIDATE_ANTHRAX_POSSIBLE_EXPOSSURE_LOCATION_AND_TYPE_ACT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+    if (VALIDATE_ANTHRAX_POSSIBLE_EXPOSSURE_LOCATION_AND_TYPE_ACT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null)
+    {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(AnthraxPackage.Literals.ANTHRAX_POSSIBLE_EXPOSSURE_LOCATION_AND_TYPE_ACT);
       try
@@ -310,10 +313,9 @@ public class AnthraxPossibleExpossureLocationAndTypeActOperations extends Clinic
             (Diagnostic.ERROR,
              AnthraxValidator.DIAGNOSTIC_SOURCE,
              AnthraxValidator.ANTHRAX_POSSIBLE_EXPOSSURE_LOCATION_AND_TYPE_ACT__ANTHRAX_POSSIBLE_EXPOSSURE_LOCATION_AND_TYPE_ACT_CODE,
-             AnthraxPlugin.INSTANCE.getString("AnthraxPossibleExpossureLocationAndTypeActCode"),
+             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "validateAnthraxPossibleExpossureLocationAndTypeActCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(anthraxPossibleExpossureLocationAndTypeAct, context) }),
              new Object [] { anthraxPossibleExpossureLocationAndTypeAct }));
       }
-       
       return false;
     }
     return true;
@@ -347,6 +349,9 @@ public class AnthraxPossibleExpossureLocationAndTypeActOperations extends Clinic
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
+   * (self.statusCode.oclIsUndefined() or self.statusCode.isNullFlavorUndefined()) implies (not self.statusCode.oclIsUndefined() and self.statusCode.oclIsKindOf(datatypes::CS) and 
+   * let value : datatypes::CS = self.statusCode.oclAsType(datatypes::CS) in 
+   * value.code = 'completed')
    * @param anthraxPossibleExpossureLocationAndTypeAct The receiving '<em><b>Possible Expossure Location And Type Act</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -355,8 +360,8 @@ public class AnthraxPossibleExpossureLocationAndTypeActOperations extends Clinic
    */
 	
 	public static  boolean validateAnthraxPossibleExpossureLocationAndTypeActStatusCode(AnthraxPossibleExpossureLocationAndTypeAct anthraxPossibleExpossureLocationAndTypeAct, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
-    if (VALIDATE_ANTHRAX_POSSIBLE_EXPOSSURE_LOCATION_AND_TYPE_ACT_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+    if (VALIDATE_ANTHRAX_POSSIBLE_EXPOSSURE_LOCATION_AND_TYPE_ACT_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null)
+    {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(AnthraxPackage.Literals.ANTHRAX_POSSIBLE_EXPOSSURE_LOCATION_AND_TYPE_ACT);
       try
@@ -377,10 +382,9 @@ public class AnthraxPossibleExpossureLocationAndTypeActOperations extends Clinic
             (Diagnostic.ERROR,
              AnthraxValidator.DIAGNOSTIC_SOURCE,
              AnthraxValidator.ANTHRAX_POSSIBLE_EXPOSSURE_LOCATION_AND_TYPE_ACT__ANTHRAX_POSSIBLE_EXPOSSURE_LOCATION_AND_TYPE_ACT_STATUS_CODE,
-             AnthraxPlugin.INSTANCE.getString("AnthraxPossibleExpossureLocationAndTypeActStatusCode"),
+             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "validateAnthraxPossibleExpossureLocationAndTypeActStatusCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(anthraxPossibleExpossureLocationAndTypeAct, context) }),
              new Object [] { anthraxPossibleExpossureLocationAndTypeAct }));
       }
-       
       return false;
     }
     return true;

@@ -15,30 +15,21 @@ import java.util.Map;
 import org.eclipse.emf.common.util.BasicDiagnostic;
 import org.eclipse.emf.common.util.Diagnostic;
 import org.eclipse.emf.common.util.DiagnosticChain;
-
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EClassifier;
-
+import org.eclipse.emf.ecore.EObject;
 import org.eclipse.emf.ecore.plugin.EcorePlugin;
-
 import org.eclipse.emf.ecore.util.EObjectValidator;
-
 import org.eclipse.ocl.ParserException;
-
 import org.eclipse.ocl.ecore.Constraint;
 import org.eclipse.ocl.ecore.OCL;
-
 import org.eclipse.ocl.expressions.OCLExpression;
-
+import org.openhealthtools.mdht.emf.runtime.util.Initializer;
 import org.openhealthtools.mdht.uml.cda.phcr.impl.ResultOrganizerImpl;
-
 import org.openhealthtools.mdht.uml.cda.phcr.meningococcal.MeningococcalPackage;
 import org.openhealthtools.mdht.uml.cda.phcr.meningococcal.MeningococcalResultObservation;
 import org.openhealthtools.mdht.uml.cda.phcr.meningococcal.MeningococcalResultOrganizer;
-
 import org.openhealthtools.mdht.uml.cda.phcr.meningococcal.util.MeningococcalValidator;
-
-import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
 
 /**
  * <!-- begin-user-doc -->
@@ -77,7 +68,7 @@ public class MeningococcalResultOrganizerImpl extends ResultOrganizerImpl implem
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String GET_MENINGOCOCCAL_RESULT_OBSERVATION__EOCL_EXP = "self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(meningococcal::MeningococcalResultObservation))->asSequence()->first().oclAsType(meningococcal::MeningococcalResultObservation)";
+	protected static final String GET_MENINGOCOCCAL_RESULT_OBSERVATION__EOCL_EXP = "self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(meningococcal::MeningococcalResultObservation))->asSequence()->any(true).oclAsType(meningococcal::MeningococcalResultObservation)";
 
 	/**
 	 * The cached OCL query for the '{@link #getMeningococcalResultObservation() <em>Get Meningococcal Result Observation</em>}' query operation.
@@ -97,7 +88,7 @@ public class MeningococcalResultOrganizerImpl extends ResultOrganizerImpl implem
 	public MeningococcalResultObservation getMeningococcalResultObservation() {
 		if (GET_MENINGOCOCCAL_RESULT_OBSERVATION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(MeningococcalPackage.Literals.MENINGOCOCCAL_RESULT_ORGANIZER, MeningococcalPackage.Literals.MENINGOCOCCAL_RESULT_ORGANIZER.getEAllOperations().get(71));
+			helper.setOperationContext(MeningococcalPackage.Literals.MENINGOCOCCAL_RESULT_ORGANIZER, MeningococcalPackage.Literals.MENINGOCOCCAL_RESULT_ORGANIZER.getEAllOperations().get(73));
 			try {
 				GET_MENINGOCOCCAL_RESULT_OBSERVATION__EOCL_QRY = helper.createQuery(GET_MENINGOCOCCAL_RESULT_OBSERVATION__EOCL_EXP);
 			}
@@ -175,8 +166,19 @@ public class MeningococcalResultOrganizerImpl extends ResultOrganizerImpl implem
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public MeningococcalResultOrganizer init() {
-    	CDAUtil.init(this);
-    	return this;
+	    return Initializer.Util.init(this);
 	}
+
+	/**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    @Override
+	public MeningococcalResultOrganizer init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
 } //MeningococcalResultOrganizerImpl

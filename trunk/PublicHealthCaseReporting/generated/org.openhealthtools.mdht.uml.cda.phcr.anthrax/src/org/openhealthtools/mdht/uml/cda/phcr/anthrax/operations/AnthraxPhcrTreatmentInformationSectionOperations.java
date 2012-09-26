@@ -79,6 +79,7 @@ public class AnthraxPhcrTreatmentInformationSectionOperations extends PhcrTreatm
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
+   * self.entry->one(entry : cda::Entry | not entry.act.oclIsUndefined() and entry.act.oclIsKindOf(anthrax::AnthraxTherapeuticRegimenAct) and entry.typeCode = vocab::x_ActRelationshipEntry::DRIV)
    * @param anthraxPhcrTreatmentInformationSection The receiving '<em><b>Phcr Treatment Information Section</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -87,8 +88,8 @@ public class AnthraxPhcrTreatmentInformationSectionOperations extends PhcrTreatm
    */
 	
 	public static  boolean validateAnthraxPhcrTreatmentInformationSectionAnthraxTherapeuticRegimenAct(AnthraxPhcrTreatmentInformationSection anthraxPhcrTreatmentInformationSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
-    if (VALIDATE_ANTHRAX_PHCR_TREATMENT_INFORMATION_SECTION_ANTHRAX_THERAPEUTIC_REGIMEN_ACT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+    if (VALIDATE_ANTHRAX_PHCR_TREATMENT_INFORMATION_SECTION_ANTHRAX_THERAPEUTIC_REGIMEN_ACT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null)
+    {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(AnthraxPackage.Literals.ANTHRAX_PHCR_TREATMENT_INFORMATION_SECTION);
       try
@@ -109,10 +110,9 @@ public class AnthraxPhcrTreatmentInformationSectionOperations extends PhcrTreatm
             (Diagnostic.ERROR,
              AnthraxValidator.DIAGNOSTIC_SOURCE,
              AnthraxValidator.ANTHRAX_PHCR_TREATMENT_INFORMATION_SECTION__ANTHRAX_PHCR_TREATMENT_INFORMATION_SECTION_ANTHRAX_THERAPEUTIC_REGIMEN_ACT,
-             AnthraxPlugin.INSTANCE.getString("AnthraxPhcrTreatmentInformationSectionAnthraxTherapeuticRegimenAct"),
+             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "validateAnthraxPhcrTreatmentInformationSectionAnthraxTherapeuticRegimenAct", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(anthraxPhcrTreatmentInformationSection, context) }),
              new Object [] { anthraxPhcrTreatmentInformationSection }));
       }
-       
       return false;
     }
     return true;
@@ -142,6 +142,10 @@ public class AnthraxPhcrTreatmentInformationSectionOperations extends PhcrTreatm
 	/**
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
+   * <!-- begin-model-doc -->
+   * self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(anthrax::AnthraxTherapeuticRegimenAct))->asSequence()->any(true).oclAsType(anthrax::AnthraxTherapeuticRegimenAct)
+   * @param anthraxPhcrTreatmentInformationSection The receiving '<em><b>Phcr Treatment Information Section</b></em>' model object.
+   * <!-- end-model-doc -->
    * @generated
    */
 	
@@ -189,6 +193,7 @@ public class AnthraxPhcrTreatmentInformationSectionOperations extends PhcrTreatm
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
+   * self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.15.2.14')
    * @param anthraxPhcrTreatmentInformationSection The receiving '<em><b>Phcr Treatment Information Section</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -197,8 +202,8 @@ public class AnthraxPhcrTreatmentInformationSectionOperations extends PhcrTreatm
    */
 	
 	public static  boolean validatePhcrTreatmentInformationSectionTemplateId(AnthraxPhcrTreatmentInformationSection anthraxPhcrTreatmentInformationSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
-    if (VALIDATE_PHCR_TREATMENT_INFORMATION_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+    if (VALIDATE_PHCR_TREATMENT_INFORMATION_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null)
+    {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(AnthraxPackage.Literals.ANTHRAX_PHCR_TREATMENT_INFORMATION_SECTION);
       try
@@ -219,10 +224,9 @@ public class AnthraxPhcrTreatmentInformationSectionOperations extends PhcrTreatm
             (Diagnostic.ERROR,
              AnthraxValidator.DIAGNOSTIC_SOURCE,
              AnthraxValidator.ANTHRAX_PHCR_TREATMENT_INFORMATION_SECTION__PHCR_TREATMENT_INFORMATION_SECTION_TEMPLATE_ID,
-             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "PhcrTreatmentInformationSectionTemplateId", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(anthraxPhcrTreatmentInformationSection, context) }),
+             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "validatePhcrTreatmentInformationSectionTemplateId", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(anthraxPhcrTreatmentInformationSection, context) }),
              new Object [] { anthraxPhcrTreatmentInformationSection }));
       }
-       
       return false;
     }
     return true;

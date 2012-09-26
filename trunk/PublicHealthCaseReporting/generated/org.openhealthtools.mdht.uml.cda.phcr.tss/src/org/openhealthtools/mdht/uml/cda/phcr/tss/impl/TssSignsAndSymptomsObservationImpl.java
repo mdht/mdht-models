@@ -27,8 +27,6 @@ import org.openhealthtools.mdht.uml.cda.phcr.tss.operations.TssSignsAndSymptomsO
 
 import org.openhealthtools.mdht.uml.cda.phcr.tss.tssPackage;
 
-import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
-
 /**
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Tss Signs And Symptoms Observation</b></em>'.
@@ -77,23 +75,4 @@ public class TssSignsAndSymptomsObservationImpl extends SignsAndSymptomsObservat
 	public boolean validateSignsAndSymptomsObservationTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
     return TssSignsAndSymptomsObservationOperations.validateSignsAndSymptomsObservationTemplateId(this, diagnostics, context);
   }
-
-	/**
-   * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-   * @generated
-   */
-	public TssSignsAndSymptomsObservation init() {
-      return Initializer.Util.init(this);
-  }
-
-  /**
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    public TssSignsAndSymptomsObservation init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-        Initializer.Util.init(this, initializers);
-        return this;
-    }
 } //TssSignsAndSymptomsObservationImpl

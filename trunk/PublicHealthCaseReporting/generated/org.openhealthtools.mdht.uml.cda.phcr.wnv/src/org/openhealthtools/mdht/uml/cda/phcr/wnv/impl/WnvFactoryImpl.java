@@ -34,156 +34,152 @@ import org.openhealthtools.mdht.uml.cda.phcr.wnv.WnvSignsAndSymptomsObservation;
 public class WnvFactoryImpl extends EFactoryImpl implements WnvFactory
 {
   /**
-   * Creates the default factory implementation.
-   * <!-- begin-user-doc -->
+	 * Creates the default factory implementation.
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   public static WnvFactory init()
   {
-    try
-    {
-      WnvFactory theWnvFactory = (WnvFactory)EPackage.Registry.INSTANCE.getEFactory("http://www.openhealthtools.org/mdht/uml/cda/phcr/wnv"); 
-      if (theWnvFactory != null)
-      {
-        return theWnvFactory;
-      }
-    }
-    catch (Exception exception)
-    {
-      EcorePlugin.INSTANCE.log(exception);
-    }
-    return new WnvFactoryImpl();
-  }
+		try {
+			WnvFactory theWnvFactory = (WnvFactory)EPackage.Registry.INSTANCE.getEFactory("http://www.openhealthtools.org/mdht/uml/cda/phcr/wnv"); 
+			if (theWnvFactory != null) {
+				return theWnvFactory;
+			}
+		}
+		catch (Exception exception) {
+			EcorePlugin.INSTANCE.log(exception);
+		}
+		return new WnvFactoryImpl();
+	}
 
   /**
-   * Creates an instance of the factory.
-   * <!-- begin-user-doc -->
+	 * Creates an instance of the factory.
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   public WnvFactoryImpl()
   {
-    super();
-  }
+		super();
+	}
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   @Override
   public EObject create(EClass eClass)
   {
-    switch (eClass.getClassifierID())
-    {
-      case WnvPackage.WEST_NILE_VIRUS_CASE_REPORT: return createWestNileVirusCaseReport();
-      case WnvPackage.WNV_PHCR_CLINICAL_INFORMATION_SECTION: return createWnvPhcrClinicalInformationSection();
-      case WnvPackage.WNV_CASE_OBSERVATION: return createWnvCaseObservation();
-      case WnvPackage.WNV_SIGNS_AND_SYMPTOMS_OBSERVATION: return createWnvSignsAndSymptomsObservation();
-      case WnvPackage.WNV_PHCR_RELEVANT_DX_TESTS_SECTION: return createWnvPhcrRelevantDxTestsSection();
-      case WnvPackage.WNV_RESULT_OBSERVATION: return createWnvResultObservation();
-      case WnvPackage.WNV_RESULT_ORGANIZER: return createWnvResultOrganizer();
-      default:
-        throw new IllegalArgumentException("The class '" + eClass.getName() + "' is not a valid classifier");
-    }
-  }
+		switch (eClass.getClassifierID()) {
+			case WnvPackage.WEST_NILE_VIRUS_CASE_REPORT: return createWestNileVirusCaseReport();
+			case WnvPackage.WNV_PHCR_CLINICAL_INFORMATION_SECTION: return createWnvPhcrClinicalInformationSection();
+			case WnvPackage.WNV_CASE_OBSERVATION: return createWnvCaseObservation();
+			case WnvPackage.WNV_SIGNS_AND_SYMPTOMS_OBSERVATION: return createWnvSignsAndSymptomsObservation();
+			case WnvPackage.WNV_PHCR_RELEVANT_DX_TESTS_SECTION: return createWnvPhcrRelevantDxTestsSection();
+			case WnvPackage.WNV_RESULT_OBSERVATION: return createWnvResultObservation();
+			case WnvPackage.WNV_RESULT_ORGANIZER: return createWnvResultOrganizer();
+			default:
+				throw new IllegalArgumentException("The class '" + eClass.getName() + "' is not a valid classifier");
+		}
+	}
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   public WestNileVirusCaseReport createWestNileVirusCaseReport()
   {
-    WestNileVirusCaseReportImpl westNileVirusCaseReport = new WestNileVirusCaseReportImpl();
-    return westNileVirusCaseReport;
-  }
+		WestNileVirusCaseReportImpl westNileVirusCaseReport = new WestNileVirusCaseReportImpl();
+		return westNileVirusCaseReport;
+	}
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   public WnvPhcrClinicalInformationSection createWnvPhcrClinicalInformationSection()
   {
-    WnvPhcrClinicalInformationSectionImpl wnvPhcrClinicalInformationSection = new WnvPhcrClinicalInformationSectionImpl();
-    return wnvPhcrClinicalInformationSection;
-  }
+		WnvPhcrClinicalInformationSectionImpl wnvPhcrClinicalInformationSection = new WnvPhcrClinicalInformationSectionImpl();
+		return wnvPhcrClinicalInformationSection;
+	}
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   public WnvCaseObservation createWnvCaseObservation()
   {
-    WnvCaseObservationImpl wnvCaseObservation = new WnvCaseObservationImpl();
-    return wnvCaseObservation;
-  }
+		WnvCaseObservationImpl wnvCaseObservation = new WnvCaseObservationImpl();
+		return wnvCaseObservation;
+	}
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   public WnvSignsAndSymptomsObservation createWnvSignsAndSymptomsObservation()
   {
-    WnvSignsAndSymptomsObservationImpl wnvSignsAndSymptomsObservation = new WnvSignsAndSymptomsObservationImpl();
-    return wnvSignsAndSymptomsObservation;
-  }
+		WnvSignsAndSymptomsObservationImpl wnvSignsAndSymptomsObservation = new WnvSignsAndSymptomsObservationImpl();
+		return wnvSignsAndSymptomsObservation;
+	}
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   public WnvPhcrRelevantDxTestsSection createWnvPhcrRelevantDxTestsSection()
   {
-    WnvPhcrRelevantDxTestsSectionImpl wnvPhcrRelevantDxTestsSection = new WnvPhcrRelevantDxTestsSectionImpl();
-    return wnvPhcrRelevantDxTestsSection;
-  }
+		WnvPhcrRelevantDxTestsSectionImpl wnvPhcrRelevantDxTestsSection = new WnvPhcrRelevantDxTestsSectionImpl();
+		return wnvPhcrRelevantDxTestsSection;
+	}
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public WnvResultObservation createWnvResultObservation() {
-    WnvResultObservationImpl wnvResultObservation = new WnvResultObservationImpl();
-    return wnvResultObservation;
-  }
+		WnvResultObservationImpl wnvResultObservation = new WnvResultObservationImpl();
+		return wnvResultObservation;
+	}
 
 		/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public WnvResultOrganizer createWnvResultOrganizer() {
-    WnvResultOrganizerImpl wnvResultOrganizer = new WnvResultOrganizerImpl();
-    return wnvResultOrganizer;
-  }
+		WnvResultOrganizerImpl wnvResultOrganizer = new WnvResultOrganizerImpl();
+		return wnvResultOrganizer;
+	}
 
 		/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   public WnvPackage getWnvPackage()
   {
-    return (WnvPackage)getEPackage();
-  }
+		return (WnvPackage)getEPackage();
+	}
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @deprecated
-   * @generated
-   */
+	 * @deprecated
+	 * @generated
+	 */
   @Deprecated
   public static WnvPackage getPackage()
   {
-    return WnvPackage.eINSTANCE;
-  }
+		return WnvPackage.eINSTANCE;
+	}
 
 } //WnvFactoryImpl

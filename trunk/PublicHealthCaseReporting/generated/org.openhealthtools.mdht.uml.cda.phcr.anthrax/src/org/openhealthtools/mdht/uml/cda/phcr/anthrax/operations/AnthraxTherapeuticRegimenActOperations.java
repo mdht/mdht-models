@@ -92,6 +92,7 @@ public class AnthraxTherapeuticRegimenActOperations extends TherapeuticRegimenAc
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
+   * self.entryRelationship->exists(entryRelationship : cda::EntryRelationship | not entryRelationship.substanceAdministration.oclIsUndefined() and entryRelationship.substanceAdministration.oclIsKindOf(anthrax::AnthraxTreatmentGivenSubstanceAdministration) and entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::COMP)
    * @param anthraxTherapeuticRegimenAct The receiving '<em><b>Therapeutic Regimen Act</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -100,8 +101,8 @@ public class AnthraxTherapeuticRegimenActOperations extends TherapeuticRegimenAc
    */
 	
 	public static  boolean validateAnthraxTherapeuticRegimenActAnthraxTreatmentGivenSubstanceAdministration(AnthraxTherapeuticRegimenAct anthraxTherapeuticRegimenAct, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
-    if (VALIDATE_ANTHRAX_THERAPEUTIC_REGIMEN_ACT_ANTHRAX_TREATMENT_GIVEN_SUBSTANCE_ADMINISTRATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+    if (VALIDATE_ANTHRAX_THERAPEUTIC_REGIMEN_ACT_ANTHRAX_TREATMENT_GIVEN_SUBSTANCE_ADMINISTRATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null)
+    {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(AnthraxPackage.Literals.ANTHRAX_THERAPEUTIC_REGIMEN_ACT);
       try
@@ -119,13 +120,12 @@ public class AnthraxTherapeuticRegimenActOperations extends TherapeuticRegimenAc
       {
         diagnostics.add
           (new BasicDiagnostic
-            (Diagnostic.WARNING,
+            (Diagnostic.ERROR,
              AnthraxValidator.DIAGNOSTIC_SOURCE,
              AnthraxValidator.ANTHRAX_THERAPEUTIC_REGIMEN_ACT__ANTHRAX_THERAPEUTIC_REGIMEN_ACT_ANTHRAX_TREATMENT_GIVEN_SUBSTANCE_ADMINISTRATION,
-             AnthraxPlugin.INSTANCE.getString("AnthraxTherapeuticRegimenActAnthraxTreatmentGivenSubstanceAdministration"),
+             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "validateAnthraxTherapeuticRegimenActAnthraxTreatmentGivenSubstanceAdministration", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(anthraxTherapeuticRegimenAct, context) }),
              new Object [] { anthraxTherapeuticRegimenAct }));
       }
-       
       return false;
     }
     return true;
@@ -157,6 +157,7 @@ public class AnthraxTherapeuticRegimenActOperations extends TherapeuticRegimenAc
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
+   * self.entryRelationship->exists(entryRelationship : cda::EntryRelationship | not entryRelationship.substanceAdministration.oclIsUndefined() and entryRelationship.substanceAdministration.oclIsKindOf(anthrax::AnthraxTreatmentNotGivenSubstanceAdministration) and entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::COMP)
    * @param anthraxTherapeuticRegimenAct The receiving '<em><b>Therapeutic Regimen Act</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -165,8 +166,8 @@ public class AnthraxTherapeuticRegimenActOperations extends TherapeuticRegimenAc
    */
 	
 	public static  boolean validateAnthraxTherapeuticRegimenActAnthraxTreatmentNotGivenSubstanceAdministration(AnthraxTherapeuticRegimenAct anthraxTherapeuticRegimenAct, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
-    if (VALIDATE_ANTHRAX_THERAPEUTIC_REGIMEN_ACT_ANTHRAX_TREATMENT_NOT_GIVEN_SUBSTANCE_ADMINISTRATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+    if (VALIDATE_ANTHRAX_THERAPEUTIC_REGIMEN_ACT_ANTHRAX_TREATMENT_NOT_GIVEN_SUBSTANCE_ADMINISTRATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null)
+    {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(AnthraxPackage.Literals.ANTHRAX_THERAPEUTIC_REGIMEN_ACT);
       try
@@ -184,13 +185,12 @@ public class AnthraxTherapeuticRegimenActOperations extends TherapeuticRegimenAc
       {
         diagnostics.add
           (new BasicDiagnostic
-            (Diagnostic.INFO,
+            (Diagnostic.ERROR,
              AnthraxValidator.DIAGNOSTIC_SOURCE,
              AnthraxValidator.ANTHRAX_THERAPEUTIC_REGIMEN_ACT__ANTHRAX_THERAPEUTIC_REGIMEN_ACT_ANTHRAX_TREATMENT_NOT_GIVEN_SUBSTANCE_ADMINISTRATION,
-             AnthraxPlugin.INSTANCE.getString("AnthraxTherapeuticRegimenActAnthraxTreatmentNotGivenSubstanceAdministration"),
+             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "validateAnthraxTherapeuticRegimenActAnthraxTreatmentNotGivenSubstanceAdministration", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(anthraxTherapeuticRegimenAct, context) }),
              new Object [] { anthraxTherapeuticRegimenAct }));
       }
-       
       return false;
     }
     return true;
@@ -220,6 +220,10 @@ public class AnthraxTherapeuticRegimenActOperations extends TherapeuticRegimenAc
 	/**
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
+   * <!-- begin-model-doc -->
+   * self.getSubstanceAdministrations()->select(substanceAdministration : cda::SubstanceAdministration | not substanceAdministration.oclIsUndefined() and substanceAdministration.oclIsKindOf(anthrax::AnthraxTreatmentGivenSubstanceAdministration)).oclAsType(anthrax::AnthraxTreatmentGivenSubstanceAdministration)
+   * @param anthraxTherapeuticRegimenAct The receiving '<em><b>Therapeutic Regimen Act</b></em>' model object.
+   * <!-- end-model-doc -->
    * @generated
    */
 	
@@ -227,7 +231,7 @@ public class AnthraxTherapeuticRegimenActOperations extends TherapeuticRegimenAc
     if (GET_ANTHRAX_TREATMENT_GIVEN_SUBSTANCE_ADMINISTRATIONS__EOCL_QRY == null)
     {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
-      helper.setOperationContext(AnthraxPackage.Literals.ANTHRAX_THERAPEUTIC_REGIMEN_ACT, AnthraxPackage.Literals.ANTHRAX_THERAPEUTIC_REGIMEN_ACT.getEAllOperations().get(65));
+      helper.setOperationContext(AnthraxPackage.Literals.ANTHRAX_THERAPEUTIC_REGIMEN_ACT, AnthraxPackage.Literals.ANTHRAX_THERAPEUTIC_REGIMEN_ACT.getEAllOperations().get(63));
       try
       {
         GET_ANTHRAX_TREATMENT_GIVEN_SUBSTANCE_ADMINISTRATIONS__EOCL_QRY = helper.createQuery(GET_ANTHRAX_TREATMENT_GIVEN_SUBSTANCE_ADMINISTRATIONS__EOCL_EXP);
@@ -267,6 +271,10 @@ public class AnthraxTherapeuticRegimenActOperations extends TherapeuticRegimenAc
 	/**
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
+   * <!-- begin-model-doc -->
+   * self.getSubstanceAdministrations()->select(substanceAdministration : cda::SubstanceAdministration | not substanceAdministration.oclIsUndefined() and substanceAdministration.oclIsKindOf(anthrax::AnthraxTreatmentNotGivenSubstanceAdministration)).oclAsType(anthrax::AnthraxTreatmentNotGivenSubstanceAdministration)
+   * @param anthraxTherapeuticRegimenAct The receiving '<em><b>Therapeutic Regimen Act</b></em>' model object.
+   * <!-- end-model-doc -->
    * @generated
    */
 	
@@ -274,7 +282,7 @@ public class AnthraxTherapeuticRegimenActOperations extends TherapeuticRegimenAc
     if (GET_ANTHRAX_TREATMENT_NOT_GIVEN_SUBSTANCE_ADMINISTRATIONS__EOCL_QRY == null)
     {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
-      helper.setOperationContext(AnthraxPackage.Literals.ANTHRAX_THERAPEUTIC_REGIMEN_ACT, AnthraxPackage.Literals.ANTHRAX_THERAPEUTIC_REGIMEN_ACT.getEAllOperations().get(66));
+      helper.setOperationContext(AnthraxPackage.Literals.ANTHRAX_THERAPEUTIC_REGIMEN_ACT, AnthraxPackage.Literals.ANTHRAX_THERAPEUTIC_REGIMEN_ACT.getEAllOperations().get(64));
       try
       {
         GET_ANTHRAX_TREATMENT_NOT_GIVEN_SUBSTANCE_ADMINISTRATIONS__EOCL_QRY = helper.createQuery(GET_ANTHRAX_TREATMENT_NOT_GIVEN_SUBSTANCE_ADMINISTRATIONS__EOCL_EXP);
@@ -316,6 +324,7 @@ public class AnthraxTherapeuticRegimenActOperations extends TherapeuticRegimenAc
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
+   * self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.15.3.37')
    * @param anthraxTherapeuticRegimenAct The receiving '<em><b>Therapeutic Regimen Act</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -324,8 +333,8 @@ public class AnthraxTherapeuticRegimenActOperations extends TherapeuticRegimenAc
    */
 	
 	public static  boolean validateTherapeuticRegimenActTemplateId(AnthraxTherapeuticRegimenAct anthraxTherapeuticRegimenAct, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
-    if (VALIDATE_THERAPEUTIC_REGIMEN_ACT_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+    if (VALIDATE_THERAPEUTIC_REGIMEN_ACT_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null)
+    {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(AnthraxPackage.Literals.ANTHRAX_THERAPEUTIC_REGIMEN_ACT);
       try
@@ -346,10 +355,9 @@ public class AnthraxTherapeuticRegimenActOperations extends TherapeuticRegimenAc
             (Diagnostic.ERROR,
              AnthraxValidator.DIAGNOSTIC_SOURCE,
              AnthraxValidator.ANTHRAX_THERAPEUTIC_REGIMEN_ACT__THERAPEUTIC_REGIMEN_ACT_TEMPLATE_ID,
-             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "TherapeuticRegimenActTemplateId", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(anthraxTherapeuticRegimenAct, context) }),
+             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "validateTherapeuticRegimenActTemplateId", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(anthraxTherapeuticRegimenAct, context) }),
              new Object [] { anthraxTherapeuticRegimenAct }));
       }
-       
       return false;
     }
     return true;

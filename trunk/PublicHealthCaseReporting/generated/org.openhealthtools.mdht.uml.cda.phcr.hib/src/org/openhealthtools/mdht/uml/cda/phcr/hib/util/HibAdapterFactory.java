@@ -31,8 +31,6 @@ import org.openhealthtools.mdht.uml.cda.ccd.ResultsSection;
 import org.openhealthtools.mdht.uml.cda.phcr.CaseObservation;
 import org.openhealthtools.mdht.uml.cda.phcr.PhcrClinicalInformationSection;
 import org.openhealthtools.mdht.uml.cda.phcr.PhcrRelevantDxTestsSection;
-import org.openhealthtools.mdht.uml.cda.ccd.SocialHistorySection;
-import org.openhealthtools.mdht.uml.cda.phcr.PhcrSocialHistorySection;
 import org.openhealthtools.mdht.uml.cda.phcr.PublicHealthCaseReport;
 import org.openhealthtools.mdht.uml.cda.phcr.SignsAndSymptomsObservation;
 import org.openhealthtools.mdht.uml.cda.phcr.hib.*;

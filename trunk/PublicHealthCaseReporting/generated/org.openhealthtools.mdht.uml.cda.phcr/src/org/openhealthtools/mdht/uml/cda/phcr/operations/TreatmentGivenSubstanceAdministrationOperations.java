@@ -38,7 +38,6 @@ import org.openhealthtools.mdht.uml.cda.phcr.util.PhcrValidator;
  *   <li>{@link org.openhealthtools.mdht.uml.cda.phcr.TreatmentGivenSubstanceAdministration#validateTreatmentGivenSubstanceAdministrationClassCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Treatment Given Substance Administration Class Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.phcr.TreatmentGivenSubstanceAdministration#validateTreatmentGivenSubstanceAdministrationMoodCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Treatment Given Substance Administration Mood Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.phcr.TreatmentGivenSubstanceAdministration#validateTreatmentGivenSubstanceAdministrationNegationInd(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Treatment Given Substance Administration Negation Ind</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.phcr.TreatmentGivenSubstanceAdministration#validateTreatmentGivenSubstanceAdministrationStatusCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Treatment Given Substance Administration Status Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.phcr.TreatmentGivenSubstanceAdministration#validateTreatmentGivenSubstanceAdministrationEffectiveTime(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Treatment Given Substance Administration Effective Time</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.phcr.TreatmentGivenSubstanceAdministration#validateTreatmentGivenSubstanceAdministrationRouteCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Treatment Given Substance Administration Route Code P</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.phcr.TreatmentGivenSubstanceAdministration#validateTreatmentGivenSubstanceAdministrationRouteCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Treatment Given Substance Administration Route Code</em>}</li>
@@ -82,6 +81,7 @@ public class TreatmentGivenSubstanceAdministrationOperations extends SubstanceAd
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
+   * self.negationInd=false
    * @param treatmentGivenSubstanceAdministration The receiving '<em><b>Treatment Given Substance Administration</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -90,8 +90,8 @@ public class TreatmentGivenSubstanceAdministrationOperations extends SubstanceAd
    */
 	
 	public static  boolean validateTreatmentGivenSubstanceAdministrationTreatmentGivenNegationInd(TreatmentGivenSubstanceAdministration treatmentGivenSubstanceAdministration, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
-    if (VALIDATE_TREATMENT_GIVEN_SUBSTANCE_ADMINISTRATION_TREATMENT_GIVEN_NEGATION_IND__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+    if (VALIDATE_TREATMENT_GIVEN_SUBSTANCE_ADMINISTRATION_TREATMENT_GIVEN_NEGATION_IND__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null)
+    {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(PhcrPackage.Literals.TREATMENT_GIVEN_SUBSTANCE_ADMINISTRATION);
       try
@@ -112,10 +112,9 @@ public class TreatmentGivenSubstanceAdministrationOperations extends SubstanceAd
             (Diagnostic.ERROR,
              PhcrValidator.DIAGNOSTIC_SOURCE,
              PhcrValidator.TREATMENT_GIVEN_SUBSTANCE_ADMINISTRATION__TREATMENT_GIVEN_SUBSTANCE_ADMINISTRATION_TREATMENT_GIVEN_NEGATION_IND,
-             PhcrPlugin.INSTANCE.getString("TreatmentGivenSubstanceAdministrationTreatmentGivenNegationInd"),
+             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "validateTreatmentGivenSubstanceAdministrationTreatmentGivenNegationInd", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(treatmentGivenSubstanceAdministration, context) }),
              new Object [] { treatmentGivenSubstanceAdministration }));
       }
-       
       return false;
     }
     return true;
@@ -125,6 +124,7 @@ public class TreatmentGivenSubstanceAdministrationOperations extends SubstanceAd
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
+   * self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.15.3.55')
    * @param treatmentGivenSubstanceAdministration The receiving '<em><b>Treatment Given Substance Administration</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -132,8 +132,8 @@ public class TreatmentGivenSubstanceAdministrationOperations extends SubstanceAd
    * @generated
    */
 	public static  boolean validateTreatmentGivenSubstanceAdministrationTemplateId(TreatmentGivenSubstanceAdministration treatmentGivenSubstanceAdministration, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
-    if (VALIDATE_TREATMENT_GIVEN_SUBSTANCE_ADMINISTRATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+    if (VALIDATE_TREATMENT_GIVEN_SUBSTANCE_ADMINISTRATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null)
+    {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(PhcrPackage.Literals.TREATMENT_GIVEN_SUBSTANCE_ADMINISTRATION);
       try
@@ -154,10 +154,9 @@ public class TreatmentGivenSubstanceAdministrationOperations extends SubstanceAd
             (Diagnostic.ERROR,
              PhcrValidator.DIAGNOSTIC_SOURCE,
              PhcrValidator.TREATMENT_GIVEN_SUBSTANCE_ADMINISTRATION__TREATMENT_GIVEN_SUBSTANCE_ADMINISTRATION_TEMPLATE_ID,
-             PhcrPlugin.INSTANCE.getString("TreatmentGivenSubstanceAdministrationTemplateId"),
+             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "validateTreatmentGivenSubstanceAdministrationTemplateId", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(treatmentGivenSubstanceAdministration, context) }),
              new Object [] { treatmentGivenSubstanceAdministration }));
       }
-       
       return false;
     }
     return true;
@@ -167,6 +166,7 @@ public class TreatmentGivenSubstanceAdministrationOperations extends SubstanceAd
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
+   * self.classCode=vocab::ActClass::SBADM
    * @param treatmentGivenSubstanceAdministration The receiving '<em><b>Treatment Given Substance Administration</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -174,8 +174,8 @@ public class TreatmentGivenSubstanceAdministrationOperations extends SubstanceAd
    * @generated
    */
 	public static  boolean validateTreatmentGivenSubstanceAdministrationClassCode(TreatmentGivenSubstanceAdministration treatmentGivenSubstanceAdministration, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
-    if (VALIDATE_TREATMENT_GIVEN_SUBSTANCE_ADMINISTRATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+    if (VALIDATE_TREATMENT_GIVEN_SUBSTANCE_ADMINISTRATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null)
+    {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(PhcrPackage.Literals.TREATMENT_GIVEN_SUBSTANCE_ADMINISTRATION);
       try
@@ -196,10 +196,9 @@ public class TreatmentGivenSubstanceAdministrationOperations extends SubstanceAd
             (Diagnostic.ERROR,
              PhcrValidator.DIAGNOSTIC_SOURCE,
              PhcrValidator.TREATMENT_GIVEN_SUBSTANCE_ADMINISTRATION__TREATMENT_GIVEN_SUBSTANCE_ADMINISTRATION_CLASS_CODE,
-             PhcrPlugin.INSTANCE.getString("TreatmentGivenSubstanceAdministrationClassCode"),
+             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "validateTreatmentGivenSubstanceAdministrationClassCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(treatmentGivenSubstanceAdministration, context) }),
              new Object [] { treatmentGivenSubstanceAdministration }));
       }
-       
       return false;
     }
     return true;
@@ -209,6 +208,7 @@ public class TreatmentGivenSubstanceAdministrationOperations extends SubstanceAd
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
+   * (self.effectiveTime->isEmpty() or self.effectiveTime->exists(element | element.isNullFlavorUndefined())) implies (not self.effectiveTime->isEmpty())
    * @param treatmentGivenSubstanceAdministration The receiving '<em><b>Treatment Given Substance Administration</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -216,8 +216,8 @@ public class TreatmentGivenSubstanceAdministrationOperations extends SubstanceAd
    * @generated
    */
 	public static  boolean validateTreatmentGivenSubstanceAdministrationEffectiveTime(TreatmentGivenSubstanceAdministration treatmentGivenSubstanceAdministration, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
-    if (VALIDATE_TREATMENT_GIVEN_SUBSTANCE_ADMINISTRATION_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+    if (VALIDATE_TREATMENT_GIVEN_SUBSTANCE_ADMINISTRATION_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null)
+    {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(PhcrPackage.Literals.TREATMENT_GIVEN_SUBSTANCE_ADMINISTRATION);
       try
@@ -235,13 +235,12 @@ public class TreatmentGivenSubstanceAdministrationOperations extends SubstanceAd
       {
         diagnostics.add
           (new BasicDiagnostic
-            (Diagnostic.WARNING,
+            (Diagnostic.ERROR,
              PhcrValidator.DIAGNOSTIC_SOURCE,
              PhcrValidator.TREATMENT_GIVEN_SUBSTANCE_ADMINISTRATION__TREATMENT_GIVEN_SUBSTANCE_ADMINISTRATION_EFFECTIVE_TIME,
-             PhcrPlugin.INSTANCE.getString("TreatmentGivenSubstanceAdministrationEffectiveTime"),
+             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "validateTreatmentGivenSubstanceAdministrationEffectiveTime", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(treatmentGivenSubstanceAdministration, context) }),
              new Object [] { treatmentGivenSubstanceAdministration }));
       }
-       
       return false;
     }
     return true;
@@ -251,6 +250,7 @@ public class TreatmentGivenSubstanceAdministrationOperations extends SubstanceAd
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
+   * (self.routeCode.oclIsUndefined() or self.routeCode.isNullFlavorUndefined()) implies (not self.routeCode.oclIsUndefined())
    * @param treatmentGivenSubstanceAdministration The receiving '<em><b>Treatment Given Substance Administration</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -259,8 +259,8 @@ public class TreatmentGivenSubstanceAdministrationOperations extends SubstanceAd
    */
 	
 	public static  boolean validateTreatmentGivenSubstanceAdministrationRouteCodeP(TreatmentGivenSubstanceAdministration treatmentGivenSubstanceAdministration, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
-    if (VALIDATE_TREATMENT_GIVEN_SUBSTANCE_ADMINISTRATION_ROUTE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+    if (VALIDATE_TREATMENT_GIVEN_SUBSTANCE_ADMINISTRATION_ROUTE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null)
+    {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(PhcrPackage.Literals.TREATMENT_GIVEN_SUBSTANCE_ADMINISTRATION);
       try
@@ -278,25 +278,12 @@ public class TreatmentGivenSubstanceAdministrationOperations extends SubstanceAd
       {
         diagnostics.add
           (new BasicDiagnostic
-            (Diagnostic.WARNING,
+            (Diagnostic.ERROR,
              PhcrValidator.DIAGNOSTIC_SOURCE,
              PhcrValidator.TREATMENT_GIVEN_SUBSTANCE_ADMINISTRATION__TREATMENT_GIVEN_SUBSTANCE_ADMINISTRATION_ROUTE_CODE_P,
-             PhcrPlugin.INSTANCE.getString("TreatmentGivenSubstanceAdministrationRouteCodeP"),
+             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "validateTreatmentGivenSubstanceAdministrationRouteCodeP", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(treatmentGivenSubstanceAdministration, context) }),
              new Object [] { treatmentGivenSubstanceAdministration }));
       }
-      
-      if (context != null) {
-        // generate a pass token for my dependent constraints to short-circuit or filter results
-        @SuppressWarnings("unchecked")
-        Collection<Object> passToken = (Collection<Object>) context.get("org.openhealthtools.mdht.uml.cda.phcr.TreatmentGivenSubstanceAdministrationRouteCodeP");
-        if (passToken == null) {
-          // anticipate a reasonably healthy model
-          passToken = new java.util.ArrayList<Object>(3);
-          context.put("org.openhealthtools.mdht.uml.cda.phcr.TreatmentGivenSubstanceAdministrationRouteCodeP", passToken);
-        }
-        passToken.add(treatmentGivenSubstanceAdministration);
-      }
-       
       return false;
     }
     return true;
@@ -306,6 +293,7 @@ public class TreatmentGivenSubstanceAdministrationOperations extends SubstanceAd
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
+   * self.moodCode=vocab::x_DocumentSubstanceMood::EVN
    * @param treatmentGivenSubstanceAdministration The receiving '<em><b>Treatment Given Substance Administration</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -313,8 +301,8 @@ public class TreatmentGivenSubstanceAdministrationOperations extends SubstanceAd
    * @generated
    */
 	public static  boolean validateTreatmentGivenSubstanceAdministrationMoodCode(TreatmentGivenSubstanceAdministration treatmentGivenSubstanceAdministration, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
-    if (VALIDATE_TREATMENT_GIVEN_SUBSTANCE_ADMINISTRATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+    if (VALIDATE_TREATMENT_GIVEN_SUBSTANCE_ADMINISTRATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null)
+    {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(PhcrPackage.Literals.TREATMENT_GIVEN_SUBSTANCE_ADMINISTRATION);
       try
@@ -335,10 +323,9 @@ public class TreatmentGivenSubstanceAdministrationOperations extends SubstanceAd
             (Diagnostic.ERROR,
              PhcrValidator.DIAGNOSTIC_SOURCE,
              PhcrValidator.TREATMENT_GIVEN_SUBSTANCE_ADMINISTRATION__TREATMENT_GIVEN_SUBSTANCE_ADMINISTRATION_MOOD_CODE,
-             PhcrPlugin.INSTANCE.getString("TreatmentGivenSubstanceAdministrationMoodCode"),
+             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "validateTreatmentGivenSubstanceAdministrationMoodCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(treatmentGivenSubstanceAdministration, context) }),
              new Object [] { treatmentGivenSubstanceAdministration }));
       }
-       
       return false;
     }
     return true;
@@ -428,6 +415,7 @@ public class TreatmentGivenSubstanceAdministrationOperations extends SubstanceAd
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
+   * not self.negationInd.oclIsUndefined()
    * @param treatmentGivenSubstanceAdministration The receiving '<em><b>Treatment Given Substance Administration</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -435,8 +423,8 @@ public class TreatmentGivenSubstanceAdministrationOperations extends SubstanceAd
    * @generated
    */
 	public static  boolean validateTreatmentGivenSubstanceAdministrationNegationInd(TreatmentGivenSubstanceAdministration treatmentGivenSubstanceAdministration, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
-    if (VALIDATE_TREATMENT_GIVEN_SUBSTANCE_ADMINISTRATION_NEGATION_IND__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+    if (VALIDATE_TREATMENT_GIVEN_SUBSTANCE_ADMINISTRATION_NEGATION_IND__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null)
+    {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(PhcrPackage.Literals.TREATMENT_GIVEN_SUBSTANCE_ADMINISTRATION);
       try
@@ -457,10 +445,9 @@ public class TreatmentGivenSubstanceAdministrationOperations extends SubstanceAd
             (Diagnostic.ERROR,
              PhcrValidator.DIAGNOSTIC_SOURCE,
              PhcrValidator.TREATMENT_GIVEN_SUBSTANCE_ADMINISTRATION__TREATMENT_GIVEN_SUBSTANCE_ADMINISTRATION_NEGATION_IND,
-             PhcrPlugin.INSTANCE.getString("TreatmentGivenSubstanceAdministrationNegationInd"),
+             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "validateTreatmentGivenSubstanceAdministrationNegationInd", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(treatmentGivenSubstanceAdministration, context) }),
              new Object [] { treatmentGivenSubstanceAdministration }));
       }
-       
       return false;
     }
     return true;
@@ -491,6 +478,7 @@ public class TreatmentGivenSubstanceAdministrationOperations extends SubstanceAd
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
+   * (self.statusCode.oclIsUndefined() or self.statusCode.isNullFlavorUndefined()) implies (not self.statusCode.oclIsUndefined())
    * @param treatmentGivenSubstanceAdministration The receiving '<em><b>Treatment Given Substance Administration</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -499,8 +487,8 @@ public class TreatmentGivenSubstanceAdministrationOperations extends SubstanceAd
    */
 	
 	public static  boolean validateTreatmentGivenSubstanceAdministrationStatusCode(TreatmentGivenSubstanceAdministration treatmentGivenSubstanceAdministration, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
-    if (VALIDATE_TREATMENT_GIVEN_SUBSTANCE_ADMINISTRATION_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+    if (VALIDATE_TREATMENT_GIVEN_SUBSTANCE_ADMINISTRATION_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null)
+    {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(PhcrPackage.Literals.TREATMENT_GIVEN_SUBSTANCE_ADMINISTRATION);
       try
@@ -521,10 +509,9 @@ public class TreatmentGivenSubstanceAdministrationOperations extends SubstanceAd
             (Diagnostic.ERROR,
              PhcrValidator.DIAGNOSTIC_SOURCE,
              PhcrValidator.TREATMENT_GIVEN_SUBSTANCE_ADMINISTRATION__TREATMENT_GIVEN_SUBSTANCE_ADMINISTRATION_STATUS_CODE,
-             PhcrPlugin.INSTANCE.getString("TreatmentGivenSubstanceAdministrationStatusCode"),
+             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "validateTreatmentGivenSubstanceAdministrationStatusCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(treatmentGivenSubstanceAdministration, context) }),
              new Object [] { treatmentGivenSubstanceAdministration }));
       }
-       
       return false;
     }
     return true;
@@ -534,6 +521,9 @@ public class TreatmentGivenSubstanceAdministrationOperations extends SubstanceAd
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
+   * (self.routeCode.oclIsUndefined() or self.routeCode.isNullFlavorUndefined()) implies (not self.routeCode.oclIsUndefined() and self.routeCode.oclIsKindOf(datatypes::CE) and 
+   * let value : datatypes::CE = self.routeCode.oclAsType(datatypes::CE) in 
+   * value.codeSystem = '2.16.840.1.113883.3.26.1.1' and not value.code.oclIsUndefined())
    * @param treatmentGivenSubstanceAdministration The receiving '<em><b>Treatment Given Substance Administration</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -541,14 +531,8 @@ public class TreatmentGivenSubstanceAdministrationOperations extends SubstanceAd
    * @generated
    */
 	public static  boolean validateTreatmentGivenSubstanceAdministrationRouteCode(TreatmentGivenSubstanceAdministration treatmentGivenSubstanceAdministration, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
-    Object passToken = (context == null) ? null : context.get("org.openhealthtools.mdht.uml.cda.phcr.TreatmentGivenSubstanceAdministrationRouteCodeP");
-    if ((passToken instanceof Collection<?>) && ((Collection<?>) passToken).contains(treatmentGivenSubstanceAdministration)) {
-      // I have a free pass to short-circuit
-      return true;
-    }
-  	  
-    if (VALIDATE_TREATMENT_GIVEN_SUBSTANCE_ADMINISTRATION_ROUTE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+    if (VALIDATE_TREATMENT_GIVEN_SUBSTANCE_ADMINISTRATION_ROUTE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null)
+    {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(PhcrPackage.Literals.TREATMENT_GIVEN_SUBSTANCE_ADMINISTRATION);
       try
@@ -569,10 +553,9 @@ public class TreatmentGivenSubstanceAdministrationOperations extends SubstanceAd
             (Diagnostic.ERROR,
              PhcrValidator.DIAGNOSTIC_SOURCE,
              PhcrValidator.TREATMENT_GIVEN_SUBSTANCE_ADMINISTRATION__TREATMENT_GIVEN_SUBSTANCE_ADMINISTRATION_ROUTE_CODE,
-             PhcrPlugin.INSTANCE.getString("TreatmentGivenSubstanceAdministrationRouteCode"),
+             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "validateTreatmentGivenSubstanceAdministrationRouteCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(treatmentGivenSubstanceAdministration, context) }),
              new Object [] { treatmentGivenSubstanceAdministration }));
       }
-       
       return false;
     }
     return true;

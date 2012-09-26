@@ -22,7 +22,6 @@ import org.eclipse.ocl.ecore.Constraint;
 import org.eclipse.ocl.ecore.OCL;
 
 import org.openhealthtools.mdht.uml.cda.phcr.cocci.CocciPackage;
-import org.openhealthtools.mdht.uml.cda.phcr.cocci.CocciPlugin;
 import org.openhealthtools.mdht.uml.cda.phcr.cocci.CoccidioidesSignsAndSymptomsObservation;
 
 import org.openhealthtools.mdht.uml.cda.phcr.cocci.util.CocciValidator;
@@ -37,7 +36,6 @@ import org.openhealthtools.mdht.uml.cda.phcr.operations.SignsAndSymptomsObservat
  * <p>
  * The following operations are supported:
  * <ul>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.phcr.cocci.CoccidioidesSignsAndSymptomsObservation#validateCoccidioidesSignsAndSymptomsObservationValue(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Coccidioides Signs And Symptoms Observation Value</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.phcr.cocci.CoccidioidesSignsAndSymptomsObservation#validateSignsAndSymptomsObservationTemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Signs And Symptoms Observation Template Id</em>}</li>
  * </ul>
  * </p>
@@ -80,6 +78,7 @@ public class CoccidioidesSignsAndSymptomsObservationOperations extends SignsAndS
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
+   * (self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (not self.value->isEmpty())
    * @param coccidioidesSignsAndSymptomsObservation The receiving '<em><b>Coccidioides Signs And Symptoms Observation</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -89,8 +88,8 @@ public class CoccidioidesSignsAndSymptomsObservationOperations extends SignsAndS
   
   public static  boolean validateCoccidioidesSignsAndSymptomsObservationValue(CoccidioidesSignsAndSymptomsObservation coccidioidesSignsAndSymptomsObservation, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
-  	  
-    if (VALIDATE_COCCIDIOIDES_SIGNS_AND_SYMPTOMS_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+    if (VALIDATE_COCCIDIOIDES_SIGNS_AND_SYMPTOMS_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null)
+    {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(CocciPackage.Literals.COCCIDIOIDES_SIGNS_AND_SYMPTOMS_OBSERVATION);
       try
@@ -111,10 +110,9 @@ public class CoccidioidesSignsAndSymptomsObservationOperations extends SignsAndS
             (Diagnostic.ERROR,
              CocciValidator.DIAGNOSTIC_SOURCE,
              CocciValidator.COCCIDIOIDES_SIGNS_AND_SYMPTOMS_OBSERVATION__COCCIDIOIDES_SIGNS_AND_SYMPTOMS_OBSERVATION_VALUE,
-             CocciPlugin.INSTANCE.getString("CoccidioidesSignsAndSymptomsObservationValue"),
+             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "validateCoccidioidesSignsAndSymptomsObservationValue", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(coccidioidesSignsAndSymptomsObservation, context) }),
              new Object [] { coccidioidesSignsAndSymptomsObservation }));
       }
-       
       return false;
     }
     return true;
@@ -146,6 +144,7 @@ public class CoccidioidesSignsAndSymptomsObservationOperations extends SignsAndS
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
+   * self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.15.3.88')
    * @param coccidioidesSignsAndSymptomsObservation The receiving '<em><b>Coccidioides Signs And Symptoms Observation</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -154,8 +153,8 @@ public class CoccidioidesSignsAndSymptomsObservationOperations extends SignsAndS
    */
 	
 	public static  boolean validateSignsAndSymptomsObservationTemplateId(CoccidioidesSignsAndSymptomsObservation coccidioidesSignsAndSymptomsObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
-    if (VALIDATE_SIGNS_AND_SYMPTOMS_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+    if (VALIDATE_SIGNS_AND_SYMPTOMS_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null)
+    {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(CocciPackage.Literals.COCCIDIOIDES_SIGNS_AND_SYMPTOMS_OBSERVATION);
       try
@@ -176,10 +175,9 @@ public class CoccidioidesSignsAndSymptomsObservationOperations extends SignsAndS
             (Diagnostic.ERROR,
              CocciValidator.DIAGNOSTIC_SOURCE,
              CocciValidator.COCCIDIOIDES_SIGNS_AND_SYMPTOMS_OBSERVATION__SIGNS_AND_SYMPTOMS_OBSERVATION_TEMPLATE_ID,
-             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "SignsAndSymptomsObservationTemplateId", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(coccidioidesSignsAndSymptomsObservation, context) }),
+             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "validateSignsAndSymptomsObservationTemplateId", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(coccidioidesSignsAndSymptomsObservation, context) }),
              new Object [] { coccidioidesSignsAndSymptomsObservation }));
       }
-       
       return false;
     }
     return true;

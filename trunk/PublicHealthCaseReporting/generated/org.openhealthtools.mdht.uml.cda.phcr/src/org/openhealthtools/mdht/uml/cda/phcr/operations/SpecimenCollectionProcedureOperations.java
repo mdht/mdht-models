@@ -35,9 +35,7 @@ import org.openhealthtools.mdht.uml.cda.phcr.util.PhcrValidator;
  *   <li>{@link org.openhealthtools.mdht.uml.cda.phcr.SpecimenCollectionProcedure#validateSpecimenCollectionProcedureTemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Specimen Collection Procedure Template Id</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.phcr.SpecimenCollectionProcedure#validateSpecimenCollectionProcedureClassCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Specimen Collection Procedure Class Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.phcr.SpecimenCollectionProcedure#validateSpecimenCollectionProcedureMoodCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Specimen Collection Procedure Mood Code</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.phcr.SpecimenCollectionProcedure#validateSpecimenCollectionProcedureCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Specimen Collection Procedure Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.phcr.SpecimenCollectionProcedure#validateSpecimenCollectionProcedureEffectiveTime(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Specimen Collection Procedure Effective Time</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.phcr.SpecimenCollectionProcedure#validateSpecimenCollectionProcedureTargetSiteCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Specimen Collection Procedure Target Site Code</em>}</li>
  * </ul>
  * </p>
  *
@@ -77,6 +75,7 @@ public class SpecimenCollectionProcedureOperations extends ClinicalStatementOper
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
+   * self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.15.3.2')
    * @param specimenCollectionProcedure The receiving '<em><b>Specimen Collection Procedure</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -84,8 +83,8 @@ public class SpecimenCollectionProcedureOperations extends ClinicalStatementOper
    * @generated
    */
 	public static  boolean validateSpecimenCollectionProcedureTemplateId(SpecimenCollectionProcedure specimenCollectionProcedure, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
-    if (VALIDATE_SPECIMEN_COLLECTION_PROCEDURE_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+    if (VALIDATE_SPECIMEN_COLLECTION_PROCEDURE_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null)
+    {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(PhcrPackage.Literals.SPECIMEN_COLLECTION_PROCEDURE);
       try
@@ -106,10 +105,9 @@ public class SpecimenCollectionProcedureOperations extends ClinicalStatementOper
             (Diagnostic.ERROR,
              PhcrValidator.DIAGNOSTIC_SOURCE,
              PhcrValidator.SPECIMEN_COLLECTION_PROCEDURE__SPECIMEN_COLLECTION_PROCEDURE_TEMPLATE_ID,
-             PhcrPlugin.INSTANCE.getString("SpecimenCollectionProcedureTemplateId"),
+             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "validateSpecimenCollectionProcedureTemplateId", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(specimenCollectionProcedure, context) }),
              new Object [] { specimenCollectionProcedure }));
       }
-       
       return false;
     }
     return true;
@@ -139,6 +137,7 @@ public class SpecimenCollectionProcedureOperations extends ClinicalStatementOper
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
+   * self.classCode=vocab::ActClass::PROC
    * @param specimenCollectionProcedure The receiving '<em><b>Specimen Collection Procedure</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -146,8 +145,8 @@ public class SpecimenCollectionProcedureOperations extends ClinicalStatementOper
    * @generated
    */
 	public static  boolean validateSpecimenCollectionProcedureClassCode(SpecimenCollectionProcedure specimenCollectionProcedure, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
-    if (VALIDATE_SPECIMEN_COLLECTION_PROCEDURE_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+    if (VALIDATE_SPECIMEN_COLLECTION_PROCEDURE_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null)
+    {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(PhcrPackage.Literals.SPECIMEN_COLLECTION_PROCEDURE);
       try
@@ -168,10 +167,9 @@ public class SpecimenCollectionProcedureOperations extends ClinicalStatementOper
             (Diagnostic.ERROR,
              PhcrValidator.DIAGNOSTIC_SOURCE,
              PhcrValidator.SPECIMEN_COLLECTION_PROCEDURE__SPECIMEN_COLLECTION_PROCEDURE_CLASS_CODE,
-             PhcrPlugin.INSTANCE.getString("SpecimenCollectionProcedureClassCode"),
+             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "validateSpecimenCollectionProcedureClassCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(specimenCollectionProcedure, context) }),
              new Object [] { specimenCollectionProcedure }));
       }
-       
       return false;
     }
     return true;
@@ -201,6 +199,7 @@ public class SpecimenCollectionProcedureOperations extends ClinicalStatementOper
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
+   * self.moodCode=vocab::x_DocumentProcedureMood::EVN
    * @param specimenCollectionProcedure The receiving '<em><b>Specimen Collection Procedure</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -208,8 +207,8 @@ public class SpecimenCollectionProcedureOperations extends ClinicalStatementOper
    * @generated
    */
 	public static  boolean validateSpecimenCollectionProcedureMoodCode(SpecimenCollectionProcedure specimenCollectionProcedure, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
-    if (VALIDATE_SPECIMEN_COLLECTION_PROCEDURE_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+    if (VALIDATE_SPECIMEN_COLLECTION_PROCEDURE_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null)
+    {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(PhcrPackage.Literals.SPECIMEN_COLLECTION_PROCEDURE);
       try
@@ -230,10 +229,9 @@ public class SpecimenCollectionProcedureOperations extends ClinicalStatementOper
             (Diagnostic.ERROR,
              PhcrValidator.DIAGNOSTIC_SOURCE,
              PhcrValidator.SPECIMEN_COLLECTION_PROCEDURE__SPECIMEN_COLLECTION_PROCEDURE_MOOD_CODE,
-             PhcrPlugin.INSTANCE.getString("SpecimenCollectionProcedureMoodCode"),
+             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "validateSpecimenCollectionProcedureMoodCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(specimenCollectionProcedure, context) }),
              new Object [] { specimenCollectionProcedure }));
       }
-       
       return false;
     }
     return true;
@@ -264,6 +262,7 @@ public class SpecimenCollectionProcedureOperations extends ClinicalStatementOper
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
+   * (self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined())
    * @param specimenCollectionProcedure The receiving '<em><b>Specimen Collection Procedure</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -272,8 +271,8 @@ public class SpecimenCollectionProcedureOperations extends ClinicalStatementOper
    */
 	
 	public static  boolean validateSpecimenCollectionProcedureCode(SpecimenCollectionProcedure specimenCollectionProcedure, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
-    if (VALIDATE_SPECIMEN_COLLECTION_PROCEDURE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+    if (VALIDATE_SPECIMEN_COLLECTION_PROCEDURE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null)
+    {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(PhcrPackage.Literals.SPECIMEN_COLLECTION_PROCEDURE);
       try
@@ -294,10 +293,9 @@ public class SpecimenCollectionProcedureOperations extends ClinicalStatementOper
             (Diagnostic.ERROR,
              PhcrValidator.DIAGNOSTIC_SOURCE,
              PhcrValidator.SPECIMEN_COLLECTION_PROCEDURE__SPECIMEN_COLLECTION_PROCEDURE_CODE,
-             PhcrPlugin.INSTANCE.getString("SpecimenCollectionProcedureCode"),
+             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "validateSpecimenCollectionProcedureCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(specimenCollectionProcedure, context) }),
              new Object [] { specimenCollectionProcedure }));
       }
-       
       return false;
     }
     return true;
@@ -327,6 +325,7 @@ public class SpecimenCollectionProcedureOperations extends ClinicalStatementOper
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
+   * (self.effectiveTime.oclIsUndefined() or self.effectiveTime.isNullFlavorUndefined()) implies (not self.effectiveTime.oclIsUndefined())
    * @param specimenCollectionProcedure The receiving '<em><b>Specimen Collection Procedure</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -334,8 +333,8 @@ public class SpecimenCollectionProcedureOperations extends ClinicalStatementOper
    * @generated
    */
 	public static  boolean validateSpecimenCollectionProcedureEffectiveTime(SpecimenCollectionProcedure specimenCollectionProcedure, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
-    if (VALIDATE_SPECIMEN_COLLECTION_PROCEDURE_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+    if (VALIDATE_SPECIMEN_COLLECTION_PROCEDURE_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null)
+    {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(PhcrPackage.Literals.SPECIMEN_COLLECTION_PROCEDURE);
       try
@@ -353,13 +352,12 @@ public class SpecimenCollectionProcedureOperations extends ClinicalStatementOper
       {
         diagnostics.add
           (new BasicDiagnostic
-            (Diagnostic.WARNING,
+            (Diagnostic.ERROR,
              PhcrValidator.DIAGNOSTIC_SOURCE,
              PhcrValidator.SPECIMEN_COLLECTION_PROCEDURE__SPECIMEN_COLLECTION_PROCEDURE_EFFECTIVE_TIME,
-             PhcrPlugin.INSTANCE.getString("SpecimenCollectionProcedureEffectiveTime"),
+             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "validateSpecimenCollectionProcedureEffectiveTime", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(specimenCollectionProcedure, context) }),
              new Object [] { specimenCollectionProcedure }));
       }
-       
       return false;
     }
     return true;
@@ -390,6 +388,7 @@ public class SpecimenCollectionProcedureOperations extends ClinicalStatementOper
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
+   * (self.targetSiteCode->isEmpty() or self.targetSiteCode->exists(element | element.isNullFlavorUndefined())) implies (not self.targetSiteCode->isEmpty())
    * @param specimenCollectionProcedure The receiving '<em><b>Specimen Collection Procedure</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -398,8 +397,8 @@ public class SpecimenCollectionProcedureOperations extends ClinicalStatementOper
    */
 	
 	public static  boolean validateSpecimenCollectionProcedureTargetSiteCode(SpecimenCollectionProcedure specimenCollectionProcedure, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
-    if (VALIDATE_SPECIMEN_COLLECTION_PROCEDURE_TARGET_SITE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+    if (VALIDATE_SPECIMEN_COLLECTION_PROCEDURE_TARGET_SITE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null)
+    {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(PhcrPackage.Literals.SPECIMEN_COLLECTION_PROCEDURE);
       try
@@ -417,13 +416,12 @@ public class SpecimenCollectionProcedureOperations extends ClinicalStatementOper
       {
         diagnostics.add
           (new BasicDiagnostic
-            (Diagnostic.WARNING,
+            (Diagnostic.ERROR,
              PhcrValidator.DIAGNOSTIC_SOURCE,
              PhcrValidator.SPECIMEN_COLLECTION_PROCEDURE__SPECIMEN_COLLECTION_PROCEDURE_TARGET_SITE_CODE,
-             PhcrPlugin.INSTANCE.getString("SpecimenCollectionProcedureTargetSiteCode"),
+             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "validateSpecimenCollectionProcedureTargetSiteCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(specimenCollectionProcedure, context) }),
              new Object [] { specimenCollectionProcedure }));
       }
-       
       return false;
     }
     return true;

@@ -29,8 +29,6 @@ import org.openhealthtools.mdht.uml.cda.phcr.tss.operations.TssResultOrganizerOp
 
 import org.openhealthtools.mdht.uml.cda.phcr.tss.tssPackage;
 
-import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
-
 /**
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Tss Result Organizer</b></em>'.
@@ -107,23 +105,4 @@ public class TssResultOrganizerImpl extends ResultOrganizerImpl implements TssRe
 	public boolean validateResultOrganizerTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
     return TssResultOrganizerOperations.validateResultOrganizerTemplateId(this, diagnostics, context);
   }
-
-	/**
-   * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-   * @generated
-   */
-	public TssResultOrganizer init() {
-      return Initializer.Util.init(this);
-  }
-
-  /**
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    public TssResultOrganizer init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-        Initializer.Util.init(this, initializers);
-        return this;
-    }
 } //TssResultOrganizerImpl

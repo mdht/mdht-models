@@ -82,6 +82,7 @@ public class SilicosisPossibleExposureLocationAndTypeActOperations extends Clini
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
+   * self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.15.3.109')
    * @param silicosisPossibleExposureLocationAndTypeAct The receiving '<em><b>Possible Exposure Location And Type Act</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -91,8 +92,8 @@ public class SilicosisPossibleExposureLocationAndTypeActOperations extends Clini
   
   public static  boolean validateSilicosisPossibleExposureLocationAndTypeActTemplateId(SilicosisPossibleExposureLocationAndTypeAct silicosisPossibleExposureLocationAndTypeAct, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
-  	  
-    if (VALIDATE_SILICOSIS_POSSIBLE_EXPOSURE_LOCATION_AND_TYPE_ACT_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+    if (VALIDATE_SILICOSIS_POSSIBLE_EXPOSURE_LOCATION_AND_TYPE_ACT_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null)
+    {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(SilicosisPackage.Literals.SILICOSIS_POSSIBLE_EXPOSURE_LOCATION_AND_TYPE_ACT);
       try
@@ -113,10 +114,9 @@ public class SilicosisPossibleExposureLocationAndTypeActOperations extends Clini
             (Diagnostic.ERROR,
              SilicosisValidator.DIAGNOSTIC_SOURCE,
              SilicosisValidator.SILICOSIS_POSSIBLE_EXPOSURE_LOCATION_AND_TYPE_ACT__SILICOSIS_POSSIBLE_EXPOSURE_LOCATION_AND_TYPE_ACT_TEMPLATE_ID,
-             SilicosisPlugin.INSTANCE.getString("SilicosisPossibleExposureLocationAndTypeActTemplateId"),
+             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "validateSilicosisPossibleExposureLocationAndTypeActTemplateId", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(silicosisPossibleExposureLocationAndTypeAct, context) }),
              new Object [] { silicosisPossibleExposureLocationAndTypeAct }));
       }
-       
       return false;
     }
     return true;
@@ -146,6 +146,7 @@ public class SilicosisPossibleExposureLocationAndTypeActOperations extends Clini
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
+   * isDefined('classCode')
    * @param silicosisPossibleExposureLocationAndTypeAct The receiving '<em><b>Possible Exposure Location And Type Act</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -153,8 +154,8 @@ public class SilicosisPossibleExposureLocationAndTypeActOperations extends Clini
    * @generated
    */
 	public static  boolean validateSilicosisPossibleExposureLocationAndTypeActClassCode(SilicosisPossibleExposureLocationAndTypeAct silicosisPossibleExposureLocationAndTypeAct, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
-    if (VALIDATE_SILICOSIS_POSSIBLE_EXPOSURE_LOCATION_AND_TYPE_ACT_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+    if (VALIDATE_SILICOSIS_POSSIBLE_EXPOSURE_LOCATION_AND_TYPE_ACT_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null)
+    {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(SilicosisPackage.Literals.SILICOSIS_POSSIBLE_EXPOSURE_LOCATION_AND_TYPE_ACT);
       try
@@ -175,10 +176,9 @@ public class SilicosisPossibleExposureLocationAndTypeActOperations extends Clini
             (Diagnostic.ERROR,
              SilicosisValidator.DIAGNOSTIC_SOURCE,
              SilicosisValidator.SILICOSIS_POSSIBLE_EXPOSURE_LOCATION_AND_TYPE_ACT__SILICOSIS_POSSIBLE_EXPOSURE_LOCATION_AND_TYPE_ACT_CLASS_CODE,
-             SilicosisPlugin.INSTANCE.getString("SilicosisPossibleExposureLocationAndTypeActClassCode"),
+             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "validateSilicosisPossibleExposureLocationAndTypeActClassCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(silicosisPossibleExposureLocationAndTypeAct, context) }),
              new Object [] { silicosisPossibleExposureLocationAndTypeAct }));
       }
-       
       return false;
     }
     return true;
@@ -210,6 +210,9 @@ public class SilicosisPossibleExposureLocationAndTypeActOperations extends Clini
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
+   * (self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and 
+   * let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in 
+   * value.code = '413350009' and value.codeSystem = '2.16.840.1.113883.6.96')
    * @param silicosisPossibleExposureLocationAndTypeAct The receiving '<em><b>Possible Exposure Location And Type Act</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -217,8 +220,8 @@ public class SilicosisPossibleExposureLocationAndTypeActOperations extends Clini
    * @generated
    */
 	public static  boolean validateSilicosisPossibleExposureLocationAndTypeActCode(SilicosisPossibleExposureLocationAndTypeAct silicosisPossibleExposureLocationAndTypeAct, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
-    if (VALIDATE_SILICOSIS_POSSIBLE_EXPOSURE_LOCATION_AND_TYPE_ACT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+    if (VALIDATE_SILICOSIS_POSSIBLE_EXPOSURE_LOCATION_AND_TYPE_ACT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null)
+    {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(SilicosisPackage.Literals.SILICOSIS_POSSIBLE_EXPOSURE_LOCATION_AND_TYPE_ACT);
       try
@@ -239,10 +242,9 @@ public class SilicosisPossibleExposureLocationAndTypeActOperations extends Clini
             (Diagnostic.ERROR,
              SilicosisValidator.DIAGNOSTIC_SOURCE,
              SilicosisValidator.SILICOSIS_POSSIBLE_EXPOSURE_LOCATION_AND_TYPE_ACT__SILICOSIS_POSSIBLE_EXPOSURE_LOCATION_AND_TYPE_ACT_CODE,
-             SilicosisPlugin.INSTANCE.getString("SilicosisPossibleExposureLocationAndTypeActCode"),
+             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "validateSilicosisPossibleExposureLocationAndTypeActCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(silicosisPossibleExposureLocationAndTypeAct, context) }),
              new Object [] { silicosisPossibleExposureLocationAndTypeAct }));
       }
-       
       return false;
     }
     return true;
@@ -272,6 +274,7 @@ public class SilicosisPossibleExposureLocationAndTypeActOperations extends Clini
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
+   * isDefined('moodCode')
    * @param silicosisPossibleExposureLocationAndTypeAct The receiving '<em><b>Possible Exposure Location And Type Act</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -279,8 +282,8 @@ public class SilicosisPossibleExposureLocationAndTypeActOperations extends Clini
    * @generated
    */
 	public static  boolean validateSilicosisPossibleExposureLocationAndTypeActMoodCode(SilicosisPossibleExposureLocationAndTypeAct silicosisPossibleExposureLocationAndTypeAct, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
-    if (VALIDATE_SILICOSIS_POSSIBLE_EXPOSURE_LOCATION_AND_TYPE_ACT_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+    if (VALIDATE_SILICOSIS_POSSIBLE_EXPOSURE_LOCATION_AND_TYPE_ACT_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null)
+    {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(SilicosisPackage.Literals.SILICOSIS_POSSIBLE_EXPOSURE_LOCATION_AND_TYPE_ACT);
       try
@@ -301,10 +304,9 @@ public class SilicosisPossibleExposureLocationAndTypeActOperations extends Clini
             (Diagnostic.ERROR,
              SilicosisValidator.DIAGNOSTIC_SOURCE,
              SilicosisValidator.SILICOSIS_POSSIBLE_EXPOSURE_LOCATION_AND_TYPE_ACT__SILICOSIS_POSSIBLE_EXPOSURE_LOCATION_AND_TYPE_ACT_MOOD_CODE,
-             SilicosisPlugin.INSTANCE.getString("SilicosisPossibleExposureLocationAndTypeActMoodCode"),
+             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "validateSilicosisPossibleExposureLocationAndTypeActMoodCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(silicosisPossibleExposureLocationAndTypeAct, context) }),
              new Object [] { silicosisPossibleExposureLocationAndTypeAct }));
       }
-       
       return false;
     }
     return true;
@@ -336,6 +338,9 @@ public class SilicosisPossibleExposureLocationAndTypeActOperations extends Clini
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
+   * (self.statusCode.oclIsUndefined() or self.statusCode.isNullFlavorUndefined()) implies (not self.statusCode.oclIsUndefined() and self.statusCode.oclIsKindOf(datatypes::CS) and 
+   * let value : datatypes::CS = self.statusCode.oclAsType(datatypes::CS) in 
+   * value.code = 'completed')
    * @param silicosisPossibleExposureLocationAndTypeAct The receiving '<em><b>Possible Exposure Location And Type Act</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -343,8 +348,8 @@ public class SilicosisPossibleExposureLocationAndTypeActOperations extends Clini
    * @generated
    */
 	public static  boolean validateSilicosisPossibleExposureLocationAndTypeActStatusCode(SilicosisPossibleExposureLocationAndTypeAct silicosisPossibleExposureLocationAndTypeAct, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
-    if (VALIDATE_SILICOSIS_POSSIBLE_EXPOSURE_LOCATION_AND_TYPE_ACT_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+    if (VALIDATE_SILICOSIS_POSSIBLE_EXPOSURE_LOCATION_AND_TYPE_ACT_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null)
+    {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(SilicosisPackage.Literals.SILICOSIS_POSSIBLE_EXPOSURE_LOCATION_AND_TYPE_ACT);
       try
@@ -365,10 +370,9 @@ public class SilicosisPossibleExposureLocationAndTypeActOperations extends Clini
             (Diagnostic.ERROR,
              SilicosisValidator.DIAGNOSTIC_SOURCE,
              SilicosisValidator.SILICOSIS_POSSIBLE_EXPOSURE_LOCATION_AND_TYPE_ACT__SILICOSIS_POSSIBLE_EXPOSURE_LOCATION_AND_TYPE_ACT_STATUS_CODE,
-             SilicosisPlugin.INSTANCE.getString("SilicosisPossibleExposureLocationAndTypeActStatusCode"),
+             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "validateSilicosisPossibleExposureLocationAndTypeActStatusCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(silicosisPossibleExposureLocationAndTypeAct, context) }),
              new Object [] { silicosisPossibleExposureLocationAndTypeAct }));
       }
-       
       return false;
     }
     return true;

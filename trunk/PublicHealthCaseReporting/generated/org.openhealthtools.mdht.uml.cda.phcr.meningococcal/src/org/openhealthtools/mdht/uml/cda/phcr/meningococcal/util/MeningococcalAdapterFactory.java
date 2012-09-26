@@ -12,14 +12,9 @@ package org.openhealthtools.mdht.uml.cda.phcr.meningococcal.util;
 
 import org.eclipse.emf.common.notify.Adapter;
 import org.eclipse.emf.common.notify.Notifier;
-
 import org.eclipse.emf.common.notify.impl.AdapterFactoryImpl;
-
 import org.eclipse.emf.ecore.EObject;
-
 import org.openhealthtools.mdht.uml.cda.ClinicalDocument;
-
-
 import org.openhealthtools.mdht.uml.cda.ClinicalStatement;
 import org.openhealthtools.mdht.uml.cda.Observation;
 import org.openhealthtools.mdht.uml.cda.Organizer;
@@ -31,12 +26,16 @@ import org.openhealthtools.mdht.uml.cda.ccd.ResultsSection;
 import org.openhealthtools.mdht.uml.cda.phcr.CaseObservation;
 import org.openhealthtools.mdht.uml.cda.phcr.PhcrClinicalInformationSection;
 import org.openhealthtools.mdht.uml.cda.phcr.PhcrRelevantDxTestsSection;
-import org.openhealthtools.mdht.uml.cda.ccd.SocialHistorySection;
-import org.openhealthtools.mdht.uml.cda.phcr.PhcrSocialHistorySection;
 import org.openhealthtools.mdht.uml.cda.phcr.PublicHealthCaseReport;
 import org.openhealthtools.mdht.uml.cda.phcr.SignsAndSymptomsObservation;
-import org.openhealthtools.mdht.uml.cda.phcr.meningococcal.*;
-
+import org.openhealthtools.mdht.uml.cda.phcr.meningococcal.MeningococcalCaseObservation;
+import org.openhealthtools.mdht.uml.cda.phcr.meningococcal.MeningococcalCaseReport;
+import org.openhealthtools.mdht.uml.cda.phcr.meningococcal.MeningococcalPackage;
+import org.openhealthtools.mdht.uml.cda.phcr.meningococcal.MeningococcalPhcrClinicalInformationSection;
+import org.openhealthtools.mdht.uml.cda.phcr.meningococcal.MeningococcalPhcrRelevantDxTestsSection;
+import org.openhealthtools.mdht.uml.cda.phcr.meningococcal.MeningococcalResultObservation;
+import org.openhealthtools.mdht.uml.cda.phcr.meningococcal.MeningococcalResultOrganizer;
+import org.openhealthtools.mdht.uml.cda.phcr.meningococcal.MeningococcalSignsAndSymptomsObservation;
 import org.openhealthtools.mdht.uml.hl7.rim.Act;
 import org.openhealthtools.mdht.uml.hl7.rim.InfrastructureRoot;
 

@@ -35,6 +35,7 @@ public interface SilicosisHistoryOfTuberculosisObservation extends ProblemObserv
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
+   * isDefined('classCode')
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
    * <!-- end-model-doc -->
@@ -47,6 +48,9 @@ public interface SilicosisHistoryOfTuberculosisObservation extends ProblemObserv
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
+   * (self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (self.value->size() = 1 and self.value->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and 
+   * let value : datatypes::CD = element.oclAsType(datatypes::CD) in 
+   * value.codeSystem = '2.16.840.1.113883.6.96' and not value.code.oclIsUndefined()))
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
    * <!-- end-model-doc -->
@@ -59,6 +63,7 @@ public interface SilicosisHistoryOfTuberculosisObservation extends ProblemObserv
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
+   * (self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (self.value->size() = 1 and self.value->forAll(element | element.oclIsTypeOf(datatypes::CD)))
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
    * <!-- end-model-doc -->
@@ -66,18 +71,4 @@ public interface SilicosisHistoryOfTuberculosisObservation extends ProblemObserv
    * @generated
    */
   boolean validateSilicosisHistoryOfTuberculosisObservationValueP(DiagnosticChain diagnostics, Map<Object, Object> context);
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public SilicosisHistoryOfTuberculosisObservation init();
-
-  /**
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    public SilicosisHistoryOfTuberculosisObservation init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // SilicosisHistoryOfTuberculosisObservation

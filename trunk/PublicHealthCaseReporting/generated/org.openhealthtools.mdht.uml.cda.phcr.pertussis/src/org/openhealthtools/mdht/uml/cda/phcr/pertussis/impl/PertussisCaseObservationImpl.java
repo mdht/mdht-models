@@ -28,8 +28,6 @@ import org.openhealthtools.mdht.uml.cda.phcr.pertussis.PertussisSignsAndSymptoms
 
 import org.openhealthtools.mdht.uml.cda.phcr.pertussis.operations.PertussisCaseObservationOperations;
 
-import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
-
 /**
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Case Observation</b></em>'.
@@ -41,87 +39,89 @@ import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
  */
 public class PertussisCaseObservationImpl extends CaseObservationImpl implements PertussisCaseObservation {
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	protected PertussisCaseObservationImpl() {
-    super();
-  }
+		super();
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	@Override
 	protected EClass eStaticClass() {
-    return PertussisPackage.Literals.PERTUSSIS_CASE_OBSERVATION;
-  }
+		return PertussisPackage.Literals.PERTUSSIS_CASE_OBSERVATION;
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   public boolean validatePertussisCaseObservationValueP(DiagnosticChain diagnostics, Map<Object, Object> context)
   {
-    return PertussisCaseObservationOperations.validatePertussisCaseObservationValueP(this, diagnostics, context);
-  }
+		return PertussisCaseObservationOperations.validatePertussisCaseObservationValueP(this, diagnostics, context);
+	}
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   public boolean validatePertussisCaseObservationValue(DiagnosticChain diagnostics, Map<Object, Object> context)
   {
-    return PertussisCaseObservationOperations.validatePertussisCaseObservationValue(this, diagnostics, context);
-  }
+		return PertussisCaseObservationOperations.validatePertussisCaseObservationValue(this, diagnostics, context);
+	}
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public boolean validatePertussisCaseObservationPertussisSignsAndSymptomsObservation(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return PertussisCaseObservationOperations.validatePertussisCaseObservationPertussisSignsAndSymptomsObservation(this, diagnostics, context);
-  }
+		return PertussisCaseObservationOperations.validatePertussisCaseObservationPertussisSignsAndSymptomsObservation(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public EList<PertussisSignsAndSymptomsObservation> getPertussisSignsAndSymptomsObservations() {
-    return PertussisCaseObservationOperations.getPertussisSignsAndSymptomsObservations(this);
-  }
+		return PertussisCaseObservationOperations.getPertussisSignsAndSymptomsObservations(this);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	@Override
 	public boolean validateProblemObservationTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return PertussisCaseObservationOperations.validateProblemObservationTemplateId(this, diagnostics, context);
-  }
+		return PertussisCaseObservationOperations.validateProblemObservationTemplateId(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
+	@Override
 	public PertussisCaseObservation init() {
-      return Initializer.Util.init(this);
-  }
+	    return Initializer.Util.init(this);
+	}
 
   /**
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
      * @generated
      */
-    public PertussisCaseObservation init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+    @Override
+	public PertussisCaseObservation init(Iterable<? extends Initializer<? extends EObject>> initializers) {
         Initializer.Util.init(this, initializers);
         return this;
     }

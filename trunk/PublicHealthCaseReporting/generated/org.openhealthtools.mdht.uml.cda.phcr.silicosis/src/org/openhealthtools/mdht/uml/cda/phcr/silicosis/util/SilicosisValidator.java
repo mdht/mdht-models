@@ -12,12 +12,12 @@ package org.openhealthtools.mdht.uml.cda.phcr.silicosis.util;
 
 import java.util.Map;
 
+import org.eclipse.emf.common.util.Diagnostic;
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.common.util.ResourceLocator;
 import org.eclipse.emf.ecore.EPackage;
 import org.eclipse.emf.ecore.util.EObjectValidator;
 import org.openhealthtools.mdht.uml.cda.ccd.util.CCDValidator;
-import org.openhealthtools.mdht.uml.cda.phcr.silicosis.*;
 import org.openhealthtools.mdht.uml.cda.phcr.silicosis.SilicosisCaseObservation;
 import org.openhealthtools.mdht.uml.cda.phcr.silicosis.SilicosisCaseReport;
 import org.openhealthtools.mdht.uml.cda.phcr.silicosis.SilicosisHistoryOfTuberculosisObservation;
@@ -535,7 +535,28 @@ public class SilicosisValidator extends EObjectValidator {
    * @generated
    */
 	public boolean validateSilicosisCaseReport_validatePublicHealthCaseReportTemplateId(SilicosisCaseReport silicosisCaseReport, DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return silicosisCaseReport.validatePublicHealthCaseReportTemplateId(diagnostics, context);
+    // TODO override the constraint, if desired
+    // -> uncomment the scaffolding
+    // -> specify the condition that violates the constraint
+    // -> verify the diagnostic details, including severity, code, and message
+    // Ensure that you remove @generated or mark it @generated NOT
+    if (false)
+    {
+      if (diagnostics != null)
+      {
+        diagnostics.add
+          (createDiagnostic
+            (Diagnostic.ERROR,
+             DIAGNOSTIC_SOURCE,
+             0,
+             "_UI_GenericConstraint_diagnostic",
+             new Object[] { "validatePublicHealthCaseReportTemplateId", getObjectLabel(silicosisCaseReport, context) },
+             new Object[] { silicosisCaseReport },
+             context));
+      }
+      return false;
+    }
+    return phcrValidator.validatePublicHealthCaseReport_validatePublicHealthCaseReportTemplateId(silicosisCaseReport, diagnostics, context);
   }
 
 	/**
@@ -554,12 +575,6 @@ public class SilicosisValidator extends EObjectValidator {
     if (result || diagnostics != null) result &= validate_EveryMapEntryUnique(silicosisPHCRSocialHistorySection, diagnostics, context);
     if (result || diagnostics != null) result &= cdaValidator.validateSection_validateClassCode(silicosisPHCRSocialHistorySection, diagnostics, context);
     if (result || diagnostics != null) result &= cdaValidator.validateSection_validateMoodCode(silicosisPHCRSocialHistorySection, diagnostics, context);
-    if (result || diagnostics != null) result &= ccdValidator.validateSocialHistorySection_validateSocialHistorySectionMaritalStatus(silicosisPHCRSocialHistorySection, diagnostics, context);
-    if (result || diagnostics != null) result &= ccdValidator.validateSocialHistorySection_validateSocialHistorySectionReligiousAffiliation(silicosisPHCRSocialHistorySection, diagnostics, context);
-    if (result || diagnostics != null) result &= ccdValidator.validateSocialHistorySection_validateSocialHistorySectionPatientRace(silicosisPHCRSocialHistorySection, diagnostics, context);
-    if (result || diagnostics != null) result &= ccdValidator.validateSocialHistorySection_validateSocialHistorySectionPatientRaceCodeSystem(silicosisPHCRSocialHistorySection, diagnostics, context);
-    if (result || diagnostics != null) result &= ccdValidator.validateSocialHistorySection_validateSocialHistorySectionPatientEthnicity(silicosisPHCRSocialHistorySection, diagnostics, context);
-    if (result || diagnostics != null) result &= ccdValidator.validateSocialHistorySection_validateSocialHistorySectionPatientEthnicityCodeSystem(silicosisPHCRSocialHistorySection, diagnostics, context);
     if (result || diagnostics != null) result &= validateSilicosisPHCRSocialHistorySection_validateSocialHistorySectionTemplateId(silicosisPHCRSocialHistorySection, diagnostics, context);
     if (result || diagnostics != null) result &= ccdValidator.validateSocialHistorySection_validateSocialHistorySectionCode(silicosisPHCRSocialHistorySection, diagnostics, context);
     if (result || diagnostics != null) result &= ccdValidator.validateSocialHistorySection_validateSocialHistorySectionTitle(silicosisPHCRSocialHistorySection, diagnostics, context);
@@ -607,7 +622,28 @@ public class SilicosisValidator extends EObjectValidator {
    */
   public boolean validateSilicosisPHCRSocialHistorySection_validateSocialHistorySectionTemplateId(SilicosisPHCRSocialHistorySection silicosisPHCRSocialHistorySection, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
-    return silicosisPHCRSocialHistorySection.validateSocialHistorySectionTemplateId(diagnostics, context);
+    // TODO override the constraint, if desired
+    // -> uncomment the scaffolding
+    // -> specify the condition that violates the constraint
+    // -> verify the diagnostic details, including severity, code, and message
+    // Ensure that you remove @generated or mark it @generated NOT
+    if (false)
+    {
+      if (diagnostics != null)
+      {
+        diagnostics.add
+          (createDiagnostic
+            (Diagnostic.ERROR,
+             DIAGNOSTIC_SOURCE,
+             0,
+             "_UI_GenericConstraint_diagnostic",
+             new Object[] { "validateSocialHistorySectionTemplateId", getObjectLabel(silicosisPHCRSocialHistorySection, context) },
+             new Object[] { silicosisPHCRSocialHistorySection },
+             context));
+      }
+      return false;
+    }
+    return phcrValidator.validatePhcrSocialHistorySection_validateSocialHistorySectionTemplateId(silicosisPHCRSocialHistorySection, diagnostics, context);
   }
 
   /**
@@ -624,7 +660,6 @@ public class SilicosisValidator extends EObjectValidator {
     if (result || diagnostics != null) result &= validate_UniqueID(silicosisSocioBehavioralBooleanRiskFactorObservation, diagnostics, context);
     if (result || diagnostics != null) result &= validate_EveryKeyUnique(silicosisSocioBehavioralBooleanRiskFactorObservation, diagnostics, context);
     if (result || diagnostics != null) result &= validate_EveryMapEntryUnique(silicosisSocioBehavioralBooleanRiskFactorObservation, diagnostics, context);
-    if (result || diagnostics != null) result &= ccdValidator.validateSocialHistoryObservation_validateSocialHistoryObservationCodeValueSet(silicosisSocioBehavioralBooleanRiskFactorObservation, diagnostics, context);
     if (result || diagnostics != null) result &= validateSilicosisSocioBehavioralBooleanRiskFactorObservation_validateSocialHistoryObservationTemplateId(silicosisSocioBehavioralBooleanRiskFactorObservation, diagnostics, context);
     if (result || diagnostics != null) result &= ccdValidator.validateSocialHistoryObservation_validateSocialHistoryObservationClassCode(silicosisSocioBehavioralBooleanRiskFactorObservation, diagnostics, context);
     if (result || diagnostics != null) result &= ccdValidator.validateSocialHistoryObservation_validateSocialHistoryObservationId(silicosisSocioBehavioralBooleanRiskFactorObservation, diagnostics, context);
@@ -699,7 +734,28 @@ public class SilicosisValidator extends EObjectValidator {
    */
   public boolean validateSilicosisSocioBehavioralBooleanRiskFactorObservation_validateSocialHistoryObservationTemplateId(SilicosisSocioBehavioralBooleanRiskFactorObservation silicosisSocioBehavioralBooleanRiskFactorObservation, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
-    return silicosisSocioBehavioralBooleanRiskFactorObservation.validateSocialHistoryObservationTemplateId(diagnostics, context);
+    // TODO override the constraint, if desired
+    // -> uncomment the scaffolding
+    // -> specify the condition that violates the constraint
+    // -> verify the diagnostic details, including severity, code, and message
+    // Ensure that you remove @generated or mark it @generated NOT
+    if (false)
+    {
+      if (diagnostics != null)
+      {
+        diagnostics.add
+          (createDiagnostic
+            (Diagnostic.ERROR,
+             DIAGNOSTIC_SOURCE,
+             0,
+             "_UI_GenericConstraint_diagnostic",
+             new Object[] { "validateSocialHistoryObservationTemplateId", getObjectLabel(silicosisSocioBehavioralBooleanRiskFactorObservation, context) },
+             new Object[] { silicosisSocioBehavioralBooleanRiskFactorObservation },
+             context));
+      }
+      return false;
+    }
+    return ccdValidator.validateSocialHistoryObservation_validateSocialHistoryObservationTemplateId(silicosisSocioBehavioralBooleanRiskFactorObservation, diagnostics, context);
   }
 
   /**
@@ -762,7 +818,28 @@ public class SilicosisValidator extends EObjectValidator {
    */
   public boolean validateSilicosisPHCRClinicalInformationSection_validatePhcrClinicalInformationSectionTemplateId(SilicosisPHCRClinicalInformationSection silicosisPHCRClinicalInformationSection, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
-    return silicosisPHCRClinicalInformationSection.validatePhcrClinicalInformationSectionTemplateId(diagnostics, context);
+    // TODO override the constraint, if desired
+    // -> uncomment the scaffolding
+    // -> specify the condition that violates the constraint
+    // -> verify the diagnostic details, including severity, code, and message
+    // Ensure that you remove @generated or mark it @generated NOT
+    if (false)
+    {
+      if (diagnostics != null)
+      {
+        diagnostics.add
+          (createDiagnostic
+            (Diagnostic.ERROR,
+             DIAGNOSTIC_SOURCE,
+             0,
+             "_UI_GenericConstraint_diagnostic",
+             new Object[] { "validatePhcrClinicalInformationSectionTemplateId", getObjectLabel(silicosisPHCRClinicalInformationSection, context) },
+             new Object[] { silicosisPHCRClinicalInformationSection },
+             context));
+      }
+      return false;
+    }
+    return phcrValidator.validatePhcrClinicalInformationSection_validatePhcrClinicalInformationSectionTemplateId(silicosisPHCRClinicalInformationSection, diagnostics, context);
   }
 
   /**
@@ -835,7 +912,28 @@ public class SilicosisValidator extends EObjectValidator {
    */
   public boolean validateSilicosisCaseObservation_validateProblemObservationTemplateId(SilicosisCaseObservation silicosisCaseObservation, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
-    return silicosisCaseObservation.validateProblemObservationTemplateId(diagnostics, context);
+    // TODO override the constraint, if desired
+    // -> uncomment the scaffolding
+    // -> specify the condition that violates the constraint
+    // -> verify the diagnostic details, including severity, code, and message
+    // Ensure that you remove @generated or mark it @generated NOT
+    if (false)
+    {
+      if (diagnostics != null)
+      {
+        diagnostics.add
+          (createDiagnostic
+            (Diagnostic.ERROR,
+             DIAGNOSTIC_SOURCE,
+             0,
+             "_UI_GenericConstraint_diagnostic",
+             new Object[] { "validateProblemObservationTemplateId", getObjectLabel(silicosisCaseObservation, context) },
+             new Object[] { silicosisCaseObservation },
+             context));
+      }
+      return false;
+    }
+    return phcrValidator.validateCaseObservation_validateProblemObservationTemplateId(silicosisCaseObservation, diagnostics, context);
   }
 
   /**
@@ -884,7 +982,28 @@ public class SilicosisValidator extends EObjectValidator {
    */
   public boolean validateSilicosisSignsAndSymptomsObservation_validateSignsAndSymptomsObservationTemplateId(SilicosisSignsAndSymptomsObservation silicosisSignsAndSymptomsObservation, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
-    return silicosisSignsAndSymptomsObservation.validateSignsAndSymptomsObservationTemplateId(diagnostics, context);
+    // TODO override the constraint, if desired
+    // -> uncomment the scaffolding
+    // -> specify the condition that violates the constraint
+    // -> verify the diagnostic details, including severity, code, and message
+    // Ensure that you remove @generated or mark it @generated NOT
+    if (false)
+    {
+      if (diagnostics != null)
+      {
+        diagnostics.add
+          (createDiagnostic
+            (Diagnostic.ERROR,
+             DIAGNOSTIC_SOURCE,
+             0,
+             "_UI_GenericConstraint_diagnostic",
+             new Object[] { "validateSignsAndSymptomsObservationTemplateId", getObjectLabel(silicosisSignsAndSymptomsObservation, context) },
+             new Object[] { silicosisSignsAndSymptomsObservation },
+             context));
+      }
+      return false;
+    }
+    return phcrValidator.validateSignsAndSymptomsObservation_validateSignsAndSymptomsObservationTemplateId(silicosisSignsAndSymptomsObservation, diagnostics, context);
   }
 
   /**
@@ -958,7 +1077,28 @@ public class SilicosisValidator extends EObjectValidator {
    */
   public boolean validateSilicosisHistoryOfTuberculosisObservation_validateProblemObservationTemplateId(SilicosisHistoryOfTuberculosisObservation silicosisHistoryOfTuberculosisObservation, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
-    return silicosisHistoryOfTuberculosisObservation.validateProblemObservationTemplateId(diagnostics, context);
+    // TODO override the constraint, if desired
+    // -> uncomment the scaffolding
+    // -> specify the condition that violates the constraint
+    // -> verify the diagnostic details, including severity, code, and message
+    // Ensure that you remove @generated or mark it @generated NOT
+    if (false)
+    {
+      if (diagnostics != null)
+      {
+        diagnostics.add
+          (createDiagnostic
+            (Diagnostic.ERROR,
+             DIAGNOSTIC_SOURCE,
+             0,
+             "_UI_GenericConstraint_diagnostic",
+             new Object[] { "validateProblemObservationTemplateId", getObjectLabel(silicosisHistoryOfTuberculosisObservation, context) },
+             new Object[] { silicosisHistoryOfTuberculosisObservation },
+             context));
+      }
+      return false;
+    }
+    return ccdValidator.validateProblemObservation_validateProblemObservationTemplateId(silicosisHistoryOfTuberculosisObservation, diagnostics, context);
   }
 
   /**
@@ -1013,7 +1153,28 @@ public class SilicosisValidator extends EObjectValidator {
    */
   public boolean validateSilicosisPHCRRelevantDxTestsSection_validateResultsSectionTemplateId(SilicosisPHCRRelevantDxTestsSection silicosisPHCRRelevantDxTestsSection, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
-    return silicosisPHCRRelevantDxTestsSection.validateResultsSectionTemplateId(diagnostics, context);
+    // TODO override the constraint, if desired
+    // -> uncomment the scaffolding
+    // -> specify the condition that violates the constraint
+    // -> verify the diagnostic details, including severity, code, and message
+    // Ensure that you remove @generated or mark it @generated NOT
+    if (false)
+    {
+      if (diagnostics != null)
+      {
+        diagnostics.add
+          (createDiagnostic
+            (Diagnostic.ERROR,
+             DIAGNOSTIC_SOURCE,
+             0,
+             "_UI_GenericConstraint_diagnostic",
+             new Object[] { "validateResultsSectionTemplateId", getObjectLabel(silicosisPHCRRelevantDxTestsSection, context) },
+             new Object[] { silicosisPHCRRelevantDxTestsSection },
+             context));
+      }
+      return false;
+    }
+    return phcrValidator.validatePhcrRelevantDxTestsSection_validateResultsSectionTemplateId(silicosisPHCRRelevantDxTestsSection, diagnostics, context);
   }
 
   /**
@@ -1071,7 +1232,28 @@ public class SilicosisValidator extends EObjectValidator {
    */
   public boolean validateSilicosisImagingObservation_validateProblemObservationTemplateId(SilicosisImagingObservation silicosisImagingObservation, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
-    return silicosisImagingObservation.validateProblemObservationTemplateId(diagnostics, context);
+    // TODO override the constraint, if desired
+    // -> uncomment the scaffolding
+    // -> specify the condition that violates the constraint
+    // -> verify the diagnostic details, including severity, code, and message
+    // Ensure that you remove @generated or mark it @generated NOT
+    if (false)
+    {
+      if (diagnostics != null)
+      {
+        diagnostics.add
+          (createDiagnostic
+            (Diagnostic.ERROR,
+             DIAGNOSTIC_SOURCE,
+             0,
+             "_UI_GenericConstraint_diagnostic",
+             new Object[] { "validateProblemObservationTemplateId", getObjectLabel(silicosisImagingObservation, context) },
+             new Object[] { silicosisImagingObservation },
+             context));
+      }
+      return false;
+    }
+    return phcrValidator.validateImagingObservation_validateProblemObservationTemplateId(silicosisImagingObservation, diagnostics, context);
   }
 
   /**

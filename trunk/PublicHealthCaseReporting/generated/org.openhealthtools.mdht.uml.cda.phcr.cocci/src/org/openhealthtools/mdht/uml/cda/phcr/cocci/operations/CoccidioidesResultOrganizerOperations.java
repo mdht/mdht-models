@@ -88,6 +88,7 @@ public class CoccidioidesResultOrganizerOperations extends ResultOrganizerOperat
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
+   * (self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined())
    * @param coccidioidesResultOrganizer The receiving '<em><b>Coccidioides Result Organizer</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -96,8 +97,8 @@ public class CoccidioidesResultOrganizerOperations extends ResultOrganizerOperat
    */
 	
 	public static  boolean validateCoccidioidesResultOrganizerCode(CoccidioidesResultOrganizer coccidioidesResultOrganizer, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
-    if (VALIDATE_COCCIDIOIDES_RESULT_ORGANIZER_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+    if (VALIDATE_COCCIDIOIDES_RESULT_ORGANIZER_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null)
+    {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(CocciPackage.Literals.COCCIDIOIDES_RESULT_ORGANIZER);
       try
@@ -118,10 +119,9 @@ public class CoccidioidesResultOrganizerOperations extends ResultOrganizerOperat
             (Diagnostic.ERROR,
              CocciValidator.DIAGNOSTIC_SOURCE,
              CocciValidator.COCCIDIOIDES_RESULT_ORGANIZER__COCCIDIOIDES_RESULT_ORGANIZER_CODE,
-             CocciPlugin.INSTANCE.getString("CoccidioidesResultOrganizerCode"),
+             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "validateCoccidioidesResultOrganizerCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(coccidioidesResultOrganizer, context) }),
              new Object [] { coccidioidesResultOrganizer }));
       }
-       
       return false;
     }
     return true;
@@ -153,6 +153,7 @@ public class CoccidioidesResultOrganizerOperations extends ResultOrganizerOperat
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
+   * self.component->exists(component : cda::Component4 | not component.observation.oclIsUndefined() and component.observation.oclIsKindOf(cocci::CoccidioidesResultObservation))
    * @param coccidioidesResultOrganizer The receiving '<em><b>Coccidioides Result Organizer</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -161,8 +162,8 @@ public class CoccidioidesResultOrganizerOperations extends ResultOrganizerOperat
    */
 	
 	public static  boolean validateCoccidioidesResultOrganizerCoccidioidesResultObservation(CoccidioidesResultOrganizer coccidioidesResultOrganizer, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
-    if (VALIDATE_COCCIDIOIDES_RESULT_ORGANIZER_COCCIDIOIDES_RESULT_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+    if (VALIDATE_COCCIDIOIDES_RESULT_ORGANIZER_COCCIDIOIDES_RESULT_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null)
+    {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(CocciPackage.Literals.COCCIDIOIDES_RESULT_ORGANIZER);
       try
@@ -183,10 +184,9 @@ public class CoccidioidesResultOrganizerOperations extends ResultOrganizerOperat
             (Diagnostic.ERROR,
              CocciValidator.DIAGNOSTIC_SOURCE,
              CocciValidator.COCCIDIOIDES_RESULT_ORGANIZER__COCCIDIOIDES_RESULT_ORGANIZER_COCCIDIOIDES_RESULT_OBSERVATION,
-             CocciPlugin.INSTANCE.getString("CoccidioidesResultOrganizerCoccidioidesResultObservation"),
+             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "validateCoccidioidesResultOrganizerCoccidioidesResultObservation", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(coccidioidesResultOrganizer, context) }),
              new Object [] { coccidioidesResultOrganizer }));
       }
-       
       return false;
     }
     return true;
@@ -216,6 +216,10 @@ public class CoccidioidesResultOrganizerOperations extends ResultOrganizerOperat
 	/**
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
+   * <!-- begin-model-doc -->
+   * self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(cocci::CoccidioidesResultObservation)).oclAsType(cocci::CoccidioidesResultObservation)
+   * @param coccidioidesResultOrganizer The receiving '<em><b>Coccidioides Result Organizer</b></em>' model object.
+   * <!-- end-model-doc -->
    * @generated
    */
 	
@@ -223,7 +227,7 @@ public class CoccidioidesResultOrganizerOperations extends ResultOrganizerOperat
     if (GET_COCCIDIOIDES_RESULT_OBSERVATIONS__EOCL_QRY == null)
     {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
-      helper.setOperationContext(CocciPackage.Literals.COCCIDIOIDES_RESULT_ORGANIZER, CocciPackage.Literals.COCCIDIOIDES_RESULT_ORGANIZER.getEAllOperations().get(76));
+      helper.setOperationContext(CocciPackage.Literals.COCCIDIOIDES_RESULT_ORGANIZER, CocciPackage.Literals.COCCIDIOIDES_RESULT_ORGANIZER.getEAllOperations().get(73));
       try
       {
         GET_COCCIDIOIDES_RESULT_OBSERVATIONS__EOCL_QRY = helper.createQuery(GET_COCCIDIOIDES_RESULT_OBSERVATIONS__EOCL_EXP);
@@ -265,6 +269,7 @@ public class CoccidioidesResultOrganizerOperations extends ResultOrganizerOperat
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
+   * self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.15.3.92')
    * @param coccidioidesResultOrganizer The receiving '<em><b>Coccidioides Result Organizer</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -273,8 +278,8 @@ public class CoccidioidesResultOrganizerOperations extends ResultOrganizerOperat
    */
 	
 	public static  boolean validateResultOrganizerTemplateId(CoccidioidesResultOrganizer coccidioidesResultOrganizer, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
-    if (VALIDATE_RESULT_ORGANIZER_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+    if (VALIDATE_RESULT_ORGANIZER_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null)
+    {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(CocciPackage.Literals.COCCIDIOIDES_RESULT_ORGANIZER);
       try
@@ -295,10 +300,9 @@ public class CoccidioidesResultOrganizerOperations extends ResultOrganizerOperat
             (Diagnostic.ERROR,
              CocciValidator.DIAGNOSTIC_SOURCE,
              CocciValidator.COCCIDIOIDES_RESULT_ORGANIZER__RESULT_ORGANIZER_TEMPLATE_ID,
-             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "ResultOrganizerTemplateId", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(coccidioidesResultOrganizer, context) }),
+             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "validateResultOrganizerTemplateId", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(coccidioidesResultOrganizer, context) }),
              new Object [] { coccidioidesResultOrganizer }));
       }
-       
       return false;
     }
     return true;

@@ -3,11 +3,14 @@
     xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="meningococcal"
     nsURI="http://www.openhealthtools.org/mdht/uml/cda/phcr/meningococcal" nsPrefix="meningococcal">
+  <eAnnotations source="http://www.openhealthtools.org/mdht/uml">
+    <details key="initializers" value="org.openhealthtools.mdht.uml.cda.phcr.meningococcal"/>
+  </eAnnotations>
   <eClassifiers xsi:type="ecore:EClass" name="MeningococcalCaseReport" eSuperTypes="../../org.openhealthtools.mdht.uml.cda.phcr/model/phcr.ecore#//PublicHealthCaseReport">
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
-      <details key="title.mixed" value="Public Health Case Report - Meningococcal"/>
-      <details key="templateId.root" value="2.16.840.1.113883.10.20.15.1.15"/>
       <details key="constraints.validation.error" value="MeningococcalCaseReportTemplateId MeningococcalCaseReportTitle MeningococcalCaseReportMeningococcalPhcrClinicalInformationSection"/>
+      <details key="templateId.root" value="2.16.840.1.113883.10.20.15.1.15"/>
+      <details key="title.mixed" value="Public Health Case Report - Meningococcal"/>
       <details key="constraints.validation.warning" value="MeningococcalCaseReportMeningococcalPhcrRelevantDxTestsSection"/>
     </eAnnotations>
     <eAnnotations source="duplicates">
@@ -107,27 +110,27 @@
     <eOperations name="getMeningococcalPhcrClinicalInformationSection" ordered="false"
         lowerBound="1" eType="#//MeningococcalPhcrClinicalInformationSection">
       <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(meningococcal::MeningococcalPhcrClinicalInformationSection))->asSequence()->first().oclAsType(meningococcal::MeningococcalPhcrClinicalInformationSection)"/>
+        <details key="documentation" value="self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(meningococcal::MeningococcalPhcrClinicalInformationSection))->asSequence()->any(true).oclAsType(meningococcal::MeningococcalPhcrClinicalInformationSection)"/>
       </eAnnotations>
       <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
-        <details key="body" value="self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(meningococcal::MeningococcalPhcrClinicalInformationSection))->asSequence()->first().oclAsType(meningococcal::MeningococcalPhcrClinicalInformationSection)"/>
+        <details key="body" value="self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(meningococcal::MeningococcalPhcrClinicalInformationSection))->asSequence()->any(true).oclAsType(meningococcal::MeningococcalPhcrClinicalInformationSection)"/>
       </eAnnotations>
     </eOperations>
     <eOperations name="getMeningococcalPhcrRelevantDxTestsSection" ordered="false"
         lowerBound="1" eType="#//MeningococcalPhcrRelevantDxTestsSection">
       <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(meningococcal::MeningococcalPhcrRelevantDxTestsSection))->asSequence()->first().oclAsType(meningococcal::MeningococcalPhcrRelevantDxTestsSection)"/>
+        <details key="documentation" value="self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(meningococcal::MeningococcalPhcrRelevantDxTestsSection))->asSequence()->any(true).oclAsType(meningococcal::MeningococcalPhcrRelevantDxTestsSection)"/>
       </eAnnotations>
       <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
-        <details key="body" value="self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(meningococcal::MeningococcalPhcrRelevantDxTestsSection))->asSequence()->first().oclAsType(meningococcal::MeningococcalPhcrRelevantDxTestsSection)"/>
+        <details key="body" value="self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(meningococcal::MeningococcalPhcrRelevantDxTestsSection))->asSequence()->any(true).oclAsType(meningococcal::MeningococcalPhcrRelevantDxTestsSection)"/>
       </eAnnotations>
     </eOperations>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="MeningococcalPhcrClinicalInformationSection"
       eSuperTypes="../../org.openhealthtools.mdht.uml.cda.phcr/model/phcr.ecore#//PhcrClinicalInformationSection">
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
-      <details key="templateId.root" value="2.16.840.1.113883.10.20.15.2.59"/>
       <details key="constraints.validation.error" value="MeningococcalPhcrClinicalInformationSectionTemplateId MeningococcalPhcrClinicalInformationSectionMeningococcalCaseObservation"/>
+      <details key="templateId.root" value="2.16.840.1.113883.10.20.15.2.59"/>
     </eAnnotations>
     <eAnnotations source="duplicates">
       <contents xsi:type="ecore:EOperation" name="PhcrClinicalInformationSectionTemplateId"
@@ -181,17 +184,17 @@
     <eOperations name="getMeningococcalCaseObservation" ordered="false" lowerBound="1"
         eType="#//MeningococcalCaseObservation">
       <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(meningococcal::MeningococcalCaseObservation))->asSequence()->first().oclAsType(meningococcal::MeningococcalCaseObservation)"/>
+        <details key="documentation" value="self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(meningococcal::MeningococcalCaseObservation))->asSequence()->any(true).oclAsType(meningococcal::MeningococcalCaseObservation)"/>
       </eAnnotations>
       <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
-        <details key="body" value="self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(meningococcal::MeningococcalCaseObservation))->asSequence()->first().oclAsType(meningococcal::MeningococcalCaseObservation)"/>
+        <details key="body" value="self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(meningococcal::MeningococcalCaseObservation))->asSequence()->any(true).oclAsType(meningococcal::MeningococcalCaseObservation)"/>
       </eAnnotations>
     </eOperations>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="MeningococcalCaseObservation" eSuperTypes="../../org.openhealthtools.mdht.uml.cda.phcr/model/phcr.ecore#//CaseObservation">
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
-      <details key="templateId.root" value="2.16.840.1.113883.10.20.15.3.138"/>
       <details key="constraints.validation.error" value="MeningococcalCaseObservationTemplateId"/>
+      <details key="templateId.root" value="2.16.840.1.113883.10.20.15.3.138"/>
       <details key="constraints.validation.warning" value="MeningococcalCaseObservationMeningococcalSignsAndSymptomsObservation"/>
     </eAnnotations>
     <eAnnotations source="duplicates">
@@ -255,8 +258,8 @@
   <eClassifiers xsi:type="ecore:EClass" name="MeningococcalSignsAndSymptomsObservation"
       eSuperTypes="../../org.openhealthtools.mdht.uml.cda.phcr/model/phcr.ecore#//SignsAndSymptomsObservation">
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
-      <details key="templateId.root" value="2.16.840.1.113883.10.20.15.3.139"/>
       <details key="constraints.validation.error" value="MeningococcalSignsAndSymptomsObservationTemplateId"/>
+      <details key="templateId.root" value="2.16.840.1.113883.10.20.15.3.139"/>
     </eAnnotations>
     <eAnnotations source="duplicates">
       <contents xsi:type="ecore:EOperation" name="SignsAndSymptomsObservationTemplateId"
@@ -288,8 +291,8 @@
   <eClassifiers xsi:type="ecore:EClass" name="MeningococcalPhcrRelevantDxTestsSection"
       eSuperTypes="../../org.openhealthtools.mdht.uml.cda.phcr/model/phcr.ecore#//PhcrRelevantDxTestsSection">
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
-      <details key="templateId.root" value="2.16.840.1.113883.10.20.15.2.60"/>
       <details key="constraints.validation.error" value="MeningococcalPhcrRelevantDxTestsSectionTemplateId"/>
+      <details key="templateId.root" value="2.16.840.1.113883.10.20.15.2.60"/>
       <details key="constraints.validation.warning" value="MeningococcalPhcrRelevantDxTestsSectionMeningococcalResultObservation"/>
       <details key="constraints.validation.info" value="MeningococcalPhcrRelevantDxTestsSectionMeningococcalResultOrganizer"/>
     </eAnnotations>
@@ -385,8 +388,8 @@
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="MeningococcalResultObservation" eSuperTypes="../../org.openhealthtools.mdht.uml.cda.phcr/model/phcr.ecore#//ResultObservation">
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
-      <details key="templateId.root" value="2.16.840.1.113883.10.20.15.3.141"/>
       <details key="constraints.validation.error" value="MeningococcalResultObservationTemplateId"/>
+      <details key="templateId.root" value="2.16.840.1.113883.10.20.15.3.141"/>
     </eAnnotations>
     <eAnnotations source="duplicates">
       <contents xsi:type="ecore:EOperation" name="ResultObservationTemplateId" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
@@ -416,8 +419,8 @@
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="MeningococcalResultOrganizer" eSuperTypes="../../org.openhealthtools.mdht.uml.cda.phcr/model/phcr.ecore#//ResultOrganizer">
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
-      <details key="templateId.root" value="2.16.840.1.113883.10.20.15.3.140"/>
       <details key="constraints.validation.error" value="MeningococcalResultOrganizerTemplateId"/>
+      <details key="templateId.root" value="2.16.840.1.113883.10.20.15.3.140"/>
     </eAnnotations>
     <eAnnotations source="duplicates">
       <contents xsi:type="ecore:EOperation" name="ResultOrganizerTemplateId" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
@@ -447,10 +450,10 @@
     <eOperations name="getMeningococcalResultObservation" ordered="false" lowerBound="1"
         eType="#//MeningococcalResultObservation">
       <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(meningococcal::MeningococcalResultObservation))->asSequence()->first().oclAsType(meningococcal::MeningococcalResultObservation)"/>
+        <details key="documentation" value="self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(meningococcal::MeningococcalResultObservation))->asSequence()->any(true).oclAsType(meningococcal::MeningococcalResultObservation)"/>
       </eAnnotations>
       <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
-        <details key="body" value="self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(meningococcal::MeningococcalResultObservation))->asSequence()->first().oclAsType(meningococcal::MeningococcalResultObservation)"/>
+        <details key="body" value="self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(meningococcal::MeningococcalResultObservation))->asSequence()->any(true).oclAsType(meningococcal::MeningococcalResultObservation)"/>
       </eAnnotations>
     </eOperations>
   </eClassifiers>

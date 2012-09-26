@@ -24,7 +24,6 @@ import org.openhealthtools.mdht.uml.cda.phcr.TherapeuticRegimenAct;
 import org.openhealthtools.mdht.uml.cda.phcr.TreatmentGivenSubstanceAdministration;
 import org.openhealthtools.mdht.uml.cda.phcr.TreatmentNotGivenSubstanceAdministration;
 import org.openhealthtools.mdht.uml.cda.phcr.operations.TherapeuticRegimenActOperations;
-import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
 
 /**
  * <!-- begin-user-doc -->
@@ -162,24 +161,5 @@ public class TherapeuticRegimenActImpl extends ActImpl implements TherapeuticReg
 	public EList<TreatmentNotGivenSubstanceAdministration> getTreatmentNotGivenSubstanceAdministrations() {
     return TherapeuticRegimenActOperations.getTreatmentNotGivenSubstanceAdministrations(this);
   }
-
-	/**
-   * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-   * @generated
-   */
-	public TherapeuticRegimenAct init() {
-      return Initializer.Util.init(this);
-  }
-
-  /**
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    public TherapeuticRegimenAct init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-        Initializer.Util.init(this, initializers);
-        return this;
-    }
 	
 } //TherapeuticRegimenActImpl

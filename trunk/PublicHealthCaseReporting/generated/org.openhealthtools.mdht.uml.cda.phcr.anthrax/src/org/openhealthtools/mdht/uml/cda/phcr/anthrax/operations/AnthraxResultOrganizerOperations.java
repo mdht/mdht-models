@@ -45,7 +45,6 @@ import org.openhealthtools.mdht.uml.cda.phcr.operations.ResultOrganizerOperation
  * <p>
  * The following operations are supported:
  * <ul>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.phcr.anthrax.AnthraxResultOrganizer#validateAnthraxResultOrganizerCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Anthrax Result Organizer Code P</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.phcr.anthrax.AnthraxResultOrganizer#validateAnthraxResultOrganizerCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Anthrax Result Organizer Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.phcr.anthrax.AnthraxResultOrganizer#validateAnthraxResultOrganizerAnthraxResultObservation(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Anthrax Result Organizer Anthrax Result Observation</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.phcr.anthrax.AnthraxResultOrganizer#getAnthraxResultObservations() <em>Get Anthrax Result Observations</em>}</li>
@@ -90,6 +89,7 @@ public class AnthraxResultOrganizerOperations extends ResultOrganizerOperations 
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
+   * (self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined())
    * @param anthraxResultOrganizer The receiving '<em><b>Result Organizer</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -99,8 +99,8 @@ public class AnthraxResultOrganizerOperations extends ResultOrganizerOperations 
   
   public static  boolean validateAnthraxResultOrganizerCodeP(AnthraxResultOrganizer anthraxResultOrganizer, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
-  	  
-    if (VALIDATE_ANTHRAX_RESULT_ORGANIZER_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+    if (VALIDATE_ANTHRAX_RESULT_ORGANIZER_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null)
+    {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(AnthraxPackage.Literals.ANTHRAX_RESULT_ORGANIZER);
       try
@@ -121,22 +121,9 @@ public class AnthraxResultOrganizerOperations extends ResultOrganizerOperations 
             (Diagnostic.ERROR,
              AnthraxValidator.DIAGNOSTIC_SOURCE,
              AnthraxValidator.ANTHRAX_RESULT_ORGANIZER__ANTHRAX_RESULT_ORGANIZER_CODE_P,
-             AnthraxPlugin.INSTANCE.getString("AnthraxResultOrganizerCodeP"),
+             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "validateAnthraxResultOrganizerCodeP", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(anthraxResultOrganizer, context) }),
              new Object [] { anthraxResultOrganizer }));
       }
-      
-      if (context != null) {
-        // generate a pass token for my dependent constraints to short-circuit or filter results
-        @SuppressWarnings("unchecked")
-        Collection<Object> passToken = (Collection<Object>) context.get("org.openhealthtools.mdht.uml.cda.phcr.anthrax.AnthraxResultOrganizerCodeP");
-        if (passToken == null) {
-          // anticipate a reasonably healthy model
-          passToken = new java.util.ArrayList<Object>(3);
-          context.put("org.openhealthtools.mdht.uml.cda.phcr.anthrax.AnthraxResultOrganizerCodeP", passToken);
-        }
-        passToken.add(anthraxResultOrganizer);
-      }
-       
       return false;
     }
     return true;
@@ -169,6 +156,9 @@ public class AnthraxResultOrganizerOperations extends ResultOrganizerOperations 
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
+   * (self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and 
+   * let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in 
+   * value.codeSystem = '2.16.840.1.113883.6.1' and (value.code = '11468-6' or value.code = '33697-4' or value.code = '22866-8' or value.code = '22867-6' or value.code = '51976-9' or value.code = '44269-9' or value.code = '33698-2' or value.code = '44270-7' or value.code = '11469-4' or value.code = '17928-3' or value.code = '17915-0' or value.code = '622-1' or value.code = '21020-3' or value.code = '41622-2'))
    * @param anthraxResultOrganizer The receiving '<em><b>Result Organizer</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -178,14 +168,8 @@ public class AnthraxResultOrganizerOperations extends ResultOrganizerOperations 
   
   public static  boolean validateAnthraxResultOrganizerCode(AnthraxResultOrganizer anthraxResultOrganizer, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
-  	  
-    Object passToken = (context == null) ? null : context.get("org.openhealthtools.mdht.uml.cda.phcr.anthrax.AnthraxResultOrganizerCodeP");
-    if ((passToken instanceof Collection<?>) && ((Collection<?>) passToken).contains(anthraxResultOrganizer)) {
-      // I have a free pass to short-circuit
-      return true;
-    }
-  	  
-    if (VALIDATE_ANTHRAX_RESULT_ORGANIZER_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+    if (VALIDATE_ANTHRAX_RESULT_ORGANIZER_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null)
+    {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(AnthraxPackage.Literals.ANTHRAX_RESULT_ORGANIZER);
       try
@@ -206,10 +190,9 @@ public class AnthraxResultOrganizerOperations extends ResultOrganizerOperations 
             (Diagnostic.ERROR,
              AnthraxValidator.DIAGNOSTIC_SOURCE,
              AnthraxValidator.ANTHRAX_RESULT_ORGANIZER__ANTHRAX_RESULT_ORGANIZER_CODE,
-             AnthraxPlugin.INSTANCE.getString("AnthraxResultOrganizerCode"),
+             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "validateAnthraxResultOrganizerCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(anthraxResultOrganizer, context) }),
              new Object [] { anthraxResultOrganizer }));
       }
-       
       return false;
     }
     return true;
@@ -239,6 +222,7 @@ public class AnthraxResultOrganizerOperations extends ResultOrganizerOperations 
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
+   * self.component->exists(component : cda::Component4 | not component.observation.oclIsUndefined() and component.observation.oclIsKindOf(anthrax::AnthraxResultObservation))
    * @param anthraxResultOrganizer The receiving '<em><b>Result Organizer</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -246,8 +230,8 @@ public class AnthraxResultOrganizerOperations extends ResultOrganizerOperations 
    * @generated
    */
 	public static  boolean validateAnthraxResultOrganizerAnthraxResultObservation(AnthraxResultOrganizer anthraxResultOrganizer, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
-    if (VALIDATE_ANTHRAX_RESULT_ORGANIZER_ANTHRAX_RESULT_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+    if (VALIDATE_ANTHRAX_RESULT_ORGANIZER_ANTHRAX_RESULT_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null)
+    {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(AnthraxPackage.Literals.ANTHRAX_RESULT_ORGANIZER);
       try
@@ -268,10 +252,9 @@ public class AnthraxResultOrganizerOperations extends ResultOrganizerOperations 
             (Diagnostic.ERROR,
              AnthraxValidator.DIAGNOSTIC_SOURCE,
              AnthraxValidator.ANTHRAX_RESULT_ORGANIZER__ANTHRAX_RESULT_ORGANIZER_ANTHRAX_RESULT_OBSERVATION,
-             AnthraxPlugin.INSTANCE.getString("AnthraxResultOrganizerAnthraxResultObservation"),
+             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "validateAnthraxResultOrganizerAnthraxResultObservation", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(anthraxResultOrganizer, context) }),
              new Object [] { anthraxResultOrganizer }));
       }
-       
       return false;
     }
     return true;
@@ -300,6 +283,10 @@ public class AnthraxResultOrganizerOperations extends ResultOrganizerOperations 
 	/**
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
+   * <!-- begin-model-doc -->
+   * self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(anthrax::AnthraxResultObservation)).oclAsType(anthrax::AnthraxResultObservation)
+   * @param anthraxResultOrganizer The receiving '<em><b>Result Organizer</b></em>' model object.
+   * <!-- end-model-doc -->
    * @generated
    */
 	
@@ -307,7 +294,7 @@ public class AnthraxResultOrganizerOperations extends ResultOrganizerOperations 
     if (GET_ANTHRAX_RESULT_OBSERVATIONS__EOCL_QRY == null)
     {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
-      helper.setOperationContext(AnthraxPackage.Literals.ANTHRAX_RESULT_ORGANIZER, AnthraxPackage.Literals.ANTHRAX_RESULT_ORGANIZER.getEAllOperations().get(77));
+      helper.setOperationContext(AnthraxPackage.Literals.ANTHRAX_RESULT_ORGANIZER, AnthraxPackage.Literals.ANTHRAX_RESULT_ORGANIZER.getEAllOperations().get(74));
       try
       {
         GET_ANTHRAX_RESULT_OBSERVATIONS__EOCL_QRY = helper.createQuery(GET_ANTHRAX_RESULT_OBSERVATIONS__EOCL_EXP);
@@ -349,6 +336,7 @@ public class AnthraxResultOrganizerOperations extends ResultOrganizerOperations 
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
+   * self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.15.3.40')
    * @param anthraxResultOrganizer The receiving '<em><b>Result Organizer</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -357,8 +345,8 @@ public class AnthraxResultOrganizerOperations extends ResultOrganizerOperations 
    */
 	
 	public static  boolean validateResultOrganizerTemplateId(AnthraxResultOrganizer anthraxResultOrganizer, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
-    if (VALIDATE_RESULT_ORGANIZER_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+    if (VALIDATE_RESULT_ORGANIZER_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null)
+    {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(AnthraxPackage.Literals.ANTHRAX_RESULT_ORGANIZER);
       try
@@ -379,10 +367,9 @@ public class AnthraxResultOrganizerOperations extends ResultOrganizerOperations 
             (Diagnostic.ERROR,
              AnthraxValidator.DIAGNOSTIC_SOURCE,
              AnthraxValidator.ANTHRAX_RESULT_ORGANIZER__RESULT_ORGANIZER_TEMPLATE_ID,
-             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "ResultOrganizerTemplateId", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(anthraxResultOrganizer, context) }),
+             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "validateResultOrganizerTemplateId", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(anthraxResultOrganizer, context) }),
              new Object [] { anthraxResultOrganizer }));
       }
-       
       return false;
     }
     return true;

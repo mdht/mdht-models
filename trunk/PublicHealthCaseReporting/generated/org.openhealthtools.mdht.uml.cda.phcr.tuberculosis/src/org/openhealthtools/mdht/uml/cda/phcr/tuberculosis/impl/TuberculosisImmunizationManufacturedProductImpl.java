@@ -23,7 +23,6 @@ import org.openhealthtools.mdht.uml.cda.phcr.tuberculosis.TuberculosisImmunizati
 import org.openhealthtools.mdht.uml.cda.phcr.tuberculosis.TuberculosisPackage;
 
 import org.openhealthtools.mdht.uml.cda.phcr.tuberculosis.operations.TuberculosisImmunizationManufacturedProductOperations;
-import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
 
 /**
  * <!-- begin-user-doc -->
@@ -37,52 +36,54 @@ import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
 public class TuberculosisImmunizationManufacturedProductImpl extends ProductImpl implements TuberculosisImmunizationManufacturedProduct
 {
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   protected TuberculosisImmunizationManufacturedProductImpl()
   {
-    super();
-  }
+		super();
+	}
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   @Override
   protected EClass eStaticClass()
   {
-    return TuberculosisPackage.Literals.TUBERCULOSIS_IMMUNIZATION_MANUFACTURED_PRODUCT;
-  }
+		return TuberculosisPackage.Literals.TUBERCULOSIS_IMMUNIZATION_MANUFACTURED_PRODUCT;
+	}
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   @Override
   public boolean validateProductTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context)
   {
-    return TuberculosisImmunizationManufacturedProductOperations.validateProductTemplateId(this, diagnostics, context);
-  }
+		return TuberculosisImmunizationManufacturedProductOperations.validateProductTemplateId(this, diagnostics, context);
+	}
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
-  public TuberculosisImmunizationManufacturedProduct init() {
-      return Initializer.Util.init(this);
-  }
+	 * @generated
+	 */
+  @Override
+public TuberculosisImmunizationManufacturedProduct init() {
+	    return Initializer.Util.init(this);
+	}
 
   /**
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
      * @generated
      */
-    public TuberculosisImmunizationManufacturedProduct init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+    @Override
+	public TuberculosisImmunizationManufacturedProduct init(Iterable<? extends Initializer<? extends EObject>> initializers) {
         Initializer.Util.init(this, initializers);
         return this;
     }

@@ -88,6 +88,7 @@ public class AnthraxCaseReportOperations extends PublicHealthCaseReportOperation
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
+   * (self.title.oclIsUndefined() or self.title.isNullFlavorUndefined()) implies (not self.title.oclIsUndefined() and self.title.getText() = 'Public Health Case Report - Anthrax')
    * @param anthraxCaseReport The receiving '<em><b>Case Report</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -96,8 +97,8 @@ public class AnthraxCaseReportOperations extends PublicHealthCaseReportOperation
    */
 	
 	public static  boolean validateAnthraxCaseReportTitle(AnthraxCaseReport anthraxCaseReport, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
-    if (VALIDATE_ANTHRAX_CASE_REPORT_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+    if (VALIDATE_ANTHRAX_CASE_REPORT_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null)
+    {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(AnthraxPackage.Literals.ANTHRAX_CASE_REPORT);
       try
@@ -118,10 +119,9 @@ public class AnthraxCaseReportOperations extends PublicHealthCaseReportOperation
             (Diagnostic.ERROR,
              AnthraxValidator.DIAGNOSTIC_SOURCE,
              AnthraxValidator.ANTHRAX_CASE_REPORT__ANTHRAX_CASE_REPORT_TITLE,
-             AnthraxPlugin.INSTANCE.getString("AnthraxCaseReportTitle"),
+             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "validateAnthraxCaseReportTitle", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(anthraxCaseReport, context) }),
              new Object [] { anthraxCaseReport }));
       }
-       
       return false;
     }
     return true;
@@ -131,6 +131,7 @@ public class AnthraxCaseReportOperations extends PublicHealthCaseReportOperation
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
+   * self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(anthrax::AnthraxPhcrClinicalInformationSection))
    * @param anthraxCaseReport The receiving '<em><b>Case Report</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -139,8 +140,8 @@ public class AnthraxCaseReportOperations extends PublicHealthCaseReportOperation
    */
 	
 	public static  boolean validateAnthraxCaseReportAnthraxPhcrClinicalInformationSection(AnthraxCaseReport anthraxCaseReport, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
-    if (VALIDATE_ANTHRAX_CASE_REPORT_ANTHRAX_PHCR_CLINICAL_INFORMATION_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+    if (VALIDATE_ANTHRAX_CASE_REPORT_ANTHRAX_PHCR_CLINICAL_INFORMATION_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null)
+    {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(AnthraxPackage.Literals.ANTHRAX_CASE_REPORT);
       try
@@ -161,10 +162,9 @@ public class AnthraxCaseReportOperations extends PublicHealthCaseReportOperation
             (Diagnostic.ERROR,
              AnthraxValidator.DIAGNOSTIC_SOURCE,
              AnthraxValidator.ANTHRAX_CASE_REPORT__ANTHRAX_CASE_REPORT_ANTHRAX_PHCR_CLINICAL_INFORMATION_SECTION,
-             AnthraxPlugin.INSTANCE.getString("AnthraxCaseReportAnthraxPhcrClinicalInformationSection"),
+             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "validateAnthraxCaseReportAnthraxPhcrClinicalInformationSection", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(anthraxCaseReport, context) }),
              new Object [] { anthraxCaseReport }));
       }
-       
       return false;
     }
     return true;
@@ -174,6 +174,7 @@ public class AnthraxCaseReportOperations extends PublicHealthCaseReportOperation
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
+   * self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(anthrax::AnthraxPhcrRelevantDxTestsSection))
    * @param anthraxCaseReport The receiving '<em><b>Case Report</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -182,8 +183,8 @@ public class AnthraxCaseReportOperations extends PublicHealthCaseReportOperation
    */
 	
 	public static  boolean validateAnthraxCaseReportAnthraxPhcrRelevantDxTestsSection(AnthraxCaseReport anthraxCaseReport, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
-    if (VALIDATE_ANTHRAX_CASE_REPORT_ANTHRAX_PHCR_RELEVANT_DX_TESTS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+    if (VALIDATE_ANTHRAX_CASE_REPORT_ANTHRAX_PHCR_RELEVANT_DX_TESTS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null)
+    {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(AnthraxPackage.Literals.ANTHRAX_CASE_REPORT);
       try
@@ -201,13 +202,12 @@ public class AnthraxCaseReportOperations extends PublicHealthCaseReportOperation
       {
         diagnostics.add
           (new BasicDiagnostic
-            (Diagnostic.WARNING,
+            (Diagnostic.ERROR,
              AnthraxValidator.DIAGNOSTIC_SOURCE,
              AnthraxValidator.ANTHRAX_CASE_REPORT__ANTHRAX_CASE_REPORT_ANTHRAX_PHCR_RELEVANT_DX_TESTS_SECTION,
-             AnthraxPlugin.INSTANCE.getString("AnthraxCaseReportAnthraxPhcrRelevantDxTestsSection"),
+             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "validateAnthraxCaseReportAnthraxPhcrRelevantDxTestsSection", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(anthraxCaseReport, context) }),
              new Object [] { anthraxCaseReport }));
       }
-       
       return false;
     }
     return true;
@@ -259,6 +259,7 @@ public class AnthraxCaseReportOperations extends PublicHealthCaseReportOperation
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
+   * self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(anthrax::AnthraxPhcrSocialHistorySection))
    * @param anthraxCaseReport The receiving '<em><b>Case Report</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -267,8 +268,8 @@ public class AnthraxCaseReportOperations extends PublicHealthCaseReportOperation
    */
 	
 	public static  boolean validateAnthraxCaseReportAnthraxPhcrSocialHistorySection(AnthraxCaseReport anthraxCaseReport, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
-    if (VALIDATE_ANTHRAX_CASE_REPORT_ANTHRAX_PHCR_SOCIAL_HISTORY_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+    if (VALIDATE_ANTHRAX_CASE_REPORT_ANTHRAX_PHCR_SOCIAL_HISTORY_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null)
+    {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(AnthraxPackage.Literals.ANTHRAX_CASE_REPORT);
       try
@@ -286,13 +287,12 @@ public class AnthraxCaseReportOperations extends PublicHealthCaseReportOperation
       {
         diagnostics.add
           (new BasicDiagnostic
-            (Diagnostic.WARNING,
+            (Diagnostic.ERROR,
              AnthraxValidator.DIAGNOSTIC_SOURCE,
              AnthraxValidator.ANTHRAX_CASE_REPORT__ANTHRAX_CASE_REPORT_ANTHRAX_PHCR_SOCIAL_HISTORY_SECTION,
-             AnthraxPlugin.INSTANCE.getString("AnthraxCaseReportAnthraxPhcrSocialHistorySection"),
+             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "validateAnthraxCaseReportAnthraxPhcrSocialHistorySection", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(anthraxCaseReport, context) }),
              new Object [] { anthraxCaseReport }));
       }
-       
       return false;
     }
     return true;
@@ -344,6 +344,7 @@ public class AnthraxCaseReportOperations extends PublicHealthCaseReportOperation
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
+   * self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(anthrax::AnthraxPhcrTreatmentInformationSection))
    * @param anthraxCaseReport The receiving '<em><b>Case Report</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -352,8 +353,8 @@ public class AnthraxCaseReportOperations extends PublicHealthCaseReportOperation
    */
 	
 	public static  boolean validateAnthraxCaseReportAnthraxPhcrTreatmentInformationSection(AnthraxCaseReport anthraxCaseReport, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
-    if (VALIDATE_ANTHRAX_CASE_REPORT_ANTHRAX_PHCR_TREATMENT_INFORMATION_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+    if (VALIDATE_ANTHRAX_CASE_REPORT_ANTHRAX_PHCR_TREATMENT_INFORMATION_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null)
+    {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(AnthraxPackage.Literals.ANTHRAX_CASE_REPORT);
       try
@@ -371,13 +372,12 @@ public class AnthraxCaseReportOperations extends PublicHealthCaseReportOperation
       {
         diagnostics.add
           (new BasicDiagnostic
-            (Diagnostic.WARNING,
+            (Diagnostic.ERROR,
              AnthraxValidator.DIAGNOSTIC_SOURCE,
              AnthraxValidator.ANTHRAX_CASE_REPORT__ANTHRAX_CASE_REPORT_ANTHRAX_PHCR_TREATMENT_INFORMATION_SECTION,
-             AnthraxPlugin.INSTANCE.getString("AnthraxCaseReportAnthraxPhcrTreatmentInformationSection"),
+             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "validateAnthraxCaseReportAnthraxPhcrTreatmentInformationSection", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(anthraxCaseReport, context) }),
              new Object [] { anthraxCaseReport }));
       }
-       
       return false;
     }
     return true;
@@ -386,6 +386,10 @@ public class AnthraxCaseReportOperations extends PublicHealthCaseReportOperation
 	/**
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
+   * <!-- begin-model-doc -->
+   * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(anthrax::AnthraxPhcrClinicalInformationSection))->asSequence()->any(true).oclAsType(anthrax::AnthraxPhcrClinicalInformationSection)
+   * @param anthraxCaseReport The receiving '<em><b>Case Report</b></em>' model object.
+   * <!-- end-model-doc -->
    * @generated
    */
 	
@@ -410,6 +414,10 @@ public class AnthraxCaseReportOperations extends PublicHealthCaseReportOperation
 	/**
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
+   * <!-- begin-model-doc -->
+   * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(anthrax::AnthraxPhcrRelevantDxTestsSection))->asSequence()->any(true).oclAsType(anthrax::AnthraxPhcrRelevantDxTestsSection)
+   * @param anthraxCaseReport The receiving '<em><b>Case Report</b></em>' model object.
+   * <!-- end-model-doc -->
    * @generated
    */
 	
@@ -474,6 +482,10 @@ public class AnthraxCaseReportOperations extends PublicHealthCaseReportOperation
 	/**
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
+   * <!-- begin-model-doc -->
+   * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(anthrax::AnthraxPhcrSocialHistorySection))->asSequence()->any(true).oclAsType(anthrax::AnthraxPhcrSocialHistorySection)
+   * @param anthraxCaseReport The receiving '<em><b>Case Report</b></em>' model object.
+   * <!-- end-model-doc -->
    * @generated
    */
 	
@@ -538,6 +550,10 @@ public class AnthraxCaseReportOperations extends PublicHealthCaseReportOperation
 	/**
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
+   * <!-- begin-model-doc -->
+   * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(anthrax::AnthraxPhcrTreatmentInformationSection))->asSequence()->any(true).oclAsType(anthrax::AnthraxPhcrTreatmentInformationSection)
+   * @param anthraxCaseReport The receiving '<em><b>Case Report</b></em>' model object.
+   * <!-- end-model-doc -->
    * @generated
    */
 	
@@ -583,6 +599,7 @@ public class AnthraxCaseReportOperations extends PublicHealthCaseReportOperation
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
+   * self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.15.1.3')
    * @param anthraxCaseReport The receiving '<em><b>Case Report</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -590,8 +607,8 @@ public class AnthraxCaseReportOperations extends PublicHealthCaseReportOperation
    * @generated
    */
 	public static  boolean validatePublicHealthCaseReportTemplateId(AnthraxCaseReport anthraxCaseReport, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
-    if (VALIDATE_PUBLIC_HEALTH_CASE_REPORT_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+    if (VALIDATE_PUBLIC_HEALTH_CASE_REPORT_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null)
+    {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(AnthraxPackage.Literals.ANTHRAX_CASE_REPORT);
       try
@@ -612,10 +629,9 @@ public class AnthraxCaseReportOperations extends PublicHealthCaseReportOperation
             (Diagnostic.ERROR,
              AnthraxValidator.DIAGNOSTIC_SOURCE,
              AnthraxValidator.ANTHRAX_CASE_REPORT__PUBLIC_HEALTH_CASE_REPORT_TEMPLATE_ID,
-             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "PublicHealthCaseReportTemplateId", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(anthraxCaseReport, context) }),
+             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "validatePublicHealthCaseReportTemplateId", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(anthraxCaseReport, context) }),
              new Object [] { anthraxCaseReport }));
       }
-       
       return false;
     }
     return true;

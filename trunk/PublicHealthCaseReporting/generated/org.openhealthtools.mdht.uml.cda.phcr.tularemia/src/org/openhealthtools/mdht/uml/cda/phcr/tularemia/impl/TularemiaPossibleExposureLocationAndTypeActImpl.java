@@ -21,7 +21,6 @@ import org.openhealthtools.mdht.uml.cda.impl.ActImpl;
 import org.openhealthtools.mdht.uml.cda.phcr.tularemia.TularemiaPackage;
 import org.openhealthtools.mdht.uml.cda.phcr.tularemia.TularemiaPossibleExposureLocationAndTypeAct;
 import org.openhealthtools.mdht.uml.cda.phcr.tularemia.operations.TularemiaPossibleExposureLocationAndTypeActOperations;
-import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
 
 /**
  * <!-- begin-user-doc -->
@@ -35,99 +34,99 @@ import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
 public class TularemiaPossibleExposureLocationAndTypeActImpl extends ActImpl implements TularemiaPossibleExposureLocationAndTypeAct
 {
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   protected TularemiaPossibleExposureLocationAndTypeActImpl()
   {
-    super();
-  }
+		super();
+	}
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   @Override
   protected EClass eStaticClass()
   {
-    return TularemiaPackage.Literals.TULAREMIA_POSSIBLE_EXPOSURE_LOCATION_AND_TYPE_ACT;
-  }
+		return TularemiaPackage.Literals.TULAREMIA_POSSIBLE_EXPOSURE_LOCATION_AND_TYPE_ACT;
+	}
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   public boolean validateTularemiaPossibleExposureLocationAndTypeActTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context)
   {
-    return TularemiaPossibleExposureLocationAndTypeActOperations.validateTularemiaPossibleExposureLocationAndTypeActTemplateId(this, diagnostics, context);
-  }
+		return TularemiaPossibleExposureLocationAndTypeActOperations.validateTularemiaPossibleExposureLocationAndTypeActTemplateId(this, diagnostics, context);
+	}
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   public boolean validateTularemiaPossibleExposureLocationAndTypeActClassCode(DiagnosticChain diagnostics, Map<Object, Object> context)
   {
-    return TularemiaPossibleExposureLocationAndTypeActOperations.validateTularemiaPossibleExposureLocationAndTypeActClassCode(this, diagnostics, context);
-  }
+		return TularemiaPossibleExposureLocationAndTypeActOperations.validateTularemiaPossibleExposureLocationAndTypeActClassCode(this, diagnostics, context);
+	}
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public boolean validateTularemiaPossibleExposureLocationAndTypeActMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return TularemiaPossibleExposureLocationAndTypeActOperations.validateTularemiaPossibleExposureLocationAndTypeActMoodCode(this, diagnostics, context);
-  }
+		return TularemiaPossibleExposureLocationAndTypeActOperations.validateTularemiaPossibleExposureLocationAndTypeActMoodCode(this, diagnostics, context);
+	}
 
 		/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public boolean validateTularemiaPossibleExposureLocationAndTypeActCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return TularemiaPossibleExposureLocationAndTypeActOperations.validateTularemiaPossibleExposureLocationAndTypeActCode(this, diagnostics, context);
-  }
+		return TularemiaPossibleExposureLocationAndTypeActOperations.validateTularemiaPossibleExposureLocationAndTypeActCode(this, diagnostics, context);
+	}
 
 		/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public boolean validateTularemiaPossibleExposureLocationAndTypeActCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return TularemiaPossibleExposureLocationAndTypeActOperations.validateTularemiaPossibleExposureLocationAndTypeActCodeP(this, diagnostics, context);
-  }
+		return TularemiaPossibleExposureLocationAndTypeActOperations.validateTularemiaPossibleExposureLocationAndTypeActCodeP(this, diagnostics, context);
+	}
 
 		/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public boolean validateTularemiaPossibleExposureLocationAndTypeActStatusCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return TularemiaPossibleExposureLocationAndTypeActOperations.validateTularemiaPossibleExposureLocationAndTypeActStatusCode(this, diagnostics, context);
-  }
+		return TularemiaPossibleExposureLocationAndTypeActOperations.validateTularemiaPossibleExposureLocationAndTypeActStatusCode(this, diagnostics, context);
+	}
 
 		/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public boolean validateTularemiaPossibleExposureLocationAndTypeActStatusCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return TularemiaPossibleExposureLocationAndTypeActOperations.validateTularemiaPossibleExposureLocationAndTypeActStatusCodeP(this, diagnostics, context);
-  }
+		return TularemiaPossibleExposureLocationAndTypeActOperations.validateTularemiaPossibleExposureLocationAndTypeActStatusCodeP(this, diagnostics, context);
+	}
 
 		/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   public TularemiaPossibleExposureLocationAndTypeAct init() {
-      return Initializer.Util.init(this);
-  }
+	    return Initializer.Util.init(this);
+	}
 
     /**
      * <!-- begin-user-doc -->

@@ -28,8 +28,6 @@ import org.openhealthtools.mdht.uml.cda.phcr.tss.operations.TssPhcrClinicalInfor
 
 import org.openhealthtools.mdht.uml.cda.phcr.tss.tssPackage;
 
-import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
-
 /**
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Tss Phcr Clinical Information Section</b></em>'.
@@ -86,23 +84,4 @@ public class TssPhcrClinicalInformationSectionImpl extends PhcrClinicalInformati
 	public boolean validatePhcrClinicalInformationSectionTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
     return TssPhcrClinicalInformationSectionOperations.validatePhcrClinicalInformationSectionTemplateId(this, diagnostics, context);
   }
-
-	/**
-   * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-   * @generated
-   */
-	public TssPhcrClinicalInformationSection init() {
-      return Initializer.Util.init(this);
-  }
-
-  /**
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    public TssPhcrClinicalInformationSection init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-        Initializer.Util.init(this, initializers);
-        return this;
-    }
 } //TssPhcrClinicalInformationSectionImpl

@@ -22,7 +22,6 @@ import org.eclipse.ocl.ecore.Constraint;
 import org.eclipse.ocl.ecore.OCL;
 
 import org.openhealthtools.mdht.uml.cda.phcr.hib.HibPackage;
-import org.openhealthtools.mdht.uml.cda.phcr.hib.HibPlugin;
 import org.openhealthtools.mdht.uml.cda.phcr.hib.HibSignsAndSymptoms;
 
 import org.openhealthtools.mdht.uml.cda.phcr.hib.util.HibValidator;
@@ -88,6 +87,7 @@ public class HibSignsAndSymptomsOperations extends SignsAndSymptomsObservationOp
 	 */
 	
 	public static  boolean validateSignsAndSymptomsObservationTemplateId(HibSignsAndSymptoms hibSignsAndSymptoms, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
 		if (VALIDATE_SIGNS_AND_SYMPTOMS_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(HibPackage.Literals.HIB_SIGNS_AND_SYMPTOMS);
@@ -108,6 +108,7 @@ public class HibSignsAndSymptomsOperations extends SignsAndSymptomsObservationOp
 						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "SignsAndSymptomsObservationTemplateId", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(hibSignsAndSymptoms, context) }),
 						 new Object [] { hibSignsAndSymptoms }));
 			}
+			 
 			return false;
 		}
 		return true;

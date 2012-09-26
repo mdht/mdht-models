@@ -26,17 +26,4 @@ import org.openhealthtools.mdht.uml.cda.phcr.TreatmentNotGivenSubstanceAdministr
  * @generated
  */
 public interface AnthraxTreatmentNotGivenSubstanceAdministration extends TreatmentNotGivenSubstanceAdministration {
-	/**
-   * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-   * @generated
-   */
-	public AnthraxTreatmentNotGivenSubstanceAdministration init();
-
-  /**
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    public AnthraxTreatmentNotGivenSubstanceAdministration init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // AnthraxTreatmentNotGivenSubstanceAdministration

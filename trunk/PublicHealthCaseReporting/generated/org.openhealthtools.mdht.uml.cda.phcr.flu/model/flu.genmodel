@@ -78,13 +78,22 @@
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="flu.ecore#//InfluenzaPHCRClinicalInformationSection/getInfluenzaCaseObservation"/>
     </genClasses>
     <genClasses xsi:type="genmodel:GenClass" ecoreClass="flu.ecore#//InfluenzaCaseObservation">
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="flu.ecore#//InfluenzaCaseObservation/InfluenzaCaseObservationValue">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="flu.ecore#//InfluenzaCaseObservation/InfluenzaCaseObservationValue/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="flu.ecore#//InfluenzaCaseObservation/InfluenzaCaseObservationValue/context"/>
+      </genOperations>
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="flu.ecore#//InfluenzaCaseObservation/InfluenzaCaseObservationInfluenzaSignsAndSymptomsObservation">
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="flu.ecore#//InfluenzaCaseObservation/InfluenzaCaseObservationInfluenzaSignsAndSymptomsObservation/diagnostics"/>
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="flu.ecore#//InfluenzaCaseObservation/InfluenzaCaseObservationInfluenzaSignsAndSymptomsObservation/context"/>
       </genOperations>
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="flu.ecore#//InfluenzaCaseObservation/getInfluenzaSignsAndSymptomsObservations"/>
     </genClasses>
-    <genClasses xsi:type="genmodel:GenClass" ecoreClass="flu.ecore#//InfluenzaSignsAndSymptomsObservation"/>
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="flu.ecore#//InfluenzaSignsAndSymptomsObservation">
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="flu.ecore#//InfluenzaSignsAndSymptomsObservation/InfluenzaSignsAndSymptomsObservationValue">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="flu.ecore#//InfluenzaSignsAndSymptomsObservation/InfluenzaSignsAndSymptomsObservationValue/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="flu.ecore#//InfluenzaSignsAndSymptomsObservation/InfluenzaSignsAndSymptomsObservationValue/context"/>
+      </genOperations>
+    </genClasses>
     <genClasses xsi:type="genmodel:GenClass" ecoreClass="flu.ecore#//InfluenzaPHCRTreatmentInformationSection">
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="flu.ecore#//InfluenzaPHCRTreatmentInformationSection/InfluenzaPHCRTreatmentInformationSectionInfluenzaTherapeuticRegimenAct">
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="flu.ecore#//InfluenzaPHCRTreatmentInformationSection/InfluenzaPHCRTreatmentInformationSectionInfluenzaTherapeuticRegimenAct/diagnostics"/>
@@ -119,12 +128,20 @@
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="flu.ecore#//InfluenzaPHCRRelevantDiagnosticTestsAndOrLaboratoryDataSection/getInfluenzaImagingObservations"/>
     </genClasses>
     <genClasses xsi:type="genmodel:GenClass" ecoreClass="flu.ecore#//InfluenzaResultObservation">
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="flu.ecore#//InfluenzaResultObservation/InfluenzaResultObservationCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="flu.ecore#//InfluenzaResultObservation/InfluenzaResultObservationCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="flu.ecore#//InfluenzaResultObservation/InfluenzaResultObservationCode/context"/>
+      </genOperations>
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="flu.ecore#//InfluenzaResultObservation/InfluenzaResultObservationInterpretationCode">
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="flu.ecore#//InfluenzaResultObservation/InfluenzaResultObservationInterpretationCode/diagnostics"/>
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="flu.ecore#//InfluenzaResultObservation/InfluenzaResultObservationInterpretationCode/context"/>
       </genOperations>
     </genClasses>
     <genClasses xsi:type="genmodel:GenClass" ecoreClass="flu.ecore#//InfluenzaImagingObservation">
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="flu.ecore#//InfluenzaImagingObservation/InfluenzaImagingObservationMethodCodeP">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="flu.ecore#//InfluenzaImagingObservation/InfluenzaImagingObservationMethodCodeP/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="flu.ecore#//InfluenzaImagingObservation/InfluenzaImagingObservationMethodCodeP/context"/>
+      </genOperations>
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="flu.ecore#//InfluenzaImagingObservation/InfluenzaImagingObservationMethodCode">
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="flu.ecore#//InfluenzaImagingObservation/InfluenzaImagingObservationMethodCode/diagnostics"/>
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="flu.ecore#//InfluenzaImagingObservation/InfluenzaImagingObservationMethodCode/context"/>

@@ -23,7 +23,6 @@ import org.openhealthtools.mdht.uml.cda.phcr.tuberculosis.TuberculosisImmunizati
 import org.openhealthtools.mdht.uml.cda.phcr.tuberculosis.TuberculosisPackage;
 
 import org.openhealthtools.mdht.uml.cda.phcr.tuberculosis.operations.TuberculosisImmunizationActivitySubstanceAdministrationOperations;
-import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
 
 /**
  * <!-- begin-user-doc -->
@@ -37,52 +36,54 @@ import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
 public class TuberculosisImmunizationActivitySubstanceAdministrationImpl extends MedicationActivityImpl implements TuberculosisImmunizationActivitySubstanceAdministration
 {
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   protected TuberculosisImmunizationActivitySubstanceAdministrationImpl()
   {
-    super();
-  }
+		super();
+	}
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   @Override
   protected EClass eStaticClass()
   {
-    return TuberculosisPackage.Literals.TUBERCULOSIS_IMMUNIZATION_ACTIVITY_SUBSTANCE_ADMINISTRATION;
-  }
+		return TuberculosisPackage.Literals.TUBERCULOSIS_IMMUNIZATION_ACTIVITY_SUBSTANCE_ADMINISTRATION;
+	}
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   @Override
   public boolean validateMedicationActivityTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context)
   {
-    return TuberculosisImmunizationActivitySubstanceAdministrationOperations.validateMedicationActivityTemplateId(this, diagnostics, context);
-  }
+		return TuberculosisImmunizationActivitySubstanceAdministrationOperations.validateMedicationActivityTemplateId(this, diagnostics, context);
+	}
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
-  public TuberculosisImmunizationActivitySubstanceAdministration init() {
-      return Initializer.Util.init(this);
-  }
+	 * @generated
+	 */
+  @Override
+public TuberculosisImmunizationActivitySubstanceAdministration init() {
+	    return Initializer.Util.init(this);
+	}
 
   /**
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
      * @generated
      */
-    public TuberculosisImmunizationActivitySubstanceAdministration init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+    @Override
+	public TuberculosisImmunizationActivitySubstanceAdministration init(Iterable<? extends Initializer<? extends EObject>> initializers) {
         Initializer.Util.init(this, initializers);
         return this;
     }

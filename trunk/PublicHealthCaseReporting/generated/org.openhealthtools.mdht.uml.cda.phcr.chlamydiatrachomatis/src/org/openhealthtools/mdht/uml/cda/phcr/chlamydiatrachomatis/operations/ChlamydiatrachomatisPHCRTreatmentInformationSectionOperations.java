@@ -86,6 +86,7 @@ public class ChlamydiatrachomatisPHCRTreatmentInformationSectionOperations exten
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
+   * self.entry->one(entry : cda::Entry | not entry.act.oclIsUndefined() and entry.act.oclIsKindOf(chlamydiatrachomatis::ChlamydiatrachomatisTherapeuticRegimenAct))
    * @param chlamydiatrachomatisPHCRTreatmentInformationSection The receiving '<em><b>PHCR Treatment Information Section</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -94,8 +95,8 @@ public class ChlamydiatrachomatisPHCRTreatmentInformationSectionOperations exten
    */
 	
 	public static  boolean validateChlamydiatrachomatisPHCRTreatmentInformationSectionChlamydiatrachomatisTherapeuticRegimenAct(ChlamydiatrachomatisPHCRTreatmentInformationSection chlamydiatrachomatisPHCRTreatmentInformationSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
-    if (VALIDATE_CHLAMYDIATRACHOMATIS_PHCR_TREATMENT_INFORMATION_SECTION_CHLAMYDIATRACHOMATIS_THERAPEUTIC_REGIMEN_ACT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+    if (VALIDATE_CHLAMYDIATRACHOMATIS_PHCR_TREATMENT_INFORMATION_SECTION_CHLAMYDIATRACHOMATIS_THERAPEUTIC_REGIMEN_ACT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null)
+    {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(ChlamydiatrachomatisPackage.Literals.CHLAMYDIATRACHOMATIS_PHCR_TREATMENT_INFORMATION_SECTION);
       try
@@ -116,10 +117,9 @@ public class ChlamydiatrachomatisPHCRTreatmentInformationSectionOperations exten
             (Diagnostic.ERROR,
              ChlamydiatrachomatisValidator.DIAGNOSTIC_SOURCE,
              ChlamydiatrachomatisValidator.CHLAMYDIATRACHOMATIS_PHCR_TREATMENT_INFORMATION_SECTION__CHLAMYDIATRACHOMATIS_PHCR_TREATMENT_INFORMATION_SECTION_CHLAMYDIATRACHOMATIS_THERAPEUTIC_REGIMEN_ACT,
-             ChlamydiatrachomatisPlugin.INSTANCE.getString("ChlamydiatrachomatisPHCRTreatmentInformationSectionChlamydiatrachomatisTherapeuticRegimenAct"),
+             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "validateChlamydiatrachomatisPHCRTreatmentInformationSectionChlamydiatrachomatisTherapeuticRegimenAct", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(chlamydiatrachomatisPHCRTreatmentInformationSection, context) }),
              new Object [] { chlamydiatrachomatisPHCRTreatmentInformationSection }));
       }
-       
       return false;
     }
     return true;
@@ -148,6 +148,10 @@ public class ChlamydiatrachomatisPHCRTreatmentInformationSectionOperations exten
 	/**
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
+   * <!-- begin-model-doc -->
+   * self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(chlamydiatrachomatis::ChlamydiatrachomatisTherapeuticRegimenAct))->asSequence()->any(true).oclAsType(chlamydiatrachomatis::ChlamydiatrachomatisTherapeuticRegimenAct)
+   * @param chlamydiatrachomatisPHCRTreatmentInformationSection The receiving '<em><b>PHCR Treatment Information Section</b></em>' model object.
+   * <!-- end-model-doc -->
    * @generated
    */
 	
@@ -195,6 +199,7 @@ public class ChlamydiatrachomatisPHCRTreatmentInformationSectionOperations exten
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
+   * self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.15.2.40')
    * @param chlamydiatrachomatisPHCRTreatmentInformationSection The receiving '<em><b>PHCR Treatment Information Section</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -203,8 +208,8 @@ public class ChlamydiatrachomatisPHCRTreatmentInformationSectionOperations exten
    */
 	
 	public static  boolean validatePhcrTreatmentInformationSectionTemplateId(ChlamydiatrachomatisPHCRTreatmentInformationSection chlamydiatrachomatisPHCRTreatmentInformationSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
-    if (VALIDATE_PHCR_TREATMENT_INFORMATION_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+    if (VALIDATE_PHCR_TREATMENT_INFORMATION_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null)
+    {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(ChlamydiatrachomatisPackage.Literals.CHLAMYDIATRACHOMATIS_PHCR_TREATMENT_INFORMATION_SECTION);
       try
@@ -225,10 +230,9 @@ public class ChlamydiatrachomatisPHCRTreatmentInformationSectionOperations exten
             (Diagnostic.ERROR,
              ChlamydiatrachomatisValidator.DIAGNOSTIC_SOURCE,
              ChlamydiatrachomatisValidator.CHLAMYDIATRACHOMATIS_PHCR_TREATMENT_INFORMATION_SECTION__PHCR_TREATMENT_INFORMATION_SECTION_TEMPLATE_ID,
-             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "PhcrTreatmentInformationSectionTemplateId", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(chlamydiatrachomatisPHCRTreatmentInformationSection, context) }),
+             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "validatePhcrTreatmentInformationSectionTemplateId", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(chlamydiatrachomatisPHCRTreatmentInformationSection, context) }),
              new Object [] { chlamydiatrachomatisPHCRTreatmentInformationSection }));
       }
-       
       return false;
     }
     return true;

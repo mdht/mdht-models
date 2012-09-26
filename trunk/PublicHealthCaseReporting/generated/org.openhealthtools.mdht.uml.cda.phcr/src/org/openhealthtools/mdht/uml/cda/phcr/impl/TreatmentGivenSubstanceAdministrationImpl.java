@@ -21,7 +21,6 @@ import org.openhealthtools.mdht.uml.cda.impl.SubstanceAdministrationImpl;
 import org.openhealthtools.mdht.uml.cda.phcr.PhcrPackage;
 import org.openhealthtools.mdht.uml.cda.phcr.TreatmentGivenSubstanceAdministration;
 import org.openhealthtools.mdht.uml.cda.phcr.operations.TreatmentGivenSubstanceAdministrationOperations;
-import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
 
 /**
  * <!-- begin-user-doc -->
@@ -132,23 +131,4 @@ public class TreatmentGivenSubstanceAdministrationImpl extends SubstanceAdminist
 	public boolean validateTreatmentGivenSubstanceAdministrationRouteCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
     return TreatmentGivenSubstanceAdministrationOperations.validateTreatmentGivenSubstanceAdministrationRouteCode(this, diagnostics, context);
   }
-
-	/**
-   * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-   * @generated
-   */
-	public TreatmentGivenSubstanceAdministration init() {
-      return Initializer.Util.init(this);
-  }
-
-  /**
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    public TreatmentGivenSubstanceAdministration init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-        Initializer.Util.init(this, initializers);
-        return this;
-    }
 } //TreatmentGivenSubstanceAdministrationImpl

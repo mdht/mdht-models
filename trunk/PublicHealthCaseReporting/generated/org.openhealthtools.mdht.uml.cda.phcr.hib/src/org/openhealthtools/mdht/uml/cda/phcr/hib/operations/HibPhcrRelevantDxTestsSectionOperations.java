@@ -101,6 +101,7 @@ public class HibPhcrRelevantDxTestsSectionOperations extends PhcrRelevantDxTests
 	 */
 	
 	public static  boolean validateHibPhcrRelevantDxTestsSectionHibResultObservation(HibPhcrRelevantDxTestsSection hibPhcrRelevantDxTestsSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
 		if (VALIDATE_HIB_PHCR_RELEVANT_DX_TESTS_SECTION_HIB_RESULT_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(HibPackage.Literals.HIB_PHCR_RELEVANT_DX_TESTS_SECTION);
@@ -121,6 +122,7 @@ public class HibPhcrRelevantDxTestsSectionOperations extends PhcrRelevantDxTests
 						 HibPlugin.INSTANCE.getString("HibPhcrRelevantDxTestsSectionHibResultObservation"),
 						 new Object [] { hibPhcrRelevantDxTestsSection }));
 			}
+			 
 			return false;
 		}
 		return true;
@@ -161,6 +163,7 @@ public class HibPhcrRelevantDxTestsSectionOperations extends PhcrRelevantDxTests
 	 */
 	
 	public static  boolean validateHibPhcrRelevantDxTestsSectionHibResultOrganizer(HibPhcrRelevantDxTestsSection hibPhcrRelevantDxTestsSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
 		if (VALIDATE_HIB_PHCR_RELEVANT_DX_TESTS_SECTION_HIB_RESULT_ORGANIZER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(HibPackage.Literals.HIB_PHCR_RELEVANT_DX_TESTS_SECTION);
@@ -181,6 +184,7 @@ public class HibPhcrRelevantDxTestsSectionOperations extends PhcrRelevantDxTests
 						 HibPlugin.INSTANCE.getString("HibPhcrRelevantDxTestsSectionHibResultOrganizer"),
 						 new Object [] { hibPhcrRelevantDxTestsSection }));
 			}
+			 
 			return false;
 		}
 		return true;
@@ -315,6 +319,7 @@ public class HibPhcrRelevantDxTestsSectionOperations extends PhcrRelevantDxTests
 	 */
 	
 	public static  boolean validateResultsSectionTemplateId(HibPhcrRelevantDxTestsSection hibPhcrRelevantDxTestsSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
 		if (VALIDATE_RESULTS_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(HibPackage.Literals.HIB_PHCR_RELEVANT_DX_TESTS_SECTION);
@@ -335,6 +340,7 @@ public class HibPhcrRelevantDxTestsSectionOperations extends PhcrRelevantDxTests
 						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "ResultsSectionTemplateId", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(hibPhcrRelevantDxTestsSection, context) }),
 						 new Object [] { hibPhcrRelevantDxTestsSection }));
 			}
+			 
 			return false;
 		}
 		return true;

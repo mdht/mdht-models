@@ -26,8 +26,6 @@ import org.openhealthtools.mdht.uml.cda.phcr.streppneumo.StrepPneumoPossibleExpo
 
 import org.openhealthtools.mdht.uml.cda.phcr.streppneumo.operations.StrepPneumoPossibleExposureLocationActOperations;
 
-import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
-
 /**
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Possible Exposure Location Act</b></em>'.
@@ -39,87 +37,87 @@ import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
  */
 public class StrepPneumoPossibleExposureLocationActImpl extends ActImpl implements StrepPneumoPossibleExposureLocationAct {
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	protected StrepPneumoPossibleExposureLocationActImpl() {
-    super();
-  }
+		super();
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	@Override
 	protected EClass eStaticClass() {
-    return StrepPneumoPackage.Literals.STREP_PNEUMO_POSSIBLE_EXPOSURE_LOCATION_ACT;
-  }
+		return StrepPneumoPackage.Literals.STREP_PNEUMO_POSSIBLE_EXPOSURE_LOCATION_ACT;
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public boolean validateStrepPneumoPossibleExposureLocationActTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return StrepPneumoPossibleExposureLocationActOperations.validateStrepPneumoPossibleExposureLocationActTemplateId(this, diagnostics, context);
-  }
+		return StrepPneumoPossibleExposureLocationActOperations.validateStrepPneumoPossibleExposureLocationActTemplateId(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public boolean validateStrepPneumoPossibleExposureLocationActClassCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return StrepPneumoPossibleExposureLocationActOperations.validateStrepPneumoPossibleExposureLocationActClassCode(this, diagnostics, context);
-  }
+		return StrepPneumoPossibleExposureLocationActOperations.validateStrepPneumoPossibleExposureLocationActClassCode(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public boolean validateStrepPneumoPossibleExposureLocationActCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return StrepPneumoPossibleExposureLocationActOperations.validateStrepPneumoPossibleExposureLocationActCode(this, diagnostics, context);
-  }
+		return StrepPneumoPossibleExposureLocationActOperations.validateStrepPneumoPossibleExposureLocationActCode(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public boolean validateStrepPneumoPossibleExposureLocationActMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return StrepPneumoPossibleExposureLocationActOperations.validateStrepPneumoPossibleExposureLocationActMoodCode(this, diagnostics, context);
-  }
+		return StrepPneumoPossibleExposureLocationActOperations.validateStrepPneumoPossibleExposureLocationActMoodCode(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public boolean validateStrepPneumoPossibleExposureLocationActStatusCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return StrepPneumoPossibleExposureLocationActOperations.validateStrepPneumoPossibleExposureLocationActStatusCode(this, diagnostics, context);
-  }
+		return StrepPneumoPossibleExposureLocationActOperations.validateStrepPneumoPossibleExposureLocationActStatusCode(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   public boolean validateStrepPneumoPossibleExposureLocationActStatusCodeP(DiagnosticChain diagnostics, Map<Object, Object> context)
   {
-    return StrepPneumoPossibleExposureLocationActOperations.validateStrepPneumoPossibleExposureLocationActStatusCodeP(this, diagnostics, context);
-  }
+		return StrepPneumoPossibleExposureLocationActOperations.validateStrepPneumoPossibleExposureLocationActStatusCodeP(this, diagnostics, context);
+	}
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public StrepPneumoPossibleExposureLocationAct init() {
-      return Initializer.Util.init(this);
-  }
+	    return Initializer.Util.init(this);
+	}
 
   /**
      * <!-- begin-user-doc -->

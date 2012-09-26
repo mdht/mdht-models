@@ -12,12 +12,12 @@ package org.openhealthtools.mdht.uml.cda.phcr.util;
 
 import java.util.Map;
 
+import org.eclipse.emf.common.util.Diagnostic;
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.common.util.ResourceLocator;
 import org.eclipse.emf.ecore.EPackage;
 import org.eclipse.emf.ecore.util.EObjectValidator;
 import org.openhealthtools.mdht.uml.cda.ccd.util.CCDValidator;
-import org.openhealthtools.mdht.uml.cda.phcr.*;
 import org.openhealthtools.mdht.uml.cda.phcr.CaseObservation;
 import org.openhealthtools.mdht.uml.cda.phcr.EstimatedDateOfDeliveryObservation;
 import org.openhealthtools.mdht.uml.cda.phcr.GeotemporalHistoryObservation;
@@ -2419,12 +2419,6 @@ public class PhcrValidator extends EObjectValidator
     if (result || diagnostics != null) result &= validate_EveryMapEntryUnique(phcrSocialHistorySection, diagnostics, context);
     if (result || diagnostics != null) result &= cdaValidator.validateSection_validateClassCode(phcrSocialHistorySection, diagnostics, context);
     if (result || diagnostics != null) result &= cdaValidator.validateSection_validateMoodCode(phcrSocialHistorySection, diagnostics, context);
-    if (result || diagnostics != null) result &= ccdValidator.validateSocialHistorySection_validateSocialHistorySectionMaritalStatus(phcrSocialHistorySection, diagnostics, context);
-    if (result || diagnostics != null) result &= ccdValidator.validateSocialHistorySection_validateSocialHistorySectionReligiousAffiliation(phcrSocialHistorySection, diagnostics, context);
-    if (result || diagnostics != null) result &= ccdValidator.validateSocialHistorySection_validateSocialHistorySectionPatientRace(phcrSocialHistorySection, diagnostics, context);
-    if (result || diagnostics != null) result &= ccdValidator.validateSocialHistorySection_validateSocialHistorySectionPatientRaceCodeSystem(phcrSocialHistorySection, diagnostics, context);
-    if (result || diagnostics != null) result &= ccdValidator.validateSocialHistorySection_validateSocialHistorySectionPatientEthnicity(phcrSocialHistorySection, diagnostics, context);
-    if (result || diagnostics != null) result &= ccdValidator.validateSocialHistorySection_validateSocialHistorySectionPatientEthnicityCodeSystem(phcrSocialHistorySection, diagnostics, context);
     if (result || diagnostics != null) result &= validatePhcrSocialHistorySection_validateSocialHistorySectionTemplateId(phcrSocialHistorySection, diagnostics, context);
     if (result || diagnostics != null) result &= ccdValidator.validateSocialHistorySection_validateSocialHistorySectionCode(phcrSocialHistorySection, diagnostics, context);
     if (result || diagnostics != null) result &= ccdValidator.validateSocialHistorySection_validateSocialHistorySectionTitle(phcrSocialHistorySection, diagnostics, context);
@@ -2540,7 +2534,28 @@ public class PhcrValidator extends EObjectValidator
    * @generated
    */
 	public boolean validatePhcrSocialHistorySection_validateSocialHistorySectionTemplateId(PhcrSocialHistorySection phcrSocialHistorySection, DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return phcrSocialHistorySection.validateSocialHistorySectionTemplateId(diagnostics, context);
+    // TODO override the constraint, if desired
+    // -> uncomment the scaffolding
+    // -> specify the condition that violates the constraint
+    // -> verify the diagnostic details, including severity, code, and message
+    // Ensure that you remove @generated or mark it @generated NOT
+    if (false)
+    {
+      if (diagnostics != null)
+      {
+        diagnostics.add
+          (createDiagnostic
+            (Diagnostic.ERROR,
+             DIAGNOSTIC_SOURCE,
+             0,
+             "_UI_GenericConstraint_diagnostic",
+             new Object[] { "validateSocialHistorySectionTemplateId", getObjectLabel(phcrSocialHistorySection, context) },
+             new Object[] { phcrSocialHistorySection },
+             context));
+      }
+      return false;
+    }
+    return ccdValidator.validateSocialHistorySection_validateSocialHistorySectionTemplateId(phcrSocialHistorySection, diagnostics, context);
   }
 
 		/**
@@ -3666,7 +3681,28 @@ public class PhcrValidator extends EObjectValidator
    * @generated
    */
 	public boolean validatePhcrEncountersSection_validateEncountersSectionTemplateId(PhcrEncountersSection phcrEncountersSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return phcrEncountersSection.validateEncountersSectionTemplateId(diagnostics, context);
+    // TODO override the constraint, if desired
+    // -> uncomment the scaffolding
+    // -> specify the condition that violates the constraint
+    // -> verify the diagnostic details, including severity, code, and message
+    // Ensure that you remove @generated or mark it @generated NOT
+    if (false)
+    {
+      if (diagnostics != null)
+      {
+        diagnostics.add
+          (createDiagnostic
+            (Diagnostic.ERROR,
+             DIAGNOSTIC_SOURCE,
+             0,
+             "_UI_GenericConstraint_diagnostic",
+             new Object[] { "validateEncountersSectionTemplateId", getObjectLabel(phcrEncountersSection, context) },
+             new Object[] { phcrEncountersSection },
+             context));
+      }
+      return false;
+    }
+    return ccdValidator.validateEncountersSection_validateEncountersSectionTemplateId(phcrEncountersSection, diagnostics, context);
   }
 
 		/**
@@ -3778,7 +3814,28 @@ public class PhcrValidator extends EObjectValidator
    * @generated
    */
 	public boolean validatePhcrRelevantDxTestsSection_validateResultsSectionTemplateId(PhcrRelevantDxTestsSection phcrRelevantDxTestsSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return phcrRelevantDxTestsSection.validateResultsSectionTemplateId(diagnostics, context);
+    // TODO override the constraint, if desired
+    // -> uncomment the scaffolding
+    // -> specify the condition that violates the constraint
+    // -> verify the diagnostic details, including severity, code, and message
+    // Ensure that you remove @generated or mark it @generated NOT
+    if (false)
+    {
+      if (diagnostics != null)
+      {
+        diagnostics.add
+          (createDiagnostic
+            (Diagnostic.ERROR,
+             DIAGNOSTIC_SOURCE,
+             0,
+             "_UI_GenericConstraint_diagnostic",
+             new Object[] { "validateResultsSectionTemplateId", getObjectLabel(phcrRelevantDxTestsSection, context) },
+             new Object[] { phcrRelevantDxTestsSection },
+             context));
+      }
+      return false;
+    }
+    return ccdValidator.validateResultsSection_validateResultsSectionTemplateId(phcrRelevantDxTestsSection, diagnostics, context);
   }
 
 		/**
@@ -3804,7 +3861,6 @@ public class PhcrValidator extends EObjectValidator
     if (result || diagnostics != null) result &= ccdValidator.validateResultOrganizer_validateResultOrganizerCode(resultOrganizer, diagnostics, context);
     if (result || diagnostics != null) result &= ccdValidator.validateResultOrganizer_validateResultOrganizerStatusCode(resultOrganizer, diagnostics, context);
     if (result || diagnostics != null) result &= ccdValidator.validateResultOrganizer_validateResultOrganizerResultObservation(resultOrganizer, diagnostics, context);
-    if (result || diagnostics != null) result &= ccdValidator.validateResultOrganizer_validateResultOrganizerSpecimen(resultOrganizer, diagnostics, context);
     if (result || diagnostics != null) result &= validateResultOrganizer_validatePHCRResultOrganizerClassCode(resultOrganizer, diagnostics, context);
     if (result || diagnostics != null) result &= validateResultOrganizer_validatePHCRResultOrganizerMoodCode(resultOrganizer, diagnostics, context);
     if (result || diagnostics != null) result &= validateResultOrganizer_validatePHCRResultOrganizerId(resultOrganizer, diagnostics, context);
@@ -3915,7 +3971,28 @@ public class PhcrValidator extends EObjectValidator
    * @generated
    */
 	public boolean validateResultOrganizer_validateResultOrganizerTemplateId(ResultOrganizer resultOrganizer, DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return resultOrganizer.validateResultOrganizerTemplateId(diagnostics, context);
+    // TODO override the constraint, if desired
+    // -> uncomment the scaffolding
+    // -> specify the condition that violates the constraint
+    // -> verify the diagnostic details, including severity, code, and message
+    // Ensure that you remove @generated or mark it @generated NOT
+    if (false)
+    {
+      if (diagnostics != null)
+      {
+        diagnostics.add
+          (createDiagnostic
+            (Diagnostic.ERROR,
+             DIAGNOSTIC_SOURCE,
+             0,
+             "_UI_GenericConstraint_diagnostic",
+             new Object[] { "validateResultOrganizerTemplateId", getObjectLabel(resultOrganizer, context) },
+             new Object[] { resultOrganizer },
+             context));
+      }
+      return false;
+    }
+    return ccdValidator.validateResultOrganizer_validateResultOrganizerTemplateId(resultOrganizer, diagnostics, context);
   }
 
 		/**
@@ -4011,7 +4088,28 @@ public class PhcrValidator extends EObjectValidator
    * @generated
    */
 	public boolean validateResultObservation_validateResultObservationTemplateId(ResultObservation resultObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return resultObservation.validateResultObservationTemplateId(diagnostics, context);
+    // TODO override the constraint, if desired
+    // -> uncomment the scaffolding
+    // -> specify the condition that violates the constraint
+    // -> verify the diagnostic details, including severity, code, and message
+    // Ensure that you remove @generated or mark it @generated NOT
+    if (false)
+    {
+      if (diagnostics != null)
+      {
+        diagnostics.add
+          (createDiagnostic
+            (Diagnostic.ERROR,
+             DIAGNOSTIC_SOURCE,
+             0,
+             "_UI_GenericConstraint_diagnostic",
+             new Object[] { "validateResultObservationTemplateId", getObjectLabel(resultObservation, context) },
+             new Object[] { resultObservation },
+             context));
+      }
+      return false;
+    }
+    return ccdValidator.validateResultObservation_validateResultObservationTemplateId(resultObservation, diagnostics, context);
   }
 
 		/**
@@ -4230,7 +4328,28 @@ public class PhcrValidator extends EObjectValidator
    * @generated
    */
 	public boolean validateImagingObservation_validateProblemObservationTemplateId(ImagingObservation imagingObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return imagingObservation.validateProblemObservationTemplateId(diagnostics, context);
+    // TODO override the constraint, if desired
+    // -> uncomment the scaffolding
+    // -> specify the condition that violates the constraint
+    // -> verify the diagnostic details, including severity, code, and message
+    // Ensure that you remove @generated or mark it @generated NOT
+    if (false)
+    {
+      if (diagnostics != null)
+      {
+        diagnostics.add
+          (createDiagnostic
+            (Diagnostic.ERROR,
+             DIAGNOSTIC_SOURCE,
+             0,
+             "_UI_GenericConstraint_diagnostic",
+             new Object[] { "validateProblemObservationTemplateId", getObjectLabel(imagingObservation, context) },
+             new Object[] { imagingObservation },
+             context));
+      }
+      return false;
+    }
+    return ccdValidator.validateProblemObservation_validateProblemObservationTemplateId(imagingObservation, diagnostics, context);
   }
 
 		/**
@@ -5236,7 +5355,28 @@ public class PhcrValidator extends EObjectValidator
    * @generated
    */
 	public boolean validateCaseObservation_validateProblemObservationTemplateId(CaseObservation caseObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return caseObservation.validateProblemObservationTemplateId(diagnostics, context);
+    // TODO override the constraint, if desired
+    // -> uncomment the scaffolding
+    // -> specify the condition that violates the constraint
+    // -> verify the diagnostic details, including severity, code, and message
+    // Ensure that you remove @generated or mark it @generated NOT
+    if (false)
+    {
+      if (diagnostics != null)
+      {
+        diagnostics.add
+          (createDiagnostic
+            (Diagnostic.ERROR,
+             DIAGNOSTIC_SOURCE,
+             0,
+             "_UI_GenericConstraint_diagnostic",
+             new Object[] { "validateProblemObservationTemplateId", getObjectLabel(caseObservation, context) },
+             new Object[] { caseObservation },
+             context));
+      }
+      return false;
+    }
+    return ccdValidator.validateProblemObservation_validateProblemObservationTemplateId(caseObservation, diagnostics, context);
   }
 
 		/**
