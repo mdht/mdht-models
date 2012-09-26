@@ -316,11 +316,9 @@
     <reference href="streppneumo-vocab.uml#_O3MGUKPOEeGdKsw0tXkvXQ"/>
   </CDA:ValueSetConstraint>
   <CDA:ConformsTo xmi:id="_ImRscKPPEeGdKsw0tXkvXQ" base_Generalization="_80rGoKPOEeGdKsw0tXkvXQ"/>
-  <CDA:PropertyValidation xmi:id="_Oh_c8KPPEeGdKsw0tXkvXQ" base_Property="_Oh-14KPPEeGdKsw0tXkvXQ">
-    <ruleId>CONF:1867</ruleId>
-  </CDA:PropertyValidation>
   <CDA:ValueSetConstraint xmi:id="_PXh90KPPEeGdKsw0tXkvXQ" base_Property="_Oh-14KPPEeGdKsw0tXkvXQ">
     <reference href="streppneumo-vocab.uml#_5cu8kKmDEeGIk6WTSrP2zg"/>
+    <ruleId>CONF:1867</ruleId>
   </CDA:ValueSetConstraint>
   <CDA:AssociationValidation xmi:id="_pKovgKPPEeGdKsw0tXkvXQ"/>
   <CDA:EntryRelationship xmi:id="_CQNs0KPQEeGdKsw0tXkvXQ" typeCode="MFST"/>
@@ -362,14 +360,12 @@
   <CDA:Entry xmi:id="_n2v5IKmKEeGIk6WTSrP2zg" base_Association="_lHh50amKEeGIk6WTSrP2zg" typeCode="DRIV"/>
   <CDA:ActRelationship xmi:id="_ongAoKmKEeGIk6WTSrP2zg" base_Association="_lHh50amKEeGIk6WTSrP2zg"/>
   <CDA:AssociationValidation xmi:id="_s45kYKmKEeGIk6WTSrP2zg" severity="WARNING" base_Association="_ditl4ql8EeGL4eMpKdmcrw"/>
-  <CDA:PropertyValidation xmi:id="_BojqUKmLEeGIk6WTSrP2zg" base_Property="_BojDQKmLEeGIk6WTSrP2zg">
-    <ruleId>CONF-412</ruleId>
-  </CDA:PropertyValidation>
   <CDA:PropertyValidation xmi:id="_BokRYKmLEeGIk6WTSrP2zg" severity="WARNING">
     <ruleId>CONF-418</ruleId>
   </CDA:PropertyValidation>
   <CDA:ValueSetConstraint xmi:id="_mRyRAKmLEeGIk6WTSrP2zg" base_Property="_BojDQKmLEeGIk6WTSrP2zg">
     <reference href="streppneumo-vocab.uml#_VPTncKmLEeGIk6WTSrP2zg"/>
+    <ruleId>CONF-412</ruleId>
   </CDA:ValueSetConstraint>
   <CDA:PropertyValidation xmi:id="_y9GtEKmLEeGIk6WTSrP2zg">
     <ruleId>CONF-416</ruleId>
@@ -395,16 +391,13 @@
   <CDA:AssociationValidation xmi:id="_2DS3UKpOEeGIk6WTSrP2zg" severity="WARNING" base_Association="_fxZD8ql8EeGL4eMpKdmcrw"/>
   <CDA:CDATemplate xmi:id="_DfazUKpREeGIk6WTSrP2zg" base_Class="_rucyIKpIEeGIk6WTSrP2zg" templateId="2.16.840.1.113883.10.20.15.3.129"/>
   <CDA:CDATemplate xmi:id="_3mE8cK0yEeGiKq3XX8XCzA" message="NOT CURRENTLY USED" templateId="2.16.840.1.113883.10.20.15.3.130"/>
-  <CDA:ValueSetConstraint xmi:id="_DKlnMMEYEeG-Z92mbpCVHw" base_Property="_vUYXAqpIEeGIk6WTSrP2zg"/>
   <CDA:CodeSystemConstraint xmi:id="_Fc19sMEYEeG-Z92mbpCVHw" code="completed" base_Property="_vUYXAqpIEeGIk6WTSrP2zg">
     <reference href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_e8ZEoCWvEd-iTYfpNb4PkQ"/>
   </CDA:CodeSystemConstraint>
-  <CDA:PropertyValidation xmi:id="_yfjs8MEaEeG-Z92mbpCVHw" base_Property="_yfjF4MEaEeG-Z92mbpCVHw">
-    <ruleId>CONF-397</ruleId>
-    <ruleId>CONF:1999</ruleId>
-  </CDA:PropertyValidation>
   <CDA:ValueSetConstraint xmi:id="_74vC0MEaEeG-Z92mbpCVHw" base_Property="_yfjF4MEaEeG-Z92mbpCVHw">
     <reference href="streppneumo-vocab.uml#_VPTncKmLEeGIk6WTSrP2zg"/>
+    <ruleId>CONF-397</ruleId>
+    <ruleId>CONF:1999</ruleId>
   </CDA:ValueSetConstraint>
   <CDA:AssociationValidation xmi:id="_Ka_qAMEpEeG-Z92mbpCVHw" base_Association="_E5meAMEpEeG-Z92mbpCVHw"/>
   <CDA:Entry xmi:id="_iXITAMEpEeG-Z92mbpCVHw" severity="INFO" base_Association="_cS8jAsEpEeG-Z92mbpCVHw" typeCode="DRIV"/>

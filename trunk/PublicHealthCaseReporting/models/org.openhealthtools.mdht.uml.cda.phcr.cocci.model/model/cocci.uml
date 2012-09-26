@@ -19,6 +19,7 @@
     <packageImport xmi:id="_8KQlJU6yEeG_dcj91TvCTg">
       <importedPackage href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_KnCD4CFjEd-3s7f6mWX-3A"/>
     </packageImport>
+    <!--
     <packagedElement xmi:type="uml:Association" xmi:id="_8GrssU6yEeG_dcj91TvCTg" memberEnd="_8Grssk6yEeG_dcj91TvCTg">
       <ownedEnd xmi:id="_8Grssk6yEeG_dcj91TvCTg" name="" visibility="private" association="_8GrssU6yEeG_dcj91TvCTg">
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_8Grss06yEeG_dcj91TvCTg" value="*"/>
@@ -31,6 +32,7 @@
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_8GrsuE6yEeG_dcj91TvCTg"/>
       </ownedEnd>
     </packagedElement>
+    -->
     <packagedElement xmi:type="uml:Class" xmi:id="_8Jg-QU6yEeG_dcj91TvCTg" name="CoccidioidesCaseReport">
       <generalization xmi:id="_8Jg-Q06yEeG_dcj91TvCTg">
         <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.phcr.model/model/phcr.uml#_6PmAIcgnEeCI5ZpfyBisiQ"/>
@@ -325,7 +327,6 @@
   <CDA:CodeSystemConstraint xmi:id="_gX8xgKOFEeG3gKoyOiGNFA" code="413350009" displayName="Finding with explicit context" base_Property="_WDYxcaOFEeG3gKoyOiGNFA">
     <reference href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_ya6aMCWsEd-iTYfpNb4PkQ"/>
   </CDA:CodeSystemConstraint>
-  <CDA:PropertyValidation xmi:id="_kaVo4KOFEeG3gKoyOiGNFA" base_Property="_WDYxc6OFEeG3gKoyOiGNFA"/>
   <CDA:CodeSystemConstraint xmi:id="_k28sYKOFEeG3gKoyOiGNFA" code="completed" base_Property="_WDYxc6OFEeG3gKoyOiGNFA">
     <reference href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_e8ZEoCWvEd-iTYfpNb4PkQ"/>
   </CDA:CodeSystemConstraint>
@@ -333,7 +334,6 @@
   <CDA:Entry xmi:id="_8ECBkKOGEeG3gKoyOiGNFA" severity="INFO" base_Association="_6aFBMqOGEeG3gKoyOiGNFA" typeCode="DRIV"/>
   <CDA:Entry xmi:id="_N6g18KO-EeG3gKoyOiGNFA" severity="INFO" base_Association="_MiAK4qO-EeG3gKoyOiGNFA" typeCode="DRIV"/>
   <CDA:EntryRelationship xmi:id="_TS4BwKO-EeG3gKoyOiGNFA" severity="WARNING" base_Association="_QW1HYqO-EeG3gKoyOiGNFA" typeCode="REFR"/>
-  <CDA:PropertyValidation xmi:id="_r8z_wKQdEeG3gKoyOiGNFA" base_Property="_o_aagKQdEeG3gKoyOiGNFA"/>
   <CDA:ValueSetConstraint xmi:id="_tOwv0KQdEeG3gKoyOiGNFA" base_Property="_o_aagKQdEeG3gKoyOiGNFA">
     <reference href="cocci-vocab.uml#_f2ffwLPXEeGZv8rS8bsYCw"/>
   </CDA:ValueSetConstraint>
@@ -347,23 +347,18 @@
     <ruleId>CONF-397</ruleId>
     <ruleId>CONF:1999</ruleId>
   </CDA:PropertyValidation>
-  <CDA:PropertyValidation xmi:id="_3TM-A6WCEeG5_K9BCQxvMA" base_Property="_3TM-AKWCEeG5_K9BCQxvMA"/>
   <CDA:ValueSetConstraint xmi:id="_4k2zIKWCEeG5_K9BCQxvMA" base_Property="_3TM-AKWCEeG5_K9BCQxvMA">
     <reference href="cocci-vocab.uml#_ZFBqkaYDEeGa0qcW_cdRCg"/>
   </CDA:ValueSetConstraint>
   <CDA:PropertyValidation xmi:id="_MiCTQaWDEeG5_K9BCQxvMA">
     <ruleId>CONF-416</ruleId>
   </CDA:PropertyValidation>
-  <CDA:PropertyValidation xmi:id="_PIoiEaWDEeG5_K9BCQxvMA" base_Property="_PIoiEKWDEeG5_K9BCQxvMA">
-    <ruleId>CONF-412</ruleId>
-  </CDA:PropertyValidation>
   <CDA:ValueSetConstraint xmi:id="_QjrjwKWDEeG5_K9BCQxvMA" base_Property="_PIoiEKWDEeG5_K9BCQxvMA">
     <reference href="cocci-vocab.uml#_SeVx0KYAEeGa0qcW_cdRCg"/>
+    <ruleId>CONF-412</ruleId>
   </CDA:ValueSetConstraint>
-  <CDA:PropertyValidation xmi:id="_vh22s6WEEeG5_K9BCQxvMA" base_Property="_vh22sKWEEeG5_K9BCQxvMA">
-    <ruleId>CONF:1874</ruleId>
-  </CDA:PropertyValidation>
   <CDA:CodeSystemConstraint xmi:id="_2iiEIKWEEeG5_K9BCQxvMA" code="60826002" displayName="Coccidioidomycosis" base_Property="_vh22sKWEEeG5_K9BCQxvMA">
     <reference href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_ya6aMCWsEd-iTYfpNb4PkQ"/>
+    <ruleId>CONF:1874</ruleId>
   </CDA:CodeSystemConstraint>
 </xmi:XMI>

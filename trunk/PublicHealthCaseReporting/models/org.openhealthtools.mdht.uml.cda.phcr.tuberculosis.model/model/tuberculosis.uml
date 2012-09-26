@@ -549,10 +549,6 @@
     <ruleId>CONF:1872</ruleId>
     <ruleId>CONF:337</ruleId>
   </CDA:CodeSystemConstraint>
-  <CDA:PropertyValidation xmi:id="_LVvPM1ZmEeG6GPFMVAzSqg" base_Property="_LVvPMFZmEeG6GPFMVAzSqg">
-    <ruleId>CONF:1874</ruleId>
-    <ruleId>CONF:339</ruleId>
-  </CDA:PropertyValidation>
   <CDA:EntryRelationship xmi:id="_LVv2QlZmEeG6GPFMVAzSqg" severity="WARNING" typeCode="REFR">
     <ruleId>CONF-162</ruleId>
     <ruleId>CONF:513</ruleId>
@@ -590,15 +586,13 @@
     <ruleId>CONF:1865</ruleId>
     <ruleId>CONF:681</ruleId>
   </CDA:CodeSystemConstraint>
-  <CDA:PropertyValidation xmi:id="_0EzNY1ZnEeG6GPFMVAzSqg" base_Property="_0EzNYFZnEeG6GPFMVAzSqg">
-    <ruleId>CONF:1867</ruleId>
-    <ruleId>CONF:683</ruleId>
-  </CDA:PropertyValidation>
   <CDA:CDATemplate xmi:id="_3OGgoFZnEeG6GPFMVAzSqg" severity="WARNING" base_Class="_pcKawFZnEeG6GPFMVAzSqg" templateId="2.16.840.1.113883.10.20.15.3.14">
     <ruleId>CONF:349</ruleId>
   </CDA:CDATemplate>
   <CDA:ValueSetConstraint xmi:id="_O-RKMFZoEeG6GPFMVAzSqg" base_Property="_0EzNYFZnEeG6GPFMVAzSqg">
     <reference href="tuberculosis-vocab.uml#_4r0C4JO_EeGo2ZrDRqpq0g"/>
+    <ruleId>CONF:1867</ruleId>
+    <ruleId>CONF:683</ruleId>
   </CDA:ValueSetConstraint>
   <CDA:PropertyValidation xmi:id="_p7bew1ZpEeG6GPFMVAzSqg">
     <ruleId>CONF:599</ruleId>
@@ -620,11 +614,6 @@
   <CDA:PropertyValidation xmi:id="_yXkvMlZqEeG6GPFMVAzSqg">
     <ruleId>CONF:1996</ruleId>
     <ruleId>CONF:949</ruleId>
-  </CDA:PropertyValidation>
-  <CDA:PropertyValidation xmi:id="_yXlWQVZqEeG6GPFMVAzSqg" base_Property="_yXlWQFZqEeG6GPFMVAzSqg">
-    <ruleId>CONF-397</ruleId>
-    <ruleId>CONF:1999</ruleId>
-    <ruleId>CONF:952</ruleId>
   </CDA:PropertyValidation>
   <CDA:PropertyValidation xmi:id="_yXl9U1ZqEeG6GPFMVAzSqg" mandatory="true">
     <ruleId>CONF:2001</ruleId>
@@ -663,10 +652,6 @@
   <CDA:PropertyValidation xmi:id="_qfmmAFZtEeG6GPFMVAzSqg">
     <ruleId>CONF:717</ruleId>
   </CDA:PropertyValidation>
-  <CDA:PropertyValidation xmi:id="_qfmmAlZtEeG6GPFMVAzSqg" base_Property="_qfmmAVZtEeG6GPFMVAzSqg">
-    <ruleId>CONF-412</ruleId>
-    <ruleId>CONF:719</ruleId>
-  </CDA:PropertyValidation>
   <CDA:PropertyValidation xmi:id="_qfnNE1ZtEeG6GPFMVAzSqg" severity="WARNING">
     <ruleId>CONF-411</ruleId>
     <ruleId>CONF:721</ruleId>
@@ -695,9 +680,14 @@
   </CDA:CDATemplate>
   <CDA:ValueSetConstraint xmi:id="_EiXkUFZuEeG6GPFMVAzSqg" base_Property="_yXlWQFZqEeG6GPFMVAzSqg">
     <reference href="tuberculosis-vocab.uml#_GT6sgJHtEeG1cN68X_AUqA"/>
+    <ruleId>CONF-397</ruleId>
+    <ruleId>CONF:1999</ruleId>
+    <ruleId>CONF:952</ruleId>
   </CDA:ValueSetConstraint>
   <CDA:ValueSetConstraint xmi:id="_oDGR4FZuEeG6GPFMVAzSqg" base_Property="_qfmmAVZtEeG6GPFMVAzSqg">
     <reference href="tuberculosis-vocab.uml#_GT6sgJHtEeG1cN68X_AUqA"/>
+    <ruleId>CONF-412</ruleId>
+    <ruleId>CONF:719</ruleId>
   </CDA:ValueSetConstraint>
   <CDA:PropertyValidation xmi:id="_DexHYlZwEeG6GPFMVAzSqg">
     <ruleId>CONF:691</ruleId>
@@ -778,20 +768,16 @@
     <reference href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_4AnRQCYWEd-iTYfpNb4PkQ"/>
     <ruleId>CONF:864</ruleId>
   </CDA:CodeSystemConstraint>
-  <CDA:PropertyValidation xmi:id="_P9YAUFZ0EeG6GPFMVAzSqg" base_Property="_Y_WzoFZzEeG6GPFMVAzSqg">
-    <ruleId>CONF:865</ruleId>
-  </CDA:PropertyValidation>
   <CDA:CodeSystemConstraint xmi:id="_TKNIsFZ0EeG6GPFMVAzSqg" code="completed" base_Property="_Y_WzoFZzEeG6GPFMVAzSqg">
     <reference href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_e8ZEoCWvEd-iTYfpNb4PkQ"/>
+    <ruleId>CONF:865</ruleId>
   </CDA:CodeSystemConstraint>
   <CDA:PropertyValidation xmi:id="_lVqzkFZ0EeG6GPFMVAzSqg" severity="WARNING">
     <ruleId>CONF:866</ruleId>
   </CDA:PropertyValidation>
-  <CDA:PropertyValidation xmi:id="_qecrQFZ0EeG6GPFMVAzSqg" base_Property="_Y_Wzo1ZzEeG6GPFMVAzSqg">
-    <ruleId>CONF:867</ruleId>
-  </CDA:PropertyValidation>
   <CDA:ValueSetConstraint xmi:id="_6ckU0FZ0EeG6GPFMVAzSqg" base_Property="_Y_Wzo1ZzEeG6GPFMVAzSqg">
     <reference href="../../org.openhealthtools.mdht.uml.cda.phcr.salmonellosis.model/model/salmonellosis-vocab.uml#_OA4foJOXEeGS4vT0_mgBnw"/>
+    <ruleId>CONF:867</ruleId>
   </CDA:ValueSetConstraint>
   <CDA:PropertyValidation xmi:id="_pRxnUlZ1EeG6GPFMVAzSqg">
     <ruleId>CONF-238</ruleId>
@@ -826,11 +812,9 @@
   <CDA:PropertyValidation xmi:id="_XeUXUFZ2EeG6GPFMVAzSqg" severity="WARNING" base_Property="_pRyOYVZ1EeG6GPFMVAzSqg">
     <ruleId>CONF:872</ruleId>
   </CDA:PropertyValidation>
-  <CDA:PropertyValidation xmi:id="_cgge0FZ2EeG6GPFMVAzSqg" base_Property="_pR1RsFZ1EeG6GPFMVAzSqg">
-    <ruleId>CONF:873</ruleId>
-  </CDA:PropertyValidation>
   <CDA:ValueSetConstraint xmi:id="_hWQs0FZ2EeG6GPFMVAzSqg" base_Property="_pR1RsFZ1EeG6GPFMVAzSqg">
     <reference href="tuberculosis-vocab.uml#_WTXtMHK8EeGuNdJvIpY56g"/>
+    <ruleId>CONF:873</ruleId>
   </CDA:ValueSetConstraint>
   <CDA:ClassValidation xmi:id="_bOpY4FZ3EeG6GPFMVAzSqg" severity="WARNING" base_Class="_QVT30FZ3EeG6GPFMVAzSqg">
     <ruleId>CONF:900</ruleId>
@@ -1150,14 +1134,14 @@
   <CDA:EntryRelationship xmi:id="_Wy1xEIseEeGfu4wGB7cEYQ" severity="WARNING" base_Association="_SV7g4oseEeGfu4wGB7cEYQ" typeCode="COMP"/>
   <CDA:PropertyValidation xmi:id="_osSAoJHpEeG1cN68X_AUqA" severity="WARNING" base_Property="_ldlIEYoqEeG8p7gRJdN2SA"/>
   <CDA:Entry xmi:id="_H4ZeYJHqEeG1cN68X_AUqA" severity="WARNING" base_Association="_NOPpko44EeGy-7mVPNtnag" typeCode="DRIV"/>
-  <CDA:PropertyValidation xmi:id="_cPfWgJHuEeG1cN68X_AUqA" base_Property="_beYpsJHuEeG1cN68X_AUqA"/>
   <CDA:ValueSetConstraint xmi:id="_meUiAJHuEeG1cN68X_AUqA" base_Property="_beYpsJHuEeG1cN68X_AUqA">
     <reference href="tuberculosis-vocab.uml#_5yYpIJHtEeG1cN68X_AUqA"/>
   </CDA:ValueSetConstraint>
   <CDA:ValueSetConstraint xmi:id="_D7bp0JH7EeG1cN68X_AUqA" base_Property="_LVvPMFZmEeG6GPFMVAzSqg">
     <reference href="tuberculosis-vocab.uml#_kw5BwJHsEeG1cN68X_AUqA"/>
+    <ruleId>CONF:1874</ruleId>
+    <ruleId>CONF:339</ruleId>
   </CDA:ValueSetConstraint>
-  <CDA:PropertyValidation xmi:id="_ntjW0JJSEeG8oN-7sTL44Q" base_Property="_m_n50JJSEeG8oN-7sTL44Q"/>
   <CDA:CodeSystemConstraint xmi:id="_rZwi0JJSEeG8oN-7sTL44Q" binding="Dynamic" code="ASSERTION" base_Property="_m_n50JJSEeG8oN-7sTL44Q">
     <reference href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_4AnRQCYWEd-iTYfpNb4PkQ"/>
   </CDA:CodeSystemConstraint>
@@ -1174,7 +1158,6 @@
   <CDA:ValueSetConstraint xmi:id="_C6GRkaECEeGKmOvqoxhXPg" identifier="2.16.840.1.113883.1.11.20.14" name="ProblemTypeCode" version="20061017" base_Property="_C6GRkKECEeGKmOvqoxhXPg">
     <ruleId>CONF-159</ruleId>
   </CDA:ValueSetConstraint>
-  <CDA:PropertyValidation xmi:id="_GeZewKECEeGKmOvqoxhXPg" base_Property="_C6HfsKECEeGKmOvqoxhXPg"/>
   <CDA:ValueSetConstraint xmi:id="_YizfYKECEeGKmOvqoxhXPg" base_Property="_C6HfsKECEeGKmOvqoxhXPg">
     <reference href="tuberculosis-vocab.uml#_jeuMMJLREeGcr5GYeHlJ7A"/>
   </CDA:ValueSetConstraint>

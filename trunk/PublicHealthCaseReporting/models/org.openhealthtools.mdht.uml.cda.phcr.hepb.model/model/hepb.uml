@@ -519,7 +519,6 @@
   <CDA:TextValue xmi:id="_-rmkgE6GEeG_dcj91TvCTg" base_Property="_8e74oE6GEeG_dcj91TvCTg" value="Public Health Case Report - Acute Hepatitis B">
     <ruleId>CONF:1269</ruleId>
   </CDA:TextValue>
-  <CDA:PropertyValidation xmi:id="_TOIe4J0fEeG50volhed9tg" base_Property="_jv4EUZyuEeG50volhed9tg"/>
   <CDA:ValueSetConstraint xmi:id="_yxBd4J0fEeG50volhed9tg" base_Property="_jv4EUZyuEeG50volhed9tg">
     <reference href="hepb-vocab.uml#_q3UBkJ0dEeG50volhed9tg"/>
   </CDA:ValueSetConstraint>
@@ -569,10 +568,6 @@
     <ruleId>CONF:1872</ruleId>
     <ruleId>CONF:1150</ruleId>
   </CDA:CodeSystemConstraint>
-  <CDA:PropertyValidation xmi:id="_LLl_o51-EeG50volhed9tg" base_Property="_LLl_oJ1-EeG50volhed9tg">
-    <ruleId>CONF:1874</ruleId>
-    <ruleId>CONF:1152</ruleId>
-  </CDA:PropertyValidation>
   <CDA:EntryRelationship xmi:id="_LLnNwp1-EeG50volhed9tg" severity="WARNING" typeCode="REFR">
     <ruleId>CONF-162</ruleId>
     <ruleId>CONF:1163</ruleId>
@@ -588,6 +583,8 @@
   </CDA:CDATemplate>
   <CDA:ValueSetConstraint xmi:id="_yiOV0J2AEeG50volhed9tg" base_Property="_LLl_oJ1-EeG50volhed9tg">
     <reference href="hepb-vocab.uml#_4iE04Z1_EeG50volhed9tg"/>
+    <ruleId>CONF:1874</ruleId>
+    <ruleId>CONF:1152</ruleId>
   </CDA:ValueSetConstraint>
   <CDA:AssociationValidation xmi:id="_BrHnkJ2BEeG50volhed9tg" severity="WARNING">
     <ruleId>CONF:1154</ruleId>
@@ -618,13 +615,11 @@
     <ruleId>CONF:1865</ruleId>
     <ruleId>CONF:986</ruleId>
   </CDA:CodeSystemConstraint>
-  <CDA:PropertyValidation xmi:id="_6PiC852EEeG50volhed9tg" base_Property="_6PiC8J2EEeG50volhed9tg">
-    <ruleId>CONF:1867</ruleId>
-    <ruleId>CONF:988</ruleId>
-  </CDA:PropertyValidation>
   <CDA:CDATemplate xmi:id="_CnVbYJ2FEeG50volhed9tg" message="This clinical statement represents the signs and symptoms that are typically associated with acute hepatitis B. In some workflows, information will also be sent if explicitly known that a common symptom was NOT observed." base_Class="_xAbPEJ2EEeG50volhed9tg" templateId="2.16.840.1.113883.10.20.15.3.22"/>
   <CDA:ValueSetConstraint xmi:id="_VCGGgJ2FEeG50volhed9tg" base_Property="_6PiC8J2EEeG50volhed9tg">
     <reference href="hepb-vocab.uml#_YMBE0J2FEeG50volhed9tg"/>
+    <ruleId>CONF:1867</ruleId>
+    <ruleId>CONF:988</ruleId>
   </CDA:ValueSetConstraint>
   <CDA:Entry xmi:id="_FuJ7AJ2IEeG50volhed9tg" base_Association="_t3W0EZ1-EeG50volhed9tg" typeCode="DRIV">
     <ruleId>CONF:1220</ruleId>
@@ -642,11 +637,9 @@
     <reference href="hepb-vocab.uml#_fp8SIJ2JEeG50volhed9tg"/>
     <ruleId>CONF:1176</ruleId>
   </CDA:ValueSetConstraint>
-  <CDA:PropertyValidation xmi:id="_cQZuAJ2KEeG50volhed9tg" base_Property="_klOV0J2IEeG50volhed9tg">
-    <ruleId>CONF:1177</ruleId>
-  </CDA:PropertyValidation>
   <CDA:CodeSystemConstraint xmi:id="_mAkAgJ2KEeG50volhed9tg" code="completed" displayName="completed" base_Property="_klOV0J2IEeG50volhed9tg">
     <reference href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_e8ZEoCWvEd-iTYfpNb4PkQ"/>
+    <ruleId>CONF:1177</ruleId>
   </CDA:CodeSystemConstraint>
   <CDA:PropertyValidation xmi:id="_s845cJ2KEeG50volhed9tg" severity="WARNING">
     <ruleId>CONF:1178</ruleId>
@@ -680,10 +673,6 @@
     <ruleId>CONF-156</ruleId>
     <ruleId>CONF-157</ruleId>
   </CDA:CodeSystemConstraint>
-  <CDA:PropertyValidation xmi:id="_nYdgMJ2NEeG50volhed9tg" base_Property="_nYc5IJ2NEeG50volhed9tg">
-    <ruleId>CONF:1108</ruleId>
-    <ruleId>CONF:1195</ruleId>
-  </CDA:PropertyValidation>
   <CDA:CDATemplate xmi:id="_pwVWgJ2NEeG50volhed9tg" message="This clinical statement represents the history of cases of viral hepatitis that the subject of the case report has been diagnosed with other than the one being reported. This template is a simple problem observation template modeled after CCD problem observation and problem status templates to show the history of other viral hepatitis problems." base_Class="_ds3koJ2NEeG50volhed9tg" templateId="2.16.840.1.113883.10.20.15.3.32"/>
   <CDA:PropertyValidation xmi:id="_u_uzkJ2NEeG50volhed9tg">
     <ruleId>CONF:1189</ruleId>
@@ -693,6 +682,8 @@
   </CDA:CodeSystemConstraint>
   <CDA:ValueSetConstraint xmi:id="_4qYXIJ2REeG50volhed9tg" base_Property="_nYc5IJ2NEeG50volhed9tg">
     <reference href="hepb-vocab.uml#_xhfwQJ2OEeG50volhed9tg"/>
+    <ruleId>CONF:1108</ruleId>
+    <ruleId>CONF:1195</ruleId>
   </CDA:ValueSetConstraint>
   <CDA:AssociationValidation xmi:id="_KF39oJ2SEeG50volhed9tg">
     <ruleId>CONF:1196</ruleId>
@@ -727,9 +718,6 @@
     <ruleId>CONF-157</ruleId>
     <ruleId>CONF:1203</ruleId>
   </CDA:CodeSystemConstraint>
-  <CDA:PropertyValidation xmi:id="_ME3vA52UEeG50volhed9tg" base_Property="_ME3vAJ2UEeG50volhed9tg">
-    <ruleId>CONF:1108</ruleId>
-  </CDA:PropertyValidation>
   <CDA:EntryRelationship xmi:id="_ME49IJ2UEeG50volhed9tg" severity="INFO" base_Association="_ME4WE52UEeG50volhed9tg" typeCode="REFR">
     <ruleId>CONF-162</ruleId>
     <ruleId>CONF:1206</ruleId>
@@ -741,7 +729,9 @@
   <CDA:CodeSystemConstraint xmi:id="_gzX-YJ2UEeG50volhed9tg" code="ASSERTION" displayName="ASSERTION" base_Property="_MEyPcp2UEeG50volhed9tg">
     <reference href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_wOhRcE6REeC5ttwajeXVXg"/>
   </CDA:CodeSystemConstraint>
-  <CDA:ValueSetConstraint xmi:id="_MOGHAJ2VEeG50volhed9tg" identifier="2.16.840.1.114222.4.11.3231" name="Disease Type (STD)" version="1" base_Property="_ME3vAJ2UEeG50volhed9tg"/>
+  <CDA:ValueSetConstraint xmi:id="_MOGHAJ2VEeG50volhed9tg" identifier="2.16.840.1.114222.4.11.3231" name="Disease Type (STD)" version="1" base_Property="_ME3vAJ2UEeG50volhed9tg">
+    <ruleId>CONF:1108</ruleId>
+  </CDA:ValueSetConstraint>
   <CDA:EntryRelationship xmi:id="_Rogr0J2WEeG50volhed9tg" severity="WARNING" typeCode="REFR">
     <ruleId>CONF:1210</ruleId>
     <ruleId>CONF:1217</ruleId>
@@ -799,10 +789,6 @@
   <CDA:PropertyValidation xmi:id="_YB0TEp2dEeG50volhed9tg">
     <ruleId>CONF:1233</ruleId>
   </CDA:PropertyValidation>
-  <CDA:PropertyValidation xmi:id="_YB06IZ2dEeG50volhed9tg" base_Property="_YB06IJ2dEeG50volhed9tg">
-    <ruleId>CONF-412</ruleId>
-    <ruleId>CONF:1236</ruleId>
-  </CDA:PropertyValidation>
   <CDA:PropertyValidation xmi:id="_YB2IQJ2dEeG50volhed9tg" severity="WARNING">
     <ruleId>CONF-411</ruleId>
     <ruleId>CONF:1238</ruleId>
@@ -831,7 +817,10 @@
     <ruleId>CONF:1239</ruleId>
   </CDA:PropertyValidation>
   <CDA:CDATemplate xmi:id="_amM7YJ2dEeG50volhed9tg" message="This clinical statement represents the name of the laboratory test, the date that the specimen for the laboratory test was taken from the subject of the case report, the date that the laboratory test was performed on the specimen, and the result of the laboratory test. In addition, it captures the name of organization where the specimen was collected." base_Class="_KJbm8J2dEeG50volhed9tg" templateId="2.16.840.1.113883.10.20.15.3.34"/>
-  <CDA:ValueSetConstraint xmi:id="_THBXkJ2eEeG50volhed9tg" identifier="2.16.840.1.114222.4.11.3043" name="PHVS_LabTestResultName_Hepatitis" version="1" base_Property="_YB06IJ2dEeG50volhed9tg"/>
+  <CDA:ValueSetConstraint xmi:id="_THBXkJ2eEeG50volhed9tg" identifier="2.16.840.1.114222.4.11.3043" name="PHVS_LabTestResultName_Hepatitis" version="1" base_Property="_YB06IJ2dEeG50volhed9tg">
+    <ruleId>CONF-412</ruleId>
+    <ruleId>CONF:1236</ruleId>
+  </CDA:ValueSetConstraint>
   <CDA:ValueSetConstraint xmi:id="_BhnxsJ2fEeG50volhed9tg" base_Property="_YB3WYJ2dEeG50volhed9tg">
     <reference href="hepb-vocab.uml#_VjwqUJ2fEeG50volhed9tg"/>
   </CDA:ValueSetConstraint>
@@ -966,14 +955,9 @@
   <CDA:PropertyValidation xmi:id="_8Kw5YJ2sEeG50volhed9tg">
     <ruleId>CONF:1071</ruleId>
   </CDA:PropertyValidation>
-  <CDA:PropertyValidation xmi:id="_-w6cQJ2sEeG50volhed9tg" base_Property="_cugTQ5yuEeG50volhed9tg">
-    <ruleId>CONF:1067</ruleId>
-  </CDA:PropertyValidation>
-  <CDA:PropertyValidation xmi:id="_9cGwAJ2tEeG50volhed9tg" base_Property="_cugTTJyuEeG50volhed9tg">
-    <ruleId>CONF:1068</ruleId>
-  </CDA:PropertyValidation>
   <CDA:CodeSystemConstraint xmi:id="_-Lu2IJ2tEeG50volhed9tg" code="completed" base_Property="_cugTTJyuEeG50volhed9tg">
     <reference href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_e8ZEoCWvEd-iTYfpNb4PkQ"/>
+    <ruleId>CONF:1068</ruleId>
   </CDA:CodeSystemConstraint>
   <CDA:PropertyValidation xmi:id="_Ff94wJ2uEeG50volhed9tg" severity="INFO">
     <ruleId>CONF:1069</ruleId>
@@ -1084,17 +1068,13 @@
     <reference href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
     <ruleId>CONF:1111</ruleId>
   </CDA:CodeSystemConstraint>
-  <CDA:PropertyValidation xmi:id="_1yDC0J23EeG50volhed9tg" base_Property="_lEbcZZyuEeG50volhed9tg">
-    <ruleId>CONF:1112</ruleId>
-  </CDA:PropertyValidation>
   <CDA:CodeSystemConstraint xmi:id="_1zsooJ23EeG50volhed9tg" code="completed" displayName="completed" base_Property="_lEbcZZyuEeG50volhed9tg">
     <reference href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_e8ZEoCWvEd-iTYfpNb4PkQ"/>
+    <ruleId>CONF:1112</ruleId>
   </CDA:CodeSystemConstraint>
-  <CDA:PropertyValidation xmi:id="_9Y77sJ23EeG50volhed9tg" base_Property="_lEbcaJyuEeG50volhed9tg">
-    <ruleId>CONF:1114</ruleId>
-  </CDA:PropertyValidation>
   <CDA:ValueSetConstraint xmi:id="_FwxJUJ24EeG50volhed9tg" base_Property="_lEbcaJyuEeG50volhed9tg">
     <reference href="hepb-vocab.uml#_KuPv8J24EeG50volhed9tg"/>
+    <ruleId>CONF:1114</ruleId>
   </CDA:ValueSetConstraint>
   <CDA:ConstraintValidation xmi:id="_FN0aMJ3tEeG50volhed9tg" base_Constraint="_zAo4EJ3sEeG50volhed9tg"/>
   <CDA:Entry xmi:id="_qdxkgJ3_EeGFifiMpnccVA" severity="WARNING" typeCode="DRIV"/>
@@ -1125,7 +1105,6 @@
   <CDA:AssociationValidation xmi:id="_B_kCIKNWEeGdKsw0tXkvXQ" severity="WARNING"/>
   <CDA:PropertyValidation xmi:id="_QdrRgKNWEeGdKsw0tXkvXQ" severity="WARNING" base_Property="_GwezcKNWEeGdKsw0tXkvXQ"/>
   <CDA:AssociationValidation xmi:id="_Y1f4EKNWEeGdKsw0tXkvXQ" severity="WARNING"/>
-  <CDA:PropertyValidation xmi:id="_tax6AKNWEeGdKsw0tXkvXQ" base_Property="_iTqboKNWEeGdKsw0tXkvXQ"/>
   <CDA:PropertyValidation xmi:id="_vzIRcKNWEeGdKsw0tXkvXQ" severity="WARNING" base_Property="_iTrCsKNWEeGdKsw0tXkvXQ"/>
   <CDA:PropertyValidation xmi:id="_7s9mMKNWEeGdKsw0tXkvXQ" base_Property="_206SIKNWEeGdKsw0tXkvXQ"/>
   <CDA:PropertyValidation xmi:id="__CIyQKNWEeGdKsw0tXkvXQ" base_Property="_2065MKNWEeGdKsw0tXkvXQ"/>
@@ -1148,5 +1127,6 @@
   </CDA:ValueSetConstraint>
   <CDA:ValueSetConstraint xmi:id="_HE08IK8lEeGSWrCbTVkD3A" base_Property="_cugTQ5yuEeG50volhed9tg">
     <reference href="hepb-vocab.uml#_ez8T4Z2tEeG50volhed9tg"/>
+    <ruleId>CONF:1067</ruleId>
   </CDA:ValueSetConstraint>
 </xmi:XMI>
