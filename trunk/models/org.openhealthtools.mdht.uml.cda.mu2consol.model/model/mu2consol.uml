@@ -80,12 +80,25 @@
               <redefinedProperty href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_INfOcErfEd6FXKclYGEDCw"/>
               <redefinedProperty href="../../org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-documents.uml#_7OuuACylEeGMXrZ0DiQwGg"/>
             </ownedAttribute>
-            <ownedAttribute xmi:id="_SFucsvbBEeGulbiehZqi1g" name="languageCommunication" association="_SFuctPbBEeGulbiehZqi1g">
-              <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-documents.uml#_hrAmsCymEeGMXrZ0DiQwGg"/>
+            <ownedAttribute xmi:id="_SFucsvbBEeGulbiehZqi1g" name="languageCommunication" type="__cXXsAeREeK0r-pCA5uczw" association="_SFuctPbBEeGulbiehZqi1g">
               <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_pxSTEPbBEeGulbiehZqi1g" value="1"/>
               <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_pxSTEfbBEeGulbiehZqi1g" value="1"/>
               <redefinedProperty href="../../org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-documents.uml#_GmM4YCytEeGMXrZ0DiQwGg"/>
             </ownedAttribute>
+            <nestedClassifier xmi:type="uml:Class" xmi:id="__cXXsAeREeK0r-pCA5uczw" name="LanguageCommunication">
+              <ownedComment xmi:id="_lVviMAeTEeK0r-pCA5uczw">
+                <body>INLINE</body>
+              </ownedComment>
+              <generalization xmi:id="__csu4AeREeK0r-pCA5uczw">
+                <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-documents.uml#_hrAmsCymEeGMXrZ0DiQwGg"/>
+              </generalization>
+              <ownedAttribute xmi:id="_CTtYQAeSEeK0r-pCA5uczw" name="languageCode" visibility="private" aggregation="composite">
+                <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_iYn74D55Ed6cla2oXsPtlA"/>
+                <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_CTtYQQeSEeK0r-pCA5uczw" value="1"/>
+                <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_CTtYQgeSEeK0r-pCA5uczw" value="1"/>
+                <redefinedProperty href="../../org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-documents.uml#_DKwi4NBZEeG2b5vwscX4AA"/>
+              </ownedAttribute>
+            </nestedClassifier>
           </nestedClassifier>
         </nestedClassifier>
       </nestedClassifier>
@@ -1368,4 +1381,9 @@ MU2 170.314(b)(7) Export Summary  - For Inpatient Care</body>
   <CDA:ConstraintValidation xmi:id="_3NehAAQrEeKNWa1y_3e0dw" base_Constraint="_jVFaQAQrEeKNWa1y_3e0dw"/>
   <CDA:ConstraintValidation xmi:id="_gIu8wARcEeKNWa1y_3e0dw" base_Constraint="_0v2AIARbEeKNWa1y_3e0dw"/>
   <CDA:ConstraintValidation xmi:id="_CkmaYARlEeKNWa1y_3e0dw" base_Constraint="_2PJgoARkEeKNWa1y_3e0dw"/>
+  <CDA:PropertyValidation xmi:id="_CTt_UAeSEeK0r-pCA5uczw" base_Property="_CTtYQAeSEeK0r-pCA5uczw"/>
+  <CDA:ValueSetConstraint xmi:id="_CUD9kAeSEeK0r-pCA5uczw" base_Property="_CTtYQAeSEeK0r-pCA5uczw">
+    <reference href="mu2consol-vocab.uml#_bjYjEAQsEeKhXbyWShxPyQ"/>
+    <ruleId>CONF:5407</ruleId>
+  </CDA:ValueSetConstraint>
 </xmi:XMI>
