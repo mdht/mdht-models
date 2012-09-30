@@ -25,10 +25,11 @@ import org.openhealthtools.mdht.uml.cda.consol.VitalSignsSectionEntriesOptional;
 /**
  * <!-- begin-user-doc --> A representation of the model object '
  * <em><b>VDT Inpatient Patient Info</b></em>'. <!-- end-user-doc -->
- *
- *
+ * 
+ * 
  * @see org.openhealthtools.mdht.uml.cda.mu2consol.Mu2consolPackage#getVDTInpatientPatientInfo()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.query='VDTInpatientPatientInfoResponsibleParty VDTInpatientPatientInfoSocialHistorySectionTemplateId VDTInpatientPatientInfomu2consolSocialHistorySectionSmokingStatusObservation VDTInpatientPatientInfoHospitalAdmissionMedicationsSectionEntriesOptionalTemplateId VDTInpatientPatientInfomu2consolHospitalAdmissionMedicationsSectionEntriesOptionalAdmissionMedication VDTInpatientPatientInfomu2consolPlanOfCareSectionCarePlanningForPlanOfCare VDTInpatientPatientInfomu2consolPlanOfCareSectionMu2consolPlanOfCareSectionPlanOfCareActivityObservation VDTInpatientPatientInfoPlanOfCareSectionTemplateId' constraints.validation.error='VDTInpatientPatientInfoResponsibleParty VDTInpatientPatientInfoMedicationList VDTInpatientPatientInfoCanHaveEitherVitalSignsRequiedOrOptionalEntry VDTInpatientPatientInfoCanHaveEitherAllergyRequiredOrOptionalEntry VDTInpatientPatientInfoSocialHistorySection VDTInpatientPatientInfoProblemSection VDTInpatientPatientInfoResultsSection VDTInpatientPatientInfoPlanOfCareSection VDTInpatientPatientInfoProceduresSection VDTInpatientPatientInfoSocialHistorySectionTemplateId VDTInpatientPatientInfomu2consolSocialHistorySectionSmokingStatusObservation VDTInpatientPatientInfoHospitalAdmissionMedicationsSectionEntriesOptionalTemplateId VDTInpatientPatientInfomu2consolHospitalAdmissionMedicationsSectionEntriesOptionalAdmissionMedication VDTInpatientPatientInfomu2consolPlanOfCareSectionCarePlanningForPlanOfCare VDTInpatientPatientInfomu2consolPlanOfCareSectionMu2consolPlanOfCareSectionPlanOfCareActivityObservation VDTInpatientPatientInfoPlanOfCareSectionTemplateId'"
+ * @model annotation=
+ *        "http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.query='VDTInpatientPatientInfoResponsibleParty VDTInpatientPatientInfoSocialHistorySectionTemplateId VDTInpatientPatientInfomu2consolSocialHistorySectionSmokingStatusObservation VDTInpatientPatientInfoHospitalAdmissionMedicationsSectionEntriesOptionalTemplateId VDTInpatientPatientInfomu2consolHospitalAdmissionMedicationsSectionEntriesOptionalAdmissionMedication VDTInpatientPatientInfomu2consolPlanOfCareSectionCarePlanningForPlanOfCare VDTInpatientPatientInfomu2consolPlanOfCareSectionMu2consolPlanOfCareSectionPlanOfCareActivityObservation VDTInpatientPatientInfoPlanOfCareSectionTemplateId' constraints.validation.error='VDTInpatientPatientInfoResponsibleParty VDTInpatientPatientInfoMedicationList VDTInpatientPatientInfoCanHaveEitherVitalSignsRequiedOrOptionalEntry VDTInpatientPatientInfoCanHaveEitherAllergyRequiredOrOptionalEntry VDTInpatientPatientInfoSocialHistorySection VDTInpatientPatientInfoProblemSection VDTInpatientPatientInfoResultsSection VDTInpatientPatientInfoPlanOfCareSection VDTInpatientPatientInfoProceduresSection VDTInpatientPatientInfoSocialHistorySectionTemplateId VDTInpatientPatientInfomu2consolSocialHistorySectionSmokingStatusObservation VDTInpatientPatientInfoHospitalAdmissionMedicationsSectionEntriesOptionalTemplateId VDTInpatientPatientInfomu2consolHospitalAdmissionMedicationsSectionEntriesOptionalAdmissionMedication VDTInpatientPatientInfomu2consolPlanOfCareSectionCarePlanningForPlanOfCare VDTInpatientPatientInfomu2consolPlanOfCareSectionMu2consolPlanOfCareSectionPlanOfCareActivityObservation VDTInpatientPatientInfoPlanOfCareSectionTemplateId'"
  * @generated
  */
 public interface VDTInpatientPatientInfo extends GeneralHeaderConstraints {
@@ -240,9 +241,8 @@ public interface VDTInpatientPatientInfo extends GeneralHeaderConstraints {
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc --> <!-- begin-model-doc -->
-	 * self
-	 * .getHospitalAdmissionMedicationsSectionEntriesOptional()->excluding(null
-	 * )->reject(getHospitalAdmissionMedicationsSectionEntriesOptional().
+	 * self .getHospitalAdmissionMedicationsSectionEntriesOptional()->excluding(
+	 * null )->reject(getHospitalAdmissionMedicationsSectionEntriesOptional().
 	 * templateId->exists(id : datatypes::II | id.root =
 	 * '2.16.840.1.113883.10.20.22.2.44'))
 	 * 
@@ -260,8 +260,8 @@ public interface VDTInpatientPatientInfo extends GeneralHeaderConstraints {
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc --> <!-- begin-model-doc -->
-	 * self
-	 * .getHospitalAdmissionMedicationsSectionEntriesOptional()->excluding(null
+	 * self .getHospitalAdmissionMedicationsSectionEntriesOptional()->excluding(
+	 * null
 	 * )->reject(getHospitalAdmissionMedicationsSectionEntriesOptional().entry->
 	 * exists(entry : cda::Entry | not entry.act.oclIsUndefined() and
 	 * entry.act.oclIsKindOf(consol::AdmissionMedication)))
@@ -302,17 +302,24 @@ public interface VDTInpatientPatientInfo extends GeneralHeaderConstraints {
 			DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.getPlanOfCareSection()->excluding(null)->reject(getPlanOfCareSection().entry->one(entry : cda::Entry | not entry.observation.oclIsUndefined() and entry.observation.oclIsKindOf(consol::PlanOfCareActivityObservation)))
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getPlanOfCareSection()->excluding(null)->reject(getPlanOfCareSection().entry->one(entry : cda::Entry | not entry.observation.oclIsUndefined() and entry.observation.oclIsKindOf(consol::PlanOfCareActivityObservation)))'"
+	 * <!-- begin-user-doc --> <!-- end-user-doc --> <!-- begin-model-doc -->
+	 * self
+	 * .getPlanOfCareSection()->excluding(null)->reject(getPlanOfCareSection(
+	 * ).entry->one(entry : cda::Entry | not entry.observation.oclIsUndefined()
+	 * and
+	 * entry.observation.oclIsKindOf(consol::PlanOfCareActivityObservation)))
+	 * 
+	 * @param diagnostics
+	 *            The chain of diagnostics to which problems are to be appended.
+	 * @param context
+	 *            The cache of context-specific information. <!-- end-model-doc
+	 *            -->
+	 * @model annotation=
+	 *        "http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getPlanOfCareSection()->excluding(null)->reject(getPlanOfCareSection().entry->one(entry : cda::Entry | not entry.observation.oclIsUndefined() and entry.observation.oclIsKindOf(consol::PlanOfCareActivityObservation)))'"
 	 * @generated
 	 */
-	boolean validateVDTInpatientPatientInfomu2consolPlanOfCareSectionMu2consolPlanOfCareSectionPlanOfCareActivityObservation(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateVDTInpatientPatientInfomu2consolPlanOfCareSectionMu2consolPlanOfCareSectionPlanOfCareActivityObservation(
+			DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc --> <!-- begin-model-doc -->
@@ -507,14 +514,16 @@ public interface VDTInpatientPatientInfo extends GeneralHeaderConstraints {
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	public VDTInpatientPatientInfo init();
 
 	/**
-     * <!-- begin-user-doc --> <!-- end-user-doc -->
-     * @generated
-     */
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @generated
+	 */
 	public VDTInpatientPatientInfo init(
 			Iterable<? extends Initializer<? extends EObject>> initializers);
 } // VDTInpatientPatientInfo

@@ -52,20 +52,20 @@ public class TransitionOfCareAmbulatorySummaryImpl extends
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateTransitionOfCareAmbulatorySummaryResponsibleParty(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateTransitionOfCareAmbulatorySummaryResponsibleParty(
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return TransitionOfCareAmbulatorySummaryOperations.validateTransitionOfCareAmbulatorySummaryResponsibleParty(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateTransitionOfCareAmbulatorySummaryAmbulatoryEncounterDiagnoses(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateTransitionOfCareAmbulatorySummaryAmbulatoryEncounterDiagnoses(
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return TransitionOfCareAmbulatorySummaryOperations.validateTransitionOfCareAmbulatorySummaryAmbulatoryEncounterDiagnoses(this, diagnostics, context);
 	}
 
@@ -79,8 +79,7 @@ public class TransitionOfCareAmbulatorySummaryImpl extends
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @generated
 	 */
 	public ReasonForReferralSection getReasonForReferralSection() {

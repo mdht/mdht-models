@@ -27,9 +27,9 @@ import org.openhealthtools.mdht.uml.cda.mu2consol.SmokingStatusObservation;
 import org.openhealthtools.mdht.uml.cda.mu2consol.util.Mu2consolValidator;
 
 /**
- * <!-- begin-user-doc -->
- * A static utility class that provides operations related to '<em><b>Smoking Status Observation</b></em>' model objects.
- * <!-- end-user-doc -->
+ * <!-- begin-user-doc --> A static utility class that provides operations
+ * related to '<em><b>Smoking Status Observation</b></em>' model objects. <!--
+ * end-user-doc -->
  *
  * <p>
  * The following operations are supported:
@@ -44,8 +44,7 @@ import org.openhealthtools.mdht.uml.cda.mu2consol.util.Mu2consolValidator;
  */
 public class SmokingStatusObservationOperations extends TobaccoUseOperations {
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @generated
 	 */
 	protected SmokingStatusObservationOperations() {
@@ -53,10 +52,13 @@ public class SmokingStatusObservationOperations extends TobaccoUseOperations {
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #validateSmokingStatusObservationValueP(SmokingStatusObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Smoking Status Observation Value P</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #validateSmokingStatusObservationValueP(SmokingStatusObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * The cached OCL expression body for the '
+	 * {@link #validateSmokingStatusObservationValueP(SmokingStatusObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * <em>Validate Smoking Status Observation Value P</em>}' operation. <!--
+	 * begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @see #validateSmokingStatusObservationValueP(SmokingStatusObservation,
+	 *      org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	 * @generated
 	 * @ordered
 	 */
@@ -64,29 +66,33 @@ public class SmokingStatusObservationOperations extends TobaccoUseOperations {
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateSmokingStatusObservationValueP(SmokingStatusObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Smoking Status Observation Value P</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @see #validateSmokingStatusObservationValueP(SmokingStatusObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	 * @generated
 	 * @ordered
 	 */
-	
+
 	protected static Constraint VALIDATE_SMOKING_STATUS_OBSERVATION_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-	
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * (self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (not self.value->isEmpty())
-	 * @param smokingStatusObservation The receiving '<em><b>Smoking Status Observation</b></em>' model object.
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc --> <!-- begin-model-doc -->
+	 * (self.value->isEmpty() or self.value->exists(element |
+	 * element.isNullFlavorUndefined())) implies (not self.value->isEmpty())
+	 * 
+	 * @param smokingStatusObservation
+	 *            The receiving '<em><b>Smoking Status Observation</b></em>'
+	 *            model object.
+	 * @param diagnostics
+	 *            The chain of diagnostics to which problems are to be appended.
+	 * @param context
+	 *            The cache of context-specific information. <!-- end-model-doc
+	 *            -->
 	 * @generated
 	 */
-	
-	public static  boolean validateSmokingStatusObservationValueP(SmokingStatusObservation smokingStatusObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+	public static boolean validateSmokingStatusObservationValueP(
+			SmokingStatusObservation smokingStatusObservation,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
   	  
 		if (VALIDATE_SMOKING_STATUS_OBSERVATION_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
@@ -127,10 +133,13 @@ public class SmokingStatusObservationOperations extends TobaccoUseOperations {
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #validateSmokingStatusObservationValue(SmokingStatusObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Smoking Status Observation Value</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #validateSmokingStatusObservationValue(SmokingStatusObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * The cached OCL expression body for the '
+	 * {@link #validateSmokingStatusObservationValue(SmokingStatusObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * <em>Validate Smoking Status Observation Value</em>}' operation. <!--
+	 * begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @see #validateSmokingStatusObservationValue(SmokingStatusObservation,
+	 *      org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	 * @generated
 	 * @ordered
 	 */
@@ -140,31 +149,40 @@ public class SmokingStatusObservationOperations extends TobaccoUseOperations {
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateSmokingStatusObservationValue(SmokingStatusObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Smoking Status Observation Value</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @see #validateSmokingStatusObservationValue(SmokingStatusObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	 * @generated
 	 * @ordered
 	 */
-	
+
 	protected static Constraint VALIDATE_SMOKING_STATUS_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-	
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * (self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (self.value->size() = 1 and self.value->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and 
-	 * let value : datatypes::CD = element.oclAsType(datatypes::CD) in 
-	 * value.codeSystem = '2.16.840.1.113883.6.96' and (value.code = '449868002' or value.code = '428041000124106' or value.code = '8517006' or value.code = '266919005' or value.code = '77176002' or value.code = '266927001' or value.code = '428071000124103' or value.code = '428061000124105')))
-	 * @param smokingStatusObservation The receiving '<em><b>Smoking Status Observation</b></em>' model object.
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc --> <!-- begin-model-doc -->
+	 * (self.value->isEmpty() or self.value->exists(element |
+	 * element.isNullFlavorUndefined())) implies (self.value->size() = 1 and
+	 * self.value->forAll(element | not element.oclIsUndefined() and
+	 * element.oclIsKindOf(datatypes::CD) and let value : datatypes::CD =
+	 * element.oclAsType(datatypes::CD) in value.codeSystem =
+	 * '2.16.840.1.113883.6.96' and (value.code = '449868002' or value.code =
+	 * '428041000124106' or value.code = '8517006' or value.code = '266919005'
+	 * or value.code = '77176002' or value.code = '266927001' or value.code =
+	 * '428071000124103' or value.code = '428061000124105')))
+	 * 
+	 * @param smokingStatusObservation
+	 *            The receiving '<em><b>Smoking Status Observation</b></em>'
+	 *            model object.
+	 * @param diagnostics
+	 *            The chain of diagnostics to which problems are to be appended.
+	 * @param context
+	 *            The cache of context-specific information. <!-- end-model-doc
+	 *            -->
 	 * @generated
 	 */
-	
-	public static  boolean validateSmokingStatusObservationValue(SmokingStatusObservation smokingStatusObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+	public static boolean validateSmokingStatusObservationValue(
+			SmokingStatusObservation smokingStatusObservation,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
   	  
 		Object passToken = (context == null) ? null : context.get("org.openhealthtools.mdht.uml.cda.mu2consol.SmokingStatusObservationValueP");
 		if ((passToken instanceof Collection<?>) && ((Collection<?>) passToken).contains(smokingStatusObservation)) {
@@ -199,40 +217,51 @@ public class SmokingStatusObservationOperations extends TobaccoUseOperations {
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #validateTobaccoUseTemplateId(SmokingStatusObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Tobacco Use Template Id</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #validateTobaccoUseTemplateId(SmokingStatusObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * The cached OCL expression body for the '
+	 * {@link #validateTobaccoUseTemplateId(SmokingStatusObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * <em>Validate Tobacco Use Template Id</em>}' operation. <!--
+	 * begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @see #validateTobaccoUseTemplateId(SmokingStatusObservation,
+	 *      org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	 * @generated
 	 * @ordered
 	 */
 	protected static final String VALIDATE_TOBACCO_USE_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.22.4.78')";
 
 	/**
-	 * The cached OCL invariant for the '{@link #validateTobaccoUseTemplateId(SmokingStatusObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Tobacco Use Template Id</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #validateTobaccoUseTemplateId(SmokingStatusObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * The cached OCL invariant for the '
+	 * {@link #validateTobaccoUseTemplateId(SmokingStatusObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * <em>Validate Tobacco Use Template Id</em>}' invariant operation. <!--
+	 * begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @see #validateTobaccoUseTemplateId(SmokingStatusObservation,
+	 *      org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	 * @generated
 	 * @ordered
 	 */
-	
+
 	protected static Constraint VALIDATE_TOBACCO_USE_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-	
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.22.4.78')
-	 * @param smokingStatusObservation The receiving '<em><b>Smoking Status Observation</b></em>' model object.
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc --> <!-- begin-model-doc -->
+	 * self.templateId->exists(id : datatypes::II | id.root =
+	 * '2.16.840.1.113883.10.22.4.78')
+	 * 
+	 * @param smokingStatusObservation
+	 *            The receiving '<em><b>Smoking Status Observation</b></em>'
+	 *            model object.
+	 * @param diagnostics
+	 *            The chain of diagnostics to which problems are to be appended.
+	 * @param context
+	 *            The cache of context-specific information. <!-- end-model-doc
+	 *            -->
 	 * @generated
 	 */
-	
-	public static  boolean validateTobaccoUseTemplateId(SmokingStatusObservation smokingStatusObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+	public static boolean validateTobaccoUseTemplateId(
+			SmokingStatusObservation smokingStatusObservation,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
   	  
 		if (VALIDATE_TOBACCO_USE_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();

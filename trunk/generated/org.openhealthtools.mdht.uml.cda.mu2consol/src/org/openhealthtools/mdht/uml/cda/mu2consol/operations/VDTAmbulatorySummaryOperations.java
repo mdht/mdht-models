@@ -30,9 +30,9 @@ import org.openhealthtools.mdht.uml.cda.mu2consol.VDTAmbulatorySummary;
 import org.openhealthtools.mdht.uml.cda.mu2consol.util.Mu2consolValidator;
 
 /**
- * <!-- begin-user-doc -->
- * A static utility class that provides operations related to '<em><b>VDT Ambulatory Summary</b></em>' model objects.
- * <!-- end-user-doc -->
+ * <!-- begin-user-doc --> A static utility class that provides operations
+ * related to '<em><b>VDT Ambulatory Summary</b></em>' model objects. <!--
+ * end-user-doc -->
  *
  * <p>
  * The following operations are supported:
@@ -43,10 +43,10 @@ import org.openhealthtools.mdht.uml.cda.mu2consol.util.Mu2consolValidator;
  *
  * @generated
  */
-public class VDTAmbulatorySummaryOperations extends ViewDownloadTransmitSummaryOperations {
+public class VDTAmbulatorySummaryOperations extends
+		ViewDownloadTransmitSummaryOperations {
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @generated
 	 */
 	protected VDTAmbulatorySummaryOperations() {
@@ -55,8 +55,7 @@ public class VDTAmbulatorySummaryOperations extends ViewDownloadTransmitSummaryO
 
 	/**
 	 * The cached OCL expression body for the '{@link #validateVDTAmbulatorySummaryResponsibleParty(VDTAmbulatorySummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate VDT Ambulatory Summary Responsible Party</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @see #validateVDTAmbulatorySummaryResponsibleParty(VDTAmbulatorySummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	 * @generated
 	 * @ordered
@@ -66,31 +65,37 @@ public class VDTAmbulatorySummaryOperations extends ViewDownloadTransmitSummaryO
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateVDTAmbulatorySummaryResponsibleParty(VDTAmbulatorySummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate VDT Ambulatory Summary Responsible Party</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @see #validateVDTAmbulatorySummaryResponsibleParty(VDTAmbulatorySummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	 * @generated
 	 * @ordered
 	 */
-	
+
 	protected static Query<?, ?, ?> VALIDATE_VDT_AMBULATORY_SUMMARY_RESPONSIBLE_PARTY__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY;
-	
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.componentOf->excluding(null).encompassingEncounter->excluding(null)->reject(responsibleParty->one(responsibleParty : 
+	 * <!-- begin-user-doc --> <!-- end-user-doc --> <!-- begin-model-doc -->
+	 * self
+	 * .componentOf->excluding(null).encompassingEncounter->excluding(null)->
+	 * reject(responsibleParty->one(responsibleParty :
 	 * 
-	 * cda::ResponsibleParty | not responsibleParty.oclIsUndefined() and responsibleParty.oclIsKindOf(rim::Participation)))
-	 * @param vdtAmbulatorySummary The receiving '<em><b>VDT Ambulatory Summary</b></em>' model object.
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
+	 * cda::ResponsibleParty | not responsibleParty.oclIsUndefined() and
+	 * responsibleParty.oclIsKindOf(rim::Participation)))
+	 * 
+	 * @param vdtAmbulatorySummary
+	 *            The receiving '<em><b>VDT Ambulatory Summary</b></em>' model
+	 *            object.
+	 * @param diagnostics
+	 *            The chain of diagnostics to which problems are to be appended.
+	 * @param context
+	 *            The cache of context-specific information. <!-- end-model-doc
+	 *            -->
 	 * @generated
 	 */
 	@SuppressWarnings("unchecked")
-	public static  boolean validateVDTAmbulatorySummaryResponsibleParty(VDTAmbulatorySummary vdtAmbulatorySummary, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public static boolean validateVDTAmbulatorySummaryResponsibleParty(
+			VDTAmbulatorySummary vdtAmbulatorySummary,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
   	  
 		
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();

@@ -25,18 +25,18 @@ import org.openhealthtools.mdht.uml.cda.mu2consol.ResultOrganizer;
 import org.openhealthtools.mdht.uml.cda.mu2consol.operations.ResultOrganizerOperations;
 
 /**
- * <!-- begin-user-doc -->
- * An implementation of the model object '<em><b>Result Organizer</b></em>'.
- * <!-- end-user-doc -->
+ * <!-- begin-user-doc --> An implementation of the model object '
+ * <em><b>Result Organizer</b></em>'. <!-- end-user-doc -->
  * <p>
  * </p>
  *
  * @generated
  */
-public class ResultOrganizerImpl extends org.openhealthtools.mdht.uml.cda.consol.impl.ResultOrganizerImpl implements ResultOrganizer {
+public class ResultOrganizerImpl extends
+		org.openhealthtools.mdht.uml.cda.consol.impl.ResultOrganizerImpl
+		implements ResultOrganizer {
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @generated
 	 */
 	protected ResultOrganizerImpl() {
@@ -44,8 +44,7 @@ public class ResultOrganizerImpl extends org.openhealthtools.mdht.uml.cda.consol
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @generated
 	 */
 	@Override
@@ -54,17 +53,16 @@ public class ResultOrganizerImpl extends org.openhealthtools.mdht.uml.cda.consol
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateMu2consolResultOrganizerResultObservation(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateMu2consolResultOrganizerResultObservation(
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ResultOrganizerOperations.validateMu2consolResultOrganizerResultObservation(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @generated
 	 */
 	public EList<ResultObservation> getMu2consolResultObservations() {
@@ -72,32 +70,32 @@ public class ResultOrganizerImpl extends org.openhealthtools.mdht.uml.cda.consol
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @generated
 	 */
 	@Override
-	public boolean validateResultOrganizerTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateResultOrganizerTemplateId(
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ResultOrganizerOperations.validateResultOrganizerTemplateId(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @generated
 	 */
 	@Override
 	public ResultOrganizer init() {
 	    return Initializer.Util.init(this);
 	}
-    /**
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+
+	/**
+     * <!-- begin-user-doc --> <!-- end-user-doc -->
      * @generated
      */
-    @Override
-	public ResultOrganizer init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+	@Override
+	public ResultOrganizer init(
+			Iterable<? extends Initializer<? extends EObject>> initializers) {
         Initializer.Util.init(this, initializers);
         return this;
     }
-} //ResultOrganizerImpl
+} // ResultOrganizerImpl

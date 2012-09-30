@@ -25,18 +25,18 @@ import org.openhealthtools.mdht.uml.cda.mu2consol.ProceduresSection;
 import org.openhealthtools.mdht.uml.cda.mu2consol.operations.ProceduresSectionOperations;
 
 /**
- * <!-- begin-user-doc -->
- * An implementation of the model object '<em><b>Procedures Section</b></em>'.
- * <!-- end-user-doc -->
+ * <!-- begin-user-doc --> An implementation of the model object '
+ * <em><b>Procedures Section</b></em>'. <!-- end-user-doc -->
  * <p>
  * </p>
  *
  * @generated
  */
-public class ProceduresSectionImpl extends org.openhealthtools.mdht.uml.cda.consol.impl.ProceduresSectionImpl implements ProceduresSection {
+public class ProceduresSectionImpl extends
+		org.openhealthtools.mdht.uml.cda.consol.impl.ProceduresSectionImpl
+		implements ProceduresSection {
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @generated
 	 */
 	protected ProceduresSectionImpl() {
@@ -44,8 +44,7 @@ public class ProceduresSectionImpl extends org.openhealthtools.mdht.uml.cda.cons
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @generated
 	 */
 	@Override
@@ -54,17 +53,16 @@ public class ProceduresSectionImpl extends org.openhealthtools.mdht.uml.cda.cons
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateMu2consolProceduresSectionProcedureActivityProcedure(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateMu2consolProceduresSectionProcedureActivityProcedure(
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ProceduresSectionOperations.validateMu2consolProceduresSectionProcedureActivityProcedure(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @generated
 	 */
 	public EList<ProcedureActivityProcedure> getMu2consolProcedureActivityProcedures() {
@@ -72,32 +70,32 @@ public class ProceduresSectionImpl extends org.openhealthtools.mdht.uml.cda.cons
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @generated
 	 */
 	@Override
-	public boolean validateProceduresSectionEntriesOptionalTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateProceduresSectionEntriesOptionalTemplateId(
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ProceduresSectionOperations.validateProceduresSectionEntriesOptionalTemplateId(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @generated
 	 */
 	@Override
 	public ProceduresSection init() {
 	    return Initializer.Util.init(this);
 	}
-    /**
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+
+	/**
+     * <!-- begin-user-doc --> <!-- end-user-doc -->
      * @generated
      */
-    @Override
-	public ProceduresSection init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+	@Override
+	public ProceduresSection init(
+			Iterable<? extends Initializer<? extends EObject>> initializers) {
         Initializer.Util.init(this, initializers);
         return this;
     }
-} //ProceduresSectionImpl
+} // ProceduresSectionImpl

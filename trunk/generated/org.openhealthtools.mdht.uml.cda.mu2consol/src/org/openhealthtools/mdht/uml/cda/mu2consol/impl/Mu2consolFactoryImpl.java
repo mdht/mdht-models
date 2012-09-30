@@ -15,16 +15,12 @@ import org.openhealthtools.mdht.uml.cda.mu2consol.*;
 import org.openhealthtools.mdht.uml.cda.mu2consol.AssessmentAndPlanSection;
 import org.openhealthtools.mdht.uml.cda.mu2consol.AssessmentSection;
 import org.openhealthtools.mdht.uml.cda.mu2consol.GeneralHeaderConstraints;
-import org.openhealthtools.mdht.uml.cda.mu2consol.HospitalAdmissionDiagnosisSection;
 import org.openhealthtools.mdht.uml.cda.mu2consol.HospitalAdmissionMedicationsSectionEntriesOptional;
-import org.openhealthtools.mdht.uml.cda.mu2consol.HospitalDischargeDiagnosisSection;
 import org.openhealthtools.mdht.uml.cda.mu2consol.InstructionsSection;
 import org.openhealthtools.mdht.uml.cda.mu2consol.MedicationsAdministeredSection;
 import org.openhealthtools.mdht.uml.cda.mu2consol.Mu2consolFactory;
 import org.openhealthtools.mdht.uml.cda.mu2consol.Mu2consolPackage;
 import org.openhealthtools.mdht.uml.cda.mu2consol.PlanOfCareSection;
-import org.openhealthtools.mdht.uml.cda.mu2consol.PostoperativeDiagnosisSection;
-import org.openhealthtools.mdht.uml.cda.mu2consol.PostprocedureDiagnosisSection;
 import org.openhealthtools.mdht.uml.cda.mu2consol.PreoperativeDiagnosisSection;
 import org.openhealthtools.mdht.uml.cda.mu2consol.SummaryOfCareRecord;
 
@@ -78,7 +74,6 @@ public class Mu2consolFactoryImpl extends EFactoryImpl implements
 			case Mu2consolPackage.PLAN_OF_CARE_SECTION: return createPlanOfCareSection();
 			case Mu2consolPackage.ASSESSMENT_AND_PLAN_SECTION: return createAssessmentAndPlanSection();
 			case Mu2consolPackage.ASSESSMENT_SECTION: return createAssessmentSection();
-			case Mu2consolPackage.POSTOPERATIVE_DIAGNOSIS_SECTION: return createPostoperativeDiagnosisSection();
 			case Mu2consolPackage.PREOPERATIVE_DIAGNOSIS_SECTION: return createPreoperativeDiagnosisSection();
 			case Mu2consolPackage.HOSPITAL_ADMISSION_MEDICATIONS_SECTION_ENTRIES_OPTIONAL: return createHospitalAdmissionMedicationsSectionEntriesOptional();
 			case Mu2consolPackage.SOCIAL_HISTORY_SECTION: return createSocialHistorySection();
@@ -88,10 +83,7 @@ public class Mu2consolFactoryImpl extends EFactoryImpl implements
 			case Mu2consolPackage.RESULT_OBSERVATION: return createResultObservation();
 			case Mu2consolPackage.PROCEDURES_SECTION: return createProceduresSection();
 			case Mu2consolPackage.PROCEDURE_ACTIVITY_PROCEDURE: return createProcedureActivityProcedure();
-			case Mu2consolPackage.POSTPROCEDURE_DIAGNOSIS_SECTION: return createPostprocedureDiagnosisSection();
 			case Mu2consolPackage.INSTRUCTIONS_SECTION: return createInstructionsSection();
-			case Mu2consolPackage.HOSPITAL_ADMISSION_DIAGNOSIS_SECTION: return createHospitalAdmissionDiagnosisSection();
-			case Mu2consolPackage.HOSPITAL_DISCHARGE_DIAGNOSIS_SECTION: return createHospitalDischargeDiagnosisSection();
 			case Mu2consolPackage.MEDICATIONS_ADMINISTERED_SECTION: return createMedicationsAdministeredSection();
 			case Mu2consolPackage.CLINICAL_OFFICE_VISIT_SUMMARY: return createClinicalOfficeVisitSummary();
 			case Mu2consolPackage.TRANSITION_OF_CARE_AMBULATORY_SUMMARY: return createTransitionOfCareAmbulatorySummary();
@@ -123,8 +115,7 @@ public class Mu2consolFactoryImpl extends EFactoryImpl implements
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @generated
 	 */
 	public EncountersSection createEncountersSection() {
@@ -133,8 +124,7 @@ public class Mu2consolFactoryImpl extends EFactoryImpl implements
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @generated
 	 */
 	public EncounterActivities createEncounterActivities() {
@@ -188,8 +178,7 @@ public class Mu2consolFactoryImpl extends EFactoryImpl implements
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @generated
 	 */
 	public TransitionOfCareInpatientSummary createTransitionOfCareInpatientSummary() {
@@ -198,8 +187,7 @@ public class Mu2consolFactoryImpl extends EFactoryImpl implements
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @generated
 	 */
 	public ViewDownloadTransmitSummary createViewDownloadTransmitSummary() {
@@ -208,8 +196,7 @@ public class Mu2consolFactoryImpl extends EFactoryImpl implements
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @generated
 	 */
 	public VDTInpatientSummary createVDTInpatientSummary() {
@@ -218,8 +205,7 @@ public class Mu2consolFactoryImpl extends EFactoryImpl implements
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @generated
 	 */
 	public VDTAmbulatorySummary createVDTAmbulatorySummary() {
@@ -228,8 +214,7 @@ public class Mu2consolFactoryImpl extends EFactoryImpl implements
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @generated
 	 */
 	public ResultObservation createResultObservation() {
@@ -238,8 +223,7 @@ public class Mu2consolFactoryImpl extends EFactoryImpl implements
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @generated
 	 */
 	public ProceduresSection createProceduresSection() {
@@ -248,8 +232,7 @@ public class Mu2consolFactoryImpl extends EFactoryImpl implements
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @generated
 	 */
 	public ProcedureActivityProcedure createProcedureActivityProcedure() {
@@ -258,8 +241,7 @@ public class Mu2consolFactoryImpl extends EFactoryImpl implements
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @generated
 	 */
 	public ResultOrganizer createResultOrganizer() {
@@ -268,8 +250,7 @@ public class Mu2consolFactoryImpl extends EFactoryImpl implements
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @generated
 	 */
 	public ResultsSection createResultsSection() {
@@ -284,42 +265,6 @@ public class Mu2consolFactoryImpl extends EFactoryImpl implements
 	public AssessmentSection createAssessmentSection() {
 		AssessmentSectionImpl assessmentSection = new AssessmentSectionImpl();
 		return assessmentSection;
-	}
-
-	/**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @generated
-	 */
-	public HospitalAdmissionDiagnosisSection createHospitalAdmissionDiagnosisSection() {
-		HospitalAdmissionDiagnosisSectionImpl hospitalAdmissionDiagnosisSection = new HospitalAdmissionDiagnosisSectionImpl();
-		return hospitalAdmissionDiagnosisSection;
-	}
-
-	/**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @generated
-	 */
-	public HospitalDischargeDiagnosisSection createHospitalDischargeDiagnosisSection() {
-		HospitalDischargeDiagnosisSectionImpl hospitalDischargeDiagnosisSection = new HospitalDischargeDiagnosisSectionImpl();
-		return hospitalDischargeDiagnosisSection;
-	}
-
-	/**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @generated
-	 */
-	public PostoperativeDiagnosisSection createPostoperativeDiagnosisSection() {
-		PostoperativeDiagnosisSectionImpl postoperativeDiagnosisSection = new PostoperativeDiagnosisSectionImpl();
-		return postoperativeDiagnosisSection;
-	}
-
-	/**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @generated
-	 */
-	public PostprocedureDiagnosisSection createPostprocedureDiagnosisSection() {
-		PostprocedureDiagnosisSectionImpl postprocedureDiagnosisSection = new PostprocedureDiagnosisSectionImpl();
-		return postprocedureDiagnosisSection;
 	}
 
 	/**
@@ -359,8 +304,7 @@ public class Mu2consolFactoryImpl extends EFactoryImpl implements
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @generated
 	 */
 	public SmokingStatusObservation createSmokingStatusObservation() {

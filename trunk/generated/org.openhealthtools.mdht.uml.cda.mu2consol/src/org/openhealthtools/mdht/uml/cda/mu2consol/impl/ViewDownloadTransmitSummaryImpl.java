@@ -33,18 +33,17 @@ import org.openhealthtools.mdht.uml.cda.mu2consol.ViewDownloadTransmitSummary;
 import org.openhealthtools.mdht.uml.cda.mu2consol.operations.ViewDownloadTransmitSummaryOperations;
 
 /**
- * <!-- begin-user-doc -->
- * An implementation of the model object '<em><b>View Download Transmit Summary</b></em>'.
- * <!-- end-user-doc -->
+ * <!-- begin-user-doc --> An implementation of the model object '
+ * <em><b>View Download Transmit Summary</b></em>'. <!-- end-user-doc -->
  * <p>
  * </p>
  *
  * @generated
  */
-public class ViewDownloadTransmitSummaryImpl extends GeneralHeaderConstraintsImpl implements ViewDownloadTransmitSummary {
+public class ViewDownloadTransmitSummaryImpl extends
+		GeneralHeaderConstraintsImpl implements ViewDownloadTransmitSummary {
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @generated
 	 */
 	protected ViewDownloadTransmitSummaryImpl() {
@@ -52,8 +51,7 @@ public class ViewDownloadTransmitSummaryImpl extends GeneralHeaderConstraintsImp
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @generated
 	 */
 	@Override
@@ -62,143 +60,142 @@ public class ViewDownloadTransmitSummaryImpl extends GeneralHeaderConstraintsImp
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateViewDownloadTransmitSummaryCarePlanFields(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateViewDownloadTransmitSummaryCarePlanFields(
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ViewDownloadTransmitSummaryOperations.validateViewDownloadTransmitSummaryCarePlanFields(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateViewDownloadTransmitSummaryAllergiesSection(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateViewDownloadTransmitSummaryAllergiesSection(
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ViewDownloadTransmitSummaryOperations.validateViewDownloadTransmitSummaryAllergiesSection(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateViewDownloadTransmitSummaryMedicationsSection(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateViewDownloadTransmitSummaryMedicationsSection(
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ViewDownloadTransmitSummaryOperations.validateViewDownloadTransmitSummaryMedicationsSection(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateViewDownloadTransmitSummaryProblemSection(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateViewDownloadTransmitSummaryProblemSection(
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ViewDownloadTransmitSummaryOperations.validateViewDownloadTransmitSummaryProblemSection(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateViewDownloadTransmitSummaryProceduresSection(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateViewDownloadTransmitSummaryProceduresSection(
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ViewDownloadTransmitSummaryOperations.validateViewDownloadTransmitSummaryProceduresSection(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateViewDownloadTransmitSummaryVitalSignsSection(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateViewDownloadTransmitSummaryVitalSignsSection(
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ViewDownloadTransmitSummaryOperations.validateViewDownloadTransmitSummaryVitalSignsSection(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateViewDownloadTransmitSummaryResultsSection(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateViewDownloadTransmitSummaryResultsSection(
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ViewDownloadTransmitSummaryOperations.validateViewDownloadTransmitSummaryResultsSection(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateViewDownloadTransmitSummaryPlanOfCareSection(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateViewDownloadTransmitSummaryPlanOfCareSection(
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ViewDownloadTransmitSummaryOperations.validateViewDownloadTransmitSummaryPlanOfCareSection(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateViewDownloadTransmitSummarySocialHistorySection(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateViewDownloadTransmitSummarySocialHistorySection(
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ViewDownloadTransmitSummaryOperations.validateViewDownloadTransmitSummarySocialHistorySection(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateViewDownloadTransmitSummaryAssessmentAndPlanSectionTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateViewDownloadTransmitSummaryAssessmentAndPlanSectionTemplateId(
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ViewDownloadTransmitSummaryOperations.validateViewDownloadTransmitSummaryAssessmentAndPlanSectionTemplateId(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateViewDownloadTransmitSummaryMu2consolPlanOfCareSectionCarePlanningForPlanOfCare(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateViewDownloadTransmitSummaryMu2consolPlanOfCareSectionCarePlanningForPlanOfCare(
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ViewDownloadTransmitSummaryOperations.validateViewDownloadTransmitSummaryMu2consolPlanOfCareSectionCarePlanningForPlanOfCare(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateViewDownloadTransmitSummaryMu2consolPlanOfCareSectionPlanOfCareActivityObservation(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateViewDownloadTransmitSummaryMu2consolPlanOfCareSectionPlanOfCareActivityObservation(
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ViewDownloadTransmitSummaryOperations.validateViewDownloadTransmitSummaryMu2consolPlanOfCareSectionPlanOfCareActivityObservation(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateViewDownloadTransmitSummaryPlanOfCareSectionTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateViewDownloadTransmitSummaryPlanOfCareSectionTemplateId(
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ViewDownloadTransmitSummaryOperations.validateViewDownloadTransmitSummaryPlanOfCareSectionTemplateId(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateViewDownloadTransmitSummarySocialHistorySectionTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateViewDownloadTransmitSummarySocialHistorySectionTemplateId(
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ViewDownloadTransmitSummaryOperations.validateViewDownloadTransmitSummarySocialHistorySectionTemplateId(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateViewDownloadTransmitSummaryMu2consolSocialHistorySectionSmokingStatusObservation(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateViewDownloadTransmitSummaryMu2consolSocialHistorySectionSmokingStatusObservation(
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ViewDownloadTransmitSummaryOperations.validateViewDownloadTransmitSummaryMu2consolSocialHistorySectionSmokingStatusObservation(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @generated
 	 */
 	public AllergiesSection getAllergiesSection() {
@@ -206,8 +203,7 @@ public class ViewDownloadTransmitSummaryImpl extends GeneralHeaderConstraintsImp
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @generated
 	 */
 	public MedicationsSection getMedicationsSection() {
@@ -215,8 +211,7 @@ public class ViewDownloadTransmitSummaryImpl extends GeneralHeaderConstraintsImp
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @generated
 	 */
 	public ProblemSection getProblemSection() {
@@ -224,8 +219,7 @@ public class ViewDownloadTransmitSummaryImpl extends GeneralHeaderConstraintsImp
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @generated
 	 */
 	public ProceduresSection getProceduresSection() {
@@ -233,8 +227,7 @@ public class ViewDownloadTransmitSummaryImpl extends GeneralHeaderConstraintsImp
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @generated
 	 */
 	public VitalSignsSection getVitalSignsSection() {
@@ -242,8 +235,7 @@ public class ViewDownloadTransmitSummaryImpl extends GeneralHeaderConstraintsImp
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @generated
 	 */
 	public ResultsSection getResultsSection() {
@@ -251,8 +243,7 @@ public class ViewDownloadTransmitSummaryImpl extends GeneralHeaderConstraintsImp
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @generated
 	 */
 	public AssessmentAndPlanSection getAssessmentAndPlanSection() {
@@ -260,8 +251,7 @@ public class ViewDownloadTransmitSummaryImpl extends GeneralHeaderConstraintsImp
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @generated
 	 */
 	public PlanOfCareSection getPlanOfCareSection() {
@@ -269,8 +259,7 @@ public class ViewDownloadTransmitSummaryImpl extends GeneralHeaderConstraintsImp
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @generated
 	 */
 	public SocialHistorySection getSocialHistorySection() {
@@ -278,22 +267,22 @@ public class ViewDownloadTransmitSummaryImpl extends GeneralHeaderConstraintsImp
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @generated
 	 */
 	@Override
 	public ViewDownloadTransmitSummary init() {
 	    return Initializer.Util.init(this);
 	}
-    /**
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+
+	/**
+     * <!-- begin-user-doc --> <!-- end-user-doc -->
      * @generated
      */
-    @Override
-	public ViewDownloadTransmitSummary init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+	@Override
+	public ViewDownloadTransmitSummary init(
+			Iterable<? extends Initializer<? extends EObject>> initializers) {
         Initializer.Util.init(this, initializers);
         return this;
     }
-} //ViewDownloadTransmitSummaryImpl
+} // ViewDownloadTransmitSummaryImpl

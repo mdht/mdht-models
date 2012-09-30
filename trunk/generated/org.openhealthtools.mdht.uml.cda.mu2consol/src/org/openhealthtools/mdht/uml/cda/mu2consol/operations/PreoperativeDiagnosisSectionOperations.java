@@ -121,9 +121,11 @@ public class PreoperativeDiagnosisSectionOperations
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #getMu2consolPreoperativeDiagnosis(PreoperativeDiagnosisSection) <em>Get Mu2consol Preoperative Diagnosis</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * The cached OCL expression body for the '
+	 * {@link #getMu2consolPreoperativeDiagnosis(PreoperativeDiagnosisSection)
+	 * <em>Get Mu2consol Preoperative Diagnosis</em>}' operation. <!--
+	 * begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @see #getMu2consolPreoperativeDiagnosis(PreoperativeDiagnosisSection)
 	 * @generated
 	 * @ordered
@@ -131,9 +133,11 @@ public class PreoperativeDiagnosisSectionOperations
 	protected static final String GET_MU2CONSOL_PREOPERATIVE_DIAGNOSIS__EOCL_EXP = "self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(consol::PreoperativeDiagnosis))->asSequence()->any(true).oclAsType(consol::PreoperativeDiagnosis)";
 
 	/**
-	 * The cached OCL query for the '{@link #getMu2consolPreoperativeDiagnosis(PreoperativeDiagnosisSection) <em>Get Mu2consol Preoperative Diagnosis</em>}' query operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * The cached OCL query for the '
+	 * {@link #getMu2consolPreoperativeDiagnosis(PreoperativeDiagnosisSection)
+	 * <em>Get Mu2consol Preoperative Diagnosis</em>}' query operation. <!--
+	 * begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @see #getMu2consolPreoperativeDiagnosis(PreoperativeDiagnosisSection)
 	 * @generated
 	 * @ordered
@@ -141,16 +145,20 @@ public class PreoperativeDiagnosisSectionOperations
 	protected static OCLExpression<EClassifier> GET_MU2CONSOL_PREOPERATIVE_DIAGNOSIS__EOCL_QRY;
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(consol::PreoperativeDiagnosis))->asSequence()->any(true).oclAsType(consol::PreoperativeDiagnosis)
-	 * @param preoperativeDiagnosisSection The receiving '<em><b>Preoperative Diagnosis Section</b></em>' model object.
-	 * <!-- end-model-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc --> <!-- begin-model-doc -->
+	 * self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and
+	 * act.oclIsKindOf
+	 * (consol::PreoperativeDiagnosis))->asSequence()->any(true).oclAsType
+	 * (consol::PreoperativeDiagnosis)
+	 * 
+	 * @param preoperativeDiagnosisSection
+	 *            The receiving '<em><b>Preoperative Diagnosis Section</b></em>'
+	 *            model object. <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  PreoperativeDiagnosis getMu2consolPreoperativeDiagnosis(PreoperativeDiagnosisSection preoperativeDiagnosisSection) {
+
+	public static PreoperativeDiagnosis getMu2consolPreoperativeDiagnosis(
+			PreoperativeDiagnosisSection preoperativeDiagnosisSection) {
 		if (GET_MU2CONSOL_PREOPERATIVE_DIAGNOSIS__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(Mu2consolPackage.Literals.PREOPERATIVE_DIAGNOSIS_SECTION, Mu2consolPackage.Literals.PREOPERATIVE_DIAGNOSIS_SECTION.getEAllOperations().get(63));

@@ -41,8 +41,8 @@ import org.openhealthtools.mdht.uml.cda.mu2consol.ViewDownloadTransmitSummary;
 import org.openhealthtools.mdht.uml.cda.mu2consol.util.Mu2consolValidator;
 
 /**
- * <!-- begin-user-doc -->
- * A static utility class that provides operations related to '<em><b>View Download Transmit Summary</b></em>' model objects.
+ * <!-- begin-user-doc --> A static utility class that provides operations
+ * related to '<em><b>View Download Transmit Summary</b></em>' model objects.
  * <!-- end-user-doc -->
  *
  * <p>
@@ -77,10 +77,10 @@ import org.openhealthtools.mdht.uml.cda.mu2consol.util.Mu2consolValidator;
  *
  * @generated
  */
-public class ViewDownloadTransmitSummaryOperations extends GeneralHeaderConstraintsOperations {
+public class ViewDownloadTransmitSummaryOperations extends
+		GeneralHeaderConstraintsOperations {
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @generated
 	 */
 	protected ViewDownloadTransmitSummaryOperations() {
@@ -89,8 +89,7 @@ public class ViewDownloadTransmitSummaryOperations extends GeneralHeaderConstrai
 
 	/**
 	 * The cached OCL expression body for the '{@link #validateViewDownloadTransmitSummaryCarePlanFields(ViewDownloadTransmitSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate View Download Transmit Summary Care Plan Fields</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @see #validateViewDownloadTransmitSummaryCarePlanFields(ViewDownloadTransmitSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	 * @generated
 	 * @ordered
@@ -100,30 +99,35 @@ public class ViewDownloadTransmitSummaryOperations extends GeneralHeaderConstrai
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateViewDownloadTransmitSummaryCarePlanFields(ViewDownloadTransmitSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate View Download Transmit Summary Care Plan Fields</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @see #validateViewDownloadTransmitSummaryCarePlanFields(ViewDownloadTransmitSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	 * @generated
 	 * @ordered
 	 */
-	
+
 	protected static Constraint VALIDATE_VIEW_DOWNLOAD_TRANSMIT_SUMMARY_CARE_PLAN_FIELDS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-	
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * (self.getAllSections()->one(s : cda::Section | not s.oclIsUndefined() and s.oclIsTypeOf(mu2consol::PlanOfCareSection)) or 
-	 * self.getAllSections()->one(s : cda::Section | not s.oclIsUndefined() and s.oclIsTypeOf(mu2consol::AssessmentAndPlanSection)))
-	 * @param viewDownloadTransmitSummary The receiving '<em><b>View Download Transmit Summary</b></em>' model object.
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc --> <!-- begin-model-doc -->
+	 * (self.getAllSections()->one(s : cda::Section | not s.oclIsUndefined() and
+	 * s.oclIsTypeOf(mu2consol::PlanOfCareSection)) or
+	 * self.getAllSections()->one(s : cda::Section | not s.oclIsUndefined() and
+	 * s.oclIsTypeOf(mu2consol::AssessmentAndPlanSection)))
+	 * 
+	 * @param viewDownloadTransmitSummary
+	 *            The receiving '<em><b>View Download Transmit Summary</b></em>'
+	 *            model object.
+	 * @param diagnostics
+	 *            The chain of diagnostics to which problems are to be appended.
+	 * @param context
+	 *            The cache of context-specific information. <!-- end-model-doc
+	 *            -->
 	 * @generated
 	 */
-	
-	public static  boolean validateViewDownloadTransmitSummaryCarePlanFields(ViewDownloadTransmitSummary viewDownloadTransmitSummary, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+	public static boolean validateViewDownloadTransmitSummaryCarePlanFields(
+			ViewDownloadTransmitSummary viewDownloadTransmitSummary,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
   	  
 		if (VALIDATE_VIEW_DOWNLOAD_TRANSMIT_SUMMARY_CARE_PLAN_FIELDS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
@@ -153,8 +157,7 @@ public class ViewDownloadTransmitSummaryOperations extends GeneralHeaderConstrai
 
 	/**
 	 * The cached OCL expression body for the '{@link #validateViewDownloadTransmitSummaryAllergiesSection(ViewDownloadTransmitSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate View Download Transmit Summary Allergies Section</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @see #validateViewDownloadTransmitSummaryAllergiesSection(ViewDownloadTransmitSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	 * @generated
 	 * @ordered
@@ -163,29 +166,34 @@ public class ViewDownloadTransmitSummaryOperations extends GeneralHeaderConstrai
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateViewDownloadTransmitSummaryAllergiesSection(ViewDownloadTransmitSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate View Download Transmit Summary Allergies Section</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @see #validateViewDownloadTransmitSummaryAllergiesSection(ViewDownloadTransmitSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	 * @generated
 	 * @ordered
 	 */
-	
+
 	protected static Constraint VALIDATE_VIEW_DOWNLOAD_TRANSMIT_SUMMARY_ALLERGIES_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-	
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::AllergiesSection))
-	 * @param viewDownloadTransmitSummary The receiving '<em><b>View Download Transmit Summary</b></em>' model object.
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc --> <!-- begin-model-doc -->
+	 * self.getAllSections()->one(section : cda::Section | not
+	 * section.oclIsUndefined() and
+	 * section.oclIsKindOf(consol::AllergiesSection))
+	 * 
+	 * @param viewDownloadTransmitSummary
+	 *            The receiving '<em><b>View Download Transmit Summary</b></em>'
+	 *            model object.
+	 * @param diagnostics
+	 *            The chain of diagnostics to which problems are to be appended.
+	 * @param context
+	 *            The cache of context-specific information. <!-- end-model-doc
+	 *            -->
 	 * @generated
 	 */
-	
-	public static  boolean validateViewDownloadTransmitSummaryAllergiesSection(ViewDownloadTransmitSummary viewDownloadTransmitSummary, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+	public static boolean validateViewDownloadTransmitSummaryAllergiesSection(
+			ViewDownloadTransmitSummary viewDownloadTransmitSummary,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
   	  
 		if (VALIDATE_VIEW_DOWNLOAD_TRANSMIT_SUMMARY_ALLERGIES_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
@@ -215,8 +223,7 @@ public class ViewDownloadTransmitSummaryOperations extends GeneralHeaderConstrai
 
 	/**
 	 * The cached OCL expression body for the '{@link #validateViewDownloadTransmitSummaryMedicationsSection(ViewDownloadTransmitSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate View Download Transmit Summary Medications Section</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @see #validateViewDownloadTransmitSummaryMedicationsSection(ViewDownloadTransmitSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	 * @generated
 	 * @ordered
@@ -225,29 +232,34 @@ public class ViewDownloadTransmitSummaryOperations extends GeneralHeaderConstrai
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateViewDownloadTransmitSummaryMedicationsSection(ViewDownloadTransmitSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate View Download Transmit Summary Medications Section</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @see #validateViewDownloadTransmitSummaryMedicationsSection(ViewDownloadTransmitSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	 * @generated
 	 * @ordered
 	 */
-	
+
 	protected static Constraint VALIDATE_VIEW_DOWNLOAD_TRANSMIT_SUMMARY_MEDICATIONS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-	
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::MedicationsSection))
-	 * @param viewDownloadTransmitSummary The receiving '<em><b>View Download Transmit Summary</b></em>' model object.
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc --> <!-- begin-model-doc -->
+	 * self.getAllSections()->one(section : cda::Section | not
+	 * section.oclIsUndefined() and
+	 * section.oclIsKindOf(consol::MedicationsSection))
+	 * 
+	 * @param viewDownloadTransmitSummary
+	 *            The receiving '<em><b>View Download Transmit Summary</b></em>'
+	 *            model object.
+	 * @param diagnostics
+	 *            The chain of diagnostics to which problems are to be appended.
+	 * @param context
+	 *            The cache of context-specific information. <!-- end-model-doc
+	 *            -->
 	 * @generated
 	 */
-	
-	public static  boolean validateViewDownloadTransmitSummaryMedicationsSection(ViewDownloadTransmitSummary viewDownloadTransmitSummary, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+	public static boolean validateViewDownloadTransmitSummaryMedicationsSection(
+			ViewDownloadTransmitSummary viewDownloadTransmitSummary,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
   	  
 		if (VALIDATE_VIEW_DOWNLOAD_TRANSMIT_SUMMARY_MEDICATIONS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
@@ -277,8 +289,7 @@ public class ViewDownloadTransmitSummaryOperations extends GeneralHeaderConstrai
 
 	/**
 	 * The cached OCL expression body for the '{@link #validateViewDownloadTransmitSummaryProblemSection(ViewDownloadTransmitSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate View Download Transmit Summary Problem Section</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @see #validateViewDownloadTransmitSummaryProblemSection(ViewDownloadTransmitSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	 * @generated
 	 * @ordered
@@ -287,29 +298,33 @@ public class ViewDownloadTransmitSummaryOperations extends GeneralHeaderConstrai
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateViewDownloadTransmitSummaryProblemSection(ViewDownloadTransmitSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate View Download Transmit Summary Problem Section</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @see #validateViewDownloadTransmitSummaryProblemSection(ViewDownloadTransmitSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	 * @generated
 	 * @ordered
 	 */
-	
+
 	protected static Constraint VALIDATE_VIEW_DOWNLOAD_TRANSMIT_SUMMARY_PROBLEM_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-	
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::ProblemSection))
-	 * @param viewDownloadTransmitSummary The receiving '<em><b>View Download Transmit Summary</b></em>' model object.
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc --> <!-- begin-model-doc -->
+	 * self.getAllSections()->one(section : cda::Section | not
+	 * section.oclIsUndefined() and section.oclIsKindOf(consol::ProblemSection))
+	 * 
+	 * @param viewDownloadTransmitSummary
+	 *            The receiving '<em><b>View Download Transmit Summary</b></em>'
+	 *            model object.
+	 * @param diagnostics
+	 *            The chain of diagnostics to which problems are to be appended.
+	 * @param context
+	 *            The cache of context-specific information. <!-- end-model-doc
+	 *            -->
 	 * @generated
 	 */
-	
-	public static  boolean validateViewDownloadTransmitSummaryProblemSection(ViewDownloadTransmitSummary viewDownloadTransmitSummary, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+	public static boolean validateViewDownloadTransmitSummaryProblemSection(
+			ViewDownloadTransmitSummary viewDownloadTransmitSummary,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
   	  
 		if (VALIDATE_VIEW_DOWNLOAD_TRANSMIT_SUMMARY_PROBLEM_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
@@ -339,8 +354,7 @@ public class ViewDownloadTransmitSummaryOperations extends GeneralHeaderConstrai
 
 	/**
 	 * The cached OCL expression body for the '{@link #validateViewDownloadTransmitSummaryProceduresSection(ViewDownloadTransmitSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate View Download Transmit Summary Procedures Section</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @see #validateViewDownloadTransmitSummaryProceduresSection(ViewDownloadTransmitSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	 * @generated
 	 * @ordered
@@ -349,29 +363,34 @@ public class ViewDownloadTransmitSummaryOperations extends GeneralHeaderConstrai
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateViewDownloadTransmitSummaryProceduresSection(ViewDownloadTransmitSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate View Download Transmit Summary Procedures Section</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @see #validateViewDownloadTransmitSummaryProceduresSection(ViewDownloadTransmitSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	 * @generated
 	 * @ordered
 	 */
-	
+
 	protected static Constraint VALIDATE_VIEW_DOWNLOAD_TRANSMIT_SUMMARY_PROCEDURES_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-	
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(mu2consol::ProceduresSection))
-	 * @param viewDownloadTransmitSummary The receiving '<em><b>View Download Transmit Summary</b></em>' model object.
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc --> <!-- begin-model-doc -->
+	 * self.getAllSections()->one(section : cda::Section | not
+	 * section.oclIsUndefined() and
+	 * section.oclIsKindOf(mu2consol::ProceduresSection))
+	 * 
+	 * @param viewDownloadTransmitSummary
+	 *            The receiving '<em><b>View Download Transmit Summary</b></em>'
+	 *            model object.
+	 * @param diagnostics
+	 *            The chain of diagnostics to which problems are to be appended.
+	 * @param context
+	 *            The cache of context-specific information. <!-- end-model-doc
+	 *            -->
 	 * @generated
 	 */
-	
-	public static  boolean validateViewDownloadTransmitSummaryProceduresSection(ViewDownloadTransmitSummary viewDownloadTransmitSummary, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+	public static boolean validateViewDownloadTransmitSummaryProceduresSection(
+			ViewDownloadTransmitSummary viewDownloadTransmitSummary,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
   	  
 		if (VALIDATE_VIEW_DOWNLOAD_TRANSMIT_SUMMARY_PROCEDURES_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
@@ -401,8 +420,7 @@ public class ViewDownloadTransmitSummaryOperations extends GeneralHeaderConstrai
 
 	/**
 	 * The cached OCL expression body for the '{@link #validateViewDownloadTransmitSummaryVitalSignsSection(ViewDownloadTransmitSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate View Download Transmit Summary Vital Signs Section</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @see #validateViewDownloadTransmitSummaryVitalSignsSection(ViewDownloadTransmitSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	 * @generated
 	 * @ordered
@@ -411,29 +429,34 @@ public class ViewDownloadTransmitSummaryOperations extends GeneralHeaderConstrai
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateViewDownloadTransmitSummaryVitalSignsSection(ViewDownloadTransmitSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate View Download Transmit Summary Vital Signs Section</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @see #validateViewDownloadTransmitSummaryVitalSignsSection(ViewDownloadTransmitSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	 * @generated
 	 * @ordered
 	 */
-	
+
 	protected static Constraint VALIDATE_VIEW_DOWNLOAD_TRANSMIT_SUMMARY_VITAL_SIGNS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-	
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::VitalSignsSection))
-	 * @param viewDownloadTransmitSummary The receiving '<em><b>View Download Transmit Summary</b></em>' model object.
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc --> <!-- begin-model-doc -->
+	 * self.getAllSections()->one(section : cda::Section | not
+	 * section.oclIsUndefined() and
+	 * section.oclIsKindOf(consol::VitalSignsSection))
+	 * 
+	 * @param viewDownloadTransmitSummary
+	 *            The receiving '<em><b>View Download Transmit Summary</b></em>'
+	 *            model object.
+	 * @param diagnostics
+	 *            The chain of diagnostics to which problems are to be appended.
+	 * @param context
+	 *            The cache of context-specific information. <!-- end-model-doc
+	 *            -->
 	 * @generated
 	 */
-	
-	public static  boolean validateViewDownloadTransmitSummaryVitalSignsSection(ViewDownloadTransmitSummary viewDownloadTransmitSummary, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+	public static boolean validateViewDownloadTransmitSummaryVitalSignsSection(
+			ViewDownloadTransmitSummary viewDownloadTransmitSummary,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
   	  
 		if (VALIDATE_VIEW_DOWNLOAD_TRANSMIT_SUMMARY_VITAL_SIGNS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
@@ -463,8 +486,7 @@ public class ViewDownloadTransmitSummaryOperations extends GeneralHeaderConstrai
 
 	/**
 	 * The cached OCL expression body for the '{@link #validateViewDownloadTransmitSummaryResultsSection(ViewDownloadTransmitSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate View Download Transmit Summary Results Section</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @see #validateViewDownloadTransmitSummaryResultsSection(ViewDownloadTransmitSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	 * @generated
 	 * @ordered
@@ -473,29 +495,34 @@ public class ViewDownloadTransmitSummaryOperations extends GeneralHeaderConstrai
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateViewDownloadTransmitSummaryResultsSection(ViewDownloadTransmitSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate View Download Transmit Summary Results Section</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @see #validateViewDownloadTransmitSummaryResultsSection(ViewDownloadTransmitSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	 * @generated
 	 * @ordered
 	 */
-	
+
 	protected static Constraint VALIDATE_VIEW_DOWNLOAD_TRANSMIT_SUMMARY_RESULTS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-	
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(mu2consol::ResultsSection))
-	 * @param viewDownloadTransmitSummary The receiving '<em><b>View Download Transmit Summary</b></em>' model object.
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc --> <!-- begin-model-doc -->
+	 * self.getAllSections()->one(section : cda::Section | not
+	 * section.oclIsUndefined() and
+	 * section.oclIsKindOf(mu2consol::ResultsSection))
+	 * 
+	 * @param viewDownloadTransmitSummary
+	 *            The receiving '<em><b>View Download Transmit Summary</b></em>'
+	 *            model object.
+	 * @param diagnostics
+	 *            The chain of diagnostics to which problems are to be appended.
+	 * @param context
+	 *            The cache of context-specific information. <!-- end-model-doc
+	 *            -->
 	 * @generated
 	 */
-	
-	public static  boolean validateViewDownloadTransmitSummaryResultsSection(ViewDownloadTransmitSummary viewDownloadTransmitSummary, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+	public static boolean validateViewDownloadTransmitSummaryResultsSection(
+			ViewDownloadTransmitSummary viewDownloadTransmitSummary,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
   	  
 		if (VALIDATE_VIEW_DOWNLOAD_TRANSMIT_SUMMARY_RESULTS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
@@ -525,8 +552,7 @@ public class ViewDownloadTransmitSummaryOperations extends GeneralHeaderConstrai
 
 	/**
 	 * The cached OCL expression body for the '{@link #validateViewDownloadTransmitSummaryPlanOfCareSection(ViewDownloadTransmitSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate View Download Transmit Summary Plan Of Care Section</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @see #validateViewDownloadTransmitSummaryPlanOfCareSection(ViewDownloadTransmitSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	 * @generated
 	 * @ordered
@@ -535,29 +561,34 @@ public class ViewDownloadTransmitSummaryOperations extends GeneralHeaderConstrai
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateViewDownloadTransmitSummaryPlanOfCareSection(ViewDownloadTransmitSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate View Download Transmit Summary Plan Of Care Section</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @see #validateViewDownloadTransmitSummaryPlanOfCareSection(ViewDownloadTransmitSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	 * @generated
 	 * @ordered
 	 */
-	
+
 	protected static Constraint VALIDATE_VIEW_DOWNLOAD_TRANSMIT_SUMMARY_PLAN_OF_CARE_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-	
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(mu2consol::PlanOfCareSection))
-	 * @param viewDownloadTransmitSummary The receiving '<em><b>View Download Transmit Summary</b></em>' model object.
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc --> <!-- begin-model-doc -->
+	 * self.getAllSections()->one(section : cda::Section | not
+	 * section.oclIsUndefined() and
+	 * section.oclIsKindOf(mu2consol::PlanOfCareSection))
+	 * 
+	 * @param viewDownloadTransmitSummary
+	 *            The receiving '<em><b>View Download Transmit Summary</b></em>'
+	 *            model object.
+	 * @param diagnostics
+	 *            The chain of diagnostics to which problems are to be appended.
+	 * @param context
+	 *            The cache of context-specific information. <!-- end-model-doc
+	 *            -->
 	 * @generated
 	 */
-	
-	public static  boolean validateViewDownloadTransmitSummaryPlanOfCareSection(ViewDownloadTransmitSummary viewDownloadTransmitSummary, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+	public static boolean validateViewDownloadTransmitSummaryPlanOfCareSection(
+			ViewDownloadTransmitSummary viewDownloadTransmitSummary,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
   	  
 		if (VALIDATE_VIEW_DOWNLOAD_TRANSMIT_SUMMARY_PLAN_OF_CARE_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
@@ -587,8 +618,7 @@ public class ViewDownloadTransmitSummaryOperations extends GeneralHeaderConstrai
 
 	/**
 	 * The cached OCL expression body for the '{@link #validateViewDownloadTransmitSummarySocialHistorySection(ViewDownloadTransmitSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate View Download Transmit Summary Social History Section</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @see #validateViewDownloadTransmitSummarySocialHistorySection(ViewDownloadTransmitSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	 * @generated
 	 * @ordered
@@ -597,29 +627,34 @@ public class ViewDownloadTransmitSummaryOperations extends GeneralHeaderConstrai
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateViewDownloadTransmitSummarySocialHistorySection(ViewDownloadTransmitSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate View Download Transmit Summary Social History Section</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @see #validateViewDownloadTransmitSummarySocialHistorySection(ViewDownloadTransmitSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	 * @generated
 	 * @ordered
 	 */
-	
+
 	protected static Constraint VALIDATE_VIEW_DOWNLOAD_TRANSMIT_SUMMARY_SOCIAL_HISTORY_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-	
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(mu2consol::SocialHistorySection))
-	 * @param viewDownloadTransmitSummary The receiving '<em><b>View Download Transmit Summary</b></em>' model object.
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc --> <!-- begin-model-doc -->
+	 * self.getAllSections()->one(section : cda::Section | not
+	 * section.oclIsUndefined() and
+	 * section.oclIsKindOf(mu2consol::SocialHistorySection))
+	 * 
+	 * @param viewDownloadTransmitSummary
+	 *            The receiving '<em><b>View Download Transmit Summary</b></em>'
+	 *            model object.
+	 * @param diagnostics
+	 *            The chain of diagnostics to which problems are to be appended.
+	 * @param context
+	 *            The cache of context-specific information. <!-- end-model-doc
+	 *            -->
 	 * @generated
 	 */
-	
-	public static  boolean validateViewDownloadTransmitSummarySocialHistorySection(ViewDownloadTransmitSummary viewDownloadTransmitSummary, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+	public static boolean validateViewDownloadTransmitSummarySocialHistorySection(
+			ViewDownloadTransmitSummary viewDownloadTransmitSummary,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
   	  
 		if (VALIDATE_VIEW_DOWNLOAD_TRANSMIT_SUMMARY_SOCIAL_HISTORY_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
@@ -649,8 +684,7 @@ public class ViewDownloadTransmitSummaryOperations extends GeneralHeaderConstrai
 
 	/**
 	 * The cached OCL expression body for the '{@link #validateViewDownloadTransmitSummaryAssessmentAndPlanSectionTemplateId(ViewDownloadTransmitSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate View Download Transmit Summary Assessment And Plan Section Template Id</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @see #validateViewDownloadTransmitSummaryAssessmentAndPlanSectionTemplateId(ViewDownloadTransmitSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	 * @generated
 	 * @ordered
@@ -659,29 +693,34 @@ public class ViewDownloadTransmitSummaryOperations extends GeneralHeaderConstrai
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateViewDownloadTransmitSummaryAssessmentAndPlanSectionTemplateId(ViewDownloadTransmitSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate View Download Transmit Summary Assessment And Plan Section Template Id</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @see #validateViewDownloadTransmitSummaryAssessmentAndPlanSectionTemplateId(ViewDownloadTransmitSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	 * @generated
 	 * @ordered
 	 */
-	
+
 	protected static Query<?, ?, ?> VALIDATE_VIEW_DOWNLOAD_TRANSMIT_SUMMARY_ASSESSMENT_AND_PLAN_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY;
-	
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.getAssessmentAndPlanSection()->excluding(null)->reject(getAssessmentAndPlanSection().templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.22.2.9'))
-	 * @param viewDownloadTransmitSummary The receiving '<em><b>View Download Transmit Summary</b></em>' model object.
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc --> <!-- begin-model-doc -->
+	 * self.getAssessmentAndPlanSection()->excluding(null)->reject(
+	 * getAssessmentAndPlanSection().templateId->exists(id : datatypes::II |
+	 * id.root = '2.16.840.1.113883.10.20.22.2.9'))
+	 * 
+	 * @param viewDownloadTransmitSummary
+	 *            The receiving '<em><b>View Download Transmit Summary</b></em>'
+	 *            model object.
+	 * @param diagnostics
+	 *            The chain of diagnostics to which problems are to be appended.
+	 * @param context
+	 *            The cache of context-specific information. <!-- end-model-doc
+	 *            -->
 	 * @generated
 	 */
 	@SuppressWarnings("unchecked")
-	public static  boolean validateViewDownloadTransmitSummaryAssessmentAndPlanSectionTemplateId(ViewDownloadTransmitSummary viewDownloadTransmitSummary, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public static boolean validateViewDownloadTransmitSummaryAssessmentAndPlanSectionTemplateId(
+			ViewDownloadTransmitSummary viewDownloadTransmitSummary,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
   	  
 		
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
@@ -717,8 +756,7 @@ public class ViewDownloadTransmitSummaryOperations extends GeneralHeaderConstrai
 
 	/**
 	 * The cached OCL expression body for the '{@link #validateViewDownloadTransmitSummaryMu2consolPlanOfCareSectionCarePlanningForPlanOfCare(ViewDownloadTransmitSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate View Download Transmit Summary Mu2consol Plan Of Care Section Care Planning For Plan Of Care</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @see #validateViewDownloadTransmitSummaryMu2consolPlanOfCareSectionCarePlanningForPlanOfCare(ViewDownloadTransmitSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	 * @generated
 	 * @ordered
@@ -727,29 +765,39 @@ public class ViewDownloadTransmitSummaryOperations extends GeneralHeaderConstrai
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateViewDownloadTransmitSummaryMu2consolPlanOfCareSectionCarePlanningForPlanOfCare(ViewDownloadTransmitSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate View Download Transmit Summary Mu2consol Plan Of Care Section Care Planning For Plan Of Care</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @see #validateViewDownloadTransmitSummaryMu2consolPlanOfCareSectionCarePlanningForPlanOfCare(ViewDownloadTransmitSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	 * @generated
 	 * @ordered
 	 */
-	
+
 	protected static Query<?, ?, ?> VALIDATE_VIEW_DOWNLOAD_TRANSMIT_SUMMARY_MU2CONSOL_PLAN_OF_CARE_SECTION_CARE_PLANNING_FOR_PLAN_OF_CARE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY;
 
-
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.getPlanOfCareSection()->excluding(null)->reject(getPlanOfCareSection().getActs()->exists(a : cda::Act | a.oclIsKindOf(consol::PlanOfCareActivityAct)) or getPlanOfCareSection().getObservations()->exists(o : cda::Observation | o.oclIsKindOf(consol::PlanOfCareActivityObservation)) or getPlanOfCareSection().getEncounters()->exists(e : cda::Encounter | e.oclIsKindOf(consol::PlanOfCareActivityEncounter)))
-	 * @param viewDownloadTransmitSummary The receiving '<em><b>View Download Transmit Summary</b></em>' model object.
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc --> <!-- begin-model-doc -->
+	 * self
+	 * .getPlanOfCareSection()->excluding(null)->reject(getPlanOfCareSection(
+	 * ).getActs()->exists(a : cda::Act |
+	 * a.oclIsKindOf(consol::PlanOfCareActivityAct)) or
+	 * getPlanOfCareSection().getObservations()->exists(o : cda::Observation |
+	 * o.oclIsKindOf(consol::PlanOfCareActivityObservation)) or
+	 * getPlanOfCareSection().getEncounters()->exists(e : cda::Encounter |
+	 * e.oclIsKindOf(consol::PlanOfCareActivityEncounter)))
+	 * 
+	 * @param viewDownloadTransmitSummary
+	 *            The receiving '<em><b>View Download Transmit Summary</b></em>'
+	 *            model object.
+	 * @param diagnostics
+	 *            The chain of diagnostics to which problems are to be appended.
+	 * @param context
+	 *            The cache of context-specific information. <!-- end-model-doc
+	 *            -->
 	 * @generated
 	 */
 	@SuppressWarnings("unchecked")
-	public static  boolean validateViewDownloadTransmitSummaryMu2consolPlanOfCareSectionCarePlanningForPlanOfCare(ViewDownloadTransmitSummary viewDownloadTransmitSummary, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public static boolean validateViewDownloadTransmitSummaryMu2consolPlanOfCareSectionCarePlanningForPlanOfCare(
+			ViewDownloadTransmitSummary viewDownloadTransmitSummary,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
   	  
 		
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
@@ -785,8 +833,7 @@ public class ViewDownloadTransmitSummaryOperations extends GeneralHeaderConstrai
 
 	/**
 	 * The cached OCL expression body for the '{@link #validateViewDownloadTransmitSummaryMu2consolPlanOfCareSectionPlanOfCareActivityObservation(ViewDownloadTransmitSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate View Download Transmit Summary Mu2consol Plan Of Care Section Plan Of Care Activity Observation</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @see #validateViewDownloadTransmitSummaryMu2consolPlanOfCareSectionPlanOfCareActivityObservation(ViewDownloadTransmitSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	 * @generated
 	 * @ordered
@@ -795,29 +842,36 @@ public class ViewDownloadTransmitSummaryOperations extends GeneralHeaderConstrai
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateViewDownloadTransmitSummaryMu2consolPlanOfCareSectionPlanOfCareActivityObservation(ViewDownloadTransmitSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate View Download Transmit Summary Mu2consol Plan Of Care Section Plan Of Care Activity Observation</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @see #validateViewDownloadTransmitSummaryMu2consolPlanOfCareSectionPlanOfCareActivityObservation(ViewDownloadTransmitSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	 * @generated
 	 * @ordered
 	 */
-	
+
 	protected static Query<?, ?, ?> VALIDATE_VIEW_DOWNLOAD_TRANSMIT_SUMMARY_MU2CONSOL_PLAN_OF_CARE_SECTION_PLAN_OF_CARE_ACTIVITY_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY;
 
-
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.getPlanOfCareSection()->excluding(null)->reject(getPlanOfCareSection().entry->exists(entry : cda::Entry | not entry.observation.oclIsUndefined() and entry.observation.oclIsKindOf(consol::PlanOfCareActivityObservation)))
-	 * @param viewDownloadTransmitSummary The receiving '<em><b>View Download Transmit Summary</b></em>' model object.
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc --> <!-- begin-model-doc -->
+	 * self
+	 * .getPlanOfCareSection()->excluding(null)->reject(getPlanOfCareSection(
+	 * ).entry->exists(entry : cda::Entry | not
+	 * entry.observation.oclIsUndefined() and
+	 * entry.observation.oclIsKindOf(consol::PlanOfCareActivityObservation)))
+	 * 
+	 * @param viewDownloadTransmitSummary
+	 *            The receiving '<em><b>View Download Transmit Summary</b></em>'
+	 *            model object.
+	 * @param diagnostics
+	 *            The chain of diagnostics to which problems are to be appended.
+	 * @param context
+	 *            The cache of context-specific information. <!-- end-model-doc
+	 *            -->
 	 * @generated
 	 */
 	@SuppressWarnings("unchecked")
-	public static  boolean validateViewDownloadTransmitSummaryMu2consolPlanOfCareSectionPlanOfCareActivityObservation(ViewDownloadTransmitSummary viewDownloadTransmitSummary, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public static boolean validateViewDownloadTransmitSummaryMu2consolPlanOfCareSectionPlanOfCareActivityObservation(
+			ViewDownloadTransmitSummary viewDownloadTransmitSummary,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
   	  
 		
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
@@ -853,8 +907,7 @@ public class ViewDownloadTransmitSummaryOperations extends GeneralHeaderConstrai
 
 	/**
 	 * The cached OCL expression body for the '{@link #validateViewDownloadTransmitSummaryPlanOfCareSectionTemplateId(ViewDownloadTransmitSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate View Download Transmit Summary Plan Of Care Section Template Id</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @see #validateViewDownloadTransmitSummaryPlanOfCareSectionTemplateId(ViewDownloadTransmitSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	 * @generated
 	 * @ordered
@@ -863,29 +916,35 @@ public class ViewDownloadTransmitSummaryOperations extends GeneralHeaderConstrai
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateViewDownloadTransmitSummaryPlanOfCareSectionTemplateId(ViewDownloadTransmitSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate View Download Transmit Summary Plan Of Care Section Template Id</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @see #validateViewDownloadTransmitSummaryPlanOfCareSectionTemplateId(ViewDownloadTransmitSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	 * @generated
 	 * @ordered
 	 */
-	
+
 	protected static Query<?, ?, ?> VALIDATE_VIEW_DOWNLOAD_TRANSMIT_SUMMARY_PLAN_OF_CARE_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY;
-	
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.getPlanOfCareSection()->excluding(null)->reject(getPlanOfCareSection().templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.22.2.10'))
-	 * @param viewDownloadTransmitSummary The receiving '<em><b>View Download Transmit Summary</b></em>' model object.
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc --> <!-- begin-model-doc -->
+	 * self
+	 * .getPlanOfCareSection()->excluding(null)->reject(getPlanOfCareSection(
+	 * ).templateId->exists(id : datatypes::II | id.root =
+	 * '2.16.840.1.113883.10.20.22.2.10'))
+	 * 
+	 * @param viewDownloadTransmitSummary
+	 *            The receiving '<em><b>View Download Transmit Summary</b></em>'
+	 *            model object.
+	 * @param diagnostics
+	 *            The chain of diagnostics to which problems are to be appended.
+	 * @param context
+	 *            The cache of context-specific information. <!-- end-model-doc
+	 *            -->
 	 * @generated
 	 */
 	@SuppressWarnings("unchecked")
-	public static  boolean validateViewDownloadTransmitSummaryPlanOfCareSectionTemplateId(ViewDownloadTransmitSummary viewDownloadTransmitSummary, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public static boolean validateViewDownloadTransmitSummaryPlanOfCareSectionTemplateId(
+			ViewDownloadTransmitSummary viewDownloadTransmitSummary,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
   	  
 		
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
@@ -921,8 +980,7 @@ public class ViewDownloadTransmitSummaryOperations extends GeneralHeaderConstrai
 
 	/**
 	 * The cached OCL expression body for the '{@link #validateViewDownloadTransmitSummarySocialHistorySectionTemplateId(ViewDownloadTransmitSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate View Download Transmit Summary Social History Section Template Id</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @see #validateViewDownloadTransmitSummarySocialHistorySectionTemplateId(ViewDownloadTransmitSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	 * @generated
 	 * @ordered
@@ -931,29 +989,34 @@ public class ViewDownloadTransmitSummaryOperations extends GeneralHeaderConstrai
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateViewDownloadTransmitSummarySocialHistorySectionTemplateId(ViewDownloadTransmitSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate View Download Transmit Summary Social History Section Template Id</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @see #validateViewDownloadTransmitSummarySocialHistorySectionTemplateId(ViewDownloadTransmitSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	 * @generated
 	 * @ordered
 	 */
-	
+
 	protected static Query<?, ?, ?> VALIDATE_VIEW_DOWNLOAD_TRANSMIT_SUMMARY_SOCIAL_HISTORY_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY;
-	
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.getSocialHistorySection()->excluding(null)->reject(getSocialHistorySection().templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.22.2.17'))
-	 * @param viewDownloadTransmitSummary The receiving '<em><b>View Download Transmit Summary</b></em>' model object.
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc --> <!-- begin-model-doc -->
+	 * self.getSocialHistorySection()->excluding(null)->reject(
+	 * getSocialHistorySection().templateId->exists(id : datatypes::II | id.root
+	 * = '2.16.840.1.113883.10.20.22.2.17'))
+	 * 
+	 * @param viewDownloadTransmitSummary
+	 *            The receiving '<em><b>View Download Transmit Summary</b></em>'
+	 *            model object.
+	 * @param diagnostics
+	 *            The chain of diagnostics to which problems are to be appended.
+	 * @param context
+	 *            The cache of context-specific information. <!-- end-model-doc
+	 *            -->
 	 * @generated
 	 */
 	@SuppressWarnings("unchecked")
-	public static  boolean validateViewDownloadTransmitSummarySocialHistorySectionTemplateId(ViewDownloadTransmitSummary viewDownloadTransmitSummary, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public static boolean validateViewDownloadTransmitSummarySocialHistorySectionTemplateId(
+			ViewDownloadTransmitSummary viewDownloadTransmitSummary,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
   	  
 		
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
@@ -989,8 +1052,7 @@ public class ViewDownloadTransmitSummaryOperations extends GeneralHeaderConstrai
 
 	/**
 	 * The cached OCL expression body for the '{@link #validateViewDownloadTransmitSummaryMu2consolSocialHistorySectionSmokingStatusObservation(ViewDownloadTransmitSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate View Download Transmit Summary Mu2consol Social History Section Smoking Status Observation</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @see #validateViewDownloadTransmitSummaryMu2consolSocialHistorySectionSmokingStatusObservation(ViewDownloadTransmitSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	 * @generated
 	 * @ordered
@@ -999,29 +1061,35 @@ public class ViewDownloadTransmitSummaryOperations extends GeneralHeaderConstrai
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateViewDownloadTransmitSummaryMu2consolSocialHistorySectionSmokingStatusObservation(ViewDownloadTransmitSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate View Download Transmit Summary Mu2consol Social History Section Smoking Status Observation</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @see #validateViewDownloadTransmitSummaryMu2consolSocialHistorySectionSmokingStatusObservation(ViewDownloadTransmitSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	 * @generated
 	 * @ordered
 	 */
-	
+
 	protected static Query<?, ?, ?> VALIDATE_VIEW_DOWNLOAD_TRANSMIT_SUMMARY_MU2CONSOL_SOCIAL_HISTORY_SECTION_SMOKING_STATUS_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY;
 
-
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.getSocialHistorySection()->excluding(null)->reject(getSocialHistorySection().entry->exists(entry : cda::Entry | not entry.observation.oclIsUndefined() and entry.observation.oclIsKindOf(mu2consol::SmokingStatusObservation)))
-	 * @param viewDownloadTransmitSummary The receiving '<em><b>View Download Transmit Summary</b></em>' model object.
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc --> <!-- begin-model-doc -->
+	 * self.getSocialHistorySection()->excluding(null)->reject(
+	 * getSocialHistorySection().entry->exists(entry : cda::Entry | not
+	 * entry.observation.oclIsUndefined() and
+	 * entry.observation.oclIsKindOf(mu2consol::SmokingStatusObservation)))
+	 * 
+	 * @param viewDownloadTransmitSummary
+	 *            The receiving '<em><b>View Download Transmit Summary</b></em>'
+	 *            model object.
+	 * @param diagnostics
+	 *            The chain of diagnostics to which problems are to be appended.
+	 * @param context
+	 *            The cache of context-specific information. <!-- end-model-doc
+	 *            -->
 	 * @generated
 	 */
 	@SuppressWarnings("unchecked")
-	public static  boolean validateViewDownloadTransmitSummaryMu2consolSocialHistorySectionSmokingStatusObservation(ViewDownloadTransmitSummary viewDownloadTransmitSummary, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public static boolean validateViewDownloadTransmitSummaryMu2consolSocialHistorySectionSmokingStatusObservation(
+			ViewDownloadTransmitSummary viewDownloadTransmitSummary,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
   	  
 		
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
@@ -1057,8 +1125,8 @@ public class ViewDownloadTransmitSummaryOperations extends GeneralHeaderConstrai
 
 	/**
 	 * The cached OCL expression body for the '{@link #getAllergiesSection(ViewDownloadTransmitSummary) <em>Get Allergies Section</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!--
+	 * end-user-doc -->
 	 * @see #getAllergiesSection(ViewDownloadTransmitSummary)
 	 * @generated
 	 * @ordered
@@ -1076,19 +1144,23 @@ public class ViewDownloadTransmitSummaryOperations extends GeneralHeaderConstrai
 	protected static OCLExpression<EClassifier> GET_ALLERGIES_SECTION__EOCL_QRY;
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::AllergiesSection))->asSequence()->any(true).oclAsType(consol::AllergiesSection)
-	 * @param viewDownloadTransmitSummary The receiving '<em><b>View Download Transmit Summary</b></em>' model object.
-	 * <!-- end-model-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc --> <!-- begin-model-doc -->
+	 * self.getAllSections()->select(section : cda::Section | not
+	 * section.oclIsUndefined() and
+	 * section.oclIsKindOf(consol::AllergiesSection)
+	 * )->asSequence()->any(true).oclAsType(consol::AllergiesSection)
+	 * 
+	 * @param viewDownloadTransmitSummary
+	 *            The receiving '<em><b>View Download Transmit Summary</b></em>'
+	 *            model object. <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  AllergiesSection getAllergiesSection(ViewDownloadTransmitSummary viewDownloadTransmitSummary) {
+
+	public static AllergiesSection getAllergiesSection(
+			ViewDownloadTransmitSummary viewDownloadTransmitSummary) {
 		if (GET_ALLERGIES_SECTION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(Mu2consolPackage.Literals.VIEW_DOWNLOAD_TRANSMIT_SUMMARY, Mu2consolPackage.Literals.VIEW_DOWNLOAD_TRANSMIT_SUMMARY.getEAllOperations().get(310));
+			helper.setOperationContext(Mu2consolPackage.Literals.VIEW_DOWNLOAD_TRANSMIT_SUMMARY, Mu2consolPackage.Literals.VIEW_DOWNLOAD_TRANSMIT_SUMMARY.getEAllOperations().get(311));
 			try {
 				GET_ALLERGIES_SECTION__EOCL_QRY = helper.createQuery(GET_ALLERGIES_SECTION__EOCL_EXP);
 			}
@@ -1112,8 +1184,8 @@ public class ViewDownloadTransmitSummaryOperations extends GeneralHeaderConstrai
 
 	/**
 	 * The cached OCL query for the '{@link #getMedicationsSection(ViewDownloadTransmitSummary) <em>Get Medications Section</em>}' query operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc
+	 * --> <!-- end-user-doc -->
 	 * @see #getMedicationsSection(ViewDownloadTransmitSummary)
 	 * @generated
 	 * @ordered
@@ -1121,19 +1193,23 @@ public class ViewDownloadTransmitSummaryOperations extends GeneralHeaderConstrai
 	protected static OCLExpression<EClassifier> GET_MEDICATIONS_SECTION__EOCL_QRY;
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::MedicationsSection))->asSequence()->any(true).oclAsType(consol::MedicationsSection)
-	 * @param viewDownloadTransmitSummary The receiving '<em><b>View Download Transmit Summary</b></em>' model object.
-	 * <!-- end-model-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc --> <!-- begin-model-doc -->
+	 * self.getAllSections()->select(section : cda::Section | not
+	 * section.oclIsUndefined() and
+	 * section.oclIsKindOf(consol::MedicationsSection
+	 * ))->asSequence()->any(true).oclAsType(consol::MedicationsSection)
+	 * 
+	 * @param viewDownloadTransmitSummary
+	 *            The receiving '<em><b>View Download Transmit Summary</b></em>'
+	 *            model object. <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  MedicationsSection getMedicationsSection(ViewDownloadTransmitSummary viewDownloadTransmitSummary) {
+
+	public static MedicationsSection getMedicationsSection(
+			ViewDownloadTransmitSummary viewDownloadTransmitSummary) {
 		if (GET_MEDICATIONS_SECTION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(Mu2consolPackage.Literals.VIEW_DOWNLOAD_TRANSMIT_SUMMARY, Mu2consolPackage.Literals.VIEW_DOWNLOAD_TRANSMIT_SUMMARY.getEAllOperations().get(311));
+			helper.setOperationContext(Mu2consolPackage.Literals.VIEW_DOWNLOAD_TRANSMIT_SUMMARY, Mu2consolPackage.Literals.VIEW_DOWNLOAD_TRANSMIT_SUMMARY.getEAllOperations().get(312));
 			try {
 				GET_MEDICATIONS_SECTION__EOCL_QRY = helper.createQuery(GET_MEDICATIONS_SECTION__EOCL_EXP);
 			}
@@ -1147,8 +1223,8 @@ public class ViewDownloadTransmitSummaryOperations extends GeneralHeaderConstrai
 
 	/**
 	 * The cached OCL expression body for the '{@link #getProblemSection(ViewDownloadTransmitSummary) <em>Get Problem Section</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!--
+	 * end-user-doc -->
 	 * @see #getProblemSection(ViewDownloadTransmitSummary)
 	 * @generated
 	 * @ordered
@@ -1166,19 +1242,23 @@ public class ViewDownloadTransmitSummaryOperations extends GeneralHeaderConstrai
 	protected static OCLExpression<EClassifier> GET_PROBLEM_SECTION__EOCL_QRY;
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::ProblemSection))->asSequence()->any(true).oclAsType(consol::ProblemSection)
-	 * @param viewDownloadTransmitSummary The receiving '<em><b>View Download Transmit Summary</b></em>' model object.
-	 * <!-- end-model-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc --> <!-- begin-model-doc -->
+	 * self.getAllSections()->select(section : cda::Section | not
+	 * section.oclIsUndefined() and
+	 * section.oclIsKindOf(consol::ProblemSection))-
+	 * >asSequence()->any(true).oclAsType(consol::ProblemSection)
+	 * 
+	 * @param viewDownloadTransmitSummary
+	 *            The receiving '<em><b>View Download Transmit Summary</b></em>'
+	 *            model object. <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  ProblemSection getProblemSection(ViewDownloadTransmitSummary viewDownloadTransmitSummary) {
+
+	public static ProblemSection getProblemSection(
+			ViewDownloadTransmitSummary viewDownloadTransmitSummary) {
 		if (GET_PROBLEM_SECTION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(Mu2consolPackage.Literals.VIEW_DOWNLOAD_TRANSMIT_SUMMARY, Mu2consolPackage.Literals.VIEW_DOWNLOAD_TRANSMIT_SUMMARY.getEAllOperations().get(312));
+			helper.setOperationContext(Mu2consolPackage.Literals.VIEW_DOWNLOAD_TRANSMIT_SUMMARY, Mu2consolPackage.Literals.VIEW_DOWNLOAD_TRANSMIT_SUMMARY.getEAllOperations().get(313));
 			try {
 				GET_PROBLEM_SECTION__EOCL_QRY = helper.createQuery(GET_PROBLEM_SECTION__EOCL_EXP);
 			}
@@ -1192,8 +1272,8 @@ public class ViewDownloadTransmitSummaryOperations extends GeneralHeaderConstrai
 
 	/**
 	 * The cached OCL expression body for the '{@link #getProceduresSection(ViewDownloadTransmitSummary) <em>Get Procedures Section</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!--
+	 * end-user-doc -->
 	 * @see #getProceduresSection(ViewDownloadTransmitSummary)
 	 * @generated
 	 * @ordered
@@ -1202,8 +1282,8 @@ public class ViewDownloadTransmitSummaryOperations extends GeneralHeaderConstrai
 
 	/**
 	 * The cached OCL query for the '{@link #getProceduresSection(ViewDownloadTransmitSummary) <em>Get Procedures Section</em>}' query operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc
+	 * --> <!-- end-user-doc -->
 	 * @see #getProceduresSection(ViewDownloadTransmitSummary)
 	 * @generated
 	 * @ordered
@@ -1211,19 +1291,23 @@ public class ViewDownloadTransmitSummaryOperations extends GeneralHeaderConstrai
 	protected static OCLExpression<EClassifier> GET_PROCEDURES_SECTION__EOCL_QRY;
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(mu2consol::ProceduresSection))->asSequence()->any(true).oclAsType(mu2consol::ProceduresSection)
-	 * @param viewDownloadTransmitSummary The receiving '<em><b>View Download Transmit Summary</b></em>' model object.
-	 * <!-- end-model-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc --> <!-- begin-model-doc -->
+	 * self.getAllSections()->select(section : cda::Section | not
+	 * section.oclIsUndefined() and
+	 * section.oclIsKindOf(mu2consol::ProceduresSection
+	 * ))->asSequence()->any(true).oclAsType(mu2consol::ProceduresSection)
+	 * 
+	 * @param viewDownloadTransmitSummary
+	 *            The receiving '<em><b>View Download Transmit Summary</b></em>'
+	 *            model object. <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  ProceduresSection getProceduresSection(ViewDownloadTransmitSummary viewDownloadTransmitSummary) {
+
+	public static ProceduresSection getProceduresSection(
+			ViewDownloadTransmitSummary viewDownloadTransmitSummary) {
 		if (GET_PROCEDURES_SECTION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(Mu2consolPackage.Literals.VIEW_DOWNLOAD_TRANSMIT_SUMMARY, Mu2consolPackage.Literals.VIEW_DOWNLOAD_TRANSMIT_SUMMARY.getEAllOperations().get(313));
+			helper.setOperationContext(Mu2consolPackage.Literals.VIEW_DOWNLOAD_TRANSMIT_SUMMARY, Mu2consolPackage.Literals.VIEW_DOWNLOAD_TRANSMIT_SUMMARY.getEAllOperations().get(314));
 			try {
 				GET_PROCEDURES_SECTION__EOCL_QRY = helper.createQuery(GET_PROCEDURES_SECTION__EOCL_EXP);
 			}
@@ -1247,8 +1331,8 @@ public class ViewDownloadTransmitSummaryOperations extends GeneralHeaderConstrai
 
 	/**
 	 * The cached OCL query for the '{@link #getVitalSignsSection(ViewDownloadTransmitSummary) <em>Get Vital Signs Section</em>}' query operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc
+	 * --> <!-- end-user-doc -->
 	 * @see #getVitalSignsSection(ViewDownloadTransmitSummary)
 	 * @generated
 	 * @ordered
@@ -1256,19 +1340,23 @@ public class ViewDownloadTransmitSummaryOperations extends GeneralHeaderConstrai
 	protected static OCLExpression<EClassifier> GET_VITAL_SIGNS_SECTION__EOCL_QRY;
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::VitalSignsSection))->asSequence()->any(true).oclAsType(consol::VitalSignsSection)
-	 * @param viewDownloadTransmitSummary The receiving '<em><b>View Download Transmit Summary</b></em>' model object.
-	 * <!-- end-model-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc --> <!-- begin-model-doc -->
+	 * self.getAllSections()->select(section : cda::Section | not
+	 * section.oclIsUndefined() and
+	 * section.oclIsKindOf(consol::VitalSignsSection
+	 * ))->asSequence()->any(true).oclAsType(consol::VitalSignsSection)
+	 * 
+	 * @param viewDownloadTransmitSummary
+	 *            The receiving '<em><b>View Download Transmit Summary</b></em>'
+	 *            model object. <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  VitalSignsSection getVitalSignsSection(ViewDownloadTransmitSummary viewDownloadTransmitSummary) {
+
+	public static VitalSignsSection getVitalSignsSection(
+			ViewDownloadTransmitSummary viewDownloadTransmitSummary) {
 		if (GET_VITAL_SIGNS_SECTION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(Mu2consolPackage.Literals.VIEW_DOWNLOAD_TRANSMIT_SUMMARY, Mu2consolPackage.Literals.VIEW_DOWNLOAD_TRANSMIT_SUMMARY.getEAllOperations().get(314));
+			helper.setOperationContext(Mu2consolPackage.Literals.VIEW_DOWNLOAD_TRANSMIT_SUMMARY, Mu2consolPackage.Literals.VIEW_DOWNLOAD_TRANSMIT_SUMMARY.getEAllOperations().get(315));
 			try {
 				GET_VITAL_SIGNS_SECTION__EOCL_QRY = helper.createQuery(GET_VITAL_SIGNS_SECTION__EOCL_EXP);
 			}
@@ -1282,8 +1370,8 @@ public class ViewDownloadTransmitSummaryOperations extends GeneralHeaderConstrai
 
 	/**
 	 * The cached OCL expression body for the '{@link #getResultsSection(ViewDownloadTransmitSummary) <em>Get Results Section</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!--
+	 * end-user-doc -->
 	 * @see #getResultsSection(ViewDownloadTransmitSummary)
 	 * @generated
 	 * @ordered
@@ -1301,19 +1389,23 @@ public class ViewDownloadTransmitSummaryOperations extends GeneralHeaderConstrai
 	protected static OCLExpression<EClassifier> GET_RESULTS_SECTION__EOCL_QRY;
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(mu2consol::ResultsSection))->asSequence()->any(true).oclAsType(mu2consol::ResultsSection)
-	 * @param viewDownloadTransmitSummary The receiving '<em><b>View Download Transmit Summary</b></em>' model object.
-	 * <!-- end-model-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc --> <!-- begin-model-doc -->
+	 * self.getAllSections()->select(section : cda::Section | not
+	 * section.oclIsUndefined() and
+	 * section.oclIsKindOf(mu2consol::ResultsSection
+	 * ))->asSequence()->any(true).oclAsType(mu2consol::ResultsSection)
+	 * 
+	 * @param viewDownloadTransmitSummary
+	 *            The receiving '<em><b>View Download Transmit Summary</b></em>'
+	 *            model object. <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  ResultsSection getResultsSection(ViewDownloadTransmitSummary viewDownloadTransmitSummary) {
+
+	public static ResultsSection getResultsSection(
+			ViewDownloadTransmitSummary viewDownloadTransmitSummary) {
 		if (GET_RESULTS_SECTION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(Mu2consolPackage.Literals.VIEW_DOWNLOAD_TRANSMIT_SUMMARY, Mu2consolPackage.Literals.VIEW_DOWNLOAD_TRANSMIT_SUMMARY.getEAllOperations().get(315));
+			helper.setOperationContext(Mu2consolPackage.Literals.VIEW_DOWNLOAD_TRANSMIT_SUMMARY, Mu2consolPackage.Literals.VIEW_DOWNLOAD_TRANSMIT_SUMMARY.getEAllOperations().get(316));
 			try {
 				GET_RESULTS_SECTION__EOCL_QRY = helper.createQuery(GET_RESULTS_SECTION__EOCL_EXP);
 			}
@@ -1327,8 +1419,8 @@ public class ViewDownloadTransmitSummaryOperations extends GeneralHeaderConstrai
 
 	/**
 	 * The cached OCL expression body for the '{@link #getAssessmentAndPlanSection(ViewDownloadTransmitSummary) <em>Get Assessment And Plan Section</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc
+	 * --> <!-- end-user-doc -->
 	 * @see #getAssessmentAndPlanSection(ViewDownloadTransmitSummary)
 	 * @generated
 	 * @ordered
@@ -1336,9 +1428,11 @@ public class ViewDownloadTransmitSummaryOperations extends GeneralHeaderConstrai
 	protected static final String GET_ASSESSMENT_AND_PLAN_SECTION__EOCL_EXP = "self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(mu2consol::AssessmentAndPlanSection))->asSequence()->any(true).oclAsType(mu2consol::AssessmentAndPlanSection)";
 
 	/**
-	 * The cached OCL query for the '{@link #getAssessmentAndPlanSection(ViewDownloadTransmitSummary) <em>Get Assessment And Plan Section</em>}' query operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * The cached OCL query for the '
+	 * {@link #getAssessmentAndPlanSection(ViewDownloadTransmitSummary)
+	 * <em>Get Assessment And Plan Section</em>}' query operation. <!--
+	 * begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @see #getAssessmentAndPlanSection(ViewDownloadTransmitSummary)
 	 * @generated
 	 * @ordered
@@ -1346,19 +1440,24 @@ public class ViewDownloadTransmitSummaryOperations extends GeneralHeaderConstrai
 	protected static OCLExpression<EClassifier> GET_ASSESSMENT_AND_PLAN_SECTION__EOCL_QRY;
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(mu2consol::AssessmentAndPlanSection))->asSequence()->any(true).oclAsType(mu2consol::AssessmentAndPlanSection)
-	 * @param viewDownloadTransmitSummary The receiving '<em><b>View Download Transmit Summary</b></em>' model object.
-	 * <!-- end-model-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc --> <!-- begin-model-doc -->
+	 * self.getAllSections()->select(section : cda::Section | not
+	 * section.oclIsUndefined() and
+	 * section.oclIsKindOf(mu2consol::AssessmentAndPlanSection
+	 * ))->asSequence()->any
+	 * (true).oclAsType(mu2consol::AssessmentAndPlanSection)
+	 * 
+	 * @param viewDownloadTransmitSummary
+	 *            The receiving '<em><b>View Download Transmit Summary</b></em>'
+	 *            model object. <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  AssessmentAndPlanSection getAssessmentAndPlanSection(ViewDownloadTransmitSummary viewDownloadTransmitSummary) {
+
+	public static AssessmentAndPlanSection getAssessmentAndPlanSection(
+			ViewDownloadTransmitSummary viewDownloadTransmitSummary) {
 		if (GET_ASSESSMENT_AND_PLAN_SECTION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(Mu2consolPackage.Literals.VIEW_DOWNLOAD_TRANSMIT_SUMMARY, Mu2consolPackage.Literals.VIEW_DOWNLOAD_TRANSMIT_SUMMARY.getEAllOperations().get(316));
+			helper.setOperationContext(Mu2consolPackage.Literals.VIEW_DOWNLOAD_TRANSMIT_SUMMARY, Mu2consolPackage.Literals.VIEW_DOWNLOAD_TRANSMIT_SUMMARY.getEAllOperations().get(317));
 			try {
 				GET_ASSESSMENT_AND_PLAN_SECTION__EOCL_QRY = helper.createQuery(GET_ASSESSMENT_AND_PLAN_SECTION__EOCL_EXP);
 			}
@@ -1382,8 +1481,8 @@ public class ViewDownloadTransmitSummaryOperations extends GeneralHeaderConstrai
 
 	/**
 	 * The cached OCL query for the '{@link #getPlanOfCareSection(ViewDownloadTransmitSummary) <em>Get Plan Of Care Section</em>}' query operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc
+	 * --> <!-- end-user-doc -->
 	 * @see #getPlanOfCareSection(ViewDownloadTransmitSummary)
 	 * @generated
 	 * @ordered
@@ -1391,19 +1490,23 @@ public class ViewDownloadTransmitSummaryOperations extends GeneralHeaderConstrai
 	protected static OCLExpression<EClassifier> GET_PLAN_OF_CARE_SECTION__EOCL_QRY;
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(mu2consol::PlanOfCareSection))->asSequence()->any(true).oclAsType(mu2consol::PlanOfCareSection)
-	 * @param viewDownloadTransmitSummary The receiving '<em><b>View Download Transmit Summary</b></em>' model object.
-	 * <!-- end-model-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc --> <!-- begin-model-doc -->
+	 * self.getAllSections()->select(section : cda::Section | not
+	 * section.oclIsUndefined() and
+	 * section.oclIsKindOf(mu2consol::PlanOfCareSection
+	 * ))->asSequence()->any(true).oclAsType(mu2consol::PlanOfCareSection)
+	 * 
+	 * @param viewDownloadTransmitSummary
+	 *            The receiving '<em><b>View Download Transmit Summary</b></em>'
+	 *            model object. <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  PlanOfCareSection getPlanOfCareSection(ViewDownloadTransmitSummary viewDownloadTransmitSummary) {
+
+	public static PlanOfCareSection getPlanOfCareSection(
+			ViewDownloadTransmitSummary viewDownloadTransmitSummary) {
 		if (GET_PLAN_OF_CARE_SECTION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(Mu2consolPackage.Literals.VIEW_DOWNLOAD_TRANSMIT_SUMMARY, Mu2consolPackage.Literals.VIEW_DOWNLOAD_TRANSMIT_SUMMARY.getEAllOperations().get(317));
+			helper.setOperationContext(Mu2consolPackage.Literals.VIEW_DOWNLOAD_TRANSMIT_SUMMARY, Mu2consolPackage.Literals.VIEW_DOWNLOAD_TRANSMIT_SUMMARY.getEAllOperations().get(318));
 			try {
 				GET_PLAN_OF_CARE_SECTION__EOCL_QRY = helper.createQuery(GET_PLAN_OF_CARE_SECTION__EOCL_EXP);
 			}
@@ -1426,9 +1529,11 @@ public class ViewDownloadTransmitSummaryOperations extends GeneralHeaderConstrai
 	protected static final String GET_SOCIAL_HISTORY_SECTION__EOCL_EXP = "self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(mu2consol::SocialHistorySection))->asSequence()->any(true).oclAsType(mu2consol::SocialHistorySection)";
 
 	/**
-	 * The cached OCL query for the '{@link #getSocialHistorySection(ViewDownloadTransmitSummary) <em>Get Social History Section</em>}' query operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * The cached OCL query for the '
+	 * {@link #getSocialHistorySection(ViewDownloadTransmitSummary)
+	 * <em>Get Social History Section</em>}' query operation. <!--
+	 * begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @see #getSocialHistorySection(ViewDownloadTransmitSummary)
 	 * @generated
 	 * @ordered
@@ -1436,19 +1541,23 @@ public class ViewDownloadTransmitSummaryOperations extends GeneralHeaderConstrai
 	protected static OCLExpression<EClassifier> GET_SOCIAL_HISTORY_SECTION__EOCL_QRY;
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(mu2consol::SocialHistorySection))->asSequence()->any(true).oclAsType(mu2consol::SocialHistorySection)
-	 * @param viewDownloadTransmitSummary The receiving '<em><b>View Download Transmit Summary</b></em>' model object.
-	 * <!-- end-model-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc --> <!-- begin-model-doc -->
+	 * self.getAllSections()->select(section : cda::Section | not
+	 * section.oclIsUndefined() and
+	 * section.oclIsKindOf(mu2consol::SocialHistorySection
+	 * ))->asSequence()->any(true).oclAsType(mu2consol::SocialHistorySection)
+	 * 
+	 * @param viewDownloadTransmitSummary
+	 *            The receiving '<em><b>View Download Transmit Summary</b></em>'
+	 *            model object. <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  SocialHistorySection getSocialHistorySection(ViewDownloadTransmitSummary viewDownloadTransmitSummary) {
+
+	public static SocialHistorySection getSocialHistorySection(
+			ViewDownloadTransmitSummary viewDownloadTransmitSummary) {
 		if (GET_SOCIAL_HISTORY_SECTION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(Mu2consolPackage.Literals.VIEW_DOWNLOAD_TRANSMIT_SUMMARY, Mu2consolPackage.Literals.VIEW_DOWNLOAD_TRANSMIT_SUMMARY.getEAllOperations().get(318));
+			helper.setOperationContext(Mu2consolPackage.Literals.VIEW_DOWNLOAD_TRANSMIT_SUMMARY, Mu2consolPackage.Literals.VIEW_DOWNLOAD_TRANSMIT_SUMMARY.getEAllOperations().get(319));
 			try {
 				GET_SOCIAL_HISTORY_SECTION__EOCL_QRY = helper.createQuery(GET_SOCIAL_HISTORY_SECTION__EOCL_EXP);
 			}

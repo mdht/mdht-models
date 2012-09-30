@@ -26,11 +26,11 @@ import org.eclipse.ocl.expressions.OCLExpression;
 
 import org.openhealthtools.mdht.uml.cda.consol.ChiefComplaintAndReasonForVisitSection;
 import org.openhealthtools.mdht.uml.cda.consol.ChiefComplaintSection;
+import org.openhealthtools.mdht.uml.cda.consol.HospitalAdmissionDiagnosisSection;
 import org.openhealthtools.mdht.uml.cda.consol.HospitalDischargeInstructionsSection;
 import org.openhealthtools.mdht.uml.cda.consol.HospitalDischargeMedicationsSection;
 import org.openhealthtools.mdht.uml.cda.consol.ReasonForVisitSection;
 
-import org.openhealthtools.mdht.uml.cda.mu2consol.HospitalAdmissionDiagnosisSection;
 import org.openhealthtools.mdht.uml.cda.mu2consol.Mu2consolPackage;
 import org.openhealthtools.mdht.uml.cda.mu2consol.Mu2consolPlugin;
 import org.openhealthtools.mdht.uml.cda.mu2consol.VDTInpatientSummary;
@@ -38,9 +38,9 @@ import org.openhealthtools.mdht.uml.cda.mu2consol.VDTInpatientSummary;
 import org.openhealthtools.mdht.uml.cda.mu2consol.util.Mu2consolValidator;
 
 /**
- * <!-- begin-user-doc -->
- * A static utility class that provides operations related to '<em><b>VDT Inpatient Summary</b></em>' model objects.
- * <!-- end-user-doc -->
+ * <!-- begin-user-doc --> A static utility class that provides operations
+ * related to '<em><b>VDT Inpatient Summary</b></em>' model objects. <!--
+ * end-user-doc -->
  *
  * <p>
  * The following operations are supported:
@@ -48,11 +48,10 @@ import org.openhealthtools.mdht.uml.cda.mu2consol.util.Mu2consolValidator;
  *   <li>{@link org.openhealthtools.mdht.uml.cda.mu2consol.VDTInpatientSummary#validateVDTInpatientSummaryEffectiveTime(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate VDT Inpatient Summary Effective Time</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.mu2consol.VDTInpatientSummary#validateVDTInpatientSummaryLocation(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate VDT Inpatient Summary Location</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.mu2consol.VDTInpatientSummary#validateVDTInpatientSummaryChiefComplaintOrReasonForVisit(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate VDT Inpatient Summary Chief Complaint Or Reason For Visit</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.mu2consol.VDTInpatientSummary#validateVDTInpatientSummaryHospitalAdmissionDiagnosisEntry(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate VDT Inpatient Summary Hospital Admission Diagnosis Entry</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.mu2consol.VDTInpatientSummary#validateVDTInpatientSummaryHospitalDischargeInstructionsSection(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate VDT Inpatient Summary Hospital Discharge Instructions Section</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.mu2consol.VDTInpatientSummary#validateVDTInpatientSummaryHospitalAdmissionDiagnosisSection(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate VDT Inpatient Summary Hospital Admission Diagnosis Section</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.mu2consol.VDTInpatientSummary#validateVDTInpatientSummaryHospitalDischargeMedicationsSection(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate VDT Inpatient Summary Hospital Discharge Medications Section</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.mu2consol.VDTInpatientSummary#validateVDTInpatientSummaryHospitalAdmissionDiagnosisSectionTemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate VDT Inpatient Summary Hospital Admission Diagnosis Section Template Id</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.mu2consol.VDTInpatientSummary#validateVDTInpatientSummaryMu2consolHospitalAdmissionDiagnosisSectionHospitalAdmissionDiagnosis(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate VDT Inpatient Summary Mu2consol Hospital Admission Diagnosis Section Hospital Admission Diagnosis</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.mu2consol.VDTInpatientSummary#getHospitalDischargeInstructionsSection() <em>Get Hospital Discharge Instructions Section</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.mu2consol.VDTInpatientSummary#getHospitalAdmissionDiagnosisSection() <em>Get Hospital Admission Diagnosis Section</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.mu2consol.VDTInpatientSummary#getChiefComplaintSection() <em>Get Chief Complaint Section</em>}</li>
@@ -64,10 +63,10 @@ import org.openhealthtools.mdht.uml.cda.mu2consol.util.Mu2consolValidator;
  *
  * @generated
  */
-public class VDTInpatientSummaryOperations extends ViewDownloadTransmitSummaryOperations {
+public class VDTInpatientSummaryOperations extends
+		ViewDownloadTransmitSummaryOperations {
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @generated
 	 */
 	protected VDTInpatientSummaryOperations() {
@@ -75,10 +74,13 @@ public class VDTInpatientSummaryOperations extends ViewDownloadTransmitSummaryOp
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #validateVDTInpatientSummaryEffectiveTime(VDTInpatientSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate VDT Inpatient Summary Effective Time</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #validateVDTInpatientSummaryEffectiveTime(VDTInpatientSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * The cached OCL expression body for the '
+	 * {@link #validateVDTInpatientSummaryEffectiveTime(VDTInpatientSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * <em>Validate VDT Inpatient Summary Effective Time</em>}' operation. <!--
+	 * begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @see #validateVDTInpatientSummaryEffectiveTime(VDTInpatientSummary,
+	 *      org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	 * @generated
 	 * @ordered
 	 */
@@ -87,31 +89,37 @@ public class VDTInpatientSummaryOperations extends ViewDownloadTransmitSummaryOp
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateVDTInpatientSummaryEffectiveTime(VDTInpatientSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate VDT Inpatient Summary Effective Time</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @see #validateVDTInpatientSummaryEffectiveTime(VDTInpatientSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	 * @generated
 	 * @ordered
 	 */
-	
+
 	protected static Query<?, ?, ?> VALIDATE_VDT_INPATIENT_SUMMARY_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY;
-	
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.componentOf->excluding(null).encompassingEncounter->excluding(null)->reject((effectiveTime.oclIsUndefined() or 
+	 * <!-- begin-user-doc --> <!-- end-user-doc --> <!-- begin-model-doc -->
+	 * self
+	 * .componentOf->excluding(null).encompassingEncounter->excluding(null)->
+	 * reject((effectiveTime.oclIsUndefined() or
 	 * 
-	 * effectiveTime.isNullFlavorUndefined()) implies (not effectiveTime.oclIsUndefined()))
-	 * @param vdtInpatientSummary The receiving '<em><b>VDT Inpatient Summary</b></em>' model object.
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
+	 * effectiveTime.isNullFlavorUndefined()) implies (not
+	 * effectiveTime.oclIsUndefined()))
+	 * 
+	 * @param vdtInpatientSummary
+	 *            The receiving '<em><b>VDT Inpatient Summary</b></em>' model
+	 *            object.
+	 * @param diagnostics
+	 *            The chain of diagnostics to which problems are to be appended.
+	 * @param context
+	 *            The cache of context-specific information. <!-- end-model-doc
+	 *            -->
 	 * @generated
 	 */
 	@SuppressWarnings("unchecked")
-	public static  boolean validateVDTInpatientSummaryEffectiveTime(VDTInpatientSummary vdtInpatientSummary, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public static boolean validateVDTInpatientSummaryEffectiveTime(
+			VDTInpatientSummary vdtInpatientSummary,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
   	  
 		
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
@@ -146,10 +154,13 @@ public class VDTInpatientSummaryOperations extends ViewDownloadTransmitSummaryOp
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #validateVDTInpatientSummaryLocation(VDTInpatientSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate VDT Inpatient Summary Location</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #validateVDTInpatientSummaryLocation(VDTInpatientSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * The cached OCL expression body for the '
+	 * {@link #validateVDTInpatientSummaryLocation(VDTInpatientSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * <em>Validate VDT Inpatient Summary Location</em>}' operation. <!--
+	 * begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @see #validateVDTInpatientSummaryLocation(VDTInpatientSummary,
+	 *      org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	 * @generated
 	 * @ordered
 	 */
@@ -158,31 +169,37 @@ public class VDTInpatientSummaryOperations extends ViewDownloadTransmitSummaryOp
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateVDTInpatientSummaryLocation(VDTInpatientSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate VDT Inpatient Summary Location</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @see #validateVDTInpatientSummaryLocation(VDTInpatientSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	 * @generated
 	 * @ordered
 	 */
-	
+
 	protected static Query<?, ?, ?> VALIDATE_VDT_INPATIENT_SUMMARY_LOCATION__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY;
-	
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.componentOf->excluding(null).encompassingEncounter->excluding(null)->reject(location->one(location : cda::Location | 
+	 * <!-- begin-user-doc --> <!-- end-user-doc --> <!-- begin-model-doc -->
+	 * self
+	 * .componentOf->excluding(null).encompassingEncounter->excluding(null)->
+	 * reject(location->one(location : cda::Location |
 	 * 
-	 * not location.oclIsUndefined() and location.oclIsKindOf(rim::Participation)))
-	 * @param vdtInpatientSummary The receiving '<em><b>VDT Inpatient Summary</b></em>' model object.
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
+	 * not location.oclIsUndefined() and
+	 * location.oclIsKindOf(rim::Participation)))
+	 * 
+	 * @param vdtInpatientSummary
+	 *            The receiving '<em><b>VDT Inpatient Summary</b></em>' model
+	 *            object.
+	 * @param diagnostics
+	 *            The chain of diagnostics to which problems are to be appended.
+	 * @param context
+	 *            The cache of context-specific information. <!-- end-model-doc
+	 *            -->
 	 * @generated
 	 */
 	@SuppressWarnings("unchecked")
-	public static  boolean validateVDTInpatientSummaryLocation(VDTInpatientSummary vdtInpatientSummary, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public static boolean validateVDTInpatientSummaryLocation(
+			VDTInpatientSummary vdtInpatientSummary,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
   	  
 		
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
@@ -218,8 +235,7 @@ public class VDTInpatientSummaryOperations extends ViewDownloadTransmitSummaryOp
 
 	/**
 	 * The cached OCL expression body for the '{@link #validateVDTInpatientSummaryChiefComplaintOrReasonForVisit(VDTInpatientSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate VDT Inpatient Summary Chief Complaint Or Reason For Visit</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @see #validateVDTInpatientSummaryChiefComplaintOrReasonForVisit(VDTInpatientSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	 * @generated
 	 * @ordered
@@ -230,31 +246,40 @@ public class VDTInpatientSummaryOperations extends ViewDownloadTransmitSummaryOp
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateVDTInpatientSummaryChiefComplaintOrReasonForVisit(VDTInpatientSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate VDT Inpatient Summary Chief Complaint Or Reason For Visit</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @see #validateVDTInpatientSummaryChiefComplaintOrReasonForVisit(VDTInpatientSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	 * @generated
 	 * @ordered
 	 */
-	
+
 	protected static Constraint VALIDATE_VDT_INPATIENT_SUMMARY_CHIEF_COMPLAINT_OR_REASON_FOR_VISIT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-	
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * (self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::ChiefComplaintSection)) or 
-	 *  self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::ReasonForVisitSection))) xor 
-	 *  self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::ChiefComplaintAndReasonForVisitSection))
-	 * @param vdtInpatientSummary The receiving '<em><b>VDT Inpatient Summary</b></em>' model object.
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc --> <!-- begin-model-doc -->
+	 * (self.getAllSections()->one(section : cda::Section | not
+	 * section.oclIsUndefined() and
+	 * section.oclIsKindOf(consol::ChiefComplaintSection)) or
+	 * self.getAllSections()->one(section : cda::Section | not
+	 * section.oclIsUndefined() and
+	 * section.oclIsKindOf(consol::ReasonForVisitSection))) xor
+	 * self.getAllSections()->one(section : cda::Section | not
+	 * section.oclIsUndefined() and
+	 * section.oclIsKindOf(consol::ChiefComplaintAndReasonForVisitSection))
+	 * 
+	 * @param vdtInpatientSummary
+	 *            The receiving '<em><b>VDT Inpatient Summary</b></em>' model
+	 *            object.
+	 * @param diagnostics
+	 *            The chain of diagnostics to which problems are to be appended.
+	 * @param context
+	 *            The cache of context-specific information. <!-- end-model-doc
+	 *            -->
 	 * @generated
 	 */
-	
-	public static  boolean validateVDTInpatientSummaryChiefComplaintOrReasonForVisit(VDTInpatientSummary vdtInpatientSummary, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+	public static boolean validateVDTInpatientSummaryChiefComplaintOrReasonForVisit(
+			VDTInpatientSummary vdtInpatientSummary,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
   	  
 		if (VALIDATE_VDT_INPATIENT_SUMMARY_CHIEF_COMPLAINT_OR_REASON_FOR_VISIT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
@@ -283,9 +308,81 @@ public class VDTInpatientSummaryOperations extends ViewDownloadTransmitSummaryOp
 	}
 
 	/**
+	 * The cached OCL expression body for the '{@link #validateVDTInpatientSummaryHospitalAdmissionDiagnosisEntry(VDTInpatientSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate VDT Inpatient Summary Hospital Admission Diagnosis Entry</em>}' operation.
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * @see #validateVDTInpatientSummaryHospitalAdmissionDiagnosisEntry(VDTInpatientSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String VALIDATE_VDT_INPATIENT_SUMMARY_HOSPITAL_ADMISSION_DIAGNOSIS_ENTRY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.retrieveHospitalAdmissionDiagnosisSection()->excluding(null)->reject(retrieveHospitalAdmissionDiagnosisSection().getActs()->exists(a : cda::Act | a.oclIsKindOf(consol::HospitalAdmissionDiagnosis)))";
+
+	/**
+	 * The cached OCL invariant for the '{@link #validateVDTInpatientSummaryHospitalAdmissionDiagnosisEntry(VDTInpatientSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate VDT Inpatient Summary Hospital Admission Diagnosis Entry</em>}' invariant operation.
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * @see #validateVDTInpatientSummaryHospitalAdmissionDiagnosisEntry(VDTInpatientSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+
+	protected static Query<?, ?, ?> VALIDATE_VDT_INPATIENT_SUMMARY_HOSPITAL_ADMISSION_DIAGNOSIS_ENTRY__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY;
+
+	/**
+	 * <!-- begin-user-doc --> <!-- end-user-doc --> <!-- begin-model-doc -->
+	 * self
+	 * .retrieveHospitalAdmissionDiagnosisSection()->excluding(null)->reject(
+	 * retrieveHospitalAdmissionDiagnosisSection().getActs()->exists(a :
+	 * cda::Act | a.oclIsKindOf(consol::HospitalAdmissionDiagnosis)))
+	 * 
+	 * @param vdtInpatientSummary
+	 *            The receiving '<em><b>VDT Inpatient Summary</b></em>' model
+	 *            object.
+	 * @param diagnostics
+	 *            The chain of diagnostics to which problems are to be appended.
+	 * @param context
+	 *            The cache of context-specific information. <!-- end-model-doc
+	 *            -->
+	 * @generated
+	 */
+	@SuppressWarnings("unchecked")
+	public static boolean validateVDTInpatientSummaryHospitalAdmissionDiagnosisEntry(
+			VDTInpatientSummary vdtInpatientSummary,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
+		
+			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+			helper.setContext(Mu2consolPackage.Literals.VDT_INPATIENT_SUMMARY);
+			try {
+				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_VDT_INPATIENT_SUMMARY_HOSPITAL_ADMISSION_DIAGNOSIS_ENTRY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_VDT_INPATIENT_SUMMARY_HOSPITAL_ADMISSION_DIAGNOSIS_ENTRY__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(oclExpression);
+			}
+			catch (ParserException pe) {
+				throw new UnsupportedOperationException(pe.getLocalizedMessage());
+			}
+		
+		Object oclResult = VALIDATE_VDT_INPATIENT_SUMMARY_HOSPITAL_ADMISSION_DIAGNOSIS_ENTRY__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(vdtInpatientSummary);		
+		if (oclResult != null && oclResult instanceof Collection) {
+			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
+  			
+			if (diagnostics != null) {
+				for (EObject eObject : oclResultSet) {
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 Mu2consolValidator.DIAGNOSTIC_SOURCE,
+						 Mu2consolValidator.VDT_INPATIENT_SUMMARY__VDT_INPATIENT_SUMMARY_HOSPITAL_ADMISSION_DIAGNOSIS_ENTRY,
+						 Mu2consolPlugin.INSTANCE.getString("VDTInpatientSummaryHospitalAdmissionDiagnosisEntry"),
+						 new Object [] { eObject }));
+				}
+				 
+			}
+			return oclResultSet.isEmpty();
+		}
+		return true;
+	}
+
+	/**
 	 * The cached OCL expression body for the '{@link #validateVDTInpatientSummaryHospitalDischargeInstructionsSection(VDTInpatientSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate VDT Inpatient Summary Hospital Discharge Instructions Section</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @see #validateVDTInpatientSummaryHospitalDischargeInstructionsSection(VDTInpatientSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	 * @generated
 	 * @ordered
@@ -294,29 +391,34 @@ public class VDTInpatientSummaryOperations extends ViewDownloadTransmitSummaryOp
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateVDTInpatientSummaryHospitalDischargeInstructionsSection(VDTInpatientSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate VDT Inpatient Summary Hospital Discharge Instructions Section</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @see #validateVDTInpatientSummaryHospitalDischargeInstructionsSection(VDTInpatientSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	 * @generated
 	 * @ordered
 	 */
-	
+
 	protected static Constraint VALIDATE_VDT_INPATIENT_SUMMARY_HOSPITAL_DISCHARGE_INSTRUCTIONS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-	
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::HospitalDischargeInstructionsSection))
-	 * @param vdtInpatientSummary The receiving '<em><b>VDT Inpatient Summary</b></em>' model object.
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc --> <!-- begin-model-doc -->
+	 * self.getAllSections()->one(section : cda::Section | not
+	 * section.oclIsUndefined() and
+	 * section.oclIsKindOf(consol::HospitalDischargeInstructionsSection))
+	 * 
+	 * @param vdtInpatientSummary
+	 *            The receiving '<em><b>VDT Inpatient Summary</b></em>' model
+	 *            object.
+	 * @param diagnostics
+	 *            The chain of diagnostics to which problems are to be appended.
+	 * @param context
+	 *            The cache of context-specific information. <!-- end-model-doc
+	 *            -->
 	 * @generated
 	 */
-	
-	public static  boolean validateVDTInpatientSummaryHospitalDischargeInstructionsSection(VDTInpatientSummary vdtInpatientSummary, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+	public static boolean validateVDTInpatientSummaryHospitalDischargeInstructionsSection(
+			VDTInpatientSummary vdtInpatientSummary,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
   	  
 		if (VALIDATE_VDT_INPATIENT_SUMMARY_HOSPITAL_DISCHARGE_INSTRUCTIONS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
@@ -346,39 +448,43 @@ public class VDTInpatientSummaryOperations extends ViewDownloadTransmitSummaryOp
 
 	/**
 	 * The cached OCL expression body for the '{@link #validateVDTInpatientSummaryHospitalAdmissionDiagnosisSection(VDTInpatientSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate VDT Inpatient Summary Hospital Admission Diagnosis Section</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @see #validateVDTInpatientSummaryHospitalAdmissionDiagnosisSection(VDTInpatientSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_VDT_INPATIENT_SUMMARY_HOSPITAL_ADMISSION_DIAGNOSIS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(mu2consol::HospitalAdmissionDiagnosisSection))";
+	protected static final String VALIDATE_VDT_INPATIENT_SUMMARY_HOSPITAL_ADMISSION_DIAGNOSIS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::HospitalAdmissionDiagnosisSection))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateVDTInpatientSummaryHospitalAdmissionDiagnosisSection(VDTInpatientSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate VDT Inpatient Summary Hospital Admission Diagnosis Section</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @see #validateVDTInpatientSummaryHospitalAdmissionDiagnosisSection(VDTInpatientSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	 * @generated
 	 * @ordered
 	 */
-	
+
 	protected static Constraint VALIDATE_VDT_INPATIENT_SUMMARY_HOSPITAL_ADMISSION_DIAGNOSIS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-	
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(mu2consol::HospitalAdmissionDiagnosisSection))
-	 * @param vdtInpatientSummary The receiving '<em><b>VDT Inpatient Summary</b></em>' model object.
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc --> <!-- begin-model-doc -->
+	 * self.getAllSections()->one(section : cda::Section | not
+	 * section.oclIsUndefined() and
+	 * section.oclIsKindOf(consol::HospitalAdmissionDiagnosisSection))
+	 * 
+	 * @param vdtInpatientSummary
+	 *            The receiving '<em><b>VDT Inpatient Summary</b></em>' model
+	 *            object.
+	 * @param diagnostics
+	 *            The chain of diagnostics to which problems are to be appended.
+	 * @param context
+	 *            The cache of context-specific information. <!-- end-model-doc
+	 *            -->
 	 * @generated
 	 */
-	
-	public static  boolean validateVDTInpatientSummaryHospitalAdmissionDiagnosisSection(VDTInpatientSummary vdtInpatientSummary, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+	public static boolean validateVDTInpatientSummaryHospitalAdmissionDiagnosisSection(
+			VDTInpatientSummary vdtInpatientSummary,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
   	  
 		if (VALIDATE_VDT_INPATIENT_SUMMARY_HOSPITAL_ADMISSION_DIAGNOSIS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
@@ -408,8 +514,7 @@ public class VDTInpatientSummaryOperations extends ViewDownloadTransmitSummaryOp
 
 	/**
 	 * The cached OCL expression body for the '{@link #validateVDTInpatientSummaryHospitalDischargeMedicationsSection(VDTInpatientSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate VDT Inpatient Summary Hospital Discharge Medications Section</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @see #validateVDTInpatientSummaryHospitalDischargeMedicationsSection(VDTInpatientSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	 * @generated
 	 * @ordered
@@ -418,29 +523,34 @@ public class VDTInpatientSummaryOperations extends ViewDownloadTransmitSummaryOp
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateVDTInpatientSummaryHospitalDischargeMedicationsSection(VDTInpatientSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate VDT Inpatient Summary Hospital Discharge Medications Section</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @see #validateVDTInpatientSummaryHospitalDischargeMedicationsSection(VDTInpatientSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	 * @generated
 	 * @ordered
 	 */
-	
+
 	protected static Constraint VALIDATE_VDT_INPATIENT_SUMMARY_HOSPITAL_DISCHARGE_MEDICATIONS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
-
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::HospitalDischargeMedicationsSection))
-	 * @param vdtInpatientSummary The receiving '<em><b>VDT Inpatient Summary</b></em>' model object.
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc --> <!-- begin-model-doc -->
+	 * self.getAllSections()->one(section : cda::Section | not
+	 * section.oclIsUndefined() and
+	 * section.oclIsKindOf(consol::HospitalDischargeMedicationsSection))
+	 * 
+	 * @param vdtInpatientSummary
+	 *            The receiving '<em><b>VDT Inpatient Summary</b></em>' model
+	 *            object.
+	 * @param diagnostics
+	 *            The chain of diagnostics to which problems are to be appended.
+	 * @param context
+	 *            The cache of context-specific information. <!-- end-model-doc
+	 *            -->
 	 * @generated
 	 */
-	
-	public static  boolean validateVDTInpatientSummaryHospitalDischargeMedicationsSection(VDTInpatientSummary vdtInpatientSummary, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+	public static boolean validateVDTInpatientSummaryHospitalDischargeMedicationsSection(
+			VDTInpatientSummary vdtInpatientSummary,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
   	  
 		if (VALIDATE_VDT_INPATIENT_SUMMARY_HOSPITAL_DISCHARGE_MEDICATIONS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
@@ -469,145 +579,11 @@ public class VDTInpatientSummaryOperations extends ViewDownloadTransmitSummaryOp
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #validateVDTInpatientSummaryHospitalAdmissionDiagnosisSectionTemplateId(VDTInpatientSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate VDT Inpatient Summary Hospital Admission Diagnosis Section Template Id</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #validateVDTInpatientSummaryHospitalAdmissionDiagnosisSectionTemplateId(VDTInpatientSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
-	protected static final String VALIDATE_VDT_INPATIENT_SUMMARY_HOSPITAL_ADMISSION_DIAGNOSIS_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.getHospitalAdmissionDiagnosisSection()->excluding(null)->reject(getHospitalAdmissionDiagnosisSection().templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.22.2.43'))";
-
-	/**
-	 * The cached OCL invariant for the '{@link #validateVDTInpatientSummaryHospitalAdmissionDiagnosisSectionTemplateId(VDTInpatientSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate VDT Inpatient Summary Hospital Admission Diagnosis Section Template Id</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #validateVDTInpatientSummaryHospitalAdmissionDiagnosisSectionTemplateId(VDTInpatientSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
-	
-	protected static Query<?, ?, ?> VALIDATE_VDT_INPATIENT_SUMMARY_HOSPITAL_ADMISSION_DIAGNOSIS_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY;
-	
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.getHospitalAdmissionDiagnosisSection()->excluding(null)->reject(getHospitalAdmissionDiagnosisSection().templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.22.2.43'))
-	 * @param vdtInpatientSummary The receiving '<em><b>VDT Inpatient Summary</b></em>' model object.
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
-	@SuppressWarnings("unchecked")
-	public static  boolean validateVDTInpatientSummaryHospitalAdmissionDiagnosisSectionTemplateId(VDTInpatientSummary vdtInpatientSummary, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
-		
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setContext(Mu2consolPackage.Literals.VDT_INPATIENT_SUMMARY);
-			try {
-				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_VDT_INPATIENT_SUMMARY_HOSPITAL_ADMISSION_DIAGNOSIS_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-				VALIDATE_VDT_INPATIENT_SUMMARY_HOSPITAL_ADMISSION_DIAGNOSIS_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(oclExpression);
-			}
-			catch (ParserException pe) {
-				throw new UnsupportedOperationException(pe.getLocalizedMessage());
-			}
-		
-		Object oclResult = VALIDATE_VDT_INPATIENT_SUMMARY_HOSPITAL_ADMISSION_DIAGNOSIS_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(vdtInpatientSummary);		
-		if (oclResult != null && oclResult instanceof Collection) {
-			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
-  			
-			if (diagnostics != null) {
-				for (EObject eObject : oclResultSet) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 Mu2consolValidator.DIAGNOSTIC_SOURCE,
-						 Mu2consolValidator.VDT_INPATIENT_SUMMARY__VDT_INPATIENT_SUMMARY_HOSPITAL_ADMISSION_DIAGNOSIS_SECTION_TEMPLATE_ID,
-						 Mu2consolPlugin.INSTANCE.getString("VDTInpatientSummaryHospitalAdmissionDiagnosisSectionTemplateId"),
-						 new Object [] { eObject }));
-				}
-				 
-			}
-			return oclResultSet.isEmpty();
-		}
-		return true;
-	}
-
-	/**
-	 * The cached OCL expression body for the '{@link #validateVDTInpatientSummaryMu2consolHospitalAdmissionDiagnosisSectionHospitalAdmissionDiagnosis(VDTInpatientSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate VDT Inpatient Summary Mu2consol Hospital Admission Diagnosis Section Hospital Admission Diagnosis</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #validateVDTInpatientSummaryMu2consolHospitalAdmissionDiagnosisSectionHospitalAdmissionDiagnosis(VDTInpatientSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
-	protected static final String VALIDATE_VDT_INPATIENT_SUMMARY_MU2CONSOL_HOSPITAL_ADMISSION_DIAGNOSIS_SECTION_HOSPITAL_ADMISSION_DIAGNOSIS__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.getHospitalAdmissionDiagnosisSection()->excluding(null)->reject(getHospitalAdmissionDiagnosisSection().entry->one(entry : cda::Entry | not entry.act.oclIsUndefined() and entry.act.oclIsKindOf(consol::HospitalAdmissionDiagnosis)))";
-
-	/**
-	 * The cached OCL invariant for the '{@link #validateVDTInpatientSummaryMu2consolHospitalAdmissionDiagnosisSectionHospitalAdmissionDiagnosis(VDTInpatientSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate VDT Inpatient Summary Mu2consol Hospital Admission Diagnosis Section Hospital Admission Diagnosis</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #validateVDTInpatientSummaryMu2consolHospitalAdmissionDiagnosisSectionHospitalAdmissionDiagnosis(VDTInpatientSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
-	
-	protected static Query<?, ?, ?> VALIDATE_VDT_INPATIENT_SUMMARY_MU2CONSOL_HOSPITAL_ADMISSION_DIAGNOSIS_SECTION_HOSPITAL_ADMISSION_DIAGNOSIS__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY;
-
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.getHospitalAdmissionDiagnosisSection()->excluding(null)->reject(getHospitalAdmissionDiagnosisSection().entry->one(entry : cda::Entry | not entry.act.oclIsUndefined() and entry.act.oclIsKindOf(consol::HospitalAdmissionDiagnosis)))
-	 * @param vdtInpatientSummary The receiving '<em><b>VDT Inpatient Summary</b></em>' model object.
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
-	@SuppressWarnings("unchecked")
-	public static  boolean validateVDTInpatientSummaryMu2consolHospitalAdmissionDiagnosisSectionHospitalAdmissionDiagnosis(VDTInpatientSummary vdtInpatientSummary, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
-		
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setContext(Mu2consolPackage.Literals.VDT_INPATIENT_SUMMARY);
-			try {
-				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_VDT_INPATIENT_SUMMARY_MU2CONSOL_HOSPITAL_ADMISSION_DIAGNOSIS_SECTION_HOSPITAL_ADMISSION_DIAGNOSIS__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-				VALIDATE_VDT_INPATIENT_SUMMARY_MU2CONSOL_HOSPITAL_ADMISSION_DIAGNOSIS_SECTION_HOSPITAL_ADMISSION_DIAGNOSIS__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(oclExpression);
-			}
-			catch (ParserException pe) {
-				throw new UnsupportedOperationException(pe.getLocalizedMessage());
-			}
-		
-		Object oclResult = VALIDATE_VDT_INPATIENT_SUMMARY_MU2CONSOL_HOSPITAL_ADMISSION_DIAGNOSIS_SECTION_HOSPITAL_ADMISSION_DIAGNOSIS__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(vdtInpatientSummary);		
-		if (oclResult != null && oclResult instanceof Collection) {
-			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
-  			
-			if (diagnostics != null) {
-				for (EObject eObject : oclResultSet) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 Mu2consolValidator.DIAGNOSTIC_SOURCE,
-						 Mu2consolValidator.VDT_INPATIENT_SUMMARY__VDT_INPATIENT_SUMMARY_MU2CONSOL_HOSPITAL_ADMISSION_DIAGNOSIS_SECTION_HOSPITAL_ADMISSION_DIAGNOSIS,
-						 Mu2consolPlugin.INSTANCE.getString("VDTInpatientSummaryMu2consolHospitalAdmissionDiagnosisSectionHospitalAdmissionDiagnosis"),
-						 new Object [] { eObject }));
-				}
-				 
-			}
-			return oclResultSet.isEmpty();
-		}
-		return true;
-	}
-
-	/**
-	 * The cached OCL expression body for the '{@link #getHospitalDischargeInstructionsSection(VDTInpatientSummary) <em>Get Hospital Discharge Instructions Section</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * The cached OCL expression body for the '
+	 * {@link #getHospitalDischargeInstructionsSection(VDTInpatientSummary)
+	 * <em>Get Hospital Discharge Instructions Section</em>}' operation. <!--
+	 * begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @see #getHospitalDischargeInstructionsSection(VDTInpatientSummary)
 	 * @generated
 	 * @ordered
@@ -616,8 +592,7 @@ public class VDTInpatientSummaryOperations extends ViewDownloadTransmitSummaryOp
 
 	/**
 	 * The cached OCL query for the '{@link #getHospitalDischargeInstructionsSection(VDTInpatientSummary) <em>Get Hospital Discharge Instructions Section</em>}' query operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @see #getHospitalDischargeInstructionsSection(VDTInpatientSummary)
 	 * @generated
 	 * @ordered
@@ -625,16 +600,21 @@ public class VDTInpatientSummaryOperations extends ViewDownloadTransmitSummaryOp
 	protected static OCLExpression<EClassifier> GET_HOSPITAL_DISCHARGE_INSTRUCTIONS_SECTION__EOCL_QRY;
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::HospitalDischargeInstructionsSection))->asSequence()->any(true).oclAsType(consol::HospitalDischargeInstructionsSection)
-	 * @param vdtInpatientSummary The receiving '<em><b>VDT Inpatient Summary</b></em>' model object.
-	 * <!-- end-model-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc --> <!-- begin-model-doc -->
+	 * self.getAllSections()->select(section : cda::Section | not
+	 * section.oclIsUndefined() and
+	 * section.oclIsKindOf(consol::HospitalDischargeInstructionsSection
+	 * ))->asSequence
+	 * ()->any(true).oclAsType(consol::HospitalDischargeInstructionsSection)
+	 * 
+	 * @param vdtInpatientSummary
+	 *            The receiving '<em><b>VDT Inpatient Summary</b></em>' model
+	 *            object. <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  HospitalDischargeInstructionsSection getHospitalDischargeInstructionsSection(VDTInpatientSummary vdtInpatientSummary) {
+
+	public static HospitalDischargeInstructionsSection getHospitalDischargeInstructionsSection(
+			VDTInpatientSummary vdtInpatientSummary) {
 		if (GET_HOSPITAL_DISCHARGE_INSTRUCTIONS_SECTION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(Mu2consolPackage.Literals.VDT_INPATIENT_SUMMARY, Mu2consolPackage.Literals.VDT_INPATIENT_SUMMARY.getEAllOperations().get(327));
@@ -650,19 +630,23 @@ public class VDTInpatientSummaryOperations extends ViewDownloadTransmitSummaryOp
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #getHospitalAdmissionDiagnosisSection(VDTInpatientSummary) <em>Get Hospital Admission Diagnosis Section</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * The cached OCL expression body for the '
+	 * {@link #getHospitalAdmissionDiagnosisSection(VDTInpatientSummary)
+	 * <em>Get Hospital Admission Diagnosis Section</em>}' operation. <!--
+	 * begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @see #getHospitalAdmissionDiagnosisSection(VDTInpatientSummary)
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String GET_HOSPITAL_ADMISSION_DIAGNOSIS_SECTION__EOCL_EXP = "self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(mu2consol::HospitalAdmissionDiagnosisSection))->asSequence()->any(true).oclAsType(mu2consol::HospitalAdmissionDiagnosisSection)";
+	protected static final String GET_HOSPITAL_ADMISSION_DIAGNOSIS_SECTION__EOCL_EXP = "self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::HospitalAdmissionDiagnosisSection))->asSequence()->any(true).oclAsType(consol::HospitalAdmissionDiagnosisSection)";
 
 	/**
-	 * The cached OCL query for the '{@link #getHospitalAdmissionDiagnosisSection(VDTInpatientSummary) <em>Get Hospital Admission Diagnosis Section</em>}' query operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * The cached OCL query for the '
+	 * {@link #getHospitalAdmissionDiagnosisSection(VDTInpatientSummary)
+	 * <em>Get Hospital Admission Diagnosis Section</em>}' query operation. <!--
+	 * begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @see #getHospitalAdmissionDiagnosisSection(VDTInpatientSummary)
 	 * @generated
 	 * @ordered
@@ -670,16 +654,21 @@ public class VDTInpatientSummaryOperations extends ViewDownloadTransmitSummaryOp
 	protected static OCLExpression<EClassifier> GET_HOSPITAL_ADMISSION_DIAGNOSIS_SECTION__EOCL_QRY;
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(mu2consol::HospitalAdmissionDiagnosisSection))->asSequence()->any(true).oclAsType(mu2consol::HospitalAdmissionDiagnosisSection)
-	 * @param vdtInpatientSummary The receiving '<em><b>VDT Inpatient Summary</b></em>' model object.
-	 * <!-- end-model-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc --> <!-- begin-model-doc -->
+	 * self.getAllSections()->select(section : cda::Section | not
+	 * section.oclIsUndefined() and
+	 * section.oclIsKindOf(consol::HospitalAdmissionDiagnosisSection
+	 * ))->asSequence
+	 * ()->any(true).oclAsType(consol::HospitalAdmissionDiagnosisSection)
+	 * 
+	 * @param vdtInpatientSummary
+	 *            The receiving '<em><b>VDT Inpatient Summary</b></em>' model
+	 *            object. <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  HospitalAdmissionDiagnosisSection getHospitalAdmissionDiagnosisSection(VDTInpatientSummary vdtInpatientSummary) {
+
+	public static HospitalAdmissionDiagnosisSection getHospitalAdmissionDiagnosisSection(
+			VDTInpatientSummary vdtInpatientSummary) {
 		if (GET_HOSPITAL_ADMISSION_DIAGNOSIS_SECTION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(Mu2consolPackage.Literals.VDT_INPATIENT_SUMMARY, Mu2consolPackage.Literals.VDT_INPATIENT_SUMMARY.getEAllOperations().get(328));
@@ -705,9 +694,11 @@ public class VDTInpatientSummaryOperations extends ViewDownloadTransmitSummaryOp
 	protected static final String GET_CHIEF_COMPLAINT_SECTION__EOCL_EXP = "self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::ChiefComplaintSection))->asSequence()->any(true).oclAsType(consol::ChiefComplaintSection)";
 
 	/**
-	 * The cached OCL query for the '{@link #getChiefComplaintSection(VDTInpatientSummary) <em>Get Chief Complaint Section</em>}' query operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * The cached OCL query for the '
+	 * {@link #getChiefComplaintSection(VDTInpatientSummary)
+	 * <em>Get Chief Complaint Section</em>}' query operation. <!--
+	 * begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @see #getChiefComplaintSection(VDTInpatientSummary)
 	 * @generated
 	 * @ordered
@@ -715,16 +706,20 @@ public class VDTInpatientSummaryOperations extends ViewDownloadTransmitSummaryOp
 	protected static OCLExpression<EClassifier> GET_CHIEF_COMPLAINT_SECTION__EOCL_QRY;
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::ChiefComplaintSection))->asSequence()->any(true).oclAsType(consol::ChiefComplaintSection)
-	 * @param vdtInpatientSummary The receiving '<em><b>VDT Inpatient Summary</b></em>' model object.
-	 * <!-- end-model-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc --> <!-- begin-model-doc -->
+	 * self.getAllSections()->select(section : cda::Section | not
+	 * section.oclIsUndefined() and
+	 * section.oclIsKindOf(consol::ChiefComplaintSection
+	 * ))->asSequence()->any(true).oclAsType(consol::ChiefComplaintSection)
+	 * 
+	 * @param vdtInpatientSummary
+	 *            The receiving '<em><b>VDT Inpatient Summary</b></em>' model
+	 *            object. <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  ChiefComplaintSection getChiefComplaintSection(VDTInpatientSummary vdtInpatientSummary) {
+
+	public static ChiefComplaintSection getChiefComplaintSection(
+			VDTInpatientSummary vdtInpatientSummary) {
 		if (GET_CHIEF_COMPLAINT_SECTION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(Mu2consolPackage.Literals.VDT_INPATIENT_SUMMARY, Mu2consolPackage.Literals.VDT_INPATIENT_SUMMARY.getEAllOperations().get(329));
@@ -741,8 +736,8 @@ public class VDTInpatientSummaryOperations extends ViewDownloadTransmitSummaryOp
 
 	/**
 	 * The cached OCL expression body for the '{@link #getReasonForVisitSection(VDTInpatientSummary) <em>Get Reason For Visit Section</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc
+	 * --> <!-- end-user-doc -->
 	 * @see #getReasonForVisitSection(VDTInpatientSummary)
 	 * @generated
 	 * @ordered
@@ -750,9 +745,11 @@ public class VDTInpatientSummaryOperations extends ViewDownloadTransmitSummaryOp
 	protected static final String GET_REASON_FOR_VISIT_SECTION__EOCL_EXP = "self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::ReasonForVisitSection))->asSequence()->any(true).oclAsType(consol::ReasonForVisitSection)";
 
 	/**
-	 * The cached OCL query for the '{@link #getReasonForVisitSection(VDTInpatientSummary) <em>Get Reason For Visit Section</em>}' query operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * The cached OCL query for the '
+	 * {@link #getReasonForVisitSection(VDTInpatientSummary)
+	 * <em>Get Reason For Visit Section</em>}' query operation. <!--
+	 * begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @see #getReasonForVisitSection(VDTInpatientSummary)
 	 * @generated
 	 * @ordered
@@ -760,16 +757,20 @@ public class VDTInpatientSummaryOperations extends ViewDownloadTransmitSummaryOp
 	protected static OCLExpression<EClassifier> GET_REASON_FOR_VISIT_SECTION__EOCL_QRY;
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::ReasonForVisitSection))->asSequence()->any(true).oclAsType(consol::ReasonForVisitSection)
-	 * @param vdtInpatientSummary The receiving '<em><b>VDT Inpatient Summary</b></em>' model object.
-	 * <!-- end-model-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc --> <!-- begin-model-doc -->
+	 * self.getAllSections()->select(section : cda::Section | not
+	 * section.oclIsUndefined() and
+	 * section.oclIsKindOf(consol::ReasonForVisitSection
+	 * ))->asSequence()->any(true).oclAsType(consol::ReasonForVisitSection)
+	 * 
+	 * @param vdtInpatientSummary
+	 *            The receiving '<em><b>VDT Inpatient Summary</b></em>' model
+	 *            object. <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  ReasonForVisitSection getReasonForVisitSection(VDTInpatientSummary vdtInpatientSummary) {
+
+	public static ReasonForVisitSection getReasonForVisitSection(
+			VDTInpatientSummary vdtInpatientSummary) {
 		if (GET_REASON_FOR_VISIT_SECTION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(Mu2consolPackage.Literals.VDT_INPATIENT_SUMMARY, Mu2consolPackage.Literals.VDT_INPATIENT_SUMMARY.getEAllOperations().get(330));
@@ -786,8 +787,7 @@ public class VDTInpatientSummaryOperations extends ViewDownloadTransmitSummaryOp
 
 	/**
 	 * The cached OCL expression body for the '{@link #getChiefComplaintAndReasonForVisitSection(VDTInpatientSummary) <em>Get Chief Complaint And Reason For Visit Section</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @see #getChiefComplaintAndReasonForVisitSection(VDTInpatientSummary)
 	 * @generated
 	 * @ordered
@@ -796,8 +796,7 @@ public class VDTInpatientSummaryOperations extends ViewDownloadTransmitSummaryOp
 
 	/**
 	 * The cached OCL query for the '{@link #getChiefComplaintAndReasonForVisitSection(VDTInpatientSummary) <em>Get Chief Complaint And Reason For Visit Section</em>}' query operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @see #getChiefComplaintAndReasonForVisitSection(VDTInpatientSummary)
 	 * @generated
 	 * @ordered
@@ -805,16 +804,21 @@ public class VDTInpatientSummaryOperations extends ViewDownloadTransmitSummaryOp
 	protected static OCLExpression<EClassifier> GET_CHIEF_COMPLAINT_AND_REASON_FOR_VISIT_SECTION__EOCL_QRY;
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::ChiefComplaintAndReasonForVisitSection))->asSequence()->any(true).oclAsType(consol::ChiefComplaintAndReasonForVisitSection)
-	 * @param vdtInpatientSummary The receiving '<em><b>VDT Inpatient Summary</b></em>' model object.
-	 * <!-- end-model-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc --> <!-- begin-model-doc -->
+	 * self.getAllSections()->select(section : cda::Section | not
+	 * section.oclIsUndefined() and
+	 * section.oclIsKindOf(consol::ChiefComplaintAndReasonForVisitSection
+	 * ))->asSequence
+	 * ()->any(true).oclAsType(consol::ChiefComplaintAndReasonForVisitSection)
+	 * 
+	 * @param vdtInpatientSummary
+	 *            The receiving '<em><b>VDT Inpatient Summary</b></em>' model
+	 *            object. <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  ChiefComplaintAndReasonForVisitSection getChiefComplaintAndReasonForVisitSection(VDTInpatientSummary vdtInpatientSummary) {
+
+	public static ChiefComplaintAndReasonForVisitSection getChiefComplaintAndReasonForVisitSection(
+			VDTInpatientSummary vdtInpatientSummary) {
 		if (GET_CHIEF_COMPLAINT_AND_REASON_FOR_VISIT_SECTION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(Mu2consolPackage.Literals.VDT_INPATIENT_SUMMARY, Mu2consolPackage.Literals.VDT_INPATIENT_SUMMARY.getEAllOperations().get(331));
@@ -830,9 +834,11 @@ public class VDTInpatientSummaryOperations extends ViewDownloadTransmitSummaryOp
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #getHospitalDischargeMedicationsSection(VDTInpatientSummary) <em>Get Hospital Discharge Medications Section</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * The cached OCL expression body for the '
+	 * {@link #getHospitalDischargeMedicationsSection(VDTInpatientSummary)
+	 * <em>Get Hospital Discharge Medications Section</em>}' operation. <!--
+	 * begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @see #getHospitalDischargeMedicationsSection(VDTInpatientSummary)
 	 * @generated
 	 * @ordered
@@ -841,26 +847,29 @@ public class VDTInpatientSummaryOperations extends ViewDownloadTransmitSummaryOp
 
 	/**
 	 * The cached OCL query for the '{@link #getHospitalDischargeMedicationsSection(VDTInpatientSummary) <em>Get Hospital Discharge Medications Section</em>}' query operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @see #getHospitalDischargeMedicationsSection(VDTInpatientSummary)
 	 * @generated
 	 * @ordered
 	 */
 	protected static OCLExpression<EClassifier> GET_HOSPITAL_DISCHARGE_MEDICATIONS_SECTION__EOCL_QRY;
 
-
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::HospitalDischargeMedicationsSection))->asSequence()->any(true).oclAsType(consol::HospitalDischargeMedicationsSection)
-	 * @param vdtInpatientSummary The receiving '<em><b>VDT Inpatient Summary</b></em>' model object.
-	 * <!-- end-model-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc --> <!-- begin-model-doc -->
+	 * self.getAllSections()->select(section : cda::Section | not
+	 * section.oclIsUndefined() and
+	 * section.oclIsKindOf(consol::HospitalDischargeMedicationsSection
+	 * ))->asSequence
+	 * ()->any(true).oclAsType(consol::HospitalDischargeMedicationsSection)
+	 * 
+	 * @param vdtInpatientSummary
+	 *            The receiving '<em><b>VDT Inpatient Summary</b></em>' model
+	 *            object. <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  HospitalDischargeMedicationsSection getHospitalDischargeMedicationsSection(VDTInpatientSummary vdtInpatientSummary) {
+
+	public static HospitalDischargeMedicationsSection getHospitalDischargeMedicationsSection(
+			VDTInpatientSummary vdtInpatientSummary) {
 		if (GET_HOSPITAL_DISCHARGE_MEDICATIONS_SECTION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(Mu2consolPackage.Literals.VDT_INPATIENT_SUMMARY, Mu2consolPackage.Literals.VDT_INPATIENT_SUMMARY.getEAllOperations().get(332));

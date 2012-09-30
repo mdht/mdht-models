@@ -11,6 +11,7 @@ import java.util.Map;
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.ecore.EObject;
 import org.openhealthtools.mdht.emf.runtime.util.Initializer;
+import org.openhealthtools.mdht.uml.cda.consol.HospitalAdmissionDiagnosisSection;
 
 /**
  * <!-- begin-user-doc --> A representation of the model object '
@@ -70,43 +71,78 @@ public interface GeneralHeaderConstraints extends
 			DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.documentationOf->excluding(null).serviceEvent->excluding(null).performer->excluding(null).assignedEntity->excluding(null)->reject(assignedPerson->one(assignedPerson : cda::Person | not assignedPerson.oclIsUndefined() and assignedPerson.oclIsKindOf(rim::Entity)))
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.documentationOf->excluding(null).serviceEvent->excluding(null).performer->excluding(null).assignedEntity->excluding(null)->reject(assignedPerson->one(assignedPerson : cda::Person | not assignedPerson.oclIsUndefined() and assignedPerson.oclIsKindOf(rim::Entity)))'"
+	 * <!-- begin-user-doc --> <!-- end-user-doc --> <!-- begin-model-doc -->
+	 * self.documentationOf->excluding(null).serviceEvent->excluding(null).
+	 * performer
+	 * ->excluding(null).assignedEntity->excluding(null)->reject(assignedPerson
+	 * ->one(assignedPerson : cda::Person | not assignedPerson.oclIsUndefined()
+	 * and assignedPerson.oclIsKindOf(rim::Entity)))
+	 * 
+	 * @param diagnostics
+	 *            The chain of diagnostics to which problems are to be appended.
+	 * @param context
+	 *            The cache of context-specific information. <!-- end-model-doc
+	 *            -->
+	 * @model annotation=
+	 *        "http://www.eclipse.org/uml2/1.1.0/GenModel body='self.documentationOf->excluding(null).serviceEvent->excluding(null).performer->excluding(null).assignedEntity->excluding(null)->reject(assignedPerson->one(assignedPerson : cda::Person | not assignedPerson.oclIsUndefined() and assignedPerson.oclIsKindOf(rim::Entity)))'"
 	 * @generated
 	 */
-	boolean validateGeneralHeaderConstraintsDocumentationOfServiceEventPerformer1AssignedEntityAssignedPerson(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateGeneralHeaderConstraintsDocumentationOfServiceEventPerformer1AssignedEntityAssignedPerson(
+			DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.componentOf->excluding(null).encompassingEncounter->excluding(null)->reject(encounterParticipant->exists(encounterParticipant : cda::EncounterParticipant | not encounterParticipant.oclIsUndefined() and encounterParticipant.oclIsKindOf(rim::Participation)))
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.componentOf->excluding(null).encompassingEncounter->excluding(null)->reject(encounterParticipant->exists(encounterParticipant : cda::EncounterParticipant | not encounterParticipant.oclIsUndefined() and encounterParticipant.oclIsKindOf(rim::Participation)))'"
+	 * <!-- begin-user-doc --> <!-- end-user-doc --> <!-- begin-model-doc -->
+	 * self
+	 * .componentOf->excluding(null).encompassingEncounter->excluding(null)->
+	 * reject(encounterParticipant->exists(encounterParticipant :
+	 * cda::EncounterParticipant | not encounterParticipant.oclIsUndefined() and
+	 * encounterParticipant.oclIsKindOf(rim::Participation)))
+	 * 
+	 * @param diagnostics
+	 *            The chain of diagnostics to which problems are to be appended.
+	 * @param context
+	 *            The cache of context-specific information. <!-- end-model-doc
+	 *            -->
+	 * @model annotation=
+	 *        "http://www.eclipse.org/uml2/1.1.0/GenModel body='self.componentOf->excluding(null).encompassingEncounter->excluding(null)->reject(encounterParticipant->exists(encounterParticipant : cda::EncounterParticipant | not encounterParticipant.oclIsUndefined() and encounterParticipant.oclIsKindOf(rim::Participation)))'"
 	 * @generated
 	 */
-	boolean validateGeneralHeaderConstraintsComponent1EncompassingEncounterEncounterParticipant(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateGeneralHeaderConstraintsComponent1EncompassingEncounterEncounterParticipant(
+			DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.componentOf->excluding(null)->reject(encompassingEncounter->one(encompassingEncounter : cda::EncompassingEncounter | not encompassingEncounter.oclIsUndefined() and encompassingEncounter.oclIsKindOf(cda::EncompassingEncounter)))
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.componentOf->excluding(null)->reject(encompassingEncounter->one(encompassingEncounter : cda::EncompassingEncounter | not encompassingEncounter.oclIsUndefined() and encompassingEncounter.oclIsKindOf(cda::EncompassingEncounter)))'"
+	 * <!-- begin-user-doc --> <!-- end-user-doc --> <!-- begin-model-doc -->
+	 * self.componentOf->excluding(null)->reject(encompassingEncounter->one(
+	 * encompassingEncounter : cda::EncompassingEncounter | not
+	 * encompassingEncounter.oclIsUndefined() and
+	 * encompassingEncounter.oclIsKindOf(cda::EncompassingEncounter)))
+	 * 
+	 * @param diagnostics
+	 *            The chain of diagnostics to which problems are to be appended.
+	 * @param context
+	 *            The cache of context-specific information. <!-- end-model-doc
+	 *            -->
+	 * @model annotation=
+	 *        "http://www.eclipse.org/uml2/1.1.0/GenModel body='self.componentOf->excluding(null)->reject(encompassingEncounter->one(encompassingEncounter : cda::EncompassingEncounter | not encompassingEncounter.oclIsUndefined() and encompassingEncounter.oclIsKindOf(cda::EncompassingEncounter)))'"
 	 * @generated
 	 */
-	boolean validateGeneralHeaderConstraintsComponent1EncompassingEncounter(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateGeneralHeaderConstraintsComponent1EncompassingEncounter(
+			DiagnosticChain diagnostics, Map<Object, Object> context);
+
+	/**
+	 * <!-- begin-user-doc --> <!-- end-user-doc --> <!-- begin-model-doc -->
+	 * self.getAllSections()->select(section : cda::Section | not
+	 * section.oclIsUndefined() and
+	 * section.oclIsKindOf(consol::HospitalAdmissionDiagnosisSection
+	 * ))->asSequence
+	 * ()->any(true).oclAsType(consol::HospitalAdmissionDiagnosisSection) <!--
+	 * end-model-doc -->
+	 * 
+	 * @model required="true" ordered="false" annotation=
+	 *        "http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::HospitalAdmissionDiagnosisSection))->asSequence()->any(true).oclAsType(consol::HospitalAdmissionDiagnosisSection)'"
+	 * @generated
+	 */
+	HospitalAdmissionDiagnosisSection retrieveHospitalAdmissionDiagnosisSection();
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->

@@ -25,18 +25,18 @@ import org.openhealthtools.mdht.uml.cda.mu2consol.ResultsSection;
 import org.openhealthtools.mdht.uml.cda.mu2consol.operations.ResultsSectionOperations;
 
 /**
- * <!-- begin-user-doc -->
- * An implementation of the model object '<em><b>Results Section</b></em>'.
- * <!-- end-user-doc -->
+ * <!-- begin-user-doc --> An implementation of the model object '
+ * <em><b>Results Section</b></em>'. <!-- end-user-doc -->
  * <p>
  * </p>
  *
  * @generated
  */
-public class ResultsSectionImpl extends org.openhealthtools.mdht.uml.cda.consol.impl.ResultsSectionImpl implements ResultsSection {
+public class ResultsSectionImpl extends
+		org.openhealthtools.mdht.uml.cda.consol.impl.ResultsSectionImpl
+		implements ResultsSection {
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @generated
 	 */
 	protected ResultsSectionImpl() {
@@ -44,8 +44,7 @@ public class ResultsSectionImpl extends org.openhealthtools.mdht.uml.cda.consol.
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @generated
 	 */
 	@Override
@@ -54,17 +53,16 @@ public class ResultsSectionImpl extends org.openhealthtools.mdht.uml.cda.consol.
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateMu2consolResultsSectionResultOrganizer(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateMu2consolResultsSectionResultOrganizer(
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ResultsSectionOperations.validateMu2consolResultsSectionResultOrganizer(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @generated
 	 */
 	public EList<ResultOrganizer> getMu2consolResultOrganizers() {
@@ -72,32 +70,32 @@ public class ResultsSectionImpl extends org.openhealthtools.mdht.uml.cda.consol.
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @generated
 	 */
 	@Override
-	public boolean validateResultsSectionEntriesOptionalTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateResultsSectionEntriesOptionalTemplateId(
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ResultsSectionOperations.validateResultsSectionEntriesOptionalTemplateId(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @generated
 	 */
 	@Override
 	public ResultsSection init() {
 	    return Initializer.Util.init(this);
 	}
-    /**
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+
+	/**
+     * <!-- begin-user-doc --> <!-- end-user-doc -->
      * @generated
      */
-    @Override
-	public ResultsSection init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+	@Override
+	public ResultsSection init(
+			Iterable<? extends Initializer<? extends EObject>> initializers) {
         Initializer.Util.init(this, initializers);
         return this;
     }
-} //ResultsSectionImpl
+} // ResultsSectionImpl

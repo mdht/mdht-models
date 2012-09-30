@@ -23,18 +23,18 @@ import org.openhealthtools.mdht.uml.cda.mu2consol.Mu2consolPackage;
 import org.openhealthtools.mdht.uml.cda.mu2consol.operations.EncounterActivitiesOperations;
 
 /**
- * <!-- begin-user-doc -->
- * An implementation of the model object '<em><b>Encounter Activities</b></em>'.
- * <!-- end-user-doc -->
+ * <!-- begin-user-doc --> An implementation of the model object '
+ * <em><b>Encounter Activities</b></em>'. <!-- end-user-doc -->
  * <p>
  * </p>
  *
  * @generated
  */
-public class EncounterActivitiesImpl extends org.openhealthtools.mdht.uml.cda.consol.impl.EncounterActivitiesImpl implements EncounterActivities {
+public class EncounterActivitiesImpl extends
+		org.openhealthtools.mdht.uml.cda.consol.impl.EncounterActivitiesImpl
+		implements EncounterActivities {
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @generated
 	 */
 	protected EncounterActivitiesImpl() {
@@ -42,8 +42,7 @@ public class EncounterActivitiesImpl extends org.openhealthtools.mdht.uml.cda.co
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @generated
 	 */
 	@Override
@@ -52,41 +51,41 @@ public class EncounterActivitiesImpl extends org.openhealthtools.mdht.uml.cda.co
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateMu2consolEncounterActivitiesCodeValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateMu2consolEncounterActivitiesCodeValue(
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return EncounterActivitiesOperations.validateMu2consolEncounterActivitiesCodeValue(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @generated
 	 */
 	@Override
-	public boolean validateEncounterActivitiesTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateEncounterActivitiesTemplateId(
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return EncounterActivitiesOperations.validateEncounterActivitiesTemplateId(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @generated
 	 */
 	@Override
 	public EncounterActivities init() {
 	    return Initializer.Util.init(this);
 	}
-    /**
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+
+	/**
+     * <!-- begin-user-doc --> <!-- end-user-doc -->
      * @generated
      */
-    @Override
-	public EncounterActivities init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+	@Override
+	public EncounterActivities init(
+			Iterable<? extends Initializer<? extends EObject>> initializers) {
         Initializer.Util.init(this, initializers);
         return this;
     }
-} //EncounterActivitiesImpl
+} // EncounterActivitiesImpl

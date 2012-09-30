@@ -102,20 +102,20 @@ public class ClinicalOfficeVisitSummaryImpl extends
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateClinicalOfficeVisitSummaryEffectiveTime(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateClinicalOfficeVisitSummaryEffectiveTime(
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ClinicalOfficeVisitSummaryOperations.validateClinicalOfficeVisitSummaryEffectiveTime(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateClinicalOfficeVisitSummaryPlanOfCareActOrEncounter(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateClinicalOfficeVisitSummaryPlanOfCareActOrEncounter(
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ClinicalOfficeVisitSummaryOperations.validateClinicalOfficeVisitSummaryPlanOfCareActOrEncounter(this, diagnostics, context);
 	}
 
@@ -129,20 +129,20 @@ public class ClinicalOfficeVisitSummaryImpl extends
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateClinicalOfficeVisitSummaryMu2consolPlanOfCareSectionCarePlanningForPlanOfCare(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateClinicalOfficeVisitSummaryMu2consolPlanOfCareSectionCarePlanningForPlanOfCare(
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ClinicalOfficeVisitSummaryOperations.validateClinicalOfficeVisitSummaryMu2consolPlanOfCareSectionCarePlanningForPlanOfCare(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateClinicalOfficeVisitSummaryMu2consolPlanOfCareSectionPlanOfCareActivityObservation(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateClinicalOfficeVisitSummaryMu2consolPlanOfCareSectionPlanOfCareActivityObservation(
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ClinicalOfficeVisitSummaryOperations.validateClinicalOfficeVisitSummaryMu2consolPlanOfCareSectionPlanOfCareActivityObservation(this, diagnostics, context);
 	}
 
@@ -156,20 +156,20 @@ public class ClinicalOfficeVisitSummaryImpl extends
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateClinicalOfficeVisitSummaryMedicationsSection(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateClinicalOfficeVisitSummaryMedicationsSection(
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ClinicalOfficeVisitSummaryOperations.validateClinicalOfficeVisitSummaryMedicationsSection(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateClinicalOfficeVisitSummaryAllergiesSection(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateClinicalOfficeVisitSummaryAllergiesSection(
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ClinicalOfficeVisitSummaryOperations.validateClinicalOfficeVisitSummaryAllergiesSection(this, diagnostics, context);
 	}
 
@@ -183,11 +183,11 @@ public class ClinicalOfficeVisitSummaryImpl extends
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateClinicalOfficeVisitSummaryVitalSignsSection(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateClinicalOfficeVisitSummaryVitalSignsSection(
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ClinicalOfficeVisitSummaryOperations.validateClinicalOfficeVisitSummaryVitalSignsSection(this, diagnostics, context);
 	}
 
@@ -210,20 +210,20 @@ public class ClinicalOfficeVisitSummaryImpl extends
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateClinicalOfficeVisitSummaryImmunizationsSection(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateClinicalOfficeVisitSummaryImmunizationsSection(
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ClinicalOfficeVisitSummaryOperations.validateClinicalOfficeVisitSummaryImmunizationsSection(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateClinicalOfficeVisitSummaryMedicationsAdministeredSection(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateClinicalOfficeVisitSummaryMedicationsAdministeredSection(
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ClinicalOfficeVisitSummaryOperations.validateClinicalOfficeVisitSummaryMedicationsAdministeredSection(this, diagnostics, context);
 	}
 
@@ -246,17 +246,16 @@ public class ClinicalOfficeVisitSummaryImpl extends
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateClinicalOfficeVisitSummaryMu2consolSocialHistorySectionSmokingStatusObservation(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateClinicalOfficeVisitSummaryMu2consolSocialHistorySectionSmokingStatusObservation(
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ClinicalOfficeVisitSummaryOperations.validateClinicalOfficeVisitSummaryMu2consolSocialHistorySectionSmokingStatusObservation(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @generated
 	 */
 	public PlanOfCareSection retrievePlanOfCareSection() {
@@ -282,11 +281,11 @@ public class ClinicalOfficeVisitSummaryImpl extends
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateClinicalOfficeVisitSummaryMu2consolMedicationsAdministeredSectionMedicationActivity(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateClinicalOfficeVisitSummaryMu2consolMedicationsAdministeredSectionMedicationActivity(
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ClinicalOfficeVisitSummaryOperations.validateClinicalOfficeVisitSummaryMu2consolMedicationsAdministeredSectionMedicationActivity(this, diagnostics, context);
 	}
 
@@ -309,11 +308,11 @@ public class ClinicalOfficeVisitSummaryImpl extends
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateClinicalOfficeVisitSummaryMu2consolInstructionsSectionInstructions(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateClinicalOfficeVisitSummaryMu2consolInstructionsSectionInstructions(
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ClinicalOfficeVisitSummaryOperations.validateClinicalOfficeVisitSummaryMu2consolInstructionsSectionInstructions(this, diagnostics, context);
 	}
 

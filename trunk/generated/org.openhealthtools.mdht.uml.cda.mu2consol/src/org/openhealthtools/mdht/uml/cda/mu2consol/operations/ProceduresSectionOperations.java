@@ -32,9 +32,9 @@ import org.openhealthtools.mdht.uml.cda.mu2consol.ProceduresSection;
 import org.openhealthtools.mdht.uml.cda.mu2consol.util.Mu2consolValidator;
 
 /**
- * <!-- begin-user-doc -->
- * A static utility class that provides operations related to '<em><b>Procedures Section</b></em>' model objects.
- * <!-- end-user-doc -->
+ * <!-- begin-user-doc --> A static utility class that provides operations
+ * related to '<em><b>Procedures Section</b></em>' model objects. <!--
+ * end-user-doc -->
  *
  * <p>
  * The following operations are supported:
@@ -47,10 +47,11 @@ import org.openhealthtools.mdht.uml.cda.mu2consol.util.Mu2consolValidator;
  *
  * @generated
  */
-public class ProceduresSectionOperations extends org.openhealthtools.mdht.uml.cda.consol.operations.ProceduresSectionOperations {
+public class ProceduresSectionOperations
+		extends
+		org.openhealthtools.mdht.uml.cda.consol.operations.ProceduresSectionOperations {
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @generated
 	 */
 	protected ProceduresSectionOperations() {
@@ -59,8 +60,7 @@ public class ProceduresSectionOperations extends org.openhealthtools.mdht.uml.cd
 
 	/**
 	 * The cached OCL expression body for the '{@link #validateMu2consolProceduresSectionProcedureActivityProcedure(ProceduresSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Mu2consol Procedures Section Procedure Activity Procedure</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @see #validateMu2consolProceduresSectionProcedureActivityProcedure(ProceduresSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	 * @generated
 	 * @ordered
@@ -69,29 +69,34 @@ public class ProceduresSectionOperations extends org.openhealthtools.mdht.uml.cd
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateMu2consolProceduresSectionProcedureActivityProcedure(ProceduresSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Mu2consol Procedures Section Procedure Activity Procedure</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @see #validateMu2consolProceduresSectionProcedureActivityProcedure(ProceduresSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	 * @generated
 	 * @ordered
 	 */
-	
+
 	protected static Constraint VALIDATE_MU2CONSOL_PROCEDURES_SECTION_PROCEDURE_ACTIVITY_PROCEDURE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-	
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.entry->exists(entry : cda::Entry | not entry.procedure.oclIsUndefined() and entry.procedure.oclIsKindOf(mu2consol::ProcedureActivityProcedure))
-	 * @param proceduresSection The receiving '<em><b>Procedures Section</b></em>' model object.
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc --> <!-- begin-model-doc -->
+	 * self.entry->exists(entry : cda::Entry | not
+	 * entry.procedure.oclIsUndefined() and
+	 * entry.procedure.oclIsKindOf(mu2consol::ProcedureActivityProcedure))
+	 * 
+	 * @param proceduresSection
+	 *            The receiving '<em><b>Procedures Section</b></em>' model
+	 *            object.
+	 * @param diagnostics
+	 *            The chain of diagnostics to which problems are to be appended.
+	 * @param context
+	 *            The cache of context-specific information. <!-- end-model-doc
+	 *            -->
 	 * @generated
 	 */
-	
-	public static  boolean validateMu2consolProceduresSectionProcedureActivityProcedure(ProceduresSection proceduresSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+	public static boolean validateMu2consolProceduresSectionProcedureActivityProcedure(
+			ProceduresSection proceduresSection, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
   	  
 		if (VALIDATE_MU2CONSOL_PROCEDURES_SECTION_PROCEDURE_ACTIVITY_PROCEDURE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
@@ -120,9 +125,11 @@ public class ProceduresSectionOperations extends org.openhealthtools.mdht.uml.cd
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #getMu2consolProcedureActivityProcedures(ProceduresSection) <em>Get Mu2consol Procedure Activity Procedures</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * The cached OCL expression body for the '
+	 * {@link #getMu2consolProcedureActivityProcedures(ProceduresSection)
+	 * <em>Get Mu2consol Procedure Activity Procedures</em>}' operation. <!--
+	 * begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @see #getMu2consolProcedureActivityProcedures(ProceduresSection)
 	 * @generated
 	 * @ordered
@@ -131,8 +138,7 @@ public class ProceduresSectionOperations extends org.openhealthtools.mdht.uml.cd
 
 	/**
 	 * The cached OCL query for the '{@link #getMu2consolProcedureActivityProcedures(ProceduresSection) <em>Get Mu2consol Procedure Activity Procedures</em>}' query operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @see #getMu2consolProcedureActivityProcedures(ProceduresSection)
 	 * @generated
 	 * @ordered
@@ -140,16 +146,20 @@ public class ProceduresSectionOperations extends org.openhealthtools.mdht.uml.cd
 	protected static OCLExpression<EClassifier> GET_MU2CONSOL_PROCEDURE_ACTIVITY_PROCEDURES__EOCL_QRY;
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.getProcedures()->select(procedure : cda::Procedure | not procedure.oclIsUndefined() and procedure.oclIsKindOf(mu2consol::ProcedureActivityProcedure)).oclAsType(mu2consol::ProcedureActivityProcedure)
-	 * @param proceduresSection The receiving '<em><b>Procedures Section</b></em>' model object.
-	 * <!-- end-model-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc --> <!-- begin-model-doc -->
+	 * self.getProcedures()->select(procedure : cda::Procedure | not
+	 * procedure.oclIsUndefined() and
+	 * procedure.oclIsKindOf(mu2consol::ProcedureActivityProcedure
+	 * )).oclAsType(mu2consol::ProcedureActivityProcedure)
+	 * 
+	 * @param proceduresSection
+	 *            The receiving '<em><b>Procedures Section</b></em>' model
+	 *            object. <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  EList<ProcedureActivityProcedure> getMu2consolProcedureActivityProcedures(ProceduresSection proceduresSection) {
+
+	public static EList<ProcedureActivityProcedure> getMu2consolProcedureActivityProcedures(
+			ProceduresSection proceduresSection) {
 		if (GET_MU2CONSOL_PROCEDURE_ACTIVITY_PROCEDURES__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(Mu2consolPackage.Literals.PROCEDURES_SECTION, Mu2consolPackage.Literals.PROCEDURES_SECTION.getEAllOperations().get(78));
@@ -168,8 +178,7 @@ public class ProceduresSectionOperations extends org.openhealthtools.mdht.uml.cd
 
 	/**
 	 * The cached OCL expression body for the '{@link #validateProceduresSectionEntriesOptionalTemplateId(ProceduresSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Procedures Section Entries Optional Template Id</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @see #validateProceduresSectionEntriesOptionalTemplateId(ProceduresSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	 * @generated
 	 * @ordered
@@ -178,29 +187,33 @@ public class ProceduresSectionOperations extends org.openhealthtools.mdht.uml.cd
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateProceduresSectionEntriesOptionalTemplateId(ProceduresSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Procedures Section Entries Optional Template Id</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @see #validateProceduresSectionEntriesOptionalTemplateId(ProceduresSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	 * @generated
 	 * @ordered
 	 */
-	
+
 	protected static Constraint VALIDATE_PROCEDURES_SECTION_ENTRIES_OPTIONAL_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-	
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.22.2.7.1')
-	 * @param proceduresSection The receiving '<em><b>Procedures Section</b></em>' model object.
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc --> <!-- begin-model-doc -->
+	 * self.templateId->exists(id : datatypes::II | id.root =
+	 * '2.16.840.1.113883.10.20.22.2.7.1')
+	 * 
+	 * @param proceduresSection
+	 *            The receiving '<em><b>Procedures Section</b></em>' model
+	 *            object.
+	 * @param diagnostics
+	 *            The chain of diagnostics to which problems are to be appended.
+	 * @param context
+	 *            The cache of context-specific information. <!-- end-model-doc
+	 *            -->
 	 * @generated
 	 */
-	
-	public static  boolean validateProceduresSectionEntriesOptionalTemplateId(ProceduresSection proceduresSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+	public static boolean validateProceduresSectionEntriesOptionalTemplateId(
+			ProceduresSection proceduresSection, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
   	  
 		if (VALIDATE_PROCEDURES_SECTION_ENTRIES_OPTIONAL_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();

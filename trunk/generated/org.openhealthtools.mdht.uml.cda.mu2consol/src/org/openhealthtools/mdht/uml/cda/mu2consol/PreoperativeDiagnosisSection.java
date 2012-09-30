@@ -44,13 +44,14 @@ public interface PreoperativeDiagnosisSection extends
 			DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(consol::PreoperativeDiagnosis))->asSequence()->any(true).oclAsType(consol::PreoperativeDiagnosis)
-	 * <!-- end-model-doc -->
-	 * @model kind="operation" required="true" ordered="false"
-	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(consol::PreoperativeDiagnosis))->asSequence()->any(true).oclAsType(consol::PreoperativeDiagnosis)'"
+	 * <!-- begin-user-doc --> <!-- end-user-doc --> <!-- begin-model-doc -->
+	 * self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and
+	 * act.oclIsKindOf
+	 * (consol::PreoperativeDiagnosis))->asSequence()->any(true).oclAsType
+	 * (consol::PreoperativeDiagnosis) <!-- end-model-doc -->
+	 * 
+	 * @model kind="operation" required="true" ordered="false" annotation=
+	 *        "http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(consol::PreoperativeDiagnosis))->asSequence()->any(true).oclAsType(consol::PreoperativeDiagnosis)'"
 	 * @generated
 	 */
 	PreoperativeDiagnosis getMu2consolPreoperativeDiagnosis();

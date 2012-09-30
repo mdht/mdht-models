@@ -134,8 +134,7 @@ public class PlanOfCareSectionOperations
 
 	/**
 	 * The cached OCL expression body for the '{@link #validateMu2consolPlanOfCareSectionPlanOfCareActivityObservation(PlanOfCareSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Mu2consol Plan Of Care Section Plan Of Care Activity Observation</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @see #validateMu2consolPlanOfCareSectionPlanOfCareActivityObservation(PlanOfCareSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	 * @generated
 	 * @ordered
@@ -144,28 +143,34 @@ public class PlanOfCareSectionOperations
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateMu2consolPlanOfCareSectionPlanOfCareActivityObservation(PlanOfCareSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Mu2consol Plan Of Care Section Plan Of Care Activity Observation</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @see #validateMu2consolPlanOfCareSectionPlanOfCareActivityObservation(PlanOfCareSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	 * @generated
 	 * @ordered
 	 */
-	
+
 	protected static Constraint VALIDATE_MU2CONSOL_PLAN_OF_CARE_SECTION_PLAN_OF_CARE_ACTIVITY_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.entry->exists(entry : cda::Entry | not entry.observation.oclIsUndefined() and entry.observation.oclIsKindOf(consol::PlanOfCareActivityObservation))
-	 * @param planOfCareSection The receiving '<em><b>Plan Of Care Section</b></em>' model object.
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc --> <!-- begin-model-doc -->
+	 * self.entry->exists(entry : cda::Entry | not
+	 * entry.observation.oclIsUndefined() and
+	 * entry.observation.oclIsKindOf(consol::PlanOfCareActivityObservation))
+	 * 
+	 * @param planOfCareSection
+	 *            The receiving '<em><b>Plan Of Care Section</b></em>' model
+	 *            object.
+	 * @param diagnostics
+	 *            The chain of diagnostics to which problems are to be appended.
+	 * @param context
+	 *            The cache of context-specific information. <!-- end-model-doc
+	 *            -->
 	 * @generated
 	 */
-	
-	public static  boolean validateMu2consolPlanOfCareSectionPlanOfCareActivityObservation(PlanOfCareSection planOfCareSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+	public static boolean validateMu2consolPlanOfCareSectionPlanOfCareActivityObservation(
+			PlanOfCareSection planOfCareSection, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
   	  
 		if (VALIDATE_MU2CONSOL_PLAN_OF_CARE_SECTION_PLAN_OF_CARE_ACTIVITY_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
@@ -194,9 +199,11 @@ public class PlanOfCareSectionOperations
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #getMu2consolPlanOfCareActivityActs(PlanOfCareSection) <em>Get Mu2consol Plan Of Care Activity Acts</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * The cached OCL expression body for the '
+	 * {@link #getMu2consolPlanOfCareActivityActs(PlanOfCareSection)
+	 * <em>Get Mu2consol Plan Of Care Activity Acts</em>}' operation. <!--
+	 * begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @see #getMu2consolPlanOfCareActivityActs(PlanOfCareSection)
 	 * @generated
 	 * @ordered
@@ -204,9 +211,11 @@ public class PlanOfCareSectionOperations
 	protected static final String GET_MU2CONSOL_PLAN_OF_CARE_ACTIVITY_ACTS__EOCL_EXP = "self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(consol::PlanOfCareActivityAct)).oclAsType(consol::PlanOfCareActivityAct)";
 
 	/**
-	 * The cached OCL query for the '{@link #getMu2consolPlanOfCareActivityActs(PlanOfCareSection) <em>Get Mu2consol Plan Of Care Activity Acts</em>}' query operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * The cached OCL query for the '
+	 * {@link #getMu2consolPlanOfCareActivityActs(PlanOfCareSection)
+	 * <em>Get Mu2consol Plan Of Care Activity Acts</em>}' query operation. <!--
+	 * begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @see #getMu2consolPlanOfCareActivityActs(PlanOfCareSection)
 	 * @generated
 	 * @ordered
@@ -214,16 +223,19 @@ public class PlanOfCareSectionOperations
 	protected static OCLExpression<EClassifier> GET_MU2CONSOL_PLAN_OF_CARE_ACTIVITY_ACTS__EOCL_QRY;
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(consol::PlanOfCareActivityAct)).oclAsType(consol::PlanOfCareActivityAct)
-	 * @param planOfCareSection The receiving '<em><b>Plan Of Care Section</b></em>' model object.
-	 * <!-- end-model-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc --> <!-- begin-model-doc -->
+	 * self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and
+	 * act.oclIsKindOf
+	 * (consol::PlanOfCareActivityAct)).oclAsType(consol::PlanOfCareActivityAct)
+	 * 
+	 * @param planOfCareSection
+	 *            The receiving '<em><b>Plan Of Care Section</b></em>' model
+	 *            object. <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  EList<PlanOfCareActivityAct> getMu2consolPlanOfCareActivityActs(PlanOfCareSection planOfCareSection) {
+
+	public static EList<PlanOfCareActivityAct> getMu2consolPlanOfCareActivityActs(
+			PlanOfCareSection planOfCareSection) {
 		if (GET_MU2CONSOL_PLAN_OF_CARE_ACTIVITY_ACTS__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(Mu2consolPackage.Literals.PLAN_OF_CARE_SECTION, Mu2consolPackage.Literals.PLAN_OF_CARE_SECTION.getEAllOperations().get(76));
@@ -241,9 +253,11 @@ public class PlanOfCareSectionOperations
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #getMu2consolPlanOfCareActivityEncounters(PlanOfCareSection) <em>Get Mu2consol Plan Of Care Activity Encounters</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * The cached OCL expression body for the '
+	 * {@link #getMu2consolPlanOfCareActivityEncounters(PlanOfCareSection)
+	 * <em>Get Mu2consol Plan Of Care Activity Encounters</em>}' operation. <!--
+	 * begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @see #getMu2consolPlanOfCareActivityEncounters(PlanOfCareSection)
 	 * @generated
 	 * @ordered
@@ -252,8 +266,7 @@ public class PlanOfCareSectionOperations
 
 	/**
 	 * The cached OCL query for the '{@link #getMu2consolPlanOfCareActivityEncounters(PlanOfCareSection) <em>Get Mu2consol Plan Of Care Activity Encounters</em>}' query operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @see #getMu2consolPlanOfCareActivityEncounters(PlanOfCareSection)
 	 * @generated
 	 * @ordered
@@ -261,16 +274,20 @@ public class PlanOfCareSectionOperations
 	protected static OCLExpression<EClassifier> GET_MU2CONSOL_PLAN_OF_CARE_ACTIVITY_ENCOUNTERS__EOCL_QRY;
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.getEncounters()->select(encounter : cda::Encounter | not encounter.oclIsUndefined() and encounter.oclIsKindOf(consol::PlanOfCareActivityEncounter)).oclAsType(consol::PlanOfCareActivityEncounter)
-	 * @param planOfCareSection The receiving '<em><b>Plan Of Care Section</b></em>' model object.
-	 * <!-- end-model-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc --> <!-- begin-model-doc -->
+	 * self.getEncounters()->select(encounter : cda::Encounter | not
+	 * encounter.oclIsUndefined() and
+	 * encounter.oclIsKindOf(consol::PlanOfCareActivityEncounter
+	 * )).oclAsType(consol::PlanOfCareActivityEncounter)
+	 * 
+	 * @param planOfCareSection
+	 *            The receiving '<em><b>Plan Of Care Section</b></em>' model
+	 *            object. <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  EList<PlanOfCareActivityEncounter> getMu2consolPlanOfCareActivityEncounters(PlanOfCareSection planOfCareSection) {
+
+	public static EList<PlanOfCareActivityEncounter> getMu2consolPlanOfCareActivityEncounters(
+			PlanOfCareSection planOfCareSection) {
 		if (GET_MU2CONSOL_PLAN_OF_CARE_ACTIVITY_ENCOUNTERS__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(Mu2consolPackage.Literals.PLAN_OF_CARE_SECTION, Mu2consolPackage.Literals.PLAN_OF_CARE_SECTION.getEAllOperations().get(77));
@@ -289,8 +306,7 @@ public class PlanOfCareSectionOperations
 
 	/**
 	 * The cached OCL expression body for the '{@link #getMu2consolPlanOfCareActivityObservations(PlanOfCareSection) <em>Get Mu2consol Plan Of Care Activity Observations</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @see #getMu2consolPlanOfCareActivityObservations(PlanOfCareSection)
 	 * @generated
 	 * @ordered
@@ -299,8 +315,7 @@ public class PlanOfCareSectionOperations
 
 	/**
 	 * The cached OCL query for the '{@link #getMu2consolPlanOfCareActivityObservations(PlanOfCareSection) <em>Get Mu2consol Plan Of Care Activity Observations</em>}' query operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @see #getMu2consolPlanOfCareActivityObservations(PlanOfCareSection)
 	 * @generated
 	 * @ordered
@@ -308,16 +323,20 @@ public class PlanOfCareSectionOperations
 	protected static OCLExpression<EClassifier> GET_MU2CONSOL_PLAN_OF_CARE_ACTIVITY_OBSERVATIONS__EOCL_QRY;
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::PlanOfCareActivityObservation)).oclAsType(consol::PlanOfCareActivityObservation)
-	 * @param planOfCareSection The receiving '<em><b>Plan Of Care Section</b></em>' model object.
-	 * <!-- end-model-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc --> <!-- begin-model-doc -->
+	 * self.getObservations()->select(observation : cda::Observation | not
+	 * observation.oclIsUndefined() and
+	 * observation.oclIsKindOf(consol::PlanOfCareActivityObservation
+	 * )).oclAsType(consol::PlanOfCareActivityObservation)
+	 * 
+	 * @param planOfCareSection
+	 *            The receiving '<em><b>Plan Of Care Section</b></em>' model
+	 *            object. <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  EList<PlanOfCareActivityObservation> getMu2consolPlanOfCareActivityObservations(PlanOfCareSection planOfCareSection) {
+
+	public static EList<PlanOfCareActivityObservation> getMu2consolPlanOfCareActivityObservations(
+			PlanOfCareSection planOfCareSection) {
 		if (GET_MU2CONSOL_PLAN_OF_CARE_ACTIVITY_OBSERVATIONS__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(Mu2consolPackage.Literals.PLAN_OF_CARE_SECTION, Mu2consolPackage.Literals.PLAN_OF_CARE_SECTION.getEAllOperations().get(78));

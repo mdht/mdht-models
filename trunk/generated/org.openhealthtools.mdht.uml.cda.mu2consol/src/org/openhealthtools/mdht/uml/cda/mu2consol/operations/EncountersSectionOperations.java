@@ -32,9 +32,9 @@ import org.openhealthtools.mdht.uml.cda.mu2consol.Mu2consolPlugin;
 import org.openhealthtools.mdht.uml.cda.mu2consol.util.Mu2consolValidator;
 
 /**
- * <!-- begin-user-doc -->
- * A static utility class that provides operations related to '<em><b>Encounters Section</b></em>' model objects.
- * <!-- end-user-doc -->
+ * <!-- begin-user-doc --> A static utility class that provides operations
+ * related to '<em><b>Encounters Section</b></em>' model objects. <!--
+ * end-user-doc -->
  *
  * <p>
  * The following operations are supported:
@@ -47,10 +47,11 @@ import org.openhealthtools.mdht.uml.cda.mu2consol.util.Mu2consolValidator;
  *
  * @generated
  */
-public class EncountersSectionOperations extends org.openhealthtools.mdht.uml.cda.consol.operations.EncountersSectionOperations {
+public class EncountersSectionOperations
+		extends
+		org.openhealthtools.mdht.uml.cda.consol.operations.EncountersSectionOperations {
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @generated
 	 */
 	protected EncountersSectionOperations() {
@@ -59,8 +60,7 @@ public class EncountersSectionOperations extends org.openhealthtools.mdht.uml.cd
 
 	/**
 	 * The cached OCL expression body for the '{@link #validateMu2consolEncountersSectionEncounterActivities(EncountersSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Mu2consol Encounters Section Encounter Activities</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @see #validateMu2consolEncountersSectionEncounterActivities(EncountersSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	 * @generated
 	 * @ordered
@@ -69,29 +69,34 @@ public class EncountersSectionOperations extends org.openhealthtools.mdht.uml.cd
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateMu2consolEncountersSectionEncounterActivities(EncountersSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Mu2consol Encounters Section Encounter Activities</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @see #validateMu2consolEncountersSectionEncounterActivities(EncountersSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	 * @generated
 	 * @ordered
 	 */
-	
+
 	protected static Constraint VALIDATE_MU2CONSOL_ENCOUNTERS_SECTION_ENCOUNTER_ACTIVITIES__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-	
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.entry->exists(entry : cda::Entry | not entry.encounter.oclIsUndefined() and entry.encounter.oclIsKindOf(mu2consol::EncounterActivities))
-	 * @param encountersSection The receiving '<em><b>Encounters Section</b></em>' model object.
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc --> <!-- begin-model-doc -->
+	 * self.entry->exists(entry : cda::Entry | not
+	 * entry.encounter.oclIsUndefined() and
+	 * entry.encounter.oclIsKindOf(mu2consol::EncounterActivities))
+	 * 
+	 * @param encountersSection
+	 *            The receiving '<em><b>Encounters Section</b></em>' model
+	 *            object.
+	 * @param diagnostics
+	 *            The chain of diagnostics to which problems are to be appended.
+	 * @param context
+	 *            The cache of context-specific information. <!-- end-model-doc
+	 *            -->
 	 * @generated
 	 */
-	
-	public static  boolean validateMu2consolEncountersSectionEncounterActivities(EncountersSection encountersSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+	public static boolean validateMu2consolEncountersSectionEncounterActivities(
+			EncountersSection encountersSection, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
   	  
 		if (VALIDATE_MU2CONSOL_ENCOUNTERS_SECTION_ENCOUNTER_ACTIVITIES__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
@@ -120,9 +125,11 @@ public class EncountersSectionOperations extends org.openhealthtools.mdht.uml.cd
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #getMu2consolEncounterActivitiess(EncountersSection) <em>Get Mu2consol Encounter Activitiess</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * The cached OCL expression body for the '
+	 * {@link #getMu2consolEncounterActivitiess(EncountersSection)
+	 * <em>Get Mu2consol Encounter Activitiess</em>}' operation. <!--
+	 * begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @see #getMu2consolEncounterActivitiess(EncountersSection)
 	 * @generated
 	 * @ordered
@@ -130,9 +137,11 @@ public class EncountersSectionOperations extends org.openhealthtools.mdht.uml.cd
 	protected static final String GET_MU2CONSOL_ENCOUNTER_ACTIVITIESS__EOCL_EXP = "self.getEncounters()->select(encounter : cda::Encounter | not encounter.oclIsUndefined() and encounter.oclIsKindOf(mu2consol::EncounterActivities)).oclAsType(mu2consol::EncounterActivities)";
 
 	/**
-	 * The cached OCL query for the '{@link #getMu2consolEncounterActivitiess(EncountersSection) <em>Get Mu2consol Encounter Activitiess</em>}' query operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * The cached OCL query for the '
+	 * {@link #getMu2consolEncounterActivitiess(EncountersSection)
+	 * <em>Get Mu2consol Encounter Activitiess</em>}' query operation. <!--
+	 * begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @see #getMu2consolEncounterActivitiess(EncountersSection)
 	 * @generated
 	 * @ordered
@@ -140,16 +149,20 @@ public class EncountersSectionOperations extends org.openhealthtools.mdht.uml.cd
 	protected static OCLExpression<EClassifier> GET_MU2CONSOL_ENCOUNTER_ACTIVITIESS__EOCL_QRY;
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.getEncounters()->select(encounter : cda::Encounter | not encounter.oclIsUndefined() and encounter.oclIsKindOf(mu2consol::EncounterActivities)).oclAsType(mu2consol::EncounterActivities)
-	 * @param encountersSection The receiving '<em><b>Encounters Section</b></em>' model object.
-	 * <!-- end-model-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc --> <!-- begin-model-doc -->
+	 * self.getEncounters()->select(encounter : cda::Encounter | not
+	 * encounter.oclIsUndefined() and
+	 * encounter.oclIsKindOf(mu2consol::EncounterActivities
+	 * )).oclAsType(mu2consol::EncounterActivities)
+	 * 
+	 * @param encountersSection
+	 *            The receiving '<em><b>Encounters Section</b></em>' model
+	 *            object. <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  EList<EncounterActivities> getMu2consolEncounterActivitiess(EncountersSection encountersSection) {
+
+	public static EList<EncounterActivities> getMu2consolEncounterActivitiess(
+			EncountersSection encountersSection) {
 		if (GET_MU2CONSOL_ENCOUNTER_ACTIVITIESS__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(Mu2consolPackage.Literals.ENCOUNTERS_SECTION, Mu2consolPackage.Literals.ENCOUNTERS_SECTION.getEAllOperations().get(69));
@@ -168,8 +181,7 @@ public class EncountersSectionOperations extends org.openhealthtools.mdht.uml.cd
 
 	/**
 	 * The cached OCL expression body for the '{@link #validateEncountersSectionEntriesOptionalTemplateId(EncountersSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Encounters Section Entries Optional Template Id</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @see #validateEncountersSectionEntriesOptionalTemplateId(EncountersSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	 * @generated
 	 * @ordered
@@ -178,29 +190,33 @@ public class EncountersSectionOperations extends org.openhealthtools.mdht.uml.cd
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateEncountersSectionEntriesOptionalTemplateId(EncountersSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Encounters Section Entries Optional Template Id</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @see #validateEncountersSectionEntriesOptionalTemplateId(EncountersSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	 * @generated
 	 * @ordered
 	 */
-	
+
 	protected static Constraint VALIDATE_ENCOUNTERS_SECTION_ENTRIES_OPTIONAL_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-	
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.22.2.22.1')
-	 * @param encountersSection The receiving '<em><b>Encounters Section</b></em>' model object.
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc --> <!-- begin-model-doc -->
+	 * self.templateId->exists(id : datatypes::II | id.root =
+	 * '2.16.840.1.113883.10.20.22.2.22.1')
+	 * 
+	 * @param encountersSection
+	 *            The receiving '<em><b>Encounters Section</b></em>' model
+	 *            object.
+	 * @param diagnostics
+	 *            The chain of diagnostics to which problems are to be appended.
+	 * @param context
+	 *            The cache of context-specific information. <!-- end-model-doc
+	 *            -->
 	 * @generated
 	 */
-	
-	public static  boolean validateEncountersSectionEntriesOptionalTemplateId(EncountersSection encountersSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+	public static boolean validateEncountersSectionEntriesOptionalTemplateId(
+			EncountersSection encountersSection, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
   	  
 		if (VALIDATE_ENCOUNTERS_SECTION_ENTRIES_OPTIONAL_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();

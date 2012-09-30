@@ -57,8 +57,7 @@ public class PreoperativeDiagnosisSectionImpl
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @generated
 	 */
 	public PreoperativeDiagnosis getMu2consolPreoperativeDiagnosis() {

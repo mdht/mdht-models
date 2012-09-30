@@ -18,10 +18,11 @@ import org.openhealthtools.mdht.uml.cda.consol.ProblemObservation;
  * <!-- begin-user-doc --> A representation of the model object '
  * <em><b>Assessment And Plan For Condition Or Concern</b></em>'. <!--
  * end-user-doc -->
- *
- *
+ * 
+ * 
  * @see org.openhealthtools.mdht.uml.cda.mu2consol.Mu2consolPackage#getAssessmentAndPlanForConditionOrConcern()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='AssessmentAndPlanForConditionOrConcernProblemObservation'"
+ * @model annotation=
+ *        "http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='AssessmentAndPlanForConditionOrConcernProblemObservation'"
  * @generated
  */
 public interface AssessmentAndPlanForConditionOrConcern extends
@@ -60,14 +61,16 @@ public interface AssessmentAndPlanForConditionOrConcern extends
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	public AssessmentAndPlanForConditionOrConcern init();
 
 	/**
-     * <!-- begin-user-doc --> <!-- end-user-doc -->
-     * @generated
-     */
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @generated
+	 */
 	public AssessmentAndPlanForConditionOrConcern init(
 			Iterable<? extends Initializer<? extends EObject>> initializers);
 } // AssessmentAndPlanForConditionOrConcern

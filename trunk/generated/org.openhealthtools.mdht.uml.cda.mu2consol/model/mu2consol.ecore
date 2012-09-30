@@ -489,11 +489,20 @@
         </eGenericType>
       </eParameters>
     </eOperations>
+    <eOperations name="retrieveHospitalAdmissionDiagnosisSection" ordered="false"
+        lowerBound="1" eType="ecore:EClass ../../org.openhealthtools.mdht.uml.cda.consol/model/consol.ecore#//HospitalAdmissionDiagnosisSection">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::HospitalAdmissionDiagnosisSection))->asSequence()->any(true).oclAsType(consol::HospitalAdmissionDiagnosisSection)"/>
+      </eAnnotations>
+      <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
+        <details key="body" value="self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::HospitalAdmissionDiagnosisSection))->asSequence()->any(true).oclAsType(consol::HospitalAdmissionDiagnosisSection)"/>
+      </eAnnotations>
+    </eOperations>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="SummaryOfCareRecord" eSuperTypes="#//GeneralHeaderConstraints">
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
-      <details key="constraints.validation.error" value="SummaryOfCareRecordCarePlanning SummaryOfCareRecordCognitiveStatusEntries SummaryOfCareRecordFunctionalStatusEntries SummaryOfCareRecordPlanOfCareSection SummaryOfCareRecordProblemSection SummaryOfCareRecordAllergiesSection SummaryOfCareRecordImmunizationsSection SummaryOfCareRecordMedicationsSection SummaryOfCareRecordSocialHistorySection SummaryOfCareRecordResultsSection SummaryOfCareRecordVitalSignsSection SummaryOfCareRecordProceduresSection SummaryOfCareRecordSocialHistorySectionTemplateId SummaryOfCareRecordMu2consolSocialHistorySectionSmokingStatusObservation SummaryOfCareRecordHospitalAdmissionMedicationsSectionEntriesOptionalTemplateId SummaryOfCareRecordMu2consolHospitalAdmissionMedicationsSectionEntriesOptionalAdmissionMedication SummaryOfCareRecordMu2consolPlanOfCareSectionCarePlanningForPlanOfCare SummaryOfCareRecordMu2consolPlanOfCareSectionPlanOfCareActivityObservation SummaryOfCareRecordPlanOfCareSectionTemplateId SummaryOfCareRecordAssessmentAndPlanSectionTemplateId SummaryOfCareRecordAssessmentSectionTemplateId SummaryOfCareRecordMu2consolAssessmentSectionProblemObservation SummaryOfCareRecordPostoperativeDiagnosisSectionTemplateId SummaryOfCareRecordMu2consolPostoperativeDiagnosisSectionProblemObservation SummaryOfCareRecordPostprocedureDiagnosisSectionTemplateId SummaryOfCareRecordMu2consolPostprocedureDiagnosisSectionPostprocedureDiagnosis SummaryOfCareRecordPreoperativeDiagnosisSectionTemplateId SummaryOfCareRecordMu2consolPreoperativeDiagnosisSectionPreoperativeDiagnosis"/>
-      <details key="constraints.validation.query" value="SummaryOfCareRecordCognitiveStatusEntries SummaryOfCareRecordFunctionalStatusEntries SummaryOfCareRecordSocialHistorySectionTemplateId SummaryOfCareRecordMu2consolSocialHistorySectionSmokingStatusObservation SummaryOfCareRecordHospitalAdmissionMedicationsSectionEntriesOptionalTemplateId SummaryOfCareRecordMu2consolHospitalAdmissionMedicationsSectionEntriesOptionalAdmissionMedication SummaryOfCareRecordMu2consolPlanOfCareSectionCarePlanningForPlanOfCare SummaryOfCareRecordMu2consolPlanOfCareSectionPlanOfCareActivityObservation SummaryOfCareRecordPlanOfCareSectionTemplateId SummaryOfCareRecordAssessmentAndPlanSectionTemplateId SummaryOfCareRecordAssessmentSectionTemplateId SummaryOfCareRecordMu2consolAssessmentSectionProblemObservation SummaryOfCareRecordPostoperativeDiagnosisSectionTemplateId SummaryOfCareRecordMu2consolPostoperativeDiagnosisSectionProblemObservation SummaryOfCareRecordPostprocedureDiagnosisSectionTemplateId SummaryOfCareRecordMu2consolPostprocedureDiagnosisSectionPostprocedureDiagnosis SummaryOfCareRecordPreoperativeDiagnosisSectionTemplateId SummaryOfCareRecordMu2consolPreoperativeDiagnosisSectionPreoperativeDiagnosis"/>
+      <details key="constraints.validation.error" value="SummaryOfCareRecordCarePlanning SummaryOfCareRecordCognitiveStatusEntries SummaryOfCareRecordFunctionalStatusEntries SummaryOfCareRecordPlanOfCareSection SummaryOfCareRecordProblemSection SummaryOfCareRecordAllergiesSection SummaryOfCareRecordImmunizationsSection SummaryOfCareRecordMedicationsSection SummaryOfCareRecordSocialHistorySection SummaryOfCareRecordResultsSection SummaryOfCareRecordVitalSignsSection SummaryOfCareRecordProceduresSection SummaryOfCareRecordSocialHistorySectionTemplateId SummaryOfCareRecordMu2consolSocialHistorySectionSmokingStatusObservation SummaryOfCareRecordHospitalAdmissionMedicationsSectionEntriesOptionalTemplateId SummaryOfCareRecordMu2consolHospitalAdmissionMedicationsSectionEntriesOptionalAdmissionMedication SummaryOfCareRecordMu2consolPlanOfCareSectionCarePlanningForPlanOfCare SummaryOfCareRecordMu2consolPlanOfCareSectionPlanOfCareActivityObservation SummaryOfCareRecordPlanOfCareSectionTemplateId SummaryOfCareRecordAssessmentAndPlanSectionTemplateId SummaryOfCareRecordAssessmentSectionTemplateId SummaryOfCareRecordMu2consolAssessmentSectionProblemObservation SummaryOfCareRecordPreoperativeDiagnosisSectionTemplateId SummaryOfCareRecordMu2consolPreoperativeDiagnosisSectionPreoperativeDiagnosis"/>
+      <details key="constraints.validation.query" value="SummaryOfCareRecordCognitiveStatusEntries SummaryOfCareRecordFunctionalStatusEntries SummaryOfCareRecordSocialHistorySectionTemplateId SummaryOfCareRecordMu2consolSocialHistorySectionSmokingStatusObservation SummaryOfCareRecordHospitalAdmissionMedicationsSectionEntriesOptionalTemplateId SummaryOfCareRecordMu2consolHospitalAdmissionMedicationsSectionEntriesOptionalAdmissionMedication SummaryOfCareRecordMu2consolPlanOfCareSectionCarePlanningForPlanOfCare SummaryOfCareRecordMu2consolPlanOfCareSectionPlanOfCareActivityObservation SummaryOfCareRecordPlanOfCareSectionTemplateId SummaryOfCareRecordAssessmentAndPlanSectionTemplateId SummaryOfCareRecordAssessmentSectionTemplateId SummaryOfCareRecordMu2consolAssessmentSectionProblemObservation SummaryOfCareRecordPreoperativeDiagnosisSectionTemplateId SummaryOfCareRecordMu2consolPreoperativeDiagnosisSectionPreoperativeDiagnosis"/>
     </eAnnotations>
     <eOperations name="SummaryOfCareRecordCarePlanning" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
       <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
@@ -985,98 +994,6 @@
         </eGenericType>
       </eParameters>
     </eOperations>
-    <eOperations name="SummaryOfCareRecordPostoperativeDiagnosisSectionTemplateId"
-        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
-      <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
-        <details key="body" value="self.getPostoperativeDiagnosisSection()->excluding(null)->reject(getPostoperativeDiagnosisSection().templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.22.2.35'))"/>
-      </eAnnotations>
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="self.getPostoperativeDiagnosisSection()->excluding(null)->reject(getPostoperativeDiagnosisSection().templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.22.2.35'))"/>
-      </eAnnotations>
-      <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain">
-        <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-          <details key="documentation" value="The chain of diagnostics to which problems are to be appended."/>
-        </eAnnotations>
-      </eParameters>
-      <eParameters name="context">
-        <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-          <details key="documentation" value="The cache of context-specific information."/>
-        </eAnnotations>
-        <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
-          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
-          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
-        </eGenericType>
-      </eParameters>
-    </eOperations>
-    <eOperations name="SummaryOfCareRecordMu2consolPostoperativeDiagnosisSectionProblemObservation"
-        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
-      <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
-        <details key="body" value="self.getPostoperativeDiagnosisSection()->excluding(null)->reject(getPostoperativeDiagnosisSection().entry->one(entry : cda::Entry | not entry.observation.oclIsUndefined() and entry.observation.oclIsKindOf(consol::ProblemObservation)))"/>
-      </eAnnotations>
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="self.getPostoperativeDiagnosisSection()->excluding(null)->reject(getPostoperativeDiagnosisSection().entry->one(entry : cda::Entry | not entry.observation.oclIsUndefined() and entry.observation.oclIsKindOf(consol::ProblemObservation)))"/>
-      </eAnnotations>
-      <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain">
-        <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-          <details key="documentation" value="The chain of diagnostics to which problems are to be appended."/>
-        </eAnnotations>
-      </eParameters>
-      <eParameters name="context">
-        <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-          <details key="documentation" value="The cache of context-specific information."/>
-        </eAnnotations>
-        <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
-          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
-          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
-        </eGenericType>
-      </eParameters>
-    </eOperations>
-    <eOperations name="SummaryOfCareRecordPostprocedureDiagnosisSectionTemplateId"
-        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
-      <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
-        <details key="body" value="self.getPostprocedureDiagnosisSection()->excluding(null)->reject(getPostprocedureDiagnosisSection().templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.22.2.36'))"/>
-      </eAnnotations>
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="self.getPostprocedureDiagnosisSection()->excluding(null)->reject(getPostprocedureDiagnosisSection().templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.22.2.36'))"/>
-      </eAnnotations>
-      <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain">
-        <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-          <details key="documentation" value="The chain of diagnostics to which problems are to be appended."/>
-        </eAnnotations>
-      </eParameters>
-      <eParameters name="context">
-        <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-          <details key="documentation" value="The cache of context-specific information."/>
-        </eAnnotations>
-        <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
-          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
-          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
-        </eGenericType>
-      </eParameters>
-    </eOperations>
-    <eOperations name="SummaryOfCareRecordMu2consolPostprocedureDiagnosisSectionPostprocedureDiagnosis"
-        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
-      <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
-        <details key="body" value="self.getPostprocedureDiagnosisSection()->excluding(null)->reject(getPostprocedureDiagnosisSection().entry->one(entry : cda::Entry | not entry.act.oclIsUndefined() and entry.act.oclIsKindOf(consol::PostprocedureDiagnosis)))"/>
-      </eAnnotations>
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="self.getPostprocedureDiagnosisSection()->excluding(null)->reject(getPostprocedureDiagnosisSection().entry->one(entry : cda::Entry | not entry.act.oclIsUndefined() and entry.act.oclIsKindOf(consol::PostprocedureDiagnosis)))"/>
-      </eAnnotations>
-      <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain">
-        <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-          <details key="documentation" value="The chain of diagnostics to which problems are to be appended."/>
-        </eAnnotations>
-      </eParameters>
-      <eParameters name="context">
-        <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-          <details key="documentation" value="The cache of context-specific information."/>
-        </eAnnotations>
-        <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
-          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
-          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
-        </eGenericType>
-      </eParameters>
-    </eOperations>
     <eOperations name="SummaryOfCareRecordPreoperativeDiagnosisSectionTemplateId"
         eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
       <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
@@ -1132,6 +1049,33 @@
         <details key="body" value="self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::FunctionalStatusSection))->asSequence()->any(true).oclAsType(consol::FunctionalStatusSection)"/>
       </eAnnotations>
     </eOperations>
+    <eOperations name="retrieveHospitalDischargeDiagnosisSection" ordered="false"
+        lowerBound="1" eType="ecore:EClass ../../org.openhealthtools.mdht.uml.cda.consol/model/consol.ecore#//HospitalDischargeDiagnosisSection">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(mu2consol::HospitalDischargeDiagnosisSection))->asSequence()->any(true).oclAsType(mu2consol::HospitalDischargeDiagnosisSection)"/>
+      </eAnnotations>
+      <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
+        <details key="body" value="self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(mu2consol::HospitalDischargeDiagnosisSection))->asSequence()->any(true).oclAsType(mu2consol::HospitalDischargeDiagnosisSection)"/>
+      </eAnnotations>
+    </eOperations>
+    <eOperations name="retrievePostoperativeDiagnosisSection" ordered="false" lowerBound="1"
+        eType="ecore:EClass ../../org.openhealthtools.mdht.uml.cda.consol/model/consol.ecore#//PostoperativeDiagnosisSection">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(mu2consol::PostoperativeDiagnosisSection))->asSequence()->any(true).oclAsType(mu2consol::PostoperativeDiagnosisSection)"/>
+      </eAnnotations>
+      <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
+        <details key="body" value="self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(mu2consol::PostoperativeDiagnosisSection))->asSequence()->any(true).oclAsType(mu2consol::PostoperativeDiagnosisSection)"/>
+      </eAnnotations>
+    </eOperations>
+    <eOperations name="retrievePostprocedureDiagnosisSection" ordered="false" lowerBound="1"
+        eType="ecore:EClass ../../org.openhealthtools.mdht.uml.cda.consol/model/consol.ecore#//PostprocedureDiagnosisSection">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(mu2consol::PostprocedureDiagnosisSection))->asSequence()->any(true).oclAsType(mu2consol::PostprocedureDiagnosisSection)"/>
+      </eAnnotations>
+      <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
+        <details key="body" value="self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(mu2consol::PostprocedureDiagnosisSection))->asSequence()->any(true).oclAsType(mu2consol::PostprocedureDiagnosisSection)"/>
+      </eAnnotations>
+    </eOperations>
     <eOperations name="getEncountersSection" ordered="false" lowerBound="1" eType="#//EncountersSection">
       <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
         <details key="documentation" value="self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(mu2consol::EncountersSection))->asSequence()->any(true).oclAsType(mu2consol::EncountersSection)"/>
@@ -1166,12 +1110,12 @@
       </eAnnotations>
     </eOperations>
     <eOperations name="getPostoperativeDiagnosisSection" ordered="false" lowerBound="1"
-        eType="#//PostoperativeDiagnosisSection">
+        eType="ecore:EClass ../../org.openhealthtools.mdht.uml.cda.consol/model/consol.ecore#//PostoperativeDiagnosisSection">
       <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(mu2consol::PostoperativeDiagnosisSection))->asSequence()->any(true).oclAsType(mu2consol::PostoperativeDiagnosisSection)"/>
+        <details key="documentation" value="self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::PostoperativeDiagnosisSection))->asSequence()->any(true).oclAsType(consol::PostoperativeDiagnosisSection)"/>
       </eAnnotations>
       <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
-        <details key="body" value="self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(mu2consol::PostoperativeDiagnosisSection))->asSequence()->any(true).oclAsType(mu2consol::PostoperativeDiagnosisSection)"/>
+        <details key="body" value="self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::PostoperativeDiagnosisSection))->asSequence()->any(true).oclAsType(consol::PostoperativeDiagnosisSection)"/>
       </eAnnotations>
     </eOperations>
     <eOperations name="getProblemSection" ordered="false" lowerBound="1" eType="ecore:EClass ../../org.openhealthtools.mdht.uml.cda.consol/model/consol.ecore#//ProblemSection">
@@ -1266,12 +1210,12 @@
       </eAnnotations>
     </eOperations>
     <eOperations name="getPostprocedureDiagnosisSection" ordered="false" lowerBound="1"
-        eType="#//PostprocedureDiagnosisSection">
+        eType="ecore:EClass ../../org.openhealthtools.mdht.uml.cda.consol/model/consol.ecore#//PostprocedureDiagnosisSection">
       <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(mu2consol::PostprocedureDiagnosisSection))->asSequence()->any(true).oclAsType(mu2consol::PostprocedureDiagnosisSection)"/>
+        <details key="documentation" value="self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::PostprocedureDiagnosisSection))->asSequence()->any(true).oclAsType(consol::PostprocedureDiagnosisSection)"/>
       </eAnnotations>
       <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
-        <details key="body" value="self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(mu2consol::PostprocedureDiagnosisSection))->asSequence()->any(true).oclAsType(mu2consol::PostprocedureDiagnosisSection)"/>
+        <details key="body" value="self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::PostprocedureDiagnosisSection))->asSequence()->any(true).oclAsType(consol::PostprocedureDiagnosisSection)"/>
       </eAnnotations>
     </eOperations>
     <eOperations name="getFunctionalStatusSection" ordered="false" lowerBound="1"
@@ -1601,68 +1545,6 @@
       </contents>
     </eAnnotations>
     <eOperations name="Mu2consolAssessmentSectionProblemObservation" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
-      <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
-        <details key="body" value="self.entry->one(entry : cda::Entry | not entry.observation.oclIsUndefined() and entry.observation.oclIsKindOf(consol::ProblemObservation))"/>
-      </eAnnotations>
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="self.entry->one(entry : cda::Entry | not entry.observation.oclIsUndefined() and entry.observation.oclIsKindOf(consol::ProblemObservation))"/>
-      </eAnnotations>
-      <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain">
-        <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-          <details key="documentation" value="The chain of diagnostics to which problems are to be appended."/>
-        </eAnnotations>
-      </eParameters>
-      <eParameters name="context">
-        <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-          <details key="documentation" value="The cache of context-specific information."/>
-        </eAnnotations>
-        <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
-          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
-          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
-        </eGenericType>
-      </eParameters>
-    </eOperations>
-    <eOperations name="getProblemObservation" ordered="false" lowerBound="1" eType="ecore:EClass ../../org.openhealthtools.mdht.uml.cda.consol/model/consol.ecore#//ProblemObservation">
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::ProblemObservation))->asSequence()->any(true).oclAsType(consol::ProblemObservation)"/>
-      </eAnnotations>
-      <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
-        <details key="body" value="self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::ProblemObservation))->asSequence()->any(true).oclAsType(consol::ProblemObservation)"/>
-      </eAnnotations>
-    </eOperations>
-  </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="PostoperativeDiagnosisSection" eSuperTypes="../../org.openhealthtools.mdht.uml.cda.consol/model/consol.ecore#//PostoperativeDiagnosisSection">
-    <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
-      <details key="constraints.validation.error" value="Mu2consolPostoperativeDiagnosisSectionTemplateId Mu2consolPostoperativeDiagnosisSectionProblemObservation"/>
-      <details key="templateId.root" value="2.16.840.1.113883.10.20.22.2.35"/>
-    </eAnnotations>
-    <eAnnotations source="duplicates">
-      <contents xsi:type="ecore:EOperation" name="PostoperativeDiagnosisSectionTemplateId"
-          eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
-        <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
-          <details key="body" value="self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.22.2.35')"/>
-        </eAnnotations>
-        <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-          <details key="documentation" value="self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.22.2.35')"/>
-        </eAnnotations>
-        <eAnnotations source="redefines" references="../../org.openhealthtools.mdht.uml.cda.consol/model/consol.ecore#//PostoperativeDiagnosisSection/PostoperativeDiagnosisSectionTemplateId"/>
-        <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain">
-          <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-            <details key="documentation" value="The chain of diagnostics to which problems are to be appended."/>
-          </eAnnotations>
-        </eParameters>
-        <eParameters name="context">
-          <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-            <details key="documentation" value="The cache of context-specific information."/>
-          </eAnnotations>
-          <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
-            <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
-            <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
-          </eGenericType>
-        </eParameters>
-      </contents>
-    </eAnnotations>
-    <eOperations name="Mu2consolPostoperativeDiagnosisSectionProblemObservation" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
       <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
         <details key="body" value="self.entry->one(entry : cda::Entry | not entry.observation.oclIsUndefined() and entry.observation.oclIsKindOf(consol::ProblemObservation))"/>
       </eAnnotations>
@@ -2305,70 +2187,6 @@
       </eParameters>
     </eOperations>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="PostprocedureDiagnosisSection" eSuperTypes="../../org.openhealthtools.mdht.uml.cda.consol/model/consol.ecore#//PostprocedureDiagnosisSection">
-    <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
-      <details key="constraints.validation.error" value="Mu2consolPostprocedureDiagnosisSectionTemplateId Mu2consolPostprocedureDiagnosisSectionPostprocedureDiagnosis"/>
-      <details key="templateId.root" value="2.16.840.1.113883.10.20.22.2.36"/>
-    </eAnnotations>
-    <eAnnotations source="duplicates">
-      <contents xsi:type="ecore:EOperation" name="PostprocedureDiagnosisSectionTemplateId"
-          eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
-        <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
-          <details key="body" value="self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.22.2.36')"/>
-        </eAnnotations>
-        <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-          <details key="documentation" value="self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.22.2.36')"/>
-        </eAnnotations>
-        <eAnnotations source="redefines" references="../../org.openhealthtools.mdht.uml.cda.consol/model/consol.ecore#//PostprocedureDiagnosisSection/PostprocedureDiagnosisSectionTemplateId"/>
-        <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain">
-          <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-            <details key="documentation" value="The chain of diagnostics to which problems are to be appended."/>
-          </eAnnotations>
-        </eParameters>
-        <eParameters name="context">
-          <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-            <details key="documentation" value="The cache of context-specific information."/>
-          </eAnnotations>
-          <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
-            <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
-            <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
-          </eGenericType>
-        </eParameters>
-      </contents>
-    </eAnnotations>
-    <eOperations name="Mu2consolPostprocedureDiagnosisSectionPostprocedureDiagnosis"
-        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
-      <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
-        <details key="body" value="self.entry->one(entry : cda::Entry | not entry.act.oclIsUndefined() and entry.act.oclIsKindOf(consol::PostprocedureDiagnosis))"/>
-      </eAnnotations>
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="self.entry->one(entry : cda::Entry | not entry.act.oclIsUndefined() and entry.act.oclIsKindOf(consol::PostprocedureDiagnosis))"/>
-      </eAnnotations>
-      <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain">
-        <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-          <details key="documentation" value="The chain of diagnostics to which problems are to be appended."/>
-        </eAnnotations>
-      </eParameters>
-      <eParameters name="context">
-        <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-          <details key="documentation" value="The cache of context-specific information."/>
-        </eAnnotations>
-        <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
-          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
-          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
-        </eGenericType>
-      </eParameters>
-    </eOperations>
-    <eOperations name="getMu2consolPostprocedureDiagnosis" ordered="false" lowerBound="1"
-        eType="ecore:EClass ../../org.openhealthtools.mdht.uml.cda.consol/model/consol.ecore#//PostprocedureDiagnosis">
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(consol::PostprocedureDiagnosis))->asSequence()->any(true).oclAsType(consol::PostprocedureDiagnosis)"/>
-      </eAnnotations>
-      <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
-        <details key="body" value="self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(consol::PostprocedureDiagnosis))->asSequence()->any(true).oclAsType(consol::PostprocedureDiagnosis)"/>
-      </eAnnotations>
-    </eOperations>
-  </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="InstructionsSection" eSuperTypes="../../org.openhealthtools.mdht.uml.cda.consol/model/consol.ecore#//InstructionsSection">
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
       <details key="constraints.validation.error" value="Mu2consolInstructionsSectionTemplateId Mu2consolInstructionsSectionInstructions"/>
@@ -2428,134 +2246,6 @@
       </eAnnotations>
       <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
         <details key="body" value="self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(consol::Instructions)).oclAsType(consol::Instructions)"/>
-      </eAnnotations>
-    </eOperations>
-  </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="HospitalAdmissionDiagnosisSection" eSuperTypes="../../org.openhealthtools.mdht.uml.cda.consol/model/consol.ecore#//HospitalAdmissionDiagnosisSection">
-    <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
-      <details key="constraints.validation.error" value="Mu2consolHospitalAdmissionDiagnosisSectionTemplateId Mu2consolHospitalAdmissionDiagnosisSectionHospitalAdmissionDiagnosis"/>
-      <details key="templateId.root" value="2.16.840.1.113883.10.20.22.2.43"/>
-    </eAnnotations>
-    <eAnnotations source="duplicates">
-      <contents xsi:type="ecore:EOperation" name="HospitalAdmissionDiagnosisSectionTemplateId"
-          eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
-        <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
-          <details key="body" value="self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.22.2.43')"/>
-        </eAnnotations>
-        <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-          <details key="documentation" value="self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.22.2.43')"/>
-        </eAnnotations>
-        <eAnnotations source="redefines" references="../../org.openhealthtools.mdht.uml.cda.consol/model/consol.ecore#//HospitalAdmissionDiagnosisSection/HospitalAdmissionDiagnosisSectionTemplateId"/>
-        <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain">
-          <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-            <details key="documentation" value="The chain of diagnostics to which problems are to be appended."/>
-          </eAnnotations>
-        </eParameters>
-        <eParameters name="context">
-          <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-            <details key="documentation" value="The cache of context-specific information."/>
-          </eAnnotations>
-          <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
-            <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
-            <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
-          </eGenericType>
-        </eParameters>
-      </contents>
-    </eAnnotations>
-    <eOperations name="Mu2consolHospitalAdmissionDiagnosisSectionHospitalAdmissionDiagnosis"
-        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
-      <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
-        <details key="body" value="self.entry->one(entry : cda::Entry | not entry.act.oclIsUndefined() and entry.act.oclIsKindOf(consol::HospitalAdmissionDiagnosis))"/>
-      </eAnnotations>
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="self.entry->one(entry : cda::Entry | not entry.act.oclIsUndefined() and entry.act.oclIsKindOf(consol::HospitalAdmissionDiagnosis))"/>
-      </eAnnotations>
-      <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain">
-        <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-          <details key="documentation" value="The chain of diagnostics to which problems are to be appended."/>
-        </eAnnotations>
-      </eParameters>
-      <eParameters name="context">
-        <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-          <details key="documentation" value="The cache of context-specific information."/>
-        </eAnnotations>
-        <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
-          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
-          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
-        </eGenericType>
-      </eParameters>
-    </eOperations>
-    <eOperations name="getMu2consolHospitalAdmissionDiagnosis" ordered="false" lowerBound="1"
-        eType="ecore:EClass ../../org.openhealthtools.mdht.uml.cda.consol/model/consol.ecore#//HospitalAdmissionDiagnosis">
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(consol::HospitalAdmissionDiagnosis))->asSequence()->any(true).oclAsType(consol::HospitalAdmissionDiagnosis)"/>
-      </eAnnotations>
-      <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
-        <details key="body" value="self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(consol::HospitalAdmissionDiagnosis))->asSequence()->any(true).oclAsType(consol::HospitalAdmissionDiagnosis)"/>
-      </eAnnotations>
-    </eOperations>
-  </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="HospitalDischargeDiagnosisSection" eSuperTypes="../../org.openhealthtools.mdht.uml.cda.consol/model/consol.ecore#//HospitalDischargeDiagnosisSection">
-    <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
-      <details key="constraints.validation.error" value="Mu2consolHospitalDischargeDiagnosisSectionTemplateId Mu2consolHospitalDischargeDiagnosisSectionHospitalDischargeDiagnosis"/>
-      <details key="templateId.root" value="2.16.840.1.113883.10.20.22.2.24"/>
-    </eAnnotations>
-    <eAnnotations source="duplicates">
-      <contents xsi:type="ecore:EOperation" name="HospitalDischargeDiagnosisSectionTemplateId"
-          eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
-        <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
-          <details key="body" value="self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.22.2.24')"/>
-        </eAnnotations>
-        <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-          <details key="documentation" value="self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.22.2.24')"/>
-        </eAnnotations>
-        <eAnnotations source="redefines" references="../../org.openhealthtools.mdht.uml.cda.consol/model/consol.ecore#//HospitalDischargeDiagnosisSection/HospitalDischargeDiagnosisSectionTemplateId"/>
-        <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain">
-          <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-            <details key="documentation" value="The chain of diagnostics to which problems are to be appended."/>
-          </eAnnotations>
-        </eParameters>
-        <eParameters name="context">
-          <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-            <details key="documentation" value="The cache of context-specific information."/>
-          </eAnnotations>
-          <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
-            <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
-            <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
-          </eGenericType>
-        </eParameters>
-      </contents>
-    </eAnnotations>
-    <eOperations name="Mu2consolHospitalDischargeDiagnosisSectionHospitalDischargeDiagnosis"
-        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
-      <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
-        <details key="body" value="self.entry->one(entry : cda::Entry | not entry.act.oclIsUndefined() and entry.act.oclIsKindOf(consol::HospitalDischargeDiagnosis))"/>
-      </eAnnotations>
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="self.entry->one(entry : cda::Entry | not entry.act.oclIsUndefined() and entry.act.oclIsKindOf(consol::HospitalDischargeDiagnosis))"/>
-      </eAnnotations>
-      <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain">
-        <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-          <details key="documentation" value="The chain of diagnostics to which problems are to be appended."/>
-        </eAnnotations>
-      </eParameters>
-      <eParameters name="context">
-        <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-          <details key="documentation" value="The cache of context-specific information."/>
-        </eAnnotations>
-        <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
-          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
-          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
-        </eGenericType>
-      </eParameters>
-    </eOperations>
-    <eOperations name="getMu2consolHospitalDischargeDiagnosis" ordered="false" lowerBound="1"
-        eType="ecore:EClass ../../org.openhealthtools.mdht.uml.cda.consol/model/consol.ecore#//HospitalDischargeDiagnosis">
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(consol::HospitalDischargeDiagnosis))->asSequence()->any(true).oclAsType(consol::HospitalDischargeDiagnosis)"/>
-      </eAnnotations>
-      <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
-        <details key="body" value="self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(consol::HospitalDischargeDiagnosis))->asSequence()->any(true).oclAsType(consol::HospitalDischargeDiagnosis)"/>
       </eAnnotations>
     </eOperations>
   </eClassifiers>
@@ -3391,10 +3081,10 @@
     <eOperations name="TransitionOfCareAmbulatorySummaryAmbulatoryEncounterDiagnoses"
         eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
       <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
-        <details key="body" value="( self.getAllSections()->one(s : cda::Section | not s.oclIsUndefined() and s.oclIsTypeOf(consol::ProblemSection)) or &#xD;&#xA;self.getAllSections()->one(s : cda::Section | not s.oclIsUndefined() and s.oclIsTypeOf(mu2consol::PostoperativeDiagnosisSection)) or  &#xD;&#xA;self.getAllSections()->one(s : cda::Section | not s.oclIsUndefined() and s.oclIsTypeOf(mu2consol::PostprocedureDiagnosisSection)) or &#xD;&#xA;self.getAllSections()->one(s : cda::Section | not s.oclIsUndefined() and s.oclIsTypeOf(mu2consol::EncountersSection)) or &#xD;&#xA;self.getAllSections()->one(s : cda::Section | not s.oclIsUndefined() and s.oclIsTypeOf(mu2consol::AssessmentSection)) or &#xD;&#xA;self.getAllSections()->one(s : cda::Section | not s.oclIsUndefined() and s.oclIsTypeOf(mu2consol::AssessmentAndPlanSection)) )"/>
+        <details key="body" value="( self.getAllSections()->one(s : cda::Section | not s.oclIsUndefined() and s.oclIsTypeOf(consol::ProblemSection)) or &#xD;&#xA;self.getAllSections()->one(s : cda::Section | not s.oclIsUndefined() and s.oclIsTypeOf(consol::PostoperativeDiagnosisSection)) or  &#xD;&#xA;self.getAllSections()->one(s : cda::Section | not s.oclIsUndefined() and s.oclIsTypeOf(consol::PostprocedureDiagnosisSection)) or &#xD;&#xA;self.getAllSections()->one(s : cda::Section | not s.oclIsUndefined() and s.oclIsTypeOf(mu2consol::EncountersSection)) or &#xD;&#xA;self.getAllSections()->one(s : cda::Section | not s.oclIsUndefined() and s.oclIsTypeOf(mu2consol::AssessmentSection)) or &#xD;&#xA;self.getAllSections()->one(s : cda::Section | not s.oclIsUndefined() and s.oclIsTypeOf(mu2consol::AssessmentAndPlanSection)) )"/>
       </eAnnotations>
       <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="( self.getAllSections()->one(s : cda::Section | not s.oclIsUndefined() and s.oclIsTypeOf(consol::ProblemSection)) or &#xD;&#xA;self.getAllSections()->one(s : cda::Section | not s.oclIsUndefined() and s.oclIsTypeOf(mu2consol::PostoperativeDiagnosisSection)) or  &#xD;&#xA;self.getAllSections()->one(s : cda::Section | not s.oclIsUndefined() and s.oclIsTypeOf(mu2consol::PostprocedureDiagnosisSection)) or &#xD;&#xA;self.getAllSections()->one(s : cda::Section | not s.oclIsUndefined() and s.oclIsTypeOf(mu2consol::EncountersSection)) or &#xD;&#xA;self.getAllSections()->one(s : cda::Section | not s.oclIsUndefined() and s.oclIsTypeOf(mu2consol::AssessmentSection)) or &#xD;&#xA;self.getAllSections()->one(s : cda::Section | not s.oclIsUndefined() and s.oclIsTypeOf(mu2consol::AssessmentAndPlanSection)) )"/>
+        <details key="documentation" value="( self.getAllSections()->one(s : cda::Section | not s.oclIsUndefined() and s.oclIsTypeOf(consol::ProblemSection)) or &#xD;&#xA;self.getAllSections()->one(s : cda::Section | not s.oclIsUndefined() and s.oclIsTypeOf(consol::PostoperativeDiagnosisSection)) or  &#xD;&#xA;self.getAllSections()->one(s : cda::Section | not s.oclIsUndefined() and s.oclIsTypeOf(consol::PostprocedureDiagnosisSection)) or &#xD;&#xA;self.getAllSections()->one(s : cda::Section | not s.oclIsUndefined() and s.oclIsTypeOf(mu2consol::EncountersSection)) or &#xD;&#xA;self.getAllSections()->one(s : cda::Section | not s.oclIsUndefined() and s.oclIsTypeOf(mu2consol::AssessmentSection)) or &#xD;&#xA;self.getAllSections()->one(s : cda::Section | not s.oclIsUndefined() and s.oclIsTypeOf(mu2consol::AssessmentAndPlanSection)) )"/>
       </eAnnotations>
       <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain">
         <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
@@ -3446,16 +3136,39 @@
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="TransitionOfCareInpatientSummary" eSuperTypes="#//SummaryOfCareRecord">
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
-      <details key="constraints.validation.error" value="TransitionOfCareInpatientSummaryInpatientEncounterDiagnoses TransitionOfCareInpatientSummaryHospitalDischargeInstructionsSection TransitionOfCareInpatientSummaryHospitalDischargeMedicationsSection TransitionOfCareInpatientSummaryHospitalAdmissionDiagnosisSectionTemplateId TransitionOfCareInpatientSummaryMu2consolHospitalAdmissionDiagnosisSectionHospitalAdmissionDiagnosis TransitionOfCareInpatientSummaryHospitalDischargeDiagnosisSectionTemplateId TransitionOfCareInpatientSummaryMu2consolHospitalDischargeDiagnosisSectionHospitalDischargeDiagnosis"/>
-      <details key="constraints.validation.query" value="TransitionOfCareInpatientSummaryHospitalAdmissionDiagnosisSectionTemplateId TransitionOfCareInpatientSummaryMu2consolHospitalAdmissionDiagnosisSectionHospitalAdmissionDiagnosis TransitionOfCareInpatientSummaryHospitalDischargeDiagnosisSectionTemplateId TransitionOfCareInpatientSummaryMu2consolHospitalDischargeDiagnosisSectionHospitalDischargeDiagnosis"/>
+      <details key="constraints.validation.error" value="TransitionOfCareInpatientSummaryInpatientEncounterDiagnoses TransitionOfCareInpatientSummaryHospitalAdmissionDiagnosisEntry TransitionOfCareInpatientSummaryHospitalDischargeInstructionsSection TransitionOfCareInpatientSummaryHospitalDischargeMedicationsSection"/>
+      <details key="constraints.validation.query" value="TransitionOfCareInpatientSummaryHospitalAdmissionDiagnosisEntry"/>
     </eAnnotations>
     <eOperations name="TransitionOfCareInpatientSummaryInpatientEncounterDiagnoses"
         eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
       <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
-        <details key="body" value="( self.getAllSections()->one(s : cda::Section | not s.oclIsUndefined() and s.oclIsTypeOf(consol::ProblemSection)) or &#xD;&#xA;self.getAllSections()->one(s : cda::Section | not s.oclIsUndefined() and s.oclIsTypeOf(mu2consol::PostoperativeDiagnosisSection)) or  &#xD;&#xA;self.getAllSections()->one(s : cda::Section | not s.oclIsUndefined() and s.oclIsTypeOf(mu2consol::PostprocedureDiagnosisSection)) or &#xD;&#xA;self.getAllSections()->one(s : cda::Section | not s.oclIsUndefined() and s.oclIsTypeOf(mu2consol::EncountersSection)) or &#xD;&#xA;self.getAllSections()->one(s : cda::Section | not s.oclIsUndefined() and s.oclIsTypeOf(mu2consol::AssessmentSection)) or &#xD;&#xA;self.getAllSections()->one(s : cda::Section | not s.oclIsUndefined() and s.oclIsTypeOf(mu2consol::AssessmentAndPlanSection)) or &#xD;&#xA;self.getAllSections()->one(s : cda::Section | not s.oclIsUndefined() and s.oclIsTypeOf(mu2consol::HospitalAdmissionDiagnosisSection)) or &#xD;&#xA;self.getAllSections()->one(s : cda::Section | not s.oclIsUndefined() and s.oclIsTypeOf(mu2consol::HospitalDischargeDiagnosisSection)) )"/>
+        <details key="body" value="( self.getAllSections()->one(s : cda::Section | not s.oclIsUndefined() and s.oclIsTypeOf(consol::ProblemSection)) or &#xD;&#xA;self.getAllSections()->one(s : cda::Section | not s.oclIsUndefined() and s.oclIsTypeOf(consol::PostoperativeDiagnosisSection)) or  &#xD;&#xA;self.getAllSections()->one(s : cda::Section | not s.oclIsUndefined() and s.oclIsTypeOf(consol::PostprocedureDiagnosisSection)) or &#xD;&#xA;self.getAllSections()->one(s : cda::Section | not s.oclIsUndefined() and s.oclIsTypeOf(mu2consol::EncountersSection)) or &#xD;&#xA;self.getAllSections()->one(s : cda::Section | not s.oclIsUndefined() and s.oclIsTypeOf(mu2consol::AssessmentSection)) or &#xD;&#xA;self.getAllSections()->one(s : cda::Section | not s.oclIsUndefined() and s.oclIsTypeOf(mu2consol::AssessmentAndPlanSection)) or &#xD;&#xA;self.getAllSections()->one(s : cda::Section | not s.oclIsUndefined() and s.oclIsTypeOf(consol::HospitalAdmissionDiagnosisSection)) or &#xD;&#xA;self.getAllSections()->one(s : cda::Section | not s.oclIsUndefined() and s.oclIsTypeOf(consol::HospitalDischargeDiagnosisSection)) )"/>
       </eAnnotations>
       <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="( self.getAllSections()->one(s : cda::Section | not s.oclIsUndefined() and s.oclIsTypeOf(consol::ProblemSection)) or &#xD;&#xA;self.getAllSections()->one(s : cda::Section | not s.oclIsUndefined() and s.oclIsTypeOf(mu2consol::PostoperativeDiagnosisSection)) or  &#xD;&#xA;self.getAllSections()->one(s : cda::Section | not s.oclIsUndefined() and s.oclIsTypeOf(mu2consol::PostprocedureDiagnosisSection)) or &#xD;&#xA;self.getAllSections()->one(s : cda::Section | not s.oclIsUndefined() and s.oclIsTypeOf(mu2consol::EncountersSection)) or &#xD;&#xA;self.getAllSections()->one(s : cda::Section | not s.oclIsUndefined() and s.oclIsTypeOf(mu2consol::AssessmentSection)) or &#xD;&#xA;self.getAllSections()->one(s : cda::Section | not s.oclIsUndefined() and s.oclIsTypeOf(mu2consol::AssessmentAndPlanSection)) or &#xD;&#xA;self.getAllSections()->one(s : cda::Section | not s.oclIsUndefined() and s.oclIsTypeOf(mu2consol::HospitalAdmissionDiagnosisSection)) or &#xD;&#xA;self.getAllSections()->one(s : cda::Section | not s.oclIsUndefined() and s.oclIsTypeOf(mu2consol::HospitalDischargeDiagnosisSection)) )"/>
+        <details key="documentation" value="( self.getAllSections()->one(s : cda::Section | not s.oclIsUndefined() and s.oclIsTypeOf(consol::ProblemSection)) or &#xD;&#xA;self.getAllSections()->one(s : cda::Section | not s.oclIsUndefined() and s.oclIsTypeOf(consol::PostoperativeDiagnosisSection)) or  &#xD;&#xA;self.getAllSections()->one(s : cda::Section | not s.oclIsUndefined() and s.oclIsTypeOf(consol::PostprocedureDiagnosisSection)) or &#xD;&#xA;self.getAllSections()->one(s : cda::Section | not s.oclIsUndefined() and s.oclIsTypeOf(mu2consol::EncountersSection)) or &#xD;&#xA;self.getAllSections()->one(s : cda::Section | not s.oclIsUndefined() and s.oclIsTypeOf(mu2consol::AssessmentSection)) or &#xD;&#xA;self.getAllSections()->one(s : cda::Section | not s.oclIsUndefined() and s.oclIsTypeOf(mu2consol::AssessmentAndPlanSection)) or &#xD;&#xA;self.getAllSections()->one(s : cda::Section | not s.oclIsUndefined() and s.oclIsTypeOf(consol::HospitalAdmissionDiagnosisSection)) or &#xD;&#xA;self.getAllSections()->one(s : cda::Section | not s.oclIsUndefined() and s.oclIsTypeOf(consol::HospitalDischargeDiagnosisSection)) )"/>
+      </eAnnotations>
+      <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain">
+        <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+          <details key="documentation" value="The chain of diagnostics to which problems are to be appended."/>
+        </eAnnotations>
+      </eParameters>
+      <eParameters name="context">
+        <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+          <details key="documentation" value="The cache of context-specific information."/>
+        </eAnnotations>
+        <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+        </eGenericType>
+      </eParameters>
+    </eOperations>
+    <eOperations name="TransitionOfCareInpatientSummaryHospitalAdmissionDiagnosisEntry"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
+      <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
+        <details key="body" value="self.retrieveHospitalAdmissionDiagnosisSection()->excluding(null)->reject(retrieveHospitalAdmissionDiagnosisSection().getActs()->exists(a : cda::Act | a.oclIsKindOf(consol::HospitalAdmissionDiagnosis)))"/>
+      </eAnnotations>
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="self.retrieveHospitalAdmissionDiagnosisSection()->excluding(null)->reject(retrieveHospitalAdmissionDiagnosisSection().getActs()->exists(a : cda::Act | a.oclIsKindOf(consol::HospitalAdmissionDiagnosis)))"/>
       </eAnnotations>
       <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain">
         <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
@@ -3518,98 +3231,6 @@
         </eGenericType>
       </eParameters>
     </eOperations>
-    <eOperations name="TransitionOfCareInpatientSummaryHospitalAdmissionDiagnosisSectionTemplateId"
-        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
-      <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
-        <details key="body" value="self.getHospitalAdmissionDiagnosisSection()->excluding(null)->reject(getHospitalAdmissionDiagnosisSection().templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.22.2.43'))"/>
-      </eAnnotations>
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="self.getHospitalAdmissionDiagnosisSection()->excluding(null)->reject(getHospitalAdmissionDiagnosisSection().templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.22.2.43'))"/>
-      </eAnnotations>
-      <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain">
-        <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-          <details key="documentation" value="The chain of diagnostics to which problems are to be appended."/>
-        </eAnnotations>
-      </eParameters>
-      <eParameters name="context">
-        <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-          <details key="documentation" value="The cache of context-specific information."/>
-        </eAnnotations>
-        <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
-          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
-          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
-        </eGenericType>
-      </eParameters>
-    </eOperations>
-    <eOperations name="TransitionOfCareInpatientSummaryMu2consolHospitalAdmissionDiagnosisSectionHospitalAdmissionDiagnosis"
-        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
-      <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
-        <details key="body" value="self.getHospitalAdmissionDiagnosisSection()->excluding(null)->reject(getHospitalAdmissionDiagnosisSection().entry->one(entry : cda::Entry | not entry.act.oclIsUndefined() and entry.act.oclIsKindOf(consol::HospitalAdmissionDiagnosis)))"/>
-      </eAnnotations>
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="self.getHospitalAdmissionDiagnosisSection()->excluding(null)->reject(getHospitalAdmissionDiagnosisSection().entry->one(entry : cda::Entry | not entry.act.oclIsUndefined() and entry.act.oclIsKindOf(consol::HospitalAdmissionDiagnosis)))"/>
-      </eAnnotations>
-      <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain">
-        <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-          <details key="documentation" value="The chain of diagnostics to which problems are to be appended."/>
-        </eAnnotations>
-      </eParameters>
-      <eParameters name="context">
-        <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-          <details key="documentation" value="The cache of context-specific information."/>
-        </eAnnotations>
-        <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
-          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
-          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
-        </eGenericType>
-      </eParameters>
-    </eOperations>
-    <eOperations name="TransitionOfCareInpatientSummaryHospitalDischargeDiagnosisSectionTemplateId"
-        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
-      <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
-        <details key="body" value="self.getHospitalDischargeDiagnosisSection()->excluding(null)->reject(getHospitalDischargeDiagnosisSection().templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.22.2.24'))"/>
-      </eAnnotations>
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="self.getHospitalDischargeDiagnosisSection()->excluding(null)->reject(getHospitalDischargeDiagnosisSection().templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.22.2.24'))"/>
-      </eAnnotations>
-      <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain">
-        <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-          <details key="documentation" value="The chain of diagnostics to which problems are to be appended."/>
-        </eAnnotations>
-      </eParameters>
-      <eParameters name="context">
-        <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-          <details key="documentation" value="The cache of context-specific information."/>
-        </eAnnotations>
-        <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
-          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
-          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
-        </eGenericType>
-      </eParameters>
-    </eOperations>
-    <eOperations name="TransitionOfCareInpatientSummaryMu2consolHospitalDischargeDiagnosisSectionHospitalDischargeDiagnosis"
-        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
-      <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
-        <details key="body" value="self.getHospitalDischargeDiagnosisSection()->excluding(null)->reject(getHospitalDischargeDiagnosisSection().entry->one(entry : cda::Entry | not entry.act.oclIsUndefined() and entry.act.oclIsKindOf(consol::HospitalDischargeDiagnosis)))"/>
-      </eAnnotations>
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="self.getHospitalDischargeDiagnosisSection()->excluding(null)->reject(getHospitalDischargeDiagnosisSection().entry->one(entry : cda::Entry | not entry.act.oclIsUndefined() and entry.act.oclIsKindOf(consol::HospitalDischargeDiagnosis)))"/>
-      </eAnnotations>
-      <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain">
-        <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-          <details key="documentation" value="The chain of diagnostics to which problems are to be appended."/>
-        </eAnnotations>
-      </eParameters>
-      <eParameters name="context">
-        <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-          <details key="documentation" value="The cache of context-specific information."/>
-        </eAnnotations>
-        <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
-          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
-          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
-        </eGenericType>
-      </eParameters>
-    </eOperations>
     <eOperations name="getHospitalDischargeInstructionsSection" ordered="false" lowerBound="1"
         eType="ecore:EClass ../../org.openhealthtools.mdht.uml.cda.consol/model/consol.ecore#//HospitalDischargeInstructionsSection">
       <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
@@ -3629,21 +3250,21 @@
       </eAnnotations>
     </eOperations>
     <eOperations name="getHospitalAdmissionDiagnosisSection" ordered="false" lowerBound="1"
-        eType="#//HospitalAdmissionDiagnosisSection">
+        eType="ecore:EClass ../../org.openhealthtools.mdht.uml.cda.consol/model/consol.ecore#//HospitalAdmissionDiagnosisSection">
       <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(mu2consol::HospitalAdmissionDiagnosisSection))->asSequence()->any(true).oclAsType(mu2consol::HospitalAdmissionDiagnosisSection)"/>
+        <details key="documentation" value="self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::HospitalAdmissionDiagnosisSection))->asSequence()->any(true).oclAsType(consol::HospitalAdmissionDiagnosisSection)"/>
       </eAnnotations>
       <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
-        <details key="body" value="self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(mu2consol::HospitalAdmissionDiagnosisSection))->asSequence()->any(true).oclAsType(mu2consol::HospitalAdmissionDiagnosisSection)"/>
+        <details key="body" value="self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::HospitalAdmissionDiagnosisSection))->asSequence()->any(true).oclAsType(consol::HospitalAdmissionDiagnosisSection)"/>
       </eAnnotations>
     </eOperations>
     <eOperations name="getHospitalDischargeDiagnosisSection" ordered="false" lowerBound="1"
-        eType="#//HospitalDischargeDiagnosisSection">
+        eType="ecore:EClass ../../org.openhealthtools.mdht.uml.cda.consol/model/consol.ecore#//HospitalDischargeDiagnosisSection">
       <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(mu2consol::HospitalDischargeDiagnosisSection))->asSequence()->any(true).oclAsType(mu2consol::HospitalDischargeDiagnosisSection)"/>
+        <details key="documentation" value="self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::HospitalDischargeDiagnosisSection))->asSequence()->any(true).oclAsType(consol::HospitalDischargeDiagnosisSection)"/>
       </eAnnotations>
       <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
-        <details key="body" value="self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(mu2consol::HospitalDischargeDiagnosisSection))->asSequence()->any(true).oclAsType(mu2consol::HospitalDischargeDiagnosisSection)"/>
+        <details key="body" value="self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::HospitalDischargeDiagnosisSection))->asSequence()->any(true).oclAsType(consol::HospitalDischargeDiagnosisSection)"/>
       </eAnnotations>
     </eOperations>
   </eClassifiers>
@@ -4063,8 +3684,8 @@
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="VDTInpatientSummary" eSuperTypes="#//ViewDownloadTransmitSummary">
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
-      <details key="constraints.validation.query" value="VDTInpatientSummaryEffectiveTime VDTInpatientSummaryLocation VDTInpatientSummaryHospitalAdmissionDiagnosisSectionTemplateId VDTInpatientSummaryMu2consolHospitalAdmissionDiagnosisSectionHospitalAdmissionDiagnosis"/>
-      <details key="constraints.validation.error" value="VDTInpatientSummaryEffectiveTime VDTInpatientSummaryLocation VDTInpatientSummaryChiefComplaintOrReasonForVisit VDTInpatientSummaryHospitalDischargeInstructionsSection VDTInpatientSummaryHospitalAdmissionDiagnosisSection VDTInpatientSummaryHospitalDischargeMedicationsSection VDTInpatientSummaryHospitalAdmissionDiagnosisSectionTemplateId VDTInpatientSummaryMu2consolHospitalAdmissionDiagnosisSectionHospitalAdmissionDiagnosis"/>
+      <details key="constraints.validation.query" value="VDTInpatientSummaryEffectiveTime VDTInpatientSummaryLocation VDTInpatientSummaryHospitalAdmissionDiagnosisEntry"/>
+      <details key="constraints.validation.error" value="VDTInpatientSummaryEffectiveTime VDTInpatientSummaryLocation VDTInpatientSummaryChiefComplaintOrReasonForVisit VDTInpatientSummaryHospitalAdmissionDiagnosisEntry VDTInpatientSummaryHospitalDischargeInstructionsSection VDTInpatientSummaryHospitalAdmissionDiagnosisSection VDTInpatientSummaryHospitalDischargeMedicationsSection"/>
     </eAnnotations>
     <eOperations name="VDTInpatientSummaryEffectiveTime" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
       <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
@@ -4132,6 +3753,28 @@
         </eGenericType>
       </eParameters>
     </eOperations>
+    <eOperations name="VDTInpatientSummaryHospitalAdmissionDiagnosisEntry" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
+      <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
+        <details key="body" value="self.retrieveHospitalAdmissionDiagnosisSection()->excluding(null)->reject(retrieveHospitalAdmissionDiagnosisSection().getActs()->exists(a : cda::Act | a.oclIsKindOf(consol::HospitalAdmissionDiagnosis)))"/>
+      </eAnnotations>
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="self.retrieveHospitalAdmissionDiagnosisSection()->excluding(null)->reject(retrieveHospitalAdmissionDiagnosisSection().getActs()->exists(a : cda::Act | a.oclIsKindOf(consol::HospitalAdmissionDiagnosis)))"/>
+      </eAnnotations>
+      <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain">
+        <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+          <details key="documentation" value="The chain of diagnostics to which problems are to be appended."/>
+        </eAnnotations>
+      </eParameters>
+      <eParameters name="context">
+        <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+          <details key="documentation" value="The cache of context-specific information."/>
+        </eAnnotations>
+        <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+        </eGenericType>
+      </eParameters>
+    </eOperations>
     <eOperations name="VDTInpatientSummaryHospitalDischargeInstructionsSection" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
       <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
         <details key="body" value="self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::HospitalDischargeInstructionsSection))"/>
@@ -4156,10 +3799,10 @@
     </eOperations>
     <eOperations name="VDTInpatientSummaryHospitalAdmissionDiagnosisSection" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
       <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
-        <details key="body" value="self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(mu2consol::HospitalAdmissionDiagnosisSection))"/>
+        <details key="body" value="self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::HospitalAdmissionDiagnosisSection))"/>
       </eAnnotations>
       <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(mu2consol::HospitalAdmissionDiagnosisSection))"/>
+        <details key="documentation" value="self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::HospitalAdmissionDiagnosisSection))"/>
       </eAnnotations>
       <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain">
         <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
@@ -4198,52 +3841,6 @@
         </eGenericType>
       </eParameters>
     </eOperations>
-    <eOperations name="VDTInpatientSummaryHospitalAdmissionDiagnosisSectionTemplateId"
-        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
-      <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
-        <details key="body" value="self.getHospitalAdmissionDiagnosisSection()->excluding(null)->reject(getHospitalAdmissionDiagnosisSection().templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.22.2.43'))"/>
-      </eAnnotations>
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="self.getHospitalAdmissionDiagnosisSection()->excluding(null)->reject(getHospitalAdmissionDiagnosisSection().templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.22.2.43'))"/>
-      </eAnnotations>
-      <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain">
-        <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-          <details key="documentation" value="The chain of diagnostics to which problems are to be appended."/>
-        </eAnnotations>
-      </eParameters>
-      <eParameters name="context">
-        <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-          <details key="documentation" value="The cache of context-specific information."/>
-        </eAnnotations>
-        <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
-          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
-          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
-        </eGenericType>
-      </eParameters>
-    </eOperations>
-    <eOperations name="VDTInpatientSummaryMu2consolHospitalAdmissionDiagnosisSectionHospitalAdmissionDiagnosis"
-        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
-      <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
-        <details key="body" value="self.getHospitalAdmissionDiagnosisSection()->excluding(null)->reject(getHospitalAdmissionDiagnosisSection().entry->one(entry : cda::Entry | not entry.act.oclIsUndefined() and entry.act.oclIsKindOf(consol::HospitalAdmissionDiagnosis)))"/>
-      </eAnnotations>
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="self.getHospitalAdmissionDiagnosisSection()->excluding(null)->reject(getHospitalAdmissionDiagnosisSection().entry->one(entry : cda::Entry | not entry.act.oclIsUndefined() and entry.act.oclIsKindOf(consol::HospitalAdmissionDiagnosis)))"/>
-      </eAnnotations>
-      <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain">
-        <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-          <details key="documentation" value="The chain of diagnostics to which problems are to be appended."/>
-        </eAnnotations>
-      </eParameters>
-      <eParameters name="context">
-        <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-          <details key="documentation" value="The cache of context-specific information."/>
-        </eAnnotations>
-        <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
-          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
-          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
-        </eGenericType>
-      </eParameters>
-    </eOperations>
     <eOperations name="getHospitalDischargeInstructionsSection" ordered="false" lowerBound="1"
         eType="ecore:EClass ../../org.openhealthtools.mdht.uml.cda.consol/model/consol.ecore#//HospitalDischargeInstructionsSection">
       <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
@@ -4254,12 +3851,12 @@
       </eAnnotations>
     </eOperations>
     <eOperations name="getHospitalAdmissionDiagnosisSection" ordered="false" lowerBound="1"
-        eType="#//HospitalAdmissionDiagnosisSection">
+        eType="ecore:EClass ../../org.openhealthtools.mdht.uml.cda.consol/model/consol.ecore#//HospitalAdmissionDiagnosisSection">
       <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(mu2consol::HospitalAdmissionDiagnosisSection))->asSequence()->any(true).oclAsType(mu2consol::HospitalAdmissionDiagnosisSection)"/>
+        <details key="documentation" value="self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::HospitalAdmissionDiagnosisSection))->asSequence()->any(true).oclAsType(consol::HospitalAdmissionDiagnosisSection)"/>
       </eAnnotations>
       <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
-        <details key="body" value="self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(mu2consol::HospitalAdmissionDiagnosisSection))->asSequence()->any(true).oclAsType(mu2consol::HospitalAdmissionDiagnosisSection)"/>
+        <details key="body" value="self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::HospitalAdmissionDiagnosisSection))->asSequence()->any(true).oclAsType(consol::HospitalAdmissionDiagnosisSection)"/>
       </eAnnotations>
     </eOperations>
     <eOperations name="getChiefComplaintSection" ordered="false" lowerBound="1" eType="ecore:EClass ../../org.openhealthtools.mdht.uml.cda.consol/model/consol.ecore#//ChiefComplaintSection">

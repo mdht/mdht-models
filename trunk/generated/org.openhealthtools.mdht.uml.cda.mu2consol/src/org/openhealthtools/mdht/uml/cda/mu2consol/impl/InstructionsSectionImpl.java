@@ -57,8 +57,7 @@ public class InstructionsSectionImpl extends
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @generated
 	 */
 	public EList<Instructions> getMu2consolInstructionss() {

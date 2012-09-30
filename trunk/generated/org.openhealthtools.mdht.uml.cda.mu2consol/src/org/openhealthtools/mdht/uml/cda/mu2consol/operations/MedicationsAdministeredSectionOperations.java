@@ -126,9 +126,11 @@ public class MedicationsAdministeredSectionOperations
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #getMu2consolMedicationActivities(MedicationsAdministeredSection) <em>Get Mu2consol Medication Activities</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * The cached OCL expression body for the '
+	 * {@link #getMu2consolMedicationActivities(MedicationsAdministeredSection)
+	 * <em>Get Mu2consol Medication Activities</em>}' operation. <!--
+	 * begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @see #getMu2consolMedicationActivities(MedicationsAdministeredSection)
 	 * @generated
 	 * @ordered
@@ -136,9 +138,11 @@ public class MedicationsAdministeredSectionOperations
 	protected static final String GET_MU2CONSOL_MEDICATION_ACTIVITIES__EOCL_EXP = "self.getSubstanceAdministrations()->select(substanceAdministration : cda::SubstanceAdministration | not substanceAdministration.oclIsUndefined() and substanceAdministration.oclIsKindOf(consol::MedicationActivity)).oclAsType(consol::MedicationActivity)";
 
 	/**
-	 * The cached OCL query for the '{@link #getMu2consolMedicationActivities(MedicationsAdministeredSection) <em>Get Mu2consol Medication Activities</em>}' query operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * The cached OCL query for the '
+	 * {@link #getMu2consolMedicationActivities(MedicationsAdministeredSection)
+	 * <em>Get Mu2consol Medication Activities</em>}' query operation. <!--
+	 * begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @see #getMu2consolMedicationActivities(MedicationsAdministeredSection)
 	 * @generated
 	 * @ordered
@@ -146,16 +150,22 @@ public class MedicationsAdministeredSectionOperations
 	protected static OCLExpression<EClassifier> GET_MU2CONSOL_MEDICATION_ACTIVITIES__EOCL_QRY;
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.getSubstanceAdministrations()->select(substanceAdministration : cda::SubstanceAdministration | not substanceAdministration.oclIsUndefined() and substanceAdministration.oclIsKindOf(consol::MedicationActivity)).oclAsType(consol::MedicationActivity)
-	 * @param medicationsAdministeredSection The receiving '<em><b>Medications Administered Section</b></em>' model object.
-	 * <!-- end-model-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc --> <!-- begin-model-doc -->
+	 * self.getSubstanceAdministrations()->select(substanceAdministration :
+	 * cda::SubstanceAdministration | not
+	 * substanceAdministration.oclIsUndefined() and
+	 * substanceAdministration.oclIsKindOf
+	 * (consol::MedicationActivity)).oclAsType(consol::MedicationActivity)
+	 * 
+	 * @param medicationsAdministeredSection
+	 *            The receiving '
+	 *            <em><b>Medications Administered Section</b></em>' model
+	 *            object. <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  EList<MedicationActivity> getMu2consolMedicationActivities(MedicationsAdministeredSection medicationsAdministeredSection) {
+
+	public static EList<MedicationActivity> getMu2consolMedicationActivities(
+			MedicationsAdministeredSection medicationsAdministeredSection) {
 		if (GET_MU2CONSOL_MEDICATION_ACTIVITIES__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(Mu2consolPackage.Literals.MEDICATIONS_ADMINISTERED_SECTION, Mu2consolPackage.Literals.MEDICATIONS_ADMINISTERED_SECTION.getEAllOperations().get(63));

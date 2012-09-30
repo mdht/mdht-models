@@ -49,13 +49,14 @@ public interface SocialHistorySection extends
 			DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(mu2consol::SmokingStatusObservation)).oclAsType(mu2consol::SmokingStatusObservation)
-	 * <!-- end-model-doc -->
-	 * @model kind="operation" required="true" ordered="false"
-	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(mu2consol::SmokingStatusObservation)).oclAsType(mu2consol::SmokingStatusObservation)'"
+	 * <!-- begin-user-doc --> <!-- end-user-doc --> <!-- begin-model-doc -->
+	 * self.getObservations()->select(observation : cda::Observation | not
+	 * observation.oclIsUndefined() and
+	 * observation.oclIsKindOf(mu2consol::SmokingStatusObservation
+	 * )).oclAsType(mu2consol::SmokingStatusObservation) <!-- end-model-doc -->
+	 * 
+	 * @model kind="operation" required="true" ordered="false" annotation=
+	 *        "http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(mu2consol::SmokingStatusObservation)).oclAsType(mu2consol::SmokingStatusObservation)'"
 	 * @generated
 	 */
 	EList<SmokingStatusObservation> getMu2consolSmokingStatusObservations();

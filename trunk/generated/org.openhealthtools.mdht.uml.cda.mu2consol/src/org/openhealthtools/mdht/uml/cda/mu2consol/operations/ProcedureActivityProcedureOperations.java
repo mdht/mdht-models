@@ -24,9 +24,9 @@ import org.openhealthtools.mdht.uml.cda.mu2consol.ProcedureActivityProcedure;
 import org.openhealthtools.mdht.uml.cda.mu2consol.util.Mu2consolValidator;
 
 /**
- * <!-- begin-user-doc -->
- * A static utility class that provides operations related to '<em><b>Procedure Activity Procedure</b></em>' model objects.
- * <!-- end-user-doc -->
+ * <!-- begin-user-doc --> A static utility class that provides operations
+ * related to '<em><b>Procedure Activity Procedure</b></em>' model objects. <!--
+ * end-user-doc -->
  *
  * <p>
  * The following operations are supported:
@@ -39,10 +39,11 @@ import org.openhealthtools.mdht.uml.cda.mu2consol.util.Mu2consolValidator;
  *
  * @generated
  */
-public class ProcedureActivityProcedureOperations extends org.openhealthtools.mdht.uml.cda.consol.operations.ProcedureActivityProcedureOperations {
+public class ProcedureActivityProcedureOperations
+		extends
+		org.openhealthtools.mdht.uml.cda.consol.operations.ProcedureActivityProcedureOperations {
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @generated
 	 */
 	protected ProcedureActivityProcedureOperations() {
@@ -51,8 +52,7 @@ public class ProcedureActivityProcedureOperations extends org.openhealthtools.md
 
 	/**
 	 * The cached OCL expression body for the '{@link #validateMu2consolProcedureActivityProcedureCodeValue(ProcedureActivityProcedure, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Mu2consol Procedure Activity Procedure Code Value</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @see #validateMu2consolProcedureActivityProcedureCodeValue(ProcedureActivityProcedure, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	 * @generated
 	 * @ordered
@@ -61,29 +61,33 @@ public class ProcedureActivityProcedureOperations extends org.openhealthtools.md
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateMu2consolProcedureActivityProcedureCodeValue(ProcedureActivityProcedure, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Mu2consol Procedure Activity Procedure Code Value</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @see #validateMu2consolProcedureActivityProcedureCodeValue(ProcedureActivityProcedure, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	 * @generated
 	 * @ordered
 	 */
-	
+
 	protected static Constraint VALIDATE_MU2CONSOL_PROCEDURE_ACTIVITY_PROCEDURE_CODE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-	
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.code.codeSystem = '2.16.840.1.113883.6.96' xor self.code.codeSystem = '2.16.840.1.113883.6.12'
-	 * @param procedureActivityProcedure The receiving '<em><b>Procedure Activity Procedure</b></em>' model object.
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc --> <!-- begin-model-doc -->
+	 * self.code.codeSystem = '2.16.840.1.113883.6.96' xor self.code.codeSystem
+	 * = '2.16.840.1.113883.6.12'
+	 * 
+	 * @param procedureActivityProcedure
+	 *            The receiving '<em><b>Procedure Activity Procedure</b></em>'
+	 *            model object.
+	 * @param diagnostics
+	 *            The chain of diagnostics to which problems are to be appended.
+	 * @param context
+	 *            The cache of context-specific information. <!-- end-model-doc
+	 *            -->
 	 * @generated
 	 */
-	
-	public static  boolean validateMu2consolProcedureActivityProcedureCodeValue(ProcedureActivityProcedure procedureActivityProcedure, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+	public static boolean validateMu2consolProcedureActivityProcedureCodeValue(
+			ProcedureActivityProcedure procedureActivityProcedure,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
   	  
 		if (VALIDATE_MU2CONSOL_PROCEDURE_ACTIVITY_PROCEDURE_CODE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
@@ -113,8 +117,7 @@ public class ProcedureActivityProcedureOperations extends org.openhealthtools.md
 
 	/**
 	 * The cached OCL expression body for the '{@link #validateMu2consolProcedureActivityProcedureCode(ProcedureActivityProcedure, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Mu2consol Procedure Activity Procedure Code</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @see #validateMu2consolProcedureActivityProcedureCode(ProcedureActivityProcedure, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	 * @generated
 	 * @ordered
@@ -123,29 +126,33 @@ public class ProcedureActivityProcedureOperations extends org.openhealthtools.md
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateMu2consolProcedureActivityProcedureCode(ProcedureActivityProcedure, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Mu2consol Procedure Activity Procedure Code</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @see #validateMu2consolProcedureActivityProcedureCode(ProcedureActivityProcedure, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	 * @generated
 	 * @ordered
 	 */
-	
+
 	protected static Constraint VALIDATE_MU2CONSOL_PROCEDURE_ACTIVITY_PROCEDURE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-	
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * (self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined())
-	 * @param procedureActivityProcedure The receiving '<em><b>Procedure Activity Procedure</b></em>' model object.
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc --> <!-- begin-model-doc -->
+	 * (self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies
+	 * (not self.code.oclIsUndefined())
+	 * 
+	 * @param procedureActivityProcedure
+	 *            The receiving '<em><b>Procedure Activity Procedure</b></em>'
+	 *            model object.
+	 * @param diagnostics
+	 *            The chain of diagnostics to which problems are to be appended.
+	 * @param context
+	 *            The cache of context-specific information. <!-- end-model-doc
+	 *            -->
 	 * @generated
 	 */
-	
-	public static  boolean validateMu2consolProcedureActivityProcedureCode(ProcedureActivityProcedure procedureActivityProcedure, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+	public static boolean validateMu2consolProcedureActivityProcedureCode(
+			ProcedureActivityProcedure procedureActivityProcedure,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
   	  
 		if (VALIDATE_MU2CONSOL_PROCEDURE_ACTIVITY_PROCEDURE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
@@ -175,8 +182,7 @@ public class ProcedureActivityProcedureOperations extends org.openhealthtools.md
 
 	/**
 	 * The cached OCL expression body for the '{@link #validateProcedureActivityProcedureTemplateId(ProcedureActivityProcedure, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Procedure Activity Procedure Template Id</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @see #validateProcedureActivityProcedureTemplateId(ProcedureActivityProcedure, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	 * @generated
 	 * @ordered
@@ -185,29 +191,33 @@ public class ProcedureActivityProcedureOperations extends org.openhealthtools.md
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateProcedureActivityProcedureTemplateId(ProcedureActivityProcedure, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Procedure Activity Procedure Template Id</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @see #validateProcedureActivityProcedureTemplateId(ProcedureActivityProcedure, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	 * @generated
 	 * @ordered
 	 */
-	
+
 	protected static Constraint VALIDATE_PROCEDURE_ACTIVITY_PROCEDURE_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-	
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.22.4.14')
-	 * @param procedureActivityProcedure The receiving '<em><b>Procedure Activity Procedure</b></em>' model object.
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc --> <!-- begin-model-doc -->
+	 * self.templateId->exists(id : datatypes::II | id.root =
+	 * '2.16.840.1.113883.10.20.22.4.14')
+	 * 
+	 * @param procedureActivityProcedure
+	 *            The receiving '<em><b>Procedure Activity Procedure</b></em>'
+	 *            model object.
+	 * @param diagnostics
+	 *            The chain of diagnostics to which problems are to be appended.
+	 * @param context
+	 *            The cache of context-specific information. <!-- end-model-doc
+	 *            -->
 	 * @generated
 	 */
-	
-	public static  boolean validateProcedureActivityProcedureTemplateId(ProcedureActivityProcedure procedureActivityProcedure, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+	public static boolean validateProcedureActivityProcedureTemplateId(
+			ProcedureActivityProcedure procedureActivityProcedure,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
   	  
 		if (VALIDATE_PROCEDURE_ACTIVITY_PROCEDURE_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();

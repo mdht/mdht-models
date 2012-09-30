@@ -51,50 +51,59 @@ public interface PlanOfCareSection extends
 			DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.entry->exists(entry : cda::Entry | not entry.observation.oclIsUndefined() and entry.observation.oclIsKindOf(consol::PlanOfCareActivityObservation))
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entry->exists(entry : cda::Entry | not entry.observation.oclIsUndefined() and entry.observation.oclIsKindOf(consol::PlanOfCareActivityObservation))'"
+	 * <!-- begin-user-doc --> <!-- end-user-doc --> <!-- begin-model-doc -->
+	 * self.entry->exists(entry : cda::Entry | not
+	 * entry.observation.oclIsUndefined() and
+	 * entry.observation.oclIsKindOf(consol::PlanOfCareActivityObservation))
+	 * 
+	 * @param diagnostics
+	 *            The chain of diagnostics to which problems are to be appended.
+	 * @param context
+	 *            The cache of context-specific information. <!-- end-model-doc
+	 *            -->
+	 * @model annotation=
+	 *        "http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entry->exists(entry : cda::Entry | not entry.observation.oclIsUndefined() and entry.observation.oclIsKindOf(consol::PlanOfCareActivityObservation))'"
 	 * @generated
 	 */
-	boolean validateMu2consolPlanOfCareSectionPlanOfCareActivityObservation(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateMu2consolPlanOfCareSectionPlanOfCareActivityObservation(
+			DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(consol::PlanOfCareActivityAct)).oclAsType(consol::PlanOfCareActivityAct)
+	 * <!-- begin-user-doc --> <!-- end-user-doc --> <!-- begin-model-doc -->
+	 * self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and
+	 * act.oclIsKindOf
+	 * (consol::PlanOfCareActivityAct)).oclAsType(consol::PlanOfCareActivityAct)
 	 * <!-- end-model-doc -->
-	 * @model kind="operation" required="true" ordered="false"
-	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(consol::PlanOfCareActivityAct)).oclAsType(consol::PlanOfCareActivityAct)'"
+	 * 
+	 * @model kind="operation" required="true" ordered="false" annotation=
+	 *        "http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(consol::PlanOfCareActivityAct)).oclAsType(consol::PlanOfCareActivityAct)'"
 	 * @generated
 	 */
 	EList<PlanOfCareActivityAct> getMu2consolPlanOfCareActivityActs();
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.getEncounters()->select(encounter : cda::Encounter | not encounter.oclIsUndefined() and encounter.oclIsKindOf(consol::PlanOfCareActivityEncounter)).oclAsType(consol::PlanOfCareActivityEncounter)
-	 * <!-- end-model-doc -->
-	 * @model kind="operation" required="true" ordered="false"
-	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getEncounters()->select(encounter : cda::Encounter | not encounter.oclIsUndefined() and encounter.oclIsKindOf(consol::PlanOfCareActivityEncounter)).oclAsType(consol::PlanOfCareActivityEncounter)'"
+	 * <!-- begin-user-doc --> <!-- end-user-doc --> <!-- begin-model-doc -->
+	 * self.getEncounters()->select(encounter : cda::Encounter | not
+	 * encounter.oclIsUndefined() and
+	 * encounter.oclIsKindOf(consol::PlanOfCareActivityEncounter
+	 * )).oclAsType(consol::PlanOfCareActivityEncounter) <!-- end-model-doc -->
+	 * 
+	 * @model kind="operation" required="true" ordered="false" annotation=
+	 *        "http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getEncounters()->select(encounter : cda::Encounter | not encounter.oclIsUndefined() and encounter.oclIsKindOf(consol::PlanOfCareActivityEncounter)).oclAsType(consol::PlanOfCareActivityEncounter)'"
 	 * @generated
 	 */
 	EList<PlanOfCareActivityEncounter> getMu2consolPlanOfCareActivityEncounters();
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::PlanOfCareActivityObservation)).oclAsType(consol::PlanOfCareActivityObservation)
-	 * <!-- end-model-doc -->
-	 * @model kind="operation" required="true" ordered="false"
-	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::PlanOfCareActivityObservation)).oclAsType(consol::PlanOfCareActivityObservation)'"
+	 * <!-- begin-user-doc --> <!-- end-user-doc --> <!-- begin-model-doc -->
+	 * self.getObservations()->select(observation : cda::Observation | not
+	 * observation.oclIsUndefined() and
+	 * observation.oclIsKindOf(consol::PlanOfCareActivityObservation
+	 * )).oclAsType(consol::PlanOfCareActivityObservation) <!-- end-model-doc
+	 * -->
+	 * 
+	 * @model kind="operation" required="true" ordered="false" annotation=
+	 *        "http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::PlanOfCareActivityObservation)).oclAsType(consol::PlanOfCareActivityObservation)'"
 	 * @generated
 	 */
 	EList<PlanOfCareActivityObservation> getMu2consolPlanOfCareActivityObservations();

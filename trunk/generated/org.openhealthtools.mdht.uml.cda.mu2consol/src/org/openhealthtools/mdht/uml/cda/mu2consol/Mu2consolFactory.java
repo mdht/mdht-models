@@ -42,18 +42,18 @@ public interface Mu2consolFactory extends EFactory {
 	SummaryOfCareRecord createSummaryOfCareRecord();
 
 	/**
-	 * Returns a new object of class '<em>Encounters Section</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * Returns a new object of class '<em>Encounters Section</em>'. <!--
+	 * begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @return a new object of class '<em>Encounters Section</em>'.
 	 * @generated
 	 */
 	EncountersSection createEncountersSection();
 
 	/**
-	 * Returns a new object of class '<em>Encounter Activities</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * Returns a new object of class '<em>Encounter Activities</em>'. <!--
+	 * begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @return a new object of class '<em>Encounter Activities</em>'.
 	 * @generated
 	 */
@@ -113,44 +113,43 @@ public interface Mu2consolFactory extends EFactory {
 
 	/**
 	 * Returns a new object of class '<em>View Download Transmit Summary</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @return a new object of class '<em>View Download Transmit Summary</em>'.
 	 * @generated
 	 */
 	ViewDownloadTransmitSummary createViewDownloadTransmitSummary();
 
 	/**
-	 * Returns a new object of class '<em>VDT Inpatient Summary</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * Returns a new object of class '<em>VDT Inpatient Summary</em>'. <!--
+	 * begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @return a new object of class '<em>VDT Inpatient Summary</em>'.
 	 * @generated
 	 */
 	VDTInpatientSummary createVDTInpatientSummary();
 
 	/**
-	 * Returns a new object of class '<em>VDT Ambulatory Summary</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * Returns a new object of class '<em>VDT Ambulatory Summary</em>'. <!--
+	 * begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @return a new object of class '<em>VDT Ambulatory Summary</em>'.
 	 * @generated
 	 */
 	VDTAmbulatorySummary createVDTAmbulatorySummary();
 
 	/**
-	 * Returns a new object of class '<em>Result Observation</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * Returns a new object of class '<em>Result Observation</em>'. <!--
+	 * begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @return a new object of class '<em>Result Observation</em>'.
 	 * @generated
 	 */
 	ResultObservation createResultObservation();
 
 	/**
-	 * Returns a new object of class '<em>Procedures Section</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * Returns a new object of class '<em>Procedures Section</em>'. <!--
+	 * begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @return a new object of class '<em>Procedures Section</em>'.
 	 * @generated
 	 */
@@ -158,26 +157,25 @@ public interface Mu2consolFactory extends EFactory {
 
 	/**
 	 * Returns a new object of class '<em>Procedure Activity Procedure</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @return a new object of class '<em>Procedure Activity Procedure</em>'.
 	 * @generated
 	 */
 	ProcedureActivityProcedure createProcedureActivityProcedure();
 
 	/**
-	 * Returns a new object of class '<em>Result Organizer</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * Returns a new object of class '<em>Result Organizer</em>'. <!--
+	 * begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @return a new object of class '<em>Result Organizer</em>'.
 	 * @generated
 	 */
 	ResultOrganizer createResultOrganizer();
 
 	/**
-	 * Returns a new object of class '<em>Results Section</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * Returns a new object of class '<em>Results Section</em>'. <!--
+	 * begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @return a new object of class '<em>Results Section</em>'.
 	 * @generated
 	 */
@@ -191,40 +189,6 @@ public interface Mu2consolFactory extends EFactory {
 	 * @generated
 	 */
 	AssessmentSection createAssessmentSection();
-
-	/**
-	 * Returns a new object of class '<em>Hospital Admission Diagnosis Section</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Hospital Admission Diagnosis Section</em>'.
-	 * @generated
-	 */
-	HospitalAdmissionDiagnosisSection createHospitalAdmissionDiagnosisSection();
-
-	/**
-	 * Returns a new object of class '<em>Hospital Discharge Diagnosis Section</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Hospital Discharge Diagnosis Section</em>'.
-	 * @generated
-	 */
-	HospitalDischargeDiagnosisSection createHospitalDischargeDiagnosisSection();
-
-	/**
-	 * Returns a new object of class '<em>Postoperative Diagnosis Section</em>'.
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @return a new object of class '<em>Postoperative Diagnosis Section</em>'.
-	 * @generated
-	 */
-	PostoperativeDiagnosisSection createPostoperativeDiagnosisSection();
-
-	/**
-	 * Returns a new object of class '<em>Postprocedure Diagnosis Section</em>'.
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @return a new object of class '<em>Postprocedure Diagnosis Section</em>'.
-	 * @generated
-	 */
-	PostprocedureDiagnosisSection createPostprocedureDiagnosisSection();
 
 	/**
 	 * Returns a new object of class '<em>Preoperative Diagnosis Section</em>'.
@@ -264,9 +228,9 @@ public interface Mu2consolFactory extends EFactory {
 	SocialHistorySection createSocialHistorySection();
 
 	/**
-	 * Returns a new object of class '<em>Smoking Status Observation</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * Returns a new object of class '<em>Smoking Status Observation</em>'. <!--
+	 * begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @return a new object of class '<em>Smoking Status Observation</em>'.
 	 * @generated
 	 */

@@ -17,29 +17,28 @@ import org.eclipse.emf.ecore.EObject;
 
 import org.openhealthtools.mdht.emf.runtime.util.Initializer;
 
+import org.openhealthtools.mdht.uml.cda.consol.HospitalAdmissionDiagnosisSection;
+import org.openhealthtools.mdht.uml.cda.consol.HospitalDischargeDiagnosisSection;
 import org.openhealthtools.mdht.uml.cda.consol.HospitalDischargeInstructionsSection;
 
 import org.openhealthtools.mdht.uml.cda.consol.HospitalDischargeMedicationsSection;
-import org.openhealthtools.mdht.uml.cda.mu2consol.HospitalAdmissionDiagnosisSection;
-import org.openhealthtools.mdht.uml.cda.mu2consol.HospitalDischargeDiagnosisSection;
 import org.openhealthtools.mdht.uml.cda.mu2consol.Mu2consolPackage;
 import org.openhealthtools.mdht.uml.cda.mu2consol.TransitionOfCareInpatientSummary;
 
 import org.openhealthtools.mdht.uml.cda.mu2consol.operations.TransitionOfCareInpatientSummaryOperations;
 
 /**
- * <!-- begin-user-doc -->
- * An implementation of the model object '<em><b>Transition Of Care Inpatient Summary</b></em>'.
- * <!-- end-user-doc -->
+ * <!-- begin-user-doc --> An implementation of the model object '
+ * <em><b>Transition Of Care Inpatient Summary</b></em>'. <!-- end-user-doc -->
  * <p>
  * </p>
  *
  * @generated
  */
-public class TransitionOfCareInpatientSummaryImpl extends SummaryOfCareRecordImpl implements TransitionOfCareInpatientSummary {
+public class TransitionOfCareInpatientSummaryImpl extends
+		SummaryOfCareRecordImpl implements TransitionOfCareInpatientSummary {
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @generated
 	 */
 	protected TransitionOfCareInpatientSummaryImpl() {
@@ -47,8 +46,7 @@ public class TransitionOfCareInpatientSummaryImpl extends SummaryOfCareRecordImp
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @generated
 	 */
 	@Override
@@ -57,71 +55,43 @@ public class TransitionOfCareInpatientSummaryImpl extends SummaryOfCareRecordImp
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateTransitionOfCareInpatientSummaryInpatientEncounterDiagnoses(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateTransitionOfCareInpatientSummaryInpatientEncounterDiagnoses(
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return TransitionOfCareInpatientSummaryOperations.validateTransitionOfCareInpatientSummaryInpatientEncounterDiagnoses(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateTransitionOfCareInpatientSummaryHospitalDischargeInstructionsSection(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateTransitionOfCareInpatientSummaryHospitalAdmissionDiagnosisEntry(
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return TransitionOfCareInpatientSummaryOperations.validateTransitionOfCareInpatientSummaryHospitalAdmissionDiagnosisEntry(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateTransitionOfCareInpatientSummaryHospitalDischargeInstructionsSection(
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return TransitionOfCareInpatientSummaryOperations.validateTransitionOfCareInpatientSummaryHospitalDischargeInstructionsSection(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateTransitionOfCareInpatientSummaryHospitalDischargeMedicationsSection(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateTransitionOfCareInpatientSummaryHospitalDischargeMedicationsSection(
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return TransitionOfCareInpatientSummaryOperations.validateTransitionOfCareInpatientSummaryHospitalDischargeMedicationsSection(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateTransitionOfCareInpatientSummaryHospitalAdmissionDiagnosisSectionTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return TransitionOfCareInpatientSummaryOperations.validateTransitionOfCareInpatientSummaryHospitalAdmissionDiagnosisSectionTemplateId(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateTransitionOfCareInpatientSummaryMu2consolHospitalAdmissionDiagnosisSectionHospitalAdmissionDiagnosis(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return TransitionOfCareInpatientSummaryOperations.validateTransitionOfCareInpatientSummaryMu2consolHospitalAdmissionDiagnosisSectionHospitalAdmissionDiagnosis(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateTransitionOfCareInpatientSummaryHospitalDischargeDiagnosisSectionTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return TransitionOfCareInpatientSummaryOperations.validateTransitionOfCareInpatientSummaryHospitalDischargeDiagnosisSectionTemplateId(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateTransitionOfCareInpatientSummaryMu2consolHospitalDischargeDiagnosisSectionHospitalDischargeDiagnosis(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return TransitionOfCareInpatientSummaryOperations.validateTransitionOfCareInpatientSummaryMu2consolHospitalDischargeDiagnosisSectionHospitalDischargeDiagnosis(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @generated
 	 */
 	public HospitalDischargeInstructionsSection getHospitalDischargeInstructionsSection() {
@@ -129,8 +99,7 @@ public class TransitionOfCareInpatientSummaryImpl extends SummaryOfCareRecordImp
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @generated
 	 */
 	public HospitalDischargeMedicationsSection getHospitalDischargeMedicationsSection() {
@@ -138,8 +107,7 @@ public class TransitionOfCareInpatientSummaryImpl extends SummaryOfCareRecordImp
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @generated
 	 */
 	public HospitalAdmissionDiagnosisSection getHospitalAdmissionDiagnosisSection() {
@@ -147,8 +115,7 @@ public class TransitionOfCareInpatientSummaryImpl extends SummaryOfCareRecordImp
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @generated
 	 */
 	public HospitalDischargeDiagnosisSection getHospitalDischargeDiagnosisSection() {
@@ -156,22 +123,22 @@ public class TransitionOfCareInpatientSummaryImpl extends SummaryOfCareRecordImp
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @generated
 	 */
 	@Override
 	public TransitionOfCareInpatientSummary init() {
 	    return Initializer.Util.init(this);
 	}
-    /**
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+
+	/**
+     * <!-- begin-user-doc --> <!-- end-user-doc -->
      * @generated
      */
-    @Override
-	public TransitionOfCareInpatientSummary init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+	@Override
+	public TransitionOfCareInpatientSummary init(
+			Iterable<? extends Initializer<? extends EObject>> initializers) {
         Initializer.Util.init(this, initializers);
         return this;
     }
-} //TransitionOfCareInpatientSummaryImpl
+} // TransitionOfCareInpatientSummaryImpl
