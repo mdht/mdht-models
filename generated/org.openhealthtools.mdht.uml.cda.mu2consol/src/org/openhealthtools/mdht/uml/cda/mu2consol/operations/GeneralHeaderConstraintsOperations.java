@@ -23,6 +23,7 @@ import org.eclipse.ocl.ecore.Constraint;
 import org.eclipse.ocl.ecore.OCL;
 
 import org.eclipse.ocl.expressions.OCLExpression;
+import org.openhealthtools.mdht.uml.cda.consol.HospitalAdmissionDiagnosisSection;
 import org.openhealthtools.mdht.uml.cda.mu2consol.GeneralHeaderConstraints;
 import org.openhealthtools.mdht.uml.cda.mu2consol.Mu2consolPackage;
 import org.openhealthtools.mdht.uml.cda.mu2consol.Mu2consolPlugin;
@@ -42,6 +43,7 @@ import org.openhealthtools.mdht.uml.cda.mu2consol.util.Mu2consolValidator;
  *   <li>{@link org.openhealthtools.mdht.uml.cda.mu2consol.GeneralHeaderConstraints#validateGeneralHeaderConstraintsDocumentationOfServiceEventPerformer1AssignedEntityAssignedPerson(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate General Header Constraints Documentation Of Service Event Performer1 Assigned Entity Assigned Person</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.mu2consol.GeneralHeaderConstraints#validateGeneralHeaderConstraintsComponent1EncompassingEncounterEncounterParticipant(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate General Header Constraints Component1 Encompassing Encounter Encounter Participant</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.mu2consol.GeneralHeaderConstraints#validateGeneralHeaderConstraintsComponent1EncompassingEncounter(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate General Header Constraints Component1 Encompassing Encounter</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.mu2consol.GeneralHeaderConstraints#retrieveHospitalAdmissionDiagnosisSection() <em>Retrieve Hospital Admission Diagnosis Section</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.mu2consol.GeneralHeaderConstraints#validateGeneralHeaderConstraintsTemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate General Header Constraints Template Id</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.mu2consol.GeneralHeaderConstraints#validateGeneralHeaderConstraintsRecordTargetPatientRolePatientLanguageCommunicationLanguageCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate General Header Constraints Record Target Patient Role Patient Language Communication Language Code P</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.mu2consol.GeneralHeaderConstraints#validateGeneralHeaderConstraintsRecordTargetPatientRolePatientLanguageCommunicationLanguageCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate General Header Constraints Record Target Patient Role Patient Language Communication Language Code</em>}</li>
@@ -205,8 +207,7 @@ public class GeneralHeaderConstraintsOperations
 
 	/**
 	 * The cached OCL expression body for the '{@link #validateGeneralHeaderConstraintsDocumentationOfServiceEventPerformer1AssignedEntityAssignedPerson(GeneralHeaderConstraints, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate General Header Constraints Documentation Of Service Event Performer1 Assigned Entity Assigned Person</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @see #validateGeneralHeaderConstraintsDocumentationOfServiceEventPerformer1AssignedEntityAssignedPerson(GeneralHeaderConstraints, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	 * @generated
 	 * @ordered
@@ -215,28 +216,36 @@ public class GeneralHeaderConstraintsOperations
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateGeneralHeaderConstraintsDocumentationOfServiceEventPerformer1AssignedEntityAssignedPerson(GeneralHeaderConstraints, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate General Header Constraints Documentation Of Service Event Performer1 Assigned Entity Assigned Person</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @see #validateGeneralHeaderConstraintsDocumentationOfServiceEventPerformer1AssignedEntityAssignedPerson(GeneralHeaderConstraints, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	 * @generated
 	 * @ordered
 	 */
-	
+
 	protected static Query<?, ?, ?> VALIDATE_GENERAL_HEADER_CONSTRAINTS_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER1_ASSIGNED_ENTITY_ASSIGNED_PERSON__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY;
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.documentationOf->excluding(null).serviceEvent->excluding(null).performer->excluding(null).assignedEntity->excluding(null)->reject(assignedPerson->one(assignedPerson : cda::Person | not assignedPerson.oclIsUndefined() and assignedPerson.oclIsKindOf(rim::Entity)))
-	 * @param generalHeaderConstraints The receiving '<em><b>General Header Constraints</b></em>' model object.
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc --> <!-- begin-model-doc -->
+	 * self.documentationOf->excluding(null).serviceEvent->excluding(null).
+	 * performer
+	 * ->excluding(null).assignedEntity->excluding(null)->reject(assignedPerson
+	 * ->one(assignedPerson : cda::Person | not assignedPerson.oclIsUndefined()
+	 * and assignedPerson.oclIsKindOf(rim::Entity)))
+	 * 
+	 * @param generalHeaderConstraints
+	 *            The receiving '<em><b>General Header Constraints</b></em>'
+	 *            model object.
+	 * @param diagnostics
+	 *            The chain of diagnostics to which problems are to be appended.
+	 * @param context
+	 *            The cache of context-specific information. <!-- end-model-doc
+	 *            -->
 	 * @generated
 	 */
 	@SuppressWarnings("unchecked")
-	public static  boolean validateGeneralHeaderConstraintsDocumentationOfServiceEventPerformer1AssignedEntityAssignedPerson(GeneralHeaderConstraints generalHeaderConstraints, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public static boolean validateGeneralHeaderConstraintsDocumentationOfServiceEventPerformer1AssignedEntityAssignedPerson(
+			GeneralHeaderConstraints generalHeaderConstraints,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
   	  
 		
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
@@ -433,8 +442,7 @@ public class GeneralHeaderConstraintsOperations
 
 	/**
 	 * The cached OCL expression body for the '{@link #validateGeneralHeaderConstraintsComponent1EncompassingEncounterEncounterParticipant(GeneralHeaderConstraints, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate General Header Constraints Component1 Encompassing Encounter Encounter Participant</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @see #validateGeneralHeaderConstraintsComponent1EncompassingEncounterEncounterParticipant(GeneralHeaderConstraints, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	 * @generated
 	 * @ordered
@@ -443,28 +451,36 @@ public class GeneralHeaderConstraintsOperations
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateGeneralHeaderConstraintsComponent1EncompassingEncounterEncounterParticipant(GeneralHeaderConstraints, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate General Header Constraints Component1 Encompassing Encounter Encounter Participant</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @see #validateGeneralHeaderConstraintsComponent1EncompassingEncounterEncounterParticipant(GeneralHeaderConstraints, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	 * @generated
 	 * @ordered
 	 */
-	
+
 	protected static Query<?, ?, ?> VALIDATE_GENERAL_HEADER_CONSTRAINTS_COMPONENT1_ENCOMPASSING_ENCOUNTER_ENCOUNTER_PARTICIPANT__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY;
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.componentOf->excluding(null).encompassingEncounter->excluding(null)->reject(encounterParticipant->exists(encounterParticipant : cda::EncounterParticipant | not encounterParticipant.oclIsUndefined() and encounterParticipant.oclIsKindOf(rim::Participation)))
-	 * @param generalHeaderConstraints The receiving '<em><b>General Header Constraints</b></em>' model object.
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc --> <!-- begin-model-doc -->
+	 * self
+	 * .componentOf->excluding(null).encompassingEncounter->excluding(null)->
+	 * reject(encounterParticipant->exists(encounterParticipant :
+	 * cda::EncounterParticipant | not encounterParticipant.oclIsUndefined() and
+	 * encounterParticipant.oclIsKindOf(rim::Participation)))
+	 * 
+	 * @param generalHeaderConstraints
+	 *            The receiving '<em><b>General Header Constraints</b></em>'
+	 *            model object.
+	 * @param diagnostics
+	 *            The chain of diagnostics to which problems are to be appended.
+	 * @param context
+	 *            The cache of context-specific information. <!-- end-model-doc
+	 *            -->
 	 * @generated
 	 */
 	@SuppressWarnings("unchecked")
-	public static  boolean validateGeneralHeaderConstraintsComponent1EncompassingEncounterEncounterParticipant(GeneralHeaderConstraints generalHeaderConstraints, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public static boolean validateGeneralHeaderConstraintsComponent1EncompassingEncounterEncounterParticipant(
+			GeneralHeaderConstraints generalHeaderConstraints,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
   	  
 		
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
@@ -500,8 +516,7 @@ public class GeneralHeaderConstraintsOperations
 
 	/**
 	 * The cached OCL expression body for the '{@link #validateGeneralHeaderConstraintsComponent1EncompassingEncounter(GeneralHeaderConstraints, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate General Header Constraints Component1 Encompassing Encounter</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @see #validateGeneralHeaderConstraintsComponent1EncompassingEncounter(GeneralHeaderConstraints, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	 * @generated
 	 * @ordered
@@ -510,28 +525,35 @@ public class GeneralHeaderConstraintsOperations
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateGeneralHeaderConstraintsComponent1EncompassingEncounter(GeneralHeaderConstraints, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate General Header Constraints Component1 Encompassing Encounter</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @see #validateGeneralHeaderConstraintsComponent1EncompassingEncounter(GeneralHeaderConstraints, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	 * @generated
 	 * @ordered
 	 */
-	
+
 	protected static Query<?, ?, ?> VALIDATE_GENERAL_HEADER_CONSTRAINTS_COMPONENT1_ENCOMPASSING_ENCOUNTER__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY;
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.componentOf->excluding(null)->reject(encompassingEncounter->one(encompassingEncounter : cda::EncompassingEncounter | not encompassingEncounter.oclIsUndefined() and encompassingEncounter.oclIsKindOf(cda::EncompassingEncounter)))
-	 * @param generalHeaderConstraints The receiving '<em><b>General Header Constraints</b></em>' model object.
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc --> <!-- begin-model-doc -->
+	 * self.componentOf->excluding(null)->reject(encompassingEncounter->one(
+	 * encompassingEncounter : cda::EncompassingEncounter | not
+	 * encompassingEncounter.oclIsUndefined() and
+	 * encompassingEncounter.oclIsKindOf(cda::EncompassingEncounter)))
+	 * 
+	 * @param generalHeaderConstraints
+	 *            The receiving '<em><b>General Header Constraints</b></em>'
+	 *            model object.
+	 * @param diagnostics
+	 *            The chain of diagnostics to which problems are to be appended.
+	 * @param context
+	 *            The cache of context-specific information. <!-- end-model-doc
+	 *            -->
 	 * @generated
 	 */
 	@SuppressWarnings("unchecked")
-	public static  boolean validateGeneralHeaderConstraintsComponent1EncompassingEncounter(GeneralHeaderConstraints generalHeaderConstraints, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public static boolean validateGeneralHeaderConstraintsComponent1EncompassingEncounter(
+			GeneralHeaderConstraints generalHeaderConstraints,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
   	  
 		
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
@@ -566,9 +588,59 @@ public class GeneralHeaderConstraintsOperations
 	}
 
 	/**
+	 * The cached OCL expression body for the '
+	 * {@link #retrieveHospitalAdmissionDiagnosisSection(GeneralHeaderConstraints)
+	 * <em>Retrieve Hospital Admission Diagnosis Section</em>}' operation. <!--
+	 * begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @see #retrieveHospitalAdmissionDiagnosisSection(GeneralHeaderConstraints)
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String RETRIEVE_HOSPITAL_ADMISSION_DIAGNOSIS_SECTION__EOCL_EXP = "self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::HospitalAdmissionDiagnosisSection))->asSequence()->any(true).oclAsType(consol::HospitalAdmissionDiagnosisSection)";
+
+	/**
+	 * The cached OCL query for the '{@link #retrieveHospitalAdmissionDiagnosisSection(GeneralHeaderConstraints) <em>Retrieve Hospital Admission Diagnosis Section</em>}' query operation.
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * @see #retrieveHospitalAdmissionDiagnosisSection(GeneralHeaderConstraints)
+	 * @generated
+	 * @ordered
+	 */
+	protected static OCLExpression<EClassifier> RETRIEVE_HOSPITAL_ADMISSION_DIAGNOSIS_SECTION__EOCL_QRY;
+
+	/**
+	 * <!-- begin-user-doc --> <!-- end-user-doc --> <!-- begin-model-doc -->
+	 * self.getAllSections()->select(section : cda::Section | not
+	 * section.oclIsUndefined() and
+	 * section.oclIsKindOf(consol::HospitalAdmissionDiagnosisSection
+	 * ))->asSequence
+	 * ()->any(true).oclAsType(consol::HospitalAdmissionDiagnosisSection)
+	 * 
+	 * @param generalHeaderConstraints
+	 *            The receiving '<em><b>General Header Constraints</b></em>'
+	 *            model object. <!-- end-model-doc -->
+	 * @generated
+	 */
+
+	public static HospitalAdmissionDiagnosisSection retrieveHospitalAdmissionDiagnosisSection(
+			GeneralHeaderConstraints generalHeaderConstraints) {
+		if (RETRIEVE_HOSPITAL_ADMISSION_DIAGNOSIS_SECTION__EOCL_QRY == null) {
+			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+			helper.setOperationContext(Mu2consolPackage.Literals.GENERAL_HEADER_CONSTRAINTS, Mu2consolPackage.Literals.GENERAL_HEADER_CONSTRAINTS.getEAllOperations().get(295));
+			try {
+				RETRIEVE_HOSPITAL_ADMISSION_DIAGNOSIS_SECTION__EOCL_QRY = helper.createQuery(RETRIEVE_HOSPITAL_ADMISSION_DIAGNOSIS_SECTION__EOCL_EXP);
+			}
+			catch (ParserException pe) {
+				throw new UnsupportedOperationException(pe.getLocalizedMessage());
+			}
+		}
+		OCL.Query query = EOCL_ENV.createQuery(RETRIEVE_HOSPITAL_ADMISSION_DIAGNOSIS_SECTION__EOCL_QRY);
+		return (HospitalAdmissionDiagnosisSection) query.evaluate(generalHeaderConstraints);
+	}
+
+	/**
 	 * The cached OCL expression body for the '{@link #validateGeneralHeaderConstraintsTemplateId(GeneralHeaderConstraints, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate General Header Constraints Template Id</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @see #validateGeneralHeaderConstraintsTemplateId(GeneralHeaderConstraints, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	 * @generated
 	 * @ordered
@@ -577,28 +649,33 @@ public class GeneralHeaderConstraintsOperations
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateGeneralHeaderConstraintsTemplateId(GeneralHeaderConstraints, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate General Header Constraints Template Id</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @see #validateGeneralHeaderConstraintsTemplateId(GeneralHeaderConstraints, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	 * @generated
 	 * @ordered
 	 */
-	
+
 	protected static Constraint VALIDATE_GENERAL_HEADER_CONSTRAINTS_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.22.1.1')
-	 * @param generalHeaderConstraints The receiving '<em><b>General Header Constraints</b></em>' model object.
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc --> <!-- begin-model-doc -->
+	 * self.templateId->exists(id : datatypes::II | id.root =
+	 * '2.16.840.1.113883.10.20.22.1.1')
+	 * 
+	 * @param generalHeaderConstraints
+	 *            The receiving '<em><b>General Header Constraints</b></em>'
+	 *            model object.
+	 * @param diagnostics
+	 *            The chain of diagnostics to which problems are to be appended.
+	 * @param context
+	 *            The cache of context-specific information. <!-- end-model-doc
+	 *            -->
 	 * @generated
 	 */
-	
-	public static  boolean validateGeneralHeaderConstraintsTemplateId(GeneralHeaderConstraints generalHeaderConstraints, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+	public static boolean validateGeneralHeaderConstraintsTemplateId(
+			GeneralHeaderConstraints generalHeaderConstraints,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
   	  
 		if (VALIDATE_GENERAL_HEADER_CONSTRAINTS_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
@@ -628,8 +705,7 @@ public class GeneralHeaderConstraintsOperations
 
 	/**
 	 * The cached OCL expression body for the '{@link #validateGeneralHeaderConstraintsRecordTargetPatientRolePatientLanguageCommunicationLanguageCodeP(GeneralHeaderConstraints, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate General Header Constraints Record Target Patient Role Patient Language Communication Language Code P</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @see #validateGeneralHeaderConstraintsRecordTargetPatientRolePatientLanguageCommunicationLanguageCodeP(GeneralHeaderConstraints, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	 * @generated
 	 * @ordered
@@ -638,28 +714,36 @@ public class GeneralHeaderConstraintsOperations
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateGeneralHeaderConstraintsRecordTargetPatientRolePatientLanguageCommunicationLanguageCodeP(GeneralHeaderConstraints, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate General Header Constraints Record Target Patient Role Patient Language Communication Language Code P</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @see #validateGeneralHeaderConstraintsRecordTargetPatientRolePatientLanguageCommunicationLanguageCodeP(GeneralHeaderConstraints, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	 * @generated
 	 * @ordered
 	 */
-	
+
 	protected static Query<?, ?, ?> VALIDATE_GENERAL_HEADER_CONSTRAINTS_RECORD_TARGET_PATIENT_ROLE_PATIENT_LANGUAGE_COMMUNICATION_LANGUAGE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY;
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.recordTarget->excluding(null).patientRole->excluding(null).patient->excluding(null).languageCommunication->excluding(null)->reject((languageCode.oclIsUndefined() or languageCode.isNullFlavorUndefined()) implies (not languageCode.oclIsUndefined()))
-	 * @param generalHeaderConstraints The receiving '<em><b>General Header Constraints</b></em>' model object.
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc --> <!-- begin-model-doc -->
+	 * self.recordTarget->excluding(null).patientRole->excluding(null).patient->
+	 * excluding
+	 * (null).languageCommunication->excluding(null)->reject((languageCode
+	 * .oclIsUndefined() or languageCode.isNullFlavorUndefined()) implies (not
+	 * languageCode.oclIsUndefined()))
+	 * 
+	 * @param generalHeaderConstraints
+	 *            The receiving '<em><b>General Header Constraints</b></em>'
+	 *            model object.
+	 * @param diagnostics
+	 *            The chain of diagnostics to which problems are to be appended.
+	 * @param context
+	 *            The cache of context-specific information. <!-- end-model-doc
+	 *            -->
 	 * @generated
 	 */
 	@SuppressWarnings("unchecked")
-	public static  boolean validateGeneralHeaderConstraintsRecordTargetPatientRolePatientLanguageCommunicationLanguageCodeP(GeneralHeaderConstraints generalHeaderConstraints, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public static boolean validateGeneralHeaderConstraintsRecordTargetPatientRolePatientLanguageCommunicationLanguageCodeP(
+			GeneralHeaderConstraints generalHeaderConstraints,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
   	  
 		
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
@@ -706,8 +790,7 @@ public class GeneralHeaderConstraintsOperations
 
 	/**
 	 * The cached OCL expression body for the '{@link #validateGeneralHeaderConstraintsRecordTargetPatientRolePatientLanguageCommunicationLanguageCode(GeneralHeaderConstraints, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate General Header Constraints Record Target Patient Role Patient Language Communication Language Code</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @see #validateGeneralHeaderConstraintsRecordTargetPatientRolePatientLanguageCommunicationLanguageCode(GeneralHeaderConstraints, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	 * @generated
 	 * @ordered
@@ -718,30 +801,99 @@ public class GeneralHeaderConstraintsOperations
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateGeneralHeaderConstraintsRecordTargetPatientRolePatientLanguageCommunicationLanguageCode(GeneralHeaderConstraints, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate General Header Constraints Record Target Patient Role Patient Language Communication Language Code</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @see #validateGeneralHeaderConstraintsRecordTargetPatientRolePatientLanguageCommunicationLanguageCode(GeneralHeaderConstraints, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	 * @generated
 	 * @ordered
 	 */
-	
+
 	protected static Query<?, ?, ?> VALIDATE_GENERAL_HEADER_CONSTRAINTS_RECORD_TARGET_PATIENT_ROLE_PATIENT_LANGUAGE_COMMUNICATION_LANGUAGE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY;
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.recordTarget->excluding(null).patientRole->excluding(null).patient->excluding(null).languageCommunication->excluding(null)->reject((languageCode.oclIsUndefined() or languageCode.isNullFlavorUndefined()) implies (not languageCode.oclIsUndefined() and languageCode.oclIsKindOf(datatypes::CS) and 
-	 * let value : datatypes::CS = languageCode.oclAsType(datatypes::CS) in 
-	 * value.code = 'aar' or value.code = 'abk' or value.code = 'afr' or value.code = 'aka' or value.code = 'sqi' or value.code = 'amh' or value.code = 'ara' or value.code = 'arg' or value.code = 'hye' or value.code = 'asm' or value.code = 'ava' or value.code = 'ave' or value.code = 'aym' or value.code = 'aze' or value.code = 'bak' or value.code = 'bam' or value.code = 'eus' or value.code = 'bel' or value.code = 'ben' or value.code = 'bih' or value.code = 'bis' or value.code = 'bod' or value.code = 'bos' or value.code = 'bre' or value.code = 'bul' or value.code = 'mya' or value.code = 'cat' or value.code = 'ces' or value.code = 'cha' or value.code = 'che' or value.code = 'zho' or value.code = 'chu' or value.code = 'chv' or value.code = 'cor' or value.code = 'cos' or value.code = 'cre' or value.code = 'cym' or value.code = 'dan' or value.code = 'deu' or value.code = 'div' or value.code = 'nld' or value.code = 'dzo' or value.code = 'ell' or value.code = 'eng' or value.code = 'epo' or value.code = 'est' or value.code = 'ewe' or value.code = 'fao' or value.code = 'fas' or value.code = 'fij' or value.code = 'fin' or value.code = 'fra' or value.code = 'fry' or value.code = 'ful' or value.code = 'kat' or value.code = 'ger' or value.code = 'gla' or value.code = 'gle' or value.code = 'glg' or value.code = 'glv' or value.code = 'grn' or value.code = 'guj' or value.code = 'hat' or value.code = 'hau' or value.code = 'heb' or value.code = 'her' or value.code = 'hin' or value.code = 'hmo' or value.code = 'hrv' or value.code = 'hun' or value.code = 'ibo' or value.code = 'isl' or value.code = 'ido' or value.code = 'iii' or value.code = 'iku' or value.code = 'ile' or value.code = 'ina' or value.code = 'ind' or value.code = 'ipk' or value.code = 'ita' or value.code = 'jav' or value.code = 'jpn' or value.code = 'kal' or value.code = 'kan' or value.code = 'kas' or value.code = 'kau' or value.code = 'kaz' or value.code = 'khm' or value.code = 'kik' or value.code = 'kin' or value.code = 'kir' or value.code = 'kom' or value.code = 'kon' or value.code = 'kor' or value.code = 'kua' or value.code = 'kur' or value.code = 'lao' or value.code = 'lat' or value.code = 'lav' or value.code = 'lim' or value.code = 'lin' or value.code = 'lit' or value.code = 'ltz' or value.code = 'lub' or value.code = 'lug' or value.code = 'mkd' or value.code = 'mah' or value.code = 'mal' or value.code = 'mri' or value.code = 'mar' or value.code = 'msa' or value.code = 'mlg' or value.code = 'mlt' or value.code = 'mon' or value.code = 'nau' or value.code = 'nav' or value.code = 'nbl' or value.code = 'nde' or value.code = 'ndo' or value.code = 'nep' or value.code = 'nno' or value.code = 'nob' or value.code = 'nor' or value.code = 'nya' or value.code = 'oci' or value.code = 'oji' or value.code = 'ori' or value.code = 'orm' or value.code = 'oss' or value.code = 'pan' or value.code = 'pli' or value.code = 'pol' or value.code = 'por' or value.code = 'pus' or value.code = 'que' or value.code = 'roh' or value.code = 'ron' or value.code = 'run' or value.code = 'rus' or value.code = 'sag' or value.code = 'san' or value.code = 'sin' or value.code = 'slk' or value.code = 'slv' or value.code = 'sme' or value.code = 'smo' or value.code = 'sna' or value.code = 'snd' or value.code = 'som' or value.code = 'sot' or value.code = 'spa' or value.code = 'srd' or value.code = 'srp' or value.code = 'ssw' or value.code = 'sun' or value.code = 'swa' or value.code = 'swe' or value.code = 'tah' or value.code = 'tam' or value.code = 'tat' or value.code = 'tel' or value.code = 'tgk' or value.code = 'tgl' or value.code = 'tha' or value.code = 'tir' or value.code = 'ton' or value.code = 'tsn' or value.code = 'tso' or value.code = 'tuk' or value.code = 'tur' or value.code = 'twi' or value.code = 'uig' or value.code = 'ukr' or value.code = 'urd' or value.code = 'uzb' or value.code = 'ven' or value.code = 'vie' or value.code = 'vol' or value.code = 'wln' or value.code = 'wol' or value.code = 'xho' or value.code = 'yid' or value.code = 'yor' or value.code = 'zha' or value.code = 'zul'))
-	 * @param generalHeaderConstraints The receiving '<em><b>General Header Constraints</b></em>' model object.
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc --> <!-- begin-model-doc -->
+	 * self.recordTarget->excluding(null).patientRole->excluding(null).patient->
+	 * excluding
+	 * (null).languageCommunication->excluding(null)->reject((languageCode
+	 * .oclIsUndefined() or languageCode.isNullFlavorUndefined()) implies (not
+	 * languageCode.oclIsUndefined() and languageCode.oclIsKindOf(datatypes::CS)
+	 * and let value : datatypes::CS = languageCode.oclAsType(datatypes::CS) in
+	 * value.code = 'aar' or value.code = 'abk' or value.code = 'afr' or
+	 * value.code = 'aka' or value.code = 'sqi' or value.code = 'amh' or
+	 * value.code = 'ara' or value.code = 'arg' or value.code = 'hye' or
+	 * value.code = 'asm' or value.code = 'ava' or value.code = 'ave' or
+	 * value.code = 'aym' or value.code = 'aze' or value.code = 'bak' or
+	 * value.code = 'bam' or value.code = 'eus' or value.code = 'bel' or
+	 * value.code = 'ben' or value.code = 'bih' or value.code = 'bis' or
+	 * value.code = 'bod' or value.code = 'bos' or value.code = 'bre' or
+	 * value.code = 'bul' or value.code = 'mya' or value.code = 'cat' or
+	 * value.code = 'ces' or value.code = 'cha' or value.code = 'che' or
+	 * value.code = 'zho' or value.code = 'chu' or value.code = 'chv' or
+	 * value.code = 'cor' or value.code = 'cos' or value.code = 'cre' or
+	 * value.code = 'cym' or value.code = 'dan' or value.code = 'deu' or
+	 * value.code = 'div' or value.code = 'nld' or value.code = 'dzo' or
+	 * value.code = 'ell' or value.code = 'eng' or value.code = 'epo' or
+	 * value.code = 'est' or value.code = 'ewe' or value.code = 'fao' or
+	 * value.code = 'fas' or value.code = 'fij' or value.code = 'fin' or
+	 * value.code = 'fra' or value.code = 'fry' or value.code = 'ful' or
+	 * value.code = 'kat' or value.code = 'ger' or value.code = 'gla' or
+	 * value.code = 'gle' or value.code = 'glg' or value.code = 'glv' or
+	 * value.code = 'grn' or value.code = 'guj' or value.code = 'hat' or
+	 * value.code = 'hau' or value.code = 'heb' or value.code = 'her' or
+	 * value.code = 'hin' or value.code = 'hmo' or value.code = 'hrv' or
+	 * value.code = 'hun' or value.code = 'ibo' or value.code = 'isl' or
+	 * value.code = 'ido' or value.code = 'iii' or value.code = 'iku' or
+	 * value.code = 'ile' or value.code = 'ina' or value.code = 'ind' or
+	 * value.code = 'ipk' or value.code = 'ita' or value.code = 'jav' or
+	 * value.code = 'jpn' or value.code = 'kal' or value.code = 'kan' or
+	 * value.code = 'kas' or value.code = 'kau' or value.code = 'kaz' or
+	 * value.code = 'khm' or value.code = 'kik' or value.code = 'kin' or
+	 * value.code = 'kir' or value.code = 'kom' or value.code = 'kon' or
+	 * value.code = 'kor' or value.code = 'kua' or value.code = 'kur' or
+	 * value.code = 'lao' or value.code = 'lat' or value.code = 'lav' or
+	 * value.code = 'lim' or value.code = 'lin' or value.code = 'lit' or
+	 * value.code = 'ltz' or value.code = 'lub' or value.code = 'lug' or
+	 * value.code = 'mkd' or value.code = 'mah' or value.code = 'mal' or
+	 * value.code = 'mri' or value.code = 'mar' or value.code = 'msa' or
+	 * value.code = 'mlg' or value.code = 'mlt' or value.code = 'mon' or
+	 * value.code = 'nau' or value.code = 'nav' or value.code = 'nbl' or
+	 * value.code = 'nde' or value.code = 'ndo' or value.code = 'nep' or
+	 * value.code = 'nno' or value.code = 'nob' or value.code = 'nor' or
+	 * value.code = 'nya' or value.code = 'oci' or value.code = 'oji' or
+	 * value.code = 'ori' or value.code = 'orm' or value.code = 'oss' or
+	 * value.code = 'pan' or value.code = 'pli' or value.code = 'pol' or
+	 * value.code = 'por' or value.code = 'pus' or value.code = 'que' or
+	 * value.code = 'roh' or value.code = 'ron' or value.code = 'run' or
+	 * value.code = 'rus' or value.code = 'sag' or value.code = 'san' or
+	 * value.code = 'sin' or value.code = 'slk' or value.code = 'slv' or
+	 * value.code = 'sme' or value.code = 'smo' or value.code = 'sna' or
+	 * value.code = 'snd' or value.code = 'som' or value.code = 'sot' or
+	 * value.code = 'spa' or value.code = 'srd' or value.code = 'srp' or
+	 * value.code = 'ssw' or value.code = 'sun' or value.code = 'swa' or
+	 * value.code = 'swe' or value.code = 'tah' or value.code = 'tam' or
+	 * value.code = 'tat' or value.code = 'tel' or value.code = 'tgk' or
+	 * value.code = 'tgl' or value.code = 'tha' or value.code = 'tir' or
+	 * value.code = 'ton' or value.code = 'tsn' or value.code = 'tso' or
+	 * value.code = 'tuk' or value.code = 'tur' or value.code = 'twi' or
+	 * value.code = 'uig' or value.code = 'ukr' or value.code = 'urd' or
+	 * value.code = 'uzb' or value.code = 'ven' or value.code = 'vie' or
+	 * value.code = 'vol' or value.code = 'wln' or value.code = 'wol' or
+	 * value.code = 'xho' or value.code = 'yid' or value.code = 'yor' or
+	 * value.code = 'zha' or value.code = 'zul'))
+	 * 
+	 * @param generalHeaderConstraints
+	 *            The receiving '<em><b>General Header Constraints</b></em>'
+	 *            model object.
+	 * @param diagnostics
+	 *            The chain of diagnostics to which problems are to be appended.
+	 * @param context
+	 *            The cache of context-specific information. <!-- end-model-doc
+	 *            -->
 	 * @generated
 	 */
 	@SuppressWarnings("unchecked")
-	public static  boolean validateGeneralHeaderConstraintsRecordTargetPatientRolePatientLanguageCommunicationLanguageCode(GeneralHeaderConstraints generalHeaderConstraints, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public static boolean validateGeneralHeaderConstraintsRecordTargetPatientRolePatientLanguageCommunicationLanguageCode(
+			GeneralHeaderConstraints generalHeaderConstraints,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
   	  
 		
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
@@ -859,8 +1011,7 @@ public class GeneralHeaderConstraintsOperations
 
 	/**
 	 * The cached OCL expression body for the '{@link #validateGeneralHeaderConstraintsRecordTargetPatientRolePatientEthnicGroupCodeP(GeneralHeaderConstraints, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate General Header Constraints Record Target Patient Role Patient Ethnic Group Code P</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @see #validateGeneralHeaderConstraintsRecordTargetPatientRolePatientEthnicGroupCodeP(GeneralHeaderConstraints, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	 * @generated
 	 * @ordered
@@ -869,28 +1020,35 @@ public class GeneralHeaderConstraintsOperations
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateGeneralHeaderConstraintsRecordTargetPatientRolePatientEthnicGroupCodeP(GeneralHeaderConstraints, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate General Header Constraints Record Target Patient Role Patient Ethnic Group Code P</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @see #validateGeneralHeaderConstraintsRecordTargetPatientRolePatientEthnicGroupCodeP(GeneralHeaderConstraints, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	 * @generated
 	 * @ordered
 	 */
-	
+
 	protected static Query<?, ?, ?> VALIDATE_GENERAL_HEADER_CONSTRAINTS_RECORD_TARGET_PATIENT_ROLE_PATIENT_ETHNIC_GROUP_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY;
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.recordTarget->excluding(null).patientRole->excluding(null).patient->excluding(null)->reject((ethnicGroupCode.oclIsUndefined() or ethnicGroupCode.isNullFlavorUndefined()) implies (not ethnicGroupCode.oclIsUndefined()))
-	 * @param generalHeaderConstraints The receiving '<em><b>General Header Constraints</b></em>' model object.
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc --> <!-- begin-model-doc -->
+	 * self.recordTarget->excluding(null).patientRole->excluding(null).patient->
+	 * excluding(null)->reject((ethnicGroupCode.oclIsUndefined() or
+	 * ethnicGroupCode.isNullFlavorUndefined()) implies (not
+	 * ethnicGroupCode.oclIsUndefined()))
+	 * 
+	 * @param generalHeaderConstraints
+	 *            The receiving '<em><b>General Header Constraints</b></em>'
+	 *            model object.
+	 * @param diagnostics
+	 *            The chain of diagnostics to which problems are to be appended.
+	 * @param context
+	 *            The cache of context-specific information. <!-- end-model-doc
+	 *            -->
 	 * @generated
 	 */
 	@SuppressWarnings("unchecked")
-	public static  boolean validateGeneralHeaderConstraintsRecordTargetPatientRolePatientEthnicGroupCodeP(GeneralHeaderConstraints generalHeaderConstraints, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public static boolean validateGeneralHeaderConstraintsRecordTargetPatientRolePatientEthnicGroupCodeP(
+			GeneralHeaderConstraints generalHeaderConstraints,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
   	  
 		
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
@@ -1001,8 +1159,7 @@ public class GeneralHeaderConstraintsOperations
 
 	/**
 	 * The cached OCL expression body for the '{@link #validateGeneralHeaderConstraintsRecordTargetPatientRolePatientRaceCodeP(GeneralHeaderConstraints, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate General Header Constraints Record Target Patient Role Patient Race Code P</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @see #validateGeneralHeaderConstraintsRecordTargetPatientRolePatientRaceCodeP(GeneralHeaderConstraints, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	 * @generated
 	 * @ordered
@@ -1011,28 +1168,35 @@ public class GeneralHeaderConstraintsOperations
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateGeneralHeaderConstraintsRecordTargetPatientRolePatientRaceCodeP(GeneralHeaderConstraints, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate General Header Constraints Record Target Patient Role Patient Race Code P</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @see #validateGeneralHeaderConstraintsRecordTargetPatientRolePatientRaceCodeP(GeneralHeaderConstraints, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	 * @generated
 	 * @ordered
 	 */
-	
+
 	protected static Query<?, ?, ?> VALIDATE_GENERAL_HEADER_CONSTRAINTS_RECORD_TARGET_PATIENT_ROLE_PATIENT_RACE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY;
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.recordTarget->excluding(null).patientRole->excluding(null).patient->excluding(null)->reject((raceCode.oclIsUndefined() or raceCode.isNullFlavorUndefined()) implies (not raceCode.oclIsUndefined()))
-	 * @param generalHeaderConstraints The receiving '<em><b>General Header Constraints</b></em>' model object.
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc --> <!-- begin-model-doc -->
+	 * self.recordTarget->excluding(null).patientRole->excluding(null).patient->
+	 * excluding(null)->reject((raceCode.oclIsUndefined() or
+	 * raceCode.isNullFlavorUndefined()) implies (not
+	 * raceCode.oclIsUndefined()))
+	 * 
+	 * @param generalHeaderConstraints
+	 *            The receiving '<em><b>General Header Constraints</b></em>'
+	 *            model object.
+	 * @param diagnostics
+	 *            The chain of diagnostics to which problems are to be appended.
+	 * @param context
+	 *            The cache of context-specific information. <!-- end-model-doc
+	 *            -->
 	 * @generated
 	 */
 	@SuppressWarnings("unchecked")
-	public static  boolean validateGeneralHeaderConstraintsRecordTargetPatientRolePatientRaceCodeP(GeneralHeaderConstraints generalHeaderConstraints, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public static boolean validateGeneralHeaderConstraintsRecordTargetPatientRolePatientRaceCodeP(
+			GeneralHeaderConstraints generalHeaderConstraints,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
   	  
 		
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();

@@ -32,9 +32,9 @@ import org.openhealthtools.mdht.uml.cda.mu2consol.ResultOrganizer;
 import org.openhealthtools.mdht.uml.cda.mu2consol.util.Mu2consolValidator;
 
 /**
- * <!-- begin-user-doc -->
- * A static utility class that provides operations related to '<em><b>Result Organizer</b></em>' model objects.
- * <!-- end-user-doc -->
+ * <!-- begin-user-doc --> A static utility class that provides operations
+ * related to '<em><b>Result Organizer</b></em>' model objects. <!--
+ * end-user-doc -->
  *
  * <p>
  * The following operations are supported:
@@ -47,10 +47,11 @@ import org.openhealthtools.mdht.uml.cda.mu2consol.util.Mu2consolValidator;
  *
  * @generated
  */
-public class ResultOrganizerOperations extends org.openhealthtools.mdht.uml.cda.consol.operations.ResultOrganizerOperations {
+public class ResultOrganizerOperations
+		extends
+		org.openhealthtools.mdht.uml.cda.consol.operations.ResultOrganizerOperations {
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @generated
 	 */
 	protected ResultOrganizerOperations() {
@@ -59,8 +60,7 @@ public class ResultOrganizerOperations extends org.openhealthtools.mdht.uml.cda.
 
 	/**
 	 * The cached OCL expression body for the '{@link #validateMu2consolResultOrganizerResultObservation(ResultOrganizer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Mu2consol Result Organizer Result Observation</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @see #validateMu2consolResultOrganizerResultObservation(ResultOrganizer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	 * @generated
 	 * @ordered
@@ -69,29 +69,33 @@ public class ResultOrganizerOperations extends org.openhealthtools.mdht.uml.cda.
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateMu2consolResultOrganizerResultObservation(ResultOrganizer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Mu2consol Result Organizer Result Observation</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @see #validateMu2consolResultOrganizerResultObservation(ResultOrganizer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	 * @generated
 	 * @ordered
 	 */
-	
+
 	protected static Constraint VALIDATE_MU2CONSOL_RESULT_ORGANIZER_RESULT_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-	
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.component->exists(component : cda::Component4 | not component.observation.oclIsUndefined() and component.observation.oclIsKindOf(mu2consol::ResultObservation))
-	 * @param resultOrganizer The receiving '<em><b>Result Organizer</b></em>' model object.
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc --> <!-- begin-model-doc -->
+	 * self.component->exists(component : cda::Component4 | not
+	 * component.observation.oclIsUndefined() and
+	 * component.observation.oclIsKindOf(mu2consol::ResultObservation))
+	 * 
+	 * @param resultOrganizer
+	 *            The receiving '<em><b>Result Organizer</b></em>' model object.
+	 * @param diagnostics
+	 *            The chain of diagnostics to which problems are to be appended.
+	 * @param context
+	 *            The cache of context-specific information. <!-- end-model-doc
+	 *            -->
 	 * @generated
 	 */
-	
-	public static  boolean validateMu2consolResultOrganizerResultObservation(ResultOrganizer resultOrganizer, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+	public static boolean validateMu2consolResultOrganizerResultObservation(
+			ResultOrganizer resultOrganizer, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
   	  
 		if (VALIDATE_MU2CONSOL_RESULT_ORGANIZER_RESULT_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
@@ -120,9 +124,11 @@ public class ResultOrganizerOperations extends org.openhealthtools.mdht.uml.cda.
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #getMu2consolResultObservations(ResultOrganizer) <em>Get Mu2consol Result Observations</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * The cached OCL expression body for the '
+	 * {@link #getMu2consolResultObservations(ResultOrganizer)
+	 * <em>Get Mu2consol Result Observations</em>}' operation. <!--
+	 * begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @see #getMu2consolResultObservations(ResultOrganizer)
 	 * @generated
 	 * @ordered
@@ -130,9 +136,11 @@ public class ResultOrganizerOperations extends org.openhealthtools.mdht.uml.cda.
 	protected static final String GET_MU2CONSOL_RESULT_OBSERVATIONS__EOCL_EXP = "self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(mu2consol::ResultObservation)).oclAsType(mu2consol::ResultObservation)";
 
 	/**
-	 * The cached OCL query for the '{@link #getMu2consolResultObservations(ResultOrganizer) <em>Get Mu2consol Result Observations</em>}' query operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * The cached OCL query for the '
+	 * {@link #getMu2consolResultObservations(ResultOrganizer)
+	 * <em>Get Mu2consol Result Observations</em>}' query operation. <!--
+	 * begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @see #getMu2consolResultObservations(ResultOrganizer)
 	 * @generated
 	 * @ordered
@@ -140,16 +148,20 @@ public class ResultOrganizerOperations extends org.openhealthtools.mdht.uml.cda.
 	protected static OCLExpression<EClassifier> GET_MU2CONSOL_RESULT_OBSERVATIONS__EOCL_QRY;
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(mu2consol::ResultObservation)).oclAsType(mu2consol::ResultObservation)
-	 * @param resultOrganizer The receiving '<em><b>Result Organizer</b></em>' model object.
-	 * <!-- end-model-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc --> <!-- begin-model-doc -->
+	 * self.getObservations()->select(observation : cda::Observation | not
+	 * observation.oclIsUndefined() and
+	 * observation.oclIsKindOf(mu2consol::ResultObservation
+	 * )).oclAsType(mu2consol::ResultObservation)
+	 * 
+	 * @param resultOrganizer
+	 *            The receiving '<em><b>Result Organizer</b></em>' model object.
+	 *            <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  EList<ResultObservation> getMu2consolResultObservations(ResultOrganizer resultOrganizer) {
+
+	public static EList<ResultObservation> getMu2consolResultObservations(
+			ResultOrganizer resultOrganizer) {
 		if (GET_MU2CONSOL_RESULT_OBSERVATIONS__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(Mu2consolPackage.Literals.RESULT_ORGANIZER, Mu2consolPackage.Literals.RESULT_ORGANIZER.getEAllOperations().get(64));
@@ -167,10 +179,13 @@ public class ResultOrganizerOperations extends org.openhealthtools.mdht.uml.cda.
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #validateResultOrganizerTemplateId(ResultOrganizer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Result Organizer Template Id</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #validateResultOrganizerTemplateId(ResultOrganizer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * The cached OCL expression body for the '
+	 * {@link #validateResultOrganizerTemplateId(ResultOrganizer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * <em>Validate Result Organizer Template Id</em>}' operation. <!--
+	 * begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @see #validateResultOrganizerTemplateId(ResultOrganizer,
+	 *      org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	 * @generated
 	 * @ordered
 	 */
@@ -178,29 +193,32 @@ public class ResultOrganizerOperations extends org.openhealthtools.mdht.uml.cda.
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateResultOrganizerTemplateId(ResultOrganizer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Result Organizer Template Id</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @see #validateResultOrganizerTemplateId(ResultOrganizer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	 * @generated
 	 * @ordered
 	 */
-	
+
 	protected static Constraint VALIDATE_RESULT_ORGANIZER_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-	
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.22.4.1')
-	 * @param resultOrganizer The receiving '<em><b>Result Organizer</b></em>' model object.
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc --> <!-- begin-model-doc -->
+	 * self.templateId->exists(id : datatypes::II | id.root =
+	 * '2.16.840.1.113883.10.20.22.4.1')
+	 * 
+	 * @param resultOrganizer
+	 *            The receiving '<em><b>Result Organizer</b></em>' model object.
+	 * @param diagnostics
+	 *            The chain of diagnostics to which problems are to be appended.
+	 * @param context
+	 *            The cache of context-specific information. <!-- end-model-doc
+	 *            -->
 	 * @generated
 	 */
-	
-	public static  boolean validateResultOrganizerTemplateId(ResultOrganizer resultOrganizer, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+	public static boolean validateResultOrganizerTemplateId(
+			ResultOrganizer resultOrganizer, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
   	  
 		if (VALIDATE_RESULT_ORGANIZER_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();

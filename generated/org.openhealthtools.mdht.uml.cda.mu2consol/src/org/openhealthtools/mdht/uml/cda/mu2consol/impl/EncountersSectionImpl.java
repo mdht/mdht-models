@@ -25,18 +25,18 @@ import org.openhealthtools.mdht.uml.cda.mu2consol.Mu2consolPackage;
 import org.openhealthtools.mdht.uml.cda.mu2consol.operations.EncountersSectionOperations;
 
 /**
- * <!-- begin-user-doc -->
- * An implementation of the model object '<em><b>Encounters Section</b></em>'.
- * <!-- end-user-doc -->
+ * <!-- begin-user-doc --> An implementation of the model object '
+ * <em><b>Encounters Section</b></em>'. <!-- end-user-doc -->
  * <p>
  * </p>
  *
  * @generated
  */
-public class EncountersSectionImpl extends org.openhealthtools.mdht.uml.cda.consol.impl.EncountersSectionImpl implements EncountersSection {
+public class EncountersSectionImpl extends
+		org.openhealthtools.mdht.uml.cda.consol.impl.EncountersSectionImpl
+		implements EncountersSection {
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @generated
 	 */
 	protected EncountersSectionImpl() {
@@ -44,8 +44,7 @@ public class EncountersSectionImpl extends org.openhealthtools.mdht.uml.cda.cons
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @generated
 	 */
 	@Override
@@ -54,17 +53,16 @@ public class EncountersSectionImpl extends org.openhealthtools.mdht.uml.cda.cons
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateMu2consolEncountersSectionEncounterActivities(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateMu2consolEncountersSectionEncounterActivities(
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return EncountersSectionOperations.validateMu2consolEncountersSectionEncounterActivities(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @generated
 	 */
 	public EList<EncounterActivities> getMu2consolEncounterActivitiess() {
@@ -72,32 +70,32 @@ public class EncountersSectionImpl extends org.openhealthtools.mdht.uml.cda.cons
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @generated
 	 */
 	@Override
-	public boolean validateEncountersSectionEntriesOptionalTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateEncountersSectionEntriesOptionalTemplateId(
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return EncountersSectionOperations.validateEncountersSectionEntriesOptionalTemplateId(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @generated
 	 */
 	@Override
 	public EncountersSection init() {
 	    return Initializer.Util.init(this);
 	}
-    /**
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+
+	/**
+     * <!-- begin-user-doc --> <!-- end-user-doc -->
      * @generated
      */
-    @Override
-	public EncountersSection init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+	@Override
+	public EncountersSection init(
+			Iterable<? extends Initializer<? extends EObject>> initializers) {
         Initializer.Util.init(this, initializers);
         return this;
     }
-} //EncountersSectionImpl
+} // EncountersSectionImpl

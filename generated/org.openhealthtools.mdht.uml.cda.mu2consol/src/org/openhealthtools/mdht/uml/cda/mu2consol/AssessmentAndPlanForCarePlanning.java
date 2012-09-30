@@ -19,8 +19,8 @@ import org.openhealthtools.mdht.uml.cda.consol.PlanOfCareActivitySupply;
 /**
  * <!-- begin-user-doc --> A representation of the model object '
  * <em><b>Assessment And Plan For Care Planning</b></em>'. <!-- end-user-doc -->
- *
- *
+ * 
+ * 
  * @see org.openhealthtools.mdht.uml.cda.mu2consol.Mu2consolPackage#getAssessmentAndPlanForCarePlanning()
  * @model
  * @generated
@@ -97,14 +97,16 @@ public interface AssessmentAndPlanForCarePlanning extends
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	public AssessmentAndPlanForCarePlanning init();
 
 	/**
-     * <!-- begin-user-doc --> <!-- end-user-doc -->
-     * @generated
-     */
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @generated
+	 */
 	public AssessmentAndPlanForCarePlanning init(
 			Iterable<? extends Initializer<? extends EObject>> initializers);
 } // AssessmentAndPlanForCarePlanning

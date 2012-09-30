@@ -59,17 +59,16 @@ public class PlanOfCareSectionImpl extends
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateMu2consolPlanOfCareSectionPlanOfCareActivityObservation(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateMu2consolPlanOfCareSectionPlanOfCareActivityObservation(
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return PlanOfCareSectionOperations.validateMu2consolPlanOfCareSectionPlanOfCareActivityObservation(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @generated
 	 */
 	public EList<PlanOfCareActivityAct> getMu2consolPlanOfCareActivityActs() {
@@ -77,8 +76,7 @@ public class PlanOfCareSectionImpl extends
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @generated
 	 */
 	public EList<PlanOfCareActivityEncounter> getMu2consolPlanOfCareActivityEncounters() {
@@ -86,8 +84,7 @@ public class PlanOfCareSectionImpl extends
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @generated
 	 */
 	public EList<PlanOfCareActivityObservation> getMu2consolPlanOfCareActivityObservations() {

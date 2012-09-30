@@ -64,8 +64,7 @@ public class SocialHistorySectionImpl extends
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @generated
 	 */
 	public EList<SmokingStatusObservation> getMu2consolSmokingStatusObservations() {

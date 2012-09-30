@@ -134,9 +134,11 @@ public class InstructionsSectionOperations
 	protected static final String GET_MU2CONSOL_INSTRUCTIONSS__EOCL_EXP = "self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(consol::Instructions)).oclAsType(consol::Instructions)";
 
 	/**
-	 * The cached OCL query for the '{@link #getMu2consolInstructionss(InstructionsSection) <em>Get Mu2consol Instructionss</em>}' query operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * The cached OCL query for the '
+	 * {@link #getMu2consolInstructionss(InstructionsSection)
+	 * <em>Get Mu2consol Instructionss</em>}' query operation. <!--
+	 * begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @see #getMu2consolInstructionss(InstructionsSection)
 	 * @generated
 	 * @ordered
@@ -144,16 +146,18 @@ public class InstructionsSectionOperations
 	protected static OCLExpression<EClassifier> GET_MU2CONSOL_INSTRUCTIONSS__EOCL_QRY;
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(consol::Instructions)).oclAsType(consol::Instructions)
-	 * @param instructionsSection The receiving '<em><b>Instructions Section</b></em>' model object.
-	 * <!-- end-model-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc --> <!-- begin-model-doc -->
+	 * self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and
+	 * act.oclIsKindOf(consol::Instructions)).oclAsType(consol::Instructions)
+	 * 
+	 * @param instructionsSection
+	 *            The receiving '<em><b>Instructions Section</b></em>' model
+	 *            object. <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  EList<Instructions> getMu2consolInstructionss(InstructionsSection instructionsSection) {
+
+	public static EList<Instructions> getMu2consolInstructionss(
+			InstructionsSection instructionsSection) {
 		if (GET_MU2CONSOL_INSTRUCTIONSS__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(Mu2consolPackage.Literals.INSTRUCTIONS_SECTION, Mu2consolPackage.Literals.INSTRUCTIONS_SECTION.getEAllOperations().get(63));

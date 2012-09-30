@@ -58,8 +58,7 @@ public class MedicationsAdministeredSectionImpl
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @generated
 	 */
 	public EList<MedicationActivity> getMu2consolMedicationActivities() {

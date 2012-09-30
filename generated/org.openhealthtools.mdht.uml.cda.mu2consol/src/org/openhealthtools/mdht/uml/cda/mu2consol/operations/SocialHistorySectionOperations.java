@@ -127,9 +127,11 @@ public class SocialHistorySectionOperations
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #getMu2consolSmokingStatusObservations(SocialHistorySection) <em>Get Mu2consol Smoking Status Observations</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * The cached OCL expression body for the '
+	 * {@link #getMu2consolSmokingStatusObservations(SocialHistorySection)
+	 * <em>Get Mu2consol Smoking Status Observations</em>}' operation. <!--
+	 * begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @see #getMu2consolSmokingStatusObservations(SocialHistorySection)
 	 * @generated
 	 * @ordered
@@ -138,8 +140,7 @@ public class SocialHistorySectionOperations
 
 	/**
 	 * The cached OCL query for the '{@link #getMu2consolSmokingStatusObservations(SocialHistorySection) <em>Get Mu2consol Smoking Status Observations</em>}' query operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @see #getMu2consolSmokingStatusObservations(SocialHistorySection)
 	 * @generated
 	 * @ordered
@@ -147,16 +148,20 @@ public class SocialHistorySectionOperations
 	protected static OCLExpression<EClassifier> GET_MU2CONSOL_SMOKING_STATUS_OBSERVATIONS__EOCL_QRY;
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(mu2consol::SmokingStatusObservation)).oclAsType(mu2consol::SmokingStatusObservation)
-	 * @param socialHistorySection The receiving '<em><b>Social History Section</b></em>' model object.
-	 * <!-- end-model-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc --> <!-- begin-model-doc -->
+	 * self.getObservations()->select(observation : cda::Observation | not
+	 * observation.oclIsUndefined() and
+	 * observation.oclIsKindOf(mu2consol::SmokingStatusObservation
+	 * )).oclAsType(mu2consol::SmokingStatusObservation)
+	 * 
+	 * @param socialHistorySection
+	 *            The receiving '<em><b>Social History Section</b></em>' model
+	 *            object. <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  EList<SmokingStatusObservation> getMu2consolSmokingStatusObservations(SocialHistorySection socialHistorySection) {
+
+	public static EList<SmokingStatusObservation> getMu2consolSmokingStatusObservations(
+			SocialHistorySection socialHistorySection) {
 		if (GET_MU2CONSOL_SMOKING_STATUS_OBSERVATIONS__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(Mu2consolPackage.Literals.SOCIAL_HISTORY_SECTION, Mu2consolPackage.Literals.SOCIAL_HISTORY_SECTION.getEAllOperations().get(69));

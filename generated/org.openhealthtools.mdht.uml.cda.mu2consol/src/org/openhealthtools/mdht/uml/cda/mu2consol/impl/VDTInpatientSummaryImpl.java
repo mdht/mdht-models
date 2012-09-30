@@ -19,29 +19,28 @@ import org.openhealthtools.mdht.emf.runtime.util.Initializer;
 
 import org.openhealthtools.mdht.uml.cda.consol.ChiefComplaintAndReasonForVisitSection;
 import org.openhealthtools.mdht.uml.cda.consol.ChiefComplaintSection;
+import org.openhealthtools.mdht.uml.cda.consol.HospitalAdmissionDiagnosisSection;
 import org.openhealthtools.mdht.uml.cda.consol.HospitalDischargeInstructionsSection;
 import org.openhealthtools.mdht.uml.cda.consol.HospitalDischargeMedicationsSection;
 import org.openhealthtools.mdht.uml.cda.consol.ReasonForVisitSection;
 
-import org.openhealthtools.mdht.uml.cda.mu2consol.HospitalAdmissionDiagnosisSection;
 import org.openhealthtools.mdht.uml.cda.mu2consol.Mu2consolPackage;
 import org.openhealthtools.mdht.uml.cda.mu2consol.VDTInpatientSummary;
 
 import org.openhealthtools.mdht.uml.cda.mu2consol.operations.VDTInpatientSummaryOperations;
 
 /**
- * <!-- begin-user-doc -->
- * An implementation of the model object '<em><b>VDT Inpatient Summary</b></em>'.
- * <!-- end-user-doc -->
+ * <!-- begin-user-doc --> An implementation of the model object '
+ * <em><b>VDT Inpatient Summary</b></em>'. <!-- end-user-doc -->
  * <p>
  * </p>
  *
  * @generated
  */
-public class VDTInpatientSummaryImpl extends ViewDownloadTransmitSummaryImpl implements VDTInpatientSummary {
+public class VDTInpatientSummaryImpl extends ViewDownloadTransmitSummaryImpl
+		implements VDTInpatientSummary {
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @generated
 	 */
 	protected VDTInpatientSummaryImpl() {
@@ -49,8 +48,7 @@ public class VDTInpatientSummaryImpl extends ViewDownloadTransmitSummaryImpl imp
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @generated
 	 */
 	@Override
@@ -59,80 +57,70 @@ public class VDTInpatientSummaryImpl extends ViewDownloadTransmitSummaryImpl imp
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateVDTInpatientSummaryEffectiveTime(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateVDTInpatientSummaryEffectiveTime(
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return VDTInpatientSummaryOperations.validateVDTInpatientSummaryEffectiveTime(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateVDTInpatientSummaryLocation(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateVDTInpatientSummaryLocation(
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return VDTInpatientSummaryOperations.validateVDTInpatientSummaryLocation(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateVDTInpatientSummaryChiefComplaintOrReasonForVisit(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateVDTInpatientSummaryChiefComplaintOrReasonForVisit(
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return VDTInpatientSummaryOperations.validateVDTInpatientSummaryChiefComplaintOrReasonForVisit(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateVDTInpatientSummaryHospitalDischargeInstructionsSection(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateVDTInpatientSummaryHospitalAdmissionDiagnosisEntry(
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return VDTInpatientSummaryOperations.validateVDTInpatientSummaryHospitalAdmissionDiagnosisEntry(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateVDTInpatientSummaryHospitalDischargeInstructionsSection(
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return VDTInpatientSummaryOperations.validateVDTInpatientSummaryHospitalDischargeInstructionsSection(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateVDTInpatientSummaryHospitalAdmissionDiagnosisSection(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateVDTInpatientSummaryHospitalAdmissionDiagnosisSection(
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return VDTInpatientSummaryOperations.validateVDTInpatientSummaryHospitalAdmissionDiagnosisSection(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateVDTInpatientSummaryHospitalDischargeMedicationsSection(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateVDTInpatientSummaryHospitalDischargeMedicationsSection(
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return VDTInpatientSummaryOperations.validateVDTInpatientSummaryHospitalDischargeMedicationsSection(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateVDTInpatientSummaryHospitalAdmissionDiagnosisSectionTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return VDTInpatientSummaryOperations.validateVDTInpatientSummaryHospitalAdmissionDiagnosisSectionTemplateId(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateVDTInpatientSummaryMu2consolHospitalAdmissionDiagnosisSectionHospitalAdmissionDiagnosis(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return VDTInpatientSummaryOperations.validateVDTInpatientSummaryMu2consolHospitalAdmissionDiagnosisSectionHospitalAdmissionDiagnosis(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @generated
 	 */
 	public HospitalDischargeInstructionsSection getHospitalDischargeInstructionsSection() {
@@ -140,8 +128,7 @@ public class VDTInpatientSummaryImpl extends ViewDownloadTransmitSummaryImpl imp
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @generated
 	 */
 	public HospitalAdmissionDiagnosisSection getHospitalAdmissionDiagnosisSection() {
@@ -149,8 +136,7 @@ public class VDTInpatientSummaryImpl extends ViewDownloadTransmitSummaryImpl imp
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @generated
 	 */
 	public ChiefComplaintSection getChiefComplaintSection() {
@@ -158,8 +144,7 @@ public class VDTInpatientSummaryImpl extends ViewDownloadTransmitSummaryImpl imp
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @generated
 	 */
 	public ReasonForVisitSection getReasonForVisitSection() {
@@ -167,8 +152,7 @@ public class VDTInpatientSummaryImpl extends ViewDownloadTransmitSummaryImpl imp
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @generated
 	 */
 	public ChiefComplaintAndReasonForVisitSection getChiefComplaintAndReasonForVisitSection() {
@@ -176,8 +160,7 @@ public class VDTInpatientSummaryImpl extends ViewDownloadTransmitSummaryImpl imp
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @generated
 	 */
 	public HospitalDischargeMedicationsSection getHospitalDischargeMedicationsSection() {
@@ -185,22 +168,22 @@ public class VDTInpatientSummaryImpl extends ViewDownloadTransmitSummaryImpl imp
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @generated
 	 */
 	@Override
 	public VDTInpatientSummary init() {
 	    return Initializer.Util.init(this);
 	}
-    /**
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+
+	/**
+     * <!-- begin-user-doc --> <!-- end-user-doc -->
      * @generated
      */
-    @Override
-	public VDTInpatientSummary init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+	@Override
+	public VDTInpatientSummary init(
+			Iterable<? extends Initializer<? extends EObject>> initializers) {
         Initializer.Util.init(this, initializers);
         return this;
     }
-} //VDTInpatientSummaryImpl
+} // VDTInpatientSummaryImpl

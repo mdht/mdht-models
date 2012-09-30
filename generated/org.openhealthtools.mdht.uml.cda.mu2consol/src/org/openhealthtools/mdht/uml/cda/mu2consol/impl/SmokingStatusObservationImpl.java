@@ -25,18 +25,17 @@ import org.openhealthtools.mdht.uml.cda.mu2consol.SmokingStatusObservation;
 import org.openhealthtools.mdht.uml.cda.mu2consol.operations.SmokingStatusObservationOperations;
 
 /**
- * <!-- begin-user-doc -->
- * An implementation of the model object '<em><b>Smoking Status Observation</b></em>'.
- * <!-- end-user-doc -->
+ * <!-- begin-user-doc --> An implementation of the model object '
+ * <em><b>Smoking Status Observation</b></em>'. <!-- end-user-doc -->
  * <p>
  * </p>
  *
  * @generated
  */
-public class SmokingStatusObservationImpl extends TobaccoUseImpl implements SmokingStatusObservation {
+public class SmokingStatusObservationImpl extends TobaccoUseImpl implements
+		SmokingStatusObservation {
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @generated
 	 */
 	protected SmokingStatusObservationImpl() {
@@ -44,8 +43,7 @@ public class SmokingStatusObservationImpl extends TobaccoUseImpl implements Smok
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @generated
 	 */
 	@Override
@@ -54,50 +52,50 @@ public class SmokingStatusObservationImpl extends TobaccoUseImpl implements Smok
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateSmokingStatusObservationValueP(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateSmokingStatusObservationValueP(
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return SmokingStatusObservationOperations.validateSmokingStatusObservationValueP(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateSmokingStatusObservationValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateSmokingStatusObservationValue(
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return SmokingStatusObservationOperations.validateSmokingStatusObservationValue(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @generated
 	 */
 	@Override
-	public boolean validateTobaccoUseTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateTobaccoUseTemplateId(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return SmokingStatusObservationOperations.validateTobaccoUseTemplateId(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @generated
 	 */
 	@Override
 	public SmokingStatusObservation init() {
 	    return Initializer.Util.init(this);
 	}
-    /**
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+
+	/**
+     * <!-- begin-user-doc --> <!-- end-user-doc -->
      * @generated
      */
-    @Override
-	public SmokingStatusObservation init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+	@Override
+	public SmokingStatusObservation init(
+			Iterable<? extends Initializer<? extends EObject>> initializers) {
         Initializer.Util.init(this, initializers);
         return this;
     }
-} //SmokingStatusObservationImpl
+} // SmokingStatusObservationImpl

@@ -35,7 +35,7 @@ public class Test {
 
 		// System.out.println("======testAsSOCR=========");
 		// testAsSOCR("socr_sample");
-//		testAsSOCR("socr_sample_withDSTemplateId");
+		// testAsSOCR("socr_sample_withDSTemplateId");
 		// System.out.println("=====testAsSOCR==========");
 
 		// System.out.println("======validateSOCR=========");
@@ -46,20 +46,19 @@ public class Test {
 		// validateDocument("socr_sample", "SummaryOfCareRecord");
 		// validateDocument("DischargeSummary_2014Edition_sample",
 		// "SummaryOfCareRecord");
-//		validateDocument("DischargeSummary_2014Edition_sample",
-//				"ClinicalOfficeVisitSummary");
-//		validateDocument("socr_sample_withDSTemplateId",
-//		"SummaryOfCareRecord");
-//		validateDocument("socr_sample_withDSTemplateId",
-//		"TransitionsOfCareInpatientSummary");
-//		validateDocument("socr_sample_withDSTemplateId",
-//		"VDTAmbulatorySummary");
-//		validateDocument("socr_sample_withDSTemplateId",
-//		"VDTInpatientSummary");
-		validateDocument("socr_sample_withDSTemplateId",
-		"VDTInpatientSummary");
-//		validateDocument("cdabook.pdf",
-//		"TransitionsOfCareAmbulatorySummary");
+		// validateDocument("DischargeSummary_2014Edition_sample",
+		// "ClinicalOfficeVisitSummary");
+		// validateDocument("socr_sample_withDSTemplateId",
+		// "SummaryOfCareRecord");
+		// validateDocument("socr_sample_withDSTemplateId",
+		// "TransitionsOfCareInpatientSummary");
+		// validateDocument("socr_sample_withDSTemplateId",
+		// "VDTAmbulatorySummary");
+		// validateDocument("socr_sample_withDSTemplateId",
+		// "VDTInpatientSummary");
+		validateDocument("socr_sample_withDSTemplateId", "TransitionsOfCareInpatientSummary");
+		// validateDocument("cdabook.pdf",
+		// "TransitionsOfCareAmbulatorySummary");
 		// validateDocument("socr_sample","ClinicalOfficeVisitSummary");
 		// validateDocument("socr_sample", "VDTInpatientPatientInfo");
 
@@ -128,13 +127,17 @@ public class Test {
 				.equalsIgnoreCase("ClinicalOfficeVisitSummary")) {
 			docType = Mu2consolPackage.eINSTANCE
 					.getClinicalOfficeVisitSummary();
-		} else if (asDocumentType.equalsIgnoreCase("TransitionsOfCareAmbulatorySummary")) {
-			docType = Mu2consolPackage.eINSTANCE.getTransitionOfCareAmbulatorySummary();
-		}else if (asDocumentType.equalsIgnoreCase("TransitionsOfCareInpatientSummary")) {
-			docType = Mu2consolPackage.eINSTANCE.getTransitionOfCareInpatientSummary();
-		}else if (asDocumentType.equalsIgnoreCase("VDTAmbulatorySummary")) {
+		} else if (asDocumentType
+				.equalsIgnoreCase("TransitionsOfCareAmbulatorySummary")) {
+			docType = Mu2consolPackage.eINSTANCE
+					.getTransitionOfCareAmbulatorySummary();
+		} else if (asDocumentType
+				.equalsIgnoreCase("TransitionsOfCareInpatientSummary")) {
+			docType = Mu2consolPackage.eINSTANCE
+					.getTransitionOfCareInpatientSummary();
+		} else if (asDocumentType.equalsIgnoreCase("VDTAmbulatorySummary")) {
 			docType = Mu2consolPackage.eINSTANCE.getVDTAmbulatorySummary();
-		}else if (asDocumentType.equalsIgnoreCase("VDTInpatientSummary")) {
+		} else if (asDocumentType.equalsIgnoreCase("VDTInpatientSummary")) {
 			docType = Mu2consolPackage.eINSTANCE.getVDTInpatientSummary();
 		}
 

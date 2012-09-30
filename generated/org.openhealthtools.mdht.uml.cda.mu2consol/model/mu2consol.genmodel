@@ -49,6 +49,7 @@
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="mu2consol.ecore#//GeneralHeaderConstraints/GeneralHeaderConstraintsComponent1EncompassingEncounter/diagnostics"/>
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="mu2consol.ecore#//GeneralHeaderConstraints/GeneralHeaderConstraintsComponent1EncompassingEncounter/context"/>
       </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="mu2consol.ecore#//GeneralHeaderConstraints/retrieveHospitalAdmissionDiagnosisSection"/>
     </genClasses>
     <genClasses xsi:type="genmodel:GenClass" ecoreClass="mu2consol.ecore#//SummaryOfCareRecord">
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="mu2consol.ecore#//SummaryOfCareRecord/SummaryOfCareRecordCarePlanning">
@@ -139,22 +140,6 @@
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="mu2consol.ecore#//SummaryOfCareRecord/SummaryOfCareRecordMu2consolAssessmentSectionProblemObservation/diagnostics"/>
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="mu2consol.ecore#//SummaryOfCareRecord/SummaryOfCareRecordMu2consolAssessmentSectionProblemObservation/context"/>
       </genOperations>
-      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="mu2consol.ecore#//SummaryOfCareRecord/SummaryOfCareRecordPostoperativeDiagnosisSectionTemplateId">
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="mu2consol.ecore#//SummaryOfCareRecord/SummaryOfCareRecordPostoperativeDiagnosisSectionTemplateId/diagnostics"/>
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="mu2consol.ecore#//SummaryOfCareRecord/SummaryOfCareRecordPostoperativeDiagnosisSectionTemplateId/context"/>
-      </genOperations>
-      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="mu2consol.ecore#//SummaryOfCareRecord/SummaryOfCareRecordMu2consolPostoperativeDiagnosisSectionProblemObservation">
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="mu2consol.ecore#//SummaryOfCareRecord/SummaryOfCareRecordMu2consolPostoperativeDiagnosisSectionProblemObservation/diagnostics"/>
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="mu2consol.ecore#//SummaryOfCareRecord/SummaryOfCareRecordMu2consolPostoperativeDiagnosisSectionProblemObservation/context"/>
-      </genOperations>
-      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="mu2consol.ecore#//SummaryOfCareRecord/SummaryOfCareRecordPostprocedureDiagnosisSectionTemplateId">
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="mu2consol.ecore#//SummaryOfCareRecord/SummaryOfCareRecordPostprocedureDiagnosisSectionTemplateId/diagnostics"/>
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="mu2consol.ecore#//SummaryOfCareRecord/SummaryOfCareRecordPostprocedureDiagnosisSectionTemplateId/context"/>
-      </genOperations>
-      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="mu2consol.ecore#//SummaryOfCareRecord/SummaryOfCareRecordMu2consolPostprocedureDiagnosisSectionPostprocedureDiagnosis">
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="mu2consol.ecore#//SummaryOfCareRecord/SummaryOfCareRecordMu2consolPostprocedureDiagnosisSectionPostprocedureDiagnosis/diagnostics"/>
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="mu2consol.ecore#//SummaryOfCareRecord/SummaryOfCareRecordMu2consolPostprocedureDiagnosisSectionPostprocedureDiagnosis/context"/>
-      </genOperations>
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="mu2consol.ecore#//SummaryOfCareRecord/SummaryOfCareRecordPreoperativeDiagnosisSectionTemplateId">
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="mu2consol.ecore#//SummaryOfCareRecord/SummaryOfCareRecordPreoperativeDiagnosisSectionTemplateId/diagnostics"/>
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="mu2consol.ecore#//SummaryOfCareRecord/SummaryOfCareRecordPreoperativeDiagnosisSectionTemplateId/context"/>
@@ -164,6 +149,9 @@
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="mu2consol.ecore#//SummaryOfCareRecord/SummaryOfCareRecordMu2consolPreoperativeDiagnosisSectionPreoperativeDiagnosis/context"/>
       </genOperations>
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="mu2consol.ecore#//SummaryOfCareRecord/retrieveFunctionalStatusSection"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="mu2consol.ecore#//SummaryOfCareRecord/retrieveHospitalDischargeDiagnosisSection"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="mu2consol.ecore#//SummaryOfCareRecord/retrievePostoperativeDiagnosisSection"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="mu2consol.ecore#//SummaryOfCareRecord/retrievePostprocedureDiagnosisSection"/>
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="mu2consol.ecore#//SummaryOfCareRecord/getEncountersSection"/>
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="mu2consol.ecore#//SummaryOfCareRecord/getPlanOfCareSection"/>
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="mu2consol.ecore#//SummaryOfCareRecord/getAssessmentAndPlanSection"/>
@@ -221,13 +209,6 @@
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="mu2consol.ecore#//AssessmentSection/Mu2consolAssessmentSectionProblemObservation/context"/>
       </genOperations>
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="mu2consol.ecore#//AssessmentSection/getProblemObservation"/>
-    </genClasses>
-    <genClasses xsi:type="genmodel:GenClass" ecoreClass="mu2consol.ecore#//PostoperativeDiagnosisSection">
-      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="mu2consol.ecore#//PostoperativeDiagnosisSection/Mu2consolPostoperativeDiagnosisSectionProblemObservation">
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="mu2consol.ecore#//PostoperativeDiagnosisSection/Mu2consolPostoperativeDiagnosisSectionProblemObservation/diagnostics"/>
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="mu2consol.ecore#//PostoperativeDiagnosisSection/Mu2consolPostoperativeDiagnosisSectionProblemObservation/context"/>
-      </genOperations>
-      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="mu2consol.ecore#//PostoperativeDiagnosisSection/getProblemObservation"/>
     </genClasses>
     <genClasses xsi:type="genmodel:GenClass" ecoreClass="mu2consol.ecore#//PreoperativeDiagnosisSection">
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="mu2consol.ecore#//PreoperativeDiagnosisSection/Mu2consolPreoperativeDiagnosisSectionPreoperativeDiagnosis">
@@ -301,33 +282,12 @@
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="mu2consol.ecore#//ProcedureActivityProcedure/Mu2consolProcedureActivityProcedureCode/context"/>
       </genOperations>
     </genClasses>
-    <genClasses xsi:type="genmodel:GenClass" ecoreClass="mu2consol.ecore#//PostprocedureDiagnosisSection">
-      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="mu2consol.ecore#//PostprocedureDiagnosisSection/Mu2consolPostprocedureDiagnosisSectionPostprocedureDiagnosis">
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="mu2consol.ecore#//PostprocedureDiagnosisSection/Mu2consolPostprocedureDiagnosisSectionPostprocedureDiagnosis/diagnostics"/>
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="mu2consol.ecore#//PostprocedureDiagnosisSection/Mu2consolPostprocedureDiagnosisSectionPostprocedureDiagnosis/context"/>
-      </genOperations>
-      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="mu2consol.ecore#//PostprocedureDiagnosisSection/getMu2consolPostprocedureDiagnosis"/>
-    </genClasses>
     <genClasses xsi:type="genmodel:GenClass" ecoreClass="mu2consol.ecore#//InstructionsSection">
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="mu2consol.ecore#//InstructionsSection/Mu2consolInstructionsSectionInstructions">
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="mu2consol.ecore#//InstructionsSection/Mu2consolInstructionsSectionInstructions/diagnostics"/>
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="mu2consol.ecore#//InstructionsSection/Mu2consolInstructionsSectionInstructions/context"/>
       </genOperations>
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="mu2consol.ecore#//InstructionsSection/getMu2consolInstructionss"/>
-    </genClasses>
-    <genClasses xsi:type="genmodel:GenClass" ecoreClass="mu2consol.ecore#//HospitalAdmissionDiagnosisSection">
-      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="mu2consol.ecore#//HospitalAdmissionDiagnosisSection/Mu2consolHospitalAdmissionDiagnosisSectionHospitalAdmissionDiagnosis">
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="mu2consol.ecore#//HospitalAdmissionDiagnosisSection/Mu2consolHospitalAdmissionDiagnosisSectionHospitalAdmissionDiagnosis/diagnostics"/>
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="mu2consol.ecore#//HospitalAdmissionDiagnosisSection/Mu2consolHospitalAdmissionDiagnosisSectionHospitalAdmissionDiagnosis/context"/>
-      </genOperations>
-      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="mu2consol.ecore#//HospitalAdmissionDiagnosisSection/getMu2consolHospitalAdmissionDiagnosis"/>
-    </genClasses>
-    <genClasses xsi:type="genmodel:GenClass" ecoreClass="mu2consol.ecore#//HospitalDischargeDiagnosisSection">
-      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="mu2consol.ecore#//HospitalDischargeDiagnosisSection/Mu2consolHospitalDischargeDiagnosisSectionHospitalDischargeDiagnosis">
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="mu2consol.ecore#//HospitalDischargeDiagnosisSection/Mu2consolHospitalDischargeDiagnosisSectionHospitalDischargeDiagnosis/diagnostics"/>
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="mu2consol.ecore#//HospitalDischargeDiagnosisSection/Mu2consolHospitalDischargeDiagnosisSectionHospitalDischargeDiagnosis/context"/>
-      </genOperations>
-      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="mu2consol.ecore#//HospitalDischargeDiagnosisSection/getMu2consolHospitalDischargeDiagnosis"/>
     </genClasses>
     <genClasses xsi:type="genmodel:GenClass" ecoreClass="mu2consol.ecore#//MedicationsAdministeredSection">
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="mu2consol.ecore#//MedicationsAdministeredSection/Mu2consolMedicationsAdministeredSectionMedicationActivity">
@@ -482,6 +442,10 @@
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="mu2consol.ecore#//TransitionOfCareInpatientSummary/TransitionOfCareInpatientSummaryInpatientEncounterDiagnoses/diagnostics"/>
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="mu2consol.ecore#//TransitionOfCareInpatientSummary/TransitionOfCareInpatientSummaryInpatientEncounterDiagnoses/context"/>
       </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="mu2consol.ecore#//TransitionOfCareInpatientSummary/TransitionOfCareInpatientSummaryHospitalAdmissionDiagnosisEntry">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="mu2consol.ecore#//TransitionOfCareInpatientSummary/TransitionOfCareInpatientSummaryHospitalAdmissionDiagnosisEntry/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="mu2consol.ecore#//TransitionOfCareInpatientSummary/TransitionOfCareInpatientSummaryHospitalAdmissionDiagnosisEntry/context"/>
+      </genOperations>
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="mu2consol.ecore#//TransitionOfCareInpatientSummary/TransitionOfCareInpatientSummaryHospitalDischargeInstructionsSection">
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="mu2consol.ecore#//TransitionOfCareInpatientSummary/TransitionOfCareInpatientSummaryHospitalDischargeInstructionsSection/diagnostics"/>
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="mu2consol.ecore#//TransitionOfCareInpatientSummary/TransitionOfCareInpatientSummaryHospitalDischargeInstructionsSection/context"/>
@@ -489,22 +453,6 @@
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="mu2consol.ecore#//TransitionOfCareInpatientSummary/TransitionOfCareInpatientSummaryHospitalDischargeMedicationsSection">
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="mu2consol.ecore#//TransitionOfCareInpatientSummary/TransitionOfCareInpatientSummaryHospitalDischargeMedicationsSection/diagnostics"/>
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="mu2consol.ecore#//TransitionOfCareInpatientSummary/TransitionOfCareInpatientSummaryHospitalDischargeMedicationsSection/context"/>
-      </genOperations>
-      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="mu2consol.ecore#//TransitionOfCareInpatientSummary/TransitionOfCareInpatientSummaryHospitalAdmissionDiagnosisSectionTemplateId">
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="mu2consol.ecore#//TransitionOfCareInpatientSummary/TransitionOfCareInpatientSummaryHospitalAdmissionDiagnosisSectionTemplateId/diagnostics"/>
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="mu2consol.ecore#//TransitionOfCareInpatientSummary/TransitionOfCareInpatientSummaryHospitalAdmissionDiagnosisSectionTemplateId/context"/>
-      </genOperations>
-      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="mu2consol.ecore#//TransitionOfCareInpatientSummary/TransitionOfCareInpatientSummaryMu2consolHospitalAdmissionDiagnosisSectionHospitalAdmissionDiagnosis">
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="mu2consol.ecore#//TransitionOfCareInpatientSummary/TransitionOfCareInpatientSummaryMu2consolHospitalAdmissionDiagnosisSectionHospitalAdmissionDiagnosis/diagnostics"/>
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="mu2consol.ecore#//TransitionOfCareInpatientSummary/TransitionOfCareInpatientSummaryMu2consolHospitalAdmissionDiagnosisSectionHospitalAdmissionDiagnosis/context"/>
-      </genOperations>
-      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="mu2consol.ecore#//TransitionOfCareInpatientSummary/TransitionOfCareInpatientSummaryHospitalDischargeDiagnosisSectionTemplateId">
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="mu2consol.ecore#//TransitionOfCareInpatientSummary/TransitionOfCareInpatientSummaryHospitalDischargeDiagnosisSectionTemplateId/diagnostics"/>
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="mu2consol.ecore#//TransitionOfCareInpatientSummary/TransitionOfCareInpatientSummaryHospitalDischargeDiagnosisSectionTemplateId/context"/>
-      </genOperations>
-      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="mu2consol.ecore#//TransitionOfCareInpatientSummary/TransitionOfCareInpatientSummaryMu2consolHospitalDischargeDiagnosisSectionHospitalDischargeDiagnosis">
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="mu2consol.ecore#//TransitionOfCareInpatientSummary/TransitionOfCareInpatientSummaryMu2consolHospitalDischargeDiagnosisSectionHospitalDischargeDiagnosis/diagnostics"/>
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="mu2consol.ecore#//TransitionOfCareInpatientSummary/TransitionOfCareInpatientSummaryMu2consolHospitalDischargeDiagnosisSectionHospitalDischargeDiagnosis/context"/>
       </genOperations>
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="mu2consol.ecore#//TransitionOfCareInpatientSummary/getHospitalDischargeInstructionsSection"/>
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="mu2consol.ecore#//TransitionOfCareInpatientSummary/getHospitalDischargeMedicationsSection"/>
@@ -595,6 +543,10 @@
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="mu2consol.ecore#//VDTInpatientSummary/VDTInpatientSummaryChiefComplaintOrReasonForVisit/diagnostics"/>
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="mu2consol.ecore#//VDTInpatientSummary/VDTInpatientSummaryChiefComplaintOrReasonForVisit/context"/>
       </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="mu2consol.ecore#//VDTInpatientSummary/VDTInpatientSummaryHospitalAdmissionDiagnosisEntry">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="mu2consol.ecore#//VDTInpatientSummary/VDTInpatientSummaryHospitalAdmissionDiagnosisEntry/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="mu2consol.ecore#//VDTInpatientSummary/VDTInpatientSummaryHospitalAdmissionDiagnosisEntry/context"/>
+      </genOperations>
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="mu2consol.ecore#//VDTInpatientSummary/VDTInpatientSummaryHospitalDischargeInstructionsSection">
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="mu2consol.ecore#//VDTInpatientSummary/VDTInpatientSummaryHospitalDischargeInstructionsSection/diagnostics"/>
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="mu2consol.ecore#//VDTInpatientSummary/VDTInpatientSummaryHospitalDischargeInstructionsSection/context"/>
@@ -606,14 +558,6 @@
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="mu2consol.ecore#//VDTInpatientSummary/VDTInpatientSummaryHospitalDischargeMedicationsSection">
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="mu2consol.ecore#//VDTInpatientSummary/VDTInpatientSummaryHospitalDischargeMedicationsSection/diagnostics"/>
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="mu2consol.ecore#//VDTInpatientSummary/VDTInpatientSummaryHospitalDischargeMedicationsSection/context"/>
-      </genOperations>
-      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="mu2consol.ecore#//VDTInpatientSummary/VDTInpatientSummaryHospitalAdmissionDiagnosisSectionTemplateId">
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="mu2consol.ecore#//VDTInpatientSummary/VDTInpatientSummaryHospitalAdmissionDiagnosisSectionTemplateId/diagnostics"/>
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="mu2consol.ecore#//VDTInpatientSummary/VDTInpatientSummaryHospitalAdmissionDiagnosisSectionTemplateId/context"/>
-      </genOperations>
-      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="mu2consol.ecore#//VDTInpatientSummary/VDTInpatientSummaryMu2consolHospitalAdmissionDiagnosisSectionHospitalAdmissionDiagnosis">
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="mu2consol.ecore#//VDTInpatientSummary/VDTInpatientSummaryMu2consolHospitalAdmissionDiagnosisSectionHospitalAdmissionDiagnosis/diagnostics"/>
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="mu2consol.ecore#//VDTInpatientSummary/VDTInpatientSummaryMu2consolHospitalAdmissionDiagnosisSectionHospitalAdmissionDiagnosis/context"/>
       </genOperations>
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="mu2consol.ecore#//VDTInpatientSummary/getHospitalDischargeInstructionsSection"/>
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="mu2consol.ecore#//VDTInpatientSummary/getHospitalAdmissionDiagnosisSection"/>

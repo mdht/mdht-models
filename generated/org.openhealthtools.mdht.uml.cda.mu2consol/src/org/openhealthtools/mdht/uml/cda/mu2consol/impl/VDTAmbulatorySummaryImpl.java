@@ -23,18 +23,17 @@ import org.openhealthtools.mdht.uml.cda.mu2consol.VDTAmbulatorySummary;
 import org.openhealthtools.mdht.uml.cda.mu2consol.operations.VDTAmbulatorySummaryOperations;
 
 /**
- * <!-- begin-user-doc -->
- * An implementation of the model object '<em><b>VDT Ambulatory Summary</b></em>'.
- * <!-- end-user-doc -->
+ * <!-- begin-user-doc --> An implementation of the model object '
+ * <em><b>VDT Ambulatory Summary</b></em>'. <!-- end-user-doc -->
  * <p>
  * </p>
  *
  * @generated
  */
-public class VDTAmbulatorySummaryImpl extends ViewDownloadTransmitSummaryImpl implements VDTAmbulatorySummary {
+public class VDTAmbulatorySummaryImpl extends ViewDownloadTransmitSummaryImpl
+		implements VDTAmbulatorySummary {
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @generated
 	 */
 	protected VDTAmbulatorySummaryImpl() {
@@ -42,8 +41,7 @@ public class VDTAmbulatorySummaryImpl extends ViewDownloadTransmitSummaryImpl im
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @generated
 	 */
 	@Override
@@ -52,31 +50,31 @@ public class VDTAmbulatorySummaryImpl extends ViewDownloadTransmitSummaryImpl im
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateVDTAmbulatorySummaryResponsibleParty(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateVDTAmbulatorySummaryResponsibleParty(
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return VDTAmbulatorySummaryOperations.validateVDTAmbulatorySummaryResponsibleParty(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @generated
 	 */
 	@Override
 	public VDTAmbulatorySummary init() {
 	    return Initializer.Util.init(this);
 	}
-    /**
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+
+	/**
+     * <!-- begin-user-doc --> <!-- end-user-doc -->
      * @generated
      */
-    @Override
-	public VDTAmbulatorySummary init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+	@Override
+	public VDTAmbulatorySummary init(
+			Iterable<? extends Initializer<? extends EObject>> initializers) {
         Initializer.Util.init(this, initializers);
         return this;
     }
-} //VDTAmbulatorySummaryImpl
+} // VDTAmbulatorySummaryImpl

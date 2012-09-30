@@ -23,18 +23,19 @@ import org.openhealthtools.mdht.uml.cda.mu2consol.ProcedureActivityProcedure;
 import org.openhealthtools.mdht.uml.cda.mu2consol.operations.ProcedureActivityProcedureOperations;
 
 /**
- * <!-- begin-user-doc -->
- * An implementation of the model object '<em><b>Procedure Activity Procedure</b></em>'.
- * <!-- end-user-doc -->
+ * <!-- begin-user-doc --> An implementation of the model object '
+ * <em><b>Procedure Activity Procedure</b></em>'. <!-- end-user-doc -->
  * <p>
  * </p>
  *
  * @generated
  */
-public class ProcedureActivityProcedureImpl extends org.openhealthtools.mdht.uml.cda.consol.impl.ProcedureActivityProcedureImpl implements ProcedureActivityProcedure {
+public class ProcedureActivityProcedureImpl
+		extends
+		org.openhealthtools.mdht.uml.cda.consol.impl.ProcedureActivityProcedureImpl
+		implements ProcedureActivityProcedure {
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @generated
 	 */
 	protected ProcedureActivityProcedureImpl() {
@@ -42,8 +43,7 @@ public class ProcedureActivityProcedureImpl extends org.openhealthtools.mdht.uml
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @generated
 	 */
 	@Override
@@ -52,50 +52,50 @@ public class ProcedureActivityProcedureImpl extends org.openhealthtools.mdht.uml
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateMu2consolProcedureActivityProcedureCodeValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateMu2consolProcedureActivityProcedureCodeValue(
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ProcedureActivityProcedureOperations.validateMu2consolProcedureActivityProcedureCodeValue(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateMu2consolProcedureActivityProcedureCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateMu2consolProcedureActivityProcedureCode(
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ProcedureActivityProcedureOperations.validateMu2consolProcedureActivityProcedureCode(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @generated
 	 */
 	@Override
-	public boolean validateProcedureActivityProcedureTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateProcedureActivityProcedureTemplateId(
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ProcedureActivityProcedureOperations.validateProcedureActivityProcedureTemplateId(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @generated
 	 */
 	@Override
 	public ProcedureActivityProcedure init() {
 	    return Initializer.Util.init(this);
 	}
-    /**
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+
+	/**
+     * <!-- begin-user-doc --> <!-- end-user-doc -->
      * @generated
      */
-    @Override
-	public ProcedureActivityProcedure init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+	@Override
+	public ProcedureActivityProcedure init(
+			Iterable<? extends Initializer<? extends EObject>> initializers) {
         Initializer.Util.init(this, initializers);
         return this;
     }
-} //ProcedureActivityProcedureImpl
+} // ProcedureActivityProcedureImpl
