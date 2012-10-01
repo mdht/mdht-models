@@ -77,15 +77,6 @@ public interface Mu2consolFactory extends EFactory {
 	AssessmentAndPlanSection createAssessmentAndPlanSection();
 
 	/**
-	 * Returns a new object of class '<em>Instructions Section</em>'. <!--
-	 * begin-user-doc --> <!-- end-user-doc -->
-	 * 
-	 * @return a new object of class '<em>Instructions Section</em>'.
-	 * @generated
-	 */
-	InstructionsSection createInstructionsSection();
-
-	/**
 	 * Returns a new object of class '<em>Clinical Office Visit Summary</em>'.
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @return a new object of class '<em>Clinical Office Visit Summary</em>'.
@@ -189,34 +180,6 @@ public interface Mu2consolFactory extends EFactory {
 	 * @generated
 	 */
 	AssessmentSection createAssessmentSection();
-
-	/**
-	 * Returns a new object of class '<em>Preoperative Diagnosis Section</em>'.
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @return a new object of class '<em>Preoperative Diagnosis Section</em>'.
-	 * @generated
-	 */
-	PreoperativeDiagnosisSection createPreoperativeDiagnosisSection();
-
-	/**
-	 * Returns a new object of class '<em>Medications Administered Section</em>'.
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @return a new object of class '<em>Medications Administered Section</em>'.
-	 * @generated
-	 */
-	MedicationsAdministeredSection createMedicationsAdministeredSection();
-
-	/**
-	 * Returns a new object of class '
-	 * <em>Hospital Admission Medications Section Entries Optional</em>'. <!--
-	 * begin-user-doc --> <!-- end-user-doc -->
-	 * 
-	 * @return a new object of class '
-	 *         <em>Hospital Admission Medications Section Entries Optional</em>
-	 *         '.
-	 * @generated
-	 */
-	HospitalAdmissionMedicationsSectionEntriesOptional createHospitalAdmissionMedicationsSectionEntriesOptional();
 
 	/**
 	 * Returns a new object of class '<em>Social History Section</em>'. <!--

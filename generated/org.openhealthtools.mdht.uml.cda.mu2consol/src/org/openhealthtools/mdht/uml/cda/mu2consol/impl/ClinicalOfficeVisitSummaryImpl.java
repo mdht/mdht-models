@@ -21,6 +21,8 @@ import org.openhealthtools.mdht.uml.cda.consol.AllergiesSection;
 import org.openhealthtools.mdht.uml.cda.consol.ChiefComplaintAndReasonForVisitSection;
 import org.openhealthtools.mdht.uml.cda.consol.ChiefComplaintSection;
 import org.openhealthtools.mdht.uml.cda.consol.ImmunizationsSection;
+import org.openhealthtools.mdht.uml.cda.consol.InstructionsSection;
+import org.openhealthtools.mdht.uml.cda.consol.MedicationsAdministeredSection;
 import org.openhealthtools.mdht.uml.cda.consol.MedicationsSection;
 import org.openhealthtools.mdht.uml.cda.consol.ProblemSection;
 
@@ -28,8 +30,6 @@ import org.openhealthtools.mdht.uml.cda.consol.ReasonForVisitSection;
 import org.openhealthtools.mdht.uml.cda.consol.VitalSignsSection;
 import org.openhealthtools.mdht.uml.cda.mu2consol.AssessmentAndPlanSection;
 import org.openhealthtools.mdht.uml.cda.mu2consol.ClinicalOfficeVisitSummary;
-import org.openhealthtools.mdht.uml.cda.mu2consol.InstructionsSection;
-import org.openhealthtools.mdht.uml.cda.mu2consol.MedicationsAdministeredSection;
 import org.openhealthtools.mdht.uml.cda.mu2consol.Mu2consolPackage;
 import org.openhealthtools.mdht.uml.cda.mu2consol.PlanOfCareSection;
 import org.openhealthtools.mdht.uml.cda.mu2consol.ProceduresSection;
@@ -117,6 +117,24 @@ public class ClinicalOfficeVisitSummaryImpl extends
 	public boolean validateClinicalOfficeVisitSummaryPlanOfCareActOrEncounter(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ClinicalOfficeVisitSummaryOperations.validateClinicalOfficeVisitSummaryPlanOfCareActOrEncounter(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateClinicalOfficeVisitSummaryInstructionsEntry(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ClinicalOfficeVisitSummaryOperations.validateClinicalOfficeVisitSummaryInstructionsEntry(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateClinicalOfficeVisitSummaryMedicationsAdministeredEntry(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ClinicalOfficeVisitSummaryOperations.validateClinicalOfficeVisitSummaryMedicationsAdministeredEntry(this, diagnostics, context);
 	}
 
 	/**
@@ -263,6 +281,24 @@ public class ClinicalOfficeVisitSummaryImpl extends
 	}
 
 	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public InstructionsSection retrieveInstructionsSection() {
+		return ClinicalOfficeVisitSummaryOperations.retrieveInstructionsSection(this);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public MedicationsAdministeredSection retrieveMedicationsAdministeredSection() {
+		return ClinicalOfficeVisitSummaryOperations.retrieveMedicationsAdministeredSection(this);
+	}
+
+	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @generated
 	 */
@@ -275,45 +311,9 @@ public class ClinicalOfficeVisitSummaryImpl extends
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateClinicalOfficeVisitSummaryMedicationsAdministeredSectionTemplateId(
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ClinicalOfficeVisitSummaryOperations.validateClinicalOfficeVisitSummaryMedicationsAdministeredSectionTemplateId(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateClinicalOfficeVisitSummaryMu2consolMedicationsAdministeredSectionMedicationActivity(
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ClinicalOfficeVisitSummaryOperations.validateClinicalOfficeVisitSummaryMu2consolMedicationsAdministeredSectionMedicationActivity(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @generated
-	 */
 	public boolean validateClinicalOfficeVisitSummaryAssessmentAndPlanSectionTemplateId(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ClinicalOfficeVisitSummaryOperations.validateClinicalOfficeVisitSummaryAssessmentAndPlanSectionTemplateId(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateClinicalOfficeVisitSummaryInstructionsSectionTemplateId(
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ClinicalOfficeVisitSummaryOperations.validateClinicalOfficeVisitSummaryInstructionsSectionTemplateId(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateClinicalOfficeVisitSummaryMu2consolInstructionsSectionInstructions(
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ClinicalOfficeVisitSummaryOperations.validateClinicalOfficeVisitSummaryMu2consolInstructionsSectionInstructions(this, diagnostics, context);
 	}
 
 	/**

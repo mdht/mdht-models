@@ -15,13 +15,9 @@ import org.openhealthtools.mdht.uml.cda.mu2consol.*;
 import org.openhealthtools.mdht.uml.cda.mu2consol.AssessmentAndPlanSection;
 import org.openhealthtools.mdht.uml.cda.mu2consol.AssessmentSection;
 import org.openhealthtools.mdht.uml.cda.mu2consol.GeneralHeaderConstraints;
-import org.openhealthtools.mdht.uml.cda.mu2consol.HospitalAdmissionMedicationsSectionEntriesOptional;
-import org.openhealthtools.mdht.uml.cda.mu2consol.InstructionsSection;
-import org.openhealthtools.mdht.uml.cda.mu2consol.MedicationsAdministeredSection;
 import org.openhealthtools.mdht.uml.cda.mu2consol.Mu2consolFactory;
 import org.openhealthtools.mdht.uml.cda.mu2consol.Mu2consolPackage;
 import org.openhealthtools.mdht.uml.cda.mu2consol.PlanOfCareSection;
-import org.openhealthtools.mdht.uml.cda.mu2consol.PreoperativeDiagnosisSection;
 import org.openhealthtools.mdht.uml.cda.mu2consol.SummaryOfCareRecord;
 
 /**
@@ -74,8 +70,6 @@ public class Mu2consolFactoryImpl extends EFactoryImpl implements
 			case Mu2consolPackage.PLAN_OF_CARE_SECTION: return createPlanOfCareSection();
 			case Mu2consolPackage.ASSESSMENT_AND_PLAN_SECTION: return createAssessmentAndPlanSection();
 			case Mu2consolPackage.ASSESSMENT_SECTION: return createAssessmentSection();
-			case Mu2consolPackage.PREOPERATIVE_DIAGNOSIS_SECTION: return createPreoperativeDiagnosisSection();
-			case Mu2consolPackage.HOSPITAL_ADMISSION_MEDICATIONS_SECTION_ENTRIES_OPTIONAL: return createHospitalAdmissionMedicationsSectionEntriesOptional();
 			case Mu2consolPackage.SOCIAL_HISTORY_SECTION: return createSocialHistorySection();
 			case Mu2consolPackage.SMOKING_STATUS_OBSERVATION: return createSmokingStatusObservation();
 			case Mu2consolPackage.RESULTS_SECTION: return createResultsSection();
@@ -83,8 +77,6 @@ public class Mu2consolFactoryImpl extends EFactoryImpl implements
 			case Mu2consolPackage.RESULT_OBSERVATION: return createResultObservation();
 			case Mu2consolPackage.PROCEDURES_SECTION: return createProceduresSection();
 			case Mu2consolPackage.PROCEDURE_ACTIVITY_PROCEDURE: return createProcedureActivityProcedure();
-			case Mu2consolPackage.INSTRUCTIONS_SECTION: return createInstructionsSection();
-			case Mu2consolPackage.MEDICATIONS_ADMINISTERED_SECTION: return createMedicationsAdministeredSection();
 			case Mu2consolPackage.CLINICAL_OFFICE_VISIT_SUMMARY: return createClinicalOfficeVisitSummary();
 			case Mu2consolPackage.TRANSITION_OF_CARE_AMBULATORY_SUMMARY: return createTransitionOfCareAmbulatorySummary();
 			case Mu2consolPackage.TRANSITION_OF_CARE_INPATIENT_SUMMARY: return createTransitionOfCareInpatientSummary();
@@ -148,15 +140,6 @@ public class Mu2consolFactoryImpl extends EFactoryImpl implements
 	public AssessmentAndPlanSection createAssessmentAndPlanSection() {
 		AssessmentAndPlanSectionImpl assessmentAndPlanSection = new AssessmentAndPlanSectionImpl();
 		return assessmentAndPlanSection;
-	}
-
-	/**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @generated
-	 */
-	public InstructionsSection createInstructionsSection() {
-		InstructionsSectionImpl instructionsSection = new InstructionsSectionImpl();
-		return instructionsSection;
 	}
 
 	/**
@@ -265,33 +248,6 @@ public class Mu2consolFactoryImpl extends EFactoryImpl implements
 	public AssessmentSection createAssessmentSection() {
 		AssessmentSectionImpl assessmentSection = new AssessmentSectionImpl();
 		return assessmentSection;
-	}
-
-	/**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @generated
-	 */
-	public PreoperativeDiagnosisSection createPreoperativeDiagnosisSection() {
-		PreoperativeDiagnosisSectionImpl preoperativeDiagnosisSection = new PreoperativeDiagnosisSectionImpl();
-		return preoperativeDiagnosisSection;
-	}
-
-	/**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @generated
-	 */
-	public MedicationsAdministeredSection createMedicationsAdministeredSection() {
-		MedicationsAdministeredSectionImpl medicationsAdministeredSection = new MedicationsAdministeredSectionImpl();
-		return medicationsAdministeredSection;
-	}
-
-	/**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @generated
-	 */
-	public HospitalAdmissionMedicationsSectionEntriesOptional createHospitalAdmissionMedicationsSectionEntriesOptional() {
-		HospitalAdmissionMedicationsSectionEntriesOptionalImpl hospitalAdmissionMedicationsSectionEntriesOptional = new HospitalAdmissionMedicationsSectionEntriesOptionalImpl();
-		return hospitalAdmissionMedicationsSectionEntriesOptional;
 	}
 
 	/**

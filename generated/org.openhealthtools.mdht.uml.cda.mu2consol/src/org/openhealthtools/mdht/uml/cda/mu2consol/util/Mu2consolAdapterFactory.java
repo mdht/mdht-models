@@ -113,14 +113,6 @@ public class Mu2consolAdapterFactory extends AdapterFactoryImpl {
 				return createAssessmentSectionAdapter();
 			}
 			@Override
-			public Adapter casePreoperativeDiagnosisSection(PreoperativeDiagnosisSection object) {
-				return createPreoperativeDiagnosisSectionAdapter();
-			}
-			@Override
-			public Adapter caseHospitalAdmissionMedicationsSectionEntriesOptional(HospitalAdmissionMedicationsSectionEntriesOptional object) {
-				return createHospitalAdmissionMedicationsSectionEntriesOptionalAdapter();
-			}
-			@Override
 			public Adapter caseSocialHistorySection(SocialHistorySection object) {
 				return createSocialHistorySectionAdapter();
 			}
@@ -147,14 +139,6 @@ public class Mu2consolAdapterFactory extends AdapterFactoryImpl {
 			@Override
 			public Adapter caseProcedureActivityProcedure(ProcedureActivityProcedure object) {
 				return createProcedureActivityProcedureAdapter();
-			}
-			@Override
-			public Adapter caseInstructionsSection(InstructionsSection object) {
-				return createInstructionsSectionAdapter();
-			}
-			@Override
-			public Adapter caseMedicationsAdministeredSection(MedicationsAdministeredSection object) {
-				return createMedicationsAdministeredSectionAdapter();
 			}
 			@Override
 			public Adapter caseClinicalOfficeVisitSummary(ClinicalOfficeVisitSummary object) {
@@ -233,14 +217,6 @@ public class Mu2consolAdapterFactory extends AdapterFactoryImpl {
 				return createConsol_AssessmentSectionAdapter();
 			}
 			@Override
-			public Adapter caseConsol_PreoperativeDiagnosisSection(org.openhealthtools.mdht.uml.cda.consol.PreoperativeDiagnosisSection object) {
-				return createConsol_PreoperativeDiagnosisSectionAdapter();
-			}
-			@Override
-			public Adapter caseConsol_HospitalAdmissionMedicationsSectionEntriesOptional(org.openhealthtools.mdht.uml.cda.consol.HospitalAdmissionMedicationsSectionEntriesOptional object) {
-				return createConsol_HospitalAdmissionMedicationsSectionEntriesOptionalAdapter();
-			}
-			@Override
 			public Adapter caseConsol_SocialHistorySection(org.openhealthtools.mdht.uml.cda.consol.SocialHistorySection object) {
 				return createConsol_SocialHistorySectionAdapter();
 			}
@@ -287,14 +263,6 @@ public class Mu2consolAdapterFactory extends AdapterFactoryImpl {
 			@Override
 			public Adapter caseConsol_ProcedureActivityProcedure(org.openhealthtools.mdht.uml.cda.consol.ProcedureActivityProcedure object) {
 				return createConsol_ProcedureActivityProcedureAdapter();
-			}
-			@Override
-			public Adapter caseConsol_InstructionsSection(org.openhealthtools.mdht.uml.cda.consol.InstructionsSection object) {
-				return createConsol_InstructionsSectionAdapter();
-			}
-			@Override
-			public Adapter caseConsol_MedicationsAdministeredSection(org.openhealthtools.mdht.uml.cda.consol.MedicationsAdministeredSection object) {
-				return createConsol_MedicationsAdministeredSectionAdapter();
 			}
 			@Override
 			public Adapter defaultCase(EObject object) {
@@ -396,20 +364,6 @@ public class Mu2consolAdapterFactory extends AdapterFactoryImpl {
 	 * @generated
 	 */
 	public Adapter createAssessmentAndPlanSectionAdapter() {
-		return null;
-	}
-
-	/**
-	 * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.mu2consol.InstructionsSection <em>Instructions Section</em>}'.
-	 * <!-- begin-user-doc --> This default
-	 * implementation returns null so that we can easily ignore cases; it's
-	 * useful to ignore a case when inheritance will catch all the cases anyway.
-	 * <!-- end-user-doc -->
-	 * @return the new adapter.
-	 * @see org.openhealthtools.mdht.uml.cda.mu2consol.InstructionsSection
-	 * @generated
-	 */
-	public Adapter createInstructionsSectionAdapter() {
 		return null;
 	}
 
@@ -564,50 +518,6 @@ public class Mu2consolAdapterFactory extends AdapterFactoryImpl {
 	 * @generated
 	 */
 	public Adapter createResultsSectionAdapter() {
-		return null;
-	}
-
-	/**
-	 * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.mu2consol.PreoperativeDiagnosisSection <em>Preoperative Diagnosis Section</em>}'.
-	 * <!-- begin-user-doc --> This
-	 * default implementation returns null so that we can easily ignore cases;
-	 * it's useful to ignore a case when inheritance will catch all the cases
-	 * anyway. <!-- end-user-doc -->
-	 * @return the new adapter.
-	 * @see org.openhealthtools.mdht.uml.cda.mu2consol.PreoperativeDiagnosisSection
-	 * @generated
-	 */
-	public Adapter createPreoperativeDiagnosisSectionAdapter() {
-		return null;
-	}
-
-	/**
-	 * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.mu2consol.MedicationsAdministeredSection <em>Medications Administered Section</em>}'.
-	 * <!-- begin-user-doc --> This
-	 * default implementation returns null so that we can easily ignore cases;
-	 * it's useful to ignore a case when inheritance will catch all the cases
-	 * anyway. <!-- end-user-doc -->
-	 * @return the new adapter.
-	 * @see org.openhealthtools.mdht.uml.cda.mu2consol.MedicationsAdministeredSection
-	 * @generated
-	 */
-	public Adapter createMedicationsAdministeredSectionAdapter() {
-		return null;
-	}
-
-	/**
-	 * Creates a new adapter for an object of class '
-	 * {@link org.openhealthtools.mdht.uml.cda.mu2consol.HospitalAdmissionMedicationsSectionEntriesOptional
-	 * <em>Hospital Admission Medications Section Entries Optional</em>}'. <!--
-	 * begin-user-doc --> This default implementation returns null so that we
-	 * can easily ignore cases; it's useful to ignore a case when inheritance
-	 * will catch all the cases anyway. <!-- end-user-doc -->
-	 * 
-	 * @return the new adapter.
-	 * @see org.openhealthtools.mdht.uml.cda.mu2consol.HospitalAdmissionMedicationsSectionEntriesOptional
-	 * @generated
-	 */
-	public Adapter createHospitalAdmissionMedicationsSectionEntriesOptionalAdapter() {
 		return null;
 	}
 
@@ -782,20 +692,6 @@ public class Mu2consolAdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.consol.InstructionsSection <em>Instructions Section</em>}'.
-	 * <!-- begin-user-doc --> This default
-	 * implementation returns null so that we can easily ignore cases; it's
-	 * useful to ignore a case when inheritance will catch all the cases anyway.
-	 * <!-- end-user-doc -->
-	 * @return the new adapter.
-	 * @see org.openhealthtools.mdht.uml.cda.consol.InstructionsSection
-	 * @generated
-	 */
-	public Adapter createConsol_InstructionsSectionAdapter() {
-		return null;
-	}
-
-	/**
 	 * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.consol.AssessmentSection <em>Assessment Section</em>}'.
 	 * <!-- begin-user-doc --> This default
 	 * implementation returns null so that we can easily ignore cases; it's
@@ -806,34 +702,6 @@ public class Mu2consolAdapterFactory extends AdapterFactoryImpl {
 	 * @generated
 	 */
 	public Adapter createConsol_AssessmentSectionAdapter() {
-		return null;
-	}
-
-	/**
-	 * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.consol.PreoperativeDiagnosisSection <em>Preoperative Diagnosis Section</em>}'.
-	 * <!-- begin-user-doc --> This
-	 * default implementation returns null so that we can easily ignore cases;
-	 * it's useful to ignore a case when inheritance will catch all the cases
-	 * anyway. <!-- end-user-doc -->
-	 * @return the new adapter.
-	 * @see org.openhealthtools.mdht.uml.cda.consol.PreoperativeDiagnosisSection
-	 * @generated
-	 */
-	public Adapter createConsol_PreoperativeDiagnosisSectionAdapter() {
-		return null;
-	}
-
-	/**
-	 * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.consol.MedicationsAdministeredSection <em>Medications Administered Section</em>}'.
-	 * <!-- begin-user-doc --> This
-	 * default implementation returns null so that we can easily ignore cases;
-	 * it's useful to ignore a case when inheritance will catch all the cases
-	 * anyway. <!-- end-user-doc -->
-	 * @return the new adapter.
-	 * @see org.openhealthtools.mdht.uml.cda.consol.MedicationsAdministeredSection
-	 * @generated
-	 */
-	public Adapter createConsol_MedicationsAdministeredSectionAdapter() {
 		return null;
 	}
 
@@ -958,22 +826,6 @@ public class Mu2consolAdapterFactory extends AdapterFactoryImpl {
 	 * @generated
 	 */
 	public Adapter createConsol_ResultsSectionAdapter() {
-		return null;
-	}
-
-	/**
-	 * Creates a new adapter for an object of class '
-	 * {@link org.openhealthtools.mdht.uml.cda.consol.HospitalAdmissionMedicationsSectionEntriesOptional
-	 * <em>Hospital Admission Medications Section Entries Optional</em>}'. <!--
-	 * begin-user-doc --> This default implementation returns null so that we
-	 * can easily ignore cases; it's useful to ignore a case when inheritance
-	 * will catch all the cases anyway. <!-- end-user-doc -->
-	 * 
-	 * @return the new adapter.
-	 * @see org.openhealthtools.mdht.uml.cda.consol.HospitalAdmissionMedicationsSectionEntriesOptional
-	 * @generated
-	 */
-	public Adapter createConsol_HospitalAdmissionMedicationsSectionEntriesOptionalAdapter() {
 		return null;
 	}
 
