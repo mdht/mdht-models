@@ -326,7 +326,7 @@
         <ownedRule xmi:id="_jkk0kArKEeK-rsV_B2slTA" name="body" constrainedElement="_YKGVUArKEeK-rsV_B2slTA">
           <specification xmi:type="uml:OpaqueExpression" xmi:id="_kX5u8ArKEeK-rsV_B2slTA">
             <language>OCL</language>
-            <body>self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(mu2consol::HospitalDischargeDiagnosisSection))->asSequence()->any(true).oclAsType(mu2consol::HospitalDischargeDiagnosisSection)</body>
+            <body>self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::HospitalDischargeDiagnosisSection))->asSequence()->any(true).oclAsType(consol::HospitalDischargeDiagnosisSection)</body>
           </specification>
         </ownedRule>
         <ownedParameter xmi:id="_nlDncArKEeK-rsV_B2slTA" name="return" direction="return">
@@ -337,7 +337,7 @@
         <ownedRule xmi:id="_xSW9wArLEeK-rsV_B2slTA" name="body" constrainedElement="_QRe90ArLEeK-rsV_B2slTA">
           <specification xmi:type="uml:OpaqueExpression" xmi:id="_xyWFYArLEeK-rsV_B2slTA">
             <language>OCL</language>
-            <body>self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(mu2consol::PostoperativeDiagnosisSection))->asSequence()->any(true).oclAsType(mu2consol::PostoperativeDiagnosisSection)</body>
+            <body>self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::PostoperativeDiagnosisSection))->asSequence()->any(true).oclAsType(consol::PostoperativeDiagnosisSection)</body>
           </specification>
         </ownedRule>
         <ownedParameter xmi:id="_22q64ArLEeK-rsV_B2slTA" name="return" direction="return">
@@ -348,7 +348,7 @@
         <ownedRule xmi:id="_PIKI0ArMEeK-rsV_B2slTA" name="body" constrainedElement="_KfNnwArMEeK-rsV_B2slTA">
           <specification xmi:type="uml:OpaqueExpression" xmi:id="_TIM20ArMEeK-rsV_B2slTA">
             <language>OCL</language>
-            <body>self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(mu2consol::PostprocedureDiagnosisSection))->asSequence()->any(true).oclAsType(mu2consol::PostprocedureDiagnosisSection)</body>
+            <body>self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::PostprocedureDiagnosisSection))->asSequence()->any(true).oclAsType(consol::PostprocedureDiagnosisSection)</body>
           </specification>
         </ownedRule>
         <ownedParameter xmi:id="_NFY_0ArMEeK-rsV_B2slTA" name="return" direction="return">
@@ -850,6 +850,33 @@ MU2 170.314(b)(7) Export Summary  - For Inpatient Care</body>
         <specification xmi:type="uml:OpaqueExpression" xmi:id="_X6eUAArBEeK-rsV_B2slTA">
           <language>OCL</language>
           <body>self.retrieveHospitalAdmissionDiagnosisSection()->excluding(null)->reject(retrieveHospitalAdmissionDiagnosisSection().getActs()->exists(a : cda::Act | a.oclIsKindOf(consol::HospitalAdmissionDiagnosis)))</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_T92FgAu1EeK-rsV_B2slTA" name="hospitalDischargeDiagnosesEntry" constrainedElement="_uu2T0PdyEeG_npP0e3OOEw">
+        <ownedComment xmi:id="_ZzaKsAu1EeK-rsV_B2slTA">
+          <body>QUERY</body>
+        </ownedComment>
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_X-Zw4Au1EeK-rsV_B2slTA">
+          <language>OCL</language>
+          <body>self.retrieveHospitalDischargeDiagnosisSection()->excluding(null)->reject(retrieveHospitalDischargeDiagnosisSection().getActs()->exists(a : cda::Act | a.oclIsKindOf(consol::HospitalDischargeDiagnosis)))</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_301W8Au1EeK-rsV_B2slTA" name="postoperativeDiagnosisEntry" constrainedElement="_uu2T0PdyEeG_npP0e3OOEw">
+        <ownedComment xmi:id="_8GMecAu1EeK-rsV_B2slTA">
+          <body>QUERY</body>
+        </ownedComment>
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_62S80Au1EeK-rsV_B2slTA">
+          <language>OCL</language>
+          <body>self.retrievePostoperativeDiagnosisSection()->excluding(null)->reject(retrievePostoperativeDiagnosisSection().getObservations()->exists(a : cda::Observation | a.oclIsKindOf(consol::ProblemObservation)))</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_JujKgAu2EeK-rsV_B2slTA" name="postprocedureDiagnosisEntry" constrainedElement="_uu2T0PdyEeG_npP0e3OOEw">
+        <ownedComment xmi:id="_PLUVMAu2EeK-rsV_B2slTA">
+          <body>QUERY</body>
+        </ownedComment>
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_NbXagAu2EeK-rsV_B2slTA">
+          <language>OCL</language>
+          <body>self.retrievePostprocedureDiagnosisSection()->excluding(null)->reject(retrievePostprocedureDiagnosisSection().getObservations()->exists(a : cda::Observation | a.oclIsKindOf(consol::ProblemObservation)))</body>
         </specification>
       </ownedRule>
       <generalization xmi:id="_vutOUPdyEeG_npP0e3OOEw" general="_VG3DUNkxEeGsqcJR8eqiMw"/>
@@ -1375,4 +1402,7 @@ MU2 170.314(b)(7) Export Summary  - For Inpatient Care</body>
   </CDA:ValueSetConstraint>
   <CDA:ConstraintValidation xmi:id="_MLMM8ArCEeK-rsV_B2slTA" base_Constraint="_UuuwwArBEeK-rsV_B2slTA"/>
   <CDA:ConstraintValidation xmi:id="_OZHdEArCEeK-rsV_B2slTA" base_Constraint="_tV2F4ArAEeK-rsV_B2slTA"/>
+  <CDA:ConstraintValidation xmi:id="_aDMTIAu1EeK-rsV_B2slTA" base_Constraint="_T92FgAu1EeK-rsV_B2slTA"/>
+  <CDA:ConstraintValidation xmi:id="_7MBVMAu1EeK-rsV_B2slTA" base_Constraint="_301W8Au1EeK-rsV_B2slTA"/>
+  <CDA:ConstraintValidation xmi:id="_Oh9PIAu2EeK-rsV_B2slTA" base_Constraint="_JujKgAu2EeK-rsV_B2slTA"/>
 </xmi:XMI>
