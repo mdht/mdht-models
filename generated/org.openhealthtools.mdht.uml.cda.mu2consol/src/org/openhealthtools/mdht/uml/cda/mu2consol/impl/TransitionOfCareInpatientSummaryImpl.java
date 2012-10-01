@@ -73,6 +73,33 @@ public class TransitionOfCareInpatientSummaryImpl extends
 	}
 
 	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateTransitionOfCareInpatientSummaryHospitalDischargeDiagnosesEntry(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return TransitionOfCareInpatientSummaryOperations.validateTransitionOfCareInpatientSummaryHospitalDischargeDiagnosesEntry(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateTransitionOfCareInpatientSummaryPostoperativeDiagnosisEntry(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return TransitionOfCareInpatientSummaryOperations.validateTransitionOfCareInpatientSummaryPostoperativeDiagnosisEntry(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateTransitionOfCareInpatientSummaryPostprocedureDiagnosisEntry(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return TransitionOfCareInpatientSummaryOperations.validateTransitionOfCareInpatientSummaryPostprocedureDiagnosisEntry(this, diagnostics, context);
+	}
+
+	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @generated
 	 */
