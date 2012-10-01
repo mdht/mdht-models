@@ -17,6 +17,7 @@ import org.eclipse.emf.ecore.EObject;
 import org.openhealthtools.mdht.emf.runtime.util.Initializer;
 
 import org.openhealthtools.mdht.uml.cda.consol.HospitalAdmissionDiagnosisSection;
+import org.openhealthtools.mdht.uml.cda.consol.HospitalAdmissionMedicationsSectionEntriesOptional;
 import org.openhealthtools.mdht.uml.cda.consol.HospitalDischargeDiagnosisSection;
 import org.openhealthtools.mdht.uml.cda.consol.HospitalDischargeInstructionsSection;
 import org.openhealthtools.mdht.uml.cda.consol.HospitalDischargeMedicationsSection;
@@ -215,6 +216,18 @@ public interface TransitionOfCareInpatientSummary extends SummaryOfCareRecord {
 	 * @generated
 	 */
 	HospitalDischargeDiagnosisSection getHospitalDischargeDiagnosisSection();
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::HospitalAdmissionMedicationsSectionEntriesOptional))->asSequence()->any(true).oclAsType(consol::HospitalAdmissionMedicationsSectionEntriesOptional)
+	 * <!-- end-model-doc -->
+	 * @model kind="operation" required="true" ordered="false"
+	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::HospitalAdmissionMedicationsSectionEntriesOptional))->asSequence()->any(true).oclAsType(consol::HospitalAdmissionMedicationsSectionEntriesOptional)'"
+	 * @generated
+	 */
+	HospitalAdmissionMedicationsSectionEntriesOptional getHospitalAdmissionMedicationsSectionEntriesOptional();
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->

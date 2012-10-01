@@ -19,6 +19,7 @@ import org.openhealthtools.mdht.emf.runtime.util.Initializer;
 
 import org.openhealthtools.mdht.uml.cda.consol.AllergiesSection;
 import org.openhealthtools.mdht.uml.cda.consol.MedicationsSection;
+import org.openhealthtools.mdht.uml.cda.consol.PreoperativeDiagnosisSection;
 import org.openhealthtools.mdht.uml.cda.consol.ProblemSection;
 import org.openhealthtools.mdht.uml.cda.consol.VitalSignsSection;
 
@@ -192,6 +193,15 @@ public class ViewDownloadTransmitSummaryImpl extends
 	public boolean validateViewDownloadTransmitSummaryMu2consolSocialHistorySectionSmokingStatusObservation(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ViewDownloadTransmitSummaryOperations.validateViewDownloadTransmitSummaryMu2consolSocialHistorySectionSmokingStatusObservation(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public PreoperativeDiagnosisSection retrievePreoperativeDiagnosisSection() {
+		return ViewDownloadTransmitSummaryOperations.retrievePreoperativeDiagnosisSection(this);
 	}
 
 	/**

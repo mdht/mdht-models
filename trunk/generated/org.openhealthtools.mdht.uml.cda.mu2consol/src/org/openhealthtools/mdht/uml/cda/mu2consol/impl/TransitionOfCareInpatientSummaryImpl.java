@@ -18,6 +18,7 @@ import org.eclipse.emf.ecore.EObject;
 import org.openhealthtools.mdht.emf.runtime.util.Initializer;
 
 import org.openhealthtools.mdht.uml.cda.consol.HospitalAdmissionDiagnosisSection;
+import org.openhealthtools.mdht.uml.cda.consol.HospitalAdmissionMedicationsSectionEntriesOptional;
 import org.openhealthtools.mdht.uml.cda.consol.HospitalDischargeDiagnosisSection;
 import org.openhealthtools.mdht.uml.cda.consol.HospitalDischargeInstructionsSection;
 
@@ -147,6 +148,15 @@ public class TransitionOfCareInpatientSummaryImpl extends
 	 */
 	public HospitalDischargeDiagnosisSection getHospitalDischargeDiagnosisSection() {
 		return TransitionOfCareInpatientSummaryOperations.getHospitalDischargeDiagnosisSection(this);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public HospitalAdmissionMedicationsSectionEntriesOptional getHospitalAdmissionMedicationsSectionEntriesOptional() {
+		return TransitionOfCareInpatientSummaryOperations.getHospitalAdmissionMedicationsSectionEntriesOptional(this);
 	}
 
 	/**

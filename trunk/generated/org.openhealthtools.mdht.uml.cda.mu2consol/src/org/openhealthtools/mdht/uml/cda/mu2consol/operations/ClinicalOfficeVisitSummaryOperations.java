@@ -28,6 +28,8 @@ import org.openhealthtools.mdht.uml.cda.consol.AllergiesSection;
 import org.openhealthtools.mdht.uml.cda.consol.ChiefComplaintAndReasonForVisitSection;
 import org.openhealthtools.mdht.uml.cda.consol.ChiefComplaintSection;
 import org.openhealthtools.mdht.uml.cda.consol.ImmunizationsSection;
+import org.openhealthtools.mdht.uml.cda.consol.InstructionsSection;
+import org.openhealthtools.mdht.uml.cda.consol.MedicationsAdministeredSection;
 import org.openhealthtools.mdht.uml.cda.consol.MedicationsSection;
 import org.openhealthtools.mdht.uml.cda.consol.ProblemSection;
 
@@ -35,8 +37,6 @@ import org.openhealthtools.mdht.uml.cda.consol.ReasonForVisitSection;
 import org.openhealthtools.mdht.uml.cda.consol.VitalSignsSection;
 import org.openhealthtools.mdht.uml.cda.mu2consol.AssessmentAndPlanSection;
 import org.openhealthtools.mdht.uml.cda.mu2consol.ClinicalOfficeVisitSummary;
-import org.openhealthtools.mdht.uml.cda.mu2consol.InstructionsSection;
-import org.openhealthtools.mdht.uml.cda.mu2consol.MedicationsAdministeredSection;
 import org.openhealthtools.mdht.uml.cda.mu2consol.Mu2consolPackage;
 import org.openhealthtools.mdht.uml.cda.mu2consol.Mu2consolPlugin;
 import org.openhealthtools.mdht.uml.cda.mu2consol.PlanOfCareSection;
@@ -60,6 +60,8 @@ import org.openhealthtools.mdht.uml.cda.mu2consol.util.Mu2consolValidator;
  *   <li>{@link org.openhealthtools.mdht.uml.cda.mu2consol.ClinicalOfficeVisitSummary#validateClinicalOfficeVisitSummaryEffectiveTime(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Clinical Office Visit Summary Effective Time</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.mu2consol.ClinicalOfficeVisitSummary#validateClinicalOfficeVisitSummaryLocation(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Clinical Office Visit Summary Location</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.mu2consol.ClinicalOfficeVisitSummary#validateClinicalOfficeVisitSummaryPlanOfCareActOrEncounter(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Clinical Office Visit Summary Plan Of Care Act Or Encounter</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.mu2consol.ClinicalOfficeVisitSummary#validateClinicalOfficeVisitSummaryInstructionsEntry(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Clinical Office Visit Summary Instructions Entry</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.mu2consol.ClinicalOfficeVisitSummary#validateClinicalOfficeVisitSummaryMedicationsAdministeredEntry(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Clinical Office Visit Summary Medications Administered Entry</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.mu2consol.ClinicalOfficeVisitSummary#validateClinicalOfficeVisitSummaryProblemSection(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Clinical Office Visit Summary Problem Section</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.mu2consol.ClinicalOfficeVisitSummary#validateClinicalOfficeVisitSummaryMedicationsSection(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Clinical Office Visit Summary Medications Section</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.mu2consol.ClinicalOfficeVisitSummary#validateClinicalOfficeVisitSummaryAllergiesSection(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Clinical Office Visit Summary Allergies Section</em>}</li>
@@ -74,14 +76,12 @@ import org.openhealthtools.mdht.uml.cda.mu2consol.util.Mu2consolValidator;
  *   <li>{@link org.openhealthtools.mdht.uml.cda.mu2consol.ClinicalOfficeVisitSummary#validateClinicalOfficeVisitSummaryMu2consolPlanOfCareSectionCarePlanningForPlanOfCare(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Clinical Office Visit Summary Mu2consol Plan Of Care Section Care Planning For Plan Of Care</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.mu2consol.ClinicalOfficeVisitSummary#validateClinicalOfficeVisitSummaryMu2consolPlanOfCareSectionPlanOfCareActivityObservation(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Clinical Office Visit Summary Mu2consol Plan Of Care Section Plan Of Care Activity Observation</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.mu2consol.ClinicalOfficeVisitSummary#validateClinicalOfficeVisitSummaryPlanOfCareSectionTemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Clinical Office Visit Summary Plan Of Care Section Template Id</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.mu2consol.ClinicalOfficeVisitSummary#validateClinicalOfficeVisitSummaryMedicationsAdministeredSectionTemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Clinical Office Visit Summary Medications Administered Section Template Id</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.mu2consol.ClinicalOfficeVisitSummary#validateClinicalOfficeVisitSummaryMu2consolMedicationsAdministeredSectionMedicationActivity(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Clinical Office Visit Summary Mu2consol Medications Administered Section Medication Activity</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.mu2consol.ClinicalOfficeVisitSummary#validateClinicalOfficeVisitSummaryAssessmentAndPlanSectionTemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Clinical Office Visit Summary Assessment And Plan Section Template Id</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.mu2consol.ClinicalOfficeVisitSummary#validateClinicalOfficeVisitSummaryInstructionsSectionTemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Clinical Office Visit Summary Instructions Section Template Id</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.mu2consol.ClinicalOfficeVisitSummary#validateClinicalOfficeVisitSummaryMu2consolInstructionsSectionInstructions(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Clinical Office Visit Summary Mu2consol Instructions Section Instructions</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.mu2consol.ClinicalOfficeVisitSummary#validateClinicalOfficeVisitSummarySocialHistorySectionTemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Clinical Office Visit Summary Social History Section Template Id</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.mu2consol.ClinicalOfficeVisitSummary#validateClinicalOfficeVisitSummaryMu2consolSocialHistorySectionSmokingStatusObservation(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Clinical Office Visit Summary Mu2consol Social History Section Smoking Status Observation</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.mu2consol.ClinicalOfficeVisitSummary#retrievePlanOfCareSection() <em>Retrieve Plan Of Care Section</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.mu2consol.ClinicalOfficeVisitSummary#retrieveInstructionsSection() <em>Retrieve Instructions Section</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.mu2consol.ClinicalOfficeVisitSummary#retrieveMedicationsAdministeredSection() <em>Retrieve Medications Administered Section</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.mu2consol.ClinicalOfficeVisitSummary#getProblemSection() <em>Get Problem Section</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.mu2consol.ClinicalOfficeVisitSummary#getMedicationsSection() <em>Get Medications Section</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.mu2consol.ClinicalOfficeVisitSummary#getAllergiesSection() <em>Get Allergies Section</em>}</li>
@@ -550,6 +550,140 @@ public class ClinicalOfficeVisitSummaryOperations extends
 						 Mu2consolValidator.DIAGNOSTIC_SOURCE,
 						 Mu2consolValidator.CLINICAL_OFFICE_VISIT_SUMMARY__CLINICAL_OFFICE_VISIT_SUMMARY_PLAN_OF_CARE_ACT_OR_ENCOUNTER,
 						 Mu2consolPlugin.INSTANCE.getString("ClinicalOfficeVisitSummaryPlanOfCareActOrEncounter"),
+						 new Object [] { eObject }));
+				}
+				 
+			}
+			return oclResultSet.isEmpty();
+		}
+		return true;
+	}
+
+	/**
+	 * The cached OCL expression body for the '{@link #validateClinicalOfficeVisitSummaryInstructionsEntry(ClinicalOfficeVisitSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Clinical Office Visit Summary Instructions Entry</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateClinicalOfficeVisitSummaryInstructionsEntry(ClinicalOfficeVisitSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String VALIDATE_CLINICAL_OFFICE_VISIT_SUMMARY_INSTRUCTIONS_ENTRY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.retrieveInstructionsSection()->excluding(null)->reject(retrieveInstructionsSection().getActs()->exists(a : cda::Act | a.oclIsKindOf(consol::Instructions)))";
+
+	/**
+	 * The cached OCL invariant for the '{@link #validateClinicalOfficeVisitSummaryInstructionsEntry(ClinicalOfficeVisitSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Clinical Office Visit Summary Instructions Entry</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateClinicalOfficeVisitSummaryInstructionsEntry(ClinicalOfficeVisitSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+	
+	protected static Query<?, ?, ?> VALIDATE_CLINICAL_OFFICE_VISIT_SUMMARY_INSTRUCTIONS_ENTRY__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * self.retrieveInstructionsSection()->excluding(null)->reject(retrieveInstructionsSection().getActs()->exists(a : cda::Act | a.oclIsKindOf(consol::Instructions)))
+	 * @param clinicalOfficeVisitSummary The receiving '<em><b>Clinical Office Visit Summary</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
+	@SuppressWarnings("unchecked")
+	public static  boolean validateClinicalOfficeVisitSummaryInstructionsEntry(ClinicalOfficeVisitSummary clinicalOfficeVisitSummary, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
+		
+			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+			helper.setContext(Mu2consolPackage.Literals.CLINICAL_OFFICE_VISIT_SUMMARY);
+			try {
+				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_CLINICAL_OFFICE_VISIT_SUMMARY_INSTRUCTIONS_ENTRY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_CLINICAL_OFFICE_VISIT_SUMMARY_INSTRUCTIONS_ENTRY__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(oclExpression);
+			}
+			catch (ParserException pe) {
+				throw new UnsupportedOperationException(pe.getLocalizedMessage());
+			}
+		
+		Object oclResult = VALIDATE_CLINICAL_OFFICE_VISIT_SUMMARY_INSTRUCTIONS_ENTRY__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(clinicalOfficeVisitSummary);		
+		if (oclResult != null && oclResult instanceof Collection) {
+			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
+  			
+			if (diagnostics != null) {
+				for (EObject eObject : oclResultSet) {
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 Mu2consolValidator.DIAGNOSTIC_SOURCE,
+						 Mu2consolValidator.CLINICAL_OFFICE_VISIT_SUMMARY__CLINICAL_OFFICE_VISIT_SUMMARY_INSTRUCTIONS_ENTRY,
+						 Mu2consolPlugin.INSTANCE.getString("ClinicalOfficeVisitSummaryInstructionsEntry"),
+						 new Object [] { eObject }));
+				}
+				 
+			}
+			return oclResultSet.isEmpty();
+		}
+		return true;
+	}
+
+	/**
+	 * The cached OCL expression body for the '{@link #validateClinicalOfficeVisitSummaryMedicationsAdministeredEntry(ClinicalOfficeVisitSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Clinical Office Visit Summary Medications Administered Entry</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateClinicalOfficeVisitSummaryMedicationsAdministeredEntry(ClinicalOfficeVisitSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String VALIDATE_CLINICAL_OFFICE_VISIT_SUMMARY_MEDICATIONS_ADMINISTERED_ENTRY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.retrieveMedicationsAdministeredSection()->excluding(null)->reject(retrieveMedicationsAdministeredSection().getSubstanceAdministrations()->exists(sa : cda::SubstanceAdministration | sa.oclIsKindOf(consol::MedicationActivity)))";
+
+	/**
+	 * The cached OCL invariant for the '{@link #validateClinicalOfficeVisitSummaryMedicationsAdministeredEntry(ClinicalOfficeVisitSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Clinical Office Visit Summary Medications Administered Entry</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateClinicalOfficeVisitSummaryMedicationsAdministeredEntry(ClinicalOfficeVisitSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+	
+	protected static Query<?, ?, ?> VALIDATE_CLINICAL_OFFICE_VISIT_SUMMARY_MEDICATIONS_ADMINISTERED_ENTRY__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * self.retrieveMedicationsAdministeredSection()->excluding(null)->reject(retrieveMedicationsAdministeredSection().getSubstanceAdministrations()->exists(sa : cda::SubstanceAdministration | sa.oclIsKindOf(consol::MedicationActivity)))
+	 * @param clinicalOfficeVisitSummary The receiving '<em><b>Clinical Office Visit Summary</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
+	@SuppressWarnings("unchecked")
+	public static  boolean validateClinicalOfficeVisitSummaryMedicationsAdministeredEntry(ClinicalOfficeVisitSummary clinicalOfficeVisitSummary, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
+		
+			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+			helper.setContext(Mu2consolPackage.Literals.CLINICAL_OFFICE_VISIT_SUMMARY);
+			try {
+				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_CLINICAL_OFFICE_VISIT_SUMMARY_MEDICATIONS_ADMINISTERED_ENTRY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_CLINICAL_OFFICE_VISIT_SUMMARY_MEDICATIONS_ADMINISTERED_ENTRY__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(oclExpression);
+			}
+			catch (ParserException pe) {
+				throw new UnsupportedOperationException(pe.getLocalizedMessage());
+			}
+		
+		Object oclResult = VALIDATE_CLINICAL_OFFICE_VISIT_SUMMARY_MEDICATIONS_ADMINISTERED_ENTRY__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(clinicalOfficeVisitSummary);		
+		if (oclResult != null && oclResult instanceof Collection) {
+			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
+  			
+			if (diagnostics != null) {
+				for (EObject eObject : oclResultSet) {
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 Mu2consolValidator.DIAGNOSTIC_SOURCE,
+						 Mu2consolValidator.CLINICAL_OFFICE_VISIT_SUMMARY__CLINICAL_OFFICE_VISIT_SUMMARY_MEDICATIONS_ADMINISTERED_ENTRY,
+						 Mu2consolPlugin.INSTANCE.getString("ClinicalOfficeVisitSummaryMedicationsAdministeredEntry"),
 						 new Object [] { eObject }));
 				}
 				 
@@ -1252,7 +1386,7 @@ public class ClinicalOfficeVisitSummaryOperations extends
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_CLINICAL_OFFICE_VISIT_SUMMARY_MEDICATIONS_ADMINISTERED_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(mu2consol::MedicationsAdministeredSection))";
+	protected static final String VALIDATE_CLINICAL_OFFICE_VISIT_SUMMARY_MEDICATIONS_ADMINISTERED_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::MedicationsAdministeredSection))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateClinicalOfficeVisitSummaryMedicationsAdministeredSection(ClinicalOfficeVisitSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Clinical Office Visit Summary Medications Administered Section</em>}' invariant operation.
@@ -1318,7 +1452,7 @@ public class ClinicalOfficeVisitSummaryOperations extends
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_CLINICAL_OFFICE_VISIT_SUMMARY_INSTRUCTIONS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(mu2consol::InstructionsSection))";
+	protected static final String VALIDATE_CLINICAL_OFFICE_VISIT_SUMMARY_INSTRUCTIONS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::InstructionsSection))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateClinicalOfficeVisitSummaryInstructionsSection(ClinicalOfficeVisitSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Clinical Office Visit Summary Instructions Section</em>}' invariant operation.
@@ -1558,7 +1692,7 @@ public class ClinicalOfficeVisitSummaryOperations extends
 			ClinicalOfficeVisitSummary clinicalOfficeVisitSummary) {
 		if (RETRIEVE_PLAN_OF_CARE_SECTION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(Mu2consolPackage.Literals.CLINICAL_OFFICE_VISIT_SUMMARY, Mu2consolPackage.Literals.CLINICAL_OFFICE_VISIT_SUMMARY.getEAllOperations().get(323));
+			helper.setOperationContext(Mu2consolPackage.Literals.CLINICAL_OFFICE_VISIT_SUMMARY, Mu2consolPackage.Literals.CLINICAL_OFFICE_VISIT_SUMMARY.getEAllOperations().get(321));
 			try {
 				RETRIEVE_PLAN_OF_CARE_SECTION__EOCL_QRY = helper.createQuery(RETRIEVE_PLAN_OF_CARE_SECTION__EOCL_EXP);
 			}
@@ -1568,6 +1702,56 @@ public class ClinicalOfficeVisitSummaryOperations extends
 		}
 		OCL.Query query = EOCL_ENV.createQuery(RETRIEVE_PLAN_OF_CARE_SECTION__EOCL_QRY);
 		return (PlanOfCareSection) query.evaluate(clinicalOfficeVisitSummary);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::InstructionsSection))->asSequence()->any(true).oclAsType(consol::InstructionsSection)
+	 * @param clinicalOfficeVisitSummary The receiving '<em><b>Clinical Office Visit Summary</b></em>' model object.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
+	
+	public static  InstructionsSection retrieveInstructionsSection(ClinicalOfficeVisitSummary clinicalOfficeVisitSummary) {
+		if (RETRIEVE_INSTRUCTIONS_SECTION__EOCL_QRY == null) {
+			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+			helper.setOperationContext(Mu2consolPackage.Literals.CLINICAL_OFFICE_VISIT_SUMMARY, Mu2consolPackage.Literals.CLINICAL_OFFICE_VISIT_SUMMARY.getEAllOperations().get(322));
+			try {
+				RETRIEVE_INSTRUCTIONS_SECTION__EOCL_QRY = helper.createQuery(RETRIEVE_INSTRUCTIONS_SECTION__EOCL_EXP);
+			}
+			catch (ParserException pe) {
+				throw new UnsupportedOperationException(pe.getLocalizedMessage());
+			}
+		}
+		OCL.Query query = EOCL_ENV.createQuery(RETRIEVE_INSTRUCTIONS_SECTION__EOCL_QRY);
+		return (InstructionsSection) query.evaluate(clinicalOfficeVisitSummary);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::MedicationsAdministeredSection))->asSequence()->any(true).oclAsType(consol::MedicationsAdministeredSection)
+	 * @param clinicalOfficeVisitSummary The receiving '<em><b>Clinical Office Visit Summary</b></em>' model object.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
+	
+	public static  MedicationsAdministeredSection retrieveMedicationsAdministeredSection(ClinicalOfficeVisitSummary clinicalOfficeVisitSummary) {
+		if (RETRIEVE_MEDICATIONS_ADMINISTERED_SECTION__EOCL_QRY == null) {
+			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+			helper.setOperationContext(Mu2consolPackage.Literals.CLINICAL_OFFICE_VISIT_SUMMARY, Mu2consolPackage.Literals.CLINICAL_OFFICE_VISIT_SUMMARY.getEAllOperations().get(323));
+			try {
+				RETRIEVE_MEDICATIONS_ADMINISTERED_SECTION__EOCL_QRY = helper.createQuery(RETRIEVE_MEDICATIONS_ADMINISTERED_SECTION__EOCL_EXP);
+			}
+			catch (ParserException pe) {
+				throw new UnsupportedOperationException(pe.getLocalizedMessage());
+			}
+		}
+		OCL.Query query = EOCL_ENV.createQuery(RETRIEVE_MEDICATIONS_ADMINISTERED_SECTION__EOCL_QRY);
+		return (MedicationsAdministeredSection) query.evaluate(clinicalOfficeVisitSummary);
 	}
 
 	/**
@@ -1634,151 +1818,6 @@ public class ClinicalOfficeVisitSummaryOperations extends
 						 Mu2consolValidator.DIAGNOSTIC_SOURCE,
 						 Mu2consolValidator.CLINICAL_OFFICE_VISIT_SUMMARY__CLINICAL_OFFICE_VISIT_SUMMARY_PLAN_OF_CARE_SECTION_TEMPLATE_ID,
 						 Mu2consolPlugin.INSTANCE.getString("ClinicalOfficeVisitSummaryPlanOfCareSectionTemplateId"),
-						 new Object [] { eObject }));
-				}
-				 
-			}
-			return oclResultSet.isEmpty();
-		}
-		return true;
-	}
-
-	/**
-	 * The cached OCL expression body for the '{@link #validateClinicalOfficeVisitSummaryMedicationsAdministeredSectionTemplateId(ClinicalOfficeVisitSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Clinical Office Visit Summary Medications Administered Section Template Id</em>}' operation.
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @see #validateClinicalOfficeVisitSummaryMedicationsAdministeredSectionTemplateId(ClinicalOfficeVisitSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
-	protected static final String VALIDATE_CLINICAL_OFFICE_VISIT_SUMMARY_MEDICATIONS_ADMINISTERED_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.getMedicationsAdministeredSection()->excluding(null)->reject(getMedicationsAdministeredSection().templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.22.2.38'))";
-
-	/**
-	 * The cached OCL invariant for the '{@link #validateClinicalOfficeVisitSummaryMedicationsAdministeredSectionTemplateId(ClinicalOfficeVisitSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Clinical Office Visit Summary Medications Administered Section Template Id</em>}' invariant operation.
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @see #validateClinicalOfficeVisitSummaryMedicationsAdministeredSectionTemplateId(ClinicalOfficeVisitSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
-
-	protected static Query<?, ?, ?> VALIDATE_CLINICAL_OFFICE_VISIT_SUMMARY_MEDICATIONS_ADMINISTERED_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY;
-
-	/**
-	 * <!-- begin-user-doc --> <!-- end-user-doc --> <!-- begin-model-doc -->
-	 * self.getMedicationsAdministeredSection()->excluding(null)->reject(
-	 * getMedicationsAdministeredSection().templateId->exists(id : datatypes::II
-	 * | id.root = '2.16.840.1.113883.10.20.22.2.38'))
-	 * 
-	 * @param clinicalOfficeVisitSummary
-	 *            The receiving '<em><b>Clinical Office Visit Summary</b></em>'
-	 *            model object.
-	 * @param diagnostics
-	 *            The chain of diagnostics to which problems are to be appended.
-	 * @param context
-	 *            The cache of context-specific information. <!-- end-model-doc
-	 *            -->
-	 * @generated
-	 */
-	@SuppressWarnings("unchecked")
-	public static boolean validateClinicalOfficeVisitSummaryMedicationsAdministeredSectionTemplateId(
-			ClinicalOfficeVisitSummary clinicalOfficeVisitSummary,
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
-		
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setContext(Mu2consolPackage.Literals.CLINICAL_OFFICE_VISIT_SUMMARY);
-			try {
-				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_CLINICAL_OFFICE_VISIT_SUMMARY_MEDICATIONS_ADMINISTERED_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-				VALIDATE_CLINICAL_OFFICE_VISIT_SUMMARY_MEDICATIONS_ADMINISTERED_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(oclExpression);
-			}
-			catch (ParserException pe) {
-				throw new UnsupportedOperationException(pe.getLocalizedMessage());
-			}
-		
-		Object oclResult = VALIDATE_CLINICAL_OFFICE_VISIT_SUMMARY_MEDICATIONS_ADMINISTERED_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(clinicalOfficeVisitSummary);		
-		if (oclResult != null && oclResult instanceof Collection) {
-			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
-  			
-			if (diagnostics != null) {
-				for (EObject eObject : oclResultSet) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 Mu2consolValidator.DIAGNOSTIC_SOURCE,
-						 Mu2consolValidator.CLINICAL_OFFICE_VISIT_SUMMARY__CLINICAL_OFFICE_VISIT_SUMMARY_MEDICATIONS_ADMINISTERED_SECTION_TEMPLATE_ID,
-						 Mu2consolPlugin.INSTANCE.getString("ClinicalOfficeVisitSummaryMedicationsAdministeredSectionTemplateId"),
-						 new Object [] { eObject }));
-				}
-				 
-			}
-			return oclResultSet.isEmpty();
-		}
-		return true;
-	}
-
-	/**
-	 * The cached OCL expression body for the '{@link #validateClinicalOfficeVisitSummaryMu2consolMedicationsAdministeredSectionMedicationActivity(ClinicalOfficeVisitSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Clinical Office Visit Summary Mu2consol Medications Administered Section Medication Activity</em>}' operation.
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @see #validateClinicalOfficeVisitSummaryMu2consolMedicationsAdministeredSectionMedicationActivity(ClinicalOfficeVisitSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
-	protected static final String VALIDATE_CLINICAL_OFFICE_VISIT_SUMMARY_MU2CONSOL_MEDICATIONS_ADMINISTERED_SECTION_MEDICATION_ACTIVITY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.getMedicationsAdministeredSection()->excluding(null)->reject(getMedicationsAdministeredSection().entry->exists(entry : cda::Entry | not entry.substanceAdministration.oclIsUndefined() and entry.substanceAdministration.oclIsKindOf(consol::MedicationActivity)))";
-
-	/**
-	 * The cached OCL invariant for the '{@link #validateClinicalOfficeVisitSummaryMu2consolMedicationsAdministeredSectionMedicationActivity(ClinicalOfficeVisitSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Clinical Office Visit Summary Mu2consol Medications Administered Section Medication Activity</em>}' invariant operation.
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @see #validateClinicalOfficeVisitSummaryMu2consolMedicationsAdministeredSectionMedicationActivity(ClinicalOfficeVisitSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
-
-	protected static Query<?, ?, ?> VALIDATE_CLINICAL_OFFICE_VISIT_SUMMARY_MU2CONSOL_MEDICATIONS_ADMINISTERED_SECTION_MEDICATION_ACTIVITY__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY;
-
-	/**
-	 * <!-- begin-user-doc --> <!-- end-user-doc --> <!-- begin-model-doc -->
-	 * self.getMedicationsAdministeredSection()->excluding(null)->reject(
-	 * getMedicationsAdministeredSection().entry->exists(entry : cda::Entry |
-	 * not entry.substanceAdministration.oclIsUndefined() and
-	 * entry.substanceAdministration.oclIsKindOf(consol::MedicationActivity)))
-	 * 
-	 * @param clinicalOfficeVisitSummary
-	 *            The receiving '<em><b>Clinical Office Visit Summary</b></em>'
-	 *            model object.
-	 * @param diagnostics
-	 *            The chain of diagnostics to which problems are to be appended.
-	 * @param context
-	 *            The cache of context-specific information. <!-- end-model-doc
-	 *            -->
-	 * @generated
-	 */
-	@SuppressWarnings("unchecked")
-	public static boolean validateClinicalOfficeVisitSummaryMu2consolMedicationsAdministeredSectionMedicationActivity(
-			ClinicalOfficeVisitSummary clinicalOfficeVisitSummary,
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
-		
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setContext(Mu2consolPackage.Literals.CLINICAL_OFFICE_VISIT_SUMMARY);
-			try {
-				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_CLINICAL_OFFICE_VISIT_SUMMARY_MU2CONSOL_MEDICATIONS_ADMINISTERED_SECTION_MEDICATION_ACTIVITY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-				VALIDATE_CLINICAL_OFFICE_VISIT_SUMMARY_MU2CONSOL_MEDICATIONS_ADMINISTERED_SECTION_MEDICATION_ACTIVITY__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(oclExpression);
-			}
-			catch (ParserException pe) {
-				throw new UnsupportedOperationException(pe.getLocalizedMessage());
-			}
-		
-		Object oclResult = VALIDATE_CLINICAL_OFFICE_VISIT_SUMMARY_MU2CONSOL_MEDICATIONS_ADMINISTERED_SECTION_MEDICATION_ACTIVITY__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(clinicalOfficeVisitSummary);		
-		if (oclResult != null && oclResult instanceof Collection) {
-			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
-  			
-			if (diagnostics != null) {
-				for (EObject eObject : oclResultSet) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 Mu2consolValidator.DIAGNOSTIC_SOURCE,
-						 Mu2consolValidator.CLINICAL_OFFICE_VISIT_SUMMARY__CLINICAL_OFFICE_VISIT_SUMMARY_MU2CONSOL_MEDICATIONS_ADMINISTERED_SECTION_MEDICATION_ACTIVITY,
-						 Mu2consolPlugin.INSTANCE.getString("ClinicalOfficeVisitSummaryMu2consolMedicationsAdministeredSectionMedicationActivity"),
 						 new Object [] { eObject }));
 				}
 				 
@@ -1861,151 +1900,6 @@ public class ClinicalOfficeVisitSummaryOperations extends
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #validateClinicalOfficeVisitSummaryInstructionsSectionTemplateId(ClinicalOfficeVisitSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Clinical Office Visit Summary Instructions Section Template Id</em>}' operation.
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @see #validateClinicalOfficeVisitSummaryInstructionsSectionTemplateId(ClinicalOfficeVisitSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
-	protected static final String VALIDATE_CLINICAL_OFFICE_VISIT_SUMMARY_INSTRUCTIONS_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.getInstructionsSection()->excluding(null)->reject(getInstructionsSection().templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.22.2.45'))";
-
-	/**
-	 * The cached OCL invariant for the '{@link #validateClinicalOfficeVisitSummaryInstructionsSectionTemplateId(ClinicalOfficeVisitSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Clinical Office Visit Summary Instructions Section Template Id</em>}' invariant operation.
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @see #validateClinicalOfficeVisitSummaryInstructionsSectionTemplateId(ClinicalOfficeVisitSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
-
-	protected static Query<?, ?, ?> VALIDATE_CLINICAL_OFFICE_VISIT_SUMMARY_INSTRUCTIONS_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY;
-
-	/**
-	 * <!-- begin-user-doc --> <!-- end-user-doc --> <!-- begin-model-doc -->
-	 * self.getInstructionsSection()->excluding(null)->reject(
-	 * getInstructionsSection().templateId->exists(id : datatypes::II | id.root
-	 * = 'null'))
-	 * 
-	 * @param clinicalOfficeVisitSummary
-	 *            The receiving '<em><b>Clinical Office Visit Summary</b></em>'
-	 *            model object.
-	 * @param diagnostics
-	 *            The chain of diagnostics to which problems are to be appended.
-	 * @param context
-	 *            The cache of context-specific information. <!-- end-model-doc
-	 *            -->
-	 * @generated
-	 */
-	@SuppressWarnings("unchecked")
-	public static boolean validateClinicalOfficeVisitSummaryInstructionsSectionTemplateId(
-			ClinicalOfficeVisitSummary clinicalOfficeVisitSummary,
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
-		
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setContext(Mu2consolPackage.Literals.CLINICAL_OFFICE_VISIT_SUMMARY);
-			try {
-				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_CLINICAL_OFFICE_VISIT_SUMMARY_INSTRUCTIONS_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-				VALIDATE_CLINICAL_OFFICE_VISIT_SUMMARY_INSTRUCTIONS_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(oclExpression);
-			}
-			catch (ParserException pe) {
-				throw new UnsupportedOperationException(pe.getLocalizedMessage());
-			}
-		
-		Object oclResult = VALIDATE_CLINICAL_OFFICE_VISIT_SUMMARY_INSTRUCTIONS_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(clinicalOfficeVisitSummary);		
-		if (oclResult != null && oclResult instanceof Collection) {
-			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
-  			
-			if (diagnostics != null) {
-				for (EObject eObject : oclResultSet) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 Mu2consolValidator.DIAGNOSTIC_SOURCE,
-						 Mu2consolValidator.CLINICAL_OFFICE_VISIT_SUMMARY__CLINICAL_OFFICE_VISIT_SUMMARY_INSTRUCTIONS_SECTION_TEMPLATE_ID,
-						 Mu2consolPlugin.INSTANCE.getString("ClinicalOfficeVisitSummaryInstructionsSectionTemplateId"),
-						 new Object [] { eObject }));
-				}
-				 
-			}
-			return oclResultSet.isEmpty();
-		}
-		return true;
-	}
-
-	/**
-	 * The cached OCL expression body for the '{@link #validateClinicalOfficeVisitSummaryMu2consolInstructionsSectionInstructions(ClinicalOfficeVisitSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Clinical Office Visit Summary Mu2consol Instructions Section Instructions</em>}' operation.
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @see #validateClinicalOfficeVisitSummaryMu2consolInstructionsSectionInstructions(ClinicalOfficeVisitSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
-	protected static final String VALIDATE_CLINICAL_OFFICE_VISIT_SUMMARY_MU2CONSOL_INSTRUCTIONS_SECTION_INSTRUCTIONS__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.getInstructionsSection()->excluding(null)->reject(getInstructionsSection().entry->exists(entry : cda::Entry | not entry.act.oclIsUndefined() and entry.act.oclIsKindOf(consol::Instructions)))";
-
-	/**
-	 * The cached OCL invariant for the '{@link #validateClinicalOfficeVisitSummaryMu2consolInstructionsSectionInstructions(ClinicalOfficeVisitSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Clinical Office Visit Summary Mu2consol Instructions Section Instructions</em>}' invariant operation.
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @see #validateClinicalOfficeVisitSummaryMu2consolInstructionsSectionInstructions(ClinicalOfficeVisitSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
-
-	protected static Query<?, ?, ?> VALIDATE_CLINICAL_OFFICE_VISIT_SUMMARY_MU2CONSOL_INSTRUCTIONS_SECTION_INSTRUCTIONS__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY;
-
-	/**
-	 * <!-- begin-user-doc --> <!-- end-user-doc --> <!-- begin-model-doc -->
-	 * self.getInstructionsSection()->excluding(null)->reject(
-	 * getInstructionsSection().entry->exists(entry : cda::Entry | not
-	 * entry.act.oclIsUndefined() and
-	 * entry.act.oclIsKindOf(consol::Instructions)))
-	 * 
-	 * @param clinicalOfficeVisitSummary
-	 *            The receiving '<em><b>Clinical Office Visit Summary</b></em>'
-	 *            model object.
-	 * @param diagnostics
-	 *            The chain of diagnostics to which problems are to be appended.
-	 * @param context
-	 *            The cache of context-specific information. <!-- end-model-doc
-	 *            -->
-	 * @generated
-	 */
-	@SuppressWarnings("unchecked")
-	public static boolean validateClinicalOfficeVisitSummaryMu2consolInstructionsSectionInstructions(
-			ClinicalOfficeVisitSummary clinicalOfficeVisitSummary,
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
-		
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setContext(Mu2consolPackage.Literals.CLINICAL_OFFICE_VISIT_SUMMARY);
-			try {
-				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_CLINICAL_OFFICE_VISIT_SUMMARY_MU2CONSOL_INSTRUCTIONS_SECTION_INSTRUCTIONS__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-				VALIDATE_CLINICAL_OFFICE_VISIT_SUMMARY_MU2CONSOL_INSTRUCTIONS_SECTION_INSTRUCTIONS__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(oclExpression);
-			}
-			catch (ParserException pe) {
-				throw new UnsupportedOperationException(pe.getLocalizedMessage());
-			}
-		
-		Object oclResult = VALIDATE_CLINICAL_OFFICE_VISIT_SUMMARY_MU2CONSOL_INSTRUCTIONS_SECTION_INSTRUCTIONS__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(clinicalOfficeVisitSummary);		
-		if (oclResult != null && oclResult instanceof Collection) {
-			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
-  			
-			if (diagnostics != null) {
-				for (EObject eObject : oclResultSet) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 Mu2consolValidator.DIAGNOSTIC_SOURCE,
-						 Mu2consolValidator.CLINICAL_OFFICE_VISIT_SUMMARY__CLINICAL_OFFICE_VISIT_SUMMARY_MU2CONSOL_INSTRUCTIONS_SECTION_INSTRUCTIONS,
-						 Mu2consolPlugin.INSTANCE.getString("ClinicalOfficeVisitSummaryMu2consolInstructionsSectionInstructions"),
-						 new Object [] { eObject }));
-				}
-				 
-			}
-			return oclResultSet.isEmpty();
-		}
-		return true;
-	}
-
-	/**
 	 * The cached OCL expression body for the '{@link #validateClinicalOfficeVisitSummarySocialHistorySectionTemplateId(ClinicalOfficeVisitSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Clinical Office Visit Summary Social History Section Template Id</em>}' operation.
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @see #validateClinicalOfficeVisitSummarySocialHistorySectionTemplateId(ClinicalOfficeVisitSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
@@ -2064,6 +1958,46 @@ public class ClinicalOfficeVisitSummaryOperations extends
 	 * @ordered
 	 */
 	protected static OCLExpression<EClassifier> RETRIEVE_PLAN_OF_CARE_SECTION__EOCL_QRY;
+
+	/**
+	 * The cached OCL expression body for the '{@link #retrieveInstructionsSection(ClinicalOfficeVisitSummary) <em>Retrieve Instructions Section</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #retrieveInstructionsSection(ClinicalOfficeVisitSummary)
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String RETRIEVE_INSTRUCTIONS_SECTION__EOCL_EXP = "self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::InstructionsSection))->asSequence()->any(true).oclAsType(consol::InstructionsSection)";
+
+	/**
+	 * The cached OCL query for the '{@link #retrieveInstructionsSection(ClinicalOfficeVisitSummary) <em>Retrieve Instructions Section</em>}' query operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #retrieveInstructionsSection(ClinicalOfficeVisitSummary)
+	 * @generated
+	 * @ordered
+	 */
+	protected static OCLExpression<EClassifier> RETRIEVE_INSTRUCTIONS_SECTION__EOCL_QRY;
+
+	/**
+	 * The cached OCL expression body for the '{@link #retrieveMedicationsAdministeredSection(ClinicalOfficeVisitSummary) <em>Retrieve Medications Administered Section</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #retrieveMedicationsAdministeredSection(ClinicalOfficeVisitSummary)
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String RETRIEVE_MEDICATIONS_ADMINISTERED_SECTION__EOCL_EXP = "self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::MedicationsAdministeredSection))->asSequence()->any(true).oclAsType(consol::MedicationsAdministeredSection)";
+
+	/**
+	 * The cached OCL query for the '{@link #retrieveMedicationsAdministeredSection(ClinicalOfficeVisitSummary) <em>Retrieve Medications Administered Section</em>}' query operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #retrieveMedicationsAdministeredSection(ClinicalOfficeVisitSummary)
+	 * @generated
+	 * @ordered
+	 */
+	protected static OCLExpression<EClassifier> RETRIEVE_MEDICATIONS_ADMINISTERED_SECTION__EOCL_QRY;
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc --> <!-- begin-model-doc -->
@@ -2496,7 +2430,7 @@ public class ClinicalOfficeVisitSummaryOperations extends
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String GET_MEDICATIONS_ADMINISTERED_SECTION__EOCL_EXP = "self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(mu2consol::MedicationsAdministeredSection))->asSequence()->any(true).oclAsType(mu2consol::MedicationsAdministeredSection)";
+	protected static final String GET_MEDICATIONS_ADMINISTERED_SECTION__EOCL_EXP = "self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::MedicationsAdministeredSection))->asSequence()->any(true).oclAsType(consol::MedicationsAdministeredSection)";
 
 	/**
 	 * The cached OCL query for the '
@@ -2750,7 +2684,7 @@ public class ClinicalOfficeVisitSummaryOperations extends
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String GET_INSTRUCTIONS_SECTION__EOCL_EXP = "self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(mu2consol::InstructionsSection))->asSequence()->any(true).oclAsType(mu2consol::InstructionsSection)";
+	protected static final String GET_INSTRUCTIONS_SECTION__EOCL_EXP = "self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::InstructionsSection))->asSequence()->any(true).oclAsType(consol::InstructionsSection)";
 
 	/**
 	 * The cached OCL query for the '{@link #getInstructionsSection(ClinicalOfficeVisitSummary) <em>Get Instructions Section</em>}' query operation.

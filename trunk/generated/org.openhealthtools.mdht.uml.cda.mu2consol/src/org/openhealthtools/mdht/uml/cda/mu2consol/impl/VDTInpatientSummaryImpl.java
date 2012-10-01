@@ -20,8 +20,10 @@ import org.openhealthtools.mdht.emf.runtime.util.Initializer;
 import org.openhealthtools.mdht.uml.cda.consol.ChiefComplaintAndReasonForVisitSection;
 import org.openhealthtools.mdht.uml.cda.consol.ChiefComplaintSection;
 import org.openhealthtools.mdht.uml.cda.consol.HospitalAdmissionDiagnosisSection;
+import org.openhealthtools.mdht.uml.cda.consol.HospitalAdmissionMedicationsSectionEntriesOptional;
 import org.openhealthtools.mdht.uml.cda.consol.HospitalDischargeInstructionsSection;
 import org.openhealthtools.mdht.uml.cda.consol.HospitalDischargeMedicationsSection;
+import org.openhealthtools.mdht.uml.cda.consol.PreoperativeDiagnosisSection;
 import org.openhealthtools.mdht.uml.cda.consol.ReasonForVisitSection;
 
 import org.openhealthtools.mdht.uml.cda.mu2consol.Mu2consolPackage;
@@ -90,6 +92,15 @@ public class VDTInpatientSummaryImpl extends ViewDownloadTransmitSummaryImpl
 	public boolean validateVDTInpatientSummaryHospitalAdmissionDiagnosisEntry(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return VDTInpatientSummaryOperations.validateVDTInpatientSummaryHospitalAdmissionDiagnosisEntry(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateVDTInpatientSummaryPreoperativeDiagnosisEntry(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return VDTInpatientSummaryOperations.validateVDTInpatientSummaryPreoperativeDiagnosisEntry(this, diagnostics, context);
 	}
 
 	/**
@@ -165,6 +176,24 @@ public class VDTInpatientSummaryImpl extends ViewDownloadTransmitSummaryImpl
 	 */
 	public HospitalDischargeMedicationsSection getHospitalDischargeMedicationsSection() {
 		return VDTInpatientSummaryOperations.getHospitalDischargeMedicationsSection(this);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public PreoperativeDiagnosisSection getPreoperativeDiagnosisSection() {
+		return VDTInpatientSummaryOperations.getPreoperativeDiagnosisSection(this);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public HospitalAdmissionMedicationsSectionEntriesOptional getHospitalAdmissionMedicationsSectionEntriesOptional() {
+		return VDTInpatientSummaryOperations.getHospitalAdmissionMedicationsSectionEntriesOptional(this);
 	}
 
 	/**

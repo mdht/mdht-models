@@ -172,26 +172,6 @@ public class Mu2consolSwitch<T> {
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case Mu2consolPackage.PREOPERATIVE_DIAGNOSIS_SECTION: {
-				PreoperativeDiagnosisSection preoperativeDiagnosisSection = (PreoperativeDiagnosisSection)theEObject;
-				T result = casePreoperativeDiagnosisSection(preoperativeDiagnosisSection);
-				if (result == null) result = caseConsol_PreoperativeDiagnosisSection(preoperativeDiagnosisSection);
-				if (result == null) result = caseSection(preoperativeDiagnosisSection);
-				if (result == null) result = caseAct(preoperativeDiagnosisSection);
-				if (result == null) result = caseInfrastructureRoot(preoperativeDiagnosisSection);
-				if (result == null) result = defaultCase(theEObject);
-				return result;
-			}
-			case Mu2consolPackage.HOSPITAL_ADMISSION_MEDICATIONS_SECTION_ENTRIES_OPTIONAL: {
-				HospitalAdmissionMedicationsSectionEntriesOptional hospitalAdmissionMedicationsSectionEntriesOptional = (HospitalAdmissionMedicationsSectionEntriesOptional)theEObject;
-				T result = caseHospitalAdmissionMedicationsSectionEntriesOptional(hospitalAdmissionMedicationsSectionEntriesOptional);
-				if (result == null) result = caseConsol_HospitalAdmissionMedicationsSectionEntriesOptional(hospitalAdmissionMedicationsSectionEntriesOptional);
-				if (result == null) result = caseSection(hospitalAdmissionMedicationsSectionEntriesOptional);
-				if (result == null) result = caseAct(hospitalAdmissionMedicationsSectionEntriesOptional);
-				if (result == null) result = caseInfrastructureRoot(hospitalAdmissionMedicationsSectionEntriesOptional);
-				if (result == null) result = defaultCase(theEObject);
-				return result;
-			}
 			case Mu2consolPackage.SOCIAL_HISTORY_SECTION: {
 				SocialHistorySection socialHistorySection = (SocialHistorySection)theEObject;
 				T result = caseSocialHistorySection(socialHistorySection);
@@ -265,26 +245,6 @@ public class Mu2consolSwitch<T> {
 				if (result == null) result = caseClinicalStatement(procedureActivityProcedure);
 				if (result == null) result = caseAct(procedureActivityProcedure);
 				if (result == null) result = caseInfrastructureRoot(procedureActivityProcedure);
-				if (result == null) result = defaultCase(theEObject);
-				return result;
-			}
-			case Mu2consolPackage.INSTRUCTIONS_SECTION: {
-				InstructionsSection instructionsSection = (InstructionsSection)theEObject;
-				T result = caseInstructionsSection(instructionsSection);
-				if (result == null) result = caseConsol_InstructionsSection(instructionsSection);
-				if (result == null) result = caseSection(instructionsSection);
-				if (result == null) result = caseAct(instructionsSection);
-				if (result == null) result = caseInfrastructureRoot(instructionsSection);
-				if (result == null) result = defaultCase(theEObject);
-				return result;
-			}
-			case Mu2consolPackage.MEDICATIONS_ADMINISTERED_SECTION: {
-				MedicationsAdministeredSection medicationsAdministeredSection = (MedicationsAdministeredSection)theEObject;
-				T result = caseMedicationsAdministeredSection(medicationsAdministeredSection);
-				if (result == null) result = caseConsol_MedicationsAdministeredSection(medicationsAdministeredSection);
-				if (result == null) result = caseSection(medicationsAdministeredSection);
-				if (result == null) result = caseAct(medicationsAdministeredSection);
-				if (result == null) result = caseInfrastructureRoot(medicationsAdministeredSection);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
@@ -447,20 +407,6 @@ public class Mu2consolSwitch<T> {
 	}
 
 	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Instructions Section</em>'.
-	 * <!-- begin-user-doc --> This
-	 * implementation returns null; returning a non-null result will terminate
-	 * the switch. <!-- end-user-doc -->
-	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Instructions Section</em>'.
-	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
-	 * @generated
-	 */
-	public T caseInstructionsSection(InstructionsSection object) {
-		return null;
-	}
-
-	/**
 	 * Returns the result of interpreting the object as an instance of '<em>Clinical Office Visit Summary</em>'.
 	 * <!-- begin-user-doc --> This
 	 * implementation returns null; returning a non-null result will terminate
@@ -613,55 +559,6 @@ public class Mu2consolSwitch<T> {
 	 * @generated
 	 */
 	public T caseResultsSection(ResultsSection object) {
-		return null;
-	}
-
-	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Preoperative Diagnosis Section</em>'.
-	 * <!-- begin-user-doc --> This
-	 * implementation returns null; returning a non-null result will terminate
-	 * the switch. <!-- end-user-doc -->
-	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Preoperative Diagnosis Section</em>'.
-	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
-	 * @generated
-	 */
-	public T casePreoperativeDiagnosisSection(
-			PreoperativeDiagnosisSection object) {
-		return null;
-	}
-
-	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Medications Administered Section</em>'.
-	 * <!-- begin-user-doc --> This
-	 * implementation returns null; returning a non-null result will terminate
-	 * the switch. <!-- end-user-doc -->
-	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Medications Administered Section</em>'.
-	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
-	 * @generated
-	 */
-	public T caseMedicationsAdministeredSection(
-			MedicationsAdministeredSection object) {
-		return null;
-	}
-
-	/**
-	 * Returns the result of interpreting the object as an instance of '
-	 * <em>Hospital Admission Medications Section Entries Optional</em>'. <!--
-	 * begin-user-doc --> This implementation returns null; returning a non-null
-	 * result will terminate the switch. <!-- end-user-doc -->
-	 * 
-	 * @param object
-	 *            the target of the switch.
-	 * @return the result of interpreting the object as an instance of '
-	 *         <em>Hospital Admission Medications Section Entries Optional</em>
-	 *         '.
-	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
-	 * @generated
-	 */
-	public T caseHospitalAdmissionMedicationsSectionEntriesOptional(
-			HospitalAdmissionMedicationsSectionEntriesOptional object) {
 		return null;
 	}
 
@@ -842,21 +739,6 @@ public class Mu2consolSwitch<T> {
 	}
 
 	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Instructions Section</em>'.
-	 * <!-- begin-user-doc --> This
-	 * implementation returns null; returning a non-null result will terminate
-	 * the switch. <!-- end-user-doc -->
-	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Instructions Section</em>'.
-	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
-	 * @generated
-	 */
-	public T caseConsol_InstructionsSection(
-			org.openhealthtools.mdht.uml.cda.consol.InstructionsSection object) {
-		return null;
-	}
-
-	/**
 	 * Returns the result of interpreting the object as an instance of '<em>Assessment Section</em>'.
 	 * <!-- begin-user-doc --> This implementation
 	 * returns null; returning a non-null result will terminate the switch. <!--
@@ -868,36 +750,6 @@ public class Mu2consolSwitch<T> {
 	 */
 	public T caseConsol_AssessmentSection(
 			org.openhealthtools.mdht.uml.cda.consol.AssessmentSection object) {
-		return null;
-	}
-
-	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Preoperative Diagnosis Section</em>'.
-	 * <!-- begin-user-doc --> This
-	 * implementation returns null; returning a non-null result will terminate
-	 * the switch. <!-- end-user-doc -->
-	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Preoperative Diagnosis Section</em>'.
-	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
-	 * @generated
-	 */
-	public T caseConsol_PreoperativeDiagnosisSection(
-			org.openhealthtools.mdht.uml.cda.consol.PreoperativeDiagnosisSection object) {
-		return null;
-	}
-
-	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Medications Administered Section</em>'.
-	 * <!-- begin-user-doc --> This
-	 * implementation returns null; returning a non-null result will terminate
-	 * the switch. <!-- end-user-doc -->
-	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Medications Administered Section</em>'.
-	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
-	 * @generated
-	 */
-	public T caseConsol_MedicationsAdministeredSection(
-			org.openhealthtools.mdht.uml.cda.consol.MedicationsAdministeredSection object) {
 		return null;
 	}
 
@@ -1031,25 +883,6 @@ public class Mu2consolSwitch<T> {
 	 */
 	public T caseConsol_ResultsSection(
 			org.openhealthtools.mdht.uml.cda.consol.ResultsSection object) {
-		return null;
-	}
-
-	/**
-	 * Returns the result of interpreting the object as an instance of '
-	 * <em>Hospital Admission Medications Section Entries Optional</em>'. <!--
-	 * begin-user-doc --> This implementation returns null; returning a non-null
-	 * result will terminate the switch. <!-- end-user-doc -->
-	 * 
-	 * @param object
-	 *            the target of the switch.
-	 * @return the result of interpreting the object as an instance of '
-	 *         <em>Hospital Admission Medications Section Entries Optional</em>
-	 *         '.
-	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
-	 * @generated
-	 */
-	public T caseConsol_HospitalAdmissionMedicationsSectionEntriesOptional(
-			org.openhealthtools.mdht.uml.cda.consol.HospitalAdmissionMedicationsSectionEntriesOptional object) {
 		return null;
 	}
 
