@@ -10,7 +10,6 @@
  *******************************************************************************/
 package org.openhealthtools.mdht.uml.cda.consol.impl;
 
-import java.lang.Iterable;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
@@ -680,17 +679,6 @@ public class ProcedureNoteImpl extends GeneralHeaderConstraintsImpl implements P
 	public boolean validateProcedureNoteDocumentationOfServiceEvent1EffectiveTimeNoHighIfWidth(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ProcedureNoteOperations.validateProcedureNoteDocumentationOfServiceEvent1EffectiveTimeNoHighIfWidth(
-			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateProcedureNoteDocumentationOfServiceEvent1AnyAssistantsAsSecondary(
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ProcedureNoteOperations.validateProcedureNoteDocumentationOfServiceEvent1AnyAssistantsAsSecondary(
 			this, diagnostics, context);
 	}
 

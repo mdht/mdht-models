@@ -74,7 +74,7 @@ with respect to the payer, so that the identifiers can be recorded.&#xD;
       <defaultValue xmi:type="uml:LiteralString" xmi:id="_oqctwDZZEeGUovy31cP2ng" value="ACT"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_UdHpMBUlEeGvPruliC3crg" name="code" visibility="private" aggregation="composite">
-      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_Z1EGIDxaEd6JwqSGecoePg"/>
+      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_0I3lMOWaEeGKmvzED_He2w" value="1"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_0I3lMeWaEeGKmvzED_He2w"/>
       <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_HUTHQEocEd6c3qsAxlFHaQ"/>
@@ -440,7 +440,7 @@ with respect to the payer, so that the identifiers can be recorded.&#xD;
       <defaultValue xmi:type="uml:LiteralString" xmi:id="_Skd4cDY1EeGUovy31cP2ng" value="ACT"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_FVBzQhUmEeGvPruliC3crg" name="code" visibility="private" aggregation="composite">
-      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_Z1EGIDxaEd6JwqSGecoePg"/>
+      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
       <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_HUTHQEocEd6c3qsAxlFHaQ"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_FVBzRBUmEeGvPruliC3crg" name="id" visibility="private" aggregation="composite">
