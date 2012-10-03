@@ -3350,9 +3350,7 @@ A History and Physical Examination is required upon hospital admission as well a
         <ownedRule xmi:id="_w0p5MD4nEeGtCLm-c2g23Q" name="anyAssistantsAsSecondary" constrainedElement="_1mJ2ID4jEeGhnL_c4sBHGg">
           <specification xmi:type="uml:OpaqueExpression" xmi:id="_8RuZcD4nEeGtCLm-c2g23Q">
             <language>Analysis</language>
-            <language>OCL</language>
             <body>Any assistants SHALL be identified and SHALL be identified as secondary performers (SPRF)</body>
-            <body>self.performer->forAll(typeCode = vocab::x_ServiceEventPerformer::PPRF or typeCode= vocab::x_ServiceEventPerformer::SPRF)</body>
           </specification>
         </ownedRule>
         <generalization xmi:id="_6IsNMD4jEeGhnL_c4sBHGg">
@@ -3831,9 +3829,7 @@ A History and Physical Examination is required upon hospital admission as well a
         <ownedRule xmi:id="_guPDYD-UEeGvOdejHZ7dYg" name="anyAssistantsAsSecondary" constrainedElement="_1mJ2ID4jEeGhnL_c4sBHGg">
           <specification xmi:type="uml:OpaqueExpression" xmi:id="_guPDYT-UEeGvOdejHZ7dYg">
             <language>Analysis</language>
-            <language>OCL</language>
             <body>Any assistants SHALL be identified and SHALL be identified as secondary performers (SPRF)</body>
-            <body>self.performer->forAll(typeCode = vocab::x_ServiceEventPerformer::PPRF or typeCode= vocab::x_ServiceEventPerformer::SPRF)</body>
           </specification>
         </ownedRule>
         <generalization xmi:id="_k7duQD-TEeGvOdejHZ7dYg">

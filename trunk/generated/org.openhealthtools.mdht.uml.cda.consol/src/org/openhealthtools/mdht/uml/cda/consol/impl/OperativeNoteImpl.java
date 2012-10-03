@@ -10,7 +10,6 @@
  *******************************************************************************/
 package org.openhealthtools.mdht.uml.cda.consol.impl;
 
-import java.lang.Iterable;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
@@ -344,17 +343,6 @@ public class OperativeNoteImpl extends GeneralHeaderConstraintsImpl implements O
 	public boolean validateOperativeNoteDocumentationOfServiceEventEffectiveTimeNoHighIfWidth(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return OperativeNoteOperations.validateOperativeNoteDocumentationOfServiceEventEffectiveTimeNoHighIfWidth(
-			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateOperativeNoteDocumentationOfServiceEventAnyAssistantsAsSecondary(
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return OperativeNoteOperations.validateOperativeNoteDocumentationOfServiceEventAnyAssistantsAsSecondary(
 			this, diagnostics, context);
 	}
 

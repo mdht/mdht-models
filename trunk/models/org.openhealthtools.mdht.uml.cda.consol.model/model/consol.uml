@@ -797,7 +797,7 @@
         <defaultValue xmi:type="uml:LiteralString" xmi:id="_Mk_VkOY6EeGINOJ_SD9_dA" value="EVN"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_aZZWEeY5EeGINOJ_SD9_dA" name="code" visibility="private" aggregation="composite">
-        <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_Z1EGIDxaEd6JwqSGecoePg"/>
+        <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
         <redefinedProperty href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_WEYp4Eo8Ed6c3qsAxlFHaQ"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_aZZWEuY5EeGINOJ_SD9_dA" name="id" visibility="private" aggregation="composite">
@@ -1198,7 +1198,7 @@ This is different from a cognitive status problem observation, which is a clinic
         <redefinedProperty href=".controlled/consol-results.uml#_2J5IQBSVEeGGzu7fmW9pXw"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_rPRcU-ZgEeGINOJ_SD9_dA" name="code" visibility="private">
-        <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_Z1EGIDxaEd6JwqSGecoePg"/>
+        <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
         <redefinedProperty href=".controlled/consol-results.uml#_2J1d6hSVEeGGzu7fmW9pXw"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_rPamROZgEeGINOJ_SD9_dA" name="text" visibility="private" aggregation="composite">
@@ -1326,7 +1326,7 @@ An appropriate nullFlavor can be used when the organizer/code or organizer/id is
         <redefinedProperty href=".controlled/consol-results.uml#_2JzBoxSVEeGGzu7fmW9pXw"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_Dku5YuZjEeGINOJ_SD9_dA" name="code" visibility="private" aggregation="composite">
-        <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_Z1EGIDxaEd6JwqSGecoePg"/>
+        <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Dku5Y-ZjEeGINOJ_SD9_dA" value="1"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Dku5ZOZjEeGINOJ_SD9_dA" value="1"/>
         <redefinedProperty href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_JKfJkErcEd6FXKclYGEDCw"/>
@@ -1615,7 +1615,7 @@ UNK.  If the code is something other than SNOMED, @nullFlavor SHOULD be OTH and 
         <redefinedProperty href=".controlled/consol-results.uml#_2J5IQBSVEeGGzu7fmW9pXw"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_nm5Ig-bxEeGINOJ_SD9_dA" name="code" visibility="private">
-        <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_Z1EGIDxaEd6JwqSGecoePg"/>
+        <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
         <redefinedProperty href=".controlled/consol-results.uml#_2J1d6hSVEeGGzu7fmW9pXw"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_nnC5hubxEeGINOJ_SD9_dA" name="text" visibility="private" aggregation="composite">
@@ -1737,7 +1737,7 @@ An appropriate nullFlavor can be used when the organizer/code or organizer/id is
         <redefinedProperty href=".controlled/consol-results.uml#_2JzBoxSVEeGGzu7fmW9pXw"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_A3Sj0Ob0EeGINOJ_SD9_dA" name="code" visibility="private" aggregation="composite">
-        <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_Z1EGIDxaEd6JwqSGecoePg"/>
+        <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_A3Sj0eb0EeGINOJ_SD9_dA" value="1"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_A3Sj0ub0EeGINOJ_SD9_dA" value="1"/>
         <redefinedProperty href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_JKfJkErcEd6FXKclYGEDCw"/>

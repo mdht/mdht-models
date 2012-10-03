@@ -6918,7 +6918,6 @@
       <details key="code.codeSystem" value="2.16.840.1.113883.6.1"/>
       <details key="code.codeSystemName" value="LOINC"/>
       <details key="code.displayName" value="History of medication use"/>
-      <details key="title.mixed" value="Medications"/>
     </eAnnotations>
     <eAnnotations source="duplicates">
       <contents xsi:type="ecore:EOperation" name="MedicationsSectionEntriesOptionalTemplateId"
@@ -6980,7 +6979,6 @@
       <details key="code.codeSystem" value="2.16.840.1.113883.6.1"/>
       <details key="code.codeSystemName" value="LOINC"/>
       <details key="code.displayName" value="History of medication use"/>
-      <details key="title.mixed" value="Medications"/>
       <details key="constraints.validation.warning" value="MedicationsSectionEntriesOptionalMedicationActivity"/>
     </eAnnotations>
     <eOperations name="MedicationsSectionEntriesOptionalTemplateId" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
@@ -9369,6 +9367,7 @@
       <details key="code.codeSystem" value="2.16.840.1.113883.6.1"/>
       <details key="code.codeSystemName" value="LOINC"/>
       <details key="code.displayName" value="Diagnosis"/>
+      <details key="constraints.validation.dependOn.EncounterDiagnosisCode" value="EncounterDiagnosisCodeP"/>
     </eAnnotations>
     <eOperations name="EncounterDiagnosisTemplateId" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
       <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
@@ -9397,7 +9396,7 @@
         </eGenericType>
       </eParameters>
     </eOperations>
-    <eOperations name="EncounterDiagnosisCode" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
+    <eOperations name="EncounterDiagnosisCodeP" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
       <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
       <eParameters name="context">
         <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
@@ -9406,7 +9405,7 @@
         </eGenericType>
       </eParameters>
     </eOperations>
-    <eOperations name="EncounterDiagnosisCodeP" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
+    <eOperations name="EncounterDiagnosisCode" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
       <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
       <eParameters name="context">
         <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
@@ -13152,6 +13151,7 @@
       <details key="code.codeSystem" value="2.16.840.1.113883.6.1"/>
       <details key="code.codeSystemName" value="LOINC"/>
       <details key="constraints.validation.warning" value="PolicyActivityCode PolicyActivityCodeP PolicyActivityGuarantor PolicyActivityHolder PolicyActivityPayerPayerAssignedEntityUSRealmAddressCountry PolicyActivityPayerPayerAssignedEntityUSRealmAddressPostalCode PolicyActivityPayerPayerAssignedEntityUSRealmAddressState PolicyActivityPayerPayerAssignedEntityUSRealmAddressUseP PolicyActivityPayerPayerAssignedEntityPayerOrganizationName PolicyActivityPayerPayerAssignedEntityPayerOrganization PolicyActivityGuarantorGuarantorAssignedEntityUSRealmAddressCountry PolicyActivityGuarantorGuarantorAssignedEntityUSRealmAddressPostalCode PolicyActivityGuarantorGuarantorAssignedEntityUSRealmAddressState PolicyActivityGuarantorGuarantorAssignedEntityUSRealmAddressUseP PolicyActivityGuarantorGuarantorAssignedEntityPersonNameAndOrOrgName PolicyActivityGuarantorGuarantorAssignedEntityAddr PolicyActivityGuarantorGuarantorAssignedEntityTelecom PolicyActivityGuarantorTime PolicyActivityGuarantorTypeCode PolicyActivityCoverageCoverageRoleUSRealmAddressCountry PolicyActivityCoverageCoverageRoleUSRealmAddressPostalCode PolicyActivityCoverageCoverageRoleUSRealmAddressState PolicyActivityCoverageCoverageRoleUSRealmAddressUseP PolicyActivityCoverageCoverageRoleAddr PolicyActivityCoverageCoverageRoleCoveragePlayingEntity PolicyActivityCoverageLowTime PolicyActivityCoverageHighTime PolicyActivityCoverageTime PolicyActivityHolderHolderRoleUSRealmAddressCountry PolicyActivityHolderHolderRoleUSRealmAddressPostalCode PolicyActivityHolderHolderRoleUSRealmAddressState PolicyActivityHolderHolderRoleUSRealmAddressUseP PolicyActivityHolderHolderRoleAddr"/>
+      <details key="constraints.validation.dependOn.PolicyActivityCode" value="PolicyActivityCodeP"/>
       <details key="moodCode" value="EVN"/>
       <details key="statusCode.code" value="completed"/>
       <details key="constraints.validation.query" value="PolicyActivityPayerPayerAssignedEntityUSRealmAddressStreet PolicyActivityPayerPayerAssignedEntityUSRealmAddressCity PolicyActivityPayerPayerAssignedEntityUSRealmAddressCountry PolicyActivityPayerPayerAssignedEntityUSRealmAddressPostalCode PolicyActivityPayerPayerAssignedEntityUSRealmAddressState PolicyActivityPayerPayerAssignedEntityUSRealmAddressStreetAddressLine PolicyActivityPayerPayerAssignedEntityUSRealmAddressUseP PolicyActivityPayerPayerAssignedEntityUSRealmAddressUse PolicyActivityPayerPayerAssignedEntityPayerOrganizationName PolicyActivityPayerPayerAssignedEntityId PolicyActivityPayerPayerAssignedEntityCode PolicyActivityPayerPayerAssignedEntityCodeP PolicyActivityPayerPayerAssignedEntityAddr PolicyActivityPayerPayerAssignedEntityTelecom PolicyActivityPayerPayerAssignedEntityPayerOrganization PolicyActivityPayerTemplateId PolicyActivityPayerTypeCode PolicyActivityPayerPayerAssignedEntity PolicyActivityGuarantorGuarantorAssignedEntityUSRealmAddressStreet PolicyActivityGuarantorGuarantorAssignedEntityUSRealmAddressCity PolicyActivityGuarantorGuarantorAssignedEntityUSRealmAddressCountry PolicyActivityGuarantorGuarantorAssignedEntityUSRealmAddressPostalCode PolicyActivityGuarantorGuarantorAssignedEntityUSRealmAddressState PolicyActivityGuarantorGuarantorAssignedEntityUSRealmAddressStreetAddressLine PolicyActivityGuarantorGuarantorAssignedEntityUSRealmAddressUseP PolicyActivityGuarantorGuarantorAssignedEntityUSRealmAddressUse PolicyActivityGuarantorGuarantorAssignedEntityPersonNameAndOrOrgName PolicyActivityGuarantorGuarantorAssignedEntityCode PolicyActivityGuarantorGuarantorAssignedEntityCodeP PolicyActivityGuarantorGuarantorAssignedEntityAddr PolicyActivityGuarantorGuarantorAssignedEntityTelecom PolicyActivityGuarantorTemplateId PolicyActivityGuarantorTime PolicyActivityGuarantorTypeCode PolicyActivityGuarantorGuarantorAssignedEntity PolicyActivityCoverageCoverageRoleUSRealmAddressStreet PolicyActivityCoverageCoverageRoleUSRealmAddressCity PolicyActivityCoverageCoverageRoleUSRealmAddressCountry PolicyActivityCoverageCoverageRoleUSRealmAddressPostalCode PolicyActivityCoverageCoverageRoleUSRealmAddressState PolicyActivityCoverageCoverageRoleUSRealmAddressStreetAddressLine PolicyActivityCoverageCoverageRoleUSRealmAddressUseP PolicyActivityCoverageCoverageRoleUSRealmAddressUse PolicyActivityCoverageCoverageRoleCoveragePlayingEntityName PolicyActivityCoverageCoverageRoleId PolicyActivityCoverageCoverageRoleCode PolicyActivityCoverageCoverageRoleCodeP PolicyActivityCoverageCoverageRoleAddr PolicyActivityCoverageCoverageRoleCoveragePlayingEntity PolicyActivityCoverageLowTime PolicyActivityCoverageHighTime PolicyActivityCoverageTemplateId PolicyActivityCoverageTypeCode PolicyActivityCoverageTime PolicyActivityCoverageCoverageRole PolicyActivityHolderHolderRoleUSRealmAddressStreet PolicyActivityHolderHolderRoleUSRealmAddressCity PolicyActivityHolderHolderRoleUSRealmAddressCountry PolicyActivityHolderHolderRoleUSRealmAddressPostalCode PolicyActivityHolderHolderRoleUSRealmAddressState PolicyActivityHolderHolderRoleUSRealmAddressStreetAddressLine PolicyActivityHolderHolderRoleUSRealmAddressUseP PolicyActivityHolderHolderRoleUSRealmAddressUse PolicyActivityHolderHolderRoleId PolicyActivityHolderHolderRoleAddr PolicyActivityHolderTemplateId PolicyActivityHolderTypeCode PolicyActivityHolderTime PolicyActivityHolderHolderRole PolicyActivityEntryRelationshipTargetActActivity PolicyActivityEntryRelationshipDescriptionCoveragePlan PolicyActivityEntryRelationshipTypeCode"/>
@@ -13266,7 +13266,7 @@
         </eGenericType>
       </eParameters>
     </eOperations>
-    <eOperations name="PolicyActivityCode" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
+    <eOperations name="PolicyActivityCodeP" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
       <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
       <eParameters name="context">
         <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
@@ -13275,7 +13275,7 @@
         </eGenericType>
       </eParameters>
     </eOperations>
-    <eOperations name="PolicyActivityCodeP" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
+    <eOperations name="PolicyActivityCode" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
       <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
       <eParameters name="context">
         <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
@@ -14641,6 +14641,7 @@
       <details key="code.codeSystem" value="2.16.840.1.113883.5.4"/>
       <details key="code.codeSystemName" value="HL7ActCode"/>
       <details key="code.displayName" value="Assertion"/>
+      <details key="constraints.validation.dependOn.PregnancyObservationCode" value="PregnancyObservationCodeP"/>
       <details key="statusCode.code" value="completed"/>
       <details key="value.code" value="77386006"/>
       <details key="value.codeSystem" value="2.16.840.1.113883.6.96"/>
@@ -14675,7 +14676,7 @@
         </eGenericType>
       </eParameters>
     </eOperations>
-    <eOperations name="PregnancyObservationCode" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
+    <eOperations name="PregnancyObservationCodeP" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
       <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
       <eParameters name="context">
         <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
@@ -14684,7 +14685,7 @@
         </eGenericType>
       </eParameters>
     </eOperations>
-    <eOperations name="PregnancyObservationCodeP" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
+    <eOperations name="PregnancyObservationCode" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
       <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
       <eParameters name="context">
         <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
@@ -14801,7 +14802,7 @@
   <eClassifiers xsi:type="ecore:EClass" name="SmokingStatusObservation" eSuperTypes="#//TobaccoUse">
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
       <details key="constraints.validation.error" value="SmokingStatusObservationTemplateId SmokingStatusObservationEffectiveTimeLow SmokingStatusObservationClassCode SmokingStatusObservationMoodCode SmokingStatusObservationCode SmokingStatusObservationCodeP SmokingStatusObservationEffectiveTime SmokingStatusObservationStatusCode SmokingStatusObservationStatusCodeP SmokingStatusObservationValue SmokingStatusObservationValueP"/>
-      <details key="templateId.root" value="2.16.840.1.113883.10.22.4.78"/>
+      <details key="templateId.root" value="2.16.840.1.113883.10.20.22.4.78"/>
       <details key="classCode" value="OBS"/>
       <details key="moodCode" value="EVN"/>
       <details key="code.code" value="ASSERTION"/>
@@ -21096,19 +21097,19 @@
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="OperativeNote" eSuperTypes="#//GeneralHeaderConstraints">
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
-      <details key="constraints.validation.error" value="OperativeNoteTemplateId OperativeNoteCode OperativeNoteCodeP OperativeNoteDocumentationOf OperativeNoteAnesthesiaSection OperativeNoteComplicationsSection OperativeNotePostoperativeDiagnosisSection OperativeNotePreoperativeDiagnosisSection OperativeNoteProcedureEstimatedBloodLossSection OperativeNoteProcedureFindingsSection OperativeNoteProcedureSpecimensTakenSection OperativeNoteProcedureDescriptionSection OperativeNoteDocumentationOfServiceEventPrimaryPerformerAssignedEntityCode OperativeNoteDocumentationOfServiceEventPrimaryPerformerAssignedEntityCodeP OperativeNoteDocumentationOfServiceEventPrimaryPerformerTypeCode OperativeNoteDocumentationOfServiceEventPrimaryPerformerAssignedEntity OperativeNoteDocumentationOfServiceEventProcedureCodes OperativeNoteDocumentationOfServiceEventEffectiveTimeHasLow OperativeNoteDocumentationOfServiceEventEffectiveTimeHasHighWhenNoWidth OperativeNoteDocumentationOfServiceEventEffectiveTimeNoHighIfWidth OperativeNoteDocumentationOfServiceEventAnyAssistantsAsSecondary OperativeNoteDocumentationOfServiceEventCode OperativeNoteDocumentationOfServiceEventEffectiveTime OperativeNoteDocumentationOfServiceEventPrimaryPerformer OperativeNoteDocumentationOfServiceEvent"/>
+      <details key="constraints.validation.error" value="OperativeNoteTemplateId OperativeNoteCode OperativeNoteCodeP OperativeNoteDocumentationOf OperativeNoteAnesthesiaSection OperativeNoteComplicationsSection OperativeNotePostoperativeDiagnosisSection OperativeNotePreoperativeDiagnosisSection OperativeNoteProcedureEstimatedBloodLossSection OperativeNoteProcedureFindingsSection OperativeNoteProcedureSpecimensTakenSection OperativeNoteProcedureDescriptionSection OperativeNoteDocumentationOfServiceEventPrimaryPerformerAssignedEntityCode OperativeNoteDocumentationOfServiceEventPrimaryPerformerAssignedEntityCodeP OperativeNoteDocumentationOfServiceEventPrimaryPerformerTypeCode OperativeNoteDocumentationOfServiceEventPrimaryPerformerAssignedEntity OperativeNoteDocumentationOfServiceEventProcedureCodes OperativeNoteDocumentationOfServiceEventEffectiveTimeHasLow OperativeNoteDocumentationOfServiceEventEffectiveTimeHasHighWhenNoWidth OperativeNoteDocumentationOfServiceEventEffectiveTimeNoHighIfWidth OperativeNoteDocumentationOfServiceEventCode OperativeNoteDocumentationOfServiceEventEffectiveTime OperativeNoteDocumentationOfServiceEventPrimaryPerformer OperativeNoteDocumentationOfServiceEvent"/>
       <details key="templateId.root" value="2.16.840.1.113883.10.20.22.1.7"/>
       <details key="code.codeSystem" value="2.16.840.1.113883.6.1"/>
       <details key="code.codeSystemName" value="LOINC"/>
       <details key="constraints.validation.dependOn.OperativeNoteCode" value="OperativeNoteCodeP"/>
       <details key="constraints.validation.info" value="OperativeNoteProcedureImplantsSection OperativeNoteOperativeNoteFluidSection OperativeNoteOperativeNoteSurgicalProcedureSection OperativeNotePlanOfCareSection OperativeNotePlannedProcedureSection OperativeNoteProcedureDispositionSection OperativeNoteProcedureIndicationsSection OperativeNoteSurgicalDrainsSection"/>
-      <details key="constraints.validation.query" value="OperativeNoteDocumentationOfServiceEventPrimaryPerformerAssignedEntityCode OperativeNoteDocumentationOfServiceEventPrimaryPerformerAssignedEntityCodeP OperativeNoteDocumentationOfServiceEventPrimaryPerformerTypeCode OperativeNoteDocumentationOfServiceEventPrimaryPerformerAssignedEntity OperativeNoteDocumentationOfServiceEventProcedureCodes OperativeNoteDocumentationOfServiceEventEffectiveTimeHasLow OperativeNoteDocumentationOfServiceEventEffectiveTimeHasHighWhenNoWidth OperativeNoteDocumentationOfServiceEventEffectiveTimeNoHighIfWidth OperativeNoteDocumentationOfServiceEventAnyAssistantsAsSecondary OperativeNoteDocumentationOfServiceEventCode OperativeNoteDocumentationOfServiceEventEffectiveTime OperativeNoteDocumentationOfServiceEventPrimaryPerformer OperativeNoteDocumentationOfServiceEvent"/>
+      <details key="constraints.validation.query" value="OperativeNoteDocumentationOfServiceEventPrimaryPerformerAssignedEntityCode OperativeNoteDocumentationOfServiceEventPrimaryPerformerAssignedEntityCodeP OperativeNoteDocumentationOfServiceEventPrimaryPerformerTypeCode OperativeNoteDocumentationOfServiceEventPrimaryPerformerAssignedEntity OperativeNoteDocumentationOfServiceEventProcedureCodes OperativeNoteDocumentationOfServiceEventEffectiveTimeHasLow OperativeNoteDocumentationOfServiceEventEffectiveTimeHasHighWhenNoWidth OperativeNoteDocumentationOfServiceEventEffectiveTimeNoHighIfWidth OperativeNoteDocumentationOfServiceEventCode OperativeNoteDocumentationOfServiceEventEffectiveTime OperativeNoteDocumentationOfServiceEventPrimaryPerformer OperativeNoteDocumentationOfServiceEvent"/>
     </eAnnotations>
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolOperativeNoteDocumentationOf">
       <details key="constraints.validation.error" value="DocumentationOfServiceEvent"/>
     </eAnnotations>
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolOperativeNoteDocumentationOfServiceEvent">
-      <details key="constraints.validation.error" value="ServiceEventProcedureCodes ServiceEventEffectiveTimeHasLow ServiceEventEffectiveTimeHasHighWhenNoWidth ServiceEventEffectiveTimeNoHighIfWidth ServiceEventAnyAssistantsAsSecondary ServiceEventCode ServiceEventEffectiveTime ServiceEventPrimaryPerformer ServiceEventPrimaryPerformerAssignedEntityCode ServiceEventPrimaryPerformerAssignedEntityCodeP ServiceEventPrimaryPerformerTypeCode ServiceEventPrimaryPerformerAssignedEntity"/>
+      <details key="constraints.validation.error" value="ServiceEventProcedureCodes ServiceEventEffectiveTimeHasLow ServiceEventEffectiveTimeHasHighWhenNoWidth ServiceEventEffectiveTimeNoHighIfWidth ServiceEventCode ServiceEventEffectiveTime ServiceEventPrimaryPerformer ServiceEventPrimaryPerformerAssignedEntityCode ServiceEventPrimaryPerformerAssignedEntityCodeP ServiceEventPrimaryPerformerTypeCode ServiceEventPrimaryPerformerAssignedEntity"/>
       <details key="constraints.validation.query" value="ServiceEventPrimaryPerformerAssignedEntityCode ServiceEventPrimaryPerformerAssignedEntityCodeP ServiceEventPrimaryPerformerTypeCode ServiceEventPrimaryPerformerAssignedEntity"/>
     </eAnnotations>
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolOperativeNoteDocumentationOfServiceEventPrimaryPerformer">
@@ -21379,16 +21380,6 @@
         </eGenericType>
       </eParameters>
     </eOperations>
-    <eOperations name="OperativeNoteDocumentationOfServiceEventAnyAssistantsAsSecondary"
-        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
-      <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
-      <eParameters name="context">
-        <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
-          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
-          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
-        </eGenericType>
-      </eParameters>
-    </eOperations>
     <eOperations name="OperativeNoteDocumentationOfServiceEventCode" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
       <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
       <eParameters name="context">
@@ -21456,14 +21447,14 @@
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="ProcedureNote" eSuperTypes="#//GeneralHeaderConstraints">
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
-      <details key="constraints.validation.error" value="ProcedureNoteTemplateId ProcedureNoteHasAnAssementAndPlanSectionOrIndividualAssementAndPlanSections ProcedureNoteDoesNotHaveIndividualAssementAndPlanSectionsWhenAssementAndPlanSectionPresent ProcedureNoteDoesNotHaveChiefComplaintAndReasonForVisitWithChiefComplaintSectionOrReasonSection ProcedureNoteSectionTitles ProcedureNoteCode ProcedureNoteCodeP ProcedureNoteComplicationsSection ProcedureNotePostprocedureDiagnosisSection ProcedureNoteProcedureDescriptionSection ProcedureNoteProcedureIndicationsSection ProcedureNoteDocumentationOf ProcedureNoteComponentOfEncompassingEncounter5LocationHealthCareFacilityId ProcedureNoteComponentOfEncompassingEncounter5LocationHealthCareFacility ProcedureNoteComponentOfEncompassingEncounter5EncounterParticipantTypeCode ProcedureNoteComponentOfEncompassingEncounter5Code ProcedureNoteComponentOfEncompassingEncounter5Location ProcedureNotePrimaryCarePhysicianAssociatedEntityClassCode ProcedureNotePrimaryCarePhysicianAssociatedEntityAssociatedPerson ProcedureNotePrimaryCarePhysicianFunctionCode ProcedureNotePrimaryCarePhysicianFunctionCodeP ProcedureNotePrimaryCarePhysicianTypeCode ProcedureNotePrimaryCarePhysicianAssociatedEntity ProcedureNoteDocumentationOfServiceEvent1PrimaryPerformerAssignedEntityCode ProcedureNoteDocumentationOfServiceEvent1PrimaryPerformerTypeCode ProcedureNoteDocumentationOfServiceEvent1PrimaryPerformerAssignedEntity ProcedureNoteDocumentationOfServiceEvent1ProcedureCodes ProcedureNoteDocumentationOfServiceEvent1EffectiveTimeHasLow ProcedureNoteDocumentationOfServiceEvent1EffectiveTimeHasHighWhenNoWidth ProcedureNoteDocumentationOfServiceEvent1EffectiveTimeNoHighIfWidth ProcedureNoteDocumentationOfServiceEvent1AnyAssistantsAsSecondary ProcedureNoteDocumentationOfServiceEvent1Code ProcedureNoteDocumentationOfServiceEvent1EffectiveTime ProcedureNoteDocumentationOfServiceEvent1PrimaryPerformer ProcedureNoteDocumentationOfServiceEvent1"/>
+      <details key="constraints.validation.error" value="ProcedureNoteTemplateId ProcedureNoteHasAnAssementAndPlanSectionOrIndividualAssementAndPlanSections ProcedureNoteDoesNotHaveIndividualAssementAndPlanSectionsWhenAssementAndPlanSectionPresent ProcedureNoteDoesNotHaveChiefComplaintAndReasonForVisitWithChiefComplaintSectionOrReasonSection ProcedureNoteSectionTitles ProcedureNoteCode ProcedureNoteCodeP ProcedureNoteComplicationsSection ProcedureNotePostprocedureDiagnosisSection ProcedureNoteProcedureDescriptionSection ProcedureNoteProcedureIndicationsSection ProcedureNoteDocumentationOf ProcedureNoteComponentOfEncompassingEncounter5LocationHealthCareFacilityId ProcedureNoteComponentOfEncompassingEncounter5LocationHealthCareFacility ProcedureNoteComponentOfEncompassingEncounter5EncounterParticipantTypeCode ProcedureNoteComponentOfEncompassingEncounter5Code ProcedureNoteComponentOfEncompassingEncounter5Location ProcedureNotePrimaryCarePhysicianAssociatedEntityClassCode ProcedureNotePrimaryCarePhysicianAssociatedEntityAssociatedPerson ProcedureNotePrimaryCarePhysicianFunctionCode ProcedureNotePrimaryCarePhysicianFunctionCodeP ProcedureNotePrimaryCarePhysicianTypeCode ProcedureNotePrimaryCarePhysicianAssociatedEntity ProcedureNoteDocumentationOfServiceEvent1PrimaryPerformerAssignedEntityCode ProcedureNoteDocumentationOfServiceEvent1PrimaryPerformerTypeCode ProcedureNoteDocumentationOfServiceEvent1PrimaryPerformerAssignedEntity ProcedureNoteDocumentationOfServiceEvent1ProcedureCodes ProcedureNoteDocumentationOfServiceEvent1EffectiveTimeHasLow ProcedureNoteDocumentationOfServiceEvent1EffectiveTimeHasHighWhenNoWidth ProcedureNoteDocumentationOfServiceEvent1EffectiveTimeNoHighIfWidth ProcedureNoteDocumentationOfServiceEvent1Code ProcedureNoteDocumentationOfServiceEvent1EffectiveTime ProcedureNoteDocumentationOfServiceEvent1PrimaryPerformer ProcedureNoteDocumentationOfServiceEvent1"/>
       <details key="templateId.root" value="2.16.840.1.113883.10.20.22.1.6"/>
       <details key="code.codeSystem" value="2.16.840.1.113883.6.1"/>
       <details key="code.codeSystemName" value="LOINC"/>
       <details key="constraints.validation.dependOn.ProcedureNoteCode" value="ProcedureNoteCodeP"/>
       <details key="constraints.validation.warning" value="ProcedureNoteComponentOf ProcedureNoteComponentOfEncompassingEncounter5 ProcedureNoteDocumentationOfServiceEvent1PrimaryPerformerAssignedEntityCodeP"/>
       <details key="constraints.validation.info" value="ProcedureNotePrimaryCarePhysician ProcedureNoteAssessmentSection ProcedureNotePlanOfCareSection ProcedureNoteAssessmentAndPlanSection ProcedureNoteAllergiesSectionEntriesOptional ProcedureNoteAnesthesiaSection ProcedureNoteChiefComplaintSection ProcedureNoteChiefComplaintAndReasonForVisitSection ProcedureNoteFamilyHistorySection ProcedureNoteHistoryOfPastIllnessSection ProcedureNoteHistoryOfPresentIllnessSection ProcedureNoteMedicalHistorySection ProcedureNoteMedicationsSectionEntriesOptional ProcedureNoteMedicationsAdministeredSection ProcedureNotePhysicalExamSection ProcedureNotePlannedProcedureSection ProcedureNoteProcedureDispositionSection ProcedureNoteProcedureEstimatedBloodLossSection ProcedureNoteProcedureFindingsSection ProcedureNoteProcedureImplantsSection ProcedureNoteProcedureSpecimensTakenSection ProcedureNoteProceduresSectionEntriesOptional ProcedureNoteReasonForVisitSection ProcedureNoteReviewOfSystemsSection ProcedureNoteSocialHistorySection ProcedureNoteParticipant1 ProcedureNoteComponentOfEncompassingEncounter5EncounterParticipant"/>
-      <details key="constraints.validation.query" value="ProcedureNoteComponentOfEncompassingEncounter5LocationHealthCareFacilityId ProcedureNoteComponentOfEncompassingEncounter5LocationHealthCareFacility ProcedureNoteComponentOfEncompassingEncounter5EncounterParticipantTypeCode ProcedureNoteComponentOfEncompassingEncounter5Code ProcedureNoteComponentOfEncompassingEncounter5Location ProcedureNoteComponentOfEncompassingEncounter5EncounterParticipant ProcedureNoteComponentOfEncompassingEncounter5 ProcedureNotePrimaryCarePhysicianAssociatedEntityClassCode ProcedureNotePrimaryCarePhysicianAssociatedEntityAssociatedPerson ProcedureNotePrimaryCarePhysicianFunctionCode ProcedureNotePrimaryCarePhysicianFunctionCodeP ProcedureNotePrimaryCarePhysicianTypeCode ProcedureNotePrimaryCarePhysicianAssociatedEntity ProcedureNoteDocumentationOfServiceEvent1PrimaryPerformerAssignedEntityCodeP ProcedureNoteDocumentationOfServiceEvent1PrimaryPerformerAssignedEntityCode ProcedureNoteDocumentationOfServiceEvent1PrimaryPerformerTypeCode ProcedureNoteDocumentationOfServiceEvent1PrimaryPerformerAssignedEntity ProcedureNoteDocumentationOfServiceEvent1ProcedureCodes ProcedureNoteDocumentationOfServiceEvent1EffectiveTimeHasLow ProcedureNoteDocumentationOfServiceEvent1EffectiveTimeHasHighWhenNoWidth ProcedureNoteDocumentationOfServiceEvent1EffectiveTimeNoHighIfWidth ProcedureNoteDocumentationOfServiceEvent1AnyAssistantsAsSecondary ProcedureNoteDocumentationOfServiceEvent1Code ProcedureNoteDocumentationOfServiceEvent1EffectiveTime ProcedureNoteDocumentationOfServiceEvent1PrimaryPerformer ProcedureNoteDocumentationOfServiceEvent1"/>
+      <details key="constraints.validation.query" value="ProcedureNoteComponentOfEncompassingEncounter5LocationHealthCareFacilityId ProcedureNoteComponentOfEncompassingEncounter5LocationHealthCareFacility ProcedureNoteComponentOfEncompassingEncounter5EncounterParticipantTypeCode ProcedureNoteComponentOfEncompassingEncounter5Code ProcedureNoteComponentOfEncompassingEncounter5Location ProcedureNoteComponentOfEncompassingEncounter5EncounterParticipant ProcedureNoteComponentOfEncompassingEncounter5 ProcedureNotePrimaryCarePhysicianAssociatedEntityClassCode ProcedureNotePrimaryCarePhysicianAssociatedEntityAssociatedPerson ProcedureNotePrimaryCarePhysicianFunctionCode ProcedureNotePrimaryCarePhysicianFunctionCodeP ProcedureNotePrimaryCarePhysicianTypeCode ProcedureNotePrimaryCarePhysicianAssociatedEntity ProcedureNoteDocumentationOfServiceEvent1PrimaryPerformerAssignedEntityCodeP ProcedureNoteDocumentationOfServiceEvent1PrimaryPerformerAssignedEntityCode ProcedureNoteDocumentationOfServiceEvent1PrimaryPerformerTypeCode ProcedureNoteDocumentationOfServiceEvent1PrimaryPerformerAssignedEntity ProcedureNoteDocumentationOfServiceEvent1ProcedureCodes ProcedureNoteDocumentationOfServiceEvent1EffectiveTimeHasLow ProcedureNoteDocumentationOfServiceEvent1EffectiveTimeHasHighWhenNoWidth ProcedureNoteDocumentationOfServiceEvent1EffectiveTimeNoHighIfWidth ProcedureNoteDocumentationOfServiceEvent1Code ProcedureNoteDocumentationOfServiceEvent1EffectiveTime ProcedureNoteDocumentationOfServiceEvent1PrimaryPerformer ProcedureNoteDocumentationOfServiceEvent1"/>
       <details key="constraints.validation.dependOn.ProcedureNoteDocumentationOfServiceEvent1PrimaryPerformerAssignedEntityCode"
           value="ProcedureNoteDocumentationOfServiceEvent1PrimaryPerformerAssignedEntityCodeP"/>
     </eAnnotations>
@@ -21500,7 +21491,7 @@
       <details key="constraints.validation.error" value="DocumentationOfServiceEvent1"/>
     </eAnnotations>
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolProcedureNoteDocumentationOfServiceEvent1">
-      <details key="constraints.validation.error" value="ServiceEvent1ProcedureCodes ServiceEvent1EffectiveTimeHasLow ServiceEvent1EffectiveTimeHasHighWhenNoWidth ServiceEvent1EffectiveTimeNoHighIfWidth ServiceEvent1AnyAssistantsAsSecondary ServiceEvent1Code ServiceEvent1EffectiveTime ServiceEvent1PrimaryPerformer ServiceEvent1PrimaryPerformerAssignedEntityCode ServiceEvent1PrimaryPerformerTypeCode ServiceEvent1PrimaryPerformerAssignedEntity"/>
+      <details key="constraints.validation.error" value="ServiceEvent1ProcedureCodes ServiceEvent1EffectiveTimeHasLow ServiceEvent1EffectiveTimeHasHighWhenNoWidth ServiceEvent1EffectiveTimeNoHighIfWidth ServiceEvent1Code ServiceEvent1EffectiveTime ServiceEvent1PrimaryPerformer ServiceEvent1PrimaryPerformerAssignedEntityCode ServiceEvent1PrimaryPerformerTypeCode ServiceEvent1PrimaryPerformerAssignedEntity"/>
       <details key="constraints.validation.warning" value="ServiceEvent1PrimaryPerformerAssignedEntityCodeP"/>
       <details key="constraints.validation.query" value="ServiceEvent1PrimaryPerformerAssignedEntityCodeP ServiceEvent1PrimaryPerformerAssignedEntityCode ServiceEvent1PrimaryPerformerTypeCode ServiceEvent1PrimaryPerformerAssignedEntity"/>
       <details key="constraints.validation.dependOn.ServiceEvent1PrimaryPerformerAssignedEntityCode"
@@ -22064,16 +22055,6 @@
       </eParameters>
     </eOperations>
     <eOperations name="ProcedureNoteDocumentationOfServiceEvent1EffectiveTimeNoHighIfWidth"
-        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
-      <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
-      <eParameters name="context">
-        <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
-          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
-          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
-        </eGenericType>
-      </eParameters>
-    </eOperations>
-    <eOperations name="ProcedureNoteDocumentationOfServiceEvent1AnyAssistantsAsSecondary"
         eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
       <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
       <eParameters name="context">

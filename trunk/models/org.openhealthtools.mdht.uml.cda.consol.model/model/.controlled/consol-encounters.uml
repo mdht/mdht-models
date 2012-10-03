@@ -318,7 +318,7 @@
       <defaultValue xmi:type="uml:LiteralString" xmi:id="_XTUqUOM2EeGfv4R-kzpM0g" value="EVN"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_NEkXUOM2EeGfv4R-kzpM0g" name="code" visibility="private" aggregation="composite">
-      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_Z1EGIDxaEd6JwqSGecoePg"/>
+      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
       <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_HUTHQEocEd6c3qsAxlFHaQ"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_lWEzYOM2EeGfv4R-kzpM0g" name="problemObservation" association="_lWEzYuM2EeGfv4R-kzpM0g">

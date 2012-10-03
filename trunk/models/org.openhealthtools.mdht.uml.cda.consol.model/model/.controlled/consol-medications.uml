@@ -1164,8 +1164,8 @@ The UDI should be sent in the participantRole/id.</body>
   <CDA:ConstraintValidation xmi:id="_CGugsB7pEeGEaLkc3UAsAg" severity="WARNING" base_Constraint="_vY4cQBrcEeGo461UQq-B1g">
     <ruleId>CONF:7369</ruleId>
   </CDA:ConstraintValidation>
-  <CDA:TextValue xmi:id="_jKAbsB-qEeGKirKJsFylGA" base_Property="_2NJ3phSVEeGGzu7fmW9pXw" value="Medications"/>
-  <CDA:TextValue xmi:id="_9b_aYB-tEeGKirKJsFylGA" base_Property="_iAoXJBVdEeGQCvUGzi1kDQ" value="Medications">
+  <CDA:TextValue xmi:id="_jKAbsB-qEeGKirKJsFylGA" base_Property="_2NJ3phSVEeGGzu7fmW9pXw"/>
+  <CDA:TextValue xmi:id="_9b_aYB-tEeGKirKJsFylGA" base_Property="_iAoXJBVdEeGQCvUGzi1kDQ">
     <ruleId>CONF:7793</ruleId>
   </CDA:TextValue>
   <CDA:PropertyValidation xmi:id="_AHD5gB-uEeGKirKJsFylGA" base_Property="_iAoXJRVdEeGQCvUGzi1kDQ">
