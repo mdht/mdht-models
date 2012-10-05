@@ -6,12 +6,20 @@
 	<body>
 		<p>
 			<ul>
-				
-				
+				<li>Bunker Allyson Weaver, Ramakrishnan, Rama.
+				User Documentation For MDHT Runtime APIs, 2011
+				Available at: <xref format="html" href="https://www.projects.openhealthtools.org/sf/wiki/do/viewPage/projects.mdht/wiki/User%20Documentation">
+				www.projects.openhealthtools.org</xref></li>
 				
 				<li>
 					CDISC Submission Data Standards Team. 
-					Study Data Tabulation Model Implementation Guide: Human Clinical Trials
+					Study Data Tabulation Model Implementation Guide: Human Clinical Trials.
+					 Available at:
+					<xref format="html" href="http://www.cdisc.org">www.CDISC.org</xref>
+				</li>
+					<li>
+					CDISC Standard for Exchange of Nonclinical Dat Team. 
+					Standard for Exchange of Nonclinical Data Implementation Guide: Nonclinical Studies.
 					 Available at:
 					<xref format="html" href="http://www.cdisc.org">www.CDISC.org</xref>
 				</li>
@@ -28,18 +36,6 @@
 					<xref format="zip" href="http://www.hl7.org/documentcenter/private/standards/cda/r2/cda_r2_normativewebedition.zip">CDA Release 2 Normative Web Edition.</xref>
 				</li>
 				<li>
-					<xref format="html" href="http://www.regenstrief.org/loinc">LOINC®</xref>
-					: Logical Observation Identifiers Names and Codes,
-					Regenstrief
-					Institute.
-				</li>
-				
-				<li>
-					Extensible Markup Language,
-					<xref format="html" href="http://www.w3.org/XML">www.w3.org/XML</xref>
-					.
-				</li>
-				<li>
 					Dolin RH, Alschuler L, Boyer S, Beebe C, Behlen FM, Biron PV,
 					Shabo
 					A., HL7 Clinical Document Architecture, Release 2. J Am Med
@@ -48,7 +44,23 @@
 					<xref format="html" href="http://www.jamia.org/cgi/reprint/13/1/30">http://www.jamia.org/cgi/reprint/13/1/30</xref>
 					.
 				</li>
+				<li>
+					<xref format="html" href="http://www.regenstrief.org/loinc">LOINC®</xref>
+					: Logical Observation Identifiers Names and Codes,
+					Regenstrief
+					Institute.
+				</li>
+				<li>National Cancer Institute, Enterprise Vocabulary Services
+				<xref format="html" href="http://evs.nci.nih.gov/">EVS Enterprise Vocabulary Services</xref>
+				</li>
 				
+				
+				
+				<li>
+					Extensible Markup Language,
+					<xref format="html" href="http://www.w3.org/XML">www.w3.org/XML</xref>
+					.
+				</li>
 			</ul>
 		</p>
 	</body>
