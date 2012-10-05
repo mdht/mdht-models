@@ -25,22 +25,33 @@
 
 	<div class="body">
 	
+	
 		<p class="p">This implementation guide provides a format for using HL7's Clinical Document 
-		Architecture to report on the experience of human subjects within a clinical trial.  It 
+		Architecture to report on the experience of non-human subjects within a trial.  It 
 		is intended that the guide can be used to address the full breadth of the data reporting
-		for clinical trial subjects.  In particular, it will cover the functional scope
-		addressed by the CDISC SDTM Implementation Guide</p>
+		for non-human trial subjects.  In particular, it will cover the functional scope
+		addressed by the CDISC SEND Implementation Guide</p>
 
-		<p class="p">This early draft focuses includes the content defined within theSDTM specification, with 
-		the exception of the highly generic Comments, Related Records, and Supplemental Qualifiers
-		domains.  The diagram outlines the high level structure of the subject data
+
+		<p class="p">This draft focuses includes the content defined within the SEND specification.  The
+		 diagram outlines the high level structure of the subject data
 		clinical document.  Each of the included boxes underneath the document body represents a template.  
-		Those that represent SDTM domains are hierarchically associated to the document body section.  The
+		Those that represent SEND domains are hierarchically associated to the document body section.  The
 		other templates represent repeating structures - these templates have been created to facilitate 
 		reuse of data structures within the implementation guide as a whole.</p>
 
+
+		<p class="p"><img class="image" src="../images/2012.04.04SEND_IGstruc.png"/></p>
+
+			
+	     <p class="p"><em class="ph i">The diagram needs updating.</em></p>
+
 		
-		<p class="p"><img class="image" src="../images/2012.04.04 SDTMstarterIGstruc.png"/></p>
+		
+		<p class="p">In addition to supporting the domains that have been defined for SEND, the Implementation
+		Guide includes 3 generic domains: Findings, Events, and Interventions.  When submitters need to provide
+		material that goes beyond the currently defined scope, these structures can be used to create "custom"
+		domains.</p>
 
 		
 		<p class="p">The document is generated from UML models developed in
