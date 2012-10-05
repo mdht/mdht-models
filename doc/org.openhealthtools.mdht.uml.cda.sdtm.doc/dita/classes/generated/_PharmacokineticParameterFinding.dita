@@ -2,136 +2,187 @@
 <!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
 <topic id="classId" xml:lang="en-us">
 <title>Pharmacokinetic Parameter Finding - conformance rules</title>
-<shortdesc id="shortdesc">[Observation: templateId <tt>2.16.840.1.113883.10.20.23.40</tt>]</shortdesc>
+<shortdesc id="shortdesc">[Observation: templateId <tt>2.16.840.1.113883.10.20.23.66</tt>]</shortdesc>
 <prolog id="prolog">
 <metadata><category>Observation</category></metadata>
-<resourceid id="2.16.840.1.113883.10.20.23.40"/>
+<resourceid id="2.16.840.1.113883.10.20.23.66"/>
 </prolog>
 <body>
 <section id="description">
-<p>Data collected for relevant parameters of tissue concentrations of anylytes.</p>
+<p>The template records data collected for relevant parameters of tissue concentrations of anylytes.</p>
 </section>
 <ol id="conformance">
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@classCode</b>="OBS" </tt><i>Observation</i> (CodeSystem:<tt> 2.16.840.1.113883.5.6 HL7ActClass</tt>)
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@classCode</b>="OBS" </tt><i>Observation</i> (CodeSystem:<tt> 2.16.840.1.113883.5.6 HL7ActClass</tt>) (CONF:753)
 </li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@moodCode</b>="EVN" </tt><i>Event</i> (CodeSystem:<tt> 2.16.840.1.113883.5.1001 HL7ActMood</tt>)
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@moodCode</b>="EVN" </tt><i>Event</i> (CodeSystem:<tt> 2.16.840.1.113883.5.1001 HL7ActMood</tt>) (CONF:754)
 </li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt>
-<ul><li>A coded value that identifies the pharmacokinetics parameter result.  The verbatim text is placed within the original text property of the CD data type.  [SDTM: PPTESTCD, PPTEST]</li></ul></li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>id</b></tt>
-<ul><li>A value that is provided to ensure the uniqueness of the pharacokinetics parameter result.  [SDTM: PPSEQ]   A single identifier, the sequence number, is required.</li></ul></li>
-<li><b>MAY</b> contain zero or one [0..1] <tt><b>statusCode</b></tt>
-<ul><li>Used to indicate whether or not an exam has been performed.  [SDTM: PPSTAT]</li></ul></li>
-<li><b>SHOULD</b> contain zero or one [0..1] <tt><b>value</b></tt> with data type CD
-<ul><li>The pharmacokinetics parameter result, using both original units and a standard format or set of units.  [SDTM: PPORRES, PPORRESU, PPSTRESC, PPSTRESN, PPSTRESU]</li></ul></li>
-<li><b>MAY</b> contain zero or one [0..1] <tt><b>entryRelationship</b></tt>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>id</b></tt> (CONF:755)
+<ul><li>A value that is provided to ensure the uniqueness of the pharacokinetics parameter result.  [SDTM: PPSEQ],  [SEND: PPSEQ]</li></ul></li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:756), where the @code <b>SHALL</b> be selected from ValueSet<tt> <xref href="../../terminology/PharmacokineticsParameterFindingSet.dita">Pharmacokinetics Parameter Finding Set</xref> C85839</tt><b> STATIC</b> (CONF:757)
+<ul><li>A coded value that identifies the pharmacokinetics parameter result.  The verbatim text is placed within the original text property of the CD data type.  [SDTM: PPTESTCD, PPTEST], [SEND: PPTESTCD, PPTEST]</li></ul></li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>statusCode</b></tt> (CONF:758), where the @code <b>SHALL</b> be selected from (CodeSystem:<tt> 2.16.840.1.113883.5.14 ActStatus</tt>) (CONF:1545)
+<ul><li>Used to indicate whether or not an exam has been performed.  [SDTM: PPSTAT],  [SEND: PPSTAT]</li></ul></li>
+<li><b>SHOULD</b> contain  [0..3] <tt><b>value</b></tt> (CONF:759)
+<ul><li>The pharmacokinetics parameter result, as up to three observation values, using both original units and a standard format or set of units.  The finding may be recorded as a coded value - if the result is character based - or as a physical quantity - if the result is  numeric.   [SDTM: PPORRES, PPORRESU, PPSTRESC, PPSTRESN, PPSTRESU],  [SEND: PPORRES, PPORRESU, PPSTRESC, PPSTRESN, PPSTRESU]</li></ul></li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>entryRelationship</b></tt> (CONF:760)
+<ul><li>Identifies the SDTM or SEND domain the record is assigned to.</li></ul><ol>
+<li>Contains <tt><b>@typeCode="</b>REFR" </tt><i>REFR</i></li>
+<li>Contains exactly one [1..1] <xref href="../DomainAssignment.dita">Domain Assignment</xref> (templateId: <tt>2.16.840.1.113883.10.20.23.30</tt>)</li></ol></li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>entryRelationship</b></tt> (CONF:761)
 <ul><li>Allows capture of a group identifier for the finding.</li></ul><ol>
 <li>Contains <tt><b>@typeCode="</b>COMP" </tt><i>COMP</i></li>
-<li>Contains exactly one [1..1] <xref href="../GroupIdentifier.dita">Group Identifier</xref> (templateId: <tt>2.16.840.1.113883.10.20.23.63</tt>)</li></ol></li>
-<li><b>MAY</b> contain zero or one [0..1] <tt><b>entryRelationship</b></tt>
-<ul><li>Used to capture information about the specimen used as the direct subject of the test.</li></ul><ol>
-<li>Contains <tt><b>@typeCode="</b>COMP" </tt><i>COMP</i></li>
-<li>Contains exactly one [1..1] <xref href="../SpecimenInformation.dita">Specimen Information</xref> (templateId: <tt>2.16.840.1.113883.10.20.23.67</tt>)</li></ol></li>
-<li><b>MAY</b> contain zero or one [0..1] <tt><b>entryRelationship</b></tt> <p><i>Indicates a subcategory the finding is assigned to.</i></p><ol><li> This entryRelationship <b>SHALL</b> contain exactly one [1..1] <tt><b>@typeCode</b>="COMP" </tt></li><li> This entryRelationship <b>SHALL</b> contain exactly one [1..1] <tt><b>pharmacokineticsParameterCategory</b></tt> with data type <xref href="../PharmacokineticsParameterCategory.dita">pharmacokinetics Parameter Category</xref></li></ol>
-</li>
-<li><b>MAY</b> contain zero or one [0..1] <tt><b>entryRelationship</b></tt> <p><i>Indicates a subcategory the finding is assigned to.</i></p><ol><li> This entryRelationship <b>SHALL</b> contain exactly one [1..1] <tt><b>@typeCode</b>="COMP" </tt></li><li> This entryRelationship <b>SHALL</b> contain exactly one [1..1] <tt><b>pharmacokineticsParameterSubCategory</b></tt> with data type <xref href="../PharmacokineticsParameterSubCategory.dita">pharmacokinetics Parameter Sub Category</xref></li></ol>
-</li>
-<li><b>MAY</b> contain zero or one [0..1] <tt><b>entryRelationship</b></tt>
+<li>Contains exactly one [1..1] <xref href="../GroupIdentifier.dita">Group Identifier</xref> (templateId: <tt>2.16.840.1.113883.10.20.23.42</tt>)</li></ol></li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>entryRelationship</b></tt> (CONF:762)
 <ul><li>Provides a reason for not capturing information for the finding.</li></ul><ol>
-<li>Contains exactly one [1..1] <xref href="../NonPerformanceReason.dita">Non Performance Reason</xref> (templateId: <tt>2.16.840.1.113883.10.20.23.64</tt>)</li></ol></li>
-<li><b>SHOULD</b> contain zero or one [0..1] <tt><b>entryRelationship</b></tt>
+<li>Contains <tt><b>@typeCode="</b>COMP" </tt><i>COMP</i></li>
+<li>Contains exactly one [1..1] <xref href="../NonPerformanceReason.dita">Non Performance Reason</xref> (templateId: <tt>2.16.840.1.113883.10.20.23.56</tt>)</li></ol></li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>entryRelationship</b></tt> (CONF:763)
+<ul><li>Information on the specimen that was tested to derive the observation value.  It may include information on the collection of the specimen as well as on the specimen itself.</li></ul><ol>
+<li>Contains <tt><b>@typeCode="</b>COMP" </tt><i>COMP</i></li>
+<li>Contains exactly one [1..1] <xref href="../SpecimenInformation.dita">Specimen Information</xref> (templateId: <tt>2.16.840.1.113883.10.20.23.78</tt>)</li></ol></li>
+<li><b>SHOULD</b> contain zero or one [0..1] <tt><b>entryRelationship</b></tt> (CONF:764)
 <ul><li>Orients the performance of the test leading to the pharmacokinetic parameter with respect to a study defined timepoint.</li></ul><ol>
 <li>Contains <tt><b>@typeCode="</b>COMP" </tt><i>COMP</i></li>
-<li>Contains exactly one [1..1] <xref href="../TimingReference.dita">Timing Reference</xref> (templateId: <tt>2.16.840.1.113883.10.20.23.74</tt>)</li></ol></li>
+<li>Contains exactly one [1..1] <xref href="../TimingReference.dita">Timing Reference</xref> (templateId: <tt>2.16.840.1.113883.10.20.23.97</tt>)</li></ol></li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>entryRelationship</b></tt> (CONF:765)
+<ul><li>The record of a category to be used in organizing information items.</li></ul><ol>
+<li>Contains <tt><b>@typeCode="</b>COMP" </tt><i>COMP</i></li>
+<li>Contains exactly one [1..1] <xref href="../Category.dita">Category</xref> (templateId: <tt>2.16.840.1.113883.10.20.23.20</tt>)</li></ol></li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>entryRelationship</b></tt> (CONF:766)
+<ul><li>The record of a sub-category to be used in organizing information items.</li></ul><ol>
+<li>Contains <tt><b>@typeCode="</b>COMP" </tt><i>COMP</i></li>
+<li>Contains exactly one [1..1] <xref href="../SubCategory.dita">Sub- Category</xref> (templateId: <tt>2.16.840.1.113883.10.20.23.91</tt>)</li></ol></li>
+<li><b>MAY</b> contain zero or more [0..*] <tt><b>entryRelationship</b></tt> (CONF:767)
+<ul><li>Establishes a relationship between this record and another record.</li></ul><ol>
+<li>Contains <tt><b>@typeCode="</b>REFR" </tt><i>REFR</i></li>
+<li>Contains exactly one [1..1] <xref href="../RelatedRecord.dita">Related Record</xref> (templateId: <tt>2.16.840.1.113883.10.20.23.75</tt>)</li></ol></li>
+<li><b>MAY</b> contain zero or more [0..*] <tt><b>entryRelationship</b></tt> (CONF:768)
+<ul><li>Allows the association of a supplemental value - outside of the content specfied for the domain - to the record.</li></ul><ol>
+<li>Contains <tt><b>@typeCode="</b>COMP" </tt><i>COMP</i></li>
+<li>Contains exactly one [1..1] <xref href="../SupplementalValue.dita">Supplemental Value</xref> (templateId: <tt>2.16.840.1.113883.10.20.23.96</tt>)</li></ol></li>
+<li><b>MAY</b> contain zero or more [0..*] <tt><b>entryRelationship</b></tt> (CONF:769)
+<ul><li>A place to insert comments related to a particular finding.</li></ul><ol>
+<li>Contains <tt><b>@typeCode="</b>COMP" </tt><i>COMP</i></li>
+<li>Contains exactly one [1..1] <xref href="../Comment.dita">Comment</xref> (templateId: <tt>2.16.840.1.113883.10.20.23.23</tt>)</li></ol></li>
+<li><b>MAY</b> contain zero or more [0..*] <tt><b>entryRelationship</b></tt> (CONF:770)
+<ul><li>Allows recording of additional findings related to the finding.</li></ul><ol>
+<li>Contains <tt><b>@typeCode="</b>COMP" </tt><i>COMP</i></li>
+<li>Contains exactly one [1..1] <xref href="../FindingAbout.dita">Finding About</xref> (templateId: <tt>2.16.840.1.113883.10.20.23.40</tt>)</li></ol></li>
 </ol>
 <ol id="aggregate">
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@classCode</b>="OBS" </tt><i>Observation</i> (CodeSystem:<tt> 2.16.840.1.113883.5.6 HL7ActClass</tt>)
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@classCode</b>="OBS" </tt><i>Observation</i> (CodeSystem:<tt> 2.16.840.1.113883.5.6 HL7ActClass</tt>) (CONF:753)
 </li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@moodCode</b>="EVN" </tt><i>Event</i> (CodeSystem:<tt> 2.16.840.1.113883.5.1001 HL7ActMood</tt>)
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@moodCode</b>="EVN" </tt><i>Event</i> (CodeSystem:<tt> 2.16.840.1.113883.5.1001 HL7ActMood</tt>) (CONF:754)
 </li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>id</b></tt>
-<ul><li>A value that is provided to ensure the uniqueness of the pharacokinetics parameter result.  [SDTM: PPSEQ]   A single identifier, the sequence number, is required.</li></ul></li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt>
-<ul><li>A coded value that identifies the pharmacokinetics parameter result.  The verbatim text is placed within the original text property of the CD data type.  [SDTM: PPTESTCD, PPTEST]</li></ul></li>
-<li><b>MAY</b> contain zero or one [0..1] <tt><b>statusCode</b></tt>
-<ul><li>Used to indicate whether or not an exam has been performed.  [SDTM: PPSTAT]</li></ul></li>
-<li><b>SHOULD</b> contain zero or one [0..1] <tt><b>value</b></tt> with data type CD
-<ul><li>The pharmacokinetics parameter result, using both original units and a standard format or set of units.  [SDTM: PPORRES, PPORRESU, PPSTRESC, PPSTRESN, PPSTRESU]</li></ul></li>
-<li><b>MAY</b> contain zero or one [0..1] <tt><b>entryRelationship</b></tt>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>id</b></tt> (CONF:755)
+<ul><li>A value that is provided to ensure the uniqueness of the pharacokinetics parameter result.  [SDTM: PPSEQ],  [SEND: PPSEQ]</li></ul></li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:756), where the @code <b>SHALL</b> be selected from ValueSet<tt> <xref href="../../terminology/PharmacokineticsParameterFindingSet.dita">Pharmacokinetics Parameter Finding Set</xref> C85839</tt><b> STATIC</b> (CONF:757)
+<ul><li>A coded value that identifies the pharmacokinetics parameter result.  The verbatim text is placed within the original text property of the CD data type.  [SDTM: PPTESTCD, PPTEST], [SEND: PPTESTCD, PPTEST]</li></ul></li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>statusCode</b></tt> (CONF:758), where the @code <b>SHALL</b> be selected from (CodeSystem:<tt> 2.16.840.1.113883.5.14 ActStatus</tt>) (CONF:1545)
+<ul><li>Used to indicate whether or not an exam has been performed.  [SDTM: PPSTAT],  [SEND: PPSTAT]</li></ul></li>
+<li><b>SHOULD</b> contain  [0..3] <tt><b>value</b></tt> (CONF:759)
+<ul><li>The pharmacokinetics parameter result, as up to three observation values, using both original units and a standard format or set of units.  The finding may be recorded as a coded value - if the result is character based - or as a physical quantity - if the result is  numeric.   [SDTM: PPORRES, PPORRESU, PPSTRESC, PPSTRESN, PPSTRESU],  [SEND: PPORRES, PPORRESU, PPSTRESC, PPSTRESN, PPSTRESU]</li></ul></li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>entryRelationship</b></tt> (CONF:760)
+<ol>
+<li>Contains <tt><b>@typeCode="</b>REFR" </tt><i>REFR</i></li>
+<li>Contains exactly one [1..1] <xref href="../DomainAssignment.dita">Domain Assignment</xref> (templateId: <tt>2.16.840.1.113883.10.20.23.30</tt>)</li></ol><ul><li>Identifies the SDTM or SEND domain the record is assigned to.</li></ul></li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>entryRelationship</b></tt> (CONF:761)
 <ol>
 <li>Contains <tt><b>@typeCode="</b>COMP" </tt><i>COMP</i></li>
-<li>Contains exactly one [1..1] <xref href="../GroupIdentifier.dita">Group Identifier</xref> (templateId: <tt>2.16.840.1.113883.10.20.23.63</tt>)</li></ol><ul><li>Allows capture of a group identifier for the finding.</li></ul></li>
-<li><b>MAY</b> contain zero or one [0..1] <tt><b>entryRelationship</b></tt>
+<li>Contains exactly one [1..1] <xref href="../GroupIdentifier.dita">Group Identifier</xref> (templateId: <tt>2.16.840.1.113883.10.20.23.42</tt>)</li></ol><ul><li>Allows capture of a group identifier for the finding.</li></ul></li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>entryRelationship</b></tt> (CONF:762)
 <ol>
 <li>Contains <tt><b>@typeCode="</b>COMP" </tt><i>COMP</i></li>
-<li>Contains exactly one [1..1] <xref href="../SpecimenInformation.dita">Specimen Information</xref> (templateId: <tt>2.16.840.1.113883.10.20.23.67</tt>)</li></ol><ul><li>Used to capture information about the specimen used as the direct subject of the test.</li></ul></li>
-<li><b>MAY</b> contain zero or one [0..1] <tt><b>entryRelationship</b></tt> <p><i>Indicates a subcategory the finding is assigned to.</i></p><ol><li> This entryRelationship <b>SHALL</b> contain exactly one [1..1] <tt><b>@typeCode</b>="COMP" </tt></li><li> This entryRelationship <b>SHALL</b> contain exactly one [1..1] <tt><b>pharmacokineticsParameterCategory</b></tt> with data type <xref href="../PharmacokineticsParameterCategory.dita">pharmacokinetics Parameter Category</xref></li></ol>
-</li>
-<li><b>MAY</b> contain zero or one [0..1] <tt><b>entryRelationship</b></tt> <p><i>Indicates a subcategory the finding is assigned to.</i></p><ol><li> This entryRelationship <b>SHALL</b> contain exactly one [1..1] <tt><b>@typeCode</b>="COMP" </tt></li><li> This entryRelationship <b>SHALL</b> contain exactly one [1..1] <tt><b>pharmacokineticsParameterSubCategory</b></tt> with data type <xref href="../PharmacokineticsParameterSubCategory.dita">pharmacokinetics Parameter Sub Category</xref></li></ol>
-</li>
-<li><b>MAY</b> contain zero or one [0..1] <tt><b>entryRelationship</b></tt>
-<ol>
-<li>Contains exactly one [1..1] <xref href="../NonPerformanceReason.dita">Non Performance Reason</xref> (templateId: <tt>2.16.840.1.113883.10.20.23.64</tt>)</li></ol><ul><li>Provides a reason for not capturing information for the finding.</li></ul></li>
-<li><b>SHOULD</b> contain zero or one [0..1] <tt><b>entryRelationship</b></tt>
+<li>Contains exactly one [1..1] <xref href="../NonPerformanceReason.dita">Non Performance Reason</xref> (templateId: <tt>2.16.840.1.113883.10.20.23.56</tt>)</li></ol><ul><li>Provides a reason for not capturing information for the finding.</li></ul></li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>entryRelationship</b></tt> (CONF:763)
 <ol>
 <li>Contains <tt><b>@typeCode="</b>COMP" </tt><i>COMP</i></li>
-<li>Contains exactly one [1..1] <xref href="../TimingReference.dita">Timing Reference</xref> (templateId: <tt>2.16.840.1.113883.10.20.23.74</tt>)</li></ol><ul><li>Orients the performance of the test leading to the pharmacokinetic parameter with respect to a study defined timepoint.</li></ul></li>
+<li>Contains exactly one [1..1] <xref href="../SpecimenInformation.dita">Specimen Information</xref> (templateId: <tt>2.16.840.1.113883.10.20.23.78</tt>)</li></ol><ul><li>Information on the specimen that was tested to derive the observation value.  It may include information on the collection of the specimen as well as on the specimen itself.</li></ul></li>
+<li><b>SHOULD</b> contain zero or one [0..1] <tt><b>entryRelationship</b></tt> (CONF:764)
+<ol>
+<li>Contains <tt><b>@typeCode="</b>COMP" </tt><i>COMP</i></li>
+<li>Contains exactly one [1..1] <xref href="../TimingReference.dita">Timing Reference</xref> (templateId: <tt>2.16.840.1.113883.10.20.23.97</tt>)</li></ol><ul><li>Orients the performance of the test leading to the pharmacokinetic parameter with respect to a study defined timepoint.</li></ul></li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>entryRelationship</b></tt> (CONF:765)
+<ol>
+<li>Contains <tt><b>@typeCode="</b>COMP" </tt><i>COMP</i></li>
+<li>Contains exactly one [1..1] <xref href="../Category.dita">Category</xref> (templateId: <tt>2.16.840.1.113883.10.20.23.20</tt>)</li></ol><ul><li>The record of a category to be used in organizing information items.</li></ul></li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>entryRelationship</b></tt> (CONF:766)
+<ol>
+<li>Contains <tt><b>@typeCode="</b>COMP" </tt><i>COMP</i></li>
+<li>Contains exactly one [1..1] <xref href="../SubCategory.dita">Sub- Category</xref> (templateId: <tt>2.16.840.1.113883.10.20.23.91</tt>)</li></ol><ul><li>The record of a sub-category to be used in organizing information items.</li></ul></li>
+<li><b>MAY</b> contain zero or more [0..*] <tt><b>entryRelationship</b></tt> (CONF:767)
+<ol>
+<li>Contains <tt><b>@typeCode="</b>REFR" </tt><i>REFR</i></li>
+<li>Contains exactly one [1..1] <xref href="../RelatedRecord.dita">Related Record</xref> (templateId: <tt>2.16.840.1.113883.10.20.23.75</tt>)</li></ol><ul><li>Establishes a relationship between this record and another record.</li></ul></li>
+<li><b>MAY</b> contain zero or more [0..*] <tt><b>entryRelationship</b></tt> (CONF:768)
+<ol>
+<li>Contains <tt><b>@typeCode="</b>COMP" </tt><i>COMP</i></li>
+<li>Contains exactly one [1..1] <xref href="../SupplementalValue.dita">Supplemental Value</xref> (templateId: <tt>2.16.840.1.113883.10.20.23.96</tt>)</li></ol><ul><li>Allows the association of a supplemental value - outside of the content specfied for the domain - to the record.</li></ul></li>
+<li><b>MAY</b> contain zero or more [0..*] <tt><b>entryRelationship</b></tt> (CONF:769)
+<ol>
+<li>Contains <tt><b>@typeCode="</b>COMP" </tt><i>COMP</i></li>
+<li>Contains exactly one [1..1] <xref href="../Comment.dita">Comment</xref> (templateId: <tt>2.16.840.1.113883.10.20.23.23</tt>)</li></ol><ul><li>A place to insert comments related to a particular finding.</li></ul></li>
+<li><b>MAY</b> contain zero or more [0..*] <tt><b>entryRelationship</b></tt> (CONF:770)
+<ol>
+<li>Contains <tt><b>@typeCode="</b>COMP" </tt><i>COMP</i></li>
+<li>Contains exactly one [1..1] <xref href="../FindingAbout.dita">Finding About</xref> (templateId: <tt>2.16.840.1.113883.10.20.23.40</tt>)</li></ol><ul><li>Allows recording of additional findings related to the finding.</li></ul></li>
 </ol>
-<section id="tableconformance"><p><table frame="all" scale="80" pgwide="1" ><tgroup cols="8" align="left" colsep = "1" rowsep = "1" > <colspec colname="col0" colnum="0" /><colspec colname="col1" colnum="1" /><colspec colname="col2" colnum="2" /><colspec colname="col3" colnum="3" /><colspec colname="col4" colnum="4" /><colspec colname="col5" colnum="5" /><colspec colname="col6" colnum="6" /><colspec colname="col7" colnum="7" /><thead> <row><entry namest="col0" nameend="col7" >sdtm::Pharmacokinetic Parameter Finding</entry>  </row>  <row><entry namest="col0" nameend="col7" >cda::observation[cda:templateId/@root = 2.16.840.1.113883.10.20.23.44]/</entry>  </row>  <row><entry>Name</entry><entry>XPath</entry><entry>Cardinality</entry><entry>Severity</entry><entry>Nullable</entry><entry>Data Type</entry><entry>Conformance</entry><entry>Value(s)</entry></row></thead><tbody><row><entry>classCode</entry><entry>@classCode</entry><entry>1..1</entry><entry>SHALL</entry><entry>NO</entry><entry>ActClassObservation</entry><entry></entry><entry> ALRT</entry></row> 
-<row><entry>moodCode</entry><entry>@moodCode</entry><entry>1..1</entry><entry>SHALL</entry><entry>NO</entry><entry>x_ActMoodDocumentObservation</entry><entry></entry><entry> DEF</entry></row> 
+<section id="tableconformance"><p><table frame="all" scale="80" pgwide="1" ><tgroup cols="8" align="left" colsep = "1" rowsep = "1" > <colspec colname="col0" colnum="0" /><colspec colname="col1" colnum="1" /><colspec colname="col2" colnum="2" /><colspec colname="col3" colnum="3" /><colspec colname="col4" colnum="4" /><colspec colname="col5" colnum="5" /><colspec colname="col6" colnum="6" /><colspec colname="col7" colnum="7" /><thead> <row><entry namest="col0" nameend="col7" >sdtm::Pharmacokinetic Parameter Finding</entry>  </row>  <row><entry namest="col0" nameend="col7" >cda::observation[cda:templateId/@root = ]/</entry>  </row>  <row><entry>Name</entry><entry>XPath</entry><entry>Cardinality</entry><entry>Severity</entry><entry>Nullable</entry><entry>Data Type</entry><entry>Conformance</entry><entry>Value(s)</entry></row></thead><tbody><row><entry>classCode</entry><entry>@classCode</entry><entry>1..1</entry><entry>SHALL</entry><entry>NO</entry><entry>ActClassObservation</entry><entry>CONF:753</entry><entry> ALRT</entry></row> 
+<row><entry>moodCode</entry><entry>@moodCode</entry><entry>1..1</entry><entry>SHALL</entry><entry>NO</entry><entry>x_ActMoodDocumentObservation</entry><entry>CONF:754</entry><entry> DEF</entry></row> 
 <row><entry>negationInd</entry><entry>@negationInd</entry><entry>0..1</entry><entry></entry><entry>NO</entry><entry>Boolean</entry><entry></entry><entry> </entry></row> 
 <row><entry>nullFlavor</entry><entry>@nullFlavor</entry><entry>0..1</entry><entry></entry><entry>NO</entry><entry>NullFlavor</entry><entry></entry><entry> ASKU</entry></row> 
-<row><entry>code</entry><entry>code</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>CD</entry><entry></entry><entry> </entry></row> 
+<row><entry>code</entry><entry>code</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>CD</entry><entry>CONF:756</entry><entry> </entry></row> 
 <row><entry>derivationExpr</entry><entry>derivationExpr</entry><entry>0..1</entry><entry></entry><entry>YES</entry><entry>ST</entry><entry></entry><entry> </entry></row> 
 <row><entry>effectiveTime</entry><entry>effectiveTime</entry><entry>0..1</entry><entry></entry><entry>YES</entry><entry>IVL_TS</entry><entry></entry><entry> </entry></row> 
-<row><entry>id</entry><entry>id</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>II</entry><entry></entry><entry> </entry></row> 
+<row><entry>id</entry><entry>id</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>II</entry><entry>CONF:755</entry><entry> </entry></row> 
 <row><entry>interpretationCode</entry><entry>interpretationCode</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>CE</entry><entry></entry><entry> </entry></row> 
 <row><entry>languageCode</entry><entry>languageCode</entry><entry>0..1</entry><entry></entry><entry>YES</entry><entry>CS</entry><entry></entry><entry> </entry></row> 
 <row><entry>methodCode</entry><entry>methodCode</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>CE</entry><entry></entry><entry> </entry></row> 
 <row><entry>priorityCode</entry><entry>priorityCode</entry><entry>0..1</entry><entry></entry><entry>YES</entry><entry>CE</entry><entry></entry><entry> </entry></row> 
 <row><entry>realmCode</entry><entry>realmCode</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>CS</entry><entry></entry><entry> </entry></row> 
 <row><entry>repeatNumber</entry><entry>repeatNumber</entry><entry>0..1</entry><entry></entry><entry>YES</entry><entry>IVL_INT</entry><entry></entry><entry> </entry></row> 
-<row><entry>statusCode</entry><entry>statusCode</entry><entry>0..1</entry><entry>MAY</entry><entry>YES</entry><entry>CS</entry><entry></entry><entry> </entry></row> 
+<row><entry>statusCode</entry><entry>statusCode</entry><entry>0..1</entry><entry>MAY</entry><entry>YES</entry><entry>CS</entry><entry>CONF:758</entry><entry>ActStatus 2.16.840.1.113883.5.14 </entry></row> 
 <row><entry>targetSiteCode</entry><entry>targetSiteCode</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>CD</entry><entry></entry><entry> </entry></row> 
-<row><entry>templateId</entry><entry>templateId</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>II</entry><entry></entry><entry> 2.16.840.1.113883.10.20.23.44</entry></row> 
+<row><entry>templateId</entry><entry>templateId</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>II</entry><entry></entry><entry> </entry></row> 
 <row><entry>text</entry><entry>text</entry><entry>0..1</entry><entry></entry><entry>YES</entry><entry>ED</entry><entry></entry><entry> </entry></row> 
-<row><entry>value</entry><entry>value</entry><entry>0..1</entry><entry>SHOULD</entry><entry>YES</entry><entry>CD</entry><entry></entry><entry> </entry></row> 
+<row><entry>value</entry><entry>value</entry><entry>0..3</entry><entry>SHOULD</entry><entry>YES</entry><entry>ANY</entry><entry>CONF:759</entry><entry> </entry></row> 
 <row><entry>author</entry><entry>author</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>Author</entry><entry></entry><entry> </entry></row> 
+<row><entry>category</entry><entry>category</entry><entry>0..1</entry><entry>MAY</entry><entry>YES</entry><entry>Category</entry><entry>CONF:765</entry><entry> </entry></row> 
+<row><entry>comment</entry><entry>comment</entry><entry>0..*</entry><entry>MAY</entry><entry>YES</entry><entry>Comment</entry><entry>CONF:769</entry><entry> </entry></row> 
+<row><entry>domain Assignment</entry><entry>domain Assignment</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>Domain Assignment</entry><entry>CONF:760</entry><entry> </entry></row> 
 <row><entry>entryRelationship</entry><entry>entryRelationship</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>EntryRelationship</entry><entry></entry><entry> </entry></row> 
-<row><entry>group Identifier</entry><entry>group Identifier</entry><entry>0..1</entry><entry>MAY</entry><entry>YES</entry><entry>Group Identifier</entry><entry></entry><entry> </entry></row> 
+<row><entry>finding About</entry><entry>finding About</entry><entry>0..*</entry><entry>MAY</entry><entry>YES</entry><entry>Finding About</entry><entry>CONF:770</entry><entry> </entry></row> 
+<row><entry>group Identifier</entry><entry>group Identifier</entry><entry>0..1</entry><entry>MAY</entry><entry>YES</entry><entry>Group Identifier</entry><entry>CONF:761</entry><entry> </entry></row> 
 <row><entry>informant</entry><entry>informant</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>Informant12</entry><entry></entry><entry> </entry></row> 
-<row><entry>non Performance Reason</entry><entry>non Performance Reason</entry><entry>0..1</entry><entry>MAY</entry><entry>YES</entry><entry>Non Performance Reason</entry><entry></entry><entry> </entry></row> 
+<row><entry>non Performance Reason</entry><entry>non Performance Reason</entry><entry>0..1</entry><entry>MAY</entry><entry>YES</entry><entry>Non Performance Reason</entry><entry>CONF:762</entry><entry> </entry></row> 
 <row><entry>participant</entry><entry>participant</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>Participant2</entry><entry></entry><entry> </entry></row> 
 <row><entry>performer</entry><entry>performer</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>Performer2</entry><entry></entry><entry> </entry></row> 
-<row><entry>pharmacokineticsParameterCategoryAssociation</entry><entry>pharmacokineticsParameterCategoryAssociation</entry><entry>0..1</entry><entry>MAY</entry><entry>YES</entry><entry>pharmacokineticsParameterCategoryAssociation</entry><entry></entry><entry> </entry></row> 
-<row><entry>pharmacokineticsParameterSubCategoryAssociation</entry><entry>pharmacokineticsParameterSubCategoryAssociation</entry><entry>0..1</entry><entry>MAY</entry><entry>YES</entry><entry>pharmacokineticsParameterSubCategoryAssociation</entry><entry></entry><entry> </entry></row> 
 <row><entry>precondition</entry><entry>precondition</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>Precondition</entry><entry></entry><entry> </entry></row> 
 <row><entry>reference</entry><entry>reference</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>Reference</entry><entry></entry><entry> </entry></row> 
 <row><entry>referenceRange</entry><entry>referenceRange</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>ReferenceRange</entry><entry></entry><entry> </entry></row> 
+<row><entry>related Record</entry><entry>related Record</entry><entry>0..*</entry><entry>MAY</entry><entry>YES</entry><entry>Related Record</entry><entry>CONF:767</entry><entry> </entry></row> 
 <row><entry>specimen</entry><entry>specimen</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>Specimen</entry><entry></entry><entry> </entry></row> 
-<row><entry>specimen Information</entry><entry>specimen Information</entry><entry>0..1</entry><entry>MAY</entry><entry>YES</entry><entry>Specimen Information</entry><entry></entry><entry> </entry></row> 
+<row><entry>specimen Information</entry><entry>specimen Information</entry><entry>0..1</entry><entry>MAY</entry><entry>YES</entry><entry>Specimen Information</entry><entry>CONF:763</entry><entry> </entry></row> 
+<row><entry>sub-Category</entry><entry>sub-Category</entry><entry>0..1</entry><entry>MAY</entry><entry>YES</entry><entry>Sub-Category</entry><entry>CONF:766</entry><entry> </entry></row> 
 <row><entry>subject</entry><entry>subject</entry><entry>0..1</entry><entry></entry><entry>YES</entry><entry>Subject</entry><entry></entry><entry> </entry></row> 
-<row><entry>timing Reference</entry><entry>timing Reference</entry><entry>0..1</entry><entry>SHOULD</entry><entry>YES</entry><entry>Timing Reference</entry><entry></entry><entry> </entry></row> 
+<row><entry>supplemental Value</entry><entry>supplemental Value</entry><entry>0..*</entry><entry>MAY</entry><entry>YES</entry><entry>Supplemental Value</entry><entry>CONF:768</entry><entry> </entry></row> 
+<row><entry>timing Reference</entry><entry>timing Reference</entry><entry>0..1</entry><entry>SHOULD</entry><entry>YES</entry><entry>Timing Reference</entry><entry>CONF:764</entry><entry> </entry></row> 
 <row><entry>typeId</entry><entry>typeId</entry><entry>0..1</entry><entry></entry><entry>YES</entry><entry>InfrastructureRootTypeId</entry><entry></entry><entry> </entry></row> 
 </tbody></tgroup></table></p></section>
 <codeblock id="example"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
-<observation xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd" classCode="OBS" moodCode="EVN">
-  <templateId root="2.16.840.1.113883.10.20.23.44"/>
-  <id root="768475414" extension="MDHT"/>
-  <code code="1955137112"/>
+<observation xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd">
+  <id root="950326697" extension="MDHT"/>
+  <code code="355358234"/>
   <statusCode code="completed"/>
   <effectiveTime>
     <low value="2012"/>
     <high value="2012"/>
   </effectiveTime>
-  <value xsi:type="CD" code="1501136891"/>
-  <entryRelationship typeCode="COMP"/>
-  <entryRelationship typeCode="COMP"/>
   <entryRelationship>
-    <act classCode="ACT" moodCode="EVN">
-      <templateId root="2.16.840.1.113883.10.20.23.15"/>
-      <id root="1790926807" extension="MDHT"/>
-      <code code="TBD" codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="NCI Thesaurus"/>
+    <act classCode="ACT">
+      <templateId root="2.16.840.1.113883.10.20.23.42"/>
+      <id root="1715468564" extension="MDHT"/>
+      <code code="C83204" codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="NCI Thesaurus"/>
       <statusCode code="completed"/>
       <effectiveTime>
         <low value="2012"/>
@@ -140,83 +191,174 @@
     </act>
   </entryRelationship>
   <entryRelationship>
-    <procedure classCode="ACT" moodCode="EVN">
-      <templateId root="2.16.840.1.113883.10.20.23.59"/>
-      <id root="2594697" extension="MDHT"/>
-      <code codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="NCI Thesaurus"/>
+    <procedure>
+      <id root="1089358683" extension="MDHT"/>
+      <code code="1258770895"/>
       <statusCode code="completed"/>
       <effectiveTime>
         <low value="2012"/>
         <high value="2012"/>
       </effectiveTime>
       <specimen typeCode="SPC">
-        <specimenRole classCode="SPEC"/>
+        <templateId root="null"/>
       </specimen>
-      <entryRelationship typeCode="COMP">
-        <observation classCode="OBS" moodCode="EVN">
-          <code codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="NCI Thesaurus"/>
-        </observation>
+      <entryRelationship typeCode="COMP"/>
+      <entryRelationship typeCode="COMP"/>
+      <entryRelationship typeCode="COMP"/>
+      <entryRelationship>
+        <observation/>
       </entryRelationship>
       <entryRelationship>
-        <observation classCode="OBS" moodCode="EVN">
-          <templateId root="2.16.840.1.113883.10.20.23.11"/>
-          <id root="1334537776" extension="MDHT"/>
-          <code code="TBD" codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="NCI Thesaurus"/>
-          <statusCode code="completed"/>
-          <effectiveTime>
-            <low value="2012"/>
-            <high value="2012"/>
-          </effectiveTime>
-          <value xsi:type="INT" value="1"/>
-        </observation>
-      </entryRelationship>
-      <entryRelationship>
-        <act classCode="ACT" moodCode="EVN">
-          <templateId root="2.16.840.1.113883.10.20.23.14"/>
-          <id root="1448296120" extension="MDHT"/>
-          <code codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="NCI Thesaurus"/>
-          <statusCode code="completed"/>
-          <effectiveTime>
-            <low value="2012"/>
-            <high value="2012"/>
-          </effectiveTime>
-          <entryRelationship typeCode="COMP"/>
+        <act>
+          <templateId root="2.16.840.1.113883.10.20.23.97"/>
+          <code codeSystem="2.16.840.1.113883.3.26.1.1"/>
         </act>
       </entryRelationship>
     </procedure>
   </entryRelationship>
   <entryRelationship>
-    <observation classCode="OBS" moodCode="EVN">
-      <templateId root="2.16.840.1.113883.10.20.23.9"/>
-      <id root="1711235564" extension="MDHT"/>
-      <code code="TBD" codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="NCI Thesaurus"/>
+    <observation classCode="OBS">
+      <templateId root="2.16.840.1.113883.10.20.23.56"/>
+      <id root="355340389" extension="MDHT"/>
+      <code codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="NCI Thesaurus" displayName="Reason for non completion"/>
       <statusCode code="completed"/>
       <effectiveTime>
         <low value="2012"/>
         <high value="2012"/>
       </effectiveTime>
-      <value xsi:type="CE" code="339117282"/>
+      <value xsi:type="CD" code="756701573"/>
     </observation>
   </entryRelationship>
   <entryRelationship>
-    <act classCode="ACT" moodCode="EVN">
-      <templateId root="2.16.840.1.113883.10.20.23.14"/>
-      <id root="1450026443" extension="MDHT"/>
+    <act>
+      <templateId root="2.16.840.1.113883.10.20.23.97"/>
+      <id root="921508313" extension="MDHT"/>
+      <code codeSystem="2.16.840.1.113883.3.26.1.1"/>
+      <statusCode code="completed"/>
+      <effectiveTime>
+        <low value="2012"/>
+        <high value="2012"/>
+      </effectiveTime>
+      <entryRelationship typeCode="COMP"/>
+    </act>
+  </entryRelationship>
+  <entryRelationship>
+    <observation classCode="OBS" moodCode="EVN">
+      <templateId root="2.16.840.1.113883.10.20.23.23"/>
+      <id root="764870565" extension="MDHT"/>
+      <code code="C49569" codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="NCI Thesaurus"/>
+      <statusCode code="completed"/>
+      <effectiveTime>
+        <low value="2012"/>
+        <high value="2012"/>
+      </effectiveTime>
+      <value xsi:type="ED">Text Value</value>
+      <participant/>
+      <entryRelationship/>
+    </observation>
+  </entryRelationship>
+  <entryRelationship>
+    <observation>
+      <templateId root="2.16.840.1.113883.10.20.23.30"/>
+      <id root="1147289852" extension="MDHT"/>
+      <code code="C66734" codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="NCI Thesaurus"/>
+      <statusCode code="completed"/>
+      <effectiveTime>
+        <low value="2012"/>
+        <high value="2012"/>
+      </effectiveTime>
+      <value xsi:type="CD" code="827875752"/>
+    </observation>
+  </entryRelationship>
+  <entryRelationship>
+    <act classCode="ACT">
+      <templateId root="2.16.840.1.113883.10.20.23.75"/>
+      <id root="2067657302" extension="MDHT"/>
       <code codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="NCI Thesaurus"/>
       <statusCode code="completed"/>
       <effectiveTime>
         <low value="2012"/>
         <high value="2012"/>
       </effectiveTime>
-      <entryRelationship typeCode="COMP">
-        <act classCode="ACT"/>
-      </entryRelationship>
     </act>
+  </entryRelationship>
+  <entryRelationship>
+    <observation classCode="OBS" moodCode="EVN">
+      <templateId root="2.16.840.1.113883.10.20.23.96"/>
+      <id root="2096433562" extension="MDHT"/>
+      <code codeSystem="locally defined" codeSystemName="Supplemental Value Type"/>
+      <statusCode code="completed"/>
+      <effectiveTime>
+        <low value="2012"/>
+        <high value="2012"/>
+      </effectiveTime>
+      <participant/>
+      <entryRelationship typeCode="COMP"/>
+    </observation>
+  </entryRelationship>
+  <entryRelationship>
+    <observation classCode="OBS" moodCode="EVN">
+      <templateId root="2.16.840.1.113883.10.20.23.20"/>
+      <id root="1640971130" extension="MDHT"/>
+      <code codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="NCI Thesaurus"/>
+      <statusCode code="completed"/>
+      <effectiveTime>
+        <low value="2012"/>
+        <high value="2012"/>
+      </effectiveTime>
+      <value xsi:type="CD" code="771060300"/>
+    </observation>
+  </entryRelationship>
+  <entryRelationship>
+    <observation/>
+  </entryRelationship>
+  <entryRelationship>
+    <observation>
+      <id root="1830092825" extension="MDHT"/>
+      <code code="558701466"/>
+      <statusCode code="completed"/>
+      <effectiveTime>
+        <low value="2012"/>
+        <high value="2012"/>
+      </effectiveTime>
+      <participant/>
+      <entryRelationship typeCode="REFR"/>
+      <entryRelationship>
+        <act classCode="ACT">
+          <templateId root="2.16.840.1.113883.10.20.23.42"/>
+          <code code="C83204" codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="NCI Thesaurus"/>
+        </act>
+      </entryRelationship>
+      <entryRelationship>
+        <observation classCode="OBS">
+          <templateId root="2.16.840.1.113883.10.20.23.56"/>
+          <code codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="NCI Thesaurus" displayName="Reason for non completion"/>
+        </observation>
+      </entryRelationship>
+      <entryRelationship>
+        <act/>
+      </entryRelationship>
+      <entryRelationship>
+        <observation classCode="OBS" moodCode="EVN">
+          <templateId root="2.16.840.1.113883.10.20.23.20"/>
+          <code codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="NCI Thesaurus"/>
+        </observation>
+      </entryRelationship>
+      <entryRelationship>
+        <observation/>
+      </entryRelationship>
+      <entryRelationship>
+        <observation>
+          <templateId root="2.16.840.1.113883.10.20.23.30"/>
+          <code code="C66734" codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="NCI Thesaurus"/>
+        </observation>
+      </entryRelationship>
+    </observation>
   </entryRelationship>
 </observation>]]></codeblock>
 <section id="changes">
 </section>
 <p><ph id="classformalname">Pharmacokinetic Parameter Finding</ph></p>
-<p id="shortdesc">[Observation: templateId <tt>2.16.840.1.113883.10.20.23.40</tt>]</p>
+<p id="shortdesc">[Observation: templateId <tt>2.16.840.1.113883.10.20.23.66</tt>]</p>
 </body>
 </topic>

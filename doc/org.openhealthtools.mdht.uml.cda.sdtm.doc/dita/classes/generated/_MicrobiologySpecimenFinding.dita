@@ -2,107 +2,401 @@
 <!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
 <topic id="classId" xml:lang="en-us">
 <title>Microbiology Specimen Finding - conformance rules</title>
-<shortdesc id="shortdesc">[Observation: templateId <tt>2.16.840.1.113883.10.20.23.38</tt>]</shortdesc>
+<shortdesc id="shortdesc">[Observation: templateId <tt>2.16.840.1.113883.10.20.23.53</tt>]</shortdesc>
 <prolog id="prolog">
 <metadata><category>Observation</category></metadata>
-<resourceid id="2.16.840.1.113883.10.20.23.38"/>
+<resourceid id="2.16.840.1.113883.10.20.23.53"/>
 </prolog>
 <body>
 <section id="description">
-<p>The structure is used to store microbiololgy findings that include organisms found, gram stain results, and organism growth status.</p>
+<p>The template is used to store microbiololgy findings that include organisms found, gram stain results, and organism growth status.</p>
 </section>
 <ol id="conformance">
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@classCode</b>="OBS" </tt><i>Observation</i> (CodeSystem:<tt> 2.16.840.1.113883.5.6 HL7ActClass</tt>)
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@classCode</b>="OBS" </tt><i>Observation</i> (CodeSystem:<tt> 2.16.840.1.113883.5.6 HL7ActClass</tt>) (CONF:679)
 </li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@moodCode</b>="EVN" </tt><i>Event</i> (CodeSystem:<tt> 2.16.840.1.113883.5.1001 HL7ActMood</tt>)
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@moodCode</b>="EVN" </tt><i>Event</i> (CodeSystem:<tt> 2.16.840.1.113883.5.1001 HL7ActMood</tt>) (CONF:680)
 </li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt>
+<li><b>SHALL</b> contain  [1..2] <tt><b>id</b></tt> (CONF:681)
+<ul><li>A value that is provided to ensure the uniqueness of the microbiology finding.  [SDTM: MBSEQ, MBSPID]   A single identifier, the sequence number, is required.</li></ul></li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:682), where the @code <b>SHALL</b> be selected from ValueSet<tt> <xref href="../../terminology/MicrobiologyFindingSet.dita">Microbiology Finding Set</xref> locally defined</tt><b> STATIC</b> (CONF:1539)
 <ul><li>A coded value that identifies the microbiology finding.  The verbatim text is placed within the original text property of the CD data type.  [SDTM: MBTESTCD, MBTEST. MBLOINC]  If the LOINC code is available it should be used as the base code within the CD type.</li></ul></li>
-<li><b>SHALL</b> contain  [1..3] <tt><b>id</b></tt>
-<ul><li>A value that is provided to ensure the uniqueness of the microbiology finding.  [SDTM: MBSEQ, MBREFID, MBSPID]   A single identifier, the sequence number, is required.</li></ul></li>
-<li><b>SHOULD</b> contain zero or more [0..*] <tt><b>methodCode</b></tt>
-<ul><li>Indicates the method of the test or examination.  [SDTM: MBMETHOD]</li></ul></li>
-<li><b>MAY</b> contain zero or one [0..1] <tt><b>statusCode</b></tt>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>statusCode</b></tt> (CONF:684), where the @code <b>SHALL</b> be selected from (CodeSystem:<tt> 2.16.840.1.113883.5.14 ActStatus</tt>) (CONF:1540)
 <ul><li>Used to indicate whether or not an exam has been performed.  [SDTM: MBSTAT]</li></ul></li>
-<li><b>SHOULD</b> contain zero or more [0..*] <tt><b>value</b></tt>
-<ul><li>The microbiology specimen result, using both original units and a standard format or set of units.  [SDTM: MBORRES, MBORRESU, MBSTRESC, MBSTRESN, MBSTRESU]</li></ul></li>
-<li><b>SHOULD</b> contain zero or one [0..1] <tt><b>entryRelationship</b></tt>
+<li><b>SHOULD</b> contain zero or more [0..*] <tt><b>value</b></tt> (CONF:685)
+<ul><li>The microbiology specimen result, as up to three observation values, using both original units and a standard format or set of units.  The finding may be recorded as a coded value - if the result is character based - or as a physical quantity - if the result is  numeric. [SDTM: MBORRES, MBORRESU, MBSTRESC, MBSTRESN, MBSTRESU]</li></ul></li>
+<li><b>SHOULD</b> contain zero or one [0..1] <tt><b>methodCode</b></tt> (CONF:686), where the @code <b>SHALL</b> be selected from ValueSet<tt> <xref href="../../terminology/Method.dita">Method</xref> C85492</tt><b> STATIC</b> (CONF:687)
+<ul><li>Indicates the method of the test or examination.  [SDTM: MBMETHOD]</li></ul></li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>entryRelationship</b></tt> (CONF:688)
+<ul><li>Identifies the SDTM or SEND domain the record is assigned to.</li></ul><ol>
+<li>Contains <tt><b>@typeCode="</b>REFR" </tt><i>REFR</i></li>
+<li>Contains exactly one [1..1] <xref href="../DomainAssignment.dita">Domain Assignment</xref> (templateId: <tt>2.16.840.1.113883.10.20.23.30</tt>)</li></ol></li>
+<li><b>SHOULD</b> contain zero or one [0..1] <tt><b>entryRelationship</b></tt> (CONF:689)
 <ul><li>Allows capture of a group identifier for the finding.</li></ul><ol>
 <li>Contains <tt><b>@typeCode="</b>COMP" </tt><i>COMP</i></li>
-<li>Contains exactly one [1..1] <xref href="../GroupIdentifier.dita">Group Identifier</xref> (templateId: <tt>2.16.840.1.113883.10.20.23.63</tt>)</li></ol></li>
-<li><b>MAY</b> contain zero or one [0..1] <tt><b>entryRelationship</b></tt> <p><i>Indicates a category the specimen related test or measure is assigned to.</i></p><ol><li> This entryRelationship <b>SHALL</b> contain exactly one [1..1] <tt><b>@typeCode</b>="COMP" </tt></li><li> This entryRelationship <b>SHALL</b> contain exactly one [1..1] <tt><b>microbiologySpecimenFindingCategory</b></tt> with data type <xref href="../MicrobiologySpecimenFindingCategory.dita">microbiology Specimen Finding Category</xref></li></ol>
-</li>
-<li><b>MAY</b> contain zero or one [0..1] <tt><b>entryRelationship</b></tt> <p><i>Indicates a subcategory the specimen related test or measure is assigned to.</i></p><ol><li> This entryRelationship <b>SHALL</b> contain exactly one [1..1] <tt><b>@typeCode</b>="COMP" </tt></li><li> This entryRelationship <b>SHALL</b> contain exactly one [1..1] <tt><b>microbiologySpecimenFindingSubCategory</b></tt> with data type <xref href="../MicrobiologySpecimenFindingSubCategory.dita">microbiology Specimen Finding Sub Category</xref></li></ol>
-</li>
-<li><b>MAY</b> contain zero or one [0..1] <tt><b>study Test Performer</b></tt>
-<ul><li>Used to record the organization performing the test.</li></ul><ol>
-<li>Contains exactly one [1..1] <xref href="../StudyTestPerformer.dita">Study Test Performer</xref> (templateId: <tt>2.16.840.1.113883.10.20.23.73</tt>)</li></ol></li>
-<li><b>SHALL</b> contain zero or one [0..1] <tt><b>entryRelationship</b></tt>
+<li>Contains exactly one [1..1] <xref href="../GroupIdentifier.dita">Group Identifier</xref> (templateId: <tt>2.16.840.1.113883.10.20.23.42</tt>)</li></ol></li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>entryRelationship</b></tt> (CONF:690)
 <ul><li>Provides a reason for not capturing information for the finding.</li></ul><ol>
-<li>Contains exactly one [1..1] <xref href="../NonPerformanceReason.dita">Non Performance Reason</xref> (templateId: <tt>2.16.840.1.113883.10.20.23.64</tt>)</li></ol></li>
-<li><b>MAY</b> contain zero or one [0..1] <tt><b>entryRelationship</b></tt>
-<ul><li>Used to capture information about the specimen used as the direct subject of the test.</li></ul><ol>
 <li>Contains <tt><b>@typeCode="</b>COMP" </tt><i>COMP</i></li>
-<li>Contains exactly one [1..1] <xref href="../SpecimenInformation.dita">Specimen Information</xref> (templateId: <tt>2.16.840.1.113883.10.20.23.67</tt>)</li></ol></li>
-<li><b>MAY</b> contain zero or one [0..1] <tt><b>entryRelationship</b></tt>
-<ul><li>Used to indicate whether or not a result is considered a baseline value for the study.</li></ul><ol>
+<li>Contains exactly one [1..1] <xref href="../NonPerformanceReason.dita">Non Performance Reason</xref> (templateId: <tt>2.16.840.1.113883.10.20.23.56</tt>)</li></ol></li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>entryRelationship</b></tt> (CONF:691)
+<ul><li>Information on the specimen that was tested to derive the observation value.  It may include information on the collection of the specimen as well as on the specimen itself.</li></ul><ol>
 <li>Contains <tt><b>@typeCode="</b>COMP" </tt><i>COMP</i></li>
-<li>Contains exactly one [1..1] <xref href="../BaselineIndicator.dita">Baseline Indicator</xref> (templateId: <tt>2.16.840.1.113883.10.20.23.56</tt>)</li></ol></li>
-<li><b>MAY</b> contain zero or one [0..1] <tt><b>entryRelationship</b></tt>
-<ul><li>Used to indicate whether or not a data value has derived frrom the results of other tests or inquiries.</li></ul><ol>
+<li>Contains exactly one [1..1] <xref href="../SpecimenInformation.dita">Specimen Information</xref> (templateId: <tt>2.16.840.1.113883.10.20.23.78</tt>)</li></ol></li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>participant</b></tt> (CONF:692)
+<ul><li>Used to identify the organization that performed the test.</li></ul><ol>
+<li>Contains exactly one [1..1] <xref href="../StudyTestOrganization.dita">Study Test Organization</xref> (templateId: <tt>2.16.840.1.113883.10.20.23.88</tt>)</li></ol></li>
+<li><b>MAY</b> contain  [0..2] <tt><b>interpretationCode</b></tt> (CONF:693), where the @code <b>SHALL</b> be selected from ValueSet<tt> <xref href="../../terminology/SubjectDataInterpretationType.dita">Subject Data Interpretation Type</xref> CXXXXX</tt><b> STATIC</b> (CONF:694)
+<ul><li>Includes information used to better interpret the observation value (result).  In particular, whether a value is a baseline value, and whether it has been derived.  [SDTM: MBBLFL, MBDRVFL]</li></ul></li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>entryRelationship</b></tt> (CONF:695)
+<ul><li>The record of a category to be used in organizing information items.</li></ul><ol>
 <li>Contains <tt><b>@typeCode="</b>COMP" </tt><i>COMP</i></li>
-<li>Contains exactly one [1..1] <xref href="../DerivedDataIndicator.dita">Derived Data Indicator</xref> (templateId: <tt>2.16.840.1.113883.10.20.23.60</tt>)</li></ol></li>
-<li>Contains zero or one [0..1] <tt><b>entryRelationship</b></tt> <p><i>Indicates a category the result of the specimen related test or measure is assigned to.</i></p><ol><li> This entryRelationship <b>SHALL</b> contain exactly one [1..1] <tt><b>@typeCode</b>="COMP" </tt></li><li> This entryRelationship <b>SHALL</b> contain exactly one [1..1] <tt><b>microbiologyResultCategory</b></tt> with data type <xref href="../MicrobiologyResultCategory.dita">microbiology Result Category</xref></li></ol>
-</li>
+<li>Contains exactly one [1..1] <xref href="../Category.dita">Category</xref> (templateId: <tt>2.16.840.1.113883.10.20.23.20</tt>)</li></ol></li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>entryRelationship</b></tt> (CONF:696)
+<ul><li>The record of a sub-category to be used in organizing information items.</li></ul><ol>
+<li>Contains <tt><b>@typeCode="</b>COMP" </tt><i>COMP</i></li>
+<li>Contains exactly one [1..1] <xref href="../SubCategory.dita">Sub- Category</xref> (templateId: <tt>2.16.840.1.113883.10.20.23.91</tt>)</li></ol></li>
+<li><b>SHOULD</b> contain zero or one [0..1] <tt><b>entryRelationship</b></tt> (CONF:697)
+<ul><li>The record of a category to be used in organizing finding or observation results.</li></ul><ol>
+<li>Contains <tt><b>@typeCode="</b>COMP" </tt><i>COMP</i></li>
+<li>Contains exactly one [1..1] <xref href="../ResultCategory.dita">Result Category</xref> (templateId: <tt>2.16.840.1.113883.10.20.23.76</tt>)</li></ol></li>
+<li><b>MAY</b> contain zero or more [0..*] <tt><b>entryRelationship</b></tt> (CONF:698)
+<ul><li>Establishes a relationship between this record and another record.</li></ul><ol>
+<li>Contains <tt><b>@typeCode="</b>REFR" </tt><i>REFR</i></li>
+<li>Contains exactly one [1..1] <xref href="../RelatedRecord.dita">Related Record</xref> (templateId: <tt>2.16.840.1.113883.10.20.23.75</tt>)</li></ol></li>
+<li><b>MAY</b> contain zero or more [0..*] <tt><b>entryRelationship</b></tt> (CONF:699)
+<ul><li>Allows the association of a supplemental value - outside of the content specfied for the domain - to the record.</li></ul><ol>
+<li>Contains <tt><b>@typeCode="</b>COMP" </tt><i>COMP</i></li>
+<li>Contains exactly one [1..1] <xref href="../SupplementalValue.dita">Supplemental Value</xref> (templateId: <tt>2.16.840.1.113883.10.20.23.96</tt>)</li></ol></li>
+<li><b>MAY</b> contain zero or more [0..*] <tt><b>entryRelationship</b></tt> (CONF:700)
+<ul><li>A place to insert comments related to a particular finding.</li></ul><ol>
+<li>Contains <tt><b>@typeCode="</b>COMP" </tt><i>COMP</i></li>
+<li>Contains exactly one [1..1] <xref href="../Comment.dita">Comment</xref> (templateId: <tt>2.16.840.1.113883.10.20.23.23</tt>)</li></ol></li>
+<li><b>MAY</b> contain zero or more [0..*] <tt><b>entryRelationship</b></tt> (CONF:701)
+<ul><li>Allows recording of additional findings related to the event.</li></ul><ol>
+<li>Contains <tt><b>@typeCode="</b>COMP" </tt><i>COMP</i></li>
+<li>Contains exactly one [1..1] <xref href="../FindingAbout.dita">Finding About</xref> (templateId: <tt>2.16.840.1.113883.10.20.23.40</tt>)</li></ol></li>
 </ol>
 <ol id="aggregate">
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@classCode</b>="OBS" </tt><i>Observation</i> (CodeSystem:<tt> 2.16.840.1.113883.5.6 HL7ActClass</tt>)
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@classCode</b>="OBS" </tt><i>Observation</i> (CodeSystem:<tt> 2.16.840.1.113883.5.6 HL7ActClass</tt>) (CONF:679)
 </li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@moodCode</b>="EVN" </tt><i>Event</i> (CodeSystem:<tt> 2.16.840.1.113883.5.1001 HL7ActMood</tt>)
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@moodCode</b>="EVN" </tt><i>Event</i> (CodeSystem:<tt> 2.16.840.1.113883.5.1001 HL7ActMood</tt>) (CONF:680)
 </li>
-<li><b>SHALL</b> contain  [1..3] <tt><b>id</b></tt>
-<ul><li>A value that is provided to ensure the uniqueness of the microbiology finding.  [SDTM: MBSEQ, MBREFID, MBSPID]   A single identifier, the sequence number, is required.</li></ul></li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt>
+<li><b>SHALL</b> contain  [1..2] <tt><b>id</b></tt> (CONF:681)
+<ul><li>A value that is provided to ensure the uniqueness of the microbiology finding.  [SDTM: MBSEQ, MBSPID]   A single identifier, the sequence number, is required.</li></ul></li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:682), where the @code <b>SHALL</b> be selected from ValueSet<tt> <xref href="../../terminology/MicrobiologyFindingSet.dita">Microbiology Finding Set</xref> locally defined</tt><b> STATIC</b> (CONF:1539)
 <ul><li>A coded value that identifies the microbiology finding.  The verbatim text is placed within the original text property of the CD data type.  [SDTM: MBTESTCD, MBTEST. MBLOINC]  If the LOINC code is available it should be used as the base code within the CD type.</li></ul></li>
-<li><b>MAY</b> contain zero or one [0..1] <tt><b>statusCode</b></tt>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>statusCode</b></tt> (CONF:684), where the @code <b>SHALL</b> be selected from (CodeSystem:<tt> 2.16.840.1.113883.5.14 ActStatus</tt>) (CONF:1540)
 <ul><li>Used to indicate whether or not an exam has been performed.  [SDTM: MBSTAT]</li></ul></li>
-<li><b>SHOULD</b> contain zero or more [0..*] <tt><b>value</b></tt>
-<ul><li>The microbiology specimen result, using both original units and a standard format or set of units.  [SDTM: MBORRES, MBORRESU, MBSTRESC, MBSTRESN, MBSTRESU]</li></ul></li>
-<li><b>SHOULD</b> contain zero or more [0..*] <tt><b>methodCode</b></tt>
+<li><b>SHOULD</b> contain zero or more [0..*] <tt><b>value</b></tt> (CONF:685)
+<ul><li>The microbiology specimen result, as up to three observation values, using both original units and a standard format or set of units.  The finding may be recorded as a coded value - if the result is character based - or as a physical quantity - if the result is  numeric. [SDTM: MBORRES, MBORRESU, MBSTRESC, MBSTRESN, MBSTRESU]</li></ul></li>
+<li><b>MAY</b> contain  [0..2] <tt><b>interpretationCode</b></tt> (CONF:693), where the @code <b>SHALL</b> be selected from ValueSet<tt> <xref href="../../terminology/SubjectDataInterpretationType.dita">Subject Data Interpretation Type</xref> CXXXXX</tt><b> STATIC</b> (CONF:694)
+<ul><li>Includes information used to better interpret the observation value (result).  In particular, whether a value is a baseline value, and whether it has been derived.  [SDTM: MBBLFL, MBDRVFL]</li></ul></li>
+<li><b>SHOULD</b> contain zero or one [0..1] <tt><b>methodCode</b></tt> (CONF:686), where the @code <b>SHALL</b> be selected from ValueSet<tt> <xref href="../../terminology/Method.dita">Method</xref> C85492</tt><b> STATIC</b> (CONF:687)
 <ul><li>Indicates the method of the test or examination.  [SDTM: MBMETHOD]</li></ul></li>
-<li><b>SHOULD</b> contain zero or one [0..1] <tt><b>entryRelationship</b></tt>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>entryRelationship</b></tt> (CONF:688)
+<ol>
+<li>Contains <tt><b>@typeCode="</b>REFR" </tt><i>REFR</i></li>
+<li>Contains exactly one [1..1] <xref href="../DomainAssignment.dita">Domain Assignment</xref> (templateId: <tt>2.16.840.1.113883.10.20.23.30</tt>)</li></ol><ul><li>Identifies the SDTM or SEND domain the record is assigned to.</li></ul></li>
+<li><b>SHOULD</b> contain zero or one [0..1] <tt><b>entryRelationship</b></tt> (CONF:689)
 <ol>
 <li>Contains <tt><b>@typeCode="</b>COMP" </tt><i>COMP</i></li>
-<li>Contains exactly one [1..1] <xref href="../GroupIdentifier.dita">Group Identifier</xref> (templateId: <tt>2.16.840.1.113883.10.20.23.63</tt>)</li></ol><ul><li>Allows capture of a group identifier for the finding.</li></ul></li>
-<li><b>MAY</b> contain zero or one [0..1] <tt><b>entryRelationship</b></tt> <p><i>Indicates a category the specimen related test or measure is assigned to.</i></p><ol><li> This entryRelationship <b>SHALL</b> contain exactly one [1..1] <tt><b>@typeCode</b>="COMP" </tt></li><li> This entryRelationship <b>SHALL</b> contain exactly one [1..1] <tt><b>microbiologySpecimenFindingCategory</b></tt> with data type <xref href="../MicrobiologySpecimenFindingCategory.dita">microbiology Specimen Finding Category</xref></li></ol>
-</li>
-<li><b>MAY</b> contain zero or one [0..1] <tt><b>entryRelationship</b></tt> <p><i>Indicates a subcategory the specimen related test or measure is assigned to.</i></p><ol><li> This entryRelationship <b>SHALL</b> contain exactly one [1..1] <tt><b>@typeCode</b>="COMP" </tt></li><li> This entryRelationship <b>SHALL</b> contain exactly one [1..1] <tt><b>microbiologySpecimenFindingSubCategory</b></tt> with data type <xref href="../MicrobiologySpecimenFindingSubCategory.dita">microbiology Specimen Finding Sub Category</xref></li></ol>
-</li>
-<li><b>MAY</b> contain zero or one [0..1] <tt><b>study Test Performer</b></tt>
-<ol>
-<li>Contains exactly one [1..1] <xref href="../StudyTestPerformer.dita">Study Test Performer</xref> (templateId: <tt>2.16.840.1.113883.10.20.23.73</tt>)</li></ol><ul><li>Used to record the organization performing the test.</li></ul></li>
-<li><b>SHALL</b> contain zero or one [0..1] <tt><b>entryRelationship</b></tt>
-<ol>
-<li>Contains exactly one [1..1] <xref href="../NonPerformanceReason.dita">Non Performance Reason</xref> (templateId: <tt>2.16.840.1.113883.10.20.23.64</tt>)</li></ol><ul><li>Provides a reason for not capturing information for the finding.</li></ul></li>
-<li><b>MAY</b> contain zero or one [0..1] <tt><b>entryRelationship</b></tt>
+<li>Contains exactly one [1..1] <xref href="../GroupIdentifier.dita">Group Identifier</xref> (templateId: <tt>2.16.840.1.113883.10.20.23.42</tt>)</li></ol><ul><li>Allows capture of a group identifier for the finding.</li></ul></li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>entryRelationship</b></tt> (CONF:690)
 <ol>
 <li>Contains <tt><b>@typeCode="</b>COMP" </tt><i>COMP</i></li>
-<li>Contains exactly one [1..1] <xref href="../SpecimenInformation.dita">Specimen Information</xref> (templateId: <tt>2.16.840.1.113883.10.20.23.67</tt>)</li></ol><ul><li>Used to capture information about the specimen used as the direct subject of the test.</li></ul></li>
-<li><b>MAY</b> contain zero or one [0..1] <tt><b>entryRelationship</b></tt>
+<li>Contains exactly one [1..1] <xref href="../NonPerformanceReason.dita">Non Performance Reason</xref> (templateId: <tt>2.16.840.1.113883.10.20.23.56</tt>)</li></ol><ul><li>Provides a reason for not capturing information for the finding.</li></ul></li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>entryRelationship</b></tt> (CONF:691)
 <ol>
 <li>Contains <tt><b>@typeCode="</b>COMP" </tt><i>COMP</i></li>
-<li>Contains exactly one [1..1] <xref href="../BaselineIndicator.dita">Baseline Indicator</xref> (templateId: <tt>2.16.840.1.113883.10.20.23.56</tt>)</li></ol><ul><li>Used to indicate whether or not a result is considered a baseline value for the study.</li></ul></li>
-<li><b>MAY</b> contain zero or one [0..1] <tt><b>entryRelationship</b></tt>
+<li>Contains exactly one [1..1] <xref href="../SpecimenInformation.dita">Specimen Information</xref> (templateId: <tt>2.16.840.1.113883.10.20.23.78</tt>)</li></ol><ul><li>Information on the specimen that was tested to derive the observation value.  It may include information on the collection of the specimen as well as on the specimen itself.</li></ul></li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>participant</b></tt> (CONF:692)
+<ol>
+<li>Contains exactly one [1..1] <xref href="../StudyTestOrganization.dita">Study Test Organization</xref> (templateId: <tt>2.16.840.1.113883.10.20.23.88</tt>)</li></ol><ul><li>Used to identify the organization that performed the test.</li></ul></li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>entryRelationship</b></tt> (CONF:695)
 <ol>
 <li>Contains <tt><b>@typeCode="</b>COMP" </tt><i>COMP</i></li>
-<li>Contains exactly one [1..1] <xref href="../DerivedDataIndicator.dita">Derived Data Indicator</xref> (templateId: <tt>2.16.840.1.113883.10.20.23.60</tt>)</li></ol><ul><li>Used to indicate whether or not a data value has derived frrom the results of other tests or inquiries.</li></ul></li>
-<li>Contains zero or one [0..1] <tt><b>entryRelationship</b></tt> <p><i>Indicates a category the result of the specimen related test or measure is assigned to.</i></p><ol><li> This entryRelationship <b>SHALL</b> contain exactly one [1..1] <tt><b>@typeCode</b>="COMP" </tt></li><li> This entryRelationship <b>SHALL</b> contain exactly one [1..1] <tt><b>microbiologyResultCategory</b></tt> with data type <xref href="../MicrobiologyResultCategory.dita">microbiology Result Category</xref></li></ol>
-</li>
+<li>Contains exactly one [1..1] <xref href="../Category.dita">Category</xref> (templateId: <tt>2.16.840.1.113883.10.20.23.20</tt>)</li></ol><ul><li>The record of a category to be used in organizing information items.</li></ul></li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>entryRelationship</b></tt> (CONF:696)
+<ol>
+<li>Contains <tt><b>@typeCode="</b>COMP" </tt><i>COMP</i></li>
+<li>Contains exactly one [1..1] <xref href="../SubCategory.dita">Sub- Category</xref> (templateId: <tt>2.16.840.1.113883.10.20.23.91</tt>)</li></ol><ul><li>The record of a sub-category to be used in organizing information items.</li></ul></li>
+<li><b>SHOULD</b> contain zero or one [0..1] <tt><b>entryRelationship</b></tt> (CONF:697)
+<ol>
+<li>Contains <tt><b>@typeCode="</b>COMP" </tt><i>COMP</i></li>
+<li>Contains exactly one [1..1] <xref href="../ResultCategory.dita">Result Category</xref> (templateId: <tt>2.16.840.1.113883.10.20.23.76</tt>)</li></ol><ul><li>The record of a category to be used in organizing finding or observation results.</li></ul></li>
+<li><b>MAY</b> contain zero or more [0..*] <tt><b>entryRelationship</b></tt> (CONF:698)
+<ol>
+<li>Contains <tt><b>@typeCode="</b>REFR" </tt><i>REFR</i></li>
+<li>Contains exactly one [1..1] <xref href="../RelatedRecord.dita">Related Record</xref> (templateId: <tt>2.16.840.1.113883.10.20.23.75</tt>)</li></ol><ul><li>Establishes a relationship between this record and another record.</li></ul></li>
+<li><b>MAY</b> contain zero or more [0..*] <tt><b>entryRelationship</b></tt> (CONF:699)
+<ol>
+<li>Contains <tt><b>@typeCode="</b>COMP" </tt><i>COMP</i></li>
+<li>Contains exactly one [1..1] <xref href="../SupplementalValue.dita">Supplemental Value</xref> (templateId: <tt>2.16.840.1.113883.10.20.23.96</tt>)</li></ol><ul><li>Allows the association of a supplemental value - outside of the content specfied for the domain - to the record.</li></ul></li>
+<li><b>MAY</b> contain zero or more [0..*] <tt><b>entryRelationship</b></tt> (CONF:700)
+<ol>
+<li>Contains <tt><b>@typeCode="</b>COMP" </tt><i>COMP</i></li>
+<li>Contains exactly one [1..1] <xref href="../Comment.dita">Comment</xref> (templateId: <tt>2.16.840.1.113883.10.20.23.23</tt>)</li></ol><ul><li>A place to insert comments related to a particular finding.</li></ul></li>
+<li><b>MAY</b> contain zero or more [0..*] <tt><b>entryRelationship</b></tt> (CONF:701)
+<ol>
+<li>Contains <tt><b>@typeCode="</b>COMP" </tt><i>COMP</i></li>
+<li>Contains exactly one [1..1] <xref href="../FindingAbout.dita">Finding About</xref> (templateId: <tt>2.16.840.1.113883.10.20.23.40</tt>)</li></ol><ul><li>Allows recording of additional findings related to the event.</li></ul></li>
 </ol>
-<codeblock id="example"><![CDATA[]]></codeblock>
+<section id="tableconformance"><p><table frame="all" scale="80" pgwide="1" ><tgroup cols="8" align="left" colsep = "1" rowsep = "1" > <colspec colname="col0" colnum="0" /><colspec colname="col1" colnum="1" /><colspec colname="col2" colnum="2" /><colspec colname="col3" colnum="3" /><colspec colname="col4" colnum="4" /><colspec colname="col5" colnum="5" /><colspec colname="col6" colnum="6" /><colspec colname="col7" colnum="7" /><thead> <row><entry namest="col0" nameend="col7" >sdtm::Microbiology Specimen Finding</entry>  </row>  <row><entry namest="col0" nameend="col7" >cda::observation[cda:templateId/@root = 2.16.840.1.113883.10.20.23.53]/</entry>  </row>  <row><entry>Name</entry><entry>XPath</entry><entry>Cardinality</entry><entry>Severity</entry><entry>Nullable</entry><entry>Data Type</entry><entry>Conformance</entry><entry>Value(s)</entry></row></thead><tbody><row><entry>classCode</entry><entry>@classCode</entry><entry>1..1</entry><entry>SHALL</entry><entry>NO</entry><entry>ActClassObservation</entry><entry>CONF:679</entry><entry> ALRT</entry></row> 
+<row><entry>moodCode</entry><entry>@moodCode</entry><entry>1..1</entry><entry>SHALL</entry><entry>NO</entry><entry>x_ActMoodDocumentObservation</entry><entry>CONF:680</entry><entry> DEF</entry></row> 
+<row><entry>negationInd</entry><entry>@negationInd</entry><entry>0..1</entry><entry></entry><entry>NO</entry><entry>Boolean</entry><entry></entry><entry> </entry></row> 
+<row><entry>nullFlavor</entry><entry>@nullFlavor</entry><entry>0..1</entry><entry></entry><entry>NO</entry><entry>NullFlavor</entry><entry></entry><entry> ASKU</entry></row> 
+<row><entry>code</entry><entry>code</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>CD</entry><entry>CONF:682</entry><entry> null</entry></row> 
+<row><entry>derivationExpr</entry><entry>derivationExpr</entry><entry>0..1</entry><entry></entry><entry>YES</entry><entry>ST</entry><entry></entry><entry> </entry></row> 
+<row><entry>effectiveTime</entry><entry>effectiveTime</entry><entry>0..1</entry><entry></entry><entry>YES</entry><entry>IVL_TS</entry><entry></entry><entry> </entry></row> 
+<row><entry>id</entry><entry>id</entry><entry>1..2</entry><entry>SHALL</entry><entry>YES</entry><entry>II</entry><entry>CONF:681</entry><entry> </entry></row> 
+<row><entry>interpretationCode</entry><entry>interpretationCode</entry><entry>0..2</entry><entry>MAY</entry><entry>YES</entry><entry>CE</entry><entry>CONF:693</entry><entry> null</entry></row> 
+<row><entry>languageCode</entry><entry>languageCode</entry><entry>0..1</entry><entry></entry><entry>YES</entry><entry>CS</entry><entry></entry><entry> </entry></row> 
+<row><entry>methodCode</entry><entry>methodCode</entry><entry>0..1</entry><entry>SHOULD</entry><entry>YES</entry><entry>CE</entry><entry>CONF:686</entry><entry> null</entry></row> 
+<row><entry>priorityCode</entry><entry>priorityCode</entry><entry>0..1</entry><entry></entry><entry>YES</entry><entry>CE</entry><entry></entry><entry> </entry></row> 
+<row><entry>realmCode</entry><entry>realmCode</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>CS</entry><entry></entry><entry> </entry></row> 
+<row><entry>repeatNumber</entry><entry>repeatNumber</entry><entry>0..1</entry><entry></entry><entry>YES</entry><entry>IVL_INT</entry><entry></entry><entry> </entry></row> 
+<row><entry>statusCode</entry><entry>statusCode</entry><entry>0..1</entry><entry>MAY</entry><entry>YES</entry><entry>CS</entry><entry>CONF:684</entry><entry>ActStatus 2.16.840.1.113883.5.14 </entry></row> 
+<row><entry>targetSiteCode</entry><entry>targetSiteCode</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>CD</entry><entry></entry><entry> </entry></row> 
+<row><entry>templateId</entry><entry>templateId</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>II</entry><entry></entry><entry> 2.16.840.1.113883.10.20.23.53</entry></row> 
+<row><entry>text</entry><entry>text</entry><entry>0..1</entry><entry></entry><entry>YES</entry><entry>ED</entry><entry></entry><entry> </entry></row> 
+<row><entry>value</entry><entry>value</entry><entry>0..*</entry><entry>SHOULD</entry><entry>YES</entry><entry>ANY</entry><entry>CONF:685</entry><entry> </entry></row> 
+<row><entry>author</entry><entry>author</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>Author</entry><entry></entry><entry> </entry></row> 
+<row><entry>category</entry><entry>category</entry><entry>0..1</entry><entry>MAY</entry><entry>YES</entry><entry>Category</entry><entry>CONF:695</entry><entry> </entry></row> 
+<row><entry>comment</entry><entry>comment</entry><entry>0..*</entry><entry>MAY</entry><entry>YES</entry><entry>Comment</entry><entry>CONF:700</entry><entry> </entry></row> 
+<row><entry>domain Assignment</entry><entry>domain Assignment</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>Domain Assignment</entry><entry>CONF:688</entry><entry> </entry></row> 
+<row><entry>entryRelationship</entry><entry>entryRelationship</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>EntryRelationship</entry><entry></entry><entry> </entry></row> 
+<row><entry>finding About</entry><entry>finding About</entry><entry>0..*</entry><entry>MAY</entry><entry>YES</entry><entry>Finding About</entry><entry>CONF:701</entry><entry> </entry></row> 
+<row><entry>group Identifier</entry><entry>group Identifier</entry><entry>0..1</entry><entry>SHOULD</entry><entry>YES</entry><entry>Group Identifier</entry><entry>CONF:689</entry><entry> </entry></row> 
+<row><entry>informant</entry><entry>informant</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>Informant12</entry><entry></entry><entry> </entry></row> 
+<row><entry>nonPerformanceReason</entry><entry>nonPerformanceReason</entry><entry>0..1</entry><entry>MAY</entry><entry>YES</entry><entry>Non Performance Reason</entry><entry>CONF:690</entry><entry> </entry></row> 
+<row><entry>participant</entry><entry>participant</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>Participant2</entry><entry></entry><entry> </entry></row> 
+<row><entry>performer</entry><entry>performer</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>Performer2</entry><entry></entry><entry> </entry></row> 
+<row><entry>precondition</entry><entry>precondition</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>Precondition</entry><entry></entry><entry> </entry></row> 
+<row><entry>reference</entry><entry>reference</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>Reference</entry><entry></entry><entry> </entry></row> 
+<row><entry>referenceRange</entry><entry>referenceRange</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>ReferenceRange</entry><entry></entry><entry> </entry></row> 
+<row><entry>related Record</entry><entry>related Record</entry><entry>0..*</entry><entry>MAY</entry><entry>YES</entry><entry>Related Record</entry><entry>CONF:698</entry><entry> </entry></row> 
+<row><entry>result Category</entry><entry>result Category</entry><entry>0..1</entry><entry>SHOULD</entry><entry>YES</entry><entry>Result Category</entry><entry>CONF:697</entry><entry> </entry></row> 
+<row><entry>specimen</entry><entry>specimen</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>Specimen</entry><entry></entry><entry> </entry></row> 
+<row><entry>specimen Information</entry><entry>specimen Information</entry><entry>0..1</entry><entry>MAY</entry><entry>YES</entry><entry>Specimen Information</entry><entry>CONF:691</entry><entry> </entry></row> 
+<row><entry>study Test Performer</entry><entry>study Test Performer</entry><entry>0..1</entry><entry>MAY</entry><entry>YES</entry><entry>Study Test Organization</entry><entry>CONF:692</entry><entry> </entry></row> 
+<row><entry>sub-Category</entry><entry>sub-Category</entry><entry>0..1</entry><entry>MAY</entry><entry>YES</entry><entry>Sub-Category</entry><entry>CONF:696</entry><entry> </entry></row> 
+<row><entry>subject</entry><entry>subject</entry><entry>0..1</entry><entry></entry><entry>YES</entry><entry>Subject</entry><entry></entry><entry> </entry></row> 
+<row><entry>supplemental Value</entry><entry>supplemental Value</entry><entry>0..*</entry><entry>MAY</entry><entry>YES</entry><entry>Supplemental Value</entry><entry>CONF:699</entry><entry> </entry></row> 
+<row><entry>typeId</entry><entry>typeId</entry><entry>0..1</entry><entry></entry><entry>YES</entry><entry>InfrastructureRootTypeId</entry><entry></entry><entry> </entry></row> 
+</tbody></tgroup></table></p></section>
+<codeblock id="example"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
+<observation xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd">
+  <templateId root="2.16.840.1.113883.10.20.23.53"/>
+  <id root="792512100" extension="MDHT"/>
+  <code codeSystem="unknown"/>
+  <statusCode code="completed"/>
+  <effectiveTime>
+    <low value="2012"/>
+    <high value="2012"/>
+  </effectiveTime>
+  <interpretationCode codeSystemName="NCI Thesaurus"/>
+  <methodCode codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="NCI Thesaurus"/>
+  <participant>
+    <participantRole classCode="ASSIGNED">
+      <templateId root="null"/>
+    </participantRole>
+  </participant>
+  <entryRelationship>
+    <act classCode="ACT">
+      <templateId root="2.16.840.1.113883.10.20.23.42"/>
+      <id root="1944784523" extension="MDHT"/>
+      <code code="C83204" codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="NCI Thesaurus"/>
+      <statusCode code="completed"/>
+      <effectiveTime>
+        <low value="2012"/>
+        <high value="2012"/>
+      </effectiveTime>
+    </act>
+  </entryRelationship>
+  <entryRelationship>
+    <observation classCode="OBS">
+      <templateId root="2.16.840.1.113883.10.20.23.56"/>
+      <id root="1607411260" extension="MDHT"/>
+      <code codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="NCI Thesaurus" displayName="Reason for non completion"/>
+      <statusCode code="completed"/>
+      <effectiveTime>
+        <low value="2012"/>
+        <high value="2012"/>
+      </effectiveTime>
+      <value xsi:type="CD" code="90190831"/>
+      <interpretationCode code="110688302"/>
+      <methodCode code="18760016"/>
+    </observation>
+  </entryRelationship>
+  <entryRelationship>
+    <procedure>
+      <id root="1899678469" extension="MDHT"/>
+      <code code="1172153714"/>
+      <statusCode code="completed"/>
+      <effectiveTime>
+        <low value="2012"/>
+        <high value="2012"/>
+      </effectiveTime>
+      <methodCode code="1874048813"/>
+      <specimen typeCode="SPC">
+        <templateId root="null"/>
+      </specimen>
+      <entryRelationship typeCode="COMP"/>
+      <entryRelationship typeCode="COMP"/>
+      <entryRelationship typeCode="COMP"/>
+      <entryRelationship>
+        <observation/>
+      </entryRelationship>
+      <entryRelationship>
+        <act>
+          <templateId root="2.16.840.1.113883.10.20.23.97"/>
+          <code codeSystem="2.16.840.1.113883.3.26.1.1"/>
+        </act>
+      </entryRelationship>
+    </procedure>
+  </entryRelationship>
+  <entryRelationship>
+    <observation classCode="OBS" moodCode="EVN">
+      <templateId root="2.16.840.1.113883.10.20.23.23"/>
+      <id root="855068389" extension="MDHT"/>
+      <code code="C49569" codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="NCI Thesaurus"/>
+      <statusCode code="completed"/>
+      <effectiveTime>
+        <low value="2012"/>
+        <high value="2012"/>
+      </effectiveTime>
+      <value xsi:type="ED">Text Value</value>
+      <interpretationCode code="2008773510"/>
+      <methodCode code="77913394"/>
+      <participant/>
+      <entryRelationship/>
+    </observation>
+  </entryRelationship>
+  <entryRelationship>
+    <observation>
+      <templateId root="2.16.840.1.113883.10.20.23.30"/>
+      <id root="1304516877" extension="MDHT"/>
+      <code code="C66734" codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="NCI Thesaurus"/>
+      <statusCode code="completed"/>
+      <effectiveTime>
+        <low value="2012"/>
+        <high value="2012"/>
+      </effectiveTime>
+      <value xsi:type="CD" code="2030378721"/>
+      <interpretationCode code="446333483"/>
+      <methodCode code="1780686784"/>
+    </observation>
+  </entryRelationship>
+  <entryRelationship>
+    <act classCode="ACT">
+      <templateId root="2.16.840.1.113883.10.20.23.75"/>
+      <id root="1781187871" extension="MDHT"/>
+      <code codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="NCI Thesaurus"/>
+      <statusCode code="completed"/>
+      <effectiveTime>
+        <low value="2012"/>
+        <high value="2012"/>
+      </effectiveTime>
+    </act>
+  </entryRelationship>
+  <entryRelationship>
+    <observation classCode="OBS" moodCode="EVN">
+      <templateId root="2.16.840.1.113883.10.20.23.96"/>
+      <id root="1061800725" extension="MDHT"/>
+      <code codeSystem="locally defined" codeSystemName="Supplemental Value Type"/>
+      <statusCode code="completed"/>
+      <effectiveTime>
+        <low value="2012"/>
+        <high value="2012"/>
+      </effectiveTime>
+      <interpretationCode code="646118503"/>
+      <methodCode code="558677521"/>
+      <participant/>
+      <entryRelationship typeCode="COMP"/>
+    </observation>
+  </entryRelationship>
+  <entryRelationship>
+    <observation classCode="OBS" moodCode="EVN">
+      <templateId root="2.16.840.1.113883.10.20.23.20"/>
+      <id root="1285012550" extension="MDHT"/>
+      <code codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="NCI Thesaurus"/>
+      <statusCode code="completed"/>
+      <effectiveTime>
+        <low value="2012"/>
+        <high value="2012"/>
+      </effectiveTime>
+      <value xsi:type="CD" code="471388989"/>
+      <interpretationCode code="1738299634"/>
+      <methodCode code="1872218288"/>
+    </observation>
+  </entryRelationship>
+  <entryRelationship>
+    <observation/>
+  </entryRelationship>
+  <entryRelationship>
+    <observation>
+      <templateId root="2.16.840.1.113883.10.20.23.76"/>
+      <id root="1814275781" extension="MDHT"/>
+      <code codeSystem="2.16.840.1.113883.3.26.1.1"/>
+      <statusCode code="completed"/>
+      <effectiveTime>
+        <low value="2012"/>
+        <high value="2012"/>
+      </effectiveTime>
+      <value xsi:type="CD" code="15552740"/>
+      <interpretationCode code="620840951"/>
+      <methodCode code="780779307"/>
+    </observation>
+  </entryRelationship>
+  <entryRelationship>
+    <observation>
+      <id root="933390295" extension="MDHT"/>
+      <code code="1294957733"/>
+      <statusCode code="completed"/>
+      <effectiveTime>
+        <low value="2012"/>
+        <high value="2012"/>
+      </effectiveTime>
+      <interpretationCode code="1393457395"/>
+      <methodCode code="880355846"/>
+      <participant/>
+      <entryRelationship typeCode="REFR"/>
+      <entryRelationship>
+        <act classCode="ACT">
+          <templateId root="2.16.840.1.113883.10.20.23.42"/>
+          <code code="C83204" codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="NCI Thesaurus"/>
+        </act>
+      </entryRelationship>
+      <entryRelationship>
+        <observation classCode="OBS">
+          <templateId root="2.16.840.1.113883.10.20.23.56"/>
+          <code codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="NCI Thesaurus" displayName="Reason for non completion"/>
+        </observation>
+      </entryRelationship>
+      <entryRelationship>
+        <act/>
+      </entryRelationship>
+      <entryRelationship>
+        <observation classCode="OBS" moodCode="EVN">
+          <templateId root="2.16.840.1.113883.10.20.23.20"/>
+          <code codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="NCI Thesaurus"/>
+        </observation>
+      </entryRelationship>
+      <entryRelationship>
+        <observation/>
+      </entryRelationship>
+      <entryRelationship>
+        <observation>
+          <templateId root="2.16.840.1.113883.10.20.23.30"/>
+          <code code="C66734" codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="NCI Thesaurus"/>
+        </observation>
+      </entryRelationship>
+    </observation>
+  </entryRelationship>
+</observation>]]></codeblock>
 <section id="changes">
 </section>
 <p><ph id="classformalname">Microbiology Specimen Finding</ph></p>
-<p id="shortdesc">[Observation: templateId <tt>2.16.840.1.113883.10.20.23.38</tt>]</p>
+<p id="shortdesc">[Observation: templateId <tt>2.16.840.1.113883.10.20.23.53</tt>]</p>
 </body>
 </topic>

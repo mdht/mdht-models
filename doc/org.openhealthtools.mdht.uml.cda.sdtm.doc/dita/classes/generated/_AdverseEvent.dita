@@ -2,149 +2,247 @@
 <!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
 <topic id="classId" xml:lang="en-us">
 <title>Adverse Event - conformance rules</title>
-<shortdesc id="shortdesc">[Observation: templateId <tt>2.16.840.1.113883.10.20.23.23</tt>]</shortdesc>
+<shortdesc id="shortdesc">[Observation: templateId <tt>2.16.840.1.113883.10.20.23.15</tt>]</shortdesc>
 <prolog id="prolog">
 <metadata><category>Observation</category></metadata>
-<resourceid id="2.16.840.1.113883.10.20.23.23"/>
+<resourceid id="2.16.840.1.113883.10.20.23.15"/>
 </prolog>
 <body>
 <section id="description">
-<p>The structure includes information on an adverse event that ocurred to a study subject.  It should include clinical data describing "any untoward medical occurrence in a patient or clinical investigation subject administered a pharmaceutical product and which does not necessarily have to have a causal relationship with this treatment" (ICH E2A). In consultation with regulatory authorities, sponsors may extend or limit the scope of adverse event collection (e.g., collecting pre-treatment events related to trial conduct, not collecting events that are assessed as efficacy endpoints).</p>
+<p>The template captures data that the SDTM IG organizes into the adverse event domain.  It includes information on each adverse event (not necessarily linked to the study treatment) that ocurred to a study subject.  It should include clinical data describing "any untoward medical occurrence in a patient or clinical investigation subject administered a pharmaceutical product and which does not necessarily have to have a causal relationship with this treatment" (ICH E2A).</p>
 </section>
 <ol id="conformance">
-<li>Contains exactly one [1..1] <tt><b>@classCode</b>="OBS" </tt><i>Observation</i> (CodeSystem:<tt> 2.16.840.1.113883.5.6 HL7ActClass</tt>)
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@classCode</b>="OBS" </tt><i>Observation</i> (CodeSystem:<tt> 2.16.840.1.113883.5.6 HL7ActClass</tt>) (CONF:1517)
 </li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@moodCode</b>="EVN" </tt><i>Event</i> (CodeSystem:<tt> 2.16.840.1.113883.5.1001 HL7ActMood</tt>)
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@moodCode</b>="EVN" </tt><i>Event</i> (CodeSystem:<tt> 2.16.840.1.113883.5.1001 HL7ActMood</tt>) (CONF:108)
 </li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt><tt><b>/@code</b>="TBD" </tt><i>Adverse Event - Reported</i> (CodeSystem:<tt> 2.16.840.1.113883.3.26.1.1 NCI Thesaurus</tt>)
-<ul><li>The code value indicates that this observation is an adverse event.  The verbatim term is captured as original text.  A modified term is representated as a translation. [SDTM: AETERM, AEMODIFY, AEDECOD]</li></ul></li>
-<li><b>SHOULD</b> contain zero or one [0..1] <tt><b>effectiveTime</b></tt>
-<ul><li>Used to capture the start date/time of the adverse event, its end date/time, and/or its duration.  [SDTM: AESTDTC, AEENDTC, AEDUR]</li></ul></li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> with data type CE
-<ul><li>Identifies the adverse event.  [SDTM: AETERM, AEMODIFY, AEDECOD]</li></ul><ol>
-<li><b>SHALL</b> satisfy: Capture the verbatim name of the event using the original text property of the CE type.</li>
-<li><b>SHALL</b> satisfy: Capture the dictionary derived term for the adverse event using the code and codeSystem properties of the CE data type.</li></ol></li>
-<li><b>SHALL</b> contain  [1..3] <tt><b>id</b></tt>
-<ul><li>An identifier for the adverse event.  "An internal or external identifier such as a serial number on an SAE reporting form".  [SDTM: AESEQ, AEREFID, AESPID]  A sequence number is required.</li></ul></li>
-<li><b>MAY</b> contain zero or one [0..1] <tt><b>targetSiteCode</b></tt>
-<ul><li>The anatomic location relevant for the adverse event.  [SDTM: AELOC]</li></ul></li>
-<li><b>MAY</b> contain zero or one [0..1] <tt><b>entryRelationship</b></tt>
+<li><b>SHALL</b> contain  [1..3] <tt><b>id</b></tt> (CONF:109)
+<ul><li>One or more identifiers for the adverse event.  "An internal or external identifier such as a serial number on an SAE reporting form".  [SDTM: AESEQ, AEREFID, AESPID]  To be consistent with SDTM, the sequence number is required.</li></ul></li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:110)<tt><b>/@code</b>="C49562" </tt><i>Adverse Event - Reported</i> (CodeSystem:<tt> 2.16.840.1.113883.3.26.1.1 NCI Thesaurus</tt>) (CONF:111)
+<ul><li>The code value indicates that this observation is an adverse event.</li></ul></li>
+<li><b>SHOULD</b> contain zero or one [0..1] <tt><b>effectiveTime</b></tt> (CONF:112)
+<ul><li>Used to capture the start date/time of the adverse event, its end date/time, and/or its duration.  Implementers should note that only two of the three properties of an interval are supported, since the value of the third would be redundant.  It is reccomended that start and stop date/time be valued if known, and that duration be included only if the start or stop information is unavailable or incomplete.  [SDTM: AESTDTC, AEENDTC, AEDUR]</li></ul></li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> with data type CD (CONF:113), where the @code <b>SHALL</b> be selected from ValueSet<tt> <xref href="../../terminology/AdverseEvent.dita">Adverse Event</xref></tt><b> STATIC</b> (CONF:1518)
+<ul><li>The adverse event information.  The adverse event coded value is captured using the code property of the CD type, while the verbatem term - which is required - is captured using the original text property.  The modified term, if provided, should be captured as a translation element within the CD type. [SDTM: AETERM, AEMODIFY, AEDECOD]</li></ul></li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>targetSiteCode</b></tt> (CONF:114), where the @code <b>SHALL</b> be selected from ValueSet<tt> <xref href="../../terminology/AnatomicalLocation.dita">Anatomical Location</xref> C74456</tt><b> STATIC</b> (CONF:115)
+<ul><li>The anatomic location that is relevant for the adverse event.  [SDTM: AELOC]</li></ul></li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>entryRelationship</b></tt> (CONF:116)
+<ul><li>Indicates the domain assignment for the event.</li></ul><ol>
+<li>Contains <tt><b>@typeCode="</b>REFR" </tt><i>REFR</i></li>
+<li>Contains exactly one [1..1] <xref href="../DomainAssignment.dita">Domain Assignment</xref> (templateId: <tt>2.16.840.1.113883.10.20.23.30</tt>)</li></ol></li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>entryRelationship</b></tt> (CONF:117)
+<ul><li>Indicates whether the type of adverse event that is being reported was prespecified on the CRF.</li></ul><ol>
+<li>Contains <tt><b>@typeCode="</b>COMP" </tt><i>COMP</i></li>
+<li>Contains exactly one [1..1] <xref href="../PreSpecifiedEvent.dita">Pre-Specified Event</xref> (templateId: <tt>2.16.840.1.113883.10.20.23.70</tt>)</li></ol></li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>entryRelationship</b></tt> (CONF:118)
 <ul><li>Allows capture of a group identifier for the adverse event.</li></ul><ol>
 <li>Contains <tt><b>@typeCode="</b>COMP" </tt><i>COMP</i></li>
-<li>Contains exactly one [1..1] <xref href="../GroupIdentifier.dita">Group Identifier</xref> (templateId: <tt>2.16.840.1.113883.10.20.23.63</tt>)</li></ol></li>
-<li><b>SHOULD</b> contain zero or one [0..1] <tt><b>entryRelationship</b></tt>
-<ul><li>Allows identification of the relevant body system or organ class.</li></ul><ol>
+<li>Contains exactly one [1..1] <xref href="../GroupIdentifier.dita">Group Identifier</xref> (templateId: <tt>2.16.840.1.113883.10.20.23.42</tt>)</li></ol></li>
+<li><b>SHOULD</b> contain zero or one [0..1] <tt><b>entryRelationship</b></tt> (CONF:119)
+<ul><li>A statement both of whether or not the adverse event is considered serious, and a record of various types of seriousness, e.g, results in hospitalization, that may be recorded for the adverse event.</li></ul><ol>
 <li>Contains <tt><b>@typeCode="</b>COMP" </tt><i>COMP</i></li>
-<li>Contains exactly one [1..1] <xref href="../BodySystemOrOrganClass.dita">Body System or Organ Class</xref> (templateId: <tt>2.16.840.1.113883.10.20.23.57</tt>)</li></ol></li>
-<li><b>MAY</b> contain zero or one [0..1] <tt><b>entryRelationship</b></tt>
-<ul><li>Carries information about event severity</li></ul><ol>
+<li>Contains exactly one [1..1] <xref href="../SeriousEvent.dita">Serious Event</xref> (templateId: <tt>2.16.840.1.113883.10.20.23.77</tt>)</li></ol></li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>entryRelationship</b></tt> (CONF:120)
+<ul><li>Carries information about the severity or intensity of the adverse event.</li></ul><ol>
 <li>Contains <tt><b>@typeCode="</b>COMP" </tt><i>COMP</i></li>
-<li>Contains exactly one [1..1] <xref href="../EventSeverity.dita">Event Severity</xref> (templateId: <tt>2.16.840.1.113883.10.20.23.61</tt>)</li></ol></li>
-<li><b>SHOULD</b> contain zero or one [0..1] <tt><b>entryRelationship</b></tt> <p><i>Carries information about event seriousness.</i></p><ol><li> This entryRelationship <b>SHALL</b> contain zero or one [0..1] <tt><b>@typeCode</b>="COMP" </tt></li><li> This entryRelationship <b>SHALL</b> contain zero or one [0..1] <tt><b>observation</b></tt> <ol><li> This observation <b>SHALL</b> contain exactly one [1..1] <tt><b>@classCode</b>="OBS" </tt><i>Observation</i> (CodeSystem:<tt> 2.16.840.1.113883.5.6 HL7ActClass</tt>)</li><li> This observation <b>SHALL</b> contain exactly one [1..1] <tt><b>@moodCode</b>="EVN" </tt><i>Event</i> (CodeSystem:<tt> 2.16.840.1.113883.5.1001 HL7ActMood</tt>)</li><li> This observation <b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt><tt><b>/@code</b>="TBD" </tt> (CodeSystem:<tt> 2.16.840.1.113883.3.26.1.1 NCI Thesaurus</tt>)</li><li> This observation <b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> with data type BL<p><i>A Boolean indicator that shows whether or not the adverse event is considered to be serious. [SDTM: AESER]</i></p></li><li> This observation <b>MAY</b> contain zero or more [0..*] <tt><b>entryRelationship</b></tt> <ol><li> Such entryRelationships <b>SHALL</b> contain zero or one [0..1] <tt><b>@typeCode</b>="COMP" </tt></li><li> Such entryRelationships <b>SHALL</b> contain zero or one [0..1] <tt><b>observation</b></tt> <ol><li> This observation <b>SHALL</b> contain exactly one [1..1] <tt><b>@classCode</b></tt></li><li> This observation <b>SHALL</b> contain exactly one [1..1] <tt><b>@moodCode</b>="EVN" </tt><i>Event</i> (CodeSystem:<tt> 2.16.840.1.113883.5.1001 HL7ActMood</tt>)</li><li> This observation <b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt><tt><b>/@code</b>="TBD" </tt> (CodeSystem:<tt> 2.16.840.1.113883.3.26.1.1 NCI Thesaurus</tt>)<p><i>The code value indicates the observation conveys information on the nature of the seriousness of the adverse event.</i></p></li><li> This observation <b>SHALL</b> contain zero or more [0..*] <tt><b>value</b></tt> with data type CE, where the @code <b>SHALL</b> be selected from (CodeSystem:<tt> 2.16.840.1.113883.3.26.1.1 NCI Thesaurus</tt>)<p><i>The code value indicates the particular feature or effect of the adverse event, e.g., required or prolonged hospitalization, occurred with an overdose, that led it to be considered serious.  [SDTM: AESCAN, AESCONG, ASESDISAB, AESDTH, AESHOSP, AESLIFE, AESOD, AESMIE]</i></p></li></ol> </li></ol> </li></ol> </li></ol>
-</li>
-<li><b>SHOULD</b> contain zero or one [0..1] <tt><b>entryRelationship</b></tt> <p><i>Identifies actions taken that involve changes in the study treatment.</i></p><ol><li> This entryRelationship <b>SHALL</b> contain zero or one [0..1] <tt><b>@typeCode</b>="COMP" </tt></li><li> This entryRelationship <b>SHALL</b> contain zero or one [0..1] <tt><b>observation</b></tt> <ol><li> This observation <b>SHALL</b> contain exactly one [1..1] <tt><b>@classCode</b>="OBS" </tt><i>Observation</i> (CodeSystem:<tt> 2.16.840.1.113883.5.6 HL7ActClass</tt>)</li><li> This observation <b>SHALL</b> contain exactly one [1..1] <tt><b>@moodCode</b>="EVN" </tt><i>Event</i> (CodeSystem:<tt> 2.16.840.1.113883.5.1001 HL7ActMood</tt>)</li><li> This observation <b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt><tt><b>/@code</b>="NCI" </tt> (CodeSystem:<tt> 2.16.840.1.113883.3.26.1.1 NCI Thesaurus</tt>)</li><li> This observation <b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> with data type CE<p><i>Information on an action taken with the study treatment as a result of the event.  [SDTM:AEACN]</i></p></li></ol> </li></ol>
-</li>
-<li><b>MAY</b> contain zero or more [0..*] <tt><b>entryRelationship</b></tt> <p><i>Identifies actions taken that are not related to the study treatment.</i></p><ol><li> Such entryRelationships <b>SHALL</b> contain exactly one [1..1] <tt><b>@typeCode</b>="COMP" </tt></li><li> Such entryRelationships <b>SHALL</b> contain exactly one [1..1] <tt><b>observation</b></tt> <ol><li> This observation <b>SHALL</b> contain exactly one [1..1] <tt><b>@classCode</b>="OBS" </tt><i>Observation</i> (CodeSystem:<tt> 2.16.840.1.113883.5.6 HL7ActClass</tt>)</li><li> This observation <b>SHALL</b> contain exactly one [1..1] <tt><b>@moodCode</b>="EVN" </tt><i>Event</i> (CodeSystem:<tt> 2.16.840.1.113883.5.1001 HL7ActMood</tt>)</li><li> This observation <b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt><p><i>A code value to indicate information regarding other actions - unrelated to the study treatment - that were taken as a result of the adverse event.</i></p></li><li> This observation <b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> with data type ED<p><i>Information on an action taken other than changes to the study treatment as a result of the event.  [SDTM:AEACNOTH]</i></p></li></ol> </li></ol>
-</li>
-<li><b>MAY</b> contain zero or one [0..1] <tt><b>entryRelationship</b></tt> <p><i>Indicates a sub-category the adverse event is assigned to.</i></p><ol><li> This entryRelationship <b>SHALL</b> contain exactly one [1..1] <tt><b>@typeCode</b>="COMP" </tt></li><li> This entryRelationship <b>SHALL</b> contain exactly one [1..1] <tt><b>observation</b></tt> <ol><li> This observation <b>SHALL</b> contain exactly one [1..1] <tt><b>@classCode</b>="OBS" </tt><i>Observation</i> (CodeSystem:<tt> 2.16.840.1.113883.5.6 HL7ActClass</tt>)</li><li> This observation <b>SHALL</b> contain exactly one [1..1] <tt><b>@moodCode</b>="EVN" </tt><i>Event</i> (CodeSystem:<tt> 2.16.840.1.113883.5.1001 HL7ActMood</tt>)</li><li> This observation <b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt><tt><b>/@code</b>="TBD" </tt> (CodeSystem:<tt> 2.16.840.1.113883.3.26.1.1 NCI Thesaurus</tt>)</li><li> This observation <b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> with data type CE<p><i>Provide the applicable adverse event sub-category value.  [SDTM: AESCAT]</i></p></li></ol> </li></ol>
-</li>
-<li><b>SHOULD</b> contain zero or one [0..1] <tt><b>entryRelationship</b></tt> <p><i>Captures information regarding a causal relationship between the adverse event and the study treatment.</i></p><ol><li> This entryRelationship <b>SHALL</b> contain exactly one [1..1] <tt><b>@typeCode</b>="COMP" </tt></li><li> This entryRelationship <b>SHALL</b> contain exactly one [1..1] <tt><b>observation</b></tt> <ol><li> This observation <b>SHALL</b> contain exactly one [1..1] <tt><b>@classCode</b>="OBS" </tt><i>Observation</i> (CodeSystem:<tt> 2.16.840.1.113883.5.6 HL7ActClass</tt>)</li><li> This observation <b>SHALL</b> contain exactly one [1..1] <tt><b>@moodCode</b>="EVN" </tt><i>Event</i> (CodeSystem:<tt> 2.16.840.1.113883.5.1001 HL7ActMood</tt>)</li><li> This observation <b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt><tt><b>/@code</b>="TBD" </tt> (CodeSystem:<tt> 2.16.840.1.113883.3.26.1.1 NCI Thesaurus</tt>)<p><i>A value to indicate that the observation provides the investigator's opinon regarding the causality of the event to the treatment.</i></p></li><li> This observation <b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> with data type CE<p><i>Information on the causal relationship between the adverse event and the study treatment.  [SDTM:AEREL]</i></p></li></ol> </li></ol>
-</li>
-<li><b>MAY</b> contain zero or one [0..1] <tt><b>entryRelationship</b></tt> <p><i>Captures information regarding causal relationships between the adverse event and treatments other than the study treatment.</i></p><ol><li> This entryRelationship <b>SHALL</b> contain exactly one [1..1] <tt><b>@typeCode</b>="COMP" </tt></li><li> This entryRelationship <b>SHALL</b> contain exactly one [1..1] <tt><b>observation</b></tt> <ol><li> This observation <b>SHALL</b> contain exactly one [1..1] <tt><b>@classCode</b>="OBS" </tt><i>Observation</i> (CodeSystem:<tt> 2.16.840.1.113883.5.6 HL7ActClass</tt>)</li><li> This observation <b>SHALL</b> contain exactly one [1..1] <tt><b>@moodCode</b>="EVN" </tt><i>Event</i> (CodeSystem:<tt> 2.16.840.1.113883.5.1001 HL7ActMood</tt>)</li><li> This observation <b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt><p><i>A value to indicate that the observation provides the investigator's opinon regarding the causality of the event to a non-study treatment.</i></p></li><li> This observation <b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> with data type ED<p><i>Information on the causal relationship between the adverse event and a treatment other than the study treatment.  [SDTM:AERELNST]</i></p></li></ol> </li></ol>
-</li>
-<li><b>MAY</b> contain zero or one [0..1] <tt><b>entryRelationship</b></tt> <p><i>Captures information regarding the temporal pattern of adverse event occurrence.</i></p><ol><li> This entryRelationship <b>SHALL</b> contain exactly one [1..1] <tt><b>@typeCode</b>="COMP" </tt></li><li> This entryRelationship <b>SHALL</b> contain exactly one [1..1] <tt><b>observation</b></tt> <ol><li> This observation <b>SHALL</b> contain exactly one [1..1] <tt><b>@classCode</b>="OBS" </tt><i>Observation</i> (CodeSystem:<tt> 2.16.840.1.113883.5.6 HL7ActClass</tt>)</li><li> This observation <b>SHALL</b> contain exactly one [1..1] <tt><b>@moodCode</b>="EVN" </tt><i>Event</i> (CodeSystem:<tt> 2.16.840.1.113883.5.1001 HL7ActMood</tt>)</li><li> This observation <b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt><tt><b>/@code</b>="TBD" </tt> (CodeSystem:<tt> 2.16.840.1.113883.3.26.1.1 NCI Thesaurus</tt>)<p><i>A code that indicates the observation contains information regarding the pattern of the adverse event over time.</i></p></li><li> This observation <b>SHALL</b> contain zero or more [0..*] <tt><b>value</b></tt> with data type CE<p><i>Provides information on the pattern of the adverse event over time.</i></p></li></ol> </li></ol>
-</li>
-<li><b>MAY</b> contain zero or one [0..1] <tt><b>entryRelationship</b></tt> <p><i>Captures information regarding the outcome of the adverse event.</i></p><ol><li> This entryRelationship <b>SHALL</b> contain exactly one [1..1] <tt><b>@typeCode</b>="COMP" </tt></li><li> This entryRelationship <b>SHALL</b> contain exactly one [1..1] <tt><b>observation</b></tt> <ol><li> This observation <b>SHALL</b> contain exactly one [1..1] <tt><b>@classCode</b>="OBS" </tt><i>Observation</i> (CodeSystem:<tt> 2.16.840.1.113883.5.6 HL7ActClass</tt>)</li><li> This observation <b>SHALL</b> contain exactly one [1..1] <tt><b>@moodCode</b>="EVN" </tt><i>Event</i> (CodeSystem:<tt> 2.16.840.1.113883.5.1001 HL7ActMood</tt>)</li><li> This observation <b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt><tt><b>/@code</b>="TBD" </tt> (CodeSystem:<tt> 2.16.840.1.113883.3.26.1.1 NCI Thesaurus</tt>)<p><i>A code that indicates this observation contains adverse event outcome information.</i></p></li><li> This observation <b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> with data type ED<p><i>A description of the outcome of the adverse event. [SDTM: AEOUT]</i></p></li></ol> </li></ol>
-</li>
-<li><b>MAY</b> contain zero or one [0..1] <tt><b>entryRelationship</b></tt> <p><i>Captures information regarding treatments that are concommitant with the adverse event.</i></p><ol><li> This entryRelationship <b>SHALL</b> contain exactly one [1..1] <tt><b>@typeCode</b>="COMP" </tt></li><li> This entryRelationship <b>SHALL</b> contain exactly one [1..1] <tt><b>observation</b></tt> <ol><li> This observation <b>SHALL</b> contain exactly one [1..1] <tt><b>@classCode</b>="OBS" </tt><i>Observation</i> (CodeSystem:<tt> 2.16.840.1.113883.5.6 HL7ActClass</tt>)</li><li> This observation <b>SHALL</b> contain exactly one [1..1] <tt><b>@moodCode</b>="EVN" </tt><i>Event</i> (CodeSystem:<tt> 2.16.840.1.113883.5.1001 HL7ActMood</tt>)</li><li> This observation <b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt><p><i>The code value indicates the observation contains concomitant or additional treatment information.</i></p></li><li> This observation <b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> with data type BL<p><i>Indicate whether or not concomitant or additional treatment was given because of the occurrence of the adverse event. [SDTM: AECONTRT ]</i></p></li></ol> </li></ol>
-</li>
-<li><b>MAY</b> contain zero or one [0..1] <tt><b>entryRelationship</b></tt> <p><i>Records information for the toxicity of the adverse event.  (or could it be the toxicity of the treatment?)</i></p><ol><li> This entryRelationship <b>SHALL</b> contain exactly one [1..1] <tt><b>@typeCode</b>="COMP" </tt></li><li> This entryRelationship <b>SHALL</b> contain exactly one [1..1] <tt><b>observation</b></tt> <ol><li> This observation <b>SHALL</b> contain exactly one [1..1] <tt><b>@classCode</b>="OBS" </tt><i>Observation</i> (CodeSystem:<tt> 2.16.840.1.113883.5.6 HL7ActClass</tt>)</li><li> This observation <b>SHALL</b> contain exactly one [1..1] <tt><b>@moodCode</b>="EVN" </tt><i>Event</i> (CodeSystem:<tt> 2.16.840.1.113883.5.1001 HL7ActMood</tt>)</li><li> This observation <b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt><tt><b>/@code</b>="TBD" </tt> (CodeSystem:<tt> 2.16.840.1.113883.3.26.1.1 NCI Thesaurus</tt>)<p><i>A code that indicates the observation contains information regarding toxicity grade.</i></p></li><li> This observation <b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> with data type CE, where the @code <b>SHALL</b> be selected from (CodeSystem:<tt> 2.16.840.1.113883.3.26.1.1 NCI Thesaurus</tt>)<p><i>Provides information on the toxicity of the event.   A standard toxicity scale is intended to be used. [SDTM: AETOXGR]</i></p></li></ol> </li></ol>
-</li>
-<li><b>MAY</b> contain zero or one [0..1] <tt><b>entryRelationship</b></tt> <p><i>Indicates a category the adverse event is assigned to.</i></p><ol><li> This entryRelationship <b>SHALL</b> contain exactly one [1..1] <tt><b>@typeCode</b>="COMP" </tt></li><li> This entryRelationship <b>SHALL</b> contain exactly one [1..1] <tt><b>observation</b></tt> <ol><li> This observation <b>SHALL</b> contain exactly one [1..1] <tt><b>@classCode</b></tt></li><li> This observation <b>SHALL</b> contain exactly one [1..1] <tt><b>@moodCode</b></tt></li><li> This observation <b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt><tt><b>/@code</b>="TBD" </tt> (CodeSystem:<tt> 2.16.840.1.113883.3.26.1.1 NCI Thesaurus</tt>)</li><li> This observation <b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> with data type CE<p><i>Provide the adverse event category value.  [SDTM: AECAT]</i></p></li></ol> </li></ol>
-</li>
-<li><b>MAY</b> contain zero or one [0..1] <tt><b>entryRelationship</b></tt>
-<ul><li>Indicates whether the adverse event was prespecified on the CRF.</li></ul><ol>
+<li>Contains exactly one [1..1] <xref href="../EventOrFindingSeverity.dita">Event or Finding Severity</xref> (templateId: <tt>2.16.840.1.113883.10.20.23.34</tt>)</li></ol></li>
+<li><b>SHOULD</b> contain zero or one [0..1] <tt><b>entryRelationship</b></tt> (CONF:121)
+<ul><li>Allows identification of the relevant body system or organ class for the adverse event.</li></ul><ol>
 <li>Contains <tt><b>@typeCode="</b>COMP" </tt><i>COMP</i></li>
-<li>Contains exactly one [1..1] <xref href="../PreSpecifiedEvent.dita">Pre-Specified Event</xref> (templateId: <tt>2.16.840.1.113883.10.20.23.66</tt>)</li></ol></li>
-<li><b>MAY</b> contain zero or one [0..1] <tt><b>entryRelationship</b></tt>
+<li>Contains exactly one [1..1] <xref href="../BodySystemOrOrganClass.dita">Body System or Organ Class</xref> (templateId: <tt>2.16.840.1.113883.10.20.23.17</tt>)</li></ol></li>
+<li><b>SHOULD</b> contain zero or one [0..1] <tt><b>entryRelationship</b></tt> (CONF:122)
+<ul><li>Information on whether adjustments were made to the study treatment as a result of the adverse event.</li></ul><ol>
+<li>Contains <tt><b>@typeCode="</b>COMP" </tt><i>COMP</i></li>
+<li>Contains exactly one [1..1] <xref href="../StudyTreatmentActionTaken.dita">Study Treatment Action Taken</xref> (templateId: <tt>2.16.840.1.113883.10.20.23.89</tt>)</li></ol></li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>entryRelationship</b></tt> (CONF:123)
+<ul><li>Information on whether action other than adjustment to the study treatment was taken  as a result of the adverse event.</li></ul><ol>
+<li>Contains <tt><b>@typeCode="</b>COMP" </tt><i>COMP</i></li>
+<li>Contains exactly one [1..1] <xref href="../OtherTreatmentActionTaken.dita">Other Treatment Action Taken</xref> (templateId: <tt>2.16.840.1.113883.10.20.23.63</tt>)</li></ol></li>
+<li><b>SHOULD</b> contain zero or one [0..1] <tt><b>entryRelationship</b></tt> (CONF:124)
+<ul><li>Captures the investigator's opinion of the causal relationship between the adverse event and study treatment.</li></ul><ol>
+<li>Contains <tt><b>@typeCode="</b>COMP" </tt><i>COMP</i></li>
+<li>Contains exactly one [1..1] <xref href="../StudyTreatmentCausality.dita">Study Treatment Causality</xref> (templateId: <tt>2.16.840.1.113883.10.20.23.90</tt>)</li></ol></li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>entryRelationship</b></tt> (CONF:125)
+<ul><li>Captures the investigator's opinion of the causal relationship between the adverse event and some event other than the study treatment.</li></ul><ol>
+<li>Contains <tt><b>@typeCode="</b>COMP" </tt><i>COMP</i></li>
+<li>Contains exactly one [1..1] <xref href="../NonStudyTreatmentRelationship.dita">Non-Study Treatment Relationship</xref> (templateId: <tt>2.16.840.1.113883.10.20.23.61</tt>)</li></ol></li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>entryRelationship</b></tt> (CONF:126)
+<ul><li>Records the pattern of an adverse event.</li></ul><ol>
+<li>Contains <tt><b>@typeCode="</b>COMP" </tt><i>COMP</i></li>
+<li>Contains exactly one [1..1] <xref href="../EventPattern.dita">Event Pattern</xref> (templateId: <tt>2.16.840.1.113883.10.20.23.36</tt>)</li></ol></li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>entryRelationship</b></tt> (CONF:127)
+<ul><li>Information on the outcome of an adverse event.</li></ul><ol>
+<li>Contains <tt><b>@typeCode="</b>COMP" </tt><i>COMP</i></li>
+<li>Contains exactly one [1..1] <xref href="../EventOutcome.dita">Event Outcome</xref> (templateId: <tt>2.16.840.1.113883.10.20.23.35</tt>)</li></ol></li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>entryRelationship</b></tt> (CONF:128)
+<ul><li>A record of whether a treatment (aside from the study treatment) was provided as a result of the adverse event.</li></ul><ol>
+<li>Contains <tt><b>@typeCode="</b>COMP" </tt><i>COMP</i></li>
+<li>Contains exactly one [1..1] <xref href="../ConcomitantTreatment.dita">Concomitant Treatment</xref> (templateId: <tt>2.16.840.1.113883.10.20.25.25</tt>)</li></ol></li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>entryRelationship</b></tt> (CONF:129)
+<ul><li>A record of the toxicity of the adverse event.</li></ul><ol>
+<li>Contains <tt><b>@typeCode="</b>COMP" </tt><i>COMP</i></li>
+<li>Contains exactly one [1..1] <xref href="../Toxicity.dita">Toxicity</xref> (templateId: <tt>2.16.840.1.113883.10.20.23.98</tt>)</li></ol></li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>entryRelationship</b></tt> (CONF:130)
+<ul><li>Records the duration of an event in cases in which this cannot be derived from existing start and stop information.</li></ul><ol>
+<li>Contains <tt><b>@typeCode="</b>COMP" </tt><i>COMP</i></li>
+<li>Contains exactly one [1..1] <xref href="../EventDuration.dita">Event Duration</xref> (templateId: <tt>2.16.840.1.113883.10.20.23.102</tt>)</li></ol></li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>entryRelationship</b></tt> (CONF:131)
 <ul><li>Captures information about the study days coincident with the start and stop of the adverse event.</li></ul><ol>
 <li>Contains <tt><b>@typeCode="</b>REFR" </tt><i>REFR</i></li>
-<li>Contains exactly one [1..1] <xref href="../StudyDayPeriod.dita">Study Day Period</xref> (templateId: <tt>2.16.840.1.113883.10.20.23.70</tt>)</li></ol></li>
-<li><b>SHALL</b> satisfy: Capture the reported term - the verbatim name - using the original text property of the CE data type within the observation.value element.</li>
-<li><b>SHALL</b> satisfy: Effective time information for the adverse event includes start date/time, stop date/time, and duration.   Since any two of these determine the value of the third, only two of these properties of time are collected using the IVL_TS data type.</li>
+<li>Contains exactly one [1..1] <xref href="../StudyDayPeriod.dita">Study Day Period</xref> (templateId: <tt>2.16.840.1.113883.10.20.23.82</tt>)</li></ol></li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>entryRelationship</b></tt> (CONF:132)
+<ul><li>Allows positioning of the start of the adverse event with relationship to a defined reference time period.</li></ul><ol>
+<li>Contains <tt><b>@typeCode="</b>REFR" </tt><i>REFR</i></li>
+<li>Contains exactly one [1..1] <xref href="../StartRelativeToReferencePeriod.dita">Start Relative to Reference Period</xref> (templateId: <tt>2.16.840.1.113883.10.20.23.79</tt>)</li></ol></li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>entryRelationship</b></tt> (CONF:133)
+<ul><li>Allows positioning of the end of the adverse event with relationship to a defined reference time period.</li></ul><ol>
+<li>Contains <tt><b>@typeCode="</b>REFR" </tt><i>REFR</i></li>
+<li>Contains exactly one [1..1] <xref href="../StopRelativeToReferencePeriod.dita">Stop Relative to Reference Period</xref> (templateId: <tt>2.16.840.1.113883.10.20.23.80</tt>)</li></ol></li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>entryRelationship</b></tt> (CONF:134)
+<ul><li>The record of a category to be used in organizing adverse events.</li></ul><ol>
+<li>Contains <tt><b>@typeCode="</b>COMP" </tt><i>COMP</i></li>
+<li>Contains exactly one [1..1] <xref href="../Category.dita">Category</xref> (templateId: <tt>2.16.840.1.113883.10.20.23.20</tt>)</li></ol></li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>entryRelationship</b></tt> (CONF:135)
+<ul><li>The record of a sub-category to be used in organizing adverse events.</li></ul><ol>
+<li>Contains <tt><b>@typeCode="</b>COMP" </tt><i>COMP</i></li>
+<li>Contains exactly one [1..1] <xref href="../SubCategory.dita">Sub- Category</xref> (templateId: <tt>2.16.840.1.113883.10.20.23.91</tt>)</li></ol></li>
+<li><b>MAY</b> contain zero or more [0..*] <tt><b>entryRelationship</b></tt> (CONF:136)
+<ul><li>A way to provide a link between the adverse event record and another record situated within this or another domain.</li></ul><ol>
+<li>Contains <tt><b>@typeCode="</b>REFR" </tt><i>REFR</i></li>
+<li>Contains exactly one [1..1] <xref href="../RelatedRecord.dita">Related Record</xref> (templateId: <tt>2.16.840.1.113883.10.20.23.75</tt>)</li></ol></li>
+<li><b>MAY</b> contain zero or more [0..*] <tt><b>entryRelationship</b></tt> (CONF:137)
+<ul><li>Allows the association of a supplemental value - outside of the content specfied for the domain - to the record.</li></ul><ol>
+<li>Contains <tt><b>@typeCode="</b>COMP" </tt><i>COMP</i></li>
+<li>Contains exactly one [1..1] <xref href="../SupplementalValue.dita">Supplemental Value</xref> (templateId: <tt>2.16.840.1.113883.10.20.23.96</tt>)</li></ol></li>
+<li><b>MAY</b> contain zero or more [0..*] <tt><b>entryRelationship</b></tt> (CONF:138)
+<ul><li>A place to insert comments related to a particular adverse event.</li></ul><ol>
+<li>Contains <tt><b>@typeCode="</b>COMP" </tt><i>COMP</i></li>
+<li>Contains exactly one [1..1] <xref href="../Comment.dita">Comment</xref> (templateId: <tt>2.16.840.1.113883.10.20.23.23</tt>)</li></ol></li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>entryRelationship</b></tt> (CONF:139)
+<ul><li>Allows recording of additional findings related to the adverse event.</li></ul><ol>
+<li>Contains <tt><b>@typeCode="</b>COMP" </tt><i>COMP</i></li>
+<li>Contains exactly one [1..1] <xref href="../FindingAbout.dita">Finding About</xref> (templateId: <tt>2.16.840.1.113883.10.20.23.40</tt>)</li></ol></li>
 </ol>
 <ol id="aggregate">
-<li>Contains exactly one [1..1] <tt><b>@classCode</b>="OBS" </tt><i>Observation</i> (CodeSystem:<tt> 2.16.840.1.113883.5.6 HL7ActClass</tt>)
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@classCode</b>="OBS" </tt><i>Observation</i> (CodeSystem:<tt> 2.16.840.1.113883.5.6 HL7ActClass</tt>) (CONF:1517)
 </li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@moodCode</b>="EVN" </tt><i>Event</i> (CodeSystem:<tt> 2.16.840.1.113883.5.1001 HL7ActMood</tt>)
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@moodCode</b>="EVN" </tt><i>Event</i> (CodeSystem:<tt> 2.16.840.1.113883.5.1001 HL7ActMood</tt>) (CONF:108)
 </li>
-<li><b>SHALL</b> contain  [1..3] <tt><b>id</b></tt>
-<ul><li>An identifier for the adverse event.  "An internal or external identifier such as a serial number on an SAE reporting form".  [SDTM: AESEQ, AEREFID, AESPID]  A sequence number is required.</li></ul></li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt><tt><b>/@code</b>="TBD" </tt><i>Adverse Event - Reported</i> (CodeSystem:<tt> 2.16.840.1.113883.3.26.1.1 NCI Thesaurus</tt>)
-<ul><li>The code value indicates that this observation is an adverse event.  The verbatim term is captured as original text.  A modified term is representated as a translation. [SDTM: AETERM, AEMODIFY, AEDECOD]</li></ul></li>
-<li><b>SHOULD</b> contain zero or one [0..1] <tt><b>effectiveTime</b></tt>
-<ul><li>Used to capture the start date/time of the adverse event, its end date/time, and/or its duration.  [SDTM: AESTDTC, AEENDTC, AEDUR]</li></ul></li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> with data type CE
-<ol>
-<li><b>SHALL</b> satisfy: Capture the verbatim name of the event using the original text property of the CE type.</li>
-<li><b>SHALL</b> satisfy: Capture the dictionary derived term for the adverse event using the code and codeSystem properties of the CE data type.</li></ol><ul><li>Identifies the adverse event.  [SDTM: AETERM, AEMODIFY, AEDECOD]</li></ul></li>
-<li><b>MAY</b> contain zero or one [0..1] <tt><b>targetSiteCode</b></tt>
-<ul><li>The anatomic location relevant for the adverse event.  [SDTM: AELOC]</li></ul></li>
-<li><b>MAY</b> contain zero or one [0..1] <tt><b>entryRelationship</b></tt>
-<ol>
-<li>Contains <tt><b>@typeCode="</b>COMP" </tt><i>COMP</i></li>
-<li>Contains exactly one [1..1] <xref href="../GroupIdentifier.dita">Group Identifier</xref> (templateId: <tt>2.16.840.1.113883.10.20.23.63</tt>)</li></ol><ul><li>Allows capture of a group identifier for the adverse event.</li></ul></li>
-<li><b>SHOULD</b> contain zero or one [0..1] <tt><b>entryRelationship</b></tt>
-<ol>
-<li>Contains <tt><b>@typeCode="</b>COMP" </tt><i>COMP</i></li>
-<li>Contains exactly one [1..1] <xref href="../BodySystemOrOrganClass.dita">Body System or Organ Class</xref> (templateId: <tt>2.16.840.1.113883.10.20.23.57</tt>)</li></ol><ul><li>Allows identification of the relevant body system or organ class.</li></ul></li>
-<li><b>MAY</b> contain zero or one [0..1] <tt><b>entryRelationship</b></tt>
-<ol>
-<li>Contains <tt><b>@typeCode="</b>COMP" </tt><i>COMP</i></li>
-<li>Contains exactly one [1..1] <xref href="../EventSeverity.dita">Event Severity</xref> (templateId: <tt>2.16.840.1.113883.10.20.23.61</tt>)</li></ol><ul><li>Carries information about event severity</li></ul></li>
-<li><b>SHOULD</b> contain zero or one [0..1] <tt><b>entryRelationship</b></tt> <p><i>Carries information about event seriousness.</i></p><ol><li> This entryRelationship <b>SHALL</b> contain zero or one [0..1] <tt><b>@typeCode</b>="COMP" </tt></li><li> This entryRelationship <b>SHALL</b> contain zero or one [0..1] <tt><b>observation</b></tt> <ol><li> This observation <b>SHALL</b> contain exactly one [1..1] <tt><b>@classCode</b>="OBS" </tt><i>Observation</i> (CodeSystem:<tt> 2.16.840.1.113883.5.6 HL7ActClass</tt>)</li><li> This observation <b>SHALL</b> contain exactly one [1..1] <tt><b>@moodCode</b>="EVN" </tt><i>Event</i> (CodeSystem:<tt> 2.16.840.1.113883.5.1001 HL7ActMood</tt>)</li><li> This observation <b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt><tt><b>/@code</b>="TBD" </tt> (CodeSystem:<tt> 2.16.840.1.113883.3.26.1.1 NCI Thesaurus</tt>)</li><li> This observation <b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> with data type BL<p><i>A Boolean indicator that shows whether or not the adverse event is considered to be serious. [SDTM: AESER]</i></p></li><li> This observation <b>MAY</b> contain zero or more [0..*] <tt><b>entryRelationship</b></tt> <ol><li> Such entryRelationships <b>SHALL</b> contain zero or one [0..1] <tt><b>@typeCode</b>="COMP" </tt></li><li> Such entryRelationships <b>SHALL</b> contain zero or one [0..1] <tt><b>observation</b></tt> <ol><li> This observation <b>SHALL</b> contain exactly one [1..1] <tt><b>@classCode</b></tt></li><li> This observation <b>SHALL</b> contain exactly one [1..1] <tt><b>@moodCode</b>="EVN" </tt><i>Event</i> (CodeSystem:<tt> 2.16.840.1.113883.5.1001 HL7ActMood</tt>)</li><li> This observation <b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt><tt><b>/@code</b>="TBD" </tt> (CodeSystem:<tt> 2.16.840.1.113883.3.26.1.1 NCI Thesaurus</tt>)<p><i>The code value indicates the observation conveys information on the nature of the seriousness of the adverse event.</i></p></li><li> This observation <b>SHALL</b> contain zero or more [0..*] <tt><b>value</b></tt> with data type CE, where the @code <b>SHALL</b> be selected from (CodeSystem:<tt> 2.16.840.1.113883.3.26.1.1 NCI Thesaurus</tt>)<p><i>The code value indicates the particular feature or effect of the adverse event, e.g., required or prolonged hospitalization, occurred with an overdose, that led it to be considered serious.  [SDTM: AESCAN, AESCONG, ASESDISAB, AESDTH, AESHOSP, AESLIFE, AESOD, AESMIE]</i></p></li></ol> </li></ol> </li></ol> </li></ol>
-</li>
-<li><b>SHOULD</b> contain zero or one [0..1] <tt><b>entryRelationship</b></tt> <p><i>Identifies actions taken that involve changes in the study treatment.</i></p><ol><li> This entryRelationship <b>SHALL</b> contain zero or one [0..1] <tt><b>@typeCode</b>="COMP" </tt></li><li> This entryRelationship <b>SHALL</b> contain zero or one [0..1] <tt><b>observation</b></tt> <ol><li> This observation <b>SHALL</b> contain exactly one [1..1] <tt><b>@classCode</b>="OBS" </tt><i>Observation</i> (CodeSystem:<tt> 2.16.840.1.113883.5.6 HL7ActClass</tt>)</li><li> This observation <b>SHALL</b> contain exactly one [1..1] <tt><b>@moodCode</b>="EVN" </tt><i>Event</i> (CodeSystem:<tt> 2.16.840.1.113883.5.1001 HL7ActMood</tt>)</li><li> This observation <b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt><tt><b>/@code</b>="NCI" </tt> (CodeSystem:<tt> 2.16.840.1.113883.3.26.1.1 NCI Thesaurus</tt>)</li><li> This observation <b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> with data type CE<p><i>Information on an action taken with the study treatment as a result of the event.  [SDTM:AEACN]</i></p></li></ol> </li></ol>
-</li>
-<li><b>MAY</b> contain zero or more [0..*] <tt><b>entryRelationship</b></tt> <p><i>Identifies actions taken that are not related to the study treatment.</i></p><ol><li> Such entryRelationships <b>SHALL</b> contain exactly one [1..1] <tt><b>@typeCode</b>="COMP" </tt></li><li> Such entryRelationships <b>SHALL</b> contain exactly one [1..1] <tt><b>observation</b></tt> <ol><li> This observation <b>SHALL</b> contain exactly one [1..1] <tt><b>@classCode</b>="OBS" </tt><i>Observation</i> (CodeSystem:<tt> 2.16.840.1.113883.5.6 HL7ActClass</tt>)</li><li> This observation <b>SHALL</b> contain exactly one [1..1] <tt><b>@moodCode</b>="EVN" </tt><i>Event</i> (CodeSystem:<tt> 2.16.840.1.113883.5.1001 HL7ActMood</tt>)</li><li> This observation <b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt><p><i>A code value to indicate information regarding other actions - unrelated to the study treatment - that were taken as a result of the adverse event.</i></p></li><li> This observation <b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> with data type ED<p><i>Information on an action taken other than changes to the study treatment as a result of the event.  [SDTM:AEACNOTH]</i></p></li></ol> </li></ol>
-</li>
-<li><b>MAY</b> contain zero or one [0..1] <tt><b>entryRelationship</b></tt> <p><i>Indicates a sub-category the adverse event is assigned to.</i></p><ol><li> This entryRelationship <b>SHALL</b> contain exactly one [1..1] <tt><b>@typeCode</b>="COMP" </tt></li><li> This entryRelationship <b>SHALL</b> contain exactly one [1..1] <tt><b>observation</b></tt> <ol><li> This observation <b>SHALL</b> contain exactly one [1..1] <tt><b>@classCode</b>="OBS" </tt><i>Observation</i> (CodeSystem:<tt> 2.16.840.1.113883.5.6 HL7ActClass</tt>)</li><li> This observation <b>SHALL</b> contain exactly one [1..1] <tt><b>@moodCode</b>="EVN" </tt><i>Event</i> (CodeSystem:<tt> 2.16.840.1.113883.5.1001 HL7ActMood</tt>)</li><li> This observation <b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt><tt><b>/@code</b>="TBD" </tt> (CodeSystem:<tt> 2.16.840.1.113883.3.26.1.1 NCI Thesaurus</tt>)</li><li> This observation <b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> with data type CE<p><i>Provide the applicable adverse event sub-category value.  [SDTM: AESCAT]</i></p></li></ol> </li></ol>
-</li>
-<li><b>SHOULD</b> contain zero or one [0..1] <tt><b>entryRelationship</b></tt> <p><i>Captures information regarding a causal relationship between the adverse event and the study treatment.</i></p><ol><li> This entryRelationship <b>SHALL</b> contain exactly one [1..1] <tt><b>@typeCode</b>="COMP" </tt></li><li> This entryRelationship <b>SHALL</b> contain exactly one [1..1] <tt><b>observation</b></tt> <ol><li> This observation <b>SHALL</b> contain exactly one [1..1] <tt><b>@classCode</b>="OBS" </tt><i>Observation</i> (CodeSystem:<tt> 2.16.840.1.113883.5.6 HL7ActClass</tt>)</li><li> This observation <b>SHALL</b> contain exactly one [1..1] <tt><b>@moodCode</b>="EVN" </tt><i>Event</i> (CodeSystem:<tt> 2.16.840.1.113883.5.1001 HL7ActMood</tt>)</li><li> This observation <b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt><tt><b>/@code</b>="TBD" </tt> (CodeSystem:<tt> 2.16.840.1.113883.3.26.1.1 NCI Thesaurus</tt>)<p><i>A value to indicate that the observation provides the investigator's opinon regarding the causality of the event to the treatment.</i></p></li><li> This observation <b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> with data type CE<p><i>Information on the causal relationship between the adverse event and the study treatment.  [SDTM:AEREL]</i></p></li></ol> </li></ol>
-</li>
-<li><b>MAY</b> contain zero or one [0..1] <tt><b>entryRelationship</b></tt> <p><i>Captures information regarding causal relationships between the adverse event and treatments other than the study treatment.</i></p><ol><li> This entryRelationship <b>SHALL</b> contain exactly one [1..1] <tt><b>@typeCode</b>="COMP" </tt></li><li> This entryRelationship <b>SHALL</b> contain exactly one [1..1] <tt><b>observation</b></tt> <ol><li> This observation <b>SHALL</b> contain exactly one [1..1] <tt><b>@classCode</b>="OBS" </tt><i>Observation</i> (CodeSystem:<tt> 2.16.840.1.113883.5.6 HL7ActClass</tt>)</li><li> This observation <b>SHALL</b> contain exactly one [1..1] <tt><b>@moodCode</b>="EVN" </tt><i>Event</i> (CodeSystem:<tt> 2.16.840.1.113883.5.1001 HL7ActMood</tt>)</li><li> This observation <b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt><p><i>A value to indicate that the observation provides the investigator's opinon regarding the causality of the event to a non-study treatment.</i></p></li><li> This observation <b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> with data type ED<p><i>Information on the causal relationship between the adverse event and a treatment other than the study treatment.  [SDTM:AERELNST]</i></p></li></ol> </li></ol>
-</li>
-<li><b>MAY</b> contain zero or one [0..1] <tt><b>entryRelationship</b></tt> <p><i>Captures information regarding the temporal pattern of adverse event occurrence.</i></p><ol><li> This entryRelationship <b>SHALL</b> contain exactly one [1..1] <tt><b>@typeCode</b>="COMP" </tt></li><li> This entryRelationship <b>SHALL</b> contain exactly one [1..1] <tt><b>observation</b></tt> <ol><li> This observation <b>SHALL</b> contain exactly one [1..1] <tt><b>@classCode</b>="OBS" </tt><i>Observation</i> (CodeSystem:<tt> 2.16.840.1.113883.5.6 HL7ActClass</tt>)</li><li> This observation <b>SHALL</b> contain exactly one [1..1] <tt><b>@moodCode</b>="EVN" </tt><i>Event</i> (CodeSystem:<tt> 2.16.840.1.113883.5.1001 HL7ActMood</tt>)</li><li> This observation <b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt><tt><b>/@code</b>="TBD" </tt> (CodeSystem:<tt> 2.16.840.1.113883.3.26.1.1 NCI Thesaurus</tt>)<p><i>A code that indicates the observation contains information regarding the pattern of the adverse event over time.</i></p></li><li> This observation <b>SHALL</b> contain zero or more [0..*] <tt><b>value</b></tt> with data type CE<p><i>Provides information on the pattern of the adverse event over time.</i></p></li></ol> </li></ol>
-</li>
-<li><b>MAY</b> contain zero or one [0..1] <tt><b>entryRelationship</b></tt> <p><i>Captures information regarding the outcome of the adverse event.</i></p><ol><li> This entryRelationship <b>SHALL</b> contain exactly one [1..1] <tt><b>@typeCode</b>="COMP" </tt></li><li> This entryRelationship <b>SHALL</b> contain exactly one [1..1] <tt><b>observation</b></tt> <ol><li> This observation <b>SHALL</b> contain exactly one [1..1] <tt><b>@classCode</b>="OBS" </tt><i>Observation</i> (CodeSystem:<tt> 2.16.840.1.113883.5.6 HL7ActClass</tt>)</li><li> This observation <b>SHALL</b> contain exactly one [1..1] <tt><b>@moodCode</b>="EVN" </tt><i>Event</i> (CodeSystem:<tt> 2.16.840.1.113883.5.1001 HL7ActMood</tt>)</li><li> This observation <b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt><tt><b>/@code</b>="TBD" </tt> (CodeSystem:<tt> 2.16.840.1.113883.3.26.1.1 NCI Thesaurus</tt>)<p><i>A code that indicates this observation contains adverse event outcome information.</i></p></li><li> This observation <b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> with data type ED<p><i>A description of the outcome of the adverse event. [SDTM: AEOUT]</i></p></li></ol> </li></ol>
-</li>
-<li><b>MAY</b> contain zero or one [0..1] <tt><b>entryRelationship</b></tt> <p><i>Captures information regarding treatments that are concommitant with the adverse event.</i></p><ol><li> This entryRelationship <b>SHALL</b> contain exactly one [1..1] <tt><b>@typeCode</b>="COMP" </tt></li><li> This entryRelationship <b>SHALL</b> contain exactly one [1..1] <tt><b>observation</b></tt> <ol><li> This observation <b>SHALL</b> contain exactly one [1..1] <tt><b>@classCode</b>="OBS" </tt><i>Observation</i> (CodeSystem:<tt> 2.16.840.1.113883.5.6 HL7ActClass</tt>)</li><li> This observation <b>SHALL</b> contain exactly one [1..1] <tt><b>@moodCode</b>="EVN" </tt><i>Event</i> (CodeSystem:<tt> 2.16.840.1.113883.5.1001 HL7ActMood</tt>)</li><li> This observation <b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt><p><i>The code value indicates the observation contains concomitant or additional treatment information.</i></p></li><li> This observation <b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> with data type BL<p><i>Indicate whether or not concomitant or additional treatment was given because of the occurrence of the adverse event. [SDTM: AECONTRT ]</i></p></li></ol> </li></ol>
-</li>
-<li><b>MAY</b> contain zero or one [0..1] <tt><b>entryRelationship</b></tt> <p><i>Records information for the toxicity of the adverse event.  (or could it be the toxicity of the treatment?)</i></p><ol><li> This entryRelationship <b>SHALL</b> contain exactly one [1..1] <tt><b>@typeCode</b>="COMP" </tt></li><li> This entryRelationship <b>SHALL</b> contain exactly one [1..1] <tt><b>observation</b></tt> <ol><li> This observation <b>SHALL</b> contain exactly one [1..1] <tt><b>@classCode</b>="OBS" </tt><i>Observation</i> (CodeSystem:<tt> 2.16.840.1.113883.5.6 HL7ActClass</tt>)</li><li> This observation <b>SHALL</b> contain exactly one [1..1] <tt><b>@moodCode</b>="EVN" </tt><i>Event</i> (CodeSystem:<tt> 2.16.840.1.113883.5.1001 HL7ActMood</tt>)</li><li> This observation <b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt><tt><b>/@code</b>="TBD" </tt> (CodeSystem:<tt> 2.16.840.1.113883.3.26.1.1 NCI Thesaurus</tt>)<p><i>A code that indicates the observation contains information regarding toxicity grade.</i></p></li><li> This observation <b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> with data type CE, where the @code <b>SHALL</b> be selected from (CodeSystem:<tt> 2.16.840.1.113883.3.26.1.1 NCI Thesaurus</tt>)<p><i>Provides information on the toxicity of the event.   A standard toxicity scale is intended to be used. [SDTM: AETOXGR]</i></p></li></ol> </li></ol>
-</li>
-<li><b>MAY</b> contain zero or one [0..1] <tt><b>entryRelationship</b></tt> <p><i>Indicates a category the adverse event is assigned to.</i></p><ol><li> This entryRelationship <b>SHALL</b> contain exactly one [1..1] <tt><b>@typeCode</b>="COMP" </tt></li><li> This entryRelationship <b>SHALL</b> contain exactly one [1..1] <tt><b>observation</b></tt> <ol><li> This observation <b>SHALL</b> contain exactly one [1..1] <tt><b>@classCode</b></tt></li><li> This observation <b>SHALL</b> contain exactly one [1..1] <tt><b>@moodCode</b></tt></li><li> This observation <b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt><tt><b>/@code</b>="TBD" </tt> (CodeSystem:<tt> 2.16.840.1.113883.3.26.1.1 NCI Thesaurus</tt>)</li><li> This observation <b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> with data type CE<p><i>Provide the adverse event category value.  [SDTM: AECAT]</i></p></li></ol> </li></ol>
-</li>
-<li><b>MAY</b> contain zero or one [0..1] <tt><b>entryRelationship</b></tt>
-<ol>
-<li>Contains <tt><b>@typeCode="</b>COMP" </tt><i>COMP</i></li>
-<li>Contains exactly one [1..1] <xref href="../PreSpecifiedEvent.dita">Pre-Specified Event</xref> (templateId: <tt>2.16.840.1.113883.10.20.23.66</tt>)</li></ol><ul><li>Indicates whether the adverse event was prespecified on the CRF.</li></ul></li>
-<li><b>MAY</b> contain zero or one [0..1] <tt><b>entryRelationship</b></tt>
+<li><b>SHALL</b> contain  [1..3] <tt><b>id</b></tt> (CONF:109)
+<ul><li>One or more identifiers for the adverse event.  "An internal or external identifier such as a serial number on an SAE reporting form".  [SDTM: AESEQ, AEREFID, AESPID]  To be consistent with SDTM, the sequence number is required.</li></ul></li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:110)<tt><b>/@code</b>="C49562" </tt><i>Adverse Event - Reported</i> (CodeSystem:<tt> 2.16.840.1.113883.3.26.1.1 NCI Thesaurus</tt>) (CONF:111)
+<ul><li>The code value indicates that this observation is an adverse event.</li></ul></li>
+<li><b>SHOULD</b> contain zero or one [0..1] <tt><b>effectiveTime</b></tt> (CONF:112)
+<ul><li>Used to capture the start date/time of the adverse event, its end date/time, and/or its duration.  Implementers should note that only two of the three properties of an interval are supported, since the value of the third would be redundant.  It is reccomended that start and stop date/time be valued if known, and that duration be included only if the start or stop information is unavailable or incomplete.  [SDTM: AESTDTC, AEENDTC, AEDUR]</li></ul></li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> with data type CD (CONF:113), where the @code <b>SHALL</b> be selected from ValueSet<tt> <xref href="../../terminology/AdverseEvent.dita">Adverse Event</xref></tt><b> STATIC</b> (CONF:1518)
+<ul><li>The adverse event information.  The adverse event coded value is captured using the code property of the CD type, while the verbatem term - which is required - is captured using the original text property.  The modified term, if provided, should be captured as a translation element within the CD type. [SDTM: AETERM, AEMODIFY, AEDECOD]</li></ul></li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>targetSiteCode</b></tt> (CONF:114), where the @code <b>SHALL</b> be selected from ValueSet<tt> <xref href="../../terminology/AnatomicalLocation.dita">Anatomical Location</xref> C74456</tt><b> STATIC</b> (CONF:115)
+<ul><li>The anatomic location that is relevant for the adverse event.  [SDTM: AELOC]</li></ul></li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>entryRelationship</b></tt> (CONF:116)
 <ol>
 <li>Contains <tt><b>@typeCode="</b>REFR" </tt><i>REFR</i></li>
-<li>Contains exactly one [1..1] <xref href="../StudyDayPeriod.dita">Study Day Period</xref> (templateId: <tt>2.16.840.1.113883.10.20.23.70</tt>)</li></ol><ul><li>Captures information about the study days coincident with the start and stop of the adverse event.</li></ul></li>
-<li><b>SHALL</b> satisfy: Capture the verbatim name of the event using the original text property of the CE type.</li>
-<li><b>SHALL</b> satisfy: Capture the dictionary derived term for the adverse event using the code and codeSystem properties of the CE data type.</li>
-<li><b>SHALL</b> satisfy: Capture the reported term - the verbatim name - using the original text property of the CE data type within the observation.value element.</li>
-<li><b>SHALL</b> satisfy: Effective time information for the adverse event includes start date/time, stop date/time, and duration.   Since any two of these determine the value of the third, only two of these properties of time are collected using the IVL_TS data type.</li>
+<li>Contains exactly one [1..1] <xref href="../DomainAssignment.dita">Domain Assignment</xref> (templateId: <tt>2.16.840.1.113883.10.20.23.30</tt>)</li></ol><ul><li>Indicates the domain assignment for the event.</li></ul></li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>entryRelationship</b></tt> (CONF:117)
+<ol>
+<li>Contains <tt><b>@typeCode="</b>COMP" </tt><i>COMP</i></li>
+<li>Contains exactly one [1..1] <xref href="../PreSpecifiedEvent.dita">Pre-Specified Event</xref> (templateId: <tt>2.16.840.1.113883.10.20.23.70</tt>)</li></ol><ul><li>Indicates whether the type of adverse event that is being reported was prespecified on the CRF.</li></ul></li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>entryRelationship</b></tt> (CONF:118)
+<ol>
+<li>Contains <tt><b>@typeCode="</b>COMP" </tt><i>COMP</i></li>
+<li>Contains exactly one [1..1] <xref href="../GroupIdentifier.dita">Group Identifier</xref> (templateId: <tt>2.16.840.1.113883.10.20.23.42</tt>)</li></ol><ul><li>Allows capture of a group identifier for the adverse event.</li></ul></li>
+<li><b>SHOULD</b> contain zero or one [0..1] <tt><b>entryRelationship</b></tt> (CONF:119)
+<ol>
+<li>Contains <tt><b>@typeCode="</b>COMP" </tt><i>COMP</i></li>
+<li>Contains exactly one [1..1] <xref href="../SeriousEvent.dita">Serious Event</xref> (templateId: <tt>2.16.840.1.113883.10.20.23.77</tt>)</li></ol><ul><li>A statement both of whether or not the adverse event is considered serious, and a record of various types of seriousness, e.g, results in hospitalization, that may be recorded for the adverse event.</li></ul></li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>entryRelationship</b></tt> (CONF:120)
+<ol>
+<li>Contains <tt><b>@typeCode="</b>COMP" </tt><i>COMP</i></li>
+<li>Contains exactly one [1..1] <xref href="../EventOrFindingSeverity.dita">Event or Finding Severity</xref> (templateId: <tt>2.16.840.1.113883.10.20.23.34</tt>)</li></ol><ul><li>Carries information about the severity or intensity of the adverse event.</li></ul></li>
+<li><b>SHOULD</b> contain zero or one [0..1] <tt><b>entryRelationship</b></tt> (CONF:121)
+<ol>
+<li>Contains <tt><b>@typeCode="</b>COMP" </tt><i>COMP</i></li>
+<li>Contains exactly one [1..1] <xref href="../BodySystemOrOrganClass.dita">Body System or Organ Class</xref> (templateId: <tt>2.16.840.1.113883.10.20.23.17</tt>)</li></ol><ul><li>Allows identification of the relevant body system or organ class for the adverse event.</li></ul></li>
+<li><b>SHOULD</b> contain zero or one [0..1] <tt><b>entryRelationship</b></tt> (CONF:122)
+<ol>
+<li>Contains <tt><b>@typeCode="</b>COMP" </tt><i>COMP</i></li>
+<li>Contains exactly one [1..1] <xref href="../StudyTreatmentActionTaken.dita">Study Treatment Action Taken</xref> (templateId: <tt>2.16.840.1.113883.10.20.23.89</tt>)</li></ol><ul><li>Information on whether adjustments were made to the study treatment as a result of the adverse event.</li></ul></li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>entryRelationship</b></tt> (CONF:123)
+<ol>
+<li>Contains <tt><b>@typeCode="</b>COMP" </tt><i>COMP</i></li>
+<li>Contains exactly one [1..1] <xref href="../OtherTreatmentActionTaken.dita">Other Treatment Action Taken</xref> (templateId: <tt>2.16.840.1.113883.10.20.23.63</tt>)</li></ol><ul><li>Information on whether action other than adjustment to the study treatment was taken  as a result of the adverse event.</li></ul></li>
+<li><b>SHOULD</b> contain zero or one [0..1] <tt><b>entryRelationship</b></tt> (CONF:124)
+<ol>
+<li>Contains <tt><b>@typeCode="</b>COMP" </tt><i>COMP</i></li>
+<li>Contains exactly one [1..1] <xref href="../StudyTreatmentCausality.dita">Study Treatment Causality</xref> (templateId: <tt>2.16.840.1.113883.10.20.23.90</tt>)</li></ol><ul><li>Captures the investigator's opinion of the causal relationship between the adverse event and study treatment.</li></ul></li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>entryRelationship</b></tt> (CONF:125)
+<ol>
+<li>Contains <tt><b>@typeCode="</b>COMP" </tt><i>COMP</i></li>
+<li>Contains exactly one [1..1] <xref href="../NonStudyTreatmentRelationship.dita">Non-Study Treatment Relationship</xref> (templateId: <tt>2.16.840.1.113883.10.20.23.61</tt>)</li></ol><ul><li>Captures the investigator's opinion of the causal relationship between the adverse event and some event other than the study treatment.</li></ul></li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>entryRelationship</b></tt> (CONF:126)
+<ol>
+<li>Contains <tt><b>@typeCode="</b>COMP" </tt><i>COMP</i></li>
+<li>Contains exactly one [1..1] <xref href="../EventPattern.dita">Event Pattern</xref> (templateId: <tt>2.16.840.1.113883.10.20.23.36</tt>)</li></ol><ul><li>Records the pattern of an adverse event.</li></ul></li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>entryRelationship</b></tt> (CONF:127)
+<ol>
+<li>Contains <tt><b>@typeCode="</b>COMP" </tt><i>COMP</i></li>
+<li>Contains exactly one [1..1] <xref href="../EventOutcome.dita">Event Outcome</xref> (templateId: <tt>2.16.840.1.113883.10.20.23.35</tt>)</li></ol><ul><li>Information on the outcome of an adverse event.</li></ul></li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>entryRelationship</b></tt> (CONF:128)
+<ol>
+<li>Contains <tt><b>@typeCode="</b>COMP" </tt><i>COMP</i></li>
+<li>Contains exactly one [1..1] <xref href="../ConcomitantTreatment.dita">Concomitant Treatment</xref> (templateId: <tt>2.16.840.1.113883.10.20.25.25</tt>)</li></ol><ul><li>A record of whether a treatment (aside from the study treatment) was provided as a result of the adverse event.</li></ul></li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>entryRelationship</b></tt> (CONF:129)
+<ol>
+<li>Contains <tt><b>@typeCode="</b>COMP" </tt><i>COMP</i></li>
+<li>Contains exactly one [1..1] <xref href="../Toxicity.dita">Toxicity</xref> (templateId: <tt>2.16.840.1.113883.10.20.23.98</tt>)</li></ol><ul><li>A record of the toxicity of the adverse event.</li></ul></li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>entryRelationship</b></tt> (CONF:130)
+<ol>
+<li>Contains <tt><b>@typeCode="</b>COMP" </tt><i>COMP</i></li>
+<li>Contains exactly one [1..1] <xref href="../EventDuration.dita">Event Duration</xref> (templateId: <tt>2.16.840.1.113883.10.20.23.102</tt>)</li></ol><ul><li>Records the duration of an event in cases in which this cannot be derived from existing start and stop information.</li></ul></li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>entryRelationship</b></tt> (CONF:131)
+<ol>
+<li>Contains <tt><b>@typeCode="</b>REFR" </tt><i>REFR</i></li>
+<li>Contains exactly one [1..1] <xref href="../StudyDayPeriod.dita">Study Day Period</xref> (templateId: <tt>2.16.840.1.113883.10.20.23.82</tt>)</li></ol><ul><li>Captures information about the study days coincident with the start and stop of the adverse event.</li></ul></li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>entryRelationship</b></tt> (CONF:132)
+<ol>
+<li>Contains <tt><b>@typeCode="</b>REFR" </tt><i>REFR</i></li>
+<li>Contains exactly one [1..1] <xref href="../StartRelativeToReferencePeriod.dita">Start Relative to Reference Period</xref> (templateId: <tt>2.16.840.1.113883.10.20.23.79</tt>)</li></ol><ul><li>Allows positioning of the start of the adverse event with relationship to a defined reference time period.</li></ul></li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>entryRelationship</b></tt> (CONF:133)
+<ol>
+<li>Contains <tt><b>@typeCode="</b>REFR" </tt><i>REFR</i></li>
+<li>Contains exactly one [1..1] <xref href="../StopRelativeToReferencePeriod.dita">Stop Relative to Reference Period</xref> (templateId: <tt>2.16.840.1.113883.10.20.23.80</tt>)</li></ol><ul><li>Allows positioning of the end of the adverse event with relationship to a defined reference time period.</li></ul></li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>entryRelationship</b></tt> (CONF:134)
+<ol>
+<li>Contains <tt><b>@typeCode="</b>COMP" </tt><i>COMP</i></li>
+<li>Contains exactly one [1..1] <xref href="../Category.dita">Category</xref> (templateId: <tt>2.16.840.1.113883.10.20.23.20</tt>)</li></ol><ul><li>The record of a category to be used in organizing adverse events.</li></ul></li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>entryRelationship</b></tt> (CONF:135)
+<ol>
+<li>Contains <tt><b>@typeCode="</b>COMP" </tt><i>COMP</i></li>
+<li>Contains exactly one [1..1] <xref href="../SubCategory.dita">Sub- Category</xref> (templateId: <tt>2.16.840.1.113883.10.20.23.91</tt>)</li></ol><ul><li>The record of a sub-category to be used in organizing adverse events.</li></ul></li>
+<li><b>MAY</b> contain zero or more [0..*] <tt><b>entryRelationship</b></tt> (CONF:136)
+<ol>
+<li>Contains <tt><b>@typeCode="</b>REFR" </tt><i>REFR</i></li>
+<li>Contains exactly one [1..1] <xref href="../RelatedRecord.dita">Related Record</xref> (templateId: <tt>2.16.840.1.113883.10.20.23.75</tt>)</li></ol><ul><li>A way to provide a link between the adverse event record and another record situated within this or another domain.</li></ul></li>
+<li><b>MAY</b> contain zero or more [0..*] <tt><b>entryRelationship</b></tt> (CONF:137)
+<ol>
+<li>Contains <tt><b>@typeCode="</b>COMP" </tt><i>COMP</i></li>
+<li>Contains exactly one [1..1] <xref href="../SupplementalValue.dita">Supplemental Value</xref> (templateId: <tt>2.16.840.1.113883.10.20.23.96</tt>)</li></ol><ul><li>Allows the association of a supplemental value - outside of the content specfied for the domain - to the record.</li></ul></li>
+<li><b>MAY</b> contain zero or more [0..*] <tt><b>entryRelationship</b></tt> (CONF:138)
+<ol>
+<li>Contains <tt><b>@typeCode="</b>COMP" </tt><i>COMP</i></li>
+<li>Contains exactly one [1..1] <xref href="../Comment.dita">Comment</xref> (templateId: <tt>2.16.840.1.113883.10.20.23.23</tt>)</li></ol><ul><li>A place to insert comments related to a particular adverse event.</li></ul></li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>entryRelationship</b></tt> (CONF:139)
+<ol>
+<li>Contains <tt><b>@typeCode="</b>COMP" </tt><i>COMP</i></li>
+<li>Contains exactly one [1..1] <xref href="../FindingAbout.dita">Finding About</xref> (templateId: <tt>2.16.840.1.113883.10.20.23.40</tt>)</li></ol><ul><li>Allows recording of additional findings related to the adverse event.</li></ul></li>
 </ol>
-<section id="tableconformance"><p><table frame="all" scale="80" pgwide="1" ><tgroup cols="8" align="left" colsep = "1" rowsep = "1" > <colspec colname="col0" colnum="0" /><colspec colname="col1" colnum="1" /><colspec colname="col2" colnum="2" /><colspec colname="col3" colnum="3" /><colspec colname="col4" colnum="4" /><colspec colname="col5" colnum="5" /><colspec colname="col6" colnum="6" /><colspec colname="col7" colnum="7" /><thead> <row><entry namest="col0" nameend="col7" >sdtm::Adverse Event</entry>  </row>  <row><entry namest="col0" nameend="col7" >cda::observation[cda:templateId/@root = 2.16.840.1.113883.10.20.23.6]/</entry>  </row>  <row><entry>Name</entry><entry>XPath</entry><entry>Cardinality</entry><entry>Severity</entry><entry>Nullable</entry><entry>Data Type</entry><entry>Conformance</entry><entry>Value(s)</entry></row></thead><tbody><row><entry>classCode</entry><entry>@classCode</entry><entry>1..1</entry><entry></entry><entry>NO</entry><entry>ActClassObservation</entry><entry></entry><entry> ALRT</entry></row> 
-<row><entry>moodCode</entry><entry>@moodCode</entry><entry>1..1</entry><entry>SHALL</entry><entry>NO</entry><entry>x_ActMoodDocumentObservation</entry><entry></entry><entry> DEF</entry></row> 
+<section id="tableconformance"><p><table frame="all" scale="80" pgwide="1" ><tgroup cols="8" align="left" colsep = "1" rowsep = "1" > <colspec colname="col0" colnum="0" /><colspec colname="col1" colnum="1" /><colspec colname="col2" colnum="2" /><colspec colname="col3" colnum="3" /><colspec colname="col4" colnum="4" /><colspec colname="col5" colnum="5" /><colspec colname="col6" colnum="6" /><colspec colname="col7" colnum="7" /><thead> <row><entry namest="col0" nameend="col7" >sdtm::Adverse Event</entry>  </row>  <row><entry namest="col0" nameend="col7" >cda::observation[cda:templateId/@root = 2.16.840.1.113883.10.20.23.15]/</entry>  </row>  <row><entry>Name</entry><entry>XPath</entry><entry>Cardinality</entry><entry>Severity</entry><entry>Nullable</entry><entry>Data Type</entry><entry>Conformance</entry><entry>Value(s)</entry></row></thead><tbody><row><entry>classCode</entry><entry>@classCode</entry><entry>1..1</entry><entry>SHALL</entry><entry>NO</entry><entry>ActClassObservation</entry><entry>CONF:1517</entry><entry> ALRT</entry></row> 
+<row><entry>moodCode</entry><entry>@moodCode</entry><entry>1..1</entry><entry>SHALL</entry><entry>NO</entry><entry>x_ActMoodDocumentObservation</entry><entry>CONF:108</entry><entry> DEF</entry></row> 
 <row><entry>negationInd</entry><entry>@negationInd</entry><entry>0..1</entry><entry></entry><entry>NO</entry><entry>Boolean</entry><entry></entry><entry> </entry></row> 
 <row><entry>nullFlavor</entry><entry>@nullFlavor</entry><entry>0..1</entry><entry></entry><entry>NO</entry><entry>NullFlavor</entry><entry></entry><entry> ASKU</entry></row> 
-<row><entry>code</entry><entry>code</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>CD</entry><entry></entry><entry>NCI Thesaurus 2.16.840.1.113883.3.26.1.1 TBD</entry></row> 
+<row><entry>code</entry><entry>code</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>CD</entry><entry>CONF:110</entry><entry>NCI Thesaurus 2.16.840.1.113883.3.26.1.1 null</entry></row> 
 <row><entry>derivationExpr</entry><entry>derivationExpr</entry><entry>0..1</entry><entry></entry><entry>YES</entry><entry>ST</entry><entry></entry><entry> </entry></row> 
-<row><entry>effectiveTime</entry><entry>effectiveTime</entry><entry>0..1</entry><entry>SHOULD</entry><entry>YES</entry><entry>IVL_TS</entry><entry></entry><entry> </entry></row> 
-<row><entry>id</entry><entry>id</entry><entry>1..3</entry><entry>SHALL</entry><entry>YES</entry><entry>II</entry><entry></entry><entry> </entry></row> 
+<row><entry>effectiveTime</entry><entry>effectiveTime</entry><entry>0..1</entry><entry>SHOULD</entry><entry>YES</entry><entry>IVL_TS</entry><entry>CONF:112</entry><entry> </entry></row> 
+<row><entry>id</entry><entry>id</entry><entry>1..3</entry><entry>SHALL</entry><entry>YES</entry><entry>II</entry><entry>CONF:109</entry><entry> </entry></row> 
 <row><entry>interpretationCode</entry><entry>interpretationCode</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>CE</entry><entry></entry><entry> </entry></row> 
 <row><entry>languageCode</entry><entry>languageCode</entry><entry>0..1</entry><entry></entry><entry>YES</entry><entry>CS</entry><entry></entry><entry> </entry></row> 
 <row><entry>methodCode</entry><entry>methodCode</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>CE</entry><entry></entry><entry> </entry></row> 
@@ -152,127 +250,62 @@
 <row><entry>realmCode</entry><entry>realmCode</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>CS</entry><entry></entry><entry> </entry></row> 
 <row><entry>repeatNumber</entry><entry>repeatNumber</entry><entry>0..1</entry><entry></entry><entry>YES</entry><entry>IVL_INT</entry><entry></entry><entry> </entry></row> 
 <row><entry>statusCode</entry><entry>statusCode</entry><entry>0..1</entry><entry></entry><entry>YES</entry><entry>CS</entry><entry></entry><entry> </entry></row> 
-<row><entry>targetSiteCode</entry><entry>targetSiteCode</entry><entry>0..1</entry><entry>MAY</entry><entry>YES</entry><entry>CD</entry><entry></entry><entry> </entry></row> 
-<row><entry>templateId</entry><entry>templateId</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>II</entry><entry></entry><entry> 2.16.840.1.113883.10.20.23.6</entry></row> 
+<row><entry>targetSiteCode</entry><entry>targetSiteCode</entry><entry>0..1</entry><entry>MAY</entry><entry>YES</entry><entry>CD</entry><entry>CONF:114</entry><entry> </entry></row> 
+<row><entry>templateId</entry><entry>templateId</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>II</entry><entry></entry><entry> 2.16.840.1.113883.10.20.23.15</entry></row> 
 <row><entry>text</entry><entry>text</entry><entry>0..1</entry><entry></entry><entry>YES</entry><entry>ED</entry><entry></entry><entry> </entry></row> 
-<row><entry>value</entry><entry>value</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>CE</entry><entry></entry><entry> </entry></row> 
-<row><entry>adverseEventCategoryAssociation</entry><entry>adverseEventCategoryAssociation</entry><entry>0..1</entry><entry>MAY</entry><entry>YES</entry><entry>adverseEventCategoryAssociation</entry><entry></entry><entry> </entry></row> 
-<row><entry>adverseEventSubCategoryAssociation</entry><entry>adverseEventSubCategoryAssociation</entry><entry>0..1</entry><entry>MAY</entry><entry>YES</entry><entry>adverseEventSubCategoryAssociation</entry><entry></entry><entry> </entry></row> 
+<row><entry>value</entry><entry>value</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>CD</entry><entry>CONF:113</entry><entry> </entry></row> 
 <row><entry>author</entry><entry>author</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>Author</entry><entry></entry><entry> </entry></row> 
-<row><entry>body System or Organ Class</entry><entry>body System or Organ Class</entry><entry>0..1</entry><entry>SHOULD</entry><entry>YES</entry><entry>Body System or Organ Class</entry><entry></entry><entry> </entry></row> 
-<row><entry>concomitantTreatmentAssociation</entry><entry>concomitantTreatmentAssociation</entry><entry>0..1</entry><entry>MAY</entry><entry>YES</entry><entry>concomitantTreatmentAssociation</entry><entry></entry><entry> </entry></row> 
+<row><entry>body System or Organ Class</entry><entry>body System or Organ Class</entry><entry>0..1</entry><entry>SHOULD</entry><entry>YES</entry><entry>Body System or Organ Class</entry><entry>CONF:121</entry><entry> </entry></row> 
+<row><entry>category</entry><entry>category</entry><entry>0..1</entry><entry>MAY</entry><entry>YES</entry><entry>Category</entry><entry>CONF:134</entry><entry> </entry></row> 
+<row><entry>comment</entry><entry>comment</entry><entry>0..*</entry><entry>MAY</entry><entry>YES</entry><entry>Comment</entry><entry>CONF:138</entry><entry> </entry></row> 
+<row><entry>concomitant Treatment</entry><entry>concomitant Treatment</entry><entry>0..1</entry><entry>MAY</entry><entry>YES</entry><entry>Concomitant Treatment</entry><entry>CONF:128</entry><entry> </entry></row> 
+<row><entry>domain Assignment</entry><entry>domain Assignment</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>Domain Assignment</entry><entry>CONF:116</entry><entry> </entry></row> 
 <row><entry>entryRelationship</entry><entry>entryRelationship</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>EntryRelationship</entry><entry></entry><entry> </entry></row> 
-<row><entry>event Severity</entry><entry>event Severity</entry><entry>0..1</entry><entry>MAY</entry><entry>YES</entry><entry>Event Severity</entry><entry></entry><entry> </entry></row> 
-<row><entry>groupIdentifier</entry><entry>groupIdentifier</entry><entry>0..1</entry><entry>MAY</entry><entry>YES</entry><entry>Group Identifier</entry><entry></entry><entry> </entry></row> 
+<row><entry>event Duration</entry><entry>event Duration</entry><entry>0..1</entry><entry>MAY</entry><entry>YES</entry><entry>Event Duration</entry><entry>CONF:130</entry><entry> </entry></row> 
+<row><entry>event Outcome</entry><entry>event Outcome</entry><entry>0..1</entry><entry>MAY</entry><entry>YES</entry><entry>Event Outcome</entry><entry>CONF:127</entry><entry> </entry></row> 
+<row><entry>event Pattern</entry><entry>event Pattern</entry><entry>0..1</entry><entry>MAY</entry><entry>YES</entry><entry>Event Pattern</entry><entry>CONF:126</entry><entry> </entry></row> 
+<row><entry>event Severity</entry><entry>event Severity</entry><entry>0..1</entry><entry>MAY</entry><entry>YES</entry><entry>Event or Finding Severity</entry><entry>CONF:120</entry><entry> </entry></row> 
+<row><entry>finding About</entry><entry>finding About</entry><entry>0..1</entry><entry>MAY</entry><entry>YES</entry><entry>Finding About</entry><entry>CONF:139</entry><entry> </entry></row> 
+<row><entry>groupIdentifier</entry><entry>groupIdentifier</entry><entry>0..1</entry><entry>MAY</entry><entry>YES</entry><entry>Group Identifier</entry><entry>CONF:118</entry><entry> </entry></row> 
 <row><entry>informant</entry><entry>informant</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>Informant12</entry><entry></entry><entry> </entry></row> 
-<row><entry>nonStudyTreatmentCausalityAssociation</entry><entry>nonStudyTreatmentCausalityAssociation</entry><entry>0..1</entry><entry>MAY</entry><entry>YES</entry><entry>nonStudyTreatmentCausalityAssociation</entry><entry></entry><entry> </entry></row> 
-<row><entry>otherTreatmentActionTakenAssociation</entry><entry>otherTreatmentActionTakenAssociation</entry><entry>0..*</entry><entry>MAY</entry><entry>YES</entry><entry>otherTreatmentActionTakenAssociation</entry><entry></entry><entry> </entry></row> 
-<row><entry>outcomeAssociation</entry><entry>outcomeAssociation</entry><entry>0..1</entry><entry>MAY</entry><entry>YES</entry><entry>outcomeAssociation</entry><entry></entry><entry> </entry></row> 
+<row><entry>non-Study Treatment Relationship</entry><entry>non-Study Treatment Relationship</entry><entry>0..1</entry><entry>MAY</entry><entry>YES</entry><entry>Non-Study Treatment Relationship</entry><entry>CONF:125</entry><entry> </entry></row> 
+<row><entry>other Treatment Action Taken</entry><entry>other Treatment Action Taken</entry><entry>0..1</entry><entry>MAY</entry><entry>YES</entry><entry>Other Treatment Action Taken</entry><entry>CONF:123</entry><entry> </entry></row> 
 <row><entry>participant</entry><entry>participant</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>Participant2</entry><entry></entry><entry> </entry></row> 
-<row><entry>patternAssociation</entry><entry>patternAssociation</entry><entry>0..1</entry><entry>MAY</entry><entry>YES</entry><entry>patternAssociation</entry><entry></entry><entry> </entry></row> 
 <row><entry>performer</entry><entry>performer</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>Performer2</entry><entry></entry><entry> </entry></row> 
-<row><entry>pre-Specified Event</entry><entry>pre-Specified Event</entry><entry>0..1</entry><entry>MAY</entry><entry>YES</entry><entry>Pre-Specified Event</entry><entry></entry><entry> </entry></row> 
+<row><entry>pre-Specified Event</entry><entry>pre-Specified Event</entry><entry>0..1</entry><entry>MAY</entry><entry>YES</entry><entry>Pre-Specified Event</entry><entry>CONF:117</entry><entry> </entry></row> 
 <row><entry>precondition</entry><entry>precondition</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>Precondition</entry><entry></entry><entry> </entry></row> 
 <row><entry>reference</entry><entry>reference</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>Reference</entry><entry></entry><entry> </entry></row> 
 <row><entry>referenceRange</entry><entry>referenceRange</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>ReferenceRange</entry><entry></entry><entry> </entry></row> 
-<row><entry>seriousEventAssociation</entry><entry>seriousEventAssociation</entry><entry>0..1</entry><entry>SHOULD</entry><entry>YES</entry><entry>seriousEventAssociation</entry><entry></entry><entry> </entry></row> 
+<row><entry>related Record</entry><entry>related Record</entry><entry>0..*</entry><entry>MAY</entry><entry>YES</entry><entry>Related Record</entry><entry>CONF:136</entry><entry> </entry></row> 
+<row><entry>serious Event</entry><entry>serious Event</entry><entry>0..1</entry><entry>SHOULD</entry><entry>YES</entry><entry>Serious Event</entry><entry>CONF:119</entry><entry> </entry></row> 
 <row><entry>specimen</entry><entry>specimen</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>Specimen</entry><entry></entry><entry> </entry></row> 
-<row><entry>study Day Period</entry><entry>study Day Period</entry><entry>0..1</entry><entry>MAY</entry><entry>YES</entry><entry>Study Day Period</entry><entry></entry><entry> </entry></row> 
-<row><entry>studyTreatmentActionTakenAssociation</entry><entry>studyTreatmentActionTakenAssociation</entry><entry>0..1</entry><entry>SHOULD</entry><entry>YES</entry><entry>studyTreatmentActionTakenAssociation</entry><entry></entry><entry> </entry></row> 
-<row><entry>studyTreatmentCausalityAssociation</entry><entry>studyTreatmentCausalityAssociation</entry><entry>0..1</entry><entry>SHOULD</entry><entry>YES</entry><entry>studyTreatmentCausalityAssociation</entry><entry></entry><entry> </entry></row> 
+<row><entry>start Relative to Reference Period</entry><entry>start Relative to Reference Period</entry><entry>0..1</entry><entry>MAY</entry><entry>YES</entry><entry>Start Relative to Reference Period</entry><entry>CONF:132</entry><entry> </entry></row> 
+<row><entry>stop Relative to Reference Period</entry><entry>stop Relative to Reference Period</entry><entry>0..1</entry><entry>MAY</entry><entry>YES</entry><entry>Stop Relative to Reference Period</entry><entry>CONF:133</entry><entry> </entry></row> 
+<row><entry>study Day Period</entry><entry>study Day Period</entry><entry>0..1</entry><entry>MAY</entry><entry>YES</entry><entry>Study Day Period</entry><entry>CONF:131</entry><entry> </entry></row> 
+<row><entry>study Treatment Action Taken</entry><entry>study Treatment Action Taken</entry><entry>0..1</entry><entry>SHOULD</entry><entry>YES</entry><entry>Study Treatment Action Taken</entry><entry>CONF:122</entry><entry> </entry></row> 
+<row><entry>study Treatment Causality</entry><entry>study Treatment Causality</entry><entry>0..1</entry><entry>SHOULD</entry><entry>YES</entry><entry>Study Treatment Causality</entry><entry>CONF:124</entry><entry> </entry></row> 
+<row><entry>sub-Category</entry><entry>sub-Category</entry><entry>0..1</entry><entry>MAY</entry><entry>YES</entry><entry>Sub-Category</entry><entry>CONF:135</entry><entry> </entry></row> 
 <row><entry>subject</entry><entry>subject</entry><entry>0..1</entry><entry></entry><entry>YES</entry><entry>Subject</entry><entry></entry><entry> </entry></row> 
-<row><entry>toxicityAssociation</entry><entry>toxicityAssociation</entry><entry>0..1</entry><entry>MAY</entry><entry>YES</entry><entry>aeToxicityAssociation</entry><entry></entry><entry> </entry></row> 
+<row><entry>supplemental Value</entry><entry>supplemental Value</entry><entry>0..*</entry><entry>MAY</entry><entry>YES</entry><entry>Supplemental Value</entry><entry>CONF:137</entry><entry> </entry></row> 
+<row><entry>toxicity</entry><entry>toxicity</entry><entry>0..1</entry><entry>MAY</entry><entry>YES</entry><entry>Toxicity</entry><entry>CONF:129</entry><entry> </entry></row> 
 <row><entry>typeId</entry><entry>typeId</entry><entry>0..1</entry><entry></entry><entry>YES</entry><entry>InfrastructureRootTypeId</entry><entry></entry><entry> </entry></row> 
 </tbody></tgroup></table></p></section>
 <codeblock id="example"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
-<observation xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd" classCode="OBS" moodCode="EVN">
-  <templateId root="2.16.840.1.113883.10.20.23.6"/>
-  <id root="1882281601" extension="MDHT"/>
-  <code code="TBD" codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="NCI Thesaurus" displayName="Adverse Event - Reported"/>
+<observation xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd">
+  <templateId root="2.16.840.1.113883.10.20.23.15"/>
+  <id root="819148237" extension="MDHT"/>
+  <code codeSystem="2.16.840.1.113883.3.26.1.1" displayName="Adverse Event - Reported"/>
   <effectiveTime>
     <low value="2012"/>
     <high value="2012"/>
   </effectiveTime>
-  <value xsi:type="CE" code="454668578"/>
-  <targetSiteCode code="2040390806"/>
+  <value xsi:type="CD" code="677543207"/>
+  <targetSiteCode code="637583971"/>
   <entryRelationship>
-    <observation>
-      <code code="2090484846"/>
-      <value xsi:type="CE" code="703475670"/>
-    </observation>
-  </entryRelationship>
-  <entryRelationship>
-    <observation>
-      <code code="1700170756"/>
-      <value xsi:type="ED">Text Value</value>
-    </observation>
-  </entryRelationship>
-  <entryRelationship>
-    <observation>
-      <code code="73285546"/>
-      <value xsi:type="BL"/>
-    </observation>
-  </entryRelationship>
-  <entryRelationship typeCode="COMP">
-    <observation classCode="OBS" moodCode="EVN">
-      <code code="TBD" codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="NCI Thesaurus"/>
-      <value xsi:type="CE" code="122893272"/>
-    </observation>
-  </entryRelationship>
-  <entryRelationship>
-    <observation>
-      <code code="801793425"/>
-      <value xsi:type="CE" code="1899765438"/>
-    </observation>
-  </entryRelationship>
-  <entryRelationship>
-    <observation>
-      <code code="1320296884"/>
-      <value xsi:type="BL"/>
-      <entryRelationship/>
-    </observation>
-  </entryRelationship>
-  <entryRelationship>
-    <observation>
-      <code code="625503502"/>
-      <value xsi:type="CE" code="976722928"/>
-    </observation>
-  </entryRelationship>
-  <entryRelationship>
-    <observation>
-      <code code="1554199636"/>
-      <value xsi:type="ED">Text Value</value>
-    </observation>
-  </entryRelationship>
-  <entryRelationship>
-    <observation>
-      <code code="1587368668"/>
-      <value xsi:type="CE" code="866168483"/>
-    </observation>
-  </entryRelationship>
-  <entryRelationship>
-    <observation>
-      <code code="468077088"/>
-      <value xsi:type="CE" code="1871145097"/>
-    </observation>
-  </entryRelationship>
-  <entryRelationship>
-    <observation>
-      <code code="1326799656"/>
-      <value xsi:type="ED">Text Value</value>
-    </observation>
-  </entryRelationship>
-  <entryRelationship>
-    <observation/>
-  </entryRelationship>
-  <entryRelationship>
-    <observation/>
-  </entryRelationship>
-  <entryRelationship>
-    <act classCode="ACT" moodCode="EVN">
-      <templateId root="2.16.840.1.113883.10.20.23.15"/>
-      <id root="1859011406" extension="MDHT"/>
-      <code code="TBD" codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="NCI Thesaurus"/>
+    <act classCode="ACT">
+      <templateId root="2.16.840.1.113883.10.20.23.42"/>
+      <id root="31778671" extension="MDHT"/>
+      <code code="C83204" codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="NCI Thesaurus"/>
       <effectiveTime>
         <low value="2012"/>
         <high value="2012"/>
@@ -283,25 +316,264 @@
     <observation/>
   </entryRelationship>
   <entryRelationship>
-    <observation classCode="OBS" moodCode="EVN">
-      <templateId root="2.16.840.1.113883.10.20.23.17"/>
-      <id root="922627621" extension="MDHT"/>
-      <code code="TBD" codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="NCI Thesaurus"/>
+    <observation/>
+  </entryRelationship>
+  <entryRelationship>
+    <observation/>
+  </entryRelationship>
+  <entryRelationship>
+    <observation>
+      <id root="1410647429" extension="MDHT"/>
+      <code code="421907586"/>
       <effectiveTime>
         <low value="2012"/>
         <high value="2012"/>
       </effectiveTime>
-      <value xsi:type="CE" code="2056475919"/>
-      <targetSiteCode code="714074110"/>
+      <value xsi:type="IVL_INT" value="1"/>
+      <targetSiteCode code="1814777409"/>
+    </observation>
+  </entryRelationship>
+  <entryRelationship>
+    <observation>
+      <templateId root="2.16.840.1.113883.10.20.23.30"/>
+      <id root="1185306672" extension="MDHT"/>
+      <code code="C66734" codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="NCI Thesaurus"/>
+      <effectiveTime>
+        <low value="2012"/>
+        <high value="2012"/>
+      </effectiveTime>
+      <value xsi:type="CD" code="650030931"/>
+      <targetSiteCode code="1447236268"/>
+    </observation>
+  </entryRelationship>
+  <entryRelationship>
+    <observation classCode="OBS" moodCode="EVN">
+      <templateId root="2.16.840.1.113883.10.20.23.23"/>
+      <id root="1163317121" extension="MDHT"/>
+      <code code="C49569" codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="NCI Thesaurus"/>
+      <effectiveTime>
+        <low value="2012"/>
+        <high value="2012"/>
+      </effectiveTime>
+      <value xsi:type="ED">Text Value</value>
+      <targetSiteCode code="2069070707"/>
+      <participant/>
+      <entryRelationship/>
+    </observation>
+  </entryRelationship>
+  <entryRelationship>
+    <act classCode="ACT">
+      <templateId root="2.16.840.1.113883.10.20.23.75"/>
+      <id root="1973075387" extension="MDHT"/>
+      <code codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="NCI Thesaurus"/>
+      <effectiveTime>
+        <low value="2012"/>
+        <high value="2012"/>
+      </effectiveTime>
+    </act>
+  </entryRelationship>
+  <entryRelationship>
+    <observation classCode="OBS" moodCode="EVN">
+      <templateId root="2.16.840.1.113883.10.20.23.96"/>
+      <id root="879240458" extension="MDHT"/>
+      <code codeSystem="locally defined" codeSystemName="Supplemental Value Type"/>
+      <effectiveTime>
+        <low value="2012"/>
+        <high value="2012"/>
+      </effectiveTime>
+      <targetSiteCode code="1322852124"/>
+      <participant/>
+      <entryRelationship typeCode="COMP"/>
     </observation>
   </entryRelationship>
   <entryRelationship>
     <observation/>
   </entryRelationship>
+  <entryRelationship>
+    <observation/>
+  </entryRelationship>
+  <entryRelationship>
+    <observation>
+      <id root="917585448" extension="MDHT"/>
+      <code code="1447757718"/>
+      <effectiveTime>
+        <low value="2012"/>
+        <high value="2012"/>
+      </effectiveTime>
+      <value xsi:type="BL"/>
+      <targetSiteCode code="2054869093"/>
+      <entryRelationship typeCode="COMP"/>
+    </observation>
+  </entryRelationship>
+  <entryRelationship>
+    <observation classCode="OBS" moodCode="EVN">
+      <templateId root="2.16.840.1.113883.10.20.23.89"/>
+      <id root="2001158882" extension="MDHT"/>
+      <code code="C66767" codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="NCI Thesaurus"/>
+      <effectiveTime>
+        <low value="2012"/>
+        <high value="2012"/>
+      </effectiveTime>
+      <value xsi:type="CD" code="937856925"/>
+      <targetSiteCode code="1048905911"/>
+    </observation>
+  </entryRelationship>
+  <entryRelationship>
+    <observation classCode="OBS">
+      <templateId root="2.16.840.1.113883.10.20.23.63"/>
+      <id root="1878988342" extension="MDHT"/>
+      <code code="OATtbd" codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="NCI Thesaurus"/>
+      <effectiveTime>
+        <low value="2012"/>
+        <high value="2012"/>
+      </effectiveTime>
+      <value xsi:type="ED">Text Value</value>
+      <targetSiteCode code="1666979910"/>
+    </observation>
+  </entryRelationship>
+  <entryRelationship>
+    <observation>
+      <id root="1588328468" extension="MDHT"/>
+      <code codeSystem="2.16.840.1.113883.3.26.1.1"/>
+      <effectiveTime>
+        <low value="2012"/>
+        <high value="2012"/>
+      </effectiveTime>
+      <value xsi:type="CD" code="1529163696"/>
+      <targetSiteCode code="1023541768"/>
+    </observation>
+  </entryRelationship>
+  <entryRelationship>
+    <observation/>
+  </entryRelationship>
+  <entryRelationship>
+    <observation classCode="OBS" moodCode="EVN">
+      <templateId root="2.16.840.1.113883.10.20.23.36"/>
+      <id root="1768879494" extension="MDHT"/>
+      <code code="C83208" codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="NCI Thesaurus" displayName="Adverse Event Pattern"/>
+      <effectiveTime>
+        <low value="2012"/>
+        <high value="2012"/>
+      </effectiveTime>
+      <value xsi:type="CD" code="1597104162"/>
+      <targetSiteCode code="56384283"/>
+    </observation>
+  </entryRelationship>
+  <entryRelationship>
+    <observation>
+      <templateId root="2.16.840.1.113883.10.20.23.35"/>
+      <id root="756193146" extension="MDHT"/>
+      <code codeSystem="2.16.840.1.113883.3.26.1.1" displayName="Adverse Event Outcome"/>
+      <effectiveTime>
+        <low value="2012"/>
+        <high value="2012"/>
+      </effectiveTime>
+      <value xsi:type="CD" code="1146091123"/>
+      <targetSiteCode code="2079773389"/>
+    </observation>
+  </entryRelationship>
+  <entryRelationship>
+    <observation>
+      <templateId root="2.16.840.1.113883.10.20.25.25"/>
+      <id root="1639975381" extension="MDHT"/>
+      <code codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="NCI Thesaurus" displayName="Adverse Event Concommitant Treatment"/>
+      <effectiveTime>
+        <low value="2012"/>
+        <high value="2012"/>
+      </effectiveTime>
+      <value xsi:type="BL"/>
+      <targetSiteCode code="1622286617"/>
+    </observation>
+  </entryRelationship>
+  <entryRelationship>
+    <observation classCode="OBS" moodCode="EVN">
+      <templateId root="2.16.840.1.113883.10.20.23.98"/>
+      <id root="622045481" extension="MDHT"/>
+      <code code="TOtbd" codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="NCI Thesaurus"/>
+      <effectiveTime>
+        <low value="2012"/>
+        <high value="2012"/>
+      </effectiveTime>
+      <value xsi:type="CD" code="1982401954"/>
+      <targetSiteCode code="1552815367"/>
+    </observation>
+  </entryRelationship>
+  <entryRelationship>
+    <observation classCode="OBS" moodCode="EVN">
+      <templateId root="2.16.840.1.113883.10.20.23.20"/>
+      <id root="97763195" extension="MDHT"/>
+      <code codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="NCI Thesaurus"/>
+      <effectiveTime>
+        <low value="2012"/>
+        <high value="2012"/>
+      </effectiveTime>
+      <value xsi:type="CD" code="267035064"/>
+      <targetSiteCode code="1748145362"/>
+    </observation>
+  </entryRelationship>
+  <entryRelationship>
+    <observation/>
+  </entryRelationship>
+  <entryRelationship>
+    <observation>
+      <id root="1927622743" extension="MDHT"/>
+      <code code="651939534"/>
+      <effectiveTime>
+        <low value="2012"/>
+        <high value="2012"/>
+      </effectiveTime>
+      <targetSiteCode code="684459282"/>
+      <participant/>
+      <entryRelationship typeCode="REFR"/>
+      <entryRelationship>
+        <act classCode="ACT">
+          <templateId root="2.16.840.1.113883.10.20.23.42"/>
+          <code code="C83204" codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="NCI Thesaurus"/>
+        </act>
+      </entryRelationship>
+      <entryRelationship>
+        <observation classCode="OBS">
+          <templateId root="2.16.840.1.113883.10.20.23.56"/>
+          <code codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="NCI Thesaurus" displayName="Reason for non completion"/>
+        </observation>
+      </entryRelationship>
+      <entryRelationship>
+        <act/>
+      </entryRelationship>
+      <entryRelationship>
+        <observation classCode="OBS" moodCode="EVN">
+          <templateId root="2.16.840.1.113883.10.20.23.20"/>
+          <code codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="NCI Thesaurus"/>
+        </observation>
+      </entryRelationship>
+      <entryRelationship>
+        <observation/>
+      </entryRelationship>
+      <entryRelationship>
+        <observation>
+          <templateId root="2.16.840.1.113883.10.20.23.30"/>
+          <code code="C66734" codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="NCI Thesaurus"/>
+        </observation>
+      </entryRelationship>
+    </observation>
+  </entryRelationship>
+  <entryRelationship>
+    <observation classCode="OBS" moodCode="EVN">
+      <templateId root="2.16.840.1.113883.10.20.23.102"/>
+      <id root="137889355" extension="MDHT"/>
+      <code code="EDtbd" codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="NCI Thesaurus"/>
+      <effectiveTime>
+        <low value="2012"/>
+        <high value="2012"/>
+      </effectiveTime>
+      <value xsi:type="PQR" code="920047810"/>
+      <targetSiteCode code="658769065"/>
+    </observation>
+  </entryRelationship>
 </observation>]]></codeblock>
 <section id="changes">
 </section>
 <p><ph id="classformalname">Adverse Event</ph></p>
-<p id="shortdesc">[Observation: templateId <tt>2.16.840.1.113883.10.20.23.23</tt>]</p>
+<p id="shortdesc">[Observation: templateId <tt>2.16.840.1.113883.10.20.23.15</tt>]</p>
 </body>
 </topic>

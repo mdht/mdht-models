@@ -2,43 +2,79 @@
 <!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
 <topic id="classId" xml:lang="en-us">
 <title>Subject Pool - conformance rules</title>
-<shortdesc id="shortdesc">[Observation: templateId <tt>2.16.840.1.113883.10.20.23.53</tt>]</shortdesc>
+<shortdesc id="shortdesc">[Act: templateId <tt>2.16.840.1.113883.10.20.23.94</tt>]</shortdesc>
 <prolog id="prolog">
-<metadata><category>Observation</category></metadata>
-<resourceid id="2.16.840.1.113883.10.20.23.53"/>
+<metadata><category>Act</category></metadata>
+<resourceid id="2.16.840.1.113883.10.20.23.94"/>
 </prolog>
 <body>
 <section id="description">
-<p>Definition of a pool (group) that is created in order to allow findings that refer to a group of subjects rather than to a single one.</p>
+<p>The template supports the definition of a pool (group) that is created in order to allow findings that refer to a group of subjects rather than to a single one.  When a pool is defined, it may be the subject of the report.</p>
 </section>
 <ol id="conformance">
-<li>Contains exactly one [1..1] <tt><b>@classCode</b></tt>
+<li>Contains exactly one [1..1] <tt><b>@classCode</b>="ACT" </tt><i>Act</i> (CodeSystem:<tt> 2.16.840.1.113883.5.6 HL7ActClass</tt>)
 </li>
-<li>Contains exactly one [1..1] <tt><b>@moodCode</b></tt>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@moodCode</b>="EVN" </tt><i>Event</i> (CodeSystem:<tt> 2.16.840.1.113883.5.1001 HL7ActMood</tt>) (CONF:1138)
 </li>
-<li>Contains exactly one [1..1] <tt><b>code</b></tt>
-</li>
-<li>Contains zero or more [0..*] <tt><b>id</b></tt>
-</li>
-<li>Contains zero or more [0..*] <tt><b>value</b></tt>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:1139)<tt><b>/@code</b>="SPtbd" </tt> (CodeSystem:<tt> 2.16.840.1.113883.3.26.1.1 NCI Thesaurus</tt>) (CONF:1140)
+<ul><li>A code to indicate the act of joining a group of subjects into a pool for the purpose of structuring reporting from the trial.</li></ul></li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>id</b></tt> (CONF:1141)
+<ul><li>The identifier for the pool.  It is the linking value that is used as a common identifier for all members of the pool.  [SEND: POOLID]</li></ul></li>
+<li><b>SHALL</b> contain zero or more [0..*] <tt><b>participant</b></tt> (CONF:1142) <p><i>The association establishes the link between the pool and its members.</i></p><ol><li> Such participants <b>SHALL</b> contain exactly one [1..1] <tt><b>@typeCode</b>="RCT" </tt> (CONF:1143)</li><li> Such participants <b>SHALL</b> contain exactly one [1..1] <tt><b>participantRole</b></tt> (CONF:1144) <p><i>The association provides identifying information for the individual pool member.</i></p><ol><li> This participantRole <b>SHALL</b> contain exactly one [1..1] <tt><b>@classCode</b>="IDENT" </tt> (CONF:1145)</li><li> This participantRole <b>SHALL</b> contain exactly one [1..1] <tt><b>id</b></tt> (CONF:1146)<p><i>An identifier assigned to a pool member.  The identifier value must be usable within the context of the study so that data collected for the pool can be merged with that collected for the study subject.  [SEND: USUBJID]</i></p></li></ol> <p><i>The association provides identifying information for the individual pool member.</i></p></li></ol>
 </li>
 </ol>
 <ol id="aggregate">
-<li>Contains exactly one [1..1] <tt><b>@classCode</b></tt>
+<li>Contains exactly one [1..1] <tt><b>@classCode</b>="ACT" </tt><i>Act</i> (CodeSystem:<tt> 2.16.840.1.113883.5.6 HL7ActClass</tt>)
 </li>
-<li>Contains exactly one [1..1] <tt><b>@moodCode</b></tt>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@moodCode</b>="EVN" </tt><i>Event</i> (CodeSystem:<tt> 2.16.840.1.113883.5.1001 HL7ActMood</tt>) (CONF:1138)
 </li>
-<li>Contains zero or more [0..*] <tt><b>id</b></tt>
-</li>
-<li>Contains exactly one [1..1] <tt><b>code</b></tt>
-</li>
-<li>Contains zero or more [0..*] <tt><b>value</b></tt>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>id</b></tt> (CONF:1141)
+<ul><li>The identifier for the pool.  It is the linking value that is used as a common identifier for all members of the pool.  [SEND: POOLID]</li></ul></li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:1139)<tt><b>/@code</b>="SPtbd" </tt> (CodeSystem:<tt> 2.16.840.1.113883.3.26.1.1 NCI Thesaurus</tt>) (CONF:1140)
+<ul><li>A code to indicate the act of joining a group of subjects into a pool for the purpose of structuring reporting from the trial.</li></ul></li>
+<li><b>SHALL</b> contain zero or more [0..*] <tt><b>participant</b></tt> (CONF:1142) <p><i>The association establishes the link between the pool and its members.</i></p><ol><li> Such participants <b>SHALL</b> contain exactly one [1..1] <tt><b>@typeCode</b>="RCT" </tt> (CONF:1143)</li><li> Such participants <b>SHALL</b> contain exactly one [1..1] <tt><b>participantRole</b></tt> (CONF:1144) <p><i>The association provides identifying information for the individual pool member.</i></p><ol><li> This participantRole <b>SHALL</b> contain exactly one [1..1] <tt><b>@classCode</b>="IDENT" </tt> (CONF:1145)</li><li> This participantRole <b>SHALL</b> contain exactly one [1..1] <tt><b>id</b></tt> (CONF:1146)<p><i>An identifier assigned to a pool member.  The identifier value must be usable within the context of the study so that data collected for the pool can be merged with that collected for the study subject.  [SEND: USUBJID]</i></p></li></ol> <p><i>The association provides identifying information for the individual pool member.</i></p></li></ol>
 </li>
 </ol>
-<codeblock id="example"><![CDATA[]]></codeblock>
+<section id="tableconformance"><p><table frame="all" scale="80" pgwide="1" ><tgroup cols="8" align="left" colsep = "1" rowsep = "1" > <colspec colname="col0" colnum="0" /><colspec colname="col1" colnum="1" /><colspec colname="col2" colnum="2" /><colspec colname="col3" colnum="3" /><colspec colname="col4" colnum="4" /><colspec colname="col5" colnum="5" /><colspec colname="col6" colnum="6" /><colspec colname="col7" colnum="7" /><thead> <row><entry namest="col0" nameend="col7" >sdtm::Subject Pool</entry>  </row>  <row><entry namest="col0" nameend="col7" >cda::act[cda:templateId/@root = 2.16.840.1.113883.10.20.23.94]/</entry>  </row>  <row><entry>Name</entry><entry>XPath</entry><entry>Cardinality</entry><entry>Severity</entry><entry>Nullable</entry><entry>Data Type</entry><entry>Conformance</entry><entry>Value(s)</entry></row></thead><tbody><row><entry>classCode</entry><entry>@classCode</entry><entry>1..1</entry><entry></entry><entry>NO</entry><entry>x_ActClassDocumentEntryAct</entry><entry></entry><entry> ACCM</entry></row> 
+<row><entry>moodCode</entry><entry>@moodCode</entry><entry>1..1</entry><entry>SHALL</entry><entry>NO</entry><entry>x_ActMoodDocumentObservation</entry><entry>CONF:1138</entry><entry> APT</entry></row> 
+<row><entry>negationInd</entry><entry>@negationInd</entry><entry>0..1</entry><entry></entry><entry>NO</entry><entry>Boolean</entry><entry></entry><entry> </entry></row> 
+<row><entry>nullFlavor</entry><entry>@nullFlavor</entry><entry>0..1</entry><entry></entry><entry>NO</entry><entry>NullFlavor</entry><entry></entry><entry> ASKU</entry></row> 
+<row><entry>code</entry><entry>code</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>CD</entry><entry>CONF:1139</entry><entry>NCI Thesaurus 2.16.840.1.113883.3.26.1.1 SPtbd</entry></row> 
+<row><entry>effectiveTime</entry><entry>effectiveTime</entry><entry>0..1</entry><entry></entry><entry>YES</entry><entry>IVL_TS</entry><entry></entry><entry> </entry></row> 
+<row><entry>id</entry><entry>id</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>II</entry><entry>CONF:1141</entry><entry> </entry></row> 
+<row><entry>languageCode</entry><entry>languageCode</entry><entry>0..1</entry><entry></entry><entry>YES</entry><entry>CS</entry><entry></entry><entry> </entry></row> 
+<row><entry>priorityCode</entry><entry>priorityCode</entry><entry>0..1</entry><entry></entry><entry>YES</entry><entry>CE</entry><entry></entry><entry> </entry></row> 
+<row><entry>realmCode</entry><entry>realmCode</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>CS</entry><entry></entry><entry> </entry></row> 
+<row><entry>statusCode</entry><entry>statusCode</entry><entry>0..1</entry><entry></entry><entry>YES</entry><entry>CS</entry><entry></entry><entry> </entry></row> 
+<row><entry>templateId</entry><entry>templateId</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>II</entry><entry></entry><entry> 2.16.840.1.113883.10.20.23.94</entry></row> 
+<row><entry>text</entry><entry>text</entry><entry>0..1</entry><entry></entry><entry>YES</entry><entry>ED</entry><entry></entry><entry> </entry></row> 
+<row><entry>author</entry><entry>author</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>Author</entry><entry></entry><entry> </entry></row> 
+<row><entry>entryRelationship</entry><entry>entryRelationship</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>EntryRelationship</entry><entry></entry><entry> </entry></row> 
+<row><entry>informant</entry><entry>informant</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>Informant12</entry><entry></entry><entry> </entry></row> 
+<row><entry>participant</entry><entry>participant</entry><entry>0..*</entry><entry>SHALL</entry><entry>YES</entry><entry>PoolParticipant</entry><entry>CONF:1142</entry><entry> </entry></row> 
+<row><entry>performer</entry><entry>performer</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>Performer2</entry><entry></entry><entry> </entry></row> 
+<row><entry>precondition</entry><entry>precondition</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>Precondition</entry><entry></entry><entry> </entry></row> 
+<row><entry>reference</entry><entry>reference</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>Reference</entry><entry></entry><entry> </entry></row> 
+<row><entry>specimen</entry><entry>specimen</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>Specimen</entry><entry></entry><entry> </entry></row> 
+<row><entry>subject</entry><entry>subject</entry><entry>0..1</entry><entry></entry><entry>YES</entry><entry>Subject</entry><entry></entry><entry> </entry></row> 
+<row><entry>typeId</entry><entry>typeId</entry><entry>0..1</entry><entry></entry><entry>YES</entry><entry>InfrastructureRootTypeId</entry><entry></entry><entry> </entry></row> 
+</tbody></tgroup></table></p></section>
+<codeblock id="example"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
+<act xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd" classCode="ACT" moodCode="EVN">
+  <templateId root="2.16.840.1.113883.10.20.23.94"/>
+  <id root="1644433569" extension="MDHT"/>
+  <code code="SPtbd" codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="NCI Thesaurus"/>
+  <effectiveTime>
+    <low value="2012"/>
+    <high value="2012"/>
+  </effectiveTime>
+  <participant typeCode="RCT">
+    <participantRole classCode="IDENT"/>
+  </participant>
+</act>]]></codeblock>
 <section id="changes">
 </section>
 <p><ph id="classformalname">Subject Pool</ph></p>
-<p id="shortdesc">[Observation: templateId <tt>2.16.840.1.113883.10.20.23.53</tt>]</p>
+<p id="shortdesc">[Act: templateId <tt>2.16.840.1.113883.10.20.23.94</tt>]</p>
 </body>
 </topic>

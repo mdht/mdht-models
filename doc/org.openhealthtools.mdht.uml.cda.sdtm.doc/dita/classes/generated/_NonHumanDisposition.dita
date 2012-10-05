@@ -1,68 +1,199 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
 <topic id="classId" xml:lang="en-us">
-<title>Non-Human Disposition - conformance rules</title>
-<shortdesc id="shortdesc">[Act: templateId <tt>2.16.840.1.113883.10.20.23.25</tt>]</shortdesc>
+<title>Non-human Disposition - conformance rules</title>
+<shortdesc id="shortdesc">[Act: templateId <tt>2.16.840.1.113883.10.20.23.57</tt>]</shortdesc>
 <prolog id="prolog">
 <metadata><category>Act</category></metadata>
-<resourceid id="2.16.840.1.113883.10.20.23.25"/>
+<resourceid id="2.16.840.1.113883.10.20.23.57"/>
 </prolog>
 <body>
 <section id="description">
-<p>Disposition information provides an accounting for all subjects who entered the study and may include protocol milestones, such as randomization, as well as the subject's completion status or reason for discontinuation for the entire study or each phase or segment of the study, including screening and post-treatment follow-up.</p>
+<p>The template provides a structure to capture disposition information in non-clinical trials.  Disposition information provides an accounting for all subjects who entered the study and may include protocol milestones, such as randomization, as well as the subject's completion status or reason for discontinuation for the entire study or each phase or segment of the study, including screening and post-treatment follow-up.</p>
 </section>
 <ol id="conformance">
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@classCode</b>="ACT" </tt><i>Act</i> (CodeSystem:<tt> 2.16.840.1.113883.5.6 HL7ActClass</tt>)
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@classCode</b>="ACT" </tt><i>Act</i> (CodeSystem:<tt> 2.16.840.1.113883.5.6 HL7ActClass</tt>) (CONF:903)
 </li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@moodCode</b>="EVN" </tt><i>Event</i> (CodeSystem:<tt> 2.16.840.1.113883.5.1001 HL7ActMood</tt>)
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@moodCode</b>="EVN" </tt><i>Event</i> (CodeSystem:<tt> 2.16.840.1.113883.5.1001 HL7ActMood</tt>) (CONF:904)
 </li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt>
-<ul><li>A code drawn from a controlled terminology for the event or protocol milestone.  The verbatim name for the term must be captured as well.  [SDTM:DSTERM; DSDECOD]</li></ul></li>
-<li><b>SHOULD</b> contain zero or one [0..1] <tt><b>effectiveTime</b></tt>
-<ul><li>The start date/time of the disposition event.  [SDTM: DSSTDTC]</li></ul></li>
-<li><b>SHALL</b> contain  [1..2] <tt><b>id</b></tt>
-<ul><li>An identifier that is used to ensure the  uniqueness of subject records within the substance use domain.  [SDTM: DSSEQ, DSREFID]  Note, the Sequence Number is required.</li></ul></li>
-<li>Contains zero or one [0..1] <tt><b>dispositionCategoryAssociation</b></tt> with data type <xref href="../DispositionCategoryAssociation.dita">disposition Category Association</xref>
-</li>
-<li>Contains zero or one [0..1] <tt><b>dispositionSubCategoryAssociation</b></tt> with data type <xref href="../DispositionSubCategoryAssociation.dita">disposition Sub Category Association</xref>
-</li>
-<li>Contains zero or one [0..1] <tt><b>study Epoch</b></tt> with data type <xref href="../StudyEpoch.dita">Study Epoch</xref>
-</li>
-<li>Contains zero or one [0..1] <tt><b>data Collection</b></tt> with data type <xref href="../DataCollection.dita">Data Collection</xref>
-</li>
-<li>Contains zero or one [0..1] <tt><b>group Identifier</b></tt> with data type <xref href="../GroupIdentifier.dita">Group Identifier</xref>
-</li>
-<li>Contains zero or one [0..1] <tt><b>study Day Period</b></tt> with data type <xref href="../StudyDayPeriod.dita">Study Day Period</xref>
-</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>id</b></tt> (CONF:905)
+<ul><li>An identifier that is used to ensure the uniqueness of the disposition record.  [SEND: DSSEQ]</li></ul></li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:906), where the @code <b>SHALL</b> be selected from ValueSet<tt> <xref href="../../terminology/DispositionItemSet.dita">Disposition Item Set</xref> CXXXXX</tt><b> STATIC</b> (CONF:907)
+<ul><li>A code drawn from a controlled terminology for the event or protocol milestone.  The verbatim name for the term must be captured as well.  [SEND: DSTERM; DSDECOD]</li></ul></li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>effectiveTime</b></tt> with data type TS (CONF:908)
+<ul><li>The date/time of the disposition event.  [SEND: DSSTDTC]</li></ul></li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>entryRelationship</b></tt> (CONF:909)
+<ul><li>A reference to the study day corresponding to the time of the observation.</li></ul><ol>
+<li>Contains <tt><b>@typeCode="</b>REFR" </tt><i>REFR</i></li>
+<li>Contains exactly one [1..1] <xref href="../StudyDayPeriod.dita">Study Day Period</xref> (templateId: <tt>2.16.840.1.113883.10.20.23.82</tt>)</li></ol></li>
+<li><b>SHOULD</b> contain zero or one [0..1] <tt><b>entryRelationship</b></tt> (CONF:910)
+<ul><li>Captures the planned study day for making an observation or recording a finding.</li></ul><ol>
+<li>Contains <tt><b>@typeCode="</b>REFR" </tt><i>REFR</i></li>
+<li>Contains exactly one [1..1] <xref href="../PlannedStudyDay.dita">Planned Study Day</xref> (templateId: <tt>2.16.840.1.113883.10.20.23.68</tt>)</li></ol></li>
+<li><b>MAY</b> contain zero or more [0..*] <tt><b>entryRelationship</b></tt> (CONF:911)
+<ul><li>A place to insert comments related to a particular finding.</li></ul><ol>
+<li>Contains <tt><b>@typeCode="</b>COMP" </tt><i>COMP</i></li>
+<li>Contains exactly one [1..1] <xref href="../Comment.dita">Comment</xref> (templateId: <tt>2.16.840.1.113883.10.20.23.23</tt>)</li></ol></li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>entryRelationship</b></tt> (CONF:912)
+<ul><li>Identifies the SEND domain the record is assigned to.</li></ul><ol>
+<li>Contains <tt><b>@typeCode="</b>REFR" </tt><i>REFR</i></li>
+<li>Contains exactly one [1..1] <xref href="../DomainAssignment.dita">Domain Assignment</xref> (templateId: <tt>2.16.840.1.113883.10.20.23.30</tt>)</li></ol></li>
+<li><b>MAY</b> contain zero or more [0..*] <tt><b>entryRelationship</b></tt> (CONF:913)
+<ul><li>Establishes a relationship between this record and another record.</li></ul><ol>
+<li>Contains <tt><b>@typeCode="</b>REFR" </tt><i>REFR</i></li>
+<li>Contains exactly one [1..1] <xref href="../RelatedRecord.dita">Related Record</xref> (templateId: <tt>2.16.840.1.113883.10.20.23.75</tt>)</li></ol></li>
+<li><b>MAY</b> contain zero or more [0..*] <tt><b>entryRelationship</b></tt> (CONF:914)
+<ul><li>Allows the association of a supplemental value - outside of the content specfied for the domain - to the record.</li></ul><ol>
+<li>Contains <tt><b>@typeCode="</b>COMP" </tt><i>COMP</i></li>
+<li>Contains exactly one [1..1] <xref href="../SupplementalValue.dita">Supplemental Value</xref> (templateId: <tt>2.16.840.1.113883.10.20.23.96</tt>)</li></ol></li>
 </ol>
 <ol id="aggregate">
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@classCode</b>="ACT" </tt><i>Act</i> (CodeSystem:<tt> 2.16.840.1.113883.5.6 HL7ActClass</tt>)
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@classCode</b>="ACT" </tt><i>Act</i> (CodeSystem:<tt> 2.16.840.1.113883.5.6 HL7ActClass</tt>) (CONF:903)
 </li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@moodCode</b>="EVN" </tt><i>Event</i> (CodeSystem:<tt> 2.16.840.1.113883.5.1001 HL7ActMood</tt>)
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@moodCode</b>="EVN" </tt><i>Event</i> (CodeSystem:<tt> 2.16.840.1.113883.5.1001 HL7ActMood</tt>) (CONF:904)
 </li>
-<li><b>SHALL</b> contain  [1..2] <tt><b>id</b></tt>
-<ul><li>An identifier that is used to ensure the  uniqueness of subject records within the substance use domain.  [SDTM: DSSEQ, DSREFID]  Note, the Sequence Number is required.</li></ul></li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt>
-<ul><li>A code drawn from a controlled terminology for the event or protocol milestone.  The verbatim name for the term must be captured as well.  [SDTM:DSTERM; DSDECOD]</li></ul></li>
-<li><b>SHOULD</b> contain zero or one [0..1] <tt><b>effectiveTime</b></tt>
-<ul><li>The start date/time of the disposition event.  [SDTM: DSSTDTC]</li></ul></li>
-<li>Contains zero or one [0..1] <tt><b>dispositionCategoryAssociation</b></tt> with data type <xref href="../DispositionCategoryAssociation.dita">disposition Category Association</xref>
-</li>
-<li>Contains zero or one [0..1] <tt><b>dispositionSubCategoryAssociation</b></tt> with data type <xref href="../DispositionSubCategoryAssociation.dita">disposition Sub Category Association</xref>
-</li>
-<li>Contains zero or one [0..1] <tt><b>study Epoch</b></tt> with data type <xref href="../StudyEpoch.dita">Study Epoch</xref>
-</li>
-<li>Contains zero or one [0..1] <tt><b>data Collection</b></tt> with data type <xref href="../DataCollection.dita">Data Collection</xref>
-</li>
-<li>Contains zero or one [0..1] <tt><b>group Identifier</b></tt> with data type <xref href="../GroupIdentifier.dita">Group Identifier</xref>
-</li>
-<li>Contains zero or one [0..1] <tt><b>study Day Period</b></tt> with data type <xref href="../StudyDayPeriod.dita">Study Day Period</xref>
-</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>id</b></tt> (CONF:905)
+<ul><li>An identifier that is used to ensure the uniqueness of the disposition record.  [SEND: DSSEQ]</li></ul></li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:906), where the @code <b>SHALL</b> be selected from ValueSet<tt> <xref href="../../terminology/DispositionItemSet.dita">Disposition Item Set</xref> CXXXXX</tt><b> STATIC</b> (CONF:907)
+<ul><li>A code drawn from a controlled terminology for the event or protocol milestone.  The verbatim name for the term must be captured as well.  [SEND: DSTERM; DSDECOD]</li></ul></li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>effectiveTime</b></tt> with data type TS (CONF:908)
+<ul><li>The date/time of the disposition event.  [SEND: DSSTDTC]</li></ul></li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>entryRelationship</b></tt> (CONF:909)
+<ol>
+<li>Contains <tt><b>@typeCode="</b>REFR" </tt><i>REFR</i></li>
+<li>Contains exactly one [1..1] <xref href="../StudyDayPeriod.dita">Study Day Period</xref> (templateId: <tt>2.16.840.1.113883.10.20.23.82</tt>)</li></ol><ul><li>A reference to the study day corresponding to the time of the observation.</li></ul></li>
+<li><b>SHOULD</b> contain zero or one [0..1] <tt><b>entryRelationship</b></tt> (CONF:910)
+<ol>
+<li>Contains <tt><b>@typeCode="</b>REFR" </tt><i>REFR</i></li>
+<li>Contains exactly one [1..1] <xref href="../PlannedStudyDay.dita">Planned Study Day</xref> (templateId: <tt>2.16.840.1.113883.10.20.23.68</tt>)</li></ol><ul><li>Captures the planned study day for making an observation or recording a finding.</li></ul></li>
+<li><b>MAY</b> contain zero or more [0..*] <tt><b>entryRelationship</b></tt> (CONF:911)
+<ol>
+<li>Contains <tt><b>@typeCode="</b>COMP" </tt><i>COMP</i></li>
+<li>Contains exactly one [1..1] <xref href="../Comment.dita">Comment</xref> (templateId: <tt>2.16.840.1.113883.10.20.23.23</tt>)</li></ol><ul><li>A place to insert comments related to a particular finding.</li></ul></li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>entryRelationship</b></tt> (CONF:912)
+<ol>
+<li>Contains <tt><b>@typeCode="</b>REFR" </tt><i>REFR</i></li>
+<li>Contains exactly one [1..1] <xref href="../DomainAssignment.dita">Domain Assignment</xref> (templateId: <tt>2.16.840.1.113883.10.20.23.30</tt>)</li></ol><ul><li>Identifies the SEND domain the record is assigned to.</li></ul></li>
+<li><b>MAY</b> contain zero or more [0..*] <tt><b>entryRelationship</b></tt> (CONF:913)
+<ol>
+<li>Contains <tt><b>@typeCode="</b>REFR" </tt><i>REFR</i></li>
+<li>Contains exactly one [1..1] <xref href="../RelatedRecord.dita">Related Record</xref> (templateId: <tt>2.16.840.1.113883.10.20.23.75</tt>)</li></ol><ul><li>Establishes a relationship between this record and another record.</li></ul></li>
+<li><b>MAY</b> contain zero or more [0..*] <tt><b>entryRelationship</b></tt> (CONF:914)
+<ol>
+<li>Contains <tt><b>@typeCode="</b>COMP" </tt><i>COMP</i></li>
+<li>Contains exactly one [1..1] <xref href="../SupplementalValue.dita">Supplemental Value</xref> (templateId: <tt>2.16.840.1.113883.10.20.23.96</tt>)</li></ol><ul><li>Allows the association of a supplemental value - outside of the content specfied for the domain - to the record.</li></ul></li>
 </ol>
-<codeblock id="example"><![CDATA[]]></codeblock>
+<section id="tableconformance"><p><table frame="all" scale="80" pgwide="1" ><tgroup cols="8" align="left" colsep = "1" rowsep = "1" > <colspec colname="col0" colnum="0" /><colspec colname="col1" colnum="1" /><colspec colname="col2" colnum="2" /><colspec colname="col3" colnum="3" /><colspec colname="col4" colnum="4" /><colspec colname="col5" colnum="5" /><colspec colname="col6" colnum="6" /><colspec colname="col7" colnum="7" /><thead> <row><entry namest="col0" nameend="col7" >sdtm::Non-human Disposition</entry>  </row>  <row><entry namest="col0" nameend="col7" >cda::act[cda:templateId/@root = 2.16.840.1.113883.10.20.23.57]/</entry>  </row>  <row><entry>Name</entry><entry>XPath</entry><entry>Cardinality</entry><entry>Severity</entry><entry>Nullable</entry><entry>Data Type</entry><entry>Conformance</entry><entry>Value(s)</entry></row></thead><tbody><row><entry>classCode</entry><entry>@classCode</entry><entry>1..1</entry><entry>SHALL</entry><entry>NO</entry><entry>x_ActClassDocumentEntryAct</entry><entry>CONF:903</entry><entry> ACCM</entry></row> 
+<row><entry>moodCode</entry><entry>@moodCode</entry><entry>1..1</entry><entry>SHALL</entry><entry>NO</entry><entry>x_DocumentActMood</entry><entry>CONF:904</entry><entry> APT</entry></row> 
+<row><entry>negationInd</entry><entry>@negationInd</entry><entry>0..1</entry><entry></entry><entry>NO</entry><entry>Boolean</entry><entry></entry><entry> </entry></row> 
+<row><entry>nullFlavor</entry><entry>@nullFlavor</entry><entry>0..1</entry><entry></entry><entry>NO</entry><entry>NullFlavor</entry><entry></entry><entry> ASKU</entry></row> 
+<row><entry>code</entry><entry>code</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>CD</entry><entry>CONF:906</entry><entry> </entry></row> 
+<row><entry>effectiveTime</entry><entry>effectiveTime</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>TS</entry><entry>CONF:908</entry><entry> </entry></row> 
+<row><entry>id</entry><entry>id</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>II</entry><entry>CONF:905</entry><entry> </entry></row> 
+<row><entry>languageCode</entry><entry>languageCode</entry><entry>0..1</entry><entry></entry><entry>YES</entry><entry>CS</entry><entry></entry><entry> </entry></row> 
+<row><entry>priorityCode</entry><entry>priorityCode</entry><entry>0..1</entry><entry></entry><entry>YES</entry><entry>CE</entry><entry></entry><entry> </entry></row> 
+<row><entry>realmCode</entry><entry>realmCode</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>CS</entry><entry></entry><entry> </entry></row> 
+<row><entry>statusCode</entry><entry>statusCode</entry><entry>0..1</entry><entry></entry><entry>YES</entry><entry>CS</entry><entry></entry><entry> </entry></row> 
+<row><entry>templateId</entry><entry>templateId</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>II</entry><entry></entry><entry> 2.16.840.1.113883.10.20.23.57</entry></row> 
+<row><entry>text</entry><entry>text</entry><entry>0..1</entry><entry></entry><entry>YES</entry><entry>ED</entry><entry></entry><entry> </entry></row> 
+<row><entry>author</entry><entry>author</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>Author</entry><entry></entry><entry> </entry></row> 
+<row><entry>comment</entry><entry>comment</entry><entry>0..*</entry><entry>MAY</entry><entry>YES</entry><entry>Comment</entry><entry>CONF:911</entry><entry> </entry></row> 
+<row><entry>domain Assignment</entry><entry>domain Assignment</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>Domain Assignment</entry><entry>CONF:912</entry><entry> </entry></row> 
+<row><entry>entryRelationship</entry><entry>entryRelationship</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>EntryRelationship</entry><entry></entry><entry> </entry></row> 
+<row><entry>informant</entry><entry>informant</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>Informant12</entry><entry></entry><entry> </entry></row> 
+<row><entry>participant</entry><entry>participant</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>Participant2</entry><entry></entry><entry> </entry></row> 
+<row><entry>performer</entry><entry>performer</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>Performer2</entry><entry></entry><entry> </entry></row> 
+<row><entry>planned Study Day</entry><entry>planned Study Day</entry><entry>0..1</entry><entry>SHOULD</entry><entry>YES</entry><entry>Planned Study Day</entry><entry>CONF:910</entry><entry> </entry></row> 
+<row><entry>precondition</entry><entry>precondition</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>Precondition</entry><entry></entry><entry> </entry></row> 
+<row><entry>reference</entry><entry>reference</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>Reference</entry><entry></entry><entry> </entry></row> 
+<row><entry>related Record</entry><entry>related Record</entry><entry>0..*</entry><entry>MAY</entry><entry>YES</entry><entry>Related Record</entry><entry>CONF:913</entry><entry> </entry></row> 
+<row><entry>specimen</entry><entry>specimen</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>Specimen</entry><entry></entry><entry> </entry></row> 
+<row><entry>study Day Period</entry><entry>study Day Period</entry><entry>0..1</entry><entry>MAY</entry><entry>YES</entry><entry>Study Day Period</entry><entry>CONF:909</entry><entry> </entry></row> 
+<row><entry>subject</entry><entry>subject</entry><entry>0..1</entry><entry></entry><entry>YES</entry><entry>Subject</entry><entry></entry><entry> </entry></row> 
+<row><entry>supplemental Value</entry><entry>supplemental Value</entry><entry>0..*</entry><entry>MAY</entry><entry>YES</entry><entry>Supplemental Value</entry><entry>CONF:914</entry><entry> </entry></row> 
+<row><entry>typeId</entry><entry>typeId</entry><entry>0..1</entry><entry></entry><entry>YES</entry><entry>InfrastructureRootTypeId</entry><entry></entry><entry> </entry></row> 
+</tbody></tgroup></table></p></section>
+<codeblock id="example"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
+<act xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd" classCode="ACT" moodCode="EVN">
+  <templateId root="2.16.840.1.113883.10.20.23.57"/>
+  <id root="1568712613" extension="MDHT"/>
+  <code code="924491757"/>
+  <effectiveTime>
+    <low value="2012"/>
+    <high value="2012"/>
+  </effectiveTime>
+  <entryRelationship>
+    <observation>
+      <id root="1867460341" extension="MDHT"/>
+      <code code="1540288408"/>
+      <effectiveTime>
+        <low value="2012"/>
+        <high value="2012"/>
+      </effectiveTime>
+    </observation>
+  </entryRelationship>
+  <entryRelationship>
+    <observation>
+      <id root="582074648" extension="MDHT"/>
+      <code code="1709054542"/>
+      <effectiveTime>
+        <low value="2012"/>
+        <high value="2012"/>
+      </effectiveTime>
+    </observation>
+  </entryRelationship>
+  <entryRelationship>
+    <observation classCode="OBS" moodCode="EVN">
+      <templateId root="2.16.840.1.113883.10.20.23.23"/>
+      <id root="344308811" extension="MDHT"/>
+      <code code="C49569" codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="NCI Thesaurus"/>
+      <effectiveTime>
+        <low value="2012"/>
+        <high value="2012"/>
+      </effectiveTime>
+      <participant/>
+      <entryRelationship/>
+    </observation>
+  </entryRelationship>
+  <entryRelationship>
+    <observation>
+      <templateId root="2.16.840.1.113883.10.20.23.30"/>
+      <id root="2129935983" extension="MDHT"/>
+      <code code="C66734" codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="NCI Thesaurus"/>
+      <effectiveTime>
+        <low value="2012"/>
+        <high value="2012"/>
+      </effectiveTime>
+    </observation>
+  </entryRelationship>
+  <entryRelationship>
+    <act classCode="ACT">
+      <templateId root="2.16.840.1.113883.10.20.23.75"/>
+      <id root="874770019" extension="MDHT"/>
+      <code codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="NCI Thesaurus"/>
+      <effectiveTime>
+        <low value="2012"/>
+        <high value="2012"/>
+      </effectiveTime>
+    </act>
+  </entryRelationship>
+  <entryRelationship>
+    <observation classCode="OBS" moodCode="EVN">
+      <templateId root="2.16.840.1.113883.10.20.23.96"/>
+      <id root="1054655956" extension="MDHT"/>
+      <code codeSystem="locally defined" codeSystemName="Supplemental Value Type"/>
+      <effectiveTime>
+        <low value="2012"/>
+        <high value="2012"/>
+      </effectiveTime>
+      <participant/>
+      <entryRelationship typeCode="COMP"/>
+    </observation>
+  </entryRelationship>
+</act>]]></codeblock>
 <section id="changes">
 </section>
-<p><ph id="classformalname">Non-Human Disposition</ph></p>
-<p id="shortdesc">[Act: templateId <tt>2.16.840.1.113883.10.20.23.25</tt>]</p>
+<p><ph id="classformalname">Non-human Disposition</ph></p>
+<p id="shortdesc">[Act: templateId <tt>2.16.840.1.113883.10.20.23.57</tt>]</p>
 </body>
 </topic>
