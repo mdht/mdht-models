@@ -4,7 +4,9 @@
 <topic id="topicId" xml:lang="en-us">
 	<title>DOCUMENT TEMPLATES</title>
 	<body>
-		<p>This section contains the document level constraints for CDA
-			documents that are compliant with this implementation guide.</p>
+		<p>This section those templates used to define documents conformant to 
+		the implementation guide.  Currently, only a single document type - either
+		a human clinical report or a non-human subject report - has been defined
+		for each Implementation Guide.</p>
 	</body>
 </topic>
