@@ -16,8 +16,11 @@
 <ol audience="developer" conref="generated/_BodyWeightGain.dita#classId/aggregate">
 <li></li>
 </ol>
+<!-- Comment out the section for tables
 <section conref="generated/_BodyWeightGain.dita#classId/tableconformance">
+
 </section>
+-->
 <p> </p>
 <p><b>Body Weight Gain example</b></p>
 <!-- TODO: insert custom instance example here -->

@@ -16,8 +16,10 @@
 <ol audience="developer" conref="generated/_SubstanceUse.dita#classId/aggregate">
 <li></li>
 </ol>
+<!-- Comment out the sample table
 <section conref="generated/_SubstanceUse.dita#classId/tableconformance">
 </section>
+-->
 <p> </p>
 <p><b>Substance Use example</b></p>
 <!-- TODO: insert custom instance example here -->

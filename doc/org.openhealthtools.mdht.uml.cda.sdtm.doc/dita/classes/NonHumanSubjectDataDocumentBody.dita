@@ -16,13 +16,17 @@
 <ol audience="developer" conref="generated/_NonHumanSubjectDataDocumentBody.dita#classId/aggregate">
 <li></li>
 </ol>
+<!-- Comment out the sample table 
 <section conref="generated/_NonHumanSubjectDataDocumentBody.dita#classId/tableconformance">
 </section>
+-->
 <p> </p>
+<!-- Comment out the sample XML instance 
 <p><b>Non-Human Subject Data Document Body example</b></p>
 <!-- TODO: insert custom instance example here -->
 <!-- generated instance example follows -->
 <codeblock conref="generated/_NonHumanSubjectDataDocumentBody.dita#classId/example">
 </codeblock>
+-->
 </body>
 </topic>

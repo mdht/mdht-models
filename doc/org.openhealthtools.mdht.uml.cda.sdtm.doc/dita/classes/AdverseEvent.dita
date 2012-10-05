@@ -16,8 +16,10 @@
 <ol audience="developer" conref="generated/_AdverseEvent.dita#classId/aggregate">
 <li></li>
 </ol>
+<!-- Comment out the section for tables 
 <section conref="generated/_AdverseEvent.dita#classId/tableconformance">
 </section>
+-->
 <p> </p>
 <p><b>Adverse Event example</b></p>
 <!-- TODO: insert custom instance example here -->

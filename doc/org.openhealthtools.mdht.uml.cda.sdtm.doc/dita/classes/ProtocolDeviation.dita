@@ -16,8 +16,10 @@
 <ol audience="developer" conref="generated/_ProtocolDeviation.dita#classId/aggregate">
 <li></li>
 </ol>
+<!-- Comment out the sample table
 <section conref="generated/_ProtocolDeviation.dita#classId/tableconformance">
 </section>
+-->
 <p> </p>
 <p><b>Protocol Deviation example</b></p>
 <!-- TODO: insert custom instance example here -->

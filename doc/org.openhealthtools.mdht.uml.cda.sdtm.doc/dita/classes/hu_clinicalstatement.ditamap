@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd">
+<map title="Clinical Statement Templates">
+<topicref href="AdverseEvent.dita" type="topic" />
+<topicref href="AssayQuantitation.dita" type="topic" />
+<topicref href="BodySystemOrOrganClass.dita" type="topic" />
+
+
+<topicref href="Category.dita" type="topic" />
+<topicref href="ClinicalEvent.dita" type="topic" />
+
+<topicref href="Comment.dita" type="topic" />
+<topicref href="ConcomitantMedication.dita" type="topic" />
+<topicref href="ConcomitantTreatment.dita" type="topic" />
+<topicref href="DataCollection.dita" type="topic" />
+
+
+<topicref href="DomainAssignment.dita" type="topic" />
+<topicref href="DoseAdjustmentReason.dita" type="topic" />
+<topicref href="DrugAccountability.dita" type="topic" />
+<topicref href="ECGTestResult.dita" type="topic" />
+<topicref href="EventDuration.dita" type="topic" />
+<topicref href="EventOrFindingSeverity.dita" type="topic" />
+<topicref href="EventOutcome.dita" type="topic" />
+<topicref href="EventPattern.dita" type="topic" />
+<topicref href="EventStudyDay.dita" type="topic" />
+
+<topicref href="FastingStatus.dita" type="topic" />
+<topicref href="FindingAbout.dita" type="topic" />
+
+<topicref href="GroupIdentifier.dita" type="topic" />
+<topicref href="HumanClinicalDisposition.dita" type="topic" />
+<topicref href="HumanClinicalExposure.dita" type="topic" />
+<topicref href="HumanClinicalLaboratoryTestResult.dita" type="topic" />
+<topicref href="HumanClinicalSubjectDemographics.dita" type="topic" />
+<topicref href="InclusionOrExclusionCriteriaNotMet.dita" type="topic" />
+<topicref href="Indication.dita" type="topic" />
+<topicref href="IntendedRegimen.dita" type="topic" />
+
+<topicref href="MedicalHistoryItem.dita" type="topic" />
+<topicref href="MicrobiologySpecimenFinding.dita" type="topic" />
+<topicref href="MicrobiologySusceptibility.dita" type="topic" />
+
+<topicref href="NonPerformanceReason.dita" type="topic" />
+<topicref href="NonStudyTreatmentRelationship.dita" type="topic" />
+
+<topicref href="OtherTreatmentActionTaken.dita" type="topic" />
+
+<topicref href="PharmacokineticConcentrationFinding.dita" type="topic" />
+<topicref href="PharmacokineticParameterFinding.dita" type="topic" />
+<topicref href="PhysicalExaminationFinding.dita" type="topic" />
+<topicref href="PlannedStudyDay.dita" type="topic" />
+<topicref href="PositionOfSubject.dita" type="topic" />
+<topicref href="PreSpecifiedEvent.dita" type="topic" />
+<topicref href="ProtocolDeviation.dita" type="topic" />
+<topicref href="QuestionnaireFinding.dita" type="topic" />
+<topicref href="ReferencePeriod.dita" type="topic" />
+<topicref href="RelatedRecord.dita" type="topic" />
+<topicref href="ResultCategory.dita" type="topic" />
+<topicref href="SeriousEvent.dita" type="topic" />
+<topicref href="SpecimenInformation.dita" type="topic" />
+<topicref href="StartRelativeToReferencePeriod.dita" type="topic" />
+<topicref href="StopRelativeToReferencePeriod.dita" type="topic" />
+<topicref href="StudyArm.dita" type="topic" />
+<topicref href="StudyDayPeriod.dita" type="topic" />
+<topicref href="StudyEpoch.dita" type="topic" />
+<topicref href="StudySubjectEvent.dita" type="topic" />
+<topicref href="StudySubjectFinding.dita" type="topic" />
+<topicref href="StudySubjectIntervention.dita" type="topic" />
+<topicref href="StudyTreatmentActionTaken.dita" type="topic" />
+<topicref href="StudyTreatmentCausality.dita" type="topic" />
+<topicref href="SubCategory.dita" type="topic" />
+<topicref href="SubjectCharacteristic.dita" type="topic" />
+<topicref href="SubjectElement.dita" type="topic" />
+
+<topicref href="SubstanceUse.dita" type="topic" />
+<topicref href="SupplementalValue.dita" type="topic" />
+<topicref href="TimingReference.dita" type="topic" />
+<topicref href="Toxicity.dita" type="topic" />
+
+<topicref href="Visit.dita" type="topic" />
+<topicref href="VitalSign.dita" type="topic" />
+</map>

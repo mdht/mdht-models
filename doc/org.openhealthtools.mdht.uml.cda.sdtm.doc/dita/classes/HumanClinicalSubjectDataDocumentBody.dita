@@ -16,13 +16,18 @@
 <ol audience="developer" conref="generated/_HumanClinicalSubjectDataDocumentBody.dita#classId/aggregate">
 <li></li>
 </ol>
+<!-- Comment out the section for tables
 <section conref="generated/_HumanClinicalSubjectDataDocumentBody.dita#classId/tableconformance">
 </section>
+-->
 <p> </p>
+<!--  Comment out the example 
 <p><b>Human Clinical Subject Data Document Body example</b></p>
 <!-- TODO: insert custom instance example here -->
 <!-- generated instance example follows -->
+
 <codeblock conref="generated/_HumanClinicalSubjectDataDocumentBody.dita#classId/example">
 </codeblock>
+-->
 </body>
 </topic>

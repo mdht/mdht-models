@@ -16,8 +16,10 @@
 <ol audience="developer" conref="generated/_NonHumanLaboratoryTestResult.dita#classId/aggregate">
 <li></li>
 </ol>
+<!-- Comment out the section for tables 
 <section conref="generated/_NonHumanLaboratoryTestResult.dita#classId/tableconformance">
 </section>
+-->
 <p> </p>
 <p><b>Non-Human Laboratory Test Result example</b></p>
 <!-- TODO: insert custom instance example here -->
