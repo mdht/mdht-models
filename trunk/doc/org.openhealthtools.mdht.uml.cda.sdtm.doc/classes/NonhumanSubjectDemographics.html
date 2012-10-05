@@ -1,0 +1,615 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en-us" xml:lang="en-us">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta name="copyright" content="(C) Copyright 2005"/>
+<meta name="DC.rights.owner" content="(C) Copyright 2005"/>
+<meta name="DC.Type" content="topic"/>
+<meta name="DC.Title" content="Non-human Subject Demographics"/>
+<meta name="abstract" content="[Act: templateId 2.16.840.1.113883.10.20.23.16]"/>
+<meta name="description" content="[Act: templateId 2.16.840.1.113883.10.20.23.16]"/>
+<meta name="DC.Coverage" content="Act"/>
+<meta name="DC.Relation" scheme="URI" content="../content/ClinicalStatementTemplates.html"/>
+<meta name="DC.Format" content="XHTML"/>
+<meta name="DC.Identifier" content="classId"/>
+<meta name="DC.Language" content="en-us"/>
+<link rel="stylesheet" type="text/css" href="../css/commonltr.css"/>
+<title>Non-human Subject Demographics</title>
+</head>
+<body id="classId"><a name="classId"><!-- --></a>
+<div>
+	<p><b>Draft/Pre-ballot</b> The Normative content on which this specification
+	 is based is provided by Health Level 7.</p>
+</div>
+
+<h1 class="title topictitle1">Non-human Subject Demographics</h1>
+
+
+
+<div class="body"><p class="shortdesc">[Act: templateId <tt class="ph tt">2.16.840.1.113883.10.20.23.16</tt>]</p>
+
+
+<div class="section">
+<p class="p">The demographic information for a non-human study subject which is not accommodated within the recordTarget structure.</p>
+
+</div>
+
+
+
+<ol class="ol">
+<li class="li">Contains exactly one [1..1] <tt class="ph tt"><strong class="ph b">@classCode</strong>="ACT" </tt><em class="ph i">Act</em> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.5.6 HL7ActClass</tt>)
+</li>
+
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">@moodCode</strong>="EVN" </tt><em class="ph i">Event</em> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.5.1001 HL7ActMood</tt>)
+</li>
+
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">code</strong></tt><tt class="ph tt"><strong class="ph b">/@code</strong>="TBD" </tt> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.3.26.1.1 NCI Thesaurus</tt>)
+<ul class="ul"><li class="li">Indicates that the contained information includes subject demographic data that is not acommodated by the record target participation.</li>
+</ul>
+</li>
+
+<li class="li"><strong class="ph b">MAY</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">strainAssociation</strong></tt> <ol class="ol" type="a"><li class="li"> This strainAssociation <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">@typeCode</strong>="COMP" </tt></li>
+<li class="li"> This strainAssociation <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">observation</strong></tt> <ol class="ol" type="i"><li class="li"> This observation <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">@classCode</strong>="OBS" </tt><em class="ph i">Observation</em> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.5.6 HL7ActClass</tt>)</li>
+<li class="li"> This observation <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">@moodCode</strong>="EVN" </tt><em class="ph i">Event</em> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.5.1001 HL7ActMood</tt>)</li>
+<li class="li"> This observation <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">code</strong></tt><tt class="ph tt"><strong class="ph b">/@code</strong>="TBD" </tt><em class="ph i">Reported Age</em> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.3.26.1.1 NCI Thesaurus</tt>)<p class="p"><em class="ph i">The code value indicates theobservation records the appliable strain for the study subject.</em></p>
+</li>
+<li class="li"> This observation <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">value</strong></tt> with data type CD<p class="p"><em class="ph i">Used to identify the vendor-supplied strain/substrain designation for the subject (i.e., test system) under study. When applicable, it combines the root strain, substrain, and associated genetic modifications as supplied by the vendor.   It is extensible to accommodate strains not listed and genetically modified substrains.  If this variable is excluded in the DM domain, the information must be present at a higher level (Trial Summary).   [SEND: STRAIN]</em></p>
+</li>
+<li class="li"> This observation <strong class="ph b">MAY</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">text</strong></tt><p class="p"><em class="ph i">A text description that provides additional details regarding the subject. [SEND: SUBTRAIN]</em></p>
+</li>
+</ol>
+ </li>
+</ol>
+
+</li>
+
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">setMembershipAssociation</strong></tt> <ol class="ol" type="a"><li class="li"> This setMembershipAssociation <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">@typeCode</strong>="COMP" </tt></li>
+<li class="li"> This setMembershipAssociation <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">observation</strong></tt> <ol class="ol" type="i"><li class="li"> This observation <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">@classCode</strong>="OBS" </tt><em class="ph i">Observation</em> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.5.6 HL7ActClass</tt>)</li>
+<li class="li"> This observation <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">@moodCode</strong>="EVN" </tt><em class="ph i">Event</em> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.5.1001 HL7ActMood</tt>)</li>
+<li class="li"> This observation <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">code</strong></tt><tt class="ph tt"><strong class="ph b">/@code</strong>="TBD" </tt><em class="ph i">Reported Age</em> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.3.26.1.1 NCI Thesaurus</tt>)<p class="p"><em class="ph i">The code value indicates this is an age observation.</em></p>
+</li>
+<li class="li"> This observation <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">value</strong></tt> with data type CD<p class="p"><em class="ph i">A code that identifies the trial set the subject has been assigned to.  The list of valid trial sets is submitted as part of study design.  [SEND: SETCD]</em></p>
+</li>
+</ol>
+ </li>
+</ol>
+
+</li>
+
+<li class="li"><strong class="ph b">MAY</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">ageAssociation</strong></tt> <ol class="ol" type="a"><li class="li"> This ageAssociation <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">@typeCode</strong>="COMP" </tt></li>
+<li class="li"> This ageAssociation <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">observation</strong></tt> <ol class="ol" type="i"><li class="li"> This observation <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">@classCode</strong>="OBS" </tt><em class="ph i">Observation</em> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.5.6 HL7ActClass</tt>)</li>
+<li class="li"> This observation <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">@moodCode</strong>="EVN" </tt><em class="ph i">Event</em> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.5.1001 HL7ActMood</tt>)</li>
+<li class="li"> This observation <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">code</strong></tt><tt class="ph tt"><strong class="ph b">/@code</strong>="TBD" </tt><em class="ph i">Reported Age</em> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.3.26.1.1 NCI Thesaurus</tt>)<p class="p"><em class="ph i">The code value indicates this is an age observation.</em></p>
+</li>
+<li class="li"> This observation <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">value</strong></tt> with data type PQ<p class="p"><em class="ph i">The recorded age of the study subject.  Note, in some cases age will be available while date of birth is either not known or withheld.  [SDTM: AGE, AGEU]</em></p>
+</li>
+</ol>
+ </li>
+</ol>
+
+</li>
+
+<li class="li"><strong class="ph b">SHOULD</strong> contain  [0..2] <tt class="ph tt"><strong class="ph b">entryRelationship</strong></tt>
+<ol class="ol" type="a">
+<li class="li">Contains exactly one [1..1] <a class="xref" href="StudyArm.html" title="[Act: templateId 2.16.840.1.113883.10.20.23.68]">Study Arm</a> (templateId: <tt class="ph tt">2.16.840.1.113883.10.20.23.68</tt>)</li>
+</ol>
+</li>
+
+<li class="li"><strong class="ph b">SHOULD</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">speciesAssociation</strong></tt> <ol class="ol" type="a"><li class="li"> This speciesAssociation <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">@typeCode</strong>="COMP" </tt></li>
+<li class="li"> This speciesAssociation <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">observation</strong></tt> <ol class="ol" type="i"><li class="li"> This observation <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">@classCode</strong>="OBS" </tt><em class="ph i">Observation</em> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.5.6 HL7ActClass</tt>)</li>
+<li class="li"> This observation <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">@moodCode</strong>="EVN" </tt><em class="ph i">Event</em> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.5.1001 HL7ActMood</tt>)</li>
+<li class="li"> This observation <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">code</strong></tt><tt class="ph tt"><strong class="ph b">/@code</strong>="TBD" </tt><em class="ph i">Reported Age</em> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.3.26.1.1 NCI Thesaurus</tt>)<p class="p"><em class="ph i">The code value indicates this is an age observation.</em></p>
+</li>
+<li class="li"> This observation <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">value</strong></tt> with data type PQ<p class="p"><em class="ph i">The species of the subject. If no value is present, it must be provided within the trial summary. [SEND: SPECIES]</em></p>
+</li>
+</ol>
+ </li>
+</ol>
+
+</li>
+
+<li class="li"><strong class="ph b">MAY</strong> contain zero or more [0..*] <tt class="ph tt"><strong class="ph b">entryRelationship</strong></tt>
+<ol class="ol" type="a">
+<li class="li">Contains <tt class="ph tt"><strong class="ph b">@typeCode="</strong>COMP" </tt><em class="ph i">COMP</em></li>
+
+<li class="li">Contains exactly one [1..1] <a class="xref" href="Comment.html" title="[Observation: templateId 2.16.840.1.113883.10.20.23.xxxx]">Comment</a> (templateId: <tt class="ph tt">2.16.840.1.113883.10.20.23.xxxx</tt>)</li>
+</ol>
+</li>
+
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">entryRelationship</strong></tt>
+<ol class="ol" type="a">
+<li class="li">Contains <tt class="ph tt"><strong class="ph b">@typeCode="</strong>REFR" </tt><em class="ph i">REFR</em></li>
+
+<li class="li">Contains exactly one [1..1] <a class="xref" href="DomainAssignment.html" title="[Organizer: templateId 2.16.840.1.113883.10.20.23.xxxx]">Domain Assignment</a> (templateId: <tt class="ph tt">2.16.840.1.113883.10.20.23.xxxx</tt>)</li>
+</ol>
+</li>
+
+<li class="li"><strong class="ph b">MAY</strong> contain zero or more [0..*] <tt class="ph tt"><strong class="ph b">entryRelationship</strong></tt>
+<ol class="ol" type="a">
+<li class="li">Contains <tt class="ph tt"><strong class="ph b">@typeCode="</strong>REFR" </tt><em class="ph i">REFR</em></li>
+
+<li class="li">Contains exactly one [1..1] <a class="xref" href="RelatedRecord.html" title="[Act: templateId 2.16.840.1.113883.10.20.23.xxxx]">Related Record</a> (templateId: <tt class="ph tt">2.16.840.1.113883.10.20.23.xxxx</tt>)</li>
+</ol>
+</li>
+
+<li class="li"><strong class="ph b">MAY</strong> contain zero or more [0..*] <tt class="ph tt"><strong class="ph b">entryRelationship</strong></tt>
+<ol class="ol" type="a">
+<li class="li">Contains <tt class="ph tt"><strong class="ph b">@typeCode="</strong>COMP" </tt><em class="ph i">COMP</em></li>
+
+<li class="li">Contains exactly one [1..1] <a class="xref" href="SupplementalValue.html" title="[Observation: templateId 2.16.840.1.113883.10.20.23.xxxx]">Supplemental Value</a> (templateId: <tt class="ph tt">2.16.840.1.113883.10.20.23.xxxx</tt>)</li>
+</ol>
+</li>
+
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">entryRelationship</strong></tt>
+<ol class="ol" type="a">
+<li class="li">Contains <tt class="ph tt"><strong class="ph b">@typeCode="</strong>COMP" </tt><em class="ph i">COMP</em></li>
+
+<li class="li">Contains exactly one [1..1] <a class="xref" href="ReferencePeriod.html" title="[Act: templateId 2.16.840.1.113883.10.20.23.xxxx]">Reference Period</a> (templateId: <tt class="ph tt">2.16.840.1.113883.10.20.23.xxxx</tt>)</li>
+</ol>
+</li>
+
+</ol>
+
+
+<div class="section"><div class="p">
+<div class="tablenoborder"><table cellpadding="4" cellspacing="0" summary="" class="table" width="100%" frame="border" border="1" rules="all"> <thead class="thead" align="left"> <tr class="row"><th class="entry" colspan="8" align="left" valign="top" id="d441310e687">sdtm::Non-human Subject Demographics</th>
+  </tr>
+  <tr class="row"><th class="entry" colspan="8" align="left" valign="top" id="d441310e692">cda::act[cda:templateId/@root = ]/</th>
+  </tr>
+  <tr class="row"><th class="entry" align="left" valign="top" id="d441310e697">Name</th>
+<th class="entry" align="left" valign="top" id="d441310e699">XPath</th>
+<th class="entry" align="left" valign="top" id="d441310e701">Cardinality</th>
+<th class="entry" align="left" valign="top" id="d441310e703">Severity</th>
+<th class="entry" align="left" valign="top" id="d441310e705">Nullable</th>
+<th class="entry" align="left" valign="top" id="d441310e707">Data Type</th>
+<th class="entry" align="left" valign="top" id="d441310e709">Conformance</th>
+<th class="entry" align="left" valign="top" id="d441310e711">Value(s)</th>
+</tr>
+</thead>
+<tbody class="tbody"><tr class="row"><td class="entry" align="left" valign="top" headers="d441310e687 d441310e692 d441310e697 ">classCode</td>
+<td class="entry" align="left" valign="top" headers="d441310e687 d441310e692 d441310e699 ">@classCode</td>
+<td class="entry" align="left" valign="top" headers="d441310e687 d441310e692 d441310e701 ">1..1</td>
+<td class="entry" align="left" valign="top" headers="d441310e687 d441310e692 d441310e703 "> </td>
+<td class="entry" align="left" valign="top" headers="d441310e687 d441310e692 d441310e705 ">NO</td>
+<td class="entry" align="left" valign="top" headers="d441310e687 d441310e692 d441310e707 ">x_ActClassDocumentEntryAct</td>
+<td class="entry" align="left" valign="top" headers="d441310e687 d441310e692 d441310e709 "> </td>
+<td class="entry" align="left" valign="top" headers="d441310e687 d441310e692 d441310e711 "> ACCM</td>
+</tr>
+ 
+<tr class="row"><td class="entry" align="left" valign="top" headers="d441310e687 d441310e692 d441310e697 ">moodCode</td>
+<td class="entry" align="left" valign="top" headers="d441310e687 d441310e692 d441310e699 ">@moodCode</td>
+<td class="entry" align="left" valign="top" headers="d441310e687 d441310e692 d441310e701 ">1..1</td>
+<td class="entry" align="left" valign="top" headers="d441310e687 d441310e692 d441310e703 ">SHALL</td>
+<td class="entry" align="left" valign="top" headers="d441310e687 d441310e692 d441310e705 ">NO</td>
+<td class="entry" align="left" valign="top" headers="d441310e687 d441310e692 d441310e707 ">ActMood</td>
+<td class="entry" align="left" valign="top" headers="d441310e687 d441310e692 d441310e709 "> </td>
+<td class="entry" align="left" valign="top" headers="d441310e687 d441310e692 d441310e711 "> APT</td>
+</tr>
+ 
+<tr class="row"><td class="entry" align="left" valign="top" headers="d441310e687 d441310e692 d441310e697 ">negationInd</td>
+<td class="entry" align="left" valign="top" headers="d441310e687 d441310e692 d441310e699 ">@negationInd</td>
+<td class="entry" align="left" valign="top" headers="d441310e687 d441310e692 d441310e701 ">0..1</td>
+<td class="entry" align="left" valign="top" headers="d441310e687 d441310e692 d441310e703 "> </td>
+<td class="entry" align="left" valign="top" headers="d441310e687 d441310e692 d441310e705 ">NO</td>
+<td class="entry" align="left" valign="top" headers="d441310e687 d441310e692 d441310e707 ">Boolean</td>
+<td class="entry" align="left" valign="top" headers="d441310e687 d441310e692 d441310e709 "> </td>
+<td class="entry" align="left" valign="top" headers="d441310e687 d441310e692 d441310e711 "> </td>
+</tr>
+ 
+<tr class="row"><td class="entry" align="left" valign="top" headers="d441310e687 d441310e692 d441310e697 ">nullFlavor</td>
+<td class="entry" align="left" valign="top" headers="d441310e687 d441310e692 d441310e699 ">@nullFlavor</td>
+<td class="entry" align="left" valign="top" headers="d441310e687 d441310e692 d441310e701 ">0..1</td>
+<td class="entry" align="left" valign="top" headers="d441310e687 d441310e692 d441310e703 "> </td>
+<td class="entry" align="left" valign="top" headers="d441310e687 d441310e692 d441310e705 ">NO</td>
+<td class="entry" align="left" valign="top" headers="d441310e687 d441310e692 d441310e707 ">NullFlavor</td>
+<td class="entry" align="left" valign="top" headers="d441310e687 d441310e692 d441310e709 "> </td>
+<td class="entry" align="left" valign="top" headers="d441310e687 d441310e692 d441310e711 "> ASKU</td>
+</tr>
+ 
+<tr class="row"><td class="entry" align="left" valign="top" headers="d441310e687 d441310e692 d441310e697 ">code</td>
+<td class="entry" align="left" valign="top" headers="d441310e687 d441310e692 d441310e699 ">code</td>
+<td class="entry" align="left" valign="top" headers="d441310e687 d441310e692 d441310e701 ">1..1</td>
+<td class="entry" align="left" valign="top" headers="d441310e687 d441310e692 d441310e703 ">SHALL</td>
+<td class="entry" align="left" valign="top" headers="d441310e687 d441310e692 d441310e705 ">YES</td>
+<td class="entry" align="left" valign="top" headers="d441310e687 d441310e692 d441310e707 ">CD</td>
+<td class="entry" align="left" valign="top" headers="d441310e687 d441310e692 d441310e709 "> </td>
+<td class="entry" align="left" valign="top" headers="d441310e687 d441310e692 d441310e711 ">NCI Thesaurus 2.16.840.1.113883.3.26.1.1 </td>
+</tr>
+ 
+<tr class="row"><td class="entry" align="left" valign="top" headers="d441310e687 d441310e692 d441310e697 ">effectiveTime</td>
+<td class="entry" align="left" valign="top" headers="d441310e687 d441310e692 d441310e699 ">effectiveTime</td>
+<td class="entry" align="left" valign="top" headers="d441310e687 d441310e692 d441310e701 ">0..1</td>
+<td class="entry" align="left" valign="top" headers="d441310e687 d441310e692 d441310e703 "> </td>
+<td class="entry" align="left" valign="top" headers="d441310e687 d441310e692 d441310e705 ">YES</td>
+<td class="entry" align="left" valign="top" headers="d441310e687 d441310e692 d441310e707 ">IVL_TS</td>
+<td class="entry" align="left" valign="top" headers="d441310e687 d441310e692 d441310e709 "> </td>
+<td class="entry" align="left" valign="top" headers="d441310e687 d441310e692 d441310e711 "> </td>
+</tr>
+ 
+<tr class="row"><td class="entry" align="left" valign="top" headers="d441310e687 d441310e692 d441310e697 ">id</td>
+<td class="entry" align="left" valign="top" headers="d441310e687 d441310e692 d441310e699 ">id</td>
+<td class="entry" align="left" valign="top" headers="d441310e687 d441310e692 d441310e701 ">0..*</td>
+<td class="entry" align="left" valign="top" headers="d441310e687 d441310e692 d441310e703 "> </td>
+<td class="entry" align="left" valign="top" headers="d441310e687 d441310e692 d441310e705 ">YES</td>
+<td class="entry" align="left" valign="top" headers="d441310e687 d441310e692 d441310e707 ">II</td>
+<td class="entry" align="left" valign="top" headers="d441310e687 d441310e692 d441310e709 "> </td>
+<td class="entry" align="left" valign="top" headers="d441310e687 d441310e692 d441310e711 "> </td>
+</tr>
+ 
+<tr class="row"><td class="entry" align="left" valign="top" headers="d441310e687 d441310e692 d441310e697 ">languageCode</td>
+<td class="entry" align="left" valign="top" headers="d441310e687 d441310e692 d441310e699 ">languageCode</td>
+<td class="entry" align="left" valign="top" headers="d441310e687 d441310e692 d441310e701 ">0..1</td>
+<td class="entry" align="left" valign="top" headers="d441310e687 d441310e692 d441310e703 "> </td>
+<td class="entry" align="left" valign="top" headers="d441310e687 d441310e692 d441310e705 ">YES</td>
+<td class="entry" align="left" valign="top" headers="d441310e687 d441310e692 d441310e707 ">CS</td>
+<td class="entry" align="left" valign="top" headers="d441310e687 d441310e692 d441310e709 "> </td>
+<td class="entry" align="left" valign="top" headers="d441310e687 d441310e692 d441310e711 "> </td>
+</tr>
+ 
+<tr class="row"><td class="entry" align="left" valign="top" headers="d441310e687 d441310e692 d441310e697 ">priorityCode</td>
+<td class="entry" align="left" valign="top" headers="d441310e687 d441310e692 d441310e699 ">priorityCode</td>
+<td class="entry" align="left" valign="top" headers="d441310e687 d441310e692 d441310e701 ">0..1</td>
+<td class="entry" align="left" valign="top" headers="d441310e687 d441310e692 d441310e703 "> </td>
+<td class="entry" align="left" valign="top" headers="d441310e687 d441310e692 d441310e705 ">YES</td>
+<td class="entry" align="left" valign="top" headers="d441310e687 d441310e692 d441310e707 ">CE</td>
+<td class="entry" align="left" valign="top" headers="d441310e687 d441310e692 d441310e709 "> </td>
+<td class="entry" align="left" valign="top" headers="d441310e687 d441310e692 d441310e711 "> </td>
+</tr>
+ 
+<tr class="row"><td class="entry" align="left" valign="top" headers="d441310e687 d441310e692 d441310e697 ">realmCode</td>
+<td class="entry" align="left" valign="top" headers="d441310e687 d441310e692 d441310e699 ">realmCode</td>
+<td class="entry" align="left" valign="top" headers="d441310e687 d441310e692 d441310e701 ">0..*</td>
+<td class="entry" align="left" valign="top" headers="d441310e687 d441310e692 d441310e703 "> </td>
+<td class="entry" align="left" valign="top" headers="d441310e687 d441310e692 d441310e705 ">YES</td>
+<td class="entry" align="left" valign="top" headers="d441310e687 d441310e692 d441310e707 ">CS</td>
+<td class="entry" align="left" valign="top" headers="d441310e687 d441310e692 d441310e709 "> </td>
+<td class="entry" align="left" valign="top" headers="d441310e687 d441310e692 d441310e711 "> </td>
+</tr>
+ 
+<tr class="row"><td class="entry" align="left" valign="top" headers="d441310e687 d441310e692 d441310e697 ">statusCode</td>
+<td class="entry" align="left" valign="top" headers="d441310e687 d441310e692 d441310e699 ">statusCode</td>
+<td class="entry" align="left" valign="top" headers="d441310e687 d441310e692 d441310e701 ">0..1</td>
+<td class="entry" align="left" valign="top" headers="d441310e687 d441310e692 d441310e703 "> </td>
+<td class="entry" align="left" valign="top" headers="d441310e687 d441310e692 d441310e705 ">YES</td>
+<td class="entry" align="left" valign="top" headers="d441310e687 d441310e692 d441310e707 ">CS</td>
+<td class="entry" align="left" valign="top" headers="d441310e687 d441310e692 d441310e709 "> </td>
+<td class="entry" align="left" valign="top" headers="d441310e687 d441310e692 d441310e711 "> </td>
+</tr>
+ 
+<tr class="row"><td class="entry" align="left" valign="top" headers="d441310e687 d441310e692 d441310e697 ">templateId</td>
+<td class="entry" align="left" valign="top" headers="d441310e687 d441310e692 d441310e699 ">templateId</td>
+<td class="entry" align="left" valign="top" headers="d441310e687 d441310e692 d441310e701 ">0..*</td>
+<td class="entry" align="left" valign="top" headers="d441310e687 d441310e692 d441310e703 "> </td>
+<td class="entry" align="left" valign="top" headers="d441310e687 d441310e692 d441310e705 ">YES</td>
+<td class="entry" align="left" valign="top" headers="d441310e687 d441310e692 d441310e707 ">II</td>
+<td class="entry" align="left" valign="top" headers="d441310e687 d441310e692 d441310e709 "> </td>
+<td class="entry" align="left" valign="top" headers="d441310e687 d441310e692 d441310e711 "> </td>
+</tr>
+ 
+<tr class="row"><td class="entry" align="left" valign="top" headers="d441310e687 d441310e692 d441310e697 ">text</td>
+<td class="entry" align="left" valign="top" headers="d441310e687 d441310e692 d441310e699 ">text</td>
+<td class="entry" align="left" valign="top" headers="d441310e687 d441310e692 d441310e701 ">0..1</td>
+<td class="entry" align="left" valign="top" headers="d441310e687 d441310e692 d441310e703 "> </td>
+<td class="entry" align="left" valign="top" headers="d441310e687 d441310e692 d441310e705 ">YES</td>
+<td class="entry" align="left" valign="top" headers="d441310e687 d441310e692 d441310e707 ">ED</td>
+<td class="entry" align="left" valign="top" headers="d441310e687 d441310e692 d441310e709 "> </td>
+<td class="entry" align="left" valign="top" headers="d441310e687 d441310e692 d441310e711 "> </td>
+</tr>
+ 
+<tr class="row"><td class="entry" align="left" valign="top" headers="d441310e687 d441310e692 d441310e697 ">ageAssociation</td>
+<td class="entry" align="left" valign="top" headers="d441310e687 d441310e692 d441310e699 ">ageAssociation</td>
+<td class="entry" align="left" valign="top" headers="d441310e687 d441310e692 d441310e701 ">0..1</td>
+<td class="entry" align="left" valign="top" headers="d441310e687 d441310e692 d441310e703 ">MAY</td>
+<td class="entry" align="left" valign="top" headers="d441310e687 d441310e692 d441310e705 ">YES</td>
+<td class="entry" align="left" valign="top" headers="d441310e687 d441310e692 d441310e707 ">ageAssociation</td>
+<td class="entry" align="left" valign="top" headers="d441310e687 d441310e692 d441310e709 "> </td>
+<td class="entry" align="left" valign="top" headers="d441310e687 d441310e692 d441310e711 "> </td>
+</tr>
+ 
+<tr class="row"><td class="entry" align="left" valign="top" headers="d441310e687 d441310e692 d441310e697 ">author</td>
+<td class="entry" align="left" valign="top" headers="d441310e687 d441310e692 d441310e699 ">author</td>
+<td class="entry" align="left" valign="top" headers="d441310e687 d441310e692 d441310e701 ">0..*</td>
+<td class="entry" align="left" valign="top" headers="d441310e687 d441310e692 d441310e703 "> </td>
+<td class="entry" align="left" valign="top" headers="d441310e687 d441310e692 d441310e705 ">YES</td>
+<td class="entry" align="left" valign="top" headers="d441310e687 d441310e692 d441310e707 ">Author</td>
+<td class="entry" align="left" valign="top" headers="d441310e687 d441310e692 d441310e709 "> </td>
+<td class="entry" align="left" valign="top" headers="d441310e687 d441310e692 d441310e711 "> </td>
+</tr>
+ 
+<tr class="row"><td class="entry" align="left" valign="top" headers="d441310e687 d441310e692 d441310e697 ">comment</td>
+<td class="entry" align="left" valign="top" headers="d441310e687 d441310e692 d441310e699 ">comment</td>
+<td class="entry" align="left" valign="top" headers="d441310e687 d441310e692 d441310e701 ">0..*</td>
+<td class="entry" align="left" valign="top" headers="d441310e687 d441310e692 d441310e703 ">MAY</td>
+<td class="entry" align="left" valign="top" headers="d441310e687 d441310e692 d441310e705 ">YES</td>
+<td class="entry" align="left" valign="top" headers="d441310e687 d441310e692 d441310e707 ">Comment</td>
+<td class="entry" align="left" valign="top" headers="d441310e687 d441310e692 d441310e709 "> </td>
+<td class="entry" align="left" valign="top" headers="d441310e687 d441310e692 d441310e711 "> </td>
+</tr>
+ 
+<tr class="row"><td class="entry" align="left" valign="top" headers="d441310e687 d441310e692 d441310e697 ">domain Assignment</td>
+<td class="entry" align="left" valign="top" headers="d441310e687 d441310e692 d441310e699 ">domain Assignment</td>
+<td class="entry" align="left" valign="top" headers="d441310e687 d441310e692 d441310e701 ">1..1</td>
+<td class="entry" align="left" valign="top" headers="d441310e687 d441310e692 d441310e703 ">SHALL</td>
+<td class="entry" align="left" valign="top" headers="d441310e687 d441310e692 d441310e705 ">YES</td>
+<td class="entry" align="left" valign="top" headers="d441310e687 d441310e692 d441310e707 ">Domain Assignment</td>
+<td class="entry" align="left" valign="top" headers="d441310e687 d441310e692 d441310e709 "> </td>
+<td class="entry" align="left" valign="top" headers="d441310e687 d441310e692 d441310e711 "> </td>
+</tr>
+ 
+<tr class="row"><td class="entry" align="left" valign="top" headers="d441310e687 d441310e692 d441310e697 ">entryRelationship</td>
+<td class="entry" align="left" valign="top" headers="d441310e687 d441310e692 d441310e699 ">entryRelationship</td>
+<td class="entry" align="left" valign="top" headers="d441310e687 d441310e692 d441310e701 ">0..*</td>
+<td class="entry" align="left" valign="top" headers="d441310e687 d441310e692 d441310e703 "> </td>
+<td class="entry" align="left" valign="top" headers="d441310e687 d441310e692 d441310e705 ">YES</td>
+<td class="entry" align="left" valign="top" headers="d441310e687 d441310e692 d441310e707 ">EntryRelationship</td>
+<td class="entry" align="left" valign="top" headers="d441310e687 d441310e692 d441310e709 "> </td>
+<td class="entry" align="left" valign="top" headers="d441310e687 d441310e692 d441310e711 "> </td>
+</tr>
+ 
+<tr class="row"><td class="entry" align="left" valign="top" headers="d441310e687 d441310e692 d441310e697 ">informant</td>
+<td class="entry" align="left" valign="top" headers="d441310e687 d441310e692 d441310e699 ">informant</td>
+<td class="entry" align="left" valign="top" headers="d441310e687 d441310e692 d441310e701 ">0..*</td>
+<td class="entry" align="left" valign="top" headers="d441310e687 d441310e692 d441310e703 "> </td>
+<td class="entry" align="left" valign="top" headers="d441310e687 d441310e692 d441310e705 ">YES</td>
+<td class="entry" align="left" valign="top" headers="d441310e687 d441310e692 d441310e707 ">Informant12</td>
+<td class="entry" align="left" valign="top" headers="d441310e687 d441310e692 d441310e709 "> </td>
+<td class="entry" align="left" valign="top" headers="d441310e687 d441310e692 d441310e711 "> </td>
+</tr>
+ 
+<tr class="row"><td class="entry" align="left" valign="top" headers="d441310e687 d441310e692 d441310e697 ">participant</td>
+<td class="entry" align="left" valign="top" headers="d441310e687 d441310e692 d441310e699 ">participant</td>
+<td class="entry" align="left" valign="top" headers="d441310e687 d441310e692 d441310e701 ">0..*</td>
+<td class="entry" align="left" valign="top" headers="d441310e687 d441310e692 d441310e703 "> </td>
+<td class="entry" align="left" valign="top" headers="d441310e687 d441310e692 d441310e705 ">YES</td>
+<td class="entry" align="left" valign="top" headers="d441310e687 d441310e692 d441310e707 ">Participant2</td>
+<td class="entry" align="left" valign="top" headers="d441310e687 d441310e692 d441310e709 "> </td>
+<td class="entry" align="left" valign="top" headers="d441310e687 d441310e692 d441310e711 "> </td>
+</tr>
+ 
+<tr class="row"><td class="entry" align="left" valign="top" headers="d441310e687 d441310e692 d441310e697 ">performer</td>
+<td class="entry" align="left" valign="top" headers="d441310e687 d441310e692 d441310e699 ">performer</td>
+<td class="entry" align="left" valign="top" headers="d441310e687 d441310e692 d441310e701 ">0..*</td>
+<td class="entry" align="left" valign="top" headers="d441310e687 d441310e692 d441310e703 "> </td>
+<td class="entry" align="left" valign="top" headers="d441310e687 d441310e692 d441310e705 ">YES</td>
+<td class="entry" align="left" valign="top" headers="d441310e687 d441310e692 d441310e707 ">Performer2</td>
+<td class="entry" align="left" valign="top" headers="d441310e687 d441310e692 d441310e709 "> </td>
+<td class="entry" align="left" valign="top" headers="d441310e687 d441310e692 d441310e711 "> </td>
+</tr>
+ 
+<tr class="row"><td class="entry" align="left" valign="top" headers="d441310e687 d441310e692 d441310e697 ">precondition</td>
+<td class="entry" align="left" valign="top" headers="d441310e687 d441310e692 d441310e699 ">precondition</td>
+<td class="entry" align="left" valign="top" headers="d441310e687 d441310e692 d441310e701 ">0..*</td>
+<td class="entry" align="left" valign="top" headers="d441310e687 d441310e692 d441310e703 "> </td>
+<td class="entry" align="left" valign="top" headers="d441310e687 d441310e692 d441310e705 ">YES</td>
+<td class="entry" align="left" valign="top" headers="d441310e687 d441310e692 d441310e707 ">Precondition</td>
+<td class="entry" align="left" valign="top" headers="d441310e687 d441310e692 d441310e709 "> </td>
+<td class="entry" align="left" valign="top" headers="d441310e687 d441310e692 d441310e711 "> </td>
+</tr>
+ 
+<tr class="row"><td class="entry" align="left" valign="top" headers="d441310e687 d441310e692 d441310e697 ">reference</td>
+<td class="entry" align="left" valign="top" headers="d441310e687 d441310e692 d441310e699 ">reference</td>
+<td class="entry" align="left" valign="top" headers="d441310e687 d441310e692 d441310e701 ">0..*</td>
+<td class="entry" align="left" valign="top" headers="d441310e687 d441310e692 d441310e703 "> </td>
+<td class="entry" align="left" valign="top" headers="d441310e687 d441310e692 d441310e705 ">YES</td>
+<td class="entry" align="left" valign="top" headers="d441310e687 d441310e692 d441310e707 ">Reference</td>
+<td class="entry" align="left" valign="top" headers="d441310e687 d441310e692 d441310e709 "> </td>
+<td class="entry" align="left" valign="top" headers="d441310e687 d441310e692 d441310e711 "> </td>
+</tr>
+ 
+<tr class="row"><td class="entry" align="left" valign="top" headers="d441310e687 d441310e692 d441310e697 ">reference Period</td>
+<td class="entry" align="left" valign="top" headers="d441310e687 d441310e692 d441310e699 ">reference Period</td>
+<td class="entry" align="left" valign="top" headers="d441310e687 d441310e692 d441310e701 ">1..1</td>
+<td class="entry" align="left" valign="top" headers="d441310e687 d441310e692 d441310e703 ">SHALL</td>
+<td class="entry" align="left" valign="top" headers="d441310e687 d441310e692 d441310e705 ">YES</td>
+<td class="entry" align="left" valign="top" headers="d441310e687 d441310e692 d441310e707 ">Reference Period</td>
+<td class="entry" align="left" valign="top" headers="d441310e687 d441310e692 d441310e709 "> </td>
+<td class="entry" align="left" valign="top" headers="d441310e687 d441310e692 d441310e711 "> </td>
+</tr>
+ 
+<tr class="row"><td class="entry" align="left" valign="top" headers="d441310e687 d441310e692 d441310e697 ">related Record</td>
+<td class="entry" align="left" valign="top" headers="d441310e687 d441310e692 d441310e699 ">related Record</td>
+<td class="entry" align="left" valign="top" headers="d441310e687 d441310e692 d441310e701 ">0..*</td>
+<td class="entry" align="left" valign="top" headers="d441310e687 d441310e692 d441310e703 ">MAY</td>
+<td class="entry" align="left" valign="top" headers="d441310e687 d441310e692 d441310e705 ">YES</td>
+<td class="entry" align="left" valign="top" headers="d441310e687 d441310e692 d441310e707 ">Related Record</td>
+<td class="entry" align="left" valign="top" headers="d441310e687 d441310e692 d441310e709 "> </td>
+<td class="entry" align="left" valign="top" headers="d441310e687 d441310e692 d441310e711 "> </td>
+</tr>
+ 
+<tr class="row"><td class="entry" align="left" valign="top" headers="d441310e687 d441310e692 d441310e697 ">setMembershipAssociation</td>
+<td class="entry" align="left" valign="top" headers="d441310e687 d441310e692 d441310e699 ">setMembershipAssociation</td>
+<td class="entry" align="left" valign="top" headers="d441310e687 d441310e692 d441310e701 ">1..1</td>
+<td class="entry" align="left" valign="top" headers="d441310e687 d441310e692 d441310e703 ">SHALL</td>
+<td class="entry" align="left" valign="top" headers="d441310e687 d441310e692 d441310e705 ">YES</td>
+<td class="entry" align="left" valign="top" headers="d441310e687 d441310e692 d441310e707 ">setMembershipAssociation</td>
+<td class="entry" align="left" valign="top" headers="d441310e687 d441310e692 d441310e709 "> </td>
+<td class="entry" align="left" valign="top" headers="d441310e687 d441310e692 d441310e711 "> </td>
+</tr>
+ 
+<tr class="row"><td class="entry" align="left" valign="top" headers="d441310e687 d441310e692 d441310e697 ">speciesAssociation</td>
+<td class="entry" align="left" valign="top" headers="d441310e687 d441310e692 d441310e699 ">speciesAssociation</td>
+<td class="entry" align="left" valign="top" headers="d441310e687 d441310e692 d441310e701 ">0..1</td>
+<td class="entry" align="left" valign="top" headers="d441310e687 d441310e692 d441310e703 ">SHOULD</td>
+<td class="entry" align="left" valign="top" headers="d441310e687 d441310e692 d441310e705 ">YES</td>
+<td class="entry" align="left" valign="top" headers="d441310e687 d441310e692 d441310e707 ">speciesAssociation</td>
+<td class="entry" align="left" valign="top" headers="d441310e687 d441310e692 d441310e709 "> </td>
+<td class="entry" align="left" valign="top" headers="d441310e687 d441310e692 d441310e711 "> </td>
+</tr>
+ 
+<tr class="row"><td class="entry" align="left" valign="top" headers="d441310e687 d441310e692 d441310e697 ">specimen</td>
+<td class="entry" align="left" valign="top" headers="d441310e687 d441310e692 d441310e699 ">specimen</td>
+<td class="entry" align="left" valign="top" headers="d441310e687 d441310e692 d441310e701 ">0..*</td>
+<td class="entry" align="left" valign="top" headers="d441310e687 d441310e692 d441310e703 "> </td>
+<td class="entry" align="left" valign="top" headers="d441310e687 d441310e692 d441310e705 ">YES</td>
+<td class="entry" align="left" valign="top" headers="d441310e687 d441310e692 d441310e707 ">Specimen</td>
+<td class="entry" align="left" valign="top" headers="d441310e687 d441310e692 d441310e709 "> </td>
+<td class="entry" align="left" valign="top" headers="d441310e687 d441310e692 d441310e711 "> </td>
+</tr>
+ 
+<tr class="row"><td class="entry" align="left" valign="top" headers="d441310e687 d441310e692 d441310e697 ">strainAssociation</td>
+<td class="entry" align="left" valign="top" headers="d441310e687 d441310e692 d441310e699 ">strainAssociation</td>
+<td class="entry" align="left" valign="top" headers="d441310e687 d441310e692 d441310e701 ">0..1</td>
+<td class="entry" align="left" valign="top" headers="d441310e687 d441310e692 d441310e703 ">MAY</td>
+<td class="entry" align="left" valign="top" headers="d441310e687 d441310e692 d441310e705 ">YES</td>
+<td class="entry" align="left" valign="top" headers="d441310e687 d441310e692 d441310e707 ">strainAssociation</td>
+<td class="entry" align="left" valign="top" headers="d441310e687 d441310e692 d441310e709 "> </td>
+<td class="entry" align="left" valign="top" headers="d441310e687 d441310e692 d441310e711 "> </td>
+</tr>
+ 
+<tr class="row"><td class="entry" align="left" valign="top" headers="d441310e687 d441310e692 d441310e697 ">study Arm</td>
+<td class="entry" align="left" valign="top" headers="d441310e687 d441310e692 d441310e699 ">study Arm</td>
+<td class="entry" align="left" valign="top" headers="d441310e687 d441310e692 d441310e701 ">0..2</td>
+<td class="entry" align="left" valign="top" headers="d441310e687 d441310e692 d441310e703 ">SHOULD</td>
+<td class="entry" align="left" valign="top" headers="d441310e687 d441310e692 d441310e705 ">YES</td>
+<td class="entry" align="left" valign="top" headers="d441310e687 d441310e692 d441310e707 ">Study Arm</td>
+<td class="entry" align="left" valign="top" headers="d441310e687 d441310e692 d441310e709 "> </td>
+<td class="entry" align="left" valign="top" headers="d441310e687 d441310e692 d441310e711 "> </td>
+</tr>
+ 
+<tr class="row"><td class="entry" align="left" valign="top" headers="d441310e687 d441310e692 d441310e697 ">subject</td>
+<td class="entry" align="left" valign="top" headers="d441310e687 d441310e692 d441310e699 ">subject</td>
+<td class="entry" align="left" valign="top" headers="d441310e687 d441310e692 d441310e701 ">0..1</td>
+<td class="entry" align="left" valign="top" headers="d441310e687 d441310e692 d441310e703 "> </td>
+<td class="entry" align="left" valign="top" headers="d441310e687 d441310e692 d441310e705 ">YES</td>
+<td class="entry" align="left" valign="top" headers="d441310e687 d441310e692 d441310e707 ">Subject</td>
+<td class="entry" align="left" valign="top" headers="d441310e687 d441310e692 d441310e709 "> </td>
+<td class="entry" align="left" valign="top" headers="d441310e687 d441310e692 d441310e711 "> </td>
+</tr>
+ 
+<tr class="row"><td class="entry" align="left" valign="top" headers="d441310e687 d441310e692 d441310e697 ">supplemental Value</td>
+<td class="entry" align="left" valign="top" headers="d441310e687 d441310e692 d441310e699 ">supplemental Value</td>
+<td class="entry" align="left" valign="top" headers="d441310e687 d441310e692 d441310e701 ">0..*</td>
+<td class="entry" align="left" valign="top" headers="d441310e687 d441310e692 d441310e703 ">MAY</td>
+<td class="entry" align="left" valign="top" headers="d441310e687 d441310e692 d441310e705 ">YES</td>
+<td class="entry" align="left" valign="top" headers="d441310e687 d441310e692 d441310e707 ">Supplemental Value</td>
+<td class="entry" align="left" valign="top" headers="d441310e687 d441310e692 d441310e709 "> </td>
+<td class="entry" align="left" valign="top" headers="d441310e687 d441310e692 d441310e711 "> </td>
+</tr>
+ 
+<tr class="row"><td class="entry" align="left" valign="top" headers="d441310e687 d441310e692 d441310e697 ">typeId</td>
+<td class="entry" align="left" valign="top" headers="d441310e687 d441310e692 d441310e699 ">typeId</td>
+<td class="entry" align="left" valign="top" headers="d441310e687 d441310e692 d441310e701 ">0..1</td>
+<td class="entry" align="left" valign="top" headers="d441310e687 d441310e692 d441310e703 "> </td>
+<td class="entry" align="left" valign="top" headers="d441310e687 d441310e692 d441310e705 ">YES</td>
+<td class="entry" align="left" valign="top" headers="d441310e687 d441310e692 d441310e707 ">InfrastructureRootTypeId</td>
+<td class="entry" align="left" valign="top" headers="d441310e687 d441310e692 d441310e709 "> </td>
+<td class="entry" align="left" valign="top" headers="d441310e687 d441310e692 d441310e711 "> </td>
+</tr>
+ 
+</tbody>
+</table>
+</div>
+</div>
+</div>
+
+<p class="p"> </p>
+
+<p class="p"><strong class="ph b">Non-human Subject Demographics example</strong></p>
+
+
+
+<pre class="pre codeblock">&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+&lt;act xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd"&gt;
+  &lt;id root="897616718" extension="MDHT"/&gt;
+  &lt;code code="1895426031"/&gt;
+  &lt;effectiveTime&gt;
+    &lt;low value="2012"/&gt;
+    &lt;high value="2012"/&gt;
+  &lt;/effectiveTime&gt;
+  &lt;entryRelationship&gt;
+    &lt;act&gt;
+      &lt;templateId root="2.16.840.1.113883.10.20.23.68"/&gt;
+      &lt;id root="304212115" extension="MDHT"/&gt;
+      &lt;code codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="NCI Thesaurus"/&gt;
+      &lt;effectiveTime&gt;
+        &lt;low value="2012"/&gt;
+        &lt;high value="2012"/&gt;
+      &lt;/effectiveTime&gt;
+    &lt;/act&gt;
+  &lt;/entryRelationship&gt;
+  &lt;entryRelationship&gt;
+    &lt;observation classCode="OBS" moodCode="EVN"&gt;
+      &lt;templateId root="2.16.840.1.113883.10.20.23.xxxx"/&gt;
+      &lt;id root="498620875" extension="MDHT"/&gt;
+      &lt;code code="268743882"/&gt;
+      &lt;effectiveTime&gt;
+        &lt;low value="2012"/&gt;
+        &lt;high value="2012"/&gt;
+      &lt;/effectiveTime&gt;
+      &lt;participant&gt;
+        &lt;participantRole classCode="ASSIGNED"&gt;
+          &lt;templateId root="null"/&gt;
+        &lt;/participantRole&gt;
+      &lt;/participant&gt;
+      &lt;entryRelationship&gt;
+        &lt;act classCode="ACT" moodCode="EVN"/&gt;
+      &lt;/entryRelationship&gt;
+    &lt;/observation&gt;
+  &lt;/entryRelationship&gt;
+  &lt;entryRelationship&gt;
+    &lt;organizer classCode="CLUSTER" moodCode="EVN"&gt;
+      &lt;templateId root="2.16.840.1.113883.10.20.23.xxxx"/&gt;
+      &lt;id root="1492075992" extension="MDHT"/&gt;
+      &lt;code code="459686944"/&gt;
+      &lt;statusCode code="completed"/&gt;
+      &lt;effectiveTime&gt;
+        &lt;low value="2012"/&gt;
+        &lt;high value="2012"/&gt;
+      &lt;/effectiveTime&gt;
+    &lt;/organizer&gt;
+  &lt;/entryRelationship&gt;
+  &lt;entryRelationship&gt;
+    &lt;act classCode="ACT" moodCode="EVN"&gt;
+      &lt;templateId root="2.16.840.1.113883.10.20.23.xxxx"/&gt;
+      &lt;id root="191479762" extension="MDHT"/&gt;
+      &lt;code code="533660391"/&gt;
+      &lt;effectiveTime&gt;
+        &lt;low value="2012"/&gt;
+        &lt;high value="2012"/&gt;
+      &lt;/effectiveTime&gt;
+    &lt;/act&gt;
+  &lt;/entryRelationship&gt;
+  &lt;entryRelationship&gt;
+    &lt;observation classCode="OBS" moodCode="EVN"&gt;
+      &lt;templateId root="2.16.840.1.113883.10.20.23.xxxx"/&gt;
+      &lt;id root="333334770" extension="MDHT"/&gt;
+      &lt;code code="671202674"/&gt;
+      &lt;effectiveTime&gt;
+        &lt;low value="2012"/&gt;
+        &lt;high value="2012"/&gt;
+      &lt;/effectiveTime&gt;
+      &lt;participant&gt;
+        &lt;participantRole classCode="ASSIGNED"&gt;
+          &lt;templateId root="null"/&gt;
+        &lt;/participantRole&gt;
+      &lt;/participant&gt;
+      &lt;entryRelationship&gt;
+        &lt;observation classCode="OBS" moodCode="EVN"/&gt;
+      &lt;/entryRelationship&gt;
+    &lt;/observation&gt;
+  &lt;/entryRelationship&gt;
+  &lt;entryRelationship&gt;
+    &lt;act classCode="ACT" moodCode="EVN"&gt;
+      &lt;templateId root="2.16.840.1.113883.10.20.23.xxxx"/&gt;
+      &lt;id root="831545612" extension="MDHT"/&gt;
+      &lt;code code="2082180324"/&gt;
+      &lt;effectiveTime&gt;
+        &lt;low value="2012"/&gt;
+        &lt;high value="2012"/&gt;
+      &lt;/effectiveTime&gt;
+    &lt;/act&gt;
+  &lt;/entryRelationship&gt;
+&lt;/act&gt;</pre>
+
+</div>
+
+<div class="related-links">
+<div class="familylinks">
+<div class="parentlink"><strong>Parent topic:</strong> <a class="link" href="../content/ClinicalStatementTemplates.html">CLINICAL STATEMENT TEMPLATES</a></div>
+</div>
+</div>
+
+</body>
+</html>
