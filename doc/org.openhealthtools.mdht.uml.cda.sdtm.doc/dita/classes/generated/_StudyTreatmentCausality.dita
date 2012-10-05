@@ -64,13 +64,13 @@
 </tbody></tgroup></table></p></section>
 <codeblock id="example"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
 <observation xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd">
-  <id root="893176102" extension="MDHT"/>
+  <id root="423882990" extension="MDHT"/>
   <code codeSystem="2.16.840.1.113883.3.26.1.1"/>
   <effectiveTime>
     <low value="2012"/>
     <high value="2012"/>
   </effectiveTime>
-  <value xsi:type="CD" code="2099792444"/>
+  <value xsi:type="CD" code="1747856745"/>
 </observation>]]></codeblock>
 <section id="changes">
 </section>

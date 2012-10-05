@@ -64,8 +64,8 @@
 </tbody></tgroup></table></p></section>
 <codeblock id="example"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
 <observation xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd">
-  <id root="145779409" extension="MDHT"/>
-  <code code="976534232"/>
+  <id root="1408327504" extension="MDHT"/>
+  <code code="243588247"/>
   <effectiveTime>
     <low value="2012"/>
     <high value="2012"/>

@@ -70,16 +70,16 @@
 </tbody></tgroup></table></p></section>
 <codeblock id="example"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
 <act xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd">
-  <id root="1540710348" extension="MDHT"/>
-  <code code="1373278748"/>
+  <id root="1607276565" extension="MDHT"/>
+  <code code="220406548"/>
   <effectiveTime>
     <low value="2012"/>
     <high value="2012"/>
   </effectiveTime>
   <entryRelationship>
     <observation>
-      <id root="2092707648" extension="MDHT"/>
-      <code code="1631753768"/>
+      <id root="724796791" extension="MDHT"/>
+      <code code="85263996"/>
       <effectiveTime>
         <low value="2012"/>
         <high value="2012"/>

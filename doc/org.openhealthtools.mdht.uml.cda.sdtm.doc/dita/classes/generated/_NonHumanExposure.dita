@@ -186,7 +186,7 @@ More specifically: The periodic time interval (PIVL_TS) type is used to record r
 <codeblock id="example"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
 <substanceadministration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd" classCode="SBADM" moodCode="EVN">
   <templateId root="2.16.840.1.113883.10.20.23.58"/>
-  <id root="879181729" extension="MDHT"/>
+  <id root="1890507476" extension="MDHT"/>
   <text>Text Value</text>
   <effectiveTime value="20121005"/>
   <routeCode codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="NCI Thesaurus"/>
@@ -199,7 +199,7 @@ More specifically: The periodic time interval (PIVL_TS) type is used to record r
   <entryRelationship>
     <act>
       <templateId root="2.16.840.1.113883.10.20.23.97"/>
-      <id root="1752562018" extension="MDHT"/>
+      <id root="544691943" extension="MDHT"/>
       <code codeSystem="2.16.840.1.113883.3.26.1.1"/>
       <text>Text Value</text>
       <effectiveTime>
@@ -211,8 +211,8 @@ More specifically: The periodic time interval (PIVL_TS) type is used to record r
   </entryRelationship>
   <entryRelationship>
     <observation>
-      <id root="1402937631" extension="MDHT"/>
-      <code code="1604413117"/>
+      <id root="330211657" extension="MDHT"/>
+      <code code="723832413"/>
       <text>Text Value</text>
       <effectiveTime>
         <low value="2012"/>
@@ -223,7 +223,7 @@ More specifically: The periodic time interval (PIVL_TS) type is used to record r
   <entryRelationship>
     <observation classCode="OBS" moodCode="EVN">
       <templateId root="2.16.840.1.113883.10.20.23.23"/>
-      <id root="605290376" extension="MDHT"/>
+      <id root="70979191" extension="MDHT"/>
       <code code="C49569" codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="NCI Thesaurus"/>
       <text>Text Value</text>
       <effectiveTime>
@@ -237,7 +237,7 @@ More specifically: The periodic time interval (PIVL_TS) type is used to record r
   <entryRelationship>
     <observation>
       <templateId root="2.16.840.1.113883.10.20.23.30"/>
-      <id root="178673281" extension="MDHT"/>
+      <id root="242367" extension="MDHT"/>
       <code code="C66734" codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="NCI Thesaurus"/>
       <text>Text Value</text>
       <effectiveTime>
@@ -249,7 +249,7 @@ More specifically: The periodic time interval (PIVL_TS) type is used to record r
   <entryRelationship>
     <act classCode="ACT">
       <templateId root="2.16.840.1.113883.10.20.23.75"/>
-      <id root="615179208" extension="MDHT"/>
+      <id root="2063931940" extension="MDHT"/>
       <code codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="NCI Thesaurus"/>
       <text>Text Value</text>
       <effectiveTime>
@@ -261,7 +261,7 @@ More specifically: The periodic time interval (PIVL_TS) type is used to record r
   <entryRelationship>
     <observation classCode="OBS" moodCode="EVN">
       <templateId root="2.16.840.1.113883.10.20.23.96"/>
-      <id root="979662367" extension="MDHT"/>
+      <id root="1833954125" extension="MDHT"/>
       <code codeSystem="locally defined" codeSystemName="Supplemental Value Type"/>
       <text>Text Value</text>
       <effectiveTime>
@@ -274,8 +274,8 @@ More specifically: The periodic time interval (PIVL_TS) type is used to record r
   </entryRelationship>
   <entryRelationship>
     <observation>
-      <id root="491843167" extension="MDHT"/>
-      <code code="1303562700"/>
+      <id root="1152723536" extension="MDHT"/>
+      <code code="360933850"/>
       <text>Text Value</text>
       <effectiveTime>
         <low value="2012"/>
@@ -286,7 +286,7 @@ More specifically: The periodic time interval (PIVL_TS) type is used to record r
   <entryRelationship>
     <observation classCode="OBS" moodCode="EVN">
       <templateId root="2.16.840.1.113883.10.20.23.20"/>
-      <id root="117887580" extension="MDHT"/>
+      <id root="2032298492" extension="MDHT"/>
       <code codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="NCI Thesaurus"/>
       <text>Text Value</text>
       <effectiveTime>
@@ -301,7 +301,7 @@ More specifically: The periodic time interval (PIVL_TS) type is used to record r
   <entryRelationship>
     <observation classCode="OBS" moodCode="EVN">
       <templateId root="2.16.840.1.113883.10.20.23.102"/>
-      <id root="1211251575" extension="MDHT"/>
+      <id root="451977865" extension="MDHT"/>
       <code code="EDtbd" codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="NCI Thesaurus"/>
       <text>Text Value</text>
       <effectiveTime>

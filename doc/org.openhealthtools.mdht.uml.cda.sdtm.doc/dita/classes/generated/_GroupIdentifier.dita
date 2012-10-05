@@ -58,7 +58,7 @@
 <codeblock id="example"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
 <act xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd" classCode="ACT">
   <templateId root="2.16.840.1.113883.10.20.23.42"/>
-  <id root="352786895" extension="MDHT"/>
+  <id root="1544017257" extension="MDHT"/>
   <code code="C83204" codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="NCI Thesaurus"/>
   <effectiveTime>
     <low value="2012"/>

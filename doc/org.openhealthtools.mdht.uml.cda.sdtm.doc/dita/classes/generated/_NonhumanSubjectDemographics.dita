@@ -127,8 +127,8 @@
 </tbody></tgroup></table></p></section>
 <codeblock id="example"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
 <act xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd">
-  <id root="201894077" extension="MDHT"/>
-  <code code="2100345572"/>
+  <id root="447010786" extension="MDHT"/>
+  <code code="1851952974"/>
   <effectiveTime>
     <low value="2012"/>
     <high value="2012"/>
@@ -136,7 +136,7 @@
   <entryRelationship>
     <act>
       <templateId root="2.16.840.1.113883.10.20.23.81"/>
-      <id root="7226840" extension="MDHT"/>
+      <id root="1593530636" extension="MDHT"/>
       <code codeSystem="locally defined" codeSystemName="Study Arm Type"/>
       <effectiveTime>
         <low value="2012"/>
@@ -147,7 +147,7 @@
   <entryRelationship>
     <observation classCode="OBS" moodCode="EVN">
       <templateId root="2.16.840.1.113883.10.20.23.23"/>
-      <id root="511049579" extension="MDHT"/>
+      <id root="1383085962" extension="MDHT"/>
       <code code="C49569" codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="NCI Thesaurus"/>
       <effectiveTime>
         <low value="2012"/>
@@ -160,7 +160,7 @@
   <entryRelationship>
     <observation>
       <templateId root="2.16.840.1.113883.10.20.23.30"/>
-      <id root="742857270" extension="MDHT"/>
+      <id root="1064969661" extension="MDHT"/>
       <code code="C66734" codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="NCI Thesaurus"/>
       <effectiveTime>
         <low value="2012"/>
@@ -171,7 +171,7 @@
   <entryRelationship>
     <act classCode="ACT">
       <templateId root="2.16.840.1.113883.10.20.23.75"/>
-      <id root="751796466" extension="MDHT"/>
+      <id root="1220498608" extension="MDHT"/>
       <code codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="NCI Thesaurus"/>
       <effectiveTime>
         <low value="2012"/>
@@ -182,7 +182,7 @@
   <entryRelationship>
     <observation classCode="OBS" moodCode="EVN">
       <templateId root="2.16.840.1.113883.10.20.23.96"/>
-      <id root="440040563" extension="MDHT"/>
+      <id root="1081482960" extension="MDHT"/>
       <code codeSystem="locally defined" codeSystemName="Supplemental Value Type"/>
       <effectiveTime>
         <low value="2012"/>
@@ -194,8 +194,8 @@
   </entryRelationship>
   <entryRelationship>
     <act>
-      <id root="1643852286" extension="MDHT"/>
-      <code code="419280805"/>
+      <id root="1419143079" extension="MDHT"/>
+      <code code="66856691"/>
       <effectiveTime>
         <low value="2012"/>
         <high value="2012"/>

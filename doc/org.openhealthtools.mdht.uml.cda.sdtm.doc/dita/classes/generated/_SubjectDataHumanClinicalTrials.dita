@@ -120,13 +120,13 @@
   <realmCode code="Code forrealmCode"/>
   <typeId root="2.16.840.1.113883.1.3"/>
   <templateId root="2.16.840.1.113883.10.20.23.11"/>
-  <id root="1619651412" extension="MDHT"/>
+  <id root="1689758600" extension="MDHT"/>
   <code code="TBD" codeSystem="2.16.840.1.113883.6.1"/>
   <title>TEXT FOR TITLE</title>
   <effectiveTime/>
   <confidentialityCode codeSystem="2.16.840.1.113883.5.25" codeSystemName="Confidentiality"/>
   <languageCode code="Code forlanguageCode"/>
-  <setId root="4540488d-0c8f-420d-890d-b5670f00b29a" extension="MDHT"/>
+  <setId root="d7b06a49-2453-450e-824a-a580f99ba0a3" extension="MDHT"/>
   <versionNumber value="1"/>
   <recordTarget typeCode="RCT">
     <patientRole classCode="PAT"/>
@@ -147,10 +147,10 @@
         <section classCode="DOCSECT" moodCode="EVN">
           <realmCode code="Code forrealmCode"/>
           <templateId root="2.16.840.1.113883.10.20.23.13"/>
-          <id root="617005163" extension="MDHT"/>
+          <id root="1899130633" extension="MDHT"/>
           <code code="HUStbd" codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="NCI Thesaurus"/>
           <title>TEXT FOR TITLE</title>
-          <confidentialityCode code="1834911836"/>
+          <confidentialityCode code="1740456425"/>
           <languageCode code="Code forlanguageCode"/>
           <entry typeCode="COMP"/>
           <entry>

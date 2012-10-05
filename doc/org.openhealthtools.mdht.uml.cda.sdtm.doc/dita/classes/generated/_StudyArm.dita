@@ -64,7 +64,7 @@ Study arm information may refer either to the planned arm for a subject or to th
 <codeblock id="example"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
 <act xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd">
   <templateId root="2.16.840.1.113883.10.20.23.81"/>
-  <id root="162507597" extension="MDHT"/>
+  <id root="55059351" extension="MDHT"/>
   <code codeSystem="locally defined" codeSystemName="Study Arm Type"/>
   <text>Text Value</text>
   <effectiveTime>

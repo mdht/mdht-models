@@ -20,7 +20,7 @@
     	
         <cdatools model="${modelPath.uml}">
         	<model file="${vocabPath.uml}"/>
-            <transformToDita ditaFilePath="${ditaFilePath}" IncludeTableView="true"/>
+            <transformToDita ditaFilePath="${ditaFilePath}" IncludeTableView="true" exampleDepth="1"/>
         </cdatools>
 
     	<antcall target="refresh"/>
