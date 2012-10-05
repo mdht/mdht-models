@@ -31,9 +31,9 @@
         <body>A list of possible values for toxicity grade that is appropriate for a toxicity measure.  We need an code that is not domain specific.</body>
       </ownedComment>
     </packagedElement>
-    <packagedElement xmi:type="uml:Enumeration" xmi:id="_Tnr4cJX6EeGdw75A0B2buQ" name="Vital Sign Type">
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_Tnr4cJX6EeGdw75A0B2buQ" name="Vital Sign">
       <ownedComment xmi:id="_ZaY24JX6EeGdw75A0B2buQ">
-        <body>A list of supported types of vital sign. Is there a set?  What about LOINC.</body>
+        <body>A record of different types of supplemental value that may be reported on within a subject data report.</body>
       </ownedComment>
     </packagedElement>
     <packagedElement xmi:type="uml:Enumeration" xmi:id="_iXXY8JX6EeGdw75A0B2buQ" name="Study Arm Type">
@@ -43,7 +43,7 @@
     </packagedElement>
     <packagedElement xmi:type="uml:Enumeration" xmi:id="_qzX78JX6EeGdw75A0B2buQ" name="Non Performance Reason">
       <ownedComment xmi:id="_01Ss0JX6EeGdw75A0B2buQ">
-        <body>A list of the possible reasons for not performing an obseration or collecting a pre-defined information item.</body>
+        <body>A list of the possible reasons for not performing an obseration or collecting a pre-defined information item.  Note, there are CDISC codes here.  Should this be a EVS based value set?</body>
       </ownedComment>
     </packagedElement>
     <packagedElement xmi:type="uml:Enumeration" xmi:id="_1yps8JX6EeGdw75A0B2buQ" name="Sex">
@@ -71,19 +71,19 @@
         <body>A list of the different toxicity scales, e.g., Common Terminology Criteria for Adverse Events (CTCAE),  that could be used to record the toxicity of an event.  IS this in EVS?</body>
       </ownedComment>
     </packagedElement>
-    <packagedElement xmi:type="uml:Enumeration" xmi:id="_9TfjAJYMEeGdw75A0B2buQ" name="Drug Accountability Sub-Category">
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_9TfjAJYMEeGdw75A0B2buQ" name="Drug Accountability Sub-Category Type">
       <ownedComment xmi:id="__dzHUJYgEeGQBeeBDly71w">
         <body>A list of categories used to organize drug accountability information.  The code system to be used is defined by the study sponsor.</body>
       </ownedComment>
     </packagedElement>
-    <packagedElement xmi:type="uml:Enumeration" xmi:id="_YUDPAJX8EeGdw75A0B2buQ" name="Concurrent Medication Category">
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_YUDPAJX8EeGdw75A0B2buQ" name="Concomitant Medication Category Type">
       <ownedComment xmi:id="_g6b2AJX8EeGdw75A0B2buQ">
-        <body>The universe of categories that could be used for organizing concurrent medications.  The code system to be used is defined by the study sponsor.</body>
+        <body>The universe of categories that could be used for organizing concomitant medications.  The code system to be used is defined by the study sponsor.</body>
       </ownedComment>
     </packagedElement>
-    <packagedElement xmi:type="uml:Enumeration" xmi:id="_lxXvwJX8EeGdw75A0B2buQ" name="Concurrent Medication Sub-Category">
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_lxXvwJX8EeGdw75A0B2buQ" name="Concomitant Medication Sub-Category Type">
       <ownedComment xmi:id="_qeY4gJX8EeGdw75A0B2buQ">
-        <body>A list of sub-categories used for organizing concurrent medications.  The code system to be used is defined by the study sponsor.</body>
+        <body>A list of sub-categories used for organizing concomitant medications.  The code system to be used is defined by the study sponsor.</body>
       </ownedComment>
     </packagedElement>
     <packagedElement xmi:type="uml:Enumeration" xmi:id="_qzQVQJX8EeGdw75A0B2buQ" name="Medication Item Type">
@@ -101,27 +101,27 @@
         <body>A list of the possible routes of adminstration for a substance.  Do we use the CDASH set?  If so, how cite?  Is this in EVS?</body>
       </ownedComment>
     </packagedElement>
-    <packagedElement xmi:type="uml:Enumeration" xmi:id="_GQ-OoJX9EeGdw75A0B2buQ" name="Exposure Category">
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_GQ-OoJX9EeGdw75A0B2buQ" name="Exposure Category Type">
       <ownedComment xmi:id="_KGoRkJX9EeGdw75A0B2buQ">
         <body>A list of categories used for organizing exposures.  The code system to be used is defined by the study sponsor.</body>
       </ownedComment>
     </packagedElement>
-    <packagedElement xmi:type="uml:Enumeration" xmi:id="_KZeVEJX9EeGdw75A0B2buQ" name="Exposure Sub-Category">
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_KZeVEJX9EeGdw75A0B2buQ" name="Exposure Sub-Category Type">
       <ownedComment xmi:id="_Qk_cIJX9EeGdw75A0B2buQ">
         <body>A list of sub-categories used for organizing exposures.  The code system to be used is defined by the study sponsor.</body>
       </ownedComment>
     </packagedElement>
-    <packagedElement xmi:type="uml:Enumeration" xmi:id="_U5nTAJX9EeGdw75A0B2buQ" name="Substance Use Category">
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_U5nTAJX9EeGdw75A0B2buQ" name="Substance Use Category Type">
       <ownedComment xmi:id="_Yso4sJX9EeGdw75A0B2buQ">
         <body>A list of categories used for organizing substance uses.    The code system to be used is defined by the study sponsor.  The code system to be used is defined by the study sponsor.</body>
       </ownedComment>
     </packagedElement>
-    <packagedElement xmi:type="uml:Enumeration" xmi:id="_ZFKGYJX9EeGdw75A0B2buQ" name="Substance Use Sub-Category">
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_ZFKGYJX9EeGdw75A0B2buQ" name="Substance Use Sub-Category Type">
       <ownedComment xmi:id="_gdm6oJX9EeGdw75A0B2buQ">
         <body>A list of sub-categories used for organizing substance uses.  The code system to be used is defined by the study sponsor.</body>
       </ownedComment>
     </packagedElement>
-    <packagedElement xmi:type="uml:Enumeration" xmi:id="_wNFR8JYCEeGdw75A0B2buQ" name="Disposition Item Type">
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_wNFR8JYCEeGdw75A0B2buQ" name="Disposition Item Set">
       <ownedComment xmi:id="_2R-zoJYCEeGdw75A0B2buQ">
         <body>A list of possible types of study subject disposition.  Is there an EVS set, or is it sponsor defined?</body>
       </ownedComment>
@@ -131,7 +131,7 @@
         <body>A list of categories used for organizing dispositions.  The code system to be used is defined by the study sponsor.</body>
       </ownedComment>
     </packagedElement>
-    <packagedElement xmi:type="uml:Enumeration" xmi:id="_-A0HkJYCEeGdw75A0B2buQ" name="Disposition Sub-Category">
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_-A0HkJYCEeGdw75A0B2buQ" name="Disposition Sub-Category Type">
       <ownedComment xmi:id="_DhFSMJYDEeGdw75A0B2buQ">
         <body>A list of sub-categories used for organizing dispositions.  The code system to be used is defined by the study sponsor.</body>
       </ownedComment>
@@ -141,17 +141,17 @@
         <body>A list of possible items recorded as part of a study subject's medical history.   The set of concepts is defined as a locally defined, sponsor generated code system.  However, there would be a strong case for using a generally available clincial vocabulary such as SNOMED.</body>
       </ownedComment>
     </packagedElement>
-    <packagedElement xmi:type="uml:Enumeration" xmi:id="_JioBEJYHEeGdw75A0B2buQ" name="Medical History Category">
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_JioBEJYHEeGdw75A0B2buQ" name="Medical History Category Type">
       <ownedComment xmi:id="_ODY2gJYHEeGdw75A0B2buQ">
         <body>A list of categories used for organizing medical history items.  The code system to be used is defined by the study sponsor.</body>
       </ownedComment>
     </packagedElement>
-    <packagedElement xmi:type="uml:Enumeration" xmi:id="_OWnUgJYHEeGdw75A0B2buQ" name="Medical History Sub-Category">
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_OWnUgJYHEeGdw75A0B2buQ" name="Medical History Sub-Category Type">
       <ownedComment xmi:id="_Uh_4sJYHEeGdw75A0B2buQ">
         <body>A list of sub-categories used for organizing medical history items.  The code system to be used is defined by the study sponsor.</body>
       </ownedComment>
     </packagedElement>
-    <packagedElement xmi:type="uml:Enumeration" xmi:id="_tiZo0JYMEeGdw75A0B2buQ" name="Finding About Sub-Category">
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_tiZo0JYMEeGdw75A0B2buQ" name="Finding About Sub-Category Type">
       <ownedComment xmi:id="_BoXicJYWEeGQBeeBDly71w">
         <body>A list of sub-categories used for organizing finding about results.  The code system to be used is defined by the study sponsor.</body>
       </ownedComment>
@@ -161,14 +161,14 @@
         <body>A list of possible test results generated by an ECG.  Is there a defined set of categories?</body>
       </ownedComment>
     </packagedElement>
-    <packagedElement xmi:type="uml:Enumeration" xmi:id="_mUGoYJYHEeGdw75A0B2buQ" name="ECG Test Result Category">
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_mUGoYJYHEeGdw75A0B2buQ" name="ECG Test Result Category Type">
       <ownedComment xmi:id="_qfg44JYHEeGdw75A0B2buQ">
         <body>A list of possible categories used to organize ECT  test results.  The code system to be used is defined by the study sponsor.</body>
       </ownedComment>
     </packagedElement>
-    <packagedElement xmi:type="uml:Enumeration" xmi:id="_q94P4JYHEeGdw75A0B2buQ" name="ECG Test Result Sub-Category">
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_q94P4JYHEeGdw75A0B2buQ" name="ECG Test Result Sub-Category Type">
       <ownedComment xmi:id="_sPZiIJYHEeGdw75A0B2buQ">
-        <body>A list of sub-possible categories used to organize ECT  test results.  The code system to be used is defined by the study sponsor.</body>
+        <body>A record of  the list of ECG test result categories that may be reported on within a subject data report.  The value set is drawn from a locally defined code system.  In practice, the code system and value set are likely to be identical.</body>
       </ownedComment>
     </packagedElement>
     <packagedElement xmi:type="uml:Enumeration" xmi:id="_1I_ZAJYHEeGdw75A0B2buQ" name="ECG Lead Location">
@@ -176,9 +176,9 @@
         <body>A list of possible location types used for ECG leads.  Is there a defined set?</body>
       </ownedComment>
     </packagedElement>
-    <packagedElement xmi:type="uml:Enumeration" xmi:id="_LWbkMJYLEeGdw75A0B2buQ" name="Physical Exam Finding Sub-Category">
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_LWbkMJYLEeGdw75A0B2buQ" name="Physical Exam Finding Sub-Category Type">
       <ownedComment xmi:id="_bdlM8JYWEeGQBeeBDly71w">
-        <body>A list of sub-categories used for organizing physical exam findings.  The code system to be used is defined by the study sponsor.</body>
+        <body>A list of sub-categories used for organizing physical exam findings.   If no satisfactory generally accepted code system is recognized, the code system to be used is defined by the study sponsor.</body>
       </ownedComment>
     </packagedElement>
     <packagedElement xmi:type="uml:Enumeration" xmi:id="_uYsfAJYJEeGdw75A0B2buQ" name="Inclusion/Exclusion Criteria Type">
@@ -188,17 +188,18 @@
     </packagedElement>
     <packagedElement xmi:type="uml:Enumeration" xmi:id="_zf0w4JYJEeGdw75A0B2buQ" name="Inclusion/Exclusion Criteria Category">
       <ownedComment xmi:id="_nAMqoJh-EeGrqNwK10mI-w">
-        <body>A list of categories used for organizing Inclusion/Exclusion criteria.  Is this simply Inclusion or Exclusion and in EVS?  Or is it defined by the sponsor?</body>
+        <body>A list of categories used for organizing Inclusion/Exclusion criteria.  Currently, it indicates whether a criteria is designed to include or exclude possible study subjects.</body>
       </ownedComment>
     </packagedElement>
-    <packagedElement xmi:type="uml:Enumeration" xmi:id="_1sDX4JYJEeGdw75A0B2buQ" name="Inclusion/Exclusion Criteria Sub-Category">
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_1sDX4JYJEeGdw75A0B2buQ" name="Inclusion/Exclusion Criteria Sub-Category Type">
       <ownedComment xmi:id="_o9h6AJh-EeGrqNwK10mI-w">
         <body>A list of sub-categories used for organizing Inclusion/Exclusion criteria.  The code system to be used is defined by the study sponsor.</body>
       </ownedComment>
     </packagedElement>
-    <packagedElement xmi:type="uml:Enumeration" xmi:id="_3uZqIJYJEeGdw75A0B2buQ" name="Laboratory Test Type">
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_3uZqIJYJEeGdw75A0B2buQ" name="Laboratory Test Code">
       <ownedComment xmi:id="_7Qf7EJh-EeGrqNwK10mI-w">
-        <body>A list of the different types of lab tests that can be recorded.  These test codes are used when the proper LOINC code is not know.  The code system to be used is defined by the study sponsor.</body>
+        <body>A list of the different types of lab tests that can be recorded.  These test codes are used when the proper LOINC code is not know.  The code system to be used is defined by the study sponsor.  However, I note that several &#xD;
+laboratory test codes and test names are carried within EVS.  Should this value set be drawn from EVS and extended as needed?</body>
       </ownedComment>
     </packagedElement>
     <packagedElement xmi:type="uml:Enumeration" xmi:id="_6tAJQJYJEeGdw75A0B2buQ" name="Specimen Type">
@@ -211,24 +212,24 @@
         <body>A list of different possible values for specimen condition.</body>
       </ownedComment>
     </packagedElement>
-    <packagedElement xmi:type="uml:Enumeration" xmi:id="__hRJgJYJEeGdw75A0B2buQ" name="Laboratory Test Result Category">
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="__hRJgJYJEeGdw75A0B2buQ" name="Laboratory Test Result Category Type">
       <ownedComment xmi:id="_AxehQJYXEeGQBeeBDly71w">
-        <body>A list of categories used for organizing laboratory tests.  The code system to be used is defined by the study sponsor.</body>
+        <body>A list of categories used for organizing laboratory tests.   If there is no satisfactory common vocabulary to be employed, the code system to be used will be defined by the study sponsor.</body>
       </ownedComment>
     </packagedElement>
-    <packagedElement xmi:type="uml:Enumeration" xmi:id="_4ZCtIJYKEeGdw75A0B2buQ" name="Laboratory Test Result Sub-Category">
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_4ZCtIJYKEeGdw75A0B2buQ" name="Laboratory Test Result Sub-Category Type">
       <ownedComment xmi:id="__YO2YJYWEeGQBeeBDly71w">
-        <body>A list of sub-categories used for organizing laboratory tests.  The code system to be used is defined by the study sponsor.</body>
+        <body>A list of sub-categories used for organizing laboratory tests.  If there is no satisfactory common code system to be used, the code system to be used will be defined by the study sponsor.</body>
       </ownedComment>
     </packagedElement>
     <packagedElement xmi:type="uml:Enumeration" xmi:id="_GduI0JYLEeGdw75A0B2buQ" name="Physical Exam Finding Type">
       <ownedComment xmi:id="_dcj7wJh_EeGrqNwK10mI-w">
-        <body>A list of the different types of physical exam finding.  Is there a standard set?  LOINC?    Currently, the code system to be used is defined by the study sponsor.</body>
+        <body>A list of the different types of physical exam finding.  Is there a standard set?  LOINC?   If no satisfactory generally accepted code system is recognized, the code system to be used is defined by the study sponsor.</body>
       </ownedComment>
     </packagedElement>
-    <packagedElement xmi:type="uml:Enumeration" xmi:id="_JCdWcJYLEeGdw75A0B2buQ" name="Physical Exam Finding Category">
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_JCdWcJYLEeGdw75A0B2buQ" name="Physical Exam Finding Category Type">
       <ownedComment xmi:id="_cvaoQJYWEeGQBeeBDly71w">
-        <body>A list of categories used for organizing physical exam findings.  The code system to be used is defined by the study sponsor.</body>
+        <body>A list of categories used for organizing physical exam findings.   If no satisfactory generally accepted code system is recognized, the code system to be used is defined by the study sponsor.</body>
       </ownedComment>
     </packagedElement>
     <packagedElement xmi:type="uml:Enumeration" xmi:id="_OdNu8JYLEeGdw75A0B2buQ" name="Test Method Type">
@@ -241,42 +242,42 @@
         <body>A list of the different questions that may be included on a questionnaire.  The code system to be used is defined by the study sponsor.</body>
       </ownedComment>
     </packagedElement>
-    <packagedElement xmi:type="uml:Enumeration" xmi:id="_nzR_UJYLEeGdw75A0B2buQ" name="Questionnaire Category">
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_nzR_UJYLEeGdw75A0B2buQ" name="Questionnaire Category Type">
       <ownedComment xmi:id="_Rd0YMJYWEeGQBeeBDly71w">
         <body>A list of categories used for organizing questionnaire results.  The code system to be used is defined by the study sponsor.</body>
       </ownedComment>
     </packagedElement>
-    <packagedElement xmi:type="uml:Enumeration" xmi:id="_qAvVYJYLEeGdw75A0B2buQ" name="Questionnaire Sub-Category">
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_qAvVYJYLEeGdw75A0B2buQ" name="Questionnaire Sub-Category Type">
       <ownedComment xmi:id="_QJ1n0JYWEeGQBeeBDly71w">
         <body>A list of sub-categories used for organizing questionnaire results.  The code system to be used is defined by the study sponsor.</body>
       </ownedComment>
     </packagedElement>
-    <packagedElement xmi:type="uml:Enumeration" xmi:id="_rzXwoJYLEeGdw75A0B2buQ" name="Subject Characteristic Type">
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_rzXwoJYLEeGdw75A0B2buQ" name="Subject Characteristic Set">
       <ownedComment xmi:id="_wqODcJh_EeGrqNwK10mI-w">
         <body>A list of different types of subject characteristic.    The code system to be used is defined by the study sponsor.</body>
       </ownedComment>
     </packagedElement>
-    <packagedElement xmi:type="uml:Enumeration" xmi:id="_xFGI8JYLEeGdw75A0B2buQ" name="Subject Characteristic Category">
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_xFGI8JYLEeGdw75A0B2buQ" name="Subject Characteristic Category Type">
       <ownedComment xmi:id="_MNkmkJYWEeGQBeeBDly71w">
         <body>A list of categories used for organizing subject characteristic findings.    The code system to be used is defined by the study sponsor.</body>
       </ownedComment>
     </packagedElement>
-    <packagedElement xmi:type="uml:Enumeration" xmi:id="_0HxPwJYLEeGdw75A0B2buQ" name="Subject Characteristic Sub-Category">
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_0HxPwJYLEeGdw75A0B2buQ" name="Subject Characteristic Sub-Category Type">
       <ownedComment xmi:id="_Ka-AgJYWEeGQBeeBDly71w">
         <body>A list of sub-categories used for organizing subject characteristic findings.    The code system to be used is defined by the study sponsor.</body>
       </ownedComment>
     </packagedElement>
     <packagedElement xmi:type="uml:Enumeration" xmi:id="_2y0gwJYLEeGdw75A0B2buQ" name="Microbiology Finding Type">
       <ownedComment xmi:id="_C1SiMJh_EeGrqNwK10mI-w">
-        <body>A list of types of microbiology specimen related finding.  Is there a standard list?  Should LOINC  be suggested.  Currently,  the code system to be used is defined by the study sponsor.</body>
+        <body>A list of types of microbiology specimen related finding.  Is there a standard list?  Should LOINC  be suggested?  Currently,  the code system to be used is defined by the study sponsor.</body>
       </ownedComment>
     </packagedElement>
-    <packagedElement xmi:type="uml:Enumeration" xmi:id="_5HLwEJYLEeGdw75A0B2buQ" name="Microbiology Finding Category ">
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_5HLwEJYLEeGdw75A0B2buQ" name="Microbiology Finding Category Type">
       <ownedComment xmi:id="_8yHIsJYWEeGQBeeBDly71w">
         <body>A list of categories used for organizing microbiology specimen related tests.   The code system to be used is defined by the study sponsor.</body>
       </ownedComment>
     </packagedElement>
-    <packagedElement xmi:type="uml:Enumeration" xmi:id="_7hHb4JYLEeGdw75A0B2buQ" name="Microbiology Finding Sub-Category">
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_7hHb4JYLEeGdw75A0B2buQ" name="Microbiology Finding Sub-Category Type">
       <ownedComment xmi:id="_7Kse8JYWEeGQBeeBDly71w">
         <body>A list of sub-categories used for organizing microbiology specimen related tests.  The code system to be used is defined by the study sponsor.</body>
       </ownedComment>
@@ -286,14 +287,14 @@
         <body>A list of types of microbiology susceptibility related finding.  Is there a standard set?  LOINC?  Currently,  the code system to be used is defined by the study sponsor.</body>
       </ownedComment>
     </packagedElement>
-    <packagedElement xmi:type="uml:Enumeration" xmi:id="_DUppoJYMEeGdw75A0B2buQ" name="Microbiology Susceptibility Finding Category ">
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_DUppoJYMEeGdw75A0B2buQ" name="Microbiology Susceptibility Finding Category Type">
       <ownedComment xmi:id="_4hu4oJYWEeGQBeeBDly71w">
-        <body>A list of categories used for organizing microbiology susceptibility tests.  The code system to be used is defined by the study sponsor.</body>
+        <body>A list of categories used for organizing microbiology susceptibility tests.  These codes could be drawn from a generally acceptable code system such as LOINC. The code system to be used is defined by the study sponsor.</body>
       </ownedComment>
     </packagedElement>
-    <packagedElement xmi:type="uml:Enumeration" xmi:id="_F-_I8JYMEeGdw75A0B2buQ" name="Microbiology Susceptibility Finding Sub-Category">
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_F-_I8JYMEeGdw75A0B2buQ" name="Microbiology Susceptibility Finding Sub-Category Type">
       <ownedComment xmi:id="_3FKM8JYWEeGQBeeBDly71w">
-        <body>A list of sub-categories used for organizing microbiology susceptibility tests.  The code system to be used is defined by the study sponsor.</body>
+        <body>A list of sub-categories used for organizing microbiology susceptibility tests.  Can these codes be drawn from a generally accepted code system such as LOINC?  The code system to be used is defined by the study sponsor.</body>
       </ownedComment>
     </packagedElement>
     <packagedElement xmi:type="uml:Enumeration" xmi:id="_IyqKcJYMEeGdw75A0B2buQ" name="Microbiology Susceptibility Result Category ">
@@ -306,37 +307,37 @@
         <body>A list of the different types of pharmacokinetics concentration findings.    The code system to be used is defined by the study sponsor.</body>
       </ownedComment>
     </packagedElement>
-    <packagedElement xmi:type="uml:Enumeration" xmi:id="_MMoW8JYMEeGdw75A0B2buQ" name="Pharmacokinetics Concentration Category ">
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_MMoW8JYMEeGdw75A0B2buQ" name="Pharmacokinetics Concentration Category Type">
       <ownedComment xmi:id="_pp8lAJYWEeGQBeeBDly71w">
         <body>A list of categories used for organizing pharmacokinetic concentration findings. The code system to be used is defined by the study sponsor.</body>
       </ownedComment>
     </packagedElement>
-    <packagedElement xmi:type="uml:Enumeration" xmi:id="_VTWq4JYMEeGdw75A0B2buQ" name="Pharmacokinetics Concentration Sub-Category">
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_VTWq4JYMEeGdw75A0B2buQ" name="Pharmacokinetics Concentration Sub-Category Type">
       <ownedComment xmi:id="_mUTe4JYWEeGQBeeBDly71w">
         <body>A list of sub-categories used for organizing pharmacokinetic concentration findings.  The code system to be used is defined by the study sponsor.</body>
       </ownedComment>
     </packagedElement>
-    <packagedElement xmi:type="uml:Enumeration" xmi:id="_ZG_UkJYMEeGdw75A0B2buQ" name="Pharmacokinetics Parameter Finding Type">
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_ZG_UkJYMEeGdw75A0B2buQ" name="Pharmacokinetics Parameter Finding Set">
       <ownedComment xmi:id="_jsehAJYWEeGQBeeBDly71w">
         <body>A list of categories used for organizing pharmacokinetic parameter findings.  The code system to be used is defined by the study sponsor.</body>
       </ownedComment>
     </packagedElement>
-    <packagedElement xmi:type="uml:Enumeration" xmi:id="_ZpEt8JYMEeGdw75A0B2buQ" name="Pharmacokinetics Parameter Category ">
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_ZpEt8JYMEeGdw75A0B2buQ" name="Pharmacokinetics Parameter Category Type">
       <ownedComment xmi:id="_YgmYEJh_EeGrqNwK10mI-w">
         <body>A list of the different types of pharmacokinetics parameter findings.    The code system to be used is defined by the study sponsor.</body>
       </ownedComment>
     </packagedElement>
-    <packagedElement xmi:type="uml:Enumeration" xmi:id="_aKQIYJYMEeGdw75A0B2buQ" name="Finding About Finding Type">
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_aKQIYJYMEeGdw75A0B2buQ" name="Finding About Finding Set">
       <ownedComment xmi:id="_gpfnQJh-EeGrqNwK10mI-w">
-        <body>A list of the different types of findings that may be captured within the SDTM  Findings About domain.  The code system to be used is defined by the study sponsor.</body>
+        <body>A list of the different types of findings that may be captured within the SDTM  Findings About domain.</body>
       </ownedComment>
     </packagedElement>
-    <packagedElement xmi:type="uml:Enumeration" xmi:id="_cDzrAJYMEeGdw75A0B2buQ" name="Pharmacokinetics Parameter Sub-Category">
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_cDzrAJYMEeGdw75A0B2buQ" name="Pharmacokinetics Parameter Sub-Category Type">
       <ownedComment xmi:id="_iXqqMJYWEeGQBeeBDly71w">
         <body>A list of sub-categories used for organizing pharmacokinetic parameter findings.  The code system to be used is defined by the study sponsor.</body>
       </ownedComment>
     </packagedElement>
-    <packagedElement xmi:type="uml:Enumeration" xmi:id="_s-BwcJYMEeGdw75A0B2buQ" name="Finding About Category ">
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_s-BwcJYMEeGdw75A0B2buQ" name="Finding About Category Type">
       <ownedComment xmi:id="__aPeAJYVEeGQBeeBDly71w">
         <body>A list of categories used for organizing finding about results.  The code system to be used is defined by the study sponsor.</body>
       </ownedComment>
@@ -351,12 +352,12 @@
         <body>A list of possible study roles played by the evaluator of a result.  Is this in EVS?</body>
       </ownedComment>
     </packagedElement>
-    <packagedElement xmi:type="uml:Enumeration" xmi:id="_7okSQJYMEeGdw75A0B2buQ" name="Drug Accountability Finding Type">
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_7okSQJYMEeGdw75A0B2buQ" name="Drug Accountability Finding Set">
       <ownedComment xmi:id="_9rrpcJYgEeGQBeeBDly71w">
         <body>A list of the different valid drug accountability findings.  Is there a defined set?</body>
       </ownedComment>
     </packagedElement>
-    <packagedElement xmi:type="uml:Enumeration" xmi:id="_8iN3EJYMEeGdw75A0B2buQ" name="Drug Accountability Category ">
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_8iN3EJYMEeGdw75A0B2buQ" name="Drug Accountability Category Type">
       <ownedComment xmi:id="_59VIYJYgEeGQBeeBDly71w">
         <body>A list of categories used to organize drug accountability information.  The code system to be used is defined by the study sponsor.</body>
       </ownedComment>
@@ -385,6 +386,7 @@
           <body>An observation that records the lower quantitation limit of an assay.</body>
         </ownedComment>
       </ownedLiteral>
+      <ownedLiteral xmi:id="_19R8oAcZEeK8TPFCLDEqWg" name="CEtbd"/>
       <ownedLiteral xmi:id="_czbvIPLoEeGMZ4RBIRkmiw" name="C49569">
         <ownedComment xmi:id="_md8soPLoEeGMZ4RBIRkmiw">
           <body>Identifies an observation as a comment.   Note, the SDTM/SEND concept ID for the domain of the same  name is being used.</body>
@@ -510,6 +512,7 @@
           <body>An observation of the location of a particular ECG lead on the subject's body.</body>
         </ownedComment>
       </ownedLiteral>
+      <ownedLiteral xmi:id="_nGOlYA8HEeKrbYFhvTKJGw" name="MAStbd"/>
       <ownedLiteral xmi:id="_zFlhUPOSEeGPpLm0F8gjDw" name="MHItbd">
         <ownedComment xmi:id="_mCKQoPhbEeGT_PTNDmnEsQ">
           <body>An observation that records an item of the subject's medical history</body>
@@ -590,6 +593,7 @@
           <body>An observation to indicate whether or not an adverse event is considered to be serious.</body>
         </ownedComment>
       </ownedLiteral>
+      <ownedLiteral xmi:id="_PX5XkA72EeKrbYFhvTKJGw" name="SETtbd"/>
       <ownedLiteral xmi:id="_jrU0kN_PEeGAf6Q5S77gJQ" name="SPCtbd">
         <ownedComment xmi:id="_6Ep1sPj3EeG9SuM8Du0jIw">
           <body>An observation to record the species of a living subject.</body>
@@ -719,11 +723,6 @@
         <body>The collection of the different types of sub-category that are used in subject data reporting.  By and large, a single category type has been defined for each SEND and SDTM  domain.</body>
       </ownedComment>
     </packagedElement>
-    <packagedElement xmi:type="uml:Enumeration" xmi:id="_KuWn0PLiEeGfjrJgpaHCTw" name="Clinical Event Type">
-      <ownedComment xmi:id="_hW4T4PLiEeGfjrJgpaHCTw">
-        <body>The universe of possible clincial events.  The set of concepts is defined as a locally defined, sponsor generated code system.  However, there would be a strong case for using a generally available clincial vocabulary such as SNOMED.</body>
-      </ownedComment>
-    </packagedElement>
     <packagedElement xmi:type="uml:Enumeration" xmi:id="_Pjn4MPLjEeGfjrJgpaHCTw" name="Clinical Observation Type">
       <ownedComment xmi:id="_eTeX0PLjEeGfjrJgpaHCTw">
         <body>The universe of possible clincial observations..  The set of concepts is defined as a locally defined, sponsor generated code system.  However, there would be a strong case for using a generally available clincial vocabulary such as LOINC or SNOMED.</body>
@@ -735,7 +734,7 @@
       </ownedComment>
     </packagedElement>
     <packagedElement xmi:type="uml:Enumeration" xmi:id="_VsEY8PLqEeGMZ4RBIRkmiw" name="Pharmaceutical Dose Form"/>
-    <packagedElement xmi:type="uml:Enumeration" xmi:id="_sz-L0PLuEeGMZ4RBIRkmiw" name="Medication Class">
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_sz-L0PLuEeGMZ4RBIRkmiw" name="Medication Class Type">
       <ownedComment xmi:id="_0bNC8PLuEeGMZ4RBIRkmiw">
         <body>The set of possible classes that could be used to indicate generally the type of the study substance.  The set of concepts is defined as a locally defined, sponsor generated code system.  However, there would be a strong case for using a generally available clincial vocabulary such as RXNORM.</body>
       </ownedComment>
@@ -745,12 +744,12 @@
         <body>The set of possible substances that could be listed as an active or inactive ingredient within the study substance.  The set of concepts is defined as a locally defined, sponsor generated code system.  However, there would be a strong case for using a generally available clincial vocabulary such as RXNORM.</body>
       </ownedComment>
     </packagedElement>
-    <packagedElement xmi:type="uml:Enumeration" xmi:id="_bad9YPNyEeGryoymXliRnA" name="Death Diagnosis">
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_bad9YPNyEeGryoymXliRnA" name="Death Diagnosis Type">
       <ownedComment xmi:id="_mPJn8PNyEeGryoymXliRnA">
         <body>A standardized form that expresses cause of death as a diagnosis.  The set of concepts is defined as a locally defined, sponsor generated code system.  However, there would be a strong case for using a generally available clincial vocabulary such as ICD or SNOMED.</body>
       </ownedComment>
     </packagedElement>
-    <packagedElement xmi:type="uml:Enumeration" xmi:id="_EviLoPN0EeGryoymXliRnA" name="Death Relationship Type">
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_EviLoPN0EeGryoymXliRnA" name="Death Relationship Set">
       <ownedComment xmi:id="_EVTa0POBEeGhE7rXK2gWNQ">
         <body>A set of different types or relationship a finding may have to the death of a study subject.</body>
       </ownedComment>
@@ -774,12 +773,12 @@
     <packagedElement xmi:type="uml:Enumeration" xmi:id="_3OVSoPOCEeGnUIlsvzjovQ" name="Method"/>
     <packagedElement xmi:type="uml:Enumeration" xmi:id="_57MjsPOREeGPpLm0F8gjDw" name="Macroscopic Examination Type">
       <ownedComment xmi:id="_EoAEoPOSEeGPpLm0F8gjDw">
-        <body>A collection of the different measurements, tests or examinations whose findings are reported as macroscopic results.</body>
+        <body>A collection of the different measurements, tests or examinations whose findings are reported as macroscopic results.  Is there a standard code system that could be used for this set of types?</body>
       </ownedComment>
     </packagedElement>
     <packagedElement xmi:type="uml:Enumeration" xmi:id="_Xl9RgPOUEeGAVMcEFACySg" name="Microscopic Finding Type">
       <ownedComment xmi:id="_cgw-oPOUEeGAVMcEFACySg">
-        <body>A collection of the different measurements, tests or examinations whose findings are reported as microscopic results.    The code system to be used is defined by the study sponsor.</body>
+        <body>A collection of the different measurements, tests or examinations whose findings are reported as microscopic results.    If no generally agreeded upon code system can be identified, the code system to be used is defined by the study sponsor.</body>
       </ownedComment>
     </packagedElement>
     <packagedElement xmi:type="uml:Enumeration" xmi:id="_qkeNIPOYEeGAVMcEFACySg" name="Subject Data Interpretation Consolidated Type">
@@ -794,9 +793,9 @@
       <ownedLiteral xmi:id="_uiAkQPOZEeGAVMcEFACySg" name="CXXXXX"/>
       <ownedLiteral xmi:id="_wlh7MPOZEeGAVMcEFACySg" name="CXXXXX"/>
     </packagedElement>
-    <packagedElement xmi:type="uml:Enumeration" xmi:id="_2azFcPOZEeGAVMcEFACySg" name="Subject Data Type">
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_2azFcPOZEeGAVMcEFACySg" name="Subject Event Set">
       <ownedComment xmi:id="_2azFcfOZEeGAVMcEFACySg">
-        <body>A collection of values used to aid in interpreting subject data findings It includes statements about the relationship between a laboratory test result, and the reference range defined for the relevant lab test.</body>
+        <body>A collection of values used to characterize subject events.</body>
       </ownedComment>
       <ownedLiteral xmi:id="_2azFcvOZEeGAVMcEFACySg" name="C78802"/>
       <ownedLiteral xmi:id="_2azFc_OZEeGAVMcEFACySg" name="C78800"/>
@@ -826,12 +825,12 @@
     </packagedElement>
     <packagedElement xmi:type="uml:Enumeration" xmi:id="_EHuWMPOfEeGJhPNoqwaI2Q" name="Organ Measurement Examination Type">
       <ownedComment xmi:id="_EHuWMfOfEeGJhPNoqwaI2Q">
-        <body>A collection of the different measurements, tests or examinations whose findings are reported as organ measurement results.    The code system to be used is defined by the study sponsor.</body>
+        <body>A collection of the different measurements, tests or examinations whose findings are reported as organ measurement results.    If no satisfactory generally accepted code system is recognized, the code system to be used is defined by the study sponsor.</body>
       </ownedComment>
     </packagedElement>
     <packagedElement xmi:type="uml:Enumeration" xmi:id="_GhvFEPOgEeGJhPNoqwaI2Q" name="Palpable Mass Examination Type">
       <ownedComment xmi:id="_GhvFEfOgEeGJhPNoqwaI2Q">
-        <body>A collection of the different measurements, tests or examinations whose findings are reported as palpable mass results.    The code system to be used is defined by the study sponsor.</body>
+        <body>A collection of the different measurements, tests or examinations whose findings are reported as palpable mass results.    If no satisfactory generally accepted code system is recognized, the code system to be used is defined by the study sponsor.</body>
       </ownedComment>
     </packagedElement>
     <packagedElement xmi:type="uml:Enumeration" xmi:id="_33kEwPOhEeGJhPNoqwaI2Q" name="Body Position">
@@ -903,10 +902,10 @@
     </packagedElement>
     <packagedElement xmi:type="uml:Enumeration" xmi:id="_P7wYYPO0EeGaaIebpy5xoQ" name="Tumor Examination Type">
       <ownedComment xmi:id="_P7wYYfO0EeGaaIebpy5xoQ">
-        <body>A collection of the different measurements, tests or examinations whose findings are reported as tumor finding results.    The code system to be used is defined by the study sponsor.</body>
+        <body>A collection of the different measurements, tests or examinations whose findings are reported as tumor finding results.  Is there a standard set?   If no satisfactory generally accepted code system is recognized, the code system to be used is defined by the study sponsor.The code system to be used is defined by the study sponsor.</body>
       </ownedComment>
     </packagedElement>
-    <packagedElement xmi:type="uml:Enumeration" xmi:id="_osfHEPO0EeGaaIebpy5xoQ" name="Visit Type">
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_osfHEPO0EeGaaIebpy5xoQ" name="Visit Classification">
       <ownedComment xmi:id="_osfHEfO0EeGaaIebpy5xoQ">
         <body>A collection of the different visit types that may be defined for a study subject.</body>
       </ownedComment>
@@ -928,7 +927,7 @@
         <body>A record of  the list of sub-categories used to group adverse events by a study sponsor.  The value set is drawn from a locally defined code system.  In practice, the code system and value set will be identical.</body>
       </ownedComment>
     </packagedElement>
-    <packagedElement xmi:type="uml:Enumeration" xmi:id="_dDcDEPkUEeGwf5s3BarCgA" name="Adverse Event">
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_dDcDEPkUEeGwf5s3BarCgA" name="Adverse Event Set">
       <ownedComment xmi:id="_8QRSgPkUEeGwf5s3BarCgA">
         <body>A record of  the list of adverse events  that may be reported on within a subject data report.  The value set is drawn from a locally defined code system.  In practice, the code system and value set are likely to be identical.</body>
       </ownedComment>
@@ -941,6 +940,282 @@
     <packagedElement xmi:type="uml:Enumeration" xmi:id="_qmLdEPkZEeGRIL1cFfwcSA" name="Clinical Observation">
       <ownedComment xmi:id="_2bI44PkZEeGRIL1cFfwcSA">
         <body>A record of  the list of clinical observations that may be reported on within a subject data report.  The value set is drawn from a locally defined code system.  In practice, the code system and value set are likely to be identical.</body>
+      </ownedComment>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_Vj0fkPt0EeGWtfGeOC8AcQ" name="Concomitant Medication Category">
+      <ownedComment xmi:id="_05SGkPt0EeGWtfGeOC8AcQ">
+        <body>A record of  the list of concomitant medication categories that may be reported on within a subject data report.  The value set is drawn from a locally defined code system.  In practice, the code system and value set are likely to be identical.</body>
+      </ownedComment>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_8J5NcPt0EeGWtfGeOC8AcQ" name="Concomitant Medication Sub-Category">
+      <ownedComment xmi:id="_IHx7wPt1EeGWtfGeOC8AcQ">
+        <body>A record of  the list of concomitant medication sub-categories that may be reported on within a subject data report.  The value set is drawn from a locally defined code system.  In practice, the code system and value set are likely to be identical.</body>
+      </ownedComment>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_6F2nMPt2EeGWtfGeOC8AcQ" name="Death Diagnosis">
+      <ownedComment xmi:id="_KKBOYPt3EeGWtfGeOC8AcQ">
+        <body>A record of  the list of death diagnoses that may be reported on within a subject data report.  The value set is drawn from a locally defined code system.  In practice, the code system and value set are likely to be identical.</body>
+      </ownedComment>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_Zq0dcPuxEeGWtfGeOC8AcQ" name="Disposition Sub-Category">
+      <ownedComment xmi:id="_iLon8PuxEeGWtfGeOC8AcQ">
+        <body>A record of  the list of disposition sub-categories that may be reported on within a subject data report.  The value set is drawn from a locally defined code system.  In practice, the code system and value set are likely to be identical.</body>
+      </ownedComment>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_SKBJAPuyEeGWtfGeOC8AcQ" name="Drug Accountability Category">
+      <ownedComment xmi:id="_cfUI4PuyEeGWtfGeOC8AcQ">
+        <body>A record of  the list of drug accountability categories that may be reported on within a subject data report.  The value set is drawn from a locally defined code system.  In practice, the code system and value set are likely to be identical.</body>
+      </ownedComment>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_rJzNQADJEeK4gc3J2D9_Cg" name="Drug Accountability Sub-Category">
+      <ownedComment xmi:id="_08IqAADJEeK4gc3J2D9_Cg">
+        <body>A record of  the list of drug accountability sub-categories that may be reported on within a subject data report.  The value set is drawn from a locally defined code system.  In practice, the code system and value set are likely to be identical.</body>
+      </ownedComment>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_-RKfsADJEeK4gc3J2D9_Cg" name="Exposure Category">
+      <ownedComment xmi:id="_FTWwEADKEeK4gc3J2D9_Cg">
+        <body>A record of  the list of exposure categories that may be reported on within a subject data report.  The value set is drawn from a locally defined code system.  In practice, the code system and value set are likely to be identical.</body>
+      </ownedComment>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_F_1bkADKEeK4gc3J2D9_Cg" name="Exposure Sub-Category">
+      <ownedComment xmi:id="_Nc9UcADKEeK4gc3J2D9_Cg">
+        <body>A record of  the list of exposure sub-categories that may be reported on within a subject data report.  The value set is drawn from a locally defined code system.  In practice, the code system and value set are likely to be identical.</body>
+      </ownedComment>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_OnfN4ADKEeK4gc3J2D9_Cg" name="Finding About Category">
+      <ownedComment xmi:id="_VTz78ADKEeK4gc3J2D9_Cg">
+        <body>A record of  the list of finding about categories that may be reported on within a subject data report.  The value set is drawn from a locally defined code system.  In practice, the code system and value set are likely to be identical.</body>
+      </ownedComment>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_l_QlkADKEeK4gc3J2D9_Cg" name="Finding About Object">
+      <ownedComment xmi:id="_vH8BUADKEeK4gc3J2D9_Cg">
+        <body>A record of  the list of finding about objects that may be reported on within a subject data report.  The value set is drawn from a locally defined code system.  In practice, the code system and value set are likely to be identical.</body>
+      </ownedComment>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_wx3MgADKEeK4gc3J2D9_Cg" name="Finding About Sub-Category">
+      <ownedComment xmi:id="_38Y5gADKEeK4gc3J2D9_Cg">
+        <body>A record of  the list of finding about sub-categories that may be reported on within a subject data report.  The value set is drawn from a locally defined code system.  In practice, the code system and value set are likely to be identical.</body>
+      </ownedComment>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_RPfVcADLEeK4gc3J2D9_Cg" name="Inclusion/Exclusion Criteria Sub-Category">
+      <ownedComment xmi:id="_cBzBcADLEeK4gc3J2D9_Cg">
+        <body>A record of  the list of inclusion/exclusion criteria sub-categories that may be reported on within a subject data report.  The value set is drawn from a locally defined code system.  In practice, the code system and value set are likely to be identical.</body>
+      </ownedComment>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_jh4uwADLEeK4gc3J2D9_Cg" name="Inclusion/Exclusion Criterion Set">
+      <ownedComment xmi:id="_sdU_wADLEeK4gc3J2D9_Cg">
+        <body>A record of  the list of inclusion/exclusion criteria that may be reported on within a subject data report.  The value set is drawn from a locally defined code system.  In practice, the code system and value set are likely to be identical.</body>
+      </ownedComment>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_t40tYADLEeK4gc3J2D9_Cg" name="Intervention Indication Set">
+      <ownedComment xmi:id="_0NMOcADLEeK4gc3J2D9_Cg">
+        <body>A record of  the list of intervention indications that may be reported on within a subject data report.  The value set is drawn from a locally defined code system.  In practice, the code system and value set are likely to be identical.</body>
+      </ownedComment>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_hedpAADMEeK4gc3J2D9_Cg" name="Laboratory Test Result Category">
+      <ownedComment xmi:id="_nYf-gADMEeK4gc3J2D9_Cg">
+        <body>A record of  the list of laboratory test result categories that may be reported on within a subject data report.  The value set is drawn from a locally defined code system.  In practice, the code system and value set are likely to be identical.</body>
+      </ownedComment>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_oxw3gADMEeK4gc3J2D9_Cg" name="Laboratory Test Result Sub-Category">
+      <ownedComment xmi:id="_zHzeQADMEeK4gc3J2D9_Cg">
+        <body>A record of  the list of laboratory test result sub-categories that may be reported on within a subject data report.  The value set is drawn from a locally defined code system.  In practice, the code system and value set are likely to be identical.</body>
+      </ownedComment>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_1dKzIADMEeK4gc3J2D9_Cg" name="Macroscopic Examination Set">
+      <ownedComment xmi:id="_-16rMADMEeK4gc3J2D9_Cg">
+        <body>A record of  the list of drug  macroscopic examination types that may be reported on within a subject data report.  The value set is drawn from a locally defined code system.  In practice, the code system and value set are likely to be identical.</body>
+      </ownedComment>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_IPtFEADNEeK4gc3J2D9_Cg" name="Medical History Category">
+      <ownedComment xmi:id="_Np6D8ADNEeK4gc3J2D9_Cg">
+        <body>A record of  the list of medical history categories that may be reported on within a subject data report.  The value set is drawn from a locally defined code system.  In practice, the code system and value set are likely to be identical.</body>
+      </ownedComment>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_YFmmwADNEeK4gc3J2D9_Cg" name="ECG Test Result Category">
+      <ownedComment xmi:id="_fnoNwADNEeK4gc3J2D9_Cg">
+        <body>A record of  the list of ECG test result categories that may be reported on within a subject data report.  The value set is drawn from a locally defined code system.  In practice, the code system and value set are likely to be identical.</body>
+      </ownedComment>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_gcIz4ADNEeK4gc3J2D9_Cg" name="ECG Test Result Sub-Category">
+      <ownedComment xmi:id="_pQlsEADNEeK4gc3J2D9_Cg">
+        <body>A record of  the list of ECG test result sub-categories that may be reported on within a subject data report.  The value set is drawn from a locally defined code system.  In practice, the code system and value set are likely to be identical.</body>
+      </ownedComment>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_tXw80ADNEeK4gc3J2D9_Cg" name="Medical History Item Set">
+      <ownedComment xmi:id="_5EZjEADNEeK4gc3J2D9_Cg">
+        <body>A record of  the list of medical history item types that may be reported on within a subject data report.  The value set is drawn from a locally defined code system.  In practice, the code system and value set are likely to be identical.</body>
+      </ownedComment>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_5xxmcADNEeK4gc3J2D9_Cg" name="Medical History Sub-Category">
+      <ownedComment xmi:id="_BkTuoADOEeK4gc3J2D9_Cg">
+        <body>A record of  the list of medical history sub-categories that may be reported on within a subject data report.  The value set is drawn from a locally defined code system.  In practice, the code system and value set are likely to be identical.</body>
+      </ownedComment>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_hIzQIADOEeK4gc3J2D9_Cg" name="Medication Class">
+      <ownedComment xmi:id="_mMFj0ADOEeK4gc3J2D9_Cg">
+        <body>A record of  the list of medication classes that may be reported on within a subject data report.  The value set is drawn from a locally defined code system.  In practice, the code system and value set are likely to be identical.</body>
+      </ownedComment>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_tI6zEADOEeK4gc3J2D9_Cg" name="Medication Item Set">
+      <ownedComment xmi:id="_0K0IgADOEeK4gc3J2D9_Cg">
+        <body>A record of  the list of types of medication item that may be reported on within a subject data report.  The value set is drawn from a locally defined code system.  In practice, the code system and value set are likely to be identical.</body>
+      </ownedComment>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_7T2AsADOEeK4gc3J2D9_Cg" name="Microbiology Finding Category">
+      <ownedComment xmi:id="_CmiyQADPEeK4gc3J2D9_Cg">
+        <body>A record of  the list of microbiology finding categories that may be reported on within a subject data report.  The value set is drawn from a locally defined code system.  In practice, the code system and value set are likely to be identical.</body>
+      </ownedComment>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_DaeJkADPEeK4gc3J2D9_Cg" name="Microbiology Finding Sub-Category">
+      <ownedComment xmi:id="_MahNwADPEeK4gc3J2D9_Cg">
+        <body>A record of  the list of microbiology finding sub-categories that may be reported on within a subject data report.  The value set is drawn from a locally defined code system.  In practice, the code system and value set are likely to be identical.</body>
+      </ownedComment>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_NirIoADPEeK4gc3J2D9_Cg" name="Microbiology Finding Set">
+      <ownedComment xmi:id="_VQTisADPEeK4gc3J2D9_Cg">
+        <body>A record of  the list of types of microbiology finding that may be reported on within a subject data report.  The value set is drawn from a locally defined code system.  In practice, the code system and value set are likely to be identical.</body>
+      </ownedComment>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_S0k3YADgEeK4gc3J2D9_Cg" name="Microbiology Susceptibility Finding Category">
+      <ownedComment xmi:id="_c8ydgADgEeK4gc3J2D9_Cg">
+        <body>A record of  the list ofmicrobiology suceptibility finding categories that may be reported on within a subject data report.  The value set is drawn from a locally defined code system.  In practice, the code system and value set are likely to be identical.</body>
+      </ownedComment>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_sv2GkADgEeK4gc3J2D9_Cg" name="Microbiology Susceptibility Finding Sub-Category">
+      <ownedComment xmi:id="_uGSVEADgEeK4gc3J2D9_Cg">
+        <body>A record of  the list of microbiology susceptibility finding sub-categories that may be reported on within a subject data report.  The value set is drawn from a locally defined code system.  In practice, the code system and value set are likely to be identical.</body>
+      </ownedComment>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_DFH0kADjEeK4gc3J2D9_Cg" name="Microbiology Susceptibility Finding Set">
+      <ownedComment xmi:id="_RbNJUADjEeK4gc3J2D9_Cg">
+        <body>A record of  the list of types of microbiology susceptibility finding that may be reported on within a subject data report.  The value set is drawn from a locally defined code system.  In practice, the code system and value set are likely to be identical.</body>
+      </ownedComment>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_Z3Z5kADjEeK4gc3J2D9_Cg" name="Microscopic Finding Set">
+      <ownedComment xmi:id="_hf-NcADjEeK4gc3J2D9_Cg">
+        <body>A record of  the list of types of microscopic findings that may be reported on within a subject data report.  The value set is drawn from a locally defined code system.  In practice, the code system and value set are likely to be identical.</body>
+      </ownedComment>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_e-iKcADuEeK4gc3J2D9_Cg" name="Organ Measurement Examination Set">
+      <ownedComment xmi:id="_l-7rEADuEeK4gc3J2D9_Cg">
+        <body>A record of  the list of types of organ measurement examination that may be reported on within a subject data report.  The value set is drawn from a locally defined code system.  In practice, the code system and value set are likely to be identical.</body>
+      </ownedComment>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_4ODt8ADuEeK4gc3J2D9_Cg" name="Palpable Mass Examination Set">
+      <ownedComment xmi:id="_ARHlcADvEeK4gc3J2D9_Cg">
+        <body>A record of  the list of types of palpable mass examination that may be reported on within a subject data report.  The value set is drawn from a locally defined code system.  In practice, the code system and value set are likely to be identical.</body>
+      </ownedComment>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_VlrycADzEeK4gc3J2D9_Cg" name="Pharmacokinetics Concentration Category">
+      <ownedComment xmi:id="_ayWEkADzEeK4gc3J2D9_Cg">
+        <body>A record of  the list of pharmacokinetic concentration categories that may be reported on within a subject data report.  The value set is drawn from a locally defined code system.  In practice, the code system and value set are likely to be identical.</body>
+      </ownedComment>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_gp_0cADzEeK4gc3J2D9_Cg" name="Pharmacokinetics Concentration Sub-Category">
+      <ownedComment xmi:id="_pTI0gADzEeK4gc3J2D9_Cg">
+        <body>A record of  the list of pharmacokinetic concentration categories that may be reported on within a subject data report.  The value set is drawn from a locally defined code system.  In practice, the code system and value set are likely to be identical.</body>
+      </ownedComment>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_y5RoUADzEeK4gc3J2D9_Cg" name="Pharmacokinetics Concentration Finding Set">
+      <ownedComment xmi:id="_EDX80AD0EeK4gc3J2D9_Cg">
+        <body>A record of  the list of types of pharmacokinetic finding that may be reported on within a subject data report.  The value set is drawn from a locally defined code system.  In practice, the code system and value set are likely to be identical.</body>
+      </ownedComment>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_EqpYMAD0EeK4gc3J2D9_Cg" name="Pharmacokinetics Parameter Category">
+      <ownedComment xmi:id="_NtX88AD0EeK4gc3J2D9_Cg">
+        <body>A record of the list of pharmacokinetic parameter categories that may be reported on within a subject data report.  The value set is drawn from a locally defined code system.  In practice, the code system and value set are likely to be identical.</body>
+      </ownedComment>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_tw0EQAD0EeK4gc3J2D9_Cg" name="Pharmacokinetics Parameter Sub-Category">
+      <ownedComment xmi:id="_35K0UAD0EeK4gc3J2D9_Cg">
+        <body>A record of the list of pharmacokinetic parameter categories that may be reported on within a subject data report.  The value set is drawn from a locally defined code system.  In practice, the code system and value set are likely to be identical.</body>
+      </ownedComment>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="__fzOgAD0EeK4gc3J2D9_Cg" name="Physical Exam Finding Category">
+      <ownedComment xmi:id="_Yh4c0AD-EeK4gc3J2D9_Cg">
+        <body>A record of the list of physical exam finding categories that may be reported on within a subject data report.  The value set is drawn from a locally defined code system.  In practice, the code system and value set are likely to be identical.</body>
+      </ownedComment>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_ZSfaYAD-EeK4gc3J2D9_Cg" name="Physical Exam Finding Sub-Category">
+      <ownedComment xmi:id="_fTU7cAD-EeK4gc3J2D9_Cg">
+        <body>A record of  the list of physical exam finding sub-categories that may be reported on within a subject data report.  The value set is drawn from a locally defined code system.  In practice, the code system and value set are likely to be identical.</body>
+      </ownedComment>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_i6PXwAD-EeK4gc3J2D9_Cg" name="Physical Exam Finding Set">
+      <ownedComment xmi:id="_ttWVAAD-EeK4gc3J2D9_Cg">
+        <body>A record of the list of types of physical exam finding that may be reported on within a subject data report.  The value set is drawn from a locally defined code system.  In practice, the code system and value set are likely to be identical.</body>
+      </ownedComment>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_rqFAQAD_EeK4gc3J2D9_Cg" name="Question Set">
+      <ownedComment xmi:id="_ztIQsAD_EeK4gc3J2D9_Cg">
+        <body>A record of different types of question that may be reported on within a subject data report.  The value set is drawn from a locally defined code system.  In practice, the code system and value set are likely to be identical.</body>
+      </ownedComment>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_4MYDMAD_EeK4gc3J2D9_Cg" name="Questionairre Category">
+      <ownedComment xmi:id="__wvzkAD_EeK4gc3J2D9_Cg">
+        <body>A record of  the list of questionnaire categories that may be reported on within a subject data report.  The value set is drawn from a locally defined code system.  In practice, the code system and value set are likely to be identical.</body>
+      </ownedComment>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_AaR4wAEAEeK4gc3J2D9_Cg" name="Questionairre Sub-Category">
+      <ownedComment xmi:id="_GDeV4AEAEeK4gc3J2D9_Cg">
+        <body>A record of  the list of questionairre sub-categories that may be reported on within a subject data report.  The value set is drawn from a locally defined code system.  In practice, the code system and value set are likely to be identical.</body>
+      </ownedComment>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_gLKQcAEAEeK4gc3J2D9_Cg" name="Study Arm Set">
+      <ownedComment xmi:id="_mqkj4AEAEeK4gc3J2D9_Cg">
+        <body>A record of the types of study arm that may be reported on within a subject data report.  The value set is drawn from a locally defined code system.  In practice, the code system and value set are likely to be identical.</body>
+      </ownedComment>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_CmcY4AEBEeK4gc3J2D9_Cg" name="Study Epoch Set">
+      <ownedComment xmi:id="_IopL4AEBEeK4gc3J2D9_Cg">
+        <body>A record of the list types of study epoch that may be reported on within a subject data report.  The value set is drawn from a locally defined code system.  In practice, the code system and value set are likely to be identical.</body>
+      </ownedComment>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_VAddIAEBEeK4gc3J2D9_Cg" name="Subject Characteristic">
+      <ownedComment xmi:id="_aY6IgAEBEeK4gc3J2D9_Cg">
+        <body>A record of  the list of subject characteristic categories that may be reported on within a subject data report.  The value set is drawn from a locally defined code system.  In practice, the code system and value set are likely to be identical.</body>
+      </ownedComment>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_bWhnUAEBEeK4gc3J2D9_Cg" name="Subject Characteristic Sub-Category">
+      <ownedComment xmi:id="_je8f8AEBEeK4gc3J2D9_Cg">
+        <body>A record of the list of subject characteristic sub-categories that may be reported on within a subject data report.  The value set is drawn from a locally defined code system.  In practice, the code system and value set are likely to be identical.</body>
+      </ownedComment>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_pJK30AEBEeK4gc3J2D9_Cg" name="Subject Element Set">
+      <ownedComment xmi:id="_u617gAEBEeK4gc3J2D9_Cg">
+        <body>A record of the types of subject element that may be reported on within a subject data report.  The value set is drawn from a locally defined code system.  In practice, the code system and value set are likely to be identical.</body>
+      </ownedComment>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_0JApgAEBEeK4gc3J2D9_Cg" name="Substance Ingredient Set">
+      <ownedComment xmi:id="_7KBOIAEBEeK4gc3J2D9_Cg">
+        <body>A record of different types of substance ingredient that may be reported on within a subject data report.  The value set is drawn from a locally defined code system.  In practice, the code system and value set are likely to be identical.</body>
+      </ownedComment>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_8fArIAEBEeK4gc3J2D9_Cg" name="Substance Use Sub-Category">
+      <ownedComment xmi:id="_LO6OEAECEeK4gc3J2D9_Cg">
+        <body>A record of the list of substance use sub-categories that may be reported on within a subject data report.  The value set is drawn from a locally defined code system.  In practice, the code system and value set are likely to be identical.</body>
+      </ownedComment>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_-vSEoAEBEeK4gc3J2D9_Cg" name="Substance Use Category">
+      <ownedComment xmi:id="_Ei3z4AECEeK4gc3J2D9_Cg">
+        <body>A record of the list of substance use categories that may be reported on within a subject data report.  The value set is drawn from a locally defined code system.  In practice, the code system and value set are likely to be identical.</body>
+      </ownedComment>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_Tb_SUAEEEeKPvvOEne9fuA" name="Supplemental Value Set">
+      <ownedComment xmi:id="_aRXOsAEEEeKPvvOEne9fuA">
+        <body>A record of different types of supplemental value that may be reported on within a subject data report.  The value set is drawn from a locally defined code system.  In practice, the code system and value set are likely to be identical.</body>
+      </ownedComment>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_ywWtIAEEEeKPvvOEne9fuA" name="Tumor Examination Set">
+      <ownedComment xmi:id="_7VdhwAEEEeKPvvOEne9fuA">
+        <body>A record of different types of tumor examination that may be reported on within a subject data report.  The value set is drawn from a locally defined code system.  In practice, the code system and value set are likely to be identical.</body>
+      </ownedComment>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_pt7VwAcXEeK8TPFCLDEqWg" name="MedDRA"/>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_Z-WMkAcZEeK8TPFCLDEqWg" name="Adverse Event">
+      <ownedComment xmi:id="_lLk6AAcZEeK8TPFCLDEqWg">
+        <body>The collection of adverse event codes defined within the MedDRA code system.</body>
       </ownedComment>
     </packagedElement>
     <profileApplication xmi:id="_BLRzsV10EeGh_7NFCJ3fGA">
@@ -956,7 +1231,7 @@
   <term:CodeSystemVersion xmi:id="_YUD2EJX8EeGdw75A0B2buQ" identifier="locally defined" source="Study Sponsor" base_Enumeration="_YUDPAJX8EeGdw75A0B2buQ"/>
   <term:CodeSystemVersion xmi:id="_lxYW0JX8EeGdw75A0B2buQ" identifier="locally defined" source="Study Sponsor" base_Enumeration="_lxXvwJX8EeGdw75A0B2buQ"/>
   <term:CodeSystemVersion xmi:id="_qzQ8UJX8EeGdw75A0B2buQ" identifier="locally defined" source="Study Sponsor" base_Enumeration="_qzQVQJX8EeGdw75A0B2buQ"/>
-  <term:CodeSystemVersion xmi:id="_1zUwcJX8EeGdw75A0B2buQ" identifier="locally defined" source="Study Sponsor" base_Enumeration="_1zUJYJX8EeGdw75A0B2buQ"/>
+  <term:CodeSystemVersion xmi:id="_1zUwcJX8EeGdw75A0B2buQ" identifier="unknown" source="Study Sponsor" base_Enumeration="_1zUJYJX8EeGdw75A0B2buQ"/>
   <term:CodeSystemVersion xmi:id="_GQ-1sJX9EeGdw75A0B2buQ" identifier="locally defined" source="Study Sponsor" base_Enumeration="_GQ-OoJX9EeGdw75A0B2buQ"/>
   <term:CodeSystemVersion xmi:id="_KZe8IJX9EeGdw75A0B2buQ" identifier="locally defined" source="Study Sponsor" base_Enumeration="_KZeVEJX9EeGdw75A0B2buQ"/>
   <term:CodeSystemVersion xmi:id="_U5n6EJX9EeGdw75A0B2buQ" identifier="locally defined" source="Study Sponsor" base_Enumeration="_U5nTAJX9EeGdw75A0B2buQ"/>
@@ -969,22 +1244,22 @@
   <term:CodeSystemVersion xmi:id="_q9428JYHEeGdw75A0B2buQ" identifier="locally defined" source="Study Sponsor" base_Enumeration="_q94P4JYHEeGdw75A0B2buQ"/>
   <term:CodeSystemVersion xmi:id="_uYsfAZYJEeGdw75A0B2buQ" identifier="locally defined" source="Study Sponsor" base_Enumeration="_uYsfAJYJEeGdw75A0B2buQ"/>
   <term:CodeSystemVersion xmi:id="_1sD-8JYJEeGdw75A0B2buQ" identifier="locally defined" source="Study Sponsor" base_Enumeration="_1sDX4JYJEeGdw75A0B2buQ"/>
-  <term:CodeSystemVersion xmi:id="__hRwkJYJEeGdw75A0B2buQ" identifier="locally defined" source="Study Sponsor" base_Enumeration="__hRJgJYJEeGdw75A0B2buQ"/>
-  <term:CodeSystemVersion xmi:id="_4ZDUMJYKEeGdw75A0B2buQ" identifier="locally defined" source="Study Sponsor" base_Enumeration="_4ZCtIJYKEeGdw75A0B2buQ"/>
-  <term:CodeSystemVersion xmi:id="_GdvW8JYLEeGdw75A0B2buQ" identifier="locally defined" source="Study Sponsor" base_Enumeration="_GduI0JYLEeGdw75A0B2buQ"/>
-  <term:CodeSystemVersion xmi:id="_JCd9gJYLEeGdw75A0B2buQ" identifier="locally defined" source="Study Sponsor" base_Enumeration="_JCdWcJYLEeGdw75A0B2buQ"/>
-  <term:CodeSystemVersion xmi:id="_LWcLQJYLEeGdw75A0B2buQ" identifier="locally defined" source="Study Sponsor" base_Enumeration="_LWbkMJYLEeGdw75A0B2buQ"/>
+  <term:CodeSystemVersion xmi:id="__hRwkJYJEeGdw75A0B2buQ" identifier="unknown" source="Study Sponsor" base_Enumeration="__hRJgJYJEeGdw75A0B2buQ"/>
+  <term:CodeSystemVersion xmi:id="_4ZDUMJYKEeGdw75A0B2buQ" identifier="unknown" source="Study Sponsor" base_Enumeration="_4ZCtIJYKEeGdw75A0B2buQ"/>
+  <term:CodeSystemVersion xmi:id="_GdvW8JYLEeGdw75A0B2buQ" identifier="unknown" source="Study Sponsor" base_Enumeration="_GduI0JYLEeGdw75A0B2buQ"/>
+  <term:CodeSystemVersion xmi:id="_JCd9gJYLEeGdw75A0B2buQ" identifier="unknown" source="Study Sponsor" base_Enumeration="_JCdWcJYLEeGdw75A0B2buQ"/>
+  <term:CodeSystemVersion xmi:id="_LWcLQJYLEeGdw75A0B2buQ" identifier="unknown" source="Study Sponsor" base_Enumeration="_LWbkMJYLEeGdw75A0B2buQ"/>
   <term:CodeSystemVersion xmi:id="_mU2ScJYLEeGdw75A0B2buQ" identifier="locally defined" source="Study Sponsor" base_Enumeration="_mU1rYJYLEeGdw75A0B2buQ"/>
   <term:CodeSystemVersion xmi:id="_nzSmYJYLEeGdw75A0B2buQ" identifier="locally defined" source="Study Sponsor" base_Enumeration="_nzR_UJYLEeGdw75A0B2buQ"/>
   <term:CodeSystemVersion xmi:id="_qAv8cJYLEeGdw75A0B2buQ" identifier="locally defined" source="Study Sponsor" base_Enumeration="_qAvVYJYLEeGdw75A0B2buQ"/>
   <term:CodeSystemVersion xmi:id="_xFGwAJYLEeGdw75A0B2buQ" identifier="locally defined" source="Study Sponsor" base_Enumeration="_xFGI8JYLEeGdw75A0B2buQ"/>
   <term:CodeSystemVersion xmi:id="_0Hx20JYLEeGdw75A0B2buQ" identifier="locally defined" source="Study Sponsor" base_Enumeration="_0HxPwJYLEeGdw75A0B2buQ"/>
-  <term:CodeSystemVersion xmi:id="_2y1H0JYLEeGdw75A0B2buQ" identifier="locally defined" source="Study Sponsor" base_Enumeration="_2y0gwJYLEeGdw75A0B2buQ"/>
+  <term:CodeSystemVersion xmi:id="_2y1H0JYLEeGdw75A0B2buQ" identifier="unknown" source="Study Sponsor" base_Enumeration="_2y0gwJYLEeGdw75A0B2buQ"/>
   <term:CodeSystemVersion xmi:id="_5HMXIJYLEeGdw75A0B2buQ" identifier="locally defined" source="Study Sponsor" base_Enumeration="_5HLwEJYLEeGdw75A0B2buQ"/>
   <term:CodeSystemVersion xmi:id="_7hIC8JYLEeGdw75A0B2buQ" identifier="locally defined" source="Study Sponsor" base_Enumeration="_7hHb4JYLEeGdw75A0B2buQ"/>
   <term:CodeSystemVersion xmi:id="_BX5pEJYMEeGdw75A0B2buQ" identifier="locally defined" source="Study Sponsor" base_Enumeration="_BX5CAJYMEeGdw75A0B2buQ"/>
-  <term:CodeSystemVersion xmi:id="_DUqQsJYMEeGdw75A0B2buQ" identifier="locally defined" source="Study Sponsor" base_Enumeration="_DUppoJYMEeGdw75A0B2buQ"/>
-  <term:CodeSystemVersion xmi:id="_F-_wAJYMEeGdw75A0B2buQ" identifier="locally defined" source="Study Sponsor" base_Enumeration="_F-_I8JYMEeGdw75A0B2buQ"/>
+  <term:CodeSystemVersion xmi:id="_DUqQsJYMEeGdw75A0B2buQ" identifier="unknown" source="Study Sponsor" base_Enumeration="_DUppoJYMEeGdw75A0B2buQ"/>
+  <term:CodeSystemVersion xmi:id="_F-_wAJYMEeGdw75A0B2buQ" identifier="unknown" source="Study Sponsor" base_Enumeration="_F-_I8JYMEeGdw75A0B2buQ"/>
   <term:CodeSystemVersion xmi:id="_LZBvwJYMEeGdw75A0B2buQ" identifier="locally defined" source="Study Sponsor" base_Enumeration="_LZBIsJYMEeGdw75A0B2buQ"/>
   <term:CodeSystemVersion xmi:id="_MMo-AJYMEeGdw75A0B2buQ" identifier="locally defined" source="Study Sponsor" base_Enumeration="_MMoW8JYMEeGdw75A0B2buQ"/>
   <term:CodeSystemVersion xmi:id="_VTXR8JYMEeGdw75A0B2buQ" identifier="locally defined" source="Study Sponsor" base_Enumeration="_VTWq4JYMEeGdw75A0B2buQ"/>
@@ -1113,7 +1388,6 @@
   <term:ValueSetVersion xmi:id="_B5ac4PLhEeGfjrJgpaHCTw" identifier="CXXXXX" source="NCI EVS" url="http://www.cancer.gov/cancertopics/cancerlibrary/terminologyresources/fda" base_Enumeration="_B5Z10PLhEeGfjrJgpaHCTw">
     <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_dWKSsaDqEd-dVeaMP0XXQw"/>
   </term:ValueSetVersion>
-  <term:CodeSystemVersion xmi:id="_KuXO4PLiEeGfjrJgpaHCTw" identifier="unknown" source="Study Sponsor" base_Enumeration="_KuWn0PLiEeGfjrJgpaHCTw"/>
   <term:CodeSystemVersion xmi:id="_Pjn4MfLjEeGfjrJgpaHCTw" identifier="unknown" base_Enumeration="_Pjn4MPLjEeGfjrJgpaHCTw"/>
   <term:CodeSystemVersion xmi:id="_AGOgofLkEeGfjrJgpaHCTw" identifier="unknown" source="Study Sponsor" base_Enumeration="_AGOgoPLkEeGfjrJgpaHCTw"/>
   <term:ValueSetCode xmi:id="_c1lrQPLoEeGMZ4RBIRkmiw" conceptName="Comment" base_EnumerationLiteral="_czbvIPLoEeGMZ4RBIRkmiw"/>
@@ -1146,9 +1420,9 @@
     <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_dWKSsaDqEd-dVeaMP0XXQw"/>
   </term:ValueSetVersion>
   <term:ValueSetCode xmi:id="_iQRu4fODEeGnUIlsvzjovQ" conceptName="Human Clinical Subject Report Document Section" base_EnumerationLiteral="_iQRu4PODEeGnUIlsvzjovQ"/>
-  <term:CodeSystemVersion xmi:id="_57MjsfOREeGPpLm0F8gjDw" identifier="locally defined" base_Enumeration="_57MjsPOREeGPpLm0F8gjDw"/>
+  <term:CodeSystemVersion xmi:id="_57MjsfOREeGPpLm0F8gjDw" identifier="unknown" base_Enumeration="_57MjsPOREeGPpLm0F8gjDw"/>
   <term:ValueSetCode xmi:id="_zFlhUfOSEeGPpLm0F8gjDw" conceptName="Medical History Item" base_EnumerationLiteral="_zFlhUPOSEeGPpLm0F8gjDw"/>
-  <term:CodeSystemVersion xmi:id="_Xl9RgfOUEeGAVMcEFACySg" identifier="locally defined" base_Enumeration="_Xl9RgPOUEeGAVMcEFACySg"/>
+  <term:CodeSystemVersion xmi:id="_Xl9RgfOUEeGAVMcEFACySg" identifier="unknown" base_Enumeration="_Xl9RgPOUEeGAVMcEFACySg"/>
   <term:ValueSetVersion xmi:id="_qkeNIfOYEeGAVMcEFACySg" identifier="CXXXXX" source="NCI EVS" url="http://www.cancer.gov/cancertopics/cancerlibrary/terminologyresources/fda" base_Enumeration="_qkeNIPOYEeGAVMcEFACySg">
     <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_dWKSsaDqEd-dVeaMP0XXQw"/>
   </term:ValueSetVersion>
@@ -1182,8 +1456,8 @@
   <term:ValueSetVersion xmi:id="_phDEcvOcEeGAVMcEFACySg" identifier="CXXXXX" source="NCI EVS" url="http://www.cancer.gov/cancertopics/cancerlibrary/terminologyresources/fda" base_Enumeration="_phDEcPOcEeGAVMcEFACySg">
     <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_dWKSsaDqEd-dVeaMP0XXQw"/>
   </term:ValueSetVersion>
-  <term:CodeSystemVersion xmi:id="_EH4HMPOfEeGJhPNoqwaI2Q" identifier="locally defined" base_Enumeration="_EHuWMPOfEeGJhPNoqwaI2Q"/>
-  <term:CodeSystemVersion xmi:id="_GhvFEvOgEeGJhPNoqwaI2Q" identifier="locally defined" base_Enumeration="_GhvFEPOgEeGJhPNoqwaI2Q"/>
+  <term:CodeSystemVersion xmi:id="_EH4HMPOfEeGJhPNoqwaI2Q" identifier="unknonw" base_Enumeration="_EHuWMPOfEeGJhPNoqwaI2Q"/>
+  <term:CodeSystemVersion xmi:id="_GhvFEvOgEeGJhPNoqwaI2Q" identifier="unknown" base_Enumeration="_GhvFEPOgEeGJhPNoqwaI2Q"/>
   <term:ValueSetVersion xmi:id="_33kEwfOhEeGJhPNoqwaI2Q" identifier="C71148" source="NCI EVS" url="http://www.cancer.gov/cancertopics/cancerlibrary/terminologyresources/fda" base_Enumeration="_33kEwPOhEeGJhPNoqwaI2Q">
     <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_dWKSsaDqEd-dVeaMP0XXQw"/>
   </term:ValueSetVersion>
@@ -1229,7 +1503,7 @@
   <term:ValueSetVersion xmi:id="__HpXcvOyEeGaaIebpy5xoQ" identifier="CXXXXX" source="NCI EVS" url="http://www.cancer.gov/cancertopics/cancerlibrary/terminologyresources/fda" base_Enumeration="__HpXcPOyEeGaaIebpy5xoQ">
     <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_dWKSsaDqEd-dVeaMP0XXQw"/>
   </term:ValueSetVersion>
-  <term:CodeSystemVersion xmi:id="_P7wYYvO0EeGaaIebpy5xoQ" identifier="locally defined" source="Study Sponsor" base_Enumeration="_P7wYYPO0EeGaaIebpy5xoQ"/>
+  <term:CodeSystemVersion xmi:id="_P7wYYvO0EeGaaIebpy5xoQ" identifier="unknown" source="Study Sponsor" base_Enumeration="_P7wYYPO0EeGaaIebpy5xoQ"/>
   <term:ValueSetVersion xmi:id="_osfHGfO0EeGaaIebpy5xoQ" identifier="CXXXXX" source="NCI EVS" url="http://www.cancer.gov/cancertopics/cancerlibrary/terminologyresources/fda" base_Enumeration="_osfHEPO0EeGaaIebpy5xoQ">
     <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_dWKSsaDqEd-dVeaMP0XXQw"/>
   </term:ValueSetVersion>
@@ -1252,6 +1526,71 @@
   </term:ValueSetCode>
   <term:ValueSetVersion xmi:id="_mHU64PkTEeGwf5s3BarCgA" identifier="locally defined" codeSystem="_ag4VMZVHEeGtdYJw1d93Dg" base_Enumeration="_mFPQMPkTEeGwf5s3BarCgA"/>
   <term:ValueSetVersion xmi:id="_dDcDEfkUEeGwf5s3BarCgA" identifier="locally defined" codeSystem="_AGOgofLkEeGfjrJgpaHCTw" base_Enumeration="_dDcDEPkUEeGwf5s3BarCgA"/>
-  <term:ValueSetVersion xmi:id="_CHx4cfkVEeGwf5s3BarCgA" identifier="locally defined" codeSystem="_KuXO4PLiEeGfjrJgpaHCTw" base_Enumeration="_CHx4cPkVEeGwf5s3BarCgA"/>
+  <term:ValueSetVersion xmi:id="_CHx4cfkVEeGwf5s3BarCgA" identifier="locally defined" codeSystem="_puhLoAcXEeK8TPFCLDEqWg" base_Enumeration="_CHx4cPkVEeGwf5s3BarCgA"/>
   <term:ValueSetVersion xmi:id="_qnqq0PkZEeGRIL1cFfwcSA" identifier="locally defined" codeSystem="_Pjn4MfLjEeGfjrJgpaHCTw" base_Enumeration="_qmLdEPkZEeGRIL1cFfwcSA"/>
+  <term:ValueSetVersion xmi:id="_VlvyMPt0EeGWtfGeOC8AcQ" identifier="localy defined" codeSystem="_YUD2EJX8EeGdw75A0B2buQ" base_Enumeration="_Vj0fkPt0EeGWtfGeOC8AcQ"/>
+  <term:ValueSetVersion xmi:id="_8J5Ncft0EeGWtfGeOC8AcQ" identifier="locally defined" codeSystem="_lxYW0JX8EeGdw75A0B2buQ" base_Enumeration="_8J5NcPt0EeGWtfGeOC8AcQ"/>
+  <term:ValueSetVersion xmi:id="_6F2nMft2EeGWtfGeOC8AcQ" identifier="locally defined" codeSystem="_bc178PNyEeGryoymXliRnA" base_Enumeration="_6F2nMPt2EeGWtfGeOC8AcQ"/>
+  <term:CodeSystemVersion xmi:id="_Zq0dcfuxEeGWtfGeOC8AcQ" identifier="locally defined" base_Enumeration="_Zq0dcPuxEeGWtfGeOC8AcQ"/>
+  <term:ValueSetVersion xmi:id="_SKBJAfuyEeGWtfGeOC8AcQ" identifier="locally defined" codeSystem="_8iPFMJYMEeGdw75A0B2buQ" base_Enumeration="_SKBJAPuyEeGWtfGeOC8AcQ"/>
+  <term:ValueSetVersion xmi:id="_rJzNQQDJEeK4gc3J2D9_Cg" identifier="locally defined" codeSystem="_9TgxIJYMEeGdw75A0B2buQ" base_Enumeration="_rJzNQADJEeK4gc3J2D9_Cg"/>
+  <term:ValueSetVersion xmi:id="_-RKfsQDJEeK4gc3J2D9_Cg" identifier="locally defined" codeSystem="_GQ-1sJX9EeGdw75A0B2buQ" base_Enumeration="_-RKfsADJEeK4gc3J2D9_Cg"/>
+  <term:ValueSetVersion xmi:id="_F_1bkQDKEeK4gc3J2D9_Cg" identifier="locally defined" codeSystem="_KZe8IJX9EeGdw75A0B2buQ" base_Enumeration="_F_1bkADKEeK4gc3J2D9_Cg"/>
+  <term:ValueSetVersion xmi:id="_OnfN4QDKEeK4gc3J2D9_Cg" identifier="locally defined" codeSystem="_s-CXgJYMEeGdw75A0B2buQ" base_Enumeration="_OnfN4ADKEeK4gc3J2D9_Cg"/>
+  <term:ValueSetVersion xmi:id="_l_QlkQDKEeK4gc3J2D9_Cg" identifier="locally defined" codeSystem="_ucVhgJYMEeGdw75A0B2buQ" base_Enumeration="_l_QlkADKEeK4gc3J2D9_Cg"/>
+  <term:ValueSetVersion xmi:id="_wx3MgQDKEeK4gc3J2D9_Cg" identifier="locally defined" base_Enumeration="_wx3MgADKEeK4gc3J2D9_Cg"/>
+  <term:ValueSetVersion xmi:id="_RPfVcQDLEeK4gc3J2D9_Cg" identifier="locally defined" codeSystem="_1sD-8JYJEeGdw75A0B2buQ" base_Enumeration="_RPfVcADLEeK4gc3J2D9_Cg"/>
+  <term:ValueSetVersion xmi:id="_jh4uwQDLEeK4gc3J2D9_Cg" identifier="locally defined" codeSystem="_uYsfAZYJEeGdw75A0B2buQ" base_Enumeration="_jh4uwADLEeK4gc3J2D9_Cg"/>
+  <term:ValueSetVersion xmi:id="_t40tYQDLEeK4gc3J2D9_Cg" identifier="locally defined" codeSystem="_1zUwcJX8EeGdw75A0B2buQ" base_Enumeration="_t40tYADLEeK4gc3J2D9_Cg"/>
+  <term:ValueSetVersion xmi:id="_hedpAQDMEeK4gc3J2D9_Cg" identifier="locally defined" codeSystem="__hRwkJYJEeGdw75A0B2buQ" base_Enumeration="_hedpAADMEeK4gc3J2D9_Cg"/>
+  <term:ValueSetVersion xmi:id="_oxw3gQDMEeK4gc3J2D9_Cg" identifier="locally defined" codeSystem="_4ZDUMJYKEeGdw75A0B2buQ" base_Enumeration="_oxw3gADMEeK4gc3J2D9_Cg"/>
+  <term:ValueSetVersion xmi:id="_1dKzIQDMEeK4gc3J2D9_Cg" identifier="locally defined" codeSystem="_57MjsfOREeGPpLm0F8gjDw" base_Enumeration="_1dKzIADMEeK4gc3J2D9_Cg"/>
+  <term:ValueSetVersion xmi:id="_IPtFEQDNEeK4gc3J2D9_Cg" identifier="locally defined" codeSystem="_JiooIJYHEeGdw75A0B2buQ" base_Enumeration="_IPtFEADNEeK4gc3J2D9_Cg"/>
+  <term:ValueSetVersion xmi:id="_YFmmwQDNEeK4gc3J2D9_Cg" identifier="locally defined" codeSystem="_mUHPcJYHEeGdw75A0B2buQ" base_Enumeration="_YFmmwADNEeK4gc3J2D9_Cg"/>
+  <term:ValueSetVersion xmi:id="_gcIz4QDNEeK4gc3J2D9_Cg" identifier="locally defined" codeSystem="_q9428JYHEeGdw75A0B2buQ" base_Enumeration="_gcIz4ADNEeK4gc3J2D9_Cg"/>
+  <term:ValueSetVersion xmi:id="_tXw80QDNEeK4gc3J2D9_Cg" identifier="locally defined" codeSystem="_qzQ8UJX8EeGdw75A0B2buQ" base_Enumeration="_tXw80ADNEeK4gc3J2D9_Cg"/>
+  <term:ValueSetVersion xmi:id="_5xxmcQDNEeK4gc3J2D9_Cg" identifier="locally defined" codeSystem="_OWn7kJYHEeGdw75A0B2buQ" base_Enumeration="_5xxmcADNEeK4gc3J2D9_Cg"/>
+  <term:ValueSetVersion xmi:id="_hIzQIQDOEeK4gc3J2D9_Cg" identifier="locally defined" codeSystem="_s0HVwPLuEeGMZ4RBIRkmiw" base_Enumeration="_hIzQIADOEeK4gc3J2D9_Cg"/>
+  <term:ValueSetVersion xmi:id="_tI6zEQDOEeK4gc3J2D9_Cg" identifier="locally defined" codeSystem="_qzQ8UJX8EeGdw75A0B2buQ" base_Enumeration="_tI6zEADOEeK4gc3J2D9_Cg"/>
+  <term:ValueSetVersion xmi:id="_7T2AsQDOEeK4gc3J2D9_Cg" identifier="locally defined" codeSystem="_5HMXIJYLEeGdw75A0B2buQ" base_Enumeration="_7T2AsADOEeK4gc3J2D9_Cg"/>
+  <term:ValueSetVersion xmi:id="_DaeJkQDPEeK4gc3J2D9_Cg" identifier="locally defined" codeSystem="_7hIC8JYLEeGdw75A0B2buQ" base_Enumeration="_DaeJkADPEeK4gc3J2D9_Cg"/>
+  <term:ValueSetVersion xmi:id="_NirIoQDPEeK4gc3J2D9_Cg" identifier="locally defined" codeSystem="_2y1H0JYLEeGdw75A0B2buQ" base_Enumeration="_NirIoADPEeK4gc3J2D9_Cg"/>
+  <term:ValueSetVersion xmi:id="_S0k3YQDgEeK4gc3J2D9_Cg" identifier="locally defined" codeSystem="_DUqQsJYMEeGdw75A0B2buQ" base_Enumeration="_S0k3YADgEeK4gc3J2D9_Cg"/>
+  <term:ValueSetVersion xmi:id="_sv2GkQDgEeK4gc3J2D9_Cg" identifier="locally defined" codeSystem="_F-_wAJYMEeGdw75A0B2buQ" base_Enumeration="_sv2GkADgEeK4gc3J2D9_Cg"/>
+  <term:ValueSetVersion xmi:id="_DFH0kQDjEeK4gc3J2D9_Cg" identifier="locally defined" codeSystem="_BX5pEJYMEeGdw75A0B2buQ" base_Enumeration="_DFH0kADjEeK4gc3J2D9_Cg"/>
+  <term:ValueSetVersion xmi:id="_Z3Z5kQDjEeK4gc3J2D9_Cg" identifier="locally defined" codeSystem="_Xl9RgfOUEeGAVMcEFACySg" base_Enumeration="_Z3Z5kADjEeK4gc3J2D9_Cg"/>
+  <term:ValueSetVersion xmi:id="_e-rUYADuEeK4gc3J2D9_Cg" identifier="locally defined" codeSystem="_EH4HMPOfEeGJhPNoqwaI2Q" base_Enumeration="_e-iKcADuEeK4gc3J2D9_Cg"/>
+  <term:ValueSetVersion xmi:id="_4ODt8QDuEeK4gc3J2D9_Cg" identifier="locally defined" codeSystem="_GhvFEvOgEeGJhPNoqwaI2Q" base_Enumeration="_4ODt8ADuEeK4gc3J2D9_Cg"/>
+  <term:ValueSetVersion xmi:id="_VlrycQDzEeK4gc3J2D9_Cg" identifier="locally defined" codeSystem="_MMo-AJYMEeGdw75A0B2buQ" base_Enumeration="_VlrycADzEeK4gc3J2D9_Cg"/>
+  <term:ValueSetVersion xmi:id="_gp_0cQDzEeK4gc3J2D9_Cg" identifier="locally defined" codeSystem="_VTXR8JYMEeGdw75A0B2buQ" base_Enumeration="_gp_0cADzEeK4gc3J2D9_Cg"/>
+  <term:ValueSetVersion xmi:id="_y5RoUQDzEeK4gc3J2D9_Cg" identifier="locally defined" codeSystem="_LZBvwJYMEeGdw75A0B2buQ" base_Enumeration="_y5RoUADzEeK4gc3J2D9_Cg"/>
+  <term:ValueSetVersion xmi:id="_EqpYMQD0EeK4gc3J2D9_Cg" identifier="locally defined" codeSystem="_ZpFVAJYMEeGdw75A0B2buQ" base_Enumeration="_EqpYMAD0EeK4gc3J2D9_Cg"/>
+  <term:ValueSetVersion xmi:id="_tw0EQQD0EeK4gc3J2D9_Cg" identifier="locally defined" codeSystem="_cD0SEJYMEeGdw75A0B2buQ" base_Enumeration="_tw0EQAD0EeK4gc3J2D9_Cg"/>
+  <term:ValueSetVersion xmi:id="__fzOgQD0EeK4gc3J2D9_Cg" identifier="locally defined" codeSystem="_JCd9gJYLEeGdw75A0B2buQ" base_Enumeration="__fzOgAD0EeK4gc3J2D9_Cg"/>
+  <term:ValueSetVersion xmi:id="_ZSgBcAD-EeK4gc3J2D9_Cg" identifier="locally defined" codeSystem="_LWcLQJYLEeGdw75A0B2buQ" base_Enumeration="_ZSfaYAD-EeK4gc3J2D9_Cg"/>
+  <term:ValueSetVersion xmi:id="_i6PXwQD-EeK4gc3J2D9_Cg" identifier="locally defined" codeSystem="_GdvW8JYLEeGdw75A0B2buQ" base_Enumeration="_i6PXwAD-EeK4gc3J2D9_Cg"/>
+  <term:ValueSetVersion xmi:id="_rqFnUAD_EeK4gc3J2D9_Cg" identifier="locally defined" codeSystem="_mU2ScJYLEeGdw75A0B2buQ" base_Enumeration="_rqFAQAD_EeK4gc3J2D9_Cg"/>
+  <term:ValueSetVersion xmi:id="_4MYqQAD_EeK4gc3J2D9_Cg" identifier="locally defined" codeSystem="_nzSmYJYLEeGdw75A0B2buQ" base_Enumeration="_4MYDMAD_EeK4gc3J2D9_Cg"/>
+  <term:ValueSetVersion xmi:id="_AaSf0AEAEeK4gc3J2D9_Cg" identifier="locally defined" codeSystem="_qAv8cJYLEeGdw75A0B2buQ" base_Enumeration="_AaR4wAEAEeK4gc3J2D9_Cg"/>
+  <term:ValueSetVersion xmi:id="_gLK3gAEAEeK4gc3J2D9_Cg" identifier="locally defined" codeSystem="_iXYAAJX6EeGdw75A0B2buQ" base_Enumeration="_gLKQcAEAEeK4gc3J2D9_Cg"/>
+  <term:ValueSetVersion xmi:id="_Cmc_8AEBEeK4gc3J2D9_Cg" identifier="locally defined" codeSystem="_z4E2wvOpEeG_bsiW5N1Utg" base_Enumeration="_CmcY4AEBEeK4gc3J2D9_Cg"/>
+  <term:ValueSetVersion xmi:id="_VAeEMAEBEeK4gc3J2D9_Cg" identifier="locally defined" codeSystem="_xFGwAJYLEeGdw75A0B2buQ" base_Enumeration="_VAddIAEBEeK4gc3J2D9_Cg"/>
+  <term:ValueSetVersion xmi:id="_bWiOYAEBEeK4gc3J2D9_Cg" identifier="locally defined" codeSystem="_0Hx20JYLEeGdw75A0B2buQ" base_Enumeration="_bWhnUAEBEeK4gc3J2D9_Cg"/>
+  <term:ValueSetVersion xmi:id="_pJLe4AEBEeK4gc3J2D9_Cg" identifier="locally defined" codeSystem="_qSp30fOtEeG_bsiW5N1Utg" base_Enumeration="_pJK30AEBEeK4gc3J2D9_Cg"/>
+  <term:ValueSetVersion xmi:id="_0JBQkAEBEeK4gc3J2D9_Cg" identifier="locally defined" codeSystem="_NI3PgfLvEeGMZ4RBIRkmiw" base_Enumeration="_0JApgAEBEeK4gc3J2D9_Cg"/>
+  <term:ValueSetVersion xmi:id="_8fBSMAEBEeK4gc3J2D9_Cg" identifier="locally defined" codeSystem="_ZFKGYZX9EeGdw75A0B2buQ" base_Enumeration="_8fArIAEBEeK4gc3J2D9_Cg"/>
+  <term:ValueSetVersion xmi:id="_-vSrsAEBEeK4gc3J2D9_Cg" identifier="locally defined" codeSystem="_U5n6EJX9EeGdw75A0B2buQ" base_Enumeration="_-vSEoAEBEeK4gc3J2D9_Cg"/>
+  <term:ValueSetVersion xmi:id="_Th67MAEEEeKPvvOEne9fuA" identifier="locally defined" codeSystem="_597hEvOxEeGaaIebpy5xoQ" base_Enumeration="_Tb_SUAEEEeKPvvOEne9fuA"/>
+  <term:ValueSetVersion xmi:id="_ywXUMAEEEeKPvvOEne9fuA" identifier="locally defined" codeSystem="_P7wYYvO0EeGaaIebpy5xoQ" base_Enumeration="_ywWtIAEEEeKPvvOEne9fuA"/>
+  <term:CodeSystemVersion xmi:id="_puhLoAcXEeK8TPFCLDEqWg" base_Enumeration="_pt7VwAcXEeK8TPFCLDEqWg"/>
+  <term:ValueSetVersion xmi:id="_Z-WMkQcZEeK8TPFCLDEqWg" codeSystem="_puhLoAcXEeK8TPFCLDEqWg" base_Enumeration="_Z-WMkAcZEeK8TPFCLDEqWg"/>
+  <term:ValueSetCode xmi:id="_19R8oQcZEeK8TPFCLDEqWg" conceptName="Clinical Event" base_EnumerationLiteral="_19R8oAcZEeK8TPFCLDEqWg">
+    <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_dWKSsaDqEd-dVeaMP0XXQw"/>
+  </term:ValueSetCode>
+  <term:ValueSetCode xmi:id="_PbUfAA72EeKrbYFhvTKJGw" conceptName="Set Membership" base_EnumerationLiteral="_PX5XkA72EeKrbYFhvTKJGw">
+    <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_dWKSsaDqEd-dVeaMP0XXQw"/>
+  </term:ValueSetCode>
+  <term:ValueSetCode xmi:id="_nGOlYQ8HEeKrbYFhvTKJGw" conceptName="Malignancy Status" base_EnumerationLiteral="_nGOlYA8HEeKrbYFhvTKJGw">
+    <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_dWKSsaDqEd-dVeaMP0XXQw"/>
+  </term:ValueSetCode>
 </xmi:XMI>
