@@ -106,13 +106,13 @@ and/or laterality within the subject [SEND: LBANTREG, LBLAT, LBDIR, MAANTREG, MA
 </tbody></tgroup></table></p></section>
 <codeblock id="example"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
 <procedure xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd">
-  <id root="719397946" extension="MDHT"/>
-  <code code="667495461"/>
+  <id root="1054972028" extension="MDHT"/>
+  <code code="1956317775"/>
   <effectiveTime>
     <low value="2012"/>
     <high value="2012"/>
   </effectiveTime>
-  <targetSiteCode code="1574332437"/>
+  <targetSiteCode code="1035981497"/>
   <specimen typeCode="SPC">
     <templateId root="null"/>
     <specimenRole classCode="SPEC"/>
@@ -134,19 +134,19 @@ and/or laterality within the subject [SEND: LBANTREG, LBLAT, LBDIR, MAANTREG, MA
   </entryRelationship>
   <entryRelationship>
     <observation>
-      <id root="536832528" extension="MDHT"/>
-      <code code="691921644"/>
+      <id root="1566386046" extension="MDHT"/>
+      <code code="1515353975"/>
       <effectiveTime>
         <low value="2012"/>
         <high value="2012"/>
       </effectiveTime>
-      <targetSiteCode code="1517695482"/>
+      <targetSiteCode code="1163920787"/>
     </observation>
   </entryRelationship>
   <entryRelationship>
     <act>
       <templateId root="2.16.840.1.113883.10.20.23.97"/>
-      <id root="1319200527" extension="MDHT"/>
+      <id root="904944967" extension="MDHT"/>
       <code codeSystem="2.16.840.1.113883.3.26.1.1"/>
       <effectiveTime>
         <low value="2012"/>

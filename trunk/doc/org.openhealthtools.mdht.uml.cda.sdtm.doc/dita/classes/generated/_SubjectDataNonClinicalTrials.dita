@@ -120,13 +120,13 @@
   <realmCode code="Code forrealmCode"/>
   <typeId root="2.16.840.1.113883.1.3"/>
   <templateId root="2.16.840.1.113883.10.20.23.12"/>
-  <id root="460651709" extension="MDHT"/>
+  <id root="1528697046" extension="MDHT"/>
   <code code="TBD" codeSystem="2.16.840.1.113883.6.1"/>
   <title>TEXT FOR TITLE</title>
   <effectiveTime/>
   <confidentialityCode codeSystem="2.16.840.1.113883.5.25" codeSystemName="Confidentiality"/>
   <languageCode code="Code forlanguageCode"/>
-  <setId root="fb560b12-6363-4b78-a60b-8517fb8d6a76" extension="MDHT"/>
+  <setId root="fc36e00d-ad31-459d-84e6-eb6a6c34a2fa" extension="MDHT"/>
   <versionNumber value="1"/>
   <recordTarget typeCode="RCT">
     <patientRole classCode="PAT"/>

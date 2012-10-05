@@ -152,8 +152,8 @@
 <codeblock id="example"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
 <act xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd" classCode="ACT" moodCode="EVN">
   <templateId root="2.16.840.1.113883.10.20.23.43"/>
-  <id root="1957241646" extension="MDHT"/>
-  <code code="309701012"/>
+  <id root="1777350644" extension="MDHT"/>
+  <code code="173935051"/>
   <effectiveTime>
     <low value="2012"/>
     <high value="2012"/>
@@ -161,7 +161,7 @@
   <entryRelationship>
     <act>
       <templateId root="2.16.840.1.113883.10.20.23.83"/>
-      <id root="447475106" extension="MDHT"/>
+      <id root="290921965" extension="MDHT"/>
       <code codeSystem="locally defined" codeSystemName="Study Epoch Type"/>
       <effectiveTime>
         <low value="2012"/>
@@ -172,7 +172,7 @@
   <entryRelationship>
     <act classCode="ACT">
       <templateId root="2.16.840.1.113883.10.20.23.42"/>
-      <id root="252510021" extension="MDHT"/>
+      <id root="825913146" extension="MDHT"/>
       <code code="C83204" codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="NCI Thesaurus"/>
       <effectiveTime>
         <low value="2012"/>
@@ -182,8 +182,8 @@
   </entryRelationship>
   <entryRelationship>
     <observation>
-      <id root="1816093510" extension="MDHT"/>
-      <code code="385118028"/>
+      <id root="788671197" extension="MDHT"/>
+      <code code="1098908083"/>
       <effectiveTime>
         <low value="2012"/>
         <high value="2012"/>
@@ -193,7 +193,7 @@
   <entryRelationship>
     <observation classCode="OBS" moodCode="EVN">
       <templateId root="2.16.840.1.113883.10.20.23.23"/>
-      <id root="1025024009" extension="MDHT"/>
+      <id root="97396133" extension="MDHT"/>
       <code code="C49569" codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="NCI Thesaurus"/>
       <effectiveTime>
         <low value="2012"/>
@@ -206,7 +206,7 @@
   <entryRelationship>
     <observation>
       <templateId root="2.16.840.1.113883.10.20.23.30"/>
-      <id root="951821225" extension="MDHT"/>
+      <id root="408885091" extension="MDHT"/>
       <code code="C66734" codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="NCI Thesaurus"/>
       <effectiveTime>
         <low value="2012"/>
@@ -217,7 +217,7 @@
   <entryRelationship>
     <act classCode="ACT">
       <templateId root="2.16.840.1.113883.10.20.23.75"/>
-      <id root="395499510" extension="MDHT"/>
+      <id root="779842454" extension="MDHT"/>
       <code codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="NCI Thesaurus"/>
       <effectiveTime>
         <low value="2012"/>
@@ -228,7 +228,7 @@
   <entryRelationship>
     <observation classCode="OBS" moodCode="EVN">
       <templateId root="2.16.840.1.113883.10.20.23.96"/>
-      <id root="306220845" extension="MDHT"/>
+      <id root="1882333885" extension="MDHT"/>
       <code codeSystem="locally defined" codeSystemName="Supplemental Value Type"/>
       <effectiveTime>
         <low value="2012"/>
@@ -241,7 +241,7 @@
   <entryRelationship>
     <observation classCode="OBS" moodCode="EVN">
       <templateId root="2.16.840.1.113883.10.20.23.20"/>
-      <id root="2023185895" extension="MDHT"/>
+      <id root="1673030617" extension="MDHT"/>
       <code codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="NCI Thesaurus"/>
       <effectiveTime>
         <low value="2012"/>
@@ -254,8 +254,8 @@
   </entryRelationship>
   <entryRelationship>
     <observation>
-      <id root="1300134340" extension="MDHT"/>
-      <code code="2115177928"/>
+      <id root="719099224" extension="MDHT"/>
+      <code code="673475715"/>
       <effectiveTime>
         <low value="2012"/>
         <high value="2012"/>

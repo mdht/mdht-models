@@ -65,13 +65,13 @@
 <codeblock id="example"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
 <observation xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd">
   <templateId root="2.16.840.1.113883.10.20.23.80"/>
-  <id root="2029354948" extension="MDHT"/>
+  <id root="256739825" extension="MDHT"/>
   <code codeSystem="2.16.840.1.113883.3.26.1.1"/>
   <effectiveTime>
     <low value="2012"/>
     <high value="2012"/>
   </effectiveTime>
-  <value xsi:type="CD" code="747426575"/>
+  <value xsi:type="CD" code="1761273807"/>
 </observation>]]></codeblock>
 <section id="changes">
 </section>

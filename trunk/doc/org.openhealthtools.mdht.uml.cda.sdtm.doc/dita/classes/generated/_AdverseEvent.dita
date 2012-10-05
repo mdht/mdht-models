@@ -293,18 +293,18 @@
 <codeblock id="example"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
 <observation xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd">
   <templateId root="2.16.840.1.113883.10.20.23.15"/>
-  <id root="819148237" extension="MDHT"/>
+  <id root="685838614" extension="MDHT"/>
   <code codeSystem="2.16.840.1.113883.3.26.1.1" displayName="Adverse Event - Reported"/>
   <effectiveTime>
     <low value="2012"/>
     <high value="2012"/>
   </effectiveTime>
-  <value xsi:type="CD" code="677543207"/>
-  <targetSiteCode code="637583971"/>
+  <value xsi:type="CD" code="557663684"/>
+  <targetSiteCode code="471412329"/>
   <entryRelationship>
     <act classCode="ACT">
       <templateId root="2.16.840.1.113883.10.20.23.42"/>
-      <id root="31778671" extension="MDHT"/>
+      <id root="2135754594" extension="MDHT"/>
       <code code="C83204" codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="NCI Thesaurus"/>
       <effectiveTime>
         <low value="2012"/>
@@ -323,40 +323,40 @@
   </entryRelationship>
   <entryRelationship>
     <observation>
-      <id root="1410647429" extension="MDHT"/>
-      <code code="421907586"/>
+      <id root="1684297887" extension="MDHT"/>
+      <code code="737031205"/>
       <effectiveTime>
         <low value="2012"/>
         <high value="2012"/>
       </effectiveTime>
       <value xsi:type="IVL_INT" value="1"/>
-      <targetSiteCode code="1814777409"/>
+      <targetSiteCode code="1560761884"/>
     </observation>
   </entryRelationship>
   <entryRelationship>
     <observation>
       <templateId root="2.16.840.1.113883.10.20.23.30"/>
-      <id root="1185306672" extension="MDHT"/>
+      <id root="1696641407" extension="MDHT"/>
       <code code="C66734" codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="NCI Thesaurus"/>
       <effectiveTime>
         <low value="2012"/>
         <high value="2012"/>
       </effectiveTime>
-      <value xsi:type="CD" code="650030931"/>
-      <targetSiteCode code="1447236268"/>
+      <value xsi:type="CD" code="406194920"/>
+      <targetSiteCode code="197172745"/>
     </observation>
   </entryRelationship>
   <entryRelationship>
     <observation classCode="OBS" moodCode="EVN">
       <templateId root="2.16.840.1.113883.10.20.23.23"/>
-      <id root="1163317121" extension="MDHT"/>
+      <id root="186051350" extension="MDHT"/>
       <code code="C49569" codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="NCI Thesaurus"/>
       <effectiveTime>
         <low value="2012"/>
         <high value="2012"/>
       </effectiveTime>
       <value xsi:type="ED">Text Value</value>
-      <targetSiteCode code="2069070707"/>
+      <targetSiteCode code="869453775"/>
       <participant/>
       <entryRelationship/>
     </observation>
@@ -364,7 +364,7 @@
   <entryRelationship>
     <act classCode="ACT">
       <templateId root="2.16.840.1.113883.10.20.23.75"/>
-      <id root="1973075387" extension="MDHT"/>
+      <id root="733439961" extension="MDHT"/>
       <code codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="NCI Thesaurus"/>
       <effectiveTime>
         <low value="2012"/>
@@ -375,13 +375,13 @@
   <entryRelationship>
     <observation classCode="OBS" moodCode="EVN">
       <templateId root="2.16.840.1.113883.10.20.23.96"/>
-      <id root="879240458" extension="MDHT"/>
+      <id root="843702009" extension="MDHT"/>
       <code codeSystem="locally defined" codeSystemName="Supplemental Value Type"/>
       <effectiveTime>
         <low value="2012"/>
         <high value="2012"/>
       </effectiveTime>
-      <targetSiteCode code="1322852124"/>
+      <targetSiteCode code="119278172"/>
       <participant/>
       <entryRelationship typeCode="COMP"/>
     </observation>
@@ -394,53 +394,53 @@
   </entryRelationship>
   <entryRelationship>
     <observation>
-      <id root="917585448" extension="MDHT"/>
-      <code code="1447757718"/>
+      <id root="1543388226" extension="MDHT"/>
+      <code code="702193416"/>
       <effectiveTime>
         <low value="2012"/>
         <high value="2012"/>
       </effectiveTime>
       <value xsi:type="BL"/>
-      <targetSiteCode code="2054869093"/>
+      <targetSiteCode code="442094348"/>
       <entryRelationship typeCode="COMP"/>
     </observation>
   </entryRelationship>
   <entryRelationship>
     <observation classCode="OBS" moodCode="EVN">
       <templateId root="2.16.840.1.113883.10.20.23.89"/>
-      <id root="2001158882" extension="MDHT"/>
+      <id root="1343169654" extension="MDHT"/>
       <code code="C66767" codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="NCI Thesaurus"/>
       <effectiveTime>
         <low value="2012"/>
         <high value="2012"/>
       </effectiveTime>
-      <value xsi:type="CD" code="937856925"/>
-      <targetSiteCode code="1048905911"/>
+      <value xsi:type="CD" code="1529623608"/>
+      <targetSiteCode code="1976970761"/>
     </observation>
   </entryRelationship>
   <entryRelationship>
     <observation classCode="OBS">
       <templateId root="2.16.840.1.113883.10.20.23.63"/>
-      <id root="1878988342" extension="MDHT"/>
+      <id root="1668860167" extension="MDHT"/>
       <code code="OATtbd" codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="NCI Thesaurus"/>
       <effectiveTime>
         <low value="2012"/>
         <high value="2012"/>
       </effectiveTime>
       <value xsi:type="ED">Text Value</value>
-      <targetSiteCode code="1666979910"/>
+      <targetSiteCode code="1148806933"/>
     </observation>
   </entryRelationship>
   <entryRelationship>
     <observation>
-      <id root="1588328468" extension="MDHT"/>
+      <id root="2078502648" extension="MDHT"/>
       <code codeSystem="2.16.840.1.113883.3.26.1.1"/>
       <effectiveTime>
         <low value="2012"/>
         <high value="2012"/>
       </effectiveTime>
-      <value xsi:type="CD" code="1529163696"/>
-      <targetSiteCode code="1023541768"/>
+      <value xsi:type="CD" code="429854710"/>
+      <targetSiteCode code="1939766160"/>
     </observation>
   </entryRelationship>
   <entryRelationship>
@@ -449,66 +449,66 @@
   <entryRelationship>
     <observation classCode="OBS" moodCode="EVN">
       <templateId root="2.16.840.1.113883.10.20.23.36"/>
-      <id root="1768879494" extension="MDHT"/>
+      <id root="741597935" extension="MDHT"/>
       <code code="C83208" codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="NCI Thesaurus" displayName="Adverse Event Pattern"/>
       <effectiveTime>
         <low value="2012"/>
         <high value="2012"/>
       </effectiveTime>
-      <value xsi:type="CD" code="1597104162"/>
-      <targetSiteCode code="56384283"/>
+      <value xsi:type="CD" code="1397623363"/>
+      <targetSiteCode code="1233219430"/>
     </observation>
   </entryRelationship>
   <entryRelationship>
     <observation>
       <templateId root="2.16.840.1.113883.10.20.23.35"/>
-      <id root="756193146" extension="MDHT"/>
+      <id root="628033799" extension="MDHT"/>
       <code codeSystem="2.16.840.1.113883.3.26.1.1" displayName="Adverse Event Outcome"/>
       <effectiveTime>
         <low value="2012"/>
         <high value="2012"/>
       </effectiveTime>
-      <value xsi:type="CD" code="1146091123"/>
-      <targetSiteCode code="2079773389"/>
+      <value xsi:type="CD" code="1287320736"/>
+      <targetSiteCode code="164908759"/>
     </observation>
   </entryRelationship>
   <entryRelationship>
     <observation>
       <templateId root="2.16.840.1.113883.10.20.25.25"/>
-      <id root="1639975381" extension="MDHT"/>
+      <id root="484975516" extension="MDHT"/>
       <code codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="NCI Thesaurus" displayName="Adverse Event Concommitant Treatment"/>
       <effectiveTime>
         <low value="2012"/>
         <high value="2012"/>
       </effectiveTime>
       <value xsi:type="BL"/>
-      <targetSiteCode code="1622286617"/>
+      <targetSiteCode code="657060549"/>
     </observation>
   </entryRelationship>
   <entryRelationship>
     <observation classCode="OBS" moodCode="EVN">
       <templateId root="2.16.840.1.113883.10.20.23.98"/>
-      <id root="622045481" extension="MDHT"/>
+      <id root="1089217732" extension="MDHT"/>
       <code code="TOtbd" codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="NCI Thesaurus"/>
       <effectiveTime>
         <low value="2012"/>
         <high value="2012"/>
       </effectiveTime>
-      <value xsi:type="CD" code="1982401954"/>
-      <targetSiteCode code="1552815367"/>
+      <value xsi:type="CD" code="1980032028"/>
+      <targetSiteCode code="1183119730"/>
     </observation>
   </entryRelationship>
   <entryRelationship>
     <observation classCode="OBS" moodCode="EVN">
       <templateId root="2.16.840.1.113883.10.20.23.20"/>
-      <id root="97763195" extension="MDHT"/>
+      <id root="534036838" extension="MDHT"/>
       <code codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="NCI Thesaurus"/>
       <effectiveTime>
         <low value="2012"/>
         <high value="2012"/>
       </effectiveTime>
-      <value xsi:type="CD" code="267035064"/>
-      <targetSiteCode code="1748145362"/>
+      <value xsi:type="CD" code="2000550371"/>
+      <targetSiteCode code="378821978"/>
     </observation>
   </entryRelationship>
   <entryRelationship>
@@ -516,13 +516,13 @@
   </entryRelationship>
   <entryRelationship>
     <observation>
-      <id root="1927622743" extension="MDHT"/>
-      <code code="651939534"/>
+      <id root="1110355705" extension="MDHT"/>
+      <code code="1801180171"/>
       <effectiveTime>
         <low value="2012"/>
         <high value="2012"/>
       </effectiveTime>
-      <targetSiteCode code="684459282"/>
+      <targetSiteCode code="95328525"/>
       <participant/>
       <entryRelationship typeCode="REFR"/>
       <entryRelationship>
@@ -560,14 +560,14 @@
   <entryRelationship>
     <observation classCode="OBS" moodCode="EVN">
       <templateId root="2.16.840.1.113883.10.20.23.102"/>
-      <id root="137889355" extension="MDHT"/>
+      <id root="404881887" extension="MDHT"/>
       <code code="EDtbd" codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="NCI Thesaurus"/>
       <effectiveTime>
         <low value="2012"/>
         <high value="2012"/>
       </effectiveTime>
-      <value xsi:type="PQR" code="920047810"/>
-      <targetSiteCode code="658769065"/>
+      <value xsi:type="PQR" code="1858043419"/>
+      <targetSiteCode code="1341424789"/>
     </observation>
   </entryRelationship>
 </observation>]]></codeblock>
