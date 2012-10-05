@@ -114,7 +114,7 @@
   ...
 &lt;/ClinicalDocument&gt;</codeblock>
       </fig>
-      <p>XPath expressions are used in the narrative and conformance requirements to identify elements because they are familiar to many XML implementers.</p>
+     
     </body>
   </topic>
 </topic>
