@@ -12,7 +12,7 @@
 <colspec colname="col2" colwidth="4*"/>
 <tbody>
 <row><entry>Value Set</entry><entry>Question Type</entry></row>
-<row><entry>Description</entry><entry>A list of the different questions that may be included on a questionnaire.
+<row><entry>Description</entry><entry>A list of the different questions that may be included on a questionnaire.  The code system to be used is defined by the study sponsor.
 </entry></row>
 </tbody></tgroup></table>
 </section>

@@ -3,6 +3,7 @@
 <topic id="classId" xml:lang="en-us">
 <title>Disposition Item Type</title>
 <prolog id="prolog">
+<resourceid id="CXXXXX"/>
 </prolog>
 <body>
 <!-- THIS IS GENERATED CONTENT, DO NOT EDIT -->
@@ -11,8 +12,8 @@
 <colspec colname="col1" colwidth="1*"/>
 <colspec colname="col2" colwidth="4*"/>
 <tbody>
-<row><entry>Value Set</entry><entry>Disposition Item Type</entry></row>
-<row><entry>Description</entry><entry>A list of possible types of study subject disposition.
+<row><entry>Value Set</entry><entry>Disposition Item Type - CXXXXX</entry></row>
+<row><entry>Description</entry><entry>A list of possible types of study subject disposition.  Is there an EVS set, or is it sponsor defined?
 </entry></row>
 </tbody></tgroup></table>
 </section>

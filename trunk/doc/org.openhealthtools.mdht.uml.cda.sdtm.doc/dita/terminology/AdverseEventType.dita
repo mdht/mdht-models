@@ -12,7 +12,7 @@
 <colspec colname="col2" colwidth="4*"/>
 <tbody>
 <row><entry>Value Set</entry><entry>Adverse Event Type</entry></row>
-<row><entry>Description</entry><entry>A list of adverse event types.  Use MeDRA as the code system for adverse events.
+<row><entry>Description</entry><entry>The universe of possible adverse events.  The set of concepts is defined as a locally defined, sponsor generated code system.  However, there is a strong case, and perhaps compelling case  for using a generally available clincial vocabulary such as MedDRA or SNOMED.
 </entry></row>
 </tbody></tgroup></table>
 </section>

@@ -3,6 +3,7 @@
 <topic id="classId" xml:lang="en-us">
 <title>Toxicity Measure Type</title>
 <prolog id="prolog">
+<resourceid id="CXXXXX"/>
 </prolog>
 <body>
 <!-- THIS IS GENERATED CONTENT, DO NOT EDIT -->
@@ -11,8 +12,9 @@
 <colspec colname="col1" colwidth="1*"/>
 <colspec colname="col2" colwidth="4*"/>
 <tbody>
-<row><entry>Value Set</entry><entry>Toxicity Measure Type</entry></row>
-<row><entry>Description</entry><entry>A list of the different toxicity scales, e.g., Common Terminology Criteria for Adverse Events (CTCAE),  that could be used to record the toxicity of an event.
+<row><entry>Value Set</entry><entry>Toxicity Measure Type - CXXXXX</entry></row>
+<row><entry>Code System</entry><entry>NCI Thesaurus - 2.16.840.1.113883.3.26.1.1</entry></row>
+<row><entry>Description</entry><entry>A list of the different toxicity scales, e.g., Common Terminology Criteria for Adverse Events (CTCAE),  that could be used to record the toxicity of an event.  IS this in EVS?
 </entry></row>
 </tbody></tgroup></table>
 </section>

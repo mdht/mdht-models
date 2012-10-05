@@ -12,7 +12,7 @@
 <colspec colname="col2" colwidth="4*"/>
 <tbody>
 <row><entry>Value Set</entry><entry>Finding About Object Type</entry></row>
-<row><entry>Description</entry><entry>A list of possible types of object of a findings about observation.  SDTM offers the following examples:  the term (such as Acne) describing a clinical sign or symptom that is being measured by a Severity test, or an event such as VOMIT where the volume of Vomit is being measured by a VOLUME test.
+<row><entry>Description</entry><entry>A list of possible types of object of a findings about observation.  SDTM offers the following examples:  the term (such as Acne) describing a clinical sign or symptom that is being measured by a Severity test, or an event such as VOMIT where the volume of Vomit is being measured by a VOLUME test.  The code system to be used is defined by the study sponsor.
 </entry></row>
 </tbody></tgroup></table>
 </section>
