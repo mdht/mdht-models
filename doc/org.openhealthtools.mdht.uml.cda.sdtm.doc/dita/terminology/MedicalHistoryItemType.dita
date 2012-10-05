@@ -12,7 +12,7 @@
 <colspec colname="col2" colwidth="4*"/>
 <tbody>
 <row><entry>Value Set</entry><entry>Medical History Item Type</entry></row>
-<row><entry>Description</entry><entry>A list of possible items recorded as part of a study subject's medical history
+<row><entry>Description</entry><entry>A list of possible items recorded as part of a study subject's medical history.   The set of concepts is defined as a locally defined, sponsor generated code system.  However, there would be a strong case for using a generally available clincial vocabulary such as SNOMED.
 </entry></row>
 </tbody></tgroup></table>
 </section>

@@ -3,6 +3,7 @@
 <topic id="classId" xml:lang="en-us">
 <title>Pharmacokinetics Parameter Finding Type</title>
 <prolog id="prolog">
+<resourceid id="C85839"/>
 </prolog>
 <body>
 <!-- THIS IS GENERATED CONTENT, DO NOT EDIT -->
@@ -11,8 +12,11 @@
 <colspec colname="col1" colwidth="1*"/>
 <colspec colname="col2" colwidth="4*"/>
 <tbody>
-<row><entry>Value Set</entry><entry>Pharmacokinetics Parameter Finding Type</entry></row>
-<row><entry>Description</entry><entry>A list of categories used for organizing pharmacokinetic parameter findings.
+<row><entry>Value Set</entry><entry>Pharmacokinetics Parameter Finding Type - C85839</entry></row>
+<row><entry>Code System</entry><entry>NCI Thesaurus - 2.16.840.1.113883.3.26.1.1</entry></row>
+<row><entry>Source</entry><entry>NCI EVS</entry></row>
+<row><entry>Source URL</entry><entry>http://www.cancer.gov/cancertopics/cancerlibrary/terminologyresources/fda</entry></row>
+<row><entry>Description</entry><entry>A list of categories used for organizing pharmacokinetic parameter findings.  The code system to be used is defined by the study sponsor.
 </entry></row>
 </tbody></tgroup></table>
 </section>

@@ -3,6 +3,7 @@
 <topic id="classId" xml:lang="en-us">
 <title>Exposure Category</title>
 <prolog id="prolog">
+<resourceid id="locally defined"/>
 </prolog>
 <body>
 <!-- THIS IS GENERATED CONTENT, DO NOT EDIT -->
@@ -11,8 +12,9 @@
 <colspec colname="col1" colwidth="1*"/>
 <colspec colname="col2" colwidth="4*"/>
 <tbody>
-<row><entry>Value Set</entry><entry>Exposure Category</entry></row>
-<row><entry>Description</entry><entry>A list of categories used for organizing exposures.
+<row><entry>Value Set</entry><entry>Exposure Category - locally defined</entry></row>
+<row><entry>Code System</entry><entry>Exposure Category Type - locally defined</entry></row>
+<row><entry>Description</entry><entry>A record of  the list of exposure categories that may be reported on within a subject data report.  The value set is drawn from a locally defined code system.  In practice, the code system and value set are likely to be identical.
 </entry></row>
 </tbody></tgroup></table>
 </section>

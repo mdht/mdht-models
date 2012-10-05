@@ -12,7 +12,7 @@
 <colspec colname="col2" colwidth="4*"/>
 <tbody>
 <row><entry>Value Set</entry><entry>Questionnaire Sub-Category</entry></row>
-<row><entry>Description</entry><entry>A list of sub-categories used for organizing questionnaire results.
+<row><entry>Description</entry><entry>A list of sub-categories used for organizing questionnaire results.  The code system to be used is defined by the study sponsor.
 </entry></row>
 </tbody></tgroup></table>
 </section>

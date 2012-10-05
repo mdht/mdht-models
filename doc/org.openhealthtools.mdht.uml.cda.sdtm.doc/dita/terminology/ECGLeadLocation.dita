@@ -3,6 +3,7 @@
 <topic id="classId" xml:lang="en-us">
 <title>ECG Lead Location</title>
 <prolog id="prolog">
+<resourceid id="C90013"/>
 </prolog>
 <body>
 <!-- THIS IS GENERATED CONTENT, DO NOT EDIT -->
@@ -11,8 +12,11 @@
 <colspec colname="col1" colwidth="1*"/>
 <colspec colname="col2" colwidth="4*"/>
 <tbody>
-<row><entry>Value Set</entry><entry>ECG Lead Location</entry></row>
-<row><entry>Description</entry><entry>A list of possible location types used for ECG leads.
+<row><entry>Value Set</entry><entry>ECG Lead Location - C90013</entry></row>
+<row><entry>Code System</entry><entry>NCI Thesaurus - 2.16.840.1.113883.3.26.1.1</entry></row>
+<row><entry>Source</entry><entry>NCI EVS</entry></row>
+<row><entry>Source URL</entry><entry>http://www.cancer.gov/cancertopics/cancerlibrary/terminologyresources/fda</entry></row>
+<row><entry>Description</entry><entry>A list of possible location types used for ECG leads.  Is there a defined set?
 </entry></row>
 </tbody></tgroup></table>
 </section>

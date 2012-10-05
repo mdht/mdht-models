@@ -12,7 +12,7 @@
 <colspec colname="col2" colwidth="4*"/>
 <tbody>
 <row><entry>Value Set</entry><entry>Medication Item Type</entry></row>
-<row><entry>Description</entry><entry>A list of possible substances that are used and/or referred to in the concurrent medication, exposure, and substance use domains.
+<row><entry>Description</entry><entry>A list of possible substances that are used and/or referred to in the concurrent medication, exposure, and substance use domains.  Is there a standard code set to be advanced?
 </entry></row>
 </tbody></tgroup></table>
 </section>
