@@ -4,13 +4,13 @@
 <topic id="topicId" xml:lang="en-us">
 	<title>Implementation Guide Scope</title>
 	<body>
-		<p> TO DO.  Use language from project scope statement
-		</p>
-		
-		<p><b>Vocabulary considerations</b></p>
-		<p>Text needs to be added to address our approach to vocabulary.</p>
-		
-			<p><b>Identifier considerations</b></p>
-		<p>Text needs to be added to address our approach to managing identifiers.</p>
-	</body>
+<p> The scope of this Implementation Guide, which relies on the
+ Clinical Document Architecture, is intended to allow communication of the
+ relevant information captured for a study subject during the conduct of the
+ study.  Although this specification can be used for company-to-company 
+communication, the initial intent is for communication from
+ applicant to regulatory authority. 
+</p>
+
+</body>
 </topic>
