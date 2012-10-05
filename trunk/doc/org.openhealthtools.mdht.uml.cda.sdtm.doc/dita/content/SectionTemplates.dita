@@ -4,5 +4,15 @@
 <topic id="topicId" xml:lang="en-us">
 	<title>SECTION TEMPLATES</title>
 	<body>
+	<p>This section contains templates used to describe the different document sections used within
+	compliant documents.  </p>
+	<p>
+	For Subject data, only a single section type has been defined.  
+	The section template allows a choice of several "clinical statement" templates - each based on the 
+	CDISC SDTM or SEND Implementation Guides, and all of the content within the section is to be based
+	on that single domain template. Note, however that when a new or custom domain needs to be communicated,
+	its section should draw upon one of the three general domains: Study Subject Event, Study Subject Finding,
+	Study Subject Intervention.
+	</p>
 	</body>
 </topic>
