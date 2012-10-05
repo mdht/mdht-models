@@ -19,13 +19,29 @@
             <entry>New</entry>
             <entry>March 2012</entry>
             <entry>Mead Walker</entry>
-            <entry>Create a draft document </entry>
+            <entry>Create a draft document. </entry>
           </row>
-          <row>
-            <entry> </entry>
-            <entry> </entry>
-            <entry> </entry>
-            <entry> </entry>
+           <row>
+            <entry>Revise</entry>
+            <entry>July 2012</entry>
+            <entry>Mead Walker</entry>
+            <entry>Update draft to include SDTM and SEND content in a single document. </entry>
+          </row>
+       
+             <row>
+            <entry>Revise</entry>
+            <entry>August 2012</entry>
+            <entry>Mead Walker </entry>
+            <entry>Create independent SDTM and SEND documents.  Update the content.</entry>
+          </row>
+          
+             <row>
+            <entry>Revise</entry>
+            <entry>September 2012</entry>
+            <entry>Mead Walker </entry>
+            <entry>Update the SDTM and SEND documents based on review.  Improve explanatory
+                   sections, QA template content, create more consistent and correct vocabulary
+                   references. </entry>
           </row>
         </tbody>
       </tgroup>
