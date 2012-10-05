@@ -2,11 +2,13 @@
 <!DOCTYPE bookmap PUBLIC "-//OASIS//DTD DITA BookMap//EN" "bookmap.dtd">
 <bookmap id="cdabook">
 	<booktitle>
+		
 		<booklibrary>Implementation Guide for CDA Release 2</booklibrary>
-		<mainbooktitle>Human Clinical Study Data</mainbooktitle>
-		<booktitlealt> </booktitlealt>
+		<mainbooktitle>Subject Study Data</mainbooktitle>
+		<booktitlealt audience="HUMAN"> Human Clinical</booktitlealt>
+		<booktitlealt audience="NONHUMAN"> Non-Human</booktitlealt>
 		<booktitlealt><image href="images/CDAToolsLogo.png"/></booktitlealt>
-		<booktitlealt>Draft Document/Pre-ballot</booktitlealt>
+		<booktitlealt>FDA Draft Document</booktitlealt>
 		<booktitlealt audience="developer">(Consolidated Developer Documentation)</booktitlealt>
 	</booktitle>
 	<bookmeta>
@@ -23,7 +25,8 @@
 	</bookmeta>
 	<frontmatter>
 		<preface>
-			<topicref href="preface/Acknowledgments.dita" navtitle="Acknowledgments" type="topic"/>
+			<topicref audience="HUMAN" href="preface/HU_Acknowledgments.dita" navtitle="Acknowledgments" type="topic"/>
+			<topicref audience="NONHUMAN" href="preface/NH_Acknowledgments.dita" navtitle="Acknowledgments" type="topic"/>
 			<topicref href="preface/RevisionHistory.dita" navtitle="Authors" type="topic"/>
 		</preface>
 		<booklists>
