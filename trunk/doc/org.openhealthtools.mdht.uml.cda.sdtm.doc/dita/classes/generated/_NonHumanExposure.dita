@@ -1,102 +1,319 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
 <topic id="classId" xml:lang="en-us">
-<title>Non-Human Exposure - conformance rules</title>
-<shortdesc id="shortdesc">[SubstanceAdministration: templateId <tt>2.16.840.1.113883.10.20.23.21</tt>]</shortdesc>
+<title>Non-human Exposure - conformance rules</title>
+<shortdesc id="shortdesc">[SubstanceAdministration: templateId <tt>2.16.840.1.113883.10.20.23.58</tt>]</shortdesc>
 <prolog id="prolog">
 <metadata><category>SubstanceAdministration</category></metadata>
-<resourceid id="2.16.840.1.113883.10.20.23.21"/>
+<resourceid id="2.16.840.1.113883.10.20.23.58"/>
 </prolog>
 <body>
 <section id="description">
 <p>The template captures details of a non-human subject's exposure to protocol-specified study treatment. Study treatment may be any intervention that is prospectively defined as a test material within a study, and is typically but not always supplied to the subject.</p>
 </section>
 <ol id="conformance">
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@classCode</b>="SBADM" </tt> (CodeSystem:<tt> 2.16.840.1.113883.5.6 HL7ActClass</tt>)
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@classCode</b>="SBADM" </tt> (CodeSystem:<tt> 2.16.840.1.113883.5.6 HL7ActClass</tt>) (CONF:881)
 </li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@moodCode</b>="EVN" </tt><i>Event</i> (CodeSystem:<tt> 2.16.840.1.113883.5.1001 HL7ActMood</tt>)
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@moodCode</b>="EVN" </tt><i>Event</i> (CodeSystem:<tt> 2.16.840.1.113883.5.1001 HL7ActMood</tt>) (CONF:882)
 </li>
-<li><b>SHOULD</b> contain zero or one [0..1] <tt><b>doseQuantity</b></tt>
-<ul><li>The amount of study treatment taken at a single administration.  [SDTM: EXDOSE, EXDOSU]</li></ul></li>
-<li><b>MAY</b> contain zero or one [0..1] <tt><b>effectiveTime</b></tt>
-<ul><li>Information on when and how oftern the study treatment was taken.  Possible values include start date, stop date, and duration.  Note, only two of these need to be valued, and only two values are supported.  [SDTM: EXSTDTC, EXENDTC, EXDUR, EXDOSFRQ]</li></ul></li>
-<li><b>SHALL</b> contain  [1..2] <tt><b>id</b></tt>
-<ul><li>A sponsor supplied reference number for the study treatment.  [SDTM: EXSEQ, EXSPID] A sequence number is required.</li></ul></li>
-<li><b>MAY</b> contain zero or one [0..1] <tt><b>routeCode</b></tt>
-<ul><li>The route by which the treatment is administered.  [SDTM: EXROUTE]</li></ul></li>
-<li><b>MAY</b> contain zero or one [0..1] <tt><b>maxDoseQuantity</b></tt>
-<ul><li>Information on the total daily dose of the medication. The structure also accommodates periods other than a day. [SDTM: EXDOSTOT] Note, this attribute can also be used if multiple total dosage amounts need to be reported.</li></ul></li>
-<li>Contains zero or one [0..1] <tt><b>group Identifier</b></tt> with data type <xref href="../GroupIdentifier.dita">Group Identifier</xref>
-</li>
-<li>Contains exactly one [1..1] <tt><b>consumableMaterial</b></tt> with data type <xref href="../ConsumableMaterial.dita">Consumable Material</xref>
-</li>
-<li>Contains zero or one [0..1] <tt><b>exposureCategoryAssociation</b></tt> with data type <xref href="../ExposureCategoryAssociation.dita">exposure Category Association</xref>
-</li>
-<li>Contains zero or one [0..1] <tt><b>exposureSubCategoryAssociation</b></tt> with data type <xref href="../ExposureSubCategoryAssociation.dita">exposure Sub Category Association</xref>
-</li>
-<li><b>MAY</b> contain zero or one [0..1] <tt><b>text</b></tt>
-<ul><li>A text description of the dosing.  [SDTM: EXDOSTXT]</li></ul></li>
-<li><b>MAY</b> contain zero or one [0..1] <tt><b>approachSiteCode</b></tt> with data type CE
-<ul><li>An  indication of the location, e.g. left arm, where the substance was administered.  [SDTM: EXLOC]</li></ul></li>
-<li>Contains zero or one [0..1] <tt><b>exposureIndication</b></tt> with data type <xref href="../ExposureIntendedRegimen.dita">exposure Intended Regimen</xref>
-</li>
-<li>Contains zero or one [0..1] <tt><b>doseAdjustmentReasonAssociation</b></tt> with data type <xref href="../DoseAdjustmentReasonAssociation.dita">dose Adjustment Reason Association</xref>
-</li>
-<li>Contains zero or one [0..1] <tt><b>study Epoch</b></tt> with data type <xref href="../StudyEpoch.dita">Study Epoch</xref>
-</li>
-<li>Contains zero or one [0..1] <tt><b>elementOrderAssociation</b></tt> with data type <xref href="../ElementOrderAssociation.dita">element Order Association</xref>
-</li>
-<li>Contains zero or one [0..1] <tt><b>timing Reference</b></tt> with data type <xref href="../TimingReference.dita">Timing Reference</xref>
-</li>
-<li>Contains zero or one [0..1] <tt><b>study Day Period</b></tt> with data type <xref href="../StudyDayPeriod.dita">Study Day Period</xref>
-</li>
+<li><b>SHOULD</b> contain zero or one [0..1] <tt><b>doseQuantity</b></tt> (CONF:883)
+<ul><li>The amount of study treatment taken at a single administration.  The physical quantity type captures both dose amount and unit of measure.  [SEND: EXDOSE, EXDOSU]</li></ul></li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>effectiveTime</b></tt> (CONF:884)
+<ul><li>Information on when and how often the study treatment was taken.  Possible values for time interval include start date, stop date, and duration.  Note, only two of these need to be valued, and only two values are supported.  It is expected that start date and stop date will be provided if both are known with sufficient precision.  However, if necessary and duration is included, then either stop date (the more usual case), start date, or both will be omitted.
+
+More specifically: The periodic time interval (PIVL_TS) type is used to record requency.  This captures the number of hours, days, weeks, between two administrations of the substance. (For example, BID is recorded as 12 hours)  [SDTM: CMSTDTC, CMENDTC, CMDUR, CMDOSFRQ] The efective time attribute is used to capture information regarding the start, stop,  duration and frequency of use for the concommitant medication.  There shall be Two SXPR components created.  The first will be an interval of time stamps (IVL_TS) to addres stop and start dates.  Note, when duration is included, it is associated with either the stop or the start date.  That is to say, only two of the three interval parameters may be instantiated, since, with two known, the third can be derived.  The second SXPR component addresses the frequency of use.  It uses the periodic interval (PIVL) type.  Note, that this HL7 type tends to invert the usual expression.  I.e. BID is expressed as every 12 hours.  [SEND: EXSTDTC, EXENDTC, EXDUR, EXDOSFRQ]</li></ul></li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>id</b></tt> (CONF:885)
+<ul><li>A sponsor supplied reference number for the study treatment.  [SEND: EXSEQ]</li></ul></li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>routeCode</b></tt> (CONF:886), where the @code <b>SHALL</b> be selected from ValueSet<tt> <xref href="../../terminology/RouteOfAdministration.dita">Route of Administration</xref> C66729</tt><b> STATIC</b> (CONF:887)
+<ul><li>The route by which the treatment is administered.  [SEND: EXROUTE]</li></ul></li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>maxDoseQuantity</b></tt> (CONF:888)
+<ul><li>Information on the total daily dose of the study treatment. The structure also accommodates periods other than a day.  Thefore the time period = 1 day needs to be indicated as the denominator of the ratio.  [SDTM: EXDOSTOT] Note, this attribute can also be used if multiple total dosage amounts need to be reported.</li></ul></li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>text</b></tt> (CONF:889)
+<ul><li>A text description of the dosing.  [SEND: EXDOSTXT]</li></ul></li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>approachSiteCode</b></tt> with data type CE (CONF:890), where the @code <b>SHALL</b> be selected from ValueSet<tt> <xref href="../../terminology/AnatomicalLocation.dita">Anatomical Location</xref> C74456</tt><b> STATIC</b> (CONF:891)
+<ul><li>An  indication of the location, e.g. left arm, where the substance was administered.  [SEND: EXLOC]</li></ul></li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>consumable</b></tt> (CONF:892)
+<ul><li>Identifies and carries information for the consumable item that is being referred to.</li></ul><ol>
+<li>Contains exactly one [1..1] <xref href="../ConsumableMaterial.dita">Consumable Material</xref> (templateId: <tt>2.16.840.1.113883.10.20.23.26</tt>)</li></ol></li>
+<li><b>SHOULD</b> contain zero or one [0..1] <tt><b>entryRelationship</b></tt> (CONF:893)
+<ul><li>Creates an assoication between the timing of an activity and a defined reference time point.</li></ul><ol>
+<li>Contains <tt><b>@typeCode="</b>REFR" </tt><i>REFR</i></li>
+<li>Contains exactly one [1..1] <xref href="../TimingReference.dita">Timing Reference</xref> (templateId: <tt>2.16.840.1.113883.10.20.23.97</tt>)</li></ol></li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>entryRelationship</b></tt> (CONF:894)
+<ul><li>A reference to the study days corresponding to the time period of the observation.</li></ul><ol>
+<li>Contains <tt><b>@typeCode="</b>REFR" </tt><i>REFR</i></li>
+<li>Contains exactly one [1..1] <xref href="../StudyDayPeriod.dita">Study Day Period</xref> (templateId: <tt>2.16.840.1.113883.10.20.23.82</tt>)</li></ol></li>
+<li><b>MAY</b> contain zero or more [0..*] <tt><b>entryRelationship</b></tt> (CONF:895)
+<ul><li>A place to insert comments related to a particular finding.</li></ul><ol>
+<li>Contains <tt><b>@typeCode="</b>COMP" </tt><i>COMP</i></li>
+<li>Contains exactly one [1..1] <xref href="../Comment.dita">Comment</xref> (templateId: <tt>2.16.840.1.113883.10.20.23.23</tt>)</li></ol></li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>entryRelationship</b></tt> (CONF:896)
+<ul><li>Identifies the SEND domain the record is assigned to.</li></ul><ol>
+<li>Contains <tt><b>@typeCode="</b>REFR" </tt><i>REFR</i></li>
+<li>Contains exactly one [1..1] <xref href="../DomainAssignment.dita">Domain Assignment</xref> (templateId: <tt>2.16.840.1.113883.10.20.23.30</tt>)</li></ol></li>
+<li><b>MAY</b> contain zero or more [0..*] <tt><b>entryRelationship</b></tt> (CONF:897)
+<ul><li>Establishes a relationship between this record and another record.</li></ul><ol>
+<li>Contains <tt><b>@typeCode="</b>REFR" </tt><i>REFR</i></li>
+<li>Contains exactly one [1..1] <xref href="../RelatedRecord.dita">Related Record</xref> (templateId: <tt>2.16.840.1.113883.10.20.23.75</tt>)</li></ol></li>
+<li><b>MAY</b> contain zero or more [0..*] <tt><b>entryRelationship</b></tt> (CONF:898)
+<ul><li>Allows the association of a supplemental value - outside of the content specfied for the domain - to the record.</li></ul><ol>
+<li>Contains <tt><b>@typeCode="</b>COMP" </tt><i>COMP</i></li>
+<li>Contains exactly one [1..1] <xref href="../SupplementalValue.dita">Supplemental Value</xref> (templateId: <tt>2.16.840.1.113883.10.20.23.96</tt>)</li></ol></li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>entryRelationship</b></tt> (CONF:899)
+<ul><li>A description of the reason for adjusting the dosage of the study medication.   It should only be valued if the dose adjustment has been recorded as a data item.</li></ul><ol>
+<li>Contains <tt><b>@typeCode="</b>COMP" </tt><i>COMP</i></li>
+<li>Contains exactly one [1..1] <xref href="../DoseAdjustmentReason.dita">Dose Adjustment Reason</xref> (templateId: <tt>2.16.840.1.113883.10.20.23.31</tt>)</li></ol></li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>entryRelationship</b></tt> (CONF:900)
+<ul><li>The record of a category to be used in organizing information items.</li></ul><ol>
+<li>Contains <tt><b>@typeCode="</b>COMP" </tt><i>COMP</i></li>
+<li>Contains exactly one [1..1] <xref href="../Category.dita">Category</xref> (templateId: <tt>2.16.840.1.113883.10.20.23.20</tt>)</li></ol></li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>entryRelationship</b></tt> (CONF:901)
+<ul><li>The record of a sub-category to be used in organizing information items.</li></ul><ol>
+<li>Contains <tt><b>@typeCode="</b>COMP" </tt><i>COMP</i></li>
+<li>Contains exactly one [1..1] <xref href="../SubCategory.dita">Sub- Category</xref> (templateId: <tt>2.16.840.1.113883.10.20.23.91</tt>)</li></ol></li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>entryRelationship</b></tt> (CONF:902)
+<ul><li>Records the duration of an event in cases in which this cannot be derived from existing start and stop information.</li></ul><ol>
+<li>Contains <tt><b>@typeCode="</b>COMP" </tt><i>COMP</i></li>
+<li>Contains exactly one [1..1] <xref href="../EventDuration.dita">Event Duration</xref> (templateId: <tt>2.16.840.1.113883.10.20.23.102</tt>)</li></ol></li>
 </ol>
 <ol id="aggregate">
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@classCode</b>="SBADM" </tt> (CodeSystem:<tt> 2.16.840.1.113883.5.6 HL7ActClass</tt>)
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@classCode</b>="SBADM" </tt> (CodeSystem:<tt> 2.16.840.1.113883.5.6 HL7ActClass</tt>) (CONF:881)
 </li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@moodCode</b>="EVN" </tt><i>Event</i> (CodeSystem:<tt> 2.16.840.1.113883.5.1001 HL7ActMood</tt>)
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@moodCode</b>="EVN" </tt><i>Event</i> (CodeSystem:<tt> 2.16.840.1.113883.5.1001 HL7ActMood</tt>) (CONF:882)
 </li>
-<li><b>SHALL</b> contain  [1..2] <tt><b>id</b></tt>
-<ul><li>A sponsor supplied reference number for the study treatment.  [SDTM: EXSEQ, EXSPID] A sequence number is required.</li></ul></li>
-<li><b>MAY</b> contain zero or one [0..1] <tt><b>text</b></tt>
-<ul><li>A text description of the dosing.  [SDTM: EXDOSTXT]</li></ul></li>
-<li><b>MAY</b> contain zero or one [0..1] <tt><b>effectiveTime</b></tt>
-<ul><li>Information on when and how oftern the study treatment was taken.  Possible values include start date, stop date, and duration.  Note, only two of these need to be valued, and only two values are supported.  [SDTM: EXSTDTC, EXENDTC, EXDUR, EXDOSFRQ]</li></ul></li>
-<li><b>MAY</b> contain zero or one [0..1] <tt><b>routeCode</b></tt>
-<ul><li>The route by which the treatment is administered.  [SDTM: EXROUTE]</li></ul></li>
-<li><b>MAY</b> contain zero or one [0..1] <tt><b>approachSiteCode</b></tt> with data type CE
-<ul><li>An  indication of the location, e.g. left arm, where the substance was administered.  [SDTM: EXLOC]</li></ul></li>
-<li><b>SHOULD</b> contain zero or one [0..1] <tt><b>doseQuantity</b></tt>
-<ul><li>The amount of study treatment taken at a single administration.  [SDTM: EXDOSE, EXDOSU]</li></ul></li>
-<li><b>MAY</b> contain zero or one [0..1] <tt><b>maxDoseQuantity</b></tt>
-<ul><li>Information on the total daily dose of the medication. The structure also accommodates periods other than a day. [SDTM: EXDOSTOT] Note, this attribute can also be used if multiple total dosage amounts need to be reported.</li></ul></li>
-<li>Contains zero or one [0..1] <tt><b>group Identifier</b></tt> with data type <xref href="../GroupIdentifier.dita">Group Identifier</xref>
-</li>
-<li>Contains exactly one [1..1] <tt><b>consumableMaterial</b></tt> with data type <xref href="../ConsumableMaterial.dita">Consumable Material</xref>
-</li>
-<li>Contains zero or one [0..1] <tt><b>exposureCategoryAssociation</b></tt> with data type <xref href="../ExposureCategoryAssociation.dita">exposure Category Association</xref>
-</li>
-<li>Contains zero or one [0..1] <tt><b>exposureSubCategoryAssociation</b></tt> with data type <xref href="../ExposureSubCategoryAssociation.dita">exposure Sub Category Association</xref>
-</li>
-<li>Contains zero or one [0..1] <tt><b>exposureIndication</b></tt> with data type <xref href="../ExposureIntendedRegimen.dita">exposure Intended Regimen</xref>
-</li>
-<li>Contains zero or one [0..1] <tt><b>doseAdjustmentReasonAssociation</b></tt> with data type <xref href="../DoseAdjustmentReasonAssociation.dita">dose Adjustment Reason Association</xref>
-</li>
-<li>Contains zero or one [0..1] <tt><b>study Epoch</b></tt> with data type <xref href="../StudyEpoch.dita">Study Epoch</xref>
-</li>
-<li>Contains zero or one [0..1] <tt><b>elementOrderAssociation</b></tt> with data type <xref href="../ElementOrderAssociation.dita">element Order Association</xref>
-</li>
-<li>Contains zero or one [0..1] <tt><b>timing Reference</b></tt> with data type <xref href="../TimingReference.dita">Timing Reference</xref>
-</li>
-<li>Contains zero or one [0..1] <tt><b>study Day Period</b></tt> with data type <xref href="../StudyDayPeriod.dita">Study Day Period</xref>
-</li>
-<li>Contains exactly one [1..1] <tt><b>consumable</b></tt>, where its type is <xref href="../Consumable.dita">Consumable</xref>
-</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>id</b></tt> (CONF:885)
+<ul><li>A sponsor supplied reference number for the study treatment.  [SEND: EXSEQ]</li></ul></li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>text</b></tt> (CONF:889)
+<ul><li>A text description of the dosing.  [SEND: EXDOSTXT]</li></ul></li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>effectiveTime</b></tt> (CONF:884)
+<ul><li>Information on when and how often the study treatment was taken.  Possible values for time interval include start date, stop date, and duration.  Note, only two of these need to be valued, and only two values are supported.  It is expected that start date and stop date will be provided if both are known with sufficient precision.  However, if necessary and duration is included, then either stop date (the more usual case), start date, or both will be omitted.
+
+More specifically: The periodic time interval (PIVL_TS) type is used to record requency.  This captures the number of hours, days, weeks, between two administrations of the substance. (For example, BID is recorded as 12 hours)  [SDTM: CMSTDTC, CMENDTC, CMDUR, CMDOSFRQ] The efective time attribute is used to capture information regarding the start, stop,  duration and frequency of use for the concommitant medication.  There shall be Two SXPR components created.  The first will be an interval of time stamps (IVL_TS) to addres stop and start dates.  Note, when duration is included, it is associated with either the stop or the start date.  That is to say, only two of the three interval parameters may be instantiated, since, with two known, the third can be derived.  The second SXPR component addresses the frequency of use.  It uses the periodic interval (PIVL) type.  Note, that this HL7 type tends to invert the usual expression.  I.e. BID is expressed as every 12 hours.  [SEND: EXSTDTC, EXENDTC, EXDUR, EXDOSFRQ]</li></ul></li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>routeCode</b></tt> (CONF:886), where the @code <b>SHALL</b> be selected from ValueSet<tt> <xref href="../../terminology/RouteOfAdministration.dita">Route of Administration</xref> C66729</tt><b> STATIC</b> (CONF:887)
+<ul><li>The route by which the treatment is administered.  [SEND: EXROUTE]</li></ul></li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>approachSiteCode</b></tt> with data type CE (CONF:890), where the @code <b>SHALL</b> be selected from ValueSet<tt> <xref href="../../terminology/AnatomicalLocation.dita">Anatomical Location</xref> C74456</tt><b> STATIC</b> (CONF:891)
+<ul><li>An  indication of the location, e.g. left arm, where the substance was administered.  [SEND: EXLOC]</li></ul></li>
+<li><b>SHOULD</b> contain zero or one [0..1] <tt><b>doseQuantity</b></tt> (CONF:883)
+<ul><li>The amount of study treatment taken at a single administration.  The physical quantity type captures both dose amount and unit of measure.  [SEND: EXDOSE, EXDOSU]</li></ul></li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>maxDoseQuantity</b></tt> (CONF:888)
+<ul><li>Information on the total daily dose of the study treatment. The structure also accommodates periods other than a day.  Thefore the time period = 1 day needs to be indicated as the denominator of the ratio.  [SDTM: EXDOSTOT] Note, this attribute can also be used if multiple total dosage amounts need to be reported.</li></ul></li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>consumable</b></tt> (CONF:892)
+<ol>
+<li>Contains exactly one [1..1] <xref href="../ConsumableMaterial.dita">Consumable Material</xref> (templateId: <tt>2.16.840.1.113883.10.20.23.26</tt>)</li></ol><ul><li>Identifies and carries information for the consumable item that is being referred to.</li></ul></li>
+<li><b>SHOULD</b> contain zero or one [0..1] <tt><b>entryRelationship</b></tt> (CONF:893)
+<ol>
+<li>Contains <tt><b>@typeCode="</b>REFR" </tt><i>REFR</i></li>
+<li>Contains exactly one [1..1] <xref href="../TimingReference.dita">Timing Reference</xref> (templateId: <tt>2.16.840.1.113883.10.20.23.97</tt>)</li></ol><ul><li>Creates an assoication between the timing of an activity and a defined reference time point.</li></ul></li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>entryRelationship</b></tt> (CONF:894)
+<ol>
+<li>Contains <tt><b>@typeCode="</b>REFR" </tt><i>REFR</i></li>
+<li>Contains exactly one [1..1] <xref href="../StudyDayPeriod.dita">Study Day Period</xref> (templateId: <tt>2.16.840.1.113883.10.20.23.82</tt>)</li></ol><ul><li>A reference to the study days corresponding to the time period of the observation.</li></ul></li>
+<li><b>MAY</b> contain zero or more [0..*] <tt><b>entryRelationship</b></tt> (CONF:895)
+<ol>
+<li>Contains <tt><b>@typeCode="</b>COMP" </tt><i>COMP</i></li>
+<li>Contains exactly one [1..1] <xref href="../Comment.dita">Comment</xref> (templateId: <tt>2.16.840.1.113883.10.20.23.23</tt>)</li></ol><ul><li>A place to insert comments related to a particular finding.</li></ul></li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>entryRelationship</b></tt> (CONF:896)
+<ol>
+<li>Contains <tt><b>@typeCode="</b>REFR" </tt><i>REFR</i></li>
+<li>Contains exactly one [1..1] <xref href="../DomainAssignment.dita">Domain Assignment</xref> (templateId: <tt>2.16.840.1.113883.10.20.23.30</tt>)</li></ol><ul><li>Identifies the SEND domain the record is assigned to.</li></ul></li>
+<li><b>MAY</b> contain zero or more [0..*] <tt><b>entryRelationship</b></tt> (CONF:897)
+<ol>
+<li>Contains <tt><b>@typeCode="</b>REFR" </tt><i>REFR</i></li>
+<li>Contains exactly one [1..1] <xref href="../RelatedRecord.dita">Related Record</xref> (templateId: <tt>2.16.840.1.113883.10.20.23.75</tt>)</li></ol><ul><li>Establishes a relationship between this record and another record.</li></ul></li>
+<li><b>MAY</b> contain zero or more [0..*] <tt><b>entryRelationship</b></tt> (CONF:898)
+<ol>
+<li>Contains <tt><b>@typeCode="</b>COMP" </tt><i>COMP</i></li>
+<li>Contains exactly one [1..1] <xref href="../SupplementalValue.dita">Supplemental Value</xref> (templateId: <tt>2.16.840.1.113883.10.20.23.96</tt>)</li></ol><ul><li>Allows the association of a supplemental value - outside of the content specfied for the domain - to the record.</li></ul></li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>entryRelationship</b></tt> (CONF:899)
+<ol>
+<li>Contains <tt><b>@typeCode="</b>COMP" </tt><i>COMP</i></li>
+<li>Contains exactly one [1..1] <xref href="../DoseAdjustmentReason.dita">Dose Adjustment Reason</xref> (templateId: <tt>2.16.840.1.113883.10.20.23.31</tt>)</li></ol><ul><li>A description of the reason for adjusting the dosage of the study medication.   It should only be valued if the dose adjustment has been recorded as a data item.</li></ul></li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>entryRelationship</b></tt> (CONF:900)
+<ol>
+<li>Contains <tt><b>@typeCode="</b>COMP" </tt><i>COMP</i></li>
+<li>Contains exactly one [1..1] <xref href="../Category.dita">Category</xref> (templateId: <tt>2.16.840.1.113883.10.20.23.20</tt>)</li></ol><ul><li>The record of a category to be used in organizing information items.</li></ul></li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>entryRelationship</b></tt> (CONF:901)
+<ol>
+<li>Contains <tt><b>@typeCode="</b>COMP" </tt><i>COMP</i></li>
+<li>Contains exactly one [1..1] <xref href="../SubCategory.dita">Sub- Category</xref> (templateId: <tt>2.16.840.1.113883.10.20.23.91</tt>)</li></ol><ul><li>The record of a sub-category to be used in organizing information items.</li></ul></li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>entryRelationship</b></tt> (CONF:902)
+<ol>
+<li>Contains <tt><b>@typeCode="</b>COMP" </tt><i>COMP</i></li>
+<li>Contains exactly one [1..1] <xref href="../EventDuration.dita">Event Duration</xref> (templateId: <tt>2.16.840.1.113883.10.20.23.102</tt>)</li></ol><ul><li>Records the duration of an event in cases in which this cannot be derived from existing start and stop information.</li></ul></li>
 </ol>
-<codeblock id="example"><![CDATA[]]></codeblock>
+<section id="tableconformance"><p><table frame="all" scale="80" pgwide="1" ><tgroup cols="8" align="left" colsep = "1" rowsep = "1" > <colspec colname="col0" colnum="0" /><colspec colname="col1" colnum="1" /><colspec colname="col2" colnum="2" /><colspec colname="col3" colnum="3" /><colspec colname="col4" colnum="4" /><colspec colname="col5" colnum="5" /><colspec colname="col6" colnum="6" /><colspec colname="col7" colnum="7" /><thead> <row><entry namest="col0" nameend="col7" >sdtm::Non-human Exposure</entry>  </row>  <row><entry namest="col0" nameend="col7" >cda::substanceadministration[cda:templateId/@root = 2.16.840.1.113883.10.20.23.58]/</entry>  </row>  <row><entry>Name</entry><entry>XPath</entry><entry>Cardinality</entry><entry>Severity</entry><entry>Nullable</entry><entry>Data Type</entry><entry>Conformance</entry><entry>Value(s)</entry></row></thead><tbody><row><entry>classCode</entry><entry>@classCode</entry><entry>1..1</entry><entry>SHALL</entry><entry>NO</entry><entry>ActClass</entry><entry>CONF:881</entry><entry> SBADM</entry></row> 
+<row><entry>moodCode</entry><entry>@moodCode</entry><entry>1..1</entry><entry>SHALL</entry><entry>NO</entry><entry>x_DocumentSubstanceMood</entry><entry>CONF:882</entry><entry> EVN</entry></row> 
+<row><entry>negationInd</entry><entry>@negationInd</entry><entry>0..1</entry><entry></entry><entry>NO</entry><entry>Boolean</entry><entry></entry><entry> </entry></row> 
+<row><entry>nullFlavor</entry><entry>@nullFlavor</entry><entry>0..1</entry><entry></entry><entry>NO</entry><entry>NullFlavor</entry><entry></entry><entry> ASKU</entry></row> 
+<row><entry>administrationUnitCode</entry><entry>administrationUnitCode</entry><entry>0..1</entry><entry></entry><entry>YES</entry><entry>CE</entry><entry></entry><entry> </entry></row> 
+<row><entry>approachSiteCode</entry><entry>approachSiteCode</entry><entry>0..1</entry><entry>MAY</entry><entry>YES</entry><entry>CE</entry><entry>CONF:890</entry><entry> null</entry></row> 
+<row><entry>code</entry><entry>code</entry><entry>0..1</entry><entry></entry><entry>YES</entry><entry>CD</entry><entry></entry><entry> </entry></row> 
+<row><entry>doseQuantity</entry><entry>doseQuantity</entry><entry>0..1</entry><entry>SHOULD</entry><entry>YES</entry><entry>IVL_PQ</entry><entry>CONF:883</entry><entry> </entry></row> 
+<row><entry>effectiveTime</entry><entry>effectiveTime</entry><entry>0..1</entry><entry>MAY</entry><entry>YES</entry><entry>SXCM_TS</entry><entry>CONF:884</entry><entry> </entry></row> 
+<row><entry>id</entry><entry>id</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>II</entry><entry>CONF:885</entry><entry> </entry></row> 
+<row><entry>maxDoseQuantity</entry><entry>maxDoseQuantity</entry><entry>0..1</entry><entry>MAY</entry><entry>YES</entry><entry>RTO_PQ_PQ</entry><entry>CONF:888</entry><entry> </entry></row> 
+<row><entry>priorityCode</entry><entry>priorityCode</entry><entry>0..1</entry><entry></entry><entry>YES</entry><entry>CE</entry><entry></entry><entry> </entry></row> 
+<row><entry>rateQuantity</entry><entry>rateQuantity</entry><entry>0..1</entry><entry></entry><entry>YES</entry><entry>IVL_PQ</entry><entry></entry><entry> </entry></row> 
+<row><entry>realmCode</entry><entry>realmCode</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>CS</entry><entry></entry><entry> </entry></row> 
+<row><entry>repeatNumber</entry><entry>repeatNumber</entry><entry>0..1</entry><entry></entry><entry>YES</entry><entry>IVL_INT</entry><entry></entry><entry> </entry></row> 
+<row><entry>routeCode</entry><entry>routeCode</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>CE</entry><entry>CONF:886</entry><entry> null</entry></row> 
+<row><entry>statusCode</entry><entry>statusCode</entry><entry>0..1</entry><entry></entry><entry>YES</entry><entry>CS</entry><entry></entry><entry> </entry></row> 
+<row><entry>templateId</entry><entry>templateId</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>II</entry><entry></entry><entry> 2.16.840.1.113883.10.20.23.58</entry></row> 
+<row><entry>text</entry><entry>text</entry><entry>0..1</entry><entry>MAY</entry><entry>YES</entry><entry>ED</entry><entry>CONF:889</entry><entry> </entry></row> 
+<row><entry>author</entry><entry>author</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>Author</entry><entry></entry><entry> </entry></row> 
+<row><entry>category</entry><entry>category</entry><entry>0..1</entry><entry>MAY</entry><entry>YES</entry><entry>Category</entry><entry>CONF:900</entry><entry> </entry></row> 
+<row><entry>comment</entry><entry>comment</entry><entry>0..*</entry><entry>MAY</entry><entry>YES</entry><entry>Comment</entry><entry>CONF:895</entry><entry> </entry></row> 
+<row><entry>consumable</entry><entry>consumable</entry><entry>1..1</entry><entry></entry><entry>YES</entry><entry>Consumable</entry><entry></entry><entry> </entry></row> 
+<row><entry>consumable Material</entry><entry>consumable Material</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>Consumable Material</entry><entry>CONF:892</entry><entry> </entry></row> 
+<row><entry>domain Assignment</entry><entry>domain Assignment</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>Domain Assignment</entry><entry>CONF:896</entry><entry> </entry></row> 
+<row><entry>dose Adjustment Reason</entry><entry>dose Adjustment Reason</entry><entry>0..1</entry><entry>MAY</entry><entry>YES</entry><entry>Dose Adjustment Reason</entry><entry>CONF:899</entry><entry> </entry></row> 
+<row><entry>entryRelationship</entry><entry>entryRelationship</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>EntryRelationship</entry><entry></entry><entry> </entry></row> 
+<row><entry>event Duration</entry><entry>event Duration</entry><entry>0..1</entry><entry>MAY</entry><entry>YES</entry><entry>Event Duration</entry><entry>CONF:902</entry><entry> </entry></row> 
+<row><entry>informant</entry><entry>informant</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>Informant12</entry><entry></entry><entry> </entry></row> 
+<row><entry>participant</entry><entry>participant</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>Participant2</entry><entry></entry><entry> </entry></row> 
+<row><entry>performer</entry><entry>performer</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>Performer2</entry><entry></entry><entry> </entry></row> 
+<row><entry>precondition</entry><entry>precondition</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>Precondition</entry><entry></entry><entry> </entry></row> 
+<row><entry>reference</entry><entry>reference</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>Reference</entry><entry></entry><entry> </entry></row> 
+<row><entry>related Record</entry><entry>related Record</entry><entry>0..*</entry><entry>MAY</entry><entry>YES</entry><entry>Related Record</entry><entry>CONF:897</entry><entry> </entry></row> 
+<row><entry>specimen</entry><entry>specimen</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>Specimen</entry><entry></entry><entry> </entry></row> 
+<row><entry>study Day Period</entry><entry>study Day Period</entry><entry>0..1</entry><entry>MAY</entry><entry>YES</entry><entry>Study Day Period</entry><entry>CONF:894</entry><entry> </entry></row> 
+<row><entry>sub-Category</entry><entry>sub-Category</entry><entry>0..1</entry><entry>MAY</entry><entry>YES</entry><entry>Sub-Category</entry><entry>CONF:901</entry><entry> </entry></row> 
+<row><entry>subject</entry><entry>subject</entry><entry>0..1</entry><entry></entry><entry>YES</entry><entry>Subject</entry><entry></entry><entry> </entry></row> 
+<row><entry>supplemental Value</entry><entry>supplemental Value</entry><entry>0..*</entry><entry>MAY</entry><entry>YES</entry><entry>Supplemental Value</entry><entry>CONF:898</entry><entry> </entry></row> 
+<row><entry>timing Reference</entry><entry>timing Reference</entry><entry>0..1</entry><entry>SHOULD</entry><entry>YES</entry><entry>Timing Reference</entry><entry>CONF:893</entry><entry> </entry></row> 
+<row><entry>typeId</entry><entry>typeId</entry><entry>0..1</entry><entry></entry><entry>YES</entry><entry>InfrastructureRootTypeId</entry><entry></entry><entry> </entry></row> 
+</tbody></tgroup></table></p></section>
+<codeblock id="example"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
+<substanceadministration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd" classCode="SBADM" moodCode="EVN">
+  <templateId root="2.16.840.1.113883.10.20.23.58"/>
+  <id root="879181729" extension="MDHT"/>
+  <text>Text Value</text>
+  <effectiveTime value="20121005"/>
+  <routeCode codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="NCI Thesaurus"/>
+  <approachSiteCode codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="NCI Thesaurus"/>
+  <doseQuantity/>
+  <maxDoseQuantity/>
+  <consumable>
+    <manufacturedProduct classCode="MANU"/>
+  </consumable>
+  <entryRelationship>
+    <act>
+      <templateId root="2.16.840.1.113883.10.20.23.97"/>
+      <id root="1752562018" extension="MDHT"/>
+      <code codeSystem="2.16.840.1.113883.3.26.1.1"/>
+      <text>Text Value</text>
+      <effectiveTime>
+        <low value="2012"/>
+        <high value="2012"/>
+      </effectiveTime>
+      <entryRelationship typeCode="COMP"/>
+    </act>
+  </entryRelationship>
+  <entryRelationship>
+    <observation>
+      <id root="1402937631" extension="MDHT"/>
+      <code code="1604413117"/>
+      <text>Text Value</text>
+      <effectiveTime>
+        <low value="2012"/>
+        <high value="2012"/>
+      </effectiveTime>
+    </observation>
+  </entryRelationship>
+  <entryRelationship>
+    <observation classCode="OBS" moodCode="EVN">
+      <templateId root="2.16.840.1.113883.10.20.23.23"/>
+      <id root="605290376" extension="MDHT"/>
+      <code code="C49569" codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="NCI Thesaurus"/>
+      <text>Text Value</text>
+      <effectiveTime>
+        <low value="2012"/>
+        <high value="2012"/>
+      </effectiveTime>
+      <participant/>
+      <entryRelationship/>
+    </observation>
+  </entryRelationship>
+  <entryRelationship>
+    <observation>
+      <templateId root="2.16.840.1.113883.10.20.23.30"/>
+      <id root="178673281" extension="MDHT"/>
+      <code code="C66734" codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="NCI Thesaurus"/>
+      <text>Text Value</text>
+      <effectiveTime>
+        <low value="2012"/>
+        <high value="2012"/>
+      </effectiveTime>
+    </observation>
+  </entryRelationship>
+  <entryRelationship>
+    <act classCode="ACT">
+      <templateId root="2.16.840.1.113883.10.20.23.75"/>
+      <id root="615179208" extension="MDHT"/>
+      <code codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="NCI Thesaurus"/>
+      <text>Text Value</text>
+      <effectiveTime>
+        <low value="2012"/>
+        <high value="2012"/>
+      </effectiveTime>
+    </act>
+  </entryRelationship>
+  <entryRelationship>
+    <observation classCode="OBS" moodCode="EVN">
+      <templateId root="2.16.840.1.113883.10.20.23.96"/>
+      <id root="979662367" extension="MDHT"/>
+      <code codeSystem="locally defined" codeSystemName="Supplemental Value Type"/>
+      <text>Text Value</text>
+      <effectiveTime>
+        <low value="2012"/>
+        <high value="2012"/>
+      </effectiveTime>
+      <participant/>
+      <entryRelationship typeCode="COMP"/>
+    </observation>
+  </entryRelationship>
+  <entryRelationship>
+    <observation>
+      <id root="491843167" extension="MDHT"/>
+      <code code="1303562700"/>
+      <text>Text Value</text>
+      <effectiveTime>
+        <low value="2012"/>
+        <high value="2012"/>
+      </effectiveTime>
+    </observation>
+  </entryRelationship>
+  <entryRelationship>
+    <observation classCode="OBS" moodCode="EVN">
+      <templateId root="2.16.840.1.113883.10.20.23.20"/>
+      <id root="117887580" extension="MDHT"/>
+      <code codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="NCI Thesaurus"/>
+      <text>Text Value</text>
+      <effectiveTime>
+        <low value="2012"/>
+        <high value="2012"/>
+      </effectiveTime>
+    </observation>
+  </entryRelationship>
+  <entryRelationship>
+    <observation/>
+  </entryRelationship>
+  <entryRelationship>
+    <observation classCode="OBS" moodCode="EVN">
+      <templateId root="2.16.840.1.113883.10.20.23.102"/>
+      <id root="1211251575" extension="MDHT"/>
+      <code code="EDtbd" codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="NCI Thesaurus"/>
+      <text>Text Value</text>
+      <effectiveTime>
+        <low value="2012"/>
+        <high value="2012"/>
+      </effectiveTime>
+    </observation>
+  </entryRelationship>
+</substanceadministration>]]></codeblock>
 <section id="changes">
 </section>
-<p><ph id="classformalname">Non-Human Exposure</ph></p>
-<p id="shortdesc">[SubstanceAdministration: templateId <tt>2.16.840.1.113883.10.20.23.21</tt>]</p>
+<p><ph id="classformalname">Non-human Exposure</ph></p>
+<p id="shortdesc">[SubstanceAdministration: templateId <tt>2.16.840.1.113883.10.20.23.58</tt>]</p>
 </body>
 </topic>
