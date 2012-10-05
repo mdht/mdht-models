@@ -16,8 +16,10 @@
 <ol audience="developer" conref="generated/_MedicalHistoryItem.dita#classId/aggregate">
 <li></li>
 </ol>
+<!-- Comment out the section for tables 
 <section conref="generated/_MedicalHistoryItem.dita#classId/tableconformance">
 </section>
+-->
 <p> </p>
 <p><b>Medical History Item example</b></p>
 <!-- TODO: insert custom instance example here -->

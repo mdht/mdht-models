@@ -16,8 +16,10 @@
 <ol audience="developer" conref="generated/_PlannedStudyDay.dita#classId/aggregate">
 <li></li>
 </ol>
+<!-- Comment out the sample table
 <section conref="generated/_PlannedStudyDay.dita#classId/tableconformance">
 </section>
+-->
 <p> </p>
 <p><b>Planned Study Day example</b></p>
 <!-- TODO: insert custom instance example here -->

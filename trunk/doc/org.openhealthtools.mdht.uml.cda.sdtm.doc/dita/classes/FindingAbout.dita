@@ -16,8 +16,10 @@
 <ol audience="developer" conref="generated/_FindingAbout.dita#classId/aggregate">
 <li></li>
 </ol>
+<!-- Comment out the section for tables 
 <section conref="generated/_FindingAbout.dita#classId/tableconformance">
 </section>
+-->
 <p> </p>
 <p><b>Finding About example</b></p>
 <!-- TODO: insert custom instance example here -->

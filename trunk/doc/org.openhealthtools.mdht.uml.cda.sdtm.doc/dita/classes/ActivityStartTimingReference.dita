@@ -16,8 +16,10 @@
 <ol audience="developer" conref="generated/_ActivityStartTimingReference.dita#classId/aggregate">
 <li></li>
 </ol>
+<!-- Comment out the section for tables 
 <section conref="generated/_ActivityStartTimingReference.dita#classId/tableconformance">
 </section>
+-->
 <p> </p>
 <p><b>Activity Start Timing Reference example</b></p>
 <!-- TODO: insert custom instance example here -->

@@ -16,8 +16,10 @@
 <ol audience="developer" conref="generated/_PreSpecifiedEvent.dita#classId/aggregate">
 <li></li>
 </ol>
+<!-- Comment out the sample table
 <section conref="generated/_PreSpecifiedEvent.dita#classId/tableconformance">
 </section>
+-->
 <p> </p>
 <p><b>Pre-Specified Event example</b></p>
 <!-- TODO: insert custom instance example here -->

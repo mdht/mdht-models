@@ -16,8 +16,10 @@
 <ol audience="developer" conref="generated/_GroupIdentifier.dita#classId/aggregate">
 <li></li>
 </ol>
+<!-- Comment out the section for tables
 <section conref="generated/_GroupIdentifier.dita#classId/tableconformance">
 </section>
+-->
 <p> </p>
 <p><b>Group Identifier example</b></p>
 <!-- TODO: insert custom instance example here -->

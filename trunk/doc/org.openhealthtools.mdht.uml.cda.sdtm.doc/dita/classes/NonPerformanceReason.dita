@@ -16,8 +16,10 @@
 <ol audience="developer" conref="generated/_NonPerformanceReason.dita#classId/aggregate">
 <li></li>
 </ol>
+<!-- Comment out the sample table 
 <section conref="generated/_NonPerformanceReason.dita#classId/tableconformance">
 </section>
+-->
 <p> </p>
 <p><b>Non Performance Reason example</b></p>
 <!-- TODO: insert custom instance example here -->

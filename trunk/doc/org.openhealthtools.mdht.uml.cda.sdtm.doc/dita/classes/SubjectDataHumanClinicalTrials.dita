@@ -16,13 +16,19 @@
 <ol audience="developer" conref="generated/_SubjectDataHumanClinicalTrials.dita#classId/aggregate">
 <li></li>
 </ol>
+<!-- Comment out the sample table
 <section conref="generated/_SubjectDataHumanClinicalTrials.dita#classId/tableconformance">
 </section>
+-->
 <p> </p>
+<!-- Comment out the XML instance
 <p><b>Subject Data Human Clinical Trials example</b></p>
+-->
 <!-- TODO: insert custom instance example here -->
 <!-- generated instance example follows -->
+<!-- Comment out the XML instance
 <codeblock conref="generated/_SubjectDataHumanClinicalTrials.dita#classId/example">
 </codeblock>
+-->
 </body>
 </topic>
