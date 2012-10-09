@@ -124,10 +124,10 @@ public class EMSSocialHistorySectionImpl extends SectionImpl implements EMSSocia
 	}
 
 	/**
-	   * <!-- begin-user-doc -->
-	   * <!-- end-user-doc -->
-	   * @generated
-	   */
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public EMSSocialHistorySection init(Iterable<? extends Initializer<? extends EObject>> initializers) {
 		Initializer.Util.init(this, initializers);
 		return this;

@@ -110,10 +110,10 @@ public class EMSAdvanceDirectivesSectionImpl extends SectionImpl implements EMSA
 	}
 
 	/**
-	   * <!-- begin-user-doc -->
-	   * <!-- end-user-doc -->
-	   * @generated
-	   */
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public EMSAdvanceDirectivesSection init(Iterable<? extends Initializer<? extends EObject>> initializers) {
 		Initializer.Util.init(this, initializers);
 		return this;

@@ -172,10 +172,10 @@ public class EMSPhysicalAssessmentSectionImpl extends SectionImpl implements EMS
 	}
 
 	/**
-	   * <!-- begin-user-doc -->
-	   * <!-- end-user-doc -->
-	   * @generated
-	   */
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public EMSPhysicalAssessmentSection init(Iterable<? extends Initializer<? extends EObject>> initializers) {
 		Initializer.Util.init(this, initializers);
 		return this;

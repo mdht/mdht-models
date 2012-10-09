@@ -115,10 +115,10 @@ public class EMSDispatchSectionImpl extends SectionImpl implements EMSDispatchSe
 	}
 
 	/**
-	   * <!-- begin-user-doc -->
-	   * <!-- end-user-doc -->
-	   * @generated
-	   */
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public EMSDispatchSection init(Iterable<? extends Initializer<? extends EObject>> initializers) {
 		Initializer.Util.init(this, initializers);
 		return this;

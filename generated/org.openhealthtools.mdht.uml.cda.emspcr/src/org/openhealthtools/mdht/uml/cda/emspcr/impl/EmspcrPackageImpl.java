@@ -56,204 +56,204 @@ import org.openhealthtools.mdht.uml.cda.util.AnnotationBasedInitializer;
  */
 public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage {
 	/**
-	   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	   * @generated
-	   */
+	 * @generated
+	 */
 	private EClass patientCareReportEClass = null;
 
 	/**
-	   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	   * @generated
-	   */
+	 * @generated
+	 */
 	private EClass emsBillingSectionEClass = null;
 
 	/**
-	   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	   * @generated
-	   */
+	 * @generated
+	 */
 	private EClass emsInjuryIncidentDescriptionSectionEClass = null;
 
 	/**
-	   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	   * @generated
-	   */
+	 * @generated
+	 */
 	private EClass emsCurrentMedicationSectionEClass = null;
 
 	/**
-	   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	   * @generated
-	   */
+	 * @generated
+	 */
 	private EClass emsCardiacArrestEventSectionEClass = null;
 
 	/**
-	   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	   * @generated
-	   */
+	 * @generated
+	 */
 	private EClass emsAdvanceDirectivesSectionEClass = null;
 
 	/**
-	   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	   * @generated
-	   */
+	 * @generated
+	 */
 	private EClass emsAllergiesAndAdverseReactionsSectionEClass = null;
 
 	/**
-	   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	   * @generated
-	   */
+	 * @generated
+	 */
 	private EClass emsPastMedicalHistorySectionEClass = null;
 
 	/**
-	   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	   * @generated
-	   */
+	 * @generated
+	 */
 	private EClass emsSocialHistorySectionEClass = null;
 
 	/**
-	   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	   * @generated
-	   */
+	 * @generated
+	 */
 	private EClass emsPhysicalAssessmentSectionEClass = null;
 
 	/**
-	   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	   * @generated
-	   */
+	 * @generated
+	 */
 	private EClass emsMedicationsAdministeredSectionEClass = null;
 
 	/**
-	   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	   * @generated
-	   */
+	 * @generated
+	 */
 	private EClass emsProceduresPerformedSectionEClass = null;
 
 	/**
-	   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	   * @generated
-	   */
+	 * @generated
+	 */
 	private EClass emsPatientCareNarrativeSectionEClass = null;
 
 	/**
-	   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	   * @generated
-	   */
+	 * @generated
+	 */
 	private EClass emsSceneSectionEClass = null;
 
 	/**
-	   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	   * @generated
-	   */
+	 * @generated
+	 */
 	private EClass emsDispatchSectionEClass = null;
 
 	/**
-	   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	   * @generated
-	   */
+	 * @generated
+	 */
 	private EClass emsDispositionSectionEClass = null;
 
 	/**
-	   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	   * @generated
-	   */
+	 * @generated
+	 */
 	private EClass emsPersonnelAdverseEventSectionEClass = null;
 
 	/**
-	   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	   * @generated
-	   */
+	 * @generated
+	 */
 	private EClass emsProtocolSectionEClass = null;
 
 	/**
-	   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	   * @generated
-	   */
+	 * @generated
+	 */
 	private EClass emsResponseSectionEClass = null;
 
 	/**
-	   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	   * @generated
-	   */
+	 * @generated
+	 */
 	private EClass emsSituationSectionEClass = null;
 
 	/**
-	   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	   * @generated
-	   */
+	 * @generated
+	 */
 	private EClass emsTimesSectionEClass = null;
 
 	/**
-	   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	   * @generated
-	   */
+	 * @generated
+	 */
 	private EClass emsVitalSignsSectionEClass = null;
 
 	/**
-	   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	   * @generated
-	   */
+	 * @generated
+	 */
 	private EClass derivedEntryEClass = null;
 
 	/**
-	   * Creates an instance of the model <b>Package</b>, registered with
-	   * {@link org.eclipse.emf.ecore.EPackage.Registry EPackage.Registry} by the package
-	   * package URI value.
-	   * <p>Note: the correct way to create the package is via the static
-	   * factory method {@link #init init()}, which also performs
-	   * initialization of the package, or returns the registered package,
-	   * if one already exists.
-	   * <!-- begin-user-doc -->
+	 * Creates an instance of the model <b>Package</b>, registered with
+	 * {@link org.eclipse.emf.ecore.EPackage.Registry EPackage.Registry} by the package
+	 * package URI value.
+	 * <p>Note: the correct way to create the package is via the static
+	 * factory method {@link #init init()}, which also performs
+	 * initialization of the package, or returns the registered package,
+	 * if one already exists.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	   * @see org.eclipse.emf.ecore.EPackage.Registry
-	   * @see org.openhealthtools.mdht.uml.cda.emspcr.EmspcrPackage#eNS_URI
-	   * @see #init()
-	   * @generated
-	   */
+	 * @see org.eclipse.emf.ecore.EPackage.Registry
+	 * @see org.openhealthtools.mdht.uml.cda.emspcr.EmspcrPackage#eNS_URI
+	 * @see #init()
+	 * @generated
+	 */
 	private EmspcrPackageImpl() {
 		super(eNS_URI, EmspcrFactory.eINSTANCE);
 	}
 
 	/**
-	   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	   * @generated
-	   */
+	 * @generated
+	 */
 	private static boolean isInited = false;
 
 	/**
-	   * Creates, registers, and initializes the <b>Package</b> for this model, and for any others upon which it depends.
-	   * 
-	   * <p>This method is used to initialize {@link EmspcrPackage#eINSTANCE} when that field is accessed.
-	   * Clients should not invoke it directly. Instead, they should simply access that field to obtain the package.
-	   * <!-- begin-user-doc -->
+	 * Creates, registers, and initializes the <b>Package</b> for this model, and for any others upon which it depends.
+	 * 
+	 * <p>This method is used to initialize {@link EmspcrPackage#eINSTANCE} when that field is accessed.
+	 * Clients should not invoke it directly. Instead, they should simply access that field to obtain the package.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	   * @see #eNS_URI
-	   * @see #createPackageContents()
-	   * @see #initializePackageContents()
-	   * @generated
-	   */
+	 * @see #eNS_URI
+	 * @see #createPackageContents()
+	 * @see #initializePackageContents()
+	 * @generated
+	 */
 	public static EmspcrPackage init() {
 		if (isInited) {
 			return (EmspcrPackage) EPackage.Registry.INSTANCE.getEPackage(EmspcrPackage.eNS_URI);
@@ -296,235 +296,235 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage {
 	}
 
 	/**
-	   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	   * @generated
-	   */
+	 * @generated
+	 */
 	public EClass getPatientCareReport() {
 		return patientCareReportEClass;
 	}
 
 	/**
-	   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	   * @generated
-	   */
+	 * @generated
+	 */
 	public EClass getEMSBillingSection() {
 		return emsBillingSectionEClass;
 	}
 
 	/**
-	   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	   * @generated
-	   */
+	 * @generated
+	 */
 	public EClass getEMSInjuryIncidentDescriptionSection() {
 		return emsInjuryIncidentDescriptionSectionEClass;
 	}
 
 	/**
-	   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	   * @generated
-	   */
+	 * @generated
+	 */
 	public EClass getEMSCurrentMedicationSection() {
 		return emsCurrentMedicationSectionEClass;
 	}
 
 	/**
-	   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	   * @generated
-	   */
+	 * @generated
+	 */
 	public EClass getEMSCardiacArrestEventSection() {
 		return emsCardiacArrestEventSectionEClass;
 	}
 
 	/**
-	   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	   * @generated
-	   */
+	 * @generated
+	 */
 	public EClass getEMSAdvanceDirectivesSection() {
 		return emsAdvanceDirectivesSectionEClass;
 	}
 
 	/**
-	   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	   * @generated
-	   */
+	 * @generated
+	 */
 	public EClass getEMSAllergiesAndAdverseReactionsSection() {
 		return emsAllergiesAndAdverseReactionsSectionEClass;
 	}
 
 	/**
-	   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	   * @generated
-	   */
+	 * @generated
+	 */
 	public EClass getEMSPastMedicalHistorySection() {
 		return emsPastMedicalHistorySectionEClass;
 	}
 
 	/**
-	   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	   * @generated
-	   */
+	 * @generated
+	 */
 	public EClass getEMSSocialHistorySection() {
 		return emsSocialHistorySectionEClass;
 	}
 
 	/**
-	   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	   * @generated
-	   */
+	 * @generated
+	 */
 	public EClass getEMSPhysicalAssessmentSection() {
 		return emsPhysicalAssessmentSectionEClass;
 	}
 
 	/**
-	   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	   * @generated
-	   */
+	 * @generated
+	 */
 	public EClass getEMSMedicationsAdministeredSection() {
 		return emsMedicationsAdministeredSectionEClass;
 	}
 
 	/**
-	   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	   * @generated
-	   */
+	 * @generated
+	 */
 	public EClass getEMSProceduresPerformedSection() {
 		return emsProceduresPerformedSectionEClass;
 	}
 
 	/**
-	   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	   * @generated
-	   */
+	 * @generated
+	 */
 	public EClass getEMSPatientCareNarrativeSection() {
 		return emsPatientCareNarrativeSectionEClass;
 	}
 
 	/**
-	   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	   * @generated
-	   */
+	 * @generated
+	 */
 	public EClass getEMSSceneSection() {
 		return emsSceneSectionEClass;
 	}
 
 	/**
-	   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	   * @generated
-	   */
+	 * @generated
+	 */
 	public EClass getEMSDispatchSection() {
 		return emsDispatchSectionEClass;
 	}
 
 	/**
-	   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	   * @generated
-	   */
+	 * @generated
+	 */
 	public EClass getEMSDispositionSection() {
 		return emsDispositionSectionEClass;
 	}
 
 	/**
-	   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	   * @generated
-	   */
+	 * @generated
+	 */
 	public EClass getEMSPersonnelAdverseEventSection() {
 		return emsPersonnelAdverseEventSectionEClass;
 	}
 
 	/**
-	   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	   * @generated
-	   */
+	 * @generated
+	 */
 	public EClass getEMSProtocolSection() {
 		return emsProtocolSectionEClass;
 	}
 
 	/**
-	   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	   * @generated
-	   */
+	 * @generated
+	 */
 	public EClass getEMSResponseSection() {
 		return emsResponseSectionEClass;
 	}
 
 	/**
-	   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	   * @generated
-	   */
+	 * @generated
+	 */
 	public EClass getEMSSituationSection() {
 		return emsSituationSectionEClass;
 	}
 
 	/**
-	   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	   * @generated
-	   */
+	 * @generated
+	 */
 	public EClass getEMSTimesSection() {
 		return emsTimesSectionEClass;
 	}
 
 	/**
-	   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	   * @generated
-	   */
+	 * @generated
+	 */
 	public EClass getEMSVitalSignsSection() {
 		return emsVitalSignsSectionEClass;
 	}
 
 	/**
-	   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	   * @generated
-	   */
+	 * @generated
+	 */
 	public EClass getDerivedEntry() {
 		return derivedEntryEClass;
 	}
 
 	/**
-	   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	   * @generated
-	   */
+	 * @generated
+	 */
 	public EmspcrFactory getEmspcrFactory() {
 		return (EmspcrFactory) getEFactoryInstance();
 	}
 
 	/**
-	   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	   * @generated
-	   */
+	 * @generated
+	 */
 	private boolean isCreated = false;
 
 	/**
-	   * Creates the meta-model objects for the package.  This method is
-	   * guarded to have no affect on any invocation but its first.
-	   * <!-- begin-user-doc -->
+	 * Creates the meta-model objects for the package.  This method is
+	 * guarded to have no affect on any invocation but its first.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	   * @generated
-	   */
+	 * @generated
+	 */
 	public void createPackageContents() {
 		if (isCreated) {
 			return;
@@ -580,19 +580,19 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage {
 	}
 
 	/**
-	   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	   * @generated
-	   */
+	 * @generated
+	 */
 	private boolean isInitialized = false;
 
 	/**
-	   * Complete the initialization of the package and its meta-model.  This
-	   * method is guarded to have no affect on any invocation but its first.
-	   * <!-- begin-user-doc -->
+	 * Complete the initialization of the package and its meta-model.  This
+	 * method is guarded to have no affect on any invocation but its first.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	   * @generated
-	   */
+	 * @generated
+	 */
 	public void initializePackageContents() {
 		if (isInitialized) {
 			return;
@@ -3558,22 +3558,22 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage {
 	}
 
 	/**
-	   * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml</b>.
-	   * <!-- begin-user-doc -->
+	 * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml</b>.
+	 * <!-- begin-user-doc -->
 	   * <!-- end-user-doc -->
-	   * @generated
-	   */
+	 * @generated
+	 */
 	protected void createUmlAnnotations() {
 		String source = "http://www.openhealthtools.org/mdht/uml";
 		addAnnotation(this, source, new String[] { "initializers", "org.openhealthtools.mdht.uml.cda.emspcr" });
 	}
 
 	/**
-	   * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation</b>.
-	   * <!-- begin-user-doc -->
+	 * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation</b>.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	   * @generated
-	   */
+	 * @generated
+	 */
 	protected void createAnnotationAnnotations() {
 		String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation";
 		addAnnotation(
@@ -3801,11 +3801,11 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage {
 	}
 
 	/**
-	   * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrPatientCareReportEMSRecordTargetPatientRole</b>.
-	   * <!-- begin-user-doc -->
+	 * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrPatientCareReportEMSRecordTargetPatientRole</b>.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	   * @generated
-	   */
+	 * @generated
+	 */
 	protected void createEmspcrPatientCareReportEMSRecordTargetPatientRoleAnnotations() {
 		String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrPatientCareReportEMSRecordTargetPatientRole";
 		addAnnotation(
@@ -3813,11 +3813,11 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage {
 	}
 
 	/**
-	   * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrPatientCareReportEMSRecordTargetPatientRolePatient</b>.
-	   * <!-- begin-user-doc -->
+	 * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrPatientCareReportEMSRecordTargetPatientRolePatient</b>.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	   * @generated
-	   */
+	 * @generated
+	 */
 	protected void createEmspcrPatientCareReportEMSRecordTargetPatientRolePatientAnnotations() {
 		String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrPatientCareReportEMSRecordTargetPatientRolePatient";
 		addAnnotation(
@@ -3837,11 +3837,11 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage {
 	}
 
 	/**
-	   * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrPatientCareReportEMSAuthoringDeviceParticipation</b>.
-	   * <!-- begin-user-doc -->
+	 * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrPatientCareReportEMSAuthoringDeviceParticipation</b>.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	   * @generated
-	   */
+	 * @generated
+	 */
 	protected void createEmspcrPatientCareReportEMSAuthoringDeviceParticipationAnnotations() {
 		String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrPatientCareReportEMSAuthoringDeviceParticipation";
 		addAnnotation(patientCareReportEClass, source, new String[] {
@@ -3849,11 +3849,11 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage {
 	}
 
 	/**
-	   * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrPatientCareReportEMSAuthoringDeviceParticipationEMSAuthoringDeviceRole</b>.
-	   * <!-- begin-user-doc -->
+	 * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrPatientCareReportEMSAuthoringDeviceParticipationEMSAuthoringDeviceRole</b>.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	   * @generated
-	   */
+	 * @generated
+	 */
 	protected void createEmspcrPatientCareReportEMSAuthoringDeviceParticipationEMSAuthoringDeviceRoleAnnotations() {
 		String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrPatientCareReportEMSAuthoringDeviceParticipationEMSAuthoringDeviceRole";
 		addAnnotation(patientCareReportEClass, source, new String[] {
@@ -3861,11 +3861,11 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage {
 	}
 
 	/**
-	   * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrPatientCareReportEMSAuthoringDeviceParticipationEMSAuthoringDeviceRoleEMSAuthoringDevice</b>.
-	   * <!-- begin-user-doc -->
+	 * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrPatientCareReportEMSAuthoringDeviceParticipationEMSAuthoringDeviceRoleEMSAuthoringDevice</b>.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	   * @generated
-	   */
+	 * @generated
+	 */
 	protected void createEmspcrPatientCareReportEMSAuthoringDeviceParticipationEMSAuthoringDeviceRoleEMSAuthoringDeviceAnnotations() {
 		String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrPatientCareReportEMSAuthoringDeviceParticipationEMSAuthoringDeviceRoleEMSAuthoringDevice";
 		addAnnotation(patientCareReportEClass, source, new String[] {
@@ -3874,11 +3874,11 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage {
 	}
 
 	/**
-	   * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrPatientCareReportEMSHumanAuthorParticipationEMSHumanAuthorRole</b>.
-	   * <!-- begin-user-doc -->
+	 * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrPatientCareReportEMSHumanAuthorParticipationEMSHumanAuthorRole</b>.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	   * @generated
-	   */
+	 * @generated
+	 */
 	protected void createEmspcrPatientCareReportEMSHumanAuthorParticipationEMSHumanAuthorRoleAnnotations() {
 		String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrPatientCareReportEMSHumanAuthorParticipationEMSHumanAuthorRole";
 		addAnnotation(
@@ -3888,11 +3888,11 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage {
 	}
 
 	/**
-	   * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrPatientCareReportEMSHumanAuthorParticipationEMSHumanAuthorRoleEMSHumanAuthor</b>.
-	   * <!-- begin-user-doc -->
+	 * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrPatientCareReportEMSHumanAuthorParticipationEMSHumanAuthorRoleEMSHumanAuthor</b>.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	   * @generated
-	   */
+	 * @generated
+	 */
 	protected void createEmspcrPatientCareReportEMSHumanAuthorParticipationEMSHumanAuthorRoleEMSHumanAuthorAnnotations() {
 		String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrPatientCareReportEMSHumanAuthorParticipationEMSHumanAuthorRoleEMSHumanAuthor";
 		addAnnotation(patientCareReportEClass, source, new String[] {
@@ -3900,11 +3900,11 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage {
 	}
 
 	/**
-	   * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrPatientCareReportEMSEncompassingEncounterRelationship</b>.
-	   * <!-- begin-user-doc -->
+	 * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrPatientCareReportEMSEncompassingEncounterRelationship</b>.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	   * @generated
-	   */
+	 * @generated
+	 */
 	protected void createEmspcrPatientCareReportEMSEncompassingEncounterRelationshipAnnotations() {
 		String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrPatientCareReportEMSEncompassingEncounterRelationship";
 		addAnnotation(patientCareReportEClass, source, new String[] {
@@ -3912,11 +3912,11 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage {
 	}
 
 	/**
-	   * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrPatientCareReportEMSEncompassingEncounterRelationshipEncompassingEncounter</b>.
-	   * <!-- begin-user-doc -->
+	 * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrPatientCareReportEMSEncompassingEncounterRelationshipEncompassingEncounter</b>.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	   * @generated
-	   */
+	 * @generated
+	 */
 	protected void createEmspcrPatientCareReportEMSEncompassingEncounterRelationshipEncompassingEncounterAnnotations() {
 		String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrPatientCareReportEMSEncompassingEncounterRelationshipEncompassingEncounter";
 		addAnnotation(patientCareReportEClass, source, new String[] {
@@ -3924,11 +3924,11 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage {
 	}
 
 	/**
-	   * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrPatientCareReportEMSEncompassingEncounterRelationshipEncompassingEncounterLocation</b>.
-	   * <!-- begin-user-doc -->
+	 * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrPatientCareReportEMSEncompassingEncounterRelationshipEncompassingEncounterLocation</b>.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	   * @generated
-	   */
+	 * @generated
+	 */
 	protected void createEmspcrPatientCareReportEMSEncompassingEncounterRelationshipEncompassingEncounterLocationAnnotations() {
 		String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrPatientCareReportEMSEncompassingEncounterRelationshipEncompassingEncounterLocation";
 		addAnnotation(patientCareReportEClass, source, new String[] {
@@ -3936,11 +3936,11 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage {
 	}
 
 	/**
-	   * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrPatientCareReportEMSEncompassingEncounterRelationshipEncompassingEncounterLocationHealthCareFacility</b>.
-	   * <!-- begin-user-doc -->
+	 * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrPatientCareReportEMSEncompassingEncounterRelationshipEncompassingEncounterLocationHealthCareFacility</b>.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	   * @generated
-	   */
+	 * @generated
+	 */
 	protected void createEmspcrPatientCareReportEMSEncompassingEncounterRelationshipEncompassingEncounterLocationHealthCareFacilityAnnotations() {
 		String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrPatientCareReportEMSEncompassingEncounterRelationshipEncompassingEncounterLocationHealthCareFacility";
 		addAnnotation(patientCareReportEClass, source, new String[] {
@@ -3949,11 +3949,11 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage {
 	}
 
 	/**
-	   * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrPatientCareReportEMSEncompassingEncounterRelationshipEncompassingEncounterLocationHealthCareFacilityPlace</b>.
-	   * <!-- begin-user-doc -->
+	 * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrPatientCareReportEMSEncompassingEncounterRelationshipEncompassingEncounterLocationHealthCareFacilityPlace</b>.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	   * @generated
-	   */
+	 * @generated
+	 */
 	protected void createEmspcrPatientCareReportEMSEncompassingEncounterRelationshipEncompassingEncounterLocationHealthCareFacilityPlaceAnnotations() {
 		String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrPatientCareReportEMSEncompassingEncounterRelationshipEncompassingEncounterLocationHealthCareFacilityPlace";
 		addAnnotation(patientCareReportEClass, source, new String[] {
@@ -3962,11 +3962,11 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage {
 	}
 
 	/**
-	   * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrPatientCareReportEMSServiceEventParticipationEMSServiceEvent</b>.
-	   * <!-- begin-user-doc -->
+	 * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrPatientCareReportEMSServiceEventParticipationEMSServiceEvent</b>.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	   * @generated
-	   */
+	 * @generated
+	 */
 	protected void createEmspcrPatientCareReportEMSServiceEventParticipationEMSServiceEventAnnotations() {
 		String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrPatientCareReportEMSServiceEventParticipationEMSServiceEvent";
 		addAnnotation(patientCareReportEClass, source, new String[] {
@@ -3975,11 +3975,11 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage {
 	}
 
 	/**
-	   * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrPatientCareReportEMSServiceEventParticipationEMSServiceEventEMSPerformerParticipation</b>.
-	   * <!-- begin-user-doc -->
+	 * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrPatientCareReportEMSServiceEventParticipationEMSServiceEventEMSPerformerParticipation</b>.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	   * @generated
-	   */
+	 * @generated
+	 */
 	protected void createEmspcrPatientCareReportEMSServiceEventParticipationEMSServiceEventEMSPerformerParticipationAnnotations() {
 		String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrPatientCareReportEMSServiceEventParticipationEMSServiceEventEMSPerformerParticipation";
 		addAnnotation(patientCareReportEClass, source, new String[] {
@@ -3988,11 +3988,11 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage {
 	}
 
 	/**
-	   * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrPatientCareReportEMSServiceEventParticipationEMSServiceEventEMSPerformerParticipationEMSPerformerRole</b>.
-	   * <!-- begin-user-doc -->
+	 * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrPatientCareReportEMSServiceEventParticipationEMSServiceEventEMSPerformerParticipationEMSPerformerRole</b>.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	   * @generated
-	   */
+	 * @generated
+	 */
 	protected void createEmspcrPatientCareReportEMSServiceEventParticipationEMSServiceEventEMSPerformerParticipationEMSPerformerRoleAnnotations() {
 		String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrPatientCareReportEMSServiceEventParticipationEMSServiceEventEMSPerformerParticipationEMSPerformerRole";
 		addAnnotation(patientCareReportEClass, source, new String[] {
@@ -4001,22 +4001,22 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage {
 	}
 
 	/**
-	   * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrPatientCareReportEMSParentDocumentRelationship</b>.
-	   * <!-- begin-user-doc -->
+	 * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrPatientCareReportEMSParentDocumentRelationship</b>.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	   * @generated
-	   */
+	 * @generated
+	 */
 	protected void createEmspcrPatientCareReportEMSParentDocumentRelationshipAnnotations() {
 		String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrPatientCareReportEMSParentDocumentRelationship";
 		addAnnotation(patientCareReportEClass, source, new String[] { "typeCode", "RPLC" });
 	}
 
 	/**
-	   * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrPatientCareReportEMSDestinationParticipantParticipation</b>.
-	   * <!-- begin-user-doc -->
+	 * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrPatientCareReportEMSDestinationParticipantParticipation</b>.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	   * @generated
-	   */
+	 * @generated
+	 */
 	protected void createEmspcrPatientCareReportEMSDestinationParticipantParticipationAnnotations() {
 		String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrPatientCareReportEMSDestinationParticipantParticipation";
 		addAnnotation(patientCareReportEClass, source, new String[] {
@@ -4024,11 +4024,11 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage {
 	}
 
 	/**
-	   * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrPatientCareReportEMSDestinationParticipantParticipationEMSDestinationRole</b>.
-	   * <!-- begin-user-doc -->
+	 * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrPatientCareReportEMSDestinationParticipantParticipationEMSDestinationRole</b>.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	   * @generated
-	   */
+	 * @generated
+	 */
 	protected void createEmspcrPatientCareReportEMSDestinationParticipantParticipationEMSDestinationRoleAnnotations() {
 		String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrPatientCareReportEMSDestinationParticipantParticipationEMSDestinationRole";
 		addAnnotation(patientCareReportEClass, source, new String[] {
@@ -4037,11 +4037,11 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage {
 	}
 
 	/**
-	   * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrPatientCareReportEMSDestinationParticipantParticipationEMSDestinationRoleDestinationOrganization</b>.
-	   * <!-- begin-user-doc -->
+	 * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrPatientCareReportEMSDestinationParticipantParticipationEMSDestinationRoleDestinationOrganization</b>.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	   * @generated
-	   */
+	 * @generated
+	 */
 	protected void createEmspcrPatientCareReportEMSDestinationParticipantParticipationEMSDestinationRoleDestinationOrganizationAnnotations() {
 		String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrPatientCareReportEMSDestinationParticipantParticipationEMSDestinationRoleDestinationOrganization";
 		addAnnotation(patientCareReportEClass, source, new String[] {
@@ -4049,22 +4049,22 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage {
 	}
 
 	/**
-	   * Initializes the annotations for <b>duplicates</b>.
-	   * <!-- begin-user-doc -->
+	 * Initializes the annotations for <b>duplicates</b>.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	   * @generated
-	   */
+	 * @generated
+	 */
 	protected void createDuplicatesAnnotations() {
 		String source = "duplicates";
 		addAnnotation(patientCareReportEClass, source, new String[] {});
 	}
 
 	/**
-	   * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSBillingSectionBillingConditionEntry</b>.
-	   * <!-- begin-user-doc -->
+	 * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSBillingSectionBillingConditionEntry</b>.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	   * @generated
-	   */
+	 * @generated
+	 */
 	protected void createEmspcrEMSBillingSectionBillingConditionEntryAnnotations() {
 		String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSBillingSectionBillingConditionEntry";
 		addAnnotation(emsBillingSectionEClass, source, new String[] {
@@ -4072,11 +4072,11 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage {
 	}
 
 	/**
-	   * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSBillingSectionBillingConditionEntryBillingCondition</b>.
-	   * <!-- begin-user-doc -->
+	 * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSBillingSectionBillingConditionEntryBillingCondition</b>.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	   * @generated
-	   */
+	 * @generated
+	 */
 	protected void createEmspcrEMSBillingSectionBillingConditionEntryBillingConditionAnnotations() {
 		String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSBillingSectionBillingConditionEntryBillingCondition";
 		addAnnotation(
@@ -4099,11 +4099,11 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage {
 	}
 
 	/**
-	   * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSBillingSectionLOSDerivedEntry</b>.
-	   * <!-- begin-user-doc -->
+	 * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSBillingSectionLOSDerivedEntry</b>.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	   * @generated
-	   */
+	 * @generated
+	 */
 	protected void createEmspcrEMSBillingSectionLOSDerivedEntryAnnotations() {
 		String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSBillingSectionLOSDerivedEntry";
 		addAnnotation(emsBillingSectionEClass, source, new String[] {
@@ -4111,11 +4111,11 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage {
 	}
 
 	/**
-	   * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSBillingSectionLOSDerivedEntryLevelOfService</b>.
-	   * <!-- begin-user-doc -->
+	 * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSBillingSectionLOSDerivedEntryLevelOfService</b>.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	   * @generated
-	   */
+	 * @generated
+	 */
 	protected void createEmspcrEMSBillingSectionLOSDerivedEntryLevelOfServiceAnnotations() {
 		String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSBillingSectionLOSDerivedEntryLevelOfService";
 		addAnnotation(emsBillingSectionEClass, source, new String[] {
@@ -4127,11 +4127,11 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage {
 	}
 
 	/**
-	   * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSInjuryIncidentDescriptionSectionDerivedEntry</b>.
-	   * <!-- begin-user-doc -->
+	 * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSInjuryIncidentDescriptionSectionDerivedEntry</b>.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	   * @generated
-	   */
+	 * @generated
+	 */
 	protected void createEmspcrEMSInjuryIncidentDescriptionSectionDerivedEntryAnnotations() {
 		String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSInjuryIncidentDescriptionSectionDerivedEntry";
 		addAnnotation(emsInjuryIncidentDescriptionSectionEClass, source, new String[] {
@@ -4140,11 +4140,11 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage {
 	}
 
 	/**
-	   * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSInjuryIncidentDescriptionSectionDerivedEntryInjuryCauseCategory</b>.
-	   * <!-- begin-user-doc -->
+	 * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSInjuryIncidentDescriptionSectionDerivedEntryInjuryCauseCategory</b>.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	   * @generated
-	   */
+	 * @generated
+	 */
 	protected void createEmspcrEMSInjuryIncidentDescriptionSectionDerivedEntryInjuryCauseCategoryAnnotations() {
 		String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSInjuryIncidentDescriptionSectionDerivedEntryInjuryCauseCategory";
 		addAnnotation(emsInjuryIncidentDescriptionSectionEClass, source, new String[] {
@@ -4155,11 +4155,11 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage {
 	}
 
 	/**
-	   * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSInjuryIncidentDescriptionSectionDerivedEntryInjuryMechanism</b>.
-	   * <!-- begin-user-doc -->
+	 * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSInjuryIncidentDescriptionSectionDerivedEntryInjuryMechanism</b>.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	   * @generated
-	   */
+	 * @generated
+	 */
 	protected void createEmspcrEMSInjuryIncidentDescriptionSectionDerivedEntryInjuryMechanismAnnotations() {
 		String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSInjuryIncidentDescriptionSectionDerivedEntryInjuryMechanism";
 		addAnnotation(emsInjuryIncidentDescriptionSectionEClass, source, new String[] {
@@ -4170,11 +4170,11 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage {
 	}
 
 	/**
-	   * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSInjuryIncidentDescriptionSectionDerivedEntryTraumaCenterCriteria</b>.
-	   * <!-- begin-user-doc -->
+	 * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSInjuryIncidentDescriptionSectionDerivedEntryTraumaCenterCriteria</b>.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	   * @generated
-	   */
+	 * @generated
+	 */
 	protected void createEmspcrEMSInjuryIncidentDescriptionSectionDerivedEntryTraumaCenterCriteriaAnnotations() {
 		String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSInjuryIncidentDescriptionSectionDerivedEntryTraumaCenterCriteria";
 		addAnnotation(emsInjuryIncidentDescriptionSectionEClass, source, new String[] {
@@ -4185,11 +4185,11 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage {
 	}
 
 	/**
-	   * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSInjuryIncidentDescriptionSectionDerivedEntryInjuryRiskFactor</b>.
-	   * <!-- begin-user-doc -->
+	 * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSInjuryIncidentDescriptionSectionDerivedEntryInjuryRiskFactor</b>.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	   * @generated
-	   */
+	 * @generated
+	 */
 	protected void createEmspcrEMSInjuryIncidentDescriptionSectionDerivedEntryInjuryRiskFactorAnnotations() {
 		String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSInjuryIncidentDescriptionSectionDerivedEntryInjuryRiskFactor";
 		addAnnotation(emsInjuryIncidentDescriptionSectionEClass, source, new String[] {
@@ -4200,11 +4200,11 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage {
 	}
 
 	/**
-	   * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSInjuryIncidentDescriptionSectionDerivedEntryVehicleImpactArea</b>.
-	   * <!-- begin-user-doc -->
+	 * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSInjuryIncidentDescriptionSectionDerivedEntryVehicleImpactArea</b>.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	   * @generated
-	   */
+	 * @generated
+	 */
 	protected void createEmspcrEMSInjuryIncidentDescriptionSectionDerivedEntryVehicleImpactAreaAnnotations() {
 		String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSInjuryIncidentDescriptionSectionDerivedEntryVehicleImpactArea";
 		addAnnotation(emsInjuryIncidentDescriptionSectionEClass, source, new String[] {
@@ -4215,11 +4215,11 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage {
 	}
 
 	/**
-	   * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSInjuryIncidentDescriptionSectionDerivedEntryPatientLocationInVehicle</b>.
-	   * <!-- begin-user-doc -->
+	 * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSInjuryIncidentDescriptionSectionDerivedEntryPatientLocationInVehicle</b>.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	   * @generated
-	   */
+	 * @generated
+	 */
 	protected void createEmspcrEMSInjuryIncidentDescriptionSectionDerivedEntryPatientLocationInVehicleAnnotations() {
 		String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSInjuryIncidentDescriptionSectionDerivedEntryPatientLocationInVehicle";
 		addAnnotation(emsInjuryIncidentDescriptionSectionEClass, source, new String[] {
@@ -4230,11 +4230,11 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage {
 	}
 
 	/**
-	   * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSInjuryIncidentDescriptionSectionDerivedEntryVehicleOccupantSafetyEquipment</b>.
-	   * <!-- begin-user-doc -->
+	 * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSInjuryIncidentDescriptionSectionDerivedEntryVehicleOccupantSafetyEquipment</b>.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	   * @generated
-	   */
+	 * @generated
+	 */
 	protected void createEmspcrEMSInjuryIncidentDescriptionSectionDerivedEntryVehicleOccupantSafetyEquipmentAnnotations() {
 		String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSInjuryIncidentDescriptionSectionDerivedEntryVehicleOccupantSafetyEquipment";
 		addAnnotation(emsInjuryIncidentDescriptionSectionEClass, source, new String[] {
@@ -4245,11 +4245,11 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage {
 	}
 
 	/**
-	   * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSInjuryIncidentDescriptionSectionDerivedEntryAirbagDeploymentStatus</b>.
-	   * <!-- begin-user-doc -->
+	 * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSInjuryIncidentDescriptionSectionDerivedEntryAirbagDeploymentStatus</b>.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	   * @generated
-	   */
+	 * @generated
+	 */
 	protected void createEmspcrEMSInjuryIncidentDescriptionSectionDerivedEntryAirbagDeploymentStatusAnnotations() {
 		String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSInjuryIncidentDescriptionSectionDerivedEntryAirbagDeploymentStatus";
 		addAnnotation(emsInjuryIncidentDescriptionSectionEClass, source, new String[] {
@@ -4260,11 +4260,11 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage {
 	}
 
 	/**
-	   * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSInjuryIncidentDescriptionSectionDerivedEntryHeightOfFall</b>.
-	   * <!-- begin-user-doc -->
+	 * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSInjuryIncidentDescriptionSectionDerivedEntryHeightOfFall</b>.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	   * @generated
-	   */
+	 * @generated
+	 */
 	protected void createEmspcrEMSInjuryIncidentDescriptionSectionDerivedEntryHeightOfFallAnnotations() {
 		String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSInjuryIncidentDescriptionSectionDerivedEntryHeightOfFall";
 		addAnnotation(emsInjuryIncidentDescriptionSectionEClass, source, new String[] {
@@ -4273,11 +4273,11 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage {
 	}
 
 	/**
-	   * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSInjuryIncidentDescriptionSectionDerivedEntryDisasterType</b>.
-	   * <!-- begin-user-doc -->
+	 * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSInjuryIncidentDescriptionSectionDerivedEntryDisasterType</b>.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	   * @generated
-	   */
+	 * @generated
+	 */
 	protected void createEmspcrEMSInjuryIncidentDescriptionSectionDerivedEntryDisasterTypeAnnotations() {
 		String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSInjuryIncidentDescriptionSectionDerivedEntryDisasterType";
 		addAnnotation(emsInjuryIncidentDescriptionSectionEClass, source, new String[] {
@@ -4288,11 +4288,11 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage {
 	}
 
 	/**
-	   * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSCurrentMedicationSectionDerivedEntry</b>.
-	   * <!-- begin-user-doc -->
+	 * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSCurrentMedicationSectionDerivedEntry</b>.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	   * @generated
-	   */
+	 * @generated
+	 */
 	protected void createEmspcrEMSCurrentMedicationSectionDerivedEntryAnnotations() {
 		String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSCurrentMedicationSectionDerivedEntry";
 		addAnnotation(emsCurrentMedicationSectionEClass, source, new String[] {
@@ -4301,11 +4301,11 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage {
 	}
 
 	/**
-	   * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSCurrentMedicationSectionDerivedEntryCurrentlyOnMedication</b>.
-	   * <!-- begin-user-doc -->
+	 * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSCurrentMedicationSectionDerivedEntryCurrentlyOnMedication</b>.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	   * @generated
-	   */
+	 * @generated
+	 */
 	protected void createEmspcrEMSCurrentMedicationSectionDerivedEntryCurrentlyOnMedicationAnnotations() {
 		String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSCurrentMedicationSectionDerivedEntryCurrentlyOnMedication";
 		addAnnotation(emsCurrentMedicationSectionEClass, source, new String[] {
@@ -4315,11 +4315,11 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage {
 	}
 
 	/**
-	   * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSCurrentMedicationSectionDerivedEntryPatientOnAnticoagulants</b>.
-	   * <!-- begin-user-doc -->
+	 * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSCurrentMedicationSectionDerivedEntryPatientOnAnticoagulants</b>.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	   * @generated
-	   */
+	 * @generated
+	 */
 	protected void createEmspcrEMSCurrentMedicationSectionDerivedEntryPatientOnAnticoagulantsAnnotations() {
 		String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSCurrentMedicationSectionDerivedEntryPatientOnAnticoagulants";
 		addAnnotation(emsCurrentMedicationSectionEClass, source, new String[] {
@@ -4329,11 +4329,11 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage {
 	}
 
 	/**
-	   * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSCurrentMedicationSectionDerivedEntryEMSCurrentMedication</b>.
-	   * <!-- begin-user-doc -->
+	 * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSCurrentMedicationSectionDerivedEntryEMSCurrentMedication</b>.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	   * @generated
-	   */
+	 * @generated
+	 */
 	protected void createEmspcrEMSCurrentMedicationSectionDerivedEntryEMSCurrentMedicationAnnotations() {
 		String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSCurrentMedicationSectionDerivedEntryEMSCurrentMedication";
 		addAnnotation(emsCurrentMedicationSectionEClass, source, new String[] {
@@ -4346,11 +4346,11 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage {
 	}
 
 	/**
-	   * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSCurrentMedicationSectionDerivedEntryEMSCurrentMedicationEMSCurrentMedicationConsumable</b>.
-	   * <!-- begin-user-doc -->
+	 * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSCurrentMedicationSectionDerivedEntryEMSCurrentMedicationEMSCurrentMedicationConsumable</b>.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	   * @generated
-	   */
+	 * @generated
+	 */
 	protected void createEmspcrEMSCurrentMedicationSectionDerivedEntryEMSCurrentMedicationEMSCurrentMedicationConsumableAnnotations() {
 		String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSCurrentMedicationSectionDerivedEntryEMSCurrentMedicationEMSCurrentMedicationConsumable";
 		addAnnotation(emsCurrentMedicationSectionEClass, source, new String[] {
@@ -4358,11 +4358,11 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage {
 	}
 
 	/**
-	   * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSCurrentMedicationSectionDerivedEntryEMSCurrentMedicationEMSCurrentMedicationConsumableEMSCurrentMedicationProduct</b>.
-	   * <!-- begin-user-doc -->
+	 * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSCurrentMedicationSectionDerivedEntryEMSCurrentMedicationEMSCurrentMedicationConsumableEMSCurrentMedicationProduct</b>.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	   * @generated
-	   */
+	 * @generated
+	 */
 	protected void createEmspcrEMSCurrentMedicationSectionDerivedEntryEMSCurrentMedicationEMSCurrentMedicationConsumableEMSCurrentMedicationProductAnnotations() {
 		String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSCurrentMedicationSectionDerivedEntryEMSCurrentMedicationEMSCurrentMedicationConsumableEMSCurrentMedicationProduct";
 		addAnnotation(emsCurrentMedicationSectionEClass, source, new String[] {
@@ -4370,11 +4370,11 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage {
 	}
 
 	/**
-	   * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSCurrentMedicationSectionDerivedEntryEMSCurrentMedicationEMSCurrentMedicationConsumableEMSCurrentMedicationProductEMSCurrentMedicationDrug</b>.
-	   * <!-- begin-user-doc -->
+	 * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSCurrentMedicationSectionDerivedEntryEMSCurrentMedicationEMSCurrentMedicationConsumableEMSCurrentMedicationProductEMSCurrentMedicationDrug</b>.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	   * @generated
-	   */
+	 * @generated
+	 */
 	protected void createEmspcrEMSCurrentMedicationSectionDerivedEntryEMSCurrentMedicationEMSCurrentMedicationConsumableEMSCurrentMedicationProductEMSCurrentMedicationDrugAnnotations() {
 		String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSCurrentMedicationSectionDerivedEntryEMSCurrentMedicationEMSCurrentMedicationConsumableEMSCurrentMedicationProductEMSCurrentMedicationDrug";
 		addAnnotation(emsCurrentMedicationSectionEClass, source, new String[] {
@@ -4383,11 +4383,11 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage {
 	}
 
 	/**
-	   * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSCardiacArrestEventSectionDerivedEntry</b>.
-	   * <!-- begin-user-doc -->
+	 * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSCardiacArrestEventSectionDerivedEntry</b>.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	   * @generated
-	   */
+	 * @generated
+	 */
 	protected void createEmspcrEMSCardiacArrestEventSectionDerivedEntryAnnotations() {
 		String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSCardiacArrestEventSectionDerivedEntry";
 		addAnnotation(emsCardiacArrestEventSectionEClass, source, new String[] {
@@ -4395,11 +4395,11 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage {
 	}
 
 	/**
-	   * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSCardiacArrestEventSectionDerivedEntryCardiacArrestExistence</b>.
-	   * <!-- begin-user-doc -->
+	 * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSCardiacArrestEventSectionDerivedEntryCardiacArrestExistence</b>.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	   * @generated
-	   */
+	 * @generated
+	 */
 	protected void createEmspcrEMSCardiacArrestEventSectionDerivedEntryCardiacArrestExistenceAnnotations() {
 		String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSCardiacArrestEventSectionDerivedEntryCardiacArrestExistence";
 		addAnnotation(
@@ -4431,11 +4431,11 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage {
 	}
 
 	/**
-	   * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSCardiacArrestEventSectionDerivedEntryCardiacArrestExistenceCardiacArrestTimingRelationship</b>.
-	   * <!-- begin-user-doc -->
+	 * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSCardiacArrestEventSectionDerivedEntryCardiacArrestExistenceCardiacArrestTimingRelationship</b>.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	   * @generated
-	   */
+	 * @generated
+	 */
 	protected void createEmspcrEMSCardiacArrestEventSectionDerivedEntryCardiacArrestExistenceCardiacArrestTimingRelationshipAnnotations() {
 		String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSCardiacArrestEventSectionDerivedEntryCardiacArrestExistenceCardiacArrestTimingRelationship";
 		addAnnotation(
@@ -4450,11 +4450,11 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage {
 	}
 
 	/**
-	   * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSCardiacArrestEventSectionDerivedEntryCardiacArrestExistenceCardiacArrestTimingRelationshipCardiacArrestTiming</b>.
-	   * <!-- begin-user-doc -->
+	 * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSCardiacArrestEventSectionDerivedEntryCardiacArrestExistenceCardiacArrestTimingRelationshipCardiacArrestTiming</b>.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	   * @generated
-	   */
+	 * @generated
+	 */
 	protected void createEmspcrEMSCardiacArrestEventSectionDerivedEntryCardiacArrestExistenceCardiacArrestTimingRelationshipCardiacArrestTimingAnnotations() {
 		String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSCardiacArrestEventSectionDerivedEntryCardiacArrestExistenceCardiacArrestTimingRelationshipCardiacArrestTiming";
 		addAnnotation(emsCardiacArrestEventSectionEClass, source, new String[] {
@@ -4465,11 +4465,11 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage {
 	}
 
 	/**
-	   * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSCardiacArrestEventSectionDerivedEntryCardiacArrestExistenceCardiacArrestCauseRelationship</b>.
-	   * <!-- begin-user-doc -->
+	 * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSCardiacArrestEventSectionDerivedEntryCardiacArrestExistenceCardiacArrestCauseRelationship</b>.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	   * @generated
-	   */
+	 * @generated
+	 */
 	protected void createEmspcrEMSCardiacArrestEventSectionDerivedEntryCardiacArrestExistenceCardiacArrestCauseRelationshipAnnotations() {
 		String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSCardiacArrestEventSectionDerivedEntryCardiacArrestExistenceCardiacArrestCauseRelationship";
 		addAnnotation(
@@ -4480,11 +4480,11 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage {
 	}
 
 	/**
-	   * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSCardiacArrestEventSectionDerivedEntryCardiacArrestExistenceCardiacArrestCauseRelationshipCardiacArrestCause</b>.
-	   * <!-- begin-user-doc -->
+	 * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSCardiacArrestEventSectionDerivedEntryCardiacArrestExistenceCardiacArrestCauseRelationshipCardiacArrestCause</b>.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	   * @generated
-	   */
+	 * @generated
+	 */
 	protected void createEmspcrEMSCardiacArrestEventSectionDerivedEntryCardiacArrestExistenceCardiacArrestCauseRelationshipCardiacArrestCauseAnnotations() {
 		String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSCardiacArrestEventSectionDerivedEntryCardiacArrestExistenceCardiacArrestCauseRelationshipCardiacArrestCause";
 		addAnnotation(emsCardiacArrestEventSectionEClass, source, new String[] {
@@ -4495,11 +4495,11 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage {
 	}
 
 	/**
-	   * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSCardiacArrestEventSectionDerivedEntryCardiacArrestExistenceCardiacArrestInformantParticipation</b>.
-	   * <!-- begin-user-doc -->
+	 * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSCardiacArrestEventSectionDerivedEntryCardiacArrestExistenceCardiacArrestInformantParticipation</b>.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	   * @generated
-	   */
+	 * @generated
+	 */
 	protected void createEmspcrEMSCardiacArrestEventSectionDerivedEntryCardiacArrestExistenceCardiacArrestInformantParticipationAnnotations() {
 		String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSCardiacArrestEventSectionDerivedEntryCardiacArrestExistenceCardiacArrestInformantParticipation";
 		addAnnotation(emsCardiacArrestEventSectionEClass, source, new String[] {
@@ -4507,11 +4507,11 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage {
 	}
 
 	/**
-	   * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSCardiacArrestEventSectionDerivedEntryCardiacArrestExistenceCardiacArrestInformantParticipationCardiacArrestInformantRole</b>.
-	   * <!-- begin-user-doc -->
+	 * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSCardiacArrestEventSectionDerivedEntryCardiacArrestExistenceCardiacArrestInformantParticipationCardiacArrestInformantRole</b>.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	   * @generated
-	   */
+	 * @generated
+	 */
 	protected void createEmspcrEMSCardiacArrestEventSectionDerivedEntryCardiacArrestExistenceCardiacArrestInformantParticipationCardiacArrestInformantRoleAnnotations() {
 		String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSCardiacArrestEventSectionDerivedEntryCardiacArrestExistenceCardiacArrestInformantParticipationCardiacArrestInformantRole";
 		addAnnotation(emsCardiacArrestEventSectionEClass, source, new String[] {
@@ -4521,11 +4521,11 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage {
 	}
 
 	/**
-	   * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSCardiacArrestEventSectionDerivedEntryCardiacArrestExistencePriorCPRRelationship</b>.
-	   * <!-- begin-user-doc -->
+	 * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSCardiacArrestEventSectionDerivedEntryCardiacArrestExistencePriorCPRRelationship</b>.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	   * @generated
-	   */
+	 * @generated
+	 */
 	protected void createEmspcrEMSCardiacArrestEventSectionDerivedEntryCardiacArrestExistencePriorCPRRelationshipAnnotations() {
 		String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSCardiacArrestEventSectionDerivedEntryCardiacArrestExistencePriorCPRRelationship";
 		addAnnotation(emsCardiacArrestEventSectionEClass, source, new String[] {
@@ -4534,11 +4534,11 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage {
 	}
 
 	/**
-	   * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSCardiacArrestEventSectionDerivedEntryCardiacArrestExistencePriorCPRRelationshipPriorCPR</b>.
-	   * <!-- begin-user-doc -->
+	 * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSCardiacArrestEventSectionDerivedEntryCardiacArrestExistencePriorCPRRelationshipPriorCPR</b>.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	   * @generated
-	   */
+	 * @generated
+	 */
 	protected void createEmspcrEMSCardiacArrestEventSectionDerivedEntryCardiacArrestExistencePriorCPRRelationshipPriorCPRAnnotations() {
 		String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSCardiacArrestEventSectionDerivedEntryCardiacArrestExistencePriorCPRRelationshipPriorCPR";
 		addAnnotation(emsCardiacArrestEventSectionEClass, source, new String[] {
@@ -4548,11 +4548,11 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage {
 	}
 
 	/**
-	   * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSCardiacArrestEventSectionDerivedEntryCardiacArrestExistencePriorCPRRelationshipPriorCPRPriorCPRProviderParticipation</b>.
-	   * <!-- begin-user-doc -->
+	 * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSCardiacArrestEventSectionDerivedEntryCardiacArrestExistencePriorCPRRelationshipPriorCPRPriorCPRProviderParticipation</b>.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	   * @generated
-	   */
+	 * @generated
+	 */
 	protected void createEmspcrEMSCardiacArrestEventSectionDerivedEntryCardiacArrestExistencePriorCPRRelationshipPriorCPRPriorCPRProviderParticipationAnnotations() {
 		String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSCardiacArrestEventSectionDerivedEntryCardiacArrestExistencePriorCPRRelationshipPriorCPRPriorCPRProviderParticipation";
 		addAnnotation(emsCardiacArrestEventSectionEClass, source, new String[] {
@@ -4560,11 +4560,11 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage {
 	}
 
 	/**
-	   * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSCardiacArrestEventSectionDerivedEntryCardiacArrestExistencePriorCPRRelationshipPriorCPRPriorCPRProviderParticipationPriorCPRProvider</b>.
-	   * <!-- begin-user-doc -->
+	 * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSCardiacArrestEventSectionDerivedEntryCardiacArrestExistencePriorCPRRelationshipPriorCPRPriorCPRProviderParticipationPriorCPRProvider</b>.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	   * @generated
-	   */
+	 * @generated
+	 */
 	protected void createEmspcrEMSCardiacArrestEventSectionDerivedEntryCardiacArrestExistencePriorCPRRelationshipPriorCPRPriorCPRProviderParticipationPriorCPRProviderAnnotations() {
 		String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSCardiacArrestEventSectionDerivedEntryCardiacArrestExistencePriorCPRRelationshipPriorCPRPriorCPRProviderParticipationPriorCPRProvider";
 		addAnnotation(emsCardiacArrestEventSectionEClass, source, new String[] {
@@ -4573,11 +4573,11 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage {
 	}
 
 	/**
-	   * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSCardiacArrestEventSectionDerivedEntryCardiacArrestExistencePriorAEDRelationship</b>.
-	   * <!-- begin-user-doc -->
+	 * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSCardiacArrestEventSectionDerivedEntryCardiacArrestExistencePriorAEDRelationship</b>.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	   * @generated
-	   */
+	 * @generated
+	 */
 	protected void createEmspcrEMSCardiacArrestEventSectionDerivedEntryCardiacArrestExistencePriorAEDRelationshipAnnotations() {
 		String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSCardiacArrestEventSectionDerivedEntryCardiacArrestExistencePriorAEDRelationship";
 		addAnnotation(emsCardiacArrestEventSectionEClass, source, new String[] {
@@ -4587,11 +4587,11 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage {
 	}
 
 	/**
-	   * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSCardiacArrestEventSectionDerivedEntryCardiacArrestExistencePriorAEDRelationshipPriorAEDUse</b>.
-	   * <!-- begin-user-doc -->
+	 * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSCardiacArrestEventSectionDerivedEntryCardiacArrestExistencePriorAEDRelationshipPriorAEDUse</b>.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	   * @generated
-	   */
+	 * @generated
+	 */
 	protected void createEmspcrEMSCardiacArrestEventSectionDerivedEntryCardiacArrestExistencePriorAEDRelationshipPriorAEDUseAnnotations() {
 		String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSCardiacArrestEventSectionDerivedEntryCardiacArrestExistencePriorAEDRelationshipPriorAEDUse";
 		addAnnotation(emsCardiacArrestEventSectionEClass, source, new String[] {
@@ -4603,11 +4603,11 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage {
 	}
 
 	/**
-	   * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSCardiacArrestEventSectionDerivedEntryCardiacArrestExistencePriorAEDRelationshipPriorAEDUsePriorAEDProviderParticipation</b>.
-	   * <!-- begin-user-doc -->
+	 * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSCardiacArrestEventSectionDerivedEntryCardiacArrestExistencePriorAEDRelationshipPriorAEDUsePriorAEDProviderParticipation</b>.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	   * @generated
-	   */
+	 * @generated
+	 */
 	protected void createEmspcrEMSCardiacArrestEventSectionDerivedEntryCardiacArrestExistencePriorAEDRelationshipPriorAEDUsePriorAEDProviderParticipationAnnotations() {
 		String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSCardiacArrestEventSectionDerivedEntryCardiacArrestExistencePriorAEDRelationshipPriorAEDUsePriorAEDProviderParticipation";
 		addAnnotation(emsCardiacArrestEventSectionEClass, source, new String[] {
@@ -4615,11 +4615,11 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage {
 	}
 
 	/**
-	   * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSCardiacArrestEventSectionDerivedEntryCardiacArrestExistencePriorAEDRelationshipPriorAEDUsePriorAEDProviderParticipationPriorAEDProvider</b>.
-	   * <!-- begin-user-doc -->
+	 * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSCardiacArrestEventSectionDerivedEntryCardiacArrestExistencePriorAEDRelationshipPriorAEDUsePriorAEDProviderParticipationPriorAEDProvider</b>.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	   * @generated
-	   */
+	 * @generated
+	 */
 	protected void createEmspcrEMSCardiacArrestEventSectionDerivedEntryCardiacArrestExistencePriorAEDRelationshipPriorAEDUsePriorAEDProviderParticipationPriorAEDProviderAnnotations() {
 		String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSCardiacArrestEventSectionDerivedEntryCardiacArrestExistencePriorAEDRelationshipPriorAEDUsePriorAEDProviderParticipationPriorAEDProvider";
 		addAnnotation(emsCardiacArrestEventSectionEClass, source, new String[] {
@@ -4628,11 +4628,11 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage {
 	}
 
 	/**
-	   * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSCardiacArrestEventSectionDerivedEntryCardiacArrestExistenceArrestRhythmRelationship</b>.
-	   * <!-- begin-user-doc -->
+	 * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSCardiacArrestEventSectionDerivedEntryCardiacArrestExistenceArrestRhythmRelationship</b>.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	   * @generated
-	   */
+	 * @generated
+	 */
 	protected void createEmspcrEMSCardiacArrestEventSectionDerivedEntryCardiacArrestExistenceArrestRhythmRelationshipAnnotations() {
 		String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSCardiacArrestEventSectionDerivedEntryCardiacArrestExistenceArrestRhythmRelationship";
 		addAnnotation(
@@ -4647,11 +4647,11 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage {
 	}
 
 	/**
-	   * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSCardiacArrestEventSectionDerivedEntryCardiacArrestExistenceArrestRhythmRelationshipArrestRhythm</b>.
-	   * <!-- begin-user-doc -->
+	 * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSCardiacArrestEventSectionDerivedEntryCardiacArrestExistenceArrestRhythmRelationshipArrestRhythm</b>.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	   * @generated
-	   */
+	 * @generated
+	 */
 	protected void createEmspcrEMSCardiacArrestEventSectionDerivedEntryCardiacArrestExistenceArrestRhythmRelationshipArrestRhythmAnnotations() {
 		String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSCardiacArrestEventSectionDerivedEntryCardiacArrestExistenceArrestRhythmRelationshipArrestRhythm";
 		addAnnotation(emsCardiacArrestEventSectionEClass, source, new String[] {
@@ -4662,11 +4662,11 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage {
 	}
 
 	/**
-	   * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSCardiacArrestEventSectionDerivedEntryCardiacArrestExistenceSpontaneousCirculationRelationship</b>.
-	   * <!-- begin-user-doc -->
+	 * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSCardiacArrestEventSectionDerivedEntryCardiacArrestExistenceSpontaneousCirculationRelationship</b>.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	   * @generated
-	   */
+	 * @generated
+	 */
 	protected void createEmspcrEMSCardiacArrestEventSectionDerivedEntryCardiacArrestExistenceSpontaneousCirculationRelationshipAnnotations() {
 		String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSCardiacArrestEventSectionDerivedEntryCardiacArrestExistenceSpontaneousCirculationRelationship";
 		addAnnotation(
@@ -4681,11 +4681,11 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage {
 	}
 
 	/**
-	   * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSCardiacArrestEventSectionDerivedEntryCardiacArrestExistenceSpontaneousCirculationRelationshipReturnOfSpontaneousCirculation</b>.
-	   * <!-- begin-user-doc -->
+	 * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSCardiacArrestEventSectionDerivedEntryCardiacArrestExistenceSpontaneousCirculationRelationshipReturnOfSpontaneousCirculation</b>.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	   * @generated
-	   */
+	 * @generated
+	 */
 	protected void createEmspcrEMSCardiacArrestEventSectionDerivedEntryCardiacArrestExistenceSpontaneousCirculationRelationshipReturnOfSpontaneousCirculationAnnotations() {
 		String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSCardiacArrestEventSectionDerivedEntryCardiacArrestExistenceSpontaneousCirculationRelationshipReturnOfSpontaneousCirculation";
 		addAnnotation(emsCardiacArrestEventSectionEClass, source, new String[] {
@@ -4696,11 +4696,11 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage {
 	}
 
 	/**
-	   * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSCardiacArrestEventSectionDerivedEntryCardiacArrestExistenceDestinationRhythmRelationship</b>.
-	   * <!-- begin-user-doc -->
+	 * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSCardiacArrestEventSectionDerivedEntryCardiacArrestExistenceDestinationRhythmRelationship</b>.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	   * @generated
-	   */
+	 * @generated
+	 */
 	protected void createEmspcrEMSCardiacArrestEventSectionDerivedEntryCardiacArrestExistenceDestinationRhythmRelationshipAnnotations() {
 		String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSCardiacArrestEventSectionDerivedEntryCardiacArrestExistenceDestinationRhythmRelationship";
 		addAnnotation(
@@ -4715,11 +4715,11 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage {
 	}
 
 	/**
-	   * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSCardiacArrestEventSectionDerivedEntryCardiacArrestExistenceDestinationRhythmRelationshipDestinationRhythm</b>.
-	   * <!-- begin-user-doc -->
+	 * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSCardiacArrestEventSectionDerivedEntryCardiacArrestExistenceDestinationRhythmRelationshipDestinationRhythm</b>.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	   * @generated
-	   */
+	 * @generated
+	 */
 	protected void createEmspcrEMSCardiacArrestEventSectionDerivedEntryCardiacArrestExistenceDestinationRhythmRelationshipDestinationRhythmAnnotations() {
 		String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSCardiacArrestEventSectionDerivedEntryCardiacArrestExistenceDestinationRhythmRelationshipDestinationRhythm";
 		addAnnotation(emsCardiacArrestEventSectionEClass, source, new String[] {
@@ -4730,11 +4730,11 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage {
 	}
 
 	/**
-	   * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSAdvanceDirectivesSectionDerivedEntryEMSAdvancedDirectiveObservation</b>.
-	   * <!-- begin-user-doc -->
+	 * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSAdvanceDirectivesSectionDerivedEntryEMSAdvancedDirectiveObservation</b>.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	   * @generated
-	   */
+	 * @generated
+	 */
 	protected void createEmspcrEMSAdvanceDirectivesSectionDerivedEntryEMSAdvancedDirectiveObservationAnnotations() {
 		String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSAdvanceDirectivesSectionDerivedEntryEMSAdvancedDirectiveObservation";
 		addAnnotation(emsAdvanceDirectivesSectionEClass, source, new String[] {
@@ -4745,11 +4745,11 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage {
 	}
 
 	/**
-	   * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSAllergiesAndAdverseReactionsSectionDerivedEntry</b>.
-	   * <!-- begin-user-doc -->
+	 * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSAllergiesAndAdverseReactionsSectionDerivedEntry</b>.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	   * @generated
-	   */
+	 * @generated
+	 */
 	protected void createEmspcrEMSAllergiesAndAdverseReactionsSectionDerivedEntryAnnotations() {
 		String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSAllergiesAndAdverseReactionsSectionDerivedEntry";
 		addAnnotation(emsAllergiesAndAdverseReactionsSectionEClass, source, new String[] {
@@ -4757,11 +4757,11 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage {
 	}
 
 	/**
-	   * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSAllergiesAndAdverseReactionsSectionDerivedEntryEMSMedicationAllergies</b>.
-	   * <!-- begin-user-doc -->
+	 * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSAllergiesAndAdverseReactionsSectionDerivedEntryEMSMedicationAllergies</b>.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	   * @generated
-	   */
+	 * @generated
+	 */
 	protected void createEmspcrEMSAllergiesAndAdverseReactionsSectionDerivedEntryEMSMedicationAllergiesAnnotations() {
 		String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSAllergiesAndAdverseReactionsSectionDerivedEntryEMSMedicationAllergies";
 		addAnnotation(emsAllergiesAndAdverseReactionsSectionEClass, source, new String[] {
@@ -4770,11 +4770,11 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage {
 	}
 
 	/**
-	   * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSAllergiesAndAdverseReactionsSectionDerivedEntryEMSMedicationAllergiesEMSExistenceOfDrugAllergy</b>.
-	   * <!-- begin-user-doc -->
+	 * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSAllergiesAndAdverseReactionsSectionDerivedEntryEMSMedicationAllergiesEMSExistenceOfDrugAllergy</b>.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	   * @generated
-	   */
+	 * @generated
+	 */
 	protected void createEmspcrEMSAllergiesAndAdverseReactionsSectionDerivedEntryEMSMedicationAllergiesEMSExistenceOfDrugAllergyAnnotations() {
 		String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSAllergiesAndAdverseReactionsSectionDerivedEntryEMSMedicationAllergiesEMSExistenceOfDrugAllergy";
 		addAnnotation(emsAllergiesAndAdverseReactionsSectionEClass, source, new String[] {
@@ -4784,11 +4784,11 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage {
 	}
 
 	/**
-	   * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSAllergiesAndAdverseReactionsSectionDerivedEntryEMSMedicationAllergiesEMSDrugAllergy</b>.
-	   * <!-- begin-user-doc -->
+	 * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSAllergiesAndAdverseReactionsSectionDerivedEntryEMSMedicationAllergiesEMSDrugAllergy</b>.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	   * @generated
-	   */
+	 * @generated
+	 */
 	protected void createEmspcrEMSAllergiesAndAdverseReactionsSectionDerivedEntryEMSMedicationAllergiesEMSDrugAllergyAnnotations() {
 		String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSAllergiesAndAdverseReactionsSectionDerivedEntryEMSMedicationAllergiesEMSDrugAllergy";
 		addAnnotation(emsAllergiesAndAdverseReactionsSectionEClass, source, new String[] {
@@ -4801,11 +4801,11 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage {
 	}
 
 	/**
-	   * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSAllergiesAndAdverseReactionsSectionDerivedEntryEMSMedicationAllergiesEMSDrugAllergyEMSDrugAllergyParticipation</b>.
-	   * <!-- begin-user-doc -->
+	 * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSAllergiesAndAdverseReactionsSectionDerivedEntryEMSMedicationAllergiesEMSDrugAllergyEMSDrugAllergyParticipation</b>.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	   * @generated
-	   */
+	 * @generated
+	 */
 	protected void createEmspcrEMSAllergiesAndAdverseReactionsSectionDerivedEntryEMSMedicationAllergiesEMSDrugAllergyEMSDrugAllergyParticipationAnnotations() {
 		String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSAllergiesAndAdverseReactionsSectionDerivedEntryEMSMedicationAllergiesEMSDrugAllergyEMSDrugAllergyParticipation";
 		addAnnotation(emsAllergiesAndAdverseReactionsSectionEClass, source, new String[] {
@@ -4813,11 +4813,11 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage {
 	}
 
 	/**
-	   * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSAllergiesAndAdverseReactionsSectionDerivedEntryEMSMedicationAllergiesEMSDrugAllergyEMSDrugAllergyParticipationEMSDrugAllergyParticipantRole</b>.
-	   * <!-- begin-user-doc -->
+	 * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSAllergiesAndAdverseReactionsSectionDerivedEntryEMSMedicationAllergiesEMSDrugAllergyEMSDrugAllergyParticipationEMSDrugAllergyParticipantRole</b>.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	   * @generated
-	   */
+	 * @generated
+	 */
 	protected void createEmspcrEMSAllergiesAndAdverseReactionsSectionDerivedEntryEMSMedicationAllergiesEMSDrugAllergyEMSDrugAllergyParticipationEMSDrugAllergyParticipantRoleAnnotations() {
 		String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSAllergiesAndAdverseReactionsSectionDerivedEntryEMSMedicationAllergiesEMSDrugAllergyEMSDrugAllergyParticipationEMSDrugAllergyParticipantRole";
 		addAnnotation(emsAllergiesAndAdverseReactionsSectionEClass, source, new String[] {
@@ -4825,11 +4825,11 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage {
 	}
 
 	/**
-	   * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSAllergiesAndAdverseReactionsSectionDerivedEntryEMSMedicationAllergiesEMSDrugAllergyEMSDrugAllergyParticipationEMSDrugAllergyParticipantRoleEMSDrugAllergyEntity</b>.
-	   * <!-- begin-user-doc -->
+	 * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSAllergiesAndAdverseReactionsSectionDerivedEntryEMSMedicationAllergiesEMSDrugAllergyEMSDrugAllergyParticipationEMSDrugAllergyParticipantRoleEMSDrugAllergyEntity</b>.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	   * @generated
-	   */
+	 * @generated
+	 */
 	protected void createEmspcrEMSAllergiesAndAdverseReactionsSectionDerivedEntryEMSMedicationAllergiesEMSDrugAllergyEMSDrugAllergyParticipationEMSDrugAllergyParticipantRoleEMSDrugAllergyEntityAnnotations() {
 		String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSAllergiesAndAdverseReactionsSectionDerivedEntryEMSMedicationAllergiesEMSDrugAllergyEMSDrugAllergyParticipationEMSDrugAllergyParticipantRoleEMSDrugAllergyEntity";
 		addAnnotation(emsAllergiesAndAdverseReactionsSectionEClass, source, new String[] {
@@ -4838,11 +4838,11 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage {
 	}
 
 	/**
-	   * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSAllergiesAndAdverseReactionsSectionDerivedEntryEMSEnvironmentalAllergies</b>.
-	   * <!-- begin-user-doc -->
+	 * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSAllergiesAndAdverseReactionsSectionDerivedEntryEMSEnvironmentalAllergies</b>.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	   * @generated
-	   */
+	 * @generated
+	 */
 	protected void createEmspcrEMSAllergiesAndAdverseReactionsSectionDerivedEntryEMSEnvironmentalAllergiesAnnotations() {
 		String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSAllergiesAndAdverseReactionsSectionDerivedEntryEMSEnvironmentalAllergies";
 		addAnnotation(emsAllergiesAndAdverseReactionsSectionEClass, source, new String[] {
@@ -4851,11 +4851,11 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage {
 	}
 
 	/**
-	   * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSAllergiesAndAdverseReactionsSectionDerivedEntryEMSEnvironmentalAllergiesEMSExistenceOfEnvironmentalAllergy</b>.
-	   * <!-- begin-user-doc -->
+	 * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSAllergiesAndAdverseReactionsSectionDerivedEntryEMSEnvironmentalAllergiesEMSExistenceOfEnvironmentalAllergy</b>.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	   * @generated
-	   */
+	 * @generated
+	 */
 	protected void createEmspcrEMSAllergiesAndAdverseReactionsSectionDerivedEntryEMSEnvironmentalAllergiesEMSExistenceOfEnvironmentalAllergyAnnotations() {
 		String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSAllergiesAndAdverseReactionsSectionDerivedEntryEMSEnvironmentalAllergiesEMSExistenceOfEnvironmentalAllergy";
 		addAnnotation(emsAllergiesAndAdverseReactionsSectionEClass, source, new String[] {
@@ -4865,11 +4865,11 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage {
 	}
 
 	/**
-	   * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSAllergiesAndAdverseReactionsSectionDerivedEntryEMSEnvironmentalAllergiesEMSEnvironmentalAllergy</b>.
-	   * <!-- begin-user-doc -->
+	 * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSAllergiesAndAdverseReactionsSectionDerivedEntryEMSEnvironmentalAllergiesEMSEnvironmentalAllergy</b>.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	   * @generated
-	   */
+	 * @generated
+	 */
 	protected void createEmspcrEMSAllergiesAndAdverseReactionsSectionDerivedEntryEMSEnvironmentalAllergiesEMSEnvironmentalAllergyAnnotations() {
 		String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSAllergiesAndAdverseReactionsSectionDerivedEntryEMSEnvironmentalAllergiesEMSEnvironmentalAllergy";
 		addAnnotation(emsAllergiesAndAdverseReactionsSectionEClass, source, new String[] {
@@ -4880,11 +4880,11 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage {
 	}
 
 	/**
-	   * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSPastMedicalHistorySectionDerivedEntry</b>.
-	   * <!-- begin-user-doc -->
+	 * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSPastMedicalHistorySectionDerivedEntry</b>.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	   * @generated
-	   */
+	 * @generated
+	 */
 	protected void createEmspcrEMSPastMedicalHistorySectionDerivedEntryAnnotations() {
 		String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSPastMedicalHistorySectionDerivedEntry";
 		addAnnotation(emsPastMedicalHistorySectionEClass, source, new String[] {
@@ -4892,11 +4892,11 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage {
 	}
 
 	/**
-	   * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSPastMedicalHistorySectionDerivedEntryEMSHistoryOfConditions</b>.
-	   * <!-- begin-user-doc -->
+	 * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSPastMedicalHistorySectionDerivedEntryEMSHistoryOfConditions</b>.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	   * @generated
-	   */
+	 * @generated
+	 */
 	protected void createEmspcrEMSPastMedicalHistorySectionDerivedEntryEMSHistoryOfConditionsAnnotations() {
 		String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSPastMedicalHistorySectionDerivedEntryEMSHistoryOfConditions";
 		addAnnotation(emsPastMedicalHistorySectionEClass, source, new String[] {
@@ -4905,11 +4905,11 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage {
 	}
 
 	/**
-	   * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSPastMedicalHistorySectionDerivedEntryEMSHistoryOfConditionsEMSExistenceOfHistoryOfCondition</b>.
-	   * <!-- begin-user-doc -->
+	 * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSPastMedicalHistorySectionDerivedEntryEMSHistoryOfConditionsEMSExistenceOfHistoryOfCondition</b>.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	   * @generated
-	   */
+	 * @generated
+	 */
 	protected void createEmspcrEMSPastMedicalHistorySectionDerivedEntryEMSHistoryOfConditionsEMSExistenceOfHistoryOfConditionAnnotations() {
 		String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSPastMedicalHistorySectionDerivedEntryEMSHistoryOfConditionsEMSExistenceOfHistoryOfCondition";
 		addAnnotation(emsPastMedicalHistorySectionEClass, source, new String[] {
@@ -4920,11 +4920,11 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage {
 	}
 
 	/**
-	   * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSPastMedicalHistorySectionDerivedEntryEMSHistoryOfConditionsEMSHistoryOfCondition</b>.
-	   * <!-- begin-user-doc -->
+	 * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSPastMedicalHistorySectionDerivedEntryEMSHistoryOfConditionsEMSHistoryOfCondition</b>.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	   * @generated
-	   */
+	 * @generated
+	 */
 	protected void createEmspcrEMSPastMedicalHistorySectionDerivedEntryEMSHistoryOfConditionsEMSHistoryOfConditionAnnotations() {
 		String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSPastMedicalHistorySectionDerivedEntryEMSHistoryOfConditionsEMSHistoryOfCondition";
 		addAnnotation(
@@ -4946,11 +4946,11 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage {
 	}
 
 	/**
-	   * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSPastMedicalHistorySectionDerivedEntryEMSHistoryOfProcedures</b>.
-	   * <!-- begin-user-doc -->
+	 * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSPastMedicalHistorySectionDerivedEntryEMSHistoryOfProcedures</b>.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	   * @generated
-	   */
+	 * @generated
+	 */
 	protected void createEmspcrEMSPastMedicalHistorySectionDerivedEntryEMSHistoryOfProceduresAnnotations() {
 		String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSPastMedicalHistorySectionDerivedEntryEMSHistoryOfProcedures";
 		addAnnotation(emsPastMedicalHistorySectionEClass, source, new String[] {
@@ -4958,11 +4958,11 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage {
 	}
 
 	/**
-	   * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSPastMedicalHistorySectionDerivedEntryEMSHistoryOfProceduresEMSExistenceOfHistoryOfProcedures</b>.
-	   * <!-- begin-user-doc -->
+	 * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSPastMedicalHistorySectionDerivedEntryEMSHistoryOfProceduresEMSExistenceOfHistoryOfProcedures</b>.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	   * @generated
-	   */
+	 * @generated
+	 */
 	protected void createEmspcrEMSPastMedicalHistorySectionDerivedEntryEMSHistoryOfProceduresEMSExistenceOfHistoryOfProceduresAnnotations() {
 		String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSPastMedicalHistorySectionDerivedEntryEMSHistoryOfProceduresEMSExistenceOfHistoryOfProcedures";
 		addAnnotation(emsPastMedicalHistorySectionEClass, source, new String[] {
@@ -4972,11 +4972,11 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage {
 	}
 
 	/**
-	   * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSPastMedicalHistorySectionDerivedEntryEMSHistoryOfProceduresEMSHistoryOfProcedure</b>.
-	   * <!-- begin-user-doc -->
+	 * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSPastMedicalHistorySectionDerivedEntryEMSHistoryOfProceduresEMSHistoryOfProcedure</b>.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	   * @generated
-	   */
+	 * @generated
+	 */
 	protected void createEmspcrEMSPastMedicalHistorySectionDerivedEntryEMSHistoryOfProceduresEMSHistoryOfProcedureAnnotations() {
 		String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSPastMedicalHistorySectionDerivedEntryEMSHistoryOfProceduresEMSHistoryOfProcedure";
 		addAnnotation(emsPastMedicalHistorySectionEClass, source, new String[] {
@@ -4985,11 +4985,11 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage {
 	}
 
 	/**
-	   * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSPastMedicalHistorySectionDerivedEntryEMSHistoryOfProceduresEMSExistenceOfHistoryOfProcedureComponent</b>.
-	   * <!-- begin-user-doc -->
+	 * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSPastMedicalHistorySectionDerivedEntryEMSHistoryOfProceduresEMSExistenceOfHistoryOfProcedureComponent</b>.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	   * @generated
-	   */
+	 * @generated
+	 */
 	protected void createEmspcrEMSPastMedicalHistorySectionDerivedEntryEMSHistoryOfProceduresEMSExistenceOfHistoryOfProcedureComponentAnnotations() {
 		String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSPastMedicalHistorySectionDerivedEntryEMSHistoryOfProceduresEMSExistenceOfHistoryOfProcedureComponent";
 		addAnnotation(emsPastMedicalHistorySectionEClass, source, new String[] {
@@ -4997,11 +4997,11 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage {
 	}
 
 	/**
-	   * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSSocialHistorySectionDerivedEntry</b>.
-	   * <!-- begin-user-doc -->
+	 * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSSocialHistorySectionDerivedEntry</b>.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	   * @generated
-	   */
+	 * @generated
+	 */
 	protected void createEmspcrEMSSocialHistorySectionDerivedEntryAnnotations() {
 		String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSSocialHistorySectionDerivedEntry";
 		addAnnotation(emsSocialHistorySectionEClass, source, new String[] {
@@ -5010,11 +5010,11 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage {
 	}
 
 	/**
-	   * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSSocialHistorySectionDerivedEntryEMSExistenceOfDrugUseIndicator</b>.
-	   * <!-- begin-user-doc -->
+	 * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSSocialHistorySectionDerivedEntryEMSExistenceOfDrugUseIndicator</b>.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	   * @generated
-	   */
+	 * @generated
+	 */
 	protected void createEmspcrEMSSocialHistorySectionDerivedEntryEMSExistenceOfDrugUseIndicatorAnnotations() {
 		String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSSocialHistorySectionDerivedEntryEMSExistenceOfDrugUseIndicator";
 		addAnnotation(emsSocialHistorySectionEClass, source, new String[] {
@@ -5027,11 +5027,11 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage {
 	}
 
 	/**
-	   * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSSocialHistorySectionDerivedEntryEMSDrugUseIndicator</b>.
-	   * <!-- begin-user-doc -->
+	 * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSSocialHistorySectionDerivedEntryEMSDrugUseIndicator</b>.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	   * @generated
-	   */
+	 * @generated
+	 */
 	protected void createEmspcrEMSSocialHistorySectionDerivedEntryEMSDrugUseIndicatorAnnotations() {
 		String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSSocialHistorySectionDerivedEntryEMSDrugUseIndicator";
 		addAnnotation(emsSocialHistorySectionEClass, source, new String[] {
@@ -5042,11 +5042,11 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage {
 	}
 
 	/**
-	   * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSPhysicalAssessmentSectionDerivedEntry</b>.
-	   * <!-- begin-user-doc -->
+	 * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSPhysicalAssessmentSectionDerivedEntry</b>.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	   * @generated
-	   */
+	 * @generated
+	 */
 	protected void createEmspcrEMSPhysicalAssessmentSectionDerivedEntryAnnotations() {
 		String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSPhysicalAssessmentSectionDerivedEntry";
 		addAnnotation(emsPhysicalAssessmentSectionEClass, source, new String[] {
@@ -5055,11 +5055,11 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage {
 	}
 
 	/**
-	   * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSPhysicalAssessmentSectionDerivedEntryEMSPhysicalAssessmentOrganizer</b>.
-	   * <!-- begin-user-doc -->
+	 * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSPhysicalAssessmentSectionDerivedEntryEMSPhysicalAssessmentOrganizer</b>.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	   * @generated
-	   */
+	 * @generated
+	 */
 	protected void createEmspcrEMSPhysicalAssessmentSectionDerivedEntryEMSPhysicalAssessmentOrganizerAnnotations() {
 		String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSPhysicalAssessmentSectionDerivedEntryEMSPhysicalAssessmentOrganizer";
 		addAnnotation(
@@ -5073,11 +5073,11 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage {
 	}
 
 	/**
-	   * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSPhysicalAssessmentSectionDerivedEntryEMSPhysicalAssessmentOrganizerPatientBodyWeight</b>.
-	   * <!-- begin-user-doc -->
+	 * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSPhysicalAssessmentSectionDerivedEntryEMSPhysicalAssessmentOrganizerPatientBodyWeight</b>.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	   * @generated
-	   */
+	 * @generated
+	 */
 	protected void createEmspcrEMSPhysicalAssessmentSectionDerivedEntryEMSPhysicalAssessmentOrganizerPatientBodyWeightAnnotations() {
 		String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSPhysicalAssessmentSectionDerivedEntryEMSPhysicalAssessmentOrganizerPatientBodyWeight";
 		addAnnotation(emsPhysicalAssessmentSectionEClass, source, new String[] {
@@ -5086,11 +5086,11 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage {
 	}
 
 	/**
-	   * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSPhysicalAssessmentSectionDerivedEntryEMSPhysicalAssessmentOrganizerLengthBasedPatientBodyWeightClass</b>.
-	   * <!-- begin-user-doc -->
+	 * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSPhysicalAssessmentSectionDerivedEntryEMSPhysicalAssessmentOrganizerLengthBasedPatientBodyWeightClass</b>.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	   * @generated
-	   */
+	 * @generated
+	 */
 	protected void createEmspcrEMSPhysicalAssessmentSectionDerivedEntryEMSPhysicalAssessmentOrganizerLengthBasedPatientBodyWeightClassAnnotations() {
 		String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSPhysicalAssessmentSectionDerivedEntryEMSPhysicalAssessmentOrganizerLengthBasedPatientBodyWeightClass";
 		addAnnotation(
@@ -5111,11 +5111,11 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage {
 	}
 
 	/**
-	   * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSPhysicalAssessmentSectionDerivedEntryEMSPhysicalAssessmentOrganizerEMSSkinAssessment</b>.
-	   * <!-- begin-user-doc -->
+	 * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSPhysicalAssessmentSectionDerivedEntryEMSPhysicalAssessmentOrganizerEMSSkinAssessment</b>.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	   * @generated
-	   */
+	 * @generated
+	 */
 	protected void createEmspcrEMSPhysicalAssessmentSectionDerivedEntryEMSPhysicalAssessmentOrganizerEMSSkinAssessmentAnnotations() {
 		String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSPhysicalAssessmentSectionDerivedEntryEMSPhysicalAssessmentOrganizerEMSSkinAssessment";
 		addAnnotation(emsPhysicalAssessmentSectionEClass, source, new String[] {
@@ -5127,11 +5127,11 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage {
 	}
 
 	/**
-	   * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSPhysicalAssessmentSectionDerivedEntryEMSPhysicalAssessmentOrganizerEMSHeadAssessment</b>.
-	   * <!-- begin-user-doc -->
+	 * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSPhysicalAssessmentSectionDerivedEntryEMSPhysicalAssessmentOrganizerEMSHeadAssessment</b>.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	   * @generated
-	   */
+	 * @generated
+	 */
 	protected void createEmspcrEMSPhysicalAssessmentSectionDerivedEntryEMSPhysicalAssessmentOrganizerEMSHeadAssessmentAnnotations() {
 		String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSPhysicalAssessmentSectionDerivedEntryEMSPhysicalAssessmentOrganizerEMSHeadAssessment";
 		addAnnotation(emsPhysicalAssessmentSectionEClass, source, new String[] {
@@ -5142,11 +5142,11 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage {
 	}
 
 	/**
-	   * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSPhysicalAssessmentSectionDerivedEntryEMSPhysicalAssessmentOrganizerEMSFaceAssessment</b>.
-	   * <!-- begin-user-doc -->
+	 * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSPhysicalAssessmentSectionDerivedEntryEMSPhysicalAssessmentOrganizerEMSFaceAssessment</b>.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	   * @generated
-	   */
+	 * @generated
+	 */
 	protected void createEmspcrEMSPhysicalAssessmentSectionDerivedEntryEMSPhysicalAssessmentOrganizerEMSFaceAssessmentAnnotations() {
 		String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSPhysicalAssessmentSectionDerivedEntryEMSPhysicalAssessmentOrganizerEMSFaceAssessment";
 		addAnnotation(emsPhysicalAssessmentSectionEClass, source, new String[] {
@@ -5158,11 +5158,11 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage {
 	}
 
 	/**
-	   * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSPhysicalAssessmentSectionDerivedEntryEMSPhysicalAssessmentOrganizerEMSNeckAssessment</b>.
-	   * <!-- begin-user-doc -->
+	 * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSPhysicalAssessmentSectionDerivedEntryEMSPhysicalAssessmentOrganizerEMSNeckAssessment</b>.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	   * @generated
-	   */
+	 * @generated
+	 */
 	protected void createEmspcrEMSPhysicalAssessmentSectionDerivedEntryEMSPhysicalAssessmentOrganizerEMSNeckAssessmentAnnotations() {
 		String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSPhysicalAssessmentSectionDerivedEntryEMSPhysicalAssessmentOrganizerEMSNeckAssessment";
 		addAnnotation(emsPhysicalAssessmentSectionEClass, source, new String[] {
@@ -5173,11 +5173,11 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage {
 	}
 
 	/**
-	   * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSPhysicalAssessmentSectionDerivedEntryEMSPhysicalAssessmentOrganizerEMSChestAndLungsAssessment</b>.
-	   * <!-- begin-user-doc -->
+	 * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSPhysicalAssessmentSectionDerivedEntryEMSPhysicalAssessmentOrganizerEMSChestAndLungsAssessment</b>.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	   * @generated
-	   */
+	 * @generated
+	 */
 	protected void createEmspcrEMSPhysicalAssessmentSectionDerivedEntryEMSPhysicalAssessmentOrganizerEMSChestAndLungsAssessmentAnnotations() {
 		String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSPhysicalAssessmentSectionDerivedEntryEMSPhysicalAssessmentOrganizerEMSChestAndLungsAssessment";
 		addAnnotation(emsPhysicalAssessmentSectionEClass, source, new String[] {
@@ -5188,11 +5188,11 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage {
 	}
 
 	/**
-	   * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSPhysicalAssessmentSectionDerivedEntryEMSPhysicalAssessmentOrganizerEMSHeartAssessment</b>.
-	   * <!-- begin-user-doc -->
+	 * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSPhysicalAssessmentSectionDerivedEntryEMSPhysicalAssessmentOrganizerEMSHeartAssessment</b>.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	   * @generated
-	   */
+	 * @generated
+	 */
 	protected void createEmspcrEMSPhysicalAssessmentSectionDerivedEntryEMSPhysicalAssessmentOrganizerEMSHeartAssessmentAnnotations() {
 		String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSPhysicalAssessmentSectionDerivedEntryEMSPhysicalAssessmentOrganizerEMSHeartAssessment";
 		addAnnotation(emsPhysicalAssessmentSectionEClass, source, new String[] {
@@ -5204,11 +5204,11 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage {
 	}
 
 	/**
-	   * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSPhysicalAssessmentSectionDerivedEntryEMSPhysicalAssessmentOrganizerEMSAbdomenAssessment</b>.
-	   * <!-- begin-user-doc -->
+	 * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSPhysicalAssessmentSectionDerivedEntryEMSPhysicalAssessmentOrganizerEMSAbdomenAssessment</b>.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	   * @generated
-	   */
+	 * @generated
+	 */
 	protected void createEmspcrEMSPhysicalAssessmentSectionDerivedEntryEMSPhysicalAssessmentOrganizerEMSAbdomenAssessmentAnnotations() {
 		String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSPhysicalAssessmentSectionDerivedEntryEMSPhysicalAssessmentOrganizerEMSAbdomenAssessment";
 		addAnnotation(emsPhysicalAssessmentSectionEClass, source, new String[] {
@@ -5220,11 +5220,11 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage {
 	}
 
 	/**
-	   * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSPhysicalAssessmentSectionDerivedEntryEMSPhysicalAssessmentOrganizerEMSPelvicAndGenitourinaryAssessment</b>.
-	   * <!-- begin-user-doc -->
+	 * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSPhysicalAssessmentSectionDerivedEntryEMSPhysicalAssessmentOrganizerEMSPelvicAndGenitourinaryAssessment</b>.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	   * @generated
-	   */
+	 * @generated
+	 */
 	protected void createEmspcrEMSPhysicalAssessmentSectionDerivedEntryEMSPhysicalAssessmentOrganizerEMSPelvicAndGenitourinaryAssessmentAnnotations() {
 		String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSPhysicalAssessmentSectionDerivedEntryEMSPhysicalAssessmentOrganizerEMSPelvicAndGenitourinaryAssessment";
 		addAnnotation(
@@ -5245,11 +5245,11 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage {
 	}
 
 	/**
-	   * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSPhysicalAssessmentSectionDerivedEntryEMSPhysicalAssessmentOrganizerEMSBackAndSpineAssessment</b>.
-	   * <!-- begin-user-doc -->
+	 * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSPhysicalAssessmentSectionDerivedEntryEMSPhysicalAssessmentOrganizerEMSBackAndSpineAssessment</b>.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	   * @generated
-	   */
+	 * @generated
+	 */
 	protected void createEmspcrEMSPhysicalAssessmentSectionDerivedEntryEMSPhysicalAssessmentOrganizerEMSBackAndSpineAssessmentAnnotations() {
 		String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSPhysicalAssessmentSectionDerivedEntryEMSPhysicalAssessmentOrganizerEMSBackAndSpineAssessment";
 		addAnnotation(
@@ -5272,11 +5272,11 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage {
 	}
 
 	/**
-	   * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSPhysicalAssessmentSectionDerivedEntryEMSPhysicalAssessmentOrganizerEMSExtremitiesAssessment</b>.
-	   * <!-- begin-user-doc -->
+	 * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSPhysicalAssessmentSectionDerivedEntryEMSPhysicalAssessmentOrganizerEMSExtremitiesAssessment</b>.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	   * @generated
-	   */
+	 * @generated
+	 */
 	protected void createEmspcrEMSPhysicalAssessmentSectionDerivedEntryEMSPhysicalAssessmentOrganizerEMSExtremitiesAssessmentAnnotations() {
 		String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSPhysicalAssessmentSectionDerivedEntryEMSPhysicalAssessmentOrganizerEMSExtremitiesAssessment";
 		addAnnotation(
@@ -5300,11 +5300,11 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage {
 	}
 
 	/**
-	   * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSPhysicalAssessmentSectionDerivedEntryEMSPhysicalAssessmentOrganizerEMSEyeAssessment</b>.
-	   * <!-- begin-user-doc -->
+	 * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSPhysicalAssessmentSectionDerivedEntryEMSPhysicalAssessmentOrganizerEMSEyeAssessment</b>.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	   * @generated
-	   */
+	 * @generated
+	 */
 	protected void createEmspcrEMSPhysicalAssessmentSectionDerivedEntryEMSPhysicalAssessmentOrganizerEMSEyeAssessmentAnnotations() {
 		String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSPhysicalAssessmentSectionDerivedEntryEMSPhysicalAssessmentOrganizerEMSEyeAssessment";
 		addAnnotation(
@@ -5327,11 +5327,11 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage {
 	}
 
 	/**
-	   * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSPhysicalAssessmentSectionDerivedEntryEMSPhysicalAssessmentOrganizerEMSMentalStatusAssessment</b>.
-	   * <!-- begin-user-doc -->
+	 * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSPhysicalAssessmentSectionDerivedEntryEMSPhysicalAssessmentOrganizerEMSMentalStatusAssessment</b>.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	   * @generated
-	   */
+	 * @generated
+	 */
 	protected void createEmspcrEMSPhysicalAssessmentSectionDerivedEntryEMSPhysicalAssessmentOrganizerEMSMentalStatusAssessmentAnnotations() {
 		String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSPhysicalAssessmentSectionDerivedEntryEMSPhysicalAssessmentOrganizerEMSMentalStatusAssessment";
 		addAnnotation(emsPhysicalAssessmentSectionEClass, source, new String[] {
@@ -5344,11 +5344,11 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage {
 	}
 
 	/**
-	   * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSPhysicalAssessmentSectionDerivedEntryEMSPhysicalAssessmentOrganizerEMSNeurologicalAssessment</b>.
-	   * <!-- begin-user-doc -->
+	 * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSPhysicalAssessmentSectionDerivedEntryEMSPhysicalAssessmentOrganizerEMSNeurologicalAssessment</b>.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	   * @generated
-	   */
+	 * @generated
+	 */
 	protected void createEmspcrEMSPhysicalAssessmentSectionDerivedEntryEMSPhysicalAssessmentOrganizerEMSNeurologicalAssessmentAnnotations() {
 		String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSPhysicalAssessmentSectionDerivedEntryEMSPhysicalAssessmentOrganizerEMSNeurologicalAssessment";
 		addAnnotation(
@@ -5370,11 +5370,11 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage {
 	}
 
 	/**
-	   * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSPhysicalAssessmentSectionDerivedEntryPatientPregnancy</b>.
-	   * <!-- begin-user-doc -->
+	 * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSPhysicalAssessmentSectionDerivedEntryPatientPregnancy</b>.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	   * @generated
-	   */
+	 * @generated
+	 */
 	protected void createEmspcrEMSPhysicalAssessmentSectionDerivedEntryPatientPregnancyAnnotations() {
 		String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSPhysicalAssessmentSectionDerivedEntryPatientPregnancy";
 		addAnnotation(emsPhysicalAssessmentSectionEClass, source, new String[] {
@@ -5386,11 +5386,11 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage {
 	}
 
 	/**
-	   * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSPhysicalAssessmentSectionDerivedEntryLastOralIntake</b>.
-	   * <!-- begin-user-doc -->
+	 * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSPhysicalAssessmentSectionDerivedEntryLastOralIntake</b>.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	   * @generated
-	   */
+	 * @generated
+	 */
 	protected void createEmspcrEMSPhysicalAssessmentSectionDerivedEntryLastOralIntakeAnnotations() {
 		String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSPhysicalAssessmentSectionDerivedEntryLastOralIntake";
 		addAnnotation(emsPhysicalAssessmentSectionEClass, source, new String[] {
@@ -5401,11 +5401,11 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage {
 	}
 
 	/**
-	   * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSPhysicalAssessmentSectionDerivedEntryEMSPatientAge</b>.
-	   * <!-- begin-user-doc -->
+	 * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSPhysicalAssessmentSectionDerivedEntryEMSPatientAge</b>.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	   * @generated
-	   */
+	 * @generated
+	 */
 	protected void createEmspcrEMSPhysicalAssessmentSectionDerivedEntryEMSPatientAgeAnnotations() {
 		String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSPhysicalAssessmentSectionDerivedEntryEMSPatientAge";
 		addAnnotation(emsPhysicalAssessmentSectionEClass, source, new String[] {
@@ -5416,11 +5416,11 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage {
 	}
 
 	/**
-	   * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSPhysicalAssessmentSectionDerivedEntryEMSThrombolyticContraindications</b>.
-	   * <!-- begin-user-doc -->
+	 * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSPhysicalAssessmentSectionDerivedEntryEMSThrombolyticContraindications</b>.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	   * @generated
-	   */
+	 * @generated
+	 */
 	protected void createEmspcrEMSPhysicalAssessmentSectionDerivedEntryEMSThrombolyticContraindicationsAnnotations() {
 		String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSPhysicalAssessmentSectionDerivedEntryEMSThrombolyticContraindications";
 		addAnnotation(
@@ -5443,11 +5443,11 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage {
 	}
 
 	/**
-	   * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSPhysicalAssessmentSectionDerivedEntryEMSBarriersToPatientCare</b>.
-	   * <!-- begin-user-doc -->
+	 * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSPhysicalAssessmentSectionDerivedEntryEMSBarriersToPatientCare</b>.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	   * @generated
-	   */
+	 * @generated
+	 */
 	protected void createEmspcrEMSPhysicalAssessmentSectionDerivedEntryEMSBarriersToPatientCareAnnotations() {
 		String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSPhysicalAssessmentSectionDerivedEntryEMSBarriersToPatientCare";
 		addAnnotation(
@@ -5469,11 +5469,11 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage {
 	}
 
 	/**
-	   * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSMedicationsAdministeredSectionDerivedEntry</b>.
-	   * <!-- begin-user-doc -->
+	 * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSMedicationsAdministeredSectionDerivedEntry</b>.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	   * @generated
-	   */
+	 * @generated
+	 */
 	protected void createEmspcrEMSMedicationsAdministeredSectionDerivedEntryAnnotations() {
 		String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSMedicationsAdministeredSectionDerivedEntry";
 		addAnnotation(emsMedicationsAdministeredSectionEClass, source, new String[] {
@@ -5481,11 +5481,11 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage {
 	}
 
 	/**
-	   * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSMedicationsAdministeredSectionDerivedEntryEMSMedicationAdministered</b>.
-	   * <!-- begin-user-doc -->
+	 * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSMedicationsAdministeredSectionDerivedEntryEMSMedicationAdministered</b>.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	   * @generated
-	   */
+	 * @generated
+	 */
 	protected void createEmspcrEMSMedicationsAdministeredSectionDerivedEntryEMSMedicationAdministeredAnnotations() {
 		String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSMedicationsAdministeredSectionDerivedEntryEMSMedicationAdministered";
 		addAnnotation(
@@ -5504,11 +5504,11 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage {
 	}
 
 	/**
-	   * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSMedicationsAdministeredSectionDerivedEntryEMSMedicationAdministeredMedicationNotAdministeredEntryRelationship</b>.
-	   * <!-- begin-user-doc -->
+	 * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSMedicationsAdministeredSectionDerivedEntryEMSMedicationAdministeredMedicationNotAdministeredEntryRelationship</b>.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	   * @generated
-	   */
+	 * @generated
+	 */
 	protected void createEmspcrEMSMedicationsAdministeredSectionDerivedEntryEMSMedicationAdministeredMedicationNotAdministeredEntryRelationshipAnnotations() {
 		String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSMedicationsAdministeredSectionDerivedEntryEMSMedicationAdministeredMedicationNotAdministeredEntryRelationship";
 		addAnnotation(
@@ -5525,11 +5525,11 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage {
 	}
 
 	/**
-	   * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSMedicationsAdministeredSectionDerivedEntryEMSMedicationAdministeredMedicationNotAdministeredEntryRelationshipMedicationNotAdministeredReasonObservation</b>.
-	   * <!-- begin-user-doc -->
+	 * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSMedicationsAdministeredSectionDerivedEntryEMSMedicationAdministeredMedicationNotAdministeredEntryRelationshipMedicationNotAdministeredReasonObservation</b>.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	   * @generated
-	   */
+	 * @generated
+	 */
 	protected void createEmspcrEMSMedicationsAdministeredSectionDerivedEntryEMSMedicationAdministeredMedicationNotAdministeredEntryRelationshipMedicationNotAdministeredReasonObservationAnnotations() {
 		String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSMedicationsAdministeredSectionDerivedEntryEMSMedicationAdministeredMedicationNotAdministeredEntryRelationshipMedicationNotAdministeredReasonObservation";
 		addAnnotation(
@@ -5550,11 +5550,11 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage {
 	}
 
 	/**
-	   * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSMedicationsAdministeredSectionDerivedEntryEMSMedicationAdministeredEMSMedicationAdministeredConsumable</b>.
-	   * <!-- begin-user-doc -->
+	 * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSMedicationsAdministeredSectionDerivedEntryEMSMedicationAdministeredEMSMedicationAdministeredConsumable</b>.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	   * @generated
-	   */
+	 * @generated
+	 */
 	protected void createEmspcrEMSMedicationsAdministeredSectionDerivedEntryEMSMedicationAdministeredEMSMedicationAdministeredConsumableAnnotations() {
 		String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSMedicationsAdministeredSectionDerivedEntryEMSMedicationAdministeredEMSMedicationAdministeredConsumable";
 		addAnnotation(emsMedicationsAdministeredSectionEClass, source, new String[] {
@@ -5562,11 +5562,11 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage {
 	}
 
 	/**
-	   * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSMedicationsAdministeredSectionDerivedEntryEMSMedicationAdministeredEMSMedicationAdministeredConsumableEMSMedicationManfacturedProduct</b>.
-	   * <!-- begin-user-doc -->
+	 * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSMedicationsAdministeredSectionDerivedEntryEMSMedicationAdministeredEMSMedicationAdministeredConsumableEMSMedicationManfacturedProduct</b>.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	   * @generated
-	   */
+	 * @generated
+	 */
 	protected void createEmspcrEMSMedicationsAdministeredSectionDerivedEntryEMSMedicationAdministeredEMSMedicationAdministeredConsumableEMSMedicationManfacturedProductAnnotations() {
 		String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSMedicationsAdministeredSectionDerivedEntryEMSMedicationAdministeredEMSMedicationAdministeredConsumableEMSMedicationManfacturedProduct";
 		addAnnotation(emsMedicationsAdministeredSectionEClass, source, new String[] {
@@ -5574,11 +5574,11 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage {
 	}
 
 	/**
-	   * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSMedicationsAdministeredSectionDerivedEntryEMSMedicationAdministeredEMSMedicationAdministeredConsumableEMSMedicationManfacturedProductEMSMedicationLabeledDrug</b>.
-	   * <!-- begin-user-doc -->
+	 * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSMedicationsAdministeredSectionDerivedEntryEMSMedicationAdministeredEMSMedicationAdministeredConsumableEMSMedicationManfacturedProductEMSMedicationLabeledDrug</b>.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	   * @generated
-	   */
+	 * @generated
+	 */
 	protected void createEmspcrEMSMedicationsAdministeredSectionDerivedEntryEMSMedicationAdministeredEMSMedicationAdministeredConsumableEMSMedicationManfacturedProductEMSMedicationLabeledDrugAnnotations() {
 		String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSMedicationsAdministeredSectionDerivedEntryEMSMedicationAdministeredEMSMedicationAdministeredConsumableEMSMedicationManfacturedProductEMSMedicationLabeledDrug";
 		addAnnotation(emsMedicationsAdministeredSectionEClass, source, new String[] {
@@ -5587,11 +5587,11 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage {
 	}
 
 	/**
-	   * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSMedicationsAdministeredSectionDerivedEntryEMSMedicationAdministeredEMSMedicationAdministeredResponseRelationship</b>.
-	   * <!-- begin-user-doc -->
+	 * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSMedicationsAdministeredSectionDerivedEntryEMSMedicationAdministeredEMSMedicationAdministeredResponseRelationship</b>.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	   * @generated
-	   */
+	 * @generated
+	 */
 	protected void createEmspcrEMSMedicationsAdministeredSectionDerivedEntryEMSMedicationAdministeredEMSMedicationAdministeredResponseRelationshipAnnotations() {
 		String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSMedicationsAdministeredSectionDerivedEntryEMSMedicationAdministeredEMSMedicationAdministeredResponseRelationship";
 		addAnnotation(emsMedicationsAdministeredSectionEClass, source, new String[] {
@@ -5600,11 +5600,11 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage {
 	}
 
 	/**
-	   * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSMedicationsAdministeredSectionDerivedEntryEMSMedicationAdministeredEMSMedicationAdministeredResponseRelationshipMedicationResponseObservation</b>.
-	   * <!-- begin-user-doc -->
+	 * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSMedicationsAdministeredSectionDerivedEntryEMSMedicationAdministeredEMSMedicationAdministeredResponseRelationshipMedicationResponseObservation</b>.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	   * @generated
-	   */
+	 * @generated
+	 */
 	protected void createEmspcrEMSMedicationsAdministeredSectionDerivedEntryEMSMedicationAdministeredEMSMedicationAdministeredResponseRelationshipMedicationResponseObservationAnnotations() {
 		String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSMedicationsAdministeredSectionDerivedEntryEMSMedicationAdministeredEMSMedicationAdministeredResponseRelationshipMedicationResponseObservation";
 		addAnnotation(
@@ -5627,11 +5627,11 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage {
 	}
 
 	/**
-	   * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSMedicationsAdministeredSectionDerivedEntryEMSMedicationAdministeredEMSMedicationComplicationRelationship</b>.
-	   * <!-- begin-user-doc -->
+	 * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSMedicationsAdministeredSectionDerivedEntryEMSMedicationAdministeredEMSMedicationComplicationRelationship</b>.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	   * @generated
-	   */
+	 * @generated
+	 */
 	protected void createEmspcrEMSMedicationsAdministeredSectionDerivedEntryEMSMedicationAdministeredEMSMedicationComplicationRelationshipAnnotations() {
 		String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSMedicationsAdministeredSectionDerivedEntryEMSMedicationAdministeredEMSMedicationComplicationRelationship";
 		addAnnotation(emsMedicationsAdministeredSectionEClass, source, new String[] {
@@ -5640,11 +5640,11 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage {
 	}
 
 	/**
-	   * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSMedicationsAdministeredSectionDerivedEntryEMSMedicationAdministeredEMSMedicationComplicationRelationshipEMSMedicationComplicationObservation</b>.
-	   * <!-- begin-user-doc -->
+	 * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSMedicationsAdministeredSectionDerivedEntryEMSMedicationAdministeredEMSMedicationComplicationRelationshipEMSMedicationComplicationObservation</b>.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	   * @generated
-	   */
+	 * @generated
+	 */
 	protected void createEmspcrEMSMedicationsAdministeredSectionDerivedEntryEMSMedicationAdministeredEMSMedicationComplicationRelationshipEMSMedicationComplicationObservationAnnotations() {
 		String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSMedicationsAdministeredSectionDerivedEntryEMSMedicationAdministeredEMSMedicationComplicationRelationshipEMSMedicationComplicationObservation";
 		addAnnotation(
@@ -5667,11 +5667,11 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage {
 	}
 
 	/**
-	   * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSMedicationsAdministeredSectionDerivedEntryEMSMedicationAdministeredEMSMedicationPriorAdministrationRelationship</b>.
-	   * <!-- begin-user-doc -->
+	 * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSMedicationsAdministeredSectionDerivedEntryEMSMedicationAdministeredEMSMedicationPriorAdministrationRelationship</b>.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	   * @generated
-	   */
+	 * @generated
+	 */
 	protected void createEmspcrEMSMedicationsAdministeredSectionDerivedEntryEMSMedicationAdministeredEMSMedicationPriorAdministrationRelationshipAnnotations() {
 		String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSMedicationsAdministeredSectionDerivedEntryEMSMedicationAdministeredEMSMedicationPriorAdministrationRelationship";
 		addAnnotation(emsMedicationsAdministeredSectionEClass, source, new String[] {
@@ -5680,11 +5680,11 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage {
 	}
 
 	/**
-	   * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSMedicationsAdministeredSectionDerivedEntryEMSMedicationAdministeredEMSMedicationPriorAdministrationRelationshipEMSMedicationPriorAdministrationObservation</b>.
-	   * <!-- begin-user-doc -->
+	 * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSMedicationsAdministeredSectionDerivedEntryEMSMedicationAdministeredEMSMedicationPriorAdministrationRelationshipEMSMedicationPriorAdministrationObservation</b>.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	   * @generated
-	   */
+	 * @generated
+	 */
 	protected void createEmspcrEMSMedicationsAdministeredSectionDerivedEntryEMSMedicationAdministeredEMSMedicationPriorAdministrationRelationshipEMSMedicationPriorAdministrationObservationAnnotations() {
 		String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSMedicationsAdministeredSectionDerivedEntryEMSMedicationAdministeredEMSMedicationPriorAdministrationRelationshipEMSMedicationPriorAdministrationObservation";
 		addAnnotation(
@@ -5706,11 +5706,11 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage {
 	}
 
 	/**
-	   * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSMedicationsAdministeredSectionDerivedEntryEMSMedicationAdministeredEMSMedicationPerformerParticipation</b>.
-	   * <!-- begin-user-doc -->
+	 * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSMedicationsAdministeredSectionDerivedEntryEMSMedicationAdministeredEMSMedicationPerformerParticipation</b>.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	   * @generated
-	   */
+	 * @generated
+	 */
 	protected void createEmspcrEMSMedicationsAdministeredSectionDerivedEntryEMSMedicationAdministeredEMSMedicationPerformerParticipationAnnotations() {
 		String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSMedicationsAdministeredSectionDerivedEntryEMSMedicationAdministeredEMSMedicationPerformerParticipation";
 		addAnnotation(emsMedicationsAdministeredSectionEClass, source, new String[] {
@@ -5718,11 +5718,11 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage {
 	}
 
 	/**
-	   * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSMedicationsAdministeredSectionDerivedEntryEMSMedicationAdministeredEMSMedicationPerformerParticipationEMSMedicationPerformerRole</b>.
-	   * <!-- begin-user-doc -->
+	 * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSMedicationsAdministeredSectionDerivedEntryEMSMedicationAdministeredEMSMedicationPerformerParticipationEMSMedicationPerformerRole</b>.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	   * @generated
-	   */
+	 * @generated
+	 */
 	protected void createEmspcrEMSMedicationsAdministeredSectionDerivedEntryEMSMedicationAdministeredEMSMedicationPerformerParticipationEMSMedicationPerformerRoleAnnotations() {
 		String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSMedicationsAdministeredSectionDerivedEntryEMSMedicationAdministeredEMSMedicationPerformerParticipationEMSMedicationPerformerRole";
 		addAnnotation(emsMedicationsAdministeredSectionEClass, source, new String[] {
@@ -5732,11 +5732,11 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage {
 	}
 
 	/**
-	   * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSMedicationsAdministeredSectionDerivedEntryEMSMedicationAdministeredEMSMedicationAuthorizationRelationship</b>.
-	   * <!-- begin-user-doc -->
+	 * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSMedicationsAdministeredSectionDerivedEntryEMSMedicationAdministeredEMSMedicationAuthorizationRelationship</b>.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	   * @generated
-	   */
+	 * @generated
+	 */
 	protected void createEmspcrEMSMedicationsAdministeredSectionDerivedEntryEMSMedicationAdministeredEMSMedicationAuthorizationRelationshipAnnotations() {
 		String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSMedicationsAdministeredSectionDerivedEntryEMSMedicationAdministeredEMSMedicationAuthorizationRelationship";
 		addAnnotation(emsMedicationsAdministeredSectionEClass, source, new String[] {
@@ -5744,11 +5744,11 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage {
 	}
 
 	/**
-	   * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSMedicationsAdministeredSectionDerivedEntryEMSMedicationAdministeredEMSMedicationAuthorizationRelationshipEMSMedicationAuthorization</b>.
-	   * <!-- begin-user-doc -->
+	 * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSMedicationsAdministeredSectionDerivedEntryEMSMedicationAdministeredEMSMedicationAuthorizationRelationshipEMSMedicationAuthorization</b>.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	   * @generated
-	   */
+	 * @generated
+	 */
 	protected void createEmspcrEMSMedicationsAdministeredSectionDerivedEntryEMSMedicationAdministeredEMSMedicationAuthorizationRelationshipEMSMedicationAuthorizationAnnotations() {
 		String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSMedicationsAdministeredSectionDerivedEntryEMSMedicationAdministeredEMSMedicationAuthorizationRelationshipEMSMedicationAuthorization";
 		addAnnotation(
@@ -5765,11 +5765,11 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage {
 	}
 
 	/**
-	   * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSProceduresPerformedSectionDerivedEntry</b>.
-	   * <!-- begin-user-doc -->
+	 * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSProceduresPerformedSectionDerivedEntry</b>.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	   * @generated
-	   */
+	 * @generated
+	 */
 	protected void createEmspcrEMSProceduresPerformedSectionDerivedEntryAnnotations() {
 		String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSProceduresPerformedSectionDerivedEntry";
 		addAnnotation(emsProceduresPerformedSectionEClass, source, new String[] {
@@ -5777,11 +5777,11 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage {
 	}
 
 	/**
-	   * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSProceduresPerformedSectionDerivedEntryEMSProcedure</b>.
-	   * <!-- begin-user-doc -->
+	 * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSProceduresPerformedSectionDerivedEntryEMSProcedure</b>.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	   * @generated
-	   */
+	 * @generated
+	 */
 	protected void createEmspcrEMSProceduresPerformedSectionDerivedEntryEMSProcedureAnnotations() {
 		String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSProceduresPerformedSectionDerivedEntryEMSProcedure";
 		addAnnotation(
@@ -5802,11 +5802,11 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage {
 	}
 
 	/**
-	   * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSProceduresPerformedSectionDerivedEntryEMSProcedureEMSAbandonedProcedureRelationship</b>.
-	   * <!-- begin-user-doc -->
+	 * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSProceduresPerformedSectionDerivedEntryEMSProcedureEMSAbandonedProcedureRelationship</b>.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	   * @generated
-	   */
+	 * @generated
+	 */
 	protected void createEmspcrEMSProceduresPerformedSectionDerivedEntryEMSProcedureEMSAbandonedProcedureRelationshipAnnotations() {
 		String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSProceduresPerformedSectionDerivedEntryEMSProcedureEMSAbandonedProcedureRelationship";
 		addAnnotation(emsProceduresPerformedSectionEClass, source, new String[] {
@@ -5815,11 +5815,11 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage {
 	}
 
 	/**
-	   * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSProceduresPerformedSectionDerivedEntryEMSProcedureEMSAbandonedProcedureRelationshipEMSAbandonedProcedureReasonObservation</b>.
-	   * <!-- begin-user-doc -->
+	 * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSProceduresPerformedSectionDerivedEntryEMSProcedureEMSAbandonedProcedureRelationshipEMSAbandonedProcedureReasonObservation</b>.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	   * @generated
-	   */
+	 * @generated
+	 */
 	protected void createEmspcrEMSProceduresPerformedSectionDerivedEntryEMSProcedureEMSAbandonedProcedureRelationshipEMSAbandonedProcedureReasonObservationAnnotations() {
 		String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSProceduresPerformedSectionDerivedEntryEMSProcedureEMSAbandonedProcedureRelationshipEMSAbandonedProcedureReasonObservation";
 		addAnnotation(
@@ -5842,11 +5842,11 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage {
 	}
 
 	/**
-	   * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSProceduresPerformedSectionDerivedEntryEMSProcedureEMSProcedurePriorRelationship</b>.
-	   * <!-- begin-user-doc -->
+	 * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSProceduresPerformedSectionDerivedEntryEMSProcedureEMSProcedurePriorRelationship</b>.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	   * @generated
-	   */
+	 * @generated
+	 */
 	protected void createEmspcrEMSProceduresPerformedSectionDerivedEntryEMSProcedureEMSProcedurePriorRelationshipAnnotations() {
 		String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSProceduresPerformedSectionDerivedEntryEMSProcedureEMSProcedurePriorRelationship";
 		addAnnotation(emsProceduresPerformedSectionEClass, source, new String[] {
@@ -5854,11 +5854,11 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage {
 	}
 
 	/**
-	   * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSProceduresPerformedSectionDerivedEntryEMSProcedureEMSProcedurePriorRelationshipEMSProcedurePriorIndicator</b>.
-	   * <!-- begin-user-doc -->
+	 * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSProceduresPerformedSectionDerivedEntryEMSProcedureEMSProcedurePriorRelationshipEMSProcedurePriorIndicator</b>.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	   * @generated
-	   */
+	 * @generated
+	 */
 	protected void createEmspcrEMSProceduresPerformedSectionDerivedEntryEMSProcedureEMSProcedurePriorRelationshipEMSProcedurePriorIndicatorAnnotations() {
 		String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSProceduresPerformedSectionDerivedEntryEMSProcedureEMSProcedurePriorRelationshipEMSProcedurePriorIndicator";
 		addAnnotation(emsProceduresPerformedSectionEClass, source, new String[] {
@@ -5869,11 +5869,11 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage {
 	}
 
 	/**
-	   * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSProceduresPerformedSectionDerivedEntryEMSProcedureEMSProcedureNumberOfAttemptsRelationship</b>.
-	   * <!-- begin-user-doc -->
+	 * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSProceduresPerformedSectionDerivedEntryEMSProcedureEMSProcedureNumberOfAttemptsRelationship</b>.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	   * @generated
-	   */
+	 * @generated
+	 */
 	protected void createEmspcrEMSProceduresPerformedSectionDerivedEntryEMSProcedureEMSProcedureNumberOfAttemptsRelationshipAnnotations() {
 		String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSProceduresPerformedSectionDerivedEntryEMSProcedureEMSProcedureNumberOfAttemptsRelationship";
 		addAnnotation(emsProceduresPerformedSectionEClass, source, new String[] {
@@ -5882,11 +5882,11 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage {
 	}
 
 	/**
-	   * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSProceduresPerformedSectionDerivedEntryEMSProcedureEMSProcedureNumberOfAttemptsRelationshipEMSProcedureNumberOfAttemptsObservation</b>.
-	   * <!-- begin-user-doc -->
+	 * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSProceduresPerformedSectionDerivedEntryEMSProcedureEMSProcedureNumberOfAttemptsRelationshipEMSProcedureNumberOfAttemptsObservation</b>.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	   * @generated
-	   */
+	 * @generated
+	 */
 	protected void createEmspcrEMSProceduresPerformedSectionDerivedEntryEMSProcedureEMSProcedureNumberOfAttemptsRelationshipEMSProcedureNumberOfAttemptsObservationAnnotations() {
 		String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSProceduresPerformedSectionDerivedEntryEMSProcedureEMSProcedureNumberOfAttemptsRelationshipEMSProcedureNumberOfAttemptsObservation";
 		addAnnotation(
@@ -5908,11 +5908,11 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage {
 	}
 
 	/**
-	   * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSProceduresPerformedSectionDerivedEntryEMSProcedureEMSProcedureSuccessfulRelationship</b>.
-	   * <!-- begin-user-doc -->
+	 * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSProceduresPerformedSectionDerivedEntryEMSProcedureEMSProcedureSuccessfulRelationship</b>.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	   * @generated
-	   */
+	 * @generated
+	 */
 	protected void createEmspcrEMSProceduresPerformedSectionDerivedEntryEMSProcedureEMSProcedureSuccessfulRelationshipAnnotations() {
 		String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSProceduresPerformedSectionDerivedEntryEMSProcedureEMSProcedureSuccessfulRelationship";
 		addAnnotation(emsProceduresPerformedSectionEClass, source, new String[] {
@@ -5920,11 +5920,11 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage {
 	}
 
 	/**
-	   * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSProceduresPerformedSectionDerivedEntryEMSProcedureEMSProcedureSuccessfulRelationshipEMSProcedureSuccessfulObservation</b>.
-	   * <!-- begin-user-doc -->
+	 * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSProceduresPerformedSectionDerivedEntryEMSProcedureEMSProcedureSuccessfulRelationshipEMSProcedureSuccessfulObservation</b>.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	   * @generated
-	   */
+	 * @generated
+	 */
 	protected void createEmspcrEMSProceduresPerformedSectionDerivedEntryEMSProcedureEMSProcedureSuccessfulRelationshipEMSProcedureSuccessfulObservationAnnotations() {
 		String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSProceduresPerformedSectionDerivedEntryEMSProcedureEMSProcedureSuccessfulRelationshipEMSProcedureSuccessfulObservation";
 		addAnnotation(
@@ -5946,11 +5946,11 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage {
 	}
 
 	/**
-	   * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSProceduresPerformedSectionDerivedEntryEMSProcedureEMSProcedureComplicationsRelationship</b>.
-	   * <!-- begin-user-doc -->
+	 * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSProceduresPerformedSectionDerivedEntryEMSProcedureEMSProcedureComplicationsRelationship</b>.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	   * @generated
-	   */
+	 * @generated
+	 */
 	protected void createEmspcrEMSProceduresPerformedSectionDerivedEntryEMSProcedureEMSProcedureComplicationsRelationshipAnnotations() {
 		String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSProceduresPerformedSectionDerivedEntryEMSProcedureEMSProcedureComplicationsRelationship";
 		addAnnotation(emsProceduresPerformedSectionEClass, source, new String[] {
@@ -5959,11 +5959,11 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage {
 	}
 
 	/**
-	   * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSProceduresPerformedSectionDerivedEntryEMSProcedureEMSProcedureComplicationsRelationshipEMSProcedureComplicationsObservation</b>.
-	   * <!-- begin-user-doc -->
+	 * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSProceduresPerformedSectionDerivedEntryEMSProcedureEMSProcedureComplicationsRelationshipEMSProcedureComplicationsObservation</b>.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	   * @generated
-	   */
+	 * @generated
+	 */
 	protected void createEmspcrEMSProceduresPerformedSectionDerivedEntryEMSProcedureEMSProcedureComplicationsRelationshipEMSProcedureComplicationsObservationAnnotations() {
 		String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSProceduresPerformedSectionDerivedEntryEMSProcedureEMSProcedureComplicationsRelationshipEMSProcedureComplicationsObservation";
 		addAnnotation(
@@ -5980,11 +5980,11 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage {
 	}
 
 	/**
-	   * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSProceduresPerformedSectionDerivedEntryEMSProcedureEMSProcedurePatientResponseRelationship</b>.
-	   * <!-- begin-user-doc -->
+	 * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSProceduresPerformedSectionDerivedEntryEMSProcedureEMSProcedurePatientResponseRelationship</b>.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	   * @generated
-	   */
+	 * @generated
+	 */
 	protected void createEmspcrEMSProceduresPerformedSectionDerivedEntryEMSProcedureEMSProcedurePatientResponseRelationshipAnnotations() {
 		String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSProceduresPerformedSectionDerivedEntryEMSProcedureEMSProcedurePatientResponseRelationship";
 		addAnnotation(emsProceduresPerformedSectionEClass, source, new String[] {
@@ -5993,11 +5993,11 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage {
 	}
 
 	/**
-	   * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSProceduresPerformedSectionDerivedEntryEMSProcedureEMSProcedurePatientResponseRelationshipEMSProcedurePatientResponseObservation</b>.
-	   * <!-- begin-user-doc -->
+	 * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSProceduresPerformedSectionDerivedEntryEMSProcedureEMSProcedurePatientResponseRelationshipEMSProcedurePatientResponseObservation</b>.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	   * @generated
-	   */
+	 * @generated
+	 */
 	protected void createEmspcrEMSProceduresPerformedSectionDerivedEntryEMSProcedureEMSProcedurePatientResponseRelationshipEMSProcedurePatientResponseObservationAnnotations() {
 		String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSProceduresPerformedSectionDerivedEntryEMSProcedureEMSProcedurePatientResponseRelationshipEMSProcedurePatientResponseObservation";
 		addAnnotation(
@@ -6020,11 +6020,11 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage {
 	}
 
 	/**
-	   * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSProceduresPerformedSectionDerivedEntryEMSProcedureEMSProcedurePerformer</b>.
-	   * <!-- begin-user-doc -->
+	 * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSProceduresPerformedSectionDerivedEntryEMSProcedureEMSProcedurePerformer</b>.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	   * @generated
-	   */
+	 * @generated
+	 */
 	protected void createEmspcrEMSProceduresPerformedSectionDerivedEntryEMSProcedureEMSProcedurePerformerAnnotations() {
 		String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSProceduresPerformedSectionDerivedEntryEMSProcedureEMSProcedurePerformer";
 		addAnnotation(emsProceduresPerformedSectionEClass, source, new String[] {
@@ -6032,11 +6032,11 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage {
 	}
 
 	/**
-	   * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSProceduresPerformedSectionDerivedEntryEMSProcedureEMSProcedurePerformerEMSProcedurePerformerEntity</b>.
-	   * <!-- begin-user-doc -->
+	 * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSProceduresPerformedSectionDerivedEntryEMSProcedureEMSProcedurePerformerEMSProcedurePerformerEntity</b>.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	   * @generated
-	   */
+	 * @generated
+	 */
 	protected void createEmspcrEMSProceduresPerformedSectionDerivedEntryEMSProcedureEMSProcedurePerformerEMSProcedurePerformerEntityAnnotations() {
 		String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSProceduresPerformedSectionDerivedEntryEMSProcedureEMSProcedurePerformerEMSProcedurePerformerEntity";
 		addAnnotation(emsProceduresPerformedSectionEClass, source, new String[] {
@@ -6046,11 +6046,11 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage {
 	}
 
 	/**
-	   * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSProceduresPerformedSectionDerivedEntryEMSProcedureEMSAirwayConfirmationRelationship</b>.
-	   * <!-- begin-user-doc -->
+	 * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSProceduresPerformedSectionDerivedEntryEMSProcedureEMSAirwayConfirmationRelationship</b>.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	   * @generated
-	   */
+	 * @generated
+	 */
 	protected void createEmspcrEMSProceduresPerformedSectionDerivedEntryEMSProcedureEMSAirwayConfirmationRelationshipAnnotations() {
 		String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSProceduresPerformedSectionDerivedEntryEMSProcedureEMSAirwayConfirmationRelationship";
 		addAnnotation(emsProceduresPerformedSectionEClass, source, new String[] {
@@ -6058,11 +6058,11 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage {
 	}
 
 	/**
-	   * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSProceduresPerformedSectionDerivedEntryEMSProcedureEMSAirwayConfirmationRelationshipEMSAirwayConfirmationObservation</b>.
-	   * <!-- begin-user-doc -->
+	 * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSProceduresPerformedSectionDerivedEntryEMSProcedureEMSAirwayConfirmationRelationshipEMSAirwayConfirmationObservation</b>.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	   * @generated
-	   */
+	 * @generated
+	 */
 	protected void createEmspcrEMSProceduresPerformedSectionDerivedEntryEMSProcedureEMSAirwayConfirmationRelationshipEMSAirwayConfirmationObservationAnnotations() {
 		String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSProceduresPerformedSectionDerivedEntryEMSProcedureEMSAirwayConfirmationRelationshipEMSAirwayConfirmationObservation";
 		addAnnotation(
@@ -6079,11 +6079,11 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage {
 	}
 
 	/**
-	   * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSProceduresPerformedSectionDerivedEntryEMSProcedureEMSAirwayConfirmationRelationshipEMSAirwayConfirmationObservationEMSAirwayDeviceParticipant</b>.
-	   * <!-- begin-user-doc -->
+	 * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSProceduresPerformedSectionDerivedEntryEMSProcedureEMSAirwayConfirmationRelationshipEMSAirwayConfirmationObservationEMSAirwayDeviceParticipant</b>.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	   * @generated
-	   */
+	 * @generated
+	 */
 	protected void createEmspcrEMSProceduresPerformedSectionDerivedEntryEMSProcedureEMSAirwayConfirmationRelationshipEMSAirwayConfirmationObservationEMSAirwayDeviceParticipantAnnotations() {
 		String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSProceduresPerformedSectionDerivedEntryEMSProcedureEMSAirwayConfirmationRelationshipEMSAirwayConfirmationObservationEMSAirwayDeviceParticipant";
 		addAnnotation(emsProceduresPerformedSectionEClass, source, new String[] {
@@ -6091,11 +6091,11 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage {
 	}
 
 	/**
-	   * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSProceduresPerformedSectionDerivedEntryEMSProcedureEMSAirwayConfirmationRelationshipEMSAirwayConfirmationObservationEMSAirwayDeviceParticipantEMSAirwayDeviceParticipantRole</b>.
-	   * <!-- begin-user-doc -->
+	 * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSProceduresPerformedSectionDerivedEntryEMSProcedureEMSAirwayConfirmationRelationshipEMSAirwayConfirmationObservationEMSAirwayDeviceParticipantEMSAirwayDeviceParticipantRole</b>.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	   * @generated
-	   */
+	 * @generated
+	 */
 	protected void createEmspcrEMSProceduresPerformedSectionDerivedEntryEMSProcedureEMSAirwayConfirmationRelationshipEMSAirwayConfirmationObservationEMSAirwayDeviceParticipantEMSAirwayDeviceParticipantRoleAnnotations() {
 		String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSProceduresPerformedSectionDerivedEntryEMSProcedureEMSAirwayConfirmationRelationshipEMSAirwayConfirmationObservationEMSAirwayDeviceParticipantEMSAirwayDeviceParticipantRole";
 		addAnnotation(emsProceduresPerformedSectionEClass, source, new String[] {
@@ -6103,11 +6103,11 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage {
 	}
 
 	/**
-	   * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSProceduresPerformedSectionDerivedEntryEMSProcedureEMSAirwayConfirmationRelationshipEMSAirwayConfirmationObservationEMSAirwayDeviceParticipantEMSAirwayDeviceParticipantRoleEMSAirwayDeviceParticipantType</b>.
-	   * <!-- begin-user-doc -->
+	 * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSProceduresPerformedSectionDerivedEntryEMSProcedureEMSAirwayConfirmationRelationshipEMSAirwayConfirmationObservationEMSAirwayDeviceParticipantEMSAirwayDeviceParticipantRoleEMSAirwayDeviceParticipantType</b>.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	   * @generated
-	   */
+	 * @generated
+	 */
 	protected void createEmspcrEMSProceduresPerformedSectionDerivedEntryEMSProcedureEMSAirwayConfirmationRelationshipEMSAirwayConfirmationObservationEMSAirwayDeviceParticipantEMSAirwayDeviceParticipantRoleEMSAirwayDeviceParticipantTypeAnnotations() {
 		String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSProceduresPerformedSectionDerivedEntryEMSProcedureEMSAirwayConfirmationRelationshipEMSAirwayConfirmationObservationEMSAirwayDeviceParticipantEMSAirwayDeviceParticipantRoleEMSAirwayDeviceParticipantType";
 		addAnnotation(emsProceduresPerformedSectionEClass, source, new String[] {
@@ -6116,11 +6116,11 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage {
 	}
 
 	/**
-	   * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSSceneSectionDerivedEntry</b>.
-	   * <!-- begin-user-doc -->
+	 * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSSceneSectionDerivedEntry</b>.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	   * @generated
-	   */
+	 * @generated
+	 */
 	protected void createEmspcrEMSSceneSectionDerivedEntryAnnotations() {
 		String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSSceneSectionDerivedEntry";
 		addAnnotation(emsSceneSectionEClass, source, new String[] {
@@ -6128,11 +6128,11 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage {
 	}
 
 	/**
-	   * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSSceneSectionDerivedEntryEMSFirstUnitIndicator</b>.
-	   * <!-- begin-user-doc -->
+	 * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSSceneSectionDerivedEntryEMSFirstUnitIndicator</b>.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	   * @generated
-	   */
+	 * @generated
+	 */
 	protected void createEmspcrEMSSceneSectionDerivedEntryEMSFirstUnitIndicatorAnnotations() {
 		String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSSceneSectionDerivedEntryEMSFirstUnitIndicator";
 		addAnnotation(emsSceneSectionEClass, source, new String[] {
@@ -6143,11 +6143,11 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage {
 	}
 
 	/**
-	   * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSSceneSectionDerivedEntryEMSFirstUnitOnScene</b>.
-	   * <!-- begin-user-doc -->
+	 * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSSceneSectionDerivedEntryEMSFirstUnitOnScene</b>.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	   * @generated
-	   */
+	 * @generated
+	 */
 	protected void createEmspcrEMSSceneSectionDerivedEntryEMSFirstUnitOnSceneAnnotations() {
 		String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSSceneSectionDerivedEntryEMSFirstUnitOnScene";
 		addAnnotation(emsSceneSectionEClass, source, new String[] {
@@ -6158,11 +6158,11 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage {
 	}
 
 	/**
-	   * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSSceneSectionDerivedEntryEMSScenePatientCount</b>.
-	   * <!-- begin-user-doc -->
+	 * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSSceneSectionDerivedEntryEMSScenePatientCount</b>.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	   * @generated
-	   */
+	 * @generated
+	 */
 	protected void createEmspcrEMSSceneSectionDerivedEntryEMSScenePatientCountAnnotations() {
 		String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSSceneSectionDerivedEntryEMSScenePatientCount";
 		addAnnotation(emsSceneSectionEClass, source, new String[] {
@@ -6173,11 +6173,11 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage {
 	}
 
 	/**
-	   * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSSceneSectionDerivedEntryEMSMassCasualtyIndicator</b>.
-	   * <!-- begin-user-doc -->
+	 * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSSceneSectionDerivedEntryEMSMassCasualtyIndicator</b>.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	   * @generated
-	   */
+	 * @generated
+	 */
 	protected void createEmspcrEMSSceneSectionDerivedEntryEMSMassCasualtyIndicatorAnnotations() {
 		String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSSceneSectionDerivedEntryEMSMassCasualtyIndicator";
 		addAnnotation(emsSceneSectionEClass, source, new String[] {
@@ -6185,11 +6185,11 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage {
 	}
 
 	/**
-	   * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSDispatchSectionDerivedEntry</b>.
-	   * <!-- begin-user-doc -->
+	 * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSDispatchSectionDerivedEntry</b>.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	   * @generated
-	   */
+	 * @generated
+	 */
 	protected void createEmspcrEMSDispatchSectionDerivedEntryAnnotations() {
 		String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSDispatchSectionDerivedEntry";
 		addAnnotation(emsDispatchSectionEClass, source, new String[] {
@@ -6197,11 +6197,11 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage {
 	}
 
 	/**
-	   * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSDispatchSectionDerivedEntryEMSEmergencyMedicalDispatchObservation</b>.
-	   * <!-- begin-user-doc -->
+	 * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSDispatchSectionDerivedEntryEMSEmergencyMedicalDispatchObservation</b>.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	   * @generated
-	   */
+	 * @generated
+	 */
 	protected void createEmspcrEMSDispatchSectionDerivedEntryEMSEmergencyMedicalDispatchObservationAnnotations() {
 		String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSDispatchSectionDerivedEntryEMSEmergencyMedicalDispatchObservation";
 		addAnnotation(
@@ -6224,11 +6224,11 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage {
 	}
 
 	/**
-	   * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSDispatchSectionDerivedEntryEMSComplaintReportedByDispatch</b>.
-	   * <!-- begin-user-doc -->
+	 * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSDispatchSectionDerivedEntryEMSComplaintReportedByDispatch</b>.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	   * @generated
-	   */
+	 * @generated
+	 */
 	protected void createEmspcrEMSDispatchSectionDerivedEntryEMSComplaintReportedByDispatchAnnotations() {
 		String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSDispatchSectionDerivedEntryEMSComplaintReportedByDispatch";
 		addAnnotation(
@@ -6251,11 +6251,11 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage {
 	}
 
 	/**
-	   * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSDispositionSectionDerivedEntry</b>.
-	   * <!-- begin-user-doc -->
+	 * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSDispositionSectionDerivedEntry</b>.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	   * @generated
-	   */
+	 * @generated
+	 */
 	protected void createEmspcrEMSDispositionSectionDerivedEntryAnnotations() {
 		String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSDispositionSectionDerivedEntry";
 		addAnnotation(emsDispositionSectionEClass, source, new String[] {
@@ -6263,11 +6263,11 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage {
 	}
 
 	/**
-	   * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSDispositionSectionDerivedEntryEMSNumberOfPatientsObservation</b>.
-	   * <!-- begin-user-doc -->
+	 * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSDispositionSectionDerivedEntryEMSNumberOfPatientsObservation</b>.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	   * @generated
-	   */
+	 * @generated
+	 */
 	protected void createEmspcrEMSDispositionSectionDerivedEntryEMSNumberOfPatientsObservationAnnotations() {
 		String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSDispositionSectionDerivedEntryEMSNumberOfPatientsObservation";
 		addAnnotation(
@@ -6289,11 +6289,11 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage {
 	}
 
 	/**
-	   * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSDispositionSectionDerivedEntryEMSIncidentDispositionObservation</b>.
-	   * <!-- begin-user-doc -->
+	 * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSDispositionSectionDerivedEntryEMSIncidentDispositionObservation</b>.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	   * @generated
-	   */
+	 * @generated
+	 */
 	protected void createEmspcrEMSDispositionSectionDerivedEntryEMSIncidentDispositionObservationAnnotations() {
 		String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSDispositionSectionDerivedEntryEMSIncidentDispositionObservation";
 		addAnnotation(
@@ -6316,11 +6316,11 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage {
 	}
 
 	/**
-	   * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSDispositionSectionDerivedEntryEMSTransportModeObservation</b>.
-	   * <!-- begin-user-doc -->
+	 * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSDispositionSectionDerivedEntryEMSTransportModeObservation</b>.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	   * @generated
-	   */
+	 * @generated
+	 */
 	protected void createEmspcrEMSDispositionSectionDerivedEntryEMSTransportModeObservationAnnotations() {
 		String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSDispositionSectionDerivedEntryEMSTransportModeObservation";
 		addAnnotation(
@@ -6343,11 +6343,11 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage {
 	}
 
 	/**
-	   * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSDispositionSectionDerivedEntryEMSTransportMethodObservation</b>.
-	   * <!-- begin-user-doc -->
+	 * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSDispositionSectionDerivedEntryEMSTransportMethodObservation</b>.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	   * @generated
-	   */
+	 * @generated
+	 */
 	protected void createEmspcrEMSDispositionSectionDerivedEntryEMSTransportMethodObservationAnnotations() {
 		String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSDispositionSectionDerivedEntryEMSTransportMethodObservation";
 		addAnnotation(
@@ -6370,11 +6370,11 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage {
 	}
 
 	/**
-	   * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSDispositionSectionDerivedEntryEMSReasonForChoosingDestinationObservation</b>.
-	   * <!-- begin-user-doc -->
+	 * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSDispositionSectionDerivedEntryEMSReasonForChoosingDestinationObservation</b>.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	   * @generated
-	   */
+	 * @generated
+	 */
 	protected void createEmspcrEMSDispositionSectionDerivedEntryEMSReasonForChoosingDestinationObservationAnnotations() {
 		String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSDispositionSectionDerivedEntryEMSReasonForChoosingDestinationObservation";
 		addAnnotation(
@@ -6397,11 +6397,11 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage {
 	}
 
 	/**
-	   * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSDispositionSectionDerivedEntryEMSPrearrivalActivationObservation</b>.
-	   * <!-- begin-user-doc -->
+	 * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSDispositionSectionDerivedEntryEMSPrearrivalActivationObservation</b>.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	   * @generated
-	   */
+	 * @generated
+	 */
 	protected void createEmspcrEMSDispositionSectionDerivedEntryEMSPrearrivalActivationObservationAnnotations() {
 		String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSDispositionSectionDerivedEntryEMSPrearrivalActivationObservation";
 		addAnnotation(
@@ -6423,11 +6423,11 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage {
 	}
 
 	/**
-	   * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSDispositionSectionDerivedEntryEMSPatientConditionChangeAtDestinationObservation</b>.
-	   * <!-- begin-user-doc -->
+	 * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSDispositionSectionDerivedEntryEMSPatientConditionChangeAtDestinationObservation</b>.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	   * @generated
-	   */
+	 * @generated
+	 */
 	protected void createEmspcrEMSDispositionSectionDerivedEntryEMSPatientConditionChangeAtDestinationObservationAnnotations() {
 		String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSDispositionSectionDerivedEntryEMSPatientConditionChangeAtDestinationObservation";
 		addAnnotation(
@@ -6450,11 +6450,11 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage {
 	}
 
 	/**
-	   * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSPersonnelAdverseEventSectionDerivedEntry</b>.
-	   * <!-- begin-user-doc -->
+	 * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSPersonnelAdverseEventSectionDerivedEntry</b>.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	   * @generated
-	   */
+	 * @generated
+	 */
 	protected void createEmspcrEMSPersonnelAdverseEventSectionDerivedEntryAnnotations() {
 		String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSPersonnelAdverseEventSectionDerivedEntry";
 		addAnnotation(emsPersonnelAdverseEventSectionEClass, source, new String[] {
@@ -6462,11 +6462,11 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage {
 	}
 
 	/**
-	   * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSPersonnelAdverseEventSectionDerivedEntryEMSAdverseEventIndicator</b>.
-	   * <!-- begin-user-doc -->
+	 * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSPersonnelAdverseEventSectionDerivedEntryEMSAdverseEventIndicator</b>.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	   * @generated
-	   */
+	 * @generated
+	 */
 	protected void createEmspcrEMSPersonnelAdverseEventSectionDerivedEntryEMSAdverseEventIndicatorAnnotations() {
 		String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSPersonnelAdverseEventSectionDerivedEntryEMSAdverseEventIndicator";
 		addAnnotation(emsPersonnelAdverseEventSectionEClass, source, new String[] {
@@ -6477,11 +6477,11 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage {
 	}
 
 	/**
-	   * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSPersonnelAdverseEventSectionDerivedEntryEMSAdverseEventTypeObservation</b>.
-	   * <!-- begin-user-doc -->
+	 * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSPersonnelAdverseEventSectionDerivedEntryEMSAdverseEventTypeObservation</b>.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	   * @generated
-	   */
+	 * @generated
+	 */
 	protected void createEmspcrEMSPersonnelAdverseEventSectionDerivedEntryEMSAdverseEventTypeObservationAnnotations() {
 		String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSPersonnelAdverseEventSectionDerivedEntryEMSAdverseEventTypeObservation";
 		addAnnotation(
@@ -6504,11 +6504,11 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage {
 	}
 
 	/**
-	   * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSProtocolSectionDerivedEntry</b>.
-	   * <!-- begin-user-doc -->
+	 * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSProtocolSectionDerivedEntry</b>.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	   * @generated
-	   */
+	 * @generated
+	 */
 	protected void createEmspcrEMSProtocolSectionDerivedEntryAnnotations() {
 		String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSProtocolSectionDerivedEntry";
 		addAnnotation(emsProtocolSectionEClass, source, new String[] {
@@ -6516,11 +6516,11 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage {
 	}
 
 	/**
-	   * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSProtocolSectionDerivedEntryEMSProtocolObservation</b>.
-	   * <!-- begin-user-doc -->
+	 * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSProtocolSectionDerivedEntryEMSProtocolObservation</b>.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	   * @generated
-	   */
+	 * @generated
+	 */
 	protected void createEmspcrEMSProtocolSectionDerivedEntryEMSProtocolObservationAnnotations() {
 		String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSProtocolSectionDerivedEntryEMSProtocolObservation";
 		addAnnotation(
@@ -6542,11 +6542,11 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage {
 	}
 
 	/**
-	   * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSProtocolSectionDerivedEntryEMSProtocolAgeCategory</b>.
-	   * <!-- begin-user-doc -->
+	 * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSProtocolSectionDerivedEntryEMSProtocolAgeCategory</b>.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	   * @generated
-	   */
+	 * @generated
+	 */
 	protected void createEmspcrEMSProtocolSectionDerivedEntryEMSProtocolAgeCategoryAnnotations() {
 		String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSProtocolSectionDerivedEntryEMSProtocolAgeCategory";
 		addAnnotation(
@@ -6568,11 +6568,11 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage {
 	}
 
 	/**
-	   * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSProtocolSectionDerivedEntryEMSCandidatePatientRegistryType</b>.
-	   * <!-- begin-user-doc -->
+	 * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSProtocolSectionDerivedEntryEMSCandidatePatientRegistryType</b>.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	   * @generated
-	   */
+	 * @generated
+	 */
 	protected void createEmspcrEMSProtocolSectionDerivedEntryEMSCandidatePatientRegistryTypeAnnotations() {
 		String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSProtocolSectionDerivedEntryEMSCandidatePatientRegistryType";
 		addAnnotation(
@@ -6595,11 +6595,11 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage {
 	}
 
 	/**
-	   * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSResponseSectionDerivedEntry</b>.
-	   * <!-- begin-user-doc -->
+	 * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSResponseSectionDerivedEntry</b>.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	   * @generated
-	   */
+	 * @generated
+	 */
 	protected void createEmspcrEMSResponseSectionDerivedEntryAnnotations() {
 		String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSResponseSectionDerivedEntry";
 		addAnnotation(emsResponseSectionEClass, source, new String[] {
@@ -6607,11 +6607,11 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage {
 	}
 
 	/**
-	   * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSResponseSectionDerivedEntryEMSDelayOrganizer</b>.
-	   * <!-- begin-user-doc -->
+	 * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSResponseSectionDerivedEntryEMSDelayOrganizer</b>.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	   * @generated
-	   */
+	 * @generated
+	 */
 	protected void createEmspcrEMSResponseSectionDerivedEntryEMSDelayOrganizerAnnotations() {
 		String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSResponseSectionDerivedEntryEMSDelayOrganizer";
 		addAnnotation(
@@ -6623,11 +6623,11 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage {
 	}
 
 	/**
-	   * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSResponseSectionDerivedEntryEMSDelayOrganizerEMSDispatchDelayRelationship</b>.
-	   * <!-- begin-user-doc -->
+	 * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSResponseSectionDerivedEntryEMSDelayOrganizerEMSDispatchDelayRelationship</b>.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	   * @generated
-	   */
+	 * @generated
+	 */
 	protected void createEmspcrEMSResponseSectionDerivedEntryEMSDelayOrganizerEMSDispatchDelayRelationshipAnnotations() {
 		String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSResponseSectionDerivedEntryEMSDelayOrganizerEMSDispatchDelayRelationship";
 		addAnnotation(emsResponseSectionEClass, source, new String[] {
@@ -6635,11 +6635,11 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage {
 	}
 
 	/**
-	   * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSResponseSectionDerivedEntryEMSDelayOrganizerEMSDispatchDelayRelationshipEMSDispatchDelay</b>.
-	   * <!-- begin-user-doc -->
+	 * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSResponseSectionDerivedEntryEMSDelayOrganizerEMSDispatchDelayRelationshipEMSDispatchDelay</b>.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	   * @generated
-	   */
+	 * @generated
+	 */
 	protected void createEmspcrEMSResponseSectionDerivedEntryEMSDelayOrganizerEMSDispatchDelayRelationshipEMSDispatchDelayAnnotations() {
 		String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSResponseSectionDerivedEntryEMSDelayOrganizerEMSDispatchDelayRelationshipEMSDispatchDelay";
 		addAnnotation(emsResponseSectionEClass, source, new String[] {
@@ -6651,11 +6651,11 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage {
 	}
 
 	/**
-	   * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSResponseSectionDerivedEntryEMSDelayOrganizerEMSResponseDelayRelationship</b>.
-	   * <!-- begin-user-doc -->
+	 * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSResponseSectionDerivedEntryEMSDelayOrganizerEMSResponseDelayRelationship</b>.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	   * @generated
-	   */
+	 * @generated
+	 */
 	protected void createEmspcrEMSResponseSectionDerivedEntryEMSDelayOrganizerEMSResponseDelayRelationshipAnnotations() {
 		String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSResponseSectionDerivedEntryEMSDelayOrganizerEMSResponseDelayRelationship";
 		addAnnotation(emsResponseSectionEClass, source, new String[] {
@@ -6663,11 +6663,11 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage {
 	}
 
 	/**
-	   * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSResponseSectionDerivedEntryEMSDelayOrganizerEMSResponseDelayRelationshipEMSResponseDelay</b>.
-	   * <!-- begin-user-doc -->
+	 * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSResponseSectionDerivedEntryEMSDelayOrganizerEMSResponseDelayRelationshipEMSResponseDelay</b>.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	   * @generated
-	   */
+	 * @generated
+	 */
 	protected void createEmspcrEMSResponseSectionDerivedEntryEMSDelayOrganizerEMSResponseDelayRelationshipEMSResponseDelayAnnotations() {
 		String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSResponseSectionDerivedEntryEMSDelayOrganizerEMSResponseDelayRelationshipEMSResponseDelay";
 		addAnnotation(emsResponseSectionEClass, source, new String[] {
@@ -6679,11 +6679,11 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage {
 	}
 
 	/**
-	   * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSResponseSectionDerivedEntryEMSDelayOrganizerEMSSceneDelayRelationship</b>.
-	   * <!-- begin-user-doc -->
+	 * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSResponseSectionDerivedEntryEMSDelayOrganizerEMSSceneDelayRelationship</b>.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	   * @generated
-	   */
+	 * @generated
+	 */
 	protected void createEmspcrEMSResponseSectionDerivedEntryEMSDelayOrganizerEMSSceneDelayRelationshipAnnotations() {
 		String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSResponseSectionDerivedEntryEMSDelayOrganizerEMSSceneDelayRelationship";
 		addAnnotation(emsResponseSectionEClass, source, new String[] {
@@ -6691,11 +6691,11 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage {
 	}
 
 	/**
-	   * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSResponseSectionDerivedEntryEMSDelayOrganizerEMSSceneDelayRelationshipEMSSceneDelay</b>.
-	   * <!-- begin-user-doc -->
+	 * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSResponseSectionDerivedEntryEMSDelayOrganizerEMSSceneDelayRelationshipEMSSceneDelay</b>.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	   * @generated
-	   */
+	 * @generated
+	 */
 	protected void createEmspcrEMSResponseSectionDerivedEntryEMSDelayOrganizerEMSSceneDelayRelationshipEMSSceneDelayAnnotations() {
 		String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSResponseSectionDerivedEntryEMSDelayOrganizerEMSSceneDelayRelationshipEMSSceneDelay";
 		addAnnotation(emsResponseSectionEClass, source, new String[] {
@@ -6707,11 +6707,11 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage {
 	}
 
 	/**
-	   * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSResponseSectionDerivedEntryEMSDelayOrganizerEMSTransportDelayRelationship</b>.
-	   * <!-- begin-user-doc -->
+	 * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSResponseSectionDerivedEntryEMSDelayOrganizerEMSTransportDelayRelationship</b>.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	   * @generated
-	   */
+	 * @generated
+	 */
 	protected void createEmspcrEMSResponseSectionDerivedEntryEMSDelayOrganizerEMSTransportDelayRelationshipAnnotations() {
 		String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSResponseSectionDerivedEntryEMSDelayOrganizerEMSTransportDelayRelationship";
 		addAnnotation(emsResponseSectionEClass, source, new String[] {
@@ -6719,11 +6719,11 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage {
 	}
 
 	/**
-	   * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSResponseSectionDerivedEntryEMSDelayOrganizerEMSTransportDelayRelationshipEMSTransportDelay</b>.
-	   * <!-- begin-user-doc -->
+	 * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSResponseSectionDerivedEntryEMSDelayOrganizerEMSTransportDelayRelationshipEMSTransportDelay</b>.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	   * @generated
-	   */
+	 * @generated
+	 */
 	protected void createEmspcrEMSResponseSectionDerivedEntryEMSDelayOrganizerEMSTransportDelayRelationshipEMSTransportDelayAnnotations() {
 		String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSResponseSectionDerivedEntryEMSDelayOrganizerEMSTransportDelayRelationshipEMSTransportDelay";
 		addAnnotation(emsResponseSectionEClass, source, new String[] {
@@ -6735,11 +6735,11 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage {
 	}
 
 	/**
-	   * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSResponseSectionDerivedEntryEMSDelayOrganizerEMSTurnaoundDelayRelationship</b>.
-	   * <!-- begin-user-doc -->
+	 * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSResponseSectionDerivedEntryEMSDelayOrganizerEMSTurnaoundDelayRelationship</b>.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	   * @generated
-	   */
+	 * @generated
+	 */
 	protected void createEmspcrEMSResponseSectionDerivedEntryEMSDelayOrganizerEMSTurnaoundDelayRelationshipAnnotations() {
 		String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSResponseSectionDerivedEntryEMSDelayOrganizerEMSTurnaoundDelayRelationship";
 		addAnnotation(emsResponseSectionEClass, source, new String[] {
@@ -6747,11 +6747,11 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage {
 	}
 
 	/**
-	   * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSResponseSectionDerivedEntryEMSDelayOrganizerEMSTurnaoundDelayRelationshipEMSTurnaroundDelay</b>.
-	   * <!-- begin-user-doc -->
+	 * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSResponseSectionDerivedEntryEMSDelayOrganizerEMSTurnaoundDelayRelationshipEMSTurnaroundDelay</b>.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	   * @generated
-	   */
+	 * @generated
+	 */
 	protected void createEmspcrEMSResponseSectionDerivedEntryEMSDelayOrganizerEMSTurnaoundDelayRelationshipEMSTurnaroundDelayAnnotations() {
 		String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSResponseSectionDerivedEntryEMSDelayOrganizerEMSTurnaoundDelayRelationshipEMSTurnaroundDelay";
 		addAnnotation(emsResponseSectionEClass, source, new String[] {
@@ -6763,11 +6763,11 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage {
 	}
 
 	/**
-	   * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSResponseSectionDerivedEntryEMSDispatchLocationOrganizer</b>.
-	   * <!-- begin-user-doc -->
+	 * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSResponseSectionDerivedEntryEMSDispatchLocationOrganizer</b>.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	   * @generated
-	   */
+	 * @generated
+	 */
 	protected void createEmspcrEMSResponseSectionDerivedEntryEMSDispatchLocationOrganizerAnnotations() {
 		String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSResponseSectionDerivedEntryEMSDispatchLocationOrganizer";
 		addAnnotation(
@@ -6779,11 +6779,11 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage {
 	}
 
 	/**
-	   * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSResponseSectionDerivedEntryEMSDispatchLocationOrganizerEMSDispatchLocationNameRelationship</b>.
-	   * <!-- begin-user-doc -->
+	 * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSResponseSectionDerivedEntryEMSDispatchLocationOrganizerEMSDispatchLocationNameRelationship</b>.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	   * @generated
-	   */
+	 * @generated
+	 */
 	protected void createEmspcrEMSResponseSectionDerivedEntryEMSDispatchLocationOrganizerEMSDispatchLocationNameRelationshipAnnotations() {
 		String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSResponseSectionDerivedEntryEMSDispatchLocationOrganizerEMSDispatchLocationNameRelationship";
 		addAnnotation(
@@ -6796,11 +6796,11 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage {
 	}
 
 	/**
-	   * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSResponseSectionDerivedEntryEMSDispatchLocationOrganizerEMSDispatchLocationNameRelationshipEMSDispatchLocationName</b>.
-	   * <!-- begin-user-doc -->
+	 * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSResponseSectionDerivedEntryEMSDispatchLocationOrganizerEMSDispatchLocationNameRelationshipEMSDispatchLocationName</b>.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	   * @generated
-	   */
+	 * @generated
+	 */
 	protected void createEmspcrEMSResponseSectionDerivedEntryEMSDispatchLocationOrganizerEMSDispatchLocationNameRelationshipEMSDispatchLocationNameAnnotations() {
 		String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSResponseSectionDerivedEntryEMSDispatchLocationOrganizerEMSDispatchLocationNameRelationshipEMSDispatchLocationName";
 		addAnnotation(emsResponseSectionEClass, source, new String[] {
@@ -6810,11 +6810,11 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage {
 	}
 
 	/**
-	   * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSResponseSectionDerivedEntryEMSDispatchLocationOrganizerEMSDispatchLocationLatitudeRelationship</b>.
-	   * <!-- begin-user-doc -->
+	 * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSResponseSectionDerivedEntryEMSDispatchLocationOrganizerEMSDispatchLocationLatitudeRelationship</b>.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	   * @generated
-	   */
+	 * @generated
+	 */
 	protected void createEmspcrEMSResponseSectionDerivedEntryEMSDispatchLocationOrganizerEMSDispatchLocationLatitudeRelationshipAnnotations() {
 		String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSResponseSectionDerivedEntryEMSDispatchLocationOrganizerEMSDispatchLocationLatitudeRelationship";
 		addAnnotation(
@@ -6827,11 +6827,11 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage {
 	}
 
 	/**
-	   * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSResponseSectionDerivedEntryEMSDispatchLocationOrganizerEMSDispatchLocationLatitudeRelationshipEMSDispatchLocationLatitude</b>.
-	   * <!-- begin-user-doc -->
+	 * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSResponseSectionDerivedEntryEMSDispatchLocationOrganizerEMSDispatchLocationLatitudeRelationshipEMSDispatchLocationLatitude</b>.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	   * @generated
-	   */
+	 * @generated
+	 */
 	protected void createEmspcrEMSResponseSectionDerivedEntryEMSDispatchLocationOrganizerEMSDispatchLocationLatitudeRelationshipEMSDispatchLocationLatitudeAnnotations() {
 		String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSResponseSectionDerivedEntryEMSDispatchLocationOrganizerEMSDispatchLocationLatitudeRelationshipEMSDispatchLocationLatitude";
 		addAnnotation(emsResponseSectionEClass, source, new String[] {
@@ -6841,11 +6841,11 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage {
 	}
 
 	/**
-	   * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSResponseSectionDerivedEntryEMSDispatchLocationOrganizerEMSDispatchLocationLongitudeRelationship</b>.
-	   * <!-- begin-user-doc -->
+	 * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSResponseSectionDerivedEntryEMSDispatchLocationOrganizerEMSDispatchLocationLongitudeRelationship</b>.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	   * @generated
-	   */
+	 * @generated
+	 */
 	protected void createEmspcrEMSResponseSectionDerivedEntryEMSDispatchLocationOrganizerEMSDispatchLocationLongitudeRelationshipAnnotations() {
 		String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSResponseSectionDerivedEntryEMSDispatchLocationOrganizerEMSDispatchLocationLongitudeRelationship";
 		addAnnotation(
@@ -6858,11 +6858,11 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage {
 	}
 
 	/**
-	   * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSResponseSectionDerivedEntryEMSDispatchLocationOrganizerEMSDispatchLocationLongitudeRelationshipEMSDispatchLocationLongitude</b>.
-	   * <!-- begin-user-doc -->
+	 * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSResponseSectionDerivedEntryEMSDispatchLocationOrganizerEMSDispatchLocationLongitudeRelationshipEMSDispatchLocationLongitude</b>.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	   * @generated
-	   */
+	 * @generated
+	 */
 	protected void createEmspcrEMSResponseSectionDerivedEntryEMSDispatchLocationOrganizerEMSDispatchLocationLongitudeRelationshipEMSDispatchLocationLongitudeAnnotations() {
 		String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSResponseSectionDerivedEntryEMSDispatchLocationOrganizerEMSDispatchLocationLongitudeRelationshipEMSDispatchLocationLongitude";
 		addAnnotation(emsResponseSectionEClass, source, new String[] {
@@ -6872,11 +6872,11 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage {
 	}
 
 	/**
-	   * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSResponseSectionDerivedEntryEMSResponseOdometerReadingOrganizer</b>.
-	   * <!-- begin-user-doc -->
+	 * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSResponseSectionDerivedEntryEMSResponseOdometerReadingOrganizer</b>.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	   * @generated
-	   */
+	 * @generated
+	 */
 	protected void createEmspcrEMSResponseSectionDerivedEntryEMSResponseOdometerReadingOrganizerAnnotations() {
 		String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSResponseSectionDerivedEntryEMSResponseOdometerReadingOrganizer";
 		addAnnotation(
@@ -6888,11 +6888,11 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage {
 	}
 
 	/**
-	   * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSResponseSectionDerivedEntryEMSResponseOdometerReadingOrganizerEMSResponseBeginningOdometerReadingRelationship</b>.
-	   * <!-- begin-user-doc -->
+	 * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSResponseSectionDerivedEntryEMSResponseOdometerReadingOrganizerEMSResponseBeginningOdometerReadingRelationship</b>.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	   * @generated
-	   */
+	 * @generated
+	 */
 	protected void createEmspcrEMSResponseSectionDerivedEntryEMSResponseOdometerReadingOrganizerEMSResponseBeginningOdometerReadingRelationshipAnnotations() {
 		String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSResponseSectionDerivedEntryEMSResponseOdometerReadingOrganizerEMSResponseBeginningOdometerReadingRelationship";
 		addAnnotation(emsResponseSectionEClass, source, new String[] {
@@ -6901,11 +6901,11 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage {
 	}
 
 	/**
-	   * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSResponseSectionDerivedEntryEMSResponseOdometerReadingOrganizerEMSResponseBeginningOdometerReadingRelationshipEMSResponseBeginningOdometerReading</b>.
-	   * <!-- begin-user-doc -->
+	 * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSResponseSectionDerivedEntryEMSResponseOdometerReadingOrganizerEMSResponseBeginningOdometerReadingRelationshipEMSResponseBeginningOdometerReading</b>.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	   * @generated
-	   */
+	 * @generated
+	 */
 	protected void createEmspcrEMSResponseSectionDerivedEntryEMSResponseOdometerReadingOrganizerEMSResponseBeginningOdometerReadingRelationshipEMSResponseBeginningOdometerReadingAnnotations() {
 		String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSResponseSectionDerivedEntryEMSResponseOdometerReadingOrganizerEMSResponseBeginningOdometerReadingRelationshipEMSResponseBeginningOdometerReading";
 		addAnnotation(
@@ -6927,11 +6927,11 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage {
 	}
 
 	/**
-	   * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSResponseSectionDerivedEntryEMSResponseOdometerReadingOrganizerEMSResponseOnSceneOdometerReadingRelationship</b>.
-	   * <!-- begin-user-doc -->
+	 * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSResponseSectionDerivedEntryEMSResponseOdometerReadingOrganizerEMSResponseOnSceneOdometerReadingRelationship</b>.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	   * @generated
-	   */
+	 * @generated
+	 */
 	protected void createEmspcrEMSResponseSectionDerivedEntryEMSResponseOdometerReadingOrganizerEMSResponseOnSceneOdometerReadingRelationshipAnnotations() {
 		String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSResponseSectionDerivedEntryEMSResponseOdometerReadingOrganizerEMSResponseOnSceneOdometerReadingRelationship";
 		addAnnotation(emsResponseSectionEClass, source, new String[] {
@@ -6940,11 +6940,11 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage {
 	}
 
 	/**
-	   * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSResponseSectionDerivedEntryEMSResponseOdometerReadingOrganizerEMSResponseOnSceneOdometerReadingRelationshipEMSResponseOnSceneOdometerReading</b>.
-	   * <!-- begin-user-doc -->
+	 * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSResponseSectionDerivedEntryEMSResponseOdometerReadingOrganizerEMSResponseOnSceneOdometerReadingRelationshipEMSResponseOnSceneOdometerReading</b>.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	   * @generated
-	   */
+	 * @generated
+	 */
 	protected void createEmspcrEMSResponseSectionDerivedEntryEMSResponseOdometerReadingOrganizerEMSResponseOnSceneOdometerReadingRelationshipEMSResponseOnSceneOdometerReadingAnnotations() {
 		String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSResponseSectionDerivedEntryEMSResponseOdometerReadingOrganizerEMSResponseOnSceneOdometerReadingRelationshipEMSResponseOnSceneOdometerReading";
 		addAnnotation(
@@ -6966,11 +6966,11 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage {
 	}
 
 	/**
-	   * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSResponseSectionDerivedEntryEMSResponseOdometerReadingOrganizerEMSResponseDestinationOdometerReadingRelationship</b>.
-	   * <!-- begin-user-doc -->
+	 * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSResponseSectionDerivedEntryEMSResponseOdometerReadingOrganizerEMSResponseDestinationOdometerReadingRelationship</b>.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	   * @generated
-	   */
+	 * @generated
+	 */
 	protected void createEmspcrEMSResponseSectionDerivedEntryEMSResponseOdometerReadingOrganizerEMSResponseDestinationOdometerReadingRelationshipAnnotations() {
 		String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSResponseSectionDerivedEntryEMSResponseOdometerReadingOrganizerEMSResponseDestinationOdometerReadingRelationship";
 		addAnnotation(emsResponseSectionEClass, source, new String[] {
@@ -6979,11 +6979,11 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage {
 	}
 
 	/**
-	   * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSResponseSectionDerivedEntryEMSResponseOdometerReadingOrganizerEMSResponseDestinationOdometerReadingRelationshipEMSResponseDestinationOdometerReading</b>.
-	   * <!-- begin-user-doc -->
+	 * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSResponseSectionDerivedEntryEMSResponseOdometerReadingOrganizerEMSResponseDestinationOdometerReadingRelationshipEMSResponseDestinationOdometerReading</b>.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	   * @generated
-	   */
+	 * @generated
+	 */
 	protected void createEmspcrEMSResponseSectionDerivedEntryEMSResponseOdometerReadingOrganizerEMSResponseDestinationOdometerReadingRelationshipEMSResponseDestinationOdometerReadingAnnotations() {
 		String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSResponseSectionDerivedEntryEMSResponseOdometerReadingOrganizerEMSResponseDestinationOdometerReadingRelationshipEMSResponseDestinationOdometerReading";
 		addAnnotation(
@@ -7005,11 +7005,11 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage {
 	}
 
 	/**
-	   * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSResponseSectionDerivedEntryEMSResponseOdometerReadingOrganizerEMSResponseEndingOdometerReadingRelationship</b>.
-	   * <!-- begin-user-doc -->
+	 * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSResponseSectionDerivedEntryEMSResponseOdometerReadingOrganizerEMSResponseEndingOdometerReadingRelationship</b>.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	   * @generated
-	   */
+	 * @generated
+	 */
 	protected void createEmspcrEMSResponseSectionDerivedEntryEMSResponseOdometerReadingOrganizerEMSResponseEndingOdometerReadingRelationshipAnnotations() {
 		String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSResponseSectionDerivedEntryEMSResponseOdometerReadingOrganizerEMSResponseEndingOdometerReadingRelationship";
 		addAnnotation(emsResponseSectionEClass, source, new String[] {
@@ -7018,11 +7018,11 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage {
 	}
 
 	/**
-	   * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSResponseSectionDerivedEntryEMSResponseOdometerReadingOrganizerEMSResponseEndingOdometerReadingRelationshipEMSResponseEndingOdometerReading</b>.
-	   * <!-- begin-user-doc -->
+	 * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSResponseSectionDerivedEntryEMSResponseOdometerReadingOrganizerEMSResponseEndingOdometerReadingRelationshipEMSResponseEndingOdometerReading</b>.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	   * @generated
-	   */
+	 * @generated
+	 */
 	protected void createEmspcrEMSResponseSectionDerivedEntryEMSResponseOdometerReadingOrganizerEMSResponseEndingOdometerReadingRelationshipEMSResponseEndingOdometerReadingAnnotations() {
 		String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSResponseSectionDerivedEntryEMSResponseOdometerReadingOrganizerEMSResponseEndingOdometerReadingRelationshipEMSResponseEndingOdometerReading";
 		addAnnotation(
@@ -7044,11 +7044,11 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage {
 	}
 
 	/**
-	   * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSResponseSectionDerivedEntryEMSResponseModeToScene</b>.
-	   * <!-- begin-user-doc -->
+	 * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSResponseSectionDerivedEntryEMSResponseModeToScene</b>.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	   * @generated
-	   */
+	 * @generated
+	 */
 	protected void createEmspcrEMSResponseSectionDerivedEntryEMSResponseModeToSceneAnnotations() {
 		String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSResponseSectionDerivedEntryEMSResponseModeToScene";
 		addAnnotation(
@@ -7070,11 +7070,11 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage {
 	}
 
 	/**
-	   * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSSituationSectionDerivedEntry1</b>.
-	   * <!-- begin-user-doc -->
+	 * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSSituationSectionDerivedEntry1</b>.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	   * @generated
-	   */
+	 * @generated
+	 */
 	protected void createEmspcrEMSSituationSectionDerivedEntry1Annotations() {
 		String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSSituationSectionDerivedEntry1";
 		addAnnotation(emsSituationSectionEClass, source, new String[] {
@@ -7082,11 +7082,11 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage {
 	}
 
 	/**
-	   * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSSituationSectionDerivedEntry1EMSComplaint</b>.
-	   * <!-- begin-user-doc -->
+	 * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSSituationSectionDerivedEntry1EMSComplaint</b>.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	   * @generated
-	   */
+	 * @generated
+	 */
 	protected void createEmspcrEMSSituationSectionDerivedEntry1EMSComplaintAnnotations() {
 		String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSSituationSectionDerivedEntry1EMSComplaint";
 		addAnnotation(
@@ -7113,11 +7113,11 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage {
 	}
 
 	/**
-	   * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSSituationSectionDerivedEntry1EMSComplaintEMSComplaintTypeRelationshipEMSComplaintType</b>.
-	   * <!-- begin-user-doc -->
+	 * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSSituationSectionDerivedEntry1EMSComplaintEMSComplaintTypeRelationshipEMSComplaintType</b>.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	   * @generated
-	   */
+	 * @generated
+	 */
 	protected void createEmspcrEMSSituationSectionDerivedEntry1EMSComplaintEMSComplaintTypeRelationshipEMSComplaintTypeAnnotations() {
 		String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSSituationSectionDerivedEntry1EMSComplaintEMSComplaintTypeRelationshipEMSComplaintType";
 		addAnnotation(emsSituationSectionEClass, source, new String[] {
@@ -7127,11 +7127,11 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage {
 	}
 
 	/**
-	   * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSSituationSectionDerivedEntry1EMSComplaintEMSComplaintDurationRelationshipEMSComplaintDuration</b>.
-	   * <!-- begin-user-doc -->
+	 * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSSituationSectionDerivedEntry1EMSComplaintEMSComplaintDurationRelationshipEMSComplaintDuration</b>.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	   * @generated
-	   */
+	 * @generated
+	 */
 	protected void createEmspcrEMSSituationSectionDerivedEntry1EMSComplaintEMSComplaintDurationRelationshipEMSComplaintDurationAnnotations() {
 		String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSSituationSectionDerivedEntry1EMSComplaintEMSComplaintDurationRelationshipEMSComplaintDuration";
 		addAnnotation(emsSituationSectionEClass, source, new String[] {
@@ -7142,11 +7142,11 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage {
 	}
 
 	/**
-	   * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSSituationSectionDerivedEntry1EMSComplaintEMSComplaintOrganSystemRelationship</b>.
-	   * <!-- begin-user-doc -->
+	 * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSSituationSectionDerivedEntry1EMSComplaintEMSComplaintOrganSystemRelationship</b>.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	   * @generated
-	   */
+	 * @generated
+	 */
 	protected void createEmspcrEMSSituationSectionDerivedEntry1EMSComplaintEMSComplaintOrganSystemRelationshipAnnotations() {
 		String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSSituationSectionDerivedEntry1EMSComplaintEMSComplaintOrganSystemRelationship";
 		addAnnotation(emsSituationSectionEClass, source, new String[] {
@@ -7154,11 +7154,11 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage {
 	}
 
 	/**
-	   * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSSituationSectionDerivedEntry1EMSComplaintEMSComplaintOrganSystemRelationshipEMSComplaintOrganSystem</b>.
-	   * <!-- begin-user-doc -->
+	 * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSSituationSectionDerivedEntry1EMSComplaintEMSComplaintOrganSystemRelationshipEMSComplaintOrganSystem</b>.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	   * @generated
-	   */
+	 * @generated
+	 */
 	protected void createEmspcrEMSSituationSectionDerivedEntry1EMSComplaintEMSComplaintOrganSystemRelationshipEMSComplaintOrganSystemAnnotations() {
 		String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSSituationSectionDerivedEntry1EMSComplaintEMSComplaintOrganSystemRelationshipEMSComplaintOrganSystem";
 		addAnnotation(
@@ -7180,11 +7180,11 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage {
 	}
 
 	/**
-	   * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSSituationSectionDerivedEntry2</b>.
-	   * <!-- begin-user-doc -->
+	 * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSSituationSectionDerivedEntry2</b>.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	   * @generated
-	   */
+	 * @generated
+	 */
 	protected void createEmspcrEMSSituationSectionDerivedEntry2Annotations() {
 		String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSSituationSectionDerivedEntry2";
 		addAnnotation(emsSituationSectionEClass, source, new String[] {
@@ -7192,11 +7192,11 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage {
 	}
 
 	/**
-	   * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSSituationSectionDerivedEntry2EMSSituationOnsetTime</b>.
-	   * <!-- begin-user-doc -->
+	 * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSSituationSectionDerivedEntry2EMSSituationOnsetTime</b>.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	   * @generated
-	   */
+	 * @generated
+	 */
 	protected void createEmspcrEMSSituationSectionDerivedEntry2EMSSituationOnsetTimeAnnotations() {
 		String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSSituationSectionDerivedEntry2EMSSituationOnsetTime";
 		addAnnotation(emsSituationSectionEClass, source, new String[] {
@@ -7207,11 +7207,11 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage {
 	}
 
 	/**
-	   * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSSituationSectionDerivedEntry3</b>.
-	   * <!-- begin-user-doc -->
+	 * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSSituationSectionDerivedEntry3</b>.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	   * @generated
-	   */
+	 * @generated
+	 */
 	protected void createEmspcrEMSSituationSectionDerivedEntry3Annotations() {
 		String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSSituationSectionDerivedEntry3";
 		addAnnotation(emsSituationSectionEClass, source, new String[] {
@@ -7219,11 +7219,11 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage {
 	}
 
 	/**
-	   * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSSituationSectionDerivedEntry3EMSPossibleInjury</b>.
-	   * <!-- begin-user-doc -->
+	 * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSSituationSectionDerivedEntry3EMSPossibleInjury</b>.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	   * @generated
-	   */
+	 * @generated
+	 */
 	protected void createEmspcrEMSSituationSectionDerivedEntry3EMSPossibleInjuryAnnotations() {
 		String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSSituationSectionDerivedEntry3EMSPossibleInjury";
 		addAnnotation(emsSituationSectionEClass, source, new String[] {
@@ -7234,11 +7234,11 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage {
 	}
 
 	/**
-	   * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSSituationSectionDerivedEntry4</b>.
-	   * <!-- begin-user-doc -->
+	 * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSSituationSectionDerivedEntry4</b>.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	   * @generated
-	   */
+	 * @generated
+	 */
 	protected void createEmspcrEMSSituationSectionDerivedEntry4Annotations() {
 		String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSSituationSectionDerivedEntry4";
 		addAnnotation(emsSituationSectionEClass, source, new String[] {
@@ -7246,11 +7246,11 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage {
 	}
 
 	/**
-	   * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSSituationSectionDerivedEntry4EMSProviderPrimaryImpression</b>.
-	   * <!-- begin-user-doc -->
+	 * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSSituationSectionDerivedEntry4EMSProviderPrimaryImpression</b>.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	   * @generated
-	   */
+	 * @generated
+	 */
 	protected void createEmspcrEMSSituationSectionDerivedEntry4EMSProviderPrimaryImpressionAnnotations() {
 		String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSSituationSectionDerivedEntry4EMSProviderPrimaryImpression";
 		addAnnotation(
@@ -7272,11 +7272,11 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage {
 	}
 
 	/**
-	   * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSSituationSectionDerivedEntry</b>.
-	   * <!-- begin-user-doc -->
+	 * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSSituationSectionDerivedEntry</b>.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	   * @generated
-	   */
+	 * @generated
+	 */
 	protected void createEmspcrEMSSituationSectionDerivedEntryAnnotations() {
 		String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSSituationSectionDerivedEntry";
 		addAnnotation(emsSituationSectionEClass, source, new String[] {
@@ -7285,11 +7285,11 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage {
 	}
 
 	/**
-	   * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSSituationSectionDerivedEntryEMSPrimarySymptom</b>.
-	   * <!-- begin-user-doc -->
+	 * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSSituationSectionDerivedEntryEMSPrimarySymptom</b>.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	   * @generated
-	   */
+	 * @generated
+	 */
 	protected void createEmspcrEMSSituationSectionDerivedEntryEMSPrimarySymptomAnnotations() {
 		String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSSituationSectionDerivedEntryEMSPrimarySymptom";
 		addAnnotation(emsSituationSectionEClass, source, new String[] {
@@ -7301,11 +7301,11 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage {
 	}
 
 	/**
-	   * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSSituationSectionDerivedEntryEMSOtherSymptoms</b>.
-	   * <!-- begin-user-doc -->
+	 * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSSituationSectionDerivedEntryEMSOtherSymptoms</b>.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	   * @generated
-	   */
+	 * @generated
+	 */
 	protected void createEmspcrEMSSituationSectionDerivedEntryEMSOtherSymptomsAnnotations() {
 		String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSSituationSectionDerivedEntryEMSOtherSymptoms";
 		addAnnotation(emsSituationSectionEClass, source, new String[] {
@@ -7317,11 +7317,11 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage {
 	}
 
 	/**
-	   * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSSituationSectionDerivedEntryEMSProviderSecondaryImpressions</b>.
-	   * <!-- begin-user-doc -->
+	 * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSSituationSectionDerivedEntryEMSProviderSecondaryImpressions</b>.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	   * @generated
-	   */
+	 * @generated
+	 */
 	protected void createEmspcrEMSSituationSectionDerivedEntryEMSProviderSecondaryImpressionsAnnotations() {
 		String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSSituationSectionDerivedEntryEMSProviderSecondaryImpressions";
 		addAnnotation(
@@ -7343,11 +7343,11 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage {
 	}
 
 	/**
-	   * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSSituationSectionDerivedEntryEMSInitialPatientAcuity</b>.
-	   * <!-- begin-user-doc -->
+	 * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSSituationSectionDerivedEntryEMSInitialPatientAcuity</b>.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	   * @generated
-	   */
+	 * @generated
+	 */
 	protected void createEmspcrEMSSituationSectionDerivedEntryEMSInitialPatientAcuityAnnotations() {
 		String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSSituationSectionDerivedEntryEMSInitialPatientAcuity";
 		addAnnotation(
@@ -7369,11 +7369,11 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage {
 	}
 
 	/**
-	   * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSTimesSectionDerivedEntry</b>.
-	   * <!-- begin-user-doc -->
+	 * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSTimesSectionDerivedEntry</b>.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	   * @generated
-	   */
+	 * @generated
+	 */
 	protected void createEmspcrEMSTimesSectionDerivedEntryAnnotations() {
 		String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSTimesSectionDerivedEntry";
 		addAnnotation(emsTimesSectionEClass, source, new String[] {
@@ -7381,11 +7381,11 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage {
 	}
 
 	/**
-	   * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSTimesSectionDerivedEntryEMSCallTime</b>.
-	   * <!-- begin-user-doc -->
+	 * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSTimesSectionDerivedEntryEMSCallTime</b>.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	   * @generated
-	   */
+	 * @generated
+	 */
 	protected void createEmspcrEMSTimesSectionDerivedEntryEMSCallTimeAnnotations() {
 		String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSTimesSectionDerivedEntryEMSCallTime";
 		addAnnotation(emsTimesSectionEClass, source, new String[] {
@@ -7396,11 +7396,11 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage {
 	}
 
 	/**
-	   * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSTimesSectionDerivedEntryEMSUnitNotifiedTime</b>.
-	   * <!-- begin-user-doc -->
+	 * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSTimesSectionDerivedEntryEMSUnitNotifiedTime</b>.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	   * @generated
-	   */
+	 * @generated
+	 */
 	protected void createEmspcrEMSTimesSectionDerivedEntryEMSUnitNotifiedTimeAnnotations() {
 		String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSTimesSectionDerivedEntryEMSUnitNotifiedTime";
 		addAnnotation(emsTimesSectionEClass, source, new String[] {
@@ -7411,11 +7411,11 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage {
 	}
 
 	/**
-	   * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSTimesSectionDerivedEntryEMSUnitEnRouteTime</b>.
-	   * <!-- begin-user-doc -->
+	 * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSTimesSectionDerivedEntryEMSUnitEnRouteTime</b>.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	   * @generated
-	   */
+	 * @generated
+	 */
 	protected void createEmspcrEMSTimesSectionDerivedEntryEMSUnitEnRouteTimeAnnotations() {
 		String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSTimesSectionDerivedEntryEMSUnitEnRouteTime";
 		addAnnotation(emsTimesSectionEClass, source, new String[] {
@@ -7426,11 +7426,11 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage {
 	}
 
 	/**
-	   * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSTimesSectionDerivedEntryEMSUnitOnSceneTime</b>.
-	   * <!-- begin-user-doc -->
+	 * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSTimesSectionDerivedEntryEMSUnitOnSceneTime</b>.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	   * @generated
-	   */
+	 * @generated
+	 */
 	protected void createEmspcrEMSTimesSectionDerivedEntryEMSUnitOnSceneTimeAnnotations() {
 		String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSTimesSectionDerivedEntryEMSUnitOnSceneTime";
 		addAnnotation(emsTimesSectionEClass, source, new String[] {
@@ -7441,11 +7441,11 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage {
 	}
 
 	/**
-	   * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSTimesSectionDerivedEntryEMSUnitAtPatienttTime</b>.
-	   * <!-- begin-user-doc -->
+	 * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSTimesSectionDerivedEntryEMSUnitAtPatienttTime</b>.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	   * @generated
-	   */
+	 * @generated
+	 */
 	protected void createEmspcrEMSTimesSectionDerivedEntryEMSUnitAtPatienttTimeAnnotations() {
 		String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSTimesSectionDerivedEntryEMSUnitAtPatienttTime";
 		addAnnotation(emsTimesSectionEClass, source, new String[] {
@@ -7456,11 +7456,11 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage {
 	}
 
 	/**
-	   * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSTimesSectionDerivedEntryEMSUnitLeftSceneTime</b>.
-	   * <!-- begin-user-doc -->
+	 * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSTimesSectionDerivedEntryEMSUnitLeftSceneTime</b>.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	   * @generated
-	   */
+	 * @generated
+	 */
 	protected void createEmspcrEMSTimesSectionDerivedEntryEMSUnitLeftSceneTimeAnnotations() {
 		String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSTimesSectionDerivedEntryEMSUnitLeftSceneTime";
 		addAnnotation(emsTimesSectionEClass, source, new String[] {
@@ -7471,11 +7471,11 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage {
 	}
 
 	/**
-	   * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSTimesSectionDerivedEntryEMSPatientArrivedAtDestinationTime</b>.
-	   * <!-- begin-user-doc -->
+	 * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSTimesSectionDerivedEntryEMSPatientArrivedAtDestinationTime</b>.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	   * @generated
-	   */
+	 * @generated
+	 */
 	protected void createEmspcrEMSTimesSectionDerivedEntryEMSPatientArrivedAtDestinationTimeAnnotations() {
 		String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSTimesSectionDerivedEntryEMSPatientArrivedAtDestinationTime";
 		addAnnotation(
@@ -7497,11 +7497,11 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage {
 	}
 
 	/**
-	   * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSTimesSectionDerivedEntryEMSUnitBackInServiceTime</b>.
-	   * <!-- begin-user-doc -->
+	 * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSTimesSectionDerivedEntryEMSUnitBackInServiceTime</b>.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	   * @generated
-	   */
+	 * @generated
+	 */
 	protected void createEmspcrEMSTimesSectionDerivedEntryEMSUnitBackInServiceTimeAnnotations() {
 		String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSTimesSectionDerivedEntryEMSUnitBackInServiceTime";
 		addAnnotation(emsTimesSectionEClass, source, new String[] {
@@ -7512,11 +7512,11 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage {
 	}
 
 	/**
-	   * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSTimesSectionDerivedEntryEMSDispatchNotifiedTime</b>.
-	   * <!-- begin-user-doc -->
+	 * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSTimesSectionDerivedEntryEMSDispatchNotifiedTime</b>.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	   * @generated
-	   */
+	 * @generated
+	 */
 	protected void createEmspcrEMSTimesSectionDerivedEntryEMSDispatchNotifiedTimeAnnotations() {
 		String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSTimesSectionDerivedEntryEMSDispatchNotifiedTime";
 		addAnnotation(emsTimesSectionEClass, source, new String[] {
@@ -7527,11 +7527,11 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage {
 	}
 
 	/**
-	   * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSVitalSignsSectionDerivedEntry</b>.
-	   * <!-- begin-user-doc -->
+	 * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSVitalSignsSectionDerivedEntry</b>.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	   * @generated
-	   */
+	 * @generated
+	 */
 	protected void createEmspcrEMSVitalSignsSectionDerivedEntryAnnotations() {
 		String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSVitalSignsSectionDerivedEntry";
 		addAnnotation(emsVitalSignsSectionEClass, source, new String[] {
@@ -7539,11 +7539,11 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage {
 	}
 
 	/**
-	   * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSVitalSignsSectionDerivedEntryEMSVitalSignsOrganizer</b>.
-	   * <!-- begin-user-doc -->
+	 * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSVitalSignsSectionDerivedEntryEMSVitalSignsOrganizer</b>.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	   * @generated
-	   */
+	 * @generated
+	 */
 	protected void createEmspcrEMSVitalSignsSectionDerivedEntryEMSVitalSignsOrganizerAnnotations() {
 		String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSVitalSignsSectionDerivedEntryEMSVitalSignsOrganizer";
 		addAnnotation(
@@ -7558,11 +7558,11 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage {
 	}
 
 	/**
-	   * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSVitalSignsSectionDerivedEntryEMSVitalSignsOrganizerEMSPriorAidVitals</b>.
-	   * <!-- begin-user-doc -->
+	 * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSVitalSignsSectionDerivedEntryEMSVitalSignsOrganizerEMSPriorAidVitals</b>.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	   * @generated
-	   */
+	 * @generated
+	 */
 	protected void createEmspcrEMSVitalSignsSectionDerivedEntryEMSVitalSignsOrganizerEMSPriorAidVitalsAnnotations() {
 		String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSVitalSignsSectionDerivedEntryEMSVitalSignsOrganizerEMSPriorAidVitals";
 		addAnnotation(emsVitalSignsSectionEClass, source, new String[] {
@@ -7572,11 +7572,11 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage {
 	}
 
 	/**
-	   * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSVitalSignsSectionDerivedEntryEMSVitalSignsOrganizerEMSCardiacRhythm</b>.
-	   * <!-- begin-user-doc -->
+	 * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSVitalSignsSectionDerivedEntryEMSVitalSignsOrganizerEMSCardiacRhythm</b>.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	   * @generated
-	   */
+	 * @generated
+	 */
 	protected void createEmspcrEMSVitalSignsSectionDerivedEntryEMSVitalSignsOrganizerEMSCardiacRhythmAnnotations() {
 		String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSVitalSignsSectionDerivedEntryEMSVitalSignsOrganizerEMSCardiacRhythm";
 		addAnnotation(
@@ -7599,11 +7599,11 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage {
 	}
 
 	/**
-	   * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSVitalSignsSectionDerivedEntryEMSVitalSignsOrganizerEMSSystolicBloodPressure</b>.
-	   * <!-- begin-user-doc -->
+	 * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSVitalSignsSectionDerivedEntryEMSVitalSignsOrganizerEMSSystolicBloodPressure</b>.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	   * @generated
-	   */
+	 * @generated
+	 */
 	protected void createEmspcrEMSVitalSignsSectionDerivedEntryEMSVitalSignsOrganizerEMSSystolicBloodPressureAnnotations() {
 		String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSVitalSignsSectionDerivedEntryEMSVitalSignsOrganizerEMSSystolicBloodPressure";
 		addAnnotation(emsVitalSignsSectionEClass, source, new String[] {
@@ -7613,11 +7613,11 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage {
 	}
 
 	/**
-	   * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSVitalSignsSectionDerivedEntryEMSVitalSignsOrganizerEMSDiastolicBloodPressure</b>.
-	   * <!-- begin-user-doc -->
+	 * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSVitalSignsSectionDerivedEntryEMSVitalSignsOrganizerEMSDiastolicBloodPressure</b>.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	   * @generated
-	   */
+	 * @generated
+	 */
 	protected void createEmspcrEMSVitalSignsSectionDerivedEntryEMSVitalSignsOrganizerEMSDiastolicBloodPressureAnnotations() {
 		String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSVitalSignsSectionDerivedEntryEMSVitalSignsOrganizerEMSDiastolicBloodPressure";
 		addAnnotation(emsVitalSignsSectionEClass, source, new String[] {
@@ -7627,11 +7627,11 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage {
 	}
 
 	/**
-	   * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSVitalSignsSectionDerivedEntryEMSVitalSignsOrganizerEMSHeartRate</b>.
-	   * <!-- begin-user-doc -->
+	 * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSVitalSignsSectionDerivedEntryEMSVitalSignsOrganizerEMSHeartRate</b>.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	   * @generated
-	   */
+	 * @generated
+	 */
 	protected void createEmspcrEMSVitalSignsSectionDerivedEntryEMSVitalSignsOrganizerEMSHeartRateAnnotations() {
 		String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSVitalSignsSectionDerivedEntryEMSVitalSignsOrganizerEMSHeartRate";
 		addAnnotation(emsVitalSignsSectionEClass, source, new String[] {
@@ -7642,11 +7642,11 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage {
 	}
 
 	/**
-	   * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSVitalSignsSectionDerivedEntryEMSVitalSignsOrganizerEMSRespiratoryRate</b>.
-	   * <!-- begin-user-doc -->
+	 * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSVitalSignsSectionDerivedEntryEMSVitalSignsOrganizerEMSRespiratoryRate</b>.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	   * @generated
-	   */
+	 * @generated
+	 */
 	protected void createEmspcrEMSVitalSignsSectionDerivedEntryEMSVitalSignsOrganizerEMSRespiratoryRateAnnotations() {
 		String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSVitalSignsSectionDerivedEntryEMSVitalSignsOrganizerEMSRespiratoryRate";
 		addAnnotation(emsVitalSignsSectionEClass, source, new String[] {
@@ -7656,11 +7656,11 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage {
 	}
 
 	/**
-	   * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSVitalSignsSectionDerivedEntryEMSVitalSignsOrganizerEMSBodyTemperature</b>.
-	   * <!-- begin-user-doc -->
+	 * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSVitalSignsSectionDerivedEntryEMSVitalSignsOrganizerEMSBodyTemperature</b>.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	   * @generated
-	   */
+	 * @generated
+	 */
 	protected void createEmspcrEMSVitalSignsSectionDerivedEntryEMSVitalSignsOrganizerEMSBodyTemperatureAnnotations() {
 		String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSVitalSignsSectionDerivedEntryEMSVitalSignsOrganizerEMSBodyTemperature";
 		addAnnotation(emsVitalSignsSectionEClass, source, new String[] {
@@ -7670,11 +7670,11 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage {
 	}
 
 	/**
-	   * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSVitalSignsSectionDerivedEntryEMSVitalSignsOrganizerEMSOxygenSaturation</b>.
-	   * <!-- begin-user-doc -->
+	 * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSVitalSignsSectionDerivedEntryEMSVitalSignsOrganizerEMSOxygenSaturation</b>.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	   * @generated
-	   */
+	 * @generated
+	 */
 	protected void createEmspcrEMSVitalSignsSectionDerivedEntryEMSVitalSignsOrganizerEMSOxygenSaturationAnnotations() {
 		String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSVitalSignsSectionDerivedEntryEMSVitalSignsOrganizerEMSOxygenSaturation";
 		addAnnotation(emsVitalSignsSectionEClass, source, new String[] {
@@ -7684,11 +7684,11 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage {
 	}
 
 	/**
-	   * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSVitalSignsSectionDerivedEntryEMSVitalSignsOrganizerEMSCarbonDioxide</b>.
-	   * <!-- begin-user-doc -->
+	 * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSVitalSignsSectionDerivedEntryEMSVitalSignsOrganizerEMSCarbonDioxide</b>.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	   * @generated
-	   */
+	 * @generated
+	 */
 	protected void createEmspcrEMSVitalSignsSectionDerivedEntryEMSVitalSignsOrganizerEMSCarbonDioxideAnnotations() {
 		String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSVitalSignsSectionDerivedEntryEMSVitalSignsOrganizerEMSCarbonDioxide";
 		addAnnotation(emsVitalSignsSectionEClass, source, new String[] {
@@ -7699,11 +7699,11 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage {
 	}
 
 	/**
-	   * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSVitalSignsSectionDerivedEntryEMSVitalSignsOrganizerEMSCarbonMonoxide</b>.
-	   * <!-- begin-user-doc -->
+	 * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSVitalSignsSectionDerivedEntryEMSVitalSignsOrganizerEMSCarbonMonoxide</b>.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	   * @generated
-	   */
+	 * @generated
+	 */
 	protected void createEmspcrEMSVitalSignsSectionDerivedEntryEMSVitalSignsOrganizerEMSCarbonMonoxideAnnotations() {
 		String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSVitalSignsSectionDerivedEntryEMSVitalSignsOrganizerEMSCarbonMonoxide";
 		addAnnotation(emsVitalSignsSectionEClass, source, new String[] {
@@ -7714,11 +7714,11 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage {
 	}
 
 	/**
-	   * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSVitalSignsSectionDerivedEntryEMSVitalSignsOrganizerEMSBloodGlucose</b>.
-	   * <!-- begin-user-doc -->
+	 * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSVitalSignsSectionDerivedEntryEMSVitalSignsOrganizerEMSBloodGlucose</b>.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	   * @generated
-	   */
+	 * @generated
+	 */
 	protected void createEmspcrEMSVitalSignsSectionDerivedEntryEMSVitalSignsOrganizerEMSBloodGlucoseAnnotations() {
 		String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSVitalSignsSectionDerivedEntryEMSVitalSignsOrganizerEMSBloodGlucose";
 		addAnnotation(emsVitalSignsSectionEClass, source, new String[] {
@@ -7729,11 +7729,11 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage {
 	}
 
 	/**
-	   * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSVitalSignsSectionDerivedEntryEMSVitalSignsOrganizerEMSLevelOfResponsiveness</b>.
-	   * <!-- begin-user-doc -->
+	 * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSVitalSignsSectionDerivedEntryEMSVitalSignsOrganizerEMSLevelOfResponsiveness</b>.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	   * @generated
-	   */
+	 * @generated
+	 */
 	protected void createEmspcrEMSVitalSignsSectionDerivedEntryEMSVitalSignsOrganizerEMSLevelOfResponsivenessAnnotations() {
 		String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSVitalSignsSectionDerivedEntryEMSVitalSignsOrganizerEMSLevelOfResponsiveness";
 		addAnnotation(
@@ -7755,11 +7755,11 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage {
 	}
 
 	/**
-	   * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSVitalSignsSectionDerivedEntryEMSVitalSignsOrganizerEMSPainScore</b>.
-	   * <!-- begin-user-doc -->
+	 * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSVitalSignsSectionDerivedEntryEMSVitalSignsOrganizerEMSPainScore</b>.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	   * @generated
-	   */
+	 * @generated
+	 */
 	protected void createEmspcrEMSVitalSignsSectionDerivedEntryEMSVitalSignsOrganizerEMSPainScoreAnnotations() {
 		String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSVitalSignsSectionDerivedEntryEMSVitalSignsOrganizerEMSPainScore";
 		addAnnotation(emsVitalSignsSectionEClass, source, new String[] {
@@ -7769,11 +7769,11 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage {
 	}
 
 	/**
-	   * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSVitalSignsSectionDerivedEntryEMSVitalSignsOrganizerEMSStrokeScore</b>.
-	   * <!-- begin-user-doc -->
+	 * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSVitalSignsSectionDerivedEntryEMSVitalSignsOrganizerEMSStrokeScore</b>.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	   * @generated
-	   */
+	 * @generated
+	 */
 	protected void createEmspcrEMSVitalSignsSectionDerivedEntryEMSVitalSignsOrganizerEMSStrokeScoreAnnotations() {
 		String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSVitalSignsSectionDerivedEntryEMSVitalSignsOrganizerEMSStrokeScore";
 		addAnnotation(
@@ -7796,11 +7796,11 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage {
 	}
 
 	/**
-	   * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSVitalSignsSectionDerivedEntryEMSVitalSignsOrganizerEMSGlasgowComaScore</b>.
-	   * <!-- begin-user-doc -->
+	 * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSVitalSignsSectionDerivedEntryEMSVitalSignsOrganizerEMSGlasgowComaScore</b>.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	   * @generated
-	   */
+	 * @generated
+	 */
 	protected void createEmspcrEMSVitalSignsSectionDerivedEntryEMSVitalSignsOrganizerEMSGlasgowComaScoreAnnotations() {
 		String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSVitalSignsSectionDerivedEntryEMSVitalSignsOrganizerEMSGlasgowComaScore";
 		addAnnotation(
@@ -7814,11 +7814,11 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage {
 	}
 
 	/**
-	   * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSVitalSignsSectionDerivedEntryEMSVitalSignsOrganizerEMSGlasgowComaScoreEMSGlasgowTotal</b>.
-	   * <!-- begin-user-doc -->
+	 * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSVitalSignsSectionDerivedEntryEMSVitalSignsOrganizerEMSGlasgowComaScoreEMSGlasgowTotal</b>.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	   * @generated
-	   */
+	 * @generated
+	 */
 	protected void createEmspcrEMSVitalSignsSectionDerivedEntryEMSVitalSignsOrganizerEMSGlasgowComaScoreEMSGlasgowTotalAnnotations() {
 		String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSVitalSignsSectionDerivedEntryEMSVitalSignsOrganizerEMSGlasgowComaScoreEMSGlasgowTotal";
 		addAnnotation(emsVitalSignsSectionEClass, source, new String[] {
@@ -7829,11 +7829,11 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage {
 	}
 
 	/**
-	   * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSVitalSignsSectionDerivedEntryEMSVitalSignsOrganizerEMSGlasgowComaScoreEMSGlasgowQualifier</b>.
-	   * <!-- begin-user-doc -->
+	 * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSVitalSignsSectionDerivedEntryEMSVitalSignsOrganizerEMSGlasgowComaScoreEMSGlasgowQualifier</b>.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	   * @generated
-	   */
+	 * @generated
+	 */
 	protected void createEmspcrEMSVitalSignsSectionDerivedEntryEMSVitalSignsOrganizerEMSGlasgowComaScoreEMSGlasgowQualifierAnnotations() {
 		String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSVitalSignsSectionDerivedEntryEMSVitalSignsOrganizerEMSGlasgowComaScoreEMSGlasgowQualifier";
 		addAnnotation(emsVitalSignsSectionEClass, source, new String[] {
@@ -7845,11 +7845,11 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage {
 	}
 
 	/**
-	   * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSVitalSignsSectionDerivedEntryEMSVitalSignsOrganizerEMSGlasgowComaScoreEMSGlasgowEye</b>.
-	   * <!-- begin-user-doc -->
+	 * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSVitalSignsSectionDerivedEntryEMSVitalSignsOrganizerEMSGlasgowComaScoreEMSGlasgowEye</b>.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	   * @generated
-	   */
+	 * @generated
+	 */
 	protected void createEmspcrEMSVitalSignsSectionDerivedEntryEMSVitalSignsOrganizerEMSGlasgowComaScoreEMSGlasgowEyeAnnotations() {
 		String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSVitalSignsSectionDerivedEntryEMSVitalSignsOrganizerEMSGlasgowComaScoreEMSGlasgowEye";
 		addAnnotation(emsVitalSignsSectionEClass, source, new String[] {
@@ -7861,11 +7861,11 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage {
 	}
 
 	/**
-	   * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSVitalSignsSectionDerivedEntryEMSVitalSignsOrganizerEMSGlasgowComaScoreEMSGlasgowMotor</b>.
-	   * <!-- begin-user-doc -->
+	 * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSVitalSignsSectionDerivedEntryEMSVitalSignsOrganizerEMSGlasgowComaScoreEMSGlasgowMotor</b>.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	   * @generated
-	   */
+	 * @generated
+	 */
 	protected void createEmspcrEMSVitalSignsSectionDerivedEntryEMSVitalSignsOrganizerEMSGlasgowComaScoreEMSGlasgowMotorAnnotations() {
 		String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSVitalSignsSectionDerivedEntryEMSVitalSignsOrganizerEMSGlasgowComaScoreEMSGlasgowMotor";
 		addAnnotation(
@@ -7881,11 +7881,11 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage {
 	}
 
 	/**
-	   * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSVitalSignsSectionDerivedEntryEMSVitalSignsOrganizerEMSGlasgowComaScoreEMSGlasgowVerbal</b>.
-	   * <!-- begin-user-doc -->
+	 * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSVitalSignsSectionDerivedEntryEMSVitalSignsOrganizerEMSGlasgowComaScoreEMSGlasgowVerbal</b>.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	   * @generated
-	   */
+	 * @generated
+	 */
 	protected void createEmspcrEMSVitalSignsSectionDerivedEntryEMSVitalSignsOrganizerEMSGlasgowComaScoreEMSGlasgowVerbalAnnotations() {
 		String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSVitalSignsSectionDerivedEntryEMSVitalSignsOrganizerEMSGlasgowComaScoreEMSGlasgowVerbal";
 		addAnnotation(emsVitalSignsSectionEClass, source, new String[] {

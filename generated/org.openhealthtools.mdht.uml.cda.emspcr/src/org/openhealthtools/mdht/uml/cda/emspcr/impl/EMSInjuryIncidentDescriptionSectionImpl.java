@@ -215,10 +215,10 @@ public class EMSInjuryIncidentDescriptionSectionImpl extends SectionImpl impleme
 	}
 
 	/**
-	   * <!-- begin-user-doc -->
-	   * <!-- end-user-doc -->
-	   * @generated
-	   */
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public EMSInjuryIncidentDescriptionSection init(Iterable<? extends Initializer<? extends EObject>> initializers) {
 		Initializer.Util.init(this, initializers);
 		return this;

@@ -185,7 +185,7 @@
     </eOperations>
     <eOperations name="PatientCareReportCode" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
       <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
-        <details key="body" value="(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and &#xA;let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in &#xA;value.code = '67796-3' and value.codeSystem = '2.16.840.1.113883.6.1')"/>
+        <details key="body" value="(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and &#xD;&#xA;let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in &#xD;&#xA;value.code = '67796-3' and value.codeSystem = '2.16.840.1.113883.6.1')"/>
       </eAnnotations>
       <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain">
         <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
@@ -999,7 +999,7 @@
     </eOperations>
     <eOperations name="EMSBillingSectionCode" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
       <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
-        <details key="body" value="(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and &#xA;let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in &#xA;value.code = '67659-3' and value.codeSystem = '2.16.840.1.113883.6.1')"/>
+        <details key="body" value="(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and &#xD;&#xA;let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in &#xD;&#xA;value.code = '67659-3' and value.codeSystem = '2.16.840.1.113883.6.1')"/>
       </eAnnotations>
       <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain">
         <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
@@ -1217,7 +1217,7 @@
     </eOperations>
     <eOperations name="EMSInjuryIncidentDescriptionSectionCode" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
       <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
-        <details key="body" value="(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and &#xA;let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in &#xA;value.code = '11374-6' and value.codeSystem = '2.16.840.1.113883.6.1')"/>
+        <details key="body" value="(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and &#xD;&#xA;let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in &#xD;&#xA;value.code = '11374-6' and value.codeSystem = '2.16.840.1.113883.6.1')"/>
       </eAnnotations>
       <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain">
         <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
@@ -1532,7 +1532,7 @@
     </eOperations>
     <eOperations name="EMSCurrentMedicationSectionCode" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
       <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
-        <details key="body" value="(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and &#xA;let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in &#xA;value.code = '67844-1' and value.codeSystem = '2.16.840.1.113883.6.1')"/>
+        <details key="body" value="(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and &#xD;&#xA;let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in &#xD;&#xA;value.code = '67844-1' and value.codeSystem = '2.16.840.1.113883.6.1')"/>
       </eAnnotations>
       <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain">
         <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
@@ -1818,7 +1818,7 @@
     </eOperations>
     <eOperations name="EMSCardiacArrestEventSectionCode" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
       <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
-        <details key="body" value="(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and &#xA;let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in &#xA;value.code = '67799-7' and value.codeSystem = '2.16.840.1.113883.6.1')"/>
+        <details key="body" value="(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and &#xD;&#xA;let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in &#xD;&#xA;value.code = '67799-7' and value.codeSystem = '2.16.840.1.113883.6.1')"/>
       </eAnnotations>
       <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain">
         <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
@@ -1933,7 +1933,7 @@
     </eOperations>
     <eOperations name="EMSAdvanceDirectivesSectionCode" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
       <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
-        <details key="body" value="(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and &#xA;let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in &#xA;value.code = '67840-9' and value.codeSystem = '2.16.840.1.113883.6.1')"/>
+        <details key="body" value="(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and &#xD;&#xA;let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in &#xD;&#xA;value.code = '67840-9' and value.codeSystem = '2.16.840.1.113883.6.1')"/>
       </eAnnotations>
       <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain">
         <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
@@ -2097,7 +2097,7 @@
     </eOperations>
     <eOperations name="EMSAllergiesAndAdverseReactionsSectionCode" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
       <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
-        <details key="body" value="(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and &#xA;let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in &#xA;value.code = '67841-7' and value.codeSystem = '2.16.840.1.113883.6.1')"/>
+        <details key="body" value="(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and &#xD;&#xA;let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in &#xD;&#xA;value.code = '67841-7' and value.codeSystem = '2.16.840.1.113883.6.1')"/>
       </eAnnotations>
       <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain">
         <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
@@ -2264,7 +2264,7 @@
     </eOperations>
     <eOperations name="EMSPastMedicalHistorySectionCode" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
       <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
-        <details key="body" value="(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and &#xA;let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in &#xA;value.code = '67842-5' and value.codeSystem = '2.16.840.1.113883.6.1')"/>
+        <details key="body" value="(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and &#xD;&#xA;let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in &#xD;&#xA;value.code = '67842-5' and value.codeSystem = '2.16.840.1.113883.6.1')"/>
       </eAnnotations>
       <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain">
         <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
@@ -2430,7 +2430,7 @@
     </eOperations>
     <eOperations name="EMSSocialHistorySectionCode" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
       <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
-        <details key="body" value="not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and &#xA;let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in &#xA;value.code = '67843-3' and value.codeSystem = '2.16.840.1.113883.6.1'"/>
+        <details key="body" value="not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and &#xD;&#xA;let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in &#xD;&#xA;value.code = '67843-3' and value.codeSystem = '2.16.840.1.113883.6.1'"/>
       </eAnnotations>
       <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain">
         <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
@@ -2783,7 +2783,7 @@
     </eOperations>
     <eOperations name="EMSPhysicalAssessmentSectionCode" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
       <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
-        <details key="body" value="(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and &#xA;let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in &#xA;value.code = '67668-4' and value.codeSystem = '2.16.840.1.113883.6.1')"/>
+        <details key="body" value="(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and &#xD;&#xA;let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in &#xD;&#xA;value.code = '67668-4' and value.codeSystem = '2.16.840.1.113883.6.1')"/>
       </eAnnotations>
       <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain">
         <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
@@ -3101,7 +3101,7 @@
     </eOperations>
     <eOperations name="EMSMedicationsAdministeredSectionCode" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
       <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
-        <details key="body" value="(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and &#xA;let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in &#xA;value.code = '67849-0' and value.codeSystem = '2.16.840.1.113883.6.1')"/>
+        <details key="body" value="(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and &#xD;&#xA;let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in &#xD;&#xA;value.code = '67849-0' and value.codeSystem = '2.16.840.1.113883.6.1')"/>
       </eAnnotations>
       <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain">
         <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
@@ -3352,7 +3352,7 @@
     </eOperations>
     <eOperations name="EMSProceduresPerformedSectionCode" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
       <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
-        <details key="body" value="(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and &#xA;let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in &#xA;value.code = '67802-9' and value.codeSystem = '2.16.840.1.113883.6.1')"/>
+        <details key="body" value="(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and &#xD;&#xA;let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in &#xD;&#xA;value.code = '67802-9' and value.codeSystem = '2.16.840.1.113883.6.1')"/>
       </eAnnotations>
       <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain">
         <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
@@ -3477,7 +3477,7 @@
     </eOperations>
     <eOperations name="EMSPatientCareNarrativeSectionCode" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
       <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
-        <details key="body" value="(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and &#xA;let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in &#xA;value.code = '67781-5' and value.codeSystem = '2.16.840.1.113883.6.1')"/>
+        <details key="body" value="(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and &#xD;&#xA;let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in &#xD;&#xA;value.code = '67781-5' and value.codeSystem = '2.16.840.1.113883.6.1')"/>
       </eAnnotations>
       <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain">
         <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
@@ -3613,7 +3613,7 @@
     </eOperations>
     <eOperations name="EMSSceneSectionCode" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
       <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
-        <details key="body" value="(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and &#xA;let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in &#xA;value.code = '67665-0' and value.codeSystem = '2.16.840.1.113883.6.1')"/>
+        <details key="body" value="(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and &#xD;&#xA;let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in &#xD;&#xA;value.code = '67665-0' and value.codeSystem = '2.16.840.1.113883.6.1')"/>
       </eAnnotations>
       <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain">
         <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
@@ -3801,7 +3801,7 @@
     </eOperations>
     <eOperations name="EMSDispatchSectionCode" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
       <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
-        <details key="body" value="(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and &#xA;let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in &#xA;value.code = '67660-1' and value.codeSystem = '2.16.840.1.113883.6.1')"/>
+        <details key="body" value="(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and &#xD;&#xA;let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in &#xD;&#xA;value.code = '67660-1' and value.codeSystem = '2.16.840.1.113883.6.1')"/>
       </eAnnotations>
       <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain">
         <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
@@ -4002,7 +4002,7 @@
     </eOperations>
     <eOperations name="EMSDispositionSectionCode" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
       <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
-        <details key="body" value="(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and &#xA;let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in &#xA;value.code = '67796-3' and value.codeSystem = '2.16.840.1.113883.6.1')"/>
+        <details key="body" value="(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and &#xD;&#xA;let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in &#xD;&#xA;value.code = '67796-3' and value.codeSystem = '2.16.840.1.113883.6.1')"/>
       </eAnnotations>
       <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain">
         <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
@@ -4264,7 +4264,7 @@
     </eOperations>
     <eOperations name="EMSPersonnelAdverseEventSectionCode" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
       <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
-        <details key="body" value="(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and &#xA;let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in &#xA;value.code = '67658-5' and value.codeSystem = '2.16.840.1.113883.6.1')"/>
+        <details key="body" value="(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and &#xD;&#xA;let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in &#xD;&#xA;value.code = '67658-5' and value.codeSystem = '2.16.840.1.113883.6.1')"/>
       </eAnnotations>
       <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain">
         <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
@@ -4442,7 +4442,7 @@
     </eOperations>
     <eOperations name="EMSProtocolSectionCode" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
       <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
-        <details key="body" value="(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and &#xA;let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in &#xA;value.code = '67537-1' and value.codeSystem = '2.16.840.1.113883.6.1')"/>
+        <details key="body" value="(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and &#xD;&#xA;let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in &#xD;&#xA;value.code = '67537-1' and value.codeSystem = '2.16.840.1.113883.6.1')"/>
       </eAnnotations>
       <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain">
         <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
@@ -4754,7 +4754,7 @@
     </eOperations>
     <eOperations name="EMSResponseSectionCode" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
       <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
-        <details key="body" value="(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and &#xA;let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in &#xA;value.code = '67664-3' and value.codeSystem = '2.16.840.1.113883.6.1')"/>
+        <details key="body" value="(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and &#xD;&#xA;let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in &#xD;&#xA;value.code = '67664-3' and value.codeSystem = '2.16.840.1.113883.6.1')"/>
       </eAnnotations>
       <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain">
         <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
@@ -5055,7 +5055,7 @@
     </eOperations>
     <eOperations name="EMSSituationSectionCode" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
       <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
-        <details key="body" value="(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and &#xA;let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in &#xA;value.code = '67666-8' and value.codeSystem = '2.16.840.1.113883.6.1')"/>
+        <details key="body" value="(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and &#xD;&#xA;let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in &#xD;&#xA;value.code = '67666-8' and value.codeSystem = '2.16.840.1.113883.6.1')"/>
       </eAnnotations>
       <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain">
         <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
@@ -5390,7 +5390,7 @@
     </eOperations>
     <eOperations name="EMSTimesSectionCode" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
       <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
-        <details key="body" value="(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and &#xA;let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in &#xA;value.code = '67667-6' and value.codeSystem = '2.16.840.1.113883.6.1')"/>
+        <details key="body" value="(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and &#xD;&#xA;let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in &#xD;&#xA;value.code = '67667-6' and value.codeSystem = '2.16.840.1.113883.6.1')"/>
       </eAnnotations>
       <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain">
         <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
@@ -5825,7 +5825,7 @@
     </eOperations>
     <eOperations name="EMSVitalSignsSectionCode" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
       <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
-        <details key="body" value="(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and &#xA;let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in &#xA;value.code = '67801-1' and value.codeSystem = '2.16.840.1.113883.6.1')"/>
+        <details key="body" value="(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and &#xD;&#xA;let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in &#xD;&#xA;value.code = '67801-1' and value.codeSystem = '2.16.840.1.113883.6.1')"/>
       </eAnnotations>
       <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain">
         <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">

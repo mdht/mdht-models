@@ -58,9 +58,9 @@ public interface DerivedEntry extends Entry {
 	public DerivedEntry init();
 
 	/**
-	   * <!-- begin-user-doc -->
-	   * <!-- end-user-doc -->
-	   * @generated
-	   */
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public DerivedEntry init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // DerivedEntry
