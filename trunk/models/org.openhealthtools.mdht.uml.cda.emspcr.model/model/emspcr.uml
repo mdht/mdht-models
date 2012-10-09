@@ -6464,12 +6464,6 @@ This is the value represented in the header for the encompassing encounter</body
     <packagedElement xmi:type="uml:Association" xmi:id="_jJW5gMdxEeGtwJlNcukY2g" memberEnd="_jJWScMdxEeGtwJlNcukY2g _jJXgkMdxEeGtwJlNcukY2g">
       <ownedEnd xmi:id="_jJXgkMdxEeGtwJlNcukY2g" type="_mwn8MIcoEeGqF6qfYwLiQw" association="_jJW5gMdxEeGtwJlNcukY2g"/>
     </packagedElement>
-    <packagedElement xmi:type="uml:Association" xmi:id="_hsIeY-yQEeGI2PLrUudKTQ" memberEnd="_hsIeZOyQEeGI2PLrUudKTQ">
-      <ownedEnd xmi:id="_hsIeZOyQEeGI2PLrUudKTQ" association="_hsIeY-yQEeGI2PLrUudKTQ"/>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Association" xmi:id="_rtDJs-yQEeGI2PLrUudKTQ" memberEnd="_rtDwwOyQEeGI2PLrUudKTQ">
-      <ownedEnd xmi:id="_rtDwwOyQEeGI2PLrUudKTQ" association="_rtDJs-yQEeGI2PLrUudKTQ"/>
-    </packagedElement>
     <profileApplication xmi:id="_xpUkQWeQEeGtXKebdWh3hg">
       <eAnnotations xmi:id="_xpUkQmeQEeGtXKebdWh3hg" source="http://www.eclipse.org/uml2/2.0.0/UML">
         <references xmi:type="ecore:EPackage" href="pathmap://UML_PROFILES/Standard.profile.uml#_yzU58YinEdqtvbnfB2L_5w"/>
@@ -9532,5 +9526,5 @@ This is the value represented in the header for the encompassing encounter</body
   <CDA:TextValue xmi:id="_ApQjgMnXEeG5-4TLRzrz-A" severity="WARNING" base_Property="_QRNgZpoiEeG_FLcaRgAa7g" value="EMS Physical Assessment Section"/>
   <CDA:TextValue xmi:id="_EYIpAMnXEeG5-4TLRzrz-A" severity="WARNING" base_Property="_cHJsAJ-mEeGorI3CPDW2ww" value="EMS Protocol Section"/>
   <CDA:TextValue xmi:id="_JPbIEMnXEeG5-4TLRzrz-A" severity="WARNING" base_Property="_q0uEs6K8EeGOxth0BgV-QA" value="EMS Situation Section"/>
-  <CDA:AssociationValidation xmi:id="_DSNdIOyREeGI2PLrUudKTQ" base_Association="_rtDJs-yQEeGI2PLrUudKTQ"/>
+  <CDA:AssociationValidation xmi:id="_DSNdIOyREeGI2PLrUudKTQ"/>
 </xmi:XMI>
