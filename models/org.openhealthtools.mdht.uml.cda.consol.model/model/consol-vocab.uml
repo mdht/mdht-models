@@ -40,9 +40,284 @@
       <ownedLiteral xmi:id="_2HnQVBSVEeGGzu7fmW9pXw" name="aborted"/>
       <ownedLiteral xmi:id="_2HnQVRSVEeGGzu7fmW9pXw" name="completed"/>
     </packagedElement>
-    <packagedElement xmi:type="uml:Enumeration" xmi:id="_2H150BSVEeGGzu7fmW9pXw" name="Medication Route FDA Value Set"/>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_2H150BSVEeGGzu7fmW9pXw" name="Medication Route FDA Value Set">
+      <ownedLiteral xmi:id="_khmoYBMsEeK4go_VqYg1Bw" name="C38192"/>
+      <ownedLiteral xmi:id="_kkBDMRMsEeK4go_VqYg1Bw" name="C38193"/>
+      <ownedLiteral xmi:id="_kkBDMxMsEeK4go_VqYg1Bw" name="C38194"/>
+      <ownedLiteral xmi:id="_kkBqQBMsEeK4go_VqYg1Bw" name="C38675"/>
+      <ownedLiteral xmi:id="_kkBqQhMsEeK4go_VqYg1Bw" name="C38197"/>
+      <ownedLiteral xmi:id="_kkBqRBMsEeK4go_VqYg1Bw" name="C38633"/>
+      <ownedLiteral xmi:id="_kkCRURMsEeK4go_VqYg1Bw" name="C38205"/>
+      <ownedLiteral xmi:id="_kkCRUxMsEeK4go_VqYg1Bw" name="C38206"/>
+      <ownedLiteral xmi:id="_kkCRVRMsEeK4go_VqYg1Bw" name="C38208"/>
+      <ownedLiteral xmi:id="_kkC4YRMsEeK4go_VqYg1Bw" name="C38209"/>
+      <ownedLiteral xmi:id="_kkC4YxMsEeK4go_VqYg1Bw" name="C38210"/>
+      <ownedLiteral xmi:id="_kkC4ZRMsEeK4go_VqYg1Bw" name="C38211"/>
+      <ownedLiteral xmi:id="_kkC4ZxMsEeK4go_VqYg1Bw" name="C38212"/>
+      <ownedLiteral xmi:id="_kkDfcRMsEeK4go_VqYg1Bw" name="C38200"/>
+      <ownedLiteral xmi:id="_kkDfcxMsEeK4go_VqYg1Bw" name="C38215"/>
+      <ownedLiteral xmi:id="_kkDfdRMsEeK4go_VqYg1Bw" name="C38219"/>
+      <ownedLiteral xmi:id="_kkEGgBMsEeK4go_VqYg1Bw" name="C38220"/>
+      <ownedLiteral xmi:id="_kkEGghMsEeK4go_VqYg1Bw" name="C38221"/>
+      <ownedLiteral xmi:id="_kkEGhBMsEeK4go_VqYg1Bw" name="C38222"/>
+      <ownedLiteral xmi:id="_kkEGhhMsEeK4go_VqYg1Bw" name="C38223"/>
+      <ownedLiteral xmi:id="_kkEtkRMsEeK4go_VqYg1Bw" name="C38224"/>
+      <ownedLiteral xmi:id="_kkEtkxMsEeK4go_VqYg1Bw" name="C38225"/>
+      <ownedLiteral xmi:id="_kkEtlRMsEeK4go_VqYg1Bw" name="C38226"/>
+      <ownedLiteral xmi:id="_kkFUoBMsEeK4go_VqYg1Bw" name="C38227"/>
+      <ownedLiteral xmi:id="_kkFUohMsEeK4go_VqYg1Bw" name="C38228"/>
+      <ownedLiteral xmi:id="_kkFUpBMsEeK4go_VqYg1Bw" name="C38229"/>
+      <ownedLiteral xmi:id="_kkF7sBMsEeK4go_VqYg1Bw" name="C38230"/>
+      <ownedLiteral xmi:id="_kkF7shMsEeK4go_VqYg1Bw" name="C38231"/>
+      <ownedLiteral xmi:id="_kkF7tBMsEeK4go_VqYg1Bw" name="C38232"/>
+      <ownedLiteral xmi:id="_kkGiwRMsEeK4go_VqYg1Bw" name="C38233"/>
+      <ownedLiteral xmi:id="_kkGiwxMsEeK4go_VqYg1Bw" name="C38234"/>
+      <ownedLiteral xmi:id="_kkGixRMsEeK4go_VqYg1Bw" name="C38217"/>
+      <ownedLiteral xmi:id="_kkHJ0BMsEeK4go_VqYg1Bw" name="C38218"/>
+      <ownedLiteral xmi:id="_kkHJ0hMsEeK4go_VqYg1Bw" name="C38235"/>
+      <ownedLiteral xmi:id="_kkHJ1BMsEeK4go_VqYg1Bw" name="C38238"/>
+      <ownedLiteral xmi:id="_kkHw4BMsEeK4go_VqYg1Bw" name="C38239"/>
+      <ownedLiteral xmi:id="_kkHw4hMsEeK4go_VqYg1Bw" name="C38240"/>
+      <ownedLiteral xmi:id="_kkHw5BMsEeK4go_VqYg1Bw" name="C38241"/>
+      <ownedLiteral xmi:id="_kkIX8BMsEeK4go_VqYg1Bw" name="C38242"/>
+      <ownedLiteral xmi:id="_kkIX8hMsEeK4go_VqYg1Bw" name="C38243"/>
+      <ownedLiteral xmi:id="_kkIX9BMsEeK4go_VqYg1Bw" name="C38245"/>
+      <ownedLiteral xmi:id="_kkIX9hMsEeK4go_VqYg1Bw" name="C38246"/>
+      <ownedLiteral xmi:id="_kkI_ARMsEeK4go_VqYg1Bw" name="C38247"/>
+      <ownedLiteral xmi:id="_kkI_AxMsEeK4go_VqYg1Bw" name="C38249"/>
+      <ownedLiteral xmi:id="_kkI_BRMsEeK4go_VqYg1Bw" name="C38250"/>
+      <ownedLiteral xmi:id="_kkJmERMsEeK4go_VqYg1Bw" name="C38251"/>
+      <ownedLiteral xmi:id="_kkJmExMsEeK4go_VqYg1Bw" name="C38252"/>
+      <ownedLiteral xmi:id="_kkJmFRMsEeK4go_VqYg1Bw" name="C38253"/>
+      <ownedLiteral xmi:id="_kkKNIBMsEeK4go_VqYg1Bw" name="C38254"/>
+      <ownedLiteral xmi:id="_kkKNIhMsEeK4go_VqYg1Bw" name="C28161"/>
+      <ownedLiteral xmi:id="_kkKNJBMsEeK4go_VqYg1Bw" name="C38255"/>
+      <ownedLiteral xmi:id="_kkKNJhMsEeK4go_VqYg1Bw" name="C38256"/>
+      <ownedLiteral xmi:id="_kkK0MRMsEeK4go_VqYg1Bw" name="C38257"/>
+      <ownedLiteral xmi:id="_kkK0MxMsEeK4go_VqYg1Bw" name="C38258"/>
+      <ownedLiteral xmi:id="_kkK0NRMsEeK4go_VqYg1Bw" name="C38259"/>
+      <ownedLiteral xmi:id="_kkLbQBMsEeK4go_VqYg1Bw" name="C38260"/>
+      <ownedLiteral xmi:id="_kkLbQhMsEeK4go_VqYg1Bw" name="C38261"/>
+      <ownedLiteral xmi:id="_kkLbRBMsEeK4go_VqYg1Bw" name="C38262"/>
+      <ownedLiteral xmi:id="_kkLbRhMsEeK4go_VqYg1Bw" name="C38263"/>
+      <ownedLiteral xmi:id="_kkMCURMsEeK4go_VqYg1Bw" name="C38264"/>
+      <ownedLiteral xmi:id="_kkMCUxMsEeK4go_VqYg1Bw" name="C38265"/>
+      <ownedLiteral xmi:id="_kkMCVRMsEeK4go_VqYg1Bw" name="C38266"/>
+      <ownedLiteral xmi:id="_kkMpYBMsEeK4go_VqYg1Bw" name="C38267"/>
+      <ownedLiteral xmi:id="_kkMpYhMsEeK4go_VqYg1Bw" name="C38207"/>
+      <ownedLiteral xmi:id="_kkMpZBMsEeK4go_VqYg1Bw" name="C38268"/>
+      <ownedLiteral xmi:id="_kkMpZhMsEeK4go_VqYg1Bw" name="C38269"/>
+      <ownedLiteral xmi:id="_kkNQcRMsEeK4go_VqYg1Bw" name="C38270"/>
+      <ownedLiteral xmi:id="_kkNQcxMsEeK4go_VqYg1Bw" name="C38272"/>
+      <ownedLiteral xmi:id="_kkNQdRMsEeK4go_VqYg1Bw" name="C38273"/>
+      <ownedLiteral xmi:id="_kkN3gRMsEeK4go_VqYg1Bw" name="C38276"/>
+      <ownedLiteral xmi:id="_kkN3gxMsEeK4go_VqYg1Bw" name="C38277"/>
+      <ownedLiteral xmi:id="_kkN3hRMsEeK4go_VqYg1Bw" name="C38278"/>
+      <ownedLiteral xmi:id="_kkOekBMsEeK4go_VqYg1Bw" name="C38280"/>
+      <ownedLiteral xmi:id="_kkOekhMsEeK4go_VqYg1Bw" name="C38203"/>
+      <ownedLiteral xmi:id="_kkOelBMsEeK4go_VqYg1Bw" name="C38281"/>
+      <ownedLiteral xmi:id="_kkOelhMsEeK4go_VqYg1Bw" name="C38282"/>
+      <ownedLiteral xmi:id="_kkPFoBMsEeK4go_VqYg1Bw" name="C38284"/>
+      <ownedLiteral xmi:id="_kkPFohMsEeK4go_VqYg1Bw" name="C38285"/>
+      <ownedLiteral xmi:id="_kkPFpBMsEeK4go_VqYg1Bw" name="C48623"/>
+      <ownedLiteral xmi:id="_kkPFphMsEeK4go_VqYg1Bw" name="C38286"/>
+      <ownedLiteral xmi:id="_kkPssRMsEeK4go_VqYg1Bw" name="C38287"/>
+      <ownedLiteral xmi:id="_kkPssxMsEeK4go_VqYg1Bw" name="C38288"/>
+      <ownedLiteral xmi:id="_kkPstRMsEeK4go_VqYg1Bw" name="C38289"/>
+      <ownedLiteral xmi:id="_kkPstxMsEeK4go_VqYg1Bw" name="C38291"/>
+      <ownedLiteral xmi:id="_kkQTwRMsEeK4go_VqYg1Bw" name="C38676"/>
+      <ownedLiteral xmi:id="_kkQTwxMsEeK4go_VqYg1Bw" name="C38292"/>
+      <ownedLiteral xmi:id="_kkQTxRMsEeK4go_VqYg1Bw" name="C38677"/>
+      <ownedLiteral xmi:id="_kkQTxxMsEeK4go_VqYg1Bw" name="C38293"/>
+      <ownedLiteral xmi:id="_kkQ60BMsEeK4go_VqYg1Bw" name="C38294"/>
+      <ownedLiteral xmi:id="_kkQ60hMsEeK4go_VqYg1Bw" name="C38295"/>
+      <ownedLiteral xmi:id="_kkQ61BMsEeK4go_VqYg1Bw" name="C38216"/>
+      <ownedLiteral xmi:id="_kkQ61hMsEeK4go_VqYg1Bw" name="C38296"/>
+      <ownedLiteral xmi:id="_kkRh4BMsEeK4go_VqYg1Bw" name="C38198"/>
+      <ownedLiteral xmi:id="_kkRh4hMsEeK4go_VqYg1Bw" name="C38297"/>
+      <ownedLiteral xmi:id="_kkRh5BMsEeK4go_VqYg1Bw" name="C38298"/>
+      <ownedLiteral xmi:id="_kkRh5hMsEeK4go_VqYg1Bw" name="C38299"/>
+      <ownedLiteral xmi:id="_kkSI8BMsEeK4go_VqYg1Bw" name="C38300"/>
+      <ownedLiteral xmi:id="_kkSI8hMsEeK4go_VqYg1Bw" name="C38301"/>
+      <ownedLiteral xmi:id="_kkSI9BMsEeK4go_VqYg1Bw" name="C38304"/>
+      <ownedLiteral xmi:id="_kkSI9hMsEeK4go_VqYg1Bw" name="C38305"/>
+      <ownedLiteral xmi:id="_kkSwABMsEeK4go_VqYg1Bw" name="C38283"/>
+      <ownedLiteral xmi:id="_kkSwAhMsEeK4go_VqYg1Bw" name="C38307"/>
+      <ownedLiteral xmi:id="_kkSwBBMsEeK4go_VqYg1Bw" name="C38308"/>
+      <ownedLiteral xmi:id="_kkSwBhMsEeK4go_VqYg1Bw" name="C38309"/>
+      <ownedLiteral xmi:id="_kkTXEBMsEeK4go_VqYg1Bw" name="C38312"/>
+      <ownedLiteral xmi:id="_kkTXEhMsEeK4go_VqYg1Bw" name="C38271"/>
+    </packagedElement>
     <packagedElement xmi:type="uml:Enumeration" xmi:id="_2H3H8RSVEeGGzu7fmW9pXw" name="Body Site Value Set"/>
-    <packagedElement xmi:type="uml:Enumeration" xmi:id="_2H49IBSVEeGGzu7fmW9pXw" name="Medication Product Form"/>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_2H49IBSVEeGGzu7fmW9pXw" name="Medication Product Form Value Set">
+      <ownedLiteral xmi:id="_iqQsQRMsEeK4go_VqYg1Bw" name="C42887"/>
+      <ownedLiteral xmi:id="_iqRTURMsEeK4go_VqYg1Bw" name="C42888"/>
+      <ownedLiteral xmi:id="_iqRTUxMsEeK4go_VqYg1Bw" name="C42960"/>
+      <ownedLiteral xmi:id="_iqRTVRMsEeK4go_VqYg1Bw" name="C42971"/>
+      <ownedLiteral xmi:id="_iqR6YRMsEeK4go_VqYg1Bw" name="C42889"/>
+      <ownedLiteral xmi:id="_iqR6YxMsEeK4go_VqYg1Bw" name="C42892"/>
+      <ownedLiteral xmi:id="_iqR6ZRMsEeK4go_VqYg1Bw" name="C42890"/>
+      <ownedLiteral xmi:id="_iqShcRMsEeK4go_VqYg1Bw" name="C43451"/>
+      <ownedLiteral xmi:id="_iqShcxMsEeK4go_VqYg1Bw" name="C42891"/>
+      <ownedLiteral xmi:id="_iqShdRMsEeK4go_VqYg1Bw" name="C25158"/>
+      <ownedLiteral xmi:id="_iqTIgBMsEeK4go_VqYg1Bw" name="C42895"/>
+      <ownedLiteral xmi:id="_iqTIghMsEeK4go_VqYg1Bw" name="C42896"/>
+      <ownedLiteral xmi:id="_iqTIhBMsEeK4go_VqYg1Bw" name="C42917"/>
+      <ownedLiteral xmi:id="_iqTvkBMsEeK4go_VqYg1Bw" name="C42902"/>
+      <ownedLiteral xmi:id="_iqTvkhMsEeK4go_VqYg1Bw" name="C42904"/>
+      <ownedLiteral xmi:id="_iqTvlBMsEeK4go_VqYg1Bw" name="C42916"/>
+      <ownedLiteral xmi:id="_iqTvlhMsEeK4go_VqYg1Bw" name="C42928"/>
+      <ownedLiteral xmi:id="_iqUWoRMsEeK4go_VqYg1Bw" name="C42936"/>
+      <ownedLiteral xmi:id="_iqUWoxMsEeK4go_VqYg1Bw" name="C42954"/>
+      <ownedLiteral xmi:id="_iqUWpRMsEeK4go_VqYg1Bw" name="C45414"/>
+      <ownedLiteral xmi:id="_iqU9sRMsEeK4go_VqYg1Bw" name="C42678"/>
+      <ownedLiteral xmi:id="_iqU9sxMsEeK4go_VqYg1Bw" name="C60884"/>
+      <ownedLiteral xmi:id="_iqU9tRMsEeK4go_VqYg1Bw" name="C60891"/>
+      <ownedLiteral xmi:id="_iqVkwBMsEeK4go_VqYg1Bw" name="C42900"/>
+      <ownedLiteral xmi:id="_iqVkwhMsEeK4go_VqYg1Bw" name="C42919"/>
+      <ownedLiteral xmi:id="_iqVkxBMsEeK4go_VqYg1Bw" name="C28944"/>
+      <ownedLiteral xmi:id="_iqVkxhMsEeK4go_VqYg1Bw" name="C60897"/>
+      <ownedLiteral xmi:id="_iqWL0RMsEeK4go_VqYg1Bw" name="C42901"/>
+      <ownedLiteral xmi:id="_iqWL0xMsEeK4go_VqYg1Bw" name="C45415"/>
+      <ownedLiteral xmi:id="_iqWL1RMsEeK4go_VqYg1Bw" name="C47890"/>
+      <ownedLiteral xmi:id="_iqWy4RMsEeK4go_VqYg1Bw" name="C43525"/>
+      <ownedLiteral xmi:id="_iqWy4xMsEeK4go_VqYg1Bw" name="C42679"/>
+      <ownedLiteral xmi:id="_iqWy5RMsEeK4go_VqYg1Bw" name="C42763"/>
+      <ownedLiteral xmi:id="_iqXZ8BMsEeK4go_VqYg1Bw" name="C17423"/>
+      <ownedLiteral xmi:id="_iqXZ8hMsEeK4go_VqYg1Bw" name="C42912"/>
+      <ownedLiteral xmi:id="_iqXZ9BMsEeK4go_VqYg1Bw" name="C42913"/>
+      <ownedLiteral xmi:id="_iqXZ9hMsEeK4go_VqYg1Bw" name="C42915"/>
+      <ownedLiteral xmi:id="_iqYBARMsEeK4go_VqYg1Bw" name="C42929"/>
+      <ownedLiteral xmi:id="_iqYBAxMsEeK4go_VqYg1Bw" name="C60926"/>
+      <ownedLiteral xmi:id="_iqYBBRMsEeK4go_VqYg1Bw" name="C42932"/>
+      <ownedLiteral xmi:id="_iqYoEBMsEeK4go_VqYg1Bw" name="C42920"/>
+      <ownedLiteral xmi:id="_iqYoEhMsEeK4go_VqYg1Bw" name="C42984"/>
+      <ownedLiteral xmi:id="_iqYoFBMsEeK4go_VqYg1Bw" name="C60927"/>
+      <ownedLiteral xmi:id="_iqYoFhMsEeK4go_VqYg1Bw" name="C60928"/>
+      <ownedLiteral xmi:id="_iqZPIRMsEeK4go_VqYg1Bw" name="C60929"/>
+      <ownedLiteral xmi:id="_iqZPIxMsEeK4go_VqYg1Bw" name="C42933"/>
+      <ownedLiteral xmi:id="_iqZPJRMsEeK4go_VqYg1Bw" name="C42934"/>
+      <ownedLiteral xmi:id="_iqZPJxMsEeK4go_VqYg1Bw" name="C42906"/>
+      <ownedLiteral xmi:id="_iqZ2MRMsEeK4go_VqYg1Bw" name="C60930"/>
+      <ownedLiteral xmi:id="_iqZ2MxMsEeK4go_VqYg1Bw" name="C48193"/>
+      <ownedLiteral xmi:id="_iqadQRMsEeK4go_VqYg1Bw" name="C42937"/>
+      <ownedLiteral xmi:id="_iqadQxMsEeK4go_VqYg1Bw" name="C45416"/>
+      <ownedLiteral xmi:id="_iqadRRMsEeK4go_VqYg1Bw" name="C42938"/>
+      <ownedLiteral xmi:id="_iqbEUBMsEeK4go_VqYg1Bw" name="C42903"/>
+      <ownedLiteral xmi:id="_iqbEUhMsEeK4go_VqYg1Bw" name="C42909"/>
+      <ownedLiteral xmi:id="_iqbEVBMsEeK4go_VqYg1Bw" name="C42939"/>
+      <ownedLiteral xmi:id="_iqbEVhMsEeK4go_VqYg1Bw" name="C42940"/>
+      <ownedLiteral xmi:id="_iqbrYRMsEeK4go_VqYg1Bw" name="C42921"/>
+      <ownedLiteral xmi:id="_iqbrYxMsEeK4go_VqYg1Bw" name="C42941"/>
+      <ownedLiteral xmi:id="_iqbrZRMsEeK4go_VqYg1Bw" name="C42894"/>
+      <ownedLiteral xmi:id="_iqcScBMsEeK4go_VqYg1Bw" name="C42978"/>
+      <ownedLiteral xmi:id="_iqcSchMsEeK4go_VqYg1Bw" name="C42942"/>
+      <ownedLiteral xmi:id="_iqcSdBMsEeK4go_VqYg1Bw" name="C42944"/>
+      <ownedLiteral xmi:id="_iqcSdhMsEeK4go_VqYg1Bw" name="C60931"/>
+      <ownedLiteral xmi:id="_iqc5gRMsEeK4go_VqYg1Bw" name="C42946"/>
+      <ownedLiteral xmi:id="_iqc5gxMsEeK4go_VqYg1Bw" name="C42914"/>
+      <ownedLiteral xmi:id="_iqc5hRMsEeK4go_VqYg1Bw" name="C42950"/>
+      <ownedLiteral xmi:id="_iqdgkBMsEeK4go_VqYg1Bw" name="C42974"/>
+      <ownedLiteral xmi:id="_iqdgkhMsEeK4go_VqYg1Bw" name="C42976"/>
+      <ownedLiteral xmi:id="_iqdglBMsEeK4go_VqYg1Bw" name="C42977"/>
+      <ownedLiteral xmi:id="_iqdglhMsEeK4go_VqYg1Bw" name="C42959"/>
+      <ownedLiteral xmi:id="_iqeHoRMsEeK4go_VqYg1Bw" name="C42957"/>
+      <ownedLiteral xmi:id="_iqeHoxMsEeK4go_VqYg1Bw" name="C42958"/>
+      <ownedLiteral xmi:id="_iqeHpRMsEeK4go_VqYg1Bw" name="C42956"/>
+      <ownedLiteral xmi:id="_iqeusBMsEeK4go_VqYg1Bw" name="C42945"/>
+      <ownedLiteral xmi:id="_iqeushMsEeK4go_VqYg1Bw" name="C42899"/>
+      <ownedLiteral xmi:id="_iqeutBMsEeK4go_VqYg1Bw" name="C42995"/>
+      <ownedLiteral xmi:id="_iqeuthMsEeK4go_VqYg1Bw" name="C42926"/>
+      <ownedLiteral xmi:id="_iqfVwRMsEeK4go_VqYg1Bw" name="C42951"/>
+      <ownedLiteral xmi:id="_iqfVwxMsEeK4go_VqYg1Bw" name="C42988"/>
+      <ownedLiteral xmi:id="_iqfVxRMsEeK4go_VqYg1Bw" name="C60933"/>
+      <ownedLiteral xmi:id="_iqfVxxMsEeK4go_VqYg1Bw" name="C42922"/>
+      <ownedLiteral xmi:id="_iqf80RMsEeK4go_VqYg1Bw" name="C47915"/>
+      <ownedLiteral xmi:id="_iqf80xMsEeK4go_VqYg1Bw" name="C42947"/>
+      <ownedLiteral xmi:id="_iqf81RMsEeK4go_VqYg1Bw" name="C42948"/>
+      <ownedLiteral xmi:id="_iqgj4BMsEeK4go_VqYg1Bw" name="C47916"/>
+      <ownedLiteral xmi:id="_iqgj4hMsEeK4go_VqYg1Bw" name="C45413"/>
+      <ownedLiteral xmi:id="_iqgj5BMsEeK4go_VqYg1Bw" name="C42949"/>
+      <ownedLiteral xmi:id="_iqgj5hMsEeK4go_VqYg1Bw" name="C42952"/>
+      <ownedLiteral xmi:id="_iqhK8RMsEeK4go_VqYg1Bw" name="C42953"/>
+      <ownedLiteral xmi:id="_iqhK8xMsEeK4go_VqYg1Bw" name="C60934"/>
+      <ownedLiteral xmi:id="_iqhK9RMsEeK4go_VqYg1Bw" name="C29167"/>
+      <ownedLiteral xmi:id="_iqhK9xMsEeK4go_VqYg1Bw" name="C60957"/>
+      <ownedLiteral xmi:id="_iqhyARMsEeK4go_VqYg1Bw" name="C60958"/>
+      <ownedLiteral xmi:id="_iqhyAxMsEeK4go_VqYg1Bw" name="C42955"/>
+      <ownedLiteral xmi:id="_iqhyBRMsEeK4go_VqYg1Bw" name="C29269"/>
+      <ownedLiteral xmi:id="_iqiZEBMsEeK4go_VqYg1Bw" name="C42965"/>
+      <ownedLiteral xmi:id="_iqiZEhMsEeK4go_VqYg1Bw" name="C42966"/>
+      <ownedLiteral xmi:id="_iqiZFBMsEeK4go_VqYg1Bw" name="C60984"/>
+      <ownedLiteral xmi:id="_iqiZFhMsEeK4go_VqYg1Bw" name="C47887"/>
+      <ownedLiteral xmi:id="_iqjAIBMsEeK4go_VqYg1Bw" name="C42967"/>
+      <ownedLiteral xmi:id="_iqjAIhMsEeK4go_VqYg1Bw" name="C42907"/>
+      <ownedLiteral xmi:id="_iqjAJBMsEeK4go_VqYg1Bw" name="C60985"/>
+      <ownedLiteral xmi:id="_iqjAJhMsEeK4go_VqYg1Bw" name="C42968"/>
+      <ownedLiteral xmi:id="_iqjnMRMsEeK4go_VqYg1Bw" name="C42923"/>
+      <ownedLiteral xmi:id="_iqjnMxMsEeK4go_VqYg1Bw" name="C42911"/>
+      <ownedLiteral xmi:id="_iqjnNRMsEeK4go_VqYg1Bw" name="C42969"/>
+      <ownedLiteral xmi:id="_iqkOQBMsEeK4go_VqYg1Bw" name="C42943"/>
+      <ownedLiteral xmi:id="_iqkOQhMsEeK4go_VqYg1Bw" name="C42918"/>
+      <ownedLiteral xmi:id="_iqkORBMsEeK4go_VqYg1Bw" name="C25394"/>
+      <ownedLiteral xmi:id="_iqkORhMsEeK4go_VqYg1Bw" name="C42970"/>
+      <ownedLiteral xmi:id="_iqk1UBMsEeK4go_VqYg1Bw" name="C47913"/>
+      <ownedLiteral xmi:id="_iqk1UhMsEeK4go_VqYg1Bw" name="C42972"/>
+      <ownedLiteral xmi:id="_iqk1VBMsEeK4go_VqYg1Bw" name="C42908"/>
+      <ownedLiteral xmi:id="_iqk1VhMsEeK4go_VqYg1Bw" name="C42973"/>
+      <ownedLiteral xmi:id="_iqlcYRMsEeK4go_VqYg1Bw" name="C42975"/>
+      <ownedLiteral xmi:id="_iqlcYxMsEeK4go_VqYg1Bw" name="C42961"/>
+      <ownedLiteral xmi:id="_iqlcZRMsEeK4go_VqYg1Bw" name="C60988"/>
+      <ownedLiteral xmi:id="_iqmDcBMsEeK4go_VqYg1Bw" name="C42979"/>
+      <ownedLiteral xmi:id="_iqmDchMsEeK4go_VqYg1Bw" name="C42980"/>
+      <ownedLiteral xmi:id="_iqmDdBMsEeK4go_VqYg1Bw" name="C42981"/>
+      <ownedLiteral xmi:id="_iqmDdhMsEeK4go_VqYg1Bw" name="C42982"/>
+      <ownedLiteral xmi:id="_iqmqgRMsEeK4go_VqYg1Bw" name="C42983"/>
+      <ownedLiteral xmi:id="_iqmqgxMsEeK4go_VqYg1Bw" name="C42986"/>
+      <ownedLiteral xmi:id="_iqmqhRMsEeK4go_VqYg1Bw" name="C42898"/>
+      <ownedLiteral xmi:id="_iqmqhxMsEeK4go_VqYg1Bw" name="C42987"/>
+      <ownedLiteral xmi:id="_iqnRkRMsEeK4go_VqYg1Bw" name="C60994"/>
+      <ownedLiteral xmi:id="_iqnRkxMsEeK4go_VqYg1Bw" name="C42935"/>
+      <ownedLiteral xmi:id="_iqnRlRMsEeK4go_VqYg1Bw" name="C60992"/>
+      <ownedLiteral xmi:id="_iqn4oBMsEeK4go_VqYg1Bw" name="C47912"/>
+      <ownedLiteral xmi:id="_iqn4ohMsEeK4go_VqYg1Bw" name="C42989"/>
+      <ownedLiteral xmi:id="_iqn4pBMsEeK4go_VqYg1Bw" name="C42962"/>
+      <ownedLiteral xmi:id="_iqn4phMsEeK4go_VqYg1Bw" name="C42990"/>
+      <ownedLiteral xmi:id="_iqofsBMsEeK4go_VqYg1Bw" name="C42991"/>
+      <ownedLiteral xmi:id="_iqofshMsEeK4go_VqYg1Bw" name="C47914"/>
+      <ownedLiteral xmi:id="_iqoftBMsEeK4go_VqYg1Bw" name="C42993"/>
+      <ownedLiteral xmi:id="_iqofthMsEeK4go_VqYg1Bw" name="C42924"/>
+      <ownedLiteral xmi:id="_iqpGwRMsEeK4go_VqYg1Bw" name="C42994"/>
+      <ownedLiteral xmi:id="_iqpGwxMsEeK4go_VqYg1Bw" name="C42925"/>
+      <ownedLiteral xmi:id="_iqpGxRMsEeK4go_VqYg1Bw" name="C60995"/>
+      <ownedLiteral xmi:id="_iqpt0BMsEeK4go_VqYg1Bw" name="C47889"/>
+      <ownedLiteral xmi:id="_iqpt0hMsEeK4go_VqYg1Bw" name="C47898"/>
+      <ownedLiteral xmi:id="_iqpt1BMsEeK4go_VqYg1Bw" name="C42996"/>
+      <ownedLiteral xmi:id="_iqpt1hMsEeK4go_VqYg1Bw" name="C42998"/>
+      <ownedLiteral xmi:id="_iqqU4RMsEeK4go_VqYg1Bw" name="C42893"/>
+      <ownedLiteral xmi:id="_iqqU4xMsEeK4go_VqYg1Bw" name="C42897"/>
+      <ownedLiteral xmi:id="_iqqU5RMsEeK4go_VqYg1Bw" name="C60997"/>
+      <ownedLiteral xmi:id="_iqqU5xMsEeK4go_VqYg1Bw" name="C42905"/>
+      <ownedLiteral xmi:id="_iqq78RMsEeK4go_VqYg1Bw" name="C42997"/>
+      <ownedLiteral xmi:id="_iqq78xMsEeK4go_VqYg1Bw" name="C42910"/>
+      <ownedLiteral xmi:id="_iqrjABMsEeK4go_VqYg1Bw" name="C42927"/>
+      <ownedLiteral xmi:id="_iqrjAhMsEeK4go_VqYg1Bw" name="C42931"/>
+      <ownedLiteral xmi:id="_iqrjBBMsEeK4go_VqYg1Bw" name="C42930"/>
+      <ownedLiteral xmi:id="_iqrjBhMsEeK4go_VqYg1Bw" name="C61004"/>
+      <ownedLiteral xmi:id="_iqsKERMsEeK4go_VqYg1Bw" name="C61005"/>
+      <ownedLiteral xmi:id="_iqsKExMsEeK4go_VqYg1Bw" name="C42964"/>
+      <ownedLiteral xmi:id="_iqsKFRMsEeK4go_VqYg1Bw" name="C42963"/>
+      <ownedLiteral xmi:id="_iqsxIBMsEeK4go_VqYg1Bw" name="C42999"/>
+      <ownedLiteral xmi:id="_iqsxIhMsEeK4go_VqYg1Bw" name="C61006"/>
+      <ownedLiteral xmi:id="_iqsxJBMsEeK4go_VqYg1Bw" name="C42985"/>
+      <ownedLiteral xmi:id="_iqsxJhMsEeK4go_VqYg1Bw" name="C42992"/>
+      <ownedLiteral xmi:id="_iqtYMBMsEeK4go_VqYg1Bw" name="C47892"/>
+      <ownedLiteral xmi:id="_iqtYMhMsEeK4go_VqYg1Bw" name="C47897"/>
+      <ownedLiteral xmi:id="_iqtYNBMsEeK4go_VqYg1Bw" name="C43000"/>
+      <ownedLiteral xmi:id="_iqtYNhMsEeK4go_VqYg1Bw" name="C43001"/>
+      <ownedLiteral xmi:id="_iqt_QBMsEeK4go_VqYg1Bw" name="C43002"/>
+      <ownedLiteral xmi:id="_iqt_QhMsEeK4go_VqYg1Bw" name="C43003"/>
+    </packagedElement>
     <packagedElement xmi:type="uml:Enumeration" xmi:id="_2JjKABSVEeGGzu7fmW9pXw" name="Social History Type Set Definition">
       <ownedLiteral xmi:id="_2JjKBxSVEeGGzu7fmW9pXw" name="229819007"/>
       <ownedLiteral xmi:id="_2JjKBBSVEeGGzu7fmW9pXw" name="256235009"/>
@@ -61,6 +336,8 @@
       <ownedLiteral xmi:id="_2LHQRBSVEeGGzu7fmW9pXw" name="52765003"/>
       <ownedLiteral xmi:id="_2LHQRRSVEeGGzu7fmW9pXw" name="78823007"/>
       <ownedLiteral xmi:id="_2LHQRhSVEeGGzu7fmW9pXw" name="304251008"/>
+      <ownedLiteral xmi:id="_p-z-MBJLEeKjxqZmTX2rRQ" name="61420007"/>
+      <ownedLiteral xmi:id="_vnlkkBJLEeKjxqZmTX2rRQ" name="71388002"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Enumeration" xmi:id="_2L3eMBSVEeGGzu7fmW9pXw" name="EncounterTypeCode">
       <ownedComment xmi:id="_2L3eMRSVEeGGzu7fmW9pXw">
@@ -72,7 +349,158 @@
         <body>A code indicating the priority of the admission (e.g., Emergency, Urgent, Elective, et cetera).</body>
       </ownedComment>
     </packagedElement>
-    <packagedElement xmi:type="uml:Enumeration" xmi:id="_2MQfxBSVEeGGzu7fmW9pXw" name="Vaccines Administered Value Set"/>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_2MQfxBSVEeGGzu7fmW9pXw" name="Vaccines administered (CVX)">
+      <ownedLiteral xmi:id="_m6KbMRMsEeK4go_VqYg1Bw" name="143"/>
+      <ownedLiteral xmi:id="_m6LCQBMsEeK4go_VqYg1Bw" name="54"/>
+      <ownedLiteral xmi:id="_m6LCQhMsEeK4go_VqYg1Bw" name="55"/>
+      <ownedLiteral xmi:id="_m6LCRBMsEeK4go_VqYg1Bw" name="82"/>
+      <ownedLiteral xmi:id="_m6LCRhMsEeK4go_VqYg1Bw" name="24"/>
+      <ownedLiteral xmi:id="_m6LpUBMsEeK4go_VqYg1Bw" name="19"/>
+      <ownedLiteral xmi:id="_m6LpUhMsEeK4go_VqYg1Bw" name="27"/>
+      <ownedLiteral xmi:id="_m6LpVBMsEeK4go_VqYg1Bw" name="26"/>
+      <ownedLiteral xmi:id="_m6LpVhMsEeK4go_VqYg1Bw" name="29"/>
+      <ownedLiteral xmi:id="_m6LpWBMsEeK4go_VqYg1Bw" name="56"/>
+      <ownedLiteral xmi:id="_m6MQYRMsEeK4go_VqYg1Bw" name="12"/>
+      <ownedLiteral xmi:id="_m6MQYxMsEeK4go_VqYg1Bw" name="28"/>
+      <ownedLiteral xmi:id="_m6MQZRMsEeK4go_VqYg1Bw" name="20"/>
+      <ownedLiteral xmi:id="_m6MQZxMsEeK4go_VqYg1Bw" name="106"/>
+      <ownedLiteral xmi:id="_m6M3cRMsEeK4go_VqYg1Bw" name="107"/>
+      <ownedLiteral xmi:id="_m6M3cxMsEeK4go_VqYg1Bw" name="146"/>
+      <ownedLiteral xmi:id="_m6M3dRMsEeK4go_VqYg1Bw" name="110"/>
+      <ownedLiteral xmi:id="_m6M3dxMsEeK4go_VqYg1Bw" name="50"/>
+      <ownedLiteral xmi:id="_m6NegRMsEeK4go_VqYg1Bw" name="120"/>
+      <ownedLiteral xmi:id="_m6NegxMsEeK4go_VqYg1Bw" name="130"/>
+      <ownedLiteral xmi:id="_m6NehRMsEeK4go_VqYg1Bw" name="132"/>
+      <ownedLiteral xmi:id="_m6OFkBMsEeK4go_VqYg1Bw" name="01"/>
+      <ownedLiteral xmi:id="_m6OFkhMsEeK4go_VqYg1Bw" name="22"/>
+      <ownedLiteral xmi:id="_m6OsoBMsEeK4go_VqYg1Bw" name="102"/>
+      <ownedLiteral xmi:id="_m6OsohMsEeK4go_VqYg1Bw" name="57"/>
+      <ownedLiteral xmi:id="_m6OspBMsEeK4go_VqYg1Bw" name="30"/>
+      <ownedLiteral xmi:id="_m6PTsBMsEeK4go_VqYg1Bw" name="52"/>
+      <ownedLiteral xmi:id="_m6PTshMsEeK4go_VqYg1Bw" name="83"/>
+      <ownedLiteral xmi:id="_m6PTtBMsEeK4go_VqYg1Bw" name="84"/>
+      <ownedLiteral xmi:id="_m6P6wBMsEeK4go_VqYg1Bw" name="31"/>
+      <ownedLiteral xmi:id="_m6P6whMsEeK4go_VqYg1Bw" name="85"/>
+      <ownedLiteral xmi:id="_m6P6xBMsEeK4go_VqYg1Bw" name="104"/>
+      <ownedLiteral xmi:id="_m6Qh0BMsEeK4go_VqYg1Bw" name="08"/>
+      <ownedLiteral xmi:id="_m6Qh0hMsEeK4go_VqYg1Bw" name="42"/>
+      <ownedLiteral xmi:id="_m6RI4BMsEeK4go_VqYg1Bw" name="43"/>
+      <ownedLiteral xmi:id="_m6RI4hMsEeK4go_VqYg1Bw" name="44"/>
+      <ownedLiteral xmi:id="_m6RI5BMsEeK4go_VqYg1Bw" name="45"/>
+      <ownedLiteral xmi:id="_m6d9MRMsEeK4go_VqYg1Bw" name="58"/>
+      <ownedLiteral xmi:id="_m6ekQBMsEeK4go_VqYg1Bw" name="59"/>
+      <ownedLiteral xmi:id="_m6ekQhMsEeK4go_VqYg1Bw" name="60"/>
+      <ownedLiteral xmi:id="_m6ekRBMsEeK4go_VqYg1Bw" name="47"/>
+      <ownedLiteral xmi:id="_m6fLUBMsEeK4go_VqYg1Bw" name="46"/>
+      <ownedLiteral xmi:id="_m6fLUhMsEeK4go_VqYg1Bw" name="49"/>
+      <ownedLiteral xmi:id="_m6fLVBMsEeK4go_VqYg1Bw" name="48"/>
+      <ownedLiteral xmi:id="_m6fyYBMsEeK4go_VqYg1Bw" name="17"/>
+      <ownedLiteral xmi:id="_m6fyYhMsEeK4go_VqYg1Bw" name="51"/>
+      <ownedLiteral xmi:id="_m6fyZBMsEeK4go_VqYg1Bw" name="61"/>
+      <ownedLiteral xmi:id="_m6gZcRMsEeK4go_VqYg1Bw" name="118"/>
+      <ownedLiteral xmi:id="_m6gZcxMsEeK4go_VqYg1Bw" name="62"/>
+      <ownedLiteral xmi:id="_m6gZdRMsEeK4go_VqYg1Bw" name="137"/>
+      <ownedLiteral xmi:id="_m6hAgRMsEeK4go_VqYg1Bw" name="86"/>
+      <ownedLiteral xmi:id="_m6hAgxMsEeK4go_VqYg1Bw" name="14"/>
+      <ownedLiteral xmi:id="_m6hAhRMsEeK4go_VqYg1Bw" name="87"/>
+      <ownedLiteral xmi:id="_m6hnkRMsEeK4go_VqYg1Bw" name="123"/>
+      <ownedLiteral xmi:id="_m6hnkxMsEeK4go_VqYg1Bw" name="135"/>
+      <ownedLiteral xmi:id="_m6iOoBMsEeK4go_VqYg1Bw" name="111"/>
+      <ownedLiteral xmi:id="_m6iOohMsEeK4go_VqYg1Bw" name="149"/>
+      <ownedLiteral xmi:id="_m6iOpBMsEeK4go_VqYg1Bw" name="141"/>
+      <ownedLiteral xmi:id="_m6i1sBMsEeK4go_VqYg1Bw" name="140"/>
+      <ownedLiteral xmi:id="_m6i1shMsEeK4go_VqYg1Bw" name="144"/>
+      <ownedLiteral xmi:id="_m6i1tBMsEeK4go_VqYg1Bw" name="15"/>
+      <ownedLiteral xmi:id="_m6jcwBMsEeK4go_VqYg1Bw" name="88"/>
+      <ownedLiteral xmi:id="_m6jcwhMsEeK4go_VqYg1Bw" name="16"/>
+      <ownedLiteral xmi:id="_m6jcxBMsEeK4go_VqYg1Bw" name="10"/>
+      <ownedLiteral xmi:id="_m6kD0BMsEeK4go_VqYg1Bw" name="134"/>
+      <ownedLiteral xmi:id="_m6kD0hMsEeK4go_VqYg1Bw" name="39"/>
+      <ownedLiteral xmi:id="_m6kD1BMsEeK4go_VqYg1Bw" name="129"/>
+      <ownedLiteral xmi:id="_m6kq4BMsEeK4go_VqYg1Bw" name="63"/>
+      <ownedLiteral xmi:id="_m6kq4hMsEeK4go_VqYg1Bw" name="64"/>
+      <ownedLiteral xmi:id="_m6kq5BMsEeK4go_VqYg1Bw" name="65"/>
+      <ownedLiteral xmi:id="_m6lR8BMsEeK4go_VqYg1Bw" name="66"/>
+      <ownedLiteral xmi:id="_m6lR8hMsEeK4go_VqYg1Bw" name="04"/>
+      <ownedLiteral xmi:id="_m6lR9BMsEeK4go_VqYg1Bw" name="67"/>
+      <ownedLiteral xmi:id="_m6l5ABMsEeK4go_VqYg1Bw" name="05"/>
+      <ownedLiteral xmi:id="_m6l5AhMsEeK4go_VqYg1Bw" name="68"/>
+      <ownedLiteral xmi:id="_m6l5BBMsEeK4go_VqYg1Bw" name="103"/>
+      <ownedLiteral xmi:id="_m6mgEBMsEeK4go_VqYg1Bw" name="148"/>
+      <ownedLiteral xmi:id="_m6mgEhMsEeK4go_VqYg1Bw" name="147"/>
+      <ownedLiteral xmi:id="_m6mgFBMsEeK4go_VqYg1Bw" name="136"/>
+      <ownedLiteral xmi:id="_m6nHIBMsEeK4go_VqYg1Bw" name="114"/>
+      <ownedLiteral xmi:id="_m6nHIhMsEeK4go_VqYg1Bw" name="32"/>
+      <ownedLiteral xmi:id="_m6nHJBMsEeK4go_VqYg1Bw" name="108"/>
+      <ownedLiteral xmi:id="_m6nuMBMsEeK4go_VqYg1Bw" name="03"/>
+      <ownedLiteral xmi:id="_m6nuMhMsEeK4go_VqYg1Bw" name="94"/>
+      <ownedLiteral xmi:id="_m6nuNBMsEeK4go_VqYg1Bw" name="07"/>
+      <ownedLiteral xmi:id="_m6oVQBMsEeK4go_VqYg1Bw" name="998"/>
+      <ownedLiteral xmi:id="_m6oVQhMsEeK4go_VqYg1Bw" name="127"/>
+      <ownedLiteral xmi:id="_m6oVRBMsEeK4go_VqYg1Bw" name="128"/>
+      <ownedLiteral xmi:id="_m6o8UBMsEeK4go_VqYg1Bw" name="125"/>
+      <ownedLiteral xmi:id="_m6o8UhMsEeK4go_VqYg1Bw" name="126"/>
+      <ownedLiteral xmi:id="_m6o8VBMsEeK4go_VqYg1Bw" name="02"/>
+      <ownedLiteral xmi:id="_m6pjYBMsEeK4go_VqYg1Bw" name="69"/>
+      <ownedLiteral xmi:id="_m6pjYhMsEeK4go_VqYg1Bw" name="11"/>
+      <ownedLiteral xmi:id="_m6pjZBMsEeK4go_VqYg1Bw" name="23"/>
+      <ownedLiteral xmi:id="_m6qKcRMsEeK4go_VqYg1Bw" name="133"/>
+      <ownedLiteral xmi:id="_m6qKcxMsEeK4go_VqYg1Bw" name="100"/>
+      <ownedLiteral xmi:id="_m6qKdRMsEeK4go_VqYg1Bw" name="33"/>
+      <ownedLiteral xmi:id="_m6qxgRMsEeK4go_VqYg1Bw" name="109"/>
+      <ownedLiteral xmi:id="_m6qxgxMsEeK4go_VqYg1Bw" name="89"/>
+      <ownedLiteral xmi:id="_m6qxhRMsEeK4go_VqYg1Bw" name="70"/>
+      <ownedLiteral xmi:id="_m6rYkRMsEeK4go_VqYg1Bw" name="40"/>
+      <ownedLiteral xmi:id="_m6rYkxMsEeK4go_VqYg1Bw" name="18"/>
+      <ownedLiteral xmi:id="_m6rYlRMsEeK4go_VqYg1Bw" name="90"/>
+      <ownedLiteral xmi:id="_m6r_oRMsEeK4go_VqYg1Bw" name="99"/>
+      <ownedLiteral xmi:id="_m6r_oxMsEeK4go_VqYg1Bw" name="72"/>
+      <ownedLiteral xmi:id="_m6r_pRMsEeK4go_VqYg1Bw" name="73"/>
+      <ownedLiteral xmi:id="_m6smsRMsEeK4go_VqYg1Bw" name="34"/>
+      <ownedLiteral xmi:id="_m6smsxMsEeK4go_VqYg1Bw" name="119"/>
+      <ownedLiteral xmi:id="_m6smtRMsEeK4go_VqYg1Bw" name="116"/>
+      <ownedLiteral xmi:id="_m6tNwRMsEeK4go_VqYg1Bw" name="74"/>
+      <ownedLiteral xmi:id="_m6tNwxMsEeK4go_VqYg1Bw" name="122"/>
+      <ownedLiteral xmi:id="_m6tNxRMsEeK4go_VqYg1Bw" name="71"/>
+      <ownedLiteral xmi:id="_m6t00RMsEeK4go_VqYg1Bw" name="93"/>
+      <ownedLiteral xmi:id="_m6t00xMsEeK4go_VqYg1Bw" name="145"/>
+      <ownedLiteral xmi:id="_m6t01RMsEeK4go_VqYg1Bw" name="06"/>
+      <ownedLiteral xmi:id="_m6ub4RMsEeK4go_VqYg1Bw" name="38"/>
+      <ownedLiteral xmi:id="_m6ub4xMsEeK4go_VqYg1Bw" name="76"/>
+      <ownedLiteral xmi:id="_m6ub5RMsEeK4go_VqYg1Bw" name="138"/>
+      <ownedLiteral xmi:id="_m6vC8RMsEeK4go_VqYg1Bw" name="113"/>
+      <ownedLiteral xmi:id="_m6vC8xMsEeK4go_VqYg1Bw" name="09"/>
+      <ownedLiteral xmi:id="_m6vC9RMsEeK4go_VqYg1Bw" name="139"/>
+      <ownedLiteral xmi:id="_m6vqARMsEeK4go_VqYg1Bw" name="115"/>
+      <ownedLiteral xmi:id="_m6vqAxMsEeK4go_VqYg1Bw" name="35"/>
+      <ownedLiteral xmi:id="_m6vqBRMsEeK4go_VqYg1Bw" name="142"/>
+      <ownedLiteral xmi:id="_m6wRERMsEeK4go_VqYg1Bw" name="112"/>
+      <ownedLiteral xmi:id="_m6wRExMsEeK4go_VqYg1Bw" name="77"/>
+      <ownedLiteral xmi:id="_m6wRFRMsEeK4go_VqYg1Bw" name="13"/>
+      <ownedLiteral xmi:id="_m6w4IRMsEeK4go_VqYg1Bw" name="98"/>
+      <ownedLiteral xmi:id="_m6w4IxMsEeK4go_VqYg1Bw" name="95"/>
+      <ownedLiteral xmi:id="_m6w4JRMsEeK4go_VqYg1Bw" name="96"/>
+      <ownedLiteral xmi:id="_m6xfMRMsEeK4go_VqYg1Bw" name="97"/>
+      <ownedLiteral xmi:id="_m6xfMxMsEeK4go_VqYg1Bw" name="78"/>
+      <ownedLiteral xmi:id="_m6xfNRMsEeK4go_VqYg1Bw" name="25"/>
+      <ownedLiteral xmi:id="_m6yGQRMsEeK4go_VqYg1Bw" name="41"/>
+      <ownedLiteral xmi:id="_m6yGQxMsEeK4go_VqYg1Bw" name="53"/>
+      <ownedLiteral xmi:id="_m6yGRRMsEeK4go_VqYg1Bw" name="91"/>
+      <ownedLiteral xmi:id="_m6ytURMsEeK4go_VqYg1Bw" name="101"/>
+      <ownedLiteral xmi:id="_m6ytUxMsEeK4go_VqYg1Bw" name="131"/>
+      <ownedLiteral xmi:id="_m6ytVRMsEeK4go_VqYg1Bw" name="999"/>
+      <ownedLiteral xmi:id="_m6zUYRMsEeK4go_VqYg1Bw" name="75"/>
+      <ownedLiteral xmi:id="_m6zUYxMsEeK4go_VqYg1Bw" name="105"/>
+      <ownedLiteral xmi:id="_m6zUZRMsEeK4go_VqYg1Bw" name="79"/>
+      <ownedLiteral xmi:id="_m6z7cRMsEeK4go_VqYg1Bw" name="21"/>
+      <ownedLiteral xmi:id="_m6z7cxMsEeK4go_VqYg1Bw" name="81"/>
+      <ownedLiteral xmi:id="_m6z7dRMsEeK4go_VqYg1Bw" name="80"/>
+      <ownedLiteral xmi:id="_m60igRMsEeK4go_VqYg1Bw" name="92"/>
+      <ownedLiteral xmi:id="_m60igxMsEeK4go_VqYg1Bw" name="36"/>
+      <ownedLiteral xmi:id="_m60ihRMsEeK4go_VqYg1Bw" name="117"/>
+      <ownedLiteral xmi:id="_m61JkRMsEeK4go_VqYg1Bw" name="37"/>
+      <ownedLiteral xmi:id="_m61JkxMsEeK4go_VqYg1Bw" name="121"/>
+    </packagedElement>
     <packagedElement xmi:type="uml:Enumeration" xmi:id="_2O3u6RSVEeGGzu7fmW9pXw" name="HITSP Vital Sign Result Type">
       <ownedLiteral xmi:id="_2O3u8hSVEeGGzu7fmW9pXw" name="9279-1"/>
       <ownedLiteral xmi:id="_2O3u7hSVEeGGzu7fmW9pXw" name="8867-4"/>
@@ -124,7 +552,25 @@
       <ownedLiteral xmi:id="_eGosYCBCEeG938evaWkvcA" name="mo"/>
       <ownedLiteral xmi:id="_fZwhICBCEeG938evaWkvcA" name="a"/>
     </packagedElement>
-    <packagedElement xmi:type="uml:Enumeration" xmi:id="_xQszoCXLEeGnSfJ2zNllag" name="Observation Interpretation (HL7)"/>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_xQszoCXLEeGnSfJ2zNllag" name="Observation Interpretation (HL7)">
+      <ownedLiteral xmi:id="_AQnZERJcEeKjxqZmTX2rRQ" name="A"/>
+      <ownedLiteral xmi:id="_AQnZExJcEeKjxqZmTX2rRQ" name="HX"/>
+      <ownedLiteral xmi:id="_AQnZFRJcEeKjxqZmTX2rRQ" name="LX"/>
+      <ownedLiteral xmi:id="_AQnZFxJcEeKjxqZmTX2rRQ" name="B"/>
+      <ownedLiteral xmi:id="_AQnZGRJcEeKjxqZmTX2rRQ" name="Carrier"/>
+      <ownedLiteral xmi:id="_AQnZGxJcEeKjxqZmTX2rRQ" name="D"/>
+      <ownedLiteral xmi:id="_AQnZHRJcEeKjxqZmTX2rRQ" name="U"/>
+      <ownedLiteral xmi:id="_AQnZHxJcEeKjxqZmTX2rRQ" name="IND"/>
+      <ownedLiteral xmi:id="_AQnZIRJcEeKjxqZmTX2rRQ" name="I"/>
+      <ownedLiteral xmi:id="_AQnZIxJcEeKjxqZmTX2rRQ" name="MS"/>
+      <ownedLiteral xmi:id="_AQnZJRJcEeKjxqZmTX2rRQ" name="NEG"/>
+      <ownedLiteral xmi:id="_AQnZJxJcEeKjxqZmTX2rRQ" name="N"/>
+      <ownedLiteral xmi:id="_AQnZKRJcEeKjxqZmTX2rRQ" name="POS"/>
+      <ownedLiteral xmi:id="_AQnZKxJcEeKjxqZmTX2rRQ" name="R"/>
+      <ownedLiteral xmi:id="_AQnZLRJcEeKjxqZmTX2rRQ" name="S"/>
+      <ownedLiteral xmi:id="_AQnZLxJcEeKjxqZmTX2rRQ" name="VS"/>
+      <ownedLiteral xmi:id="_AQnZMRJcEeKjxqZmTX2rRQ" name="W"/>
+    </packagedElement>
     <packagedElement xmi:type="uml:Enumeration" xmi:id="_Zpfm4CXNEeGnSfJ2zNllag" name="Problem Severity">
       <ownedComment xmi:id="_DBP8wCXPEeGnSfJ2zNllag">
         <body>This is a description of the level of the severity of the problem.</body>
@@ -343,7 +789,26 @@ http://www.fda.gov/ForIndustry/DataStandards/StructuredProductLabeling/ucm162523
       <ownedLiteral xmi:id="_FVPxcPtvEeG3vphfH83rmA" name="121080"/>
       <ownedLiteral xmi:id="_HPi68PtvEeG3vphfH83rmA" name="121112"/>
     </packagedElement>
-    <packagedElement xmi:type="uml:Enumeration" xmi:id="_tP6g0F0YEeGt2doqSDULjA" name="FinanciallyResponsiblePartyType"/>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_tP6g0F0YEeGt2doqSDULjA" name="Financially Responsible Party Type Value Set">
+      <ownedLiteral xmi:id="_aDpHsRJbEeKjxqZmTX2rRQ" name="AFFL"/>
+      <ownedLiteral xmi:id="_aDpHsxJbEeKjxqZmTX2rRQ" name="AGNT"/>
+      <ownedLiteral xmi:id="_aDpHtRJbEeKjxqZmTX2rRQ" name="CIT"/>
+      <ownedLiteral xmi:id="_aDpHtxJbEeKjxqZmTX2rRQ" name="CRINV"/>
+      <ownedLiteral xmi:id="_aDpHuRJbEeKjxqZmTX2rRQ" name="CRSPNSR"/>
+      <ownedLiteral xmi:id="_aDpHuxJbEeKjxqZmTX2rRQ" name="SPNSR"/>
+      <ownedLiteral xmi:id="_aDpHvRJbEeKjxqZmTX2rRQ" name="COVPTY"/>
+      <ownedLiteral xmi:id="_aDpHvxJbEeKjxqZmTX2rRQ" name="EMP"/>
+      <ownedLiteral xmi:id="_aDpHwRJbEeKjxqZmTX2rRQ" name="GUAR"/>
+      <ownedLiteral xmi:id="_aDpHwxJbEeKjxqZmTX2rRQ" name="INVSBJ"/>
+      <ownedLiteral xmi:id="_aDpHxRJbEeKjxqZmTX2rRQ" name="PAYOR"/>
+      <ownedLiteral xmi:id="_aDpHxxJbEeKjxqZmTX2rRQ" name="LIC"/>
+      <ownedLiteral xmi:id="_aDpHyRJbEeKjxqZmTX2rRQ" name="PAT"/>
+      <ownedLiteral xmi:id="_aDpHyxJbEeKjxqZmTX2rRQ" name="PAYEE"/>
+      <ownedLiteral xmi:id="_aDpHzRJbEeKjxqZmTX2rRQ" name="POLHOLD"/>
+      <ownedLiteral xmi:id="_aDpHzxJbEeKjxqZmTX2rRQ" name="QUAL"/>
+      <ownedLiteral xmi:id="_aDpH0RJbEeKjxqZmTX2rRQ" name="STD"/>
+      <ownedLiteral xmi:id="_aDpH0xJbEeKjxqZmTX2rRQ" name="UNDWRT"/>
+    </packagedElement>
     <packagedElement xmi:type="uml:Enumeration" xmi:id="_pWcQEF_lEeGt2doqSDULjA" name="Coverage Role Type Value Set">
       <ownedLiteral xmi:id="_KSQw4F_mEeGt2doqSDULjA" name="FAMDEP"/>
       <ownedLiteral xmi:id="_SFsQ8F_mEeGt2doqSDULjA" name="FSTUD"/>
@@ -481,7 +946,45 @@ http://www.fda.gov/ForIndustry/DataStandards/StructuredProductLabeling/ucm162523
       <ownedLiteral xmi:id="_A3NsoPt_EeG3vphfH83rmA" name="TITLE"/>
       <ownedLiteral xmi:id="_ChZWgPt_EeG3vphfH83rmA" name="VV"/>
     </packagedElement>
-    <packagedElement xmi:type="uml:Enumeration" xmi:id="_bkwYcG1EEeGCevFpokwODw" name="FamilyHistoryRelatedSubjectCode"/>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_bkwYcG1EEeGCevFpokwODw" name="FamilyHistoryRelatedSubjectCode">
+      <ownedLiteral xmi:id="_yNrfQRJaEeKjxqZmTX2rRQ" name="ADOPT"/>
+      <ownedLiteral xmi:id="_yNrfQxJaEeKjxqZmTX2rRQ" name="AUNT"/>
+      <ownedLiteral xmi:id="_yNrfRRJaEeKjxqZmTX2rRQ" name="CHILD"/>
+      <ownedLiteral xmi:id="_yNrfRxJaEeKjxqZmTX2rRQ" name="CHLDINLAW"/>
+      <ownedLiteral xmi:id="_yNrfSRJaEeKjxqZmTX2rRQ" name="COUSN"/>
+      <ownedLiteral xmi:id="_yNrfSxJaEeKjxqZmTX2rRQ" name="DOMPART"/>
+      <ownedLiteral xmi:id="_yNrfTRJaEeKjxqZmTX2rRQ" name="FAMMEMB"/>
+      <ownedLiteral xmi:id="_yNrfTxJaEeKjxqZmTX2rRQ" name="CHLDFOST"/>
+      <ownedLiteral xmi:id="_yNrfURJaEeKjxqZmTX2rRQ" name="GRNDCHILD"/>
+      <ownedLiteral xmi:id="_yNrfUxJaEeKjxqZmTX2rRQ" name="GPARNT"/>
+      <ownedLiteral xmi:id="_yNrfVRJaEeKjxqZmTX2rRQ" name="GRPRN"/>
+      <ownedLiteral xmi:id="_yNrfVxJaEeKjxqZmTX2rRQ" name="GGRPRN"/>
+      <ownedLiteral xmi:id="_yNrfWRJaEeKjxqZmTX2rRQ" name="HSIB"/>
+      <ownedLiteral xmi:id="_yNxl4RJaEeKjxqZmTX2rRQ" name="MAUNT"/>
+      <ownedLiteral xmi:id="_yNxl4xJaEeKjxqZmTX2rRQ" name="MCOUSN"/>
+      <ownedLiteral xmi:id="_yNxl5RJaEeKjxqZmTX2rRQ" name="MGRPRN"/>
+      <ownedLiteral xmi:id="_yNxl5xJaEeKjxqZmTX2rRQ" name="MGGRPRN"/>
+      <ownedLiteral xmi:id="_yNxl6RJaEeKjxqZmTX2rRQ" name="MUNCLE"/>
+      <ownedLiteral xmi:id="_yNxl6xJaEeKjxqZmTX2rRQ" name="NCHILD"/>
+      <ownedLiteral xmi:id="_yNxl7RJaEeKjxqZmTX2rRQ" name="NPRN"/>
+      <ownedLiteral xmi:id="_yNxl7xJaEeKjxqZmTX2rRQ" name="NSIB"/>
+      <ownedLiteral xmi:id="_yNxl8RJaEeKjxqZmTX2rRQ" name="NIENEPH"/>
+      <ownedLiteral xmi:id="_yNxl8xJaEeKjxqZmTX2rRQ" name="PRN"/>
+      <ownedLiteral xmi:id="_yNxl9RJaEeKjxqZmTX2rRQ" name="PRNINLAW"/>
+      <ownedLiteral xmi:id="_yNxl9xJaEeKjxqZmTX2rRQ" name="PAUNT"/>
+      <ownedLiteral xmi:id="_yNxl-RJaEeKjxqZmTX2rRQ" name="PCOUSN"/>
+      <ownedLiteral xmi:id="_yNxl-xJaEeKjxqZmTX2rRQ" name="PGRPRN"/>
+      <ownedLiteral xmi:id="_yNxl_RJaEeKjxqZmTX2rRQ" name="PGGRPRN"/>
+      <ownedLiteral xmi:id="_yNxl_xJaEeKjxqZmTX2rRQ" name="PUNCLE"/>
+      <ownedLiteral xmi:id="_yNxmARJaEeKjxqZmTX2rRQ" name="SIB"/>
+      <ownedLiteral xmi:id="_yNxmAxJaEeKjxqZmTX2rRQ" name="SIBINLAW"/>
+      <ownedLiteral xmi:id="_yNxmBRJaEeKjxqZmTX2rRQ" name="SIGOTHR"/>
+      <ownedLiteral xmi:id="_yNxmBxJaEeKjxqZmTX2rRQ" name="SPS"/>
+      <ownedLiteral xmi:id="_yNxmCRJaEeKjxqZmTX2rRQ" name="STEP"/>
+      <ownedLiteral xmi:id="_yNxmCxJaEeKjxqZmTX2rRQ" name="STPPRN"/>
+      <ownedLiteral xmi:id="_yNxmDRJaEeKjxqZmTX2rRQ" name="STPSIB"/>
+      <ownedLiteral xmi:id="_yNxmDxJaEeKjxqZmTX2rRQ" name="UNCLE"/>
+    </packagedElement>
     <packagedElement xmi:type="uml:Enumeration" xmi:id="_fgBpQG1GEeGCevFpokwODw" name="Ethnicity Value Set">
       <ownedLiteral xmi:id="_892VgPwaEeGXDIdcQJhgtg" name="2135-2"/>
       <ownedLiteral xmi:id="_-zyjcPwaEeGXDIdcQJhgtg" name="2186-5"/>
@@ -591,6 +1094,7 @@ http://www.fda.gov/ForIndustry/DataStandards/StructuredProductLabeling/ucm162523
       <ownedLiteral xmi:id="_nc3LMPwYEeGXDIdcQJhgtg" name="255551008"/>
       <ownedLiteral xmi:id="_pAHGoPwYEeGXDIdcQJhgtg" name="24028007"/>
     </packagedElement>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_r9OoIBJKEeKjxqZmTX2rRQ" name="Procedure"/>
     <profileApplication xmi:id="_2B97WxSVEeGGzu7fmW9pXw">
       <eAnnotations xmi:id="_2B97XBSVEeGGzu7fmW9pXw" source="http://www.eclipse.org/uml2/2.0.0/UML">
         <references xmi:type="ecore:EPackage" href="http://www.openhealthtools.org/mdht/schemas/term/1#/"/>
@@ -675,7 +1179,7 @@ http://www.fda.gov/ForIndustry/DataStandards/StructuredProductLabeling/ucm162523
     <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_KsN1ICF_Ed-M3adQxwHq4g"/>
   </term:ValueSetVersion>
   <term:ValueSetVersion xmi:id="_2L5TYhSVEeGGzu7fmW9pXw" identifier="2.16.840.1.113883.3.88.12.80.33" fullName="Admission Type" source="National Uniform Billing Committee (NUBC)" url="www.nubc.org" definition="See (UB-04/NUBC CURRENT UB DATA SPECIFICATIONS MANUAL) UB-04 FL14." base_Enumeration="_2L5TYBSVEeGGzu7fmW9pXw"/>
-  <term:ValueSetVersion xmi:id="_2MRG0BSVEeGGzu7fmW9pXw" identifier="2.16.840.1.114222.4.11.934" version="3" fullName="Vaccines administered (CVX)" definition="Vaccine Name Keyword: Clinical Vaccines, Vaccine Names" revisionDate="10/22/2008" base_Enumeration="_2MQfxBSVEeGGzu7fmW9pXw">
+  <term:ValueSetVersion xmi:id="_2MRG0BSVEeGGzu7fmW9pXw" identifier="2.16.840.1.114222.4.11.934" version="7" fullName="Vaccines administered (CVX)" definition="Vaccine Name Keyword: Clinical Vaccines, Vaccine Names" revisionDate="10/22/2008" base_Enumeration="_2MQfxBSVEeGGzu7fmW9pXw">
     <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_dk7ugKDqEd-dVeaMP0XXQw"/>
   </term:ValueSetVersion>
   <term:ValueSetVersion xmi:id="_2O3u9BSVEeGGzu7fmW9pXw" identifier="2.16.840.1.113883.3.88.12.80.62" version="1" fullName="Vital Sign Result Value Set" source="HITSP" definition="This identifies the vital sign result type" effectiveDate="20081218" releaseDate="20081218" revisionDate="07/23/2009" base_Enumeration="_2O3u6RSVEeGGzu7fmW9pXw">
@@ -734,7 +1238,7 @@ http://www.fda.gov/ForIndustry/DataStandards/StructuredProductLabeling/ucm162523
   <term:ValueSetVersion xmi:id="_IzJFYR-ZEeGtfPlBCjHWkw" identifier="2.16.840.1.113883.1.11.20275" binding="Dynamic" base_Enumeration="_IzJFYB-ZEeGtfPlBCjHWkw">
     <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_Bro-kWPyEeGskvPNzg7rUw"/>
   </term:ValueSetVersion>
-  <term:ValueSetVersion xmi:id="_xQv28CXLEeGnSfJ2zNllag" identifier="2.16.840.1.113883.1.11.78" binding="Dynamic" base_Enumeration="_xQszoCXLEeGnSfJ2zNllag">
+  <term:ValueSetVersion xmi:id="_xQv28CXLEeGnSfJ2zNllag" identifier="2.16.840.1.113883.1.11.78" version="1" fullName="Observation Interpretation (HL7)" definition="Observation interpretation concepts that are based upon HL7 V3 vocabulary." revisionDate="07/07/2009" base_Enumeration="_xQszoCXLEeGnSfJ2zNllag">
     <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_1o75oaFkEd-dVeaMP0XXQw"/>
   </term:ValueSetVersion>
   <term:ValueSetVersion xmi:id="_cOR30CXNEeGnSfJ2zNllag" identifier="2.16.840.1.113883.3.88.12.3221.6.8" binding="Dynamic" base_Enumeration="_Zpfm4CXNEeGnSfJ2zNllag">
@@ -781,7 +1285,7 @@ http://www.fda.gov/ForIndustry/DataStandards/StructuredProductLabeling/ucm162523
     <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_PaapkGdREeGkeaezs0FtvA"/>
   </term:ValueSetVersion>
   <term:ValueSetVersion xmi:id="_F4z3QDrtEeG-aJb2h_4S8w" identifier="2.16.840.1.113883.3.88.12.3221.5.2" version="20081218" fullName="Health Insurance Type Value Set" source="HITSP" definition="This value set uses the ACS X12 vocabulary for Insurance Type Code (ASC X12 Data Element 1336) and has been limited by HITSP to the value set reproduced below in Table 2-52 Health Insurance Type Value Set Definition&#xD;&#xA;The type of health plan covering the individual, e.g., an HMO, PPO, POS, etc." effectiveDate="20081218" releaseDate="20081218" base_Enumeration="_F4ypIDrtEeG-aJb2h_4S8w">
-    <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+    <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_yJCGQBJOEeKjxqZmTX2rRQ"/>
   </term:ValueSetVersion>
   <term:ValueSetCode xmi:id="_oBcwgDrtEeG-aJb2h_4S8w" conceptName="Medicare Secondary Working Aged Beneficiary or Spouse with Employer Group Health Plan" base_EnumerationLiteral="_oBbiYDrtEeG-aJb2h_4S8w"/>
   <term:ValueSetCode xmi:id="_ru4rkDrtEeG-aJb2h_4S8w" conceptName="Medicare Secondary End-Stage Renal Disease Beneficiary in the 12 month coordination period with an employer’s group health plan" base_EnumerationLiteral="_ru4EgDrtEeG-aJb2h_4S8w"/>
@@ -874,7 +1378,7 @@ http://www.fda.gov/ForIndustry/DataStandards/StructuredProductLabeling/ucm162523
   <term:ValueSetCode xmi:id="_mLUEoVoCEeGKdMKWzrgL_Q" conceptName="Fair" base_EnumerationLiteral="_mLUEoFoCEeGKdMKWzrgL_Q"/>
   <term:ValueSetCode xmi:id="_qlnFsVoCEeGKdMKWzrgL_Q" conceptName="Good" base_EnumerationLiteral="_qlnFsFoCEeGKdMKWzrgL_Q"/>
   <term:ValueSetCode xmi:id="_vRMEAVoCEeGKdMKWzrgL_Q" conceptName="Poor" base_EnumerationLiteral="_vRMEAFoCEeGKdMKWzrgL_Q"/>
-  <term:ValueSetVersion xmi:id="_tP6g0V0YEeGt2doqSDULjA" identifier="2.16.840.1.113883.1.11.10416" fullName="Financially Responsible Party Value Set" binding="Dynamic" base_Enumeration="_tP6g0F0YEeGt2doqSDULjA">
+  <term:ValueSetVersion xmi:id="_tP6g0V0YEeGt2doqSDULjA" identifier="2.16.840.1.113883.1.11.10416" version="1" fullName="Financially Responsible Party Type Value Set" definition="A relationship between two entities that is formally recognized, frequently by a contract or similar agreement. This identifies the party that has responsibility for all or a portion of the patient s healthcare." revisionDate="07/23/2009" base_Enumeration="_tP6g0F0YEeGt2doqSDULjA">
     <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_dHx4caDqEd-dVeaMP0XXQw"/>
   </term:ValueSetVersion>
   <term:ValueSetVersion xmi:id="_pWlaAF_lEeGt2doqSDULjA" identifier="2.16.840.1.113883.1.11.18877" version="1.0" fullName="Coverage Type Value Set" binding="Dynamic" base_Enumeration="_pWcQEF_lEeGt2doqSDULjA">
@@ -960,7 +1464,7 @@ http://www.fda.gov/ForIndustry/DataStandards/StructuredProductLabeling/ucm162523
   <term:ValueSetVersion xmi:id="_WCFaEG1EEeGCevFpokwODw" identifier="2.16.840.1.113883.11.20.9.26" base_Enumeration="_WCEzAG1EEeGCevFpokwODw">
     <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_u8E4IWShEeGWUMIQLWW7Kg"/>
   </term:ValueSetVersion>
-  <term:ValueSetVersion xmi:id="_bkwYcW1EEeGCevFpokwODw" identifier="2.16.840.1.113883.1.11.19579" base_Enumeration="_bkwYcG1EEeGCevFpokwODw">
+  <term:ValueSetVersion xmi:id="_bkwYcW1EEeGCevFpokwODw" identifier="2.16.840.1.113883.1.11.19579" version="1" definition="Family Relationships record the familial relationship of a person to another person. This value set is to be used when it is necessary to record family relationships (e.g., next of kin, or blood relations). This is a subset of the value set used for personal relationships" revisionDate="07/23/2009" base_Enumeration="_bkwYcG1EEeGCevFpokwODw">
     <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_ywdZ4Gg7Ed-ilOLYnIx0jA"/>
   </term:ValueSetVersion>
   <term:ValueSetVersion xmi:id="_fgCQUG1GEeGCevFpokwODw" identifier="2.16.840.1.114222.4.11.837" base_Enumeration="_fgBpQG1GEeGCevFpokwODw">
@@ -1239,4 +1743,504 @@ http://www.fda.gov/ForIndustry/DataStandards/StructuredProductLabeling/ucm162523
   <term:ValueSetCode xmi:id="_RD4IQfweEeGXDIdcQJhgtg" conceptName="Never Married" base_EnumerationLiteral="_RD4IQPweEeGXDIdcQJhgtg"/>
   <term:ValueSetCode xmi:id="_SIQ9cfweEeGXDIdcQJhgtg" conceptName="Domestic partner" base_EnumerationLiteral="_SIQ9cPweEeGXDIdcQJhgtg"/>
   <term:ValueSetCode xmi:id="_TjXpgfweEeGXDIdcQJhgtg" conceptName="Widowed" base_EnumerationLiteral="_TjXpgPweEeGXDIdcQJhgtg"/>
+  <term:ValueSetVersion xmi:id="_sEhi8BJKEeKjxqZmTX2rRQ" identifier="2.16.840.1.113883.3.88.12.80.28" base_Enumeration="_r9OoIBJKEeKjxqZmTX2rRQ">
+    <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_ya6aMCWsEd-iTYfpNb4PkQ"/>
+  </term:ValueSetVersion>
+  <term:ValueSetCode xmi:id="_p-z-MRJLEeKjxqZmTX2rRQ" conceptName="Tube Feedings" base_EnumerationLiteral="_p-z-MBJLEeKjxqZmTX2rRQ"/>
+  <term:ValueSetCode xmi:id="_vnlkkRJLEeKjxqZmTX2rRQ" conceptName="Other Directive" base_EnumerationLiteral="_vnlkkBJLEeKjxqZmTX2rRQ"/>
+  <term:ValueSetCode xmi:id="_yNrfQhJaEeKjxqZmTX2rRQ" conceptName="adopted child" usageNote="RoleCode" base_EnumerationLiteral="_yNrfQRJaEeKjxqZmTX2rRQ"/>
+  <term:ValueSetCode xmi:id="_yNrfRBJaEeKjxqZmTX2rRQ" conceptName="aunt" usageNote="RoleCode" base_EnumerationLiteral="_yNrfQxJaEeKjxqZmTX2rRQ"/>
+  <term:ValueSetCode xmi:id="_yNrfRhJaEeKjxqZmTX2rRQ" conceptName="Child" usageNote="RoleCode" base_EnumerationLiteral="_yNrfRRJaEeKjxqZmTX2rRQ"/>
+  <term:ValueSetCode xmi:id="_yNrfSBJaEeKjxqZmTX2rRQ" conceptName="child in-law" usageNote="RoleCode" base_EnumerationLiteral="_yNrfRxJaEeKjxqZmTX2rRQ"/>
+  <term:ValueSetCode xmi:id="_yNrfShJaEeKjxqZmTX2rRQ" conceptName="cousin" usageNote="RoleCode" base_EnumerationLiteral="_yNrfSRJaEeKjxqZmTX2rRQ"/>
+  <term:ValueSetCode xmi:id="_yNrfTBJaEeKjxqZmTX2rRQ" conceptName="domestic partner" usageNote="RoleCode" base_EnumerationLiteral="_yNrfSxJaEeKjxqZmTX2rRQ"/>
+  <term:ValueSetCode xmi:id="_yNrfThJaEeKjxqZmTX2rRQ" conceptName="Family Member" usageNote="RoleCode" base_EnumerationLiteral="_yNrfTRJaEeKjxqZmTX2rRQ"/>
+  <term:ValueSetCode xmi:id="_yNrfUBJaEeKjxqZmTX2rRQ" conceptName="foster child" usageNote="RoleCode" base_EnumerationLiteral="_yNrfTxJaEeKjxqZmTX2rRQ"/>
+  <term:ValueSetCode xmi:id="_yNrfUhJaEeKjxqZmTX2rRQ" conceptName="grandchild" usageNote="RoleCode" base_EnumerationLiteral="_yNrfURJaEeKjxqZmTX2rRQ"/>
+  <term:ValueSetCode xmi:id="_yNrfVBJaEeKjxqZmTX2rRQ" conceptName="grandparent" usageNote="RoleCode" base_EnumerationLiteral="_yNrfUxJaEeKjxqZmTX2rRQ"/>
+  <term:ValueSetCode xmi:id="_yNrfVhJaEeKjxqZmTX2rRQ" conceptName="Grandparent" usageNote="RoleCode" base_EnumerationLiteral="_yNrfVRJaEeKjxqZmTX2rRQ"/>
+  <term:ValueSetCode xmi:id="_yNrfWBJaEeKjxqZmTX2rRQ" conceptName="great grandparent" usageNote="RoleCode" base_EnumerationLiteral="_yNrfVxJaEeKjxqZmTX2rRQ"/>
+  <term:ValueSetCode xmi:id="_yNxl4BJaEeKjxqZmTX2rRQ" conceptName="half-sibling" usageNote="RoleCode" base_EnumerationLiteral="_yNrfWRJaEeKjxqZmTX2rRQ"/>
+  <term:ValueSetCode xmi:id="_yNxl4hJaEeKjxqZmTX2rRQ" conceptName="MaternalAunt" usageNote="RoleCode" base_EnumerationLiteral="_yNxl4RJaEeKjxqZmTX2rRQ"/>
+  <term:ValueSetCode xmi:id="_yNxl5BJaEeKjxqZmTX2rRQ" conceptName="MaternalCousin" usageNote="RoleCode" base_EnumerationLiteral="_yNxl4xJaEeKjxqZmTX2rRQ"/>
+  <term:ValueSetCode xmi:id="_yNxl5hJaEeKjxqZmTX2rRQ" conceptName="MaternalGrandparent" usageNote="RoleCode" base_EnumerationLiteral="_yNxl5RJaEeKjxqZmTX2rRQ"/>
+  <term:ValueSetCode xmi:id="_yNxl6BJaEeKjxqZmTX2rRQ" conceptName="MaternalGreatgrandparent" usageNote="RoleCode" base_EnumerationLiteral="_yNxl5xJaEeKjxqZmTX2rRQ"/>
+  <term:ValueSetCode xmi:id="_yNxl6hJaEeKjxqZmTX2rRQ" conceptName="MaternalUncle" usageNote="RoleCode" base_EnumerationLiteral="_yNxl6RJaEeKjxqZmTX2rRQ"/>
+  <term:ValueSetCode xmi:id="_yNxl7BJaEeKjxqZmTX2rRQ" conceptName="natural child" usageNote="RoleCode" base_EnumerationLiteral="_yNxl6xJaEeKjxqZmTX2rRQ"/>
+  <term:ValueSetCode xmi:id="_yNxl7hJaEeKjxqZmTX2rRQ" conceptName="natural parent" usageNote="RoleCode" base_EnumerationLiteral="_yNxl7RJaEeKjxqZmTX2rRQ"/>
+  <term:ValueSetCode xmi:id="_yNxl8BJaEeKjxqZmTX2rRQ" conceptName="natural sibling" usageNote="RoleCode" base_EnumerationLiteral="_yNxl7xJaEeKjxqZmTX2rRQ"/>
+  <term:ValueSetCode xmi:id="_yNxl8hJaEeKjxqZmTX2rRQ" conceptName="niece/nephew" usageNote="RoleCode" base_EnumerationLiteral="_yNxl8RJaEeKjxqZmTX2rRQ"/>
+  <term:ValueSetCode xmi:id="_yNxl9BJaEeKjxqZmTX2rRQ" conceptName="Parent" usageNote="RoleCode" base_EnumerationLiteral="_yNxl8xJaEeKjxqZmTX2rRQ"/>
+  <term:ValueSetCode xmi:id="_yNxl9hJaEeKjxqZmTX2rRQ" conceptName="parent in-law" usageNote="RoleCode" base_EnumerationLiteral="_yNxl9RJaEeKjxqZmTX2rRQ"/>
+  <term:ValueSetCode xmi:id="_yNxl-BJaEeKjxqZmTX2rRQ" conceptName="PaternalAunt" usageNote="RoleCode" base_EnumerationLiteral="_yNxl9xJaEeKjxqZmTX2rRQ"/>
+  <term:ValueSetCode xmi:id="_yNxl-hJaEeKjxqZmTX2rRQ" conceptName="PaternalCousin" usageNote="RoleCode" base_EnumerationLiteral="_yNxl-RJaEeKjxqZmTX2rRQ"/>
+  <term:ValueSetCode xmi:id="_yNxl_BJaEeKjxqZmTX2rRQ" conceptName="PaternalGrandparent" usageNote="RoleCode" base_EnumerationLiteral="_yNxl-xJaEeKjxqZmTX2rRQ"/>
+  <term:ValueSetCode xmi:id="_yNxl_hJaEeKjxqZmTX2rRQ" conceptName="PaternalGreatgrandparent" usageNote="RoleCode" base_EnumerationLiteral="_yNxl_RJaEeKjxqZmTX2rRQ"/>
+  <term:ValueSetCode xmi:id="_yNxmABJaEeKjxqZmTX2rRQ" conceptName="PaternalUncle" usageNote="RoleCode" base_EnumerationLiteral="_yNxl_xJaEeKjxqZmTX2rRQ"/>
+  <term:ValueSetCode xmi:id="_yNxmAhJaEeKjxqZmTX2rRQ" conceptName="Sibling" usageNote="RoleCode" base_EnumerationLiteral="_yNxmARJaEeKjxqZmTX2rRQ"/>
+  <term:ValueSetCode xmi:id="_yNxmBBJaEeKjxqZmTX2rRQ" conceptName="sibling in-law" usageNote="RoleCode" base_EnumerationLiteral="_yNxmAxJaEeKjxqZmTX2rRQ"/>
+  <term:ValueSetCode xmi:id="_yNxmBhJaEeKjxqZmTX2rRQ" conceptName="significant other" usageNote="RoleCode" base_EnumerationLiteral="_yNxmBRJaEeKjxqZmTX2rRQ"/>
+  <term:ValueSetCode xmi:id="_yNxmCBJaEeKjxqZmTX2rRQ" conceptName="spouse" usageNote="RoleCode" base_EnumerationLiteral="_yNxmBxJaEeKjxqZmTX2rRQ"/>
+  <term:ValueSetCode xmi:id="_yNxmChJaEeKjxqZmTX2rRQ" conceptName="step child" usageNote="RoleCode" base_EnumerationLiteral="_yNxmCRJaEeKjxqZmTX2rRQ"/>
+  <term:ValueSetCode xmi:id="_yNxmDBJaEeKjxqZmTX2rRQ" conceptName="step parent" usageNote="RoleCode" base_EnumerationLiteral="_yNxmCxJaEeKjxqZmTX2rRQ"/>
+  <term:ValueSetCode xmi:id="_yNxmDhJaEeKjxqZmTX2rRQ" conceptName="step sibling" usageNote="RoleCode" base_EnumerationLiteral="_yNxmDRJaEeKjxqZmTX2rRQ"/>
+  <term:ValueSetCode xmi:id="_yNxmEBJaEeKjxqZmTX2rRQ" conceptName="uncle" usageNote="RoleCode" base_EnumerationLiteral="_yNxmDxJaEeKjxqZmTX2rRQ"/>
+  <term:ValueSetCode xmi:id="_aDpHshJbEeKjxqZmTX2rRQ" conceptName="affiliate" usageNote="RoleClass" base_EnumerationLiteral="_aDpHsRJbEeKjxqZmTX2rRQ"/>
+  <term:ValueSetCode xmi:id="_aDpHtBJbEeKjxqZmTX2rRQ" conceptName="agent" usageNote="RoleClass" base_EnumerationLiteral="_aDpHsxJbEeKjxqZmTX2rRQ"/>
+  <term:ValueSetCode xmi:id="_aDpHthJbEeKjxqZmTX2rRQ" conceptName="citizen" usageNote="RoleClass" base_EnumerationLiteral="_aDpHtRJbEeKjxqZmTX2rRQ"/>
+  <term:ValueSetCode xmi:id="_aDpHuBJbEeKjxqZmTX2rRQ" conceptName="clinical research investigator" usageNote="RoleClass" base_EnumerationLiteral="_aDpHtxJbEeKjxqZmTX2rRQ"/>
+  <term:ValueSetCode xmi:id="_aDpHuhJbEeKjxqZmTX2rRQ" conceptName="clinical research sponsor" usageNote="RoleClass" base_EnumerationLiteral="_aDpHuRJbEeKjxqZmTX2rRQ"/>
+  <term:ValueSetCode xmi:id="_aDpHvBJbEeKjxqZmTX2rRQ" conceptName="coverage sponsor" usageNote="RoleClass" base_EnumerationLiteral="_aDpHuxJbEeKjxqZmTX2rRQ"/>
+  <term:ValueSetCode xmi:id="_aDpHvhJbEeKjxqZmTX2rRQ" conceptName="covered party" usageNote="RoleClass" base_EnumerationLiteral="_aDpHvRJbEeKjxqZmTX2rRQ"/>
+  <term:ValueSetCode xmi:id="_aDpHwBJbEeKjxqZmTX2rRQ" conceptName="employee" usageNote="RoleClass" base_EnumerationLiteral="_aDpHvxJbEeKjxqZmTX2rRQ"/>
+  <term:ValueSetCode xmi:id="_aDpHwhJbEeKjxqZmTX2rRQ" conceptName="guarantor" usageNote="RoleClass" base_EnumerationLiteral="_aDpHwRJbEeKjxqZmTX2rRQ"/>
+  <term:ValueSetCode xmi:id="_aDpHxBJbEeKjxqZmTX2rRQ" conceptName="Investigation Subject" usageNote="RoleClass" base_EnumerationLiteral="_aDpHwxJbEeKjxqZmTX2rRQ"/>
+  <term:ValueSetCode xmi:id="_aDpHxhJbEeKjxqZmTX2rRQ" conceptName="invoice payor" usageNote="RoleClass" base_EnumerationLiteral="_aDpHxRJbEeKjxqZmTX2rRQ"/>
+  <term:ValueSetCode xmi:id="_aDpHyBJbEeKjxqZmTX2rRQ" conceptName="licensed entity" usageNote="RoleClass" base_EnumerationLiteral="_aDpHxxJbEeKjxqZmTX2rRQ"/>
+  <term:ValueSetCode xmi:id="_aDpHyhJbEeKjxqZmTX2rRQ" conceptName="patient" usageNote="RoleClass" base_EnumerationLiteral="_aDpHyRJbEeKjxqZmTX2rRQ"/>
+  <term:ValueSetCode xmi:id="_aDpHzBJbEeKjxqZmTX2rRQ" conceptName="payee" usageNote="RoleClass" base_EnumerationLiteral="_aDpHyxJbEeKjxqZmTX2rRQ"/>
+  <term:ValueSetCode xmi:id="_aDpHzhJbEeKjxqZmTX2rRQ" conceptName="policy holder" usageNote="RoleClass" base_EnumerationLiteral="_aDpHzRJbEeKjxqZmTX2rRQ"/>
+  <term:ValueSetCode xmi:id="_aDpH0BJbEeKjxqZmTX2rRQ" conceptName="qualified entity" usageNote="RoleClass" base_EnumerationLiteral="_aDpHzxJbEeKjxqZmTX2rRQ"/>
+  <term:ValueSetCode xmi:id="_aDpH0hJbEeKjxqZmTX2rRQ" conceptName="student" usageNote="RoleClass" base_EnumerationLiteral="_aDpH0RJbEeKjxqZmTX2rRQ"/>
+  <term:ValueSetCode xmi:id="_aDpH1BJbEeKjxqZmTX2rRQ" conceptName="underwriter" usageNote="RoleClass" base_EnumerationLiteral="_aDpH0xJbEeKjxqZmTX2rRQ"/>
+  <term:ValueSetCode xmi:id="_AQnZEhJcEeKjxqZmTX2rRQ" conceptName="Abnormal" usageNote="ObservationInterpretation" base_EnumerationLiteral="_AQnZERJcEeKjxqZmTX2rRQ"/>
+  <term:ValueSetCode xmi:id="_AQnZFBJcEeKjxqZmTX2rRQ" conceptName="above high threshold" usageNote="ObservationInterpretation" base_EnumerationLiteral="_AQnZExJcEeKjxqZmTX2rRQ"/>
+  <term:ValueSetCode xmi:id="_AQnZFhJcEeKjxqZmTX2rRQ" conceptName="below low threshold" usageNote="ObservationInterpretation" base_EnumerationLiteral="_AQnZFRJcEeKjxqZmTX2rRQ"/>
+  <term:ValueSetCode xmi:id="_AQnZGBJcEeKjxqZmTX2rRQ" conceptName="better" usageNote="ObservationInterpretation" base_EnumerationLiteral="_AQnZFxJcEeKjxqZmTX2rRQ"/>
+  <term:ValueSetCode xmi:id="_AQnZGhJcEeKjxqZmTX2rRQ" conceptName="Carrier" usageNote="ObservationInterpretation" base_EnumerationLiteral="_AQnZGRJcEeKjxqZmTX2rRQ"/>
+  <term:ValueSetCode xmi:id="_AQnZHBJcEeKjxqZmTX2rRQ" conceptName="decreased" usageNote="ObservationInterpretation" base_EnumerationLiteral="_AQnZGxJcEeKjxqZmTX2rRQ"/>
+  <term:ValueSetCode xmi:id="_AQnZHhJcEeKjxqZmTX2rRQ" conceptName="increased" usageNote="ObservationInterpretation" base_EnumerationLiteral="_AQnZHRJcEeKjxqZmTX2rRQ"/>
+  <term:ValueSetCode xmi:id="_AQnZIBJcEeKjxqZmTX2rRQ" conceptName="Indeterminate" usageNote="ObservationInterpretation" base_EnumerationLiteral="_AQnZHxJcEeKjxqZmTX2rRQ"/>
+  <term:ValueSetCode xmi:id="_AQnZIhJcEeKjxqZmTX2rRQ" conceptName="intermediate" usageNote="ObservationInterpretation" base_EnumerationLiteral="_AQnZIRJcEeKjxqZmTX2rRQ"/>
+  <term:ValueSetCode xmi:id="_AQnZJBJcEeKjxqZmTX2rRQ" conceptName="moderately susceptible" usageNote="ObservationInterpretation" base_EnumerationLiteral="_AQnZIxJcEeKjxqZmTX2rRQ"/>
+  <term:ValueSetCode xmi:id="_AQnZJhJcEeKjxqZmTX2rRQ" conceptName="Negative" usageNote="ObservationInterpretation" base_EnumerationLiteral="_AQnZJRJcEeKjxqZmTX2rRQ"/>
+  <term:ValueSetCode xmi:id="_AQnZKBJcEeKjxqZmTX2rRQ" conceptName="Normal" usageNote="ObservationInterpretation" base_EnumerationLiteral="_AQnZJxJcEeKjxqZmTX2rRQ"/>
+  <term:ValueSetCode xmi:id="_AQnZKhJcEeKjxqZmTX2rRQ" conceptName="Positive" usageNote="ObservationInterpretation" base_EnumerationLiteral="_AQnZKRJcEeKjxqZmTX2rRQ"/>
+  <term:ValueSetCode xmi:id="_AQnZLBJcEeKjxqZmTX2rRQ" conceptName="resistent" usageNote="ObservationInterpretation" base_EnumerationLiteral="_AQnZKxJcEeKjxqZmTX2rRQ"/>
+  <term:ValueSetCode xmi:id="_AQnZLhJcEeKjxqZmTX2rRQ" conceptName="susceptible" usageNote="ObservationInterpretation" base_EnumerationLiteral="_AQnZLRJcEeKjxqZmTX2rRQ"/>
+  <term:ValueSetCode xmi:id="_AQnZMBJcEeKjxqZmTX2rRQ" conceptName="Very susceptible" usageNote="ObservationInterpretation" base_EnumerationLiteral="_AQnZLxJcEeKjxqZmTX2rRQ"/>
+  <term:ValueSetCode xmi:id="_AQnZMhJcEeKjxqZmTX2rRQ" conceptName="worse" usageNote="ObservationInterpretation" base_EnumerationLiteral="_AQnZMRJcEeKjxqZmTX2rRQ"/>
+  <term:ValueSetCode xmi:id="_iqRTUBMsEeK4go_VqYg1Bw" conceptName="AEROSOL" usageNote="NCI Thesaurus" base_EnumerationLiteral="_iqQsQRMsEeK4go_VqYg1Bw"/>
+  <term:ValueSetCode xmi:id="_iqRTUhMsEeK4go_VqYg1Bw" conceptName="AEROSOL, FOAM" usageNote="NCI Thesaurus" base_EnumerationLiteral="_iqRTURMsEeK4go_VqYg1Bw"/>
+  <term:ValueSetCode xmi:id="_iqRTVBMsEeK4go_VqYg1Bw" conceptName="AEROSOL, METERED" usageNote="NCI Thesaurus" base_EnumerationLiteral="_iqRTUxMsEeK4go_VqYg1Bw"/>
+  <term:ValueSetCode xmi:id="_iqR6YBMsEeK4go_VqYg1Bw" conceptName="AEROSOL, POWDER" usageNote="NCI Thesaurus" base_EnumerationLiteral="_iqRTVRMsEeK4go_VqYg1Bw"/>
+  <term:ValueSetCode xmi:id="_iqR6YhMsEeK4go_VqYg1Bw" conceptName="AEROSOL, SPRAY" usageNote="NCI Thesaurus" base_EnumerationLiteral="_iqR6YRMsEeK4go_VqYg1Bw"/>
+  <term:ValueSetCode xmi:id="_iqR6ZBMsEeK4go_VqYg1Bw" conceptName="BAR, CHEWABLE" usageNote="NCI Thesaurus" base_EnumerationLiteral="_iqR6YxMsEeK4go_VqYg1Bw"/>
+  <term:ValueSetCode xmi:id="_iqShcBMsEeK4go_VqYg1Bw" conceptName="BEAD" usageNote="NCI Thesaurus" base_EnumerationLiteral="_iqR6ZRMsEeK4go_VqYg1Bw"/>
+  <term:ValueSetCode xmi:id="_iqShchMsEeK4go_VqYg1Bw" conceptName="BEAD, IMPLANT, EXTENDED RELEASE" usageNote="NCI Thesaurus" base_EnumerationLiteral="_iqShcRMsEeK4go_VqYg1Bw"/>
+  <term:ValueSetCode xmi:id="_iqShdBMsEeK4go_VqYg1Bw" conceptName="BLOCK" usageNote="NCI Thesaurus" base_EnumerationLiteral="_iqShcxMsEeK4go_VqYg1Bw"/>
+  <term:ValueSetCode xmi:id="_iqShdhMsEeK4go_VqYg1Bw" conceptName="CAPSULE" usageNote="NCI Thesaurus" base_EnumerationLiteral="_iqShdRMsEeK4go_VqYg1Bw"/>
+  <term:ValueSetCode xmi:id="_iqTIgRMsEeK4go_VqYg1Bw" conceptName="CAPSULE, COATED" usageNote="NCI Thesaurus" base_EnumerationLiteral="_iqTIgBMsEeK4go_VqYg1Bw"/>
+  <term:ValueSetCode xmi:id="_iqTIgxMsEeK4go_VqYg1Bw" conceptName="CAPSULE, COATED PELLETS" usageNote="NCI Thesaurus" base_EnumerationLiteral="_iqTIghMsEeK4go_VqYg1Bw"/>
+  <term:ValueSetCode xmi:id="_iqTIhRMsEeK4go_VqYg1Bw" conceptName="CAPSULE, COATED, EXTENDED RELEASE" usageNote="NCI Thesaurus" base_EnumerationLiteral="_iqTIhBMsEeK4go_VqYg1Bw"/>
+  <term:ValueSetCode xmi:id="_iqTvkRMsEeK4go_VqYg1Bw" conceptName="CAPSULE, DELAYED RELEASE" usageNote="NCI Thesaurus" base_EnumerationLiteral="_iqTvkBMsEeK4go_VqYg1Bw"/>
+  <term:ValueSetCode xmi:id="_iqTvkxMsEeK4go_VqYg1Bw" conceptName="CAPSULE, DELAYED RELEASE PELLETS" usageNote="NCI Thesaurus" base_EnumerationLiteral="_iqTvkhMsEeK4go_VqYg1Bw"/>
+  <term:ValueSetCode xmi:id="_iqTvlRMsEeK4go_VqYg1Bw" conceptName="CAPSULE, EXTENDED RELEASE" usageNote="NCI Thesaurus" base_EnumerationLiteral="_iqTvlBMsEeK4go_VqYg1Bw"/>
+  <term:ValueSetCode xmi:id="_iqUWoBMsEeK4go_VqYg1Bw" conceptName="CAPSULE, FILM COATED, EXTENDED RELEASE" usageNote="NCI Thesaurus" base_EnumerationLiteral="_iqTvlhMsEeK4go_VqYg1Bw"/>
+  <term:ValueSetCode xmi:id="_iqUWohMsEeK4go_VqYg1Bw" conceptName="CAPSULE, GELATIN COATED" usageNote="NCI Thesaurus" base_EnumerationLiteral="_iqUWoRMsEeK4go_VqYg1Bw"/>
+  <term:ValueSetCode xmi:id="_iqUWpBMsEeK4go_VqYg1Bw" conceptName="CAPSULE, LIQUID FILLED" usageNote="NCI Thesaurus" base_EnumerationLiteral="_iqUWoxMsEeK4go_VqYg1Bw"/>
+  <term:ValueSetCode xmi:id="_iqU9sBMsEeK4go_VqYg1Bw" conceptName="CEMENT" usageNote="NCI Thesaurus" base_EnumerationLiteral="_iqUWpRMsEeK4go_VqYg1Bw"/>
+  <term:ValueSetCode xmi:id="_iqU9shMsEeK4go_VqYg1Bw" conceptName="CIGARETTE" usageNote="NCI Thesaurus" base_EnumerationLiteral="_iqU9sRMsEeK4go_VqYg1Bw"/>
+  <term:ValueSetCode xmi:id="_iqU9tBMsEeK4go_VqYg1Bw" conceptName="CLOTH" usageNote="NCI Thesaurus" base_EnumerationLiteral="_iqU9sxMsEeK4go_VqYg1Bw"/>
+  <term:ValueSetCode xmi:id="_iqU9thMsEeK4go_VqYg1Bw" conceptName="CONCENTRATE" usageNote="NCI Thesaurus" base_EnumerationLiteral="_iqU9tRMsEeK4go_VqYg1Bw"/>
+  <term:ValueSetCode xmi:id="_iqVkwRMsEeK4go_VqYg1Bw" conceptName="CONE" usageNote="NCI Thesaurus" base_EnumerationLiteral="_iqVkwBMsEeK4go_VqYg1Bw"/>
+  <term:ValueSetCode xmi:id="_iqVkwxMsEeK4go_VqYg1Bw" conceptName="CORE, EXTENDED RELEASE" usageNote="NCI Thesaurus" base_EnumerationLiteral="_iqVkwhMsEeK4go_VqYg1Bw"/>
+  <term:ValueSetCode xmi:id="_iqVkxRMsEeK4go_VqYg1Bw" conceptName="CREAM" usageNote="NCI Thesaurus" base_EnumerationLiteral="_iqVkxBMsEeK4go_VqYg1Bw"/>
+  <term:ValueSetCode xmi:id="_iqWL0BMsEeK4go_VqYg1Bw" conceptName="CREAM, AUGMENTED" usageNote="NCI Thesaurus" base_EnumerationLiteral="_iqVkxhMsEeK4go_VqYg1Bw"/>
+  <term:ValueSetCode xmi:id="_iqWL0hMsEeK4go_VqYg1Bw" conceptName="CRYSTAL" usageNote="NCI Thesaurus" base_EnumerationLiteral="_iqWL0RMsEeK4go_VqYg1Bw"/>
+  <term:ValueSetCode xmi:id="_iqWL1BMsEeK4go_VqYg1Bw" conceptName="CULTURE" usageNote="NCI Thesaurus" base_EnumerationLiteral="_iqWL0xMsEeK4go_VqYg1Bw"/>
+  <term:ValueSetCode xmi:id="_iqWy4BMsEeK4go_VqYg1Bw" conceptName="DIAPHRAGM" usageNote="NCI Thesaurus" base_EnumerationLiteral="_iqWL1RMsEeK4go_VqYg1Bw"/>
+  <term:ValueSetCode xmi:id="_iqWy4hMsEeK4go_VqYg1Bw" conceptName="DISC" usageNote="NCI Thesaurus" base_EnumerationLiteral="_iqWy4RMsEeK4go_VqYg1Bw"/>
+  <term:ValueSetCode xmi:id="_iqWy5BMsEeK4go_VqYg1Bw" conceptName="DOUCHE" usageNote="NCI Thesaurus" base_EnumerationLiteral="_iqWy4xMsEeK4go_VqYg1Bw"/>
+  <term:ValueSetCode xmi:id="_iqWy5hMsEeK4go_VqYg1Bw" conceptName="DRESSING" usageNote="NCI Thesaurus" base_EnumerationLiteral="_iqWy5RMsEeK4go_VqYg1Bw"/>
+  <term:ValueSetCode xmi:id="_iqXZ8RMsEeK4go_VqYg1Bw" conceptName="DRUG DELIVERY SYSTEM" usageNote="NCI Thesaurus" base_EnumerationLiteral="_iqXZ8BMsEeK4go_VqYg1Bw"/>
+  <term:ValueSetCode xmi:id="_iqXZ8xMsEeK4go_VqYg1Bw" conceptName="ELIXIR" usageNote="NCI Thesaurus" base_EnumerationLiteral="_iqXZ8hMsEeK4go_VqYg1Bw"/>
+  <term:ValueSetCode xmi:id="_iqXZ9RMsEeK4go_VqYg1Bw" conceptName="EMULSION" usageNote="NCI Thesaurus" base_EnumerationLiteral="_iqXZ9BMsEeK4go_VqYg1Bw"/>
+  <term:ValueSetCode xmi:id="_iqYBABMsEeK4go_VqYg1Bw" conceptName="ENEMA" usageNote="NCI Thesaurus" base_EnumerationLiteral="_iqXZ9hMsEeK4go_VqYg1Bw"/>
+  <term:ValueSetCode xmi:id="_iqYBAhMsEeK4go_VqYg1Bw" conceptName="EXTRACT" usageNote="NCI Thesaurus" base_EnumerationLiteral="_iqYBARMsEeK4go_VqYg1Bw"/>
+  <term:ValueSetCode xmi:id="_iqYBBBMsEeK4go_VqYg1Bw" conceptName="FIBER, EXTENDED RELEASE" usageNote="NCI Thesaurus" base_EnumerationLiteral="_iqYBAxMsEeK4go_VqYg1Bw"/>
+  <term:ValueSetCode xmi:id="_iqYBBhMsEeK4go_VqYg1Bw" conceptName="FILM" usageNote="NCI Thesaurus" base_EnumerationLiteral="_iqYBBRMsEeK4go_VqYg1Bw"/>
+  <term:ValueSetCode xmi:id="_iqYoERMsEeK4go_VqYg1Bw" conceptName="FILM, EXTENDED RELEASE" usageNote="NCI Thesaurus" base_EnumerationLiteral="_iqYoEBMsEeK4go_VqYg1Bw"/>
+  <term:ValueSetCode xmi:id="_iqYoExMsEeK4go_VqYg1Bw" conceptName="FILM, SOLUBLE" usageNote="NCI Thesaurus" base_EnumerationLiteral="_iqYoEhMsEeK4go_VqYg1Bw"/>
+  <term:ValueSetCode xmi:id="_iqYoFRMsEeK4go_VqYg1Bw" conceptName="FOR SOLUTION" usageNote="NCI Thesaurus" base_EnumerationLiteral="_iqYoFBMsEeK4go_VqYg1Bw"/>
+  <term:ValueSetCode xmi:id="_iqZPIBMsEeK4go_VqYg1Bw" conceptName="FOR SUSPENSION" usageNote="NCI Thesaurus" base_EnumerationLiteral="_iqYoFhMsEeK4go_VqYg1Bw"/>
+  <term:ValueSetCode xmi:id="_iqZPIhMsEeK4go_VqYg1Bw" conceptName="FOR SUSPENSION, EXTENDED RELEASE" usageNote="NCI Thesaurus" base_EnumerationLiteral="_iqZPIRMsEeK4go_VqYg1Bw"/>
+  <term:ValueSetCode xmi:id="_iqZPJBMsEeK4go_VqYg1Bw" conceptName="GAS" usageNote="NCI Thesaurus" base_EnumerationLiteral="_iqZPIxMsEeK4go_VqYg1Bw"/>
+  <term:ValueSetCode xmi:id="_iqZPJhMsEeK4go_VqYg1Bw" conceptName="GEL" usageNote="NCI Thesaurus" base_EnumerationLiteral="_iqZPJRMsEeK4go_VqYg1Bw"/>
+  <term:ValueSetCode xmi:id="_iqZ2MBMsEeK4go_VqYg1Bw" conceptName="GEL, DENTIFRICE" usageNote="NCI Thesaurus" base_EnumerationLiteral="_iqZPJxMsEeK4go_VqYg1Bw"/>
+  <term:ValueSetCode xmi:id="_iqZ2MhMsEeK4go_VqYg1Bw" conceptName="GEL, METERED" usageNote="NCI Thesaurus" base_EnumerationLiteral="_iqZ2MRMsEeK4go_VqYg1Bw"/>
+  <term:ValueSetCode xmi:id="_iqadQBMsEeK4go_VqYg1Bw" conceptName="GENERATOR" usageNote="NCI Thesaurus" base_EnumerationLiteral="_iqZ2MxMsEeK4go_VqYg1Bw"/>
+  <term:ValueSetCode xmi:id="_iqadQhMsEeK4go_VqYg1Bw" conceptName="GLOBULE" usageNote="NCI Thesaurus" base_EnumerationLiteral="_iqadQRMsEeK4go_VqYg1Bw"/>
+  <term:ValueSetCode xmi:id="_iqadRBMsEeK4go_VqYg1Bw" conceptName="GRAFT" usageNote="NCI Thesaurus" base_EnumerationLiteral="_iqadQxMsEeK4go_VqYg1Bw"/>
+  <term:ValueSetCode xmi:id="_iqadRhMsEeK4go_VqYg1Bw" conceptName="GRANULE" usageNote="NCI Thesaurus" base_EnumerationLiteral="_iqadRRMsEeK4go_VqYg1Bw"/>
+  <term:ValueSetCode xmi:id="_iqbEURMsEeK4go_VqYg1Bw" conceptName="GRANULE, DELAYED RELEASE" usageNote="NCI Thesaurus" base_EnumerationLiteral="_iqbEUBMsEeK4go_VqYg1Bw"/>
+  <term:ValueSetCode xmi:id="_iqbEUxMsEeK4go_VqYg1Bw" conceptName="GRANULE, EFFERVESCENT" usageNote="NCI Thesaurus" base_EnumerationLiteral="_iqbEUhMsEeK4go_VqYg1Bw"/>
+  <term:ValueSetCode xmi:id="_iqbEVRMsEeK4go_VqYg1Bw" conceptName="GRANULE, FOR SOLUTION" usageNote="NCI Thesaurus" base_EnumerationLiteral="_iqbEVBMsEeK4go_VqYg1Bw"/>
+  <term:ValueSetCode xmi:id="_iqbrYBMsEeK4go_VqYg1Bw" conceptName="GRANULE, FOR SUSPENSION" usageNote="NCI Thesaurus" base_EnumerationLiteral="_iqbEVhMsEeK4go_VqYg1Bw"/>
+  <term:ValueSetCode xmi:id="_iqbrYhMsEeK4go_VqYg1Bw" conceptName="GRANULE, FOR SUSPENSION, EXTENDED RELEASE" usageNote="NCI Thesaurus" base_EnumerationLiteral="_iqbrYRMsEeK4go_VqYg1Bw"/>
+  <term:ValueSetCode xmi:id="_iqbrZBMsEeK4go_VqYg1Bw" conceptName="GUM" usageNote="NCI Thesaurus" base_EnumerationLiteral="_iqbrYxMsEeK4go_VqYg1Bw"/>
+  <term:ValueSetCode xmi:id="_iqbrZhMsEeK4go_VqYg1Bw" conceptName="GUM, CHEWING" usageNote="NCI Thesaurus" base_EnumerationLiteral="_iqbrZRMsEeK4go_VqYg1Bw"/>
+  <term:ValueSetCode xmi:id="_iqcScRMsEeK4go_VqYg1Bw" conceptName="GUM, RESIN" usageNote="NCI Thesaurus" base_EnumerationLiteral="_iqcScBMsEeK4go_VqYg1Bw"/>
+  <term:ValueSetCode xmi:id="_iqcScxMsEeK4go_VqYg1Bw" conceptName="IMPLANT" usageNote="NCI Thesaurus" base_EnumerationLiteral="_iqcSchMsEeK4go_VqYg1Bw"/>
+  <term:ValueSetCode xmi:id="_iqcSdRMsEeK4go_VqYg1Bw" conceptName="INHALANT" usageNote="NCI Thesaurus" base_EnumerationLiteral="_iqcSdBMsEeK4go_VqYg1Bw"/>
+  <term:ValueSetCode xmi:id="_iqc5gBMsEeK4go_VqYg1Bw" conceptName="INJECTABLE, LIPOSOMAL" usageNote="NCI Thesaurus" base_EnumerationLiteral="_iqcSdhMsEeK4go_VqYg1Bw"/>
+  <term:ValueSetCode xmi:id="_iqc5ghMsEeK4go_VqYg1Bw" conceptName="INJECTION" usageNote="NCI Thesaurus" base_EnumerationLiteral="_iqc5gRMsEeK4go_VqYg1Bw"/>
+  <term:ValueSetCode xmi:id="_iqc5hBMsEeK4go_VqYg1Bw" conceptName="INJECTION, EMULSION" usageNote="NCI Thesaurus" base_EnumerationLiteral="_iqc5gxMsEeK4go_VqYg1Bw"/>
+  <term:ValueSetCode xmi:id="_iqc5hhMsEeK4go_VqYg1Bw" conceptName="INJECTION, LIPID COMPLEX" usageNote="NCI Thesaurus" base_EnumerationLiteral="_iqc5hRMsEeK4go_VqYg1Bw"/>
+  <term:ValueSetCode xmi:id="_iqdgkRMsEeK4go_VqYg1Bw" conceptName="INJECTION, POWDER, FOR SOLUTION" usageNote="NCI Thesaurus" base_EnumerationLiteral="_iqdgkBMsEeK4go_VqYg1Bw"/>
+  <term:ValueSetCode xmi:id="_iqdgkxMsEeK4go_VqYg1Bw" conceptName="INJECTION, POWDER, FOR SUSPENSION" usageNote="NCI Thesaurus" base_EnumerationLiteral="_iqdgkhMsEeK4go_VqYg1Bw"/>
+  <term:ValueSetCode xmi:id="_iqdglRMsEeK4go_VqYg1Bw" conceptName="INJECTION, POWDER, FOR SUSPENSION, EXTENDED RELEASE" usageNote="NCI Thesaurus" base_EnumerationLiteral="_iqdglBMsEeK4go_VqYg1Bw"/>
+  <term:ValueSetCode xmi:id="_iqeHoBMsEeK4go_VqYg1Bw" conceptName="INJECTION, POWDER, LYOPHILIZED, FOR LIPOSOMAL SUSPENSION" usageNote="NCI Thesaurus" base_EnumerationLiteral="_iqdglhMsEeK4go_VqYg1Bw"/>
+  <term:ValueSetCode xmi:id="_iqeHohMsEeK4go_VqYg1Bw" conceptName="INJECTION, POWDER, LYOPHILIZED, FOR SOLUTION" usageNote="NCI Thesaurus" base_EnumerationLiteral="_iqeHoRMsEeK4go_VqYg1Bw"/>
+  <term:ValueSetCode xmi:id="_iqeHpBMsEeK4go_VqYg1Bw" conceptName="INJECTION, POWDER, LYOPHILIZED, FOR SUSPENSION" usageNote="NCI Thesaurus" base_EnumerationLiteral="_iqeHoxMsEeK4go_VqYg1Bw"/>
+  <term:ValueSetCode xmi:id="_iqeHphMsEeK4go_VqYg1Bw" conceptName="INJECTION, POWDER, LYOPHILIZED, FOR SUSPENSION, EXTENDED RELEASE" usageNote="NCI Thesaurus" base_EnumerationLiteral="_iqeHpRMsEeK4go_VqYg1Bw"/>
+  <term:ValueSetCode xmi:id="_iqeusRMsEeK4go_VqYg1Bw" conceptName="INJECTION, SOLUTION" usageNote="NCI Thesaurus" base_EnumerationLiteral="_iqeusBMsEeK4go_VqYg1Bw"/>
+  <term:ValueSetCode xmi:id="_iqeusxMsEeK4go_VqYg1Bw" conceptName="INJECTION, SOLUTION, CONCENTRATE" usageNote="NCI Thesaurus" base_EnumerationLiteral="_iqeushMsEeK4go_VqYg1Bw"/>
+  <term:ValueSetCode xmi:id="_iqeutRMsEeK4go_VqYg1Bw" conceptName="INJECTION, SUSPENSION" usageNote="NCI Thesaurus" base_EnumerationLiteral="_iqeutBMsEeK4go_VqYg1Bw"/>
+  <term:ValueSetCode xmi:id="_iqfVwBMsEeK4go_VqYg1Bw" conceptName="INJECTION, SUSPENSION, EXTENDED RELEASE" usageNote="NCI Thesaurus" base_EnumerationLiteral="_iqeuthMsEeK4go_VqYg1Bw"/>
+  <term:ValueSetCode xmi:id="_iqfVwhMsEeK4go_VqYg1Bw" conceptName="INJECTION, SUSPENSION, LIPOSOMAL" usageNote="NCI Thesaurus" base_EnumerationLiteral="_iqfVwRMsEeK4go_VqYg1Bw"/>
+  <term:ValueSetCode xmi:id="_iqfVxBMsEeK4go_VqYg1Bw" conceptName="INJECTION, SUSPENSION, SONICATED" usageNote="NCI Thesaurus" base_EnumerationLiteral="_iqfVwxMsEeK4go_VqYg1Bw"/>
+  <term:ValueSetCode xmi:id="_iqfVxhMsEeK4go_VqYg1Bw" conceptName="INSERT" usageNote="NCI Thesaurus" base_EnumerationLiteral="_iqfVxRMsEeK4go_VqYg1Bw"/>
+  <term:ValueSetCode xmi:id="_iqf80BMsEeK4go_VqYg1Bw" conceptName="INSERT, EXTENDED RELEASE" usageNote="NCI Thesaurus" base_EnumerationLiteral="_iqfVxxMsEeK4go_VqYg1Bw"/>
+  <term:ValueSetCode xmi:id="_iqf80hMsEeK4go_VqYg1Bw" conceptName="INTRAUTERINE DEVICE" usageNote="NCI Thesaurus" base_EnumerationLiteral="_iqf80RMsEeK4go_VqYg1Bw"/>
+  <term:ValueSetCode xmi:id="_iqf81BMsEeK4go_VqYg1Bw" conceptName="IRRIGANT" usageNote="NCI Thesaurus" base_EnumerationLiteral="_iqf80xMsEeK4go_VqYg1Bw"/>
+  <term:ValueSetCode xmi:id="_iqf81hMsEeK4go_VqYg1Bw" conceptName="JELLY" usageNote="NCI Thesaurus" base_EnumerationLiteral="_iqf81RMsEeK4go_VqYg1Bw"/>
+  <term:ValueSetCode xmi:id="_iqgj4RMsEeK4go_VqYg1Bw" conceptName="KIT" usageNote="NCI Thesaurus" base_EnumerationLiteral="_iqgj4BMsEeK4go_VqYg1Bw"/>
+  <term:ValueSetCode xmi:id="_iqgj4xMsEeK4go_VqYg1Bw" conceptName="LINER, DENTAL" usageNote="NCI Thesaurus" base_EnumerationLiteral="_iqgj4hMsEeK4go_VqYg1Bw"/>
+  <term:ValueSetCode xmi:id="_iqgj5RMsEeK4go_VqYg1Bw" conceptName="LINIMENT" usageNote="NCI Thesaurus" base_EnumerationLiteral="_iqgj5BMsEeK4go_VqYg1Bw"/>
+  <term:ValueSetCode xmi:id="_iqhK8BMsEeK4go_VqYg1Bw" conceptName="LIPSTICK" usageNote="NCI Thesaurus" base_EnumerationLiteral="_iqgj5hMsEeK4go_VqYg1Bw"/>
+  <term:ValueSetCode xmi:id="_iqhK8hMsEeK4go_VqYg1Bw" conceptName="LIQUID" usageNote="NCI Thesaurus" base_EnumerationLiteral="_iqhK8RMsEeK4go_VqYg1Bw"/>
+  <term:ValueSetCode xmi:id="_iqhK9BMsEeK4go_VqYg1Bw" conceptName="LIQUID, EXTENDED RELEASE" usageNote="NCI Thesaurus" base_EnumerationLiteral="_iqhK8xMsEeK4go_VqYg1Bw"/>
+  <term:ValueSetCode xmi:id="_iqhK9hMsEeK4go_VqYg1Bw" conceptName="LOTION" usageNote="NCI Thesaurus" base_EnumerationLiteral="_iqhK9RMsEeK4go_VqYg1Bw"/>
+  <term:ValueSetCode xmi:id="_iqhyABMsEeK4go_VqYg1Bw" conceptName="LOTION, AUGMENTED" usageNote="NCI Thesaurus" base_EnumerationLiteral="_iqhK9xMsEeK4go_VqYg1Bw"/>
+  <term:ValueSetCode xmi:id="_iqhyAhMsEeK4go_VqYg1Bw" conceptName="LOTION/SHAMPOO" usageNote="NCI Thesaurus" base_EnumerationLiteral="_iqhyARMsEeK4go_VqYg1Bw"/>
+  <term:ValueSetCode xmi:id="_iqhyBBMsEeK4go_VqYg1Bw" conceptName="LOZENGE" usageNote="NCI Thesaurus" base_EnumerationLiteral="_iqhyAxMsEeK4go_VqYg1Bw"/>
+  <term:ValueSetCode xmi:id="_iqhyBhMsEeK4go_VqYg1Bw" conceptName="MOUTHWASH" usageNote="NCI Thesaurus" base_EnumerationLiteral="_iqhyBRMsEeK4go_VqYg1Bw"/>
+  <term:ValueSetCode xmi:id="_iqiZERMsEeK4go_VqYg1Bw" conceptName="OIL" usageNote="NCI Thesaurus" base_EnumerationLiteral="_iqiZEBMsEeK4go_VqYg1Bw"/>
+  <term:ValueSetCode xmi:id="_iqiZExMsEeK4go_VqYg1Bw" conceptName="OINTMENT" usageNote="NCI Thesaurus" base_EnumerationLiteral="_iqiZEhMsEeK4go_VqYg1Bw"/>
+  <term:ValueSetCode xmi:id="_iqiZFRMsEeK4go_VqYg1Bw" conceptName="OINTMENT, AUGMENTED" usageNote="NCI Thesaurus" base_EnumerationLiteral="_iqiZFBMsEeK4go_VqYg1Bw"/>
+  <term:ValueSetCode xmi:id="_iqiZFxMsEeK4go_VqYg1Bw" conceptName="PACKING" usageNote="NCI Thesaurus" base_EnumerationLiteral="_iqiZFhMsEeK4go_VqYg1Bw"/>
+  <term:ValueSetCode xmi:id="_iqjAIRMsEeK4go_VqYg1Bw" conceptName="PASTE" usageNote="NCI Thesaurus" base_EnumerationLiteral="_iqjAIBMsEeK4go_VqYg1Bw"/>
+  <term:ValueSetCode xmi:id="_iqjAIxMsEeK4go_VqYg1Bw" conceptName="PASTE, DENTIFRICE" usageNote="NCI Thesaurus" base_EnumerationLiteral="_iqjAIhMsEeK4go_VqYg1Bw"/>
+  <term:ValueSetCode xmi:id="_iqjAJRMsEeK4go_VqYg1Bw" conceptName="PASTILLE" usageNote="NCI Thesaurus" base_EnumerationLiteral="_iqjAJBMsEeK4go_VqYg1Bw"/>
+  <term:ValueSetCode xmi:id="_iqjnMBMsEeK4go_VqYg1Bw" conceptName="PATCH" usageNote="NCI Thesaurus" base_EnumerationLiteral="_iqjAJhMsEeK4go_VqYg1Bw"/>
+  <term:ValueSetCode xmi:id="_iqjnMhMsEeK4go_VqYg1Bw" conceptName="PATCH, EXTENDED RELEASE" usageNote="NCI Thesaurus" base_EnumerationLiteral="_iqjnMRMsEeK4go_VqYg1Bw"/>
+  <term:ValueSetCode xmi:id="_iqjnNBMsEeK4go_VqYg1Bw" conceptName="PATCH, EXTENDED RELEASE, ELECTRICALLY CONTROLLED" usageNote="NCI Thesaurus" base_EnumerationLiteral="_iqjnMxMsEeK4go_VqYg1Bw"/>
+  <term:ValueSetCode xmi:id="_iqjnNhMsEeK4go_VqYg1Bw" conceptName="PELLET" usageNote="NCI Thesaurus" base_EnumerationLiteral="_iqjnNRMsEeK4go_VqYg1Bw"/>
+  <term:ValueSetCode xmi:id="_iqkOQRMsEeK4go_VqYg1Bw" conceptName="PELLET, IMPLANTABLE" usageNote="NCI Thesaurus" base_EnumerationLiteral="_iqkOQBMsEeK4go_VqYg1Bw"/>
+  <term:ValueSetCode xmi:id="_iqkOQxMsEeK4go_VqYg1Bw" conceptName="PELLETS, COATED, EXTENDED RELEASE" usageNote="NCI Thesaurus" base_EnumerationLiteral="_iqkOQhMsEeK4go_VqYg1Bw"/>
+  <term:ValueSetCode xmi:id="_iqkORRMsEeK4go_VqYg1Bw" conceptName="PILL" usageNote="NCI Thesaurus" base_EnumerationLiteral="_iqkORBMsEeK4go_VqYg1Bw"/>
+  <term:ValueSetCode xmi:id="_iqkORxMsEeK4go_VqYg1Bw" conceptName="PLASTER" usageNote="NCI Thesaurus" base_EnumerationLiteral="_iqkORhMsEeK4go_VqYg1Bw"/>
+  <term:ValueSetCode xmi:id="_iqk1URMsEeK4go_VqYg1Bw" conceptName="POULTICE" usageNote="NCI Thesaurus" base_EnumerationLiteral="_iqk1UBMsEeK4go_VqYg1Bw"/>
+  <term:ValueSetCode xmi:id="_iqk1UxMsEeK4go_VqYg1Bw" conceptName="POWDER" usageNote="NCI Thesaurus" base_EnumerationLiteral="_iqk1UhMsEeK4go_VqYg1Bw"/>
+  <term:ValueSetCode xmi:id="_iqk1VRMsEeK4go_VqYg1Bw" conceptName="POWDER, DENTIFRICE" usageNote="NCI Thesaurus" base_EnumerationLiteral="_iqk1VBMsEeK4go_VqYg1Bw"/>
+  <term:ValueSetCode xmi:id="_iqlcYBMsEeK4go_VqYg1Bw" conceptName="POWDER, FOR SOLUTION" usageNote="NCI Thesaurus" base_EnumerationLiteral="_iqk1VhMsEeK4go_VqYg1Bw"/>
+  <term:ValueSetCode xmi:id="_iqlcYhMsEeK4go_VqYg1Bw" conceptName="POWDER, FOR SUSPENSION" usageNote="NCI Thesaurus" base_EnumerationLiteral="_iqlcYRMsEeK4go_VqYg1Bw"/>
+  <term:ValueSetCode xmi:id="_iqlcZBMsEeK4go_VqYg1Bw" conceptName="POWDER, METERED" usageNote="NCI Thesaurus" base_EnumerationLiteral="_iqlcYxMsEeK4go_VqYg1Bw"/>
+  <term:ValueSetCode xmi:id="_iqlcZhMsEeK4go_VqYg1Bw" conceptName="RING" usageNote="NCI Thesaurus" base_EnumerationLiteral="_iqlcZRMsEeK4go_VqYg1Bw"/>
+  <term:ValueSetCode xmi:id="_iqmDcRMsEeK4go_VqYg1Bw" conceptName="RINSE" usageNote="NCI Thesaurus" base_EnumerationLiteral="_iqmDcBMsEeK4go_VqYg1Bw"/>
+  <term:ValueSetCode xmi:id="_iqmDcxMsEeK4go_VqYg1Bw" conceptName="SALVE" usageNote="NCI Thesaurus" base_EnumerationLiteral="_iqmDchMsEeK4go_VqYg1Bw"/>
+  <term:ValueSetCode xmi:id="_iqmDdRMsEeK4go_VqYg1Bw" conceptName="SHAMPOO" usageNote="NCI Thesaurus" base_EnumerationLiteral="_iqmDdBMsEeK4go_VqYg1Bw"/>
+  <term:ValueSetCode xmi:id="_iqmqgBMsEeK4go_VqYg1Bw" conceptName="SHAMPOO, SUSPENSION" usageNote="NCI Thesaurus" base_EnumerationLiteral="_iqmDdhMsEeK4go_VqYg1Bw"/>
+  <term:ValueSetCode xmi:id="_iqmqghMsEeK4go_VqYg1Bw" conceptName="SOAP" usageNote="NCI Thesaurus" base_EnumerationLiteral="_iqmqgRMsEeK4go_VqYg1Bw"/>
+  <term:ValueSetCode xmi:id="_iqmqhBMsEeK4go_VqYg1Bw" conceptName="SOLUTION" usageNote="NCI Thesaurus" base_EnumerationLiteral="_iqmqgxMsEeK4go_VqYg1Bw"/>
+  <term:ValueSetCode xmi:id="_iqmqhhMsEeK4go_VqYg1Bw" conceptName="SOLUTION, CONCENTRATE" usageNote="NCI Thesaurus" base_EnumerationLiteral="_iqmqhRMsEeK4go_VqYg1Bw"/>
+  <term:ValueSetCode xmi:id="_iqnRkBMsEeK4go_VqYg1Bw" conceptName="SOLUTION, FOR SLUSH" usageNote="NCI Thesaurus" base_EnumerationLiteral="_iqmqhxMsEeK4go_VqYg1Bw"/>
+  <term:ValueSetCode xmi:id="_iqnRkhMsEeK4go_VqYg1Bw" conceptName="SOLUTION, GEL FORMING / DROPS" usageNote="NCI Thesaurus" base_EnumerationLiteral="_iqnRkRMsEeK4go_VqYg1Bw"/>
+  <term:ValueSetCode xmi:id="_iqnRlBMsEeK4go_VqYg1Bw" conceptName="SOLUTION, GEL FORMING, EXTENDED RELEASE" usageNote="NCI Thesaurus" base_EnumerationLiteral="_iqnRkxMsEeK4go_VqYg1Bw"/>
+  <term:ValueSetCode xmi:id="_iqnRlhMsEeK4go_VqYg1Bw" conceptName="SOLUTION/ DROPS" usageNote="NCI Thesaurus" base_EnumerationLiteral="_iqnRlRMsEeK4go_VqYg1Bw"/>
+  <term:ValueSetCode xmi:id="_iqn4oRMsEeK4go_VqYg1Bw" conceptName="SPONGE" usageNote="NCI Thesaurus" base_EnumerationLiteral="_iqn4oBMsEeK4go_VqYg1Bw"/>
+  <term:ValueSetCode xmi:id="_iqn4oxMsEeK4go_VqYg1Bw" conceptName="SPRAY" usageNote="NCI Thesaurus" base_EnumerationLiteral="_iqn4ohMsEeK4go_VqYg1Bw"/>
+  <term:ValueSetCode xmi:id="_iqn4pRMsEeK4go_VqYg1Bw" conceptName="SPRAY, METERED" usageNote="NCI Thesaurus" base_EnumerationLiteral="_iqn4pBMsEeK4go_VqYg1Bw"/>
+  <term:ValueSetCode xmi:id="_iqn4pxMsEeK4go_VqYg1Bw" conceptName="SPRAY, SUSPENSION" usageNote="NCI Thesaurus" base_EnumerationLiteral="_iqn4phMsEeK4go_VqYg1Bw"/>
+  <term:ValueSetCode xmi:id="_iqofsRMsEeK4go_VqYg1Bw" conceptName="STICK" usageNote="NCI Thesaurus" base_EnumerationLiteral="_iqofsBMsEeK4go_VqYg1Bw"/>
+  <term:ValueSetCode xmi:id="_iqofsxMsEeK4go_VqYg1Bw" conceptName="STRIP" usageNote="NCI Thesaurus" base_EnumerationLiteral="_iqofshMsEeK4go_VqYg1Bw"/>
+  <term:ValueSetCode xmi:id="_iqoftRMsEeK4go_VqYg1Bw" conceptName="SUPPOSITORY" usageNote="NCI Thesaurus" base_EnumerationLiteral="_iqoftBMsEeK4go_VqYg1Bw"/>
+  <term:ValueSetCode xmi:id="_iqpGwBMsEeK4go_VqYg1Bw" conceptName="SUPPOSITORY, EXTENDED RELEASE" usageNote="NCI Thesaurus" base_EnumerationLiteral="_iqofthMsEeK4go_VqYg1Bw"/>
+  <term:ValueSetCode xmi:id="_iqpGwhMsEeK4go_VqYg1Bw" conceptName="SUSPENSION" usageNote="NCI Thesaurus" base_EnumerationLiteral="_iqpGwRMsEeK4go_VqYg1Bw"/>
+  <term:ValueSetCode xmi:id="_iqpGxBMsEeK4go_VqYg1Bw" conceptName="SUSPENSION, EXTENDED RELEASE" usageNote="NCI Thesaurus" base_EnumerationLiteral="_iqpGwxMsEeK4go_VqYg1Bw"/>
+  <term:ValueSetCode xmi:id="_iqpGxhMsEeK4go_VqYg1Bw" conceptName="SUSPENSION/ DROPS" usageNote="NCI Thesaurus" base_EnumerationLiteral="_iqpGxRMsEeK4go_VqYg1Bw"/>
+  <term:ValueSetCode xmi:id="_iqpt0RMsEeK4go_VqYg1Bw" conceptName="SUTURE" usageNote="NCI Thesaurus" base_EnumerationLiteral="_iqpt0BMsEeK4go_VqYg1Bw"/>
+  <term:ValueSetCode xmi:id="_iqpt0xMsEeK4go_VqYg1Bw" conceptName="SWAB" usageNote="NCI Thesaurus" base_EnumerationLiteral="_iqpt0hMsEeK4go_VqYg1Bw"/>
+  <term:ValueSetCode xmi:id="_iqpt1RMsEeK4go_VqYg1Bw" conceptName="SYRUP" usageNote="NCI Thesaurus" base_EnumerationLiteral="_iqpt1BMsEeK4go_VqYg1Bw"/>
+  <term:ValueSetCode xmi:id="_iqqU4BMsEeK4go_VqYg1Bw" conceptName="TABLET" usageNote="NCI Thesaurus" base_EnumerationLiteral="_iqpt1hMsEeK4go_VqYg1Bw"/>
+  <term:ValueSetCode xmi:id="_iqqU4hMsEeK4go_VqYg1Bw" conceptName="TABLET, CHEWABLE" usageNote="NCI Thesaurus" base_EnumerationLiteral="_iqqU4RMsEeK4go_VqYg1Bw"/>
+  <term:ValueSetCode xmi:id="_iqqU5BMsEeK4go_VqYg1Bw" conceptName="TABLET, COATED" usageNote="NCI Thesaurus" base_EnumerationLiteral="_iqqU4xMsEeK4go_VqYg1Bw"/>
+  <term:ValueSetCode xmi:id="_iqqU5hMsEeK4go_VqYg1Bw" conceptName="TABLET, COATED PARTICLES" usageNote="NCI Thesaurus" base_EnumerationLiteral="_iqqU5RMsEeK4go_VqYg1Bw"/>
+  <term:ValueSetCode xmi:id="_iqq78BMsEeK4go_VqYg1Bw" conceptName="TABLET, DELAYED RELEASE" usageNote="NCI Thesaurus" base_EnumerationLiteral="_iqqU5xMsEeK4go_VqYg1Bw"/>
+  <term:ValueSetCode xmi:id="_iqq78hMsEeK4go_VqYg1Bw" conceptName="TABLET, DELAYED RELEASE PARTICLES" usageNote="NCI Thesaurus" base_EnumerationLiteral="_iqq78RMsEeK4go_VqYg1Bw"/>
+  <term:ValueSetCode xmi:id="_iqq79BMsEeK4go_VqYg1Bw" conceptName="TABLET, EFFERVESCENT" usageNote="NCI Thesaurus" base_EnumerationLiteral="_iqq78xMsEeK4go_VqYg1Bw"/>
+  <term:ValueSetCode xmi:id="_iqrjARMsEeK4go_VqYg1Bw" conceptName="TABLET, EXTENDED RELEASE" usageNote="NCI Thesaurus" base_EnumerationLiteral="_iqrjABMsEeK4go_VqYg1Bw"/>
+  <term:ValueSetCode xmi:id="_iqrjAxMsEeK4go_VqYg1Bw" conceptName="TABLET, FILM COATED" usageNote="NCI Thesaurus" base_EnumerationLiteral="_iqrjAhMsEeK4go_VqYg1Bw"/>
+  <term:ValueSetCode xmi:id="_iqrjBRMsEeK4go_VqYg1Bw" conceptName="TABLET, FILM COATED, EXTENDED RELEASE" usageNote="NCI Thesaurus" base_EnumerationLiteral="_iqrjBBMsEeK4go_VqYg1Bw"/>
+  <term:ValueSetCode xmi:id="_iqsKEBMsEeK4go_VqYg1Bw" conceptName="TABLET, FOR SOLUTION" usageNote="NCI Thesaurus" base_EnumerationLiteral="_iqrjBhMsEeK4go_VqYg1Bw"/>
+  <term:ValueSetCode xmi:id="_iqsKEhMsEeK4go_VqYg1Bw" conceptName="TABLET, FOR SUSPENSION" usageNote="NCI Thesaurus" base_EnumerationLiteral="_iqsKERMsEeK4go_VqYg1Bw"/>
+  <term:ValueSetCode xmi:id="_iqsKFBMsEeK4go_VqYg1Bw" conceptName="TABLET, MULTILAYER" usageNote="NCI Thesaurus" base_EnumerationLiteral="_iqsKExMsEeK4go_VqYg1Bw"/>
+  <term:ValueSetCode xmi:id="_iqsKFhMsEeK4go_VqYg1Bw" conceptName="TABLET, MULTILAYER, EXTENDED RELEASE" usageNote="NCI Thesaurus" base_EnumerationLiteral="_iqsKFRMsEeK4go_VqYg1Bw"/>
+  <term:ValueSetCode xmi:id="_iqsxIRMsEeK4go_VqYg1Bw" conceptName="TABLET, ORALLY DISINTEGRATING" usageNote="NCI Thesaurus" base_EnumerationLiteral="_iqsxIBMsEeK4go_VqYg1Bw"/>
+  <term:ValueSetCode xmi:id="_iqsxIxMsEeK4go_VqYg1Bw" conceptName="TABLET, ORALLY DISINTEGRATING, DELAYED RELEASE" usageNote="NCI Thesaurus" base_EnumerationLiteral="_iqsxIhMsEeK4go_VqYg1Bw"/>
+  <term:ValueSetCode xmi:id="_iqsxJRMsEeK4go_VqYg1Bw" conceptName="TABLET, SOLUBLE" usageNote="NCI Thesaurus" base_EnumerationLiteral="_iqsxJBMsEeK4go_VqYg1Bw"/>
+  <term:ValueSetCode xmi:id="_iqsxJxMsEeK4go_VqYg1Bw" conceptName="TABLET, SUGAR COATED" usageNote="NCI Thesaurus" base_EnumerationLiteral="_iqsxJhMsEeK4go_VqYg1Bw"/>
+  <term:ValueSetCode xmi:id="_iqtYMRMsEeK4go_VqYg1Bw" conceptName="TAMPON" usageNote="NCI Thesaurus" base_EnumerationLiteral="_iqtYMBMsEeK4go_VqYg1Bw"/>
+  <term:ValueSetCode xmi:id="_iqtYMxMsEeK4go_VqYg1Bw" conceptName="TAPE" usageNote="NCI Thesaurus" base_EnumerationLiteral="_iqtYMhMsEeK4go_VqYg1Bw"/>
+  <term:ValueSetCode xmi:id="_iqtYNRMsEeK4go_VqYg1Bw" conceptName="TINCTURE" usageNote="NCI Thesaurus" base_EnumerationLiteral="_iqtYNBMsEeK4go_VqYg1Bw"/>
+  <term:ValueSetCode xmi:id="_iqtYNxMsEeK4go_VqYg1Bw" conceptName="TROCHE" usageNote="NCI Thesaurus" base_EnumerationLiteral="_iqtYNhMsEeK4go_VqYg1Bw"/>
+  <term:ValueSetCode xmi:id="_iqt_QRMsEeK4go_VqYg1Bw" conceptName="UNASSIGNED" usageNote="NCI Thesaurus" base_EnumerationLiteral="_iqt_QBMsEeK4go_VqYg1Bw"/>
+  <term:ValueSetCode xmi:id="_iqt_QxMsEeK4go_VqYg1Bw" conceptName="WAFER" usageNote="NCI Thesaurus" base_EnumerationLiteral="_iqt_QhMsEeK4go_VqYg1Bw"/>
+  <term:ValueSetCode xmi:id="_kkBDMBMsEeK4go_VqYg1Bw" conceptName="AURICULAR (OTIC)" usageNote="NCI Thesaurus" base_EnumerationLiteral="_khmoYBMsEeK4go_VqYg1Bw"/>
+  <term:ValueSetCode xmi:id="_kkBDMhMsEeK4go_VqYg1Bw" conceptName="BUCCAL" usageNote="NCI Thesaurus" base_EnumerationLiteral="_kkBDMRMsEeK4go_VqYg1Bw"/>
+  <term:ValueSetCode xmi:id="_kkBDNBMsEeK4go_VqYg1Bw" conceptName="CONJUNCTIVAL" usageNote="NCI Thesaurus" base_EnumerationLiteral="_kkBDMxMsEeK4go_VqYg1Bw"/>
+  <term:ValueSetCode xmi:id="_kkBqQRMsEeK4go_VqYg1Bw" conceptName="CUTANEOUS" usageNote="NCI Thesaurus" base_EnumerationLiteral="_kkBqQBMsEeK4go_VqYg1Bw"/>
+  <term:ValueSetCode xmi:id="_kkBqQxMsEeK4go_VqYg1Bw" conceptName="DENTAL" usageNote="NCI Thesaurus" base_EnumerationLiteral="_kkBqQhMsEeK4go_VqYg1Bw"/>
+  <term:ValueSetCode xmi:id="_kkCRUBMsEeK4go_VqYg1Bw" conceptName="ELECTRO-OSMOSIS" usageNote="NCI Thesaurus" base_EnumerationLiteral="_kkBqRBMsEeK4go_VqYg1Bw"/>
+  <term:ValueSetCode xmi:id="_kkCRUhMsEeK4go_VqYg1Bw" conceptName="ENDOCERVICAL" usageNote="NCI Thesaurus" base_EnumerationLiteral="_kkCRURMsEeK4go_VqYg1Bw"/>
+  <term:ValueSetCode xmi:id="_kkCRVBMsEeK4go_VqYg1Bw" conceptName="ENDOSINUSIAL" usageNote="NCI Thesaurus" base_EnumerationLiteral="_kkCRUxMsEeK4go_VqYg1Bw"/>
+  <term:ValueSetCode xmi:id="_kkC4YBMsEeK4go_VqYg1Bw" conceptName="ENDOTRACHEAL" usageNote="NCI Thesaurus" base_EnumerationLiteral="_kkCRVRMsEeK4go_VqYg1Bw"/>
+  <term:ValueSetCode xmi:id="_kkC4YhMsEeK4go_VqYg1Bw" conceptName="ENTERAL" usageNote="NCI Thesaurus" base_EnumerationLiteral="_kkC4YRMsEeK4go_VqYg1Bw"/>
+  <term:ValueSetCode xmi:id="_kkC4ZBMsEeK4go_VqYg1Bw" conceptName="EPIDURAL" usageNote="NCI Thesaurus" base_EnumerationLiteral="_kkC4YxMsEeK4go_VqYg1Bw"/>
+  <term:ValueSetCode xmi:id="_kkC4ZhMsEeK4go_VqYg1Bw" conceptName="EXTRA-AMNIOTIC" usageNote="NCI Thesaurus" base_EnumerationLiteral="_kkC4ZRMsEeK4go_VqYg1Bw"/>
+  <term:ValueSetCode xmi:id="_kkDfcBMsEeK4go_VqYg1Bw" conceptName="EXTRACORPOREAL" usageNote="NCI Thesaurus" base_EnumerationLiteral="_kkC4ZxMsEeK4go_VqYg1Bw"/>
+  <term:ValueSetCode xmi:id="_kkDfchMsEeK4go_VqYg1Bw" conceptName="HEMODIALYSIS" usageNote="NCI Thesaurus" base_EnumerationLiteral="_kkDfcRMsEeK4go_VqYg1Bw"/>
+  <term:ValueSetCode xmi:id="_kkDfdBMsEeK4go_VqYg1Bw" conceptName="INFILTRATION" usageNote="NCI Thesaurus" base_EnumerationLiteral="_kkDfcxMsEeK4go_VqYg1Bw"/>
+  <term:ValueSetCode xmi:id="_kkDfdhMsEeK4go_VqYg1Bw" conceptName="INTERSTITIAL" usageNote="NCI Thesaurus" base_EnumerationLiteral="_kkDfdRMsEeK4go_VqYg1Bw"/>
+  <term:ValueSetCode xmi:id="_kkEGgRMsEeK4go_VqYg1Bw" conceptName="INTRA-ABDOMINAL" usageNote="NCI Thesaurus" base_EnumerationLiteral="_kkEGgBMsEeK4go_VqYg1Bw"/>
+  <term:ValueSetCode xmi:id="_kkEGgxMsEeK4go_VqYg1Bw" conceptName="INTRA-AMNIOTIC" usageNote="NCI Thesaurus" base_EnumerationLiteral="_kkEGghMsEeK4go_VqYg1Bw"/>
+  <term:ValueSetCode xmi:id="_kkEGhRMsEeK4go_VqYg1Bw" conceptName="INTRA-ARTERIAL" usageNote="NCI Thesaurus" base_EnumerationLiteral="_kkEGhBMsEeK4go_VqYg1Bw"/>
+  <term:ValueSetCode xmi:id="_kkEtkBMsEeK4go_VqYg1Bw" conceptName="INTRA-ARTICULAR" usageNote="NCI Thesaurus" base_EnumerationLiteral="_kkEGhhMsEeK4go_VqYg1Bw"/>
+  <term:ValueSetCode xmi:id="_kkEtkhMsEeK4go_VqYg1Bw" conceptName="INTRABILIARY" usageNote="NCI Thesaurus" base_EnumerationLiteral="_kkEtkRMsEeK4go_VqYg1Bw"/>
+  <term:ValueSetCode xmi:id="_kkEtlBMsEeK4go_VqYg1Bw" conceptName="INTRABRONCHIAL" usageNote="NCI Thesaurus" base_EnumerationLiteral="_kkEtkxMsEeK4go_VqYg1Bw"/>
+  <term:ValueSetCode xmi:id="_kkEtlhMsEeK4go_VqYg1Bw" conceptName="INTRABURSAL" usageNote="NCI Thesaurus" base_EnumerationLiteral="_kkEtlRMsEeK4go_VqYg1Bw"/>
+  <term:ValueSetCode xmi:id="_kkFUoRMsEeK4go_VqYg1Bw" conceptName="INTRACARDIAC" usageNote="NCI Thesaurus" base_EnumerationLiteral="_kkFUoBMsEeK4go_VqYg1Bw"/>
+  <term:ValueSetCode xmi:id="_kkFUoxMsEeK4go_VqYg1Bw" conceptName="INTRACARTILAGINOUS" usageNote="NCI Thesaurus" base_EnumerationLiteral="_kkFUohMsEeK4go_VqYg1Bw"/>
+  <term:ValueSetCode xmi:id="_kkFUpRMsEeK4go_VqYg1Bw" conceptName="INTRACAUDAL" usageNote="NCI Thesaurus" base_EnumerationLiteral="_kkFUpBMsEeK4go_VqYg1Bw"/>
+  <term:ValueSetCode xmi:id="_kkF7sRMsEeK4go_VqYg1Bw" conceptName="INTRACAVERNOUS" usageNote="NCI Thesaurus" base_EnumerationLiteral="_kkF7sBMsEeK4go_VqYg1Bw"/>
+  <term:ValueSetCode xmi:id="_kkF7sxMsEeK4go_VqYg1Bw" conceptName="INTRACAVITARY" usageNote="NCI Thesaurus" base_EnumerationLiteral="_kkF7shMsEeK4go_VqYg1Bw"/>
+  <term:ValueSetCode xmi:id="_kkGiwBMsEeK4go_VqYg1Bw" conceptName="INTRACEREBRAL" usageNote="NCI Thesaurus" base_EnumerationLiteral="_kkF7tBMsEeK4go_VqYg1Bw"/>
+  <term:ValueSetCode xmi:id="_kkGiwhMsEeK4go_VqYg1Bw" conceptName="INTRACISTERNAL" usageNote="NCI Thesaurus" base_EnumerationLiteral="_kkGiwRMsEeK4go_VqYg1Bw"/>
+  <term:ValueSetCode xmi:id="_kkGixBMsEeK4go_VqYg1Bw" conceptName="INTRACORNEAL" usageNote="NCI Thesaurus" base_EnumerationLiteral="_kkGiwxMsEeK4go_VqYg1Bw"/>
+  <term:ValueSetCode xmi:id="_kkGixhMsEeK4go_VqYg1Bw" conceptName="INTRACORONAL, DENTAL" usageNote="NCI Thesaurus" base_EnumerationLiteral="_kkGixRMsEeK4go_VqYg1Bw"/>
+  <term:ValueSetCode xmi:id="_kkHJ0RMsEeK4go_VqYg1Bw" conceptName="INTRACORONARY" usageNote="NCI Thesaurus" base_EnumerationLiteral="_kkHJ0BMsEeK4go_VqYg1Bw"/>
+  <term:ValueSetCode xmi:id="_kkHJ0xMsEeK4go_VqYg1Bw" conceptName="INTRACORPORUS CAVERNOSUM" usageNote="NCI Thesaurus" base_EnumerationLiteral="_kkHJ0hMsEeK4go_VqYg1Bw"/>
+  <term:ValueSetCode xmi:id="_kkHJ1RMsEeK4go_VqYg1Bw" conceptName="INTRADERMAL" usageNote="NCI Thesaurus" base_EnumerationLiteral="_kkHJ1BMsEeK4go_VqYg1Bw"/>
+  <term:ValueSetCode xmi:id="_kkHw4RMsEeK4go_VqYg1Bw" conceptName="INTRADISCAL" usageNote="NCI Thesaurus" base_EnumerationLiteral="_kkHw4BMsEeK4go_VqYg1Bw"/>
+  <term:ValueSetCode xmi:id="_kkHw4xMsEeK4go_VqYg1Bw" conceptName="INTRADUCTAL" usageNote="NCI Thesaurus" base_EnumerationLiteral="_kkHw4hMsEeK4go_VqYg1Bw"/>
+  <term:ValueSetCode xmi:id="_kkHw5RMsEeK4go_VqYg1Bw" conceptName="INTRADUODENAL" usageNote="NCI Thesaurus" base_EnumerationLiteral="_kkHw5BMsEeK4go_VqYg1Bw"/>
+  <term:ValueSetCode xmi:id="_kkIX8RMsEeK4go_VqYg1Bw" conceptName="INTRADURAL" usageNote="NCI Thesaurus" base_EnumerationLiteral="_kkIX8BMsEeK4go_VqYg1Bw"/>
+  <term:ValueSetCode xmi:id="_kkIX8xMsEeK4go_VqYg1Bw" conceptName="INTRAEPIDERMAL" usageNote="NCI Thesaurus" base_EnumerationLiteral="_kkIX8hMsEeK4go_VqYg1Bw"/>
+  <term:ValueSetCode xmi:id="_kkIX9RMsEeK4go_VqYg1Bw" conceptName="INTRAESOPHAGEAL" usageNote="NCI Thesaurus" base_EnumerationLiteral="_kkIX9BMsEeK4go_VqYg1Bw"/>
+  <term:ValueSetCode xmi:id="_kkI_ABMsEeK4go_VqYg1Bw" conceptName="INTRAGASTRIC" usageNote="NCI Thesaurus" base_EnumerationLiteral="_kkIX9hMsEeK4go_VqYg1Bw"/>
+  <term:ValueSetCode xmi:id="_kkI_AhMsEeK4go_VqYg1Bw" conceptName="INTRAGINGIVAL" usageNote="NCI Thesaurus" base_EnumerationLiteral="_kkI_ARMsEeK4go_VqYg1Bw"/>
+  <term:ValueSetCode xmi:id="_kkI_BBMsEeK4go_VqYg1Bw" conceptName="INTRAILEAL" usageNote="NCI Thesaurus" base_EnumerationLiteral="_kkI_AxMsEeK4go_VqYg1Bw"/>
+  <term:ValueSetCode xmi:id="_kkJmEBMsEeK4go_VqYg1Bw" conceptName="INTRALESIONAL" usageNote="NCI Thesaurus" base_EnumerationLiteral="_kkI_BRMsEeK4go_VqYg1Bw"/>
+  <term:ValueSetCode xmi:id="_kkJmEhMsEeK4go_VqYg1Bw" conceptName="INTRALUMINAL" usageNote="NCI Thesaurus" base_EnumerationLiteral="_kkJmERMsEeK4go_VqYg1Bw"/>
+  <term:ValueSetCode xmi:id="_kkJmFBMsEeK4go_VqYg1Bw" conceptName="INTRALYMPHATIC" usageNote="NCI Thesaurus" base_EnumerationLiteral="_kkJmExMsEeK4go_VqYg1Bw"/>
+  <term:ValueSetCode xmi:id="_kkJmFhMsEeK4go_VqYg1Bw" conceptName="INTRAMEDULLARY" usageNote="NCI Thesaurus" base_EnumerationLiteral="_kkJmFRMsEeK4go_VqYg1Bw"/>
+  <term:ValueSetCode xmi:id="_kkKNIRMsEeK4go_VqYg1Bw" conceptName="INTRAMENINGEAL" usageNote="NCI Thesaurus" base_EnumerationLiteral="_kkKNIBMsEeK4go_VqYg1Bw"/>
+  <term:ValueSetCode xmi:id="_kkKNIxMsEeK4go_VqYg1Bw" conceptName="INTRAMUSCULAR" usageNote="NCI Thesaurus" base_EnumerationLiteral="_kkKNIhMsEeK4go_VqYg1Bw"/>
+  <term:ValueSetCode xmi:id="_kkKNJRMsEeK4go_VqYg1Bw" conceptName="INTRAOCULAR" usageNote="NCI Thesaurus" base_EnumerationLiteral="_kkKNJBMsEeK4go_VqYg1Bw"/>
+  <term:ValueSetCode xmi:id="_kkK0MBMsEeK4go_VqYg1Bw" conceptName="INTRAOVARIAN" usageNote="NCI Thesaurus" base_EnumerationLiteral="_kkKNJhMsEeK4go_VqYg1Bw"/>
+  <term:ValueSetCode xmi:id="_kkK0MhMsEeK4go_VqYg1Bw" conceptName="INTRAPERICARDIAL" usageNote="NCI Thesaurus" base_EnumerationLiteral="_kkK0MRMsEeK4go_VqYg1Bw"/>
+  <term:ValueSetCode xmi:id="_kkK0NBMsEeK4go_VqYg1Bw" conceptName="INTRAPERITONEAL" usageNote="NCI Thesaurus" base_EnumerationLiteral="_kkK0MxMsEeK4go_VqYg1Bw"/>
+  <term:ValueSetCode xmi:id="_kkK0NhMsEeK4go_VqYg1Bw" conceptName="INTRAPLEURAL" usageNote="NCI Thesaurus" base_EnumerationLiteral="_kkK0NRMsEeK4go_VqYg1Bw"/>
+  <term:ValueSetCode xmi:id="_kkLbQRMsEeK4go_VqYg1Bw" conceptName="INTRAPROSTATIC" usageNote="NCI Thesaurus" base_EnumerationLiteral="_kkLbQBMsEeK4go_VqYg1Bw"/>
+  <term:ValueSetCode xmi:id="_kkLbQxMsEeK4go_VqYg1Bw" conceptName="INTRAPULMONARY" usageNote="NCI Thesaurus" base_EnumerationLiteral="_kkLbQhMsEeK4go_VqYg1Bw"/>
+  <term:ValueSetCode xmi:id="_kkLbRRMsEeK4go_VqYg1Bw" conceptName="INTRASINAL" usageNote="NCI Thesaurus" base_EnumerationLiteral="_kkLbRBMsEeK4go_VqYg1Bw"/>
+  <term:ValueSetCode xmi:id="_kkMCUBMsEeK4go_VqYg1Bw" conceptName="INTRASPINAL" usageNote="NCI Thesaurus" base_EnumerationLiteral="_kkLbRhMsEeK4go_VqYg1Bw"/>
+  <term:ValueSetCode xmi:id="_kkMCUhMsEeK4go_VqYg1Bw" conceptName="INTRASYNOVIAL" usageNote="NCI Thesaurus" base_EnumerationLiteral="_kkMCURMsEeK4go_VqYg1Bw"/>
+  <term:ValueSetCode xmi:id="_kkMCVBMsEeK4go_VqYg1Bw" conceptName="INTRATENDINOUS" usageNote="NCI Thesaurus" base_EnumerationLiteral="_kkMCUxMsEeK4go_VqYg1Bw"/>
+  <term:ValueSetCode xmi:id="_kkMCVhMsEeK4go_VqYg1Bw" conceptName="INTRATESTICULAR" usageNote="NCI Thesaurus" base_EnumerationLiteral="_kkMCVRMsEeK4go_VqYg1Bw"/>
+  <term:ValueSetCode xmi:id="_kkMpYRMsEeK4go_VqYg1Bw" conceptName="INTRATHECAL" usageNote="NCI Thesaurus" base_EnumerationLiteral="_kkMpYBMsEeK4go_VqYg1Bw"/>
+  <term:ValueSetCode xmi:id="_kkMpYxMsEeK4go_VqYg1Bw" conceptName="INTRATHORACIC" usageNote="NCI Thesaurus" base_EnumerationLiteral="_kkMpYhMsEeK4go_VqYg1Bw"/>
+  <term:ValueSetCode xmi:id="_kkMpZRMsEeK4go_VqYg1Bw" conceptName="INTRATUBULAR" usageNote="NCI Thesaurus" base_EnumerationLiteral="_kkMpZBMsEeK4go_VqYg1Bw"/>
+  <term:ValueSetCode xmi:id="_kkNQcBMsEeK4go_VqYg1Bw" conceptName="INTRATUMOR" usageNote="NCI Thesaurus" base_EnumerationLiteral="_kkMpZhMsEeK4go_VqYg1Bw"/>
+  <term:ValueSetCode xmi:id="_kkNQchMsEeK4go_VqYg1Bw" conceptName="INTRATYMPANIC" usageNote="NCI Thesaurus" base_EnumerationLiteral="_kkNQcRMsEeK4go_VqYg1Bw"/>
+  <term:ValueSetCode xmi:id="_kkNQdBMsEeK4go_VqYg1Bw" conceptName="INTRAUTERINE" usageNote="NCI Thesaurus" base_EnumerationLiteral="_kkNQcxMsEeK4go_VqYg1Bw"/>
+  <term:ValueSetCode xmi:id="_kkN3gBMsEeK4go_VqYg1Bw" conceptName="INTRAVASCULAR" usageNote="NCI Thesaurus" base_EnumerationLiteral="_kkNQdRMsEeK4go_VqYg1Bw"/>
+  <term:ValueSetCode xmi:id="_kkN3ghMsEeK4go_VqYg1Bw" conceptName="INTRAVENOUS" usageNote="NCI Thesaurus" base_EnumerationLiteral="_kkN3gRMsEeK4go_VqYg1Bw"/>
+  <term:ValueSetCode xmi:id="_kkN3hBMsEeK4go_VqYg1Bw" conceptName="INTRAVENTRICULAR" usageNote="NCI Thesaurus" base_EnumerationLiteral="_kkN3gxMsEeK4go_VqYg1Bw"/>
+  <term:ValueSetCode xmi:id="_kkN3hhMsEeK4go_VqYg1Bw" conceptName="INTRAVESICAL" usageNote="NCI Thesaurus" base_EnumerationLiteral="_kkN3hRMsEeK4go_VqYg1Bw"/>
+  <term:ValueSetCode xmi:id="_kkOekRMsEeK4go_VqYg1Bw" conceptName="INTRAVITREAL" usageNote="NCI Thesaurus" base_EnumerationLiteral="_kkOekBMsEeK4go_VqYg1Bw"/>
+  <term:ValueSetCode xmi:id="_kkOekxMsEeK4go_VqYg1Bw" conceptName="IONTOPHORESIS" usageNote="NCI Thesaurus" base_EnumerationLiteral="_kkOekhMsEeK4go_VqYg1Bw"/>
+  <term:ValueSetCode xmi:id="_kkOelRMsEeK4go_VqYg1Bw" conceptName="IRRIGATION" usageNote="NCI Thesaurus" base_EnumerationLiteral="_kkOelBMsEeK4go_VqYg1Bw"/>
+  <term:ValueSetCode xmi:id="_kkOelxMsEeK4go_VqYg1Bw" conceptName="LARYNGEAL" usageNote="NCI Thesaurus" base_EnumerationLiteral="_kkOelhMsEeK4go_VqYg1Bw"/>
+  <term:ValueSetCode xmi:id="_kkPFoRMsEeK4go_VqYg1Bw" conceptName="NASAL" usageNote="NCI Thesaurus" base_EnumerationLiteral="_kkPFoBMsEeK4go_VqYg1Bw"/>
+  <term:ValueSetCode xmi:id="_kkPFoxMsEeK4go_VqYg1Bw" conceptName="NASOGASTRIC" usageNote="NCI Thesaurus" base_EnumerationLiteral="_kkPFohMsEeK4go_VqYg1Bw"/>
+  <term:ValueSetCode xmi:id="_kkPFpRMsEeK4go_VqYg1Bw" conceptName="NOT APPLICABLE" usageNote="NCI Thesaurus" base_EnumerationLiteral="_kkPFpBMsEeK4go_VqYg1Bw"/>
+  <term:ValueSetCode xmi:id="_kkPssBMsEeK4go_VqYg1Bw" conceptName="OCCLUSIVE DRESSING TECHNIQUE" usageNote="NCI Thesaurus" base_EnumerationLiteral="_kkPFphMsEeK4go_VqYg1Bw"/>
+  <term:ValueSetCode xmi:id="_kkPsshMsEeK4go_VqYg1Bw" conceptName="OPHTHALMIC" usageNote="NCI Thesaurus" base_EnumerationLiteral="_kkPssRMsEeK4go_VqYg1Bw"/>
+  <term:ValueSetCode xmi:id="_kkPstBMsEeK4go_VqYg1Bw" conceptName="ORAL" usageNote="NCI Thesaurus" base_EnumerationLiteral="_kkPssxMsEeK4go_VqYg1Bw"/>
+  <term:ValueSetCode xmi:id="_kkPsthMsEeK4go_VqYg1Bw" conceptName="OROPHARYNGEAL" usageNote="NCI Thesaurus" base_EnumerationLiteral="_kkPstRMsEeK4go_VqYg1Bw"/>
+  <term:ValueSetCode xmi:id="_kkQTwBMsEeK4go_VqYg1Bw" conceptName="PARENTERAL" usageNote="NCI Thesaurus" base_EnumerationLiteral="_kkPstxMsEeK4go_VqYg1Bw"/>
+  <term:ValueSetCode xmi:id="_kkQTwhMsEeK4go_VqYg1Bw" conceptName="PERCUTANEOUS" usageNote="NCI Thesaurus" base_EnumerationLiteral="_kkQTwRMsEeK4go_VqYg1Bw"/>
+  <term:ValueSetCode xmi:id="_kkQTxBMsEeK4go_VqYg1Bw" conceptName="PERIARTICULAR" usageNote="NCI Thesaurus" base_EnumerationLiteral="_kkQTwxMsEeK4go_VqYg1Bw"/>
+  <term:ValueSetCode xmi:id="_kkQTxhMsEeK4go_VqYg1Bw" conceptName="PERIDURAL" usageNote="NCI Thesaurus" base_EnumerationLiteral="_kkQTxRMsEeK4go_VqYg1Bw"/>
+  <term:ValueSetCode xmi:id="_kkQTyBMsEeK4go_VqYg1Bw" conceptName="PERINEURAL" usageNote="NCI Thesaurus" base_EnumerationLiteral="_kkQTxxMsEeK4go_VqYg1Bw"/>
+  <term:ValueSetCode xmi:id="_kkQ60RMsEeK4go_VqYg1Bw" conceptName="PERIODONTAL" usageNote="NCI Thesaurus" base_EnumerationLiteral="_kkQ60BMsEeK4go_VqYg1Bw"/>
+  <term:ValueSetCode xmi:id="_kkQ60xMsEeK4go_VqYg1Bw" conceptName="RECTAL" usageNote="NCI Thesaurus" base_EnumerationLiteral="_kkQ60hMsEeK4go_VqYg1Bw"/>
+  <term:ValueSetCode xmi:id="_kkQ61RMsEeK4go_VqYg1Bw" conceptName="RESPIRATORY (INHALATION)" usageNote="NCI Thesaurus" base_EnumerationLiteral="_kkQ61BMsEeK4go_VqYg1Bw"/>
+  <term:ValueSetCode xmi:id="_kkQ61xMsEeK4go_VqYg1Bw" conceptName="RETROBULBAR" usageNote="NCI Thesaurus" base_EnumerationLiteral="_kkQ61hMsEeK4go_VqYg1Bw"/>
+  <term:ValueSetCode xmi:id="_kkRh4RMsEeK4go_VqYg1Bw" conceptName="SOFT TISSUE" usageNote="NCI Thesaurus" base_EnumerationLiteral="_kkRh4BMsEeK4go_VqYg1Bw"/>
+  <term:ValueSetCode xmi:id="_kkRh4xMsEeK4go_VqYg1Bw" conceptName="SUBARACHNOID" usageNote="NCI Thesaurus" base_EnumerationLiteral="_kkRh4hMsEeK4go_VqYg1Bw"/>
+  <term:ValueSetCode xmi:id="_kkRh5RMsEeK4go_VqYg1Bw" conceptName="SUBCONJUNCTIVAL" usageNote="NCI Thesaurus" base_EnumerationLiteral="_kkRh5BMsEeK4go_VqYg1Bw"/>
+  <term:ValueSetCode xmi:id="_kkRh5xMsEeK4go_VqYg1Bw" conceptName="SUBCUTANEOUS" usageNote="NCI Thesaurus" base_EnumerationLiteral="_kkRh5hMsEeK4go_VqYg1Bw"/>
+  <term:ValueSetCode xmi:id="_kkSI8RMsEeK4go_VqYg1Bw" conceptName="SUBLINGUAL" usageNote="NCI Thesaurus" base_EnumerationLiteral="_kkSI8BMsEeK4go_VqYg1Bw"/>
+  <term:ValueSetCode xmi:id="_kkSI8xMsEeK4go_VqYg1Bw" conceptName="SUBMUCOSAL" usageNote="NCI Thesaurus" base_EnumerationLiteral="_kkSI8hMsEeK4go_VqYg1Bw"/>
+  <term:ValueSetCode xmi:id="_kkSI9RMsEeK4go_VqYg1Bw" conceptName="TOPICAL" usageNote="NCI Thesaurus" base_EnumerationLiteral="_kkSI9BMsEeK4go_VqYg1Bw"/>
+  <term:ValueSetCode xmi:id="_kkSI9xMsEeK4go_VqYg1Bw" conceptName="TRANSDERMAL" usageNote="NCI Thesaurus" base_EnumerationLiteral="_kkSI9hMsEeK4go_VqYg1Bw"/>
+  <term:ValueSetCode xmi:id="_kkSwARMsEeK4go_VqYg1Bw" conceptName="TRANSMUCOSAL" usageNote="NCI Thesaurus" base_EnumerationLiteral="_kkSwABMsEeK4go_VqYg1Bw"/>
+  <term:ValueSetCode xmi:id="_kkSwAxMsEeK4go_VqYg1Bw" conceptName="TRANSPLACENTAL" usageNote="NCI Thesaurus" base_EnumerationLiteral="_kkSwAhMsEeK4go_VqYg1Bw"/>
+  <term:ValueSetCode xmi:id="_kkSwBRMsEeK4go_VqYg1Bw" conceptName="TRANSTRACHEAL" usageNote="NCI Thesaurus" base_EnumerationLiteral="_kkSwBBMsEeK4go_VqYg1Bw"/>
+  <term:ValueSetCode xmi:id="_kkSwBxMsEeK4go_VqYg1Bw" conceptName="TRANSTYMPANIC" usageNote="NCI Thesaurus" base_EnumerationLiteral="_kkSwBhMsEeK4go_VqYg1Bw"/>
+  <term:ValueSetCode xmi:id="_kkTXERMsEeK4go_VqYg1Bw" conceptName="URETERAL" usageNote="NCI Thesaurus" base_EnumerationLiteral="_kkTXEBMsEeK4go_VqYg1Bw"/>
+  <term:ValueSetCode xmi:id="_kkTXExMsEeK4go_VqYg1Bw" conceptName="URETHRAL" usageNote="NCI Thesaurus" base_EnumerationLiteral="_kkTXEhMsEeK4go_VqYg1Bw"/>
+  <term:ValueSetCode xmi:id="_m6KbMhMsEeK4go_VqYg1Bw" conceptName="Adenovirus, type 4 and type 7, live, oral" usageNote="Vaccines administered (CVX)" base_EnumerationLiteral="_m6KbMRMsEeK4go_VqYg1Bw"/>
+  <term:ValueSetCode xmi:id="_m6LCQRMsEeK4go_VqYg1Bw" conceptName="adenovirus vaccine, type 4, live, oral" usageNote="Vaccines administered (CVX)" base_EnumerationLiteral="_m6LCQBMsEeK4go_VqYg1Bw"/>
+  <term:ValueSetCode xmi:id="_m6LCQxMsEeK4go_VqYg1Bw" conceptName="adenovirus vaccine, type 7, live, oral" usageNote="Vaccines administered (CVX)" base_EnumerationLiteral="_m6LCQhMsEeK4go_VqYg1Bw"/>
+  <term:ValueSetCode xmi:id="_m6LCRRMsEeK4go_VqYg1Bw" conceptName="adenovirus vaccine, unspecified formulation" usageNote="Vaccines administered (CVX)" base_EnumerationLiteral="_m6LCRBMsEeK4go_VqYg1Bw"/>
+  <term:ValueSetCode xmi:id="_m6LCRxMsEeK4go_VqYg1Bw" conceptName="anthrax vaccine" usageNote="Vaccines administered (CVX)" base_EnumerationLiteral="_m6LCRhMsEeK4go_VqYg1Bw"/>
+  <term:ValueSetCode xmi:id="_m6LpURMsEeK4go_VqYg1Bw" conceptName="Bacillus Calmette-Guerin vaccine" usageNote="Vaccines administered (CVX)" base_EnumerationLiteral="_m6LpUBMsEeK4go_VqYg1Bw"/>
+  <term:ValueSetCode xmi:id="_m6LpUxMsEeK4go_VqYg1Bw" conceptName="botulinum antitoxin" usageNote="Vaccines administered (CVX)" base_EnumerationLiteral="_m6LpUhMsEeK4go_VqYg1Bw"/>
+  <term:ValueSetCode xmi:id="_m6LpVRMsEeK4go_VqYg1Bw" conceptName="cholera vaccine" usageNote="Vaccines administered (CVX)" base_EnumerationLiteral="_m6LpVBMsEeK4go_VqYg1Bw"/>
+  <term:ValueSetCode xmi:id="_m6LpVxMsEeK4go_VqYg1Bw" conceptName="cytomegalovirus immune globulin, intravenous" usageNote="Vaccines administered (CVX)" base_EnumerationLiteral="_m6LpVhMsEeK4go_VqYg1Bw"/>
+  <term:ValueSetCode xmi:id="_m6MQYBMsEeK4go_VqYg1Bw" conceptName="dengue fever vaccine" usageNote="Vaccines administered (CVX)" base_EnumerationLiteral="_m6LpWBMsEeK4go_VqYg1Bw"/>
+  <term:ValueSetCode xmi:id="_m6MQYhMsEeK4go_VqYg1Bw" conceptName="diphtheria antitoxin" usageNote="Vaccines administered (CVX)" base_EnumerationLiteral="_m6MQYRMsEeK4go_VqYg1Bw"/>
+  <term:ValueSetCode xmi:id="_m6MQZBMsEeK4go_VqYg1Bw" conceptName="diphtheria and tetanus toxoids, adsorbed for pediatric use" usageNote="Vaccines administered (CVX)" base_EnumerationLiteral="_m6MQYxMsEeK4go_VqYg1Bw"/>
+  <term:ValueSetCode xmi:id="_m6MQZhMsEeK4go_VqYg1Bw" conceptName="diphtheria, tetanus toxoids and acellular pertussis vaccine" usageNote="Vaccines administered (CVX)" base_EnumerationLiteral="_m6MQZRMsEeK4go_VqYg1Bw"/>
+  <term:ValueSetCode xmi:id="_m6M3cBMsEeK4go_VqYg1Bw" conceptName="diphtheria, tetanus toxoids and acellular pertussis vaccine, 5 pertussis antigens" usageNote="Vaccines administered (CVX)" base_EnumerationLiteral="_m6MQZxMsEeK4go_VqYg1Bw"/>
+  <term:ValueSetCode xmi:id="_m6M3chMsEeK4go_VqYg1Bw" conceptName="diphtheria, tetanus toxoids and acellular pertussis vaccine, unspecified formulation" usageNote="Vaccines administered (CVX)" base_EnumerationLiteral="_m6M3cRMsEeK4go_VqYg1Bw"/>
+  <term:ValueSetCode xmi:id="_m6M3dBMsEeK4go_VqYg1Bw" conceptName="Diphtheria and Tetanus Toxoids and Acellular Pertussis Adsorbed, Inactivated Poliovirus, Haemophilus b Conjugate (Meningococcal Outer Membrane Protein Complex), and Hepatitis B (Recombinant) Vaccine." usageNote="Vaccines administered (CVX)" base_EnumerationLiteral="_m6M3cxMsEeK4go_VqYg1Bw"/>
+  <term:ValueSetCode xmi:id="_m6M3dhMsEeK4go_VqYg1Bw" conceptName="DTaP-hepatitis B and poliovirus vaccine" usageNote="Vaccines administered (CVX)" base_EnumerationLiteral="_m6M3dRMsEeK4go_VqYg1Bw"/>
+  <term:ValueSetCode xmi:id="_m6NegBMsEeK4go_VqYg1Bw" conceptName="DTaP-Haemophilus influenzae type b conjugate vaccine" usageNote="Vaccines administered (CVX)" base_EnumerationLiteral="_m6M3dxMsEeK4go_VqYg1Bw"/>
+  <term:ValueSetCode xmi:id="_m6NeghMsEeK4go_VqYg1Bw" conceptName="diphtheria, tetanus toxoids and acellular pertussis vaccine, Haemophilus influenzae type b conjugate, and poliovirus vaccine, inactivated (DTaP-Hib-IPV)" usageNote="Vaccines administered (CVX)" base_EnumerationLiteral="_m6NegRMsEeK4go_VqYg1Bw"/>
+  <term:ValueSetCode xmi:id="_m6NehBMsEeK4go_VqYg1Bw" conceptName="Diphtheria, tetanus toxoids and acellular pertussis vaccine, and poliovirus vaccine, inactivated" usageNote="Vaccines administered (CVX)" base_EnumerationLiteral="_m6NegxMsEeK4go_VqYg1Bw"/>
+  <term:ValueSetCode xmi:id="_m6NehhMsEeK4go_VqYg1Bw" conceptName="Historical record of vaccine containing: diphtheria, tetanus toxoids and acellular pertussis; poliovirus, inactivated; Haemophilus influenzae type b conjugate; Hepatitis B DTaP-Hib-IPV)" usageNote="Vaccines administered (CVX)" base_EnumerationLiteral="_m6NehRMsEeK4go_VqYg1Bw"/>
+  <term:ValueSetCode xmi:id="_m6OFkRMsEeK4go_VqYg1Bw" conceptName="diphtheria, tetanus toxoids and pertussis vaccine" usageNote="Vaccines administered (CVX)" base_EnumerationLiteral="_m6OFkBMsEeK4go_VqYg1Bw"/>
+  <term:ValueSetCode xmi:id="_m6OFkxMsEeK4go_VqYg1Bw" conceptName="DTP-Haemophilus influenzae type b conjugate vaccine" usageNote="Vaccines administered (CVX)" base_EnumerationLiteral="_m6OFkhMsEeK4go_VqYg1Bw"/>
+  <term:ValueSetCode xmi:id="_m6OsoRMsEeK4go_VqYg1Bw" conceptName="DTP- Haemophilus influenzae type b conjugate and hepatitis b vaccine" usageNote="Vaccines administered (CVX)" base_EnumerationLiteral="_m6OsoBMsEeK4go_VqYg1Bw"/>
+  <term:ValueSetCode xmi:id="_m6OsoxMsEeK4go_VqYg1Bw" conceptName="hantavirus vaccine" usageNote="Vaccines administered (CVX)" base_EnumerationLiteral="_m6OsohMsEeK4go_VqYg1Bw"/>
+  <term:ValueSetCode xmi:id="_m6OspRMsEeK4go_VqYg1Bw" conceptName="hepatitis B immune globulin" usageNote="Vaccines administered (CVX)" base_EnumerationLiteral="_m6OspBMsEeK4go_VqYg1Bw"/>
+  <term:ValueSetCode xmi:id="_m6PTsRMsEeK4go_VqYg1Bw" conceptName="hepatitis A vaccine, adult dosage" usageNote="Vaccines administered (CVX)" base_EnumerationLiteral="_m6PTsBMsEeK4go_VqYg1Bw"/>
+  <term:ValueSetCode xmi:id="_m6PTsxMsEeK4go_VqYg1Bw" conceptName="hepatitis A vaccine, pediatric/adolescent dosage, 2 dose schedule" usageNote="Vaccines administered (CVX)" base_EnumerationLiteral="_m6PTshMsEeK4go_VqYg1Bw"/>
+  <term:ValueSetCode xmi:id="_m6PTtRMsEeK4go_VqYg1Bw" conceptName="hepatitis A vaccine, pediatric/adolescent dosage, 3 dose schedule" usageNote="Vaccines administered (CVX)" base_EnumerationLiteral="_m6PTtBMsEeK4go_VqYg1Bw"/>
+  <term:ValueSetCode xmi:id="_m6P6wRMsEeK4go_VqYg1Bw" conceptName="hepatitis A vaccine, pediatric dosage, unspecified formulation" usageNote="Vaccines administered (CVX)" base_EnumerationLiteral="_m6P6wBMsEeK4go_VqYg1Bw"/>
+  <term:ValueSetCode xmi:id="_m6P6wxMsEeK4go_VqYg1Bw" conceptName="hepatitis A vaccine, unspecified formulation" usageNote="Vaccines administered (CVX)" base_EnumerationLiteral="_m6P6whMsEeK4go_VqYg1Bw"/>
+  <term:ValueSetCode xmi:id="_m6P6xRMsEeK4go_VqYg1Bw" conceptName="hepatitis A and hepatitis B vaccine" usageNote="Vaccines administered (CVX)" base_EnumerationLiteral="_m6P6xBMsEeK4go_VqYg1Bw"/>
+  <term:ValueSetCode xmi:id="_m6Qh0RMsEeK4go_VqYg1Bw" conceptName="hepatitis B vaccine, pediatric or pediatric/adolescent dosage" usageNote="Vaccines administered (CVX)" base_EnumerationLiteral="_m6Qh0BMsEeK4go_VqYg1Bw"/>
+  <term:ValueSetCode xmi:id="_m6Qh0xMsEeK4go_VqYg1Bw" conceptName="hepatitis B vaccine, adolescent/high risk infant dosage" usageNote="Vaccines administered (CVX)" base_EnumerationLiteral="_m6Qh0hMsEeK4go_VqYg1Bw"/>
+  <term:ValueSetCode xmi:id="_m6RI4RMsEeK4go_VqYg1Bw" conceptName="hepatitis B vaccine, adult dosage" usageNote="Vaccines administered (CVX)" base_EnumerationLiteral="_m6RI4BMsEeK4go_VqYg1Bw"/>
+  <term:ValueSetCode xmi:id="_m6RI4xMsEeK4go_VqYg1Bw" conceptName="hepatitis B vaccine, dialysis patient dosage" usageNote="Vaccines administered (CVX)" base_EnumerationLiteral="_m6RI4hMsEeK4go_VqYg1Bw"/>
+  <term:ValueSetCode xmi:id="_m6d9MBMsEeK4go_VqYg1Bw" conceptName="hepatitis B vaccine, unspecified formulation" usageNote="Vaccines administered (CVX)" base_EnumerationLiteral="_m6RI5BMsEeK4go_VqYg1Bw"/>
+  <term:ValueSetCode xmi:id="_m6d9MhMsEeK4go_VqYg1Bw" conceptName="hepatitis C vaccine" usageNote="Vaccines administered (CVX)" base_EnumerationLiteral="_m6d9MRMsEeK4go_VqYg1Bw"/>
+  <term:ValueSetCode xmi:id="_m6ekQRMsEeK4go_VqYg1Bw" conceptName="hepatitis E vaccine" usageNote="Vaccines administered (CVX)" base_EnumerationLiteral="_m6ekQBMsEeK4go_VqYg1Bw"/>
+  <term:ValueSetCode xmi:id="_m6ekQxMsEeK4go_VqYg1Bw" conceptName="herpes simplex virus, type 2 vaccine" usageNote="Vaccines administered (CVX)" base_EnumerationLiteral="_m6ekQhMsEeK4go_VqYg1Bw"/>
+  <term:ValueSetCode xmi:id="_m6ekRRMsEeK4go_VqYg1Bw" conceptName="Haemophilus influenzae type b vaccine, HbOC conjugate" usageNote="Vaccines administered (CVX)" base_EnumerationLiteral="_m6ekRBMsEeK4go_VqYg1Bw"/>
+  <term:ValueSetCode xmi:id="_m6fLURMsEeK4go_VqYg1Bw" conceptName="Haemophilus influenzae type b vaccine, PRP-D conjugate" usageNote="Vaccines administered (CVX)" base_EnumerationLiteral="_m6fLUBMsEeK4go_VqYg1Bw"/>
+  <term:ValueSetCode xmi:id="_m6fLUxMsEeK4go_VqYg1Bw" conceptName="Haemophilus influenzae type b vaccine, PRP-OMP conjugate" usageNote="Vaccines administered (CVX)" base_EnumerationLiteral="_m6fLUhMsEeK4go_VqYg1Bw"/>
+  <term:ValueSetCode xmi:id="_m6fLVRMsEeK4go_VqYg1Bw" conceptName="Haemophilus influenzae type b vaccine, PRP-T conjugate" usageNote="Vaccines administered (CVX)" base_EnumerationLiteral="_m6fLVBMsEeK4go_VqYg1Bw"/>
+  <term:ValueSetCode xmi:id="_m6fyYRMsEeK4go_VqYg1Bw" conceptName="Haemophilus influenzae type b vaccine, conjugate unspecified formulation" usageNote="Vaccines administered (CVX)" base_EnumerationLiteral="_m6fyYBMsEeK4go_VqYg1Bw"/>
+  <term:ValueSetCode xmi:id="_m6fyYxMsEeK4go_VqYg1Bw" conceptName="Haemophilus influenzae type b conjugate and Hepatitis B vaccine" usageNote="Vaccines administered (CVX)" base_EnumerationLiteral="_m6fyYhMsEeK4go_VqYg1Bw"/>
+  <term:ValueSetCode xmi:id="_m6gZcBMsEeK4go_VqYg1Bw" conceptName="human immunodeficiency virus vaccine" usageNote="Vaccines administered (CVX)" base_EnumerationLiteral="_m6fyZBMsEeK4go_VqYg1Bw"/>
+  <term:ValueSetCode xmi:id="_m6gZchMsEeK4go_VqYg1Bw" conceptName="human papilloma virus vaccine, bivalent" usageNote="Vaccines administered (CVX)" base_EnumerationLiteral="_m6gZcRMsEeK4go_VqYg1Bw"/>
+  <term:ValueSetCode xmi:id="_m6gZdBMsEeK4go_VqYg1Bw" conceptName="human papilloma virus vaccine, quadrivalent" usageNote="Vaccines administered (CVX)" base_EnumerationLiteral="_m6gZcxMsEeK4go_VqYg1Bw"/>
+  <term:ValueSetCode xmi:id="_m6hAgBMsEeK4go_VqYg1Bw" conceptName="HPV, unspecified formulation" usageNote="Vaccines administered (CVX)" base_EnumerationLiteral="_m6gZdRMsEeK4go_VqYg1Bw"/>
+  <term:ValueSetCode xmi:id="_m6hAghMsEeK4go_VqYg1Bw" conceptName="immune globulin, intramuscular" usageNote="Vaccines administered (CVX)" base_EnumerationLiteral="_m6hAgRMsEeK4go_VqYg1Bw"/>
+  <term:ValueSetCode xmi:id="_m6hAhBMsEeK4go_VqYg1Bw" conceptName="immune globulin, unspecified formulation" usageNote="Vaccines administered (CVX)" base_EnumerationLiteral="_m6hAgxMsEeK4go_VqYg1Bw"/>
+  <term:ValueSetCode xmi:id="_m6hnkBMsEeK4go_VqYg1Bw" conceptName="immune globulin, intravenous" usageNote="Vaccines administered (CVX)" base_EnumerationLiteral="_m6hAhRMsEeK4go_VqYg1Bw"/>
+  <term:ValueSetCode xmi:id="_m6hnkhMsEeK4go_VqYg1Bw" conceptName="influenza virus vaccine, H5N1, A/Vietnam/1203/2004 (national stockpile)" usageNote="Vaccines administered (CVX)" base_EnumerationLiteral="_m6hnkRMsEeK4go_VqYg1Bw"/>
+  <term:ValueSetCode xmi:id="_m6hnlBMsEeK4go_VqYg1Bw" conceptName="influenza, high dose seasonal, preservative-free" usageNote="Vaccines administered (CVX)" base_EnumerationLiteral="_m6hnkxMsEeK4go_VqYg1Bw"/>
+  <term:ValueSetCode xmi:id="_m6iOoRMsEeK4go_VqYg1Bw" conceptName="influenza virus vaccine, live, attenuated, for intranasal use" usageNote="Vaccines administered (CVX)" base_EnumerationLiteral="_m6iOoBMsEeK4go_VqYg1Bw"/>
+  <term:ValueSetCode xmi:id="_m6iOoxMsEeK4go_VqYg1Bw" conceptName="influenza, live, intranasal, quadrivalent" usageNote="Vaccines administered (CVX)" base_EnumerationLiteral="_m6iOohMsEeK4go_VqYg1Bw"/>
+  <term:ValueSetCode xmi:id="_m6iOpRMsEeK4go_VqYg1Bw" conceptName="Influenza, seasonal, injectable" usageNote="Vaccines administered (CVX)" base_EnumerationLiteral="_m6iOpBMsEeK4go_VqYg1Bw"/>
+  <term:ValueSetCode xmi:id="_m6i1sRMsEeK4go_VqYg1Bw" conceptName="Influenza, seasonal, injectable, preservative free" usageNote="Vaccines administered (CVX)" base_EnumerationLiteral="_m6i1sBMsEeK4go_VqYg1Bw"/>
+  <term:ValueSetCode xmi:id="_m6i1sxMsEeK4go_VqYg1Bw" conceptName="seasonal influenza, intradermal, preservative free" usageNote="Vaccines administered (CVX)" base_EnumerationLiteral="_m6i1shMsEeK4go_VqYg1Bw"/>
+  <term:ValueSetCode xmi:id="_m6i1tRMsEeK4go_VqYg1Bw" conceptName="influenza virus vaccine, split virus (incl. purified surface antigen)-retired CODE" usageNote="Vaccines administered (CVX)" base_EnumerationLiteral="_m6i1tBMsEeK4go_VqYg1Bw"/>
+  <term:ValueSetCode xmi:id="_m6jcwRMsEeK4go_VqYg1Bw" conceptName="influenza virus vaccine, unspecified formulation" usageNote="Vaccines administered (CVX)" base_EnumerationLiteral="_m6jcwBMsEeK4go_VqYg1Bw"/>
+  <term:ValueSetCode xmi:id="_m6jcwxMsEeK4go_VqYg1Bw" conceptName="influenza virus vaccine, whole virus" usageNote="Vaccines administered (CVX)" base_EnumerationLiteral="_m6jcwhMsEeK4go_VqYg1Bw"/>
+  <term:ValueSetCode xmi:id="_m6jcxRMsEeK4go_VqYg1Bw" conceptName="poliovirus vaccine, inactivated" usageNote="Vaccines administered (CVX)" base_EnumerationLiteral="_m6jcxBMsEeK4go_VqYg1Bw"/>
+  <term:ValueSetCode xmi:id="_m6kD0RMsEeK4go_VqYg1Bw" conceptName="Japanese Encephalitis vaccine for intramuscular administration" usageNote="Vaccines administered (CVX)" base_EnumerationLiteral="_m6kD0BMsEeK4go_VqYg1Bw"/>
+  <term:ValueSetCode xmi:id="_m6kD0xMsEeK4go_VqYg1Bw" conceptName="Japanese Encephalitis Vaccine SC" usageNote="Vaccines administered (CVX)" base_EnumerationLiteral="_m6kD0hMsEeK4go_VqYg1Bw"/>
+  <term:ValueSetCode xmi:id="_m6kD1RMsEeK4go_VqYg1Bw" conceptName="Japanese Encephalitis vaccine, unspecified formulation" usageNote="Vaccines administered (CVX)" base_EnumerationLiteral="_m6kD1BMsEeK4go_VqYg1Bw"/>
+  <term:ValueSetCode xmi:id="_m6kq4RMsEeK4go_VqYg1Bw" conceptName="Junin virus vaccine" usageNote="Vaccines administered (CVX)" base_EnumerationLiteral="_m6kq4BMsEeK4go_VqYg1Bw"/>
+  <term:ValueSetCode xmi:id="_m6kq4xMsEeK4go_VqYg1Bw" conceptName="leishmaniasis vaccine" usageNote="Vaccines administered (CVX)" base_EnumerationLiteral="_m6kq4hMsEeK4go_VqYg1Bw"/>
+  <term:ValueSetCode xmi:id="_m6kq5RMsEeK4go_VqYg1Bw" conceptName="leprosy vaccine" usageNote="Vaccines administered (CVX)" base_EnumerationLiteral="_m6kq5BMsEeK4go_VqYg1Bw"/>
+  <term:ValueSetCode xmi:id="_m6lR8RMsEeK4go_VqYg1Bw" conceptName="Lyme disease vaccine" usageNote="Vaccines administered (CVX)" base_EnumerationLiteral="_m6lR8BMsEeK4go_VqYg1Bw"/>
+  <term:ValueSetCode xmi:id="_m6lR8xMsEeK4go_VqYg1Bw" conceptName="measles and rubella virus vaccine" usageNote="Vaccines administered (CVX)" base_EnumerationLiteral="_m6lR8hMsEeK4go_VqYg1Bw"/>
+  <term:ValueSetCode xmi:id="_m6lR9RMsEeK4go_VqYg1Bw" conceptName="malaria vaccine" usageNote="Vaccines administered (CVX)" base_EnumerationLiteral="_m6lR9BMsEeK4go_VqYg1Bw"/>
+  <term:ValueSetCode xmi:id="_m6l5ARMsEeK4go_VqYg1Bw" conceptName="measles virus vaccine" usageNote="Vaccines administered (CVX)" base_EnumerationLiteral="_m6l5ABMsEeK4go_VqYg1Bw"/>
+  <term:ValueSetCode xmi:id="_m6l5AxMsEeK4go_VqYg1Bw" conceptName="melanoma vaccine" usageNote="Vaccines administered (CVX)" base_EnumerationLiteral="_m6l5AhMsEeK4go_VqYg1Bw"/>
+  <term:ValueSetCode xmi:id="_m6l5BRMsEeK4go_VqYg1Bw" conceptName="meningococcal C conjugate vaccine" usageNote="Vaccines administered (CVX)" base_EnumerationLiteral="_m6l5BBMsEeK4go_VqYg1Bw"/>
+  <term:ValueSetCode xmi:id="_m6mgERMsEeK4go_VqYg1Bw" conceptName="Meningococcal Groups C and Y and Haemophilus b Tetanus Toxoid Conjugate Vaccine" usageNote="Vaccines administered (CVX)" base_EnumerationLiteral="_m6mgEBMsEeK4go_VqYg1Bw"/>
+  <term:ValueSetCode xmi:id="_m6mgExMsEeK4go_VqYg1Bw" conceptName="Meningococcal, MCV4, unspecified formulation(groups A, C, Y and W-135)" usageNote="Vaccines administered (CVX)" base_EnumerationLiteral="_m6mgEhMsEeK4go_VqYg1Bw"/>
+  <term:ValueSetCode xmi:id="_m6mgFRMsEeK4go_VqYg1Bw" conceptName="meningococcal oligosaccharide (groups A, C, Y and W-135) diphtheria toxoid conjugate vaccine (MCV4O)" usageNote="Vaccines administered (CVX)" base_EnumerationLiteral="_m6mgFBMsEeK4go_VqYg1Bw"/>
+  <term:ValueSetCode xmi:id="_m6nHIRMsEeK4go_VqYg1Bw" conceptName="meningococcal polysaccharide (groups A, C, Y and W-135) diphtheria toxoid conjugate vaccine (MCV4P)" usageNote="Vaccines administered (CVX)" base_EnumerationLiteral="_m6nHIBMsEeK4go_VqYg1Bw"/>
+  <term:ValueSetCode xmi:id="_m6nHIxMsEeK4go_VqYg1Bw" conceptName="meningococcal polysaccharide vaccine (MPSV4)" usageNote="Vaccines administered (CVX)" base_EnumerationLiteral="_m6nHIhMsEeK4go_VqYg1Bw"/>
+  <term:ValueSetCode xmi:id="_m6nHJRMsEeK4go_VqYg1Bw" conceptName="meningococcal vaccine, unspecified formulation" usageNote="Vaccines administered (CVX)" base_EnumerationLiteral="_m6nHJBMsEeK4go_VqYg1Bw"/>
+  <term:ValueSetCode xmi:id="_m6nuMRMsEeK4go_VqYg1Bw" conceptName="measles, mumps and rubella virus vaccine" usageNote="Vaccines administered (CVX)" base_EnumerationLiteral="_m6nuMBMsEeK4go_VqYg1Bw"/>
+  <term:ValueSetCode xmi:id="_m6nuMxMsEeK4go_VqYg1Bw" conceptName="measles, mumps, rubella, and varicella virus vaccine" usageNote="Vaccines administered (CVX)" base_EnumerationLiteral="_m6nuMhMsEeK4go_VqYg1Bw"/>
+  <term:ValueSetCode xmi:id="_m6nuNRMsEeK4go_VqYg1Bw" conceptName="mumps virus vaccine" usageNote="Vaccines administered (CVX)" base_EnumerationLiteral="_m6nuNBMsEeK4go_VqYg1Bw"/>
+  <term:ValueSetCode xmi:id="_m6oVQRMsEeK4go_VqYg1Bw" conceptName="no vaccine administered" usageNote="Vaccines administered (CVX)" base_EnumerationLiteral="_m6oVQBMsEeK4go_VqYg1Bw"/>
+  <term:ValueSetCode xmi:id="_m6oVQxMsEeK4go_VqYg1Bw" conceptName="Novel influenza-H1N1-09, injectable" usageNote="Vaccines administered (CVX)" base_EnumerationLiteral="_m6oVQhMsEeK4go_VqYg1Bw"/>
+  <term:ValueSetCode xmi:id="_m6oVRRMsEeK4go_VqYg1Bw" conceptName="Novel influenza-H1N1-09, all formulations" usageNote="Vaccines administered (CVX)" base_EnumerationLiteral="_m6oVRBMsEeK4go_VqYg1Bw"/>
+  <term:ValueSetCode xmi:id="_m6o8URMsEeK4go_VqYg1Bw" conceptName="Novel Influenza-H1N1-09, live virus for nasal administration" usageNote="Vaccines administered (CVX)" base_EnumerationLiteral="_m6o8UBMsEeK4go_VqYg1Bw"/>
+  <term:ValueSetCode xmi:id="_m6o8UxMsEeK4go_VqYg1Bw" conceptName="Novel influenza-H1N1-09, preservative-free, injectable" usageNote="Vaccines administered (CVX)" base_EnumerationLiteral="_m6o8UhMsEeK4go_VqYg1Bw"/>
+  <term:ValueSetCode xmi:id="_m6o8VRMsEeK4go_VqYg1Bw" conceptName="poliovirus vaccine, live, oral" usageNote="Vaccines administered (CVX)" base_EnumerationLiteral="_m6o8VBMsEeK4go_VqYg1Bw"/>
+  <term:ValueSetCode xmi:id="_m6pjYRMsEeK4go_VqYg1Bw" conceptName="parainfluenza-3 virus vaccine" usageNote="Vaccines administered (CVX)" base_EnumerationLiteral="_m6pjYBMsEeK4go_VqYg1Bw"/>
+  <term:ValueSetCode xmi:id="_m6pjYxMsEeK4go_VqYg1Bw" conceptName="pertussis vaccine" usageNote="Vaccines administered (CVX)" base_EnumerationLiteral="_m6pjYhMsEeK4go_VqYg1Bw"/>
+  <term:ValueSetCode xmi:id="_m6qKcBMsEeK4go_VqYg1Bw" conceptName="plague vaccine" usageNote="Vaccines administered (CVX)" base_EnumerationLiteral="_m6pjZBMsEeK4go_VqYg1Bw"/>
+  <term:ValueSetCode xmi:id="_m6qKchMsEeK4go_VqYg1Bw" conceptName="pneumococcal conjugate vaccine, 13 valent" usageNote="Vaccines administered (CVX)" base_EnumerationLiteral="_m6qKcRMsEeK4go_VqYg1Bw"/>
+  <term:ValueSetCode xmi:id="_m6qKdBMsEeK4go_VqYg1Bw" conceptName="pneumococcal conjugate vaccine, 7 valent" usageNote="Vaccines administered (CVX)" base_EnumerationLiteral="_m6qKcxMsEeK4go_VqYg1Bw"/>
+  <term:ValueSetCode xmi:id="_m6qxgBMsEeK4go_VqYg1Bw" conceptName="pneumococcal polysaccharide vaccine, 23 valent" usageNote="Vaccines administered (CVX)" base_EnumerationLiteral="_m6qKdRMsEeK4go_VqYg1Bw"/>
+  <term:ValueSetCode xmi:id="_m6qxghMsEeK4go_VqYg1Bw" conceptName="pneumococcal vaccine, unspecified formulation" usageNote="Vaccines administered (CVX)" base_EnumerationLiteral="_m6qxgRMsEeK4go_VqYg1Bw"/>
+  <term:ValueSetCode xmi:id="_m6qxhBMsEeK4go_VqYg1Bw" conceptName="poliovirus vaccine, unspecified formulation" usageNote="Vaccines administered (CVX)" base_EnumerationLiteral="_m6qxgxMsEeK4go_VqYg1Bw"/>
+  <term:ValueSetCode xmi:id="_m6rYkBMsEeK4go_VqYg1Bw" conceptName="Q fever vaccine" usageNote="Vaccines administered (CVX)" base_EnumerationLiteral="_m6qxhRMsEeK4go_VqYg1Bw"/>
+  <term:ValueSetCode xmi:id="_m6rYkhMsEeK4go_VqYg1Bw" conceptName="rabies vaccine, for intradermal injection" usageNote="Vaccines administered (CVX)" base_EnumerationLiteral="_m6rYkRMsEeK4go_VqYg1Bw"/>
+  <term:ValueSetCode xmi:id="_m6rYlBMsEeK4go_VqYg1Bw" conceptName="rabies vaccine, for intramuscular injection" usageNote="Vaccines administered (CVX)" base_EnumerationLiteral="_m6rYkxMsEeK4go_VqYg1Bw"/>
+  <term:ValueSetCode xmi:id="_m6r_oBMsEeK4go_VqYg1Bw" conceptName="rabies vaccine, unspecified formulation" usageNote="Vaccines administered (CVX)" base_EnumerationLiteral="_m6rYlRMsEeK4go_VqYg1Bw"/>
+  <term:ValueSetCode xmi:id="_m6r_ohMsEeK4go_VqYg1Bw" conceptName="RESERVED - do not use" usageNote="Vaccines administered (CVX)" base_EnumerationLiteral="_m6r_oRMsEeK4go_VqYg1Bw"/>
+  <term:ValueSetCode xmi:id="_m6r_pBMsEeK4go_VqYg1Bw" conceptName="rheumatic fever vaccine" usageNote="Vaccines administered (CVX)" base_EnumerationLiteral="_m6r_oxMsEeK4go_VqYg1Bw"/>
+  <term:ValueSetCode xmi:id="_m6smsBMsEeK4go_VqYg1Bw" conceptName="Rift Valley fever vaccine" usageNote="Vaccines administered (CVX)" base_EnumerationLiteral="_m6r_pRMsEeK4go_VqYg1Bw"/>
+  <term:ValueSetCode xmi:id="_m6smshMsEeK4go_VqYg1Bw" conceptName="rabies immune globulin" usageNote="Vaccines administered (CVX)" base_EnumerationLiteral="_m6smsRMsEeK4go_VqYg1Bw"/>
+  <term:ValueSetCode xmi:id="_m6smtBMsEeK4go_VqYg1Bw" conceptName="rotavirus, live, monovalent vaccine" usageNote="Vaccines administered (CVX)" base_EnumerationLiteral="_m6smsxMsEeK4go_VqYg1Bw"/>
+  <term:ValueSetCode xmi:id="_m6tNwBMsEeK4go_VqYg1Bw" conceptName="rotavirus, live, pentavalent vaccine" usageNote="Vaccines administered (CVX)" base_EnumerationLiteral="_m6smtRMsEeK4go_VqYg1Bw"/>
+  <term:ValueSetCode xmi:id="_m6tNwhMsEeK4go_VqYg1Bw" conceptName="rotavirus, live, tetravalent vaccine" usageNote="Vaccines administered (CVX)" base_EnumerationLiteral="_m6tNwRMsEeK4go_VqYg1Bw"/>
+  <term:ValueSetCode xmi:id="_m6tNxBMsEeK4go_VqYg1Bw" conceptName="rotavirus vaccine, unspecified formulation" usageNote="Vaccines administered (CVX)" base_EnumerationLiteral="_m6tNwxMsEeK4go_VqYg1Bw"/>
+  <term:ValueSetCode xmi:id="_m6t00BMsEeK4go_VqYg1Bw" conceptName="respiratory syncytial virus immune globulin, intravenous" usageNote="Vaccines administered (CVX)" base_EnumerationLiteral="_m6tNxRMsEeK4go_VqYg1Bw"/>
+  <term:ValueSetCode xmi:id="_m6t00hMsEeK4go_VqYg1Bw" conceptName="respiratory syncytial virus monoclonal antibody (palivizumab), intramuscular" usageNote="Vaccines administered (CVX)" base_EnumerationLiteral="_m6t00RMsEeK4go_VqYg1Bw"/>
+  <term:ValueSetCode xmi:id="_m6t01BMsEeK4go_VqYg1Bw" conceptName="respiratory syncytial virus monoclonal antibody (motavizumab), intramuscular" usageNote="Vaccines administered (CVX)" base_EnumerationLiteral="_m6t00xMsEeK4go_VqYg1Bw"/>
+  <term:ValueSetCode xmi:id="_m6ub4BMsEeK4go_VqYg1Bw" conceptName="rubella virus vaccine" usageNote="Vaccines administered (CVX)" base_EnumerationLiteral="_m6t01RMsEeK4go_VqYg1Bw"/>
+  <term:ValueSetCode xmi:id="_m6ub4hMsEeK4go_VqYg1Bw" conceptName="rubella and mumps virus vaccine" usageNote="Vaccines administered (CVX)" base_EnumerationLiteral="_m6ub4RMsEeK4go_VqYg1Bw"/>
+  <term:ValueSetCode xmi:id="_m6ub5BMsEeK4go_VqYg1Bw" conceptName="Staphylococcus bacteriophage lysate" usageNote="Vaccines administered (CVX)" base_EnumerationLiteral="_m6ub4xMsEeK4go_VqYg1Bw"/>
+  <term:ValueSetCode xmi:id="_m6vC8BMsEeK4go_VqYg1Bw" conceptName="tetanus and diphtheria toxoids, not adsorbed, for adult use" usageNote="Vaccines administered (CVX)" base_EnumerationLiteral="_m6ub5RMsEeK4go_VqYg1Bw"/>
+  <term:ValueSetCode xmi:id="_m6vC8hMsEeK4go_VqYg1Bw" conceptName="tetanus and diphtheria toxoids, adsorbed, preservative free, for adult use" usageNote="Vaccines administered (CVX)" base_EnumerationLiteral="_m6vC8RMsEeK4go_VqYg1Bw"/>
+  <term:ValueSetCode xmi:id="_m6vC9BMsEeK4go_VqYg1Bw" conceptName="tetanus and diphtheria toxoids, adsorbed, for adult use" usageNote="Vaccines administered (CVX)" base_EnumerationLiteral="_m6vC8xMsEeK4go_VqYg1Bw"/>
+  <term:ValueSetCode xmi:id="_m6vqABMsEeK4go_VqYg1Bw" conceptName="Td(adult) unspecified formulation" usageNote="Vaccines administered (CVX)" base_EnumerationLiteral="_m6vC9RMsEeK4go_VqYg1Bw"/>
+  <term:ValueSetCode xmi:id="_m6vqAhMsEeK4go_VqYg1Bw" conceptName="tetanus toxoid, reduced diphtheria toxoid, and acellular pertussis vaccine, adsorbed" usageNote="Vaccines administered (CVX)" base_EnumerationLiteral="_m6vqARMsEeK4go_VqYg1Bw"/>
+  <term:ValueSetCode xmi:id="_m6vqBBMsEeK4go_VqYg1Bw" conceptName="tetanus toxoid, adsorbed" usageNote="Vaccines administered (CVX)" base_EnumerationLiteral="_m6vqAxMsEeK4go_VqYg1Bw"/>
+  <term:ValueSetCode xmi:id="_m6wREBMsEeK4go_VqYg1Bw" conceptName="tetanus toxoid, not adsorbed" usageNote="Vaccines administered (CVX)" base_EnumerationLiteral="_m6vqBRMsEeK4go_VqYg1Bw"/>
+  <term:ValueSetCode xmi:id="_m6wREhMsEeK4go_VqYg1Bw" conceptName="tetanus toxoid, unspecified formulation" usageNote="Vaccines administered (CVX)" base_EnumerationLiteral="_m6wRERMsEeK4go_VqYg1Bw"/>
+  <term:ValueSetCode xmi:id="_m6wRFBMsEeK4go_VqYg1Bw" conceptName="tick-borne encephalitis vaccine" usageNote="Vaccines administered (CVX)" base_EnumerationLiteral="_m6wRExMsEeK4go_VqYg1Bw"/>
+  <term:ValueSetCode xmi:id="_m6w4IBMsEeK4go_VqYg1Bw" conceptName="tetanus immune globulin" usageNote="Vaccines administered (CVX)" base_EnumerationLiteral="_m6wRFRMsEeK4go_VqYg1Bw"/>
+  <term:ValueSetCode xmi:id="_m6w4IhMsEeK4go_VqYg1Bw" conceptName="tuberculin skin test; unspecified formulation" usageNote="Vaccines administered (CVX)" base_EnumerationLiteral="_m6w4IRMsEeK4go_VqYg1Bw"/>
+  <term:ValueSetCode xmi:id="_m6w4JBMsEeK4go_VqYg1Bw" conceptName="tuberculin skin test; old tuberculin, multipuncture device" usageNote="Vaccines administered (CVX)" base_EnumerationLiteral="_m6w4IxMsEeK4go_VqYg1Bw"/>
+  <term:ValueSetCode xmi:id="_m6xfMBMsEeK4go_VqYg1Bw" conceptName="tuberculin skin test; purified protein derivative solution, intradermal" usageNote="Vaccines administered (CVX)" base_EnumerationLiteral="_m6w4JRMsEeK4go_VqYg1Bw"/>
+  <term:ValueSetCode xmi:id="_m6xfMhMsEeK4go_VqYg1Bw" conceptName="tuberculin skin test; purified protein derivative, multipuncture device" usageNote="Vaccines administered (CVX)" base_EnumerationLiteral="_m6xfMRMsEeK4go_VqYg1Bw"/>
+  <term:ValueSetCode xmi:id="_m6xfNBMsEeK4go_VqYg1Bw" conceptName="tularemia vaccine" usageNote="Vaccines administered (CVX)" base_EnumerationLiteral="_m6xfMxMsEeK4go_VqYg1Bw"/>
+  <term:ValueSetCode xmi:id="_m6yGQBMsEeK4go_VqYg1Bw" conceptName="typhoid vaccine, live, oral" usageNote="Vaccines administered (CVX)" base_EnumerationLiteral="_m6xfNRMsEeK4go_VqYg1Bw"/>
+  <term:ValueSetCode xmi:id="_m6yGQhMsEeK4go_VqYg1Bw" conceptName="typhoid vaccine, parenteral, other than acetone-killed, dried" usageNote="Vaccines administered (CVX)" base_EnumerationLiteral="_m6yGQRMsEeK4go_VqYg1Bw"/>
+  <term:ValueSetCode xmi:id="_m6yGRBMsEeK4go_VqYg1Bw" conceptName="typhoid vaccine, parenteral, acetone-killed, dried (U.S. military)" usageNote="Vaccines administered (CVX)" base_EnumerationLiteral="_m6yGQxMsEeK4go_VqYg1Bw"/>
+  <term:ValueSetCode xmi:id="_m6ytUBMsEeK4go_VqYg1Bw" conceptName="typhoid vaccine, unspecified formulation" usageNote="Vaccines administered (CVX)" base_EnumerationLiteral="_m6yGRRMsEeK4go_VqYg1Bw"/>
+  <term:ValueSetCode xmi:id="_m6ytUhMsEeK4go_VqYg1Bw" conceptName="typhoid Vi capsular polysaccharide vaccine" usageNote="Vaccines administered (CVX)" base_EnumerationLiteral="_m6ytURMsEeK4go_VqYg1Bw"/>
+  <term:ValueSetCode xmi:id="_m6ytVBMsEeK4go_VqYg1Bw" conceptName="Historical record of a typhus vaccination" usageNote="Vaccines administered (CVX)" base_EnumerationLiteral="_m6ytUxMsEeK4go_VqYg1Bw"/>
+  <term:ValueSetCode xmi:id="_m6zUYBMsEeK4go_VqYg1Bw" conceptName="unknown vaccine or immune globulin" usageNote="Vaccines administered (CVX)" base_EnumerationLiteral="_m6ytVRMsEeK4go_VqYg1Bw"/>
+  <term:ValueSetCode xmi:id="_m6zUYhMsEeK4go_VqYg1Bw" conceptName="vaccinia (smallpox) vaccine" usageNote="Vaccines administered (CVX)" base_EnumerationLiteral="_m6zUYRMsEeK4go_VqYg1Bw"/>
+  <term:ValueSetCode xmi:id="_m6zUZBMsEeK4go_VqYg1Bw" conceptName="vaccinia (smallpox) vaccine, diluted" usageNote="Vaccines administered (CVX)" base_EnumerationLiteral="_m6zUYxMsEeK4go_VqYg1Bw"/>
+  <term:ValueSetCode xmi:id="_m6z7cBMsEeK4go_VqYg1Bw" conceptName="vaccinia immune globulin" usageNote="Vaccines administered (CVX)" base_EnumerationLiteral="_m6zUZRMsEeK4go_VqYg1Bw"/>
+  <term:ValueSetCode xmi:id="_m6z7chMsEeK4go_VqYg1Bw" conceptName="varicella virus vaccine" usageNote="Vaccines administered (CVX)" base_EnumerationLiteral="_m6z7cRMsEeK4go_VqYg1Bw"/>
+  <term:ValueSetCode xmi:id="_m6z7dBMsEeK4go_VqYg1Bw" conceptName="Venezuelan equine encephalitis, inactivated" usageNote="Vaccines administered (CVX)" base_EnumerationLiteral="_m6z7cxMsEeK4go_VqYg1Bw"/>
+  <term:ValueSetCode xmi:id="_m60igBMsEeK4go_VqYg1Bw" conceptName="Venezuelan equine encephalitis, live, attenuated" usageNote="Vaccines administered (CVX)" base_EnumerationLiteral="_m6z7dRMsEeK4go_VqYg1Bw"/>
+  <term:ValueSetCode xmi:id="_m60ighMsEeK4go_VqYg1Bw" conceptName="Venezuelan equine encephalitis vaccine, unspecified formulation" usageNote="Vaccines administered (CVX)" base_EnumerationLiteral="_m60igRMsEeK4go_VqYg1Bw"/>
+  <term:ValueSetCode xmi:id="_m60ihBMsEeK4go_VqYg1Bw" conceptName="varicella zoster immune globulin" usageNote="Vaccines administered (CVX)" base_EnumerationLiteral="_m60igxMsEeK4go_VqYg1Bw"/>
+  <term:ValueSetCode xmi:id="_m61JkBMsEeK4go_VqYg1Bw" conceptName="varicella zoster immune globulin (Investigational New Drug)" usageNote="Vaccines administered (CVX)" base_EnumerationLiteral="_m60ihRMsEeK4go_VqYg1Bw"/>
+  <term:ValueSetCode xmi:id="_m61JkhMsEeK4go_VqYg1Bw" conceptName="yellow fever vaccine" usageNote="Vaccines administered (CVX)" base_EnumerationLiteral="_m61JkRMsEeK4go_VqYg1Bw"/>
+  <term:ValueSetCode xmi:id="_m61JlBMsEeK4go_VqYg1Bw" conceptName="zoster vaccine, live" usageNote="Vaccines administered (CVX)" base_EnumerationLiteral="_m61JkxMsEeK4go_VqYg1Bw"/>
 </xmi:XMI>
