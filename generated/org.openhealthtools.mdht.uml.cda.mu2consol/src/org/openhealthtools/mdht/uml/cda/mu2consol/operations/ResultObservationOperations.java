@@ -125,7 +125,7 @@ public class ResultObservationOperations
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_MU2CONSOL_RESULT_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined())";
+	protected static final String VALIDATE_MU2CONSOL_RESULT_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (self.code.oclIsTypeOf(datatypes::CE))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateMu2consolResultObservationCode(ResultObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Mu2consol Result Observation Code</em>}' invariant operation.
